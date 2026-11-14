@@ -1,0 +1,1467 @@
+1
+00:05:06,548 --> 00:05:08,548
+...dine with computer aid...
+
+2
+00:14:43,155 --> 00:14:43,914
+Çok maja vaya.
+
+3
+00:14:47,795 --> 00:14:59,895
+Arkadaşlar, selamlar. Biraz toplanmanızı bekliyorum. 84 kişiyiz. Yaklaşık 100 küsur kişi olmamız gerekiyor. O yüzden sesimi çıkartmadan başlayacağız az sonra.
+
+4
+00:15:03,855 --> 00:15:05,174
+Teşekkür ederiz hocam.
+
+5
+00:16:02,132 --> 00:16:27,491
+Merhaba arkadaşlar. Saat 3.10 geçiyor. O yüzden daha fazla beklemeyelim. Biz başlayalım uygulamanıza. Ben Sevgi Hoca'nız, Sevgi Turgut. Bazılarınız yapısal programlamadan geçen seneden hatırlıyordur. Bugün beraber algoritma analizinin birinci ödevine bakacağız. Şöyle ben bir ekran paylaşayım.
+
+6
+00:16:28,115 --> 00:16:37,355
+Şu an görüyor olmalısınız. Ara sıra bana dönüş yaparsanız ben de emin olurum gördüğünüzden ekranı.
+
+7
+00:16:40,722 --> 00:16:41,722
+Görüyoruz hocam.
+
+8
+00:16:41,722 --> 00:16:43,722
+Görüyoruz hocam. Gayet nüt.
+
+9
+00:16:44,115 --> 00:16:53,955
+Tamam. Şimdi öncelikle arkadaşlar Amaç hocamız kendi grubu için dersinde birinci ödevle ilgili bir form paylaşmış.
+
+10
+00:16:54,536 --> 00:17:04,496
+Şimdi tekrar çete bakarsanız Amaç hocaya bir link paylaştı. Bu linkteki formu sadece Elif hocanın öğrencilerinin doldurmasını istiyoruz.
+
+11
+00:17:04,496 --> 00:17:12,115
+Çünkü Amaç hocanın öğrencileri zaten derste bu linke, farklı bir linke ulaşlar. Ayrı bir şekilde olması lazım.
+
+12
+00:17:12,115 --> 00:17:18,715
+açısından şu an chatte Amaç Hoca'nın paylaştığı linki sadece Elif Hoca'nın öğrencileri dolduracak.
+
+13
+00:17:20,236 --> 00:17:25,135
+Anlaşıldı sanırım. Ödevle alakalı kısa bir form.
+
+14
+00:17:28,395 --> 00:17:32,276
+Anlaşıldı sanırım. Biz geçelim.
+
+15
+00:17:42,324 --> 00:17:52,324
+Ne kadar form sizden bekleniyormuş arkadaşlar? Bu sırada da eğer chat'i takip ederseniz Amaç Hoca'nın yazdıklarını da görebilirsiniz.
+
+16
+00:17:52,324 --> 00:17:55,019
+Teşekkürler Amaç Hoca'm.
+
+17
+00:17:59,027 --> 00:18:23,807
+Şimdi arkadaşlar, bugün ödev, birinci ödevinizi inceleyeceğiz beraber. Ödevinizde aslında şöyle, artık siz hem BBG gördünüz, hem yapısal programlamaya giriş, ardından yapısal programlama veri yapıları derken, algoritma analizi aslında sizin son seviye olduğunuz bir ders diyebiliriz.
+
+18
+00:18:27,027 --> 00:18:55,027
+elde etmeniz gereken, yani asıl odaklanmanız gereken algoritma yapısını kurabiliyor olmanız. Bu nedenle daha çok kodla ilgilenmek yerine, yani kod üzerinden gitmek yerine algoritmik düşünceyi oluşturabiliyor musunuz? Bunun üzerine ilerleyeceğiz. Yani kod sintaksından çok algoritma üzerine bir anlatım gerçekleştireceğim. Yine eğer kodlamada bir eksiğiniz varsa
+
+19
+00:18:55,027 --> 00:19:08,027
+Yani ben algoritmik düşünceyi geliştirdim, yani kafamda tasarladım ama kodlamasını yapamadım diyorsanız, onu da ayrıca ilerleyen dakikalarda sizlerle beraber konuşuruz.
+
+20
+00:19:18,770 --> 00:19:28,491
+Şimdi arkadaşlar, problem 1'e direkt ben başlıyorum eğer sorunuz yoksa. Şöyle chat'e de kontrol edeceğim ara sıra. Teşekkürler Amaç Hocam.
+
+21
+00:19:33,236 --> 00:19:40,836
+Arkadaşlar, problem 1'e hep beraber bakalım. Zaten siz de ödevinizi gönderdiniz. Henüz cevaplarınıza bakamadık maalesef.
+
+22
+00:19:40,836 --> 00:19:51,236
+Sistemsel bir sıkıntıdan dolayı ilk defa online yıldız sitesinden aldık sizin ödevlerinizi kendimiz form hazırlamak yerine.
+
+23
+00:19:51,236 --> 00:19:55,236
+Bu nedenle henüz bakamadık ödevlerimize ama...
+
+24
+00:19:56,338 --> 00:19:58,818
+Şöyle bir beraber inceleyelim.
+
+25
+00:19:59,140 --> 00:20:05,719
+Şimdi problem 1'de en elemanlı bir dizide birbirine en yakın değere sahip iki elemanın bulunması isteniyor.
+
+26
+00:20:06,818 --> 00:20:17,199
+Burada ilk olarak baktığımızda en önemli, yani bu cümleden çıkaracağımız şey o zaman en elemanlı bir diziden bahsediyorsa tek boyuttan bahsediyordur.
+
+27
+00:20:24,338 --> 00:20:52,338
+Y olduğunu anlayacağız. Bunları bir line'ın üzerinde olduğunu anlayacağız. Bunu şey gibi düşünebilirsiniz. Y koordinatı olmayan, yani Y koordinatı sıfır olan noktalar gibi düşünebilirsiniz. Ama şu anda karışık durumda. Örneğin burada beş olabilir P1 noktası, P2 noktası üç olabilir. Bu şekilde karışık bir şekilde noktaların dağıldığını ve tek boyutla en elemanlı bir dizinizin olduğunu düşünün.
+
+28
+00:20:52,338 --> 00:21:15,038
+Şimdi ilk olarak A seçeneğinde problemi brute force yaklaşımı ile çözen algoritmanın kodunu istiyoruz. Burada brute force yaklaşımından ne anlıyorsunuz? Yani aslında en basit yaklaşım, herhangi bir algoritmik düşünce tabanlı olmayan bir yaklaşımla problemi çözmek.
+
+29
+00:21:26,194 --> 00:21:29,516
+Çözdüğünüz zaman, aslında farkına nasıl bakmış olacağız.
+
+30
+00:21:29,516 --> 00:21:33,355
+Ama ben biraz da hani beraber ilerleyelim istiyorum.
+
+31
+00:21:33,355 --> 00:21:41,555
+Şimdi çözünce hani ödev sonuçlarınıza da yani gönderdiğiniz ödevlere de henüz bakamadım.
+
+32
+00:21:41,555 --> 00:21:47,434
+Bu rütfayı en basit olarak yapabiliriz veya siz ne yaptınız yazarsanız...
+
+33
+00:21:51,474 --> 00:21:51,974
+Çat.
+
+34
+00:21:59,539 --> 00:22:01,290
+kesin mi kesiliyor arkadaşlar?
+
+35
+00:22:10,835 --> 00:22:12,835
+Sesim gidiyormuş.
+
+36
+00:22:13,835 --> 00:22:17,835
+Yani internetten sanırım şu an ben okuldayım.
+
+37
+00:22:25,140 --> 00:22:26,100
+Herkese değil.
+
+38
+00:22:28,979 --> 00:22:30,140
+Sizlere geliyor mu?
+
+39
+00:22:31,160 --> 00:22:31,559
+Evet.
+
+40
+00:22:32,860 --> 00:22:34,299
+Düzeldi sanırım hocam biraz şu anda.
+
+41
+00:22:34,600 --> 00:22:36,559
+Şu anda geliyor hocam, az önce biraz kesiliyordu.
+
+42
+00:22:36,559 --> 00:22:41,299
+Beni uyarın ama hani internete çok yapabileceğim bir şey yok maalesef.
+
+43
+00:22:42,999 --> 00:22:46,620
+Şu anda da eternetle bağlıyım, wifi'yle de bağlı diyelim aslında.
+
+44
+00:22:47,019 --> 00:22:48,580
+İnternetim iyi gözüküyor ama.
+
+45
+00:22:49,539 --> 00:22:51,759
+Anlık bir şeydi herhalde hocam, şimdi iyi geliyor.
+
+46
+00:22:52,979 --> 00:23:01,139
+Tamam o zaman. O zaman siz sorumu duyabildiniz mi arkadaşlar? Bridgeforce yaklaşımını nasıl yaptınız sizler? Ödevinizi nasıl gönderdiniz?
+
+47
+00:23:06,355 --> 00:23:15,956
+Hocam, ben şahsen tüm dizide elemanları teker teker birbirine kontrol ettim. Daha sonra aralarındaki fark için bir minimum değer tanımladım.
+
+48
+00:23:15,956 --> 00:23:26,756
+Eğer fark minimum değer düşerse, yani daha minimum bir değere ulaşırsak, bu minimum değeri güncelledim ve elemanları da kaydettim. En sonunda da minimum değer ile beraber elemanları yazdırdım.
+
+49
+00:23:27,250 --> 00:23:37,250
+Evet, yani en basit yaklaşım yaptık değil mi? Herkesin aklına ilk gelecek olan yaklaşımı yapmış olduk. O zaman önce bir...
+
+50
+00:23:42,643 --> 00:23:44,643
+Arkadaşlar, şurada kopyalarını da gireceğim.
+
+51
+00:24:00,564 --> 00:24:02,564
+Şöyle bir şekilde.
+
+52
+00:24:02,564 --> 00:24:04,564
+Duyamadım.
+
+53
+00:24:04,564 --> 00:24:06,411
+Ses yine kesiliyor.
+
+54
+00:24:51,826 --> 00:24:54,626
+Arkadaşlar, düştü internet.
+
+55
+00:24:57,427 --> 00:25:00,626
+Yok, direkt beni attı, kusura bakmayın.
+
+56
+00:25:10,580 --> 00:25:20,820
+Geliyor mu şu anda? Evet. Yani okuldayım şu anda. Eternet ile bağlanıyorum ama yani niye gitti bilemiyorum. Kusura bakmayın.
+
+57
+00:25:28,628 --> 00:25:36,628
+Evet, belki [öğrenci] olabilir. Biz devam edelim. Eğer kesilirse yine tekrar bağlanacağım.
+
+58
+00:25:36,628 --> 00:25:46,628
+Şimdi arkadaşlar, şöyle bakalım. Sesim kesilirse lütfen yine söyleyin. Ben de tekrar edeyim. Maalesef internete yapabileceğim bir şey yok.
+
+59
+00:25:48,340 --> 00:26:06,340
+Grütfors yaklaşımında bir dizimiz var en boyutlu. Bunu alıyoruz ve bizden istenen de minimum distance'ı bulmamız. Yani minimum distance'a sahip elemanları bulmamız. Burada ne yapıyoruz? Hiçbir algoritmik düşünce kullanmadan yalnızca...
+
+60
+00:26:06,835 --> 00:26:11,956
+Birinci elemandan başlayarak onu bütün elemanlarla karşılaştırıyorum.
+
+61
+00:26:12,394 --> 00:26:19,776
+i0'dan başladım. Daha sonra i artı 1'den başlayarak tüm elemanlarla karşılaştırıyorum.
+
+62
+00:26:20,315 --> 00:26:26,715
+Bu minimuma burada maksimum bir sayı verebilirsiniz. Float max diyebilirsiniz.
+
+63
+00:26:27,456 --> 00:26:34,835
+Minimumla karşılaştırıyorum aralarındaki farkı. Tek boyutlu olduğu için de mutlak değer farklarını almam yeterli.
+
+64
+00:26:34,835 --> 00:26:52,835
+Eğer minimumdan küçükse her seferinde, her döngüde minimum ve noktamı P1 ve P2 dedim burada. P1 ve P2'yi güncellemiş oluyorum. Bunun karmaşıklığı nedir arkadaşlar?
+
+65
+00:26:57,363 --> 00:26:59,284
+Karmaşıklığı n kare olacak.
+
+66
+00:27:00,023 --> 00:27:00,942
+Evet.
+
+67
+00:27:03,244 --> 00:27:12,103
+Hiçbir algoritmik düşünce olmadan yaptığımız yaklaşımda karmaşıklığımız n kare.
+
+68
+00:27:12,923 --> 00:27:18,224
+Şimdi sizden şey istiyorum. İkinci B seçeneğini nasıl yaptınız?
+
+69
+00:27:22,451 --> 00:27:40,691
+Ben Quicksword kullandım, sıraladım diziyi. Sonrasında tekrardan before döngüsüyle araları yani şey ne kadar minimum yani distance buldum ve yazdırdım.
+
+70
+00:27:41,428 --> 00:27:51,428
+Tamam, güzel. Burada zaten kritik noktamız, Divide & Concure yaklaşımıyla dizinin sıralanması değil mi?
+
+71
+00:27:51,428 --> 00:27:57,428
+Bir Divide & Concure yaklaşımı geliştirmek buradaki kritik nokta.
+
+72
+00:27:57,428 --> 00:28:05,292
+Hemen bakalım diğer şeye. Bu arada bayağı bilgisayarda şey yaptı kastı.
+
+73
+00:28:06,004 --> 00:28:08,163
+Diğer slide'a da geçmekte zorlanıyorum.
+
+74
+00:28:08,883 --> 00:28:10,324
+Şimdi şöyle bir bakalım.
+
+75
+00:28:10,824 --> 00:28:13,683
+Divide and Concur yaklaşımı diyoruz buna arkadaşlar.
+
+76
+00:28:14,724 --> 00:28:16,863
+Şimdi şöyle düşünün.
+
+77
+00:28:17,284 --> 00:28:20,764
+Az önce bir line'ın üzerinde noktalar vardı.
+
+78
+00:28:21,324 --> 00:28:23,724
+Ve bu noktalar karışık bir şekilde duruyordu.
+
+79
+00:28:23,843 --> 00:28:27,604
+Biz her bir elemanı diğer bütün elemanlarla kıyasladık.
+
+80
+00:28:27,604 --> 00:28:32,244
+Biz burada önce bunu bir x düzleminde düşünürsek.
+
+81
+00:28:34,004 --> 00:28:40,004
+her birinin sıfır olduğunu düşünün ve her bir noktanın x düzleminde olduğunu düşünün.
+
+82
+00:28:40,004 --> 00:28:48,004
+Ve bunu bir sıralama algoritması kullanarak, burada efisent bir sıralama algoritmasının olması önemli.
+
+83
+00:28:48,004 --> 00:28:52,004
+Bir sıralama algoritması kullanarak sıraladığınız noktalarınızı.
+
+84
+00:28:52,004 --> 00:28:56,004
+Diyelim P1, 2, 5 bu şekilde ilerliyor.
+
+85
+00:28:56,004 --> 00:29:00,004
+Daha sonra yaptığınız şey, şuradaki adımlara bakabilirsiniz.
+
+86
+00:29:02,004 --> 00:29:30,004
+ikiye bölmek. Yani şöyle düşünebilirsiniz, problemi tamamen çözmek yerine problemi sap problemlere ayırıp daha sonra onları çözümlerini birleştirmek. Bunu da zaten dinamik programlamada görmüşsünüzdür veya göreceksinizdir. Onun benzer bir yaklaşım. Şimdi orta noktayı buluyoruz önce ve bu şekilde dizimizi ikiye bölmüş oluyoruz. Sol taraf S1, sağ taraf S2 şeklinde düşünebilirsiniz.
+
+87
+00:29:30,004 --> 00:29:38,004
+Daha sonra sol tarafta S1 kümesine ait olan noktalar arasında birbirine en yakın olan noktaları belirliyoruz.
+
+88
+00:29:38,004 --> 00:29:42,004
+Yani en kısa, distance'a ulaşıyoruz.
+
+89
+00:29:42,004 --> 00:29:46,004
+Ve sağ tarafta da aynı şeyi yapıyoruz.
+
+90
+00:29:46,004 --> 00:29:52,004
+Ve ben sonra S1 ve eski kümelerindeki en kısa mesafeleri karşılaştırıp...
+
+91
+00:29:53,202 --> 00:30:10,883
+Diyelim P1 ve P2 S1 kümesinin en yakın elemanları, S2 kümesinin de Q1 ve Q2. Sonra ben birinci ve ikinci bu seçtiklerimi karşılaştırdım ve bir sonuç aldım. Bu bana yeterli mi?
+
+92
+00:30:12,852 --> 00:30:21,451
+Yani sadece S1'den geçiyorum, en kısa uzaklığa yani birbirine en yakın olan noktaları buluyorum.
+
+93
+00:30:21,451 --> 00:30:30,852
+Eski de aynı şeyi yapıyorum ve sonra da bunlardan hangisi kısaysa bu benim problemimin çözümü diyorum. Bundan nedir sıkıntı?
+
+94
+00:30:30,852 --> 00:30:39,564
+Yani burada anlatılmak istenen nedir sizce? Siz de hani çözdüğünüz problemi o yüzden size sorarak ilerlemek istiyorum.
+
+95
+00:30:40,307 --> 00:30:46,507
+Hocam, mesela burada şunu söylemiş, noktalardan birisi, yani P3 S1 tarafında, Q3 de S2 tarafında.
+
+96
+00:30:47,106 --> 00:30:54,167
+Hani biz sizin söylediğiniz gibi bakacak olursak, atıyorum P2 ile P3 ya da Q3 ile Q1 arasını karşılaştırıyoruz.
+
+97
+00:30:54,606 --> 00:31:00,708
+Ama mesela bu iki kısım bölündüğü için P3 ile Q3 normalde birbirine daha yakın, yani tüm diziye baktığımız zaman.
+
+98
+00:31:01,287 --> 00:31:03,346
+Böyle böldüğümüz zaman bunu karşılaştırmasını da göremiyoruz.
+
+99
+00:31:04,084 --> 00:31:22,058
+Evet, o yüzden o zaman bunu sanki üç grupmuş gibi düşüneceğiz değil mi? Bunun için diyelim şöyle bir şey yaptık, S1 grubundaki en kısa elemanları bulduk, en yakın elemanları eskiden bulduk ve bunu D ve...
+
+100
+00:31:22,163 --> 00:31:27,682
+Bunlardan, yani S1 ve S2'den en kısa olanı seçerek buna bir D dedik.
+
+101
+00:31:28,304 --> 00:31:31,403
+En yakın olan elemanların uzaklığına D dedik.
+
+102
+00:31:31,403 --> 00:31:41,083
+Daha sonra middle point'in sağ ve sola olan D uzaklığında herhangi bir nokta var mı diye bakıyorum.
+
+103
+00:31:41,503 --> 00:31:48,764
+Çünkü arkadaşınızın anlattığı gibi, ben sadece burayı kontrol etseydim P3 diğerlerine çok uzaktı.
+
+104
+00:31:49,120 --> 00:31:56,400
+Q3 de diğerlerine de çok uzaktı ama burada P3 ve Q3'ün birbirine çok yakın olduğunu kaçırmış olacaktım.
+
+105
+00:31:56,660 --> 00:32:24,099
+Bu nedenle bir de orta noktaya olan uzaklıklarına bakıyorum. Yani Dijk uzaklığını hesaplıyorum iki tarafında. Bu arada eleman varsa bunun da uzaklığını karşılaştırmam gerekiyor. Yani en son ne oluyor arkadaşlar? Altıncı maddeye bakarsanız, diyelim Sigma 1 dedik birincide çıkana, Sigma 2, bir de Sigma 1-2 şeklinde minimumu yani 3 grup gibi düşünebiliriz.
+
+106
+00:32:24,660 --> 00:32:26,660
+En sonunda bunu yapıyoruz.
+
+107
+00:32:28,564 --> 00:32:33,843
+Şöyle bir şey bakalım, kod tasarımına bakalım.
+
+108
+00:32:34,744 --> 00:32:39,564
+Şimdi burada az önce arkadaşınız da QuickSort kullandığını söyledi.
+
+109
+00:32:39,923 --> 00:32:43,084
+Burada benim sormak istediğim, ben de buraya QuickSort yazdım.
+
+110
+00:32:43,244 --> 00:32:45,883
+Fakat QuickSort'un bir dezavantajı var.
+
+111
+00:32:46,923 --> 00:32:48,144
+Bunu bana söyler misiniz?
+
+112
+00:32:48,264 --> 00:32:53,203
+Ben burada sıralamak için efficient bir algoritma seçmem gerekiyor demiştim.
+
+113
+00:32:53,584 --> 00:32:56,442
+QuickSort'u seçtim ama bunun bir dezavantajı var.
+
+114
+00:32:56,564 --> 00:32:57,144
+Nedir bu?
+
+115
+00:32:58,744 --> 00:33:02,224
+Şey değil mi? Worst case'i yine n kare mi?
+
+116
+00:33:02,962 --> 00:33:09,544
+Evet, worst case'i n kare. Peki, worst case'in neden n kare olduğunu açıklayabilir misin?
+
+117
+00:33:11,124 --> 00:33:13,224
+Bunu açıklayamam ya.
+
+118
+00:33:14,423 --> 00:33:15,984
+Açıklayabilecek olan var mı?
+
+119
+00:33:18,124 --> 00:33:19,564
+Sıralı olmuşsa...
+
+120
+00:33:21,564 --> 00:33:23,484
+Dinliyorum.
+
+121
+00:33:24,019 --> 00:33:26,019
+Sen konuş, aynen anda oldu.
+
+122
+00:33:32,148 --> 00:33:33,747
+Konuşacak olan var mı?
+
+123
+00:33:37,843 --> 00:33:40,343
+Yok mu arkadaşla konuşacak olan?
+
+124
+00:33:45,202 --> 00:33:48,202
+Hocam sıralı olma durumunda olmaz mı başka?
+
+125
+00:33:48,202 --> 00:33:52,139
+Sıralı olma durumunda neyi etkiliyor arkadaşlar?
+
+126
+00:33:52,756 --> 00:34:20,215
+Pivot seçimini değil mi? Aslında burada önemli olan pivot seçimi. Şimdi diyelim ki pivotu ilk eleman olarak karar verdik. Ben ilk elemanı seçiyorum ve dizim sıralı. Diyelim ki 1-2-3-4 şeklinde giden bir dizi. Ben pivotu 1 seçtim. Quicksort'un mantığı nedir arkadaşlar? Zaten Divide and Conquer yaklaşımıyla ilerliyor. O diziyi bölerek, alt problemlere bölerek bu işlemi yapıyor.
+
+127
+00:34:20,755 --> 00:34:27,154
+Ama eğer benim pivotum en küçük değeri dizinin en küçük değerini seçerse o zaman diziyi ikiye bölemez.
+
+128
+00:34:27,154 --> 00:34:31,956
+Bu nedenle de worst case'm en kare olur veya en büyük değer için de bu geçerli.
+
+129
+00:34:31,956 --> 00:34:38,355
+Yani pivot seçimi Quicksort'ta karmaşıklığı değiştiren, karmaşıklığı etkileyen bir nokta.
+
+130
+00:34:38,355 --> 00:34:46,154
+Bu yüzden Quicksort aslında belki Quicksort yerine merge sort seçilirse daha garanti olabilir.
+
+131
+00:34:47,154 --> 00:34:48,355
+Anladık mı?
+
+132
+00:34:51,442 --> 00:35:09,682
+Tamam. Şimdi şöyle bakalım, biz dizimizi sıraladık. Diyelim ki Quicksort'un Average Case'ini düşünelim. O şekilde ilerledik. Beyanmerge Sort kullandığımızı düşünelim. Daha sonra fonksiyonumuza geliyoruz.
+
+133
+00:35:15,826 --> 00:35:18,708
+Bu arada ben tıklıyorum ama çok geç değişiyor.
+
+134
+00:35:22,646 --> 00:35:23,467
+Slide'ım.
+
+135
+00:35:24,146 --> 00:35:32,266
+Şimdi az öncekine bakarsak, eğer benim elemanlarım 3 tane kalırsa, yani dizimde 3 tane eleman olursa ne olacak arkadaşlar?
+
+136
+00:35:32,766 --> 00:35:34,487
+Ben bunun orta noktasını bulacağım.
+
+137
+00:35:34,606 --> 00:35:36,306
+Bir tane eleman orta nokta oldu.
+
+138
+00:35:36,407 --> 00:35:37,626
+Diyelim şurayı düşünün.
+
+139
+00:35:37,806 --> 00:35:39,746
+Sanırım mouse'umu görebiliyorsunuz.
+
+140
+00:35:40,628 --> 00:35:48,628
+Burayı P3'ü orta nokta olarak düşünün. Sol tarafta da bir tane eleman kaldı, sağ tarafta da Q3 kaldı bir tane.
+
+141
+00:35:48,628 --> 00:35:57,628
+Divide and Conquer yaklaşımı burada üç elemanda çalışır mı? Yani bir mantığı var mı? Soldakini neyle kıyaslayacağım, sağdakini neyle kıyaslayacağım değil mi?
+
+142
+00:35:58,708 --> 00:36:15,708
+Bu nedenle eğer size'm 3'ten küçük veya eşitse, brute force yaklaşımına geçebilirsin diye return ediyorum. Yani durma noktam burada size'mı küçülterek yani her seferinde divide ediyorum ya onu da göstereceğim şimdi.
+
+143
+00:36:15,708 --> 00:36:26,708
+Küçük olduğu zaman 3'ten brute force yaklaşımını yap diyorum. Yani ilk başta yaptığımız gibi 3 tane elemanı birbiriyle kıyaslayarak en kısa olanı bulmuş olacağım.
+
+144
+00:36:26,708 --> 00:36:46,467
+Şimdi şuraya bir bakalım, şu endifin altından. Benim orta noktayı bulmam gerekiyor divide edebilmek için dizimi. Orta noktamı buluyorum ve orta noktadaki indisi ait olan elemanı da middle point adında bir değişkeni atıyorum.
+
+145
+00:36:46,931 --> 00:37:14,351
+Daha sonra şimdi ne yapmam gerekiyor? Önce sol tarafı kendi içerisinde tekrar çağırmam gerekiyor. Sonra da sağ tarafı. Ne yapacak bu peki? Az önce tekrar bakarsak. Şimdi sol ve sağ olarak ayırdım. Daha sonra sol taraf tekrar çağıracak closest point fonksiyonunu. Ne olacak? Tekrar middle'ı bulacak. Middle elemanı bulacak. Ondan sonra tekrar çağıracak.
+
+146
+00:37:14,931 --> 00:37:42,331
+Bu şekilde buldu. Tekrar Left-Right olarak ayırdı. Sonra buradaki Left P1, P2 için çağıracak. Ama şöyle, burada artık P1 ve P2 iki tane nokta kaldı. Artık brute force çalışacak. Burası bittikten sonra Right için çağıracağız. P3 için. P3 zaten tek başına. Sonra sol tarafın hepsini yaptık. O zaman artık sağ tarafa geçebilirim.
+
+147
+00:37:42,931 --> 00:38:10,931
+Aynı işlemleri sağ taraf için yapacağız. Tekrar middle point'ı bulacağız. Left için recursive çalışacak, ardından right için recursive çalışacak. Böyle böyle recursive'i çalıştırmış olacağız bakın. Ne yapıyorum? D-left'e her seferinde closes point'ı çağırıyorum ve üç tane küçük veya eşit olduğu zaman return yapıyor brute force'u çağırarak. Bu brute force fonksiyonu da
+
+148
+00:38:10,931 --> 00:38:21,092
+bize en kısa olan mesafe dönüyor. Daha sonra bu bittikten sonra left kısmı right'a geçiyorum. Şimdi right yapmak için ne yapmam lazım?
+
+149
+00:38:21,092 --> 00:38:33,730
+Dizimi orta noktadan başlatıp sağ taraftaki elemanları almam lazım. Bu nedenle p artı middle diyorum ve size'dan da middle'ı çıkarttığım zaman
+
+150
+00:38:34,228 --> 00:38:39,027
+sol tarafı atmış oluyorum. Yani sadece sağ taraftaki elemanları almış oluyorum.
+
+151
+00:38:39,027 --> 00:38:46,228
+Ve bunu da tekrar arka arkaya, az önce söylediğim gibi çağırarak D-right'a eşitliyorum.
+
+152
+00:38:46,228 --> 00:38:54,628
+Daha sonra ne dedik? Left'ten ve right'ten elde ettiğimiz mesafelerden hangisi minimum onu bulmam lazım.
+
+153
+00:38:54,628 --> 00:38:57,228
+Bunu da D diye bir değişkeni atıyorum.
+
+154
+00:38:57,228 --> 00:39:01,826
+Şimdi ne kaldı arkadaşlar? Az önce sizinle beraber konuştuğumuz
+
+155
+00:39:02,228 --> 00:39:12,467
+yata noktanın D uzaklığındaki elemanlara bakmam gerekiyor. Bunun için benim elimde D'yi zaten elde ettim. Bunun için tüm elemanları tarıyorum.
+
+156
+00:39:13,746 --> 00:39:28,787
+Eğer middle point'ten uzaklığına, her bir elemanın middle point'u olan uzaklığına bakıyorum. Eğer D mesafesinden azsa, o zaman ona ayrı bir strip adında bir diziyi atıyorum. Her birisini.
+
+157
+00:39:29,267 --> 00:39:38,927
+Daha sonra bu stripin içerisindeki aynı yukarıda yaptığım gibi bu bir sudokotu olduğu için tabi bu şekilde gösterdim.
+
+158
+00:39:38,927 --> 00:39:48,008
+Strip'in içerisindeki minimum mesafeyi de buluyorum. Elemanlar içindeki minimum mesafeyi de buluyorum.
+
+159
+00:39:48,008 --> 00:39:57,267
+Ve en son ne kaldı? Benim elimde bir D vardı. Şimdi bir de orta noktada bulunan, orta noktanın çevresinde bulunan elemanların
+
+160
+00:39:57,267 --> 00:40:05,447
+mesafesi var. O mesafeyle karşılaştırıp hangisi en küçükse onu bana dönmüş oluyor.
+
+161
+00:40:07,867 --> 00:40:16,668
+Anlaşıldı mı arkadaşlar? Konuşabiliriz üzerine veya siz bundan daha farklı yaptıysanız onu da konuşabiliriz. Lütfen katılın derse.
+
+162
+00:40:17,588 --> 00:40:45,588
+Bir şey söyleyebilir miyim? Siz bize en başta Mersort'un QuickSort'a göre daha efektif olacağını söylediniz. Ancak biz spesifik olarak bu soruyu düşünürsek, iki çözümü karşılaştırmak için çok elemanlı dizler kullanmalıydık. Hani özellikle çalışma zamanını karşılaştırmak için. Burada şimdi Mersort'un bir de yer karmaşıklığı var ON diye. Bunu düşünürsek yine QuickSort'tan daha iyi olur mu? Yine öyle daha iyi olur mu?
+
+163
+00:40:46,867 --> 00:41:14,867
+Arkadaşlar ben orada şöyle karmaşıklığa odaklanmak için söyledim. Tabii ki Merts Word'un da memory sorunu var. Bölme yaptığı için sürekli. Daha sonra da birleştirme yapıyor. Bu nedenle onun da memory karmaşıklığı yüksek. Haklısın bu konuda. Her ikisinin de birer dezavantajı var. Zaten hani ona girecek olursak bunların içerisinde dizi kullanma, link list kullanma gibi avantajları, dezavantajları da var.
+
+164
+00:41:14,867 --> 00:41:27,267
+O kadar ayrıntıya girmedim. Ben sadece çalışma karmaşıklığı olarak bu noktayı da unutmamanıza söyledim. Eğer kaynaklara bakarsanız kimisi QuickSort kullanmış, kimisi MergeSort kullanmış.
+
+165
+00:41:27,267 --> 00:41:33,467
+Tabii QuickSort daha fazla kullanılan bir yöntem. Onu da belirtebilirim.
+
+166
+00:41:34,195 --> 00:42:02,195
+[öğrenci], evet şimdi şöyle arkadaşlar, bunu aslında hocalarımızla biz de konuştuk. Aslında bu problemin amacı en kısa mesafeyi elde etmek. Ama burada şöyle, ben hani Sudokot yazdığımız için şeyleri öyle ayrıntılı ayrıntılı yazmak istemedim, oradaki elemanları dönmeyi. Elemanları dönmek için arkadaşlar, burada bir...
+
+167
+00:42:02,195 --> 00:42:08,795
+Siz nasıl yaptınız bilmiyorum şu an ama bir Structure tanımlayabilirsiniz en küçük elemanı alırken.
+
+168
+00:42:08,795 --> 00:42:17,914
+Örneğin burada en küçüğü hesaplıyoruz ya, bu bir Structure elemanı olabilir ve o elemanların hem değerini hem de distance'ını tutabilir.
+
+169
+00:42:17,914 --> 00:42:28,075
+Veya bu bir pointer olabilir, fonksiyonlara pointer dönebilirsiniz ve orada ilgili P1 ve P2 noktalarına dönebilirsiniz.
+
+170
+00:42:30,195 --> 00:42:58,195
+Açılarımıza da şey soranlar olmuş. Hangi diyelim ki 5 ve 6, 7 ve 8 elemanlar var. Bunların her ikisinin uzaklığı da 1 hangisini seçeceğiz diye. Arkadaşlar biz bu soruyu zaten daha önce de ödev olarak verdik. Burada kritik nokta sizin o en kısa mesafeye sahip olan yani bu algoritmik düşünceyi kullanarak en kısa mesafeye sahip olan elemanı bulup yani o en kısa mesafeyi bulup bulamadığınız.
+
+171
+00:42:58,195 --> 00:43:05,575
+Bu nedenle bu bizim için yeterli. O yüzden hani o kısmı çok karıştırmak istemedim Stockholm'da [öğrenci].
+
+172
+00:43:07,856 --> 00:43:12,476
+Hocam, dizi sıralandıktan sonra Take Before döngüsünde bunu halledemez miyiz?
+
+173
+00:43:13,755 --> 00:43:19,635
+Take Before döngüsü, az önce tek döngülerle yaptık Burt Force yaklaşımını. Karmaşıklığı kaç oldu?
+
+174
+00:43:20,275 --> 00:43:22,275
+İki for döngüsüyle yaptık.
+
+175
+00:43:22,655 --> 00:43:31,016
+Yok, ilk başta QuickSort veya MergeSort, NLoggen, ardından tek bir for döngüsünde halloluyordu.
+
+176
+00:43:32,215 --> 00:43:37,016
+Tek bir for döngüsüyle yine iki for gerekir. Nasıl yapıyorsun tek forda?
+
+177
+00:43:37,034 --> 00:43:42,115
+Hocam sıralandığı için A0, A1, A1, A2, A2, A3 falan.
+
+178
+00:43:42,595 --> 00:43:45,355
+Ağır dışı kelemanlara bakmamız yetiyor hocam tek forda.
+
+179
+00:43:47,028 --> 00:43:48,467
+Sıralandığı için.
+
+180
+00:43:49,588 --> 00:43:55,588
+O zaman yine Nlogan, QuickSort'un yaklaşımı şimdi.
+
+181
+00:43:56,746 --> 00:44:00,947
+Kaç tane elemanı karşılaştırıyorsunuz? Hiç Tech4'la yapmadım.
+
+182
+00:44:00,947 --> 00:44:08,068
+Şimdi sıralı olduğu için, ilk elemanla karşılaştırdınız, diğerleriyle?
+
+183
+00:44:10,068 --> 00:44:14,387
+Hocam, ardıçlı karşılaştırma yapıyoruz. En karmaşıklık oluyor.
+
+184
+00:44:18,003 --> 00:44:20,003
+Ben de öyle yaptım.
+
+185
+00:44:20,003 --> 00:44:24,003
+Enekli bir kere karşılaştırma yapmış oluyoruz bu işlemde.
+
+186
+00:44:24,003 --> 00:44:28,003
+Yani birinci elemanla ikinci iki ile üçü bu şekilde karşılaştırdığımız zaman...
+
+187
+00:44:28,659 --> 00:44:34,958
+Bütün karşılaştırmaları yapmış oluyoruz. Çünkü aradaki mesafeler en kısa oluyor, en yakın elemanlar arasında.
+
+188
+00:44:35,139 --> 00:44:43,139
+O, N olmuş oluyor. Quicksort'ta O, N, Log, N olduğu için O, N, Log, N artı N olarak sonucumuz N, Log, N olmuş oluyor.
+
+189
+00:44:43,700 --> 00:44:50,700
+Anladım nasıl yaptığınızı. Şimdi genellikle hani divide and conquer yaklaşımında algoritmada,
+
+190
+00:44:56,659 --> 00:45:07,338
+çözmeyi düşünmemiştim. Anladım şimdi ne demek istediğinizi. O şekilde çözdüyseniz kabul edilir tabii ki. Aynı karmaşıklığı veriyor çünkü haklısınız.
+
+191
+00:45:10,378 --> 00:45:17,499
+Zaten şimdi karmaşıklığı da konuşmuş olduk. Başka sorunuz var mı bununla ilgili?
+
+192
+00:45:21,108 --> 00:45:22,108
+Orda slide.
+
+193
+00:45:23,108 --> 00:45:24,972
+Bunu da konuşmuş olduk.
+
+194
+00:45:28,755 --> 00:45:36,436
+Şimdi o zaman eğer bununla ilgili sorunuz yoksa diğer sorunuza geçiyorum.
+
+195
+00:45:43,155 --> 00:45:54,595
+Arkadaşlar, ne yapıyordunuz? Bir Neighborhood algoritmanız var. Bu algoritmaya uygun olarak matrisler oluşturmanız isteniyor.
+
+196
+00:45:54,595 --> 00:46:08,436
+Bunun için de sağda gördüğünüz gibi bize bir R değeri, R değeri alıyoruz ve bu değere göre Diamond şeklinde şekiller oluşturuyoruz.
+
+197
+00:46:09,972 --> 00:46:23,972
+Belli bir kurala dayanarak bunu yapıyoruz. Bunun için şöyle bir bakalım solda neler önemli bizim için. Hangi şeyleri, hangi hücreleri siyaha boyayacağım?
+
+198
+00:46:23,972 --> 00:46:37,972
+Bunun Manhattan Distance'ı biliyorsunuz arkadaşlar. X0 ve Y0 merkezimiz. Merkezimizde R değerinden eşit veya daha küçük mesafede olan
+
+199
+00:46:37,972 --> 00:46:43,132
+hücrelerimizi siyah yani bir olarak atıyoruz.
+
+200
+00:46:43,132 --> 00:46:45,711
+Ve burada diğer önemli olan ne?
+
+201
+00:46:46,211 --> 00:46:48,132
+Toplam siyah hücre sayısı.
+
+202
+00:46:48,552 --> 00:46:54,192
+Eğer şöyle bir bakarsanız zaten, bu formülü ödevin linkinde de vardı zaten.
+
+203
+00:46:54,331 --> 00:46:57,552
+Bu formüllere rahatça ulaşabiliyordunuz.
+
+204
+00:46:58,311 --> 00:47:02,452
+Toplam hücre sayısını da şu şekilde formülleyebiliriz.
+
+205
+00:47:05,664 --> 00:47:17,664
+Tamam, okunuşum bilemiyorum, Dilanoy diye yazılıyor. Numbers yaklaşımıyla bulunan bir formülmüş. Bu da aklınızda olsun, ben de bakınca gördüm.
+
+206
+00:47:17,664 --> 00:47:27,664
+Matris boyutumuzda, şimdi bu şekillere aldanmayın, şu şekilde ben renkli bir çerçeveyle göstermeye çalıştım.
+
+207
+00:47:33,664 --> 00:48:00,664
+Bunun için de eğer yine tüm matrislere bakarsanız iki en artı üç şeklinde ilerlediğini göreceksiniz. Bu da şuradan göstereyim mesela. Her biri zaten ar kadar arttığı için şu şekilde iki en olacak ve ardından da bir boş yapıyoruz. Artı iki, bir de kendisi artı üç şeklinde düşünebilirsiniz.
+
+208
+00:48:01,664 --> 00:48:05,842
+tüm boyutu. Problemi anlamayan var mı bu arada?
+
+209
+00:48:09,780 --> 00:48:11,320
+bir yol kalba.
+
+210
+00:48:11,668 --> 00:48:15,668
+Hocam birden fazla yolla çözülebilir bu problem de hani...
+
+211
+00:48:15,668 --> 00:48:24,128
+Arkadaşlar, algoritmada karşılaştığımız gibi yani her konu, her soru birden fazla yöntemle çözülebilir.
+
+212
+00:48:24,287 --> 00:48:33,708
+Yalnızca şöyle, belirli bir algoritmaya eğer bağlıysa o algoritma tabanında çözmeniz gerekiyor soruyu.
+
+213
+00:48:39,668 --> 00:48:47,048
+diye yazdığınız zaman size bu yaklaşım gelecektir. Çünkü genel olarak bu algoritma bu şekilde çözülüyor.
+
+214
+00:48:47,188 --> 00:48:53,508
+Ama siz tabii ki before döngüsüyle yapmışsınız. O daha efektif olan bir yaklaşım.
+
+215
+00:48:54,088 --> 00:49:03,387
+Ben burada size genel olarak bildiğimiz yaklaşımları söylüyorum veya kendim uyguladıklarımı siz çok farklı şekilde çözebilirsiniz.
+
+216
+00:49:03,568 --> 00:49:06,028
+Mesela sen nasıl çözdün bizimle paylaşabilirsin.
+
+217
+00:49:07,764 --> 00:49:13,443
+Hocam, ben öncelikle bu boyuta göre matrisin boyutunu oluşturdum.
+
+218
+00:49:13,443 --> 00:49:22,443
+Sonrasında her satıra siyah karelerin başlayacağı ve biteceği indisi hesaplayan bir formül oluşturdum.
+
+219
+00:49:22,443 --> 00:49:29,443
+O formüle göre siyah kareleri doldurdum sadece, diğer beyaz kareleri gezmedim.
+
+220
+00:49:31,476 --> 00:49:35,476
+Yani matrisim birer boşlukla oluştuysa bu şekilde?
+
+221
+00:49:36,595 --> 00:49:50,016
+Bu şekilde oluşuyor ama onun yerine bütün sırayı da gezip hani sıfırsa sıfır, birse bir de yapabilirdik veya farklı birkaç farklı yolu vardı yani o yüzden yani.
+
+222
+00:49:50,708 --> 00:50:02,708
+Tabii, algoritmaların mantığına uyduğu sürece hiçbir sorun yok. Eğer bu matrisleri elde edebiliyorsan, iteratif mi yazdın, recursive mi yazdın kodunu?
+
+223
+00:50:02,708 --> 00:50:04,708
+Iteratif yazdım.
+
+224
+00:50:04,708 --> 00:50:05,708
+Efendim?
+
+225
+00:50:05,708 --> 00:50:06,708
+Iteratif yazdım.
+
+226
+00:50:07,412 --> 00:50:12,912
+İşte aslında bu soruda sizden istenen recursive bir yaklaşım aslında.
+
+227
+00:50:12,912 --> 00:50:19,412
+Evet recursive de yazılabilirdi. Onun için de düşündüm ama hani bilmiyorum öyle bir şey yazmıyordu soruda o yüzden.
+
+228
+00:50:19,412 --> 00:50:23,912
+Yani evet öyle bir şey yazmıyordu ama az önceki soruda da aynı şekilde aslında.
+
+229
+00:50:31,700 --> 00:50:59,700
+Nasıl diyeyim size? O algoritmik düşünceyi en iyi şekilde tasarlamak. Evet, bir for döngüsünü uyguladığınız zaman en efektif sonuca ulaşmış oluyorsunuz. Ama bu iteratif bir yaklaşım olmuş oluyor. Evet, şimdi aranızdan birisi şey diyebilir, Recursive'de memoriye şişiriyor. Recursive'e ne gerek var diyebilir. Fakat örneğin, hadi diğer soruyu bilemiyorum hocalarımız için. Onu da Recursive bekleyip beklemediklerini...
+
+230
+00:50:59,700 --> 00:51:27,700
+konuşmadık ama örneğin bu soru için sizler rekürsif bir yaklaşım bekliyorlardı. Bunu da hocalara soranlar olmuş, iteratif çözersem olur mu diye. Yani soru da bu belirtilmediği için tabii ki ödeviniz kabul edilecek. Ama önce ödevi çözmadan, ödevi yapmadan önce biraz araştırma yaparsanız hani genellikle bu nasıl bu algoritmaların tabanı nasıl, nasıl çözülür?
+
+231
+00:51:27,700 --> 00:51:33,460
+çözülüyor şeklinde. Recursive yaklaşımı da görebilirdiniz bunun için.
+
+232
+00:51:38,452 --> 00:51:52,132
+Anladım. Şimdi [öğrenci] zaten size bir amaç hoca bunun için bir form hazırladı size bu tür düşüncelerinizi almak için. Şimdi ben de size aslında konusu açılmışken soruyu bölmek istemem ama bunu söylemek istiyorum.
+
+233
+00:51:52,132 --> 00:52:06,412
+Siz artık algoritma analizi aldığınız için bize alıştınız. Yani bize derken bölümün nasıl işlediğine alıştınız. Bizim hepimizin bütün araştırma görevlerinin AVS sayfalarında veri yapıları algoritma analizi için
+
+234
+00:52:06,452 --> 00:52:34,291
+Bir başlık var mı? Tam hatırlayamıyorum ama veri yapıları için ödev teslim kuralları diye bir başlık var. O kuralların içerisinde de örneğin uymanız gereken kurallar var. Orası sabit. Lütfen orayı inceleyin. Örneğin biz devside çalışmasını istiyoruz sizin kodlarınızın. Devside yazmanızı istiyoruz. Çünkü çok kalabalıksınız. Bu defa altından kalkamıyoruz her birinizde farklı bir kompilera geçtiğimiz zaman.
+
+235
+00:52:34,452 --> 00:52:43,192
+Veya farklı bir ortama geçtiğimiz zaman onlara bakmanız istiyoruz ve biz de ödevlerde biraz daha açık olmaya çalışırız senin dediğin gibi.
+
+236
+00:52:45,932 --> 00:52:54,112
+Aslında elimizden geleni yapıyoruz ama formada bu düşünceni yazarsan ama çocuğa ben de iletirim.
+
+237
+00:52:56,231 --> 00:52:58,532
+Şimdi şöyle bir bakalım.
+
+238
+00:53:04,019 --> 00:53:09,019
+Recursive yaklaşımına geçelim. Recursive yaklaşımıyla çözenler var ama değil mi?
+
+239
+00:53:12,979 --> 00:53:13,979
+Ben öyle çözüm.
+
+240
+00:53:13,979 --> 00:53:15,979
+Evet hocam.
+
+241
+00:53:15,979 --> 00:53:22,979
+Yani arkadaşlar, kursuf yaklaşımının da farklı farklı şeyleri var.
+
+242
+00:53:22,979 --> 00:53:26,979
+Mesela siz bu bir diamond olarak ilerlediği için aynı…
+
+243
+00:53:26,979 --> 00:53:30,979
+Bakayım [öğrenci], bir okumamadım.
+
+244
+00:53:34,996 --> 00:53:57,396
+Evet, ben burada söylemiş olayım, lütfen DevSide derleyin başka ortamda yazsanız bile. DevSide en son derleyin. Biz DevSide kontrol ediyoruz. Hatta GCC versiyonu hepsi yazıyor bizim o paylaştığımız dokümanda. Dikkat etmeniz gerekenler, bizim avSS'lerimizi kontrol ederseniz çok iyi olur.
+
+245
+00:53:57,811 --> 00:54:07,811
+AWS'lerimiz de biliyorsunuz. Adımızın yanına, AWS yazdığınız zaman Google'a hemen AWS sayfalarımıza erişebilirsiniz. Link paylaşmama şu an gerek yok diye düşünüyorum.
+
+246
+00:54:08,811 --> 00:54:09,811
+Tamam.
+
+247
+00:54:10,811 --> 00:54:23,811
+Şimdi, şöyle, burada da şöyle bir şey, bu benim yazdığım küçük bir şey. Ne yapıyoruz arkadaşlar? Sadece az önce yazdığımız kurallar önemli bizim için.
+
+248
+00:54:25,300 --> 00:54:27,380
+Tamam, çok teşekkürler [öğrenci].
+
+249
+00:54:29,019 --> 00:54:30,579
+Şimdi...
+
+250
+00:54:30,644 --> 00:54:58,624
+Fonksiyonumuza şöyle baktığımız zaman hangi noktalar, hangi hücreler siyah olması gerekiyor? Bunu kontrol ediyorum önce. Benim bir satır indisim var, sütun indisim var. Bunların orta noktaya olan uzaklığını hesaplıyorum. Eğer N'den küçük veya eşitse, yani az önce resimde R yazıyordu ama ödevde N olarak verilmiş. O yüzden N diye yazıyor. Çok önemli değil bu. Bu hücrenin değerini bir yapıyor.
+
+251
+00:54:58,644 --> 00:55:09,644
+Daha sonra, şurası tamamen bana bağlı. Ben rekürsivimi nasıl çalıştıracağım? Ben şöyle yapıyorum. Eğer sütun sayım...
+
+252
+00:55:11,923 --> 00:55:37,923
+Son sütuna geldiysem, o zaman sütunu sıfırlıyorum. Bu arada şurada şöyle bir atlamışım. Şurada sütunu arttırıyorum arkadaşlar. Şu endifin altında sütunu arttırıyorum. Lütfen kusura bakmayın. Şu an bakınca fark ettim. Şimdi sütunu arttırıyorum ve eğer son sütuna geldiysem, yani önce sütun sütun ilerliyorum. Eğer son sütuna geldiysem o zaman benim şeyi...
+
+253
+00:55:38,836 --> 00:55:47,836
+Diğer satıra geçmem gerekiyor. O yüzden şurada küçük bir ip oluşturdum ve satır sayımı, satır indisimi ona göre arttırdım.
+
+254
+00:55:47,836 --> 00:56:04,336
+Ve eğer satır indisim size'mdan küçükse çağırmaya devam ettim. Her seferinde fonksiyonumu yeni indisimle çağırarak o indisin 0 veya 1 olarak kalmasına karar vereceğim.
+
+255
+00:56:04,336 --> 00:56:06,836
+Neden burada 0 eşitleme yapmıyorum?
+
+256
+00:56:06,836 --> 00:56:13,554
+Çünkü dinamik berlik ayırırken, k-log fonksiyonunu kullanarak direkt sıfır atamasıyla başlıyorum.
+
+257
+00:56:13,554 --> 00:56:27,316
+Ve daha sonra o hücrenin değeri eğer buradaki Manhattan Distance'a göre yani n'den daha küçük, daha kısa metafedeyse, o zaman o hücrenin değerini 1 yapıyorum.
+
+258
+00:56:27,316 --> 00:56:33,075
+Yani bu kadar basit, kısa bir fonksiyon yeterli oluyor.
+
+259
+00:56:35,796 --> 00:56:38,916
+Burada anlaşılmayan bir şey var mı?
+
+260
+00:56:42,324 --> 00:56:57,523
+Sizler nasıl yaptınız bilemiyorum ama. Yani burada şey diyen var mı? Ben bu nasıl yapacağımı düşündüm ama rekürsmini yazmayı beceremedim. Beceremedim derken yapamadım diyen var mı?
+
+261
+00:57:01,204 --> 00:57:11,563
+Hocam, şey diyeceğim, bu algoritm, yani bu soruya bakınca kimsenin aklına recursive yapmak gelmiyor ki.
+
+262
+00:57:12,824 --> 00:57:17,604
+Yani aslında şu şekle baktığınız zaman bile gelmesi gerekiyor.
+
+263
+00:57:17,764 --> 00:57:21,023
+Yani neden gelmiyor ki senin aklına recursive yapan arkadaşları?
+
+264
+00:57:21,704 --> 00:57:26,264
+Çünkü recursive çözümün hiçbir mantığı soruda yok yani.
+
+265
+00:57:27,731 --> 00:57:48,510
+Şimdi ama belli bir kurala göre sürekli büyüyen bir şey var orada. Benim ilk aklıma recursive gelir bunun için. Bak sürekli örneğin en basitinden şunu düşünürüm ben. Bu dört tarafa doğru büyüyor değil mi? O zaman ben bir yukarıya doğru, bir sağa doğru, bir aşağıya, bir sola doğru mesela o şekilde recursive yapabilirim.
+
+266
+00:57:55,731 --> 00:58:04,371
+Sırları işlerim. Yani birçok şey aklıma gelir ben bu şekle baktığım zaman iteratif dışında.
+
+267
+00:58:04,371 --> 00:58:18,471
+Şey, şöyle söyleyeyim. Benim bakınca aklıma gelen çember yani daire fonksiyonu ama Manhattan Distance ile alınan çember daire gibi bir şey gördüm. Öyle yaptım yani.
+
+268
+00:58:19,411 --> 00:58:20,931
+İteratif olarak çözdüm.
+
+269
+00:58:20,931 --> 00:58:21,891
+Hocam.
+
+270
+00:58:23,412 --> 00:58:33,012
+Bir de şimdi recursive yaptığımızda Stack Overflow olma şansı dolduğu için yani onu ilk olarak yapmak istemiyoruz. O yüzden iteratif endemi tercih ediyoruz.
+
+271
+00:58:33,972 --> 00:59:01,032
+Arkadaşlar, evet, recursive'in bir dezavantajı var ama yani onu hiç kullanmayacağız anlamına gelmiyor lütfen. Burada hani aslında belli oluyor recursive olduğu. Evet anlamamış olabilirsiniz. O da olabilir. Tamam soruda belirtilmediği için iteratif çözmüş olabilirsiniz. Bu zaten biz kabul edeceğiz sizin çözümünüzü. Fakat yani internete de biraz baksaydınız.
+
+272
+00:59:01,972 --> 00:59:14,251
+Yani görebilirdiniz ama sizi hani suçlamıyorum. Bu tabii siz öyle anlamışsınızdır, öyle yapmışsınızdır. Ama Recursive Stack Overflow yapıyor, memori dolduruyor diye biz Recursive'den sürekli kaçmıyoruz.
+
+273
+00:59:14,851 --> 00:59:21,052
+Hocam ben Recursive düşündüm yapabileceğimi ama iteratif daha hızlı oluyor. O yüzden iteratif yaptım.
+
+274
+00:59:21,300 --> 00:59:30,900
+Yani mesela bir kare var, o karenin dört köşesine bakmamız gerekiyor doldurmamız için. Her seferinde. Dolu veya boş olması önemli değil yani.
+
+275
+00:59:30,900 --> 00:59:31,900
+Öyle değil mi?
+
+276
+00:59:31,900 --> 00:59:38,099
+Katılmıyorum buna. Eğer gideceğin yönleri hesaplarsan her defasında birinin üstüne bir daha bir yazmak zorunda değilsin. Rekürsif olsa bile.
+
+277
+00:59:38,099 --> 00:59:41,099
+Ama o zaman da ekstra karşılaştırma yapmış oluyorsun.
+
+278
+00:59:41,099 --> 00:59:42,099
+Yani...
+
+279
+00:59:42,099 --> 00:59:46,700
+Yok, zaten biliyorsun. Her defasında yukarı gidenler sadece yukarı gidebilir.
+
+280
+00:59:48,595 --> 00:59:52,195
+Yani, olabilir tabii. Öyle de olabilir de.
+
+281
+00:59:53,075 --> 01:00:03,436
+Yani ben ödevlerinize, cevaplarınıza baktığım zaman sizin çözümlerinizi şu an hangisi iyi deme şansım yok. Hayal etmeye çalışıyorum.
+
+282
+01:00:04,315 --> 01:00:09,516
+Ama bu soru için recursive yaklaşımı bekleniyordu diyebilirim size.
+
+283
+01:00:09,655 --> 01:00:16,595
+Çünkü zaten biraz belli arkadaşlar, üst üste biniyor, sürekli bir artım var. Bu çok büyüye de bilir.
+
+284
+01:00:21,075 --> 01:00:34,755
+belli oluyor ama tabii siz onu o an iteratif kolayınıza gelmiş olabilir. Ama aslında bir recursive'den kaçma durumumuz oluyor. Onu hani her zaman yapmasak iyi olur.
+
+285
+01:00:36,916 --> 01:00:42,836
+Yok [öğrenci] estağfurullah lütfen. Şey değil yani tabii gelmeyebilir.
+
+286
+01:00:47,251 --> 01:00:50,371
+Lütfen hiç özür dilerinecek hiçbir şey yok.
+
+287
+01:00:53,619 --> 01:00:58,220
+Ben bir diğer slide'a geçmek için beş defa basmam gerekiyor en az.
+
+288
+01:00:59,260 --> 01:01:05,220
+Tamam, o zaman buradaki rekürtifi anlayabildiniz değil mi? Sizler daha farklı...
+
+289
+01:01:06,579 --> 01:01:18,420
+Arkadaşlar ben, yani Yıldız mail'im de hepsi aynı mail'ime geliyor. Hangisi, yani şeyde, bölümün sitesinde yazan Yıldız mail'ime mail atabilirsiniz.
+
+290
+01:01:18,612 --> 01:01:22,612
+Hepsi aynı mailime yönlendirdim, alıyorum hepsini.
+
+291
+01:01:22,612 --> 01:01:27,612
+Yazayım mı buraya? Şöyle yapacağım.
+
+292
+01:01:36,019 --> 01:01:37,019
+adresini.
+
+293
+01:01:43,028 --> 01:01:58,028
+Bunun çok basit, iteratifi sorduğunuz için, aynısını nasıl, yani şöyle, daha efektif iteratifler yazılabilir, ben sadece aynısı nasıl iteratif olur onu burada göstermek istedim.
+
+294
+01:01:58,028 --> 01:02:11,028
+Bunu sadece bir while döngüsü ile neydi bizim durma noktamız? Ben önce stumları, sonra satırları işliyordum. Satırlarım da saizden küçük olduğu sürece while'ım dönüştü.
+
+295
+01:02:11,028 --> 01:02:29,028
+Vali döngüm dönecek ve en sonunda da aynı işlemleri yapacağım. Her seferinde bakıyorum, enden küçük veya eşit mi o hücremin uzaklığı merkezime? Eğer küçükse bir atıyorum. Eğer...
+
+296
+01:02:29,650 --> 01:02:44,650
+Sütunumu mod alıyorum size göre. Son sütuna geldiysen satırımı arttırmış oluyorum. Burada az önce dediğim gibi bir sütun arttırma, kol artı artı şeklinde düşünebilirsiniz. Bir sütun arttırma işlemi var. Onu atlamışım burada.
+
+297
+01:02:47,536 --> 01:03:14,155
+Bu da ilgili soracağınız bir şey yoksa şöyle bir koda hızlıca bakalım. Yani aslında hani sintaksını bildiğinizi düşünüyorum. Hani bu az önce konuştuğumuz şeyler yararlı olan kısım. Ama şöyle kısaca, dinamik memori alokasyonunu unutanlar var mı bilmiyorum ama zaten internette de hemen erişebilirsiniz. Ben yine de şöyle bir tekrar ekran paylaşımı yapacağım.
+
+298
+01:03:17,267 --> 01:03:19,267
+Anlatığımdan emin değilim.
+
+299
+01:03:19,267 --> 01:03:21,267
+Ayy sire çalışıyorum.
+
+300
+01:03:23,267 --> 01:03:28,267
+Şöyle tüm ekranımı paylaşayım. Şuradan çıkalım.
+
+301
+01:03:33,171 --> 01:03:35,892
+Şun, taşımayacak, bu sezgin.
+
+302
+01:03:40,083 --> 01:03:48,643
+Şimdi şurada ilk örneğimiz buydu. İlk örneğimiz de görüyorsunuz değil mi ekranı?
+
+303
+01:03:48,643 --> 01:03:50,643
+Evet hocam.
+
+304
+01:03:50,643 --> 01:03:51,643
+Tamam.
+
+305
+01:03:52,115 --> 01:04:04,115
+İlk örneğimizde zaten çok basitti. Sadece burada dinamik olarak da oluşturabilirdik diziyi. Bu şekilde atamış oldum. Daha sonra ne yapıyoruz?
+
+306
+01:04:04,115 --> 01:04:19,115
+Noktaları elde etmek için birer pointer gönderdim Wordforce fonksiyonuna. Burada da en maksimum bir değer atadım minimuma ki ilk gelen değer minimum olacak.
+
+307
+01:04:20,115 --> 01:04:29,595
+her bir döngüde güncellenmiş olacak. Yani bununla ilgili bir sorunuz yoktur diye düşünüyorum. Varsa şey yapabilirsiniz.
+
+308
+01:04:33,171 --> 01:04:59,471
+Ses yok, tamam. Şimdi hemen buraya bakalım. Arkadaşlar bu arada QuickSort'u şu şekilde kullanabilirsiniz. QuickSort'u kütüphaneden kullanabilirsiniz ama şöyle, biz size ödev verdiğimiz zaman, hani yani ben şu an size yolu göstermeye çalışıyorum kodlamadan ziyade ama siz bize ödev gönderdiğiniz zaman kodlamanıza da dikkat ediyoruz.
+
+309
+01:05:01,171 --> 01:05:07,731
+Böyle hazır fonksiyon kullanmanızı çok tercih etmiyoruz. Onu ben söylemiş olayım.
+
+310
+01:05:08,211 --> 01:05:32,211
+Ne yapıyoruz? Burada da bir tane dizimiz var. Bunu önce sıraladık. Daha sonra da şöyle bir fonksiyona gönderiyoruz. Ne dedik? Az önce konuştuğumuz gibi, eğer 3'ten küçükse sayılarım, brute force yaklaşımına uygulayabilirim artık ve değerini return edebilirim en kısa mesafeyi.
+
+311
+01:05:36,211 --> 01:06:03,650
+Buna göre buluyoruz. Middle point'imizi de P mid indisiyle P dizimizden aldık ve daha sonra önce sol tarafı ve sonra da sağ tarafı sırayla çağırıyoruz recursive fonksiyonumuzla ve sonra aynı az önce sudokodda olduğu gibi bunların arasından minimumu seçiyoruz ve şimdi bu minimumu seçtikten sonra en başta konuştuğumuz
+
+312
+01:06:04,211 --> 01:06:12,671
+Orta noktaya D uzaklığında olan noktaları elde etmek için bir dizi tanımlıyoruz ve bu diziyi oluşturuyoruz.
+
+313
+01:06:13,072 --> 01:06:23,771
+Bu dizideki elemanların arasındaki mesafeyi bulmak için de bir fonksiyona gönderip, yani burada orada da yapabilirdiniz.
+
+314
+01:06:24,231 --> 01:06:28,411
+Basitçe tek boyutlu olduğu için az önce de söylediğim gibi mutlak değerlerinin...
+
+315
+01:06:31,860 --> 01:06:33,036
+tuya matı
+
+316
+01:06:36,947 --> 01:06:38,827
+Tekrar eder misin? Duyamadım.
+
+317
+01:06:39,827 --> 01:06:43,407
+Hocam, Elif Hoca yanlışlıkla mikrofonu açtı da sanırım oydu.
+
+318
+01:06:43,666 --> 01:06:49,987
+Öyle mi? Tamam. Ben şu an göremiyorum da kimlerin konuştuğunu. Açmam gerekiyor sanırım. Ekran karışmasın diye açmıyorum.
+
+319
+01:06:52,226 --> 01:06:54,090
+Daha sonra...
+
+320
+01:06:54,195 --> 01:07:04,516
+ne dedik, strip içerisinde de mesafeyi bulduktan sonra, D uzaklığındaki elemanların mı mesafesi daha kısa,
+
+321
+01:07:04,516 --> 01:07:10,916
+yoksa önceden bulduğumuz S1 ve S2'nin mi diye yine bir min değeri bulmuş oluyoruz.
+
+322
+01:07:10,916 --> 01:07:16,675
+Buradaki brute force yaklaşımımız da az önceki gibi aynı mantıkla ilerlemiş oluyor.
+
+323
+01:07:16,675 --> 01:07:21,315
+Burada sadece Quicksort'u çalıştırmak için küçük bir fonksiyonum var.
+
+324
+01:07:22,195 --> 01:07:35,396
+farkı alan bir küçük bir compare function yazmış oluyorum. Zaten söylediğim gibi sizin çok hazır fonksiyon kullanmanızı tercih etmiyoruz.
+
+325
+01:07:35,396 --> 01:07:42,295
+Bu yaklaşımı da konuşmuştuk zaten. Kodlamasıyla ilgili soracağınız bir şey var mı? Burada çok farklı bir şey yok.
+
+326
+01:07:42,516 --> 01:07:49,135
+Hani birazdan ki, birazdan bakacağımız soruda en azından bir memori alokasyonu var ama burada o da yok.
+
+327
+01:07:50,195 --> 01:07:55,315
+Recursive yaklaşım var. Siz de bunu zaten tek before döngüsüyle yapmışsınız.
+
+328
+01:07:57,876 --> 01:08:00,275
+Yani bu şekilde çözen yok herhalde.
+
+329
+01:08:03,635 --> 01:08:05,635
+Neyse, çok önemli değil.
+
+330
+01:08:06,554 --> 01:08:10,155
+Şimdi şeye bir bakalım, az önce konuştuğumuz
+
+331
+01:08:11,075 --> 01:08:14,356
+Recursive yaklaşımına şöyle bir bakalım.
+
+332
+01:08:14,356 --> 01:08:17,234
+Ya dediğim gibi ben burada tek bir
+
+333
+01:08:17,492 --> 01:08:34,631
+Recursive, tek bir kere çağırdım. Bunu iki defa da yapabilirsiniz, dört defa da yapabilirsiniz. Bunlar da hani her seferinde çağırma sayınız değiştiği için ben bir kere çağırdım, inefficient bu demiyorum kesinlikle.
+
+334
+01:08:35,760 --> 01:08:51,699
+Yani her birini çağırma sayısı azalacak. Bu nedenle fazla çağırdığınız zaman bir dezavantaj oluşturmuyorsunuz. Önemli olan aynı karmaşıklığa sahip efektif bir yaklaşım geliştirmek.
+
+335
+01:08:51,699 --> 01:09:03,159
+Şimdi az önce söylediğimiz formülleri burada uygulamış oldum. Az önce konuştuğumuz. Şimdi tek burada hatırlamanız gereken şey memori alokasyonu yapmak.
+
+336
+01:09:03,760 --> 01:09:30,760
+iki boyutlu olduğu için iki boyutlu da nasıl ayırıyorduk arkadaşlar? Bu arada yine sıfır olması için söylediğim gibi Kallok kullandım mallok yerine. Kallok kullanıyorum, matrisi oluşturuyorum ama bu iki boyutlu olduğu için bir for döngüsüyle tekrar matrisimi, elemanlarımı dinamik bellek olarak ayırmış oldum. Her bir eleman için ayırdığım zaman matris oluşturmuş oluyorum biliyorsunuz ki.
+
+337
+01:09:31,760 --> 01:09:59,239
+programlamada ayrıntılı bir şekilde anlatmıştım. Diğer hocalarımız da sizlere anlatmıştır. Bunu tek boyutlu olarak düşünüp şu size'ı hani size kare şeklinde düşünüp tek boyutlu olarak da işleyebilirsiniz. Burada bir sorun yok ama matris dediği zaman biz böyle iki boyutlu olarak bir dinamik bellek alokasyonu yapmış oluyoruz.
+
+338
+01:09:59,760 --> 01:10:06,659
+Bir sonra bir de soruda şey isteniyordu, burada tabii ki şöyle bir kevde olacak, kalmış orası.
+
+339
+01:10:06,659 --> 01:10:10,659
+Soruda şey isteniyordu, her bir satırdaki...
+
+340
+01:10:11,827 --> 01:10:33,827
+siyah hücre sayısı isteniyordu. Bunun için de bir dizi de oluşturabilirsiniz veya aslında şöyle bakarsanız zaten burada kaç tane olduğu belli her satırda. Birden başlayıp 3, 5, 7 şeklinde gidip sonra tekrar azalıyor. Direkt bunları da atayabilirsiniz.
+
+341
+01:10:39,827 --> 01:10:45,987
+ne düşündüğünüze bağlı, sadece karmaşıklığı etkilememesi önemli veya memoriye.
+
+342
+01:10:45,987 --> 01:10:51,987
+Daha sonra da az önce konuştuğumuz fonksiyonumuzu çağırmış oluyoruz.
+
+343
+01:10:53,427 --> 01:11:00,386
+Bu sudokodla aynı zaten tamamen. Sadece ne yapıyorum? Aralarındaki...
+
+344
+01:11:00,755 --> 01:11:19,755
+farklarını alarak, mountain distance'ı bularak daha sonra eğer n'den küçükse onu bir yapıyorum ve o rovdaki hücre sayısını arttırmış oluyorum. Ama dediğim gibi bununla hiç uğraşmasanız da olabilir. Çünkü belirli bir kurala göre devam ediyor.
+
+345
+01:11:19,755 --> 01:11:27,563
+Burada bu şekilde, hatırladınız mı dinamik bellek alokasyonda bir sorun yaşamadınız sanırım.
+
+346
+01:11:31,283 --> 01:11:33,224
+Bir dönüş alabilirsem.
+
+347
+01:11:34,443 --> 01:11:35,563
+Yok hocam, sıkıntı olmadı.
+
+348
+01:11:36,179 --> 01:11:43,059
+Yani hani kodlamada bir sorun yaşamıyorsunuz artık değil mi? Çünkü siz hani son seviyedesiniz artık.
+
+349
+01:11:43,059 --> 01:11:53,979
+Hani algoritmik düşüncede belki sorun yaşayabilirsiniz. Hani az önce konuştuğumuz gibi hani iterative recursive farklılıklarını farklı düşünebilirsiniz.
+
+350
+01:11:54,179 --> 01:11:59,979
+Ama düşündüğünüz şeyi kodlayabiliyor olmanız lazım artık algoritma analizi alan bir öğrenci için.
+
+351
+01:12:02,378 --> 01:12:03,298
+Tamam.
+
+352
+01:12:04,947 --> 01:12:14,546
+Biraz önce söylediğim gibi iterativde de siz iterativi nasıl yaptınız arkadaşlar? Daha efektif, ben açıkçası aynısını direkt iteratifini göstermek için böyle ekledim.
+
+353
+01:12:14,546 --> 01:12:24,146
+İteratifini de bir arkadaşın söyledi ama başka daha efektif çalışıyor benimki diyen varsa onu da dinleyebilirim.
+
+354
+01:12:28,306 --> 01:12:30,306
+Yok galiba.
+
+355
+01:12:32,306 --> 01:12:34,306
+Tamam öyleyse.
+
+356
+01:12:34,306 --> 01:12:40,306
+Şimdi bana sorunuz var mı arkadaşlar bu ödevle ilgili?
+
+357
+01:12:40,306 --> 01:12:43,306
+Şöyle çatıda bakmış olayım.
+
+358
+01:12:44,306 --> 01:12:49,306
+Hocam benim ödevle alakalı değil de, kallık ve mallıkla alakalı bir sorun vardı da.
+
+359
+01:12:49,306 --> 01:12:54,306
+Alanı açtıktan sonra normalde freely, hani açtığımız alanı kodu bitirmeden önce kapatıyoruz ya.
+
+360
+01:12:54,770 --> 01:13:22,771
+Maddisi olarak açtığımız zaman yine aynı şekilde tersten önce bir forla açtığımız tüm t
+
+361
+01:13:22,771 --> 01:13:25,111
+Tamamdır hocam, teşekkürler.
+
+362
+01:13:30,579 --> 01:13:39,338
+Başka yoksa ben şöyle şeyi bir kapatayım, sizleri de kimi konuştuğunu da görmüş olurum.
+
+363
+01:13:41,746 --> 01:13:51,746
+Evet, başka sorunuz var mı arkadaşlar? Yani anlamadığınız bir konu. Umarım ödevi göndermeyenlerden hani umarım anlamışsınızdır.
+
+364
+01:13:51,746 --> 01:13:59,210
+Yani yapamadığınız için mi, zamanınız olmadığı için mi göndermediğinizi bilemiyorum. Ama umarım size yardımcı olabilmişimdir.
+
+365
+01:14:04,178 --> 01:14:24,878
+Kimseden cevap gelmiyor. Tamam öyleyse. Bugünlük bitirelim arkadaşlar. Yine sorunuz olursa mail adresimi de paylaştım. O mail adresime dönüş sağlayabilirsiniz sorularınız için. Teşekkür ederim. İyi akşamlar arkadaşlar.
+
+366
+01:14:28,627 --> 01:14:31,946
+Ben teşekkür ederim. Kapatıyorum ben öyleyse.
+
+367
+01:14:34,266 --> 01:14:35,547
+Tamam, hoşçakalın.

@@ -1,0 +1,1947 @@
+1
+00:00:13,236 --> 00:00:14,516
+Merhaba arkadaşlar.
+
+2
+00:00:26,771 --> 00:00:30,231
+Arkadaşlarınız giriş yaparken ben de dosyayı yükleyeyim.
+
+3
+00:01:51,572 --> 00:01:53,972
+Bugün de soru çözmeye devam edeceğiz.
+
+4
+00:01:55,091 --> 00:02:01,391
+Geldi sorular biraz karalama gibi ama anlayabilirsiniz.
+
+5
+00:02:03,171 --> 00:02:05,212
+Öylesine yazdım bugün öyle.
+
+6
+00:02:11,699 --> 00:02:14,299
+Başlayalım sorularımıza.
+
+7
+00:02:35,572 --> 00:02:39,711
+ilk sorumuz, dün size yüklediğim sorulardan bir tanesi.
+
+8
+00:02:41,752 --> 00:02:43,132
+Bunu çözmemiştik.
+
+9
+00:02:46,548 --> 00:03:02,207
+dx bölü x çarpı kök 4 eksi x kare. Bu integralı çözmekle başlayalım. Böylelikle dünkü soruların hepsinin birer şeyini çözmüş oluruz, grubunu.
+
+10
+00:03:19,828 --> 00:03:25,707
+Mühime biraz mürekkep koydum. Sabah dersim vardı, bayağı bir bitmiş ucu.
+
+11
+00:03:28,647 --> 00:03:33,867
+Kök içerisinde 4-x kare fonksiyonunu görünce biz ne yapıyorduk?
+
+12
+00:03:34,228 --> 00:03:40,967
+x eşit 2 sinüs teta dönüşümü uyguluyorduk.
+
+13
+00:03:43,768 --> 00:03:46,367
+Buradan dx ne olacak?
+
+14
+00:03:47,060 --> 00:03:51,719
+2x, cos, teta, d, teta olacak. Değil mi?
+
+15
+00:03:54,719 --> 00:03:56,759
+Yerlerine yazalım bunları.
+
+16
+00:04:01,364 --> 00:04:06,824
+dx yerine 2 cos theta, d theta yazdık.
+
+17
+00:04:07,463 --> 00:04:09,283
+Burada x çarpı var.
+
+18
+00:04:09,843 --> 00:04:13,644
+x yerine de 2 sinüs theta yazınca.
+
+19
+00:04:14,223 --> 00:04:16,163
+Kök içerisinde de ne kalacak?
+
+20
+00:04:18,163 --> 00:04:23,803
+4 sinüs kare, 4 parantezine aldığımızda 1 eksi.
+
+21
+00:04:25,235 --> 00:04:29,576
+sinüs kare teta, o da kosinüs kare teta'ya eşit olacak.
+
+22
+00:04:33,172 --> 00:04:34,772
+şu ikiler gitsin.
+
+23
+00:04:37,412 --> 00:04:38,492
+cos theta
+
+24
+00:04:42,387 --> 00:04:53,367
+x kare teta. Buradan da şu da kosinüs kare teta'ya eşit olduğu için ne gelecek? 2 kosinüs teta gelecek.
+
+25
+00:04:58,963 --> 00:05:00,244
+Şunlar da gitti.
+
+26
+00:05:00,903 --> 00:05:02,604
+Gelin sadece ne kaldı?
+
+27
+00:05:03,984 --> 00:05:04,984
+1 bölü 2
+
+28
+00:05:04,984 --> 00:05:10,484
+1 bölü sinüs teta yerine de ne diyebiliriz?
+
+29
+00:05:12,624 --> 00:05:14,984
+1 bölü kosinüs sekanttı.
+
+30
+00:05:15,063 --> 00:05:16,283
+Bu da kosekant olacak.
+
+31
+00:05:17,504 --> 00:05:18,364
+Kosekant
+
+32
+00:05:27,795 --> 00:05:40,216
+sekantın ve de kosekantın integrallerini dedik ki doğrudan kullanabilirsiniz. Onları ezberleyip doğrudan kullanabilirsiniz.
+
+33
+00:05:41,216 --> 00:05:44,635
+Sekantın integralı neydi?
+
+34
+00:05:53,139 --> 00:05:56,120
+tanjant tetaydı. Kosekantınki de
+
+35
+00:05:56,120 --> 00:05:58,839
+1 bölü 2
+
+36
+00:05:58,839 --> 00:06:00,480
+ln
+
+37
+00:06:00,480 --> 00:06:04,059
+kosekant
+
+38
+00:06:04,059 --> 00:06:07,100
+x'in ben niye geçtim ki?
+
+39
+00:06:08,259 --> 00:06:08,639
+teta
+
+40
+00:06:08,639 --> 00:06:13,279
+kosekant teta eksi
+
+41
+00:06:13,279 --> 00:06:15,779
+kotanjant
+
+42
+00:06:17,651 --> 00:06:21,312
+teta artı c olacak.
+
+43
+00:06:23,312 --> 00:06:26,312
+Buradan tabii ki ne yapmak gerekiyor?
+
+44
+00:06:27,711 --> 00:06:30,412
+Teta'dan geriye dönüş yapmak gerekiyor.
+
+45
+00:06:33,372 --> 00:06:37,331
+Şurada x bölü 2 neye eşit olacak?
+
+46
+00:06:37,532 --> 00:06:39,611
+Sinüs teta'ya eşit olacak.
+
+47
+00:06:40,172 --> 00:06:43,812
+Dolayısıyla şu dik üçgeni göz önüne alırsak,
+
+48
+00:06:47,475 --> 00:07:10,475
+Burası x olur, burası 2 olur, burası da ne olur? 4-x kare olur. Bana ne lazım? Kotanjant teta, o da 4-x kare bölü x'e eşit. Bir de kosekant teta. Kosekant nedir? Bir bölü sinüs olduğu için
+
+49
+00:07:14,836 --> 00:07:30,316
+şunun tersi olacak. Sinüs, θ, x bölü 2 ise kosekant θ'da ne olur? 2 bölü x olur. Bunları da yerlerine yazarsak,
+
+50
+00:07:48,755 --> 00:07:51,075
+Bunu böyle de bırakabilirsiniz.
+
+51
+00:07:51,575 --> 00:07:56,435
+Şu bölü x'i eksi elen x olarak da dışarıya taşıyabilirsiniz.
+
+52
+00:07:57,295 --> 00:07:58,776
+Böyle kalsın isterseniz.
+
+53
+00:08:02,771 --> 00:08:05,692
+sorunuz yoksa geçiyorum diğer soruya.
+
+54
+00:08:08,012 --> 00:08:10,052
+Şunlar tamamen bitmiş oldu.
+
+55
+00:08:28,788 --> 00:08:29,867
+çeş
+
+56
+00:08:59,892 --> 00:09:01,272
+Diğer sorumuz şu.
+
+57
+00:09:08,179 --> 00:09:15,179
+x kare x kosinüs kare x dx. Bunu yapalım.
+
+58
+00:09:18,899 --> 00:09:31,299
+Burada bir yerine biz biliyoruz ki sinüs kare x artı kosinüs kare x neye eşitti? Bire eşit. O halde bir yerine sinüs kare x artı kosinüs kare x yazabilirim.
+
+59
+00:09:43,187 --> 00:09:46,147
+Artı olduğu için bunu da ayırabilirim.
+
+60
+00:09:48,048 --> 00:09:50,707
+Sinüs kare bölü sinüs kare gidecek.
+
+61
+00:09:50,887 --> 00:09:53,407
+1 bölü kosinüs kare kalacak.
+
+62
+00:09:56,768 --> 00:10:00,728
+Kosinüs kareler gidince burada da 1 bölü sinüs kare kalır.
+
+63
+00:10:03,147 --> 00:10:05,967
+1 bölü kosinüs karenin neye eşit olduğunu biliyoruz.
+
+64
+00:10:06,048 --> 00:10:07,528
+Kosekant kare x'e
+
+65
+00:10:11,283 --> 00:10:14,443
+Tam tersini söyledim. 1 bölü kosinüs sekat kare.
+
+66
+00:10:21,556 --> 00:10:24,556
+Bu da kosekant kare x'e eşit.
+
+67
+00:10:26,016 --> 00:10:30,096
+Bunların da neydi? Doğrudan integrallerini biliyoruz.
+
+68
+00:10:30,276 --> 00:10:33,556
+Sekant kare tanjantın türeviydi.
+
+69
+00:10:34,016 --> 00:10:38,716
+Dolayısıyla tanjant x, arada eksi var.
+
+70
+00:10:41,139 --> 00:10:46,599
+eksi kosekant kare kotanjantın türeviydi.
+
+71
+00:10:47,019 --> 00:10:48,799
+Dolayısıyla şunu artı yapalım.
+
+72
+00:10:48,960 --> 00:10:56,680
+Kotanjant x artı c olarak sonucu yazabiliriz.
+
+73
+00:10:58,480 --> 00:11:00,879
+Ben şunu niye eksi yapmışım?
+
+74
+00:11:00,960 --> 00:11:03,700
+Bu artı bu eksi olacak.
+
+75
+00:11:05,203 --> 00:11:07,083
+Şurada bunu eksi yapan bir şey yok.
+
+76
+00:11:07,183 --> 00:11:08,663
+Yazarken yanlış yazdım.
+
+77
+00:11:09,203 --> 00:11:11,124
+Yanlışa göre de integral aldım.
+
+78
+00:11:12,583 --> 00:11:18,483
+Bu gördüğünüz gibi şunu düşündüğünüz anda gerisi çok kolay oluyor.
+
+79
+00:11:18,803 --> 00:11:21,063
+Bu tür integraller hep böyle.
+
+80
+00:11:21,063 --> 00:11:23,943
+Bu arada yine şey.
+
+81
+00:11:37,844 --> 00:11:40,584
+[öğrenci]'nın sorusuna bakacaktım da.
+
+82
+00:13:14,451 --> 00:13:26,771
+Biz artık ters tanjant dönüşümünü öğrenmiştik. O yüzden burada hazırladığım sorular var ama şu soruyu da çözebiliriz ya da bunu sonra mı çözeyim?
+
+83
+00:13:35,220 --> 00:13:38,500
+Şu kalsın aradan sonra ben onu size çözeyim.
+
+84
+00:13:39,600 --> 00:13:40,340
+Düzenleyin.
+
+85
+00:13:45,395 --> 00:13:55,655
+Şu aynı sorunun b şıkkı var. Orada bir basit bir değişken dönüşümüyle art tanjanta dönüştürüp çözüyorsunuz. Onu size bıraktım.
+
+86
+00:14:01,331 --> 00:14:02,392
+Şu da zor değil.
+
+87
+00:14:11,508 --> 00:14:38,888
+küp kök sinüs x eksi kosinüs x deyiksintir. Bunu çözelim. Bunu çözmek için de şu dönüşümü yapmak yeterli. Kökün içerisinde ne var? Sinüs x eksi kosinüs x var. Buna u derseniz sinüsün türevi kosinüs x, eksi kosinüsün türevi sinüs x çarpı
+
+88
+00:14:42,196 --> 00:14:55,416
+dx neye eşit olacak? du'ya eşit olacak. Direkt şurası du olarak çıktı zaten. du bölü küp kök u oldu.
+
+89
+00:14:55,416 --> 00:15:06,615
+Ki bunu da artık u üzeri 1 bölü 3 olarak, hatta u üzeri eksi 1 bölü 3 olarak yazıp kolaylıkla integralini alabiliriz.
+
+90
+00:15:17,268 --> 00:15:32,407
+Üzerini bir artırdığımızda ne olacak? 2 bölü 3. 3 bölü 2, o üzeri 2 bölü 3, artı c olacak. O yerine de tekrar sinüs kosinüsü yazarsak,
+
+91
+00:16:02,932 --> 00:16:13,591
+yazdığımızda çözüme ulaşmış oluyoruz. Bu kolay bir dönüşümdü. Şimdi şuna bakalım.
+
+92
+00:16:25,427 --> 00:16:26,967
+Diğer sorumuz da şu.
+
+93
+00:16:27,227 --> 00:16:40,648
+Sıfırdan kök pi bölü 4'e kadar belirli integral x çarpı sekant kare x kare tanjant x kare.
+
+94
+00:16:44,947 --> 00:16:47,947
+bu ne çözü.
+
+95
+00:16:52,019 --> 00:17:03,299
+Burada öncelikle şu x kareyi u dersek x çarpı dx'te ne olacak? du olacak ve biz şuradaki x çarpanından kurtulmuş olacağız.
+
+96
+00:17:16,756 --> 00:17:18,916
+Şu soru işaretini silip devam edelim.
+
+97
+00:17:19,696 --> 00:17:21,276
+1 bölü 2 diyelim.
+
+98
+00:17:26,036 --> 00:17:35,556
+Sınırları belirli integralde sınırları da değiştiriyorduk. x eşit 0 olduğunda u'da neye eşit olacak? 0'a eşit.
+
+99
+00:17:39,892 --> 00:17:46,632
+x eşit kök pi bölü 4 olduğunda u pi bölü 4 eşit olacak.
+
+100
+00:17:48,351 --> 00:17:49,892
+Sırları da yazdık.
+
+101
+00:17:50,451 --> 00:17:51,231
+Burası ne oldu?
+
+102
+00:17:51,351 --> 00:17:59,231
+Sekant kare u, tanjant u, du oldu.
+
+103
+00:18:00,552 --> 00:18:05,992
+Sekant tanjant çarpımı varsa, bunlardan en az bir tanesi
+
+104
+00:18:07,700 --> 00:18:20,440
+tek dereceden oluyorsa, kuvveti tek sayısı, o zaman ne oluyordu? Çözümü yapabiliyorduk.
+
+105
+00:18:21,180 --> 00:18:26,039
+Burada tanjant x'i, daha doğrusu tanjant u'ya,
+
+106
+00:18:31,155 --> 00:18:32,895
+2 dönüşümü de yapabilirsiniz.
+
+107
+00:18:33,755 --> 00:18:36,536
+Sekanta da dönüşüm yapabilirsiniz.
+
+108
+00:18:36,695 --> 00:18:38,635
+Tanjanta da dönüşüm yapabilirsiniz.
+
+109
+00:18:39,076 --> 00:18:39,955
+Şimdi gördüm.
+
+110
+00:18:41,215 --> 00:18:44,295
+Tanjanta u t derseniz,
+
+111
+00:18:44,755 --> 00:18:47,415
+tanjant u eşit t derseniz,
+
+112
+00:18:48,556 --> 00:18:52,655
+sekant kare u, d u, d t'ye eşit olur.
+
+113
+00:18:53,236 --> 00:18:59,396
+İster bu dönüşümü kullanın, isterseniz secanta t dönüşümü yapabilirsiniz.
+
+114
+00:18:59,856 --> 00:19:02,976
+Notlarda secanta t dönüşümü yaparak yapmışım.
+
+115
+00:19:03,336 --> 00:19:05,256
+Aynı sonuç çıkması gerekiyor.
+
+116
+00:19:06,076 --> 00:19:08,536
+Sadece sınırlarda sorun var mı? Ona bakalım.
+
+117
+00:19:09,716 --> 00:19:11,056
+Bir sorun olmayacaktır.
+
+118
+00:19:12,056 --> 00:19:18,496
+U sıfıra eşit olduğunda tanjant nedir?
+
+119
+00:19:18,932 --> 00:19:20,572
+t değeri ne olacaktır?
+
+120
+00:19:20,971 --> 00:19:25,291
+Tanjant sıfır sıfıra eşit olduğundan t değeri de sıfır olur.
+
+121
+00:19:28,819 --> 00:19:35,460
+u pi bölü 4'e eşit olduğunda t'de neye eşit olur? 1'e eşit olur.
+
+122
+00:19:49,332 --> 00:19:54,852
+0'dan bire ne çıktı burası? t çarpı dt oldu değil mi?
+
+123
+00:19:56,852 --> 00:20:00,392
+Bu da nedir? t kare bölü 2'dir.
+
+124
+00:20:00,972 --> 00:20:04,452
+1 bölü 2 de burada olduğundan t kare bölü 4 olacak.
+
+125
+00:20:04,711 --> 00:20:11,252
+Burası sınırlarda 0'dan 1'e kadar yani sonuç 1 bölü 4 çıkacak.
+
+126
+00:20:12,723 --> 00:20:14,643
+Bu dönüşümü de yapabilirsiniz.
+
+127
+00:20:14,864 --> 00:20:17,923
+Dediğim gibi sekant dönüşümü de yapabilirsiniz.
+
+128
+00:20:18,123 --> 00:20:20,223
+İkisinde de aynı sonuç çıkıyor.
+
+129
+00:20:21,864 --> 00:20:23,903
+Kendim yaparken sekant yapmışım.
+
+130
+00:20:23,983 --> 00:20:25,823
+Şimdi tahta da tanjantı gördüm.
+
+131
+00:20:26,003 --> 00:20:27,823
+Daha güzel oldu.
+
+132
+00:20:29,884 --> 00:20:32,083
+Kök tanjantı var.
+
+133
+00:20:34,083 --> 00:20:35,844
+O da yine dönüşüm.
+
+134
+00:20:35,943 --> 00:20:36,943
+Ha, o dönüşüm değil.
+
+135
+00:20:37,063 --> 00:20:37,683
+Şunu yapalım.
+
+136
+00:20:38,543 --> 00:20:39,643
+Sorunuz var mı?
+
+137
+00:20:42,259 --> 00:21:00,159
+[öğrenci], evet. Yani sınav kuralları değişmedi. Boş bıraktığınız sorulara ya da cevapladığınızda sonra cevabını yanlış değiştirmek isterseniz sorulara geri dönüş yapabiliyorsunuz.
+
+138
+00:21:38,067 --> 00:21:46,567
+tanjant x, sinüs x, kosinüs x, dx.
+
+139
+00:21:51,251 --> 00:21:52,991
+Bu integral'i çözelim.
+
+140
+00:21:56,403 --> 00:21:56,903
+burada.
+
+141
+00:22:02,644 --> 00:22:16,943
+kolaylık sağlayacak. Yukarıda kök tanjant var, aşağıda sinüs var. Buradan da aşağıda tanjantı elde edebilirsiniz. Kosinüs ile çarpıp bölersek şu ifade.
+
+142
+00:22:24,019 --> 00:22:34,240
+sinüs x'di, kosinüs x'e böldüm, kosinüs x'de çarptım. Bir tane kosinüs x de burada var. Dolayısıyla kosinüs kare x oldu burası.
+
+143
+00:22:40,788 --> 00:22:42,668
+tanjant x eşittir.
+
+144
+00:22:45,628 --> 00:22:52,508
+Tanjant x, burada kök tanjant x var. Bunlar birbirine bölünür. Dolayısıyla ne kalır?
+
+145
+00:22:54,048 --> 00:23:02,648
+1 bölü kök tanjant x çarpı kosekant kare x. Bu da nedir? Sekant kare x demektir aslında.
+
+146
+00:23:11,763 --> 00:23:19,483
+Şöyle yazalım, sekant kare x bölü kök tanjant x dx olur.
+
+147
+00:23:20,483 --> 00:23:30,563
+Şimdi de tanjanta dönüşüm verirsek, tanjantın türevi yine ne olacak? Sekant kare olacak, sekant kare x dx du olacak.
+
+148
+00:23:39,284 --> 00:23:40,844
+d uya eşit olur.
+
+149
+00:23:42,984 --> 00:23:47,184
+Burası d u bölü kök u olacak.
+
+150
+00:23:48,224 --> 00:23:49,344
+Biraz önceki gibi.
+
+151
+00:23:49,924 --> 00:23:52,844
+1 bölü kök u da neyin türeviydi?
+
+152
+00:23:53,524 --> 00:23:55,824
+2 kök u'nun türevidir değil mi?
+
+153
+00:23:58,704 --> 00:24:00,964
+Kök u'nun türevi çünkü
+
+154
+00:24:03,412 --> 00:24:21,012
+1 bölü 2 kök uya eşit oluyor. Ya da kök x'in türevi diyelim. Kök x'in türevi 1 bölü 2 kök x'e eşit ise bunun integralı 2 kök u olarak yazılabilir.
+
+155
+00:24:23,012 --> 00:24:28,251
+Ben sildiğim parçayı. Şunu sileceğim.
+
+156
+00:24:29,491 --> 00:24:40,132
+Belirsiz integral olduğu için c sabiti ekleriz. Sonra da o yerine fonksiyonun kendisini yazarız.
+
+157
+00:24:43,892 --> 00:24:49,771
+Burada sadece aşağıda tanjant x'i evli etmek yetti bize sorunun çözümü için.
+
+158
+00:24:51,512 --> 00:24:53,572
+Şimdi bunu da yaptıktan sonra
+
+159
+00:25:19,859 --> 00:25:20,319
+yapalım.
+
+160
+00:25:37,140 --> 00:25:38,252
+x kare artı 3x, f'
+
+161
+00:25:41,364 --> 00:25:46,704
+f pi bölü 4 değeri nedir?
+
+162
+00:25:48,704 --> 00:25:53,204
+Bakın, şeye de uygun, teste de uygun bir soru.
+
+163
+00:25:54,204 --> 00:25:56,784
+Nedir f pi bölü 4 değeri?
+
+164
+00:25:57,884 --> 00:25:59,423
+Bakın, burada
+
+165
+00:26:00,051 --> 00:26:07,771
+f'i bilmediğim için ne yapamayacağım? İntegralini alamayacağım. Ama bunun f'in integralinin ne olduğunu biliyorum.
+
+166
+00:26:08,351 --> 00:26:12,531
+İntegralini biliyorsam türevini alırım, f'i bulurum.
+
+167
+00:26:14,652 --> 00:26:20,831
+Her iki tarafın türevini alalım. Yani yine neyi uyguluyorum burada?
+
+168
+00:26:22,259 --> 00:26:29,179
+integral hesabın temel teoremi vardı ya birinci kısım. Yine onu uyguladık.
+
+169
+00:26:30,179 --> 00:26:31,599
+d bölü dx
+
+170
+00:26:37,748 --> 00:26:41,688
+d bölü dx, 1 artı tanjant x.
+
+171
+00:26:45,364 --> 00:26:47,364
+Şunun türevi neye eşit?
+
+172
+00:26:49,884 --> 00:26:54,104
+fx çarpı x'in türevi 1. Buradan direkt fx geldi.
+
+173
+00:26:54,663 --> 00:26:57,264
+Eşit, bunun türevi de ne olacak?
+
+174
+00:26:57,503 --> 00:27:02,824
+Birin türevi 0, tanjantın türevi de sekant kare x olur.
+
+175
+00:27:02,824 --> 00:27:06,943
+fx neye eşitmiş? Sekant kare x'e eşitmiş.
+
+176
+00:27:07,304 --> 00:27:11,523
+Dolayısıyla f pi bölü 4 neye eşit olacak?
+
+177
+00:27:12,660 --> 00:27:16,559
+sekant kare pi bölü 4'e eşit.
+
+178
+00:27:17,660 --> 00:27:28,180
+Kosinüs pi bölü 4, 1 bölü kök 2 olduğuna göre sekant pi bölü 4 kök 2, karesini de alırsak 2 çöker.
+
+179
+00:27:43,155 --> 00:27:45,255
+Bir diğer soru da şu.
+
+180
+00:27:50,324 --> 00:27:52,844
+Aslında silmeseydim soru da benziyor.
+
+181
+00:27:54,724 --> 00:27:56,964
+Asıl bunları silmem gerekir.
+
+182
+00:27:57,984 --> 00:28:00,144
+x küp, şu da 1.
+
+183
+00:28:05,652 --> 00:28:08,051
+Bunun da yine integrali verilmiş.
+
+184
+00:28:11,443 --> 00:28:13,983
+İntegrele verilmişse türevini bulmak kolay.
+
+185
+00:28:14,604 --> 00:28:19,584
+Olmak üzere f değil bu g.
+
+186
+00:28:21,403 --> 00:28:24,943
+g-8'in değeri soruluyor.
+
+187
+00:28:29,811 --> 00:28:35,831
+Yine her iki tarafın x'e göre nesini alacağız? Türevini alacağız.
+
+188
+00:28:49,875 --> 00:28:57,875
+neye eşit olacak? Üst sınır sabit olduğu için, sabitin türevi de sıfır olduğunda, oradan bir şey gelmeyecek.
+
+189
+00:28:58,395 --> 00:29:13,415
+Eksi alt sınır olacak. Yani g x küp çarpı x küpün türevi 3x kare olacak. Bu da neye eşit? 2x artı 1'e eşit.
+
+190
+00:29:13,779 --> 00:29:18,960
+Dolayısıyla, gx küp değeri neye eşit olur?
+
+191
+00:29:19,860 --> 00:29:25,819
+Eksi 2x artı 1 bölü 3x kareye eşit olur.
+
+192
+00:29:28,059 --> 00:29:31,240
+Şimdi x yerine ne yazmam lazım burada?
+
+193
+00:29:34,240 --> 00:29:37,400
+g eksi 8'i hesaplayacağım.
+
+194
+00:29:38,400 --> 00:29:39,039
+Bunu da
+
+195
+00:29:40,852 --> 00:29:53,872
+eksi 2'nin küpü olarak düşünürsek eğer ne olur? x eksi 2 olmuş olur. Burada x yerine eksi 2 yazarsak,
+
+196
+00:30:09,779 --> 00:30:28,320
+x kare artı 4x, eksi 3 olur şurası. Burası da artı 4, 12. Eksiler gitti. 1 bölü 4 çıkart. Bu da yine test sistemine uygun bir soru.
+
+197
+00:30:42,420 --> 00:30:46,760
+sorunuz yoksa siliyorum ama ben şu ellerimi bir sileyim.
+
+198
+00:31:32,115 --> 00:31:44,096
+Pardon arkadaşlar, ellerimi yıkadım. Bu mürekkep acayip yapıyor. İyi bir mürekkep değil. Çok kurutuyor, rahatsız oluyorum.
+
+199
+00:32:06,612 --> 00:32:08,152
+Bir diğer soru
+
+200
+00:32:14,771 --> 00:32:20,172
+sekant kök theta, tajant kök theta,
+
+201
+00:32:24,596 --> 00:32:32,976
+dtta. Bu integralı çözelim. Burada da önce ne yapmamız lazım? Şu kök tetadan kurtulmamız lazım.
+
+202
+00:32:37,236 --> 00:32:41,176
+T diyelim. O mu demişiz burada? O diyelim.
+
+203
+00:32:47,284 --> 00:32:57,544
+ne olacak? Dθ bölü kök θ, 2kθ, dO'ya işte olur. Dolayısıyla
+
+204
+00:33:03,667 --> 00:33:05,847
+x kare artı 2x, devru olur.
+
+205
+00:33:16,660 --> 00:33:18,740
+2'yi de dışarı yazdım.
+
+206
+00:33:19,099 --> 00:33:25,039
+Artık sekant çarpı tanjant olduğu için bunu integralini biliyoruz.
+
+207
+00:33:25,319 --> 00:33:28,099
+Neyin türevi sekant çarpı tanjanta eşitti?
+
+208
+00:33:29,099 --> 00:33:30,640
+Sekantın türevi.
+
+209
+00:33:34,867 --> 00:33:46,407
+Bu yerine de yine kök teta yazarsak cevap 2 sekant kök teta artı c olarak çıkar.
+
+210
+00:33:55,731 --> 00:34:04,251
+vermeden önce şu örneği de yapalım. Sonra da ara verelim. Şurayı sileyim.
+
+211
+00:34:24,947 --> 00:34:47,307
+p bölü 4, pi bölü 3, tanjant küp x, sekant kare x, 1 artı tanjant 4x. Bir de bunun küpü var, dx. Bu integralı çözelim.
+
+212
+00:34:59,059 --> 00:35:01,760
+1 artı tanjant 4x fayda da var.
+
+213
+00:35:02,359 --> 00:35:07,880
+Buna eğer dönüşüm uygularsak ne gelecek bunun türevinden?
+
+214
+00:35:14,996 --> 00:35:38,716
+Tanjant 4x'in türevi ne olur? 4 çarpı tanjant küp x çarpı. Tanjantın türevi nedir? Sekant kaledir. Sekant kare x olur. Bu da yukarıda var mı? Var. O zaman sınırları da dönüştürüp kolayca integralini alabiliriz.
+
+215
+00:35:41,940 --> 00:35:44,519
+pi bölü 3 ise
+
+216
+00:35:44,519 --> 00:35:47,900
+u neye eşit olacak?
+
+217
+00:35:49,039 --> 00:35:50,220
+1 artı
+
+218
+00:35:50,220 --> 00:35:52,079
+tanjant 4
+
+219
+00:35:52,079 --> 00:35:53,859
+pi bölü 3
+
+220
+00:35:53,859 --> 00:35:57,279
+tanjant pi bölü 3
+
+221
+00:35:57,279 --> 00:35:59,739
+değeri kaçtı?
+
+222
+00:36:00,180 --> 00:36:01,099
+köküçtü değil mi?
+
+223
+00:36:04,980 --> 00:36:08,460
+köküçün dördüncü kuvveti 9 olacak.
+
+224
+00:36:14,804 --> 00:36:17,144
+Sonuç ne çıkacak? 10 çıkacak.
+
+225
+00:36:19,284 --> 00:36:31,963
+x eşit pi bölü 4 ise, tanjant pi bölü 4, bire eşit, sonuç 2 çıkar.
+
+226
+00:36:41,684 --> 00:36:43,964
+yukarısı du'yu eşit.
+
+227
+00:36:44,923 --> 00:36:46,304
+Aşağısı da ne olacak?
+
+228
+00:36:46,644 --> 00:36:48,104
+U'nun küpü olacak.
+
+229
+00:36:59,956 --> 00:37:04,235
+Bu üzeri eksi 2 bölü 2.
+
+230
+00:37:33,139 --> 00:37:48,920
+10 yazarsak, şurası ne olur? 1 bölü 2x, şöyle yapalım. 10 yazdığımda, 1 bölü 100-1 bölü 4 olacak.
+
+231
+00:38:04,244 --> 00:38:05,543
+Yanlış mı yaptık bunu?
+
+232
+00:38:08,963 --> 00:38:13,764
+Ha şey, şu 1 bölü 4'ü yazmayı unuttum.
+
+233
+00:38:14,944 --> 00:38:16,644
+Şurada 1 bölü 4 var.
+
+234
+00:38:20,403 --> 00:38:21,524
+1 bölü 4
+
+235
+00:38:26,324 --> 00:38:28,304
+Şurası da 1 bölü 8 olacak.
+
+236
+00:39:00,851 --> 00:39:06,971
+Yalnız bu, niye 3 bölüyüz yazmışız? 3 bölüyüz mü çıkıyor?
+
+237
+00:39:08,471 --> 00:39:10,051
+Hocam bir şey sorabilir miyim?
+
+238
+00:39:10,291 --> 00:39:12,271
+Evet, bir yerde hata mı yaptım?
+
+239
+00:39:12,451 --> 00:39:14,791
+Şeyde galiba eksi yazmayı unuttuk.
+
+240
+00:39:15,351 --> 00:39:21,531
+İntegralden çıkartırken u'yu u üzeri eksi 2 bölü 8 yazdık ya orada eksilik olması gerekiyor sanırım.
+
+241
+00:39:22,831 --> 00:39:27,391
+Çünkü üzerini bir arttırıp arttırılan sayı bölüyoruz ya.
+
+242
+00:39:28,947 --> 00:39:31,947
+Orada eksi olması gerekmiyor ama eksi 2 yaşayan sayı.
+
+243
+00:39:32,487 --> 00:39:33,447
+Üzeri eksi 2 mi?
+
+244
+00:39:49,268 --> 00:39:54,768
+1 bölü 4'ümüz var.
+
+245
+00:40:13,811 --> 00:40:20,311
+1 bölü ukaranın türevini olacak. x 2 bölü u küp.
+
+246
+00:40:35,092 --> 00:40:37,212
+eksi 1 bölü 2
+
+247
+00:40:41,876 --> 00:40:46,756
+1 bölü u kare. Doğru oldu. Şurası eksi olacak değil mi?
+
+248
+00:40:52,628 --> 00:40:53,748
+x 1 bölüm 8
+
+249
+00:41:41,460 --> 00:41:43,139
+25, 1 çıkar, 24.
+
+250
+00:41:48,755 --> 00:41:53,916
+8, 24, eksiler gider. 3 bölü 100 kalır. Doğru.
+
+251
+00:42:02,963 --> 00:42:07,643
+Şimdi biraz erken oldu ama ara verelim.
+
+252
+00:42:11,155 --> 00:42:12,875
+x kare artı 2x, f'
+
+253
+00:42:18,708 --> 00:42:20,708
+bir 15 dakikalık ara verelim.
+
+254
+00:59:18,099 --> 00:59:20,479
+Arkadaşlar, devam edelim soru çözümüne.
+
+255
+01:00:02,708 --> 01:00:16,047
+Pardon. Bu soru notlar, yani yüklediğim o dosyada yok. Bunu [öğrenci] göndermişti bu soruyu. Şimdi birlikte çözelim.
+
+256
+01:00:29,268 --> 01:00:42,507
+Ne yapacağız burada? Burada da isterseniz demin yaptığımız gibi tanjant fonksiyonu elde etmeye çalışalım. Sinüs kare olduğu için bunu kosinüs kare ile çarpıp ölersek,
+
+257
+01:00:48,947 --> 01:00:50,947
+ya da doğrudan
+
+258
+01:00:50,947 --> 01:00:54,947
+çarpıp
+
+259
+01:00:54,947 --> 01:00:56,947
+bölmeden de
+
+260
+01:00:56,947 --> 01:00:58,947
+direk tanjant dönüşümü yapsak
+
+261
+01:00:58,947 --> 01:01:09,516
+x kare artı 2x, f'
+
+262
+01:01:22,708 --> 01:01:27,128
+Bir tek tanjant teta bölü 2 dönüşümü yaparsak ben hiç o yolda denemedim.
+
+263
+01:01:27,867 --> 01:01:33,947
+Öyle bir deneyelim bakalım çözüme gidebilecek miyiz ya da bilemeyecek miyiz?
+
+264
+01:01:59,648 --> 01:02:03,628
+x kare artı 2x, f'
+
+265
+01:01:58,556 --> 01:02:04,268
+x kare artı 3x, f'
+
+266
+01:01:58,260 --> 01:02:03,860
+Yarım açı yapmadan şu şekilde yapmışım. Ben burada yaptığım gibi yapayım size de.
+
+267
+01:02:10,068 --> 01:02:13,168
+sinüs kare x, kosinüs kare x.
+
+268
+01:02:25,844 --> 01:02:36,764
+tanjant kare x, kosinüs üzeri 6x, o da ne olacak? Sekant 6x dx olur.
+
+269
+01:02:41,844 --> 01:02:57,068
+bu şekilde ayıralım.
+
+270
+01:03:10,804 --> 01:03:26,204
+tanjant x'e u dersek, tanjant x'e u diyelim, ne olacak? Bunun türevi sekant kare x olacak. dx eşit du olur.
+
+271
+01:03:27,484 --> 01:03:29,404
+Biz ayrıca neyi biliyoruz?
+
+272
+01:03:30,324 --> 01:03:45,384
+sekant kare x eksi, tanjant kare x'in 1'e eşit olduğunu biliyoruz. Dolayısıyla sekant kare x neye eşit olur? 1 artı tanjant kare x'e eşit olur.
+
+273
+01:03:52,980 --> 01:04:08,800
+Şurada, sekant 4x'i sekant kare x'in karesi gibi düşünürsek, şunun yerine 1 artı tanjant kare x'in karesi yazabilirim.
+
+274
+01:04:11,000 --> 01:04:18,039
+Çarpı ne olacak? Sekant kare x, henüz yerlerine koymadım.
+
+275
+01:04:20,340 --> 01:04:26,440
+Şu şekilde düzenledikten sonra şu yaptığımız dönüşümü yerlerine yazarsak ne çıkacak?
+
+276
+01:04:27,280 --> 01:04:35,579
+1 artı u'nun pardon u karenin karesi sekant kare x dx du'ya eşitti.
+
+277
+01:04:36,940 --> 01:04:39,739
+Aşağısı da ne oldu? u kare oldu.
+
+278
+01:04:40,680 --> 01:04:45,539
+Gördüğünüz gibi daha böyle basit bir integrale dönüştü.
+
+279
+01:04:48,340 --> 01:04:50,119
+tanjant dönüşüm yaptık değil mi?
+
+280
+01:04:51,000 --> 01:04:53,060
+Şimdi şuradan devam edelim.
+
+281
+01:04:54,000 --> 01:04:55,720
+Ben tahtayı şöyle böleyim.
+
+282
+01:04:57,740 --> 01:04:58,920
+Eşittir diyelim.
+
+283
+01:05:01,640 --> 01:05:08,180
+Karesini alırsak 1, 2u'nun karesi artı u üzeri 4 olacak.
+
+284
+01:05:08,180 --> 01:05:11,340
+Böyle u'nun karesi d u.
+
+285
+01:05:11,600 --> 01:05:11,980
+Pardon.
+
+286
+01:05:18,900 --> 01:05:20,579
+Ayda da veriyorum şeye hocam.
+
+287
+01:05:20,579 --> 01:05:21,340
+Oca da veriyorum.
+
+288
+01:05:21,340 --> 01:05:21,940
+Tamam.
+
+289
+01:05:22,140 --> 01:05:22,940
+Teşekkür ederim.
+
+290
+01:05:22,940 --> 01:05:24,360
+Görüşmek üzere.
+
+291
+01:05:36,052 --> 01:05:36,512
+1, 2.
+
+292
+01:05:40,148 --> 01:05:50,588
+Hepsini ayıralım. 1 bölü u'nun kalesi artı u kareyi böldük, 2 çıktı. Burası da ne olacak? u'nun kalesi olacak.
+
+293
+01:05:52,588 --> 01:05:58,668
+Bu integral ne eşit? 1 bölü u kare, eksi 1 bölü u'nun integralidir.
+
+294
+01:06:05,556 --> 01:06:10,735
+u küp bölüm 3'e eşit bir de c sabitini ekleriz.
+
+295
+01:06:11,735 --> 01:06:15,296
+Şimdi de ne yapacağız? u yerine tanjant x yazacağız.
+
+296
+01:06:15,296 --> 01:06:19,155
+Dolayısıyla sonuç, şöyle büyükten küçüğe yazalım.
+
+297
+01:06:20,815 --> 01:06:27,516
+Tanjant küp x bölüm 3 artı 2 tanjant x.
+
+298
+01:06:28,083 --> 01:06:34,264
+eksi 1 bölü tanjant x artı c olarak çıkar.
+
+299
+01:06:42,356 --> 01:06:45,775
+Bu çözümü yazın. Notlarda yok dediğim gibi.
+
+300
+01:06:47,036 --> 01:06:48,916
+Yazın. Ben de öylece sileyim.
+
+301
+01:08:05,588 --> 01:08:06,468
+siliyorum şimdi.
+
+302
+01:08:44,819 --> 01:08:45,612
+Evet.
+
+303
+01:08:48,884 --> 01:08:50,884
+Şimdi demiştik ki
+
+304
+01:08:50,884 --> 01:08:56,663
+Riemann toplamlarıyla ilgili de soru gelebilir.
+
+305
+01:08:57,884 --> 01:08:58,443
+Onlar
+
+306
+01:08:58,443 --> 01:09:01,283
+şu şekilde de çıkabilir.
+
+307
+01:09:07,028 --> 01:09:11,427
+aşağıdaki limitleri belirli integral yardımıyla hesaplayınız.
+
+308
+01:09:27,347 --> 01:09:47,887
+Burada belirli integral lafını hiç kullanmayabilirdim. Belirli integral yardımıyla dediği için hemen ne yapmanız gerektiğini anlayabiliyorsunuz ama demezse aşağıdaki limitleri hesaplayın da diyebilir. Bu limitleri hesaplamanız pek kolay olmaz.
+
+309
+01:10:10,292 --> 01:10:13,731
+a şıkkı bu, b şıkkı da şu.
+
+310
+01:10:17,072 --> 01:10:18,632
+pi bölü en
+
+311
+01:10:18,632 --> 01:10:23,172
+sinüs pi bölü en
+
+312
+01:10:26,612 --> 01:10:43,692
+2p bölü n, n sinüs, n pi bölü n. Bu iki böyle şey dizi gibi verilmiş ama bu limitler soruluyor.
+
+313
+01:10:44,916 --> 01:10:57,236
+Bunları limit olarak değil de belirli integral olarak hesaplamak daha kolaydır. Zaten bu soruda belirli integral yardımıyla hesaplayın dediği için belirli integral'i kullanacağız.
+
+314
+01:10:57,236 --> 01:10:59,576
+Şimdi A şıkkını çözeyim.
+
+315
+01:11:06,963 --> 01:11:32,583
+örneğin, çiftlikle şu limiti daha böyle genel hale getirelim. Ben direkt şöyle eşittir koyup yazacağım. Limiti bir kez daha yazmayacağım. Bunun elemanları nasıl? n artı 1, n artı 2, n artı 3 kök içinde. Bunların toplamı n tane. n ne kadar. O halde şöyle yazabiliriz. n sonsuza giderken.
+
+316
+01:11:34,899 --> 01:11:36,179
+Neyin toplamı?
+
+317
+01:11:37,319 --> 01:11:45,500
+İ diyelim, birden n'e kadar kök n artı i'lerin toplamı olacak değil mi?
+
+318
+01:11:46,539 --> 01:11:47,439
+Bölü ne var?
+
+319
+01:11:48,459 --> 01:11:49,639
+3 bölü şey
+
+320
+01:11:49,639 --> 01:11:53,519
+en üzeri 3 bölü 2 var.
+
+321
+01:11:55,679 --> 01:11:55,979
+Bunu
+
+322
+01:11:56,467 --> 01:12:02,467
+Belirli integral kullanabilmem için nasıl yazmam gerekiyor, nasıl ifade etmeliyim?
+
+323
+01:12:02,467 --> 01:12:06,847
+Çünkü bir toplamın limiti olarak belirli integral şöyledir.
+
+324
+01:12:06,948 --> 01:12:21,907
+Limit n sonsuza giderken i1'den n'e kadar f, c'i, delta x, i toplamı
+
+325
+01:12:24,051 --> 01:12:30,692
+a'dan b'ye fx dx integralini veriyor bana.
+
+326
+01:12:32,271 --> 01:12:39,251
+Burada ab dediğim aralık, bu aralığı m parçaya bölmüşüz.
+
+327
+01:12:39,251 --> 01:12:44,311
+Her bir parçası delta x i olan aralık.
+
+328
+01:12:44,611 --> 01:12:46,611
+O şekilde düşünmüştük, tamam mı?
+
+329
+01:12:47,152 --> 01:12:48,912
+Şimdi bunu buna benzeteceğim.
+
+330
+01:12:49,231 --> 01:12:57,291
+Yani burada f hangisi, delta x'i hangisi önce onları düzenlemem, ayıklamam gerekiyor. Şöyle yazalım.
+
+331
+01:13:07,475 --> 01:13:12,755
+en üzeri 3 bölü 2'yi n çarpı kök n gibi düşünürsek
+
+332
+01:13:16,595 --> 01:13:22,215
+n çarpı, n üzeri 1 bölü 2 gibi düşünürsek, bunu şöyle yazabilir miyim?
+
+333
+01:13:24,435 --> 01:13:25,955
+i1'den n'e kadar
+
+334
+01:13:29,427 --> 01:13:39,667
+n artı i bölü n çarpı 1 bölü n olarak yazabilirim.
+
+335
+01:13:42,836 --> 01:13:43,820
+ne kadar?
+
+336
+01:13:53,300 --> 01:13:58,420
+Şu kırmızıya artık ihtiyacım kalmadı. Orayı hatırlatmak için yazmıştım. Şimdi siliyorum.
+
+337
+01:14:04,340 --> 01:14:06,579
+Burayı bu şekilde yazarım.
+
+338
+01:14:06,940 --> 01:14:08,780
+x 1 bölü n yazarım.
+
+339
+01:14:09,420 --> 01:14:12,800
+Şimdi bakın burada f fonksiyonum nedir?
+
+340
+01:14:16,467 --> 01:14:42,567
+1 artı x şeklindedir değil mi? Şu f fonksiyonu. O halde ci olarak neyi yazmışım burada? i bölü n'i. Şu 1 bölü n'de delta x i uzunluğu. Hangi aralığı n parçaya böldüğümde?
+
+341
+01:14:43,252 --> 01:14:59,731
+Aralık uzunluğu 1 bölü n olacak. Uzunluğu 1 olan aralığı n parçaya böldüğümde uzunluğu 1 olur. Bu aralıkta, bu aralığı da nasıl alırız? 0, 1 aralığı olarak alırız.
+
+342
+01:15:21,043 --> 01:15:48,523
+ci olarak dedik ki i bölü n'i aldık. delta x i de neye eşit? 1 bölü n'e eşit oldu. Bakın, burada şeyi yazdık. f ci buna eşit, delta x i buna eşit. O halde ci bu, şunun tamamı da f ci. O halde artık şu toplam nedir? Benim için
+
+343
+01:15:51,220 --> 01:15:53,020
+0'dan bire kadar
+
+344
+01:15:53,020 --> 01:15:55,060
+kök
+
+345
+01:15:55,060 --> 01:15:57,140
+1 artı x'in
+
+346
+01:15:57,140 --> 01:15:58,239
+integralidir.
+
+347
+01:16:02,771 --> 01:16:11,771
+Şuraya x diye yazacağım ama onu oraya sıkıştırınca güzel olmadı. Şunu biraz küçültebilir miyim? Şöyle küçülteyim.
+
+348
+01:16:23,188 --> 01:16:32,907
+İşte belirli integral'e ulaşmış olduk. Yani şu toplamı belirli integral olarak bu şekilde yazabiliyormuşum.
+
+349
+01:16:33,927 --> 01:16:42,948
+Dolayısıyla bu integral'de neye eşittir? 1 artı kök x'e u derseniz kök u, du'nun integrali olur.
+
+350
+01:16:44,467 --> 01:16:47,127
+Kök u'nun integrali ne olur?
+
+351
+01:16:48,020 --> 01:16:54,420
+u üzeri 1 bölü 2, üzerini 1 artırdım, 3 bölü 2 oldu, 2 bölü 3.
+
+352
+01:16:59,800 --> 01:17:13,960
+u üzeri 3 bölü 2 olacak, yani 1 artı x üzeri 3 bölü 2 artı c olarak integral elde edilir.
+
+353
+01:17:15,315 --> 01:17:39,815
+Ama, belirsiz integral değil, bu belirli integral. Sıfırdan bire kadar sınırları da yazarsanız, şurası 2 kök 2 olacak. Sıfır koyduğunuzda da 1 olacak. Dolayısıyla sonuç artık yer kalmadı.
+
+354
+01:17:44,243 --> 01:17:51,283
+2 bölü 3, 2 kök 2, eksi 1 olarak şuraya sıkıştıralım sonucuna.
+
+355
+01:17:55,028 --> 01:17:56,168
+Anladınız mı?
+
+356
+01:18:01,108 --> 01:18:09,747
+b şıkkındaki sinüsü de siz yapabilirsiniz diye düşünüyorum. Onu da size bırakayım isterseniz.
+
+357
+01:18:11,628 --> 01:18:23,648
+Burada toplam ne olacak? i1'den n'e kadar sinüs i çarpı pi bölü n olur şurası.
+
+358
+01:18:26,612 --> 01:18:37,772
+i, 1'den n'e kadar, sinüs, i çarpı pi bölü, pi bölü n mi, pi bölü 2 mi?
+
+359
+01:18:39,372 --> 01:18:41,252
+Bir saniye, pi bölü n'miş.
+
+360
+01:18:46,100 --> 01:18:50,200
+delta x nedir? pi bölü n'dir.
+
+361
+01:18:52,120 --> 01:18:57,300
+Dolayısıyla aralığın uzunluğu kaç birimmiş?
+
+362
+01:18:57,780 --> 01:18:59,800
+Aralığın uzunluğu pi birim.
+
+363
+01:19:00,300 --> 01:19:02,400
+Onu n parçaya bölmüş.
+
+364
+01:19:02,780 --> 01:19:05,120
+Her bir parçası pi bölü n kadar olmuş.
+
+365
+01:19:05,579 --> 01:19:07,880
+Aralığı burada nasıl yazarım bu durumda?
+
+366
+01:19:07,880 --> 01:19:11,880
+0 pi aralığı olarak yazabilirim.
+
+367
+01:19:18,963 --> 01:19:20,283
+Hocam bir şey sorabilir miyim?
+
+368
+01:19:20,824 --> 01:19:21,083
+Tabii.
+
+369
+01:19:21,884 --> 01:19:24,984
+İlk yaptığımız soruda i böyle nc i dedik ya.
+
+370
+01:19:25,283 --> 01:19:25,583
+Aha.
+
+371
+01:19:26,083 --> 01:19:29,543
+Sonra onu nasıl 1 artı x'e çevirdik? Orayı ben tam anlayamadım.
+
+372
+01:19:34,931 --> 01:19:35,731
+Şunu mu?
+
+373
+01:19:38,691 --> 01:19:39,451
+Göstereyim canım.
+
+374
+01:19:40,111 --> 01:19:48,231
+Hayır hayır hocam, alttaki kısımda kök içinde 1 artı i bölü n'e var ya orada hocam, i bölü n, c, i yazdık.
+
+375
+01:19:48,971 --> 01:19:50,051
+n'leri böldüm.
+
+376
+01:19:50,992 --> 01:19:51,431
+Evet.
+
+377
+01:19:52,271 --> 01:19:58,051
+Şu aşağıda n üzeri 3 bölü 2 var ya, bunu n çarpı n üzeri 1 bölü 2 yazdım.
+
+378
+01:19:58,572 --> 01:19:59,271
+Tamam hocam.
+
+379
+01:19:59,992 --> 01:20:01,391
+1 bölü n'e ayırdım.
+
+380
+01:20:02,420 --> 01:20:03,719
+Bu paydada çünkü.
+
+381
+01:20:05,780 --> 01:20:10,100
+Hocam, şey soruyorum. İntegrale geçerken kök içinde yapmak lazım.
+
+382
+01:20:10,539 --> 01:20:14,380
+Şimdi bak canım. Bunu ayırdım. Burada ne kaldı?
+
+383
+01:20:14,819 --> 01:20:17,260
+Kök n kaldı. Onu da şuna ekledim.
+
+384
+01:20:18,360 --> 01:20:22,840
+Bunu da düzenleyince 1 artı i bölü n oldu mu? Oldu.
+
+385
+01:20:23,500 --> 01:20:26,559
+İli olan ifadeyi ci olarak alın.
+
+386
+01:20:28,079 --> 01:20:28,619
+Tamam.
+
+387
+01:20:31,091 --> 01:20:39,332
+Şimdi f, c, i, neye eşit? Kök 1 artı i bölü n'e eşit.
+
+388
+01:20:39,931 --> 01:20:52,091
+c, i dediğim, şöyle yazayım, f, c, i, c, i de nedir? i bölü n'dir. Tamam mı?
+
+389
+01:20:52,091 --> 01:20:58,171
+O da 1 artı i bölü n'e eşit. Demek ki fx nedir?
+
+390
+01:20:59,091 --> 01:21:11,471
+kök içerisinde 1 artı x fonksiyonudur değil mi? fx böyleyse f i artı n ne olur? 1 artı i bölü n şeklinde olur.
+
+391
+01:21:12,751 --> 01:21:14,451
+Tamam hocam anladım şimdi sağ olun.
+
+392
+01:21:16,131 --> 01:21:21,191
+Yani şunu genel anlamda şeye geçtiğimizde artık bu
+
+393
+01:21:22,292 --> 01:21:27,092
+ci'yi x olarak alıyorum ya, şunu x olarak düşünün.
+
+394
+01:21:28,492 --> 01:21:29,412
+1 artı x
+
+395
+01:21:35,891 --> 01:22:00,331
+c i burada genel Riemann toplamı yaptığımda, küçük dikdörtgen parçalara bölüyordum ya, o küçük dikdörtgenlerden her birinin yüksekliğini c i olarak, yani içerisinde bir c i noktası seçiyorduk, yüksekliği c i'ye bağlı olarak, yani uzun kenarını c i olarak alıyorduk.
+
+396
+01:22:01,332 --> 01:22:18,272
+Genel Riemann toplamında ci demiştik. Eğer alt Riemann ya da üst Riemann toplamlarını kullanırsam ci, çünkü bu ci ortada seçmiştim ben. x i eksi 1 ile x i arasında bir sayı seçmiştim.
+
+397
+01:22:18,836 --> 01:22:30,595
+Alt veya üst toplamları kullanırsanız uç noktaları seçiyorsunuz. Yani ci olarak ya x, i-1 noktasını ya da x, i noktasını seçeceksiniz.
+
+398
+01:22:31,235 --> 01:22:37,056
+Alt ve üst Riemann toplamlarında hep x, i-1 veya x, i'yi kullandım. Buna dikkat edin.
+
+399
+01:22:38,095 --> 01:22:41,515
+Genel Riemann toplamında da hep ci'yi kullandım.
+
+400
+01:22:43,252 --> 01:22:47,252
+c'i bunların ikisi arasında herhangi bir sayı.
+
+401
+01:22:50,532 --> 01:22:53,092
+Hangisini kullanırsanız kullanın.
+
+402
+01:22:53,432 --> 01:23:04,311
+Sonuçta bunu fci de olsa, fxi de olsa, x i-1 de olsa sonuçta hepsi fx'e eşit oluyor.
+
+403
+01:23:04,891 --> 01:23:07,612
+Yani hepsini sonuçta x alıyorsunuz.
+
+404
+01:23:08,020 --> 01:23:11,480
+fonksiyonu belirleyip sonra da integralini alıyorsunuz.
+
+405
+01:23:14,040 --> 01:23:18,620
+Şimdi [öğrenci] sınırları nasıl aldınız?
+
+406
+01:23:20,560 --> 01:23:22,700
+Sınırları şöyle alıyoruz.
+
+407
+01:23:24,916 --> 01:23:50,176
+Şu toplamda biz 1 bölü n'i ayırdık ya, burada bir delta x'i olması gerekiyor. İşte delta x'i bu. Bu bana ne diyor? Aralığın uzunluğunu n tane parçaya bölmüşüm. Bir tane parçasının uzunluğu 1 bölü n. Her bir parçası eşit parçaya bölüyorum ya.
+
+408
+01:23:50,579 --> 01:23:53,340
+Her bir parçasının uzunluğu 1 bölü n.
+
+409
+01:23:53,879 --> 01:23:59,799
+Dolayısıyla ben bu aralığı 0-1 aralığı olarak düşünebilirim.
+
+410
+01:23:59,879 --> 01:24:02,100
+Çünkü bu aralığın uzunluğu nedir? 1'dir.
+
+411
+01:24:02,659 --> 01:24:07,680
+n parçaya bölerseniz de her bir parçanın uzunluğu 1 bölü n olur.
+
+412
+01:24:08,119 --> 01:24:09,459
+Bununla uyumlu olur.
+
+413
+01:24:10,559 --> 01:24:15,039
+Dolayısıyla sınırları 0-1 alabilirim.
+
+414
+01:24:15,039 --> 01:24:17,219
+1-2 seçemez miyim?
+
+415
+01:24:18,868 --> 01:24:25,628
+Bunun da uzunluğu 1'dir değil mi? Ancak böyle seçersem ne olur? Şuna bakın.
+
+416
+01:24:42,068 --> 01:24:43,907
+Burası 1 olsun, şurası 2.
+
+417
+01:24:44,967 --> 01:24:46,368
+M parçaya böleceğim.
+
+418
+01:24:50,515 --> 01:24:55,915
+Ben parçaya böldüğümde her bir delta x, i uzunluğum ne oldu? 1 bölü n oldu.
+
+419
+01:24:56,956 --> 01:25:00,975
+Şimdi şurası bir noktası olduğu için bundan sonra gelen parça ne oldu?
+
+420
+01:25:01,575 --> 01:25:04,715
+1 artı 1 bölü n parçası oldu değil mi?
+
+421
+01:25:05,855 --> 01:25:11,695
+Ondan sonra gelen parça şurası 1 artı 2 bölü n oldu.
+
+422
+01:25:13,536 --> 01:25:17,215
+İinci parçaya gelelim. x, i'yi yazayım.
+
+423
+01:25:17,716 --> 01:25:18,435
+ne olacak?
+
+424
+01:25:19,935 --> 01:25:26,115
+1 artı i bölü n olacak.
+
+425
+01:25:31,956 --> 01:25:32,779
+sayılır.
+
+426
+01:25:37,747 --> 01:25:38,327
+x i
+
+427
+01:25:38,327 --> 01:25:40,727
+ha aslında şunu
+
+428
+01:25:48,916 --> 01:26:02,376
+x i eşit olur. x i-1 ya da ci olarak da bunu alabilirim. O zaman şu x i eşit olur. x i'lerin bu şekilde olur.
+
+429
+01:26:48,724 --> 01:26:51,084
+x i-1, 1 bölü n oluyor mu?
+
+430
+01:27:01,332 --> 01:27:24,892
+kadar gider. i bölü n eksi, i bölü n artı 1 bölü n. Evet, 1 bölü n oluyor. Aralığınız zaman yine 1 bölü n oluyor. O zaman şey değişiyor. x i değişiyor. Yani f c i yine aynı şey oluyor.
+
+431
+01:27:26,228 --> 01:27:32,847
+Şöyle diyelim, ci ya da x'i ne derseniz diyeyim. Bunu aynı zamanda ci olarak da seçebilirsiniz.
+
+432
+01:27:34,087 --> 01:27:38,548
+f ci çarpı delta x i 1 bölü n'di değil mi?
+
+433
+01:27:39,827 --> 01:27:43,968
+Ben aralığı ne aldım burada? 1, 2 aralığı aldım.
+
+434
+01:27:45,007 --> 01:27:47,387
+Şu f'e o zaman karar vermeliyim.
+
+435
+01:27:53,203 --> 01:28:13,843
+Ne olur? Burada zaten x i de 1 artı i bölü n ya. Bu f x i'ye eşit olur. Direkt bu kök içinde 1 artı i bölü n olunca o zaman f x fonksiyonu kök x fonksiyonu olur. Aynı şey olacak mı?
+
+436
+01:28:20,979 --> 01:28:45,979
+Kök x'in x üzeri 1 bölü 2, 3 bölü 2, 2 bölü 3, x kök x olur değil mi? 1'den 2'ye kadar. 2 bölü 3, 2 kök 2,
+
+437
+01:28:47,060 --> 01:28:53,239
+x eksi 1, aynı sonuç çıkar. f fonksiyonu o zaman değişiyor.
+
+438
+01:28:56,079 --> 01:29:02,579
+Aralığı alırken o zaman bunlara dikkat etmeniz gerekiyor.
+
+439
+01:29:09,652 --> 01:29:34,631
+aralığı 0, 1 aralığı olarak seçerseniz f fonksiyonunuz 1 artı x fonksiyonu oluyor. Biz 1, 2 aralığı seçtik. Hani onun da uzunluğu bir, onu seçemez miyiz dedik. Seçebiliriz. 1, 2 aralığı seçince x ilerik karakteri 1 artı i bölü n oldu. Yani şu sayının tamamı x.
+
+440
+01:29:34,895 --> 01:29:59,855
+is oldu. Dolayısıyla f fonksiyonu kök x'e dönüştü. Bunun gibi belki seçilebilir, değişebilir ama en basit olanı seçmekte yarar var. Sadece dikkat etmeniz gerekiyor. Yani aralık değişince, çünkü uzunluğu 1 olan bir aralık, tamam 0.
+
+441
+01:30:00,000 --> 01:30:11,840
+1 aralığını da alabilirim, 1-2 aralığını da alabilirim ama 1-2 aralığını aldığımda x i'lerin ya da c i'lerin nesi değişiyor? Yapısı değişiyor. Onlara dikkat edin.
+
+442
+01:30:17,908 --> 01:30:40,208
+Aynen öyle. Daha doğrusu fonksiyona uygun aralık seçmek en iyisi olacak. Yani doğru söylüyorsun. Aralığı eğer 1-2 aralığı gibi düşünürsem o zaman fonksiyonu kök 1 artı x değil de kök x fonksiyonu olur.
+
+443
+01:30:42,836 --> 01:31:07,736
+Hani böyle siz farklı farklı seçerseniz işleriniz karışır. Yani fonksiyonlar nasıl diyelim? Mesela 2-3 aralığını seçseydik bu C-İ'ler ne olurdu? X-İ'ler 2 artı İ bölü N şeklinde olurdu ki o zaman bununla bir ilişkisini kurmanız çok zor olacaktı.
+
+444
+01:31:12,819 --> 01:31:30,159
+Aralığın eğer, hani 1 bölü en şeklinde olduğunda aralığın uzunluğu 1 gibi düşünün, 0-1 aralığını almak daha böyle işlerimizi kolaylaştırır. Onu 0-1 aralığı gibi alın. Mesela B şıkkında
+
+445
+01:31:31,680 --> 01:31:43,180
+aralık uzunluğu pi bölü n olmuş, aralığın uzunluğu pi kadar, siz bunu 0 pi aralığı olarak alın. Yani hep basit olarak düşünün.
+
+446
+01:31:52,756 --> 01:31:57,876
+geçeceğiniz aralığa göre çünkü fonksiyon da değişebiliyor gördüğünüz gibi.
+
+447
+01:32:14,228 --> 01:32:30,488
+isterseniz onu da çözelim ama artık benzer soru olduğu için çok da çözmek istemiyorum. Siz çözün onu. Başka şu an ne çözebilirim sizi? Başka sorun kalmadı elimde.
+
+448
+01:32:41,332 --> 01:32:42,412
+x kare artı 2x, f'
+
+449
+01:33:08,336 --> 01:33:20,015
+x kare artı 3x, f'
+
+450
+01:32:58,676 --> 01:33:00,176
+[öğrenci] buradasın sen de.
+
+451
+01:33:01,176 --> 01:33:01,656
+Şey,
+
+452
+01:33:05,076 --> 01:33:08,396
+o senin sorularından bir tanesini şimdi çözdük ama
+
+453
+01:33:08,396 --> 01:33:13,615
+bir tanesini daha çözeyim istersen şey için.
+
+454
+01:33:15,536 --> 01:33:18,156
+Onu çözmememin sebebi şu,
+
+455
+01:33:21,260 --> 01:33:27,319
+x kare artı 4x, f'
+
+456
+01:33:19,347 --> 01:33:24,347
+Rasyonel fonksiyonların şeyini vermedik ya henüz, bitirmedik.
+
+457
+01:33:25,608 --> 01:33:31,108
+İntegrallerini, basit kesirleri ayırarak integre ediyorduk.
+
+458
+01:33:31,188 --> 01:33:34,927
+O yöntemi vermediğim için o soruyu çözmedim, birinci soruyu.
+
+459
+01:33:35,628 --> 01:33:44,948
+İkinci soruyu da çözdüm aslında, onu sana resmini gönderirim, atarım sana.
+
+460
+01:33:46,387 --> 01:33:49,628
+Ama birinci soruyu da gönderirim. Şey olur.
+
+461
+01:33:52,907 --> 01:34:01,247
+Oradaki rasyonel integral çok zor bir integral değil. Hepinizin yapabileceği bir integral aslında.
+
+462
+01:34:05,460 --> 01:34:10,460
+bir şey söyleyecektim ama unuttum şimdi kafamı toparlayamıyorum.
+
+463
+01:34:12,460 --> 01:34:14,079
+şöyle
+
+464
+01:34:15,667 --> 01:34:33,827
+Şu hatırlatmayı yapacaktım size. Çünkü biz normalde bu haftada ders yapıp o rasyonel fonksiyonların integralini bitirecektik ama gerçi sorular hazırlandı da şu tür ifadeler çok kolay olduğu için yine de karşınıza çıkabilir integralde.
+
+465
+01:34:44,851 --> 01:35:10,231
+x kare artı 2, integrali. U dedim, buraya x yazdım. Şöyle bir integral göz önüne alsak. Henüz tabi ki basit kesirleri ayırmayı bilmiyoruz ama şunu yapabilirsiniz. Yani yöntemi vermedim ama şunu yapabilirsiniz. Genelde şunlar aynı derecedense sabitleri ekleyip çıkararak
+
+466
+01:35:13,876 --> 01:35:15,156
+Bunu parçalayın.
+
+467
+01:35:17,656 --> 01:35:19,935
+Yine bu tür şeyler yapmıştım.
+
+468
+01:35:20,236 --> 01:35:26,036
+Şunu ayırdığınızda, çünkü arada x artı olunca ayırabilirsiniz kesri.
+
+469
+01:35:26,756 --> 01:35:27,976
+u artı 2
+
+470
+01:35:28,496 --> 01:35:30,115
+böldüğünüzde 1 olur.
+
+471
+01:35:30,335 --> 01:35:37,216
+Eksi 2 bölü u artı 2 şeklinde bir integral gelir ki ne olacaktır?
+
+472
+01:35:37,335 --> 01:35:39,695
+Şunun integrali zaten u olacak.
+
+473
+01:35:40,195 --> 01:35:42,175
+Neden bu hale getirmeye çalışıyorum?
+
+474
+01:35:42,175 --> 01:35:46,755
+Burada sabit olunca bu elenin integrali oluyor da o yüzden.
+
+475
+01:35:47,675 --> 01:35:50,235
+2, elen.
+
+476
+01:35:50,931 --> 01:36:12,611
+u artı 2 şeklinde bunu rahatlıkla integre edebilirsiniz. Yani dereceler, hem burada u var, hem burada u var ya da karesi var artık neyse. Eşit olduğunda ekleme çıkarma yaparak siz onu şöyle ayırabilirsiniz.
+
+477
+01:36:18,927 --> 01:36:43,167
+yazmak zor. Oysa bunu ayırdığınızda, yani biris sabit bir de elenin integralı şeklinde yazdığınızda işiniz daha kolay oluyor. Henüz bu konuyu bitirmesek de bu çok basit bir şey olduğu için karşınıza çıkabilir. Dikkatli olun. Onu da hatırlatmış olayım size. Söyledim istediğim şey oydu.
+
+478
+01:36:50,420 --> 01:36:51,340
+çok güzel.
+
+479
+01:36:59,507 --> 01:37:06,667
+indirgeme formülleri vardı. Onu niye daha önce söylemedim bak [öğrenci]. Bir soru çözerdik.
+
+480
+01:37:08,768 --> 01:37:14,707
+İndirgeme formülleri var. Ben onu unuttum. Onunla ilgili bak soru hiç hazırlamadım.
+
+481
+01:37:18,387 --> 01:37:29,567
+Ben onunla ilgili soru da bulayım. Şeye yükleyeyim o zaman. Avesize yükleyeyim ama bugün ninerce bir için yükleme yapacağım. Yarın yüklerim. Siz perşembe bakarsınız olur mu?
+
+482
+01:37:34,644 --> 01:37:36,224
+Hadi iyi bakın kendinize.
+
+483
+01:37:37,664 --> 01:37:43,524
+Kafanıza takılan bir şey olursa, sorularınız olursa bana yazabilirsiniz rahatlıkla.
+
+484
+01:37:44,304 --> 01:37:46,484
+Hepinize şimdiden başarılar diliyorum.
+
+485
+01:37:46,484 --> 01:37:48,524
+İyi çalışın.
+
+486
+01:37:50,644 --> 01:37:52,644
+İyi notlar alın.
+
+487
+01:37:56,115 --> 01:37:58,255
+Hoşçakalın hepiniz. İyi günler.

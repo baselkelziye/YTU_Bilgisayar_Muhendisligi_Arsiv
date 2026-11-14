@@ -1,0 +1,1975 @@
+1
+00:00:46,100 --> 00:01:06,020
+Evet arkadaşlar, tekrar merhaba. Şimdi ikinci örneğimize devam edeceğiz. Bu ikinci örneğimizi ilişkin olarak şöyle düşünelim. Bu ikinci örneğimiz bir LED dizisi ve bir buton dizisinin birlikte kullandığımız bir örnek.
+
+2
+00:01:11,507 --> 00:01:15,548
+Soruyla ilgili öncül bilgilerimizin şöyle olduğunu varsayabiliriz.
+
+3
+00:01:16,487 --> 00:01:29,507
+8086 mikroişlemcisinin 60H adresinden itibaren ardışık çift adreslerine, ayı uzayında, bir 8255 cihazı yerleştiriliyor.
+
+4
+00:01:30,367 --> 00:01:36,168
+8255'in port cihazında 4 adet düğme ve 4 adet led.
+
+5
+00:01:36,691 --> 00:01:42,331
+şekilde verildiği yapıda bağlantı sağlamıştır. Buna göre
+
+6
+00:01:44,891 --> 00:01:50,771
+basılan sıradaki tuşun karşılığı ledin söndüğü diğerlerinin yanık kaldığı
+
+7
+00:01:52,051 --> 00:01:56,651
+uygulamayı gerçekleyin şeklinde bir yapı yani sonuç olarak göstermek gerekirse
+
+8
+00:01:56,947 --> 00:02:23,567
+Başta bütün ledler yanık olacak. Birinci kural bu. İkinci kuralda birinci düğme, ikinci düğme, üçüncü düğme, dördüncü düğme, birinci led, ikinci led, üçüncü led, dördüncü led. Hangi numaralı, ters sırada yapmışım bunu ama, hangi numaralı butona basmışsak o numaralı led sönecek. Dört numaralı led, dört numaralı buton. Üç numaralı buton, üç numaralı led, iki numaralı buton, iki numaralı led.
+
+9
+00:02:23,807 --> 00:02:40,927
+Bir numaralı buton, bir numaralı let hangisine basarsam o sönecek şeklinde çalışan bir mantık istiyoruz. Bunu gerçeklemek istiyoruz. Yapılan bağlantı da şekilde verildiği gibi bir bağlantı yapısı. Hepsi port C'ye bağlanmış. Düşük anlamlı ve yüksek anlamlı kısımlarına bağlı olmak üzere.
+
+10
+00:02:43,067 --> 00:02:46,807
+Burada kontrol yapalım. Tamam.
+
+11
+00:02:47,807 --> 00:02:48,807
+Yapımız bu.
+
+12
+00:02:48,975 --> 00:02:58,536
+Soruya ilişkin olarak bu hangi örnek, hangi örnek olduğunu söyleyeyim. 4 buton, 4 led, drive isimli örneğimiz, 3. hafta örneklerinden.
+
+13
+00:02:59,195 --> 00:03:12,955
+Şimdi bununla ilgili olarak biz burada, nedir onun adı, 60H adresinden itibaren ardışık çift adreslere dediğimiz için, geçen dersin son kısmında vermiş olduğumuz adres çözümleme devresi burada da geçerli.
+
+14
+00:03:13,395 --> 00:03:37,795
+Dolayısıyla bu adres çözümleme devresinin çıktısını birer pin üzerinden, chip select'e, label üzerinden aktarmış durumdayız. Mikroişlemcinin read ve write uçlarını aynı sırada 8255 read write'ına bağlıyoruz. Reset ucu ground'la çekiyoruz. Mikroişlemcinin A1 ve A2 adres uçlarında, 8255'in A0 ve A1 adres uçlarına bağlamış durumdayız.
+
+15
+00:03:38,259 --> 00:04:00,259
+Ardışık çift adreslere yerleştirdiğimiz için, 8255'in D0'dan D7'ye kadar olan data uçlarını mikroişlemcinin data uçlarına bağlayacağız. Bizim simülasyonlarımızda mikroişlemcinin data uçları AD olarak label'lanmış durumda. Aksi belirtilmediği sürece dolayısıyla burada da mikroişlemcinin data 0 ucu yani AD 0 label'ı
+
+16
+00:04:00,448 --> 00:04:13,448
+8255'in D0'ına bağlı, nokta nokta nokta, AD7 mikroişlemci data ucu da 8255'in D7 data ucuna bağlı. Şimdi buradaki donanımlarımıza bakalım, donanım bağlantısına bakalım.
+
+17
+00:04:14,228 --> 00:04:23,447
+Şimdi burada öncelikli olarak şunlara karar vermek lazım. Bir, burada buton basıldığında, butonun basıldığını hangi değer...
+
+18
+00:04:23,827 --> 00:04:40,028
+Yani ben burada okumak istediğim değer, buton basıldığında aradığım değer 0 mıdır, 1 midir? Öncelikli olarak buna bakacağım. İkincisi de buradaki ledleri sürebilmek için, 8255'in uçlarında oluşturmam gereken değerler nelerdir? Buna karar vermem gerekiyor.
+
+19
+00:04:40,028 --> 00:04:47,427
+Butonlarımız bizim böyle push butonlar, yani momentary. Bıraktığımız zaman tekrar geri o da kendisi bırakıyor.
+
+20
+00:04:47,680 --> 00:04:51,000
+Öncelikli olarak donanım kısmında bunları anlamamız lazım.
+
+21
+00:04:51,000 --> 00:04:54,840
+Ve artık şuna karar vermemiz lazım. Burada hangi modu kullanacağız?
+
+22
+00:04:54,840 --> 00:05:01,399
+Şimdi doğrudan mod 0 diye cevap verebilirsiniz ama mod 0'ın gerekçesi ne? Mod 0'ın gerekçesi şu.
+
+23
+00:05:01,779 --> 00:05:19,239
+Düğme ve buton varsa, yani mikroişlemci tarafından gönderilen veya 8255 üzerinden okunan verilerin kontrolü gerekmiyorsa, yani bu kadar kritik değilse bu durum ve paralel bir şekilde veri aktarımı söz konusu burada 8255'i mod 0'da kullanmak anlamlı.
+
+24
+00:05:19,827 --> 00:05:43,067
+Peki, mod 0'da kullanmaya karar verdik. Hepsi port C'ye bağlı. Port C'nin yüksek anlamlı kısmında bakın LED'ler var. Dolayısıyla port C'nin yüksek anlamlı kısmının output yönünde ayarlanması gerektiği de ortaya çıkıyor. Port C'nin düşük anlamlı kısımlarında butonlar var. Demek ki ben buradan değer okuyacağım. Ona göre bir işlem yapıp port C'nin yüksek anlamlı kısmında değer oluşturacağım.
+
+25
+00:05:43,375 --> 00:06:03,016
+PortJey'i in yapıp daha sonra output yapmam lazım. Bu da ortaya çıktı. Yalnız ben PortJey'i düşük anlamlı 4 bitini input output ayarlayabilirken, yüksek anlamlı kısmında benzer şekilde input output olarak ayarlayabilirken, PortJey'e yaptığım yazmalar ve PortJey'den yaptığım okumalar 8 bit oluyor.
+
+26
+00:06:03,507 --> 00:06:16,307
+Dolayısıyla ben bir seferde 8 biti birden okuyacağım. Burada input yönlü olarak butonları kullandığım için ben portcaya'dan okuma yaptığım zaman düşük anlamda 4 bit korunacak şekilde bir maskeleme yapmam lazım.
+
+27
+00:06:16,307 --> 00:06:24,707
+Buradan almış olduğum değeri de alıp okuyup karşı tarafa aktarmam gerekiyor. Dolayısıyla yani portcaya'ya tekrar aktarmam gerekiyor.
+
+28
+00:06:24,707 --> 00:06:31,108
+Burada output yönlü olarak ayarladığım portlara out komutuyla değer yazmak anlamlı.
+
+29
+00:06:31,507 --> 00:06:39,687
+put yönlü olarak ayarlamış olduğum uçlarda değer yazsam da bu bir anlam ifade etmeyecek, karşılığı olmayacak, onu ifade etmek istiyorum.
+
+30
+00:06:39,687 --> 00:06:50,447
+Şimdi burada tuşlarımızın konfigürasyonuna bakalım. Şurası 8255'e bağlı olan uç. Burası bir pull-up direnç ile 5 volta çekilmiş durumda.
+
+31
+00:06:50,447 --> 00:06:57,927
+Buradaki kavram pull-up direnç ile 5 volta çekmek şeklinde ifade ediliyor. Dolayısıyla ben tuşa basmadığım zaman,
+
+32
+00:06:59,507 --> 00:07:05,927
+tuşlarında lojik bir görmeyi bekliyorum tuşa bastığımda da lojik sıfır görmeyi beklemiş oluyorum
+
+33
+00:07:05,927 --> 00:07:12,767
+burada bu ortaya çıktı dolayısıyla tuşa basıldığında herhangi bir portrenin low kısımlarında
+
+34
+00:07:12,767 --> 00:07:14,351
+sıfır değeri varsa anlayacağım
+
+35
+00:07:14,351 --> 00:07:33,151
+Benzer şekilde ledleri sürebilmek için bakın ledler anot ve katot olarak bağlıydı. Anot tarafları 8255'e katot tarafları da granda bağlı. Dolayısıyla ben burada ledlerin herhangi birini yakmak istiyorsam ilgili uçta lojik bir seviyesi oluşturmam gerektiğini buradan anlamış oluyorum.
+
+36
+00:07:42,351 --> 00:08:05,227
+Bu şekilde bir değer yüklüyeceğim. Daha sonrasında her tuşa basıldığında sadece ilgili sıradaki biti söndürecek şekilde ledleri değiştirmemiz gerektiği ortaya çıkıyor burada. Yapı bu. Şimdi bunun kodlanması ile ilgili duruma bakalım. Neye karar verdik? Bir port C'nin.
+
+37
+00:08:05,747 --> 00:08:12,747
+Bir kısmının output, bir kısmının input olarak çalışmasına karar verdik. Şimdi bununla ilgili olarak şeye bakacağız.
+
+38
+00:08:18,347 --> 00:08:21,347
+Bununla ilgili olarak öncelikle şuna bakmamız lazım.
+
+39
+00:08:28,307 --> 00:08:37,067
+Şuraya bir bakmamız lazım. Burada port C'nin düşük anlamlı kısmıyla yüksek anlamlı kısmını nasıl ayarlamamız gerektiğine ilişkin bilgi var.
+
+40
+00:08:37,067 --> 00:08:48,947
+Biz az önceki bilgiden biliyoruz ki, az önceki bilgiden hareketle biliyoruz ki, port C'nin düşük anlamlı kısımlarında buton vardı.
+
+41
+00:08:48,947 --> 00:08:53,508
+Dolayısıyla bunlar giriş yönlü olarak ayarlanmalı.
+
+42
+00:08:53,748 --> 00:09:00,668
+Port C'nin High kısmında da LED'ler vardı. Bunlar da çıkış yönlü olarak ayarlanmalıydı.
+
+43
+00:09:01,948 --> 00:09:09,628
+Peki, sadece Port C ile ilgili önemli. Port A'yı ne yapacağım? Port A'yı hangi yönü verirsem vereyim, hiç önemli değil. Don't care olacağım.
+
+44
+00:09:09,628 --> 00:09:13,948
+Port B ile ilgili ne yapacağım? Yön olarak ne verirsem vereyim, hiç önemli değil.
+
+45
+00:09:13,948 --> 00:09:21,228
+Ama modlar önemli. Hangi modda çalışacağız arkadaşlar? Mod 0'da çalışacağız. Dolayısıyla mod ayarı yapmamız lazım. O zaman
+
+46
+00:09:21,460 --> 00:09:45,420
+D7, 1 olacak. Bu kesin. Grup A mod 0'da çalışacak. Grup A'nın derken neyi kastediyoruz? Hem port C hem port A bunun içerisinde. Dolayısıyla grup A'yı mod 0'da çalıştırmam gerekiyor. O zaman ilgili iki tane bite 0, 0 değerlerini yazdım ki grup A mod 0'da çalıştı. Port A için vereceğim değer yön olarak don't care. X koydum onun için.
+
+47
+00:09:46,035 --> 00:09:54,435
+Port C'nin yüksek anlamlı kısmı çıkış olacaktı. Çıkış olabilmesi için buraya 0 değerini yazdım.
+
+48
+00:09:54,435 --> 00:10:00,000
+Grup B'nin ne olması lazım? Grup B de mod 0'da çalışacak. Port C'nin low kısmından dolayı.
+
+49
+00:10:00,000 --> 00:10:10,500
+Açıyla buraya da 0 yazdım. Port B hiç önemli değil. Buraya X koydum şimdilik. Port C'nin low kısmı buton olduğu için input yönlü olarak çalışması lazım.
+
+50
+00:10:10,500 --> 00:10:22,259
+Buraya da 1 yazdım. Yani benim vermem gereken değer X'leri de 0 kabul edersem aslında 81H, kontrolörde 81H yazmam. Bizim buradaki
+
+51
+00:10:22,644 --> 00:10:32,644
+Yapmış olduğumuz bağlantıda butonları giriş yönlü port c'nin low kısmından ve ledleri de port c'nin high kısmından çıkış yönlü olarak ayarlamak için yeterli.
+
+52
+00:10:32,644 --> 00:10:36,644
+Buna ilişkin kod kısmı nerede arkadaşlar? Bu şurası.
+
+53
+00:10:37,644 --> 00:10:43,644
+Burası. Bakın ne yaptık? Hangisi? Şuydu.
+
+54
+00:10:44,244 --> 00:11:10,644
+Yazmamız gereken kontrol word değerini bulduk. Bu kontrol word değerini hangi adrese yazacağız? Şimdi soruda ne diyordu? 60H adresinden itibaren ardışık. O zaman 60H'da port A var, 62H'da port B var, 64H'da port C var, 66H'da da kontrol kelimesi var. O zaman ben bu yazma işlemini 66H adresine yapmalıyım.
+
+55
+00:11:10,960 --> 00:11:24,460
+Demek ki benim yapmam gereken sistem açılır açılmaz resetlendiği zaman 66H.io adresine 81H.config.word değerini göndermem gerekiyormuş. Bunu nasıl yaparız arkadaşlar? Fikri olan var mı?
+
+56
+00:11:40,596 --> 00:11:56,196
+Buralarda pratik ve anlayarak ilerlemek önemli. Pratik şekilde ilerlemek önemli. Amacımız, 66H değerine, adresine, 81H değerini yazmak. Bunu istiyoruz.
+
+57
+00:11:57,196 --> 00:12:05,795
+Dolayısıyla burada bir, şimdi MOVE dediğimiz vakit MOVE, memori işlemleri.
+
+58
+00:12:07,316 --> 00:12:20,915
+Biz ne konuşmuştuk? Aksi belirtilmediği sürece biz isolated I.O kullanacağımızı söylemiştik. Bu ne demek? Adres çözümlemede M.O.Y.U kullandım demek.
+
+59
+00:12:20,915 --> 00:12:33,915
+Adres çözümlemede M.O.Y.U kullanmak ne demek? In ve Out komutlarında benim I.O. cihazlarım seçilecek ama Move komutlarında seçilmeyecek anlamına gelir.
+
+60
+00:12:34,163 --> 00:12:39,964
+Dolayısıyla burada bizim in ve out komutları kullanmamız gerektiği ortaya çıkıyor arkadaşlar.
+
+61
+00:12:41,244 --> 00:12:42,824
+In ve out komutları kullanacağız.
+
+62
+00:12:43,403 --> 00:12:51,964
+Bir kere cihaza, bir 80255'in yazmacına, bir yazmacına değer yazacağımız için bir kere out komutunu kullanmamız lazım.
+
+63
+00:12:53,324 --> 00:12:55,224
+Bir kere out komutunu kullanmamız lazım.
+
+64
+00:12:56,064 --> 00:12:58,944
+Bu out komutunu ne şekilde kullanıyorduk?
+
+65
+00:12:59,443 --> 00:13:08,724
+İki tane parametre alıyordu. Birinci parametremiz adresli, bu port adresiydi. İkinci parametremiz de AL yazmacıydı.
+
+66
+00:13:08,724 --> 00:13:17,543
+Değil mi? Mutlaka AL yazmacı veya AX yazmacı da olabilirdi ama biz 8 bitlik işlem yaptığımız için, çünkü bakın, bağlantımızı kontrol edelim.
+
+67
+00:13:18,364 --> 00:13:26,783
+Bağlantımızda cihazın veri yolu, cihazın 8 bitlik veri yolu sadece mikroişlemcinin 8 bitlik veri yoluna bağlı.
+
+68
+00:13:27,475 --> 00:13:49,255
+Bu durumdan hareketle şunu söyleyebiliriz. Biz burada ax'i değil, al'i kullanacağız. Dolayısıyla 8 bitlik bir işlem yapacağız. Port adresi olarak iki farklı yaklaşım vardı. Bunlardan bir tanesi fixed adres, bir tanesi de variable adresli. Fixed adres P8 ile ifade ediliyordu. Yani 8 bite sığan adresler.
+
+69
+00:13:53,107 --> 00:13:57,207
+Variable adres 8 bite sığmayan adreslerdi.
+
+70
+00:14:01,364 --> 00:14:10,064
+Ve burada DX yazmacını kullanıyorduk hatırlayacak olursanız. Peki P8 dediğimiz şeyde neydi? Doğrudan adresin kendini kullanıyorduk.
+
+71
+00:14:11,364 --> 00:14:20,564
+Doğrudan adresi kullanıyorduk. Dolayısıyla biz 66H'ın Ctrl Word adresi olduğunu bildiğimize göre P8, 8 bit ile ifade edebileceğimiz bir değer.
+
+72
+00:14:20,684 --> 00:14:28,624
+O zaman 66H adresine AL'deki değer yazıyoruz. Ama AL'de ne var? AL'deki değeri de oluşturmak için
+
+73
+00:14:29,172 --> 00:14:40,172
+Bu komutu çalıştırmadan önce move al, 81 h değerini vermemiz gerekiyor. Arkadaşlar, sizden kod yazarken ben şöyle bir şey bekliyorum.
+
+74
+00:14:40,172 --> 00:14:50,172
+Kod yazarken mutlaka ve mutlaka burada açıklamaları siz de verin. Yani siz yazacağınız kod şu iki satır olacak ama...
+
+75
+00:14:50,176 --> 00:15:15,816
+move al, 81h ve out 66h, al komutları olacak ama buraya açıklamalarınızı yazın. Noktalı virgül koyarak şunları derseniz bu kodun okunabilirliği açısından ve değerlendirilebilmesi açısından çok önemli. Ne yazacaksınız? Buraya geleceksiniz, diyeceksiniz ki port c love input.
+
+76
+00:15:17,364 --> 00:15:30,124
+Port CH, output, port A ve port B, don't care. Ve mod 0.
+
+77
+00:15:38,836 --> 00:15:45,836
+Belki port A ve port B'yi söylemeye de gerek yok. Bu ikisi garanti. Burada da...
+
+78
+00:15:50,227 --> 00:15:55,548
+Mod 0'ı belirteceğiz. Mod 0 kim için? Hem grup A hem de
+
+79
+00:15:55,668 --> 00:15:58,668
+Grup B için. Şimdi bir soru var, ona bakayım.
+
+80
+00:15:58,668 --> 00:16:09,168
+66H, 8086 için, 8255'in kontrol bölgününü gösteriyor. Şimdi sorumuzda şöyle ilerlemiştik. Bir önceki derslerinde getirdiğimiz bir bilgiydi.
+
+81
+00:16:09,168 --> 00:16:17,168
+8255, 60H adresinden itibaren ardışık adreslere yerleştirilecek, ardışık çift adreslere yerleştirilecek demiştik.
+
+82
+00:16:17,168 --> 00:16:21,168
+Ve geçen dersteki adres çözümleme devresini kullanacağımızı söylemiştik.
+
+83
+00:16:23,668 --> 00:16:27,947
+8255'in, 82.55'in, pardon, şunu.
+
+84
+00:16:30,292 --> 00:16:56,592
+8255'in A0 ucuna mikroişlemcinin A1 ucunu bağlamıştık. Yine 8255'in A1 ucuna da mikroişlemcinin A2 ucunu bağlamıştık. Bu bağlantıları yaptığımız zaman 60H adresinde port A oluyor, 62H'da port B oluyor, 64H'da port C oluyor, 66H'da da kontrol kelimesi oluyor. Bu bağlantılardan dolayı çıktı bu.
+
+85
+00:16:57,652 --> 00:17:10,652
+Şimdi move komutu ile ilgili bir soru var. Şimdi bakın biz şuna karar verdik değil mi? Buna karar verdik. Bunun olması gerektiğine karar verdik. Ama bunun olabilmesi için...
+
+86
+00:17:11,251 --> 00:17:34,551
+AL'de uygun değerin hazır olması lazım değil mi? AL'de uygun değerin hazır olması lazım. AL'deki değeri oluşturmak için ne yapmamız lazım? Mutlaka move komutunu kullanmamız lazım. Bir yazmaçta immediate değer oluşturabilmek için bunu kullanmamız lazım. Move komutu, source ve destination olarak iki parametre alıyordu. Bu bizim source'umuz, bu da bizim destination'ımız.
+
+87
+00:17:34,943 --> 00:17:40,443
+Source olarak 8 bit veya 16 bitlik yazmaçlarla memori adresleri kullanabiliriz.
+
+88
+00:17:40,852 --> 00:17:54,852
+Yani burada köşeli parantez de olabilirdi. Source yerine köşeli parantez içerisinde bir sayılarda olabilirdi. Benzer şekilde destination içerisinde de yazmaç, immediate değer yani sabit bir değer veya böyle köşeli parantez içerisinde değerler olabilir.
+
+89
+00:17:54,852 --> 00:18:03,852
+Ama ikisi de köşeli parantez olamıyordu hatırlayacak olursanız. Bizim burada yaptığımız işlem sonucunda, move al, 81h işlemi sonucunda
+
+90
+00:18:04,339 --> 00:18:13,940
+Şuradaki işlem sonucunu bu yürütüldüğünde AL yazmacına 81H değeri atanmış olacak. Bu komutun sonucu bu.
+
+91
+00:18:14,483 --> 00:18:34,923
+Daha sonrasında ise, burası tamam herhalde, MOV komutuyla ilgili kısım tamam mı? Birinci parametremiz, source değerimiz, bir yazmaç, AL yazmaçı, destination değerimiz, immediate bir değer, yani sabit bir değer. Dolayısıyla bu komut çalıştırıldığında AL yazmaçı içerisinde 81H değeri oluşturulmuş oluyor. Tamam mıdır burası?
+
+92
+00:18:41,299 --> 00:19:04,019
+Amacımız da şeydi, 8255'in control word'ünde, yani 66H değer içerisindeki register'ında, 81H değerini oluşturmak. Bunun için önce ALD değerimizi ayarladık, daha sonra bunu 66H numaralı porta gönderdik. Bunun karşılığı ne? Bunun karşılığı da şu, 8255 control word'e,
+
+93
+00:19:04,531 --> 00:19:23,031
+81 haşı atadık. 81 haşı atamak da şuradaki yukarıdaki işlemleri demek. Grup A ve grup B'yi sıfırda ayarla, port C'nin low kısmını input yap, port C'nin high kısmını output yap. Yani şu iki komut burada bahsettiğimiz işlemleri yerine getiriyor. Tamam mı? Şimdi ona bakalım.
+
+94
+00:19:23,731 --> 00:19:48,731
+Bununla ilgili olarak gerçeklenen işleme bakalım. Bakın bu işlem yine bir com tipi programımız var. Bu com tipi programla şu iki satır 8255'in istediğimiz modda ayarlanmasını sağlıyor. Şimdi burada bakın bu sefer debug ile başlıyorum yani pause ile başlıyorum ve daha sonra böyle bir debug ekranına düştüm. Burada arkadaşlar debug satırına girip
+
+95
+00:19:48,948 --> 00:19:58,548
+8086'dan registerslara tıklayıp burada yazma çiçeklerini görebiliyoruz. Şöyle büyüteyim biraz. Yazma çiçeklerini görebiliyoruz.
+
+96
+00:19:58,548 --> 00:20:06,708
+Ve benzer şekilde yine deba tıklayıp 8255'in iç yapısını görebiliyoruz. Burada da 8255'in iç yapısı var.
+
+97
+00:20:06,708 --> 00:20:14,548
+Bakın ilk komutumuzu çalıştıralım. Şurada registerlardan bakalım. Bir adım yürütüyorum. Şu bir adım yürütmek demek. Bir adım yürüttüm.
+
+98
+00:20:14,932 --> 00:20:24,932
+AL içerisine 81 değerini atacak bu komut. Yürüttüm bir adım, bakın AL değerim 81 haçla yüklendi. Tamam mı?
+
+99
+00:20:24,932 --> 00:20:29,932
+Bu hangi durumda geçerli tekrar etmek gerekirse?
+
+100
+00:20:30,132 --> 00:20:47,412
+kom tipi programlarda bu debug işlemlerini yapabiliyoruz. Ege tipi programlarda biraz sıkıntı oluyor ama kom tipi programlarda sıkıntı yok. Bunu yapabiliyoruz. Bir sonraki adımımız ne arkadaşlar? AL'deki 81H değerini 66H portuna yazmak.
+
+101
+00:20:47,604 --> 00:20:59,063
+Bunu yazalım. Bakın şurada 8255'in iç yapısına bakın. Default olarak her şey 0 ile inişilize edilmiş. Ben buraya bir değer yazdığım vakit, bakın, control word değeri değişecek.
+
+102
+00:20:59,063 --> 00:21:14,543
+Bakın, control word'e 81 haşı atadım. Control word hangi adresteydi? 66 haş adresindeydi. Oraya 81 haşı yükledim. 81 haşı yükleyince ne oldu? Bakın, grup A mod 0'da çalışıyor. Biz set reset mod mu? Hayır.
+
+103
+00:21:15,604 --> 00:21:38,523
+O da mod 0'da çalışıyor. Port C'nin yüksek anlamlı kısmı output oldu. Port C'nin düşük anlamlı kısmı input olarak ayarlandı. Port A ve Port B'ye don't care'di ama oralara da 0 değeri yazmıştım. 0 değeri yazdığım için onlar da output yönlü olarak ayarlanmış durumda. Daha sonra bakın arkadaşlar ne yapıyoruz?
+
+104
+00:21:39,796 --> 00:21:45,796
+AL'ye ff değerini atıyoruz ve bunu da 64H'a yazıyoruz. Şuraya yazalım şimdi bunu.
+
+105
+00:21:51,059 --> 00:21:54,559
+Bir sonraki iki satır komutumuz ne yapıyormuş? Şuraya yazalım.
+
+106
+00:21:57,059 --> 00:22:09,759
+move al, 0ffh ve sonrasında da out 64h, al dedik. Ama bundan önce de şu iki komutu çalıştırmıştık.
+
+107
+00:22:09,759 --> 00:22:18,059
+move al 81h, out 66h, al komutlarını çalıştırmıştık. Şimdi ne olacak bakalım?
+
+108
+00:22:21,971 --> 00:22:24,471
+Bu işlemler sonucunda ne ile karşılaşacağız?
+
+109
+00:22:29,748 --> 00:22:37,548
+Yani şu ana kadar çalıştırdığımız komutlar şunlar oldu. 4 komut olacak. Bunun karşılığı nedir? Bunların karşılığı nedir?
+
+110
+00:22:40,915 --> 00:22:44,235
+Hadi arkadaşlar, biraz seri ilerlememiz lazım. Yoksa yine yetişmeyecek.
+
+111
+00:22:45,015 --> 00:22:47,575
+Hızlı hızlı geçmek istemiyorum. Anlayarak ilerleyelim.
+
+112
+00:22:53,428 --> 00:23:08,428
+Evet, karşılık ne? Yalnız şunun karşılığı ne? Bakın 64H'ta ne var? Port C var. Port C'ye FFH değerleri yazıyoruz. Port C'ye FFH yazıyoruz. Şimdi devreye gelelim. Bakın devrede...
+
+113
+00:23:14,483 --> 00:23:37,243
+Devrede ben port J'ye ffh yazıyorum ama bunun hemen öncesinde port J'nin düşük anlamlı kısımlarını input olarak ayarlamıştım. Bunlara da 1-1-1 değerleri geliyor ama ne demiştik hatırlayın? Bunlara da 1-1-1 değerleri geliyor ama buraya da 1 geldi, buna da 1 geldi, buna da 1 geldi, buna da 1 geldi, 1-1-1 geldi ama bunlar input yönlü olarak ayarlandığı için.
+
+114
+00:23:38,003 --> 00:23:49,003
+Output yapmanın bir anlamı yok. Bunların bir etkisi yok. Ama bunlar sonucunda ledlerimiz yanacak. Yani ilk başta ledlerin yanmasını sağlayan durum bu olmuş oluyor arkadaşlar.
+
+115
+00:23:49,003 --> 00:23:52,003
+Şimdi devam edelim tekrardan.
+
+116
+00:23:52,003 --> 00:23:55,003
+Pause ile başladık.
+
+117
+00:23:55,003 --> 00:24:04,843
+İki adım attık. 64 haşa değer gönderdik. Şimdi bu değeri gönderdiğimiz zaman ledler bakın ne oldu? Ledlerimizin yanmasını sağladık.
+
+118
+00:24:04,884 --> 00:24:29,003
+Bir sonraki adımda artık ne yapacağız? Butonları okuyup butonlara göre işlem yapmamız lazım. Bakın ilk yapacağımız işlem in al 64h. Hemen bunların peşine yaptığımız işlem in al, 64h. Bunun anlamı ne? Port c'yi şöyle yazarsak daha iyi olacak.
+
+119
+00:24:30,355 --> 00:24:57,235
+AL yazmacına port C'nin uçlarındaki değerleri al ve kopyala. Ama burada dikkat edin, port C'nin low kısmı anlamlı fakat port C'nin high kısmı output olduğu için buradan anlamlı bir değer okuyamayacağım. Dolayısıyla şunları maskeleyip atmam lazım. Bunları nasıl maskeleyeceğim? Bir de tuş okuduğumda hiçbir tuşa basılmıyorsa AL'de okuduğum değer nedir? Eğer ki hiçbir tuşa basmıyorsak arkadaşlar,
+
+120
+00:24:57,811 --> 00:25:25,811
+Bakın, hiçbir tuşa basmadığım halde uçlarda logic 1 var. Bunu zaten önceden görmüştük. Pull up direnç ile 5 volta bağlı olduğu için butonlar, ben bir tuşa basmadığımda, 8255 uçlarında logic 1 var. Demek ki ben hiçbir tuşa basmıyorsam, burada okuduğum değerde FF bekliyorum. Eğer ki FF haricinde bir değer varsa, AL'deki değerde, herhangi bir tuşa basılmıştır. Buradaki kodun akışı da buna benziyor zaten. Öncelikli olarak yapmamız gerekiyor.
+
+121
+00:25:25,811 --> 00:25:52,371
+Gereken şurada port CH'ın maskelenmesi. Nasıl maskeleyeceğiz? Orjinal değerlerini korumak adına. Bakın normalde benim beklediğim, okumayı beklediğim değer neydi? Beklediğim değer işte port C0'dan port C1, port C2 ve port C3 pinlerim var. Hiçbir tuşa basmıyorsam logic 1, 1, 1 ve 1 değerleri var. Burada benim okuyacağım değerler.
+
+122
+00:25:52,884 --> 00:26:11,704
+1, 1, 1, 1 olur, 8255 içerisinde. Ama port genin 4'ü, port genin 5'i, port genin 6'sı ve port genin 7'sinde ise istemediğim değerler olabilir. O zaman bunları maskeleyeceğim. Şunları bozmadan gerisini maskelemem lazım. Nasıl maskeleyebilirim? İki şekilde maskeleyebilirim.
+
+123
+00:26:12,276 --> 00:26:35,256
+in al, 64h dediğimde, bu arada 64h port c idi. Şunu yapabilirim, al'deki değerin yüksek anlamlı kısmını entleyebilirim. Yani şöyle desem, ent al, 0fh desem, bu bir şey, bu bir mantık. Veyahut da iki alternatif olabilir.
+
+124
+00:26:37,460 --> 00:26:48,740
+İkinci alternatif de şu olabilir. Bu sefer de OR kullanabilirim. OR deyip AL, 0F0H diyebilirim.
+
+125
+00:26:50,879 --> 00:26:59,039
+Bu iki alternatif var. Bu iki alternatifin çalışması sonucunda AL'deki değerleri nasıl okumalıyız?
+
+126
+00:27:01,887 --> 00:27:08,807
+A7, A6, A5, A4, 3, 2, 1, 0 diye değerlerimiz var.
+
+127
+00:27:14,355 --> 00:27:15,375
+Çizmeye gerek yok.
+
+128
+00:27:16,375 --> 00:27:25,375
+8 tane değerimiz var. Eğer ki ben in al deyip butonları okuduktan sonra and ile maskelersem ne olur? Or ile maskelersem bu şekilde ne olur?
+
+129
+00:27:26,195 --> 00:27:31,955
+Veyahut da and al virgül 0,0 desem ne olacaktı? Onları konuşacağız şimdi.
+
+130
+00:27:32,755 --> 00:27:37,975
+Bakın burada arkadaşlar and al virgül 0,f demiş isem yüksek anlamlı 4 bit.
+
+131
+00:27:38,451 --> 00:27:56,951
+okuduğum değerleri, AL'deki değerlerin yüksek anlamlı 4 bitini bit bazında sıfırla entliyor. Bir şeyi sıfırla entlediğimiz zaman bu işlem sonucunda bu yüksek anlamlı 4 bitimiz sıfır olacaktır. Geri kalan bitlerimiz ise buton kaçtı mesela? Buton 3.
+
+132
+00:27:57,715 --> 00:28:22,655
+Buton 2, buton 1 ve buton 0'daki değerlerin hangisi ise o değerleri korunacak. Hiç tuşa basmıyorsam bunların 1, 1, 1, 1 olması lazım. Herhangi bir tuşa basılmışsa bunlardan bir tanesinin 0 olmasını bekliyorum. İkinci alternatif de eğer or ile bunu işlemi yapmışsam ne olacak? Bakın bu sefer yüksek anlamlı bitini 1'lerle orluyorum. Dolayısıyla bunlar 1, 1, 1, 1 olacak.
+
+133
+00:28:23,635 --> 00:28:38,996
+Düşük anlamlı kısmı ise B3, B2, B1 ve B0 olacak. Hiçbir tuşa basılmamış ise şu end işlemi sonucunda AL'deki değerimiz 0FH olmasını bekliyorum.
+
+134
+00:28:38,996 --> 00:28:50,676
+Eğer or ile maskelemişsem AL'deki değerin ise FFH olmasını bekliyoruz. Bu güzel bir özellik.
+
+135
+00:28:50,963 --> 00:29:03,683
+FFH olması benim daha kolayıma geldi. Çünkü AL'deki değeri alacağım. Bu maskelemeden sonra öteleyerek direkt kullanabileceğim. O zaman buradaki mantığımız için OR'u tercih ettiğimi söyleyebilirim.
+
+136
+00:29:03,683 --> 00:29:15,203
+Geliyoruz kod tarafına. AL'deki değeri okuduk. Şu anda hiçbir tuşa basmadığımız için AL'deki değer ne olmasını bekliyoruz okuma yaptığımız zaman.
+
+137
+00:29:16,115 --> 00:29:27,395
+Hiçbir tuşa basmadığımız için düşük anlamlı 4 biti F olacak, yüksek anlamlı yanlış tuşa bastık. Düşük anlamlı 4 bitinin ne olduğunu bilmiyoruz. Bakın ne geldi?
+
+138
+00:29:27,700 --> 00:29:49,500
+Düşük anlamlı 4 biti F geldi, yüksek anlamlı 4 biti 0 geldi. Ama herhangi bir şey gelebilirdi. O yüzden buna güvenmiyoruz. OR ile maskeliyoruz. OR, AL, F0 dediğimizde AL'nin yüksek anlamlı 4 bitini bit bazında 1 ile orladığım için bir şeyi 1 ile orlamak demek, onu 1 yapmak demek. Dolayısıyla yüksek anlamlı 4 biti de 1 olacak.
+
+139
+00:29:49,920 --> 00:29:55,920
+Küçük anlamlı biti de hiçbir tuşa basmadığım için 1 kalacağından dolayı artık AL'de FF değerim var.
+
+140
+00:29:55,920 --> 00:30:02,920
+Şimdi ben AL'yi FF ile karşılaştırırsam herhangi bir tuşa basılmış mı basılmamış mı bunu anlarım.
+
+141
+00:30:03,571 --> 00:30:13,571
+AL'yi FF ile karşılaştırdım. Eğer işlem sonucu 0 ise yani AL'deki değer FF ise hiçbir tuşa basılmamışta tekrar başa gidiyorum, endless'a gidiyorum.
+
+142
+00:30:13,571 --> 00:30:23,403
+Yeniden port J'yi okuyorum, orla maskeliyorum, tekrar bakıyorum. Demek ki bu döngü herhangi bir tuşa basmadığım süre boyunca devam edecek. Dolayısıyla ben burada kaldım.
+
+143
+00:30:23,988 --> 00:30:31,988
+Eğer bu döngü kırılırsa, ne demek bu? Ben herhangi bir tuşa basmıştım. Herhangi bir tuşa basmışsam okuyacağım değerler ne olabilir?
+
+144
+00:30:33,988 --> 00:30:50,988
+Herhangi bir tuşa basmışsam okuyacağım değerler ne olabilir arkadaşlar? Eğer ki ben mesela buton 3'e basmışsam, buton 3'e basmışsam or sonucu ne olacak? 0F7H olacak.
+
+145
+00:30:51,359 --> 00:31:16,720
+Veya buton 2'ye basmışsam 0F, 1, 0, 1, 1, BH olacak. Veya buton 1'e basmışsam 0F, EH olacak. EH olmuyor galiba. Bir daha bakalım. Buton 1'e basmışsam 1, 1, 0, 1, ne oldu bu?
+
+146
+00:31:17,556 --> 00:31:33,656
+C, D oldu değil mi? D, H olacak. Veya buton 0'a basmışsam da 0, F, E, H olacak. Bunlardan birisi olacak. F, F'ten farklı olarak bunlardan birisi olacak. Buton 3'e basmışsam bu 0 olacak.
+
+147
+00:31:36,616 --> 00:31:41,276
+Port C'nin 3'ü 0 olacak. Port C'nin ikisi 1, Port C'nin 1'i 1.
+
+148
+00:31:41,647 --> 00:31:52,267
+Port C'nin 0'ı 1 olacak. Dolayısıyla F7, yüksek anlamda 4 biti de maskelemeden dolayı 1 gelmişti. Burada 1, 0, 1, 1 olacak. Bu B'ye karşılık geliyor.
+
+149
+00:31:52,267 --> 00:32:00,487
+Veyahut da 1, 1, 0, 1 olacak. D'ye karşılık geliyor. Veya 1, 1, 1, 0 olacak. Bu da E'ye karşılık geliyor. Bunlardan birisi olacak.
+
+150
+00:32:00,487 --> 00:32:08,707
+Ben bu dönüşümü elde ettikten sonra ledlere bunu aktarabilmek için yapacağım çok basit bir işlem var arkadaşlar. O da şu.
+
+151
+00:32:10,195 --> 00:32:13,695
+Buradaki döngüyü kırdığımızda artık bir tuşa basılmıştır.
+
+152
+00:32:15,195 --> 00:32:25,195
+AL'e'deki değeri 4 bit sola öteleyeceğim. AL'e'deki değeri 4 bit sola ötelediğim vakit benzer bir değeri karşı tarafta oluşturmuş olacağım.
+
+153
+00:32:25,195 --> 00:32:28,195
+Ve bunu tekrar portya'ya yazdığımda da
+
+154
+00:32:28,271 --> 00:32:36,612
+İlgili tuşa karşılık bir sonuç elde etmiş olacağım. Daha sonra tekrar jump endless ile başa dönüp yeniden tuşlar okunana kadar, tuşa basılana kadar bekliyorum.
+
+155
+00:32:36,692 --> 00:32:43,392
+Tuşa basıldığında da tuşa basılan değeri shift edip tekrar port c yazarak tekrar başa dönüyorum.
+
+156
+00:32:43,892 --> 00:32:49,311
+Port c'yi shift etmenin anlamı ne arkadaşlar? Port c'nin shift etmenin anlamı şu. Şuraya gelelim.
+
+157
+00:32:50,031 --> 00:32:54,271
+Bakın okuduğumuz değerler şuydu. AL'deki değerlerimiz şunlar.
+
+158
+00:32:59,092 --> 00:33:22,052
+Burada düşük anlamlı kısımda butonlar var. Burada da LED'ler var. Değil mi? Benim okuduğum değere göre bunlardan bir tanesi sıfır olacak şekilde bir değer elde ediyorum. Bunlar da LED değerlerim. Benim için don't care. Ben buradaki AL'yi 4 birim sola shift edersem, shift left 4 birim.
+
+159
+00:33:23,124 --> 00:33:36,683
+Bu durumda elde edeceğim durum ne oluyor bakın? 1, 0, 1, 1. Buralarda da işte 0, 0, 0, 0 gelecek ama bunlar da artık buton olduğu için don't care olarak düşünüyoruz.
+
+160
+00:33:36,683 --> 00:33:42,844
+LED'lerde buton değerinin aynısını oluşturdum bakın. Bu şekilde bir karşılık oluşturmuş oldum.
+
+161
+00:33:44,124 --> 00:33:48,723
+Shift left komutunu nasıl kullanıyoruz? Shift left komutu şu şekilde kullanıyor onu bir hatırlayalım.
+
+162
+00:33:49,523 --> 00:33:58,223
+Shift left deyip, source deyip, 1 olarak kullanabiliriz veya bir kere ötelemek için böyle mantıklı kullanıyoruz.
+
+163
+00:33:58,223 --> 00:34:02,023
+Veyahut da, Shift left deyip, pardon.
+
+164
+00:34:02,804 --> 00:34:14,404
+Source verip buna CL parametresi verebiliriz. Demek ki bir kere öteleyeceksem buraya biri immediate olarak verebilirim ama birden fazla öteleyeceksem bunu CL üzerinden vermem lazım.
+
+165
+00:34:14,404 --> 00:34:22,604
+Demek ki bu Shift komutunu çalıştırmadan önce ne kadar öteleyeceksem CL'de bu değeri oluşturmam gerekiyor. Dolayısıyla bunun hemen üzerinde
+
+166
+00:34:23,668 --> 00:34:39,508
+Move CL, işte kaç kere öteleyeceğim? 4 kere öteleyeceğim için bu 4 değerini oluşturmam gerekiyor. Dolayısıyla buradan sonra da bu çalışacak. Neyi öteliyorum? AL yazmacını öteliyorum 4 kere. Dolayısıyla burada yazacağımız komut grubu da şu olmuş oldu.
+
+167
+00:34:49,331 --> 00:34:56,831
+AL'de hazırlamış olan bir örnek oluyor bu. Mesela burada bir tuşa basarak ilerleyelim arkadaşlar.
+
+168
+00:34:59,231 --> 00:35:13,032
+Şurada şu tuşa basmış olalım. Hangi butona bastık? Buton sıfıra bastık. Şimdi devam edelim. Tekrar başa döndük. Okuduk.
+
+169
+00:35:13,811 --> 00:35:21,811
+Okuduğumuz değeri maskeledik. Şunu birazcık yukarı alacağım. Okuduğumuz değeri maskeledik. Daha sonra FF ile karşılaştırdık. Bakın.
+
+170
+00:35:22,811 --> 00:35:25,612
+Hala gelmedi mi? Tekrar bakalım.
+
+171
+00:35:30,996 --> 00:35:34,096
+Daha simülasyon oraya geçmemiş. Şöyle yapacağım burada.
+
+172
+00:35:37,780 --> 00:35:46,480
+Şuraya bir tane break point koyacağım arkadaşlar bakın. Şuraya çift tıkladığım zaman bir break point koymuş oldum. Simülasyonu çalıştıracağım.
+
+173
+00:35:46,480 --> 00:36:04,280
+Tuş basılı olduğu için buraya geldi bakın. Buton sıfıra ilişkin olarak debug noktasına geldi. Debug noktasına geldiğimizde ALD FE değeri var. Şurada yazmış olduğumuz mantık vardı ya. Neredeydi onlar? Şurada yazmış olduğumuz değer var. Buton sıfır için.
+
+174
+00:36:04,596 --> 00:36:07,916
+FE değeri karşımıza çıkmalıydı, onu burada gördük.
+
+175
+00:36:08,695 --> 00:36:12,536
+Daha sonra CL'ye 4 değeri atadık.
+
+176
+00:36:13,296 --> 00:36:16,376
+CL'de 4 değeri var. AL'yi 4 kere shift ettik.
+
+177
+00:36:16,876 --> 00:36:20,716
+AL'yi 4 kere shift edince bakın şurada AH tarafına
+
+178
+00:36:22,931 --> 00:36:39,751
+AL'yi shift ediyoruz. Şu E değerinin diğer tarafa geçtiğini göreceksiniz. Bakın E değeri diğer tarafa geçti. Daha sonra da bunu out64 AL diyerek karşı tarafa yazıyoruz. Yazdık. Bakın karşılığı ne? Şu anda tam olarak göremedik. Devam ettirelim.
+
+179
+00:36:45,840 --> 00:37:11,840
+Söndüğünü gördük. Bu 4 numaralı LED olmakla birlikte portçiye 4'e bağlı olduğu için birinci butonla aynı anlam sırasında tamam mı? Birinci butonla aynı anlam sırası, ikinci butonla aynı anlam sırası diye düşünebiliriz. Butonu release ettim. Bundan sonra hangi tuşa basarsam ilgili LED bundan ilgili bir şekilde yanacak. Tekrar şuraya dönecek olursak, eğer ki ben 3 numaralı butona basarsam, yani şu butona basarsam,
+
+180
+00:37:12,307 --> 00:37:35,487
+AL'de oluşacak değer neydi? F7 değeri. F7 değerini 4 bit shift ettiğimde ne olacak bakın? AL değerini 4 bit shift ettiğimizde 0, 1, 1, 1, 7 değerini, 4 bit ile 7 değerini yazdım. Dolayısıyla şu en yüksek anlamlı bitteki LED söndü. Dolayısıyla bu örneğimiz LED buton örneğimiz bu şekilde.
+
+181
+00:37:36,016 --> 00:37:43,375
+Burada özellikle aklımızda kalması gereken portyenin düşük anlamlı ve yüksek anlamlı kısımlarını ayrı ayrı input output için kullanabiliyoruz.
+
+182
+00:37:43,375 --> 00:37:48,655
+Koymuş olduğumuz buton veyahut da led dizisine göre input output buna bizim karar vermemiz lazım.
+
+183
+00:37:48,864 --> 00:38:02,463
+Daha sonrasında burada kodlamayla ilgili olarak bir maskeleme mantığı gördük. Bir portu 8 bit olarak okuyabilirim ama portyayı 4 bit, 4 bit, input, output yazabildiğimden dolayı benim için anlamsız olan kısmı maskelemeliyim.
+
+184
+00:38:02,463 --> 00:38:09,663
+Maskelemeyi iki şekilde yapabilirim. Bunlardan birisi F ile orlamak, diğeri ise 0 ile endlemek.
+
+185
+00:38:10,579 --> 00:38:22,419
+Korumak istediğim biti veya değerini bilmek istediğim, ilgilenmediğim bitleri maskeliyorum. İlgilendiğim bitleri koruyarak, ilgilenmediğim bitleri benim önceden belirlediğim bir bit değerine varmasını sağlıyorum.
+
+186
+00:38:22,419 --> 00:38:37,419
+Maskelemek demek bu demek arkadaşlar. Bu örnekle ilgili sorunumuz var mı? Mutlaka siz de bu örneği indirin, çalıştırın, değişiklikler yaparak sonuçlarını görün. Bununla ilgili bir sorununuz var mı? Yoksa bir sonraki konuya geçeceğim.
+
+187
+00:38:47,027 --> 00:38:49,267
+Sorunuz olursa sorarsınız tekrar.
+
+188
+00:38:53,588 --> 00:38:56,588
+Bir sonraki örneği açıyorum şimdi.
+
+189
+00:39:00,724 --> 00:39:08,724
+Bir sonraki örneğimiz arkadaşlar, 7 segment display. Tamam şu.
+
+190
+00:39:14,356 --> 00:39:16,756
+Öncelikli olarak bu elemanı bir tanıyalım.
+
+191
+00:39:16,756 --> 00:39:22,056
+Seven Segment Display içerisinde 8 tane LED olan bir eleman.
+
+192
+00:39:22,056 --> 00:39:34,856
+Bu LED'lerin yerleşiminden dolayı 0'dan F'e kadar olan hexadecimal değerleri ve noktalı decimal değerleri gösterebilen bir gösterge olarak isimlendiriliyor.
+
+193
+00:39:34,856 --> 00:39:37,856
+Bunun temel yapısını şöyle göstereyim size.
+
+194
+00:39:37,856 --> 00:39:41,155
+Örneğin şurada da çizecek olursak.
+
+195
+00:39:42,291 --> 00:39:44,291
+Bu seven segment içerisinde
+
+196
+00:40:02,931 --> 00:40:12,651
+Bu şekilde ledler var arkadaşlar. Bunların her birisi led. Yerleşimi bu şekilde. Bir tane led de şurada decimal point için var. Toplamda 8 tane ledimiz var.
+
+197
+00:40:12,651 --> 00:40:27,931
+Bu ledlerin eğer ki şimdi 7 segment display'e baktığınızda bunun toplamda 9 tane ucu olduğunu görüyoruz. Uçlarımız şöyle. Bir tane ortak uç var. Bir de bir bas oluşturacak şekilde
+
+198
+00:40:29,108 --> 00:40:34,568
+A, B, C, D, E, F, G ve H uçları olduğunu görüyoruz.
+
+199
+00:40:35,128 --> 00:40:39,788
+Bu A, B, C, D, E, F, G uçlarının numara isimlendirilmesi şu şekilde.
+
+200
+00:40:40,507 --> 00:40:42,307
+Niye bu bu kadar büyüyor ya?
+
+201
+00:40:44,487 --> 00:40:47,088
+Bunların isimlendirilmesi de şu şekilde arkadaşlar.
+
+202
+00:40:47,827 --> 00:40:51,007
+Bakın, A dediğimiz, şunlar önce şey yapalım.
+
+203
+00:40:52,052 --> 00:41:14,052
+A dediğimiz led en üstteki led tamam mı? B dediğimiz led şu, C bu, bu şekilde gidiyor. Şu üstüne yazacak olursak, bu A ledimiz, B ledimiz, C, D, E, F, G ve bu da H ledleri olarak isimlendiriliyor.
+
+204
+00:41:14,963 --> 00:41:36,683
+Burada ortak uç ve ABCDH'ın nasıl isimlendirileceğine gelirsek iki farklı yaklaşım var. Bunlardan bir tanesi, eğer ki ortak uç ledlerin katotuysa, bu farklı bir durum, ortak katotlu 7 parçalı gösterge oluyor.
+
+205
+00:41:43,027 --> 00:41:51,367
+Ortak uç, ledlerin anotu ise, bu durumda da ortak anotlu 7 parçalı gösterge oluyor.
+
+206
+00:41:53,527 --> 00:41:56,587
+7 parçalı gösterge, 7 segment display.
+
+207
+00:42:00,628 --> 00:42:27,028
+İngilizcesi de bu şekilde isimlendiriliyor. Burada bakın, eğer ki ben şu haşın, şimdi ledin tabii formatını hatırlamamız lazım, onu da şöyle çizeyim. Herhangi bir ledimiz varken, ledin bu tarafı anot, bu tarafı katot olarak isimlendiriliyor. Ben bu ledlerin mesela haş ucunu alıp katot tarafını dışarı aktarırsam, işte G'nin,
+
+208
+00:42:29,172 --> 00:42:38,052
+Katotunu buraya aktarsam, işte F'nin katotunu dışarı aktarsam, bu şekilde ilerlesem, daha sonra bütün ANO tuşlarını da alıp birleştirsem.
+
+209
+00:42:49,364 --> 00:42:57,684
+Bütün anot uçlarını da birleştirsem, dışarıya ortak anot ucu olarak çıkarsam arkadaşlar, bu ortak anotlu seven segment display oluyor.
+
+210
+00:42:57,684 --> 00:43:08,324
+Tersini yaparsak eğer, eğer ki tersini yaparsak, bu durumda her birisinin mesela H'ın anodunu dışarıdan versem,
+
+211
+00:43:08,324 --> 00:43:15,764
+işte G'nin anodunu dışarıdan bir uç olarak versem ve bunların her birisinin katot uçlarını birleştirip,
+
+212
+00:43:16,628 --> 00:43:33,519
+Bütün LED'lerin katot uçlarını birleştirip dışarı ortak bir uç olarak sunsam, bu da ortak katotlu seven segment display olacak. Tamam mı? Şimdi bu durum için, bütün LED'lerin katot uçlarını birleştirdiğim durum ortak katot, yani...
+
+213
+00:43:33,519 --> 00:43:51,919
+Bunu artı ve eksi olarak düşünün. LED'lerin eksi uçlarını birleştirip dışarı tek bir uç olarak çıkartırsam ortak katod, bütün LED'lerin artı ucunu veya anot ucunu birleştirip dışarı çıkartırsam bu da ortak anot oluyor. Geri kalan LED'lerin uçları ise dışarı bir data ucu olarak çıkıyor. Bu durumda arkadaşlar,
+
+214
+00:44:00,244 --> 00:44:07,923
+Bu durumda ortak anotlu bir 7-segment display'de ben değer oluşturmak istersem, şimdi simülasyonumuzu çalıştıralım.
+
+215
+00:44:07,923 --> 00:44:13,923
+Bakın ortak anotlu 7-segment, A, B, C, D, E, F, G, H diye isimlendirmeleri de yapılmış.
+
+216
+00:44:13,923 --> 00:44:22,764
+Ben ortak anotlu bir 7-segment display'de data uçlarına 0 veya 1 vermem fark ettirmiyor hangi durum için.
+
+217
+00:44:22,764 --> 00:44:26,923
+Ortak anot ucunda 0 varsa, bakın LED'lerimize gelelim.
+
+218
+00:44:27,088 --> 00:44:50,088
+Eğer ki LED'in anot ucunda, LED'in anot ucunda, lojik sıfır varsa, burada, aralıkta bir pozitif gerilim farkı oluşturmam gerekiyor ya, bu pozitif gerilim farkını oluşturamayacağım için LED'lerin hiçbiri yanmayacaktır. Demek ki ben burada LED'leri söndürebilmek için, bütün LED'leri söndürebilmek için kısa yol, ortak anot ucuna sıfır vermektir.
+
+219
+00:44:50,228 --> 00:44:56,528
+Eğer bir değer göstermek istiyorsam, ledin yanması için mutlaka buraya lojik 1 bağlamalıyım.
+
+220
+00:44:56,528 --> 00:45:00,848
+Buraya lojik 1 bağladım ama katod tarafına da lojik 0 bağlamalıyım.
+
+221
+00:45:00,848 --> 00:45:06,848
+Lojik 0 bağlarsam led yanıyor. Eğer ki buraya da lojik 1 bağlarsam led yine sönük olacak.
+
+222
+00:45:06,848 --> 00:45:12,307
+Dolayısıyla ben burada istediğim değeri oluşturmak için, örneğin iki sayısını oluşturmak istiyorsam,
+
+223
+00:45:12,307 --> 00:45:18,228
+öncelikli olarak ortak anot ucuna 1 vereceğim ve söndürmek istediğim her bir pin için
+
+224
+00:45:18,228 --> 00:45:21,728
+Bunu 1'e getireceğim. İki değeri yakmak istiyorum ya.
+
+225
+00:45:27,764 --> 00:45:31,963
+İki değeri yakmak istediğimiz için o kalacak, o kalacak.
+
+226
+00:45:32,963 --> 00:45:33,963
+Değilmiş, şu muydu?
+
+227
+00:45:35,364 --> 00:45:41,164
+Ve noktayı da söndürüyorum. Dolayısıyla iki yakmak için böyle bir mantık izlemem gerekiyor.
+
+228
+00:45:41,563 --> 00:45:49,764
+Aynı işlemi ortak katotlu da yapmak istersem, bakın ortak katotlu da eğer ki yakmak istiyorsam, ortak uca 0 vermem gerekiyor.
+
+229
+00:45:49,764 --> 00:45:53,563
+Ortak uca 0 vermem lazım. Katot ucunda 0 olacak ki led yanabilsin.
+
+230
+00:45:53,748 --> 00:46:04,547
+Daha sonrasında ise yakmak istediğim her bir segment için bir değerini vermem lazım. Burada da iki değerini oluşturmak için sırasıyla 3 yanmayacak, 4 yanacak.
+
+231
+00:46:04,800 --> 00:46:14,280
+5 yanacak, 6 yanmayacak, 7 yanacak. Böyle bir değer grubu oluşturmam lazım. Burada da A, B, C, D, H diye aynı bir anlam sırasında gidiyor.
+
+232
+00:46:14,280 --> 00:46:29,000
+Bakın burada ne ortaya çıktı? Eğer ki ben 7-segment display'de ortak anotlu da bir değer yakmak istiyorsam, aynı değeri ortak katotlu da yakmak istersen bütün data uçlarının ve ortak ucun bire tümleyenini almam gerekiyor.
+
+233
+00:46:29,427 --> 00:46:37,188
+Burada neydi? 001 diye giden uçlar vardı ya, aynısını bire göre tümleyeni alırsam, aynı değeri ortak katotlu da yakmış oluyorum.
+
+234
+00:46:37,188 --> 00:46:42,188
+Veyahut da şöyle bir durumla karşılaşabiliriz. Yanlışlıkla tam tersini yakmış olalım.
+
+235
+00:46:45,652 --> 00:47:04,492
+Yanlışlıkla böyle bir şey yakmış olalım. Burada da bakın arkadaşlar, ortak anotluya ortak katotlunun datasını vermişsek ne oluyor? Sönük olarak ikiyi yakmış olduk. Bunu da gördünüz mü? Dolayısıyla yakmak istediğimiz değeri sönük olarak görüyorsak yanlış ortak uç için datayı göndermişiz anlamına geliyor.
+
+236
+00:47:04,980 --> 00:47:24,980
+Dolayısıyla seven segment displaylerin çalışması bu mantıkta gerçekleşmiş oluyor. Bununla ilgili bir sorunuz var mı? Seven segment display ile ilgili. Bunun için, bunu anlayabilmek için, LED nasıl yanar? Bunu bileceğiz. Anot neresi, katot neresi? Bunu bileceğiz. Bütün LED'lerin anotlarını birleştirirsek bu ortak anotlu oluyor.
+
+237
+00:47:25,076 --> 00:47:37,076
+Geri kalan katot tuşları dışarı data olarak çıkıyor. Eğer bütün katot tuşlarını birleştirirsek bu ortak katotlu oluyor. Bütün LED anotlarını dışarı data olarak çıkartırsak da ortak katotluyu sağlamış oluyoruz.
+
+238
+00:47:37,076 --> 00:47:39,884
+Burayla ilgili sormak istediğiniz bir şey var mı?
+
+239
+00:47:55,795 --> 00:48:00,915
+Peki, drive örneğine geçelim şimdi.
+
+240
+00:48:04,436 --> 00:48:16,436
+Şimdi burada bakın arkadaşlar, 8255 ile bir tane 7 segment display'i interfeis ediyoruz. Burada kullanmış olduğumuz 7 segment display, hemen kontrol ediyorum.
+
+241
+00:48:22,324 --> 00:48:43,324
+Ortak anotlu bir seven segment display. Buradaki örneğimizde ortak common anot, ortak anotlu bir seven segment display var. Dolayısıyla bütün LED'lerin anotları birleştirilmiş, dışarı ortak uç olarak çıkarılmış. Dolayısıyla ben bu LED'de değer yakabilmek istiyorsam ortak ucu logic 1'e çekmem lazım.
+
+242
+00:48:49,204 --> 00:48:58,923
+0 gönderirsem ilgili led yanacak değil mi? Anotları birleşik, katotlarda da 0 değeri oluşturursam ilgili ledler yanacak.
+
+243
+00:48:58,923 --> 00:49:08,523
+1 değeri oluşturursam ledler sönecek. Şimdi buradaki örneğimizdeki soruyu nasıl hayal edebilirsiniz? Buradaki örnekte soruyu şöyle hayal edebilirsiniz arkadaşlar.
+
+244
+00:49:08,523 --> 00:49:15,563
+8255'in port B'sine bir 7 segment display bağlı. Burada 7 segment display'in
+
+245
+00:49:15,711 --> 00:49:25,012
+A ucu port B0'a denk geliyor, nokta nokta nokta. Port B7 ucu da Seven Segment Display'in H ucuna denk geliyor. Bunu biliyoruz.
+
+246
+00:49:26,012 --> 00:49:36,251
+Buna göre Seven Segment Display'de bir tane değer yakmak istiyoruz. Sıfır değerini göstermek istiyoruz. Bunu nasıl sağlayabiliriz?
+
+247
+00:49:36,251 --> 00:49:41,228
+Şimdi burada iki şeye dikkat etmemiz lazım. Bunlardan bir tanesi...
+
+248
+00:49:42,164 --> 00:49:57,664
+Neydi arkadaşlar? Hemen bakalım. Bunlardan birincisi şu. Burada Seven Segment Display, port B'ye bağlı. Dolayısıyla port B'nin yönü ne olmalı? Bunu söyleyebilir misiniz? Bu aşamada bunu söyleyebiliyor olmamız lazım.
+
+249
+00:50:01,235 --> 00:50:05,335
+Portway'nin output yönlü olarak ayarlanması lazım. Evet. Peki modu ne?
+
+250
+00:50:09,556 --> 00:50:29,676
+Modu ne olmalı? Bakın. Evet, mod 0 olmalı. Çünkü göndereceğim veri ve veriyi tekrar kontrol edeceğim bir handshaking sinyal grubu yok. Dolayısıyla burada mod 0 ve output olarak ayarlanması lazım. Neyin? Port B'nin komplesini. Tamam.
+
+251
+00:50:30,195 --> 00:50:52,415
+Dolayısıyla 8255'i konfig ederken dikkat edeceğim husus bu olacak. Bunu yaptıktan sonra da sonsuz döngü içerisinde port B üzerinden burada sıfır değerini yakacak bir değer oluşturacağım. Burada sıfır değerini yakabilmek için arkadaşlar bunun, bunun, bunun, bunun, bunun ve bunun yanık olması lazım.
+
+252
+00:50:53,172 --> 00:51:10,251
+A, B, C, D, E, F, G ve H olarak isimlendirdiğimize göre burada arkadaşlar yazalım. Şimdi bakın bir de ne vardı? Burası A, H'a kadardı. En yüksek anlamlı olan P, B, 7, H'a bağlı. O zaman bu anlam sırasını koruyalım.
+
+253
+00:51:18,483 --> 00:51:41,864
+E, D, C, B, A uçlarına vermem gereken değerleri bulalım. Bir de ortak anoduna vermem gereken değeri bulalım. Ortak anoduna lojik 1 vereceğim. Bu kesin garanti. Burada yakmak istediğim uçlar için de 0 vermem gerekiyor. A'yı yakmak istediğim için 0 vereceğim. B'yi yakacağım, 0 vermem lazım. C'yi yakmak için 0 vermem lazım. D için 0 vermem lazım.
+
+254
+00:51:42,288 --> 00:52:03,967
+E için 0 vermem lazım, F için 0 vermem lazım, G sönük kalacağı için 1. Nokta da sönük kalacak, buna da 1 veriyorum. O zaman, 7 segment display'de 0 değerini yakabilmek için, benim port B'ye göndermem gereken değerin C0H olduğunu anlamış oluyorum buradan.
+
+255
+00:52:03,967 --> 00:52:07,647
+Tamam mı? Ortak anodunda logic 1 varken,
+
+256
+00:52:07,987 --> 00:52:13,267
+Seven Segment Display'e port B üzerinden C0H datasını gönderirsem,
+
+257
+00:52:17,715 --> 00:52:34,715
+Tersini yaparsak, sönük olarak sıfırı görürüz. Tersini yaparsak, burada C sıfırın değilini yaparsak, yani 3F değerini gönderirsek ortak anotluya, sönük olarak sıfır görürüz. G ve H yanar, diğerleri sönük olur. Karışmasın bu.
+
+258
+00:52:35,891 --> 00:52:59,171
+Bu değerimiz hazır. Şimdi dolayısıyla config yaparken, control word'e port B'yi mod 0'da output yapacak bir şeyi ayarlayacağız. Daha sonrasında da C0'ı bir data segment değerinde bir değişken olarak ayarlayıp bunu sürekli olarak ilgili port değerine gönderiyor olacağız. Bakalım şimdi kod kısmında neler yapmamız lazım. Kod kısmına geliyoruz.
+
+259
+00:52:59,599 --> 00:53:18,019
+Bakın, kod kısmı burada bir egzotipi program olarak çalışıyor arkadaşlar. Egzotipi programlarda üç tane segment tanımlanması lazım. Bunlardan bir tanesi stack segment, bir tanesi data segment, bir tanesi de kod segment olarak isimlendiriliyor. Egzotipi programlar bu üç segmentle oluşur ve en altta da
+
+260
+00:53:18,224 --> 00:53:32,224
+Bu kod çalıştırıldığında programın ilk başlangıç label'ı end kelimesinden sonra verilir. Dolayısıyla bu program hafızaya yüklendiğinde start isimli label neredeyse program buradan itibaren çalışmaya başlayacaktır.
+
+261
+00:53:32,784 --> 00:53:42,443
+Şimdi bunun için bu programı segmentlerimize bakalım. Burada stack segment var. Stack segmentin arkadaşlar belirli bir alan.
+
+262
+00:53:44,403 --> 00:54:10,403
+Fonksiyon çağırmaları, işte geri dönüşler için ayırmamız gerekiyor. Bunun çift sayıda bir alan olması lazım. Data segment içerisinde adı digits olan, adı digits olan bir tane byte genişliğinde bir değişken tanımlıyoruz ve değeri de 0H. Yani C0. Az önce bulduğumuz değer. Ortak anotlu display'de 0 değerini yakabilmek için HB, HF...
+
+263
+00:54:10,880 --> 00:54:19,880
+G sırasında yani H'den A'ya kadar olan anlam sırasında vermemiz gereken datanın karşılığı C0'du. Onu bir değişken olarak burada tanımlamışız.
+
+264
+00:54:19,880 --> 00:54:33,804
+Kod segment içerisinde ne var? Şu kısım, şu kısım arkadaşlar tanımlamış olduğumuz data segmentin kullanılabilmesi için gerekli bir ayarlama. Bunu exotipi programlarda yapıyoruz.
+
+265
+00:54:33,811 --> 00:54:44,652
+Çünkü işletim sistemi veya herhangi bir kod bizim kodumuzu çağırdığında, programımızı çağırdığında, exit tipi programlarda data segment içerisinde başka bir takım bilgiler var.
+
+266
+00:54:45,132 --> 00:54:50,411
+Dolayısıyla benim programım için tanımlamış olduğum data segmenti kullanabilmek için bu iki satıra ihtiyacım var.
+
+267
+00:54:50,971 --> 00:54:55,971
+Bunun yaptığı işlem ne? Data isimli segment label'ını alıyor, AX'e atıyor.
+
+268
+00:54:56,431 --> 00:55:22,431
+Daha sonra AX'deki değeri de data segmenti atıyor. Bunu yaptığımız zaman veri aktarımlarında varsayılan data segment değerimizin bizim kullanmak istediğimiz segmentte eşitlenmesini sağlamış olduk. Şu iki satır bunu sağlıyor. Hatırlayacak olursanız segment yazmaçlarına başka yazmaçlardan değer atanabiliyordu ama immediate değer atanmıyordu. O yüzden dolayı bu işlemi bu iki satırla ancak gerçekleştirebildi.
+
+269
+00:55:24,052 --> 00:55:33,351
+Gelelim şimdi bir başka konumuza. Onu sildik herhalde. Evet, silmişiz. Bakın ne yapmamız gerekiyordu?
+
+270
+00:55:36,432 --> 00:55:48,351
+Port B, mod 0'da ve output olarak ayarlanacaktı. Bunu yapmamız lazım. Bunun için, şuna geliyorum.
+
+271
+00:56:00,211 --> 00:56:05,711
+Şuradaki kontrolörü de geldim. Bir kere mod 0'da kullanacağımız için bu vatandaşın
+
+272
+00:56:10,036 --> 00:56:17,036
+Bir kere mod 0'da kullanacağımız için, şunu da seçelim.
+
+273
+00:56:21,780 --> 00:56:26,780
+Bir kere mod file'inin aktif olması lazım. O yüzden bu bitin 1 olması lazım.
+
+274
+00:56:26,780 --> 00:56:36,780
+Grup A'yı ne şekilde kullanırsam kullanayım, hiç önemli değil. İster mod 1'de, ister mod 2'de, ister mod 0'da, hiç önemli değil.
+
+275
+00:56:36,780 --> 00:56:44,780
+Benzer şekilde port A'yı da önemli değil. Port G'nin yüksek anlamlı kısmı da önemli değil. Bizim için önemli olan grup B.
+
+276
+00:56:44,780 --> 00:56:48,780
+Burada grup B'nin mod 0'da kullanılması lazım.
+
+277
+00:56:52,755 --> 00:57:06,556
+Port B'nin output yönlü olarak kullanılması lazım. Port Y'de low kısmı bizim için önemli değil. Demek ki bizim yazmamız gereken 1xxxx 0 0 x değeri olacak.
+
+278
+00:57:06,556 --> 00:57:19,155
+x'ler içinde 0 değerini kabul edecek olursak, bizim göndermemiz gereken data değeri 80h olabilir. Tamam. 80h olabilir. Bu değeri nereye göndereceğiz? Bu değeri
+
+279
+00:57:19,476 --> 00:57:42,696
+64, pardon, bu değeri 66H adresindeki kontrol yazmacına göndereceğiz. Bunu kontrol yazmacına göndermemiz gerekiyor. Daha önce bu işleme ilişkin benzer bir uygulama yapmıştık. Bakın, onun için şu iki satırı gerçeklememiz yeterli. ALD 80 değerini oluşturduk.
+
+280
+00:57:43,552 --> 00:57:50,152
+Bu değerli değeri, port B'yi output ve mod 0 yapan diğerleri için don't keyere karşılık gelen bir durum.
+
+281
+00:57:50,152 --> 00:57:52,432
+Ve bunu 66 aşağı gönderdik.
+
+282
+00:57:52,432 --> 00:57:54,432
+Daha sonra ise arkadaşlar...
+
+283
+00:57:58,996 --> 00:58:25,996
+62H ve 64H. Bunlarda ne var? 62H ve 64H. 62H'da bizim port B'miz var. Biz port B'ye ffh değerini gönderdiğimiz zaman ne yapmış oluyoruz? Hepsine bir verdik. Demek ki ledleri söndürerek başladık. Bu anlama geliyor. Yani şu iki satır bu anlama geliyor. Bu iki satır...
+
+284
+00:58:26,708 --> 00:58:33,708
+Port C'ye FF göndermek ama Port C'ye bir şey bağlı değil. Sadece bunu bir örnek olarak siz adım adım çalışırken belki görmek istersiniz.
+
+285
+00:58:34,388 --> 00:58:42,328
+Sonrasında ise bakın AL'ye Digits isimli değişkeni atıyoruz. Digits isimli değişkende ne var? C0H değeri var.
+
+286
+00:58:42,768 --> 00:58:49,508
+Ve daha sonra da bunu out 62H yapıp AL'deki C0 değerini gönderiyoruz. Yani ne yaptık sistem olarak?
+
+287
+00:58:50,356 --> 00:59:12,936
+Data segmenti ayarladık kullanmak için. Daha sonra port B'yi mod 0'da output yaptık. Port B'yi deki 7 segment display'i söndürdük. Burası anlamlı değil, sildim şimdilik. Daha sonra da digitiz değişkeninin içeriğindeki değeri port B'ye gönderdik. Yani port B'de 0, 7 segment değerinin yanmasını sağladık.
+
+288
+00:59:13,199 --> 00:59:25,999
+Bu şekilde bir uygulama sonucu elde etmiş olduk. Bu dediğim gibi bir tane Seven Segment Display, orta kanotlu olarak nasıl sürüleceğine ilişkin bir örneği oluşturmuş oldu. Bununla ilgili sorunuz var mı arkadaşlar?
+
+289
+00:59:43,123 --> 00:59:47,623
+Bu kodu com tipi de yazabilirdik. Com tipi yazdığımızda da aynı şekilde kullanabilirdik.
+
+290
+00:59:47,623 --> 00:59:52,623
+Ama iki farklı örnek de elimizde bulunsun diye birini com birini exe olarak vermiş oldum.
+
+291
+00:59:56,115 --> 01:00:03,115
+Şimdi arkadaşlar, başka soru yoksa bir sonraki konuya geçiyorum. Arada soru olursa chat ekranına da bakıyorum, oradan sorabilirsiniz.
+
+292
+01:00:04,016 --> 01:00:12,296
+Şimdi asıl başka bir konumuz, aynı port ile 4 tane 7-segment display'i sürebilir miyiz? Sorumuz bu.
+
+293
+01:00:13,016 --> 01:00:19,115
+Şimdi bunun için 7-segment display'lerin 4 basamakla nasıl çalıştığını size ifade etmeye çalışayım.
+
+294
+01:00:19,115 --> 01:00:22,115
+Şimdi biz bu sistem çalıştığında, bakın şöyle çalıştıralım.
+
+295
+01:00:23,123 --> 01:00:30,803
+Hepsinde şu anda bir değerini görüyoruz. Aslında biraz yavaşlatsak, sistemi yavaşlatsak şunu göreceğiz.
+
+296
+01:00:32,603 --> 01:00:39,503
+Öncelikli olarak birinci seven segment display aktif edilecek, diğerleri disable edilecek.
+
+297
+01:00:39,763 --> 01:00:47,963
+Birinci seven segment display de yakmak istediğimiz data değeri port B'den gönderilecek ve burada değer belirli bir süre boyunca yakılacak.
+
+298
+01:00:47,963 --> 01:00:50,263
+Bekleyeceğim. Daha sonra
+
+299
+01:00:50,835 --> 01:01:01,835
+Bütün displayler kapatılacak. Sadece ikinci display aktif edilecek. Diğerleri kapalı kalacak. Bu sefer ikinci display de göndermek istediğimiz değer aktarılacak.
+
+300
+01:01:01,835 --> 01:01:10,835
+Bir süre yanık kaldı. Daha sonra bütün seven segment displayleri yine kapatıyoruz. Sadece üçüncüyü aktif ediyoruz.
+
+301
+01:01:10,835 --> 01:01:16,835
+Data uçlarından sadece 3'te yakmak istediğimiz değeri gönderiyoruz. Bu belirli bir süre yanıyor.
+
+302
+01:01:17,523 --> 01:01:26,923
+Daha sonra bütün displayleri kapatıyoruz. Daha sonra 4. display'i seçiyoruz. Data uçlarından istediğimiz 4. basamakta yakmak istediğimiz değeri gönderiyoruz.
+
+303
+01:01:26,923 --> 01:01:35,523
+Belirli bir süre bekliyoruz ve daha sonra tekrar 1. basamağa dönüyoruz. Yani gerçekte çok yavaş bu sistemi çalıştırdığımızda şöyle olacak.
+
+304
+01:01:35,523 --> 01:01:40,523
+Mesela burada 1, 2, 3, 4 değerini yakmak istiyorsak karşılaştığımız sonuç şu olacak.
+
+305
+01:01:43,476 --> 01:02:01,076
+1, 2, 3, 4 değerini yakmak istiyorsak, önce burada bir değeri yanacak, diğerleri sönük. Biraz bekledik, kapandı. Daha sonra ikinciyi seçtik, burada iki değerini yaktık. Yapmak istediğimiz değer burada 1, 2, 3, 4'ü görmek.
+
+306
+01:02:11,987 --> 01:02:30,347
+Söndürdük. Daha sonra 4'ü yaktık bu basamakta. Biraz bekledik ve söndürdük. Yani gerçekte çok yavaş sistemi yürüttüğümüzde sadece bir tane display'de değer varken bunu yaparak bu sistemi çalışır hale getirebiliyoruz bu mantık çerçevesinde.
+
+307
+01:02:30,675 --> 01:02:47,356
+Ve bu saniyede basamak geçişi saniyede 25 kereden daha fazla olursa, yani bunun yenileme frekansı 25 Hz'den daha yüksek olursa, bizim gözümüz buradaki yanan ışıkları tamamlayarak sanki hepsi aynı anda yanıyormuş gibi bir etki oluşturuyor.
+
+308
+01:02:48,956 --> 01:02:53,675
+Burada başka bir alternatif de söz konusu olabilirdi tabii, 4 tane 7 segmenti sürmek için.
+
+309
+01:02:53,940 --> 01:03:12,179
+Her bir 7 segmentin data uçlarını farklı bir porta bağlardık. Mesela birinci basamağı port A'ya, ikinci basamağı port B'ye, üçüncü basamağı port C'ye, dördüncü basamağı port D'ye bağlayıp bunların her birinin ortak uçlarını da sabit bir şekilde sürerek sonuç elde edebilirdik.
+
+310
+01:03:12,179 --> 01:03:18,179
+Ama orada bakın ne oldu? Her bir 7 segment için 8 tane data ucuna ihtiyacımız var. Dolayısıyla 4 basamak...
+
+311
+01:03:18,900 --> 01:03:35,900
+4x4, 16 farklı data ucuna ihtiyacımız ortaya çıkıyor. Fakat burada data uçlarını çoğullamalı bir şekilde kullandığımız vakit 8 tane data ucu, 4 tane de 7 segment display enable ucu ile toplam, kaç tane yaptı burada?
+
+312
+01:03:35,900 --> 01:03:43,856
+12 tane uçla bunu sağlamış oluyoruz. Burada ölçeklenebilir bir yapı var. Örneğin 100 tane basamak olsaydı ne olacaktı?
+
+313
+01:03:43,856 --> 01:03:59,356
+100 tane basamak olmuş olsaydı, 108 tane uç ile bunların hepsini sürebilecektik. Ama her bir basamağı farklı bir porttan sürmek isteseydik, 100 kere 8, 800 tane data ucuna ihtiyacımız oluyordu. Dolayısıyla bu...
+
+314
+01:03:59,583 --> 01:04:25,703
+Az sayıdaki ucu efektif bir şekilde kullanarak bir tarama mantığı oluşturmak olarak ortaya çıkan bir durum. Tamam, mantığımız bu. Şimdi şuna gelelim. Buradaki seven segment displaylerde aktif, pardon, ortak anotlu seven segment displayler. Mesela ben birinci seven segment display'i aktif yapmak istiyorsam, bunun için bu ortak uca ne vermem gerekiyor? Ne dersiniz?
+
+315
+01:04:26,483 --> 01:04:29,983
+Örneğin şurası, şu uç, birazcık büyütelim.
+
+316
+01:04:40,340 --> 01:04:50,480
+Şuradaki uç ortak anot ucu. Bu seven segment display'in ortak anot ucu. Ben bunu disable etmek istersem, kapatmak istersem buraya hangi değeri vermem lazım?
+
+317
+01:04:53,907 --> 01:05:04,148
+Evet, logic 0 değerini verdiğim zaman, çünkü bu anot ucu olduğu için, yani artı tarafı olduğu için ben buraya logic 0 verirsem bu display disable olur.
+
+318
+01:05:04,148 --> 01:05:13,668
+Açmak istiyorsam ne yapacağım? Açmak istiyorsam ortak anot ucuna logic 1 vereceğim, yakmak istediğim her segment içinde 0 değeri vereceğim.
+
+319
+01:05:13,668 --> 01:05:20,387
+Mesela A ve B'ye 0 vermiş olayım. Şu iki segment yanıyor olacak.
+
+320
+01:05:20,755 --> 01:05:29,956
+Demek ki benim buradaki algoritmam nasıl olacak? Sırasıyla display 1'i aktif et, bütün diğer display'ler kapalı olsun.
+
+321
+01:05:29,956 --> 01:05:43,956
+Birinci display için datayı gönder, biraz bekle, bütün display'leri söndür, bir sonraki basamağa geç, onu aktif et, datayı gönder, bekle. Bu şekilde döngü şeklinde bunu yapmamız gerekiyor.
+
+322
+01:05:43,956 --> 01:05:47,956
+Benim burada vermiş olduğum örnek biraz daha basit bir örnek.
+
+323
+01:05:48,755 --> 01:05:58,755
+Önce örneği inceleyelim. Bunun ne yapması gerektiğini gördük ama siz söyleyebilir misiniz bakalım.
+
+324
+01:05:58,755 --> 01:06:14,755
+Bak şöyle gelelim. Yine bir egze tipi program mantığımız var. Burada bakın hangi portları kullanıyoruz. Port B'yi kullanıyoruz ve Port C'yi kullanıyoruz. Sizce bu portların yönleri ne olmalı?
+
+325
+01:06:17,556 --> 01:06:29,556
+Port B'den 7 segment displaylerin datasını gönderiyorum. Port C'den de bunları disable, enable eden işaretleri gönderiyorum. Bu durumda Port B'nin ve Port C'nin yönleri ne olmalı sizce?
+
+326
+01:06:31,235 --> 01:06:32,835
+Ve modu ne olmalı?
+
+327
+01:06:35,635 --> 01:06:43,795
+İkisi de output olmalı, evet. İkisi de Port B, mod 0, output.
+
+328
+01:06:44,019 --> 01:06:52,019
+Benzer şekilde port c'de mod 0 output olmalı. Şimdi bütün şu şeyi hatırlayalım.
+
+329
+01:06:54,019 --> 01:07:05,019
+Şuradaki config word'ı hatırlayalım. Ben burada eğer ki şuna 1, diğerlerinin hepsine 0 yazarsam, bu neye karşılık geliyor arkadaşlar?
+
+330
+01:07:11,347 --> 01:07:29,407
+80H neye karşılık geliyor? Grup B ve grup A mod 0'da, port C'nin low'u output, port B output, port C'nin upper'u output, port A output.
+
+331
+01:07:30,027 --> 01:07:37,327
+Demek ki bütün portları output yapmak istiyorsam 80H yazmam yeterli. Bunu buradan görmüş oluyoruz.
+
+332
+01:07:37,811 --> 01:07:41,132
+Buradaki kodada geldiğimizde bakın yapılan işlem o.
+
+333
+01:07:47,572 --> 01:07:59,972
+Yapılan işlem o. Yine exit tipi program olduğu için stack segment tanımladım, data segment tanımladım, kod segment tanımladım. Daha sonrasında da etiketle koda nereden girileceğini belirttim. Bu da start etiketiydi.
+
+334
+01:07:59,972 --> 01:08:08,972
+Şuradaki iki satır tanımlamış olduğum data segmentin bu program çalışırken burada tanımladığım data segmenti kullanmasını sağlamış olduk.
+
+335
+01:08:15,668 --> 01:08:27,907
+80H değerini gönderdik. Ne demek bu? 8255'in config word'üne 80H değerini yazdık. 80H neye karşılık geliyordu config word'te? Bütün portlar output, hepsi de mod 0'da buna karşılık geliyor.
+
+336
+01:08:28,467 --> 01:08:42,148
+Daha sonra bakın, port B'ye ff değerini gönderdik. Bunun anlamı neydi? Port B'ye ff değerini göndermek. Bütün displaylerin datalarını söndür. Bütün segmentleri söndür anlamına geliyor.
+
+337
+01:08:42,148 --> 01:08:52,587
+Şurada port G'den ff göndermek ne anlama geliyor? Port G'den ff göndermek. Port G'den ff göndermektik. Koda gelelim. Bakın burada...
+
+338
+01:08:52,819 --> 01:09:00,059
+Lojik bir verdiğimiz zaman bütün displayler enable edilmiş. Bütün displayler enable ama bütün segmentler sönük.
+
+339
+01:09:00,059 --> 01:09:08,779
+Demek ki, şuradaki 4 satırın yapmış olduğu işlem, bütün displayleri enable ediyor ve bütün displaylerin segmentlerini söndürüyor.
+
+340
+01:09:08,779 --> 01:09:11,579
+Son olarak, şöyle bir işlem var.
+
+341
+01:09:11,859 --> 01:09:28,260
+Digits 1, yani Digits dizimizin, şurada data segmente tanımlamış olduğumuz Digits dizisinin bir numaralı elemanını alıp bunu AL'ye atıyor ve daha sonra da bu değeri port B'den dışarı gönderiyor. Bu işlem sonucunda ne görmeyi bekliyorsunuz?
+
+342
+01:09:31,079 --> 01:09:32,500
+Digits de şu tabii.
+
+343
+01:09:32,992 --> 01:09:58,592
+Birer byte dizisi olarak tanımlanmış. Ortak anotlu seven segment display'de sıfır görmek için, bir görmek için, iki görmek için, üç, dört, beş, altı, yedi, sekiz, dokuz basamaklarını görmek için, A, B, C, D, E, F, G, sağdan sola doğru bunları sıraladığımızdaki anlam sırasında göndermemiz gereken dataları belirtiyor. Bakın buradaki data sırasında korumuşuz.
+
+344
+01:10:00,000 --> 01:10:05,319
+Display'in A basamağı, port B0'a bağlı, H basamağı, port B7'ye bağlı.
+
+345
+01:10:06,039 --> 01:10:09,239
+Dolayısıyla bu kodu çalıştırdığımızda ne görmeyi bekliyorsunuz?
+
+346
+01:10:11,199 --> 01:10:12,799
+Hepsinde 1 görüyoruz, değil mi?
+
+347
+01:10:13,680 --> 01:10:15,779
+Az önce anlattığımız mantıktan farklı olarak.
+
+348
+01:10:16,319 --> 01:10:21,079
+Burada hepsi aktif olduğu için, datadan ne gönderirsen, hepsinde de o değer görünür.
+
+349
+01:10:21,079 --> 01:10:23,020
+Mesela 9 değeri için güncelleyelim.
+
+350
+01:10:25,268 --> 01:10:32,127
+9 basamağına bakalım. 9 yok herhalde. 9'da olması lazım.
+
+351
+01:10:33,140 --> 01:10:53,300
+Hepsinde, yani 9'u bu şekilde tanımlamışım. Hepsinde bu sefer 9 değerini gördük. Çünkü bütün displayler aktif. Port G'nin bütün uçlarına bakın kırmızılar o anlama geliyor. Port G'nin bütün uçlarından logic 1 değeri çıkıyor. Bütün displayler aktif. Hepsi aynı anda aktif. Hepsinin datasına da seven segment displaylerde 9 değerini yakacak data gönderilmiş.
+
+352
+01:11:00,319 --> 01:11:13,639
+Ve A segmentine bağlı port ucunda 0, logic 0 değeri var. Yakmak istediklerimize logic 0, söndürmek istediklerimize logic 1 göndererek orta kanotlu 4 tane display'i bu şekilde eş anlı olarak sürmüş olduk.
+
+353
+01:11:13,935 --> 01:11:38,935
+Tekrar edeyim, eğer ki ben buralarda 1-2-3-4 gibi bir değer görmek isteseydim, bunu da size zorunlu olmayan bir ev ödevi olarak vermiş olayım. Burada 1-2-3-4 yakmak isteseydim, izleyeceğim algoritma şu olacaktı. Birinci display'i aktif et, 1'e karşılık datayı gönder, diğerleri aktif olmasın. Biraz bekle. Daha sonra sadece ikinci display'i aktif et, oraya iki...
+
+354
+01:11:39,220 --> 01:11:48,020
+1-2-3-4 göndereceğim ya, 2 basamağına karşılık datayı gönder, biraz bekle. Sonra 3. basamağı aktif et, 3 değerini gönder, biraz bekle.
+
+355
+01:11:48,020 --> 01:11:57,220
+4. basamağı aktif et, 4 değerini gönder, biraz bekle. Sonra tekrar 1. basamağa dön. Böyle bir döngü içerisinde kontrolü yapmanız lazımdı.
+
+356
+01:11:57,220 --> 01:12:04,220
+Dolayısıyla size zorunlu olmayan bir ev ödevi olarak burada 1-2-3-4 basamaklarını yakacak uygulamayı yapmanızı...
+
+357
+01:12:04,787 --> 01:12:11,747
+Tavsiye ediyorum. Burayla ilgili bir sorunuz var mı? Yok ise bir sonraki örneğe geçeceğim çünkü.
+
+358
+01:12:34,899 --> 01:12:49,659
+Evet, soru olmadığı için geçiyorum. Şimdi arkadaşlar, burada da tıpkı 7-segment display'de ortak bir takım uçları bütün display'ler için data değeri olarak kullanarak biraz pinlerden tasarruf etmiştik hatırlayacağınız üzere.
+
+359
+01:12:49,659 --> 01:13:01,459
+Burada da benzer bir mantık var. Burada bir matriz formatında tuşları yerleştirerek, satır ve sütun üzerinden sürülüp okunarak bir keypad mantığı oluşturuyoruz.
+
+360
+01:13:02,899 --> 01:13:12,899
+4 satır, 3 tane sütun var. Toplamda 12 tane düğme var. Bu 12 tane düğme için bizim arkadaşlar normalde 12 tane data ucu kullanmamız mümkün olabilir.
+
+361
+01:13:12,899 --> 01:13:27,899
+Ama burada matris yapısında bir tuş tarama mantığı gerçekleyerek 3 tane sütun için 3 tane pin, 4 tane satır için de 4 tane pin, toplamda 7 tane pin kullanarak
+
+362
+01:13:28,399 --> 01:13:34,799
+3x mesela burada 4x3'lük bir tuş tarama mantığı elde etmiş olabiliyoruz.
+
+363
+01:13:34,799 --> 01:13:36,599
+Bunu ölçeklemek mümkün.
+
+364
+01:13:36,599 --> 01:13:50,999
+Mesela 10x10 matriz formatında yerleştirilmiş bir keypad için toplamda 20 tane data ucu yeterliyken bunları tek tek sürmeye çalışsak 100 adet pin'e ihtiyacımız vardı, port ucuna ihtiyacımız vardı.
+
+365
+01:13:50,999 --> 01:13:53,999
+Dolayısıyla mantık aynı şekilde ortaya çıkıyor.
+
+366
+01:13:54,644 --> 01:14:04,644
+Algoritmik olarak işi biraz zorlaştırıp donanımsal olarak uçlardaki bağlantıları azaltmaya çalıştık. Çünkü yeteri kadar uç yok buradan yola çıkarak bunu yapmış olduk.
+
+367
+01:14:04,644 --> 01:14:10,644
+Şimdi burada temel olarak şöyle bir mantığımız olacak arkadaşlar.
+
+368
+01:14:11,188 --> 01:14:23,188
+Tuşlar nasıl yerleştirilmiş onu söyleyeyim. Ben herhangi bir tuşa bastığımda, ilgili satırdaki değer ile ilgili satır pini ile sütun pinini birbirine kısa devre yapıyor.
+
+369
+01:14:23,188 --> 01:14:32,188
+Burada şu ön koşulumuz var, aynı anda birden fazla tuşa basmıyoruz. Eğer basıyorsak buradaki donanımın biraz farklılaşması lazım.
+
+370
+01:14:32,188 --> 01:14:39,152
+Bir takım diyotlarla falan korunması lazım devrenin ama şu aşamada aynı anda iki tuşa basmadığımızı varsayacak olursak.
+
+371
+01:14:39,152 --> 01:14:47,152
+Herhangi bir tuşa bastığımızda matriz yapısında ilgili satır pini ile sütün pinini birbirine kısa devre yapıyor. Mantık bu.
+
+372
+01:14:47,152 --> 01:15:00,152
+Burada temel kural olarak yine gerekliyse pull up dirençler veya pull down dirençler ile satırları yukarı veya aşağı çekebiliriz.
+
+373
+01:15:01,460 --> 01:15:16,699
+satırlarımızı örneğin pull-up dirençlerle yukarı çekmişsek, logic 1'e çekmişsek, bu şu anlama geliyor. Satır değerleri, 8255'in port uçlarına bağlı olacağı için, herhangi bir tuşa basmadığımda burada logic 1 göreceğim.
+
+374
+01:15:16,699 --> 01:15:27,380
+O zaman sonuç şu, sütundan sürülen, satırdan pull-up direnç ile okunan tuş takımı için herhangi bir tuşa basmadığımda, 8255 uçlarında logic 1 görürüm.
+
+375
+01:15:27,699 --> 01:15:34,699
+Eğer ki bunu sütundan sürülen ve satırdan pull down dirençlerle okunan tuş takımı için yapıyorsam,
+
+376
+01:15:34,699 --> 01:15:44,699
+herhangi bir tuşa basmadığımda satırlar 8255 port pinlerine bağlı olduğundan dolayı, pull down dirençler dolayısıyla herhangi bir tuşa basmadığımda,
+
+377
+01:15:44,699 --> 01:15:47,699
+8255 uçlarında 0 görürüm.
+
+378
+01:15:47,699 --> 01:15:51,699
+Peki burada herhangi bir tuşa bastığımda bunu nasıl anlayacağım? Şöyle bakalım.
+
+379
+01:15:51,699 --> 01:15:53,699
+Şimdi burada arkadaşlar bakın.
+
+380
+01:15:54,931 --> 01:16:05,531
+Herhangi bir tuşa basmadığımızda, satırlarda lojik bir değeri görüyoruz. Çünkü pull up dirençlerle lojik 1'e çekilmiş.
+
+381
+01:16:06,260 --> 01:16:23,540
+Burada sütunların hepsini logic 1 ile sürersem, yani buraya logic 1 değeri oluşturursam, bunun basılan tuşu anlamakta hiçbir faydası olmayacak. Çünkü tuşa bastığımda, örneğin logic 1 satırıyla pull up direnci kısa devre yaptı. Yani burada yine logic 1 görürüm.
+
+382
+01:16:23,540 --> 01:16:30,260
+Demek ki bu formasyonda, bu mantıkta sütunları logic 1 ile sürmek anlamlı değil.
+
+383
+01:16:30,868 --> 01:16:39,268
+Peki, hepsini lojik sıfırla süreyim ne olacak? Bakın, herhangi bir tuşa bastığımda, ilgili satır sıfır değerini alıyor.
+
+384
+01:16:40,268 --> 01:16:53,467
+Herhangi bir satıra bastığımda, demek ki hepsini lojik sıfırla sürersem, herhangi bir tuşa bastığımda, hangi satırdaki tuşa basmışsam, o satırdaki tuş da satırdan sıfır değeri üretiliyor. Gördüğünüz gibi.
+
+385
+01:16:53,615 --> 01:17:05,615
+Ama bunun bir sıkıntısı var. Ben aynı satırdaki tuşları birbirinden ayırt edemiyorum. Yani 4'e de bassam bu satır 0 oluyor, 5'e de bassam bu satır 0 oluyor, 6'ya da bassam bu satır 0 oluyor.
+
+386
+01:17:05,615 --> 01:17:14,615
+O zaman ne yapacağım? Demek ki sütunları sırasıyla süreceğim. Önce birinci sütunu süreceğim, 0 ile daha sonra ikinci sütunu 0 yapacağım.
+
+387
+01:17:21,171 --> 01:17:35,171
+Tek bir sütun aktif olacak şekilde bu taramayı yapacağım. Hasbelkader, benim o anda bastığım tuşun sütunu aktif ise, ben ilgili satırda 0 değerini göreceğim. Mesela ben 5 tuşuna basıyorum ama...
+
+388
+01:17:35,663 --> 01:17:45,144
+Belirli bir süre basıyorum ve aynı zamanda buradaki tarama da o kadar hızlı gerçekleşiyor ki saniyede binlerce, bin mertebesindeki frekanslarda gerçekleşiyor.
+
+389
+01:17:45,144 --> 01:17:54,104
+Dolayısıyla benim bastığım tuş basılıyken mutlaka ve mutlaka varsayımsal olarak bu sütun, aktif sütun bir şekilde buna denk gelecek.
+
+390
+01:17:54,104 --> 01:17:58,823
+Burası sürekli dönüyor ya, sıfır burada dönüyor ya, benim bastığım tuşa bir şekilde denk gelecek.
+
+391
+01:17:58,823 --> 01:18:01,823
+Ben bu anı yakaladığımda artık diyebilirim ki
+
+392
+01:18:02,547 --> 01:18:12,948
+Benim bastığım tuş mikroişlemci açısından değerlendirilebilir. Ben ikinci sütunu aktif yaptım ve 1, 2, ikinci satırdan 0 değeri gördüm.
+
+393
+01:18:12,948 --> 01:18:20,948
+Demek ki benim matrisimin 2'ye 2 numaralı gözünde bir değer var. O da 5 sayısı zaten. Dolayısıyla tuşu böyle anlıyorum.
+
+394
+01:18:20,948 --> 01:18:27,347
+Mesela basmış olduğum tuş şu yıldız tuşu olsun. Ben basılı tutuyorum.
+
+395
+01:18:27,456 --> 01:18:33,935
+Ama o sırada daha tuş tarama üçüncü sütundaydı. Ben hala basılı tutuyorum. O kadar yüksek frekansta gerçekleşiyor ki.
+
+396
+01:18:33,935 --> 01:18:47,296
+Ben daha parmağımı çekmeden aktif sütun birinci sütun olacak ve benim bastığım tuş, ilgili sütunla satırı birleştirdiği için dördüncü satırda sıfır değerini göreceğim.
+
+397
+01:18:47,296 --> 01:18:55,456
+Bu ne demek? Benim matrisimin dördüncü satırının birinci sütunundaki tuşa basıldı. Bu da yıldız tuşuna karşılık geliyor.
+
+398
+01:18:55,456 --> 01:19:09,456
+Demek ki, pull up dirençlerle satırdan, pull up dirençlerle sürülen ve okunan bir 4x4 tuş tarama takımı için sütunları aktif etmek için o sütuna 0 vermem gerekiyormuş.
+
+399
+01:19:09,456 --> 01:19:17,456
+Bütün sütunlara 0 verirsem, hangi satırdaki tuşa bastığımı anlayamıyorum. Dolayısıyla her seferinde tek bir sütunu aktif etmem gerekiyor.
+
+400
+01:19:18,100 --> 01:19:25,600
+Aynı işlemi pull down dirençlerle, satırdan pull down dirençlerle okunan bir 4x3 tuş tarama takımı için yapalım.
+
+401
+01:19:25,600 --> 01:19:34,600
+Burada da sütunlarımızı 0 olarak sürersek, herhangi bir tuşa bastığımda değişim göremiyorum. Çünkü 0 ile 0 kısa devre yapıyor, sonuç değişmiyor.
+
+402
+01:19:34,600 --> 01:19:40,588
+Hepsini 1 ile sürersem ne olur? Basmış olduğum tuşun satırına karşılık...
+
+403
+01:19:40,787 --> 01:19:46,427
+İlgili satırda bir değerini okumaya başlıyorum. Bastığım tuşa karşılık ilgili satırda bir değeri oluşuyor.
+
+404
+01:19:47,188 --> 01:19:55,627
+Ama bakın 4, 5 ve 6 aynı satırdaki tuşlara bastığımda bunları ayırt edemiyorum. Bunları ayırt edebilmek için ne yapmamız lazım?
+
+405
+01:20:00,659 --> 01:20:16,159
+Bunları ayırt edebilmek için sadece tek bir sütunu aktif etmemiz lazım. Satırdan, pulldan, dirençlerle okunan 4x3 tuş tarama takımı için arkadaşlar aktif etmek ilgili uca bir vermekle olur. Mesela ben 8 tuşuna basmış olayım.
+
+406
+01:20:16,340 --> 01:20:30,340
+Ve sırasıyla aktif olan sütunları değiştirdiğimi varsayayım. Önce birinci sütunu taradım. Herhangi bir değişiklik olmadı. Daha sonra ikinci sütunu aktif ettim. Hasbelkader benim basmış olduğum tuşun sütununa denk geldi aktif sütun.
+
+407
+01:20:30,340 --> 01:20:44,340
+Ve dolayısıyla üçüncü satır, ikinci sütundaki tuşa bastığımı anladım bu sayede. Ve bu da üçüncü sütun, ikinci satır. Bu yerleşimi önceden biliyorum tabii ki. Tuşların nerelere yerleştirildiğini biliyorum.
+
+408
+01:20:44,340 --> 01:20:54,740
+Bu da 8 numaralı tuşa denk geliyor. Dolayısıyla burada da aktif olan sütunu birle set ediyorum, bir vererek ayarlıyorum ve bu aktif ettiğim sütunu sürekli olarak döndürüyorum.
+
+409
+01:20:54,740 --> 01:21:08,860
+Hasbelkader benim basmış olduğum tuşun sütunu aktif olmuşsa benim basmış olduğum tuşun satırında bir değeri görüyorum. Bu şekilde de basılan tuşun hangisi olduğunu anlamış oluyoruz arkadaşlar.
+
+410
+01:21:09,300 --> 01:21:20,819
+Bu örnek 4x4, 4x3 neyse tuş tarama takımının çalışma mantığını belirlemiş olur. Burada dikkat edeceğimiz nokta ne var öyleyse?
+
+411
+01:21:20,819 --> 01:21:27,619
+Ben burada satırlardan okuyorum, sütunlardan sürüyorum. Sürmek demek ne demek? Burada değer oluşturuyorum.
+
+412
+01:21:27,796 --> 01:21:46,796
+O zaman sürdüğüm, bunu 8255'e bağlayacağım ya, aktif ettiğim sürdüğüm sütunlar 8255 açısından çıkış olmalı, okuduğum satırlar ise 8255 açısından input olmalı. Bunu da ortaya çıkartmış olduk. Bununla ilgili sorumuz var mı?
+
+413
+01:21:55,604 --> 01:22:16,304
+Peki. Şimdi buradaki sorumuza gelelim. Bu sorumuzda 60H adresinden itibaren ardışık çift adreslere yerleştirilmiş bir 8255'imiz var. Bu 8255'e port C'sine bir tuş tarama takımının satırları bağlı.
+
+414
+01:22:19,444 --> 01:22:42,944
+Sütunlar ise port ağının düşük anlamlı 3 biti ile sürülüyor. Burada şuna dikkat edin arkadaşlar, satır ve sütun kavramı aslında pull up veya pull down dirençin nereye bağlı olduğu ile alakalı. Yan çevirseydik pull up dirençler sanki sütunlara bağlı gibi olacaktı. Burada dikkat etmemiz gereken pull up dirençler hangi tarafa bağlı ise onlar bizim için giriş olacak.
+
+415
+01:22:43,091 --> 01:22:51,591
+Geri kalan taraf ise çıkış, sütun olacak. Bu şekilde tanımlayabiliriz. Giriş tarafı pull-up direnç ile alakalı, ilişkili olarak ortaya çıkıyor.
+
+416
+01:22:51,591 --> 01:23:03,591
+Dolayısıyla burada port A'da sütunlar sürülüyor, port C ile satırlar okunuyor. Buna göre port A ve port C ayarlarımızı nasıl yapmalıyız?
+
+417
+01:23:03,591 --> 01:23:07,591
+Şimdi burada ne demiştik arkadaşlar hatırlayacak olursanız.
+
+418
+01:23:08,564 --> 01:23:31,444
+Stunlardan sürülüyor. Yani ben buradan değer çıkıyorum, buradan da değer okuyorum. O zaman, port A'nın mod 0'da output olması gerekiyor. Port C'nin ise mod 0'da, hatta port C'nin low kısmı yeterli benim için. Port C'nin low kısmı da mod 0'da input olmalı.
+
+419
+01:23:40,467 --> 01:23:44,748
+Bu bilgi çerçevesinde burada vermemiz gereken değerler neymiş onları belirleyelim.
+
+420
+01:24:12,083 --> 01:24:13,515
+Ne başlıyor.
+
+421
+01:24:22,355 --> 01:24:26,755
+Şimdi bu durum için bakın, port A'nın mod 0'da output olması lazım.
+
+422
+01:24:29,155 --> 01:24:35,555
+O zaman ne yapmak lazım? Burada bir kere mod ayarı yapacağımız için D7'nin 1 olması lazım.
+
+423
+01:24:35,956 --> 01:24:42,155
+Port A, grup A'dan dolayı mod 0'da kullanılması gerekiyor. Bunların 0 olarak set edilmesi lazım.
+
+424
+01:24:42,655 --> 01:24:46,755
+Port A'nın output olması için D4'ün 0 olması lazım.
+
+425
+01:24:47,028 --> 01:24:52,028
+Port G'nin upper kısmıyla ilgilenmiyoruz. Don't care, ne olursa olsun.
+
+426
+01:24:52,028 --> 01:25:00,028
+Grup B'yi mod 0'da kullanmamız lazım. Çünkü Port G'nin low kısmını input yapacaktık. O yüzden burası da 0.
+
+427
+01:25:00,028 --> 01:25:06,028
+Port B bizim için don't care. Bir de Port G'nin low kısmının input olması lazım. Bu da 1.
+
+428
+01:25:06,028 --> 01:25:11,028
+X'leri 0 olarak düşünecek olursak bu da 81H'a denk gelir değil mi?
+
+429
+01:25:11,028 --> 01:25:12,908
+Bu da 1'di.
+
+430
+01:25:13,652 --> 01:25:27,051
+81H'a denk gelecek. Demek ki bu değeri 66H port adresine göndermemiz lazım. Bunu 66H port adresine göndermemiz gerekiyor. İlk yapacağımız işlem buymuş demek ki.
+
+431
+01:25:31,764 --> 01:25:52,923
+Gelelim. Kod kısmına bakalım. Kod kısmında yine bu bir COM tipi program olarak yazılmış. COM tipi programda burada 66H adresine 81H datasını gönderdik. Yani port A output, port C'nin low kısmı input olarak ayarlandı.
+
+432
+01:25:53,555 --> 01:26:04,555
+Daha sonrasında sırasıyla her bir sütunu tek tek aktif etmemiz lazım. Bunu aktif edebilmek için, birinci sütunu aktif edebilmek için, pull up dirençlerle sürüldüğü için nasıl aktif ediyorduk?
+
+433
+01:26:04,555 --> 01:26:12,555
+Herhangi bir sütunu lojik 0 yaparsak aktif oluyordu değil mi? Dolayısıyla ilk yapacağımız işlem şu olması lazım.
+
+434
+01:26:20,020 --> 01:26:25,520
+Satırları okumak. Bu değer kaça karşılık geliyor mesela port A'ya göndereceğimiz değer?
+
+435
+01:26:25,520 --> 01:26:32,159
+İşte yüksek anlamda 4 bitinde 0 versek 3'e karşılık gelir değil mi? 3'e karşılık gelir.
+
+436
+01:26:44,916 --> 01:26:48,595
+Burada FD değerini göndermişiz. FD değerinin anlamı ne?
+
+437
+01:26:54,579 --> 01:27:01,579
+Şuradan itibaren aktif ediyoruz herhalde. Evet. Yani sütun 3'ten itibaren aktif ediyor olabilir. O zaman düşüneyim.
+
+438
+01:27:08,340 --> 01:27:10,940
+FD ile ilgili bir çalıştırıp görelim bakalım.
+
+439
+01:27:13,240 --> 01:27:15,740
+Şimdi şuraya bir breakpoint koyayım.
+
+440
+01:27:19,123 --> 01:27:40,123
+Şimdi kod akışına önce bir bakalım sonra breakpoint ile inceleyeceğim. Şurada mod ayarlarını yaptık. Daha sonra burada herhangi bir tuşa basılıp basılmadığını anlıyoruz. Bu örnekte böyle. Satır ve sütun aktivizasyonuyla ilgili kısmı yine size zorunlu olmayan bir ödev olarak bırakmış olacağım.
+
+441
+01:27:46,612 --> 01:27:55,511
+Yazılı olması gereken basamaklar ne olacak? Hepsinin sıfırla sürütmesi de o da mı olmadı? Bir saniye hemen kontrol edelim kodu.
+
+442
+01:28:08,020 --> 01:28:12,900
+60H'tan FD değerimizi gönderelim. FD değeri neye karşılık geliyor?
+
+443
+01:28:17,587 --> 01:28:19,587
+Bunlarda 1, 1, 1, 1 var.
+
+444
+01:28:22,931 --> 01:28:36,771
+D değeri de C, D'ye karşılık geliyor. Heh, tamam şimdi oldu. Şurada 1 var, burada 0 var, burada 1 var. Demek ki biz sadece şu sütundaki değerleri tarıyoruz.
+
+445
+01:28:37,140 --> 01:29:04,360
+Bu örnek tam komplet bir örnek değil. Dediğim gibi az önce seven segmentlerden 4 tanesini sürerken yapmış olduğumuz örneğe benzer bir durum. Sadece bu sütunu tarıyor. Bu sütunda herhangi bir tuşa basılıp basılmadığı ona bakıyor. Full ölçekli olarak bunu kullanmak istersek sırasıyla her bir sütunu tek tek aktif edip satırları okumamız gerekecek. Şimdi burada ikinci sütunu aktif yaptık ve burada Portier'den bir okuma işlemi yapacağız.
+
+446
+01:29:05,140 --> 01:29:08,740
+Okuma işlemi in al, 64H ile yapılabilir değil mi?
+
+447
+01:29:09,560 --> 01:29:16,940
+İn al, 64H ile yapılabilir. Burada değeri okuduk. Almış olduğumuz değeri 2H ile karşılaştırıyoruz.
+
+448
+01:29:16,940 --> 01:29:24,840
+Şimdi 2H ile karşılaştırdığımız vakit aslında bizim beklediğimiz değer neymiş onu görelim.
+
+449
+01:29:25,539 --> 01:29:32,660
+2H olabilmesi için şunun 1, bunun 0, bunun 0, bunun 0 olması lazım değil mi?
+
+450
+01:29:33,235 --> 01:29:39,636
+2H ile karşılaştırdığımız vakit böyle bir sonuç elde edebilmek için hemen şuradan da kontrol yapalım.
+
+451
+01:29:41,936 --> 01:29:44,235
+2H aramak demek bu demek.
+
+452
+01:29:56,659 --> 01:30:07,139
+2H aramak demek bu demek. Demek ki aradığımız tuş eğer ki 5 numaralı tuşşa basılmamışsa burada bir değer okumuş oluyoruz.
+
+453
+01:30:07,720 --> 01:30:16,880
+Bizim aradığımız tuşlar 2, 8 ve 0 numaralı tuşlara basılmışsa burada farklı bir değer oluşmuş olacak. Biraz terstem işliyor. Çalıştırarak görelim.
+
+454
+01:30:19,399 --> 01:30:24,079
+Şurada tuş var satırına geldiğimizde arkadaşlar, mesela bunu debug ile başlatalım.
+
+455
+01:30:25,140 --> 01:30:45,939
+Tuş var satırına geldiğimizde, zannediyoruz, ikinci sütun haricindeki herhangi bir şeyi taramıyor. Sadece ikinci sütunu tarıyor. İkinci sütunda da 2 değil, 8 değil, 0 değil, sadece 5 numaralı tuşa basıldığı durumu anlıyor. Burada karşılaştırmamız ne?
+
+456
+01:30:46,323 --> 01:31:07,523
+Sadece 2 numaralı tuşa basılıp basılmadığını anlıyor. Bunu bütün tuşlar için genişletebiliriz. Herhangi bir tuş nereye, hangi satır ve sütuna denk gelmiş onu data segmentte tanımlayarak data segmentteki ilgili tuş değerini alabiliriz. Ama bu örnek birazcık karışık oldu. Kusura bakmayın. Sanki bütün sütunu tarıyormuş gibi gelmişti bana.
+
+457
+01:31:07,523 --> 01:31:14,323
+Sadece 5 numaralı tuşa basıldığı durumu tarayan bir örnek. Bunun için hangi koşulları oluşturulabilir?
+
+458
+01:31:14,323 --> 01:31:30,724
+Bu konuda başlamamız lazım. İkinci sütunu aktif etmemiz lazım. İkinci satırda ise bir haricinde bir değerin oluşması lazım. Demek ki burada bir haricinde bir değer varsa ve ikinci sütun aktifken bu olmuşsa 5 numaralı tuşa basılmıştır şeklinde bunu değerlendiriyoruz.
+
+459
+01:31:30,724 --> 01:31:41,123
+Deba'nı nasıl yaptık tekrar göstereyim. Adım adım başladık. Burada kodu inceleyecek olursak şunu görüyoruz. Mod ve yönleri ayarladık.
+
+460
+01:31:41,268 --> 01:31:58,268
+Daha sonrasında ikinci sütunu aktif ettik. Daha sonrasında da ikinci sütunu aktif eden değeri 8255'e gönderdik. Daha sonra satırları okuduk. Değerlerimizi kontrol ettik. Eğer ki bu sonuç...
+
+461
+01:31:58,547 --> 01:32:09,467
+0.2 ile test edildiği durumda birden farklı bir değer üretiyorsa o zaman tuş vara gidiyoruz. Burada BL'deki değeri
+
+462
+01:32:09,652 --> 01:32:36,851
+değiştirmiş olduk. Sıfırdan farklı bir değere atamış olduk. Burada tuş olduğunu, tuş basıldığını bir şekilde anlamış oluyoruz. Bunu dediğim gibi her bir sütunu tek tek aktif ederek, satırlardan okuduğumuz değeri 1, 2, 4, 8 şeklinde karşılaştırarak hangi satırın aktif olduğunu anlayabiliriz. Zaten sütunu biz aktif ediyoruz. Sütun ve satır aktivizasyonu ile birlikte de hangi tuşa basıldığını matriz formatında satır sütundan bulmuş oluyoruz.
+
+463
+01:32:37,055 --> 01:32:48,456
+Ama buradaki örnek tekrar etmiş olayım. Sadece 5 numaralı tuşa basılıp basılmadığını anlayan tamamı gerçeklenmemiş bir uygulama örneği.
+
+464
+01:32:48,456 --> 01:32:52,855
+Dolayısıyla size şu aşamada iki tane zorunlu olmayan ev edebi vermiş oluyorum.
+
+465
+01:32:52,855 --> 01:33:01,655
+Birincisi 4 tane 7 segment display'de 1234 değerini yakmanız. İkincisi ise bu 4x3 tuş tarama takımında
+
+466
+01:33:01,728 --> 01:33:11,728
+1-2-3-4-5'ten hangi tuşa basıldığını bir tane yazmaçta saklamanız. Bunun 1-2-1 ileri aşaması da büyük ihtimalle deneyde de öyle bir şey olacaktır.
+
+467
+01:33:11,728 --> 01:33:18,728
+Basmış olduğunuz tuşa karşılık bunu seven segmentte göstermek gibi bir deney olabilir ama çok emin değilim şimdi onu karıştırmayalım.
+
+468
+01:33:18,728 --> 01:33:26,667
+Sadece benim vermiş olduğum iki zorunlu olmayan edeble ilgilenebilirsiniz. Bu şekilde özetlemiş olalım.
+
+469
+01:33:26,739 --> 01:33:30,060
+Bu noktada arkadaşlar sormak istediğiniz bir şey var mı?
+
+470
+01:33:52,404 --> 01:34:03,084
+Evet, deneyde laboratuvarda bu konulardan sorumluyuz. Lab sorusu pazartesi günü verilecek. Yani önümüzdeki hafta ne gün oluyor?
+
+471
+01:34:03,084 --> 01:34:09,724
+2 Kasım'da lab sorusu ilan edilecek pazartesi günü. Hafta boyunca çalışma imkanınız olacak.
+
+472
+01:34:15,507 --> 01:34:38,507
+Çözeriz. Ama lablar bittikten sonra daha anlamlı olabilir. Çünkü grubun yarısı bir hafta girecek, diğer yarısı bir sonraki hafta girecek. Dolayısıyla lab süreci bittikten sonra çözersek daha anlamlı olabilir. Ama siz çalışmış olduğunuz nokta içerisinde çok temel konular olmamakla birlikte...
+
+473
+01:34:38,735 --> 01:34:47,735
+Takıldığınız yerler varsa onlara ayrıyeten bakabiliriz ama dediğim gibi lab'ı derste çözmemiz 2 hafta sonra olur. Çünkü lab devam ediyor o yüzden.
+
+474
+01:34:49,735 --> 01:34:55,735
+Lab'da egze veya comtipi yazmak herhangi bir fark yok ama şunu hatırlatayım size.
+
+475
+01:34:55,735 --> 01:35:04,735
+EGZe tipi programlarda daha önceki Proteus versiyonlarında EGZe tipi programlarda debug yapılamıyordu. Sadece comtipi programlarda yapılabiliyordu.
+
+476
+01:35:04,787 --> 01:35:10,387
+Siz de COMTP yazarsanız mümkün oldukça DEBAK işlemleriniz daha anlamlı olur.
+
+477
+01:35:29,171 --> 01:35:53,891
+Size deneylerde mutlaka bir şablon devre verilir. Bir de şablon kod kısmı verilir. Bunlar üzerinden ilerlersiniz. Eğer sıfırdan yazmanız gerekirse de size vermiş olduğum kom tipi ve egze tipi programlardan örnek alabilirsiniz. Deneyde dersin başında da söylemiştik. Şunlarla karşılaşabilirsiniz. Donanım kısmında eksik bağlantılar olabilir. Bunları tamamlamanız gerekiyor.
+
+478
+01:35:55,828 --> 01:36:03,828
+Daha sonrasında bu programlanabilir, IO cihazlarının ilk koşullandırmasıyla ilgili bir takım kodlar yazmanız gerekebilir.
+
+479
+01:36:03,828 --> 01:36:14,828
+Ve sonrasında da sürekli olarak sonsuz döngü içerisinde çalışacak bir akış yazmanız gerekecek. Büyük ihtimalle bu üç çerçeve içerisinde lablarımız ilerleyecek.
+
+480
+01:36:14,828 --> 01:36:22,828
+Daha önce de belirttiğim gibi ilk deneyimiz 8255 mod 0, ikinci deneyimiz 8255 mod 1 üzerine olacak.
+
+481
+01:36:23,136 --> 01:36:47,276
+Dolayısıyla büyük ihtimalle dersleri lablardan bir hafta öncesinde işleyerek ilerliyor olacağız. Dolayısıyla sizin için de hem çalışma hem de tekrar etme açısından fırsat olacak. Şimdi labları iki hafta ertelediğimiz için yalnız bütün laboratuvarlar 14 hafta boyunca sene sonuna hizalanmış oldu. Dolayısıyla mümkün olduğunca mazeretsiz bir şekilde lablara devamsızlık yapmayın.
+
+482
+01:36:47,663 --> 01:36:59,783
+Mazeretiniz varsa da bunu ilgili arkadaşlar, asistan arkadaşlara vakitlice bildirin. Onlar da vakitlice size yardımcı olabilmek adına değişiklikleri yapabilsinler.
+
+483
+01:37:04,212 --> 01:37:22,612
+Evet arkadaşlar, konuyla ilgili bir sorunuz var mı? Dediğim gibi online Yıldız Edüter'e bütün slide'ları ve örnek kodları paylaştım. Siz de mutlaka bunları adım adım çalıştırarak, değişiklik yaparak, hatta sıfırdan yazmaya çalışarak bunları irdelemeye çalışın. Nasıl çalıştıklarını inceleyin.
+
+484
+01:37:24,132 --> 01:37:30,612
+Ders içerisinde anlattığımız konuları da tekrar edin. Laboratuvar, şimdi bir hafta süre var, lab sorusu ile ilgili olarak ama…
+
+485
+01:37:30,899 --> 01:37:44,899
+Bireysel çalışma olması gerekiyor. Başkalarıyla paylaşım şeklinde birlikte yazılan kodlar olmasın. Lütfen arkadaşlar özellikle bunları irdeleyecekler. Yani size kodla ilgili özel bir takım sorular sorarak bunu ne kadar...
+
+486
+01:37:45,043 --> 01:37:53,043
+Anlamışız veya bunu ne kadar benimsemişiz, ölçmeye çalışacaklar. Proteiz kullanımı ile ilgili önceden biraz pratik yapın.
+
+487
+01:37:53,043 --> 01:38:03,043
+İşte şeyde sıkıntı çıkıyor çünkü çoğunlukla. Tel taşımada, tel bağlamada veya bas bağlamada sıkıntı çıkıyor. Bunlar için de öncesinden hazırlık yapmış olun olur mu?
+
+488
+01:38:15,539 --> 01:38:42,319
+Lab demosu nedir? Onu tam bilemedim. Lab sorusu mu? Lab için verilen template kod her grup için ayrı olacak. Mesela EU1 grubu var, EU2 grubu var. Bunlar farklı sorularla karşılaşacaklar. Yakın ama farklı sorularla.
+
+489
+01:38:42,640 --> 01:39:05,640
+Yakın olmalarından dolayı zaten grupları döndürüyoruz. Mesela EU1 grubu birinci laba ilk girecek grup olacak. EU2 grubu ise ikinci laba ilk girecek grup olacak. Böylelikle bunu döndürerek bir adalet sağlamayı amaçlıyoruz. Yakın ama farklı sorular olacaklar. Her birisinin kendi deney haftasında ilan edilecek.
+
+490
+01:39:06,387 --> 01:39:20,887
+Mesela bu pazartesi ayın ikisinde EU1 grubunun template sorusu ilan edilecek. Bir sonraki hafta EU2 grubunun template sorusu pazartesi günü ilan edilecek. O da 9 Kasım'da olacak herhalde.
+
+491
+01:39:27,155 --> 01:39:31,155
+Evet arkadaşlar, başka sorunuz yoksa dersi sonlandırıyorum. Teşekkür ederim.
+
+492
+01:39:34,155 --> 01:39:38,155
+Herkese iyi akşamlar. Sorunuz olursa yine mailden falan da sorabilirsiniz.
+
+493
+01:39:39,155 --> 01:39:49,155
+Öğrenci görüşme saatleri de tanımlamıştım. Aciliyetli bir şey olursa oradan da randevu alarak görüşme ayarlayabiliriz, toplantı ayarlayabiliriz.
+
+494
+01:39:50,155 --> 01:39:52,155
+Herkese iyi akşamlar, iyi günler.

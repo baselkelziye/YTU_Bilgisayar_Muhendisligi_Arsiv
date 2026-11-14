@@ -1,0 +1,1983 @@
+1
+00:00:50,932 --> 00:00:52,572
+Arkadaşlar, middleware, hattızın.
+
+2
+00:00:59,764 --> 00:01:05,444
+Mikrofonu açık alan arkadaşlar var galiba. Onlar kapatırlarsa, eğer bir şey söylemeyeceklerse.
+
+3
+00:01:35,668 --> 00:01:41,028
+[öğrenci] matrisleri geçen hafta yükledim, nasıl bulamadım? Şimdi görüyorum ne yazdığınızı da.
+
+4
+00:02:04,308 --> 00:02:07,588
+Evet, arkadaşlar. Sesim duyuyorsunuz herhalde.
+
+5
+00:02:10,548 --> 00:02:11,468
+Evet hocam.
+
+6
+00:02:11,788 --> 00:02:13,008
+Ekranı da görüyorsunuz.
+
+7
+00:02:13,768 --> 00:02:14,268
+Aynen.
+
+8
+00:02:18,931 --> 00:02:31,031
+Geçen hafta matrislerin ilk kısmını bitirmiştik. Bitirmiş miydik ya da ya? Üniter matrisleri falan anlattım değil mi size? Üniter matrisinin ne olduğunu verdim. Hatırlayan var mı?
+
+9
+00:02:36,211 --> 00:02:39,211
+Hocam, benim notlarımda en son terslenebilir matrisler var.
+
+10
+00:02:40,351 --> 00:02:43,572
+Yok, notlar da vardır da, geçen hafta nereye kadar geldik?
+
+11
+00:02:43,871 --> 00:02:46,351
+Onu hatırlayan var mı?
+
+12
+00:02:46,871 --> 00:02:52,771
+Hocam, bende de terslenebilir de kalmışız. Özel karesel matris yazmışım başlık olarak, kalmış.
+
+13
+00:02:55,491 --> 00:02:59,151
+Karesel matrislerin özel tipleri mi yazmışsın? Ya da özel kara matrisler mi yazmışsın?
+
+14
+00:02:59,251 --> 00:03:01,711
+Özel karesel matrisler yazmışım, kalmış.
+
+15
+00:03:01,791 --> 00:03:03,411
+Tamam, tamam, tamam, teşekkürler.
+
+16
+00:03:03,924 --> 00:03:06,884
+Daha başka yazan varsa sorun, ben öyle yazmışım.
+
+17
+00:03:06,944 --> 00:03:09,903
+Tamam, bir daha bakayım şu birinci haftanın şeyine.
+
+18
+00:03:13,556 --> 00:03:18,975
+Beş tane grubum var arkadaşlar, kusura bakmayın. O yüzden hangi grupta nerede kaldığımı çok kestiremiyorum.
+
+19
+00:03:20,176 --> 00:03:24,956
+Evet, en son terslenebilir matrisi vermişiz, değil mi?
+
+20
+00:03:26,536 --> 00:03:30,136
+Tamam, en son terslenebilir matrisi vermişiz, o kadar. Güzel.
+
+21
+00:03:31,156 --> 00:03:32,576
+Size bayağı ilanemişiz o zaman.
+
+22
+00:03:33,936 --> 00:03:36,036
+Bugün matrislerden devam edeceğiz arkadaşlar.
+
+23
+00:03:37,556 --> 00:03:40,396
+Karısal matrislerin özel tiplerinden.
+
+24
+00:03:41,235 --> 00:03:43,475
+bahsedeceğiz. Karasel matris neydi?
+
+25
+00:03:44,755 --> 00:03:47,395
+Satır sayısı sütün sayısına işit olan matrisdi.
+
+26
+00:03:47,395 --> 00:03:48,036
+Değil mi?
+
+27
+00:03:49,355 --> 00:03:49,735
+Yani,
+
+28
+00:03:51,995 --> 00:03:52,975
+A karasel ise,
+
+29
+00:03:57,108 --> 00:04:01,028
+N çarpı, N tipinde genelde N olarak alıyoruz.
+
+30
+00:04:02,948 --> 00:04:05,187
+Satır sayısı, stüm sayısına eşek.
+
+31
+00:04:06,968 --> 00:04:12,027
+Şimdi arkadaşlar, şunu söyleyeyim baştan, geçen hafta da söylemiştim.
+
+32
+00:04:13,328 --> 00:04:19,848
+Sınavımız test olacağı için buradaki tanımlar ve özellikler çok önemli yer.
+
+33
+00:04:21,012 --> 00:04:43,672
+Kaplıyor, sınavımız için. O yüzden, burada mesela periyodik matris, invalid matris, birkaç tane özel matris tipini vereceğiz. Lütfen bunları bilin. Yani ezberlemeyin, bilin bunları. Tamam mı? İyi ki, periyodik matris, periyodik matris şöyle oluyor arkadaşlar. Eğer, a karesel matris, yani ne çarpı ne tipinde.
+
+34
+00:04:47,987 --> 00:04:54,848
+Eğer a üzeri p artı bir eşittir a oluyorsa, tamam mı?
+
+35
+00:04:57,427 --> 00:05:05,927
+a üzeri p artı bir eşittir a oluyorsa, biz a'ya periodu,
+
+36
+00:05:13,300 --> 00:05:16,139
+Periyodu P olan periyodik matris diyoruz.
+
+37
+00:05:17,180 --> 00:05:17,539
+Tamam mı?
+
+38
+00:05:19,039 --> 00:05:24,279
+Tabii bu başka P sayıları için de, yani birden fazla P sayıları için de sağlanabilir.
+
+39
+00:05:24,699 --> 00:05:25,360
+Değil mi arkadaşlar?
+
+40
+00:05:26,100 --> 00:05:28,919
+Bu P sayılarının en küçüğüne periyod diyoruz biz.
+
+41
+00:05:31,240 --> 00:05:33,879
+A üzeri P artı 1 eşittir A olacak şekilde ki.
+
+42
+00:05:35,444 --> 00:05:42,304
+P sayılarının en küçüğüne matrisin periyodu, bu şartı sağlayan matris ile periyodik matris deniyormuş. Bu bir.
+
+43
+00:05:45,004 --> 00:05:46,524
+Örneği var hemen burada, bakın.
+
+44
+00:05:48,084 --> 00:05:49,144
+A matrisi verilmiş.
+
+45
+00:05:50,624 --> 00:05:51,744
+A'nın küpü A'ymiş.
+
+46
+00:05:52,744 --> 00:05:55,663
+A'nın küpünü bulalım mı siz de? Çarpmayı hatırlamış oluruz.
+
+47
+00:05:55,903 --> 00:05:58,663
+Şurada, bakayım boş yer var mı? Ha, şurada var.
+
+48
+00:06:00,224 --> 00:06:02,704
+A'nın küpünü bulalım ama orta A'yı yazamıyoruz.
+
+49
+00:06:04,019 --> 00:06:08,600
+A'nın küpünü nasıl bulacağız? Aynı aile çarpacağız arkadaşlar. Çarpalım.
+
+50
+00:06:09,879 --> 00:06:24,279
+1, eksi 2, eksi 6, eksi 3, 2, 9, 2, 0, eksi 3.
+
+51
+00:06:28,115 --> 00:06:42,175
+1-2, 6, 3, 2, 9, 2, 0, 3. Bu a'nın karesi demek. Ne yapıyorduk? Hemen hatırlayalım.
+
+52
+00:06:43,995 --> 00:06:51,415
+Birinci maddesin her bir satırıyla, ikinci maddesin her bir sütununu ne yapıyorduk arkadaşlar?
+
+53
+00:06:51,655 --> 00:06:54,275
+Buna iş çarpım demiştik, tamamlamıştık. İş çarpıyorduk.
+
+54
+00:06:55,795 --> 00:07:18,056
+Ne olacak? 1 çarpı 1, 1, eksi 2 çarpı, eksi 3, 6, 7, eksi 6 çarpı 2, eksi 12, ne yaptı? Eksi 5. Sonra ilk satırla ikinci stonu çarpacağım. Eksi 2, eksi 4 da ne yaptı? Eksi 6.
+
+55
+00:07:20,723 --> 00:07:23,824
+Sonra, ilk satırla son sütunu çarpacağım.
+
+56
+00:07:24,423 --> 00:07:27,124
+Eksi 6, ne yaptı?
+
+57
+00:07:27,723 --> 00:07:35,843
+Eksi 18, eksi 24, artı 18, eksi 6.
+
+58
+00:07:38,843 --> 00:07:41,644
+Sonra bu satırla, bu sütunu çarpalım.
+
+59
+00:07:41,843 --> 00:07:47,403
+Eksi 3, eksi 6, eksi 9, 18, 9.
+
+60
+00:07:50,451 --> 00:08:17,271
+Bununla ikinci sütunu çarpalım. 6, 10. Arkadaşlar siz de takip ederseniz yanlış olmasın. Hem de pratik yapmış olursunuz. Bu satırla üçüncü sütunu çarpalım. 18, 36, eksi 27, 9. Son satırla iki sütunu çarpacağım. 2, eksi 6, eksi 4.
+
+61
+00:08:20,372 --> 00:08:23,152
+Son satırla ikinci sütun, eksi 4.
+
+62
+00:08:26,932 --> 00:08:35,231
+Son satırla son sütun, eksi 12, artı 9, eksi 3. Bu A'nın karesi.
+
+63
+00:08:36,971 --> 00:08:38,751
+Şimdi ne yapacağız?
+
+64
+00:08:41,511 --> 00:08:43,112
+Eksi 5, eksi 6.
+
+65
+00:08:49,812 --> 00:09:00,372
+9, 10, 9, eksi 4, eksi 4, eksi 3 ile A'yı tekrar çarpacağım.
+
+66
+00:09:01,192 --> 00:09:12,132
+1, eksi 2, eksi 6, eksi 3, 2, 9, 2, 0, eksi 3.
+
+67
+00:09:13,132 --> 00:09:13,892
+Çarpalım.
+
+68
+00:09:19,668 --> 00:09:26,207
+Eksi satırla, eksi sütunu çarpıyorum, eksi 5, eksi 18 daha, eksi 23.
+
+69
+00:09:30,323 --> 00:09:50,443
+Pardon. Eksi 5, 18 daha ne yaptı? 13, eksi 12 daha, 1, iki satırla, ikinci turunu çarpıyorum, 10, eksi 12, eksi 2, iki satırla, üçüncü turunu da çarpayım, diğerleri çıkar herhalde.
+
+70
+00:09:50,443 --> 00:09:56,344
+Ya da neyse çarpalım artık, başlamış olduk. 30, eksi 54, eksi 24.
+
+71
+00:09:57,172 --> 00:10:09,692
+Artı 18, eksi 6. İkinci satırda, eksi, tuğunu çarpıyorum, 9, eksi 30, 18, 27,
+
+72
+00:10:13,364 --> 00:10:32,504
+9 çarpı, eksi 2, neyle neyi çarpıyorduk? İkinci satırlar, birinin üstünü çarpıyordu değil mi? 9, eksi 30, ne yaptı arkadaşlar? Eksi 25, 18 daha, eksi 3.
+
+73
+00:10:41,748 --> 00:10:59,107
+Eksi 54, 90, eksi 27, 9 yapıyor mu? Pardon, evet. Eksi 54, 90, eksi 27, 9 yapıyor.
+
+74
+00:11:02,772 --> 00:11:06,491
+Bu da çıkıyordur arkadaşlar. Çıkmazsa beni bulun. Tamam mı?
+
+75
+00:11:09,412 --> 00:11:23,011
+A'nın kübü. O yüzden A üzeri P artı bir eşittir. A demek ki periyodu iki olan periyodik bir matrismiş. Tamam mı?
+
+76
+00:11:25,432 --> 00:11:29,771
+Eğer matrisin periyodu bir ise arkadaşlar, bu ne demek?
+
+77
+00:11:32,916 --> 00:11:38,216
+A'nın karesi A ise bu matzada idempotent matris deniyor.
+
+78
+00:11:45,076 --> 00:11:57,076
+Burada örneği var yine, A ile A'yı çarparsanız, A'yı buluyorsunuz yine. Böylece A matrisi idempotent bir matris oluyor.
+
+79
+00:12:13,139 --> 00:12:19,379
+Kuvveti sıfır matrisine eşitse, bu matrise nilpotent matris deniyor.
+
+80
+00:12:20,139 --> 00:12:23,240
+Tabii çok kolay bir özellik değil aslında baktığınız zaman değil mi?
+
+81
+00:12:23,320 --> 00:12:25,320
+Bu matrisin herhangi bir kuvvetinin sıfır olması.
+
+82
+00:12:26,059 --> 00:12:28,120
+Ama öyle matrisler var.
+
+83
+00:12:29,679 --> 00:12:38,960
+Böyle Q sayılarının, pozitif Q sayılarının en küçüğüne de bu matrisin nilpotentlik indeksi ya da derecesi deniyor.
+
+84
+00:12:42,292 --> 00:13:07,331
+Şöyle hatırınızda tutabilirsiniz arkadaşlar. Periyodikten başladık. Bakın ben tekrar yazmış olayım. Siz de hatırlayın. Periyodik, P'den aklınıza gelsin. E üzeri P artı 1 eşittir A. Sonra P'nin 1 olması durumu P eşittir 1. Bu da 1'den aklınıza idem potent gelsin.
+
+85
+00:13:12,851 --> 00:13:15,572
+Neydi? A'nın karesi A.
+
+86
+00:13:17,451 --> 00:13:25,731
+Daha sonra yine periodik sırayla gidiyoruz ya, A üzeri Q eşittir sıfır olacak şekilde ise, buna da nil potent.
+
+87
+00:13:26,192 --> 00:13:28,851
+Bir den potent, nil potent. Tamam mı? Karıştırmazsınız böyle.
+
+88
+00:13:31,911 --> 00:13:38,671
+Böyle sayıların en küçüğüne de, pozitif sayıların en küçüğüne de, bu maddesin nil potentlik derecesi deniyor.
+
+89
+00:13:42,611 --> 00:13:53,051
+Şimdi burada da gerçekten ben merak ettim. Şunu da çarpalım. Bu sıfır yapıyor mu? Çünkü sıfır yapması çok kolay bir şey değil arkadaşlar.
+
+90
+00:13:55,531 --> 00:14:06,051
+1, 2, 3, 1, 2, 3, eksi 1, eksi 2, eksi 3.
+
+91
+00:14:08,148 --> 00:14:23,148
+Bir maddisin karesinin sıfır olmaması, bu maddisinin nipotat maddisi olmadığı anlamına gelmiyor değil mi? O yüzden nipotat aslında zor bir kala. Belki 300. kuvvetinde sıfır olabilir yani arkadaşlar.
+
+92
+00:14:34,964 --> 00:14:49,384
+Çarpalım. Kırmızı ile çarpalım. Sizler de arkadaşlar çarparken şöyle yaparsanız, karıştırmazsanız, 1, 3, 0.
+
+93
+00:14:53,299 --> 00:14:57,679
+Q burada matrisin herhangi bir değeri değil, herhangi bir kuvveti.
+
+94
+00:15:00,019 --> 00:15:04,239
+Burada karesi, kübü de olabilir, dördüncü kuvveti de olabilir.
+
+95
+00:15:07,659 --> 00:15:09,719
+X satırla 2'nin üstünü çarpıyorum.
+
+96
+00:15:09,719 --> 00:15:15,279
+2, 6, 0, 0.
+
+97
+00:15:20,500 --> 00:15:24,680
+3, 6, 9, eksi 9, 0
+
+98
+00:15:24,680 --> 00:15:30,440
+1, 3, eksi 3, 0
+
+99
+00:15:30,440 --> 00:15:36,940
+2, 4, 6, eksi 6, 0
+
+100
+00:15:36,940 --> 00:15:41,300
+3, 6, 9, eksi 9, 0
+
+101
+00:15:41,300 --> 00:15:42,480
+Son satırda yapalım.
+
+102
+00:15:43,920 --> 00:15:46,980
+Eksi 1, eksi 3, artı 3, 0
+
+103
+00:15:48,052 --> 00:16:14,632
+Eksi 2, eksi 4, eksi 6, artı 6, 0. Son eleman, eksi 3, eksi 6, eksi 9, artı 9, 0. Demek ki A'nın karesi 0 maddesi oldu. O halde A maddesi nilpotentlik derecesi ya da nilpotentlik indeksi 2 olan
+
+104
+00:16:16,083 --> 00:16:17,504
+Milpotent bir matris.
+
+105
+00:16:21,235 --> 00:16:24,335
+O zaman 3. kuvvetlerin nüpotentse nasıl bulacağım?
+
+106
+00:16:24,935 --> 00:16:26,475
+[öğrenci], onun da kolay yolu var.
+
+107
+00:16:26,795 --> 00:16:29,135
+İşte Kyle Hamilton'ın töremini biliyoruz biz.
+
+108
+00:16:30,955 --> 00:16:37,295
+Zaten şöyle, size nüpotent bir değil mi diye sorduğu zaman 3. kuvvetine kadar gitmezsiniz.
+
+109
+00:16:37,415 --> 00:16:44,155
+Ben şey anlamda söyledim, yani illa 2. kuvvetin ya da 3. kuvvetinde sıfır olacak diye bir şey yok.
+
+110
+00:16:45,115 --> 00:16:47,195
+Yani belki 3. kuvvetinde de olabilir dedim.
+
+111
+00:16:48,055 --> 00:16:48,455
+Tamam mı?
+
+112
+00:16:49,172 --> 00:17:16,572
+300. kuvvetini bulmanın kolay yolu var. Yani şeyden hatırlayın, modüller aritmetikten hatırlayın liseden. Ne yapıyordunuz mesela? Herhangi bir sayının işte 4'ün mesela 500. kuvvetini nasıl buluyordunuz? 4'ün belirli kuvvetlerini alıyordunuz, sonra tekrar ediyordu. Değil mi? Onun gibi. Burada da eğer tekrar etme durumu olursa, ki oluyor, 300. kuvvetini bulursunuz.
+
+113
+00:17:22,932 --> 00:17:47,192
+[öğrenci], bunu bilemeyiz işte. Bilemediğim için ben onu söyledim. Yok, illa sıfır yapacak diye bir şey yok yani. Ama olabilir, doğru söylüyorsun. Ama tekrar ediyorsa belli bir kuvvetten sonra, yani hep aynı matrisler çıkıyorsa, o zaman sıfır yapmadığını anlarız yani.
+
+114
+00:17:47,796 --> 00:18:13,796
+Mesela A'nın karesi sıfırsa A üzeri 4 de sıfırdır değil mi? Ya da mesela A'nın karesi, gerçi bu matris de olmaz da, atıyorum işte biraz önce verdiğim örnekteki gibi, 4'ün belirli kuvvetlerini alarak 4 üzeri 500'ü bulabilirsiniz. Onun gibi A üzeri 300'de bulabilirsiniz yani. A üzeri 300 de sıfırdır değil mi mesela buradan direkt? Peki.
+
+115
+00:18:15,508 --> 00:18:17,468
+Geldik, involüt matrisi.
+
+116
+00:18:18,128 --> 00:18:29,327
+Involüt matrisde arkadaşlar, karesi, birim matrisi eşit olan matrisleri, involüt matris deniyor.
+
+117
+00:18:30,668 --> 00:18:37,288
+Tabi burada, a n çarpı n tipinde, karesel matrisse, birim matrisse n çarpı n tipinde olacak.
+
+118
+00:18:39,367 --> 00:18:42,468
+Burada da, ne yapıyorsunuz?
+
+119
+00:18:43,859 --> 00:18:48,559
+A ile A'yı çarparsanız, birim maddesi elde edersiniz.
+
+120
+00:18:49,960 --> 00:18:54,579
+I2 yazılmış burada arkadaşlar. Yanlış yazılmış. Ne olacak? I3 olacak.
+
+121
+00:18:58,132 --> 00:19:14,372
+Şimdi, size mesela şöyle olacak, şu matris verilecek arkadaşlar, A matrisi boğsun, veresin, A matrisi için aşağıdakilerden hangisi ya da hangileri doğrudur?
+
+122
+00:19:16,112 --> 00:19:24,332
+Diyecek ki, A matrisi involit matrisidir. O zaman siz ne yapmanız lazım? A ile A'yı mecburen çarpmanız lazım.
+
+123
+00:19:26,163 --> 00:19:26,644
+Tamam.
+
+124
+00:19:37,748 --> 00:19:44,748
+köşegen matris ne oluyor? Özel matrisler, gerçi ortogonal matris de olması lazım ama onu sonra mı vermişiz?
+
+125
+00:19:50,708 --> 00:19:51,208
+O zaman.
+
+126
+00:19:56,435 --> 00:20:07,415
+Arkadaşlar, köşegen matrisleri önemli bir matris çeşidi. Hatta bunu determinant falan hesaplarken ileride göreceğiz. İşlerimizi kolaylaştıracak. Şöyle.
+
+127
+00:20:12,435 --> 00:20:16,036
+A matrisi, N çarpı N etkinde bir matris olsun.
+
+128
+00:20:55,763 --> 00:21:03,723
+[öğrenci] mikrofonun açıkmış. Eğer beni duyuyorsan kapatır mısın? Sana zahmet.
+
+129
+00:21:08,211 --> 00:21:11,652
+Şimdi arkadaşlar, bu ne içerik, ne tip nedir matris? Değil mi?
+
+130
+00:21:22,132 --> 00:21:25,692
+Şu elemanlarına biz ne demiştik? Öyle demiş miyiz bilmiyorum.
+
+131
+00:21:30,132 --> 00:21:36,132
+Buna ne dedik biz? Esas köşegen dedik. Demeliysek de şu anda diyoruz ama dedik yani.
+
+132
+00:21:39,072 --> 00:21:42,312
+Dedik evet. Bu esas köşegen de.
+
+133
+00:21:46,483 --> 00:21:58,243
+Şimdi arkadaşlar, eğer bir maddisin esas köşegeni dışındaki elemanlar sıfırsa, bu ne demek? Bakın, esas köşegendeki elemanlar nasıl elemanlardı?
+
+134
+00:21:59,703 --> 00:22:07,824
+A, İ, İ. Yani, bu ne demek? İ eşittirci demek. Bir matris değil, [öğrenci] karıştırma.
+
+135
+00:22:09,344 --> 00:22:11,563
+Bu köşegen, esas köşegendeki elemanlar.
+
+136
+00:22:16,884 --> 00:22:20,384
+İlla bir matris olması gerekmiyor yani, onu söylüyorum.
+
+137
+00:22:22,264 --> 00:22:33,683
+Ney çarpı ney tipindeki, karesel bir matrisin, şu köşesindeki elemanlara, ya da bu köşesine, esas köşegen diyoruz. Bunlara da esas köşegen elemanları diyoruz.
+
+138
+00:22:34,203 --> 00:22:41,384
+Arkadaşlar, sadece matris esas köşegendeki elemanlardan oluşuyorsa, evet bazıları da asal köşegen diyor [öğrenci].
+
+139
+00:22:44,756 --> 00:22:58,896
+Sadece esas köşegendeki elemanlardan oluşuyorsa bu maddisi köşegen matris deniyor. Ne diyor bakın? i eşit değildir j için, a, i, j'ler sıfırsa, yani buralar hep sıfır. Üstü, altı, sadece şurada.
+
+140
+00:22:59,236 --> 00:23:03,456
+Tabii esas köşegenin bazı elemanları da sıfır olabilir değil mi?
+
+141
+00:23:05,296 --> 00:23:05,976
+Yani.
+
+142
+00:23:07,936 --> 00:23:12,336
+O halde sıfır matrisse köşegen matris midir? Soralım.
+
+143
+00:23:16,307 --> 00:23:34,427
+Alın size sınav sorusu. Evet, evet, başka, o kadar mı? Hayır diyen yok mu? [öğrenci], niye değil dedim. Biraz önce evet diyordun. Ha sen o metan değilsin, başka metan, pardon.
+
+144
+00:23:34,427 --> 00:23:43,051
+Hocam, şeyden dolayı dedim, burada i eşit değildir j için diyor ya, sıfır matris de yani...
+
+145
+00:23:43,604 --> 00:23:44,084
+Yok.
+
+146
+00:23:44,903 --> 00:23:55,344
+Tamam, aynı sen cevabını söylüyorsun. İşte aynen öyle. Bir eşit değildirici için ayıcı sıfır. Evet, sıfır matrisinde hepsi sıfır. O yüzden sıfır matrisi de köşegen matrisidir. Tamam.
+
+147
+00:23:56,784 --> 00:23:58,463
+Sıfır matrisi de köşegen matrisidir.
+
+148
+00:24:00,403 --> 00:24:04,943
+Evet, burada yazmışız zaten. Güzel. Sıfır matrisi de köşegen matrisidir.
+
+149
+00:24:06,740 --> 00:24:28,700
+Scalar matris neydi? Hatırlıyor musunuz? Scalar matris, birim matrisin herhangi bir katı olan matrisliği. O halde, Scalar matris de ne olacak arkadaşlar? Köşegen elemanları eşit olan köşegen bir matrismiş. Örnekler vardır herhalde. Bakın burada.
+
+150
+00:24:31,955 --> 00:24:35,295
+Esas köşegendeki elemanlar var sadece, diğerleri sıfır.
+
+151
+00:24:41,011 --> 00:24:43,811
+3x3 tipinde bu, bu 2x2 tipinde.
+
+152
+00:24:45,571 --> 00:24:50,811
+Eğer köşegen elemanları aynı olursa, o matrisi biz ne demiştik? Skalar matris demiştik.
+
+153
+00:24:52,331 --> 00:24:57,932
+Bazen bu sıfırlar yazılmayı da biliyor arkadaşlar ama ben çok kullanmıyorum, hepimiz çok kullanmıyoruz.
+
+154
+00:24:58,132 --> 00:25:06,672
+Şöyle bir matris görürseniz anlayın ki, 1, 2, 3, 4, bu 4x4 tipinde köşegen bir matris. Yani buralarda sıfır var.
+
+155
+00:25:09,683 --> 00:25:13,864
+Hocam, hepsinin mi sıfır olması gerekiyor? Yoksa birkaç tane olsa da olur mu?
+
+156
+00:25:15,624 --> 00:25:18,043
+Köşegen dışındakilerin hepsi sıfır olacak.
+
+157
+00:25:18,063 --> 00:25:18,823
+Hepsinin, tamam.
+
+158
+00:25:18,903 --> 00:25:25,604
+Evet, ama köşegendekilerden bazıları da sıfır olabilir. Hatta hepsi de sıfır olabilir ki sıfır maddesinin köşegen maddesi olduğunu söyledik.
+
+159
+00:25:26,543 --> 00:25:31,124
+Önemli olan burada köşegen dışındakilerin sıfır olması. Tamam mı?
+
+160
+00:25:31,384 --> 00:25:35,183
+Yani şunun dışındakilerin hepsi sıfırsa biz buna köşegen maddesi diyeceğiz.
+
+161
+00:25:36,211 --> 00:25:38,612
+Hocam, yani köşegendekilerde sıfır olabilir.
+
+162
+00:25:39,051 --> 00:25:41,251
+Tabii ki. Sıfır matrisinde hepsi sıfır ya.
+
+163
+00:25:43,352 --> 00:25:44,172
+Tamamdır hocam.
+
+164
+00:25:44,392 --> 00:25:45,072
+Olabilir yani.
+
+165
+00:25:49,311 --> 00:25:53,811
+Diyakla, diyakonel, yani esas köşegendeki elemanları göstermiştik. Onu yazmışız burada.
+
+166
+00:25:54,892 --> 00:25:58,572
+Diyakonelde, yani esas köşegende hangi elemanlar varmış? 3-7, 2.
+
+167
+00:25:59,112 --> 00:26:02,932
+İşte diğerinde 4-5. Bunda da 6-0, x-9, 8 olacak.
+
+168
+00:26:04,372 --> 00:26:08,452
+Bu gösterimi de çok, yine kullanmıyoruz ama bilin arkadaşlar.
+
+169
+00:26:14,163 --> 00:26:21,963
+Evet, şimdi yine bir matris çizeyim ben, şey, ne çarpma tipini, uşam yiyeyim.
+
+170
+00:27:08,948 --> 00:27:15,627
+Şimdi arkasayı ne, ne, ne tipinde, kresel matrisim var.
+
+171
+00:27:19,923 --> 00:27:23,744
+Bu Aİ'ler neydi? Esas köşegen elemanlarıydı.
+
+172
+00:27:25,484 --> 00:27:31,964
+Eğer maddesin sadece esas köşegeni varsa, yani diğerleri sıfırsa, biz bu maddesi köşegen maddesi demiştik.
+
+173
+00:27:31,964 --> 00:27:46,064
+Şimdi de arkadaşlar, eğer bir maddeste esas köşegenin, sadece esas köşegenin üstündeki elemanlar varsa, yani esas köşegenin altındaki elemanlar sıfırsa, bununla farklı bir kalemle gösterelim.
+
+174
+00:27:47,508 --> 00:27:49,100
+Yani şurası
+
+175
+00:27:52,468 --> 00:28:12,268
+Bakın üçgen oluyor ya burada, o yüzden üçgensel diyor. Bu sıfırsa, sadece üst tarafta elemanlar var, esas köşegenin üstünde ve esas köşegende. Buna, üst, üçgensel, pardon şuraya sıfır yazacaktık.
+
+176
+00:28:20,147 --> 00:28:34,887
+Eğer bu elemanlar sıfırsa, üst üçgensel matris, bakın karıştırmayın, yani sıfır olursa burası sadece üst tarafta elemanlar olduğu için üst üçgensel diyoruz.
+
+177
+00:28:35,768 --> 00:28:43,048
+Eğer benzer olarak sadece alttaki elemanlar var, üstler sıfırsa, o zaman da ne diyeceğiz?
+
+178
+00:28:45,407 --> 00:28:46,647
+Alt üçgensel diyeceğiz.
+
+179
+00:28:55,731 --> 00:28:56,752
+Kommer, sefesan.
+
+180
+00:29:00,403 --> 00:29:06,524
+Alt, üçgensel matris.
+
+181
+00:29:07,183 --> 00:29:13,423
+Tarama da bir bakalım arkadaşlar. Diyor ki, A, İ, J, N çarpı, N tipinde karasal bir matris olsun.
+
+182
+00:29:14,144 --> 00:29:19,264
+Eğer İ büyüktür J iken, İ büyüktür J demek ne demek arkadaşlar?
+
+183
+00:29:21,403 --> 00:29:23,403
+Satır sütundan büyükken, yani.
+
+184
+00:29:23,887 --> 00:29:36,387
+Bu şu demek işte. Mesela burada Aİ'lerde satır üstüne eşit ya. Ama bunun altına geçtiğiniz anda ne oluyor bakın? Satır sayısı yani İ, J'den büyük oluyor.
+
+185
+00:29:36,387 --> 00:29:48,488
+İ, J'den büyükken Aİ, J'den sıfırsa yani bu esas köşegenin altındaki elemanlar sıfırsa, mat ise üst üçgensel matris deniyor.
+
+186
+00:29:51,988 --> 00:30:02,088
+i küçüktür j için, a, i, j'ler sıfırsa, o da buraya tekabül ediyor. Bu durumda da matrisi alt üçgensel matris deniyor.
+
+187
+00:30:02,688 --> 00:30:13,068
+Şimdi aklınıza tabii şey gelebilir, sıfır matrisi üçgensel bir matris mi? Evet. Sıfır matrisi hem alt üçgensel hem de üst üçgensel bir matris.
+
+188
+00:30:13,928 --> 00:30:15,248
+Çok da önemi yok açıkçası.
+
+189
+00:30:18,612 --> 00:30:27,612
+2, 3 ve 4. mertebeli üst düşkensel matrisleri şu şekilde yazabiliriz.
+
+190
+00:30:28,032 --> 00:30:34,892
+Tamam, mesela bu 2x2, esas köşegen burası, bunun altındaki 0 olacak.
+
+191
+00:30:35,972 --> 00:30:38,512
+O halde bu üst düşkensel matris.
+
+192
+00:30:41,012 --> 00:30:42,812
+Bu da üst düşkensel.
+
+193
+00:30:47,188 --> 00:30:48,887
+Bulganeler var, sıfırlar var.
+
+194
+00:30:59,892 --> 00:31:06,211
+Dediğimiz gibi sıfırları göz ardı edebiliriz ama pratikte çok da öyle yazmıyoruz yani.
+
+195
+00:31:09,940 --> 00:31:18,819
+Eğer, esas köşeğenin, üstündeki bütün elemanlar sıfırsa, A'ya alt üçgen sanmatis deneceğini söylemiştir.
+
+196
+00:31:25,428 --> 00:31:34,248
+Köşegen matrisler ne olacak? Hem alt düşkansel hem de üst düşkansel olacak. Neden? Hem köşegenin altındaki hem de üstündekiler sıfır.
+
+197
+00:31:39,188 --> 00:31:48,328
+Şimdi yine arkadaşlar, iki ya da üç tane daha özel matriz tipi vereceğim. Bunlar da çok önemli. Bunlar da sınavda çok soruluyor. Çokça soruluyor.
+
+198
+00:31:51,168 --> 00:31:52,868
+Birinci simetrik matriz.
+
+199
+00:31:55,528 --> 00:32:03,928
+Eğer, burada real sayı denmesinin sebebi şu, kompleks matrizler için de benzer bir tanım vereceğiz.
+
+200
+00:32:04,564 --> 00:32:21,444
+İkisi karışmasın diye. Çok daha kafanızı karıştırmayın. Eğer bir matrisin transpozu kendisini eşitse arkadaşlar, bu matrise simetrik matris deniyor.
+
+201
+00:32:22,344 --> 00:32:30,384
+Bir matrisin transpozisi neydi? Transpozu ya da satırlarla sütunlar yer değiştiriyordu değil mi?
+
+202
+00:32:31,700 --> 00:32:37,040
+Mesela, şöyle bir örnek yazalım, hatırlatma amaçlı.
+
+203
+00:32:38,380 --> 00:32:45,060
+Evet, A maddisi bu şekildeyse, hatta birkaç karesel olmasın.
+
+204
+00:32:50,612 --> 00:32:55,612
+Ama burada karesel olması gerekecek, onu da söyleyeceğiz. Transpozumun kendisine eşit olabilmesi için.
+
+205
+00:32:57,612 --> 00:33:02,052
+O yüzden, burada karesel örnek verelim, kafanız karışmasın.
+
+206
+00:33:03,652 --> 00:33:12,132
+Anlı transpozum oluyordu, arkadaşlar. Satırı sütun olarak yazıyordum ya da sütunu satır olarak yazıyordum, aynı şey.
+
+207
+00:33:15,667 --> 00:33:23,167
+A'nın transpozu, bakıyorum, A'nın transpozu A'ya eşitti, demek ki bu simetrik bir matris değilmiş. Buradan bu sonuçta çıkmış oldu.
+
+208
+00:33:25,087 --> 00:33:31,247
+Eğer bu matrisin transpozu kendisine eşitse, bu matrisde simetrik matris deniyor.
+
+209
+00:33:36,019 --> 00:33:38,899
+Yine bakın teorik olarak şu önemli arkadaşlar.
+
+210
+00:33:41,679 --> 00:33:45,259
+Eğer biz matrisi nasıl gösteriyorduk? A matrisi.
+
+211
+00:33:47,319 --> 00:33:48,019
+A, i, j.
+
+212
+00:33:49,619 --> 00:33:52,480
+A'nın transpozu matrisini nasıl gösteriyorduk?
+
+213
+00:33:54,659 --> 00:33:56,539
+A, j, i.
+
+214
+00:33:58,359 --> 00:34:01,839
+O halde A'nın transpozu A'ya eşit olacak ya.
+
+215
+00:34:02,483 --> 00:34:05,263
+Her ij için aij eşittir.
+
+216
+00:34:06,223 --> 00:34:08,724
+aji olmalı.
+
+217
+00:34:09,724 --> 00:34:10,683
+Simetrik matrisidir.
+
+218
+00:34:22,867 --> 00:34:41,827
+Eğer A'nın transpozu, A'nın eksilisini eşitse arkadaşlar, A transpoz eşittir, eksi A ise, bu durumda da matrisse tersimetrik matris diyeceğiz.
+
+219
+00:34:43,967 --> 00:34:46,467
+Bu durumda ne olacak arkadaşlar?
+
+220
+00:34:48,788 --> 00:34:50,728
+AİJ eşittir.
+
+221
+00:34:51,608 --> 00:34:56,087
+Eksi AJI olacak.
+
+222
+00:35:08,724 --> 00:35:11,724
+Peki, buradan da yine bir sonuç çıkartabiliriz.
+
+223
+00:35:38,867 --> 00:35:46,528
+Ters simetrik matrisde, esas köşegen üzerindeki elemanlar sıfırdır.
+
+224
+00:35:48,788 --> 00:35:51,867
+Başka türlü şu şartı yakalayamazsınız.
+
+225
+00:35:54,208 --> 00:35:55,748
+Örnek üzerinde göreceğiz zaten şimdi.
+
+226
+00:36:02,739 --> 00:36:03,759
+Evet, [öğrenci].
+
+227
+00:36:06,079 --> 00:36:08,000
+[öğrenci], matrislerde mutlak değer oluyor mu?
+
+228
+00:36:09,199 --> 00:36:10,379
+Bu oluyorsa...
+
+229
+00:36:10,379 --> 00:36:14,079
+Matrislerde mutlak değer olmuyor, matrislerde determinant oluyor.
+
+230
+00:36:14,079 --> 00:36:17,379
+Ama sen şunu yapabilirsin, onda bir problem yok.
+
+231
+00:36:18,299 --> 00:36:20,599
+Matrisin mutlak değerini alabilirsin.
+
+232
+00:36:22,139 --> 00:36:22,699
+Bu ne demek?
+
+233
+00:36:23,299 --> 00:36:24,079
+Her bir elemanın...
+
+234
+00:36:25,492 --> 00:36:31,412
+Negatif ise pozitif yap demek. Yani onun bir şeyi yok. Ne derler? Bir esprisi yok.
+
+235
+00:36:32,112 --> 00:36:41,311
+Peki şöyle yapsak, mesela A'yı mutlak değer alıp transpozunu alsak, eksi A'ya eşit olmaz mı? Eksi ise A.
+
+236
+00:36:41,851 --> 00:36:50,172
+Ama o zaman sen mutlak değer alıyorsun, başka bir şey yapıyorsun, başka bir işlem yapıyorsun, matrisin yapısını değiştiriyorsun, aynı matris olmuyor ki o. Sen ne yapıyorsun?
+
+237
+00:36:51,092 --> 00:37:14,372
+Bir maddes aldın elinde, negatif elemanları var, esas köşeyinde negatif elemanları var diyelim. Gerçi pozitif olsa da fark etmez. Sen bunun transpozunu alıyorsun, başka bir maddesi hallediyorsun. Bu transpozu kendisine eşitse simetrik maddesi diyorsun. Sen şimdi bir maddes aldın, bunun muhtak değerini aldın.
+
+238
+00:37:14,900 --> 00:37:24,640
+Mutlak değerini aldıktan sonra bu zaten başka bir matris oldu. Yani onu kullanabilirsin. Yani mutlak değer almana gerek yok. Mutlak değer aldığım matrisi kullanırsın yani. Anlatabildim mi?
+
+239
+00:37:26,140 --> 00:37:27,599
+Anladım hocam. Teşekkürler.
+
+240
+00:37:28,900 --> 00:37:37,260
+Ses kesilmez ya. [öğrenci] nasıl kesiliyor ses? Arkadaşlar, benim duymadığım problem yaşayan var mı?
+
+241
+00:37:39,539 --> 00:38:03,079
+[öğrenci], senin belki bağlantında bir problem olabilir. Evet. Problem olmaması gerekiyor arkadaşlar. Peki. Kim değil, soru soran kaçırdım, yani unuttum daha doğrusu. Yani mutlak yer alabilirsin, problem değil ama mutlak yer alırsan başka bir matris olur. Yani o aynı matris olmaz. Tamam mı?
+
+242
+00:38:06,835 --> 00:38:07,935
+Şimdi örnekle de bakalım.
+
+243
+00:38:11,764 --> 00:38:22,364
+A maddisi. Arkadaşlar, şöyle zaten, orada kaçırdık ya da not olarak mı verdik bilmiyorum. Yazıyordur da belki ben, biraz hızlı mı geçtim acaba.
+
+244
+00:38:23,884 --> 00:38:28,524
+P maddisinin simetrik veya ters simetrik olduğunu anlamak için hemen şunu yapıyoruz arkadaşlar.
+
+245
+00:38:29,564 --> 00:38:36,024
+Eğer simetrikle alakalı bir durum varsa, esas köşegenin elemanlarını çiziyoruz.
+
+246
+00:38:38,003 --> 00:38:48,583
+Simetrik matris, arkadaşlar, simetrik matrisde esas köşegenin karşılıklı elemanları da simetrik oluyor.
+
+247
+00:38:49,583 --> 00:38:51,743
+Yani aynı oluyor. Bakıyorum.
+
+248
+00:38:53,703 --> 00:38:56,224
+Eksi 3, eksi 3.
+
+249
+00:38:59,956 --> 00:39:01,956
+Deş, deixe.
+
+250
+00:39:07,699 --> 00:39:09,500
+7, 7
+
+251
+00:39:09,500 --> 00:39:12,840
+Ya da, an transpozunu alalım.
+
+252
+00:39:20,148 --> 00:39:44,148
+2, x-3, x satırı x tutuna yazdım, x-3, 5, x-3, 6, 7, 5, 7, x-8. Bakıyorum bu A matrisi mi? Evet, A matrisi.
+
+253
+00:39:45,396 --> 00:39:51,676
+A'nın transpozu, A'yı eşit, o halde birinci matris neymiş? Simetrik bir matris.
+
+254
+00:39:58,132 --> 00:40:23,751
+İkinci maddiste baktım. Arkadaşlar, esas köşegenindeki elemanlar sıfır. Bu iyi bir şey. Ters simetriğin emaresi görünüyor. Ters simetrik maddiste de arkadaşlar, esas köşegenindeki elemanlar sıfır olacak. Diğer elemanlar, esas köşegenine göre ters simetrik, yani ters işaretli simetrik olacak. Burada 3 varsa burada eksi 3 olacak.
+
+255
+00:40:25,012 --> 00:40:25,752
+Onun gibi.
+
+256
+00:40:28,412 --> 00:40:29,212
+Efendim?
+
+257
+00:40:29,692 --> 00:40:32,452
+B'yi bir de anlatır mısınız, sıfır olma durumunu?
+
+258
+00:40:33,391 --> 00:40:33,912
+Şunun mu?
+
+259
+00:40:34,292 --> 00:40:34,692
+Evet.
+
+260
+00:40:35,372 --> 00:40:36,412
+Tamam, anlatayım.
+
+261
+00:40:38,152 --> 00:40:41,372
+4, eksi 4, eksi 5, 5.
+
+262
+00:40:42,372 --> 00:40:50,891
+Şimdi, ters simetrik matrisde, B'nin transpozu eşittir, eksi B olmalı.
+
+263
+00:40:52,788 --> 00:40:54,188
+B maddesi verilmiş.
+
+264
+00:40:55,627 --> 00:40:56,988
+B'nin transpozuna bakalım.
+
+265
+00:40:59,047 --> 00:41:00,167
+Ne olacak?
+
+266
+00:41:02,167 --> 00:41:04,667
+Ben bunları sıfır olarak yazmayayım da, madem.
+
+267
+00:41:07,568 --> 00:41:10,728
+A, B, C olsun.
+
+268
+00:41:11,087 --> 00:41:13,307
+Neden sıfır olması gerektiğini soruyor arkadaşımız.
+
+269
+00:41:15,127 --> 00:41:16,728
+Şimdi şunun neyini alalım?
+
+270
+00:41:19,027 --> 00:41:22,387
+Transpozunu alalım. Ne olacak? İlk satır, iki sütuna yazacağım.
+
+271
+00:41:24,247 --> 00:41:24,487
+A
+
+272
+00:41:24,487 --> 00:41:26,327
+3
+
+273
+00:41:26,327 --> 00:41:28,147
+eksi 4
+
+274
+00:41:28,147 --> 00:41:30,547
+Bunu
+
+275
+00:41:30,547 --> 00:41:33,787
+ikinci sütuna yazacağım. Eksi 3
+
+276
+00:41:33,787 --> 00:41:36,427
+B
+
+277
+00:41:36,427 --> 00:41:38,228
+5
+
+278
+00:41:38,228 --> 00:41:42,327
+4
+
+279
+00:41:42,327 --> 00:41:46,107
+eksi 5
+
+280
+00:41:49,139 --> 00:42:11,859
+Şimdi, biz simetrik ve ters simetrik matrisde, transpoz işlemi yaptığımız için, transpoz işlemi kullandığımız için, ve de bir matrisin, n çarpı n tipindeki bir matrisin transpozunu aldığımızda, bakın, esas köşegen değişmediği için,
+
+281
+00:42:14,996 --> 00:42:19,836
+Esas köşegen değişmiyor transpoz aldığımız zaman. Burada da bakın yine değişmedi. Gördünüz mü?
+
+282
+00:42:23,347 --> 00:42:43,887
+E, B transpos eşittir, eksi B olması demek, A, İ, J'nin eksi, A, J, İ'ye eşit olması demek, B'de A, İ, J'ler var, A, B, C, B'nin transposunda da A, B, C'ye var, aynı yerde hatta.
+
+283
+00:42:44,587 --> 00:42:49,447
+Bu ne demek o zaman? A eşittir, eksi A olması demek.
+
+284
+00:42:50,228 --> 00:43:05,268
+B eşittir, eksi B olması demek, C eşittir, eksi C olması demek. Bu da ancak A, B ve C'nin ya da esas köşegendeki elemanların hepsinin sıfır olması ile mümkün. Tamam mı? Yani ters simetrik, öyle.
+
+285
+00:43:06,867 --> 00:43:07,708
+Tamamdır hocam.
+
+286
+00:43:07,867 --> 00:43:08,607
+Tamam, peki.
+
+287
+00:43:10,447 --> 00:43:12,007
+Bu da ters simetrik bir matris.
+
+288
+00:43:13,447 --> 00:43:15,107
+Şunları silelim, sıfır.
+
+289
+00:43:24,563 --> 00:43:31,144
+Bu zaten 2x3 tipinde bir matris. Karasel değil.
+
+290
+00:43:35,380 --> 00:43:39,420
+Karasal değilse ne simetriktir ne de ters simetriktir. Değil mi?
+
+291
+00:43:40,500 --> 00:43:42,620
+İncelemekize bile gerek yok.
+
+292
+00:43:55,795 --> 00:43:58,155
+Yine önemli bir tanım arkadaşlar.
+
+293
+00:44:00,295 --> 00:44:03,855
+Orta bonal matrisler ya da orta bonal matris.
+
+294
+00:44:07,175 --> 00:44:09,515
+Karesel bir A matrisi, ney çarpı ney?
+
+295
+00:44:14,708 --> 00:44:20,188
+Eğer, A'nın transposlu, A'nın tersine eşitsin.
+
+296
+00:44:27,699 --> 00:44:49,939
+A'nın transpozu eşittir, A'nın tersi. Bizim matrislerde çarpma işlemini biliyoruz. Aynı zamanda A çarpı A'nın tersi ya da A'nın tersi çarpı A'nın da birime eşit olduğunu biliyoruz. O halde sağ taraftan bu eşitliği A ile çarparsam,
+
+297
+00:45:15,347 --> 00:45:25,688
+Burası ne yapıyor arkadaşlar? Birim. Yani aslında şu ne demek? A'nın transpozu, A'nın tersine eşit demek ne demek?
+
+298
+00:45:27,947 --> 00:45:40,807
+A'nın transpozu çarpı A eşittir birimse, tabi bu da yine çok kolay bir koşul değil, bu maddesi biz ortogonal maddesi ya da ortogonal bir diyoruz.
+
+299
+00:45:40,807 --> 00:45:42,148
+Tamam mı?
+
+300
+00:45:44,884 --> 00:45:55,123
+Transpozu tersine eşit olan matris ya da Transpozu ile kendisinin çarpımı birim matrise eşit olan matrise ortalık olan matris deniyor.
+
+301
+00:45:59,956 --> 00:46:00,675
+Bakalım.
+
+302
+00:46:02,675 --> 00:46:08,576
+A matrisi kosünüs teta sintata, eksi sintata, kosünüs tata ile öğrenilmiş.
+
+303
+00:46:09,235 --> 00:46:14,996
+Tabii şu anda biz matrisin tersinin bulunmasını bilmediğimiz için arkadaşlar şunu da verdik.
+
+304
+00:46:15,395 --> 00:46:17,835
+Yani biz matrisin tersi nasıl bulunmuş şu anda bilmiyoruz.
+
+305
+00:46:17,956 --> 00:46:18,875
+Onu sonra öğreneceğiz.
+
+306
+00:46:20,215 --> 00:46:23,635
+O yüzden bunu sadece teorik olarak biliyoruz.
+
+307
+00:46:24,635 --> 00:46:25,635
+Ama uygulamada...
+
+308
+00:46:26,324 --> 00:46:35,683
+A çarpı A'nın transpozunu bulabiliriz. Bulalım şimdi. A bu. A'nın transpozunu da hemen şuraya yazayım. Ne olacak?
+
+309
+00:46:40,563 --> 00:46:46,423
+X satırı, X üstüne yazıyorum, sin üstüne yazıyorum.
+
+310
+00:46:48,183 --> 00:46:50,483
+İkinci satırı da ikinci üstüne yazdım.
+
+311
+00:46:51,443 --> 00:46:54,864
+X'i sin üstüne yazdım.
+
+312
+00:46:56,844 --> 00:47:02,324
+Bu A, bu A transpos, çarpalım.
+
+313
+00:47:06,036 --> 00:47:15,635
+Ne yaptı burası? Cos kare teta artı sin kare teta.
+
+314
+00:47:16,835 --> 00:47:17,775
+Burası ne yaptı?
+
+315
+00:47:19,295 --> 00:47:30,596
+Eksi cos teta sin teta artı sin teta cos teta.
+
+316
+00:47:33,076 --> 00:47:36,956
+Eksi sin, pardon, eksi sin tata, kusteta,
+
+317
+00:47:44,532 --> 00:47:45,292
+Otur.
+
+318
+00:47:49,907 --> 00:47:52,007
+Sin kariteta, kos kariteta.
+
+319
+00:47:59,923 --> 00:48:22,983
+Pardon ya. Şurasının şeyini unuttum. Sin kare teta artı kos kare teta yapıyor burası. Şurada ne kaldı? Eksi sin kare teta kos kare teta artı kos kare teta çarpı sin kare teta diye sınırmadım. Bunlar sıfır yapıyor. Sin kare teta artı kos kare teta da bir.
+
+320
+00:48:27,188 --> 00:48:44,867
+O halde, bu matris ile transpozum çarpımı, neye eşitmiş arkadaşlar? Birim matrisi eşit. Diyoruz ki, bu yüzden A matrisi otogonal bir matrisidir.
+
+321
+00:48:50,483 --> 00:48:50,923
+Tamam.
+
+322
+00:49:04,211 --> 00:49:14,431
+Arkadaşlar, bir dakika bana müsaade edin. Soğalayım kendime. Olur mu? Bana sormak istediğiniz varsa sorun.
+
+323
+00:49:43,219 --> 00:50:02,039
+Kompleks matrislerden, daha doğrusu ilk başta matrislerin elemanlarından bahsederken, matrisin tarama verirken, matrisin elemanları real sayılarsa real matris, kompleks sayılar ise kompleks matris diyeceğiz demiştik.
+
+324
+00:50:04,239 --> 00:50:10,519
+Şimdi A matrisi kompleks bir matris olsun, yani elemanları kompleks sayılardan oluşan bir matris olsun.
+
+325
+00:50:12,692 --> 00:50:19,751
+Yine lisede görmüşsünüzdür ya da görmediyseniz de ben hatırlatayım. Kompleks sayı dediğimiz arkadaşlar bizim.
+
+326
+00:50:24,532 --> 00:50:26,412
+C kümesiyle gösteriliyor.
+
+327
+00:50:27,972 --> 00:50:31,492
+C kümesinin elemanları, kompleks sayıların elemanları,
+
+328
+00:50:33,172 --> 00:50:34,812
+A artı,
+
+329
+00:50:36,152 --> 00:50:36,852
+İ, B'ler.
+
+330
+00:50:38,612 --> 00:50:39,271
+Öyle ki,
+
+331
+00:50:41,492 --> 00:50:42,731
+burada A ve B,
+
+332
+00:50:46,739 --> 00:50:53,579
+Real sayı, in'in karesi de, eksi bir.
+
+333
+00:50:55,559 --> 00:51:01,179
+Biz bu sayılardan oluşan kümeye kompleks sayılar kümesi diyoruz.
+
+334
+00:51:10,068 --> 00:51:21,848
+Neyse, çok fazla uzatmaya gerek yok. Demek ki A maddisi A artı İB, ya da B'yi yazılmış burada, çok önemli değil. A artı İB şeklinde elemanlardan oluşan bir matrısmış.
+
+335
+00:51:23,188 --> 00:51:34,088
+Şimdi yine kompleks sayılarda, bir kompleks sayının eşleni diye bir kavram var. O da şöyleydi, buna real kısmı deniyordu, kompleks sayının real kısım.
+
+336
+00:51:37,043 --> 00:51:43,503
+B'ye de yani Ü'nin yanındaki sayıya da sanal kısım deniyor.
+
+337
+00:51:49,492 --> 00:51:57,311
+Bir kompleks sayının eşleniği, sana kısmının işaretinin değiştirilmesiyle elde ediliyor.
+
+338
+00:51:57,452 --> 00:52:10,211
+Yani, bir z kompleks sayım varsa benim a artı i 5 şeklinde, bu kompleks sayının eşleniği z'nin üzerinde çizgiyle ya da barla gösteriliyor z bar.
+
+339
+00:52:10,771 --> 00:52:17,351
+Eşittir A-B, yani sanal kısmının önüne eksi geliyor. Yani sanal kısmı sadece işaretle işitliyor.
+
+340
+00:52:20,571 --> 00:52:28,371
+Aynı bu kompleks sayılarda olduğu gibi kompleks bir matrisin eşleniği de yine A üzerinde çizgiyle gösteriliyor.
+
+341
+00:52:30,291 --> 00:52:56,952
+Ve her bir elemanının eşleniği alınarak bulunuyor. Biraz önce bir arkadaşımız dedi ya, matrislerde mutlak değer var mı? Var ama kullanmıyoruz. Yani kullanmanın bir mantığı da yok. Orada da her bir elemanın mutlak değerini alırsan bir matrisin mutlak değerini almış olursun. Burada da eşleniğini almak istiyorsan bir matrisin, ya da eşleniği, her bir elemanının eşleniği alınarak tanımlanıyor.
+
+342
+00:52:58,260 --> 00:53:13,440
+Tamam mı? O halde eğer A kompleks bir matris ise A'nın eşleniği BİJ maddesi ise ne olmalı arkadaşlar?
+
+343
+00:53:14,540 --> 00:53:24,260
+BİJ, AİJ elemanlarının eşleniği olmalı. Onu söylüyorum. Her bir elemanın eşleniğini algılıyor.
+
+344
+00:53:28,788 --> 00:53:35,107
+Kompleks matrisler için arkadaşlar, eşlenik alma ve transpoz alma işlemleri değişmeli.
+
+345
+00:53:35,107 --> 00:53:45,047
+Yani, A'nın eşleniğinin transpozu, şu sivriye kakalayayım biraz.
+
+346
+00:53:58,547 --> 00:54:11,147
+A'nın eşlenliğinin transpozunun eşlenliği.
+
+347
+00:54:14,147 --> 00:54:20,047
+Değişmeli olduğu için ikisini de özel olarak A üzeri H ile gösteriyoruz.
+
+348
+00:54:21,012 --> 00:54:29,552
+Eşlenik alıp transpoz almayalım. Transpoz alıp eşlenik alma işlemi varsa bunu H ile göstereceğiz.
+
+349
+00:54:31,731 --> 00:54:32,972
+Tamam mı?
+
+350
+00:54:35,072 --> 00:54:36,891
+Tabi buradan tahmin edersiniz artık.
+
+351
+00:54:42,867 --> 00:54:44,728
+Evet, A üzeri H eşittir.
+
+352
+00:54:45,768 --> 00:54:49,067
+A'nın eşleniğin transpozu ya da A'nın transpozunun eşleniği.
+
+353
+00:54:49,967 --> 00:54:51,867
+Eğer bir matris...
+
+354
+00:54:58,356 --> 00:55:00,136
+Ne? Şey yapmıştı. Tamam.
+
+355
+00:55:01,756 --> 00:55:03,776
+Şunu da demiş, bu da önemli arkadaşlar.
+
+356
+00:55:05,256 --> 00:55:11,976
+Eğer real sayı birleşenli bir matrisse matris, eşlenmeyi zaten ne olacak? Kendisine eşit olacak.
+
+357
+00:55:13,096 --> 00:55:18,596
+Çünkü sanal bir kısım yok, real sayı birleşenli bir matriste.
+
+358
+00:55:20,176 --> 00:55:23,736
+Bu durumda ne olur? A'nın transpozu eşittir.
+
+359
+00:55:27,476 --> 00:55:35,036
+A üzeri H olur. Yani direkt eşlenik alma değil de direkt transpoza döner A üzeri H.
+
+360
+00:55:36,836 --> 00:55:39,016
+Onu söyleyeyim, çok önemli değil aslında.
+
+361
+00:55:41,996 --> 00:55:51,076
+Şu önemli, aslında A üzeri H değil de arkadaşlar, genelde belki çoğu kaynakta A yıldızla gösteriliyor bu.
+
+362
+00:55:52,996 --> 00:55:55,076
+Eşleniğinin transpozu ya da
+
+363
+00:55:58,099 --> 00:55:59,420
+Transpozum
+
+364
+00:56:02,900 --> 00:56:03,720
+İştenir.
+
+365
+00:56:19,027 --> 00:56:20,447
+Ama matisini vermiş.
+
+366
+00:56:25,108 --> 00:56:49,588
+A'nın eşleneni bulalım önce arkadaşlar. Kompleks bir matriz. Ne olacak? Sanal kısım işaret değiştirecek. Yani 2-8i, 5 artı 3i, 4 artı 7i.
+
+367
+00:56:54,483 --> 00:57:20,923
+6i'nin eşleniği nedir? Eksi 6i. 1 eksi 4i'nin eşleniği ne olacak? 1 artı 4i. 1 artı 4i. 3 artı 2'nin eşleniği ne olacak? 3 eksi 2i.
+
+368
+00:57:28,563 --> 00:57:31,123
+Bunun transposunu alalım arkadaşlar. Ne yapacağız?
+
+369
+00:57:37,139 --> 00:57:45,939
+Satırı sütun olarak yazacağız. 2-8i, 5 artı 3i, 4 artı 7i.
+
+370
+00:57:48,439 --> 00:57:58,739
+İkinci satırı, eksi 6i, 1 artı 4i, 3 eksi 2i.
+
+371
+00:58:01,439 --> 00:58:03,299
+Bunun olduğu zaman şu.
+
+372
+00:58:06,547 --> 00:58:07,867
+A yıldız.
+
+373
+00:58:09,007 --> 00:58:11,547
+Ya da A üzeri B.
+
+374
+00:58:14,407 --> 00:58:18,727
+Bunlar anlaşılıyor mu arkadaşlar? Sesiniz çıkmıyor. Uyuyor musunuz? Ne yapıyorsunuz?
+
+375
+00:58:20,127 --> 00:58:20,747
+Efendim [öğrenci]?
+
+376
+00:58:22,007 --> 00:58:29,827
+Hocam bu karmaşık sayılarda olan uzayda ne gibi bir ilgi taşıyor? Bunlar bize ne çağrıştırmalı?
+
+377
+00:58:32,659 --> 00:58:57,479
+Kompleks sayılar kümesi, real sayılardan daha büyük bir küme, daha büyük bir uzay. Kompleks sayıların birçok uygulaması var, özellikle fizikte, hatta mühendislikte. Yani neyi çağrıştırmalı derken, sadece şunu çağrıştırsa yeter sana, real sayılardan daha büyük bir küme.
+
+378
+00:58:58,291 --> 00:59:07,911
+Yani real sayılarla elde edemediğin sayıları ya da real sayılarla yapamadığın işlemleri kompleks sayılarla yapıyorsun.
+
+379
+00:59:09,851 --> 00:59:19,231
+Hani demek istediğim her sayının uzayda belli bir taşıdığı bilgi var ya, mesela matrislerde bunlar real sayılar olsaydı belli bir bilgi taşıyordu.
+
+380
+00:59:19,891 --> 00:59:23,692
+Hani bu kompleks sayılar ne gibi bilgi taşıyor? Real sayılardan farklı ya.
+
+381
+00:59:24,083 --> 00:59:27,523
+Hani farklı bir boyutsal açıdan mı bilgi taşıyor?
+
+382
+00:59:29,083 --> 00:59:34,563
+Şimdi şöyle, o zaman çok basit bir örnek vereyim sana.
+
+383
+00:59:36,623 --> 00:59:40,963
+Bir tane elmam var. Elmayı üçe böldüm, [öğrenci].
+
+384
+00:59:43,123 --> 00:59:46,483
+Bu üç parçadan bir iki tanesini sana verdim, bir tanesini kendim aldım.
+
+385
+00:59:48,083 --> 00:59:58,823
+Bunu sen bana tam sayılarla ifade edebilir misin? Yani bu problemi tam sayılarla ifade edebilir misin bana? Edemezsin.
+
+386
+00:59:58,943 --> 00:59:59,503
+Edemezsin.
+
+387
+01:00:00,983 --> 01:00:07,303
+Bunu rasyonel sayılarla ifade ediyorsun, daha büyük bir kümeyle ifade ediyorsun. Yani ben senin sorunu anladım aslında.
+
+388
+01:00:07,791 --> 01:00:26,131
+Yani bu sayıları nerede kullanıyoruz diyorsun aslında sen ya da bu sayıları matrisine ne katıyor diyorsun. Bu sayıların şu anda matrisine katılığı bir şey yok. Yani şu anda. Biz sadece teorik olarak söylüyoruz. Ama bilmen gereken şu bunlar için. Uygulamalarları farklı. Şu anda zaten o dersin konusu değil.
+
+389
+01:00:36,052 --> 01:00:58,672
+Eğer real matris olsaydı bu, A'nın transpozu A yıldıza ya da A üzeri H'ye eşit olacaktı. Yani transpoz alma işlemine denk olacaktı. Ama biz ne yaptık? Kompleks sayılar alarak başka bir işlem tanımladık. Bak bu da ilginç bir durum baktığınız zaman. Yani ne yaptık? Genişlettik aslında tanımladığımız transpoz işlemini.
+
+390
+01:00:59,155 --> 01:01:09,755
+Eşlenik alıp transpoz aldı kompleks sayılarda ama real sayılarda eşlenik almanın hiçbir anlamı yok. Daha manalı oldu yani. Tamam mı?
+
+391
+01:01:10,356 --> 01:01:11,396
+Peki hocam teşekkürler.
+
+392
+01:01:14,296 --> 01:01:18,755
+Hocam, AVSİS şifrenizi alma imkanınız var mı notlar için?
+
+393
+01:01:19,476 --> 01:01:23,675
+AVSİS şifreni ben verdim ya, geçen hafta siz arkadaşlarınızla konuşmuyordunuz mu?
+
+394
+01:01:24,148 --> 01:01:44,908
+Ya grup bu işim daha demin açıldı galiba. O yüzden. Benim haberim yok. Tamam. Hocam, pardon şifre yanlış veriyor. Arkadaşlar bak yazdılar. [öğrenci] yazdı, [öğrenci] yazdı. Teşekkür ederim, sağ olun. Tamam. Şunu deneyim [öğrenci], bunu denelim mi?
+
+395
+01:01:47,764 --> 01:02:05,524
+Bu arada tekrar yazayım. Şöyle arkadaşlar, kusuruma bakmayın. Baya çok arkadaş olunca, ben geçen hafta baya söyledim, anlattım nasıl olacak. İlk defa derste katılanlar olabilir. Tekrar tekrar söylemekle artık yoruyor insanı. Şöyle olacak şeyler, şifreler.
+
+396
+01:02:11,219 --> 01:02:19,999
+Şeyin başlığı neyse, duyurunun başlığı neyse, nasıl yazıldıysa, mesela matrisler M büyük yazılmış bakın. Konu başlığı, şey duyuru başlığı, pardon.
+
+397
+01:02:25,364 --> 01:02:26,364
+Tamam mı?
+
+398
+01:02:28,724 --> 01:02:44,144
+İngilizce notlar da var orada. İngilizce notları da isterseniz eğer, ki aynı notlar, çok bir şey fark etmiyor, onda da grup, İngilizce grup 2, alt tere, işte neyse, duyuru başlığı, tamam mı?
+
+399
+01:02:52,148 --> 01:02:52,827
+Geldik.
+
+400
+01:02:56,563 --> 01:03:04,303
+O, bitmiş ya bu günki konu. Siz de hızlı gidiyoruz. Niye öyle oluyor? Olsun. Hızlı gidelim, bir şey olmaz.
+
+401
+01:03:07,303 --> 01:03:23,963
+Hermitian ya da Hermitian ya da Hermitian, Hermitian diyen de var. Aslında bu Hermitian diye okunuyor ya, bu bir matematikçinin ismi, Hermitian.
+
+402
+01:03:24,884 --> 01:03:29,164
+O yüzden ben değiştirmedim ki Türkçe kanalatlarda da öyle kullanılıyor. Çok da önemli değil.
+
+403
+01:03:29,984 --> 01:03:34,764
+Hermitian, Hermitian ya da Hermisyen matrisler ne oluyor? Şöyle arkadaşlar.
+
+404
+01:03:35,804 --> 01:03:44,304
+Üniten matrisi aslında konumuz değil ama Mehmet Emine Hoca'yı yazmış. Herhalde genel kültür olsun diye normalde şeylerde yok. Çok da önemli değil.
+
+405
+01:03:45,844 --> 01:03:48,284
+Neyi çarpı neyi tipinde kontekstli matrisi mi var?
+
+406
+01:03:50,284 --> 01:03:50,984
+A matrisi mi?
+
+407
+01:03:52,083 --> 01:03:53,663
+Eğer, bu matrisin.
+
+408
+01:04:00,371 --> 01:04:07,371
+Eşleneğinin transpozu, A'ya eşitsin.
+
+409
+01:04:09,971 --> 01:04:16,371
+Bir defa A yıldızlık dedik buna. Burada H diyor ama siz yıldızlık kullanın arkadaşlar. Yıldız daha güzel.
+
+410
+01:04:20,659 --> 01:04:32,199
+Eğer bir kompleks maddesin eşleniğinin transpozu kendisine eşitse, bu maddise Hermitian maddesi deniyor.
+
+411
+01:04:38,132 --> 01:04:51,932
+Şimdi arkadaşlar, parantez içinde şunu da söyleyeyim. Bu matrislerin bazı özellikleri taşıması ya da özel matrisler olması aslında çok önemli. Neden biliyor musunuz?
+
+412
+01:05:05,780 --> 01:05:25,539
+Adenin, timin, kuanin, bir de stozin var ya, bunların dizilimini, DNA genindeki, DNA zincirindeki bu Adenin, timin, kuanin, stozini maddis olarak ifade ediyorlar.
+
+413
+01:05:27,140 --> 01:05:28,420
+Daha sonra,
+
+414
+01:05:29,556 --> 01:05:41,215
+Bu matris üzerinde belli işlemler yapıldıktan sonra matrisin, daha doğrusu o DNA zincirindeki, o şeylerin ismini söyleyemedim, onlara ne deniyordu?
+
+415
+01:05:42,456 --> 01:05:45,816
+Fosfor mu? Yok, fosfor denmiyordu. Neyse, çok da önemli değil.
+
+416
+01:05:47,276 --> 01:05:53,316
+Bunların, bu matrislerin, yani o DNA zincirindeki adenim koanestezini yazdığımız zaman,
+
+417
+01:05:55,188 --> 01:05:59,168
+Bu maddisin belirli şartları ya da belirli özellikleri sağlandığı görünüyor.
+
+418
+01:06:01,288 --> 01:06:07,448
+O zaman şöyle yapılıyor. Şimdi tersinden şu anda yapılan, yani çok kişi çalışıyor bunun üzerinde.
+
+419
+01:06:09,048 --> 01:06:15,008
+Şu anda teorik olarak matematiksel bazı özel o şartları sağlayan maddisler alınıyor.
+
+420
+01:06:19,476 --> 01:06:42,895
+O şey dizisine, söyleyemedim onu şeker mi deniyor, fosfor mu neyse, fosfat mı? O diziye karşılık geliyor mu, gelmiyor mu, ona bakılıyor. Şimdi [öğrenci] soru sordu ya, işte kompleks olmasının ne önemi var ya da nereye karşılık geliyor? Arkadaşlar, muhakkak bir yerlere karşılık geliyor ama ya biz bilmiyoruz ya da kimse bilmiyor, onu söyleyeyim.
+
+421
+01:06:44,467 --> 01:06:48,627
+O yüzden bu matrislerin belli şartları sağlaması önemli yani.
+
+422
+01:06:49,687 --> 01:06:56,347
+Burada da hermitian matris eğer eşlenilmiş transpozu kendisine eşitse bu matise ne deniyormuş?
+
+423
+01:06:57,127 --> 01:07:00,967
+Hermitian ya da hermitian matris deniyor.
+
+424
+01:07:05,331 --> 01:07:07,092
+Bu durumda ne olacak arkadaşlar?
+
+425
+01:07:09,871 --> 01:07:10,391
+Bakın.
+
+426
+01:07:12,831 --> 01:07:14,172
+Şöyle yapalım.
+
+427
+01:07:17,172 --> 01:07:18,051
+A matrisi.
+
+428
+01:07:45,972 --> 01:07:58,552
+Kompleks bunlar, kompleks bileşenli matrisler. Ne istiyoruz biz arkadaşlar? A'nın eşleniğinin transpozu A'ya eşit olsun.
+
+429
+01:08:00,232 --> 01:08:08,832
+Şimdi A'nın eşleniğini alacağım ben. O halde A'ya J'ler ne olmalı?
+
+430
+01:08:13,396 --> 01:08:15,036
+Transpoza eşit olacağı için.
+
+431
+01:08:15,836 --> 01:08:18,436
+A eşlenik, A, J, I.
+
+432
+01:08:19,355 --> 01:08:24,096
+Yine arkadaşlar, karasel bir maddiste ne olacak?
+
+433
+01:08:25,436 --> 01:08:29,956
+Köşegendeki elemanlar ne olmayacaktı?
+
+434
+01:08:30,855 --> 01:08:31,636
+Değişmeyecek.
+
+435
+01:08:33,896 --> 01:08:37,136
+Bir sayının eşleniğine eşit olması ancak ne zaman olur?
+
+436
+01:08:38,076 --> 01:08:38,756
+Arkadaşlar.
+
+437
+01:08:40,340 --> 01:08:58,840
+Köşegendeki elemanların real sayı olmasıydı. Neden? Çünkü eğer burada kompleks sayı olursa, yani a artı ib gibi bir sayı olursa, bu eşleniğine a eksi ib eşit olamaz.
+
+438
+01:08:59,619 --> 01:09:07,659
+Ancak olması için b'nin sıfır olması lazım. Yani sadece a'dan oluşması lazım ya da real sayı olması lazım. O da bir.
+
+439
+01:09:07,967 --> 01:09:15,648
+Tamam mı? O halde bir maddesin, kompleks bir maddesin her mütheden olabilmesi için ne olması gerekiyormuş?
+
+440
+01:09:17,887 --> 01:09:29,788
+A, G, Eşitler, A, G, E'nin eşleniği ve esas köşegendeki elemanların real sayı olması.
+
+441
+01:09:35,283 --> 01:09:36,283
+Tamam mı?
+
+442
+01:09:38,083 --> 01:09:41,283
+Ve her mityan varsa ters her mityan de vardır.
+
+443
+01:09:44,532 --> 01:09:53,572
+Eğer, A yıldız, eşittir, eksi A ise, buna da ters harbittenleniyor.
+
+444
+01:09:53,572 --> 01:10:05,112
+Şimdi arkadaşlar, şeyde söyleyeyim, yeri gelmişken. Eğer siz real matrislerle çalışıyorsanız, her mityan, real matrisle neye karşılık gelir?
+
+445
+01:10:12,307 --> 01:10:18,847
+A yıldız, A ve kreştir, lineer transpozu, eşittir A ve her hüküter.
+
+446
+01:10:23,956 --> 01:10:40,716
+Eğer real sayıysa, birleşenleri, A matrisinin, A'nın eşitliğine A'ya eşit olacak. A'nın transpozu A ise matrisi biz ne demiştik? Bilen var mı?
+
+447
+01:10:47,444 --> 01:10:50,084
+Uyuyor musunuz arkadaşlar? Simetrik, evet.
+
+448
+01:10:50,264 --> 01:10:51,244
+Simetrik matris.
+
+449
+01:10:51,524 --> 01:10:52,684
+Evet, simetrik matris.
+
+450
+01:10:54,884 --> 01:11:04,584
+Demek ki, her mitten kompleks sayılardaki ismi, simetrik, real sayılardaki ismi.
+
+451
+01:11:05,644 --> 01:11:13,844
+Benzer olarak ters her mitten de, eğer kompleks matris değildi, real matris olsaydı,
+
+452
+01:11:14,836 --> 01:11:18,216
+ters simetrik matrisin tanımına eşit olacaktır.
+
+453
+01:11:19,916 --> 01:11:25,476
+Eğer A matrisinin, A konteks matrisinin eşyenliğinin transpozu,
+
+454
+01:11:27,595 --> 01:11:29,155
+eksi A'ya eşit ise,
+
+455
+01:11:31,456 --> 01:11:33,376
+bu matrisi biz ne diyoruz?
+
+456
+01:11:34,956 --> 01:11:36,456
+Ters hamitken matris diyoruz.
+
+457
+01:11:36,456 --> 01:11:41,595
+Şimdi bakın ters hamitken de, arkadaşlar şuraya çizelim.
+
+458
+01:11:41,984 --> 01:11:43,664
+Bir ders yazıcıyor zaten bu da.
+
+459
+01:11:48,148 --> 01:11:57,768
+Çok önemli. Esas köşegen üzerindeki elemanlar sıfır ya da sadece sanal kısımdan oluşan kompleks sayı olmalı. Neden?
+
+460
+01:11:57,768 --> 01:12:01,608
+Neden? Şurada bakın.
+
+461
+01:12:15,604 --> 01:12:18,344
+Neydi bu? Eşleneli olmalıydı ya.
+
+462
+01:12:19,904 --> 01:12:25,064
+Eğer sanal elemanlar bunu düşürse, ne olur?
+
+463
+01:12:26,724 --> 01:12:30,344
+Eşleneli zaten negatif olacak. O yüzden bu sağlanır.
+
+464
+01:12:31,423 --> 01:12:37,104
+Ters ametler olabilmesi için esas köşegen üzerindeki elemanlar ya sıfır olacak ya da ne olacak?
+
+465
+01:12:37,344 --> 01:12:41,463
+Sanal kısmından oluşan kompleks sayılar olacak.
+
+466
+01:12:42,996 --> 01:12:46,236
+Son olarak, uniter matris tanımını da vermişiz.
+
+467
+01:12:48,736 --> 01:12:50,876
+Bu çok kullandığımız bir şey değil ama bilin.
+
+468
+01:12:53,316 --> 01:13:01,576
+A ile A yıldızın çarpımı birim matrisi buna uniteri ya da uniter matris deniyor arkadaşlar.
+
+469
+01:13:06,963 --> 01:13:07,823
+Şimdi bakalım.
+
+470
+01:13:15,315 --> 01:13:19,395
+Size bir matris verilmiş, iki matris verilmiş, bakın üçüncü matrim yok.
+
+471
+01:13:23,252 --> 01:13:31,612
+Bu matris kompleks birleşenli olduğu zaman, arkadaşlar, aklınıza ne gelecek? Hermitgen mi? Ters hermitgen. Başka bir şey gelmesine gerek yok yani.
+
+472
+01:13:33,112 --> 01:13:37,471
+Oradan hemen acaba bu hermitgen mi değil mi diye çıkartabilirsiniz.
+
+473
+01:13:38,512 --> 01:13:40,252
+Şimdi simetrik matris de olduğu gibi...
+
+474
+01:13:44,180 --> 01:13:45,420
+Esas köşegene bakın.
+
+475
+01:13:47,480 --> 01:13:48,060
+Tamam mı?
+
+476
+01:13:49,739 --> 01:13:52,860
+Esas köşegendeki elemanlar, real sayılar.
+
+477
+01:13:52,860 --> 01:13:56,079
+O zaman her miktar mı artış olma, ni var.
+
+478
+01:13:58,480 --> 01:13:59,440
+Durumu var.
+
+479
+01:14:00,480 --> 01:14:02,640
+Esas köşegene göre elemanlara bakıyorum.
+
+480
+01:14:03,700 --> 01:14:07,860
+1 artı 2i, 1 eksi 2i. Evet, bu bunun eşleniği.
+
+481
+01:14:08,467 --> 01:14:16,467
+Sonra buna bakıyorum, 4-7i, 4 artı 7i, bu da bunun eşleniği, 2-2, bu da bunun eşleniği.
+
+482
+01:14:16,868 --> 01:14:21,127
+O halde bu maddesin transpozunun eşleniği ya da eşleniğinin transpozu,
+
+483
+01:14:26,515 --> 01:14:35,755
+Kendisine eşit. Yani A matrisi hermityen bir matris arkadaşlar.
+
+484
+01:14:37,955 --> 01:14:51,655
+B matrisi de, B matrisi de ünitel bir matris. Onun örneğini vermiş. Yani A çarpı A yıldız eşittir. 1, 2, 3.
+
+485
+01:14:54,163 --> 01:14:55,403
+ilmeymiş.
+
+486
+01:15:03,380 --> 01:15:17,819
+Evet. Arkadaşlar, bugün büyük ders buraya kalardı. Sormak istediğiniz, anlamadığınız, söylemek istediğiniz bir şey var mı?
+
+487
+01:15:25,811 --> 01:15:26,951
+Çok teşekkürler hocam.
+
+488
+01:15:27,912 --> 01:15:28,971
+Ben teşekkür ediyorum.
+
+489
+01:15:31,251 --> 01:15:33,631
+Arkadaşlar gidiyorum ben, sormak istediğiniz bir şey var mı?
+
+490
+01:15:37,460 --> 01:15:38,639
+Sağ olun hocam, iyi günler.
+
+491
+01:15:39,100 --> 01:15:46,119
+Peki. Size de iyi günler o zaman arkadaşlar. Haftaya görüşürüz. Ben şimdi ders noktamı yükleyeceğim.
+
+492
+01:15:48,020 --> 01:15:54,300
+Bugünkü ders noktalarını. Oradan takip edersiniz. Tamam mı? Peki.
+
+493
+01:16:02,739 --> 01:16:09,579
+Bu haftanın şifresi yine bu konu neymiş? Karisel matrisler. Şöyle olur.
+
+494
+01:16:12,859 --> 01:16:13,699
+Grup 1.
+
+495
+01:16:18,739 --> 01:16:20,059
+karesel matrisler.
+
+496
+01:16:25,779 --> 01:16:26,179
+Tamam.

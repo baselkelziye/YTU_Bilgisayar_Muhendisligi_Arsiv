@@ -1,0 +1,2655 @@
+1
+00:06:11,220 --> 00:06:12,260
+Merhaba arkadaşlar.
+
+2
+00:06:15,827 --> 00:06:18,407
+Merhaba hocam.
+
+3
+00:06:19,227 --> 00:06:19,487
+Evet.
+
+4
+00:06:19,887 --> 00:06:21,607
+Merhaba hocam.
+
+5
+00:06:21,607 --> 00:06:29,667
+Merhabalar, sizi gördüğüme sevindim diyeceğim ama yarıdan çoğunun yine profil fotoğrafı yok, sizi göremiyorum.
+
+6
+00:06:30,667 --> 00:06:33,048
+Hocam sistemde sorun vardı, yükleyemedik.
+
+7
+00:06:33,747 --> 00:06:35,627
+Sistemde sorun mu varmış?
+
+8
+00:06:36,247 --> 00:06:38,087
+Biliyorum, ben yükleyemedim en azından.
+
+9
+00:06:38,708 --> 00:06:46,148
+Şöyle, browserdan açarsanız galiba yüklenmiyor ama Zoom'u bilgisayarınıza kurmuşsanız eğer yükleyebiliyorsunuz.
+
+10
+00:06:46,908 --> 00:06:56,148
+Sonrasında da her bağlantıda belki tekrar profil fotoğrafını göster seçeneğini işaretlemeniz gerekiyor.
+
+11
+00:06:57,728 --> 00:07:03,588
+Dediğim gibi böyle siyah ekrana ders anlatmaktansa bir iki yüz görmek iyi geliyor bana da.
+
+12
+00:07:04,588 --> 00:07:05,788
+[öğrenci].
+
+13
+00:07:06,451 --> 00:07:09,632
+Teşekkürler [öğrenci], [öğrenci], [öğrenci].
+
+14
+00:07:12,723 --> 00:07:18,803
+[öğrenci], bu çok olmamış galiba senin fotoğrafın değil herhalde.
+
+15
+00:07:19,623 --> 00:07:22,324
+Yok hocam, değiştirebilirim istersen.
+
+16
+00:07:23,363 --> 00:07:31,543
+Evet, yani güzel bir foto tabii. Sevimli bir çocuk, ağlıyor falan ama sizin fotoğrafınız olsa daha iyi olur.
+
+17
+00:07:31,543 --> 00:07:36,003
+Evet, [öğrenci], teşekkür ederim fotoğrafınızı yüklediğiniz için.
+
+18
+00:07:38,228 --> 00:07:42,867
+Tüm katılımcıların, dersi alan öğrencilerin yüzlerini görmek istiyorum.
+
+19
+00:07:44,208 --> 00:07:55,067
+Hani kamera açamıyoruz. Belki bir network için yük oluşturuyor ama en azından fotoğraf olabilir diye düşünüyorum.
+
+20
+00:07:55,608 --> 00:07:58,187
+Sabit bir görüntü. Çok problem olmaz.
+
+21
+00:08:00,187 --> 00:08:04,128
+Evet, yeni bir haftaya başlıyoruz. Dönemin üçüncü haftası.
+
+22
+00:08:04,755 --> 00:08:27,855
+Umarım hepiniz iyisinizdir. Sağlığınız, saatiniz yerindedir. Evden çıkmıyoruz malum. Hafta sonunda hava kötüydü. O yüzden çok fazla bir hareketlilik olmadı ama virüs pik yaptı. Günlük vaka sayısı 20 binin üzerine çıkmış durumda. Gelen haberler üzücü.
+
+23
+00:08:29,459 --> 00:08:36,259
+Umarım baharla birlikte biraz azalır. Bunu bekliyoruz biz de.
+
+24
+00:08:39,259 --> 00:08:48,259
+Ders döneminde üçüncü haftaya geçtik. Size geçen hafta Python'da...
+
+25
+00:08:48,436 --> 00:09:06,436
+Bir NumPyTorial paylaşmıştım hatırlarsanız. Bu hafta yine Python'la örnekler yaparak ilerleyeceğiz. Aslında benim hazırladığım PowerPoint slide'larım da vardı ama bu slide'larla çalışmak...
+
+26
+00:09:06,740 --> 00:09:17,100
+Yerine belki Jüpiter notbuk üzerinden gitmek daha kestirme bir yol olabilir. İkisine de switch ederek gideceğim.
+
+27
+00:09:17,899 --> 00:09:27,799
+Dersten size şöyle bir beklentim var arkadaşlar. Olabildiğince paralelde benim gösterdiğim uygulamaları yapmanızı isteyeceğim.
+
+28
+00:09:27,799 --> 00:09:34,740
+Biraz ağır gideceğim o yüzden. Bu dönem hiç tatile giden bir haftamız falan da olmuyor.
+
+29
+00:09:34,740 --> 00:09:48,299
+O yüzden bu konuları sindire sindire sizin de paralelde çalışma yapmanızı bekleyerek ilerlemeyi düşünüyorum.
+
+30
+00:09:49,759 --> 00:09:55,740
+Bu aşamalarda dediğim gibi zaman zaman belki size ekranınızı paylaşın bile diyebilirim.
+
+31
+00:10:00,000 --> 00:10:19,379
+Görüntülemenizi de isteyebilirim. Paralelde siz de bir Jupyter Notebook ekranı açın. Ayrıca bugün dersle ilgili yüklemiş olduğum Test Image diye bir zipli dosya vardı. Onu download edip bir klasöre yerleştirin.
+
+32
+00:10:19,379 --> 00:10:26,340
+Oradaki görüntüleri siz de paralelde benim yaptığım işlemleri yaparak, açarak ilerleyebilirsiniz.
+
+33
+00:10:28,000 --> 00:10:36,000
+Verdiğim kodlar o PowerPoint sunumunun içinde de var. Oradan da ilerleyebiliriz.
+
+34
+00:10:36,519 --> 00:10:44,019
+Jüpiter Notebook ekranından da paralelde ben her ikisini birden size gösteriyor olacağım.
+
+35
+00:10:46,519 --> 00:10:48,139
+İlki şu.
+
+36
+00:10:54,772 --> 00:11:04,692
+Ders 3, Image Understanding, Intensity Transformation, Special Filtering ve Noise Reduction konu başlıklarımız olacak.
+
+37
+00:11:04,692 --> 00:11:09,692
+Ben aynı zamanda sizlerle...
+
+38
+00:11:32,083 --> 00:11:44,683
+Python ekranını şu şekilde paylaşacağım. Şu anda benim Jüpiter ekranımı görebiliyorsunuz değil mi?
+
+39
+00:11:45,743 --> 00:11:46,283
+Evet hocam.
+
+40
+00:11:46,283 --> 00:11:48,503
+Tamam, güzel.
+
+41
+00:11:50,451 --> 00:11:59,211
+Dediğim gibi bu PowerPoint sunumuyla paralel gidiyor. Geçen hafta bu PowerPoint slide'ları üzerinden başlamıştık.
+
+42
+00:12:00,851 --> 00:12:18,052
+Image Understanding bölümünde görüntü dosyalarının türlerinden de bahsetmiştim. Bir görüntü matrisi 0'a 0 gözü, matrisin sol üst köşesi, matrisin 0'a 0 gözünü gösteriyordu.
+
+43
+00:12:19,956 --> 00:12:32,496
+Python'da bu görüntü dosyasını okumak için OpenCV'de kullanabilirsiniz ama burada Matplot Library ve
+
+44
+00:12:33,971 --> 00:12:52,991
+Psyc Image kütüphanelerini kullanacağım. Psyc Image ile görüntüyü okuma işlemini yapıyorum. Psyc Image kütüphanesi altında IO, input-output işlemleri için Image Read hazır bir tool.
+
+45
+00:13:01,971 --> 00:13:14,971
+Image matrisine okudum. Daha sonra bunu Matplot Library altındaki Pyplot kullanarak ImShow ile ekrana getirdim.
+
+46
+00:13:14,971 --> 00:13:29,751
+Burada gördüğünüz gibi matrisin hangi gözünü temsil ettiğini ifade etmek için 0'dan 300'e, 0'dan 250'ye koordinatları da girmiş.
+
+47
+00:13:29,971 --> 00:13:41,731
+Sıfıra sıfır gözü sol üst köşe. İşte satır doğrultusunda matrisi işlediğimizde bu şekilde görüntüyü elde ediyoruz.
+
+48
+00:13:43,251 --> 00:14:03,611
+Okuduğumuz matrisi, image matrisinin data type'ını, yani içerisindeki sayıların integer, float neyse değişken türünü görmek için data type'ını ve shape'i, yani matrisin size'ını görmek için de shape'i kullanıyorum.
+
+49
+00:14:03,611 --> 00:14:11,231
+Burada bu image matrisi içerisindeki minimum ve maksimum değerleri ekrana getirebiliyorum. Bunları geçen hafta.
+
+50
+00:14:11,251 --> 00:14:31,932
+Şöyle hızlıca bir bakmıştık. Burada bir yine sizinle paylaştığım rose.tif diye bir görüntü dosyası vardı. Bakıyorum. Test image altında. Evet, rose. Rose image'in extension'ı tif dosyası.
+
+51
+00:14:32,371 --> 00:14:44,991
+TİF'de bir Image File formatı, compressible bir yapısı da var. Yine sıkıştırılabilir bir yapıya da sahip.
+
+52
+00:14:46,004 --> 00:15:01,764
+Şimdi bu görüntü üzerinde biraz matriz işlemlerini de kullanarak Resize, Flip ve Crop gibi işlemleri nasıl yapabiliriz? Bunlara bakalım.
+
+53
+00:15:14,004 --> 00:15:31,283
+Burada ben Image 2 matrisinin tüm satırlarında ve tüm sütunlarında ikişerli stepler halinde, yani bir bir gitmek yerine iki iki giderek resmi yarı yarıya, görüntüyü yarı yarıya küçültme işlemi gerçekleştirdim.
+
+54
+00:15:31,283 --> 00:15:42,004
+Tabii ki bu küçültme işlemi için kullanılabilecek bir seçenek değil. Sadece biraz bu matrisler üzerinde slicing işlemlerinde.
+
+55
+00:15:42,004 --> 00:16:04,183
+Burada anlattığım operation'ları, burada biraz denemek için verilmiş bir örnek. Görüntüyü yarı yarıya küçültme veya görüntüyü flip etme, yani ters çevirmek için kullanılan bir başka örnek de en son satırdan ilk satıra kadar diyor. Eksi birlik steplerle.
+
+56
+00:16:04,596 --> 00:16:21,755
+Son sütundan ilk sütuna kadar yine eksi birlik steplerle ben bu görüntü dosyasını okuduğum zaman flip image dediğim imici elde ediyorum. Daha sonra bunu imshow ile görüntülüyorum.
+
+57
+00:16:32,788 --> 00:17:00,788
+1024'de 1024'tü. Ben bu görüntü madresinin içerisinde belli bir bölgeyi kesip çıkartmak istiyorum. İşte şu satırdan şu satıra kadar. 330. satırdan 760. satıra kadar. Ben bunu aslında parametrik de yapabilirdim. Görüntünün satır sayısını ve sütun sayısını biliyorum. Bunun işte %30'undan başla %60'ına kadar gibi ölçüler veririz.
+
+58
+00:17:00,788 --> 00:17:27,668
+Burada doğrudan sayı girişi yaptım ve belli bir bölgesini crop edip, kesip çıkarmış oldum. Crop ettiğim görüntüyü daha sonra ekrana getirdim. Resize işlemleri için Psyc Image altında, Psyc Image Library'de hazır. Zaten çözümler var. O yüzden açıkçası az önce yaptığımız işlemler yerine
+
+59
+00:17:28,788 --> 00:17:39,647
+Rescale ya da Resize gibi hazır fonksiyonları, building function'ları kullanarak bu işlemleri yapmamız daha doğru olacaktır.
+
+60
+00:17:40,723 --> 00:17:51,243
+Burada okuduğum bir görüntü dosyasını %50 oranında bir rescale işlemiyle küçültme diyebiliyorum.
+
+61
+00:17:51,243 --> 00:18:06,043
+Ve oluşturduğum image small dediğim matrisi daha sonra görüntüleyip size'ını 512'ye 512 yarı yarıya küçülmüş.
+
+62
+00:18:06,163 --> 00:18:08,723
+0.5 scaling faktör verdiğim için.
+
+63
+00:18:08,723 --> 00:18:22,663
+Yarı yarıya küçülmüş bir çıkış görüntüsü elde etmiş oldum. Ve proses ettiğim görüntüyü saklamayla ilgili alternatiflere dikkatinizi çekmek istiyorum.
+
+64
+00:18:26,996 --> 00:18:47,076
+Image Read, Im Read işlemi, Site Image altında hazır bir kütüphanenin altında hazır bir fonksiyon. Şimdi ben bunu JPEG olarak okudum ve yine görüntü dosyasını imsave deyip bir JPEG dosya olarak saklayabiliyorum.
+
+65
+00:18:47,076 --> 00:18:54,996
+Burada JPEG uzantısı yerine farklı dosya türleri seçebilirim. Okuduğum dosya JPEG olduğu yerine.
+
+66
+00:18:54,996 --> 00:19:15,376
+Bu da görüntüyü kaydederken sizin dikkatinizi çekmek istediğim bir nokta var. Bu da biliyorsunuz JPEG bir sıkıştırılmış dosya formatı. Görüntü için kullanılıyor ve kayıplı sıkıştırma işlemi yapıyor.
+
+67
+00:19:22,996 --> 00:19:24,316
+Sosyalde etmiş oluyorum.
+
+68
+00:19:24,876 --> 00:19:27,436
+Burada...
+
+69
+00:19:28,372 --> 00:19:45,612
+IMSAV işlemiyle Quality Factor'ü dediğim faktörü 0 ile 100 arasında verebiliyorum. 100'e ne kadar yakınsa o kadar kaliteli, 0'a ne kadar yakınsa o kadar düşük kaliteli görüntü olduğu anlamına geliyor.
+
+70
+00:19:45,612 --> 00:19:56,372
+Quality Factor'ünü iki şekilde vererek iki farklı dosya olarak kaydetmeyi deniyorum ve bunların diskte ne kadar yer tuttuğunu görmek.
+
+71
+00:19:56,372 --> 00:20:04,372
+Yaptığım uygulama bu. Bunu sizin de denemenizi istiyorum. Ben bunu yaptığımda...
+
+72
+00:20:12,756 --> 00:20:14,376
+Şöyle göstereyim.
+
+73
+00:20:17,195 --> 00:20:30,316
+Evet, burada oluşturduğum JPEG dosya, yeni dediğim JPEG dosyanın boyutu hiç kualty faktör vermeden kaydettiğim 13 kilobayttı.
+
+74
+00:20:36,468 --> 00:20:45,327
+6 kilobyte'lık bir dosya sayı boyutuna düşürmüş oldum. Yani kaliteyi oldukça düşürmüş oluyoruz burada.
+
+75
+00:20:47,108 --> 00:20:54,508
+80 verdiğimde quality factor'ı, diskdeki dosya boyutu 16 kilobyte olmuş oluyor.
+
+76
+00:20:54,508 --> 00:20:59,567
+Aslında her iki resme de tıklayıp bakabilirim.
+
+77
+00:21:01,748 --> 00:21:20,347
+Elde ettiğim görüntü, bu quality faktörünü 20 olarak verdiğim görüntü. Gördüğünüz gibi aslında oldukça kötü. Bir de quality faktörü 80 olanı açacağım. Aradaki farkı görebilecek misiniz bakalım.
+
+78
+00:21:20,347 --> 00:21:25,347
+Şimdi ben bunu acaba size tekrar Newshare ile...
+
+79
+00:21:26,387 --> 00:21:35,867
+Şöyle yapıp göstermem gerekir. Bu hangisi acaba? Bilemedim. Bu düşük kaliteli olanmış. Yine Newshare diyelim.
+
+80
+00:21:35,867 --> 00:21:42,447
+Şunu açalım. Düşük kaliteli olanmış.
+
+81
+00:21:48,084 --> 00:21:48,584
+Screen.
+
+82
+00:21:58,516 --> 00:22:12,635
+Bu 20 olan, özür dilerim, şurada zaten görünüyor. Yeni 20 dediğim dosya ile diğeri, diğerini bulmaya çalışıyorum şimdi. O da bu olsa gerek.
+
+83
+00:22:12,635 --> 00:22:24,635
+Bu da 80 olan. Yani ikisi arasında şurada mavi geçişlerinde sanıyorum farkı görebiliyorsunuzdur.
+
+84
+00:22:27,412 --> 00:22:29,132
+Bu iki örnekte.
+
+85
+00:22:34,291 --> 00:22:43,131
+Ben yine şuradan bunu açayım. Buradan kod üzerinden yaptığımız işlemleri takip edelim.
+
+86
+00:22:43,891 --> 00:22:58,471
+Dediğim gibi aslında bu JPEG dosyanın orijinal dosya boyutu da teslimici altındaki balon 24 civarıydı galiba.
+
+87
+00:23:02,867 --> 00:23:04,867
+Properties'den bakayım.
+
+88
+00:23:04,895 --> 00:23:27,456
+20 kilobyte'miş. Sonuç olarak demek ki ben hiç kualti faktörü belirtmediğimde de belli oranda görüntü üzerinde bir kompres yapıyor. Hani kabul edilebilir bir oranda bir kompres işlemi yapıyor ve orijinal boyutundan daha küçük bir boyutta saklıyor.
+
+89
+00:23:32,895 --> 00:23:43,336
+Bir değer 0.75 olabilir. Evet, bu şekilde bir şey kabul edip gerçekleştiriyor.
+
+90
+00:23:43,336 --> 00:23:51,976
+Şimdi neredeyiz? Tekrar notluk ekranındayız.
+
+91
+00:24:04,468 --> 00:24:14,548
+Bir renkli görüntüyle çalışıyoruz ve bu renkli görüntünün üç boyutlu olarak diskte tutulduğunu biliyoruz.
+
+92
+00:24:14,548 --> 00:24:28,748
+Şimdi bu renkli görüntü için bir başka örnek M&M şekerlerinin, biliyorsunuz renkli renkli bir sürü draje şekerler.
+
+93
+00:24:29,168 --> 00:24:31,708
+Onunla ilgili bir JPEG dosyası var.
+
+94
+00:24:32,468 --> 00:24:59,848
+Dosyasını image değişkenine okuduktan sonra bütün satır bütün sütunları bakın yine matriz slicing işlemleri dediğim işlemleri yaparak bütün satırlar bütün sütunlar ama sadece üçüncü boyut yani color palette dediğimiz boyutta 0, 1 ve 2 yani red, green ve blue paletleri sırasıyla RGB dediğim değişken matrişlere okudum.
+
+95
+00:25:00,468 --> 00:25:16,328
+Daha sonra bunları ekrana ayrı ayrı görüntülemek istiyorum. Görüntüde de elde ettiğimiz sonuç bu. Şimdi size bununla ilgili bana bir yorum yapmanızı isteyeceğim. Bakalım nasıl yorumlayacaksınız bu görüntüleri.
+
+96
+00:25:16,328 --> 00:25:24,588
+Yani sormak istediğim aslında şu. Mesela birincisi, birinci görüntü sol baştaki kırmızı palet.
+
+97
+00:25:24,980 --> 00:25:41,559
+Green and Blue paletleri gösteriyor. En sağda ise renkli görüntüyü görüyorsunuz. Mesela kırmızı palette siyah çıkan ve beyaz çıkanlar nelerdir? Yani mesela hangi renkler beyaz çıkar bu görüntüde?
+
+98
+00:25:42,644 --> 00:25:44,723
+Ne dersiniz? Bir yorum yapabilir misiniz?
+
+99
+00:25:45,083 --> 00:25:49,343
+Kırmızılar beyaz olarak gözüküyor hocam. Karşılaştırma yaptığımızda.
+
+100
+00:25:49,723 --> 00:25:58,863
+Neden? Çünkü kırmızı palete bakıyorum. Kırmızı palet, kırmızı rengin en doygun olduğu değerleri bir yapıyor.
+
+101
+00:25:59,380 --> 00:26:21,039
+İçinde hiç kırmızı olmayanları sıfır yapıyor. Grayscale imişle sıfırla birin arasındaki fark nedir? Sıfır siyahı gösteriyor. Bir de beyazı gösteriyor. O yüzden burada beyaz çıkanlar kırmızının en doygun olduğu renkler. Peki ikinci de beyaz çıkanlar hangi renkler?
+
+102
+00:26:23,680 --> 00:26:24,599
+Yeşil.
+
+103
+00:26:24,980 --> 00:26:38,940
+Yeşil, evet güzel. Karşılaştırdığınızda da görebiliyorsunuz değil mi? Bakın yeşilin olduğu şeyler, drajeler burada beyaz çıkmış. Üçüncü grayscale imicde beyaz olanlar hangileri?
+
+104
+00:26:39,508 --> 00:26:57,908
+Mavi. Maviler. Bakın, mavilerin burada beyaz çıktığını görebiliyoruz. Beyaz neydi? Yani eğer 0-1 arasına scale ettiysem beyaz 1'dir. Eğer 0-1 arasına scale etmediysem 255 beyazı gösteriyor. 0 siyahı gösteriyor.
+
+105
+00:27:04,339 --> 00:27:16,079
+Şurada gördüğümüz mavi drajeler. O yüzden full scale oluyor ve 255 veya 1 şeklinde yorumlanıyor.
+
+106
+00:27:18,220 --> 00:27:23,339
+Peki, bir başka örnekte elimizde bir...
+
+107
+00:27:25,440 --> 00:27:41,500
+RGB bir image var, yani renkli bir görüntü var ve bunu grayscale'e dönüştürmek istiyoruz. RGB to grayscale dönüşüm işlemi için farklı denklemler var aslında. Çünkü kullanılan renk uzaylarına göre bu denklemler değişebiliyor.
+
+108
+00:27:53,440 --> 00:28:04,599
+İntensity değeri elde ediyoruz. Burada Y dediğimiz değeri elde ediyoruz. Ve bu Y değeri artık bizim grayscale imicide kullandığımız parlaklık değerine karşı geliyor.
+
+109
+00:28:04,599 --> 00:28:20,599
+Şimdi ben bu renkli görüntüyü, okuduğum renkli bir görüntüyü, bu da belirtilen kat sayılar ile çarparak bir grayscale imice dönüştürebilirim. Burada onunla ilgili küçük bir kod parçası görüyorsunuz.
+
+110
+00:28:21,440 --> 00:28:39,099
+Yine Baloon JPEG imici İmrid ile okudum. Bir image matrise okudum. Sonra bu image matrisinin red, green ve blue paletlerini ayrı birer matrise aldım. İki boyutlu hale getirdim.
+
+111
+00:28:41,715 --> 00:28:58,435
+Image Gray dediğim bir matriz hesaplıyorum. Bu matrizde Red, Green ve Blue matrizlerinin her birini işte yukarıda belirttiğim kat sayılarla çarparak bu grayscale dönüşümünü gerçekleştiriyorum.
+
+112
+00:29:09,715 --> 00:29:35,016
+Grey diye yine hazır bir fonksiyonumuz var. Bunu kullanarak da yapabiliriz. Burada grayscale imaj dönüşümü için renkli görüntüyü RGB to grey fonksiyonuyla dönüştürebiliyorum. Sonra bu hem kendi hesapladığımı hem de bu hazır fonksiyonla oluşturduğum grayscale imajları ekranda görüntülemek istiyorum.
+
+113
+00:29:37,715 --> 00:29:53,415
+Bir satır, iki sütundan oluşan bir çizim alanı oluşturdum. Ve burada ikinci tarafa yazıyorum. Yukarıda da subplot ile birinci göze.
+
+114
+00:30:00,000 --> 00:30:17,619
+Gayscale dönüşüm sonucunu yerleştirdim. Solda gördüğünüz bizim katsayılarla hesapladığımız, sağda gördüğümüz ise hazır kütüphane ile yapılan dönüşüm işlemi sonucunu gösteriyor bize.
+
+115
+00:30:17,619 --> 00:30:22,607
+Ben daha sonra şunu da merak ettim. Acaba bu iki Gayscale image arasında...
+
+116
+00:30:22,607 --> 00:30:40,708
+Ne kadar fark vardır? Yani benim beklentim aslında çok düşük olması yönünde. Çünkü yaklaşık olarak benzer kat sayıları kullanıyor. Fakat işin ilginç yanı bu difference matrisinin minimum ve maksimum değerlerine baktığımda şöyle bir sonuçla karşılaştım.
+
+117
+00:30:50,607 --> 00:31:08,428
+En büyük sayı 253.99 olarak çıkmış. Neden bu sayılar ondalıklı çıkmış? Muhtemelen benim yukarıki yaptığım kat sayılarla çarpma işleminden kaynaklanıyor olabilir. Şurada.
+
+118
+00:31:08,915 --> 00:31:19,675
+Ne oldu? Integer değil çünkü yaptığım işlem bir şey ondalıklı sayı ile yani bir float sayı ile çarptığım için öyle çıktı.
+
+119
+00:31:20,155 --> 00:31:29,135
+Yani arada aslında belli piksellerde çok büyük farklılıklar olduğu anlamına geliyor bu. Böyle bir ilginç sonuç da elde etmiş oldum.
+
+120
+00:31:30,451 --> 00:31:43,252
+Evet, basit ama böyle ufak ufak alıştırma yapacağınız örnekler bunlar ve dediğim gibi bunları paralelde sizin de yapmanızı bekliyorum bir kenarda.
+
+121
+00:31:44,211 --> 00:32:01,332
+Ekranınız açık olabilir, Jüpiter ekranı açık olabilir. Orada bu dönüşüm işlemlerini gerçekleştirebilirsiniz. Onun için size 5 dakika bir şey vereceğim, müsaade edeceğim. Şimdi bunları biraz sizin de küçük küçük yazmanızı bekliyorum çünkü. 5 dakika ara vereyim.
+
+122
+00:32:02,251 --> 00:32:10,251
+Hocam bir şey söyleyebilir miyim? Hani geçen haftada bu indirememe sorunu vardı ya, o bende devam ediyor. Yani o teslimi cücüsü falan ben indiremedim.
+
+123
+00:32:10,607 --> 00:32:11,367
+Öyle mi?
+
+124
+00:32:11,807 --> 00:32:14,028
+Evet, aslında ben de indiremedim hocam.
+
+125
+00:32:14,067 --> 00:32:16,448
+Hocam, ben indirdim, hemen paylaşayım.
+
+126
+00:32:16,528 --> 00:32:18,087
+Ha, chatten paylaşalım.
+
+127
+00:32:18,087 --> 00:32:29,667
+Orada paylaşılabilir de, normalde de hani PowerPoint'leri falan da indirmede sıkıntı yaşıyoruz ya. Acaba hani bu sorun devam edecekse bu dokümanlar kısmında paylaşabilir misiniz?
+
+128
+00:32:30,355 --> 00:32:49,936
+Dökümanlar kısmında da paylaşabilirim tabii ki. Oradan çünkü sorun olmuyordu sanırım. Öyle mi? Tamam. Teşekkürler. Evet, arkadaşımız zipli dosyayı paylaştı. Hadi bakalım, biraz egzersiz zamanı.
+
+129
+00:32:58,259 --> 00:32:59,920
+Hocam, bende bir şey sorulur.
+
+130
+00:33:00,599 --> 00:33:01,200
+Söylesiniz.
+
+131
+00:33:05,587 --> 00:33:07,180
+Önümkadi bitirecek.
+
+132
+00:40:34,835 --> 00:40:40,715
+Evet, ne durumdayız? Yaptık mı uygulamaları?
+
+133
+00:40:42,815 --> 00:40:44,715
+Sizle beraber yapmıştım hocam.
+
+134
+00:40:45,675 --> 00:40:46,055
+Tamam.
+
+135
+00:40:46,055 --> 00:40:47,456
+[öğrenci] şöyle bir üstünden geçtim.
+
+136
+00:40:48,395 --> 00:40:49,315
+Tamam, güzel.
+
+137
+00:40:52,515 --> 00:40:53,835
+Bir tüfe alayla hiç.
+
+138
+00:40:54,975 --> 00:40:58,275
+Tam emin olamadım hocam, formülle hesapladım o kısmı.
+
+139
+00:40:58,275 --> 00:41:01,076
+En sonunda RGB'yi birleştirdiğiniz.
+
+140
+00:41:01,376 --> 00:41:28,536
+Evet, ikisini de yapıp karşılaştıralım istiyordum aslında ama oydu orada. O da ilginç bir örnek çünkü. Arkadaşlar, böyle uygulamalı gitmek istiyorum bu derste. Aslında ben pandemiden önce bu dersi laboratuvarda yapıyordum hep ve öğrencilerin arasında dolaşarak, ekranlarını kontrol ederek ilerliyordum. Bu sene maalesef tabii öyle bir şansımız yok.
+
+141
+00:41:28,927 --> 00:41:53,127
+Ama inanın bu uygulamalı ilerlemenin çok faydası olduğunu düşünüyorum. Eskilerden bir hocamızın taktiği bu. Çok daha iyi anlaşıldığını düşünüyorum. İlerleyen adımlarda farkına varacaksınız. Şimdi çok kolay belki bu uygulamalar ama ilerleyen aşamalarda daha dikkatinizi çekecek bu fark.
+
+142
+00:41:56,532 --> 00:42:01,132
+Evet, şimdi yine Jüpiter ekranıma geçtim.
+
+143
+00:42:03,315 --> 00:42:21,555
+Intensity Transformation, yani görüntü üzerinde iyileştirme yapmanın farklı yolları var. Birincisi, burada gördüğümüz gibi fonksiyon yardımıyla bir dönüşüm yapabiliriz. Görüntü üzerindeki problemin ne olduğunu önce analiz ederiz.
+
+144
+00:42:29,940 --> 00:42:33,807
+Anladıktan sonra problemi gidermek için...
+
+145
+00:42:33,807 --> 00:42:48,867
+Burada gördüğümüz eğrilerden faydalanabiliriz. Bunlar dönüşüm eğrileri. İki haftadır konuşuyoruz üzerinde. Yatay eksen input intensity level'ı gösteriyor. Dikey ise output intensity level'ı gösteriyor.
+
+146
+00:42:48,867 --> 00:43:01,448
+Ben bu eğrilerin faydalarını anlatmam gerekirse şu ortadan giden identity yani girişe L bölü 2 intensity değerini verdiğimde çıkışta da L bölü 2 elde ediyorum.
+
+147
+00:43:01,807 --> 00:43:24,528
+Birebir aynı çıkışı veriyor bana. Identity dediğim line'ı kullanırsam, transformation line'ını kullanırsam. Eğer dönüşüm için şurada gördüğümüz ters diagonal üzerindeki doğru görüntünün tersini negatif imic elde etmeyi sağlıyor.
+
+148
+00:43:29,807 --> 00:43:50,568
+Yani Power, Inverse Log demiş. Bunun etkisi ise nasıl anlıyorduk? L bölü 2 tam input scale'in orta noktası. Ben giriş görüntüsünün parlaklık değeri olarak en ortadaki parlaklık seviyesini verdiğimde outputta bu nereye taşınıyor buna bakıyordum.
+
+149
+00:43:57,807 --> 00:44:01,087
+Bu yaklaşık olarak L bölü 4 gibi bir değere taşınıyor.
+
+150
+00:44:01,587 --> 00:44:09,488
+Bu ne demek? Yani ben giriş görüntüsünde L bölü 2 olan bir parlaklık değerini L bölü 4'e çekiyorsam sıfıra yaklaştırıyorum anlamına geliyor.
+
+151
+00:44:09,488 --> 00:44:11,307
+Ve görüntüyü daha...
+
+152
+00:44:11,380 --> 00:44:29,340
+Koyulaştırıyor. Darker image dediğimiz daha koyu bir görüntü elde ediyoruz. Yani çok aydınlık bir görüntü için bu identity line'ın altında kalan şu eğrileri kullanabilirim veya işte tam tersi.
+
+153
+00:44:31,476 --> 00:44:49,496
+İdentity Line'in üstünde kalan eğrilerin etkisi ise aydınlatma yapmak. Karanlık bir görüntüyü daha aydınlık hale getirmek için de bunu kullanıyorum. Bunları gama fonksiyonları dediğimiz ya da gama eğrileri dediğimiz eğriler yardımıyla da gerçekleştirebiliriz.
+
+154
+00:44:59,476 --> 00:45:00,476
+En büyükse...
+
+155
+00:45:01,043 --> 00:45:16,063
+Görüntüyü daha koyulaştırıyor. Eğer gamma değeri birden küçükse yani işte 0.20, 0.10 gibi gamma değerleri olan fonksiyonlar ise görüntüyü daha aydınlık hale getiriyor.
+
+156
+00:45:16,063 --> 00:45:25,723
+Peki ben bunu nasıl uygulayabilirim görüntüme? Yine hazır fonksiyonları kullanacağım. Site Image Kütüphanesi altında.
+
+157
+00:45:28,851 --> 00:45:43,311
+Exposure, Adjust Gamma diye hazır bir çözümümüz var. Okuduğum bir image matrisini, ki burada bakın tif dosyadan okuma yaptık.
+
+158
+00:45:56,851 --> 00:46:04,051
+Bir sonuç yazdırabiliyorum. Bununla ilgili bir örnek burada verilmiş.
+
+159
+00:46:09,139 --> 00:46:26,659
+Bundan sonraki aşamada bir Histogram of Image bölümü var. Şu fonksiyonu biraz detaylı okuyun. Gamma değerlerine girme vs. ile ilgili parametreleri de oradan yakalayabilirsiniz.
+
+160
+00:46:37,139 --> 00:46:55,019
+Eğer zaten size Psycimge.org sitesi çıkacaktır karşınıza. Psycimge.org sitesinde ekranımı görüyorsunuz değil mi? Psycimge.org şeyini bir daha paylaştık.
+
+161
+00:46:55,019 --> 00:47:03,340
+Ben çünkü Google ekranındayım, Chrome ekranındayım zaten. Tamam. Ctrl F.
+
+162
+00:47:03,956 --> 00:47:14,376
+Exposure Adjust Gamma diye burada zaten değişik alternatiflerle verilmiş.
+
+163
+00:47:17,376 --> 00:47:27,195
+Adjust Gamma için girip bakacak olursam parametreleri nelerdir diye.
+
+164
+00:47:32,019 --> 00:47:49,939
+Gamma eşit bir, gain eşit bir demiş. Gamma correctional input image. Power law transform. This function transformed input image pixels according to the equation. Output eşit input üzeri gamma.
+
+165
+00:47:50,612 --> 00:48:05,211
+Yani input image'in intensity level'ını gamma kuvvetini alıyor. After scaling, tabii bunun için giriş görüntüsünün parlaklık değerlerinin 0-1 arasına normalize edilmiş olması gerekiyor.
+
+166
+00:48:07,952 --> 00:48:17,711
+Bu şekilde burada değişik örnekler görebilirsiniz. Gamma'nın 2 alındığı örnekler de mevcut.
+
+167
+00:48:18,996 --> 00:48:26,796
+Evet, bunları denemenizi isterim. Yavaş yavaş.
+
+168
+00:48:32,851 --> 00:48:47,351
+Yazabiliyor musunuz? Ben bunları anlatırken bir tarafta Jüpiter ekranında yazabiliyor musunuz acaba?
+
+169
+00:48:48,731 --> 00:48:49,911
+Ben yazabiliyorum.
+
+170
+00:48:49,911 --> 00:48:52,952
+Ben zorlanıyorum hocam.
+
+171
+00:48:53,231 --> 00:49:01,251
+Evet, yani biraz yavaş gitmek istiyorum ama tabii şöyle yani önceki haftalardan biraz buna hazırlık yapın demiştim ya.
+
+172
+00:49:01,251 --> 00:49:10,092
+Yani bu hazırlığın amacı aslında işte belki ders notlarını da biraz erken paylaşabilirim sizinle. Ufak ufak bu kodları böyle parçalı yazabilirsiniz.
+
+173
+00:49:11,347 --> 00:49:23,107
+Ama bunlar sizinle paylaştığım PowerPoint'in içerisinde bu kodlar vardı bir kısmı. Oradan alıp üzerine ekleme yapabilirsiniz belki.
+
+174
+00:49:30,195 --> 00:49:49,695
+Ama paralelinde uygulamanız gerçekten faydalı olacaktır. Hem de sadece hoca anlatıyor, öğrenci dinliyor modunda herkes uyuyor. Biraz daha uyanık kalmış olursunuz. Aklınıza belki sorular gelebilir bu kullanımla ilgili. Onları da sorabilirsiniz.
+
+175
+00:49:52,695 --> 00:49:53,615
+Peki.
+
+176
+00:49:54,547 --> 00:50:05,547
+Şimdi bir görüntünün histogramından bahsedelim. Burada bir görüntü verilmiş. Bu görüntü...
+
+177
+00:50:05,907 --> 00:50:26,867
+Histogram of Dark Image diyor. Karanlık bir görüntü verilmiş ve bu görüntünün histogramı burada çizdirilmiş. Yatay eksen bu görüntü içerisindeki parlaklık değerlerini gösteriyor. Dikey eksen ise bu parlaklık değerlerinin görüntü içerisinde bulunma sıklığını gösteriyor.
+
+178
+00:50:26,867 --> 00:50:33,907
+Buna göre baktığımızda bu yatay eksendeki skala 0 ile 255 arasında değişiyor.
+
+179
+00:50:33,907 --> 00:51:00,267
+Fakat 0.255 skelinin sadece sol tarafında yığılmış bir dağılım görüyorsunuz. Bu da sıfıra yakın parlaklık değerlerinin görüntü içerisinde sık tekrarlandığını gösteriyor. Sağ tarafa doğru gittiğimizde gördüğümüz aydınlık parlaklık değerleri görüntü içerisinde hiç yok. Bu bir dark image, karanlık bir görüntü.
+
+180
+00:51:02,867 --> 00:51:04,867
+İkinci sırada ise...
+
+181
+00:51:06,708 --> 00:51:15,248
+Light Image diyor. Aydınlık bir görüntü verilmiş. Aydınlık bir görüntünün histogramı da hemen yanında görebilirsiniz.
+
+182
+00:51:16,208 --> 00:51:24,887
+Dağılım daha çok 255 tarafında toplanmış ya da parlaklık değerlerinin yarıdan sonrası diyelim.
+
+183
+00:51:24,887 --> 00:51:34,708
+Mesela bu yatay eksen 0-255 arasında değişiyor ama bizim elimizdeki tüm parlaklık değerleri belki işte tam ortada 128 gibi.
+
+184
+00:51:34,708 --> 00:51:54,567
+Bir değerden başlıyor. Bunun altı hiç yok. 128'den 255'e kadar olan aralıkta parlaklık değerlerinin yığıldığını gösteriyor. Bu da bir light image örneği. Yani çok aydınlık, patlamış görüntü diyoruz. Çok ışığın fazla olduğu görüntüler için söylenir bu.
+
+185
+00:51:58,579 --> 00:52:11,339
+Düşük kontrastlı, low contrast image diyor. Düşük kontrast ne demek? Şöyle tarif edeyim. Görüntünün içerisinde ne beyaz var ne siyah var.
+
+186
+00:52:11,987 --> 00:52:30,607
+İkisi de yok. Yani uç noktalardaki parlaklık değerleri hiç görüntüde yer almıyor. Ne siyahı görebiliyorum ne beyazı görebiliyorum ama görüntü sadece dar bir aralıkta.
+
+187
+00:52:30,943 --> 00:52:47,423
+Yer alan parlaklık değerleri ile ifade edilmiş. Buna düşük kontrastlı görüntü deniyor. İçinde ne beyaz var ne siyah var. Sadece belli bir aralıkta bir gri tonlardan oluşuyor. Oldukça kötü bir görüntü yani.
+
+188
+00:52:58,943 --> 00:53:14,144
+Hem de beyazın belli bir miktarda olması demek. Ve burada gördüğümüz gibi bütün parlaklık değerlerinin az çok bu görüntünün içerisinde yer alması bunu aslında yüksek kontrastlı görüntü haline getiriyor ve ideal bir görüntü olmuş oluyor.
+
+189
+00:53:14,144 --> 00:53:21,923
+Şimdi histogram çizdirme ve bu histogram üzerinde işlemleri burada göreceğiz.
+
+190
+00:53:27,476 --> 00:53:46,236
+Histogram için Psyc-Image Exposure altında. Histogram yine hazır. Şurada açmıştık zaten burada. Ctrl-F Histogram. Yukarıda görsek daha iyi olurdu.
+
+191
+00:53:48,376 --> 00:53:50,196
+Sayfa başında.
+
+192
+00:53:51,155 --> 00:53:55,155
+Histogram Image. Return Histogram of Image.
+
+193
+00:53:58,155 --> 00:54:01,155
+Ne match histogram var.
+
+194
+00:54:12,211 --> 00:54:22,492
+Kaç aralığa bölerek bu histogramı oluşturmak istediğimizi, input image'i bu parametreleri alıyor.
+
+195
+00:54:24,311 --> 00:54:28,032
+Ve görüntünün histogramını bize döndürüyor.
+
+196
+00:54:28,032 --> 00:54:32,932
+Şimdi burada sonucu görebilirsiniz.
+
+197
+00:54:36,403 --> 00:54:41,043
+Washed Polen noktatif imajını okuyorum. Histogram.
+
+198
+00:54:42,675 --> 00:54:58,635
+Image diyerek bunun histogram centers ve histogram değerlerini oluşturuyorum. Daha sonra bunları, bunu plot ediyorum. Aşağıda gördüğünüz gibi.
+
+199
+00:54:58,635 --> 00:55:10,675
+Görüntü de 90 ile 140 yaklaşık bu iki aralık içerisinde yer alıyor. Intensity değerleri, parlaklık değerleri.
+
+200
+00:55:10,675 --> 00:55:27,155
+O yüzden skalayı o aralıkta başlatmış ve mesela işte varsayalım ki şuradaki değer ne olabilir? 98 olsun. 60 bin kez tekrarlanmış bu.
+
+201
+00:55:27,572 --> 00:55:46,152
+Görüntü matrisinde. 60 bin değil mi o? Evet, doğru okuyorum. Şimdi bu tür problemli görüntülerde yani işte low contrast image dediğimiz düşük kontrastlı görüntülerde histogramı...
+
+202
+00:55:46,291 --> 00:56:09,751
+Eşitlemek görüntüyü daha ideal görüntü haline getiriyor. Neden? Çünkü yukarıda gösterdiğimiz low contrast image'de gördüğümüz şu yığılmayı tüm parlaklık değerlerine belli oranlarda yayma işlemini gerçekleştiriyor. Histogram eşleme dediğimiz yöntem.
+
+203
+00:56:10,291 --> 00:56:29,791
+Bir nevi aslında bu mevcut skalayı açıyor 0-255 arasına ve bu şekilde bir ideal görüntü oluşturmayı hedefliyor. Histogram Equalization dediğimiz yöntem. Peki nasıl çalışıyor?
+
+204
+00:56:30,931 --> 00:56:42,351
+Görüntü İşleme Dersi alan arkadaşlar bunları görmüştür. Ama şöyle yine hızlıca üzerinden geçeceğim. Basit bir örnek var burada. Bu basit örnekle açıklayayım.
+
+205
+00:56:44,628 --> 00:56:59,188
+Elimizde bir giriş görüntüsü var ve giriş görüntüsündeki parlaklık değerleri varsayalım ki 0 ile 7 arasında değer alıyor. Bu ne demek? Bir piksel kaç bitle kodlanmış demektir acaba? Ne söyleyebilirsiniz?
+
+206
+00:57:02,388 --> 00:57:03,867
+8 diyebiliriz hocam.
+
+207
+00:57:03,867 --> 00:57:05,908
+Evet, teşekkür ederim.
+
+208
+00:57:07,603 --> 00:57:19,247
+3 bitle kodlanmış ve 8 farklı değer alıyor anlamına geliyor. Peki 3 bitle kodlanmış bu görüntüde işte…
+
+209
+00:57:19,248 --> 00:57:24,288
+0 parlaklık değeri 790 kez tekrarlanmış.
+
+210
+00:57:24,748 --> 00:57:28,487
+1 parlaklık değeri 1023 kez tekrarlanmış.
+
+211
+00:57:28,607 --> 00:57:34,887
+Bunların NK dediğimiz sütunda bu görüntü içerisinde kaç kez tekrarlandığını gösteriyor.
+
+212
+00:57:34,887 --> 00:57:41,807
+İşte görüntünün farklı noktalarında bu parlaklık değerinin kaç kez tekrarlandığını sayıyoruz.
+
+213
+00:57:47,248 --> 00:58:07,067
+Toplam piksel sayısına bölerek probability'sini hesaplıyoruz. Sağ taraftaki sütunda probability of RK dediği bu parlaklık değerlerinin görüntü içerisinde bulunma istatistiğini gösteriyor bize.
+
+214
+00:58:07,067 --> 00:58:15,248
+Dediğim gibi bunun tekrarlanma sayısını toplam piksel sayısına bölerek bulabilirim. Toplam piksel sayısını nereden bulabilirim?
+
+215
+00:58:15,248 --> 00:58:15,687
+Blue gel.
+
+216
+00:58:19,476 --> 00:58:21,316
+Resmi boyutlarında.
+
+217
+00:58:21,976 --> 00:58:23,176
+En kanun toplumu.
+
+218
+00:58:24,431 --> 00:58:37,551
+İki yerden süpersiniz. İkisi de geldi cevapların. Teşekkür ediyorum. Öncelikli olarak bunu söylemenizi bekliyordum. Şu sütundaki değerlerin toplamı bana bu görüntünün kaç pikselden oluştuğunu verecek.
+
+219
+00:58:37,551 --> 00:58:52,351
+Diğer tarafta eğer görüntü matrisi de zaten bir yerde kayıtlı duruyorsa oradan kaç satır kaç sütundan oluştuğunu bildiğim için M çarpı N diyerek yani satır sayısı çarpı sütun sayısından da bulabilirim. Haklısınız.
+
+220
+00:58:52,431 --> 00:59:01,591
+Sonuç Probability'lerini de yazdık. Bu Probability'leri yazdıktan sonra buraya bir şey eklememiz gerekiyor.
+
+221
+00:59:02,591 --> 00:59:06,291
+Kümülatif toplamlarla ilgili bir sütun eklememiz gerekiyor.
+
+222
+00:59:06,291 --> 00:59:09,291
+Bu işlemi şimdi ben size...
+
+223
+00:59:15,315 --> 00:59:23,375
+Tablet üzerinden hemen açıklayacağım. Biraz tahta kullanmamız da gerekiyor.
+
+224
+00:59:27,860 --> 00:59:35,900
+Az önce küçük bir ara vererek devam ettiğim için ara vermedim. Ara ihtiyacınız varsa ara verebilirim arkadaşlar.
+
+225
+01:00:00,052 --> 01:00:02,092
+Şu an tablete bağlanıyorum.
+
+226
+01:00:06,643 --> 01:00:08,083
+İnterneti bağlandı.
+
+227
+01:03:16,820 --> 01:03:23,660
+Tablet ekranına geçtik. Buradan tahta kullanabiliyorum. O yüzden böyle ilerleyelim.
+
+228
+01:03:38,516 --> 01:03:58,036
+Evet, şuradaydık. Şimdi Histogram Equalization işleminde her bir pikselin tekrarlanma sayısını biliyoruz. Dedik, buradan toplam piksel sayısını bulduk.
+
+229
+01:04:01,715 --> 01:04:06,572
+Ve üçüncü sütunda ise bu...
+
+230
+01:04:06,708 --> 01:04:17,427
+Parlaklık değerlerinin probability'lerini bu imic üzerinde kaç kez geçtiğini bildiğimiz için olma olasılıklarını hesaplamış olduk. İstatistiğini çıkardık.
+
+231
+01:04:17,807 --> 01:04:22,748
+Şimdi bir sonraki sütunda şunu yapacağım. Bunların kümülatif toplamını alarak ilerleyeceğim.
+
+232
+01:04:22,748 --> 01:04:31,927
+Her bir parlaklık değerinin olduğu satırda 0.19. Burası sum diyelim.
+
+233
+01:04:36,307 --> 01:04:47,807
+Probability RK değerleri için olasılıklar toplamını yazıyorum.
+
+234
+01:04:47,807 --> 01:04:52,807
+Birinci satırda 0.19 yazıyordu. İkinci satırda 0.19 yazıyordu.
+
+235
+01:04:57,523 --> 01:05:19,523
+44 oldu. Mesela şuna dikkatinizi çekmek isterim. İlk iki parlaklık değeri bütün görüntünün yüzde 44'ünü oluşturuyor. İkinci satırdaki değeri toplama ilave ettim. Sonra üçüncü satırdakini ekliyorum. 0.65 yapıyor.
+
+236
+01:05:20,211 --> 01:05:37,231
+Toplamları alarak aşağıya doğru ilerliyorum. Yine bir yorum yapacağım. 0, 1, 2 parlaklık değerleri, yani siyaha yakın olan en koyu parlaklık değerleri görüntünün %65'ini oluşturuyor diyor.
+
+237
+01:05:37,231 --> 01:05:46,291
+O zaman bu görüntüyle ilgili şöyle bir yorum yapabiliriz değil mi? Bu görüntü oldukça karanlık bir görüntüdür diyebiliriz.
+
+238
+01:05:47,219 --> 01:06:09,899
+60, 70, 81 yapıyor. Ondan sonra 0.08, yüzde 8 var. Yüzde 89 yapıyor. Pardon, 9 olacak. Sonra 95.
+
+239
+01:06:13,012 --> 01:06:19,771
+0.98 ve 1 yapıyor toplamlarını aldığımda.
+
+240
+01:06:19,771 --> 01:06:32,291
+Daha sonra burada şöyle bir mantığımız var. Biz bu görüntüyü 0.7 arasında, parlaklık değerleri 0.7 arasında olduğu için
+
+241
+01:06:39,347 --> 01:06:49,907
+7 arasında verilmiş ve buradan yola çıkarak biz dedik ki bu görüntünün her bir pikseli 3 bit ile kodlanmıştır.
+
+242
+01:06:49,907 --> 01:06:57,128
+Ve buradan işte en büyük değer, alabileceği en büyük değer 7'dir.
+
+243
+01:06:57,827 --> 01:07:05,748
+Bu hangi aralığa taşımak istediğimiz bilgisini kullanarak
+
+244
+01:07:06,164 --> 01:07:15,604
+Bu gördüğümüz parlaklık değerlerinin kümletif toplamlarını oradaki en büyük değer ile 7 ile çarpıyorum.
+
+245
+01:07:15,604 --> 01:07:27,204
+Bu işlemin sonucunda, çarpma işleminin sonucunda 0.19 çarpı 7 dediğimde bu bana 1.33 döndürüyor.
+
+246
+01:07:33,235 --> 01:07:35,155
+0.8 döndürüyor.
+
+247
+01:07:36,416 --> 01:07:42,115
+İşte efendim 0.65 çarpı 7 dediğimde bu bana 4.55 döndürüyor.
+
+248
+01:07:44,576 --> 01:07:49,795
+0.81 çarpı 7 dediğimde 5.67 döndürüyor.
+
+249
+01:07:51,996 --> 01:08:00,235
+Ondan sonraki değer 0.89 ile çarptığımda
+
+250
+01:08:00,788 --> 01:08:25,452
+6.23 Ondan sonraki değer 6.65 Sonra 6.86 Ve 7. Bu değerler real value. Ben bu değerleri, parlaklık değerlerini
+
+251
+01:08:33,939 --> 01:08:37,239
+Renk seçecektim şuradan. Yeşil yapayım.
+
+252
+01:08:37,899 --> 01:08:45,519
+Bu parlaklık değerlerini bir integer ile ifade etmem gerekiyor. O yüzden bunları round ediyorum.
+
+253
+01:08:45,939 --> 01:08:48,519
+Yani en yakın tam sayıya yuvarlıyorum.
+
+254
+01:08:49,379 --> 01:08:56,379
+Burası 1 oluyor. Burası 3 oluyor. Sonraki değer 5 oluyor.
+
+255
+01:08:56,379 --> 01:08:58,519
+Bu 6.
+
+256
+01:08:59,719 --> 01:09:00,679
+6.
+
+257
+01:09:03,123 --> 01:09:19,123
+7, 7, 7 oluyor. Bunun anlamı şu, aslında bu output için, çıkış için oluşturduğumuz parlaklık değerlerini gösteriyor.
+
+258
+01:09:19,123 --> 01:09:29,123
+Görüntü üzerinde yer alan tüm sıfır değerli pikselleri 1 yapacağım.
+
+259
+01:09:30,036 --> 01:09:38,595
+Output image'imiz burada bu parlaklık değerinin 1'e taşınması gerektiğini söyledi.
+
+260
+01:09:39,976 --> 01:09:45,815
+Parlaklık değeri 1 olan tüm pikselleri 3 yapacağım.
+
+261
+01:09:45,815 --> 01:09:52,175
+Görüyor musunuz? Böyle bir dönüştürme işlemi yapmış oluyorum.
+
+262
+01:09:53,076 --> 01:09:55,775
+Takip edilebildi mi acaba yazdıklarım?
+
+263
+01:09:56,692 --> 01:09:57,511
+Evet hocam.
+
+264
+01:09:58,051 --> 01:10:11,951
+Tamam, güzel. Böyle bir dönüştürme işlemi yapmış olduk. O zaman bana şunu söyleyin. 5 parlaklık değeri kaç oldu çıkış görüntüsünde? Bütün 5'leri gördüğüm yere ne yazacağım?
+
+265
+01:10:14,371 --> 01:10:15,992
+Sanırım 6'e denk geliyor hocam.
+
+266
+01:10:15,992 --> 01:10:16,351
+6.
+
+267
+01:10:16,851 --> 01:10:17,771
+6, evet.
+
+268
+01:10:18,739 --> 01:10:26,440
+Öyle mi? Aşağıdan 3 sayın ya. Biraz kaydırarak yazmış olabilirim yani.
+
+269
+01:10:27,279 --> 01:10:43,600
+7 değil mi? Tamam. Evet. Çünkü ben çok hizalayamadım, farkındayım ama en alttan 3 sayarak bulabilirim. 7. Güzel. Peki, 3 parlaklık değeri kaça dönüştürülüyor?
+
+270
+01:10:45,079 --> 01:10:46,159
+Peşe gelmiyor mu hocam?
+
+271
+01:10:49,203 --> 01:10:49,884
+Bu 6.
+
+272
+01:10:50,243 --> 01:10:50,963
+6 bu da.
+
+273
+01:10:50,963 --> 01:10:51,304
+6.
+
+274
+01:10:52,083 --> 01:10:53,323
+Şuraya geliyor değil mi?
+
+275
+01:10:53,724 --> 01:10:55,343
+Her şey 3. Ben 2'ye baktım.
+
+276
+01:10:55,603 --> 01:10:56,243
+3. Evet.
+
+277
+01:10:56,943 --> 01:10:58,243
+Sıfırdan başlıyor.
+
+278
+01:10:59,423 --> 01:11:02,463
+Tamam. Peki. Şöyle bir şey daha soracağım.
+
+279
+01:11:02,963 --> 01:11:16,003
+Eğer bu görüntüdeki parlaklık değerlerini 0-7 arası değer almış ama ben diyebilirim ki output image'de bunu ben mesela 4 bit per piksel olacak şekilde
+
+280
+01:11:16,564 --> 01:11:20,824
+Düzenleyin desem, neyi değiştirmeniz gerekirdi?
+
+281
+01:11:32,787 --> 01:11:36,207
+8 tane değildi hocam. O zaman 24 tane mi olacak?
+
+282
+01:11:37,887 --> 01:11:42,608
+Şunu 7 ile çarpmak yerine kaç ile çarpmam gerekirdi?
+
+283
+01:11:43,727 --> 01:11:44,587
+15 değil mi?
+
+284
+01:11:44,827 --> 01:11:47,868
+15. Evet, harika. Güzel.
+
+285
+01:11:48,967 --> 01:11:53,847
+Eğer bunu 4 bit için yapmak istiyorsam burayı 15 ile çarpmam gerekirdi.
+
+286
+01:11:54,131 --> 01:12:01,311
+Böyle biraz egzersiz yapmak istedim. Histogram eşleme dediğimiz yöntemin nasıl çalıştığını göstermek için.
+
+287
+01:12:01,311 --> 01:12:17,051
+Yani bunlar sonuçta tabii ki hazır fonksiyonlarla hepsi yapılıyor ama arkada çalışan matematiği bilmemiz gerekiyor. Bilip kullanırsak eğer daha doğru yapmış oluruz.
+
+288
+01:12:31,539 --> 01:12:34,520
+Şimdi nerede kaldık? Şuradayız.
+
+289
+01:12:36,739 --> 01:12:38,659
+Jüpiter ekranında.
+
+290
+01:12:41,500 --> 01:12:53,659
+Histogram Equalization işlemiyle, şurada Exposure Equalize Histogram dediğimiz fonksiyon ile ben bu...
+
+291
+01:12:55,699 --> 01:13:16,420
+İşlemi yapabiliyorum. Image Rescale dediği bir image oluşturuyorum. Ondan sonra bunun histogramını alıyorum ve her ikisini de ekranda görüntülüyorum. Bu histogram Equalization işlemi sonrası.
+
+292
+01:13:16,819 --> 01:13:32,399
+Oluşan görüntü ve onun histogramı. Burada gördüğünüz gibi parlaklık değerlerini 0-255 arasında göstermemiş de 0-1 arasında normalize ederek göstermiş. Fakat dikkatinizi çekmek istediğim konu şu. İçinde 0 da var.
+
+293
+01:13:33,332 --> 01:13:55,052
+İçinde tam siyah da var, tam beyaz da var. Belli miktarlarda yer aldığını görebiliyoruz. O histogramı bir nevi streç ederek bu şeyde görüntülemiş. Daha ideal bir görüntü olarak görüntülemiş.
+
+294
+01:13:56,787 --> 01:14:09,188
+Evet, peki. Hadi yine küçük bir ara ve bu verdiklerimi uygulamasını yapın. Ne kadar vereyim? 10 dakika vereyim. Sorunuz var mı? Önce onu sorayım. Soru var mı?
+
+295
+01:14:10,347 --> 01:14:23,188
+Hocam, renklerle alakalı bir soru soracaktım. Burada RGB'yi ayrı ayrı hesaplayıp, grayscale olarak mı en sonunda çıkartıp renklendiriyoruz yoksa…
+
+296
+01:14:24,020 --> 01:14:29,020
+Bunların başka bir dönüşümle mi ya da bir fonksiyon yardımıyla mı renklendirme yapıyorduk?
+
+297
+01:14:31,020 --> 01:14:34,159
+Üç tane elimde katman vardır mı hocam?
+
+298
+01:14:34,880 --> 01:14:35,280
+Evet.
+
+299
+01:14:35,940 --> 01:14:42,600
+RGB. Bunları belli sayılarla çarpıp bir grey şeyi dönüştürmüştük.
+
+300
+01:14:42,960 --> 01:14:43,140
+Evet.
+
+301
+01:14:43,440 --> 01:14:45,980
+Bunu renkliğe çevirmek için ne yapmamız gerekiyor?
+
+302
+01:14:46,707 --> 01:15:13,887
+Oradan oraya geçmek çok zor. Böyle bir kestirme yolu yok onun. Bakın burada daha büyük bir bilgiden küçük bir şeye dönüşüm yaptınız. Bu dönüşümden sonra oraya gitmenin öyle kestirme yolu yok. Biliyorsunuz şimdi siyah-beyaz görüntüleri renklendirmeyle ilgili değişik çalışmalar var. Ama tam doğru şeyi yakalayamazsınız. O çok mümkün değil.
+
+303
+01:15:14,420 --> 01:15:15,399
+Maalesef.
+
+304
+01:15:15,420 --> 01:15:17,300
+Kafamdan şey gibi durdurdum sen.
+
+305
+01:15:17,971 --> 01:15:28,611
+Aralıkta 0 ve 255 vardı. Onun arasında görü ya da siyah beyaz oluyordu. Acaba bu renklerde de geçerli mi diye düşünüyorum.
+
+306
+01:15:28,611 --> 01:15:42,671
+Yok, maalesef. Orada bambaşka bir boyuta geçiliyor. Artık o veriyi kaybetmiş oluyorsunuz. Dolayısıyla birebir aynı şeyi elde etmenize imkan yok.
+
+307
+01:15:45,971 --> 01:16:07,332
+Şeylerde görüyorsunuzdur, Atatürk'ün eski videolarını renklendiriyorlar. Ama bir takım varsayımlarla işte asker üniforması ne renk olur falan gibi bir takım şeylerle yapıyorlar. Fakat çok da tutarlı değil. Bazıları mesela mavi üniforma diye şey yapıyor ama mora çalan üniforma renkleri görünüyor. Yok, öyle bir yol yok maalesef.
+
+308
+01:16:07,332 --> 01:16:08,251
+Tamam.
+
+309
+01:16:08,431 --> 01:16:12,751
+Evet. Şimdi şunları denemenizi istiyorum.
+
+310
+01:16:13,876 --> 01:16:17,716
+Histogram Equalization ile ilgili. Ekranım da açık.
+
+311
+01:16:18,292 --> 01:16:32,612
+Hocam ben de bir şey söyleyebilir miyim? Dersinizi bu hafta aldım. Size de e-mail attım zaten haber vermek için. Hocam bir şey, bu dokümanları paylaştınız mı arkadaşlarımda? Yoksa hani bir PowerPoint sunum falan mı?
+
+312
+01:16:32,632 --> 01:16:40,492
+Ders duvarında paylaşmıştım ama şimdi size tekrar şu chatten paylaşıyorum. Chatten takip edin tamam mı?
+
+313
+01:16:40,811 --> 01:16:42,192
+Sağ olun hocam, çok teşekkür ederim.
+
+314
+01:16:42,192 --> 01:16:44,652
+Sanırım haftaya zaten işlenmiş olur.
+
+315
+01:16:45,032 --> 01:16:45,811
+Evet, evet hocam.
+
+316
+01:16:46,292 --> 01:16:52,132
+Sesiniz gitti hocam.
+
+317
+01:16:54,772 --> 01:16:55,452
+Ekliyorum.
+
+318
+01:16:55,612 --> 01:16:56,391
+Sesim geliyor mu hocam?
+
+319
+01:16:56,712 --> 01:17:01,552
+Evet, evet. Ben şimdi bu haftaki ders taslarını yüklüyorum.
+
+320
+01:17:01,552 --> 01:17:04,552
+Bir de şey...
+
+321
+01:17:06,195 --> 01:17:18,155
+Send Successfully dedi. Sanırım oldu. Bir de arkadaşlar paylaştılar aslında. Test image diye bir... Evet hocam onları aldım. Ben sadece bu dokümanları sormuştum. Tamamdır. Sağ olun.
+
+322
+01:17:18,155 --> 01:17:32,556
+Tamamdır. Geçen haftayı da paylaşayım hatta. Buradan yine. Ama ders duvarında var. Bir de dokümanları eklemeyi deneyeceğim. Oradan takip edersiniz ders öncesi. Evet, 10 dakika ara.
+
+323
+01:28:21,203 --> 01:28:23,963
+Evet, merhaba tekrar.
+
+324
+01:28:27,539 --> 01:28:28,079
+Merhaba Hüca.
+
+325
+01:28:30,079 --> 01:28:39,619
+Şimdi devam ediyorum. Threshold ve threshold işlemiyle devam edeceğim.
+
+326
+01:28:41,332 --> 01:29:07,891
+Histogram ve histogram eşleme işlemini gördük. Tamam o. Thresholding işlemi nedir? Bunlar çok temel kavramlar. Hızlı hızlı üstünden geçmem gerekiyor. Elimizde bir grayscale imici var gördüğünüz gibi. Bu grayscale imicide beyaz var, gri var, siyah var, daha açık griler var vs.
+
+327
+01:29:09,332 --> 01:29:23,731
+Thresholding dediğimiz işlemin amacı bu grayscale olan ve içinde gri tonlar olan bu görüntüyü siyah-beyaz bir görüntüye dönüştürmek. Bunun için bir eşik değeri seçmemiz gerekiyor.
+
+328
+01:29:31,859 --> 01:29:45,299
+Orjinal görüntü 0.255 arasında değişiyor. Threshold değeri olarak 95 seçtiğimizde sonuçta elde ettiğimiz görüntü neye benzer? Bunu burada görüyorsunuz.
+
+329
+01:29:47,764 --> 01:30:00,503
+95'den küçük olan, mesela background gibi bölgeler, tümüyle siyah olurken, burada gördüğümüz ahşap parçalar,
+
+330
+01:30:02,963 --> 01:30:18,443
+Beyaz renk almış. Böylece siyah-beyaz bir görüntü. Black and white dediğimiz formda bir görüntü elde etmiş olduk. Ben buradaki T değerine eşit değerinin ne değer seçeceğim çok önemli.
+
+331
+01:30:30,963 --> 01:30:43,743
+Ön planda olmasını beklediğim şu nesnelerin tamamını belki görüntüleyemeyebilirdim. O nedenle threshold değerinin seçimi önem kazanıyor.
+
+332
+01:30:46,452 --> 01:30:58,192
+Yaptığı işlem, thresholding işleminde GIG dediğimiz output image, FEG dediğimiz bir input image'imiz var.
+
+333
+01:31:09,908 --> 01:31:30,007
+Foreground Object olarak kabul ediyoruz. Ön plandaki nesneler diye kabul ediyoruz. Bir atıyoruz. Diğerlerine ise sıfır atıyoruz. Background'dır deyip sıfır atıyoruz. Tabi bu nesnenin nasıl bir zemin üzerinde durduğuna göre değişir. Bu genellemeyi sadece siyah arka plan için yapabiliriz.
+
+334
+01:31:37,908 --> 01:31:49,908
+Bu seçersem, şekilde gördüğümüz gibi çok büyük bir alanı beyaza boyamış olurum ki bu durumda burada gördüğümüz nesneleri kaybetmiş olurum.
+
+335
+01:31:50,328 --> 01:32:05,507
+Veya 95 ideal değerde çok üstünde bir değer, 225 gibi bir değer seçersem de foreground object dediğim ön planda olması gereken nesnelerin büyük bir çoğunluğunu arka plan gibi kabul edip onları da siyaha dönüştürür.
+
+336
+01:32:05,908 --> 01:32:15,888
+Ve bu detayları kaybetmiş olurum. O nedenle tekrar istiyorum. Threshold değerinin ne seçildiği önemli.
+
+337
+01:32:19,828 --> 01:32:28,847
+Burada yine güzel bir örnek var. Coins PNG uzantılı bir görüntü.
+
+338
+01:32:29,332 --> 01:32:39,792
+Şurada gördüğümüz görüntü, Coins PNG dosyası. Bunun üzerinde bazı işlemler gerçekleştiriyoruz.
+
+339
+01:32:43,792 --> 01:32:49,792
+Mesela, burada ilk işlem olarak...
+
+340
+01:32:52,020 --> 01:33:04,180
+Threshold'u 100 olarak alıp, 100'den büyük olan değerlere 1 ata, küçük olanları 0 yani siyah yap şeklinde bir threshold'in işlemi.
+
+341
+01:33:04,180 --> 01:33:08,180
+İkinci işlemde ise...
+
+342
+01:33:08,243 --> 01:33:14,724
+150 eşik değerini kullanarak benzer bir thresholding işlemini gerçekleştiriyorum.
+
+343
+01:33:14,724 --> 01:33:20,724
+Bu ikisinin sonuçlarını da aşağıdaki grafikte subplot olarak...
+
+344
+01:33:21,076 --> 01:33:25,195
+Bu subplot olarak görüntülüyorum.
+
+345
+01:33:26,476 --> 01:33:32,496
+Buradan anlaşılan aslında 100 eşik değerinin ideal bir değer olduğunu gösteriyor bana.
+
+346
+01:33:32,496 --> 01:33:45,036
+150 seçtiğimde şuradaki madeni paralardan bir tanesi, biraz daha koyu renk olanı kaybediyorum ve bu arka plana karışmaya başlıyor.
+
+347
+01:33:45,595 --> 01:33:48,355
+Böyle bir sonuç döndürüyor bana.
+
+348
+01:33:50,387 --> 01:34:05,147
+Evet, bunlar böyle thresholding ile ilgili güzel örnekler, temel işlemler. Thresholding işleminin amacı nedir diye şöyle hemen size sorsam ne dersiniz şimdi? Ne anladık? Ne işe yarıyor?
+
+349
+01:34:09,108 --> 01:34:11,427
+Objeleri bulmaya yürüyor diyebilir miyiz hocam?
+
+350
+01:34:13,807 --> 01:34:21,028
+Yani evet, foreground ile background'ı birbirinden ayırmış oluyoruz. Bir çeşit segmentasyon da yapmış oluyoruz.
+
+351
+01:34:21,708 --> 01:34:28,568
+Ama nihai şekli nasıl bir görüntü oluyor? Grayscale'den neye döndürmüş oluyorum?
+
+352
+01:34:28,568 --> 01:34:29,407
+Binary.
+
+353
+01:34:29,760 --> 01:34:45,920
+Binary'e, black and white image'ü etmiş oluyorum. O çok önemli bir fark. Siyah-beyaz görüntü oluşturmuş oluyoruz. Peki, geldik filtrelere.
+
+354
+01:34:46,579 --> 01:35:10,639
+Görüntü işlemede yaptığımız bütün işlemleri biliyorsunuz spatial domain dediğimiz görüntü uzayında yapıyoruz. Normalde işaret işlemede biliyorsunuzdur aynı zamanda bir işareti frekans domainine taşıyıp frekans domaininde de bir takım işlemler yapabiliyoruz.
+
+355
+01:35:14,579 --> 01:35:31,079
+Bu arada hep special domain'de çalışacağız. Ve filtreleri de spatial filtering dediğimiz, işte görüntü uzayında yaptığımız filtrelemeler olarak göstereceğiz. Ne yapıyoruz filtreleme dediğimiz zaman?
+
+356
+01:35:33,652 --> 01:35:49,931
+Örneğin, burada bir filtre örneğinden bahsediyor. A filter that passes low frequency is called a low pass filter. Düşük frekanslı bileşenleri geçiren filtreye low pass filter deniyor.
+
+357
+01:35:50,707 --> 01:36:01,987
+Düşük frekans, yüksek frekans kavramlarını konuşalım. Bir görüntü üzerinde düşük frekans ne demek, yüksek frekans ne demek?
+
+358
+01:36:06,707 --> 01:36:26,707
+Çok keskin kenarlarla oluşturulmuş böyle geçişler varsa bu görüntüye yüksek frekans diyoruz. Yani kenar geçişlerinin işte siyahtan beyaza, beyazdan siyaha sonra başka bir parlak tona geçişler varsa bunlar yüksek frekanslı bölgeleri oluyor görüntünün.
+
+359
+01:36:34,707 --> 01:36:48,307
+Bileşenleri aslında geçirmiyoruz. Sadece düşük frekanslı bileşenleri geçirmiş oluyoruz. Yani yüksek frekanslı bileşenler törpüleniyor, bastırılıyor anlamına geliyor.
+
+360
+01:36:53,108 --> 01:37:09,167
+Bir low-pass filter'ın görüntü üzerinde etkisi ise blurring ya da smoothing efekt dediğimiz bir etki oluşturuyor. Yani kısaca görüntüyü bulanıklaştırıyor.
+
+361
+01:37:09,555 --> 01:37:25,135
+Low Pass Filter görüntüyü bulanıklaştırıyor. O kenar geçişleri, siyahtan beyaza keskin geçişlerin olduğu bölgeler daha smooth hale geliyor, bulanık hale geliyor. Birkaç örnek yaptığımızda bunu göreceksiniz.
+
+362
+01:37:25,135 --> 01:37:35,135
+Şimdi, peki biz bir Low Pass Filter'ı nasıl oluşturabiliriz? Filtre katsayıları nedir? Biraz ona bakalım. Burada...
+
+363
+01:37:36,819 --> 01:38:04,760
+3x3 boyutunda bir filter maskı verilmiş. Bir de aşağıda gördüğünüz bir image matrisi var. Aslında şurada gördüğümüz bir imicin orijini, yani sol üst köşesi sıfırı sıfırı gösteriyor. Bir image matrisinin içindeyim. Bu image matrisinin üzerine yerleştirilmiş 3x3 boyutunda bir filtre maskını görüyoruz.
+
+364
+01:38:04,819 --> 01:38:05,819
+Filtrıya...
+
+365
+01:38:08,051 --> 01:38:22,492
+Bunlar değişik boyutlarda tanımlanabiliyor. 3'e 3, 5'e 5, 7'e 7 ama genelde tek sayı seçiyoruz. Çünkü amacımız bu matrisin bir merkez noktasını işaretleyebilmek.
+
+366
+01:38:22,492 --> 01:38:35,111
+Eğer ben bu matrisi, filtre için kullandığım kernel'ı çift sayı seçseydim, yani 2'ye 2 seçseydim böyle bir merkez noktası tayin edemezdim.
+
+367
+01:38:36,051 --> 01:38:45,811
+O nedenle filtreleri genelde tek sayıda 3'e 3, 5'e 5, 7'e 7 gibi seçiyoruz ki bir merkez noktası tayin edebilelim diye.
+
+368
+01:38:45,811 --> 01:38:56,731
+Bu sözünü ettiğimiz filtre matrisinin içerisinde yer alan değerlere filter coefficients deniyor.
+
+369
+01:38:57,051 --> 01:39:04,051
+Filtrenin kat sayıları deniyor. Bunun içerisine işte ne tür ağırlıklar, ne tür kat sayılar yazıyor.
+
+370
+01:39:04,051 --> 01:39:16,851
+yazacağımıza karar veriyoruz ve buna göre bu filtre ya bir low pass filter oluyor ya bir high pass filter oluyor. Şimdi bunların basit örneklerini göreceğiz. İlk olarak
+
+371
+01:39:17,395 --> 01:39:29,635
+Low Pass Filtre olarak düşük frekansları geçiren filtre, High Pass yani yüksek frekansları bastıran filtre, Low Pass Filtre'den bahsediyorum.
+
+372
+01:39:30,075 --> 01:39:38,175
+Bunu basit anlamda bir 3x3'lük ortalama filtresiyle yapabiliyorum. Ne demek Averaging Mask?
+
+373
+01:39:38,475 --> 01:39:45,175
+Averaging Mask şu arkadaşlar, 3'e 3'lük bir matris tanımlıyorum. Bu matrisin içerisindeki tüm kat...
+
+374
+01:39:45,395 --> 01:39:59,535
+Toplamda bu matrisde 9 tane göz var. Bu 9 tane gözün toplamını alıp toplamı 9'a bölerek bu merkez pikselin yeni ağırlığını buluyorum görüntü üzerinde.
+
+375
+01:40:00,000 --> 01:40:27,180
+Örneğe, buraya 1 bölü 9 kat sayısı koydum. 1 bölü 9 çarpı diyorum ve bu filtrenin bütün gözlerine 1 yazıyorum. Bunun anlamı şu. Ya görüntü üzerindeki bu 9 tane gözü buradaki ağırlıklarla çarpıyorum ve topladıktan sonra 9'a bölüyorum ya da bunların hepsine 1 bölü 9 yazarak da kullanabiliyorum. İki alternatif. İkisi de aynı sonucu verir.
+
+376
+01:40:28,000 --> 01:40:55,560
+Daha pratik olduğu için aslında bütün gözleri topladıktan sonra 9'a bölmek daha kolay bir çözüm gibi görünüyor. Bu gördüğümüz filtre bir ortalama filtresi. Ama ne yapıyor? Bu 9 tane gözün eşit ağırlıklı bir ortalama alıyor. İkinci verdiğimiz örnek katsayılar ise ağırlıklı ortalama alıyor.
+
+377
+01:40:55,904 --> 01:41:14,144
+Neden? Çünkü ben bu filtrenin ortasındaki göz için bir output üretiyorum. O zaman ortadaki gözün ağırlığı daha fazla, komşularının ağırlıklarının daha az olması gerekir.
+
+378
+01:41:23,904 --> 01:41:35,304
+İki kat sayısı yerleştirirken ara yönler dediğimiz biraz daha uzakta kalan pikseller için biraz daha zayıflatılmış kat sayılar kullanabiliyorum.
+
+379
+01:41:35,824 --> 01:41:41,944
+Böylece ağırlıklı ortalama alabilen bir filtre oluşturmuş oluyorum.
+
+380
+01:41:41,944 --> 01:41:51,904
+Bu üçe üçlük filtrenin tüm gözlerinin toplamı 16 ettiği için ortalama alabilmek adına bunu bir bölü 16 ile çarpıyorum.
+
+381
+01:41:51,904 --> 01:42:06,164
+Bu gördüğümüzde ağırlıklı ortalama alan bir filtrenin kat sayılarını gösteriyor. Şimdi elimizde filtre kat sayıları var. Bu filtreyi görüntüye uygularken iki farklı şekilde işlem yapabiliyorum.
+
+382
+01:42:08,180 --> 01:42:24,040
+İşlemi, Operasyon'a ya da konvolüsyon işlemi yapabilirim. Bu ikisi arasındaki farkın ne olduğunu anlatacağım. Şimdi lütfen dikkatli dinleyin. Çünkü bu önemli bir kavram aslında. Genelde çok dikkat edilmiyor.
+
+383
+01:42:26,644 --> 01:42:36,224
+Diyor ki ben bu işlemi anlatmak için burada bir örnek vereceğim diyor. Bu şeyin Gonzales'in kitabından alınmış bir örnek.
+
+384
+01:42:39,123 --> 01:42:52,083
+Fx'ye dediği bir input imici var. Bu input imiç 2, 4, 5 çarpı 5 boyutlarında bir görüntü olsun diyor. Sadece içinde bir tane 1 var. Geriye kalan tüm gözleri 0.
+
+385
+01:42:53,083 --> 01:43:03,083
+Efendim bir de bunu burada gördüğümüz Wx'ye dediği filtre kat sayıları ile çarpacak.
+
+386
+01:43:03,988 --> 01:43:14,868
+Bu filtrenin içerisindeki kat sayılar 1, 2, 3, 4, 5, 6, 7, 8, 9 sıralı sayıları yerleştirmiş bu filtrenin içerisine.
+
+387
+01:43:14,868 --> 01:43:15,868
+Diyor ki...
+
+388
+01:43:17,555 --> 01:43:31,416
+Benim bu görüntüye, bu maskı uygulayıp spatial filtering işlemi, yani görüntü uzayında filtre işlemini yapabilmem için önce bir padding yapmam lazım.
+
+389
+01:43:31,416 --> 01:43:39,175
+Yani output imicinin 5'e 5 çıkabilmesi için bu görüntünün etrafına sıfırlarla dolgu işlemi yapıyor.
+
+390
+01:43:45,555 --> 01:43:55,355
+Kenarlarına sıfırlarla dolgu yapılmış halini gösteriyor. Burada ilk satırda korelasyon sonuçları.
+
+391
+01:43:56,148 --> 01:44:03,707
+İkinci satırda ise konvolüsyon işleminin sonuçlarını veriyor. İkisi arasındaki fark şu arkadaşlar.
+
+392
+01:44:03,707 --> 01:44:16,967
+Korelasyon işleminde WXY maskını doğrudan hiçbir rotasyon işlemi uygulamadan görüntünün üzerine oturtuyorum.
+
+393
+01:44:20,787 --> 01:44:34,927
+Parlaklık değerleri ile filtre kat sayılarını çarpıyorum. Karşılıklı gelen gözlerin çarpımlarının toplamı bu piksel için bir output üretiyor.
+
+394
+01:44:34,927 --> 01:44:37,707
+Bu piksel için bir output üretiyor.
+
+395
+01:44:39,547 --> 01:44:40,607
+Sonuç
+
+396
+01:44:41,652 --> 01:45:00,792
+Korelasyon işleminin sonucu, bakın burada gördüğümüz gibi şu merkezdeki bir pikseli için ilk olarak bu bir, şu maskı burayla örtüştürdüğüm zaman dokuz gözüyle bir örtüşüyor ve ilk dokuzu üretiyor.
+
+397
+01:45:01,247 --> 01:45:16,527
+Ondan sonra bunu yavaş yavaş kaydırdığımda 9, 8, 7'yi üretiyor. Sonra bir kaydırıp yaptığım zaman ikinci satırda yer alan 6, 5, 4 ile örtüşüyor ve bu output'u üretiyor bana, korelasyon işlemi.
+
+398
+01:45:16,527 --> 01:45:25,067
+Peki konvolüsyon işlemi nedir? Konvolüsyon işleminde korelasyonla arasındaki fark şu.
+
+399
+01:45:28,532 --> 01:45:37,371
+Filtre katsayılarının bulunduğu matrisi X ve Y doğrultusunda
+
+400
+01:45:37,555 --> 01:45:51,215
+Rotate ediyorum. 180 derece. Böylece bakın şuradaki matrisi, ana matrisi önce y doğrultusunda, yani mirror ettiğinizi de düşünebilirsiniz.
+
+401
+01:45:51,215 --> 01:46:02,435
+180 derece çevirmek odur. Önce y ekseni üzerinde bir mirror edin. Sonra bir de x ekseni üzerinde bu işlemi yapın.
+
+402
+01:46:05,555 --> 01:46:28,295
+Mask bu şekilde olacak. 9, 8, 7, 6, 5, 4, 3, 2, 1 buraya yerleşecek. Bakın yerleşimi böyle değişiyor. Hem X doğrultusunda hem Y doğrultusunda 180 derece döndürerek elde edilen kat sayılarla aynı filtreleme işlemini yani korelasyon işleminde yaptığımız işin aynısını burada yapıyoruz.
+
+403
+01:46:28,295 --> 01:46:32,415
+Şimdi bununla ilgili de size bir tane örnek yapacağım.
+
+404
+01:46:36,180 --> 01:46:40,280
+Nerede bu örnek? Şöyle bir sayfa açarsak.
+
+405
+01:46:43,340 --> 01:46:44,620
+Boşluk bulduk.
+
+406
+01:46:46,160 --> 01:46:47,700
+Spatial filtering.
+
+407
+01:46:56,212 --> 01:47:01,072
+Şu ekranda yapmayı tercih ettim. Hemen ekranı değiştiriyorum.
+
+408
+01:47:12,275 --> 01:47:13,635
+Şöyle bir örnek yapalım.
+
+409
+01:47:23,891 --> 01:47:36,832
+Tabii söyleyeceğim bir şey daha var. Onu da söyleyeyim de öyle geçeyim oraya. Arkadaşlar, korelasyon işlemiyle konvolüsyon işlemi arasında ki fark sanıyorum anlaşıldı.
+
+410
+01:47:49,779 --> 01:47:56,619
+X ve Y doğrultusunda 180 derece döndürdüğünüzde sonuç birebir aynı olur.
+
+411
+01:47:57,171 --> 01:48:16,331
+Tekrar söylüyorum. Elimdeki weight matriksi, yani filtre kat sayılarının bulunduğu weight matriksi simetrik ise, ben bunu x ve y doğrultusunda 180 derece döndürdüğümde elde ettiğim matriz, başlangıçtaki matrizle biri bir aynı olur.
+
+412
+01:48:16,331 --> 01:48:23,331
+Ama buradaki örnekte simetrik bir matriz kat sayısı olmadığı için sonucun farklı çıktığını görüyorsunuz.
+
+413
+01:48:25,171 --> 01:48:33,171
+Kat sayılar simetrik olsaydı, bunların ikisinin sonucu, korelasyon ve konvolisyon sonuçları aynı çıkardı.
+
+414
+01:48:33,171 --> 01:48:37,171
+Şimdi yapacağımız örnek...
+
+415
+01:48:37,971 --> 01:48:56,551
+Simetrik bir matris üzerinde olacak. Şu matris üzerinde yapacağım. Bakın kat sayıları görüyorsunuz. 1, 2, 1. 2, 4, 2. 1, 2, 1. Bu matris ortalama filtresi demekti. Ve bu ortalama filtresi Lopez Filter olarak isimlendiriliyor.
+
+416
+01:48:59,859 --> 01:49:10,960
+Eşit ortalama almak yerine pikseller üzerinde ağırlıklı ortalama almanın daha doğru bir işlem olduğunu söylemiştik.
+
+417
+01:49:10,960 --> 01:49:20,619
+Merkez noktasının ağırlığı dörtken ana yönlerde kuzey, güney, doğu ve batı yönlerinde bunun yarısı kadar.
+
+418
+01:49:27,279 --> 01:49:47,279
+Weight Matrix oluşturulmuş, ağırlık matrisi oluşturulmuş. Bu matris ile ben bir konvolüsyon işlemi yapmak istediğimde bu matrisi X doğrultusunda ve Y doğrultusunda rotate ettiğinizde birebir aynısını elde ediyorsunuz.
+
+419
+01:49:47,899 --> 01:49:52,520
+O yüzden korelasyon ve konvolüsyon işlemleri arasında hiçbir fark kalmıyor.
+
+420
+01:49:54,804 --> 01:50:11,283
+Şimdi diyorum ki ben bu maskı kullanarak biz bir örnek yapalım. Ben size bir input image vereyim. Bunun üzerinde konvolüsyon işleminin sonucunun ne olduğunu siz bana söyleyin.
+
+421
+01:50:11,283 --> 01:50:17,503
+Bu benim W matrisim. Yani işte filter.
+
+422
+01:50:21,492 --> 01:50:22,212
+Coefficient.
+
+423
+01:50:26,804 --> 01:50:50,963
+Yer alıyor bunun içerisinde. Buna W dedim. Bir de bana bir input image verilmiş olsun. Bu input image'imde rastgele bir görüntü matrisi oluşturuyorum. Sadece 3, 4, 5. İşlemlerin nasıl yapıldığını.
+
+424
+01:50:51,539 --> 01:51:09,199
+Anlatabilmek için. Varsayalım ki bu matriz, bu görüntü 3 bitlik. 3 bit per piksel. Her bir pikselde en fazla 3 bit yani bütün değerler 0 ile 7 arasında değişiyor olsun.
+
+425
+01:51:16,756 --> 01:51:41,796
+0, 1, 1, 2, 6, 1, 2, 2, 3, 4, 1, 3, 4, 5, 6, 2, 5, 6, 6, 7 gibi değerler olsun. Bu da bizim input imicimiz.
+
+426
+01:51:48,819 --> 01:52:01,719
+Şimdi, I input imici ile W matrisi arasında konvolüsyon işlemi yapmak istiyorum. Şu yıldızın anlamı konvolüsyon demek.
+
+427
+01:52:02,599 --> 01:52:09,819
+Konvolüsyon işlemi yapacağım W matrisi, filtre katsayılarının bulunduğu matrisi tekrar söylüyorum.
+
+428
+01:52:14,131 --> 01:52:31,831
+Y doğrultusunda mirror etsem birebir aynısı çıkıyor. Bir de bunu X doğrultusunda mirror ettiğini varsayın, X ekseni üzerinde mirror ettiğinizi varsayın yine aynı sonuç elde ediliyor. Demek ki bunların X arasında bir fark olmadığını görüyoruz.
+
+429
+01:52:39,412 --> 01:53:01,532
+Şimdi 5'e 5'lik bir giriş görüntüsüne ben bu 3'e 3'lük matrisi oturtacak olursam ilk olarak şu alana oturtabilirim. Bunun merkezi için bir output üretirim. O zaman benim elde edeceğim çıkış görüntüsü padding uygulamadığım için kaça kaç olacak? Padding uygulamazsam.
+
+430
+01:53:02,432 --> 01:53:03,231
+3'e 3 mu hocam?
+
+431
+01:53:03,231 --> 01:53:04,112
+Evet.
+
+432
+01:53:04,703 --> 01:53:15,923
+3'e 3 olacak. Normalde input image 5x5 boyutunda ama bu işlem sonucunda elde edeceğim output image.
+
+433
+01:53:21,716 --> 01:53:43,015
+3x3 olacak. Neden? Çünkü padding uygulamadım. İçeriden başlıyorum. Şu merkez için bir output üretiyorum. Bu merkez için output üretmek demek, şuradaki filtre katsayılarını kullanarak bu katsayılarla bu içerideki intensity değerlerini çarpacağım.
+
+434
+01:53:46,195 --> 01:53:51,495
+Pikselin yerine bir output üreteceğim ve ürettiğim sonucu da getüreceğim, burada yerine yazacağım.
+
+435
+01:53:52,495 --> 01:53:55,275
+Yapalım işlemleri. Ne yapıyorum?
+
+436
+01:53:55,275 --> 01:54:04,695
+Yani işte ilk oturttuğum alanda filtre kat sayıları ile görüntü madresinin parlaklık değerlerini çarpıyorum.
+
+437
+01:54:06,323 --> 01:54:26,764
+1 çarpı 1 artı 3 kere 2 6, 2 kere 1 2, ondan sonra artı diyorum, devam ediyorum. 0 çarpı 2 artı 4 çarpı 1 artı 1 çarpı 2.
+
+438
+01:54:33,844 --> 01:54:59,024
+İki kere bir, iki. Yedi, sekiz, dokuz, on üç, on beş, on altı, yirmi iki çıktı. Doğru mu? Yirmi iki mi çıktı? Yirmi iki. Evet. Yirmi iki bölü on altı olacak. Bu göz için hesapladığım çıkış değeri. Yirmi iki bölü on altı. Tamam mı?
+
+439
+01:55:00,020 --> 01:55:15,500
+Benzer işlemleri bu defa maskı kaydırarak tekrarlayacağım.
+
+440
+01:55:15,923 --> 01:55:22,103
+Yani kaydırmak demek şu şekilde örteceğim. Bir piksel sağa doğru kaydırdım maskı.
+
+441
+01:55:22,103 --> 01:55:27,383
+Bu durumda işlem sonuçlarını yine yazacağım.
+
+442
+01:55:28,283 --> 01:55:39,483
+Filtre kat sayıları, yani input image çarpı filtre kat sayıları 3 artı 2 kere 2 4 artı 5.
+
+443
+01:55:40,423 --> 01:55:41,923
+Sonra ikinci satıra geçiyorum.
+
+444
+01:55:42,368 --> 01:56:05,428
+2 artı 4 artı 4 artı 3. satıra geçiyorum. 2 artı 2 kere 2 4 artı 3 kere 1 3. Buradan toplam alacağım. 7, 12, 14, 18, 22, 24.
+
+445
+01:56:08,756 --> 01:56:18,996
+Yirmi sekiz, otuz, bir mi? Otuz beş hesaplamışım daha evvel. Otuz bir mi bulduk?
+
+446
+01:56:18,996 --> 01:56:34,516
+Üç, dört, beş doğru. İki, dört. İki kere iki, dört. Sonra iki, dört ve üç.
+
+447
+01:56:35,155 --> 01:56:43,695
+Hocam, ben bunun algoritmasını yazmıştım da isterseniz. Onlar doğru çıktı diğer dedikleriniz. İsterseniz paylaşabilirim.
+
+448
+01:56:44,876 --> 01:56:58,336
+Yok, ben algoritma istemiyorum. Bunu kendiniz elle yapabilmenizi istiyorum. Sınavda soracağım ya, birazcık böyle kağıt üzerinde problem çözmeyi yapalım amacındayım. Anlatabildim mi?
+
+449
+01:56:58,395 --> 01:56:59,076
+Anladım hocam.
+
+450
+01:56:59,076 --> 01:57:01,935
+31 bölü 16, doğru mu?
+
+451
+01:57:04,564 --> 01:57:05,543
+Ben de öyle oldum.
+
+452
+01:57:06,144 --> 01:57:08,744
+Tamam. Yani siz de hesaplayın.
+
+453
+01:57:09,164 --> 01:57:13,184
+Efendim, ondan sonra bir piksel daha tekrar sağa doğru kaydırıyoruz.
+
+454
+01:57:13,564 --> 01:57:16,564
+Kağıt üzerinde bunun nasıl yapıldığını anlayalım diye yapıyorum.
+
+455
+01:57:17,264 --> 01:57:19,784
+Yoksa elbette yani bunu yapabilirim.
+
+456
+01:57:19,784 --> 01:57:24,624
+Algoritma şeyleri var. Hepsinin çözümleri vardır muhakkak.
+
+457
+01:57:28,564 --> 01:57:29,784
+Bir defa...
+
+458
+01:57:30,224 --> 01:57:39,224
+Bir piksel daha sağa doğru kaydırırsam eğer, aynı kat sayılarla bu parlaklık değerlerini çarpacağım.
+
+459
+01:57:58,899 --> 01:58:07,099
+2, 6, 4 olacak.
+
+460
+01:58:07,099 --> 01:58:22,459
+19, 21, 29, 39, 41, 43, 53, 53 çıkıyor.
+
+461
+01:58:22,459 --> 01:58:25,779
+53 bölü 16.
+
+462
+01:58:30,228 --> 01:58:33,612
+Sonra bu kat sayılar...
+
+463
+01:58:34,836 --> 01:58:41,115
+Filtre kat sayılarını bu defa bir piksel aşağıya kaydırarak aynı işlemleri tekrarlıyorum.
+
+464
+01:58:41,576 --> 01:58:44,055
+Ve şu gözler için hesaplıyorum.
+
+465
+01:58:45,336 --> 01:58:49,176
+Ne yaptık? Burada herhangi bir padding işlemi yapmadık.
+
+466
+01:58:49,176 --> 01:58:59,536
+No padding dedim. Padding işlemi yapmadığımız için input image 5'e 5'ken biz burada output image 3'e 3 olarak üretmiş olduk.
+
+467
+01:59:01,587 --> 01:59:21,367
+İşlemi anlamış olmanız önemli. Ben dediğim gibi bu dersin bir de yazılı sınavı olacak ya orada böyle şeyler sormak zorundayım. Yani size kod falan soramam. Giriş görüntüsünü vereceğim. İşte filtre kat sayılarını vereceğim. Diyeceğim ki konvolisyon işleminin sonucunu bulun. Bu verdiğim filtre için.
+
+468
+01:59:22,420 --> 01:59:28,779
+Konvolüsyon değil de korelasyon işlemi sonucu ne olurdu diye sorsam ne dersiniz?
+
+469
+01:59:29,399 --> 01:59:31,920
+Aynısı olurdu.
+
+470
+01:59:32,219 --> 01:59:33,319
+Çünkü simetrik.
+
+471
+01:59:33,719 --> 01:59:39,500
+Yani 180 derece rotate ettiğimde de aynı kat sayıları elde ediyorum.
+
+472
+01:59:39,639 --> 01:59:42,339
+O yüzden sonuç değişmezdi.
+
+473
+01:59:43,019 --> 01:59:43,719
+Evet, güzel.
+
+474
+01:59:44,539 --> 01:59:46,219
+Anlaşıldığına sevindim.
+
+475
+01:59:46,219 --> 01:59:48,359
+Şimdi.
+
+476
+01:59:51,252 --> 02:00:00,471
+Tekrar bu ekran üzerinden gidelim. Şimdi ben bunu Python'da nasıl yapacağım? Ona bakalım.
+
+477
+02:00:02,391 --> 02:00:11,792
+Python'da güzel bir örnekle gidiyoruz. Burada kendimiz sentetik bir görüntü oluşturacağız önce.
+
+478
+02:00:15,155 --> 02:00:29,655
+Daha iyi anlayabiliriz yaptığımız işlemi diye düşünerek. Diyor ki, 7'ye 7'lik bir matris oluştur. İçindeki bütün pikselleri sıfır olsun. NumPy, zeros, 7'ye 7.
+
+479
+02:00:30,131 --> 02:00:56,612
+Data Type'ı da Float olsun diyor. Daha sonra aynı matrisin Bright Square dediği matrisin içerisine yerleştirdi bu bütün sıfırları. Sonra bu matrisin ikinci satırından beşinci satırına, ikinci sütundan beşinci sütununa kadar olan gözlerini de bir yap dedi. Bakın buradaki output'u ürettik. Bright Square dediği matris de.
+
+480
+02:00:58,131 --> 02:01:10,332
+Ne göreceğim? Bunu görüntülediğim zaman etrafı sıfırlarla çevrili, ortada üçe üçlük bir alanda beyaz olan bir…
+
+481
+02:01:10,336 --> 02:01:23,655
+Görüntü elde edeceğim. Şimdi bunun üzerinde eğer ben bir smoothing işlemi ya da low pass filter işlemi gerçekleştirirsem ne olmasını bekliyorum?
+
+482
+02:01:38,336 --> 02:01:40,756
+Bir geçiş işlemi olmasını sağlayacak.
+
+483
+02:01:41,515 --> 02:01:42,155
+Bakıyorum.
+
+484
+02:01:43,595 --> 02:01:47,216
+Burada görüntüledik.
+
+485
+02:01:47,216 --> 02:01:54,216
+Siyah bir background. İçeride üçe üçlük bir alanda beyaz bir...
+
+486
+02:01:55,024 --> 02:02:19,083
+Bölge var. Mean Filter dediğimiz filtreyi oluşturuyoruz. Mean Filter, NumPy Full dediğim işlem ile oluşturulabilir. Üçü üçlük bir kernel oluşturuyorum. Yani filtre kat sayıları oluşturuyorum. İçi bir bölü dokuz ile doldurulmuş.
+
+487
+02:02:23,024 --> 02:02:32,363
+Filtre kat sayıları. Bu filtre kat sayıları ile şimdi konvolüsyon işlemini gerçekleştireceğim.
+
+488
+02:02:32,363 --> 02:02:43,123
+Burada SciPy'da ND Image.
+
+489
+02:02:43,988 --> 02:03:00,668
+As NDI diye tanıttı. Ve NDI'nin altında konvolüsyon işlemi tanımlıydı. Bright Square dediğim input image'e Mean Kernel ile bu konvolüsyon işlemini uygulamış oluyorum.
+
+490
+02:03:02,963 --> 02:03:22,304
+Konvolüsyon yerine korelasyon yapsam burada da sonuç değişmez. Çünkü simetrik bir yapı söz konusu. Bu işlemin sonucu ne olmuş? Şimdi ona bakacak olursak. Oluşturduğu output image A dedi ve A imajını print ettiğimizde şurada gördüğümüz değerleri elde ettik.
+
+491
+02:03:22,304 --> 02:03:30,963
+Bakın 0-1 keskin geçişleri 0-33-0-67-1 şekline geldi. Şu bölgede 0-33-0-67-1.
+
+492
+02:03:30,963 --> 02:03:56,743
+Bir oldu. Gördük mü? Bu geçiş işte bir smoothing işlemini gösteriyor. Keskin sıfır bir geçişlerinin nasıl blur hale geldiğini, bulanık hale geldiğini gösteriyor. Aşağıda da bunun görüntü formu verilmiş. Ortalama filtresinin etkisinin ne olduğunu burada görmüş olduk.
+
+493
+02:03:59,188 --> 02:04:04,868
+Ortalama filtresinin bir alternatifi Gaussian Filter.
+
+494
+02:04:05,347 --> 02:04:10,468
+Gauss filtresi. Önce bir boyutlu Gauss filtresini bir görelim.
+
+495
+02:04:17,235 --> 02:04:24,596
+Yani standart sapmayı bir alarak yazacak olursak şöyle bir denklem ile ifade edilebilir.
+
+496
+02:04:25,936 --> 02:04:38,796
+Bu Gaussian filtr'ı çok kullanacağız arkadaşlar. O yüzden aslında normal dağılım, istatistikte kullandığımız yani normal dağılım Gaussian Distribution dediğimiz dağılım,
+
+497
+02:04:44,564 --> 02:04:58,764
+Bu şekilde kullanılıyor. Burada da bu şekilde kullanacağız. Şimdi biraz size normal dağılımla ilgili yine biraz açıklama yapma ihtiyacı duyuyorum. Şöyle gidelim.
+
+498
+02:05:12,243 --> 02:05:36,283
+Gaussian Filter in One Dimension. Bir boyutta verilmiş Gauss filtresini görüyoruz. GX dediğimiz bizim outputumuz. X ekseni, yatay eksen ve bir bölü kare kök içerisinde 2P sigma.
+
+499
+02:05:38,996 --> 02:05:42,876
+İki şekilde de yazabilirim. İkisi birbirine eşit.
+
+500
+02:05:43,655 --> 02:05:45,555
+Farklı şekillerde gösteriliyor.
+
+501
+02:05:46,336 --> 02:05:50,956
+Bir bölü, kare kük içerisinde 2P sigma kare diye yazan da var.
+
+502
+02:05:51,376 --> 02:05:53,416
+Sigma'yı dışarı alıp yazan da var.
+
+503
+02:05:53,416 --> 02:05:55,435
+E üzeri eksi.
+
+504
+02:05:56,775 --> 02:05:59,155
+X eksi ortalama değer.
+
+505
+02:05:59,648 --> 02:06:17,108
+Karesi bölü 2 sigma karedir. Bunun esas formülü. Buradaki m değeri ortalama değer. Burada sıfır olduğu için burası sadece x kare bölü 2 sigma kare diye yazılmış.
+
+506
+02:06:24,948 --> 02:06:50,307
+Yani artık bilmenizde fayda var. Dağılıma baktığımız zaman bu bir çan eğrisi. Hepinizin öğrenciliğinde çok da gördüğümüz, bildiğimiz dağılımlardan biri. Sigma değeri, burada artı eksi üç sigma için dağılım gösterilmiş.
+
+507
+02:06:55,572 --> 02:07:05,152
+Artı eksi 3 sigma ile yaklaşık %98'lik bir bölgesine dahil etmiş oluyoruz.
+
+508
+02:07:05,411 --> 02:07:12,072
+Dağılımın altında kalan alan 0,98'e yakın bir değer oluyor.
+
+509
+02:07:12,951 --> 02:07:16,231
+Artı eksi 3 sigma seçtiğimiz zaman.
+
+510
+02:07:19,699 --> 02:07:32,739
+O yüzden sigma'nın kaç katına kadar alacağımız önemli. İki katı olabilir, üç katı olabilir. İdeali genelde iki civarında seçmektir.
+
+511
+02:07:32,739 --> 02:07:45,359
+Yani artı eksi iki sigma almak, dağılımı görüntülemek için daha doğru bir yol.
+
+512
+02:07:53,939 --> 02:07:57,799
+Python koduna geçtiysek, Python ekranından açalım bunu.
+
+513
+02:08:03,923 --> 02:08:14,163
+Burada aynı formülü görüyoruz. E üzeri eksi, x eksi mü'ünün ya da işte x sıfır dediği ortalama değeri gösteriyor.
+
+514
+02:08:14,163 --> 02:08:26,123
+x eksi x sıfırın karesi bölü 2. Sigmayı bir aldığı için burada 2 sigma kare diye yazmamış ama kesrin altında 2 sigma kare yer alıyor.
+
+515
+02:08:26,543 --> 02:08:27,627
+Şimdi ben bunu...
+
+516
+02:08:28,532 --> 02:08:38,532
+Kendi matematiğimizle Python'da önce çizdirmek istesek bir boyutlu bir işareti neye benzerdi diye görmek istiyorum.
+
+517
+02:08:38,532 --> 02:08:40,208
+Onun için...
+
+518
+02:08:40,207 --> 02:08:52,927
+Yatay eksende kullandığım x için bir range oluşturuyorum. Eksi 4'den 5'e kadar birer adımlık stepler halinde bir x sayı dizisi üretiyorum.
+
+519
+02:08:52,927 --> 02:09:07,847
+Daha sonra şu kat sayıyı bir bölü kare kök içerisinde 2 pi sigma, sigma'yı bir alarak gerçekleştirdiğim için.
+
+520
+02:09:08,207 --> 02:09:19,967
+Sigma'yı yazmadım. Öndeki kat sayıyı oluşturdum. Daha sonra k dediğim değerde kat sayı çarpı e üzeri eksi.
+
+521
+02:09:20,404 --> 02:09:32,163
+X'in karesi bölü 2 şeklinde fonksiyonu oluşturdum. Buna k deyip değil g desem, yukarıda k dediğimiz için buna da k demişim.
+
+522
+02:09:32,944 --> 02:09:44,284
+Ve sonra k'yı plot et diyorum. Oluşturduğum k'yı x ekseniyle birlikte, x eksenindeki değerlere bağlı olarak plot et dediğimde böyle bir değer çıkıyor.
+
+523
+02:09:48,404 --> 02:09:58,404
+Üçgenimsi şekillerde çıkmasının sebebi benim örnekleme aralığımın çok geniş olmasından kaynaklanıyor.
+
+524
+02:10:00,000 --> 02:10:16,640
+Aralıklarını küçültürsem, daha sık aralıklarla örnek alırsam bu grafik daha smooth hale gelecek. O yüzden eksi 5'den 6'ya kadar 0.1'lik steplerle x'i oluştur deyip aynı işlemi tekrar yapıyorum.
+
+525
+02:10:18,960 --> 02:10:38,779
+Görüntülediğimde, bunu bir de iki şekilde çizdiriyorum. Sigma 1 olacak şekilde, Sigma 2 olacak şekilde. İki tane Gauss dağılımı burada. Aynı x ekseni için, yani eksi 5'den 5'e kadar olan aralık içerisinde.
+
+526
+02:10:41,140 --> 02:10:55,380
+İlk çizdirdiğim Gauss dağılımında sigma değeri 1 ve ben sigma'nın 5 katına kadarlık bir artı eksi 5 sigma kadarlık bir alanda Gauss dağılımını çizdirmişim görüyorsunuz.
+
+527
+02:10:55,699 --> 02:11:00,600
+2,5 gibi bir değer de neredeyse artık sıfıra çok yaklaştığını görüyorsunuz.
+
+528
+02:11:00,600 --> 02:11:09,140
+Yani ne demiştim az önce? Sigma'nın 2,5 katı ideal bir değer olabilir. 2,5 ya da 3 katı. Ama 5 katı aldığımız zaman burada...
+
+529
+02:11:09,140 --> 02:11:21,060
+Gördüğümüz gibi sigma 1'di. 5, eksi 5, 5 renginde bu bölge olduğu gibi sıfıra çok yakın değerler şeklinde çıkmış.
+
+530
+02:11:21,060 --> 02:11:29,439
+Sağ taraftaki grafikte ise sigma 2 olarak alınmış. Şurada görüyorsunuz 2 sigma kare çünkü.
+
+531
+02:11:34,260 --> 02:11:51,700
+Eksi beşten artı beşe kadarlık bir range içerisinde bunu çizdirdiğimde sigma'nın iki buçuk katı bir şey almış oluyorum. Grafiğe dahil etmiş oluyorum. Ve gördüğünüz gibi grafik ne oldu? Daha yayıldı. Yukarıda.
+
+532
+02:11:52,659 --> 02:12:10,559
+0.40 olan tepe noktası 0.20'ye düştü. Yani altında kalan alan, grafiğin altında kalan alan her zaman birdir. Sol taraftaki grafik daha dik ve yüksek bir çubuk çizecek.
+
+533
+02:12:10,559 --> 02:12:19,699
+İkinci çizdirdiğim Gauss Distribution'da ise yukarısından basılmış, yanlara doğru genişlemiş bir Gauss dağılımı görmüş olacağız.
+
+534
+02:12:20,659 --> 02:12:24,379
+Bu noktası 0.20. Soldakinin yarısı kadar.
+
+535
+02:12:25,908 --> 02:12:43,148
+Bunun yarısına düşmüş ama ne olmuş? Görüntü olarak aslında bunların ikisini üst üste çizdirseydim, belki o zaman daha net görebilirdiniz ikisi arasındaki ayrımı. Şöyle biraz daha şu bölgede kalacak, daha etrafa yayılmış bir dağılım olduğunu görecektik.
+
+536
+02:12:43,148 --> 02:12:47,148
+Galvus dağılımını bu şekilde kendim çizdirip önce görmek istedim.
+
+537
+02:12:49,076 --> 02:13:02,055
+Dediğim gibi bu dağılımı iyi tanımanız gerekiyor. Çünkü çok uygulamalarımızda kullanacağız. İkinci örneğimiz, Gauss dağılımının bu defa iki boyutlu hali.
+
+538
+02:13:03,667 --> 02:13:08,207
+İki boyutlu Gaussian Distribution için bakın formül şöyle değişiyor.
+
+539
+02:13:08,707 --> 02:13:14,427
+Bir bölü, hani buradaki şeyi artık kat sayıyı çok önemsemiyor, kare kökle kullanmıyor.
+
+540
+02:13:14,567 --> 02:13:16,247
+2P sigma kare demiş.
+
+541
+02:13:18,027 --> 02:13:21,767
+E üzeri eksi, yine bu sıfır ortalamalı.
+
+542
+02:13:22,247 --> 02:13:25,887
+X kare artı Y kare bölü 2 sigma kare olarak verilmiş.
+
+543
+02:13:26,067 --> 02:13:27,467
+İki boyutlu Gauss dağılımı.
+
+544
+02:13:27,467 --> 02:13:30,547
+Bunu çizdirdiğimiz zaman,
+
+545
+02:13:30,996 --> 02:13:40,855
+X ve Y'de iki eksenimiz var ve bu iki eksen üzerinde dağılımın 3D çizimini görüyorsunuz ekranda.
+
+546
+02:13:40,855 --> 02:13:50,855
+Ben aynı çizimi kendi matematiğimi kullanarak oluştursam acaba nasıl olur? Burada aşağıda onu görüyorsunuz.
+
+547
+02:13:58,996 --> 02:14:16,715
+Diye iki tane dizi oluşturuyorum. Daha sonra mesh grid dediğim işlemi kullanarak x ve y'nin şu matris gözlerindeki x ve y değerlerini tutan bir matris yapısı oluşturuyorum.
+
+548
+02:14:16,715 --> 02:14:24,275
+Yani iki boyuta geçmiş oluyorum. Daha sonra bu parametreleri formülde yerine yazıyorum.
+
+549
+02:14:26,996 --> 02:14:34,295
+İki yazıyordu ya, onu bakın burada gerçekleştiriyorum ve bunu daha sonra ekrana çizdiriyorum.
+
+550
+02:14:35,123 --> 02:14:43,844
+Bunu plot surface kullanarak, yani yüzey çizdirme fonksiyonunu kullanarak şurada gördüğümüz şekilde çizdiriyorum.
+
+551
+02:14:44,724 --> 02:14:46,863
+Peki ben bu çizimlerden ne elde edeceğim?
+
+552
+02:15:02,836 --> 02:15:26,855
+Filtreler, kullandığım filtrenin kat sayıları olarak bunlardan faydalanacağım. O yüzden Gaussian Distribution ile bir Averaging Filtre'i mesela, ortalama filtresini Gauss fonksiyonu kullanarak gerçekleştirebilirim. İlk olarak oradan başlayacağız.
+
+553
+02:15:30,159 --> 02:15:38,659
+Bu Gauss filtresiyle filtre işleminin nasıl yapıldığını göstermek için bir sentetik yine görüntü üretiyor.
+
+554
+02:15:38,659 --> 02:15:40,659
+Diyor ki...
+
+555
+02:15:41,460 --> 02:16:07,220
+Kameraman diye bizim çok böyle görüntü işleme kitaplarında kullanılan bir görüntümüz var. Grayscale bir image bu. Ve bu şey de psych image'in altında data altında yer alıyor. Yani bunu ben test image folder'ının altına yerleştirmedim. Aslında bu kütüphanenin içinde hazır kullanılan, çok böyle yaygın kullanılan görüntülerden biri.
+
+556
+02:16:09,460 --> 02:16:11,460
+Bu maddis üzerinde...
+
+557
+02:16:11,539 --> 02:16:29,119
+Bu, pixelated dediğim formda bir imic üretiyorum. Bu nedir? Görüntüyü aslında bütün satır ve sütun doğrultusunda onar atlayarak demeyeceğim ama yani mozaik imic üretiyorum.
+
+558
+02:16:29,119 --> 02:16:39,540
+Yani ona onluk bir alanda sol tarafta gördüğüm piksel değeri neyse ona onluk matris alanı içerisinde tüm bölgeye...
+
+559
+02:16:39,540 --> 02:16:52,540
+Ve aynı parlaklık değerini yerleştiriyorum. Bu görüntüye pixelated imiş diyoruz. Aynı boyutta görüntü üretiyorum çünkü. Küçültmüyorum görüntüyü. Sadece...
+
+560
+02:16:54,388 --> 02:17:10,188
+Özür dilerim, küçülterek şurada şeyi de görüyorsunuz. Yani 50-50 boyutuna gelmiş ama ben bunu büyütüp baktığım için, bununla aynı boyuta getirip baktığım için böyle mozaiklenmiş bir şekilde görüyorsunuz bunu.
+
+561
+02:17:10,188 --> 02:17:22,188
+Yani aslında bir scaling işlemi de gerçekleşiyor. Çünkü ne yapıyoruz? Her 10 pikselde bir örnek alarak oluşturuyoruz görüntüyü. Şimdi bu iki görüntü üzerinde...
+
+562
+02:17:22,388 --> 02:17:40,628
+Özellikle sağ taraftaki böyle hani şu geçişlerin böyle mozaikli olduğu görüntü üzerinde Gauss filtresini kullanarak bir smoothing işlemi yapsak görüntü nasıl görünür ona bakacağız.
+
+563
+02:17:42,008 --> 02:17:44,728
+Mean Filter on Real Image demiş.
+
+564
+02:17:46,067 --> 02:17:55,527
+Real Image dediği, az önce biz bir sentetik imici oluşturmuştuk. Burada ise gerçek bir grayscale imici üzerinde çalışıyoruz.
+
+565
+02:17:59,540 --> 02:18:14,220
+Şurada Pixelated Image üzerinde Mean Kernel'ı kullanıyoruz önce. Mean Kernel'ı yukarıda tanımlamıştık. Üçe üçlük içerisinde bir bölü dokuzlardan oluşan bir filtreydi. Bunun da konvolisyon işlemi uyguluyorum.
+
+566
+02:18:17,620 --> 02:18:30,720
+Pixellated Image görünüyor. Sağ tarafta ise ortalama filtresini kullanarak, yani eşit ortalama alarak yaptığımız konvolüsyon işleminin sonucunu göstermiş.
+
+567
+02:18:30,720 --> 02:18:41,400
+Bu işlemi ben Gauss filtresi kullanarak da yapabilirim. Yani şurada kullandığım Mean Kernel yerine bir Gaussian filter kullanarak.
+
+568
+02:18:41,647 --> 02:19:04,407
+Bu işlemin bir benzerini gerçekleştirebilirim. Burada Filters Gaussian ile yine Bright Square için uygulanmış ama aynı şeyi birazdan kameraman içinde göreceksiniz. Sigma değeri 2 olacak şekilde.
+
+569
+02:19:04,847 --> 02:19:29,847
+bir Gauss Filtresi uygulanmış halini görebilirsiniz. Birinci resim, ortalama filtresi ile filtrelenmiş. İkincisi ise sağ taraftaki Smooth dediği image, Gaussian Filter ile oluşturulmuş bir görüntü.
+
+570
+02:19:31,443 --> 02:19:43,263
+Kameraman görüntüsüne aynı şekilde bu Gauss filtresini uyguladığımızda şuradaki gibi bir sonuç elde edebilirsiniz.
+
+571
+02:19:43,463 --> 02:19:49,144
+Yani mozaiklenme gidiyor ama ne oluyor? Oldukça bulanık bir görüntü elde ediliyor.
+
+572
+02:19:49,144 --> 02:19:57,144
+Keskin kenar geçişleri yumuşatılmış oluyor. Ortalama filtresi.
+
+573
+02:19:59,188 --> 02:20:06,488
+Ya da Gaussian filtresi dediğimiz filtrelerin ortak sonucu bu şekilde görünüyor.
+
+574
+02:20:08,708 --> 02:20:10,888
+Evet, buraya kadar soru var mı?
+
+575
+02:20:18,004 --> 02:20:30,603
+Yok, peki. Geldik medyan filtresine. Bunları uygulamayalım. Yani burada ara vermedim. Dersen sonra bunları mutlaka sizin de denemenizi istiyorum.
+
+576
+02:20:43,059 --> 02:20:48,920
+Mesela 3'e 3'lük ya da 5'e 5'lik bir filtre sayısı ile birlikte veriliyor.
+
+577
+02:20:51,059 --> 02:21:02,340
+Bu alan içerisinde kalan piksellerin değerleri sıralanıyor ve sıralanmış değerler üzerinden orta değer, ortanca değer seçiliyor.
+
+578
+02:21:02,340 --> 02:21:08,719
+Şimdi bunu galiba şeyde daha iyi anlatıyor. Şuradaki PowerPoint'e geçeyim bakayım.
+
+579
+02:21:09,940 --> 02:21:13,659
+Bu değil, öbür PowerPoint'e geçmem lazım.
+
+580
+02:21:19,636 --> 02:21:22,655
+Transformation'un içinde olması lazım aslında.
+
+581
+02:21:40,948 --> 02:21:44,868
+Median Filtre. Ama detayları yok. Burada yok.
+
+582
+02:21:59,283 --> 02:22:06,783
+Çok da bir fark yokmuş yani. O zaman biz gene Jüpiter notbuk üzerinden gidelim.
+
+583
+02:22:11,860 --> 02:22:28,200
+Medyan filtre aslında yapı olarak baktığımızda yine bir gürültü temizleme amaçlı kullanılıyor. Gürültü temizlemek demek alçak bir geçiren filtre demek.
+
+584
+02:22:28,200 --> 02:22:34,200
+Bakın, lütfen dikkat. Medyan filtrenin görevi...
+
+585
+02:22:34,260 --> 02:22:50,560
+Görüntü içerisindeki noise dediğimiz gürültülerden kurtulmak. Bu gürültüleri temizlemek demek yüksek frekanslı bileşenleri atmak, düşük frekanslı bileşenleri geçirmek demek. Bir çeşit low-pass filter gibi kullanılıyor.
+
+586
+02:22:54,131 --> 02:23:12,971
+Yapılandırma elemanı dediğimiz bir elemana ihtiyacımız oluyor. Çünkü ne kadarlık bir alanda bu sıralama işlemini yapacağız ve medyanı alacağız, bunu belirliyor aslında yapılandırma elemanı.
+
+587
+02:23:14,971 --> 02:23:18,592
+Mesela şöyle bir örnek verelim.
+
+588
+02:23:27,603 --> 02:23:29,603
+Şöyle bir örnek verelim.
+
+589
+02:23:29,603 --> 02:23:33,603
+New Share, New Share, Any Desk.
+
+590
+02:23:39,443 --> 02:23:52,663
+Elimizde yine bir görüntü matrisimiz var. Az önce kullandığımız görüntü matrisini kullanalım. Hem de bakın aynı matristen gidelim. Bu bizim image matrisimiz.
+
+591
+02:23:54,484 --> 02:24:03,804
+Kolumu da bir yere dayamadan yazamıyorum. Şöyle havada çiziyor gibi oluyor. 3, 2, 3, 4, 5.
+
+592
+02:24:11,092 --> 02:24:37,036
+1, 3, 2, 5, 7, 0, 1, 1, 2, 6, 1, 2, 3, 4, 1, 3, 4, 5, 6, 2, 5, 7,
+
+593
+02:24:37,716 --> 02:24:45,216
+6, 6, 7. Şimdi bizim bir de bir kernel'ımız olsun.
+
+594
+02:24:46,131 --> 02:24:56,891
+Burada slide'da yapılandırma elemanı diye de geçiyor. Bir sonraki slide'da ve Jüpiter dosyasında görünen.
+
+595
+02:24:57,371 --> 02:25:04,652
+Kernel dediğimiz yapılandırma elemanı ve ben bu yapılandırma elemanı ile hangi gözleri seçtiğimi belirtiyorum.
+
+596
+02:25:04,652 --> 02:25:12,612
+Bu kernel 3'e 3 bir kare formda olabilir. Bu bir square.
+
+597
+02:25:13,780 --> 02:25:16,780
+Form olabilir, disk olabilir.
+
+598
+02:25:17,007 --> 02:25:22,927
+Diamond Shape olabilir. Değişik formlarda Kernel tanımlayabiliyorum.
+
+599
+02:25:23,347 --> 02:25:32,067
+Kernel'ın içerisinde hangi gözlerin bir olduğuna bakarak sıralama işleminde hangilerinin kullanılacağını seçmiş oluyorum.
+
+600
+02:25:32,067 --> 02:25:37,448
+Mesela ben bunu şöyle tanımlasam. Hadi şu gözleri bir değil de sıfır yapsam.
+
+601
+02:25:37,807 --> 02:25:45,007
+Bu şu anlama geliyor. Merkez piksel ile kuzey, güney, doğu, batı yönündeki tüm komşularını kullanarak...
+
+602
+02:25:45,007 --> 02:25:47,087
+Bu sıralama işlemini yapacaksın diyor.
+
+603
+02:25:47,487 --> 02:25:49,007
+Ve ben bir medyan filter...
+
+604
+02:25:53,459 --> 02:25:57,479
+Kullanmak istiyorum. Medyan filtresi. Bu şu demek.
+
+605
+02:26:00,948 --> 02:26:12,387
+Bu görüntü matrisi üzerinde ben bu üçe üçlük matrisi oturttuğum zaman bir olan gözler ile şu alanı tanımlamış oluyorum.
+
+606
+02:26:12,567 --> 02:26:17,667
+Bu alandaki tüm parlaklık değerlerini küçükten büyüğe doğru sıralıyorum.
+
+607
+02:26:17,667 --> 02:26:20,308
+0, 1, 1.
+
+608
+02:26:20,672 --> 02:26:32,212
+Toplamda 5 tane gözden oluşuyor. Bu 5 tane sıralanmış sayının ortadaki değeri, medyanını buluyorum.
+
+609
+02:26:32,212 --> 02:26:42,012
+Ve şu gözü temsil etmek için bu değeri kullanıyorum artık. O zaman output iminci buraya yazacak olursak.
+
+610
+02:26:46,260 --> 02:27:04,279
+Median filtre uygulandıktan sonraki çıktı. 3'e 3'lük bir çıkış görüntüsü olacak. Çünkü padding yok yine. O yüzden input görüntüsü 5'e 5 bir görüntüydü.
+
+611
+02:27:05,523 --> 02:27:21,123
+Sıraladıktan sonra bu gözün olması gereken değer birmiş. Zaten birdi ama bunu Medyan Filtresi ile bu şekilde bulmuş oldum. Daha sonra bunu değiştiriyorum.
+
+612
+02:27:31,123 --> 02:27:33,844
+Böyle bir alan seçmiş oluyorum.
+
+613
+02:27:34,364 --> 02:27:39,763
+Ve bu alanın içerisindeki değerleri bu defa sıralayıp yazıyorum.
+
+614
+02:27:40,644 --> 02:27:43,864
+1, 1, 2, 2, 2.
+
+615
+02:27:44,684 --> 02:27:49,263
+Ortanca değer 2 olduğu için burayı temsil eden değer artık 2 oluyor.
+
+616
+02:27:51,059 --> 02:28:03,599
+Sonraki alana kaydırıp yapacak olursam şu çıkıyor. Orada da 1, 2, 3, 5, 6 oluyor. Ortanca değer 3 olmuş oluyor.
+
+617
+02:28:04,244 --> 02:28:21,364
+Yanlış yapmadım herhalde. Böylece bir medyan filtrenin nasıl uygulandığını görmüş oluyoruz. Ama bu medyan filtrenin hangi gözlerin kullanılacağına karar veren bir kernel yapısı olduğuna dikkatinizi çekmek istiyorum.
+
+618
+02:28:21,364 --> 02:28:29,184
+Bunu Jüpiter notbuktaki örnekle inceleyecek olursak, bakın burada.
+
+619
+02:28:31,156 --> 02:28:50,256
+Neighborhood'u belirtmek için bir disk tanımlamış. Structuring element dediğimiz bir yapılandırma elemanı mantığı var. Morfolojik işlemlerde kullanılıyor daha çok ama onu kullanarak bir disk tanımlıyor.
+
+620
+02:28:58,079 --> 02:29:09,380
+Şurada gördüğümüz filters, renkte sıralamalı filtreler başlığı altında yer aldığı için medyan filtre onu renkin altına yerleştirmiş.
+
+621
+02:29:09,860 --> 02:29:16,520
+Bu görüntü üzerinde medyan filtre ile gürültü temizleme işlemini gerçekleştiriyor.
+
+622
+02:29:26,079 --> 02:29:38,899
+Özelliği Edge Preserving Filter. Yani kenarları koruyan bir filtre yapısı var. Ve bunu da en iyi anlatan örnek.
+
+623
+02:29:46,191 --> 02:30:04,611
+Bir test görüntüm vardı. Test görüntüleri içerisinde size tavsiyem bunu şeyde deneyin. Test.tif diye bir açamadı tabii bu.
+
+624
+02:30:08,819 --> 02:30:09,484
+Tamam.
+
+625
+02:30:13,075 --> 02:30:14,095
+Açmışım.
+
+626
+02:30:20,404 --> 02:30:24,004
+Çok gereği yoktu ama Adobe'de açtım.
+
+627
+02:30:24,724 --> 02:30:35,244
+Şöyle bir test görüntüsü var. Mesela bunun üzerinde medyan filtreyi uygularsanız, dikkatinizi çekmek istediğim nokta, bu test görüntüsü de çok güzel bir örnek.
+
+628
+02:30:35,244 --> 02:30:50,244
+Çünkü değişik şekiller var. Mesela şu dikdörtgen alanının içerisine gürültü eklenmiş. Mesela bu gürültülü bölgelerde medyan filtre sonucu şuradaki istenmeyen...
+
+629
+02:30:51,827 --> 02:30:58,347
+Tuz biber gürültüsü şeklinde eklenmiş. Buradaki biber gürültüsü diye isimlendiriliyor. Bunu da hemen söylemiş olayım.
+
+630
+02:30:58,347 --> 02:31:07,387
+Tuz biber gürültüsü beyaz bir fon üzerine siyah noktalar düşmüşse eğer buna biber deniyor, pepper noise.
+
+631
+02:31:08,288 --> 02:31:15,867
+Tuz ise siyah bir alanın üzerine böyle nokta nokta beyazlar atılmışsa buna da tuz gürültüsü deniyor.
+
+632
+02:31:16,307 --> 02:31:19,567
+Tuz biber gürültüsü dediğimiz gürültüleri temizlemek için
+
+633
+02:31:19,827 --> 02:31:38,927
+Medyan filtre de, Averaging filtre de çok başarılı oluyor. Ama şu dikdörtgenlerde, köşelerde bozulma olmaya başlıyor ortalama filtresini kullandığımızda. Ama mesela medyan filtre köşeleri bozuyor ama kenarları bozmuyor.
+
+634
+02:31:46,804 --> 02:32:02,263
+Gürültüyü ne kadar temizliyor, kenarları ne kadar bozuyor? Bununla ilgili bir çalışma yapmanızı tavsiye ederim. Zaten Jüpiter kodlarını yavaş yavaş yazmaya başladınız.
+
+635
+02:32:02,263 --> 02:32:14,263
+Yapacağınız tek şey burada kullandığınız yapılandırma elemanını disk değil de ne bileyim mesela şey seçebilirsiniz, bir square seçebilirsiniz.
+
+636
+02:32:14,804 --> 02:32:17,644
+Dikdörtgen form da seçebilirsiniz.
+
+637
+02:32:20,595 --> 02:32:34,056
+Daha sonra bunu filter renk medyan ile görüntüye uygulayıp sonuçlarına bakabilirsiniz. Burada madeni paralar ile işlem yaptığı için disk yapılandırma elemanını seçmiş.
+
+638
+02:32:34,056 --> 02:32:42,056
+Çünkü elimizdeki şekiller hep bir disk formunda. O yüzden böyle bir...
+
+639
+02:32:43,763 --> 02:33:06,443
+Yapılandırma elemanı, formu bu problemin çözümü için daha elverişli olacaktır diye düşünüyor. Bunun diskin size'ını 10 değil 20 yapsak ne olur? Test görüntüsü üzerinde bunları denediğinizde ne sonuç alıyorsunuz? Bunları ufak ufak örneklerle çalışmanızı tavsiye edeceğim.
+
+640
+02:33:09,443 --> 02:33:10,123
+Evet.
+
+641
+02:33:12,691 --> 02:33:25,412
+Uygulamalı vs. bir ders yaptık. Bu haftaki konu başlıklarımız Spatial Filtering oldu.
+
+642
+02:33:25,855 --> 02:33:33,716
+Special Domain'de yaptığımız bu filtreleme işlemleri için kullandığımız maskları, mask katsayılarını nasıl üretiriz?
+
+643
+02:33:33,716 --> 02:33:45,175
+Gauss filtrelerini kullanarak, yani bir Gauss fonksiyonunu kullanarak bu katsayıları bir boyutta ve iki boyutta nasıl elde ederiz? Bunlarla ilgili çalışmalar yapmış olduk.
+
+644
+02:33:48,595 --> 02:33:50,855
+Sorunuz var mıdır acaba?
+
+645
+02:33:57,811 --> 02:34:12,432
+Önümüzdeki hafta sharpening, görüntü keskinleştirme ile ilgili konuları çalışacağız. Başka? Önümüzdeki haftanın konu başlıkları.
+
+646
+02:34:17,268 --> 02:34:26,268
+Image Sharpening with Special Filters ve bu hafta öğrendiğimiz filtrelerin...
+
+647
+02:34:27,156 --> 02:34:39,916
+Birinci türevi ve ikinci türevini kullanarak işte Gradient ve Laplacian Operation'ları görüntü üzerinde nasıl uygulanır bunlarla ilgili çalışacağız.
+
+648
+02:34:39,916 --> 02:34:51,916
+Derste iki amacım hazır fonksiyonlarla bunların hepsini yapabilirsiniz ama derste ki benim amacım olabildiğince
+
+649
+02:34:53,363 --> 02:35:13,763
+Arkadaki matematiği bilmeniz ve sonra bu hazır fonksiyonları kullanmanız. O yüzden bu kadar hani Gauss fonksiyonunu da anlatıyorum. Gauss ben yazsaydım nasıl yazardım onu gösteriyorum. Adım adım ilerliyoruz. Sorununuz var mı?
+
+650
+02:35:21,268 --> 02:35:27,747
+İyi dinlemediniz mi acaba? Hiç kimseye soru sormaya ya da çok mu iyi anladınız?
+
+651
+02:35:29,847 --> 02:35:31,347
+Çok güzel anlattınız hocam.
+
+652
+02:35:32,747 --> 02:35:33,468
+Teşekkür ederim.
+
+653
+02:35:33,468 --> 02:35:34,707
+Sağ olun, teşekkür ederiz.
+
+654
+02:35:35,988 --> 02:35:43,827
+Ben teşekkür ederim derse katıldığınız için. Şu an 29 kişiyiz. Gayet iyi. Bu haftalık bu kadar.
+
+655
+02:35:45,075 --> 02:35:51,015
+Bana el sallayıp dersten ayrılabilirsiniz. Bakayım kimler beni dinliyormuş, kimler dinlemiyormuş bunu.
+
+656
+02:35:52,575 --> 02:35:53,795
+Teşekkürler hocam.
+
+657
+02:35:54,175 --> 02:35:55,635
+Rica ederim. Hoşçakalın.
+
+658
+02:35:56,084 --> 02:36:12,644
+Hocam bu el sallama özelliği web ara yüzünde yok sanırım. Web ara yüzünde yok, doğru. Evet, ben oradan şey yaptığım için sallayamıyorum. İyi günler. Ben de aynı şekilde iyi günler. Güle güle, hoşçakalın. Zoom'u kurun ama ya, bilgisayarınızda olsun bence.
+
+659
+02:36:13,139 --> 02:36:19,139
+İş bilgisayarından bağlanıyorum da, orada Zoom yasaktı bizde. O yüzden kuramıyorum.
+
+660
+02:36:19,579 --> 02:36:21,139
+Tamam. Benim de aynı şekilde hocam.
+
+661
+02:36:21,659 --> 02:36:24,739
+Evet, işveren engelli yapıyorsunuz. Ben de yapamadım hocam.
+
+662
+02:36:25,719 --> 02:36:29,360
+Peki arkadaşlar, haftaya görüşmek üzere. Görüşmek üzere.
+
+663
+02:36:29,819 --> 02:36:32,639
+Görüşürüz hocam. Hoşçakalın.
+
+664
+02:36:38,484 --> 02:36:52,724
+Evet, hoşçakalın arkadaşlar. Bakıyorum, geriye dört kişi kaldı. Ders dinlemiyor muydunuz? Neredesiniz? Peki, haftaya görüşmek üzere.

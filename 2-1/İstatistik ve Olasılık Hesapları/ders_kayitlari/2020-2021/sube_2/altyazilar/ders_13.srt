@@ -1,0 +1,2387 @@
+1
+00:03:42,707 --> 00:03:47,108
+Arkadaşlar merhabalar sesim geliyor mu?
+
+2
+00:04:04,596 --> 00:04:06,596
+Okay, okay.
+
+3
+00:04:06,596 --> 00:04:22,596
+We'll do this next week.
+
+4
+00:04:33,012 --> 00:04:38,472
+Diyelim ki bir elinizde elinizde bir data var
+
+5
+00:04:40,244 --> 00:04:59,244
+and this data is a sample. This is a histogram. This is a histogram. This is a histogram. This is a histogram. This is a exponential.
+
+6
+00:04:59,244 --> 00:05:05,823
+ve diyorsunuz ki bu eksponensiyel dağılım ama hangi eksponensiyel dağılım?
+
+7
+00:05:05,944 --> 00:05:11,203
+Çünkü lambda değiştikçe farklı eksponensiyel dağılımlar elde ediyoruz.
+
+8
+00:05:12,784 --> 00:05:14,584
+Bu lambdayı bulalım.
+
+9
+00:05:15,504 --> 00:05:23,523
+Lambdayı bulursak hangi eksponensiyel dağılımı o dağılımdan geldiğini bu datanın bulabiliriz.
+
+10
+00:05:23,523 --> 00:05:30,523
+Bu sayede yeni data üretebiliriz buna benzeyen datalar veya farklı şeyler yapabiliriz
+
+11
+00:05:30,523 --> 00:05:41,284
+Şimdi bunun için bu lambda'ya burada parametre deniliyor
+
+12
+00:05:41,284 --> 00:05:46,643
+Bu parametrenin tahmini parameter estimation olarak geçiyor
+
+13
+00:05:46,643 --> 00:05:49,883
+İki farklı yöntem gördük
+
+14
+00:05:49,883 --> 00:05:55,144
+Birisi method of moments, birisi method of maximum likelihood
+
+15
+00:05:55,144 --> 00:06:04,883
+Bu yöntemleri kullanarak böyle lambda gibi parametreleri ne yapabiliyoruz hesap edebiliyoruz
+
+16
+00:06:05,883 --> 00:06:10,663
+Method of moments neydi?
+
+17
+00:06:12,663 --> 00:06:14,343
+Method of moments
+
+18
+00:06:14,343 --> 00:06:18,924
+Öncelikle momenti tanıtmamız gerekti
+
+19
+00:06:18,924 --> 00:06:20,883
+moment neydi?
+
+20
+00:06:22,303 --> 00:06:27,864
+X üzeri k'nın beklenen değeri moment olarak geçiyor.
+
+21
+00:06:27,983 --> 00:06:31,324
+K numaralı moment olarak geçiyor.
+
+22
+00:06:32,924 --> 00:06:43,684
+Bu popülasyonda, standart data da, sample'lardan da bunun tahminini elde ediyorsunuz.
+
+23
+00:06:43,683 --> 00:06:52,823
+Yani şu size bir denklem veriyor, elinizde bir denklem oluyor, şu da size bir sayı veriyor
+
+24
+00:06:52,823 --> 00:07:00,464
+Tabi data noktalarını yerine yazdığımızı varsayarsak
+
+25
+00:07:00,464 --> 00:07:12,063
+Bu ne oluyor? Bir bölü en, i eşitir birden ene kadar x i üzeri k, şurada yazmışız
+
+26
+00:07:13,684 --> 00:07:26,023
+K numaralı sample moment oluyor. XK'nın beklenen değeri de K numaralı moment ya da K numaralı popülasyon moment oluyor.
+
+27
+00:07:27,624 --> 00:07:35,363
+Bir de sentral momentler var. Bunlar merkeziyleştirilmiş. Nasıl merkeziyleştiriliyor?
+
+28
+00:07:35,363 --> 00:07:44,163
+x'in üzerinde direkt x üzeri k almıyorsunuz da merkezi çıkarıyorsunuz ortalamayı.
+
+29
+00:07:44,163 --> 00:07:48,244
+Dolayısıyla dağılımın ortalaması sıfır oluyor.
+
+30
+00:07:56,211 --> 00:07:58,211
+So what happens next to the question?
+
+31
+00:07:58,211 --> 00:08:13,931
+x-beaklenen değer üzeri k'nın beklenen değeri k numaralı population moment oluyor.
+
+32
+00:08:20,947 --> 00:08:24,947
+Maybe there is a little bit of a difference.
+
+33
+00:08:24,947 --> 00:08:29,947
+The expected value is...
+
+34
+00:08:29,947 --> 00:08:32,947
+...the value of K.
+
+35
+00:08:40,179 --> 00:09:05,119
+ve benzer şekilde central momentte yine ne oluyor? Central momentte x i'den bu sefer mean'i değil de neyi çıkarıyoruz? Sample mean'i çıkarıyoruz ve parantez üzerinde k katını alıyoruz.
+
+36
+00:09:05,119 --> 00:09:10,439
+toplayıp n'e böldüğümüzde de sample central momenti elde ediyoruz.
+
+37
+00:09:12,599 --> 00:09:17,739
+Bu central momentlerden bir iki tanesini direkt tanıyoruz zaten.
+
+38
+00:09:17,739 --> 00:09:33,259
+Mesela birinci moment, popülasyon momentini ortalama mean ve ikinci central moment de variance.
+
+39
+00:09:35,119 --> 00:09:52,239
+olarak öğrendik bunları. Dolayısıyla hani varyansını ve minanı biliyorsak bir dağılımın ki gördüğümüz dağılımlarda çoğu kez ortalama minanı ve varyansını hesap etmiştik.
+
+40
+00:09:54,639 --> 00:09:58,839
+O zaman elimizde iki tane denklem var.
+
+41
+00:09:58,839 --> 00:10:05,519
+Nasıl, ne denkleminden bahsediyorum? Method of moments şöyle çalışıyor
+
+42
+00:10:05,519 --> 00:10:17,419
+Population momenti eşittir, sample moment şeklinde ilgili momentleri eşitliyorsunuz
+
+43
+00:10:17,419 --> 00:10:20,039
+Bu şekilde denklemler elde ediyorsunuz
+
+44
+00:10:20,039 --> 00:10:25,159
+Bu denklemlerden istediğiniz kadar bu şekilde elde edebiliyorsunuz
+
+45
+00:10:25,159 --> 00:10:27,319
+Düşünürseniz sonsuz sayıda moment var
+
+46
+00:10:27,319 --> 00:10:41,279
+Kaç tane denklem lazımsa o kadar eşitlik elde ediyorsunuz. Sonra da bu eşitlikleri bilinmeyenleriniz için çözüyorsunuz. Metodok moment bu oluyor.
+
+47
+00:10:43,939 --> 00:10:53,879
+Örneğe baktığımızda mesela çok basit bir sample vermişiz ve varsaymışız ki bu gama dağılımından geliyor.
+
+48
+00:10:53,879 --> 00:11:00,879
+Şimdi hangi gamma dağılımından geliyor? Bunun için gamma dağılımının parametrelerini bulmamız lazım.
+
+49
+00:11:01,779 --> 00:11:05,719
+Gamma dağılımının iki parametresi var. Alfa ve lambda.
+
+50
+00:11:08,840 --> 00:11:13,879
+Kendisinin kompleks bir denklemi var. Onu notlarınızdan bakabilirsiniz.
+
+51
+00:11:17,480 --> 00:11:23,279
+Burada ne yapacağız? Method of moment'i uygulayacağız.
+
+52
+00:11:23,879 --> 00:11:48,139
+Method of moments ne diyor? Burada momentlerden denklemler oluşturuluyor. Bizim için en kolayı direkt şu mu1 eşittir m1'i kullanmak. Niye? Çünkü bu mu1 zaten beklenen değer ve gamma için biz bunu öğrenmiştik. Beklenen değer alfa bölü lambda eşittir.
+
+53
+00:11:48,139 --> 00:12:04,079
+Iq. Iq.sinde de variance, 2. moment, 2. central moment, variance oluyor. Variance'ın da alfa bölü lambda kare olduğunu öğrenmiştik.
+
+54
+00:12:04,999 --> 00:12:16,679
+Sample momentleri zaten direkt hesap ediyoruz. Dolayısıyla alfa bölün lambda eşittir. Birinci sample moment dedik. Bunu direkt hesap ettik. 4 çıktı.
+
+55
+00:12:18,139 --> 00:12:36,239
+sample 2. moment, central moment de bu. Bunu da direkt hesap ettik. Sayısal bir değer. 8 bölü 3 çıktı. Dolayısıyla elimizde 2 bilinmeyen var. O yüzden 2 denklem kullandık.
+
+56
+00:12:37,748 --> 00:12:45,748
+two of them are available. This is the same thing we use. This is the same thing we use.
+
+57
+00:12:57,587 --> 00:13:05,827
+We can see how we can see the formula for example.
+
+58
+00:13:05,827 --> 00:13:09,827
+We can see the formula for example.
+
+59
+00:13:09,827 --> 00:13:21,827
+We can see the x i's like we can see the formula for example.
+
+60
+00:13:21,827 --> 00:13:27,827
+So if you want to do that, you can put the same here.
+
+61
+00:13:27,827 --> 00:13:31,827
+You can put the same here.
+
+62
+00:13:31,827 --> 00:13:36,827
+But, what do we know about?
+
+63
+00:13:36,827 --> 00:13:37,827
+1, 1,
+
+64
+00:14:10,964 --> 00:14:38,964
+ona göre çözdüğümüzde mesela lambda'yı şöyle bir ifadeyle bulmuş olduk. Bu ifadede ne var? Sample mean var, sample variance var, n var, n-1 var. Artık buna herhangi bir şey elimizde data varsa herhangi bir data direkt bunun o datanın verilerini,
+
+65
+00:14:38,964 --> 00:14:47,763
+or data'nın bilgilerine girerek gamma dağılımının lambda parametresini bulabiliriz.
+
+66
+00:14:48,903 --> 00:14:55,044
+Lambda'yı bulduktan sonra artık alfayı bulmak zor değil.
+
+67
+00:14:55,044 --> 00:14:59,504
+Şu denklemlerden bir tanesini kullanarak da alfayı bulabiliriz.
+
+68
+00:15:00,283 --> 00:15:01,523
+Method of moments bu.
+
+69
+00:15:06,707 --> 00:15:33,187
+Bir diğer öğreneceğimiz yöntem de Method of Maximum Likelihood'du. Bu yöntem şu mantıkla gidiyor. Likelihood'u maksimize eden parametreleri bulalım. Likelihood ne? Likelihood elimizdeki verinin olasılığı. Yani tüm veri şuraya bakarsak ne diyor?
+
+70
+00:15:33,187 --> 00:15:57,007
+px1 yani şunun diyelim ki elimizde sample olarak 3, 5, 6 var. Probability of x1 eşittir 3, x2 eşittir 5, x3 eşittir 6'nın olasılığını düşünün. Bu olasılığı maksimize eden parametreleri bulmak istiyoruz.
+
+71
+00:15:57,007 --> 00:16:23,687
+Maximum ya da minimum bulma matematik derslerinde görmüşsünüzdür. Analitik olarak türev alıp sıfıra eşitleyerek yapılabiliyor. Analitik yöntemler yoksa elinizde analitik olarak çözemiyorsanız
+
+72
+00:16:23,687 --> 00:16:33,427
+iteratif yöntemler vs. uygulanabiliyor. Optimizasyon ayrı bir, büyük bir ders, büyük bir konu.
+
+73
+00:16:34,887 --> 00:16:40,687
+Biz burada analitik olarak çözümün olduğunu varsayacağız.
+
+74
+00:16:45,687 --> 00:16:52,287
+Mesela, evet analitik olarak çözümün olduğunu varsayacağız ve o tür problemler karşınıza çıkacak.
+
+75
+00:16:52,287 --> 00:16:59,727
+analytic çözüm yoksa dediğimiz gibi bu maksimizasyon problemi artık ayrı optimizasyon problemine dönüşür.
+
+76
+00:17:00,547 --> 00:17:07,947
+Onun için de gradient descent vesaire gibi böyle yöntemler var. Onları kullanmanız gerekebilir.
+
+77
+00:17:11,731 --> 00:17:21,731
+But this is why we have to solve optimization problems.
+
+78
+00:17:21,731 --> 00:17:32,731
+There are discrete and continuous possibilities.
+
+79
+00:17:32,731 --> 00:17:33,731
+Discrete
+
+80
+00:17:33,731 --> 00:17:35,252
+olasılıklarda
+
+81
+00:17:35,252 --> 00:17:38,252
+şu olasılık
+
+82
+00:17:38,252 --> 00:17:42,791
+eğer
+
+83
+00:17:42,791 --> 00:17:46,191
+şeyler birbirinden
+
+84
+00:17:46,191 --> 00:17:47,171
+bağımsız ise
+
+85
+00:17:47,171 --> 00:17:49,511
+bulduğumuz sample'lar
+
+86
+00:17:49,511 --> 00:17:51,711
+birbirinden bağımsız ise yani
+
+87
+00:17:51,711 --> 00:17:53,111
+bunun 3 gelmesi
+
+88
+00:17:53,111 --> 00:17:55,711
+şunun 5 gelmesi şansını
+
+89
+00:17:55,711 --> 00:17:56,651
+değiştirmiyorsa
+
+90
+00:17:56,651 --> 00:18:00,312
+o zaman ne yapabiliyoruz?
+
+91
+00:18:00,312 --> 00:18:02,272
+Şurada zincir kuralında
+
+92
+00:18:02,271 --> 00:18:04,271
+the
+
+93
+00:18:04,271 --> 00:18:06,271
+chart of the way we can do this.
+
+94
+00:18:06,271 --> 00:18:26,271
+We can do this.
+
+95
+00:18:26,271 --> 00:18:28,271
+This is a big P.
+
+96
+00:18:28,272 --> 00:18:29,272
+This is the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the sign of the
+
+97
+00:18:58,272 --> 00:19:18,272
+function of the x i
+
+98
+00:19:18,272 --> 00:19:20,272
+function of the x i function of the x i
+
+99
+00:19:20,272 --> 00:19:22,272
+function of the x i
+
+100
+00:19:22,272 --> 00:19:28,272
+function of the x i function of the x i
+
+101
+00:19:28,271 --> 00:19:31,092
+Why are they not maximized?
+
+102
+00:19:31,092 --> 00:19:37,171
+Because this is a complex complex thing.
+
+103
+00:19:37,171 --> 00:19:43,711
+And analytic as a result of zero-require making a baya a bila.
+
+104
+00:19:45,331 --> 00:19:47,551
+Because there are a lot of times.
+
+105
+00:19:48,491 --> 00:19:51,231
+This is a complex complex thing.
+
+106
+00:19:53,231 --> 00:19:56,391
+There is a logon-alma hiles.
+
+107
+00:19:56,392 --> 00:20:10,392
+log on the top of the log on the top of the log on the top of the log on the top of the
+
+108
+00:20:10,391 --> 00:20:18,871
+Toplam terimlerinden de türevi ayrı ayrı alınabildiği için daha basit türevlerle karşılaşıyoruz.
+
+109
+00:20:18,871 --> 00:20:35,771
+Ve çözüm sonucunda bu sıfıra eşitleyip bularak elde ettiğiniz çözümler logunu almadan yaptığınız çözümlerle aynı çıkıyor.
+
+110
+00:20:35,771 --> 00:20:45,771
+Logarithmo function, likelihood function, maximum, the maximum.
+
+111
+00:20:48,756 --> 00:21:01,815
+So, likelihood'un maximum yaptığı yerleri bulmak için logarithm of log likelihood'un maximum yaptığı yerleri buluyoruz.
+
+112
+00:21:02,815 --> 00:21:09,655
+Burada bir de maximumların yanında neye dikkat etmemiz gerekiyor optimizasyonlarda?
+
+113
+00:21:10,615 --> 00:21:14,516
+Boundary point'leri de göz önünde bulundurmamız gerekiyor.
+
+114
+00:21:14,516 --> 00:21:32,516
+If the problem is that if the problem is that the maximum is the end of the year, the end of the year.
+
+115
+00:21:32,515 --> 00:21:39,515
+So we do this.
+
+116
+00:21:39,515 --> 00:21:55,515
+We do this.
+
+117
+00:21:55,516 --> 00:22:03,516
+This is the maximum.
+
+118
+00:22:05,516 --> 00:22:09,516
+Because the maximum is the maximum.
+
+119
+00:22:09,516 --> 00:22:11,516
+Sometimes the minimum is the minimum.
+
+120
+00:22:11,516 --> 00:22:13,516
+Minimum is the minimum.
+
+121
+00:22:13,516 --> 00:22:17,516
+And the inflection points are the 0.
+
+122
+00:22:17,516 --> 00:22:19,516
+The inflection points are the 0.
+
+123
+00:22:19,515 --> 00:22:28,515
+So, the maximum likelihood is like this.
+
+124
+00:22:28,515 --> 00:22:33,515
+We have a very simple example.
+
+125
+00:22:33,515 --> 00:22:38,515
+We have a very simple data.
+
+126
+00:22:38,515 --> 00:22:41,515
+6, 4, 2, like this.
+
+127
+00:22:41,515 --> 00:22:48,515
+Positioning is a very simple.
+
+128
+00:22:48,515 --> 00:22:50,755
+Lambda diye bir parametresi var.
+
+129
+00:22:51,415 --> 00:22:55,195
+O zaman bu data için lambda nedir?
+
+130
+00:22:57,555 --> 00:22:59,476
+Tahmin etmeye çalışıyoruz.
+
+131
+00:23:01,095 --> 00:23:03,195
+Tahmin olduğu için de şapka koyduk.
+
+132
+00:23:05,795 --> 00:23:16,835
+Poison'un denklemini e üzeri eksi lambda, lambda üzeri x bölü lambda bölü x.
+
+133
+00:23:16,836 --> 00:23:18,455
+factorial.
+
+134
+00:23:20,535 --> 00:23:22,175
+And what we do
+
+135
+00:23:22,175 --> 00:23:25,776
+is we need
+
+136
+00:23:25,776 --> 00:23:28,895
+to do this.
+
+137
+00:23:28,895 --> 00:23:38,675
+We need to do this.
+
+138
+00:23:38,675 --> 00:23:40,395
+And we need to do this.
+
+139
+00:23:40,395 --> 00:23:45,076
+We need to do this.
+
+140
+00:23:45,075 --> 00:23:47,335
+logaritmasını alacağız bunun.
+
+141
+00:23:49,155 --> 00:23:51,535
+Ve şuraya de bir tahminden dolayı
+
+142
+00:23:51,535 --> 00:23:53,375
+şapka koyduk. Yani lambda'nın
+
+143
+00:23:53,375 --> 00:23:55,735
+tahmini olacak elde ettiğimiz değer.
+
+144
+00:24:00,895 --> 00:24:03,475
+Artık bunun çözümünü yapmak çok zor
+
+145
+00:24:03,475 --> 00:24:05,195
+değil. Evde uğraşırsınız.
+
+146
+00:24:05,195 --> 00:24:07,115
+Zaten egzersiz olarak da
+
+147
+00:24:07,115 --> 00:24:08,535
+vermişiz.
+
+148
+00:24:10,575 --> 00:24:11,415
+Şimdi
+
+149
+00:24:11,415 --> 00:24:18,415
+So, let's move on.
+
+150
+00:24:18,415 --> 00:24:23,415
+Let's move on.
+
+151
+00:24:23,415 --> 00:24:26,415
+Estimation of standard errors.
+
+152
+00:24:43,796 --> 00:24:54,756
+standard errors. So one question might be, so let's say we found this, this,
+
+153
+00:25:22,355 --> 00:25:32,355
+estimation of standard errors. So one question would be how good is our estimate?
+
+154
+00:25:44,115 --> 00:26:12,115
+So our estimate is theta hat, for example. How good of an estimator this is? That's the question. And we know that when we say a good estimator, usually we are talking about its BS. So it must be unbiased.
+
+155
+00:26:14,115 --> 00:26:28,115
+it must be consistent and asymptotically
+
+156
+00:26:31,347 --> 00:26:32,347
+normal are good features. Also, we want to be we want to have no. Standard. Error. We want to have no standard error. And when we say low standard error, we mean, remember that standard error is just standard deviation.
+
+157
+00:27:10,996 --> 00:27:17,735
+So we want to have low
+
+158
+00:27:21,268 --> 00:27:26,268
+A low standard deviation estimate for our estimators.
+
+159
+00:27:34,548 --> 00:27:46,067
+So how can we calculate these standard errors? Let's look at them. Because we have data now.
+
+160
+00:27:59,155 --> 00:28:12,435
+The estimate of standard deviation is sample standard deviation. So we can estimate
+
+161
+00:28:14,644 --> 00:28:28,243
+standard deviation of our estimator by. Sample standard deviation of our estimate.
+
+162
+00:28:30,740 --> 00:29:00,719
+and
+
+163
+00:28:35,892 --> 00:28:50,171
+As an example. Let's say we have, we are working on Poisson distribution. And.
+
+164
+00:28:53,523 --> 00:28:56,723
+Remember that
+
+165
+00:28:58,067 --> 00:28:59,067
+probability mass function is a e to the minus lambda. Lambda to the X divided by X factorial. Where X is zero one two up to infinity. And expected value of lambda is X is lambda and variance of lambda is
+
+166
+00:29:28,067 --> 00:29:55,067
+Lambda. So let's say we used a method of moments or maximum likelihood and we found an estimate for Lambda. Lambda had Lambda estimates.
+
+167
+00:30:01,940 --> 00:30:22,940
+And we didn't finish our previous example, but if you do it at home or do it later, you will see that Lambda is an estimate of Lambda of the Lambda is sample mean. Okay.
+
+168
+00:30:22,940 --> 00:30:27,940
+So,
+
+169
+00:30:38,836 --> 00:30:46,836
+So then to find standard errors.
+
+170
+00:30:52,084 --> 00:30:54,084
+How good is an
+
+171
+00:30:58,996 --> 00:31:03,996
+How good an estimator is, let's say this way.
+
+172
+00:31:18,036 --> 00:31:38,036
+How good an estimator is this this thing that we found for lambda hat? Well, we need to find standard error.
+
+173
+00:31:41,587 --> 00:31:43,587
+of
+
+174
+00:31:47,667 --> 00:31:58,667
+of our estimators, which is a standard error of, so let me write this way.
+
+175
+00:32:10,516 --> 00:32:12,516
+So what is this?
+
+176
+00:32:15,827 --> 00:32:20,827
+And now
+
+177
+00:32:20,827 --> 00:32:25,827
+For this we actually found an expression. If you remember
+
+178
+00:32:25,827 --> 00:32:29,827
+when we were talking about when we were
+
+179
+00:32:29,827 --> 00:32:36,827
+thinking about sample mean, we found its standard deviation.
+
+180
+00:32:36,827 --> 00:32:43,827
+And what was it? It was population standard deviation divided by
+
+181
+00:32:43,827 --> 00:32:53,827
+n's square root. And n is remember number of units in the samples.
+
+182
+00:33:03,700 --> 00:33:29,700
+and Sigma is population. Standard deviation. Now, but this here is kind of problematic still because, okay, we know number of units, so we know this number and this is okay.
+
+183
+00:33:33,700 --> 00:33:43,220
+deviation. We may or we may not know this. If you know population standard deviation somehow, we can just use it.
+
+184
+00:33:47,220 --> 00:33:52,579
+So we have different ways to go from here.
+
+185
+00:33:52,579 --> 00:33:54,100
+So
+
+186
+00:33:58,099 --> 00:34:23,099
+If we know population standard deviation, just use it. If we don't know standard deviation, we can estimate it too. So we can use its estimate from the data.
+
+187
+00:34:44,563 --> 00:34:55,364
+So if we don't know what we can do is we can
+
+188
+00:35:04,148 --> 00:35:25,507
+We can use sample standard deviation. Remember that that was s and we know how we can calculate this from from the data so
+
+189
+00:35:25,507 --> 00:35:39,847
+or standard deviation would be s divided by n. And now all of this can be calculated from data.
+
+190
+00:35:56,467 --> 00:35:58,467
+or
+
+191
+00:36:25,172 --> 00:36:27,172
+So for this case,
+
+192
+00:36:33,204 --> 00:37:03,183
+We can use the fact that variance of X is lambda for Poisson distribution.
+
+193
+00:37:06,356 --> 00:37:14,356
+and we can say that so
+
+194
+00:37:16,083 --> 00:37:19,843
+is
+
+195
+00:37:23,411 --> 00:37:28,411
+and
+
+196
+00:37:28,340 --> 00:37:53,340
+variance of this thing, sample mean is now instead of this standard deviation, we can say that's variance is square root. So, so that is lambda square root.
+
+197
+00:38:00,403 --> 00:38:21,403
+and below it we still have this square root of n. Now still we are not off the hook here. Lambda is, we are estimating it.
+
+198
+00:38:21,403 --> 00:38:48,403
+and but we have an estimate of it. So now we can say instead of lambda because we are estimating this this this thing and what is your estimate? It's sample mean so we can just use sample mean here divided by square root of n.
+
+199
+00:38:48,403 --> 00:39:14,403
+So here we get to a situation where sample means standard deviation is sample means square root divided by n square root. So in this case we have two we have two different two estimates
+
+200
+00:39:14,403 --> 00:39:43,584
+rates for standard deviation of sample mean. And this happens, there might be different ways to go for estimating things. And in this case, which one is this, which one of these are, is better, I'm not sure, but
+
+201
+00:39:43,584 --> 00:39:51,704
+we know that at least we have at least two different standard error estimation.
+
+202
+00:39:53,503 --> 00:39:56,883
+And this one is more general, I think.
+
+203
+00:39:57,804 --> 00:40:10,103
+This is more specific to Poisson distribution because we are using the fact that variance of Poisson distribution is equal to lambda here.
+
+204
+00:40:10,103 --> 00:40:23,423
+So it will really depend on what you know, what distribution you have, if you have this kind of problem.
+
+205
+00:40:28,340 --> 00:40:36,340
+Or another thing you can do is
+
+206
+00:40:38,099 --> 00:40:42,099
+You can use a method called bootstrapping
+
+207
+00:40:51,699 --> 00:41:04,699
+We will not explain most strapping because it's on chapter 10.33.
+
+208
+00:41:07,923 --> 00:41:20,923
+So we are finishing today. This is the last lecture of this semester. We will not be able to look at bootstrapping, but if you are interested, you can check check out that chapter.
+
+209
+00:41:33,172 --> 00:41:48,172
+With this, we finished parameter estimation. And now we will learn confidence intervals.
+
+210
+00:42:16,755 --> 00:42:32,355
+But let's do that after a break. Let's have a 10 minutes break and after the break, we will have, we will learn confidence intervals. So let's give it, give a break till
+
+211
+00:42:41,076 --> 00:42:46,076
+and I break till 1355.
+
+212
+00:55:53,748 --> 00:55:55,748
+Yes, is coming from the audience?
+
+213
+00:56:02,835 --> 00:56:10,835
+So let's talk about confidence intervals.
+
+214
+00:56:27,764 --> 00:56:39,883
+So. We try to tell about. The goodness of our estimation.
+
+215
+00:56:50,036 --> 00:57:08,036
+We tried to use the standard error. So standard deviation of our estimator. Another way to talk about our confidence is constructing
+
+216
+00:57:10,420 --> 00:57:15,420
+Confidence Intervals
+
+217
+00:57:18,900 --> 00:57:23,900
+If we can construct an interval
+
+218
+00:57:23,900 --> 00:57:31,900
+So then we can talk about probabilities because
+
+219
+00:57:31,900 --> 00:57:40,900
+If in a continuous distribution what is the probability of a single point?
+
+220
+00:57:40,900 --> 00:57:45,900
+Probability of a single point is zero.
+
+221
+00:57:45,900 --> 00:58:12,900
+point is zero. So we are not able to talk about our confidence in terms of probabilities in case of these point estimations. So the maximum likelihood estimator and
+
+222
+00:58:19,668 --> 00:58:21,668
+maximum likelihood.
+
+223
+00:58:25,556 --> 00:58:30,556
+estimator and method of moments.
+
+224
+00:58:37,235 --> 00:58:41,235
+These are called point estimators.
+
+225
+00:58:48,820 --> 00:58:49,820
+So they they just help us. They just give us a point. It's a single number. Whereas if we could do something like that, if you could do this, say, if we can say if we can write a number a and another number b and now if we could say that probability of
+
+226
+00:59:18,820 --> 00:59:29,820
+or parameter being between a and b is some probability.
+
+227
+00:59:35,860 --> 00:59:59,860
+Now this is non-zero, right? Because we have non-zero area there. And we can now talk about probability. We can say the A and B is a 55% probability interval.
+
+228
+00:59:59,860 --> 01:00:10,860
+we send that so we can now use probabilities to quantify our confidence.
+
+229
+01:00:10,860 --> 01:00:25,860
+And so our aim here is to find these A's and B's and we will now assign a probability here.
+
+230
+01:00:25,860 --> 01:00:55,220
+So we will first assign the probability we want because let's say we want to be sure that theta is in a range with 99%. In this case, the A and B will be further to the sides.
+
+231
+01:00:55,860 --> 01:00:59,300
+and the area will be larger.
+
+232
+01:00:59,300 --> 01:01:04,300
+But if you use something like, let's say 65% probability,
+
+233
+01:01:06,639 --> 01:01:10,540
+then A and B can be much smaller.
+
+234
+01:01:10,540 --> 01:01:13,319
+The interval will be, interval will be smaller.
+
+235
+01:01:13,319 --> 01:01:18,319
+So we will specify the probability here.
+
+236
+01:01:19,660 --> 01:01:24,540
+And then we will try to find A and B
+
+237
+01:01:24,540 --> 01:01:37,980
+that gives us this probability. Okay. And so here the book uses an alpha and
+
+238
+01:01:44,659 --> 01:01:45,659
+and alpha. And it's kind of weird, but in the later sections of the book, it's better this way. The probability will be one minus alpha. So you may think, why don't we just say alpha instead of one minus alpha. But later in some sections in the book,
+
+239
+01:02:14,659 --> 01:02:40,659
+in the related sections, if you use alpha here, it's clearer. So for being clear in those chapters or sections, it's just a little bit, just a little bit complex here. So, so let's start with a definition.
+
+240
+01:02:44,211 --> 01:02:54,411
+We say that if probability of
+
+241
+01:02:56,340 --> 01:03:07,539
+Theta being between A and B is one minus alpha. Then.
+
+242
+01:03:09,108 --> 01:03:18,307
+We say that the interval a, b is a
+
+243
+01:03:22,804 --> 01:03:27,804
+one minus alpha times hundred percent.
+
+244
+01:03:34,867 --> 01:03:36,867
+confidence interval
+
+245
+01:03:45,876 --> 01:03:46,876
+for theta. So if you read this, it's kind of confusing, but let's write an example right on it. So let's say if probability of a, let's say, let's say 1.2,
+
+246
+01:04:15,876 --> 01:04:39,035
+between 1.6. So if theta is between 1.2 and 1.6 with probability 0.95, here alpha will be, alpha is 0.05. So 1 minus alpha is 0.95. Then,
+
+247
+01:04:44,244 --> 01:05:09,244
+1.2 1.6 interval is a. What is this? You multiply 0.95 with hundreds. So and write a percentage. So this is a 95% confidence interval.
+
+248
+01:05:12,820 --> 01:05:30,820
+For. Theta. OK. So. That's the definition of confidence intervals. That's the definition for confidence intervals.
+
+249
+01:05:33,844 --> 01:05:45,043
+In this case. This one minus alpha is called confidence level.
+
+250
+01:05:50,483 --> 01:05:53,483
+or it is called coverage level.
+
+251
+01:05:59,219 --> 01:06:02,979
+So that determines how confident
+
+252
+01:06:03,979 --> 01:06:04,979
+we are
+
+253
+01:06:06,660 --> 01:06:07,980
+in this interval.
+
+254
+01:06:14,003 --> 01:06:37,003
+So this, this is better right because here we can, we can quantify or confidence with some probability we can say 95% 50% whatever 99%
+
+255
+01:06:42,132 --> 01:06:51,132
+Now the question is how will we how can we construct so how can we find A and B?
+
+256
+01:06:52,916 --> 01:07:10,995
+for a given probability. So they say you want 95% confidence interval, then what is the, what is the, what is the good, what is a good interval for this, for this?
+
+257
+01:07:17,139 --> 01:07:21,139
+So, how to find a good interval?
+
+258
+01:07:34,452 --> 01:07:52,531
+Now notice that you actually have infinitely many number of different intervals. So let's say you have this distribution for theta.
+
+259
+01:07:54,291 --> 01:08:21,052
+And now you can say this is a 95% or let's say 85% interval. Okay, the probability of this area is 0.85 but you can also consider this way. Okay, this this here and the.
+
+260
+01:08:26,707 --> 01:08:53,827
+The area here can also be 0.85 right. So in a given graph, you can find different areas that are that is 0.85. So one thing we want is. So what the good interval we want is this. We want this interval to be as small as possible.
+
+261
+01:08:53,827 --> 01:09:22,827
+So as small as possible. We want to give a, because that's a better thing to say, right? Because we are trying to find an estimate. If our interval is smaller, that means we have more precise, we have a more precise estimation.
+
+262
+01:09:23,827 --> 01:09:43,827
+So, in a way, we want a small interval. So, that means probably our estimate will be around mean, right? Usually the probability around mean is high.
+
+263
+01:09:43,827 --> 01:09:57,827
+So, let's see, let's see constructing confidence intervals when we have normal distribution.
+
+264
+01:10:15,956 --> 01:10:19,956
+So,
+
+265
+01:10:23,539 --> 01:10:30,539
+Confidence Intervals
+
+266
+01:10:32,532 --> 01:10:38,532
+when we have
+
+267
+01:10:40,051 --> 01:10:44,051
+normal distribution.
+
+268
+01:10:48,819 --> 01:10:56,319
+So when we have normal distribution for our parameter estimate,
+
+269
+01:10:57,908 --> 01:11:16,908
+So let's say here we assume so here let's say we assume that our estimator is normally distributed, asymptotically normal.
+
+270
+01:11:19,796 --> 01:11:45,796
+Okay. We already talked that a good estimator is asymptotically normal. So we assume that our estimator is asymptotically normal. And it is unbiased. So our estimator is unbiased.
+
+271
+01:11:45,011 --> 01:11:47,011
+which means
+
+272
+01:11:51,796 --> 01:12:06,115
+its expected value is the population mean. Its expected value is population mean.
+
+273
+01:12:12,340 --> 01:12:14,340
+and
+
+274
+01:12:17,268 --> 01:12:18,268
+Let's look at, let's try to find a formula for the interval a, b. Okay. First, since this is normal, if we standardize this distribution, we get standard normal distribution. So
+
+275
+01:12:47,268 --> 01:12:50,468
+to standardize what we do is
+
+276
+01:13:13,684 --> 01:13:18,684
+to standardize, we subtract.
+
+277
+01:13:20,692 --> 01:13:30,891
+the mean or expected value.
+
+278
+01:13:31,220 --> 01:13:40,220
+and divided by its variance. Standard deviation. Sorry.
+
+279
+01:13:43,060 --> 01:13:50,339
+and now here we said that this is an unbiased so unbiased distribution so
+
+280
+01:13:53,379 --> 01:14:00,820
+expected value of this estimator is population parameter itself so we can write it here
+
+281
+01:14:03,619 --> 01:14:03,939
+okay
+
+282
+01:14:06,499 --> 01:14:09,379
+so we have
+
+283
+01:14:09,379 --> 01:14:25,379
+We have our estimate minus population parameter divided by standard deviation of the estimate
+
+284
+01:14:30,547 --> 01:14:55,547
+And now that is standard normal. So it is a normal distribution. With zero and one. So mean is zero. Variance or standard deviation is one. Okay.
+
+285
+01:15:07,155 --> 01:15:09,795
+um
+
+286
+01:15:12,180 --> 01:15:17,180
+If we draw
+
+287
+01:15:20,916 --> 01:15:34,715
+the this is that the pro if you draw this probability. Distribution for that.
+
+288
+01:15:38,739 --> 01:16:05,839
+This is just standard normal distribution. So, we have Z and, then still Z, probability density function of Z. This is just, it's something like this. And, its mean is,
+
+289
+01:16:08,851 --> 01:16:11,851
+at zero.
+
+290
+01:16:11,851 --> 01:16:14,851
+Right.
+
+291
+01:16:14,851 --> 01:16:17,851
+Mean is at zero.
+
+292
+01:16:17,851 --> 01:16:22,851
+And. Now.
+
+293
+01:16:22,851 --> 01:16:32,851
+We want to find this.
+
+294
+01:16:32,851 --> 01:16:49,731
+this area that is that has probability 1 minus alpha right so we want this area here which has
+
+295
+01:16:58,420 --> 01:17:23,779
+probability one minus alpha or area is one minus alpha, right? Because we want that kind of area. If you remember here, we want to find a b, a b such that, such that probability of
+
+296
+01:17:23,779 --> 01:17:30,780
+the parameter being in that range is one minus alpha.
+
+297
+01:17:36,467 --> 01:17:58,467
+So probability is one minus alpha. And now what are and this should be as I said, there are very different possible one minus alpha probability regions, but the best region here is the one
+
+298
+01:17:58,467 --> 01:18:03,228
+that is concentrated around mean.
+
+299
+01:18:03,228 --> 01:18:04,947
+And.
+
+300
+01:18:04,947 --> 01:18:13,988
+We have this metric situation, so the length here and the length here is same, right?
+
+301
+01:18:14,107 --> 01:18:18,387
+So we should have a symmetric area.
+
+302
+01:18:18,387 --> 01:18:19,467
+OK.
+
+303
+01:18:25,844 --> 01:18:29,844
+because the normal distribution is symmetric.
+
+304
+01:18:34,963 --> 01:18:41,283
+because standard normal distribution or normal distribution
+
+305
+01:18:47,475 --> 01:19:12,475
+because it's symmetric and we want the area to be concentrated around the mean. We will see that this is a this is a. This is a symmetric area now then. If that is the case.
+
+306
+01:19:17,811 --> 01:19:22,611
+That means each of these sub areas are
+
+307
+01:19:25,811 --> 01:19:29,311
+Each of these areas are
+
+308
+01:19:31,252 --> 01:19:35,411
+but half of 1 minus alpha right
+
+309
+01:19:42,100 --> 01:19:53,100
+So we have actually that's sort of this not missing.
+
+310
+01:20:02,452 --> 01:20:03,452
+So we have one minus alpha in the middle. Then what are the probabilities for these tails? For this tail. Well, one minus one minus alpha will give us alpha. So we have alpha, but that alpha probability will be divided into two because we have two tails, right? So the probability here is
+
+311
+01:20:32,452 --> 01:20:42,452
+This right tail is alpha over 2 and the probability of this left tail is again alpha over 2.
+
+312
+01:20:43,452 --> 01:20:44,452
+Okay.
+
+313
+01:20:52,787 --> 01:20:53,787
+Now, these values, this value here, can easily found in any probability textbook. So, it is, it is the alpha over 2th quantile.
+
+314
+01:21:22,787 --> 01:21:36,787
+right so it is the cumulative distribution value okay
+
+315
+01:21:37,587 --> 01:21:38,587
+and
+
+316
+01:21:45,587 --> 01:21:52,587
+whose probability is alpha over 2. Okay.
+
+317
+01:21:56,404 --> 01:22:16,004
+Similarly this value here. This value here is cumulative value of this alpha over 2 plus 1 minus alpha here.
+
+318
+01:22:18,292 --> 01:22:38,292
+But instead of this, we will use minus Q alpha over two.
+
+319
+01:22:38,739 --> 01:22:42,739
+From symmetry, you can see this.
+
+320
+01:22:50,387 --> 01:23:20,367
+So if we continue with our example of alpha being 0.05, here we are talking about Q 0.025. And here this should be Q 0.025.
+
+321
+01:23:20,387 --> 01:23:25,387
+0.025 plus 0.59.
+
+322
+01:23:28,288 --> 01:23:31,288
+So that is Q0.09075.
+
+323
+01:23:31,287 --> 01:23:44,287
+0, 90, 75.
+
+324
+01:23:44,287 --> 01:23:56,287
+And if you look at the probability books, you will notice that this has the same value as negative
+
+325
+01:23:56,288 --> 01:24:24,288
+and Q 0.025. So there is this thing going on here. You can just use the same thing and it will be easier. Instead of thinking about Q alpha over two and this thing,
+
+326
+01:24:24,288 --> 01:24:28,288
+we will just think about q alpha over two.
+
+327
+01:24:28,288 --> 01:24:29,288
+Okay.
+
+328
+01:24:29,288 --> 01:24:31,288
+And.
+
+329
+01:24:31,288 --> 01:24:35,288
+So these values.
+
+330
+01:24:35,288 --> 01:24:39,288
+Um.
+
+331
+01:25:25,939 --> 01:25:45,292
+So, um,
+
+332
+01:26:07,347 --> 01:26:25,507
+Now we can just write this probability. So we have. We have probability of. Q alpha over two.
+
+333
+01:26:29,555 --> 01:26:43,835
+So Z being between Q alpha over 2 and minus Q alpha over 2 is 1 minus alpha.
+
+334
+01:26:46,036 --> 01:26:54,115
+Okay, so we are kind of, that's the kind of Q we want.
+
+335
+01:26:56,195 --> 01:27:15,855
+And now remember Z was, what was Z? We obtained it by standardization. So let us reverse that. So we will first write Q alpha over 2 instead of Z.
+
+336
+01:27:16,036 --> 01:27:31,036
+We will write theta hat minus theta divided by standard deviation of theta, theta hat.
+
+337
+01:27:31,036 --> 01:27:41,036
+And that's smaller than minus Q alpha over 2 is equal to 1 minus alpha.
+
+338
+01:27:41,036 --> 01:28:05,595
+Now, we can unstandardize at this point and the probability will not change. So instead of these q's, we want to write unstandardized a and b, right? So we want to have b here.
+
+339
+01:28:10,868 --> 01:28:40,708
+So let's do that. And for doing that, how can we unstandardize this? We first subtract the theta from theta hat and divide it by sigma to standardize. To do the reverse, we will multiply by this standard deviation and
+
+340
+01:28:40,708 --> 01:28:42,708
+Add
+
+341
+01:28:50,836 --> 01:29:01,035
+and subtract this theta head. So here we want to
+
+342
+01:29:02,355 --> 01:29:03,355
+Leave theta alone. So we want to leave theta alone, not theta hat. So if you do the necessary, do the necessary calculations, you will, you should get probability of theta hat plus qi.
+
+343
+01:29:32,355 --> 01:29:59,355
+alpha over 2, sigma of theta hat is smaller than parameters, and the parameter is smaller than theta hat minus q sigma over 2.
+
+344
+01:30:02,292 --> 01:30:14,292
+alpha over two sorry, sigma theta hat is equal to one minus alpha.
+
+345
+01:30:21,203 --> 01:30:37,203
+So here we are almost there. Now, instead of Q, though, the
+
+346
+01:30:42,771 --> 01:30:45,971
+the book uses z.
+
+347
+01:30:49,235 --> 01:31:04,675
+So instead of Q, we use these standard normal quantiles.
+
+348
+01:31:16,692 --> 01:31:34,692
+We will write them as Z. Alpha over two. And there Z alpha over two. Is minus.
+
+349
+01:31:42,260 --> 01:31:45,539
+minus
+
+350
+01:31:51,060 --> 01:32:02,060
+to I forward to. So they are defined this way. Okay.
+
+351
+01:32:08,020 --> 01:32:12,020
+So instead of minus Q alpha over two,
+
+352
+01:32:17,908 --> 01:32:19,908
+We will write that here now.
+
+353
+01:32:26,771 --> 01:32:27,771
+So let's see. Probability of. Tether hat being. Tether hat minus now Z. I for. Two. Times Sigma to that.
+
+354
+01:32:52,756 --> 01:33:08,515
+that value will be less than theta and theta will be less than theta hat plus z alpha over two.
+
+355
+01:33:12,372 --> 01:33:16,372
+sigma theta hertz.
+
+356
+01:33:18,963 --> 01:33:21,963
+is one minus alpha.
+
+357
+01:33:25,803 --> 01:33:32,083
+So the Z values can be read from the books.
+
+358
+01:33:33,723 --> 01:33:34,723
+And.
+
+359
+01:33:37,363 --> 01:33:40,603
+Some common Z values are.
+
+360
+01:33:40,603 --> 01:33:45,603
+And.
+
+361
+01:33:44,916 --> 01:33:48,156
+Let me write some common Z values.
+
+362
+01:33:58,836 --> 01:33:59,836
+So, Z 0.10 is 1.282. For example, Z 0.025 is 1.960. Z 0.025 is 1.960. Z 0.025 is 1.960.
+
+363
+01:34:28,836 --> 01:34:32,615
+0.01 is
+
+364
+01:34:35,731 --> 01:34:43,111
+2.326.
+
+365
+01:34:54,963 --> 01:35:08,963
+I have written that one.
+
+366
+01:35:15,828 --> 01:35:28,187
+Z 0.05 is 1645.
+
+367
+01:35:28,187 --> 01:35:33,987
+And finally Z 0.005 is
+
+368
+01:35:37,460 --> 01:35:43,460
+to 5, 7, 6.
+
+369
+01:35:43,460 --> 01:35:47,460
+So,
+
+370
+01:35:57,108 --> 01:36:07,988
+You should be able to find these values in the book but we just wrote them here.
+
+371
+01:36:23,252 --> 01:36:29,252
+You can also say with this
+
+372
+01:36:37,908 --> 01:36:39,908
+So,
+
+373
+01:36:56,948 --> 01:37:04,307
+So, that's...
+
+374
+01:37:05,908 --> 01:37:33,908
+Alpha over 2 is, or Z Alpha is, as we said it's minus Q Alpha, also it is Q 1 minus Alpha, and also it is inverse, standard cumulative distribution.
+
+375
+01:37:33,908 --> 01:37:37,908
+of 1-alpha.
+
+376
+01:37:43,667 --> 01:37:53,207
+So this is kind of extra information on the Z standard normal quantiles.
+
+377
+01:38:02,899 --> 01:38:14,899
+and it is Z alpha is the value
+
+378
+01:38:18,131 --> 01:38:21,131
+of a standard normal.
+
+379
+01:38:28,916 --> 01:38:30,315
+variables.
+
+380
+01:38:38,195 --> 01:38:46,635
+z that is exceeded with probability alpha.
+
+381
+01:39:32,724 --> 01:39:37,724
+that is exceeded with probability.
+
+382
+01:39:46,484 --> 01:39:47,484
+So it means you have a standard normal distribution. It has mean zero and standard deviation one and Z alpha is the value where the probability of after it is
+
+383
+01:40:16,484 --> 01:40:21,484
+alpha okay
+
+384
+01:40:25,235 --> 01:40:47,235
+So that is like this. So it's it's not hard to find any Z alpha you want. OK, now now where were we? We were here. We just needed to convert this to use Z alpha instead of Q's.
+
+385
+01:40:47,235 --> 01:41:12,235
+and now if we do that what do we have? Probability of theta hat minus now Z alpha over 2 is sigma times alpha hat.
+
+386
+01:41:12,235 --> 01:41:41,676
+I'm rewriting this but instead of Q I will use Z and it's very simple here if you use this one so you can obtain these from these so they are all same thing so instead of positive Q alpha over 2 I will say negative Q alpha over 2
+
+387
+01:41:42,235 --> 01:41:45,235
+and if I write that I have
+
+388
+01:41:48,756 --> 01:42:05,555
+theta hat plus z alpha over 2 sigma theta hat. That probability will be 1 minus alpha.
+
+389
+01:42:14,931 --> 01:42:32,931
+Now, we are done here actually because we have A and B here. Okay, it's kind of complicated maybe but look, this is A and this is B.
+
+390
+01:42:32,595 --> 01:42:33,095
+Right.
+
+391
+01:42:38,100 --> 01:42:42,419
+We wanted to find this A and B and now we have them.
+
+392
+01:42:52,787 --> 01:42:57,107
+So that means AB is
+
+393
+01:43:07,315 --> 01:43:27,315
+A B is theta hat minus plus Z alpha over 2 sigma theta hat.
+
+394
+01:43:30,163 --> 01:43:33,363
+So this is a
+
+395
+01:43:36,340 --> 01:43:38,340
+one minus alpha.
+
+396
+01:43:41,363 --> 01:43:46,363
+100% confidence interval
+
+397
+01:43:53,908 --> 01:43:55,908
+for theta.
+
+398
+01:44:13,363 --> 01:44:15,363
+Now here,
+
+399
+01:44:21,779 --> 01:44:32,099
+theta head is the center of the interval. It's called center of the interval.
+
+400
+01:44:38,323 --> 01:44:39,183
+and
+
+401
+01:44:44,275 --> 01:44:54,675
+z alpha over two times sigma theta head is called margin.
+
+402
+01:44:59,380 --> 01:45:02,380
+and
+
+403
+01:45:05,043 --> 01:45:10,043
+We will do an example in the
+
+404
+01:45:15,731 --> 01:45:31,731
+in the next hour. But to apply this though, you must be careful to apply this equation.
+
+405
+01:45:34,100 --> 01:45:34,979
+probability, statistics, and statistics.
+
+406
+01:45:38,931 --> 01:45:42,931
+So you can use this equation.
+
+407
+01:46:05,300 --> 01:46:06,300
+We can use a, b equals to theta hat minus plus z alpha over two times standard deviation of theta hat if theta hat is n,
+
+408
+01:46:35,300 --> 01:46:53,300
+an unbiased estimator of theta. So we have an unbiased estimator C theta hat.
+
+409
+01:47:00,020 --> 01:47:03,219
+has a normal distribution
+
+410
+01:47:15,091 --> 01:47:44,091
+or asymptotically normal. And we should be able to find its standard error somehow because here we have standard error rate. So somehow we need to find its standard error and then we should find these Z alpha over 2s from the table of normal distribution and we can just apply it.
+
+411
+01:47:44,091 --> 01:47:49,091
+So basically we need to be careful about these two things.
+
+412
+01:47:52,979 --> 01:48:07,979
+data data must be an unwaist estimator and it must be normal distribution or if you have a lot of data, it must be asymptotically normal.
+
+413
+01:48:11,283 --> 01:48:15,283
+So let's, we will do an example.
+
+414
+01:48:20,659 --> 01:48:27,659
+Let's do an example. We will do confidence interval.
+
+415
+01:48:31,923 --> 01:48:33,963
+for the population mean.
+
+416
+01:48:42,036 --> 01:49:08,555
+But as I said, this is just an, this will be an example we can use any. We can use this method for any estimators that is unbiased and normal in distribution. But we will do that after the break. So let's have a break till three o'clock.
+
+417
+01:49:15,283 --> 01:49:19,283
+So break, tilt,
+
+418
+01:49:27,764 --> 01:49:30,643
+301.
+
+419
+02:00:40,500 --> 02:00:43,139
+Yes, my friend,
+
+420
+02:00:54,547 --> 02:01:24,527
+Okay, so let's do an example for this. So we just found an equation for this AB. To construct this interval, we can use this equation, providing that our estimator is unbiased and our estimator has a normal distribution.
+
+421
+02:01:24,547 --> 02:01:36,787
+distribution. Let's do an example for this. We will find a confidence interval for the population
+
+422
+02:01:36,787 --> 02:01:46,787
+mean. Population mean is which one? Population mean is mu.
+
+423
+02:01:53,300 --> 02:02:11,300
+We want to find a confidence interval equation. In this case, we want to find an equation. Now, first of all, we need to find an estimator.
+
+424
+02:02:12,724 --> 02:02:21,724
+which has find an estimator that is unbiased.
+
+425
+02:02:22,131 --> 02:02:44,131
+and distributed by normal distribution. Well, we already know such a such an estimator, right? We know that sample mean is an estimator for mu.
+
+426
+02:02:50,100 --> 02:03:11,100
+and sample means sample mean is obvious and it is asymptotically normal. So if we have enough data sample mean is normal. So assuming that we have enough data, we can just use that equation.
+
+427
+02:03:15,188 --> 02:03:20,188
+So sample mean is envious.
+
+428
+02:03:21,140 --> 02:03:34,379
+because its expected value is Mu itself and sample mean is asymptotically
+
+429
+02:03:37,971 --> 02:04:03,831
+normal. So that means our equation now becomes, or AB will be, theta hat. Remember we had a theta hat there, but our theta hat now will be sample mean, right? Instead of theta hat, we will write sample mean.
+
+430
+02:04:03,831 --> 02:04:24,832
+And there was this plus minus and Z alpha over two standard deviation of theta hat.
+
+431
+02:04:24,832 --> 02:04:30,832
+Now this can be calculated from data.
+
+432
+02:04:30,832 --> 02:05:00,811
+and
+
+433
+02:04:34,547 --> 02:04:35,547
+Right. And so it's easy to calculate sample mean from data. Z alpha over two can be found. In probability tables.
+
+434
+02:04:58,484 --> 02:05:07,484
+standard normal CDF tables.
+
+435
+02:05:07,484 --> 02:05:13,484
+And now what is what about this one?
+
+436
+02:05:13,484 --> 02:05:19,484
+Standard deviation of sample mean.
+
+437
+02:05:19,484 --> 02:05:26,484
+Well, standard deviation of sample mean, we already know this.
+
+438
+02:05:26,484 --> 02:05:36,484
+of this population standard deviation divided by square root of n.
+
+439
+02:05:36,484 --> 02:05:45,484
+So. And now again, we know this square root of n from data.
+
+440
+02:05:48,564 --> 02:06:04,564
+What about population mean? Now population mean if we know somehow from historical data or somehow we can just use it. If you don't know it.
+
+441
+02:06:12,372 --> 02:06:13,372
+Sorry. So if you don't know it, we can estimate it from data, right? So, or equation becomes a b sample mean plus minus z alpha over two. Now standard deviation divided by population standard deviation divided by square root of
+
+442
+02:06:42,372 --> 02:06:49,372
+of n and now if you don't know.
+
+443
+02:06:55,988 --> 02:07:25,967
+What will we do? We will say that AB is standard sample mean plus minus alpha over 2 standard normal quantile times sample standard deviation divided by square root of number of
+
+444
+02:07:25,967 --> 02:07:39,967
+So here, if you don't know the standard deviation population standard deviation, we can just use its estimator, which is sample standard deviation.
+
+445
+02:07:39,967 --> 02:07:41,967
+Let me try this way.
+
+446
+02:07:41,967 --> 02:07:43,967
+So,
+
+447
+02:07:49,395 --> 02:08:05,395
+But we can do this if we have enough data. So let's rewrite this. If we don't know if we have enough data.
+
+448
+02:08:06,163 --> 02:08:34,163
+if we have large sample. So if you have large sample, we can say that standard. If we can say that sample estimate is good enough, if we have large enough large sample or or estimate of standard deviation will be good.
+
+449
+02:08:34,163 --> 02:08:41,163
+But if we don't have large samples, what will we do?
+
+450
+02:08:48,051 --> 02:09:12,051
+If we have small sample, meaning we don't have enough data to accurately calculate or accurately estimate the standard deviation. In this case, we will get, we will, we will not use normal distribution.
+
+451
+02:09:12,051 --> 02:09:18,531
+and we will use something called students t distribution.
+
+452
+02:09:21,876 --> 02:09:25,155
+we use we have to
+
+453
+02:09:28,243 --> 02:09:40,243
+use students t distribution instead of
+
+454
+02:09:44,372 --> 02:09:47,372
+of normal distribution.
+
+455
+02:09:53,203 --> 02:10:21,523
+and or equation will be a b equals to sample mean minus plus t instead of z t alpha over two s divided by square root of n. And this t alpha over two is called
+
+456
+02:10:27,731 --> 02:10:35,731
+critical, this is critical value.
+
+457
+02:10:39,859 --> 02:10:41,859
+from T distribution.
+
+458
+02:10:49,524 --> 02:10:57,024
+with n minus one degrees of freedom.
+
+459
+02:11:06,100 --> 02:11:16,100
+We didn't see T distribution, but it's similar to normal distribution. It is still symmetric.
+
+460
+02:11:18,739 --> 02:11:38,739
+students students t distribution is again a symmetric distribution and it can be used instead of normal distribution when we have when we don't have enough enough data.
+
+461
+02:11:38,739 --> 02:12:07,739
+You can check out its values from the table and you can research it from your books. So with this, I will finish. That will be the last thing you will be responsible for in the exam.
+
+462
+02:12:08,739 --> 02:12:34,339
+Bu şekilde bu dönemi bitiriyoruz arkadaşlar. Buraya kadar yapacağım. Kitapta 9.22'yi yapmış olduk en son. 9.22'ye kadar da sınavda sorumlusunuz.
+
+463
+02:12:39,667 --> 02:12:41,667
+Baron'un kitabında
+
+464
+02:12:44,467 --> 02:12:47,667
+and
+
+465
+02:12:50,131 --> 02:12:57,131
+This year has been a very important role in this year.
+
+466
+02:12:57,131 --> 02:13:07,131
+We have a very important role in this year.
+
+467
+02:13:07,131 --> 02:13:09,131
+Statistik is very important.
+
+468
+02:13:09,131 --> 02:13:23,131
+The ability to learn the data science,
+
+469
+02:13:23,131 --> 02:13:25,131
+the data science, the data science,
+
+470
+02:13:25,131 --> 02:13:29,131
+It's a very important thing.
+
+471
+02:13:29,131 --> 02:13:53,131
+We have a lot of knowledge with you.
+
+472
+02:13:53,131 --> 02:14:23,111
+But there are no differences in the background.
+
+473
+02:14:23,131 --> 02:14:26,131
+Another book I need to look at.
+
+474
+02:14:26,131 --> 02:14:29,131
+Baron's telling the story,
+
+475
+02:14:29,131 --> 02:14:36,131
+the story of Ross's beautiful book.
+
+476
+02:14:39,828 --> 02:14:47,347
+For example, Ross'un Olasılık Kitabı var.
+
+477
+02:15:01,108 --> 02:15:05,108
+Introduction to Probability Models, dear.
+
+478
+02:15:16,180 --> 02:15:18,180
+This is a beautiful book.
+
+479
+02:15:23,180 --> 02:15:25,180
+There are many books.
+
+480
+02:15:25,180 --> 02:15:33,180
+If you can find a book, if you can find a book, if you can find a book, if you can find a book.
+
+481
+02:15:33,180 --> 02:15:40,180
+Baron's little bit more than the way we chose.
+
+482
+02:15:40,180 --> 02:15:41,180
+The main topic of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content of the content
+
+483
+02:16:10,180 --> 02:16:17,180
+Maybe other books, you can find other books.
+
+484
+02:16:17,180 --> 02:16:22,180
+I think it's a good job.
+
+485
+02:16:22,180 --> 02:16:29,180
+If you ask questions, you can ask questions, you can ask questions.
+
+486
+02:16:29,180 --> 02:16:31,180
+before I get it.
+
+487
+02:16:40,371 --> 02:16:51,371
+sınavı gelecek salıya ayarlamışlar değil mi? Sınav programını paylaştılar galiba.
+
+488
+02:16:54,164 --> 02:16:58,664
+sınav programına bakanınız var mı?
+
+489
+02:17:03,252 --> 02:17:07,491
+Where did you say that?
+
+490
+02:17:12,659 --> 02:17:16,899
+final sınav programlarında bazı değişiklikler demiş.
+
+491
+02:17:46,579 --> 02:17:51,679
+Yes, Salı günü, yani Salı günü saat 1'de gözüküyor.
+
+492
+02:17:52,679 --> 02:17:56,239
+Dediğim gibi buraya kadar sorumlusunuz.
+
+493
+02:17:56,239 --> 02:17:59,119
+Yine test olur.
+
+494
+02:18:00,099 --> 02:18:03,500
+Yani şu anda artık 3. sınavımıza girmiş oluyoruz.
+
+495
+02:18:03,739 --> 02:18:09,000
+İyi kötü genel herhalde nasıl bir şey yapacağımızı tahmin ediyorsunuzdur.
+
+496
+02:18:12,019 --> 02:18:14,319
+Buraya da ilan etmiş olayım.
+
+497
+02:18:18,355 --> 02:18:20,495
+Final exam
+
+498
+02:18:20,495 --> 02:18:22,415
+test
+
+499
+02:18:22,415 --> 02:18:22,975
+will be done.
+
+500
+02:18:24,895 --> 02:18:25,655
+I don't know
+
+501
+02:18:25,655 --> 02:18:26,755
+how much question is.
+
+502
+02:18:26,755 --> 02:18:28,435
+I don't know if I'm not saying anything.
+
+503
+02:18:29,156 --> 02:18:32,335
+I don't know if I'm 20-20
+
+504
+02:18:32,335 --> 02:18:32,355
+and 15-20.
+
+505
+02:18:33,816 --> 02:18:35,155
+15-25
+
+506
+02:18:35,155 --> 02:18:35,536
+and 15-25.
+
+507
+02:18:37,675 --> 02:18:38,475
+Hocam,
+
+508
+02:18:38,555 --> 02:18:39,575
+önemli olan konu,
+
+509
+02:18:39,635 --> 02:18:40,635
+geri dönüşümü yok.
+
+510
+02:18:41,215 --> 02:18:42,935
+Testimiz geri dönüşümsüz.
+
+511
+02:18:43,616 --> 02:18:45,315
+Bir soruyu geçtikten sonra
+
+512
+02:18:45,315 --> 02:18:46,995
+tekrar geri dönüp eski soruya
+
+513
+02:18:46,995 --> 02:18:48,995
+We don't have to look at it.
+
+514
+02:18:48,995 --> 02:19:06,995
+I think it's a very important thing.
+
+515
+02:19:06,995 --> 02:19:07,995
+It's a very important thing.
+
+516
+02:19:07,995 --> 02:19:08,995
+I think it's a very important thing.
+
+517
+02:19:08,995 --> 02:19:14,995
+It's a very important thing.
+
+518
+02:19:14,995 --> 02:19:15,995
+So you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see that you can see
+
+519
+02:19:44,995 --> 02:19:47,796
+We said that we were going to be a good thing.
+
+520
+02:19:47,796 --> 02:19:49,796
+What time did you say?
+
+521
+02:19:50,995 --> 02:19:53,595
+If you were saying that,
+
+522
+02:19:53,595 --> 02:19:56,796
+I think that many people were going to be a good thing.
+
+523
+02:19:56,796 --> 02:20:10,796
+I don't know what a good thing is.
+
+524
+02:20:10,795 --> 02:20:11,555
+Bence de yok.
+
+525
+02:20:12,335 --> 02:20:14,675
+1. vizede uyguladığımız bir uygulama.
+
+526
+02:20:15,835 --> 02:20:17,755
+Quizde uyguladığımız bir uygulama.
+
+527
+02:20:18,575 --> 02:20:20,195
+Quizde test miydi hocam bizim?
+
+528
+02:20:20,635 --> 02:20:21,595
+Evet testti.
+
+529
+02:20:21,755 --> 02:20:22,535
+Yine böyleydi.
+
+530
+02:20:23,555 --> 02:20:25,415
+Yazılı PDF yüklemedik mi biz?
+
+531
+02:20:25,615 --> 02:20:27,275
+Bu 1. quizde yükledik.
+
+532
+02:20:27,395 --> 02:20:28,895
+2. quizde de böyle oldu.
+
+533
+02:20:29,035 --> 02:20:30,515
+Ben 2. quizde girememiştim.
+
+534
+02:20:30,595 --> 02:20:31,296
+Biliyorum biliyorum.
+
+535
+02:20:31,315 --> 02:20:32,195
+Siz girememiştiniz.
+
+536
+02:20:32,955 --> 02:20:34,195
+Ama hayır.
+
+537
+02:20:34,475 --> 02:20:37,675
+Öğrencinin bile gözünden kaçsa bakın kaçabilirdi.
+
+538
+02:20:37,675 --> 02:20:41,675
+You said that you can't get the same, but you can't get the same.
+
+539
+02:20:41,675 --> 02:20:43,675
+So, you can't get the same.
+
+540
+02:20:43,675 --> 02:20:46,675
+One thing I'll say is that you can't get the same.
+
+541
+02:20:46,675 --> 02:20:51,675
+If you are in the system, you can't get the same.
+
+542
+02:20:51,675 --> 02:20:52,675
+No, no, no.
+
+543
+02:20:52,675 --> 02:20:56,675
+I'll give you a little.
+
+544
+02:20:56,675 --> 02:20:58,675
+I'll give you 72 points.
+
+545
+02:20:58,675 --> 02:20:59,675
+72 points.
+
+546
+02:20:59,675 --> 02:21:04,675
+I'll give you a little.
+
+547
+02:21:04,675 --> 02:21:09,475
+Sınav öncesi, çünkü bakın sınavın değişik statülleri var.
+
+548
+02:21:09,675 --> 02:21:13,535
+İşte kimisi geri dönüşümsüz, kimisi işte başka modellerde.
+
+549
+02:21:14,295 --> 02:21:25,935
+Bu sınav, yani girilen her sınava girmeden önce hatta büyük puntalarla bu sınavda gireceğiniz kullanım şartları şudur diye bir dakikalık veya 15 saniyelik bir şey mutlaka belirtilmesi lazım.
+
+550
+02:21:26,535 --> 02:21:27,655
+Ya inanır mısınız hocam?
+
+551
+02:21:28,055 --> 02:21:28,435
+Beyefendi.
+
+552
+02:21:28,435 --> 02:21:32,175
+6. soruda 6. soruya bakın.
+
+553
+02:21:32,175 --> 02:21:38,995
+Now, look, this is a video of the video, I'm going to give you a little bit of a question.
+
+554
+02:21:38,995 --> 02:21:40,395
+I don't know what I'm saying, I don't know.
+
+555
+02:21:40,495 --> 02:21:41,775
+Thank you, I don't know what I'm saying.
+
+556
+02:21:42,095 --> 02:21:46,115
+We're going to talk about this.
+
+557
+02:21:46,655 --> 02:22:00,915
+I don't know what I'm saying.
+
+558
+02:22:00,915 --> 02:22:04,915
+This is not a thing.
+
+559
+02:22:04,915 --> 02:22:06,915
+Look, this is not a thing.
+
+560
+02:22:06,915 --> 02:22:08,915
+I don't know.
+
+561
+02:22:08,915 --> 02:22:10,915
+Look, this is not a thing.
+
+562
+02:22:10,915 --> 02:22:16,915
+We are like this.
+
+563
+02:22:15,476 --> 02:22:16,476
+Second term, we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we have to say that we
+
+564
+02:22:45,476 --> 02:22:49,476
+I don't know. I don't know. I don't know. I don't know. I don't know.
+
+565
+02:22:49,476 --> 02:22:51,476
+I don't know. I don't know. I don't know.
+
+566
+02:22:51,476 --> 02:22:53,476
+I don't know. I don't know.
+
+567
+02:22:53,476 --> 02:23:11,476
+I don't know.
+
+568
+02:23:11,476 --> 02:23:17,476
+So I think that's the case of the law, I think that's the case of the law.
+
+569
+02:23:17,476 --> 02:23:23,476
+I think that's the case of the law.
+
+570
+02:23:23,476 --> 02:23:25,476
+Okay.
+
+571
+02:23:25,476 --> 02:23:29,476
+I think that's the case of the law.
+
+572
+02:23:29,476 --> 02:23:31,476
+Yes.
+
+573
+02:23:31,476 --> 02:23:37,476
+I think that's the case of the law.
+
+574
+02:23:37,476 --> 02:23:39,476
+look at the
+
+575
+02:23:39,476 --> 02:23:41,476
+next question.
+
+576
+02:23:41,476 --> 02:23:49,476
+I'm going to go to the next question.
+
+577
+02:23:49,476 --> 02:23:51,476
+Maybe I'm going to go to the next question.
+
+578
+02:23:51,476 --> 02:23:55,476
+I'm going to go to the next question.
+
+579
+02:23:55,476 --> 02:24:01,476
+You can go to the next question.
+
+580
+02:24:01,476 --> 02:24:05,476
+I'm going to go to the next question.
+
+581
+02:24:05,476 --> 02:24:10,476
+I'm not sure if I look at it.
+
+582
+02:24:10,476 --> 02:24:12,476
+If I look at it,
+
+583
+02:24:12,476 --> 02:24:14,476
+this is the third time.
+
+584
+02:24:14,476 --> 02:24:16,476
+This is the third time.
+
+585
+02:24:16,476 --> 02:24:24,476
+It's the third time.
+
+586
+02:24:24,476 --> 02:24:26,476
+This is the third time.
+
+587
+02:24:26,476 --> 02:24:28,476
+It's the third time.
+
+588
+02:24:28,476 --> 02:24:30,476
+No, it's the third time.
+
+589
+02:24:30,476 --> 02:24:32,476
+I'm not sure if I say it.
+
+590
+02:24:32,476 --> 02:25:00,476
+I don't know what I mean.
+
+591
+02:25:00,476 --> 02:25:02,476
+You can't wait for the next question.
+
+592
+02:25:02,476 --> 02:25:03,476
+There is no problem.
+
+593
+02:25:03,476 --> 02:25:10,476
+You can't wait for the next question.
+
+594
+02:25:10,476 --> 02:25:12,476
+What is the problem?
+
+595
+02:25:12,476 --> 02:25:24,476
+You can't wait for the next question.
+
+596
+02:25:24,476 --> 02:25:28,476
+I'm going to wait for the next question.
+
+597
+02:25:28,476 --> 02:25:44,476
+I'm not sure what you're doing.

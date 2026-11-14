@@ -1,0 +1,5079 @@
+1
+00:02:06,260 --> 00:02:08,259
+nasılsınız?
+
+2
+00:02:11,187 --> 00:02:38,067
+evet, bir Allah'ın kulundan bir cevap bekliyorum. Günaydın hocam, iyi, sağ olun, siz nasılsınız? Tamam, teşekkür ederim. Ben çok mutluyum. Çünkü kabus gibi bir haftamdı bu hafta. Ve son güne geldik. Yaşasın diyorum. İki dersim, bir toplantı var. Onu da bitirince Cuma bitmiş olacak. Ne günlere kaldık. Bunlarla mutlu oluyoruz işte.
+
+3
+00:02:38,067 --> 00:02:50,007
+Sınıfımız halen çok az. Tamam ben şimdi size bir ön bilgi vermek istiyorum. Önümüzdeki cuma günü yeni bir yıla girmiş olacağız. İnşallah güzel bir yıl olur.
+
+4
+00:02:51,307 --> 00:03:08,048
+Dersimiz olmayacak. Ondan sonraki haftada vize sınavımız olacak dedik. Bu vize sınavımız test olacak. O yüzden benim bugün grafları bitirmem az bir konumuz kaldı ve kromotik polinomlara başlayacağız.
+
+5
+00:03:08,067 --> 00:03:18,287
+Kromatik polinomlar grafta gördüğümüz bilgilerin üzerine şimdiye kadar hiç görmediğiniz, duymadığınız değişik bir konu.
+
+6
+00:03:18,927 --> 00:03:27,307
+Yine tahtada anlatırdım bu dersi. Renkli tebeşirlerle anlatırdım. Çünkü öyle daha güzel gözüküyor.
+
+7
+00:03:28,427 --> 00:03:36,048
+Tahta olayı olmayınca bunları elimle böyle teker teker renklendirerek çizdim.
+
+8
+00:03:38,067 --> 00:03:52,227
+yani çok zorladı beni. Neyse onları bitireceğiz. Tek bir kısa bir konumuz kalıyor. Ona geçebilir miyiz, geçemez miyiz bilmiyorum. Eğer geçemezsek vizeye dahil etmeyeceğiz.
+
+9
+00:03:52,228 --> 00:04:12,427
+fakat diğer grup geçip bitirmiş olursa ben bir şekilde bir aradan ya bir telafi dersi yaparım çok böyle yarım saatlik ya da kayıt ederim siz girer onu dinlersiniz ya da Ahmet Hoca'nınkini dinlersiniz bilmiyorum belki de onu da bitiririz bugün.
+
+10
+00:04:12,427 --> 00:04:22,027
+ve yine arada 10.30'da fakültede bir toplantı var ve benim o toplantıda olmam gerekiyor çok kısa bir süreliğine.
+
+11
+00:04:22,667 --> 00:04:31,048
+Fakat toplantıda böyle esas oy verme kısmında olmam gerektiği için tablette de ayrı bir zoom açacağım.
+
+12
+00:04:31,048 --> 00:04:35,848
+Orada o başladığı an biz dersimizdeki arayı o zaman vereceğiz.
+
+13
+00:04:36,167 --> 00:04:42,247
+10.30'dan sonra yani ben 10.30'a kadar nefesim yettiği kadar ders anlatmaya çalışacağım.
+
+14
+00:04:42,427 --> 00:05:02,747
+Evet 23 sayımız çok az. Neyse kendileri biliyor arkadaşlar. Şimdi ben izninizle share screen yapayım. Bunları da hep hazır açtım bıraktım buradaki arayıp vakit geçirmeyelim diye. Evet görüyor musunuz?
+
+15
+00:05:03,732 --> 00:05:28,891
+gözüküyor hocam. Tamam. Şimdi graflarda şöyle bir kısa özet yapalım. Grafların çok farklı şekilleri var demiştik. Önce graf bir düğün ve kenarlardan oluşuyordu. Sonra grafların çeşitleri var dedik ve en önemlileri işte basit graftan başladık. Sonra paralel kenar dedik. Sonra çoklu graflar dedik.
+
+16
+00:05:28,891 --> 00:05:41,932
+Pesodograflar dedik, yönlü graflar, ağırlıklı graflar geldi. Arkasından grafların tipleri vardı. Complete graf demiştik, tam graf.
+
+17
+00:05:41,932 --> 00:05:54,191
+Bir düğüm kendisinin dışındaki bütün düğümlerle bağlantısı vardı. Cycle graf diyorduk, döngü graf'tı. Bir çember oluşturacak şekilde düğümleri birbirine bağlıyorduk.
+
+18
+00:05:54,191 --> 00:06:04,051
+arkasından hil graf gelmişti. O da çember grafa ekstradan bir düğüm ekleyip o düğümü diğer bütün düğümlere bağlıyorduk.
+
+19
+00:06:04,051 --> 00:06:15,971
+Sonra küp graf gelmişti. En tane yani Q graf diyorduk küp grafa. Qn grafının iki üzeri en tane düğümü oluyordu.
+
+20
+00:06:16,751 --> 00:06:22,172
+Bu küp grafları bu şeylerde yol ve petlerde aslında karşımıza çıkacak.
+
+21
+00:06:22,171 --> 00:06:32,171
+Bunun dışında bipartiti graflardan bahsetmiştik. Graflarımızı, graf oluşturan düğümleri öyle iki parçaya bölecektik ki
+
+22
+00:06:32,171 --> 00:06:44,091
+böldüğümüz parçanın içinde kalan düğümler birbirleriyle bağlantısı olmayacaktı. Bir de kompleyt tam şeyler bipartiti graflar vardı.
+
+23
+00:06:44,091 --> 00:06:50,431
+Orada da her iki kümenin düğümleri arasında olması gereken bütün bağlantılar vardı.
+
+24
+00:06:50,431 --> 00:07:07,671
+Kısaca konu başlıklarımız bunlardı. Şimdi pet ve cycle yani yol ve döngülere gelelim. Burada da karşımıza Euler ve Hamilton grafları çıkacak. Bu Euler ve Hamilton graflarının da özel durumları var.
+
+25
+00:07:07,671 --> 00:07:35,391
+Önce pet'e bakalım. Şu bir pet. Bu pet'te kaç tane yol varsa onun bir fazlası kadar düğüm var. Ben yine şu güzel kalemimi alayım. Ne demek istiyorum? Mesela şuna bir düğüm diyelim. Şurası bir düğüm olsun. İşte düğüm, düğüm. Bunlar kitaptan alınmış görseller olduğu için ya da ben mi çizdim? Hatırlamıyorum.
+
+26
+00:07:35,392 --> 00:07:57,392
+yamuk yumuk olmuş. Şu an düz bir çizgi değil. Şimdi kaç tane düğüm var? 1, 2, 3, 4, 5, 6, 7, 8, 9 tane düğüm var. 9 tane düğüm varsa bir eksiği kadar da kenarım olması lazım. 8 tane kenar lazım. 1, 2, 3, 4, 5, 6, 7 ve 8.
+
+27
+00:07:57,392 --> 00:08:20,452
+Pet dediğimiz şey bu. Eğer bu pet kapalı bir döngü haline getirirsem yani başlanmış noktam burası bütün düğümleri geçerek başladığım noktaya geri geliyorsam bu da bir döngü oluyor. Kaç tane düğüm varsa o kadar da kenarım var. Bunlarda bir şey yok.
+
+28
+00:08:20,452 --> 00:08:33,991
+Şimdi gelelim döngüye. Döngüde karşımıza Euler döngüsü geliyor. Evet şunun hepsini açalım. Şimdi Euler döngüsü nedir?
+
+29
+00:08:33,991 --> 00:08:56,751
+Eğer diyor bir G grafının içerisinde bir Euler saykılı, Euler döngüsü var ise o graf Euler grafı oluyor ve amacı da şu her kenardan sadece bir kez geçilmesine izin var.
+
+30
+00:08:57,172 --> 00:09:13,932
+Yani elimde benim bir grafım var. Şu bir graf olsun. Tamam mı? Bu öyle bir graf ki her düğümden bir kez geçerek bütün düğümleri dolaşıyorsam bu bir öğler saykılıdır.
+
+31
+00:09:13,932 --> 00:09:34,212
+Her grafın her bir düğümünden bir kez geçmiş olmak şartıyla başladığım noktaya geri dönüyorsam yani startım ve stopum aynıysa hem öler döngüsü var hem de bu bir öler grafıdır.
+
+32
+00:09:34,212 --> 00:09:37,512
+Ve çok ünlü bir problem var.
+
+33
+00:09:37,912 --> 00:09:40,471
+Königsberg problemi, köprü problemi.
+
+34
+00:09:40,592 --> 00:09:46,732
+Bu Almanya'da bir köy ve bu köyde de şunlar nehir.
+
+35
+00:09:47,631 --> 00:09:49,352
+Şu kırmızılar nehir.
+
+36
+00:09:49,872 --> 00:09:53,892
+Bu nehirler üzerine de köprüler kurulmuş.
+
+37
+00:09:54,432 --> 00:09:58,271
+Kaç tane? 2, 4, 6, 7 tane de köprü var.
+
+38
+00:09:58,271 --> 00:10:02,871
+A, B, C ve D dediğim yerlerde evler var.
+
+39
+00:10:02,991 --> 00:10:04,771
+Yerleşim bölgeleri buraları.
+
+40
+00:10:05,271 --> 00:10:13,811
+Bu yerleşim bölgeleri arasında gidiş gelişte bu nehir şey yaptığı için, engellediği için köprüler yapılmış.
+
+41
+00:10:13,811 --> 00:10:28,491
+Ve deniyor ki bu köprülerin her birimden bir kez geçmek şartıyla ben başladığım noktaya geri dönebilir miyim?
+
+42
+00:10:29,832 --> 00:10:32,672
+Yani her köprüden bir kez geçeceğim.
+
+43
+00:10:33,811 --> 00:10:40,991
+Geçtiğim bir köprüden bir daha geçmemek şartıyla bütün köprüleri dolaşabilir miyim?
+
+44
+00:10:40,991 --> 00:10:43,651
+Çok karaladım. Temizleyelim.
+
+45
+00:10:43,811 --> 00:11:04,072
+Bir daha problemimi söylüyorum. Bu önemli bir problem. Bir köprü problemi bana deniyor ki pazar bulmacalarında olur gazeteleri. Her bir köprüden bir kez geçmek şartıyla bütün köprüleri dolaşabilir misin?
+
+46
+00:11:04,071 --> 00:11:07,991
+Bu problemi nasıl çözeceğim?
+
+47
+00:11:08,771 --> 00:11:12,611
+Bu problemi çözmek için bunu graf haline getireceğim.
+
+48
+00:11:13,611 --> 00:11:21,051
+Şimdi grafta yerleşim bölgeleri A, B, C, D'yi grafın büyümleri olarak aldım.
+
+49
+00:11:22,031 --> 00:11:25,291
+Köprüleri de grafın kenarları olarak alacağım.
+
+50
+00:11:25,931 --> 00:11:30,031
+Şimdi bakın A'da D arasında iki tane köprü var.
+
+51
+00:11:30,211 --> 00:11:33,172
+Demek ki A ile D arasında bir paralel kenar var.
+
+52
+00:11:34,032 --> 00:11:36,291
+D ile C arasında da iki köprü var.
+
+53
+00:11:36,672 --> 00:11:39,371
+Demek ki D ve C'de de bir paralel kenar var.
+
+54
+00:11:40,032 --> 00:11:42,632
+Bunun dışında B'nin D ile var.
+
+55
+00:11:42,931 --> 00:11:44,591
+B'nin D ile bağlantısı.
+
+56
+00:11:44,912 --> 00:11:46,112
+B'nin A ile var.
+
+57
+00:11:46,291 --> 00:11:47,151
+B'nin A ile.
+
+58
+00:11:47,532 --> 00:11:48,811
+B'nin de C ile var.
+
+59
+00:11:49,052 --> 00:11:49,851
+B'nin de C.
+
+60
+00:11:49,851 --> 00:11:53,351
+Bu olay çok daha basit bir hale geldi.
+
+61
+00:11:53,951 --> 00:11:55,291
+Şimdi size soruyorum.
+
+62
+00:11:55,972 --> 00:11:57,532
+Köprüler burada hangileri?
+
+63
+00:11:58,032 --> 00:11:58,731
+Kenarlar.
+
+64
+00:11:58,731 --> 00:12:05,211
+Ben her kenardan bir kez geçerek bu grafı dolaşabilir miyim?
+
+65
+00:12:05,731 --> 00:12:09,651
+Dolaşabiliyorsam bu bir öğler döngüsü.
+
+66
+00:12:10,511 --> 00:12:17,871
+Hem dolaşacağım hem de başladığım noktada bitiriyorsam bu bir öğler grafı olacak.
+
+67
+00:12:18,571 --> 00:12:25,071
+Şimdi bu problemi çözebilmem için elinize alıp kağıt kalem bununla oynayabilirsiniz.
+
+68
+00:12:25,071 --> 00:12:27,672
+Fakat bunun basit bir yolu var.
+
+69
+00:12:27,672 --> 00:12:33,011
+Bunun bir öğler saykılı olup olmadığını bana söylemesi için.
+
+70
+00:12:33,532 --> 00:12:38,211
+Peki bunu çözebilmem için benim nelere ihtiyacım var?
+
+71
+00:12:38,672 --> 00:12:40,552
+Bir düğümün derecesini bulmaya.
+
+72
+00:12:41,091 --> 00:12:43,032
+Bir düğümün derecesi nasıl bulunur?
+
+73
+00:12:43,532 --> 00:12:53,272
+Bir kere dereceyi şu ro harfi, ro bu değildir bu nasıl okunur ro buydu, delta değil, delta da değil neyse.
+
+74
+00:12:53,908 --> 00:13:13,567
+Buna rol diyeyim ben. Her bir düğümün derecesini bulmam lazım. Bir düğümün derecesi nasıl bulunur? Eğer graf yönsüz bir graf ise her düğüme giren kenarlar toplamı o grafı o düğümün derecesini verir.
+
+75
+00:13:13,567 --> 00:13:15,588
+A'nın derecesi nedir?
+
+76
+00:13:15,987 --> 00:13:18,268
+4 tane kenarım varsa 4.
+
+77
+00:13:18,608 --> 00:13:20,367
+B'nin derecesi 3.
+
+78
+00:13:20,867 --> 00:13:22,507
+E'nin derecesi 4.
+
+79
+00:13:22,867 --> 00:13:24,067
+G'nin ki 3.
+
+80
+00:13:24,707 --> 00:13:25,807
+F'nin ki 4.
+
+81
+00:13:26,227 --> 00:13:27,867
+Hata yaparsam uyarın.
+
+82
+00:13:28,088 --> 00:13:29,128
+C'nin ki 4.
+
+83
+00:13:29,808 --> 00:13:32,787
+D'nin ki 2, 4, 6.
+
+84
+00:13:34,607 --> 00:13:35,448
+Bakalım.
+
+85
+00:13:36,088 --> 00:13:36,327
+Evet.
+
+86
+00:13:37,448 --> 00:13:40,507
+Demek ki bir düğümün derecesi,
+
+87
+00:13:40,507 --> 00:13:46,467
+Grafımız yönlü bir graf değilse o düğme giren kenarların toplamıdır.
+
+88
+00:13:46,707 --> 00:13:48,547
+Şimdi bu bilgiyi bir kenara koyalım.
+
+89
+00:13:50,047 --> 00:13:52,487
+Ve bu öler grafına geçelim.
+
+90
+00:13:53,207 --> 00:13:59,867
+Eğer bir graf öler saykılığına sahipse öler grafı adını alır dedik.
+
+91
+00:13:59,867 --> 00:14:07,908
+Ve bir grafın öler grafı olabilmesi için bütün düğümlerin derecelerinin çift olması lazım.
+
+92
+00:14:07,908 --> 00:14:10,607
+Şimdi bakalım bu grafı bana soruyordu.
+
+93
+00:14:11,287 --> 00:14:13,168
+A'nın düğüm derecesi 4.
+
+94
+00:14:13,588 --> 00:14:16,808
+3 tane kenar giriyor.
+
+95
+00:14:17,687 --> 00:14:24,428
+Bir tane bile bu şartı sağlamayan bir düğüm varsa diğerlerini hiç kontrol etmeme gerek yok.
+
+96
+00:14:24,948 --> 00:14:27,187
+B'den başlasaydım burası da 3.
+
+97
+00:14:27,488 --> 00:14:29,607
+C'den başlasaydım burası da 3.
+
+98
+00:14:30,047 --> 00:14:32,327
+D'den başlasaydım burası da 5.
+
+99
+00:14:32,327 --> 00:14:40,327
+Ama bir tane düğümün bile tek olması, derecesinin tek olması onun öler grafı olmadığını gösterir.
+
+100
+00:14:41,347 --> 00:14:48,427
+Öyleyse Kearnsberg Köprüsü bridge problemi bir öler grafı değildir.
+
+101
+00:14:48,768 --> 00:14:49,488
+Bunu biliyorum.
+
+102
+00:14:50,467 --> 00:14:55,507
+Peki, başka benim ne gibi bilgilere ihtiyacım var?
+
+103
+00:14:55,507 --> 00:15:03,327
+Yine biliyoruz eğer bir düğümün şu bir noktasal graftı hiçbir kenarı yok.
+
+104
+00:15:03,848 --> 00:15:08,988
+Bu düğümün hiçbir kenarı olmadığı için düğüm derecesi de sıfırdır.
+
+105
+00:15:09,488 --> 00:15:13,268
+Öyleyse bu düğme isolated düğüm deniliyor.
+
+106
+00:15:13,268 --> 00:15:22,327
+Eğer düğüm derecesi bir tane kenarı olan bir düğüm varsa mesela şöyle diyelim.
+
+107
+00:15:22,327 --> 00:15:28,327
+Şimdi şu düğüm bir tane kenar var, derecesi bir.
+
+108
+00:15:28,827 --> 00:15:32,107
+Bu da pentant düğüm olarak adlandırılıyor.
+
+109
+00:15:33,208 --> 00:15:34,447
+Bir teoremin var.
+
+110
+00:15:35,087 --> 00:15:47,747
+Eğer grafında e tane kenar varsa, n tane de düğüm varsa bu grafın düğüm derecelerinin toplamı kenar sayısının iki katıdır.
+
+111
+00:15:47,747 --> 00:15:53,747
+Yani bu grafın bütün düğümlerinin derecelerini topluyorum.
+
+112
+00:15:54,587 --> 00:15:59,727
+Grafın kenar sayısının iki katına eşit olması gerekiyor.
+
+113
+00:16:00,787 --> 00:16:02,147
+Bunu da koyalım bir kenara.
+
+114
+00:16:04,268 --> 00:16:06,167
+Örnek vermiş burada.
+
+115
+00:16:07,747 --> 00:16:11,447
+Her birinin derecesi 6 olan 10 tane düğüm var.
+
+116
+00:16:11,447 --> 00:16:19,587
+Yani i birden ona kadar her bir düğümün derecesi 6 ise benim toplam düğümlerim ne olur?
+
+117
+00:16:19,908 --> 00:16:20,687
+60 olur.
+
+118
+00:16:21,147 --> 00:16:23,647
+Bu grafta kaç tane kenar var diyor.
+
+119
+00:16:24,307 --> 00:16:25,887
+2 bölü eşti.
+
+120
+00:16:26,367 --> 00:16:28,387
+Öyleyse kaç tane kenarım olur?
+
+121
+00:16:28,987 --> 00:16:32,147
+Benim 30 tane kenarım olur.
+
+122
+00:16:33,587 --> 00:16:33,927
+Peki.
+
+123
+00:16:33,927 --> 00:16:47,707
+Demin dedik ki graflar eğer yönsüzse bu grafların düğüm dereceleri o grafa giren kenar sayılarıdır dedik.
+
+124
+00:16:47,707 --> 00:16:51,447
+Eğer grafımız yönlü bir graf ise
+
+125
+00:16:52,148 --> 00:17:05,787
+Yönlü bir graf nedir? İki tane düğüm var bir kenarda. Bunun bir tanesi işte V, şurası da W, buna initial vertex, buna da end vertex diyorum.
+
+126
+00:17:06,167 --> 00:17:16,748
+Yani başlangıç ve bitiş düğümleri ve bu kenarlar arasında bir yön var. Yani V'den W'ye bir yön var. Bunun tam tersi yok.
+
+127
+00:17:16,748 --> 00:17:25,088
+Böyle graflarda, yönlü graflarda bir düğümün derecesini tek bir derece olarak bakmıyorum.
+
+128
+00:17:25,607 --> 00:17:29,427
+In degree ve out degree diye iki derece ölçüyorum.
+
+129
+00:17:29,728 --> 00:17:39,588
+In degree, grafın o düğümüne giren kenar sayısı, out degree de o düğümden çıkan kenar sayısıdır.
+
+130
+00:17:40,168 --> 00:17:45,508
+In degree'leri eksi, out degree'leri ise artıyla gösteriyorum.
+
+131
+00:17:45,508 --> 00:17:59,768
+Mesela şöyle bir şey uyduralım. Ondan sonra şöyle bir şeyler olsun. Şöyle olsun. Aynı zamanda burayla burası arasında da şöyle bir şey olsun.
+
+132
+00:17:59,767 --> 00:18:03,447
+Şimdi bu düğümün indigriyleri nedir?
+
+133
+00:18:03,967 --> 00:18:04,867
+W diyeyim.
+
+134
+00:18:05,587 --> 00:18:09,807
+Ve bu düğümün alt digrisi nedir?
+
+135
+00:18:11,187 --> 00:18:13,427
+Indigri girenlere bakacağız.
+
+136
+00:18:13,867 --> 00:18:15,967
+Bir kenar, iki kenar girmiş.
+
+137
+00:18:16,107 --> 00:18:17,267
+Indigrisi iki.
+
+138
+00:18:17,947 --> 00:18:20,627
+Alt digrisi bundan çıkan kenara bakacağım.
+
+139
+00:18:20,847 --> 00:18:22,427
+Bir tane kenar çıkmış.
+
+140
+00:18:22,907 --> 00:18:24,427
+Alt digrisi de birdir.
+
+141
+00:18:24,427 --> 00:18:30,307
+Yani yönlü ise iki taraflı olarak düğümümü hesaplıyorum.
+
+142
+00:18:30,767 --> 00:18:34,107
+Karşımıza bir formül daha çıkıyor, bir teorem daha var.
+
+143
+00:18:34,627 --> 00:18:44,948
+Eğer diyor bir graf yönlü bir graf ise in degree'lerin toplamıyla out degree'lerin toplamı birbirinin aynısı olmalıdır diyor.
+
+144
+00:18:46,107 --> 00:18:48,127
+Burada da bunu görüyoruz.
+
+145
+00:18:48,127 --> 00:18:56,887
+Peki, şimdi bana şu graf veriliyor ve size soruluyor.
+
+146
+00:18:57,147 --> 00:19:00,767
+Bu graf üzerinde bir öler saykılı var mı?
+
+147
+00:19:01,967 --> 00:19:05,967
+Öler saykılı var da peki bir öler grafı mıdır?
+
+148
+00:19:06,707 --> 00:19:14,907
+Şimdi önce öler saykılı olup olmadığını söylemem lazım ki varsa öler grafı olup olmadığını araştıracağım.
+
+149
+00:19:14,907 --> 00:19:21,227
+Bir şeyin öler saygılı olması için düğüm derecelerinin çift olması gerekiyordu.
+
+150
+00:19:21,667 --> 00:19:30,067
+Bununkisi 2, bununkisi 4, bununkisi 3, bununki 3, bununki 4.
+
+151
+00:19:30,587 --> 00:19:32,567
+Hiç bakmaya bile gerek yok.
+
+152
+00:19:32,987 --> 00:19:33,847
+Bu nedir?
+
+153
+00:19:34,447 --> 00:19:39,227
+Bir öler grafı mıdır?
+
+154
+00:19:40,047 --> 00:19:41,327
+Hayır değildir.
+
+155
+00:19:41,327 --> 00:19:46,187
+Ama bakıyorum öğler grafında arkadaşlar ne diyorduk?
+
+156
+00:19:46,267 --> 00:19:48,667
+Her düğümden bir kez geçilecek.
+
+157
+00:19:49,087 --> 00:19:51,207
+Şimdi ben şu noktadan başlamışım.
+
+158
+00:19:52,527 --> 00:19:54,887
+Önce bu düğümü gezdim.
+
+159
+00:19:55,927 --> 00:19:58,027
+Sonra buraya geldim.
+
+160
+00:19:58,207 --> 00:19:59,267
+Bu düğümü de gezdim.
+
+161
+00:20:00,407 --> 00:20:01,587
+Sonra buraya geldim.
+
+162
+00:20:01,687 --> 00:20:02,767
+Bu düğümü de gezdim.
+
+163
+00:20:03,607 --> 00:20:04,487
+Buraya geldim.
+
+164
+00:20:04,687 --> 00:20:05,387
+Bunu gezdim.
+
+165
+00:20:05,567 --> 00:20:07,567
+Aynı düğümden bir kere daha geçmiyorum.
+
+166
+00:20:07,827 --> 00:20:08,648
+Buraya geldim.
+
+167
+00:20:08,648 --> 00:20:12,308
+Sonra buraya geldim, gezdim.
+
+168
+00:20:12,787 --> 00:20:15,707
+Sonra diagonalden buraya geçtim, gezdim.
+
+169
+00:20:16,347 --> 00:20:17,308
+Buraya geldim.
+
+170
+00:20:19,888 --> 00:20:21,508
+Ve buraya geldim.
+
+171
+00:20:23,108 --> 00:20:25,028
+Çizince çok karışık oldu.
+
+172
+00:20:25,448 --> 00:20:26,248
+Şöyle yapalım.
+
+173
+00:20:27,047 --> 00:20:30,868
+Şimdi şu okların gönlünü inceleyin.
+
+174
+00:20:31,228 --> 00:20:32,588
+Şu düğümden başladım.
+
+175
+00:20:32,948 --> 00:20:34,847
+Her kenara bir kez dolaşacağım.
+
+176
+00:20:35,008 --> 00:20:37,907
+Dolaştığım kenardan bir kez daha dolaşmayacağım.
+
+177
+00:20:37,907 --> 00:20:49,607
+Buradan buraya geçmişim. Böyle geldim, böyle gittim, böyle indim, geldim, böyle gittim, böyle gittim ve böyle gittim.
+
+178
+00:20:50,036 --> 00:20:52,516
+Her kenardan bir kez dolaştım.
+
+179
+00:20:53,375 --> 00:20:56,415
+Burada bir öler saykılı var.
+
+180
+00:20:58,016 --> 00:21:03,575
+Fakat öler saykılı olması bunun öler grafı olduğunu göstermiyor.
+
+181
+00:21:04,456 --> 00:21:10,095
+Öler grafı olabilmesi için başladığım noktada da bitirmem lazım.
+
+182
+00:21:10,095 --> 00:21:16,475
+Başladığım noktada bitirseydim ben şu kenarı çizememiş olacaktım.
+
+183
+00:21:16,475 --> 00:21:25,295
+Eğer öler peti varsa, öler saykılı varsa bu bunun öler grafı olduğunu göstermiyor.
+
+184
+00:21:25,875 --> 00:21:31,675
+Öler grafı olduğunu gösterebilmesi için başladığı düğümde bitmesi lazım.
+
+185
+00:21:32,255 --> 00:21:37,235
+Ve düğüm derecelerinin çift olması lazım öler grafı için.
+
+186
+00:21:37,716 --> 00:21:40,515
+Düğüm derecelerinin çift olmadığını gördük.
+
+187
+00:21:40,515 --> 00:21:44,915
+Zaten otomatikman ben buna öler grafı değildir derim.
+
+188
+00:21:44,915 --> 00:21:50,615
+Ama öler grafı değilse bunda öler saykıl yoktur diyemem.
+
+189
+00:21:50,895 --> 00:21:53,755
+Var. Her kenardan bir kez geçildi.
+
+190
+00:21:54,375 --> 00:21:57,756
+Şimdi bu şartlar altında buna bakalım.
+
+191
+00:21:58,495 --> 00:22:01,896
+Bu grafta bir öler döngüsü var mı?
+
+192
+00:22:02,975 --> 00:22:06,375
+Varsa da bu bir öler grafı olabilir mi?
+
+193
+00:22:06,775 --> 00:22:08,715
+Önce öler grafı olabilir mi?
+
+194
+00:22:08,716 --> 00:22:19,296
+Burada 2 düğüm derecesi, burada düğüm derecesi 3, burada düğüm derecesi 2, burada düğüm derecesi 3.
+
+195
+00:22:21,336 --> 00:22:26,635
+Peki, graf değil bu. Peki, öğler döngüsü var mı?
+
+196
+00:22:27,156 --> 00:22:32,696
+Acaba ben her kenardan geçerek şey yapabilir miyim?
+
+197
+00:22:33,415 --> 00:22:35,315
+Bütün kenarları dolaşabilir miyim?
+
+198
+00:22:38,867 --> 00:22:40,348
+Dolaşabiliyormuşum.
+
+199
+00:22:40,967 --> 00:22:43,447
+Bu noktadan başlamıştım start diyelim.
+
+200
+00:22:43,808 --> 00:22:44,967
+Şu kenarı gezdim.
+
+201
+00:22:45,467 --> 00:22:49,828
+İndim bu kenar, bu kenar, bu kenar ve bu kenar.
+
+202
+00:22:50,087 --> 00:22:50,807
+Gezebildim.
+
+203
+00:22:51,267 --> 00:22:53,788
+Ama start ve stop noktam farklı.
+
+204
+00:22:53,788 --> 00:23:00,788
+Start ve stop noktam farklıysa zaten bunun düğüm geleceleri çift değildir demektir.
+
+205
+00:23:01,887 --> 00:23:03,567
+Öyleyse bu yine nedir?
+
+206
+00:23:04,347 --> 00:23:05,128
+Pet var.
+
+207
+00:23:05,567 --> 00:23:07,367
+Yine öler saykılım var.
+
+208
+00:23:07,367 --> 00:23:10,167
+Fakat öğler grafı yok.
+
+209
+00:23:11,108 --> 00:23:14,667
+Peki bunu siz bakın bakalım.
+
+210
+00:23:15,388 --> 00:23:17,487
+Önce bu bir öğler grafı olabilir mi?
+
+211
+00:23:20,147 --> 00:23:27,728
+2, 4, 4, 2, 4 ve 4.
+
+212
+00:23:28,388 --> 00:23:34,048
+Düğüm dereceleri hepsi için çiftse bu bir öğler grafıdır.
+
+213
+00:23:34,867 --> 00:23:38,208
+Öğler döngüsü demek ki var.
+
+214
+00:23:39,287 --> 00:23:47,308
+Ve öyle bir döngü olacak ki her kenardan bir kez geçtiğimde başladığım noktaya da dönmüş olmam lazım.
+
+215
+00:23:47,647 --> 00:23:49,308
+Ki bu öğler grafı olsun.
+
+216
+00:23:49,887 --> 00:23:52,607
+Öğler grafı olduğunu da biliyorum.
+
+217
+00:23:52,908 --> 00:23:54,588
+Çünkü düğüm dereceleri çift.
+
+218
+00:23:55,128 --> 00:23:58,048
+Öyleyse bakıyorum okları izleyelim.
+
+219
+00:23:58,847 --> 00:24:00,987
+Bu noktadan başlamışım start.
+
+220
+00:24:01,847 --> 00:24:02,867
+Gelmişim böyle.
+
+221
+00:24:02,867 --> 00:24:14,168
+Bu kenarı gezdim, bu kenarı gezdim, bu kenarı, bu kenarı, bu kenarı, bunu, bunu, indim böyle, çıktım böyle, geldim böyle.
+
+222
+00:24:14,448 --> 00:24:16,448
+Başladığım noktaya döndüm.
+
+223
+00:24:17,067 --> 00:24:22,107
+Zaten hepsinden bir kez geçtiğim için öler saykılım var.
+
+224
+00:24:22,728 --> 00:24:26,768
+Başladığım noktaya döndüğüm için de öler grafı var.
+
+225
+00:24:26,767 --> 00:24:33,747
+Ama illa başladığım noktaya dönebildiğimi göstermem gerekmiyor.
+
+226
+00:24:34,127 --> 00:24:40,847
+Düğüm derecelerinin çift olması bunun öler grafı olduğunu bana söylüyor.
+
+227
+00:24:41,567 --> 00:24:44,147
+Peki buna bakalım öler grafı mı?
+
+228
+00:24:44,747 --> 00:24:45,087
+Evet.
+
+229
+00:24:45,727 --> 00:24:46,607
+Hepsi çift.
+
+230
+00:24:47,067 --> 00:24:51,088
+2, 4, 4, bununki 4, bununki 2, bununki 2.
+
+231
+00:24:51,487 --> 00:24:52,547
+Öler grafı.
+
+232
+00:24:53,887 --> 00:24:54,207
+Problem.
+
+233
+00:24:54,207 --> 00:25:06,967
+Peki öler saykılığını bana göster deseler o zaman mecbursun her bir kenardan bir kez geçerek bunu çizmeye ve başladığın noktaya dönmeye.
+
+234
+00:25:08,187 --> 00:25:14,948
+Başladığın noktaya dönmeden çiziyorsan aslında öler grafının şartını sallamamış olursun.
+
+235
+00:25:14,948 --> 00:25:19,308
+Ben de başladığın noktaya dönülmüş hali var.
+
+236
+00:25:19,808 --> 00:25:21,147
+Ne bileyim nasıl yaptım acaba?
+
+237
+00:25:21,147 --> 00:25:28,047
+Böyle geldim, böyle geldim, böyle geldim, buraya çıktım, böyle geldim, geldim, geldim, dıt dıt.
+
+238
+00:25:28,308 --> 00:25:29,888
+Başladığım noktaya gittik.
+
+239
+00:25:32,347 --> 00:25:37,168
+Öğler saykılı her kenardan sadece bir kez geçiyorsun.
+
+240
+00:25:37,968 --> 00:25:43,168
+Öğler grafı başladığın noktaya da geri dönebiliyorsan öğler grafı.
+
+241
+00:25:43,427 --> 00:25:48,487
+Ekstradan bir bilgim, düğüm derecelerim çift ise öğler grafıydı.
+
+242
+00:25:48,487 --> 00:25:56,627
+Bir grafın in degree ve out degree'lerinin derecelerinin toplamı eşit olmalıydı.
+
+243
+00:25:56,927 --> 00:26:02,567
+Bir grafın düğüm derecelerinin toplamı kenar sayısının iki katı olmalıydı.
+
+244
+00:26:03,367 --> 00:26:06,327
+Şimdi gelelim Hamilton saykılına.
+
+245
+00:26:06,907 --> 00:26:10,387
+Demek ki bir de Hamilton grafı diye bir graf var.
+
+246
+00:26:11,447 --> 00:26:16,107
+Her graf Öler grafı ya da Hamilton grafı olmuyor.
+
+247
+00:26:16,107 --> 00:26:23,787
+Hamilton grafı da bana gezgin satıcı probleminde karşıma çıkan bir graf türü.
+
+248
+00:26:24,207 --> 00:26:27,627
+Bunu algoritmalar dersinde mutlaka göreceksiniz.
+
+249
+00:26:28,827 --> 00:26:30,927
+Bunun şartı da nedir?
+
+250
+00:26:31,927 --> 00:26:36,367
+Eğer bir grafın üzerinde her düğümden, bu sefer düğüm,
+
+251
+00:26:37,428 --> 00:26:47,667
+her düğümden bir kez geçmek şartıyla kapalı bir yol oluşturulabilen graflara Hamilton grafı diyorum.
+
+252
+00:26:47,667 --> 00:26:56,807
+Yani düğümlerden kenarlardan geçebilirsin ama düğümlerden bir kere.
+
+253
+00:26:57,167 --> 00:27:04,688
+Öğler de neydi? Kenarlardan bir kez geçiyorum ama düğümlere birden fazla uğrayabiliyordum.
+
+254
+00:27:04,688 --> 00:27:25,688
+hatırlayın mesela bakın şu düğme dört kez uğramışım kenarlardan bir kez geçiyordum Hamilton cycle'da ise düğümlerden bir kez geçeceğim ve bir kapalı döngü oluşturacağım bu bir Hamilton graf mı?
+
+255
+00:27:25,687 --> 00:27:39,787
+Burada bunu bulacak olan böyle özel bir ipucu yok. Algoritmasını yazman gerekiyor. Bu kadar düğüm var. Acaba ben her düğümden bir kez geçerek bütün düğümleri dolaşabilir miyim?
+
+256
+00:27:39,787 --> 00:27:55,587
+dedim ya gezgin satıcı problemi düşünün bir adam kamyonetinin arkasına yatak, yorgan, battaniye, ayakkabı bu tip şeyleri koydu ve köyleri dolaşacak eşyalarını satmak için.
+
+257
+00:27:55,587 --> 00:28:10,967
+bir uğradığı köye bir daha uğramak istemiyor. Bunların hepsi bir köy. Geçtiği köyden bir daha geçmemek şartıyla nasıl bir yol güzergah işlemeli ki her köye bir kez uğrasın?
+
+258
+00:28:10,968 --> 00:28:35,368
+bunu sağlayabiliyorsa işte bu Hamilton grafıdır. Bakarsak buna çok kolay bir şekilde yani şöyle baktığınızda çok özür dilerim bu nasıl olur diyorsunuz ama işte var adamın evi diyelim ki ağ noktasında kendini öyle bir güzergah çiziyor ki bütün düğümlere uğruyor.
+
+259
+00:28:35,367 --> 00:28:43,027
+diyeceksiniz ki bana hocam prim algoritması diye bir algoritma vardı ya da kurskalı algoritması diye bir algoritma vardı.
+
+260
+00:28:43,027 --> 00:28:48,807
+Orada da her düğümden bir kez geçiyorduk ve minimum yolu bulmaya çalışıyorduk.
+
+261
+00:28:49,027 --> 00:28:52,887
+Evet doğru fakat onlarda kapalı bir çevrim oluşmuyor.
+
+262
+00:28:53,487 --> 00:28:56,507
+Adı üstünde minimum spanning tree diyorduk.
+
+263
+00:28:56,868 --> 00:28:59,347
+Tree ise döngü olmaması lazım.
+
+264
+00:28:59,807 --> 00:29:04,567
+Ama burada graftan bahsediyorsam kapalı bir döngü oluşabilir.
+
+265
+00:29:04,567 --> 00:29:25,187
+Burada oluşmuş. Şimdi şunu hatırlayacaksınız. Q grafıydı bu. Q3 grafıydı. Üzerine bir takım label'lar koymuştuk. Böyle bir şekil vardı ve demiştim ki ileride bu şekil karşınıza gelecek. O zaman size bahsedeceğim.
+
+266
+00:29:25,187 --> 00:29:34,527
+İşte Q3 grafı mesela bir Hamilton saykılını oluşturuyor mu? Bir Hamilton grafı mı?
+
+267
+00:29:35,167 --> 00:29:41,167
+Q grafı pardon Hamilton grafında neydi? Düğümlerden sadece bir kez geçecek.
+
+268
+00:29:41,167 --> 00:29:59,927
+İşte adam geldi şu düğümü aldı bu düğme geldi bu düğümden geçti okları izliyorum buraya geldi buradan geçti geldi geçti geldi çık çık buraya geldi buraya geldi buradan
+
+269
+00:30:00,000 --> 00:30:01,000
+buraya geçti ve buraya geldi. Başladığı noktaya geldi. Kapalı bir çevrim oluşturdu ve bütün düğümleri, pardon özür dilerim, bütün kenarları gezdi ve her düğümden de sadece bir kez geçti. O zaman Q3 grafı bir Hamilton grafıymış. Mesela size soruldu, Q4 grafı, pardon bugün hep yanlış
+
+270
+00:30:30,000 --> 00:30:46,500
+konuşuyorum. K4 grafı bir Euler grafı mıdır? Bir Cycle grafı mıdır? Hamilton grafı mıdır? İşte W3 grafı yani Hill grafı dört tane düğümü var. Ortaya da bir düğüm koyuyorduk.
+
+271
+00:30:46,500 --> 00:30:59,419
+Acaba bir Hamilton grafı mıdır? Bir Euler grafı mıdır? Kontrollerimizi hep bu şekilde yapmamız gerekiyor. Bunların da etiketlenmesi aslında bana şunu gösteriyor.
+
+272
+00:30:59,419 --> 00:31:05,619
+hep dedik ya etiketleri verirken de aslında bu 3 diye 3 bittik etiketlerim vardı.
+
+273
+00:31:06,019 --> 00:31:07,959
+Hep grey kodlama kullanmıştım.
+
+274
+00:31:08,199 --> 00:31:12,479
+Bir düğümden diğer düğüme geçişte bir tane bitsin yeri değişiyor.
+
+275
+00:31:13,000 --> 00:31:20,739
+Bunun anlamı da bana aslında bu düğümlerden sadece bir kez geçilmiş olduğunu göstergesi.
+
+276
+00:31:20,739 --> 00:31:22,159
+Bu da bana.
+
+277
+00:31:22,159 --> 00:31:33,339
+Peki şimdi yine en kısa yol bulan algoritmalardan bir tanesini göstereceğim.
+
+278
+00:31:33,339 --> 00:31:37,719
+Bunu niye trilerde göstermedim de graflarda gösterdim.
+
+279
+00:31:38,259 --> 00:31:44,339
+Çünkü bir graf yapısında kullanılan bir algoritma ve adı Dishkstra algoritması.
+
+280
+00:31:45,339 --> 00:31:47,259
+Yine adamcağızın soyadı.
+
+281
+00:31:48,000 --> 00:31:49,339
+Bu kodun Pesodokodu.
+
+282
+00:31:49,339 --> 00:31:57,299
+kodu isteyen buraya bakabilir ama ben yine graf üzerinde renkli renkli size anlatmaya çalışacağım.
+
+283
+00:31:57,299 --> 00:32:11,679
+Yalnız çok iyi dinleyin. Çünkü bunları çizerken tahta gibi olmuyor olay. Her ne kadar step by step de göstersem de söylediğim şeyleri iyi dinleyin.
+
+284
+00:32:11,679 --> 00:32:15,759
+Yani arada bazı sözler var ki onu ben şekle dökemiyorum.
+
+285
+00:32:16,619 --> 00:32:19,679
+Şimdi bize şöyle bir graf verilmiş.
+
+286
+00:32:21,139 --> 00:32:27,719
+Ben bu graf üzerinden en kısa yolu bulacağım.
+
+287
+00:32:28,939 --> 00:32:36,419
+Başlangıç düğümünün bana ya verilmiş olması gerekir ya da ben başlangıç düğümü seçerim.
+
+288
+00:32:36,419 --> 00:32:49,360
+ama size herhangi bir bilgi verilmese bile ve bunlar alfabetik olarak sıralanmışsa işin raconu diyeyim, alfabetik sırada verilen bir şey de ilk harfle başlanır.
+
+289
+00:32:49,559 --> 00:32:56,739
+Ben de o yüzden A ile başladım ve onu yeşille çizdim, diğerleri de kırmızı yani boyadım.
+
+290
+00:32:56,739 --> 00:33:08,039
+algoritma nasıl çalışıyor? Bütün düğümleri buraya sıraladım ve bütün bu düğümlerin başlangıç noktasına maksimum bir sayı verdim.
+
+291
+00:33:08,859 --> 00:33:17,519
+İlk başlangıç düğümümde sıfır, yani buradan başlıyorum, bu artık boyandı, yeşil oldu ve buraya geldim.
+
+292
+00:33:17,519 --> 00:33:28,259
+Benim şimdi yapacağım şey A'dan gidilebilen yollara bakacağım. A'dan gidilebilen yollar ne var? Bir B var. Bir de ne var? C var.
+
+293
+00:33:29,179 --> 00:33:41,639
+Şimdi A'dan B'ye gidiliyor. Kaçla gidiliyor A'dan B'ye? 2 ile gidiliyor. Ve B'ye hangi düğüm üzerinden geliyorum? A üzerinden geliyorum.
+
+294
+00:33:41,639 --> 00:33:48,199
+Öyleyse buraya diyeceğim ki 2 ile geldim ve A üzerinden geldim
+
+295
+00:33:48,199 --> 00:33:53,020
+Başka A'dan nereye gidiliyor? C'ye gidiliyor
+
+296
+00:33:53,020 --> 00:33:56,179
+Kaçla gidiliyor? 3 ile gidiliyor
+
+297
+00:33:56,640 --> 00:34:02,779
+C'ye hangi düğümden geldim? A'dan geldim. Buraya da A'yı yazdım.
+
+298
+00:34:03,799 --> 00:34:07,819
+Algoritmam aynen bu şekilde devam edecek.
+
+299
+00:34:08,640 --> 00:34:11,919
+Biraz sonra bunları silip orijinal halini vereceğim.
+
+300
+00:34:12,419 --> 00:34:16,579
+Burada bakacağım. Bundan sonraki adımda bunlar yine M.
+
+301
+00:34:16,579 --> 00:34:18,299
+Bunlar yine M.
+
+302
+00:34:20,079 --> 00:34:24,419
+Burası artık gezilmiş bir düğüm. Bir daha bu düğüme gitmeyeceğim.
+
+303
+00:34:24,419 --> 00:34:38,899
+Şimdi buradaki minimum olan değeri bulacağım. Minimum olan değer nedir? 2A. Öyleyse ben B düğümüne geçeceğim ve B düğümünden artık hareket edeceğim.
+
+304
+00:34:38,899 --> 00:34:48,859
+B düğümünün işi bitmiş, B düğümüne geçilmiş demektir. B'den nerelere gidiliyor? B'den D'ye gidiliyor.
+
+305
+00:34:48,859 --> 00:35:11,679
+Ben B'ye kadar 2 ile gelmişim. Üzerine 5 ekledim 7. Yani D'ye 7 ile geldim. Nereden? A ve B üzerinden geldim. Ben B'deyim. B'den bir de E'ye gidiliyor. B'ye 2 ile gelmişim. E'ye de bir 2 var.
+
+306
+00:35:11,680 --> 00:35:24,680
+Öylesi E ne oldu? 4 oldu. A'dan B'ye, B'den de E'ye gelmişim. Yine burası M, burası 3A'da kaldı.
+
+307
+00:35:25,900 --> 00:35:31,800
+Ve ben şimdi buranın en küçüğünü bulmaya çalışacağım. Tamam mı?
+
+308
+00:35:31,800 --> 00:35:41,140
+Şimdi buraya kadar olan yeri şöyle yapalım. Nasıl bu bölü? Ha üst üste koymuşum. Çok güzel.
+
+309
+00:35:41,680 --> 00:36:08,259
+başına çizdim. A'dan gidilen yollar neydi? B vardı. 2 ekledim sıfıra. 2 oldu. A'dan geldim. A'dan C'ye gidiliyordu. A sıfırdı. 3 ekledim. 3A oldu. Çünkü C'ye A'dan geldi. Bunların içindeki en küçüğü buldum. 2A. Ben artık neredeyim? B'deyim.
+
+310
+00:36:08,259 --> 00:36:36,259
+B düğümüne geldim ve B'den gidilecek olan yollara bakıyorum. Bakalım şimdi B'den gidilecek yollara. Demin de baktık. B'den D'ye gidiliyor. 2'ye 5 koydum, 7. A'dan B'ye, B'den D'ye gelmiştik. B'den E'ye gidiliyor. B'ye 2 ile gelmiştik. 2 de burada var, 4. E'ye geldim, 4. A ve B.
+
+311
+00:36:38,259 --> 00:36:52,059
+Bu üçe zaten geldiğim yer artık bu da gezildi C de bitti burası da bitti bunların içindeki en küçük düğüm hangisi?
+
+312
+00:36:53,159 --> 00:37:02,140
+Nedir? E ben artık E'deyim E'den gidilebilecek yerlere bakıp şimdi bu kolonu dolduracağım
+
+313
+00:37:02,140 --> 00:37:24,779
+Bakıyorum E'den nerelere gidilir? E'den B'ye gidilir. Fakat B zaten gezilmiş bitti. E'den C'ye gidilir. C zaten gezilmiş bitmiş. E'den D'ye gidilir. Tamam gidelim. E'de kaçız? Biz dördüz.
+
+314
+00:37:27,779 --> 00:37:30,039
+E'den ben neredeyim?
+
+315
+00:37:33,364 --> 00:37:47,523
+kendim yapsam daha iyiydi galiba. ben nerede kaldım? C'deydim. ben şöyle yapayım arkadaşlar. bunun altından kalkamadım.
+
+316
+00:37:47,523 --> 00:37:57,003
+bir şeye koydum. ay özür diliyorum. çok hızlı bir şekilde ilerleyeceğim merak etmeyin.
+
+317
+00:37:57,003 --> 00:38:01,563
+yok bir kere ters gidince her şey ters gitti
+
+318
+00:38:01,563 --> 00:38:05,764
+silgiyi alayım
+
+319
+00:38:05,764 --> 00:38:11,243
+şimdi çok hızlı hızlı gideceğim ama hatam varsa lütfen hemen bana söyleyin
+
+320
+00:38:14,843 --> 00:38:18,503
+şimdi ben elimi ekrana koyarak çiziyorum A'dayım
+
+321
+00:38:18,503 --> 00:38:20,843
+A'dan gidilebilecek olanlara bakıyorum
+
+322
+00:38:20,843 --> 00:38:23,503
+A'dan B'ye gidebilirim 2 ile
+
+323
+00:38:23,503 --> 00:38:26,143
+ve diyorum ki ben sana A'la geldim
+
+324
+00:38:26,143 --> 00:38:31,563
+A'dan C'ye gidebilirim 3'le ve ben diyorum ki sana A'dan geldim.
+
+325
+00:38:32,003 --> 00:38:35,583
+Şimdi artık A gezildi demektir bitti.
+
+326
+00:38:36,703 --> 00:38:37,364
+A bitti.
+
+327
+00:38:38,023 --> 00:38:39,423
+Buralarına M yazdık.
+
+328
+00:38:40,383 --> 00:38:43,664
+Şimdi bunların içindeki en küçüğe geldim.
+
+329
+00:38:44,063 --> 00:38:46,364
+Bunların içindeki en küçük hangisi?
+
+330
+00:38:46,724 --> 00:38:46,883
+2.
+
+331
+00:38:47,423 --> 00:38:49,323
+Ben artık B'deyim.
+
+332
+00:38:49,823 --> 00:38:54,343
+B'yi gezmiş kabul ediyorum ve B'den gidilecek yollara bakacağım.
+
+333
+00:38:54,343 --> 00:38:58,003
+B'den A'ya gidemem çünkü burası gezilmiş
+
+334
+00:38:58,003 --> 00:39:01,123
+B'den D'ye gidebilirim
+
+335
+00:39:01,123 --> 00:39:03,263
+B'ye 2 ile gelmişim
+
+336
+00:39:03,263 --> 00:39:06,103
+D'ye gitmek için 5 ekledim
+
+337
+00:39:06,103 --> 00:39:06,663
+7
+
+338
+00:39:06,663 --> 00:39:12,383
+A'ya, A'dan B'ye, B'den de D'ye gittim
+
+339
+00:39:12,383 --> 00:39:12,663
+Tamam
+
+340
+00:39:12,663 --> 00:39:15,283
+B'den E'ye gidebilirim
+
+341
+00:39:15,283 --> 00:39:17,703
+B'ye 2 ile gelmişim
+
+342
+00:39:17,703 --> 00:39:19,943
+E'ye gitmek için de 2 gerekli
+
+343
+00:39:19,943 --> 00:39:21,523
+Yani 4 oldu
+
+344
+00:39:21,523 --> 00:39:23,943
+A'dan B'ye gelmiştim
+
+345
+00:39:23,943 --> 00:39:49,523
+B'den de E'ye geldim. Başka B'den gidilen yer var mı? Yok. Peki B burası artık böyle. C'ye de C 3A burası. Burası da M değişmedi. Şimdi bunlardan bakıyorum. En kısa olanı seçeceğim. En kısa olan hangisi? En küçük olanı C.
+
+346
+00:39:49,524 --> 00:40:00,904
+Yani ben artık bunun rengi farklı olsun ben artık ben artık bu C'yi de gezdim demektir.
+
+347
+00:40:00,904 --> 00:40:11,964
+C'yi de gezdim demektir. Şuraya nasıl sinir oluyorum bazen?
+
+348
+00:40:11,963 --> 00:40:15,623
+C artık gezildi demektir.
+
+349
+00:40:15,903 --> 00:40:17,403
+C'den nerelere gidebilirim?
+
+350
+00:40:17,483 --> 00:40:18,623
+C'den A'ya gidemem.
+
+351
+00:40:18,883 --> 00:40:19,863
+Çünkü gidilmiş.
+
+352
+00:40:20,243 --> 00:40:22,443
+C'den sadece E'ye gelebilirim.
+
+353
+00:40:22,443 --> 00:40:24,543
+C'ye 3 ile gelmişim.
+
+354
+00:40:25,123 --> 00:40:27,383
+E'ye gitmek için 5 ekleyeceğim.
+
+355
+00:40:28,903 --> 00:40:31,323
+Yani 8 olacak.
+
+356
+00:40:33,223 --> 00:40:34,143
+A'dan
+
+357
+00:40:38,291 --> 00:41:06,411
+A'dan C'ye, C'den de E'ye. Başka C'den nereye gidebilirim? Başka gidecek bir yer yok. Şimdi burası 7AB oldu. Burası da M kaldı. Ama dikkat! Ben kısa olan yolu bulmak istiyorum. Burada 4AB yolu varken benim gidip 8AC'yi almam olmaz.
+
+358
+00:41:06,411 --> 00:41:16,551
+O zaman yazacağım, yazdığım yeni yazı, yeni değer bir öncekinden büyükse bunu iptal ediyorum.
+
+359
+00:41:16,731 --> 00:41:19,111
+Bunu yazamam, yani bunu kullanamam.
+
+360
+00:41:19,472 --> 00:41:27,251
+Çünkü daha kısa olanı varken benim bu büyük olanı kullanmam doğru olmaz.
+
+361
+00:41:27,251 --> 00:41:30,111
+Eee elimde şimdi ne kaldı?
+
+362
+00:41:30,111 --> 00:41:49,851
+7 var burada, burada 4 var, burada da maksimum sayı var. En küçüğü hangisi? O zaman E. E'ye geldik. Artık bu E'den geçilmiş demektir. Buradayım.
+
+363
+00:41:49,851 --> 00:42:12,571
+E'den gidilebileceklere bakıyorum. E'den C'ye gidilir ama bu gidilmiş. B'ye gidilir. B'den de geçilmiş. E'den D'ye gidilir. E'ye 4 ile gelmiştim. 1 ekleyeceğim D'ye gitmek için. Yani 5, A, B ve E yoluyla oldu.
+
+364
+00:42:12,571 --> 00:42:17,351
+Bunu buraya rahatlıkla yazabilirim çünkü 7'den küçük bir sayı
+
+365
+00:42:17,351 --> 00:42:22,271
+Peki E'den başka nereye gidebilirim? F'ye gidebilirim
+
+366
+00:42:22,271 --> 00:42:27,431
+E'ye 4 ile gelmişim, F'ye gitmek için de 4 lazım
+
+367
+00:42:27,431 --> 00:42:32,332
+Burası da 8, A, B ve E
+
+368
+00:42:32,332 --> 00:42:34,251
+Böyle F oldu
+
+369
+00:42:34,251 --> 00:42:37,711
+Peki şimdi buradaki en küçük olan hangisi?
+
+370
+00:42:38,311 --> 00:42:40,191
+5 mi 8 mi?
+
+371
+00:42:40,191 --> 00:42:52,911
+5, kalemimizi değiştirelim artık kalem de kalmadı 5 yani ben nereye geldim? D'ye ben D'deyim artık D'de gezildi demektir
+
+372
+00:42:52,911 --> 00:43:07,631
+D'den gidilebilecek tek bir yol kaldı gidilmeyen düğüm F D'ye 2 ekleyeceğim 5'ti 2 ekledim 7 burası A, B, E ve D oldu
+
+373
+00:43:07,631 --> 00:43:27,591
+bunu buraya gönül rahatlıkla koydum çünkü 8'den küçük bir sayı ondan sonra bakıyorum artık tek bir düğüm kaldı başka bir şey yok bunların hepsi geçilmiş hepsi gezilmiş 7 öyleyse F'yi seçeceğim ve artık F'de bitti oldu
+
+374
+00:43:27,592 --> 00:43:56,472
+Peki bu bana neyi gösterdi? Bu bana şunu gösterdi. Ben şimdi hangi yolları alacağım? Buradaki yolu alacağım. Bu nedir? A'dan B'ye geldim burası. Sonra B'den E'ye gittim. B'den E'ye gittim. Sonra E'den D'ye gittim. Sonra da D'den F'ye gittim.
+
+375
+00:43:56,471 --> 00:44:08,391
+şimdi bunun diyeceksiniz ki hocam bütün düğümlerden gezilmedi evet bütün düğümlerden gezilmedi çünkü bunun Euler grafıyla falan bir alakası yok bu şeyi
+
+376
+00:44:08,391 --> 00:44:21,971
+buradaki ama şu sana biri dese ki A'dan F'ye gitmek için nasıl bir yol izleyeceksin?
+
+377
+00:44:21,971 --> 00:44:29,531
+A'dan F'ye gitmenin bu. Ya da saran burada mesela
+
+378
+00:44:32,307 --> 00:44:45,188
+A'dan C'ye neyle gidersin? Tek bir yol var. C'ye geldi. Minimum yol 3. O zaman diyeceksin ki, sesimi duyuyor musunuz?
+
+379
+00:44:46,107 --> 00:44:47,607
+Duyuyoruz hocam. Evet hocam.
+
+380
+00:44:48,947 --> 00:45:01,007
+İnternet gitti, küntaj geldi de demin. Mesela A'dan C'ye gidecek minimum yol nedir? İşte bu tablo bana söylüyor. Minimum yol A'dan C'ye gitmek istiyorsan 3'tür.
+
+381
+00:45:01,007 --> 00:45:17,687
+İşte A'dan B'ye gidilecek olan minimum yol nedir? Bu bana B'ye bakıyorum B'ye sadece A üzerinden gelmiş 2'dir. Bu tablo bana bu söyler. Burada algoritmada en dikkat edilmesi gereken nokta şu.
+
+382
+00:45:17,687 --> 00:45:25,247
+dalganınıza gelip bulduğunuz bir değer önceki bulunan büyükse bunu almıyorsunuz.
+
+383
+00:45:25,247 --> 00:45:27,367
+Hep en küçük değer kalacak.
+
+384
+00:45:27,507 --> 00:45:31,187
+Çünkü ben hep en küçükten yoluna devam etmek zorundayım.
+
+385
+00:45:31,987 --> 00:45:36,867
+Yine bunun bu hali.
+
+386
+00:45:37,447 --> 00:45:46,207
+Yine burada bir önceki prim kruz kalı anlatırkenki olan yerde bu diş kısır algoritması var.
+
+387
+00:45:46,208 --> 00:45:56,008
+Bunlarla ilgili demolar var. Bunlara da bakıp bu algoritmanın nasıl oluştığını bunlarla da aynı şekilde yapıp görebilirsiniz.
+
+388
+00:45:57,108 --> 00:46:08,848
+Benim burada yapmam biraz zaman alır ama sonuç mesela U0'dayım. U0'dan nerelere gidilir? U5'e, U4'e ve U2'ye gidilecek. Bunları açtık.
+
+389
+00:46:08,848 --> 00:46:38,828
+Bu yollardan kısa olan ise 8 mi, 16 mı, 13 mü? 8. Demek ki ben bundan sonra geleceğim yer nedir? U5'tir. 5'ten gidilecek düğümlere bakacağım. U4'e 7 ile gidilir. U4'e 16 ile de gelinmiş. Öyleyse ben bu 16'yı artık kaldırıp burada 7'yi görmeliyim. Bu 17 ile U3'e gelecek. U2'ye 11 ile gidiyor.
+
+390
+00:46:38,848 --> 00:46:49,487
+Ama 13'te gelen bir yol varsa 13'ü artık kaldıracağım küçük olarak 11 ile buraya gelecek bir de U1'e giden yol olacak
+
+391
+00:46:49,487 --> 00:46:56,828
+Şimdi dikkat edin kaldırılması gereken yerlerden bir tanesi şuradaki 16 kalkacak neden?
+
+392
+00:46:56,828 --> 00:47:08,867
+buraya 7 ile geline biliniyor. Yani şöyle 7 ile geline biliniyor ama 8, 7 daha burası 15 olacak. Bu 16'dan bir değer olacak.
+
+393
+00:47:08,867 --> 00:47:20,748
+Çünkü buradan 8, burası 7, buraya 15 ile geldim. Bir de 16 ile gelme var. O zaman ben bu 16 yolunu iptal edip buraya 15 ile geldim diyebileceğim.
+
+394
+00:47:20,748 --> 00:47:43,768
+Başka düğümlerden kısa yolla geleceğim ne olabilir? Şuraya bakalım. Buraya neyle gelebilir? Buraya 8 de gelmiş. 11 de eklesem burası 19 olur. Ama burada 13 varsa bu 13'ün burada kalması gerekir. Aynen o matris de çözüm gibi. Şimdi bakıyoruz.
+
+395
+00:47:43,767 --> 00:48:11,507
+ne değişti? Onu pembe yaptı ve şimdi bakın şuradaki 16 vardı bu kalktı. Çünkü buraya 15 ile gelmiş oldu. Buraya zaten yazdık. Burası 11 ile burası oldu. Bunu kaldırmadı. Çünkü burası 8, 11 eklerse burası 19 olurdu. 13 ile gelinen bir yol olduğu için kaldırmadı. Ve buraya geldi.
+
+396
+00:48:11,507 --> 00:48:30,227
+şu maviler artık geçilmiş düğümlerdir. Bundan sonra en kısa olan hangisi burada? Onu seçeceğim. Bakın en kısa olan hangisi? 13. O zaman 13'ü seçti. Bunu pembe yaptı. Bundan gidilecek olanlara bakacak. Mavilere gidemez.
+
+397
+00:48:31,155 --> 00:48:44,155
+sarılara ancak gidebilir ve hiç gidilmemiş olanlara sarılara giderse de daha küçük düğümle gidiyorsa o düğümün kenarı kırmızı yapıp diğer kenarı kaldıracağız.
+
+398
+00:48:44,155 --> 00:49:00,155
+mesela bakalım bu u2 den buna gidemem u0 çünkü gidilmiş u5 e gidemem çünkü gidilmiş bir buraya gelebilirim acaba 25 den daha küçük bir sayı ile gelebilir miyim buraya kadar 13 ile gelmişim
+
+399
+00:49:00,155 --> 00:49:24,336
+14'te burada var 27. Öyleyse 25'in burada yine kalması gerekiyor. Ben bunu artık çizdim. Bunlar yine aynı kaldı. Buradan artık gidilecek en kısa yolu bulacağım. En kısa 15 olduğu için ben U4'ü pembe yapacağım. Buradan nerelere gidilir diye bakacağım.
+
+400
+00:49:24,336 --> 00:49:50,876
+Buradan buraya geline bilinir 15'e 5 ekle 20. O zaman artık bu 25 değil buraya 20 ile geleceğim. Şuradaki 17'nin silinmesi ve şuradaki 5 kolunun kalkması lazım. Başka sarı olan düğüm var. Bu düğme bu U4'ten gidilen bir yol yok. Öyleyse tek bir değişiklik var. Bakın 17 silindi. 5'i aldı ve buraya 20 ile geldi.
+
+401
+00:49:50,876 --> 00:50:18,615
+iki tane küçüğüm var 18 ve 20 en kısa olanı 18 U1'i seçtim pembe yaptım buradan gidilen yollara bakacağım bir tane yol geldi gidilmemiş düğüm o da nedir bu 6 mı 6 18'e 6 ekledim 24 ama buraya 20 ile gelinmiş o zaman bu yolu almayacağım U1 mavi olacak
+
+402
+00:50:18,615 --> 00:50:33,415
+bir sonraki kalan en kısa hangisi? 5. 5'i aldım. Pembeden maviye dönüştü. Ben matriste nasıl bunu yaptıysam buradaki bütün algoritmalarda bu şekilde çalışıyor.
+
+403
+00:50:34,935 --> 00:50:41,695
+Bir başka örnek. Bunlara siz bakarsınız. Bunlar çıkacak çözdüğünüzde bir başka örnek falan.
+
+404
+00:50:41,695 --> 00:50:54,055
+Şimdi grafların bazı modelleri var. Farklı uygulamalarda, farklı bilim dallarında kullanılan graf modelleri diyelim.
+
+405
+00:50:54,055 --> 00:51:05,395
+Eğer bir ekosistem içerisinde farklı grupları modellemede kullanıyorsanız biz bunlara Niche Overlap Graph diyoruz.
+
+406
+00:51:05,395 --> 00:51:12,595
+size deseler ki aslında size demiyorlar da şöyle bir takım düğümler verilmiş.
+
+407
+00:51:13,375 --> 00:51:15,395
+Mesela dur kırmızıya geçeyim.
+
+408
+00:51:16,535 --> 00:51:18,075
+Şöyle bir grafınız var.
+
+409
+00:51:18,875 --> 00:51:19,895
+Şöyle bir graf.
+
+410
+00:51:25,172 --> 00:51:54,131
+ve size diyor ki bu bir Niche grafıdır diyor. Niche overlap grafı. Ha ben şimdi Niche grafı denildiği vakit bunu ekosistem içerisinde kullanılan varlıkları gruplandırmak için kullanıldığını biliyorum. Ben şuna şöyle bir örnek veririm. Şunlar et yiyen hayvanlar, şunlar ot yiyen hayvanlar. Şurada öyle bir hayvan varmış ki bunlar hem etçil hem de otçil. İkisiyle de şey yapıyor.
+
+411
+00:51:54,131 --> 00:52:03,892
+adını söyleyin, yiyebiliyor. Yani grafın adıyla girdiğim vakit grafa bakış açı bu şekilde olması lazım.
+
+412
+00:52:04,691 --> 00:52:14,811
+Infos graf, bunlar da grup çalışmalarında kullanılır. Ne demek istiyorum? Hemen bir örnek verelim. Şunu silelim.
+
+413
+00:52:14,811 --> 00:52:17,371
+Bana şöyle bir graf verilmiş olsun.
+
+414
+00:52:22,195 --> 00:52:42,036
+şurası A, B, C, D olsun. Şu şöyle, ah ne oldu? Şu şöyle, şu şöyle, bu böyle, bir de şöyle bir graf olsun.
+
+415
+00:52:42,036 --> 00:52:48,195
+Eğer buna influence graf denmişse ben bu grafa şöyle bakacağım
+
+416
+00:52:48,195 --> 00:52:53,416
+En fazla etkilenen bir şeyi bekleyen düğüm nedir?
+
+417
+00:52:53,416 --> 00:53:00,935
+A düğümü C'den, D'den ve B'den bir takım işlerin gelmesini bekliyor
+
+418
+00:53:00,935 --> 00:53:05,456
+Burası bir yazılım gerçekleştiren bir birim olduğunu düşünün
+
+419
+00:53:05,455 --> 00:53:20,955
+bir proje grubu. A'nın görevi C'den, D'den ve B'den gelen alt putları bekleyerek bir iş yapması. Bu arada C, D'den gelecek bir işi işleyecek de A'ya gönderecek.
+
+420
+00:53:20,955 --> 00:53:26,055
+B hem A'ya hem de E'ye bilgi gönderecek.
+
+421
+00:53:26,055 --> 00:53:36,155
+Ben böyle bir grafa bakarak bir proje müdürüysen kimlerin ne kadar adam A'ya ihtiyacı var bu bilgileri çıkarabilir.
+
+422
+00:53:36,556 --> 00:53:43,416
+İlimdeki adam A bilgilerine bakarak personel gruplarımı kurabilirim.
+
+423
+00:53:43,416 --> 00:53:56,856
+ya da bu personel gruplarımın sahip olduğu özelliklere bakarak onlara iş tanımı yapıp kimin output'u kime input olarak gideceğini böyle bir graf üzerinde çizebilirim.
+
+424
+00:53:56,856 --> 00:54:06,276
+Bu aslında normal bir graf. Bana influence graf dendiğinde ben buna bu bakış açısıyla bakacağım. Grafı bu şekilde okuyacağım.
+
+425
+00:54:06,275 --> 00:54:10,555
+veya Round Robin Tournament graf var.
+
+426
+00:54:10,555 --> 00:54:16,855
+Bu da turnuvalarda yer alan her bir takımın hangi takımla karşılaştığını gösteriyor.
+
+427
+00:54:17,335 --> 00:54:21,995
+Yine bana belki şöyle bir graf verilmiş olacak.
+
+428
+00:54:23,835 --> 00:54:28,435
+Mesela şöyle diyelim, şöyle bir şeyler olsun.
+
+429
+00:54:30,175 --> 00:54:33,435
+Bu da şöyle olsun.
+
+430
+00:54:33,435 --> 00:54:41,095
+Şurası A, şurası B, bunlar nereden çıktı? Burası B, burası C, burası D
+
+431
+00:54:41,095 --> 00:54:47,735
+Şimdi ben buna baktığımda, eğer Robin Turnum'un graf dendiğinde diyorum ki
+
+432
+00:54:47,735 --> 00:55:03,355
+B, D ile karşılaşmış, B galip olmuş, D, C ile karşılaşmış, C kazanmış, C, B ile karşılaşma yapmış, C kazanmış, B, A ile karşılaşma yapmış
+
+433
+00:55:03,356 --> 00:55:20,076
+beraber kalmışlar. Grafıma bu isim verildiğinde buna göre okuyacağım. Ama beni en çok ilgilendiren şey aslında göreceksiniz neden bizim branşı daha çok ilgilendirdiğini.
+
+434
+00:55:20,075 --> 00:55:21,755
+precedence graflar.
+
+435
+00:55:22,375 --> 00:55:26,295
+Precedence graf, pre, prefix falan filan diyorduk.
+
+436
+00:55:26,295 --> 00:55:27,455
+Önde gelen.
+
+437
+00:55:27,695 --> 00:55:37,675
+Yani bir düğümün bir işi gerçekleştirebilmesi için ondan önceki düğümlere bağlı olarak hareket ediyor.
+
+438
+00:55:38,355 --> 00:55:47,695
+Bir işlemin sonucu kendisinden önce gelen işlemin sonucuna bağlı olarak değişen sistemleri modellemede kullanılır.
+
+439
+00:55:47,695 --> 00:56:02,895
+Hocam bu da öyleydi diyebilirsiniz influence grafı. Peki öyle olmadığını şimdi göreceğiz. Precedence graflar daha önemli bir graf olduğu için bunları örnekle anlatmak istiyorum size. Bu arada saatimiz daha 10.
+
+440
+00:56:02,895 --> 00:56:19,335
+6 tane state'imiz var. Bu state A ve B diye iki tane parametre ile başlıyor. Ya da olay başlangıç değerleri de 0 ve 1.
+
+441
+00:56:19,764 --> 00:56:32,064
+sonra C A değerinin üzerine bir şey ekliyor, bir ekliyor. Bunları toplama gibi düşünmeyin. Yani A'dan gelene bir birin bir yük daha ekleniyor.
+
+442
+00:56:32,064 --> 00:56:51,164
+İşte D, B ve A işlerinin toplamından oluşuyor. 5 numaralı state, E düğümü, D üzerine bir yük geliyor. 6 numaralı state, E düğümü, C ve D işlerine yüklenerek devam ediyor.
+
+443
+00:56:51,163 --> 00:56:56,644
+Şimdi benim amacım şu değerlere bakarak bu grafı oluşturmak.
+
+444
+00:56:56,964 --> 00:56:59,304
+Şimdi başlangıç teyitlerim hangisi benim?
+
+445
+00:56:59,583 --> 00:57:00,703
+S1 ve S2.
+
+446
+00:57:01,003 --> 00:57:04,984
+Çünkü bunlar bir initial değer alarak başlamış graflar.
+
+447
+00:57:05,444 --> 00:57:08,223
+S1'e 0 dedim, S2'ye B dedim.
+
+448
+00:57:08,903 --> 00:57:10,703
+Şimdi şunlar bitti.
+
+449
+00:57:12,124 --> 00:57:13,563
+Bunu da lütfen iyi dinleyin.
+
+450
+00:57:13,903 --> 00:57:15,203
+Şimdi S3'e geldim.
+
+451
+00:57:15,903 --> 00:57:17,624
+S3 nelerden oluşuyor?
+
+452
+00:57:18,143 --> 00:57:19,083
+A'dan oluşuyor.
+
+453
+00:57:19,083 --> 00:57:29,963
+A birimi, A işi hangi steakte vardı? Espiride vardı. Öyleyse ben espri alacağım.
+
+454
+00:57:36,659 --> 00:58:00,019
+S1'i alacağım, S3'e bağlıyorum. Neden? Precedence dedim. S3'ün içerisinde ne var? A. A hangi state'de var? Sadece S1'de var. O zaman S3 state'i diyor ki A state'inden gelen işi al, üzerine de yeni bir iş daha koy, bu senin işindir diyor. S3 bitti.
+
+455
+00:58:00,019 --> 00:58:24,759
+Şimdi geldi S4. S4'te ne var? B. B hangi state'lerde var? S1'de yok. S3'te de yok. B sadece S2 state'inde var. O zaman S4'e bir S2'yi bağlayacağım. Artı neyi bağlıyorum? A işi ne? A işi nerede var? S1'de var.
+
+456
+00:58:24,759 --> 00:58:52,840
+Öyleyse benim S4'üm nelerden oluşuyor? B işi, B işi S2'de ve A işi. A işi de S1'de. Bana şunu söyleyebilirsiniz. Hocam S3'te de A işi var. Hayır eşitliğin yani bunun sol tarafında olması lazım. Bu da A'yı alıp yoluna devam eden bir şey. O zaman S4 de bitti. Şimdi dikkat. S5'e bakıyoruz.
+
+457
+00:58:52,840 --> 00:59:13,979
+S5'te ne var? D. D hangi state'de? D state'i S4. Ama D'de neler var? B ve A'da var. B ve A hangilerinin sol tarafında? S2'de ve S1'de.
+
+458
+00:59:13,979 --> 00:59:34,399
+Öyleyse ben bir S5 aldım. S5'te D var dedik. S4 D olduğu için bunu bağladım. D'nin içinde B ve A var. B'yi buradan aldı. A'yı nereden alacak? A'yı da buradan aldı.
+
+459
+00:59:34,399 --> 00:59:52,759
+S4'e bakalım. S4, B'di. B sadece nerede var? Bunda var. B4'ü buradan aldı. Bir de A var. A nerede vardı? Sadece burada vardı. Buradan aldı. S5 de bitti.
+
+460
+00:59:52,759 --> 01:00:13,179
+Şimdi sırada S6 var. Hep birlikte bakalım. Şu S6'yı biz çizelim. Açmayalım şeyleri şimdi. Enter'a basmayalım. S6'da ne var? C. C nedir? Hangi state'de var C şu an? S3'de var. Demek ki S3'den bir C gelecek.
+
+461
+01:00:13,179 --> 01:00:39,879
+S3'ün içinde bir de A var. A olan state hangisi? S1. Bunu da bağladım. Başka C var mı? Burada hiç C yok. Burada da C yok. Yok. D var şimdi. D gelecek. D nerede var? D. Sol tarafı D olan S4'te var. S4'ü alacak.
+
+462
+01:00:39,880 --> 01:01:05,520
+S4'ün içerisinde B'ler ve A'lar var. Nelerin sol tarafında B var? Sadece bunun sol tarafında B var. A'lar. A'ları zaten bunda A var. A zaten bir önceki durumdan gelmiş. Bakalım aynı şeyleri çizebildik mi? Evet çizebildik. Yani gelmiş.
+
+463
+01:01:05,520 --> 01:01:09,680
+şimdi şöyle bir şey yapıyorum.
+
+464
+01:01:09,680 --> 01:01:11,680
+Ne yaptım yine?
+
+465
+01:01:32,019 --> 01:01:33,260
+Şimdi bir daha bakalım.
+
+466
+01:01:33,919 --> 01:01:34,639
+S1 A.
+
+467
+01:01:35,240 --> 01:01:36,480
+S1 diyoruz.
+
+468
+01:01:38,079 --> 01:01:40,400
+A eşittir sıfırla başladı.
+
+469
+01:01:41,699 --> 01:01:42,419
+Şu S1.
+
+470
+01:01:43,679 --> 01:01:44,639
+Sonra S2.
+
+471
+01:01:45,360 --> 01:01:46,459
+Şu da S2 olsun.
+
+472
+01:01:47,679 --> 01:01:51,139
+Bu S2 de B eşittir sıfırla başladı.
+
+473
+01:01:51,139 --> 01:01:52,799
+Sol taraf dediğim hep bu.
+
+474
+01:01:52,959 --> 01:01:53,979
+O yüzden yazdım.
+
+475
+01:01:54,440 --> 01:01:55,659
+Şimdi S3'e bakacağız.
+
+476
+01:01:56,179 --> 01:01:57,059
+S3 C.
+
+477
+01:01:57,559 --> 01:01:58,819
+Ama neyi alıyor A?
+
+478
+01:01:58,819 --> 01:02:02,319
+Sol tarafında A olan sadece S1 var.
+
+479
+01:02:02,679 --> 01:02:06,919
+Demek ki bu S1'i alıyorum ben S3'e bağlıyorum.
+
+480
+01:02:07,919 --> 01:02:08,380
+S3.
+
+481
+01:02:08,719 --> 01:02:10,560
+S3 nelerden oluşuyordu?
+
+482
+01:02:11,159 --> 01:02:11,899
+Burası C.
+
+483
+01:02:12,499 --> 01:02:13,740
+A artı 1'di.
+
+484
+01:02:14,139 --> 01:02:16,560
+Başka bir yerin sol tarafında A var mı?
+
+485
+01:02:16,880 --> 01:02:17,079
+Yok.
+
+486
+01:02:17,439 --> 01:02:18,799
+Öyleyse S3 de bitti.
+
+487
+01:02:19,539 --> 01:02:20,779
+S4'e bakıyorum.
+
+488
+01:02:22,200 --> 01:02:23,240
+B artı A.
+
+489
+01:02:23,740 --> 01:02:25,599
+Şuraya bir yere S4'ü yazalım.
+
+490
+01:02:26,859 --> 01:02:27,979
+S4 neymiş?
+
+491
+01:02:27,979 --> 01:02:29,419
+D eşittir.
+
+492
+01:02:29,919 --> 01:02:30,799
+B artı A.
+
+493
+01:02:31,639 --> 01:02:33,079
+Şimdi B gelecek.
+
+494
+01:02:33,319 --> 01:02:35,040
+Sol tarafında B olanlar.
+
+495
+01:02:35,179 --> 01:02:37,420
+Sol tarafında B olan bir S2 var.
+
+496
+01:02:37,619 --> 01:02:38,339
+Bunu bağladı.
+
+497
+01:02:38,920 --> 01:02:40,060
+Başka yok.
+
+498
+01:02:40,539 --> 01:02:41,320
+Artı A.
+
+499
+01:02:41,799 --> 01:02:45,139
+Sol tarafında A olan sadece S1 var.
+
+500
+01:02:45,460 --> 01:02:46,359
+Ve bunu bağladı.
+
+501
+01:02:46,999 --> 01:02:49,019
+Bunun sol tarafında A yok.
+
+502
+01:02:49,539 --> 01:02:50,600
+S4 de bitti.
+
+503
+01:02:51,560 --> 01:02:52,279
+S5.
+
+504
+01:02:52,679 --> 01:02:53,919
+S5'te ne var?
+
+505
+01:02:54,399 --> 01:02:56,139
+D ve E var.
+
+506
+01:02:56,599 --> 01:02:58,779
+Şuraya S5 diyeyim ben.
+
+507
+01:03:00,159 --> 01:03:00,779
+S5.
+
+508
+01:03:00,979 --> 01:03:02,879
+S5'te E eşittir.
+
+509
+01:03:03,319 --> 01:03:04,639
+D artı 1 olsun.
+
+510
+01:03:05,219 --> 01:03:07,019
+Sol tarafında D olanlar.
+
+511
+01:03:07,319 --> 01:03:08,899
+Sol tarafında D bu var.
+
+512
+01:03:09,139 --> 01:03:10,259
+S4'ü bağladım.
+
+513
+01:03:11,539 --> 01:03:13,919
+Bu D B ve artıdan oluşuyor.
+
+514
+01:03:14,339 --> 01:03:15,959
+Sol tarafında B olan.
+
+515
+01:03:15,959 --> 01:03:18,559
+Sol tarafında B olan bu var.
+
+516
+01:03:19,599 --> 01:03:21,739
+Sol tarafında A olan.
+
+517
+01:03:22,079 --> 01:03:24,439
+Sol tarafında A olan bu var.
+
+518
+01:03:26,139 --> 01:03:29,879
+S6. S6'yı buraya yazalım.
+
+519
+01:03:30,519 --> 01:03:33,419
+S6 nelerden oluşuyormuş? E eşittir.
+
+520
+01:03:33,819 --> 01:03:35,639
+C artı D'den.
+
+521
+01:03:36,479 --> 01:03:40,639
+C. Sol tarafında C olan bu var. Bağladım.
+
+522
+01:03:41,699 --> 01:03:44,339
+Başka sol tarafında C yok.
+
+523
+01:03:44,799 --> 01:03:50,699
+Bu C'nin içinde A var. Sol tarafında A olan bu var. Bunu bağladım.
+
+524
+01:03:51,179 --> 01:03:55,979
+Sonra burada D var. Sol tarafında D olan şu var.
+
+525
+01:03:56,139 --> 01:03:57,539
+Bunu bağladım.
+
+526
+01:03:58,579 --> 01:04:02,240
+Bu D'nin sol tarafında B ve A var.
+
+527
+01:04:02,819 --> 01:04:04,600
+B sol taraf burada var.
+
+528
+01:04:05,179 --> 01:04:07,559
+Sol taraf da A da burada var.
+
+529
+01:04:08,039 --> 01:04:10,659
+A'yı da zaten buradan bağlamışım.
+
+530
+01:04:11,019 --> 01:04:12,859
+Başka hiçbir şey kalmadı.
+
+531
+01:04:13,419 --> 01:04:16,439
+Peki şöyle bir şey eklenmiş olsaydı buraya.
+
+532
+01:04:16,439 --> 01:04:20,439
+S7 eşittir.
+
+533
+01:04:26,139 --> 01:04:28,960
+E. Ne yapardık?
+
+534
+01:04:29,839 --> 01:04:31,559
+Bir S7 state'i açardım.
+
+535
+01:04:31,979 --> 01:04:33,999
+Tamam S7 state'ini açtım.
+
+536
+01:04:35,979 --> 01:04:38,359
+Sadece E var.
+
+537
+01:04:38,600 --> 01:04:40,799
+Yani E eşittir şöyle diyelim.
+
+538
+01:04:41,279 --> 01:04:43,899
+İki nokta üst üste E eşittir 5.
+
+539
+01:04:45,259 --> 01:04:48,079
+Buraya E eşittir 5 diyecektim.
+
+540
+01:04:49,599 --> 01:04:53,599
+Bu aşağıdaki şu E'yi buna bağlamak diye bir şey yok.
+
+541
+01:04:54,139 --> 01:04:54,899
+O E'yi buna bağlayamıyorum.
+
+542
+01:04:54,899 --> 01:04:55,579
+Bağlayamıyorum.
+
+543
+01:04:55,699 --> 01:04:58,719
+Buna bir ilk değer başlangıcı olarak açılmış.
+
+544
+01:04:59,099 --> 01:05:00,839
+Ha şöyle bir şey olsaydı.
+
+545
+01:05:01,259 --> 01:05:06,839
+5 artı E olsaydı o zaman bu S7'ye E gelecekti.
+
+546
+01:05:06,979 --> 01:05:07,959
+E nerede var?
+
+547
+01:05:08,359 --> 01:05:09,339
+S5'te var.
+
+548
+01:05:09,579 --> 01:05:10,479
+Bu bağlanırdı.
+
+549
+01:05:10,659 --> 01:05:11,919
+E nerede var?
+
+550
+01:05:12,219 --> 01:05:13,179
+S6'da var.
+
+551
+01:05:13,379 --> 01:05:14,059
+Bağlanırdı.
+
+552
+01:05:14,739 --> 01:05:43,139
+esmeşin içinde D var. Sol tarafında D olan bu bağlanırdı. Bunun B ve A var. Sol tarafında B olduğu için. Sol tarafında A olduğu için. Başka bunda C var. Sol tarafında C olduğu için. D var. D'yi zaten bağlamışız. Burada C'nin içinde de A var. Sol tarafında A olduğu için bunu da bağlamam gerekirdi.
+
+553
+01:05:43,139 --> 01:05:57,420
+Tabii çok karışık çizildi. Bunu böyle belirleyip bu state'leri nerelere yerleştirirsem çok fazla çıkışma olmadan çizebilirim diye bakarsam çok daha güzel ve şık bir şey olur.
+
+554
+01:05:57,420 --> 01:06:27,400
+Evet şimdi bir başka grafımız kaldı planer graf planer graf çok basit bir graf bir graf kenarları birbirini kesmeyecek şekilde çizebiliyorsak buna planer graf deriz ne demek mesela şu bir planer graf mıdır şimdi aslında şurada da bir kenar var burada da bir kenar
+
+555
+01:06:27,399 --> 01:06:38,279
+Fakat ben bunları iki boyutlu bakarsam üst üste gibi görürüm. Üç boyutlu olarak bakarsam bu nedir aslında bir piramittir.
+
+556
+01:06:38,899 --> 01:06:45,619
+Ve bunu bir piramit olarak düşünürsek hiçbir zaman şu kenarı kesmediğini görürüz.
+
+557
+01:06:46,139 --> 01:06:52,159
+Bazen bakış açılarımız yanıltabilir bizi. Yani üç boyutlu göremediğimiz için.
+
+558
+01:06:52,159 --> 01:07:08,680
+bu kenarlar kesişiyor deriz. O yüzden hep size deriz ki şu iki kenarın kesişmesi sizi yanıltmasın. Eğer burada şöyle bir düğüm diye bir şey verilmemişse bunlar aslında birbirinin üzerinden geçiyor demektir.
+
+559
+01:07:08,679 --> 01:07:16,099
+Peki gözüm beni yanıltıyor ama bir grafın planer graf olup olmadığını nasıl bulurum?
+
+560
+01:07:16,099 --> 01:07:17,719
+Formülüm de şudur
+
+561
+01:07:17,719 --> 01:07:22,859
+Ve düğüm sayısı kaç tane düğüm var? 4 tane
+
+562
+01:07:22,859 --> 01:07:31,460
+E kenar sayısı kaç tane kenarım var? 1, 2, 3, 4, 5 ve 6
+
+563
+01:07:31,460 --> 01:08:01,079
+6 artı yüzey sayısı bilmiyorum eşittir 2 burası ne etti eksi 2 buraya geçerse f eşittir 4 eder burada 4 tane yüzey var mı bu bir piramitse piramitin alt tabanı birinci yüzey 3 tane de üçgenle kapanmış
+
+564
+01:08:01,079 --> 01:08:13,199
+üç yüzey de oradan gelir eder size dört yüzey. Ya da sana denilir ki yüzey sayısı şu kadar olan bir graf acaba planer graf olarak çizilebilinir mi?
+
+565
+01:08:13,659 --> 01:08:23,559
+Ben düğün ve kenar sayılarını zaten rahatlıkla sayabiliyorsam yine bir formüle koyup bunun bir planer graf olarak çizilip çizilmediğini görebilirim.
+
+566
+01:08:23,559 --> 01:08:34,619
+Son şeyimiz de nasıl ağaçlarda izomorfizm vardı? Ağaçlardaki izomorfizm neydi arkadaşlar?
+
+567
+01:08:34,619 --> 01:08:49,779
+Bir ağaçta izomorfizm olup olmadığının şartı düğüm sayısı aynı olacak, kenar sayısı aynı olacak.
+
+568
+01:08:49,779 --> 01:08:51,979
+düğümlerin dereceleri
+
+569
+01:08:52,756 --> 01:09:21,756
+aynı olacak karşılıklı ve eğer binary tree deniliyorsa da ağaçların saptiri çıkan kısımları yani çaytlarının yerleşim yönleri aynı olmak zorunda. Bu şartları sağlıyorsa bir ağaç şeydi, izomorfizimdi. Peki graflarda durum nedir? Graflarda da durum aynı sadece ekstra bir kontrole gerekiyor.
+
+570
+01:09:21,756 --> 01:09:29,256
+İki grafın izomorfik olup olmadığını anlamak istiyorsam kenar sayılarına bakacağım. Aynı olmalıdır.
+
+571
+01:09:29,915 --> 01:09:37,235
+Bu zaten birbirine çok benziyor. Ben bunlara aynı graftı rahatlıkla diyebilirim ama kontrollerimizi de yapalım.
+
+572
+01:09:37,756 --> 01:09:45,495
+2, 4, 5, 1, 2, 3, 7 tane kenar var. 7 tane kenar var. Kenar sayıları aynı.
+
+573
+01:09:45,495 --> 01:10:10,836
+Düğüm sayıları aynı olmalıdır. 4-5 düğüm var. 4-5 düğüm var. Aynı olmalı. Düğüm dereceleri aynı olmalı. Bir grafta düğümün derecesi giren kenar sayısıydı. Burada 4, burada 2, burada 3, burada 3, burada 2. Burada 4, burada 2, 2, 3, 3. Bu da aynı ama iş bitmiyor.
+
+574
+01:10:10,836 --> 01:10:21,556
+Burada önemli bir şey karşıma çıkıyor. Düğümler arasındaki ilişkiyi gösteren matrisler de aynı olmalıdır.
+
+575
+01:10:21,556 --> 01:10:37,276
+Yani ben buraya dörde dörtlük ABCD, ABCD diye matris yazacağım. İşte A'dan A'ya kenar var yoksa sıfır, A'dan B'ye kenar varsa bir şeklinde bir ejensi matrisini yazacağım.
+
+576
+01:10:37,275 --> 01:10:45,275
+bu graf içinde yazacağım ve bakacağım bu iki matris birbirinin aynıysa bunlar izomorfik olabilir.
+
+577
+01:10:45,935 --> 01:10:51,135
+Ama bazen örneklerini göreceğiz, bu matrislerin aynı olmadığını göreceğiz.
+
+578
+01:10:51,635 --> 01:11:00,015
+O zaman da diyeceğim ki acaba ben bu matrislerde satır ya da sütunlarda yer değişikliği yaparsam
+
+579
+01:11:00,015 --> 01:11:14,795
+Yani ikinci satırla dördüncü satırın yerini değiştirdim. İkinci sütunla dördüncü sütunun yerini değiştirdiğimde matrisleri birbirine eş olduğunu görüyorsam da bu graflar izomorfiktir diyorum.
+
+580
+01:11:14,795 --> 01:11:24,335
+Neden böyle bir şey yapıyorum? Bir örnek verelim. Şimdi ilk baktığınızda bize soruluyor bu graflar izomorfik midir?
+
+581
+01:11:24,336 --> 01:11:34,035
+şöyle bir gözle baktığında bu şekil olarak birbirine benzemiyor. Biri kare, biri kelebek. Bunlar eşit değildir diyebiliriz.
+
+582
+01:11:34,776 --> 01:11:43,856
+Şimdi kontrol yapıyorum. Dört tane düğüm. Evet ikisinde de dört tane düğüm var. Dört kenar. Evet ikisinde de dört kenar var.
+
+583
+01:11:43,856 --> 01:11:53,716
+Burada bir düğüm yok arkadaşlar. Yani bu kenarlar birbirini kesmiyor. Üç boyutlu olarak şöyle çevirmeye çalışın o şekli.
+
+584
+01:11:53,715 --> 01:12:23,435
+anlarsınız. Peki tamam düğüm dereceleri aynı olacak. Düğüm dereceleri 2, 2, 2, 2, bunun da 2, 2, 2, 2. Tamam bitti. Şimdi ben buna izomorfik mi diyeceğim? Hayır. Bu grafları çizmeliyim. Grafları çizerim. Ne demek? Dört düğümlü, dört düğüm yazdım, dört düğüm yazdım. Şunları nasıl oluşturdum? U1'den sadece U2 ve U3'e kenar var.
+
+585
+01:12:23,435 --> 01:12:25,295
+U2 ve U3'e bir koydum.
+
+586
+01:12:25,795 --> 01:12:28,495
+U2'den U1 ve U4'e kenar var.
+
+587
+01:12:28,815 --> 01:12:30,455
+U1 ve U4'de bir var.
+
+588
+01:12:30,895 --> 01:12:36,315
+U3'den U1, U4'e, U1, U4'de, U4'den de U2, U3'e var.
+
+589
+01:12:36,495 --> 01:12:37,355
+Dın dın koydum.
+
+590
+01:12:38,215 --> 01:12:39,675
+Bunu da koydum.
+
+591
+01:12:40,535 --> 01:12:43,915
+Bakıyorum matrisler birbirinin aynı değil.
+
+592
+01:12:44,795 --> 01:12:45,515
+Yanılıyor muyum?
+
+593
+01:12:46,555 --> 01:12:49,735
+Siyahlar gözünüzü şey yapmasın.
+
+594
+01:12:50,963 --> 01:12:57,143
+şu matrisin içine bakıyorsunuz, bu matrisin içine bakıyorsunuz, aynı değil.
+
+595
+01:12:57,583 --> 01:13:01,023
+o zaman ben bu graflar izomorfik değildir diyebilirim.
+
+596
+01:13:01,523 --> 01:13:03,583
+ama dikkat, kuralım neydi?
+
+597
+01:13:04,163 --> 01:13:15,644
+ben bu matrislerde belirli satırların yerini değiştirirsem veya belirli kolonların yerini değiştirirsem bu matrisleri birbirine benzetebilir miyim?
+
+598
+01:13:15,644 --> 01:13:26,504
+Şimdi şöyle bir arkaya yaslanın ve bir bakın hangi satırların yerini değiştirirsem ya da kolonların bu matrisleri birbirine benzetebilirim.
+
+599
+01:13:44,148 --> 01:14:11,908
+arkanıza yaslandınız mı? Evet hocam. Şimdi bir bakın bakalım. Şöyle dörtlü dörtlü gruplar oluştursam mı? Acaba oluşturulabilir mi? Bir şeylerin yerini değiştirirsem ben böyle dörtlü gruplar oluşturabilir miyim? Mesela bakın şunlar sanki şu U4'ün yerine U2'yi koysam ne olur?
+
+600
+01:14:11,908 --> 01:14:26,528
+Şurası 0, burası 1, şunlar 1, 1, şunlar 0 olacak. Ondan sonra burası 0 olacak ve burası 1 olacak.
+
+601
+01:14:28,668 --> 01:14:38,148
+Şu 4 tane biri burada yakaladım ama bu 2. ve 3. kolonda. Halbuki burada 3. ve 4. kolonda.
+
+602
+01:14:38,148 --> 01:14:45,228
+O zaman ben acaba kolonda da U2 ile U4'ün geleni değiştirebilir miyim?
+
+603
+01:14:45,228 --> 01:15:01,747
+Şurası 1, şurası 0 olsun, burası 1, burası 0 oldu, burası 0, burası 1 oldu, burası 0 ve burası 1 oldu.
+
+604
+01:15:01,747 --> 01:15:15,967
+4 tane 1 bu köşede 4 tane 0 yukarıda aynen burası gibi 4 tane 1 üst solda üst sağda 4 tane 0 da aşağıda oldu aynı burası gibi
+
+605
+01:15:15,967 --> 01:15:30,508
+şimdi ben bunu temizleyeyim bir daha şu gözde bakın acaba u2. satır ile u4. satırın yerini değiştirip u2 ile u4. kolonların da yerini değiştirirsem
+
+606
+01:15:30,508 --> 01:15:33,488
+bu iki matriz birbirine benzer mi?
+
+607
+01:15:37,908 --> 01:15:57,107
+bakın u2 ile u4'ün yerini değiştirdim. 0, 1, 1, buraya 0 geldi, buraya 1 geldi, buraya 0 geldi, buraya 0 geldi, buraya 1 geldi.
+
+608
+01:15:57,107 --> 01:16:05,567
+sonra da diyorum ki kolonların yerini değiştireyim.
+
+609
+01:16:05,567 --> 01:16:22,768
+Buraya sıfır geldi, buraya bir geldi, buraya sıfır geldi, buraya bir geldi, buraya bir geldi, buraya sıfır geldi, buraya bir geldi, buraya da sıfır geldi.
+
+610
+01:16:22,768 --> 01:16:45,268
+4-0 aşağıda, 4-1 yukarıda. Aynen burası gibi. 4-0 yukarıda, 4-1 aşağıda. İşte bunu çok iyi görmem lazım. Hangi satırın, hangi kolonla yerini değiştiğini görürsem ben şey yapabilirim. Bu grafların izomorfizm olduğunu görebilirim.
+
+611
+01:16:45,268 --> 01:17:02,988
+Peki madem öyle gelin şöyle bakalım evet izomorfizmdir. Şu iki graf izomorfizm midir? Allah'ım bakıyorsun hiç alakası bile yok.
+
+612
+01:17:25,043 --> 01:17:54,043
+köşe diyorum düğümlere bakıyorum beş düğüm var düğüme baktım beş düğüm kenara baktım beş kenar kenara bakıyorum birinci kenar ikinci kenar üçüncü kenar dördüncü kenar beşinci kenar kenarlar da aynı derecelere bakalım hepsinin derecesi iki hepsinin derecesi iki vay ya düğüm kenar ve dereceler tuttu.
+
+613
+01:17:54,043 --> 01:18:17,884
+Peki matrisler tutar mı? Aslında her ikisinin de matrisini yazarsanız birbirinin aynıdır. Ne kadar garip dünya. İşte hiçbir zaman insanları dış görünüşüne bakarak değerlendirmememiz lazım. Şu graflara bakıyorum. Hiç alakasız derim ama bu graflar tamamıyla birbirinin aynısı.
+
+614
+01:18:17,884 --> 01:18:29,563
+ben sadece böyle görüyorum aslında şu yıldızın uçlarından bir tanesini şöyle çekip açarsan bunun aynısı olur
+
+615
+01:18:29,563 --> 01:18:32,383
+peki
+
+616
+01:18:37,268 --> 01:18:38,268
+önermeler.
+
+617
+01:18:42,963 --> 01:18:54,963
+şu sarıyı görmeyin. O animasyonda hatalı gelmiş. Şu iki graf izomorfik midir? Otomatikman olmadığını söyleyebilirsiniz.
+
+618
+01:18:54,963 --> 01:19:06,963
+Çünkü şuradaki düğümün derecesi bir ama şurada hiç derecesi bir olan bir düğüm yok. Daha bu şartı bile sağlamamışsa bu izomorfik değil demektir.
+
+619
+01:19:06,963 --> 01:19:33,063
+Peki şu iki grafa bakın. Bu iki graf izomorfik midir? Aslında benziyorlar birbirine. Bizim zamanımızda teknik resim diye bir ders vardı. Bir tane obje verirdi hoca. Bu objeyi önden nasıl görüyorsun, soldan nasıl görüyorsun, üstten nasıl görüyorsun buna göre çizin perspektifle çizerdik.
+
+620
+01:19:33,063 --> 01:19:36,144
+Aynen onun gibi düşünün
+
+621
+01:19:36,144 --> 01:19:43,963
+Şuna sağdaki küpe eğer yukarıdan bakarsanız şu soldakini görürsünüz
+
+622
+01:19:43,963 --> 01:19:51,983
+Bunun hepsi 2, 4, 2, 4, 5, 5, 10 tane düğüm var
+
+623
+01:19:51,983 --> 01:19:53,684
+10 tane düğüm var
+
+624
+01:19:53,684 --> 01:19:57,003
+Kenarları aynı, düğüm sayıları aynı
+
+625
+01:19:57,004 --> 01:20:04,023
+ve bunların eğer matrislerini de çizerseniz aynı olduğunu görürsünüz.
+
+626
+01:20:05,624 --> 01:20:14,803
+Belki değiştirme yapmanız gerekir, aynı değilse görmüyorsanız ama sonucun izomorfik çıktığını göreceğiz.
+
+627
+01:20:14,803 --> 01:20:24,004
+Son olarak bunlar da aslında network dersinizde, ağ teknolojileri dersinizde çok karşınıza gelecek.
+
+628
+01:20:24,004 --> 01:20:38,523
+bir takım graf modelleri var. Mesela networkçüler diyor ki ben bir lokal araya network kuracağım, bina içerisindeki bilgisayarları bağlayacağım, nasıl bir ağ topolojisi kullanmalıyım?
+
+629
+01:20:38,523 --> 01:20:48,783
+Der ki star topolojisi kullanalım, ring topolojisi, hybrid topoloji kullanalım diyelim derler. Bunlar aslında network'ün terminolojisi.
+
+630
+01:20:48,783 --> 01:20:54,143
+Halbuki şu star şeyine gelin, topolojisine gelin
+
+631
+01:20:54,143 --> 01:21:00,723
+Bu bizim bildiğimiz K1n partiti graf
+
+632
+01:21:00,723 --> 01:21:01,963
+Ne demek bu?
+
+633
+01:21:02,383 --> 01:21:06,684
+K1n partiti nedir?
+
+634
+01:21:06,684 --> 01:21:18,344
+Ben grafı, düğümlerimi böyle iki parçaya bölüyorum ki bir tarafta bir düğüm, diğer tarafta da n tane düğüm var
+
+635
+01:21:18,343 --> 01:21:34,543
+tamam mı? Complete, complete, burada zaten yazıyormuş. Complete bir an olması da neydi? Bu bir düğümü diğer gruptaki bütün hepsiyle, bütün düğümlerle bağlantı olması lazım.
+
+636
+01:21:34,544 --> 01:21:45,924
+İşte bu, bu K1 bir partiti yaptım, bu düğüm bir kümede, diğerleri ayrı bir kümede
+
+637
+01:21:45,924 --> 01:21:53,544
+Her kümenin içerisindeki düğüm birbiriyle bağlantısı yok, şu düğümlerin birbiriyle bağlantısı olamaz
+
+638
+01:21:53,544 --> 01:21:58,603
+Bu düğümü de diğerleriyle aynı kümeye koyamam, çünkü bu hepsiyle bağlantılı
+
+639
+01:21:58,603 --> 01:22:27,984
+burada 1, 2, 3, 4, 5, 6, 7, 8 bu 1'e 8 complete graf bir yerde bir düğüm diğer yerlerde 8 tane düğüm var bu bir düğüm diğer 8'ine de bağlı bu network de start topolojisi olarak geçiyor sen buraya server'ını koyuyorsun ve bizler uç kullanıcılar bunların hepsine bu server üzerinden bağlanıyoruz
+
+640
+01:22:27,983 --> 01:22:39,603
+Bunlar da bizim üniversitedeki odalarımız olsun. Her birimiz server'a bağlanıyoruz. Bizim bu start topoloji dediğimiz şey aslında K1L Complete Graph.
+
+641
+01:22:39,988 --> 01:23:04,908
+veya ring topolojisi kullanalım deniyor. Ring topolojisi kullanmak demek, şöyle diyelim, bu topolojide şu hat gittiğinde sadece şu odadaki kişi network'e erişemez. Fakat diğerlerinin network'ü devam eder. Bu en ilkel olanıdır aslında ring topolojisi. Bu da neyi görüyorsunuz? Cyclegraf.
+
+642
+01:23:04,908 --> 01:23:17,087
+bütün hepsini birbirine bağladı. Şurası server olsun birbirine bağlandı. Şurada bir hat gittiğinde bunlar belki kendi üzerinde haberleşiyorlar.
+
+643
+01:23:18,407 --> 01:23:26,867
+Bununla bu sadece haberleşemiyor. Aralarında bağlantı yok. Bu buna bir şey göndermek istiyorsa bununla üzerinden gönderiyor.
+
+644
+01:23:26,867 --> 01:23:33,947
+şurada bir şey koptuğunda bunun server'a erişebilmesi için bunun üzerinden dönmesi gerekiyor.
+
+645
+01:23:34,227 --> 01:23:48,467
+En kuvvetli bağlantı hibrid topoloji. Bakın bu da hilgraf. Hilgraf neydi? Bir cycle graph. Ortasına bir düğüm bulanıp diğerlerine bağlıyorum.
+
+646
+01:23:48,467 --> 01:24:09,107
+Benim bu hil grafı networkte hibrit topoloji olarak kullanılıyor. En sağlam yapı bu. Bu hat bile gitse bu diğerleri üzerinden servera bir şekilde erişir. Bu gitse bir şekilde erişir ama en maliyetli olanı da bu.
+
+647
+01:24:09,107 --> 01:24:18,207
+Yani gördüğümüz her şey bir başka bilim dalının içerisinde mutlaka karşımıza çıkıyor. Bunu unutmayalım.
+
+648
+01:24:18,467 --> 01:24:35,267
+Şimdi sevgili arkadaşlar dediğim gibi ara vermek isterim ama o dekanlığa döndüğüm şeyde biraz sürecim 15-20 dakika olabilir. O yüzden ben şimdi olmadık bir yerde ara vermek istemiyorum. Çok uzun olur o zaman aramız.
+
+649
+01:24:35,267 --> 01:24:49,967
+sıkıldığınız farkındayım bir yerinizde şöyle kalkın zıplayın el kol hareketleri yapın ben de aslında sıkılıyorum yani otur otur yürümeyi unuttum diye düşünüyorum
+
+650
+01:24:49,967 --> 01:25:07,307
+ve bir itirafta daha bulunayım. Ben evden en son cumartesi günü sokağa çıkma yasağı vardı ama eczaneye gidip migrenim için bir ilaç almam gerekiyordu.
+
+651
+01:25:07,307 --> 01:25:16,627
+Zaten size migrenim de var demiştim ya cuma günü ders anlatırken o cumartesi de devam etti hafifleyerek ve ben o günden sonra dışarı çıkmadım.
+
+652
+01:25:16,627 --> 01:25:25,127
+inanamıyorum yani ben dışarıdan içeri girmeyen bir insan olarak nasıl evin içine böyle kaldım hiçbir fikrim yok.
+
+653
+01:25:25,127 --> 01:25:34,127
+Bütün hayatım sizin gibi bilgisayarın başında geçiyor ama her an bir patlama yaşayabilirim.
+
+654
+01:25:34,428 --> 01:25:38,728
+Evet gördüğünüz gibi lüzumsuz konuşarak size ara vermiş oluyorum.
+
+655
+01:25:39,547 --> 01:25:41,508
+Şimdi gençler, gençler.
+
+656
+01:25:49,427 --> 01:26:02,907
+şimdi bambaşka bir konuya geçiyoruz. çok enteresan bir konu. bu arada bir izin verin. ben diğer tarafın bağlantısını da bir hazırda bulunduracağım.
+
+657
+01:26:02,907 --> 01:26:10,587
+bir de bunlarla böyle uğraşıyoruz. refresh edeyim şuraya.
+
+658
+01:26:13,684 --> 01:26:14,684
+bu ne ya
+
+659
+01:26:17,684 --> 01:26:18,684
+haydi
+
+660
+01:26:20,684 --> 01:26:22,684
+özür diliyorum bir dakika
+
+661
+01:26:32,627 --> 01:26:36,067
+Evet, kromotik polinomlar
+
+662
+01:26:42,036 --> 01:26:44,036
+diğer tarafa da bağlanamadım ki
+
+663
+01:27:03,507 --> 01:27:13,507
+siz birazcık daha böyle bir dinlenin. Ben maili bulamadım şimdi. Maildeki linke klikleyeceğim. O burada bir hazır dursun.
+
+664
+01:27:13,507 --> 01:27:19,507
+gözlerim de iyi görünüyor ki.
+
+665
+01:27:26,292 --> 01:27:33,851
+Evet, şimdi şunun Open'unu açalım. O açıla dursun. Buraya da fullscreen yapalım.
+
+666
+01:27:44,083 --> 01:27:47,083
+bir saniye sevgili arkadaşlar, bir saniye
+
+667
+01:27:49,083 --> 01:27:51,083
+bir saniye arkadaşlar
+
+668
+01:27:51,083 --> 01:27:52,083
+hocam
+
+669
+01:27:52,083 --> 01:27:55,083
+duyuyor musunuz sesini?
+
+670
+01:27:58,292 --> 01:28:01,292
+ooo duyuyoruz hocam
+
+671
+01:28:01,292 --> 01:28:13,292
+hayır ben öteki gruba diyorum duyuyor musunuz diye o zaman arkadaşlar şöyle bir şey yapalım bugün cuma öğlen hiçbirinizin dersi yok değil mi?
+
+672
+01:28:13,292 --> 01:28:16,292
+hocam cuma namazı var
+
+673
+01:28:16,292 --> 01:28:21,292
+ha peki tamam kaçta okunuyor cuma namazı yarın mı kaçta?
+
+674
+01:28:21,292 --> 01:28:24,292
+şeyden şey değişiyordu da burada 12.40 gibi falan okunuyor
+
+675
+01:28:24,292 --> 01:28:32,731
+ha tamam hayır ben şöyle diyor muydum yani 12-15 gibi ders uzasa bir mahsur olur mu yetişir misiniz?
+
+676
+01:28:33,872 --> 01:28:35,031
+valla hocam bende sıkıntı yok
+
+677
+01:28:35,031 --> 01:28:40,012
+ha sen giden arkadaşlar var mı içinizde?
+
+678
+01:28:42,851 --> 01:28:44,031
+ben de varım hocam
+
+679
+01:28:44,031 --> 01:28:49,332
+12-15 yeterli olur mu size?
+
+680
+01:28:50,611 --> 01:28:51,891
+12-15 demedir
+
+681
+01:28:51,891 --> 01:28:56,972
+12-15'te bitse yeter inşallah hocam ya
+
+682
+01:28:56,972 --> 01:28:57,972
+Evet hocam
+
+683
+01:28:57,972 --> 01:28:58,711
+15'te bitecek değil mi?
+
+684
+01:28:59,472 --> 01:29:00,551
+E tamam tamam
+
+685
+01:29:00,551 --> 01:29:02,931
+Tamam
+
+686
+01:29:02,931 --> 01:29:05,771
+Bitiririm bu konuyu
+
+687
+01:29:05,771 --> 01:29:08,851
+Zaten şey hocada Ahmet Hoca da şey yazmış
+
+688
+01:29:08,851 --> 01:29:12,012
+Midesi kötü olmuş onun akşamleyin
+
+689
+01:29:12,012 --> 01:29:15,351
+Derse kromatik parinomlarda şey yapmış
+
+690
+01:29:15,351 --> 01:29:17,111
+Ben de bunları bitiririm yani
+
+691
+01:29:17,111 --> 01:29:18,732
+O zaman bir ara verelim
+
+692
+01:29:18,731 --> 01:29:45,971
+12 bile belki daha önce de biter. Siz arada bir beni kollar mısınız? Tamam hocam. Girdik bir diye. Tamam o zaman şimdi kesiyorum. Tamam mı? Bir 12 çeyrek kala da bakın. En kötü ama 12 çeyrek kala nedir arkadaşlar? Çok özür diliyorum. 10.30-11'de dersimiz başlasın o zaman. Tamam mı? Tamam hocam. Tamam. Hadi görüşürüz.
+
+693
+01:29:45,972 --> 01:29:50,071
+Bir grubunuz varsa oraya da yazın. Belki geç başlayan arkadaşlar olur.
+
+694
+01:29:51,592 --> 01:29:52,111
+Tamam hocam.
+
+695
+01:29:52,292 --> 01:29:53,431
+Tamam teşekkür ediyorum.
+
+696
+01:57:37,492 --> 01:57:56,492
+Evet gençler. Geldim. Telefon üzerinden de bilgilerimizi verdik, oylama sonuçlarımızı. Siz geldiniz mi? Geldik hocam. Geldim hocam. Tamam peki.
+
+697
+01:57:56,492 --> 01:58:06,492
+Evet değişik bir konu dedik. Şimdi rahat rahat anlatacağım. Böyle çok daha iyi oldu. Yalnız bu ne ki arkada çıkan?
+
+698
+01:58:06,492 --> 01:58:10,492
+Haa bir dakika
+
+699
+01:58:16,659 --> 01:58:26,979
+niye bu? o kadar çok şey açık ki, kaç tane zoom var arkada? bir dakika, ben
+
+700
+01:58:26,979 --> 01:58:42,699
+Banucuğum, telaş yapma, kendi kendime konuşuyorum, share screen yaptım, haydi, şimdik, kromotik polinomlar, share dedik,
+
+701
+01:58:42,699 --> 01:59:01,039
+Ama hiçbir şey gelmiyor ekrana. Neden? Siz şu an benim Bert modeli falan filan bunu görüyorsunuz. Allah Allah. Bir arkayı temizleyeyim de ben. Bir dakika.
+
+702
+01:59:09,684 --> 01:59:11,684
+tekrardan özür diliyorum
+
+703
+01:59:15,731 --> 01:59:31,091
+açık bıraktım diye mi oldu bunlar? kromatik polinomlar bir daha açayım. Evet şimdi bir daha size geçiyorum. Share Screen yaptım.
+
+704
+01:59:33,811 --> 01:59:36,811
+şu an ne görüyorsunuz siz ekran? gözüküyor hocam şu an.
+
+705
+01:59:36,811 --> 01:59:39,811
+tamam. tamam.
+
+706
+01:59:39,811 --> 01:59:41,811
+tamam.
+
+707
+01:59:41,811 --> 01:59:47,811
+şimdi bu bölümümüz Graph Coloring and Chromatic Polinomlar diye geçiyor.
+
+708
+01:59:47,811 --> 01:59:56,811
+aslında graf boyama bunu yine algoritmasını, veri yapıları ya da algoritmalar dersinde göreceksiniz.
+
+709
+01:59:56,811 --> 02:00:00,811
+fakat biz burada Chromatic Polinomlardan bahsedeceğiz.
+
+710
+02:00:00,811 --> 02:00:02,811
+nedir Chromatic Polinom?
+
+711
+02:00:02,811 --> 02:00:18,352
+bir G grafının herhangi iki komşu düğümüne aynı renk atanmayacak şekilde grafın her bir düğümüne bir renk atanmasına grafın renklendirilmesi denir.
+
+712
+02:00:18,352 --> 02:00:29,411
+Hemen aklınıza Atlas'ı açın, Türkiye haritasının coğrafi haritayı açın. İller vardır. Her bir illeri farklı bir renkle boyanır.
+
+713
+02:00:29,411 --> 02:00:33,992
+ve komşu olan iller aynı renkte boyanmaz.
+
+714
+02:00:34,531 --> 02:00:38,511
+Ya da Türkiye haritasının yedi bölgesini düşünün.
+
+715
+02:00:39,011 --> 02:00:40,752
+Renklendirilmiştir bölgeler.
+
+716
+02:00:40,951 --> 02:00:45,352
+Birbirine komşu olan bölgeler aynı renkle boyalı değildir.
+
+717
+02:00:45,871 --> 02:00:48,571
+İşte bu graph coloring olayıdır.
+
+718
+02:00:49,151 --> 02:00:55,471
+Bir grafta komşu olan düğümler birbirine aynı renkte olmayacak.
+
+719
+02:00:55,471 --> 02:00:59,071
+Bunların her biri bir olayı sembolize eder.
+
+720
+02:00:59,411 --> 02:01:05,091
+İşte ben bir haritadan bahsediyorsam bunlar haritanın şehirleri.
+
+721
+02:01:05,892 --> 02:01:16,151
+Ben diyelim ki bölüm fakültede 20 tane araştırmacı var ve farklı araştırma grupları var.
+
+722
+02:01:16,352 --> 02:01:20,931
+Bir kişi birden fazla araştırma grubunun içerisinde görev alabilir.
+
+723
+02:01:20,931 --> 02:01:25,591
+Bu araştırma grupları da haftada bir gün toplanacak.
+
+724
+02:01:25,591 --> 02:01:39,471
+ben öyle toplantıları dizayn etmeliyim ki aynı kişiler, farklı gruplarda olan kişilerin toplantıları aynı saate gelmemesi lazım.
+
+725
+02:01:39,871 --> 02:01:53,131
+Aynen sizin ders programlarınız gibi, derslerinizi çakıştırmadan ders programını yerleştirmek gibi düğüm sayısı ne kadar çok artarsa çakışmalar o kadar olur.
+
+726
+02:01:53,131 --> 02:02:02,951
+O yüzden ders programlarında çakışma oluyor. Çünkü her bir öğrenci bir düğüm. Her bir öğrencinin özellikleri birbirinden farklı.
+
+727
+02:02:04,151 --> 02:02:15,091
+İşte bu olaya grafın renklendirilmesi diyoruz. Grafın renk sayısı yani minimum kaç renkle boyanacak? Önemli olan minimum sayısıdır.
+
+728
+02:02:15,091 --> 02:02:39,871
+Türkiye'nin bölgelerini boya. 7 bölge var 7 tane farklı renkle boyarım iş biter. İlleri boya. 81 il var 81 farklı renkle boyarım iş biter. Ama biz bilgisayacılar için önemli olan nedir? Maliyet, minimum maliyet. Ben minimum renkle bulmalıyım. Minimum sayım nedir?
+
+729
+02:02:39,871 --> 02:02:44,591
+İşte bu sayı, bu renk sayısını biz kromatik sayısı diyoruz.
+
+730
+02:02:44,911 --> 02:02:49,851
+Bir G grafının da renk sayısını X, G ile gösteriyoruz.
+
+731
+02:02:51,051 --> 02:02:53,351
+Şimdi bu bir graf.
+
+732
+02:02:57,300 --> 02:03:00,899
+Bu grafı ben minimum kaç renkle boyarım?
+
+733
+02:03:01,780 --> 02:03:05,839
+Yani dedim ki komşu olan düğümler birbiriyle aynı renkte boyanmayacak.
+
+734
+02:03:06,260 --> 02:03:08,720
+Ben bunu biraz daha bilimsel sorayım.
+
+735
+02:03:08,919 --> 02:03:11,339
+Bu grafın kromatik sayısı nedir?
+
+736
+02:03:12,999 --> 02:03:15,619
+Şimdi 3 renkle mi boyanmalıdır? 4 renkle mi?
+
+737
+02:03:15,619 --> 02:03:19,179
+Bir düşün. 3 renkle ben bunu boyayabilir miyim?
+
+738
+02:03:19,599 --> 02:03:23,419
+Yani burayı kırmızıyla boyadım.
+
+739
+02:03:24,019 --> 02:03:25,499
+Burayı maviyle boyadım.
+
+740
+02:03:26,279 --> 02:03:28,099
+Burayı sarıyla boyadım.
+
+741
+02:03:28,759 --> 02:03:31,640
+E şimdi buraya kırmızı desem bununla komşu.
+
+742
+02:03:31,800 --> 02:03:34,259
+Buraya mavi desem bununla komşu.
+
+743
+02:03:34,639 --> 02:03:36,879
+Buraya sarı desem bununla komşu.
+
+744
+02:03:37,279 --> 02:03:38,959
+Bu üç rengi koyamayacağım.
+
+745
+02:03:39,179 --> 02:03:40,300
+Buraya da yeşil dedim.
+
+746
+02:03:40,300 --> 02:03:45,619
+O zaman bu üç renk değil, dört renk boyanır.
+
+747
+02:03:46,160 --> 02:03:46,939
+Gördüğünüz gibi.
+
+748
+02:03:47,439 --> 02:03:49,340
+Peki şuradaki graf.
+
+749
+02:03:49,840 --> 02:03:51,300
+Buradaki graf.
+
+750
+02:03:51,300 --> 02:04:06,499
+1, 2, 3. Buradaki grafın şu ortasına, bunu yanlış koymuşum, bunun altında olacak. Bunun ortasına şey koydum. Bak başka düğüm koydum.
+
+751
+02:04:07,419 --> 02:04:11,480
+Düğüm sayım 5'e çıktı ve bunları kaç renkte boyarım?
+
+752
+02:04:11,480 --> 02:04:20,259
+Bakın burasına kırmızı demişim buna mavi buna kırmızı diyorum çünkü kırmızı bununla komşuluğu yok.
+
+753
+02:04:20,960 --> 02:04:24,520
+Bu da mavi diyeyim bu maviyle komşuluğu yok.
+
+754
+02:04:25,020 --> 02:04:34,320
+Buna yeşil demişim bu maviyle komşu kırmızıyla komşu bu kırmızıyla komşu ama aynı renkler değil.
+
+755
+02:04:41,480 --> 02:04:44,719
+Bunları daha yeni hazırladığım için bunu dört renkte boyarım.
+
+756
+02:04:45,460 --> 02:04:48,560
+Düğüm sayım dört ama dört renkte boyuyorum.
+
+757
+02:04:49,039 --> 02:04:52,939
+Düğüm sayım beş ama üç renkte boyuyorum.
+
+758
+02:04:53,320 --> 02:04:56,380
+Demek ki düğüm sayısıyla bir önemi yok.
+
+759
+02:04:56,819 --> 02:05:01,020
+Düğümlerin birbirleriyle olan ilişkisi önemli olan.
+
+760
+02:05:01,520 --> 02:05:07,479
+Evet düğüm sayım az olduğu vekit ben bunları kırmızı mavi yeşil diye elimle etiketleyebiliyorum.
+
+761
+02:05:07,479 --> 02:05:11,199
+Ama düğüm sayısının çok fazla olduğunu düşünün.
+
+762
+02:05:11,479 --> 02:05:18,999
+Benim buna otomatik olarak karar vermem veya bunu otomatik olarak algoritmik olarak boyamam gerekir.
+
+763
+02:05:19,419 --> 02:05:22,300
+Ben şu an bu derste algoritması ile ilgilenmiyorum.
+
+764
+02:05:22,819 --> 02:05:27,679
+Sadece bunu minimum kaç renkte boyayabilirim bunu bulmam lazım.
+
+765
+02:05:28,619 --> 02:05:34,119
+Bunu çıkarabilmem için benim bu grafın kromotik polinomunu çıkarmam lazım.
+
+766
+02:05:34,119 --> 02:05:42,099
+O kromatik polinom üzerinden giderek bunun kaç renkle, minimum kaç renkle boyanacağını söyleyebilirim.
+
+767
+02:05:42,619 --> 02:05:45,999
+Bunun içinde bir izlenecek yol var.
+
+768
+02:05:46,299 --> 02:05:47,659
+O yolu uygulayacağız.
+
+769
+02:05:48,159 --> 02:05:52,999
+Yine bu grafın kromatik sayısı nedir diye soruluyor.
+
+770
+02:05:53,439 --> 02:05:55,879
+Şimdi düşünün bu yine neydi?
+
+771
+02:05:56,399 --> 02:05:58,519
+K bir N kompleitti.
+
+772
+02:05:58,520 --> 02:06:04,180
+Bir kere burası kırmızı renk olursa bunların hiçbirinin kırmızı olmaması gerekiyor.
+
+773
+02:06:04,740 --> 02:06:11,540
+Ben bunu sarı yaparsam bunu yeşil yapmam lazım ki üçü de farklı renk olsun.
+
+774
+02:06:12,199 --> 02:06:15,900
+Sonra burası yeşil olabilir, burası sarı olabilir.
+
+775
+02:06:16,279 --> 02:06:19,040
+Burası yeşil olabilir, burası sarı olabilir.
+
+776
+02:06:19,439 --> 02:06:24,120
+Komşu olan düğümler birbiriyle gördüğünüz gibi aynı renk değil.
+
+777
+02:06:24,120 --> 02:06:28,020
+Düğüm sayım 7 oldu, daha da arttı.
+
+778
+02:06:28,520 --> 02:06:31,460
+Ama yine renk sayım ne oldu?
+
+779
+02:06:31,999 --> 02:06:32,639
+3 oldu.
+
+780
+02:06:34,160 --> 02:06:36,719
+Düğümle bir ilişkisi olmadığını gördük.
+
+781
+02:06:36,719 --> 02:06:45,059
+Peki benim şu 3 sayısını bulabilmem için işte bu grafların kromotik polinomunu oluşturmam lazım.
+
+782
+02:06:46,387 --> 02:07:08,387
+ona geçmeden evvel deminki örneğe uygun bir örnek verelim. Bir üniversite içerisinde profesörlerden oluşan 10 tane farklı kurul var. Bu 10 tane farklı kurulun içerisinde profesörler görev alıyor ama bir profesör birden fazla kurulda olabilir.
+
+783
+02:07:08,387 --> 02:07:25,347
+bu kurullarda haftada bir kez toplanıyor. Bir akademisyen birden fazla kurulda görev alıyor ve dekana deniyor ki öyle toplantılar organize et ki insanlar bu toplantılar minimum zamanda bitsin.
+
+784
+02:07:25,347 --> 02:07:39,068
+yani en kısa sürede bilsin ve en az sayıda toplantı yapılabilsin. O zaman işte oturup şeyin belki bunu bir kromotif polinom haline getirmesi gerekir.
+
+785
+02:07:39,068 --> 02:07:46,647
+Bir bilgisayarcı ise belki bunu yapar. En az sayıda toplantıyı oluşturması gerekir.
+
+786
+02:07:46,647 --> 02:07:54,267
+Bunun da yapacağı şey şudur, düğümlere kurulları koyar, kurullar der, benim düğümleri temsil edecek grafımda
+
+787
+02:07:54,267 --> 02:08:05,087
+Akademisyenler kenarlarda, çünkü bir akademisyen birden fazla kurulda olabildiği için birden fazla düğme kenar olarak bağlanabilir
+
+788
+02:08:05,087 --> 02:08:19,607
+Yani bir kenar birden fazla kenardan bir düğme birden fazla kenardan kenar gelebilir. Renklerde toplantı zamanlarını verdi.
+
+789
+02:08:19,608 --> 02:08:23,207
+İşte şu yukarıya ilk önce bakın
+
+790
+02:08:23,207 --> 02:08:26,908
+Bu şeyler adını söyleyin
+
+791
+02:08:26,908 --> 02:08:30,527
+Düğümler, kurullar
+
+792
+02:08:30,527 --> 02:08:33,048
+Şu çizgilerde hocalar
+
+793
+02:08:33,048 --> 02:08:36,807
+Mesela şu kurulda şu hoca var, şu hoca var
+
+794
+02:08:36,807 --> 02:08:39,568
+Bu hoca, bu hoca, bu hoca, bu hoca var
+
+795
+02:08:39,568 --> 02:08:42,508
+Bu hoca aynı zamanda bu kurulda
+
+796
+02:08:42,508 --> 02:08:49,068
+Bu hoca da hem bu kurulda hem de bu kurulda böyle
+
+797
+02:08:49,068 --> 02:08:56,227
+ve ben kaç tane toplantı yaparım? Düğümleri minimum kaç renkte boyayabilirim diye bakıyorum.
+
+798
+02:08:56,427 --> 02:09:10,527
+Dört tane renk. Ben dört tane bir mavi, bir kırmızı, bir turuncu, bir yeşil toplantı yaparsam bu hocalar çakışmadan dört tane toplantıyla bu işi bitirmiş olabilir.
+
+799
+02:09:10,527 --> 02:09:19,307
+İşte hep aynı şeyi tekrar ediyorum ama çok önemli bu 4 sayısını benim kafadan bulmama imkan yok
+
+800
+02:09:19,307 --> 02:09:23,748
+Düğüm sayısı azken bunu kotarırım ama çokken bunu kotaramam
+
+801
+02:09:23,748 --> 02:09:26,067
+Bunun için polinom yapacağız
+
+802
+02:09:26,067 --> 02:09:28,548
+Peki polinom nedir?
+
+803
+02:09:28,927 --> 02:09:32,908
+Bir G grafının kromotik polinomuna PG ediyoruz
+
+804
+02:09:32,907 --> 02:09:40,887
+G grafını minimum K renkle renklendirmenin kaç farklı şekilde yapılacağının sayısını verir.
+
+805
+02:09:40,887 --> 02:09:59,727
+Tamam, K bir renk. Benim bir PG polinomum var. Tamam mı? K'da renk sayısı. Ben K'yı sıfır verdiğimde polinomum değeri sıfır çıkıyorsa sıfır rengi olmaz.
+
+806
+02:09:59,727 --> 02:10:08,867
+geri alıyorum. Bir rengini verdiğimde polinomda K yerine bir koyduğumda sıfır çıkıyorsa bu doğru değil demektir.
+
+807
+02:10:08,867 --> 02:10:19,927
+K yerine iki koydum. K2 için polinomu çalıştırıyorum. Yine sıfır çıktı. Bu iki renkle de boyanamaz.
+
+808
+02:10:19,927 --> 02:10:32,087
+K diyelim ki 3 oldu. Polinomda yerine koyuyorum. Sıfırdan farklı bir değer çıktı. Tamam. O zaman bu graf
+
+809
+02:10:32,416 --> 02:10:43,296
+3 tane renkle boyanır minimum ve grafın, polinomun çıkmış olduğu sayısal değerde kaç değişik şekilde boyanabileceğini gösteriyor.
+
+810
+02:10:43,756 --> 02:10:45,535
+Ne demek kaç değişik şekilde?
+
+811
+02:10:45,535 --> 02:10:53,635
+Yani ben buna kırmızı dedim de buna da mavi, buna kırmızı, buna sarı diyebilirdim.
+
+812
+02:10:53,735 --> 02:10:57,975
+Ya da buna sarı, buna mavi, buna kırmızı diyebilirdim.
+
+813
+02:10:58,035 --> 02:10:59,895
+Ya da farklı kombinasyonlar.
+
+814
+02:10:59,895 --> 02:11:04,075
+Kaç farklı değişik stilde boyayabilirim?
+
+815
+02:11:04,436 --> 02:11:07,215
+PG'yi de yerine koyduğumda bana bunu veriyor.
+
+816
+02:11:07,916 --> 02:11:10,735
+Peki, benim şimdi elimde bir grafım var.
+
+817
+02:11:11,316 --> 02:11:15,195
+Ben bu grafın kromotik polinomunu çıkarmak istiyorum.
+
+818
+02:11:15,416 --> 02:11:16,115
+P polinom.
+
+819
+02:11:16,435 --> 02:11:19,255
+K da şey, aslında renk.
+
+820
+02:11:19,615 --> 02:11:21,795
+K'ya bağlı bir işlem yapmayacağım ama
+
+821
+02:11:21,795 --> 02:11:27,416
+bu işlemi polinom çıkarma işleminde uygulanan metot
+
+822
+02:11:27,416 --> 02:11:31,515
+Deletition contraction metod.
+
+823
+02:11:31,735 --> 02:11:33,496
+Nasıl çalışır bu metod?
+
+824
+02:11:33,996 --> 02:11:38,235
+Bu graftan uygun olan bir tane kenarı siliyorum.
+
+825
+02:11:38,835 --> 02:11:41,996
+Bu EH örneklerini göstereceğim.
+
+826
+02:11:42,115 --> 02:11:43,115
+Bu kenarı siliyorum.
+
+827
+02:11:43,316 --> 02:11:45,555
+Graftan bir kenarı çıkarıyorum.
+
+828
+02:11:46,416 --> 02:11:49,716
+Daha sonra bu ikinci bölüme geliyorum.
+
+829
+02:11:49,715 --> 02:11:58,375
+Çıkartığım kenar hangi düğümler arasında ise o düğümleri birbirine birleştiriyorum.
+
+830
+02:11:59,275 --> 02:12:02,475
+Ve bu ikisi arasındaki farkı alıyorum.
+
+831
+02:12:03,195 --> 02:12:04,695
+Şöyle bir örnek vereyim.
+
+832
+02:12:05,175 --> 02:12:07,115
+Elinizde şöyle bir graf var.
+
+833
+02:12:07,895 --> 02:12:11,535
+Ben bu grafın kromatik polinomunu çıkarmaya çalışıyorum.
+
+834
+02:12:12,215 --> 02:12:14,715
+Kenarlardan bir tanesini sileceğim.
+
+835
+02:12:15,095 --> 02:12:16,415
+İstediğimi silebilirim.
+
+836
+02:12:17,375 --> 02:12:19,015
+Yani çıkarabilirim.
+
+837
+02:12:19,015 --> 02:12:22,335
+fakat silerken de
+
+838
+02:12:22,335 --> 02:12:23,456
+ileride göreceğiz
+
+839
+02:12:23,456 --> 02:12:26,316
+en basit şekilde çözüme
+
+840
+02:12:26,316 --> 02:12:27,975
+getirilebilecek olanı
+
+841
+02:12:27,975 --> 02:12:29,816
+hangisi ise onu sileceğim
+
+842
+02:12:29,816 --> 02:12:32,215
+benim şu an keyfim şunu silmek
+
+843
+02:12:32,215 --> 02:12:34,276
+istedi şu kenarı sileceğim
+
+844
+02:12:34,276 --> 02:12:36,496
+geriye ne kalır bunu sildiğim
+
+845
+02:12:36,496 --> 02:12:38,276
+vakit geriye şöyle bir graf
+
+846
+02:12:38,276 --> 02:12:38,916
+kalacak
+
+847
+02:12:38,916 --> 02:12:41,455
+eksi diyeceğim
+
+848
+02:12:41,455 --> 02:12:44,016
+sildiğim iki tane
+
+849
+02:12:44,016 --> 02:12:46,315
+kenarı düğümü birleştireceğim
+
+850
+02:12:46,315 --> 02:12:47,675
+bu düğümle
+
+851
+02:12:47,675 --> 02:12:50,155
+bu düğümü arasındaki
+
+852
+02:12:50,155 --> 02:12:51,735
+bu kenarı sildiysem
+
+853
+02:12:51,735 --> 02:12:53,795
+bu iki kenarı üst üste
+
+854
+02:12:53,795 --> 02:12:55,855
+gelecek şekilde birleştireceğim.
+
+855
+02:12:56,015 --> 02:12:58,375
+Bu birleştirme şeyinde
+
+856
+02:12:58,375 --> 02:13:00,335
+kenarları kırmak yok.
+
+857
+02:13:00,895 --> 02:13:01,675
+Kenarları
+
+858
+02:13:01,675 --> 02:13:03,835
+bükerek bilmem bir şey yaparak
+
+859
+02:13:03,835 --> 02:13:06,395
+kırmak yok. Bunu birleştirdiğimde
+
+860
+02:13:06,395 --> 02:13:08,136
+elimde şöyle bir
+
+861
+02:13:08,136 --> 02:13:09,335
+graf olacak.
+
+862
+02:13:09,335 --> 02:13:11,335
+Ve ben işte bu graflar
+
+863
+02:13:12,035 --> 02:13:13,395
+çözülebiliyorsa
+
+864
+02:13:13,395 --> 02:13:16,916
+bunları çözeceğim.
+
+865
+02:13:16,916 --> 02:13:23,996
+Çözülemiyorsa yeniden alacağım. Hangi grafı alacaksam ondan yine bir kenar sileceğim.
+
+866
+02:13:24,376 --> 02:13:28,695
+Yine sildiğim kenarların düğümlerini birleştirerek devam edeceğim.
+
+867
+02:13:29,315 --> 02:13:33,095
+Şu an bir şey anlamamış olabilirsiniz çünkü örneklerle göstereceğim.
+
+868
+02:13:33,335 --> 02:13:43,115
+Ama kromotik polinom çıkarmada kullanılan teorem diletation contraction teoremi grafın bir kenarını sil.
+
+869
+02:13:43,115 --> 02:13:48,375
+sildiğin düğümleri birleştir ve farkını al.
+
+870
+02:13:48,916 --> 02:13:56,695
+Peki, şimdi kromatik polinomu oluştururken elimdeki grafı parçalayacağız dedik.
+
+871
+02:13:56,695 --> 02:14:03,055
+Bu parçalama işlemi tanıdık bir graf görene kadar devam etmesi lazım.
+
+872
+02:14:03,695 --> 02:14:08,175
+Çünkü ben tanıdık grafların kromatik polinomlarını biliyorum.
+
+873
+02:14:09,535 --> 02:14:11,975
+Şu an bilmiyorsunuz ama birazdan öğreneceksiniz.
+
+874
+02:14:11,975 --> 02:14:19,255
+Bunları aynı 2 çarpı 2'nin 4 olduğunu bilmemiz gibi bilmemiz lazım.
+
+875
+02:14:19,655 --> 02:14:22,416
+En basit graf noktasal graf.
+
+876
+02:14:23,496 --> 02:14:25,095
+Bir tane düğümden oluşuyor.
+
+877
+02:14:26,095 --> 02:14:27,856
+Hiçbir şey yok, kenar yok.
+
+878
+02:14:28,340 --> 02:14:35,340
+elinde x tane renk varsa bu düğümü kaç renkle boyayabilirsin? x renkle.
+
+879
+02:14:35,340 --> 02:14:42,340
+hiç komşusu olmadığı için bütün renklerle boyayabilirim. x tane renkle boyarsın.
+
+880
+02:14:42,340 --> 02:14:54,340
+öyleyse noktasal grafın polinomu px. Şuradaki grafın, şuradaki g grafı olsun. Bu grafın polinomu x'tir.
+
+881
+02:14:54,340 --> 02:14:56,200
+çünkü x renkle boyanıyor.
+
+882
+02:14:56,739 --> 02:14:58,540
+Grafı biraz geliştirelim.
+
+883
+02:14:59,380 --> 02:15:00,759
+İki tane düğüm var.
+
+884
+02:15:01,319 --> 02:15:04,040
+Düğümler arasında bir tane kenar var.
+
+885
+02:15:04,600 --> 02:15:07,259
+Bu grafa çizgisel graf diyoruz.
+
+886
+02:15:07,259 --> 02:15:12,340
+Peki bu çizgisel grafın acaba polinomu ne?
+
+887
+02:15:13,159 --> 02:15:15,539
+Bu da benim bilmem gereken bir polinom.
+
+888
+02:15:15,999 --> 02:15:17,600
+Elimde x renk var.
+
+889
+02:15:18,139 --> 02:15:24,259
+Bunu x tane renkle boyarsam komşu olan düğümü kaç renkle boyarım?
+
+890
+02:15:24,340 --> 02:15:34,960
+x 10 olsun bir rengi buna kullandıysam komşular aynı renkte boyanamayacağına göre buna 9 renk gelir.
+
+891
+02:15:34,960 --> 02:15:39,899
+Yani bu düğümü bunun bir eksiği renkte boyarım.
+
+892
+02:15:40,679 --> 02:15:47,299
+Öyleyse çizgisel grafın polinomu x çarpı x eksi 1'dir.
+
+893
+02:15:49,560 --> 02:15:52,060
+Bunu biraz daha geliştirelim.
+
+894
+02:15:52,060 --> 02:15:54,939
+mesela elimde şöyle bir şey olsaydı
+
+895
+02:16:02,131 --> 02:16:12,371
+mesela bu. Bu da bir çizgisel graf. Bir dakika, bir su içeceğim arkadaşlar.
+
+896
+02:16:16,819 --> 02:16:18,119
+Bu da bir çizgisel graf.
+
+897
+02:16:19,459 --> 02:16:23,300
+Ama birden fazla çizgisel graf bir araya gelmiş.
+
+898
+02:16:23,800 --> 02:16:26,219
+O zaman ben buna U grafı diyorum.
+
+899
+02:16:26,519 --> 02:16:27,780
+Daha genelleştiriyorum.
+
+900
+02:16:28,039 --> 02:16:30,599
+Aslında çizgisel graf da bir U grafı.
+
+901
+02:16:30,780 --> 02:16:32,579
+Ama bu daha genel bir hali.
+
+902
+02:16:32,579 --> 02:16:36,379
+Hadi şimdi bunu X renkle boyamaya çalışalım.
+
+903
+02:16:36,799 --> 02:16:38,299
+Bunu X renkle boyadım.
+
+904
+02:16:38,879 --> 02:16:40,119
+Buna kaç renk geldi?
+
+905
+02:16:40,559 --> 02:16:41,039
+Kaldı.
+
+906
+02:16:41,459 --> 02:16:43,219
+X eksi bir renk kaldı.
+
+907
+02:16:44,139 --> 02:16:45,639
+Buna kaç renk kaldı?
+
+908
+02:16:45,639 --> 02:16:49,579
+sakın boş bulunarak x-2 renk demeyin.
+
+909
+02:16:50,639 --> 02:16:53,680
+Bunun şu an bir tane komşusu boyanmış
+
+910
+02:16:53,680 --> 02:16:56,899
+o zaman buna da x-1 renk kaldı.
+
+911
+02:16:57,500 --> 02:16:59,160
+Buna kaç renk kaldı?
+
+912
+02:16:59,599 --> 02:17:02,639
+Bunun şu an bir tane komşusu boyalı olduğu için
+
+913
+02:17:02,639 --> 02:17:05,220
+buna da x-1 renk kaldı.
+
+914
+02:17:05,919 --> 02:17:07,160
+Buna kaç renk kaldı?
+
+915
+02:17:07,160 --> 02:17:10,699
+Bunun da bir tane komşusu şimdiye kadar boyandığı için
+
+916
+02:17:10,699 --> 02:17:13,159
+buna da x-1 renk.
+
+917
+02:17:13,160 --> 02:17:16,439
+Bunu kaç renkte boyayabilirim?
+
+918
+02:17:16,700 --> 02:17:21,139
+Bunun da bir komşusu olduğu için bunu da x-1 renkle boyayabilirim.
+
+919
+02:17:21,379 --> 02:17:23,980
+Mesela buna kırmızı verdim.
+
+920
+02:17:25,199 --> 02:17:27,500
+Buna sarı verdim.
+
+921
+02:17:27,940 --> 02:17:29,459
+Buna kırmızı verebilirim.
+
+922
+02:17:30,360 --> 02:17:31,680
+Buna sarı verebilirim.
+
+923
+02:17:32,400 --> 02:17:33,860
+Buna kırmızı verebilirim.
+
+924
+02:17:34,379 --> 02:17:35,639
+Buna sarı verebilirim.
+
+925
+02:17:36,139 --> 02:17:41,340
+Yani buradaki x-1 hep bir öncekinin x-1 diye düşünmeyelim.
+
+926
+02:17:41,339 --> 02:17:47,499
+10 tane renk varsa bir rengi burada boyadıysam buraya 9 renk kalır.
+
+927
+02:17:48,139 --> 02:17:52,379
+Bir renk bu komşusunda kullanıldıysa buna da 9 renk kalır.
+
+928
+02:17:52,519 --> 02:17:59,099
+Bir renk bu komşuda kullanıldığı için buna da 9 renk.
+
+929
+02:17:59,399 --> 02:18:02,759
+Yani bunların hepsi x-1 renkte kullanılır.
+
+930
+02:18:03,359 --> 02:18:06,139
+O zaman u grafı neydi çizgisel graf?
+
+931
+02:18:06,139 --> 02:18:15,540
+x çarpı x eksi 1'de ama burada benim kaç tane düğümüm var?
+
+932
+02:18:15,680 --> 02:18:20,779
+1, 2, 3, 4, 5, 6 tane kenarım var.
+
+933
+02:18:21,639 --> 02:18:28,540
+O zaman bu u 6 ise eğer bunun bir eksiği kadar renkte boyanıyor.
+
+934
+02:18:29,060 --> 02:18:29,599
+Tamam mı?
+
+935
+02:18:30,019 --> 02:18:35,079
+En tane düğümüm varsa şu x eksi 1, en eksi 1 tane geliyor.
+
+936
+02:18:35,079 --> 02:18:39,079
+Burada 10 tane düğüm varsa ne diyordum?
+
+937
+02:18:39,859 --> 02:18:41,759
+Şunu 10 tane renkle boyarım.
+
+938
+02:18:42,379 --> 02:18:45,019
+Bunu 10-1, 9 renkle.
+
+939
+02:18:45,419 --> 02:18:50,079
+Bunu 9 renkle.
+
+940
+02:18:50,419 --> 02:18:52,079
+Bunu 9 renkle boyayacağım.
+
+941
+02:18:52,419 --> 02:18:53,419
+Kaç tane var?
+
+942
+02:18:53,899 --> 02:18:56,979
+N-1 tane 9 renkle boyayacağım şey var.
+
+943
+02:18:57,159 --> 02:19:00,219
+O yüzden bunun üzerine N-1 koyuyorum.
+
+944
+02:19:00,219 --> 02:19:06,339
+Öyleyse şunu siliyoruz.
+
+945
+02:19:11,283 --> 02:19:14,283
+ay çok ağır sildi neden acaba?
+
+946
+02:19:17,283 --> 02:19:18,283
+evet
+
+947
+02:19:18,283 --> 02:19:21,283
+kırmızıya geçelim yine
+
+948
+02:19:21,283 --> 02:19:23,283
+peki
+
+949
+02:19:23,283 --> 02:19:26,283
+bu da demek ki benim tanımam gereken bir graf
+
+950
+02:19:26,283 --> 02:19:28,283
+ben bir grafı
+
+951
+02:19:28,283 --> 02:19:30,283
+bölerken
+
+952
+02:19:30,283 --> 02:19:33,283
+çizgisel graf olana kadar bölebilirim
+
+953
+02:19:33,283 --> 02:19:35,283
+noktasal graf olarak bölebilirim
+
+954
+02:19:35,283 --> 02:19:36,283
+veya
+
+955
+02:19:36,283 --> 02:19:38,283
+bir başka graf geldi
+
+956
+02:19:38,283 --> 02:19:40,283
+bu bir k grafı
+
+957
+02:19:40,283 --> 02:19:59,903
+Her düğüm kendisinin dışındaki diğer bütün düğümlere bağlı. Ama K3 grafının aynı zamanda K3 grafı Z grafı alanı alabilir. Ben buna Z grafı da diyebilirim, K grafı da diyebilirim.
+
+958
+02:19:59,903 --> 02:20:29,724
+Peki hadi bakalım kaç renkle boyayabilirim? Bunu x renkle boyadım. Bir komşusu boyandığı için buna x eksi bir renk geldi. Bu düğümün iki tane komşusu var. Bunlarla aynı renkte olmaması gerekir. O zaman buna da x eksi iki renk geldi. Peki bunu nasıl yazacağım? Bunu yazmak demek x x eksi bir çarpı oh my god Allahu ekber
+
+959
+02:20:34,644 --> 02:21:00,843
+x, x-2 oldu. Bunun da yazılımı bu. K, 3'tü bu örnekte. K'yı 3 verelim. K0'dan n-1'e kadar gidiyor. K0 ise burada x geldi. Çarpı. K1 ise burada x-1 geldi. K2 ise buraya da x-1 geldi.
+
+960
+02:21:00,843 --> 02:21:04,083
+İşte buraya yaptığımın aynısı.
+
+961
+02:21:04,983 --> 02:21:10,923
+Öyleyse arkadaşlar benim bilmem gereken şey noktasal graf x.
+
+962
+02:21:11,523 --> 02:21:21,763
+Çizgisel graf x çarpı x eksi bir bunu u grafı olarak genelleştiriyorsam yani şunlar bir u grafı.
+
+963
+02:21:21,763 --> 02:21:24,343
+Bu bir u grafı.
+
+964
+02:21:25,203 --> 02:21:26,763
+Şu bir u grafı.
+
+965
+02:21:28,123 --> 02:21:30,263
+Ne bileyim şu bir u grafı.
+
+966
+02:21:30,843 --> 02:21:56,123
+Tamam mı? Bunların hepsinin tek bir formülü var. x çarpı x eksi 1'in n eksi 1 kuvveti. Bu k grafı, 3 düğümlüğü ise özel bir hal dedik z grafı. Bunun da formülü x çarpı x eksi 1 x eksi 2. Bunların da yazılımında 0'dan n eksi 1'e kadar x eksi k diye yazıyoruz.
+
+967
+02:21:56,123 --> 02:22:03,563
+Şimdi bana verilmiş olan bütün grafları şu tanıdığım graflara indirinceye kadar böleceğim.
+
+968
+02:22:04,723 --> 02:22:13,503
+Şimdi bir örnek yapalım. Şöyle bir graf var. Şimdi bakıyorsun bu graf aslında bir K graf.
+
+969
+02:22:13,504 --> 02:22:23,584
+daha önce grafı falan bölmüyorsun. Standart sokaktaki bir insan olarak. Diyorsun bunu x renkte boyadıysam bunu x-1 renkte boyarım.
+
+970
+02:22:23,584 --> 02:22:31,504
+Bunu iki tane komşusu olduğu için bunun iki rengi kullanmış olacak. Bunu x-2 ile boyarım.
+
+971
+02:22:31,504 --> 02:22:47,703
+buna gelince şunlar boyanmış olduğu için bunu da x-3 ile ben bunu da yanlış yazmışım arkadaşlar galiba kontrol etmeden geçiyor
+
+972
+02:22:47,703 --> 02:22:57,263
+neyse bakalım önce bir boyayalım bunu kırmızıyla boyadım bunu mavi ile boyarım bunu kırmızıyla boyayabilir miyim
+
+973
+02:22:57,263 --> 02:23:00,303
+Evet bunu kırmızıyla boyayabilirim
+
+974
+02:23:00,303 --> 02:23:05,263
+Bunu maviyle boyayabilir miyim? Evet maviyle boyayabilirim
+
+975
+02:23:05,263 --> 02:23:08,463
+Bunu ben iki renkle boyayabilirim aslında
+
+976
+02:23:08,463 --> 02:23:11,923
+Ama ben bunu K grafı olarak vermişim
+
+977
+02:23:11,923 --> 02:23:17,883
+K grafı neydi? Her düğüm kendisinin dışındaki düğümlerle de komşudur
+
+978
+02:23:17,883 --> 02:23:23,843
+Yani şu çizgide bu slide'da iki tane hata yapmışım bunları düzelteceğim bana unutturmayın
+
+979
+02:23:23,843 --> 02:23:26,923
+Şu şekilde verilmesi gerekiyordu bu şekli
+
+980
+02:23:26,923 --> 02:23:33,084
+Şimdi o zaman bunlara kırmızı mavi, kırmızı mavi diyebilir miyim iki renk?
+
+981
+02:23:34,504 --> 02:23:39,224
+Buna kırmızı desem, buna mavi desem, buna kırmızı diyemiyorum.
+
+982
+02:23:39,224 --> 02:23:42,164
+Çünkü bu da kırmızıydı, bu ikisi komşu.
+
+983
+02:23:42,524 --> 02:23:43,864
+Bu otomatikman nedir?
+
+984
+02:23:44,883 --> 02:23:46,084
+Bir K grafıdır.
+
+985
+02:23:46,483 --> 02:23:48,164
+K grafında formülü buydu.
+
+986
+02:23:48,603 --> 02:23:50,683
+K'ya 0 koydum, X renk.
+
+987
+02:23:50,923 --> 02:23:52,623
+K1 oldu, X eksi 1.
+
+988
+02:23:52,944 --> 02:23:54,664
+K2 oldu, X eksi 2.
+
+989
+02:23:54,663 --> 02:24:14,943
+3 oldu. x eksi 3 diye bunu bu şekilde yazabilirim. x, x eksi 1, x eksi 2, x eksi 3. Ama ben bu grafın polinomu nedir diye sorduğumda bana bunu vermemeniz lazım. Bir polinom halini vermen lazım.
+
+990
+02:24:14,943 --> 02:24:32,523
+çarptım. İşte x kare eksi x, x kare eksi 2x, eksi 3x, eksi 5x artı 6. Bunları bunların üzerinden dağıttım. Bu çıktı. Bu grafın kromotik polinomu artık bu.
+
+991
+02:24:34,227 --> 02:25:03,627
+tamam mı? eee bunu buldun da ne olacak? bunu buldun mu şu olacak ben şimdi buna bakarak bunun kaç tane renkle boyanacağını söyleyebilirim. şu an ben bunun dört tane renkle boyanacağını söyledim. acaba gerçekten dört mü? k'ya bir verdiğinde bunun sonucu ne olur? zaten yukarıda çarpanları var. buraya bir verdiğimde burası sıfır olacağı için bunun sonucu sıfır olur.
+
+992
+02:25:03,627 --> 02:25:14,307
+K2 olduğunda ne olur? Çarpanlar arasında x-2 olduğu için sen burada da x'in yerine 2 koy bu yine 0 çıkar.
+
+993
+02:25:14,307 --> 02:25:24,408
+K3 olduğunda ne olur? 3 koy buraya 0. Bu polinomda da 3 koysan yine 0 olur. Halen olmadı.
+
+994
+02:25:24,408 --> 02:25:29,707
+K yerine 4 koyduğunda bunun sonucu ne olur?
+
+995
+02:25:30,308 --> 02:25:31,527
+Şuradan 4 gelir.
+
+996
+02:25:31,968 --> 02:25:33,908
+4-1, 3'dir.
+
+997
+02:25:34,628 --> 02:25:36,288
+4-2, 2'dir.
+
+998
+02:25:37,227 --> 02:25:38,967
+4-3 de 1'dir.
+
+999
+02:25:39,827 --> 02:25:42,227
+Burası da 12 ve 24 çıkar.
+
+1000
+02:25:42,227 --> 02:25:52,028
+Yani ben şu grafı 4 renkle 24 farklı şekilde boyayabilirim diyorum.
+
+1001
+02:25:52,027 --> 02:26:06,667
+Şimdi yeniden özetliyorum. Bundan sonrası hızlı ilerleyecek çünkü. Ben bu grafın K grafı olduğunu görmüşsem pat diye bunu yazabiliyorum.
+
+1002
+02:26:06,667 --> 02:26:09,307
+Bu formülü yazarım
+
+1003
+02:26:09,307 --> 02:26:11,847
+Polinomum bellidir
+
+1004
+02:26:11,847 --> 02:26:17,727
+Polinomu sıfırdan yapan değer hangisi ise bu kadar minimum renk
+
+1005
+02:26:17,727 --> 02:26:23,587
+Polinomda yerine koyduğumda çıkan sayı da bu kadar değişik renk demektir
+
+1006
+02:26:23,587 --> 02:26:27,727
+Peki ben bunun K polinomu olduğunu hatırlamıyorsam
+
+1007
+02:26:27,727 --> 02:26:29,347
+Bir K grafı olduğunu
+
+1008
+02:26:29,347 --> 02:26:33,667
+O zaman bu grafı daha alt graflara böleceğim
+
+1009
+02:26:33,667 --> 02:26:37,247
+bir çizgisel graf ya da noktasal graf haline getireceğim.
+
+1010
+02:26:37,427 --> 02:26:41,667
+Ama ne kadar erken tanırsam işim o kadar çabuk biter.
+
+1011
+02:26:41,667 --> 02:26:47,668
+Bir de size bir şunları sileyim.
+
+1012
+02:26:48,807 --> 02:26:51,327
+Basit bir şey daha göstereceğim.
+
+1013
+02:26:51,948 --> 02:26:56,227
+Şu çarpımlar bazen burada çok uzun şeyler olabilir.
+
+1014
+02:26:56,668 --> 02:26:57,887
+Şunu şöyle çarpın.
+
+1015
+02:26:58,147 --> 02:26:59,487
+Şunun kat sayıları nedir?
+
+1016
+02:26:59,827 --> 02:27:02,487
+Bir, beş ve altı.
+
+1017
+02:27:02,487 --> 02:27:05,627
+Bunun kas sayıları da nedir? 1 ve 1
+
+1018
+02:27:05,627 --> 02:27:08,247
+İşaretlerin hiç önemi yok
+
+1019
+02:27:08,247 --> 02:27:10,147
+Şimdi bunu çarpalım
+
+1020
+02:27:10,147 --> 02:27:18,547
+1 kere 6, 1 kere 5, 1, 1 kere 6, 1 kere 5 ve 1
+
+1021
+02:27:18,547 --> 02:27:23,827
+6, 11, 6 ve 1
+
+1022
+02:27:23,827 --> 02:27:26,147
+Aha da benim buradaki kas sayılarım
+
+1023
+02:27:26,147 --> 02:27:29,147
+Bu kas sayılarımı buldum
+
+1024
+02:27:29,147 --> 02:27:35,388
+Bu işareti artı, eksi, artı, eksi diye gider.
+
+1025
+02:27:35,528 --> 02:27:39,108
+İşaretin artı, eksi, artı, eksi diye gider.
+
+1026
+02:27:39,767 --> 02:27:41,347
+Peki bu üstler nedir?
+
+1027
+02:27:41,967 --> 02:27:52,748
+En sondakinin değişkeni x, diğeri x kare, diğeri x küp, diğeri de x dört diye gider.
+
+1028
+02:27:53,207 --> 02:27:54,847
+İşte burayı elde ettim.
+
+1029
+02:27:54,847 --> 02:28:14,227
+Yani bu gibi durumlarda çarpmaya üşeniyorsanız kas sayılarını alır çarpar soldan sağ işaretleri artı eksi artı eksi diye koyar ve en sondaki sayının değişkeni x olacak şekilde
+
+1030
+02:28:14,227 --> 02:28:25,207
+üstel diyorum kuvvetlerini arttırarak yerleştirirsek bana kromotik polinom verilmiş olacak.
+
+1031
+02:28:25,968 --> 02:28:30,207
+Şimdi bunların hepsini bir arada kullanan bir örnek yapalım.
+
+1032
+02:28:32,048 --> 02:28:33,367
+Bu bana verildi.
+
+1033
+02:28:33,780 --> 02:28:37,780
+Çok iyi dinleyin arkadaşlar ve anlamadığınızları anında soruyorum.
+
+1034
+02:28:38,519 --> 02:28:41,399
+Benimki örneğin aynısı verildi.
+
+1035
+02:28:41,899 --> 02:28:48,579
+Fakat ben işte sınav heyecanı diyelim ya da göremedim bunun K grafı olduğunu göremiyorum.
+
+1036
+02:28:48,579 --> 02:28:51,759
+Ve göremediğim için de polinomunu yazamıyorum.
+
+1037
+02:28:52,259 --> 02:28:55,819
+Ben bunu tanıdığım bir graf haline düşüreceğim.
+
+1038
+02:28:56,259 --> 02:28:57,479
+O zaman ne yapıyorduk?
+
+1039
+02:28:57,780 --> 02:29:00,200
+Dilatation contraction metodu kullanıyorduk.
+
+1040
+02:29:00,759 --> 02:29:03,239
+Herhangi bir kenarı siliyorum.
+
+1041
+02:29:03,780 --> 02:29:07,500
+Ben diyorum ki 1 ile 4 arasındaki kenarı sileyim.
+
+1042
+02:29:08,579 --> 02:29:13,160
+1 ile, önce şuna bakın, 1 ile 4 arasındaki kenarı sildim.
+
+1043
+02:29:14,120 --> 02:29:18,579
+Sildiğim kenar hangi düğümler arasındaydı? 1 ve 4.
+
+1044
+02:29:19,140 --> 02:29:22,500
+Bu düğümleri mavi yaptım. Şu an görün diye yapıyorum.
+
+1045
+02:29:23,339 --> 02:29:26,059
+Formül bana diyordu ki kenarı çıkar.
+
+1046
+02:29:26,059 --> 02:29:28,680
+Kenarı çıkardım 1 ile 4 arasında.
+
+1047
+02:29:29,239 --> 02:29:32,820
+Formül diyordu ki araya bir eksi koy, çıkarma işlemi yap.
+
+1048
+02:29:32,819 --> 02:29:43,399
+Sonra diyordu ki çıkardığım kenarın düğümlerini üst üste gelecek şekilde grafı katla ama kenarları kırmadan.
+
+1049
+02:29:43,939 --> 02:29:48,959
+Şimdi düşünün ben bu düğümü alıp bu düğümün üstüne katlıyorum.
+
+1050
+02:29:49,619 --> 02:29:53,119
+3 ve 4 1 ve 3'ün üzerine oturdu.
+
+1051
+02:29:53,759 --> 02:29:57,140
+2 ile 4 1 ile 4'ün üzerinde oturdu.
+
+1052
+02:29:57,659 --> 02:30:00,199
+Şu kenar üzerinde katlandı.
+
+1053
+02:30:02,820 --> 02:30:04,720
+Şunu yine sileyim.
+
+1054
+02:30:04,800 --> 02:30:05,280
+Tamam mı?
+
+1055
+02:30:05,339 --> 02:30:07,099
+Şu maviyi aldım dördü.
+
+1056
+02:30:07,820 --> 02:30:08,599
+Dırt dedim.
+
+1057
+02:30:09,199 --> 02:30:13,419
+Aynı bir kare kağıdı ortadan katlar gibi katladım.
+
+1058
+02:30:13,580 --> 02:30:14,059
+Bu oldu.
+
+1059
+02:30:14,680 --> 02:30:16,979
+Şimdi burada tanıdığım graflar var mı?
+
+1060
+02:30:17,699 --> 02:30:19,599
+Yani bunu tanıdım diyebilirsin.
+
+1061
+02:30:20,280 --> 02:30:21,680
+Bu bir z grafı.
+
+1062
+02:30:22,019 --> 02:30:23,140
+K3 grafı.
+
+1063
+02:30:23,619 --> 02:30:24,540
+Nasıl yazılıyordu?
+
+1064
+02:30:24,680 --> 02:30:28,040
+x, x eksi 1, x eksi 2 diye yazıyorduk.
+
+1065
+02:30:28,040 --> 02:30:30,259
+Bunu tanımıyorum diyorsun.
+
+1066
+02:30:30,959 --> 02:30:34,419
+Tanımadığın grafı al aşağıya.
+
+1067
+02:30:34,939 --> 02:30:37,499
+Bunu tanıdığın graflar haline getir.
+
+1068
+02:30:37,979 --> 02:30:39,439
+Bunu da tanımayabilirsin.
+
+1069
+02:30:39,599 --> 02:30:43,220
+Tanımıyorsan alıp bunu da çözersin.
+
+1070
+02:30:43,500 --> 02:30:47,000
+Çizgi graf, noktasal grafa inene kadar.
+
+1071
+02:30:47,899 --> 02:30:49,179
+Şimdi bunu tanımıyorum.
+
+1072
+02:30:49,679 --> 02:30:51,780
+Şu kenarı çıkaracağım diyorum.
+
+1073
+02:30:52,280 --> 02:30:53,659
+Şu kenarı çıkardım.
+
+1074
+02:30:53,659 --> 02:30:57,919
+Çıkardığım kenarın bağlı olduğu düğümlere mor yaptım.
+
+1075
+02:30:58,459 --> 02:30:59,220
+Eksi dedim.
+
+1076
+02:30:59,220 --> 02:31:01,699
+Şimdi dikkat edin.
+
+1077
+02:31:02,119 --> 02:31:07,440
+Bu mor olan düğümleri üst üste gelecek şekilde katlıyorum.
+
+1078
+02:31:07,880 --> 02:31:09,720
+1 ile 2, 1 ve 3'e oturdu.
+
+1079
+02:31:10,259 --> 02:31:12,979
+2 ve 4'te 3 ve 4'e oturur.
+
+1080
+02:31:13,320 --> 02:31:15,119
+Şunu şöyle aldım.
+
+1081
+02:31:15,259 --> 02:31:18,399
+Bunun üzerine katladığımda karşıma bu çıktı.
+
+1082
+02:31:19,860 --> 02:31:21,419
+Bunu da tanıyorum diyebilirim.
+
+1083
+02:31:21,500 --> 02:31:23,559
+Bu artık bir çizgisel graf.
+
+1084
+02:31:23,559 --> 02:31:27,479
+X çarpı x eksi 1 üzeri n eksi 1.
+
+1085
+02:31:27,660 --> 02:31:28,880
+Kaç tane düğüm varsa.
+
+1086
+02:31:29,220 --> 02:31:31,680
+Burada üç düğüm olduğuna göre bu en eksi iki.
+
+1087
+02:31:32,300 --> 02:31:33,559
+Bu grafı tanımıyorum.
+
+1088
+02:31:34,320 --> 02:31:36,399
+Bu grafı yine çözmek için aldım.
+
+1089
+02:31:36,860 --> 02:31:38,640
+Bu kenarı çıkardım.
+
+1090
+02:31:39,300 --> 02:31:41,000
+Çıkardığım kenar burası.
+
+1091
+02:31:41,759 --> 02:31:43,860
+Bunlara düğümlerine turuncu yaptım.
+
+1092
+02:31:44,559 --> 02:31:45,600
+Eksi dedim.
+
+1093
+02:31:46,140 --> 02:31:51,300
+Kenarı çıkardığım düğümleri grafı kırmayacak şekilde üst üste getirdim.
+
+1094
+02:31:51,300 --> 02:31:54,360
+Bunu böyle yavaş yavaş indirdim.
+
+1095
+02:31:54,500 --> 02:31:56,720
+İndirdim ve burada birleştirdim.
+
+1096
+02:31:57,220 --> 02:31:58,619
+Bu da tanıdığım graf.
+
+1097
+02:31:59,220 --> 02:32:01,520
+Z grafı. Bu da tanıdığım graf.
+
+1098
+02:32:01,800 --> 02:32:02,960
+Çizgisel graf.
+
+1099
+02:32:03,419 --> 02:32:05,180
+Artık bunları bölmüyorum.
+
+1100
+02:32:05,600 --> 02:32:10,860
+Ama dediğim gibi noktası grafı olana kadar indirgeyebilirsiniz.
+
+1101
+02:32:10,860 --> 02:32:11,860
+Ama...
+
+1102
+02:32:12,308 --> 02:32:35,007
+çözerken hata yapma olasılığınız daha çok artar. Neden? Şimdi bakalım. Ben öncelikle şurayı çözeyim. Şurası neydi? Çizgisel graftı. Neydi buranın formülü? Hatırlayalım. x çarpı x-1 üzeri n-1. Dört tane düğümüm var. n-1 dersem buraya üç düğüm gelecek.
+
+1103
+02:32:35,007 --> 02:32:51,087
+Bu neydi? Bir k grafıydı. x, x-1, x-2 diye yazıyorduk. Tamam mı? Demek ki bunun sonucu şu polinomdan şu polinomun farkını almak.
+
+1104
+02:32:51,087 --> 02:33:14,827
+x-x1 küpü aldım, x-1 x-2 aldım, ortak x-x1 ortak parantezini aldım, buradan kare geldi, buradan x-2 geldi, sonra burasını kareleri açtım, x-2 den çıkardım, şu çıktı.
+
+1105
+02:33:14,828 --> 02:33:18,028
+Demek ki şu grafın polinomu bu
+
+1106
+02:33:18,028 --> 02:33:20,407
+Şimdi gidiyorum yukarıya
+
+1107
+02:33:20,407 --> 02:33:22,528
+Bunun sonucunu da buldum bu
+
+1108
+02:33:22,528 --> 02:33:25,447
+Getirdim bunu buraya yazdım
+
+1109
+02:33:25,447 --> 02:33:27,608
+Yazdım buraya
+
+1110
+02:33:27,608 --> 02:33:29,547
+Eksi dedim
+
+1111
+02:33:29,547 --> 02:33:32,468
+Burası ne? Bir çizgisel graf
+
+1112
+02:33:32,468 --> 02:33:36,668
+x x eksi bir düğüm sayısının bir eksiği
+
+1113
+02:33:36,668 --> 02:33:40,348
+3 düğüm varsa bir eksiği ne oldu? 2 oldu
+
+1114
+02:33:40,348 --> 02:33:44,528
+Baktım buraya x eksi bir ortak parantezini aldım
+
+1115
+02:33:44,528 --> 02:34:03,988
+x kare eksi 3x artı 3. Burada x eksi 1 kaldı. Parantezi açtım. Eksi x artı 1 oldu. Burada 3x eksi x eksi 4x çıktı bu. Şu grafın artık polinom şeyi, kromatik polinomu bu çıktı.
+
+1116
+02:34:03,988 --> 02:34:18,668
+Şimdi yukarıya geçtim. Bunun değerini buraya taşıdım. Yani bu. Getirdim. Bunu yukarıya koydum. Eksi. Burası z grafı. x, x eksi 1, x eksi 2 idi.
+
+1117
+02:34:18,668 --> 02:34:32,608
+x eksi 1 ortak parantezine yazdım. Şurası. Eksi. X'i açtım. Eksi x. Eksi 2 artı 2 geldi. İşte topladım. Çarptım. Bu çıktı.
+
+1118
+02:34:32,608 --> 02:34:37,608
+benim artık şu k grafımın polinomu bu.
+
+1119
+02:34:39,608 --> 02:34:40,947
+Polinomu bu.
+
+1120
+02:34:41,568 --> 02:34:43,348
+Bir öncekine bakın.
+
+1121
+02:34:43,888 --> 02:34:44,408
+Eyvah.
+
+1122
+02:34:45,988 --> 02:34:50,087
+Bir öncekinde bu yanlıştı zaten.
+
+1123
+02:34:50,268 --> 02:34:51,867
+Bunun burasında bu olacaktı.
+
+1124
+02:34:51,867 --> 02:34:52,727
+Bu neydi?
+
+1125
+02:34:52,888 --> 02:34:58,087
+x4-6x küp 11x kare-6x.
+
+1126
+02:34:58,548 --> 02:35:01,568
+İşte burada çıkan sonuç da bu.
+
+1127
+02:35:01,567 --> 02:35:13,187
+Aynı şekilde biliyorsam pat diye yazabilirim. Bilmiyorsam oturup böyle çözeceğim. Kaç renkle boyayabilirim? İşte başlayacağım.
+
+1128
+02:35:13,567 --> 02:35:22,587
+Sıfır vereceğim k yerine bu sıfır çıkacak. Bir vereceğim sıfır çıkacak. İki vereceğim sıfır çıkacak. Üç vereceğim sıfır çıkacak.
+
+1129
+02:35:22,587 --> 02:35:35,767
+4 vereceğim sıfırdan farklı bir değer çıkacak. O değer de bana bu grafın 4 renkle o kadar farklı renkte şekilde boyanabileceğini söyleyecek.
+
+1130
+02:35:37,668 --> 02:35:46,487
+Şimdi ne oluyor yine gitmiyor. Benim size biraz daha böyle ipucu vermem gerekiyor.
+
+1131
+02:35:46,487 --> 02:35:51,867
+Yani acaba işimi daha kolaylaştıracak bir şeyler var mı? Evet var.
+
+1132
+02:35:52,587 --> 02:36:08,067
+Bana diyor ki sana verilen graf diyor eğer bir nokta ile birbirinden ayrılabiliyorsa yani ne demek? Mesela şöyle bir graf düşünün. Şöyle bir grafım var.
+
+1133
+02:36:15,924 --> 02:36:45,424
+graf mı? Graf. Bu iki graf bir nokta ile birleşmiş. Ben bunu bir nokta ile ayırabilirim. Bu graf mı? Graf. Bu iki graf bir çizgi ile birleşmiş olabilir. Yani bu aslında iki tane üçgen var. İki tane üçgen grafım var benim. Ve bunları bir araya gelmişim. Şu çizgiler ortak.
+
+1134
+02:36:45,424 --> 02:36:55,124
+Burada da bir düğüm var. Bunu ayırdığımda bununki böyle bir düğüm, bununkisi böyle bir düğüm. Bu düğümlerden ortak yapmışım. Böyle düşünün.
+
+1135
+02:36:55,124 --> 02:36:59,804
+Ya da mesela şöyle bir düğüm olabilir. Şöyle bir grafun olabilir.
+
+1136
+02:37:07,603 --> 02:37:36,423
+bir kare, bir üçgen graf, bu bir nokta ile birleştirilmiş. Olayları böyle düşünün. Tamam. Eğer iki graf birbirinden noktasal veya çizgisel bir grafla ayrılabiliyorsa, silelim bunu, bu iki grafı parçalar, iki grafı çarpar, bu iki grafın ortak olanı kenarsa kenara bölmek,
+
+1137
+02:37:36,423 --> 02:37:39,923
+nokta ise noktaya bölebiliyorsun.
+
+1138
+02:37:40,824 --> 02:37:47,203
+Ve ben oturup bu grafı çözeceğime, bu graf iki tane z graftan oluşuyordu.
+
+1139
+02:37:47,203 --> 02:37:53,103
+Bir tane z graft neydi? x çarpı x eksi 1, x eksi 2 idi.
+
+1140
+02:37:53,583 --> 02:37:58,603
+Bundan kaç tane var? 2 tane var. Bunların üzerine kare ekledim.
+
+1141
+02:37:59,343 --> 02:38:05,103
+Bölü, aşağısı çizgisel graf x çarpı x eksi 1 idi bu.
+
+1142
+02:38:05,103 --> 02:38:18,803
+Bunlar birbirini götürdü, şu gitti, şu gitti, bunun karesi ve bunlar sadece oturur bunları çarparım ve bana bu grafın kromatik polinomunu bulurum.
+
+1143
+02:38:19,144 --> 02:38:29,523
+Ondan sonra bu zaten belli. Bir versem sıfır olur, bir renkle boyanmaz. İki versem sıfır olur, iki renkle boyanmaz. Üç versem sıfırdan farklı olur.
+
+1144
+02:38:29,523 --> 02:38:38,003
+o zaman 3 renkle 3, 2, 1, 6 değişik renkle boyayabilirim diyebilirim.
+
+1145
+02:38:39,223 --> 02:38:41,863
+Burada da yaptığımız şey bu da çıktı.
+
+1146
+02:38:42,623 --> 02:38:45,643
+Şimdi arkadaşlar buraya kadar sorunuz var mı?
+
+1147
+02:38:45,843 --> 02:38:47,023
+Yarım saatim kaldı.
+
+1148
+02:38:47,743 --> 02:38:52,363
+Varsa sorun yoksa birazcık çıtayı yükselteceğim.
+
+1149
+02:38:57,332 --> 02:39:07,712
+yükselteceğim de yani acayip bir şey yapmayacağım. Burada arada bir hatırlatıyorum. Yine mesela bunu çarpacaksın.
+
+1150
+02:39:07,712 --> 02:39:22,051
+1, 1, 1, 4, 4 koydum. 1, 4, 1, 4 topladım. 1, 5, 8 al sana. 1, 5, 8, 4 işaretler artı, eksi, artı, eksi.
+
+1151
+02:39:22,051 --> 02:39:27,951
+en sondaki karakter x, x kare, x küp, x dört diye gitti.
+
+1152
+02:39:28,631 --> 02:39:35,411
+Haa şimdi mesela şöyle durumlar var.
+
+1153
+02:39:36,971 --> 02:39:39,512
+İleride söyleyeceğim ama şimdi söyleyeyim.
+
+1154
+02:39:40,271 --> 02:39:46,391
+Polinomun derecesi grafın düğün sayısı verir.
+
+1155
+02:39:46,391 --> 02:39:48,391
+Bakın grafta dört tane düğün var.
+
+1156
+02:39:48,911 --> 02:39:50,911
+Polinomun derecesi bu.
+
+1157
+02:39:50,911 --> 02:40:08,711
+bunu test etmek istiyorsunuz. Çıktı bir polo çıkartı da doğru buldu. İkinci kas sayı kenar sayısını verir. Yine benim internet connection unstable dedi. Sesimi duyuyor musunuz?
+
+1158
+02:40:08,711 --> 02:40:20,611
+Hocam kesik kesik geliyor biraz. Alo? Şimdik? Biraz daha iyi hocam. Şimdik duyuyor musunuz? Hocam yine kesik kesik geliyor.
+
+1159
+02:40:27,283 --> 02:40:32,664
+herkes mi öyle duyuyor yoksa sadece bu arkadaşınız mı öyle duyuyor?
+
+1160
+02:40:32,664 --> 02:40:33,264
+bende de öyle.
+
+1161
+02:40:33,264 --> 02:40:34,163
+herkes öyle.
+
+1162
+02:40:34,163 --> 02:40:34,943
+sınıfta sınıfta sınıfta sınıfta.
+
+1163
+02:40:34,943 --> 02:40:36,504
+bende de kesiklikle hocam.
+
+1164
+02:40:36,504 --> 02:40:38,003
+herkes öyle duyuyor.
+
+1165
+02:40:42,227 --> 02:40:46,407
+ama yapabileceğim hiçbir şey yok. Evde şu an benden başka internete giren de yok.
+
+1166
+02:40:48,467 --> 02:40:58,108
+şu an düzenliyorum. yeni mi oldu bu? evet. tamam peki. şimdi bu bulmuş olduğumuz polinomun şeyine bakmamız lazım.
+
+1167
+02:40:58,108 --> 02:41:06,747
+acaba doğru mu yaptık yapmadık mı? bunların bir kontrol şeyleri var mı? elbette var. polinomun derecesi bana grafın düğüm sayısını veriyor.
+
+1168
+02:41:06,747 --> 02:41:18,447
+Polinomun ikinci kas sayısı bana kenar sayısını veriyor. 1, 2, 3, 4 ve 5
+
+1169
+02:41:18,447 --> 02:41:35,647
+Şu diğerlerinin ne olduğunu hala bulunamamış. Yani bilmiyoruz onların neye karşılık geldiğini. Peki onların neye karşılık geldiğini bilmiyorsun. Başka doğruluğunu kontrol edeceğim bir şey var mı?
+
+1170
+02:41:35,647 --> 02:41:56,927
+Evet, kas sayılarının toplamı 0 olması lazım. 1-5 daha, 4, 8 daha, 4, 4 daha, 0. Polinomun derecesi grafın düğüm sayısı. İkinci elemanın kas sayısı kenar sayısı. İşaretler artı eksi artı eksi diye gidecek.
+
+1171
+02:41:56,927 --> 02:42:08,687
+Kas sayılar toplamı 0 ve en son terimde x ile bitiyorsa bu bulmuş olduğun polinom doğru demektir.
+
+1172
+02:42:08,687 --> 02:42:18,487
+Şimdi bunları zaten söylüyor ve A1 yani şu ilk terim, ilk terimin kas sayısı her zaman 1 olmalıdır.
+
+1173
+02:42:19,588 --> 02:42:22,287
+Polinomun derecesi grafın düğüm sayısını verir.
+
+1174
+02:42:22,967 --> 02:42:25,527
+Terimlerin kas sayılarının toplamı 0'dır.
+
+1175
+02:42:25,527 --> 02:42:33,807
+Polinomun kat sayılarının işaretleri soldan sağa artı eksi diye gider ve polinomda sabit terim olmaz.
+
+1176
+02:42:34,687 --> 02:42:40,847
+Bunlardan bir tanesi sağlanmamışsa senin bulmuş olduğun polinom yanlış demektir.
+
+1177
+02:42:40,847 --> 02:42:55,387
+Şimdi bu bir vize sorusuydu. Böyle bir soru geldi. Bu grafı kromotik polinomu nedir ve bunu kaç renkle şey yaparız? Adını söyle bana. Boyarız.
+
+1178
+02:42:55,528 --> 02:43:00,507
+Tabii dörtle boyarız, beşle boyarız diye bir cevap olmaz.
+
+1179
+02:43:01,007 --> 02:43:05,268
+Şimdi sen bu grafı tanıyamadın, tanımayabilirsin.
+
+1180
+02:43:08,588 --> 02:43:11,007
+Bu grafı çözmek istiyoruz.
+
+1181
+02:43:11,628 --> 02:43:15,287
+O zaman ben diyorum ki şu kenarı söküp atayım.
+
+1182
+02:43:15,948 --> 02:43:18,828
+Bu kenarı söküp attım, grafım bu kaldı.
+
+1183
+02:43:18,827 --> 02:43:27,227
+söktüğüm kenarın bağlı olduğu düğümleri üst üste gelecek şekilde grafı katlıyorum ve bundan çıkarıyorum.
+
+1184
+02:43:27,227 --> 02:43:34,007
+Ne olur bunu alıp bunun üzerine katlarsam bu iki üçgen yine üst üste oturur.
+
+1185
+02:43:34,747 --> 02:43:37,847
+Şu kırmızı düğüm bu kırmızı düğümün üstüne gelir bu.
+
+1186
+02:43:38,567 --> 02:43:41,627
+A bunu tanıyorum. Bu bir Z graf.
+
+1187
+02:43:41,627 --> 02:44:06,747
+Aslında bunu da tanıyorsunuz. Dersiniz ki bu da iki tane z graf ortak bir kenarla bağlanmış. Veya tanımıyorsunuz. Bilmiyorum. Bakın ben ne yapmışım? Yöntemimi kullanmışım. İki tane üçgen grafa bölüp ortak olan kenar olduğu için kenara vermişim.
+
+1188
+02:44:06,747 --> 02:44:30,387
+Bunu böyle yapmak zorunda mısın? Hayır. Sen istiyorsan şu kenarı diyelim ki çıkardın. Bu ne olarak kalır sana? Şöyle bir şey olarak kalır. Bu olur. Eksi. Sonra bu çıkardığın kenarı bunun üzerine katladığın vakit sana şu kalır. Şu gelir.
+
+1189
+02:44:31,700 --> 02:44:57,279
+bunu biliyorum demiştin ama bunu bilmiyorsun. Bir sonrakinde bunu çözersin. Bir sonrakinde bunu çözerken şunu çıkarırsın. O zaman ne olur? Bir tane şey kalır, yukarıda nokta. Şöyle bir üçgen kalır. Eksi. Çıkardığın kenarın düğümlerini birleştirirsen bu bunun üzerine gelir ve burada bir tane üçgen kalır.
+
+1190
+02:44:57,279 --> 02:45:13,019
+oturup bunu çözersin bu çözdüğünü buraya koyup bundan çıkarır bunu çözersin bu çözdüğünü de alır bunun yerine geldiği için buraya koyarsın bunu koyarsın ve sonucu alırsın.
+
+1191
+02:45:13,019 --> 02:45:27,100
+Şimdi benim işlemim tabii ki çok kolay oldu bunu gördüm var olduğunu bu bir z graf x x eksi 1 x eksi 2 iki tane var karelerini aldım bölü x eksi x eksi 1 dedim
+
+1192
+02:45:27,099 --> 02:45:31,159
+Şurayı silelim
+
+1193
+02:45:31,159 --> 02:45:37,539
+Bu üstler atlar birbirini götürdü, yukarıda bu kaldı
+
+1194
+02:45:37,539 --> 02:45:42,219
+Eksi, şurası yine x graf, x, x, eksi bir, x, eksi iki
+
+1195
+02:45:42,219 --> 02:45:46,619
+Ortak parantezi aldım, buradan x, eksi iki, buradan bir geldi
+
+1196
+02:45:46,619 --> 02:45:50,339
+Burası x, eksi üç oldu, bunları açtım
+
+1197
+02:45:50,339 --> 02:45:52,280
+Yine bu sonuç çıktı
+
+1198
+02:45:52,280 --> 02:45:55,499
+Çünkü bu da bir k grafı
+
+1199
+02:45:55,499 --> 02:45:59,999
+her düğüm kendisinin dışındaki olan bütün düğümlere bağlı.
+
+1200
+02:45:59,999 --> 02:46:11,999
+Sen bunun k grafı olduğunu görüp hemen şu pi eşittir, k eşittir sıfırdan n-1'e kadar x-k'dan dırt diye bunu yazıp çıkarabilirdin.
+
+1201
+02:46:13,139 --> 02:46:21,199
+Ya da bunun k grafını görmüyorsan işte bu şekilde bölüp bunun parçalanabilir olduğunu görüp işi buradan kotarabilirdin.
+
+1202
+02:46:21,200 --> 02:46:28,899
+bunu da unuttun. O zaman bunları tek tek tanıdığım bir graf oluncaya kadar devam ettirildi.
+
+1203
+02:46:32,219 --> 02:46:38,860
+Şimdi son örnek vereceğim. Olayı biraz daha zorlaştırıyorum.
+
+1204
+02:46:40,920 --> 02:46:46,860
+Bir graf geldi. Bu bir kar grafı değil. Çünkü her düğüm diğer düğümle bağlı değil.
+
+1205
+02:46:46,860 --> 02:46:54,320
+mesela 1, 4 ile bağlı değil. 3, 2 ile bağlı değil. Bu bir k grafı değil. Bunu tanıdığım graf haline getireceğim.
+
+1206
+02:46:54,860 --> 02:47:05,680
+Öncelikle 2 ile 4 arasındaki kenarı koparmışım. Bakın buna ben karar veriyorum. Şöyle bakıyorum yani tanıdık bir grafa nasıl benzetebilirim?
+
+1207
+02:47:05,680 --> 02:47:16,060
+Hangi kenarları koparırsam benzeyebilir diye. Kopardım, mavi yaptık, sonra aldık bu mavileri birleştirdik ve bu etti.
+
+1208
+02:47:16,860 --> 02:47:19,100
+Aslında demin bunu çözdüm
+
+1209
+02:47:19,796 --> 02:47:37,796
+bu zaten bir k-grafı k-grafının da formülü biliyorsan bunu oturur hemen koyarım. O yüzden bunu çözmekte uğraşmıyorum. Bunun k-grafı olduğunu gör. Görmediysen bir önceki slide'da nasıl çözdüysek öyle çöz. Ama bunu tanımıyorsun.
+
+1210
+02:47:37,796 --> 02:47:43,575
+Şimdi bana diyebilirsiniz ki hocam bize bir cönden göndermiştiniz.
+
+1211
+02:47:43,575 --> 02:47:48,316
+İşte şuna şu parça bir kenarla bağlı.
+
+1212
+02:47:48,955 --> 02:47:52,196
+Bu parça da bununla bir kenarla bağlı.
+
+1213
+02:47:52,676 --> 02:47:55,855
+Bunların üçü de bir tane şeyle bağlı.
+
+1214
+02:47:56,696 --> 02:47:57,796
+Bu yuvarlakla.
+
+1215
+02:47:58,175 --> 02:48:01,115
+Çizgisel ve noktasal graflarla bağlı.
+
+1216
+02:48:01,296 --> 02:48:03,575
+Bunları o şekilde bölebilir miyim diye.
+
+1217
+02:48:03,995 --> 02:48:06,976
+Hata yapma olasılığımız artabilir.
+
+1218
+02:48:06,976 --> 02:48:12,516
+çünkü burada çok fazla yani 3 tane graf var, 2 tane graf yok.
+
+1219
+02:48:12,796 --> 02:48:19,496
+Hem çizgiyle bağlananlar var birbirine hem de noktasal grafla bağlananlar var.
+
+1220
+02:48:19,996 --> 02:48:24,175
+Bir tanesini eksik yazsan işlem sonucunda sonucun gider.
+
+1221
+02:48:24,175 --> 02:48:27,415
+O yüzden daha ılınlı davranalım.
+
+1222
+02:48:27,796 --> 02:48:28,656
+Bunu çözeceğim.
+
+1223
+02:48:29,096 --> 02:48:30,935
+Şu kenara bu sefer atayım diyorum.
+
+1224
+02:48:31,535 --> 02:48:32,956
+Bu kenarı çıkardım.
+
+1225
+02:48:33,275 --> 02:48:34,296
+Şunu elde ettim.
+
+1226
+02:48:34,296 --> 02:49:00,815
+sonra bu kırmızıları birleştireceğim. Bunu geldim. Bunun üzerine birleştirdim ve karşıma bu geldi. Tamam. Bunu hatırladığım kuralla yapabilirim. İki tane graf. Ortak bir çizgisel noktam var. Bunu da çözebilirim. Bunu bir daha kesip bölmeme gerek yok ama bunu tanımıyorum. O zaman bunu aşağıya alıyorum. Şu grafı silimliyorum.
+
+1227
+02:49:00,815 --> 02:49:29,415
+bu kenarı sileyim diyorum. Bu kenarı sildim. Şurada boşlukta kaldı bir tane nokta. Sonra bunu birleştirdim. Eksiyle çıkardım. Şimdi bunu tanıyorum. Bu neydi? İki tane graf, bir tane çizgisel graf. Bu da bir, evet bu da aynısı. Ve burada da bir noktalı graf var.
+
+1228
+02:49:29,415 --> 02:49:41,395
+Şimdi şöyle bir şey yapalım. Şunların hepsine A diyelim. Yani bir sürü işlem kalabalığı olmasın. Bunları A gibi düşünelim. En son da A'nın yerine bunu koyalım.
+
+1229
+02:49:41,395 --> 02:49:58,255
+Şimdi şu bir A, şu ise ne? Noktasal graf yani x. Burası ne oldu? A x eksi A. Burası ne olur? A ortak parantezinde x eksi 1 olur.
+
+1230
+02:49:58,255 --> 02:50:17,335
+Öyleyse bunun yerine ben neyi yazıyorum? A x-1'i yazdım. Bu da A'dı. Eksi A'yı koydum. A x eksi A eksi A. A x eksi 2 A. A ortak parantesine koydum. x eksi 2
+
+1231
+02:50:17,335 --> 02:50:28,175
+Demek ki bunun kromotik polinomu şu an için bu. Bunu aldım. Şurada yerine koydum. Şurada yerine koydum. Bu
+
+1232
+02:50:28,175 --> 02:50:44,755
+bu, eksi, bunu oturup bir daha çözmüyorum ön sayfada vardı ya da bunun k graf olduğunu gördün otomatikman bunu yazdın çarptın böldün karşına bu çıktı bu bulduğum doğru mu?
+
+1233
+02:50:44,788 --> 02:50:54,387
+beş tane düğümü olacak grafın, iki dört beş düğümü. Sekiz tane kenarı olacak, dört içeride var, dört dışarıda var, sekiz kenarı.
+
+1234
+02:50:54,387 --> 02:51:04,788
+Sabit sayısı olmayacak, yok. Önü bir olacak, evet bir. İşaretler artı, eksi, artı, eksi, artı diye gidecek, tamam.
+
+1235
+02:51:04,788 --> 02:51:13,107
+en son kas sayı x ile çarpılacak. Tamam. Kas sayıların toplamı sıfıra eşit olacak. Bakalım o tamam mı?
+
+1236
+02:51:15,148 --> 02:51:34,107
+14, 24 daha 38, bir daha 39, eksi 8 çıkar artı 31, eksi 31 var birbirini götürdü sıfır. Tamam polinom doğru. Peki bunu kaç renkle boyayabilirim?
+
+1237
+02:51:34,107 --> 02:52:04,088
+kaç renkte boyayacaksın? K'ya 1 vereceksin. Sıfırdan farklı mı eşit mi? 2 vereceksin. Sıfırdan farklı mı eşit mi? K'nın hangisi polinomu sıfırdan farklı bir değer yapıyorsa ben o kadar renkle boyanır ve o çıkan sıfırdan farklı sayı kaçsa o kadar da değişik şekilde boyanır.
+
+1238
+02:52:04,107 --> 02:52:12,887
+diyeceğim. İnşallah bunu yazmışımdır. Maalesef yazmamışımdır. Bunlara bu sayıları koymam lazım.
+
+1239
+02:52:12,887 --> 02:52:24,427
+Ama elimle yapsam burası kırmızı olur, burası mavi olur. Buraya kırmızı mavi koyamam. Buraya sarı koyarım. O zaman buraya mavi koyarım. Buraya da kırmızı koyarım.
+
+1240
+02:52:24,427 --> 02:52:34,048
+Yani demek ki bu K3, K3'de sıfırdan farklı bir değer bana veriyor
+
+1241
+02:52:34,048 --> 02:52:44,927
+Minimum 3 renkle boyanır, gideceğim x yerine 3'ü koyacağım, polinomun değeri kaç çıkıyorsa o kadar da değişik bir şekilde boyanır diyeceğim
+
+1242
+02:52:44,927 --> 02:53:09,987
+Bu canınız sıkılıyorsa, vaktinizde varsa oturun şu küpü minimum kaç renkte boyayabilirimin polinomunu bulun. Öyle her baba yiğidin işi değildir bunu bulmak. Bu grafın PKG'si kromotik polinomudur.
+
+1243
+02:53:09,987 --> 02:53:15,967
+Koffer'dan farklı yapan değer de bunun minimum renk sayısıdır.
+
+1244
+02:53:17,387 --> 02:53:23,448
+Evet, burada kromatik polinomlarla ilgili soracak bir şeyiniz var mı?
+
+1245
+02:53:23,448 --> 02:53:29,687
+Bakın şu gibi şeyleri unutmayın. Dışarıda kalan bu noktaları unutmayın kesinlikle.
+
+1246
+02:53:30,228 --> 02:53:35,948
+Tanıdığınız grafları kullanmaya çalışın. Oturup onları bölmeyin.
+
+1247
+02:53:35,948 --> 02:53:48,828
+Aynen bunun gibi tekrar eden patronlar varsa bunlara bir değişken ismi verip onları yürütün, en sonunda onların yerine gelmesi gereken şeyi koyun.
+
+1248
+02:53:49,067 --> 02:54:05,508
+Mesela burada A'nın yerine ben ne koydum? Şu graf neyse, bu grafın sonucu ne olacak? Böylelikle çok zor. O grafın yerine ben, o grafın çözümü neredeydi? Bu.
+
+1249
+02:54:05,508 --> 02:54:30,148
+Bu ikisinin çözümü oturdum işte bunu koydum mesela. Bu şekillerde gideceğiz. En fazla şey bilmemiz gereken noktasal grafı unutmayalım. Çizgi grafını, k grafının nasıl formülize edildiğini onları buluncaya kadar, görünceye kadar graflarımı bölmeye çalışıyorum.
+
+1250
+02:54:30,148 --> 02:54:32,748
+Evet, ben de
+
+1251
+02:54:33,620 --> 02:54:55,620
+otomatları yapmıyoruz arkadaşlar. Öteki grup da yapmamış. Vize de yok. Ama şöyle bir şey yaparız o zaman. Vizemiz bir buçuk saat falan sürer. Yarım saat vizeden sonra bir boşluk bırakırız. Bir saatte o çok uzun bir konu değil. Sonlu durum makinelerinden bahsederiz.
+
+1252
+02:54:55,620 --> 02:55:02,599
+çünkü onları da bazı başka derslerinizin içerisinde zaten daha detaylı olarak göreceksiniz.
+
+1253
+02:55:03,480 --> 02:55:08,919
+Çok da şey anlatmama, derinlik anlatmama gerek yok diye düşünüyorum.
+
+1254
+02:55:12,919 --> 02:55:15,660
+İkinci vizeyi test olacak.
+
+1255
+02:55:17,539 --> 02:55:19,399
+Adını da söyleyin.
+
+1256
+02:55:20,399 --> 02:55:23,079
+Final sınavımızda, klasik oldu.
+
+1257
+02:55:23,559 --> 02:55:25,160
+Resmim hep açık mıydı böyle?
+
+1258
+02:55:25,620 --> 02:55:28,300
+Açıktı hocam
+
+1259
+02:55:28,300 --> 02:55:32,980
+Tamam bak arkaya üniversitemi çok özledim
+
+1260
+02:55:32,980 --> 02:55:35,500
+Oradan çektiğim fotoğrafı koydum
+
+1261
+02:55:35,500 --> 02:55:37,740
+Anladınız mı?
+
+1262
+02:55:38,959 --> 02:55:40,859
+Ben bir çıksam göreceksiniz ama
+
+1263
+02:55:40,859 --> 02:55:44,560
+Maneye seçti bizim fakülteden çıkıp sola dönünce o yok
+
+1264
+02:55:44,560 --> 02:55:46,160
+Peki arkadaşlar
+
+1265
+02:55:46,160 --> 02:55:50,480
+İyi yeni yıla
+
+1266
+02:55:50,480 --> 02:55:52,980
+İnşallah sağlıklı, huzurlu
+
+1267
+02:55:52,980 --> 02:55:54,939
+Güneşli
+
+1268
+02:55:54,939 --> 02:56:00,639
+geleceği umutlu olarak başlarız diye düşünüyorum. Hoşçakalın.
+
+1269
+02:56:01,719 --> 02:56:02,300
+İyi günler.
+
+1270
+02:56:02,300 --> 02:56:02,880
+Hoşçakalın hocam.

@@ -1,0 +1,2667 @@
+1
+00:05:18,196 --> 00:05:19,948
+Güzel arkadaşlar.
+
+2
+00:05:23,891 --> 00:05:24,891
+Günaydın hocam.
+
+3
+00:05:30,995 --> 00:05:45,995
+Şimdi, bugünkü haftalık programa bakıyorum. Bugün 5 Nisan ve rastgele değer üretiminde. İyi gelenecekmişiz.
+
+4
+00:05:45,995 --> 00:05:54,539
+Ve bugün 6. hafta dersimiz, 7. 8. hafta böyle ilerleyeceğiz. Peki, tamam.
+
+5
+00:05:55,475 --> 00:06:01,115
+Şimdi o zaman rastgele değer üretimiyle başlayalım.
+
+6
+00:06:05,043 --> 00:06:08,043
+Sahtamızı açalım.
+
+7
+00:06:19,956 --> 00:06:28,115
+Şimdi, ilk önce tekrar askeri değer grütülünden bahsetmeyeceğiz.
+
+8
+00:06:31,732 --> 00:06:37,072
+Başka bir konudan bahsedip, oradan rastgele değer üretimine doğru geçiş yapacağız.
+
+9
+00:06:38,632 --> 00:06:41,912
+Şuna bir kod yazacağım.
+
+10
+00:06:43,352 --> 00:06:45,212
+Ve bu kodun
+
+11
+00:06:47,112 --> 00:06:52,092
+yapabildiği bazı şeyleri size göstereceğim daha sonra ekranı paylaşarak.
+
+12
+00:06:52,652 --> 00:06:55,152
+İlk önce koddan bahsedelim.
+
+13
+00:06:55,732 --> 00:06:57,852
+Şöyle bir şeyimiz var.
+
+14
+00:06:58,963 --> 00:07:14,884
+Yapımız var. Startla başlıyoruz. Sonra, iyi diye bir değişkenimiz olsun, bir veririm ona başlamış da. Daha sonra,
+
+15
+00:07:21,300 --> 00:07:23,300
+Bu da, hıncı şöyle bu.
+
+16
+00:07:26,675 --> 00:07:35,675
+kullanıcıların ilk önce m ve s diye iki tane değişken alalım. Sonra bunları kullanarak bir şey ilerleyeceğiz.
+
+17
+00:07:35,675 --> 00:07:51,675
+j eşittir, birden baştan birer birer m'ye kadar gitsin. İçeride de y eşittir i çarpı s.
+
+18
+00:07:56,403 --> 00:07:58,403
+...
+
+19
+00:08:03,444 --> 00:08:09,804
+Sonra, birleştirdiği bir fonksiyon çağıracağım.
+
+20
+00:08:10,684 --> 00:08:15,484
+Ki fonksiyonu burada biraz kabaca olarak kabaca anlatacağım.
+
+21
+00:08:16,964 --> 00:08:29,043
+Asıl fonksiyonları haftaya daha net işleyeceğiz ama yani zaten fonksiyonların ne yaptığını çok temelde biliyorsunuz.
+
+22
+00:08:29,620 --> 00:08:32,620
+Burada da işimiz bitecek.
+
+23
+00:08:34,620 --> 00:08:43,620
+Şimdi burada kullanıcıdan arkadaşlar, M ve S iki tane değişken alınıyor ve I işitleri birden başlatıyor. Bu I ile alakalı bir şeyler yapacağız.
+
+24
+00:08:43,620 --> 00:08:56,299
+J'yi birden M'ye kadar götürüyoruz ve içeride de yani for'un içerisinde de bir I diye bir şey hesaplanıyor. Bu I ile S'nin çarpımı ve mod M'i alınarak.
+
+25
+00:08:56,307 --> 00:09:06,908
+Sonra birleştir diye bir fonksiyona yi virgül i diye bir şey gönderiliyor. Yani i başlangıçta birdi, sonra yi burada bir şey olacak, ne bileyim, 3-5, bir rakam olacak belli.
+
+26
+00:09:06,908 --> 00:09:15,508
+3-5 diye bir şey gönderiliyor. Daha sonra i eşitir, yi yapılıyor. Ve tekrardan yeni bir yi hesaplanıyor.
+
+27
+00:09:15,508 --> 00:09:22,908
+O, yani eski yi ile yeni yi arasında bir birleştir diye bir fonksiyon çağırıyor.
+
+28
+00:09:23,796 --> 00:09:27,796
+Şimdi bu fonksiyon nasıl bir fonksiyon, ondan bahsedeyim.
+
+29
+00:09:29,296 --> 00:09:34,796
+Fonksiyon şöyle bir şey yapıyor. Bizim diyelim ki bir dairemiz var.
+
+30
+00:09:36,296 --> 00:09:44,796
+Ve bu daireyi ben diyelim ki m adet parçaya yayılmışım.
+
+31
+00:09:46,292 --> 00:09:52,612
+Parçalarken de hani şeyler, mesela şöyle şöyle küçük parçalar bunlar. Tamam böyle.
+
+32
+00:09:54,211 --> 00:09:55,892
+Her bir parça.
+
+33
+00:09:57,091 --> 00:09:59,372
+Nokta var elimizde böyle.
+
+34
+00:10:00,731 --> 00:10:01,532
+Tamam.
+
+35
+00:10:01,932 --> 00:10:08,812
+Burada böyle M adet nokta var. Eşit uzaklıklı bunlar birbirlerine. Bir dairenin üzerinde.
+
+36
+00:10:09,692 --> 00:10:12,491
+Noktalar verilmiş. Tamam.
+
+37
+00:10:13,460 --> 00:10:26,860
+Ve bu noktaların her birinin koordinatlarını biliyorum ben. Yani işte mesela bu 1 olsun, bu 2 olsun, böyle 3 olsun, bu 4 olsun, 5 böyle gidiyor gidiyor gidiyor.
+
+38
+00:10:26,860 --> 00:10:33,460
+En son şuradaki de M olacak tamam mı? M'inci nokta. Ve ben şey de biliyorum ben, bir numaralı...
+
+39
+00:10:33,663 --> 00:10:49,943
+Kodla, x1, y1, 2'ninki de x2, y2, 3'nki x3, y3, en sonunda m'inki de xm, ym ikisi. Tamam mıyız?
+
+40
+00:10:49,943 --> 00:10:53,943
+Tamam mı buraya kadar merak takıldığınız bir şey?
+
+41
+00:11:01,203 --> 00:11:19,463
+Yok herhalde. Peki. Şimdi bu birleştirif fonksiyonu ne yapıyor onu anlatmaya çalışıyorum. Şimdi birleştirif fonksiyonu şunu yapıyor. İki tane değer veriyoruz ona. Bakın. Bir tanesi i'ye i, bir tanesi i. Yaptığı şey şu.
+
+42
+00:11:20,115 --> 00:11:27,355
+Y inci koordinattaki nokta ile inci koordinattaki noktanın arasında bir çizgi çekiyor.
+
+43
+00:11:27,355 --> 00:11:40,796
+Yani örnek vermek gerekirse, birleştir, iki, beşi çağırırsam ben, bunun yapacağı şey şu olacaktır.
+
+44
+00:11:40,796 --> 00:11:44,843
+Buradaki iki ile beşin arasında bir çizgi çekecek.
+
+45
+00:11:46,419 --> 00:11:55,419
+Ve kodun gidişatını anlayacağınız gibi, mesela bu 2 ile 5'i çağırdıktan sonra bir sonrakinde şöyle bir şey çağıracaktır.
+
+46
+00:11:55,419 --> 00:12:04,419
+Birleştir, mesela 5 ile 3 olacaktır. Mesela bir sonrakinde belki 3 ile 17 olacaktır. Bir sonrakinde 17 ile 6 olacaktır.
+
+47
+00:12:04,419 --> 00:12:09,419
+Yani hep şu kısımlar aynı olacaklar, biliyor musunuz?
+
+48
+00:12:10,063 --> 00:12:22,063
+Yani sonuç olarak, işte bu buradan şöyle bir tane çizgi çekti, ondan sonra belki böyle bir çizgi çekti, ondan sonra belki böyle bir çizgi çekti, sonra belki böyle bir çizgi çekti, sonra belki böyle bir şey çizecek, böyle bir çizgi çekti. Böyle ilerleyecek bu süreç.
+
+49
+00:12:35,539 --> 00:12:38,859
+I ile Yİ üretiliyor, daha sonra Yİ atanıyor.
+
+50
+00:12:38,859 --> 00:12:41,740
+Ve bu arada da bir birleştirme işlemi gerçekleştiriliyor.
+
+51
+00:12:43,139 --> 00:12:44,139
+Tamam mıyız?
+
+52
+00:12:47,956 --> 00:12:51,556
+Anlaştığım, şimdi...
+
+53
+00:12:55,731 --> 00:13:22,491
+Bu yaptığımız bu birleştirip fonksiyonunun böyle bir şey yaptığını düşünerek M ve S'in farklı değerleri için acaba nasıl şekiller üretilir?
+
+54
+00:13:23,124 --> 00:13:29,124
+Bundan bahsedeceğim. Bundan bahsetmek için de...
+
+55
+00:13:29,124 --> 00:13:32,124
+...şey paylaşacağım bir saniye.
+
+56
+00:13:35,124 --> 00:13:41,124
+Paylaşımı durduruyorum buradan. Öteki taraftan paylaşacağım.
+
+57
+00:13:47,796 --> 00:14:03,796
+Şu anda şeyleri görüyor musunuz? Evet hocam. Şekilleri, tamam. Şimdi şuradaki 337'ye 10 dediğimiz şey, yani M için 337, S için 10 seçersek oluşan şekil.
+
+58
+00:14:04,500 --> 00:14:12,899
+Şu gördüğünüz, 337'ye 12 seçersek oluşan şekil, 337'ye şu kod, deminki yazdığımız kodu çalıştırıyoruz sadece.
+
+59
+00:14:12,899 --> 00:14:24,500
+53'e 2 seçersek oluşan şekil. Oldukça enteresan, güzel, farklı farklı sonuçlar, patternlar falan oluşuyor gibi.
+
+60
+00:14:24,500 --> 00:14:30,899
+Mesela burada bir tane böyle bir şey oluşmuş, iki tane böyle parça oluşmuş, burada iç içe böyle bir sürü şeyler var, yapılar var.
+
+61
+00:14:31,120 --> 00:14:38,120
+Oluca enteresan şeyler sizler de deneyip, bulup görebilirsiniz. Tamam mı?
+
+62
+00:14:38,120 --> 00:14:48,120
+Yani yapmanız gereken tek şey, çizgi çizdirmek. Hangi noktan hangi noktaya çizdirdeceği de zaten şey belli.
+
+63
+00:14:48,120 --> 00:14:55,120
+Tamam mı? Niye böyle şekiller çıkıyor zaten? Onlar tamamen acı bir rica yani.
+
+64
+00:14:55,120 --> 00:14:57,803
+Şimdi...
+
+65
+00:14:58,323 --> 00:15:06,323
+Peki, biz bu şekillerden nasıl faydalanacağız? Yani bu şekillerin kendisinden değil de aslında fikirden faydalanacağız. Oraya geçelim şimdi.
+
+66
+00:15:08,323 --> 00:15:10,323
+Ağzını durduruyorum.
+
+67
+00:15:14,323 --> 00:15:16,235
+Başlıyorum yine.
+
+68
+00:15:31,028 --> 00:15:32,652
+Şimdi dönünki...
+
+69
+00:15:36,052 --> 00:15:49,052
+Şöyle bir daire vardı. Bu dairenin üzerinde birçok nokta var.
+
+70
+00:15:49,052 --> 00:16:02,052
+Ve burada işte m'in ve s'in farklı farklı değerlerine göre farklı şekiller oluştuğundan bahsettik.
+
+71
+00:16:02,484 --> 00:16:11,484
+dairenin üzerindeki tanımlanmış olan noktaların hepsinden geçip geçmeyeceğini bir düşünem. Yani şunu demek istiyorum.
+
+72
+00:16:11,484 --> 00:16:25,484
+Mesela biz buradaki m'i 300 belirledik. Tamam, m 300 olsun. Şimdi S'in bazı değerleri için bu 300 noktanın hepsine uğranıyor.
+
+73
+00:16:25,875 --> 00:16:29,875
+Ama bazı değerleri için çok daha az bir kısmına uğranıyor.
+
+74
+00:16:29,875 --> 00:16:43,875
+Yani diyelim ki M300 iken, S'in atıyorum 12 seçimi, bunu hatta mesela şey sallıyorum şu anda, S12 seçersem, bu 300 noktanın belki 150 tanesine uğranıyor.
+
+75
+00:16:43,875 --> 00:16:51,371
+Ama mesela bunu 17 seçersem, 300'e 17 seçersem, bu 300 noktanın 290'ına uğranıyor.
+
+76
+00:16:51,764 --> 00:16:57,364
+Ya da belki 300'üne uğrayalım. Mesela 19 için de diyelim ki sallıyorum tamamen.
+
+77
+00:16:57,364 --> 00:17:03,563
+300'üne birden yarışılıyor buradaki noktaları. Tamam, tık tık tık tık tık tık geziniyorsunuz burada işte böyle.
+
+78
+00:17:03,563 --> 00:17:08,364
+Şöyle şöyle bir şeyler yapıyorsunuz sürekli. Tamam. Onun sonucunda enteresan bir şekilde çıkıyor.
+
+79
+00:17:08,364 --> 00:17:10,963
+Ama şu anda bizim ilgilendiğimiz kısım bu.
+
+80
+00:17:11,087 --> 00:17:20,087
+300'lik 300 tane parçaya ayırdık ya, burada da. Bu 300 tanenin bir kısmına erişilip bir kısmına erişilemediğinden bahsediyoruz.
+
+81
+00:17:20,087 --> 00:17:31,087
+Tamam mı? Şimdi dairenin etrafının çok fazla dolmasını istediğimizi düşünelim. Yani ne demek istiyorum?
+
+82
+00:17:36,435 --> 00:18:00,435
+300 tane noktanın 300'üne de eriştiren, öyle söyleyelim, bir S bulduğunuz için. Gerçi bu S tek başına yeterli değil. Yani M ve S'in birlikte uyum içinde olması lazım. Öyle söyleyeyim. Tamam mı? Hepsine birden erişilip erişilmemesini sağlaması için uyum içerisinde olması lazım. Öyle uyum içerisinde olan M ve S'ler var ki...
+
+83
+00:18:00,435 --> 00:18:01,715
+Tamam.
+
+84
+00:18:02,579 --> 00:18:14,579
+Yani öyle uyum içerisinde olan m ve s'ler var ki, burada ben bunları kullanarak, ben bu m tane noktanın m tanesine erişebiliyorum. Tamam.
+
+85
+00:18:14,579 --> 00:18:25,579
+m tane noktanın m tanesine erişebiliyorum. Bunlar özel sayılar. Daha sonra konuşacağız.
+
+86
+00:18:32,596 --> 00:18:58,996
+M tanesine erişebiliyorum derken, bunun anlamı ne demek? Yani bu ne anlama geliyor? Benim elimde birden M'e kadar olan sayılar var. Tamam mı? Ve ben, şimdi süreci hatırlarsam, süreç şöyle bir şeydi. Kod anlamında demek istiyorum. Büyük halde bir for vardı, içeride asıl iş yürüyordu.
+
+87
+00:18:59,635 --> 00:19:18,835
+i başlangıçta birden başlıyordu. yi eşittir i çarpı s mod m diyordu. Değil mi? Birleştir boş vermişim şimdilik. Daha sonra da i eşittir yi diyordu değil mi? Kod böyle bir şeydi.
+
+88
+00:19:25,748 --> 00:19:46,748
+Tamam mı? Şimdi ben mesela diyelim ki 3 oldu, sayıları sallıyorum şu anda. 3 oldu, 7 oldu, 19 oldu, 42 oldu, ondan sonra 3 gelirse. Bundan sonra gelen sayı ne olur söyleyebilir misiniz?
+
+89
+00:19:56,500 --> 00:20:01,500
+Bakın, 3 gelmiş, sonra 7 gelmiş, sonra 19 gelmiş, sonra 42 gelmiş, sonra 3 gelmiş, sonra ne gelir?
+
+90
+00:20:01,500 --> 00:20:04,000
+7-19 tekrarlanır yani.
+
+91
+00:20:04,000 --> 00:20:06,500
+Kesinlikle bundan sonra ne gelecektir?
+
+92
+00:20:06,500 --> 00:20:11,000
+7 gelecektir, 19 gelecektir. Çünkü her bir sayı kime bağlı?
+
+93
+00:20:14,355 --> 00:20:21,756
+Bir önceki ne bağlı değil mi? Başka bir şey yok. Her bir sayı bir önceki ne bağlı. Çünkü her bir sayıyı kendisinden bir önceki sayıdan üretiyoruz.
+
+94
+00:20:21,756 --> 00:20:32,756
+i'den üretiyoruz. S seçer, bu. Emek yöre moduna alıyoruz ve yeni i. Tamam. O zaman tekrardan şeye dönerim.
+
+95
+00:20:36,788 --> 00:20:47,788
+Eğer ki birden başlayıp, yani şu özelliğe sahip olan bir yapım varsa elimde, bakın şu özelliğe sahip olan bir yapım varsa elimde, bunun anlamı nedir, bunu kavramaya çalışıyorum.
+
+96
+00:20:47,788 --> 00:20:56,788
+Yani öyle MS ikilleri var ki, bu süreci uyguladığımda ben M tane farklı sayıya erişebiliyorum. Tamam.
+
+97
+00:20:58,644 --> 00:21:16,644
+O zaman ben birden başlıyorum, ondan sonra bir şey oluyor, 7 geliyor, sonra 42 geliyor, sonra işte m-2 geliyor, bilmiyorum o emin ne olduğunu şu anda çok emin değilim ama şurada en azından 44'den daha küçük olmayacağını biliyorum.
+
+98
+00:21:16,644 --> 00:21:21,644
+Belki bir yerlerde m-1 geliyor, sonra bir şeyler geliyor, belki bir yerlerde m geliyor.
+
+99
+00:21:22,132 --> 00:21:29,372
+Ondan sonra bir yerde de bir geliyor. En sonunda bir yerlerde bir geliyor. Yani en sonunda bir bir geliyor. Bir şeyden sonra.
+
+100
+00:21:38,996 --> 00:21:42,756
+Ondan sonra ne geleceğini biliyor muyum ben bu noktadan sonra?
+
+101
+00:21:46,548 --> 00:22:08,228
+7 gelecek, 42 gelecek. Değil mi? Böyle gidecek bu. Peki burada kaç tane rakam olduğunu söylüyorum ben? Şurada pardon. Şu özelliğe sahip bir yapıda. Kaç tane rakam var burada?
+
+102
+00:22:14,259 --> 00:22:29,940
+Sayı var daha doğrusu rakam demeyeyim. M tane mi? M tane var değil mi? Şu özelliğe sahipse, bakın öyle MS2'leri var diyorum ki, bunu kullandığınızda bu süreci yaparak siz M tane farklı sayıya erişiyorsunuz. Tamam.
+
+103
+00:22:29,940 --> 00:22:36,579
+Herhangi bir yerde bu M'den daha küçük bir yerde kesilirse bu, yani M'den daha küçük bir yerde kesilirse zaten...
+
+104
+00:22:37,811 --> 00:22:42,172
+O durumdan itibaren ne yapacak? Tekrar etmeye başlayacak kaldığı yerden itibaren.
+
+105
+00:22:42,172 --> 00:22:50,811
+Yani şuradaki gibi mesela. Mesela burada şehit süreci 5. Pardon, 1, 2, 3, 4. 4.
+
+106
+00:22:50,811 --> 00:22:57,811
+Tamam mı? Bakın. 4'ün anlamı şu. Birinci ile beşinci aynı olacak demek bu. Tamam mı?
+
+107
+00:22:57,811 --> 00:23:01,811
+Birinci ile beşinci üreten sayı aynı olacak. İkinci ile altıncı üreten sayı aynı olacak.
+
+108
+00:23:03,092 --> 00:23:13,932
+M olduğu zaman bunun anlamı ne olacak? Birinci ile M artı birinci üretilen sayı aynı olacak demek. İkinci ile M artı ikinci üretilen sayı aynı olacak demek.
+
+109
+00:23:13,932 --> 00:23:23,852
+Tamam mı? Dolayısıyla şu M uzunluğunda bir sayı dizisi var burada ki o sayı dizinin içerisinde hiçbir rakam ne yapmıyor?
+
+110
+00:23:28,180 --> 00:23:55,180
+Ne yapmıyor? Tekrar etmiyor. Tekrar etmiyor. Aynen öyle, süper. Yani ben öyle bir mekanizma kurdum ve o mekanizmaya öyle parametreler ayarladım ki, ben o mekanizmayı çalıştırdığımda birden m'e kadar olan sayılar karışık bir şekil...
+
+111
+00:23:55,763 --> 00:24:10,763
+D üretiliyor. Tamam mıyız? Kurduğumuz mekanizmayı kavradık mı ne yaptığını? Ben öyle bir mekanizma kurdum ki, M ve S diye seçtim onları, rakamlar da belirledim.
+
+112
+00:24:10,763 --> 00:24:18,763
+1 ile M arasında karışık bir şekilde sayan, 1'den M'e kadar olan sayıları karıştırarak bana üretiliyor. Tamam mıyız?
+
+113
+00:24:26,996 --> 00:24:28,016
+Şimdi...
+
+114
+00:24:31,347 --> 00:24:33,347
+Peki bu ne anlama giriyor hala?
+
+115
+00:24:41,683 --> 00:24:42,683
+Buğurt a ben.
+
+116
+00:24:48,372 --> 00:25:00,372
+Bu emlik sürecin içerisinde hiç tekrarlı bir şey görmeyeceğim. Değil mi? Hiç tekrarlı, hiçbir şey yok burada. Her şey tekil. Tamam.
+
+117
+00:25:00,372 --> 00:25:12,372
+Yani burada her bir sayının bu emlik uzunluktaki dizinin içinde bulunma olasılığı aynı.
+
+118
+00:25:14,420 --> 00:25:25,420
+Yani bazı rakamlar diğerlerinden, pardon, bazı sayılar diğerlerinden daha fazla tekrar etmiyorlar. Bütün sayıların var olma olasılıkları onun içerisinde aynı var.
+
+119
+00:25:25,420 --> 00:25:27,420
+Tamam mı?
+
+120
+00:25:27,420 --> 00:25:42,348
+Eğer ki mesela şey olsaydı, bu sayı dizisinin içerisindeki sayıların yüzde ellisi üç olsaydı mesela, yüzde ellisi üç.
+
+121
+00:25:42,740 --> 00:25:46,340
+Diğerleri de karışık bir şekilde küçük küçük daha olucu küçük olsaklar.
+
+122
+00:25:46,340 --> 00:25:57,740
+Ben burada bu üç sayısının bu dizinin içinde yani bu mekanizma sayı üretiyor. Tamam mı?
+
+123
+00:25:57,740 --> 00:26:02,740
+Şu anda öyle bir şey oluşturduk aslında. Sayı üreten bir mekanizma oluşturduk bakın.
+
+124
+00:26:02,740 --> 00:26:06,700
+Bu üretilen sayıların...
+
+125
+00:26:07,251 --> 00:26:13,251
+Mesela 3 %50 olasılıkla üretiliyor, diğerleri daha küçük küçük olasılıklarla üretiliyor.
+
+126
+00:26:13,251 --> 00:26:20,251
+Benim bu mekanizmanın ürettiği sayıyı tahmin etme ihtimalim ne olurdu? %50 olurdu.
+
+127
+00:26:20,251 --> 00:26:30,251
+Çünkü ben 3 derdim ve her zaman ne derdi ona? %50 ihtimalle bu mekanizmanın ürettiği sayıyı ne yapabilirim?
+
+128
+00:26:30,251 --> 00:26:32,251
+Doğru tahmin edebilmiş olurdu.
+
+129
+00:26:33,299 --> 00:26:50,799
+Ama bütün sayılar birer kez geçtiği durumda, bakın bütün sayılar birer kez geçiyorsa burada, benim bir sayıyı, yani bu mekanizmanın ürettiği bir sayıyı tahmin etme olasılığım ne olacaktır? M'ye bağlı olarak.
+
+130
+00:27:02,836 --> 00:27:13,836
+Bir bölüme. Bir bölüme olacak değil mi? Aynen öyle. Bütün sayılar birer kese tekrar ediyorsa, ben de sağlayacağım bir sayı. Benim tutturma ihtimalim bir bölüme.
+
+131
+00:27:13,836 --> 00:27:29,836
+M ne kadar büyük olursa, bu bahsettiğimiz sayı tutturma olasılığında o kadar küçük olacaktır. İyi, güzel. Yani benim bir mekanizmam var, sayı üretebiliyor.
+
+132
+00:27:30,259 --> 00:27:44,759
+ve üreteceği sayının ne olacağını ben önceden M'de yeterince büyük bir rakamsa önceden pek pek iyi bir şekilde tahmin edemiyorum. Tamam mı?
+
+133
+00:27:49,011 --> 00:27:54,011
+Bu mekanizma, bahsettiğiniz mekanizma arkadaşlar,
+
+134
+00:28:03,476 --> 00:28:30,796
+Rastgele sayı üretme. Tamam. Bu da en bahsettiğim, şu ana kadar konuşurumda her şey. Şurada bahsettiğimiz mekanizma, şuradaki yaptığı iş, buradaki özel M ve S değerleri. Bunların hepsi aslında şey referansörler. Bilgisayarlarda rastgele sayı nasıl üretilir?
+
+135
+00:28:31,251 --> 00:28:42,531
+Tamam mı? Şimdi birisine sorsanız, aklından bir sayı tut diye, o bir şey tutabilir.
+
+136
+00:28:44,672 --> 00:28:49,251
+Bilgisayar aklından bir sayı tut diyoracağız, bilgisayar aklından nasıl sayı tutsun?
+
+137
+00:28:51,652 --> 00:28:58,371
+Bilgisayarın aklından sayı tutması, şurada gördüğümüz süreçte mümkün olacak.
+
+138
+00:28:59,251 --> 00:29:26,251
+Peki, iyi güzel, rastgele sayı üretimi dedik. Herhangi bir sayın ürettiği bir sayının ne olacağını M büyükse çok kolay tahmin edemiyoruz dedik. İyi güzel. Ama tabi burada şöyle bir şey var. Ben bana bir sayı üret diyorum mesela, o sayı üretiyor.
+
+139
+00:29:27,508 --> 00:29:39,508
+Bakıyorum, yedi diye bir şey üretti. Onun bir sayı daha üretti dediğim zaman, yediden sonra üreteceği sayıyı...
+
+140
+00:29:44,147 --> 00:29:57,147
+Atıyorum, 9 diye bir şey öğretti. Ondan sonra bir sayı daha öğret dedim, 3 üretti diyelim ki. Sonra bir sayı daha öğret dedim, 7 üretti. Şimdi 7'den sonra ne öğreteceğini hep biliyorum değil mi?
+
+141
+00:29:57,147 --> 00:30:06,147
+Yani, evet, oldukça uzun bir süreç var.
+
+142
+00:30:06,688 --> 00:30:20,067
+Ama yani yedi, işte altı, üç, dokuz, böyle gidiyor bu. Belli bir yerde bir yedi üretecek bu. Burasının en uzunluğunda olduğundan bahsettik. Yedi üretti, yediden sonra ne geleceğini aslında ben biliyorum.
+
+143
+00:30:20,067 --> 00:30:30,688
+Şöyle biliyorum. Ama bunu biliyor olmam, şuradaki M dediğimiz şeyin uzunluğuna bağlı olarak çok da önemli değil aslında.
+
+144
+00:30:31,796 --> 00:30:48,796
+Sayılar bana M yeterince büyükse, M zaten kullanıcı olarak siz bilmiyorsunuz, M yeterince büyükse, kullanıcı olarak bana sayılar sanki rastgele geliyorlarmış gibi görünecek.
+
+145
+00:30:48,796 --> 00:30:54,796
+M küçük olursa, M'in küçük olduğu durumda mesela diyelim ki M6 olsun.
+
+146
+00:30:54,796 --> 00:30:57,612
+Tamam, yine bir tane tahta açalım.
+
+147
+00:30:58,675 --> 00:31:14,776
+Mesela diyelim ki M6 olsun tamam mı? M6 olduğunda bir sayı üret diyeceksiniz mesela. O diyeceksiniz, 6 ürettim. Bir sayı üret diyeceksiniz, 1 ürettim. Bir sayı üret diyeceksiniz, 4 ürettim. Bir sayı üret dedim, 3 dedim. Bir sayı üret dedim, 5 dedim. Bir sayı üret dedim, 2 dedim. Bir sayı daha üret dedim.
+
+148
+00:31:17,364 --> 00:31:21,364
+6 üretecek, bir sayı daha üretelim, 1 üretecek, 4 üretecek, 3 üretecek.
+
+149
+00:31:21,364 --> 00:31:29,364
+Ve siz şu diziyi gözlemleyerek, şu diziyi gözlemleyerek, kullanıcı olarak ne yapabilirsiniz?
+
+150
+00:31:29,364 --> 00:31:36,364
+Neyden sonra neyin gelişeni? Anlayabilirsiniz değil mi?
+
+151
+00:31:36,364 --> 00:31:42,364
+Mesela örnek veriyorum, bilgisayarda tavla oyunu yapıyorsunuz. Tamam mı?
+
+152
+00:31:42,364 --> 00:31:45,163
+Tavla oyunda neye ihtiyacınız var? Zara ihtiyacınız var.
+
+153
+00:31:46,099 --> 00:31:53,539
+Zar atma fonksiyonuna ihtiyacınız var. Zar atma fonksiyonunuzu rastgele bir sayı üretici olması lazım.
+
+154
+00:31:53,539 --> 00:32:09,139
+Ama rastgele bir sayı üreticinin aslında deminki gibi gerçekleyeceğiz. Deminki gibi gerçeklediğimizde m'in 6 olduğu durumda rastgele bir sayı üreticinden zarlar gelmeye başlayacak.
+
+155
+00:32:09,556 --> 00:32:25,556
+Kullanıcı bir atacak, zar atlayacak, altı gelecek. Sonra bir daha atacak, işte bir gelecek. Bir daha atacak, dört gelecek, üç gelecek, beş gelecek, iki gelecek. Ondan sonra bir daha altı gelecek. Sonra bir gelecek, dört gelecek. Ondan sonra kullanıcı artık neyin farkında varacak? Bu zarların neyi var? Bir.
+
+156
+00:32:29,940 --> 00:32:34,440
+Bir pattern var değil mi? Yani şundan sonra şu geliyor, şundan sonra şu geliyor, şundan sonra şu geliyor.
+
+157
+00:32:34,440 --> 00:32:39,640
+Bu yakalandığı anda artık sizin zar simülasyonunuz ne olmaz?
+
+158
+00:32:39,640 --> 00:32:48,940
+Hiçbir şekilde gerçekçi olmaz. Değil mi? Anladık mı?
+
+159
+00:32:48,940 --> 00:32:55,940
+Aslında demeye çalıştığım şey şöyle bir şey. Bilgisayarlarda
+
+160
+00:32:57,236 --> 00:33:01,916
+gerçek rastgele sayı üretmek mümkün değildir.
+
+161
+00:33:03,236 --> 00:33:08,916
+Sadece kullanıcılara ya da işte ne kullanacaksa onu...
+
+162
+00:33:09,587 --> 00:33:23,307
+Kullanıcılara gerçekmiş illüzyonu oluşturmak mümkündür. Yani gerçekmiş derken rastgeleymiş. Yani gerçekmiş derken rastgele illüzyonu oluşturmak mümkündür.
+
+163
+00:33:23,307 --> 00:33:30,587
+Peki rastgele illüzyonu nasıl oluşturdu? Rastgele illüzyonu aslında tamamen M'in büyüklüğü ile alakalı bir şey.
+
+164
+00:33:34,612 --> 00:33:44,612
+Bir oyunun içerisinde zar atıyorsunuz birçok kere ve burada ne oluyor? Belli bir yerden sonra bir şeyler tekrar ediyor ve M6 iken siz bunu ne yapabiliyorsunuz?
+
+165
+00:33:44,612 --> 00:33:54,612
+Kullanıcı olarak bunu çok rahat bir şekilde gözlemleyebilirsiniz. Ama M'in mesela 600 milyon olduğunu düşünün. Sallıyorum. Tamam.
+
+166
+00:34:02,771 --> 00:34:06,771
+Mümkün değil. Tamam mı?
+
+167
+00:34:07,771 --> 00:34:15,692
+Yani rastgele, sürecin rastgele olmadığının farkına varmanız, gerçek süreç zaten rastgele değil.
+
+168
+00:34:15,731 --> 00:34:43,511
+Bilgisayarlarda rastgele sayı üretemiyoruz. Öyle bir mekanizmamız yok. Sadece sözde rastgelelik. Mümkün bilgisayarlarda. O da, demin bahsettiğim gibi, herhangi bir sayının tahmin edilebilirliği ile alakalı bir şey. Tahmin edilebilirliği, siz bir bölü M'e indirdiğinizde, bir bölü M'e indirdiğinizde tahmin edilebilirliği minimuma çekmiş olursunuz. M'de 600 milyon gibi yani çok büyük bir rakam olduğunda sayının tahmin edilebilirliğini ne yapmış olursunuz?
+
+169
+00:34:43,731 --> 00:35:01,132
+Korkunç derecede aşağıya indirmiş oluyoruz. Burada M600 milyonken bir kullanıcının bunun farkına varması ve şu noktadan sonra şu gelecek falan gibisinden bir çetelesini tutması pek mümkün bir şey değil.
+
+170
+00:35:01,132 --> 00:35:09,331
+Böyle bir şey istenirse tabii ki yapılabilir, yapılacak bir şey ama buradaki bizim derdimiz ne? Rastgele diye simüle etmeye çalışıyoruz sadece.
+
+171
+00:35:09,556 --> 00:35:17,556
+Yoksa gerçek rastgeleliği dediğim gibi bilgisayarlarda üretmek mümkün değil.
+
+172
+00:35:19,556 --> 00:35:24,556
+Gerçek rastgeleliği nasıl üretilir, onun üzerine kafa yorun. Bilgisayarlarda değil.
+
+173
+00:35:24,556 --> 00:35:32,556
+Yani gerçekten rastgele sayılar nasıl üretirsiniz, onun üzerine birazcık düşünün, araştırın, güzel bir konu.
+
+174
+00:35:32,556 --> 00:35:36,556
+Dedim ki bilgisayarlarda neden yapamadığımızda o zaman birazcık şey yaparız.
+
+175
+00:35:37,204 --> 00:35:51,115
+Şimdi peki, iyi güzel, ben rastgele sayı üreten bir, rastgeleymiş gibi görünen daha doğrusu bir süreç buldum. İyi güzel. Bu süreç...
+
+176
+00:35:55,284 --> 00:35:59,284
+Mesela kodu hatırlarsak...
+
+177
+00:35:59,284 --> 00:36:01,284
+Şuradan tekrar geri geri...
+
+178
+00:36:06,612 --> 00:36:08,612
+Şimdi şurada...
+
+179
+00:36:11,612 --> 00:36:12,612
+Pardon...
+
+180
+00:36:19,476 --> 00:36:28,476
+Şimdi İ'yi 1 yapmıştık. Değil mi? İ'yi 1'di. Yani İ'yi 1 yaptığımda aslında bütün her şey nereden başlıyor demektir?
+
+181
+00:36:28,476 --> 00:36:45,996
+Birden başlıyor demektir. Yani ben öyle özel M ve S ikileri buldum. M diyelim ki 600 milyon. Sallıyorum. Sonuçta birden başlayacak. Hep. Hep birden başlayacak.
+
+182
+00:36:49,492 --> 00:36:57,712
+Peki, birden başlamasa, ben mesela iyi birden değil de, 32'den başlat diyebilir miyim?
+
+183
+00:36:57,712 --> 00:37:04,852
+Diyebilirim, olabilir. Buna göre tabii bu M ve Ester'leri falan, iyi M ve Ester'leri değişebilir belki.
+
+184
+00:37:04,852 --> 00:37:09,052
+Çok çok önemli değil. Ama iyi, 32'den başlatabilirim. Olur, o da olur.
+
+185
+00:37:09,052 --> 00:37:16,132
+32'den sonra belki 7 gelecek, sonra 6 gelecek. Sonra M adım sonra belki yine 32 gelecek karşıma. Tamam.
+
+186
+00:37:18,867 --> 00:37:32,367
+Birden başlatma. Ama mesela bir tablo oyunu yaptınız, ilk oynadınız tablo oyunu. M'de 600 milyon, onda da bir sıkıntı yok.
+
+187
+00:37:33,012 --> 00:37:38,292
+Yani böyle bir daha aynı sekansı sizin yakalama ihtimaliniz falan pek yok.
+
+188
+00:37:38,292 --> 00:37:42,771
+Siz zaten şeyleri gözlemleyemiyorsunuz. Yani hani gerçekte arka taraftaki sayı gözlemleyemiyorsunuz.
+
+189
+00:37:42,771 --> 00:37:46,692
+Onun moda altı alınmış halini gözlemleyebiliyorsunuz. Zar haline getirilmiş halini.
+
+190
+00:37:46,692 --> 00:37:50,612
+Arka tarafta büyük bir rakam üretiliyor, rastgele sayı üreticinden.
+
+191
+00:37:50,612 --> 00:37:56,771
+O daha sonra mod altıya alınarak ne yapılıyor? Zarmış gibi size gösteriliyor.
+
+192
+00:37:56,771 --> 00:37:58,452
+Neyse...
+
+193
+00:37:58,612 --> 00:38:15,851
+Böyle bir süreçiniz var elinizde. İşte nereden başlatırsanız başlatın oyunu. Mesela tavla yapıyorsunuz diyelim. Oyun başlıyor, zar atıyorsunuz. İlk önce üç geliyor. Oyun her açtığınızda...
+
+194
+00:38:17,172 --> 00:38:24,851
+zar atmaya başladığınızda üç geliyor. Ondan sonra atıyorum altı geliyor. Her seferinde altı geliyor. Ondan sonra her seferinde bir geliyor.
+
+195
+00:38:24,851 --> 00:38:35,851
+Yani başlangıç noktasını sabit tuttuğunuz anda rastgele sayı üreteşleriniz çok da rastgele gözükmemeye başlıyorlar. Anlatabiliyor muyum problemi?
+
+196
+00:38:37,851 --> 00:38:40,851
+Yani evet benim elimde şöyle şeyler var.
+
+197
+00:38:44,052 --> 00:38:45,052
+Atıyorum.
+
+198
+00:38:49,972 --> 00:38:59,972
+17, 42, 56, 37, böyle gidiyor bu. Burada hiçbiri tekrar etmiyor. Yani böyle 600 milyona kadar falan gidiyor. Çok uzun bir şey.
+
+199
+00:38:59,972 --> 00:39:05,972
+Böyle bir seyreticim var. Ve ben buradan zar üretiyorum. Mesela zar üretirken mod 6'sını alıyorum bunu, tamam mı?
+
+200
+00:39:05,972 --> 00:39:15,972
+Bu mesela neye karşı, mesela 5'e karşılık geliyor diye sallıyorum. Bunları sallıyorum şu an hiç hesaplamadım. Tamam. Bunlar zar hali. Bunlar...
+
+201
+00:39:16,148 --> 00:39:39,148
+Rastgele sayılar olsun, rastgele sayılarımız, sözde rastgele sayılarımız aslında. Bunlar da zar değerlili olsun. Şimdi burada beş geliyor, bir geliyor, dört geliyor, üç geliyor, bir geliyor, böyle gidiyor bunlar. Tamam, güzel. Ben hiç burada, hiç kuşkulanmıyorum çünkü, yani bir şeyden sonra bir şeyin geleceğini gözlemlemeye kalkmam için dedim, korkunç uzun süre gözlem yapmam lazım. Tamam.
+
+202
+00:39:39,148 --> 00:39:43,148
+Neyse, orasını geçelim, başka bir sorunlar bahsediyorum. Sorumuz şu şu anda.
+
+203
+00:39:43,956 --> 00:39:58,956
+Evet, birbirini takip etme mevzusunu farkına varamıyoruz zarları izleyerek ama programı her çalıştırdığımda zar atıyorum, beş atıyor, zar atıyorum, bir atıyor, bir sonraki, zar atıyorum, dört atıyor, sonra üç, sonra bir. Zarlar hep bu sırada geliyorlar.
+
+204
+00:40:02,771 --> 00:40:11,771
+Böyle olmak zorunda. Çünkü neden? Ben bir sayıdan başladığım zaman bir sonraki sayı mutlaka neye bağlı? Bir önceki sayıya bağlı.
+
+205
+00:40:11,771 --> 00:40:18,771
+Ben aynı yerden başladığım sürece hep ben aynı sekans üreteceğim.
+
+206
+00:40:19,155 --> 00:40:33,155
+Tamam, sekansın tümüne bakıp rastgele anlayamıyoruz ama, sekansın baş... Yani birinci gelen zarların ne olduğunu hep bileceğim, ikinci gelen zarların ne olduğunu hep bileceğim, üçüncü gelen zarların ne olduğunu hep bileceğim. Tamam? Oyunu bir daha bir daha çalıştırdığım zaman.
+
+207
+00:40:33,155 --> 00:40:41,155
+E bu da yine bozuyor işi. Tamam? Peki bu durumda ne yapabiliriz? Rastgele.
+
+208
+00:40:41,748 --> 00:40:51,748
+İllüzyonumuza devam edebilmek için. Yine kayboldu İllüzyonumuz aslında burada. Çünkü her çalıştırdığımızda neyi görmeye başladığımızda aynı şeyleri görmeye başladık.
+
+209
+00:40:51,748 --> 00:41:08,523
+Rastgele gizliyorsan devam edebilmek için kritik noktamız, yani yapmamız gereken şey şu. Her seferinde bu dizinin farklı bir yerinden başlayacağız. Ne demek istiyorum? Şimdi...
+
+210
+00:41:08,532 --> 00:41:14,972
+Bu dizimiz, mesela emin altı olduğu noktayı düşünen, şunu düşünen, tamam mı?
+
+211
+00:41:15,972 --> 00:41:20,972
+Böyle bir durumda. Ben altıdan başlamışım da hep bu diziyi göreceğim. Evet, tamam.
+
+212
+00:41:20,972 --> 00:41:27,172
+Peki ben dörtten başlayalım, altıdan başlasam bir, dört, üç, beş, ikiyi göreceğim. Değil mi? Hep böyle bir şey göreceğim.
+
+213
+00:41:27,172 --> 00:41:32,492
+Altı, bir, dört, üç, beş, ikiyi göreceğim. Peki ben dörtten başlarsam ne göreceğim?
+
+214
+00:41:36,980 --> 00:41:41,980
+4-5 böyle giden bir şey göreceğim. Ben 5'ten başlarsam ne göreceğim? Böyle bir şey göreceğim.
+
+215
+00:41:41,980 --> 00:41:47,980
+Farklı yerlerden başlarsam, hep farklı neler görmeye başlayacağım ben? Diziler görmeye başlayacağım.
+
+216
+00:41:47,980 --> 00:41:57,980
+Farklı şeyler gördüğüm zaman da her seferinde, bu sefer ne olacak? Sözde, yani rastgelelik ilizyonuma devam edebilmiş olacağım.
+
+217
+00:41:57,980 --> 00:42:03,947
+Başlangıç noktası her seferinde değişiyor. Peki farklı yerden nasıl başlayacağım her seferinde?
+
+218
+00:42:04,628 --> 00:42:23,628
+Bu problemi çözmemiz lazım. Yani i'nin başlangıç değeri ne olacak? i0 diyeyim buna. Bu ne olacak? Tamam. Bu i0 değeri ne? Seed değeri diyoruz, çekirdek değeri diyoruz. Bu seedin ne olduğunu belirlemek için.
+
+219
+00:42:24,755 --> 00:42:33,755
+Genelde, yani her programlama dili kendine özgü bir şeyler kullanabiliyor ama C mesela şunu kullanıyor.
+
+220
+00:42:33,755 --> 00:42:43,755
+1 Ocak 1970'ten şu ana kadar kaç saniye geçmesi onu kullanıyor?
+
+221
+00:42:43,755 --> 00:42:45,291
+Kaç saniye?
+
+222
+00:42:50,516 --> 00:42:53,516
+Zaman'a bağlanmış bunu, seed değerine.
+
+223
+00:42:53,516 --> 00:43:03,516
+Ve dolayısıyla aynı sahneyi içerisinde çağırmadığınız sürece, farklı sahnelerde çağırdığınız sürece, ne olacaktır? Her zaman farklı başlangıç değerleri elde edeceksiniz.
+
+224
+00:43:03,516 --> 00:43:04,516
+Tamam mı?
+
+225
+00:43:04,516 --> 00:43:11,516
+Ve bu da sözde rastgele görünümü sağlayacak.
+
+226
+00:43:22,739 --> 00:43:33,919
+Şimdi bilgisayarlarda rastgele görünümlü sayıların nasıl üretildiğini kavradık mı? Var mı sorunuz?
+
+227
+00:43:41,748 --> 00:43:43,659
+Hocam, chatte bir soru var.
+
+228
+00:43:48,211 --> 00:44:06,612
+Hocam diyelim ki ilk zar 2 geldi, diğer zarın 2 gelme olasılığı, pardon, diğer zarın 2 gelme olasılığı, diğer zar 2 geldi, diğer zarın 2 gelme olasılığı, diğer zar dediğin, yani aynı zarı ikinci kez attığımızdan bahsediyorsun [öğrenci].
+
+229
+00:44:07,612 --> 00:44:12,612
+Evet, olmaz çünkü bak biz burada rakamın...
+
+230
+00:44:12,947 --> 00:44:31,147
+kendisinden, kendisini kullanmıyoruz. O rakamın kendisinden bir zar simülasyonu oluşturuyoruz. Tamam. Yani burada beşten sonra burası yine biri olabilir. Onu demek istiyorum. Anlatabildim mi?
+
+231
+00:44:38,675 --> 00:44:44,675
+Yani şurada bundan sonra aynı rakam gelmez ama bundan sonra aynı rakam gelebilir.
+
+232
+00:44:44,675 --> 00:44:46,675
+Zarf simülasyon kısmında.
+
+233
+00:44:53,940 --> 00:44:58,339
+Güzel soru. Teşekkür ederim. Peki.
+
+234
+00:45:06,003 --> 00:45:10,364
+Mesela bilgisayar kullanan gerçek bir sayı yazayım.
+
+235
+00:45:11,384 --> 00:45:15,983
+Ne derler ona? Mekanizması yazayım. Demin yazdığımızda oldukça benziyor aslında.
+
+236
+00:45:19,063 --> 00:45:21,103
+Rn diyeyim, tamam?
+
+237
+00:45:21,884 --> 00:45:23,923
+N. random sayı.
+
+238
+00:45:25,963 --> 00:45:31,083
+A çarpı Rn-1
+
+239
+00:45:31,864 --> 00:45:33,903
+Bir önceki sayı çarpı A.
+
+240
+00:45:34,835 --> 00:45:38,835
+Artı C
+
+241
+00:45:40,835 --> 00:45:44,835
+Mod M
+
+242
+00:45:44,835 --> 00:45:47,835
+Mesela bu bilgisayarda kullanan gerçek bir şey.
+
+243
+00:45:48,835 --> 00:45:50,835
+Burada
+
+244
+00:45:52,835 --> 00:45:56,835
+A'nın değeri 1366
+
+245
+00:45:57,835 --> 00:45:59,835
+C'nin değeri
+
+246
+00:46:02,675 --> 00:46:26,675
+889, m'nin değeri 2, önemli olan bizim 3'ün bu, 714.025. Oldukça iyi yani. 714.000'lik bir çevrimi, öyle söyleyelim. Yakalanma ihtimaliniz olacağı düşüktür. Farklı farklı şeylerle çok daha büyük böyle şeyler oluşturabilirsiniz.
+
+247
+00:46:39,539 --> 00:46:42,099
+Peki, o zaman şimdi ara verelim.
+
+248
+00:46:43,380 --> 00:46:48,500
+Başka soru göremedim ama varsa cevapmaya çalışıyorum ama yok. Tamam.
+
+249
+00:46:48,500 --> 00:46:50,739
+Peki, o zaman şimdi ara verelim arkadaşlar.
+
+250
+00:46:50,739 --> 00:46:54,739
+42 geçiyor, 55 diyelim.
+
+251
+00:46:54,739 --> 00:47:01,699
+9.55'e kadar ara verelim.
+
+252
+00:47:01,699 --> 00:47:05,291
+Tamam. 13 dakika.
+
+253
+00:47:13,652 --> 00:47:15,652
+Az sonra görüşmek üzere arkadaşlar.
+
+254
+01:00:09,844 --> 01:00:26,084
+Arkadaşlar, sesim geliyor mu? Geliyor hocam. Geliyor hocam. Okulda elektrikler gitti de, neyse burası, en azından, devam edebiliriz.
+
+255
+01:00:39,059 --> 01:00:42,199
+Peki, şimdi bu...
+
+256
+01:00:48,179 --> 01:01:02,679
+Rastgele sayı üretmekten bahsettik. Bu rastgele üretilen sayılarla ne yaparız? Yani daha doğrusu niye rastgele sayı üreticine ihtiyacımız var diye soracak olursak.
+
+257
+01:01:02,679 --> 01:01:11,519
+Yani cevap herhalde şeydir, yani birçok uygulamada böyle süreçlere ihtiyacımız var.
+
+258
+01:01:16,851 --> 01:01:32,211
+Rastgeleliğin, şimdi bilgisayarlar temelde deterministik yapılar. Deterministik yapılar derken, deterministikin anlamı bir önceki durum, bir sonraki durumu belirler, belirlenimci diye de öyle söyleyelim.
+
+259
+01:01:32,211 --> 01:01:41,211
+Belirlenimci yapılardır, stokastik yapılar değillerdir. Ama gerçek dünya pek öyleye benzemiyor.
+
+260
+01:01:44,500 --> 01:01:54,500
+Ya da öyle süreçler olunca daha heyecanlı, daha güzel anlamlı ya da bir hayat olduğunu düşünüyoruz.
+
+261
+01:01:56,500 --> 01:02:09,500
+En nihayetinde bu tarz stokastik süreçleri bilgisayarda, bilgisayar gibi deterministik bir yapıda simül etmemiz gerekiyor. İşte bu random sayı üretici...
+
+262
+01:02:10,420 --> 01:02:33,740
+Simülasyonları aslında bunu sağlıyorlar. Oyunlarda, çeşitli simülasyonlarda vs. vs. Bunların hepsinde olası durumların olması gereken her yerde böyle bir şeye ihtiyacımız var. Yapıya ihtiyacımız var.
+
+263
+01:02:38,068 --> 01:02:41,428
+Peki, şimdi devam edelim. Bir saniye bekleteceğim.
+
+264
+01:03:04,788 --> 01:03:09,288
+Şimdi yeni bir...
+
+265
+01:03:10,588 --> 01:03:13,288
+...veast haftaya geçeyim.
+
+266
+01:03:29,492 --> 01:03:46,992
+Mesela ben, hep şundan bahsedelim, bir ile M aralığında sayılar ürettiği çap. Değil mi? Yani M işte kocaman bir sayı, bir ile M aralığında.
+
+267
+01:03:57,311 --> 01:04:01,311
+M'in çok çok büyük olması gerekiyordur N'den.
+
+268
+01:04:02,311 --> 01:04:05,811
+Daha daha zar atacağım, mesela 1 ile 6 arasında çekmek istiyorum.
+
+269
+01:04:05,811 --> 01:04:10,811
+Yapmam gereken şeyini, üretilen şeyi işte bu N'e göre modunu alarak hareket etmek için.
+
+270
+01:04:10,811 --> 01:04:11,811
+Tamam.
+
+271
+01:04:11,811 --> 01:04:13,311
+Yani ne yaparsınız?
+
+272
+01:04:13,311 --> 01:04:16,811
+Atıyorum burası R dizisi olsun, bu da K dizisi olsun.
+
+273
+01:04:16,811 --> 01:04:19,311
+K eşittir.
+
+274
+01:04:19,311 --> 01:04:21,708
+R mod.
+
+275
+01:04:23,027 --> 01:04:46,027
+n dersiniz, bir de buna artı bir eklersiniz mesela. Bu durumda mod n sıfırla n-1 aralığında sayı üretir, artı bir eklenir de bir ile n aralığında sayı üretmiş olursunuz k adı içerisinde. Anlatabildim mi? Yani bir ile m aralığında genelde bizim şeyimiz bu, kocaman rakamlar üretiyoruz. Sonra biz bunu mesela bir şeye çevirmek istiyoruz diye.
+
+276
+01:04:47,668 --> 01:04:56,347
+Zara, bir rakama, bir şey, yani istediğimiz aralıklı bir yere çekmek istiyoruz. O zaman yapacağınız şey şuradaki gibi bir süreç olabilir.
+
+277
+01:04:56,347 --> 01:05:06,468
+Peki, bir ile en aralığı değil de mesela x ile y aralığına çekmek istersek bunu yapmak mümkün mü?
+
+278
+01:05:06,468 --> 01:05:13,867
+Mümkün olmuyor. Bunu birazcık siz yapın, bakın nasıl yapabiliriz diye. Tamam.
+
+279
+01:05:14,099 --> 01:05:26,720
+Onu size bırakalım. X ile Y aralığında bir şey yok. Mesela atıyorum. 49 ile 98 aralığında bir şey yok. Çok çok zor olmadığını tahmin edebilirsiniz.
+
+280
+01:05:26,720 --> 01:05:37,708
+İlk önce bunu belki şuna benzeteceksiniz falan. Tamam mı? Bakarsınız. Peki. Şimdi...
+
+281
+01:05:42,579 --> 01:05:49,980
+Şöyle bir şeyimiz olsun, başka bir problemimiz. Yine kağıt oyunlardan bahsetmiştim. Pokerde, şudur budur, fengi birisinden.
+
+282
+01:05:49,980 --> 01:05:59,380
+Şimdi bu oyunlarda biliyorsunuz her seferinde ne olması gerekiyor? En başta bir destenin karıştırılması gerekiyor.
+
+283
+01:05:59,380 --> 01:06:05,579
+Destek karıştırılmazsa hep aynı sırada gelirse deste, oyunun hiçbir şeyi olmayacak değil mi? Esprisi olmayacak.
+
+284
+01:06:05,811 --> 01:06:30,811
+Dolayısıyla benim bir desteği karıştırmam gerekiyor. Şimdi desteği karıştırmak için neler yapabiliriz? Şimdi destemizde söyledim, 52 tane kağıttan oluşuyor. Tamam mı? Birden 52'ye kadar rakamlar var aslında. Bizim yapmak istediğimiz şey şu, birden 52'ye kadar olan rakamları...
+
+285
+01:06:32,755 --> 01:06:35,755
+Bir şekilde karıştırmaya çalışıyoruz. Öyle düşünebiliriz.
+
+286
+01:06:35,755 --> 01:06:44,255
+Burada en basitden şöyle bir şey yapabiliriz. 1 ile 52 arasında rastgele mesela şu aralıkta bir sayı üret diyebiliyoruz ya, diyebileceğimizi gördük ya.
+
+287
+01:06:44,255 --> 01:06:48,755
+1 ile 52 arasında bir tane sayı üret diyebiliriz. O da bize üretir mesela. 42 üretir.
+
+288
+01:06:48,755 --> 01:06:52,755
+Sonra bir tane daha üret deriz. O bize 30 üretir. Bir tane daha üret 13 üretir.
+
+289
+01:06:52,755 --> 01:06:59,755
+Bir tane daha üret 42 üretir. O zaman 42 vardı deriz. 42 yerine başka bir şey daha üretme deriz. 28 üretir.
+
+290
+01:07:00,047 --> 01:07:12,427
+Bir daha üretelim, bir şey üretelim. Böyle ilerler süreç. Ta ki burada işte 52 tane birbirinden farklı şey olana kadar.
+
+291
+01:07:12,427 --> 01:07:19,047
+Atıyorum burada 33 var mesela. Şimdi bunu böyle yapabilir miyim? Evet yapabilirim.
+
+292
+01:07:19,047 --> 01:07:26,047
+Burada bir kez de ürettim, burada bir kez de ürettim, burada iki kez de ürettim. Bakın iki kez çağırdım rastgele sayı üreticimi.
+
+293
+01:07:27,219 --> 01:07:39,219
+Tahmin edersiniz ki bu sürecin sonlarına doğru çok fazla sayıda çağırma yapmam gerekecek. Neden? Çünkü üretilmiş bütün sayı, yani sayıların çok büyük bir kısmı üretilmiş.
+
+294
+01:07:39,219 --> 01:07:51,219
+Üretilmişlerin çağırı, üretilmemişlere erişmek giderek zorlaşacak. Yani random fonksiyon çağırım şöyle bir artışa şey olacak.
+
+295
+01:07:55,411 --> 01:07:59,411
+Rastgele fonksiyonunu çağırma sayım olsun.
+
+296
+01:08:01,411 --> 01:08:09,411
+Şurada, şu gördüğünüz gibi bu ileriye doğru bayağı bir açık iş. En sonlarda belki 50 civarında falan bile çıkacak.
+
+297
+01:08:10,411 --> 01:08:22,412
+Tek bir tane say üretmen bile. Çok uzun sürecek. Burası 52. Burası 51. sayı, burası 1. sayı, 2. sayı, 3. sayı. Kaç? Şuralar 1'e.
+
+298
+01:08:22,804 --> 01:08:38,804
+1-1 belki aralar böyle ufak ufak zıplamalar falan olacak ama böyle ileriye doğru kocaman kocaman açacak göreceğiz. Bu iyi mi? Değil. Yani bunu daha hızlı nasıl yapabiliriz diye biraz düşünelim. Şimdi derdimiz ne bizim burada?
+
+299
+01:08:40,804 --> 01:08:42,804
+Yeni bir beyaz tahta açalım.
+
+300
+01:08:46,003 --> 01:09:03,003
+Bu dizinin içerisinde 1'den 52'ye kadar olan sayılar ne olsun istiyorum? Ben karışık bir şekilde olsunlar istiyorum. O zaman ben bunu demin yaptığım yöntemde rastgele sayı...
+
+301
+01:09:03,539 --> 01:09:14,039
+üretici fonksiyonu çağırmam böyle giderek artıyordu. Ben bunu biraz daha böyle şey istiyorum, hani şöyle falan istiyorum. Böyle olsun. Tamam.
+
+302
+01:09:14,039 --> 01:09:25,039
+Şey olmasın, bir kerede üretelim zaten hepsini. Karmışlık da gerek olmasın. Hızlı üretelim. Tamam, derdim bu.
+
+303
+01:09:25,039 --> 01:09:30,039
+Peki bunu nasıl yapabiliriz? Yapabileceğimiz en kestim yollardan bir tanesi arkadaşlar,
+
+304
+01:09:35,091 --> 01:09:47,331
+Rastgele iki tane sayı seçeyim ben. Yani 1 ile 52 arasında rastgele iki tane sayı seçeyim. Mesela 13, 17. Bana diyelim ki iki tane sayı üret diyorum bana. Tamam mı? O da üretiyor.
+
+305
+01:09:48,251 --> 01:09:49,451
+13, 17.
+
+306
+01:09:50,331 --> 01:10:01,331
+Ve en başta ben dizimi sıralı bir şekilde tutuyorum. Yani ben dizimin içerisinde 1, 2, 3, herkes yerinde. 51, 52. Tamam mı?
+
+307
+01:10:01,844 --> 01:10:27,224
+Sonra diyorum ki, bana iki tane sayı üret. Bir tanesi mesela on çıktı, bir tanesi on et. O zaman on üçte on yedi, aslında on üçte on yedi i ve j diye temsil ederim. Ben burada gidiyorum, i'inci yerdeki yerle j'inci yerdeki içeriği değiştiriyorum. Tamam. Değiştiriyorum.
+
+308
+01:10:29,971 --> 01:10:44,971
+Sonra bir daha üretiyorum, iki tane sayı. O bu sefer bana gidiyor, atıyorum. 12 ile 41 üretiyor. 12 ile 41'in içeriğini değiştiriyorum. Bir daha değişiyorum, bir daha değişiyorum, değişiyorum, değişiyorum.
+
+309
+01:10:44,971 --> 01:10:54,971
+Burada, belli bir süre bu değişikliği yapmaya devam edersem, bu sayı dizisinde epey bir karışmış olacak mıdır?
+
+310
+01:10:56,020 --> 01:11:05,020
+Olacaktır değil mi? Yani ben burada 50 kez değiştirme işlemi yaptığımda bu epey bir şey olacaktır. Değişmiş olacaktır.
+
+311
+01:11:05,020 --> 01:11:20,940
+Ve burada zaman içerisinde değişikliği yaparkenki random sayı çağırma sayımda bir şey yok. Değişiklik yok.
+
+312
+01:11:22,163 --> 01:11:27,724
+Yani zaman içerisinde şu kırmızı kivi, şu kırmızı kivi, yani şurada çizdiğim şey, yeni mavi diyelim ya.
+
+313
+01:11:28,724 --> 01:11:29,724
+Tamam.
+
+314
+01:11:31,163 --> 01:11:35,804
+Hiçbir şekilde yeni bir şey üretirken öncekilerden daha uzun sürmeyecek.
+
+315
+01:11:35,804 --> 01:11:40,923
+Aynı sabit sürede ne yapabileceğim? Üretebileceğim. Tamam.
+
+316
+01:11:43,796 --> 01:11:50,195
+Yani bir destek kartı nasıl karıştırırsınız için mesela bir yol bu olabilir.
+
+317
+01:11:53,195 --> 01:11:56,796
+İlk düşündüğümüzden çok çok daha hızlı bir yol, öyle diyelim.
+
+318
+01:12:00,435 --> 01:12:07,675
+Şimdi başka bir konuya geçeceğiz. Başka bir konu derken, başka bir örneğe geçeceğiz.
+
+319
+01:12:11,475 --> 01:12:23,675
+Şimdi bu zar atmak dedik. Ya da mesela işte kartları rastgele dizmek falan. Bunlar da bize...
+
+320
+01:12:26,963 --> 01:12:39,963
+Uniform süreçler, ya uniform derken, her bir rakamın gelme olasılığının eşit olduğu süreçler bunlar.
+
+321
+01:12:40,963 --> 01:12:53,564
+Yani mesela zar atarken benim istediğim ne? Altının gelme ihtimali, üçün gelme ihtimali aynı olsun istiyorum ben. Böyle istiyorum. Her şeyin gelme ihtimali aynı olsun istiyorum.
+
+322
+01:12:54,996 --> 01:12:59,796
+Değil mi? Sesim geliyor mu arkadaşlar?
+
+323
+01:13:00,796 --> 01:13:02,296
+Evet, geliyor.
+
+324
+01:13:02,296 --> 01:13:07,695
+Tamam. Elektrik buradaki yine gitti de onun için merak ettim.
+
+325
+01:13:08,496 --> 01:13:09,496
+Neyse.
+
+326
+01:13:13,555 --> 01:13:15,555
+Bu ders...
+
+327
+01:13:22,355 --> 01:13:28,575
+Kayıt üzerinden izlenebilecek mi çok çok emin değilim ama bakarız daha sonra.
+
+328
+01:13:28,575 --> 01:13:30,575
+Peki.
+
+329
+01:13:35,315 --> 01:13:42,755
+Şimdi ne dedim? Bu süreçlerde her bir rakamın gelme olasılığının eşit olmasını istiyoruz.
+
+330
+01:13:42,755 --> 01:13:56,036
+Ama aslında gerçek dünyada işler böyle yürümez. Yani gerçek dünyadaki stokastik süreçlerde, olasılık içeren süreçlerde bu iş böyle olmaz çoğu zaman.
+
+331
+01:13:56,036 --> 01:13:59,235
+Ne demek istiyorum?
+
+332
+01:13:59,507 --> 01:14:08,827
+Mesela bir sınıf düşünün. Bir sınıftaki öğrencilerin o dersten aldıkları notların dağılımını düşünelim, tamam mı?
+
+333
+01:14:11,467 --> 01:14:18,108
+Bakın, bu durumda üniform bir dağılım mı görürüz? Bir düşünün bakalım.
+
+334
+01:14:24,595 --> 01:14:48,595
+Uniform demek şu demek, her notu alan öğrenci sayısının aynı olması demek. Ya da her not aralığını diyelim, her not hadi biraz şey, abartı. Atıyorum rakam şeyleri, notların hepsini sıfırla, onar, onar şey yaptığımız zaman, sıfırla on arasında kaç öğrenci var, onla yirmi arasında kaç öğrenci var?
+
+335
+01:14:48,724 --> 01:14:55,924
+20 ile 30 arasında kaç öğrenci var şeklinde, 90 ile 100 arasında kaç öğrenci var şeklinde ben bunları paylaştırırsam,
+
+336
+01:14:55,924 --> 01:15:00,724
+üniform bir dağılımı görürüm. Ne dersiniz?
+
+337
+01:15:00,724 --> 01:15:03,724
+Bence hayır.
+
+338
+01:15:03,724 --> 01:15:05,724
+Hayır hocam.
+
+339
+01:15:05,724 --> 01:15:07,724
+Nasıl bir şey görürüz peki?
+
+340
+01:15:07,724 --> 01:15:12,724
+Parabol gibi, orta kısmı daha yüksek olacak böyle.
+
+341
+01:15:12,724 --> 01:15:15,724
+Ortalama yayılımı olur birazcık daha.
+
+342
+01:15:16,148 --> 01:15:42,148
+Ne olur? Ortalamaya? Yığılma birazcık daha. Yığılma olur. Evet, güzel, güzel. Bunların bir öğrenci dilindeki bir karşılığı var. Ne deniyor biliyor musunuz? O şekli var bunun bir tane. Çanına yürüsün. Evet.
+
+343
+01:15:43,252 --> 01:15:46,712
+Çanf ise bu. Ortalama burada bir yerde duruyor.
+
+344
+01:15:46,712 --> 01:15:49,971
+Bir de bunun varyansı var.
+
+345
+01:15:49,971 --> 01:15:53,192
+O da sigma diyelim. Tamam.
+
+346
+01:15:53,192 --> 01:15:58,432
+Çanf dediğim şey bu işte. Ortalamaya yığılma var, değil mi?
+
+347
+01:15:58,432 --> 01:16:02,072
+Her iki tarafta da. Yani bunun simetrik.
+
+348
+01:16:02,072 --> 01:16:09,311
+Bunun matematikti genelde Gauss...
+
+349
+01:16:09,684 --> 01:16:37,164
+Gaussian distribution, yani Gauss-Chu dağılım denebilir. Ya da daha genel ve etkileyici ismi bence normal dağılımdır. Normal dağılımdan kasıt, genelde dağılımların bu şekilde olmasını ifade eder. Bakın normalde, normalde böyle olur.
+
+350
+01:16:37,747 --> 01:16:54,007
+Anlatabildim mi? Mesela, şimdi öğrenci notları üzerinden bir şey yaparsanız, öğrenci notlarının eğer üniform olduğunu düşünseniz, şöyle bir dağılım diyorsunuz. Ama diyoruz ki, üniform değildir bunlar. Şöyle bir şeye sahiptir. Pardon.
+
+351
+01:17:00,819 --> 01:17:20,819
+Burası oynar, ortalaması değişir, standart satması değişebilir. Yani şundan bahsediyorum. Sizin şöyle galasyonlarınız da olabilir. Şöyle çok daha uzun galasyonlarınız da olabilir. Çok daha uzun büyük varyansa.
+
+352
+01:17:21,043 --> 01:17:29,043
+Küçük varyansa sahip dağılımlarınız olabilir. Bunlar şu iki tane parametre ile aslında ayarlanabiliyorlar.
+
+353
+01:17:29,043 --> 01:17:33,043
+Ya da mesela hani normal diyoruz, bunu başka nerede görebiliriz?
+
+354
+01:17:33,043 --> 01:17:38,043
+Mesela şeyi düşünelim, bir tane bir dağ tahtası olsun, tamam mı?
+
+355
+01:17:38,043 --> 01:17:41,043
+Ya da bir tane kırmızı bir nokta çizin duvara.
+
+356
+01:17:41,043 --> 01:17:47,851
+Kırmızı nokta çizin deyince mavi çizmek iyi olmadı, tamam mı? Kırmızıya düştü.
+
+357
+01:17:47,956 --> 01:17:59,956
+Kırmızı nokta çizelim, tam duvara. Ve elimizde de bir tane şey alalım, işte ok alalım mesela. O oku, o kırmızı noktaya vurdurmaya çalışalım.
+
+358
+01:17:59,956 --> 01:18:13,956
+Tamam mı? Oraya hedef almışız yani. Duvara çarptığın noktaları da mesela ucunda da boya falan olsun, boyamaya çalışalım. Yani boyasını atalım böyle, binlerce kez atalım. Binlerce kez attığımızda...
+
+359
+01:18:14,131 --> 01:18:26,851
+Nasıl bir şey göreceksiniz sizce? Şurada korkunç dereceli yoğun bir şey. Etrafa doğru çok çok daha seyrekli şeyler göreceksiniz değil mi? Şöyle bir şey göreceksiniz. Doğru mu?
+
+360
+01:18:35,859 --> 01:18:45,039
+Bu da yine normal bir dağılım. Yani normalde olan şey bu. Peki, iyi, güzel, böyle bir dağılım var.
+
+361
+01:18:45,039 --> 01:18:55,859
+Peki bu dağılımın anlamı ne? Yani burada bu çizdiğimiz şeklin anlamı ne? Ondan da aslında bahsetmek lazım belki.
+
+362
+01:18:55,859 --> 01:18:58,539
+Şöyle bir şey, burada çizdiğimiz şeklin anlamı şu.
+
+363
+01:18:59,283 --> 01:19:25,099
+Mesela ben bunu diskret bir şekilde tanımlarsam, mesela 1 diyelim, 1, 2 olsun, 3 olsun, 4 olsun, 5 olsun, 6 olsun, 7 olsun. Sallayalım.
+
+364
+01:19:25,939 --> 01:19:45,139
+Birden yediye kadar sayıları üretiyorum ben. Bu ürettiğim sayıların o dizinin içinde bulunma olasılıkları burada çizdiğim varlığın yükseklikleriyle alakalı.
+
+365
+01:19:45,139 --> 01:19:52,339
+Yani mesela bu sayı dizinin içerisinde dört çok sayıda geçecek.
+
+366
+01:19:52,692 --> 01:20:18,291
+3 ve 5, eh, 2 ve 6 daha da az, 1 ve 7 çok az miktarda geçecek. Tamam mı? Yani ben herhangi bir şekilde bu yapıdan, atıyorum 1000 tane örnek alırsam, 1000 tane sayı üret dersem, bu 1000 tane sayının, atıyorum şurası %30 olsun tamam mı? Şurası %30 olsun, şunlar %20, 20, 40, 70.
+
+367
+01:20:19,188 --> 01:20:32,188
+Şunlar 10 olsun, 70, 80, 90, şunlarla sıfır, sıfır, beş oluyor herhalde. Bu bin tane sayının yaklaşık olarak 300 tanesi dört olacaktır.
+
+368
+01:20:32,188 --> 01:20:45,188
+200 tanesi, pardon, 200 tanesi üç, 200 tanesi beş.
+
+369
+01:20:46,195 --> 01:21:07,995
+100 tanesi, 2, 100 tanesi, 6, 50 tanesi, 1, 50 tanesi, 7 olacaktır. 500, 7, 800, 900, evet, şöyle bir şey olacaktır. Tamam.
+
+370
+01:21:11,475 --> 01:21:34,475
+Mesela zar atılmasında yedi yüzlü bir zarınız olsa, yedi yüzlü bir zarda istediğiniz şey bu değildir. Yedi yüzlü bir zarda zar oyunun da yani, zarın üniform bir dağılımdan gelmiş. Üniform şu, normal ise şu. Bakın bu kırmızı olan normal dağılım, mavi olan üniform dağılım.
+
+371
+01:21:36,532 --> 01:21:52,092
+Peki, iyi güzel, yani şimdi normal dağılımı ifade ettik. Peki bu normal dağılıma sahip, yani normal dağılımdan nasıl üretim yapabilirim ben?
+
+372
+01:21:52,092 --> 01:22:03,692
+Şimdi, uniform dağılımdan üretimi bulduk, nasıl yapacağımızı. Demin bahsettiğimiz yani her sayının gelme ihtimal eşit olma durumu, uniform dağılımdı.
+
+373
+01:22:03,828 --> 01:22:15,828
+Tamam mı? Ama şimdi bana şey de lazım, normal dağılımdan sayı üretmek de istiyorum ben. Tamam mı? Bunu nasıl yapacağız?
+
+374
+01:22:15,828 --> 01:22:28,828
+Yani, öğrencilerin notlarını simüle etmek istiyorum ya da işte fiziksel bir şey ya da fizik motoru var, o fizik motorunu da atıyorum stokastik süreçler ve onların normal dağılıma sahip.
+
+375
+01:22:29,587 --> 01:22:36,587
+Onları benim üretmem gerekiyor. Bunu nasıl yapabileceğiz? Şimdi buna bakalım.
+
+376
+01:22:38,587 --> 01:22:55,587
+Şimdi, normal dağılıma sahip sayılar üretmek için harici ekstra bir mekanizma kullanmayacağız.
+
+377
+01:22:56,756 --> 01:23:01,756
+Uniform Dağılım Üretme Mekanizmasını kullanacağız.
+
+378
+01:23:02,756 --> 01:23:15,756
+Yani, Uniform Sayı Üreten Bir Mekanizmayı kullanıp, ondan normal dağılıma sahip sayılar üreten bir mekanizma oluşturacağız.
+
+379
+01:23:16,756 --> 01:23:17,756
+Tamam mı?
+
+380
+01:23:18,756 --> 01:23:19,756
+Peki, bunu nasıl yapacağız?
+
+381
+01:23:23,028 --> 01:23:27,028
+Yapacağımız şey şu, diyelim ki...
+
+382
+01:23:31,060 --> 01:23:35,060
+Ben bir ile en arısı...
+
+383
+01:23:38,739 --> 01:23:39,595
+Öğrenç
+
+384
+01:23:42,771 --> 01:24:08,771
+Sayı üretmek istiyorum. Normal dağılımdan. Normal dağılımdan üretmek istiyorum. Yani işte n bölü 2, yani şöyle bir şey mesela şurası n bölü 2. Böyle yüksek olsun, n bölü 2'nin değerleri yüksek olsun. Böyle mesela birin ve n'in değerleri de bayağı bir düşük olsun istiyorum. Tamam, şeyimiz bu.
+
+385
+01:24:09,427 --> 01:24:22,427
+İsteğimiz böyle bir şey. Bir ile n arasında sayılar üretsin bu mekanizma ve ben burada işte binlerce sayı üreteyim. O binlerce sayı ürettiğimde bir ile n arasında bunları çekeceğim.
+
+386
+01:24:22,427 --> 01:24:34,427
+O bir ile n arasındaki rakamların o dizinin içine geçme oranlarına baktığımda şöyle bir şey görmek istiyorum.
+
+387
+01:24:34,427 --> 01:24:35,427
+Tamam.
+
+388
+01:24:36,148 --> 01:24:46,948
+Şurası frekans ya da oran diye değerlendirebilirsiniz. Peki, şimdi bunu nasıl yapacağım? Yapacağım şey şu aslında,
+
+389
+01:24:46,948 --> 01:24:57,747
+Uniform bir şey yapalım, nedel ona? Sayı üretelim. Bir ile en arasında. Öyle bir fonksiyonum olsun mesela.
+
+390
+01:24:57,747 --> 01:25:02,148
+Bunu yapmayı biliyorum, değil mi? Bir ile en arasında sıvı üretmeyi biliyorum.
+
+391
+01:25:02,515 --> 01:25:06,515
+Bu atıyorum A olsun. Tamam. B diye bir şey. Bu da uniform olsun.
+
+392
+01:25:11,091 --> 01:25:20,851
+A ile B'yi toplayayım, 2'ye böleyim. O da C olsun. Tamam.
+
+393
+01:25:24,724 --> 01:25:29,724
+Benim iddiam şu ki, bu C'nin dağılımı normal dağılımdır.
+
+394
+01:25:33,939 --> 01:25:46,259
+Bakın ABB'nin dağılımları uniform, tamam mı? İki tane sayı üretiyorum ben, uniform dağılımdan çekiyorum ABB diye. Bunları topluyorum, ikiye bölüyorum. Ortalamalarını alıyorum.
+
+395
+01:25:46,259 --> 01:25:53,259
+Ve bulduğum şey C diyorum, bu da üreteceğim sayı olsun işte. C'yi üret.
+
+396
+01:25:55,347 --> 01:26:02,667
+Yani normal bir sayı üretmek için, normal dağından bir sayı üretmek için iki tane uniform dağından sayı üretiyorum.
+
+397
+01:26:02,667 --> 01:26:06,427
+Onların ortalamasını alıyorum ve budur diyorum sayı.
+
+398
+01:26:06,427 --> 01:26:16,347
+Şimdi bunun normal olduğunu söylüyorum ben şu an size ama normal olduğunu nasıl acaba gösterebiliriz?
+
+399
+01:26:16,347 --> 01:26:18,667
+Biraz düşünsün bakalım herkes.
+
+400
+01:26:18,667 --> 01:26:22,028
+Yani niye C normal olsun ki?
+
+401
+01:26:23,764 --> 01:26:43,764
+Biraz şey yapın bakalım, düşünün bu konuda. Biraz size süre verelim. 10'lu 22 geçiyor, bir 5 dakika düşünün bunu. 10'lu 27 geçebilirim, tamam mı? 10'lu 27'ye kadar. 10'lu 27'ye kadar.
+
+402
+01:26:52,372 --> 01:26:54,372
+Düşünme.
+
+403
+01:26:56,372 --> 01:26:58,372
+Düşünün bakalım, niye böyle bir şey olsun?
+
+404
+01:26:59,372 --> 01:27:01,372
+Düşüneceği her şeyi veriyoruz.
+
+405
+01:27:03,372 --> 01:27:07,372
+Değil de diyebilirsiniz sonunda, o da olabilir. Bakalım.
+
+406
+01:27:08,372 --> 01:27:11,372
+Benim size söylediğim iddia bu. Böyle bir iddiam var.
+
+407
+01:27:12,372 --> 01:27:19,372
+Çok garip de bir iddia bir açıdan düşündüğü zaman. İki tane üniformu toplayacağım, ortalaması da alacağım, bunu normal edecek. Garip.
+
+408
+01:27:22,515 --> 01:27:29,515
+Ama söylüyorum işte bakalım. Herkes bir şunsun. Sonra konuşacağız.
+
+409
+01:32:21,300 --> 01:32:32,579
+Evet arkadaşlar, bulduğunuz müşiller? Niye böyledir diye. Aklınıza bir şeyler gelmiştir.
+
+410
+01:32:48,756 --> 01:33:15,756
+Sesim geliyor mu? Geliyor. Tamam. Peki şöyle bir şey düşünelim, bakın. Şimdi diyelim ki biz 1 ile 100 arasında bir şeyler çıkartacağız. A ve B, C. Mesela C'nin 1 olması için A ve B'nin ne olması lazım? Bana söyleyebilir misiniz?
+
+411
+01:33:21,140 --> 01:33:26,460
+Yani C'nin bir olması için A ve B ne olmak zorunda? İkisi de.
+
+412
+01:33:29,540 --> 01:33:30,540
+Bir.
+
+413
+01:33:30,739 --> 01:33:36,140
+Bir değil mi? A'da bir olmak zorunda, B'de bir olmak zorunda. Başka bir durum var mı C'nin bir olma ihtimali?
+
+414
+01:33:37,140 --> 01:33:38,540
+Yok, öyle bir şeyimiz yok.
+
+415
+01:33:38,940 --> 01:33:46,340
+Peki, bana C'nin yüz olması için A'nın ve B'nin ne olması gerektiğini söyleyebilir misiniz?
+
+416
+01:33:51,604 --> 01:33:53,604
+100, ikisi de.
+
+417
+01:33:53,604 --> 01:33:57,604
+İkisi de 100 olacak değil mi? A eşittir, B eşittir, 100 olacak.
+
+418
+01:33:57,604 --> 01:34:07,604
+Peki, C'nin 50 olması için gerekli olan şeyleri bana söylememi misiniz? Olması için, an ve benim ne olması gerektiğini söyler misiniz?
+
+419
+01:34:11,060 --> 01:34:14,060
+Bir sürü değişik olasılık var aslında.
+
+420
+01:34:14,060 --> 01:34:23,060
+Bir sürü olasılık var. Yani aslında bunu çizdirmeye kalktığınızda bu sayıların sayısının böyle olduğunu göreceksiniz.
+
+421
+01:34:23,060 --> 01:34:30,060
+Yani 50 için çok fazla ihtimal varken, A ve B'nin alabileceği çok fazla ikili varken
+
+422
+01:34:30,676 --> 01:34:39,876
+50'den giderek uçlara doğru yaklaştığınızda en sonlardaki bu taraf 100, bu tarafta 1 var. Bu arada sadece birer tane olasılık olduğunu göreceksiniz.
+
+423
+01:34:39,876 --> 01:34:47,276
+Ama diğerlerinde ki özellikle ortaya doğru yaklaştığınızda korkunç sayıda ne olacak karşınıza? Olasılık çıkacak.
+
+424
+01:34:47,276 --> 01:34:58,676
+Ve uniform dağılım, iki tane uniform dağılımı topladığınızda işte burada gördüğünüz gibi bir normal dağılım elde edebileceksiniz. Anlaşıldı mı?
+
+425
+01:34:58,676 --> 01:35:09,076
+Ama neden böyle oldu? Ya bunu çizdikini görün yani hani, siz de deneyebilirsiniz bunu. Denemesi çok zor olmaz herhalde.
+
+426
+01:35:13,684 --> 01:35:39,684
+Bilgisayarlarda, yani bir tek normal dağılım yok. Bunun haricinde işte Bernoulli dağılımı var, Pozen dağılımı var, vesaire, bir sürü dağılımı var. Bunların hepsi temelde hepsi şeyden türetilirler. Uniform dağılımdan türetilirler. Burada olduğu gibi farklı farklı ortalaması alınarak mesela.
+
+427
+01:35:40,243 --> 01:35:56,243
+Gaussian dağılım üretilir. Aslında Gaussian dağılımın o noktada çok enteresan bir özelliği var. Herhangi bir dağılımdan üretilen iki şeyin ortalamasını aldığın zaman Gaussian'a bayağı yakın bir şeyler buluyorsunuz.
+
+428
+01:35:56,243 --> 01:36:07,243
+Neyse, orası bizi şu anda çok ilgilendirmiyor. Ama hani temelde dediğim gibi şeyle sınırlı değiliz bilgisayarlarda. Sadece uniform dağılımına sınırlı değiliz.
+
+429
+01:36:07,311 --> 01:36:13,912
+rastgele gözüken sayı üreteçlerimiz temelde uniform üretiyorlar.
+
+430
+01:36:13,912 --> 01:36:24,512
+Uniform üreteçler de aslında diğer bütün dağılımlara kaynak olarak zaten kullanılabiliyorlar.
+
+431
+01:36:24,512 --> 01:36:27,311
+O noktada herhangi bir sıkıntımız oluşmuyor.
+
+432
+01:36:27,311 --> 01:36:28,311
+Tamam mı?
+
+433
+01:36:29,311 --> 01:36:31,180
+Peki.
+
+434
+01:36:31,988 --> 01:36:39,748
+Uniform dağılım üretmeyi de gördük. Şimdi bir tane şeyimiz olsun evimizde.
+
+435
+01:36:45,460 --> 01:36:47,960
+RAS quiere...
+
+436
+01:36:54,195 --> 01:37:00,195
+Rastgele sayı üretici kullanarak bir şey yapalım. Şöyle bir şey olsun, bir robotumuz olsun.
+
+437
+01:37:03,195 --> 01:37:14,195
+Robotumuz mesela işte bir şeyin içerisinde, evin içinde diyelim. Ne kadar kötü çözüldü ama neyse önemli değil.
+
+438
+01:37:14,195 --> 01:37:19,180
+Robotumuz mesela şurada, robot burada.
+
+439
+01:37:19,539 --> 01:37:22,719
+ve dört yöne gidebiliyoruz. Tamam mı? Şöyle.
+
+440
+01:37:24,659 --> 01:37:26,659
+Yönler. Yani
+
+441
+01:37:29,260 --> 01:37:33,100
+bir, iki, üç, dört nolu yönlere gidiyor biliyoruz.
+
+442
+01:37:33,880 --> 01:37:34,639
+Tamam mı?
+
+443
+01:37:36,699 --> 01:37:37,719
+Ve ben
+
+444
+01:37:38,739 --> 01:37:40,780
+şöyle bir şey istiyorum diyelim ki
+
+445
+01:37:41,819 --> 01:37:43,600
+robotum rastgele gezinsin.
+
+446
+01:37:43,860 --> 01:37:46,680
+Bu ortamın içerisinde.
+
+447
+01:37:47,060 --> 01:38:09,060
+Tamam mı? Rastgele gezinsin. Başlangıçta bir pozisyon olacak bunun. X0 ve Y0 pozisyon olacak yani şu başlangıçta yer. Maddesin içindeki bir yeri başlangıçta. Ondan sonra işte bir adım atsın. O adımı bu dört tane adımdan, dört tane yönden bir tanesine olsun.
+
+448
+01:38:09,300 --> 01:38:14,300
+Ondan sonra da bir kere daha bir adım alsın, sonra bir kere daha bir adım alsın. Belki işte böyle bir şey çizecek.
+
+449
+01:38:14,300 --> 01:38:22,300
+Buraya gidecek, sonra buraya gidecek, sonra buraya gidecek, sonra buraya gidecek, sonra buraya dönecek, sonra buraya dönecek, belki böyle gidecek, sonra buraya bir daha dönecek gibi gibi.
+
+450
+01:38:22,300 --> 01:38:28,300
+Tamam. Böyle bir rastgele gezinmesini simüle etmek istiyorum robotun. Rastgele gezinsin içerisine.
+
+451
+01:38:31,300 --> 01:38:36,300
+Sürece engel vesaire falan da katılabilir ama çok çok önemli değil. Şu anda biz şeye odaklanalım.
+
+452
+01:38:37,332 --> 01:38:54,132
+sadece rastgele gezinmeye odaklanalım. Şimdi burada ve her yöne gitme olasılığı da eşit olsun. Yani üniform dağılım bize yetsin.
+
+453
+01:38:59,891 --> 01:39:06,211
+Bu 1-2-3-4 yönünün seçilme olasılıklarını da eşit kabul ediyorum.
+
+454
+01:39:06,211 --> 01:39:15,571
+Peki nasıl bir şey olacak? Çizmeye çalışırsak bu süreci ve startla başlayacağız.
+
+455
+01:39:15,571 --> 01:39:20,531
+Tamam. Sonra bir X0, Y0 alacağız kullanıcıdan.
+
+456
+01:39:21,555 --> 01:39:33,956
+Sonra başka bir şey alacağız mı? Yok. Daha sonra bir for var. Ha bir de belki n'i alabiliriz. Kaç kez adım atacak onu göstersin tamam mı? G1'den başlayalım. Birer bürer n'e kadar gitsin. Kaç kez adım atacak?
+
+457
+01:39:46,868 --> 01:40:00,868
+Fonksiyonumuz olsun. Buna mesela diyelim ki biz 1 ile 4 diye bir şey yazdık. Bu fonksiyon da şey yapıyor. Uniform bir şekilde 1 ile 4 arasında bir sayı üretiyor. Tamam bu fonksiyon.
+
+458
+01:40:00,868 --> 01:40:06,868
+Ya da ona niye yön seçteyelim ki? Çok daha mantıklı bir isim koyalım ona. Pardon.
+
+459
+01:40:15,796 --> 01:40:29,196
+Random, 1,4. Tamam. Öyle olsun adı. Öyle isim verdim yani. 1 ile 4'ten birini, üniform olarak bize döndürüyor. Y diye.
+
+460
+01:40:30,068 --> 01:40:52,967
+Peki, şimdi bu y geldi bana, 1 geldi, 2 geldi, 3 geldi, 5 geldi artık, 5 gelmedi pardon. Bunların 1 geldi. Bu gelene göre benim bir hareket yapmam lazım. Yani y'yi, pardon şu x0 ve y0 diye ifade ettiğimiz şeyleri değiştirmemiz lazım. Mesela atıyorum, 1 gelirse, şöyle düşünelim, yapıyı düşünelim.
+
+461
+01:40:55,220 --> 01:41:06,720
+Şurası x0'a y0, bir gelirse buraya gideceğim ben. Değil mi? Bir gelirse buraya gideceğim, iki gelirse buraya gideceğim, üç gelirse buraya gideceğim, dört gelirse buraya gideceğim. Tamam?
+
+462
+01:41:08,060 --> 01:41:16,880
+O zaman y'ye bağlı olarak benim x'i ve y'de değişiklikler yapmam gerekecek. Değil mi? Yapalım.
+
+463
+01:41:17,660 --> 01:41:22,560
+Şunu attık, sonra bir diyelim, şu bir de buradan devam edelim.
+
+464
+01:41:22,804 --> 01:41:33,204
+Şimdi y eşit eşit bir ise ne olacak? Şurası true, pardon şurası true olsun, şurası false olsun.
+
+465
+01:41:41,939 --> 01:42:08,059
+Y eşit bir ise, ne yapacağım? Burada kaldığıma göre, burası x'i gösteriyor, burası y'i gösteriyorsa, x'imi bir arttıracağım, y'de herhangi birleşik yapmayacağım. Yani sadece x0 eşittir x0, onu da x0 demek biraz şey, işit karıştırıyor şu anda. Şey diyelim.
+
+466
+01:42:08,307 --> 01:42:15,307
+x ve y diyelim onlara. Daha iyi olacak sanki. x ve y diyelim.
+
+467
+01:42:15,307 --> 01:42:17,307
+Tamam mı?
+
+468
+01:42:21,307 --> 01:42:24,307
+Neyse orasını, bir daha dökmeyelim.
+
+469
+01:42:24,307 --> 01:42:35,916
+Şurasını şey yapalım, x eşittir, x artı bir. Bir olursa, yani yön bir olursa, x'ini bir arttıracağım, y'sine dokunmayacağım. Tamam.
+
+470
+01:42:36,564 --> 01:43:00,863
+false'da y eşit eşit 2 mi diye soracağım. Şurası true olsun. 2 olduğunda bu sefer y'sini bir arttıracağım, ikisine dokunmayacağım. y eşittir y artı 1 olacak. Sonra yine soracağım false'da. Şurası true idi, şurası false. y eşit eşit 3 mi diye soracağım. Şurası true.
+
+471
+01:43:02,484 --> 01:43:07,764
+3 olduğunu x'i bir azaltacağım bu sefer. x eşittir, x eksi bir olacak.
+
+472
+01:43:07,764 --> 01:43:17,044
+D ise de zaten 4 demektir. 4'te de ne yapacağım? x'e dokunmayacağım, y'sini azaltacağım değil mi? y eşittir, y eksi bir olacak.
+
+473
+01:43:17,044 --> 01:43:27,444
+Sonra şunları şurada toplayacağım, şunları, şurada toplayacağım, şunları da, şurada toplayacağım.
+
+474
+01:43:31,252 --> 01:43:35,252
+2 diyelim, bunu da buraya göndereceğim.
+
+475
+01:43:42,252 --> 01:43:51,252
+Yani, Y'nin farklı farklı değerleri için nasıl dönüşümler yapmam gerektiğini burada çıkarttım.
+
+476
+01:43:51,252 --> 01:43:57,252
+Ve bazen X'i de, ama zaten her birinde Y, çünkü şu yönlerde hareket yapmadım.
+
+477
+01:43:57,908 --> 01:44:02,908
+Eğer şu yönlere de hareket koysaydım, o zaman aynı anda hem X hem Y değişmesi gerekecekti.
+
+478
+01:44:02,908 --> 01:44:07,908
+Ama burada öyle bir şeye gerek kalmadı. Yani şöyle sadece X'in ya da Y'nin bir tanesinin değişmesi gerekti.
+
+479
+01:44:07,908 --> 01:44:16,908
+Peki, eğer ki ben 4 yöne değil de 8 yöne doğru gitseydim hakikaten, yani şöyle bir şey olsaydı,
+
+480
+01:44:16,908 --> 01:44:23,660
+şu yönlerde benim, yapabildiğim şeylerin arasına girseydim. Mesela 1, 2, 3, 4, onları verdim.
+
+481
+01:44:23,667 --> 01:44:41,667
+Belki şöyle bir şey olacak o zaman, bir burası olacaktı, iki burası olacaktı, üç burası, dört burası, beş burası, altı burası, yedi burası, sekiz, sekiz tane hareket yapabileceğim mesela diyelim ki. Robotumuzun öyle bir kabiliyeti var. Tamam mı?
+
+482
+01:44:44,180 --> 01:45:05,420
+Burada tabi demin kodu yazarken şöyle bir şey yapmışım, ters bir hareket yapmışım. Şurada X ve Y dedim de buradaki Y ile buradaki Y aynı şey değil. Onu aslında düzeltmemiz lazım. Böyle kalırsa. Ben şuna R diyeyim, tamam mı? Şuna R diyeyim. Şunlar R olsunlar.
+
+483
+01:45:08,916 --> 01:45:12,916
+Çünkü Y ile Y bilmek karışır, yazmamak gerekir.
+
+484
+01:45:15,916 --> 01:45:23,916
+Yani rastgele bir sayı üretiyorum. O üretim sayının 1-2-3-4 oluşuna göre robotun X ve Y koordinatlarını değiştiriyorum.
+
+485
+01:45:23,916 --> 01:45:32,895
+Tamam mı? Deminki yazdım da sanki robotun koordinatına göre falan bir şeyler gibi olmuşlar. Öyle değil.
+
+486
+01:45:32,895 --> 01:45:45,895
+Sonuç olarak burada aslında robotun ne yapıyorum ben, başlangıçta belli bir X ve Y'si var, ondan sonra bir sonraki yanında buraya atlıyor, bir sonraki yanında buraya atlıyor, bir sonraki yanında buraya atlıyor, bir sonraki yanında buraya atlıyor, bir sonraki yanında buraya atlıyor gibi böyle gezmiyor.
+
+487
+01:45:45,895 --> 01:45:51,895
+Ve ben bunu bu şekilde yapabiliyorum. Peki ben bunu farklı bir şekilde nasıl yaparım, ondan bahsetmeye çalışıyorum.
+
+488
+01:45:59,220 --> 01:46:01,220
+Yine bir beyaz tahta açalım.
+
+489
+01:46:03,220 --> 01:46:07,052
+Bunu birazcık büyük çizeyim ki daha net anlaşılsın.
+
+490
+01:46:11,252 --> 01:46:21,252
+Burası x, y ise, tamam? Burası bir yönü olsun, burası iki yönü olsun, burası üç yönü, dört yönü, beş yönü, altı yönü, yedi yönü, sekiz yönü.
+
+491
+01:46:21,252 --> 01:46:28,252
+Burası x'i gösteriyor, burası y'yi gösteriyor. Tamam, o şekilde seçim yapmış olalım.
+
+492
+01:46:28,252 --> 01:46:38,252
+Şimdi birin seçtiğini, bir gelirse, bunun x ve y neye dönüşecek? Bir gelirse, siz söyleyin bunu, x'i bir artacak, y'si aynen kalacak değil mi?
+
+493
+01:46:38,868 --> 01:46:42,468
+x artı bir virgül y olacak, doğru mu?
+
+494
+01:46:49,844 --> 01:47:11,244
+2 olursa, 2 olursa, x'i 1 artacak, y'si de 1 artacak. Yani şurada x artı 1 virgül, y artı 1 olacak. 3 olursa, y'si artacak sadece, y artı 1 olacak, x'i aynen kalacak. 7 olursa, y'sini biraz azaltacağız, x'i aynen, pardon.
+
+495
+01:47:20,979 --> 01:47:30,979
+x'e y artı bir, x'e y eksi bir olacak. Burası olursa x eksi bire y'si aynen kalacak.
+
+496
+01:47:30,979 --> 01:47:37,979
+Burada x'i de, x'i bir azalacak, y'si de bir azalacak.
+
+497
+01:47:43,572 --> 01:47:51,572
+x-1'e y-1 olacak şeklinde bunları ne yapabiliriz, doldurabiliriz, dolduralım elimizde değmişken.
+
+498
+01:47:51,572 --> 01:48:00,572
+Burası x-1 olacak, yani şu köşeye doğru gidersek, x-1 azalacak, y-1 artacak.
+
+499
+01:48:00,572 --> 01:48:06,315
+Burada da x-1 artacak ama y-1 azalacak. Tamam.
+
+500
+01:48:06,323 --> 01:48:16,323
+8 yöne doğru hareket ettiğimizde böyle şeyler yapmamız gerekecek. Şöyle şöyle işte. Bunlar 8 yöne gösteriyorlar bize.
+
+501
+01:48:23,604 --> 01:48:38,284
+O zaman ben burada tüm beyaz tahtaları göster, şurada şu yapmış olduğum süreci böyle dörtlü değil de sekizli bir yapıyla yapmam gerekecek.
+
+502
+01:48:39,124 --> 01:48:43,124
+Ve içlerinde işte burası böyleyse böyle yap, burası böyleyse böyle yap, şeklinde yapılar olacak.
+
+503
+01:48:44,404 --> 01:48:59,604
+Dörtlü için böyle sekiz için, robotun daha fazla kabiliyeti varsa, ne bileyim, sekiz yöne değil de, on altı yöne de gidiyor olabilir. Kırk sekiz yöne de gidiyor olabilir. Bir sürü kabiliyeti olabilir robotun.
+
+504
+01:49:00,604 --> 01:49:03,604
+Tekerlerine şuna bunla falan bağlı olarak.
+
+505
+01:49:04,404 --> 01:49:11,004
+O zaman burada bu ifli yapıyı kullanmadan acaba bir şey yapabilir miyiz?
+
+506
+01:49:11,539 --> 01:49:12,779
+Sorumuz bu.
+
+507
+01:49:13,919 --> 01:49:15,079
+Şimdi
+
+508
+01:49:21,587 --> 01:49:47,407
+İstediğim şey şu arkadaşlar sizlerden. Bu sekizli için ya da dörtlü için de olur, fark etmez. İflerden kurtulabilir miyiz? Ki çok daha ölçeklenebilir bir kod yazabilelim. Çünkü öteki türlü hareket sayısına bağlı olarak kodun satır sayısı değişiyor.
+
+509
+01:49:47,859 --> 01:49:50,859
+Bu hiç ölçeklenebilir bir şey değil. Tamam.
+
+510
+01:49:52,859 --> 01:49:59,859
+Hareket sayısı istediğimiz kadar olabilsin ama hiç şey yapmayalım, if kullanmayalım.
+
+511
+01:50:01,859 --> 01:50:03,859
+Tamam mı? Anlaşıldı mı soru?
+
+512
+01:50:03,859 --> 01:50:04,859
+Evet hocam.
+
+513
+01:50:05,859 --> 01:50:06,859
+Tamam, peki.
+
+514
+01:50:07,859 --> 01:50:14,699
+Şimdi 10.46 saat, bir 5 dakika vereyim size.
+
+515
+01:50:14,899 --> 01:50:35,899
+10.51'e kadar. Hatta 10.51'den sonra da bir 9 dakikada bir normal ara veririz. Saat o zaman 11 olur. 11'de devam ederiz. O zaman öyle yapalım. Tamam. 11'e kadar ara yapalım o zaman.
+
+516
+01:50:55,699 --> 01:51:03,699
+Şimdi dediğim gibi biraz, yani 14 dakika ara vermiş gibi oluyoruz ama hepsi şey değil, ara değil. Şeyde bakın.
+
+517
+01:51:04,699 --> 01:51:09,699
+Bu iflerden nasıl kurtulabileceğimizi. Tamam mı?
+
+518
+01:51:10,699 --> 01:51:12,699
+Az sonra görüşmek üzere.
+
+519
+02:04:58,452 --> 02:05:00,811
+Evet arkadaşlar, sesim geliyor mu şu anda?
+
+520
+02:05:01,492 --> 02:05:02,172
+Geliyor hocam.
+
+521
+02:05:03,012 --> 02:05:13,771
+Tamam. Şimdi, if kullanmadan bunu yapabilir miyiz diye sormuş herhalde. Evet, cevaplarınızı yazabilirsiniz chat'e.
+
+522
+02:05:32,307 --> 02:05:50,307
+1-3 arası bir şey üretip oradan çizileceksiniz, çıkartacaksınız. Evet, peki başka mesaj? Aynı şekilde, aynı şekilde.
+
+523
+02:06:07,444 --> 02:06:20,644
+Bu zaman m ve n için 1 ile 1, 2, 3'ten herhangi bir tanesi üretilecek. Bundan 2'yi çıkartacaksınız. Bundan 2'yi çıkarttığınızda ne olmuş olacak aslında en azı.
+
+524
+02:06:20,644 --> 02:06:28,844
+Eksi bir, sıfır bir gibisinden bir şey olacak, doğru mu? Eksi bir, sıfır bir olacak.
+
+525
+02:06:35,123 --> 02:07:02,763
+eklemek ve y'ye eklemekten bahsediyoruz. Buradaki eksi bir eksi bir sıfır sıfır. Biz sıfır sıfır hareketi de üretmiş olacağız burada. Yani fazladan sekiz yani sekiz değil dokuz tane şey var ama o da hareket ettirmeyecek zaten. Diye şey yapabiliriz.
+
+526
+02:07:02,931 --> 02:07:16,931
+düşünebiliriz. 0-0 durumunu işin içinden çıkartmak da mümkün. Kalsa da çok çok da büyük sıkıntı olmazsa yanlar görürsün. Evet, bu şekilde yapabilirsiniz.
+
+527
+02:07:16,931 --> 02:07:29,579
+Başka yine çok benzer bir şekilde belki şöyle bir şey olabilir. Şöyle bir şey tanımlarsanız, 8 ela, 8 tane şey olan.
+
+528
+02:07:30,804 --> 02:07:44,604
+sütun iki tane satır olan. Mesela burası delta x'i, burası delta y'yi içerir. Burası da 1, 2, 3, 4, 5, 6, 7, 8'i içerir.
+
+529
+02:07:44,979 --> 02:08:12,119
+Yani bir mesela, bir şuradaki bir, x'i bir arttır, y'ye dokunma. İki mesela, x'i de bir arttır. Üç, x'i aynen kalsın, y'yi bir arttır. Dört, x'i bir azalt, y'yi bir arttır. Beş, x'i bir azalt, y'yi aynen bırak. Altı, ikisini de bir azalt, yedi, x'e dokunma, y'yi bir azalt. Sekiz, x'i arttır.
+
+530
+02:08:13,555 --> 02:08:25,555
+Y'yi bir azalt gibi böyle bir şey tutup daha sonra 1 ile 8 arasında random bir şey yapıp, round 1, 8 dedik mesela bu bize R diye bir şey verdi.
+
+531
+02:08:25,555 --> 02:08:37,555
+Daha sonra X'in üzerine X artı delta X diyeyim buna, delta X'in R'incisi mesela yani burasını...
+
+532
+02:08:38,323 --> 02:08:52,323
+Dx burasını dy diye düşünürsek, iki farklı dizi diye düşünürsek, dx ve dy diye, dx'in renci elemanını, r işte neyse artık, onu ne yapabiliriz?
+
+533
+02:08:52,323 --> 02:09:02,155
+ekleyebiliriz. Aynı şekilde y de y artı dy'nin renci elemanı olur. Yani şurada bir r diye bir şey tanımlarsınız.
+
+534
+02:09:02,228 --> 02:09:11,528
+O da ile 8 arasında rastgele bir şey olur. Bunu bu şekilde gerçekleştirebiliriz. Pekala, bunların ikisi de gayet mümkün.
+
+535
+02:09:11,528 --> 02:09:25,528
+Peki, şimdi ben bir tane şey yazacağım, kod yazacağım. Son şeyimiz zaten. Örneğimiz bugünkü.
+
+536
+02:09:30,804 --> 02:09:34,124
+Bu kolun çıktısı üzerine konuşacağız.
+
+537
+02:09:43,347 --> 02:10:06,347
+n alalım kolayca. Evet. Start ile başlayalım. Kolajdan bir n rakamını aldım. Sonra bir döngümüz olsun. i eşittir birden başlasın, n'e kadar gitsin, n kez döneceğiz. x eşittir rand.
+
+538
+02:10:09,427 --> 02:10:29,427
+Rant 01 derken, burada dikkat etmek istediğim şey 0 ya da 1 değil, 01 aralığında bir şey. Yani 0.23, 0.92, 0.99, anlatabildim mi? Böyle şey üretiyor.
+
+539
+02:10:29,427 --> 02:10:35,427
+Y eşittir, bu da rant 0.1, yani böyle iki tane rakam üretiyor.
+
+540
+02:10:36,500 --> 02:10:50,739
+Sonra bir soru soruyorum, diyorum ki, x'in karesi ile y'nin karesinin toplamı birden küçükse,
+
+541
+02:10:58,068 --> 02:11:05,368
+Biriden küçükse, S diye bir değişkenim olsun, onu S artı bir yapayım.
+
+542
+02:11:06,368 --> 02:11:08,364
+Şu S'den başla sıfırlayayım.
+
+543
+02:11:20,243 --> 02:11:22,243
+Şuan çıktık, şuraya geldik.
+
+544
+02:11:22,243 --> 02:11:27,243
+Burada da şuna yazdırayım ekrana.
+
+545
+02:11:42,899 --> 02:11:43,899
+Burna.
+
+546
+02:11:48,372 --> 02:11:50,372
+Yerken az itin.
+
+547
+02:11:58,899 --> 02:12:11,099
+İki tane sayı attım. 0 ile 1 aralığında rasyon sayılar ürettiriyorum. 0,23, 0,45 gibi bir şeyler ürettiriyorum.
+
+548
+02:12:11,099 --> 02:12:22,199
+0 ile 1 aralığında değişen. Sonra x ve y. Sonra x'in karesi, y'nin karesinin toplamı birden küçük ise bu durumda s'yi 1 arttırıyorum.
+
+549
+02:12:22,199 --> 02:12:24,899
+Tamam. Bu işi yap...
+
+550
+02:12:25,076 --> 02:12:41,315
+Sıptımda bunu n kez yapıyorum. 1 milyon kez yapıyorum, sağlıyorum. Sonra da S'i neye bölüyorum? Bu çıkan rakam nasıl bir şey olur? Sorum bu.
+
+551
+02:12:46,868 --> 02:12:54,547
+İpucu olarak şöyle bir şey düşünebilirsiniz. Şuradaki X ve Y'yi bir tane noktanın koordinatları gibi düşünelim.
+
+552
+02:12:56,588 --> 02:12:59,588
+Yani şöyle bir şey işte.
+
+553
+02:13:01,108 --> 02:13:04,668
+X ve Y'yi öğrettim. Tamam mı?
+
+554
+02:13:05,908 --> 02:13:09,467
+İki boyutlu uzaylı bir nokta öğretiyorum gibi hayaletin.
+
+555
+02:13:09,939 --> 02:13:18,939
+Ona göre bu yaptığımız iş neye denk gelir? Bu yaptığımız işin o denk geldiği şeye göre bu S bölü ne olur? Tamam sorumuz bu.
+
+556
+02:13:18,939 --> 02:13:22,939
+Herkes bir düşünsün bakalım, 5 dakika verelim size.
+
+557
+02:13:26,939 --> 02:13:32,875
+11, 14'de kadar...
+
+558
+02:13:35,123 --> 02:13:38,163
+Düşün diyorum bu sefer, düşünme demiyorum.
+
+559
+02:13:40,083 --> 02:13:42,163
+Tamam, bekliyorum arkadaşlar.
+
+560
+02:13:42,163 --> 02:13:44,483
+Chat'e yazmayın, o zaman yazarsınız.
+
+561
+02:19:51,956 --> 02:19:54,956
+Evet, arkadaşlar. Sesim geliyor mu?
+
+562
+02:19:54,956 --> 02:19:55,956
+Geliyor hocam.
+
+563
+02:19:56,956 --> 02:19:59,956
+Tamam, pek. Evet. Ne buldunuz?
+
+564
+02:20:10,195 --> 02:20:12,195
+Pi bölü 4.
+
+565
+02:20:14,195 --> 02:20:18,195
+O zaman buna 4 ile çarparsak da pi eder diyorsunuz öyle mi?
+
+566
+02:20:20,195 --> 02:20:21,195
+Yani...
+
+567
+02:20:22,195 --> 02:20:23,979
+Bir saniye...
+
+568
+02:20:29,716 --> 02:20:33,716
+Nasıl buldunuzu anlatın bakalım bi. Nasıl çıktık pi?
+
+569
+02:20:34,716 --> 02:20:35,468
+Burda.
+
+570
+02:20:42,963 --> 02:20:46,963
+Hocam çünkü daire...
+
+571
+02:20:46,963 --> 02:20:51,963
+Sesin çok kötü geliyor.
+
+572
+02:20:55,412 --> 02:21:03,412
+Anlaşılmıyor tam olarak. Arkada çok sağlam bir şey var. Büyütü var ama neden de bilmiyorum.
+
+573
+02:21:12,371 --> 02:21:38,371
+Metro odasın, o yüzden. Evet. Peki. [öğrenci] ne demiş? Yarı çapı bir birim olan 00 merkezi çemberin birinci bölgede kalan kısmının alanına yakın. Ama bir de onu ene bölüyoruz, değil mi? O zaman da işte alanla şeyin arasındaki ilişki ortaya çıkıyor.
+
+574
+02:21:40,691 --> 02:21:51,091
+P arasındaki ilişki ortaya çıkıyor. Peki. Peki, tamam, evet. Arkadaşlarınızın dediği hepsi doğru.
+
+575
+02:21:51,091 --> 02:22:03,491
+Tabii burada n'i ne kadar büyütürsek, yani burada kullanıcıdan aldığımız n'i kaç kez nokta oluşturacağımızı...
+
+576
+02:22:06,164 --> 02:22:15,164
+Büyütürsek, burada bulacağımız sonuç o kadar pi bölü 4'e yakın olacaktır.
+
+577
+02:22:17,164 --> 02:22:27,664
+Şimdi, dolayısıyla hani bilgisayarda pi elde etmenin bir sürü bir sürü bir sürü yolu olabilir ama bunlardan bir tanesi de bu mesela.
+
+578
+02:22:28,659 --> 02:22:35,260
+Pi'ye ne kadar yakın bir sonuç elde etmek istiyorsanız, en değerini o kadar ne yaparsınız? Arttırırsınız.
+
+579
+02:22:36,060 --> 02:22:41,779
+Burada dediğim gibi Pi'ye erişirsiniz. Yani erişirsen yaklaşırsınız, öyle söyleyeyim.
+
+580
+02:22:42,100 --> 02:22:44,500
+Pi üretmenin bilgisayarda bir yolu.
+
+581
+02:22:44,500 --> 02:22:53,739
+Pi'nin gerçeklerini bilgisayarda asla üretemeyeceğimizi, ki zaten bilgisayarda da ya da herhangi bir yerde de Pi'nin değerini saklayamayacağımızı biliyoruz.
+
+582
+02:22:53,739 --> 02:22:55,739
+İrrasyonel bir şey olduğu için.
+
+583
+02:22:56,659 --> 02:23:04,819
+Yani bilgisayar özelinde saklanamaz değil, kağıdı kitaba da yazsak da olmaz o manada demek istiyorum.
+
+584
+02:23:04,819 --> 02:23:15,059
+Gerçeklerin ne olduğunu söyleyemeyiz. Ama yaklaşıklığı için bir sürü yöntem var.
+
+585
+02:23:15,059 --> 02:23:22,260
+Ve dilediğimiz kadar yaklaştırdığı için buradaki bazı yöntemler daha güzeller.
+
+586
+02:23:22,579 --> 02:23:36,579
+Yani mesela işte burada n'in değerini arttırarak dilediğimiz kadar yaklaşabiliriz. Ya da birinci ya da dersin birinci ya da ikinci haftasında mesela seriye açılımıyla P'den bahsetmiştik yanlış hatırlamıyorsam.
+
+587
+02:23:38,579 --> 02:23:41,579
+Orada da yine dediğimiz kadar...
+
+588
+02:23:43,924 --> 02:23:53,204
+Terimi kullanarak, öyle söyleyeyim, dediğimiz kadar terimi kullanarak ne yapabiliriz? Pi'ye ya da işte neye yaklaşmak için o kadar yaklaşırız. Bunlar o noktada önemliler.
+
+589
+02:23:53,204 --> 02:24:00,804
+Peki arkadaşlar, hepinize teşekkür ediyorum. Bu haftaki dersimiz bu kadar. Sorularınız var mı dersle alakalı?
+
+590
+02:24:08,147 --> 02:24:17,628
+Peki, o zaman haftaya aynı gün aynı saatte görüşmek üzere diyorum kısmı size. Hepinize hoşçakalın, sağlıcakla kalın.
+
+591
+02:24:17,628 --> 02:24:18,827
+Görüşmek üzere hocam.
+
+592
+02:24:56,500 --> 02:24:58,500
+Bu, şeyleri mi soruyor.
+
+593
+02:25:01,683 --> 02:25:02,683
+Nedir?
+
+594
+02:25:06,611 --> 02:25:13,851
+Sizin kötü geldiğiniz için, sınav ne zaman? Çünkü programda 10.9'da yazıyordu.
+
+595
+02:25:13,851 --> 02:25:17,331
+Arkadan 1.9'da 10.9'da yazıyordu.
+
+596
+02:25:17,331 --> 02:25:18,331
+Sayın doktorlarına.
+
+597
+02:25:18,331 --> 02:25:21,891
+Sınav ne zaman? Onu mu soruyorsun?
+
+598
+02:25:21,891 --> 02:25:23,891
+Evet hocam.
+
+599
+02:25:23,891 --> 02:25:26,291
+Duyuracağız.
+
+600
+02:25:30,868 --> 02:25:40,620
+Yani normal... Efendim? Ders planına 19 Nisan şeklinde yazılmıştı, 19 Nisan'da değil değil mi?
+
+601
+02:25:43,924 --> 02:25:54,164
+8. hafta olabilir, yani 8. hafta ya da 9. hafta olacaktır. Yani 2 hafta sonra ya da 3 hafta sonra olacaktır.
+
+602
+02:25:59,956 --> 02:26:05,956
+Tamam mı? Yani ders planları yazan şey, enteresan bir şey değil.
+
+603
+02:26:09,652 --> 02:26:15,332
+19'u zaten iki hafta sonra oluyor, o da zaten sekizinci hafta oluyor, öyle değil mi?
+
+604
+02:26:17,652 --> 02:26:23,652
+Yani şu anda sekizinci hafta olacağını düşünmeniz gayet normal, onu söyleyebilirim.
+
+605
+02:26:23,652 --> 02:26:27,652
+Ama kesin şeyi zaten size haberdar ederiz.
+
+606
+02:26:27,652 --> 02:26:33,652
+Ama şu anda siz on dokuzunda olacakmış gibi düşünebilirsiniz rahatlıkla. Tamam?
+
+607
+02:26:34,652 --> 02:26:36,620
+Tamamdır hocam, teşekkürler.
+
+608
+02:26:36,691 --> 02:26:37,691
+Rica ederim.
+
+609
+02:26:39,691 --> 02:26:40,691
+Eee, hocam.
+
+610
+02:26:41,691 --> 02:26:42,691
+Efendim.
+
+611
+02:26:42,691 --> 02:26:52,691
+Ben bu uygulamalar hakkında bir şey söylemek istiyorum da, ben mesela uygulamada çözdüğümüz sorular, işte ne bileyim mesela iki soru çözüyoruz.
+
+612
+02:26:52,691 --> 02:26:55,691
+Hani bu sorular çok böyle basit.
+
+613
+02:26:55,924 --> 02:27:21,924
+TİT'te sorular oluyor. Hani böyle düşünmeye gerek olmuyor. Hani iki tane for ile falan çözülülebilecek sorular oluyor ama hani labda sorulan soru böyle hani aşırı düşündürücü ya da ne bileyim daha önce karşılaşmadım işte mesela string çözmedik yine mesela bu şeyde uygulamada. Ne bileyim string oluyor, işte iç içe beş tane duvar oluyor falan.
+
+614
+02:27:23,731 --> 02:27:25,731
+İçice 5 tane mi?
+
+615
+02:27:25,731 --> 02:27:32,427
+Yani o tür işte 4-5, öyle bir sorumuz var yani. Önceki lap 1 öyleydi.
+
+616
+02:27:35,443 --> 02:27:54,443
+Şimdi, şöyle söyleyeyim, hani stringlerle falan alakalı düşünürseniz, yani algoritmik değil de teknik manada bir şeyler eksik olduğunu düşünüyorsanız, o noktada dersin sayfasında C ile alakalı ders notları var.
+
+617
+02:27:56,788 --> 02:28:05,788
+Oradan zaten rahatlıkla faydalanabilirsiniz. Yani hani size anlatılmasını beklemeniz şartta değil. Anlatabildim mi demek istedim onlara bakmak için.
+
+618
+02:28:05,788 --> 02:28:20,788
+Soruların zorlu, kolaylığı noktasında uygulamalarda vesaire hani uygulamalarda biraz daha basit bir şey anlatılıyor. Doğru ama sınıfın içerisinde şöyle bir durum da var maalesef.
+
+619
+02:28:22,579 --> 02:28:48,380
+Birinci dönemki dersi almadan gelen arkadaşlarınız da var. O yüzden bu özellikle bir iki hafta alıştırma anlamında olması açısından laplardaki sorular biraz daha basitlerdi. Onlar giderek şey olacaklar, daha sizi zorlayacak öyle söyleyeyim hale gelecekler. Tamam mı?
+
+620
+02:28:49,652 --> 02:29:01,051
+Laplardaki sorularınız da yine aynı seviyede olmaya devam edecekler. Yani sizi zorlayacak seviyede olacaklar. Tamam. Onda bir değişiklik olmayacak.
+
+621
+02:29:01,051 --> 02:29:03,652
+Tamamdır hocam.
+
+622
+02:29:03,652 --> 02:29:05,652
+Tamam, peki.
+
+623
+02:29:05,652 --> 02:29:09,652
+Peki, başka soru var mı?
+
+624
+02:29:12,211 --> 02:29:37,931
+Aslında bu iki gün önceki uygulamada bazı arkadaşlar şey demişti işte, bir saat laboratuvar için az falan da şimdi kimse hiçbir şey sormadı. Ben onlar yerine sorayım. Şöyle demişler, hani bir saat yetmiyor, soru çok hani hem düşünmeye hem de kodu yazmaya bir saat yetmiyor gibi bir...
+
+625
+02:29:38,131 --> 02:29:47,131
+Şey söylemişlerdi, hani herhangi bir şekilde bu uzatma, yarım saat falan uzatma olabilir mi gibi bir şeyler demişlerdi. Ben onlar yerine size ileteyim.
+
+626
+02:29:49,131 --> 02:29:58,131
+Yani şöyle bir şey söyleyeyim, hani onu biz değerlendiririz ama orada çok fazla uzatma olabileceğini düşünmüyorum.
+
+627
+02:29:58,131 --> 02:30:00,000
+Yani oradaki...
+
+628
+02:30:00,000 --> 02:30:05,000
+Sonuçta teslim edilen ödevlerin sayısına bakarak da birazcık hareket ediyoruz o noktada.
+
+629
+02:30:05,000 --> 02:30:11,000
+Süre anlamında ne olur, ne biter diye. Çok büyük problemler yok gibi gözüküyor.
+
+630
+02:30:14,000 --> 02:30:23,000
+Hocam, en azından bu zoom süresinin ödev süresine dahil olmama durumu değerlendirilebilir mi?
+
+631
+02:30:23,000 --> 02:30:26,000
+Mesela 20-30 dakika bile kazansak bizim için iyi bir kazanım olur.
+
+632
+02:30:27,476 --> 02:30:31,435
+Anladım, anladım. Onu konuşabiliriz, onu konuşabiliriz.
+
+633
+02:30:35,987 --> 02:30:45,987
+Bir de hocam, bizim bu lab testilerimizin hep bu şeyden mi olacak, Google Forms üzerinden mi olacak, şeyi taşıması mümkün mü? Online yıldız sistemine, iletim daha rahat olması açısından.
+
+634
+02:30:45,987 --> 02:30:48,811
+Niye? Orada sıkıntı var mı ki?
+
+635
+02:30:50,868 --> 02:31:02,868
+Yani hocam şey oluyor, bazı arkadaşlarımıza mesela ucu ucunu yetiştiriyor. Bu grupta muhasef ben de varım. Ucu ucunu yetiştik oluyor. Öyle bir durumda bazen bilgilerin hatalı girilmesi söz konusu olabiliyor. Mesela ben geçen hafta benim yanlış.
+
+636
+02:31:02,868 --> 02:31:05,868
+Bunun online ile bir alakası yok ama.
+
+637
+02:31:06,324 --> 02:31:10,484
+Yani... Yok, hani online yıldız sisteminden aktarılırsa, online yıldızda bilgiler hala hazırda...
+
+638
+02:31:10,484 --> 02:31:25,603
+Şimdi, online sistemde iki gruba aynı anda bir şey yapıp orada almak pek şey değil. Mümkün değil. Şu andaki bu sistem muhtemelen devam edecektir.
+
+639
+02:31:31,667 --> 02:31:38,667
+Zaman içerisinde neye dikkat etmeniz gerektiğini zaten öğreniyorsunuz. Zaten bir tane yanıma payınız var biliyorsunuz laplarda.
+
+640
+02:31:38,667 --> 02:31:44,667
+Yani hani dört tane lava gireceksiniz, en yüksek üçünün ortalaması alınacak.
+
+641
+02:31:44,667 --> 02:31:52,667
+Tamam. Dolayısıyla bu gibi durumlara karşı da biraz sigortanız var o noktada.
+
+642
+02:31:52,667 --> 02:31:56,667
+Yani şu anda onun üzerinden devam edecek. Tamam mı?
+
+643
+02:31:56,667 --> 02:31:58,667
+Tamamdır hocam, teşekkürler.
+
+644
+02:31:59,379 --> 02:32:00,379
+Rica ederim.
+
+645
+02:32:03,827 --> 02:32:05,420
+Evet, başka.
+
+646
+02:32:09,620 --> 02:32:11,620
+Hocam, bir de bir şey sorabilir miyim?
+
+647
+02:32:11,620 --> 02:32:13,620
+Tabi, buyur.
+
+648
+02:32:15,620 --> 02:32:17,620
+Hocam, yüzde yapacak mısınız dersi?
+
+649
+02:32:18,620 --> 02:32:28,620
+Ya şimdi şöyle, yüzde mevzusunda şu anda yaptığım işi tahtlı, yani ben tabii ki dersin tamamen yüzde olması isterim.
+
+650
+02:32:28,788 --> 02:32:36,508
+Ama hibrit olarak bunu sınıfta nasıl şey yapabiliriz çok çok emin olamıyorum.
+
+651
+02:32:36,508 --> 02:32:45,908
+Neden? Tahtaya yazdığım şeyi çekecek kamera, donanım vesaire gibisinden bir şeyler maalesef yoklar. Anlatabildim mi?
+
+652
+02:32:45,908 --> 02:32:56,780
+Öyle bir şey olsa, öyle bir düzenek olsa eğer ki, aynı anda hem sınıfta oturanların tahtayı
+
+653
+02:32:57,012 --> 02:33:16,292
+Bu işleri göreceği aynı anda da o tahtanın kamerayla çekilip zooma basılması mevzusu, yani o şeyde kabiliyetli bir ya da şey, donanım yok. Anlatabilir mi demek istediğimi? Maalesef, şu anda. Bunu yapabilecek. Benim elimde yok.
+
+654
+02:33:18,132 --> 02:33:23,891
+Belki olan hocalar vardır, bilmiyorum. Ama benim elimde öyle bir imkan olmadığından
+
+655
+02:33:24,564 --> 02:33:35,044
+Online'e devam edeceğim. Hibrite, derse gelmeden önce bakıyorum geldi ama şu anda sınıflarda çok da fazla kişi göremedim.
+
+656
+02:33:35,044 --> 02:33:47,524
+Eğer ki biz geleceğiz derse, yani biz derse gelenler olursa onlarla bir çözümler geliştirmeye çalışırız.
+
+657
+02:33:47,524 --> 02:33:48,524
+Tamam.
+
+658
+02:33:50,324 --> 02:33:57,824
+Ama şimdilik en azından birinci vizeye kadar, yani muhtemelen önümüzdeki hafta da böyle olur diye tahmin ediyorum.
+
+659
+02:33:57,824 --> 02:34:07,123
+Ondan sonra belki biraz daha hibrite yönelik bir hareket yapabiliriz. Ama şu an dediğim gibi mevcut döngüler bende yoklar.
+
+660
+02:34:07,123 --> 02:34:12,123
+Tahtayı çekip okunabilir seviyede zoom'a yansıtabilecek.
+
+661
+02:34:14,524 --> 02:34:15,923
+Dağındır hocam, sağ olun.
+
+662
+02:34:16,211 --> 02:34:18,211
+Evet, başka?
+
+663
+02:34:22,260 --> 02:34:28,260
+Hocam, finallerle ilgili sorumlar var mı? Online ya yüzüğü şeklinde daha belli mi?
+
+664
+02:34:28,260 --> 02:34:50,028
+Belli değil. Sadece ara sınavların online olarak yapılması istendi. Finallerin ne olacağı, benim bildiğim kadarıyla üniversiteler kendileri kararlerecekler gibi bir durum var yanlış anlamadıysam. Ama bir karar yok yani şu anda.
+
+665
+02:34:52,659 --> 02:34:53,659
+Teşekkürler.
+
+666
+02:34:53,659 --> 02:34:54,659
+Sağ olun.
+
+667
+02:34:58,644 --> 02:35:03,644
+Peki. Peki o zaman arkadaşlar, görüşmek üzere.

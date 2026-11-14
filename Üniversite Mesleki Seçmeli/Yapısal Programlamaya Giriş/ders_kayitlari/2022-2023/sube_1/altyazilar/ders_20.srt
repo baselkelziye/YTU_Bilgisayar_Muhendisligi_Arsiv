@@ -1,0 +1,2091 @@
+1
+00:07:38,867 --> 00:07:42,867
+Hocam sesiniz geliyor ama biraz yankılı geliyor sanki.
+
+2
+00:07:42,867 --> 00:07:44,867
+Tamam, geliyor.
+
+3
+00:08:06,516 --> 00:08:07,516
+Şimdi nasıl?
+
+4
+00:08:09,516 --> 00:08:10,516
+Daha iyi hocam.
+
+5
+00:09:21,395 --> 00:09:39,596
+Sesim şu anda iyiydi mi arkadaşlar? Bir sıkıntı olmaması lazım ama şu anda... Yok hocam, iyi geliyor. Şu anda iyi, tamam. Peki, sınav nasıl geçti? Notlarınız açıklandı, gördünüz değil mi? Önce onu sorayım.
+
+6
+00:09:48,947 --> 00:09:49,947
+Görmediniz mi?
+
+7
+00:09:58,131 --> 00:10:00,131
+Gördük hocam notları.
+
+8
+00:10:02,131 --> 00:10:03,131
+Evet.
+
+9
+00:10:11,892 --> 00:10:29,392
+Şimdi, bugünkü dersimiz, sınavdan önce başladığımız bir konunun devamı aslında, Recursive fonksiyonların analizinden bahsedeceğiz.
+
+10
+00:10:31,392 --> 00:10:32,392
+[öğrenci] Hanım?
+
+11
+00:10:32,392 --> 00:10:33,392
+Efendim?
+
+12
+00:10:33,392 --> 00:10:34,892
+Bir şey söyleyebilir miyim?
+
+13
+00:10:35,251 --> 00:10:40,251
+Biz derslerde hep flowchart üzerinden ilerliyorduk ama sınavda hep...
+
+14
+00:10:40,251 --> 00:10:42,251
+Ne yaptık? Biraz soru.
+
+15
+00:10:42,251 --> 00:10:45,251
+Bir daha söyleyebilir misin?
+
+16
+00:10:45,251 --> 00:11:01,931
+Dersde hep flowchart ve algoritm üzerinden ilerlediğimiz için sınavda hep kod çıkması, yani beni en azından kendim açısından konuşursam biraz zorladı. Acaba dersin sonunda veya çok az bir kısmını koda ayırabilir miyim?
+
+17
+00:11:04,275 --> 00:11:10,836
+Ya şöyle söyleyeyim, hani derste yaptığımız algoritmaların kodlarını yazmıyor musunuz?
+
+18
+00:11:13,155 --> 00:11:28,755
+Yani bunları yazıp, hani bizim yaptığımız şeyler çalışıyor mu, çalışmıyor mu, hakikaten iddia ettiğimiz gibi daha hızlı mı çalışıyor vesaire gibisinden şeyleri kendinizin kontrol etmesi lazım.
+
+19
+00:11:29,011 --> 00:11:46,011
+Yani, nasıl söyleyeyim, oradaki gördüğünüz algoritmalar aslında bir plan ve koda da adım adım geçirilebilecek planlar. Yani hani üstüne böyle çok fazla şey falan yapmanız gerekmiyor temelde.
+
+20
+00:11:46,011 --> 00:11:51,011
+Dolayısıyla hani onların kodlarını zaten sizin yapıyor olmanız gerekiyor.
+
+21
+00:11:51,011 --> 00:11:57,003
+Ki kaldı ki dersin web sitesinde oradaki algoritmaların hepsinin kodları var biliyorsunuz değil mi?
+
+22
+00:11:59,187 --> 00:12:01,187
+Gördünüz değil mi onları?
+
+23
+00:12:01,187 --> 00:12:03,187
+Evet hocam.
+
+24
+00:12:03,187 --> 00:12:22,187
+Yani orada her şey var elinizin altında. Ha sen şunu diyorsun, algoritmalar da vardı, programlar da vardı. Programların ağırlığı derste işlendiği gibi değildi. Derste programla çok fazla uğraşmadık. Hep algoritmalarla uğraştık. Sınavda niye sadece algoritma çıkmadı?
+
+25
+00:12:25,187 --> 00:12:26,187
+Öyle mi diyorsun?
+
+26
+00:12:28,083 --> 00:12:37,283
+Yani aslında sadece algoritma çıkması beklenmez ama biraz aradaki geçiş veya köprü biraz büyük veya öyle.
+
+27
+00:12:37,283 --> 00:12:46,483
+Anladım, anladım. Yani şeyde sıkıntı yaşıyor musunuz? Programlarını yazmakta bizim burada geliştirdiğimiz algoritmaların?
+
+28
+00:12:51,347 --> 00:12:58,707
+Yani yine ben konuştuğum için sanırım soru bana ama yine kendimden bahsedecek olursam, ben sizdeki kodları incelemiştim.
+
+29
+00:12:58,707 --> 00:13:05,587
+Derste işlediklerimizin aynılarını bulamadım. Sanırım palindrom sayıları vardı, belli bir oyunlar vardı.
+
+30
+00:13:05,587 --> 00:13:11,827
+O yüzden kendim yazmaya çalıştım. Evet, birazcık zorlanmıştım bu en son işlediğimiz fonksiyon ve en son dersimiz.
+
+31
+00:13:11,827 --> 00:13:17,268
+Bu sadece fonksiyonlar kısmında ama diğerlerinde BBG'ye benzediği için onda o kadar zorlandı.
+
+32
+00:13:18,772 --> 00:13:24,772
+Fonksiyonları yazmakta zorlandım dediğin yani C, sentaksına yönelik bir şeylerden bahsediyorsun.
+
+33
+00:13:25,772 --> 00:13:31,772
+Yani C programlama diline alakalı sıkıntımı yaşadın yani, onu demek istiyorum.
+
+34
+00:13:35,604 --> 00:13:43,604
+Yani tamam olarak problem olmam bilmiyorum. Aslında kuralları biliyor gibi geliyor bize ama kodu çalıştırmaya gelince çalışmıyor bir yerde.
+
+35
+00:13:43,604 --> 00:13:50,604
+Re-bug yapmak gerekiyor. Sanırım yine bir mantık hatası oluyor. Orada bir yerde takılıyorum yani.
+
+36
+00:13:50,604 --> 00:14:00,604
+Anladım, anladım. Yani şöyle söyleyeyim. Şimdi dersteki algoritmaların çok çok büyük bir kısmının kodları zaten var.
+
+37
+00:14:01,875 --> 00:14:08,115
+Olmayanlarınkini sizin yazmanız gerekiyor, yazabiliyor olmanız gerekiyor.
+
+38
+00:14:08,115 --> 00:14:19,635
+Şimdi C ile alakalı sıkıntı, yani C'nin kendisiyle alakalı sıkıntılar için ise yine dersin sayfasında C dersinin dersi fotoğrafı olur.
+
+39
+00:14:20,052 --> 00:14:46,451
+Yani C'de işte fonksiyon nasıl yazılır, nasıl edilir falan bunların hepsi var. Zaten C dersini ayrı bir ders olarak zaten göreceksiniz. Hani C'de burada en fazla size introduction gibisinden bir şey burası. Daha detaylı halini zaten göreceksiniz. Dolayısıyla hani bu ders C dersi, öğretme dersi temelde değil öyle söyleyeyim ama belli yapıları biliyor, halledebiliyor olmanız gerekiyor.
+
+40
+00:14:46,772 --> 00:15:04,772
+Dediğim gibi kendi başınıza da çalışmanız lazım. Sadece derslerdekiler çok, dediğim gibi sadece dersi dinlemek yeterli olmayacaktır. Onları koda dönüştürmeniz gerekecektir. Ete kemiğe büründürmeniz gerekecektir bizim algoritmalarımızı. Öyle söyleyeyim.
+
+41
+00:15:04,772 --> 00:15:08,772
+Çünkü algoritmaların kendileri saf halleriyle çalıştırılabilir.
+
+42
+00:15:09,524 --> 00:15:18,524
+Doğrulukları sananabilir, direk o halleri değiller. O yüzden bunları şey yapmanız lazım, üstlerinde biraz daha durmanız gerekiyor. Tamam.
+
+43
+00:15:19,524 --> 00:15:21,524
+Anladım hocam, teşekkür ederim.
+
+44
+00:15:23,524 --> 00:15:28,524
+Şimdi fonksiyonları S ile yazsak çok iyi olabilir aslında, ben zorlanıyorum. Ezarken demesi [öğrenci].
+
+45
+00:15:28,628 --> 00:15:36,067
+Yani bunları zorlanıyorsanız daha fazla yazmaya uğraşmanız gerekiyor, daha fazla zaman ayırmanız gerekiyor.
+
+46
+00:15:36,067 --> 00:15:51,228
+Dediğim gibi dersin içeriğinde onları bir de C ile yazmak, yani C kodlarını açıp gösterebilir ama oradan kodun kendisini yazmaya uğraşmak gibisinden bir şey.
+
+47
+00:15:51,228 --> 00:15:54,508
+Dediğim gibi yani C dersi değil bir yer, o yüzden.
+
+48
+00:15:55,668 --> 00:16:06,668
+Yoksa C dersinde olsak, dediğiniz gibi tamamen C kodu yazarız vs. vs. Burada algoritmik düşünmeyi temelde öne alıyoruz.
+
+49
+00:16:06,668 --> 00:16:14,668
+Sınavda sorduğunuz programların hepsinin çıktığı programın algoritmik yapısına bağlı.
+
+50
+00:16:14,668 --> 00:16:21,515
+Yani orada C'nin sintaksına yönelik herhangi bir şey yoktu zaten sorularda.
+
+51
+00:16:21,652 --> 00:16:41,951
+Tamamen algoritmalarına yönelik sorular. Öyle değil mi? Yani C'de şu nasıl yapılır, bu nasıl yapılır, orada bir tricky, şu yollar falan. O tarz bir şeyler değildi orada size sorulan şeyler. Temelde bizim işlediğimiz algoritmaların nasıl çalıştıklarına yönelik işlemlerdir.
+
+52
+00:16:45,491 --> 00:17:04,811
+Peki, 37 kişi olmuşuz. Hocam, biz fonksiyonu hiç, C üzerinde görmedik. Niye görmediniz [öğrenci]? Yok mu dersin sayfasında, ders noktaların içerisinde?
+
+53
+00:17:07,380 --> 00:17:18,880
+Yani oraya koymuş olmamın derdi, dersin sayfasında o notları koymuş olmamın sebebi orada dursunlar diye değil. Orada siz onlara bakın diye. Tamam mı?
+
+54
+00:17:34,003 --> 00:17:56,003
+Peki. Dediğim gibi, biraz daha kendi çalışmalarınızı organize etmeniz gerekiyor. Sadece benim anlattıklarımla yetinmeyin. Öyle söyleyeyim. Tamam mı? Peki.
+
+55
+00:18:01,203 --> 00:18:18,987
+Evet.
+
+56
+00:20:09,395 --> 00:20:26,395
+Bu arada şeyi de söyleyecektim unutmadan. Sınav notlarınız çok kötü değiller. Bilmiyorum. Hani bireysel olarak bazılarınız kötü almış olabilirsiniz ama ortalama manasında demek istiyorum.
+
+57
+00:20:26,395 --> 00:20:35,395
+O noktada 60'ın üstünde. Fena değil. Şey falan çıkarsın. Yani ortalamanın üstündesiniz.
+
+58
+00:20:36,147 --> 00:20:46,147
+Dolayısıyla şey değil, ne daha kötü falan bir durumda değilsiniz. Not manasını demek istiyorum.
+
+59
+00:20:46,147 --> 00:20:56,147
+Bir şeyler yapabilme noktasında kendinizi eksik, yetersiz hissettiyseniz, ki asıl önemli olacak şey orasıdır.
+
+60
+00:20:56,147 --> 00:21:01,147
+O noktada dediğim gibi ders sayfasındaki diğer materyallerle…
+
+61
+00:21:02,003 --> 00:21:09,763
+Bizim derste gördüğümüz içerikleri harmanlayarak bir çalışma sistemi ortaya koymanız gerekiyor. Tamam?
+
+62
+00:21:11,763 --> 00:21:13,443
+Peki, şimdi...
+
+63
+00:21:15,043 --> 00:21:20,763
+Biz geçen hafta şöyle bir konuya başladık hatırlıyorsunuz.
+
+64
+00:21:22,443 --> 00:21:25,443
+Recursive fonksiyonlar.
+
+65
+00:21:26,443 --> 00:21:28,443
+Şimdi bu recursive fonksiyonların...
+
+66
+00:21:32,307 --> 00:21:50,307
+Temel bir iki özelliği vardı ama, birinci özellikleri kendilerini ya dolaylı ya da direkt, ya dolaylı ya da direkt kendilerini çağırmaları. Bu birinci özellikleri. Kendilerini çağırıyorlar.
+
+67
+00:21:58,387 --> 00:22:12,788
+Parametre değiştirerek yapar. Yani şunu demek istiyorum, mesela f-5 fonksiyonu, f-fonksiyonu recursive bir fonksiyonsa, içine 5'leri gönderdiğimiz f-fonksiyonu, içine 5 gönderdiğimiz f-fonksiyonu çağırırsa ne olur?
+
+68
+00:22:22,483 --> 00:22:28,844
+Doğrudan kendisini çağırmış olur, küçülmeye gitmeden önce, ilk önce bir kendisini çalışır, kendi değerine.
+
+69
+00:22:28,844 --> 00:22:30,844
+Tamam, sonra ne olur?
+
+70
+00:22:30,844 --> 00:22:32,284
+Sonra ne olur?
+
+71
+00:22:34,284 --> 00:22:36,284
+Küçülerek gider muhtemelen.
+
+72
+00:22:36,284 --> 00:22:42,083
+Nasıl küçülerek gidecek? F5'i çağırıyorsa nasıl küçülerek gidecek?
+
+73
+00:22:43,731 --> 00:22:51,551
+F5, F5'i çağırıyorsa belki sonrasında çağırma işleminden sonra bir alt adıma geçebilir, bir alt değeri, dört gibi mesela.
+
+74
+00:22:51,551 --> 00:22:55,231
+Ama F5, F5'i çağırırsa, F5 tekrardan F5'in başına gelmeyecek mi?
+
+75
+00:22:56,811 --> 00:22:57,491
+Evet.
+
+76
+00:22:59,831 --> 00:23:01,632
+Bir alt satırına ne yapar?
+
+77
+00:23:03,172 --> 00:23:03,871
+İnemez değil mi?
+
+78
+00:23:05,991 --> 00:23:11,251
+Dolayısıyla F5, F5'i çağırırsa, bu kesinlikle ne yapacaktır?
+
+79
+00:23:13,332 --> 00:23:20,332
+Stack overflow verecektir değil mi? Stack patlayacak. Niye?
+
+80
+00:23:22,332 --> 00:23:26,332
+Çünkü çok fazla istek oluşturacak, f5'in çalıştırılması için.
+
+81
+00:23:26,332 --> 00:23:36,332
+F5, f5 çağıracak, f5, f5 çağıracak, f5, f5 çağıracak, f5 durmadan kendi kendine çarpı çarpı duracak. Hiçbir şekilde zaten çalışmayacak.
+
+82
+00:23:36,332 --> 00:23:39,332
+Sonsu da tekrarlanır. Aynen öyle.
+
+83
+00:23:39,763 --> 00:23:48,763
+Yani, F5'in 5 olmayan bir şey ile çağırılması lazım. X eşit değildir, 5 değil mi? Bir şey olması lazım.
+
+84
+00:23:48,763 --> 00:23:55,763
+Kendi kendisini bu manada çağırırsa sıkıntı ama 5'in haricinde büyüyen, küçülen artık neyse.
+
+85
+00:23:55,763 --> 00:24:05,763
+Kendini çağırmalı ama belli şartları çağırır. Bir de kendini çağırmayan bir geride olması gerekiyor değil mi? Bir de çıkışının olması lazım yani.
+
+86
+00:24:05,844 --> 00:24:12,083
+Bu çıkış dediğimiz şey aslında kendini çağırmadığı yer.
+
+87
+00:24:15,635 --> 00:24:25,635
+Bir fonksiyon sadece kendisini çağırıyorsa, hiçbir koşula bağlı olmadan kendini çağırıyorsa sürekli, bu da yine step overflow'a denk gelecektir.
+
+88
+00:24:25,635 --> 00:24:36,635
+Dolayısıyla, ne bileyim, faktöre elde gördük, içine gönderdiğimiz şey sıfırdan farklıysa, birden büyükse gibisinden bir şarta bağladık hep kendi kendini çağırmayı.
+
+89
+00:24:38,516 --> 00:24:46,516
+Ya da üstüne almalı, işte x üzeri 1 dedik, işte 1'e eşitse, x üzeri n'i çağırdığımızda n'e 1'e eşitse, tekrar kendisini çağırtmıyorduk bu sefer, değil mi?
+
+90
+00:24:46,516 --> 00:24:49,516
+Dolayısıyla kendisini çağırmadığı bir yerinde olması gerekiyor.
+
+91
+00:24:49,516 --> 00:24:56,516
+Şimdi bu kendini çağırdığı yer bir parçası işin, bir de kendini çağırmadığı yer bir parçası.
+
+92
+00:24:56,516 --> 00:25:05,228
+Şimdi bizim daha önce işte mesela recursive fonksiyonları analiz ederken şöyle bir şey yazıyorduk, yazmıştı.
+
+93
+00:25:05,683 --> 00:25:13,683
+Mesela bir tn diye bir şeyden bahsetmiştik. Bu tn mesela 1 artı tn-1 diye bir laf etmiştik.
+
+94
+00:25:13,683 --> 00:25:21,683
+Şimdi bu tn eşittir 1 artı tn-1'in anlamı aslında bunu şu şekilde de yazmıştık hatırlarsanız.
+
+95
+00:25:21,683 --> 00:25:21,867
+Pardon.
+
+96
+00:25:26,067 --> 00:25:35,307
+TN diyorduk, sonra 1 yazıyorduk, sonra şuradan TN-1 yazıyorduk. Hatırlarınız mı? Bu, bununla aynıydı.
+
+97
+00:25:36,788 --> 00:25:48,048
+Şimdi bunun anlamı şu bir kısmı, şurada gördüğünüz şu bir kısmı, aslında şu kendini çağırmayan yerdeki kısım, şurası da kendini çağıran kısım zaten.
+
+98
+00:25:48,048 --> 00:25:55,487
+Tamam mı? Kendini çağıran kısım t n eşittir, 1 artı t n-1, yani n geldiyse n-1 ile çağırıyor mesela.
+
+99
+00:25:55,487 --> 00:26:03,788
+Burası başka şeyler olabilir mi? Tabii ki de olabilir. Yani hani bu illa böyle olmak zorunda değil.
+
+100
+00:26:04,500 --> 00:26:23,699
+Mesela şöyle yapılarınız olabilir. Tn eşittir, 1 artı 2tn-1 olabilir mesela. Bunu şu ağaç formunda yazmaya kalkarsak aslında 1 ve 2 tane tn-1.
+
+101
+00:26:25,460 --> 00:26:40,460
+Ya da bu şöyle olabilir, tn dediğiniz şey, 1 artı tn bölü 2 olabilir. O zaman da bunun yine açılımı şu şekilde olacaktır. Tamam.
+
+102
+00:26:40,460 --> 00:26:46,460
+Şimdi göstereyim. Eşe burası 2 olursa, bu şöyle olacak. Tn bölü 2.
+
+103
+00:26:50,688 --> 00:27:00,688
+TN illa burasının bir olması şart mı? Değil. Mesela burası N artı mesela diyelim ki TN bölü 2 olabilir.
+
+104
+00:27:00,688 --> 00:27:14,688
+Bunun anlamı kendini çağırlayan şu çıkış diye ifade ettiğimiz kısımda, burası illa bir olmak zorunda değil, burası bir N de olabilir.
+
+105
+00:27:21,652 --> 00:27:36,652
+C programlama dili.r temelde bunun rekörsif olarak çağrılmadığı durumdaki karmaşıklığı gösteriyor. İkinci kısma yazdığımız ise rekörsif olarak çağrıldığında karmaşıklığı gösteriyor.
+
+106
+00:27:36,652 --> 00:27:47,200
+Şimdi, bizim geçen ders gördüğümüz, faktöryel nasıl bir şeydi? Siz söyleyeyim bana.
+
+107
+00:27:47,200 --> 00:27:54,188
+Yani faktörer için tn eşittir ne olarak yazabiliriz? Faktörer için.
+
+108
+00:28:46,099 --> 00:28:48,099
+Bir 5 dakika ara verelim arkadaşlar.
+
+109
+00:34:23,188 --> 00:34:26,588
+Sesim geliyor mu şu anda arkadaşlar?
+
+110
+00:34:34,996 --> 00:34:35,996
+Evet hocam.
+
+111
+00:34:37,996 --> 00:34:39,996
+Peki, şimdi...
+
+112
+00:34:45,972 --> 00:34:59,972
+Sormuştum, faktöriyel bu tn yapısında nasıl yazılır diye sormuştum. Şimdi faktöriyeli bir hatırlarsak, faktöriyel nasıl bir işlem yapıyordu?
+
+113
+00:34:59,972 --> 00:35:11,972
+İşte faktöriyel n kendi içinde ya direkt bir sayı dönüyordu işte sıfırsa yani sıfır faktöriyeli bir faktöri işte bir gibisinden sabit bir şey dönüyordu, bir biri vardı.
+
+114
+00:35:13,331 --> 00:35:31,211
+Bir de ne vardı içerisinde? Faktörer kim içerdi? n-1 içerdi. Dolayısıyla faktörerin t n'i ne olacak? 1 artı t n-1 olacak. Tamam mı? Yapımız buydu.
+
+115
+00:35:31,211 --> 00:35:38,211
+Şimdi bunun geçen hafta çözümlemesini yapmıştık ve bunun adım adım işte bu 1'e...
+
+116
+00:35:38,452 --> 00:35:43,952
+tn-1 olduğunu, bunun bir adım daha ileriye götürsek şöyle bir şey olacaktı.
+
+117
+00:35:43,952 --> 00:35:54,692
+tn-2, bir adım daha götürsek, 1, 1, 1, tn-3 şeklinde gideceğini konuşmuştuk.
+
+118
+00:35:54,692 --> 00:36:00,112
+Bunun en sonunda da varacağı nokta, tık tık tık tık tık tık tık, en sonunda birik bir şey olacaktı.
+
+119
+00:36:00,112 --> 00:36:02,712
+Şimdi burada...
+
+120
+00:36:02,963 --> 00:36:10,203
+Buradaki eleman sayısı bize lazım. Yani aslında recursion tree diye ifade ettiniz. Şu gördüğümüz şeyde recursion tree deniyor.
+
+121
+00:36:10,203 --> 00:36:15,963
+O recursion tree'deki eleman sayısı bizim için önemli. Kaç kez çağrıldığı fonksiyon da önemli.
+
+122
+00:36:15,963 --> 00:36:23,963
+Şimdi recursion tree'nin içerisindeki eleman sayısını recursive çağrı olmayıncaya kadar ilerletiyoruz.
+
+123
+00:36:23,963 --> 00:36:29,643
+Yani şu hale getiriyoruz, şu gördüğümüz, şu forma getiriyoruz. Bu forma getirdiğimizde
+
+124
+00:36:29,876 --> 00:36:55,516
+İçeride hiç T ile bağlı hiçbir şey yok. Tamam mı? Şimdi bu forma getirdikten sonra bunun içerisindeki eleman sayısını bulmaya çalışıyoruz. Bunun içerisindeki eleman sayısını düşünürsek, bu ağacın bir yüksekliği var. Bu ağacın yüksekliği ne olacaktır burada? Her bir adımda birer tane azaldığına göre, n'den başladığında, her adımda birer bir azaldığına göre, 1'e kadar gittiğinde n uzunluğunda bir şey. Yani h eşittir, n olacak.
+
+125
+00:36:55,699 --> 00:37:07,699
+Dolayısıyla burada yükseklik h yani n her bir seviyede de bir var. Şuralara baktığımızda her bir seviyede sadece bir görüyoruz.
+
+126
+00:37:07,699 --> 00:37:14,699
+Dolayısıyla n tane bir o da n'e eşit olacak değil mi? O n diye bir şey bulmuştuk.
+
+127
+00:37:14,699 --> 00:37:17,387
+Şimdi biraz daha...
+
+128
+00:37:17,684 --> 00:37:25,684
+Farklı bir şey görelim, yapı görelim. Yine recursion tree çözeceğiz. T n eşittir.
+
+129
+00:37:27,684 --> 00:37:35,468
+n artı iki tane t n bölü dört olsun. Tamam.
+
+130
+00:37:36,628 --> 00:37:48,628
+Şimdi bunu çizmeye kalkarsak şöyle bir şey olacak. Bunu bir adım ilerletirsek, şöyle iki tane bu sıfır olacak. Tn bölü 4, tn bölü 4 olacak değil mi?
+
+131
+00:37:50,628 --> 00:37:58,628
+Yani recursive olmayan adımda n işlem yapılıyor, recursive olan adımda n bölü 4 işlemler yapılıyor ama bundan iki kez çağırılıyor.
+
+132
+00:37:58,628 --> 00:38:03,628
+Yani faktörler kendisini iki kez çağırıyor. Şimdi burada bir kez çağırıyor.
+
+133
+00:38:04,019 --> 00:38:14,819
+Faktör n kendisini, faktör n-1'i çağırıyordun. Burada ise işte o fonksiyonu, fn, kendisini iki kez çağırıyor fakat n bölü 4'ü 3 haliyle çağırdı.
+
+134
+00:38:14,819 --> 00:38:26,619
+Bunu bir adım daha ileriye götürürsek şimdi, şurası kritik bakın, tn bölü 4'ü parçalarken, bakın tn bölü 4'ü parçalarken, n'e
+
+135
+00:38:26,688 --> 00:38:38,368
+İki tane TN bölü 4. Şimdi buradaki N'imiz şu anda ne oldu bizim? N bölü 4 oldu. Dolayısıyla şurası N bölü 4 olacak. Bundan iki tane çıkacak ve bunların her bir TN bölü ne olacak?
+
+136
+00:38:43,092 --> 00:38:58,791
+Evet, ne olacak? 16 olacak değil mi? T n bölü 16, şuradan da bir tane n bölü 4 çıkacak, burada da t n bölü 16, t n bölü 16 olacak.
+
+137
+00:39:00,791 --> 00:39:07,791
+Şimdi, bunu ilerleteceğiz işte en sonunda bu.
+
+138
+00:39:08,275 --> 00:39:11,275
+Tamamen t'lerden bağımsız bir hale gelecek.
+
+139
+00:39:11,275 --> 00:39:19,275
+Ve burada şimdi mesela bir sonraki adımda şuradaki parçaların ne olacağını düşünürsünüz.
+
+140
+00:39:19,275 --> 00:39:22,275
+Bir sonraki adımda şu parçalar neye dönüşecekler?
+
+141
+00:39:22,275 --> 00:39:29,275
+Yani şöyle yazmaya kalkarsak, t n bölü 16 neye dönüşecek?
+
+142
+00:39:33,427 --> 00:39:52,188
+16, değil mi? Yani böyle 16, artı iki tane T, N bölü 64 olacak, değil mi? Yani şurasını aslında ne olarak yazacaksınız? Bir sonraki adımda, N bölü 16'dan iki tane T, N bölü 64 çıkmış olarak yazacaksınız.
+
+143
+00:39:57,619 --> 00:40:17,119
+Şu parça şurası olacak. Şimdi buradaki eleman sayısını toplamak derdimiz bizim. Dolayısıyla bizim burada iki tane şeyimiz var, karakterimiz var. Bir tanesi ağacın yüksekliği, bir tanesi ağacın seviyesinin sayısı, bir de her bir seviyedeki elemanların toplamı. Şimdi birinci seviyedeki elemanlarımız ne?
+
+144
+00:40:17,519 --> 00:40:27,720
+n, değil mi? Toplamları n. Bir tane var zaten. İkinci seviyedeki elemanların toplamı ne olur? n bölü 4 ile n bölü 4'ün toplamı ne olur? n bölü 2. Şimdi burada ne olacak?
+
+145
+00:40:27,720 --> 00:40:40,720
+4 tane n bölü 16 olacak, değil mi? O zaman bu da n bölü 4 olacak. Bir sonrakini de tahmin edebilirsiniz. n bölü 8 bu şekilde ilerleyecek. Tamam.
+
+146
+00:40:47,476 --> 00:40:49,476
+Buraya kadar soru soran var mı?
+
+147
+00:40:53,972 --> 00:41:03,572
+Recursion Tree'sini yapmamızdaki amaç ne? Recursion Tree'nin amacı, [öğrenci], Recursive fonksiyonların karmaşıklığını bulmak.
+
+148
+00:41:03,572 --> 00:41:15,172
+Şimdi Recursive olmayan bir fonksiyonda algoritmaya baktığımızda, işte en içte bulunan döngü elemanından kaç kez geçiliyor?
+
+149
+00:41:15,172 --> 00:41:18,212
+Ona bakarak karmaşıklığını çıkartabiliyoruz değil mi?
+
+150
+00:41:21,139 --> 00:41:26,139
+Ama Rikörsif yapıların içerisinde böyle yapmak mümkün değil.
+
+151
+00:41:27,139 --> 00:41:33,139
+Rikörsif yapıların karmaşıklığını analiz etmek için Rikörsif'in Triller'i çıkartıyoruz.
+
+152
+00:41:38,612 --> 00:41:42,443
+Tamam mı? Amacımız bu.
+
+153
+00:41:45,523 --> 00:42:07,523
+Şimdi, o zaman bizim t n'imiz nasıl ilerleyecek? n bölü 2 artı, pardon, n artı n bölü 2 artı n bölü 4 artı n bölü 8 artı n bölü 16 artı n bölü 64 şeklinde böyle her seferinde bir önceki yarısı şeklinde ilerleyip gidiyor değil mi?
+
+154
+00:42:09,523 --> 00:42:10,284
+Peki.
+
+155
+00:42:10,708 --> 00:42:23,708
+Bu ağacın yüksekliği ne olur? Haşımız ne olur? Deminki problemimizde, faktörer problemimizde ağacın yüksekliğinin n olduğunu görmüştük. Her adımda birer azalıyordu, n'den başladı. Bire gidene kadar bu ne olacak? n adım gidecek.
+
+156
+00:42:23,708 --> 00:42:31,340
+Peki burada n'den başlayıp bire kadar gitmesi kaç adım sürer? Ne dersiniz?
+
+157
+00:42:39,572 --> 00:42:43,172
+Her adımda ne oluyor burada? N neye bölünüyor?
+
+158
+00:42:47,188 --> 00:42:49,188
+16'ya bölünüyor.
+
+159
+00:42:49,188 --> 00:42:51,115
+16'ya mı bölünüyor?
+
+160
+00:42:55,731 --> 00:43:10,731
+Şimdi bak, n bölü 4'de gitti. n bölü 4 neye gitti? n bölü 16'ye gitti. n bölü 16 nereye gidecek? 11 altında. n bölü 64'e gidecek. Böyle gidecek her seferinde bir önceki yarısına. Pardon, 4'te 1'ine iniyor. Değil mi?
+
+161
+00:43:13,731 --> 00:43:19,731
+Şimdi, geçen hafta aslında n'in n bölü 2'ye...
+
+162
+00:43:19,983 --> 00:43:44,823
+İndiği durumdaki ağacın yüksekliğini tanımlamıştık. Neydi o? Her seferine yarıya bölerseniz kaç adımda 1'e varırsınız n'den? Logaritma 2 tabanında n değil mi? Aynen öyle. Şimdi burada her adımda kaça bölüyoruz? 4'e bölüyoruz. O zaman burada h ne olacak arkadaşlar?
+
+163
+00:43:45,300 --> 00:43:55,300
+Her seferinde 4'e bölersek biz n'den 1'e kaç adımda ineriz? Sorumuz bu. Her adımda 4'e bölüyoruz.
+
+164
+00:43:57,300 --> 00:44:05,300
+Logaritma 4 tabanında n olacak bu sefer. Aynen öyle. Logaritma 4 tabanında n. H'ımız bu.
+
+165
+00:44:05,300 --> 00:44:08,300
+Şimdi, o zaman...
+
+166
+00:44:08,947 --> 00:44:16,627
+Bizim elimizde kaç tane haşımızın ne olduğunu biliyoruz. Her bir seviyede de ne olduğunu biliyoruz.
+
+167
+00:44:16,627 --> 00:44:23,027
+Dolayısıyla artık şeyi yapabiliriz. Ne derler bana? İşimizi yapabiliriz gibi gözüküyor.
+
+168
+00:44:23,027 --> 00:44:28,467
+Şimdi bir yapın bakalım. Size bir 5 dakika süre.
+
+169
+00:44:28,467 --> 00:44:33,027
+Bu noktadan itibaren...
+
+170
+00:44:34,931 --> 00:45:01,911
+Artık T en eşittir. T'siz bir şeyimiz var, formülümüz var şu anda. Ne kadar yüksekliğe sahip olduğumuzu biliyoruz, kaç tane seviyeye sahip olduğumuzu biliyoruz ve her seviyede de kaç tane eleman olduğunu biliyoruz. Yani N artı, N artı, N bölü 2 artı, N bölü 4 artı, N bölü 8, N bölü 16 şeklinde bunlar gidiyorlar.
+
+171
+00:45:02,612 --> 00:45:20,112
+Toplamları, her seviye ve seviye sayımızın da logaritma dört tabanında n olduğunu biliyoruz. Tamam. Şimdi bu noktada bir hesabı yapın bakalım nasıl bir şey çıkacak. Beşte gibi bir süreniz var.
+
+172
+00:45:24,532 --> 00:45:25,532
+Thank you.
+
+173
+00:50:29,588 --> 00:50:33,908
+Evet arkadaşlar, neler buldunuz?
+
+174
+00:51:01,043 --> 00:51:11,043
+İlk önce burada şunu gördük değil mi? n eşittir, şöyle bir şey oldu. n bölü 2 artı, n bölü 4 artı, n bölü 8 artı, böyle gidiyor.
+
+175
+00:51:11,043 --> 00:51:25,443
+Ve buradaki eleman sayısı da logaritma dört tabanında n. Bu kısmı yakaladınız mı? Burasını hallettiyseniz bundan sonrası matematik zaten.
+
+176
+00:51:31,891 --> 00:51:37,891
+Evet, var mı buraya kadar iki kısımla ilgili sorular? Şu geçişi görebiliyor musunuz?
+
+177
+00:51:44,884 --> 00:51:46,884
+Sesim geliyor mu arkadaşlar?
+
+178
+00:51:54,963 --> 00:51:56,963
+Geliyor hocam sesiniz.
+
+179
+00:51:57,963 --> 00:52:02,963
+Peki, tamam. Bu geçişi görebiliyor musunuz diye sormuştum.
+
+180
+00:52:07,059 --> 00:52:10,559
+İki tane cevabı var bunun arkadaşlar. Görebiliyoruz ya da göremiyoruz.
+
+181
+00:52:13,460 --> 00:52:15,260
+Evet hocam, görebiliyoruz.
+
+182
+00:52:18,059 --> 00:52:32,359
+Peki, bundan sonra yapacağımız işler tamamen matematik aslında. Yani işte T, N dediğimiz şey N, N bölü 2 artı, N bölü 4 artı, N bölü 8 şeklinde gidiyor.
+
+183
+00:52:33,556 --> 00:52:39,556
+Bunların da sayısının dediğim gibi logaritma 4 tabanında n olduğunu biliyoruz.
+
+184
+00:52:39,556 --> 00:52:43,556
+Şimdi o zaman ben bunları n parantezinde alırsam, burada ne göreceğim?
+
+185
+00:52:43,556 --> 00:52:49,556
+1 artı, 1 bölü 2 artı, 1 bölü 4 artı, 1 bölü 8 artı, böyle gidiyor bu.
+
+186
+00:52:49,556 --> 00:52:56,556
+Şurasının eleman sayısı logaritma 4 tabanında n. O zaman ben bunu şu şekilde yazabilirim.
+
+187
+00:53:01,619 --> 00:53:07,380
+Logaritma... Pardon.
+
+188
+00:53:12,083 --> 00:53:18,083
+Logaritman 4 tabanında n'e kadar 1 bölü 2 üzeri i değil mi?
+
+189
+00:53:22,003 --> 00:53:37,003
+Bunu da yazmaya kalkarsam, n çarpı, şimdi şurasını açarsak, işte 1 bölü 2 üzeri, logaritma dört tavanda n, artı 1 eksi 1, 1 bölü 2 eksi 1.
+
+190
+00:53:37,003 --> 00:53:49,003
+Bunu nasıl yaptığımızı geçen hafta görmüştük işte. a üzeri i, sıfırdan bir yere kadar götürürsek, bunun açılımı nasıl yapılır, geçen haftalarda görmüştük.
+
+191
+00:53:49,748 --> 00:53:55,347
+Dolayısıyla ben şimdi her iki tarafın altında üstünde eksi ile çarparsam bunu şu hale getirebilirim.
+
+192
+00:53:55,347 --> 00:54:04,547
+1-1 bölü 2 üzeri logaritma 4 tabanında n artı 1 bölü 1-1 bölü 2 haline getirebilirim.
+
+193
+00:54:04,547 --> 00:54:05,547
+Değil mi?
+
+194
+00:54:06,748 --> 00:54:13,547
+Buradan devam edersem yine n var. Şu alt kısım 1 bölü 2 unutasyonu. O zaman burası 2n olsun.
+
+195
+00:54:16,820 --> 00:54:24,000
+Üzeri logaritma 4 tabanda n artı bir haline getirmiş oldum.
+
+196
+00:54:26,239 --> 00:54:29,500
+Bunu biraz daha devam ettirsek, bir eksi.
+
+197
+00:54:29,500 --> 00:54:35,420
+Bu sefer 2 üzeri, bu sefer burası bir böyle 2 değil de 2 üzeri, yukarısına eksi ile çarpacağım tamam mı?
+
+198
+00:54:35,420 --> 00:54:40,300
+Logaritma 4 tabanda n eksi bir olacak.
+
+199
+00:54:42,460 --> 00:54:43,980
+Onu yazalım.
+
+200
+00:54:44,947 --> 00:54:59,947
+Tabanında, bu sefer bir eksi, iki üzeri eksi logartma dört tabanında n artı biri aşağı indirirsem, eksi biri aşağı indirirsem böyle iki haline getirmiş olurum.
+
+201
+00:55:01,947 --> 00:55:06,947
+Oradan iki üzeri n, bir eksi.
+
+202
+00:55:07,539 --> 00:55:16,420
+2 üzeri eksi 2 bölü 2 olacak. Şuralardan dolayı bu 2, 4 yer değiştirebiliyorlar biliyorsunuz.
+
+203
+00:55:21,220 --> 00:55:30,260
+Buradan da hareket edersek, 2n çarpı 1 eksi 1 bölü 2 kök n çıkacak.
+
+204
+00:55:30,675 --> 00:55:37,255
+Bunu da çarpırsam eğer 2n-2 kök, pardon 2 değil.
+
+205
+00:55:37,255 --> 00:55:42,096
+Hocam, 2n² olmayacak mı aşağısı? Kök değil de n² olmaz mı?
+
+206
+00:55:44,096 --> 00:55:45,096
+Bir saniye.
+
+207
+00:55:50,164 --> 00:56:00,404
+Eksi olduğu için paydayı atacağız, üstüne aynen yazacağız hocam. Kök almayız yani bu durumda. 1 bölü 2 n kare olur.
+
+208
+00:56:13,364 --> 00:56:15,364
+Kodla göreceğiz.
+
+209
+00:56:23,668 --> 00:56:27,047
+Enkari'yi aşağı indirdiğimizde...
+
+210
+00:56:32,307 --> 00:56:34,307
+Öyle yazdım ben, bir saniye.
+
+211
+00:56:42,708 --> 00:56:44,708
+Şurasını yanlış yazdım çünkü.
+
+212
+00:56:49,300 --> 00:57:03,800
+Şurası 1-2 üzeri n kare değil de 2 üzeri eksi 1 bölü 2 olması lazım.
+
+213
+00:57:09,715 --> 00:57:35,836
+Şurası çünkü şey, bir eksi, en üzeri, eksi logaritmanı dört tabanında iki çünkü burası. Tamam. Şurası dört, şurası iki, şunlar geldi. Yaştıkları zaman, en üzeri eksi logaritmanı dört tabanında iki, öbürtmanı dört tabanında iki, bir bölü iki. Dolayısıyla,
+
+214
+00:57:37,108 --> 00:57:49,108
+En üzeri eksi 1 bölü 2. Oradan da hareket edersek, 1 eksi 1 bölü 2 kök n olacak. Oldu mu şimdi?
+
+215
+00:57:55,123 --> 00:57:58,443
+Hocam, bir şey sorabilir miyim? Evet.
+
+216
+00:57:59,723 --> 00:58:08,683
+Bundan bir üstteki satırda, 2 üzeri eksi log 4'en eksi 1 var ya, taban değiştirdiğimiz zaman 2 için,
+
+217
+00:58:09,963 --> 00:58:10,743
+Evet.
+
+218
+00:58:11,764 --> 00:58:21,483
+Logaritma 4 tabanında 2 olup, oradan eksi 1 bölü 2 gelecek. Eksi 1 de var ya yanında, eksi 3 bölü 2 olmaz mı? Ben mi yanlış düşünüyorum acaba?
+
+219
+00:58:32,148 --> 00:58:37,148
+Pardon, sonraki adımda şey yapmışsınız, eksi biri aşağıya bölü iki olarak yazmış.
+
+220
+00:58:37,148 --> 00:58:48,288
+Aha, aha, aha, aha, tamam. Şimdi o zaman bu işlemin sonucu şu gördüğümüz şey haline getirdik. İki n eksik kök n.
+
+221
+00:58:49,008 --> 00:58:58,668
+Şimdi karmaşıklık analizinde hani big o notasyonu diye bir şey var ki bunun detayını daha sonra göreceksiniz. Big o notasyonunda böyle bir şey yazarken
+
+222
+00:58:59,635 --> 00:59:09,635
+En yüksek derece ne ise, yani n'in en yüksek derecesi ne ise, onunla ifadedir. Yani bunun bir konu notasyonuna karşıtı o n'dir.
+
+223
+00:59:09,635 --> 00:59:22,635
+Şimdi burası mesela n kare eksi 3 n olsaydı, ya da mesela 7 n kare bölü 3 n olsaydı bunun karmaşıklığı o n kare olacaktı. Bu sabit sayılar zaten yazılmazlar.
+
+224
+00:59:26,896 --> 00:59:51,076
+Asıl etkileyen yani asıl işi karmaşıklaştıran kısım orası n kare yazılır. Burada da iki n eksik kök n dediğimiz şeyde n bir tanesinin karmaşıktığı bir bir tanesinin üstü bir bir tanesinin üstü bir bölü iki n'lerden bahsediyorum. Dolayısıyla büyük olanın iki yazılıyor. Dolayısıyla o n'lik bir karmaşıklığa sahip. Dolayısıyla bizim en başta ifade ettiğimiz t n eşittir.
+
+225
+00:59:51,795 --> 01:00:05,255
+n artı iki tane t n bölü dördün karmaşıklığı iki n eksik kök n çıktı. Onu da bir o notasyonda yazarsak o n olarak karşımıza çıkıyor.
+
+226
+01:00:05,255 --> 01:00:16,635
+Dediğim gibi buradaki asıl kritik nokta şuradaki, pardon, şurası.
+
+227
+01:00:17,076 --> 01:00:20,076
+Şu geçişi yapabilmeniz. Ondan sonrası matematik zaten.
+
+228
+01:00:20,076 --> 01:00:21,076
+Tamam.
+
+229
+01:00:22,076 --> 01:00:37,076
+Yani şunu oluşturup, buradan adım adım adım adım bu yapıya geçip, burada her bir seviyedeki toplam işlem sayısını bulmak ve buradan bir pattern'ı yakalamak ve...
+
+230
+01:00:37,780 --> 01:00:46,780
+Şu yüksekliği görebilmek. Bunları hallettikten sonra zaten şu yapıyı kurabiliyorsunuz. Bunu yaptıktan sonra zaten dediğim gibi tamamen matematiğe kalıyor.
+
+231
+01:00:46,780 --> 01:00:53,779
+Tamam mı? Şimdi arkadaşlar bir ara verin. Saat 9.56.10.
+
+232
+01:00:58,835 --> 01:01:01,835
+10'u 10 geçeye kadar diyelim.
+
+233
+01:01:02,835 --> 01:01:06,835
+10'a kadar.
+
+234
+01:01:07,835 --> 01:01:08,835
+Ara diyorum.
+
+235
+01:01:08,835 --> 01:01:10,571
+Sonra görüşmek üzere.
+
+236
+01:15:15,731 --> 01:15:38,332
+Peki arkadaşlar, sesim geliyor diye tahmin ediyorum. Şimdi çözeceğimiz recursive fonksiyonumuz şöyle bir şey, 8 tane t n bölü 2 artı n. Tamam. Şunu çözmek istiyoruz.
+
+237
+01:15:43,091 --> 01:15:54,091
+Peki, o zaman şöyle bir yapı olacak. Bir n var, sonra n bölü 2 var, n bölü 2 var, bunlar böyle gidiyorlar, n bölü 2 var. Tamam mı?
+
+238
+01:15:54,091 --> 01:16:06,059
+Dostan sonra 8 tane n bölü 2 var. Şimdi bunu bir sonraki haline çevirmeye kalkarsak, burası n, şimdi burası n bölü 2 olacak yine. Ve buradaki...
+
+239
+01:16:06,163 --> 01:16:13,764
+Bunlardan böyle 8 tane n bölü 2 olacak. Buradaki n bölü 2'lerin her birinden de t n bölü 4 daha çıkacak.
+
+240
+01:16:13,764 --> 01:16:20,324
+T n bölü 4 daha çıkacak. Şurada kaç tane t n bölü 4 var? Şu çizdiğim kısımda.
+
+241
+01:16:20,324 --> 01:16:29,203
+Ne dersiniz? 8 tane. 8 tane, aynen öyle.
+
+242
+01:16:31,475 --> 01:16:42,475
+Şimdi bunu daha da ilerletebiliriz ama pattern zaten belli olacak. Şimdi burada bir n var. Burada 8 tane n bölü 2 var. Burada ne var?
+
+243
+01:16:44,475 --> 01:16:49,475
+64 tane n bölü 4 var. Bir sonrakinden olacak.
+
+244
+01:16:54,292 --> 01:16:57,292
+512 tane n bölü 8 olacak.
+
+245
+01:16:57,292 --> 01:17:06,292
+Tamam. O zaman biz artık yeni yapımızı söyleyelim. n neye eşitmiş? n artı 8 tane n bölü 4 ne olacaktır?
+
+246
+01:17:06,292 --> 01:17:07,292
+4n.
+
+247
+01:17:07,292 --> 01:17:11,292
+4n olacak. 64 tane n bölü 4.
+
+248
+01:17:11,292 --> 01:17:12,292
+16n.
+
+249
+01:17:12,292 --> 01:17:19,292
+812 tane n bölü 8, 64n şeklinde gidecek. Peki şimdi bunun haşı nedir?
+
+250
+01:17:20,564 --> 01:17:45,604
+Kaç tane eleman olacak? Şu yüksekliği soruyoruz. Şimdi her bir adımda ne oluyor? 2'ye bölünüyor. 2'ye bölünüyoruz o zaman hajımız ne? Log 2 yani. Logaritma 2 tabanda n. Evet. Şimdi devamını çözüyorsunuz. Bekliyorum. Herde 5 dakika yeter. Rahat rahat yeter.
+
+251
+01:17:48,115 --> 01:17:49,115
+Topçuzda.
+
+252
+01:22:37,108 --> 01:22:40,108
+Evet, çözüm nedir arkadaşlar?
+
+253
+01:22:41,108 --> 01:22:43,108
+Hocam ben şöyle bir şey buldum.
+
+254
+01:22:45,908 --> 01:22:51,020
+n kare ve log 2n yer alıyor ifadede, eğer kat sayıları düşünmezsek.
+
+255
+01:22:52,564 --> 01:22:57,564
+n kare ve log 2n yer alıyor. İsterseniz kat sayıları da söyleyebiliriz.
+
+256
+01:22:57,564 --> 01:23:02,564
+Log 2n dediğimiz yok. Log 2n, bir de n kare dediğin o zaman n kare demiş oluyorsun.
+
+257
+01:23:02,564 --> 01:23:04,564
+Evet, n kare demiş oluruz.
+
+258
+01:23:04,564 --> 01:23:06,564
+Yok ya, n kare çıkmıyor.
+
+259
+01:23:16,564 --> 01:23:28,244
+[öğrenci] yazmış, 4n küp eksi n, böyle 3 yazmış, evet doğru [öğrenci] yani n küp çıkıyor onun sonucu.
+
+260
+01:23:28,244 --> 01:23:42,484
+Yani şöyle bunu yazmaya kalkarsak, sonuçta n çarpı i eşittir 0'dan logaritma
+
+261
+01:23:42,707 --> 01:23:46,707
+Kitabında n'e kadar 4 üzeri i olacak değil mi?
+
+262
+01:23:49,007 --> 01:23:59,007
+Bunu yazmaya kalkarsak n bölü 4 üzeri logaritma kitabında n artı 1 eksi 1, 4 eksi 1.
+
+263
+01:23:59,707 --> 01:24:05,707
+Bunu da yazmaya kalkarsak, şurası zaten 4 eksi 1'den 3 oldu, n bölü 3'ü başa alalım.
+
+264
+01:24:06,707 --> 01:24:07,707
+O zaman...
+
+265
+01:24:08,627 --> 01:24:16,627
+4 çarpı, 4 üzeri logaritma kitabında n-1 olacak.
+
+266
+01:24:18,627 --> 01:24:25,627
+n bölü 3'lü yazarsak bunu 4 çarpı, şurasını düşünürsek şunlar yer değiştirecekler.
+
+267
+01:24:28,627 --> 01:24:35,503
+n üzeri, logaritma kitabında 4, o da 2 değil mi?
+
+268
+01:24:35,503 --> 01:24:54,963
+n kare olacak, eksi bir olacak, o da 4n küp, eksi 4n küp, 4n küp, eksi n bölü 3.
+
+269
+01:24:59,764 --> 01:25:15,264
+3, evet. Şöyle bir şey çıkacak. Evet, sonuç olarak bu da küp olacak. Tamam mıyız arkadaşlar? Bakın ne yaptığıma.
+
+270
+01:25:32,564 --> 01:25:47,324
+Hocam, bu yaptığımız açılım tam olarak ne diye geçiyor? Hani toplam ifadesindeki 4Y'yi üstünü 1 artırıp, eksi 1 yazıp, bölmeli bir şekilde yazdığımız zaman bu açılım ne açılım olmuş oluyor ya da neyi elde etmiş oluyoruz?
+
+271
+01:25:48,324 --> 01:25:53,324
+Neyi elde etmiş oluyoruz? Bunu zaten geçenlerde çözmüştük ya. Mutlaka saat yok muydu?
+
+272
+01:25:53,460 --> 01:25:55,460
+Hani şöyle bir şey var.
+
+273
+01:25:55,460 --> 01:26:01,460
+Kayıttan dinledim ama şu an yine de yabancı geliyor. Kayıttan dinledim diye hatırlıyorum ama unutmuşum.
+
+274
+01:26:01,460 --> 01:26:07,460
+Şurada A, şu, iyi. Şu yaptığımız işlem. Bu serinin toplamı. Bir seri toplamı.
+
+275
+01:26:12,115 --> 01:26:12,939
+Tamam.
+
+276
+01:26:16,819 --> 01:26:20,319
+Yani konu olarak neyin içinde diye soruyorsan, serilerin içerisinde.
+
+277
+01:26:21,819 --> 01:26:23,819
+Mesela serilerde.
+
+278
+01:26:24,819 --> 01:26:27,319
+Peki, şimdi başka bir şey çözelim.
+
+279
+01:26:32,467 --> 01:26:48,427
+Bu sefer tn eşittir sekiz tane, ilk önce sabitini yazalım. n kare artı sekiz tane tn bölü iki olsun.
+
+280
+01:26:48,427 --> 01:26:56,108
+Demekinde n'di, bu sefer n kare. Evet, ilk önce bunu bir açın, tamam.
+
+281
+01:26:56,564 --> 01:27:06,564
+Açtıktan sonra şu şekildeki halini bana söyleyin. T, n eşittir işte bir şeyler, işte şöyle toplan falan falan halini. Bir çıkartın bakalım.
+
+282
+01:27:06,564 --> 01:27:13,564
+Matematik kısma girmeyin yani, ilk önce şu pattern'ı yakalamanız gerekiyor. Tamam.
+
+283
+01:27:20,180 --> 01:27:22,180
+İyi yapın bakalım, ne çıkacak?
+
+284
+01:27:27,412 --> 01:27:30,811
+Bunun h'ı deminkinden farklı değil.
+
+285
+01:27:31,811 --> 01:27:37,132
+Yani önce çözdüğümüz problemde de tn bölü 2'dir, bu da tn bölü 2.
+
+286
+01:27:37,132 --> 01:27:42,731
+Dolayısıyla yarıya iniyor. Dolayısıyla Logatman Kitabı'nın da n ile h kısmı evet farklı değil.
+
+287
+01:27:42,731 --> 01:27:48,332
+Ama her bir seviyedekilerin toplamı bu sefer farklılaşacak.
+
+288
+01:27:51,332 --> 01:27:53,891
+Çünkü n kareler geldi bu sefer.
+
+289
+01:27:56,532 --> 01:28:06,771
+Deminkinde 8 tane n kare vardı, n bölü 2 vardı. Bu sefer 8 tane n bölü 2'nin karesi olacak.
+
+290
+01:28:09,072 --> 01:28:10,612
+Tamam, daha fazla konuşmuyorum.
+
+291
+01:30:21,395 --> 01:30:24,395
+Evet, ne buldunuz arkadaşlar?
+
+292
+01:30:39,380 --> 01:31:06,319
+Buradaki en tricky olan şey belki şu kısım değil mi? Tn bölü 2, mesela Tn bölü 2 şöyle gidiyor. Sonra şurada şunu yakalamamız gerekiyor. Şuradaki n bölü 2 yani Tn bölü 2'yi açarken n bölü 2'nin karesi şeklinde bölmeniz gerekiyor burasını değil mi?
+
+293
+01:31:14,739 --> 01:31:42,039
+Bunlardan da 8'er tane çıkıyor. Şimdi burada bir adet n kare var. Burada 8 adet n bölü 2'nin karesi var. Burada 64 adet n bölü 4'ün karesi olacak. Değil mi? Bir sonraki adımda ne olacak?
+
+294
+01:31:42,804 --> 01:32:03,103
+512 tane n bölü 8'in karesi olacak. Tamam. O zaman t n dediğimiz şey n kare artı, şurasını düşünürseniz, n kare n bölü 4, 2n kare olacak.
+
+295
+01:32:06,644 --> 01:32:24,884
+8, 8, değil mi? 8n kare olacak. Bu da 64, bu da 16n kare olacak. Böyle gidecek. Ve buradaki eleman sayısı da h, bu da logaritman iki tarafında n olacak.
+
+296
+01:32:32,787 --> 01:32:46,787
+16 artı gidiyor. O zaman bunu da yazarsak, i eşittir sıfırdan logaritma kitabında n'e kadar 2 üzeri i olacak. Değil mi?
+
+297
+01:32:49,287 --> 01:32:52,787
+Buraya kadar birlikte miyiz?
+
+298
+01:32:52,787 --> 01:32:54,571
+Evet hocam.
+
+299
+01:32:57,076 --> 01:33:01,876
+Peki, bunu açmaya kalkarsak n kare zaten duruyor.
+
+300
+01:33:01,876 --> 01:33:13,876
+2 üzeri logaritma kitabında n artı 1, eksi 1 bölü 2 eksi 1, nasıl zaten 1'e geliyor.
+
+301
+01:33:22,899 --> 01:33:35,619
+Eksi bir var elimizde. Şunlar yer değiştirirler. N üzeri logot mekitabında n olacak. N kare o zaman iki n eksi bir olacak.
+
+302
+01:33:35,619 --> 01:33:50,259
+O da iki n küp eksi n kare olacak. O da bir o notasyonla göre n küp olacak. Tamam mıyız?
+
+303
+01:33:54,899 --> 01:33:55,692
+Teşekkür ederim.
+
+304
+01:34:03,923 --> 01:34:16,043
+Başka bir ses daha duymak istiyorum. Var mı? Ses çıkartmak isteyen, var mı? Kafanıza takılan bir nokta. Bu problemin çözümüne alakalı.
+
+305
+01:34:21,684 --> 01:34:22,684
+Peki.
+
+306
+01:34:24,684 --> 01:34:36,684
+Hocam, Recurgeon Tree'de n kare, yani n bölü 2 kare, n bölü 4 kare olarak devam ettik ya, bunun sebebi yukarıdaki t n eşittir n kare ile başlaması mıydı?
+
+307
+01:34:36,684 --> 01:34:38,684
+Evet.
+
+308
+01:34:38,684 --> 01:34:44,684
+Sekiz tane, her parçanın sekiz ile bölünmesinin sebebi de sekiz t bölü n bölü 2 olması, öyle değil mi?
+
+309
+01:34:44,684 --> 01:34:47,684
+Evet, şunu işte şu hale getirir.
+
+310
+01:34:47,684 --> 01:34:48,684
+Tamam.
+
+311
+01:34:54,676 --> 01:34:58,775
+Yani burada çizdiğimiz şeyle şu yazdığımız şeylerin aynısı.
+
+312
+01:35:01,076 --> 01:35:02,876
+Birbirinden bir farkları yok.
+
+313
+01:35:04,916 --> 01:35:05,935
+Peki.
+
+314
+01:35:12,243 --> 01:35:15,043
+Şimdi birazcık daha uyumsuz bir şey yapalım.
+
+315
+01:35:16,564 --> 01:35:19,644
+Dört tane N bölü üç olsun.
+
+316
+01:35:19,644 --> 01:35:21,043
+A-A-T-B-I.
+
+317
+01:35:24,644 --> 01:35:30,043
+Şimdi bunu yazmaya kalkarsak TN'ye eşit olacak bir var.
+
+318
+01:35:30,043 --> 01:35:33,844
+Bir de dört tane TN bölü üçü var.
+
+319
+01:35:39,315 --> 01:35:50,715
+Bir adım daha ilerletirsek, şuralarda t n bölü ne olacak bunlar şimdi ikinci seviyede?
+
+320
+01:35:50,715 --> 01:35:53,715
+9 olacak.
+
+321
+01:35:53,715 --> 01:36:01,715
+Şunlar 9 olacaklar, t n bölü 9, şurada 4 tane var.
+
+322
+01:36:08,532 --> 01:36:21,532
+Şurayı düşünürsek burası 1. Burayı düşünürsek, burada kaç tane eleman var? 4 tane. Burada kaç tane eleman var? 16 tane. Bir sonrakinde 64 tane. 1 bunlar ama. Tamam mı?
+
+323
+01:36:21,532 --> 01:36:35,532
+Dolayısıyla bizim t n'imiz i eşittir sıfırdan h'a kadar 4 üzeri i olacak.
+
+324
+01:36:36,404 --> 01:36:52,404
+Değil mi? Peki, h nedir? Ne dersiniz? h kaç burada? Logaritma 3 tabanında n olmaz mı? Aynen öyle. Logaritma...
+
+325
+01:37:05,684 --> 01:37:32,443
+Bunu yazmaya kalkarsak da, 4 üzerinde bölü 3 tabanda n, artı 1, eksi 1 bölü 4, eksi 1, o zaman 1 bölü 3 kalacak. Neyse 4 çarpı, 4 üzerinde bölü 3 tabanda n, eksi 1 bölü 3, bu.
+
+326
+01:37:34,547 --> 01:37:50,028
+O zaman 4 çarpı n üzeri logaritma 3, sonra 4, eksi 1, böyle 3. Bunu daha fazla sadeleştirme mümkün değil.
+
+327
+01:37:50,028 --> 01:38:02,268
+Burada, bunu da bir konotasyonda yazarsak n'in en yüksek derisinin olduğu yer, yani n üzeri logaritma 3 üzeri 4 şeklinde yazmamız gerekecek.
+
+328
+01:38:07,507 --> 01:38:11,507
+Peki, size bir soru.
+
+329
+01:38:13,007 --> 01:38:26,507
+Dört yüzde dokuz olsaydı, orası dört yüzde en kadar üç, artı bir olsaydı, bir konotasyonda bu ne olurdu? Onu siz buluyorsunuz, hadi bakalım. Beş dakikanız var.
+
+330
+01:38:29,507 --> 01:38:33,099
+Yani otuz dört, otuz dokuzu geçe, yakaladığınız var.
+
+331
+01:38:35,444 --> 01:38:39,604
+Şurası 3, sonra 9 tane çıkıyor.
+
+332
+01:38:41,444 --> 01:38:45,444
+Aha tıbil, zor değil. Yani hızlı bir şekilde hallederseniz diye düşünüyorum.
+
+333
+01:38:46,644 --> 01:38:47,444
+Bekliyorum.
+
+334
+01:43:50,963 --> 01:43:56,963
+Evet arkadaşlar, cevaplarınızı yazabilirsiniz. Ya da söyleyebilirsiniz.
+
+335
+01:43:56,963 --> 01:43:59,963
+Enkare. Enkare.
+
+336
+01:43:59,963 --> 01:44:08,963
+1, 2, 3, 4, 5. Güzel, evet hepinizin cevabı doğru.
+
+337
+01:44:08,963 --> 01:44:15,963
+Burada en nihayetinde şöyle bir şey çıkıyor değil mi?
+
+338
+01:44:18,228 --> 01:44:25,427
+Aslında E'şitir sıfırdan aşağı kadar dokuz üzeri iyi çıkıyor. H değer ne olacak?
+
+339
+01:44:27,427 --> 01:44:36,827
+Logaritma üç tabanında n. H da logaritma üç tabanında, her seferinde üçe böldüğüne göre logaritma üç tabanında n adımda bire gidecek.
+
+340
+01:44:36,827 --> 01:44:41,427
+Bunu da işlemleri yaparsanız, n nihayetinde.
+
+341
+01:44:42,836 --> 01:44:55,836
+İşte 9n kare eksi 1 bölü 8 gibi bir şey çıkıyor. O da o n kareye eşit. Peki, şimdi...
+
+342
+01:44:57,836 --> 01:45:00,836
+Başka bir örneğe geçmeden bir şey sorabilir miyim?
+
+343
+01:45:00,836 --> 01:45:01,836
+Evet.
+
+344
+01:45:01,836 --> 01:45:07,836
+Şimdi eğer ifadede her zaman 1 artı t kuralı diye gidiyorsa...
+
+345
+01:45:08,724 --> 01:45:19,123
+Bu adımları hızlıca atlayarak direkt sonuca gitsek nasıl olur? Hani t'nin başına gelen katsayı mesela bir öncekinde 9'du.
+
+346
+01:45:19,123 --> 01:45:25,123
+N yerine direkt 9 yazmış olduk. Yani ikisi yer değiştirdiği için...
+
+347
+01:45:25,123 --> 01:45:31,123
+Şöyle söyleyeyim şimdi, bununla alakalı bir formülasyon var.
+
+348
+01:45:31,572 --> 01:45:39,432
+Ona master kuralı mıydı neydi öyle bir kural da deniyor hatta. İleride algorit manelizi dersinde muhtemelen göreceksiniz.
+
+349
+01:45:39,432 --> 01:45:52,311
+Belli yapılar için recursion tree'yi oluşturmadan sonucu üretmek dediğin gibi mümkün kısa yollarla.
+
+350
+01:45:52,311 --> 01:45:58,271
+Ama her türlü yapı için o kural uygulanabilir değil.
+
+351
+01:45:58,271 --> 01:45:59,136
+Tamam.
+
+352
+01:45:59,136 --> 01:46:03,636
+O yüzden burada şu anda o tarz bir kurala girmiyoruz.
+
+353
+01:46:03,636 --> 01:46:07,836
+Yok, ben sadece sonuçları karşılaştırdım, fark ettim için.
+
+354
+01:46:07,836 --> 01:46:11,628
+Anladım, yani olabilir mi? Evet, öyle bir şey var mı? Var. Tamam mı?
+
+355
+01:46:17,011 --> 01:46:25,171
+Yani literatür dediğim gibi master kuralı diye geçiyordu herhalde. Tam şimdi ismini yanlış da hatırlıyor olabilirim ama çok çok da önemli değil.
+
+356
+01:46:25,171 --> 01:46:35,811
+Asıl mantığı yakaladığınız zaman, çünkü master kuralı her türlü yapıya uygulanabilir değil ama recursion tree ile çözüm her türlü yapıya uygulanabilir.
+
+357
+01:46:36,851 --> 01:46:39,251
+Güzel taraf orası zaten. Tamam mı?
+
+358
+01:46:42,963 --> 01:46:51,963
+Şimdi başka bir tane yapacağız. Bu sefer 4 tane n bölü 3 artı n.
+
+359
+01:46:51,963 --> 01:47:02,963
+Şimdi bunu çözmeye kalkarsak şöyle bir şey olacak. n var, sonra t n bölü 3 var.
+
+360
+01:47:02,963 --> 01:47:07,963
+t n bölü 3 var.
+
+361
+01:47:08,015 --> 01:47:17,015
+Bunlardan 4 tane var. Bunu bir sonraki adıma aktarırsak, n var. Şuralar bu sefer n bölü 3 olacaklar.
+
+362
+01:47:17,015 --> 01:47:24,015
+n bölü 3 olacaklar. 4 tane var. Bunların her birinden de yine 4'er tane n bölü 9 çıkıyor.
+
+363
+01:47:34,292 --> 01:47:42,792
+Şimdi burada her seviyeyi bulmaya kalkarsak, burası n. Burası nedir? Siz söyleyin.
+
+364
+01:47:44,792 --> 01:47:55,292
+Dört çarpı n bölü üç. Dört tane n bölü üç. Burası nedir? Dokuz n bölü üç. Pardon, on altı n bölü üç.
+
+365
+01:47:58,707 --> 01:48:03,507
+16 n bölü 9 değil mi?
+
+366
+01:48:08,083 --> 01:48:11,083
+n bölü 3 olmayacak bunlar, n bölü 9 olacaklar değil mi?
+
+367
+01:48:12,083 --> 01:48:14,083
+Kendileri geliyor ya.
+
+368
+01:48:15,083 --> 01:48:17,083
+Şurası, şurası ya.
+
+369
+01:48:18,083 --> 01:48:26,083
+Yani şunun çözümü n bölü 9'un altında n bölü 27'ler var.
+
+370
+01:48:31,123 --> 01:48:33,123
+Dört tane, tamam.
+
+371
+01:48:35,724 --> 01:48:40,123
+Oysa bunun bir sonraki adımda 64 tane, en biri 27 olacak.
+
+372
+01:48:42,123 --> 01:48:43,123
+Tamam mıyız?
+
+373
+01:48:45,123 --> 01:48:46,123
+Evet hocam.
+
+374
+01:48:49,123 --> 01:48:51,123
+Bu çok çok da güzel gözükmedi aslında değil mi?
+
+375
+01:48:51,923 --> 01:49:05,923
+Yani şöyle bir şey oluyor, t n eşittir, n artı 4 bölü 3, n artı 16, n bölü 9 artı 64, n bölü 27 artı gidecek bu.
+
+376
+01:49:07,923 --> 01:49:11,923
+Peki, bunu nasıl yazabiliriz?
+
+377
+01:49:12,564 --> 01:49:33,564
+Bir seri şeklinde bunu nasıl yazabiliriz? En parantezinde, evet, şimdi i eşittir sıfırdan başlayacak bir haşa kadar gidecek. Ne olacak bu? Şimdi 16 bölü 9 diyor, 64 bölü 27 diyor, 4 bölü 3 diyor, 4 bölü 3'ün bu neyi?
+
+378
+01:49:34,292 --> 01:49:49,292
+Karisi. 4 bölü 3 üzeri i olacak. Evet, 4 bölü 3 üzeri i olacak değil mi? Tamam. Peki, haşımız ne olacak burada? Logaritma 3 tabanında n.
+
+379
+01:49:51,292 --> 01:50:01,292
+n çarpı o zaman son hali şöyle bir şey gördük. 4 bölü 3 üzeri i olacak. Bunu açarsanız
+
+380
+01:50:03,956 --> 01:50:15,956
+n çarpı 4'ü 3 üzeri logaritma 3'te 10'den artı 1, eksi 1 bölü 4 bölü 3 eksi 1 şeklinde bunu adım adım adım adım adım götürürseniz,
+
+381
+01:50:15,956 --> 01:50:28,956
+en sonunda kabaca logaritma n üzeri logaritma 3'te 10'da 4 şeklinde bir şey çıkacak.
+
+382
+01:50:30,131 --> 01:50:55,531
+Bunu sizler yaparsınız. Şimdi bunlar işte en üzeri bir şeyler hep çıktılar. Şimdi başka bir problem çözelim. Problemimiz şöyle bir sefer. Tn eşittir. İki tane Tn-1 artı 1.
+
+383
+01:50:57,363 --> 01:51:07,663
+Şimdi, bu oldukça basit gözüküyor. Yani, şey var, iki tane T, n-1 var. Öncekilerde hep şey yapmıştık hatırlıyorsanız.
+
+384
+01:51:07,663 --> 01:51:14,063
+n bölü 2, n bölü 3 falan gibisinden bir şeyler olmuştu. Burada ise n-1.
+
+385
+01:51:14,063 --> 01:51:22,663
+Şimdi bunun n-1 olması bizim ağacımızın uzunluğunu ne yaptı? Bayağı bir arttırdı aslında.
+
+386
+01:51:22,931 --> 01:51:30,291
+İşte n bölü 2 falan ya da n bölü 3, n bölü k dediğimizde logaritma k tabanında n oluyordu ağacımızın yüksekliği.
+
+387
+01:51:30,291 --> 01:51:35,891
+Burada ise her bir adımda birer tane azaldığı için ağacımızın yüksekliği ne olacak? n olacak.
+
+388
+01:51:36,180 --> 01:51:43,180
+Bu da bizim için problem. Yani problem derken karmaşıklığı arttıran bir şey. Öyle söyleyelim.
+
+389
+01:51:43,180 --> 01:51:53,868
+Şimdi bunun nasıl bir sonuca yol açtığına bakalım. Burası ne olacak? Tn-1, şurası Tn-1 olacak. Bir sonraki adımdan geçersek burada.
+
+390
+01:51:53,971 --> 01:52:05,371
+İki tane olduğu için, şurası 1 olacak, burası 1 olacak, burada da tn-2, tn-2, şurada tn-2, tn-2'yi göreceğiz.
+
+391
+01:52:05,371 --> 01:52:13,371
+Bir sonraki adımda, 1, 1, 1, şunlardan birer tane çıkacak, onlardan da çıkacaklar vs.
+
+392
+01:52:13,371 --> 01:52:16,771
+Şimdi şuralarını düşünürsek, burası 1 olacak.
+
+393
+01:52:18,676 --> 01:52:24,176
+Burası 1 olacak, burası 2 olacak, burası 4 olacak, burası 8 olacak değil mi? Böyle gidiyor.
+
+394
+01:52:26,176 --> 01:52:29,176
+O zaman bizim...
+
+395
+01:52:32,148 --> 01:52:42,148
+n'imiz 1 artı 2 artı 4 artı 8 artı böyle gidiyor ve bunun yüksekliği de aşıda neye eşit olduğunu bulmuştuk, n eşit olduğunu bulmuştuk.
+
+396
+01:52:42,148 --> 01:52:48,148
+O zaman bunu yazarsak, i eşitir sıfırdan n'e kadar 2 üzeri i olacak değil mi?
+
+397
+01:52:50,948 --> 01:52:56,148
+Bunu yazarsak, 2 üzeri n artı 1 eksi 1 bölü 2 eksi 1 o da...
+
+398
+01:52:58,899 --> 01:53:00,899
+O 2 üzeri N.
+
+399
+01:53:02,899 --> 01:53:07,899
+Şimdi, bu hakikaten çok fazla.
+
+400
+01:53:07,899 --> 01:53:16,899
+Yani iki üstü bir şey, N'in karesi, N'in dördü falan o kadar çok büyük rakamlar değiller.
+
+401
+01:53:16,899 --> 01:53:20,899
+N'ye göre? İki üstü N'e göre.
+
+402
+01:53:20,899 --> 01:53:23,899
+Bu çok fazla bir şey var.
+
+403
+01:53:23,899 --> 01:53:25,899
+Karmışıklığı var.
+
+404
+01:53:26,228 --> 01:53:30,228
+Peki, şimdi başka bir şey yapalım.
+
+405
+01:53:32,228 --> 01:53:40,076
+Bu sefer şöyle bir şey yazacağım. n-1 artı t n-2 artı 1.
+
+406
+01:53:47,667 --> 01:54:01,108
+Bu, şu ana kadar gördüklerimizden bir şekilde farklı. Nasıl farklı? Şimdi burada şu kısım, bir de şu kısımda, T iki kez kendine çağırıyor. Burada da aynıydı zaten.
+
+407
+01:54:01,108 --> 01:54:09,108
+Ama burada iki kez T n-1 ile çağırıyor. Burada ise bir T n-1 ile çağırıyor, bir T n-2 ile çağırıyor. Tamam mı?
+
+408
+01:54:13,395 --> 01:54:28,796
+Nun sonucu nasıl bir şey olur? Şu ikisini karşılaştırırsanız hangisinin karmaşıklığı daha fazla olur? Üsttekinin karmaşıklığı mı daha fazla olur, alttekinin karmaşıklığı mı daha fazla olur?
+
+409
+01:54:29,796 --> 01:54:31,796
+İkisi de aynı olmayacak mı?
+
+410
+01:54:31,796 --> 01:54:32,683
+Hayır.
+
+411
+01:54:38,963 --> 01:54:52,264
+Hangisinin karmaşıklığı daha fazla? Şimdi bir tanesi tn-1 çağırıyor, bir tanesi tn-1'in yanında, yani yukarıdaki tn-1, yani bunu şu şekilde düşünebilirsiniz, tn-1 artı tn-1 artı 1 gibi düşünebilirsiniz.
+
+412
+01:54:52,264 --> 01:55:05,663
+Dolayısıyla bir tanesi tn-1 çağırırken ötekisi tn-2'yi çağırıyor. Daha hızlı değil mi? Daha hızlı düşürüyor, daha fazla düşürüyor. Dolayısıyla yukarıdaki daha fazla işlem yaptıracak değil mi?
+
+413
+01:55:07,380 --> 01:55:31,920
+Anlatabildim. Dolayısıyla aslında şöyle bir durum oluşacak. Burada bu ağaç, bunu çizdirirseniz tam dengeli bir ağaç olmayacak. Yani bazı dallar daha yukarıda bitecekler, bazı dallar daha aşağıda bitecekler. Anlatabildim mi? Yani bazıları daha yukarıda sonlanırken bazıları daha aşağılarda sonlanacaklar.
+
+414
+01:55:33,395 --> 01:55:56,576
+Çünkü bazılarında n-2'lerden dolayı baya bir azalma olacakken bazılarında şurasının maksimum yüksekliğine n dersem, tamam, bunun yüksekliği maksimum şundan dolayı n dersem, şu n-2'lerden dolayı şurası da, şurasının yüksekliği de, bir dakika şöyle çizeyim, şuraya n dersem,
+
+415
+01:55:56,948 --> 01:56:05,948
+Şu daha kısa olanların karmaşıklığı n bölü 2 olacak. Niye n bölü 2 olacak? n-2 den dolayı. Her seferinde 2 azalıyor.
+
+416
+01:56:05,948 --> 01:56:16,948
+Dolayısıyla n bölü 2 çağrıda biten dallar olacakken n çağrıda biten dallar da olacaklar. Dengeli bir ağaç olmayacak.
+
+417
+01:56:17,555 --> 01:56:27,555
+Şu ana kadar gördüğünüz bütün ağaçlar dengeliydi. Ama bu dengesiz bir ağaç. Bunun full hali, full hali, tamam, full halinin karmaşıklığı iki üstü N'di.
+
+418
+01:56:27,555 --> 01:56:43,435
+Ama bunun şu azaltılmış halinin, tamam, şu azaltılmış halinin karmaşıklığı, 1 artı kök 5 bölü N, pardon, kök 5 bölü 2, kök 5 bölü 2 üzeri N.
+
+419
+01:56:44,564 --> 01:57:02,164
+Bu gördüğünüz rakam aslında altın oran diye bilinen bir rakam. 1.618 diye giden irrasyonel bir sayı.
+
+420
+01:57:03,764 --> 01:57:20,764
+Yani bu iki üstü enken bu 1.6 üzeri en. Tamam? İkisinin arasında fark bu. Bu nasıl çıkıyor buna girmeyeceğim. Tamam. Ama uğraşmanızı şiddetle tavsiye ederim.
+
+421
+01:57:29,587 --> 01:57:42,587
+Şu yazdığımız karmaşıklık. Bizim daha önceden gördüğümüz bir algoritmanın karmaşıklığı, Recursive algoritman da gördüğümüz bir algoritmanın karmaşıklığı.
+
+422
+01:57:44,587 --> 01:57:49,587
+Şimdi şunu hatırlayın, şöyle yazarsam çok daha rahat hatırlarsınız.
+
+423
+01:57:52,115 --> 01:58:04,355
+f n eşittir f n eksi 1 artı f n eksi 2. Böyle bir şey daha önce biz gördük mü? Hatırlıyor musunuz?
+
+424
+01:58:08,404 --> 01:58:18,404
+Bir fonksiyonun değeri, bir önceki ve iki önceki. Aynen öyle diyorlar. Fibonacci. Aynen öyle. Fibonacci sayısı.
+
+425
+01:58:18,404 --> 01:58:33,164
+En inci Fibonacci sayısını bulmak için şu gördüğümüz yapıda bir rekörsif fonksiyon tanımlarsak, bunun karmaşıklığı şöyle bir şey oluyor. Tamam.
+
+426
+01:58:34,323 --> 01:58:44,823
+En ence bir bana atı sayısını bulmak için. En ence bir bana atı sayısını bulmak için. Peki, en ence bir bana atı sayısını bulmak için.
+
+427
+01:58:48,404 --> 01:59:01,604
+Normalde biz eninci fıvanetçi sayısını rekörsif fonksiyon falan kullanmadan direkt bulmaya kalksak, yapacağımız işlem nasıl bir şey olur?
+
+428
+01:59:02,131 --> 01:59:11,131
+İşte 1 var, 1 var, sonra bu ikisini topladık 2 yapıyoruz, bu ikisi topladık 5 yapıyoruz, bu ikisi topladık 8 yapıyoruz, bu ikisi topladık 18 yapıyoruz.
+
+429
+01:59:11,131 --> 01:59:19,131
+Yani eninci Fibonacci sayısına, pardon şu an üç olacak, eninci Fibonacci sayısına kaç tane işlemde yarışırız?
+
+430
+01:59:20,131 --> 01:59:22,131
+N-1 işlem.
+
+431
+01:59:22,131 --> 01:59:28,131
+Haa, en yani, ON'de yarışırız değil mi? ON'de çözeriz bu işi, doğru mu?
+
+432
+01:59:28,756 --> 01:59:45,435
+Recursive olmayan yapıyla. Recursive olmayan. Tamam. Şimdi bir Recursive yapı yaptık. Recursive yapıda karmaşıklığımız 1.618 gibi bir renk üzeri n. Hangisi daha büyük?
+
+433
+01:59:58,163 --> 02:00:00,163
+Üstlü olan daha büyük.
+
+434
+02:00:00,163 --> 02:00:09,163
+Çok çok daha büyük. Tamam. Yani 20. Fibonacci'yı falan bulmaya kalksanız yalnız bir saniye arkadaşlar bekleteceğim.
+
+435
+02:00:44,020 --> 02:01:07,020
+Geldim kusura bakmayın. Çok daha büyük yani recursive bir hale getirdiğimizde recursive olarak çözmeye kalktığımızda bu mevcut çözümümüzde çok kötü bir şey yapmış oluruz. Çünkü normal çözümü o n recursive çözümü 1.618 üzeri n. Tamam.
+
+436
+02:01:16,051 --> 02:01:43,051
+Sorumuz şu, acaba en inci Fibonacci sayısını o n'den düşük karmaşıklıkla hesaplayabilir miyiz?
+
+437
+02:01:44,083 --> 02:02:06,028
+Soru bu. Tamam. Şimdi düşündüğünüzde Fibonacci sayıdan düşündüğünüzde her Fibonacci sayısı kendisinden önce gelen iki tane sayıya bağlı. Şu ikisine bağlı, bu, bu ikisine bağlı, bu, bu ikisine bağlı, bu. Böyle gidiyor değil mi? Yani hani Sadu'yu bize...
+
+438
+02:02:06,292 --> 02:02:24,292
+Böyle bir şeyin pek de mümkün olmadığını gösteriyor. Yani her bir eleman kendinden önceki iki tanesine direkt bağlıysa, her bir adımda bir tane sayı elde edebiliyoruz. En ince adıma gidebilmek için de en tane adım atmamız gerekiyor.
+
+439
+02:02:24,292 --> 02:02:25,292
+Tamam.
+
+440
+02:02:29,876 --> 02:02:48,876
+Şimdi sorumuzun cevabı evet hesaplayabiliriz ve bunu rekörsif olarak yapacağız. Yani ama demin gördüğümüz rekörsif ile değil başka bir rekörsif yapıyla yapacağız ama onu aradan sonra yapacağız.
+
+441
+02:02:56,756 --> 02:02:58,756
+Bu kadar ara diyorum.
+
+442
+02:03:01,756 --> 02:03:07,756
+Güzel bir problemle yaklaşık 10 dakika sonra birlikteyiz arkadaşlar.
+
+443
+02:03:14,355 --> 02:03:15,979
+Az sonra görüşmek üzere.
+
+444
+02:14:43,891 --> 02:15:08,271
+Evet, tekrardan merhaba arkadaşlar. Hazırsak başlayalım. Şimdi bu problemi o enden daha düşük bir karmaşıkta çözmenin mümkün olduğunu söyledim. Bunun için birkaç gözlem yapmamız gerekiyor.
+
+445
+02:15:09,427 --> 02:15:17,427
+Bir matris tanımlayacağım, F matrisi. Bu F matrisi 2 çarpı 2'lik matris ve yapısı şöyle.
+
+446
+02:15:17,427 --> 02:15:19,427
+Tamam.
+
+447
+02:15:19,427 --> 02:15:26,427
+Şimdi ben F matrisinin karesini bulmak isteyeyim.
+
+448
+02:15:33,332 --> 02:15:34,332
+Neçkaj o.
+
+449
+02:15:37,684 --> 02:15:45,304
+...
+
+450
+02:15:52,051 --> 02:15:53,051
+Çi.
+
+451
+02:15:55,051 --> 02:15:56,331
+Vış, vış...
+
+452
+02:16:00,435 --> 02:16:25,636
+F3'ü bulmak isteyeyim, 2, 1, 1, 1, yine 1, 1, 0'ı çarpayım. Bu bana 3, 2, 2, 1'i verecek. F4'ü bulmak isteyeyim, 3, 2, 2, 1'ine 1, 1, 1, 0'ı çarpacağım. Bu bana 5, 3, 3, 2 verecek.
+
+453
+02:16:26,420 --> 02:16:38,020
+F5 ise 5, 3, 3, 2 ile 1, 1, 1, 0 bulmak isteyeyim. Bu an 8, 5, 5, 3'ü verecek.
+
+454
+02:16:40,520 --> 02:16:47,020
+Buradaki yapıdan çıkartacağımız şey şu.
+
+455
+02:16:52,724 --> 02:16:56,724
+Şimdi Fibonacci sayılarına bakarsak, şu yukarıya.
+
+456
+02:16:59,724 --> 02:17:12,224
+2, 3, 5, 8, 3, 8, 5.si şu, 5. Fibonacci sayısı 5.
+
+457
+02:17:13,724 --> 02:17:18,724
+Şurası Fibonacci n artı 1.
+
+458
+02:17:19,156 --> 02:17:26,996
+Şuradan Fibonacci, ve, şöster Fibonacci, en exhibil oluyor.
+
+459
+02:17:30,355 --> 02:17:31,896
+Bunu görebildik mi?
+
+460
+02:17:46,291 --> 02:17:49,611
+Sesim geliyor mu arkadaşlar? Evet hocam geliyor sesimiz.
+
+461
+02:17:50,891 --> 02:17:52,171
+Bunu görebildiniz mi?
+
+462
+02:17:52,951 --> 02:17:58,072
+F'in eninci üstünün içinde fibonacci sayılarının nasıl yer aldığını.
+
+463
+02:18:04,788 --> 02:18:16,388
+Peki, güzel yani f'in n'inci üstünü hesaplarsam ben n'inci kibari sayısı şurada yarıyor. İyi, güzel.
+
+464
+02:18:18,228 --> 02:18:31,988
+Şimdi, f'in n'inci üstü, f dediğimiz şey nasıl bir şey? Bir matriz ama iki çarpı ikilik bir matriz. Ben bunun normal
+
+465
+02:18:32,244 --> 02:18:40,244
+İşte yani 2x2'lik bir matrisin eninci üstünü hesaplamaya kalkarsam bunun karmaşıklığı ne olacaktır?
+
+466
+02:18:40,244 --> 02:18:49,244
+N olacaktır. Bakalım. Eninci üstünü hesaplamaya kalkarsam bunun karmaşıklığı N olacaktır.
+
+467
+02:18:49,244 --> 02:18:53,244
+Fakat daha önce biz...
+
+468
+02:18:57,652 --> 02:19:07,252
+Üst alma işlemini n karmaşıklıktan logaritma iki tabanında n karmaşıklığa indirgen bir fonksiyon yazmıştık, hatırlıyor musunuz?
+
+469
+02:19:16,788 --> 02:19:39,788
+Evet, hatırlıyor musunuz onu? Yani x üzeri n'i logaritma iki tabanında n karmaşıklıkla çözen bir şey, fonksiyon yazmıştık. Yaptık ama nasıl yaptığınızı hatırlayamadım.
+
+470
+02:19:41,940 --> 02:19:56,940
+Evet, yapmıştık. Tekrardan bakarsın ne yiyorsun? Şimdi eninci üssü, bir sayının, bakın bir sayının eninci üssünü en karmaşıklıktan logotma kitabında en karmaşıklıktan indirgemiştik.
+
+471
+02:19:56,940 --> 02:20:06,940
+Şimdi fakat bizim burada karşılaştığımız şey bir sayının üssü değil, bir matrisin üssü. Fakat...
+
+472
+02:20:07,028 --> 02:20:19,907
+Bu matrisin çok temel bir özelliği var. Bu matris 2x2'lik bir matris. Yani işte n'e bağlı değil. Yani biz n'inci Fibancı sayısını bulacağız ya.
+
+473
+02:20:19,907 --> 02:20:34,388
+n'inci Fibancı sayısını bulurken bu matris çarpımı yapacağız. Fakat bu çarpımını yapacağımız matrisin şekli, değeri ve onu çarparken yapacağımız işlem sayısı
+
+474
+02:20:34,495 --> 02:20:51,175
+n'e bağlı değil. Yani matriz hep 2x2'lik bir matriz. Şimdi burada 2x2'lik bir matrizi çarparkenki işlem sayımız ne olur arkadaşlar? Bana söyleyebilir misiniz?
+
+475
+02:20:51,175 --> 02:21:00,695
+2x2'lik bir matrizi, 2x2'lik bir başka matrize çarparken kaç işlem yapmamız gerekir? Demin yaptık.
+
+476
+02:21:09,587 --> 02:21:10,587
+Kaç işten?
+
+477
+02:21:19,283 --> 02:21:29,283
+4 tane çarpma yapacağız, doğru sana. Bir de, var mı başka bir şey? 4 tane çarpma işlemi. Değil mi?
+
+478
+02:21:29,283 --> 02:21:42,283
+4. Peki, atıyorum, bu 4 rakamı n'e bağlı mı? Değil.
+
+479
+02:21:42,451 --> 02:22:00,451
+n ile alakalı bir şey değil. Yani n rakamına bağlı değil. [öğrenci] evet demişsin ama bağlı değil. Yani n'in değeri 9 ise bizim 2x2'lik matrisi çarpmadaki işlem sayımız sabit.
+
+480
+02:22:00,451 --> 02:22:09,451
+Yok, matrisin kenarının n değil, kesinlikle değil. Matrisin kenarları 2, sabit. Biz burada bakın.
+
+481
+02:22:10,004 --> 02:22:22,004
+Şunu kullandık. Yani 9. buvanetçi sayısını bulurken ki kullandığımız F ile 25. buvanetçi sayısını kullandığımız F aynı F.
+
+482
+02:22:22,004 --> 02:22:28,004
+Tamam. Yani bir tanesi 2x2, bir tanesi 9x9 falan değil. Öyle bir şey yok.
+
+483
+02:22:37,940 --> 02:22:53,940
+Burada da bir matrisin üstünü alırkenki çarpma işlemimiz yine sabit sayıda işlem. Ama burada bir değil, dört. Sabit yani.
+
+484
+02:22:53,940 --> 02:23:00,940
+Dolayısıyla biz nasıl ki bir sayının üstünü o daha önce tanımladığımız algoritmayla
+
+485
+02:23:03,156 --> 02:23:21,556
+Logaritma 2 tabanında n karmaşıklıkla yapabiliyorsak, f üzeri n'i de bulmayı aynı fonksiyonu kullanarak, tabi orada belli modifikasyonlar yapmanız gerekecek ama çok kompleks şeyler değiller. Logaritma 2 tabanında n ile bulabilirsiniz.
+
+486
+02:23:28,500 --> 02:23:42,500
+n. üstünü logaritma 2 tabanında n karmaşıklıkla bulabiliyor iseniz, o zaman n. fibonacci sayısını da logaritma 2 tabanında n karmaşıklıkla bulabilirsiniz.
+
+487
+02:23:42,500 --> 02:23:56,492
+Bu gerçekten süper. Yani 1000. fibonacci sayısını 10 karmaşıklıkla buluyorsunuz. Bu süper bir şey. 1000 karmaşıklıkla 20. fibonacci sayısını
+
+488
+02:23:57,236 --> 02:24:00,836
+Pardon, 1000. fibonatçı sayısını 10 karmaşıklıkla buluyorsunuz.
+
+489
+02:24:00,836 --> 02:24:05,236
+4000. fibonatçı sayısını sadece 12 karmaşıklıkla buluyorsunuz.
+
+490
+02:24:06,236 --> 02:24:13,236
+Sizlere mutlaka ödeviniz diyeyim.
+
+491
+02:24:14,236 --> 02:24:17,236
+Bunu mutlaka yapın, kodunu yazarak.
+
+492
+02:24:18,195 --> 02:24:36,195
+Demin bahsettiğim gibi, iki sayı, yani bir sayının üstünü bulmayı, ilk önce zaten onu yapmanız lazım. Onu yaptıktan sonra da onu matrisin üstünü bulan forma getirmeniz lazım. Ondan sonra da zaten işiniz bitmiş oluyor.
+
+493
+02:24:45,075 --> 02:25:09,075
+1 milyonuncu fibonacci sayısını bulmaya çalışın. Tamam? Bakın, 1 milyonuncu fibonacci sayısını bulmaya çalışın. Standart yolla. Hani şey yapmıştık ya, 2 değişkenle, 3 değişkenle fibonacci sayısını bulmaya yapmıştık. Onun karmaşıklığı n. Yani 1 milyonuncu fibonacci sayısını bulmak istediğiniz zaman 1 milyon adımlı bir yapı var orada.
+
+494
+02:25:09,876 --> 02:25:17,275
+Ama bu yazacağınız fonksiyonu kullandığınız zaman 1 milyona sadece 20 adımda erişeceksiniz.
+
+495
+02:25:17,275 --> 02:25:22,355
+Belki işte şeyler olacak tabi. Artı biraz küsur artı olacak çarpmalardan dolayı.
+
+496
+02:25:22,355 --> 02:25:30,076
+Ama çok çok daha hızlı erişebildiğinizi, sonucu çok daha hızlı alabildiğinizi görün.
+
+497
+02:25:30,076 --> 02:25:35,076
+Bu dediğim gibi birinci elden gözlemdir.
+
+498
+02:25:36,628 --> 02:25:57,628
+Yani birinin size anlattığı değil, şöyle oluyor, şöyle olur dediğine kendinizin kontrol edip gerçekten öyle olup olmadığını kendinize ikna etmeniz. Tamam? Bu size dediğim gibi ödevim olsun. Bunu mutlaka herkes bir yapsın. Tamam?
+
+499
+02:26:04,884 --> 02:26:15,884
+İki şey daha söyleyeceğim. Birincisi dersin ders kodlarında yer alan Connected Component Labeling diye bir şey var. Connected Component.c dosyası herhalde.
+
+500
+02:26:18,324 --> 02:26:28,144
+Bir madresin içerisindeki birbirine bağlı bileşenleri bulup kimler kime bağlı ve orada kaç tane bileşen var. Onları bulan bir kod o.
+
+501
+02:26:29,012 --> 02:26:43,012
+Recursive bir kod, o kodu mutlaka inceleyin. Nasıl çalışıyor, ne yapıyor, ne ediyor, recursive olarak bu problemi nasıl güzel bir şekilde çözebiliyor, onu mutlaka bir görün.
+
+502
+02:26:43,012 --> 02:26:52,012
+Son olarak söyleyeceğim şey ise projemiz. Projeyle alakalı duyuruyu yaptık gördünüz mü?
+
+503
+02:26:58,932 --> 02:27:24,231
+Gördünüz, projeyle alakalı bütün sorularınıza 8 Mayıs günkü uygulama dersinde cevap verilecek. O yüzden o derse mutlaka ama mutlaka katılın. O derste projenin detayları anlatılacak. Kafanıza takılan soru işaret. İlk önce mutlaka okuyun zaten dokümanı.
+
+504
+02:27:24,788 --> 02:27:30,788
+Okuduktan sonra kafanızda oluşan soru işaretleri varsa onları ifade edin.
+
+505
+02:27:30,788 --> 02:27:38,788
+Herhalde 15'ine kadar soru soru ama 15'inden sonra herhalde zaten 2 hafta kalıyor. Ondan sonra herhangi bir soruya cevap verilmeyecek.
+
+506
+02:27:38,788 --> 02:27:47,788
+Dolayısıyla Classroom linkine hala girilmiyor. Classroom linkine ihtiyacınız var mı şu anda direkt?
+
+507
+02:27:47,788 --> 02:27:51,788
+Şu anda size gönderdiğim dosyalarda her şey var değil mi?
+
+508
+02:27:56,595 --> 02:28:02,275
+O Classroom linkinde eğer o göndermiş olduğumuz dökümanın yeni versiyonu olursa
+
+509
+02:28:07,636 --> 02:28:14,515
+Orada paylaşılmış. Benim size gönderdiğim şey de yok mu arkadaşlar?
+
+510
+02:28:16,515 --> 02:28:24,832
+Evet, orada duyular, orada anladım, tamam demek istediğini. O problem çözülür, onda sıkıntı olmaz da.
+
+511
+02:28:24,832 --> 02:28:48,512
+Eğer çözülmezse asistan arkadaşları mutlaka mail atıp erişemiyoruz hala biz diye. Yeni değişiklikler olursa oradan duyurulacak. O yüzden evet erişebiliyor olmanız önemli. Problem olursa dediğim gibi erişme noktasında asistan hocalarınızla iletişime geçersiniz. Dediğim gibi 8 Mayıs'ta giderse mutlaka katılın.
+
+512
+02:28:49,683 --> 02:29:01,243
+Sorularınızın oluşabilmesi için, projeyle alakalı kafanızda sorular oluşabilmesi için, proje dokümanını iyice okuyup anlayıp bir miktarda başlangıç yaparsanız,
+
+513
+02:29:01,243 --> 02:29:11,563
+ben bu işi nasıl çözeceğim, nasıl problemi halledeceğim kısmında bir şekilde bir başlangıç yaparsanız, sorularınız o zaman çok daha netleşir.
+
+514
+02:29:12,948 --> 02:29:20,948
+Projeyle alakalı sorularınız projeyi yapmaya başladıktan sonra da ortaya çıkacaktır, çıkabilir.
+
+515
+02:29:20,948 --> 02:29:25,948
+O yüzden bir an önce projenizi yapmaya başlayın.
+
+516
+02:29:25,948 --> 02:29:28,948
+Son zamanlara kesinlikle ve kesinlikle bırakmayın.
+
+517
+02:29:28,948 --> 02:29:32,948
+Zaten son zamanlar, finallerin yaklaştığı zamanlar, şey yapmayın.
+
+518
+02:29:32,948 --> 02:29:39,948
+Dediğim gibi mümkün olduğu kadar hızlı bir şekilde projeyle uğraşmaya başlamanızı öneriyorum.
+
+519
+02:29:40,308 --> 02:30:01,808
+Tamam. Keyifli bir proje, bir oyun aslında. Bir manuel modu var, bir otomatik modu var. Otomatik modunu çözmeye uğraşırken bayağı şey öğreneceksiniz diye tahmin ediyorum. Öğrenmek zorunda kalacaksınız diye tahmin ediyorum.
+
+520
+02:30:01,808 --> 02:30:05,308
+Peki, var mı arkadaşlar sorunuz?
+
+521
+02:30:07,283 --> 02:30:12,283
+Bugünki dersi alakalı ya da genel olarak rica ederim. Var mı sorunuz başka?
+
+522
+02:30:16,852 --> 02:30:26,852
+Yok herhalde peki. Ben teşekkür ediyorum arkadaşlar katılımlarınız için. Haftaya görüşmek üzere diyorum herkese.
+
+523
+02:30:26,852 --> 02:30:28,852
+Görüşürüz hocam, iyi günler.

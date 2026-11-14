@@ -1,0 +1,3771 @@
+1
+00:08:38,772 --> 00:08:43,092
+Merhaba arkadaşlar, geliyor mu sesim? Merhabalar hocam, geliyor sesiniz.
+
+2
+00:08:44,372 --> 00:08:49,812
+Nasılsınız? Son derse geldik. Keyifli nasıl? Dönemi bitiriyorsunuz.
+
+3
+00:08:50,212 --> 00:08:56,852
+Hocam, biraz yoğun bir dönem, projeler sınavları falan biraz yoğun geçiyor hocam. Onun acında iyi yani.
+
+4
+00:08:57,572 --> 00:09:02,692
+Çok, bu derste ödev vermedim fazla ya. Değil mi?
+
+5
+00:09:02,932 --> 00:09:06,412
+Ama hocam, quiz yaptık. Yani iki tane quiz yaptık ödev vermeye.
+
+6
+00:09:08,436 --> 00:09:24,436
+Ya kuyuz da ödevin yeri başka oluyor. Neyse kuyuz yaptık. Şimdi dönemin sonuna geldik. Nasıl bu ders, nasıl güzel miydin, nasıl bir şeyler öğrenebildiniz mi? Genel olarak soruyorum.
+
+7
+00:09:27,436 --> 00:09:29,132
+Faydası oldu mu sizce?
+
+8
+00:09:30,196 --> 00:09:36,676
+Neye faydası olabilir bu ders? Sizce nerede kullanabilirsiniz bu dersteki öğrendiklerinize?
+
+9
+00:09:36,676 --> 00:09:48,916
+Bence bir sistem geliştirirken, yeni bir şey bulurken, o sistemin evalation kısmında nasıl karşılaştırmak için bu yöntemler kullanılabilir gibi geliyor bana hocam.
+
+10
+00:09:51,220 --> 00:10:03,220
+Peki, o zaman sana soru sorayım [öğrenci], [öğrenci], [öğrenci]. İki tane elinde sistem var. Bu iki sistemin performanslarını karşılaştırınca, PDF'i mi kullanırsın, CDF'i mi kullanırsın?
+
+11
+00:10:03,220 --> 00:10:05,220
+Düşünüm.
+
+12
+00:10:10,580 --> 00:10:13,580
+PDF'in tanımı neydi? CDF'in tanımı neydi?
+
+13
+00:10:13,580 --> 00:10:20,580
+CDF, Cumulative Distribution Function hocam. Orada kümülatif olarak olasılıkları topluyorduk.
+
+14
+00:10:20,580 --> 00:10:31,104
+PDF'de de, PDF ise hocam, işte bütün sample set'teki olasılıkların, onu temsil ettiğimiz ifadeye PDF diyorduk hocam.
+
+15
+00:10:31,104 --> 00:10:44,104
+CDF neydi? Bir aralıkta olma olasılığıydı. Evet, bir aralıkta olma olasılığıydı. Evet. Şimdi iki sistemin performansı karşılaştırmak için neyi kullanırız bu durumda? CDF'i kullanırız. Evet hocam.
+
+16
+00:10:58,707 --> 00:11:07,207
+En hızlı bire gidiyorsa, hemen dersin ki o sistemin performansı daha iyidir.
+
+17
+00:11:09,807 --> 00:11:12,107
+Mesela bunun gibi kullanabiliyoruz.
+
+18
+00:11:13,307 --> 00:11:24,807
+Yani ders genel olarak böyle sizleri alıştırmakta, yani siz bilgisayar mühendisliği olarak teoriden çok uzaksınız.
+
+19
+00:11:25,716 --> 00:11:40,716
+Hani böyle çok fazla matematik, çok fazla böyle istatistik olasılık işlerini önemsemiyorsunuz. Yani genel olarak söylüyorum, sizler için demiyorum yani, bu bütün bilgisayar mühendisliği için.
+
+20
+00:11:40,716 --> 00:11:48,716
+Böyle olunca bizim öğrencilerde işte olasılık istatistik bilgileri zayıf oluyor. Tabii bu konularda zayıf olunca...
+
+21
+00:11:51,312 --> 00:12:00,312
+Makine öğrenmesi gibi ya da yapay zeka gibi konular çalıştıklarında zorlanıyorlar.
+
+22
+00:12:01,312 --> 00:12:05,312
+Sizlere yine tekrarlayacağım bunu, belki üç dört defa tekrarlamışımdır.
+
+23
+00:12:06,312 --> 00:12:10,312
+Mühendislik hayatınızda şu derslere çok önem vereceksiniz.
+
+24
+00:12:11,312 --> 00:12:16,312
+Bir, tabii ki matematik dersleri önemli. Matematiği, o yüzden onları saymıyorum.
+
+25
+00:12:17,556 --> 00:12:34,136
+Olasılık ve istatistik, tamam mı? Buna çok önem vereceksiniz. İkincisi, hesaplama kuramı. Bu derse çok önem vereceksiniz. Üçüncüsü,
+
+26
+00:12:34,644 --> 00:12:59,324
+İşaret işlemi, sinyal işlemi, bu derse çok önem vereceksiniz. Dördüncüsü de algoritma ve makine öğrenmesi gibi o tür şeyleri de öğreneceksiniz. Bunların hepsini yaparsanız çok sağlam bir mühendis olursunuz, hatta çok sağlam bir araştırmacı olursunuz. Bunlar sizi çok kuvvetli kılar. Artı olasılığı biliyorsunuz artık.
+
+27
+00:12:59,744 --> 00:13:12,344
+İstatistiği biliyorsunuz ama sizin şu anda öğrendiğiniz denizde bir damla. Bakın abartmıyorum, denizi düşünün, Karadeniz, Akdeniz ya da dünyadaki bütün denizleri düşünün, onun içinde bir damla.
+
+28
+00:13:12,344 --> 00:13:26,344
+Olasılık ve istatistik evrenin dili bir kere. Bütün olayları olasılık ve istatistiği kullanarak açıklamaya çalışıyoruz. Enerjinin olasılıksal dağılımıyla açıklamaya çalışıyoruz.
+
+29
+00:13:28,403 --> 00:13:41,604
+Dolayısıyla, açıklamaya çalışıyoruz. Bu konuları çok iyi bilirseniz, evrendeki problemleri de çok rahatlıkla çözebilirsiniz. Tabii rahatlıkla dediğim, nasıl çözeceğinizi bilebilirsiniz.
+
+30
+00:13:41,604 --> 00:13:51,604
+Ben yani bu derste elimden geleni yaptım. Yani derslerin saatinde başlattım, değil mi? Gençler.
+
+31
+00:13:53,331 --> 00:13:55,331
+Evet hocam.
+
+32
+00:13:55,331 --> 00:13:58,331
+Dersleri eksik işledik mi, fazla mı işledik genelde?
+
+33
+00:13:58,331 --> 00:14:02,331
+Hocam bir hafta işlemedik, o zaman da tatilde hocam zaten.
+
+34
+00:14:02,331 --> 00:14:03,331
+Evet.
+
+35
+00:14:03,331 --> 00:14:08,331
+Zaten o tatil, resmi tatile ben bir şey yapamam gençler.
+
+36
+00:14:08,331 --> 00:14:09,331
+Evet hocam.
+
+37
+00:14:09,331 --> 00:14:11,331
+Değil mi?
+
+38
+00:14:11,331 --> 00:14:19,331
+Bana bir şey yapamam da, şey yani, elimden geldiğince şey yapmaya çalıştım hani…
+
+39
+00:14:20,532 --> 00:14:37,516
+Elimden geldiğince değilim, hiçbir derse zamanından geç girmedim. Hatta tam zamanında bitirmeyi, fazla anlattım belki, araları belki kaçırdık. Ama genel olarak bütün saatlerine uyudum diye düşünüyorum.
+
+40
+00:14:37,908 --> 00:14:46,788
+Atladığım bir ders varsa hakkınızı helal edin. Öğrenemediğiniz bir şey kaldıysa benden, hakkınız kalmasın üzerinde. İstemem yani hakkınızın kalmasını.
+
+41
+00:14:46,788 --> 00:14:57,908
+Estağfurullah hocam. Ben de mesela maaş alıyorum, aldığım bu maaşın helal olması vardır değil mi gençler? Yani helal olmadıktan sonra niye yaşıyoruz?
+
+42
+00:15:03,956 --> 00:15:30,956
+Artı dersle ilgili materyaların konusunda size yardımcı olmaya çalıştım, sorular paylaştım hatırlıyorsanız. Örnek sorular paylaştım. Yine bu derste şimdi örnek sorular da yapacağız yine. Sonra plana uygun davranmaya çalıştım ders boyunca. Yani bir planda bir problem yaşamadım. Biliyorum derste İngilizce'den kaynaklanan bazı problemler olmuş olabilir.
+
+43
+00:15:31,264 --> 00:15:39,264
+Haklısınız. Ama dersi verimli bir şekilde kullanmaya çalıştım yani. Evet, bir şey söyleyecektiniz galiba?
+
+44
+00:15:39,264 --> 00:15:43,264
+Olmadı hocam, İngilizce konusunda bir sıkıntı yoktu bence.
+
+45
+00:15:43,327 --> 00:16:03,327
+Benim açımdan vardı hocam, sizden kaynaklı değildi aslında ama benden kaynaklı olan bir problemdi. O yüzden keşke diyorum dersin dili Türkçe olsaydı ki sizin verdiğiniz %100 ise benim ondan aldığım %50 oluyordu. Dersin Türkçe olması benim için çok daha büyük olurdu. Ama dediğim gibi sizlik bir sıkıntı değil yani tamamen benden kaynaklı bir...
+
+46
+00:16:04,148 --> 00:16:07,148
+Problem olduğu için herhangi bir eleştir olarak söylemiyorum.
+
+47
+00:16:07,148 --> 00:16:15,148
+Ben İngilizcemi çok güzel görmüyorum. Yani öyle muhteşem, güzel bir İngilizcem yok.
+
+48
+00:16:15,148 --> 00:16:20,148
+Ama elimden geldiğince anlaşılır konuşmaya çalıştım ama bazen ben de heyecanlanıyorum.
+
+49
+00:16:20,148 --> 00:16:25,148
+Böyle bazen böyle şey yapıyorum sizlerle konuşunca. Bazen aklıma bir şeyler geliyor.
+
+50
+00:16:25,148 --> 00:16:30,148
+Gerçek hayatta Türkiye'de karşılaştığımız problemler. Onlara bir tepki oluşuyor birden.
+
+51
+00:16:30,528 --> 00:16:57,888
+Böyle, şey çıkabiliyor sesim, biraz yüksek sesle çıkabiliyor ama, elimden geldiğince sizlerin anlaması için çalıştım ve sizlerin gözünüzün açık olmasını istiyorum. Tamam mı? Bu konuda hepiniz uzman olacaksınız, olasılık istatistik konusunda. Tamam mı? Hepiniz uzman olacaksınız. Ki, yarın Türkiye güçlü bir devlet olsun.
+
+52
+00:17:00,532 --> 00:17:10,532
+Yani güçlü devlet silahla olmaz yani, bu kağıt kalemle olur tamam mı? Sizler bu olasılık ve istatistiği çok iyi öğrenirseniz bir sürü problemi çözebileceksiniz.
+
+53
+00:17:10,532 --> 00:17:20,532
+Ve beni unutmayın yani bu konuda. Yani ben elimden geldiğini sizlere öğretmeye çalıştım ve teşvik ediyorum da. Her zaman teşvik etmeye çalıştım.
+
+54
+00:17:20,532 --> 00:17:28,268
+Araç gereçler konusunda, vallahi bak şu anda iPad kullanıyorum, işte bu iPad.
+
+55
+00:17:28,403 --> 00:17:52,395
+Gördüğünüz gibi ders anlatırken. Bunu ders anlatabilmek için gittim iPad satın aldım. Niçin? Sizlere dersi daha iyi anlatabilmek için. Kendime ihtiyacı yok yani bunun. Normalde ben araştırmamı yapıyorum, bilgisayarım var, bir problem yok. Ama sizlere daha iyi ders anlatabilmek için gittim iPad aldım. Niye? Çünkü önemsiyorum. Çünkü Cumhuriyet...
+
+56
+00:17:52,564 --> 00:18:00,564
+Devletimizin geleceği sizlere emanet, siz gençlere emanet. Sizler de bir sonraki gençlere emanet edeceksiniz.
+
+57
+00:18:02,564 --> 00:18:12,564
+Sizler bu işi ne kadar iyi öğrenirseniz, ben ne kadar bu dersi anlatırsam sizler o kadar çok iyi öğrenmiş olacaksınız, o kadar çok başarılı olacaksınız ileride.
+
+58
+00:18:13,683 --> 00:18:26,183
+Ve hepinize şunu tavsiye ediyorum. Kesinlikle ve kesinlikle yüksek lisans ve doktora yapın. Bakın unutmayın. Bunun için ortalamanızın en az üç olması lazım.
+
+59
+00:18:26,183 --> 00:18:35,683
+Dolayısıyla yıl içindeki performanslarınız çok önemli. Aldığınız notlar çok önemli. Dersi geçmek için geçmeyin. Kendinize...
+
+60
+00:18:35,711 --> 00:18:44,711
+Kazık atmayın, bak biraz argı oluyor, kelime ama öyle oluyor. Kendinizi kandırmayın, dersi geçmek için, geçersin dersi, ders hiç önemli değil.
+
+61
+00:18:44,711 --> 00:19:03,468
+Yani, DC ile de geçersin, CC ile de geçersin, bu önemli değil. Önemli olan öğrenerek geçmek, bir de ortalama yüksek tutarak geçmek. Yarın, yüksek lisans yapmak istediğinizde, doktora yapmak istediğinizde, büyük bir avantajınız olacak.
+
+62
+00:19:04,051 --> 00:19:22,551
+kabul edileceksiniz. Artı şunu da söyleyeyim size, belki bunu hiç duymadınız. Eğer ortalamanız üç buçuğun üzerindeyse, unutmayın bakın, ortalamanız üç buçuğun üzerinde tutarsanız, yüksek lisans yapmadan doktoraya başlıyorsunuz. Duyuyor musunuz?
+
+63
+00:19:23,443 --> 00:19:28,443
+Yüksek lisans yapmadan doktora yapıyorsunuz. Eğer ortalamanın bütün üzerindeyse.
+
+64
+00:19:28,443 --> 00:19:31,443
+Hocam, bütünleşik doktora imkast ediyorsunuz.
+
+65
+00:19:31,443 --> 00:19:45,443
+Kesinlikle. Yüksek lisansla zaman kaybetmiyorsun, direkt doktoraya başlıyorsun. Bu kadar önemli bir şey bu ortalama. Yani bunu da ortalamanızı yüksek tutmak için de...
+
+66
+00:19:46,355 --> 00:20:05,355
+Bu olasılık istatistiği çok iyi öğrenirseniz, makine öğrenmesi olsun, veri madenciliği olsun, büyük veri olsun, yapay zeka olsun bunların bütün ileri konularını çok rahatlıkla anlayabilirsiniz.
+
+67
+00:20:05,355 --> 00:20:13,003
+Bakın sizlerle bu arada iletişim kurmak için WhatsApp grubu kurdum. Bilmiyorum başka derse WhatsApp grubunuz var mı?
+
+68
+00:20:14,355 --> 00:20:16,355
+Var mı başka dersle WhatsApp grubu?
+
+69
+00:20:16,355 --> 00:20:21,355
+Bir tek Ahmet Hoca ile bir Telegram grubumuz var, o da sizin gibi soru cevap yapacağım, başka yok.
+
+70
+00:20:21,355 --> 00:20:23,355
+Telegram grubu ne?
+
+71
+00:20:23,355 --> 00:20:29,355
+Telegram'dan grup kurdu, daha fazla kişiyi alabilmek için WhatsApp grubuna göre. Bir tek Ahmet Hoca yaptı.
+
+72
+00:20:29,355 --> 00:20:30,355
+[öğrenci].
+
+73
+00:20:30,355 --> 00:20:31,355
+Evet hocam.
+
+74
+00:20:31,355 --> 00:20:35,119
+Telegram ne olduğunu bilmiyorum, WhatsApp'a benzer bir şey mi var?
+
+75
+00:20:35,119 --> 00:20:44,119
+Evet hocam ama WhatsApp'taki bir grup kısıtlanması yok. 200 kişi kısıtlanmıyor ve isimler, direkt telefon numarası gözükmüyor. Herkesinki biraz daha kapalı.
+
+76
+00:20:44,119 --> 00:20:50,119
+Hocam ekziden farklı şeyler de var hocam, Telegram'da, WhatsApp'ta olmayan başka özellikler de var.
+
+77
+00:20:50,119 --> 00:21:03,115
+Olabilir, onu da önümüzdeki dönemden kullanabilirim. Ben WhatsApp'ı öğrencilerimle 2018'den beri kullanıyorum. [öğrenci] burada mı? O bilir.
+
+78
+00:21:03,827 --> 00:21:05,827
+Evet hocam, biliyorum.
+
+79
+00:21:05,827 --> 00:21:09,827
+En eski, ilk kullananlardan birisiyim ben WhatsApp'a derslerde.
+
+80
+00:21:09,827 --> 00:21:19,692
+Orada bilgilendirmeleri oradan yapıyorum. Sizlerin dosya paylaşımlarını oradan yapıyorum ki sizler hatta…
+
+81
+00:21:19,763 --> 00:21:38,963
+İsim beğenmem tabii. Arkadaşlarınız benimle iletişime geçiyor. Hocam işte ben şunu, şu özel sebepleri varsa, derse katılamıyorsa söylüyorlar ya da akllarında bir fikir varsa iletişime geçiyorlar. Bu çok iyi oluyor öğrenciyle, yani sizlerle birebir her an iletişimde kalıyorum. Bu sizler için de çok iyi oluyor.
+
+82
+00:21:40,948 --> 00:21:54,948
+Şimdi sınavlarınızı okudum gençler, onu da söyleyeyim arkadaşlar. Sınavlarınızı okudum. Sınavlarınız genel olarak çok iyi. Yani klasiğe göre çok iyi. Ben öyle görüyorum. Eski dönemlere göre.
+
+83
+00:22:08,051 --> 00:22:10,051
+U-Sist'ten mi paylaşalım?
+
+84
+00:22:13,051 --> 00:22:16,051
+Sizin için daha kolay ise öyle yapalım hocam.
+
+85
+00:22:16,051 --> 00:22:23,051
+Ben U-Sist'ten paylaşayım, yani mahremiyeti korumak anlamında U-Sist'ten paylaşmak taraftarıyım.
+
+86
+00:22:23,051 --> 00:22:33,051
+Bugün nasip olursa, yani bugün nasip olursa, inşallah diyeyim, akşam notlarınıza giriyorum.
+
+87
+00:22:33,051 --> 00:22:36,043
+Neler var işte içinde, quizleriniz var.
+
+88
+00:22:36,147 --> 00:22:57,548
+Tamam. Ödeviniz var. Ödeviniz maşallah hepiniz ders notlarınız çok iyiydi. Birkaç arkadaşınız biraz eksik yaptı. En düşük ders notu bir kişi 75 aldı, diğer geri kalan iki üç kişi 80, diğer geri kalan hepsi 100'dü. Gayet güzel. Bu notlarınızı şeye gireceğim bugün, Ustis'e gireceğim.
+
+89
+00:22:57,647 --> 00:23:01,647
+Tamam, USİS'e girdikten sonra siz de oradan notlarınızı öğreneceksiniz.
+
+90
+00:23:02,647 --> 00:23:13,647
+Final sınavında, yine seçmeli yapacağız final sınavında. 25 tane soru olacak ya da 20 tane soru. Ben 20 tane soru olmasını istiyorum.
+
+91
+00:23:13,647 --> 00:23:23,647
+Oğuz Hoca ile de konuşacağız, onu netleştireceğiz. 20 soru en ideali bence. 20 soru işte her bir soruya 5 dakika süre, 100 dakika olsun istiyorum.
+
+92
+00:23:25,107 --> 00:23:30,487
+Sınavlar nasıldı? Yeterli miydi? Yeterliydi bence.
+
+93
+00:23:30,487 --> 00:23:32,487
+Bence yeterliydi hocam.
+
+94
+00:23:32,487 --> 00:23:36,288
+İyi, güzel. Şöyle bir şey.
+
+95
+00:23:36,468 --> 00:24:03,276
+Bazı arkadaşların şey diyor, geriye dönme açık olsun diyor. Arkadaşlar, geriye dönüşü açık yapamıyoruz. Neden yapamıyoruz? Yani bize söylenen o. Bize bölümden gelen, dekanlıktan gelen, yani bize dediler, yani bu şekilde sınavlar yapacaksınız seçmelilere. Yani o yüzden o şekilde yapıyoruz. Tamam mı? Yani normalde seçmelerde geriye dönük olsa…
+
+96
+00:24:03,284 --> 00:24:13,284
+Bu biraz daha böyle kopyaya çok açık oluyor sistem. Bir de şey var, detaylı rapor var.
+
+97
+00:24:17,284 --> 00:24:28,204
+İşte kişiler sorulara ne zaman cevap verdi, ne zaman okumaya başladı, ne zaman soruyu okumayı bitirdi, işte ne zaman cevap verdi. Bunların araları var, süreleri var.
+
+98
+00:24:28,372 --> 00:24:49,259
+O sürelerden mesela direkt anlaşılıyor, mesela bir soru üç dakikada çözülüyorsa, o soru iki saniyede cevaplanmaz mesela, değil mi? İki saniyede cevaplasan, Einstein olmalısın. Einstein bile değil de, Einstein kare olman lazım yani ki o soru iki saniyede çözebilirsin.
+
+99
+00:24:49,811 --> 00:25:03,612
+Yani böylesi durumlar var. Ben bunları göz ardı ettim. Çünkü ortada detaylı bir report var ama üzerine gitmedim. Onu da bilin istiyorum. Tamam mı?
+
+100
+00:25:05,951 --> 00:25:07,951
+Kötü mü oldu bu söylediğin?
+
+101
+00:25:09,236 --> 00:25:22,236
+Yok hocam, hocam işte bazen şöyle, süre yetmeyecek hocama iki saniye edilirse, hani nasıl olacak? Belki soruyu yetiştirmek için sallıyor mu? Evet, evet yani hocam öyle bir şey yapılabilir yani. O da doğru, o da doğru.
+
+102
+00:25:22,236 --> 00:25:33,236
+Hocam mesela bana ilk sorularda çok zor sorular geldi. Baştaki soruları çok zaman harcadığım için, sondaki sorularda zaman sıkıntısı çektim bayağı, o yüzden hani hızlı hızlı yapayım dedim.
+
+103
+00:25:34,963 --> 00:25:43,483
+Anladım. Olabilir, o da olur. Haklısın yani. Senin de şansın yokmuş bir [öğrenci]. Ne yapayım yani? Randım olarak.
+
+104
+00:25:44,003 --> 00:25:45,124
+Doğru diyorsunuz hocam.
+
+105
+00:25:45,864 --> 00:25:55,923
+Ya besmele çekin öyle başlayayım diyeceğim artık. Şimdi geçen hafta umarım eğlenceli olmuştur, bilmiyorum.
+
+106
+00:25:56,584 --> 00:25:58,483
+Hocam derse başlamadan bir şey sorabilir miyim?
+
+107
+00:25:58,503 --> 00:25:58,683
+Tabii.
+
+108
+00:25:58,683 --> 00:26:02,324
+Yurt dışından nasıl kabul aldınız doktorunuz için?
+
+109
+00:26:03,571 --> 00:26:11,371
+Yani şimdi şöyle ben, Postdoc için ben yurt dışındaydım, öncelikle onu söyleyeyim. Yurt dışında bir kere şunu söyleyin.
+
+110
+00:26:11,371 --> 00:26:22,571
+Birinci, bizim zamanımızda yurt dışı çok önemliydi. Neden önemliydi? Çünkü bilgi oradaydı. O zaman internet bu kadar yaygın değildi.
+
+111
+00:26:23,220 --> 00:26:36,220
+Şimdi makaleler yayınlanırdı. Türkiye'de makale bilmeyen hocalar vardı. Ya Türkiye'de doktorasız profesörler vardı. Hala da var yani doktorasız. Tamam mı? Burası Türkiye oluyor yani.
+
+112
+00:26:36,788 --> 00:27:03,387
+Doktorasız profesörler vardı yani Türkiye'de. Bizi anlatmadılar. Gençler, olasılık çok önemli, istatistik çok önemli. Bunlar öğrenin, araştırma yapın, makale yazın. Yoktu bizde. Bizde ne vardı? Derse girerdik, dersi dinlerdik, dersten sonra sınav olurduk, cevaplardık. Bizim amacımız şuydu, mühendis olmak, sonra piyasada çalışmak. Öyle aklımızda araştırma yapalım, geliştirme yapalım, ilerleyelim yoktu.
+
+113
+00:27:05,811 --> 00:27:18,811
+Sonra yüksek lisans yaptım, aynı kafadan gidiyorum, lisanstaki kafa aynı. Doktora yaparken bir tane problem vardı, o problemi ben çözdüm.
+
+114
+00:27:18,811 --> 00:27:27,179
+Problemi çözdüm ve o problemi dünyada ilk çözenlerden birisiyim yani, öyle söyleyeyim. Birisi Marco De Rinso diye bir İtalyan, bir de ben.
+
+115
+00:27:27,571 --> 00:27:52,571
+Sonra o makaleyi Fransa'da bir konferansla sunmaya gittim ve orada bir profesörle tanıştım. O profesör de dünyanın, bilmiyorum tabii, adamı tanımıyorum ben, o profesör de dünyanın number one'ıymış, yani bir numarasıymış. Age index'i 190 falan yani şu andaki age index'i.
+
+116
+00:27:53,523 --> 00:28:04,523
+Ben bilmiyorum, tanıştım falan. Sonra bu problemi çözdüğüm için onun araştırma grubuna ziyaretçi, araştırmacı olarak gittim ve her şey bu şekilde başladı.
+
+117
+00:28:04,523 --> 00:28:18,411
+Ve o zaman gözüm açıldı. Yani o zaman dedim, biz bu şekilde. Ama şimdi sizler için konuşursak, şu anda internet diye bir şey var, tamam mı? Her şey elinizin altında.
+
+118
+00:28:19,124 --> 00:28:26,124
+İstediğiniz bilgiye ulaşabiliyorsunuz. Giderseniz Stanford'dan ders bile dinleyebilirsiniz. Bırak onu YouTube'da dersleri bile var.
+
+119
+00:28:27,124 --> 00:28:37,124
+Bütün kaynaklar var, bütün kitaplar var, bütün makalelere IEEE'den erişiyorsunuz. Bizim zamanımızda IEEE yoktu yani, böyle web sayfası yoktu.
+
+120
+00:28:38,124 --> 00:28:44,124
+CD şeklinde vardı, onu hocalar birbirinden saklardı, vermezdi, kıskançlı.
+
+121
+00:28:44,915 --> 00:28:56,195
+Kıskançlık yaparlardı, düşün. Yani böyle bir zamanda yurt dışında master, doktora yapmak çok mantıklıydı. Ama şimdi her şey Türkiye'de var.
+
+122
+00:28:57,428 --> 00:29:20,607
+Niye? İnternet var, her şeye yarışabiliyorsunuz. Önemli olan şey master ve doktora da yurt içi ve yurt dışı değil. Biz de biraz yurt dışından gelen doktorlara biraz böyle hayranlık gözüyle bakıyoruz. Adam nereden geldi? Amerika'da doktorasını yapmış. Ya süper bir şey değil orada doktora yapmak. Burada da yaparsınız aynı doktorayı. Önemli olan şey makale yayınlamak, problem çözmek, güzel işler yapmak.
+
+123
+00:29:22,036 --> 00:29:41,435
+Hocam, bilgiye erişim konusunda haklısınız internette, her bilgiye erişilebiliyor ama şöyle bir şey var, sizin orada gidip elde ettiğiniz o vizyon ve fark, işte o dediğiniz şeyleri, şu an bize anlattığınız şeyleri aslında orada edindiğiniz bir tecrübe. Mesela burada doktor eğitim için o fark oluşmuyor.
+
+124
+00:29:41,435 --> 00:29:44,635
+Ben size söylüyorum işte, ben size ne diyorum?
+
+125
+00:29:44,723 --> 00:29:54,723
+Şunu şöyle yapacaksınız, bunu böyle yapacaksınız. Bu vizyonu size veriyorum. Ders anlatırken bu önemlidir, arkadaşlar bu sizin ekmeğinizdir. Bu şekilde anlatıyorum.
+
+126
+00:29:54,723 --> 00:30:07,723
+Öğrenmek istiyorsan benimle araştırma yapacaksın, research yapacaksın. Geleceksin bana, hocam şöyle bir fikir var, hocam senin şöyle bir bitirme teziniz var, araştırma argeniz var, projeniz var.
+
+127
+00:30:07,935 --> 00:30:13,695
+Ben bunda çalışmak istiyorum diyeceksin, geleceksin, beraber çalışacağız, o zaman öğreneceksin.
+
+128
+00:30:14,735 --> 00:30:19,455
+Yurt dışına gittin mi, dersten bir şey öğrenmiyorsun, burada da aynı ders anlatılıyor, orada da ders anlatılıyor.
+
+129
+00:30:19,455 --> 00:30:27,695
+Önemli olan, orada senin advisor'ın, senin danışmanın sana ne katıyor, ondan ne öğreniyorsun?
+
+130
+00:30:27,695 --> 00:30:34,695
+Buna ekol deniyor gençler. Ekol var ya, school, İngilizceye school kelimesinin gerçek anlamı şudur, ekol demektir.
+
+131
+00:30:34,832 --> 00:30:44,832
+Okul değil yani, ekol. Sen gidersin bir yere, isimler school deniyor, school'un kelime anlamı ekoldür. Çocuk oraya gider ve oradan bir ekol sahibi olur.
+
+132
+00:30:44,832 --> 00:30:59,832
+Bilim de böyle. Hocam, hocamın hocası, hocamın hocasının hocası, hocamın hocasının hocası bu şekilde akademik soy ağacı var. Benimkisi şeye gidiyor, Newton'a gidiyor.
+
+133
+00:31:00,352 --> 00:31:04,352
+Hocamın hocasını, hocasını, hocasını, hocasını böyle giderseniz, Nikton'a kadar gidiyor.
+
+134
+00:31:04,352 --> 00:31:12,300
+Burada bir sürü, Türkiye'de profesör var, hocası belli, hocasının hocası yok.
+
+135
+00:31:13,971 --> 00:31:23,971
+Niye? Çünkü öyle bir ekol sahibi değil, araştırma, geliştirme ekol sahibi değil. Yurt dışarı gelenlerin başarılı olmasının en büyük sebebi bir ekol sahibi olması.
+
+136
+00:31:23,971 --> 00:31:38,971
+Ama bu ekolü öğrenmek istiyorsanız, geleceksiniz çalışacaksınız benimle. Ya da bu ekol sahibi bir başka. Her hocanın bir yoğurt yiyişi var. Tamam mı? Her hocanın bir farklı yoğurt yiyişi var.
+
+137
+00:31:38,976 --> 00:32:01,316
+Önemli olan şey şu, bir ekon sahibi olmak, ondan bir şeyler öğrenmek, hocanın düşündüğün gibi düşünüp, onun üzerine bir şeyler koyup, hocandan daha iyi yapmak. Olay bu. Hayatın kendisi bu zaten. Her zaman hocandan daha iyi yapmaya çalışacaksın. Genel mantık bu.
+
+138
+00:32:04,915 --> 00:32:14,235
+Hani gitme demiyorum, kesinlikle gidebiliyorsanız, gidin, onda bir sıkıntı yok. Ama önemli olan ekol sahibi olmak.
+
+139
+00:32:17,235 --> 00:32:18,315
+Ben bilmiyorum.
+
+140
+00:32:18,315 --> 00:32:19,315
+Teşekkür ederim.
+
+141
+00:32:19,315 --> 00:32:29,315
+Ben yani elimden geldiğince, sizlere yardımcı olmaya çalıştım, biliyorsunuz, belli bir zaman sonra benimde olmayacağım.
+
+142
+00:32:34,387 --> 00:32:47,387
+Belki baksim bir dönem ya da iki dönem daha bölümde kalacağım. Ondan sonra bölüm değiştirmeyi düşünüyorum. Üniversite içinde de olur, üniversitede de olabilir.
+
+143
+00:32:47,387 --> 00:33:00,364
+Yani ben sizlerin başarılı olmasını çok istiyorum. Yarın bir gün mezun olacaksınız, unutmayın bu anlattıklarımı. Bir Ferkan hocamız vardı.
+
+144
+00:33:00,980 --> 00:33:09,980
+Sağolsun kendisi, bize olasılığı anlatmaya çalışırdı, anlatmaya çalışırdı, anlatmaya çalışırdı demenizi temenni ediyorum.
+
+145
+00:33:09,980 --> 00:33:14,980
+İnşallah da anlatabilmişimdir. Sizler de mutlu olmuşsunuzdur bu dersten.
+
+146
+00:33:14,980 --> 00:33:20,980
+Hocam çok teşekkürler hocam, kendi adıma bu verdiğiniz bilgiler için. Çok iyi oldu hocam, teşekkürler.
+
+147
+00:33:20,980 --> 00:33:24,980
+Böyle duyunca ben çok mutlu oluyorum. Gerçekten o kadar mutlu.
+
+148
+00:33:24,980 --> 00:33:26,347
+Evet hocam, teşekkür ederiz cidden.
+
+149
+00:33:26,771 --> 00:33:40,771
+Ben çok mutlu oluyorum. Şunu da unutmayın, ortalamanız üç buçuk olursa hemen şey yapıyorsunuz, doktoraya başlıyorsunuz. Bu çok süper bir şey. Sadece yıldızda değil, başka üniversitelerde de aynı şart olabilir. Tamam?
+
+150
+00:33:42,771 --> 00:33:47,771
+Şimdi örnekler yapalım istiyorum bugün. Bugün ayın kaçı?
+
+151
+00:33:49,771 --> 00:33:51,659
+7 Ocak.
+
+152
+00:33:54,099 --> 00:34:01,099
+Bu arada bak disembre gidiyor aklım ya.
+
+153
+00:34:01,099 --> 00:34:09,099
+Hocam bir şey sorabilir miyim?
+
+154
+00:34:09,099 --> 00:34:10,099
+Efendim.
+
+155
+00:34:11,027 --> 00:34:19,707
+Finaller önce, bu final konularını yine toplu bir şekilde paylaşacak mısınız hocam grupta? Konu başlıklarını görelim işte ise.
+
+156
+00:34:19,707 --> 00:34:33,467
+Ya şey kadar sorumluyuz olacağız işte, min inference'ların sonuna kadar sorumluyuz. Tamam, onları paylaşacağım. Hatta örnek sorular da paylaşacağım. Tamam.
+
+157
+00:34:35,059 --> 00:35:01,059
+Şimdi de yapacağız. Şimdi, method of moments'i hatırlıyorsunuz değil mi? Şimdi, method of moments, let me write. The method of moments, the method of moments is this, mom, okay? Is based on the assumption.
+
+158
+00:35:02,003 --> 00:35:14,364
+is based on the assumption, which assumption? That the sample moments,
+
+159
+00:35:20,659 --> 00:35:38,019
+The sample moments are good estimates of the population moments are good estimates of the corresponding
+
+160
+00:35:43,219 --> 00:35:48,219
+Population Moments.
+
+161
+00:35:50,219 --> 00:36:05,219
+What is the Population Moments? Let me tell you, this is the, or the second Population Moment, or third Population Moment, and so on.
+
+162
+00:36:09,907 --> 00:36:34,907
+n't population moment, okay? What are the sample moments? Sample moments, so we say, okay, this is the first one, so the number of samples assume that n, so n is 1 to n xn, this is the first sample moment.
+
+163
+00:36:43,507 --> 00:36:45,507
+Oh, sorry.
+
+164
+00:36:48,820 --> 00:36:50,820
+x n².
+
+165
+00:36:52,260 --> 00:36:54,260
+This is the third sample moment.
+
+166
+00:36:59,956 --> 00:37:06,115
+ve bu sonunda, bu sonunda, sonunda, sonunda, sonunda, sonunda, sonunda.
+
+167
+00:37:11,603 --> 00:37:20,603
+Oh, I think I should change. This is the Kate. Kate order sample moment like this. So, this one.
+
+168
+00:37:23,603 --> 00:37:38,304
+This is a good estimate for this. This is a good estimate for this. This is good estimate for this. And this is good estimate for this. Look at here. So this is three.
+
+169
+00:37:40,115 --> 00:37:44,115
+Bu k, bu k.
+
+170
+00:37:44,115 --> 00:37:53,115
+Bu xn, x1, x2, xn.
+
+171
+00:37:53,115 --> 00:38:07,115
+Bu k, bu k.
+
+172
+00:38:09,043 --> 00:38:17,612
+Bu, bu
+
+173
+00:38:20,884 --> 00:38:45,884
+Population that has the PDF, something like this. Okay? So, we need to match these expressions and we will find the parameters of the population. Okay? This is called the method of moments. Okay, let us do as a simple example. One simple example. Let me choose from the...
+
+174
+00:38:48,275 --> 00:38:50,275
+Which one I should choose?
+
+175
+00:38:52,876 --> 00:38:55,876
+Yeah, maybe this is better.
+
+176
+00:39:02,356 --> 00:39:08,356
+Evet, bu bir örneği, örneğin bir örneği yapacağım.
+
+177
+00:39:12,244 --> 00:39:14,244
+sorunu yazacağım.
+
+178
+00:39:15,244 --> 00:39:17,244
+Example, assume that
+
+179
+00:39:22,643 --> 00:39:25,764
+ve are trying
+
+180
+00:39:28,403 --> 00:39:31,603
+we are trying to develop
+
+181
+00:39:36,947 --> 00:39:39,547
+Bir statistikli model.
+
+182
+00:39:47,603 --> 00:39:50,187
+ve
+
+183
+00:39:57,684 --> 00:40:01,684
+İmput X of a system.
+
+184
+00:40:03,684 --> 00:40:09,684
+So, you have the system, it has inputs and the input is discrete, okay?
+
+185
+00:40:10,684 --> 00:40:11,684
+Suppose that...
+
+186
+00:40:16,244 --> 00:40:29,443
+The random variable x is a discrete random variable, is a discrete random variable.
+
+187
+00:40:32,884 --> 00:40:36,564
+Variable, let me write, good.
+
+188
+00:40:40,851 --> 00:40:42,443
+ve ikinci
+
+189
+00:40:46,420 --> 00:40:48,659
+Following.
+
+190
+00:40:53,331 --> 00:40:59,331
+with the following probability mass function, okay?
+
+191
+00:40:59,331 --> 00:41:11,331
+What is this? So the probability mass function is given like this. Let me write this is, okay.
+
+192
+00:41:11,331 --> 00:41:18,331
+So this is xk, probability the random variable x is equal to xk.
+
+193
+00:41:18,804 --> 00:41:46,203
+So, what are the values of x, x, x, 0, 1, 2, and 3? Okay? So, the probability of 0 is 2, theta divided by 3. The probability of 1 is theta divided by 3. And 2, 1 minus theta divided by 3. And...
+
+194
+00:41:47,380 --> 00:41:51,140
+1 minus theta divided by 3.
+
+195
+00:41:51,140 --> 00:41:55,380
+Ok, so these are the
+
+196
+00:42:06,164 --> 00:42:09,484
+These are the probabilities, so this is the PMF, okay?
+
+197
+00:42:09,484 --> 00:42:10,484
+Where...
+
+198
+00:42:14,068 --> 00:42:18,068
+0, theta, 1.
+
+199
+00:42:18,068 --> 00:42:20,068
+Okay, is a parameter.
+
+200
+00:42:20,068 --> 00:42:23,068
+Is a parameter.
+
+201
+00:42:26,900 --> 00:42:35,403
+Bu, bu
+
+202
+00:42:40,307 --> 00:42:56,307
+Bu, 10 indipendent 10 indipendent
+
+203
+00:43:07,539 --> 00:43:26,188
+...
+
+204
+00:43:30,695 --> 00:43:38,695
+ve ayrıca,
+
+205
+00:43:29,844 --> 00:43:56,844
+So, what are these samples? Let me write here. Let me write, so these are the sample set. Okay. So, this is 3, 0, 2, 1, let me 3, 2, 1.
+
+206
+00:43:57,076 --> 00:44:03,735
+0, 3, 0, 2, 1, 3, 2, 1, 0, 2, 1.
+
+207
+00:44:03,735 --> 00:44:05,076
+Ok?
+
+208
+00:44:05,076 --> 00:44:07,076
+So, these are the samples.
+
+209
+00:44:07,076 --> 00:44:09,076
+Ok, the question is this.
+
+210
+00:44:13,076 --> 00:44:15,019
+Estimate...
+
+211
+00:44:18,036 --> 00:44:42,956
+The value of theta such that no, no, no, estimate the value of theta by using method of moments.
+
+212
+00:44:44,692 --> 00:45:06,692
+Ok, estimate the theta value of the theta by using the method of moments such that it will fit to the sample. Ok, this one.
+
+213
+00:45:07,731 --> 00:45:16,715
+Bu, bu, random observasyon, bu, random variable, x, you measure x,
+
+214
+00:45:16,916 --> 00:45:28,456
+3, you measure the x, it is 0, you measure again, it is 2, you measure again, it is 1, you measure again, it is 3, you measure again, 2, 1, 0, 2, 1.
+
+215
+00:45:28,836 --> 00:45:38,036
+So these are the inputs, okay? You look at these inputs, these inputs should have a PMF like this.
+
+216
+00:45:39,656 --> 00:45:43,416
+If these samples has this PMF,
+
+217
+00:45:43,860 --> 00:45:47,660
+What is the value of theta that you want to estimate?
+
+218
+00:45:49,700 --> 00:45:50,300
+Okay.
+
+219
+00:45:51,940 --> 00:45:53,860
+You will use the method of moments.
+
+220
+00:45:54,180 --> 00:45:56,280
+How many parameters here are known?
+
+221
+00:45:58,180 --> 00:45:58,860
+One.
+
+222
+00:45:59,380 --> 00:46:00,200
+Yes, one.
+
+223
+00:46:00,320 --> 00:46:02,640
+So I need, okay, solution.
+
+224
+00:46:05,700 --> 00:46:08,360
+Solution, answer or solution.
+
+225
+00:46:09,980 --> 00:46:10,220
+Oops.
+
+226
+00:46:13,268 --> 00:46:14,603
+Solusion
+
+227
+00:46:22,483 --> 00:46:28,644
+The number of parameters
+
+228
+00:46:31,764 --> 00:46:45,084
+in the PMF is 1. That is Theta. Correct? Therefore,
+
+229
+00:46:48,500 --> 00:47:03,140
+To estimate Theta, we need to know
+
+230
+00:47:10,963 --> 00:47:26,963
+You need to know the sample moment, the sample first moment and population.
+
+231
+00:47:30,835 --> 00:47:32,835
+First moment.
+
+232
+00:47:36,355 --> 00:47:56,195
+So what I need to do this is k is equal to one to n or let me say n okay n equals from one to n one over n x n must be equal to expected value of x
+
+233
+00:47:57,043 --> 00:48:23,211
+Bu bir ekran ve bir un
+
+234
+00:48:24,980 --> 00:48:52,460
+So, we have one unknown, so we need one equation and this is enough. Okay, let us find the first moment. The data, I will rewrite the data, one second. I copy this, copy. Okay, and then paste. Okay.
+
+235
+00:48:53,684 --> 00:48:56,684
+Tamam, ne var? Ne var n?
+
+236
+00:48:59,891 --> 00:49:07,891
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10. So, there are 10. Okay? So, the expected value...
+
+237
+00:49:18,771 --> 00:49:30,271
+3 plus 0 plus 2 plus 1 plus 3 plus 2 plus 1 plus 0 plus 2 plus 1 divided by 10.
+
+238
+00:49:30,271 --> 00:49:32,271
+What is this result?
+
+239
+00:49:32,271 --> 00:49:39,271
+This is equal to 16 over 10.
+
+240
+00:49:39,271 --> 00:49:42,771
+Okay, so this is 16 over 10.
+
+241
+00:49:42,771 --> 00:49:43,771
+Very good.
+
+242
+00:49:43,771 --> 00:49:45,771
+What about f?
+
+243
+00:49:47,251 --> 00:49:48,251
+X.
+
+244
+00:49:48,251 --> 00:50:00,251
+This is also very simple. So, according to definition for all xk, xk times probability xk.
+
+245
+00:50:00,251 --> 00:50:03,251
+Hocam, toplam sanki 15 olacak gibi ben saydım.
+
+246
+00:50:03,251 --> 00:50:04,251
+Evet, ben de 15 olarak buldum.
+
+247
+00:50:04,251 --> 00:50:05,251
+15 mi?
+
+248
+00:50:05,251 --> 00:50:06,251
+Evet hocam.
+
+249
+00:50:06,251 --> 00:50:13,251
+3, tamam, 15 mi? Tamam, eminim. 5.
+
+250
+00:50:13,760 --> 00:50:38,520
+10, 11, 12, evet 15. O zaman şöyle yapalım. Şuraya da 1 yapayım, 16 olur. Oldu mu? Olur mu şimdi? 16 oldu değil mi? Tamam. Şimdi bunu hesaplayacağız. So what is this? So zero times.
+
+251
+00:50:41,012 --> 00:50:58,711
+0 times probability x is equal to 0, plus 1 times probability x is equal to 1, plus 2 times probability x is equal to 2, plus 3 times probability x is equal to 3.
+
+252
+00:50:59,699 --> 00:51:26,283
+ve bu değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değerlerden bir değer
+
+253
+00:51:28,788 --> 00:51:31,387
+2 x 1-10 over 3.
+
+254
+00:51:35,059 --> 00:51:36,219
+Bu da bu.
+
+255
+00:51:43,539 --> 00:51:45,539
+1 minus theta over 3.
+
+256
+00:51:47,940 --> 00:51:51,539
+Okay, so expected value is what?
+
+257
+00:51:52,539 --> 00:51:54,539
+Let me write,
+
+258
+00:51:56,539 --> 00:51:58,539
+so theta over 3 plus
+
+259
+00:52:00,539 --> 00:52:02,539
+4 over 3,
+
+260
+00:52:02,539 --> 00:52:06,539
+1 minus theta divided by 3 plus
+
+261
+00:52:06,539 --> 00:52:08,539
+3 times
+
+262
+00:52:09,907 --> 00:52:35,907
+3 times divided by 3, 1 minus Theta. Ok? So result is, we can open, let me write directly, so 7 minus 6 Theta divided by 3. Ok? So look, this is the first observation.
+
+263
+00:52:37,300 --> 00:52:46,220
+Bu, bu
+
+264
+00:52:52,019 --> 00:52:56,019
+They must be same.
+
+265
+00:52:56,019 --> 00:52:58,019
+So,
+
+266
+00:52:58,019 --> 00:53:00,019
+sample
+
+267
+00:53:00,019 --> 00:53:02,019
+mean
+
+268
+00:53:02,019 --> 00:53:04,019
+must
+
+269
+00:53:04,019 --> 00:53:06,019
+be the same
+
+270
+00:53:06,019 --> 00:53:08,019
+as
+
+271
+00:53:08,019 --> 00:53:10,019
+the
+
+272
+00:53:10,019 --> 00:53:12,019
+population
+
+273
+00:53:12,019 --> 00:53:14,019
+mean
+
+274
+00:53:14,019 --> 00:53:16,019
+since
+
+275
+00:53:16,019 --> 00:53:18,019
+sample
+
+276
+00:53:19,699 --> 00:53:24,579
+Min is assumed
+
+277
+00:53:28,083 --> 00:53:54,083
+...to be a good estimator of population mean. Okay? From here, 16 over 10 is equal to 6 minus, 7 minus, 7 minus 6.
+
+278
+00:53:54,547 --> 00:53:56,547
+Theta divided by 3.
+
+279
+00:53:57,547 --> 00:53:58,547
+So you solve this.
+
+280
+00:54:00,547 --> 00:54:07,547
+So this is 48 is equal to 70 minus 60 Theta.
+
+281
+00:54:08,547 --> 00:54:14,547
+So now from here Theta is 20 over 30.
+
+282
+00:54:14,547 --> 00:54:20,547
+So it is 3 over 3, 2 over 3.
+
+283
+00:54:21,427 --> 00:54:31,083
+Bu, bu
+
+284
+00:54:39,251 --> 00:54:42,251
+0, 1, 2, 3
+
+285
+00:54:47,668 --> 00:55:13,867
+Ok, so 2 tet... Ok, let me write. 4 over 9, 2 over 9, and 1 minus 1 over 3, 2 over 9.
+
+286
+00:55:15,668 --> 00:55:20,268
+ve 1 over 9.
+
+287
+00:55:23,268 --> 00:55:25,268
+Bu, bu PMF.
+
+288
+00:55:33,619 --> 00:55:39,619
+Bu, momentler, çok kolay ve bunu güzel bir şekilde anlatacağım.
+
+289
+00:55:39,619 --> 00:55:49,619
+Gerçek hayatta şöyle yapıyorsunuz, bakıyorsunuz olasılığa, dağılımı, bakıyorsunuz bu neye benziyor, işte şu dağılıma benziyor.
+
+290
+00:55:49,619 --> 00:55:57,619
+Benzettiğiniz dağılımın parametrelerine bakıyorsunuz, kaç tane parametresi var, üç tane parametresi var diyelim.
+
+291
+00:55:58,612 --> 00:56:23,371
+Bunların datanın birinci sampel momentini, ikinci sampel momentini, üçüncü sampel momentini hesaplıyorsunuz. Bunları birinci population moment, birinci sampel momenti, birinci population momenti, ikinci sampel momenti, ikinci population momenti, üçüncü population momenti eşitleyip, üç bilinmeyenini üç tane denkle, pardon, üç bilinmeyenini üç denklemezliyorsunuz ve bunu çözdüğünüzde,
+
+292
+00:56:23,923 --> 00:56:30,164
+O ilgili sizin keşfettiğiniz PDF'in bütün parametrelerini tespit etmiş oluyoruz.
+
+293
+00:56:31,463 --> 00:56:35,463
+Şimdi başka örnekler de yapabiliriz.
+
+294
+00:56:37,963 --> 00:56:41,083
+Onları da yapalım, bir iki tane daha örnek yapalım.
+
+295
+00:56:42,764 --> 00:56:43,963
+Sorusu olan var mı?
+
+296
+00:56:48,340 --> 00:56:49,340
+Yok be canım.
+
+297
+00:56:49,340 --> 00:57:00,140
+Tamam. Bir de Method of… Şimdi bir tane daha yapalım, hangisini yapsın acaba?
+
+298
+00:57:04,244 --> 00:57:08,244
+Mesela bir tane daha yapalım.
+
+299
+00:57:10,244 --> 00:57:12,244
+Soru şöyle.
+
+300
+00:57:13,244 --> 00:57:14,244
+Questions.
+
+301
+00:57:31,219 --> 00:57:33,979
+Consider the probability density function.
+
+302
+00:57:41,715 --> 00:57:44,715
+given by, nasılmış şöyle.
+
+303
+00:57:50,164 --> 00:58:06,164
+c times, 1 minus theta x, 1 plus theta x, and minus 1 x1. Otherwise, it is zero. Okay?
+
+304
+00:58:08,724 --> 00:58:12,164
+Question first. Compute the value of constant c.
+
+305
+00:58:22,228 --> 00:58:34,468
+Okay, constancy, such that fxx is a pdf. Okay?
+
+306
+00:58:37,108 --> 00:58:49,028
+The second question is, find the estimation of theta, find the estimation of theta, find the estimation of theta.
+
+307
+00:58:50,612 --> 00:59:17,228
+teta, or estimator of teta, this is better, okay. Okay, let us try to find, what is the number of unknown? C and the theta, C can be find, let us show, the integral, f x, x,
+
+308
+00:59:17,364 --> 00:59:42,411
+Bu, bu
+
+309
+00:59:43,092 --> 00:59:53,092
+is equal to c times x plus c times theta x squared divided by 2 minus 1 to 1.
+
+310
+00:59:54,452 --> 01:00:00,372
+And this is this integral must be 1 of course this must be 1.
+
+311
+01:00:01,492 --> 01:00:03,172
+So from here
+
+312
+01:00:08,211 --> 01:00:09,492
+c plus
+
+313
+01:00:10,132 --> 01:00:34,731
+Cθ, divided by 2, minus C, sorry, plus C, and minus Cθ, divided by 2, and this is equal to 1, this cancels each other, 2C is equal to 1, so C is 1 over 2.
+
+314
+01:00:37,364 --> 01:00:38,764
+Bu, PGM is this.
+
+315
+01:00:44,244 --> 01:00:47,844
+1 over 2, 1 plus theta x.
+
+316
+01:00:47,844 --> 01:00:49,443
+If
+
+317
+01:00:53,876 --> 01:00:58,196
+OTHERİS, bu kadar, 0.
+
+318
+01:01:02,291 --> 01:01:28,612
+Okay, now we want to now we want to estimate theta from data using mom okay how okay
+
+319
+01:01:30,612 --> 01:01:38,811
+We need to, the number of unknown is only the theta, so I will find the expected value of this.
+
+320
+01:01:42,867 --> 01:01:49,771
+Bu, bu
+
+321
+01:01:53,043 --> 01:02:02,523
+Ok, what is this? The left side is integral from minus 1 to 1 x times 1.
+
+322
+01:02:06,523 --> 01:02:12,563
+Ok, let me rewrite it clearly. This is the equation.
+
+323
+01:02:14,563 --> 01:02:16,563
+Ok, I think...
+
+324
+01:02:17,844 --> 01:02:42,643
+I should write the equality at the end. This is equal to integral from minus infinity to plus infinity x f x x dx. So when you substitute this PSY's here, so this integral turns into from minus 1 to 1 x times 1.
+
+325
+01:02:44,820 --> 01:02:49,320
+1 over 2, 1 plus theta x dx.
+
+326
+01:02:49,320 --> 01:02:50,320
+Okay?
+
+327
+01:02:51,520 --> 01:03:12,320
+So, this is, again, integral, minus 1 to 1, x over 2, plus theta over 2, x squared dx.
+
+328
+01:03:20,211 --> 01:03:23,611
+Oh, x3, 6.
+
+329
+01:03:25,411 --> 01:03:27,071
+So, minus 1 to 1.
+
+330
+01:03:27,851 --> 01:03:30,751
+And this is equal to theta over 3.
+
+331
+01:03:30,751 --> 01:03:31,511
+Again,
+
+332
+01:03:38,132 --> 01:03:48,932
+This theta must be equal to the sample mean. So theta over 3 is equal to sample mean is this.
+
+333
+01:03:56,244 --> 01:03:58,059
+Bu, sample mean.
+
+334
+01:04:04,851 --> 01:04:09,172
+So, θ is equal to 1 over 3n.
+
+335
+01:04:15,795 --> 01:04:18,195
+Bu, bu teta'ın estimatoru.
+
+336
+01:04:27,539 --> 01:04:28,539
+Okay.
+
+337
+01:04:30,340 --> 01:04:32,740
+Is it biasid or unbiasid?
+
+338
+01:04:34,139 --> 01:04:35,740
+Let us see.
+
+339
+01:04:40,371 --> 01:04:42,371
+Yani,
+
+340
+01:04:52,211 --> 01:05:17,135
+Bu, bu
+
+341
+01:05:17,135 --> 01:05:19,895
+Theta minus exact value.
+
+342
+01:05:22,275 --> 01:05:26,096
+Let us see, this is equal to
+
+343
+01:05:30,291 --> 01:05:55,992
+1 over 3 n, 1 to n x n, okay, minus theta. So, here, so this is 1 over 3 expected value of x bar.
+
+344
+01:05:56,884 --> 01:06:24,284
+Bu, bu, sampler mean. Bu, you can write, you can get the three out of the expectation. Let me write clearly, okay? 1 over n, n is from 1 to n, x n minus theta. So, this is actually sample mean. Okay? So, now it is the expected value of?
+
+345
+01:06:34,867 --> 01:06:54,123
+3 minus theta, normal it must be zero. And since x bar is always,
+
+346
+01:07:01,172 --> 01:07:04,012
+always an unbiased estimator.
+
+347
+01:07:09,172 --> 01:07:15,172
+Bu, hepimizin unbiased estimator.
+
+348
+01:07:21,523 --> 01:07:29,523
+Biası, 0.
+
+349
+01:07:31,523 --> 01:07:32,523
+Okay.
+
+350
+01:07:32,523 --> 01:07:33,523
+I didn't get that.
+
+351
+01:07:33,523 --> 01:07:34,523
+Could you try again?
+
+352
+01:07:34,523 --> 01:07:37,516
+What about the likelihood estimator for this?
+
+353
+01:07:41,811 --> 01:07:42,811
+Hmm?
+
+354
+01:07:44,811 --> 01:07:50,811
+This is the estimator for mom. What about the likelihood estimator? Do you want me to find it also?
+
+355
+01:07:52,811 --> 01:07:53,811
+Huh?
+
+356
+01:07:55,811 --> 01:07:56,811
+Okay.
+
+357
+01:07:59,811 --> 01:08:01,811
+My question is this. Suppose that
+
+358
+01:08:06,164 --> 01:08:09,164
+Bu zamanı, o zamanı...
+
+359
+01:08:09,164 --> 01:08:14,164
+Okey, bunu çözüp de mi bırakayım 10 dakika yoksa şey mi yapalım?
+
+360
+01:08:16,164 --> 01:08:18,164
+Bence bitirelim hocam, ondan sonra verelim.
+
+361
+01:08:18,164 --> 01:08:20,164
+Ben 10 dakika aradan sonra mı?
+
+362
+01:08:21,164 --> 01:08:26,164
+Hocam bu örneği yaparım, bence sonra ara girelim hocam, size nasıl uygun gelirse.
+
+363
+01:08:26,164 --> 01:08:30,164
+Tamam o zaman, örneği bitiriyorum hemen çok basit bir şekilde.
+
+364
+01:08:30,164 --> 01:08:31,980
+Suppose that...
+
+365
+01:08:35,507 --> 01:08:37,507
+İki sampleri var.
+
+366
+01:08:43,315 --> 01:08:50,915
+Neymiş bu? Şunlar. x1 ve x2. Tamam mı? Bir sample'ımız var yani bu.
+
+367
+01:08:50,915 --> 01:08:52,915
+Find the...
+
+368
+01:08:56,148 --> 01:09:06,148
+Maximum Likelihood Estimulator
+
+369
+01:09:10,260 --> 01:09:20,260
+For theta. Method of moment'u kullanarak bulduk. Bu şu idi, bu method of moment yöntemiydi değil mi? Şu method of moment.
+
+370
+01:09:21,760 --> 01:09:29,260
+Mom Estimator ile bunu bulduk. Peki ML Estimator'ı nasıl?
+
+371
+01:09:37,140 --> 01:09:51,640
+Şöyle, şimdi bir kere likelihood'unu hesaplayalım. İki tane data var. Birincisinin olasılığı ne olacak? İki tane sample'umuz var.
+
+372
+01:09:54,963 --> 01:09:56,963
+n eşittir,
+
+373
+01:09:59,963 --> 01:10:08,963
+birden ikiye kadar, iki sample için yapıyoruz tamam mı bunu? n eşittir birden ikiye kadar, işte ne olacak?
+
+374
+01:10:11,963 --> 01:10:15,963
+xn, bunu çarpacağız, buna biz l diyelim.
+
+375
+01:10:16,963 --> 01:10:20,963
+Tamam mı? Böyle, bu çarpım, şu çarpma işlemi, product.
+
+376
+01:10:21,524 --> 01:10:32,024
+Bunu çarptığımızda ne çıkar bu? 1 bölü 2, 1 artı teta x1, 1 bölü 2, 1 artı teta x2. Bunu bu şekilde bulduk.
+
+377
+01:10:32,024 --> 01:10:46,524
+Sonra bunun ne yapacağız? Logaritmasını alacağız. Logaritmasını alırsak ne olur? Logaritma 1 bölü 4 çarpı 1 artı teta x1
+
+378
+01:10:47,604 --> 01:10:51,123
+1 artı teta x2 olmuş olur. Değil mi?
+
+379
+01:10:54,004 --> 01:11:00,244
+Ve burada logaritma kullanırsak, logaritma çarpımlar toplamlara dönüşüyordu hatırlıyorsunuz.
+
+380
+01:11:01,164 --> 01:11:04,364
+Artı logaritma, şöyle güzel yazayım.
+
+381
+01:11:07,667 --> 01:11:19,268
+1 bölü 4 artı logaritma 1 artı teta x1 artı logaritma 1 artı teta x2.
+
+382
+01:11:19,268 --> 01:11:24,387
+Değil mi? Sonra ne yapacağız?
+
+383
+01:11:29,716 --> 01:11:31,468
+Bunun türevini alacağız.
+
+384
+01:11:38,100 --> 01:11:40,600
+Bunun türevini aldığımız zaman ne çıkar sonuç?
+
+385
+01:11:41,800 --> 01:11:46,300
+Şu sabit bir say olduğu için türevi 0, bu logaritmanın türevi
+
+386
+01:11:48,300 --> 01:11:57,899
+1 bölü x'ti, yani 1 bölü 1 artı teta x1, bir de içinin türevi x1 bölü, teta'ya göre türev alıyoruz.
+
+387
+01:12:02,899 --> 01:12:25,899
+x1 bölü, 1 artı teta x1, öbürü ne oluyor? O da x2 bölü, ne olacak? 1 artı teta x2. Bu da ne eşit olacak? 0 olacak. Çünkü maksimum z diyoruz ya, 0 noktası. O zaman ne yapacağız? Bu denklemi çözeceğiz. Nasıl çözeriz bu denklemi?
+
+388
+01:12:35,604 --> 01:13:01,604
+The estimation of theta, let me write here, which color I should write, okay. The estimation of theta from data, which data? İki tane data sample var, tamam, o kadar? Is,
+
+389
+01:13:02,579 --> 01:13:06,380
+Bu,
+
+390
+01:13:11,828 --> 01:13:18,828
+Bu bir çözüm. Bu bir çözüm. Bu çözüm. Bu çözüm.
+
+391
+01:13:18,828 --> 01:13:37,828
+Bu çözüm. Hadi çözelim o zaman. x1 çarpı. Paydaları eşitliyoruz.
+
+392
+01:13:39,828 --> 01:13:49,948
+Artı x2 çarpı, 1 artı teta x1 eşittir 0, tabii.
+
+393
+01:13:56,916 --> 01:14:02,195
+Dolayısıyla bunun tetayla işlevdeşler çarpılıyor, payda kayboluyor zaten.
+
+394
+01:14:12,372 --> 01:14:24,372
+Evet, o zaman neye çıkıyor? x1 artı teta x1 çarpı x2 artı x2 artı teta x1 çarpı x2. Eşittir sıfır.
+
+395
+01:14:24,372 --> 01:14:33,372
+Dolayısıyla ne olmuş oluyor? Teta parantezinde iki tane teta geliyor değil mi?
+
+396
+01:14:33,372 --> 01:14:35,372
+Hocam bir şey sorabilir miyim?
+
+397
+01:14:35,923 --> 01:14:42,423
+Yanlış hatırlamıyorsam, türev alırken logaritmanın tabanında elen 10 şeklinde bir ifade olması gerekmiyor mu?
+
+398
+01:14:44,423 --> 01:14:55,787
+Bu log demek, arkadaşlar bakın, şimdi şöyle bir şey size yanlış, Türkiye'de bu netense yapıyorum. Şu demek, şu demek, tamam mı?
+
+399
+01:14:58,963 --> 01:15:00,963
+Budur yani, matematik hep böyledir.
+
+400
+01:15:01,764 --> 01:15:07,564
+Hocam bize gösterken log 10 tabanındaysa yazılmıyor diye gösterilmişti. Tamam, benim hatam hocam.
+
+401
+01:15:07,564 --> 01:15:10,564
+Yanlış bence, gösterim yanlış. Bu şu demek.
+
+402
+01:15:13,779 --> 01:15:14,779
+Tamam mı?
+
+403
+01:15:16,020 --> 01:15:21,779
+Hocam, ben de bir şey sorabilir miyim? Şu an peki, Elen'i ne diyoruz şimdi? Elen şey değil mi?
+
+404
+01:15:21,779 --> 01:15:23,779
+Elen'in başlımı ne?
+
+405
+01:15:25,779 --> 01:15:27,779
+Elen kim? Elen?
+
+406
+01:15:27,779 --> 01:15:28,779
+Ben hocam.
+
+407
+01:15:28,779 --> 01:15:29,779
+Kim o?
+
+408
+01:15:31,779 --> 01:15:35,779
+Elen, hocam, LN olarak.
+
+409
+01:15:35,779 --> 01:15:38,779
+Tamam, L. Yani neyi ifade ediyorsun? LN ne diyor?
+
+410
+01:15:38,779 --> 01:15:40,779
+E tabanlı Lug.
+
+411
+01:15:41,716 --> 01:15:44,636
+Nereden çıkardın orada olduğunu?
+
+412
+01:15:44,636 --> 01:15:54,476
+Öyle bir şey, matematikte biz kullanmıyoruz. Matematikte logaritm demek, e tabanındadır.
+
+413
+01:15:54,476 --> 01:15:56,476
+Not to yani bilmem.
+
+414
+01:15:56,476 --> 01:15:57,476
+Teşekkür ederim.
+
+415
+01:15:57,476 --> 01:16:03,476
+Bir şey değil. Yani anlamsız. Size bunu öğretiyorlar. Sonra yarın bir gün makaleleri okurken.
+
+416
+01:16:04,564 --> 01:16:28,064
+Kafanız karışıyor. Theta 2x1x2. Tamam mı? Eşittir. Eksi x1 artı x2. Dolayısıyla, Theta değerimiz ne olmuş oluyor? Eksi x1 artı x2 bölü 2x1 çarpı x2. Sample'lardan bu şekilde estimate etmiş oluyorsun. Tamam mı?
+
+417
+01:16:29,876 --> 01:16:42,876
+Bu da Maximum Likelihood Estimates. Peki, N tane olsaydı nasıl yapardık? Yine aynı şekilde yapardık. Ama bu sefer denklem zorlaşacaktı. Tamam mı?
+
+418
+01:16:44,876 --> 01:16:50,876
+Bunu da yaptıktan sonra Method of Moments ile ilgili başka örnekler yapabiliriz.
+
+419
+01:16:53,876 --> 01:16:56,876
+Likelihood ile ilgili yapalım, başka örnekler yapalım.
+
+420
+01:16:57,747 --> 01:16:59,747
+Şimdi bir on dakika ara verelim, olur mu?
+
+421
+01:16:59,747 --> 01:17:05,747
+Hocam, ben bir soru sorabilir miyim? Hocam, biraz saçma gelebilir. Hocam, ben şey düşündüm, mesela bu Maximum Lockwood'da...
+
+422
+01:17:05,747 --> 01:17:12,747
+Bir soru, bak, sana bir şey soracağım. Biraz saçma gelebilirsek de soru sorma, tamam mı?
+
+423
+01:17:12,747 --> 01:17:13,747
+Tamam hocam.
+
+424
+01:17:13,747 --> 01:17:16,747
+Bak, bunun iki anlamı var, bu sorunun.
+
+425
+01:17:20,115 --> 01:17:28,115
+San Francisco'daydım, California'da, Communication Theory Workshop vardı. Orada Stanford'dan, MIT'den profesörler vardı işte.
+
+426
+01:17:28,115 --> 01:17:31,115
+Mowin var, Profesör Mowin.
+
+427
+01:17:31,115 --> 01:17:36,115
+Kendisi MIT'den Mowin kendisi.
+
+428
+01:17:36,115 --> 01:17:38,115
+Şeyi anlatıyor.
+
+429
+01:17:39,091 --> 01:17:48,572
+White Band sinyalleri kullanarak işte mobil cihazların konumlarının bulunmasını anlatıyor. Kendisi böyle bir Jacobian marketler üzerine bir şeyler yapıyordu.
+
+430
+01:17:48,572 --> 01:17:55,332
+O sırada ismini vermeyeceğim. O da çok ünlü bir profesör. Hatta üniversitesini de söyleyeyim.
+
+431
+01:17:55,507 --> 01:18:21,948
+Anlaşılır çünkü. O da çok iyi bir profesör. Şöyle bir elini kaldırdı. I have a stupid question diye başladı. Ve ondan sonra soru sordu. Ve oradaki bütün bilim adamları o kişi kınadı yani bir şekilde. Yani hiç iyi görmedi. Öyle bir aptalca sorun var diye söylemeyiz kesinlikle. Tamam mı? Her sorunun bir anlamı, mantığı vardır. Evet. Dinliyorum.
+
+432
+01:18:22,228 --> 01:18:40,228
+Hocam, şey diyecektim, hocam biz mesela bu Maximum Like Luteş'te Türeval'da ki hocam sıfıra eşledik. Mesela biz bu Teta'yı bulmak için sıfıra eşledik de, bu Teta'nın o maksimum yapan noktasının en iyi population'ı estimet edeceğine nasıl eminiz yani? Mesela neden onun minimum değerini bulmadık?
+
+433
+01:18:40,228 --> 01:18:45,228
+Entropiyi, minimum, maksimum yapıyor da, entropiyi de minimum yapıyor.
+
+434
+01:18:45,228 --> 01:18:47,228
+Ha, o yüzden hocam.
+
+435
+01:18:48,115 --> 01:18:50,115
+Tamam hocam, anladım yani şu an.
+
+436
+01:18:50,115 --> 01:18:56,115
+Entropi minimum yapıyor. Yani bir fonksiyonu maksimum minimum bulmak için ne yapıyorduk biz? 0 eşit diyorduk değil mi?
+
+437
+01:18:56,115 --> 01:18:57,115
+Evet.
+
+438
+01:18:57,115 --> 01:19:00,115
+Entropinin minimum olması ne demek?
+
+439
+01:19:01,115 --> 01:19:05,115
+Yani onun daha az bir bilgi var demek hocam orada.
+
+440
+01:19:05,115 --> 01:19:08,115
+Tamam mı? Yani bilmediğin daha az demek.
+
+441
+01:19:08,115 --> 01:19:09,115
+Evet.
+
+442
+01:19:09,115 --> 01:19:12,115
+Entropi neydi? Bilmediğinin miktarıydı değil mi?
+
+443
+01:19:12,115 --> 01:19:12,587
+Evet hocam.
+
+444
+01:19:12,948 --> 01:19:17,347
+Information ve Null'ın çarısındaki farkı anlatmıştım diye hatırlıyorum.
+
+445
+01:19:17,347 --> 01:19:19,908
+Evet hocam, bir dersimizden bahsetmiştiniz.
+
+446
+01:19:19,908 --> 01:19:26,788
+Evet. Dolayısıyla entropiyi minimum yapıyorsun. Diğer bir kelimeyle sen söyle, neyi minimum acıda?
+
+447
+01:19:26,788 --> 01:19:29,427
+Belirsizliği azaltar hocam.
+
+448
+01:19:29,427 --> 01:19:31,427
+Belirsizliği azaltıyorsun.
+
+449
+01:19:31,427 --> 01:19:32,427
+Evet.
+
+450
+01:19:32,427 --> 01:19:38,868
+Öyle bir teta değeri var ki, o teta değeri tam olarak o dataya fix oluyor yani, uygun oluyor.
+
+451
+01:19:40,051 --> 01:19:46,652
+Şimdi 10 dakika ara veriyoruz. 14.10'da başladık. 10 dakikadan sonra görüşürüz arkadaşlar.
+
+452
+01:30:20,756 --> 01:30:23,156
+Arkadaşlar, geliyor mu sesi?
+
+453
+01:30:25,756 --> 01:30:26,556
+Geliyor.
+
+454
+01:30:27,556 --> 01:30:33,355
+Şimdi şöyle bir şey yapalım. Ne yapalım? Bir tane örnek yapalım.
+
+455
+01:30:37,756 --> 01:30:43,156
+Poisson dağılımı ile ilgili yapalım, tamam mı bir tane de? Poisson dağılımı nasıldı?
+
+456
+01:30:43,956 --> 01:30:45,355
+Dış klipti değil mi?
+
+457
+01:30:47,123 --> 01:30:51,304
+Hangi değerleri alıyordu? Range neydi?
+
+458
+01:30:59,060 --> 01:31:09,460
+Bu şöyle bir setti değil mi? İşte 0, 1, sonsuza kadar gidiyordu işte. 2, şöyle sonsuza kadar gidiyor değil mi?
+
+459
+01:31:11,460 --> 01:31:13,860
+Şimdi bunlar K sayısı olsun.
+
+460
+01:31:14,460 --> 01:31:17,260
+Şimdi Consider...
+
+461
+01:31:22,484 --> 01:31:34,164
+consider the Poisson distribution, the Poisson distribution, actually.
+
+462
+01:31:38,579 --> 01:32:01,460
+Consider the Poisson distribution with parameter lambda whose comma whose
+
+463
+01:32:05,076 --> 01:32:11,235
+Probability mass function is given by
+
+464
+01:32:13,515 --> 01:32:19,315
+Hatırlıyorsunuz değil mi? Şimdi şöyle, Poisson distribution diyelim x olsun tamam mı?
+
+465
+01:32:19,835 --> 01:32:23,835
+Probability x is equal to key
+
+466
+01:32:25,115 --> 01:32:29,835
+Yani k değeri 0, 1, 2, 3, 4, 5 olabilir tamam mı?
+
+467
+01:32:33,108 --> 01:32:40,108
+Bu şekilde.
+
+468
+01:32:40,108 --> 01:32:43,108
+Do you remember? Bunun şeyini hatırlıyor musunuz?
+
+469
+01:32:43,108 --> 01:32:50,108
+Lambda üzeri k bölü k! e üzeri eksi lambda. Bu şekildeydi.
+
+470
+01:32:50,108 --> 01:32:53,900
+K değerleri neydi? 0, 1.
+
+471
+01:32:57,140 --> 01:33:12,140
+K'nın değeri, işte şöyle elemanı yapalım, K elemanıdır. Ya da K eşittir, 0, 1, 2, sonsuza kadar giren sayılar.
+
+472
+01:33:14,900 --> 01:33:25,100
+Şimdi bunun uygulamaları anlatacağım tamam mı? Şimdi ne olsun? Bunu biraz şöyle anladım, şöyle bir bank olsun tamam mı? This is a bank.
+
+473
+01:33:28,180 --> 01:33:31,180
+Şimdi bu bankaya ne geliyor? İnsanlar geliyor değil mi?
+
+474
+01:33:42,612 --> 01:34:09,612
+Şimdi sizin elinizle bir tane ölçüyorsunuz, her 10 dakikada bir gelen insan sayısına bakıyorsunuz. Mesela şunu diyorsun, birinci dakikada kaç insan gelmiş olsun? Sıfır. İkinci dakikada kaç insan, müşteri gelmiş olsun bankaya? Beş. Üçüncü dakikada bir.
+
+475
+01:34:10,579 --> 01:34:19,579
+Dördüncü dakikada sıfır. Beşinci dakikada altı. Değil mi?
+
+476
+01:34:20,579 --> 01:34:27,532
+These are the numbers. The numbers of customers.
+
+477
+01:34:31,731 --> 01:34:43,492
+...who came to the bank in the specified...
+
+478
+01:34:48,692 --> 01:35:02,692
+interval, time, interval. Tamam? Actually, böyle de demeyebilirsiniz. Yani iki kişi geldi, üç kişi geldi, beş kişi geldi şeklinde, tamam mı?
+
+479
+01:35:05,692 --> 01:35:14,692
+Şimdi, bu Poisson dağılımlı, doğru mu? Öyle kabul ettiğimizde, o zaman lambda değeri ne?
+
+480
+01:35:18,131 --> 01:35:26,131
+Eğer lambda'yı bilirsek artık modelleme yapmış oluyoruz. Bankaya gelen müşterilerin sayısını modelleyeceğiz gerçekçi bir şekilde.
+
+481
+01:35:26,131 --> 01:35:31,131
+Lambda'yı nasıl olacağız? O zaman neyi kullanalım? Maximum likelihood'u kullanalım.
+
+482
+01:35:31,131 --> 01:35:38,131
+Let us estimate the...
+
+483
+01:35:44,851 --> 01:35:50,452
+eşittir bir, bu k4 eşittir sıfır, bu k5 eşittir altı.
+
+484
+01:35:50,452 --> 01:35:58,612
+So these are the measurements. Let us estimate the lambda parameter
+
+485
+01:35:58,612 --> 01:36:12,532
+from k1, k2, k3, k4, let's say kn.
+
+486
+01:36:16,756 --> 01:36:17,756
+Samples
+
+487
+01:36:20,155 --> 01:36:23,596
+Of number of customers
+
+488
+01:36:27,060 --> 01:36:28,060
+Tamam?
+
+489
+01:36:30,260 --> 01:36:31,260
+Tamam.
+
+490
+01:36:31,960 --> 01:36:32,960
+Good.
+
+491
+01:36:32,960 --> 01:36:35,260
+Let us try to find the...
+
+492
+01:36:37,660 --> 01:36:38,460
+So,
+
+493
+01:36:40,660 --> 01:36:43,460
+this is the entropy.
+
+494
+01:36:45,760 --> 01:36:47,960
+n is from 1 to n.
+
+495
+01:36:49,160 --> 01:36:50,460
+Probability,
+
+496
+01:36:51,060 --> 01:36:54,060
+the random verb x is equal to kn.
+
+497
+01:36:56,564 --> 01:37:21,324
+ve, let us write, bu, λ k1, k1, k1, e-lambda, again, λ k2, k2, k2, e-lambda, dot, dot, dot, let me make it small.
+
+498
+01:37:25,171 --> 01:37:35,731
+Okay, Lambda power K n divided by K n factorial e power minus Lambda.
+
+499
+01:37:37,571 --> 01:37:50,451
+When you do multiplication, you will find out that Lambda power K plus 1 plus K 2 plus K n divided by
+
+500
+01:37:52,180 --> 01:38:07,180
+K1! K2! Kn! e power minus, how many lambda e power minus lambda multiplied? It is n times lambda.
+
+501
+01:38:08,680 --> 01:38:16,180
+Then what we will do, we will differentiate it with respect to lambda. So this is a function of lambda.
+
+502
+01:38:22,195 --> 01:38:29,395
+So what we will do, we will differentiate it with respect to the unknown parameters.
+
+503
+01:38:31,395 --> 01:38:35,395
+And we will make it zero to find the value of lambda.
+
+504
+01:38:35,796 --> 01:38:43,395
+So, but not this one, actually we need to differentiate the logarithm of it with entropy.
+
+505
+01:38:44,675 --> 01:38:47,716
+Okay, let us find the entropy for like.
+
+506
+01:38:49,460 --> 01:39:15,900
+Like the negative entropy, logarithm of L lambda. And this is equal to what? When you do logaritms, what we have? We have this summation, n is from 1 to n, key n, multi, sorry.
+
+507
+01:39:22,707 --> 01:39:49,803
+Kn, multiply it by log, lambda, minus logarithm, k1 factorial, k2 factorial, k n factorial, minus n,
+
+508
+01:39:50,195 --> 01:39:56,796
+ve lambda. Ve sonra, ne yapacağız? Bunu değiştirelim.
+
+509
+01:40:04,148 --> 01:40:08,148
+So, let me differentiate it. So, this is the summation.
+
+510
+01:40:11,667 --> 01:40:17,587
+Bu, 1 over lambda minus n equals 0.
+
+511
+01:40:19,107 --> 01:40:21,268
+It must be 0, so it is equal 0.
+
+512
+01:40:21,268 --> 01:40:24,067
+From here, what is lambda?
+
+513
+01:40:26,307 --> 01:40:31,667
+Lambda is equal to 1 over n.
+
+514
+01:40:34,163 --> 01:40:52,163
+1 over n summation n is equal to 1 to n k n. You see, we estimate the lambda from the customers. Okay, let us find the lambda now. Let me get these values.
+
+515
+01:41:00,851 --> 01:41:01,851
+Körpia.
+
+516
+01:41:10,899 --> 01:41:12,499
+Test. Ok.
+
+517
+01:41:13,059 --> 01:41:14,499
+For these values,
+
+518
+01:41:24,532 --> 01:41:46,032
+Okay, lambda, estimated lambda is equal to 1 over, this is of course must be 1, 1 over 5, and then summation 0.5.1 and 6. Okay.
+
+519
+01:41:50,163 --> 01:42:17,344
+6, 12, 10, ok, bu 12.4. Tamam. Bu kadar. Ne yaptık? Artık lambdayı bulduk ve ona göre artık ne yapabiliriz? Bu rastgele sayı üretirsek, bu lambdayla, sanki bu bankaya gelen müşterileri simülasyonunu yapmışız gibi olur.
+
+520
+01:42:20,340 --> 01:42:21,779
+Sorusu olan var mı?
+
+521
+01:42:26,068 --> 01:42:37,307
+Bir tane daha örnek yapıp bunu bitireceğim artık. Bu örneği de Rale dağılımı ile ilgili yapalım, Rale Distribution.
+
+522
+01:42:41,716 --> 01:42:51,716
+Hocam başlamadan bir şey sorabilir miyim? Bizim bu veri setimiz, bu dağılımlara, bir dağılıma uymak zorunda mı? Ya da uymadığı zaman ne yapıyoruz?
+
+523
+01:42:51,716 --> 01:43:02,716
+Uymadığı zaman bakıyorsun, histogramına bakıyorsun. Bunu anlatmıştım hatırlıyorsan. Kaçırmış olabilirim hocam.
+
+524
+01:43:02,716 --> 01:43:04,716
+Derste değil miyim?
+
+525
+01:43:04,716 --> 01:43:06,716
+Dersde değil mi?
+
+526
+01:43:06,716 --> 01:43:08,428
+Efendim?
+
+527
+01:43:11,731 --> 01:43:18,811
+Bak şurada anlattık, ne kadar yazmışız böyle ya. En çok bu derste mi yazıyorsunuz?
+
+528
+01:43:18,811 --> 01:43:21,731
+Benim öyle hocam derslerim değil.
+
+529
+01:43:21,731 --> 01:43:38,731
+Vay da çok yazmışız ya, 270 sayfa. Bir dönemde iyi yani. 300 olamamış, az. Nerede anlattık ya bunları? Herhalde buraları bir yerde anlattık.
+
+530
+01:43:39,956 --> 01:43:43,155
+Şimdi histogramına bakıyorsun, bu neye benziyor?
+
+531
+01:43:44,956 --> 01:43:56,355
+Gauss'a benziyor değil mi? Gauss'un şirketi ne? Bu. Bilinmeyen de, µ ve sigma'yı bilmiyorsun. Öyleyse µ ve sigma'yı bu datadan bulacaksın.
+
+532
+01:43:56,724 --> 01:44:00,724
+Ve bulunca bunun üzerine oturur hemen. Direkt bunu bulmuş olur.
+
+533
+01:44:00,724 --> 01:44:06,724
+İşte hocam bunu biliyorum. Benim dediğim şey, bizim veri setimiz buna uymazsa ne oluyor? Mesela iki tane tepe noktası olan bir veri setimiz var.
+
+534
+01:44:06,724 --> 01:44:08,724
+Ya buna uymuyorsa şuna uyar.
+
+535
+01:44:08,724 --> 01:44:09,724
+İllaki birine uyuyor değil mi?
+
+536
+01:44:09,724 --> 01:44:11,724
+Tabii ki, illaki birine uyuyor.
+
+537
+01:44:11,724 --> 01:44:12,724
+Tamam hocam teşekkür ederim.
+
+538
+01:44:12,724 --> 01:44:17,724
+Bakın, şöyle göstereyim. Benim yapmış olduğum bir tane makale var.
+
+539
+01:44:17,724 --> 01:44:24,556
+Onu sizinle paylaşım yapayım. Dur, paylaşım olarak. Saniye.
+
+540
+01:44:28,595 --> 01:44:31,416
+Xtendert, generalize the key.
+
+541
+01:44:36,724 --> 01:44:54,124
+Şimdi olasılıkla uğraşan adamın kendisine ait bir pdf olmalı tamam mı? Biz böyle yani şey yaptık, A.G.K. Terkan yazıyor bir de, bunu ben önerdim. Literatüre bu pdf'i öneren kişi benim yani.
+
+542
+01:44:54,124 --> 01:44:59,124
+Bunu açalım, dur bir saniye paylaşım yapacağım şimdi size.
+
+543
+01:45:04,532 --> 01:45:05,731
+Stop Share
+
+544
+01:45:09,108 --> 01:45:18,708
+Arkadaşlar, chatte yazdıklarınızı ben okuyamıyorum. Ne yazdınız chatte?
+
+545
+01:45:24,180 --> 01:45:26,619
+Bunu baştan söyleselerdi keşke.
+
+546
+01:45:28,500 --> 01:45:32,940
+Ne yapacaktın [öğrenci], [öğrenci]? Neyi söyleselerdi keşke?
+
+547
+01:45:34,100 --> 01:45:38,260
+Hocam onu iki sırasında söyleyeyim ki, ikileşik doktoruyla bahsettiğin zaman.
+
+548
+01:45:39,180 --> 01:45:42,180
+Üç buçuk ortalama üst olana direkt doktoraya başlayabilir.
+
+549
+01:45:42,180 --> 01:45:43,740
+Söylemiyorlar ya.
+
+550
+01:45:44,539 --> 01:45:50,060
+Söylemiyorlar. Bakın şimdi, şöyle gidelim, buradan gidelim, tıklayalım.
+
+551
+01:45:52,435 --> 01:46:00,935
+Bu bir pdf var burada, tanıtıyorum ben bunu. Bak burada teorisinden başlıyorum. Bakın pdf şu. Görüyor musunuz? Durumu büyüteyim biraz.
+
+552
+01:46:04,212 --> 01:46:12,552
+Şu bir piliye. Bunun adını ben Extended Generalized K Random Variable verdim. Kaç tane piliyimleyen var burada?
+
+553
+01:46:12,552 --> 01:46:28,872
+Zay var, bir. MS var, iki. M var, üç. Bir de Zay-S var, dört. Bir de Omega var, beş. Tamam mı? Beş piliyimleyenli bir.
+
+554
+01:46:29,203 --> 01:46:33,203
+Şimdi bunun özellikleri var, onu göstereyim.
+
+555
+01:46:33,203 --> 01:46:37,203
+Hocam, bu PDF'i ne tür data için kullanılıyor hocam?
+
+556
+01:46:37,203 --> 01:46:45,203
+Bütün datalara uyuyor bu PDF. Onu göstereceğim. Tablo var, bakın.
+
+557
+01:46:55,136 --> 01:47:10,136
+Bak, Raleigh oluyor, Maxwell oluyor, Half Normal oluyor, Exponential oluyor, Rebol oluyor, Nakagami M oluyor, Generalized Nakagami M oluyor. Bunu da benim uğraştığım bir konu. Gamma oluyor. Bütün hepsi bak özel hali bunlar. Bu dağılımın özel hali.
+
+558
+01:47:10,136 --> 01:47:21,836
+Yani bu dağılım, bu P diye, bak bu CDF'i gördüğünüz gibi. Bak, başlıyor, gidiyor, 1'e doğru yaklaşıyor. 10 üzerinde 0 demek 1 demek, biliyorsunuz. 1'e doğru gidiyor.
+
+559
+01:47:22,068 --> 01:47:48,068
+İşte bu haberleşme sisteminde bit hata olasılığını hesaplıyoruz. Mesela bu amount of date duration, bu şeye hesaplıyor. Bu level crossing rate, bu özel bölüm, belli bir seviyeye geçme ihtimali bir değerin. Yani bu çalışmada mesela şunu yaptık.
+
+560
+01:47:48,336 --> 01:48:15,336
+Mesela bu 5 parametreli, senin hangi datan olursa olsun bu fit olur yani. Tamam mı? Ama önemli olan parametre sayısını küçük tutmak. Niye? Çünkü parametre sayısı büyük olunca hesaplamalar da ağırlaşıyor, bu teorik hesaplamalar. Şimdi bunu method of moments kullansak, 5 tane denkleme ihtiyacımız var. Peki bu 5 tane denkleme?
+
+561
+01:48:15,923 --> 01:48:36,923
+Nasıl elde edeceğiz? Ve onu çözeceğiz. Beş bilimlerini, beş denklemi çözmemiz lazım bu parametreleri yapmak için. Peki, logaritmasını alıp bunların çarpımlarını, mesela maximum likelihood estimation'ı bunun daha da zor. Ama var yani, yapılabiliyor. Tamam mı?
+
+562
+01:48:39,923 --> 01:48:41,899
+Sorusu olan var mı?
+
+563
+01:48:42,804 --> 01:49:02,684
+Sonuç olarak, buradan bakıyorsunuz, sonuç olarak datanızı elde ediyorsunuz, histogramına bakıyorsun, buna benziyorsa, işte bu hangi dağılım, gama dağılım, o zaman gama seçiyorsun, buna benziyorsa,
+
+564
+01:49:03,347 --> 01:49:14,347
+O zaman exponential'ı seçiyorsun. Buna bakıyorsun, Gauss'ı seçiyorsun. Tamam mı? Bunun gibi seçiyorsun. Seçtiğimde bunun parametreleri var.
+
+565
+01:49:14,347 --> 01:49:22,347
+Parametreler ne? Bunun mesela Gauss'un mu ve sigma karesi var, exponential'ın lambdası var, gamma'nın m ve omegası var.
+
+566
+01:49:22,347 --> 01:49:30,091
+Nasıl bulacaksın bunların değerlerini bilmen gerekiyor? Onları da datadan öğreniyorsun, estimat ediyorsun. O yüzden estimatörü kullanıyorum.
+
+567
+01:49:30,420 --> 01:49:38,420
+estimator'u kullanıyoruz. O estimator'un formüllerini de bu şekilde elde ediyoruz. İşte şu şekilde.
+
+568
+01:49:40,420 --> 01:49:55,420
+İşte mesela şurada bir estimator'u bulduk işte, bak şu. Estimator lambda. Bu Poisson için estimator. İşte bir başka estimator da şuydu.
+
+569
+01:49:57,087 --> 01:50:06,087
+Bu da Maximum Lockwood Estimator'ıydı, diğer bu problemde. Method of Moments Estimator vardı, bu da başka bir estimator.
+
+570
+01:50:06,087 --> 01:50:19,087
+Böyle dataları buluyorsun, artık elinde ne var? Teorinin yanında artık teorik bir ifade var. Artık o teoriyi artık uygulayabilirsin, makine öğrenmesi şeylerinden.
+
+571
+01:50:21,492 --> 01:50:37,492
+algoritmalarını, artık bu pdf'ini kullanabilirsin. Diyebilirsin ki dağılımın pdf'ı budur, parametreler de budur. Momentini bul, varyansını bul, her şeyini bul, olasılığını bul, birden küçük, maksimum, minimum. Tamam?
+
+572
+01:50:37,492 --> 01:50:45,492
+Tamamdır hocam, teşekkür ederim. Dediğim gibi ben onu da biliyordum ama her olasılığı, her distribution'a uyan bir veri seti olduğunu bilmiyordum.
+
+573
+01:50:46,163 --> 01:50:48,163
+Onu da öğrenmiş oldum. Teşekkür ederim.
+
+574
+01:50:48,163 --> 01:50:58,163
+Her veri setinin bir dağılımına uyan bir, her veri setinin, veri setine uygun bir dağılım her zaman vardır.
+
+575
+01:51:00,163 --> 01:51:09,163
+Yani, bilmeyen adama, bak bunlar işte sizin için ipucu. Mesela yarın bir gün bir şirkette çalışacaksınız.
+
+576
+01:51:09,555 --> 01:51:33,387
+Karşınızdaki kişinin bilgisini ölçebilirsiniz böylelikle. Mesela diyor ki, ya ben işte bir makine öğrenmesini çok iyi biliyorum, şöyle yapıyorum, böyle yapıyorum. Çok basit bir soru soruyorsun. Çok basit bir soru. O basit bir soruyla karşıdakinin bilgisini ölçüyorsun ve ona göre, biliyorsa yaklaş iyi, güzel, sana zarar gelmez ama bilmiyorsa...
+
+577
+01:51:33,524 --> 01:51:57,024
+Bilmeden bilgi satmaya çalışan bir tiplerden her zaman uzak duracaksınız. Tamam? Bak bu size benim tavsiyem olsun. Bilmeden bilgi satana iyi gözle bakmayın. Kötü gözle bakmayın. Çünkü sizi kandırmaya çalışıyor. Biliyormuş gibi kandırmaya çalışıyor. Tamam?
+
+578
+01:51:58,484 --> 01:52:06,324
+Bilmeden bilgi satın, olmaz. Etrafınızda, iş hayatınızda karşınıza çıkarsa dikkat edin yani, tamam mı?
+
+579
+01:52:08,324 --> 01:52:09,324
+Tamam hocam.
+
+580
+01:52:10,124 --> 01:52:11,764
+Tamam hocam, teşekkür ederiz.
+
+581
+01:52:11,764 --> 01:52:18,884
+Şimdi başka bir örnek daha yapalım, Raleigh dağılımını da yapalım, ondan sonra bitiriyorum.
+
+582
+01:52:18,884 --> 01:52:20,884
+Şeye geçeyim ben olmada.
+
+583
+01:52:22,323 --> 01:52:46,323
+Z prosedüre geçeyim. Artık yeter ya, ben sorularla paylaşırım size benzer sorular da var, onu da paylaşırım. Gerçi orada da var çözümleri bunlar. Şimdi Z prosedüre geçelim. Şimdi Z prosedürü geçen hafta başlamıştık, onu tekrar edelim. Tamam mı? O da şuydu. Şurada başlamıştık, hatırlıyorsanız. Şurada.
+
+584
+01:52:47,796 --> 01:53:09,796
+Buraya biraz Türkçe anlatacağım, hızlıca, tamam mı? Geçelim diyor. Şimdi elimizde bir tane Z normal dağılım olsun, yani Gauss dağılım olsun. Ama ortalaması 0, varyansı da 1 olsun. Yani ortalaması 0, expected value of Z 0, variance of Z 1.
+
+585
+01:53:10,292 --> 01:53:16,892
+Şimdi, bu nasıl bir dağılımdır? Bu standart normal dağılım değil mi? Çünkü ortalaması 0, varyansı 1.
+
+586
+01:53:18,892 --> 01:53:28,892
+Standart deviation of, bir tane popülasyon verilmiş olsun. Sizin bir şeyi biliyorsunuz, size bir popülasyon verilmiş, random variable x.
+
+587
+01:53:28,892 --> 01:53:37,492
+Bu random variable'ın, bu rastgele değişkenin standart dağ değişimini biliyorsunuz.
+
+588
+01:53:38,868 --> 01:53:48,188
+Standart deviation'ı, değişimini biliyorsunuz. O da sigma. Sigma'yı bildiğinizi kabul edin. E sigma'yı biliyorsan onun varyansını da biliyorsun. Tamam mı?
+
+589
+01:53:48,188 --> 01:54:02,988
+Kabulümüz bu. Popülasyonun ortalamasını bilmiyoruz ama neyini biliyoruz? Varyansını biliyoruz. O zaman ortalamayı bilmiyorsak nasıl ortalamayı? Datadan bulacağız.
+
+590
+01:54:03,667 --> 01:54:25,987
+Hangi şart altında? Varyansı bildiğimiz şart altında. Şimdi bize, pardon, bu ne oldu ya? Bize şey verilmiş olsun, şöyle bir veri, data verilmiş olsun. Datada ne var? x1, x2, xn. Bunlar da sampullar. Bu verinin uzunluğu ne? Sample sayısı kadar değil mi? Bu da n. n kadar sampullar.
+
+591
+01:54:26,707 --> 01:54:52,087
+Ortalamanın estimatörü de şu şekilde verilmişti, Gauss için. 1 bölü n, toplam, i birden n'e kadar x, i. Yani sample'ların toplamının sample sayısına bölümü. Bu da ortalamaydı. Biliyorsunuz zaten. Size rastgele sayılar versek, ortalaması nedir desek bu sayıların hepsini toplarsınız. Sonra sayıların sayısı, verilen toplam sayı miktarında.
+
+592
+01:54:53,779 --> 01:54:57,779
+sayıların toplam sayısına bölersiniz.
+
+593
+01:55:01,779 --> 01:55:07,779
+Dolayısıyla, standart deviation ise biliyoruz bunu, onu kabul ediyoruz, bunu bildiğimizde.
+
+594
+01:55:07,779 --> 01:55:10,779
+Z-score ise şu arkadaşlar.
+
+595
+01:55:10,779 --> 01:55:17,779
+Şimdi biz şu ortalama, bizim neyimiz, tahmin ettiğimiz ortalama.
+
+596
+01:55:19,956 --> 01:55:34,356
+Gerçek ortalama ne? Popülasyonun gerçek ortalaması ne? MÜ. Popülasyonun gerçek ortalaması MÜ. MÜ değişir mi zamanında? Değişmez. Yani şöyle yazayım isterseniz aynı zamanda.
+
+597
+01:55:39,347 --> 01:55:46,347
+Hatta bunu kırmızıyla yazayım. Hatta maviyle mi yazdım acaba?
+
+598
+01:56:01,108 --> 01:56:22,528
+Mu'nun estimated. Şimdi Mu zamanla değişir mi? Değişmez. Çünkü popülasyonun ortalaması sabittir, varyansı sabittir. Ama biz estimated diyoruz, x bar. Bu değişir. Niye mesela?
+
+599
+01:56:23,923 --> 01:56:29,923
+Türkiye'deki insanların boy ortalaması kaçtır? Biliyor musunuz?
+
+600
+01:56:32,923 --> 01:56:36,923
+Erkekler için 1.76, tarımlar için 1.60 mı?
+
+601
+01:56:36,923 --> 01:56:46,923
+Tamam, erkekler için 1.76 diyorsun. Gerçekten 1.76 mı? Değil. Nasıl buluyorsun peki onu?
+
+602
+01:56:50,515 --> 01:57:17,515
+X bar ne çıkıyor İstanbul'da? 1.80 çıkıyor. Bin kişi İzmir'den alıyor, 1.78 çıkıyor. Bin kişi Ankara'dan alıyor, 1.70 çıkıyor. Adana'dan alıyor, 1.72 çıkıyor. Sinop'tan alıyor, 1.90 çıkıyor. Tamam mı? Yani X bar nasıl bir şey? Rastgele bir değişken. Değil mi?
+
+603
+01:57:17,908 --> 01:57:36,908
+Ama sen diyorsun ki Türkiye genelinde 1.76 diyorsun. Ama o değişmiyor, bak ortalama sabit. Yani 1.76 ne yapılıyor? Bütün Türkiye'deki insanların boylarını toplayıp toplam nüfus sayısına bölsek, o zaman 1.76 çıkar.
+
+604
+01:57:36,908 --> 01:57:41,908
+Ama bin kişi, bin kişi alarak, sample'ları alarak ne çıkar o zaman?
+
+605
+01:57:43,315 --> 01:57:53,315
+X bar çıkardır, rastgele değişken çıkardır. Şimdi bakın, şuraya bir şey yazacağım, unutmayın. Şunu neyle yazayım? Kırmızıyla yazayım. Tamam mı? Bak, kırmızıyla.
+
+606
+01:57:53,315 --> 01:58:08,315
+Kırmızıyla yazayım. Şöyle olsun. Hatta nereye yazayım? Şuraya yazacağım. Şuraya. Şimdi bakın, limit n sample sayısı sonsuza gidersin.
+
+607
+01:58:13,555 --> 01:58:14,555
+mü olur.
+
+608
+01:58:14,555 --> 01:58:15,555
+Tamam.
+
+609
+01:58:21,939 --> 01:58:42,939
+Dolayısıyla X bar bir tahmin. Şimdi X bar'ın dağılımı ne? Rastgele değişken, bu rastgele, bunun histogramına baktığınızda şunu göreceksiniz. Gauss'a gidecek. Niye Gauss? Peki, X bar neden Gauss dağılımı? Histogramına baktığınızda. Sizce neden? Kim söyleyecek?
+
+610
+01:58:43,839 --> 01:58:45,719
+Hocam, Central Limit Teoreminden değil mi?
+
+611
+01:58:45,739 --> 01:58:48,779
+Kesinlikle, doğru söylüyorsun. Haklısın, teşekkür ederim.
+
+612
+01:58:49,203 --> 01:58:59,203
+rastgele sayıların toplamları central limit teoremine göre Gauss yaklaşımlıdır. Dolayısıyla x bar'ın yani ortalama Gauss yaklaşımlıdır.
+
+613
+01:58:59,203 --> 01:59:11,203
+Şimdi o zaman ben neyini biliyorum? x bar'ın ortalamasını biliyorum, sample mean'ini de hesaplayabilirim, x bar'ın. Değil mi? Sample mean. Bu da sample variance.
+
+614
+01:59:15,952 --> 01:59:37,952
+Bu bir ratio. Bunun dağılımı ne? Bunun dağılımı da z-score diyoruz. Z'nin varyansı ne? Yaklaşık 1. Peki, ortalaması ne? 0. Z ortalaması 0 olan, varyansı 1 olan bir rastgele değişken.
+
+615
+01:59:37,952 --> 01:59:43,311
+İşte bunun da pdf'i var. Z'nin pdf'i ne? Yazayım hemen şuraya.
+
+616
+01:59:52,564 --> 02:00:00,163
+1 bölü kök 2P, exponential, eksi z kare bölü 2. Bu kadar.
+
+617
+02:00:02,804 --> 02:00:05,604
+Eksi sonsuz ile artı sonsuz orasında z.
+
+618
+02:00:12,307 --> 02:00:18,307
+Tamam, eksi sonuç bu, pdf'i bu. Çok basit. Peki, cdf'i ne?
+
+619
+02:00:24,851 --> 02:00:29,231
+CDF'de şu, integral alıyorduk, hatırlarsanız Q fonksiyonu cinsinden.
+
+620
+02:00:33,131 --> 02:00:34,131
+Q
+
+621
+02:00:35,492 --> 02:00:37,492
+Z'ti değil mi?
+
+622
+02:00:39,051 --> 02:00:40,051
+Bu kadar.
+
+623
+02:00:44,884 --> 02:00:52,203
+sorusu olan var mı? Q fonksiyonunu anlatmıştık zaten. Biliyorsunuz.
+
+624
+02:00:54,163 --> 02:01:10,323
+Dolayısıyla bakalım gerçekten, şurada devam ediyoruz. Şuna bakalım, bunun ortalamasını, burada ortalamasını bulalım. Ortalaması mü, gayet güzel.
+
+625
+02:01:10,612 --> 02:01:29,612
+Yani tahmin ettiğimiz ortalamanın ortalaması, mü, çok güzel, dolayısıyla Bayes, unbiasit bir estimator. Varyansa bakalım, varyansa da şu bizim ifademiz, bunun varyansını bulacağız, ortalamanın varyansı.
+
+626
+02:01:29,612 --> 02:01:37,612
+Ortalamanın varyansı, ortalama ifadesi şu, ortalamanın varyansı, bu da sigma kare bölü n.
+
+627
+02:01:38,547 --> 02:02:03,668
+Ortalamanın varyansı, bakın unutmayın, sample mean'in varyansı, yani yapmış olduğun hatanın varyansı olmuş oluyor bir şekilde. Sigma kare bölü n, sigma kare ne? Popülasyonun varyansı bölü n ne? Sample sayısı. Bunu da bu şekilde görmüş olduk. Sonra, buradan hareketle, ne yapacağız?
+
+628
+02:02:05,203 --> 02:02:20,203
+Artık şeyi biliyoruz, z'nin dağılımını biliyoruz. Z nasıl dağılımlı? Eksis sonsuz artı sonsuz aralığında, varyansı 1 olan, ortalaması 0 olan, bir gaos rastgele değişkeni.
+
+629
+02:02:20,203 --> 02:02:28,171
+Şimdi bu gaos rastgele değişkeninin aralıklarını tanımayacağız. Yani şunu diyoruz.
+
+630
+02:02:28,564 --> 02:02:44,724
+Z, Z intervals, yani senin ortalaman, eksi sonsuzla, ortalama artı sigma bölü, kare kök n çarpı Z alfa arasında olma ihtimali ne?
+
+631
+02:02:44,724 --> 02:02:51,680
+Tamam mı? Yani Z'nin, şu yukarıdaki Z'nin, ortalama...
+
+632
+02:02:51,680 --> 02:03:18,960
+Artı, varyans, standart deviation bölü kök n çarpı z alfa, z alfayı daha sonra ne olduğunu söyleyeceğiz. Ya da ortalama eksi sigma bölü, kare kök n çarpı z alfa ile sonsuz arasında olma ihtimaliyle. Bunlar one-sided interval, tamam mı? Şöyle, onu şöyle söyleyebiliriz.
+
+633
+02:03:19,279 --> 02:03:29,279
+Mesela şöyle bir dağılımı var, ortalamanın. Olmadı, hiç izemedim. Hatta bunu mavi yapayım.
+
+634
+02:03:31,279 --> 02:03:40,279
+Tamam mı? Bu ortalama tam noktası mü olacak. Ama bu neyin dağılımı? X bar'ın histogramı.
+
+635
+02:03:40,279 --> 02:03:46,279
+Histogram, X bar. Böyle bir şey çıkıyor. Tamam mı? Şimdi...
+
+636
+02:03:46,836 --> 02:04:13,836
+Bunun sen, şey olarak, x barına baktığında, bunu sen sampullardan elde ediyorsun ve işaret senin bulmuş olduğun mü'nün, bu mü'nün bu aralıkta olma ihtimali nedir? Ya da bu mü'nün bu aralıkta olma ihtimali nedir? Bu aralık neresi oluyor mesela? Şöyle diyelim, şurası x bar.
+
+637
+02:04:14,228 --> 02:04:36,707
+Artı sigma bölü en z alfa. Tamam mı? Şu aradan, müğünün bu aralıkta olma ihtimali ne? Gerçekten o arada müğün. Çünkü bu, şunun değeri, şurası rastgele, şu rastgelelikten dolayı bu sağ oynuyor, solunda, bazen müğünün solunda, bazen müğünün sağında, bu x bar'dan dolayı.
+
+638
+02:04:41,939 --> 02:05:08,819
+rastgele değişken. Şimdi bazen mü'nün sağında, bazen mü'nün solunda. Yüzde kaç mü, x barın şu ifade, şu ifade, yüzde kaç mü'nün sağında, yüzde kaç mü'nün solunda. Olay bu, bunun ihtimali. Şu ise, bunun tam tersi, bu sefer soldan bakıyor. Bunlara one-sided z intervals deniyor.
+
+639
+02:05:11,091 --> 02:05:35,492
+Şu ise, şu ifadede ise, burada ise, x bar, bu iki aralıkta olma ihtimaline bakıyoruz. Yani, x barı bulduk, tamam mı? x barı bulduk, yani, estimate ettik ortalamayı. Sigma bölü kök m, şu ifade.
+
+640
+02:05:35,891 --> 02:05:55,771
+Sağında, bu ifade solunda. Yani senin estimation'ın bu aralıkta olma ihtimali nedir? Onu buluyoruz. Böylelikle estimator'ın neyini ölçmüş oluyoruz? Performansını ölçmüş oluyoruz. Ve ona göre de karşılaştırıyoruz. Bu nedir? CDF ile bunu çok rahatlıkla buluruz değil mi?
+
+641
+02:05:56,948 --> 02:06:22,188
+Aralıkta olma ihtimali demek bu. Şu aralıkta olma ihtimali. Şimdi şeye gelelim, bir 10 dakika ara verelim, tamam mı? Ondan sonra devam edeceğiz. Şimdi şöyle geçelim. Eski konulardan bunu anlattık, tekrardan bir review yaptık. Şimdi son derste de işte devam edeceğiz. Tamam, 10 dakika ara veriyoruz.
+
+642
+02:06:31,572 --> 02:06:33,072
+Kaç? 14.
+
+643
+02:06:34,572 --> 02:06:38,572
+58. Arkadaşlar, 10 dakika sonra devam ediyoruz.
+
+644
+02:16:50,739 --> 02:16:55,239
+Arkadaşlar, geliyor mu sesim?
+
+645
+02:16:56,739 --> 02:16:57,739
+Geliyor hocam.
+
+646
+02:16:58,739 --> 02:17:04,739
+Evet, şimdi ne yapıyoruz? Şöyle şey yapalım.
+
+647
+02:17:10,963 --> 02:17:18,963
+Yazalım, devam edelim. Konu Confidence Intervals'da.
+
+648
+02:17:22,739 --> 02:17:25,540
+Daha önceden yapmıştık, anlatmıştık.
+
+649
+02:17:40,500 --> 02:18:06,500
+Confidence Interval. Şimdi, a, definition verelim. Confidence Interval ne demek? Aynı kitaptan yazıyorum arkadaşlar. An interval a, b is a, 1 minus alpha 100% Confidence Interval.
+
+650
+02:18:13,427 --> 02:18:15,427
+Kitaptan aynen yazıyorum.
+
+651
+02:18:15,427 --> 02:18:17,003
+For the parameters.
+
+652
+02:18:21,427 --> 02:18:29,427
+Theta is, it contains the parameter
+
+653
+02:18:33,523 --> 02:18:53,523
+So, let's compare with the probability, probability 1 minus alpha. Şu demek, probability, işte ne yazacak? a, küçük eşittir theta, küçük eşittir b.
+
+654
+02:18:54,036 --> 02:19:01,932
+Yani teta'nın A ile B arasında olma ihtimaline direksi ayda diyoruz. Olasılığı buymuş.
+
+655
+02:19:06,260 --> 02:19:09,860
+Dolayısıyla, the coverage probability
+
+656
+02:19:15,891 --> 02:19:35,011
+Nameshow, the coverage probability, BX-alpha, is also called, is also called, confidence level.
+
+657
+02:19:42,100 --> 02:19:49,260
+Bu tanım şu, bir tane teta var, bu teta, siz ne yaptınız? Estimate ettiniz diyelim.
+
+658
+02:19:49,260 --> 02:19:54,819
+A ile B arasında olma ihtimali de siz ne diyorsunuz? 1-alfa.
+
+659
+02:19:54,819 --> 02:20:04,819
+Şimdi burayı kitaptan göstereyim isterseniz. Kitaba bir şey yaratacağım. Bir saniye. Oradan devam edelim.
+
+660
+02:20:08,180 --> 02:20:09,180
+Okey.
+
+661
+02:20:10,180 --> 02:20:12,180
+Kitaptan geliyor değil mi? Görüyorsunuz.
+
+662
+02:20:14,180 --> 02:20:15,180
+Evet hocam.
+
+663
+02:20:15,180 --> 02:20:17,180
+We will kapatayım.
+
+664
+02:20:21,180 --> 02:20:22,180
+Left.
+
+665
+02:20:24,180 --> 02:20:25,180
+Bunu kaldırdık.
+
+666
+02:20:28,180 --> 02:20:29,180
+Tamam.
+
+667
+02:20:30,180 --> 02:20:32,180
+Şartı biraz daha küçük yapayım.
+
+668
+02:20:33,180 --> 02:20:35,180
+Şöyle daha iyi oldu şu anda görüntü.
+
+669
+02:20:39,443 --> 02:20:42,443
+Evet hocam, böyle iyi gibi görebiliyoruz şu an.
+
+670
+02:20:42,443 --> 02:20:48,443
+Tamam. Biraz daha küçültebilirim ama neyse, böyle iyi. Şimdi şöyle düşünün.
+
+671
+02:20:51,443 --> 02:20:58,155
+Bir tane elimizde teta var. Bu tetanın a ile b arasında olma ihtimali. Tamam mı? Bu neymiş? 1-6 varmış.
+
+672
+02:20:58,548 --> 02:21:08,548
+Burada 1-alfa'ya coverage probability diyor. Yani bu theta, 1-alfa ihtimalinle bu aralıkta burayı cover ediyor anlamında.
+
+673
+02:21:08,548 --> 02:21:15,548
+Coverage probability diyoruz. Ve bunun değeri aynı zamanda confidence level, ne kadar güvenilir bu.
+
+674
+02:21:15,548 --> 02:21:24,548
+Yani bu yapmış olduğun estimation, ne kadar güvenilir olduğunu söylüyor. Bu ne kadar bire yakınsa, o kadar çok nedir?
+
+675
+02:21:24,884 --> 02:21:35,884
+Güvenilir demektir. Değil mi? Mesela sen teta'yı estimate ettin, a ile b arasındaki olma ihtimali bir. Yani alfa sıfır.
+
+676
+02:21:35,884 --> 02:21:48,884
+Bir eksi alfa ne oluyor? Bir oluyor. Ne demek bir? Kesinlikle ve kesinlikle teta a ile b arasında. Değil mi? Güvenililiği arttırıyor. Mesela...
+
+677
+02:21:49,871 --> 02:22:07,431
+Alfanın değeri 0.1 olsa, 1-0.1, 0.9 yapar. Yani a ile b arasında olma ihtimali ne? %90. Yani senin yapmış olduğun tahmin %90 ihtimalle doğru demek bu.
+
+678
+02:22:10,195 --> 02:22:36,695
+Şimdi şurada görüyorsunuz, mesela Confidence Interval and Coverage for Parameter Theta. Diyelim ki parametre theta'yı estimated şu çıktı. Şu aralıkta. Bir daha estimated şu aralık çıktı. Neye göre? Ortalamayı buluyorsun, sonra sigma kadar sağından ve solundan gidiyorsun, tamam mı? Bir daha estimated bu kadar çıktı. Bir daha estimated bu aralık çıktı. Bir estimated bu aralık çıktı.
+
+679
+02:22:37,012 --> 02:23:03,012
+Gördüğünüz gibi, her bir estimation'da aralıklar değişiyor. Confidence interval'lar değişiyor. Peki bu neden kaynaklanıyor? Çünkü senin estimator'ı kullanarak bulduğun şey zaten rastgele değişiyor. O da rastgele değişik ama varyansı çok küçük. Dolayısıyla bütün bu interval'ların ortalamasını alsan, neyi bulmuşsun? Kesinlikle senin estimator'ın tam aralığını bulmuş olursun. Tamam mı?
+
+680
+02:23:05,620 --> 02:23:31,620
+Buradan hareketle Construction of Confidence Interval'a geçelim. Şimdi elin sana bir tane sample data verilmiş, bunu zaten söylemiştik. Bir de Desired Confidence Level verilmiş olsun. Ve sen diyorsun ki benim parametrem işte şu aralıkta 1-6 ihtimaliyle bulunmuş olsun. Şimdi ben ne yapmış oldum? Teta'yı estimated. Benim estimated ettiğim Teta.
+
+681
+02:23:32,852 --> 02:23:34,852
+Biraz daha mı büyük yapsam acaba?
+
+682
+02:23:38,484 --> 02:23:40,484
+Böyle daha mı yoldu acaba?
+
+683
+02:23:44,115 --> 02:23:46,115
+Böyle daha mı iyi oldu gençler?
+
+684
+02:23:48,115 --> 02:23:50,115
+Evet hocam, şu an daha iyi.
+
+685
+02:23:50,115 --> 02:24:02,115
+Tamam, şimdi diyelim ki TETA'yı ben estimate ediyorum. Estimate ettim. Bu estimate ettim TETA'dan. Bu bir rastgele değişken değil mi? Örnek vermiştim.
+
+686
+02:24:02,115 --> 02:24:11,115
+İstanbul'da, ki bir İstanbul'dan bin kişi alıyorsun, bin insan seçiyorsun, yaş boylarının ortalamasına bakıyorsun.
+
+687
+02:24:12,948 --> 02:24:36,707
+Gidiyorsun Sarıyer'den bin kişi alıyorsun, boyun ortalamasına bak. Taksim'den al, Maltepe'den al. Tamam mı? Aldığın yerler, geliyorsun Davut Paşa'dan al. Hepsi aynı çıkmayacak, farklı çıkacak. Değil mi? Bir rastgele değişken. Bu bir teta estimator, bir rastgele değişken gibi davranıyor. Her ölçü, her farklı bin kişi için boy ortalaması değişecek.
+
+688
+02:24:37,427 --> 02:24:50,427
+Ve bunun nesi var? Bir ortalaması var. Ne üzerinden bu ortalama? Bu rastgele, sen bunu bin defa, mesela yüz defa bin kişilik grup aldın ve bunun ortalamasını da bulabilirsin değil mi?
+
+689
+02:24:52,427 --> 02:25:00,427
+Bu ikisinin arasındaki şu rastgele bir değişken, bunun ortalaması sıfır. Alttaki ne? Standart deviation. Ama nasıl bir standart deviation?
+
+690
+02:25:03,700 --> 02:25:27,580
+teta'nın standart deviyeti, tahmin edilen teta'nın tahmin değerinin standart deviyeti. Dolayısıyla şu ifadeye bakalım şimdi. Şimdi bu ifadede eğer bunun değeri, tahmin edilen teta'nın değeri teta'ya eşitse, o zaman buna biz diyoruz ki unbiased estimator diyoruz.
+
+691
+02:25:32,275 --> 02:25:43,076
+Tahmin edilenin, standart deviation'ı ise, buna ise biz standart error diyoruz. Tamam mı?
+
+692
+02:25:44,275 --> 02:25:51,475
+Şimdi şöyle bakalım. Şimdi şu ortalaması sıfır olan.
+
+693
+02:25:51,504 --> 02:26:12,744
+varyansı 1 olan pdf, normal dağılımın kendisi. İki tane sayı var bak, z alfa bölü 2, z alfa bölü 2. Tamam mı? Bu z alfanın değeri öyle bir değer ki şu z alfa, bu arada kalan alan, şurası neymiş? 1 eksi alfaya eşit.
+
+694
+02:26:15,188 --> 02:26:40,188
+Nasıl bulurum ben 1 eksi z alfanın değerini? Q fonksiyonundan bulurum değil mi? CDF'ten bulurum. 1 eksi alfa eşittir, CDF, f z alfa... Bunu nasıl yazayım ben şimdi burada ya? Dur şu kalemi kullanayım bakayım. Bizde çözümler şey olmaz. Bakayım bir saniye.
+
+695
+02:26:41,075 --> 02:26:43,515
+Şu bende bir tane şey vardı.
+
+696
+02:26:46,635 --> 02:26:48,635
+Aa, bir saniye gençler.
+
+697
+02:26:52,948 --> 02:26:56,948
+Şeyde nasıl annotate yapıyorduk değil mi? Annotate vardı galiba, evet.
+
+698
+02:26:58,948 --> 02:27:01,948
+Text var, drop.
+
+699
+02:27:02,948 --> 02:27:03,948
+Şimdi...
+
+700
+02:27:08,819 --> 02:27:27,819
+Şimdi şöyle yazayım, şuraya yazayım. Şimdi elimizde bir pdf var. Biraz kötü yazıyorum ama bu pdf işte şu şekildeydi bizde. Eksi sonsuzdan x'e kadar değil mi?
+
+701
+02:27:36,788 --> 02:28:02,608
+eksi u kare bölü 2 du diyelim. Şöyle diyelim. Şu integral. Buna biz hatta şey demiştik. Bu da neye eşit? qx'e eşit. Tamam mı? Örnek veriyorum. Örnek veriyorum. qx. Hatta qx demeyelim. Şimdilik böyle olsun. Kafa karıştırmayalım. Evet. Sonra.
+
+702
+02:28:03,412 --> 02:28:26,011
+O ne oldu ki ya? Okey. Şimdi, f, x, z, alfa bölü 2, değil mi? Bu alfa bölü 2 eşittir. Ne olacak? 1 eksi alfa olacak. Bu niye yazmıyor?
+
+703
+02:28:31,860 --> 02:28:39,860
+Biraz sistemden kaynaklanan şeyler var galiba. Görüyorsunuz, biraz bundan yazmak zormuş. 1-alfa.
+
+704
+02:28:41,159 --> 02:28:45,860
+Eee, buradan nasıl bulacağım z alfa değerini?
+
+705
+02:28:48,060 --> 02:28:49,860
+İntegre olarak bulabilir miyim?
+
+706
+02:28:49,860 --> 02:28:53,860
+Hayır ya, inversyonu bulacağım. Inverse'den gideceksen.
+
+707
+02:28:55,700 --> 02:29:11,380
+Neyse, ben bunu iPad'den anlatmaya devam edeyim. Tamam mı? Böyle şey oluyor. Tekrardan stop share diyeyim. Ben buradan iPad'den anlatayım artık. Share, screen. Böyle zor oluyor gördüğünüz gibi.
+
+708
+02:29:21,907 --> 02:29:23,907
+Şöyle, geldi.
+
+709
+02:29:25,907 --> 02:29:41,907
+Şimdi, şurası, z alfa bölü 2. Şurası, z alfa bölü 2. Alfa bölü 2 değeri, tamam mı?
+
+710
+02:29:41,907 --> 02:29:45,907
+Ve şu alan, şu ortadaki alanın değeri.
+
+711
+02:29:53,139 --> 02:30:15,039
+Buradaki alan değerini, 1-alfa. Bu şu demek esasında, bizim elimizde bir tane rastgele değişken var değil mi? Theta değişken. Biz neyi nasıl bulmuştuk? x barı nasıldı? 1 bölü n, i eşittir birden n'ye kadar x, i şeklinde bulmuştuk. Bu neydi? Bu estimator'da.
+
+712
+02:30:19,123 --> 02:30:21,123
+Bu ne oluyor peki?
+
+713
+02:30:22,123 --> 02:30:40,123
+Şu da, yukarıdaki ise, z'yi tanımladık, z ise, estimated estimated, bölü, sigma neyin? Standart deviation'ı, estimator'ın standart deviation'ı.
+
+714
+02:30:40,123 --> 02:30:45,123
+Buydu. Peki o zaman bu neymiş? Burası ortalaması sıfır olan.
+
+715
+02:30:47,540 --> 02:31:09,860
+Burası sıfır olan, Fz'nin şeyi. Şimdi, buradan bakarak, bu alan nedir? Bu alan neyi ifade eder? 1 eksi alfaydı. Bu nedir? Probability, z'nin, eksi olacak tabi, eksi z alfa bölü 2,
+
+716
+02:31:14,227 --> 02:31:22,387
+Ve bu arada bu alfa bölü 2 derken şeyin alfası olacak. Pardon gençler.
+
+717
+02:31:29,299 --> 02:31:39,299
+Evet, bu şekilde olacak. Z alfa bölü 2. Şu arada, doğru. Z bu aralıktır demek.
+
+718
+02:31:43,379 --> 02:31:47,879
+Bu integral. Bu olasılığı bakın, şimdi şurada yazalım tekrar yeniden.
+
+719
+02:31:56,979 --> 02:31:57,979
+Büyük bir şey.
+
+720
+02:32:06,804 --> 02:32:08,804
+Şimdi Z alfayı nasıl bulurum ben?
+
+721
+02:32:16,147 --> 02:32:38,987
+Nasıl bulurum Z alfayı? Şu alan nedir peki? Şu alanın değeri? Alfa bölü 2'dir bu alanın değeri. Bu alanın değeri kaç? Burada alfa bölü 2'dir. Toplam alan ne? 1 gördüğünüz gibi. Peki CDF ne? Bakın CDF ne?
+
+722
+02:32:43,092 --> 02:32:58,492
+Bu niye eşit? Alfa bölü 2 artı 1 eksi alfa. Dolayısıyla, 1 bölü 2 artı, alfa bölü 2. Yok, 1 eksi alfa bölü 2.
+
+723
+02:33:02,100 --> 02:33:13,819
+1- alfa bölü 2. Peki, fz-z alfa bölü 2 neye eşit? O da alfa bölü 2 eşit.
+
+724
+02:33:15,500 --> 02:33:18,220
+Tamam. E peki ben buradan bulabilirim.
+
+725
+02:33:20,540 --> 02:33:24,620
+Buradan geçeyim. z alfa bölü 2'yi nasıl bulurum?
+
+726
+02:33:25,500 --> 02:33:27,500
+fz-1
+
+727
+02:33:27,796 --> 02:33:37,296
+1-alfa bölü 2. Bu şeklinde inverse'ını alarak, CDF'ini biliyorsam inverse'ını alırım, inverse'den bu şekilde hesaplarım. Z alfayı biliyorum. Güzel.
+
+728
+02:33:37,296 --> 02:33:51,724
+Şimdi tekrar şu olasılığa geri bakalım. Probability, eksi z alfa bölü 2, z alfa bölü 2. Şimdi,
+
+729
+02:33:51,924 --> 02:34:11,924
+Şu olasılığı bak şu şekilde yazabiliriz. Bu neydi yukarıdaki? x bar eksi ortalaması müydü bölü alttaki neydi? sigma bölü kök endi değil mi? O zaman bunu yazalım yerine. Eşittir.
+
+730
+02:34:17,459 --> 02:34:26,840
+x bar eksi mü bölü, ne oluyor? sigma bölü kök n, değil mi?
+
+731
+02:34:34,260 --> 02:34:35,916
+Bu da şuna eşittir.
+
+732
+02:34:41,652 --> 02:35:08,152
+Eksi z alfa bölü 2 çarpı sigma bölü kök n, hatta dur sırasına göre yazalım. Eksi sigma bölü kök n çarpı z alfa bölü 2, x bar eksi mü sigma bölü kök n çarpı z alfa bölü 2. Bakın.
+
+733
+02:35:09,268 --> 02:35:14,868
+Sonra, bir sonraki eşit, bu mü'yü sağa ve sola atabilirim değil mi?
+
+734
+02:35:15,667 --> 02:35:20,067
+Mü'yü sağa ve sola atabilirim, probability, o zaman ne oluyor?
+
+735
+02:35:20,067 --> 02:35:32,268
+Mü'yü eksi sigma bölü köken, z alfa bölü 2, x bar, sonra ne diyorsun?
+
+736
+02:35:37,363 --> 02:35:48,644
+z alfa bölü 2. Bu nedir peki? Bunu nasıl hesaplarız? Bunun olasılığı neye eşit olmuş oluyordu? Bu neydi? O da eşitli bir eksi alfa.
+
+737
+02:35:50,067 --> 02:36:05,667
+Yani bakın, x, sizin yapmış olduğunuz ölçüm, µ- sigma bölü kök n çarpı z alfa bölü 2 ile µ artı sigma bölü kök n çarpı z alfa bölü 2 arasında olma olasılığı 1-alfa.
+
+738
+02:36:05,667 --> 02:36:12,567
+Yani şunu demek istiyoruz. Biz x barları ölçtük, ortalamayı bulduk.
+
+739
+02:36:14,899 --> 02:36:18,659
+Bu ortalamanın histogramı, pdf'i böyle.
+
+740
+02:36:20,159 --> 02:36:22,759
+Tamam mı? Bu x bar diyelim,
+
+741
+02:36:24,399 --> 02:36:28,000
+Bu mü, mü eksi, şu ne?
+
+742
+02:36:29,000 --> 02:36:36,299
+Mü artı sigma bölü kök n z alfa bölü 2.
+
+743
+02:36:37,500 --> 02:36:38,500
+Bu ne?
+
+744
+02:36:38,995 --> 02:36:48,995
+Burası da µ-sigma bölü kök n z alfa bölü 2. Tamam, şu alan
+
+745
+02:36:54,260 --> 02:37:19,860
+Bu alanda, niye eşit? 1 eksi alfa eşit. Yani, bu şunu gösteriyor. 1 eksi alfa, 100 çarpı 100 olasılık, 1 eksi alfa olasılıkla, senin x barın mesela, bir ölçüm yaptın, x bar burada. Bir ölçüm daha yaptın, x bar burada çıktı.
+
+746
+02:37:20,948 --> 02:37:31,948
+Bir ölçüm daha yaptın, x bar yine bu intervalda çıktı. Bir ölçüm daha yaptın, yine burada çıktı. Tamam mı? x bar.
+
+747
+02:37:31,948 --> 02:37:46,948
+Bir ölçüm yaptın, bu sefer x bar dışında çıktı. Olabilir. Yüzde kaç ihtimalle hesapladığın x bar bu alanın içinde? 1-alfa ihtimalle bu alanın içinde. Tamam mı? Anlaşıldı mı?
+
+748
+02:37:49,523 --> 02:37:55,283
+Hocam, burada alfa değerin nasıl belirleniyor peki? Alfayı sen belirliyorsun.
+
+749
+02:37:55,283 --> 02:38:10,523
+Tamam hocam. Mesela alfa 0.1 dedin mi, %90 ihtimalle bu aralıktadır demek ki. Alfa ne kadar küçük olursa, bu ne oluyor? Büyüyor, genişliyor değil mi? Hatta olasılığı artıyor.
+
+750
+02:38:10,523 --> 02:38:15,523
+Tabii, alfayı mümkün olduğunca küçük yapmak lazım, aralık falan değil mi?
+
+751
+02:38:15,523 --> 02:38:15,724
+Evet.
+
+752
+02:38:15,827 --> 02:38:38,827
+O aralıkta olsun. Olay bu yani. Buna biz şey diyoruz, transform diyoruz, tamam mı? Yani burası ne olmuş oluyor? Bakın, confidence interval diyoruz. Bunun adı şu, A. Bu ne? Bu da B. O zaman ne oluyor? Probability.
+
+753
+02:38:39,827 --> 02:38:46,227
+A küçüktür x bar, küçüktür b arasında olma ihtimali neymiş? 1-arifaymış.
+
+754
+02:38:48,027 --> 02:38:49,027
+Tamam mı?
+
+755
+02:38:49,627 --> 02:38:55,227
+Dolayısıyla, a, b, hani confidence intervalı da ya bu.
+
+756
+02:39:01,108 --> 02:39:03,987
+Şimdi o zaman şunu şu şekilde yazabiliriz.
+
+757
+02:39:05,308 --> 02:39:17,608
+µ- sigma bölü kök n z alfa bölü 2 µ artı sigma bölü kök n z alfa bölü 2
+
+758
+02:39:18,608 --> 02:39:22,608
+Bu ne olmuş oluyor? Confidence interval olmuş oluyor.
+
+759
+02:39:28,852 --> 02:39:31,852
+Ama ismi ne bunun? Z procedure.
+
+760
+02:39:38,995 --> 02:39:53,995
+Niye Z? Çünkü Z'yi kullanarak yaptık, ismi öyle kalmış. Birisi de yapmış Z demiş, ondan sonra herkese Z demişti, Z procedure'du. Tamam mı? Standart deviation. Standart deviation genelde Z ile gösterildiği için Z procedure deniyor.
+
+761
+02:39:57,203 --> 02:39:59,203
+Sorusu olan var mı?
+
+762
+02:39:59,203 --> 02:40:00,000
+Hocam, ben şeyi soruyorum.
+
+763
+02:40:00,000 --> 02:40:10,000
+Hocam, mesela dediğiniz gibi, mesela diyelim ki elimizde bir tane sample var. Bu her bir sample için, hocam, şey hesapladık, expectation değerini hesapladık.
+
+764
+02:40:10,000 --> 02:40:21,000
+Fazla diyelim ki, bunun yarısı, o bir eksi alfayla gösterdiğimiz ağların içine girdi, hocam, diğer kısımları da kalan bölümde istenin aralık dışında oldu. Bu ne demek oluyor hocam biz bu?
+
+765
+02:40:28,000 --> 02:40:42,200
+O zaman ne oluyor? O interval için, senin mesela aralığının yarısı, oradakta yarısı biçimde demek, alfadan 0.5 olmak demek, bileksiz 0.5, 0.5. Ve onun için o aralığın değeri ne? Z alfayı bulabilirsin işte.
+
+766
+02:40:42,200 --> 02:40:47,920
+Tamam hocam.
+
+767
+02:40:47,920 --> 02:40:55,360
+Şimdi şöyle, bununla ilgili kitapta bir örnek var.
+
+768
+02:40:55,987 --> 02:41:06,387
+O örneği yapalım isterseniz. Çok basit bir şekilde. Diyor ki, soru. Kitaptan yazıyorum yani. Ondan sonra bitireceğiz.
+
+769
+02:41:06,387 --> 02:41:12,299
+Şöyle yapalım. Soru. Questions.
+
+770
+02:41:16,468 --> 02:41:23,468
+Kitaptan bakayım da nasıl oluyor. Şimdi bakalım.
+
+771
+02:41:29,780 --> 02:41:31,780
+Körünün bir,
+
+772
+02:41:38,932 --> 02:41:43,932
+...propülasyon mean...
+
+773
+02:41:44,932 --> 02:41:45,932
+...bazıda...
+
+774
+02:41:48,932 --> 02:41:51,932
+...sample...
+
+775
+02:41:53,932 --> 02:41:56,932
+...sample of measurements.
+
+776
+02:42:01,587 --> 02:42:04,587
+Meşörmans
+
+777
+02:42:05,887 --> 02:42:11,788
+Ne meşörmans? Bu, 2.5
+
+778
+02:42:15,860 --> 02:42:17,420
+7.4
+
+779
+02:42:20,755 --> 02:42:25,115
+8.0
+
+780
+02:42:31,987 --> 02:42:33,987
+4.5
+
+781
+02:42:36,187 --> 02:42:38,187
+7.4
+
+782
+02:42:38,487 --> 02:42:39,987
+9.2
+
+783
+02:42:39,987 --> 02:42:44,987
+Şimdi Türkçe'de ne yapıyoruz? Nokta yerine virgül kullanıyoruz değil mi?
+
+784
+02:42:50,987 --> 02:42:51,987
+Evet.
+
+785
+02:42:51,987 --> 02:42:54,987
+Nokta yerine virgül kullanıyoruz. Doğru değil mi?
+
+786
+02:42:56,987 --> 02:42:58,443
+Şimdi bakın işte bak.
+
+787
+02:42:58,772 --> 02:43:22,636
+Zamanında birisi bunu belirlemiş. Şimdi ben bunu virgüllü yazsam nasıl olur? Bak şimdi size göstereyim mi? 2,5,7,4,8,0,4,5,7,4,9,2. Ne anladınız şimdi?
+
+788
+02:43:23,219 --> 02:43:26,219
+Hocam karıştı yani, hepsi tek bir sayı gibi oldu şu an.
+
+789
+02:43:26,219 --> 02:43:35,219
+Değil mi? Sanki tek sayılar integer sayılarına dönüştü. Yani biraz da şey de bağlı, kullandığınız notasyonlar da çok önemli.
+
+790
+02:43:35,219 --> 02:43:42,219
+Şimdi ben burada Türkiye'deki, ülkemizdeki bu notasyon, yanlış notasyon, bunun değiştirilmesi lazım.
+
+791
+02:43:43,028 --> 02:43:57,675
+Bir kişinin deyip, kardeşim bu yanlış, değiştirmesi lazım. Bizim etimiz ne, budumuz ne? Bunu biz size söylüyoruz. Gözünüz açık olsun, yarın bir gün biriniz olur ya, der ki kardeşim bu bir...
+
+792
+02:43:57,716 --> 02:44:11,716
+karmaşaya sebep oluyor matematikte. Öğrenciler zorluk çekiyor. Bilim bu şekilde üretilmez. Artık virgül yerine, nokta, nokta yerine virgül kullanacağız sayıları reprezent ederken demesi lazım. Neyse.
+
+793
+02:44:11,716 --> 02:44:14,716
+Şimdi,
+
+794
+02:44:27,379 --> 02:44:29,099
+Normal Distribution.
+
+795
+02:44:37,747 --> 02:44:39,747
+Mesurma devise garantisi.
+
+796
+02:44:53,843 --> 02:44:59,443
+garantiz, ne yapıyormuş, et standart deviation.
+
+797
+02:45:06,579 --> 02:45:14,979
+SIGMA 2.2, ok? 2.2.
+
+798
+02:45:19,412 --> 02:45:39,412
+Şimdi, ne yapacağız? Sample size kaç? Mesela şimdi bu örnekler tamam mı? Mesela bu işte bir insanın işte ne bileyim işte görünüşündeki bir şey olabilir.
+
+799
+02:45:41,363 --> 02:46:08,363
+İki parmağının birbirine oranı da olabilir. Bilmiyorum işte, bir ölçüm tamam mı? Ortalama değeri olarak düşünün. Bir ölçmüşsünüz, 2.5 çıkmış. Bir ölçmüşsünüz, 7.4 çıkmış. Bir daha ölçüm yapmışsınız, 8.0 çıkmış. 8 çıkmış. Bir ölçüm yapmışsınız, 4.5. Bir ölçüm yapmışsınız, 7.4. Bir ölçüm yapmışsınız, 9.2 bulmuşsunuz. Şimdi bu gerçekten güvenilir bir ölçümü bunlar.
+
+800
+02:46:09,043 --> 02:46:10,543
+Tamam, onu bulacağız.
+
+801
+02:46:12,644 --> 02:46:15,043
+What is the sample size?
+
+802
+02:46:16,043 --> 02:46:17,543
+This is the sample.
+
+803
+02:46:24,628 --> 02:46:37,168
+Bu, bu, 2.5, 7.4, 8.0, 4.5, 7.4, 9.2.
+
+804
+02:46:37,688 --> 02:46:43,408
+Bu, bu, 6.6.
+
+805
+02:46:43,888 --> 02:46:51,468
+Bu, 6.
+
+806
+02:46:51,891 --> 02:47:09,371
+Bu, 1 over 6, sum, e from 1 to n, 1 to 6, xi, aslında bu 6.5, ok? Bu, bu, iyi.
+
+807
+02:47:22,260 --> 02:47:47,860
+level, 1 minus alpha means confidence level of, let's say, 1 minus alpha is equal to 0.95. So 95 percent, your measurement is trustable. Then we need to, we need alpha is equal to what? 0.
+
+808
+02:47:49,172 --> 02:47:50,172
+0.5.
+
+809
+02:47:50,172 --> 02:47:52,172
+So, and,
+
+810
+02:47:52,172 --> 02:47:55,172
+what is alpha 2?
+
+811
+02:47:55,172 --> 02:48:00,172
+And, alpha over 2 is equal to 0.025.
+
+812
+02:48:00,172 --> 02:48:01,172
+Okay.
+
+813
+02:48:01,172 --> 02:48:06,172
+And, we are trying to look at the quantile.
+
+814
+02:48:06,172 --> 02:48:08,172
+What we will do?
+
+815
+02:48:08,172 --> 02:48:12,172
+We are trying to find the quantile.
+
+816
+02:48:12,172 --> 02:48:15,172
+So, the quantile
+
+817
+02:48:18,227 --> 02:48:26,787
+We will try to find the quantile.
+
+818
+02:48:28,787 --> 02:48:37,907
+We learned the quantile, like q quantile 0.025.
+
+819
+02:48:37,907 --> 02:48:40,307
+Actually this is equal to
+
+820
+02:48:40,691 --> 02:49:06,443
+Z'0.025, ok? Ve diğer quantile, 0, ama bu 1-0.975, ve bu 0.975, ve bu 0.975, ve bu 0.975.
+
+821
+02:49:06,675 --> 02:49:29,876
+0,25. So these are the quantiles. You can find this quantiles value from the table. So we have the table. So this is the probability. So for this probability, this is the probability. So for this probability, do you remember? Look at here.
+
+822
+02:49:31,252 --> 02:49:58,443
+Bu, bu
+
+823
+02:49:58,772 --> 02:50:05,772
+Bu da
+
+824
+02:50:09,811 --> 02:50:25,100
+Bir second.
+
+825
+02:50:29,075 --> 02:50:55,884
+Kuantayların tanımını hatırlıyorsunuz değil mi gençler? Neydi? Fx'di değil mi? Probability z, bir tane değer, so this is the value, 0.025 is equals to 0.025.
+
+826
+02:50:56,628 --> 02:51:15,228
+975, or probability z less than minus z 0.025.
+
+827
+02:51:15,228 --> 02:51:24,028
+This is a random variable, okay, z. So these are called constant. So this is equal to 0.025.
+
+828
+02:51:26,100 --> 02:51:30,100
+Ya.
+
+829
+02:51:33,587 --> 02:51:58,927
+0.21 minus alpha over 2, 0.025. Okay, so what is this value? I want to find this one. I want to find this one. What are these values? If I find it, actually same, you see here only the negative part. How can I find it? So this is equal to?
+
+830
+02:52:00,595 --> 02:52:03,195
+Fx, sorry, Fz,
+
+831
+02:52:06,548 --> 02:52:14,708
+Z 0.025 is equal to 0.975.
+
+832
+02:52:14,708 --> 02:52:21,548
+And so, Z 0.025 is equal to minus
+
+833
+02:52:30,932 --> 02:52:43,412
+Ok, Fz minus 1, this is the inverse CDF. Inverse CDF.
+
+834
+02:52:46,932 --> 02:53:12,748
+may not be in closed form available, then we use table in which for many
+
+835
+02:53:13,587 --> 02:53:17,147
+Values of input
+
+836
+02:53:20,647 --> 02:53:34,647
+Bir second.
+
+837
+02:53:20,435 --> 02:53:43,435
+İntro
+
+838
+02:53:45,843 --> 02:54:11,043
+So, you can find, you know the input, so you look at the input value and then from the table you can find out the output value. So, from here you estimate this value. So, this is this. Stand, you say that, Bayes, compute, let us define this. What are these values?
+
+839
+02:54:12,531 --> 02:54:20,523
+Let me tell you, from the table, from the table, the zat, uh...
+
+840
+02:54:24,371 --> 02:54:44,371
+Evet, z 0.025 is equal to, okay, 1.96. 1.96. You find this from table.
+
+841
+02:54:48,051 --> 02:55:12,932
+I will show you what that table is. And then x bar, plus minus 1, sigma divided by square root n, z alpha over 2, actually this is x bar, the average is 6.5 plus minus, sigma means 2.2.
+
+842
+02:55:13,843 --> 02:55:25,843
+Divided by square root of the number of samples n. And what is this value? This value is 1.96.
+
+843
+02:55:30,772 --> 02:55:57,644
+1.96. Okay? So now, 6.95 plus minus 1.76 means that x bar is 95% between
+
+844
+02:56:03,252 --> 02:56:14,452
+0.5-1.76 ve 0.5-1.76.
+
+845
+02:56:20,084 --> 02:56:30,644
+Yani, in other words, x bar is 95% between
+
+846
+02:56:33,683 --> 02:56:44,183
+4.74 ve 6.726, 8.26.
+
+847
+02:56:49,971 --> 02:56:50,971
+Ok?
+
+848
+02:56:59,476 --> 02:57:11,476
+Şimdi kitapta tablo 4 var, onu bulayım, sizinle onu göstereceğim. Size onu göstereceğim, paylaşım yapayım da, tablo 4 neredeydi?
+
+849
+02:57:15,796 --> 02:57:33,995
+Şu müydü? Değil. Değil. Bu da değil. İşte şu. Şimdi biraz küçük oldu ama şöyle yapalım. Tamam. Şimdi bir ekran paylaşımı yapacağım.
+
+850
+02:57:38,067 --> 02:57:38,923
+Şimdi...
+
+851
+02:57:41,940 --> 02:57:43,884
+[öğrenci], evet.
+
+852
+02:57:48,371 --> 02:58:12,371
+Şimdi, görüyorsunuz, Z değeri, Z değeri 0 iken, bu QZ demek, yani CDF'in 0 olması durumu, oradaki değer 0.5 bakın, Z artıyor, olasılık da artıyor. Z sonsuza giderse 1'e gider değil mi? Bak, 3.9'a yaklaşık 1 oluyor zaten.
+
+853
+02:58:15,028 --> 02:58:29,528
+Z'ye bakıyorsunuz, yine bu şekilde. Bunlar da bizim probability'lerimiz, interval'larımız. Tamam mı? Bak 0.0, 0.0, yüzde kaç ise bu şekilde.
+
+854
+02:58:29,528 --> 02:58:39,528
+Buradan bakarak o ilgili olasılıkları hesaplıyoruz. Mesela bizde kaçtı? 0.025.
+
+855
+02:58:41,940 --> 02:58:43,940
+1.96'yı da.
+
+856
+02:58:48,948 --> 02:59:14,747
+Yani burası bir çeşit CDF'in şeyi, kendisi. Bu da alfası, aralık. Bu ne oluyor? 0.01, yani alfa bölü ikisi 0.05 olmuş oluyor. Biz ise şuydu bakın, değil mi? Ve buradaki şey şu,
+
+857
+02:59:14,899 --> 02:59:26,899
+Tablo'dan bunu seçiyoruz ve yapıyoruz. Ben bir şey getireyim, örneğe gidelim. Örnek neredeydi ya? Sayfa kaçtaydı?
+
+858
+02:59:26,899 --> 02:59:38,899
+Evet. Buraya geçtik, şuradayız işte. Student T değil.
+
+859
+02:59:44,724 --> 02:59:45,224
+Huh.
+
+860
+02:59:51,028 --> 03:00:03,028
+Buradayız işte, şunu yaptık. Tamam, şuraya kadar geldik arkadaşlar. Burası kaç? 923. 923 değil mi?
+
+861
+03:00:07,156 --> 03:00:11,156
+Confidence interval for the difference between two means.
+
+862
+03:00:13,156 --> 03:00:15,156
+Buraya kadar sorumlusunuz.
+
+863
+03:00:17,156 --> 03:00:19,156
+Tamam mı arkadaşlar?
+
+864
+03:00:20,156 --> 03:00:21,156
+Sayfa kaç oluyor?
+
+865
+03:00:21,156 --> 03:00:25,156
+Sayfa 252'ye kadar sorumlusunuz.
+
+866
+03:00:25,156 --> 03:00:29,156
+Page 252.
+
+867
+03:00:32,156 --> 03:00:34,156
+Sorusu olan var mı? Burada artık bitiriyorum.
+
+868
+03:00:37,459 --> 03:00:39,459
+Arkadaşlar, geçmiş olsun.
+
+869
+03:00:41,459 --> 03:00:42,459
+Teşekkürler hocam.
+
+870
+03:00:42,459 --> 03:00:44,459
+Yani burada bitiriyoruz.
+
+871
+03:00:44,459 --> 03:00:59,459
+Yani buradaki şey şu, şu örnekte olduğu gibi, işte şu aralıkta %95 interval aralığını, %90 interval aralığı daha da büyük çıkacak. %100 interval aralığı zaten kendisi.
+
+872
+03:00:59,487 --> 03:01:24,487
+Ya da bu aralığı bulmuş oluyoruz. Bak şu %95 interval aralığı bu. %90 intervalı biraz daha büyük olacak. 6 ile 10 arasında değişiyor olacak. Tamam mı? %90. Çünkü azalıyor. %100 intervalı ne olmuş oluyor? Onun o ise kendisi 6.5. Böyle mi oluyor?
+
+873
+03:01:26,835 --> 03:01:43,835
+Öyle değil, ben şimdi sizi şey yapayım dedim ama hiç takip etmiyorsunuz beni. Şimdi interval, bu aralığı büyütürsem, bu aralıkta olma ihtimali ne olur? Artar mı, azalır mı?
+
+874
+03:01:43,835 --> 03:01:45,835
+Artar hocam.
+
+875
+03:01:45,835 --> 03:01:52,835
+Bunu küçültmek demek ne demek? Şunu yüzde doksan beşi küçültmek demek, yani sıfır.
+
+876
+03:01:53,363 --> 03:01:55,363
+Demek ne demek?
+
+877
+03:01:55,363 --> 03:01:57,363
+Ülke olasılık.
+
+878
+03:01:57,363 --> 03:02:05,363
+Şöyle buraya geçiriyoruz değil mi? Küçülüyor. Arasındaki fark küçülürse o aralıkta olma ihtimalle ne olur azalır. Değil mi?
+
+879
+03:02:05,363 --> 03:02:07,363
+Evet hocam.
+
+880
+03:02:07,363 --> 03:02:11,363
+Olay bu. Tam tersi yani. Şu ilk söylediğimi.
+
+881
+03:02:11,363 --> 03:02:15,363
+Ben beklerdim yani, hocam yanlış olmadı mı falan gibi.
+
+882
+03:02:16,115 --> 03:02:34,115
+Neyse, en azından şimdi tersten öğrenmeyle işe öğrenmiş olduk. Kısacası, bu aralığı biz belirliyoruz. Diyoruz ki, örnek veriyorum, Twitter örneğini vermiş miydim size hiç?
+
+883
+03:02:34,115 --> 03:02:38,115
+Hocam, vermediğiniz hocam.
+
+884
+03:02:39,059 --> 03:02:44,279
+Şimdi mesela bir tane Twitter var, bir yazılmış ama Twitter'ı yazan kişi belli değil.
+
+885
+03:02:45,279 --> 03:02:45,679
+Tamam mı?
+
+886
+03:02:46,920 --> 03:02:48,179
+Yazan kişi belli değil.
+
+887
+03:02:48,599 --> 03:02:54,539
+Çünkü gitmiş tahta e-mail ikanıyla Twitter'da yorumlar yapıyor.
+
+888
+03:02:55,579 --> 03:02:56,019
+Tamam mı?
+
+889
+03:02:57,599 --> 03:03:06,659
+Bu Twitter'da yorum yapan kişinin alı olma ihtimali kaçtır diye sorsak esasında şöyle diyorum.
+
+890
+03:03:07,023 --> 03:03:14,224
+%80 Ali'dir ya da %90 Veli'dir ya da Mehmet'tir değil mi?
+
+891
+03:03:14,224 --> 03:03:22,623
+Interval veriyoruz. Oralıkta bir interval var. Nasıl? Bir interval için bir ihtimal veriyoruz. Bu da öyle.
+
+892
+03:03:22,623 --> 03:03:30,956
+Bir şey tahmin ediyoruz. Bu x bar bizim tahminimiz. Bu tahminimiz şu aralıkta %95 ihtimaliyle bu aralıkta.
+
+893
+03:03:32,275 --> 03:03:44,635
+Aralığı büyük tutarsak %100 ihtimalle olur. Ama aralık ne kadar küçükse ihtimalde o kadar azalıyor ama önemli olan şey o aralığın bize vermiş olduğu konfidens.
+
+894
+03:03:44,635 --> 03:03:53,035
+Ben diyorum ki, 4 birimlik bir fark benim için güvenilir.
+
+895
+03:03:53,327 --> 03:04:17,327
+O zaman ne oluyor? 4.74 ile 8.74 arası güvenilir olduğu için, %95 o aralıktaysa, algoritma o aralıkta üretiyorsa sonucu, tamam mı? Benim için güvenilir. Yani confidence interval, senin trust ettiğin interval, 474 ile 8.26 arası. %95 güvenirsin buna. Tamam mı? Olay bu.
+
+896
+03:04:20,564 --> 03:04:42,564
+Arkadaşlar, burada dersi bitiriyorum. Kendinize çok iyi bakın. Hakkınızı helal edin. Elimden gelen en iyisini yapmaya çalıştım. Umarım sizleri mutlu edebilmişimdir. Yani sizlere bir şey öğretebilmişimdir. Umarım faydalı olmuşumdur sizler için.
+
+897
+03:04:45,363 --> 03:05:03,363
+Burada dersimiz bitiyor. Başka bir ders alabilir misiniz, alacak mısınız bilmiyorum. Nasip, kısmet yine her şey. Başka derslerde belki yine görüşürüz. Hepinize çok teşekkür ederim. Derse geldiniz, katıldınız, dinlediniz. Bayağı da yazdık.
+
+898
+03:05:03,363 --> 03:05:06,363
+Teşekkürler hocam. Siz hakkınızı helal edin. Teşekkür ederiz hocam.
+
+899
+03:05:06,363 --> 03:05:10,363
+Benim hakkım hepinize helal. Bence şöyle bir şart koşayım.
+
+900
+03:05:10,363 --> 03:05:11,363
+Teşekkür ederim hocam.
+
+901
+03:05:11,731 --> 03:05:13,731
+Hakkı selal edin.
+
+902
+03:05:13,731 --> 03:05:28,731
+Helal olsun, ben hepinizi seviyorum. 257-258 sayfa yazmışız galiba. Evet, 267 sayfa yazmışız. İyi yazmışız yani, bilmiyorum.
+
+903
+03:05:28,731 --> 03:05:36,731
+İnşallah bunların hepsi sizlere faydası olur. Daha öğreneceğiniz çok şey var.
+
+904
+03:05:37,811 --> 03:06:04,811
+Sizlere şeyi anlatmış mıydım? Yani olasılık temel, olasılığın üstüne istatistik görüyorsunuz, istatistiğin üzerine makine öğrenmelerini görüyorsunuz, onun üzerine istatistik üzerine bilgi teorisini öğreniyorsunuz, bilgi teorisinin üzerine makine öğrenmesini kullanıyorsunuz, makine öğrenmesinin üzerine.
+
+905
+03:06:05,363 --> 03:06:21,763
+yapay zeka diye çıkıyor. Dolayısıyla izleyeceğiniz yol bu. Eğer sorularınız olursa ille ders sonu dışında da yani telefon numaram var zaten siz de WhatsApp grubundan biliyorsunuz.
+
+906
+03:06:22,067 --> 03:06:34,067
+Benim için sorun değil. Benimle iletişime geçip sorularınızı sorabilirsiniz. Yani ille bugün de değil yani, bir yıl sonra da sorabilirsiniz. Hocam ben ise sizin öğrenciniz için şu, şu, şöyle bir şey var gibi sorabilirsiniz.
+
+907
+03:06:34,067 --> 03:06:47,067
+Yardımcı olmaya çalışırım. Hepinize tavsiyem, ortalamanızı yüksek tutun. Derslerinizde yüksek notlarla geçmeye çalışın.
+
+908
+03:06:47,987 --> 03:06:56,987
+Yüksek lisans ve doktora yapın ve makale yazmaya başlayın. Lisansta makale nasıl yazılır öğrenin. Makale yazın.
+
+909
+03:06:57,987 --> 03:07:10,987
+Ve iyi bir araştırmacı olun. İyi bir mühendis olun. İyi bir mühendis, kod yazan mühendis değildir. Zaman gelecek. Artık kodu, artık bilgisayar yapay zeka da kodu yazmaya başlayacak.
+
+910
+03:07:16,595 --> 03:07:41,835
+Değerli olanlar, işte bu tür şeyleri bilenler olacak. Yapay zekaya, makine öğrenmesi, algoritmalar hakim olan insanlar değerli olacak. Şimdiden hazırlığınızı yapın. Bir de size son bir tavsiyem, bir bilgisayar mühendisi olarak 40 yaşına kadar çalışabilirsiniz. 40 yaşından sonra biraz zor ama işinizde çok uzman olursanız,
+
+911
+03:07:42,144 --> 03:08:00,144
+Çalışmaya devam edersiniz. Genelde şirketlerde 40 yaşından sonra insanlar bu yazılım yaptıkları için sürekli akıl sağlıklarını yitiriyor çoğu ve bırakıyorlar mesleği.
+
+912
+03:08:02,144 --> 03:08:07,144
+40 yaşından sonra çalışmaya devam edenlerinde çoğu şirket sahibi.
+
+913
+03:08:08,084 --> 03:08:31,584
+Dolayısıyla sizlere tavsiyem, önünüzde çok az bir zaman var. 40 yaşına kadar paranızı kazanıp belli bir düzeye gelmiş olmanız lazım. Zamanınız kısa, okulu uzatmayın, hemen iş hayatına atılın, paranızı kazanın ve kendinizi geliştirin. 40 yaşından sonra da çalışacak şekilde kendinizi geliştirin. O yüzden bunlar önemli.
+
+914
+03:08:32,275 --> 03:08:42,275
+Şu andaki teknoloji çok hızlı ilerliyor, şu anda daha da hızlı ilerliyor. Artık yapay zeka da işin içine girince birçok problemler artık çözülüyor.
+
+915
+03:08:42,275 --> 03:08:56,275
+Hiç tahmin edemezdik. Artık şu anda internet üzerinden ders anlatıyoruz. Her şey değişecek. Şu anda başladı, okul değişti, yaşam değişecek, her şeyimiz değişecek.
+
+916
+03:08:58,543 --> 03:09:25,884
+Yüzyılda bir her şey değişir, tamam mı, insanlarda, insanlıkta? Biz kaç yılındayız? 2019'dayız değil mi? Covid-19 çıktı. Peki 1919'da ne oldu? Biz vatan savaşı veriyorduk. O zaman da savaş vardı. 1819'da ne vardı? O zaman da savaş vardı. 1719'da da vardı, 1619'da da vardı, 1519'da da. Böyle sürekli her şey yediden tekrarlar.
+
+917
+03:09:26,388 --> 03:09:47,728
+Periyodiktir. Yani şu anda yeni bir başlangıçtasınız, yeni bir yüzyılın başlangıcındasınız. Yani sizler 1919'da yaşayan insanların yaşadığı şeyleri yaşıyorsunuz. 1918-19'da da virüs salgını vardı, şu anda da var. 2019'da da var, 219'da da olacak.
+
+918
+03:09:50,515 --> 03:10:12,015
+Bizler aynı şeyleri yaşıyoruz. Tamam mı? Ve bu şu anlama geliyor. 1919'daki insan düşün, 1965'te aya, insan ayak basıyor bak. 20-65. Kaç yıl var arada? 40 yıl var. 45 yıl, değil mi?
+
+919
+03:10:14,291 --> 03:10:34,992
+Atatürk'ün el yazısıyla, Atatürk'ün el yazısıyla aldığı notlar var. Ne diyor Atatürk? İstikbal havadadır deniyor, göklerdedir. Atatürk'ün kendi notu var. Diyor ki, insanoğlu Ay'a ayak basacak, insanoğlu Ay'a gidecek, Mars'a gidecek diye. Atatürk'ün kendi notları var.
+
+920
+03:10:38,644 --> 03:11:05,644
+1919'dan geleceği görüyorum. O bilgi var yani. Şimdi size de ben şunu söylüyorum. Şu an önünüzde bir 10 yıl var, 10 yıl içinde hayat dramatikli, yani çok değişik olacak. Şu anki yaşam, üniversiteye kadar yaşadığınız hayatla, bundan sonra yaşayacağınız hayat tamamen birbirinden farklı olacak.
+
+921
+03:11:06,772 --> 03:11:13,772
+İnterneti kullanamayan zaten yaşayamayacak. İhtiyacını gideremeyecek. Bunun gibi düşünün.
+
+922
+03:11:15,772 --> 03:11:22,772
+Ve meslek de artık hep olasılık, istatistik, makine öğrenmesi, bilgi teorisi bu alanlarda olacak.
+
+923
+03:11:22,772 --> 03:11:28,772
+Yazılım çok önemli. Bak yazılım önemsiz demiyorum. Çok önemli. Ama bunları bilmezsen...
+
+924
+03:11:30,004 --> 03:11:44,004
+Sadece bir iş gücüsü. Ama bunları bilirsen üreticisin. Araştırma yap. Yeni bir şeyler bulmak çok güzel bir şey. Yani farkındalık yaratırsın. Tamam mı?
+
+925
+03:11:44,004 --> 03:11:53,004
+Yani her zaman iletişime açın. Benimle iletişime geçebilirsiniz. Whatsapp üzerinden, telefondan ya da e-mail'le.
+
+926
+03:11:53,907 --> 03:12:00,667
+Yani ille dersle alakalı değer değil, yani araştırma olur, bilmem ne olur, aklınıza başka fikirler olur.
+
+927
+03:12:00,667 --> 03:12:06,547
+Ve herkese şunu tavsiye ediyorum, bir tanesi kendi startup şirketinizi kurun.
+
+928
+03:12:06,547 --> 03:12:12,787
+Kendi işinizi kurun. Başka bir yerde çalışmak yerine kendi işinizi yapın.
+
+929
+03:12:12,787 --> 03:12:18,307
+Tamam mı? Çünkü artık gelecek buna gidiyor.
+
+930
+03:12:21,652 --> 03:12:29,211
+Gençler, arkadaşlar, neyse ben yine uzattım, uzatacağım kadar. Kusura bakmayın.
+
+931
+03:12:29,211 --> 03:12:34,371
+Yok hocam, estağfurullah hocam. Böyle yönlendirmeleriniz çok güzel oluyor hocam bizim gelişimiz için.
+
+932
+03:12:34,371 --> 03:12:48,092
+Tamam ama şöyle de söyleyeyim, ben de hiçbir şeyim, tamam mı? Ben de öyle çok böyle bir şey değilim. Ben de hiçbir şeyim ama kendi hayat tecrübemlerinden sizlerle paylaşıyorum. Önemli olan sizlerin…
+
+933
+03:12:48,788 --> 03:13:01,788
+İyi bir şeyler yapıp, siz de sizden sonrakilere. Sadece beni unutmayın, benden memnun olup, benim için en önemli şey bu. Tamam mı? Ben başka bir şey istemiyorum sizden.
+
+934
+03:13:01,788 --> 03:13:14,444
+Hepinizi çok seviyorum. Dersime katıldığınız için hepinize çok teşekkür ediyorum. Umarım güzel bir, bence güzeldi bir dönemdi. Başka derslerde umarım karşılaşırız.
+
+935
+03:13:14,484 --> 03:13:35,484
+Kendinize çok iyi bakın. Final sınavı da yine seçmeli olacak. Ben diyorum ki 20 tane soru olsun, 25 tane olmasın, 20 soru olacak. Seçmeli olacak. Her bir soruya 5 dakika dersek 100 dakikada süre olacak. İnşallah kimse bütü kalmasın lütfen. Bütü klasik yapacağız, mecburen klasik yapacağız. Tamam mı?
+
+936
+03:13:36,628 --> 03:13:37,628
+Tamam hocam.
+
+937
+03:13:37,628 --> 03:13:51,628
+Bir tek kalmayın. İyi çalışın. Finalde geçin. Ki zaten çoğunuzun ortalaması çok yüksek. Bugün USİ'ye girip notları sizle paylaşıyorum. Tamam hadi bu son size vedalaşmam. Kendinize iyi bakın.
+
+938
+03:13:51,628 --> 03:13:53,628
+Teşekkürler hocam. Çok teşekkürler.
+
+939
+03:13:53,628 --> 03:13:54,628
+Teşekkürler hocam.
+
+940
+03:13:54,628 --> 03:13:55,628
+İyi günler hocam.
+
+941
+03:13:55,628 --> 03:13:56,628
+İyi günler.
+
+942
+03:13:56,628 --> 03:13:57,628
+Sağ olun.
+
+943
+03:13:57,628 --> 03:13:58,628
+İyi bakın.

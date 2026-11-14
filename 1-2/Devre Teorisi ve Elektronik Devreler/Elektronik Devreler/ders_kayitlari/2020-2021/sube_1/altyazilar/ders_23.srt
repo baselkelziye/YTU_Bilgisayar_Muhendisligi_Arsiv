@@ -1,0 +1,215 @@
+1
+00:09:29,940 --> 00:09:31,580
+Evet arkadaşlar, sesim geliyor mu?
+
+2
+00:09:37,331 --> 00:09:38,831
+Geliyor hocam.
+
+3
+00:09:39,312 --> 00:09:54,951
+Tamam. Şimdi kısaca soruları anlatacağım ama onu da önce bir duyuru yapalım. Projelerinizin için son tarihi 15 Haziran olarak belirledik. Bunu burada olmayan arkadaşlarımızla da paylaşırsınız. Biz duyuru olarak da koyacağız piyazaya.
+
+4
+00:10:00,628 --> 00:10:06,108
+Bir şey sorusu olan, süreçle alakalı bir şey olan varsa şu an sorabilir.
+
+5
+00:10:12,244 --> 00:10:29,524
+Tamam, soru yok diyorum o zaman. Şimdi soradan başlayalım. Yine ilk sorumuz sentez sorusu olacak. İkinci sorumuz analiz sorusu olacak şekilde yapılacak. Sorular, yani bu lap baya basit aslında. Sizden CMOS ile bir NAT logic kapısı yapmanız isteniyor.
+
+6
+00:10:38,580 --> 00:10:41,580
+Şunların neresi olduğunu göstermeniz lazım.
+
+7
+00:10:43,580 --> 00:10:48,580
+Daha sonra çizdiğiniz şey, buraya resmi, fotoğrafı çekip yapıştırabilirsiniz.
+
+8
+00:10:50,580 --> 00:10:53,580
+Daha sonra proteste koyacaksınız.
+
+9
+00:10:53,580 --> 00:10:56,580
+Vsourced DC'yi 5 olarak ayarlayacaksınız arkadaşlar.
+
+10
+00:10:56,580 --> 00:10:59,580
+Ve bunları eklemeniz gerekiyor.
+
+11
+00:10:59,580 --> 00:11:01,420
+Ekran çıksını yapıştırıyorsunuz.
+
+12
+00:11:02,100 --> 00:11:07,860
+Sonra, özellikleri şu şekilde olan bir kare dalga bağlıyorsunuz.
+
+13
+00:11:09,700 --> 00:11:16,340
+Kare dalga bağladıktan sonraki fotoğrafı ve özellikle girdiğiniz ekranın çıktısını koyuyorsunuz buraya.
+
+14
+00:11:19,019 --> 00:11:27,620
+Tamam, burada prob'lar ekleyeceksiniz ve grafik olarak çizdireceksiniz. Ben size daha önce grafik olarak nasıl yapacağınızı anlatmıştım. Burada yine anlatıyor.
+
+15
+00:11:27,796 --> 00:11:34,516
+Önce probeler ekleyip sonra soldan grafik seçip bir alana işaretleyip probeleri tut sürükle de yapabilirsiniz.
+
+16
+00:11:34,516 --> 00:11:40,076
+Ya da işte burada anlatıldığı gibi trace ekleyebilirsiniz. Yani iki türlü de grafik yapabilirsiniz arkadaşlar.
+
+17
+00:11:40,076 --> 00:11:43,475
+Bunu artık biliyorsunuz, kabul ediyoruz. Çünkü iki defa gösterdik.
+
+18
+00:11:43,475 --> 00:11:53,076
+Tamam. Burada ufak bir yorum var. Nedir? İşte bunun not-cause olduğunu ispat ediniz.
+
+19
+00:11:53,716 --> 00:12:09,716
+Burada tek cümle ile ispat edebilirsiniz. E2 şıkkı biraz şey hani biraz kafa yormamız gereken kısım. Ne olmuş burada?
+
+20
+00:12:09,716 --> 00:12:15,532
+En yüksek gelim sahadan eleman hangisi? Çıkışta en yüksek düşük gelim eleman hangisi olduğunu?
+
+21
+00:12:15,572 --> 00:12:23,572
+Girişlerde düşük ve yüksek, şöyle düşünün. Girişlerde uygulayacağınız nedir? Low ya da High uygulayabilirsiniz. Çıkışta da Low'ya High görebilirsiniz.
+
+22
+00:12:23,572 --> 00:12:31,572
+Değil mi? Bir inverter yaptığınızı düşünürseniz. Dolayısıyla bu devre durumları için iki şekilde anlatmanız lazım.
+
+23
+00:12:31,572 --> 00:12:41,451
+Yani giriş Low ve giriş High iken çıkışı da hangi eleman çalıştığını, hangi eleman çalışmadığını burada bir şekilde grafikte göstermelizi istiyoruz.
+
+24
+00:12:45,971 --> 00:12:58,432
+Yine benzer şekilde. Burada ölçümle yapman gerekiyor. Ölçüm için burada bazı ölçüm aletleri var. Onları koymanızı ve fotoğrafımızı koymanızı istiyoruz.
+
+25
+00:13:00,611 --> 00:13:12,971
+Devam edelim. Bu da analiz sorusu. Analiz sorusu da oldukça basit. Şimdi size şöyle bir devre verilmiş. Ne yapmanız gerekiyor burada arkadaşlar? İki giriş bir çıkış var. Bir de beslemeniz var değil mi? Neresi olduğunu...
+
+26
+00:13:14,131 --> 00:13:31,971
+Belirlemeniz lazım. Daha sonra girişlere, beslemeye ve çıkışlara gerekli elemanları koymanız gerekiyor. Bunu yaptıktan sonra devrenin çıktısını koyuyorsunuz. Daha sonra ilgili yerlere prop koyarak bu devrenin ne yaptığını bulmanız gerekiyor.
+
+27
+00:13:33,231 --> 00:13:36,571
+Bunun için de şöyle bir tavla verilmiş. Bu aslında bir ipucu.
+
+28
+00:13:37,268 --> 00:13:47,268
+Bu nedir bu arkadaşlar? Bu bir lojik kapıdır denilmiş. Bu bir lojik kapı ise sizin doğrulama tablosunu yapmanız lazım değil mi? Doğruluk tablosunu.
+
+29
+00:13:47,268 --> 00:14:02,268
+Doğruluk tablosunu yapmanız için nedir? İki tane girişiniz var, bir tane çıkışınız var. Şöyle bir hocanız şöyle bir tablo oluşturmuş. Dolayısıyla burada ne yapmanız gerektiği belli. Bu tablodaki ölçümleri alabilmeniz için de nereye program adı gerektiğinizi siz bulacaksınız.
+
+30
+00:14:03,091 --> 00:14:06,951
+Daha sonra ekran açıklamına koyacaksınız. İki durum var burada.
+
+31
+00:14:07,731 --> 00:14:11,192
+İki, üç, üç toplamda dört durum var.
+
+32
+00:14:11,192 --> 00:14:15,291
+Yani, değil mi? Şurada dört durum olduğuna göre, bu durumların hangisi olduğunu
+
+33
+00:14:15,291 --> 00:14:17,951
+ve hepsi için ayrıca açıklık koymanız gerekiyor.
+
+34
+00:14:19,192 --> 00:14:21,991
+Tamam. Daha sonra doğruluk tablasını buldunuz.
+
+35
+00:14:21,991 --> 00:14:26,291
+Doğruluk tablasından bunun hangi logic kapı olduğunu yazabilirsiniz.
+
+36
+00:14:28,291 --> 00:14:30,491
+Bunu yaptıklar sonra zaten bitiyor.
+
+37
+00:14:31,379 --> 00:14:53,000
+Yüklemede yukarıdaki mesajları göremiyorsunuz değil mi şu anda? Onu tekrar paylaşayım. Buradaki arkadaşlar da rica edeceğim. Ben bazen chat'i göremiyorum. Şu birisi yükleme linkini sorduğu zaman, benim attığım şimdi mesajı yeni gelen arkadaşlara göremesi için tekrar yazabilirseniz iyi olur.
+
+38
+00:14:55,079 --> 00:14:58,240
+Tamam. Bunun haricinde sorusu olan var mı?
+
+39
+00:15:09,235 --> 00:15:10,556
+Anlamadığınız bir nokta var mı?
+
+40
+00:15:17,748 --> 00:15:30,748
+Yani çok basit bir laboratuvar. Minimum 80 olmanızı bekliyorum. Ona göre şey yapın. Peki, şu an başlayabilirsiniz arkadaşlar. Kolay gelsin hepinize.
+
+41
+00:15:45,076 --> 00:15:55,135
+Sorular okursan ne vermen gerektiği yazıyor. Sorular dikkatli okursan. Low ve High var. Low ve High'in ne olduğu değeri zaten sorunun içinde yazıyor.
+
+42
+01:50:34,579 --> 01:50:40,059
+Arkadaşlar, sürenize 10 dakikadalar ekledik. 6-10 geçe bitiririz.
+
+43
+02:07:32,564 --> 02:07:37,543
+Arkadaşlar, süreğimiz azalıyor. Raporlarınızı yavaştan yüklemeye başlayın bence.
+
+44
+02:07:41,971 --> 02:07:43,724
+Onu geçebildiyle çünkü.
+
+45
+02:14:32,243 --> 02:14:39,423
+Evet arkadaşlar, sürümümüz tamamlandı. Bu noktadan sonra rapor gönderilme, yenilirlen raporlara bakmayacağız.
+
+46
+02:14:41,643 --> 02:14:49,943
+Bakalım, PDF'in gönderilmeye düzgün çıkmamış. Nasıl bir bozukluk var? Olur, sen bana bir öde olarak gönder.
+
+47
+02:14:54,131 --> 02:14:55,591
+Ben onu elle yükledim.
+
+48
+02:14:59,923 --> 02:15:04,224
+Tamam, hemen şu an gönderirsen ben onu pdf çevirip beklerim.
+
+49
+02:15:10,644 --> 02:15:17,844
+Bunun haricinde başka bir problem olan var mı? Konuşabilirsiniz bu arada. Yazmanıza gerek yok.
+
+50
+02:15:24,115 --> 02:15:25,735
+Evet, bu adresi de gündemeyebilirsin. Aynen.
+
+51
+02:15:37,235 --> 02:15:41,796
+Başka problem olan var mı? Kapatacağım çünkü. Bugün soruların cevaplarını çözmeyeceğiz.
+
+52
+02:15:59,731 --> 02:16:03,652
+Tamam, herhalde başka sorun yaşayan yok diye görüyorum.
+
+53
+02:16:05,211 --> 02:16:07,231
+Bakayım, el kaldıran var mı? Yok.
+
+54
+02:16:12,115 --> 02:16:17,115
+Tamam arkadaşlar, hepinize yap bunları. Görüşmek üzere.

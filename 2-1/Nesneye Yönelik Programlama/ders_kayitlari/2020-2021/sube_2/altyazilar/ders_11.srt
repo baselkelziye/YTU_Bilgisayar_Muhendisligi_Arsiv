@@ -1,0 +1,2127 @@
+1
+00:03:27,955 --> 00:03:30,635
+Hoş geldiniz arkadaşlar. Selamlar herkese.
+
+2
+00:03:45,075 --> 00:04:10,036
+Hepinizin Ramazan'ı da mübarek olsun. Bugünkü uygulamayı da biraz iftara yetiştirmeye çalışacağım ama tabii şöyle bir durum ben İstanbul'dayım. Bana göre 8'e doğru iftar. Sizler farklı şehirlerde olabilirsiniz. O yüzden dersten çıkabilirsiniz. Zorunlu değilsiniz. Sonuna kadar kalmakta, dinlemekte. Nasılsa kaydını alıyor. Daha sonrasında da izleyebilirsiniz.
+
+3
+00:04:10,592 --> 00:04:15,152
+O konuda rahat olun yani bir sıkıntı olmayacak yoklama vesaire de.
+
+4
+00:04:16,932 --> 00:04:19,711
+Aynı şekilde haftada bir labımız var.
+
+5
+00:04:19,912 --> 00:04:21,492
+Onun da saatini değiştireceğiz.
+
+6
+00:04:22,072 --> 00:04:24,211
+7'de oluyordu normalde.
+
+7
+00:04:25,211 --> 00:04:27,271
+Haftaya o labı 9'da yapacağız.
+
+8
+00:04:27,732 --> 00:04:28,592
+Akşam 9'da.
+
+9
+00:04:29,951 --> 00:04:32,451
+Herkes için daha iyi olur herhalde diye düşünüyoruz.
+
+10
+00:04:48,211 --> 00:04:56,991
+Evet, ilk lap sonuçlarınızı gördünüz mü? Şu linkten girip bakabilirsiniz onlara. Tek tek duyuru yapmayacağız bununla alakalı.
+
+11
+00:04:58,572 --> 00:05:00,171
+Ben ekran paylaşmadım tabii.
+
+12
+00:05:14,803 --> 00:05:38,243
+Bu asıl bir linkte. Burada tüm grupların, hocaların, öğrencilerinin işte Lab 1, Lab 2 notlarımızı buraya gireceğiz. Şurada takvimimiz var. Buraya da güncelleriz. Saatlerini falan güncelleyeceğiz. Lab 2'yi mesela değiştireceğiz. 21'de yapacağız haftaya. Bu şekilde bir güncellememiz var.
+
+13
+00:05:40,243 --> 00:05:41,103
+Şimdi
+
+14
+00:05:47,732 --> 00:05:54,392
+Bu haftaki konu kalıtımla ilgili olacak. Kalıtımla anlatacağız. Kalıtımla ilgili bir uygulama olacak.
+
+15
+00:05:55,352 --> 00:06:02,292
+Şimdi siz diğer gruplardan, diğer grupların hocaları sanırım biraz bir başlamış kalıtıma bir şeyler anlatmışlar yine.
+
+16
+00:06:05,332 --> 00:06:07,632
+Tamam tabii paylaşayım linki de.
+
+17
+00:06:11,668 --> 00:06:14,048
+Avastis sayfamda da var. Gerçi bu.
+
+18
+00:06:15,848 --> 00:06:18,608
+Hatta ders dokunmanlarını bile şey yapmayı düşünüyorum.
+
+19
+00:06:18,848 --> 00:06:28,207
+Bir driver linki yapıp işte bir, iki uygulama, bir uygulama iki şeklinde oraya böyle klasörlere dosyaları koyarsak daha iyi olur gibime geliyor.
+
+20
+00:06:29,048 --> 00:06:31,728
+Daha değerli toplu olur Avastis'te tek tek paylaşmaktansa.
+
+21
+00:06:36,468 --> 00:06:41,228
+Çeşitli simgeler görüyorum. Herkese bir tıklama. Diğer bir grupta herhalde bakıyor şimdi.
+
+22
+00:06:43,888 --> 00:06:51,427
+Evet, dedik ki bu hafta inheritance'dan bahsedeceğiz. Kalıtımdan konuşacağız.
+
+23
+00:06:55,764 --> 00:07:12,724
+Derste görmediğinizi biliyorum son ders kaydına çünkü biraz baktım ya sonunda bunu işlemediğinizi gördüm. O yüzden biraz böyle temelinden hani bugünkü uygulamayı da tabii göstereceğim ama öncesinde bir böyle hani kalıtımla nasıl sınıfları yapıyoruz, üretiyoruz, üretiyoruz vesaireden bahsedelim.
+
+24
+00:07:14,324 --> 00:07:23,204
+Arkadaşlar kalıtımda bir kere UML gösterimi şöyle bir şey olacak. Şimdi bizim sınıflarımız vardı. Mesela bu bizim.
+
+25
+00:07:24,627 --> 00:07:30,288
+Geçen uygulamadaki şeyimiz, üyemediğimiz hatırlarsınız.
+
+26
+00:07:31,028 --> 00:07:32,567
+Kitap sistemi vardı.
+
+27
+00:07:33,687 --> 00:07:35,668
+İşte o kitapların rafları var demiştik.
+
+28
+00:07:35,827 --> 00:07:38,168
+O raflara kitaplar koyuyorduk falan demiştik.
+
+29
+00:07:38,927 --> 00:07:41,148
+Hatta bunu da lafta bayağı benzeri.
+
+30
+00:07:41,187 --> 00:07:42,427
+Neredeyse aynısını sorduk.
+
+31
+00:07:42,548 --> 00:07:44,507
+Müşter sipariş ürün şeklindeydi.
+
+32
+00:07:45,555 --> 00:07:48,395
+Şimdi burada gördüğümüz ilişkilerde ne vardı?
+
+33
+00:07:49,395 --> 00:07:55,695
+Mesela biz bira çok ilişkilerin kompozisyon ve aggregation kuvvetli veryonlarını göstermiştik.
+
+34
+00:07:55,855 --> 00:07:58,555
+Parça bütün ilişkilerini vs. anlatmıştık.
+
+35
+00:07:59,035 --> 00:08:00,775
+Burada bir sahiplik ilişkisi vardı.
+
+36
+00:08:01,415 --> 00:08:03,395
+Mesela şunu gördüğüm zaman diyordum ki,
+
+37
+00:08:03,395 --> 00:08:08,716
+Raf sınıfı nesneleri demek ki kitap tipinde dizileri tutuyorlar.
+
+38
+00:08:09,295 --> 00:08:13,336
+Bir Raf nesnesinde, bir Raf nesnesinin içinde bir sürü kitap var.
+
+39
+00:08:13,555 --> 00:08:14,635
+Bir sahiplik var.
+
+40
+00:08:15,155 --> 00:08:16,855
+Ne ilişki diyorduk buna?
+
+41
+00:08:17,015 --> 00:08:18,195
+Sahip olma ilişkisi.
+
+42
+00:08:19,827 --> 00:08:29,447
+Bunlar tabii parça bütün olabileceği gibi şöyle sadece kullanmalık bir tane bir nesnenin diğer sınıfın bir nesnesini tutması gibi durumlar da vardı.
+
+43
+00:08:29,447 --> 00:08:43,668
+Ama şu composition, aggregation'larda bir dizi vardır ya da bir liste yapısı vardır. Çok veriyi bir anda tutan bir yapı vardır. Bu şekilde görüntülerimiz vardı UML'de.
+
+44
+00:08:44,563 --> 00:08:57,423
+Şimdi kalıtımdaki olay, hani burada nasıl parça bütün sahip olma, bu buna sahiptir şeklinde görünüyorsa, benim internetim kesiliyor mu acaba? Size kesik kesik mi geliyor benim sesim?
+
+45
+00:08:58,283 --> 00:09:01,283
+Ekranda bana bir uyarı yaptı. İyi mi geliyor? Tamam.
+
+46
+00:09:03,864 --> 00:09:11,043
+Şimdi bu sahipliği gördük. Şimdi göreceğimiz şeydi ne dedik? Kalıtım. Kalıtımın olayı şu.
+
+47
+00:09:11,508 --> 00:09:30,448
+Nasıl o heze ilişkisi varsa sahip olmakta? Bunda da iz e ilişkisi. Yani bu, budur. Sınıflar arasında kurduğumuz böyle bir bağlantı var. Bu sınıf buna sahiptir den ziyade bu sınıf aslında bu sınıftır. Bu bunun çocuğudur gibi bir şey. Subclass, süperclass. Bunu göreceğiz.
+
+48
+00:09:30,448 --> 00:09:35,728
+Mesela şu UML gösterimine bakmanızı istiyorum. Bir ders sınıfım var.
+
+49
+00:09:36,244 --> 00:09:41,004
+Bir de ondan belirtilmiş, zorunlu dersi seçmeli ders sınıflarım var.
+
+50
+00:09:42,043 --> 00:09:49,043
+Bakın, YML gösteriminde de şöyle içi boş okla bunları buraya bağladığım zaman diyorum ki işte bu.
+
+51
+00:09:49,983 --> 00:09:56,183
+Bunlar şu sınıfın, şu ders sınıfının sap classları, çay atları, çocukları.
+
+52
+00:09:57,364 --> 00:10:03,504
+Kalıtımın olayı ne? Mantınlığı niye böyle bir ihtiyaç duymuşuz? Neden bu sınıftan böyle sınıflar türetmişiz?
+
+53
+00:10:03,923 --> 00:10:15,124
+Şimdi sınıflar arasında bazı benzerlikler olabilir veya bir metodu birçok sınıf kullanıyordur ama farklı farklı şekillerde kullanıyordur. Bunların ortak bir noktaları vardır.
+
+54
+00:10:15,624 --> 00:10:23,463
+Biz de deriz ki ya biz işte her sınıftı mesela her değişkeni tek tek yazmaktansa bir üst sınıf yaparız.
+
+55
+00:10:23,463 --> 00:10:31,483
+Orada bazı atribütleri belirleriz. İhtiyacımız olduğunu oradan kullanırız. Çünkü alt sınıf demek üstün.
+
+56
+00:10:31,892 --> 00:10:42,332
+Bütün işte üye alanlarına, şunlar üye alanlarımızdı, nesnene sahip olduğu atribütlarıydı ve metotlarına erişim hakkı vardır alt sınıfları.
+
+57
+00:10:43,539 --> 00:11:03,259
+Erişim hakkı olduğunda nereden anlıyoruz? Bizim şu belirteçlerimiz vardı hatırlarsanız. Değil mi? Şunları mesela şu ikisini gördük. Artı görünce ne diyorduk? Public. Yani bir metot, bir değişken, bir şey burada artıyla göstermişse bu public'tir. Sadece sapkılasında değil aslında bütün sınıflardan erişebilirsin.
+
+58
+00:11:03,259 --> 00:11:11,539
+Veya eksi gördüğümüzde ne diyorduk? Ya bu private, özel bir şey. Buna sadece ve sadece kendi sınıfı içinde erişebilirsin.
+
+59
+00:11:11,539 --> 00:11:24,019
+Başkasının erişilmez. Şimdi, kalıtımla beraber sıkça kullanacağımız bir başka erişim belirtici hayatımıza giriyor. O da protective. Şu tek işareti görüyorsunuz.
+
+60
+00:11:30,227 --> 00:11:40,707
+Bunu böyle kullanmışsam ya sen bunu benim çocuk sınıflarımda, alt sınıflarımda kullanabilirsin direkt ya da içinde bulunduğum o sınıf hangi paketin içindeyse.
+
+61
+00:11:41,788 --> 00:11:47,587
+Çünkü biz Eclipse'de neydi? Şöyle paketler yapabiliyorduk. Eclipse'i de açayım.
+
+62
+00:11:50,196 --> 00:11:59,576
+Şimdi mesela Eclipse'de bizim bir de paket olaylarımız vardı. Şurada bir proje tanımladıktan, proje oluşturduktan sonra şu store üstüne gelir.
+
+63
+00:12:00,115 --> 00:12:08,395
+New deyip, check deyip, farklı farklı isimlerle paketler oluşturabiliyordum. Şöyle şöyle paket simyeleriyle zaten geliyor.
+
+64
+00:12:08,975 --> 00:12:16,416
+Ve bu paketlerin altında da neden paket oluşturulur? Konuyla alakalı benzer işleri yürüten sınıfları bir arada tutmak için.
+
+65
+00:12:16,980 --> 00:12:19,480
+Bunları ben bu şekilde oluşturabiliyordum.
+
+66
+00:12:19,980 --> 00:12:28,700
+İşte protected diyor ki ya sen protected bir değişkeni kendi o child sınıf subclasslarında kullanabilirsin.
+
+67
+00:12:29,652 --> 00:12:31,652
+Sınıfın içinde zaten kullanıyorsun.
+
+68
+00:12:32,112 --> 00:12:37,032
+Ya da içinde bulunduğun pakette de diğer sınıflar arasında kullanabilirsin.
+
+69
+00:12:37,112 --> 00:12:39,012
+Ama farklı bir paketten erişim olmaz.
+
+70
+00:12:39,252 --> 00:12:42,532
+Hani ne public ne private ikisinin ortası gibi bir şey.
+
+71
+00:12:42,692 --> 00:12:50,012
+Ya kendi paketim içinde kullanırım ya da işte çocuk sınıflarımla bunu child class'larda, top class'larda verebilirim, gösterebilirim.
+
+72
+00:12:51,971 --> 00:12:55,092
+Şimdi ne dedik? Olayımız burada.
+
+73
+00:12:56,788 --> 00:13:05,388
+Yukarıdaki üst sınıfın metotlarına değişkenlerinde erişim hakkına sahip oluyor.
+
+74
+00:13:06,248 --> 00:13:08,948
+Mesela ben üst sınıfta bir tane metot yazıyorum.
+
+75
+00:13:10,388 --> 00:13:12,388
+Sonra, bakın burada bir...
+
+76
+00:13:13,043 --> 00:13:18,484
+Sistemin bu arada hemen hızlıca yapısından da bahsedeyim. Bu nedir? İşte bir ders sınıfı var. İkiye ayrılmış sorunu seçmeli.
+
+77
+00:13:18,903 --> 00:13:27,144
+Şurada basitçe bir not hesaplama metodumuz var. Bununla da kişilerin vize final notlarında bir hesap çıkarılıyor.
+
+78
+00:13:27,563 --> 00:13:37,224
+Şimdi şu UML'den bile çıkarabileceğim sonuç nedir? Ya bu hesapla not dediğine göre ve bu sınıftaki değişkenleri kullanabildiğime göre, çünkü A sınıfları kullanamayacağım sınıftayım ben.
+
+79
+00:13:37,224 --> 00:13:41,043
+Neyi kullanacağım? Bu zaman vize ile finali kullanıyorum.
+
+80
+00:13:41,043 --> 00:13:43,144
+Demek ki burada öyle bir not hesaplıyorum.
+
+81
+00:13:43,964 --> 00:13:45,303
+Alt sınıflara geliyorum.
+
+82
+00:13:46,283 --> 00:13:48,144
+Orada da aynı metot var bakın.
+
+83
+00:13:48,224 --> 00:13:49,283
+Hesapla not metodu.
+
+84
+00:13:49,984 --> 00:13:50,923
+Bunun olayı ne o zaman?
+
+85
+00:13:51,443 --> 00:14:04,163
+Bu hesapla not metodu aslında alt sınıfta bunu aynı metodu yazıyorsak bakın parametresi dönüş tipiyle aynısını yazıyorsak demek ki ben bunu burada override ediyorum demektir.
+
+86
+00:14:04,659 --> 00:14:22,299
+Overwrite diye bir kavram var. Metodu ezmek, içine doldurmak. Burada bu metodun içinde evet bir şeyler var, bu sınıfa göre çalışıyor ama ben aynı metodu alıp içine doldurup yazdığımda da kendi ihtiyacıma göre yazmış olabiliyorum, sınıfın ihtiyacına göre yazmış olabiliyorum.
+
+87
+00:14:29,395 --> 00:14:32,795
+Constructuring'ı aynı mı oluyor, kullanıyor.
+
+88
+00:14:33,835 --> 00:14:37,675
+Artı, kendi üye değişkenleri varsa bir de onu ekliyoruz.
+
+89
+00:14:38,375 --> 00:14:40,235
+Mesela şimdi Constructuring'ın olayı neydi?
+
+90
+00:14:40,375 --> 00:14:42,555
+İşte bir nesne ilk oluştuğunda direkt çalışıyordu.
+
+91
+00:14:43,235 --> 00:14:48,875
+Burada mesela ders sınıfının Constructuring'ında işte dersin adı var, vize bir notu var, final notu var.
+
+92
+00:14:48,875 --> 00:14:53,375
+Yani ben aslında bir ders nesnesi üretirken bunları direkt ne yapıyorum?
+
+93
+00:14:54,055 --> 00:14:56,295
+Veriyorum o nesneye. Otomatik oluşuyor.
+
+94
+00:14:56,724 --> 00:15:06,524
+İşte ben zorunlu ders sınıfını üretirken de aslında yine ders sınıfını yazacağım, vizebini, final kutunu, bir de ekstra vize ikisini yazacağım.
+
+95
+00:15:06,964 --> 00:15:11,464
+Ama burada bakın, constructor tanımında sadece vize ikinin olduğu kısmı yazmıştım.
+
+96
+00:15:11,464 --> 00:15:21,084
+Bunu, constructor'ın da hepsini kullanacağım. Bu şekilde belirtmem demek, bu sadece inttan oluşan, sadece tek bir para artıralan bir constructor değil. Yukarıdakinin.
+
+97
+00:15:21,491 --> 00:15:28,831
+tüm bu stringi, integer, integer'ı kullanıyor. Artı bir de kendi ihtiyacı olanı buraya eklemiş, onu kullanıyor şeklinde.
+
+98
+00:15:30,471 --> 00:15:34,731
+Zorunu dersi de vizdeki varmış. Burada da seçmeli dersi de bir de proje notu da eklenmiş.
+
+99
+00:15:35,151 --> 00:15:40,711
+Onu da hem vizeyi hem projeyi hem de tabii ki üst class'ın neyini, constructor'ını almış oluyor.
+
+100
+00:15:40,851 --> 00:15:44,751
+Şimdi bunu kodlayarak görelim. Birazdan oturmaya başlasın.
+
+101
+00:15:46,515 --> 00:15:50,675
+Dedik ki ders, zorlu ders, seçmeli ders, 3 tane sınıfımız var.
+
+102
+00:15:51,196 --> 00:15:56,395
+Derste de, ben şöyle bir başlangıcına yapmamışım.
+
+103
+00:16:00,916 --> 00:16:08,476
+Ders classında neydi? Protected dedik bunları. O hashtag gibi tek işaret ile gösterdiğimiz erişim belirteci protected'tı.
+
+104
+00:16:08,836 --> 00:16:14,876
+Protected'ler, 3 tane değişkenin olduğunu yazdım. Ders sınıfımı oluşturdum. Bunları yazdım.
+
+105
+00:16:15,516 --> 00:16:23,096
+Ben diğer sınıfları da zıcı oluşturmuşum. Seçmeli ders de burada. Birazdan main metodunun içinde çağıracaklarımızı da koymuşuz.
+
+106
+00:16:24,947 --> 00:16:27,907
+Bir tek zorunlu dersi oluşturmamışım herhalde.
+
+107
+00:16:27,907 --> 00:16:29,907
+O zaman yapabiliriz.
+
+108
+00:16:33,207 --> 00:16:35,467
+Ne diyorduk? Yeni class.
+
+109
+00:16:37,987 --> 00:16:43,967
+Bu da zorunlu ders deyip oluşturduğumda bir de zorunlu ders class'ım geldi.
+
+110
+00:16:44,927 --> 00:16:46,187
+Şimdi ben ders sınavındayım.
+
+111
+00:16:47,007 --> 00:16:48,327
+Üye değişkenlerimi yazdım.
+
+112
+00:16:48,427 --> 00:16:50,867
+Pratik olarak nasıl bir konstruktör oluşturuyorduk?
+
+113
+00:16:53,268 --> 00:17:04,927
+Source'a gelin. Şurada generate edebileceğim şeyler var. Mesela ne diyor? Generate constructor using filed. O yazdığım filed'ları, attribütleri kullanarak
+
+114
+00:17:04,927 --> 00:17:16,907
+constructor'ımı generate edebilirim, oluşturabilirim. Bakın bana hatta burada soruyor. Hangi değişkenleri, hangi filed'ları istiyorsun? İstediğimi istesem çıkarabilirim de. Ben hepsini istiyorum. Okey dedim.
+
+115
+00:17:21,203 --> 00:17:24,604
+Güzel bir şekilde neyi oluşturdu? Constructions oluşturdu.
+
+116
+00:17:25,203 --> 00:17:26,703
+Şunu şimdi siliyorum.
+
+117
+00:17:28,203 --> 00:17:31,203
+Benim Constructions nedir? Bu şekildedir.
+
+118
+00:17:31,703 --> 00:17:38,203
+Ben bir nesne oluştururken demek ki ders sınıfından adı olacak vize biri, final notu böyle bir nesne oluşturuyormuş.
+
+119
+00:17:39,703 --> 00:17:40,703
+Şimdi
+
+120
+00:17:42,203 --> 00:17:45,703
+bu sınıf böyle, bir metodu vardı.
+
+121
+00:17:47,955 --> 00:17:53,255
+hesapla not diye double dönen public bir metodu var.
+
+122
+00:17:53,255 --> 00:17:57,056
+O zaman geleyim şuraya.
+
+123
+00:17:58,835 --> 00:18:06,735
+Public'te double'dı ve ismi de hesapla.
+
+124
+00:18:07,284 --> 00:18:10,264
+parametre anı tuttu.
+
+125
+00:18:10,644 --> 00:18:17,624
+Direkt mesleğine yazıp bunu çalıştırdığımda bu şekilde oluşmuş olacak.
+
+126
+00:18:26,579 --> 00:18:51,360
+Tabii ki bana hemen uyarısını veriyor diyor. Return ile bir bul döndürmen lazım. Ben de ona return ile şeyi döndüreceğim direkt. Yukarıda yazdım. Gize bir final bir klasik bir hesap poz vardır. Gize'nin %40'ı alınır. Ondan sonra final kaç alınır? Final demişiz. Finalinde %60'ı alınır ve
+
+127
+00:18:51,827 --> 00:18:54,387
+bir not hesabı yapılmış olur.
+
+128
+00:18:55,728 --> 00:19:03,467
+Şimdi ben bu sınıftan, binersini oluşturup hesaplı not dediğimde bana direkt bildiğim bu şekilde bunları yazdıracak.
+
+129
+00:19:04,268 --> 00:19:11,847
+Hatta ss6'la ss6 yazıp ctrl scale önce otomatikman bunu ekranımıza getiriyor.
+
+130
+00:19:13,228 --> 00:19:17,867
+Şunu da notunda yazalım. Ders sınıfında bunu hesapladık diye.
+
+131
+00:19:20,372 --> 00:19:21,812
+Ders sınıfında
+
+132
+00:19:21,812 --> 00:19:26,192
+hesapla not çalıştı.
+
+133
+00:19:33,268 --> 00:19:41,168
+Takılarak mı geliyor ses? Ben de bir gerildim. Demin çünkü bir uyarı geldi bana da ekrana. İnternet hızımla alakalı.
+
+134
+00:19:44,980 --> 00:19:46,980
+Normal geliyor hocam.
+
+135
+00:19:48,980 --> 00:19:51,980
+Görüntüde sıkıntı oluyormuş herhalde.
+
+136
+00:19:56,788 --> 00:20:00,168
+Ekran geçişlerini çok hızlı yapmıyorum ben görüntü.
+
+137
+00:20:01,168 --> 00:20:02,107
+Çok kasmıyorum.
+
+138
+00:20:07,124 --> 00:20:10,804
+Şimdi hesaplı not yazdım.
+
+139
+00:20:11,583 --> 00:20:16,244
+Direkt bunu çalıştırdığımda dedim ki notu hesaplayacak, ekrana yazdıracak.
+
+140
+00:20:16,923 --> 00:20:19,663
+Şimdi direkt şu, neleri yapayım şimdi de?
+
+141
+00:20:19,744 --> 00:20:21,063
+Subclasslarıma bir bakayım.
+
+142
+00:20:24,403 --> 00:20:31,523
+Subclasslarımda da, kurulu ders seçmeli derslerde bu classları oluşturuyoruz.
+
+143
+00:20:31,523 --> 00:20:32,163
+Bakın şimdi.
+
+144
+00:20:33,844 --> 00:20:47,423
+Seçmeli ders, dersin eğer alt sınıfı ise bu ikisini bir anahtar cümlemiz var, onunla bağlıyoruz. O da extends. Extends deyip, sınıfını yazdığımız zaman artık bu şu anlama geliyor.
+
+145
+00:20:47,923 --> 00:20:56,503
+Seçmeli ders sınıfı bu sınıftan kalıptanla türetilmiştir. Bu sınıf bu sınıfa ait metotları kullanacaktır. Bunun bir göstergesi.
+
+146
+00:20:56,503 --> 00:20:58,784
+Bana hemen bir uyarı verdi.
+
+147
+00:20:59,571 --> 00:21:08,031
+Bu arada böyle idade ki uyarılara mesela dikkatli baktığımızda o size hem sebebini hem de altında nasıl onu çözebileceğinizi de gösterir.
+
+148
+00:21:08,291 --> 00:21:10,172
+Mesela burada bana şimdi verdiği uyarı ne?
+
+149
+00:21:10,811 --> 00:21:20,211
+Diyor ki sen bir tane tamam sınıf oluşturdun ama senin extentle kalıtımla geldiği o sınıfta bir constructor var.
+
+150
+00:21:20,531 --> 00:21:24,031
+Sen de aynen o constructori tanımlamalısın diyor ona.
+
+151
+00:21:24,852 --> 00:21:32,692
+Bu constructor üretmeni istiyor ve bakın burada çözümü de var. Bu sınıfın constructorını bu şeyi oluşturuyor.
+
+152
+00:21:35,271 --> 00:21:40,692
+Şimdi bu sınıfın constructorını böyle hızlıca oluşturabilirim.
+
+153
+00:21:42,452 --> 00:21:47,271
+Bakın, OEMS Public, sınıfın adı.
+
+154
+00:21:47,731 --> 00:21:51,891
+Ve yukarıdakinin aynısını güzel bir şekilde bana getirdi.
+
+155
+00:21:52,331 --> 00:21:53,631
+Bu sefer neyle alıyorum onu?
+
+156
+00:21:53,831 --> 00:22:03,291
+Süper deyip parantez açtığım zaman, bu değişkenlerin adını yazdığım zaman, şu anladığımda değişkenleri falan yazardık şuraya.
+
+157
+00:22:03,511 --> 00:22:05,192
+Tanımlardaki hiç yapmama gerek yok.
+
+158
+00:22:05,291 --> 00:22:07,551
+Çünkü biliyorum bunlar üst sınıfta tanımlı.
+
+159
+00:22:08,031 --> 00:22:10,192
+Bunları üst sınıftan alacağım.
+
+160
+00:22:10,708 --> 00:22:16,868
+Demek oluyor. Ders adına, işte vize bir final notu. Ben tekrar tekrar buraya yazmak, tanımlamak zorunda değilim.
+
+161
+00:22:17,268 --> 00:22:19,368
+Üst sınıftan direkt kullanabileceğim.
+
+162
+00:22:21,028 --> 00:22:24,388
+Ama benim ne dedim? Burada eklemek istediğim başka bir şey daha vardı.
+
+163
+00:22:24,748 --> 00:22:30,048
+Mesela hatta seçme derse bir de proje ekleniyordu. Önce isterseniz zorunluyu yapalım.
+
+164
+00:22:31,748 --> 00:22:36,968
+Şurada hemen ekleme yapalım.
+
+165
+00:22:38,996 --> 00:22:47,996
+Şimdi onları şekilde konstruktör oluşturabilirim. Ama ben ne yapayım? Diyorum ki ben ekstra bir şey daha istiyordum bu sınıfa.
+
+166
+00:22:49,796 --> 00:22:58,655
+Vize 2 nol. Tamam üst sınıfta vize 1 final var ama o sınıfta olmayan bir şey daha var ekstra. Onu buraya eklemek istiyorum.
+
+167
+00:22:59,596 --> 00:23:05,895
+Evet vize 2 dediğim zaman bu değişkeni ve integer tanımlamış oldum.
+
+168
+00:23:06,483 --> 00:23:19,403
+Şimdi, bu sefer constructor tanımımda bunu da dahil etmek istiyorum. Bu bana yine bunu oluşturabilir ama ben bu sefer ona bir ekleme yaparım. O yine bana otomatik oluştursun.
+
+169
+00:23:28,627 --> 00:23:32,687
+Şimdi o bana üst sınıftakini alacak şekilde oluşturdu konstruktörü.
+
+170
+00:23:33,268 --> 00:23:40,587
+Ama burada, bize birden sonra kendim buraya zeki eklemek istiyorum.
+
+171
+00:23:44,115 --> 00:23:52,115
+Ve bu şekilde oluşturduğum zaman ona diyorum ki sen buradaki ders adı vize ve final notu al.
+
+172
+00:23:53,316 --> 00:23:57,355
+Ama bir de benim bu sınıf değişkenim olan bir vize ikim var.
+
+173
+00:24:00,056 --> 00:24:04,615
+Onu da sana gönderdiğimle bu şekilde al.
+
+174
+00:24:05,336 --> 00:24:06,655
+Şimdi niye DISS kullandık?
+
+175
+00:24:08,655 --> 00:24:08,935
+Ben
+
+176
+00:24:10,291 --> 00:24:16,931
+Constructions olayı ne? Şimdi ben nesne ürettiğim için bu böyle yazılıyor. Yani şöyle söyleyelim.
+
+177
+00:24:19,191 --> 00:24:25,011
+Birazdan buraya geleceğim mesela. Diyeceğim ki New, işte zorunlu ders.
+
+178
+00:24:26,971 --> 00:24:29,051
+Tadıştım, şimdi bir şeyler var. Oraya şimdi es geçtim.
+
+179
+00:24:30,911 --> 00:24:32,051
+Geçmeyeyim, yazayım.
+
+180
+00:24:35,508 --> 00:24:39,668
+Neydi bunun bir sorunu ders 1 gibi bir şey diyelim.
+
+181
+00:24:41,508 --> 00:24:41,988
+Orada
+
+182
+00:24:41,988 --> 00:24:45,128
+Neyuzunlu ders
+
+183
+00:24:45,128 --> 00:24:48,428
+Yeni bir ders oluştururken
+
+184
+00:24:48,428 --> 00:24:50,568
+İşte neyi var? Bunun adı var.
+
+185
+00:24:54,963 --> 00:25:04,323
+neymiş onun adında? Bakalım şuradan. Azıca aslında şey alayım ben şu. Test class'ını alayım.
+
+186
+00:25:16,819 --> 00:25:21,159
+Mesela ben birazdan, şunu da içine dolduracağız o yüzden hata veriyorum.
+
+187
+00:25:22,419 --> 00:25:25,719
+Ben şöyle nesneler oluştururken, construction dolayı neydi?
+
+188
+00:25:25,779 --> 00:25:29,379
+Bir nesne oluşturduğum zaman şu aldığı parametrelere göre onu çalıştırıyordu.
+
+189
+00:25:30,759 --> 00:25:34,539
+Şimdi ben bunu oluşturduğum anda, o ne yapıyor?
+
+190
+00:25:34,679 --> 00:25:40,219
+Zorunlu derse gidip, bu sınıf içinde bakın, final vize bir şey tanımlamamama rağmen,
+
+191
+00:25:41,236 --> 00:25:43,456
+O diyor ki evet bu sınıf var.
+
+192
+00:25:43,596 --> 00:25:45,116
+Bir ders adı final not.
+
+193
+00:25:45,656 --> 00:25:49,596
+Oradan tanımlı bir şekilde yine bu nesneye onları dahil ediyor.
+
+194
+00:25:49,756 --> 00:25:52,276
+Tekrar tekrar yazmamı engelliyor, önlüyor aslında.
+
+195
+00:25:52,516 --> 00:25:53,716
+Ben ekstra ne yazdım?
+
+196
+00:25:54,196 --> 00:25:55,736
+Üze 2 yazmış, oldum.
+
+197
+00:25:56,516 --> 00:25:58,936
+Aynı olayı seçmeli ders de açık olursa.
+
+198
+00:26:09,491 --> 00:26:10,271
+Isso, bravo.
+
+199
+00:26:14,579 --> 00:26:39,940
+O ilgimizde gelip seçmeyi derste yapacak olursak burada da neler vermemiz gerekiyor ona? Sadece, pardon, bize ikiyle beraber, bir de final notu var. Constructura iki tane ekleme yapacağız.
+
+200
+00:26:42,387 --> 00:26:47,387
+İşte benim buradaki seçmeli ders class'ımda da
+
+201
+00:26:48,387 --> 00:26:51,387
+Constructuring şöyle düzenliyoruz.
+
+202
+00:26:52,387 --> 00:26:55,387
+Bunu bizdeki diğerlerimizle değiştiririz.
+
+203
+00:26:56,387 --> 00:26:59,387
+Final note 1 de sonunda
+
+204
+00:27:00,387 --> 00:27:05,387
+Integer projesine eklemem gerekiyor.
+
+205
+00:27:10,771 --> 00:27:16,471
+Sonrasında burada tabii ki vize 2 eşittir.
+
+206
+00:27:17,731 --> 00:27:20,611
+Şöyle diz nokta vize 2 eşittir.
+
+207
+00:27:21,451 --> 00:27:23,611
+Sana gönderdiğim vize 2 diyorum.
+
+208
+00:27:25,051 --> 00:27:28,851
+Ve final dediğim ki proje.
+
+209
+00:27:28,851 --> 00:27:28,891
+Proje.
+
+210
+00:27:31,651 --> 00:27:33,091
+Projede.
+
+211
+00:27:34,511 --> 00:27:35,331
+Olacak.
+
+212
+00:27:35,731 --> 00:27:38,411
+Gönderdiğim proje notu.
+
+213
+00:27:38,836 --> 00:27:44,796
+abstract class kavramını bu şekilde oluşturmuş olduk.
+
+214
+00:27:50,867 --> 00:27:51,755
+Şimdi
+
+215
+00:27:55,155 --> 00:28:03,915
+Buradaki kısımda da ne dedim? Buraya bir de vize 1, vize 2 final notunu eklemiş olduk.
+
+216
+00:28:03,915 --> 00:28:06,915
+Ders de vize 1 final notunu aldı.
+
+217
+00:28:08,596 --> 00:28:12,276
+Ders sınıfında biz kaydetmedik diye mi yapıyoruz?
+
+218
+00:28:12,476 --> 00:28:19,115
+Evet, kaydedim arkadaşlar. Ben kaydetmediğim için buna demeden biri hata çıkarmış.
+
+219
+00:28:22,867 --> 00:28:24,867
+Şimdi umarım çok dağılmadık.
+
+220
+00:28:25,567 --> 00:28:28,408
+Böyle ben yazarken biraz şey olabiliyorum, yavaş gidiyorum.
+
+221
+00:28:28,528 --> 00:28:30,367
+Siz de umarım dikkatiniz dağılmıyordur.
+
+222
+00:28:31,067 --> 00:28:33,867
+Yaptığım olay aslında kabucu bir constructorları tanımlamaktı.
+
+223
+00:28:34,648 --> 00:28:38,867
+Anlatmak istediğim şey de, 100 sınıftakileri direkt alıyorum.
+
+224
+00:28:40,288 --> 00:28:42,128
+Eklemek istediklerimi altına yazıyorum.
+
+225
+00:28:43,307 --> 00:28:44,728
+Konu bundan eminat aslanım.
+
+226
+00:28:46,867 --> 00:28:48,307
+Şimdi kaydedelim.
+
+227
+00:28:50,420 --> 00:28:52,380
+Constructuralı oluşturdum.
+
+228
+00:28:53,700 --> 00:29:00,579
+Yani şurada artık ders sınıfında şu tanımlamalarımı gayet rahat bir şekilde yapabilirim.
+
+229
+00:29:00,680 --> 00:29:06,039
+Ders sınıfından minnesini oluşturduğumda onun adı bu şekilde gelecek, oluşacak.
+
+230
+00:29:07,620 --> 00:29:10,099
+Zorunu ders sınıfından da yine oluşturabileceğim.
+
+231
+00:29:10,940 --> 00:29:15,440
+Hatta şu şekilde oluşturabilme imkanımız var mesela.
+
+232
+00:29:19,092 --> 00:29:43,312
+yapayım onu. Sonuçta zorunlu ders nesneleri aslında ders sınıfının da nesneleri olduğu için. Ders, sd1 eşittir. New, zorunlu ders şeklinde de yukarıdakinin aynısı demek manası. Şöyle denden yapıyorum. Üstteki gibi. Bu şekilde de oluşan.
+
+233
+00:29:43,731 --> 00:29:50,032
+Aslında ders nesnelerimizi. Çünkü alt sınıfta aslında üst sınıfın bir nesnesi oluyor.
+
+234
+00:29:50,132 --> 00:29:56,652
+En son sorunlar var. Orada aslında bu zorunlu ders nesneleri bir manada ders nesnesi de olmuş oluyor.
+
+235
+00:29:56,772 --> 00:30:04,132
+Ama alt sınıfın nesnesi sonuçta hem üstü kullanıyor hem kendi için kullanmığı için çok daha böyle geniş kapsamlı olabiliyor.
+
+236
+00:30:06,132 --> 00:30:09,471
+Şimdi constructorlarımızı oluşturduk. Dedik ki
+
+237
+00:30:10,324 --> 00:30:12,763
+Yukarıdan alacaklarımızı alıyoruz.
+
+238
+00:30:12,923 --> 00:30:14,203
+Tabi da şöyle bir olay var.
+
+239
+00:30:14,324 --> 00:30:23,303
+Bakın üst sınıfın, constructor'ında ders adı vize final olduğu için ben bunu süperle alırsam hepsini almak durumdayım.
+
+240
+00:30:23,303 --> 00:30:24,624
+Yani şunu diyemem.
+
+241
+00:30:25,144 --> 00:30:31,084
+İşte final notunu almayayım ya ben bunu süperle almayacağım yaptığım zaman bana bu bir hata verir.
+
+242
+00:30:31,543 --> 00:30:36,303
+Sen bunu der ya üst sınıfa git orada böyle iki constructor'lı bir...
+
+243
+00:30:37,523 --> 00:30:48,943
+string ve integer sadece iki parametre oluşan bir constructor ya da varolu değiştir. Çünkü sen eğer alman istiyorsan bunu yazman lazım.
+
+244
+00:30:48,943 --> 00:30:51,683
+Sınıfını yazmış olman lazım.
+
+245
+00:30:52,803 --> 00:30:58,463
+Sınıfın, şu ders sınıfının, constructorını ayarlıyorum. Ben beklemelerimi yapıyorum. Olay bu.
+
+246
+00:30:58,963 --> 00:31:00,503
+Şimdi override olayına gelelim.
+
+247
+00:31:01,644 --> 00:31:02,543
+Override neydi?
+
+248
+00:31:03,028 --> 00:31:12,127
+Üst sınıfta bir tane metot vardı. Ders sınıfı bizim üst sınıfımız, süper classımız. Bu metodu ben alt sınıflara alıp istediğim gibi yazabilirim dedim.
+
+249
+00:31:13,187 --> 00:31:23,268
+Mesela hesaplama notu da bize bir final notunu alıyordu. Şimdi şu sınıflara gelip, biz Azor'un dersi başlayalım. Şunu dersin yanına taşıyayım.
+
+250
+00:31:33,364 --> 00:31:42,544
+Override implement metod kısmına tıklayıp orada override edebileceğim metotlar çıkıyor.
+
+251
+00:31:43,163 --> 00:31:45,243
+Hatta biz bunu to string'i görmüştükler.
+
+252
+00:31:46,243 --> 00:31:49,804
+Orada ne yapıyorduk? İşte nesnenin içeriğini yansıyorduk.
+
+253
+00:31:49,804 --> 00:31:55,763
+String'de aslında object diye bir class var. Java'daki bütün sınıflar aslında temelde bir object class'ı tanımıyor.
+
+254
+00:31:55,963 --> 00:31:57,064
+Ondan türetmiş.
+
+255
+00:31:57,455 --> 00:32:01,915
+Biz de mesela string'i over-ediyorduk, içini kendimiz istediğimiz gibi dolduruyorduk.
+
+256
+00:32:02,375 --> 00:32:07,955
+Şimdi ders sınıfının, ben hesapla not metodu okey edetmek istiyorum.
+
+257
+00:32:08,175 --> 00:32:14,415
+Okey dediğim zaman bakın bana hızlıca metodu, birçok birçok bitişini oluşturdum.
+
+258
+00:32:14,556 --> 00:32:17,215
+Şimdi ben şu kısımları sileyim, içindeki yorum kısmını.
+
+259
+00:32:19,955 --> 00:32:22,175
+Mesela ona şöyle bir tercih sunuyor, diyor ki,
+
+260
+00:32:24,980 --> 00:32:26,140
+Hesaplanot dediğiniz zaman.
+
+261
+00:32:27,299 --> 00:32:33,480
+Burada süper nokta hesaplanot dediğinde, yani bu metodu çalıştırdık.
+
+262
+00:32:33,560 --> 00:32:39,420
+Bu geçecekse, üst sınıfın hesaplanot metodunu çağıracak.
+
+263
+00:32:41,620 --> 00:32:44,539
+Üst sınıfındaki hesaplanotu çağıracak.
+
+264
+00:32:44,539 --> 00:32:47,299
+Yani sadece vizeyi, finale alır, çarpar, çağırır.
+
+265
+00:32:47,700 --> 00:33:13,440
+Ama ben diyorum ki ben kendim buraya artık eklemeler yapmak istiyorum. Yani sorun dersinden hem de bir zevki var. Ben bir de bir zevki notu eklemek istiyorum. O zaman yapacağım şeyini, şuradan hemen hızlıca alayım onun formülünü de. O zaman şöyle, kendi içimi böyle dolduracağım.
+
+266
+00:33:16,372 --> 00:33:17,971
+Sınıfı kullanmayacağım.
+
+267
+00:33:19,392 --> 00:33:21,511
+Bu şekilde dolduracağım.
+
+268
+00:33:27,476 --> 00:33:47,176
+Şimdi, üst sınıftan eğer override etmemiş olsaydım hiçbir şekilde, gider direkt hiç şunu yazmadığımı da düşünün. Mesela hesaplı not diye bir şey. Ben buraya override ettiğim için yazdığım süper müper bunları da yazmasaydım. O yine hesaplı not dediğim zaman.
+
+269
+00:33:49,172 --> 00:34:09,771
+Hesaplı not dediği zaman çalıştırırdı. Bakın biz zorlu derste, hadi tanımladık şimdi ama seçmeli derste mesela hesaplı not diye bir şey tanımadık. Ama o yine bunu çalıştırır. Niye? Çünkü diyor senin üst sınırında bu varsa ben demek ki ben biraz bir şeyle erişebilirim, yaşabilirim. O yüzden de çalıştırabiliyor.
+
+270
+00:34:13,235 --> 00:34:17,596
+Mesela bakın, ilk nesnem ders sınıfından bir nesneydi.
+
+271
+00:34:17,655 --> 00:34:18,715
+Bizde notu, yine notu.
+
+272
+00:34:18,855 --> 00:34:21,815
+Onu hemen çalıştırdı, hesapla notu.
+
+273
+00:34:22,576 --> 00:34:26,235
+Yaptığı işlerinde yüzde kırıkı, yüzde altmışını aldı, topladı.
+
+274
+00:34:27,115 --> 00:34:30,796
+Zorunu derste, önce kendim dedim ki, için istediğim gibi dolduracağım.
+
+275
+00:34:31,296 --> 00:34:32,115
+Nasıl doldurdum?
+
+276
+00:34:32,556 --> 00:34:37,096
+Burada dedim ki, bizlerin işte şu kadarı, yüzde otuz, yüzde otuz, yüzde kırık olacak bir hesap yap.
+
+277
+00:34:37,096 --> 00:34:40,036
+O zaman o gitti, hemen ona.
+
+278
+00:34:40,384 --> 00:35:01,163
+Zorunlu dersin, sdv.snotu diye çağırmışım. Dönüştü size bunların double olacağı için direkt yazdırabiliyorum bu şekilde. O gitti bu sefer Zorunlu Ders Notu diye Zorunlu Ders Sınıfını içinde çağırdı bunu. Ama bakın seçmeli dersin, ben henüz neyini override etmedim, o hesaplı notunu override etmedim ama onu da çalıştırdı.
+
+279
+00:35:01,907 --> 00:35:11,127
+Çünkü niye? Üst sınıfta hesaplı not diye bir şey var. Ama nasıl çalıştırıyor? Sadece final notlarını hesaba katarak çalıştırıyor. Seçmeli dersin.
+
+280
+00:35:12,507 --> 00:35:21,527
+Seçmeli dersin sadece bir final notlarını aldı. Şunuydı final. Bir vize finali aldı. Onu hesapladım.
+
+281
+00:35:23,367 --> 00:35:24,087
+İşte sevdim.
+
+282
+00:35:24,628 --> 00:35:43,587
+Onu da mesela buradan hızlıca source'a geliyoruz. Implement metod, override metod diyoruz pardon. Hesaplamotu seçip okey dediğim zaman şu kısmı istediğim gibi doldurabiliyorum dedim. Hemen seçmeli dersin gibi hızlıca şuradan alayım.
+
+283
+00:35:49,235 --> 00:35:51,435
+Hesaplar notunu da verelim.
+
+284
+00:35:54,036 --> 00:35:55,615
+Mesela şunları niye yazdım?
+
+285
+00:35:56,536 --> 00:35:59,036
+Bu şekilde de çağrı yapabiliyoruz.
+
+286
+00:36:00,096 --> 00:36:03,496
+Eğer superini çağırmak isteseydik, üst classı çağırmak isteseydik.
+
+287
+00:36:04,275 --> 00:36:06,515
+Şu satırı gereksiz altta da yazmışım zaten.
+
+288
+00:36:06,515 --> 00:36:14,515
+Şu iki satırla üst sınıftan nasıl hesaplayacağımızı, yani alt sınıftan içindeyken,
+
+289
+00:36:14,867 --> 00:36:17,228
+Üst sınıftan metodu çağırabiliyorum.
+
+290
+00:36:17,347 --> 00:36:18,047
+Çağırabiliyorum.
+
+291
+00:36:18,127 --> 00:36:18,847
+Neyle çağırıyorum?
+
+292
+00:36:19,307 --> 00:36:19,787
+Süper.
+
+293
+00:36:20,027 --> 00:36:20,747
+Süper nokta.
+
+294
+00:36:20,827 --> 00:36:25,667
+Metodun adını yazdığım zaman o anlıyor ki, tamam ben şimdi üst sınıftaki metodu çağıracağım.
+
+295
+00:36:26,627 --> 00:36:27,887
+Bu şekilde gösterebiliyorum.
+
+296
+00:36:28,768 --> 00:36:32,327
+Şunları hemen yorum satırı yapabilirim.
+
+297
+00:36:32,467 --> 00:36:34,268
+Sadece göstermek için yazmıştım buraya.
+
+298
+00:36:35,487 --> 00:36:37,907
+Esas ben içine bakın böyle durmuşum.
+
+299
+00:36:37,907 --> 00:36:41,947
+Ders sınıftan noktaları şöyle hesaplıyorum demişim.
+
+300
+00:36:42,208 --> 00:36:54,128
+Ve artık benim bu hesabıma göre bu uygulamayı tekrar çalıştırdığımda bakın ne yaptı? Seçmeli ders sınıfında hesaplanan not diye burada çalıştırmış oldu.
+
+301
+00:36:55,347 --> 00:36:57,887
+Alt sınıfın üst sınıfı olayı bu şekilde.
+
+302
+00:36:58,748 --> 00:37:02,128
+Kalıtımda en çok kullanacağımız şey zaten bu override olayları olacak.
+
+303
+00:37:07,583 --> 00:37:31,583
+Dedik ya, şurası protected'tı. Protected'ta erişim sağlanabiliyor. Hani normalde biz nesne adı nokta, işte şu değişken adı desem, eğer private'sa erişemezdim ama protected'ta ulaşabiliyorum. Yani şöyle, şurada, mesela bize bir de değil.
+
+304
+00:37:32,000 --> 00:37:51,960
+Üstüne gelince de size bir işaret veriyor aslında. Ders sınıfına vize biri bu. Çünkü bu sınıfta vize bir tanımı değil. Değil mi? Şurada vize bir tanım değil ama velev ki ben burada bir tane vize bir diye bir değişken var burada da diyelim. Değil de böyle saçma bir şey olsun ki farkı görelim şimdi.
+
+305
+00:37:53,652 --> 00:38:00,231
+Böyle bir vize 1 varken, buraya sadece vize 1 yazdığında bakın artık o seçme ders, yani içinde bulunduğu sınıfınkini alır.
+
+306
+00:38:00,311 --> 00:38:02,532
+İçinde bulunduğu sınıfın değişkini önceliklidir.
+
+307
+00:38:03,711 --> 00:38:07,872
+Ama ben illa yukarıdakini kullanmak istiyorsam, ne yapıyordum? Süper.
+
+308
+00:38:08,612 --> 00:38:16,711
+Süper'i kullandığım takdirde, bakın şimdi bu, artık bu vize 1 ders sınıfı, yani üst sınıfı vize 1.
+
+309
+00:38:17,907 --> 00:38:30,028
+Eğer bunu yazmasaydım, ileride saçma bir şekilde, şu bininleri falan yazma sebebinde o yüzden çalıştırsak mesela bunu, ulusun sınıftaki vize biri kullanacağı için gayet saçma bir not çıkaracaktı bana.
+
+310
+00:38:30,028 --> 00:38:40,087
+Ama ben eğer her ikisini de aynı nesne varsa, aynı özgürlerim de pilot varsa, süperle bunların ayrımına gidebiliyorum.
+
+311
+00:38:41,827 --> 00:38:45,427
+Kalıtımda temel olarak bilmemiz gereken şeyler bu şekilde.
+
+312
+00:38:48,724 --> 00:38:51,524
+Şimdi ben konuya dediğim gibi böyle bir krizgah yaptım.
+
+313
+00:38:52,484 --> 00:38:54,043
+Az da vaktimiz kalıyor.
+
+314
+00:38:55,043 --> 00:38:59,484
+Bu arada dediğim gibi çıkmak isteyenler çıkabilir kaydı sonra da dinleyebilirler.
+
+315
+00:38:59,684 --> 00:39:01,724
+Herkesin iptal saati farklı oluyor çünkü.
+
+316
+00:39:03,364 --> 00:39:06,304
+Anadolu zorunluluğunuz yok yani yoklamayı takmayın o noktada.
+
+317
+00:39:10,824 --> 00:39:16,024
+Şimdi burada göstereceklerimizi bu şekilde kodlamış görmüş olduk.
+
+318
+00:39:17,492 --> 00:39:23,572
+Bugünün uygulamasında göstereceğimiz kısımda şöyle bir durum var.
+
+319
+00:39:25,532 --> 00:39:28,752
+Hızlıca buraya geçeceğim. Hepsini korkmayın ben yazmayacağım.
+
+320
+00:39:29,472 --> 00:39:31,992
+Yazılı kodun üzerinden bir iki bir şey göstereceğim.
+
+321
+00:39:32,532 --> 00:39:34,672
+Siz sonra detaylı olarak bakarsınız zaten.
+
+322
+00:39:37,139 --> 00:39:46,420
+Bugünkü uygulamamız aslında buydu ama ben dediğim gibi konuyu böyle daha bir temelden gidelim diye biraz böyle basit bir şekilde anlatmak istedim. Umarım çok dağlamış, sıkılmamışsınızdır.
+
+323
+00:39:49,000 --> 00:40:00,979
+Bu uygulamada da abstract class'ın nasıl inherit ettiğimize örnek getirmişiz. Şimdi olayın şu kısmı, kitaplı, graf, kitap kısmı zaten bunu biliyorsunuz. Geçen uygulamadakiyle.
+
+324
+00:40:01,523 --> 00:40:06,203
+Çok ufak tefek bir iki metodun parametresine galiba değişiklik yapmıştık.
+
+325
+00:40:06,344 --> 00:40:08,963
+Onun dışında her şey aynı. İlişki tipleri bile aynı.
+
+326
+00:40:09,543 --> 00:40:13,304
+Uygulamaya sadece bir ek olarak dedik ki şuraya bir kalıtımı bağlayalım.
+
+327
+00:40:13,423 --> 00:40:14,844
+Kalıtımı buradan gösterelim.
+
+328
+00:40:15,503 --> 00:40:17,543
+Burada dikkatinizi çekmek istediğim konu şu.
+
+329
+00:40:19,163 --> 00:40:24,163
+Kalıtında göreceğimiz bir diğer sınıf çeşidi abstract classlar var arkadaşlar.
+
+330
+00:40:25,364 --> 00:40:27,763
+Bir sınıfın soyut olması. Soyut sınıf.
+
+331
+00:40:29,012 --> 00:40:46,512
+Soyut sınıflarda şöyle bir olay var. Soyut metotları var bu sınıfların. Şimdi soyut sınıf ne, soyut metot ne? Uygulama üzerinde görelim. Bu arada uygulamanın mantığı, buradaki sistemin mantığı şu. Bakıncada anlamışsınızdır belki. İşte bir kitaplık var.
+
+332
+00:40:47,059 --> 00:40:54,420
+Burayı bir kütüphane gibi düşünürsek, burada da bir yetişkin kartı, öğrenci kartı, kart sınıfından türettiğimiz sınıflar.
+
+333
+00:40:54,699 --> 00:40:59,059
+Bunlarla kitap satışı yapmamızı sağlıyoruz aslında. Temel mantığı bu uygulamanın.
+
+334
+00:41:00,280 --> 00:41:07,199
+Ve biz burada şu kalıtım yapacağımız sınıfta iki tane olay, ne yapmışız? Abstract bunu tanımlamışız.
+
+335
+00:41:07,199 --> 00:41:13,996
+Şimdi sınıfın abstract olması ne demek? Örneğe bakalım. Şunları bir...
+
+336
+00:41:14,356 --> 00:41:15,635
+class, yamakları.
+
+337
+00:41:17,756 --> 00:41:19,436
+Şu da diğer paketimden.
+
+338
+00:41:21,135 --> 00:41:25,675
+Hemen kart sınıfı, abstract da şurada bir A simgesi geliyor ona zaten otomatik.
+
+339
+00:41:27,416 --> 00:41:32,876
+Şimdi public class diyorduk. Bu sefer buna bir public abstract class diyoruz.
+
+340
+00:41:33,652 --> 00:41:38,652
+Abstract'ın olayı, soyut sınıfın olayı, bunun bir soyut metodu var.
+
+341
+00:41:39,132 --> 00:41:43,331
+Bakın, public, abstract, işte dönüş tipi metodu vs. vs.
+
+342
+00:41:44,291 --> 00:41:48,771
+Abstract metodun olayına bakın, hiç o süslü parantezleri yok, görüyor musunuz metodu?
+
+343
+00:41:49,251 --> 00:41:51,511
+Direkt adını yazmışım, bırakmışım.
+
+344
+00:41:53,052 --> 00:41:55,132
+Bunu kalıptığında kullanma sebebimiz şu.
+
+345
+00:41:59,411 --> 00:42:02,851
+Buraya yazdım ama bu sınıf için bir anlamı yok.
+
+346
+00:42:03,011 --> 00:42:05,971
+Yani şöyle bu sınıfa ait bir şekilde doldurmayacağım onu.
+
+347
+00:42:06,691 --> 00:42:13,051
+Sen override et kalıtımla türettiğin sınıflarda bunun içini mutlaka doldur.
+
+348
+00:42:13,451 --> 00:42:24,371
+Yani ben bir sınıftan, şöyle bir abstract sınıftan, abstract metodu olan bir sınıftan kalıtımla bu sınıfları ürettiğim zaman bana hemen der ki sen bu metodları override etmelisin.
+
+349
+00:42:24,491 --> 00:42:25,291
+Beni buna zorlar.
+
+350
+00:42:26,963 --> 00:42:45,003
+Ders sınıfı az önceki önlemimizde beni o kalıtım yapmaya zorlamıyordu, hata vermiyordu. İstesem hesaplanan otu sadece üst sınıfta yazar, alt sınıflarla kullanırdım. Ama burada üst sınıfta metot gövdesi dolu olmadığı için diyor ki altta sen mutlaka bunları override etmelisin. Zaten abstract kullanmamızın bir önemi de buradan geliyor.
+
+351
+00:42:45,907 --> 00:42:59,127
+Bazı metotlar vardır. Aşağıda deriz ki mutlaka onun içinin doldurulması lazım, override edilmesi lazım. O zaman deriz o metodu soyut yapalım ki bunu bilelim, buna emin olalım. Evet, bunu aşağıda override edeceğiz şeklinde.
+
+352
+00:42:59,127 --> 00:43:10,687
+Burada da mesela ödeme yap metoduna bunu uygulamışız. Sistemimizde bir override.
+
+353
+00:43:11,284 --> 00:43:34,304
+Ödeme yap metodumuz var. Bunu işte öğrenci kartı, yetişkin kartı bakın normal sınıfla abstract olmayan sınıflara konkret sınıf deniyor. Onlarla aynı şekilde extent diyoruz. Hiçbir farkı yok. Aynı şekilde abstract classımızın constructori var. Kart sınıfı. Üç tane parametresi var.
+
+354
+00:43:34,672 --> 00:43:44,572
+Alt sınıflarda da onu direkt alıyorum. Süperle almışım. Ekstra eklemek istediklerim ne varsa onu yazmışım. Mesela öğrenci kartında.
+
+355
+00:43:45,012 --> 00:43:53,272
+Evet, ailesi var, sahibin adı var, bakiyesi var. Bir de ona ekstra, işte bu kartın mesela bonus yükleniyormuş demek ki.
+
+356
+00:43:53,412 --> 00:43:59,012
+Bunda ekstra bonusu çıkarmışım. Ama yetişkin kart mesela bonus diye bir şey tanımlamamışım.
+
+357
+00:43:59,592 --> 00:44:05,272
+Aynen kart sınıfında gördüğü nesneleri buraya almışım, koymuşum. Bu şekilde yapabiliyorum.
+
+358
+00:44:07,852 --> 00:44:08,252
+Burada
+
+359
+00:44:09,523 --> 00:44:14,704
+Önceki uygulamayla bağlayalım diyerek bir kitaplık yönetim sınıfı yapmışız.
+
+360
+00:44:16,284 --> 00:44:20,403
+Orada zaten olay patlıyor. Şimdi testi görelim.
+
+361
+00:44:25,076 --> 00:44:29,596
+Şimdi test sınıfından da bakarak gidebiliriz bu noktalara.
+
+362
+00:44:31,215 --> 00:44:38,195
+Ama onun öncesinde yetişmezse diye ben şunu da göstermiş, söylemiş olayım. Bu dersin kapsamında olacak çünkü.
+
+363
+00:44:41,396 --> 00:44:47,056
+Karıştırılan iki tane kavram olur. Siz bunları böyle İngilizce Türkçe çevrelerine de karıştırmayacağınıza inanıyorum.
+
+364
+00:44:47,496 --> 00:44:53,876
+Şimdi override ne? Böyle ezmek. Metodu doldurmak. Metodlar aklımıza gelecek. Override dedik. Metodun içini doldurmak.
+
+365
+00:44:54,036 --> 00:44:56,756
+Bir de overload diye bir kavram var.
+
+366
+00:44:57,836 --> 00:45:01,256
+Overload da metodların aşırı yüklenmesi.
+
+367
+00:45:01,256 --> 00:45:05,256
+Şimdi bizim geçen örneğimizde...
+
+368
+00:45:06,099 --> 00:45:08,679
+İki tane mesela kitap sil metodumuz vardı.
+
+369
+00:45:09,359 --> 00:45:14,219
+İşte bunların, bakın şurada isimleri birbirinin aynısı bu metodların.
+
+370
+00:45:14,339 --> 00:45:15,179
+Aynı sınıftayım.
+
+371
+00:45:15,759 --> 00:45:18,739
+Farklı sınıfta da değilim ve bu overload anlatacağım şu overloadun.
+
+372
+00:45:18,859 --> 00:45:20,379
+Kalıtımla da bir alakası yok zaten.
+
+373
+00:45:20,559 --> 00:45:21,839
+Her sınıfta yapılabilir bir şey.
+
+374
+00:45:22,839 --> 00:45:24,199
+Bakın bu bir hatta değildir.
+
+375
+00:45:24,319 --> 00:45:25,940
+İki metodun aynı isimli olması.
+
+376
+00:45:27,039 --> 00:45:28,379
+Dönüş tipleri de aynı olabilir.
+
+377
+00:45:28,500 --> 00:45:29,460
+O da problem değil.
+
+378
+00:45:29,840 --> 00:45:34,300
+Fakat ne farklı olacak? İçerdikleri parametreler.
+
+379
+00:45:35,219 --> 00:45:41,320
+Bakın burada bu iki metoddan biri integer tipinde bir değişken oluyor, diğeri kitap tipinde.
+
+380
+00:45:41,860 --> 00:45:47,800
+Herkese çalışır. Ben metodu çalıştırırken ne parametre gönderiyorsam otomatik algılar bunu çalıştırır.
+
+381
+00:45:48,259 --> 00:45:54,900
+Burada daha fazla parametre de olabilir. Integer, virgül, kitap olabilir. Burada yine farklı farklı parametre olabilir.
+
+382
+00:45:58,996 --> 00:46:05,195
+Birbirinin aynısı, aynı sayıları sıralı parametrelerin olmaması.
+
+383
+00:46:05,796 --> 00:46:06,776
+Yani ne demek istiyorum?
+
+384
+00:46:07,816 --> 00:46:10,115
+Burada integer, integer derim.
+
+385
+00:46:10,675 --> 00:46:13,115
+Burada işte kitap integer diyebilirim.
+
+386
+00:46:13,155 --> 00:46:16,780
+Ama kalkıp bunun içinde de integer, integer tanımlarsam o zaman...
+
+387
+00:46:17,043 --> 00:46:43,563
+Orada derleyicinin kafası karışır. Ben hangi metodu uygulayacağım şimdi? O yüzden overloadda isimleri aynı olabilir metodların. Fakat parametrelerinin nedir? Tipleri farklı olacak. Sıralarda mesela değişir. Buna integer virgül string olduğunu düşünün. Bu da string virgül integer olabilir. Bu da bir hata değildir. Sırası da farklı olabilir bu noktada. Ama önemli olan şey birbirine tıp atıp aynısı olmayacak o parametrelerin tipleri.
+
+388
+00:46:43,956 --> 00:46:53,255
+ikisi de aynı tipte olmayacak. Böyle bir overload olayını da hızlıca söylemiş olalım. Bu aklımızın bir köşesinde bulunsun.
+
+389
+00:46:56,675 --> 00:46:57,135
+Şimdi
+
+390
+00:46:57,135 --> 00:47:04,175
+burada dedim ki test classından bakabildiğimiz kadar bakalım vaktimizi ettikçe.
+
+391
+00:47:04,175 --> 00:47:05,896
+Şimdi
+
+392
+00:47:07,219 --> 00:47:12,119
+Çalıştıracağımız metotlara gelmeden önce şu kısmı hatırlıyorsunuzdur diye düşünüyorum.
+
+393
+00:47:13,480 --> 00:47:17,619
+ISBN numarası var. Bu ISBN nedir?
+
+394
+00:47:17,619 --> 00:47:34,039
+Bir statik tanımlamıştık diye hatırlıyorum. Bu arada şöyle fonksiyonun metodun üstüne gelip tıklayıp işte şu şekilde Open Declaration'a tıkladığınız zaman o bize gidip açıyor onun bulunduğu sınıfı ve tanımını.
+
+395
+00:47:34,867 --> 00:47:36,488
+Burada ISBN nedir de?
+
+396
+00:47:38,108 --> 00:47:40,288
+Mesela Citring bir ifade yazmışız.
+
+397
+00:47:41,068 --> 00:47:42,228
+Ve bunu döndürmüşüz.
+
+398
+00:47:42,488 --> 00:47:44,468
+Şimdi statik olanların olayı neydi?
+
+399
+00:47:44,668 --> 00:47:46,448
+Statik metotlar, değişkenler.
+
+400
+00:47:46,448 --> 00:47:47,528
+Direkt.
+
+401
+00:47:49,012 --> 00:48:13,052
+Sınıfın adı nokta metodun adıyla çalışabiliyordu. Normalde mutlaka bir sınıftan nesne üretmem lazım o metodu çağırabilmek için. Ama bakın ben burada kitap sınıfından nesne üretmemişim. Direkt kitap sınıfının adını vermişim nokta. ISBN demişim. Niye? Çünkü bu statik bir değişken. Zaten hemen çalıştıracak bana bunu. O da bana çalıştırmış.
+
+402
+00:48:13,588 --> 00:48:15,108
+Çıktığının bu olması gerekiyor.
+
+403
+00:48:15,908 --> 00:48:18,208
+Hem bir nesne de verebilirdik.
+
+404
+00:48:18,548 --> 00:48:21,568
+Ama nesne ile çağırmanın çok uygun olmayacağı düşünülüyor.
+
+405
+00:48:21,668 --> 00:48:24,908
+Niye? Çünkü o sanki o nesneye özgü bir şeymiş gibi anlaşılabilir o konu.
+
+406
+00:48:25,248 --> 00:48:26,468
+Fakat bizde öyle bir durum yok.
+
+407
+00:48:27,228 --> 00:48:32,188
+Şimdi burada hızlıca bu kısımlarda da kitap nesnelerini oluşturmuşuz.
+
+408
+00:48:32,468 --> 00:48:34,548
+Üç parametre alıyordu hatırlayın.
+
+409
+00:48:34,708 --> 00:48:36,968
+Yazarın adı, kitabın adı, ISBN numarası.
+
+410
+00:48:39,699 --> 00:49:05,559
+Yine 4, 5, 6 diğer kitapları da böyle oluşturmuşuz. Burada sadece kitap oluşturduk. Daha herhangi bir atamamız yok. Şu ortada yeşile yorum satırı yaptığımız kısımlarda da şunu anlatmaya çalışıyoruz. Şimdi biz test sınıfında burada kitaplık nesnelerini oluşturabiliyorduk. Kitaplığın içinde hatırlayın ne yapıyordu? Raf nesnesini oluşturuyordu. Ben şuraya kitaplık 5 dediğim zaman.
+
+411
+00:49:06,003 --> 00:49:09,824
+Bu neydi kitaplık sınıfının parametresi, Construct'ın?
+
+412
+00:49:10,264 --> 00:49:12,063
+Raf sayısını ona vermiş oluyordum aslında.
+
+413
+00:49:12,384 --> 00:49:15,543
+Beş raflı bir kitaplık istiyorum gibi bir şeydi bu.
+
+414
+00:49:15,543 --> 00:49:24,543
+Şimdi biz rafları otomatikman kitaplığın içinde oluşturduğumuzdan dolayı bu sınıfta, şu test class'ında herhangi bir rafa ekle falan filan yapmıyorduk.
+
+415
+00:49:24,684 --> 00:49:27,824
+Kitaplığın içindeki metotlarla o rafa eklemeleri hallediyorduk.
+
+416
+00:49:27,903 --> 00:49:29,503
+Raf sınıfına oradan gidiyorduk.
+
+417
+00:49:30,344 --> 00:49:32,963
+İstesek buradan rafa erişir miyiz?
+
+418
+00:49:33,327 --> 00:49:45,208
+Evşiriz. Çünkü rafın konstruktörü public. Yani bir sınıfın public bir konstruktörü varsa bu nedir? Ben bu sınıfa her yerden nesne üretebilirim.
+
+419
+00:49:45,907 --> 00:49:59,628
+Ama biz yapı gereği, tasarım gereği demiştik ki ben o kitaplığa bunların böyle direkt bağlı olmasını istiyorum. O yüzden kitaplık oluştururken rafı oluşturuyorum ki direkt rafa ekleyeyim. O yüzden şöyle bir olaya girmemiştik.
+
+420
+00:50:00,000 --> 00:50:08,260
+Yapılabilir mi bu? Yapılabilmesi var mı? Evet olur ama biz kendi tasarımımız gereği kitaplığın içinden rafa ulaşmıştık.
+
+421
+00:50:10,800 --> 00:50:17,880
+Şimdi bir kitaplık nesnesi, kitaplık sınıfından bir nesne ürettiğimiz zaman, hemen geleyim kitaplık sınıfına.
+
+422
+00:50:20,340 --> 00:50:42,340
+Bunları hatırlayacaksınızdır diye düşünüyorum. Bir nesne ürettiğimde bakın ona bir ne? Integer, bir değer göndermiştim. Bunun raf sayısıydı. Kitaplık nesnesi bir raf dizisi tutacaktı. Zaten üye alanında da bir raf dizisi var. Hemen ben bu raf dizisini burada bir...
+
+423
+00:50:42,739 --> 00:50:48,679
+Tanımlıyorum. Önce bir nivle diziyi oluşturuyorum. Burası sadece hani ön tam gibiymiş. Burada esas oluşturma kısmı.
+
+424
+00:50:49,399 --> 00:50:56,079
+Şimdi raf nesnesine şu satırla raf dizisini oluşturduğum bir kitaplık içindeki. Beş tane rafı var diyelim.
+
+425
+00:50:56,799 --> 00:51:00,459
+Ama her bir rafın içi şu anda boş, nal durumda.
+
+426
+00:51:00,815 --> 00:51:18,455
+Benim o raflara da istiyorum ki her rafa birer kitap dizisi atayım. Kitapları tutan bir dizi atayım. O zaman şu da bir for döngüsüyle ne yapmıştık? Rafa sıfırıncı gözünden başlayarak her birinde yeni bir raf nesnesi oluştu denilmiştik.
+
+427
+00:51:19,092 --> 00:51:25,092
+Bu şekilde rap nesnesi New Rap'ı çalıştırdıkça şuradan ne yapıyordu?
+
+428
+00:51:25,592 --> 00:51:29,312
+Her bir rap çalıştıkça bakın New Rap dediğin anda şu çalışıyor.
+
+429
+00:51:31,252 --> 00:51:32,012
+Ne yapıyormuş?
+
+430
+00:51:32,532 --> 00:51:37,992
+10 elemanlı bir kitap tipinden nesneleri tutan dizi oluşturuyor.
+
+431
+00:51:38,892 --> 00:51:40,112
+Sistemimiz böyleydi.
+
+432
+00:51:42,231 --> 00:51:45,092
+Kitaptan olayımız...
+
+433
+00:51:47,635 --> 00:51:50,435
+Pardon, kitaplıkta olayımız böyle.
+
+434
+00:51:50,735 --> 00:51:52,655
+Atlaya atlaya buradan rafa gidiyoruz.
+
+435
+00:51:53,175 --> 00:51:53,795
+Rafladı.
+
+436
+00:51:54,215 --> 00:51:56,155
+Kitap nesnelerini tutan diziyi oluşturuyordum.
+
+437
+00:51:56,515 --> 00:52:00,315
+Daha sonra eklemeler, silmeler bunlarda hiçbir değişiklik yok.
+
+438
+00:52:00,415 --> 00:52:02,715
+Aynaları devam ediyor.
+
+439
+00:52:03,495 --> 00:52:06,995
+Ben burada şimdi bu yeni eklediğimiz class'tan da biraz bahsetmek istiyorum.
+
+440
+00:52:07,155 --> 00:52:09,195
+Kitaplık yönetim class'ı eklemiştik.
+
+441
+00:52:10,035 --> 00:52:13,375
+Bu kitaplık yönetim class'ında ne vardı?
+
+442
+00:52:16,019 --> 00:52:25,299
+Tasarımına bakalım. Kitap saat metodu vardı. Biz bunu büyük ihtimalle test classından çağırmışızdır. O yüzden ben bir test classına gideyim, bakayım aslında.
+
+443
+00:52:27,039 --> 00:52:36,219
+Şimdi kitaplar eklendi. Tüm rafları göster dediğimde bakın. Birinci rafa bunları eklemiş. Şurada kitap ekleleri.
+
+444
+00:52:36,820 --> 00:52:57,360
+Üç kitabı ilk rafa, diğer üç kitabı, iki kitabı diğer rafa, işte başka kitabı bir rafa. Bu şekilde eklemişiz. Sıfırıncı raftaki, birinci raftaki, ikinci raftaki. Bakın üç boş, dört boş. Bu şekilde beş rafı da gördük. Şimdi tüm raftları gördükten sonra geldim şuraya.
+
+445
+00:53:04,751 --> 00:53:12,751
+Bu sınıftan bir nesne, ne nesnesi tutuyor? Bu kitaplık parametresi, kitaplık nesnesi parametresine gönderiyorum bunu.
+
+446
+00:53:13,592 --> 00:53:16,991
+Bunu ne yapacak bu kitaplık nesnesi?
+
+447
+00:53:19,231 --> 00:53:21,411
+Kitaplık yönetime de bakalım hemen.
+
+448
+00:53:22,552 --> 00:53:26,951
+Kitaplık yönetimi oluşturduğum anda bu çalışacak ve bu biline olacak.
+
+449
+00:53:28,019 --> 00:53:36,099
+Kitaplık tipinde bir tane nesne, bakın dizi falan değil, bir kitaplığı tutacak, bir kitap yönetimine bir kitaplığın bilgilerini tutacağım demek oluyor.
+
+450
+00:53:37,380 --> 00:53:43,639
+Bunu oluşturduk, tamam. Şimdi tanımlamalarımı yapıyorum. Abstract class'da dikkat etmem gereken şey şu.
+
+451
+00:53:45,059 --> 00:53:52,099
+Öğrenci kartı tanımlaması yapacağım mesela. Demin gösterdik, bu bizim klasik tanımlama çeşidimizde. Öğrenci kartı.
+
+452
+00:53:53,523 --> 00:53:59,503
+Kart 1, işte New Orange kartı bu şekilde ID'si, adı ve bakiyesini verebiliyorum.
+
+453
+00:54:00,523 --> 00:54:04,623
+Ama şöyle de bir tanımlamamız olur demiştik.
+
+454
+00:54:04,804 --> 00:54:14,123
+Üst sınıfın adını ver, nesnenin adını ver ve New'de hangi sınıftan istiyorsan yine onu belirterek tanımlayabileceğini söylemiştik.
+
+455
+00:54:14,708 --> 00:54:34,288
+Aynı şekilde kart 2 de böyle tanımlanabiliyor. İstersek bu şekilde yazabiliriz bir yetişkin kart olarak. İstersek de direkt kart deyip de yazabiliyoruz. Hiçbir farkı yok. Abstract class da sadece nesil üretemiyoruz mesela. Kalkıp kart bir eşittir, new kart falan diyemezdik o noktada.
+
+456
+00:54:35,603 --> 00:54:39,703
+Ama bu şekilde A sınıfına dönerek A sınıfı özgü nesneyi üretmiş olduk.
+
+457
+00:54:40,103 --> 00:54:47,463
+Bunların içeriğini yazdırmak için de bakın, system out printelerin içerisine bunu yazınca bunun içinde to string metodu var.
+
+458
+00:54:49,543 --> 00:54:50,703
+Karta geleyim.
+
+459
+00:54:54,675 --> 00:54:59,635
+Kartın içinde to-string yazdığım için tık tık tık yazıyor.
+
+460
+00:54:59,736 --> 00:55:04,016
+Alt sınıflarda, mesela yetişkin kartında ben to-string yazmamışım.
+
+461
+00:55:04,456 --> 00:55:07,596
+Ama üst sınıfta bir kere to-string güzelce doldurulmuş içi.
+
+462
+00:55:07,976 --> 00:55:11,056
+O yüzden bunu kullanacak, hiçbir sıkıntı oluşmayacak.
+
+463
+00:55:12,196 --> 00:55:18,615
+Onun dışında, öğrenci kartında to-string'i mesela nasıl override etmişiz?
+
+464
+00:55:20,148 --> 00:55:45,308
+Evet, git, kart sınıfındaki to sit ring'i kullan. Bir de artı, bu sınıfta bir bonus vardı o kartta. Bir de buna ekle diye ben bunu kendime ekstra mesela bu şekilde yazmışım. Bu da yine pratik şekilde yazılabiliyor. Source'a gelip, sağ tıklayıp, override implement deyip, constructor'da, pardon, şurada source'da, generate to sit ring dediğiniz zaman,
+
+465
+00:55:45,940 --> 00:55:49,340
+Zaten şu an olduğu için yapmayacak ama olmayan bir sınıfta yapsaydık.
+
+466
+00:55:50,019 --> 00:55:52,619
+Bunu gayet rahat bir şekilde üretebilecektik bu şekilde.
+
+467
+00:55:54,579 --> 00:55:58,680
+Böyle yazıp çalıştırdığımda bakın güzelce içeriklerini bana verdi.
+
+468
+00:56:00,260 --> 00:56:01,720
+Şimdi bir işlemler yapacağız.
+
+469
+00:56:01,880 --> 00:56:05,059
+Burada bir iki böyle karmaşık olabilecek bir metod var.
+
+470
+00:56:05,200 --> 00:56:07,519
+Bunlar zaten daha detaylı şekilde siz de bakarsınız.
+
+471
+00:56:07,519 --> 00:56:10,220
+Şimdi birincisi kitap sat metodu.
+
+472
+00:56:11,219 --> 00:56:15,019
+Kitaplık yönetimden kitap sat metodunu nasıl çalıştırmışız bakalım.
+
+473
+00:56:16,119 --> 00:56:17,839
+Bu arada nasıl parametre dalıyormuş?
+
+474
+00:56:18,459 --> 00:56:21,319
+Bir kitabı bir kart sahibi alıyor.
+
+475
+00:56:21,459 --> 00:56:23,599
+Mesela kart bir öğrenci kartıydı galiba bizim.
+
+476
+00:56:24,339 --> 00:56:27,939
+Bir kitap bir nesnesini bu öğrenci kartı öğrenci alacak.
+
+477
+00:56:28,139 --> 00:56:31,619
+Sen bu satış işlemini gerçekleştir dediğimde kitap sata geldim.
+
+478
+00:56:33,279 --> 00:56:33,879
+Ne yapıyorum?
+
+479
+00:56:34,739 --> 00:56:36,039
+Kitaplık nokta.
+
+480
+00:56:36,788 --> 00:56:43,628
+Kitap arayla, şuradaki kitap ara artık integer dönen bir metot benim için.
+
+481
+00:56:44,927 --> 00:56:50,268
+Bunun içeriye integer dönecek ki bana raf numarasını gönderecek.
+
+482
+00:56:50,268 --> 00:57:01,827
+Yani aradığım kitabın, ben oraya kitabın adını bul, daha sonra bunu ara, kitap ara metodunu, geçen uygulamada da yazmıştık halinden, daha sonra raf numarasını döndür.
+
+483
+00:57:02,771 --> 00:57:08,371
+Eğer raf numarası, eksi birse, kitap ara metodunda demek ki nasıl bir dönüş var?
+
+484
+00:57:14,739 --> 00:57:42,299
+Üstüne gelelim. Kitap araya bize götürsün. Integer dönüyor dedik. Arıyor arıyor. Eğer bulamazsa eksi bir dönüyormuş. Eğer bulursa da bulunduğu rafın numarasını dönüyor. Böyle bir metot. Ondan sonra gelelim kitaplık yönetme. Eğer bana eksi bir dönmüşse kitap araya metodu neymiş o? Kitap yok. Öyle bir kitap bulunmuyor.
+
+485
+00:57:43,987 --> 00:57:51,407
+Ama eğer varsa, eksi buradan farklı bir şeye dönmüşse, yani raf numarasını bana güzelce döndürmüşse kitap ara metodu.
+
+486
+00:57:52,867 --> 00:57:56,067
+Buraya tekrar bakmak isterseniz, şu hızlıca açayım.
+
+487
+00:57:57,227 --> 00:57:59,447
+Kitap ara metodu, ne olayı vardı bunun?
+
+488
+00:58:01,827 --> 00:58:05,767
+Rafın uzunluğunu alıyordu ve bir diziye giriyordu, bakıyordu.
+
+489
+00:58:05,907 --> 00:58:11,107
+Tek tek kitapları geziyordu, ona gönderdiğim kitap adını bulana kadar bakıyordu.
+
+490
+00:58:11,507 --> 00:58:38,447
+Burada mesela şunu da söyleyeyim. Şu null kontrolü yapmanız çok önemli. Yoksa null pointer exception denen hatayı alıyoruz. Yani bir boş bir nesneyi nokta bir metot dediğiniz zaman eğer o nesne boşsa nullsa hata verir. Yani şuradaki kitabın kitap nesnesi get at metodunu çalıştırabilmem için kitabın boşluğu olmaması lazım. O yüzden burada önce bir kitap null değilse kontrolü yapmam gerekiyor.
+
+491
+00:58:38,996 --> 00:58:50,056
+Daha sonrasında dediğimiz gibi o kitabın adını al ve equals o kitap adına eşitse gönderdiğim kitap adıyla aynıysa tamam aradığım kitaptır. Return E. O numarasını bana döndür.
+
+492
+00:58:50,976 --> 00:59:00,155
+Bu şekilde döndürüyor. Şimdi x1 gelmişse dedik ki kitap yok, yazacak. Eğer varsa da bu sefer ödeme yap metoduna geçecek şimdi.
+
+493
+00:59:00,816 --> 00:59:05,456
+Burada ödeme yap diye bir metodumuz var. Kart sınıfından bir metot.
+
+494
+00:59:06,003 --> 00:59:08,763
+Ödeme yapmaya başlayacak. Hemen ona da bakalım.
+
+495
+00:59:10,384 --> 00:59:16,223
+Şimdi, ödeme yap metodu ne demiştik? Bakın, soyut. Aşağıda dolduracağım bunu. Burada dolduramıyorum.
+
+496
+00:59:17,183 --> 00:59:26,123
+O zaman gidiyorum. Bu demek ki aşağılarda dolmuştur. E, kart 1'de, kart 2 veya fark etmez. Herhangi bir kart sınıfına gideyim.
+
+497
+00:59:27,384 --> 00:59:30,083
+Ödeme yapı bakın, her ikisinde de yazmışım. Şimdi.
+
+498
+00:59:30,900 --> 00:59:33,700
+Mesela yetişkin kartındaki ödeme nasıl olur?
+
+499
+00:59:35,740 --> 00:59:42,760
+Get bakiye fiyattan büyükse, bakiyem fiyattan fazlaysa artık ödeme yapabilirim demek.
+
+500
+00:59:42,760 --> 00:59:52,099
+O zaman set bakiye o bakiyemden fiyatı düş. Basitçe elimdeki paradan kitabın fiyatını düşeceğim.
+
+501
+00:59:54,356 --> 00:59:59,356
+Bu arada tabii ki ona fiyatını göndermiş olmam gerekiyor.
+
+502
+01:00:01,456 --> 01:00:03,675
+Şuradan kitabın, her kitabın bir fiyatı var.
+
+503
+01:00:04,276 --> 01:00:06,836
+Get fiyatla kitabın fiyatını göndermiş.
+
+504
+01:00:07,216 --> 01:00:09,536
+Oluyorum, bu da bizim kitap sınıfına eklediğimiz.
+
+505
+01:00:09,675 --> 01:00:12,016
+Sanırım bu geçen, evet yoktu, geçen uygulamada yoktu.
+
+506
+01:00:12,016 --> 01:00:15,736
+Bakın artık kitaplara da otomatik bir 10 lira diye bir fiyat eklemişiz.
+
+507
+01:00:15,816 --> 01:00:17,716
+Her biri 10 liralık fiyatta bu kitaplar.
+
+508
+01:00:19,655 --> 01:00:20,836
+Get bakıya eksi fiyat.
+
+509
+01:00:21,780 --> 01:00:39,199
+Fiyatı bu şekilde çıkarıyorum. Daha sonrasında diyorum ki bunu boolean tanımlamışım. True dönsün. Ben çıkayım. Böyle metotlara dönüş tipi vermenin güzel yanı. Mesela return deyip dönüş tipi bir şey yazıp oradan metodu sonlandırıp çıkabiliyoruz.
+
+510
+01:00:48,563 --> 01:01:02,963
+O şuradaki kitap satış metodundaki şurası false olacağı için burayı işlemeyecek, satışı gerçekleştirmeyecek. Bana direkt şu else geçecek, bakıya yetersiz diyecek.
+
+511
+01:01:04,623 --> 01:01:13,243
+Yetişkin karttaki ödeme işlemi bu şekilde. Bir de öğrenci kartına bakalım. Oradaki öğrenci kartındaki işlemde bir de bonusu var bu işin.
+
+512
+01:01:14,911 --> 01:01:34,731
+Yine sistem aynı işliyor ödeme yata. Bakayım o fiyattan büyük mü buna bak. Baktım tamam büyük fazla bakıyan var. O zaman çıkarma işlemini yap. Bakayım bu şekilde güncelle ve bir de bonus kazanayım. Her alışverişte o ödediğim fiyatın işte %20'si bana bonus olarak gelsin. Mesela burada.
+
+513
+01:01:35,443 --> 01:01:59,723
+Fiyatlarımız aslında sabit bütün kitaplar için 10 demişiz. Bana bir 2 lira bonus ekleyecek mesela. Bonus alanım böyle güncellenmiş olacak. Eğer bonusum, mesela şu ifadede bonusum fiyattan azsa veya eşitse o zaman ne yapacak? Gelecek bana bonuslarla ödeme gerçekleştirecek. Bu sefer bonus bilgimden fiyatı çıkaracak.
+
+514
+01:02:02,708 --> 01:02:15,887
+O fiyattan daha az param varsa ve yeterli bonusun da bulunuyorsa o fiyata eşit veya ondan daha çok bonusun varsa bu bonusdan fiyatı çıkararak bu şekilde işlemi gerçekleştirecek.
+
+515
+01:02:17,288 --> 01:02:26,248
+Burada dediğimiz gibi true dönecek ki şuradaki kitap sat metoduna hop şuraya true gönderecek. Ben de satış gerçekleşti diyebileceğim.
+
+516
+01:02:28,563 --> 01:02:35,143
+Aksi halde false döndürüyor. İşlemi gerçekleştiremiyor. Ne bakiyem var ne bonusum var. O zaman false dönüyorum.
+
+517
+01:02:35,623 --> 01:02:41,203
+Ve şuradaki kitap sat metodumla ne olmuş oldu? False dönmüş oldum.
+
+518
+01:02:42,423 --> 01:02:44,543
+As kısmını yapar. Bakiye yetersiz der.
+
+519
+01:02:45,143 --> 01:02:55,983
+Peki, satışı gerçekleştirebilecek olduğu durumda, yani burası true döndüğü zaman, şu kısım true döndüğü zaman ödeme yap metotları az önceki şurada gördüğüm ödeme yaplar.
+
+520
+01:02:56,436 --> 01:03:00,056
+O zaman kitap sil metodunu çalıştıracak.
+
+521
+01:03:00,996 --> 01:03:06,016
+Bu da yine kitaplıktan, kitaplık sınıfından ulaştığımız bir metoddu.
+
+522
+01:03:06,735 --> 01:03:12,076
+İlgili raf numarasındaki o kitabı, raf numarasını biliyorum zaten kitap hangi rafta.
+
+523
+01:03:12,076 --> 01:03:15,815
+O kitabı raftan silecek.
+
+524
+01:03:16,996 --> 01:03:20,336
+Bu şekilde işlemi gerçekleştirmiş oluyoruz.
+
+525
+01:03:25,108 --> 01:03:31,048
+Evet, genel olarak söyleyebileceklerimiz bu şekilde. Burada getiriler, setirler zaten.
+
+526
+01:03:31,048 --> 01:03:39,468
+Size dediğim gibi bu uygulamayı böyle tekrar, çünkü metotlar ilk seferde biraz karışık gelebilir, anlaşılmaz gelebilir.
+
+527
+01:03:40,308 --> 01:03:49,828
+Şöyle tekrar tekrar nereden nereye gitmiş, metodu nasıl çalıştırmış, bunlara baka baka tekrar ederek inşallah yerleşmiş, oturmuş olur diyorum.
+
+528
+01:03:52,148 --> 01:03:55,748
+Çok da konuyu uzatmadan sorunuz varsa alabilirim.
+
+529
+01:04:02,675 --> 01:04:09,096
+Haftaya labımız, tekrar hatırlatayım, saat 9'da olacak. Onun yine duyurusunu yaparız. Sistemde de güncelleriz.
+
+530
+01:04:12,335 --> 01:04:15,596
+Benim bu hafta anlatacaklarım bu şekildeydi.
+
+531
+01:04:20,628 --> 01:04:21,988
+Teşekkürler hocam. İyi akşamlar.
+
+532
+01:04:22,548 --> 01:04:26,848
+Ben teşekkür ediyorum. Hepinize iyi akşamlar diliyorum. Görüşmek üzere.

@@ -1,0 +1,3299 @@
+1
+00:06:40,115 --> 00:06:41,315
+Arkadaşlar, günaydın.
+
+2
+00:06:48,403 --> 00:06:54,843
+5 dakika bekleyelim. Arkadaşlarınız da geri dilsin. Sonra derse başlarız.
+
+3
+00:12:06,740 --> 00:12:08,180
+Evet arkadaşlar, merhabalar.
+
+4
+00:12:11,220 --> 00:12:16,639
+Şimdi dersimize başlayalım. Benim 10 çeyrek geçe bir toplantım var.
+
+5
+00:12:18,799 --> 00:12:25,019
+Ders slide'ının sonunda size Banu Hocalar bir video hazırlamışlar.
+
+6
+00:12:26,740 --> 00:12:34,080
+Toplantı bitene kadar. Yine kayıtta kalırsınız. Yani yarım saat, kırk dakika falan sürecek bir şey. Sonra terse devam ederiz.
+
+7
+00:12:35,059 --> 00:12:37,059
+O videoları izlersiniz.
+
+8
+00:12:38,899 --> 00:12:42,739
+Ondan sonra dersin kaldığımız yerden devam ederiz.
+
+9
+00:12:45,039 --> 00:12:47,599
+Şu an 50 kişiye yaklaşmış zaten sınıf.
+
+10
+00:12:48,619 --> 00:12:51,439
+Şöyle yapalım, lütfen paylaşayım.
+
+11
+00:13:03,124 --> 00:13:15,124
+Şimdi geçen hafta biz logic ve ispat konularını tamamladık. Bunların örnek sorularına da baktık. Bugünkü yapacağım şey logic'in bir uygulaması olacak.
+
+12
+00:13:15,124 --> 00:13:21,124
+Şimdi şöyle bir şey yapsam, yazdığım görünüyor mu arkadaşlar?
+
+13
+00:13:25,908 --> 00:13:27,908
+Görünürüz.
+
+14
+00:13:27,908 --> 00:13:38,908
+Tamam. Güzel. Bugün çünkü grafik tabletiniz yanımda değil. Belki yetişemeyeceğim. Okula daha gidemedim. Birazcık bununla idare edeceğiz.
+
+15
+00:13:38,908 --> 00:13:50,908
+Şimdi Loji'nin bir uygulaması, bilgisayar birimlerinde uygulaması dedik. Belki bu konuya Loji'nin diğer derslerinde girdiniz.
+
+16
+00:13:51,796 --> 00:13:54,036
+Bununla alakalı birazcık çalışacağız.
+
+17
+00:13:54,916 --> 00:13:58,355
+Genel olarak, bir bilgisayar sistemi.
+
+18
+00:14:00,196 --> 00:14:04,996
+Arkadaşlar, mouse'u, bir dakika benim bunu kapatmam lazım.
+
+19
+00:14:05,316 --> 00:14:10,516
+Siz hareket edince, sizden bazı şeyler geliyor.
+
+20
+00:14:12,115 --> 00:14:14,596
+Nereden kapatabilirim?
+
+21
+00:14:19,923 --> 00:14:20,923
+Notat.
+
+22
+00:14:27,988 --> 00:14:29,988
+Herhalde şimdi olmaması lazım.
+
+23
+00:14:31,388 --> 00:14:35,488
+Biriniz bir mouse ile yazmayı dener misiniz? Şu an yapılamaması lazım.
+
+24
+00:14:40,211 --> 00:14:51,392
+Çünkü geçen hafta dersin birinde öğrencinin kardeşi Mouse'u eline almış. Bizim tahtayı sürekli karala ettiriyordu. Baya bir çocuk sabot etti bizim dersi.
+
+25
+00:14:53,211 --> 00:15:06,511
+Evet. Temel bilgisayar sisteminde, bütün yani en küçükten en büyük bilgisayar sistemlerinde arkadaşlar biliyorsunuz, bilgiler sıfır ve birlerle saklanıyor. Bu sıfır ve birler
+
+26
+00:15:07,443 --> 00:15:21,843
+İşletim sisteminin komut setinde bulunan komutlarla, data ise işleniyor, komutsa bunlar decode edilip çözülüyor ve komutun gereği yapılıyor.
+
+27
+00:15:21,843 --> 00:15:31,644
+Bunların arkasında yapılan işlemler de bu lojik kapılarla temel toplama çıkarmayı bir işlemlerdir arkadaşlar. Her bir komut.
+
+28
+00:15:32,947 --> 00:15:43,447
+hafıza birimlerinden ve bu tarz kapılarla kapılardan oluşturulmuştur, kodlanmıştır işlenceli. Bunu organizasyon veya mimari dersinde anlatırlar.
+
+29
+00:15:43,447 --> 00:15:50,107
+Bunun en temeli budur ve burada da mantık kuralları çalışır. Bununla alakalı dersleri göreceğiz.
+
+30
+00:15:50,107 --> 00:15:58,288
+Burada bol fonksiyonları, fonksiyonların gösterimleri, kapılar ve karnı halitalarının konularına gireceğiz.
+
+31
+00:15:59,124 --> 00:16:07,624
+Logic'de Carnot'ları gördünüz mü? Daha geldiniz mi? Bilmiyorum nerelerdesiniz, yazar mısınız?
+
+32
+00:16:14,548 --> 00:16:16,548
+Görmedik, hayır, hafı, de.
+
+33
+00:16:16,548 --> 00:16:19,548
+Lojik fonksiyonları gördüğünüz zaman muhtemelen.
+
+34
+00:16:23,379 --> 00:16:32,379
+Tamam. Yakın gitmek iyi olmuş. Normalde bu konu bu derste en son haftaydı. Yani anlamsız bir şey oluyordu.
+
+35
+00:16:32,379 --> 00:16:40,379
+Ben bu hafta yapmaya karar vermiştik. Ben en başında bu cebriyle söyledim. İkisi beraber iyi gider.
+
+36
+00:16:40,379 --> 00:16:50,379
+Şimdi arkadaşlar, bunun cebri genel olarak 0 ve 1'ler üzerinde toplama, çarpma ve değilini alma şeklinde çalışıyor.
+
+37
+00:16:50,580 --> 00:16:52,580
+üç tane temel operatörümüz var.
+
+38
+00:16:53,580 --> 00:16:58,580
+Buradaki toplamanın karşılığı yine mantıkta kullandığımız
+
+39
+00:16:58,580 --> 00:17:00,580
+Bora karşılık gelecek.
+
+40
+00:17:00,580 --> 00:17:03,580
+Bu End'e karşılık gelecek.
+
+41
+00:17:04,579 --> 00:17:07,564
+Bu da Nata karşılık gelecek.
+
+42
+00:17:11,571 --> 00:17:17,211
+Ve aşağıdaki gibi bunun özellikleri var. Birazdan doğruluk tablolarında da yine göreceğiz.
+
+43
+00:17:18,491 --> 00:17:23,091
+Doğru ile doğrunun toplamı doğru ediyor. İşte burada bir ile birin toplamı bir.
+
+44
+00:17:23,851 --> 00:17:28,731
+Orcups gibi düşüneceğiz bunu. Bunun üzerinden işlemler yapacağız.
+
+45
+00:17:39,667 --> 00:17:48,667
+Boolean Product da yine burada hangi kapı gibi davranıyor? End kapısı gibi davranıyor. Bugün biraz yamuk yazabilirim çünkü mouse ile işaretliyorum arkadaşlar.
+
+46
+00:17:49,667 --> 00:17:52,667
+Birazcık alışamadım buna.
+
+47
+00:17:53,667 --> 00:17:58,667
+1x1, 1'dir. Diğer durumlar 0'dır. Komplement'te ne olduğunu biliyoruz.
+
+48
+00:17:59,667 --> 00:18:07,627
+Şu ifadenin çözümüne bakarsak 1 ile 0'ın toplamı ne olacak burası? 1 olacak. Bunun değili 0 olacak.
+
+49
+00:18:08,468 --> 00:18:14,468
+1 ile 0'ın çarpımı burası 0 olacak. 0 artı 0 sonuçta bize 0 verecek.
+
+50
+00:18:14,468 --> 00:18:16,468
+Tamam.
+
+51
+00:18:20,211 --> 00:18:23,031
+Boolean ifadeler ve Boolean fonksiyonlar.
+
+52
+00:18:24,051 --> 00:18:27,632
+Bir b kümesi 0 ve 1 elemanlarından oluşuyor.
+
+53
+00:18:27,632 --> 00:18:32,491
+b'nin eninci kuvveti işte x1, x1, x2, xn tane eleman.
+
+54
+00:18:33,011 --> 00:18:40,172
+Bu x'lerin her birisi b'nin bir elemanı işte i'de 1'den n'e hangisi değil?
+
+55
+00:18:41,451 --> 00:18:47,351
+Yani herhangi bir Boolean fonksiyonunu biz 0 ve 1'ler dizisi şeklinde, string şeklinde ifade edeceğiz.
+
+56
+00:18:47,667 --> 00:18:50,987
+Buna en bittik bir boylem fonksiyonu diyeceğiz.
+
+57
+00:18:51,768 --> 00:18:59,447
+Herhangi bir x değişkenin değeri b kümesinden ise alabileceği değerler 0 ve 1'dir. x değişkenine boylem değişken denir.
+
+58
+00:18:59,947 --> 00:19:07,127
+bn'den b'ye olan bir fonksiyon da eninci dereceden boylem fonksiyonudur. Yani bunu şu şekilde de söyleyebiliriz.
+
+59
+00:19:07,627 --> 00:19:09,167
+b üzeri n'den
+
+60
+00:19:10,967 --> 00:19:11,727
+b'ye
+
+61
+00:19:11,727 --> 00:19:13,268
+Aslında b'den
+
+62
+00:19:13,268 --> 00:19:15,307
+b üzeri n'e de denebiliriz.
+
+63
+00:19:15,700 --> 00:19:20,820
+Bu şekilde bir ifadeyi en elemanlı string şeklinde yazmaktır.
+
+64
+00:19:22,860 --> 00:19:26,200
+Aşağıdaki boolean fonksiyonunun değeri nedir dediğinizde
+
+65
+00:19:26,700 --> 00:19:32,600
+Aynı şekilde bir doğruluk tablosu yapar gibi diğer şeylerde burada da doğruluk tablosu yapıyoruz.
+
+66
+00:19:33,100 --> 00:19:35,660
+Kaç tane inputumuz varsa bunları
+
+67
+00:19:36,180 --> 00:19:43,100
+bir doğruluk tablosu da gösteriyoruz. Tabi bu doğruluk tablosunu yapmadan önce lojik devre şemasını çizmenizi isteyebiliriz.
+
+68
+00:19:43,667 --> 00:19:44,667
+Bu da şudur.
+
+69
+00:19:49,491 --> 00:19:51,491
+İşte böyle bir lojik devre var.
+
+70
+00:19:55,955 --> 00:19:59,475
+Bu lojik devre, L, D diyelim şuraya.
+
+71
+00:20:00,955 --> 00:20:04,355
+Bir inputtan ve outputtan oluşuyor.
+
+72
+00:20:04,355 --> 00:20:10,475
+Inputumuz kaç tane burada? Üç tane input var. Şuraya genelde üç yazılarlar. Böyle çizgi çekip, buraya da bir yazılır.
+
+73
+00:20:10,835 --> 00:20:13,915
+Bu lojik devrenin şeması budur. Tamam mı?
+
+74
+00:20:14,900 --> 00:20:23,860
+Ne yapacağız? X, Y ve Z üç tane değişkenimiz varsa, bu üç değişkene ait bütün durumlara karşılık şu fonksiyonun sonucunu yazacağız.
+
+75
+00:20:24,760 --> 00:20:27,180
+Daha sonra elde ettiğimiz bu sonuç,
+
+76
+00:20:29,360 --> 00:20:30,200
+bizim
+
+77
+00:20:30,200 --> 00:20:37,260
+lojik devremizi oluşturacak. Onun çizimine de birazdan bakacağız. Çizimleri bu da slide'a koymamış oca galiba.
+
+78
+00:20:37,260 --> 00:20:41,260
+İlk baştaki slide de var da, onu da konuşuruz şimdi.
+
+79
+00:20:41,715 --> 00:20:49,715
+Ne yapıyoruz arkadaşlar? X ile Y'yi ayrı bir terim olarak, Z'yi ayrı bir terim olarak burada sütunlara yazmış Z'nin değilini.
+
+80
+00:20:49,715 --> 00:20:57,715
+X çarpı Y nedir? X ve Y birse birdir. Diğer durumlarda sıfır olacaktır. Bu şurada belirtilmiş.
+
+81
+00:20:57,715 --> 00:21:04,715
+Z'nin değil de şu sütunun tam değilini alıyoruz buraya yazıyoruz. Burada sorun yok herhalde bunlar bildiğiniz şeyler.
+
+82
+00:21:05,332 --> 00:21:10,892
+Şurada da bu iki değişkenin değerlerini topluyoruz. Topladığımız zaman bu sonuçlar geliyor.
+
+83
+00:21:10,892 --> 00:21:21,172
+Bunun lojik devresini çizin denirse end işlemi arkadaşlar şu şekildedir. Tabii bizim input olarak x.
+
+84
+00:21:28,819 --> 00:21:41,819
+x, y ve z input'larımız var. Bunun devresini çizin dediğinde yapılacak şey şu şekilde. x ile y birleşecekmiş.
+
+85
+00:21:42,819 --> 00:21:47,819
+Ve bu bir çarpma işlemi olduğu için çarpma işlemi end kapısıdır.
+
+86
+00:21:49,819 --> 00:21:55,531
+Şöyle bir end kapısı çizmeye çalışalım. Sonra z'nin değili
+
+87
+00:21:56,884 --> 00:22:01,443
+bunun çıktısıyla toplanacakmış değilini almak da şu şekilde oluyor.
+
+88
+00:22:05,203 --> 00:22:13,963
+Bu ikisini toplamak demek de nedir? Şöyle biraz yamuk bir girişi olan bir VA kapısıyla toplanıyor.
+
+89
+00:22:15,203 --> 00:22:20,203
+Bu şekilde lojik devre gerçekleştiriyor. Bunu bir lojik devre simülatöründe yaptığınızda
+
+90
+00:22:20,903 --> 00:22:25,203
+x'in VAY'nin değerlerini lojikte anlatılıyorlar.
+
+91
+00:22:26,203 --> 00:22:29,203
+Multi-media logic simulator uygulamalar var.
+
+92
+00:22:29,715 --> 00:22:40,215
+Bunları değiştirdiğinizde, bunu 0 verdim, y'yi 1 verdim, z'yi 1 verdim, sonuç ne gelecek? Sonucun 0 olarak geleceğini görmeniz gerekir.
+
+93
+00:22:41,495 --> 00:22:49,175
+Her zaman tabi bize şey verilmiyor arkadaşlar. Bu fonksiyonun kendisi bu şekilde verilmiyor.
+
+94
+00:22:50,455 --> 00:22:57,115
+Doğruluk tablosu veriliyor veya fonksiyonu vermek yerine bir problem veriliyor.
+
+95
+00:22:57,811 --> 00:23:13,811
+üç farklı değişken vardır. Bu üç farklı değişken, örneğin öğrencinin vize, bir vize, iki ve final notları olsun deniyor. Bunlar arasında ikisinin toplamı, vize ile finalin toplamı 60 olacak hepsinin toplamı minimum.
+
+96
+00:23:13,811 --> 00:23:25,740
+Veya iki vizenin toplamı 30 olacak. Şu durumlarda birdir, diğer durumlarda sıfırdır. Bir senaryo veririz. Bunu zannediyorum gelecek derste, gelecek hafta ufak bir örnek yaparız.
+
+97
+00:23:25,844 --> 00:23:39,544
+O senaryodan siz 3 farklı input olması gerektiğini ve bu 3 farklı inputun belirtilen şartlara göre hangi durumlarda sıfır, hangi durumlarda bir verilmesi gerektiğini hesaplarsınız.
+
+98
+00:23:40,423 --> 00:23:46,084
+Hesapladıktan sonra şu fonksiyonu şuradaki bir ve sıfırlardan buluruz.
+
+99
+00:23:46,804 --> 00:23:47,844
+Buna birazdan geleceğiz.
+
+100
+00:23:48,443 --> 00:23:51,284
+Yani diyeceğiz ki bu bir hangi durumda birmiş?
+
+101
+00:23:52,435 --> 00:23:54,795
+x, y, z, üçü de birken
+
+102
+00:23:58,740 --> 00:24:20,259
+Bu durumda bir. Sonra x, y, z değil durumda da birmiş. Sonra hangi durumda x, y değil, z değil. Genelde biz burada değilleri bu şekilde kullanıyoruz veya üstüne yazıyoruz. Ön tarafa tilde eklemiyoruz.
+
+103
+00:24:24,915 --> 00:24:26,915
+y, z değil
+
+104
+00:24:26,915 --> 00:24:32,035
+diğer durumda x değil, y değil, z değil
+
+105
+00:24:36,788 --> 00:24:45,128
+ve bu bütün durumların toplamı olacak. Yani hepsini toplayacağız. Ve topladıktan sonra sadeleştireceğiz.
+
+106
+00:24:45,128 --> 00:25:00,307
+Şimdi sadeleştirmeyi şimdiden yapalım. Şimdi şurada bir x, y parantezini alırsak ne gelir? z artı z değil gelir. z artı z değil birbirini bir yapar. Dolayısıyla götürür gibi olur. Onu bu şekilde yazabiliriz.
+
+107
+00:25:02,771 --> 00:25:04,771
+Ne yapabilirsiniz.
+
+108
+00:25:08,211 --> 00:25:11,092
+Y değil, Z değil parantezini alırsak.
+
+109
+00:25:14,420 --> 00:25:17,420
+üçüncü elemanı, şununla şunun.
+
+110
+00:25:19,019 --> 00:25:20,619
+x ile x değiller gider.
+
+111
+00:25:21,420 --> 00:25:22,420
+Bir de ne kaldı bize?
+
+112
+00:25:23,119 --> 00:25:27,420
+x değil, y, z değil.
+
+113
+00:25:28,920 --> 00:25:32,920
+Bu öyle bir şeye gelecek ki, şu ifadenin bu durumuna indirgenecek.
+
+114
+00:25:36,403 --> 00:25:39,483
+Mesela burada başka ne parantezini alabiliriz?
+
+115
+00:25:41,704 --> 00:25:44,884
+Z değil, parantezini alırsak.
+
+116
+00:25:48,756 --> 00:25:49,776
+Bir şey çıkarma.
+
+117
+00:25:57,268 --> 00:26:01,268
+Şurada doğru yaptık herhalde. Bunlar x, y getirir.
+
+118
+00:26:03,268 --> 00:26:06,268
+y değil, z değil bunlar getirecek.
+
+119
+00:26:06,268 --> 00:26:10,268
+Şimdi şöyle z değil parantezine alsak şu ifadeyi.
+
+120
+00:26:16,019 --> 00:26:17,300
+Y değil
+
+121
+00:26:20,531 --> 00:26:21,551
+Artı
+
+122
+00:26:24,631 --> 00:26:25,651
+Eks değil ye
+
+123
+00:26:30,355 --> 00:26:31,435
+Şimdi şu ifade
+
+124
+00:26:35,124 --> 00:26:38,124
+Bir şeye dönüşecek. Bunun çözümünün
+
+125
+00:26:40,124 --> 00:26:46,124
+Bir kuralı var bunun. Daha kuralları göstermedik ama nihayetinde tekrar şuna ulaşmamız gerekiyor.
+
+126
+00:26:46,124 --> 00:26:49,124
+Tabii şunlarda bir hatamız yoksa
+
+127
+00:26:50,124 --> 00:26:53,124
+X, Y, Z değil, X, Y değil, Z değil
+
+128
+00:26:54,124 --> 00:26:57,124
+X değil, Y, Z değil
+
+129
+00:26:58,124 --> 00:26:59,115
+Evet
+
+130
+00:27:03,827 --> 00:27:06,827
+Şimdi bakalım başka ne bulabiliriz.
+
+131
+00:27:09,587 --> 00:27:12,827
+Şöyle Y parantezine alsak diyeceğim. O da olmuyor.
+
+132
+00:27:15,827 --> 00:27:16,827
+Y, Z değil.
+
+133
+00:27:24,660 --> 00:27:39,420
+Şimdi şu bir dursun. Buna tekrar bir bakarız. Şimdi kuralları da tekrar hatırlamak gerekecek. Ama bu daha sade bir şekilde şu şekilde yazılabiliyor. Çünkü biz ne yaptık? Bundan şurayı ürettik. Bunu bulabildik.
+
+134
+00:27:40,700 --> 00:27:50,140
+Birazdan göreceğimiz kurallarla aslında mantıklı da olan kuralların aynısı. Ne yapılacak? En sade hale gelecek. Şimdi bir dursun bakalım.
+
+135
+00:27:53,907 --> 00:28:03,627
+Şimdi f, bul gibi bir bul fonksiyonunun bu şekilde yazılması daha mümkün, tam tersi.
+
+136
+00:28:03,627 --> 00:28:11,268
+En değişkenli oluşan iki bul fonksiyonu olan f ve g eşit kabul edilebilmesi için
+
+137
+00:28:11,268 --> 00:28:19,987
+f'nin bu şekilde bir dizi, g de bu şekilde bir dizi olacak ve bunun dizinin elemanları bu birbirini sağlayacak.
+
+138
+00:28:21,971 --> 00:28:38,652
+xy, xy artı sıfır ve xy bir yani bu üçü birbirine denk ifadelerdir. Bir değişkene yani bir lojik fonksiyona sıfır eklemek veya onu bir ile çarpmak hiçbir şey değiştirmiyor.
+
+139
+00:28:38,652 --> 00:28:45,612
+Şimdi ikisini toplamak demek iki fonksiyonu ve çarpmak demek bunun da karşılığı var.
+
+140
+00:28:46,163 --> 00:29:00,003
+f ve g'yi toplamak demek birebir fonksiyonların değerlerini toplamakla eşittir. Çarpmak demek de bunları birlikte çarpmak demek. Yani fonksiyonu işte burada x artı y gibi bir şey var.
+
+141
+00:29:01,284 --> 00:29:07,764
+Burada da z gibi bir şey var. O zaman ne yapacağız? x, y, x, z artı y, z şeklinde yani bir
+
+142
+00:29:08,500 --> 00:29:14,179
+iki şeyi parantez çarpımı yapar gibi açar gibi açıyoruz. Dağılma özelliği gibi.
+
+143
+00:29:16,259 --> 00:29:28,659
+Şimdi n'in değerine göre kaç farklı bu fonksiyonu tanımlanabilir diye düşünürsek, saymanın temel kurallarına göre ve bu çarpma kuralına göre oluşturuluyor.
+
+144
+00:29:29,059 --> 00:29:34,900
+n dizilerimiz kaç tane ise iki üzeri n farklı bu fonksiyonu tanımlıyoruz.
+
+145
+00:29:35,220 --> 00:29:49,620
+Bu alt küme sayısının kuvvet kümesi kadar da 2 üzeri 2 üzeri 2 en tanede, 2 üzeri 2 üzeri en tanede, boğulün fonksiyonu tanımlanabilir. Bakın bu önemli bir şey.
+
+146
+00:29:50,980 --> 00:30:01,340
+Eğer bizim 5 tane kümemiz varsa 2 üzeri 5 farklı durum var. O 2 üzeri 5 farklı durumdan da 2 üzeri 32 farklı boğulün fonksiyonu tanımlayabiliyoruz.
+
+147
+00:30:02,867 --> 00:30:12,867
+ikinci dereceden bir boolean fonksiyonunun tanım hükümeti 4 farklı durumdan oluşur. Yani x ve y'ler 4 farklı durum oluşturuyor.
+
+148
+00:30:12,867 --> 00:30:24,867
+Bu 2 üzeri 4, 2 üzeri 2 üzeri 4 farklı durumda 2 üzeri 16 farklı boolean fonksiyonunu ortaya çıkarıyor. Yani bir bir durumda
+
+149
+00:30:26,355 --> 00:30:32,036
+şu değer, 1,2, 1,0 durumda bu değer, 16 farklı fonksiyonu tanımlayabiliyoruz.
+
+150
+00:30:37,907 --> 00:30:40,467
+Şimdi şu özdeşlikler önemli.
+
+151
+00:30:47,284 --> 00:30:52,084
+Bir şeyin komplementinin komplementi kendisine eşit arkadaşlar. Double Komplement.
+
+152
+00:30:53,824 --> 00:30:59,264
+Bir şeyle bir şeyin toplamı veya bir şeyle bir şeyin çarpımı kendisine eşit oluyor.
+
+153
+00:31:00,724 --> 00:31:03,184
+I'd and potent, id and potent.
+
+154
+00:31:04,464 --> 00:31:11,784
+Bir şeyi sıfırla toplamak veya birle çarpmak, birim eleman gibi düşünün.
+
+155
+00:31:13,224 --> 00:31:14,324
+Yine kendisine eşit oluyor.
+
+156
+00:31:16,468 --> 00:31:31,468
+Bu da şöyle bir şey. Bir ile bir şeyi toplarsanız biri buluyorsunuz. Sıfırla bir şeyi çarparsanız sıfır oluyor. Şu kurallar ilk, en temel kurallar ve genellikle çok fazla kullanıyoruz.
+
+157
+00:31:34,468 --> 00:31:39,468
+Değişme özelliği toplama ve çarpmada yani AND ve OR'da.
+
+158
+00:31:40,243 --> 00:31:57,503
+olabilen bir şey. x artı y, y artı x'tir. Aynı şekilde x, y, y x'tir. Eğer aynı dereceden operatör, yani programlamadaki operatörler gibi düşünün, hepsinden aynı seviyede var. Herhangi bir parantez şey yok.
+
+159
+00:31:58,363 --> 00:32:07,883
+Bu zaman parantezin bir anlamı kalmıyor. x artı y'yi önce yapıp daha sonra z ile toplayabiliyoruz. Aynı derecede, aynı öncelikte olan operatörler varsa.
+
+160
+00:32:08,788 --> 00:32:21,508
+Burada da aynı şekilde. Dağılma özelliği, işte bunun ne olduğunu söylüyoruz. x artı y, x artı y, z, x artı y çarpı x artı z'dir diyebiliriz.
+
+161
+00:32:22,887 --> 00:32:33,407
+Aynı şekilde bunu dağılmamış halinde söylersek, x, y, x çarpı y, z'yi, x çarpı y artı z'yi, x, y artı x, z şeklinde ifade edebiliyoruz.
+
+162
+00:32:34,612 --> 00:32:37,892
+Bunlar da çok kullandığımız özellikler olacak.
+
+163
+00:32:41,619 --> 00:32:57,619
+Şimdi bir diğer şey demorgan kuralları. Demorgan ne yapıyor? Bir şeyin değilini alırsanız aldığınız değili yani aldığınız fonksiyonundaki bütün elemanlar karakteristik olarak yer değiştiriyor.
+
+164
+00:32:57,619 --> 00:33:07,619
+Çarpma işlemi toplama işlemine dönecek. Yani AND'den OR'a döneceğiz. Veya tam tersi. OR'dan AND'e döneceğiz.
+
+165
+00:33:08,627 --> 00:33:19,028
+x çarpı y'nin değili x'in değili artı y'nin değili. Yani bu bizim if içine yazdığımız şart cümlecikleri de etkiler.
+
+166
+00:33:19,028 --> 00:33:28,627
+İşte devam mesela 20'den küçükse ve
+
+167
+00:33:31,763 --> 00:33:50,563
+işte Eurichnot büyükse kırktan öğrenci geçsin diyelim. Bunu başka bir şekilde nasıl ifade edebiliriz diye sorarsak Demorgan'ı kullandığımızı kabul edelim. O zaman nasıl yazacağız arkadaşlar? Yazın bakalım. Demorgan'a göre bu ifadeyi farklı bir şekilde yazalım.
+
+168
+00:33:58,900 --> 00:34:00,100
+Söyleyemiyorsunuz.
+
+169
+00:34:24,851 --> 00:34:26,763
+Evet, yödanlar var.
+
+170
+00:34:42,547 --> 00:34:50,547
+D 20'den büyükse, veya D 40'dan küçük eşitse. Aynen.
+
+171
+00:34:50,547 --> 00:34:57,547
+Ne yapacağız? İfadelerin her birinin tersini alıp aradaki operatörün de tersini alacağız.
+
+172
+00:35:00,947 --> 00:35:13,747
+Bunun tam tersi nedir arkadaşlar? D büyük eşit 20'dir. Bu operatörün tersi V'dir. Şu da küçük eşit 40 olacak.
+
+173
+00:35:13,747 --> 00:35:23,148
+Yani 40'a burada eşitlik verseydik, 40'ı 40 alanda kurtaralım dersek o zaman ne olur? Şunu kaldırabiliriz.
+
+174
+00:35:23,148 --> 00:35:26,347
+Tamam. D küçük 40 diyebiliriz.
+
+175
+00:35:27,987 --> 00:35:29,987
+Demorganı çok fazla kullanıyoruz.
+
+176
+00:35:29,987 --> 00:35:31,987
+Şu kural da önemli.
+
+177
+00:35:31,987 --> 00:35:37,987
+X ile bir şeyin farklı bir değişikliğini tutun.
+
+178
+00:35:37,987 --> 00:35:51,851
+X parantezine alırsak, ne gelir? 1 artı y gelir değil mi arkadaşlar?
+
+179
+00:35:52,532 --> 00:35:55,851
+1 ile neyi toplarsak sonucu 1 oluyordu. Şurada söyledik.
+
+180
+00:35:56,952 --> 00:35:59,172
+Şuradan. O zaman sonucu x olsun.
+
+181
+00:36:01,012 --> 00:36:07,332
+Bunu tam açmadan söylersek x çarpı x artı x çarpı y.
+
+182
+00:36:09,731 --> 00:36:12,332
+Bunu açtığımızda ne olur? O duruma gelir.
+
+183
+00:36:14,252 --> 00:36:16,532
+x çarpı x artı x artı y.
+
+184
+00:36:17,432 --> 00:36:18,512
+Pardon, x çarpı y.
+
+185
+00:36:20,244 --> 00:36:21,264
+şöyle söyleyelim.
+
+186
+00:36:30,036 --> 00:36:36,096
+X, Y. Şimdi şu ifadeyi şu şekilde yazabiliriz. Bir şeyi bir şeyle çarpmak demek kendisi demektir.
+
+187
+00:36:37,315 --> 00:36:42,675
+Dolayısıyla X artı X artı Y şeklinde geliyor. O da yukarıda X artı X çarpı Y şeklinde geliyor.
+
+188
+00:36:43,596 --> 00:36:49,815
+Onu da yukarıda tekrar söylemiştik. Yani şu üstteki kuralın aynısı. Dolayısıyla neyi veriyoruz? Kendisini buluyoruz.
+
+189
+00:36:54,356 --> 00:37:04,596
+Bir şeyin değeriyle toplamı, unit özelliği dediğimiz şey, bire karşılık gelip bir şey değeriyle çarparsak sıfırı buluruz.
+
+190
+00:37:11,827 --> 00:37:13,827
+Burada problem var mı arkadaşlar?
+
+191
+00:37:15,827 --> 00:37:24,827
+Şimdi logical equivalent konusuna geldiğimizde burada aynı şeyi ifade edebiliriz. Şu ifade doğru mudur?
+
+192
+00:37:36,371 --> 00:37:50,371
+diye bir soru sorulursa size, yani bu ikisi birbirinin eşiti midir lojik olarak diye, bunun doğruluk tablosuyla yapmanız gerekir diye de sorarsak, şöyle üç elemanlı bir doğruluk tablosu yapacaksınız.
+
+193
+00:37:51,492 --> 00:37:56,251
+Genelde ben 0, 0'dan başladım da bu kitapta genelde birden geriye doğru başlamış.
+
+194
+00:37:56,947 --> 00:38:05,387
+Ne yapacaksınız? Önce eşitliğin bir tarafını, artık şunu doğrudan da yazabilirsiniz veya bu ara işlemleri de yapabilirsiniz. O size kalmış bir şey.
+
+195
+00:38:05,907 --> 00:38:10,507
+Burada eşitliğin diğer tarafı var. Şu iki doğruluk tablosuz sütunu, bu iki sütun,
+
+196
+00:38:11,287 --> 00:38:16,667
+Şurası, birbirine bire bir eşit olduğu için diyoruz ki doğrudur.
+
+197
+00:38:21,844 --> 00:38:24,163
+Şimdi, pul cebri
+
+198
+00:38:28,211 --> 00:38:54,211
+Aşağıdaki şekilde biraz önceki mantık kurallarının uygulaması dedik. Burada da bazı aynı şeyleri söyleyebiliriz. Eğer kullandığımız değişken daha fazlaysa, burada üç farklı değişken var. Bir veya üzerinde dağılma, associativity birleşme kuralı uygulanmış. Bunu daha farklı fonksiyonlarda uygulayabiliriz.
+
+199
+00:38:56,340 --> 00:39:07,340
+Tabloda verilen fonksiyonun gösterimi nasıldır diye konuşacak olursak, x, y, z değişkenler için f fonksiyonu f, x, y, z ve g fonksiyonu bu şekilde ifade edilmiş.
+
+200
+00:39:08,620 --> 00:39:16,800
+İşte f fonksiyonu sadece baktığımız zaman x ve z'nin 1, y'nin 0 olduğu durumlarda değer almış.
+
+201
+00:39:17,920 --> 00:39:22,400
+Bu fonksiyonun değeri nedir dersek, yani bunun denklemi nedir dersek,
+
+202
+00:39:22,931 --> 00:39:25,811
+ne yapıyoruz buradaki değeri alıyoruz bir olanları.
+
+203
+00:39:26,692 --> 00:39:32,371
+x, y değil z şeklinde gösteriyoruz. y'yi gösterelim dediğimizde ne yapacağız?
+
+204
+00:39:32,371 --> 00:39:38,051
+işte bir şu var, bir de bu var diyeceğiz.
+
+205
+00:39:38,051 --> 00:39:43,891
+onunla da kalmayacağız. onu eğer sadeleştirebiliyorsak, en sade bir şekilde yazabiliyorsak yazacağız.
+
+206
+00:39:43,891 --> 00:39:47,731
+niye sadeleştiriyoruz? çünkü bunlar devre olacak arkadaşlar.
+
+207
+00:39:48,179 --> 00:40:02,859
+Devre olması ne demek? Fiziksel alan demek. Güç kaybı demek. Bunları minimum hale getireceğiz. X, Y, Z değil ifadesinde karşılık geliyor. Niye araya çarpma koydum peki burada?
+
+208
+00:40:08,659 --> 00:40:10,339
+Niye böyle bir şey yapmış olabilirim?
+
+209
+00:40:13,876 --> 00:40:17,436
+Yani şu 1'i yazarken böyle yazmamın sebebi ne sizce?
+
+210
+00:40:19,056 --> 00:40:24,016
+Çünkü hocam x, y ve z aynı anda o değerleri almışlar. V halindeler yani.
+
+211
+00:40:24,576 --> 00:40:26,416
+Aynen. Aynen. Çok güzel.
+
+212
+00:40:27,936 --> 00:40:36,016
+Şimdi bunun 1 olma şartı x'in 1 ve y'nin 1 ve z'nin 0 olma şartıyla ancak oluyor.
+
+213
+00:40:36,276 --> 00:40:38,896
+Yani bu 3 şartı sağlayınca g 1 oluyormuş.
+
+214
+00:40:40,916 --> 00:40:54,016
+x'in 0, ikinci durumu da var bunun beyası, y'nin 1, z'nin 0 olma durumuyla mümkünmüş.
+
+215
+00:40:55,356 --> 00:41:03,735
+Tamam. Onun için şuradaki terimler arasında v işlemi vardır. Şu iki terim arasında bir v işlemi vardır.
+
+216
+00:41:03,735 --> 00:41:07,235
+Şimdi bakalım bunu sadeleştirebilecek miyiz? Evet, sadeleşiyor.
+
+217
+00:41:07,923 --> 00:41:21,923
+y, z değil parantezini alırsak ne gelecek? Şu x'ler, daha önce parantezi alalım. y, z değil parantezinde bir x var. Artı bir de x'in değili var.
+
+218
+00:41:23,923 --> 00:41:31,923
+Bir şey ile bir şeyin değili neyi verirdi? Bize biri verirdi. İşte sonucumuz ne oldu genel olarak? y, z değil veriyor.
+
+219
+00:41:32,371 --> 00:41:42,951
+Esasında g fonksiyonu için x'in 1 olması y'nin veya 0 olması bir anlam ifade etmiyormuş. Değil mi?
+
+220
+00:41:44,032 --> 00:41:51,591
+y ve z burada daha çok belirleyeceğimiş. x sadece f fonksiyonu belki etkileyen bir şey.
+
+221
+00:41:52,471 --> 00:41:59,532
+Bakın bu şekilde sadeleştirdik. Bu sadeleştirdiğimiz şeyi devresini çizecek olursak bir y değişkeni, bir z değişkeni var.
+
+222
+00:42:00,179 --> 00:42:03,500
+y'yi alacağız ama z'nin önce d'ini alacağız.
+
+223
+00:42:05,300 --> 00:42:08,880
+Sonra bu ikisini, şu değerleri alıp,
+
+224
+00:42:09,899 --> 00:42:11,439
+v kapısından
+
+225
+00:42:12,979 --> 00:42:17,835
+geçirip, a tutuvereceğiz. İşte bu da fg fonksiyonunun değeri olacak.
+
+226
+00:42:21,780 --> 00:42:47,220
+Şimdi bu ifadeyi yazarken şu şekilde yazabildiğimizi söyledik. Bunun bir diğer metodu da var. Buna biz çarpımların toplamı diyoruz ve günlük hayatta en çok kullandığımız yani saymanın temel kurallarından ve mantıkla kullandığımız şeye denk düşüyor. Bunun bir diğer metodu da toplamların çarpımı şeklinde de bu ifade edilebilir. Onu lojik dersinde gösteriyorlar.
+
+227
+00:42:50,036 --> 00:43:06,715
+Çarpımların toplamı, yani sum of product dediğimiz şey, sob form diye de söylenebilir veya mini term olarak da ifade edebiliyoruz.
+
+228
+00:43:08,635 --> 00:43:13,756
+Bir değişken veya tümleyenine öge yani literal deniyor burada her bir yazdığımız şey.
+
+229
+00:43:14,675 --> 00:43:28,195
+Şunlar bir literaldir. Bu literalleri eğer biz çarpımlar şeklinde ve o birden fazla çarpımda arada toplamlar şeklinde ifade edersek mini termiler veya soft form dilimiz duruma yazdığınız.
+
+230
+00:43:28,195 --> 00:43:34,355
+Ve buradaki her bir değişken mini termilerin çarpımları olarak gelecek.
+
+231
+00:43:34,355 --> 00:43:41,076
+Şimdi bu fonksiyonu toplamların çarpımı açılımı ile bulunuz demiş.
+
+232
+00:43:41,811 --> 00:43:42,831
+x artı y
+
+233
+00:43:47,443 --> 00:43:59,203
+Z, şurada bir çarpı Z var arkadaşlar herhalde. Şöyle görelim, bunu bir düzelteyim daha sonra.
+
+234
+00:44:00,323 --> 00:44:08,443
+Şimdi bunu iki şekilde çözebiliriz. Bu ifadeyi doğruluk tablosunda yazmadan önce...
+
+235
+00:44:09,460 --> 00:44:16,460
+Ne yapabiliriz? Fonksiyonu açarız. x artı y z değil. Bunu x çarpı z değil artı y çarpı z değil diye yazdık.
+
+236
+00:44:16,460 --> 00:44:28,460
+Bu kısımda bir özdeşlik kuralı şu şekilde yapılabilir. x ile z değilin arasında bir y olsa y de nasıl olur?
+
+237
+00:44:28,460 --> 00:44:33,460
+Yani önce diyorum ki bir olsa bunun yerinde. Birin olması bir anlam ifade etmiyor.
+
+238
+00:44:34,036 --> 00:44:39,036
+Bu birinin yerine de y artı y değil olsa diyoruz. Tamam mı?
+
+239
+00:44:40,036 --> 00:44:50,036
+Bu şekilde bu ifadeyi de daha sonra x, y, z değil artı x, y değil z değil diye açsak aynı şeyi elde ederiz.
+
+240
+00:44:50,036 --> 00:45:00,036
+Aynı durumu şurada y, z değil var olmayan x için yapsak yani bir ekledik x artı x'in değili
+
+241
+00:45:01,076 --> 00:45:13,815
+Burada da bu ifadeyi içeriye açsak x çarpı y çarpı z'nin değeri artı x çarpı x'in değeri z'nin değeri çarpı y.
+
+242
+00:45:13,956 --> 00:45:17,596
+Şurada bir de y olacak onu da unutmuş diye yazsak.
+
+243
+00:45:19,655 --> 00:45:22,295
+Burada daha sonra aynı ifade bir tane gelecek.
+
+244
+00:45:23,295 --> 00:45:25,675
+x çarpı y z değil.
+
+245
+00:45:29,460 --> 00:45:34,840
+Mesela x çarpı y z değil, şu ifade ile aynıdır.
+
+246
+00:45:34,840 --> 00:45:38,079
+Pardon, x çarpı y değil, z değil.
+
+247
+00:45:38,079 --> 00:45:41,739
+Şu ifade ile yok.
+
+248
+00:45:44,480 --> 00:45:46,159
+X değil, y.
+
+249
+00:45:52,596 --> 00:45:56,076
+Şu olacak herhalde. Bir dakika. X değil.
+
+250
+00:46:02,228 --> 00:46:21,628
+Birinci ve üçüncü aynı. Evet. Şununla şu aynı. Aynı olanları yok ediyoruz. Yani bir tanesi gidiyor. Şu ifade aynen geliyor. Diğeri de şurada değil yok. x, y, z. Değişmezlik kuralı. Bu şekilde de ifade edebiliyoruz. Yine aynı formda.
+
+251
+00:46:22,708 --> 00:46:30,028
+Genişletebilirsin. Sonuç olarak aynı şeyi verir mi? Verir. Ama dediğim gibi en sade halinde yazmak gerekir. Şurada olduğu gibi.
+
+252
+00:46:30,967 --> 00:46:40,648
+Baktığım zaman buradaki elde ettiğimiz sonuçları, şu tabloda elde ettiğimiz sonuçları, şurada da yerine koyarsanız veya bunu sadeleştirirseniz tekrar bunu elde etmeniz gerekir.
+
+253
+00:46:42,288 --> 00:46:48,488
+Bir kural daha vardı. O kuralı vermemiş mi? Oca vermemiş mi? Onu da söyleyelim arkadaşlar. Bir lojik kuralı.
+
+254
+00:46:50,931 --> 00:47:03,532
+Bu gün cebir kuralı olarak yazalım onu da. x artı x'in değili y. Bunun sonucu ne olabilir?
+
+255
+00:47:03,532 --> 00:47:08,731
+Bunu lojik kuralını yazmadan da bulabilirsiniz. Bir bulmayı deneyin bakalım.
+
+256
+00:47:08,731 --> 00:47:13,931
+Kuralın sonucunu da oradan yazabiliyorsunuzdur muhtemelen onu biliyorsunuzdur da.
+
+257
+00:47:13,931 --> 00:47:16,931
+Ona gerek kalmadan.
+
+258
+00:47:28,916 --> 00:47:30,155
+Bu ne olabilir acaba?
+
+259
+00:47:43,027 --> 00:47:46,627
+x diyenler var, y diyenler var, x artı y var, bir de
+
+260
+00:47:47,747 --> 00:47:49,027
+ikisinde y var
+
+261
+00:47:57,715 --> 00:48:10,115
+Bu x artı y'dir arkadaşlar. Bunu şimdi şöyle yapalım. Şurayı y olmadığı için buraya 1 yazıyorum. Yani 1 ile çarpıyorum.
+
+262
+00:48:15,380 --> 00:48:25,619
+bir yerine de şunu yazıyoruz. Olmayan ifade y artı y'nin değilini yazıyoruz.
+
+263
+00:48:25,619 --> 00:48:31,780
+artı x'nin değili y. Herhalde doğru yapıyorum.
+
+264
+00:48:43,476 --> 00:48:46,796
+Artı x'in değili y gelecek.
+
+265
+00:48:51,916 --> 00:48:54,476
+Pardon, şöyle yapacağız arkadaşlar.
+
+266
+00:48:56,276 --> 00:48:59,596
+Bunu yazmayacağız da, şimdi bu aynı yere bizi geri getirir.
+
+267
+00:49:01,136 --> 00:49:02,155
+Yani buradan
+
+268
+00:49:03,436 --> 00:49:05,996
+y parantezini alırsak x'ler gidecek.
+
+269
+00:49:06,516 --> 00:49:08,316
+Yine aynı noktaya geri geleceğiz.
+
+270
+00:49:09,204 --> 00:49:13,623
+Bir dakika, şurayı silelim önce. Şöyle bir hata yaptık.
+
+271
+00:49:34,579 --> 00:49:36,579
+Şurada şöyle bir şey yapıyorum.
+
+272
+00:49:38,979 --> 00:49:42,179
+1 artı y ile çarpıyorum.
+
+273
+00:49:44,259 --> 00:49:48,899
+Bir anlam ifade eder mi 1 artı y ile çarpmam? Bir şey ifade etmiyor değil mi? Çünkü
+
+274
+00:49:49,380 --> 00:49:52,420
+sonuçta burası 1, içeriğin toplamı 1.
+
+275
+00:49:52,979 --> 00:49:56,659
+Diğer çarpımda 1 olacak. Açtığımız zaman
+
+276
+00:49:57,779 --> 00:50:00,340
+x artı
+
+277
+00:50:01,652 --> 00:50:08,811
+x, y artı x'in değili y gelecek. Tamam mı?
+
+278
+00:50:11,891 --> 00:50:13,931
+Sonra y parantezini alırsak
+
+279
+00:50:18,228 --> 00:50:19,728
+x artı x'in değeri gelecek.
+
+280
+00:50:23,572 --> 00:50:27,572
+Şu içerisi 1 olacak. Sonuçta ne olacak? x artı y gelecek.
+
+281
+00:50:31,411 --> 00:50:41,911
+Şurada önemli olan değilin olması. Ben değilin yanındaki ifadeyi kullanarak, bir artı y ekleyerek, bir artı y ile çarparak ne yaptım? Bunu buldum.
+
+282
+00:50:41,911 --> 00:50:52,411
+Bu çok kullanışlı bir kuraldır. Karşınıza çok gelir. Şimdi bunun bazı örneklerini birazdan geç karna haritalarına geçmeden önce de görebiliriz de.
+
+283
+00:50:52,411 --> 00:50:57,411
+Şurada bakalım buna benzer bir örnek bir tane daha vardı. Onu da bulabilirsem.
+
+284
+00:51:19,476 --> 00:51:22,556
+Gerçi onu sizin diğer slide'larınıza eklemişler.
+
+285
+00:51:32,211 --> 00:51:34,851
+Lojik dersinde görüyorsunuz.
+
+286
+00:51:34,851 --> 00:51:40,132
+Bir de arkadaşlar şu şey yazalım bir dakika.
+
+287
+00:51:43,635 --> 00:51:45,635
+bir whiteboard açabilirsem
+
+288
+00:51:49,396 --> 00:51:53,836
+Şu kuralları bilmenizde fayda var. Bu da xor veya xnor.
+
+289
+00:51:59,860 --> 00:52:03,940
+XOR kapısı şeyde, lojik kapılarda vardır.
+
+290
+00:52:07,940 --> 00:52:09,619
+Şu şekilde yazacağız.
+
+291
+00:52:11,860 --> 00:52:14,980
+X artı Y'nin değili
+
+292
+00:52:16,900 --> 00:52:19,140
+çarpı X'in değili
+
+293
+00:52:19,940 --> 00:52:22,420
+artı Y
+
+294
+00:52:23,700 --> 00:52:25,539
+bu şekilde ifade edebiliriz.
+
+295
+00:52:26,324 --> 00:52:39,684
+Veya bunu aynı şekilde şöyle de yazabiliriz. x'in değili y artı x çarpı y'nin değili. Hatta siz bunu daha çok kullanıyorsunuz.
+
+296
+00:52:39,684 --> 00:52:51,564
+Eğer bunu açarsanız, açalım. x çarpı x'in değili artı x y.
+
+297
+00:52:53,012 --> 00:53:06,012
+Artı x'in değil y'nin değil. Artı y çarpı y'nin değil. Şunlar gitti. Çünkü bunlar sıfır oldu. Herhangi bir etkisi yok.
+
+298
+00:53:11,155 --> 00:53:13,956
+xy artı x'in değeri y'nin değeri.
+
+299
+00:53:14,755 --> 00:53:17,875
+Ama bu şekilde bir dakika bir hatamız var.
+
+300
+00:53:18,996 --> 00:53:25,076
+x artı y'nin değeri artı çarpı x'in değeri çarpı artı y.
+
+301
+00:53:29,268 --> 00:53:38,508
+x ile x'in değili gider, x ile y'ye kalır. x'in değili y'nin değili buradan, y ile y'nin değili kalacak.
+
+302
+00:53:41,268 --> 00:53:45,388
+Bu şekilde de evet, yani bu da zaten aynı benzer sonucu veriyor.
+
+303
+00:53:46,228 --> 00:53:51,028
+Veya bunu elde etmek için arkadaşlar ne yapacağız? Hani şunu kullanmayalım dersek,
+
+304
+00:53:51,548 --> 00:53:56,148
+bunun iki defa bu demorganını alırsak şu ifadeyi de buluruz.
+
+305
+00:53:56,192 --> 00:54:04,652
+Ama lojik ifadelerde şunu daha çok kullanıyoruz. XOR'un doğrudan dönüşümü nedir diye sorulursa budur diyebiliriz.
+
+306
+00:54:05,412 --> 00:54:09,852
+Bir de şu vardır. Bilmiyorum bunu gösterdiler mi lojikte. X NOR.
+
+307
+00:54:13,427 --> 00:54:26,627
+ifadesi. Mesela bunu da x'in değili y'nin değili. Aslında şunu bulacağız oradan. Artı x y'yi bulacağız.
+
+308
+00:54:26,627 --> 00:54:36,227
+Veya bunu şu şekilde de ifade edebiliriz. Bunu x artı y şeklinde çarpı
+
+309
+00:54:42,068 --> 00:54:53,228
+Bu ifadeyi tabi açmadan nasıl yapabiliriz? X'in değil, artı, Y'nin değil şeklinde yapabiliriz. Bunlar da diğer lojik kapıların gösterimleri.
+
+310
+00:54:54,668 --> 00:54:58,908
+Bir kenarda bulunsun lazım olacaktır. Yani bir yerlerde karşınıza gelir.
+
+311
+00:55:02,739 --> 00:55:08,639
+Yarım saatimiz daha var. Şimdi şu konuda biraz ilerleyelim. Daha sonra size izlemeniz için linkler vereceğim.
+
+312
+00:55:10,059 --> 00:55:15,219
+Gerçi Banu Hoca'nın ders notlarında da aynı linkler var. Hoca duyurdu.
+
+313
+00:55:17,219 --> 00:55:19,079
+Şimdi screen tekrar paylaşalım.
+
+314
+00:55:21,739 --> 00:55:24,079
+Şu kuralı yalnız...
+
+315
+00:55:25,684 --> 00:55:35,684
+kullanmayı bilin arkadaşlar. Tamam mı? Yani x ile bir şey ile bir şeyin değili çarpı başka bir şey. Aradaki değil gidiyor. Ve x artı y'yi buluyoruz.
+
+316
+00:55:42,291 --> 00:55:47,291
+Bu mantık kapıları üzerinde ne yapıyor? Devreler kuruluyor.
+
+317
+00:55:48,291 --> 00:55:53,291
+Dediğim gibi Computer Organization veya Computer Architecture derslerine bakarsanız,
+
+318
+00:55:53,291 --> 00:56:04,291
+bu devrelerle işte bir toplama devresi, çarpma devresi veya herhangi bir komutun çalışması için yapılan şeyler temel olarak bunlarla oluşturuyor.
+
+319
+00:56:04,291 --> 00:56:08,291
+Burada üç tane temel eleman var. Birincisi inverter.
+
+320
+00:56:08,532 --> 00:56:12,112
+Yani değiş dokuş yapan, sıfırı bir, biri sıfırı yapan şeyler.
+
+321
+00:56:13,072 --> 00:56:16,431
+Diğeri OR kapısı, diğeri de AND kapısı.
+
+322
+00:56:17,172 --> 00:56:19,811
+Bu arada bir şey soracağım, merak ediyorum, kusura bakmayın.
+
+323
+00:56:21,172 --> 00:56:23,692
+Seste ve görüntüde bir problem var mı?
+
+324
+00:56:30,579 --> 00:56:33,900
+Tamam. Yoku gördüm de bir arkadaşımız [öğrenci].
+
+325
+00:56:34,620 --> 00:56:42,620
+X'i X değil Y'nin içine dağıtmak daha doğru olmaz mı? [öğrenci] nerede olduğunu söyler misin? Ben chat'i biraz geç takip ettim.
+
+326
+00:56:45,844 --> 00:56:48,064
+Bir önceki slide'dan bahsediyorsun herhalde.
+
+327
+00:57:00,275 --> 00:57:01,259
+Şuradan.
+
+328
+00:57:09,619 --> 00:57:14,219
+Yani şu yazdığım, kırmızıyla yazdığım kısımdan bahsediyorsun. Şimdi,
+
+329
+00:57:14,739 --> 00:57:19,099
+Şet ekranından da takip ediyorum. X'i X'i diyenin
+
+330
+00:57:20,619 --> 00:57:21,900
+içine dağıtmak.
+
+331
+00:57:23,440 --> 00:57:28,820
+Yani şu kırmızıdan bahsediyorsan burada X'i X'i diyenin içine dağıtmak olmaz.
+
+332
+00:57:29,579 --> 00:57:31,380
+Terim ekleyip çıkartmak gerekiyor.
+
+333
+00:57:40,052 --> 00:57:41,052
+Anlatabildim mi?
+
+334
+00:57:43,372 --> 00:57:48,052
+Şu kısımdaki şeyi herhalde bundan bahsediyorsun.
+
+335
+00:57:56,052 --> 00:57:58,871
+x artı x'in değil çarpı
+
+336
+00:58:03,059 --> 00:58:04,940
+Bir de o ifade nereden geldi ki?
+
+337
+00:58:08,019 --> 00:58:11,880
+Yani burada şarpımların toplamı var.
+
+338
+00:58:16,628 --> 00:58:19,347
+Siz onu toplamların çarpımı şeklinde yazdınız.
+
+339
+00:58:27,699 --> 00:58:39,859
+Yani öncelikle bu x artı x'in d ile y'yi o şekilde sizin bahsettiğiniz işte o iki çarpımın, iki toplamın parantik çarpım şeklinde yazdığınız ifadeye dönüştürmek öyle şey bir şey değil burada.
+
+340
+00:58:40,739 --> 00:58:41,979
+Çünkü ifadeler farklı.
+
+341
+00:58:48,916 --> 00:59:11,596
+O olur ama hiç ona gerek kalmadan diyorum ki doğrudan demorganlı olmaz. Demorganını almak şu demek, bunun iki defa değilini alacaksınız. Birinci aldığınız değil de ne olacak? İkisinin değili.
+
+342
+00:59:18,036 --> 00:59:21,036
+Şu işlemin değli de
+
+343
+00:59:24,435 --> 00:59:25,715
+x çarpı
+
+344
+00:59:27,516 --> 00:59:28,795
+y'nin değli olacak
+
+345
+00:59:29,556 --> 00:59:30,835
+Şöyle toplam olarak
+
+346
+00:59:32,635 --> 00:59:34,675
+Bu değli açarken de
+
+347
+00:59:34,935 --> 00:59:40,556
+x artı y'nin değli şeklinde yazacağız. Yukarıda bir değil daha olacak. Şimdi birinci değil
+
+348
+00:59:41,139 --> 00:59:49,299
+Şu ifadeyi sağladı. Bir de yukarıda birinci değil var. Bir değil daha var. Çünkü iki defa değini alalım ki kendi eski durumuna geri gelsin.
+
+349
+00:59:50,099 --> 00:59:57,459
+Bu benim bahsettiğim şu kural daha farklı bir şey. Yani oradan da çıkış belki bulunabilir.
+
+350
+00:59:57,779 --> 01:00:08,499
+Ama bir şey ile bir şeyin değili çarpı bir başka değişken x artı x'in değili y. Hatta bunun çarpmayla bir kuralı da vardı belki onu da.
+
+351
+01:00:10,099 --> 01:00:11,460
+Şöyle bir şey de var.
+
+352
+01:00:12,599 --> 01:00:13,780
+İsin değili y.
+
+353
+01:00:15,059 --> 01:00:20,260
+Bu da x çarpı y'ye karşılık geliyor diye biliyorum. Şimdi onu çözmeye çalışırız.
+
+354
+01:00:20,860 --> 01:00:23,659
+Bunlar doğrudan şu yandaki ifadenin
+
+355
+01:00:24,699 --> 01:00:29,559
+ifadeye ortak var. Yani önemli olan şuradaki x'i götürmek, x değili götürmek.
+
+356
+01:00:30,320 --> 01:00:33,400
+1 artı y'ye ekleyip bu şekilde çok rahat çözülebiliyor.
+
+357
+01:00:34,159 --> 01:00:35,179
+Şunu merak ettim.
+
+358
+01:00:35,440 --> 01:00:37,740
+Bunun yerine şöyle bir şey yazsak.
+
+359
+01:00:39,219 --> 01:00:41,440
+Bu, boş bir tarafta yazalım.
+
+360
+01:00:41,440 --> 01:00:46,440
+Evet, bir mikrofon açıldı.
+
+361
+01:00:46,779 --> 01:00:47,279
+Sorum var.
+
+362
+01:00:52,436 --> 01:01:03,436
+x çarpı x'in değili y idi zannediyorum. Bu da x, y'ye karşılık geliyordu. Bunu bir kanıtlamaya çalışalım. Belki kurallardan birinden bu durumda şu an. Onun için vakit yok.
+
+363
+01:01:05,236 --> 01:01:11,635
+Şu sıfır olmaz mı? Şöyle olacak, affedersiniz. Şöyle olacak diyebiliyorum.
+
+364
+01:01:14,196 --> 01:01:15,476
+10 dakika.
+
+365
+01:01:17,516 --> 01:01:19,244
+Evet, o şekilde sıfır olur.
+
+366
+01:01:21,076 --> 01:01:24,275
+Buna benzer bir kuralı vardı. Ben ona bakarım arkadaşlar.
+
+367
+01:01:24,275 --> 01:01:29,396
+Yani lojik defterimde falan o derste gördüğüm için bu derste çok anlatmıyorum.
+
+368
+01:01:29,396 --> 01:01:34,195
+Onu daha sonra bulayım, onu da konuşuruz. Ama şu güzel bir kural.
+
+369
+01:01:34,195 --> 01:01:39,876
+x artı x'in de iyiliğe eşittir xye.
+
+370
+01:01:39,876 --> 01:01:43,635
+Çok karşımıza çıkacak örneklerde.
+
+371
+01:01:48,052 --> 01:01:56,932
+Evet, yani x'i dağıtınca x çarpı x'in yiyeli. Ya şuna benzer bir başka bir şeydi de ben belki şu an yanlış hatırlıyor olabilirim.
+
+372
+01:01:59,331 --> 01:02:07,331
+Buna bir bakarız. Görünce ben hatırlarım bunu. Arkadaşlar böyle bir şey var demiştim derim. Tekrar bir bakarız.
+
+373
+01:02:08,771 --> 01:02:13,891
+Van Hoca bu tip şeyleri derste hani çok gerek yok diyor. Zaten anlatmıyoruz diyor da.
+
+374
+01:02:14,547 --> 01:02:16,707
+Bazen böyle kafama takılıyor böyle şeyler.
+
+375
+01:02:19,107 --> 01:02:23,007
+Şimdi kapılar dediğimiz arkadaşlar temelde 3 tane kapı var.
+
+376
+01:02:23,927 --> 01:02:25,267
+Bu teoride.
+
+377
+01:02:26,347 --> 01:02:31,727
+Uygulamada bunların or mesela ucuna bir değil ekleniyor.
+
+378
+01:02:31,847 --> 01:02:35,947
+Yani şu inverter ve onu oru birleştirip nor.
+
+379
+01:02:36,947 --> 01:02:40,587
+End'in yerine bir not ekleyip non önüne.
+
+380
+01:02:41,652 --> 01:02:49,932
+kapıları ekleyen oluşturuluyor. Bu da bize şunu sağlıyor. Universal kapılar dediğimiz veya
+
+381
+01:02:49,932 --> 01:03:04,532
+versatile, çok amaçlı bir seferde hem AND yapıyorsun hem OR yapıyorsun. Bu şekilde kapılar da tasarlanıyor. Aynı şekilde XOR, XNOR elemanları da var.
+
+382
+01:03:05,043 --> 01:03:11,043
+Bunların her zaman iki girişli olmasına gerek yok. Şu OR ve AND'in çok girişli de yapabiliyorsunuz.
+
+383
+01:03:13,043 --> 01:03:20,043
+Şu ifadeyi kapılarla gösterelim dersek ne yapacağız? X değişkenimiz var, Y değişkenimiz var. İstersek böyle gösterebiliriz.
+
+384
+01:03:21,043 --> 01:03:25,043
+İstersek işte X'in değiri de lazımmış. X'in bir de burada değerini alabiliriz.
+
+385
+01:03:25,043 --> 01:03:32,043
+Böyle Y'yi iki defa yazmaya gerek yok. Şuradan bir hat alıp, şuradan atlatıp üstünden.
+
+386
+01:03:32,884 --> 01:03:42,884
+buraya bağlayabilirsiniz. Veya yine aynı şekilde x'den bir hat alıp, şurada bir değilini alıp bağlayabilirsiniz.
+
+387
+01:03:42,884 --> 01:03:50,884
+Şunlar da bir diğer gösterimler. Tamam mı? Sonuçta devrenin denklemini bu şekilde yazabiliyorsunuz.
+
+388
+01:04:01,076 --> 01:04:06,276
+Bu doğruluk tablosundaki gördüğünüz değerlerin aynısını devrenin sonucunda da görebileceksiniz.
+
+389
+01:04:08,096 --> 01:04:11,556
+Aşağıdaki ifadeyi mantık kapılarıyla tasarlayın demişler.
+
+390
+01:04:12,576 --> 01:04:14,116
+X artı Y, X'in D'li.
+
+391
+01:04:14,696 --> 01:04:18,436
+Ne olacak? Bir X'imiz var, bir Y'imiz var. İkisi toplanacak. Toplamak ne demek?
+
+392
+01:04:19,276 --> 01:04:21,636
+Şuradaki V'ya kapısına karşılık geliyor.
+
+393
+01:04:22,716 --> 01:04:24,516
+X'in D'li almak şurada olacak.
+
+394
+01:04:25,056 --> 01:04:26,860
+Çarpmak demek de şuradaki...
+
+395
+01:04:27,284 --> 01:04:29,284
+end kapısına karşılık geliyor.
+
+396
+01:04:29,284 --> 01:04:34,284
+x'in değili çarpı, çarpı dediğimiz için şurada bir çarpı olacak.
+
+397
+01:04:34,284 --> 01:04:36,284
+y artı z'nin değili.
+
+398
+01:04:36,284 --> 01:04:42,284
+y buradan gelecek, z'nin önce değilini alıp gelmesi lazım, sonra toplanması lazım.
+
+399
+01:04:42,284 --> 01:04:46,284
+Sonra bunun da değilini alıyormuşuz. Üst tarafta bir tane var.
+
+400
+01:04:46,284 --> 01:04:48,284
+Değilini aldıktan sonra burada çarpıyoruz.
+
+401
+01:04:49,940 --> 01:04:55,940
+Şimdi bu sorular genelde, şuna da zaten bakarsınız arkadaşlar. x artı y artı z toplanıyor.
+
+402
+01:04:57,940 --> 01:05:02,940
+x değil y değil z değil çarpılıyor. Bu ikisinin sonucu tekrar çarpılıyor.
+
+403
+01:05:03,940 --> 01:05:07,940
+Bir de değil ne alsak ne yaparız arkadaşlar? Şuraya bir değil yazsak ne olur?
+
+404
+01:05:07,940 --> 01:05:16,940
+O zaman ne olacak? Şuraya bir tane değil işlemi alıvereceğiz veya şunun aynısından şuraya getirip ekleyeceğiz.
+
+405
+01:05:18,739 --> 01:05:22,179
+Bunlar genelde bu soruları biz şöyle soruyoruz. Bir senaryo.
+
+406
+01:05:23,940 --> 01:05:26,500
+Örneğin şöyle yapalım.
+
+407
+01:05:34,291 --> 01:05:36,291
+Bir havuz sistemi olsun.
+
+408
+01:05:38,491 --> 01:05:40,051
+Bu havuzda
+
+409
+01:05:49,427 --> 01:05:57,187
+Şurada bir sensör, bu seviyede bir sensör. Bu seviyede bir sensör. Bulunsun.
+
+410
+01:06:12,563 --> 01:06:15,123
+S1 sensörü, S2 sensörü.
+
+411
+01:06:17,423 --> 01:06:18,443
+Şurada bir
+
+412
+01:06:18,963 --> 01:06:22,804
+S3 sensörü bulunsun, havuzda su var mı yok mu?
+
+413
+01:06:24,603 --> 01:06:29,963
+Burada da belli yüzdeler, havuzun %80'i dolu, %60'ı dolu
+
+414
+01:06:31,764 --> 01:06:35,344
+gibi, %0'ı dolu gibi değerleri göster.
+
+415
+01:06:36,123 --> 01:06:38,163
+Havuz boşken uyarı verecek.
+
+416
+01:06:39,380 --> 01:06:49,380
+%60'ı geçince uyarı verecek, %80'i geçince uyarı verecek olan durumu böcük tabloyu çizin dedik.
+
+417
+01:06:49,380 --> 01:06:55,380
+Bazı durumlar var, S1, S2, S3 durumları var. Bunun 8 farklı durumu vardır.
+
+418
+01:06:55,380 --> 01:07:05,380
+S1 1 iken, S2 de 1'dir, S3 de 0'dır mesela, bu boşluğu gösteriyor.
+
+419
+01:07:07,476 --> 01:07:27,796
+S3 birken yani boşken S2 ve S1'in ne olması gerekir? Sıfır olması gerekir. Bunu tabloya çizdiniz. Tablodan şuradan birileri buldunuz. Bu birlerden lojik denklemi ifade edersiniz bir F fonksiyonuyla. F, S1, S2, S3 şeklinde ifade edersiniz.
+
+420
+01:07:35,092 --> 01:07:45,391
+Lojik diagramını, devresini çizersiniz. Hatta önce lojik diagramını çizin dediğimizde de ne olur? İşte bu lojik devrenin diagramı şu şekildedir. Ben bunu sormuştum yaz okulunda.
+
+421
+01:07:46,311 --> 01:07:53,911
+Üç tane girişi olan, bir tane çıkışı olan bir denklem bulacaksınız. Önce bunu çizersiniz. Sonra doğruluk tablosu oluşur.
+
+422
+01:08:02,324 --> 01:08:10,563
+lojik devresini getirebilir. Önemli olan şu, bu lojik işlemlerinde şuradaki ifadenin en sade bir şekilde bulunması.
+
+423
+01:08:11,764 --> 01:08:18,363
+Bunu en sade bulurken, lojik devre kuralları yani Boulin-Algebra kuralları bazen yetersiz kalıyor.
+
+424
+01:08:19,083 --> 01:08:23,404
+Çünkü çok karmaşık ifadelerle karşılaşabiliyor. İşte o zaman da ne yapacağız?
+
+425
+01:08:24,443 --> 01:08:27,503
+Farklı teknikler kullanacağız.
+
+426
+01:08:29,300 --> 01:08:46,819
+Şimdi bir iki tane daha böyle örnek yapalım. Hemen karnın haritalarını göstereceğim. Karnın haritaları işte bir saat onun üzerinde çalışacağız. Ama işte bir aramız var. Yani bir 45 dakika falan aramız var. 15 dakika sonra bitireceğim dersi. Ara vereceğiz. O arada siz o devre örneklere bakarsınız.
+
+427
+01:08:47,440 --> 01:08:54,680
+Bir yarı toplayıcı. Half Adder. Niye yarı toplayıcı? Çünkü burada iki sayı toplanıyor.
+
+428
+01:08:55,636 --> 01:09:01,396
+Topladıktan sonra elde edilen eldeyi göstermek için bir başka değişkene ihtiyaç duyuyoruz.
+
+429
+01:09:02,195 --> 01:09:04,115
+Toplamın değerini tam bulamayabiliyoruz.
+
+430
+01:09:05,176 --> 01:09:08,476
+1 ile 1'i toplayınca ne olur? 0 olur. Elde 1 olur.
+
+431
+01:09:09,996 --> 01:09:15,536
+1 ile 0'ı toplayınca sonuç 1 olur. 0 ile 1 toplayınca sonuç 1 olur. 0 ile 0 toplayınca sonuç 0 olur.
+
+432
+01:09:15,836 --> 01:09:20,935
+Burada benim bir tane sum fonksiyonum var. Bir de carry fonksiyonum var.
+
+433
+01:09:21,300 --> 01:09:35,100
+sum fonksiyonunu modellediğimizde ne geldi? x artı x çarpı y'nin değili ve x'nin değili y.
+
+434
+01:09:35,100 --> 01:09:48,500
+Bunu toplam formatında da ifade edebiliyoruz. Şunlarda gösterdik iki tane değişken. Yani ne olacak? x'nin değili y.
+
+435
+01:09:49,524 --> 01:09:55,664
+artı x çarpı y'nin değeri.
+
+436
+01:09:57,463 --> 01:10:06,424
+Bunu bu şekilde ifade edebildiğimiz gibi, burada sum of product değil de product of sum şeklinde yapmış.
+
+437
+01:10:06,924 --> 01:10:08,724
+Şu ifadeyi yazarsak,
+
+438
+01:10:13,844 --> 01:10:15,043
+Niye böyle oldu bu?
+
+439
+01:10:19,731 --> 01:10:25,412
+x çarpı y'nin değili artı x çarpı y'nin değili çarpı y.
+
+440
+01:10:25,412 --> 01:10:27,412
+Şu yok arkadaşlar.
+
+441
+01:10:29,412 --> 01:10:34,532
+Bunu product of some formatına dönüştürsek şu şekilde de yazabiliriz.
+
+442
+01:10:35,332 --> 01:10:38,211
+Veya başka şekillerde de yazılabilir.
+
+443
+01:10:38,532 --> 01:10:39,532
+Ne oluyor?
+
+444
+01:10:39,680 --> 01:11:03,680
+Bir şekilde burada sum'ı elde ediyoruz. Birinci çıktığımız bu. Bir de carry için çıktığımız var. Carry'in değeri de sadece x ve y'nin 1 olduğu durumlar. Carry çıktığımızda ayrıca yazıyoruz. Böyle bir toplama devresi. 2 bitlik yarı toplayıcı devre. Bu yarı toplayıcılardan tam toplama devreleri falan elde edilir. O lojik devrelerin konusudur. Burada girmiyoruz. Bize sadece böyle basit şeyler yeterli.
+
+445
+01:11:03,828 --> 01:11:21,347
+Şimdi önemli olan arkadaşlar, dedik ki en sade ifadeyi bulmak. En sade ifadeyi bulurken de kullanılan tekniklerden birisi karnı haritaları. Bir de Macle'ın C diye bir yöntem var. Onu daha sonra belki vaktim kalırsa size anlatacağım.
+
+446
+01:11:23,188 --> 01:11:31,028
+Ben öncelikle size bir whiteboard açayım. Şurada farklı bir şey anlatalım.
+
+447
+01:11:31,636 --> 01:11:43,636
+Şimdi genellikle karno haritaları iki değişkende, üç değişkende ve dört değişkende durumlarda rahat kullanılabilen bir şey. Beş değişkende de altıda da kullanılıyor da birazcık sıkıntılı.
+
+448
+01:11:43,636 --> 01:11:53,636
+Diyor ki arkadaşlar, değişkenlerinizi bir grid üzerinde gösterin. Örneğin iki değişken.
+
+449
+01:11:59,188 --> 01:12:05,788
+Bir x değişkenim var, bir de y değişkenim var. Bu x sıfır olabilir, bir olabilir, y sıfır olabilir, bir olabilir.
+
+450
+01:12:06,968 --> 01:12:15,948
+Bu duruma göre bir olan durumları burada gösterin. İşte sıfıra sıfırda bir olabilir problemimde. Bire sıfıra bir de bir olabilir.
+
+451
+01:12:17,048 --> 01:12:22,228
+Sonra burada gruplamalar yapın. Aslında bu gruplama ortak parantezi almanın aynısı.
+
+452
+01:12:23,667 --> 01:12:36,028
+Gruplamalar da şu şekilde 2 üzeri 0'lı, 2 üzeri 1'li, 2 üzeri 2'li, en fazla 2 üzeri n'li. Yani o da senin karnı haritanın boyutuna göre değişiyor. Yani burada en fazla 2 üzeri 4'lü.
+
+453
+01:12:36,028 --> 01:12:49,907
+2 değişken olduğu için 4'lü gruplama yapabilirsin. Bu şekilde yaptığın gruplamaları, diyor ki şöyle renk bulalım, böyle grupladım.
+
+454
+01:12:50,547 --> 01:12:58,307
+değişim olanları yaz, değişim olanları yazma, değişim olmayanları, sevbi olanları yaz.
+
+455
+01:12:59,167 --> 01:13:03,188
+Buraya baktığımız zaman bu ikili grupta ne yapabiliriz?
+
+456
+01:13:03,427 --> 01:13:08,807
+X'de bir değişim var mı? Yok. Ama X'in değilinde bir değişim yok. X'in değil diyoruz.
+
+457
+01:13:09,567 --> 01:13:13,307
+Y'de bir değişim var mı? Var. İşte sıfırdan bire bu şey boyunca.
+
+458
+01:13:13,684 --> 01:13:34,804
+y'de bir değişim olduğu için onu yazmıyoruz. Bu ifadenin en sade hali bu oluyor. Şimdi şunu normal yazarsak, bu nedir arkadaşlar? x'in değili y'nin değilidir. 0'a 0'da biri de yerli şey var. Artı x'in değili ve y'dir değil mi? Yani bunun doğruluk tablosuna bakarsak iki tane böyle değişik ama.
+
+459
+01:13:35,507 --> 01:13:50,987
+Bunu x'in değili tablosu, x'in değili ortak parantezini alsak y artı y'nin değili gelecek. Buradan zaten sadeleştirmiş olacağız x'in değili. İşte bu sadeleştirmeye gerek kalmadan bunun üzerinde ne yapabiliyoruz? Sonucu bulabiliyoruz.
+
+460
+01:13:50,987 --> 01:13:56,627
+Eğer 3 değişkenliyse, 3 ve değişkende önemli olan sizin bilmeniz gereken şey arkadaşlar.
+
+461
+01:13:58,355 --> 01:14:04,235
+haritanın doğru çizilmesi. Haritayı genelde doğru çizmiyor arkadaşlar. Ondan sıkıntı yaşıyoruz.
+
+462
+01:14:04,235 --> 01:14:07,115
+Şimdi şöyle yapalım.
+
+463
+01:14:07,115 --> 01:14:10,715
+Tekrar açıp kapatacağım.
+
+464
+01:14:10,715 --> 01:14:18,515
+Şimdi üç değişkende bir X değişkenimiz olsun bir de YZ değişkenimiz olsun.
+
+465
+01:14:18,515 --> 01:14:24,595
+Y ve Z'nin birlikte olan ikili durumlarına bakacağız haritada.
+
+466
+01:14:24,884 --> 01:14:30,164
+4 değişkende de x, y, z, t olsun.
+
+467
+01:14:32,083 --> 01:14:33,644
+Çizemiyorum ama
+
+468
+01:14:34,963 --> 01:14:41,283
+Neyse, haftaya bununla alakalı devam ederiz. Biraz daha örnek yaparız.
+
+469
+01:14:42,724 --> 01:14:47,603
+Şimdi x'in durumu ya 0 olacak ya 1 olacak. Başka bir şey yok.
+
+470
+01:14:48,083 --> 01:15:14,264
+YZ'nin ikili durumlarına bakarken buraya çok dikkat etmek gerekiyor. İkili bir değişken varsa arkadaşlar 0-0 ile başlıyor. Sonra bir bit yer değiştirecek şekilde yer değiştiriyor. Eleman ekliyoruz diye. Sonra gelen şeyin 0-1 olması lazım. Bundan sonra 1-1 oluyor. Bundan sonra 1-0 oluyor. Baktığım zaman bir bit değişim var. Buradan sonra bir bit değişim var. Şu 0 değişmiş. Sonra bir bit değişim var.
+
+471
+01:15:15,347 --> 01:15:21,948
+Sonra doğruluk tablosundan gidiyorsunuz, değerleri 1 olanları getiriyorsunuz.
+
+472
+01:15:21,948 --> 01:15:33,948
+Örneğin x 1 olduğu durumda, yz 0, 0, 1 olduğu durumda, x 0 iken bu burada, bu buradayken burada, bir de şurada diyelim mesela.
+
+473
+01:15:33,948 --> 01:15:38,147
+Böyle bir harita, bu durumlarda bir, diğer durumlarda 0.
+
+474
+01:15:38,147 --> 01:15:40,147
+Aynısını şuraya uygulayalım.
+
+475
+01:15:41,332 --> 01:15:50,332
+İkili olduğu için arkadaşlar, 00, 01, 11, 10 elde edeceğiz. 00.
+
+476
+01:15:53,619 --> 01:15:56,859
+0, 1, 1, 1, 0.
+
+477
+01:15:59,500 --> 01:16:03,380
+Şurada, şurada, şurada, şu durumlarda 1 olsun mesela.
+
+478
+01:16:05,159 --> 01:16:06,119
+Bir de şurada 1 olsun.
+
+479
+01:16:07,279 --> 01:16:09,479
+Bu ifadelerden yine ne yapıyoruz?
+
+480
+01:16:10,399 --> 01:16:13,880
+2 üzeri 0'lı, 2 üzeri 1'li, 2 üzeri 2'li, 2 üzeri 3'lü.
+
+481
+01:16:14,612 --> 01:16:22,612
+En fazla şu durumda 2 üzeri 4'lüleri bulabiliriz. Yani 16'lı. Bu durumda da 2 üzeri 8'li bulabilir miyiz diye bakıyorum.
+
+482
+01:16:22,612 --> 01:16:28,612
+Bakarken yapacağınız strateji şu olabilir. Şimdi bu 3 değişkenliyse en fazla kaç olur dedik? 8 değişkenli.
+
+483
+01:16:28,612 --> 01:16:41,612
+8'li bir birli grup oluşturabiliyor muyum? Oluşmuyor. Bir düşürdüm. 2 üzeri 2'lilere bakıyorum. 4'lü oluşturabiliyor muyum? O da oluşmuyor. Yani peş peşe yan yana 4'lü gelmesi lazım.
+
+484
+01:16:42,452 --> 01:16:48,752
+Üçlü şey, ikili oluşturabiliyor muyum? Evet, ikililer var. Şurada bir ikili var.
+
+485
+01:16:55,315 --> 01:17:20,315
+Burada bir ikili var. Başka bir de arkadaşlar şurada şu ifade ile şu ifade ikili geliyor. Yani bunu bir yuvarlak top gibi düşündüğünüzde bunu bir katladığınız hali düşünün. Şu nokta şu noktayla aynı noktaya gelecek demektir. Bu şekilde yapılabilir. Başka ifade açıkta kaldı mı? Evet kaldı.
+
+486
+01:17:20,979 --> 01:17:27,219
+İkilleri grupladım ama bir tane biri var. O biri de kendi içerisinde grupluyorum. Sonra bunu geleceğiz, yazacağız.
+
+487
+01:17:33,844 --> 01:17:34,863
+Bunu geleceğiz, yazacağız.
+
+488
+01:17:36,244 --> 01:17:39,244
+Şimdi ikili grupladığım ifade neydi? Bir tane şurada vardı.
+
+489
+01:17:39,863 --> 01:17:40,744
+Şu ifade değil mi?
+
+490
+01:17:42,004 --> 01:17:42,783
+Şöyle yazalım.
+
+491
+01:17:44,203 --> 01:17:49,863
+Bu ifadeyi yazarsak x ekseni durumunda bir değişim var mı? Yok. O zaman x'i alabilirim.
+
+492
+01:17:51,264 --> 01:17:54,244
+Sonra geleceğiz yz ekseni durumuna.
+
+493
+01:17:54,244 --> 01:17:58,924
+Yz ekseninde y'ler değişiyor mu? Değişmiyor. O zaman y'nin değilini alacağız.
+
+494
+01:18:00,144 --> 01:18:00,904
+Sıfır olduğu için.
+
+495
+01:18:01,684 --> 01:18:26,504
+Z'de bir değişim var mı? Z'de bir değişim var. Onun için Z'yi almıyorum. Bu birinci ifade bitti. Sonra ikinci ifadeye bakalım. Şu. Bu nereden geliyordu? Sağdaki ile sol taraf birleşiyorsa. Üçlü birleştirme olmuyor arkadaşlar. Birli, ikili, dörtlü. Üçlü birleşim yok. Bir, iki, dört, sekiz. İkinin katları şeklinde olacak.
+
+496
+01:18:27,572 --> 01:18:32,391
+Şu ifadeye baktığımızda x ekseni durumunda şunu yapacaktık.
+
+497
+01:18:32,551 --> 01:18:34,451
+x ekseninde bir değişim var mı? Yok.
+
+498
+01:18:36,471 --> 01:18:41,192
+Geldik, bu ifade yz ekseninde değişim var mı? Ona bakacağız.
+
+499
+01:18:41,351 --> 01:18:45,971
+Sadece x eksenine bakamıyoruz. 3 değişkeni de kontrol edeceğiz.
+
+500
+01:18:46,771 --> 01:18:51,371
+y ekseninde değişim var mı? Var. Sıfırdan biri. Onun için yazmıyoruz.
+
+501
+01:18:52,148 --> 01:18:55,308
+Aslında bu ortak parantezde birbirini götürmesi anlamına geliyor.
+
+502
+01:18:55,988 --> 01:18:58,648
+Z'ye baktığım zaman sıfırdan sıfıra bir değişim yok.
+
+503
+01:18:59,328 --> 01:19:00,927
+X çarpı Z'nin değili diyorum.
+
+504
+01:19:02,048 --> 01:19:03,628
+Üçüncü değişkenimiz şu.
+
+505
+01:19:05,808 --> 01:19:06,708
+Burada da ne yapacağız?
+
+506
+01:19:07,748 --> 01:19:09,328
+Burada X'de zaten değişim yok.
+
+507
+01:19:09,608 --> 01:19:10,328
+X'in değili.
+
+508
+01:19:10,608 --> 01:19:12,068
+Y, Z'de de değişim yok.
+
+509
+01:19:12,427 --> 01:19:13,667
+Y ve Z'nin kendisi.
+
+510
+01:19:13,828 --> 01:19:14,608
+Üç değişkenli.
+
+511
+01:19:15,155 --> 01:19:28,155
+deyip bunu da ekliyoruz. Sonuçta bu ifade de buraya geliyor. X'in değili, YZ diyoruz. Ve devremizin en sade fonksiyonunu bulabiliriz. Burayı anladık mı?
+
+512
+01:19:28,155 --> 01:19:36,155
+Şimdi hızlıca şunu da söyleyeyim. Daha sonra size, ben diğer toplantıya geçeceğim.
+
+513
+01:19:37,844 --> 01:19:47,443
+Ondan sonra dönüşte tekrar ederiz bu konuya. Saat 11 bir arada vermiş olursunuz. O arada siz o videoları falan izleyin. Ses kaydının sesi kapatacağım sadece.
+
+514
+01:19:48,484 --> 01:20:00,923
+Şimdi arkadaşlar, Karnı haritasında şuradaki bir şey, şöyle çizelim, buradaki bir şey, buradaki bir şeyle gruplanır. Yani şu ifadeyi aynı taraftaki bu ifadeyle grupluyorsunuz.
+
+515
+01:20:01,404 --> 01:20:04,663
+Köşeleri birbiriyle gruplayabilirsiniz. Eğer buralarda bir varsa.
+
+516
+01:20:05,652 --> 01:20:29,231
+dörtlü bir grup oluşur. Mesela şu ikililer kendi içerisinde grup oluşur veya sadece şurada şu ifade var, bir de burada bu yeşil var. Diğer durumlara başlayayım. Bu ikisi de kendi arasında ikili gruplanabiliyor. Yani bunu bir yuvarlak bir cisim gibi, top gibi düşündüğünüzde bu nokta bu noktayla eşleşebilir diyebiliyoruz.
+
+517
+01:20:34,355 --> 01:20:42,355
+En fazla 16'lı grup yapabilirim. 16'lı grup var mı? Yok. 8'li grup yapabiliyor muyum? 8'li bir grup görünmüyor.
+
+518
+01:20:42,355 --> 01:20:55,355
+Dörtlü ama dörtlü yapabilirim. Bakın şurada bir dörtlü var. Bu dördü gitti. Şu köşelerdeki biriler kendi içerisinde bir dörtlü grup oluşturur mu? Oluşturur. Bu da güzel.
+
+519
+01:21:01,716 --> 01:21:09,636
+Karşılıklı gruplasam başka açıkta bir şey kalmıyor, eleman kalmıyor. İşte bu zaman bitirmiş oluyorum.
+
+520
+01:21:09,636 --> 01:21:23,076
+Ortadaki dörtlüye bakalım. Buraya şöyle diyelim. Gelince bunu biraz daha detaylı anlatırım. Şimdi A'da yani pardon, x'de bir değişim var mı? Burada şu şeyde var. O zaman yazmayacağım.
+
+521
+01:21:26,804 --> 01:21:53,384
+Geldik Z'ye. Z'de bir değişim var mı? Var. Yazmıyorum. T'de bir değişim var mı? Yok. O zaman T'yi yazıyorum. Bakın bunun özelliği YT'miş. Artı. Şu köşelere bakalım arkadaşlar. Köşelerde bir dörtlüler var. Şimdi X'e bakıyorum. Köşelerde. X'de bir değişim sıfırdan biri. Var olduğu için yazmıyorum. Y'de bir değişim var mı? Yok. Bütün köşelerde Y sıfır değil mi?
+
+522
+01:21:54,131 --> 01:22:19,152
+O zaman y'nin değili. Sonra geldik z'ye. Z'de bir değişim var mı? Sıfırdan 1'e gitmiş. Var, onun için yazmıyorum. T'de bir değişim var mı? Sıfırdan 0'a gitmiş. T'de de bir değişim yok. T değil. Bakın, iki dörtlüden ikili terim buldum. Şurada bir taneyi gruplamıştım, üçlü terim buldum. Daha sade. Ne kadar fazla olursa o kadar sade.
+
+523
+01:22:19,503 --> 01:22:22,724
+Şimdi bir tane ikili terimimiz kaldı. O da şurası.
+
+524
+01:22:22,724 --> 01:22:27,943
+X'de bir değişim yok. Y'de de bir değişim yok. Ama nasıl?
+
+525
+01:22:27,943 --> 01:22:33,463
+X'in D ile Y olacak. Şu iki ifadeye bakınca, şuradaki ile.
+
+526
+01:22:33,463 --> 01:22:36,744
+Şuna bakınca, X'in D ile Y.
+
+527
+01:22:36,744 --> 01:22:39,463
+Bir de neye bakıyoruz? Z ve T'ye bakıyoruz.
+
+528
+01:22:39,463 --> 01:22:42,543
+Z'de bir değişim, 0'dan 1'e var.
+
+529
+01:22:42,543 --> 01:22:44,543
+T'de bir değişim var mı? Var.
+
+530
+01:22:44,543 --> 01:22:45,543
+Şey, pardon yok.
+
+531
+01:22:45,876 --> 01:22:57,176
+sıfırdan sıfıra, o zaman t'nin değeri diyoruz ve tamamlıyoruz. Bu ifade, bu lojik ifadenin en sade hali buymuş deyip bırakacağız. Anlaşıldı mı arkadaşlar?
+
+532
+01:23:01,524 --> 01:23:17,524
+Buradan daha başka sade. Aslında şu olabilir. Bir dakika. Bakın şurada şöyle bir şey atladık. Onu da söyleyeyim de bu örneği şuraya arkadaşlar ikili almak yerine
+
+533
+01:23:21,043 --> 01:23:25,404
+Şurada bir dörtlü grup oluşturabilirim. Şu ikiliyi yok ederim bu sayede.
+
+534
+01:23:26,163 --> 01:23:28,463
+Tamam mı? Bunu yapmam mümkün.
+
+535
+01:23:28,984 --> 01:23:34,103
+Yani bir defa grupladım, aynı şeyi tekrar gruplayabiliyorum. O zaman şöyle bir şey yapacağız.
+
+536
+01:23:35,123 --> 01:23:37,683
+Bu ifade şu yer değiştirecek.
+
+537
+01:23:38,703 --> 01:23:40,503
+Şunun yerine ne diyebiliriz?
+
+538
+01:23:41,264 --> 01:23:43,064
+X'de bir değişim var mı? Yok.
+
+539
+01:23:43,824 --> 01:23:45,623
+Ama X'in D'nin de bir değişim yok.
+
+540
+01:23:46,123 --> 01:23:48,443
+Y'nin kendisinde bir değişim yok.
+
+541
+01:23:48,724 --> 01:23:58,724
+z ve t de sürekli değişiyor. Bakın sıfır sıfırdan sıfırdan sıfıra sonra bir ekl. O zaman bir şey yazmıyoruz. Bu ifade yerine x'in değili y diye de yazabiliyorum.
+
+542
+01:23:58,724 --> 01:24:10,668
+Tamam daha basit bir ifade bulabildim. İsterseniz şunu gelince tekrar anlatırım. Şimdi ben toplantıya gireceğim. Şu slide'ın
+
+543
+01:24:13,747 --> 01:24:14,747
+sonundaki
+
+544
+01:24:14,747 --> 01:24:23,087
+youtube videolarını, şu videoları Banu Hoca işte orada şey anlatıyor, benzer karno haritaları anlatıyor.
+
+545
+01:24:23,987 --> 01:24:30,587
+Saat on bire kadar, şimdi ara veriyoruz. Siz izleyin, on birde tekrar devam ederiz. Şeyi kapatmıyorum arkadaşlar.
+
+546
+01:24:31,528 --> 01:24:31,987
+Uygulamayı.
+
+547
+01:24:33,407 --> 01:24:34,067
+Görüşmek üzere.
+
+548
+01:24:42,739 --> 01:24:46,279
+Bir sorunuz olursa chatten yazın, ben arada bakmaya çalışırım.
+
+549
+02:05:35,060 --> 02:05:37,600
+Evet arkadaşlar, merhabalar. Tekrar da.
+
+550
+02:05:46,195 --> 02:05:52,355
+Herkes burada herhalde. Burada değilseniz de bir grubunuzdan yazarsanız biraz daha ders yapalım.
+
+551
+02:06:03,315 --> 02:06:12,735
+Şimdi arkadaşlar, esasen bu konu hocam niye anlattınız? Yani lojikte de görüyoruz falan diye bazen soruyorlar. Bundan soru çıkar mı diyenler oluyor.
+
+552
+02:06:14,536 --> 02:06:20,615
+Şu an ekranımı paylaşıyorum. Herhalde şu an geldi ekranım.
+
+553
+02:06:24,595 --> 02:06:26,376
+Bu konudan soru geliyor arkadaşlar.
+
+554
+02:06:28,255 --> 02:06:32,475
+Gelecek hafta, bu hafta biraz böyle şu toplantıdan dolayı kesintili oldu.
+
+555
+02:06:36,435 --> 02:06:45,435
+Gelişik hafta bir, mesela yaz okulunda sorduğum sorunun benzerini veya kendi aynısını çözebiliriz.
+
+556
+02:06:47,435 --> 02:06:58,667
+Esasen bu ayrı matematik ilk çıktığı zamanlar genel bilgisayar bilimlerine giriş maksatlı bir das oldu.
+
+557
+02:07:00,532 --> 02:07:08,692
+Bu konu orada dahil. Bir de lojiğin, yani mantık konusunun ve proof konusunun bir çeşit uygulaması olsun diye anlatıyoruz.
+
+558
+02:07:08,692 --> 02:07:23,731
+Şimdi size arada toplantıda başka yerlere de baktım. Söyleyeceğim şey şu. Şu kuralı göstermiştik. Bunu şu şekilde de görebilirsiniz. İkisi aynıdır.
+
+559
+02:07:26,212 --> 02:07:27,272
+Nasıl aynı?
+
+560
+02:07:28,020 --> 02:07:37,380
+Yani şuradaki değişken sadece y değil olmuş. Değil olan şu değişken iki durumda da gidiyor.
+
+561
+02:07:38,380 --> 02:07:46,860
+O şekilde ifade edebiliriz. Sonra kalan x artı y kalıyor. Bunun çarpımlı hali şu, bu daha kolay.
+
+562
+02:07:48,460 --> 02:07:54,020
+Nasıl daha kolay? x artı y'nin değeri çarpı y. Bunu x çarpı y
+
+563
+02:07:54,144 --> 02:08:04,524
+Parantez içerisinde açarsanız artı y çarpı y'nin değeri gidiyor. Buradan bu sıfır gelecek. Sonuçta x çarpı y gelecek. Bahsettiğim kural buydu.
+
+564
+02:08:39,123 --> 02:08:39,884
+Gelelim
+
+565
+02:08:42,443 --> 02:08:47,063
+Karno haritaları alakalı şeye. Bunun devamı biraz daha gelecek arkadaşlar.
+
+566
+02:08:49,363 --> 02:08:51,163
+Şu an benim ekranımı görüyor musunuz?
+
+567
+02:08:53,724 --> 02:08:57,043
+Ekran paylaşımı bir dakika. Şunu bir kapatıp
+
+568
+02:08:59,083 --> 02:08:59,863
+Tekrar
+
+569
+02:09:05,108 --> 02:09:10,228
+Ekran paylaşımı durduruldu falan diyor. Ekran dondu falan diyor bazen de.
+
+570
+02:09:10,228 --> 02:09:11,827
+Yok hocam.
+
+571
+02:09:11,827 --> 02:09:15,827
+Bir sorun mu oldu diye tekrar yapmak istiyorum.
+
+572
+02:09:15,827 --> 02:09:26,548
+Şimdi arkadaşlar, Karno haritalarıyla alakalı genel olarak birkaç farklı soru notasyonu gelir size.
+
+573
+02:09:34,355 --> 02:10:00,000
+Birincisi şudur. Toplam fonksiyonunda bir f fonksiyonu gösterirler. Şu şekilde bir ifade yazılır. 1, 4, 7, 9 mesela. Bu ne demek? Birinci minitörm, dördüncü minitörm, yedinci minitörm ve dokuzuncu minitörmlerin toplamı bu fonksiyon olacak demek. Şimdi benim buradan yola çıkarak bazı şeyleri çözmek.
+
+574
+02:10:00,000 --> 02:10:24,579
+9 varsa bu en az kaç bitlik, kaç değişkenli bir fonksiyondur diyeceğiz. Yani 4 değişken veya 4. Neden? Çünkü 8'i de geçmiş yani 2 üzeri 3'ün dışında. O zaman benim yapacağım karnın haritası 4'lük bir karnın haritası. Yani 2'ye 2'lik bir şey olacak. Şöyle alalım.
+
+575
+02:10:37,716 --> 02:10:41,036
+Değişkenlerimiz, BCD olsun.
+
+576
+02:10:44,316 --> 02:10:44,876
+Ne oldu önemli?
+
+577
+02:10:45,336 --> 02:10:47,695
+Yani buradan yola çıkarak şunu da söyleyebiliriz.
+
+578
+02:10:50,175 --> 02:10:57,175
+Logic devrinin şemasını çizin dersek, logic circuit, dörde birlik bir şey olacak demektir.
+
+579
+02:10:57,536 --> 02:10:58,956
+Bu yorumunu da yapabiliriz.
+
+580
+02:10:59,956 --> 02:11:06,175
+Daha sonra geldik karno haritasını çizmeye. Burada farklı karno haritaları üzerinde ben de birkaç örnek yapacağım.
+
+581
+02:11:06,175 --> 02:11:25,515
+A, B değil. Konusunu dersi bitireceğim. İşte 0, 0, 0, 1, 1, 1, 0. Şimdi normal bir doğruluk tablosunda genelde arkadaşlar bununla karıştırıyorlar. Doğruluk tablosunda nasıl ilerliyoruz? Bir bit artıra artıra.
+
+582
+02:11:28,148 --> 02:11:52,587
+Yani bu normal True Table. Ama karnın haritasında böyle bir şey yok. Niye yok? Burada her seferinde bir bit değişmiyor. Bakın şuradan şuraya değişimde iki bit değişmiş. Hem bu değişmiş hem bu değişmiş. Ama burada 0 1'den sonra gelen şeyimiz biridir. 0 0 0 1 1 1 1 0
+
+583
+02:11:53,779 --> 02:12:10,379
+Biraz önceki örnekte ne yaptık? Şunlar 1'di. Şurada 1'ler vardı. Bir de burada 1'ler vardı. Herhalde buna benziyordu. Veya şu 1'ler üst kattaydı. Önemli değil o.
+
+584
+02:12:12,379 --> 02:12:14,379
+Şimdi bu tarz bir durumda...
+
+585
+02:12:16,724 --> 02:12:29,083
+yapabileceğimiz gruplamalar önemli. Şimdi ilk başta şöyle bir gruplama yapabiliyorum. Bir. Bu grubun sonucunu hemen yazalım mavi kalemle. Birinci grup diyelim.
+
+586
+02:12:30,904 --> 02:12:40,264
+A'da bir değişim var. Bakın şu bu hani AB değişimde şu lütfen de bakıyorum. A'da bir değişim var. A'yı yazıyoruz.
+
+587
+02:12:42,292 --> 02:12:46,692
+B'de bir değişim yok. Burada da bir, burada da bir. O zaman B'yi yazıyoruz.
+
+588
+02:12:49,852 --> 02:12:57,332
+Geldik C'de düzlemine. C'de bir değişim var. Yazmıyorum. B'de bir değişim yok. Yazıyorum. O zaman bunun cevabı B'deymiş.
+
+589
+02:12:59,252 --> 02:13:02,452
+Sekizli bir grup üretemediğim için dörtlü grupta burayı kaldım.
+
+590
+02:13:03,312 --> 02:13:05,212
+Geldim bir başka dörtlü gruba.
+
+591
+02:13:06,452 --> 02:13:08,364
+Mesela biraz önce...
+
+592
+02:13:08,372 --> 02:13:33,612
+iki örnekte yaptığımız gibi aynısını ifade edebiliriz. Şunu, şunu, şunu ve şunu bir dörtlü yapabiliriz. Aynı şekilde şöyle de yapabilirdik arkadaşlar. Şuradan, pardon, şöyle bir ikili ile şöyle bir ikili alıp bir dörtlü yapabiliriz.
+
+593
+02:13:34,036 --> 02:13:37,876
+Şurada ikili kalır. Bunlar fark etmiyor.
+
+594
+02:13:37,876 --> 02:13:44,916
+O dörtlüleri köşelerden göstermiş olmak adına böyle yapmış olalım. Yeşil kalemle olan kısma iki diyorum.
+
+595
+02:13:49,811 --> 02:13:59,452
+Tabii şu yeşili dikkate almayın da, bir dakika şöyle biraz geri alalım. Orayı mor ile işaretleyelim.
+
+596
+02:14:04,595 --> 02:14:12,595
+Eğer ki şu ikili ikili dörtte alsaydık, orada yukarıda bir tane ikili kaldıacaktı, onu söylemek istedim.
+
+597
+02:14:12,595 --> 02:14:16,595
+İkinci durumda yeşil kalem...
+
+598
+02:14:16,595 --> 02:14:21,595
+Önce çiziyoruz, ondan sonra renk geri değişiyor.
+
+599
+02:14:26,452 --> 02:14:27,472
+İkinci durum.
+
+600
+02:14:31,828 --> 02:14:33,828
+Şimdi ne var arkadaşlar?
+
+601
+02:14:33,828 --> 02:14:37,828
+Şu dört durumun dört kiri inceleyeceğiz.
+
+602
+02:14:41,268 --> 02:14:42,107
+Burada sıfırmış.
+
+603
+02:14:44,287 --> 02:14:45,687
+B sıfırmış.
+
+604
+02:14:46,768 --> 02:14:47,707
+B burada da sıfır.
+
+605
+02:14:47,787 --> 02:14:48,587
+O zaman B'yi yazacağım.
+
+606
+02:14:48,667 --> 02:14:52,087
+Ama B'nin sıfır olması B'nin değilini yazacağım anlamına geliyor.
+
+607
+02:14:53,268 --> 02:14:54,287
+Sonra geldim C'ye.
+
+608
+02:14:55,287 --> 02:14:56,547
+C burada sıfırmış.
+
+609
+02:14:57,427 --> 02:14:58,147
+Burada bir olmuş.
+
+610
+02:14:58,147 --> 02:14:59,787
+O zaman C'yi yazmıyorum.
+
+611
+02:14:59,927 --> 02:15:00,768
+B sıfırmış.
+
+612
+02:15:00,947 --> 02:15:01,647
+Burada da sıfır.
+
+613
+02:15:01,847 --> 02:15:02,607
+Bütün durumlarda.
+
+614
+02:15:03,327 --> 02:15:04,327
+D'nin değilini yazıyorum.
+
+615
+02:15:05,971 --> 02:15:33,231
+Geldik, bir durum daha var. Hani şu an yakalan, tamam şu köşedekiler şu oldu. Mesela şuradaki birler. Şunlar. Bu birleri ikili gruplayabilirim. Ama bakıyorum ikili gruplamadan önce dörtlü bir gruplama yapabilir miyim? Veya sekizli bir gruplama yapabilir miyim? Şimdi dörtlü gruplama oluyor. Birinci durumda şu şekilde bir dörtlü yapabilirim.
+
+616
+02:15:34,355 --> 02:15:38,715
+Veya sırayı içerecek bir dörtlü grupta yapabiliriz.
+
+617
+02:15:39,475 --> 02:15:43,435
+İkisini de bir yazalım. Birinci durumu yazalım arkadaşlar. Hem çeşitlilik olsun.
+
+618
+02:15:43,435 --> 02:15:45,555
+Hiç böyle yatay gruplama yaptıklarım.
+
+619
+02:15:46,076 --> 02:15:48,555
+A'da bir değişim yok. B'de bir değişim yok.
+
+620
+02:15:48,555 --> 02:15:50,876
+A, B, C. A, B dedik.
+
+621
+02:15:52,315 --> 02:15:55,956
+C'de bir değişim var. Sürekli var. D'de bir değişim sürekli var.
+
+622
+02:15:55,956 --> 02:15:57,756
+Çünkü burada bir olmuş.
+
+623
+02:15:57,756 --> 02:16:01,355
+Yani bundan sonra bütün yüzdelerde diğer özel değişikliği değerleri.
+
+624
+02:16:01,652 --> 02:16:03,872
+O zaman bunun sonucu AB.
+
+625
+02:16:04,692 --> 02:16:06,492
+Eğer bunu şu şekilde yaksaydım,
+
+626
+02:16:06,492 --> 02:16:14,412
+sesiniz artık azalıyor.
+
+627
+02:16:14,952 --> 02:16:15,332
+Allah Allah.
+
+628
+02:16:16,072 --> 02:16:16,792
+Anlık azalıyor.
+
+629
+02:16:18,812 --> 02:16:20,192
+Yani bağlantıdaki
+
+630
+02:16:20,192 --> 02:16:23,152
+fluctuation'dan dolayı olabilir.
+
+631
+02:16:23,912 --> 02:16:25,552
+Şu an nasıl arkadaşlar? İyi mi sesim?
+
+632
+02:16:30,547 --> 02:16:31,047
+yapalım.
+
+633
+02:16:35,316 --> 02:16:37,316
+RAM'de bir problem var galiba.
+
+634
+02:16:40,016 --> 02:16:43,776
+Neyse, biraz daha, zaten bir 20 dakika daha sabredin arkadaşlar.
+
+635
+02:16:44,436 --> 02:16:49,576
+Anladım. Belki bir anlık bir bağlantının gidip gelmesiyle alakalı olabilir.
+
+636
+02:16:50,576 --> 02:16:56,916
+Şimdi şu dörtlüye baktığımızda, yani bu dörtlüden kastım yazacak renk kalmadı da şöyle diyelim.
+
+637
+02:16:58,996 --> 02:17:00,916
+Şu kısmı alacağız.
+
+638
+02:17:07,796 --> 02:17:19,796
+Şu kısmı bir alacağız. Bir de şu kısmı alacağız. Üstteki dörtlüler için. Buraya baktığımızda, sarı yani bu sarının ikinci versiyonu oluyor bu arada. İkinci versiyon.
+
+639
+02:17:19,796 --> 02:17:32,796
+A'da bir değişim var mı? Bu dörtlü grupta A'da bir değişim yok. O zaman A'yı yazıyorum. B'de bir değişim var mı? B'de var. Birden sıfıra gelmiş. Bu dört ücrete de bu durum var. Sonra geliyorum C ve D'ye.
+
+640
+02:17:33,940 --> 02:17:50,479
+C'de bir değişim var mı? Sıfırdan bire gelmiş bakın. İlk ucu burada, diğerleri burada. C'de bir değişim var. C'yi yazmıyorum. D'de bir değişim var mı? Yok. D'de bir değişim yok ama D'nin sıfır olduğu durumlarda değişim yok. Onun için A ve D'nin değilidir.
+
+641
+02:18:02,548 --> 02:18:16,108
+B değil, D değil. Artı A, D değil şeklinde veya A, D yerine A, B şeklinde fonksiyonunuz ortaya çıkmış oluyor.
+
+642
+02:18:17,067 --> 02:18:19,328
+Tamam mı? Anlaşıldı mı burası?
+
+643
+02:18:21,608 --> 02:18:23,188
+Hocam bir şey sorabilir miyim?
+
+644
+02:18:23,528 --> 02:18:23,848
+Buyurun.
+
+645
+02:18:24,768 --> 02:18:28,308
+Şey, hani bu değişince almamızın sebebi birbirini yok etmesi mi?
+
+646
+02:18:28,852 --> 02:18:33,592
+Aynen, birbirinin aslında ortak parantezleri birbirini götürmesi demek.
+
+647
+02:18:34,012 --> 02:18:34,292
+Tabii.
+
+648
+02:18:34,812 --> 02:18:39,072
+Ama değişim varsa almıyoruz, değişim yoksa stabilse alıyoruz.
+
+649
+02:18:40,552 --> 02:18:41,172
+Bunu unutmayın.
+
+650
+02:18:42,612 --> 02:18:46,892
+Pekala, birkaç tane daha böyle karışık karno artesi örneği yapalım.
+
+651
+02:18:46,892 --> 02:18:48,612
+Yani problemden bağımsız.
+
+652
+02:18:48,731 --> 02:18:52,780
+Yani bir şekilde siz gittiniz, buradan yola çıkarak...
+
+653
+02:18:52,915 --> 02:19:01,415
+Tabi bu 1479 ne arkadaşlar? Daha gelmedik. Onun mesela önce şeyini yapalım. Doğruluk tablosunu yapalım o zaman.
+
+654
+02:19:06,420 --> 02:19:09,940
+Şimdi zorluk tablosunun 4 değişinden lazım.
+
+655
+02:19:09,940 --> 02:19:14,740
+0011
+
+656
+02:19:14,740 --> 02:19:17,540
+Şu durumda bir tane 1 olacak.
+
+657
+02:19:17,540 --> 02:19:21,860
+0010
+
+658
+02:19:21,860 --> 02:19:25,139
+0011
+
+659
+02:19:25,139 --> 02:19:29,139
+0010
+
+660
+02:19:29,139 --> 02:19:31,940
+Şu durumda da bir 1 olacak.
+
+661
+02:19:32,564 --> 02:19:58,623
+Geri durumlara böyle 16 durumu yazmayalım arkadaşlar. Şurada arada boşluk bırakıp 0, 1, 1, 1. Bu 7 ne olur durumun da buraya 0 olur. Bir de 1, 0, 0, 1. Bir de burada 1 olur. Diğer bütün durumlar 0'dur değil mi? Burayı anladınız herhalde. Yoksa 16 durumun 16'sında yazmamız gerekiyor da ben şu an bu şeyde payinte çok fazla yazamıyorum.
+
+662
+02:20:00,115 --> 02:20:10,115
+Şimdi, o zaman ondan sonra ne yapacağız? Karno haritasına geçiş yapacağız. Allah'tan karno haritasını kolay çizebiliyoruz.
+
+663
+02:20:26,899 --> 02:20:30,680
+Dört değişkenimizin ismi de ABCD olsun.
+
+664
+02:20:35,412 --> 02:20:40,691
+0, 0, 0, 1, 1, 1, 1, 0.
+
+665
+02:20:52,211 --> 02:20:54,451
+Şunu bir kenarda dursun, birazdan lazım olacak.
+
+666
+02:20:56,592 --> 02:21:02,072
+Geldik bu haritadan, doğruluk tablosundan elde ettikleri haritaya aktarmaya.
+
+667
+02:21:02,211 --> 02:21:05,731
+0, 0, 0, 1 de yani şu ABC'de 0 burada böyle.
+
+668
+02:21:08,111 --> 02:21:13,291
+0, 0, 0, 1 yani 0, 0, 0, 1 şurası. Burada 1 varmış.
+
+669
+02:21:14,511 --> 02:21:19,051
+Sonra 0, 1, 0, 0'da burada 1 varmış.
+
+670
+02:21:20,244 --> 02:21:32,244
+Sonra 0, 1, 1, 1'de şurada 1 varmış. 1'de 1, 0, 0, 1'de şurada 1 varmış. Başka durum yok.
+
+671
+02:21:33,244 --> 02:21:43,244
+Gelelim bunları nasıl grupluyoruz. 16'lık grup çıkmıyor. Başka 4'lık grup da çıkmıyor. 2'lik grup çıkabilir mi? Evet çıkabiliyor.
+
+672
+02:21:43,244 --> 02:21:47,244
+Şunu şu şekilde 2'li gruplayabiliyorum.
+
+673
+02:21:49,108 --> 02:21:58,788
+Başka ikili grup çıkabilir mi? Çapraz grup olmaz arkadaşlar. Başka ikili grup çıkmıyor. O zaman tekli gruplara bakacağım. Tekli gruplarda koyu...
+
+674
+02:22:02,804 --> 02:22:14,484
+Şurası ikili grup. Tekli gruplarda kare ile çizelim. Şurada bir tekli grup var, burada bir tekli grup var. Burayı anladık mı?
+
+675
+02:22:17,747 --> 02:22:26,747
+Geleceğiz. Kare grupların birincisini ve ikincisini şöyle yazalım. Bir de oval grubumuz var. Onları yazalım.
+
+676
+02:22:27,747 --> 02:22:38,747
+Şimdi kare grubun birincisi. Tek hücre olduğu için bütün değişkenleri doğrudan yazarız. Çünkü A'da bir değişim, B'de bir değişim, C'de hiçbirinde bir değişim yok.
+
+677
+02:22:38,747 --> 02:22:41,747
+Nedir bu? A'nın değili B.
+
+678
+02:22:42,451 --> 02:22:45,931
+Aynı zamanda C'nin değili D'nin değildir arkadaşlar.
+
+679
+02:22:47,752 --> 02:22:55,412
+İkincisine bakalım. Yine A'nın değili B, C, D oluyor.
+
+680
+02:22:56,912 --> 02:22:57,451
+Tamam mı?
+
+681
+02:22:58,931 --> 02:23:00,031
+Geldik oval gruba.
+
+682
+02:23:01,391 --> 02:23:03,271
+Şimdi A'da bir değişim var.
+
+683
+02:23:04,340 --> 02:23:10,440
+B'de bir değişim yok. O zaman B'de değişim yazacağım ama B sıfır olduğu için B'nin D'nin de değişimi yok.
+
+684
+02:23:11,520 --> 02:23:20,680
+Sonra geldik. C'de zaten bu eksen boyunca değişmeyen bir şey. C'nin D'li D diyorum.
+
+685
+02:23:21,760 --> 02:23:25,959
+Zaten 16'lık bir sistemde tekli grup yaparsanız 4 terimli bir şey elde edersiniz.
+
+686
+02:23:25,959 --> 02:23:30,659
+İkili yaparsanız 3 terimli. Dörtlü yaparsak 2 terimli.
+
+687
+02:23:31,412 --> 02:23:35,351
+Sekizli yaparsak tek terimli, onaltılı yaparsak grubu ne olur arkadaşlar?
+
+688
+02:23:38,012 --> 02:23:56,972
+Onaltılı gruplama ne? Hepsi birdir. Evet, onaltılı da bir. Onaltılı da sonuç birdir. Sekizli de A, B gibi ikili terimler, dörtlü de A, B, C gibi biraz önce şurada yaptığımız gibi.
+
+689
+02:23:58,484 --> 02:24:07,664
+üçlü terimler, ikili de, ikili de mesela pardon sekildi de tekli terim yanlış söyledim.
+
+690
+02:24:16,404 --> 02:24:23,864
+Tek değişkene bağlı, A değişkenine bağlı bir şey. Diğerinde AB gibi bir şey. Öbüründe ABC gibi bir şey.
+
+691
+02:24:27,244 --> 02:24:41,764
+Birli de de ABC'de. Birli de yapamıyorsam, o zaman devrinin bütün elemanları çıkış. Yani bu 5 volt vereceksin demektir bütün girişlere. Bu da 0 volttur.
+
+692
+02:24:42,611 --> 02:24:44,611
+şurada aradaki fonksiyonları gösterir.
+
+693
+02:24:47,171 --> 02:24:48,171
+Anlaşıldı mı?
+
+694
+02:24:53,587 --> 02:24:58,187
+Şuradan birkaç örnek daha seçip yapalım.
+
+695
+02:25:15,347 --> 02:25:20,028
+Doğruluk tablosundan aktarmayla alakalı dediğim gibi haftaya bazı örnekler yine yaparız.
+
+696
+02:25:20,907 --> 02:25:22,887
+Mesela ne olsun? Burada bir bir olsun.
+
+697
+02:25:25,227 --> 02:25:26,368
+Şurada bir bir olsun.
+
+698
+02:25:28,847 --> 02:25:30,108
+Şurada bir olsun.
+
+699
+02:25:31,028 --> 02:25:32,008
+İşte burada bir olsun.
+
+700
+02:25:33,567 --> 02:25:34,747
+Yeterli olur herhalde.
+
+701
+02:25:36,227 --> 02:25:37,668
+Şimdi buraya baktığımızda
+
+702
+02:25:37,668 --> 02:25:41,067
+dörtlü falan gruplayamıyoruz.
+
+703
+02:25:42,515 --> 02:25:53,915
+İkili gruplama yapabiliyoruz. Evet, şu ikiliyi bir gruplarız. Bu ikiliyi gruplarız. Bu ikiliyi de şu şekilde gruplarız. Onu şöyle yapalım. Kare ile gösterelim.
+
+704
+02:26:00,020 --> 02:26:00,971
+vea.
+
+705
+02:26:06,804 --> 02:26:09,123
+Şu ikili bu şekilde gruplayabiliriz.
+
+706
+02:26:10,324 --> 02:26:14,243
+Birincisine baktığımızda şuraya bir diyelim arkadaşlar. Bu iki olsun.
+
+707
+02:26:15,443 --> 02:26:16,884
+Bu da üçüncü grup olsun.
+
+708
+02:26:17,283 --> 02:26:19,283
+Nedir birinin sonucu yazın bakalım.
+
+709
+02:26:27,059 --> 02:26:29,959
+Birnoğlu gruplamanın sonucu nedir?
+
+710
+02:26:33,843 --> 02:26:35,663
+Olmaz [öğrenci]. AB olmaz.
+
+711
+02:26:36,183 --> 02:26:39,003
+A'nın değili, B'nin değili, C'nin değili mi hocam?
+
+712
+02:26:39,563 --> 02:26:44,263
+Evet. Yazarsanız ben daha şey rahat yazarım. Kontrol ederim.
+
+713
+02:26:46,943 --> 02:26:58,163
+Evet. Çoğunluk doğru. [öğrenci] şimdi şöyle dikkat et. AB değiliz. İkisi de sıfırda. Değişim var mı? Yok bu eksen boyunca. O zaman A'nın değili diyeceğiz.
+
+714
+02:26:58,899 --> 02:27:03,419
+B'nin değil. Çünkü sıfırda değişim yok. Bir de değişim olmasaydı bir yazır. A, B yazar.
+
+715
+02:27:04,059 --> 02:27:11,799
+Aslında bu şudur arkadaşlar. Fonksiyon açısından ayılarsak A çarpı sıfır diye yazılır.
+
+716
+02:27:13,259 --> 02:27:19,680
+Bunu da A'nın değil şeklinde yazarız. Ama şimdilik bunu bilmenize gerek yok. A'nın değil. B'nin değil.
+
+717
+02:27:19,680 --> 02:27:23,180
+C'ye baktığımızda C'de de bir değişim yok.
+
+718
+02:27:24,084 --> 02:27:39,664
+C'de olmayan bu değişim nerede oluyor? C'nin D'in de oluyor. Onun için burayı yazabiliriz. D'de bir değişim var mı? Var. Onun için yazmıyoruz. İki noğuluya bakalım. İki noğulu için ne dersiniz?
+
+719
+02:27:43,283 --> 02:27:45,283
+Hemen hazırda bekleyenler varmış.
+
+720
+02:27:46,283 --> 02:27:48,283
+A'da bir değişim var mı? Yok.
+
+721
+02:27:49,283 --> 02:27:52,283
+B'de bir değişim var mı? Orada da yok.
+
+722
+02:27:52,283 --> 02:27:56,283
+C'de bir değişim var mı? C'de bir değişim yok.
+
+723
+02:27:56,283 --> 02:28:02,283
+C'de bir değişim yok ama C'nin değişiminde yani sıfırken bir değişim yok.
+
+724
+02:28:03,283 --> 02:28:05,283
+D gibi oldu, C'nin değdi.
+
+725
+02:28:05,283 --> 02:28:08,283
+D'de bir değişim var mı? Var. Onun için D'yi yazmıyoruz.
+
+726
+02:28:08,283 --> 02:28:10,283
+Üçüncü gruba geldiğimizde...
+
+727
+02:28:11,443 --> 02:28:19,443
+Şu diamond olana. A'da bir değişim var mı? Bakalım. A'da bir değişim var. O zaman A'yı yazamam.
+
+728
+02:28:19,443 --> 02:28:29,443
+Tamam mı? B'de bir değişim var mı? B'de bir değişim yok. Sıfırdan sıfıra. Tamam. O zaman B'nin D'yi yazıyoruz.
+
+729
+02:28:29,443 --> 02:28:36,443
+C'de bir değişim var mı? Yok. Çünkü şu eksende baktığımızda C ve D hiçbir zaman değişmez.
+
+730
+02:28:37,492 --> 02:28:40,811
+C yazdık, B'nin değeri yazdık. Bu şekilde bitiriyoruz.
+
+731
+02:28:42,351 --> 02:28:47,471
+Birkaç daha yapalım. Örneğin arkadaşlar şöyle olsun. Bir, bir, bir, bir.
+
+732
+02:28:50,632 --> 02:28:56,691
+Bir şöyle olsun. Bir de şu şekilde ikinci case olarak, ikinci örnek olarak bunu yapalım.
+
+733
+02:28:57,971 --> 02:28:59,252
+Baktığımız zaman
+
+734
+02:29:01,551 --> 02:29:03,612
+Şurayı bir gruplama yapabiliyorum.
+
+735
+02:29:04,884 --> 02:29:30,884
+Sonra, şu ikinci örneği göz ardı edelim. Şurada da, şu ikisini bir grup yapabiliriz. Bu şekilde iki grupla çıkarız. Üçüncü case'imizde eğer bunu da dahil etmiş olsaydık, o zaman ne yapacağız? Şu dörtlüyü alabilirdik. Hocam, şurada da ikili var. Bu ikiliyi dahil etsek altılı olur mu? Altılı diye bir şey yok.
+
+736
+02:29:35,028 --> 02:29:58,968
+Şöyle kırmızıyla alalım arkadaşlar. Şurası şöyle olacak birinci durumda. Diğer durumda şu dörtlüyü alacağız. Şöyle alacağız. Birinci durumdaki denklemi yazalım. Birinci durumda bu sekizli zaten iki durumda da olacak. Baktığımız zaman A'da ve B'de sürekli bir değişim var.
+
+737
+02:30:00,115 --> 02:30:13,916
+Değil mi? Onun için ne A'yı ne B'yi dahil edebiliyorum. Baktığımız zaman C'de de bir değişim var. Sadece D'de değişmiyor. O zaman birinci durum kırmızı olan D olacak.
+
+738
+02:30:15,515 --> 02:30:24,615
+Artı. Şu ikiliye baktığımız zaman ne var? A'nın D'li.
+
+739
+02:30:25,811 --> 02:30:39,051
+A artı B'nin, A B'nin değili. Bu ikiliden başka C'de bir değişim var mı? C'de bir değişim yok. C'de bir değişim yok. Yok olduğu için C'nin değili yazdık. D'de bir değişim var. D'yi yazmıyoruz.
+
+740
+02:30:40,752 --> 02:30:51,291
+Sadece dörtlüğü alamaz mıyız derken, şu biri sonradan dahil edip, onu ikinci bir örnek olarak düşünün. İlk durumda şu sekizli var, bir de şu ikili var. Dolayısıyla burada ikili yapacağız.
+
+741
+02:30:53,396 --> 02:31:00,676
+Sadece dörtlü almamız derken yani şeydir bu sekizli alabiliyoruz yani burada dörtlü dörtlü iki tane almaya gerek yok.
+
+742
+02:31:00,756 --> 02:31:08,016
+Ha şunu yapabilirsiniz. İki tane dörtlü alırsınız. Oradan gelen denklem sonuçlarını bulce bir kurallarıyla sadeleştirirsiniz.
+
+743
+02:31:08,156 --> 02:31:15,656
+Yine şunu D'yi bulmanız lazım. Mesela o iki dörtlüyü hesaplıya yazalım. Birinci dörtlüyü hesaplarsak ne olur arkadaşlar?
+
+744
+02:31:15,656 --> 02:31:19,536
+Şurayı dörtlü olarak düşündüğünüzde. C değil.
+
+745
+02:31:19,924 --> 02:31:26,463
+B gelir. Artı ikinci dörtlüğü yazarsak ne gelir? C, B gelir.
+
+746
+02:31:30,291 --> 02:31:37,831
+Evet, D parantezini alırsak ne olur? C artı C değil, onlar birbirini bir yapacak. Yine sonuçta D'yi buluruz. Onun için sekizli yapıyoruz.
+
+747
+02:31:38,811 --> 02:31:43,231
+Alttaki satırda şu bir dahil değil, dörtlü yapamıyoruz. O ikinci örnektir.
+
+748
+02:31:45,231 --> 02:31:51,451
+Şimdi bu birin dahil olduğu örneğe de bakarsak ne olacak? D artı neyi bulacağız?
+
+749
+02:31:52,391 --> 02:31:55,691
+A ve B'de değişim yok. A, B'nin değili.
+
+750
+02:31:56,404 --> 02:32:01,064
+CVD sürekli değişiyor. O zaman ne oldu? Sonucumuz bu oldu.
+
+751
+02:32:02,603 --> 02:32:05,804
+Ali'nin dediği eğer bunu dahil edersek ikinci örneğin sonucu bu olur.
+
+752
+02:32:08,024 --> 02:32:14,243
+Evet. Banu hocanın örneklerine de bakabilirsiniz. Yapalım mı mesela bir iki örnek daha ister misiniz? Gerek var mı arkadaşlar?
+
+753
+02:32:19,443 --> 02:32:24,164
+Veya işte hocam şuraya bir yazsak şu durumu denemek isteyen varsa söyleyin.
+
+754
+02:32:27,123 --> 02:32:28,023
+Bakalım hemen.
+
+755
+02:32:30,484 --> 02:32:35,263
+Bu A'lar, B'ler, C'ler bizim değişkenlerimiz.
+
+756
+02:32:36,883 --> 02:32:38,283
+Mesela şöyle bir soru olsa.
+
+757
+02:32:40,283 --> 02:32:44,943
+Vize A olsun birinci vize yüzde yirmi ağırlıklı.
+
+758
+02:32:46,227 --> 02:32:54,227
+İkinci vize %10 ağırlıklı. Ödev %10 ağırlıklı.
+
+759
+02:32:57,427 --> 02:33:04,427
+20 ağırlıklı, final, %50 ağırlıklı.
+
+760
+02:33:04,427 --> 02:33:08,427
+Tamam mı?
+
+761
+02:33:08,427 --> 02:33:22,427
+Bu öğrencinin 60 ve üzeri notu varsa geçti.
+
+762
+02:33:23,603 --> 02:33:41,164
+şeklinde bir çıkarım yapan devre, hesaplayan bir devre yapacağız, lojik devre. Bunun derler ki bir, lojik şemasını çizelim. Şurayı şöyle bir yok edeyim. Yandaki karno ile hallederiz. Lojik şeması nedir arkadaşlar bunun?
+
+763
+02:33:44,884 --> 02:33:50,384
+4 tane giriş vardır, 1 tane çıkış vardır. Logic Circus budur.
+
+764
+02:33:50,384 --> 02:34:04,384
+Peki, bundan sonra ne yapacağız? Doğruluk tablosu yapacağız. A, B, C de. Bu doğruluk tablosunu neye göre yapacağız? Dikkat edelim. Bütün olasılıklara göre yani. 16 tane değişkenimiz olacak.
+
+765
+02:34:04,384 --> 02:34:08,884
+Bakalım burada yapı yetiştirebilir miyim? Şöyle yapayım.
+
+766
+02:34:17,876 --> 02:34:35,096
+Eğer sıfırsa, yani tam puan aldı almadı şeklinde kabul edeceğiz. Yani vizenin ağırlığı işte yüzde yirmi. Eğer bu birse yirmi puan geliyor. Eğer değilse sıfır puan geliyor gibi düşünüyorum.
+
+767
+02:34:35,096 --> 02:34:43,776
+Fazlı bir durum arada geçişli diğer durumlar yok. Sıfır, sıfır, sıfır, sıfır, bir, sıfır, sıfır.
+
+768
+02:34:44,564 --> 02:34:48,564
+Bunlar hızlıca yapılmak istenirse arkadaşlar şu şekilde rahat olur.
+
+769
+02:34:50,884 --> 02:34:53,844
+Bunlar dörder dörder değişir.
+
+770
+02:34:56,123 --> 02:34:58,123
+Şu ikişer ikişer değişir.
+
+771
+02:35:01,716 --> 02:35:02,976
+Bu birer birer değişir.
+
+772
+02:35:07,763 --> 02:35:34,243
+İlk sekizlimiz şurada. Şimdi bakalım. Burada A artı B hepsi sıfır oluyor. Burada D var, yirmi puan. Yani bunun sonucu sıfır. Burada D'den elli puan geliyor, sonuç sıfır. Altmıştan büyük eşit olacak. Burada C'den kaç geliyor? Yirmi puan, sonuç sıfır. Burada elli artı yirmi ne olacak? Bir olacak.
+
+773
+02:35:35,059 --> 02:35:37,239
+Burada 10 var, sonuç 0.
+
+774
+02:35:38,079 --> 02:35:40,500
+Burada 50 artı 10, sonuç 1.
+
+775
+02:35:41,759 --> 02:35:44,959
+Burada 20 artı 10, sonuç 0.
+
+776
+02:35:46,419 --> 02:35:51,439
+Burada 50 artı 20 artı 10, sonuç 1.
+
+777
+02:35:53,899 --> 02:36:00,539
+Gelelim bir de bunun birli olan kombinasyonlarını düşünmeye. Şuralara 1 yazıyorum.
+
+778
+02:36:02,611 --> 02:36:15,111
+yazamadım. Niye birli olan? Çünkü BCD'ler aynı, A'ların yerine sadece birliler gelecek. Öyle değil mi? Şunu da şöyle kopyala diyelim.
+
+779
+02:36:22,963 --> 02:36:23,963
+Şöyle yapalım.
+
+780
+02:36:24,963 --> 02:36:29,963
+Buranın bir olduğu durum mu? Buranın bir olduğu durumu? Buranın bir olduğu durumu? Buranın bir olduğu durumu?
+
+781
+02:36:33,268 --> 02:36:35,567
+Şunlarla değişken olarak düşüreceğiz.
+
+782
+02:36:36,347 --> 02:36:38,808
+Geldiğimiz zaman onun sonuçlarını da şuraya yazayım.
+
+783
+02:36:39,247 --> 02:36:43,368
+Burada ne var? 1 artı 0 var. Sadece %20'lik var. Bu 0'dır.
+
+784
+02:36:44,427 --> 02:36:46,948
+Tabloyu uzatmamak için böyle tek seferde yapıyorum.
+
+785
+02:36:47,688 --> 02:36:52,427
+Burada A artı D var. Yani 20 artı 50 var. Bu 1'dir.
+
+786
+02:36:53,948 --> 02:36:57,347
+Burada 20 artı 20 var. Bu 0'dır.
+
+787
+02:36:58,547 --> 02:36:59,587
+Burada ne var arkadaşlar?
+
+788
+02:37:00,595 --> 02:37:24,995
+50 artı 20 artı şey bu 1'dir. Şurada geldiğimizde 20 artı 20 bu 0'dır. Evet. Burada 50 artı bir şey bu 1'dir. Buraya geldiğimizde 20 artı 10 artı 20 ne oluyor? Bu da 0 oluyor. Şu da 1 oluyor. Evet bütün olaslıklar bunlar.
+
+789
+02:37:25,716 --> 02:37:34,015
+Dedim ki bu tablo normalde aşağıdan tekrar devam edecek. Yani 16 satırlı bir tablo. Ben kısa olsun diye böyle yazdım. Sonra hocam niye böyle yazdın demeyin.
+
+790
+02:37:34,015 --> 02:37:37,876
+Şimdi geldik bütün birleri sıfırları yerine yerleştirmeye.
+
+791
+02:37:37,876 --> 02:37:44,156
+00, 11'de bir tane 1 varmış.
+
+792
+02:37:44,156 --> 02:37:46,716
+Bunu yazdık.
+
+793
+02:37:46,716 --> 02:37:52,316
+Şurada 01, 01'de bir tane varmış. Bunu yazdık.
+
+794
+02:37:54,195 --> 02:37:57,796
+Burada 0111'de varmış bunu yazdık.
+
+795
+02:37:59,716 --> 02:38:06,576
+Geldik 1 0 0 1'de yani şu ağın şuradaki yerine 1 0 0 1'de 1 varmış.
+
+796
+02:38:10,195 --> 02:38:14,195
+1.0.1.1'de varmış bunu yazdık.
+
+797
+02:38:17,876 --> 02:38:19,335
+Şu yazıldı, bu yazıldı.
+
+798
+02:38:20,596 --> 02:38:21,876
+1101'de.
+
+799
+02:38:22,536 --> 02:38:24,476
+1101. Burada varmış.
+
+800
+02:38:28,595 --> 02:38:56,275
+1, 1, 1, 1 de burada var. Herhalde başka yok. Bunu aldıktan sonra geldik Grup İlke. Şimdi diyoruz ki sekizli yapamıyoruz. Altılı da yapamayız. En az dörtlü yapacağız. O zaman şöyle bir dörtlü çıkar bir. Bir dörtlü de şöyle çıkar. Bu iki boştaki ikiyi almak için. Şu boştaki biri almak için de
+
+801
+02:38:56,659 --> 02:39:00,079
+Bir ikili mi yapacağız acaba yoksa başka bir şey yapabilir miyiz?
+
+802
+02:39:05,716 --> 02:39:29,236
+Başka bir şey yapabilir miyiz? Yapabiliriz. Ne var arkadaşlar? Şurada da şöyle bir 4. Tamam. Geldik, yazalım. Şunu yazalım önce. Burada A'da bir değişim yok. O zaman A'yı yazıyoruz. B'de bir değişim var, yazmıyorum. Geldim C'ye. C'de bir değişim var, D'de bir değişim yok. Ne oldu? A, D oldu.
+
+803
+02:39:34,195 --> 02:39:50,335
+A'da bir değişim var, B'de bir değişim yok, B'yi yazıyorum, beğenin kendisini. C'de bir değişim var, B'yi yazdım. C'de bir değişim var, D'de bir değişim yok, D'yi yazıyorum.
+
+804
+02:40:00,531 --> 02:40:05,531
+Tek böyle şeyde. Oraya da cd yazıyoruz. Bunları topladığınız zaman
+
+805
+02:40:05,531 --> 02:40:14,731
+Ne olacak? Bu form arkadaşlar bakın, bu daha da sadeleştirilebilir mi? Sadeleştirilir ama formu bozarsınız.
+
+806
+02:40:14,731 --> 02:40:24,731
+Sob form dediğimiz sum of product da en sade hali budur. Normalde buradan daha sade ne çıkar? D parantezine alırsın.
+
+807
+02:40:27,347 --> 02:40:29,508
+B artı C gelir.
+
+808
+02:40:30,808 --> 02:40:34,727
+Şimdi burada işlem sayısı kullanılacak kapı sayısına bakalım.
+
+809
+02:40:35,808 --> 02:40:41,788
+Şimdi AD bir tane AND kapısı istiyor, BD bir tane AND kapısı istiyor, CD bir tane AND kapısı istiyor.
+
+810
+02:40:41,868 --> 02:40:42,668
+Çünkü çarpma var.
+
+811
+02:40:44,608 --> 02:40:45,388
+Üç tane AND.
+
+812
+02:40:47,968 --> 02:40:51,407
+İki tane de toplama için iki tane OR kapısı lazım.
+
+813
+02:40:53,940 --> 02:41:06,180
+Şurada baktığımızda, eğer SOP formun dışında bunu yapacaksak, iki tane OR kapısı, iki tane AND kapısıyla da bu problem çözülebilir. Ama SOP formun dışında çözülebilir.
+
+814
+02:41:07,920 --> 02:41:09,159
+Burayı anladık mı?
+
+815
+02:41:11,459 --> 02:41:12,700
+Sorunuz var mı arkadaşlar?
+
+816
+02:41:18,451 --> 02:41:28,851
+Pekala. O zaman haftaya bir or yetmez mi? Nerede bir or? Şurada iki or var, bir ent var.
+
+817
+02:41:31,651 --> 02:41:39,051
+Orla nasıl olacak ki? Yani iki girişli bir or kapısı kullandığınızda yukarıdakinde...
+
+818
+02:41:43,667 --> 02:41:59,387
+A ile de, B ile de, üç girişli olsa olur. İki tane OR operasyonuna ihtiyaç var burada. Bir bununla bunu toplayacaksın, bir de bununla bunu toplayacaksın. Aradaki artılar gibi operatör olarak düşün. En az iki tane lazım şu durumda.
+
+819
+02:42:00,827 --> 02:42:07,608
+İstersek normalde en girişli bir AND veya en girişli OR kapısıyla birer birer iki elemanları da toplayacağız ama
+
+820
+02:42:07,924 --> 02:42:15,544
+Devre gerçeklemede genellikle iki girişler dikkate alınır. Çok özel bir durumda işte dörtlü beşli falan kullanılır.
+
+821
+02:42:16,924 --> 02:42:28,044
+Peki arkadaşlar haftaya bu konunun birkaç tane daha detayı kaldı. Onu bitirdikten sonra matematiğin dili, matematikle alakalı temel kavramlarla alakalı konulara bakacağız.
+
+822
+02:42:29,304 --> 02:42:34,103
+Videoları, Banu Hocanın videoları da izlerseniz bu karnıyla alakalı herhalde bir problem kalmaz.
+
+823
+02:42:34,548 --> 02:43:02,028
+İsterseniz şeyde anlatırım. Bu mesela beş değişkenli karna nasıl indirgenir? Hani ben bu derste sormayacağım ama yani hocam anlatın derseniz bilmiyorum belki lojikte anlatmışlardır veya anlatacaklardır. Veya bir video var onu izleyebilirsiniz. Bir arkadaşım farklı bir üniversiteden video çekmiş o da güzel. Onu izleyebilirsiniz. O da işinize yarar. Altılı, yedili daha yüksek dereceden.
+
+824
+02:43:02,611 --> 02:43:15,971
+şeylerin nasıl indirgenliği ile alakalı. O işin zaten algoritmik tarafı. Gelecek hafta bu örneği de çözeriz. Sınavdaki örneği o şekilde yeni konuya geçeriz. Hepinize iyi hafta sonları. Görüşmek üzere arkadaşlar.
+
+825
+02:43:27,763 --> 02:43:29,443
+İyi günler, hoşçakalın arkadaşlar.

@@ -1,0 +1,1587 @@
+1
+00:00:12,724 --> 00:00:25,044
+Merhabalar, bu hafta 6. hafta olan dersimize başlıyoruz. Analiz aşamasında kullandığımız modelleme araçları üzerinde duracağız.
+
+2
+00:03:14,195 --> 00:03:28,575
+Evet, şimdi önce geçen hafta üzerinde durduğumuz nesne ve varlık arasındaki farklılıklar üzerinde duralım.
+
+3
+00:03:28,575 --> 00:03:32,575
+Daha sonra da yapısal yaklaşımla...
+
+4
+00:03:36,467 --> 00:03:53,327
+Yapısal yaklaşımla nasıl analiz işlemi gerçekleştiriyoruz? Bununla ilişkili diagramlar üzerinde duracağım. Şu anda şeyi paylaşmadım, şimdi paylaşacağım sunumu.
+
+5
+00:04:05,012 --> 00:04:19,891
+Evet, geçen hafta da gördüğümüz bu sunum üzerinden hızlıca bir tekrar yapacağım. Daha sonra da bizim veri akış diyagramları üzerinde duracağım.
+
+6
+00:04:20,288 --> 00:04:33,268
+Veri akış diyagramları hakkında geçen hafta sözlü birkaç giriş yapmıştım. Bir taslak veri akış diyagramı görmüştük. Şimdi bunu genişleteceğiz.
+
+7
+00:04:33,768 --> 00:04:42,908
+Öncelikle sorunuz var mı? Sunumu görebiliyor musunuz? Sesimi duyuyor musunuz?
+
+8
+00:04:48,372 --> 00:04:51,652
+Evet hocam sunumu görüyoruz, sesiniz de gayet iyi geliyor.
+
+9
+00:04:51,872 --> 00:05:07,132
+Teşekkür ederim. Şimdi geçen haftayı çok hızlıca bu nesne varlık açısından tekrar edelim. Daha sonra ayrıntılı tasarımdaki veri tabanı sırasında da bunlar üzerinde duracağız.
+
+10
+00:05:07,132 --> 00:05:16,132
+Veri tabanı dersinizin zaten konusu olacak bunlar. Ama bir kavramları tekrar özetleyelim. Bu arada bu özeti...
+
+11
+00:05:16,372 --> 00:05:29,052
+Geçmeden önce ben Avesis'teki sayfama koymuştum gruplarınızı. Baktınız mı?
+
+12
+00:05:33,971 --> 00:05:37,031
+Hangi gruplar hangi projeyi yapacak şeklinde?
+
+13
+00:05:37,951 --> 00:05:38,451
+Evet hocam.
+
+14
+00:05:39,031 --> 00:05:41,091
+Bir problem var mı?
+
+15
+00:05:45,588 --> 00:05:53,108
+Bu arada iki konu vermiş olan grup seçim yaptı. Onu dikkate aldım ama değiştirmedim dosyayı.
+
+16
+00:05:57,427 --> 00:06:05,367
+Yani grubuyla bir problemi olan veya hatalı bir şey yazılmış olan varsa tekrar bir bakıp bakmamış olan varsa.
+
+17
+00:06:06,268 --> 00:06:13,228
+Evet, şimdi o zaman geçen haftayı bir, geçen haftanın son aşamasında gördüklerimizi bir özetleyelim.
+
+18
+00:06:16,851 --> 00:06:40,031
+Bu arada bugün için ara vermeyeceğim. Ara vermeyip veri akış diyagramlarıyla ilişkili konuyu tamamlayınca dersi bitireceğim. Yani ara olmadan devam edip biraz erken bitireceğiz. Herkes tarafından uygun mu?
+
+19
+00:06:49,331 --> 00:06:50,711
+Evet, cevap gelmedi ama.
+
+20
+00:06:51,791 --> 00:06:52,751
+Uygundur hocam.
+
+21
+00:06:53,151 --> 00:06:53,911
+Teşekkürler.
+
+22
+00:06:55,371 --> 00:07:01,751
+Şimdi şunu büyütüp sunum moduna geçip devam edelim.
+
+23
+00:07:01,751 --> 00:07:02,072
+Evet.
+
+24
+00:07:02,675 --> 00:07:22,316
+Evet, bizim bir sistem çalışması sırasında, yani bilgi sistemi kuruluşu sırasında hakkında bilgi toplanması gereken şeyler, things, özellikleri nelerdir?
+
+25
+00:07:26,240 --> 00:07:44,480
+Öğrenci bilgi varlığın ilişkileri ve özellikleri üzerinde durmak gerekiyor. Özellikleri bu şey hakkında hangi bilgi parçalarının özellikle tutulmasına gerek var.
+
+26
+00:07:54,067 --> 00:07:55,527
+Mutlaka
+
+27
+00:07:55,935 --> 00:08:14,455
+Hangi bölümde olduğunun, adının, soyadının, numarasının olması gerekir. Bunlar mutlaka olması gereken özellikler, atribütler. Peki, bu öğrenci hakkında başka hangi bilgilere ihtiyacımız var?
+
+28
+00:08:23,935 --> 00:08:32,515
+YÖK'ten alınan giriş dosyasından bulunan hangi liseden mezun olduğuyla ilişkili bilgiyi tutmamıza gerek olabilir.
+
+29
+00:08:33,076 --> 00:08:37,735
+Doğum tarihini tutmamız gerekir. Başka neler tutacağız?
+
+30
+00:08:37,735 --> 00:08:46,076
+Şimdi bunu ezbere söylemiyoruz. Sistem analizi çalışması yaparken işte bunu araştırıyoruz.
+
+31
+00:08:46,515 --> 00:08:51,836
+Biz bu sistemden, bu bilgi sisteminden hangi çıktıları alacağız?
+
+32
+00:08:51,936 --> 00:09:08,036
+Bu çıktıları nerede kullanacağız? Buna göre hakkında bilgi tutmamız gereken her varlığın tutmamız gereken bilgi özelliklerini, atribütlerini belirliyoruz.
+
+33
+00:09:10,323 --> 00:09:23,783
+Yani bir yerde mesela bir karnede, bir sertifikada bir şeyde çıkması gereken bilgiler varsa o zaman bu bilgileri saklamamız gerekecek.
+
+34
+00:09:23,783 --> 00:09:32,783
+İlişkiler, özel varlıklar arasındaki ilişkileri...
+
+35
+00:09:35,220 --> 00:09:59,819
+Oluşturmak için relation'lar kuruyoruz, ilişkiler kuruyoruz. Bu mutlaka iki yönlü olur. Zorunluluk, seçimlik halini belirtiriz. Bir de sayısal olarak çokluluğunu belirtiriz. Yani ilişki birli, ikili.
+
+36
+00:10:00,019 --> 00:10:22,100
+İlişki gibi sayısal olarak ifade edilebilir. Bir de zorunluluk seçimlik. Yani mesela işte öğrenci ders arasında bir öğrenci bir dersi almayabilir. Mutlaka almalı mıdır?
+
+37
+00:10:23,635 --> 00:10:43,695
+Sıfır olabilir mi? Yani bütün dersleri alması gerekmiyor. İşte o sıfır da olabilir, çoklu da olabilir. Birden çok ders de almış olabilir. Sıfır ders de almış olabilir bir dönemde. Bu kardinaliti de zorunluluğu ve seçimliği getiriyor.
+
+38
+00:10:48,960 --> 00:11:03,379
+uygulamasında bir sipariş varsa mutlaka bir tane item yani alınan ürün bilgisi mutlaka olmalıdır.
+
+39
+00:11:03,379 --> 00:11:15,120
+Burada faturayla faturadaki kalemler arasındaki ilişkide mutlaka en az bir kalem olmalıdır.
+
+40
+00:11:17,235 --> 00:11:22,796
+nokta nokta yıldız olacak aradaki ilişki.
+
+41
+00:11:27,731 --> 00:11:45,892
+Evet, burada ilişkileri daha iyi belirtmek için, işte siparişler, muhasebe departmanı ve item içerdiği kalemler, siparişin içerdiği kalemleri görüyoruz.
+
+42
+00:11:53,620 --> 00:12:10,519
+Smith tarafından belirlenmiş, hangi departmanda çalışıyor, hangi sipariş içinde hangi kalemler var, bunlar da burada görülüyor ve aradaki ilişkiler de buna göre seçilecek.
+
+43
+00:12:11,347 --> 00:12:22,587
+Şimdi bir de özellik ve değerler konusunda yine sistem analizinde bunları da ilk başta daha düşünmemiz gerekiyor.
+
+44
+00:12:22,587 --> 00:12:25,587
+Bütün müşterilerin sahip olduğu...
+
+45
+00:12:26,111 --> 00:12:42,572
+Atribütler, özellikler. Neler bunlar? Müşteri numarası, isim, soyadı, ev telefonu, iş telefonu. Bu tarafa bakıyoruz, sağ tarafa her bir özelliği, atribütün değerleri var.
+
+46
+00:12:53,908 --> 00:13:10,668
+Bir varlıktaki her bir özelliğe karşı genel, bu özellik tanımı geneldir. Bu genel tanıma karşı bu varlığın her bir satırında değerler içerilecektir.
+
+47
+00:13:14,995 --> 00:13:34,836
+Evet, hakkında geleneksel bilgi sistemi yaklaşımında, hakkında veri saklanması gereken şeyler, veri varlıklarıdır.
+
+48
+00:13:42,548 --> 00:13:57,548
+Veri tabanı kullanılarak bunların tanımı gerçekleştirir. Peki nesne nedir? Biz şimdi burada sistem analizinde her iki yaklaşımı da görüyoruz. Geçen hafta da bunun üzerinde durduk.
+
+49
+00:14:03,220 --> 00:14:14,659
+Çalışan ve bilgi saklanan, hakkında bilgi saklanan nesneler. Bunların hem davranışları hem özellikleri saklanır. Sınıflar dediğimiz zaman.
+
+50
+00:14:15,091 --> 00:14:25,171
+Bu şeyin tipi, nesne dediğimiz zaman özellikle üzerinde bilgi tutacağımız şey anlamına geliyor.
+
+51
+00:14:25,671 --> 00:14:30,131
+Metotlar da bu nesnelerin nasıl davrandığını gösteriyor.
+
+52
+00:14:30,131 --> 00:14:34,131
+Şimdi bu ikisi arasındaki farklılığa veri...
+
+53
+00:14:34,416 --> 00:14:51,616
+Veri varlıklarıyla nesneleri kıyaslamaya, veri varlığı dışarıda bir yerde duruyor ve işlem yapılacağı zaman bununla ilgili bilgi alışverişi gerçekleşiyor. İşlem yapılacağı zaman, proses 1, işlem 1, işlem 2, işlem 3 bunlar uygulanıyor varlık üzerine.
+
+54
+00:15:02,416 --> 00:15:04,756
+İşlemler ayrı ayrı tutuluyor.
+
+55
+00:15:05,136 --> 00:15:08,536
+Nesnelerde ise burada
+
+56
+00:15:09,139 --> 00:15:20,639
+Veri üzerinde gerçekleştirecek işlemler aynı yerde tanımlanıyor ve bu işlemler de mesajlarla tetikleniyor.
+
+57
+00:15:20,980 --> 00:15:31,279
+Yani şu nesnenin tanımında yer alan şu işlemi, gerçekleştir işlemi mesajlar tarafından tetikleniyor.
+
+58
+00:15:32,947 --> 00:15:43,187
+Şimdi klasik yaklaşımdaki ER diyagramları üzerinde baktığımızda az önce söylediğim şey yaklaşım burada geçerli.
+
+59
+00:15:43,187 --> 00:15:55,187
+İki tane varlık var. Bu iki varlık arasındaki Entity Relationship diagram tanımında bir müşteri...
+
+60
+00:15:55,956 --> 00:16:01,336
+Sıfır sipariş de verebilir, birden daha fazla sipariş de verebilir.
+
+61
+00:16:02,056 --> 00:16:13,416
+Bu aradaki işaretin şurada, şu aradaki sıfır anlamında sıfır ya da çoklu.
+
+62
+00:16:15,536 --> 00:16:20,796
+Burada da bir mutlaka, yani burada bir zorunluluk var.
+
+63
+00:16:23,635 --> 00:16:45,775
+Bu ilişkide. Şimdi biz soldan sağa doğru okuyalım. Bir müşteri sıfır sipariş de vermiş olabilir. Çok sayıda sipariş de vermiş olabilir. Bunun anlamı nedir? Bir müşteri sıfır sipariş verdi. Müşteri olarak kaydımızda ama henüz sipariş vermedi.
+
+64
+00:16:46,868 --> 00:16:49,208
+Çok sayıda sipariş de vermiş olabilir.
+
+65
+00:16:49,448 --> 00:16:51,308
+Bir de sağdan sola doğru okuyalım.
+
+66
+00:16:51,948 --> 00:17:00,288
+Bir sipariş varsa eğer, bunun karşılığında mutlaka bir müşteri olmalıdır.
+
+67
+00:17:00,428 --> 00:17:06,488
+Yani müşteri tanımı yapılmadan sipariş kaydı geçilemez.
+
+68
+00:17:06,488 --> 00:17:13,248
+İşte burada zorunluluk tanımı var.
+
+69
+00:17:14,036 --> 00:17:16,655
+Burada ise seçimlik tanımı var.
+
+70
+00:17:18,716 --> 00:17:26,036
+Sayısal olarak baktığımızda bir sipariş sadece bir müşteri tarafından verilir.
+
+71
+00:17:27,396 --> 00:17:31,135
+Yani bir sipariş kaydının karşısında tek bir müşteri vardır.
+
+72
+00:17:33,536 --> 00:17:40,816
+Bir müşterinin karşısında sıfır sipariş de olabilir, çoklu sayıda sipariş de olabilir.
+
+73
+00:17:43,059 --> 00:17:54,339
+Evet, mandatory mutlaka bir olması gerekiyor. Sıfır ise optional.
+
+74
+00:18:02,548 --> 00:18:16,448
+Şu sağdaki ilişki açısından burada tanımlamış, şu zorunlu, bir ve yalnız bir, şuradaki ilişki sıfır veya daha çok, optional.
+
+75
+00:18:17,188 --> 00:18:25,327
+Burada bir veya daha fazla ama zorunluluk mutlaka bir tane olması gerekir.
+
+76
+00:18:26,996 --> 00:18:44,576
+Ya bir olacak ya da sıfır. Yani bu tarafta karşısında bir eleman olmayabilir, olursa da yalnızca bir tane vardır. Bu da relationshiplerde, ilişkilerde cardinality şeyini belirliyor.
+
+77
+00:18:46,228 --> 00:18:55,268
+Evet, şimdi müşteri, madem ki siparişten gittik, bir müşteri çok sayıda sipariş de verebilir, sıfır sipariş de verebilir.
+
+78
+00:18:55,847 --> 00:18:57,948
+Siparişle item arasına bakalım.
+
+79
+00:18:58,488 --> 00:19:07,928
+Diyelim ki Migros'tan bir fatura aldınız, bir işlem yaptınız, satış işlemi, alış işlemi veya.
+
+80
+00:19:08,384 --> 00:19:23,083
+Bunun karşısında en az bir tane ürün olmalı bir sipariş varsa, yani bir sipariş en az bir tane ürün içermeli. Ama çok sayıda sipariş de içerebilir.
+
+81
+00:19:24,083 --> 00:19:34,384
+Evet, bu ilişkiler anlaşıldı mı? Bu daha sonra veri tabanında da size yerleşecek ama şimdi de uygulamalarınızda kullanacaksınız.
+
+82
+00:19:35,892 --> 00:19:48,892
+Bunları hep analiz sırasında belirlemeye çalışacağız. Hangi varlıklar hakkında bilgi tutulacak, bunların ilişkileri nedir?
+
+83
+00:19:53,907 --> 00:20:00,748
+Evet, müşteriler, siparişler, sipariş kalemleri. Bunu biraz daha örneklerle canlandırarak vermişler.
+
+84
+00:20:00,748 --> 00:20:04,907
+John, Mary, Sarah, müşteriler.
+
+85
+00:20:07,892 --> 00:20:22,791
+Evet, çok dolaştırdım. Müşteriler, bu tarafta siparişler. Bir müşteri çok sayıda sipariş vermiş olabilir. Bir müşteri henüz hiç sipariş vermemiştir. Bir müşteri sadece bir sipariş vermiştir.
+
+86
+00:20:22,791 --> 00:20:31,112
+Sipariş kalemlerine baktığımızda, sipariş bir de iki tane şey var.
+
+87
+00:20:34,099 --> 00:20:37,339
+Aynı üründen iki tane, bir tane de farklı bir ürün var.
+
+88
+00:20:38,480 --> 00:20:45,059
+İkinci siparişte yine üç farklı ürün var.
+
+89
+00:20:47,159 --> 00:20:49,279
+Burada sipariş yok.
+
+90
+00:20:50,779 --> 00:20:55,599
+Diğer siparişte ise üç tane ürün var.
+
+91
+00:21:01,652 --> 00:21:12,772
+Biz burada veri varlıklarından da nesne sınıflarına bakıyoruz.
+
+92
+00:21:14,892 --> 00:21:27,772
+Genelleştirme ve özelleştirme hiyerarşileri vardır ve veri varlıklarından daha fazla bilgi içerirler, nesneler.
+
+93
+00:21:28,276 --> 00:21:38,276
+Üst sınıfların bilgilerini paylaşırlar kalıtım yoluyla ve aggregation ile
+
+94
+00:21:39,667 --> 00:21:47,007
+Nesneler ve onun parçaları arasındaki ilişkiler ve parçalar hakkındaki tanımlamalar görülür.
+
+95
+00:21:47,407 --> 00:21:50,087
+Şimdi baktığımızda bunu incelemiştik geçen haftada.
+
+96
+00:21:51,147 --> 00:21:53,827
+Genelleştirme, özelleştirme hiyerarşisi.
+
+97
+00:21:55,287 --> 00:22:03,547
+İşte bu kavramlar nesneye yönelik analiz dersinde de görülmüştür ama burada da yerleşmesini istiyorum.
+
+98
+00:22:07,667 --> 00:22:11,847
+Bilgisayarın alt parçaları, bunların hepsi birbiriyle bağımlı.
+
+99
+00:22:12,047 --> 00:22:15,587
+İşte işlemci, bilgisayar içinde yeri var.
+
+100
+00:22:16,367 --> 00:22:22,347
+Bellek, klavye gibi elemanlar bilgisayarın parçaları.
+
+101
+00:22:22,347 --> 00:22:27,847
+Bu parçaları da aggregation ilişkisiyle.
+
+102
+00:22:28,276 --> 00:22:31,476
+Bütün parça ilişkisini gösterebiliyoruz.
+
+103
+00:22:32,056 --> 00:22:35,056
+Sınıf sembolünde sınıfı nasıl gösteriyoruz?
+
+104
+00:22:35,216 --> 00:22:45,596
+Müşteri, müşterinin adı, adresi, telefonu ve müşteriye uygulanacak metotlar, işlemler nelerdir?
+
+105
+00:22:53,395 --> 00:22:59,675
+Bu sınıfın içindeki nesnelere hangi işlemler uygulanacak?
+
+106
+00:23:13,844 --> 00:23:18,864
+Bankacılık sistemi içinde bir örnek, sınıf diagramı örneği var.
+
+107
+00:23:18,864 --> 00:23:29,855
+Müşteri, müşterinin sahip olduğu hesaplar, bu hesapların tipi,
+
+108
+00:23:29,855 --> 00:23:56,976
+Bunlar belirtiliyor. Müşteri ile hesap arasında bir müşteri yani evvelden banka ile bir işlem yapmıştır ama şu anda hiç hesabı yoktur. Müşteri kaydı vardır, hesabı yoktur, sıfırdır. Ya da çok sayıda hesabı vardır, bu da olabilir. Bu hesaplar işte şey mi, hangi tür hesap?
+
+109
+00:23:57,296 --> 00:24:00,316
+Bu da görüntülenir.
+
+110
+00:24:01,496 --> 00:24:10,936
+Yine kayıt içinde biraz daha karmaşık olan ders, ders seçimi, ders kaydının yapılması ve öğrenci.
+
+111
+00:24:10,936 --> 00:24:18,896
+Şimdi öğrenci ile açılan dersler arasında.
+
+112
+00:24:19,443 --> 00:24:33,443
+Bir ilişki kuruyoruz. Öğrencinin derste kaydı da bir ara sınıf olarak görülüyor. İlişki tanımı olarak görülüyor. Bir öğrenci...
+
+113
+00:24:34,996 --> 00:24:49,636
+Ders seçmemiş olabilir, sıfır olabilir, çok sayıda derste seçmiş olabilir. Bir derste açılmıştır ama hiç öğrenci tarafından seçilmemiştir, hiçbir öğrenci tarafından ya da çok sayıda öğrenci tarafından seçilmiştir.
+
+114
+00:24:50,036 --> 00:25:12,536
+Yine ders için bakarsak bir dersin o anda hiçbir şubede açılmadığını görebiliriz. Yani bu dönem açılmamıştır. Ama ders seçimi listesinde yer alan her bir ders mutlaka ders kataloğunda olmak zorunda.
+
+115
+00:25:18,804 --> 00:25:26,844
+Sıfır olabilir ama bu bir olacak mutlaka bir derse karşılık gelmeli.
+
+116
+00:25:27,523 --> 00:25:30,263
+Kesin olarak bir derse karşılık gelmeli.
+
+117
+00:25:46,675 --> 00:26:00,415
+Evet, böylece geçen hafta gördüklerimizi tekrar etmiş olduk. Bu arada bu şeyde veri akış diyagramı yok. Şimdi zaten veri akış diyagramlarından bahsedeceğim.
+
+118
+00:26:00,980 --> 00:26:14,819
+yapısal yaklaşımla, klasik yaklaşımla veya ilerlediğimizde analiz sırasında kademeli olarak değişen bir şey olması gerekir.
+
+119
+00:26:16,720 --> 00:26:19,460
+Veri akış diyagramı paketimizin olması gerekir.
+
+120
+00:26:19,460 --> 00:26:22,879
+Şimdi bu dosyayı kullanacağım.
+
+121
+00:26:30,900 --> 00:26:35,240
+şeyi değiştiriyorum. Yeni bir paylaşım yapıyorum.
+
+122
+00:26:54,003 --> 00:27:02,384
+Yapısal yaklaşımla sistem analizi, bu da gereksinim analizi demişiz ama şimdilik henüz sistem analizi diyelim.
+
+123
+00:27:05,703 --> 00:27:17,563
+Gereksinim analizi, requirement analiz, yazılım geliştirme süreçleri içinde, yazılım mühendisliğinde requirement analiz olarak göreceğiz.
+
+124
+00:27:23,604 --> 00:27:30,723
+Sistem analizi süresince oluşturulan model aşağıdaki üç tane amacı yerine getirmelidir.
+
+125
+00:27:30,903 --> 00:27:36,923
+Bir, müşteri ihtiyaçlarını açıklamak. Yani müşteri neye ihtiyaç duyuyor?
+
+126
+00:27:51,251 --> 00:28:12,551
+Bir başlangıç aşaması sağlıyor. Nedir bu? Müşteriden bilgileri daha uygun biçimde alıp bu sistemin çalışma şeklini ortaya koymak sistem analizinde hedef.
+
+127
+00:28:18,880 --> 00:28:29,880
+Karar vermiş oluyoruz. Yazılım bir kere oluşturduktan sonra belirlenen ihtiyaçları karşılayıp karşılamadığını...
+
+128
+00:28:30,451 --> 00:28:34,251
+Onaylayan unsurları belirlemiş oluyor.
+
+129
+00:28:34,251 --> 00:28:56,491
+Yani bu da şu demek, biz sistem analizi sırasında müşterinin ne istediğini iyi anlayıp, ona da iyi anlattırıp uygun modeli oluşturursak ve bu model üzerinde bir anlaşma sağlarsak, daha sonra
+
+130
+00:28:57,076 --> 00:29:10,336
+Bu kullanıcı iş bittikten sonra, bilgi sistemi hazırlandıktan sonra buna kullanıcı testi yaparken, onay verirken bakacağı bir materyal olacak.
+
+131
+00:29:11,155 --> 00:29:17,415
+Bu amacı yerine getirmek için analiz modeli oluşturuluyor.
+
+132
+00:29:17,415 --> 00:29:20,096
+Bu analiz modelinde neler vardır?
+
+133
+00:29:23,859 --> 00:29:30,859
+Ya da nesne tanımı. Yani az önce konuştuğumuz varlık ilişki diagramının çizilmesi lazım.
+
+134
+00:29:31,279 --> 00:29:37,519
+Tabii bu çok kapsamlı olmayacak. Sadece sistemde hangi varlıklar hakkında bilgi tutmak istiyoruz.
+
+135
+00:29:38,019 --> 00:29:44,399
+Bu varlıkların özellikleri nedir? Bu varlıkların birbiriyle ilişkileri nasıl bir ilişkidir?
+
+136
+00:29:46,483 --> 00:30:04,923
+Burada veri ve nesne tanımını yapmış oluyoruz. Bir de süreç spesifikasyonu yapacağız. Süreç spesifikasyonundan kastımız da biz bu veri üzerinde uygulanacak iş süreçlerini, işlemleri ayrıntılı bir şekilde tanımlayalım.
+
+137
+00:30:05,875 --> 00:30:14,536
+İşte spesifikasyon ayrıntılı tanımlama anlamında kullanılıyor burada. Süreci ayrıntılı olarak tanımlayalım.
+
+138
+00:30:15,059 --> 00:30:19,000
+İşte bu noktada veri akış diyagramlarını çizmemiz gerekiyor.
+
+139
+00:30:19,000 --> 00:30:21,299
+Veri akış diyagramları diyorum.
+
+140
+00:30:21,759 --> 00:30:35,779
+Çünkü burada daha ilk konuşmada, ilk görüşmede müşteriden bilgi aldığımızda çok detaylı, çok karmaşık bir sistem olmaması gerekiyor ki yavaş yavaş ilerleyelim.
+
+141
+00:30:35,899 --> 00:30:37,579
+Biz de işi anlayalım.
+
+142
+00:30:38,003 --> 00:30:45,063
+O yüzden aşamalı paketler halinde oluşturuluyor veri akış diyagramları, data flow diyagramlar.
+
+143
+00:30:46,063 --> 00:30:56,163
+İşte önce bir özet diyagram, sonra ayrıntılı diyagram, sonra daha ayrıntılı diyagram şeklinde 3 aşamasını göreceğiz.
+
+144
+00:30:56,163 --> 00:30:59,124
+Bir de kontrol spesifikasyonu.
+
+145
+00:30:59,483 --> 00:31:05,604
+Yani bu sistemden sisteme geçişler arasında, durum geçişleri arasında, durum geçişleri arasında,
+
+146
+00:31:06,003 --> 00:31:17,263
+Bu değişiklikleri arasında neler oluyor, nasıl bir kontrol mekanizması var? Bu da kontrolların iyi tanımlanması olarak geçiyor.
+
+147
+00:31:18,903 --> 00:31:33,503
+Burada biz zaten yani pratik olarak bir varlık ilişki diyagramlarını yani veri tanımlarını bir de veri veya nesne bir de veri akış diyagramlarını çok kullanacağız.
+
+148
+00:31:34,003 --> 00:31:51,364
+Bir de ortada veri sözlüğü var, data dictionary. Bu ne demek? Data dictionary, veri hakkında veri tutmak. Ne demek bu? Yani bu uygulamada hangi varlıklar var?
+
+149
+00:31:51,859 --> 00:32:15,859
+Bu varlıkların özellikleri nelerdir? Hangi işlemler gerçekleşiyor? Bu işlemlerin tanımlandığı şeyler nelerdir? Bunların tanımlanması, yani uygulama hakkında, uygulamada kullandığımız bütün tanımlamaların belirtilmesi veri sözlüğü data diksineridir.
+
+150
+00:32:20,243 --> 00:32:23,963
+Modelin ortasındaki veri sözlüğü, burada da bir daha okuyalım.
+
+151
+00:32:24,503 --> 00:32:29,463
+Yazılım tarafından kullanılan, üretilen tüm veri nesnelerinin tanımını içerir.
+
+152
+00:32:31,303 --> 00:32:39,363
+Üç farklı diagramdan da varlık ilişki diagramları veri nesneleri arasındaki ilişkiyi tarif eder.
+
+153
+00:32:39,363 --> 00:32:43,223
+Her veri nesnesinin özellikleri.
+
+154
+00:32:43,796 --> 00:32:52,456
+Entity Relationship diagramda belirtilir ve veri modelleme tanımı yapılır bu aşama için.
+
+155
+00:32:53,011 --> 00:33:10,031
+Sistem içinde her verinin nasıl taşındığı ve bu veri akışını sağlayan fonksiyonların neler olduğu, veri akış diyagramı ya da data flow diyagram, DFD'de tarif edilir.
+
+156
+00:33:10,031 --> 00:33:20,831
+Veri akış diyagramı sistem analizi süresince bütün fonksiyonların modellemesinde kullanılan bilgiyi sağlayacaktır.
+
+157
+00:33:32,211 --> 00:33:50,132
+Şimdi biz geçen haftalarda, iki haftada üzerinden geçtiğimiz bir şey vardı, veri akış diyagramı. Bu veri akış diyagramında daha kapsamlı bir uygulama için örnek vermiştik.
+
+158
+00:33:52,511 --> 00:33:58,531
+Sistem olarak bir tane proses var veri akış diyagramında burada.
+
+159
+00:33:59,443 --> 00:34:16,083
+Tek proses öğrenci bilgi sistemi. Varlıklar da kareyle gösteriliyor. Öğrenci ve öğretim üyeleri. Bunlar da uygulamadaki entitiler.
+
+160
+00:34:26,963 --> 00:34:29,764
+Ders seçimi gerçekleştiriyor.
+
+161
+00:34:30,844 --> 00:34:33,384
+Öğrenci bilgi sisteminden.
+
+162
+00:34:34,144 --> 00:34:38,684
+Bilgi sistemi de öğrenciye sınav sonuçlarını gönderiyor.
+
+163
+00:34:39,123 --> 00:34:52,963
+Şimdi burada daha kapsamlı olduğunda daha çok varlık olacak uygulamada ve gerçekleştirilen işlemler belki daha detaylı anlatılacak.
+
+164
+00:34:52,963 --> 00:35:00,183
+Ama burada minimum olması gereken, yani şimdi burada şekil 2 örnek taslak diyagram diye geçiyor.
+
+165
+00:35:00,723 --> 00:35:06,983
+Örnek taslak diyagram, kontekst diyagram, bu özet diyagram da denilebilir.
+
+166
+00:35:07,123 --> 00:35:09,823
+Ne anlatıyor bu?
+
+167
+00:35:13,907 --> 00:35:40,108
+İşte bugün bir görüşmeye gittiniz diyelim ki bir üniversiteye öğrenci bilgi sistemi kuracaksınız. Bu öğrenci bilgi sisteminin hangi varlıklarla ve nasıl ilişkisi? Mesela dikkat edin, ER diagramındaki gibi işte sayısal ya da zorunluluk falan gibi değil. Burada iş açısından öğretim üyelerine öğrenci bilgi sistemi hangi bilgiyi gönderir?
+
+168
+00:35:40,788 --> 00:35:49,708
+Öğretim üyelerinden hangi bilgiyi alır sisteme yerleştirir? Bunu belirtiyoruz.
+
+169
+00:35:49,708 --> 00:35:56,708
+Burada baktığımızda öğrenci, öğrenci bilgi sistemiyle ilişkide ve öğrenci...
+
+170
+00:35:57,331 --> 00:36:10,051
+Ders seçimi gerçekleştirirken öğrenci bilgi sistemine başvuruyor. Öğrenci bilgi sisteminde sınav sonuçları açıklandığında öğrenciye mail atıyor.
+
+171
+00:36:11,431 --> 00:36:24,231
+Öğretim üyelerine baktığımızda öğretim üyeleri sistemden ne alıyor? Öğretim üyeleri sistemden öğrenci sınıf listesini alıyor ilk daha ders haftasında.
+
+172
+00:36:25,331 --> 00:36:46,051
+Bu dersi kimler alıyor? Şeklinde. Daha sonra da bu listeyi kullanıyor. Öğretim üyeleri öğrenci bilgi sistemine ne gönderiyor? Sınav sonuçlarını gönderiyor. Sınav sonuçlarını sisteme girdiğimiz zaman sizin de mailinize düşüyor, kaç aldığınızla ilişkili not.
+
+173
+00:36:53,331 --> 00:37:07,771
+Nedir? Yani burada dikkat edeceğiniz şey, konteks diyagram çizerken bir bilgi sistemiyle ilişkili analiz aşamasında kesinlikle birden fazla işlem kullanmıyorsunuz.
+
+174
+00:37:07,871 --> 00:37:14,591
+Tek işlem, bu tek işlemde tüm bilgi sistemini kapsayan isim olarak belirlenmelidir.
+
+175
+00:37:18,996 --> 00:37:33,956
+Birinci seviye ayrıntılı veri akış diyagramı diye baktığımızda aynı örnekten gidiyoruz yine. Öğrenci, öğretim üyeleri ve tekrar öğrenci.
+
+176
+00:37:45,972 --> 00:38:05,992
+Entity, şu da öğrenci varlığı. Bunu üçüncü bir varlık gibi görmemek için şu daha önce kullanıldı diye şuraya köşesine bir çizgi, köşeleme olarak bir çizgi çizilir.
+
+177
+00:38:10,739 --> 00:38:30,500
+Eskiden kullanılan öğrencidir veya şuraya, pardon, ikinci kullanıldığı yere çizgi çizilir. Bu eskiden, özür dilerim, esas hali öğrenci olarak karşımıza çıktı ama tekrar karşımıza çıktı.
+
+178
+00:38:30,500 --> 00:38:34,500
+Yeni bir varlık değil, eski bir varlığın tekrar kullanılması.
+
+179
+00:38:35,860 --> 00:38:39,860
+Buraya bakıyoruz bir önceki şeyde.
+
+180
+00:38:48,788 --> 00:39:12,168
+Bir önceki örnekte Taslak veri akış diyagramında en önemli özellik ne demiştik? Öğrenci bilgi sistemi ise sistemimiz sadece tek işlem bu bilgi sisteminin adı yer alacak. Taslak veri akış diyagramında bir tane işlemimiz olacak.
+
+181
+00:39:15,059 --> 00:39:25,619
+Ayrıntılı birinci seviye ayrıntılı veri akış diyagramında varlıklarımızı belirttik. Yine iki varlığımız var. Bir tanesi ikinci kez kullanıldı.
+
+182
+00:39:25,619 --> 00:39:35,219
+Ders seçimi yap, sınav sonuçlarını işleme ekle.
+
+183
+00:39:35,648 --> 00:39:40,487
+Veya sisteme ekle, sınav sonuçlarını sisteme gir, öğretim üyesi tarafından.
+
+184
+00:39:42,188 --> 00:39:47,608
+Ve sınav sonucunu öğrencinin görüntüleyebilmesi.
+
+185
+00:39:48,507 --> 00:39:49,728
+Üçüncü işlem de bu.
+
+186
+00:39:50,228 --> 00:39:51,847
+Şimdi birinci işleme bakalım.
+
+187
+00:39:52,487 --> 00:39:59,688
+Öğrenci geldi veya ikinci sınıfta okuyor öğrenci.
+
+188
+00:40:01,228 --> 00:40:02,487
+Ders seçimi yapacak.
+
+189
+00:40:03,188 --> 00:40:17,188
+Ders seçimi yap. Nereden yapacak? Öğrenci ders veritabanı tablosunu kullanarak seçilmiş dersler bilgisini...
+
+190
+00:40:17,652 --> 00:40:37,711
+Öğrenci bu veri tabanına kaydetmesi gerekiyor. Yani öğrencinin bilgisini kaydetmesi gerekiyor sistemin. Bunu gerçekleştirecek. Öğretim üyeleriyle gerçekleştirilen işlerde sınav sonuçlarını sisteme ekle. Yapılacak iş bu.
+
+191
+00:40:49,204 --> 00:41:03,204
+Gerekli bilgilerini isteyecek ve bu bilgilere göre öğretim üyesi sınıf listesini alacak ve sınav sonuçları bilgisini sisteme gönderecek.
+
+192
+00:41:05,344 --> 00:41:13,963
+Ve burada sınav sonuçları öğrenci not veri tablosuna da işlenmiş olacak.
+
+193
+00:41:14,867 --> 00:41:24,807
+Böylece en fazla işlem ortadaki sınav sonuçlarını sisteme ekle bilgisi oluyor.
+
+194
+00:41:24,807 --> 00:41:37,507
+Öğrencinin yaptığı diğer iş de sınav sonuçlarının görüntülenmesi, sınav sonuçlarını öğrencinin görüntüleyebilmesi için.
+
+195
+00:41:38,003 --> 00:41:42,663
+sistemi açması ve kullanması gerekecek.
+
+196
+00:41:42,663 --> 00:41:49,103
+Yani şurada şöyle özetlersek, birinci düzey ayrıntılı veri akış diyagramı.
+
+197
+00:41:50,663 --> 00:41:52,503
+Ne demek bu?
+
+198
+00:41:58,083 --> 00:42:04,223
+İlk diyagramımız şu, kontekst, özet.
+
+199
+00:42:04,724 --> 00:42:09,204
+Taslak ya da taslak, aslında taslak olmuyor da özet oluyor.
+
+200
+00:42:09,944 --> 00:42:22,204
+Özet veri akış diyagramımız, bu özet veri akış diyagramında ne kadar karmaşık ve çok alt işlemli bir sistem olursa da olsun, tek bir işlem olarak görüyoruz.
+
+201
+00:42:22,512 --> 00:42:30,332
+Bu biraz üstten bakmamızı sağlıyor, daha geniş açıdan bakmamızı sağlıyor sisteme.
+
+202
+00:42:30,932 --> 00:42:33,512
+Bu sistemde gerçekleşen işlemler...
+
+203
+00:42:33,940 --> 00:42:50,320
+Öğrenci bilgi sistemi işlemleri. Bunlar hangi varlıklarla iletişim kurarak gerçekleşiyorlar? Bir öğrenci, diğeri de öğretimiyiz. Bunlar hakkında bilgi tutması gerekecek.
+
+204
+00:42:50,320 --> 00:42:59,700
+Şimdi gelelim birinci düzey ayrıntılı veri akış diyagramına. Öğrenci ders seçecek.
+
+205
+00:43:00,596 --> 00:43:13,135
+Öğrenci veri tabanı ders tablosuna aktaracak. Öğretim üyeleri de sınav sonuçlarını sisteme ekleyecek.
+
+206
+00:43:15,135 --> 00:43:22,076
+Sınav sonuçlarını sisteme ekleyebilmek için öğrenci sınıf listesini sistemden alacak.
+
+207
+00:43:23,476 --> 00:43:29,195
+Ve öğrenci not veri tabanı tablosuna bunlar eklenecek.
+
+208
+00:43:29,936 --> 00:43:41,456
+Sınav sonuçları çıktığında sınav sonucu görüntüle programıyla öğrenci bilgileri görüntülenmiş olacak.
+
+209
+00:43:41,456 --> 00:43:44,456
+Bütün bunlar birinci seviyede.
+
+210
+00:43:47,027 --> 00:44:12,847
+Bu bazen şey diye de geçer, farklı kaynaklara baktığımızda, O diyagramı yani sıfırıncı düzey sıfırdan başlatılırsa, birinci seviye diyoruz ya biz, bu diagrama O diyagramı denmesinin nedeni sıfırıncı düzey ayrıntılı veri akış diyagramı olarak okunması.
+
+211
+00:44:13,327 --> 00:44:17,188
+Ama baştan birden başlanmış, onun için değiştirilmiyor.
+
+212
+00:44:19,188 --> 00:44:32,968
+Bir başka şey de, biz bu diagramı kullanarak analiz aşamasını başlatmış oluyoruz.
+
+213
+00:44:38,931 --> 00:44:54,711
+İşlemler ortaya çıkmış oldu. Ders seçimi yap, sınav sonuçlarını sisteme ekle, sınav sonucunu görüntüle ve veri tabonunu tablosuna ekle diye sırayla bunları işlemler haline getirmiş olduk.
+
+214
+00:45:18,452 --> 00:45:43,172
+Bir dakika, şimdi tekrar bir tane başka bir uygulamada, başka bir uygulamada bir doktor muayenehanesi için hasta gelecek, doktora muayene olacak.
+
+215
+00:45:44,211 --> 00:45:54,552
+Ve bu doktor muayenesi sırasında sigorta şirketi varsa faturanın bir kısmını sigortaya, bir kısmını hastaya gönderecek.
+
+216
+00:45:55,552 --> 00:45:59,911
+Eğer yoksa tümü hastaya geçecek.
+
+217
+00:46:00,512 --> 00:46:05,192
+Şimdi bu bir, ne tip bir diagram bu?
+
+218
+00:46:07,192 --> 00:46:08,711
+Size sorayım.
+
+219
+00:46:12,500 --> 00:46:13,259
+[öğrenci]
+
+220
+00:46:17,844 --> 00:46:21,304
+[öğrenci] burada mı?
+
+221
+00:46:34,132 --> 00:46:36,391
+[öğrenci] duymadı. [öğrenci].
+
+222
+00:46:39,211 --> 00:46:40,251
+[öğrenci].
+
+223
+00:46:41,211 --> 00:46:41,891
+Efendim hocam.
+
+224
+00:46:41,891 --> 00:46:58,311
+Evet, şimdi sana soralım. Şu gördüğün şey, diagram bir doktor muayenesinde hastaya faturayı hazırlama.
+
+225
+00:46:58,900 --> 00:47:07,239
+Yazılımı sistemi veya bilgi sistemi. Bu sistemi anlatan bu diagramın adı nedir?
+
+226
+00:47:09,539 --> 00:47:13,119
+Bilmiyorum hocam, bilemedim şu anda. Hatırlayamadım.
+
+227
+00:47:13,900 --> 00:47:22,840
+Evet. Hatırlayan var mı? Ben söylemeyeyim isim. Söylemek isteyen var mı?
+
+228
+00:47:23,572 --> 00:47:24,952
+Ben söyleyebilirim hocam.
+
+229
+00:47:24,952 --> 00:47:25,672
+Tamam.
+
+230
+00:47:26,432 --> 00:47:30,552
+Hocam bunda çok fazla ayrıntı olmadığı için Tasarık veri akış diyagramı.
+
+231
+00:47:30,872 --> 00:47:35,271
+Evet. Ya da özet, soyut. Hepsi kullanılır.
+
+232
+00:47:35,872 --> 00:47:36,211
+Evet.
+
+233
+00:47:37,492 --> 00:47:41,811
+Evet. Tasarık veri akış diyagramının en önemli özelliği nedir?
+
+234
+00:47:44,032 --> 00:47:46,092
+Kontekst İngilizcesi de.
+
+235
+00:47:47,392 --> 00:47:48,432
+Ben mi söyleyeyim hocam?
+
+236
+00:47:48,492 --> 00:47:49,072
+Sen söyle.
+
+237
+00:47:49,715 --> 00:48:01,195
+Hocam, bunda sistemde girdiler ve çıktılar belirtiliyor ve fonksiyonlar da oklarla gösteriliyor diyagramda.
+
+238
+00:48:02,096 --> 00:48:12,835
+Fonksiyonlar mı acaba? Yani arada gerçekleşen ne gidiyor, ne geliyor? O belirtiliyor değil mi?
+
+239
+00:48:15,284 --> 00:48:19,203
+Peki, faturalama sistemi dediğimiz zaman bu neyi gösteriyor?
+
+240
+00:48:25,652 --> 00:48:28,231
+Sistemin genel adı.
+
+241
+00:48:28,711 --> 00:48:37,271
+Genel adı. Yani burada yerine geçtiği şey, veri akış diyagramlarında bir işlem var, bir veri kaynağı var.
+
+242
+00:48:37,271 --> 00:48:44,452
+Bir de bu işlemlerle veri kaynakları arasında, şurada görelim, oklar var.
+
+243
+00:48:45,331 --> 00:48:47,271
+Tamam mı? Bu oklar...
+
+244
+00:48:47,827 --> 00:48:59,327
+Şunlar varlıklar, kare ya da dikdörtgen, şu kenarları yuvarlatılmış dikdörtgen işlem, şunlar da varlıklar.
+
+245
+00:49:01,008 --> 00:49:12,768
+Bu uygulama, faturalama bilgi sistemi ya da faturalama sistemi, bu sistem hasta varlığıyla ilişkisinde
+
+246
+00:49:13,331 --> 00:49:20,331
+Hastadan sigorta formunu alıyor, hastaya hasta faturasını gönderiyor.
+
+247
+00:49:21,671 --> 00:49:26,331
+Faturalama sistemi sigorta varlığıyla ilişkisi de sadece...
+
+248
+00:49:27,347 --> 00:49:54,387
+Gönderme aşamasında sigorta faturası gönderiyor. Belki burada biz biraz daha ayrıntılı düşünseydik, sigortadan da bu hastanın nasıl bir sigortalı olduğunu belirten bir bilgi de alabilirdik. Sadece faturayı göndermişiz. Doktor ne yapıyor burada? Doktor muayene işlemi yapıyor ve faturalama sistemine de muayene kaydını gönderiyor.
+
+249
+00:49:55,347 --> 00:50:10,507
+sadece muayene mi yaptı? Muayenenin yanında kısa bir kan analizi mi yaptırdı? Ne yaptırdıysa bunu belirtiyor faturalama sistemine. Ona göre hastanın faturası hazırlanıyor.
+
+250
+00:50:12,068 --> 00:50:22,367
+Bu diagramın adı da Context Veri Akış diyagramı. Yani veri akış diyagramı paketinin ilk örneği.
+
+251
+00:50:29,780 --> 00:50:53,320
+Şimdi geçtik. Az önce bir örneğini görmüştük. Birinci düzey ayrıntılı veri akış diyagramının. Birinci düzey ayrıntılı veri akış diyagramı da bu uygulama için biraz daha gerçek birinci düzey ayrıntılı veri akış diyagramı yapısına uygun.
+
+252
+00:50:56,596 --> 00:51:17,296
+Sistem hakkında bilgi topluyoruz ya çalışmalarımız sırasında bilgi topluyoruz, modelliyoruz. Bilgi topladık, modelleme yapacağız. Önce ne düşünmemiz gerekiyor? Bakın şurada 1-0, 2-0, 3-0, 4-0 demişim. Bunlar işlemlerin numaraları.
+
+253
+00:51:17,972 --> 00:51:33,732
+Önce o zaman bizim şunu toparlamamız lazım. Bizim sistemimizde sırayla yani istediğimiz işin olması için sırayla hangi işlemlerin gerçekleşmesi gerekiyor?
+
+254
+00:51:33,732 --> 00:51:40,532
+1-0 muayene kaydı, inceleme ve ücret hesabı.
+
+255
+00:51:41,852 --> 00:51:44,992
+İkinci işlem fatura hazırlama işlemi.
+
+256
+00:51:45,523 --> 00:51:50,324
+Üçüncü işlem, hasta ödemelerinin işlenmesi.
+
+257
+00:51:51,183 --> 00:51:54,583
+Dördüncü işlem, sigorta ödemelerinin işlenmesi.
+
+258
+00:51:55,783 --> 00:52:01,003
+Şimdi biz ilkinde çok basit olarak fatura hazırlama bilgi sistemi dedik.
+
+259
+00:52:01,460 --> 00:52:18,460
+Burada fatura hazırlama bilgi sistemi için doktordan bilgi alıyoruz demiştik. Birinci aşama bu. Doktor ne yaptığını söyleyecek ve ücret listesinden ücret hesabı doğrulanmış olarak şöyle gidişini göstereyim.
+
+260
+00:52:24,563 --> 00:52:40,864
+Bu prosesi muayene kaydı inceleme ve ücret hesabı yapacak ve burada da ücret hesabı yaparken doktorun yazdığı muayene kaydındaki her bir iş ücret listesinde ne kadar paraya denk geliyor buna bakılacak.
+
+261
+00:52:40,864 --> 00:52:47,864
+Sonra doğrulanmış ücret çıkacak ortaya, 2-0'a bunu gönderecek ve buna göre bir fatura hazırlanacak.
+
+262
+00:52:52,563 --> 00:53:16,043
+Sigorta formu alınacak, sigorta şirketi bilgileri alınacak dosyadan, hasta bilgileri alınacak dosyadan ve böylece hastaya da kendi bilgileriyle fatura gönderilecek, sigorta şirketine de kendi bilgileriyle fatura gönderilecek.
+
+263
+00:53:19,956 --> 00:53:30,755
+Hastanın ödemesi alınacak ödeme işlemlerinde, sigorta ödemesi alınacak, muhasebe kayıtlarına işlenecek.
+
+264
+00:53:30,755 --> 00:53:40,195
+Muhasebe kayıtları bu uygulama içinde var olan bir veri ortamı değil ama gerekli bir ortam.
+
+265
+00:53:45,492 --> 00:53:50,311
+Hasta, fatura, sigorta işlemlerinin hepsini görmüş olduk.
+
+266
+00:53:50,391 --> 00:53:53,811
+Şimdi burada bir daha söyleyelim.
+
+267
+00:53:56,211 --> 00:53:58,572
+Sizlerden birisi söylesin bunu.
+
+268
+00:54:00,711 --> 00:54:01,612
+[öğrenci].
+
+269
+00:54:04,492 --> 00:54:06,351
+[öğrenci] burada mı?
+
+270
+00:54:19,059 --> 00:54:20,019
+[öğrenci]
+
+271
+00:54:29,364 --> 00:54:38,304
+[öğrenci], burada mı? Hiç kimse yok mu burada?
+
+272
+00:54:39,884 --> 00:54:43,043
+Hocam buradayım ancak fikrim yok maalesef.
+
+273
+00:54:43,384 --> 00:54:44,884
+Bir dakika, sen kimsin?
+
+274
+00:54:45,384 --> 00:54:46,043
+[öğrenci].
+
+275
+00:54:46,623 --> 00:54:52,943
+[öğrenci]. Yani burada ne oluyor? Hiçbir fikrin yok mu? Şu ne diagramı?
+
+276
+00:54:54,224 --> 00:54:54,983
+Hocam.
+
+277
+00:54:55,360 --> 00:54:59,119
+Bir önceki derslere eksiktim. O yüzden konuya tam hakim değilim.
+
+278
+00:55:01,340 --> 00:55:05,219
+Peki bu diagram ne diagramı? Söyleyecek olan var mı?
+
+279
+00:55:06,619 --> 00:55:07,360
+Hocam ben söyleyebilirim.
+
+280
+00:55:08,119 --> 00:55:08,699
+[öğrenci]?
+
+281
+00:55:09,619 --> 00:55:12,579
+Birinci düzey ayrıntılı veri akış diagramı.
+
+282
+00:55:12,719 --> 00:55:17,219
+Birinci düzey ayrıntılı veri akış diagramı. Peki işlemler nelerdir?
+
+283
+00:55:17,715 --> 00:55:26,775
+Yani öncüler belirtiliyor. Yani bu öncülere karşılık aslında bir işlem gerçekleştiriyor. Yani ana hat olarak. Blot diagram tarzında.
+
+284
+00:55:30,260 --> 00:55:35,020
+Önce nesne yönelik analizde var.
+
+285
+00:55:35,140 --> 00:55:37,880
+Yok, öyle değil. Bir nevi akış diyagramı gibi.
+
+286
+00:55:37,880 --> 00:55:49,500
+Yani önce taslak veri akış diyagramı çizilmiş oluyor. Bu taslak veri akış diyagramına göre buradaki alt işlemlerin detayı veriliyor.
+
+287
+00:55:49,680 --> 00:55:57,520
+Çünkü burada şeyler var. Önce hangi alt işlemler var? Onları bir say bize.
+
+288
+00:55:58,516 --> 00:56:17,235
+Yani bir ile belirtilen muayene kaydı yapacak doktor, inceleme ve ücret hesabı. Ondan sonra eğer doğrulama gelirse, if yani, fotoğraf hazırlanıyor. Ondan sonra hastaya bilgileri alarak hastaya ödeme işlemleri gerçekleştirilip, en sonunda da sigorta ödeme işlemleri oluyor.
+
+289
+00:56:32,596 --> 00:56:35,036
+Adresi. Bunlar nedir?
+
+290
+00:56:37,995 --> 00:56:40,155
+Yani okların üzerindekiler.
+
+291
+00:56:40,815 --> 00:56:43,935
+Bağlantım gitti ama bana mı soruyorsunuz şu an?
+
+292
+00:56:44,775 --> 00:56:46,195
+Şu sorum şu.
+
+293
+00:56:48,195 --> 00:56:53,955
+Bu işlemler arasında ya da şu gösterdiği bir dakika, kör sır.
+
+294
+00:57:00,436 --> 00:57:15,816
+Şurada mesela D2 hastalar diyoruz, D3 sigorta şirketleri diyoruz. Bunlar neyi gösteriyor? Veya D1 ücret listeleri. Bunlar veri tabanı, dosya gibi veri saklama ortamlarını gösteriyor.
+
+295
+00:57:15,816 --> 00:57:26,816
+Yani haklında sürekli bilgi tutacağımız birimleri gösteriyor. Bu sürekli bilgi tuttuğumuz yerlerde...
+
+296
+00:57:28,692 --> 00:57:29,811
+İlerlettik.
+
+297
+00:57:32,112 --> 00:57:34,351
+Veri saklama ortamları.
+
+298
+00:57:35,331 --> 00:57:45,851
+Veri saklama ortamından işleme ya da işlemden işleme ya da varlıktan işleme oklar geliyor ve okların da üzerinde bir şey yazıyor.
+
+299
+00:57:46,291 --> 00:57:46,931
+Nedir bunlar?
+
+300
+00:57:51,476 --> 00:57:52,976
+İşlem olarak bakabilir miyiz?
+
+301
+00:57:54,016 --> 00:57:58,135
+İşlem, işlemler hangileri? 1-0, 2-0, 3-0, 4-0.
+
+302
+00:57:58,815 --> 00:58:00,735
+Siz oklara soruyorsunuz.
+
+303
+00:58:00,916 --> 00:58:01,996
+Oklar nedir?
+
+304
+00:58:02,536 --> 00:58:03,956
+İşlemden işleme giden.
+
+305
+00:58:04,076 --> 00:58:05,076
+Gerçekleşen olaylar.
+
+306
+00:58:05,936 --> 00:58:09,956
+Gerçekleşen olay demeyelim, giden gelen veri diyelim.
+
+307
+00:58:10,615 --> 00:58:10,896
+Peki.
+
+308
+00:58:11,380 --> 00:58:23,619
+Yani birinci işlemden ikinci işleme doğrulanmış ücret verisi gidiyor bilgisi ya da hastadan fatura hazırlamaya sigorta formu bilgisi gidiyor.
+
+309
+00:58:24,099 --> 00:58:24,940
+Girdi çıktı.
+
+310
+00:58:25,940 --> 00:58:37,360
+Evet, evet, evet. Yani girdi çıktı bir veri tabanından şu işlem hangi bilgiyi ya da hangi veriyi alıyor?
+
+311
+00:58:38,420 --> 00:59:02,120
+Hangi veriyi kullanıyor? Bu okların üzerinde onu yazıyoruz. Giden gelen veri. Hani girdi çıktı da diyebiliriz. Evet. Evet [öğrenci], teşekkür ederim. En azından derse katılımın oldu. Başka bir arkadaşınız da şu çizgiyi söylesin. Bu çizginin anlamı nedir?
+
+312
+00:59:04,692 --> 00:59:09,632
+Şurada hastada bir uçta çizgi çizmişiz ya. Bunun anlamı nedir?
+
+313
+00:59:09,632 --> 00:59:11,872
+Şurada bir arda mı söylüyor?
+
+314
+00:59:12,952 --> 00:59:14,032
+[öğrenci].
+
+315
+00:59:16,412 --> 00:59:17,432
+Sesiniz gitti hocam.
+
+316
+01:00:04,692 --> 01:00:14,552
+Evet, bağlantım gitmişti, tekrar geri geldi. [öğrenci], sen ekranı paylaşıyorum, tekrar üzerinden geçelim.
+
+317
+01:00:15,612 --> 01:00:16,132
+Tamam hocam.
+
+318
+01:00:16,912 --> 01:00:22,192
+Evet, şimdi söyle bakalım, şuradaki çizgi ne işe yarıyor?
+
+319
+01:00:22,192 --> 01:00:27,672
+Daha önceden kullanmıştık hastayı, o nesneyi, onu ifade etmek için kullanıyoruz.
+
+320
+01:00:27,792 --> 01:00:30,112
+Evet, evet, tamam.
+
+321
+01:00:33,204 --> 01:00:37,284
+Evet, bir de şeyi söyle, bu diyagram ne diyagramı?
+
+322
+01:00:39,404 --> 01:00:41,804
+Birinci düzeyde veri akış diyagramı.
+
+323
+01:00:41,804 --> 01:00:52,004
+Evet, birinci düzeyde ayrıntılı veri akış diyagramı. Yani konteks diyagramdan sonra onun bir ayrıntılısı olan veri akış diyagramı.
+
+324
+01:00:57,652 --> 01:01:04,692
+Evet, şimdi geçelim. Şimdi de ikinci düzey ayrıntılı veri akış diyagramlarına.
+
+325
+01:02:26,804 --> 01:02:31,204
+Evet, şimdi tekrar getirdik ikinci düzey ayrıntılı veri akış diyagramı.
+
+326
+01:02:31,204 --> 01:02:44,304
+Bu ikinci düzey ayrıntılı veri akış diyagramında daha fazla her bir işlem için daha fazla ayrıntı vermek hedefleniyor.
+
+327
+01:02:45,003 --> 01:02:54,164
+Ve bu ayrıntıyı vermek için de her bir işlem alt işlemlere ayrılıyor.
+
+328
+01:02:54,643 --> 01:03:08,803
+Bu alt işlemler diğer işlemlerle kendi alt işlemleri arasında ve varlıklarla nasıl bir ilişki içinde bunu söylemeye çalışıyoruz.
+
+329
+01:03:08,803 --> 01:03:17,723
+Daha fazla ayrıntı verebilmek için de her bir birinci düzey ayrıntılı veri akış diyagramında verdiğimiz,
+
+330
+01:03:21,172 --> 01:03:27,112
+İşlemi alt işlemlere bölerek ayrı ayrı diagramını çiziyoruz.
+
+331
+01:03:27,791 --> 01:03:34,612
+Şimdi bu 2-0'ı büyük olarak yazmışız, büyük bir işlem içine koymuşuz.
+
+332
+01:03:35,132 --> 01:03:42,391
+2-0'ın altında 2-1, 2-2, 2-3 gibi 3 tane alt işlem var.
+
+333
+01:03:48,880 --> 01:04:01,799
+Hastanın sigorta durumunu incele, listelenen miktarla faturayı kıyasla ve hastanın ödemesi gereken faturayı kaydet, bunu hastaya gönder diyoruz.
+
+334
+01:04:02,239 --> 01:04:08,960
+Bütün bunlar da ikinci düzey ayrıntılı veri akış diyagramında belirleniyor.
+
+335
+01:04:12,371 --> 01:04:14,152
+Şimdi yeni bir soru sorayım.
+
+336
+01:04:37,108 --> 01:04:38,768
+[öğrenci] burada mı?
+
+337
+01:04:45,204 --> 01:04:46,284
+[öğrenci]
+
+338
+01:04:55,059 --> 01:04:56,519
+Yanlış mı okudum isminin?
+
+339
+01:05:00,692 --> 01:05:02,991
+[öğrenci]
+
+340
+01:05:10,867 --> 01:05:13,367
+[öğrenci] burada mı?
+
+341
+01:05:18,003 --> 01:05:19,583
+[öğrenci] burada mı?
+
+342
+01:05:26,260 --> 01:05:27,540
+[öğrenci]
+
+343
+01:05:42,324 --> 01:05:43,503
+Ozağa kokun
+
+344
+01:05:55,860 --> 01:05:57,699
+[öğrenci] burada mı?
+
+345
+01:06:07,860 --> 01:06:08,360
+Evet.
+
+346
+01:06:09,740 --> 01:06:12,400
+Hocam ben buradayım istiyorsanız sorabilirsiniz.
+
+347
+01:06:13,940 --> 01:06:15,280
+Bakayım bir dakika.
+
+348
+01:06:18,599 --> 01:06:19,780
+İsminiz neydi?
+
+349
+01:06:20,300 --> 01:06:21,260
+[öğrenci] hocam ben.
+
+350
+01:06:22,019 --> 01:06:22,980
+[öğrenci].
+
+351
+01:06:23,320 --> 01:06:23,659
+Evet.
+
+352
+01:06:24,480 --> 01:06:31,320
+Tamam. O zaman sana soralım. Bu diagram ne diagramı?
+
+353
+01:06:31,820 --> 01:06:34,659
+Hocam bu diagram ikinci düzey veri akış diyagramı.
+
+354
+01:06:37,460 --> 01:06:44,539
+İkinci düzey veri akış diyagramının birinci düzey ayrıntılı veri akış diyagramından farkı nedir?
+
+355
+01:06:44,539 --> 01:06:47,307
+Yani hani...
+
+356
+01:06:47,668 --> 01:06:59,008
+Basit olarak söyleyeceğim. Mesela ikinci işlemi daha geniş kapsamlı olarak inceledik. Yani ikinci işlemi iç işlemlerine dedin.
+
+357
+01:06:59,008 --> 01:07:09,248
+Evet. Onun alt işlemlerine. O yüzden numarası da önemli. 2-0'ın alt işlemleri 2-1, 2-2, 2-3 olarak gösteriliyor.
+
+358
+01:07:15,668 --> 01:07:23,768
+Tabii ki hepsi için çizmek zorunda değiliz. Altında alt işlemleri gerçekten varsa çiziyoruz.
+
+359
+01:07:27,731 --> 01:07:52,791
+Ama gerçekten alt işlemi varsa bunu ayrı bir veri akış diyagramı şeklinde çiziyoruz. Bir de burada önemli olan şu, birinci düzeyle ikinci düzey mantıksal bağlılık taşımalı. Yani 2-0 bakıyoruz bir önceki birinci düzey ayrıntılı veri akış diyagramında fatura hazırlama.
+
+360
+01:07:53,427 --> 01:08:03,148
+O zaman işte ikinci düzey ayrıntılıda da 2.0'ın altındaki işlemler fatura hazırlamanın alt işlemleri olmalı.
+
+361
+01:08:03,148 --> 01:08:19,208
+Bir de başka bir bağlılık olmalı, yani tutarlılık olmalı. İkinci düzeydeki işlemde biz hastadan birinci işlemden bilgi alıyoruz.
+
+362
+01:08:20,115 --> 01:08:31,556
+D3 ve D2 veri saklama ortamlarından veri alıyoruz. Hastaya ve sigorta şirketine bilgi gönderiyoruz.
+
+363
+01:08:34,387 --> 01:08:47,887
+Bütün bu ilişkiler ikinci düzey ayrıntılı veri akış diyagramında da tutarlı olmalı. Şu giden gelen oklar aynı şekilde olmalı.
+
+364
+01:08:48,307 --> 01:09:05,448
+Zaten biz eğer case aracı kullanırsak, yani Computer Aided Software Engineering yardımcı tool'lar kullanırsak yazılım geliştirme ile ilgili, bu diagramların çiziminde de bu kuralları dikkat ederek size çizdirecektir.
+
+365
+01:09:06,988 --> 01:09:09,528
+Evet, bugün hakkında sorunuz var mı?
+
+366
+01:09:17,492 --> 01:09:23,891
+Bugünle ilişkili sorunuz var mı? Veri akış diyagramları anlaşıldı mı?
+
+367
+01:09:26,652 --> 01:09:34,391
+Genellikle veri akış diyagramlarını yapısal yaklaşımdaki analiz modeli olarak kullanırız.
+
+368
+01:09:34,792 --> 01:09:42,252
+Ama bazen nesneye yönelik yaklaşımda da veri akış diyagramı ile bazı şeyleri ifade etmemiz gerekebilir.
+
+369
+01:09:42,912 --> 01:09:44,192
+Evet, kim soru soracak?
+
+370
+01:09:44,916 --> 01:09:58,416
+Hocam, bu gösterdiğiniz birinci düzeyi ve ikinci düzeyi akış diyagramı hakkında kullanabileceğimiz bir program var mı önerdiğiniz? Bunları oluşturmak için daha kolay bunları taslak olarak oluşturabildiğimiz bir program var mı acaba?
+
+371
+01:10:10,804 --> 01:10:12,804
+Bu mantıksal ilişkileri...
+
+372
+01:10:13,463 --> 01:10:15,683
+Tamam, çok özür dilerim, öldüm ama sesiniz gitti.
+
+373
+01:10:16,724 --> 01:10:18,263
+Evet, evet, evet.
+
+374
+01:10:19,484 --> 01:10:20,943
+Şimdi duyuluyor mu?
+
+375
+01:10:22,283 --> 01:10:23,163
+Evet, şimdi duyuluyor.
+
+376
+01:10:24,083 --> 01:10:36,804
+Bunun için var yazılımlar ama yani daha çok böyle açık kaynaklı olarak size...
+
+377
+01:10:38,579 --> 01:10:53,260
+Yani data analiz gibi programlar falan var ama açık kaynaklı olarak daha kolay kullanacağınız programları araştırayım ona göre söyleyeyim.
+
+378
+01:10:55,180 --> 01:11:03,479
+Yoksa hani daha satın alınan programlar var.
+
+379
+01:11:03,923 --> 01:11:13,463
+Nesneye yönelik olarak Violet falan gibi daha kolay kullanılan açık kaynaklı yazılımlar daha fazla.
+
+380
+01:11:14,663 --> 01:11:23,503
+Ama bunlarla ilgili programlar var ama genellikle açık kaynaklılarda daha az bunlar.
+
+381
+01:11:25,683 --> 01:11:26,904
+Anladım hocam, teşekkür ederim.
+
+382
+01:11:27,523 --> 01:11:28,324
+Teşekkürler.
+
+383
+01:11:31,956 --> 01:11:33,916
+Başka sorusu olan var mı?
+
+384
+01:11:36,956 --> 01:11:39,036
+Hocam, slide'ları paylaşacak mısınız?
+
+385
+01:11:40,556 --> 01:11:44,175
+Slide'ları, evet bir kısmını paylaşacağım.
+
+386
+01:11:45,536 --> 01:11:47,296
+Avesist'teki sayfama koyacağım.
+
+387
+01:11:47,755 --> 01:11:49,076
+Sağ olun hocam, teşekkür ederiz.
+
+388
+01:11:52,235 --> 01:11:55,816
+Bütünlük kazanması için kitaptan da bakabilirsiniz.
+
+389
+01:12:01,076 --> 01:12:22,296
+Evet, o zaman bugünkü dersi bitiriyorum ben. Haftaya kadar aslında bir tane örnek üzerinde, belki bir tane örnek değil de kendi grubunuzun çalışmaları için veri akış diyagramlarını çizin. Yani nesneye yönelik çalışsanız bile.
+
+390
+01:12:22,836 --> 01:12:32,396
+Bu konuyla ilişkili veri akış diyagramlarını kontekst birinci düzey, ikinci düzey ayrıntılı olarak çizmeye çalışın.
+
+391
+01:12:35,828 --> 01:12:36,768
+Anlaşıldı mı?
+
+392
+01:12:39,908 --> 01:12:41,087
+Anlaşıldı hocam.
+
+393
+01:12:41,747 --> 01:12:44,667
+Tamam, oldu. O zaman iyi haftalar diliyorum.
+
+394
+01:12:46,667 --> 01:12:47,288
+İyi haftalar.
+
+395
+01:12:47,808 --> 01:12:49,247
+İyi haftalar hocam.
+
+396
+01:12:49,548 --> 01:12:50,448
+Teşekkürler.
+
+397
+01:12:50,448 --> 01:12:51,448
+İyi haftalar.

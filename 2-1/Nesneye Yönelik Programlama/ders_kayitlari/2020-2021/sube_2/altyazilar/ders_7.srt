@@ -1,0 +1,343 @@
+1
+00:00:18,132 --> 00:00:32,772
+Selamlar. Ödeviniz 5 dakikaya yüklenmiş sınavınız daha doğrusu. 5 dakika sonra yüklenmiş olur sisteme. Sizin kontrol edin. Eğer yüklendiğini görmüyorsanız bana söyleyeyim. Ben hocaya ileteceğim.
+
+2
+00:02:16,819 --> 00:02:26,840
+Yok, soru sanıyorum tam hoca 19.05'de başlatacak ve sınav olarak başlatacağı için öyle zamanında başlatacak.
+
+3
+00:02:37,876 --> 00:02:40,376
+Ben kısa kısa spoilerlar vereyim bir iki dakika.
+
+4
+00:02:41,456 --> 00:02:47,695
+Geçen haftaki uygulamayı iyi incelediyseniz, çalıştıysanız çok rahat yapacaksınız diye düşünüyorum.
+
+5
+00:02:48,936 --> 00:02:52,816
+Aynı sistemde yine birbiriyle ilişkili üç tane sınıf var.
+
+6
+00:02:53,635 --> 00:02:56,616
+Aralarındaki ilişkiler bile benziyor yani birbirinin aynısı.
+
+7
+00:03:01,843 --> 00:03:06,003
+Metotlar yine mantık olarak aynı, eklemeli, çıkarmalı.
+
+8
+00:03:31,123 --> 00:03:55,683
+UML'i biz vereceğiz. Şimdi soruyu siz de indirip şöyle bir baktığınızda bir iki dakika bakın. Sonra ben de buradan açacağım UML'i. Böyle kısaca bir izah edeceğim yine belki kapalı kalan noktalar olur sizin için. Ben bir on dakika daha böyle sistemde duracağım on on beş dakika daha. Varsa o an sorularınızı sorarsınız. Sonra ben çıkacağım. Siz de zaten devam edeceksiniz.
+
+9
+00:03:56,627 --> 00:04:07,567
+Sürenizde bir sanıyorum bir saat falan olacak. Hatta artı beş dakikada yüklemeniz için vereceğiz. Sekize on geçe kadar süreniz olacak.
+
+10
+00:04:09,167 --> 00:04:10,687
+Hocam ne dosyası yükleyeceğiz?
+
+11
+00:04:13,107 --> 00:04:15,587
+Bir daha sorar mısın? Ses çok az geldi.
+
+12
+00:04:16,327 --> 00:04:18,267
+Ne dosyası yükleyeceğiz? Nasıl bir şey?
+
+13
+00:04:19,027 --> 00:04:20,147
+Göndermeniz şöyle.
+
+14
+00:04:21,651 --> 00:04:35,791
+Projenizi ben bir tane dosya paylaşmıştım havesinde belki görmüşsünüzdür. Oradan projenizin üstüne sağ tık yapıp export dediğiniz zaman adımları takip edin. Ben sadece o yazacağınız dört tane sınıf olacak ya totalde.
+
+15
+00:04:36,596 --> 00:04:52,776
+Onların kodunu istiyorum. Java uzantılı kodu ama class uzantılı değil. Java uzantılı dört tane dosya istiyorum. Sadece bunu direkt pakete de gönderebilirsiniz. Tüm projelerinizi de gönderebilirsiniz. Bunların hepsini zip olarak veya işte RAR dosyası neyse sıkıştırıp o şekilde gönderiyorsunuz.
+
+16
+00:05:14,803 --> 00:05:19,903
+Bakın makam şimdi indirebiliyor musunuz ödevi görebiliyor musunuz soruyu?
+
+17
+00:05:57,588 --> 00:05:59,068
+Doğru dediniz, ben buradan onu.
+
+18
+00:05:59,548 --> 00:06:02,848
+Rar olduğu için mi açılmıyor? Onu ziplap atayım o zaman ben size.
+
+19
+00:06:21,875 --> 00:06:25,895
+Hocam, istediğiniz şeyin uzantısı tam olarak nasıldı? Bir daha tekrar edebilir misiniz?
+
+20
+00:06:27,196 --> 00:06:31,055
+Sıkıştırılmış bir dosya istiyoruz zaten. Programa zip olarak yüklersiniz.
+
+21
+00:06:31,655 --> 00:06:37,795
+İçeriğinde sizin üç tane yazacağınız class, bir de ben şimdi size test class'ını biz veriyoruz.
+
+22
+00:06:37,915 --> 00:06:41,355
+Hani bir tane main sınıfın, main metodun olduğu class olurdu ya.
+
+23
+00:06:42,115 --> 00:06:46,576
+Onu ben zaten size şimdi hazır vereceğim. Bir de onu da işte koydunuz.
+
+24
+00:06:47,088 --> 00:06:50,548
+4 tane toplamda dosya olan bir klasör istiyorum.
+
+25
+00:06:51,567 --> 00:06:55,768
+Burada dikkat edin, içlerin uzantıları nokta Java olsun dosyalar.
+
+26
+00:07:01,076 --> 00:07:03,156
+Şunu bir atayım hemen size.
+
+27
+00:07:37,076 --> 00:07:41,076
+Şimdi herkes indirebildiyse dosyayı ben de bir ekran paylaşayım.
+
+28
+00:07:41,176 --> 00:07:42,996
+Yemel'den biraz bakalım, inceleyelim.
+
+29
+00:07:59,348 --> 00:08:03,348
+Şimdi dedi ki sistem çok benziyor geçen seferkine.
+
+30
+00:08:03,923 --> 00:08:05,703
+Şöyle üç tane sınıfınız var.
+
+31
+00:08:06,884 --> 00:08:11,363
+Burada bir hani marketin online alışveriş sitesi gibi düşünün.
+
+32
+00:08:11,923 --> 00:08:14,483
+Müşteriler var. Bunlar sipariş veriyor.
+
+33
+00:08:14,963 --> 00:08:16,603
+Her bir siparişte de ürünler var.
+
+34
+00:08:16,743 --> 00:08:18,923
+Yani bir müşterinin altında işte siparişler.
+
+35
+00:08:19,323 --> 00:08:20,943
+O siparişlerin içinde de ürünler var.
+
+36
+00:08:21,884 --> 00:08:26,943
+Burada mesela geçen hafta şey hatırlayın, biz kendimiz bu sayısını veriyorduk işte.
+
+37
+00:08:27,923 --> 00:08:32,163
+Bir rafta kaç kitap olmalı bir kitaplık rap örneği vardı ya.
+
+38
+00:08:32,563 --> 00:08:35,004
+Orada bir sayıyı vererek construction üretiyorduk.
+
+39
+00:08:35,104 --> 00:08:38,183
+Burada ben direkt sabit bir şekilde üretmenizi istiyorum en başında.
+
+40
+00:08:38,943 --> 00:08:42,663
+Yani construction o noktada mesela parametre almasına gerek olmayacak öyle söyleyeyim.
+
+41
+00:08:43,803 --> 00:08:48,703
+Burada ne demişiz? Her bir müşteri için 3 sipariş olmalı, her siparişte 5 ürün tutulmalı.
+
+42
+00:08:49,403 --> 00:08:53,903
+Bunu en başta direkt içerisinde nasıl tanımlayacağını artık biliyorsunuz ne kullanacağınıza.
+
+43
+00:08:55,764 --> 00:08:57,604
+Bu şekilde bir sistem olacak.
+
+44
+00:08:57,604 --> 00:09:00,004
+Burada.
+
+45
+00:09:04,307 --> 00:09:06,087
+Aynen gönderme şekliniz zip.
+
+46
+00:09:07,307 --> 00:09:11,028
+Veya rar fark etmez sıkıştırmış bir dosya zaten göndermeniz gerekecek.
+
+47
+00:09:11,888 --> 00:09:15,268
+Projenize ve server kendi öğrenci numaranızı falan verirseniz o dosya.
+
+48
+00:09:15,388 --> 00:09:18,768
+Zaten otomatik herhalde kendi öğrenci numaranızı alıyor gönderirken o dosyalar.
+
+49
+00:09:18,827 --> 00:09:20,747
+Ben de tam bilmiyorum yükleme sürecinizi.
+
+50
+00:09:22,648 --> 00:09:23,727
+Daha rahat olur bizim için.
+
+51
+00:09:26,067 --> 00:09:27,867
+Sonra devam edeyim.
+
+52
+00:09:29,076 --> 00:09:39,355
+Hocam bir şey yapabilir miyim? Sizin gönderdiğiniz Java dosyası vardı ya, class olarak. Biz onun ismini değiştirebilir miyiz kendi dosyası?
+
+53
+00:09:39,355 --> 00:09:41,855
+Tabii tabii ki. Hiç onda sıkıntı yok.
+
+54
+00:09:42,316 --> 00:09:43,916
+Main olarak geçelim değil mi hocam yani?
+
+55
+00:09:45,036 --> 00:09:52,716
+Main sınıf yapabilirsiniz, fark etmez. O sınıf önemli değil. Önemli olan oradan çalıştırdığınız zaman.
+
+56
+00:09:53,395 --> 00:10:00,495
+Bu test Java'yı çalıştırdığınız zaman, yani şu main metodu çalıştırdığınızda, içeriği aynen alın mesela, kopyalayın fark etmez.
+
+57
+00:10:01,635 --> 00:10:04,775
+İstediğimiz çıktılar, şu pdf'in altında onları da verdik.
+
+58
+00:10:05,375 --> 00:10:07,415
+Pdf'in şu ikinci, üçüncü sayfalarında.
+
+59
+00:10:08,015 --> 00:10:13,955
+Kontrol edersiniz, doğru çıktıları üretiyor mu, üretmiyor mu diye yazdığınız metotları.
+
+60
+00:10:15,395 --> 00:10:16,735
+Şuradan onlara bakabilirsiniz.
+
+61
+00:10:19,860 --> 00:10:41,039
+Dediğim gibi metotlar, ne demişiz işte, sipariş bilgisi metoduyla, açıklayıcı zaten sipariş numarasını ver, işte hangi ürün olacak, demek ki bu bunu, ne olacak o siparişe kaydedilecek, belli sipariş numarasında o ürün kaydedilecek şeklinde.
+
+62
+00:10:41,971 --> 00:10:49,091
+Böyle böyle sistemi gerçekliyoruz. Siz yine bir okuyun, bir beş dakika bir bakın, takıldığınız şeyi bana yine sorun.
+
+63
+00:10:49,711 --> 00:10:51,652
+Hocam, zam sayısı tam olarak neye tutacak?
+
+64
+00:10:53,412 --> 00:10:59,971
+Zam sayısı için ne demişiz? Yapılan kaç kez zam yapılmış? Yani bir üründe...
+
+65
+00:11:01,043 --> 00:11:12,663
+Kaç kez zam yapıldığının bilgisi tutulacak. Demek ki öyle bir fonksiyon var, öyle bir metot var. O metot her çalıştığında demek ki bu değer ne olacak? Arttırılacak. Kısaca mantığı bu.
+
+66
+00:11:13,943 --> 00:11:22,843
+Hocam, ürün class'ının, attribute'lerin şeyi verilmemiş ama hangi tipte olacakları diğerlerinde verilmiş mesela? ID string, altı string yaparız büyük ihtimalle.
+
+67
+00:11:23,604 --> 00:11:25,743
+Onun mesela test class'ına bakabilirsiniz.
+
+68
+00:11:31,956 --> 00:11:39,355
+Mesela ürünleri ben burada yazmışım ya, create etmişim. Buradan mesela çıkarabiliriz. ID'li ne yapmışız mesela?
+
+69
+00:11:40,576 --> 00:11:41,936
+ID int galiba, aynen.
+
+70
+00:11:42,036 --> 00:11:46,216
+Aynen. Ürün ismini string yapmışız. Bunları da mesela double yapmışız.
+
+71
+00:19:37,044 --> 00:19:52,504
+Ben dersi kapatıyorum o zaman soru yoksa. Son olarak hatırlatmamızı yapalım. İstediğim, yüklemenizi istediğim dosyada yazdınız bu üç tane classınız üç ayrı dosyada olacaktır muhtemelen.
+
+72
+00:19:53,224 --> 00:20:00,000
+.java uzantılı şekilde bunları istiyorum. Müşteri.java, sipariş.java, ürün.java. Mutlaka bunları...
+
+73
+00:20:00,000 --> 00:20:18,380
+O export işlemini yaparken kaydettiğinize emin olun. Kaydetmeden o exportu yaparsanız içi boş bir dosya göndermiş oluyorsunuz. Süreniz 8-10 geçe bitiyor diyebiliyorum. Son 5 dakikayı yüklemelerinize ayırırsınız. Emin olup.
+
+74
+00:20:18,380 --> 00:20:20,279
+Hocam soru sorabilir miyim bir tane?
+
+75
+00:20:21,203 --> 00:20:27,943
+zam yap fonksiyonu var, bir metodu var bir tane. Bu bir şeyi döndürecek mi yoksa sadece zam sayısını mı arttıracağız?
+
+76
+00:20:29,284 --> 00:20:36,923
+Evet, burada aslında bağlantı kurmanızı istediğimiz şey o. Çünkü test şeyinin içinde, metodunun içinde.
+
+77
+00:20:38,516 --> 00:21:00,476
+Nerede yazmıştık? Şurada hani çalıştırmanızı, getirmenizi istediğimiz şey get zam sayısı. Yani bizim olayımız aslında zam sayısı kaç kere yapıldığını görmek. Bu fonksiyonu da siz olayabiliyorsunuz artık onunla bağlantısını. Fonksiyon çalıştıkça demek ki beşgenimizde bir işlem olacak.
+
+78
+00:21:12,468 --> 00:21:38,588
+Burada belki en zorlanabileceğiniz olan şu kaç sipariş metodudur. Bu biraz komplike gelebilir belki. Bunu en sona bırakır üstüne biraz daha uzun uzun düşünürsünüz. Çünkü burada dikkat etmeniz hissedilmiş şey bütün siparişlerde diyoruz ya bu ürün bütün siparişlerde olmayabilir. Kaç tane siparişte olmuş ve toplam kaç kere yazdırılmış, kaç kere sipariş verilmiş. En belki sizi zorlayacak olan burada.
+
+79
+00:21:39,220 --> 00:21:40,259
+Bu metot olabilir.
+
+80
+00:21:41,840 --> 00:21:43,960
+Diğerlerini rahat bir şekilde yapacağınızı düşünüyorum.
+
+81
+00:22:41,428 --> 00:22:50,748
+Başka soru yoksa kapatıyorum ve sizi soruyla baş başa bırakıyorum. Yine çok acil bir şey olursa bana Gmail'ime mail atabilirsiniz.
+
+82
+00:22:55,208 --> 00:23:05,448
+Oradan yine cevaplamaya çalışırım. Başarılar diliyorum size. Görüşmek üzere.
+
+83
+00:23:21,076 --> 00:23:24,635
+Herkes dosyayı alabildi değil mi? Çatteki soruyu şimdi görüyorum.
+
+84
+00:23:25,876 --> 00:23:27,056
+Hallettin hocam, yaz sıkıntı.
+
+85
+00:23:27,076 --> 00:23:28,355
+Tamamdır, tamam.
+
+86
+00:23:33,236 --> 00:23:34,936
+Tamamdır, öyleyse başarırlar size.

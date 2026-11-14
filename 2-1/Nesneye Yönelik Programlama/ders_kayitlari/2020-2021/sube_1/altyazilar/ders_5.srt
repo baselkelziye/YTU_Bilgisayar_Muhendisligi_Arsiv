@@ -1,0 +1,1923 @@
+1
+00:02:13,556 --> 00:02:14,136
+Merhaba arkadaşlar.
+
+2
+00:02:19,123 --> 00:02:20,984
+Merhaba.
+
+3
+00:03:02,132 --> 00:03:03,312
+Ekran gözüküyor değil mi arkadaşlar?
+
+4
+00:03:08,659 --> 00:03:09,659
+Alo?
+
+5
+00:03:09,659 --> 00:03:11,627
+Gözüküyor hocam.
+
+6
+00:03:23,828 --> 00:03:27,207
+Bugün UML diagramına biraz giriş yapacağız.
+
+7
+00:03:28,587 --> 00:03:37,147
+Bir de bir, yani bu UML diagramının Java ile yazılmış kodlarını anlatacağım.
+
+8
+00:03:38,668 --> 00:03:42,747
+Böylelikle bu haftaki konumuzu tamamlamış olacağız inşallah.
+
+9
+00:03:45,807 --> 00:03:48,987
+Öncelikle ben İdris Demir, şuradan.
+
+10
+00:03:50,707 --> 00:03:51,608
+Check down there.
+
+11
+00:03:55,156 --> 00:03:56,596
+Vein adresim yazin, vai aqui.
+
+12
+00:04:02,324 --> 00:04:07,924
+Buradan ihtiyacınız olduğu zaman, aklınıza bir şey takılır falan, soru sorabilirsiniz.
+
+13
+00:04:15,060 --> 00:04:26,420
+Bu UML diagramında şu kutular Java'da class olarak değerlendiriliyor.
+
+14
+00:04:27,420 --> 00:04:30,240
+Yani programlama da class olarak değerlendiriliyor.
+
+15
+00:04:30,240 --> 00:04:37,620
+Mesela test, kitap, raf ve kitaplık diye dört tane class'ımızın olduğunu belirtiyor bu diagramda.
+
+16
+00:04:41,875 --> 00:05:06,695
+Testte mesela main diye bir fonksiyon varmış. Buradaki artı bunun public olduğunu, bu fonksiyon adını, parantez var, parametresinin veri tipini, parantezin içindeki şey, string yani string dizisi, bir tane veri tipi olduğu için bir tane parametre aldığını ve bu parametrenin de string dizisi olduğunu belirtiyor.
+
+17
+00:05:07,795 --> 00:05:14,115
+Ve bu fonksiyonun dönüş tipinin de void olduğunu gösteriyor. Yani bir şey döndürmüyor.
+
+18
+00:05:15,696 --> 00:05:23,156
+Aynı şekilde mesela kitap class'ını örnek aldığımızda bu kutular bir class'ı ifade ediyor.
+
+19
+00:05:24,355 --> 00:05:28,175
+Bu artı eksi artı public'i, eksi private'ı.
+
+20
+00:05:29,495 --> 00:05:32,675
+Bu ikinci kutudaki kısım.
+
+21
+00:05:33,363 --> 00:05:36,043
+Yani bu büyük kutu 3 parçaya ayrılmış.
+
+22
+00:05:36,943 --> 00:05:43,363
+Class'ın adı, class'ın nitelikleri ve class'ın fonksiyonları.
+
+23
+00:05:46,023 --> 00:05:50,983
+Bu X'ler private. Bunlar niteliklerin isimleri.
+
+24
+00:05:51,283 --> 00:05:55,583
+Ad, yazar, ise, bn, kitap sayısı. Bunlar niteliklerin isimlerini belirtiyor.
+
+25
+00:05:56,211 --> 00:06:03,611
+İki noktadan sonra da mesela string yazmışız gördüğünüz gibi. Bunlar da bu niteliklerin veri tiplerini belirtiyor.
+
+26
+00:06:04,672 --> 00:06:11,632
+Burada static diye ayrıca belirtilmiş mesela. Bu da bunun static olduğunu gösteriyor.
+
+27
+00:06:11,632 --> 00:06:23,512
+Aynı şekilde final yani sabit olduğu zaman da onu final diye burada bu sitin yanında mesela bu kitap sayısı final olsa şurada bir virgül.
+
+28
+00:06:23,956 --> 00:06:29,716
+Final deyip bu kitap sayısının değişmediğini de belirtebilirdik. Eğer öyle olsaydı yani.
+
+29
+00:06:32,196 --> 00:06:37,716
+Mesela buradaki kitap fonksiyonu class ile aynı ismi almış. Yapıcı fonksiyon demek bu.
+
+30
+00:06:40,216 --> 00:06:44,096
+3 tane parametre alıyor. 3 parametre de string tipinde.
+
+31
+00:06:46,056 --> 00:06:48,556
+Geri döndürücü bir şey yok. Yapıcı fonksiyonu böyle.
+
+32
+00:06:49,456 --> 00:06:50,836
+Mesela get at diye.
+
+33
+00:06:51,923 --> 00:06:53,623
+Bir fonksiyon tanımlanmış.
+
+34
+00:06:54,723 --> 00:06:58,003
+Bunun da geri döndürdüğü veri tipinin string olduğunu söylüyor.
+
+35
+00:06:59,603 --> 00:07:01,923
+Set hat mesela string tipinde bir veri tipi alıyor.
+
+36
+00:07:01,923 --> 00:07:04,083
+Ve veri döndürmüyor.
+
+37
+00:07:05,264 --> 00:07:07,383
+Artı var. Demek ki bunlar public.
+
+38
+00:07:10,403 --> 00:07:13,264
+Bunları böyle belirtebiliriz.
+
+39
+00:07:14,163 --> 00:07:18,363
+Anlamadığınız yer olduğu zaman direkt bana sorabilirsiniz.
+
+40
+00:07:19,764 --> 00:07:20,604
+Direkt,
+
+41
+00:07:20,604 --> 00:07:21,423
+Solun.
+
+42
+00:07:25,588 --> 00:07:31,668
+Sonra bu çizgilerde mesela ne demek bu?
+
+43
+00:07:33,848 --> 00:07:36,788
+Kitap rafın bir parçası.
+
+44
+00:07:37,948 --> 00:07:39,668
+Raf da kitaplığın bir parçası.
+
+45
+00:07:40,148 --> 00:07:41,468
+Şu çizgiler bunu belirtiyor.
+
+46
+00:07:43,268 --> 00:07:46,187
+Bunun içi karanlık, yani karalanmış.
+
+47
+00:07:46,568 --> 00:07:47,687
+Bununki karalanmamış.
+
+48
+00:07:48,108 --> 00:07:49,168
+Bu şu anlama geliyor.
+
+49
+00:07:52,084 --> 00:08:17,964
+Ben kitaplık kılasını silersem, nesnesini silersem, o kitaplığın rafları da dolayısıyla etkilenecek bunlar. Bu bunu belirtiyor. Ama mesela ben rafı sildiğim zaman kitaplar bundan etkilenmez. Daha zayıf bir bağlantı olduğunu gösteriyor. Bunlara composition ve aggregation deniyor.
+
+50
+00:08:19,091 --> 00:08:30,732
+Şu karar, içi karalanmış olunca, kitaplığı sildiğim zaman, raf da bundan etkilendiği zaman buna composition, yani güçlü bağlantı deniliyor.
+
+51
+00:08:31,732 --> 00:08:37,872
+Ama işte rafı sildim, rafa bir şey yaptım ama kitaplar bundan zarar görmüyor.
+
+52
+00:08:38,011 --> 00:08:43,432
+Buna da aggregation, zayıf bağlantı deniliyor.
+
+53
+00:08:45,491 --> 00:09:05,912
+Şu keslikle çizgiler de bağımlılık anlamına geliyor. Bu ne demek? Yani şöyle düşünebilirsiniz. Test class'ın içinde kitaplı class'ını kullanıyorum ben. Ve kitap class'ını kullanıyorum. Bu class'ın içinde. Yani bunu böyle düşünebilirsiniz.
+
+54
+00:09:16,596 --> 00:09:17,836
+Temel diagramı bu kadar.
+
+55
+00:09:21,196 --> 00:09:22,516
+Anlaşılmayan bir şey var mı?
+
+56
+00:09:25,375 --> 00:09:29,536
+Bakın mesela sadece integer void değil, kitap dizisi döndürüyor.
+
+57
+00:09:29,735 --> 00:09:31,516
+Döndürüyor bu kitap platformu.
+
+58
+00:09:32,316 --> 00:09:33,995
+Kitap 1, class.
+
+59
+00:09:35,895 --> 00:09:37,235
+Şunu da söyleyeyim.
+
+60
+00:09:37,475 --> 00:09:40,256
+Class, object, yani nesne,
+
+61
+00:09:41,536 --> 00:09:42,995
+nitelik,
+
+62
+00:09:43,344 --> 00:09:44,584
+ve fonksiyonlar.
+
+63
+00:09:46,024 --> 00:09:48,284
+4 tane temel kavramımız var nesne yönteminde.
+
+64
+00:09:49,704 --> 00:09:52,284
+Class dediğimiz, mesela kitap.
+
+65
+00:09:53,504 --> 00:09:57,104
+Burada ne diyor? Nitelik bunlar. Bunlar fonksiyon.
+
+66
+00:09:58,484 --> 00:10:09,204
+Nitelikler bu class'ımızın özelliklerini, fonksiyonlar da bu class'ımıza ait nesnelerin, yani nitelikler bu class'ımıza ait nesnelerin,
+
+67
+00:10:09,875 --> 00:10:20,135
+özelliklerini, fonksiyonlar da bu class'ımıza ait nesnelerin neler yapabileceğini ifade ediyor.
+
+68
+00:10:22,395 --> 00:10:27,596
+Class dediğimiz nedir? Bir şablon olarak düşünebilirsiniz.
+
+69
+00:10:29,195 --> 00:10:36,836
+Mesela diyoruz ki biz yani kitap dediğimiz zaman bu kitabın adı olur, yazarı olur.
+
+70
+00:10:37,587 --> 00:10:53,467
+İSBNS'i olur, kitap sayısı olur demek istiyoruz. Ama ortalıkta kitap yok şu anda. Sadece diyoruz ki kitap böyle olur. Ve kitap işte get ad ile adını getirir. Set ad ile adını değiştirir.
+
+71
+00:11:05,524 --> 00:11:29,803
+Şeyleri vardır, yani fonksiyonları vardır, işlevleri vardır. Burası da fonksiyonlar da bunu ifade ediyor. Nesne de bu şablondan oluşturduğumuz kitaplar oluyor. Yani şu bir tane şablon, ben bundan bir tane, on tane, bin tane kitap oluşturabilirim. Bu bunu ifade ediyor. Nesne.
+
+72
+00:11:38,644 --> 00:11:40,223
+Kodları anlatacağım şimdi.
+
+73
+00:11:45,683 --> 00:11:50,103
+Mesela bakın, public static void main.
+
+74
+00:11:51,503 --> 00:12:05,283
+Biz bir programı çalıştırdığımız zaman, ilk başta çalışacak komutlar, public static void main fonksiyonun içindeki komutlardır.
+
+75
+00:12:08,820 --> 00:12:12,040
+Public static void main fonksiyonun içindeki komutlardır.
+
+76
+00:12:13,000 --> 00:12:14,560
+Biz programı çalıştırdık.
+
+77
+00:12:15,860 --> 00:12:19,560
+İlk çalışan komut burası oldu.
+
+78
+00:12:19,560 --> 00:12:20,960
+Şu yani.
+
+79
+00:12:26,163 --> 00:12:28,783
+Burada yazılı olan kodları tek tek inceleyeceğiz şimdi.
+
+80
+00:12:31,344 --> 00:12:36,644
+Mesela ne diyor? System Outprinted'en, yani bir şey yazdıracağız. Ne yazdıracağız?
+
+81
+00:12:37,564 --> 00:12:40,463
+Kitap.isbn nedir?
+
+82
+00:12:42,344 --> 00:12:44,003
+Kitap bir class aslında.
+
+83
+00:12:45,223 --> 00:12:48,243
+Burada da şey yaptığımız gibi kitap bir class.
+
+84
+00:12:49,604 --> 00:12:50,364
+Class'tan,
+
+85
+00:12:50,932 --> 00:13:07,772
+Doğrudan bir nitelik veya metoda erişim sağlayamayız. Lakin eğer ki o nitelik veya metot public static ise, şurada mesela olduğu gibi göstereyim.
+
+86
+00:13:09,772 --> 00:13:11,852
+Kitap ISBN nedir?
+
+87
+00:13:15,827 --> 00:13:27,827
+Mesela burada public, static ise eğer ki o zaman bu şekilde direkt sınıf adını yazıp nokta, ISBN'e nedir fonksiyonun adını yazarak o fonksiyona erişim sağlayabiliyoruz.
+
+88
+00:13:30,307 --> 00:13:35,187
+Şunu da gösterseydim güzel olabilirdi aslında. Hani gerçeklemesini.
+
+89
+00:13:37,888 --> 00:13:42,727
+Mesela testte dedik, main diye bir fonksiyon var dedik, o fonksiyon bu fonksiyon.
+
+90
+00:13:44,019 --> 00:13:47,740
+Mesela kitaplık dedik, bakın.
+
+91
+00:13:49,480 --> 00:13:54,980
+Raff adında, raff veri tipinde, raff dediğimizde bir class burada, bakın.
+
+92
+00:13:57,200 --> 00:14:06,980
+Raff veri tipinde, raff adında bir değişken, bir nitelik varmış.
+
+93
+00:14:08,379 --> 00:14:10,220
+Burada bunu belirtiyor ve bu private'miş.
+
+94
+00:14:10,620 --> 00:14:11,300
+Bakın, eksi.
+
+95
+00:14:11,731 --> 00:14:12,331
+Private.
+
+96
+00:14:13,291 --> 00:14:14,851
+Raff dizisi veri tipinde.
+
+97
+00:14:15,291 --> 00:14:15,991
+Raff dizisi.
+
+98
+00:14:16,251 --> 00:14:17,072
+Değişkenin adı Raff.
+
+99
+00:14:17,871 --> 00:14:18,231
+Raff.
+
+100
+00:14:20,151 --> 00:14:21,911
+Bunun işte yapıcı fonksiyonu.
+
+101
+00:14:21,971 --> 00:14:23,811
+Çünkü yapıcı fonksiyon nedir?
+
+102
+00:14:23,811 --> 00:14:36,851
+İşte class'ın adıyla aynı isme sahip olan bir dönüş tipi olmayan fonksiyonudur.
+
+103
+00:14:37,812 --> 00:14:42,591
+Biz kitaplık nesnesi oluşturduğumuz zaman direkt bu fonksiyonları çağırırız.
+
+104
+00:14:43,892 --> 00:14:48,572
+Yani kitaplık nesnesi oluşturmak istediğimiz zaman direkt bu fonksiyonları çağırırız.
+
+105
+00:14:49,971 --> 00:14:51,611
+Mesela kitap ekle var.
+
+106
+00:14:52,331 --> 00:14:53,512
+Bakın burada kitap ekle.
+
+107
+00:14:54,351 --> 00:14:54,812
+Ne diyor?
+
+108
+00:14:55,172 --> 00:14:57,892
+Kitap veri tipinde bir parametresi var.
+
+109
+00:14:58,611 --> 00:15:01,032
+Int veri tipinde bir parametresi var.
+
+110
+00:15:01,591 --> 00:15:03,731
+Dönüş tipi void ve public.
+
+111
+00:15:04,659 --> 00:15:22,659
+Public, dönüş tipi void, fonksiyonun adı kitap ekle, aldığı parametrelerin veri türleri kitap ve int. Bunun gibi buradaki diğer fonksiyonlar da böyle tanımlanmış.
+
+112
+00:15:22,819 --> 00:15:31,259
+Tabi içerikleri UML diagramında göstereyim ya. Onları da tek tek inceleyeceğiz zaten. Aynı şey rafta da yapılmış mesela.
+
+113
+00:15:32,148 --> 00:15:47,967
+Bakın, eksi yani private, kitaplar, değişkenin adı, niteliğin adı, veritipi, kitap dizisi. Burada tanımlandığı gibi. Aynı şekilde burada da raf diye bir fonksiyon var. Bu da bu class'ın yapıcı fonksiyonu.
+
+114
+00:15:51,379 --> 00:15:57,860
+Ondan sonra buradaki fonksiyonlar var. Veri tipleri gördüğünüz gibi bakın. İlla integer olmadığı zorunda değil buralar.
+
+115
+00:15:58,900 --> 00:16:06,740
+Bir kitap diye bizim oluşturduğumuz kitap adında bir nesne, bir class da nesne döndürebiliyor.
+
+116
+00:16:08,740 --> 00:16:10,180
+Diğerleri de böyle.
+
+117
+00:16:11,860 --> 00:16:14,020
+Şimdi buradan devam edebilirim.
+
+118
+00:16:19,412 --> 00:16:21,952
+Şimdi ne yaptık? Mesela kitap ISBN nedir?
+
+119
+00:16:23,132 --> 00:16:25,472
+Hemen kitap class'ımızı açıyoruz.
+
+120
+00:16:26,232 --> 00:16:29,172
+ISBN nedir fonksiyonunu çağırdık. Buraya geldik.
+
+121
+00:16:30,912 --> 00:16:33,192
+İşte bir tane string değişken oluşturdu.
+
+122
+00:16:34,632 --> 00:16:35,532
+İşte değeri şu.
+
+123
+00:16:37,212 --> 00:16:38,892
+Yani string değeri bu.
+
+124
+00:16:40,112 --> 00:16:41,752
+Sonra da onu ne yaptı? Döndürdü.
+
+125
+00:16:42,868 --> 00:17:08,788
+Buraya geldik. O oluşturduğumuz string değişkenine atadığımız değer burada. Ne yaptı? Bunu yazdı. Bakın ilk şeyi bu. Sonra kitap oluşturuyor. Yani kitap bizim oluşturduğumuz classlardan bir tanesi. Bir şablon. Bunun adı kitap 1 diye bir tane kitap mesnesi oluşturuyoruz.
+
+126
+00:17:09,087 --> 00:17:11,288
+Yani kitap bir adında bir kitap oluşturuyoruz.
+
+127
+00:17:12,307 --> 00:17:13,587
+Ne yapıyoruz? New.
+
+128
+00:17:14,528 --> 00:17:16,288
+Anahtar kelimesini kullanarak
+
+129
+00:17:16,288 --> 00:17:20,887
+kitap yapıcı fonksiyonunu
+
+130
+00:17:20,887 --> 00:17:22,867
+çağırıyoruz.
+
+131
+00:17:23,447 --> 00:17:24,947
+Parametre olarak işte dönüşüm.
+
+132
+00:17:25,028 --> 00:17:27,288
+Kafka, 1, 2, 3, 4, 3 tane string değer.
+
+133
+00:17:28,188 --> 00:17:29,067
+Bunu gönderdik.
+
+134
+00:17:29,587 --> 00:17:30,688
+Yapıcı fonksiyonunu.
+
+135
+00:17:31,887 --> 00:17:32,907
+Buraya ne oldu?
+
+136
+00:17:35,155 --> 00:18:01,456
+Dönüşüm Kafka, 1, 2, 3, 4 değerleri. Dönüşüm Ada, Kafka yazarak, 1, 2, 3, 4, ISBN'ye geldi. Sonra burada bizim class'ımızdaki niteliklere bu değerleri atıyoruz. Artık nedir yani? Bir nesilinde oluşturduğumuz zaman ad değişkeninin state'i bu parametre olarak gönderdiğimiz ad değişkeninde tuttuğumuz değer yani dönüşüm.
+
+137
+00:18:04,915 --> 00:18:14,336
+Dönüşümü ne yaptık? Bu ad değişkenin değeri olarak atadık. Böylelikle bu state'i artık bu oluyor. Dönüşüm oluyor yani.
+
+138
+00:18:15,456 --> 00:18:26,675
+Aynı şeyi yazar ve isleveren için de yaptık. Sonra private static int kitap sayısı diye bir nitelik tanımlanmışız.
+
+139
+00:18:30,112 --> 00:18:38,112
+Ben bu kitap sayısı değişkenine erişemeyeceğim anlamına geliyor. Nereden erişebiliyor? Sadece bu class'ın içinden erişebilirim.
+
+140
+00:18:39,112 --> 00:18:52,112
+Statik olması, onun statik olduğu anlamına geliyor. Yani her yerden erişilebileceğini, integer olması veri tipinin int olduğu anlamına geliyor.
+
+141
+00:19:00,180 --> 00:19:00,660
+Evet.
+
+142
+00:19:02,700 --> 00:19:16,200
+Kitap sayısını böylelikle ne yapıyoruz? Yani kitap oluşturduğumuz zaman ne yapıyoruz? Kitabı arttırıyoruz. Kitap sayısını arttırıyoruz. Böylelikle bir kitap oluşturdu. Kitap sayısı bir oldu. Mesela.
+
+143
+00:19:20,243 --> 00:19:20,683
+Tamam.
+
+144
+00:19:22,844 --> 00:19:23,503
+Aynı şey...
+
+145
+00:19:23,503 --> 00:19:27,143
+Kapsayıs ilk tanımlanırken sıfır olarak mı geliyor? Yani direkt arttırdık ya.
+
+146
+00:19:27,523 --> 00:19:28,563
+Default olarak integer.
+
+147
+00:19:29,183 --> 00:19:31,563
+Integer olduğu için default olarak sıfır oluyor.
+
+148
+00:19:32,043 --> 00:19:33,623
+Mesela string olsaydı null olurdu.
+
+149
+00:19:34,523 --> 00:19:35,423
+Tamam, teşekkür ederim.
+
+150
+00:19:40,435 --> 00:19:43,835
+Kitab 2, kitab 3. Bunları da aynı şekilde tanımladık.
+
+151
+00:19:45,455 --> 00:19:47,375
+3 tane kitabımız oldu yani şu anda.
+
+152
+00:19:49,375 --> 00:19:51,715
+Sonra, bakın ISBN nedir?
+
+153
+00:19:54,775 --> 00:19:55,935
+ISBN nedir?
+
+154
+00:19:57,395 --> 00:19:59,855
+diye bir fonksiyonumuz vardı. Statik de bu.
+
+155
+00:20:00,615 --> 00:20:02,835
+Direkt class'tan buna erişmiştik.
+
+156
+00:20:04,135 --> 00:20:06,775
+Aynı şekilde şurada yapabiliriz. Bir nesne oluşturduk.
+
+157
+00:20:07,988 --> 00:20:35,268
+nesnenin bir fonksiyonu olarak da erişebilir. Sonuçta bu kitap kılısının bir fonksiyonu o da. Dolayısıyla yine aynı şeyi yazdı. Bakın burada. Bundan dolayı. Estatik olduğu için tabii uyarı veriyor. Böyle bir şey yapmak şey değil ama göstermek amacıyla yani yapıldı bu. Sonra kitap kılısında get at diye bir fonksiyon var.
+
+158
+00:20:36,468 --> 00:20:59,868
+Ne yapıyor? Ad niteliğini döndürüyor. Onu çağırdım, ad niteliğini döndürdü. Neyin adını döndürdü? Kitap 1'in adını döndürdü. Kitap 1'in adı neymiş? Dönüşüm. Bakın ne yaptı? Dönüşümü buraya yazdı. Sonra kitap 1'in adını değiştirmek için set at fonksiyonunu kullanıyoruz.
+
+159
+00:21:01,332 --> 00:21:04,192
+Ne yaptık? Parametre olarak bir ad değeri gönderdik.
+
+160
+00:21:05,692 --> 00:21:10,552
+Sonra bu adı da, bu ad yani diz dedik. Biz niye dedik?
+
+161
+00:21:12,892 --> 00:21:16,392
+Buradaki ad değişkeni dediğimiz zaman ne yapacak?
+
+162
+00:21:16,872 --> 00:21:19,472
+Bu adı yani ad dediğimiz zaman bunu anlayacak.
+
+163
+00:21:19,472 --> 00:21:25,612
+Niye? Çünkü en yakın kümeli parantezlere en yakın olan buradaki ad.
+
+164
+00:21:26,483 --> 00:21:52,344
+Yani fonksiyonun içindeki ad. Ama biz diz dersek, bu class'ı temsil eder. Yani şu class'ın tamamını temsil eder. Biz ad ile bu class'ın adını kastetmiş oluyoruz aslında. Biz de ne yapıyoruz? Bu class'ın adını işte bu panometre olarak gönderdiğimiz ad değişkenindeki değere değiştir diyoruz. Böylelikle state'ini değiştirmiş oluyoruz yani.
+
+165
+00:21:53,619 --> 00:21:54,940
+State artık neymiş?
+
+166
+00:21:56,599 --> 00:21:58,099
+Dönüşüm, ikinci baskı.
+
+167
+00:22:00,480 --> 00:22:06,880
+Sonra tekrar çağırdığımızda get ad ile bu kitap birinin adını getir dediğimizde, bakın bu sefer ne yazdı?
+
+168
+00:22:08,359 --> 00:22:09,980
+Dönüşüm, ikinci baskı.
+
+169
+00:22:11,480 --> 00:22:14,160
+Sonra kitap biri yazdık, yazdıralım dedik.
+
+170
+00:22:14,359 --> 00:22:16,259
+Kitap birinin kendisini yani bir class olarak.
+
+171
+00:22:17,299 --> 00:22:18,579
+Bakın böyle bir değer çıktı.
+
+172
+00:22:20,980 --> 00:22:41,620
+Kitap 1 yazdıralım dediğimiz zaman böyle bir değer çıkmaz. Ne olur? İşte kitap 1 nedir? Uygulama 1.pkk2.kitap class, yani veritipi ya. Ve sonra da onun adresini yazdırırdı. Normalde yapması gereken bu.
+
+173
+00:22:45,844 --> 00:22:49,524
+veri türünü ve onun adresini yazdırdı.
+
+174
+00:22:53,299 --> 00:22:58,859
+Ama bunu yazdırmadı, şöyle bir yazı çıktı. Niye? Çünkü biz bunu override ettik.
+
+175
+00:22:59,660 --> 00:23:13,940
+override, toString'i. Yani her class'da, kendi oluşturduğunuz class'lar da olsa, sonuçta bir objecttir bu. Default olarak bir toString değeri var, bir toString fonksiyonu var.
+
+176
+00:23:13,940 --> 00:23:17,899
+Biz bu toString fonksiyonunu ne yaptık? override ettik.
+
+177
+00:23:19,124 --> 00:23:32,563
+O dediğim yazının yerine bizim belirlediğimiz bu yazı çıktı toString ile. Ama biz burada toString yazmadık. Burada. Yani kitap 1.toString yazmadık.
+
+178
+00:23:34,463 --> 00:23:41,923
+Ama sistem alt printlendiğimiz için otomatik olarak orada bir gizli toString var gibi düşünüyorum.
+
+179
+00:23:44,115 --> 00:23:52,795
+Yani bu öyle yapıyor. Sistem Outprint'ların öyle bir özelliği var. Otomatik olarak sanki şurada gizli bir toString varmış gibi düşünüyorum.
+
+180
+00:23:57,107 --> 00:24:08,267
+Sonra işte ne oldu? Burada override ettiğimiz fonksiyonu çağırdı. Normalde falto olarak tanımlanan fonksiyonu değil. Çünkü override ettik. Bakın overrideı da böyle yapıyoruz.
+
+181
+00:24:10,547 --> 00:24:22,307
+Override edeceğimiz fonksiyonu yazıyoruz. Aynı şekilde veri türünü. Sonra işte o fonksiyonu çağırdığımız zaman ne yapmasını istiyorsak.
+
+182
+00:24:23,796 --> 00:24:26,115
+Biz böyle bir yazı çıkarsın istemişiz.
+
+183
+00:24:30,996 --> 00:24:32,415
+Nasıl gidiyor? Anlaşılıyor mu?
+
+184
+00:24:36,019 --> 00:24:37,199
+Böyle anlatıyorum onu.
+
+185
+00:24:41,523 --> 00:24:44,163
+Böyle anlatıyorum ama anlaşılıyor mu?
+
+186
+00:24:45,523 --> 00:24:48,203
+Hocam ben override'ı tam olarak anlayamadım ya.
+
+187
+00:24:49,163 --> 00:24:49,763
+All right.
+
+188
+00:24:51,223 --> 00:24:51,943
+Normalde.
+
+189
+00:24:53,084 --> 00:24:55,023
+Bakın mesela şöyle göstereyim.
+
+190
+00:24:57,523 --> 00:24:58,023
+System.
+
+191
+00:25:05,715 --> 00:25:18,535
+Mesela, kitaplıktan kullanmadığımız bir nesne yapalım ve oray yapmadığımız bir nesne yapalım. Kitaplık, ktb, eşit, yerin, niv.
+
+192
+00:25:23,412 --> 00:25:24,971
+5 diye parametriyi girelim.
+
+193
+00:25:26,491 --> 00:25:27,971
+Mesela ben buradan
+
+194
+00:25:27,971 --> 00:25:31,291
+KTB'yi yazdıracağım.
+
+195
+00:25:35,291 --> 00:25:36,332
+Yazdırayım.
+
+196
+00:25:42,804 --> 00:25:44,804
+Mesela bakım şu çıktı gördünüz mü?
+
+197
+00:25:47,324 --> 00:25:50,223
+Bu çıktı. Burada gizli bir testing var.
+
+198
+00:25:51,243 --> 00:25:54,183
+Bakın, yani testing diye bir fonksiyon tanımlamadık ama
+
+199
+00:25:54,183 --> 00:25:59,963
+object olduğu için her tanımladığımız class'ın
+
+200
+00:25:59,963 --> 00:26:02,203
+testing diye bir fonksiyonu vardır.
+
+201
+00:26:03,923 --> 00:26:05,783
+Aynı şey çıkacak böyle yaptığım zaman.
+
+202
+00:26:10,163 --> 00:26:11,384
+Gördüğünüz gibi. Tamam.
+
+203
+00:26:12,663 --> 00:26:14,163
+Şimdi biz ne yapıyoruz biliyor musunuz?
+
+204
+00:26:14,443 --> 00:26:15,183
+Override ile
+
+205
+00:26:15,183 --> 00:26:21,083
+Bu toString fonksiyonunu çağırıyorum ya ben normalde.
+
+206
+00:26:22,063 --> 00:26:24,124
+Bu şeyle, şu olmasa da
+
+207
+00:26:24,124 --> 00:26:27,063
+Şu toString yazmasak da
+
+208
+00:26:27,063 --> 00:26:30,083
+Sistem outprint elini kullandığımız zaman otomatik olarak
+
+209
+00:26:30,083 --> 00:26:32,403
+Yani String'e dönüştürülüyor.
+
+210
+00:26:33,083 --> 00:26:35,243
+ToString fonksiyonunu çağırılıyor. Otomatik olarak.
+
+211
+00:26:36,531 --> 00:26:39,571
+Biz bunu yazmasak da ne olacak? O toString fonksiyonu çağırılacak.
+
+212
+00:26:40,951 --> 00:26:45,811
+Biz de kitaplık için değil ama kitap için o toString fonksiyonunu aldık.
+
+213
+00:26:46,611 --> 00:27:02,991
+Dedik ki eğer ki ben buradan bir kitap nesnemin toString'ini çağırırsam eğer ki default olarak tanımlanmış şu cevabı veren toString'i istemiyorum.
+
+214
+00:27:03,539 --> 00:27:07,159
+Ya ne istiyorum? Ben o to stringi değiştirmek istiyorum.
+
+215
+00:27:08,419 --> 00:27:11,839
+Overwrite yapıyoruz. Şöyle bir overwrite anahtar kelimesiyle.
+
+216
+00:27:12,599 --> 00:27:16,079
+Sonra o değiştirmek istediğimiz fonksiyonun adını yazıyoruz.
+
+217
+00:27:17,139 --> 00:27:18,480
+Yani o fonksiyonu yazıyoruz.
+
+218
+00:27:19,139 --> 00:27:23,319
+Sonra da o fonksiyon çağrıldığı zaman normalde şu cevabı veren
+
+219
+00:27:25,459 --> 00:27:28,379
+fonksiyon yerine o fonksiyon çağrıldığı zaman
+
+220
+00:27:29,395 --> 00:27:46,675
+Bu fonksiyonu, bizim yazdığımız bu fonksiyonu kullanmasını istiyoruz. Anlatabildim mi? Anladım hocam, teşekkür ederim. Emin misin? Evet evet, eminim. Tamam, anladıysan tamam.
+
+221
+00:27:54,740 --> 00:27:58,299
+Kitap 1'i yazdırdığımız zaman işte normalde şurada çıkıyor.
+
+222
+00:28:05,044 --> 00:28:11,844
+Public ile public statikin farkı ne? Public static function main function 2.0 çağırılabilme bizi mi sağlıyor?
+
+223
+00:28:13,364 --> 00:28:28,004
+Public ile public statikin farkı. Aslında ikisi farklı kavramlar. Yani private statik de olabilir, public statik de olabilir. Public de olabilir, statik olmayabilir yani. Private de olabilir, statik de olmayabilir. İkisi farklı kavramlar.
+
+224
+00:28:28,864 --> 00:28:31,524
+Public demek, ben, mesela bakın.
+
+225
+00:28:36,211 --> 00:28:40,572
+Kitapta getAt diye bir fonksiyon tanımlamışım. Public.
+
+226
+00:28:41,752 --> 00:28:46,752
+Main'de ben kitap diye bir nesne oluşturduğum zaman bu getAt'a bakın böyle nokta ile erişebiliyorum.
+
+227
+00:28:47,432 --> 00:28:50,472
+Nokta getAt demişim. Bu public sayesinde oluyor.
+
+228
+00:28:51,172 --> 00:28:52,632
+Ama mesela private ya bu.
+
+229
+00:28:54,172 --> 00:28:55,032
+Ada erişemem.
+
+230
+00:28:55,752 --> 00:28:56,832
+Yani şunu demek istiyorum.
+
+231
+00:28:57,572 --> 00:29:02,532
+Kitap bir nokta dediğim zaman burada at çıkmaz.
+
+232
+00:29:02,976 --> 00:29:30,476
+Çünkü o private. Private burada. Mesela burada çıkar. Nitekim çıktı da. Bakın mesela burada at var. Private olduğu için bu class'ın içinde bunu kullanabilirim. Ama farklı class'ların içinde o private değerleri kullanamam. O public private'ın mevzusu bu. Statik mevzusuna gelince de
+
+233
+00:29:31,412 --> 00:29:49,451
+Mesela biz, şurada mesela bir örnek var. Public static, ISVN nedir? Public static int getKitap sayısı. Mesela böyle bir fonksiyon tanımlamışız. Public demek, ben bu getKitap sayısı fonksiyonuna erişebilirim demek.
+
+234
+00:30:00,819 --> 00:30:06,000
+Kitap class'ının adıyla yani, yani class'ın adıyla, kitap class'ımız ya, büyük harfli olan.
+
+235
+00:30:07,879 --> 00:30:11,699
+Bununla get kitap sayısına erişebiliyorum.
+
+236
+00:30:12,279 --> 00:30:12,459
+Niye?
+
+237
+00:30:14,159 --> 00:30:27,500
+Class'tan erişmemin sebebi, statik olması, yani nesne oluşturmadan direkt class aracılığıyla erişebilmemin sebebi, statik olması, erişebilmemin sebebi, nesne oluşturup oluşturmamı fark etmeden, benim şu an bu main class'ın içinde.
+
+238
+00:30:28,180 --> 00:30:55,139
+O get kitap sayısını görebilmemin ya da get adı görebilmemin sebebi de public olması. Private olsa göremeyeceğim. Nitekim burada private kitap sayısı. Bunu göremiyorum ben main class'ın içinde. Ama private olduğu için burada görebiliyorum. Bunu niye statik yaptık? Çünkü şöyle ben eğer ki statik bir fonksiyon tanımlarsam.
+
+239
+00:30:56,243 --> 00:31:01,844
+Onun içerisinde göndereceğim değişken de nitelikte static olmalı. Stik olarak tanımlanmalı.
+
+240
+00:31:02,644 --> 00:31:03,124
+Mevzu bu.
+
+241
+00:31:04,703 --> 00:31:06,604
+Tamam, public static mevzusu anlaşıldı mı?
+
+242
+00:31:08,423 --> 00:31:09,303
+Manchatten bakayım.
+
+243
+00:31:13,907 --> 00:31:17,667
+Public static fonksiyonu main fonksiyonu içinde çağrılmıyor. Evet, aynen öyle.
+
+244
+00:31:23,284 --> 00:31:32,864
+Bu etten sonraki 34C45DCA bir adres belirtiyor. Yani bellekteki adresi belirtiyor.
+
+245
+00:31:39,028 --> 00:31:39,847
+Devam edebilirim.
+
+246
+00:31:54,963 --> 00:32:05,963
+Ne yaptık? Get adı söyledik. Kitap 1 dedik. Overwrite yaptığını söyledik. Sonra yeni kitap nesneleri oluşturduk. Yine aynı yapıcı fonksiyonu çağırdık. Yeni kitap nesneleri oluşturduk.
+
+247
+00:32:08,963 --> 00:32:17,963
+Yalnız chat'lik görmüyorum arkadaşlar. Hani böyle bir baktım da aklıma geldi öyle. O yüzden görmediğim için kusura bakmayın. Geç cevapladım yani.
+
+248
+00:32:22,036 --> 00:32:34,276
+Şimdi bir tane kitaplık nesnesi oluşturalım. Parametre olarak da 5 gönderelim. Bu 5 ne? Raf sayısı. Yani bir kitaplıkta 5 raf bulunabilir. Bu bunu belirtiyor.
+
+249
+00:32:36,496 --> 00:32:44,216
+Şimdi kitaplık diye bir veri yapımız var. Veri türümüz var. Classları böyle düşünebiliriz. Veri tipi diye.
+
+250
+00:32:46,579 --> 00:33:06,359
+Kitaplık veri tipinde kitaplık adına bir değişkenimiz var. Buna kitaplık yapıcı fonksiyonunu çağırarak bir alan açıyoruz bellekle New ile. Yapıcı fonksiyonunu çağırdık burada. Ona parametre olarak da 5'i gönderdik. Yani şimdi biz şuradayız.
+
+251
+00:33:12,756 --> 00:33:39,296
+Rough diye bir nitelik tanımlamışız. Rough dizisi yani Rough veri tipinden bir dizi. Private yani ben buna kitaplık klasının dışında hiçbir klasla erişemem. Public kitaplık klasının dışındaki her klasla erişebilirim. Kitaplık, integer n, n'i biz 5 olarak gönderdik az önce main klasından.
+
+252
+00:33:40,500 --> 00:33:44,659
+Sonra dedik ki diz raf, yani bu rafı kastediyoruz.
+
+253
+00:33:46,279 --> 00:33:52,579
+Eşittir near raf 5, yani 5 boyutlu bir raf klası dizisi oluşturalım.
+
+254
+00:33:52,659 --> 00:33:57,240
+Yani raf diye bizim burada bir klasımız var.
+
+255
+00:33:58,299 --> 00:34:01,099
+5 tane bir dizi oluşturalım bu klasla.
+
+256
+00:34:01,419 --> 00:34:04,500
+5 tane bir nesne dizisi oluşturalım bu klasla.
+
+257
+00:34:05,399 --> 00:34:06,339
+Şu an bunu yaptık.
+
+258
+00:34:07,796 --> 00:34:13,395
+Sonra, tabi dizi oluşturduk ama, dizideki her bir eleman aslında nalı gösteriyor.
+
+259
+00:34:16,563 --> 00:34:26,163
+O yüzden ne yapacağız? Her bir dizideki her bir elemana raf nesnesini atacağız. Yani new ile bir raf nesnesi atacağız.
+
+260
+00:34:28,163 --> 00:34:35,443
+Evet buradan bunu atadık. Böyle de 5 raflı bir kitaplık oluşturmuş olduk yani. Tamam mı?
+
+261
+00:34:36,344 --> 00:34:43,344
+Sonra kitaplık nesnesini kullanarak kitaplık kılasında tanımlanan
+
+262
+00:34:43,795 --> 00:34:46,955
+Kitap bekle fonksiyonunu çağırıyorum.
+
+263
+00:34:48,155 --> 00:34:52,915
+Çağırdım. Ona parametre olarak işte kitap 1'i ve 0'ı gönderdim.
+
+264
+00:34:55,975 --> 00:34:58,235
+Kitap 1'i ve 0'ı gönderdim.
+
+265
+00:34:58,935 --> 00:35:01,415
+0 dediğimiz raf numarası. Yani 0. raf.
+
+266
+00:35:02,015 --> 00:35:07,555
+Kitap dediğimiz de bizim yukarıda tanımlamış olduğumuz şu kitap 1. Yani dönüşüm adlı kitap.
+
+267
+00:35:13,460 --> 00:35:29,079
+Raf dizisinde, Raf no'yu verdik, bu şu demek, sıfırıncı Raf. Bu sıfırıncı Raf için kitap ekle fonksiyonunu çağır ve kitabı da ona gönder. Yani parametre olarak gönder. Şu anda bunu yaptık. Şimdi Raf class'ın içine gireceğiz.
+
+268
+00:35:31,260 --> 00:35:37,079
+Bir tane Raf'ımız var. Her bir Raf'ın kitapları var. Bakın burada private olarak tanımlamışız.
+
+269
+00:35:38,516 --> 00:36:04,816
+Kitap vizesi. Her bir rafın kitapları var. Biz burada new raf derken yapıcı fonksiyonuna gidiyoruz. Bu da şu demek oluyor yani. Her rafda 10 tane kitap bulunabilir diye bunu sabitlemişiz mesela. Her rafda 10 kitap bulunabilir. Tamam sonra kitap ekleye gelmiştik. Şunu atlamıştım yapıcı fonksiyonunda.
+
+270
+00:36:06,420 --> 00:36:25,420
+Sonra kitap ekleye geldik. Sıfırıncı rafın kitap ekle fonksiyonunu çağırdık. Kitap ekle. Kitabı da parametre olarak gönderdik. Kitap biri yani dönüşüm haklı kitabı. Ondan sonra bir tane i değişkeni oluşturduk.
+
+271
+00:36:25,420 --> 00:36:34,155
+i küçüktür kitaplar nokta length ise, yani kitaplar nokta length nedir? 10'dur. Çünkü kitaplar 10 boyutlu bir dizi.
+
+272
+00:36:35,668 --> 00:36:50,048
+Eğer 0 küçüktür 10'sa ve kitaplar 0 nal değilse, ki nal, yani evet biz kitaplar oluşturduk, kitaplık oluşturduk, kitaplıkta raflar vardır dedik.
+
+273
+00:36:50,168 --> 00:36:59,588
+Evet 10 tane kitap var olabilir her rafta dedik ama sonuçta raf boş yani kitaplık bomboş. Sadece yer ayırdık.
+
+274
+00:37:00,788 --> 00:37:03,648
+O yüzden naldır, o yüzden buraya girmeyecek. Ne yapacak?
+
+275
+00:37:05,028 --> 00:37:10,887
+I eşit değildir, kitaplar length ise, yani sıfır eşit değildir 10'sa ki değil, buraya girecek.
+
+276
+00:37:12,347 --> 00:37:22,467
+Kitaplar sıfıra, sıfırıncı rafın sıfırıncı kitabına, bu bizim dönüşüm adlı kitabı göndermiştik ya, onu ata diyeceğiz.
+
+277
+00:37:22,467 --> 00:37:27,467
+Böylelikle ne olacak? Kitaplığımızdaki beş raf var.
+
+278
+00:37:27,860 --> 00:37:32,900
+Sıfırıncı raffın ilk kitabı dönüşüm adlı kitap olmuş olacak.
+
+279
+00:37:34,800 --> 00:37:35,900
+Buraya kadar anlaşıldı mı?
+
+280
+00:37:40,916 --> 00:38:07,315
+Bakın buraya yaptık. Sıfırıncı rafa kitap 1'i, sıfırıncı rafa kitap 2'yi, sıfırıncı rafa kitap 3'ü, birinci rafa kitap 4'ü, birinci rafa kitap 5'i, ikinci rafa kitap 6'yı ekledik böylelikle. Artık bizde ne var? Kitaplığımız var. Evet. 5 tane 5 rafımız var. Sıfırıncı rafta 3 kitap, birinci rafta 2 kitap, ikinci rafta 1 kitap. Diğerlerinde yine kitap yok.
+
+281
+00:38:11,956 --> 00:38:12,516
+Sonra
+
+282
+00:38:23,059 --> 00:38:27,559
+Sonra işte bu düz yasını kullanmış buraya.
+
+283
+00:38:29,039 --> 00:38:31,260
+Kitaplık raf göster diye bir fonksiyon.
+
+284
+00:38:32,699 --> 00:38:36,720
+Yine kitap, bakın, kitaplık diye bir nesnem var. Kitaplık veri tipinde.
+
+285
+00:38:36,720 --> 00:38:45,659
+O kitaplık nesnem sayesinde kitaplık veri classında tanımladığım raf göster fonksiyonunu kullanabiliyorum.
+
+286
+00:38:47,539 --> 00:38:49,099
+Çünkü public.
+
+287
+00:38:50,356 --> 00:38:52,996
+West'lik değil. O yüzden Nesne'i oluşturmam gerekiyor.
+
+288
+00:38:55,376 --> 00:38:58,716
+Parametre olarak ne gönderdim? 0. Yani 0. rafı göster.
+
+289
+00:38:59,436 --> 00:39:09,536
+Evet, buradan 0'ı geldim. 0. rafın raf göster fonksiyonunu çalıştırıyorum. 0. raf için bu çalışacak şimdi.
+
+290
+00:39:10,356 --> 00:39:17,155
+Raf göster fonksiyonuna gittik. Sonuçta 10 tane kitaplar. Kitaplar length, her raf için aynı. 10.
+
+291
+00:39:17,940 --> 00:39:19,400
+10 tane kitabımız var.
+
+292
+00:39:21,579 --> 00:39:23,739
+İşte hepsini dolaşacak.
+
+293
+00:39:24,220 --> 00:39:26,659
+0'ı, 1'i, 2'yi yazdıracak.
+
+294
+00:39:27,140 --> 00:39:28,059
+Bakın burada ne yaptık?
+
+295
+00:39:29,579 --> 00:39:31,140
+0'ıncı rafa 3 kitap eklemiştik.
+
+296
+00:39:32,260 --> 00:39:35,320
+Dönüşüm, Söylerler, Introduction to Algoritmi.
+
+297
+00:39:36,900 --> 00:39:39,000
+Bu 3 kitabı ne yaptık? Ekledik.
+
+298
+00:39:39,279 --> 00:39:41,340
+Sonra geriye kalanlar nal.
+
+299
+00:39:41,519 --> 00:39:44,340
+Yani 3 tanesini ekledik, 7 tane nal var.
+
+300
+00:39:46,643 --> 00:39:47,384
+Tamam mı?
+
+301
+00:39:50,996 --> 00:39:52,615
+Sonra tekrar şu çizgiyi.
+
+302
+00:39:54,735 --> 00:39:57,796
+Şimdi bir de kitap, kitaplıkta kitap ara diye bir fonksiyonumuz var.
+
+303
+00:39:59,775 --> 00:40:01,355
+Clean code adında kitabı arayacağız.
+
+304
+00:40:05,556 --> 00:40:07,956
+Kitaplık classına giriyoruz.
+
+305
+00:40:08,956 --> 00:40:11,275
+Kitap araya geldik.
+
+306
+00:40:13,456 --> 00:40:14,336
+Raff.lang.
+
+307
+00:40:16,916 --> 00:40:17,655
+İşte n.
+
+308
+00:40:18,155 --> 00:40:19,476
+Ne yaptık? Bunları dolaştık.
+
+309
+00:40:19,735 --> 00:40:22,516
+Yani raff dediğimiz ne?
+
+310
+00:40:23,916 --> 00:40:25,956
+Şu raff dizimiz.
+
+311
+00:40:26,476 --> 00:40:28,076
+Kaç tane vardı? Beş tane vardı.
+
+312
+00:40:29,036 --> 00:40:30,576
+Yani kitaplığımızda beş raff var.
+
+313
+00:40:31,699 --> 00:40:55,879
+O yüzden her rafı dolaşacağımızı şu en üstteki forla her rafı dolaşacağız diyoruz. Sonra iyi mesela sıfır yaz. Sıfırıncı rafın kitaplarını getir. Sonra da o her kitap şurada bir kitap dizisi gelecek. Şu üç tane kitap vardı ya dönüşüm söyleler. Introduction to Algoritmiz. O üç kitap.
+
+314
+00:40:56,340 --> 00:41:01,340
+Tek tek dolaşmak için böyle kitap veri tipinde bir kitap değişkeni oluşturduk.
+
+315
+00:41:02,340 --> 00:41:11,340
+O kitaplar çünkü gelen dizi kitaplar veri tipinde olduğu için kitap veri tipinden bir değişken koymamız gerekiyor.
+
+316
+00:41:11,420 --> 00:41:13,740
+Mesela burada integer i dedik, eşittir 0 dedik.
+
+317
+00:41:14,063 --> 00:41:34,523
+İlk küçüktür n dedik. Niye? n'de 5, n'de integer. Integer, integer. Burada ne yapacağız? Kitapları tek tek dolaşacağız. Buraya gelen kitapsa, kitaplar listesi ise, dizisi ise o zaman kitap veritimindeki bir değişkenle bu kitapları dolaşabiliriz.
+
+318
+00:41:38,036 --> 00:42:04,456
+Ondan sonra işte kitap biliyorsunuz ilk üçü nal değil. Üç tane kitap ekledik sıfırıncı raf için. Ama sonrası nal. İlk üçü için buraya girecek. Kitabın get adını getirdi. İşte dönüşümü getirdi en başta. Sonra kitap adıyla aynı mı? Bizim kitap adımız neydi? Clean code. Aynı mı? Değil. Değilse buraya girmeyecek.
+
+319
+00:42:04,815 --> 00:42:30,835
+İkincisine bakacak. Söyleyeler aynı mı? Değil. Introduction to algorithms, algorithms, clean code mu? Değil. O zaman ne olacak? İkinci, bir sonraki yani eşittir bir için olan rafı dolaşacağız bu sefer. Oradan ne gelecek? Kitap 4 ve kitap 5 gelecek. Kitap 4, kitap 4 ve kitap 5 de ne var? Clean code ve the pragmatic programmer.
+
+320
+00:42:37,172 --> 00:43:03,092
+Ne oldu? Bir sonraki şeye geldik. İşte i eşittir bir için olan raftayız. Birinci raftayız. İlk kitap ne? Clean code. Kitap.getat clean code. Kitap adı ne? O da clean code. Eşit mi? Eşit. O zaman ne yap? Bunu yazdır. Neyi yazdır? Kitap artı iğne bir. Birinci rafta var. Yani kitap birinci rafta var. Bunu yazdır.
+
+321
+00:43:06,675 --> 00:43:10,976
+Sonra return kitap. Bu clean code kitabını geri döndürüyor.
+
+322
+00:43:13,516 --> 00:43:15,416
+Kitab arayı biz burada çağırmıştık.
+
+323
+00:43:17,615 --> 00:43:30,255
+Burada. Ne oldu? Buraya clean code adlı kitap geldi. Aynı yukarıda gösterdiğimiz gibi. Burada ne var? Aslında bir kitap veri tipinden. Kitap 4 var yani. Kitap 1 değil de bu sefer kitap 4 var.
+
+324
+00:43:30,856 --> 00:43:33,635
+Yine ne oldu? Kitaptaki to string override'ımıza girdik.
+
+325
+00:43:34,612 --> 00:43:35,352
+Bu çıktı.
+
+326
+00:43:41,492 --> 00:43:51,331
+Sonra ne yaptık? Kitaplıktan bu kitap dördü yani Clean Code adlı kitabı sileceğiz. Çünkü kitap dördümüz oydu. Kitaplıktaki kitapsıyla geliyoruz.
+
+327
+00:43:51,331 --> 00:43:54,331
+Burada.
+
+328
+00:44:00,884 --> 00:44:04,864
+Biri, yani raf numarasını ve silinecek olan kitabı vermiştir.
+
+329
+00:44:06,063 --> 00:44:09,204
+Tamam, raf numarasını ve silinecek olan kitabı verdik.
+
+330
+00:44:09,744 --> 00:44:12,023
+Raf numarası 1'di.
+
+331
+00:44:13,003 --> 00:44:16,083
+Birinci rafın kitap sil fonksiyonunu çağırdık.
+
+332
+00:44:16,764 --> 00:44:19,244
+Ve o kitabı bu kitap sil fonksiyonuna gönderdik.
+
+333
+00:44:21,304 --> 00:44:23,704
+Buradaki kitap sil fonksiyonuna geldik şimdi.
+
+334
+00:44:25,463 --> 00:44:28,284
+Ne yapacağız? İşte i diye bir değişken oluşturduk, sıfır.
+
+335
+00:44:28,755 --> 00:44:40,295
+i küçüktür kitaplar nokta length. Kitaplar nokta length kaç? 10. 0 küçük müdür ondan? Evet. Kitaplar 0, k'ya eşit değil mi?
+
+336
+00:44:45,108 --> 00:44:52,168
+Birinci kitabın şeyi aslında eşit. Değil mi? Çünkü birinci raftaki ilk kitap Clean Code kitabı.
+
+337
+00:44:53,488 --> 00:44:54,648
+Eşit olduğu için ne olacak?
+
+338
+00:44:56,008 --> 00:44:57,327
+Buraya girmeyecek dolayısıyla.
+
+339
+00:44:58,148 --> 00:44:59,668
+Çünkü burası false verdi.
+
+340
+00:45:01,668 --> 00:45:04,467
+Şurası false verdi. False verdiği için girmeyecek.
+
+341
+00:45:05,008 --> 00:45:05,768
+V bağlacı var.
+
+342
+00:45:08,628 --> 00:45:14,048
+VF'e bakacağız o zaman. I0, kitaplar length 10. I küçük müdür ondan? Evet, ondan küçüktür.
+
+343
+00:45:15,368 --> 00:45:25,408
+Yani demek ki bu kitapmış. Eğer buradan içeri girdiyse ve I'de kitaplar lengthten küçükse demek ki bu bizim silmek istediğimiz kitapmış.
+
+344
+00:45:25,508 --> 00:45:30,728
+O zaman o I'inci kitabı ne yap? Sil. Nasıl siliyoruz? Eşittir nal diyerek.
+
+345
+00:45:32,308 --> 00:45:35,948
+Sil derken yani şunu kastediyorum. Kitabı silmiyoruz aslında.
+
+346
+00:45:36,447 --> 00:45:37,927
+Sadece raftan kaldırıyoruz.
+
+347
+00:45:38,907 --> 00:45:40,907
+Hani bunu demek istiyorum.
+
+348
+00:45:41,007 --> 00:45:44,727
+Yoksa kitabı sil diyerek kitabı yırtmıyoruz.
+
+349
+00:45:45,187 --> 00:45:46,807
+Ne bileyim yakmıyoruz bir şey yapmıyoruz yani.
+
+350
+00:45:46,927 --> 00:45:47,987
+Kitap bir kenara koyuyoruz.
+
+351
+00:45:48,047 --> 00:45:49,467
+Raftan çıkardık bir kenara koyduk.
+
+352
+00:45:49,807 --> 00:45:50,247
+Bu bu demek.
+
+353
+00:45:56,980 --> 00:46:03,080
+Bunu yaptıktan sonra, işte burada da bitti artık. Buraya geri geliyoruz.
+
+354
+00:46:04,860 --> 00:46:09,400
+Ne yaptık? Kitabı sildik artık. Tekrar kitap, bıktan kitap ara diyoruz.
+
+355
+00:46:17,108 --> 00:46:45,104
+Tekrar kitaplıktan kitap ara diyoruz. Kitaplığa geldik. Kitap araya geldik. İşte rafları dolaşıyoruz. İşte sıfırıncı raftaki kitaplar geliyor. O kitapları dolaşıyoruz. Vesaire vesaire. Sonra çiftli böyle kitabı bulamayacak. Niye? Çünkü kitabı sildik oradan, kaldırdık. O Green Code adlı kitap yok artık. Dolayısıyla tüm rafları aradıktan sonra ne yapacak? Kitap yok diye bir...
+
+356
+00:46:45,103 --> 00:46:47,683
+Yazı yazdıracak ve return malı döndürecek.
+
+357
+00:46:55,923 --> 00:46:58,123
+Tamam. Sonra çizgi yazıyor.
+
+358
+00:46:58,443 --> 00:46:59,343
+Raf göster var.
+
+359
+00:47:00,023 --> 00:47:01,563
+Yani sıfırıncı rafı göster.
+
+360
+00:47:02,363 --> 00:47:03,563
+Kitaplığa geldik.
+
+361
+00:47:04,863 --> 00:47:06,523
+Raf göster fonksiyonu sıfır.
+
+362
+00:47:07,143 --> 00:47:11,203
+Raf sıfırla sıfırıncı rafı belirtiyoruz ve onun raf göster fonksiyonunu çağırıyoruz.
+
+363
+00:47:13,203 --> 00:47:14,423
+Ne yapıyoruz sonra?
+
+364
+00:47:14,523 --> 00:47:15,703
+İşte kitaplar langt on.
+
+365
+00:47:15,983 --> 00:47:18,123
+Tüm kitapları göstereceğiz.
+
+366
+00:47:19,103 --> 00:47:20,043
+Sıfırıncı rafta ne var?
+
+367
+00:47:20,123 --> 00:47:20,863
+Üç tane kitaplardı.
+
+368
+00:47:21,003 --> 00:47:21,623
+Gerisini aldı.
+
+369
+00:47:22,343 --> 00:47:23,183
+Yedi tanen al vardı.
+
+370
+00:47:23,827 --> 00:47:24,788
+Onu gösterdi.
+
+371
+00:47:33,427 --> 00:47:48,267
+Java göster, Java göster. Burada yani onu gösterdi. Kitaplar 0, 1, 2, 3 diye dolaştı. İlk üçünde kitap vardı. Diğerlerinde yoktu. O yüzden nal geldi. Sonra çizgiyi çizdik.
+
+372
+00:47:51,668 --> 00:48:18,008
+Kitap sil sırano. Kitap sil sırano ne demek? Hani biz burada işte kitap sil ile ne yaptık? Rafı verdik, sonra kitabı verdik. Burada da diyoruz ki hani sıfırıncı rafın sıfırıncı kitabını sil. Burada da bunu söylüyoruz. Kitaplıktan bakalım. Kitap sil sırano. İşte sıfırıncı raf sıfırıncı. Sıfırıncı rafın kitap sil sırano fonksiyonu çağır ve sıfırı onu parametre olarak gönder.
+
+373
+00:48:20,947 --> 00:48:42,047
+Kitap, sis, rano, 0. 0 kitaplar lenghten küçük müdür? Evet. O zaman, yani 3 olsaydı mesela 3 de kitaplar lenghten küçük müdür? Evet. O zaman ne yap? Bu kitaplar eni nala çevir. Burada 0 verdik. Yani 0. kitabı oradan sil. Eğer 3 olsaydı 3. kitabı silerdik.
+
+374
+00:48:45,940 --> 00:48:49,059
+Enya yetinde sildik. Sonra tekrar raf gösteri çağırdık.
+
+375
+00:48:50,880 --> 00:48:53,719
+Bu sefer raf göster fonksiyonunu çağırdığımızda bakın.
+
+376
+00:48:54,559 --> 00:48:56,920
+İlki nal oldu. Niye? Çünkü sildik.
+
+377
+00:48:57,239 --> 00:49:01,659
+Yani sıfırıncı kitabı sıfırıncı rafın sıfırıncı kitabını sildik.
+
+378
+00:49:03,039 --> 00:49:05,340
+1-2 hala duruyor. O yüzden bunlar duruyor.
+
+379
+00:49:05,860 --> 00:49:08,440
+Geri kalan 7'si zaten neydi? Naldı.
+
+380
+00:49:12,052 --> 00:49:33,992
+Sonra, işte burada ne yaptık? Kitap get kitap sayısı. Bu fonksiyonu çağırdık. Nereden? Kitaptan çağırdık. Niye? Kaç tane kitabımız oldu toplamda? Yani bunu aslında biraz yukarıda gösterebilirdim. Kaç tane kitabımız var? 1, 2, 3, 4, 5, 6 tane kitabımız var.
+
+381
+00:49:38,324 --> 00:49:40,443
+getKitap sayısı fonksiyonunu çağırdık.
+
+382
+00:49:42,364 --> 00:49:47,583
+Statik olarak yaptığımız için ne yapabiliyoruz? Bakın buradan kitap, getKitap sayısı.
+
+383
+00:49:48,983 --> 00:49:53,903
+Yani kitap class'ını direkt kullanarak, ila bir nesne üretmeden, direkt class'ı kullanarak bunu yapabildik.
+
+384
+00:49:55,023 --> 00:49:56,403
+Statik sayesinde.
+
+385
+00:50:00,851 --> 00:50:05,111
+Ondan sonra return kitap sayısı dedik. Bu kitap sayısı da static olmak zorunda.
+
+386
+00:50:06,731 --> 00:50:13,491
+Olmazsa ne olur? Hata verir. Mesela böyle kapattım. Ne olacak burada? Bakın hata verdi.
+
+387
+00:50:15,751 --> 00:50:19,831
+Ne diyor? Change kitap sayısı static. Değiştiriyor bunu.
+
+388
+00:50:21,991 --> 00:50:26,831
+Eğer burası static olmazsa ben böyle erişemem.
+
+389
+00:50:28,436 --> 00:50:30,695
+Niye? Bir nesne oluşturmam lazım.
+
+390
+00:50:30,896 --> 00:50:33,556
+Evet, bir nesne oluşturmam lazım.
+
+391
+00:50:34,976 --> 00:50:41,076
+O nesne, yani oluşturduk zaten kitap bir mesela, kitap bir nokta, yet kitap sayısı demek lazım.
+
+392
+00:50:48,980 --> 00:51:12,980
+Statik olmadığı için. Statik olduğu için ne yapıyoruz? Direkt sınıftan yaşayabiliyoruz. Evet arkadaşlar. Benden bu kadar. Anlamadığınız, yani anlatacağım yerler bu kadardı. Anlamadığınız bir yer varsa hemen sorun. Halledelim. Aklınıza hiç soru işareti kalmadan.
+
+393
+00:51:14,356 --> 00:51:26,836
+Bu derste bu işi bitirelim. Eğer olur da soru işareti olursa mail adresimi verdim. Zaten şeyde de yazıyor sitede. Oradan bakıp mail atabilirsiniz.
+
+394
+00:51:28,576 --> 00:51:31,076
+Hocam kodları paylaşacak mısınız bize?
+
+395
+00:51:32,115 --> 00:51:40,456
+Kodları size paylaşacak mıyız? O konuda bir bilgim yok. Diğerlerine sorayım. Yani diğer hocalarımıza soralım.
+
+396
+00:51:41,300 --> 00:51:42,860
+Paylaşım derse paylaşırım.
+
+397
+00:51:43,660 --> 00:51:44,180
+Tamamdır.
+
+398
+00:51:45,020 --> 00:51:48,180
+Hocam nereden paylaşacaksınız, paylaşırsanız?
+
+399
+00:51:48,880 --> 00:51:53,240
+Paylaşırsam, bir ihtimalle Avesist, yani duyuru atarım.
+
+400
+00:51:54,420 --> 00:51:55,480
+Tamamdır hocam.
+
+401
+00:51:55,840 --> 00:51:57,680
+Benim şeyim var ya sayfam.
+
+402
+00:52:00,000 --> 00:52:00,900
+Oradan duyuru atarım.
+
+403
+00:52:01,300 --> 00:52:07,400
+Hocam bu en başta UML diagramında bir tane karalamıştık, bir tanesini de açık bırakmıştık.
+
+404
+00:52:07,679 --> 00:52:07,940
+Burada?
+
+405
+00:52:08,559 --> 00:52:11,240
+Evet, onu koddaki karşılığını da gösterebilir misiniz?
+
+406
+00:52:11,760 --> 00:52:13,360
+Hani kodda nasıl bir farklılık oluyor?
+
+407
+00:52:15,059 --> 00:52:16,500
+Kodda şöyle oluyor.
+
+408
+00:52:18,079 --> 00:52:19,460
+Kitaplık, raf mesela.
+
+409
+00:52:21,400 --> 00:52:21,920
+Bak şimdi.
+
+410
+00:52:23,980 --> 00:52:25,699
+Ya da önce diğerini anlatayım.
+
+411
+00:52:25,940 --> 00:52:26,940
+Rafla kitaba bakalım.
+
+412
+00:52:29,427 --> 00:52:38,427
+Şimdi bak, ben burada kitaplarım oluşturdum. Benim 6 tane kitabım var. Doğru mu?
+
+413
+00:52:41,108 --> 00:52:43,588
+Raff'ta da ne yapıyor? Rafa bu kitapları yerleştiriyorum.
+
+414
+00:52:45,947 --> 00:52:50,628
+Diyelim ki ben bu raf mesnesini, yani şurada, bu raf mesnesini sildim.
+
+415
+00:52:51,548 --> 00:52:56,788
+Mesela sıfırıncı rafı sildim. Bu benim kitaplarımı yok eder mi?
+
+416
+00:52:58,164 --> 00:53:05,784
+Etmez değil mi? Çünkü ben burada tanımladım kitaplarımı. Rafa koydum, rafa sildim. Ne yaptım? Kitapları alt rafa koyarım yani koymak istersen.
+
+417
+00:53:07,684 --> 00:53:11,784
+Veyahut da hiçbir şey yapmasam da olur. İlla bir rafa koymak zorunda da değilim.
+
+418
+00:53:13,184 --> 00:53:21,044
+Yani kitaplarım duruyor ama nesne olarak. 6 tane kitabım yanımda duruyor. Sadece rafta değil. O rafı da kaldırdım, sildim.
+
+419
+00:53:22,284 --> 00:53:24,716
+Bu içi boş olması bu anlama geliyor. Yani...
+
+420
+00:53:24,947 --> 00:53:51,248
+Ben bir raf nesnesinde bir şey yaptığım zaman, zildiğim zaman, sildiğim zaman kitaplarıma bu zarar vermiyor. Evet bir ilişkisi var. Evet rafta kitaplar diye bir niteliğimiz var. Evet raf yani kitaplar rafa ait ama içi boş olunca ne oluyor? Rafı sildiğim zaman mesela kitaplara zarar gelmiyor. Kitaplar hala duruyor.
+
+421
+00:53:52,659 --> 00:54:16,679
+Lakin kitaplık mevzusuna geldiğimiz zaman, bak mesela kitaplığı silerse raflar gider. Burada kod karşılığını görelim. Burada raf diye bir şeyimiz var işte bizim raflarımız var. Burada yapıcı fonksiyonuna bakın nesneleri oluşturduk. Nesneleri burada oluşturduk. Yani anladınız mı?
+
+422
+00:54:17,108 --> 00:54:37,847
+Yapıcı fonksiyonda raf nesnesini oluşturdum ama bak ben bu raf nesnesinde yapıcı fonksiyonda kitaplarımı oluşturmadım. Bir tane kitap dizisi oluşturdum. Var olan kitaplarımı bu diziye atadım. Yani new kitap dedim ya burada 10 diye. Bir tane kitap dizisi oluştuyorum ama ben aslında kitapları burada oluşturmuştum. New kitap.
+
+423
+00:54:39,507 --> 00:54:42,847
+Aldım bu kitapları ben rafa koydum.
+
+424
+00:54:44,788 --> 00:55:10,507
+O yüzden rafı silersem kitaplara zarar gelmez. Lakin kitaplıkta bakın burada new'ı şeyde yaptım, yapıcı, kitaplığın yapıcı fonksiyonunda yaptım. Eğer ki ben kitaplığı silersem dolayısıyla raflar da silinir. Yani kitaplığın yok olması, kitaplığa bir şey olması rafları etkiliyor ama rafa bir şey olması, dolayısıyla kitaplığa bir şey olması da kitapları etkilemiyor.
+
+425
+00:55:13,780 --> 00:55:33,099
+Kapalı olması, bu ikisi o kadar güçlü bağlı ki biri birisiz olamaz gibi. Ama bu açık olması, evet bir bağlılığı var, bir bağlantısı var. Lakin eğer o olmasa buna bir şey olmaz. Raf olmasa kitaba bir şey olmaz. Anladın mı?
+
+426
+00:55:33,099 --> 00:55:34,280
+Tamam hocam.
+
+427
+00:55:35,411 --> 00:55:36,611
+Hocam, ben de bir şey sorabilir miyim?
+
+428
+00:55:36,611 --> 00:55:37,431
+Anladın mı?
+
+429
+00:55:37,851 --> 00:55:38,231
+Tabii ki.
+
+430
+00:55:39,131 --> 00:55:47,311
+Kısaca yani şey, sınıfın dışında oluşturuyorsak, etkilenmediği için içi boş bırakıyoruz gibi diyebilir miyiz? Sınıfın içinde oluşturuyorsak da.
+
+431
+00:55:47,311 --> 00:55:49,311
+Tabii, ama ilişkisi olacak.
+
+432
+00:55:50,431 --> 00:55:50,991
+Anladım.
+
+433
+00:55:50,991 --> 00:55:56,331
+İlişkisi olacak ama sınıfın, o yapıcı fonksiyonu var ya, orada oluşturmuyorsun.
+
+434
+00:55:57,556 --> 00:56:06,255
+O yüzden içi boş oluyor. Çünkü yapıcı fonksiyon oluşturursan o nesneyi, kitaplık nesnesini mesela sildiğim zaman yapıcı fonksiyon oluşturduğun için diğerleri de gidiyor.
+
+435
+00:56:06,856 --> 00:56:08,356
+Raflar gidiyor yani.
+
+436
+00:56:08,956 --> 00:56:10,356
+Tamamdır, teşekkür ederim.
+
+437
+00:56:10,356 --> 00:56:13,155
+Yani dediğin gibi anlaşılabilir tabii de.
+
+438
+00:56:14,556 --> 00:56:21,755
+Hocam, Raf kitaplıkla beraber oluştuğu için kitaplık class'ın içinde Raf klasına oluşturamaz mıydı?
+
+439
+00:56:22,255 --> 00:56:23,755
+Anlamadım.
+
+440
+00:56:23,856 --> 00:56:33,036
+Kitaplık class'ın içinde rough class'ını oluşturamaz mı?
+
+441
+00:56:34,576 --> 00:56:40,276
+Evet. Ha şunu diyorsun. Yani şurada bir class tanımlayalım. Şöyle.
+
+442
+00:56:40,796 --> 00:56:41,076
+Aynen.
+
+443
+00:56:42,456 --> 00:56:43,596
+Rough olsun.
+
+444
+00:56:44,376 --> 00:56:44,635
+Evet.
+
+445
+00:56:47,276 --> 00:56:49,556
+Yapılabilir tabii. Niye yapmaz?
+
+446
+00:56:51,635 --> 00:56:52,695
+Farkı ne olur peki?
+
+447
+00:56:54,256 --> 00:56:54,816
+Ne olur?
+
+448
+00:56:56,556 --> 00:56:58,976
+Yani şu sistemde çok bir farkı olmaz.
+
+449
+00:57:00,175 --> 00:57:01,195
+Ama bu sistemde yani.
+
+450
+00:57:01,536 --> 00:57:03,796
+Yani şu örneğimiz için çok bir farkı olmaz.
+
+451
+00:57:04,876 --> 00:57:06,436
+Çünkü zaten biz ne yaptık?
+
+452
+00:57:07,635 --> 00:57:08,356
+Burada kullandık.
+
+453
+00:57:08,436 --> 00:57:09,576
+Yani burada rafı kullandık.
+
+454
+00:57:10,155 --> 00:57:11,276
+Burada rafı kullanmadık mesela.
+
+455
+00:57:12,236 --> 00:57:14,416
+Gerçi öyle public class yapardık.
+
+456
+00:57:14,416 --> 00:57:16,756
+Kitaplık klasından yine bir class oluşturduk.
+
+457
+00:57:16,756 --> 00:57:17,316
+O da olurduk.
+
+458
+00:57:17,748 --> 00:57:30,487
+Yani çok bir farkı yok ama işte o programlama tasarımı artık. Programlayıcının şeyi, inisiyatifi, problem çözme yöntemi.
+
+459
+00:57:34,739 --> 00:57:41,739
+Hocam, bu UML diagramında kesik çizgiyle düz çizgi arasında ne fark var?
+
+460
+00:57:44,419 --> 00:57:48,959
+Bu kesik çizgi, bu buna bağlantılı demek.
+
+461
+00:57:51,759 --> 00:57:56,539
+Mesela biz test fonksiyonunda kitaplık classını kullandık.
+
+462
+00:57:57,659 --> 00:57:59,359
+Aynı şekilde kitap classını da kullandık.
+
+463
+00:58:00,820 --> 00:58:28,179
+Böyle bir bağımlılığı var ama hani mesela şeydeki gibi değil. Hani işte kitaplığın içinde raf oluşturduk da işte kitaplığın rafları vardır. Değil yani böyle değil. Nedir hani teste kitaplıktan bir nesne oluşturuyoruz. Zaten bu kitaplıkta bir nesne oluşturduğumuz zaman raftan da nesne oluşmuş oluyor. E sonra kitapları alıyoruz. Bu kitaplıkla ilişkisi yani raflara koyuyoruz. Kitaplığa yerleştiriyoruz. Bu kesiklikle çizgilerin anlamı bu. Hani
+
+464
+00:58:28,820 --> 00:58:45,780
+Mesela rafın kitaplıkta olması gibi kitaplıkta testte falan değil yani. Test diye bir classımız var. Orada kitaplık diye bir nesnemiz gibi bir şey değil yani. Sadece bu iki class ne yapıyoruz? Kullanıyoruz. Böyle bir bağımlılığı var. Bu kesikli çizgiler bunu ifade ediyor.
+
+465
+00:58:45,780 --> 00:58:55,360
+Şu çizgilerde anlattığım gibi aitlik bildiriyor. Yani şu çizgiler ve şu dörtgen aitlik bildiriyor. Diyor ki,
+
+466
+00:58:55,699 --> 00:59:08,979
+Raf kitaplığa aittir, kitap rafa aittir. Ancak buranın içi boş olduğu için kitabı rafa yerleştirdin, rafa zarar verdin, kitaba bir şey olmaz.
+
+467
+00:59:09,379 --> 00:59:15,479
+Bunun içi dolu olduğu için kitaplığın rafları var, lakin kitaplığa zarar verirsen raf da zarar görür.
+
+468
+00:59:16,799 --> 00:59:20,259
+Buna güçlü bağlantı, zayıf bağlantı deniliyor.
+
+469
+00:59:21,427 --> 00:59:25,728
+Buna aggregation denir, buna da composition mi denir? Tamam, bir şeyini hatırlayamadım.
+
+470
+00:59:27,427 --> 00:59:32,827
+O yani. Bu siyah olan güçlü bağlantı, beyaz olan zayıf bağlantı.
+
+471
+00:59:38,003 --> 00:59:38,963
+Teşekkürler hocam.
+
+472
+00:59:40,583 --> 00:59:41,563
+Başka sorusu olan?
+
+473
+00:59:51,603 --> 00:59:52,143
+Konek, bak.
+
+474
+00:59:56,788 --> 01:00:00,248
+Herhalde yok.
+
+475
+01:00:06,483 --> 01:00:08,983
+Tamam o zaman. Allah'a emanet olun.
+
+476
+01:00:15,476 --> 01:00:20,536
+İyi akşamlar. Eğer bir sorunuz olursa muhakkak bana yazın. Cevaplarım yani.
+
+477
+01:00:21,976 --> 01:00:23,256
+Tabi bile bildiğim kadarıyla.
+
+478
+01:00:29,268 --> 01:00:36,807
+A ve sizde adresin bir şey de var. Bölümün sayfasında var. Oradan bakabilirsin.
+
+479
+01:00:39,988 --> 01:00:51,888
+[öğrenci] bölümün sayfasında var. Akademik personel yazıyor. Üç ana bilim dalı var. Orada öğretim görevlileri yer alıyor. Oradan girebilirsin yani.
+
+480
+01:00:58,771 --> 01:01:01,371
+Tamam. Hadi Allah'a emanet olun.
+
+481
+01:01:04,192 --> 01:01:05,571
+Aylı akşamlar.

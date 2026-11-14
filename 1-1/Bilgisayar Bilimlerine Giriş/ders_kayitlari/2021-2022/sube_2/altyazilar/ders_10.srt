@@ -1,0 +1,2223 @@
+1
+00:01:52,915 --> 00:01:54,635
+Sevgi Hocam, günaydın, hoş geldin.
+
+2
+00:01:55,695 --> 00:01:56,695
+Günaydın Hocam.
+
+3
+00:01:57,256 --> 00:01:59,475
+Şimdi hemen seni host yaptım.
+
+4
+00:02:00,396 --> 00:02:00,995
+Tamam.
+
+5
+00:02:01,495 --> 00:02:02,355
+Oldun değil mi?
+
+6
+00:02:04,455 --> 00:02:07,795
+Evet, şu anda sen hostsun. İyi dersler.
+
+7
+00:02:08,596 --> 00:02:09,415
+Teşekkür ederim.
+
+8
+00:02:09,436 --> 00:02:14,955
+Kolay gelsin. Dediğimiz gibi on buçuk gibi anlatmaya başlarız yine. Sen notunu paylaşırsın.
+
+9
+00:02:15,555 --> 00:02:16,515
+Tamam.
+
+10
+00:02:17,515 --> 00:02:19,536
+Hadi görüşürüz. İyi dersler.
+
+11
+00:30:12,692 --> 00:30:14,692
+Selamlar arkadaşlar, günaydın.
+
+12
+00:30:18,612 --> 00:30:19,852
+Günaydın içi.
+
+13
+00:30:23,700 --> 00:30:25,700
+Şunu da kandırabilirim.
+
+14
+00:30:30,259 --> 00:30:37,940
+Çok az kişiyiz. Acaba kayıttan mı izlemeyi tercih ediyorlar yoksa linki almayanlar mı var?
+
+15
+00:30:40,099 --> 00:30:42,259
+WhatsApp grubunuz var da değil mi?
+
+16
+00:30:48,147 --> 00:30:53,187
+Evet hocam var ama çoğunluk on buçukta gelmeyi tercih ediyor genelde. Geçen hafta bayağı kişiydik.
+
+17
+00:30:54,707 --> 00:30:57,247
+Anladım. Son dakika gelecekler. Peki.
+
+18
+00:30:59,327 --> 00:31:01,507
+Biz sizinle ilk defa tanışıyoruz.
+
+19
+00:31:03,571 --> 00:31:17,931
+Ben Sevgi Turgut, zaten görüyorsunuz ismimi de. Sizinle Bilgisayar Bilimleri derslerinde, yani genellikle Temel C programlama derslerinde beraber olacağız. Yapısal programlama, algoritma, analizleri, yapıları gibi.
+
+20
+00:31:19,251 --> 00:31:28,331
+Tabii bizim uygulama yapmamız için dönemin biraz geçmesi sizin bir şeyler öğrenmeniz gerekiyordu. O yüzden geç tanışmış olduk ama.
+
+21
+00:31:29,299 --> 00:31:32,659
+Yine söyleyeyim, hoş geldiniz yeni kazananlar.
+
+22
+00:31:36,756 --> 00:31:39,636
+Hazırlıktan direk geçenlerde olabilir.
+
+23
+00:32:21,587 --> 00:32:25,907
+Bugün birkaç akış diyagramı, yen flowchart sorusu çözeceğiz birlikte.
+
+24
+00:32:25,907 --> 00:32:34,147
+Sanırım sadece bir ders gördünüz değil mi? Akış diyagramlarında çok ilerlemediniz diyebiliyorum.
+
+25
+00:32:40,051 --> 00:32:43,051
+Şimdi beraber birkaç alıştırma yapmış oluruz.
+
+26
+00:33:21,011 --> 00:33:26,412
+BBG ödev notlarını öğrendiniz değil mi? Ava sistelerimizde duyurmuştuk.
+
+27
+00:33:26,412 --> 00:33:30,412
+Evet hocam.
+
+28
+00:34:48,148 --> 00:34:57,448
+Saat on otuz oldu. Herkes yavaşça katılır artık herhalde. Ben yarım saatlik bir süre verdik, daha fazla beklemeyeceğim.
+
+29
+00:34:57,448 --> 00:35:01,347
+Şöyle artık başlayalım biz.
+
+30
+00:35:03,539 --> 00:35:16,019
+Arkadaşlar ilk soruyu şöyle bir bakalım. Size her zaman olduğu gibi önce biraz süre vereceğim. Kendiniz bir denemeniz için ve çözerken daha iyi anlamanız.
+
+31
+00:35:16,467 --> 00:35:25,947
+hatalarınızı görmeniz veya öneride bulunabilmeniz için. Kenarları verilen bir üçgenin tipini bulan algoritmanın akış diyagramını çiziniz.
+
+32
+00:35:25,947 --> 00:35:35,867
+İlk sorumuz. Yani kenar şimdi açılarda geniş açı, dik açı, dar açı şeklinde sınıflandırdığımız gibi ne yapıyorduk?
+
+33
+00:35:35,867 --> 00:35:43,347
+Kenarlarda da basit olarak ikiz kenar, çeşit kenar ve eş kenar olarak üç tane çeşit yani üç farklı
+
+34
+00:35:43,891 --> 00:36:01,867
+Üçgenle sahibiz. Bunu üç adet kenar girilecek kullanıcıda siz de tipini ekrana yazdıran bir akış diyagramı çizeceksiniz. Size birkaç dakika vereceğim, sonra beraber bakalım.
+
+35
+00:37:50,356 --> 00:37:51,636
+Bitiren var mı?
+
+36
+00:38:35,059 --> 00:38:37,059
+Şimdi yavaşça başlayalım arkadaşlar.
+
+37
+00:38:41,012 --> 00:39:07,012
+Sizin notasyonlarınıza en çok benzeyen, zaten bütün notasyonlar akış diyagramlarında benziyor ama küçük farklılıklar olabiliyor. O nedenle bize en fazla benzeyen Drawbio uygulamasını kullanıyorum. Siz de ödevlerinizde bunu kullanabilirsiniz. Küçük farklılıklar var bizim yaptıklarımızdan. Şimdi başlayalım. Bakın Start şöyle akış diyagramından. Direkt başlıyorum.
+
+38
+00:39:07,987 --> 00:39:35,187
+Önce bir başlangıçımızı aldım. Şimdi kullanıcıya önce bir mesaj vermem gerekiyor. Ne gireceğini anlaması için veya nasıl gireceğini anlaması için. Şöyle, biz de biliyorsunuz şu girdi olan kısım yani tam tersi şöyle bir şekil. Siz ona sınavlarda dikkat edersiniz. Biz şimdi böyle yapalım. Birisi bir şey mi diyecekti?
+
+39
+00:39:40,052 --> 00:40:00,000
+Şimdi kullanıcıya kenarları yeriniz şeklinde bir mesaj vermemiz yeterli. Şöyle alıyorum. Daha sonra şimdi geleceğiz. Şöyle bir üçgenimiz var. Şurada şekiller olması lazım. Şunu alalım.
+
+40
+00:40:03,251 --> 00:40:14,251
+Yazımın kusuruna bakmayacaksınız artık. Çünkü kalemim yok. Mouse'a yapmak zorundayım. Şöyle ABC olsun.
+
+41
+00:40:14,251 --> 00:40:27,251
+ABC kenarlarınız olsun. Önce bunları kullanıcının girmesini isteyelim. Nasıldı? Bu sol ucu böyle kesik bir dikdörtgene benzer.
+
+42
+00:40:29,748 --> 00:40:35,748
+Ve kullanıcı şuradan bazen böyle yapıyor tekste alalım.
+
+43
+00:40:35,748 --> 00:40:41,579
+3 tane değişken ABC isimli değişkenlere girmesini istiyorum.
+
+44
+00:40:42,675 --> 00:41:07,675
+Ardından şimdi, benim neyi kontrol etmem lazım? İkiz kenar, eş kenar olabilir ve çeşit kenar olabilir. O zaman neye bakacağım? Kenarlarımın birbirlerine eşit olup olmadığını kontrol etmem lazım. O zaman A ile B'den başlayalım. Şu ikisinden başlıyorum. Ne yapacağım? Bir if bloğu koymam gerekiyor. If bloğu nasıl bir şeydi? Şöyle...
+
+45
+00:41:09,172 --> 00:41:27,148
+Ne yapıyorduk? Bunun bir True, bir de False Call vardı. Değil mi? Bunları da unutmamak için en başta yapıyorum. Şöyle True ve False Call'larını yazıyorum unutmadan.
+
+46
+00:41:33,396 --> 00:41:41,596
+Bunları belirtmemiz gerekiyor biliyorsunuz ki. İlk soru olduğu için biraz yavaş gidiyorum. Yine eğer hızlanmamı isterseniz hızlanırım ama
+
+47
+00:41:41,596 --> 00:41:50,516
+biraz şey yapalım. Şimdi A ve B birbirine eşit mi diye soruyorum. Eğer
+
+48
+00:41:51,411 --> 00:42:15,931
+True call'ına şöyle bir bakalım. Eğer A ve B birbirine eşitse, o zaman A ve B'den herhangi birini neyle kıyaslamam gerekecek? C ile kıyaslamam gerekecek. Aynı if bloğunu kopyalayayım. Şöyle alıyorum. A eşittir. C şeklinde bir soralım. A, C'ye eşit mi?
+
+49
+00:42:17,364 --> 00:42:43,923
+Şimdi bakalım, eğer AC'ye eşitse o zaman ne oldu? İkiz kenar. Eğer eşit değilse şöyle yapalım. O zaman ne olacak bu üçgen? Pardon, yanlış söyledim. Hiç de uyarmıyorsunuz. Eğer eşitse eşkenar, değilse ikiz kenar olacak. Ekranda direkt şu mesajları verebileceğiz.
+
+50
+00:42:45,811 --> 00:42:47,051
+İki şeyden uluçken.
+
+51
+00:43:01,715 --> 00:43:07,715
+Şimdi bunları şu ifleri şöyle çekelim.
+
+52
+00:43:12,244 --> 00:43:22,244
+Bunları birleştiriyorum. Şimdi burası böyle kalsın. Şimdi bir defa oscomuna bakmamız lazım. En başa dönelim.
+
+53
+00:43:26,739 --> 00:43:45,859
+Birine eşit mi diye sorduk. Eşit çıkmadı. Diyelim ki false column'a gitmemiz gerekecek. Şimdi bir de ya A ile C'yi ya da B ile C'yi karşılaştırmam lazım. A ile C'yi karşılaştırayım. Şurayı yine kopyalayacağım. Şunu silelim.
+
+54
+00:44:08,211 --> 00:44:14,155
+A ve C birbirini eşit mi? Eğer eşitse
+
+55
+00:44:17,172 --> 00:44:36,371
+Şimdi, A ve B birbirine eşit mi diye sorduk, eşit değil. False'a geldik, A ve C birbirine eşit mi diye sorduk, eşit. O zaman bu üçgenimiz nasıl bir üçgen oldu? Arkadaşlar dinlediğinizden emin olum.
+
+56
+00:44:36,371 --> 00:44:37,572
+X kenar.
+
+57
+00:44:37,572 --> 00:44:43,371
+Ara sıra ses verin. Teşekkürler.
+
+58
+00:44:44,148 --> 00:44:48,468
+Şimdi eğer falseconuna gidersem neyi kontrol etmem lazım arkadaşlar?
+
+59
+00:44:48,468 --> 00:44:52,708
+B ve C'nin değişiklik olmadığını.
+
+60
+00:44:57,972 --> 00:44:59,652
+Şöyle koyuyorum.
+
+61
+00:45:04,884 --> 00:45:19,384
+Bc'ye bakıyoruz. Bu ikisi de şöyle geri alalım. A ve C de eşit değilmiş. O zaman B ve C'ye bakıyoruz. Eğer bu ikisi eşitse, True call'ında ne mesajı vermem gerekiyor?
+
+62
+00:45:19,384 --> 00:45:21,384
+İç [öğrenci].
+
+63
+00:45:21,384 --> 00:45:23,384
+[öğrenci].
+
+64
+00:45:23,384 --> 00:45:25,384
+Yok, [öğrenci].
+
+65
+00:45:25,715 --> 00:45:51,016
+A ve B'nin eşit olmadığını biliyoruz. O yüzden eş kenarı zaten kaybettik artık bu false call'unda. O zaman A ve B, en baştan bakalım. A ve B birbirine eşit mi? Değil false call'una geldik. A ve C birbirine eşit mi? Değil false call'una geldik. B ve C birbirine eşit mi? Değil false call'undayız. Artık ne mesajı vermemiz lazım? Çeşit kenar üç mü? Evet.
+
+66
+00:46:00,628 --> 00:46:08,628
+Şimdi ne yapacağız? Şunları tabi Drobayoda biraz zor oluyor birleştirmek. Kolları birleştirmemiz lazım.
+
+67
+00:46:25,268 --> 00:46:30,268
+İlk örnek olduğu için böyle uğraşacağım arkadaşlar. Belki diğerlerinde uğraşmaz.
+
+68
+00:46:30,268 --> 00:46:35,211
+Sonra şu ikisini birleştireceğiz.
+
+69
+00:46:40,083 --> 00:46:45,203
+Bu soru çok basitti değil mi arkadaşlar? Bu soruda zorlanan var mı?
+
+70
+00:46:51,860 --> 00:47:04,260
+Bir saniye bakacağım, o chatte yazıyormuşsunuz, ben görmüyorum. Bir saniye şu, stobu koyabilirsem geliyorum. Şuradan stobu alalım.
+
+71
+00:47:11,923 --> 00:47:13,923
+Şimdi ben bir chat'e bakıyorum.
+
+72
+00:47:16,923 --> 00:47:30,923
+Şimdi arkadaşlar, [öğrenci] arkadaşınız da OR kullanmış. Ben şöyle OR AND kavramlarına yani o operasyonları öğrenip öğrenmediğinizden emin olamadım.
+
+73
+00:47:30,923 --> 00:47:36,923
+Yoksa tek bir IF içerisinde de OR ve AND kullanarak sorabilirdiniz.
+
+74
+00:47:38,708 --> 00:47:45,427
+Tabii ki yapabilirsiniz or, and kullanabilirsiniz. Ben onu işe pişemediğinizden emin olamadım.
+
+75
+00:47:50,931 --> 00:47:56,051
+Evet şöyle, evet tabii ki eğer biz sen yani
+
+76
+00:47:56,371 --> 00:48:24,371
+Bir kullanıcı modülü oluşturuyor olsaydın [öğrenci], bunu varsayamayacaktın. Tabii ki her hataya karşı dayanıklı bir akış diyagramı, onunla dayanıklı program algoritma oluşturman gerekecekti. Ama biz şimdi hani amacımız böyle hani kullanıcı modülünden çok size şuradaki akışı anlatabilmek, şu algoritma mantığını anlatabilmek olduğu için bu tür şeyler varsayıyoruz. Tabii ki önce
+
+77
+00:48:24,371 --> 00:48:32,051
+Önce bu üçgen sağlanıyor mu diye bir bakmamız gerekirdi veya farklı hatalar aklınıza geliyorsa önce onları bir kontrol etmek gerekirdi.
+
+78
+00:48:35,731 --> 00:48:43,532
+[öğrenci] görememiş notlar doğru işlemini. Onu BBG dersine göreceğinize eminim. İleride de göreceksinizdir.
+
+79
+00:48:47,155 --> 00:48:49,155
+C'deki ile aynı.
+
+80
+00:48:56,755 --> 00:49:04,755
+Şöyle AND yapıyorsunuz, OR yapıyorsunuz. Bu tür şeylerin hepsini göreceksiniz.
+
+81
+00:49:05,331 --> 00:49:29,331
+işlemleri. Dik Üçgende geniş açı var, dar açı var, bir de dik açı var. İşte bir şey yapabilirsiniz, 90 dereceden küçük mü diye sorgulayabilirsiniz eşittir'i sorgulamak için veya onun basit bir formülü vardı. Hani eğer Dik Üçgende zaten A kare eşittir, B kare artı C kare şeklinde, onu da kullanabilirsiniz.
+
+82
+00:49:29,876 --> 00:49:33,276
+Onu da siz çizebilirsiniz, akış diyagramını.
+
+83
+00:49:35,276 --> 00:49:36,276
+Tamam mı [öğrenci]'cığım?
+
+84
+00:49:41,907 --> 00:49:43,447
+Diyakala mutma ma.
+
+85
+00:49:47,027 --> 00:49:59,907
+Bu soruyla ilgili söylemek istediğiniz bir şey var mı başka? Şöyle şuraya ben bir yazayım bu sayfadan devam edelim.
+
+86
+00:50:08,019 --> 00:50:32,059
+Şimdi diğer soruya geçiyorum. Burada zaten çözümü var. Biz onu yaptık. Şimdi şöyle bir sorumuz var arkadaşlar. Bir kütüphanede kitapların geç teslim edilmesi halinde şöyle bir tarife uygulanıyor. İlk 10 gün için, her bir gün için ama ilk 10 günde diyelim 4 gün gecikti, her bir gün için 40 kuruş ceza.
+
+87
+00:50:32,692 --> 00:50:40,011
+Onbir ile yirmi gün arasında altmış kuruş ceza, yirmi günden fazlaysa seksen kuruş ceza.
+
+88
+00:50:40,011 --> 00:50:43,851
+Kullanıcıdan bir geciken gün sayısı almanızı
+
+89
+00:50:44,128 --> 00:51:08,128
+ve ardından ceza miktarını hesaplamanızı istiyoruz. Yani şöyle düşünün, diyelim ki yirmi üç günlük bir gecikme oldu. En sayısı kullanıcı tarafından yirmi üç girildi. O zaman ilk on gün için kırk kuruş, diğer şimdi şurada şey vardı galiba ya da şurada göstereyim hemen.
+
+90
+00:51:08,692 --> 00:51:32,291
+Şöyle inelim. Şimdi yirmi üç günümüz var. İlki on günü için kırk kuruş. Kırk kuruşu da şöyle kuruş şeklinde olduğu için sıfır nokta dört ile ifade edebilirsiniz. İlk on gün için sıfır nokta dört. Şimdi geriye kaç gün kalacak? On üç gün. Değil mi? On bir ile yirmi gün arası demişti.
+
+91
+00:51:33,331 --> 00:51:53,331
+Demek ki yirmi günden büyük diye anlıyorum. Çünkü ne oldu? On üç gün var daha elimde. Diğer bir on gün içinde altmış kuruş ve sona kalan üç gün içinde seksen kuruşluk, harika yazıyorum. Seksen kuruşluk bir ceza uygulamanız gerekecek.
+
+92
+00:51:57,331 --> 00:51:59,331
+Birisi ceza dinliyor.
+
+93
+00:52:01,652 --> 00:52:12,912
+Kılıncı 10'dan az gün de girebilir, 3 de girebilir, 15 de girebilir, 25 de girebilir. Sen söyle bakalım [öğrenci].
+
+94
+00:52:16,884 --> 00:52:18,204
+Şöyle açayım.
+
+95
+00:52:18,204 --> 00:52:21,443
+Düzelt bakalım.
+
+96
+00:52:29,844 --> 00:52:37,123
+Şimdi yirmi üç günümüz var. Bunun ilk on günü kırk kuruş.
+
+97
+00:52:37,123 --> 00:52:55,204
+Şimdi çözümü yapmış olacağım ama. Ha yok yok. Yok [öğrenci]. Bu şekilde. Direk seksen kuruş değil. İlk on gün kırk kuruş. Daha sonra altmış kuruş.
+
+98
+00:52:57,331 --> 00:53:04,331
+Kalan 20 günden fazla günler için 80 kuruş 0.8. Soru bu şekilde.
+
+99
+00:53:09,012 --> 00:53:24,372
+Yok, estağfurullah. Soruyu öyle anlayabilirsin. Onun için buradayım zaten. Belki onun için hani zaten şöyle bir örnek verilmesi otur yanlış ama eğer sınavda bu soru olsaydı size açıklayacak birisi olmasaydı böyle bir örnek verilirdi zaten.
+
+100
+00:53:28,851 --> 00:53:33,091
+İki videom için de size birkaç dakika vereyim. Deneyin bakalım.
+
+101
+00:55:21,235 --> 00:55:24,475
+Ata bu soru için onu kontrol etmene gerek yok.
+
+102
+00:55:29,139 --> 00:55:31,139
+Yani benim için şu an gerek yok.
+
+103
+00:55:36,692 --> 00:55:54,931
+Aslında hani tabii ki az önce söylediğim gibi bu tür hataları kontrol etmeniz lazım ama hani basit bir örnek soru için bu hataların hepsine bakarsak içinden çıkmak biraz zor oluyor. O nedenle hani bu şekilde varsayıyoruz bu tür örneklerde.
+
+104
+00:56:01,523 --> 00:56:03,463
+İlisi konuşuyor mu?
+
+105
+00:56:37,204 --> 00:56:41,684
+[öğrenci] mikrofonun açık bu arada haberin var mı bilmiyorum ama.
+
+106
+00:56:58,420 --> 00:57:00,420
+yapan var mı arkadaşlar?
+
+107
+00:57:12,628 --> 00:57:13,828
+Ben yaptım galiba.
+
+108
+00:57:14,828 --> 00:57:22,248
+Tamam. Şimdi ben şunu hallederken neleri kontrol ettiğini bize özetleyebilir misin?
+
+109
+00:57:25,248 --> 00:57:30,008
+Hocam, EN'i aldıktan sonra N'den 20'yi çıkardım.
+
+110
+00:57:31,488 --> 00:57:33,168
+Ben değişken atadım.
+
+111
+00:57:35,008 --> 00:57:39,928
+Bu hani en son 80 kuruş cezağının miktarını hesaplamak için.
+
+112
+00:57:40,403 --> 00:58:07,844
+Hıhı. Sonra N'den C'yi çıkardım. Sonra onu çıkardım. Ortaya çıkanı da yine bir değişken atadım. O da 60 kuruşluk ceza için kullandım. Hıhı. Sonra da N'den hem B'yi hem C'yi çıkardım. Onu da en düşük ceza miktarını hesaplamak için kullandım. Peki burada hiç F kullandın mı? Hayır.
+
+113
+00:58:08,563 --> 00:58:21,203
+Peki eğer kullanıcı diyelim beş gün gecikme girdi, beş gün sen ilk girdiği alır almaz yirmi çıkarıyorsun. Beşten yirmi çıkarttım, eksi on beş.
+
+114
+00:58:21,203 --> 00:58:24,224
+Aa evet.
+
+115
+00:58:24,224 --> 00:58:28,123
+O zaman neye ihtiyacımız var?
+
+116
+00:58:28,123 --> 00:58:35,963
+If bloklarına yani bir şeyler sorgulamaya ihtiyacımız var değil mi? Ne sorgulayacağız arkadaşlar?
+
+117
+00:58:38,804 --> 00:58:41,304
+Evet [öğrenci], sonra ne yaptı?
+
+118
+00:58:44,884 --> 00:58:46,423
+Sonra, hı hı.
+
+119
+00:58:47,703 --> 00:58:48,463
+Evet.
+
+120
+00:59:01,844 --> 00:59:11,443
+Hocam, aslında ilk cevabı veren arkadaşınkinde direkt sıfırdan bir if olunca o şekilde bir if koysak cevap doğru olmaz mı tamamıyla?
+
+121
+00:59:12,467 --> 00:59:37,147
+Şimdi sorgulamamız lazım. Hani önce 10'dan küçük mü, 20'den büyük mü şeklinde bak cevaplar yazdı arkadaşların. Onu sorgulamamız lazım. Şimdi ben iki tane if kullanacağım. Arkadaşın çözümüyle tek if yeterli miydi? Onun analizini yapıp bakmak lazım. Arkadaşın ona belki yaparsa bize haber verebilir ama iki if kullanacağım ben şu anda.
+
+122
+00:59:38,291 --> 00:59:45,291
+Bir bakalım hemen. Şimdi kullanıcıya hemen bir geciken gün sayısını
+
+123
+00:59:45,291 --> 00:59:58,291
+yeriniz şeklinde mesaj veriyorum. Ve kullanıcıdan ne alacaktık? N değerini alacaktık. Şunu küçültelim.
+
+124
+01:00:05,012 --> 01:00:12,012
+Şu an adını hatırlayamıyorum ama bir arkadaşımızın yaptığı yoldan aynı şekilde devam edeceğim.
+
+125
+01:00:12,012 --> 01:00:20,012
+Şimdi, öncelikle benim en baştan başlarsak arkadaşlar.
+
+126
+01:00:20,980 --> 01:00:47,860
+Öncelikle sayım, yani ilk cezam ne? İlk on gün. O zaman benim eğer sayım ondan küçükse başka bir ceza uygulamayacağım ben zaten. Bu nedenle en başta nden en ona eşit mi veya küçük mü şeklinde yani küçük veya eşit mi şeklinde soruyorum. Şöyle kollarımızı da yapalım.
+
+127
+01:00:49,652 --> 01:01:13,079
+şekilde
+
+128
+01:00:59,572 --> 01:01:14,431
+Ondan küçükse ne yapacağım? Basit bir şekilde cezayı hesaplayacağım. Sadece, şöyle ceza diyelim. Sadece kırk kuruş yani en çarpı sıfır nokta dört şeklinde.
+
+129
+01:01:14,431 --> 01:01:26,431
+Koluna yazıyoruz amacım. True koluna. Efendim? Şu an true koluna yazıyoruz. Tamam. Şimdi ondan küçük en değerin.
+
+130
+01:01:26,996 --> 01:01:46,996
+O zaman cezayı nasıl hesaplayacağım? Diyelim ki 5. Kullanıcı 5 girdi. Ondan küçük mü? Evet, küçük. True calluna giriyorum. Her gün için 0.4, 5x0.4'tan cezanın 2 lira şeklinde hesaplıyorum. Tamam mı? Tamam.
+
+131
+01:01:46,996 --> 01:01:49,996
+Hocam cezayı tanımlamadık.
+
+132
+01:01:51,507 --> 01:02:05,507
+Şöyle arkadaşlar, biz şöyle bazı akış diyagramlarında şu notasyon kullanılarak değişkenler, ceza, neyi tanımlayacaksak bu şekilde tanımlanıyor ama biz bunu kullanmıyoruz.
+
+133
+01:02:06,228 --> 01:02:30,908
+derslerde kullanmamış olmanız gerekiyor. Biz bu tanımlama bloğunu kullanmıyoruz. Çünkü bu bir programlama değil diye düşünüyoruz. Akış diagramında direkt kullandığımız yerde tanımlandığını düşünebilirsiniz. Çünkü bu programlama diline göre değişen bir şey. Yani C'de mesela en başta tanımlamamız gerekiyor. Ama Python'da öyle bir şey yok mesela.
+
+134
+01:02:31,188 --> 01:02:47,168
+Yani bu yüzden akış diyagramı da programlama dillerine göre tasarlanmadığı için biz de cezayı en başta tanımlamıyoruz. Direkt kullanabilirsiniz. O zaman o tanımlanmış oluyor. Derste de bu tanımlanma bloğunu kullanmadınız değil mi?
+
+135
+01:02:48,328 --> 01:02:49,728
+Yok hocam, kullanmadık.
+
+136
+01:02:49,967 --> 01:02:50,648
+Tamam.
+
+137
+01:02:50,828 --> 01:02:52,448
+Ufak bir soru sorabilir miyim ben de?
+
+138
+01:02:52,927 --> 01:02:53,268
+Tabii.
+
+139
+01:02:53,628 --> 01:02:58,648
+Ben cezayı yerine şey dedim, en eşittir, en çarpısı 0.4 deyip en iyi yazdırdım.
+
+140
+01:02:59,411 --> 01:03:00,991
+Enini değiştirdin.
+
+141
+01:03:00,991 --> 01:03:01,711
+Evet.
+
+142
+01:03:02,491 --> 01:03:11,011
+Anladım. Peki, eni değiştirdikten sonra, yani şimdi bir saniye. En 20 diyelim.
+
+143
+01:03:11,011 --> 01:03:13,871
+Sen...
+
+144
+01:03:13,871 --> 01:03:32,271
+yirmi çarpı sıfır nokta dördü en eşitlemiş oldun. Nasıl oldu? Yok hocam, öyle değil. Bu true için ayrı. Diğerinde hani mesela on çıkarıyorum. Normalde onla çarpıyorum. En eksi onla çarpık yapıyorum. Her defasa on çıkarttın, çarptın. O şekilde mi? Evet, öyle denebilir.
+
+145
+01:03:34,003 --> 01:03:57,403
+Yani anladığım gibi olabilir olabilir yani analizini yaptığınız yaptığınızda doğru çıkan yani şunu istiyorum sadece sizden 5 verin 15 verin 25 verin 3 için doğru hesaplıyorsa o zaman algoritmanız doğrudur. Şimdi bundan devam edelim.
+
+146
+01:04:00,019 --> 01:04:25,139
+Evet, ENI değiştiysek baştakini kaybetmiş oluyoruz. Ben de en başta öyle zannettim. On çıkararak devam edip demek ki başka bir değişkene atıyor diye anlıyorum şu anda. Hani EN diyelim ki 15, EN-10 dedi. Beşi başka bir değişkene atadı. Onu ENI değiştirdi. Yani şu an hayal edemeyeceğim arkadaşlar. Orada onu kaybetmememiz gerekiyor.
+
+147
+01:04:27,251 --> 01:04:50,652
+Eşit [öğrenci]. Şimdi, o zaman diğer şartlarımıza bir bakalım. Şimdi, ilk on günü hallettik eğer ilk on günden küçükse. Eğer on günden büyükse ne yapmamız lazım? Ama burada tek, yani üç tane ev kullanmak yerine aslında tek bir tane ev kullanıp, yani ne yapacağım diyelim yirmiden küçük mü diye bakarsam.
+
+148
+01:04:50,996 --> 01:05:08,996
+True column ne olur? Yirmiden küçük yani on bir ile yirmi gün arasında olduğunu anlarım ve false column da yirmiden büyük olduğunu gösterir. O nedenle benim şimdi burada bir tane iftaha eklemem yeterli oluyor. Şöyle gelelim.
+
+149
+01:05:14,675 --> 01:05:15,755
+Şöyle alalım.
+
+150
+01:05:17,376 --> 01:05:20,456
+En küçük eşit 20 diyorum.
+
+151
+01:05:21,015 --> 01:05:27,395
+Büyük diye de sorgulayıp True False Call'ların yerini değiştirebilirsiniz.
+
+152
+01:05:28,015 --> 01:05:29,996
+En küçük eşit 20 mi diye soruyorum.
+
+153
+01:05:30,615 --> 01:05:33,496
+Eğer küçük eşitse şimdi ne yapmam gerekiyor?
+
+154
+01:05:33,576 --> 01:05:35,275
+Yine proses bloğumu alayım.
+
+155
+01:05:37,155 --> 01:05:39,655
+Şimdi az önce ne söyledik?
+
+156
+01:05:41,172 --> 01:05:54,851
+yirmiden küçük ama burada false column'a gittiğim için demek ki ondan büyük. O zaman az önce anlattığım gibi en başta ne yapayım? İlk on gün için kırk kuruşluk cezamı ekliyorum.
+
+157
+01:05:56,371 --> 01:06:22,072
+Artı diyorum çünkü yirmiden küçük ama orada bir on beş, on üç, on dört gibi bir sayı bu demek ki. O zaman şöyle güzel okunması için parantez içinde alayım. Şöyle yapayım. O zaman ne yapmam lazım? İlk on günü kullandığım için en eksi on deyip kalan günü de altmış kuruşla cezalandırsam nasıl olur?
+
+158
+01:06:22,931 --> 01:06:48,711
+Şöyle biraz daha büyüteyim. Yani diyelim ki on beş. Geliyorum, ondan küçük mü? Hayır. False calluna geliyorum. Yirmiden küçük mü? Evet. O zaman true calluna geldim. İlk on günü sıfır nokta dört ile cezalandırdım. On beşte, en on beş, on beş eksi ondan beş. Kalan beş günde sıfır nokta altı ile cezalandırıp ikisini topladığımda cezan oluşmuş oldu.
+
+159
+01:06:49,364 --> 01:06:51,364
+Anladık değil mi arkadaşlar?
+
+160
+01:06:51,364 --> 01:06:53,364
+Evet.
+
+161
+01:06:53,364 --> 01:06:57,364
+Bir sessinden toz kolunu rica ediyorum.
+
+162
+01:06:57,364 --> 01:06:58,380
+Evet.
+
+163
+01:07:02,643 --> 01:07:04,043
+Ben yapabilirim hocam.
+
+164
+01:07:05,163 --> 01:07:05,783
+Bilmiyorum.
+
+165
+01:07:07,184 --> 01:07:12,123
+Bu sefer cezamız on günden dolayı on çarpı sıfır nokta dört vardı zaten.
+
+166
+01:07:12,783 --> 01:07:13,063
+Evet.
+
+167
+01:07:13,063 --> 01:07:17,783
+Ve on ile yirmi gün arası için on çarpı sıfır nokta altı eklenecek.
+
+168
+01:07:18,463 --> 01:07:18,844
+Evet.
+
+169
+01:07:19,844 --> 01:07:24,743
+Artı yirmi gün üstü için de eneksi yirmi çarpı sıfır nokta sekiz.
+
+170
+01:07:25,943 --> 01:07:28,063
+Sıfır nokta sekiz ve...
+
+171
+01:07:28,436 --> 01:07:53,315
+Şurası da en eksi yirmi. Teşekkür ederim. Bu kadardı arkadaşlar. Şimdi ne yapmam gerekiyor? Şu if kollarını birleştirmem gerekiyor. Bir de burada vardı. Ve stopa götürmem gerekiyor. Anlamadığınız bir şey var mı?
+
+172
+01:07:58,643 --> 01:08:04,043
+Ee, hocam, az önce dedim ya, ben EN falan demiştim hani, EN'e eş dedim, ceza yapma.
+
+173
+01:08:04,543 --> 01:08:05,043
+Ha ha, evet.
+
+174
+01:08:06,063 --> 01:08:12,303
+Şey, aynısını yaptım aslında ama burada günü kaybetmemizin bir önemi var mı en sonunda? Çünkü parayı istiyor benden, günü istemiyor ki.
+
+175
+01:08:14,323 --> 01:08:25,384
+Yok, günü kaybetmemin bir önemi yok da, en sona kadar şimdi şeyden biz emin olamadık. En başta hani EN'e eşitliyorsun ya ama biz burada EN'i tekrar kullanıyoruz.
+
+176
+01:08:25,939 --> 01:08:32,659
+Sen onu nasıl yapıyorsun onu anlayamadık. Bu arada direkt stopa götürdüm de şuraya bir şey koyalım arkadaşlar.
+
+177
+01:08:32,659 --> 01:08:39,139
+Yani eğer diğer işlemlerinde kullandığında evet ceza yazdıralım doğru söylediniz.
+
+178
+01:08:39,139 --> 01:08:46,500
+Bu dağız benim de aklıma şöyle bir print koyalım. Şunu direkt sileyim.
+
+179
+01:08:47,380 --> 01:08:55,100
+Şöyle değişkenimizin ismini direkt yazarsak oluyor. Zaten diyelim ki şöyle bir şey yapmak istiyoruz.
+
+180
+01:08:55,100 --> 01:09:06,300
+Ceza şeklinde iki nokta koyalım. Tırnaklarımızı koyduktan sonra virgül koyuyoruz. Değişkenimizin ismini yazıyoruz ve ardından stopa götürüyoruz.
+
+181
+01:09:10,195 --> 01:09:13,195
+Şöyle, stoppalım.
+
+182
+01:09:17,076 --> 01:09:19,076
+Nokta kullanabilirsiniz arkadaşlar.
+
+183
+01:09:29,811 --> 01:09:32,532
+Yani akış diyagramı için nokta kullanmanızda bir sakınca yok.
+
+184
+01:09:34,492 --> 01:09:38,311
+Şöyle ben yine ya da size diğer soruyu göstereyim.
+
+185
+01:09:39,131 --> 01:09:40,391
+Böyle şey yapalım.
+
+186
+01:09:41,051 --> 01:09:43,051
+Bu soruda anlamadığınız bir şey var mı?
+
+187
+01:09:47,028 --> 01:10:15,020
+Yok galiba. Diğer sorumuza bakalım. Şimdi arkadaşlar, kullanıcı tarafından girilen üç tane sayıyı artan sırada sıralayan algoritmanın akış diyagramı. Yani basit bir şekilde size üç tane, şöyle geçeyim, üç tane sayı girilecek diyelim on, üç, beş olsun. Sizin bunu üç, beş,
+
+188
+01:10:15,091 --> 01:10:16,371
+on şeklinde
+
+189
+01:10:16,371 --> 01:10:21,891
+ekrana yazdırmanız yani sıralı bir hale getirmeniz isteniyor.
+
+190
+01:10:26,387 --> 01:10:41,148
+Bunun için de biraz uğraşın, bunun için de biraz süre vereyim. Evet, loop kullanmadan, o yüzden üç tane hani üç tane fazla olsaydı zaten baya büyük bir akış diyagramı olurdu. Üç tane. Evet, dizide kullanmıyoruz bu adımda [öğrenci].
+
+191
+01:10:41,148 --> 01:10:52,427
+Üç adet girdi olarak kullanıcıdan A, B ve C alabilirsiniz.
+
+192
+01:11:02,068 --> 01:11:06,307
+Şimdi biraz süre vereceğim. Eğer bitiren olursa Çete yazarsa iyi olur.
+
+193
+01:11:20,532 --> 01:11:30,532
+Bu soruda Swepping yaparak çözüm yaparsanız iyi olur arkadaşlar. Swepping'in de hani nasıl yaptığınızı birazdan göreceğiz.
+
+194
+01:12:20,212 --> 01:12:32,212
+Yani [öğrenci] o parantezler ne? AB eşittir BA derken iki tane için mi diyorsun? Anlayamadım demek istediğimi.
+
+195
+01:12:32,212 --> 01:12:44,212
+Yok, swapping öyle yapmayacağız. Yani swapping yapsam da hani köşe parantez A virgül B demendeki şeyi çok anlayamadım.
+
+196
+01:12:50,260 --> 01:12:53,860
+Yani dizide olsa öyle kullanmıyoruz dizileri.
+
+197
+01:13:37,140 --> 01:13:39,440
+Ben yaptım galiba ama söyleyebilir miyim?
+
+198
+01:13:40,980 --> 01:13:45,579
+Tabii, söyle bakalım. Ben yine az önceki gibi şunu kopyalarken seni dinleyelim.
+
+199
+01:13:46,260 --> 01:13:54,440
+Tamam. Ben şimdi ABC'yi bulanıcıdan aldıktan sonra A büyük eşittir B diye kontrol ettim.
+
+200
+01:13:55,079 --> 01:13:55,400
+Tamam.
+
+201
+01:13:56,500 --> 01:14:00,680
+Eğer ki doğruysa A'yı max diye bir değişkene atadım.
+
+202
+01:14:01,555 --> 01:14:04,875
+Yanlışsa da B'yi Max diye bir değişken atadım.
+
+203
+01:14:04,875 --> 01:14:16,495
+True ve false kollarını birleştirdim. Bu sefer de bir kontrol daha yaptım. C büyüktür Max diye. Eğer C Max'ın büyükse
+
+204
+01:14:16,495 --> 01:14:28,315
+En büyük değişken bulmuş oldu. True kolumda Max'ın değerini C olarak güncelledim. Zaten basada bir şey yazmadım. En sonunda Max'ı bastırdım.
+
+205
+01:14:28,671 --> 01:14:32,072
+Ama diğer ikisinden hangisi daha büyük?
+
+206
+01:14:32,072 --> 01:14:38,271
+MBU yazdırmıyoruz. Üçünü de yazdırmamız lazım.
+
+207
+01:14:41,971 --> 01:15:03,971
+Yani üçünün ortalamasını alıp eğer üçünün ortalamasından büyük mü diye üçünü kontrol edersek en büyük olan kullanılabilirse mi? O da bir yol. Yani az if kullanmaya çalışarak aklınıza gelebilecek şeyleri uygulayabilirsiniz.
+
+208
+01:15:06,195 --> 01:15:20,996
+Az önce söyleyen arkadaşımız sadece en büyüğü bulmuş anladığım kadarıyla. Bize diğer ikisinde ikisinde hangisinin büyük olduğu lazım? Yani şöyle sıralayacağız mesela.
+
+209
+01:15:20,996 --> 01:15:24,747
+Şöyle eşit sırayı da koyalım.
+
+210
+01:15:29,652 --> 01:15:56,452
+A büyüktür B virgül C gibi bir şey yapamıyoruz onlar. Az önce dediğim gibi hani AND OR kullansaydık A büyüktür B OR, gerçi onun için de hangisi büyük ona bakmak gerekirdi. Yani AND kullanırsan A'yı ikisiyle A büyüktür B AND A büyüktür C dersen eğer bu da doğruysa A ikisinden de büyük olmuş olur. En büyüğünü bulmuş olursun da öyle bir virgül kullanma durumumuz yok.
+
+211
+01:15:58,547 --> 01:16:01,347
+Şimdi beraber bir başlayalım arkadaşlar.
+
+212
+01:16:01,347 --> 01:16:16,547
+Eğer anlamazsanız zaten şey yaparız. Şimdi şöyle yaklaştırayım. Şuraya bir kullanıcıya 3 adet sayı giriniz şeklinde mesajımızı verelim.
+
+213
+01:16:16,547 --> 01:16:24,547
+Şimdi akış diyagramı da size bu printler hani gereksiz gelebilir ama yani
+
+214
+01:16:24,948 --> 01:16:47,628
+Programlamaya başladığınız zaman göreceksiniz. Bazen böyle ödev gönderiyor öğrenciler. Biz siyah bir ekranla karşılaşıyoruz. E peki, girdiği nasıl vereceğim? Herkes sizinle aynı düşünmüyor ki mesela [öğrenci] farklı düşünüyor, [öğrenci] farklı düşünüyor. Benden girdileri farklı alıyorlar. Deneme yanılma yoluyla öğrenmiş oluyoruz. O yüzden gençlere dikkat ederseniz.
+
+215
+01:16:48,083 --> 01:17:01,443
+Anlaşılması açısından çok iyi olur. Kullanıcıdan üç adet sayı aldım. Şimdi şöyle yapalım. Şöyle yine kusura bakmayın çok çok çirkin yazıyorum.
+
+216
+01:17:13,587 --> 01:17:28,939
+Şöyle de C yapalım. Şunu da şöyle uzatabilirim aslında da. Neyse uğraşmam onunla. Tarsten sıralı olsun mu arkadaşlar? Üç, iki, bir girsin kullanıcı. Tamam mı?
+
+217
+01:17:29,332 --> 01:17:44,332
+Şimdi en başta başlayalım bir karşılaştırmaya. Hepiniz karşılaştırmışsınızdır. Üç, yani illaki A ve B'yi karşılaştıralım. A, B'den büyük mü şeklinde bir soralım. If bloğumuzu alıyorum.
+
+218
+01:17:49,011 --> 01:17:50,692
+Şöpanteks, tozıyo.
+
+219
+01:17:56,979 --> 01:18:13,539
+Büyük mü? Buraya hani eşitse de yazabiliriz şey için. O zaman da değişebilir. Eşit sayı da eklemiş olalım. Sonra True kolunu alalım.
+
+220
+01:18:23,923 --> 01:18:50,324
+İşte bu adımda ne yapmam gerekecek? Eğer A, B'den büyükse ki burada büyük yapmam gereken şey bu ikisinin yerini değiştirmek, C'yi ise sabit bırakmak. Swipping dediğim şey buydu az önce. A ve B'nin yerini değiştirirken swipping dediğimiz basit bir şey yapmak istiyoruz. Peki ben bu A ve B'yi değiştirirken şunu yapabilir miyim? Bir bakalım. A eşittir B.
+
+221
+01:18:53,076 --> 01:18:55,195
+B eşittir A yaptım.
+
+222
+01:18:57,355 --> 01:18:58,195
+Sizce
+
+223
+01:18:58,456 --> 01:19:04,115
+Swepping yapabildim mi? Yani A'da 2, B'de de 3 oldu mu bu işlemin sonucunda?
+
+224
+01:19:04,596 --> 01:19:05,036
+Hayır.
+
+225
+01:19:05,587 --> 01:19:30,208
+Evet, neden? Evet, bir geçici değişken kullanmamız lazım. Onu da şöyle basitçe gösterelim. A 3'tü, B 2 idi. Ne oldu? Ben B'yi A'ya eşitledim. A artık 2 oldu. Sonra B burada 2 idi. A'yı değiştirmiştim 2. Eşitledim. B yine 2.
+
+226
+01:19:30,868 --> 01:19:57,327
+Çünkü A'nın değerini az önce N için konuştuğumuz, diğer sorda N için konuştuğumuz gibi değiştirmiş oldum değerini. Bu nedenle basit bir geçici değişkenle hangisini atıma yapacaksam onu mesela arkadaşınızın yazdığı gibi genellikle TMP, TMP şeklinde geçici değişken olduğunu belirtecek bir isim vererek
+
+227
+01:19:57,716 --> 01:20:24,716
+A'yı burada depoluyorum. Ne oldu? Artık geçici değişkenim 3'ü tutuyor. A'nın değerini değiştirebilirim artık. B diyorum. Daha sonra da B eşittir. Geçici değişkenim dediğim zaman depoladığımı alabiliyorum. Anlaştık mı bu swapping konusunda? Şöyle Process Blu'nu alalım.
+
+228
+01:20:25,971 --> 01:20:35,275
+Burada bir template'im A'yı aldım. A eşittirbe ediyorum.
+
+229
+01:20:40,532 --> 01:20:41,532
+arkadaşlar.
+
+230
+01:20:48,020 --> 01:20:54,380
+Çizim çıkmadığına göre tamam diyorum. Sonra bu kolları birleştirebilirim.
+
+231
+01:21:03,155 --> 01:21:08,076
+Şimdi tekrar sorgulamam lazım. Değil mi? Neyi sorgulayacağım ama?
+
+232
+01:21:08,076 --> 01:21:10,996
+Kopyaladım ama.
+
+233
+01:21:19,252 --> 01:21:32,252
+Şimdi iki ve üçü swapping yaptık. Artık üç daha önde. Şimdi bir de B ve C'yi kontrol edelim. B, C'den büyük mü? Şöyle B yapalım.
+
+234
+01:21:36,787 --> 01:21:51,188
+C yapalım. B, C'den büyükse yine ne yapmamız gerekiyor? Büyük mü? Zaten büyük. A'nın sabit kalması, B ve C'nin sweeping yapması gerekiyor. Değil mi arkadaşlar?
+
+235
+01:21:59,155 --> 01:22:17,155
+Şöyle yapalım, yine aynı blu alacağım. Bu defa B ve C'yi yapıyorum. B. B'yi buraya alalım. Burası da C. C'yi alalım.
+
+236
+01:22:26,931 --> 01:22:37,431
+Bir şey sorabilir miyim? Şey, B, Büyükeşit C sorgusunu bir üsttekinin false call'ında yapsak olmaz mıydı?
+
+237
+01:22:37,431 --> 01:22:50,431
+Ama o zaman True call'undan sonra, şurada bu arada B gibi bir şey olmuş. True call'undan sonra da benim bunu kontrol etmem lazım. Sadece false call'ında kontrol edersen True'dan çıkınca bunu kontrol etmemiş olursun.
+
+238
+01:22:50,996 --> 01:22:54,876
+Aynı işlemi iki kere yapmamız gerekecek sanki üç tane olduğu için.
+
+239
+01:22:57,576 --> 01:23:06,115
+[öğrenci] sen baya kaçırmışsın. Şimdi evet aynı işlemi bir daha buraya koyarsın bir de şöyle olur bir daha bunu kontrol etmiş olursun.
+
+240
+01:23:08,456 --> 01:23:10,216
+Yani bunu false aldık diyelim.
+
+241
+01:23:13,716 --> 01:23:15,195
+Az önce True'daydık.
+
+242
+01:23:16,456 --> 01:23:18,315
+Bunu kontrol etmemiş olacağız.
+
+243
+01:23:19,028 --> 01:23:25,688
+Şunu nasıl kontrol edelim? Yani üçü, üçle biri nasıl değiştireceksin daha sonra? Anlayamadım söylemek istediğini.
+
+244
+01:23:25,688 --> 01:23:31,927
+Bir tane fazladan işlem yapmış oluyoruz hocam. Tamam ben anladım.
+
+245
+01:23:31,927 --> 01:23:33,927
+Tamam.
+
+246
+01:23:36,427 --> 01:23:39,427
+Şimdi [öğrenci] ve [öğrenci] için tekrarlıyorum.
+
+247
+01:23:39,828 --> 01:23:43,528
+Şimdi arkadaşlar, yapmak istediğim şey şu.
+
+248
+01:23:45,363 --> 01:23:46,804
+Şöyle şuraya bir
+
+249
+01:23:47,923 --> 01:23:48,884
+Bir saniye
+
+250
+01:23:52,724 --> 01:24:09,724
+Şimdi arkadaşlar, farklı bir değişken tutmak yerine ben A, B, C değişkenlerini kendi arasında değerlerini değiştirmek istiyorum. Yani A'da en küçük değişken, B'de ortanca, C'de de en büyük değer olmasını istiyorum.
+
+251
+01:24:10,260 --> 01:24:28,460
+Soruyorum, AB'den büyük mü? Eğer büyükse, Swipping dediğimiz yani A ve B'nin değerlerini değiştirmek ve C'de henüz bir işlem yapmadığım için sabit bırakmak istiyorum. İstediğim şey bu. Burada sorduğum şey ise şuydu.
+
+252
+01:24:32,851 --> 01:25:00,844
+Bu sweeping işlemini yani A'nın içindeki değerle B'nin içindeki değerin ters yani beş tokuş yapılmasını istiyorum. Temp ne anlama geliyor? Geçici bir değişken olarak Temp ismi verdim ben ona. Diyelim ki yani C değişkenimiz zaten vardı, D de diyebilirsin. Yapmak istediğim şey şu, az önceki örneği vereceğim. A eşittir B, ardından B eşittir A yapsaydım
+
+253
+01:25:01,140 --> 01:25:12,659
+İçerikleri değişir miydi diye baktım. A'nın içeriği az önce 3'tü. Şuradayım. B'nin de 2 idi. Yapmak istediğim 2-3 şeklinde olması.
+
+254
+01:25:12,659 --> 01:25:26,899
+Buraya geliyorum. Şimdi B'yi A'ya atadım. A'nın içeriği artık 2. Sonra A'yı B'ye atıyorum. A'nın içeriği 2 idi. B yine 2 oldu.
+
+255
+01:25:27,988 --> 01:25:35,667
+değiştiremedim. Ne yapıyorum ben burada? Bir tane geçici değişken tanımlıyorum.
+
+256
+01:25:40,564 --> 01:25:44,404
+içindeki değeri değiştireceğim değişkeni
+
+257
+01:25:44,404 --> 01:25:48,244
+atıyorum. Neydi bu? Üç.
+
+258
+01:25:48,244 --> 01:25:51,324
+Tempe attım. Üç.
+
+259
+01:25:51,324 --> 01:25:56,444
+Artık A'nın içindeki değeri değiştirebilirim.
+
+260
+01:25:56,444 --> 01:25:58,484
+B ikiydi.
+
+261
+01:25:58,484 --> 01:26:01,043
+Artık A'da iki.
+
+262
+01:26:01,043 --> 01:26:02,844
+Eşitlediğim için.
+
+263
+01:26:02,844 --> 01:26:06,684
+Şimdi B'ye de tempe attığım zaman
+
+264
+01:26:07,956 --> 01:26:27,956
+TMP değişkeni diyeyim. İçeriği üçtü, B'de artık üç olmuş oldu. Yani ben burada bir tane değişkene ihtiyaç duyuyorum. Bu değişkenle A ve B'nin içeriğine değiş tokuş yapmış oluyorum. Anladık mı arkadaşlar? Ha sen şey mi sordun? İngilizce...
+
+265
+01:26:28,591 --> 01:26:36,992
+şey karşılığını mı soruyordun? Yok hocam, anlattığınızı sormuştum aslında. Teşekkürler anladım. Tamam, rica ederim.
+
+266
+01:26:36,992 --> 01:26:40,992
+Anladıysak...
+
+267
+01:26:41,332 --> 01:26:47,051
+Şimdi burada da B ile C'yi artık şuraya silmiştik. Bakalım neyi kontrol ettik?
+
+268
+01:26:47,592 --> 01:26:53,152
+A, B'den büyük mü dedik? Evet, büyüktü. İçeriğini değiştirdik. 2, 3, 1 oldu.
+
+269
+01:26:53,551 --> 01:27:03,711
+Şimdi B, C'den büyük mü diye kontrol ediyorum. Büyük. O zaman A'ya bir şey yapma. B ve C'nin içeriğini değiş tokuş yap.
+
+270
+01:27:03,711 --> 01:27:08,412
+Şimdi 2, 1, 3 oldu. Şunları yine birleştirelim.
+
+271
+01:27:10,547 --> 01:27:12,167
+Şöyle alıçam.
+
+272
+01:27:21,043 --> 01:27:23,043
+Böyle idare edin orası oldu.
+
+273
+01:27:25,043 --> 01:27:29,043
+Şöyle hepsini alayım aslında. Gerçi burayı güzel çizemedim. Şöyle alayım.
+
+274
+01:27:32,916 --> 01:27:34,916
+Şimdi artık en son ne kaldı?
+
+275
+01:27:40,148 --> 01:28:02,568
+Şimdi, baktığım zaman B ile C'nin yerini değiştirdiğimde, yani içeriğini değiştirdiğimde A ve B tekrar bozuldu değil mi? Yani B ortanca eleman değil. Bu ikisinin yer değiştirmesi lazım. O zaman ne yapıyorum? Bir daha A ile B'yi kontrol ediyorum. A, B'den büyük mü?
+
+276
+01:28:09,108 --> 01:28:32,388
+Yükse yine aynı şekilde aslında şunu alayım. Yine aynı şekilde A ve B'nin içeriğini değiştireceğim. Şöyle koyuyorum. İkisinin içeriğini değiştireceğim. Bir, iki, üç olmuş olacak. Şöyle şunları birleştirelim.
+
+277
+01:28:36,148 --> 01:29:03,688
+Fazladan değişken kullanmamızı engelliyor [öğrenci]. Mesela sen swapping yapmadan hani A, B, C, 3 tane değişkenden ne yapman gerekecek? X, Y, Z gibi sıralı bir 3 tane daha değişken kullanman gerekecek. Mesela örnek veriyorum daha az da olabilir. Biz şu an 3'ten fazla değişken kullanmadan sadece A, B, C kullanarak bunların içeriklerini değiştirerek
+
+278
+01:29:04,032 --> 01:29:30,391
+Değerleri sıralamış olduk. Bu yüzden Sweeping yapıyoruz ki programlamaya da geçtiğiniz zaman Sweeping'e çokça yapacaksınız. Basit bir şey bu. Daha yani çok daha pratik yollarını da göreceksiniz. İkinci şey üçüncü değişken bile gerek kalmayacak. Daha pratik yollarını da göreceksiniz. Tamam mı [öğrenci]? Şöyle şurada da yazdıralım.
+
+279
+01:29:36,020 --> 01:29:59,020
+Şimdi neydi? A en küçük şeydi. Mesela şöyle yapalım. A virgül diyorum. Ondan sonra küçük eşit. B'yi verelim. Virgül diyelim. Küçük eşit. Sonra da C'yi verelim. Sonra zaten
+
+280
+01:30:05,203 --> 01:30:16,203
+Stop yapacağız. Çıktığımız, nasıl bir şey olacak? Bir, küçük eşit, iki, küçük eşit,
+
+281
+01:30:21,140 --> 01:30:44,739
+Şu küçük eşitleri yazdırabilmesi için hani kesme işareti, tırnak işareti artık o programlamanın şeyine göre de gerçi çok fark etmiyor tırnak kullanıyoruz ama kullanarak şunları gösterebilmek için onları kordum. Şunlar değişkenler A, B ve C. Ekrana şu küçüktür işaretini yazdırabilmek için de tırnak işareti kordum.
+
+282
+01:30:46,515 --> 01:30:51,715
+Tırnak şahidi koymasaydım hani değişken gibi algılardı. Yapamazdık. Evet.
+
+283
+01:30:54,275 --> 01:31:05,876
+Bunda da anlaşılmayan bir şey yoktur diye düşünüyorum. Saatimiz de ilerliyor. İki sorumuz kaldı. Yok değil mi arkadaşlar? Geçiyorum diğer soruya.
+
+284
+01:31:17,011 --> 01:31:40,011
+Şimdi bu soruda şöyle bir şey yapıyoruz. En fazla üç dijita sahip oktay sayı sistemindeki bir sayı desimal sayı sistemine dönüştüren algoritmanın akış diyagramını çiziniz. Şimdi en fazla diyor buna dikkat etmemiz gerekiyor. Yani sayımız birde olabilir sekiz tabağında gibi düşünüyoruz kullanıcının girdiği bütün girdileri.
+
+285
+01:31:41,011 --> 01:31:59,011
+1-2 yani 12 şeklinde de yani ama dijit olarak düşünün. 1-2 veya 1-2-3 gibi 8 tabanda 3 basamaklı yani 3 dijitli bir sayıda olabilir. En fazla 3. 4 olamaz.
+
+286
+01:31:59,444 --> 01:32:25,844
+Bir olabilir, iki olabilir, üç olabilir. Bunu da kontrolünü yapmanız gerekecek. Onluk sisteme zaten decimal sistemi nasıl çeviriyorduk? Basit bir şekilde. Üçü yani ilk basamağı sekiz üzeri sıfır, sekiz üzeri bir. Yani sekizin karesiyle çarpıp topladığımız zaman decimalini elde etmiş olacağız.
+
+287
+01:32:28,884 --> 01:32:48,243
+Ve desimal sayıda yazdırmış olacağız. İşte 64 geliyor, 8 buradan 16 geliyor, buradan da 3 geliyor. O şekilde onu da ekrana yazdırmanızı istiyorum. Anladık mı soruyu? Bunun için de bir 2-3 dakika vereyim arkadaşlar. Sonra çözüme geçelim beraber.
+
+288
+01:32:57,268 --> 01:33:03,507
+birkaç dijita sahip olduğunu kullanıcıdan almayın. Onu if kontrol bloklarıyla sağlamaya çalışın.
+
+289
+01:33:07,444 --> 01:33:24,284
+Sadece kullanıcıdan bir N girdisi olun arkadaşlar. N 1 olabilir, 12 olabilir, 123 olabilir. Bu 3 girdiği için akış diyagramınızı çalışıyorum bir bakın. Sadece N şeklinde bir girdi olun.
+
+290
+01:34:30,131 --> 01:34:37,332
+Sekiz tabanlı sayı on tabanlı sayıya çeviriyoruz turalı. Girilen sayı sekiz tabanlı olarak kabul ediyoruz.
+
+291
+01:34:47,475 --> 01:34:49,475
+Az önce söylediğim gibi,
+
+292
+01:34:50,475 --> 01:35:01,475
+Girilen sayı ilk basama 8 üzeri 0, ikinciyi 8 üzeri 1, yani aslında 1, 8 ve 64 ile çarpmanız gerekecek.
+
+293
+01:35:02,475 --> 01:35:05,475
+Çarpıp topladığınız zaman, Desmale ulaşacağız.
+
+294
+01:35:14,036 --> 01:35:17,155
+Yalnızca bir şey olan var mı? Çözümü bitiremese bile.
+
+295
+01:35:34,100 --> 01:35:37,420
+Sekizden ve seksen sekizden büyüklüğü derken
+
+296
+01:35:47,444 --> 01:35:48,144
+Mods ik?
+
+297
+01:35:48,144 --> 01:35:50,924
+Yine iki tane if kullanarak yapabiliriz galiba.
+
+298
+01:35:51,644 --> 01:35:52,184
+Efendim?
+
+299
+01:35:53,004 --> 01:35:55,264
+Yine iki tane if kullanarak yapabiliriz.
+
+300
+01:35:55,424 --> 01:35:59,684
+Hani ondan küçükse, onunla yüz arasındaysa.
+
+301
+01:36:01,463 --> 01:36:02,664
+İlk tane sefer yaptığınız gibi.
+
+302
+01:36:04,664 --> 01:36:08,144
+Peki bir basamak basamak gidecek bir çözüm var mı?
+
+303
+01:36:08,444 --> 01:36:10,623
+Arkadaşlarınız mesela mod falan dedi.
+
+304
+01:36:12,372 --> 01:36:31,340
+Ama mod 8'i anlayamadım. Mod 8 yani şeyden dolayı 8'den büyük olamayacağı için mod 8. Ama bana orada 8'den küçükse 1 digit, 88 arasıysa anladım.
+
+305
+01:36:32,979 --> 01:36:46,000
+Hani sekiz tabanı diye bu şekilde. Yani normal bir sayı olsaydı peki bu arkadaşlar, sekiz tabanı olmasaydı. Ben onun basamakların basit bir şekilde hep yani böyle bir soru çözmüş bile olabilirsiniz derste. Nasıl elde ediyorsunuz?
+
+306
+01:36:48,000 --> 01:36:50,019
+Ona bölümünden kalanına baksam mesela.
+
+307
+01:36:50,579 --> 01:36:58,859
+Değil mi? Ona bölümünden kalana nasıl ulaşıyoruz peki? Yani o dediğimiz işlem ne aslında?
+
+308
+01:37:00,916 --> 01:37:06,676
+Mod 10.
+
+309
+01:37:06,676 --> 01:37:07,916
+Yani, mesela az önce ne dedik?
+
+310
+01:37:07,916 --> 01:37:08,916
+123.
+
+311
+01:37:08,916 --> 01:37:13,916
+123 mod 10 yaptığımız zaman bize neyi verecek?
+
+312
+01:37:13,916 --> 01:37:14,916
+3'ü.
+
+313
+01:37:14,916 --> 01:37:28,456
+3'ü verecek.
+
+314
+01:37:19,315 --> 01:37:33,315
+O zaman biz ilk basamağımızı elde etmiş olacağız basit bir şekilde. Sadece sekiz tabanlıya göre yapmamıza gerek yok. Bütün sayılar için düşündüğümüz zaman, onluk tabanında düşündüğümüz zaman
+
+315
+01:37:33,811 --> 01:37:48,612
+Direkt elde edebiliyoruz bu sekiz tabanında da olsa böyle. Çünkü hani sekiz tabanında girdiğini varsayıyoruz kullanıcının. Yine sizin hep sorduğunuz soruya geliyoruz. Ya sanki sekiz tabanında girmezse modon yaptığım zaman yanlış olur. Ya girdiğini düşünebilirsiniz. Ama
+
+316
+01:37:48,612 --> 01:38:00,851
+yani kontrol etsek de aslında iyi olur ama bu örnekte o kontrol etmedim açıkçası. Zaten böyle basit en küçük sorular için de hepsini kontrol etmek
+
+317
+01:38:01,427 --> 01:38:02,927
+Zor olur.
+
+318
+01:38:02,927 --> 01:38:10,728
+Yani amacı, amaçtan çıkmış oluyoruz öyle, orada detayda boğulurken.
+
+319
+01:38:10,728 --> 01:38:18,827
+Ama tabi sınavda bir yazılı da hocalarınız bunu isteyebilir.
+
+320
+01:38:18,827 --> 01:38:23,127
+Ben bilemiyorum şu an.
+
+321
+01:38:23,127 --> 01:38:26,228
+Bilemiyorum altını.
+
+322
+01:38:26,228 --> 01:38:27,228
+Git olayım.
+
+323
+01:38:27,988 --> 01:38:30,988
+En fazla şöyle kullanıcıya en fazla
+
+324
+01:38:30,988 --> 01:38:34,988
+üç dijitli
+
+325
+01:38:36,988 --> 01:38:38,988
+sekiz tabanında
+
+326
+01:38:38,988 --> 01:38:42,988
+ben kullanıcıya direkt söylüyorum, bana sekiz tabanında bir sayı.
+
+327
+01:38:49,332 --> 01:39:08,532
+Ve ne dedik? Kullanıcıdan bir end sayısı aldık. Şimdi önce şunu bir belirteyim ayrı bir proses bloğumda. Şimdi ben birazdan toplama yaparak şimdi sırayla yapacağım. Az önce nasıl yaptık?
+
+328
+01:39:10,131 --> 01:39:20,851
+Önce 8 üzeri 0 ile çarptık. Sonra bu çarpımlardan sonra toplamam gerekecek. Bu yüzden ben aralarda kullanacağım bunu.
+
+329
+01:39:21,779 --> 01:39:45,779
+Aslında ya da şimdi söylemesem bilecektim de neyse artık anlatmış oldum. En başta bir işte TB diye bir değişken düşünüyorum. İşte TemBase gibi düşünebilirsiniz. Bunu da Safari eşitliyorum. Şimdi işlemlerimi başlayacağım. Önce ne yapmam lazım? Az önce anlattığım gibi şimdi şöyle güzel temiz bir yerden başlayalım.
+
+330
+01:39:46,452 --> 01:40:12,932
+Sayım yüz yirmi üç. Bu da sekiz tabanında. Şimdi başlıyorum. Her türlü bir basamaklı sayı girilecek değil mi arkadaşlar? Bir dakika [öğrenci]. Modona ilk basamağı alıyorsak girilen sayı on tabanlı olmuyor mu? Aslında sekiz tabanında. Ha onu açıkladım az önce [öğrenci]. Şimdi kullanıcı sekiz tabanında girmesini eee hani
+
+331
+01:40:13,328 --> 01:40:23,168
+istedim. O yüzden on tabanında hani onluk tabandaymış gibi ben sayıları elde edeceğim. Sekiz tabanda olduğu için sekiz de yapabilirsiniz.
+
+332
+01:40:27,252 --> 01:40:39,612
+Şimdi, bana burayı kim yazdıracak arkadaşlar? Üçte girilse, yani on üçte girilse, yüz yirmi üçte girilse, şu an ilk basamak için yapacağım bir işlem var.
+
+333
+01:40:41,772 --> 01:40:52,072
+Birinizden bekliyorum buradaki işlemleri. Kalanı alacağım. Ne yapacağım? Sekiz üzeri sıfırla, yani birle çarpmam lazım. Daha sonra sayıya bir şey yapmam lazım.
+
+334
+01:40:55,123 --> 01:40:58,203
+Daha sonra hani hani moddan kalanı bulduk ya.
+
+335
+01:40:58,203 --> 01:41:01,003
+Onu bir yapalım seninle.
+
+336
+01:41:01,003 --> 01:41:03,064
+Kalanı R dedim.
+
+337
+01:41:03,064 --> 01:41:05,103
+Ne yapıyorum? Bu da N'di.
+
+338
+01:41:09,652 --> 01:41:12,351
+Ona göre modunu alıyorduk, kalanı buluyorduk.
+
+339
+01:41:12,351 --> 01:41:14,351
+Tamam.
+
+340
+01:41:14,351 --> 01:41:18,351
+Kalanı aldım, sonra ne yapıyorum?
+
+341
+01:41:18,351 --> 01:41:28,851
+Sonra sayıdan kalanı çıkartsak, sonra da sayıyı ona bölsek mesela, sonra bir daha modunu alıp diğer haneyi de bulabiliriz bence.
+
+342
+01:41:28,851 --> 01:41:36,652
+Ha sayıdan çıkarırım diyorsun, burası 120 olur diyorsun. Direkt peki bu sayıyı ona bölsek?
+
+343
+01:41:39,347 --> 01:41:51,988
+Evet, öyle mi? Direkt zaten gitmez mi? Direkt 12 diye mi tutuyor ya? Direkt 12 olarak tutacak. [öğrenci] yazdı, endiv 10.
+
+344
+01:41:55,507 --> 01:42:04,868
+Şu basamak 1, basamak 2, basamak 3. Ha sen hepsini tek tek aldın, 3 tane bir eşkende tuttun. Tamam, o da olabilir [öğrenci].
+
+345
+01:42:05,456 --> 01:42:25,275
+Ben şimdi şöyle yapacağım. Neydi? TB diye bir değişken tanımlamıştık. TB eşittir. Şimdi şurayı biraz boş bırakayım. Neydi? Kalanımız 3'tü. Ne yapmam gerekiyordu? 3 çarpı 8 üzeri 0. Yani şöyle çarpıyı da. Yani 1 ile çarpıyorum. Değil mi?
+
+346
+01:42:28,307 --> 01:42:35,467
+Şimdilik burası şöyle, biraz boşluk bıraktım. Şurayı birazdan size soracağım. Neden sıfıra eşitlediğimi de daha iyi anlamış oluruz.
+
+347
+01:42:38,287 --> 01:42:46,927
+Arkadaşınız üç tane değişken kullanarak yaptı. Bir başka arkadaşınız mod sekizden gitti. Farklı farklı yollarla gidebilirsiniz.
+
+348
+01:42:50,188 --> 01:42:51,707
+En mod on dedik.
+
+349
+01:42:53,747 --> 01:43:19,747
+N eşittir, N bölü, yüz dedi, on dedik. Niye? Artık ilk basamağımı işledim, geriye kalsın on iki diyorum. TB eşittir. Ay yazmış oldum. Neyse. Burayı size soracağım yine de. Belki görmeyen olmuştur. R çarpı sekiz yüzleri sıfır bir olduğu için bir dedim.
+
+350
+01:43:21,043 --> 01:43:39,884
+Şimdi eğer sayım tek basamaklı olsaydı, yani sayım 3 olsaydı arkadaşlar, 3 en eşittir, n bölü 10 yapma sebebim, 3 bölü 10 yaptığım zaman benim bölümüm ne olacaktı? 0. O zaman benim basamaklarım bitmiş demekti.
+
+351
+01:43:40,659 --> 01:44:00,659
+O zaman benim burada neyi kontrol etmem gerekli? En büyük mü sıfırdan dersem, eğer bu 13 olursa, bölüm 10 dedim. Geriye ne kalacak? 1 kalacak değil mi? O zaman bir sıfırdan büyük bir sayı. O zaman benim devam ediyor şeylerim.
+
+352
+01:44:01,235 --> 01:44:19,716
+işlemlerim ama eğer sıfır olursa devam etmeyeceğim. Basamaklarım daha bitmiş. Sıfırdan büyük olursa basamaklarım bitmemiş. Basamakları bu şekilde kontrol edebiliriz. Şuraya geliyorum. Ne yaptım? n eşittir n bölü 10. O zaman soruyorum.
+
+353
+01:44:24,692 --> 01:44:29,891
+En büyük mü sıfırdan? Eğer büyükse işlemlerime devam edeceğim.
+
+354
+01:44:29,891 --> 01:44:48,332
+Eğer büyük değilse false da aşağıya kadar yani stop'a kadar devam edecek. Yani bitecek. True diyorum buraya. Yani daha basamağım var. False diyorum. Basamaklarım bitti.
+
+355
+01:44:49,363 --> 01:45:04,763
+Şimdi True kısmına geliyorum. True kısmında tekrar aynı işlemleri bu defa ikinci basamak için, iki için tekrarlayacağım. Burada tek değişen ne olacak? Bunu sekiz üzeri bir ile çarpacağım. Değil mi arkadaşlar?
+
+356
+01:45:06,443 --> 01:45:14,363
+Şimdi şuraya ben bir yazayım. Şurada soru işareti koyduğum yeri bir tekrar konuşalım. Şurada R'yi
+
+357
+01:45:15,796 --> 01:45:24,556
+Sekiziz ile çarpıyorum. Şimdi, SB diye bir değişken tanımlamıştık. SB'yi şöyle yazalım.
+
+358
+01:45:24,556 --> 01:45:38,476
+SB en başta sıfırdı. Daha sonra üç çarpı bir dedik, birincisi çarpı sekiz üzeri sıfır. Yani üç çarpı bir dedik, burası üç oldu.
+
+359
+01:45:39,444 --> 01:46:06,764
+Şimdi ikinci basamağı yapacağım. İki çarpı, ne diyorum? İki çarpı sekiz, yani sekiz üzeri birden on altı. Bunu da direkt TB'ye eşitliyorum. Ama aslında benim ne yapmam gerekiyor arkadaşlar? Birisi söyleyebilir mi? Yani üçü kaybetmiş oldum. Sanki bir önceki işlemi yapmamış gibi üzerine on altı yazdım. Aslında benim ne yapmam gerekiyordu?
+
+360
+01:46:07,796 --> 01:46:09,416
+TB'ye eklememiz mi gerek?
+
+361
+01:46:10,176 --> 01:46:27,796
+Evet, TB'ye eklememiz gerekiyordu. Yani ne yapıyorduk? Her defasında aynen öyle [öğrenci]. Yani 3 çarpı şöyle yapacağım. 8 üzeri 0 artı 2 çarpı
+
+362
+01:46:28,307 --> 01:46:35,807
+8 üzeri 1. Buradaki artıyı unutmuyoruz arkadaşlar. Bu nedenle buraya tb yazıyorum.
+
+363
+01:46:36,435 --> 01:46:49,055
+Ve en başta ilk basamağımı etkilememesi herhangi bir şimdi TB'ydi ya, burada bir işlem yaptığım için mesela TB'yi sıfır eşitlemeseydim TB eşittir program şeyi görüyor.
+
+364
+01:46:49,435 --> 01:46:56,495
+TB eşittir, TB artı R çarpı 1. R'yi burada buldum, 1'i zaten biliyorum, artıyı biliyorum, e TB ne diyecek bana?
+
+365
+01:46:56,495 --> 01:47:04,395
+Çünkü işlemin içinde kullanıyorum. O yüzden en başta bir sıfırlıyorum, sıfır artı 2 çarpı 1, pardon 3'tü.
+
+366
+01:47:04,435 --> 01:47:19,275
+3 çarpı 1'den TB3. Daha sonra burada ne olacak? TB'miz 3'tü. 3 artı 2 çarpı 8. Yani 16 artı 3'ten 19 olacak TB. Burayı anlamayan var mı?
+
+367
+01:47:25,332 --> 01:47:26,332
+Yok galiba.
+
+368
+01:47:26,332 --> 01:47:29,212
+Şimdi az önceki gibi.
+
+369
+01:47:29,212 --> 01:47:30,212
+Tamam.
+
+370
+01:47:30,212 --> 01:47:33,212
+Soru işaretlerini TB'ye yazdım.
+
+371
+01:47:33,212 --> 01:47:35,212
+Az önce anlattığım kısmı [öğrenci].
+
+372
+01:47:35,212 --> 01:47:39,212
+Yani şunu söylemek istedim.
+
+373
+01:47:39,212 --> 01:47:44,212
+Şimdi bir sayıyı böyle tabanlarına dönüştürürken nasıl yapıyoruz?
+
+374
+01:47:44,212 --> 01:47:46,212
+Arada artı var değil mi?
+
+375
+01:47:46,212 --> 01:47:47,212
+Toplamamız lazım.
+
+376
+01:47:48,543 --> 01:48:06,443
+Bu toplam işlemini ise nasıl yapıyorum? Her birinin sonucunu ayrı ayrı bulup toplamak yerine tek bir değişken de bunları tutarak ve o değişkeni her defasa kendisiyle topluyorum. Mesela şöyle devam edelim. Önce TB'ye sıfır dedim. Şurayı bir sileyim.
+
+377
+01:48:12,756 --> 01:48:15,396
+Şimdi TB'ye sıfır dedim. Tamam mı?
+
+378
+01:48:16,372 --> 01:48:42,347
+Daha sonra üç çarpı birden yani sekiz üzeri sıfırı çarptım üç. Artı TB ne oldu? Burası üç oldu. Şimdi buraya geliyorum. İki çarpı sekiz üzeri bir yani sekiz. Burası ne oldu? Onaltı. Şimdi yapmam gereken onaltıyla üçü toplamak. Yani TB eşittir. TB artı buradaki işlem. On dokuz.
+
+379
+01:48:42,452 --> 01:48:59,971
+Oldu. Ardından ne yapacağım? Burada sekizin karesi var yani altmış dört var. Altmış dört artı on dokuz yapmam gerekiyor. Yani seksen dörtten seksen üç. Yanlış yazmadıysam.
+
+380
+01:49:01,971 --> 01:49:08,452
+Anlaştık mı? Bunu yapabilmek için tek bir değişken içerisinde TB eşittir TB artı buradaki çarpma işlemi.
+
+381
+01:49:09,203 --> 01:49:10,224
+Anlaştık mı?
+
+382
+01:49:13,163 --> 01:49:14,043
+Evet.
+
+383
+01:49:14,884 --> 01:49:32,903
+Tamam, güzel. Şimdi ne yapacağız? Üç basamaklıydı. Yine yani eğer iki basamaklıysa burada yaptığımızın aynısını yapmamız lazım. İki basamaklıysa durmamız, üç basamaklıysa aynı işleme devam etmemiz gerekiyor. Yine şöyle yapalım.
+
+384
+01:49:35,283 --> 01:49:36,083
+Şuradan.
+
+385
+01:49:36,479 --> 01:49:37,799
+Çiziyorum.
+
+386
+01:49:42,484 --> 01:50:03,164
+Şimdi bu defa ne yapacağım? 64 ile çarpacağım. 64 ile çarpıyorum. Şimdi bakalım, şunları birleştireyim öyle. Başka bir şeye bakmam gerekiyor mu? Artık 3 basamağı da hesapladım. Artık bitti değil mi? Şöyle burayı birleştirelim.
+
+387
+01:50:13,268 --> 01:50:15,268
+Bir de şurada if'imiz vardı.
+
+388
+01:50:34,003 --> 01:50:37,323
+Biriniz bir şey yazmış, okuyacağım bir saniye.
+
+389
+01:50:40,756 --> 01:50:43,316
+Şunu da yazdırmış istiyorum.
+
+390
+01:50:55,155 --> 01:51:05,716
+Şimdi arkadaşlar, [öğrenci], şöyle bir şey, akış diyagramları, CD'li için tam sayı tam sayıya bölerseniz cevabınız tam sayıdır.
+
+391
+01:51:06,484 --> 01:51:28,484
+Bunu hiçbir zaman unutmayın. Birgüllü sayı elde etmeniz için o sayıyı tanımınız, yani işte ileride öğreneceksiniz, çeşitli değişken tipleriniz olacak. O değişken tipinde, yani double float şeklinde değişken tipinizi değiştirmeniz gerekecek. Akış diyagramı içinde tam sayı integer gibi
+
+392
+01:51:29,395 --> 01:51:44,755
+kabul ediyoruz. Integer bölü integer yani tam sayı bölü tam sayı her zaman tam sayıdır. Bir güllü sayı elde etmezsiniz. Sınavda da buna dikkat edin. 7 bölü 2 3 buçuktur demiyoruz arkadaşlar. 3.
+
+393
+01:51:50,292 --> 01:52:16,292
+Tamam mı [öğrenci]? O nedenle, tamam, hızlıca tekrar ediyorum. Şimdi 123 sayım var. Ben bunu modon alıyorum. Modonda kaç çıkacak bu? 3 çıkacak. Benim kalanım 3. Yani birinci basamam elde etmiş oldum. Daha sonra 123'ü ona bölersem
+
+394
+01:52:16,595 --> 01:52:29,995
+Sonucum ne çıkar? On iki. En artık on iki oldu. En'in tekrar moduna alıyorum. On iki. Şurayı büyüteyim.
+
+395
+01:52:38,963 --> 01:52:39,603
+Bunu alıyorum.
+
+396
+01:52:39,603 --> 01:52:43,324
+İki.
+
+397
+01:52:43,324 --> 01:52:49,963
+R artık iki yani basamağımı elde etmiş oldum. Ardından on iki bölü on.
+
+398
+01:52:49,963 --> 01:52:54,443
+Bir. Sayım artık bir oldu.
+
+399
+01:52:54,443 --> 01:53:01,443
+Ve geriye sadece bir kalmış oldu. Herhangi bir işlem gerekiyor mu? Tekrar ona bölüyorum.
+
+400
+01:53:02,387 --> 01:53:16,727
+Yani sıfır olmasını istediğimiz için. Hayır, tabii ki [öğrenci], N yazacaksın. Ben örnek olarak veriyorum. Sıfır oldu. Artık sıfır olduğuna göre benim basamaklarım bitmiş demektir.
+
+401
+01:53:18,347 --> 01:53:29,387
+Diagramda N yazacaksınız arkadaşlar. Bu 123'lerin hepsi N. Ben ne yaptık burada? N eşittir. N modu.
+
+402
+01:53:31,220 --> 01:53:33,220
+n eşittir n bölü 10.
+
+403
+01:53:36,500 --> 01:53:52,899
+Evet işte aslında programlarda Marta öyle yapacaksınız. On nokta sıfır şeklinde tanımladığınız zaman o zaman float'a bölüyorum ben. Integer bölü integer yapmamış oluyorum demiş oluyorsunuz ve virgüllü sayı elde etmiş oluyorsunuz.
+
+404
+01:53:55,796 --> 01:54:08,516
+Bu akış diyagramında yani normalde olması gerekiyor. Akış diyagramında da yaparsanız olur diye düşünüyorum ama istersen hani bazen hocalarımızın tarzı da değişiyor sorabilirsiniz.
+
+405
+01:54:08,516 --> 01:54:17,956
+Ama normalde bu şekilde kullanmanızda hiçbir sakınca yok. Yani virgülle elde etmek için 10.0.
+
+406
+01:54:19,923 --> 01:54:38,163
+Şimdi şunu da yazalım. Bu arada 48 geçiyor ve bir sorumuz daha var ama kısa bir soru. Çok zamanımızı almayacağım. Şöyle şey yapalım. Buraya da direkt TB yazdırıyorum. Ardından stop yapıyorum.
+
+407
+01:54:43,731 --> 01:54:49,532
+Bu şekilde hani onluk tabandaki sayının da basamakların ayrılmasında
+
+408
+01:54:49,532 --> 01:54:53,131
+Şöyle göstereyim.
+
+409
+01:54:53,131 --> 01:54:56,108
+Görmüş oluyorsunuz.
+
+410
+01:54:56,787 --> 01:55:12,787
+Hemen diğer soruyu açıyorum arkadaşlar. Az vaktimiz kaldı. Şimdi kullanıcı tarafından girilen bir yılın artık yılı olup olmadığını belirleyen algoritma, akış diyagramını çizin. Peki artık yıl?
+
+411
+01:55:14,612 --> 01:55:27,872
+[öğrenci] eğer tırnak işareti kullanmazsan onu değişken anlamına geliyor. Yani değişken gibi algılamış olur. Mesela diyelim ki
+
+412
+01:55:27,872 --> 01:55:32,012
+yakınlaştırınca şey oldu
+
+413
+01:55:32,012 --> 01:55:35,612
+diyelim ki
+
+414
+01:55:35,612 --> 01:55:36,612
+ne diyeyim
+
+415
+01:55:36,912 --> 01:56:03,072
+Tırnak işaretini kullanmadım ve ben buraya A yazdım. A diye bir değişkenim yok. O zaman sana saçma bir bellek numarası yazacak ekrana mesela. Çünkü A diye bir değişkenimiz yok bu soru için elimizde. Böyle bir şey olmadığı için tırnak işareti kullanıyoruz. Yani kesme işareti kullandım burada. Tırnak da olabilir. O programlama dili için tırnak kullanıyoruz genellikle. Burada akış diyagramı için genellikle kesme kullanıyoruz.
+
+416
+01:56:04,051 --> 01:56:11,051
+A şeklinde yazarsanız ekrana A yazılmasını sağlamış oluyorsunuz. Anlaştık mı?
+
+417
+01:56:18,931 --> 01:56:34,471
+Anlaştık galiba. Şimdi bu soruda kodlama ödeleri C üzerinden olacak ufuk. C ile başlayacaksınız. Yani biz C ile başlıyoruz. Uzunca bir süre C ile devam edeceksiniz.
+
+418
+01:56:39,731 --> 01:56:42,612
+Hayır, olmaz. C++ ile yapamazsınız.
+
+419
+01:56:47,028 --> 01:56:55,688
+Mesela, yani onlara geçtiğiniz zaman zaten hocalar ayrıntılı olarak sizi açıklayacaktır. C ile ilerleyeceğiz kodlamaya geçtiğimiz zaman.
+
+420
+01:56:56,308 --> 01:57:02,668
+Şimdi bu soru için kullanıcı tarafından girilen artık yıl olup olmadığını belirlemek istiyoruz ama artık yıl nedir?
+
+421
+01:57:03,128 --> 01:57:10,148
+Artık yıl dediğimiz bu dört yılda bir Şubat'ın fazla çekmesi denilen şeye artık yıl deniliyor.
+
+422
+01:57:15,028 --> 01:57:43,028
+oluyor bu? Yani diyelim bize bin dokuz yüz doksan iki geldi. Bu siz artık bunu onu söylemeyeyim. Ben dört rakamının katı olan yıllardır eee şeklinde bir kuralı var. Onu kontrol edeceksiniz. Ama şöyle bir kuralımız daha var. Eğer yüzün katıysa o yıl dört yüze kalansız bölünebilenler artık yıldır. Yani bin yedi yüz de yüze bölünüyor. Mesela bin iki yüz de yüze bölünüyor. Ama dört yüze bölünüyor.
+
+423
+01:57:43,028 --> 01:57:55,916
+dönenler artık yıl olarak kabul ediliyormuş. Yani 1201 artık yılken, 17001 artık yıl değil. Bu da tamamen 365 günün böyle küsüratlarla artan bir ıııı ııı
+
+424
+01:57:55,956 --> 01:58:22,356
+durumu oluyormuş. O nedenle bu şekilde kabul ediliyormuş. Buna hiç girmiyoruz. Merak edenler google'layabilirler, bakabilirler. Bizim için önemli olan şu kuran. Dörde, yani dört rakamının katı olan ve dört yüzün katı olan, yani eğer yüzün katı olan yıllardaysa sadece dört yüze kalansı olarak bölünebilen. Şu iki cümle bizim için önemli. Bunlara uygun bir akış çizmemiz gerekiyor.
+
+425
+01:58:31,188 --> 01:58:32,468
+Tekri olan var mı?
+
+426
+01:58:35,891 --> 01:58:41,891
+İkilikülmeyuza, kalansız bölünenlere, kalansız bölümeyenlere ayırırız.
+
+427
+01:58:41,891 --> 01:58:46,891
+Hı hı. Kalansız bölünenleri nasıl bulacaksın?
+
+428
+01:58:46,891 --> 01:58:58,891
+[öğrenci] yazdı zaten benim yerime. Efendim? [öğrenci] arkadaşımız benim yerime çete yazdı. Heh tamam, tamam evet.
+
+429
+01:59:04,948 --> 01:59:08,308
+Evet, mode kullanacağız yine. Şuraya başlıyorum.
+
+430
+01:59:12,083 --> 01:59:15,163
+Şimdi şuraya yılgirinizi yazıyorum.
+
+431
+01:59:18,420 --> 01:59:26,100
+Yine EN bir yolu olsun. Ardından arkadaşlarınızın dediği gibi önce ne diye sormam lazım kurala göre.
+
+432
+01:59:26,100 --> 01:59:28,100
+Şuradaydı.
+
+433
+01:59:40,243 --> 01:59:54,563
+Şimdi önce neye bakmamız gerekiyordu? Dört rakamının katı mı? Değil mi? O zaman önce dörde bölünüyor mu diye bakalım.
+
+434
+01:59:54,563 --> 02:00:06,684
+[öğrenci] bir yüz yazmış ama ben dört yazdım önce. Önce dörde bölünüyor mu diye bakalım. Dörde bölünüyorsa neyi kontrol etmem lazım?
+
+435
+02:00:12,051 --> 02:00:14,051
+Neydi burada? Dörde bölünüyorsa
+
+436
+02:00:16,051 --> 02:00:20,051
+Mesela yüzde dörde bölünüyor ama dört yüzün katı değil.
+
+437
+02:00:25,939 --> 02:00:38,500
+O zaman mesela milat yani çok küçük on ikiyi nasıl yakalayacaksın? On iki dört yüze bölünmüyor. Yirmi dördü nasıl yakalayacaksın? Ya onlar da bir yıldı sonuçta.
+
+438
+02:00:42,644 --> 02:00:44,283
+Dörte baktıktan sonra
+
+439
+02:00:49,779 --> 02:00:51,699
+True, false alıyoruz arkadaşlar.
+
+440
+02:00:53,480 --> 02:00:57,579
+Ha, a büyüktür x'den, şimdi şöyle ama, True abi.
+
+441
+02:00:58,239 --> 02:01:02,000
+A büyüktür x'den 1 veya 0 diye bir sonuç çıkar.
+
+442
+02:01:03,380 --> 02:01:10,500
+1 veya 0 sonucunu, şimdi True ve False çıkar. Evet ama True 1, False da 0 anlamındadır.
+
+443
+02:01:11,040 --> 02:01:18,440
+A büyüktür, x'den 0 veya 1 çıkar ve sen 0 veya 1'in B'ye eşit olup olmadığını kontrol ediyorsun.
+
+444
+02:01:19,100 --> 02:01:20,360
+Ona dikkat etmen lazım.
+
+445
+02:01:23,520 --> 02:01:25,560
+Şimdi şuraya dönelim hemen.
+
+446
+02:01:25,560 --> 02:01:31,000
+Burada bir de bu dörde bölünenlerden şunu alayım.
+
+447
+02:01:32,532 --> 02:01:33,932
+Buraya True diyorum.
+
+448
+02:01:38,932 --> 02:01:44,932
+Bunlardan bir de yüze bölünmesini istemiyorum ben artık yıl demek için.
+
+449
+02:01:50,387 --> 02:01:55,587
+Asignment olarak, karşılaştırma olarak kullanmıyorsun. Yani B'ye ya 0 ya da 1 atanmış oluyorsun.
+
+450
+02:01:55,587 --> 02:02:00,387
+A büyüktür x'in sonucuna göre.
+
+451
+02:02:09,076 --> 02:02:25,076
+Şimdi yüze bölünüyor mu bölünmüyor mu diye bakıyorum da şuraya eşit değil demek istiyorum. Şu eşit değil. Biliyorsunuz ki şöyle aslında bu şeyde kalemi geçenlerde kullanamadım. Şunu alsam.
+
+452
+02:02:41,140 --> 02:02:43,380
+Arkadaşlar, ne yapmaya çalıştığımı anladınız değil mi?
+
+453
+02:02:43,380 --> 02:02:49,579
+Anladık hocam, eşit değildir şah et.
+
+454
+02:02:49,579 --> 02:02:51,619
+Eşit değildir, yapmaya çalışıyorum.
+
+455
+02:02:56,404 --> 02:03:19,224
+Şeyden bulamayacağım şu anda. Siz. Tamam [öğrenci], teşekkürler. Eşit değildir demeye çalıştım. Şu an şeyden bulmakla uğraşamayacağım. Zaten vaktimiz geçti. O zaman ne olacak arkadaşlar? Yüze bölünmüyor. Tamam. Dörde bölünüyor. O zaman artık bu bir. Artık yıldır diyebilirim.
+
+456
+02:03:21,363 --> 02:03:36,723
+Artık Yolu'ya bir mesaj verdim. Şu Turo'yu da şuradan kaldırayım. Buraya gelmiş. O zaman, onun oraya gelmesi zaten çok mantıklıymış. Mesela şu anda alayım. Onu C dilinde kullanıyoruz [öğrenci] abi.
+
+457
+02:03:49,235 --> 02:03:52,835
+Ne yaptım ben? Buradan girmişim. Arkadaşlar hiç uyarmıyorsunuz.
+
+458
+02:03:56,404 --> 02:04:17,068
+Şimdi kurala göre sadece dördün katı olması gerekmiyor. Yüzün katlarından şimdi yüzde dördün bir katı ama mesela bin yedi yüz artık yıl değilmiş. Dört yüze de kalansız bölünmesi gerekiyormuş. Ama biz yüzden küçük olan sayıları da eee bulabilmek için
+
+459
+02:04:17,492 --> 02:04:31,404
+Ne yapıyoruz? Önce dörde bölümüne bakıp daha sonra şimdi işte bir de bütün sayılar için pardon yanlış yere açtım bütün sayılar için dört yüze bakacağız. Şöyle yapalım.
+
+460
+02:04:40,051 --> 02:04:48,452
+Evet ama biz akış diyagramında şeyi üzerine çizgi şeklinde o şekilde kullanıyoruz arkadaşlar.
+
+461
+02:04:52,275 --> 02:05:15,235
+Şimdi ben şu tür şeylerden korkuyorum. Aslında burada şeyden de korkuyorum. Mesela şu an ben yazdığım APRINT işlemini bakın terste. Yani sizin aslında öğrendiğiniz şu girdi, sol tarafta olması lazım. Yanlış mı yoksa o şekilde. Hani sizin de sınavlarda öyle çizmeniz lazım. O tür şeylere dikkat edin. O nedenle sizin gördüğünüz şekilde bazı şeyleri yazmak istiyorum.
+
+462
+02:05:18,163 --> 02:05:20,083
+O yüzden böyle biraz çabaladım.
+
+463
+02:05:20,083 --> 02:05:24,643
+Şöyle yapalım artık.
+
+464
+02:05:24,643 --> 02:05:33,523
+Şimdi neye bakacağım arkadaşlar? Direkt bütün sayıları neden ben burada false almadım? Direkt elini alıyorum.
+
+465
+02:05:33,587 --> 02:05:55,587
+dörde dört yani ne diyeyim buraya en modon dedim eğer dörde bölünüyorsa buraya geldim bir de yüzü kontrol etmem lazım yüzü kontrol ettim artık yıldır dedim. Şimdi ise sadece bunu falsa da alabilir miydim sizce? Şöyle ben buraya kopyalayayım.
+
+466
+02:06:16,148 --> 02:06:17,507
+Önce olacak.
+
+467
+02:06:23,347 --> 02:06:28,347
+ne olacak? Eğer sayı zaten direkt 400'e bölünüyorsa
+
+468
+02:06:33,427 --> 02:06:49,547
+Artık yıldır eğer bölünmüyorsa, artık yıl değildir diyebilirim. Yani benim şurada True kısmında yaptığım tek şey, dörde bölünenleri ayırt edebilmek.
+
+469
+02:06:52,979 --> 02:06:54,979
+Hocam, bir şey sorabilir miyim?
+
+470
+02:06:54,979 --> 02:06:55,979
+Hıhı, tabii.
+
+471
+02:06:55,979 --> 02:07:10,979
+Yukarıda mod 4'de, mod 4'de zaten mod 4 olmayan şeyler 400'e bölünemeyeceği için direk stopa, artıcı devlere niye direk götürmedik de tekrar 400'e götürdük.
+
+472
+02:07:14,260 --> 02:07:17,580
+Şimdi dörde bölünmüyor, false.
+
+473
+02:07:18,360 --> 02:07:22,200
+Zaten dördücüde bölünemez ki, o yüzden direkt aynı.
+
+474
+02:07:22,700 --> 02:07:33,460
+Evet, aynen. Zaten dördücünün katı olması lazım. Evet, aslında eğer şu anda yanlış düşünmüyorsan, evet, aslında direkt stopa götürebiliriz bu kısmı. Bu kısım true kısmında olabilir.
+
+475
+02:07:36,020 --> 02:07:38,060
+Dördücüde bölünüyor mu? Doğru söylüyorsun.
+
+476
+02:07:39,100 --> 02:07:40,380
+O şekilde yapabiliriz.
+
+477
+02:07:42,931 --> 02:08:03,171
+Ben şimdi böyle çizmiş oldum. Farklı bir case aklına gelen var mı o false'a uymayan? Benim şu an aklıma gelmiyor. Bana uyar gibi geldi arkadaşınızın söylediği. Çünkü dörde bölünüyor mu diye bakıyoruz zaten. Eğer bölünmüyorsa zaten dört yüze de bölünmeyecektir.
+
+478
+02:08:03,171 --> 02:08:07,971
+Hocam, yüze bölünmeyen şey de dört yüze bölünmez ki.
+
+479
+02:08:07,988 --> 02:08:15,148
+Üç kısımda da bir sıkıntı olmadı mı? Yukarıda 100'ün false'unu da oraya götürdüm. Yani 400'e bölmemiz aslında hiç gerek yok bence.
+
+480
+02:08:15,148 --> 02:08:27,388
+Hayır şöyle, şimdi burada 100'e bölünüyor mu? Şimdi mesela 1700'e bakıyorum. 1700'e baktığım zaman yok ya da mesela arkadaşınızın dediği gibi 2004'ten gidelim.
+
+481
+02:08:27,891 --> 02:08:51,652
+Gerçi o 4'e bölünecek. True, 100'e bölünüyor mu? Bölünmüyor. False. Ondan sonra da 400'e bölünüyor mu? Şimdi şuradan bir örnek yapalım. Yok, burası gerekli. Ona uygun bir örnek bulalım. Şimdi 100'e bölünüyor mu diye sorduğumuzda False olacak. Sonra da 400'e. Aslında evet. Durun bir dakika. Doğru söylüyorsunuz. 100'e zaten her türlü bölünmesi lazım.
+
+482
+02:08:51,988 --> 02:08:57,108
+400'e bölünmesi için ama şu 400'ü de sormamız lazım arkadaşlar ya.
+
+483
+02:08:57,108 --> 02:09:02,547
+Hocam ama zaten biz hem 4'ü hem 100'ü sorduğumuzda 400'ü sormuş olmuyoruz.
+
+484
+02:09:02,707 --> 02:09:10,707
+Evet, hayır, ikisinin de turu olmaması lazım. Hayır, bir saniye. Evet ya, bir dakika, kafamın da karıştı.
+
+485
+02:09:10,707 --> 02:09:20,707
+Ben yanlış düşündüm, aslında doğru yaptığımız. Çünkü 100'e bölünen bir şey, 4'e de bölünebilir ama 400'e bölünmeyebilir. Yani ayrı ayrı yaptığımız gibi.
+
+486
+02:09:20,707 --> 02:09:22,707
+Tamam.
+
+487
+02:09:22,804 --> 02:09:33,043
+Tamam, teşekkür ederim. Şu an sizde öyle söyleyince evet diyorum hani ama hani 100'e bölünmeyecek de 400'e bölünecek. O yüzden tekrar soruyoruz. Sen yine düzeltmiş oldun.
+
+488
+02:09:34,323 --> 02:09:49,684
+Şimdi biraz karıştırdık ama anlamayan var mı? Şurayı yapmamızın sebebi 100'e bölünmeyenleri tespit edebilmek. Yani bölünmüyorsa bir de 400'e bölünüyor mu diye bakıyoruz.
+
+489
+02:09:51,091 --> 02:10:06,451
+Şurada olduğu gibi 1200 ile 1700 ayırt etmek için mesela 1700 100'e bölünüyor, false calluna gidiyor. Bir de 400'e bölünüyor mu diye bakacağız. Pardon şu 1200'ü örnek gösterelim ya. İyice şey yaptık. 1200 100'e bölündüğü için
+
+490
+02:10:08,659 --> 02:10:19,479
+Aslında bir şey değil, artık yıl değil. False'a gidecek ama direkt stopa götürmüyorum. Bir de 400'e bölünüyor mu diye bakacağım.
+
+491
+02:10:21,299 --> 02:10:31,420
+Hocam mesela 12'ye alsak, 12'yi ilk şarta sağlıyor True. İkincisi sağlamıyor False, 400'e sağlamıyor yine False. Artık yıl değildir çıkıyor, direkt 12.
+
+492
+02:10:31,828 --> 02:10:33,128
+Ama artık yıl değil mi?
+
+493
+02:10:33,128 --> 02:10:54,628
+Ha evet doğru, doğru. O zaman buraya şimdi çok basit bir soruda baya bir kuraldan dolayı karıştırdık. Şimdi 12 diyelim. Buraya geldik ama bak şöyle bak şimdi. Ha o zaman bunu direkt false calluna alsak.
+
+494
+02:10:54,963 --> 02:10:56,923
+Daha mı mantıklı olur?
+
+495
+02:10:57,503 --> 02:10:57,783
+Şimdi
+
+496
+02:10:57,783 --> 02:11:06,123
+Hocam direkt şu sağdaki artık, en sağdaki artık o sizin şu an masum olduğu artık işte direkt stopa götürsek bir sıkıntı çıkmaz.
+
+497
+02:11:07,264 --> 02:11:22,003
+Evet, buraya bağlamasak o sıkıntı çıkmaz da öyle ayrı ayrı yapamayız. Yani bu buraya, bu buraya gibi bir şey yapamayız ona. O zaman nasıl yapalım? Şöyle yapalım.
+
+498
+02:11:23,667 --> 02:11:43,867
+Bunu sadece false'a alsak, dörde bölünüyor mu? O zaman dörde bölünenler buraya gelmez zaten. Yani buraya bir if koyabiliriz de if koymadan nereye bağlayabiliriz diye bakıyorum. Şöyle göstereyim. Dinliyorum.
+
+499
+02:11:44,067 --> 02:11:49,887
+Hocam yukarıda artık yılı yanlış yer yazdım. Zaten false konumda olması lazım. Eşit değildir sıfır dedik.
+
+500
+02:11:51,444 --> 02:11:53,663
+Tamam, eşit değilse artık…
+
+501
+02:11:53,663 --> 02:11:55,604
+Evet hocam, posta olması gerekmiyor mu?
+
+502
+02:11:56,264 --> 02:11:56,884
+Hayır, eşit değil mi?
+
+503
+02:11:56,884 --> 02:11:57,764
+Ama True'ye yazdık.
+
+504
+02:11:58,404 --> 02:12:00,384
+Tamam, eşit değil mi diye soruyorum.
+
+505
+02:12:00,904 --> 02:12:02,923
+Evet, eşit değil sıfıra.
+
+506
+02:12:03,083 --> 02:12:06,144
+Eğer sıfır olsaydı yüze bölünür anlamına gelirdi.
+
+507
+02:12:06,743 --> 02:12:09,144
+O zaman bu bir artık yıl olmazdı.
+
+508
+02:12:09,984 --> 02:12:11,623
+Eşit değil mi diye soruyorum.
+
+509
+02:12:11,623 --> 02:12:14,564
+O nedenle True'ye gidiyorum.
+
+510
+02:12:14,703 --> 02:12:17,163
+Çünkü yüze bölünmemesini istiyorum ben.
+
+511
+02:12:18,292 --> 02:12:20,292
+Dört yüze bölünmesini istiyorum.
+
+512
+02:12:20,292 --> 02:12:25,372
+Peki dört yüze direkt Foskonuna yazsak nasıl olur? Yüzün Foskonuna?
+
+513
+02:12:25,372 --> 02:12:42,292
+Hı hı evet, galiba öyle yapacağız. Şöyle eee şöyle yapalım. Şurayı da sileyim. Şurayı şöyle yukarı çıkarayım. Durun bakalım.
+
+514
+02:12:42,768 --> 02:12:47,887
+bir şey yapabilecek miyiz? Ya da şunu da direk sileyim. Şurayı false alalım.
+
+515
+02:12:57,587 --> 02:13:20,587
+Şimdi burayı false aldım. Buranın false'unu, burası boş kalacak. Şu stopu sileceğiz. Bu şekilde oluyor mu arkadaşlar? Bir kontrol eder misiniz?
+
+516
+02:13:25,395 --> 02:13:27,395
+Şöyle göstereyim.
+
+517
+02:13:27,395 --> 02:13:38,395
+Şimdi, eğer false ise, yüze bölünüyorsa, bir de dört yüzü kontrol edelim diyoruz.
+
+518
+02:13:38,395 --> 02:13:42,395
+On iki yine olmuyor hocam.
+
+519
+02:13:42,395 --> 02:13:52,395
+On iki veriyorum. True oldu, false oldu. Hımm evet. Dört yüzü bölünmüyorsa artık yıl olmuyor.
+
+520
+02:13:53,395 --> 02:13:55,395
+Evet, lanet 12 [öğrenci].
+
+521
+02:13:55,395 --> 02:14:14,395
+İlk önce 400'ün kontrolünü yapsak, daha sonra 4'ün kontrolünü yapsak olabilir aslında. Ben de artık şeyden hayal edemez oldum. Şimdi bakalım.
+
+522
+02:14:14,395 --> 02:14:21,323
+N400'e bölünüyor mu? Eğer turuysa ne yapacağız? Direkt artık yıl diyebiliriz.
+
+523
+02:14:23,988 --> 02:14:50,268
+Hocam olmuştu ya. Öyle mi? Hayır, onaltılık olmuyordu. Dörde bölmene true dedik hocam. Daha sonra yüze, yüzle modunu alınca tam vermiyorsa o zaman artık yıldır demiştik. Ama şey, tekrar burada sorduğumuz için on iki false oluyordu, artık yıldır oluyordu. Yok hocam, şu, orada false'a gitmiyordu çünkü eşit değildir dedik aslında. True kolundan çıkıyor ya hocam.
+
+524
+02:14:50,547 --> 02:14:52,387
+Doğru.
+
+525
+02:14:52,447 --> 02:14:54,247
+İşit değildir dedim hocam.
+
+526
+02:14:55,148 --> 02:14:56,807
+İyice kafamı karıştırdın.
+
+527
+02:14:58,188 --> 02:14:59,747
+Tamam. Evet.
+
+528
+02:15:00,027 --> 02:15:01,547
+Doğru söylüyorsun aslında.
+
+529
+02:15:01,967 --> 02:15:03,688
+Bir saniye tekrar bakacağım.
+
+530
+02:15:04,688 --> 02:15:05,648
+Şimdi
+
+531
+02:15:05,648 --> 02:15:07,307
+12'ye bakıyoruz. Evet.
+
+532
+02:15:07,667 --> 02:15:09,667
+Harika 12 gideceğim. Lanet demeyeceğim.
+
+533
+02:15:09,807 --> 02:15:11,707
+12. Turu oldu. Bölünmüyor
+
+534
+02:15:11,707 --> 02:15:13,627
+artık ya. Stopa gidebiliriz.
+
+535
+02:15:13,728 --> 02:15:14,367
+Alkış.
+
+536
+02:15:15,844 --> 02:15:20,043
+Anikin
+
+537
+02:15:20,043 --> 02:15:20,144
+Anikin Anikin
+
+538
+02:15:15,060 --> 02:15:23,680
+Şimdi diğerine bakalım. Eğer bölünüyorsa, bir de burada tekrar soruyoruz 400'e bölünüyor mu? Evet. Oldu arkadaşlar. Başardık.
+
+539
+02:15:23,680 --> 02:15:27,680
+Teşekkürler.
+
+540
+02:15:33,971 --> 02:15:45,652
+Evet [öğrenci], bana da öyle oldu bak. Bir ifi karıştırdık. Şöyle şurayı birleştirmek istiyorum.
+
+541
+02:15:47,380 --> 02:16:12,539
+Allah'tan kısa bir soru dedim, oniki, onbir geçiyor. İyi ki online dersiniz, evlerinizdesinizdir herhalde, yemeğe geç kalmadınız. Neyse işte burayı şöyle birleştireceğiz. Şurada bir tane şeyimiz vardı, bunu da bitireyim. Bu sırada sorusu olan varsa sorusunu sorabilir. Şunun kısalması gerekiyor da artık.
+
+542
+02:16:21,268 --> 02:16:27,268
+Bunu ben niye buraya aldım? İyice yoruldum galiba. Şöyle şurada olacak.
+
+543
+02:16:31,475 --> 02:16:51,467
+Arkadaşlar, şöyle bir sunum yaptım. Hani çözüm ve şey olacak şekilde. Arkadaşlar, şunu bir kabul edin ya. Şöyle, şunu uzatabiliyor muyum? Neyse hadi. Burada bir de yazdıralım. Yo, yazdırdık zaten. Hep bir tek stopumuz kaldı.
+
+544
+02:16:53,363 --> 02:17:08,363
+Stop'u da şuraya alıyorum. Şimdi arkadaşlar, şu Drawboy'ı zaten hani şu an yaptığımız için böyle çok düzgün olmadı. Zaten sunumda hepsinin çözümleri var. Ben bu sunumu Avest'imde paylaşacağım.
+
+545
+02:17:18,708 --> 02:17:26,628
+Avesime ulaşabilirsiniz. Bu sunumu paylaşacağım sorular ve bir resim çözümü şeklinde. Tamam mı arkadaşlar?
+
+546
+02:17:30,388 --> 02:17:32,308
+Tamamdır hocam, teşekkür ederiz.
+
+547
+02:17:33,508 --> 02:17:36,868
+Tamam, sizi biraz fazla tutmuş oldum.
+
+548
+02:17:38,388 --> 02:17:41,247
+Biraz fazla tutmuş oldum, kusura bakmayın.
+
+549
+02:17:41,828 --> 02:17:43,488
+Galiba başka sorunuz yok.
+
+550
+02:17:48,884 --> 02:17:50,423
+Ben teşekkür ederim arkadaşlar.
+
+551
+02:17:51,704 --> 02:17:53,144
+Zaten çıkmaya başladınız.
+
+552
+02:17:53,344 --> 02:17:54,423
+Kendinize iyi bakın.
+
+553
+02:17:55,103 --> 02:17:55,704
+Hoşçakalın.
+
+554
+02:17:56,564 --> 02:17:57,164
+İyi günler.
+
+555
+02:18:01,587 --> 02:18:02,427
+İyi günler, [öğrenci].
+
+556
+02:18:02,427 --> 02:18:03,827
+İyi günler.

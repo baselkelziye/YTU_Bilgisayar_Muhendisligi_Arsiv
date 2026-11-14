@@ -1,0 +1,1899 @@
+1
+00:00:07,411 --> 00:00:08,512
+Merhaba arkadaşlar.
+
+2
+00:00:15,444 --> 00:00:18,184
+Merhaba arkadaşlar. Sesim geliyor mu?
+
+3
+00:00:27,347 --> 00:00:37,748
+Merhaba arkadaşlar, sesim geliyor mu? Merhabalar. Birazdan dersimizi başlatır. Benim ses mi kısık acaba? Yok, tamam.
+
+4
+00:00:39,707 --> 00:00:48,147
+Biraz sayımız artsın. Dersimize 5 geç geliyor sesim, tamam. Bir 5 dakika sonra dersimizi başlatacağız. Oldu mu arkadaşlar?
+
+5
+00:05:15,956 --> 00:05:17,636
+Tekrar merhabalar arkadaşlar.
+
+6
+00:05:21,396 --> 00:05:44,376
+Şu an dersimize 35 kişi katılım sağlamış gibi gözüküyor. Arkadaşlar, kayıptan izleyenler daha doğrusu bu ders arkadaşlar, katılımlarınızı arttırın. Daha sonra dersi derste anlamak önemli olan. Daha sonra yoklama kayıtları filan da olabilir sistem üzerinden. Anlatabiliyor muyum? Derse devam aslında şart.
+
+7
+00:05:45,331 --> 00:05:52,471
+Kayıtları zamanında kayıtlardan izlemek yerine dersi derste dinlemek daha faydalı olacaktır eminim siz de içinde.
+
+8
+00:05:53,951 --> 00:05:59,411
+Evet, geçen hafta diyotlar konusunda en son nerede kalmıştık?
+
+9
+00:06:01,292 --> 00:06:08,872
+Yarım dalga doğrultucu, ondan sonra tam dalga doğrultucu konularını işlemiştik.
+
+10
+00:06:11,156 --> 00:06:31,495
+Yarım dalga doğrultucu neydi arkadaşlar? Bir sinüzoidal dalganın sadece pozitif saykılımı kurtarıyorduk. Tam dalga doğrultucu da ise şu negatif saykılı da tersine çevirip şu şekilde tam dalgalık bir şekil elde ediyorduk.
+
+11
+00:06:31,807 --> 00:06:51,567
+Tabi bunların ortalama değeri, bunun altta kalan alanlarının ortalamaya bölümüydü. Bu da volt DC seviyesi olarak belirtiliyordu. Bu da yaklaşık şuradaki maksimum gerilimin 0.318 katı.
+
+12
+00:06:52,084 --> 00:06:58,283
+Ondan sonra tam dalga doğrultucu, köprü doğrultucu da 0.636 idi.
+
+13
+00:06:58,283 --> 00:07:06,463
+Yine transformatörlerle yapılan tam dalga doğrultucu da yine 0.636 idi.
+
+14
+00:07:06,463 --> 00:07:10,444
+Tabi bunları biz hep ideal diyotlar üzerinden gerçekleştirdik.
+
+15
+00:07:15,987 --> 00:07:31,327
+İletim gelimi de hesaba katacak olsak silisyum için örneğin 0.7 volt hesaba katmamız gerekir. Köprü doğrultucuda ise iki tane diyotun üzerinden geçtiği için 2x0.7 olarak bunu belirlememiz lazım.
+
+16
+00:07:34,100 --> 00:07:42,540
+Bu ders diyot kliplerleri üzerinde dersimize başlayalım. Önce diyotla kırpıcı diyebiliriz buna.
+
+17
+00:07:42,540 --> 00:07:45,220
+Kırpıcı diyebiliriz.
+
+18
+00:07:45,536 --> 00:08:11,536
+Şimdi en basit seri klipper, yani seri kırpıcı, input gerilimini şu şekilde uyarladığımız artı eksi VI diyoruz. Bu aslında şu noktadan VI gerilimi uygulamak demek. Aslında şöyle bir kaynak bağlamak demek. Şuraya bir kaynak bağlıyorsunuz şöyle, sinizoidal bir kaynak. Bu kaynağın bir bacağı da aslında nerede tamamlanıyor?
+
+19
+00:08:12,000 --> 00:08:19,399
+Toprak da tamamlanıyor. Yani artı eksi ve iyi derken bunun eksiliği aslında şurayı toprağa bağlamış gibi düşünebilirsiniz.
+
+20
+00:08:19,399 --> 00:08:31,519
+Aynı şekilde artı eksi ve sıfır dediğimizde şuradaki toprağı aslında şuranın bu noktanın toprağa göre olan geriliminden bahsediyoruz demektir.
+
+21
+00:08:32,899 --> 00:08:38,759
+Sinisoidal gerilim kaynakları arkadaşlar en basitinden şu şekilde çizilebileceği gibi.
+
+22
+00:08:39,283 --> 00:08:54,764
+Kare dalga input verebileceğimiz, üçgen dalga input verebileceğimiz dalga şekilleri de AC input olarak adlandırılıyor.
+
+23
+00:08:54,764 --> 00:09:01,984
+Şimdi bizim elimizde şu şekilde bir yapı var diyelim.
+
+24
+00:09:05,716 --> 00:09:08,535
+Evet, soruyu alacağım. Önce şurayı bir temizleyeyim.
+
+25
+00:09:13,268 --> 00:09:34,627
+Evet, evet. Kare dalga diyorum. Kare dalga da olsa, şurası kare dalga örneğin. Şurası kare dalga. Şurası üçgen dalga. Bunlara da sinizoidal dalgalar diyebiliriz. Ortalaması sıfır olup belli bir periyotta kendini tekrar ettiği için ama atlandıracak olursak kare dalga ve üçgen dalga diyebiliriz.
+
+26
+00:09:40,884 --> 00:09:51,584
+Önce bir diyotumuz var. Çıkışı da diyota seri bağlı bir direnç üzerinden çıkışı da ölçümlüyoruz.
+
+27
+00:09:52,203 --> 00:09:53,903
+Çıkıştaki dalga şekline bakıyoruz.
+
+28
+00:09:53,903 --> 00:10:02,423
+Şimdi bunları ideal diyot olarak düşünün. İdeal diyot deyince ne düşüneceksiniz?
+
+29
+00:10:03,124 --> 00:10:05,903
+Burada sıfırda ve...
+
+30
+00:10:06,355 --> 00:10:13,316
+Ve diyot 0'ın altındaysa iletmiyor. Ondan sonra 0'a çıktığı zaman iletiyor.
+
+31
+00:10:14,036 --> 00:10:19,276
+İdense üzerinden ne geçiyorsa artık o. Devrenin şekline, şemaline göre.
+
+32
+00:10:19,935 --> 00:10:27,276
+Bu ideal diyot bu. Normalde ideal olmayan deselik ne olacaktı? 0.7'den normalde kıvrılıyordu.
+
+33
+00:10:27,860 --> 00:10:29,639
+Akım akıtmaya başlıyordu.
+
+34
+00:10:30,240 --> 00:10:33,319
+Şimdi böyle bir diyot verdiğimizde ne olacak?
+
+35
+00:10:33,319 --> 00:10:45,240
+Şöyle girişe göre inceleyecek olursak, sıfır anından itibaren pozitif gerilim uygulamaya başladığımız için, yani burada V gerilimini görmeye başladığımız için,
+
+36
+00:10:45,663 --> 00:10:52,003
+T bölü 2, yani periyodun yarısına kadar olan sürede ne olacak arkadaşlar?
+
+37
+00:10:52,144 --> 00:10:58,803
+Biliyorsunuz bu sıfırdan epsilon kadar arttırdığımızda iletime geçecekti.
+
+38
+00:10:59,604 --> 00:11:04,124
+İletim durumunda olacak. Aynen şurası bir kısa devre haline gelecek.
+
+39
+00:11:04,124 --> 00:11:08,163
+Yani şuradaki durumda devremiz şu şekilde.
+
+40
+00:11:12,659 --> 00:11:35,379
+Input'umuz buradan uygulanıyor. Artı eksi. Çıkışımız ise buradan. Yani aslında artı eksi V0. Aynen V'in nereden ölçülüyor? A ile toprak arasında ölçülüyor. V'in aynı V outputta gözüküyor. Dolayısıyla pozitif kısımda aynen iletiyoruz. Şöyle.
+
+41
+00:11:36,148 --> 00:11:45,827
+Negatif kısma geçtiğimizde ise diyot üstünde şurada artık negatif geli ve inde negatif gelimi oluşmaya başladığı an bu devre ne hale gelecektir arkadaşlar?
+
+42
+00:11:46,708 --> 00:11:50,728
+Şu şekilde açık bir devre haline gelecektir.
+
+43
+00:11:51,427 --> 00:11:55,008
+Ve in buradan uygulanıyor. Artı eksi. Şurası da toprak.
+
+44
+00:11:55,788 --> 00:11:59,048
+Ve output ise bu şekilde.
+
+45
+00:12:00,148 --> 00:12:13,668
+Buradaki gerilim ne olacak arkadaşlar? Artı, eksi veya output dediğimizde hiçbir gerilim olmayacak. Yani sıfır toprak gerilimi olacak. Dolayısıyla negatif gerilimde ise sıfır. Pozitif geldiğinde tekrar aynen uygulanıyorum.
+
+46
+00:12:13,668 --> 00:12:26,648
+Gördüğünüz gibi arkadaşlar bu bir nevi yarı dalga doğrultucu mantığıyla çalışan. Sadece pozitif saykılları çevrimin pozitif saykıllarını geçiriyor.
+
+47
+00:12:28,275 --> 00:12:41,836
+Deminki örnekte görmüştük ve inimiz bizim sinizoidal dalga olsaydı sadece pozitif saykılını görüp negatif saykılını görmeyecektik. Yani yarım dalga doğrultucu olmuş olacaktı.
+
+48
+00:12:42,955 --> 00:12:44,415
+Bu kısım anlaşıldı mı arkadaşlar?
+
+49
+00:12:48,083 --> 00:12:50,083
+Bu kısmı anlayabiliyorsanız,
+
+50
+00:12:50,083 --> 00:12:54,083
+... dışarıda ise devam ediyorum.
+
+51
+00:12:54,083 --> 00:12:58,083
+Şimdi burada biased...
+
+52
+00:12:58,707 --> 00:13:16,667
+Bayest kırpıcılar. Yani buradaki Bayest, normalde Bayest bir yere yönelim manasında, eğilim manasında kullanılıyor. Burada ise aslında biz bu eğilimi yani devredeki gerilim değişiminden bahsediyoruz. Gerilimle beraber olan değişimden bahsediyoruz.
+
+53
+00:13:16,667 --> 00:13:25,528
+Şimdi burada nasıl bir devrenin içerisine bir V-input uyguluyoruz. O V-input'umuz neresi? Şurası.
+
+54
+00:13:26,004 --> 00:13:37,903
+Ama devreye bakın, deminki devreden farklı olarak ne yapılmış arkadaşlar? Şurası aynı bizim devremizdi diyot ve direnç.
+
+55
+00:13:38,903 --> 00:13:44,884
+İmputuna yani şu A noktasına bir artı 5 voltluk bir kaynak eklenmiş.
+
+56
+00:13:45,587 --> 00:14:05,007
+Yani artı gerilimi bir DC kaynak eklenmiş. DC bir gerilim eklenmiş. Yani bir pil eklenmiş gibi düşünebilirsiniz oraya. Şimdi bu durumda devrenin davranışı ne olacak? Onu bir inceleyelim sizlerle beraber.
+
+57
+00:14:05,367 --> 00:14:09,908
+Şimdi bu da en basitinden şöyle düşünebilirsiniz. Burayı biraz büyük bir şey çizeyim ben.
+
+58
+00:14:10,323 --> 00:14:26,943
+Benim önce input'umu şöyle bir çizeyim. Mavi olanlar v-input. Input gelin mi olsun? Şöyle çizeyim. Bir cycle boyunca. Kırmızıyla da v-output'umu çizeyim.
+
+59
+00:14:26,943 --> 00:14:36,624
+v-output'u ise kırmızıyla çizeyim. Öncelikli olarak v-input sırasıyla gidelim şimdi. Burada sıfır anındayım.
+
+60
+00:14:37,268 --> 00:14:58,447
+Örneğin, teker teker, burada hep v imputa göre düşüneceğiz. Tam t eşittir sıfır anındayım. Burada oluşan gerilim ne olacak? Şöyle diyeyim buraya, kapayım şurayı. D'si bir gerilim. Şuralara, şuraya a noktası diyeyim, şuraya ise b noktası diyeyim.
+
+61
+00:14:58,932 --> 00:15:07,331
+A noktasında ne oluştu burada? 0 volt oluştu. Yani A noktasının toprağa göre olan gerilimi 0'da şu anda.
+
+62
+00:15:07,671 --> 00:15:19,791
+Devam ediyorum. Burada negatif bir kaynak var. Burada B noktasında pozitif bir kaynak eklenmiş ona. Bu pozitif kaynak 5 volta dayanıyor.
+
+63
+00:15:26,864 --> 00:15:41,364
+Bu sefer 5 var. 5 olduğu zaman, 5 volt olduğu zaman buradaki gerilim toprağa göre yüksekte.
+
+64
+00:15:43,364 --> 00:15:48,204
+Dolayısıyla diyotumuz bizim iletimde.
+
+65
+00:15:49,556 --> 00:15:50,556
+Bir taneye.
+
+66
+00:15:50,876 --> 00:15:52,235
+Connection Anks kısımları.
+
+67
+00:15:52,735 --> 00:15:54,355
+Tam T0 anında sıfırdayız.
+
+68
+00:15:54,456 --> 00:15:55,796
+Buradaki gelinim sıfır.
+
+69
+00:15:57,216 --> 00:15:59,196
+Burada DC bir gelinim kaynak var.
+
+70
+00:15:59,196 --> 00:16:03,176
+Burada gelinim B noktasında 5 volta çıkıyor.
+
+71
+00:16:04,656 --> 00:16:07,475
+Ve 5 volta olduğu için burası iletimde.
+
+72
+00:16:07,596 --> 00:16:10,556
+Yani burası kısa devre gibi düşüneceksiniz.
+
+73
+00:16:10,975 --> 00:16:31,615
+Dolayısıyla benim şu C ile toprak arasındaki gerilim kaç volt olacak arkadaşlar? 5 volt olmuş olacak. Yani sıfır anında ben 5 volttayım. Devam ediyorum. Tek bir noktayı çizmiş oldum şu anda.
+
+74
+00:16:39,923 --> 00:16:57,443
+Ben burada yükseldikçe sıfırdan daha büyük gerilimler elde edeceğim. Öyle değil mi? Sıfırdan 20 voltmuş maksimumu. Şöyle 20 voltla eksi 20 volt arasında gidip geliyormuş bu.
+
+75
+00:16:57,812 --> 00:17:24,192
+İmput. Arkadaşlar, 20 voltta gidene kadar 2, 3, 4, 5, 15 desem de hep bu gerilimlerin üzerine 5 volt eklenerek ne yapılıyor arkadaşlar? Şuradan devamlı şöyle yapayım. Buradaki gerilimler artıyor sıfırdan itibaren. 20'ye kadar devam ediyor.
+
+76
+00:17:30,900 --> 00:17:31,980
+Şu an sesi nasıl?
+
+77
+00:17:35,260 --> 00:17:39,019
+Şu an kesiliyor mu? Kesiliyor dediniz. Hemen bir kontrol.
+
+78
+00:17:39,019 --> 00:17:42,360
+Şu an 10 saniye kadar önce bir süre kesildi.
+
+79
+00:17:42,460 --> 00:17:42,900
+Anladım.
+
+80
+00:17:44,620 --> 00:17:51,560
+Hemen bir bakalım. Bu çevrede yoğun dersler veriliyor. Bazen böyle bir şeye neden oluyor bakalım.
+
+81
+00:17:53,620 --> 00:17:54,940
+Çok düşükse şayet.
+
+82
+00:18:00,372 --> 00:18:09,132
+Evet, şu anda Pink mesele düşük bir şey yapıyor. Biraz geç geliyor.
+
+83
+00:18:12,692 --> 00:18:14,692
+Şunu bir test edelim.
+
+84
+00:18:21,364 --> 00:18:31,663
+Evet. Arasında böyle bir şey oluyor bizim nette. Genel olarak iyidir. Bir şey olabiliyor.
+
+85
+00:18:40,819 --> 00:18:42,699
+Şunu bir test edelim önce bir.
+
+86
+00:18:56,596 --> 00:19:01,456
+Şunu bir görelim. Şu an nasıl geliyor sesim ve görüntü?
+
+87
+00:19:07,476 --> 00:19:10,236
+Sanki bir zorlanma varmış ama sanki iyileşti biraz daha.
+
+88
+00:19:10,236 --> 00:19:18,436
+Evet hocam görüntü hafif donuyor böyle. Sesiniz de bir süre düzgün geliyor ama sonra bir süre böyle kopuyor. Ondan sonra tekrar geliyor falan.
+
+89
+00:19:23,827 --> 00:19:45,907
+Anladım. Zaten şeyde de bir sorun var. Siteye ulaşmakta da bir zorun. Ara sıra böyle yoğun biliyorsunuz kullanım. Sizlerin internetlerinde durumlar nedir arkadaşlar? Genel olarak kaldırıyor mu? Bir sorun yaşıyor musunuz?
+
+90
+00:20:07,508 --> 00:20:08,008
+Evet.
+
+91
+00:20:12,339 --> 00:20:18,339
+Şu an ses nasıl geliyor? Temin koltuktu bizim bağlantı.
+
+92
+00:20:18,339 --> 00:20:21,339
+Herhalde şu an sesin takılıyor ya.
+
+93
+00:20:32,435 --> 00:20:32,875
+Tamam.
+
+94
+00:21:02,708 --> 00:21:28,347
+Tamamdır. Şu anda download hızı 18 megabit. İyi olması lazım. Upload'da güzel gözüküyor ama Pink'te bir sorun var. Yani download'da ve upload'da çok büyük bir sorun yok. Gördüğüm kadarıyla Pink'le alakalı, Zoom'a ulaşmayla alakalı bir sorunu yaşıyorum ben. Pink'lerin 10'lu seviyelerde olması lazım ama de. Ara sıra böyle bir dalgalanma yaşanıyor zannedersem.
+
+95
+00:21:29,715 --> 00:21:45,096
+Şöyle bir daha bir bakayım ben buna. Normalde hani test ettiğimde ben speed test ile beraber yaklaşık ping süren onlu saniyelerde oluyor. O zaman herhangi bir kesilme olmuyor. Mesela şu anda on bir ses geliyor mu?
+
+96
+00:21:47,375 --> 00:21:55,576
+Şu anda kesilmesiz geldiğinizde. Şu anda sesimin geliyor olması lazım. Arası dalgalanma oluyor büyük ihtimalle.
+
+97
+00:21:56,180 --> 00:21:58,460
+Bakın şu anda da ses kesilebilir.
+
+98
+00:22:02,740 --> 00:22:16,819
+Yani bunun kesintisiz olarak download testini, upload testini yapabilmesi lazım ama şeyde bir sorun var. Bakın, ping 18'de çıktı yine. Evet, bir kopukluk yaşanıyor şu anda internette.
+
+99
+00:22:22,451 --> 00:22:28,451
+Modemi Restart edeyim arkadaşlar. Bir bağlantı kopacaktır ama en azından belki başka bir porta atar.
+
+100
+00:22:28,451 --> 00:22:31,451
+Çünkü Download ve Upload hızları çok berbat durumda.
+
+101
+00:24:03,155 --> 00:24:05,155
+Sesim geliyor mu şu anda arkadaşlar?
+
+102
+00:24:08,596 --> 00:24:09,295
+Geliyor hocam.
+
+103
+00:24:10,795 --> 00:24:12,395
+Tamamdır. Şunu bir daha bir test edeyim.
+
+104
+00:24:31,347 --> 00:24:41,447
+Vetenside bir sorun var. Bu benim servis sağlayıcıdan kaynaklanıyor. Diğerisinde bir sorun var maalesef arkadaşlar.
+
+105
+00:24:50,003 --> 00:25:00,843
+Evet, şu anda sanki iyileşmiş gibi duruyor anlık olarak. Şu anda devam edelim. Bir sorun olduğu zaman muhakkak haber verin arkadaşlar. Devam edelim. Devam ediyorum şu anda. Bir sorun yok herhalde.
+
+106
+00:25:01,983 --> 00:25:03,183
+Yok hocam, şu an bir sıkıntı.
+
+107
+00:25:03,183 --> 00:25:06,763
+Tamamdır. Olduğu zaman muhakkak haber verin. Ona göre ben de durayım.
+
+108
+00:25:07,163 --> 00:25:07,923
+Tamamdır hocam.
+
+109
+00:25:12,895 --> 00:25:17,895
+Bu şekilde inceleyeceğiz. Davranışını gözlemleyeceğiz.
+
+110
+00:25:17,895 --> 00:25:24,895
+Bakın diğer kısımdan artı 5 volt, diyot, direnç kısmı değişmiyor. Sırasıyla 0'da bir test ettik.
+
+111
+00:25:24,895 --> 00:25:35,895
+20'ye kadar böyle devam edeceğiz. 20'ye kadar devam ettiğimizde arkadaşlar, sırasıyla 0'dan 20'ye kadar olan volt değerleri hep 5 voltun üzerine ekleniyor.
+
+112
+00:25:40,895 --> 00:26:05,516
+Yani T bölü 4'te izleyelim. Ne olacak arkadaşlar? 20 volt uygulanacak. Artı DC volt da çünkü buranın buraya göre eklenmiş hali. 20 volta aslında baktığım zaman şöyle olmuş oluyor. Şurada 20 voltluk bir kaynak var. Anlık olarak arkasında onun üzerine sanki bir pil seri bağlanıyormuş gibi 25 volt. Yani tam şu noktada.
+
+113
+00:26:06,451 --> 00:26:21,572
+Tepe noktada ben 25 volttayım. Şöyle gittiğimde 25 volttayım. Bu arayı nasıl tamamlayacağım tabi ki? Burada sinizoidal bir artım var. Aynı şekilde oradaki gerilimler 5 volta ekleniyor halde.
+
+114
+00:26:22,231 --> 00:26:26,572
+Aynı şekilde buradan sıfıra kadar gittiğimde...
+
+115
+00:26:28,372 --> 00:26:46,132
+Tam sıfır noktasında ne olacak? Ve iyi de sıfır olacak. Ama 5 volt diyotun neyinde olacak? Arkasında olacak. Tam sıfıra geldiğim şu anda da yine 5 voltta olacak. Demek ki burada sinizoidal işaret aynen şöyle devam edecek.
+
+116
+00:26:46,952 --> 00:26:54,792
+Şimdi yavaş yavaş aşağılara inmeye başlayacağım. Yani örneğin şuradayım diyelim.
+
+117
+00:26:55,220 --> 00:27:20,819
+T bölü 2'yi geçtim diyelim. Birazcık aşağı gittim diyelim. Eksi 1 volttayım. Tam şurada eksi 1 volttayım. Ve inputta eksi 1 var. Şöyle geldiğimde şuraları temizleyeyim. Tam şurada eksi 1'deyim ben diyelim. Eksi 1 volttayım. Burası ne olacak arkadaşlar? Şöyle düşüneyim. Burada...
+
+118
+00:27:21,140 --> 00:27:25,299
+Eksi 1 volt var. Bu tarafa doğru gidiyorum.
+
+119
+00:27:30,867 --> 00:27:37,127
+B noktasında kaç volt kalacak geriye?
+
+120
+00:27:43,892 --> 00:27:48,232
+Tamamdır. Ses geldiği zaman haber verin. Ben biraz konuşayım.
+
+121
+00:27:52,019 --> 00:27:53,100
+Şu an geliyor mu?
+
+122
+00:27:54,100 --> 00:27:55,600
+Evet hocam, geliyor.
+
+123
+00:27:57,600 --> 00:27:59,420
+Şu an güzel.
+
+124
+00:27:59,955 --> 00:28:25,495
+Tekrar bozulduğunda haber verin. Şimdi geldim, eksi 1 volttayım dedim. 4 volt var, aynen geçiyor. Aynen 4 volttayım, eksi 1 volta geldiğimde. Şöyle noktamı koydum. Bu nereye kadar devam edecek arkadaşlar iletim olma durumuna? Burada 5 volt vardı. Anca şurada eksi 5 volta geldiği zaman, eksi 5 volt civarına indiği zaman, yani şuralarda eksi 5 volt civarına geldiği zaman ne olacak arkadaşlar?
+
+125
+00:28:26,387 --> 00:28:33,488
+Eksi 5 volt burada var. 5 volt giderdi. Tam o anda bağlı.
+
+126
+00:28:33,488 --> 00:28:46,807
+Benim şurada, şöyle tamamladım.
+
+127
+00:28:47,539 --> 00:29:12,519
+Peki, eksi 5 voltun aşağısına indiğim kısımlar, yani buralar, eksi 6, eksi 20'ye kadar gidiyor burada. Orada ne olacak? İletim olmayacak, değil mi? Burası ne olacak o zaman? Burası, liotun üstü açık devre olacak o zaman. Şurası açık devre olacağı için. Ve outputta, değil mi? Diğer eksi 5 voltun sağlayana kadar, yani şuraya kadar.
+
+128
+00:29:13,299 --> 00:29:20,839
+Şu kısımda, eksi 5 volt sağlayana kadar, pardon çizikli çizeyim ben. Şekil değil o.
+
+129
+00:29:26,980 --> 00:29:40,460
+Diğer eksi 5 volt sağlayana kadar şöyle, yani şuraya kadar. Ne olacak arkadaşlar? Benim, pardon şurayı da silmem lazım.
+
+130
+00:29:41,811 --> 00:29:47,931
+Yer eksi 5 volt sağlayın. Şuraları... Özür dilerim. Şöyle bir geri geleyim.
+
+131
+00:29:51,763 --> 00:30:00,723
+Şöyle sıfır olacak. Tam şu eksi 5 voltu sağladığı zaman, şuradaki eksi 5 voltu bu zamana kadar ne olacak arkadaşlar?
+
+132
+00:30:02,123 --> 00:30:13,023
+Sıfırda kalacak. Eksi 5 voltun üzerine çıktım. Şurası örneğin eksi 5 volttu. Eksi 4'e geldiğim zaman ne olacak? Şurası eksi 4 olduğu zaman eksi 4. Yukarıda 5 var.
+
+133
+00:30:13,940 --> 00:30:40,220
+Eksi 4 voltluk ters bağlanmış kaynak. 5 volt düşünecek. Buraya B noktasına 1 volt kalmış olacak. İletime geçecek. İletime geçtiği andan itibaren girişte ne varsa onları görmeye başlayacağız arkadaşlar. Yani öncelikle 1 volt ise 1 volt, 2 volt ise 2 volt, 3 volt ise 3 volt, 5 volta kadar geldim diyelim. Yani sırasıyla. Şunu da biraz.
+
+134
+00:30:41,107 --> 00:30:43,028
+Devam ettireyim şu şekilde.
+
+135
+00:30:45,967 --> 00:30:46,707
+Geldim.
+
+136
+00:30:48,288 --> 00:30:51,947
+5 volt'a kadar geldim şöyle. Buradan itibaren ne oluyor?
+
+137
+00:30:52,567 --> 00:30:56,807
+Örneğin sıfıra geldiğim, tam sıfıra geldiğim zaman nereye çıkmış olmam lazım?
+
+138
+00:30:57,528 --> 00:31:02,288
+Aynı buradaki gibi 5 volt'u görüyor olmam lazım.
+
+139
+00:31:02,740 --> 00:31:25,660
+Yani eksi 5 voltu gördüm. Eksi orada sırasıyla buralarda ne olacak arkadaşlar? Eksi 2 volt, 1 volt şeklinde olacak. Ondan sonra 2 volt, 5 volt. Tam böyle sıfır noktasına geldiğim zaman, tam şu noktaya geldiğim zaman şu şekilde. Şöyle daha temiz çizebilirim.
+
+140
+00:31:32,435 --> 00:31:58,875
+Şurayı çizeyim. Şuraya kadar bir yükselme yaşadım. Tam sıfır noktasında, şuradaki sıfır noktasında 5V'a ulaşacağım. Aynı şuradaki gibi. Burada da aynı aslında. Şöyle geldiğimde 5V. 5V'un üzerinde ne oluyor arkadaşlar? Zaten iletime geçmiş oluyorum. Tekrar ediyor.
+
+141
+00:32:00,276 --> 00:32:25,936
+Dikkat edin, şurada sıfırı kesme noktası, yani şurası ne zaman oluşuyor? Tam o sıfıra indiği an ne zaman oluşuyor? Yani iletime geçmeyi. V'nin eksi 5 olduğu zaman, yani V'nin eksi 5 olduğu zaman neresi oluyor? Tam şu an olmuş oluyor. Tam şu anda çıkışım benim sıfıra gelmiş oluyor. Aslında bu bir nevi ne yapmış oluyor arkadaşlar?
+
+142
+00:32:27,604 --> 00:32:50,944
+Benim çıkışımı bir nevi yukarı doğru ötelemiş oluyor. Bakın burada da aynı şey var. Bu inputum benim. Tam o inputun şu anında bakın 5 voltta. 20'de 5 volt artı 20'de. Ne zaman şuradaki sıfıra iniyor tekrar? Sıfıra indiği yer arkadaşlar şuradaki.
+
+143
+00:32:52,884 --> 00:33:03,884
+T0'ı biraz geçiyoruz. T bölü 2'yi geçiyoruz. Input'un eksi 5 volt aldığı an şurası olmuş oluyor. O nokta...
+
+144
+00:33:04,208 --> 00:33:22,708
+Şurası olmuş oluyor arkadaşlar. T bölü 2 geçtiğimiz anda. Tam şu noktadan itibaren, yani tam şu noktadan itibaren ise artık şu noktayı ise yani T bölü 2, T'den biraz önceki zaman ise tam şuraya gelip artık yavaş yavaş iletime geçti.
+
+145
+00:33:25,951 --> 00:33:34,172
+Eksi 5 voltun altına indiği zamanlar iletime geçmeye başlıyorum. İletime geçtiğim anları da bu şekilde çiziyorum.
+
+146
+00:33:34,172 --> 00:33:49,011
+Bu anlaşıldı mı arkadaşlar? Hepsini nokta nokta ben tarif ediyorum. Yani buradaki yapıyı anlayabilmeniz için bu tarz sorular gelecek sınavlarda tabii ki.
+
+147
+00:33:57,491 --> 00:34:06,651
+Şuna dikkat etmeniz lazım. Ben nerelerde sıfıra geliyorum?
+
+148
+00:34:08,271 --> 00:34:10,271
+Şu an ses nasıl arkadaşlar?
+
+149
+00:34:16,019 --> 00:34:18,019
+Sesim geliyor mu?
+
+150
+00:34:18,019 --> 00:34:19,539
+Şu an geliyor hocam.
+
+151
+00:34:27,219 --> 00:34:28,519
+Kesik kesik geliyor.
+
+152
+00:34:30,519 --> 00:34:34,300
+Maalesef bazen böyle bir şeye neden oluyor işte arkadaşlar.
+
+153
+00:34:51,764 --> 00:34:59,443
+Şu anda sesin iyi geliyor olması lazım. Ara ara böyle dalgalanmalar yaşanıyor maalesef. Şu anda download izi iyi.
+
+154
+00:35:00,604 --> 00:35:03,684
+Ben devam ediyorum o zaman. Şu anda kesintinin kalkmış olması lazım.
+
+155
+00:35:05,524 --> 00:35:18,324
+Şimdi bu tür input'a dair çıkışları çizerken arkadaşlar, şuna dikkat etmemiz lazım. Sınavlarda da tabii ki buna benzer sorular gelecek.
+
+156
+00:35:19,027 --> 00:35:34,887
+Şimdi size bu input verildi. Bu input'a binaen bir çıkış çizmeniz istenecek. Ben nelere bakacağım? Önce şeklime bakacağım. Şeklimde nasıl bir değişim var? Önce v input'um nereden ilgili?
+
+157
+00:35:36,403 --> 00:35:56,104
+Uygulanıyor ve ara noktalardaki durumum ne? Örneğin şu sıfır noktası, ekstremum noktalar benim için önemli. Ben burada şeklimi çizerken şuna dikkat ediyorum arkadaşlar. Ben sıfırdayken, örneğin şurada sıfır var diyelim. Burada kaç olacak C noktasında?
+
+158
+00:36:04,244 --> 00:36:24,364
+O B noktasında 5 volt olacak. 0 volt. Buradan devam ediyorum. B noktasında 5 volt olacak. İletimde olacak. Demek ki 0'da 5 volttayım. Onları işaretledim şöyle. Geldim. O noktaları işaretledim şöyle. Burada da 5 volt olacak.
+
+159
+00:36:25,588 --> 00:36:52,008
+Peki, ondan sonraki şeyim şu. Maksimumda ne olacağım? Maksimumda burası 20'de olacak. 20 artı 25 demek ki tam şurada 25'de olacağım. Biliyorum ki aralıkta 0'dan 20'ye doğru giderken aynen benim sinizoidal işaretimi takip edeceğim şöyle. Şimdi ben 0'a ne zaman vuracağım? Onu düşünmem lazım şimdi.
+
+160
+00:36:52,596 --> 00:37:07,315
+Buradaki yapıyı biraz incelemem lazım. Burada devamlı 5 volt varsa şu B noktasını sıfıra indirecek olan değer nedir? B noktasını. Burada artı 5 volt. Şöyle 5 volt var. Yani şöyle geldi.
+
+161
+00:37:11,956 --> 00:37:29,056
+Yok edecek gerilim nedir? Şöyle baktığınız zaman burası, burasını artı, burasını eksi kabul edersem artı 5 volt da, burasını eksi, burasını artı kabul edersem eksi 5 volt. Tam bu anda ne olacak? İletim kesilecek. Orası neresi peki? Girişin eksi 5 olduğu yerler? Yaklaşık şuralar arkadaşlar.
+
+162
+00:37:29,976 --> 00:37:39,500
+Tam o noktaları denk gelen zamansa şurası. T1'in biraz ilerisi, T'nin biraz gerisi. Tam bu noktada sıkılıyor.
+
+163
+00:37:39,699 --> 00:37:40,859
+Bu soru oluyor.
+
+164
+00:37:41,939 --> 00:37:44,699
+Şöyle dememem lazım.
+
+165
+00:37:54,324 --> 00:38:15,904
+Sıfırda şöyle takip edeceğim. Geleceğim. Tam burada sıfır oluyor. İlk peşin altında olduğu gibi devam ediyor. Bunun şöyle baktığımda eksi beş aldığı noktaya kadar sıfırlanıyor. Bu şekilde yukarı kaymış oluyor. Benim neyim?
+
+166
+00:38:16,340 --> 00:38:27,579
+Demek ki devreye bir DC gerilim kaynağı eklendiğinde devreyi yukarı doğru öteliyormuş gibi bir davranış sergiliyormuş arkadaşlar.
+
+167
+00:38:29,659 --> 00:38:41,280
+Şimdi başka bir şeye geçelim. Burada da paralel kırpıcılar var. Deminki devreden farkı ne arkadaşlar?
+
+168
+00:38:41,940 --> 00:39:04,140
+Artık diyotun yeri değişti ve inputumu buradan uyguluyorum. Bu sefer bunun davranışı ne olacak? Örneğin ben bunu pozitif, pozitif cycle'dayım diyelim şöyle. Pozitif cycle'dayım. Pozitifte ne olacak arkadaşlar burası? Buradan gelecek gerilim. B noktasında, A noktasında pozitif gerilimler var. Şurası yani.
+
+169
+00:39:09,204 --> 00:39:26,524
+Pozitiflikten dolayı toprağa göre yüksekte. Dolayısıyla burası iletimde oluyor. Yani burası kısa devre haline gelmiş oluyor. Kısa devre olunca B noktası ve T noktası arasında ne oluyor arkadaşlar? Gelin farkı kalıyor mu? Kalmıyor.
+
+170
+00:39:30,516 --> 00:39:51,136
+VB noktasıyla V toprak arasındaki gerilim farkı. Bunlar da, burası sıfır, burası da sıfır olduğuna göre. Çünkü kısa devre. Ne oluyor? Diyot sıfır. V diyot sıfır olmuş oluyor. Kısa devre haline gelmiş oluyor. Dolayısıyla benim pozitif saykılda çıkışım sıfırda kalıyor.
+
+171
+00:39:51,136 --> 00:39:58,096
+Peki negatif saykıla gelelim şimdi. Negatif saykıla gelelim.
+
+172
+00:39:58,579 --> 00:40:06,019
+Negatif cycle'da ne oluyor? Burada artık negatif gerilimler var. Örneğin, eksi bir var. Eksi bir olduğu zaman ne olacak burada?
+
+173
+00:40:06,019 --> 00:40:16,279
+Örneğin, eksi bir sırası. Eksi bir, eksi iki, eksi ve maksa kadar gittiğim zaman. Eksi gerilim olduğu zaman burası açık devre gibi davranıyor.
+
+174
+00:40:16,439 --> 00:40:23,880
+Bakın, yani eksi gerilimler olduğu zaman B'de toprağa göre daha düşük bir gerilim olmuş oluyor.
+
+175
+00:40:26,291 --> 00:40:50,771
+Küçüktür, VT olmuş oluyor. Benim şu negatif saykıllarımda. Dolayısıyla oradan akım geçilmediği zaman, yani VB küçük olduğu zaman burası açık devre gibi davranıyor. Dolayısıyla biz neyi görmemiz lazım VB'de o zaman? Burası açık devre ise şahit. Buradan herhangi bir akım akmayacak. Akım akmadığı için.
+
+176
+00:40:51,251 --> 00:41:13,971
+Aynen Vİ'yi görüyor olmamız lazım. Yani negatif saykılda ben VB'de burası açık devre olduğu için artık toprağa gitmediği için sadece bir besleme var. Bir tane beslememiz var Vİ diye. Ondan sonra bir direnç gelmiş buraya. Bu noktadayız. Buranın toprağı herhangi bir akım atmıyor. Boşta bir ucu gibi düşünün.
+
+177
+00:41:18,099 --> 00:41:31,239
+Ben buraya bir voltmetre koyacak olsam, buranın gerilimini ölçecek olsam, akım akmadığı için herhangi bir akım yok. Dolayısıyla benim D noktam aynen V'yi taşıyor.
+
+178
+00:41:31,239 --> 00:41:36,179
+Şimdi şöyle de düşünebilirsiniz. Size yardımcı olması açısından şöyle de tarif ederim.
+
+179
+00:41:46,260 --> 00:42:10,620
+Bir tane inputum var. V'yi geldi. Bir direnç üzerinden geliyor ve de boşta. Ben burayı ölçsem. Buradan akım akar mı arkadaşlar? Herhangi bir şekilde devre tamamlanmıyor toprağa gidip. Akım akar mı? Akmaz. O zaman şöyle düşünmen lazım. Gerilimler nasıl hesaplanıyor burada diye düşünmeniz lazım. Akım akmadığı için.
+
+180
+00:42:11,188 --> 00:42:18,868
+Akımın o akması için A ile B noktasının gerilimlerinin arasında bir potansiyel farkı olması lazım.
+
+181
+00:42:19,468 --> 00:42:24,408
+V A'nın V A eksi V B bölü R'dir buradan akacak akım.
+
+182
+00:42:25,748 --> 00:42:29,568
+Değil mi? Yani bu da V R bölü R'dir.
+
+183
+00:42:29,972 --> 00:42:42,771
+Eğer akım akmıyorsa V ile VB birbirine eşittir. Yani VI eşittir. VB de VI eşit oluyor. Yani akım akmadığı zaman burada ölçüm yaptığınızda V output için aynen VI görürsünüz.
+
+184
+00:42:42,771 --> 00:42:47,212
+Orada da VI'nin negative cycle'da, bakın şurası.
+
+185
+00:42:49,231 --> 00:42:49,932
+Sıfırda.
+
+186
+00:42:50,452 --> 00:43:00,012
+Yani pozitif gelinlerde kısa devre olduğu için diyot sıfırda, negatif saykıllarda aynen ve output negatif saykılı aynen gösteriyor.
+
+187
+00:43:02,112 --> 00:43:03,672
+Bu anlaşıldı mı arkadaşlar?
+
+188
+00:43:05,832 --> 00:43:06,552
+Sorusu olan?
+
+189
+00:43:08,692 --> 00:43:09,792
+Yok zannedersem.
+
+190
+00:43:11,612 --> 00:43:17,012
+Şimdi burada çeşitli şeyler verilmiş.
+
+191
+00:43:17,619 --> 00:43:27,619
+Burada Clipper Circuit'ler verilmiş. Tabi burada en basitinden biz önce neyi gördük mesela?
+
+192
+00:43:27,619 --> 00:43:38,619
+Biz burada, şurada neyi gördük? Önce bunu fark etmeye... Pardon bizim gördüklerimiz var mı burada? Yok.
+
+193
+00:43:45,376 --> 00:44:00,895
+Serileri gördük. En basitinden ilk başta neyi görmüştük arkadaşlar? Bizim şunu görmüştük. Ondan sonra bir de neyi gördük arkasından? Şunu gördük örnek olarak.
+
+194
+00:44:00,895 --> 00:44:09,576
+Bakın seri bağlamanın çeşitleri var. Örneğin buradaki pozitif kaynağı ters bağladığımızda ne oluyormuş?
+
+195
+00:44:10,195 --> 00:44:32,936
+Aşağı doğru bir çekme oluyormuş bu sefer. Örneğin şurada bir devremiz var. Bu sefer diyotu ters çevirmiş bakın. Diyotu ters çevirmiş. Burayı da negatif yapmış. Örneğin şunu çözelim mi sizinle beraber? Şimdi onu çözelim sizinle beraber. Bir de ben sizden neleri isteyeceğim arkadaşlar. İlk ödeviniz, ikinci ödeviniz pardon.
+
+196
+00:44:38,068 --> 00:44:48,688
+Simülasyon programında şuradaki devreleri 1, 2, 3, 4, 5, 6, 7. 7 tane.
+
+197
+00:44:53,715 --> 00:45:11,395
+Paralel Clipper'ı, seri Clipper'ı şöyle bir sinizoidal giriş uygulayın ve davranışını bu sinizoidal çıktığıları aynen çizdirmenizi istiyorum simülasyon programında.
+
+198
+00:45:11,395 --> 00:45:20,496
+Aynen bunları kuruyorsunuz devre olarak. Devre kurmakta herhangi bir sorun yok. Sadece bir diyot var, direnç var.
+
+199
+00:45:21,268 --> 00:45:36,008
+Ve de aynı şekilde neyiniz olacak arkadaşlar? Bir gerilim kaynağınız olacak. Sizler bir simülasyon programını da şöyle açacaksınız. Örneğin şuraya bir tane DC gerilim kaynağı. Geliyor mu sesim?
+
+200
+00:45:48,947 --> 00:45:50,207
+Ses geliyor mu arkadaşlar?
+
+201
+00:45:52,067 --> 00:45:53,167
+Geliyor hocam.
+
+202
+00:45:53,707 --> 00:46:14,727
+Tamam. Şimdi çeşitli şeyler var. Devre elemanları var şöyle. Sizin kullanacağınız bir diyot, bir direnç, bir DC gelim kaynağı şu şekilde. Bir de AC gelim kaynağı şu şekilde. Gelip buradan AC gelim kaynağını bağlayın.
+
+203
+00:46:15,123 --> 00:46:37,123
+Örneğin, şurası artı 10 ile eksi 10 arasında ve artı 20 ile eksi 20 arasına gidip gelsin. Burada bir DC gelim kaynağımız var. 3 volt bağlarsınız, 5 volt bağlarsınız. Bu sizin tercihiniz. Arkasından direnç diyotunuzu bağlayın. Ondan sonra...
+
+204
+00:46:37,711 --> 00:46:49,472
+Gelin, direncinizi çizin ve bunu toprağa bağlayın. Bu da aynı şekilde toprağa bağlanacak. Arkasından osiloskop kullanacaksınız tabii ki.
+
+205
+00:46:57,652 --> 00:47:21,652
+Şöyle olacaktır. Şöyle baktığımızda sinizoidal input'u çiziyor olacaktır. Bir ucunuzda arkadaşlar, B ucunuzda şuraya koyun. Yani direncin üzerindeki V-out'u inecek. Onu da beraber çizdirin. Ne olacak? Kimi yerde kesilecek, kimi yerde şu şekilde devam edecek.
+
+206
+00:47:24,052 --> 00:47:49,012
+Bunların hepsini gerçekleştirde aynı benim yaptığım gibi. Hatta bir tane size örnek yapıyordum şimdi. Şunu alalım. Bakın. Şöyle alalım. Devrimiz. Sınavda çıktı mesela bu size soru olarak. Dediler ki v-inputumuz bizim şu şekilde veriliyor. Geldik bağladık. Ondan sonra.
+
+207
+00:47:51,539 --> 00:48:05,099
+Bir direncimiz var. Şöyle bir direnç bağlanmış ve de buradan da Vout ölçülüyor.
+
+208
+00:48:05,219 --> 00:48:12,419
+Vout ne arkadaşlar? Ben böyle uzatılmış çeksem de aslında direncin uçlarındaki gerilim demek aslında.
+
+209
+00:48:12,419 --> 00:48:18,879
+Şurası ne? Artı eksi V input. Yani buradan sinizoidal kaynak.
+
+210
+00:48:19,284 --> 00:48:44,103
+Uyarlanacak şimdi. Gelin beraberce bir çizelim onu. Şimdi önce elimizde ne var? Şunu biliyoruz. Güzelce çizelim. Sinizoidal inputumuz var. Ve inimiz var. Bir periyot boyunca çizeceğim şimdi bunu. Örneğin burası artı 10 volt olsun.
+
+211
+00:48:44,692 --> 00:49:00,491
+Burası eksi 10 volt olsun. Şuraya da örneğin tersten bağlandığı için gördüğünüz gibi burası da eksi 5 volt olsun. Örneğin eksi 5 volt olsun. Çizmeye başlayalım bakalım.
+
+212
+00:49:01,611 --> 00:49:09,491
+Tam şu sıfır anında, tam o sıfır anında benim ve output'umu da şöyle çizeyim.
+
+213
+00:49:10,356 --> 00:49:28,896
+Şurayı yeşille göstereyim. Sıfır anındayım. Ve outputumu da kırmızıyla çizeceğim. Tam sıfır anındayım. Sıfırsa burası. Ne olacak arkadaşlar? Sıfır eksi beşten devam edecek. Diyot ters bağlanmış arkadaşlar.
+
+214
+00:49:29,556 --> 00:49:36,336
+Dolayısıyla diyotun eksi ucu, ki şurası da artı ucu, bu tarafta topraktan geliyor.
+
+215
+00:49:37,076 --> 00:49:52,816
+Diyotun eksi ucu nerede? Eksi ucu daha düşük. Artısına göre daha düşük potansiyel. Dolayısıyla diyotun eksi ucunun artısına göre daha düşük potansiyelde olması ne manaya gelir arkadaşlar?
+
+216
+00:49:54,096 --> 00:50:02,776
+İletimde olduğu manasına gelir. Mesela düzgünlüğü çizelim şöyle. Eğer benim burada artı 5 voltum varsa.
+
+217
+00:50:03,327 --> 00:50:26,207
+Ne olacak arkadaşlar? İletimde olacak. Artı 1 volt mu olsa yine iletimde olacak. Peki ters bağlayayım şöyle. Mesela artı eksi 5 volt. Ne oluyor? VA, VB'den büyük olduğu için. VA eksi VB 5 volt olmuş oluyor.
+
+218
+00:50:26,739 --> 00:50:40,519
+Peki ben burada eksi 5 volt bağlarsam. VA ucu VB'den küçük oluyor. VA küçüktür. Bu ne olmuş oluyor aslında?
+
+219
+00:50:44,211 --> 00:51:07,271
+Pozitif bir çıktı verecekti. Dolayısıyla iletimde olacaktı. Tam sıfır anında şunu, tam sıfır anında şöyle olmuş oluyor dolayısıyla. Tam V'in sıfır olduğunda şu şekilde bir kısa devre haline gelmiş oluyor. Şurada da direnç olmuş oluyor.
+
+220
+00:51:09,844 --> 00:51:20,844
+Tam burası sıfırsa, burada da eksi 5 volt var. Tam şu A noktasıyla toprak arasında Vout'ta kaç volt olacak arkadaşlar?
+
+221
+00:51:22,844 --> 00:51:25,964
+Eksi 5 volt olacak. Yani şurası.
+
+222
+00:51:27,964 --> 00:51:33,744
+Devam edeyim. Şimdi ben V'ini arttırmaya başladım.
+
+223
+00:51:34,260 --> 00:51:42,579
+Örneğin 1 volt oldu, 2 volt oldu, 3 volt oldu, 4 oldu, 5 oldu. 5 olduğu zaman ne olacak arkadaşlar?
+
+224
+00:51:42,680 --> 00:51:47,340
+Ancak 5'e çıktığı zaman, burası 5 volt olduğu zaman şöyle olmuş olacak.
+
+225
+00:51:51,284 --> 00:52:08,983
+Şöyle sileyim şurayı. Anca 5 volt olduğu zaman, şöyle yaklaştığımda, anca o zaman şöyle bir gelişmiş olacak. 5 volt.
+
+226
+00:52:13,523 --> 00:52:22,155
+Bu 5 volt, eksi 5 volt, 2 derci ve ancak...
+
+227
+00:52:27,059 --> 00:52:28,659
+Ciyom kesildi yine biraz ama.
+
+228
+00:52:29,079 --> 00:52:32,119
+Ses geliyormuş şu anda. Sağlıklı.
+
+229
+00:52:36,563 --> 00:52:38,563
+Ben bir ak...
+
+230
+00:52:38,563 --> 00:52:41,263
+Kesildi değil mi demin?
+
+231
+00:52:41,703 --> 00:52:42,563
+Kesiliyor hocam.
+
+232
+00:52:51,987 --> 00:52:58,207
+Bağlantısı iyi olan şu anda kim var aramızda? Ben ondan bir ilgi alayım kesildiği zaman.
+
+233
+00:53:01,972 --> 00:53:03,092
+[öğrenci] [öğrenci]
+
+234
+00:53:06,228 --> 00:53:07,648
+[öğrenci] [öğrenci] geliyor mu sesim?
+
+235
+00:53:12,019 --> 00:53:13,139
+Hocam ben şu an alıyorum.
+
+236
+00:53:13,139 --> 00:53:14,099
+[öğrenci]'e geliyor mu ses?
+
+237
+00:53:16,139 --> 00:53:17,219
+Tamam, [öğrenci].
+
+238
+00:53:17,759 --> 00:53:18,339
+Evet hocam.
+
+239
+00:53:18,419 --> 00:53:25,299
+Sen şimdi sesin net gelmediği zaman beni aç mikrofonunu sen uyar, tamam mı?
+
+240
+00:53:26,219 --> 00:53:26,459
+Tamam.
+
+241
+00:53:26,480 --> 00:53:27,419
+Şu an ses nasıl geliyor?
+
+242
+00:53:28,239 --> 00:53:29,259
+Şu an geliyor.
+
+243
+00:53:29,959 --> 00:53:32,379
+Tamam, tamam. Aynen, devam edelim.
+
+244
+00:53:32,639 --> 00:53:33,919
+Sen şimdi kapatabilirsin.
+
+245
+00:53:34,199 --> 00:53:34,500
+Tamam.
+
+246
+00:53:34,992 --> 00:54:01,072
+Dediğim gibi sıfırdaydık demin. Artı 5 volta kadar çıktık. Ancak o zaman iletimim benim kısa devre olma pozisyonum 5'e kadar devam etti. Bu 5'e geldiği zamansa ne olacak arkadaşlar 5 volta geldiği zaman? 5 volt dediğim yerleriz peki. Şurası yaklaşık. Şurası. Şöyle. 10 volta 5 volt demiştim. Şurası yaklaşık 5 volt.
+
+247
+00:54:01,648 --> 00:54:17,648
+Şuraya kadar arkadaşlar, yani şu kreye kadar, 5 volt olduğu zamana kadar ben aynen ne yapacağım? Benim gerilimim artacak. Örneğin 1 olacak. Ondan sonra...
+
+248
+00:54:24,532 --> 00:54:41,252
+Tamamdır. Şimdi sıfırdan başladım. İletimdeydi aynı şekilde. 1 volt oldu diyelim bu. Eksi 5 oldu diyelim. Ne olacak arkadaşlar? Hala iletimde olduğu için 1 eksi eksi 5 eksi 4'e çıkacak.
+
+249
+00:54:51,583 --> 00:55:10,183
+Girişin 2V olduğu zaman, eksi 3V'a düşecek. O Vout'a düşecek. Tam şuraya gelene kadar, yani inputun 5V olduğu yere gelene kadar...
+
+250
+00:55:16,403 --> 00:55:19,304
+Ekran zoom oldu demek ne demek? Kesik mi?
+
+251
+00:55:21,704 --> 00:55:24,684
+Hareketlerinizi göremiyordum da hocam anlattığınız yeri.
+
+252
+00:55:24,684 --> 00:55:26,644
+Görüyor mu?
+
+253
+00:55:30,771 --> 00:55:31,971
+Ben de göremiyorum.
+
+254
+00:55:33,311 --> 00:55:36,091
+Göremiyor musun? Şu anda küçük.
+
+255
+00:55:40,788 --> 00:55:43,367
+O şekilde değil hocam, çok geç geliyor.
+
+256
+00:55:43,367 --> 00:55:45,228
+Tekrar şu anda...
+
+257
+00:55:49,172 --> 00:55:55,891
+Anladım. Bir sorun devam ediyor. Maalesef bu hafta böyle bir sorun var diyelim.
+
+258
+00:56:19,476 --> 00:56:20,976
+Evet, bir eşitlik var.
+
+259
+00:56:27,795 --> 00:56:32,016
+Ben bir internet şirketini arayayım arkadaşlar.
+
+260
+00:56:32,016 --> 00:56:39,516
+Bir beş dakika, üç beş gece başlıyoruz arkadaşlar.
+
+261
+01:11:42,100 --> 01:11:48,860
+Evet arkadaşlar, umarım bakalım düzeltebilmişler mi? Nasıl geliyor sesim?
+
+262
+01:11:52,435 --> 01:11:53,255
+İyi hocam.
+
+263
+01:11:53,555 --> 01:11:54,315
+İyi görüyor hocam.
+
+264
+01:11:56,995 --> 01:11:57,835
+Tamamdır.
+
+265
+01:11:59,155 --> 01:12:00,815
+Güzel geliyorsa güzel.
+
+266
+01:12:01,195 --> 01:12:05,295
+Şimdi en son bu tarz sorularda neyi görüyorduk?
+
+267
+01:12:06,335 --> 01:12:07,655
+Şurada kalmıştık.
+
+268
+01:12:08,115 --> 01:12:10,615
+Biz önce sıfıra göre belirlemiştik.
+
+269
+01:12:11,215 --> 01:12:12,415
+Sıfırda ne oluyor demiştik.
+
+270
+01:12:12,415 --> 01:12:14,036
+V-input sıfırsa şayet.
+
+271
+01:12:15,055 --> 01:12:17,995
+Şöyle ana mavi ekranımızdaki şuradaki.
+
+272
+01:12:18,515 --> 01:12:33,175
+Ana input'umuzu izliyoruz. Sıfırken ne demiştik? Eksi 5 volt olduğu için diyot eksi ucu daha düşük gerilimde olduğu için iletimde olduğu zaman şurası kısa devre oluyor demiştik.
+
+273
+01:12:33,675 --> 01:12:44,216
+Dolayısıyla benim eksi 5 voltum, o anda gözüken eksi 5 voltum aynen dışarıda bizim output'umuzda gözüküyordu. Eksi 5 volt olarak.
+
+274
+01:12:44,948 --> 01:13:05,948
+Sonra ve inputum benim sıfırdan artık artmaya başlıyor. Sıfırdan artmaya başlıyor. Ne zaman benim eksi 5 voltumun tersi olan artı 5 volta geldiği zaman artı 5 volta geldiği zaman o da şurasıydı.
+
+275
+01:13:05,948 --> 01:13:10,868
+Şu andı yani artı 5 volt şurası yaklaşık belirledim.
+
+276
+01:13:11,859 --> 01:13:29,420
+Oraya geldiği zaman ne oluyor arkadaşlar? Örneğin 1 volt olduğu zaman, eksi 5 eksi 1 volt da eksi 4 volt. 2 volt olduğu zaman eksi 3 volt. 3 volt olduğu zaman eksi 2 volt şeklinde giderek artıyor ve tam şu anda sıfıra ulaşıyor.
+
+277
+01:13:30,079 --> 01:13:38,939
+Bakalım bundan sonraki davranışı ne olacakmış? Bu andan sonra arkadaşlar 5'i geçtik diyelim, 6 olduk diyelim.
+
+278
+01:13:39,891 --> 01:14:04,731
+6 olduğumuzda ne olacak? Burada V'inde 6 olduğu zaman şöyle daha yüksek bir gerilim var burada diyelim. 6 volt diyelim. 5. Eksi ucundaki gerilim pozitif oluyor. Yani toprağa göre orada pozitif bir gerilim var ve eksi ucu, diyotun eksi ucu artı ucundan daha büyük bir gerilime sahip. Dolayısıyla diyot iletimde değil. Artık ne olmuş oluyor? Burası kopmuş oluyor.
+
+279
+01:14:05,203 --> 01:14:32,744
+Ne zamana kadar böyle gidecek? Yani dışı ve out'umuz sıfır olacak. Peki ne zamana kadar böyle gider arkadaşlar? Tekrar şuradaki 5 volt olma durumuna kadar gider. Yani şuraya kadar gelir. Oraya kadar demek ki sıfır oldu. Peki sıfırın altına düştü diyelim. Pardon 5'in altına düştü. 4 oldu. Burası 4 oldu diyelim. Ne olacak?
+
+280
+01:14:33,363 --> 01:14:52,503
+Bu sefer eksi 1 volt oluşacak diyotun uçlarında. Dolayısıyla diyot tekrar iletime geçecek. Bu andan itibaren tekrar iletime geçecek. Ve yavaş yavaş aşağı doğru inecek.
+
+281
+01:14:52,503 --> 01:15:00,503
+Peki sıfırdayken ne hale gelmişti hatırlarsanız. Sıfırdayken şöyle çizelim. Sıfırdayken.
+
+282
+01:15:01,908 --> 01:15:25,468
+Eksi 5'e gelmişti. Demek ki burada şöyle bir azalma söz konusu. Şöyle bir azalma söz konusu. Tam sıfırdayken. Peki sıfırın daha da altına indiği zaman ne olacak arkadaşlar? Düşünelim. Eksi 5'in altına iniyoruz şimdi. Eksi 5, eksi 6, eksi 7, eksi 8 gidiyoruz. Devamlı ne olacak? Daima katlanacak.
+
+283
+01:15:25,855 --> 01:15:51,855
+Örneğin, ne demiştik ki ben? Eksi 10 voltta ne olacak mesela? Eksi 10 volt neresi? Benim için şurası, şu an, şu zaman dilimi. Şu zaman al. Eksi 10 voltta. Burada eksi 10 volt, burada da eksi 5 volt. Nereye kadar inecek bu? Eksi 15 olacak. Yani şuraya kadar gelecek. Şu andan itibaren...
+
+284
+01:15:52,275 --> 01:16:19,595
+Burayı takip ediyor. Ve tekrar dikkat edin. Şurada görmüş olduğumuz benim inputum 0 olduğunda eksi 5 voltta olacak. Şurada. Ondan sonra yaklaşık burada devam ettirecek olursak sinizoidal işareti.
+
+285
+01:16:20,192 --> 01:16:44,952
+Şu şekilde. Bunun 5 volt olduğu zaman, yani yaklaşık şurada, şöyle çizersem, yani şu ana kadar ne yapacak? Devam edecek. Sinizoidal işaretim bundan sonra şuraya kadar şöyle sinizsü takip edecek. Ne yapmış oldu arkadaşlar bu?
+
+286
+01:16:45,344 --> 01:16:55,703
+Gördüğünüz gibi aslında adım adım mantık aşamasında nerede çalışıp nerede çalışmadığına göre ben çizimimi tamamlıyorum arkadaşlar.
+
+287
+01:16:55,703 --> 01:17:01,904
+Burada da buradaki örneklerde de hepsini sizin çıkartmanızı istiyorum.
+
+288
+01:17:02,084 --> 01:17:06,824
+Çünkü bu tür örneklerin hepsi sınavlarda gelecek arkadaşlar.
+
+289
+01:17:11,475 --> 01:17:24,775
+Şu 4 no'lu örneği çizelim. Onu da nasıl çizdiğimizi gösterelim. Oradaki örneğimizde, bu arada bir önceki örnekte sormak istediğiniz bir soru var mı?
+
+290
+01:17:28,659 --> 01:17:30,139
+Anlaşılıyor mu arkadaşlar?
+
+291
+01:17:34,612 --> 01:17:40,791
+Hocam, onda değil de paralelde bir şey soracağım. Bu bittikten sonra sorabilirim hocam istiyorsanız.
+
+292
+01:17:41,692 --> 01:17:41,992
+Tabii.
+
+293
+01:17:41,992 --> 01:17:43,291
+Ve input.
+
+294
+01:17:47,539 --> 01:17:56,180
+Evet. Şimdi paralelde bir soru soracaktın. Hangisindeydi?
+
+295
+01:17:57,340 --> 01:18:08,119
+Hocam paralelde ters akım olduğu halde nasıl iletiyor ben onu anlamadım. Yani grafinin altındakini iletiyor yani tam ters olarak.
+
+296
+01:18:08,559 --> 01:18:10,139
+Şunu mu diyorsun? Şu örnekle mi?
+
+297
+01:18:10,319 --> 01:18:12,039
+Evet, evet, evet. Evet hocam.
+
+298
+01:18:13,460 --> 01:18:15,460
+Hemen ona bir bakalım.
+
+299
+01:18:18,931 --> 01:18:34,951
+Şimdi şöyle düşüneceksin bu ters bağlamalı. Aslında ters bağlamalı bir örnek çözsek daha güzel olacak. Şimdi burada şöyle düşüneceksin.
+
+300
+01:18:38,420 --> 01:18:41,760
+Benim inputum şu mavi ile gösterdiğim şekilde.
+
+301
+01:18:43,760 --> 01:18:46,260
+Pozitifte ne oluyor? Bak, pozitifte ne oluyor?
+
+302
+01:18:47,220 --> 01:18:48,039
+Pozitif kısımda.
+
+303
+01:18:48,700 --> 01:18:52,319
+Pozitifte isem şayet, ne olacak arkadaşlar?
+
+304
+01:18:53,380 --> 01:18:59,100
+Pozitifteyken, şurayı da çıkışı da kırmızı ile göstereyim.
+
+305
+01:19:00,100 --> 01:19:06,220
+Pozitifteyken, benim buradaki gelim, A ve B uçlarındaki gelim bir kere...
+
+306
+01:19:07,155 --> 01:19:13,376
+Toprağa göre yüksek olduğu için direnç üzerinden geçip B noktasındaki gerilim yüksek olacak.
+
+307
+01:19:13,895 --> 01:19:21,835
+Dolayısıyla benim pozitif kısımlarda ben muhakkak diyotun üstüne pozitif bir gerilim düşecektir.
+
+308
+01:19:22,395 --> 01:19:27,435
+Dolayısıyla diyot pozitif iletime geçtiğinde ne gibi düşüneceğim burayı?
+
+309
+01:19:28,115 --> 01:19:29,376
+Kısa devre gibi düşüneceğim.
+
+310
+01:19:29,376 --> 01:19:33,195
+Kısa devre olduğu zaman V output kaç olacak?
+
+311
+01:19:35,699 --> 01:19:52,779
+Üzerinde düşen gerilim sıfır olacak. Çünkü bir kısa devre ter. Uçları arasında, A, B ve T noktalar arasındaki gerilim sıfır olacak. Peki, tersi durumu düşüneyim. Artık A noktası, artık V'ye negatif gerilimler uygulamaya başladığım anları düşünüyorum.
+
+312
+01:20:00,000 --> 01:20:25,479
+Gerilimim de aynı şekilde toprağa göre negatif gerilimde. Yani negatif ağ ucundan negatif uyguladığım için B noktası da toprağa göre daha düşük olacak için. Burada ne oluyor arkadaşlar? Burası açık devre oluyor. Şurası açık devre oluyor. Dolayısıyla V output nerelerde ölçülecek arkadaşlar? Burada ölçülecek.
+
+313
+01:20:26,131 --> 01:20:41,631
+Voutput burası aslında. Açık devre. Şimdi teli uzatıp uzatmamam çok önemli değil. Önemli olan orada VBT arasında açık devre mi olması. Açık olunca ne demek aslında bu? Aslında şu hale dönmüş oluyor.
+
+314
+01:20:44,131 --> 01:20:51,251
+Ben şöyle bir gerilim ölçüyorum aslında. Artı eksi V0.
+
+315
+01:20:51,923 --> 01:21:09,744
+Peki, buradan ne uygulanıyor? V-in. Bakın burada ne uyguluyorsam gelimi olarak, buradan da akım akmaz değil mi? Tamamlanmıyor bir şekilde devre. V-in aynı, V-out olur. V-in aynı, V-out. V-out aynı, V-in olur.
+
+316
+01:21:10,844 --> 01:21:17,103
+Çünkü akım akmıyor devreden. Arada bir direnç bile tutsanız, mesela bir direnci üzerine bir gelim verin.
+
+317
+01:21:17,391 --> 01:21:38,731
+Ondan sonra onun toprağa göre gerilimini ölçün. Aynı öbür ucundan uygulanan gerilim değer gözükecektir. Öbür ucunda da ne var? Eksi gerilimler var. Eksi yönde diyot akıtmıyor. Diyot o anda açık devre. Anlaştık mı?
+
+318
+01:21:42,068 --> 01:21:54,268
+Veyahut aynı V-İ'ni takip ediyor. Ondan sonra pozitif gelime geçtiği zaman da bu sefer pozitif saykıla geçtiğimiz zaman da iletmemeye başlıyor.
+
+319
+01:21:56,468 --> 01:21:58,888
+Bir soru cüzdan arkadaş anlaşıldı mı bu kısa?
+
+320
+01:21:58,888 --> 01:22:03,888
+Evet hocam. Yani direncim üstünden akım geçmesini sağlıyoruz diyebiliriz değil mi?
+
+321
+01:22:05,688 --> 01:22:07,087
+Hangi durumda?
+
+322
+01:22:07,439 --> 01:22:14,340
+Şey durumunda, yani VB'nin VT'den küçük olduğu durumda yani hocam.
+
+323
+01:22:14,559 --> 01:22:34,659
+VB'nin VT'den küçük olduğu durumda bak şu oluyor. Akım akmıyor. Buradaki akım sıfır. Direncin üzerinde akım olmuyor. Akım sıfır olması demek ki, demin onu açıkladım ya. Bir direnç var. Vini uyguluyorsun şuradan. Bir direncim var geldim böyle. Öbür uç da boşta.
+
+324
+01:22:35,507 --> 01:22:50,507
+Bu boş olan üç Vout şu anda. Devreden bir akım akıyor mu? Hayır, akmıyor. Voutput'un gelimi ne olur bu durumda? Eğer bir direncin üstünden akım akmıyorsa...
+
+325
+01:22:52,435 --> 01:22:55,796
+A ve B noktalarının gelimi için ne diyebilirsin bana?
+
+326
+01:22:56,296 --> 01:22:57,195
+Aynı kalır hocam.
+
+327
+01:22:57,895 --> 01:23:00,675
+Aynı olur. Dolayısıyla V'in eşitir, V'out olur bu durumda.
+
+328
+01:23:01,095 --> 01:23:05,135
+Dolayısıyla burada V'out aynı V'ini takip edecek.
+
+329
+01:23:05,635 --> 01:23:08,635
+Oraya eksi 2 uygulandığı zaman çıkışta da eksi görünecek.
+
+330
+01:23:08,755 --> 01:23:11,435
+Eksi 5 olduğu zaman eksi 5 gözükecek.
+
+331
+01:23:12,055 --> 01:23:13,555
+Herhangi bir akım yok yani o anda.
+
+332
+01:23:14,335 --> 01:23:18,395
+Ancak diyot akım geçirdiği pozitif saykılda
+
+333
+01:23:18,868 --> 01:23:42,968
+Akım oluyor devreden. Tam o durumda da zaten kısa devre oluyor diyor. Tamam hocam. Tamam. Sağ olun. Rica ederim. Şimdi burada şu soruyu çözelim. Bakın tersi ne olmuş? Burada daha güzel olacak bu soruyu çözmemiz. Daha böyle sizi aydınlatır diye düşünüyorum. Şöyle yapalım.
+
+334
+01:23:45,779 --> 01:23:55,699
+Şuradaki diyotu ters çevireyim. Böyle daha iyi anlaşılacak. Hem böyle ters mantıklı sorular daha iyi yapalım.
+
+335
+01:23:55,699 --> 01:24:09,920
+Bakın, burada nasıl bir input var? Önce bana bir dalga şekli verilmiş. Demişler ki, benim rengi değişti.
+
+336
+01:24:12,532 --> 01:24:32,152
+Şimdi benim inputum da şu şekilde verilsin. V input nedir? Şu sol taraftan uygulanan gelin. Bir cycle boyunca V'ini çiziyorum şimdi. Dikkat edin. Burada iki tane temel şey var.
+
+337
+01:24:40,435 --> 01:25:03,015
+Şöyle, eksi 10 arasında giren bir şey olsun. Buradaki gelimde eksi V gelimi vermiş ama dikkat edin bu ters bağlanmış. Kısa uç yukarıyı gösteriyor, uzun uç aşağıya gönderiyor. Yani pil tersten bağlanmış gibi, şöyle olmuş gibi düşünün. Yani eksi uç burada, pozitif uç buradaymış gibi düşünün.
+
+338
+01:25:03,828 --> 01:25:30,208
+Ters bağlanmış. Diyot da ters bağlanmış arkadaşlar. Bu durumda yapacağımız analiz ne olacak? Adım adım bir analiz uygulayacağız. Önce sıfırdaki durumumuza bakalım. Onu yeşille göstereyim. Sıfırlardaki durumumuza bakayım şimdi. Sıfır uyguladığımda gelin mi? Ne olacak arkadaşlar? Buradan bir benim diyotumun şu ağ avcı olsun.
+
+339
+01:25:30,771 --> 01:25:56,591
+Şurası da B ucu olsun. Ne olacak arkadaşlar sıfır uygulandığında? B ucundaki gerilim değil mi? A ucundakinden yüksek. Sıfır bol. Çünkü eksi gerilim uygulanıyor A ucuna. Dolayısıyla benim A ucundaki gerilimim B ucuna göre, toprağa göre konuşuyorum. B A, V B'den küçük. Dolayısıyla bu anda iletimde mi?
+
+340
+01:25:58,163 --> 01:26:18,163
+İletim de olmadığı için orası nasıl olacak? Açık devre gibi davranacak. Yani devre şu anda şöyle olacak. Girişte 0 volt varken şöyle kopmuş. Şurada bir tane şey var. Gidiyor. Burası toprağa bağlanmış oluyor.
+
+341
+01:26:19,163 --> 01:26:22,783
+Ve out'um benim buradan ölçeceğim gerilim olacak.
+
+342
+01:26:23,572 --> 01:26:37,791
+Herhangi burada bir bağlantı olmadığı için buradan bir akım akmıyor. Devre tamamlanmıyor. Aynen çıkışta 0 voltu görüyorum. Yani şuralarda aynen 0 volttan geçiyor olacak. Tamam.
+
+343
+01:26:37,791 --> 01:26:50,172
+Şimdi benim örneğin arttırmaya başlayayım gerilim mi? Şu V'yi de 3 kabul edeyim. Yani eksi 3 voltmuş gibi devrede olsun.
+
+344
+01:26:50,739 --> 01:27:13,260
+Şimdi benim, ben buraya 1 volt verdiğimde, 1 volt verdiğimde ne olacak arkadaşlar? Buraya artı 1 volt verdiğimde hala buradaki gelim neyden düşük olacak? V'den küçük olacak. Hala şey değil. 2 volt verdim. Hala, yani gidiyorum artık arttırıyorum şöyle. Gelin mi 1 volt, 2 volt verdim. Hala iletimli değil.
+
+345
+01:27:18,015 --> 01:27:37,235
+Hala iletimde değil. Öyle değil mi? 3 volt verdiğimde hala iletimde değil. 4 volt verdiğimde hala iletimde değil. 5, 10. Bak mesela burası 10 volt olduğu zaman hala buradaki gerilime göre düşük. Yüksekte kalıyor. B gerilimi hep yukarıdayken yüksekte kalıyor.
+
+346
+01:27:39,475 --> 01:28:06,835
+Pozitif gelimlerimde, yani B'nin ve B noktasının pozitif gelimler aldığı şu bölge, yani şu bölgenin hepsi pozitif gelim gösteriyor. Pozitif gelimlerin hepsinde ne olacak arkadaşlar? Benim devrem aynen böyle açık kalacak. Yani benim çıkışım aynen böyle. Ne olacak? Sıfır. Peki bu ne zaman?
+
+347
+01:28:07,572 --> 01:28:19,192
+İletime geçer diyecek olursanız, B ucu eksi 3 voltun altına indiğinde, B ucu eksi 3 volt, o da şurası olsun örneğin.
+
+348
+01:28:21,092 --> 01:28:30,032
+Şu ucu eksi 3 volt olsun. Örneğin B ucu V'nin eksi 3.1 uygulandığında, eksi 3.1 olsun.
+
+349
+01:28:30,771 --> 01:28:50,652
+Eksi 3.1 haline geldiğinde B ucu ne olacak arkadaşlar? A ucunun gerilimi B ucundan yüksek hale gelmiş olacak. Anca o zaman ne olacak? Şurası iletime geçecek. Anca o zaman iletime geçecek.
+
+350
+01:28:50,652 --> 01:28:55,211
+Ve benim çıkışımda ne gözükecek arkadaşlar?
+
+351
+01:28:56,020 --> 01:29:07,460
+Yani eksi 3'ü biraz geçtiği zaman, eksi 3'ün biraz altına düştüğü zaman, eksi 3.001 oldu diyelim.
+
+352
+01:29:07,540 --> 01:29:13,600
+B noktasındaki gelin. Yani şurası. Ne olacak? Burası kısa devre olacak. Ne olacak arkadaşlar?
+
+353
+01:29:13,600 --> 01:29:22,200
+V-ot'ta ne gözükecek? Eksi 3 volt gözükecek. Demek ki ben buraya kadar geldim. Biraz daha böyle geldim.
+
+354
+01:29:22,576 --> 01:29:26,876
+Eksi 3 voltun olduğu yerde aşağı indi.
+
+355
+01:29:27,935 --> 01:29:31,835
+Ve de tam bu andan itibaren ne olacak arkadaşlar?
+
+356
+01:29:32,735 --> 01:29:38,195
+Ben eksi 3 volt görmeye başladım.
+
+357
+01:29:40,475 --> 01:29:41,315
+Ne zamana kadar?
+
+358
+01:29:42,515 --> 01:29:43,576
+Yine şuraya kadar.
+
+359
+01:29:43,975 --> 01:29:46,876
+Bakın buradaki şekilde de net çizmiş.
+
+360
+01:29:51,091 --> 01:29:55,391
+Nerede benim o çizgi şekil?
+
+361
+01:29:58,836 --> 01:30:14,996
+Pardon, pardon şeyi dikkate almadım ben. Hemen orayı düzelteyim. Şu kırmızıları düzelteyim tekrar. Orada bir yanlış şey yaptım ben, düşündüm. Şuraları siliyorum.
+
+362
+01:30:26,228 --> 01:30:39,967
+Şöyle geldim. V inim var. Şöyle tamamladım. Şimdi V inim sıfır olduğunda benim nerelerden geçiyordum? Aynen sıfırlardan geçiyordum.
+
+363
+01:30:39,967 --> 01:30:52,128
+Pozitif gelimler uygulamaya başladığımda, pozitif gelimler uyguladığımda, şöyle yaptığım zaman pozitif gelimler uygulamaya başladığımda, şöyle geldim.
+
+364
+01:30:52,564 --> 01:31:09,564
+Burası ne olacaktı arkadaşlar? Örneğin, artı 1 volt, artı 2 volt, 10 volt, 5 volt verdiğimde ne olacak arkadaşlar? Burası aynen açık devre kalacağı için V'in aynen V'e ota gözükecek. Onu ben atlamışım. Kusura bakmayın arkadaşlar.
+
+365
+01:31:14,707 --> 01:31:30,947
+Vout, kırmızıyla çizleyeyim. Vout aynı V input'u takip ediyor. Ne zamana kadar? Ancak B ucundaki gerilim, B ucundaki gerilim, eksi 3 voltun, yani şurası da eksi 3 volt olsun.
+
+366
+01:31:41,619 --> 01:31:43,000
+Burası açıkta kalır.
+
+367
+01:31:43,659 --> 01:31:53,659
+Eğer örneğin, eksi 3 voltun biraz aşağısına indiğinde, yani eksi 3,0001 olduğunda, yani hemen onun altına indiğinde,
+
+368
+01:31:53,659 --> 01:32:03,680
+bu durumda VB gerilimi VA'dan küçük olacağı için, burası artık akım akıtmaya başlayacak.
+
+369
+01:32:04,000 --> 01:32:05,239
+Burası kısa devre olacak.
+
+370
+01:32:05,860 --> 01:32:07,619
+VA'utta ne gözükecek arkadaşlar?
+
+371
+01:32:08,127 --> 01:32:19,807
+V'nin kendisi gözükecek. V'de negatif bir gerilim olduğu için şöyle, eksi 3 boyunca, eksi 3'ün altında olduğu yer boyunca böyle gözükecek.
+
+372
+01:32:20,867 --> 01:32:25,547
+Aynen bu çıkışı oluşacak. Yani kırmızıdaki çıkışı oluşacak.
+
+373
+01:32:25,547 --> 01:32:34,747
+O da, bakın şu çizdiğimiz yöntem. Şurası da eksi V volt. Eksi V volt olarak gözüküyor.
+
+374
+01:32:35,604 --> 01:32:39,064
+Buradaki arkadaşlar analizleri yapabilmek önemli.
+
+375
+01:32:40,224 --> 01:32:53,923
+Çünkü böyle adım adım o yüzden simülasyon programlarının hem çizin hem bu output şekli nasıl oluşmuş muhakkak bunlardan bir iki tanesi sınavlarda karşınıza gelecektir arkadaşlar.
+
+376
+01:33:00,692 --> 01:33:06,692
+Kapasitenin kullanıldığı, yani kapasitenin güç, depolama...
+
+377
+01:33:07,828 --> 01:33:32,028
+Yeteneğinin de yıkıldığı Clamper'la. Clamper arkadaşlar, hani şu masa üstlerinde örneğin bir şeyi eylemek için kullandığınız nesneleri sıkıştırdığınız şeyler vardı ya, kıskaçlar vardır ya. Hani şurasında bir manivale gibi bir şey olur. Şuraya bir parçayı koyarsınız, işte eyleme yaparsınız. Parçanın üzerinde. Clamp bir şeyi sıkıştırmak manasında kullanılıyor.
+
+378
+01:33:32,564 --> 01:33:49,463
+Bunlar arkadaşlar, bu yapılar daha doğrusu kapasitenin iletimde olduğu için devreden akım geçtiği zamanlar dolmasını, devreden akım geçmediği zamanlar ise boşalmasını gösteren yapılar.
+
+379
+01:33:49,463 --> 01:33:51,224
+Örneğin burada bir V input verilmiş.
+
+380
+01:33:51,796 --> 01:34:15,355
+Kare Dalga şeklinde. Örneğin, pozitif gerilim verildiğinde ne olacak arkadaşlar? Şuradan kısa devre gerçekleşecek. İletimde olduğu zaman şurası kısa devre haline gelmiş olacak. Kısa devre olduğu için şu uçların arasındaki gerilim ne olacak arkadaşlar? Şurada kısa devre var. Ve output sıfır olacak.
+
+381
+01:34:16,020 --> 01:34:23,948
+Peki, negatifte olduğu zaman iletimde değil, negatif gerilimdeyim ben. Negatif gerilimde arkadaşlar, burada negatif gerilimler...
+
+382
+01:34:24,051 --> 01:34:45,832
+Oluşmaya başladıkça bu da ters yönde akım akıtmaya başlayacak ve de burayı iki katına çıkarmış olacak. Bunu simülasyon programıyla çizin ama aslında gerçekte böyle değildir bu. Yani yavaş yavaş azalır aslında. Ama kapasite çok büyükse içeriği şu şekli vermek yerine sanki düzmüş gibi ideal bir şekilde göstermiş.
+
+383
+01:34:46,452 --> 01:35:05,051
+Özellikle bu Clamper'ların çalışma mantığını, muhakkak bunların da devrelerini çiziyorsunuz arkadaşlar. Burada verilmiş. İlk kısmı bir hafta sonraya, ikinci kısmı Clamper'lar ise ikinci haftaya alalım arkadaşlar.
+
+384
+01:35:06,891 --> 01:35:09,592
+Hemen onu ben sistemde bir gireyim.
+
+385
+01:35:14,195 --> 01:35:21,516
+Bir şeyimiz de varlar. Burada. Herkes görüyor zannedersem.
+
+386
+01:35:29,876 --> 01:35:43,675
+Şurada bizim elektronik devreler dersinde. Ders duvarımızda arkadaşlar. Şurada elektronik devreler altının içerisinde var bu devrelerimiz.
+
+387
+01:35:43,675 --> 01:35:57,135
+Göreceğiniz gibi bunlar var burada. Bunları muhakkak çiziyoruz. Şimdi onların ödevlerini bir tanımlamasını yapalım.
+
+388
+01:36:04,435 --> 01:36:16,996
+Ödevler ve sınavlar diyelim. Yeni bir ödev tanımlayalım. Önce Clipper'ların ödev 2.
+
+389
+01:36:21,268 --> 01:36:25,867
+bizim LDEV06'daki
+
+390
+01:36:27,927 --> 01:36:36,887
+LDEV06'daki
+
+391
+01:36:39,947 --> 01:36:41,487
+Clipper Devreleri
+
+392
+01:36:45,939 --> 01:37:03,939
+Clipper Devre'nin simülasyonu yapılıp, her devre'nin çıktısının nasıl olduğu açıklanacaktır.
+
+393
+01:37:13,460 --> 01:37:30,159
+Şimdi de bu değerlendirme kriteri diğer diyelim. Ödevi de ödev şeklinde yapalım. Burada da ileriki bir saate alalım bunu. Ve bunu da önümüzdeki Cuma gününe tamamlıyorsunuz.
+
+394
+01:37:30,159 --> 01:37:34,180
+Cuma günü saat 23.
+
+395
+01:37:38,068 --> 01:37:41,548
+59'a kadar tamamlamış oluyorsunuz arkadaşlar.
+
+396
+01:37:43,288 --> 01:37:45,088
+Şimdi bunu bir kaydedelim.
+
+397
+01:37:49,043 --> 01:37:57,243
+Bunu da yayınlayalım. Geri çıkaralım buradan da. Öbürkünü de tekrar tanımlayalım.
+
+398
+01:37:59,023 --> 01:38:06,443
+Ctrl ve Ödev 3 olarak tanımlayalım.
+
+399
+01:38:07,983 --> 01:38:15,923
+Clamper devirlerinin simülasyonu yapılacaktır. Açıklamasını istemiyorum.
+
+400
+01:38:23,539 --> 01:38:24,559
+Bu kısım da tamam.
+
+401
+01:38:29,716 --> 01:38:35,596
+Çıktısını alırsınız. Bilgisayarın yanına Word dosyası olarak da yazabilirsiniz arkadaşlar.
+
+402
+01:38:37,916 --> 01:38:38,936
+Yapı
+
+403
+01:38:41,235 --> 01:38:42,516
+Bacaktır.
+
+404
+01:38:43,536 --> 01:38:49,936
+Bunu da PDF şeklinde, Ödev 3 PDF şeklinde sunarsınız. Değerlendirme kriterimiz
+
+405
+01:38:51,216 --> 01:38:51,996
+Diğer
+
+406
+01:38:53,516 --> 01:38:54,296
+Ödev
+
+407
+01:38:57,108 --> 01:39:02,608
+18 yaptık. Bu da 16'sı.
+
+408
+01:39:07,155 --> 01:39:08,155
+Neymiş.
+
+409
+01:39:13,171 --> 01:39:17,711
+59 olarak belirlemiş olduk. Bunu da kaydet diyelim.
+
+410
+01:39:21,684 --> 01:39:23,503
+Düzenle diyelim şuradan.
+
+411
+01:39:26,003 --> 01:39:27,543
+Kaydet diyelim.
+
+412
+01:39:28,443 --> 01:39:29,463
+Ve yayınla diyelim.
+
+413
+01:39:29,923 --> 01:39:31,384
+Ödev 3'miz de yayınlandı.
+
+414
+01:39:35,412 --> 01:39:38,152
+Hocam hangi devrelerde bir tekrar gösterir misiniz?
+
+415
+01:39:38,152 --> 01:40:01,572
+Tabii. Bu hafta yapacağınız kısım Clipper Devreleri. Bu hafta Summary of Clipper Circus yapılacak. Şu iki sayfa. Hepsi yapılacak. Önümüzdeki haftada şu da özeti verilecek. Summary of Clipper Diops'lar yapılacak.
+
+416
+01:40:03,604 --> 01:40:26,923
+Clamper'la dosyanın adını şu şekilde yaparsın. Bu artık standart olsun. Şimdi ödev x at soyat no.pdf şeklinde yazarsınız arkadaşlar.
+
+417
+01:40:28,787 --> 01:40:32,187
+Ödev kaçıncı ise adını o şekilde yaparsınız.
+
+418
+01:40:35,764 --> 01:41:02,083
+Şimdi geldik zener diyotlara. Biliyorsunuz zener diyotlar farklı bir şekilde çalışıyor. Tersten çalışıyor. Hatırlarsanız zener diyotlarımız normalde diyotlar şu şekilde bağlanmışsa çizecek olursak normalde diyotlar bu şekilde ters yönde belli bir vz geriliminde tersine.
+
+419
+01:41:02,547 --> 01:41:27,967
+Dönüyordu arkadaşlar. Orada bir akım akımaya başladı. Şimdi çeşitli doping malzemeleriyle bu VZ'yi sağa sola kaydırarak belirli gerilimlerde ne yapacak arkadaşlar? Belirli gerilimlerde iletim yapabilecek hale bağlanabiliyor. Örneğin zenerler devreye ters bağlanıyor. Zener'in artı ucu bu, eksi ucu buymuş gibi kullanıyoruz. Çünkü tersten bağlayınca bunu.
+
+420
+01:41:28,372 --> 01:41:40,472
+Eksi gerilim normalde burası. Tersten bağlayınca pozitif gerilimde belli bir pozitif gerilimi normalde bu vz gerilimiyle duruyor. On durumunda bu şekilde ne oluyor?
+
+421
+01:41:52,916 --> 01:41:58,315
+Siz bunun uçlarına, burası mesela 5 voltluk bir zener bu diyelim.
+
+422
+01:41:58,896 --> 01:42:00,735
+Pardon 5 voltluk bir zener diyelim.
+
+423
+01:42:01,936 --> 01:42:04,195
+Öyle bir VZ'si 5 volt olsun.
+
+424
+01:42:05,996 --> 01:42:11,275
+Bu VZ 5 volt ise şayet, bu ne zaman çalışmaya başlıyor biliyor musunuz arkadaşlar?
+
+425
+01:42:14,783 --> 01:42:22,323
+Akım akıtmaya başlıyor ve üzerinde sadece bir gerilim kaynağıymış gibi artı 5 voltta duruyor bu.
+
+426
+01:42:24,023 --> 01:42:31,303
+Eğer 5 volttan küçükseniz geriliminiz bu off durumu olarak adlandırılıyor.
+
+427
+01:42:31,303 --> 01:42:35,983
+Arkadaşlar sanki açık devre gibi davranıyor. Anlaştık mı arkadaşlar?
+
+428
+01:42:40,384 --> 01:43:02,204
+Açık devre gibi davranıyor. Mesela burada bir devre var. Eğer ben bunun V'yi çok arttırırsam, V'yi geçersem şayet ancak o zaman ne yapıyor? Bir gerilim kaynağı haline geliyor. Örneğin 10 volt uyguladım buradan. 10 volt uyguladıysam burası ne yapıyor?
+
+429
+01:43:03,123 --> 01:43:18,864
+İletime geçiyor. 10 durumunda oluyor. Ve sadece bir 5 voltta sabit kalıyor. Üstüne çıkmıyor. Bu bir nevi aslında çıkış geriliminin korunması amacıyla yapılıyor.
+
+430
+01:43:30,739 --> 01:43:44,500
+5 voltluk bir zenermiş. 5 voltluk da kırılan bir zener. 5 voltluk zener verzesi. Örneğin, buraya 1 volt uyguladığımda, şuraya gelecek gerilim ne olacak? En fazla 1 olur.
+
+431
+01:43:44,500 --> 01:43:55,639
+Değil mi? Akım akmama durumunda. Veya birinin çok gerilim direncin üstüne düşüyorsa birinin altına düşer. Bu durumda açık devre gibi davranıyor.
+
+432
+01:43:56,275 --> 01:44:05,376
+Dolayısıyla benim şuradaki gerilimim R ve şu halde.
+
+433
+01:44:07,055 --> 01:44:10,475
+Şöyle R, R'li halinde.
+
+434
+01:44:19,475 --> 01:44:45,075
+Sanki burada bir 5 voltluk kaynak varmış gibi sabit kalıyor. 10 volta çıkıyor, 20 volta çıkıyor, 30 volta çıkıyor, 30'a çıktı diyelim. 30 volta çıksa bile bu VA ucundaki gerilim. Buraya sadece 5 voltluk alıyor. Bu 25 dirence gidiyor. Bu sağ taraftaki dirence maksimum 5 volt. Çünkü paralel bunlar. VA toprak arası paralel.
+
+435
+01:44:46,292 --> 01:45:01,292
+Dolayısıyla sağ taraftaki dirence maksimum Vzener gerilimi kadar gerilim gelmesini garanti etmiş oluyoruz. Bu da bir nevi aslında koruma sağlamış oluyor. RL kısmına.
+
+436
+01:45:05,844 --> 01:45:17,903
+Zenel ne yapacaktır? 5 volt olarak sağ tarafı koruyacaktır. Direnç burada 25-30-40 yanacaktır. Dolayısıyla aslında koruma elemanı olarak da çok kullanılıyor. Zenel diyotları arkadaşlar.
+
+437
+01:45:18,644 --> 01:45:31,924
+Bununla alakalı sorular çözeceğiz. Soruları sözlükte çözünce daha iyi anlayacaksınız bu durumu. Demek ki transistörün iki tane durumu varmış Zener'in.
+
+438
+01:45:31,924 --> 01:45:40,924
+V-İ bölü, V-İ yani Zener'e uygulanan gerilim Zener'den büyük olduğu durumda bu 10 durumuymuş.
+
+439
+01:45:41,363 --> 01:45:57,903
+Yani zener gerilimini aştırdığınız zaman sabit bir gerilimi üzerinde tutuyor. Diğerlerini devrenin diğer tarafına dağıtıyor. Daha küçükken ise zener off durumunda açık devre gibi davranıyor. Onunla alakalı soruları çözdükçe daha iyi anlayacaksınız arkadaşlar.
+
+440
+01:46:00,212 --> 01:46:12,811
+Bunun dışında voltaj çoklayıcı devreler var. Devrenin gerilimini katlayan devreler var. Tabi burada transformatörler kullanılmış görüyorsunuz.
+
+441
+01:46:14,032 --> 01:46:24,012
+Bunlara çok fazla girmeyeceğiz. Voltaj çiftleyici, üçleyici, dört katına çıkacı devreler falan var.
+
+442
+01:46:24,479 --> 01:46:29,599
+Benim bu hafta anlatacaklarım bunlar. Sizlerin sormak istediği sorular var mı arkadaşlar?
+
+443
+01:46:32,659 --> 01:46:53,420
+Önümüzdeki hafta sadece Clipper Devrelerine çalışıyorsunuz. Daha doğrusu onları açıklayarak ve çizerek, aynı benim bu hafta yaptığım gibi sınava hazırlık bağımında teker teker çözüyorsunuz. Ve nasıl devre şeklinin çıkacağı da zaten burada gösteriliyor. Yani doğru mantık mı yürütmüşsünüz, zaten simülasyonunu da yapacaksınız.
+
+444
+01:46:53,840 --> 01:47:13,659
+Zaten aşağı yukarı burada uygulayacağınız V'yi örneğin 3 volt seçebilirsiniz, 5 volt seçebilirsiniz. V input'u kare dalga yapın, ondan sonra sinizoidal dalga yapın. Hepsini bir deneyin. Oldu mu arkadaşlar? Ama mantığını, çalışmasını doğru bir şekilde çıkarabildiğinize emin olun.
+
+445
+01:47:14,239 --> 01:47:15,420
+Hocam ben soru sorabilir miyim?
+
+446
+01:47:15,940 --> 01:47:16,399
+Tabii ki.
+
+447
+01:47:16,859 --> 01:47:20,279
+Haftaya lab var da bu clipper'lardan mı çıkar acaba onları?
+
+448
+01:47:21,108 --> 01:47:25,587
+Hayır, normal diyot deneyi var diye biliyorum. Önümüzdeki hafta ne diyot deneyi var?
+
+449
+01:47:26,247 --> 01:47:29,568
+Diyot yazıyor sadece. Öyle bakmıştım ama değiştirmeyi bilmiyorum.
+
+450
+01:47:30,568 --> 01:47:42,688
+Ben şeylerle ilgilenmiyorum. Laboratuvarlarla ilgilenmiyorum içeriğiyle. Sadece onlara listesini iletiyorum. Orada size açıklama yapıyor olmaları lazım. Aynı zamanda piyazadan da duyuruları yapıyorlar.
+
+451
+01:47:43,347 --> 01:47:44,268
+Tamam, teşekkür ederim.
+
+452
+01:47:47,028 --> 01:47:53,748
+LabMuaf listesinde birçok kişinin ismi yok. [öğrenci], daha önce sen bu dersi aldın mı?
+
+453
+01:48:00,948 --> 01:48:25,208
+Bu durumda laboratuvar notun kaçtı? Eğer eksikse onu muhakkak bir asistandan öğrenmen lazım. Çünkü muafiyet listeleri daha önceki şeylerin orada yayınlanacak. Eğer [öğrenci] 0 ise 0 gözükür. Eğer 50 ise 50 gözükür. Bu durumda laboratuvara devam edip etmemek senin.
+
+454
+01:48:25,680 --> 01:48:48,280
+Tercihinde olacak. Eğer laboratuvara devam edeceksen de bu seneki laboratuvar notu güncel laboratuvar notu olarak kaydedilecek. Ama laboratuvar muaf listelerinde ismin yoksa o isminin olmadığını düşünen kişiler muhakkak hocalara mail atsınlar. Anlaştık mı?
+
+455
+01:48:50,131 --> 01:49:16,091
+Düşük de olsa, yüksek de olsa onları size bildirmeleri lazım. Sıfır da olsa bildirmeleri lazım. Elli de olsa bildirmeleri lazım. Hani bu birinci vizedeki, vize bir dediğim kısım şu. Laboratuvar notu var ama bu sene laboratuvara devam etmek istemiyor. Ama eski laboratuvar notunu yükseltmek istiyor.
+
+456
+01:49:17,108 --> 01:49:30,347
+Daha önce dersi almış, geçmiş laboratuvar notundan memnun değil, bütün konular dahil olmak üzere bir final tadında bir sınava girmek istiyor.
+
+457
+01:49:30,347 --> 01:49:38,287
+Daha önce bu dersi almış ama şimdi laboratuvarı devam ediyorsa şayet şu anki laboratuvar notu geçerli olacaktır.
+
+458
+01:49:38,367 --> 01:49:44,228
+Onun vizeye 1'e girmesine gerek kalmayacak. O sizin tercihiniz. Anlaştık mı?
+
+459
+01:49:45,971 --> 01:49:53,151
+Yani laboratuvar notlarını yükseltmek isteyenler de laboratuvar adlarını yazdırsınlar. Muafiyetli sınavına girmelerine falan gerek yok.
+
+460
+01:49:55,491 --> 01:50:01,731
+Muaf listesinde olup notunu beğenenlerin de girmesine gerek yok vize vire. Anlaştık mı?
+
+461
+01:50:04,391 --> 01:50:06,431
+Başka sorusu olan var mı arkadaşlar?
+
+462
+01:50:09,108 --> 01:50:27,847
+Yok zannedersem. Hepinize iyi hafta sonlar arkadaşlar. Sağlıkla, sıhhatle kalın. Önümüzdeki hafta bunları sağlam çalışın. Umarım yararlı olmuştur. Bir de siz üzerinizden geçersiniz. Eksik yedik ne varsa önümüzdeki haftada cevaplamaya çalışırız. Hepinize iyi akşamlar diliyorum. Görüşmek üzere.
+
+463
+01:50:27,847 --> 01:50:34,307
+Hocam, son bir şey sorabilir miyim? Bu ödevde ölçümü yapacak mıyız değerleri?
+
+464
+01:50:35,412 --> 01:50:36,851
+Çizdiğimiz devrede.
+
+465
+01:50:38,391 --> 01:50:42,012
+Osiloskop kullanacaksın dedim ya. O ölçüm yapmak demek değil mi?
+
+466
+01:50:42,731 --> 01:50:44,332
+Yok onu duyamadım da ben o yüzden.
+
+467
+01:50:45,572 --> 01:50:49,212
+Osiloskop bağlamadan peki devreye nasıl simülasyonunu göreceksin?
+
+468
+01:50:49,931 --> 01:50:53,372
+Yok şey hani o dediğinizi ben duymadım öyle diyeyim. Anlamadım değil.
+
+469
+01:50:54,431 --> 01:50:58,351
+Şimdi muhakkak şurada osiloskop bağlayacaksın. Bak şurada gösteriyor.
+
+470
+01:50:59,072 --> 01:51:00,412
+Osiloskop bağlayacaksın ki.
+
+471
+01:51:00,884 --> 01:51:05,864
+Şöyle en azından girişe karşı çıkışı çizdirebilirsin. Bu da bir ölçüm aslında. Öyle değil mi?
+
+472
+01:51:06,963 --> 01:51:07,904
+Evet, tamamdır hocam.
+
+473
+01:51:08,884 --> 01:51:14,644
+Onları da muhakkak hem analiz edin hem yorumlayın. Anlaştık mı?
+
+474
+01:51:16,003 --> 01:51:17,043
+Tamamdır hocam, sağ olun.
+
+475
+01:51:17,804 --> 01:51:21,244
+Rica ederim. Kolay gelsin sizlere şimdiden. Kendinize çok iyi bakın.

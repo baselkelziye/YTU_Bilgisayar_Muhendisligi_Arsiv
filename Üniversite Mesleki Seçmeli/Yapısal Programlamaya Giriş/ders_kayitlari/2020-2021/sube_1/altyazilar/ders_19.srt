@@ -1,0 +1,1731 @@
+1
+00:05:11,091 --> 00:05:31,331
+Merhaba arkadaşlar. Beş geçti. Yaklaşık 37 kişi geldi. Herhalde artık başlayabiliriz. Bugün lab olmayacak, uygulama olacak. Geçen haftaki laboratuvarı sonuna eklemiş olduk laboratuvarların.
+
+2
+00:05:34,331 --> 00:05:35,331
+Bugün
+
+3
+00:05:37,331 --> 00:05:38,331
+Bir saniye.
+
+4
+00:06:23,572 --> 00:06:31,572
+Şimdi bugün biraz öz iğnelemeli fonksiyonlardan bahsedeceğim.
+
+5
+00:06:32,572 --> 00:06:43,572
+Hocanız henüz anlatmamış ama bir giriş olması açısından siz de derse biraz daha hazır olacaksınız.
+
+6
+00:06:43,572 --> 00:06:49,572
+İlk önce çok kısa bir özet geçeceğim konuyla ilgili. Ondan sonra da...
+
+7
+00:06:49,951 --> 00:06:54,951
+5 tane örnek hazırladım. Onları birlikte yazacağız inşallah.
+
+8
+00:06:54,951 --> 00:06:59,951
+Şimdi sesimle ilgili bir problem yok değil mi?
+
+9
+00:06:59,951 --> 00:07:01,951
+Yok hocam.
+
+10
+00:07:01,951 --> 00:07:08,951
+Tamam, güzel. Şimdi recursive dediğimiz, yani öz yinelemeli fonksiyonlardan bahsedeceğim.
+
+11
+00:07:18,259 --> 00:07:36,740
+Genel olarak küçük parçalara bölünebilen problemleri çözdüğümüz algoritmalarda sıklıkla kullanıyoruz. Bu ne demek? Bu önümüzdeki dönemde göreceğiniz algoritmalar dersinde divide and concur diye belki BBG'de gördüğünüzü zannetmiyorum.
+
+12
+00:07:41,396 --> 00:07:51,396
+Algoritmalarda çok sık kullanıyoruz Recursive fonksiyonları. Biz şimdi buradan bunu nasıl oluşturacağımızı göreceğiz.
+
+13
+00:07:51,396 --> 00:08:01,396
+Aslında Recursive dediğimiz fonksiyonlar iki bölümden oluşuyor. Bir tanesi Base Case, yani nerede duracağımızı.
+
+14
+00:08:08,851 --> 00:08:28,851
+parametresi bir öncekine göre, bir bağıntı, bir bağıntı, bir koşula göre farklılaşıyor. Mesela n1 artıyor diyelim ya da n'yi ikiye bölüyoruz diyelim. Yani biz orada parametrenin üzerinde oynayarak yeniden fonksiyonu kendi kendini çağırmasını bekliyoruz.
+
+15
+00:08:28,851 --> 00:08:34,851
+Problem bölünecek, bölünecek, bölünecek de nereye kadar? Nerede duracağız? Base case'de duracağız.
+
+16
+00:08:35,731 --> 00:08:44,731
+Programlamada yani C'de bunu yazarken bir if koşuluyla yazıyoruz genelde. Bazen while da kullanıyorlar.
+
+17
+00:08:44,731 --> 00:08:59,731
+Şu şekilde. Ondan sonra bir de recursive partımız var. Bu da problemi böldüğümüz dediğim kısım. Yani parametrenin değiştiği kısım.
+
+18
+00:09:01,967 --> 00:09:22,891
+fonksiyonu çağırırken her seferinde aynı şekilde değişerek çağırıyoruz bunu. Ondan sonra bu şekilde ilerideki örnekte de göreceksiniz. Mesela şurada bir örnek var. Mesela bir fong diye bir fonksiyon yazdık. Diyelim ki bu...
+
+19
+00:09:23,923 --> 00:09:38,323
+n sayısını döndürüyor aslında burada. Yani fonk fonksiyonumuzu 3 için çağırırsak bize 3 dönmesini istiyoruz. Kaç kere çağırdığımızı gösteren bir fonksiyon.
+
+20
+00:09:38,323 --> 00:09:48,923
+Şimdi main'in içinde bir tane n tanımlayıp fonk fonksiyonunu n ile çağırdığımız zaman, şurada gördüğümüz, biz şuradan başlıyoruz.
+
+21
+00:09:49,940 --> 00:10:14,020
+Main, fonk fonksiyonunu şurada 3 için bir kez çağırıyor. Fonk 3'ü çağırdık. Fonk 3 ne yapıyor? Kendi içinde, şurasını yanlış yazmışım, n-1 olacak. Return 1 artı fonk n-1. Fonk kendi içinde n-1'i çağıracak.
+
+22
+00:10:15,796 --> 00:10:37,115
+Çok karıştırmazsınız değil mi? Yani zaten küçücük bir hata. Bunu şöyle düşünün, n-1 şurası, n değil. Ondan sonra fonk fonksiyonu kendi içindeyken yeniden kendini çağırıyor ama bu sefer parametresi bir eksiliyor. Yeniden bu bunu çağırıyor.
+
+23
+00:10:37,200 --> 00:10:46,600
+Ve yeniden çağırdığında n1 olmadığı için base case'e düşmediğinden şu else düşüyor, ondan sonra yeniden çağırıyor.
+
+24
+00:10:46,600 --> 00:10:55,600
+Fonk 1 için ise n1'e eşit olduğu için base case ile return ediyor. Return'ı nereye eder bir fonksiyon? Çağrıldığı yere eder değil mi?
+
+25
+00:10:55,600 --> 00:11:00,000
+Şimdi ben 1 dönüyorum. Kime dönüyorum biri?
+
+26
+00:11:00,755 --> 00:11:25,755
+Fonk 2 için 2 beni çağırmıştı. N'nin 1 olduğu noktada. Fonk 2 beni çağırmıştı. Ben Fonk 2'ye dönüyorum. Ondan sonra 2 için, 2 için 1 döndüm. Yani Fonk 2'nin içinde artık bir tane 1 var. 1 ile bu Fonk 1'in döndüğü şuraya, bir value dönecek, pardon.
+
+27
+00:11:26,484 --> 00:11:39,484
+Şuraya bir value dönecek ve bu da 1 olacak. Ve bunu topladığım zaman, beni çağıran, yani fonk 2'yi çağıran fonksiyona 2 dönmüş olacağım, o da fonk 3'tü.
+
+28
+00:11:39,484 --> 00:11:44,484
+Fonk 3'ü kim çağırdı? Main çağırdı. Main beni ne yapacak? Print edecek.
+
+29
+00:11:56,244 --> 00:11:59,244
+Siz de görüyor musunuz bu chat şeyini bilmiyorum.
+
+30
+00:11:59,244 --> 00:12:02,244
+Heh, tamam.
+
+31
+00:12:04,244 --> 00:12:10,244
+Şurada, fonk 3 beni çağırmış, main beni çağırmıştı ya.
+
+32
+00:12:10,244 --> 00:12:20,244
+Şimdi, fonk 3 için, şuraya gelen benim döndüğüm şey 2 idi, 1 ile de toplayıp main'e cevabımı gönderiyorum.
+
+33
+00:12:22,419 --> 00:12:49,299
+Şimdi burada çok, nasıl denir, bir loop döndürmediğimiz için çok güzel böyle ucuza geliyormuş gibi görünüyor recursive fonksiyonlar. Şöyle bir sıkıntısı var. Şimdi her bir şey, lokal değişkeni stağa attığımız için
+
+34
+00:12:50,836 --> 00:13:08,836
+Bu bir müddet sonra stağın dolmasına sebep olacak problem stağının. Ondan sonra o yüzden öyle bir sıkıntısı var. Bunu da yine algoritmalarda ve veri yapılarında daha ayrıntılı bir şekilde göreceksiniz. Yani bunun da kendine göre eksi yönleri var.
+
+35
+00:13:18,995 --> 00:13:32,196
+İlk belirlememiz gereken, Base Case'in ne olduğunu bulmamız lazım. Yani biz bu fonksiyonu çağırmayı nerede durduracağımızı çok iyi planlamış olmamız lazım.
+
+36
+00:13:33,796 --> 00:13:45,196
+Bu aslında temelini oluşturuyor, doğru bir recursive fonksiyonu yazmanın. İkincisi de yeni parametre ile bir önceki parametre arasında nasıl bir bağıntı olacak?
+
+37
+00:13:45,716 --> 00:14:03,716
+Daha doğrusu, problemi nasıl böleceğiz? Yani ikiye mi böleceğiz? İşte parametreyi ona mı böleceğiz? Bir mi eksilteceğiz? Bu da tasarımın bir başka önemli şeyi.
+
+38
+00:14:03,716 --> 00:14:12,716
+Şimdi, ben birkaç örnek hazırladım. Bunları yazalım. Şimdi diyelim ki bir tane...
+
+39
+00:14:15,283 --> 00:14:32,084
+Şöyle yapalım. Diyelim ki, question 1'imiz için bir tane C şeyimiz var. Ondan sonra, açık şunu uzatıp, şunu da biraz yandan görelim.
+
+40
+00:14:34,084 --> 00:14:40,043
+Şimdi bize bir string veriliyormuş. Ondan sonra biz bu stringin uzunluğunu
+
+41
+00:14:41,203 --> 00:15:02,203
+Recursive bir fonksiyonla hesaplatacağız. Normalde stringi bir tane array'in içine atıp, işte onu sonuna gidene kadar sayabiliriz. Bir tane bir döngü ile bunu sayabiliriz.
+
+42
+00:15:02,203 --> 00:15:05,995
+Şimdi biz döngü kullanmayacağız. Nasıl yapacağız bunu?
+
+43
+00:15:10,803 --> 00:15:15,803
+Şimdi kesinlikle bir string alacağımız için ilk önce...
+
+44
+00:15:20,692 --> 00:15:39,091
+Şuna ihtiyacımız var, bir input output şeyine ihtiyacımız var. Ondan sonra kütüphanesine. Ondan sonra şimdi ilk önce main'i bir yazalım biz. Ne yapmak istiyoruz?
+
+45
+00:15:39,091 --> 00:15:46,591
+Diyelim ki bir tane string'imiz olsun.
+
+46
+00:15:48,820 --> 00:15:50,348
+Eeeem.
+
+47
+00:16:01,364 --> 00:16:04,684
+50'lik bir string olsun, maksimum bu olsun hadi.
+
+48
+00:16:04,684 --> 00:16:19,364
+Ondan sonra şimdi bunu bu şekilde tanımladığımız zaman, yani bu 50'lik yer ayırdığımız zaman bunu bir initial değer atamamıza gerek kalmıyor.
+
+49
+00:16:19,364 --> 00:16:29,163
+Çünkü işletim sistemi, compiler bunu işletim sistemine 50'lik karakter yeri ayır bana diye.
+
+50
+00:16:30,035 --> 00:16:53,675
+Söyleyebilecek. Bu yüzden de bize hata dönmeyecek. Ondan sonra tabi bir tane uzunluğumuz olsun. Bunu yazdıralım. Ya da uzunluğu direkt şeyden de yazdırabiliriz. Neyse tamam. Bir tane uzunluğumuz olsun.
+
+51
+00:16:54,611 --> 00:17:09,112
+Length olsun adım, len olsun. Ondan sonra şimdi bir tane kullanıcıyı bilgilendirme şeyimiz olsun.
+
+52
+00:17:09,112 --> 00:17:11,112
+Diyelim ki enter.
+
+53
+00:17:16,435 --> 00:17:18,435
+String diyelim.
+
+54
+00:17:18,435 --> 00:17:23,435
+Bundan sonra güzel görünsün diye sonuna bir tane de Enter atalım.
+
+55
+00:17:23,435 --> 00:17:29,195
+Bundan sonra scanf ile şunu alalım.
+
+56
+00:17:32,435 --> 00:17:41,115
+string'miş, adı da str'ın içine yazacakmış bunu. Şunun yerine bir de neyi kullanabiliyoruz?
+
+57
+00:17:49,683 --> 00:18:07,683
+Mesela, git str'da diyebiliyoruz. Yani bu ikisi şu scanf ile şunun arasında bir fark yok. Bunu artık öğrendiğimizi düşünüyorum. Ondan sonra ben şunu tercih edeceğim.
+
+58
+00:18:10,683 --> 00:18:13,683
+Şimdi main'imizi int dediğimiz için şurada.
+
+59
+00:18:14,195 --> 00:18:18,195
+Bunun bir değer dönmesini bekliyoruz void olmadığı için.
+
+60
+00:18:18,195 --> 00:18:27,195
+Bir fonksiyon eğer bir değer dönecekse buraya o döneceği değerin biliyorsunuz datatifini yazıyorduk.
+
+61
+00:18:27,195 --> 00:18:39,195
+Ondan sonra bu bizim fonksiyonumuz, main fonksiyonumuz, sıfır döndüğü zaman sorunsuz bir şekilde bu fonksiyonu koşturduğumuz anlamına gelecek.
+
+62
+00:18:47,092 --> 00:18:51,092
+Şimdi bir tane land vardı değil mi? Şuraya bir tane...
+
+63
+00:18:53,092 --> 00:18:58,092
+Şimdi ben şöyle yapmayı tercih ediyorum. İlk önce yukarıda bir declaration yapıyorum.
+
+64
+00:19:03,188 --> 00:19:30,188
+Bu da str şeyle karışmaması gerekiyor. Şöyle bir isim verebiliriz. C'nin kendi fonksiyonlarıyla karışmaması gerekiyor, yazdığınız fonksiyonların isimlerinin. Çünkü compilerlar buna sorun çıkarıyor. Ondan sonra burada...
+
+65
+00:19:32,596 --> 00:19:46,195
+Ne olması lazım şimdi bunun parametresinin? Onu bir düşünelim. Bir tane string gelecek değil mi? Çünkü biz stringin uzunluğunu bulmak istiyoruz.
+
+66
+00:19:51,076 --> 00:19:55,316
+Bir tane karakter arrayımız var. Ondan sonra...
+
+67
+00:19:58,316 --> 00:20:00,000
+Şöyle yazabiliriz bunu.
+
+68
+00:20:00,788 --> 00:20:05,288
+Veya şöyle yazabiliriz.
+
+69
+00:20:17,140 --> 00:20:23,140
+Şimdi burada bu declaration yaptıktan sonra aşağıda bunun implementation'ını yapacağım.
+
+70
+00:20:23,140 --> 00:20:36,140
+Bunun şeyi ne? Böyle yapmamın, yani ben böyle yapmaktan hoşlanıyorum. Burada hangi fonksiyonları yazacağımı daha önceden biliyorum.
+
+71
+00:20:36,140 --> 00:20:44,140
+Yani implementation'ını henüz yapmamış olsam bile aşağıda. Bu fonksiyonları kullanacağımı ve ona hangi parametreleri göndereceğimi biliyorum.
+
+72
+00:20:45,140 --> 00:20:48,820
+Önce tasarlayıp, ondan sonra, şeye geçebiliyorum.
+
+73
+00:20:50,900 --> 00:20:55,380
+Fonksiyonun, gerçeklenmesine geçebiliyorum.
+
+74
+00:20:56,980 --> 00:20:58,980
+Şimdi neydi bizim şey?
+
+75
+00:20:59,700 --> 00:21:01,380
+Buna da signature deniyor.
+
+76
+00:21:01,780 --> 00:21:06,019
+Yani bir fonksiyonun imzası da şu.
+
+77
+00:21:07,380 --> 00:21:12,019
+Bunun implementation içinde, birebir aynı olması gerekiyor.
+
+78
+00:21:12,307 --> 00:21:15,427
+Bunları geçen haftalardaki derslerde gördünüz.
+
+79
+00:21:16,387 --> 00:21:18,427
+Ondan sonra...
+
+80
+00:21:19,628 --> 00:21:20,628
+Şimdi...
+
+81
+00:21:25,508 --> 00:21:28,548
+Bizim burada Base Case'imiz ne olmalı?
+
+82
+00:21:29,827 --> 00:21:32,028
+Böyle çok minicik bir dakika düşünün.
+
+83
+00:21:32,028 --> 00:21:34,347
+Chatten cevap verebilirsiniz mesela.
+
+84
+00:21:37,460 --> 00:22:03,460
+El kaldırınca da görüyorum galiba, o şekilde de cevap verebilirsiniz. Sizce nerede duracağız? Yani bir stringin, bir string gelmiş elimize. Ondan sonra bunun elemanlarını sayacağım ben. Siz bunun bir tane araya olduğunu, karakter araya olduğunu düşünün. Ondan sonra bunun elemanlarını saymak istiyorum. Nerede durmalıyım saymayı, nerede bırakmalıyım?
+
+85
+00:22:07,028 --> 00:22:10,528
+Evet, cevaplar bakıyoruz.
+
+86
+00:22:14,291 --> 00:22:25,891
+Bir tanesi sonuna ulaştığında, bir tanesi null olduğunda demiş. Evet, null olması. Çünkü neden N olduğunda değil? Çünkü bilmiyorum yani.
+
+87
+00:22:25,891 --> 00:22:37,491
+Sonuna kadar dolu olmayabilir. Orada 50'lik bir yer ayırdım evet ama benim stringim o kadar uzun olmayabilir. O yüzden N'ye kadar değil de bittiği yere kadar. Yani...
+
+88
+00:22:42,548 --> 00:22:44,044
+String'imiz
+
+89
+00:22:47,955 --> 00:23:03,315
+Stringimizin, bunu nasıl yazabilirim? Misal, şöyle yazabilirim. Hatırlıyorsanız, stringin sonunda şöyle bir karakter var, null karakteri.
+
+90
+00:23:03,315 --> 00:23:13,315
+Mesela bu buna eşit olmadığı müddetçe, benim stringimde hala bir eleman var demektir.
+
+91
+00:23:14,932 --> 00:23:16,932
+Bu şekilde yapabilirim.
+
+92
+00:23:16,932 --> 00:23:26,932
+Şimdi benim burada size şey olarak söylediğim şöyle nasıl gösterebilirim bunu?
+
+93
+00:23:26,932 --> 00:23:33,932
+Diyelim ki ben kendi adımı String olsun tamam mı?
+
+94
+00:23:37,172 --> 00:23:57,172
+Benim adım string'miş. Şöyle comment altta edeyim de sonra problem olmasın. Şimdi ben bunu bölmeye başlıyorum. Nasıl böleceğim? Şimdi şöyle bir string benim elime gelmiş. Ondan sonra ben bunu eğer şöyle anlatırlar bu divide and compute şeyini.
+
+95
+00:24:02,740 --> 00:24:21,240
+String'in uzunluğunu verirse, ben de üzerine bir eklerim ve problemin bütününü çözmüş olurum. Böyle anlatırlar. Yani ben bunun sonuna kadar gideceğim. Tamam mı? Nasıl gideceğim?
+
+96
+00:24:21,779 --> 00:24:40,180
+Baştan başlıyorum string'e. Hala var mı? Evet, var. Devam ediyorum. İşlem yapmıyorum. Burada ben fonksiyonumu yeniden çağırıyorum. Ne için çağırıyorum?
+
+97
+00:24:43,028 --> 00:24:57,028
+Hatırlıyorsunuzdur, stringler karakter arayidir. Ve string için şu gönderdiğimiz pointer nedir? Şunun birinci elemanının adresidir değil mi?
+
+98
+00:24:57,028 --> 00:25:07,028
+Peki pointer aritmetiğini hatırlıyorsunuz. Pointer aritmetiğinde bir sonraki adrese nasıl gidiyoruz?
+
+99
+00:25:07,028 --> 00:25:08,364
+Plus plus ile.
+
+100
+00:25:08,531 --> 00:25:10,531
+Mesela bir arttırarak gidebiliyoruz.
+
+101
+00:25:24,051 --> 00:25:45,051
+İlk önce şu şeyi yazayım. Bir sonraki bir sonraki karakterin şu e harfinin ilk baştan düşünürsek şu e harfinin adresi plus plus citric plus plus stl.
+
+102
+00:25:51,347 --> 00:26:05,347
+1 arttırdığında pointer'ı, o gitti E'yi gösteriyor. Yalnız ben B'yi geçtiğim için burayı 1 ile toplayacağım. Tamam?
+
+103
+00:26:05,347 --> 00:26:13,347
+Şimdi şuradaki örneğe bakın. Bu örneği anladığınızı umuyorum. Mesela burada...
+
+104
+00:26:14,900 --> 00:26:22,900
+Bir sonraki, şunun n-1 olduğunu düşünün, bir sonrakine geçtiğim için return değerimi 1 arttırıyordum.
+
+105
+00:26:22,900 --> 00:26:32,900
+Yani şundan 1 gelecek, eğer base case'e giderse 1 gelecek ve ondan sonra atladığım şey içinde 1 alacağım.
+
+106
+00:26:32,900 --> 00:26:39,900
+Yani burada da aynı şekilde saydığım için, karakterleri saydığım için
+
+107
+00:26:40,627 --> 00:26:54,627
+Bir sonrakine geçerken bir ile topluyorum. Base case'e ulaştığımda ne gelecek buna? Base case'imiz naldı. Hiçbir şey yok yani. Arayımız boş yani. O zaman ne gelmeli?
+
+108
+00:26:54,627 --> 00:27:07,627
+Sıfır. Ya böyle ben hiç alışkın değilim. Sessiz sessiz. Şimdi base case'e
+
+109
+00:27:07,796 --> 00:27:26,796
+Şu if'in içine düşmezse base case'e ulaştık. Ne demek bu? Yani str, şurasını yanlış yapmışım. str şu karakteri görmüyorsak, o zaman base case'e ulaştık. Ne demek? Yani null'a geldik demek.
+
+110
+00:27:26,796 --> 00:27:31,796
+Şurada else de yapabilirsiniz. Mesela else.
+
+111
+00:27:35,059 --> 00:27:59,059
+Bunun else nedir? Efendime söyleyeyim. str, str'ın valuesu eşit eşit budur, 0'dır. Yani naldır. Ondan sonra ama buna gerek var mı? Yok. Çünkü şunun içine düşebilir ya da düşmeyebilir. Yani bu eğer 0 ise,
+
+112
+00:27:59,635 --> 00:28:02,635
+Buraya gelecek, değilse buraya gelecek.
+
+113
+00:28:02,635 --> 00:28:20,635
+Şimdi, şimdi ben şuradaki şu değerin beni çağıran yani bir önceki array için beni çağıran fonksiyona gitmesini istiyordum.
+
+114
+00:28:25,556 --> 00:28:28,355
+İkinci kez çağırıyoruz diye düşünün.
+
+115
+00:28:34,836 --> 00:29:01,536
+String'imiz nedir biliyor musunuz? Şudur. Tamam mı? Sonra üçüncü çağırışımızda String'imiz şudur. Sonra nokta nokta nokta en son çağırdığımız yani artık length'e ulaştığımızda
+
+116
+00:29:01,940 --> 00:29:14,940
+Birinci çağrışımız, ikinci çağrışımız, nokta, nokta, nokta. Mesela diyelim ki kaç harfli bu? Beş, sekiz, on, on iki. On ikinci çağrışımız...
+
+117
+00:29:20,276 --> 00:29:25,276
+Bize, şunu döndürüyor.
+
+118
+00:29:27,276 --> 00:29:28,276
+Tamam mı?
+
+119
+00:29:30,276 --> 00:29:34,276
+Yani, length için 0'ı döndürmeli.
+
+120
+00:29:34,276 --> 00:29:37,276
+12. çağrışımızda string'imiz bu.
+
+121
+00:29:37,276 --> 00:29:40,276
+Hiçbir şey yok içinde.
+
+122
+00:29:41,276 --> 00:29:48,172
+Şimdi ben bunu, base case için yazmıştım. Bu 0 dönsün. Öbürleri için nasıl yapacağım?
+
+123
+00:29:48,180 --> 00:30:13,180
+Şu string için beni daha önce çağıran, mesela şuradan başlayayım. Şu string için beni daha önce çağıran fonksiyona bir şey dönmeliyim. O zaman ne döneceğim? Şuraya kadar ki, birilerle yeni stringin toplamına döneceğim. Yani şu dönüş değerimiz oluyor.
+
+124
+00:30:18,387 --> 00:30:24,028
+Bakalım şimdi bir fonksiyon yazdık. Şimdi bunu biz lengte eşitleyebiliriz.
+
+125
+00:30:30,163 --> 00:30:38,324
+Aslında bu ayrı farklı fonksiyonların içinde aynı şeyi kullanmak çok doğru bir şey değil.
+
+126
+00:30:38,324 --> 00:30:49,364
+Yani parametre isimlerini ve lokal değişkenlerin isimlerini değiştirin diğer şeyin içinde.
+
+127
+00:30:54,708 --> 00:31:20,708
+Çünkü bu mesela diyelim ki 20-22 satırlık bir kod ama bunu diyelim ki çok uzun, kocaman bir şey olduğunu düşünün ve onlarca fonksiyonun uzun olduğunu düşünün. O zaman işler çok fena sarpa sarabiliyor. Özellikle içinde pointer daha sonra kullanacağınız şeyler falan da olunca.
+
+128
+00:31:21,395 --> 00:31:26,395
+İyice işler karışabiliyor. O yüzden şöyle yapabilirsiniz. Ondan sonra...
+
+129
+00:31:28,395 --> 00:31:38,395
+Biz str için bu length'i hesaplattık bizim fonksiyonumuza. Ondan sonra gittik eşitledik. Eşitleyebiliyoruz. Neden eşitleyebiliyoruz? Çünkü bu bir integer dönüyor.
+
+130
+00:31:38,395 --> 00:31:49,228
+Length de bir integer. Bu datatipi bu datatipini tutuyor. Bu ikisinin left values ile right values'u datatipleri tuttuğu için...
+
+131
+00:31:50,387 --> 00:32:01,788
+Daha doğrusu, data tipi mesela şunun ki karakter de olabilirdi. Daha doğrusu şeyde kapladıkları yer tuttuğu için bu ikisini birbirine eşitleşebiliyoruz.
+
+132
+00:32:01,788 --> 00:32:09,887
+Eşitlemek dediğim, sign etmek aslında. Onu da yanlış kullanıyoruz ama öyle de anlıyoruz diye ben sorun etmiyorum onu.
+
+133
+00:32:09,887 --> 00:32:17,387
+Şimdi bakalım ne yapıyorduk? Ha şimdi bunu yazdıralım. Yazdıralım ki görelim.
+
+134
+00:32:17,844 --> 00:32:35,844
+Doğru muymuş, yanlış mıymış? Evet. Şimdi biz bir tane integer yazdıracağız. Zaten maksimum 50. O yüzden %d ile ifade edebiliyorum ve lenti yazıyorum.
+
+135
+00:32:41,844 --> 00:32:45,844
+Length, hep yanlış yazıyorum bunu inşallah doğrudur.
+
+136
+00:32:45,844 --> 00:32:55,844
+Of your string is put.
+
+137
+00:33:00,756 --> 00:33:06,756
+Şöyle bir şey olabilir. Tamam şimdi bakalım.
+
+138
+00:33:16,500 --> 00:33:37,600
+Nerede bu desktopta? Ondan sonra, q1.q1.c, bakalım hata verdi mi? Evet hata verdi. Neymiş? Undefined reference to str.land.
+
+139
+00:33:46,900 --> 00:33:47,900
+Acaba...
+
+140
+00:33:47,900 --> 00:33:48,900
+Boşkinci satırdı hocam.
+
+141
+00:33:48,900 --> 00:34:07,900
+Evet, evet. s-r-t yazmışım buraya. Şöyle olacakmış. Tamam. Bakalım. Tamam. Şimdi buraya bir tane object oluşturdu. Ondan sonra onu da koşturabiliyorum şu şekilde.
+
+142
+00:34:16,755 --> 00:34:25,155
+İşte, nedense küçük bir şey bile olsa çalışınca mutlu oluyorum. Evet, böyle.
+
+143
+00:34:26,755 --> 00:34:31,155
+Sorunuz var mı gençler? El kaldırarak ya da chatten sorabilirsiniz.
+
+144
+00:34:40,980 --> 00:34:49,640
+String, str, bir tane str'a adres yazmamıza gerek yok. Neden?
+
+145
+00:34:52,600 --> 00:34:54,572
+Buna cevap vermek isteyen var mı?
+
+146
+00:35:01,172 --> 00:35:03,172
+Vitor'un kısmına tekrar bir değinebiliriz.
+
+147
+00:35:03,172 --> 00:35:05,172
+STR'a...
+
+148
+00:35:10,228 --> 00:35:25,228
+Şimdi stringler birer array'dir. Yani karakter array'dir. O yüzden ben şu str'ı böyle str diye kullanınca bu onun adresini ifade eder.
+
+149
+00:35:25,503 --> 00:35:41,503
+Önüne bir tane adres işareti koyduğum zamansa pointer'ın pointer'ı olur. Bu da Matrix'lerde gördünüz mü, görecek misiniz çok emin olmamakla birlikte iki boyutlu are'leri ifade edecektir.
+
+150
+00:35:41,503 --> 00:35:53,503
+Tamam mı? O yüzden onun başına, [öğrenci]'in söylediği, kafasına takılmış muhtemelen, onun başına o şekilde adres yazmıyoruz.
+
+151
+00:35:53,503 --> 00:36:09,743
+Sırayla gideyim. Return kısmında, return kısmına tekrar değinebiliriz. Return kısmında şöyle. Şimdi, ben bu şey için şunun gibi düşünün.
+
+152
+00:36:24,820 --> 00:36:52,620
+Şimdi, beni çağıran fonksiyon, benden bir integer dönmemi istiyor. Ondan sonra ben de kendimi yeniden yeni bir string ile çağırıyorum. Yeni bir string ile çağırdığımda bana dönecek fonksiyon, bana dönecek return değeri artı...
+
+153
+00:36:53,076 --> 00:37:02,315
+Benim hesapladığım length 1. Ben şimdi buradaydım, string bana kadar geldikten sonra ben bir karakterim diye düşünün.
+
+154
+00:37:02,315 --> 00:37:15,315
+Ben kendimi ekliyorum ve sonraki daha küçülmüş, burada küçültüyoruz stringi, daha küçülmüş stringi yeniden fonksiyona gönderiyoruz.
+
+155
+00:37:21,043 --> 00:37:36,483
+Stringler topluyor topluyor kendisini geliyor bana kadar. Onlar kendileri bir lang hesaplamış. Ben de bir lang hesapladım bir. Bu ikisini toplayıp beni çağıran fonksiyona gönderiyorum.
+
+156
+00:37:36,483 --> 00:37:46,379
+Bu şekilde bir önceki yani şuradaki diyelim. Şu mesela.
+
+157
+00:37:46,420 --> 00:38:10,420
+Kendini hesaplamış, şunun çağrıldığı fonksiyon kendini hesaplamış, return değerini şunun çağrıldığı fonksiyona göndermiş. Bu da kendisini şununla birlikte bir toplayıp şuna gönderiyor. Bu da main'e dönüyor. Kendisini bir ile toplayıp yine main'e dönüyor.
+
+158
+00:38:13,748 --> 00:38:35,748
+En sonuncu da biz buraya null olma şartını koyduğumuz için base case'de null bir string de boştur. O yüzden en sonuncu base case'e ulaştığım anda artık sıfırla toplarım. Daha doğrusu sıfır dönerim.
+
+159
+00:38:39,023 --> 00:38:42,023
+fonksiyon bir öncekine sıfır döner.
+
+160
+00:38:46,023 --> 00:38:56,023
+Neden str? [öğrenci] inşallah biraz daha anlamışsındır. Azıcık da sonraki şeylerde de yeniden değiniriz.
+
+161
+00:38:58,023 --> 00:39:05,900
+Tamam. Güzel. Neden str1'i pointer olarak yazdık? str1'i nerede pointer olarak yazdık? Şurada.
+
+162
+00:39:06,675 --> 00:39:20,675
+Dizilerde pointer'a gerek yoktu diye hatırlıyorum. Bunun dizi olduğunu nereden bilecek? Misal, yazmazsak bir tanecik karakter olduğunu sanır.
+
+163
+00:39:25,364 --> 00:39:39,163
+Geçelim sonraki sorumuza. Bunun üstünden mi gitsem acaba? Karışır yani şuradan. Sırtımdan mı taşıyacağım? Yine bir tane açalım.
+
+164
+00:39:39,163 --> 00:39:52,619
+Bu da question 2 olsun. Şimdi question 2'miz neymiş? Bakıyoruz hemen.
+
+165
+00:39:54,068 --> 00:40:13,468
+Evet, chat'i kapatayım. Verilen bir sayının basamak sayısını bulacak. Şimdi bu bir önceki soruyla çok benzer bir soru. Az önce karakterleri sayıyorduk.
+
+166
+00:40:21,391 --> 00:40:32,631
+Tamam mı? O yüzden yalnız bir noktada farklılık olacak. Şimdi birazdan şey yapacağız.
+
+167
+00:40:38,579 --> 00:41:01,579
+Öbüründen kopyalayıp yapıştırmayı çok canım istedi ama yapmayacağım. Çünkü, kopyala yapıştır programlama, her zaman daha öncekinde yaptığınız yanlışı tekrar etmenizi ve ileri doğru yayılmasını sağlayacağı için, kopyala yapıştır değil, yeniden yazma yapın.
+
+168
+00:41:05,679 --> 00:41:12,679
+Onu en azından bir noktada bırakmış ve doğrusuna ulaşmış olursunuz.
+
+169
+00:41:12,679 --> 00:41:16,619
+Şimdi, diyelim ki...
+
+170
+00:41:20,052 --> 00:41:25,228
+Yine de insanın bazen aynısını niye yazayım dediği oluyor.
+
+171
+00:41:28,692 --> 00:41:44,052
+Şimdi ben bir tane kullanıcıdan bir numara alacağım. Bu numaranın efendime söyleyeyim kaç şeyli olduğunu hesaplayacağız. Number olsun.
+
+172
+00:41:44,052 --> 00:41:53,492
+Ondan sonra da digit diye de bir tane...
+
+173
+00:41:53,876 --> 00:42:03,876
+Şunu da şuraya yazabiliyoruz gençler. Artık öğrendiniz. Ondan sonra...
+
+174
+00:42:08,659 --> 00:42:35,659
+kullanıcı versin bakalım bizim numarayı. Enter your number. Yani buraya işte uzatabilirsiniz to calculate number of digits tarzında. Ondan sonra scanf ile aldık.
+
+175
+00:42:38,547 --> 00:42:47,547
+Scanf ile aldık, d aldık bir tane, adı da number'du değil mi? Okey.
+
+176
+00:42:51,795 --> 00:43:17,451
+Şimdi bir fonksiyonla bunun dijitlerini sayacağız. Onun adı da o yine bir integer dönsün. Onun adı da countDigit olsun. Ona bir tane number veriyorum.
+
+177
+00:43:19,668 --> 00:43:23,668
+O da onu hesaplayıp bana bir inticar dönüyor.
+
+178
+00:43:39,572 --> 00:43:40,572
+Şimdi...
+
+179
+00:43:45,523 --> 00:44:00,460
+Nasıl yapabiliriz? Eğer ki elimizde bir numara varsa bu sıfırdan büyüktür değil mi? Mesela Base Case'imiz bu olabilir.
+
+180
+00:44:03,987 --> 00:44:10,647
+Az önceki mantıktan. Bunun biraz daha değişik versiyonlarını ilerideki şeylerde de yapacağız.
+
+181
+00:44:10,647 --> 00:44:29,487
+Biz yine buradan devam edelim. Burada sadece şeyi görmenizi istiyorum. Bir öncekindekine benziyor. Sadece problemin bölünme şekli farklı. Yani ne demek oluyor bu?
+
+182
+00:44:30,739 --> 00:44:43,059
+Sonrakinde yeniden kendini çağırırken fonksiyon, yeni parametre farklı şekilde hesaplanacak, bir eksilmeyecek ya da işte bir sonrakine geçmeyecek.
+
+183
+00:44:46,996 --> 00:45:06,196
+Ondan sonra ne demiştik? Numara dedik, numara bir dedik biz ona. Sıfırdan büyükmüş, büyükmüşse, büyükse, önce büyük değilse bakalım. Sıfırdan büyük değilse sıfırdır.
+
+184
+00:45:14,739 --> 00:45:22,239
+uzunluk, dijit yok manasında. Ondan sonra burada da
+
+185
+00:45:25,460 --> 00:45:50,139
+Benim çağırdığım fonksiyon bana bir digit numarası dönmüş. Ben de kendi digit numaramı oraya toplayıp, count digit gönderiyorum. Number 1'in bir sonraki digitini ona bölerek bulabiliriz. Değil mi?
+
+186
+00:45:54,387 --> 00:45:55,851
+Tamamen şuraya.
+
+187
+00:46:02,804 --> 00:46:28,804
+Diyelim ki 2, 3, 9'muş. Ondan sonra bir sonrakini 2, 3 diye çağırdı. Ona bölünce o da 2 diye çağırdı. Öbürü de 0 elde etti. Kaçıncı çağrışında?
+
+188
+00:46:29,108 --> 00:46:47,108
+3. çağrışında. Tamam mı? Böyle. Yani ilk main fonksiyon şunu çağırdı, kendini çağırırken ilk seferinde bununla çağırdı, öbürü bununla çağırdı, en son base case'e ulaştığı 0 döndü.
+
+189
+00:46:52,500 --> 00:47:15,300
+Ondan sonra hesaplasın. Digit. Count digits'i hesaplatıyoruz. Number ile. O da dönüyor. Efendime söyleyeyim bir printf yardımıyla.
+
+190
+00:47:19,572 --> 00:47:24,572
+%d, digits,
+
+191
+00:47:28,596 --> 00:47:30,596
+on değil, in değil.
+
+192
+00:47:33,596 --> 00:47:34,596
+in olur herhalde değil mi?
+
+193
+00:47:35,596 --> 00:47:38,596
+in your number
+
+194
+00:47:42,596 --> 00:47:44,331
+in your number mu?
+
+195
+00:47:49,972 --> 00:48:10,251
+Şimdi buradaki scanf'de adres vereceğim. Neden az önceki adres vermiyordum? Hatırlayın. Çünkü
+
+196
+00:48:15,411 --> 00:48:20,411
+Stringler karakter, areyidir ve onlar zaten bir adrestir.
+
+197
+00:48:25,204 --> 00:48:52,704
+Şimdi, bakalım, yine buradayız. Bakalım bir hatamız var mı? Tabii şunu koment out etmediğim için, burada bir hata geldi. Bakalım, 1, 2, 3, 4, 5, 6, 7, 7 digit in your number diyor.
+
+198
+00:48:53,364 --> 00:48:57,364
+Anlaşılmayan bir şey var mı? Biraz öncekine çok benziyor.
+
+199
+00:48:57,364 --> 00:49:04,364
+Karacette 1'den mi, 0'dan mı hocam? Tam böleceğiz. Evet, tam böleceğiz.
+
+200
+00:49:04,364 --> 00:49:14,364
+Tam böldüğümüz için, yani şu işaret şey ya, integer division dediğimiz, onun için şey yapıyor.
+
+201
+00:49:17,811 --> 00:49:34,311
+Tamam, bu da böyle. Arkadaşlar, daha önce uygulama yapmadım. Ara veriyorlar mı arkadaşlar? Bir saat oldu yaklaşık. Ara verelim mi? İster misiniz? Üç tane daha sorumuz var.
+
+202
+00:49:43,507 --> 00:49:53,507
+Hiç kimse itiraz etmedi. Tamam güzel gidiyorsa devam edebiliriz. Bakıyorum bir itiraz geldi. Hemen yetiştirebilirsiniz.
+
+203
+00:49:56,507 --> 00:50:01,507
+Haa bir de o mu var? Tamam. Yetiştiririm diye düşünüyorum ya.
+
+204
+00:50:05,507 --> 00:50:09,507
+Question 3 için bakıyoruz.
+
+205
+00:50:10,228 --> 00:50:15,527
+Question 3 neymiş? Birden n'ye kadar olan sayıların toplamını bulacağız.
+
+206
+00:50:18,527 --> 00:50:22,927
+n çarpı n eksi 1 bölü 2 ile bulabiliyoruz.
+
+207
+00:50:25,927 --> 00:50:27,927
+Ama biz öyle yapmayalım.
+
+208
+00:50:49,684 --> 00:50:51,684
+Şimdi bir...
+
+209
+00:50:53,084 --> 00:50:55,084
+Şuraya main'i yeniden yazalım.
+
+210
+00:51:14,612 --> 00:51:17,012
+işletim sistemine, dedik ki,
+
+211
+00:51:21,043 --> 00:51:44,343
+sorunsuz bitti. Ne zaman sorunsuz biter? Tabii ki. Bakalım şimdi bir tane ne yapacağız? Eni almamız lazım. Şeyden, kullanıcıdan değil mi? Başka ne yapmamız lazım? Bir de toplamı ona vereceğiz. O zaman bir tane de samımız olacak.
+
+212
+00:51:48,307 --> 00:52:04,108
+Bir fonksiyon olacak. Bu da sum'ı dönecek bize, int, sum'ı. Ondan sonra sum of range.
+
+213
+00:52:12,371 --> 00:52:23,371
+Ondan sonra biz bir tane neye verdik buna? Böyle oluyor. Tamam. Kullanıcıdan alalım. Printf.
+
+214
+00:52:23,371 --> 00:52:28,371
+Yafı uzatmaya gerek yok. Enter, n diyelim.
+
+215
+00:52:32,179 --> 00:52:39,500
+Bundan sonra scanf ile eğini alalım.
+
+216
+00:52:54,132 --> 00:53:20,411
+sum'ı da kim hesaplayacak bize? sum of number hesaplayacak ve biz ona neyi verince bu da bize sum hesaplayacak. Ondan sonra biz buna bahsettiğim şey bu işte. Mesela hiç implementasyon yapmadan ilk önce main'i bu şekilde tasarlayabiliyorum. Ondan sonra implementasyona geçebiliyorum.
+
+217
+00:53:20,628 --> 00:53:32,947
+Bu bazen çok fonksiyonlu şeylerde. Modularity'nin önemi de buradan geliyor. Çok fonksiyonlu bir program yazacağımız zaman bazı fonksiyonları sonraya bırakabiliyoruz.
+
+218
+00:53:32,947 --> 00:53:41,628
+Onu da sonradan ekleyebiliyoruz. O yüzden bu şekilde.
+
+219
+00:53:45,876 --> 00:54:01,556
+Şimdi bu mesela, bunu çalıştırdığımız zaman bize bir hata vermeyecek. Sum of number'ı hesaplayacak mı? Hayır, hesaplamayacak. Ama bize hata da vermeyecek. Çünkü öyle bir fonksiyon burada var. İmplementasyonunu yapmamış olsak bile fonksiyon olduğu için.
+
+220
+00:54:02,996 --> 00:54:18,355
+Yani şurada belki şey de yapabilirsiniz, declaration yapmak yerine içini boş bırakarak da şey yapabilirsiniz. O anda implementasyonu yapmayacağınız fonksiyonu. Ama o da çok şık görünmüyor bence.
+
+221
+00:54:34,228 --> 00:54:35,947
+%d
+
+222
+00:54:40,115 --> 00:54:44,556
+Bu da san. Tamam, şimdi.
+
+223
+00:55:00,916 --> 00:55:05,916
+Evet. Base case'imiz.
+
+224
+00:55:09,492 --> 00:55:10,380
+Alam
+
+225
+00:55:13,748 --> 00:55:23,987
+Base case'imiz nedir? Biz ne alıyoruz? Parametre olarak ne gönderiyoruz buna? 1'den kaça kadar olan sayı ise onu gönderiyoruz.
+
+226
+00:55:25,268 --> 00:55:33,268
+1'den 1'e kadar olan sayı bir tanecik 1. O base case'imiz olabilir. Değil mi? Bir dönecek o zaman.
+
+227
+00:55:35,427 --> 00:55:36,628
+Ondan sonra...
+
+228
+00:55:37,619 --> 00:55:45,619
+Her yeni çağırdığın fonksiyon birden başlayarak böyle böldük, böldük, böldük, çağırdık, çağırdık, çağırdık.
+
+229
+00:55:45,619 --> 00:55:50,619
+En sonuncusu ne yapacak? Bakın yine şurada göstereyim ben size.
+
+230
+00:55:50,619 --> 00:56:00,619
+Bu sefer command to add edelim de. Şimdi mesela n'e diyelim ki 3 olsun da çok zor olmasın.
+
+231
+00:56:00,619 --> 00:56:04,556
+n'i 3 olarak çağırmışız bir tane şeyde.
+
+232
+00:56:04,947 --> 00:56:30,947
+fonksiyonda. Ondan sonra, bu n 2 için çağıracak. Bu da n eşitli bir için çağıracak. Şu base case'e ulaşmış olacak. Tamam mı? Şöyle geliyorum. Şu base case'e ulaşmış olacak. Biri,
+
+233
+00:56:32,947 --> 00:56:58,947
+Buna dönecek. Bu da kendi sayısıyla bunu toplayacak. Şuna dönecek. Tamam mı? Bu 3 döndü. Bu da kendi sayısıyla bir öncekinden, yani şurayı şöyle yapayım aslında. Bir öncekinden return eden 1 artı 2'yi dönecek. Şu da şöyle oluyor.
+
+234
+00:57:01,300 --> 00:57:19,276
+Şu da şununki oluyor. Şu öncekinden return eden. Bu da kendisinin hesapladığı. Bu da buna bunu topluyor. Bu da bunu bunu topluyor. En sonunda şu main'den çağrılmıştı. O da onu ona dönüyor. Tamam.
+
+235
+00:57:25,876 --> 00:57:49,876
+O zaman base case'imiz ne mizin bir olduğu nokta. Ne miz bir ise bir dönüyoruz. Return bir. Peki değilse?
+
+236
+00:57:50,675 --> 00:58:14,675
+Yine buraya kafanız karışıyorsa if-else tamamlayabilirsiniz. Ama yapmanıza gerek var mı? Hayır. Çünkü şu ifin içine bir kez sadece ne eğer birse düşer, onun dışındaki şeyler için devam eder. Yani ifin içine düşmeden aşağı doğru devam edecek. Bu durumda da...
+
+237
+00:58:17,076 --> 00:58:22,076
+Kendimin sayısı şu anda olan n değerim. Tamam?
+
+238
+00:58:22,076 --> 00:58:41,076
+Ve benden önce bana, benim çağıracağım ve bana return etmek zorunda olan yine aynı fonksiyonun n'nin bir eksiği olacak.
+
+239
+00:58:44,179 --> 00:58:58,179
+Yani şöyle düşünün, bana birisi n-1'e kadar olan toplamayı verirse, ben de n'yi buna toplarım ve return ederim. Böylece sum'ı bulurum demek.
+
+240
+00:58:58,179 --> 00:59:01,739
+Bakalım o olmuş mu?
+
+241
+00:59:04,916 --> 00:59:10,675
+Öğne, öğne deklart.
+
+242
+00:59:17,588 --> 00:59:20,908
+neye girin? 5 olsun.
+
+243
+00:59:20,908 --> 00:59:26,908
+5
+
+244
+00:59:33,012 --> 00:59:52,012
+Doğru. Üçü de hesaplayalım. Evet. Tamam. Gelelim. Ooo çete beş tane şey gelmiş. Dur bakayım. Niye? Dur bir dakika.
+
+245
+01:00:01,012 --> 01:00:06,212
+Fonksiyonu neden? İki kez yazıyoruz. Yukarıda fonksiyonu hata vermemesi için.
+
+246
+01:00:06,212 --> 01:00:10,412
+Tanın adı içinde onu... Niye direkt yukarı yazmıyoruz peki?
+
+247
+01:00:12,412 --> 01:00:18,212
+Heh, [öğrenci] anlamış. [öğrenci] sen de tekrarı izlersin.
+
+248
+01:00:18,420 --> 01:00:42,384
+Birazcık bahsettim modularity'den. Siz de yazılım mühendisliğinde bunu ayrıntılı bir şekilde göreceksiniz. Ama genel olarak bu alışkanlık olursa yani şimdiden kolaylık sağlayacağını söylüyorum. Ayrıntılı gördüğün zaman da hala mantıksız gelirse sen de...
+
+249
+01:00:42,384 --> 01:00:48,384
+Öyle tip bir şey olursun, belki yazılımcı olursun. O da kabulüm, bence sorun yok.
+
+250
+01:00:49,384 --> 01:00:57,384
+Ha, şeyde sorun oluyor tabii, ödev okurken sorun oluyor. Modularity'ye dikkat etmeyen ya da işte onlardan puan kırıyoruz.
+
+251
+01:00:57,384 --> 01:01:06,384
+Ama şey için, puan kırmam yani. Neden declaration yapmadın da direkt implementasyon yaptın, onun için puan kırmayız tabii.
+
+252
+01:01:06,384 --> 01:01:08,384
+Gelelim dördüncü soru.
+
+253
+01:01:08,947 --> 01:01:11,947
+Bir tane...
+
+254
+01:01:15,380 --> 01:01:37,380
+Bir tane şey var. Yuclidean'ın, yani ÖSS hazırlıkta görmüş olmanız gerekiyor. GCD hesaplama şeyi var. EBOB hesaplama yani en büyük ortak böleni hesaplama algoritması var.
+
+255
+01:01:48,596 --> 01:01:55,976
+Şimdi diyelim ki iki tane sayı var. Sayılardan büyük olanın, bakın şöyle diyelim.
+
+256
+01:01:55,976 --> 01:02:07,976
+Şöyle, EBOB numara bir, numara iki diyelim. Numara birin, birin daha büyük olduğunu varsayın.
+
+257
+01:02:15,264 --> 01:02:29,264
+1-2, pardon şurası numara 2, şu numara 2 ile numara 1-2'nin ebobuna eşit. Ve bu böyle böyle gidiyor.
+
+258
+01:02:35,059 --> 01:02:44,299
+şu da reminder'a eşit olduğu için en sonunda base case'imiz
+
+259
+01:02:51,891 --> 01:02:55,211
+En sonunda Base Case'imiz şey oluyor, küçük sayı.
+
+260
+01:03:05,876 --> 01:03:10,516
+Bunu şöyle hesaplıyoruz. Bir tane iki tane şey yapalım. Pardon.
+
+261
+01:03:28,211 --> 01:03:28,972
+Bu yıkadır.
+
+262
+01:03:34,931 --> 01:03:37,331
+Kafamı çok karıştırdı, pardon.
+
+263
+01:03:39,331 --> 01:03:41,971
+Şey, main'i yazayım önce.
+
+264
+01:03:47,155 --> 01:03:53,155
+Buradan çıkan sesler umarım size de gelmiyordur. Çok gürültülü bir ortam oldu.
+
+265
+01:03:58,996 --> 01:04:01,315
+Şimdi iki tane sayımız vardı.
+
+266
+01:04:07,123 --> 01:04:08,939
+Bundan sonra...
+
+267
+01:04:15,956 --> 01:04:17,956
+Bunları şeyden alacağız tabi.
+
+268
+01:04:20,755 --> 01:04:22,755
+Kullanıcıdan alacağız.
+
+269
+01:04:24,755 --> 01:04:30,755
+Enter your numbers diyeceğiz.
+
+270
+01:04:34,900 --> 01:04:41,068
+Aslında buraya mesela şey kuralı da koyabilirsiniz. Önce büyüğü ver falan diye veya
+
+271
+01:04:48,724 --> 01:04:51,524
+Yüz de d, yüz de d.
+
+272
+01:04:56,724 --> 01:05:08,724
+Bu adresi N1'in adresine atsın, bu da N2'nin adresine atsın. Sonra gelelim.
+
+273
+01:05:12,851 --> 01:05:14,851
+Şuraya deklarar işini yapalım.
+
+274
+01:05:15,851 --> 01:05:17,851
+Gcd dönecek.
+
+275
+01:05:22,164 --> 01:05:28,164
+Türkçe'de yazabilirim. e-book yazalım. Türkçe olsun bu da.
+
+276
+01:05:37,108 --> 01:05:39,108
+Bir tane integer.
+
+277
+01:05:45,684 --> 01:05:59,684
+Bir tane de int, c,r, 12. Böyle alt direli, böyle yaparsın kullanmayı hiç sevmem. Ama yine de böyle yapacağım bir şartlar.
+
+278
+01:05:59,684 --> 01:06:13,676
+Gelelim. Şimdi şu yukarıdaki fonksiyonu iki kere yazmak değil, onun ismi de fonksiyon declaration.
+
+279
+01:06:14,099 --> 01:06:17,099
+Şunun adı da Functional Implementation.
+
+280
+01:06:21,300 --> 01:06:22,300
+Şimdi bakalım.
+
+281
+01:06:25,300 --> 01:06:26,300
+Base case'i...
+
+282
+01:06:28,300 --> 01:06:30,300
+Nasıl diyelim? Eğer ki...
+
+283
+01:06:31,300 --> 01:06:32,300
+Eğer iki...
+
+284
+01:06:36,820 --> 01:06:50,820
+Az önce biraz yanlış söylemiş olabilirim. Şimdi eğer en büyük ortak bölenden bahsediyorsak, iki sayı birbirine eşitse, en büyük ortak bölenleri kendilerine eşit oluyor değil mi?
+
+285
+01:06:50,820 --> 01:06:53,820
+Şimdi bu durumda...
+
+286
+01:06:58,036 --> 01:07:10,836
+Bu durumda kendilerine eşit olsun, mesela N1, N1, N2'ye eşitmişse şöyle oluyor.
+
+287
+01:07:17,300 --> 01:07:34,300
+N1, N2'ye sonra eşit de olabiliyor. Çünkü çıkarıyoruz ya birbirinden. Yani biri diğerine tam bölünüyorsa o zaman eşit de olabilir. O yüzden şöyle bir şey yapıyoruz.
+
+288
+01:07:38,739 --> 01:07:49,739
+Eşit değillerse, şu while'ın içine girsin, eşitlerse zaten ortak bölenlerin en büyük kendileridir demek.
+
+289
+01:07:49,739 --> 01:08:02,739
+Ondan sonra, şimdi birinin diğerinden büyük olması ihtimali var.
+
+290
+01:08:07,188 --> 01:08:20,188
+O zaman yeniden çağıracağımız fonksiyonda, yeniden çağırdığımızda fonksiyon, büyük olandan küçüğü çıkaracağız.
+
+291
+01:08:20,188 --> 01:08:28,188
+Çağıralım fonksiyonu, ne dedik? ebob dedik adına. ebob'u çağıralım, bu sefer ne için çağıracağız?
+
+292
+01:08:32,851 --> 01:08:38,851
+Pardon, N1'den N2'ye çıkaracağız.
+
+293
+01:08:38,851 --> 01:08:50,851
+Ve N2 ile olan, evet, N2 ile olan şeyi çağıracağız.
+
+294
+01:08:50,851 --> 01:08:57,851
+Tamam, şimdi eğer ki N1, N2'ye...
+
+295
+01:08:58,239 --> 01:09:12,639
+Şimdi bu, bu while'ın içine sadece eşit olmadıkları durum da giriyor ya. Geriye sadece iki seçenek kalıyor. Bir tanesi biri büyük, diğer seçenek de öbürü büyük. O zaman else kullanabilirim.
+
+296
+01:09:12,639 --> 01:09:24,639
+Eğer böyle olursa da bu sefer, yani öbür türlü olursa ne demek? N1 küçükmüş.
+
+297
+01:09:25,171 --> 01:09:32,171
+O zaman da N2'den N1'i çıkarıp şu oluyor.
+
+298
+01:09:34,171 --> 01:09:39,171
+En sonunda birbirlerine eşit oldukları durumda N1'i dönüyor.
+
+299
+01:09:47,060 --> 01:09:54,060
+Herhalde oldu. Bakalım şimdi
+
+300
+01:09:54,060 --> 01:10:00,060
+Şuraya bir tane
+
+301
+01:10:00,060 --> 01:10:07,060
+Web option'i yapalım. Webop eşittir.
+
+302
+01:10:12,851 --> 01:10:14,380
+Fonksiyon ebook.
+
+303
+01:10:18,547 --> 01:10:28,363
+n1 ve n2 için çağıracağız. Ondan sonra da printf.
+
+304
+01:10:32,404 --> 01:10:40,804
+GCD, greatest common divisor, eşittir.
+
+305
+01:10:40,804 --> 01:10:52,304
+%d, sonra bu da evob.
+
+306
+01:10:58,131 --> 01:11:00,131
+Bir de aynı şey varmış gibi değil, durdur bakalım.
+
+307
+01:11:04,467 --> 01:11:06,467
+Dördüncü soru daiz.
+
+308
+01:11:21,811 --> 01:11:47,211
+Şimdi, önce birbirlerine tam bölünsünler, on iki ve üç olsun. Ondan sonra bir tanesi, önce küçüğü girelim. Onu da vermiştik. Ondan sonra bir de tam bölünmesinler.
+
+309
+01:11:47,475 --> 01:12:14,475
+Mesela 45 ile 15 olsun. Bunlarınki de 5 çıkmalı. Yok, 45-15 ile tam benleniyor ki. Pardon gençler, diyelim ki 36 ile 45.
+
+310
+01:12:15,988 --> 01:12:32,988
+Mesela tam bölünemezlerse ne olacak? GCD'leri birse ne olacak? 17, 3.
+
+311
+01:12:39,380 --> 01:12:47,880
+Çıkara çıkara biri bulmuşuz. Bu da şeyin modun şeysiydi galiba.
+
+312
+01:12:50,880 --> 01:12:54,380
+Şimdi, ha bir tane kaldı, bu da şöyle.
+
+313
+01:13:01,395 --> 01:13:05,395
+Verilen stringin tersini bulacakmış.
+
+314
+01:13:16,532 --> 01:13:17,516
+5 diyelim.
+
+315
+01:13:41,332 --> 01:13:50,155
+Ne yapacaktık? Verilen stringin tersini bulacağız. Tamam.
+
+316
+01:14:00,180 --> 01:14:00,900
+[öğrenci].
+
+317
+01:14:16,851 --> 01:14:23,851
+Bir tane string alacağım demektir. Yine adına str koyalım.
+
+318
+01:14:23,851 --> 01:14:31,435
+Yine 50 olsun. Daha büyük bir yer ayırmaya gerek yok.
+
+319
+01:14:40,884 --> 01:14:42,884
+Şimdi bunu kullanıcı verecek.
+
+320
+01:15:35,507 --> 01:15:49,260
+Şöyle olsun. Şuraya da, şeye tonu itenemem. Ondan sonra bunu nada da ribos'ta olsun.
+
+321
+01:15:53,971 --> 01:15:57,011
+Şimdi aynı stringin üzerine yazmayacağız.
+
+322
+01:15:58,131 --> 01:16:00,371
+Reverse diye bir tane.
+
+323
+01:16:04,532 --> 01:16:07,852
+String'imiz daha olacak. Bunun üzerine yazacağız. Tamam mı?
+
+324
+01:16:12,627 --> 01:16:21,627
+Yani şu stringi kaybetmeden üzerine yani geri ters çevirebilmek için.
+
+325
+01:16:25,811 --> 01:16:29,012
+Yeni bir string atıyorum. Onda da
+
+326
+01:16:32,884 --> 01:16:37,884
+Bir tane bu da karakter arayı dönecek bize.
+
+327
+01:16:49,268 --> 01:16:53,507
+Adı da veribus str olsun.
+
+328
+01:16:54,507 --> 01:16:59,507
+Ondan sonra bir tane de karakter arayı içine alacak.
+
+329
+01:17:00,268 --> 01:17:08,068
+Yani parametre olarak str1 diye bir şey alıp sonunda da bir tane string dönüyor.
+
+330
+01:17:43,572 --> 01:17:52,971
+Soru sorabilirsin. Biz pointer'ları tam olarak görmedik de, bu string işlemleri yaparken her zaman pointer mı kullanmamız gerekiyor?
+
+331
+01:17:52,971 --> 01:17:59,131
+Pointer, şimdi string dediğimiz bir karakterin array'dir, tamam mı?
+
+332
+01:17:59,131 --> 01:18:06,971
+Ve karakter array'ini ifade edeceğimiz şey de,
+
+333
+01:18:07,475 --> 01:18:22,475
+Onun adresidir. Yani bir arayı ifade etmek için onun adresini kullanırız. Yani ilk eleman nerede? Çünkü arayı şeyde bir…
+
+334
+01:18:23,347 --> 01:18:37,347
+Tablenin tek satırlı bir table olarak düşün, şu Word'de kullandığımız table'larda. Ondan sonra böyle kutu kutu kutu kutu diye düşün. Şeyde bu şekilde duruyor tamam mı? Memoride.
+
+335
+01:18:37,347 --> 01:18:49,347
+Yani birincisinin adresini bilirsek, array'in diğer bütün elemanlarına ulaşabiliyoruz biz. O yüzden pointer dediğimizde adresi ifade ettiği için
+
+336
+01:18:49,619 --> 01:19:08,100
+Yani bir memurideki bir adresi ifade ettiği için. Biz bir array için yer alınca bize işletim sisteminin döndüğü şey array'in birinci elemanının adresidir.
+
+337
+01:19:08,100 --> 01:19:16,340
+Birinci elemanın adresi bize geliyor. Bu aslında bir pointer'dır. Neden pointer'dır? Çünkü adres.
+
+338
+01:19:17,492 --> 01:19:41,492
+Tamam. İçindeki elemana ulaşmak için yıldızı kullanıyorduk, hatırlayın. Pointer'ın kendisi adres veriyor. İçindeki elemanın ne olduğuna ulaşmak için de o adresi yıldızlı bir şekilde şöyle kullandığımız zaman pointer...
+
+339
+01:19:42,239 --> 01:20:05,239
+Aritmetiğinden hatırlayın. Mesela şöyle ptr yazınca bu value of ptr. Yani ptr adresi mesela diyelim ki bir tane intacrimiz varmış, 4'müş. Bunun adresinin adı da ptr'ymiş.
+
+340
+01:20:09,332 --> 01:20:31,832
+Ondan sonra çarpı, şöyle mi yapılıyordu? 0 böyle bir şey. Ondan sonra bir tane adres tamam mı? Adres olsun. Ondan sonra şu ptr şu adresi tutar. Bu adresin içindekine ulaşmak için yıldızı kullanırız.
+
+341
+01:20:32,340 --> 01:20:37,340
+PTR'yi tek başına söylediğimiz zaman da bu adrese ulaşırız.
+
+342
+01:20:37,340 --> 01:20:40,340
+Anladım, tamam, teşekkür ederim.
+
+343
+01:20:40,340 --> 01:20:52,332
+Rica ediyorum. Şimdi ben bunu bir tane örnek olarak almıştım ama ben bunu böyle yapmak istemiyorum. Şöyle yapacağım.
+
+344
+01:20:59,731 --> 01:21:05,731
+Yani bir tane şey dönmesin bize.
+
+345
+01:21:10,068 --> 01:21:20,811
+Bir string dönmesin bize de. Verdiğimiz stringi fonksiyonun içinde yazalım, tamam mı? Böyle yapalım.
+
+346
+01:21:23,956 --> 01:21:25,956
+Şöyle diyelim.
+
+347
+01:21:28,956 --> 01:21:31,956
+Reverse string demeyelim de.
+
+348
+01:21:33,956 --> 01:21:38,956
+Şuraya diyelim ki, reverse str.
+
+349
+01:21:39,956 --> 01:21:45,956
+Bundan sonra biz kendi str'ımızı buna gönderdiğimiz zaman, bundan sonra altına da bir tane...
+
+350
+01:21:51,347 --> 01:22:11,243
+gerek olmayacak herhalde. Tamam. Şimdi bu void olunca ne demek oluyor? Bize bir şey dönmeyecek demek oluyor. Yani her seferinde biz, bu şimdi şey ya, recursive ya. Her seferinde biz bunu çağırıyoruz.
+
+351
+01:22:12,435 --> 01:22:17,935
+O da bir sonrakini çağırıyor, da bir sonrakini çağırıyor, da bir sonrakini çağırıyor.
+
+352
+01:22:17,935 --> 01:22:24,935
+Kendi işini yapıyor ve geriye bir şey dönmüyor. Sadece bitirdiğine dair bir şey dönüyor.
+
+353
+01:22:24,935 --> 01:22:25,935
+Tamam mı?
+
+354
+01:22:27,935 --> 01:22:28,935
+Şöyle bir şey.
+
+355
+01:22:31,935 --> 01:22:36,935
+Yine az önceki string örneğinde olduğu gibi bizim stringimizin
+
+356
+01:22:38,163 --> 01:23:05,163
+String'imizin boş olması bizim base case'imizdir. Tamam mı? Boş olması demekte, sonunda şunun olması demekte. Yani null. Yani hiçbir şey yok içinde. İçinde hiçbir şey yoksa bir şey dönmeyeceğiz. Ne yapacağız biliyor musunuz?
+
+357
+01:23:07,604 --> 01:23:14,604
+Base Case'e ulaştığımızda, karakteri yazalım.
+
+358
+01:23:24,148 --> 01:23:44,148
+Yani bizim fonksiyonumuz karakteri yazmak olsun, yazma işini yapsın. Tamam mı? Yani bunu bir yerden örneğinde string dönüyordu. Ama onun biraz daha kafa karıştırıcı olduğunu düşünüyorum.
+
+359
+01:23:50,931 --> 01:24:08,931
+Nesini yazacak? Valüsunu değil mi? Bakın şu pointer'ın daha doğrusu bizim gösterdiğimiz pointer dediğimiz işaretçi tamam mı? Bu işaretçinin gösterdiği adresin içindeki...
+
+360
+01:24:09,811 --> 01:24:19,811
+Her ne varsa ovaloya ulaşmak için, oradaki değere ulaşmak için, gerçek değere ulaşmak için önüne yıldızı koyuyoruz.
+
+361
+01:24:19,811 --> 01:24:28,811
+Tıpkı normalde gerçek değer olan, mesela bir tane diyelim ki, şuraya bir şey yapayım.
+
+362
+01:24:28,811 --> 01:24:36,811
+Mesela diyelim ki int, b diye bir şey tanımladık. Ondan sonra değeri de 3 olsun dedik.
+
+363
+01:24:37,247 --> 01:24:49,247
+Bu ne yapıyor? Gidiyor, bir tane inticarlik yer ayırıyor, şeyden, memoriden. İçine de değer olarak 3 yazıyor. Tamam mı?
+
+364
+01:24:49,247 --> 01:25:01,247
+Şimdi biz bu 3'ün hangi adreste olduğunu nasıl öğreniyoruz? Şöyle öğreniyoruz. Tamam mı?
+
+365
+01:25:01,811 --> 01:25:27,811
+Yani önüne adres işareti koyduğumuz zaman nasıl ki gerçek değerin adresine ulaşıyoruz. Yine bir pointerdan bahsediyorsak da, valuasına böyle oluşuruz. Ondan sonra bir şey dönmeyeceğiz. Return'ümüz yok. Ama eğer ki...
+
+366
+01:25:29,939 --> 01:25:54,939
+Hala elimizde stringin üzerinde bir C, yani herhangi bir karakter varsa, karakter olmaya devam ediyorsa, o zaman kendimizi daha doğrusu fonksiyonumuzu yeniden çağıracağız ama bu kez bir sonraki karakter için çağıracağız.
+
+367
+01:25:54,939 --> 01:25:56,811
+Şöyle yapacağız gençler bakın.
+
+368
+01:26:00,979 --> 01:26:19,479
+Betülmüş, çağırdı. [öğrenci] için çağırdı. Ondan sonra çağırdı. Tamam mı? Bir daha çağırdı. Ondan sonra bir daha çağırdı.
+
+369
+01:26:23,091 --> 01:26:48,091
+Bir daha çağırdı. Burada boşluk gördü. Tamam mı? Şimdi, şuraya kadar geldik, base case'e ulaştık, durduk ya, bu return ettiği zaman şu, kendi, şuradaki gibi, kendi elindeki stringi yazar.
+
+370
+01:26:49,140 --> 01:26:54,140
+Bu kendi elindeki stringi yazar, bu kendi elindeki stringi yazar.
+
+371
+01:26:54,140 --> 01:27:00,140
+En sonunda da Base Case'e ulaştığı için zaten geri döndü.
+
+372
+01:27:00,140 --> 01:27:08,140
+Her çağrılan return'ını aldıktan sonra da program biter. Tamam mı?
+
+373
+01:27:08,140 --> 01:27:13,140
+String'in bir sonraki adresine ulaşacağız.
+
+374
+01:27:17,844 --> 01:27:36,344
+Her seferinde stringin bir sonraki adresine ulaşacağız, ta ki stringimiz bitene kadar. Bir sonraki adrese ulaştıkça, kendi elimizdeki stringi, en sonunda bittiği zaman kendi elimizdeki stringi yazacağız.
+
+375
+01:27:42,515 --> 01:27:55,055
+Bakıyorum, bir şey olmasın diye herhalde yok gibi. Bakın şimdi tekrar anlatıyorum. Chatte bir şey var.
+
+376
+01:27:59,988 --> 01:28:14,587
+Karakterin sonuna veya değişkenin başına koymak. Ha şuradaki mi? Ha yok, o aynı şey, evet. Yani şöyle arasında boşluk olup olmadığını soruyorsun. Evet, arasında boşluk olsa da fark etmiyor.
+
+377
+01:28:20,307 --> 01:28:29,307
+Şimdi yeniden anlatıyorum bunu, tamam mı? Şimdi ben bunu bir şey dönmesini istemedim. Bunun yerine şey yapmasını istedim.
+
+378
+01:28:33,307 --> 01:28:44,307
+Ben yinelemeli olarak her seferinde fonksiyonu bir daha küçük bir string için çağıracağım.
+
+379
+01:28:44,819 --> 01:29:04,319
+Ve stringin en sonuna ulaştığında herkes kendi elinde hangi şey varsa, hangi value varsa, bakın bu value hangisidir? Pointer'ın içindekidir, tamam mı? Yani şöyle düşünün.
+
+380
+01:29:05,619 --> 01:29:27,619
+Şu U'yu gösterirken bu T'yi gösterecek. Neden biliyor musunuz? Çünkü her pointer, array'in ilk elemanını gösteriyor ya, o yüzden. O yüzden herkes kendi elindeki stringi yazacak. Yani herkes kendi elindeki stringin birinci elemanını yazmış olacak.
+
+381
+01:29:28,756 --> 01:29:40,355
+Şimdi şunun için fark etmiyor. Zaten kendi elindeki string bir uzunlukta. Buraya geldiğimiz zaman bu neyi kimi yazacak? str1 neymiş? ul'ymiş.
+
+382
+01:29:40,355 --> 01:29:53,516
+Bunun str1 u'yu gösteren adrestir. Adresin valusu da önüne bir yıldız konmasıyla oluyor. Değil mi? Böyle.
+
+383
+01:29:54,515 --> 01:30:02,515
+Anlaşıldı mı ya? Ben çok karıştırarak anlatmışım gibi geliyor bana şu anda. Eğer kafanıza takılan bir yeri varsa lütfen sorun.
+
+384
+01:30:07,572 --> 01:30:10,891
+Ben bir kere daha çalıştırdıktan sonra bir kere daha anlatayım.
+
+385
+01:30:12,431 --> 01:30:16,011
+Şuraya şeyi koymayı unutmuşum.
+
+386
+01:30:18,072 --> 01:30:19,351
+Evet.
+
+387
+01:30:26,707 --> 01:30:34,207
+ismini değiştiriyorum için, ondan sonra da unutuyorum değiştirdiğini. Ondan sonra detür yazalım mesela.
+
+388
+01:30:36,207 --> 01:30:49,207
+Gördüğünüz gibi, burada daha önce yazmaya çalıştığım şu şeyi yazarsam.
+
+389
+01:30:55,923 --> 01:30:57,131
+Çıkırınacak.
+
+390
+01:31:03,699 --> 01:31:06,699
+Şimdi chat'teki soruya hemen bakıyorum.
+
+391
+01:31:10,771 --> 01:31:11,771
+Evet.
+
+392
+01:31:14,532 --> 01:31:15,771
+Hemen deneyelim.
+
+393
+01:31:18,963 --> 01:31:22,283
+Güzel bir yere parmak basmış.
+
+394
+01:31:22,283 --> 01:31:24,076
+Bakıyoruz.
+
+395
+01:31:28,020 --> 01:31:31,220
+Evet. Aynı şey yani.
+
+396
+01:31:35,347 --> 01:31:42,347
+Aslında böyle yapsaydım daha kolay anlardınız belki. Teşekkür ediyorum kemalet.
+
+397
+01:31:45,347 --> 01:31:53,347
+Tamam. Var mı sıkıntı? Bakın bu çok güzel oldu. Yani burada value'yu görmeniz açısından da.
+
+398
+01:31:54,347 --> 01:31:59,083
+Aynı şekilde ama diğerini de unutmayın. Bakın buraya onu da ekleyeyim.
+
+399
+01:31:59,604 --> 01:32:12,104
+Tekrar izlemek isterseniz buradan şey yapın. Bu da eşittir. Gerçek dünya eşittiri.
+
+400
+01:32:12,104 --> 01:32:18,104
+Tamam mı? Şöyle.
+
+401
+01:32:28,979 --> 01:32:41,979
+Adresteki değeri belirtiyor [öğrenci]. Pointer yaparken ama şöyle tanımlıyoruz ya ptr. İntecer pointer'ı tanımladık.
+
+402
+01:32:41,979 --> 01:32:54,955
+ptr'nin içinde bir adres var. O 0x. İşte diyelim ki 1001'deki adres. Tamam mı? 1001'deki adres var.
+
+403
+01:32:56,115 --> 01:33:09,115
+Böyle declaration yaptıktan sonra bu bir tane integer adresi veriyor. Ptr'ye de bu adresi yazıyor.
+
+404
+01:33:09,115 --> 01:33:23,979
+Yani biz Ptr'yi yazdırırsak, yapayım mı bunu ya? Bak şimdi. Bir tane integer pointer'ımız varmış.
+
+405
+01:33:24,435 --> 01:33:26,435
+Adı da ptr imiş tamam mı?
+
+406
+01:33:28,935 --> 01:33:31,935
+Şimdi, printf
+
+407
+01:33:34,735 --> 01:33:41,435
+Adres de intedir gençler. O yüzden burada %d kullanıyorum.
+
+408
+01:33:44,135 --> 01:33:45,435
+ptr yazdık.
+
+409
+01:33:47,635 --> 01:33:50,435
+Şimdi şuraları biraz...
+
+410
+01:34:08,595 --> 01:34:15,095
+%d, argument of integer, argument has integer pointer.
+
+411
+01:34:15,095 --> 01:34:28,971
+Tamam, bir yaz bakalım yazabiliyor mu? Heh yazdı bak. Gördün mü? Dur bir dakikacık. Şunu da koyayım da oraya karışıyor hep.
+
+412
+01:34:32,340 --> 01:34:33,340
+Bak şimdi.
+
+413
+01:34:38,355 --> 01:34:53,355
+Şimdi bak, az önce şeyi kapattığım için, yeniden başladığım için farklı bir yer vermiş. Yani şuradaki ile buradaki aynı değil. Bu benim bilgisayarımın memuriden bir adresi, tamam mı?
+
+414
+01:35:10,195 --> 01:35:15,180
+Ben ptr'yi 3 yazmak istiyorum.
+
+415
+01:35:21,108 --> 01:35:22,108
+Gördünüz mü?
+
+416
+01:35:28,500 --> 01:35:29,500
+Böyle işte.
+
+417
+01:35:32,039 --> 01:35:33,500
+Bu içindeki
+
+418
+01:35:35,800 --> 01:35:37,800
+şu da adresi.
+
+419
+01:35:42,420 --> 01:35:54,420
+Şimdi, star ptr'yi herhangi bir değere atamak, normal değere atamakla aynı şey mi oluyor? Evet.
+
+420
+01:35:54,420 --> 01:36:04,420
+Star ptr'yi x'e atasak, sonra x üzerine yaptığımız değişiklikler pointer'ı etkiler mi? Evet. Bakıyoruz.
+
+421
+01:36:08,532 --> 01:36:22,931
+Star ptr olunca adresin içini değiştir demek oluyor. Ondan sonra üzerinde bir değişiklik yaptığımız zaman yine adresin içini değiştirmiş oluyoruz.
+
+422
+01:36:22,931 --> 01:36:32,532
+Yani şöyle bir şey, ptr üzerinde bir değişiklik yaptığımız zaman bu üç kaybolacak.
+
+423
+01:36:35,891 --> 01:36:48,891
+Yani 3'ü kaybederiz. Yani PTR üzerine değişiklik yaparsak. Ama zaten valiosunu değiştirebilmek için gidip yine onun adresin yerine bir şey yazmamız gerekecek.
+
+424
+01:36:54,387 --> 01:36:56,948
+Azıcık da pointer anlatmış gibi oldum ama.
+
+425
+01:37:02,931 --> 01:37:10,532
+Sorunuz var mı arkadaşlar? Ben bu kadar şey hazırlamıştım, 5 tane. Bir tane daha hazırlasam da yetişecekmiş.
+
+426
+01:37:10,532 --> 01:37:25,731
+Azıcık da boğazım yoruldu. Sorunuz varsa cevaplayayım. El kaldırabilir, sorabilirsiniz veya çete yazabilirsiniz.
+
+427
+01:37:28,212 --> 01:37:41,212
+Yeniden izleyebilirsiniz, bunları vermeyeceğim. En azından buraya bunları hazırladım, yazdım aslında. Çat diyeverebilirim size. Ama bu sizin için hiç iyi olmaz.
+
+428
+01:37:41,212 --> 01:37:53,996
+Oturup kendiniz yazmaya çalışın. Az önceki gibi denemeler yapın. Mesela diyelim ki bir tane pointer tanımladım da.
+
+429
+01:37:54,931 --> 01:38:14,931
+Ondan sonra önüne işte yıldız koyunca ne çıkıyor, yani ne yazıyor bana, hangi değeri dönüyor falan. Bunları kendinizde ufak tefek yani gördüğünüz gibi çok da şey değil bunlar. Sadece aklınıza gelecek, ondan sonra deneyeceksiniz.
+
+430
+01:38:21,811 --> 01:38:40,811
+O yüzden o şekilde çalışabilirsiniz. Pointer konusunda aynı şekilde. Yani birisi size ne kadar oklarla, şeylerle göstermiş bile olsa, bunu kendinizin denemesi çok daha verimli olur yani.
+
+431
+01:38:42,036 --> 01:39:06,028
+Özellikle pointer aritmetiğini denemenizi tavsiye ediyorum. Biraz çünkü anlaşılması hafif sıkıntılı olabiliyor. Anlayınca da, aa bu muymuş diyeceksiniz. Tamam mı? Var mı sorunuz? Sorunuz varsa şey yapabilirsiniz. Yoksa bitirelim artık. Ayrılabiliriz.
+
+432
+01:39:13,684 --> 01:39:22,444
+Herhalde yok. Kapatayım mı? İyi günler, teşekkür ediyorum. Kendinize dikkat edin.
+
+433
+01:39:31,315 --> 01:39:33,099
+Görüşmek üzere.

@@ -1,0 +1,2179 @@
+1
+00:06:37,555 --> 00:06:39,595
+Merhabalar sesim geliyor mu?
+
+2
+00:06:45,684 --> 00:06:47,684
+Thank you, Eugene.
+
+3
+00:06:55,187 --> 00:07:02,187
+So, we were working on context-free languages.
+
+4
+00:07:04,052 --> 00:07:05,052
+and we saw ambiguity. We talked about ambiguity. Now we will talk about pumping lemma for context-free languages.
+
+5
+00:07:29,396 --> 00:07:31,755
+So let's say this is a
+
+6
+00:07:52,788 --> 00:07:54,288
+context-free, then we just
+
+7
+00:09:29,268 --> 00:09:36,268
+Remember we already saw pumping lemma.
+
+8
+00:09:46,196 --> 00:10:00,196
+We just say that it was, we just called it pumping lemma, but it was pumping lemma for regular languages.
+
+9
+00:10:10,355 --> 00:10:28,355
+Now we will see a new version of it. And this new version will be for context-free languages.
+
+10
+00:10:32,532 --> 00:10:35,731
+Let's look at the...
+
+11
+00:10:39,572 --> 00:10:42,451
+statements.
+
+12
+00:11:09,139 --> 00:11:28,579
+It says that for every context-free language L, so I'm writing the definition. For every context-free language L, there is an integer n.
+
+13
+00:11:38,995 --> 00:11:40,395
+such that
+
+14
+00:11:48,371 --> 00:11:52,411
+for every string Z in L,
+
+15
+00:12:03,860 --> 00:12:22,659
+Z in L of length greater than N. There exists
+
+16
+00:12:32,307 --> 00:12:48,307
+the division Z equals to u v w x y u v w x y such that
+
+17
+00:12:53,556 --> 00:12:54,796
+first,
+
+18
+00:12:58,676 --> 00:12:59,676
+the length of VWX, the length of VWX is smaller than N. Second,
+
+19
+00:13:19,956 --> 00:13:30,635
+w x is greater than zero, the length of w x is greater than zero.
+
+20
+00:13:32,467 --> 00:13:34,467
+and finally
+
+21
+00:13:40,596 --> 00:13:48,596
+for all I larger than zero.
+
+22
+00:13:53,203 --> 00:14:10,203
+U, V to the I, W, X to the I, Y is in language L.
+
+23
+00:14:13,971 --> 00:14:20,331
+So this is the pumping lemma for context-free languages.
+
+24
+00:14:23,347 --> 00:14:25,487
+You need to write this.
+
+25
+00:14:50,740 --> 00:14:59,859
+I will skip the proof of pumping lemma for context-free languages.
+
+26
+00:15:08,884 --> 00:15:12,443
+So read at, read yourselves.
+
+27
+00:15:16,851 --> 00:15:20,092
+You can read it from the book.
+
+28
+00:15:49,844 --> 00:15:52,844
+Let's try to see some examples.
+
+29
+00:15:55,844 --> 00:15:58,844
+For example,
+
+30
+00:16:19,700 --> 00:16:24,100
+For example, let's look at this language, L.
+
+31
+00:16:28,532 --> 00:16:38,731
+L is zero to the I, one, zero to the I,
+
+32
+00:16:41,971 --> 00:16:50,511
+1, 0, 2, I. and
+
+33
+00:16:53,908 --> 00:16:56,908
+i is greater than one.
+
+34
+00:17:00,083 --> 00:17:05,083
+is not context-free language.
+
+35
+00:17:11,220 --> 00:17:36,220
+Now in general, context-free languages can match only two pairs. So in this case, we need to match one, two, three.
+
+36
+00:17:35,092 --> 00:17:39,492
+one, two, three zeros or...
+
+37
+00:17:43,220 --> 00:17:54,539
+three counts. So if we have zero to do two, we must have zero to two here and we must have zero to two here and
+
+38
+00:17:58,339 --> 00:18:06,299
+context-free languages can only match two of them, cannot match a third of them.
+
+39
+00:18:06,299 --> 00:18:18,900
+So you can easily see that this is not doable without using pumping lemma, but to prove you will need to use pumping lemma.
+
+40
+00:18:22,228 --> 00:18:24,547
+So let's say,
+
+41
+00:18:29,140 --> 00:18:31,140
+context-free languages.
+
+42
+00:18:36,243 --> 00:18:39,443
+cannot match
+
+43
+00:18:44,147 --> 00:18:45,707
+three pairs.
+
+44
+00:18:50,675 --> 00:18:52,395
+three cones,
+
+45
+00:18:57,779 --> 00:18:59,339
+as a group
+
+46
+00:19:03,827 --> 00:19:05,827
+Let's get the proof.
+
+47
+00:19:14,675 --> 00:19:31,475
+context-free languages in general, cannot match three things. So if you have three things to match, three counts to match, you cannot do that.
+
+48
+00:19:35,508 --> 00:19:53,508
+So let's try to use the context-free language pumping lemma. And the application of the pumping lemma is very similar to the pumping lemma for regular languages.
+
+49
+00:19:54,675 --> 00:19:58,435
+So, we will first suppose that...
+
+50
+00:20:04,948 --> 00:20:08,247
+we will suppose that
+
+51
+00:20:10,420 --> 00:20:13,420
+language L is context-free.
+
+52
+00:20:17,332 --> 00:20:27,411
+is a context-free language for obtaining a contradiction. So for contradiction.
+
+53
+00:20:29,715 --> 00:20:34,715
+Again, this will be a proof by contradiction.
+
+54
+00:20:34,715 --> 00:20:36,715
+And
+
+55
+00:20:39,796 --> 00:20:46,796
+let N be the
+
+56
+00:20:48,276 --> 00:20:50,675
+pumping lemma, constant,
+
+57
+00:21:02,324 --> 00:21:11,324
+Now, we need to decide on a pattern. So, let's decide on a pattern.
+
+58
+00:21:14,771 --> 00:21:44,751
+and the pattern must be larger than N in length, right? So, that means it must involve N somehow, as usual. So, the very, a very natural selection here is replacing these eyes with N, right? If you replace them,
+
+59
+00:21:44,771 --> 00:22:07,771
+with n, the length of the string will be larger than n. So let's say our Z string is
+
+60
+00:22:14,548 --> 00:22:30,548
+zero to N, one, zero to N, one, zero to N. Now the pumping lemma says that we can write
+
+61
+00:22:34,867 --> 00:22:36,867
+Z as
+
+62
+00:22:39,567 --> 00:22:42,567
+UVWXY
+
+63
+00:22:45,748 --> 00:22:54,748
+U, V, W, X, Y, such that
+
+64
+00:22:59,380 --> 00:23:02,319
+first,
+
+65
+00:23:24,468 --> 00:23:52,787
+Now, at this point, we need to consider how we can divide this. So the cases of dividing this into different UV, Y, X, Y. And we need to show that for each possible case, for all possible cases, there is no way of
+
+66
+00:23:52,787 --> 00:23:55,787
+of dividing.
+
+67
+00:24:03,571 --> 00:24:12,872
+So what can, how can we divide it? Let's try a little bit.
+
+68
+00:24:21,076 --> 00:24:25,076
+Let's say this is case one.
+
+69
+00:24:26,836 --> 00:24:33,235
+and we want to do something like this. So we will have some zeros.
+
+70
+00:24:37,044 --> 00:24:38,044
+then a one, then some other zeros, then a one, then some other zeros. And now we need to assign u, v, w, x, y to this somehow, right? And
+
+71
+00:25:12,915 --> 00:25:14,315
+and
+
+72
+00:25:17,940 --> 00:25:34,940
+We will pump V and X. So where should be V and where should we have X, right? And now...
+
+73
+00:25:46,259 --> 00:26:11,259
+The ones are number of ones, the count of ones is fixed. So you cannot pump them. So we cannot, so we can assign X to this and Y to this. And the problem with this is
+
+74
+00:26:11,259 --> 00:26:28,059
+and one can only be, can only have power one. We can only have count one. So we cannot pump this.
+
+75
+00:26:40,980 --> 00:26:55,980
+In case two, let's try again. We have some zeros, one, some other zeros, one, some other zeros.
+
+76
+00:26:57,107 --> 00:27:24,107
+In case two, let's try to, now can we do this? Can we put X's here and can we put Y's here? Well, if we do this, we can, now, first of all, we cannot do this because
+
+77
+00:27:27,107 --> 00:27:39,107
+the pumping lemma says VWX must be less than n. So,
+
+78
+00:27:44,627 --> 00:27:56,747
+I have confused letter Cs, letter Cs, so let's try again. So this should be
+
+79
+00:28:05,811 --> 00:28:10,571
+We need to pump here, the...
+
+80
+00:28:15,796 --> 00:28:39,275
+We need to pump V and X. So let's say this is V and this is X. Again, let's say this is V and this is X. Now, this looks somewhat promising, but there are two problems with this.
+
+81
+00:28:39,275 --> 00:28:48,375
+So, let's say we added one more zero here.
+
+82
+00:28:49,095 --> 00:28:57,935
+So, now, for the time, for the beginning, we cannot assign such, we cannot do this assignment.
+
+83
+00:28:57,935 --> 00:29:06,395
+The problem is VWX should be less than N.
+
+84
+00:29:06,395 --> 00:29:11,796
+So here we have n zeros.
+
+85
+00:29:13,855 --> 00:29:16,476
+We have n zeros here.
+
+86
+00:29:17,595 --> 00:29:21,955
+We have 1, 1, and we have 1, 1.
+
+87
+00:29:22,836 --> 00:29:29,016
+And we have some zeros here too.
+
+88
+00:29:29,016 --> 00:29:40,296
+so the in this case VX VWX sorry
+
+89
+00:29:44,884 --> 00:29:56,623
+vwx is not less than n, so we cannot choose this.
+
+90
+00:30:05,844 --> 00:30:09,344
+Let's try to, let's try to make...
+
+91
+00:30:16,115 --> 00:30:45,255
+Let's see case 3. Again we have some zeros, one some zeros, one some zeros. And now we want VWX be less than n. So let's say I will select a zero here.
+
+92
+00:30:48,435 --> 00:31:14,395
+as W, V, and this zero as X, and the remaining will be my W. And the remaining guys will be the other one, Y, and this will be, let's say, U. Okay. U, V, W, X. And in this case now,
+
+93
+00:31:14,395 --> 00:31:43,355
+So the length of VWX is less than N. It's not less. So here it's equal to N. So I cannot even do this. So let's add zero here.
+
+94
+00:31:44,395 --> 00:31:58,715
+So let's add a zero here. I'm making y larger so that vwx is smaller than n.
+
+95
+00:32:10,516 --> 00:32:36,155
+Now, if we pump up, in this case, we should be increasing, we should be able to increase number of ways and number of Xs. Okay.
+
+96
+00:32:36,243 --> 00:32:40,743
+So I should be able to say
+
+97
+00:32:42,867 --> 00:33:10,867
+I should be able to add one more zero here, for example, V and X. That means I will be adding two zeros. So, U, V, W, X, Z, but V has two and X should be two. Two of the X's.
+
+98
+00:33:12,867 --> 00:33:24,307
+Now if I do that, the U doesn't change here. So I have 0 to N and 1. So this part was U.
+
+99
+00:33:29,187 --> 00:33:42,847
+Now I added, so V was just a 0 here. So I increased its count. So I will have one more 0 and one more X.
+
+100
+00:33:42,867 --> 00:33:53,147
+So I will have zero to n plus two because I have one coming from v, one coming from x.
+
+101
+00:33:55,268 --> 00:34:02,067
+And then one and zero to n.
+
+102
+00:34:06,067 --> 00:34:12,068
+Sorry for that. Now in this case, the problem is,
+
+103
+00:34:12,068 --> 00:34:16,068
+uh,
+
+104
+00:34:17,427 --> 00:34:26,427
+this relation, this is not in the language, right? This is not in the language.
+
+105
+00:34:29,012 --> 00:34:47,012
+because the language says that the count of all these n's are same, right? So we have n, n, but n plus two.
+
+106
+00:34:48,884 --> 00:34:49,884
+So as you see, what other cases can we do? We see that in all cases where, so we can even divide this into two. So we see that
+
+107
+00:35:17,811 --> 00:35:19,811
+We see that
+
+108
+00:35:23,539 --> 00:35:25,539
+when
+
+109
+00:35:29,492 --> 00:35:31,891
+Vx.
+
+110
+00:35:31,891 --> 00:35:35,611
+As zeros.
+
+111
+00:35:35,611 --> 00:35:40,332
+Like this case, like case three.
+
+112
+00:35:45,460 --> 00:35:46,859
+the pumps,
+
+113
+00:36:01,588 --> 00:36:04,387
+the pumped...
+
+114
+00:36:06,739 --> 00:36:10,739
+The pumped up string
+
+115
+00:36:13,739 --> 00:36:16,739
+is not in the language.
+
+116
+00:36:19,739 --> 00:36:20,739
+And
+
+117
+00:36:22,739 --> 00:36:25,739
+So we see that whatever we do,
+
+118
+00:36:26,739 --> 00:36:30,739
+we cannot pump up this. And the problem here is
+
+119
+00:36:30,739 --> 00:36:41,739
+As you see, we can change the number of zeros in two places, right?
+
+120
+00:36:41,739 --> 00:36:47,739
+The context-free language.
+
+121
+00:36:51,123 --> 00:37:20,123
+allows us to pump up only two places. But in this case, we need to, in this language, we need to pump up one, two and one more, right? So how are we going to pump up this? We cannot. Okay. So whenever you see three counts,
+
+122
+00:37:21,123 --> 00:37:29,123
+in a pattern, you can assume that it cannot be pumped up and it's not context-free.
+
+123
+00:37:55,603 --> 00:37:57,763
+sometimes,
+
+124
+00:38:02,452 --> 00:38:09,251
+even if you have two things to match, you can still not pump up. Why?
+
+125
+00:38:25,012 --> 00:38:27,212
+Let's get an example.
+
+126
+00:38:32,563 --> 00:38:33,603
+So,
+
+127
+00:38:36,755 --> 00:38:46,755
+language, let's say language one is,
+
+128
+00:38:47,860 --> 00:38:52,860
+zero to I, one, zero to I, where I is greater than one.
+
+129
+00:39:00,839 --> 00:39:04,780
+Now, is this context-free or not?
+
+130
+00:39:04,780 --> 00:39:06,200
+This is context-free.
+
+131
+00:39:14,675 --> 00:39:39,675
+because we have two things to match, right? So we can see that we have to match this zero and this zero. And in the pumping length, the pumping lemma,
+
+132
+00:39:40,916 --> 00:39:45,916
+We can say our string is
+
+133
+00:39:48,307 --> 00:39:53,307
+some zeros.
+
+134
+00:39:54,708 --> 00:39:57,767
+and some other zeros.
+
+135
+00:40:01,460 --> 00:40:28,300
+and we will divide this to u, v, w, x, z. And we can just say this is the w. This one is the w. And now we can say this is the v. This zero is v. And this zero is x.
+
+136
+00:40:31,460 --> 00:40:59,460
+So we have VWX smaller than N. So here I chose Z equals to, by the way, I didn't write, but I should have written Z equals to 0 to N, 1, 0 to N, and N is the pumping length. N is pumping.
+
+137
+00:41:01,460 --> 00:41:03,460
+constant or length
+
+138
+00:41:07,347 --> 00:41:25,868
+So, this is a, this, we can pump this. And the rest can be, the rest can be, the other guy is Z.
+
+139
+00:41:28,724 --> 00:41:39,443
+This should be Y, sorry. Because we used Z here. So this is Y.
+
+140
+00:41:47,603 --> 00:42:17,123
+and this is U. Now, we can pump up V here. So if we put, for example, U V to the I W X to the I Y, if we consider this, we have 0 N plus 1, 1, 0 N plus 1,
+
+141
+00:42:17,603 --> 00:42:27,603
+and that is in the language, right? So this can be pumped up, no problem with this. And we are matching two things.
+
+142
+00:42:29,603 --> 00:42:30,603
+So...
+
+143
+00:42:36,148 --> 00:42:45,148
+So we can match. So the context-free languages.
+
+144
+00:42:45,780 --> 00:43:03,780
+can match two cones. Okay. And notice that this is not a proof.
+
+145
+00:43:08,596 --> 00:43:12,596
+This is not proof that
+
+146
+00:43:16,403 --> 00:43:19,124
+context-free language, L1.
+
+147
+00:43:22,643 --> 00:43:26,643
+L1 is context-free.
+
+148
+00:43:31,411 --> 00:43:47,411
+This is not a proof because to prove that L1 is context-free, what do we need to do? To prove that...
+
+149
+00:43:51,251 --> 00:43:54,251
+We need to give a context-free grammar.
+
+150
+00:44:13,172 --> 00:44:42,172
+So we will need to give a context-free grammar. Okay. So this is not a proof, but it's an example. So since this is a context-free language, we see that we can pump it up. But if I ask you a proof for the fact that this L1 is a context-free language,
+
+151
+00:44:42,172 --> 00:45:11,752
+If you write this, this is not a proof. Context-free language is, sorry, pumping lemmas can be used for proving that languages are not context-free. Okay. And here we actually didn't finish our proof. So we suppose that L is a context-free language for
+
+152
+00:45:11,751 --> 00:45:15,951
+contradiction. So we didn't say the contradiction here. Let's write that.
+
+153
+00:45:21,204 --> 00:45:29,204
+We see that, so for all cases,
+
+154
+00:45:33,652 --> 00:45:35,652
+Let me know it this soon.
+
+155
+00:45:40,467 --> 00:45:41,867
+for all
+
+156
+00:45:46,643 --> 00:45:49,523
+How can we say that?
+
+157
+00:45:52,884 --> 00:45:56,884
+We can not find
+
+158
+00:45:59,884 --> 00:46:00,884
+a
+
+159
+00:46:02,884 --> 00:46:03,884
+Z equals to
+
+160
+00:46:04,884 --> 00:46:08,884
+U, V, W, X, Y
+
+161
+00:46:09,884 --> 00:46:10,884
+that
+
+162
+00:46:13,884 --> 00:46:15,884
+can be pumped
+
+163
+00:46:18,884 --> 00:46:19,884
+up
+
+164
+00:46:19,884 --> 00:46:26,884
+and this is a contradiction.
+
+165
+00:46:26,884 --> 00:46:28,884
+This is a contradiction.
+
+166
+00:46:34,068 --> 00:46:38,387
+So, your assumption,
+
+167
+00:46:41,556 --> 00:46:48,715
+that L is context-free was wrong.
+
+168
+00:46:51,956 --> 00:47:13,815
+L is not context-free. So we are saying that L is not context-free. So the whole proof is here. And now, if you have two things to match, it may be the case that
+
+169
+00:47:13,815 --> 00:47:30,055
+and the language context-free, but be careful. Sometimes, even if there are only two things to match, it may still not be possible to pump up. Let's look at this next example.
+
+170
+00:47:33,095 --> 00:47:36,155
+Example, and I will say this L2.
+
+171
+00:47:36,156 --> 00:47:44,396
+This was L1. I want to contrast this with L2.
+
+172
+00:47:48,307 --> 00:47:51,167
+Now,
+
+173
+00:47:57,204 --> 00:48:01,204
+Let's look at this language.
+
+174
+00:48:06,900 --> 00:48:22,559
+ww where w is in zero plus one star.
+
+175
+00:48:26,260 --> 00:48:53,260
+is not context-free language. This is not context-free. And the reason is, so we, this seems to have two things to match, but,
+
+176
+00:48:56,052 --> 00:49:05,052
+If you think about it, there are more than two things to match. So...
+
+177
+00:49:19,827 --> 00:49:28,827
+Let's say, uh, N is the pumping lem- length.
+
+178
+00:49:33,556 --> 00:49:43,556
+and let's give a break and we will continue this when we come. So let's give a 10 minutes break.
+
+179
+01:00:41,139 --> 01:00:43,139
+sesim geliyor mu arkadaşlar?
+
+180
+01:00:48,340 --> 01:00:49,340
+Evet hocam.
+
+181
+01:00:57,076 --> 01:01:26,076
+Okay, so this is, we were here. So language two, which is W and W is not a context-free language. And we can easily prove that by selecting Z, sorry, Z as a,
+
+182
+01:01:28,916 --> 01:01:58,176
+something like 0 to N, 1, 0 to N, 1 to N, so 0 to N, something like that. So, for example, here, this is in the language, L2, and we should be able to pump this, but you can check yourself,
+
+183
+01:01:58,176 --> 01:02:04,816
+but this cannot be pumped.
+
+184
+01:02:08,659 --> 01:02:37,039
+You may want to see also this example. L3. W and W's reverse. Where W is in 0 plus 1.
+
+185
+01:02:38,659 --> 01:02:51,779
+star. So this is context-free language. This is a context-free language. You check yourself that you can pump this.
+
+186
+01:03:19,668 --> 01:03:35,668
+You can pump strings in this, let's see, strings in this. So I will stop here, you can work on this yourselves.
+
+187
+01:03:36,947 --> 01:03:43,947
+We will look at the simplifications of context-free grammars.
+
+188
+01:03:56,788 --> 01:03:58,327
+Yazmış mıydınız burayı?
+
+189
+01:04:29,139 --> 01:04:33,879
+context-free grammar simplifications.
+
+190
+01:05:22,963 --> 01:05:44,163
+Sometimes in the context-free grammar, grammars, you have unnecessary productions and you can simplify them by doing some substitutions. Let's say you have this,
+
+191
+01:05:49,684 --> 01:05:52,463
+Example, let's look at an example.
+
+192
+01:05:58,547 --> 01:05:59,547
+Let's say you have S produces AB A produces AAA A produces AB B produces AA and B produces AB B produces AA and B produces
+
+193
+01:06:28,547 --> 01:06:30,427
+B.
+
+194
+01:06:35,092 --> 01:06:48,531
+Now, here, this B produces B. We can substitute B.
+
+195
+01:06:51,572 --> 01:07:20,131
+We can substitute this capital B with this terminal B because it's a unit production. So there is just one, one thing it produces and it's a terminal. So whenever we see a B, we can insert, whenever we see a capital B, we can insert this,
+
+196
+01:07:21,572 --> 01:07:23,572
+this lowercase b.
+
+197
+01:07:26,572 --> 01:07:31,572
+So we will be having something like...
+
+198
+01:08:04,851 --> 01:08:05,851
+Thank you.
+
+199
+01:08:20,404 --> 01:08:32,404
+So we are substituting capital B with lowercase b. So we will not be seeing this guy for sure.
+
+200
+01:08:35,859 --> 01:08:40,659
+and
+
+201
+01:08:39,988 --> 01:08:40,988
+And now we need to scan for capital B's in the right side. And when we see capital B's in the right side, we need to substitute B with lowercase b. Now, we do that with adding the new pattern. So we are not
+
+202
+01:09:09,988 --> 01:09:13,627
+deleting this capital B here, okay?
+
+203
+01:09:13,627 --> 01:09:15,168
+It stays.
+
+204
+01:09:15,168 --> 01:09:25,168
+So we will say A, B, B, C is also in the A's rules, A's production.
+
+205
+01:09:25,168 --> 01:09:30,208
+So also here we have another B.
+
+206
+01:09:30,208 --> 01:09:35,047
+So we will say, okay, S produces A capital B,
+
+207
+01:09:35,047 --> 01:09:38,307
+but also A lowercase b too.
+
+208
+01:09:56,051 --> 01:10:15,051
+and cancer say this is equivalent. So this new grammar, sorry for that. This new grammar is equivalent.
+
+209
+01:10:23,444 --> 01:10:28,444
+This new grammar is equivalent to the first grammar.
+
+210
+01:10:34,003 --> 01:10:35,244
+And now,
+
+211
+01:10:41,587 --> 01:10:42,587
+We can even do other substitutions. For example, we can even totally get rid of B because we have just one more B in the left side. So we can
+
+212
+01:11:08,020 --> 01:11:10,020
+substitute
+
+213
+01:11:21,684 --> 01:11:42,923
+B with A, capital A. So we will have, now we need to again scan the right side and we again have these two Bs on the right side and this we are substituting so we will not see this rule.
+
+214
+01:11:42,923 --> 01:11:57,923
+So we will have, let's write them as producers. There's no change here, but now...
+
+215
+01:12:07,572 --> 01:12:26,211
+instead of A capital B, we can say A, A, A, and this part was B, right? And then we can have A, B.
+
+216
+01:12:33,524 --> 01:12:43,524
+and for the second rule, we only have A's. So nothing to do there.
+
+217
+01:12:45,268 --> 01:13:01,268
+And for the third rule, we have a capital B there, so we need to work on that. And so we...
+
+218
+01:13:02,644 --> 01:13:22,644
+We substitute this capital B with AA. So this part was B. And we also have this ABBC, global case.
+
+219
+01:13:25,652 --> 01:13:28,652
+Now this is our new grammar.
+
+220
+01:13:35,572 --> 01:13:36,531
+So,
+
+221
+01:13:41,747 --> 01:13:43,747
+So in general,
+
+222
+01:13:47,796 --> 01:14:00,796
+What we can do is we need to make sure we will have the same language. So we will have the same kind of
+
+223
+01:14:00,796 --> 01:14:15,796
+final grammar. But we will we will kind of have less variables. So here we have three variables. Now we have two variables.
+
+224
+01:14:15,796 --> 01:14:17,675
+And in general,
+
+225
+01:14:29,811 --> 01:14:31,811
+in general,
+
+226
+01:14:35,444 --> 01:14:55,624
+If you have something like a produces X, B, Z, something like, and we have B produces Y1, let's say. We can substitute this.
+
+227
+01:14:59,988 --> 01:15:27,287
+to get a produces x, b, z and or we should even say or x, y, 1, z. So if we have a terminal rule,
+
+228
+01:15:27,287 --> 01:15:31,587
+we can do this.
+
+229
+01:15:34,087 --> 01:15:38,828
+So, but if we have something like
+
+230
+01:15:44,404 --> 01:15:45,483
+and, you know,
+
+231
+01:15:53,524 --> 01:16:07,843
+if you have something like A produces X, B, Z and B produces
+
+232
+01:16:09,939 --> 01:16:10,939
+AC, let's say, something like that. Now, if you want to substitute this guy,
+
+233
+01:16:20,404 --> 01:16:48,404
+Since there is a variable here, what we need to do is, this will become AXACZ. Okay. We will just kind of, since there is a variable in the substitution, we will not add a new rule. Okay.
+
+234
+01:16:48,404 --> 01:17:02,404
+But if the substitution has terminals, so here we have a terminal on the right side, there is no variable, then we add a new rule.
+
+235
+01:17:06,404 --> 01:17:10,404
+Why will we use this?
+
+236
+01:17:10,404 --> 01:17:24,404
+We will try to simplify these grammars. So let's look at, for example, we want to get rid of nullable variables.
+
+237
+01:17:24,404 --> 01:17:26,404
+So
+
+238
+01:17:31,539 --> 01:17:37,319
+Hocam, yukarıda AX büyük BZ'yi silmemiz gerekmiyor mu?
+
+239
+01:17:42,195 --> 01:17:44,195
+General'ın ilk örneğinde.
+
+240
+01:17:44,195 --> 01:17:46,195
+Eee şurada mı?
+
+241
+01:17:46,195 --> 01:17:49,195
+Evet hocam onu silmemiz gerekmiyor mu? B'yi kaldırdık çünkü.
+
+242
+01:17:55,507 --> 01:18:10,507
+Yani evet bu örnekte sadece bir tane olduğu için silmemiz gerekiyor haklısın. Şurada bir de başka B daha olsaydı mesela şöyle olsaydı
+
+243
+01:18:14,228 --> 01:18:19,228
+B, A, C de olsaydı...
+
+244
+01:18:19,228 --> 01:18:21,228
+O zaman sinmezdik değil mi?
+
+245
+01:18:21,228 --> 01:18:24,228
+O zaman sinmezdik. Çünkü hala burada bir B var değil mi?
+
+246
+01:18:24,228 --> 01:18:27,228
+Evet, teşekkür ederim. Peki.
+
+247
+01:18:27,228 --> 01:18:29,228
+Teşekkürler.
+
+248
+01:18:31,228 --> 01:18:39,228
+Elde ettiğimiz gramarın orijinal gramarla aynı dizileri üretebilmesi gerekiyor.
+
+249
+01:18:55,923 --> 01:18:58,303
+So,
+
+250
+01:19:04,275 --> 01:19:07,275
+Let's look at the nullable variables.
+
+251
+01:19:12,948 --> 01:19:31,948
+So, If we see something like that, they say some variable produces a node. We call this a null production. So this is a null production.
+
+252
+01:19:35,444 --> 01:19:53,523
+So it produces null. And this X here is a nullable variable. In more general, if we have some variable like Y,
+
+253
+01:19:57,043 --> 01:20:12,283
+that yields something else. And at the end, if it yields to null, we say that this variable is nullable.
+
+254
+01:20:20,627 --> 01:20:32,627
+And in general, we want to get rid of nullable variables. So let's look at these examples.
+
+255
+01:20:41,395 --> 01:20:45,155
+and say we have S-produces
+
+256
+01:20:47,155 --> 01:20:48,655
+A and B
+
+257
+01:20:56,724 --> 01:20:57,724
+and produces a and B. And M produces null. Now, obviously M is a nullable variable.
+
+258
+01:21:23,412 --> 01:21:38,412
+and we want to get rid of it. So we will substitute this part. We will substitute M with null.
+
+259
+01:21:41,140 --> 01:21:44,439
+and the.
+
+260
+01:21:47,475 --> 01:21:49,515
+we will substitute
+
+261
+01:21:52,916 --> 01:21:53,916
+all nullable variables in general except start variable. So if the start variable has a null, we cannot do anything about it. So let's try to do this. So in the first rule, as producers, now, we will
+
+262
+01:22:22,916 --> 01:22:39,916
+substitute in the right side. So in the left side we have an M. We will not touch this so we will still have an M here. And obviously we will not have this third rule because we are substituting it.
+
+263
+01:22:39,916 --> 01:23:05,956
+And now, this can, since m variable still exists, we will still write a, m, b. And then we will add a new rule. If we substitute m with null here, we will have a, b. Similarly, s produces a, m, b.
+
+264
+01:23:05,956 --> 01:23:19,956
+and if we substitute m with null we have AB.
+
+265
+01:23:23,507 --> 01:23:27,107
+If we do this for all nullable variables,
+
+266
+01:23:35,283 --> 01:23:45,523
+after we remove all malproductions,
+
+267
+01:23:49,587 --> 01:23:59,587
+all the nullable variables
+
+268
+01:24:01,939 --> 01:24:03,139
+is a beer.
+
+269
+01:24:06,612 --> 01:24:11,612
+except
+
+270
+01:24:11,028 --> 01:24:14,268
+except for the start variable.
+
+271
+01:24:20,500 --> 01:24:32,300
+So if you have something like, something like S produces now,
+
+272
+01:24:37,555 --> 01:24:45,195
+You cannot do anything about it because this is the start variable. You cannot substitute with some other thing.
+
+273
+01:24:59,636 --> 01:25:00,775
+start very well.
+
+274
+01:25:08,851 --> 01:25:33,851
+So similarly, we can eliminate unit productions. So we want to eliminate nullable variables. We also want to eliminate unit productions.
+
+275
+01:25:36,180 --> 01:25:50,979
+and they are this kind of production. So you have a variable X and it produces a variable Y, just a single. So in both sides you have a single variable.
+
+276
+01:25:58,612 --> 01:26:15,612
+And obviously you can see this is not useful because if a directly produces y, we can just use y instead of x, right? Why should we have two different variables here?
+
+277
+01:26:17,612 --> 01:26:19,612
+Let's look at an example here.
+
+278
+01:26:22,612 --> 01:26:25,612
+So let's say we have s produces a, a.
+
+279
+01:26:25,612 --> 01:26:48,491
+A, sorry, S produces AA, A produces A, A produces B, and B produces A, and B produces BB.
+
+280
+01:26:48,491 --> 01:26:56,491
+Now, obviously, these two are unit productions. So, these
+
+281
+01:27:02,068 --> 01:27:27,068
+unit productions. And we want to get rid of them. So we will do that one by one. So first we will get rid of the one of them. Let's say first substitute this one.
+
+282
+01:27:31,412 --> 01:27:49,412
+We will first substitute A with B. So in the right side, whenever we see A, we will write B. Okay. And so...
+
+283
+01:27:53,332 --> 01:28:16,851
+and so S here, for example, we have A, capital A. Now, since we have an A here, this can be a B too. And B is here. So we will not...
+
+284
+01:28:19,060 --> 01:28:23,060
+Delayed this a yet because a is here.
+
+285
+01:28:23,060 --> 01:28:26,060
+So we have those variables.
+
+286
+01:28:26,060 --> 01:28:30,060
+So we will say we have.
+
+287
+01:28:30,060 --> 01:28:36,060
+A B here so as can produce an a.
+
+288
+01:28:36,060 --> 01:28:42,060
+Capital a or a capital B.
+
+289
+01:28:44,115 --> 01:29:12,115
+The second production A is on the left side. So we don't touch that. We touch the ones A, capital A is on the right. And we will not write this third production. For the fourth production, we have B produces A, similar to this new, the start variable.
+
+290
+01:29:14,115 --> 01:29:20,915
+we have A and now we have B.
+
+291
+01:29:25,684 --> 01:29:36,684
+And finally, we have B produces external Bb.
+
+292
+01:29:38,676 --> 01:29:40,676
+Now, uh...
+
+293
+01:29:43,923 --> 01:29:55,923
+We can immediately remove B produces B because that's obvious, right? So...
+
+294
+01:30:00,372 --> 01:30:08,372
+Let's say we can immediately
+
+295
+01:30:11,699 --> 01:30:19,699
+Remove productions of form X produces X.
+
+296
+01:30:19,699 --> 01:30:20,699
+OK.
+
+297
+01:30:23,699 --> 01:30:28,699
+So we don't need to do any substitutions or anything.
+
+298
+01:30:28,699 --> 01:30:30,699
+So we can continue.
+
+299
+01:30:30,699 --> 01:30:40,699
+If you continue with this example, we have S, A, A, B, A, B.
+
+300
+01:30:43,412 --> 01:31:06,412
+We have A produces A. We have B produces A. And now here I got rid of this B because B produces B is unnecessary. And we have B produces B B.
+
+301
+01:31:07,956 --> 01:31:25,956
+Now, let's try to substitute B produces A because it is still a unit production. So we want to substitute this guy.
+
+302
+01:31:31,539 --> 01:32:01,519
+So whenever we have B on the right side, we will also write A. So we have S produces AA and AB already. Now this AB will still stay there because we have B as a variable still.
+
+303
+01:32:01,539 --> 01:32:08,539
+So we didn't get rid of B yet.
+
+304
+01:32:12,115 --> 01:32:36,115
+So we will have A, A. So like we are replacing B with A and adding there. And then we have A produces terminal A and we have B produces terminal B's.
+
+305
+01:32:36,115 --> 01:32:51,055
+Now, obviously, we have these two guys. They are same. So then we will get rid of them.
+
+306
+01:32:55,091 --> 01:32:56,811
+get rid one of them.
+
+307
+01:33:08,948 --> 01:33:13,948
+So finally, we will have a...
+
+308
+01:33:16,724 --> 01:33:30,724
+S, A, A, A, B, A, A, B produces B, B. So this is all final grammar.
+
+309
+01:33:45,747 --> 01:33:54,747
+Another kind of production we will get rid of is called useless productions.
+
+310
+01:33:54,747 --> 01:34:01,747
+Hocam alttaki V'nin alttaki String için A'da olması gerekmiyor mu?
+
+311
+01:34:01,747 --> 01:34:05,747
+Hangisinde?
+
+312
+01:34:05,747 --> 01:34:13,747
+BB dedi ki hocam onun yanında bir de A olması gerekmiyor mu? Ya da A demek.
+
+313
+01:34:16,756 --> 01:34:42,096
+Evet, şimdi gerekmiyor. Neden? Bu değişiklikleri sağ tarafta yapıyoruz. Yani sağ tarafta bir B görürsek onu değiştiriyoruz gibi. Sol tarafta dokunmuyoruz.
+
+314
+01:34:46,036 --> 01:34:50,895
+Solda B var, evet. B'yi de A ile değiştirdik ama soldakiler kalıyor.
+
+315
+01:34:55,188 --> 01:35:09,648
+Yok hocam, şey demiştim ben, BB şey, B eşittir A'yı sildiğimize göre BB'nin yanında da bir tane küçük A olması gerekmiyor mu? Çünkü A küçük A üretiyor ya.
+
+316
+01:35:16,819 --> 01:35:39,379
+Yok yani B gördüğümüz yerde bu değişikliği yapacağız. Şimdi burada bir sağda B var mı yok? Burada sağda B var mı yok? Yani şuraya baktığımızda bu son hali de değişikliği yaptığımız noktada buralarda büyük B yok. Büyük B'yi A'yı da değiştireceğiz.
+
+317
+01:35:39,379 --> 01:35:41,419
+şu da görüyoruz.
+
+318
+01:35:43,579 --> 01:35:49,660
+Onu yapacağız. Onu yaptığımızda bu oluyor. Fakat bu da şunun da aynı olduğu için gidiyor.
+
+319
+01:35:51,000 --> 01:35:52,379
+Tamamdır hocam. Sağ olun.
+
+320
+01:36:00,595 --> 01:36:04,835
+So, useless productions.
+
+321
+01:36:10,739 --> 01:36:11,739
+Sometimes some derivations never terminate. So you might have S produces some AA that produces AAA that produces AAA infinitely. So,
+
+322
+01:36:40,739 --> 01:36:44,019
+this kind of derivations
+
+323
+01:36:47,923 --> 01:36:49,923
+This is a derivation
+
+324
+01:36:52,563 --> 01:36:53,923
+that does not
+
+325
+01:36:53,923 --> 01:36:55,923
+...
+
+326
+01:36:58,644 --> 01:37:00,644
+Terminate.
+
+327
+01:37:02,644 --> 01:37:05,644
+So it's kind of, it goes on forever.
+
+328
+01:37:05,644 --> 01:37:17,644
+This kind of derivations are unnecessary because it doesn't result in a string, in a terminal string.
+
+329
+01:37:17,644 --> 01:37:47,623
+And you might see, so this kind of derivations can be the result of something like this. S produces ASP, S produces null, S produces A, A produces AA.
+
+330
+01:37:47,644 --> 01:37:54,364
+for example, and here, so S first produces MA.
+
+331
+01:38:01,171 --> 01:38:29,411
+and the problem with the problem here is this guy. So A produces AA. And there is no terminal for A. Like there is nothing like A is B or something. Right. So this this production will never terminate.
+
+332
+01:38:31,171 --> 01:38:58,971
+I mean the productions that use this, the derivations that use this, if you think about like branches, something like S, and that will produce this A, now you have AA, this branch,
+
+333
+01:38:58,971 --> 01:39:20,411
+like it will never, you will not find the bottom of that. You will not find leaves. So, it doesn't give us anything, right? These derivation steps will not give us anything. We will not use them.
+
+334
+01:39:20,411 --> 01:39:29,011
+So we want to be able to find these guys and then get rid of them.
+
+335
+01:39:33,652 --> 01:39:38,451
+So we want to be able to find
+
+336
+01:39:41,524 --> 01:39:58,524
+these useless productions and get rid of them. Now, how can we do that? So we will see...
+
+337
+01:40:00,000 --> 01:40:13,279
+We will need to scan all variables. So we will have two steps for this on the step one.
+
+338
+01:40:14,899 --> 01:40:22,840
+So this is getting rid of users productions.
+
+339
+01:40:33,908 --> 01:40:37,507
+and we will have two steps. On the step one,
+
+340
+01:40:44,692 --> 01:40:50,291
+We will scan the variables and find
+
+341
+01:40:54,355 --> 01:41:00,595
+variables that can produce strings.
+
+342
+01:41:07,252 --> 01:41:10,252
+produce strings
+
+343
+01:41:12,712 --> 01:41:16,491
+with only terminals
+
+344
+01:41:19,431 --> 01:41:20,431
+or null.
+
+345
+01:41:22,212 --> 01:41:25,852
+So you can say these are useful, good.
+
+346
+01:41:29,268 --> 01:41:31,268
+videos.
+
+347
+01:41:35,412 --> 01:41:49,412
+and you will put them in a set. And let's say, yes, I will rewrite this here.
+
+348
+01:41:55,828 --> 01:42:16,107
+Now, we will have a set of good variables, or useful variables. So, and we will, we can do this in rounds.
+
+349
+01:42:24,372 --> 01:42:40,372
+I will just say U here for useful. So, or useful variables will be, we know that we have a terminal here.
+
+350
+01:42:46,996 --> 01:42:50,996
+This was another example. Sorry.
+
+351
+01:42:54,739 --> 01:42:56,879
+Let me change this example.
+
+352
+01:43:00,787 --> 01:43:25,787
+So we have ASAC, A produces A, B produces AA, C produces ACB. So let's work on this now.
+
+353
+01:43:25,787 --> 01:43:41,787
+Now here we immediately see that A produces a terminal, lowercase a. So a will be in my, in my,
+
+354
+01:43:49,076 --> 01:44:07,596
+good variables list, useful variables list. And then we immediately see again B is in my group list. So now this is round one.
+
+355
+01:44:16,819 --> 01:44:17,739
+and one.
+
+356
+01:44:21,908 --> 01:44:49,908
+So in the first round, we immediately see that A and B are useful. Now, we go back. So any variable that results A or B is useful too. So here C does not result in any A or B, but S results in A.
+
+357
+01:44:49,908 --> 01:44:59,507
+and since A is useful from S we understand that from that we understand that S is useful too.
+
+358
+01:45:03,444 --> 01:45:06,563
+So in round two, we will say, okay,
+
+359
+01:45:10,036 --> 01:45:12,435
+or you becomes
+
+360
+01:45:15,315 --> 01:45:16,315
+S, A, B, because S produces A, right? S produces A. Or a string with A. It doesn't have to be directly A, but it can be a string with any. And now we see that we will keep these guys, okay? We will keep
+
+361
+01:45:45,315 --> 01:45:49,315
+these productions, we will keep them.
+
+362
+01:45:55,315 --> 01:46:08,315
+So in the first round, we found the variables that have right side terminals.
+
+363
+01:46:08,315 --> 01:46:10,315
+So here,
+
+364
+01:46:15,315 --> 01:46:19,156
+right side of the production.
+
+365
+01:46:27,412 --> 01:46:28,412
+terminals. There are only terminals there, so we chose them. And in the second round, the right side of the production have
+
+366
+01:46:59,220 --> 01:47:08,220
+variables, useful variables, let's say.
+
+367
+01:47:11,283 --> 01:47:14,283
+useful variables.
+
+368
+01:47:18,131 --> 01:47:20,131
+you know,
+
+369
+01:47:22,131 --> 01:47:24,131
+or turn this.
+
+370
+01:47:29,971 --> 01:47:41,971
+So, we continue with like this and we kind of create this useful variables set.
+
+371
+01:47:43,923 --> 01:47:50,983
+So this is our set of useful variables.
+
+372
+01:48:00,148 --> 01:48:18,148
+Now, we can get rid of productions that does not use this useful variables. So now we can...
+
+373
+01:48:18,676 --> 01:48:22,855
+remove productions,
+
+374
+01:48:26,100 --> 01:48:28,100
+that
+
+375
+01:48:31,347 --> 01:48:36,587
+use other variables.
+
+376
+01:48:40,307 --> 01:49:10,287
+So here we see that this guy here does not use S, A, or B. It uses C. And C is not a useful variable, so we get rid of it. Also we have a rule here. Again, C is not useful.
+
+377
+01:49:10,307 --> 01:49:25,107
+S produces AS is useful because S is useful. S produces A is useful because A is useful. So we can get rid of
+
+378
+01:49:28,916 --> 01:49:55,916
+C's, everything involving C's because we have four variables here. One, two, three, four, and three of them are useful. One is then useless. We can get rid of productions that create useless variables. So we will be having S produce ASOA.
+
+379
+01:49:55,916 --> 01:50:08,916
+second remains, third remains, fourth, fourth is eliminated. So we have this last cry.
+
+380
+01:50:13,076 --> 01:50:37,076
+Now, this was step one. Now, we still have things to do. And the problem here is this B. If we think about it, like if we start from S, we can never reach B, right?
+
+381
+01:50:37,076 --> 01:50:53,076
+So we are kind of, we will follow this time we will start from s and if there's a variable that we cannot reach, we will get rid of that variable.
+
+382
+01:50:53,076 --> 01:51:00,076
+So now this will be our second step.
+
+383
+01:51:02,612 --> 01:51:06,531
+So, step two.
+
+384
+01:51:16,692 --> 01:51:25,692
+find all variables reachable from us.
+
+385
+01:51:38,515 --> 01:51:45,515
+So for that, we can use a dependency graph.
+
+386
+01:51:51,188 --> 01:51:53,648
+user dependency
+
+387
+01:51:58,003 --> 01:52:08,003
+graph where nodes are variables.
+
+388
+01:52:10,452 --> 01:52:23,691
+And we see that continuing from the previous example, this rule says,
+
+389
+01:52:31,988 --> 01:52:58,227
+S produces with a rule, produces a rule that has S. And it also produces a rule with A. So we have A here. And A does not produce any variable. So it just produces a terminal. So we are not writing it. And we have B there.
+
+390
+01:52:58,227 --> 01:53:05,427
+and as you see B is not reachable so it's unreachable.
+
+391
+01:53:14,163 --> 01:53:17,763
+That means we can get rid of B2.
+
+392
+01:53:23,731 --> 01:53:24,751
+So,
+
+393
+01:53:33,140 --> 01:53:35,140
+will keep
+
+394
+01:53:37,971 --> 01:54:07,371
+only variables reachable from starting variable S. So then here this guy, B produces AA, is unnecessary. Because if we start from S, we will never have a B. So I am getting rid of that.
+
+395
+01:54:07,971 --> 01:54:18,971
+Finally we will have then S produces AS or A and A produces A.
+
+396
+01:54:20,971 --> 01:54:28,971
+Now this part is we have only all useful or
+
+397
+01:54:33,811 --> 01:54:34,671
+Okay?
+
+398
+01:54:42,771 --> 01:55:10,771
+So, in the next step, we will use all these three together. So, we have seen removing epsilon or null. We have seen removing unit productions. We have seen removing unuseful variables and productions. We will apply all three to get this much cleaner form.
+
+399
+01:55:12,771 --> 01:55:19,771
+But before that, let's give a break. Let's give a ten minutes break.
+
+400
+01:55:42,100 --> 01:55:43,340
+различать
+
+401
+02:07:09,587 --> 02:07:11,587
+Sesim geliyor mu arkadaşlar?
+
+402
+02:07:15,891 --> 02:07:16,691
+Gelya, Richard.
+
+403
+02:07:17,391 --> 02:07:18,251
+Gelya, OK.
+
+404
+02:07:21,971 --> 02:07:25,811
+şeylerinizi yükleyeyim.
+
+405
+02:07:27,851 --> 02:07:29,651
+Sonuçlarınızı.
+
+406
+02:07:33,492 --> 02:07:35,492
+ders uvarına atayım.
+
+407
+02:07:37,992 --> 02:07:40,492
+Quiz 1'i zaten atmışım.
+
+408
+02:07:45,108 --> 02:07:46,987
+coisa que eu tenho
+
+409
+02:08:05,108 --> 02:08:15,108
+finali de vizeyi de atayım. Tamam herhalde. midterm
+
+410
+02:08:15,108 --> 02:08:26,108
+ve vizeleri quiz 2'yi yükledim ders duvarına.
+
+411
+02:09:22,899 --> 02:09:27,219
+ortalama 50 civarı, 55 civarı gibi gözüküyor.
+
+412
+02:09:34,676 --> 02:09:47,915
+Excel'de de hesaplama yapamadım ama virgüller ondalık ayırıcı olarak ayarlı değilmiş.
+
+413
+02:10:15,507 --> 02:10:17,507
+Şimdi o zaman devam edelim.
+
+414
+02:10:43,028 --> 02:11:03,028
+So, we will see these better forms after we get rid of all these unnecessary stuff. And we will, we will, these are called normal forms.
+
+415
+02:11:03,028 --> 02:11:07,028
+So,
+
+416
+02:11:09,492 --> 02:11:17,371
+normal forms for context-free grammars.
+
+417
+02:11:39,923 --> 02:11:46,163
+One of these is called Chomsky normal form.
+
+418
+02:12:01,716 --> 02:12:19,716
+and in the Chomsky normal form, each production must be either of these two types. Each production.
+
+419
+02:12:22,484 --> 02:12:24,484
+must be
+
+420
+02:12:28,051 --> 02:12:30,051
+like
+
+421
+02:12:32,051 --> 02:12:36,051
+A produces B, C
+
+422
+02:12:37,051 --> 02:12:39,051
+or
+
+423
+02:12:40,051 --> 02:12:43,051
+A produces
+
+424
+02:12:43,051 --> 02:12:45,051
+A.
+
+425
+02:12:45,051 --> 02:12:48,051
+So in the first case,
+
+426
+02:12:48,051 --> 02:12:54,051
+a variable produces exactly two variables.
+
+427
+02:12:54,051 --> 02:12:56,051
+A.
+
+428
+02:13:00,435 --> 02:13:01,435
+and something like this is not okay. You cannot have something like this. Okay. A variable must produce two variables or a variable can produce exactly
+
+429
+02:13:27,412 --> 02:13:41,412
+one terminal. So if you have something like A produces A, A, that is not okay.
+
+430
+02:13:45,460 --> 02:14:10,460
+And this kind of form is useful for machines mostly. For a human perspective, when you read it, it's not more readable. But for a computer program, it has advantages.
+
+431
+02:14:10,460 --> 02:14:17,739
+So you convert Chomsky normal form for computers.
+
+432
+02:14:28,884 --> 02:14:30,884
+and
+
+433
+02:14:41,300 --> 02:14:46,300
+How do we do that? How do we convert to...
+
+434
+02:14:50,003 --> 02:14:51,723
+C and F.
+
+435
+02:14:55,060 --> 02:15:08,579
+Chomsky normal form. So CNF is Chomsky normal form in this case.
+
+436
+02:15:17,043 --> 02:15:20,103
+and
+
+437
+02:15:25,555 --> 02:15:27,555
+Let's look at an example.
+
+438
+02:15:34,836 --> 02:15:35,836
+We have this ABA, A produces AAB, and B produces AC. And none of these productions is in the form we want. None of them are like this, right?
+
+439
+02:16:04,836 --> 02:16:11,836
+We want exactly two variables or exactly one terminal on the right side.
+
+440
+02:16:15,988 --> 02:16:42,547
+So this is not in, not in Chomsky normal form, first of all. And how are we going to convert? We will convert it by introducing new variables for the terminals, first of all. So on the step one, um,
+
+441
+02:16:44,948 --> 02:16:46,948
+We introduce...
+
+442
+02:16:51,059 --> 02:16:54,059
+new variables for the terminals.
+
+443
+02:17:14,388 --> 02:17:43,068
+So, um, what terminals we have here? We have A, B, and C. So, let us introduce some terminals for them. Uh, we'll say, let's say, T A produces A, T B produces B, and T C produces C.
+
+444
+02:17:43,068 --> 02:18:06,587
+for ABC. Now we will write previous rules in terms of these terminals. So we have S produces AB. Instead of A, we will now say TA. And A produces TA, TA, and B.
+
+445
+02:18:06,587 --> 02:18:34,347
+and then B produces A and T, C. Now, which one of these rules are in Chomsky normal form? So if you look at it, this guy is in Chomsky normal form. A variable produces exactly one terminal.
+
+446
+02:18:34,347 --> 02:19:03,627
+So these guys are directly in Chomsky normal form. Here we have B produces two variables. Remember TC is a variable. So it's in Chomsky normal form. We have here TATAB and this should be TB. AAB, so this should be TB. So this make TB.
+
+447
+02:19:08,340 --> 02:19:35,340
+So these two are not in Chomsky normal form. So we need to convert those rules into Chomsky normal form. And to do that, we introduce these new variables that will help us break these longer productions. So in this case, we have more than two variables.
+
+448
+02:19:35,340 --> 02:19:50,540
+So anyway, we will merge some of these into new variables. So for example, BTA here, instead of that, we will call this V1, right?
+
+449
+02:19:50,540 --> 02:20:02,439
+If we call V1 to BTA, we will have S produces A V1, and then somewhere down, we can list V1 produces BTA.
+
+450
+02:20:02,439 --> 02:20:06,679
+Okay, so in step two,
+
+451
+02:20:10,420 --> 02:20:14,420
+introduce...
+
+452
+02:20:17,620 --> 02:20:19,620
+new variables
+
+453
+02:20:23,060 --> 02:20:25,060
+to break down
+
+454
+02:20:29,396 --> 02:20:53,396
+long rules. Okay. And in this case, let's introduce V1 for this guy and for this guy, let's introduce V2.
+
+455
+02:20:56,788 --> 02:21:23,587
+for this we will introduce V2. This way, A will produce TAV2. So, now we can easily write the whole thing. So, S produces A V1. A produces TA and V2.
+
+456
+02:21:23,587 --> 02:21:48,468
+and now we can write those V1 and V2, but before that, let's write B. B produces ATC, then V1 now, this new variable produces BTA, V2 produces TATB,
+
+457
+02:21:48,468 --> 02:21:59,468
+and then we have these terminals so TA produces A, TB produces B, TC produces C.
+
+458
+02:22:02,468 --> 02:22:05,468
+Now everything is in Chomsky Normal form.
+
+459
+02:22:08,468 --> 02:22:11,468
+And notice these new rules.
+
+460
+02:22:14,468 --> 02:22:15,468
+Yes.
+
+461
+02:22:19,188 --> 02:22:22,307
+We changed these rules.
+
+462
+02:22:30,291 --> 02:22:37,971
+Okay. So this is how we convert into Chomsky normal form. Okay.
+
+463
+02:23:00,500 --> 02:23:01,500
+Now, to get to this point, actually, we also need to do, we also need to remove nullable variables and unit productions, first of all. So, in general,
+
+464
+02:23:30,100 --> 02:23:32,879
+So in general conversion,
+
+465
+02:23:36,852 --> 02:23:44,491
+conversion to CNF.
+
+466
+02:23:47,891 --> 02:23:48,831
+Um,
+
+467
+02:23:55,252 --> 02:24:02,351
+First of all, from any context-free grammar,
+
+468
+02:24:05,811 --> 02:24:06,811
+context-free grammar, which does not include
+
+469
+02:24:24,852 --> 02:24:25,852
+does not produce, let's say, no, nothing, in, in, Chomsky normal form, we can,
+
+470
+02:24:42,004 --> 02:24:49,004
+obtain an equivalent.
+
+471
+02:24:53,940 --> 02:24:54,940
+grammars.
+
+472
+02:25:09,012 --> 02:25:19,012
+in Chomsky normal form. Now, which does not produce null.
+
+473
+02:25:26,772 --> 02:25:55,772
+So we don't want any null in the variables. And if the starting variable has a Chomskin or if the starting variable has null, what happens? If let me try to find that in the internet. If the starting variable produces null,
+
+474
+02:25:55,772 --> 02:25:59,772
+Can you convert that to Chomsky normal for now?
+
+475
+02:26:06,004 --> 02:26:08,004
+I think we can not.
+
+476
+02:26:25,108 --> 02:26:49,108
+So, I think if the starting variable has null, we cannot do anything. But if the starting variable does not have null, we should be able to convert any grammar into Chomsky-Normal form. And the procedure is
+
+477
+02:26:54,100 --> 02:26:58,100
+First you get it, you get the dofinal productions.
+
+478
+02:27:04,468 --> 02:27:08,948
+So first remove
+
+479
+02:27:19,123 --> 02:27:24,123
+null variables, nullable.
+
+480
+02:27:29,587 --> 02:27:33,927
+and then remove unit productions.
+
+481
+02:27:43,316 --> 02:27:44,316
+Third, it says that you can remove useless variables, but that's optional. So remove useless productions. But this is optional. So it may not be necessary to remove useless productions. I mean, even if there are useless productions,
+
+482
+02:28:13,316 --> 02:28:33,316
+The grammar may be still in Chomsky normal form. And finally, you introduce variables for terminals.
+
+483
+02:28:33,316 --> 02:29:02,616
+introduce variables for terminals, and introduce variables for long rules, to break the long rules.
+
+484
+02:29:22,036 --> 02:29:30,036
+So, why are we using? So, why to convert?
+
+485
+02:29:32,788 --> 02:29:38,788
+Why do we convert to Chomsky normal form?
+
+486
+02:29:41,492 --> 02:29:43,492
+Wa alaikum war tu.
+
+487
+02:29:47,028 --> 02:30:07,028
+This norm is good for parsing and proving theorems. So Chomsky normal form is good for parsing and proving theorems.
+
+488
+02:30:18,899 --> 02:30:26,419
+Okay. This was Chomsky normal form.
+
+489
+02:30:28,340 --> 02:30:46,399
+Another form is called Greinbach, Greinbach, Greinbach Normal Form. Do you have any questions about converting to Chomsky Normal Form?
+
+490
+02:31:06,772 --> 02:31:14,291
+Okay, let's look at that then. So, Grime.
+
+491
+02:31:17,043 --> 02:31:19,043
+normal.
+
+492
+02:31:23,476 --> 02:31:28,476
+This form has
+
+493
+02:31:32,051 --> 02:31:34,051
+all productions
+
+494
+02:31:37,459 --> 02:31:39,459
+in the form
+
+495
+02:31:45,459 --> 02:31:46,459
+we have
+
+496
+02:31:48,459 --> 02:31:51,459
+variable A produces a single terminal
+
+497
+02:31:53,459 --> 02:32:00,459
+then some variables, variable 1, variable 2, variable 3
+
+498
+02:32:03,459 --> 02:32:05,459
+up to some variable K
+
+499
+02:32:05,459 --> 02:32:16,459
+where K is equal to or larger than zero. So there must be a single terminal.
+
+500
+02:32:27,092 --> 02:32:29,092
+and these guys are variables.
+
+501
+02:32:33,108 --> 02:32:36,108
+in grime-bog normal form.
+
+502
+02:32:39,316 --> 02:32:43,316
+Let's look at some examples.
+
+503
+02:32:58,100 --> 02:33:28,079
+For example, we have this CAB, A produces AA, or BB, or B, B produces B. Now, is this in Greinbach normal form? It is, because if you think about it, in all cases we have a terminal and variable.
+
+504
+02:33:28,100 --> 02:33:44,699
+variables, terminal variable, terminal variable. Here we have a terminal and number of variables can be zero. So it is okay to have just a single terminal. So this is in
+
+505
+02:33:48,852 --> 02:34:00,852
+in Grainbach. I hope it's red as Grainbach. I'm not sure. Grainbach, normal.
+
+506
+02:34:04,628 --> 02:34:34,607
+And look at another, let's look at another one. Let's say S produces A, B, S, B, or if you have rules like these, these are not in Grainbach normal form because here you have a single starting terminal, okay, but next to it you have another terminal.
+
+507
+02:34:34,628 --> 02:34:49,628
+So we must have only one terminal. Similarly, we have this terminal, but we have another terminal here. We have another terminal here. Except the starting terminal, everything must be variables.
+
+508
+02:34:49,628 --> 02:35:04,427
+So this is not in G and F, Kreyenbach normal form.
+
+509
+02:35:09,396 --> 02:35:37,595
+So then how can we convert to grammar normal form? It's quite, well, what you can do is you can introduce some temporary variables on turn variables for terminals and just use them. So for example, here you have a B, introduce a TB.
+
+510
+02:35:39,396 --> 02:36:02,436
+uh right so then and this will be also a tv same one so and here you have an a introduce a ta right and you can list them under and you will have uh you will have your
+
+511
+02:36:10,004 --> 02:36:13,263
+So converting to
+
+512
+02:36:18,067 --> 02:36:20,067
+Kleinbach, normal form.
+
+513
+02:36:31,028 --> 02:36:32,028
+or GNF.
+
+514
+02:36:38,291 --> 02:37:07,291
+So, let's write this example. S, A, B, S, B, S, A, A. And as I said, we can just introduce variables for these guys. So, TB, sorry. TB. And for this guy, we can introduce TA.
+
+515
+02:37:08,291 --> 02:37:11,652
+So the new grammar will be
+
+516
+02:37:14,899 --> 02:37:29,299
+S produces A, then T, B, S, T, B, so this B is subscript.
+
+517
+02:37:33,523 --> 02:38:00,843
+and we have S produces A, T, A. And then obviously we need to say what T A does and what T B does. T produces A, T B produces B. So this is in GNF.
+
+518
+02:38:09,843 --> 02:38:10,983
+and Turing machine.
+
+519
+02:38:14,131 --> 02:38:22,131
+So, there is a note here that says that, uh,
+
+520
+02:38:29,203 --> 02:38:34,203
+GNF strings are very good for parsing strings.
+
+521
+02:38:41,652 --> 02:38:55,951
+GNFs are very good for parsing strings.
+
+522
+02:39:01,620 --> 02:39:04,139
+It says even better than
+
+523
+02:39:07,636 --> 02:39:24,636
+Chomsky normal forms. But it also says that it is difficult to find the GNF of a grammar. However,
+
+524
+02:39:25,811 --> 02:39:30,212
+It is more difficult.
+
+525
+02:39:34,963 --> 02:39:40,623
+to find the GNF.
+
+526
+02:39:44,180 --> 02:39:54,940
+of grammar, then to find its CNF.
+
+527
+02:39:58,899 --> 02:39:59,439
+I don't know.
+
+528
+02:39:59,439 --> 02:40:03,499
+To me, it doesn't seem to be tough.
+
+529
+02:40:03,499 --> 02:40:05,780
+It seems to be easy.
+
+530
+02:40:05,780 --> 02:40:06,940
+But there is such a note.
+
+531
+02:40:06,940 --> 02:40:08,739
+It doesn't really matter.
+
+532
+02:40:08,739 --> 02:40:13,999
+So you have your two different forms,
+
+533
+02:40:13,999 --> 02:40:21,919
+Grimbach, normal form and Chomsky normal form.
+
+534
+02:40:21,919 --> 02:40:25,680
+And you know how to convert to them.
+
+535
+02:40:25,680 --> 02:40:27,279
+Let's finish today with this.
+
+536
+02:40:30,760 --> 02:40:33,999
+Anything you want to say or ask?
+
+537
+02:40:37,971 --> 02:40:44,971
+Hocam vize soruları, cevapları hakkında bir döküman falan paylaşacak mısınız yanlışlarımıza bakmak için?
+
+538
+02:40:44,971 --> 02:40:55,971
+Öyle bir şey konuşmadık diğer grup hocasıyla. Paylaşmayacağız gibi gözüküyor şimdilik.
+
+539
+02:41:05,587 --> 02:41:06,587
+Peki
+
+540
+02:41:09,527 --> 02:41:16,428
+Haftaya görüşürüz bu durumda arkadaşlar. Chapter 2'yi bitirdik mi acaba kitaptan?
+
+541
+02:41:19,127 --> 02:41:22,528
+Sanırım Chapter 2'yi bitirmedik.
+
+542
+02:41:25,876 --> 02:41:26,876
+Bir bakayım.
+
+543
+02:41:50,355 --> 02:42:18,255
+Chapter 2'yi bitirmedik. Pushdown automata göreceğiz. Ama bayağı ilerledik. Chapter 2'nin egzersizlerini, problemlerini yavaş yavaş birçoğunu yapıyor olabilmeniz lazım. Sizinle paylaştığım çalışma şeytinin de birçoğunu yine yapıyor olmanız lazım.
+
+544
+02:42:18,255 --> 02:42:27,376
+sadece pushdown automatonları görmedik. Onları da artık gelecek dersimize görürüz.
+
+545
+02:42:30,015 --> 02:42:32,435
+Peki haftaya görüşmek üzere arkadaşlar. Kapatıyorum.

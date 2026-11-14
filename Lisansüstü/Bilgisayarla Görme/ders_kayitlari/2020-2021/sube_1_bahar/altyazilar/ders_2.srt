@@ -1,0 +1,2347 @@
+1
+00:12:45,268 --> 00:12:51,488
+Evet, merhaba arkadaşlar. Haftanın ilk günü, pazartesi dersimiz başlıyor.
+
+2
+00:12:55,220 --> 00:12:57,800
+Merhaba hocam.
+
+3
+00:12:57,800 --> 00:12:58,519
+Merhabalar [öğrenci].
+
+4
+00:12:59,379 --> 00:13:04,019
+Merhaba arkadaşlar. Evet, nasılsınız? Nasıl geçti hafta sonunuz?
+
+5
+00:13:09,683 --> 00:13:17,363
+Benim için biraz yoğundu hocam. Yeni aldığım dersler araştırmak gerektiğini öğrenmek için. Onlara baktım.
+
+6
+00:13:17,803 --> 00:13:21,803
+Ders alma, seçme, bırakma devam ediyor mu [öğrenci]?
+
+7
+00:13:22,563 --> 00:13:28,144
+Hocam, silme devam etmiyor ama ekleme var şu an. 16'sına kadar devam edecekti sanırsam.
+
+8
+00:13:28,843 --> 00:13:31,963
+Ekleme yapabiliyorsunuz, anladım. Tamam, güzel.
+
+9
+00:13:33,299 --> 00:13:52,019
+Tabii ders seçimi önemli bir konu. Bir taraftan yönetmeliğin gerektirdiği dersler var, almanız gerekiyor. Bir tarafta kendi ilgi alanınız var, seçmek istediğiniz dersler. Bir orta nokta bulmak gerekiyor herhalde.
+
+10
+00:13:58,964 --> 00:14:11,104
+Evet, hafta sonu çok güzel bir hava vardı. Umarım güzel geçmiştir hafta sonunuz. Ve pazartesiye böyle full enerji başlayabiliyoruz diyelim.
+
+11
+00:14:13,744 --> 00:14:24,104
+Şu an derse katılan 21 kişi oldu. Evet, yavaş yavaş başlayabiliriz. Bu hafta size arkadaşlar...
+
+12
+00:14:27,124 --> 00:14:32,683
+Belki bilenler vardır ama bilmeyenler için faydalı olacağını düşünüyorum.
+
+13
+00:14:32,683 --> 00:14:41,903
+Bu dersin bütün uygulamalarını Python'da yapacağız ve Python'da NumPy kütüphanesini kullanarak ilerleyeceğiz.
+
+14
+00:14:42,043 --> 00:14:45,683
+O yüzden bu haftaki dersimiz biraz...
+
+15
+00:14:46,576 --> 00:15:05,836
+Bu konuları görmüşsünüzdür. Dersini duvarına da ekledim. Bir NumPy tutorial ile başlayacağım. Eğer bu konulara aşinayız, biz bunu biliyoruz diyorsanız bu haftaki derse katılmayabilirsiniz. Ama yeni başlayanlar için Python'a faydalı olacağını düşünüyorum.
+
+16
+00:15:14,576 --> 00:15:37,132
+Bu konuda, bugünkü derste konuyu örneğe bakalım.
+
+17
+00:15:37,203 --> 00:15:52,223
+Başlığı var. Aslında kaynak olarak oldukça faydalı. Tavsiye ederim. Bu dersin YouTube'da videoları da var. Oradan da faydalanabilirsiniz. O videoları zaman zaman ben de izliyorum.
+
+18
+00:15:54,868 --> 00:16:17,408
+Materyal ekleme noktasında faydalanıyorum. Oturduğumuz yerden işte ne bileyim MIT'nin, Stanford'un derslerini izleyebiliyoruz. Bunlar da güzel avantajlar aslına bakarsanız. Çok güncel sürümlerini paylaşmıyorlar YouTube'da ama yine de oldukça iyi. Ben faydalı olduğuna inanıyorum.
+
+19
+00:16:18,416 --> 00:16:38,716
+Evet, dediğim gibi bu hafta Nampay Kütüphanesi, Matplot Kütüphanesi ve bir de Saimich Kütüphanesini kullanarak görüntü üzerinde işlemler yapacağız.
+
+20
+00:16:41,556 --> 00:17:06,556
+Haftanın konusu bir parça platformu tanımaya yönelik olacak. Hani Python'da ne nasıl yapılırı göreceğiz. Zaten her hafta anlattığım konunun içinde de bu Python'da nasıl yapılır, kod parçalarıyla bunları vermeye çalışacağım ve her dersin içinde sizin de bilgisayarınızda tabii yine...
+
+21
+00:17:06,867 --> 00:17:22,728
+Python'ın kurulu olması gerekiyor. Söylediğim uygulamaları ben anlatırken kenarda denemenizi ve varsa sorunlar benimle paylaşmanızı isteyeceğim. Yani böyle biraz laboratuvar havasında uygulamalı ilerleyelim istiyorum.
+
+22
+00:17:26,579 --> 00:17:30,980
+Bu şekilde ders yapmanın avantajı nedir? Biraz ondan bahsedeyim.
+
+23
+00:17:30,980 --> 00:17:49,980
+Low Level'da bir görüntü matrisi ya da görüntü dosyasının yapısını bilmeniz, bunu işlerken nelere dikkat etmeniz gerektiği konusunda sizi daha bilgili kılacaktır, bir farkındalık yaratacaktır.
+
+24
+00:17:54,579 --> 00:18:03,460
+Biliyorsanız eğer, yanlış bir takım fonksiyon seçimleri yapmamış olursunuz.
+
+25
+00:18:03,460 --> 00:18:09,559
+Ve açıkçası çok faydalı olduğuna inanıyorum ben.
+
+26
+00:18:09,980 --> 00:18:18,460
+Yani bu ders biraz temelden başlayarak görüntü matrisi ya da görüntü dosyasının yapısı,
+
+27
+00:18:22,579 --> 00:18:38,019
+Text, Color Image gibi değişik görüntü formları için dosyanın nasıl tutulduğu, aralarında ne fark olduğu gibi konularda da sizi bilgi sahibi yapmayı amaçlıyorum.
+
+28
+00:18:38,879 --> 00:18:50,500
+Dediğim gibi bunları bilmek ilerleyen aşamalarda kullandığınız tüm frameworkler içerisinde daha doğru tercihler yapmanıza sebep olacak.
+
+29
+00:18:50,579 --> 00:18:58,059
+O yüzden adım adım, en temelden başlayarak gitmeyi planlıyorum.
+
+30
+00:19:00,259 --> 00:19:06,719
+Dediğim gibi ilk olarak NumPy Tutorial'ı üzerinden gideceğiz.
+
+31
+00:19:15,155 --> 00:19:16,935
+Burada...
+
+32
+00:19:17,748 --> 00:19:30,468
+Sizinle paylaştığım linkte CS231 Convolutional Neural Networks for Visual Recognition için oluşturulmuş bir NumPy Tutorial var.
+
+33
+00:19:30,468 --> 00:19:34,867
+Bu dersin altında da bu tutorial ile başlıyorlar.
+
+34
+00:19:35,908 --> 00:19:45,468
+Bunu hem isterseniz Jupyter Notebook ile hem de isterseniz Google Colab kullanarak çalışabilirsiniz.
+
+35
+00:19:45,748 --> 00:19:58,748
+Bilgisayarıma Anaconda kurdum. Anaconda altında Spider ve Jupiter mevcut. Jupiter aslında platform olarak...
+
+36
+00:20:00,000 --> 00:20:07,279
+Özellikle ödev hazırlama, ders notu hazırlama konusunda bence çok avantajlı.
+
+37
+00:20:07,279 --> 00:20:18,579
+Çünkü metinsel anlatımları yapıp hemen altına kod parçası koyup aynı dökümanın içerisinde tüm bunları görüntüleyebiliyorsunuz.
+
+38
+00:20:18,619 --> 00:20:22,319
+O açıdan ben çok seviyorum Jupyter Notebook kullanmayı.
+
+39
+00:20:23,599 --> 00:20:27,980
+Eğer daha önceden kullanmayan arkadaşlar varsa onlar da böylece bu ders.
+
+40
+00:20:28,000 --> 00:20:41,920
+Biz ile bunu deneyimlemiş olacaklar. Ama dediğim gibi şu an kurmamış olan arkadaşlar için tavsiyem burada Colab kullanarak Colab üzerinde bunları çalıştırabilirsiniz.
+
+41
+00:20:45,119 --> 00:20:50,640
+Jüpiter Notebook'u tercih ettiğimiz platform bu dedim. Daha önce kurduğum için.
+
+42
+00:20:53,076 --> 00:21:16,956
+Ben şurada ekranımda bir Jupyter NumPy giriş diye bir dosya oluşturdum bu tutorial ile ve bunun üzerinden en temel adımlarla başlayarak Python kodlarını ve buradaki data yapılarını hızlı bir şekilde göreceğiz.
+
+43
+00:21:21,491 --> 00:21:36,072
+Şimdi ben bu kodları dediğim gibi bu tutorial'dan alıp Jupyter Notebook ekranına girdim ve orada çalıştırdım. Sizinle adım adım bunları işleyerek ilerleyeceğim.
+
+44
+00:21:36,632 --> 00:21:44,251
+Tabii Hello World diyerek başlayacağız her platforma başladığımız gibi ama hızlı ilerleyeceğiz.
+
+45
+00:21:49,491 --> 00:21:55,831
+Burada farklı veri tipleri var. Integer, Float, Boolean veya String gibi.
+
+46
+00:22:00,723 --> 00:22:12,483
+Bu veri tiplerini farklı programlama dillerinde hepiniz görmüşsünüzdür, kullanmışsınızdır. Burada ilk defa belki Python'da hızlı bir şekilde nasıl kullanıldığını göreceğiz.
+
+47
+00:22:12,483 --> 00:22:27,223
+Bir X değişkenine 3 atayıp, işte burada print X diyerek ekrana X sayısının değerini yazdırabiliyorum. Arkasından hızlı bir şekilde X sayısını 2 arttırıp göster.
+
+48
+00:22:28,723 --> 00:22:39,563
+3 ekleyip göster gibi farklı şekillerde bu değişkeni arttırabiliyorum, karesini alabiliyorum.
+
+49
+00:22:41,299 --> 00:23:08,659
+Burada gördüğümüz, üçüncü sırada gördüğümüz örnekte ise bir float veri tipi tanımlanmış. Y eşit 3.7 dediğim anda bunun bir float değişken olarak tanımlıyor. Bu aynı matlab'a benzer bir formda. Print type Y dediğim zaman bunun tipini görüyorsunuz. Yani değişkenin tipini tanımlamak vesaire diye bir şey söz konusu değil.
+
+50
+00:23:09,299 --> 00:23:24,880
+Python'da doğrudan atadığınız sayının değerine bağlı olarak veri tipini belirliyor. Daha sonra bu verinin 2 ile çarp, karesini al gibi işlemleri yapıp bunların sonuçlarını ekrana getirebiliyorum.
+
+51
+00:23:24,880 --> 00:23:32,059
+Ne gördük? Integer ve Float değişken türlerini gördük. Daha sonra Boolean Data Type var.
+
+52
+00:23:33,971 --> 00:23:43,692
+Boolean biliyorsunuz True-False ile çalışıyor. Lojik işlemler yapabiliyoruz bu değişkenlerle.
+
+53
+00:23:43,692 --> 00:23:56,692
+C'de ve diğer programlama dillerinde genelde Boolean operationları yani AND OR gibi işlemleri sembollerle gösteriyorduk.
+
+54
+00:24:01,971 --> 00:24:20,471
+Ya da XOR gibi işlemlerle gerçekleştiriyor. O yüzden daha aslında pratik bir form olduğunu söyleyebiliriz. Burada T ve F diye iki tane değişken tanımlamış. T değişkeni true, F değişkeni false olarak tanımlanmış.
+
+55
+00:24:29,971 --> 00:24:41,751
+T, AND, F demiş burada. T değişkeni ile F değişkeni, yani bu Boolean değişkenler için bir AND operation'ı, Boolean operation tanımlanmış.
+
+56
+00:24:41,751 --> 00:24:48,951
+AND işleminin sonucu false olarak ekrana yazdırılmış. Bunları görebilirsiniz.
+
+57
+00:24:49,751 --> 00:24:53,251
+Basit bir şekilde stringlere de bakalım.
+
+58
+00:24:57,971 --> 00:25:11,431
+Bu gerçekten faydalı, hazır çözümler var Python altında. Burada bir değişken tanımlanmış hello diye görüyorsunuz.
+
+59
+00:25:22,003 --> 00:25:30,123
+Ekrana yazdırılması, bu değişkenin type'ının ekrana yazdırılması, string değişken tipi olduğunu gösteriyor.
+
+60
+00:25:30,123 --> 00:25:41,923
+Ve length'nin yani bu string'in uzunluğunun ekrana yazdırılması işlemlerini bu hazır building function'ları kullanarak yapabiliyoruz.
+
+61
+00:25:43,284 --> 00:25:52,144
+Burada iki tane stringi birbirine concatenate etmek, yani birbirine eklemek için son derece kolay.
+
+62
+00:25:52,144 --> 00:26:04,604
+Mesela burada bir W değişkeni tanımlanmış word diye, daha sonra hello değişkeni ile W değişkeni birbiriyle toplanıyor.
+
+63
+00:26:04,724 --> 00:26:07,804
+Araya bir tane space ekleyerek bunu yapıyor yalnız.
+
+64
+00:26:11,284 --> 00:26:24,984
+Bir stringi birbiriyle ne yaptı? Concatenate etti ve H dediğimiz buradaki H değişkenine bu stringi atadı ve daha sonra ekrana yazdırdı.
+
+65
+00:26:26,084 --> 00:26:29,704
+Hazır çözümler tekrar söylüyorum oldukça fazla.
+
+66
+00:26:29,704 --> 00:26:34,484
+Mesela burada tanımladığı bir string değişkenimiz var S diye.
+
+67
+00:26:39,284 --> 00:27:06,644
+Yine metodu çağırarak ne yapıyor? Sadece ilk harfini büyük yap ya da S.center bir de 11 demiş. Burada da 11 uzunluklu bir string tanımlıyor. Bu tanımladığı stringin ortasına bu S.stringini yerleştiriyor. Center ederek yerleştiriyor.
+
+68
+00:27:07,284 --> 00:27:20,104
+Yanda solunda belli oranda boşluklar kalıyor. Bunu nereden anlıyorum? Şurada görebilirsiniz. Bakın ben bunu highlight ettiğim zaman sol ve sağ tarafında boşluklar var.
+
+69
+00:27:20,104 --> 00:27:35,284
+Çünkü merhaba kelimesi 2-4-6-7 harfliydi. 11 uzunluklu bir alan hazırladı. Başında ve sonunda iki şart.
+
+70
+00:27:35,284 --> 00:28:02,684
+Yine string işlemlerine baktığımız zaman S replace H demiş. Bu stringin içerisinde geçen H harfini bir başka string ile değiştiriyorum. Bu şekilde işlemler yapmama izin veriyor.
+
+71
+00:28:03,087 --> 00:28:15,468
+Veya yine şuradaki ifade şekli güzel, kullanışlı bir ifade şekli. Strip ile...
+
+72
+00:28:15,700 --> 00:28:20,500
+Metin içerisinde yer alan boşlukları temizleyebiliyorsunuz.
+
+73
+00:28:20,500 --> 00:28:29,980
+Burada gördüğünüz gibi, pardon, merhaba stringinin başında ve sonunda bayağı bir boşluk vardı.
+
+74
+00:28:31,380 --> 00:28:33,559
+Bozdum şeyi ama neyse.
+
+75
+00:28:34,139 --> 00:28:38,920
+Bunu, bir saniye.
+
+76
+00:28:44,051 --> 00:28:52,991
+Bunu ne yapmış oldum? Şuradan hemen düzelteceğim. Zaten çalıştırmıştım ama çok önemli değil. Ctrl X yapalım.
+
+77
+00:28:52,991 --> 00:29:02,991
+Başa getirelim. Şu şekilde. İçindeki boşlukları temizleyip şurada gördüğümüz gibi...
+
+78
+00:29:04,564 --> 00:29:18,304
+Başındaki ve sondaki boşlukları atarak bir string'e dönüştürmüş oluyoruz. Evet, çok hızlı dediğim gibi bir 10 dakikada bunları anlattık. Şimdi container'a geçtim.
+
+79
+00:29:21,460 --> 00:29:39,279
+Python içerisinde hazır building container type'ları var. Bunlar list, dictionary, sets ve tuples diye isimlendiriliyor. Aslında oldukça kullanışlı bir veri yapısı bu da.
+
+80
+00:29:49,460 --> 00:30:00,000
+Önemli bir farkı şu, resizable yani size değiştirilebiliyor ve farklı türde...
+
+81
+00:30:00,000 --> 00:30:16,319
+İntijer bir Array ya da Float bir Array gibi düşünmeyin. İçerisinde integer de olabiliyor, string de olabiliyor gibi. Yani farklı veri tipleri olabiliyor bir liste içerisinde.
+
+82
+00:30:16,319 --> 00:30:24,319
+Şimdi nasıl çalıştığına bakalım. Container types birinci tip olarak listeleri aldık dedik. Burada bir...
+
+83
+00:30:25,140 --> 00:30:36,140
+Aslında array tanımladık. Burada xs dediğimiz bir array tanımladık. Daha sonra bu xs array'inin...
+
+84
+00:30:36,175 --> 00:31:03,515
+İndeksliğe değerini veya ikinci elemanını ekrana yazdırabiliyorum. İndekslemede lütfen şuna dikkat edin. Array yapısı içerisinde indeks sıfırdan başlıyor. Dolayısıyla bu dizinin ilk elemanının indeksi sıfır, bir, iki. Yani ikinci eleman dediği, burada xs2 dediği iki olmuş oluyor ve bunu ekrana yazdırıyorum.
+
+85
+00:31:04,175 --> 00:31:18,795
+Veya işte burada print xs-1 diyor. İndeksinin x-1 olması demek en sondaki eleman demek. Burada dizinin en son elemanı 2'dir ve bunu ekrana print etmiş oluyorsunuz.
+
+86
+00:31:20,435 --> 00:31:32,435
+Şimdi burası önemli. Bakın XS, burada biz aslında sanki bir integer array gibi tanımlamıştık. Fakat şurada sizin de gördüğünüz gibi bu array'in...
+
+87
+00:31:34,612 --> 00:31:54,212
+İkinci gözüne bir string atıyor. Yeni dediğim bir string atıyor ve daha sonra XS Array'ini print ettiğimde ekranda görüyorsunuz iki tane integer sayı ve bir stringten oluşan yapı oluşturmuş oluyoruz.
+
+88
+00:32:02,612 --> 00:32:05,612
+Bu arada birbirinden farklı tipte...
+
+89
+00:32:07,476 --> 00:32:22,976
+Değişken türlerini barındırabiliyor. Yeni ekleyebiliyorsunuz. Append diyerek buna ekleme yapabiliyorsunuz. Bakın burada XS Append dediğimde bu diziye en sonuna bir tane daha yeni eleman ekliyor.
+
+90
+00:32:22,976 --> 00:32:35,435
+Ve bunu print dediğimde ekranda gördüğünüz gibi 3, 1, yeni ve bar diye dört elemanlı bir liste formunda görüntülüyoruz.
+
+91
+00:32:35,476 --> 00:32:52,776
+Bu array'in ya da listenin diyelim bir elemanını çıkartmak için, yani son elemanını aslında çıkartmak için kullanabileceğimiz bir yine metodu var.
+
+92
+00:32:52,776 --> 00:32:55,395
+Burada gördüğümüz gibi.
+
+93
+00:33:00,468 --> 00:33:12,847
+Evet, bir de slicing dediğimiz bir operation var. Bunu aslında belki başka platformlarda da görmüş olabilirsiniz. Matlab'da da çok kullanıyorduk biz.
+
+94
+00:33:12,847 --> 00:33:28,468
+Bir listenin ya da bir dizinin belli elemanlarını tarif etmek için kestirme yollar var. Mesela az önce burada yeni bir sayı dizisi.
+
+95
+00:33:28,468 --> 00:33:40,204
+Nums diyor liste formunda ve range'i beşe kadar diyor. Yani bu...
+
+96
+00:33:40,243 --> 00:34:06,344
+Sıfırdan beşe kadar bir sayı dizisi oluşturuyor bize. Beş dahil değil burada. Daha sonra bunu işte zaten print nums dediğimiz zaman ekrana yazdırıp görebiliyoruz. Burada gördüğünüz gibi beş elemanlı sıfırdan başlıyor. Beşe kadar ya da beş dahil değil sıfırdan dörde kadar diyelim. Bu sayı dizisini oluşturduk.
+
+97
+00:34:08,244 --> 00:34:28,444
+Dediğimiz işlemlerle ne yapabiliyoruz? Slicing ile burada bu Nums dediğimiz dizinin ikinci indeksinden başlayıp dörde kadar olanlarını yani o iki elemanı sadece ekrana yazdırabiliyorum.
+
+98
+00:34:33,876 --> 00:34:50,076
+Two, two, four. Exclusive demiş. Yani dört dışarıda bırakılarak. İkiden başlıyor. İki, üç. İki ve üçü alarak bunu sadece görüntüleyebiliyorum.
+
+99
+00:34:50,076 --> 00:35:01,856
+Şuradaki ifade şekli ikiden başlayarak en sonuna kadar demek. Bu ifade şekli dizinin başından başlayarak ikiye kadar demek ama iki dahil değil.
+
+100
+00:35:01,876 --> 00:35:21,976
+Bu tüm elemanları demek, şurası başından eksi bir yani son elemana kadar demek. Ama son eleman dışarıda bırakıldığı için, yine eksklusiv olduğu için burada dördü yazmayacak.
+
+101
+00:35:24,735 --> 00:35:36,756
+Veya, burada lütfen dikkat, NAMS dizisinin 2'den 4'e kadar olan gözlerine yeni bir değer atayabiliyorum. 8-9 değerlerini atayabiliyorum.
+
+102
+00:35:36,756 --> 00:35:50,435
+Ve ekranda gördüğümüz gibi 0-1-2'den 4'e kadar olan gözleri, pardon 2'den 4'e kadar yani 2 ve 3. gözlerine 8-9 değerlerini atamış oluyoruz.
+
+103
+00:35:52,735 --> 00:36:06,395
+Büyük matrisler üzerinde iş yaparken işimizi çok kolaylaştırıyor. Before çevrimi içerisine girmeden doğrudan matrisin içerisinden belli bölgeleri alabiliyoruz. Onlar üzerinde çalışabiliyoruz.
+
+104
+00:36:07,443 --> 00:36:19,403
+Burada yine başka bir liste örneği görüyorsunuz. Bu defa stringlerden oluşan bir dizi oluşturmuş başlangıç için. Cat, Dog and Monkey diye.
+
+105
+00:36:19,403 --> 00:36:31,543
+Daha sonra burada bir for loopu içerisinde bu listenin içinde yer alan her bir değişkeni ekrana print ediyoruz.
+
+106
+00:36:35,443 --> 00:36:41,844
+Kullanıldığını görmüş olduk bu örnekle.
+
+107
+00:36:44,608 --> 00:37:04,068
+Buradaki for çevriminde de xid ve x birlikte kullanılmış. x dizinin elemanlarını gösterirken idx ise bu dizinin kaçıncı elemanı üzerinde işlem yaptığımızı gösteriyor.
+
+108
+00:37:12,608 --> 00:37:28,347
+Bunların indekslerini de ekrana yazdırıyor. İndeks sıfırdan başladığı için bir ekleyerek ekrana getirmiş. Şu ilk bölümü, print işleminin şu ilk bölümü format işlemi için kullanılıyor.
+
+109
+00:37:28,347 --> 00:37:40,347
+Yani ilk göstereceğimiz sayının bir decimal sayı olduğunu gösteriyor. Başına bir diyez işareti koyuyor. İki nokta üst üstüden sonra göstereceğimiz...
+
+110
+00:37:40,608 --> 00:37:59,068
+İkinci değişkenin bir string değişken olduğunu gösteriyor. Yani bu formatı aslında ya da print ettiğimiz satırın nasıl formatlandığını gösteriyor. Burada da print ettiğimiz değerleri görmüş oluyoruz.
+
+111
+00:38:00,820 --> 00:38:07,199
+Daha sonra neler yapabiliyoruz bu liste üzerinde buna bakalım.
+
+112
+00:38:09,140 --> 00:38:17,400
+Mesela Nums diye yine bir integer array oluşturmuş, sayı dizisi oluşturmuş liste formunda.
+
+113
+00:38:17,560 --> 00:38:26,100
+Burada Squares diye bir başka array tanımlamış fakat bu dizinin hiçbir elemanı yok, boş.
+
+114
+00:38:27,159 --> 00:38:28,600
+Ne demiş?
+
+115
+00:38:28,820 --> 00:38:32,900
+Yine bir for çevriminin nasıl kullanıldığını görüyorsunuz.
+
+116
+00:38:33,860 --> 00:38:44,680
+For x in nums demiş. Nums dediğimiz listenin içerisinde her bir x elemanının ne yapıyor? Karesini alıyor.
+
+117
+00:38:44,680 --> 00:38:49,260
+Ve bulduğu sayıyı squares dediğimiz diziye append ediyor.
+
+118
+00:38:49,844 --> 00:39:10,804
+Squares dediğimiz yeni diziyi epende diyor. Yani ekliyor. Çünkü bu dizi başlangıçta boş bir diziydi. Buna ekleyerek bunu oluşturabiliyoruz. Daha sonra da bunu Forge Evrimi'nin çıkışında da oluşturduğumuz yeni diziyi, dizinin elemanlarını burada görüntüleyebiliyoruz.
+
+119
+00:39:12,371 --> 00:39:22,411
+Bu işlemi yapmanın başka kestirme yolu da var. Biraz daha aslında karmaşık görünüyor. Kareler diye bir değişken tanımladığımızı varsayalım.
+
+120
+00:39:22,411 --> 00:39:24,411
+Diyoruz ki...
+
+121
+00:39:26,452 --> 00:39:41,572
+X'in karesi for x in nums demiş. Bu şekilde de ben aslında yukarıda yaptığım işlemin bir benzerini gerçekleştirebiliyorum. Bu da ilginç bir örnek.
+
+122
+00:39:51,539 --> 00:40:05,539
+Kareler Çift diye bir yeni dizi oluşturuyoruz. X'in karesini alıyoruz. Nams dizisindeki her bir X için. Daha sonra da bu şeyin elde ettiğimiz...
+
+123
+00:40:11,219 --> 00:40:30,599
+Aslında bunu X için yapıyor. If X mod 2 demiş, yani 2'ye göre modunu aldığımızda kalanı sıfır çıkıyorsa, buradan bunun çift olduğunu anlıyor ve çift sayıların sadece karelerini alıp, kareler çift dediğimiz diziye yazıyor.
+
+124
+00:40:30,599 --> 00:40:39,219
+Bu şekilde daha kestirme çözümler var ama bunları aşina olmak ve bunları kullanabilir hale gelmek...
+
+125
+00:40:39,219 --> 00:40:57,739
+Biraz zaman alacaktır. Hani hep belli bir programlama dili kalıbından geldiğimiz için belki bize şunu yapmak daha kolay geliyor. En azından bana kendi adıma söyleyeyim. Ama diğer tarafta bunları da bu şekilde kullanabiliyoruz.
+
+126
+00:40:59,059 --> 00:41:25,019
+Şimdi geldik Dictionaries konusuna. Dictionaries de çok ilginç bir yapı. Key Value Pairs dediğimiz bir çift kullanıyor. Key ve Value Pairs dediğimiz. Buna benzer bir yapı Java'da da var diye burada belirtmiş. Ben kullanmadım ama Python'dakini kullandım sadece.
+
+127
+00:41:28,115 --> 00:41:47,135
+Bakın nasıl tanımlamış. D eşit bir dictionary tanımlıyor ve bir küme parantezi açıyor. Ondan sonra cat ve cute. Bunlar biri key, biri value olacak şekilde veri çifte oluşturuyor burada.
+
+128
+00:41:47,860 --> 00:41:59,460
+Kedi için sevimli demiş, dog için fury demiş. Bu şekilde bu key'i gösteriyor. Bu da bu key'in values'unu gösteriyor.
+
+129
+00:41:59,460 --> 00:42:15,720
+Ve key value pairs dediğimiz formda veriyi tutuyor. Daha sonra diktiyoneri de biz bir değeri yani daha doğrusu key'i yazdığımız zaman bu key'in karşılığında yer alan değeri
+
+130
+00:42:15,860 --> 00:42:34,260
+Ekrana getiriyor. Bence ilginç bir yapı. Yani ihtiyaç duyulduğunda kullanılabilecek bir yapı. Veya şöyle bir şey yapmış. Bu ki D dikşinerisi içerisinde var mı? Cat in değil. Varsa true dönüyor yoksa false dönüyor gibi.
+
+131
+00:42:35,027 --> 00:42:46,027
+Veya bu Dictionary'e bir başka Entry ekleyebiliyor. Gördüğünüz gibi D Dictionary'sine FISH...
+
+132
+00:42:46,739 --> 00:43:02,039
+Bu da values'u olacak şekilde yeni bir entry ekleyebiliyor. Böylece print dictionary dediği zaman bu dictionary'de yer alan bir üçüncü entry'yi de görebiliyorsunuz.
+
+133
+00:43:05,460 --> 00:43:28,019
+Başka neler var? Remove an element from a dictionary demiş. Belli bir key value çiftini dictionary'den silmek için del dcat demiş burada. Bu şekilde cat cute pair'ını ya da bu entry'yi dictionary'den silebiliyorum.
+
+134
+00:43:28,416 --> 00:43:42,716
+İlginç örnekler. Bunları dediğim gibi hiç başlamamış veya yeni başlayan arkadaşlar deneyip çalıştırırlarsa iyi olur diye düşünüyorum.
+
+135
+00:43:42,716 --> 00:43:56,416
+Burada gördüğümüz her bir seli bağımsız bir şekilde çalıştırabiliyorsunuz. Bunu çalıştırmak için yapmanız gereken tek şey bu hücrenin içindeyken kontrol.
+
+136
+00:43:56,416 --> 00:44:14,416
+Control Enter tuşuna basmak. Tabii yukarıda o değişkeni tanımlamadığım için şimdi şey yaptı bana bir hata verdi. Remove an element from dictionary. D is not defined dedi. D'yi şurada başta bir çalıştırıp Control Enter ile bunu çalıştırdım.
+
+137
+00:44:24,416 --> 00:44:36,536
+Entry ekleme ve bir entry buradan silme işlemi gibi bu işlemleri yapabiliriz. Burada bir başka dictionary örneği vermiş.
+
+138
+00:44:41,012 --> 00:45:03,372
+Cat4 ve Spider8 diye bir key value girişi yapmış dikşinariye. İnsanın kaç tane bacağı var, kat'ın kaç tane, bir örümceğin kaç tane gibi bu değerleri ekrana getirmek için bu dikşinari yapısını kullanarak görüntüleyebiliriz diyor.
+
+139
+00:45:03,372 --> 00:45:08,072
+Benzer slicing işlemleri burada da mevcut.
+
+140
+00:45:09,012 --> 00:45:22,052
+Girdiğiniz değerler üzerinde hangi bölümlerini sadece kullanacağınızı girebiliyorsunuz.
+
+141
+00:45:22,052 --> 00:45:33,052
+Üçüncü olarak Containers yapısı içerisinde Sets diye bir setlerle ilgili bir bölüm var.
+
+142
+00:45:34,195 --> 00:45:55,115
+Set is an unordered collection of distinct elements demiş. Örneklerine bakacak olursak, burada bir animals seti tanımlanmış. Cat ve dog şeklinde yine bir küme paranteziyle tanımlandığına dikkatinizi çekmek isterim.
+
+143
+00:45:59,603 --> 00:46:16,643
+Neyi kontrol ediyor? Burada print cat in animals, check if an element is in a set, print true diyor. Daha önce yukarıda da vardı, dikşineride olduğu gibi. Bu set içerisinde cat varsa eğer true dönecek yoksa false dönecek.
+
+144
+00:46:25,108 --> 00:46:30,028
+Eleman ekleme işlemi yapılabilir gibi örnekler verilmiş.
+
+145
+00:46:31,768 --> 00:46:39,708
+Fonksiyon tanımlama. Fonksiyon tanımlama Python'da bir def keyword ile yapılıyor.
+
+146
+00:46:41,844 --> 00:46:50,064
+Function anlamına geliyor. Burada bir Python fonksiyonu nasıl tanımlanır? Bunu görüyorsunuz.
+
+147
+00:46:50,184 --> 00:47:00,564
+Sine dediği bir fonksiyon tanımlayacak. Sine x input parametresi. Daha sonra iki nokta üst üste demiş. Aşağıda ne yapmış?
+
+148
+00:47:09,844 --> 00:47:28,844
+0 ise return negative ve else return zero. Bu şekilde bir fonksiyon tanımlayıp daha sonra bu fonksiyonu bir for çevrimi içerisinde nasıl çağrıldığını görüyorsunuz.
+
+149
+00:47:37,844 --> 00:47:53,524
+Bu durumda x'i bir için negatif, sıfır için zero, bir için de pozitif return oluyor bu fonksiyonun.
+
+150
+00:47:53,524 --> 00:48:04,403
+Dediğim gibi basit bir form ama bu sintaksı önce biraz yazıp alışmanız gerekir.
+
+151
+00:48:06,547 --> 00:48:21,707
+Bir diğer konu, class konusu. Python'da class nasıl tanımlanır? Bunun sintaksı nedir? Burada bunu görüyorsunuz.
+
+152
+00:48:24,707 --> 00:48:29,707
+Sonra NumPy konusuna burada giriş yapılıyor. NumPy ile ilgili...
+
+153
+00:48:31,092 --> 00:48:45,092
+Buraya kadar anlattığımız kısım aslında Python'ın genel özellikleriydi. NumPy ise bir bilimsel hesaplama işlemleri için oluşturulmuş bir kütüphane, NumPy kütüphanesi.
+
+154
+00:48:46,912 --> 00:48:55,612
+Hazır pek çok yine building function'ları var içinde ve işlem yapmamızı kolaylaştırıyor. Sintaksi kolay.
+
+155
+00:48:59,092 --> 00:49:14,692
+Şimdi numpy'da bir array nasıl tanımlanır? Bunlarla işlem nasıl yapılır? Hızlıca bunlara bakacağız. 10 dakikada da bunları anlatırız herhalde.
+
+156
+00:49:14,692 --> 00:49:26,472
+Diziler için bakalım. Numpy array için a grid of value demiş. All of the same type. Hepsi aynı tip olmalı.
+
+157
+00:49:27,092 --> 00:49:42,472
+Indexed by Typule of Non-Negative Integers. Sıfırdan başlayarak 1, 2, 3, 4 diye indeksleniyor bir arrayin hangi elemanı olduğunu göstermek için.
+
+158
+00:49:48,659 --> 00:49:56,659
+We can initialize NumPy Arrays from nested Python list and access elements using square brackets.
+
+159
+00:49:58,659 --> 00:50:00,000
+Köşeli parantez kullan...
+
+160
+00:50:00,000 --> 00:50:27,579
+Ancak her bir elemana erişim sağlayabiliyoruz. Şimdi bakalım. Burada import numpy as np demiş ve bir numpy kütüphanesini np olarak import ettik. Daha sonra burada bir numpy array tanımlamak için np.array dediğimizde şurada gördüğümüz diziyi oluşturduk. Şimdi dizilerle ilgili önemli açıklamalarım olacak.
+
+161
+00:50:28,000 --> 00:50:52,360
+Dizinin boyutlarını ifade ederken nasıl kullanıldığına bakacağız. Şimdi array nasıl oluşturmuş? Lütfen dikkat. NumPy array oluştururken, şurada A işte numpy array dedik. Aç parantez daha sonra köşeli parantezle birden dörde kadar işte ya da birden dörde kadar dört dahil bir dizi oluşturduk.
+
+162
+00:50:56,000 --> 00:51:23,920
+Type'ını NumPy ND Array olarak gösteriyor. Daha sonra Print A.Shape dediğim zaman bu array'in şekli nedir diye soruyorum. Dört elemanlı bir dizidir diyor bana. Bakın sadece bu var. Dört elemanlı bir dizi. Ve işte dizinin her bir elemanını ekrana yazdırmak için ne yapıyorum? Köşeli parantezlerle A'nın sıfırıncı elemanı, A'nın birinci elemanı.
+
+163
+00:51:24,000 --> 00:51:38,039
+diye yazdırabiliyorum. Yalnız şuradaki type'a lütfen tekrar dikkatinizi çekmek istiyorum. Yani type değil, özür dilerim, shape'e. Bu array'in shape'i dört elemanlı olduğunu söylüyor bize.
+
+164
+00:51:40,039 --> 00:51:45,036
+Şimdi devam edelim. Aşağıda ise...
+
+165
+00:51:45,492 --> 00:51:58,412
+Farklı bir şekilde tanımlıyoruz bu array'i. Yine birden dörde kadar dört dahil bir array tanımladık. Fakat lütfen dikkat şurada iki tane köşeli parantez kullanarak tanımladım.
+
+166
+00:52:13,492 --> 00:52:32,711
+Bir satır dört sütundan oluşan bir vektör olduğunu ifade ediyor. Yukarıdaki değişkenin shape ile buradaki değişkenin shape arasındaki farka dikkatinizi çekmek istiyorum. Yukarıda sadece dört elemanlı bir dizi demişti.
+
+167
+00:52:33,715 --> 00:52:40,735
+Burada ise bu bir matrismiş gibi bir satır dört sütundan oluşur dedi.
+
+168
+00:52:41,516 --> 00:52:50,436
+Sonra iki boyutlu bir matris yapısı, iki satır üç sütundan oluşan bir matrisi nasıl oluştururum ona dikkatinizi çekmek istiyorum.
+
+169
+00:52:54,224 --> 00:53:02,224
+İçeride ayrı ayrı veriyoruz. Biraz C'ye de benzer bir yapı, böyle bir şey. Ve şurada...
+
+170
+00:53:03,539 --> 00:53:20,539
+Normal parantezden sonra ne görüyoruz? İki tane köşeli parantez görüyoruz. Birincisi bu matrisin tanımını yapıyor. İçeride ise matrisin her bir satırını tanımlamış oluyoruz.
+
+171
+00:53:20,539 --> 00:53:29,259
+Ve B matrisinin shape'ini ekrana yazdır dediğimizde B matrisinin shape'i iki satır üç sütundan oluşuyor diyor.
+
+172
+00:53:31,539 --> 00:53:59,500
+Bunlara dikkatinizi çekmek istiyorum. Özellikle matriz, vektör ve dizi arasındaki farka. Daha sonra diyor ki NumPy bize böyle diziler yaratmak için bir sürü hazır fonksiyon sunuyor diyor. Mesela bunlar yine işimizi çok kolaylaştırıyor. NumPy Zeros dediğimiz bir hazır yine fonksiyon.
+
+173
+00:53:59,539 --> 00:54:05,500
+Ne yapıyor? İkiye ikilik içindeki bütün elemanların sıfır olduğu bir matriz oluşturuyor.
+
+174
+00:54:06,459 --> 00:54:15,079
+NP nokta zeros diyorum ve bu sıfırlardan oluşan ikiye ikilik bir matriz ver diyorum.
+
+175
+00:54:15,079 --> 00:54:18,559
+Veya içi tümüyle birlerden oluşan.
+
+176
+00:54:18,900 --> 00:54:46,900
+İçinde tü ile birlerden oluşan bir matris oluştur. İkiye ikilik bir matris oluştur diyorum. Ya da burada gördüğümüz ay dediği birim matris oluştur diyoruz. Dört matrisin zaten kare bir matris olmak durumunda birim matris olduğu için ve dörde dört bir matris oluştur diyorum. Bu durumda bize oluşturduğu matris aşağıda görüyorsunuz.
+
+177
+00:54:46,900 --> 00:54:55,320
+Anaköşegen üzerindeki bütün elemanların bir olduğu bir birim matriz oluşturuyor. D matrizi olarak.
+
+178
+00:54:57,460 --> 00:55:10,480
+Daha sonra bir başka örnek. NumPyFull demiş. Buradaki matriz oluşturma örneği de diyor ki 3'e 3'lük bir matriz oluştur ve bütün elemanları 5 olsun.
+
+179
+00:55:11,120 --> 00:55:16,940
+Bakın yine oldukça kestirme bir yol. Bu şekilde ben bir matriz oluşturabiliyorum.
+
+180
+00:55:25,460 --> 00:55:30,760
+Yapısında da görmüştük. Bunları NumPy'da da kullanıyoruz.
+
+181
+00:55:31,640 --> 00:55:36,700
+Ve matrisin belli bölgelerine erişim için bize kolaylık sağlıyor.
+
+182
+00:55:37,760 --> 00:55:43,300
+Hızlıca bakacak olursak, burada çok çok ilginç bir örnek var çünkü benim çok hoşuma gitti.
+
+183
+00:55:43,760 --> 00:55:48,460
+Burada bir A matrisi oluşturulmuş arkadaşlar. A matrisi NumPy Array diyor.
+
+184
+00:55:53,460 --> 00:56:01,680
+Matris oluşturmuş. Tamam mı? Şimdi bu matrisin slicing işlemleri ile işte
+
+185
+00:56:06,099 --> 00:56:26,819
+Ne yapmış? İlk satırdan ikinci satıra kadar ama sütunları birinci sütundan üçüncü sütuna kadar. Şimdi sayıları lütfen yazın. Bir, iki, üç, dört var. İkinci satırda beş, altı, yedi, sekiz var. Sonraki satırda dokuz, on, on, bir, on, iki var.
+
+186
+00:56:34,739 --> 00:56:58,739
+İkiye kadar, yani 0, 1 dahil, 0, 1 dahil, sütun olarak da birinci sütundan başlayıp 3'e kadar, yani 1 ve 2. sütunları ne yaptı? Bu matrisin içerisinden 2, 3, 6, 7 dediğimiz elemanları alıp bir başka matrise yerleştirdi, B matrisine yerleştirdi.
+
+187
+00:57:02,739 --> 00:57:13,860
+B matrisi bir subarray olarak isimlendiriliyor. Subarray. Yani o ana matristen çekilmiş bir alt matris olarak değerlendiriliyor.
+
+188
+00:57:13,860 --> 00:57:27,940
+Ve, bakın burada dikkat edin, bu subarray'in bir elemanını değiştirdiği zaman, yani B matrisinin şuradaki sıfıra sıfır gözü iki olan gözüne yetmiş yedi atadı.
+
+189
+00:57:30,739 --> 00:57:41,159
+Lütfen dikkat, A matrisinin, yani bu B matrisinin çekildiği, çıkartıldığı ana matristeki göz de değişiyor.
+
+190
+00:57:41,940 --> 00:57:58,799
+Bu çok güzel bir özellik. Neden? Çünkü bu slicing işlemiyle bizim oluşturduğumuz B matrisi bir subarray olarak geçiyor ve bunun üzerinde yaptığı değişiklik ana matrisi de etkiliyor ve değiştiriyor.
+
+191
+00:58:03,699 --> 00:58:27,059
+Bakın yine şu enteresan bir özellik bence. A matrisinin diyor ki, A matrisinin birinci satırı ile bütün sütunları diyor. Bakın, A matrisinin birinci satırından tüm sütunları alıyorum. Yani şu 5, 6, 7, 8'i alıyorum.
+
+192
+00:58:28,820 --> 00:58:45,760
+Ve bunu bir Rho-R1 dediğim bir yeni değişkene atıyorum. Ve bu değişkenin shape'ine baktığım zaman bu bir array olarak gözüküyor. Dört elemanlı bir array olarak gözüküyor.
+
+193
+00:58:46,260 --> 00:59:00,400
+Fakat eğer atama işleminde birden ikiye diye sınırlandırır ve bunu bir Rho-R2 değişkenine alırsam, bunun shape'ine baktığımız zaman bu bir satır dört sütundan oluşur diyor.
+
+194
+00:59:01,139 --> 00:59:16,139
+Bu bir vektör haline gelmiş oluyor. Öbürü bir array olarak tanımlanmış oluyor. Aslında değişkenin içerisindeki sayılar birebir aynı. Ama bakın ekrana yazdırdığımız zaman bu nasıl yazılıyor? İç içe iki tane köşeli parantez ile yazılıyor.
+
+195
+00:59:16,139 --> 00:59:24,739
+Yani bu inceliklere dikkat edelim. Python'ı kullanırken bizim için önemli olacak çünkü.
+
+196
+00:59:27,347 --> 00:59:46,788
+Evet, hemen ara saati diyorum. Sizi çok sıkmadan hemen bir 10 dakika ara veriyorum. Böyle bir hızlı hızlı birazdan da işte çizimle ilgili, görüntüleri açma ve işlemeyle ilgili neler var bunları adım adım göreceğiz. 10 dakika ara arkadaşlar.
+
+197
+01:09:00,756 --> 01:09:04,256
+Evet, derse kaldığımız yerden devam edelim.
+
+198
+01:09:06,256 --> 01:09:07,052
+Şimdi...
+
+199
+01:09:13,268 --> 01:09:31,048
+Geldik yeni bir bölüme. Aslında temel olarak gördük ama burada Data Types diye bir başlık da açılmış. NumPy altında. Every NumPy Array is a grid of elements of the same type demiş.
+
+200
+01:09:34,739 --> 01:09:41,399
+İşte tüm programlama dillerinde gördüğümüz yapıları burada belirtiyor.
+
+201
+01:09:42,159 --> 01:09:50,920
+NumPy provides a large set of numeric data types that you can use to construct arrays.
+
+202
+01:09:53,619 --> 01:09:59,479
+Önemli nokta şu, NumPy tries to guess a data type when you create an array.
+
+203
+01:10:00,000 --> 01:10:13,355
+Siz bir dizi oluşturduğunuz zaman bunun data tipinin ne olduğunu kendi tahmin ediyor. Çünkü o dizi içerisine koyduğunuz sayının tipi ile bunu...
+
+204
+01:10:13,524 --> 01:10:27,104
+Eşleştiriyor. Ve mesela burada verdiği örnekte bir NumPy Array'i 1,2 diye integer tanımladığınız için Array içerisindeki değerleri.
+
+205
+01:10:27,104 --> 01:10:41,524
+Ve type'ını int64 demiş, 64 bit integer sayı olarak tanımlamış. Veya eğer Array'i 1,0, 2,0 gibi yazarsanız işte bu MATLAB'ta da böyle data type'ı float oluyor.
+
+206
+01:10:41,524 --> 01:10:58,484
+O yüzden kullanırken aslında yapıya dikkat etmeniz gerekiyor. Yani hangi tipte tanımladığınızı ve ilerleyen kısımlarda ona uygun olarak bir sonuç görmeyi beklemeniz gerekiyor.
+
+207
+01:10:59,956 --> 01:11:14,956
+Ama isterseniz oluşturduğunuz array'in data type'ını tabii başta kendiniz de tanımlayabiliyorsunuz. Farklı bir şekilde girmek isterseniz.
+
+208
+01:11:16,735 --> 01:11:22,275
+Evet, şimdi NumPy'in hazır işlemleri arasında başka neler var?
+
+209
+01:11:25,300 --> 01:11:34,739
+Mesela burada Nampay Kütüphanesi ile aritmetik işlemler, array matematiği diye verilmiş.
+
+210
+01:11:34,739 --> 01:11:37,739
+İki tane...
+
+211
+01:11:39,283 --> 01:11:58,003
+Flot tipinde dizi tanımlanmış, şey matriz tanımlanmış, özür dilerim. 1, 2, 3, 4 yani 2'ye 2'lik bir X matrizi var, yine 2'ye 2'lik bir Y matrizi var ve flot olarak tanımlanmış değişken türü.
+
+212
+01:11:58,663 --> 01:12:03,283
+Dolayısıyla ben bunu ekrana yazdırdığımda göreceğim matriz yapısı şu şekilde olacak.
+
+213
+01:12:07,283 --> 01:12:31,763
+Çıklamak, çıkartmak gibi işlemler var. İki şekilde yapılabilir. Ben bunu print x artı y deyip yapabilirim veya numpy'in add metodunu kullanarak da yapabilirim. Bu şekilde işlemleri iki farklı türde nasıl yapabileceğimizi göstermiş. Ne var? Numpy'in subtract.
+
+214
+01:12:32,819 --> 01:12:53,399
+Multiply veya bunu bir yıldız sembolüyle de yapabiliyoruz. İki matrisi elementwise product alıyor. Yani karşılıklı gelen gözlerini çarparak bir sonuç üretiyor bu multiply işlemi.
+
+215
+01:13:00,819 --> 01:13:13,519
+Daha farklı bir dot product dediğimiz işlem ile gerçekleşiyor. Burada element wise product dediğimiz işlemde karşılıklı gelen gözler birbiriyle çarpılıyor. Mesela burada 1, 2, 3, 4 matrisi var.
+
+216
+01:13:14,612 --> 01:13:30,692
+Bir, iki, üç, dört matrisi var. Bu bizim X matrisimiz. İkiye ikilik. Bir de Y matrisi tanımlanmış. Beş, altı, yedi, sekiz. Karşılıklı gelen gözleri çarpmak dediğim zaman bir ile beşi çarpıyor.
+
+217
+01:13:30,692 --> 01:13:42,612
+Ve işte bu Element Wise Product'ta bu çarpma işleminin sonunda beş. Diğer tarafta altı ile iki, iki ile burada altıyı çarpıyoruz.
+
+218
+01:13:42,612 --> 01:13:44,612
+Çarpıyoruz 12'ye.
+
+219
+01:13:46,387 --> 01:14:06,128
+3 ile 7'yi çarpıyoruz. 21 ve 4 ile 8'i çarpıyoruz. 32. Sonuç olarak yaptığımız işlem, tekrar söylüyorum, element wise product. İkisi birbirinden farklı işlemler. Bir de dot product. Yani gerçek matriz matriz çarpımı dot product ile gerçekleştiriliyor.
+
+220
+01:14:06,408 --> 01:14:14,208
+Bir başka işlem, matematiksel işlem burada bölme işlemi. X, Y'ye bölme.
+
+221
+01:14:14,387 --> 01:14:31,427
+Bu da yine element wise division diye geçiyor. Başka ne yapmış? Element wise square root, numpy square root x dediğimiz zaman x matrisinin kare kökünü alabiliyoruz.
+
+222
+01:14:32,243 --> 01:14:40,783
+Bunlar matematiksel işlemlerimiz. Peki gelelim matriz matriz çarpımına.
+
+223
+01:14:42,899 --> 01:14:48,799
+Çünkü burada kullandığımız yıldız işlemi bir matriz multiplication işlemi değil aslında.
+
+224
+01:14:49,019 --> 01:14:57,219
+Bu işlemleri gerçekleştirmek için NumPy'ın NumPy. dediğimiz bir işlemi var.
+
+225
+01:14:57,340 --> 01:14:59,519
+Bu inner product of vectors demiş.
+
+226
+01:14:59,519 --> 01:15:03,899
+Bunu iki örnekle göstermiş.
+
+227
+01:15:04,579 --> 01:15:07,479
+Bir X ve Y matrizi tanımlanmış.
+
+228
+01:15:07,659 --> 01:15:10,899
+Az önce kullandığımız matrisler bir de vector.
+
+229
+01:15:10,899 --> 01:15:23,879
+Vektör tanımlanmış lütfen dikkat. Vektörde ise tanımladığı vektörler yani bir boyutlu olduğuna dikkatinizi çekmek istiyorum. 9, 10, 11, 12 var.
+
+230
+01:15:23,879 --> 01:15:37,819
+Diyor ki inner product of vectors yani V ve W dediği iki tane vektörün inner productını aldığı zaman karşılıklı gelen gözleri çarpıyor ve toplayıp 219 sonucunu buluyor.
+
+231
+01:15:38,899 --> 01:16:06,899
+Vektör için. mp.dot işlemiyle bunu gerçekleştirdik. Eğer matriks vektör product üretmek istiyorsak, matriz vektör çarpımı yapmak istiyorsak, x matrisiyle v vektörünün dot product'ını burada gördüğümüz gibi de alabiliriz ya da numpy'ın hazır fonksiyonlarını kullanarak.
+
+232
+01:16:06,899 --> 01:16:16,439
+Matriks Matriks Product için ise bu bir matriz matriz çarpımı.
+
+233
+01:16:18,420 --> 01:16:36,079
+X ve Y matrislerinin dot product'ını alıyor. İşte matrisin birinci satırıyla, X matrisinin birinci satırıyla Y matrisinin birinci sütununu çarpıyor. İşlem sonucu 19. Ondan sonra X matrisinin ikinci satırıyla...
+
+234
+01:16:36,435 --> 01:16:49,495
+Y yine Y matrisinin birinci sütununu çarpıyor ve şunu buluyor. Böyle sırasıyla bu matris matris çarpım işlemini gerçekleştiriyor.
+
+235
+01:16:58,131 --> 01:17:26,131
+Burada güzel bir şey var. NumPy provides many useful functions for performing computations on arrays demiş. Dizler üzerinde hızlı işlem yapmak için bize hazır yine bazı fonksiyonlar sunuyor. Bunlar oldukça kullanışlı. Mesela burada bir X madresi tanımlamış. İkiye ikilik bir madres. Ben bu ikiye ikilik madresin bütün elemanlarının toplamını alabilirim. Bu basit bir işlem.
+
+236
+01:17:26,131 --> 01:17:54,091
+Ama şurada ilginç bir şey var. Mesela X matrisinin belli bir sütun doğrultusunda toplamlarını almak için aksis sıfır diyorum. Bu compute sum of each column demiş. Her kolonun toplamını alıyor ve işte birinci sütun toplamında bir ve üç sonucu dört yapıyor. İki ile dördü topluyor.
+
+237
+01:17:54,131 --> 01:18:13,691
+Bu şöyle avantajlı. Mesela burada bir matrisin sütun doğrultusunda veya satır doğrultusunda toplamlarını alabileceğimiz gibi sütun veya satır doğrultusunda ortalamalarını almak vesaire gibi işlemler de olabiliyor.
+
+238
+01:18:13,691 --> 01:18:22,131
+Bu tür hazır çözümler yine bu işi çok hızlı yapmamızı sağlıyor. Burada aksis sıfır ve aksis bir diyerek
+
+239
+01:18:22,131 --> 01:18:30,371
+Bunun hangi yönde yapıldığını, sütun doğrultusunda mı, satır doğrultusunda mı yapıldığının seçimini yapıyoruz.
+
+240
+01:18:31,451 --> 01:18:39,511
+Sonra devam ediyorum. Başka neler var burada? Bir de transpos alma işlemi var.
+
+241
+01:18:39,511 --> 01:18:42,507
+Nampay'da...
+
+242
+01:18:42,547 --> 01:18:53,547
+Burada bir vektörün transposunu almak için şu şekilde bunu gerçekleştirebiliyoruz.
+
+243
+01:19:00,467 --> 01:19:10,228
+Evet, Broadcasting de önemli. Bunu da ben çok kullanışlı olduğunu düşünüyorum. Broadcasting işlemi ne işe yarıyor? Şöyle bir bakalım.
+
+244
+01:19:12,564 --> 01:19:22,363
+Broadcasting is a powerful mechanism that allows NumPy to work with arrays of different shapes when performing arithmetic operations.
+
+245
+01:19:22,363 --> 01:19:34,264
+Burada farklı boyutta dizilerle çalışırken diyor ama bu şey gibi de düşünün. Bir matrizle bir vektör arasında işlem yapacaksınız mesela gibi.
+
+246
+01:19:35,224 --> 01:19:40,564
+Bu tür durumlarda farklı boyutta değişkenler üzerinde işlem yaparken.
+
+247
+01:19:40,564 --> 01:19:56,684
+Şimdi burada yaptığımız işlemi daha hızlı nasıl yaparız? Aslında burada gördüğümüz çözüm biraz Python'da yavaş çalışan bir çözüm. Ne yapıyoruz?
+
+248
+01:20:00,000 --> 01:20:12,819
+Bir X matrisi var, bir de V vektörü var. X matrisinin her bir satırına V vektörünü ilave etmek istiyoruz, toplamak istiyoruz.
+
+249
+01:20:12,819 --> 01:20:18,159
+Ve bu işlemin sonucunu da bir Y matrisinde göstermek istiyoruz.
+
+250
+01:20:18,520 --> 01:20:26,279
+Şimdi önce X matrisi tanımlanmış. X matrisi kaça kaç bir matris? Bakayım bir söyleyin bana.
+
+251
+01:20:27,796 --> 01:20:30,056
+Chat'ten de yazabilirsiniz.
+
+252
+01:20:33,436 --> 01:20:35,296
+4'e 3'lük matriz.
+
+253
+01:20:36,376 --> 01:20:50,896
+Evet, 4'e 3. 4 satır 3 sütunu var. Güzel. Peki, V vektörü önün kaç elemanı var? 3 elemanı var. Bakın burada X matrizinin her bir satırıyla V vektörünü toplamak istiyorum.
+
+254
+01:20:55,412 --> 01:21:15,992
+4E in Range 4 demiş. Dört satır için bunu tekrarlayacak. Y diye yeni bir matris oluşturulmuş. Y'nin iyi gözü ve tüm sütunları için diyor. X, Y'nin tüm sütunları ile V arasında bir toplama işlemi yaparım diyor.
+
+255
+01:21:23,412 --> 01:21:25,632
+Daha hızlı nasıl yapabiliriz?
+
+256
+01:21:28,051 --> 01:21:38,771
+Python'da bunu daha hızlı yapmak için şurada gördüğümüz şekilde kullanabiliriz. Yine burada X matrisi tanımlanmış, V vektörü tanımlanmış.
+
+257
+01:21:38,771 --> 01:21:54,791
+VV diye bakın yeni bir değişken tanımlanmış. V vektörünü dört kez tekrarla diyor. Yani dört satırda bunu bir defa tekrarla şeklinde.
+
+258
+01:21:56,051 --> 01:22:21,412
+Bir yeni değişken oluşturuyor VV'de. VV değişkeninde gördüğümüz şey ne? V vektörünün dört defa kopyalanmış hali. Ne olmuş oldu? Aslında VV dediğimiz matriz, dört satır, üç sütundan oluşan aynı X ile aynı boyutta bir matriz haline gelmiş oldu ve bunların arasında toplama işlemi yaptı.
+
+259
+01:22:22,515 --> 01:22:34,536
+Bunu göstermek isterim. Ondan sonra, evet geldik esas konumuza. Matplot ve Psyc Image kütüphaneleri.
+
+260
+01:22:36,115 --> 01:22:45,636
+Matplot, bir plotting library, yani grafik çizmek için vs. için kullanabileceğimiz bir kütüphane.
+
+261
+01:22:45,636 --> 01:22:56,036
+Ve Matplot, Pyplot modülünü çok kullanacağız. Bu örneklerde de bunu göreceksiniz zaten.
+
+262
+01:22:56,948 --> 01:23:02,908
+Ve plotting için burada bir basit örnekle hemen açıklayalım.
+
+263
+01:23:03,268 --> 01:23:11,247
+The most important function in Matplot Library's plot, which allows you to plot 2D data.
+
+264
+01:23:12,087 --> 01:23:15,648
+İki boyutlu bir verimiz varsa bununla çizim yapmamızı sağlıyor.
+
+265
+01:23:15,648 --> 01:23:22,648
+Ve bir örnek hemen. Ne yaptık? Bir kere Matplot Library'i.
+
+266
+01:23:23,923 --> 01:23:41,384
+Bir tanıttık. Ondan sonra Matplot Library'nin Pyplot kütüphanesini PLT olarak import ettim. Ondan sonra yine klasik import numpy as NP var.
+
+267
+01:23:51,091 --> 01:23:55,591
+Kütüphanesinin içerisinden input-output işlemlerini import ettim.
+
+268
+01:23:55,591 --> 01:24:05,691
+Burada önce şeyi görüyorsunuz. Ben burada niye plotting de imice geçmişim? Neyse öbürü de gelecek arkadan.
+
+269
+01:24:10,003 --> 01:24:37,423
+Bu oluşturduğum Python kodunun bulunduğu klasör altında bir görüntü matrisim vardı. Cat JPEG. Bir kedi görüntüsü JPEG olarak kaydedilmiş. Bunu imrid ile okudum ve bu okuma işleminin sonunda image dediğim değişkene bu bir matris olarak aktarılmış oldu.
+
+270
+01:24:38,003 --> 01:24:48,904
+Daha sonra bunu plotim show image dediğimde ekrana bu kedi görüntüsünü getirmiş oldum.
+
+271
+01:24:48,904 --> 01:24:59,463
+Şimdi bu image değişkeninin data type'ını ve shape'ini de ekrana yazdırıyorum.
+
+272
+01:24:59,463 --> 01:25:01,463
+Data type'ı...
+
+273
+01:25:01,908 --> 01:25:23,208
+Unsigned Integer 8 bit. Bakın bu yine görüntü dosyalarında her bir piksel işaretsiz tam sayı olarak tutuluyor. Unsigned Integer işaretsiz tam sayı olarak tutuluyor ve 8 bit uzunluğunda.
+
+274
+01:25:23,568 --> 01:25:29,448
+8 bit de işaretsiz tam sayı demek 0'dan 255'e kadar değer alır demek.
+
+275
+01:25:29,908 --> 01:25:42,007
+Bunu lütfen unutmayın. Uint 8, bütün görüntü dosyalarında kullandığımız veri tipi bu olacak.
+
+276
+01:25:46,579 --> 01:25:59,879
+Matrisi yani cat.jpg görüntüsünü okuduğumuz imaj değişkeninin data type'ını yazdık. Şimdi shape'ine bakıyoruz. Şekli nedir? Yani kaça kaçtır?
+
+277
+01:26:08,724 --> 01:26:31,664
+Color Palette, renk paletinden oluşmaktadır. Burada görüntülenen şekil üzerinde de bu belirtilmiş. Plot-im-show-image dediğimiz zaman gördüğünüz gibi bu matrisin sıfıra sıfır gözü bu görüntünün sol üst köşesidir. Burası sıfıra sıfır noktasıdır.
+
+278
+01:26:34,579 --> 01:26:39,579
+Burası da 248. sütun. Şurası.
+
+279
+01:26:42,579 --> 01:26:47,579
+Ve bu matriste gördüğümüz görüntülenen her bir piksel.
+
+280
+01:26:48,659 --> 01:27:04,100
+3 byte ile kodlanmıştır. Bu 3 byte unsigned integer olarak tutuluyor. Red, green ve blue paletlerde bu 3 renk paletinin değerlerini tutuyor içinde.
+
+281
+01:27:07,412 --> 01:27:18,872
+Bir başka görüntüyü, bu defa bu Jupyter Notebook dosyasının bulunduğu klasörün bir gerisine gidiyorum.
+
+282
+01:27:19,731 --> 01:27:47,211
+Onun altında bir Test Image klasörüm vardı. Farklı klasörlerden resim okumayı göstermek için buraya bunu koydum. Bir başka görüntü dosyası, Balun JPEG görüntüsünü Image değişkenine aldım. Yine Plot Imshow ile bunu görüntüledim. Burada gördüğünüz gibi bunu da burada bir çalıştıralım.
+
+283
+01:27:47,731 --> 01:27:56,872
+Galiba çalıştırmazsak bir sonraki kısmı belki görüntüleyemeyebilirim.
+
+284
+01:27:56,872 --> 01:28:11,211
+Burada okuduğum bu matrisin yine data type'ını, shape'ini, bu matris içerisinde image matrisinin en küçük ve en büyük sayı değerlerini ekrana getiriyorum.
+
+285
+01:28:13,171 --> 01:28:27,371
+NumPy and D-Array olarak geldi data type'ı, şeyi, image type'ı. Ama image'in data type'ı unsigned integer 8-bit.
+
+286
+01:28:28,979 --> 01:28:49,799
+İşaretsiz tam sayı 8 bit. 300 satır, 225 sütun ve 3 tane color paleti, red, green, blue paletlerinden oluşuyor. Minimum ve maksimum sayılar ise bakın dikkat 0 ve 255'miş.
+
+287
+01:28:50,260 --> 01:28:59,659
+İşaretsiz tam sayılarda görebileceğimiz en küçük ve en büyük değerler görüntü içerisinde de mevcut anlamına geliyor bu.
+
+288
+01:29:00,780 --> 01:29:09,380
+Sonra Plotting kısmına geçtim. Plotting'de Matplot Library burada aslında işe yarıyor.
+
+289
+01:29:10,319 --> 01:29:12,659
+Matplot Library ile...
+
+290
+01:29:14,579 --> 01:29:20,880
+Bunları tekrar nereye geçtim ben? Şuradayım özür dilerim. Ben bunu iki kere yazmışım galiba.
+
+291
+01:29:20,880 --> 01:29:34,380
+Şurada plotting işlemlerinde iki boyutlu data üzerinde plot işlemlerini yapmamı sağlıyor.
+
+292
+01:29:36,399 --> 01:29:53,299
+Örnek şurada üretilmiş bir sinüs işareti var. Önce bir x dizisi oluşturuyor, sayı dizisi oluşturuyor.
+
+293
+01:30:03,667 --> 01:30:15,448
+NumPy P dediğimiz, lütfen dikkat, NumPy P dediğimiz bir, burada NumPy altında P sayısı tanımlı ve bunu kullanıyorum.
+
+294
+01:30:15,448 --> 01:30:30,047
+0'dan 3P'ye kadar, 0'dan 3P'ye kadar 0.1'lik steplerle, aralıklarla bana bir x sayı dizisi oluşturmasını istiyorum.
+
+295
+01:30:31,667 --> 01:30:44,587
+Bunu, bu x sayı dizisinin NumPy sin fonksiyonunu kullanarak ne yapıyorum? Bu x sayı dizisinin sin üstünü alıyorum.
+
+296
+01:30:44,587 --> 01:30:48,587
+Daha sonra yatay eksene...
+
+297
+01:30:49,332 --> 01:31:04,052
+X değişkenindeki bu sample aldığım aralıkları dikey eksene ise, y eksenine ise sinüs fonksiyonunun aldığı değerleri koyarak plot işlemi yapıyorum.
+
+298
+01:31:07,315 --> 01:31:28,555
+Buradaki plot işlemini mat plot, pi plot altındaki, yani pi plot'u çağırarak yapıyorum ve pi plot'un altında bir plot işlemi var. X ve Y değişkenlerine bağlı olarak aşağıda gördüğümüz plot show ile bunu çizdirebiliyorum.
+
+299
+01:31:33,876 --> 01:32:01,815
+3P'ye kadar. Şurası P, burası 2P, burası 3P yapıyor. Bir sinüsün tam periyodu 2P. Şuradan hatırlayın. Burası da 3P. Dolayısıyla bu grafik bize bir sinüs işaretinin sıfırdan 3P'ye kadar aldığı değerleri göstermiş oluyor.
+
+300
+01:32:01,876 --> 01:32:03,615
+Grafik olarak göstermiş oluyor.
+
+301
+01:32:04,435 --> 01:32:09,555
+Şimdi buna bir de kosünüs ekleyelim.
+
+302
+01:32:09,555 --> 01:32:13,555
+X 80'ine biz bir...
+
+303
+01:32:14,484 --> 01:32:30,860
+Sıfırdan 3 pi'ye kadar bir dizi oluşturduk. Bunun hem sinüsünü hem kosinüsünü aldık ve bunu aynı grafiğin üzerinde plot işlemi ile hem...
+
+304
+01:32:31,091 --> 01:32:56,311
+Hem sinüs hem de kosünüs işaretlerini çizdirelim. Burada çizim yaparken bir takım açıklamalar ekleyebiliriz. Yatay eksene x-axis label, dikey eksene y-axis label ya da grafiğin tam başına title yazabilirim.
+
+305
+01:32:59,091 --> 01:33:07,911
+İki tane değişkeni bir arada çizdirdiğim için, işareti bir arada çizdirdiğim için bunların hangisi hangisini gösteriyor?
+
+306
+01:33:07,911 --> 01:33:17,051
+Bunu göstermek için Legend kullanabilirim. Legend'da şurada gördüğümüz, grafiğin altında gördüğümüz mavinin sinüsü.
+
+307
+01:33:18,496 --> 01:33:37,655
+Turuncunun da kosünüsü gösterdiğini bize ifade ediyor. Aynı grafiğin üzerinde iki değişkeni birden, iki işareti birden hem mavi ile sinüsü hem de burada gördüğümüz turuncuyla kosünüs işaretini çizdiriyorum.
+
+308
+01:33:38,836 --> 01:33:51,496
+Subplot tanımlayabilirim. Yani aynı ekranın içerisinde birden fazla pencere açıp bu pencereler içerisinde bir takım alt çizimler oluşturabilirim.
+
+309
+01:33:51,496 --> 01:34:00,476
+Bu subplot işlemini nasıl yapıyoruz görelim. Şunlar hazır baştaki import işlemlerimiz.
+
+310
+01:34:04,207 --> 01:34:24,347
+Dizisini oluşturuyoruz. Sıfırdan 3 piye, sıfır bir aralıklarla. Sonra bu x'in sinüsünü ve kosünüsünü aldım. Şimdi bunları iki ayrı grafikte ekranda göstermek istiyorum. Bunun için plt subplot dedim. Bakın subplotta kullandığım parametreler ne anlama geliyor?
+
+311
+01:34:32,207 --> 01:34:50,207
+Ve bunun birincisine burada bir değer atacağım diyorum. Yani birinci çizimi yapacağım diyorum. Ve bu ayarlamadan sonra ilk yaptığım plot işlemi ile üst sırada...
+
+312
+01:34:51,188 --> 01:35:04,788
+Şimdi sinüsü ekrana çizdireceğim. Daha sonra yine PLT Subplot diyerek, bakın yukarıdaki parametreler iki satır bir sütundan oluşuyor ve ikincisini yapıyorum diyorum çizimin.
+
+313
+01:35:04,788 --> 01:35:19,168
+Ve burada da kosünüsü çizdiriyorum. Böylece aynı ekranın içerisinde iki tane grafiği de, iki çizimi de bu şekilde görüntüleyebiliyoruz. PLT Show dediğimizde.
+
+314
+01:35:19,188 --> 01:35:26,948
+En altta. Önce sinüsü, sonra kosünüsü ekrana çizdirmiş olduk.
+
+315
+01:35:29,652 --> 01:35:55,212
+Burada bir şey ekledim ben. Mesela az önce biz bir görüntü madrisi okumuştuk. Balon.jpg diye. Bunu mesela ekrana ikisini birden getirmek istiyorum. Fakat subplot yaparken ne yaptım? Bakın dikkat edin. Subplot 1,2 dedim. Bu bir satır iki sütundan oluşacak ve ben birinci göze ilk çizimi yapacağım diyorum.
+
+316
+01:35:57,652 --> 01:36:21,652
+Okuduğum image matrisini koyuyorum. Yani balloon.jpg'i koyuyorum. Daha sonra plt subplot deyip yine bir satır iki sütundan oluşacak ve ikinci sütuna yazacağım görüntü ise bu defa bir renkli...
+
+317
+01:36:22,336 --> 01:36:41,576
+Görüntü madresini RGB to Gray fonksiyonu ile ne yapıyorum? Gray scale'e dönüştürüyorum. Bu, Psyc Image kütüphanesinin altında yer alan bir yine building function. Ben bunu kullanarak ne yapıyorum?
+
+318
+01:36:50,336 --> 01:37:18,336
+Onu ekrana getiriyorum. Fakat bunu imshow yaparken, bunu imshow yaparken şuna dikkat. Image grey dedikten sonra, yani ben bu görüntü matrisini imshow ile görüntüleyeceğim. Fakat grayscale imajları ekrana yazdırırken şu parametreyi yazarsanız eğer grayscale görebiliyorsunuz. Cmap eşit grey demeniz gerekiyor. Yani bir color map tarifi yapmanız gerekiyor. O zaman bunu...
+
+319
+01:37:18,336 --> 01:37:38,356
+grayscale olarak görüntüleyebiliyorsunuz. Ne yapmış olduk? Subplot ile bir satır iki sütun halinde bir çizimi aynı ekrana getirmiş olduk. Burada Color Image'i, yanda da bunun grayscale halini görüyorsunuz.
+
+320
+01:37:39,636 --> 01:37:55,616
+Evet, bitirdik. NumPy Tutorial'ı bu şekilde özetleyebilirim. Bana sorunuz var mıdır? Bilen, bilmeyen, ilk kez öğrenen olabilir. Hiç önemli değil. Bu tekrarı baştan vermiş olalım.
+
+321
+01:37:55,616 --> 01:38:06,616
+Önümüzdeki hafta sizden şunu istiyorum. Burada gördüğünüz örnekleri kendiniz mutlaka ya Google Colab kullanarak deneyin. Ama benim tavsiyem...
+
+322
+01:38:07,636 --> 01:38:16,736
+Bilgisayarınıza eğer uygunsa bilgisayarınız bir Anaconda kurun ve Jupyter Notebook'u kullanmaya başlayın.
+
+323
+01:38:16,736 --> 01:38:26,816
+Veya Spider olabilir. Yine Anaconda altında Spider bir şey, Python editörü orada yazabilirsiniz.
+
+324
+01:38:30,996 --> 01:38:37,435
+Haftaya kadar bu konuları bayağı bir hakim hale gelmenizi bekliyorum.
+
+325
+01:38:38,775 --> 01:38:39,996
+Soru var mı?
+
+326
+01:38:41,775 --> 01:38:45,895
+Hocam, bu yaptıklarınızı Avesiste paylaşmayı düşünüyor musunuz?
+
+327
+01:38:46,655 --> 01:38:52,076
+Dersin duvarında şey var ya, bu bir link paylaştım sizinle gördünüz mü?
+
+328
+01:38:52,076 --> 01:38:54,800
+Hocam, dersin duvarında derken...
+
+329
+01:38:54,800 --> 01:38:57,479
+Bu derste katıldığımız yer.
+
+330
+01:38:57,859 --> 01:39:04,279
+Evet, online Yıldız Edütr'nin altında ders duvarı diye bir şey var. Ben bütün paylaşımları oradan yapıyorum.
+
+331
+01:39:04,739 --> 01:39:05,460
+Tamamdır hocam.
+
+332
+01:39:05,971 --> 01:39:08,192
+Oradan indirebilirsiniz.
+
+333
+01:39:08,891 --> 01:39:09,931
+Hocam merhaba.
+
+334
+01:39:10,652 --> 01:39:11,351
+Merhaba [öğrenci].
+
+335
+01:39:11,351 --> 01:39:15,051
+O ders duvarından notları indiremiyorum ben.
+
+336
+01:39:15,471 --> 01:39:25,692
+Yer arkadaşlar da denedim bilmiyorum ama dökümanlar kısmından ders notları iniyor ama ders duvarından ben ne dökümanı görebiliyorum ne de indirebiliyorum.
+
+337
+01:39:26,931 --> 01:39:35,192
+Diğer arkadaşların da benzer bir sorunu var mı acaba? Ben geçen dönemde bütün ders notlarını ders duvarından paylaştım.
+
+338
+01:39:37,268 --> 01:39:39,068
+Ya sen indiremedim hocam.
+
+339
+01:39:40,007 --> 01:39:40,768
+Nasıl yapıldı?
+
+340
+01:39:41,007 --> 01:39:46,847
+İlk başta öyle bir sorun oldu bende de sonradan kendi internetimle girdiğimde düzelmiştim.
+
+341
+01:39:47,127 --> 01:39:53,387
+Hocam, Google Document Weaver kullanıyor orası. Ara ara kitlenebiliyor.
+
+342
+01:39:53,387 --> 01:40:01,028
+Yani aslında indirilebiliyor ama bazen Google Document Weaver'dan dolayı dosya yokmuş gibi gözüküyor.
+
+343
+01:40:01,471 --> 01:40:07,192
+Belli periyotlarla denemekte yarar var şu anda. Oraya ayrıca bir indir butonu koyulacak zaten.
+
+344
+01:40:07,992 --> 01:40:10,591
+[öğrenci], bak böyleymiş açıklama geldi.
+
+345
+01:40:12,011 --> 01:40:12,952
+Tamam hocam.
+
+346
+01:40:13,711 --> 01:40:16,211
+Evet, başka sorunuz var mıdır?
+
+347
+01:40:18,931 --> 01:40:46,931
+Haftalık programları, yani her hafta dersten önce oraya ben bir PowerPoint sunumu da ekleyeceğim zaten. Bu hafta sadece bir link paylaştım ders duvarında, görmüşsünüzdür. O link üzerinden benim anlattığım tüm bu konuları görebilirsiniz. Dediğim gibi bunları bir Jüpiter notbook üzerinde veya Spider'la kendiniz adım adım yazın, kendiniz yazın. İnanın kendiniz yazdığınızda daha kalıcı olacaktır.
+
+348
+01:40:46,931 --> 01:40:55,292
+Nasıl yazıyoruz? Sintaksta bir şeyleri atlamak adına böyle ilerlemenizi tavsiye ederim.
+
+349
+01:40:57,412 --> 01:41:08,172
+Evet, peki. 10 dakika daha ara veriyorum. Ondan sonra biraz görüntü dosyaları ve yapılarıyla ilgili bir ders daha yapacağım sizinle.
+
+350
+01:41:09,992 --> 01:41:11,431
+10 dakika ara.
+
+351
+01:51:24,819 --> 01:51:44,159
+Evet, tekrar başlıyoruz. Ben az önce saati 48 gördüm. Yani o yüzden ara vermem gerektiğini düşündüm. Fakat sonradan fark ettim ki erken bir ara vermişim. Neyse, şimdi devam edebiliriz.
+
+352
+01:51:47,923 --> 01:52:01,224
+Şöyle yapalım. Önce size bir tablet üzerinden tahtada bir şeyler anlatacağım. Arkasından tekrar slide ile devam edeceğim.
+
+353
+01:52:01,224 --> 01:52:04,224
+Bu whiteboard...
+
+354
+01:52:04,319 --> 01:52:13,479
+Online bir whiteboard uygulaması. Bu whiteboardda room kodunu alarak benim yazdıklarımı siz de takip edebilirsiniz.
+
+355
+01:52:14,919 --> 01:52:26,039
+Room kodu yukarıda gözüküyor şu anda. Tahtayı kullandığımda dediğim gibi yazdıklarımı ben sağ taraftaki push butonuna basarak tüm öğrencilere aktarabiliyorum.
+
+356
+01:52:26,039 --> 01:52:32,319
+Siz bunları pdf olarak kaydedebiliyorsunuz. Böyle de bir avantajı var. Bunun üzerinden biraz anlatacağım.
+
+357
+01:52:32,319 --> 01:52:53,319
+Şimdi görüntü matrisini yapısını mutlaka bilmeniz gerekiyor. Yani ben şunu görüyorum. Deep Learning'de framework kullanarak görüntü üzerinde...
+
+358
+01:52:55,731 --> 01:53:12,752
+Çok çeşitli işlemler yapabilen bir öğrenci bir görüntü madresini hiç açıp okumadan, ne bileyim bir RGB imic ya da grayscale imic nedir bilmeden işlem yapıyor ve bence bu çok sağlıklı bir yol değil.
+
+359
+01:53:19,444 --> 01:53:35,543
+Yapısını bilmemiz gerekiyor. O yüzden ben biraz konuya görüntü dosyaları ve buradaki yapılar hakkında bilgi vererek gideceğim. En basit şekliyle başlayalım. Önce Black and White Image diyelim.
+
+360
+01:53:36,543 --> 01:53:45,104
+Black and White Image dediğim zaman elimizde bir görüntü matrisi var.
+
+361
+01:53:46,228 --> 01:54:07,248
+Bu görüntü matrisinin içerisinde her bir pikselin bir bit ile kodlandığını görebiliriz. Yani bu bir piksel. Piksel başına bir bit düşüyor.
+
+362
+01:54:07,680 --> 01:54:23,360
+diyebiliriz. Şuraya bir bit diyelim. Her bir pikseli bir bitle kodlamak demek ya sıfır olur ya bir olur. Sıfırsa bu siyahtır. Bu piksel. Birse bu piksel beyaz demektir.
+
+363
+01:54:23,920 --> 01:54:31,360
+Bu Black and White Dimage yani hiçbir ara gri bir şey yok. Sadece piksellerin.
+
+364
+01:54:32,340 --> 01:54:47,120
+Siyah ya da beyaz olduğu durum. Nerede kullanılıyor? Fax makinesi gibi cihazlarda kullanılıyor. Bu Black and White Image formatı.
+
+365
+01:54:48,700 --> 01:54:51,680
+İkincisi Grayscale Image.
+
+366
+01:54:56,979 --> 01:55:03,920
+Grayscale Image dediğimiz zaman elimizdeki görüntü matrisi.
+
+367
+01:55:07,923 --> 01:55:30,684
+Her bir pikseli 8 bit ile kodlanıyor. 8 bit per piksel. Her bir bit 8 bit ile kodlandığı için sıfır siyahı gösterirken 255 beyazı gösteriyor.
+
+368
+01:55:34,676 --> 01:55:45,935
+Burada 0 ile 255 arasında uint 8, unsigned integer 8 bit yapısı.
+
+369
+01:55:46,387 --> 01:56:01,327
+Her bir pikseli kodlamak için kullanılıyor. Black and white image'de ise bu bir pikseli siyah ya da beyaz bir boolean değişken gibi de tutabilirsiniz.
+
+370
+01:56:02,327 --> 01:56:09,967
+Sadece bir bit kullanılıyor çünkü. Grayscale, şeyde, black and white image'de.
+
+371
+01:56:13,587 --> 01:56:24,347
+Evet, derse bağlananlar olmuş. Şimdi bir ikinci sayfaya geçelim. Colored Image var.
+
+372
+01:56:29,811 --> 01:56:54,411
+Renkli görüntü. Renkli görüntü ise, pardon, renkli görüntüde, elimizde bir görüntü, aslında üç tane matris var. Red, green ve blue paletlerinden oluşuyor.
+
+373
+01:56:56,115 --> 01:57:18,863
+Burada bir piksel 3 byte oluyor. Diğer bir değişle 24 bit per piksel diyebiliriz. Bu 3 byte'ın red, green ve...
+
+374
+01:57:18,863 --> 01:57:39,283
+Blue paletleri her bir palet için 8 bit. O yüzden 3 byte, o yüzden 24 bit oluyor. 3 color palet çarpı 8 bit olduğu için bu şekilde.
+
+375
+01:57:46,515 --> 01:57:56,275
+Bitmap Image File'da herhangi bir compression olmadığı için Bitmap Image'de,
+
+376
+01:57:56,275 --> 01:58:09,355
+BMP uzantılı görüntü dosyalarında ham haliyle saklanıyor ve bir tane de Reserved Byte kullanıyor.
+
+377
+01:58:10,036 --> 01:58:21,016
+BMP dosya. O yüzden aslında bir pikseli saklamak için 4 byte 32 bit kullanıyor.
+
+378
+01:58:24,819 --> 01:58:46,559
+Colored Image'de bitmap herhangi bir compression olmadığında dedik. Bir de Indexed Color Image dediğimiz bir dosya formatı daha var. Bu da Indexed Color.
+
+379
+01:58:50,579 --> 01:59:16,579
+Şöyle çalışıyor. Diyor ki, normalde Colored Image dediğimiz formatta 24 bit var dedik. Bir pikseli kodlamak için. Fakat aslında bu 24 bit ile 16 milyon farklı renk oluşturabiliyorsunuz.
+
+380
+01:59:17,524 --> 01:59:32,864
+Ve insan gözünün bu kadar rengi ve renk farkını algılama kapasitesi yok. O zaman neden biz bu kadar çok rengi tutmak için uğraşıyoruz?
+
+381
+01:59:33,619 --> 01:59:47,479
+Böyle bir şey yapmaya gerek yok diyor. Ve indexed color image de bir görüntü dosyasının içerisinde en çok kullanılan renkler neyse onlar sadece saklanıyor.
+
+382
+01:59:48,479 --> 01:59:58,019
+Peki bunu nasıl yapıyor? Şimdi bu bizim image matrisimiz.
+
+383
+01:59:58,019 --> 02:00:00,000
+Bu image matrisinin her...
+
+384
+02:00:00,000 --> 02:00:07,479
+Her bir pikseli için 8 bit kullanıyor. Her bir pikseli için.
+
+385
+02:00:08,199 --> 02:00:19,739
+Fakat Indexed Color Image'in file formatında bir file header var.
+
+386
+02:00:21,879 --> 02:00:25,199
+Ya da image header var. File header diyelim.
+
+387
+02:00:27,699 --> 02:00:51,579
+File Header tüm görüntü dosyalarında, işte bunun çözünürlüğü kaç satır, kaç sütun, bu bir color image mi yoksa grayscale mi? Bununla ilgili bilgiler tutuluyor File Header'ında.
+
+388
+02:00:55,796 --> 02:01:00,536
+Table geliyor ve arkasından Data kısmı geliyor.
+
+389
+02:01:04,051 --> 02:01:05,311
+Data kısmı geliyor.
+
+390
+02:01:07,011 --> 02:01:16,992
+Color Table'da ne tutuyor? Color Table kısmı şöyle bir Color Table'ımız var.
+
+391
+02:01:16,992 --> 02:01:28,912
+Bu Color Table 256 satırdan oluşuyor. 0'dan 255'e. Bu tablonun her bir satırında
+
+392
+02:01:29,108 --> 02:01:40,467
+Bu görüntüde en çok kullanılan renkler neyse onların renk kodları yer alıyor. Yani renk kodu derken red, green ve blue değerleri yer alıyor tutuluyor Color Table'da.
+
+393
+02:01:40,467 --> 02:01:43,467
+Bu tablonun...
+
+394
+02:01:48,500 --> 02:02:06,619
+Her bir satırında 24 bit, yani 3 byte tutuluyor. O nedenle ben bu görüntü madresinin içerisindeki her bir rengi, mesela şuradaki bir pikselin.
+
+395
+02:02:07,667 --> 02:02:18,827
+ne renk olduğunu bulmak için Color Table'ın indeksini kullanıyorum. Mesela diyorum ki Color Table'ın 25. satırındaki rengi kullandım diyorum. Buraya sadece 25 yazıyorum.
+
+396
+02:02:18,827 --> 02:02:33,767
+Yani aslında 8 bit ile kodluyorum ama bu 8 bit ile kodladığım sayı aslında bu tablonun indeksi oluyor. 0 ile 255 arasında olduğu için 8 bit ile kodlayabiliyorum.
+
+397
+02:02:35,667 --> 02:02:47,867
+25. satırdaki red-green-blue değerlerini alıyor ve bununla bu pikselin rengini oluşturuyor. Ne yapmış olduk? 16 milyon renkten.
+
+398
+02:02:48,404 --> 02:03:10,044
+256 renge inmiş olduk ama 256 tane renk de aslına bakarsanız bir renkli görüntüyü ifade etmek için yetiyor. O nedenle bu indexed color image dediğimiz görüntü formatı aslında bir compressed file formatı diyebiliriz.
+
+399
+02:03:12,595 --> 02:03:27,563
+Ama Compressed File formatı olarak, tabii JPEG gibi farklı görüntü formatları da var. Sıkıştırma formatları da var. JPEG dediğimiz sıkıştırılmış görüntü formatında...
+
+400
+02:03:28,724 --> 02:03:44,483
+Yine bir Color Quantization işlemi yapılıyor ve en çok kullanılan renklere daha kısa kod verilerek bir yapıda bir Compressed Image File üretebiliyoruz.
+
+401
+02:03:44,483 --> 02:03:54,403
+Ama sonuç olarak temelde bu dört tane formatı ve aralarındaki farkı bilmeniz gerekiyor.
+
+402
+02:03:55,956 --> 02:04:06,296
+JPEG dediğimiz görüntü, sıkıştırılmış görüntü formatında kayıplı bir görüntü sıkıştırma işlemi yapılıyor.
+
+403
+02:04:06,296 --> 02:04:15,956
+JPEG için, bir JPEG Image Compression için.
+
+404
+02:04:21,716 --> 02:04:29,356
+Bir Luzi Compression söz konusu.
+
+405
+02:04:30,796 --> 02:04:49,116
+Yani orijinal renkler mutlaka bozuluyor ve bozulan ve kompres edilmiş yeni renk bileşenlerinden orijinaline geri dönüş söz konusu değil.
+
+406
+02:04:50,292 --> 02:05:02,012
+JPEG'le kompres ettiğiniz bir dosyanın artık kalitesini oldukça düşürdünüz. Artık oradan orijinal görüntüye geri dönüş mümkün değil.
+
+407
+02:05:02,012 --> 02:05:08,292
+O yüzden genelde tıbbi görüntülerle vesaire ile çalışırken,
+
+408
+02:05:08,591 --> 02:05:17,711
+Fazla compression işlemi yapılmaz ve TIF dediğimiz uzantılı dosyalar daha çok kullanılır.
+
+409
+02:05:19,071 --> 02:05:24,551
+Tıbbi görüntülerde TIF dosya formatı daha çok kullanılır.
+
+410
+02:05:27,743 --> 02:05:48,603
+Tomografi ya da MR görüntülerinde gördüğümüz bir D-com file formatı var. Bunlar tıbbi görüntülerde kullanılıyor. Bu D-com file formatı ise bir pikseli 16 bitte.
+
+411
+02:05:56,948 --> 02:06:08,467
+Bir yapıda tutuyor. Ne yaptı? Bakın 8 bitten 16 bite genişledi. uint 8 idi. Burada uint 16 kullanılıyor.
+
+412
+02:06:08,595 --> 02:06:29,355
+Neden? Çünkü hassasiyetin grayscale'de daha yüksek olması gerekiyor. Oradaki her bir gri tonlama hastalıkla ilgili bir bilgi taşıyor olabilir. O nedenle bu tür görüntülerde bir pikseli 8 bit yerine 16 bit grayscale ile tutabiliyoruz.
+
+413
+02:06:36,595 --> 02:07:03,755
+O yüzden bu bilgiyi vermek istedim başta. Bu konuda proje yapan, çalışan arkadaşlara bu tür sorular geldiğinde bence herkesin çalıştığı görüntü veri tabanı hakkında bir iki bir şey söyleyebilmesi gerekiyor. Bunları burada anlatmış olalım. Sorunuz var mıdır buraya kadar?
+
+414
+02:07:08,851 --> 02:07:26,220
+Hocam, bu renk kalitesiyle alakalı bazı monitörlerde farklı fiyata satılanlar oluyor. Yine bununla mı alakalı? Gösterdiği renk %100 doğru renk olamıyormuş ve tasarımcılar bunu kullanmıyordu genelde gördüğüm kadarıyla. Acaba bu bahsettiğiniz...
+
+415
+02:07:26,355 --> 02:07:49,636
+Bence ekran çözünürlüğü orada daha çok önem kazanıyor olabilir. Tabii görüntüleme de önemli. Ama burada benim bahsettiğim konu bizim daha çok diskte nasıl sakladığımızla alakalı bunu. Yani o yapıyı burada vurgulamak istedim. Ekran kalitesi anlamında o bambaşka bir teknoloji.
+
+416
+02:07:51,220 --> 02:08:05,644
+Bu bambaşka bir teknoloji. Ama çalıştığımız platforma göre, dediğim gibi mesela tıbbi görüntülerde hassasiyet daha yüksek oluyor. İşte ne bileyim normal bir…
+
+417
+02:08:06,515 --> 02:08:19,055
+Nesne tanıma işleminde belki JPEG görüntü kullanabiliyoruz ama bir başka platformda JPEG sıkıştırılmış dosya formatı çok da tercih etmeyebiliyoruz.
+
+418
+02:08:19,572 --> 02:08:45,072
+Ama JPEG'de bize çok büyük bir avantaj sağlıyor. Yani inanılmaz bir sıkıştırma performansı var. Yani bir BMP dosyayla JPEG dosya arasındaki farkı, sıkıştırma işleminin kalitesine de bağlı olarak nasıl değiştiğini uygulamalarda zaten göstereceğim. Bunlara dikkatinizi çekmeye çalışacağım özellikle.
+
+419
+02:08:46,003 --> 02:08:47,844
+Evet, başka sorunuz var mı?
+
+420
+02:08:48,043 --> 02:08:48,923
+Teşekkürler hocam.
+
+421
+02:08:49,403 --> 02:08:49,884
+Rica ederim.
+
+422
+02:08:54,579 --> 02:08:59,940
+Peki, o zaman şöyle hemen şuradan devam edelim.
+
+423
+02:09:02,840 --> 02:09:09,800
+Şimdi bu slide biraz uzunca, o yüzden buna giriş yapalım. Haftaya da bunda devam edeceğiz.
+
+424
+02:09:11,520 --> 02:09:18,520
+Image Understanding konusu aslında bu hafta anlattığımız konu. Biraz onun üzerinden konuşacağım.
+
+425
+02:09:21,844 --> 02:09:23,844
+Az önce...
+
+426
+02:09:25,235 --> 02:09:38,835
+Python'da bir cat.jpg dosyasını açtığımızda görüntünün sol üst köşesinin sıfıra sıfır koordinatını gösterdiğini söylemiştim.
+
+427
+02:09:38,835 --> 02:09:45,595
+Ve işte görüntü içerisindeki her bir piksel bu matris içerisinde kaçıncı satır, kaçıncı sütuna geliyor.
+
+428
+02:09:53,235 --> 02:10:13,323
+Bu örneğe bakalım.
+
+429
+02:10:14,387 --> 02:10:25,327
+Farklı kütüphanelerle de bir image dosyası açıp okuyabilirsiniz. Burada ben Psyc Image kütüphanesiyle bunu açmayı gösterdim az önce derste size.
+
+430
+02:10:26,228 --> 02:10:31,327
+Psyc Image Import I.O. dediğimiz zaman bir...
+
+431
+02:10:31,891 --> 02:10:51,771
+JPEG görüntü veya uzantısı her neyse, Dikomu okuyor mu ondan çok emin değilim ama standart görüntü formatlarını bu şekilde okuyabiliyoruz. Daha sonra bir image matrisi üzerinde proses, bir işlem yapabiliyoruz.
+
+432
+02:10:52,271 --> 02:10:59,891
+Okuduğumuz image matrisinin az önce gördük minimum, maksimum değeri nedir ekranda görüntülemiştir.
+
+433
+02:10:59,891 --> 02:11:17,411
+Daha sonra bunu yine ekranda imshow ile bu matrisi bir resme dönüştürmüştük. Bu matris üzerinde neler yapabiliriz? Image matrisi üzerinde resize işlemi yapabiliriz.
+
+434
+02:11:17,876 --> 02:11:42,276
+Flip, yani ters çevirme işlemi yapabiliriz. Crop, yani görüntü matrisinin içerisinden belli bir bölgeyi, mesela ben burada rose.tif diye bir görüntü matrisim vardı. Bunun içerisinden belli bir bölgeyi crop ettim. Daha sonra bunu flip ettim, yani döndürdüm ve ekranda görüntüledim.
+
+435
+02:11:43,252 --> 02:11:53,012
+Bu şekilde işlemleri aslında basit matriz işlemlerini, matriz slicing işlemlerini kullanarak yapabilirsiniz.
+
+436
+02:11:53,012 --> 02:12:05,232
+Ama bu işlemleri böyle yapmak yerine tabii yine hazır building functions fonksiyonlarını kullanarak da yapabiliriz.
+
+437
+02:12:05,332 --> 02:12:09,452
+Mesela burada rescale diye hazır bir fonksiyonumuz var.
+
+438
+02:12:11,252 --> 02:12:28,252
+Bu işlemleri hazır fonksiyon yardımıyla da yapabiliriz. Sizden ricam bu slide'larda gördüğünüz her bir Python kodunu...
+
+439
+02:12:28,591 --> 02:12:42,032
+Denemeniz ve işte crop için, flip için slicing işlemlerini, sadece basit matris dilimleme işlemlerini kullanarak yapmanızı isteyeceğim.
+
+440
+02:12:42,152 --> 02:12:53,011
+Mesela bunu ters çevirmek için matrisin eksi birinci gözünden birinci gözüne doğru diye eksi birlik steplerle matrisi tarayabilirsiniz.
+
+441
+02:12:53,011 --> 02:12:56,591
+Ters çevirmek için. Bu matrisin içerisinde.
+
+442
+02:12:56,591 --> 02:13:23,572
+İçinden belli bir alanı kesebilirsiniz. İşte imicin size'ını biliyorsunuz. X ekseninde 3'te 1, Y ekseninde 3'te 1'den başlayarak işte ne bileyim 3'te 2'lik bir alanı içinden crop edebilirsiniz. Bakın hiç sayısal bir değer vermeden sadece oran vererek giderek bu şekilde bir bölgeyi crop edebilirsiniz.
+
+443
+02:13:24,564 --> 02:13:37,344
+Bunları çalışmanızı istiyorum. Sonra proses ettiğimiz bir görüntüyü kaydedebiliriz. Herhangi bir işlem yaptık. Bu imici artık bir klasöre kaydetmek istiyoruz.
+
+444
+02:13:52,819 --> 02:14:04,500
+Bu şekilde bu imice imshow nerede imsave işlemi ile kaydedebiliyorum.
+
+445
+02:14:07,828 --> 02:14:19,968
+İmci İmri ile okuduk önce. Burada önce okuma işlemi ve arkasından da bunu yeni bir isimle yeni JPEG diye kaydedebiliyorum. Burada JPEG ile şunu deneyebilirsiniz.
+
+446
+02:14:20,748 --> 02:14:35,048
+JPEG olarak görüntüyü kaydederken Quality Factor diye bir parametre girebiliyorsunuz. Quality 20, 40, 60, 80 gibi değerler vererek
+
+447
+02:14:35,828 --> 02:14:53,128
+Kaliteyi düşürdüğümde ne oluyor? Arttırdığımda ne oluyor? 0 ile 100 arasında değer verebiliyorsunuz. Bu durumda hem elde ettiğiniz görüntüyü hem de disktene kadar yer tuttuğunu karşılaştırarak bir çalışma yapmanızı isteyeceğim.
+
+448
+02:14:53,128 --> 02:15:01,548
+Python'da bu satırdaki 20 değerini değiştirerek bunları görebilirsiniz.
+
+449
+02:15:03,764 --> 02:15:14,304
+Sonra elimizde bir, ben bu test görüntülerini de sizinle paylaşacağım. Ortak bir test görüntü kütüphanemiz olsun diye.
+
+450
+02:15:16,404 --> 02:15:32,984
+Bir RGB görüntünün tüm renk kanallarını ayrı ayrı inceleyebiliriz. Burada image matrisinin kaç satır, kaç sütun ve kaç renk paletinden oluştuğunu gösteren
+
+451
+02:15:34,047 --> 02:15:59,568
+Üç boyut var. Bu üçüncü boyut bize renk paletini gösteriyordu. Sıfır, kırmızı, bir yeşil ve iki mavi paletteki bileşenleri ayrı ayrı bir grayscale image gibi kaydedip daha sonra bunları bir subplot 1,4 deyip
+
+452
+02:15:59,760 --> 02:16:22,119
+Bir satır dört sütundan oluşacak şekilde bir subplot alanı içerisinde her bir paletin red, green ve blue paletinin ayrı ayrı bir grayscale imiç gibi görüntüsünü ekrana getirebilirim.
+
+453
+02:16:22,440 --> 02:16:27,380
+Bunu da yine uygulama olarak yapmanızı tavsiye edeceğim.
+
+454
+02:16:28,916 --> 02:16:42,315
+Az önce verdiğim örnekte vardı. RGB bir imici, grayscale bir imici, yani parlaklık değerine sadece dönüştürmek için bir dönüşüm formülü var aslında.
+
+455
+02:16:42,995 --> 02:16:56,436
+Kırmızı bileşen 0.21 ile yeşil bileşen 0.71 ile ve mavi bileşen 0.07 gibi bir değerle çarpılarak bir intensity değeri elde ediliyor.
+
+456
+02:16:56,915 --> 02:17:21,876
+Bu işlemi biz tabii ki istersek matrisin her bir pikseli için bu işlemi yaparak bu dönüşümü elde edebiliriz. Burada dikkatinizi çekeceğim şey mesela yeşil palet yüzde yetmiş bir etkili. Bu kat sayılar.
+
+457
+02:17:23,123 --> 02:17:51,123
+İnsan gözünün hangi renge daha duyarlı olduğunun da aslında bir göstergesi. Bu kat sayıların toplamı bir ediyor. Bu bir normalizasyon gibi düşünebilirsiniz. Yeşil palet %71 kadar bir ağırlık sahibiyken, mavi palet gözünün en az duyarlı olduğu renk olduğu için %7 kadar bir ağırlığa sahip ve bu şekilde bir intensity de.
+
+458
+02:17:51,123 --> 02:17:52,164
+Bu formülle elde ediliyor.
+
+459
+02:17:53,343 --> 02:17:59,644
+Ve işte bir RGB imici, grayscale imice dönüştürebiliyorum ben bu formülle.
+
+460
+02:17:59,644 --> 02:18:00,644
+Ama...
+
+461
+02:18:02,164 --> 02:18:15,484
+Derste de gördünüz. Psyc Image kütüphanesinin altında RGB to Gray diye hazır bir fonksiyon var. Ben bunu kullanarak da bu dönüştürme işlemini yapabiliyorum.
+
+462
+02:18:15,484 --> 02:18:21,984
+Ve ekrana Grayscale bir image olarak bunu getirebiliyorum.
+
+463
+02:18:27,059 --> 02:18:40,879
+Neighborhood of a Pixel, dedik ki bir görüntü matrisinin orijini sol üst köşedir. Buna göre ben her bir pikselin çevresinde bunun komşularını biliyorum.
+
+464
+02:18:55,059 --> 02:19:01,219
+İşte nedir? Kuzey Doğu, Kuzey Batı gibi yönlerle de tarif edilir.
+
+465
+02:19:01,219 --> 02:19:14,599
+Ve sonuçta bir pikselin 8 tane komşusu ile 3'e 3'lük bir matriz formunda bu alanı tarif edebiliriz.
+
+466
+02:19:14,739 --> 02:19:20,599
+Buna spatial domain deniyor. Yani konum bilgisi, yer bilgisi tutmuş oluyor bu.
+
+467
+02:19:24,884 --> 02:19:34,783
+Elimizdeki bir görüntü üzerinde parlaklık değerlerini dönüştürme işlemi yapabiliriz.
+
+468
+02:19:34,863 --> 02:19:37,583
+Intensity Transformation dediğimiz işlem.
+
+469
+02:19:38,504 --> 02:19:41,644
+Parlaklık değerlerini dönüştürme işini...
+
+470
+02:19:42,675 --> 02:20:08,835
+Farklı şekillerde yapabiliyoruz. Bunun bir yolu, burada gördüğümüz gibi Intensity Transformation Functions dediği belli fonksiyonlardan yararlanarak bunu yapabiliyoruz. Bu fonksiyonlar burada grafik olarak gösterilmiş. Yatay eksen input intensity gösteriyor. Giriş parlaklık değerlerini gösteriyor. Dikeyde ise output intensity value var.
+
+471
+02:20:10,515 --> 02:20:27,795
+Yatay eksen R ile gösterilmiş, dikeyde S ile gösterilmiş. S eşit transform of R diyor. R'nin belli bir dönüştürme fonksiyonundan sonraki değeri bize S'yi verecek.
+
+472
+02:20:37,780 --> 02:20:40,479
+Bir piksel o kadar
+
+473
+02:20:40,884 --> 02:20:57,603
+Koyu renktir. Yani burada dark olarak belirtilmiş. Çünkü siyaha yakın olmuş oluyor. Sağ tarafa doğru gittikçe light yani beyaza yakın oluyor. Aydınlık bir renk olduğu anlamına geliyor.
+
+474
+02:21:08,884 --> 02:21:34,224
+Hangi parlaklık değerine dönüştürüleceğini hesaplayabilirim. Neye ihtiyacım var? Bu transformation function dedim. Fonksiyona ihtiyacım var. Bu fonksiyon bir matematiksel fonksiyon sonuçta ve bu fonksiyon yardımıyla x'i biliyorsam eğer, fonksiyonu biliyorsam eğer y değerini hesaplayabiliyorum.
+
+475
+02:21:36,628 --> 02:21:46,427
+Sağda gördüğümüz Transformation Function ne iş yapar sizce? Neye benziyor?
+
+476
+02:21:49,108 --> 02:21:58,727
+Hocam, sınıflandırılmada kullanılan Sigmoid Function diye bir şey var. Ya tamamen siyah ya da tamamen beyaz yapan bir şeye benziyor.
+
+477
+02:21:58,727 --> 02:22:00,828
+Evet, evet.
+
+478
+02:22:01,492 --> 02:22:08,172
+Tabii sigmoidlere kadar gitmeyelim. Onlar ayrı bir konu. Evet, benziyor mu? Benziyor peki.
+
+479
+02:22:08,852 --> 02:22:10,051
+Threshold değil mi?
+
+480
+02:22:10,772 --> 02:22:16,172
+Thresholding Function. Sağ tarafta bunun Thresholding Function olduğunu yazıyor ama yaptığı iş şu.
+
+481
+02:22:16,752 --> 02:22:22,832
+Girişte ben Grayscale bir image var elimde. 0 ile 255 arasında. Bütün gri tonlar var içinde.
+
+482
+02:22:23,412 --> 02:22:27,852
+Ne yapıyor? Bakın K'ya kadar olan tüm değerleri neye çeviriyor?
+
+483
+02:22:30,611 --> 02:22:33,771
+K'ya kadar olan tüm değerleri outputta neye dönüştürmüş?
+
+484
+02:22:33,791 --> 02:22:35,111
+Siyaha dönüştürmüyor mu hocam?
+
+485
+02:22:35,231 --> 02:22:38,011
+Siyaha dönüştürmüş, evet. Yani sıfır yapmış.
+
+486
+02:22:40,251 --> 02:22:44,251
+Konstrat çıkarmıyor mu hocam? Karşılıklık için oluşturulmuyor mu bu?
+
+487
+02:22:44,659 --> 02:22:58,879
+Burada yaptığı tek şey black and white image üretiyorsunuz. Bakın, thresholding işlemi dediğimizde o yani zaten. Ben 0-255 arasında bana verilmiş olan grayscale bir imici.
+
+488
+02:22:59,327 --> 02:23:06,047
+Binary image'e dönüştürmek istiyorsam eğer, burada gördüğüm gibi bir threshold değeri seçiyorum, k değeri seçiyorum.
+
+489
+02:23:06,047 --> 02:23:16,087
+Ve bu k'dan küçük olan tüm değerleri, k'ya kadar olan tüm değerleri sıfır, k'dan büyük olan tüm değerleri de bir yaparak ne yapmış oluyorum?
+
+490
+02:23:16,307 --> 02:23:19,167
+Siyah-beyaz bir görüntü elde etmiş oluyorum.
+
+491
+02:23:21,620 --> 02:23:27,000
+Evet, bu mesela Intensity Transformation için güzel bir örnek burada.
+
+492
+02:23:27,760 --> 02:23:33,100
+Geçen hafta konuşmuştuk, Intensity Transformation Curves dediğimiz eğriler var.
+
+493
+02:23:33,220 --> 02:23:37,180
+Bu eğrilerden faydalanarak dönüştürme işlemi yapılıyor.
+
+494
+02:23:37,959 --> 02:23:44,920
+Mantık aynı, yatayda gördüğümüz eksen, Input Intensity Level R demiş.
+
+495
+02:23:45,567 --> 02:23:50,628
+Dikeyde ise ne verilmiş? Output Intensity Level S demiş.
+
+496
+02:23:51,807 --> 02:23:58,407
+Sonuçta ikisinin de skalası 0 ile L-1 arasında değişiyor.
+
+497
+02:23:59,572 --> 02:24:14,691
+Sıfırla L-1 arasında değişiyor. Bunu şöyle düşünebilirsiniz. Bu 0-255 arasında değişiyor veya normalize edilmiş bir değer ise 0-1 arasında değişiyor gibi de düşünülebilir.
+
+498
+02:24:14,691 --> 02:24:23,132
+Sonuçta bu eğirler yardımıyla görüntü üzerinde istediğimiz dönüşümleri gerçekleştirebiliyoruz.
+
+499
+02:24:25,716 --> 02:24:52,576
+Şu gördüğümüz eğri negatifini almamızı sağlıyor. Linear şu identity yazan birebir aynısını veriyor. Giriş görüntüsünün aynısını üretiyor çıkışta. Log dediği function ne iş yapıyor acaba? Bunu sanki geçen hafta konuşmuştuk. Görüntü üzerindeki etkisi görüntüyü daha aydınlık mı yapıyordu, karanlık mı yapıyordu? Ne dersiniz?
+
+500
+02:24:53,556 --> 02:24:55,216
+Log Function şu.
+
+501
+02:25:00,340 --> 02:25:02,959
+Aydınlatmıyor muydu hocam görüntüyü daha fazla?
+
+502
+02:25:03,500 --> 02:25:05,860
+Evet, aydınlatıyor. Nereden vardın bu konuya?
+
+503
+02:25:07,860 --> 02:25:12,040
+0 siyah oluyor, F255 de beyaz oluyor normal skalada.
+
+504
+02:25:12,540 --> 02:25:15,459
+Geçen haftaki örneğinizde L bölü 2'den almıştık örneği.
+
+505
+02:25:15,459 --> 02:25:23,880
+L bölü 2'den gidiyorum, eğriyi kestirdiğim noktaya bakıyorum ve onun nereye düştüğüne bakıyorum.
+
+506
+02:25:24,752 --> 02:25:34,512
+Ondan sonra eğer 255'in üzerindeyse, yani 127'nin üzerindeyse beyazlatıyordu. R altındaysa da onu siyaha dönüştürüyordu.
+
+507
+02:25:34,512 --> 02:25:51,731
+Evet, güzel. Teşekkür ediyorum. Log Function'ın etkisi, tam skalanın, giriş eksenindeki skalanın ortasındaki bir değeri alıyorum. L bölü 2'yi. Bunun nereye taşındığına bakıyorum. Neye dönüştürmüş L bölü 2'yi?
+
+508
+02:25:52,752 --> 02:25:59,952
+Tam ortadaki parlaklık değerini ortalamanın üstüne mi taşımış, altına mı taşımış? Ona bakıyorum.
+
+509
+02:25:59,952 --> 02:26:07,952
+L bölü 2'yi log function ile kestirdiğimde vardığı nokta...
+
+510
+02:26:08,772 --> 02:26:10,992
+Özür dilerim.
+
+511
+02:26:13,683 --> 02:26:41,664
+Vardığı nokta L'ye yakın olduğu için ya da 255'e yakın olduğu için daha aydınlık bir görüntü elde ediyor diyebiliriz, oluşturuyor diyebiliriz. Bu Intensity Transformation Curves diye geçiyor. Her eğrinin farklı bir etkisi var. Bunları eğrileri inceleyerek nasıl bir etkisi olduğunu söyleyebilmeniz gerekiyor. Yani sizden böyle bir beklenti içinde.
+
+512
+02:26:41,683 --> 02:27:00,943
+Burada Gamma Curves dediğimiz bir Gamma eğrileri verilmiş. Bakın S eşittir C çarpı R üzeri Gamma.
+
+513
+02:27:05,808 --> 02:27:15,308
+Gamanın birden büyük olduğu durumlardaki eğriler burada verilmiş. Gamanın birden küçük olduğu durumlardaki eğriler burada verilmiş.
+
+514
+02:27:15,308 --> 02:27:26,468
+Seçtiğiniz gamma fonksiyonuna göre görüntü üzerinde aydınlatma ya da karartma yönünde etki elde edebiliyorsunuz.
+
+515
+02:27:30,355 --> 02:27:36,076
+Burada 1 ile normalize edilmiş R değerleri kullanılır. Ona lütfen dikkat.
+
+516
+02:27:38,136 --> 02:27:43,695
+Ve Intensity Transformation için bir örnek, ilginç bir örnek.
+
+517
+02:27:46,355 --> 02:28:01,415
+Şekil A, B, C, D. Dört tane şekil var gördüğünüz gibi. A'da verilmiş olan görüntü bir MR görüntüsü ve omurga üzerinden alınmış bir MR görüntüsü.
+
+518
+02:28:01,655 --> 02:28:13,835
+Diyor ki bu görüntü oldukça karanlık ve şu arka tarafta karanlık olan bölgedeki detaylar algılanamıyor diyor. Bu karanlık olan görüntüyü aydınlatmak için
+
+519
+02:28:14,355 --> 02:28:26,575
+Gamma Curve için az önceki gördüğümüz gamma eğrilerinden aydınlatma etkisi olan eğriler, gamanın birden küçük olduğu eğrilerdir.
+
+520
+02:28:26,575 --> 02:28:31,575
+Bunları kademeli olarak seçip...
+
+521
+02:28:32,755 --> 02:28:46,736
+Görüntü üzerinde bir aydınlatma etkisi oluşturuyor ve omurganın şu arka bölümünde görünmeyen detayları daha görünür hale getirebiliyor.
+
+522
+02:28:46,736 --> 02:29:00,736
+Ne yapmış? Gamayı önce 0.6 almış, 0.4 almış, 0.3 almış ve aynı görüntüyü bu şekilde bir dönüşümden geçirerek...
+
+523
+02:29:00,755 --> 02:29:06,315
+Daha anlaşılır, detayları görünebilir forma getirmiş.
+
+524
+02:29:09,012 --> 02:29:30,412
+Bir başka örnek, bu defa tersine bir problem var burada. Bir aerial image var burada. Hava fotoğrafı, yani bir uçaktan alınmış bir yeryüzü fotoğrafı olabilir. Bu fotoğrafta patlamış bir görüntü, çok aydınlık bir görüntü. Bunu ne yapmış?
+
+525
+02:29:33,520 --> 02:29:47,540
+Karanlık hale getirmesi gerekiyor. Bu fazla aydınlık bir görüntü. O yüzden gamanın birden büyük olduğu değerler için, 3, 4 ve 5 değerleri için intensity transformation işlemi yapılmış.
+
+526
+02:29:50,240 --> 02:30:00,520
+Evet, konularımız böyle. Bundan sonraki kısmı haftaya bırakalım. Bu kısmı bit, plane...
+
+527
+02:30:01,075 --> 02:30:15,556
+Slicing işlemi basit bir işlem. Aslında çok önemi tartışılır ama biraz görüntü matrisleriyle böyle artık oynayabilmeniz gerekiyor. O yüzden bu işlemleri anlatacağım.
+
+528
+02:30:27,796 --> 02:30:45,716
+Biti, en düşük anlamlı bitten en yüksek anlamlı bite kadar sıraladığımızda bunlar bir bit plane oluşturuyor. En düşük anlamlı bit, içinde en fazla gürültünün olduğu bittir.
+
+529
+02:30:46,355 --> 02:31:02,615
+Most Significant Bit dediğimiz en yüksek anlamlı bit ise en fazla bilginin taşındığı bittir. Dolayısıyla bunları burada görüntülemiş. Mesela bir 100 dolar. 100 doların burada bir görüntüsü var.
+
+530
+02:31:03,760 --> 02:31:17,319
+En düşük anlamlı bitten başlayarak bit plane'lerini almış. En yüksek anlamlı bit gördüğünüz gibi orijinal görüntüye en fazla benzeyen, içinde en fazla bilgi taşıyan plane.
+
+531
+02:31:18,760 --> 02:31:28,220
+İşte sırasıyla bunları görebiliyorsunuz. En düşük anlamlı bit, tekrar söylüyorum, içinde en fazla gürültü barındıran bittir.
+
+532
+02:31:30,703 --> 02:31:43,683
+Mesela size şöyle bir küçük egzersiz. Az önce dedim ki, Jupiter Python'da artık bu görüntü dosyası açma vesaire işlemlerini yapabilmeniz gerekiyor.
+
+533
+02:31:43,683 --> 02:31:56,523
+Bu 100 dolar görüntüsü için burada gördüğümüz bitplaneleri oluşturabilirsiniz. Mesela bu 500 çarpı 1192 pikselden oluşan.
+
+534
+02:31:56,852 --> 02:32:10,112
+Grayscale bir imiç. Bakın görüyorsunuz 8 bit grayscale imiç diyor. Bu 8 bitlik grayscale imicin her bir bit play'ini ayrı ayrı görüntüleyebilirsiniz.
+
+535
+02:32:10,112 --> 02:32:19,051
+Küçük egzersizler bu işi öğrenmek ve basit görüntü matrisleriyle işlem yapmanız için.
+
+536
+02:32:20,435 --> 02:32:37,775
+Önereceğim işlemler. Bana teslim etmeniz gerekmiyor. Sadece bu şeyi yaptıklarımızı içselleştirebilmeniz için bunları ufak ufak denemenizi istiyorum. Böylece Python'a da daha alışmış olursunuz.
+
+537
+02:32:42,195 --> 02:32:47,815
+Evet, bu hafta ikinci haftaydı. İkinci hafta size...
+
+538
+02:32:47,827 --> 02:33:01,768
+Kısaca NumPy kütüphanesini ve Python'da görüntü dosyası nasıl açılır, nasıl okunur, nasıl kaydedilir bunları anlattım. Arkasından görüntü dosyaları hakkında bilgi verdim.
+
+539
+02:33:03,148 --> 02:33:14,707
+Haftaya basit filtrelerle artık görüntü üzerinde filtreleme işlemlerini göreceğiz. Yani konvolüsyon filtreleri ve bunların etkilerini.
+
+540
+02:33:15,059 --> 02:33:28,720
+Basit de örneklerle önce yine tahtada bir konvolüsyon işleminin nasıl çalıştığını anlatacağım. Arkasından da Python'da bunları nasıl yaptığımızı göreceğiz.
+
+541
+02:33:30,739 --> 02:33:34,299
+Sorunuz var mı bu haftaki konularla ilgili?
+
+542
+02:33:36,691 --> 02:33:47,531
+Hocam konuyla ilgili değil de bir arkadaş dokümanları indiremediğini söylemişti ya. Ben de tekrar kontrol ettim. Ben de indiremiyorum. Açıklama yapılmıştı ama PowerPoint'i göremiyorum da ayrıca.
+
+543
+02:33:47,791 --> 02:33:49,412
+PowerPoint'i henüz koymadım.
+
+544
+02:33:49,771 --> 02:33:52,131
+Yok, önceki. Önceki PowerPoint'i.
+
+545
+02:33:53,171 --> 02:33:59,831
+Ben az önce denedim. Görüntüleyebildim. Dediğim gibi anlık bir takılma oluyor orada Google dokümandan dolayı.
+
+546
+02:34:00,471 --> 02:34:01,191
+Tamam, bakalım.
+
+547
+02:34:03,316 --> 02:34:12,316
+Evet, [öğrenci]'den yetkili bir arkadaşımız. Derste olması ne güzel bir...
+
+548
+02:34:12,316 --> 02:34:15,536
+Hocam bunu söylemeyi hiç tercih etmiyordum ben.
+
+549
+02:34:15,536 --> 02:34:31,276
+Evet, bakın sistemle ilgili mevcut problemleri biliyorlar. Dönem dönem sıkıntılar olabilir ama dosyayı daha sonra bir deneyin bakalım. Haftaya kadar indirirsiniz diye ümit edeyim.
+
+550
+02:34:31,316 --> 02:34:51,616
+Tamam, teşekkürler. Rica ederim. Evet, başka sorunuz var mıdır? Bir dakika, chatten bir soru varmış. Firefox'da göremiyorken Chrome ile görebilmiştim, emin değilim ama browser özelinde sorun olabilir belki de.
+
+551
+02:34:51,616 --> 02:34:55,015
+Yaptım hocam, chat bölümünden dosyayı gönderdim.
+
+552
+02:34:55,603 --> 02:34:59,183
+Geçen haftaki sunumunuzu.
+
+553
+02:35:00,644 --> 02:35:05,623
+Evet, güzel. Bu haftaki sunumu da ben göndereyim o zaman.
+
+554
+02:35:07,703 --> 02:35:08,923
+Hemen atıyorum.
+
+555
+02:35:18,772 --> 02:35:24,212
+Python şunu. Yani daha doğrusu bu haftaki PowerPoint bu.
+
+556
+02:35:32,051 --> 02:35:37,651
+Bir de size linkini paylaşmıştım. Onu hemen paylaşabilirim.
+
+557
+02:35:45,108 --> 02:35:47,548
+Ders duvarında olması lazım.
+
+558
+02:36:18,772 --> 02:36:34,072
+Hocam ben de bir şey soracaktım. Avicis'te sizin sayfamıza duyurular kısmında öğrenci görüşme sahipleri vardı. Orada da mail adresiniz vardı, Yıldız maili. Ben de bir şey görüşmek istiyordum sizinle. Yıldız mailinize mail attım ama görmediniz sanırım.
+
+559
+02:36:34,579 --> 02:36:40,260
+Kullanmıyor musunuz ya da görüşebiliyor muyuz? Orada çarşamba günü 10-10 arası yazmışsınız ama.
+
+560
+02:36:40,340 --> 02:36:50,940
+Doğru, doğru. Evet, o günleri spam'e düşmüş olabilir. Çokça oluyor galiba, bilmiyorum. Ben de spam'i çok sık kontrol etmiyorum.
+
+561
+02:36:52,579 --> 02:36:59,299
+Tekrar şeyi, bir dakika size hemen Gmail'imi de vereyim.
+
+562
+02:37:00,180 --> 02:37:01,399
+Ben de onu soracaktım.
+
+563
+02:37:06,036 --> 02:37:08,835
+Hocam, Yıldız Mail'de iki gündür bir sıkıntı var.
+
+564
+02:37:09,536 --> 02:37:20,155
+Geç de geliyor bazen. Mesela ben ders linkini bir geçen hafta [öğrenci]'ye göndermiştim. Ders bittikten sonra akşam saati eline geçti. Yani iş işten geçmişti.
+
+565
+02:37:20,216 --> 02:37:24,835
+Az önce görüştük. 160 bin mail kuyrukta bekliyordu şu anda.
+
+566
+02:37:25,335 --> 02:37:32,076
+Doğrudur. Evet, Gmail'i de bu şekilde paylaşmış oldum sizinle. Oradan da haberleşebiliriz.
+
+567
+02:37:34,195 --> 02:37:51,915
+Evet, yani konular çok keyifli. Ben bu dersi anlatmaktan çok keyif alıyorum. Umarım siz de benim kadar keyif alırsınız bu işlerden. Çünkü çok gelecek vaat eden şeyler. Temelinden başlayıp yavaş yavaş tuğlaları üst üste koyarak ilerleyeceğiz.
+
+568
+02:37:51,915 --> 02:38:02,195
+Ve dönemin sonu geldiğinde bayağı bir şey öğrendiğinizi fark edeceksiniz. Ama bunları mutlaka denemenizi istiyorum. Tekrar söylüyorum haftaya derse gel.
+
+569
+02:38:02,195 --> 02:38:11,896
+Gelene kadar bu hafta anlattıklarımın hepsini kendiniz yazıp küçük egzersizler yapın lütfen Python'da.
+
+570
+02:38:13,716 --> 02:38:19,995
+Peki, haftaya görüşmek üzere. Hepinize sağlıklı günler diliyorum. İyi bir hafta olsun. Hoşçakalın.
+
+571
+02:38:19,995 --> 02:38:25,835
+Bana et sallayıp çıkıyorsunuz. Ben böyle bir kuralım var derste biliyorsunuz. Evet.
+
+572
+02:38:26,868 --> 02:38:29,727
+Teşekkürler. Bakayım en sona kim kalacak?
+
+573
+02:38:34,100 --> 02:38:35,860
+İyi haftalar hepinize.
+
+574
+02:38:46,451 --> 02:38:47,412
+Hoşçakalın.
+
+575
+02:38:58,739 --> 02:39:01,680
+Haftaya görüşmek üzere. Hoşçakalın arkadaşlar.
+
+576
+02:39:02,819 --> 02:39:06,119
+Hocam, katılmama izin verdiğiniz için çok teşekkür ederim ben de.
+
+577
+02:39:06,520 --> 02:39:13,720
+Rica ederim. [öğrenci] ama bunu her hafta benim yollamam biraz zor olacak. Siz derste bir arkadaşla onu anlaşsanız daha kolay olabilir.
+
+578
+02:39:14,819 --> 02:39:17,340
+Tamam, ben ulaşmaya çalışayım o zaman.
+
+579
+02:39:18,459 --> 02:39:21,799
+Ders sırasında şey yapın, birine chatten yazın.
+
+580
+02:39:23,028 --> 02:39:24,328
+Öyle yapalım. Oldu mu?
+
+581
+02:39:24,567 --> 02:39:25,668
+Tamam. Tamam hocam.
+
+582
+02:39:25,668 --> 02:39:28,468
+Peki. Başarılar diliyorum. Hoşçakalın.
+
+583
+02:39:28,728 --> 02:39:36,208
+Hocam ben de sizin Yıldız Eylülter adresinize yazmıştım da. Bir arkadaşınız Seglisans'tan katılmak istiyordu. Katılabilir mi?
+
+584
+02:39:36,208 --> 02:39:41,528
+Tabii tabii. Yani benim için hiç sakıncası yok. Öğrenmek isteyen herkese kapımız açık.
+
+585
+02:39:41,988 --> 02:39:43,488
+Teşekkürler hocam. Söyleyeyim kendisine.
+
+586
+02:39:43,508 --> 02:39:44,808
+Rica ederim. Tabii.
+
+587
+02:39:51,572 --> 02:39:54,012
+Haftaya görüşmek üzere. Hoşçakalın.

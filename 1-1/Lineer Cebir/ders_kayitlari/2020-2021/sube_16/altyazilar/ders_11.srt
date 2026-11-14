@@ -1,0 +1,2387 @@
+1
+00:01:14,772 --> 00:01:15,712
+Arkadaşlar, herkese.
+
+2
+00:01:22,644 --> 00:01:27,164
+Nasılsınız, ne varmıyor? Her şey iyi olmadır inşallah.
+
+3
+00:01:30,044 --> 00:01:31,784
+İyiyiz hocam, siz nasılsınız?
+
+4
+00:01:33,364 --> 00:01:49,064
+Biz de iyiyiz. İyi olmaya gayret ediyoruz. Ama biliyorsunuz, elimizde, her şey elimizde değil. O yüzden mümkün olunca iyi olmaya gayret ediyoruz. Sizler de öyle olun.
+
+5
+00:01:51,700 --> 00:02:12,000
+Şimdi birkaç dakika arkadaşlar bağlanana kadar bir şey yapalım. Ekranı yansıttığımı görüyorsunuz herhalde. Orada bir karşılaştırma var. Bu lineer denklem sistemlerinin çözümünde kullandığımız metotların karşılaştırılması arkadaşlar.
+
+6
+00:02:15,604 --> 00:02:40,364
+Sizde ya da diğer gruplarda sormuştu arkadaşlar ki bu hani akla gelecek boğal bir soru. Biz işte farklı üç tane yöntem gördük. Aslında burada dört tane var. Gauss eliminasyon yönteminin ne olduğunu söylemiştim öncelerinde. Bu yöntemlerden hangisini kullanmak daha avantajlı ya da daha hızlı sonuç veriyor?
+
+7
+00:02:43,987 --> 00:02:47,768
+İstatistiğini yapmışlar.
+
+8
+00:02:49,627 --> 00:03:03,987
+Burada eğer verilen ne çarpı ne tipinde bir denklem sistemi ise, bunu Gauss Jordan indirgeme yöntemiyle, Gauss eliminasyonu yöntemiyle,
+
+9
+00:03:10,419 --> 00:03:22,139
+tersini bulma, bir de kremer yöntemiyle çözmüşler. Arkadaşlar, kaç adım gerekiyormuş? Onu hesaplamışlar.
+
+10
+00:03:25,812 --> 00:03:28,412
+Gauss eliminasyon dediğimiz ne?
+
+11
+00:03:30,771 --> 00:03:33,492
+Satırca indirgenmiş eşelon formu indirgemek.
+
+12
+00:03:34,872 --> 00:03:41,132
+Gauss eliminasyonu neydi? Gauss eliminasyon da satırca indirgenmiş eşelon formu değildi.
+
+13
+00:03:41,132 --> 00:03:50,252
+Sadece satırca eşelon formu getiriyorduk. Oradan yok etme metoduyla buluyorduk.
+
+14
+00:03:50,580 --> 00:03:56,939
+Bu iki yöntem için gereken adım sayısı, rank, yaklaşık olarak rank bölü 3.
+
+15
+00:04:01,860 --> 00:04:06,740
+Sadece bir matrisin tersini bulmak için gereken adım sayısını yazmıştık.
+
+16
+00:04:06,840 --> 00:04:09,439
+Üçüncü satırda.
+
+17
+00:04:10,580 --> 00:04:11,420
+Bu da ne yapıyorduk?
+
+18
+00:04:12,420 --> 00:04:17,259
+A ile prim matrisi yazıyorduk, sonra elementer satın işlemleri yardımıyla.
+
+19
+00:04:18,228 --> 00:04:25,268
+matrisi bu formla getirdiğimizde sağ tarafta oluşan anın tersiydi. Bunun için ne küp tane adım gerekiyormuş?
+
+20
+00:04:27,048 --> 00:04:37,028
+Yine bir en çerperen tipindeki inner denklem sistemini bulmak için, çözümünü kasveren matrisinin tersini bulmak için n küp adımı gerekiyor.
+
+21
+00:04:38,408 --> 00:04:44,008
+Determinantı hesaplamak için n küp bölü 3, kremal yönetimini çözmek için de en üzeri 4 bölü 3.
+
+22
+00:04:44,468 --> 00:05:03,468
+Buradan şu sonuç görülüyor arkadaşlar. En iyi yöntem, Gauss eliminasyon ve Gauss Jordan indirgeme yöntemi. En hızlı sonuç veren, en avantajlı. En kötü yöntem de hangisi?
+
+23
+00:05:08,148 --> 00:05:22,608
+En kötü yöntem de kramer yöntemi. Çünkü neyvc 4 bölü 3. Ondan daha iyi yöntem de armın tersiyle çar. Tamam mı? Bu da böyle genel kültür olarak dursun.
+
+24
+00:05:24,088 --> 00:05:30,108
+Aklınıza gelmiş de bu kadar yöntem kullanıyoruz ama hangisi daha avantajlı falan diye belki de sorduğunu bilmiyorum.
+
+25
+00:05:31,608 --> 00:05:34,448
+En avantajlı ve en hızlı sonuç veren.
+
+26
+00:05:34,836 --> 00:05:58,036
+Gauss yordun eliminasyon yöntemiymiş. O zaman diyeceksiniz ki, kraven yöntemini niye kullanıyorsun? Yani bir yerden bir yere gitmek için 3-4 tane yol vardır, bazen birini kullanırsınız, bazen birini kullanırsınız. Onun gibi öyle düşünün yani. Sonuçta yöntem. Yöntem yöntemdir. Tamam mı?
+
+27
+00:06:00,819 --> 00:06:14,019
+Merak ediyor muydunuz? Var mıydı aranızda merak edenler? Yoksa çok da merak ettiğiniz bir şey de olmayabilir açıkçası.
+
+28
+00:06:16,959 --> 00:06:26,279
+Arkadaşlar niye hiç konuşmuyorsunuz ya? Kendimi kötü hissediyorum ha. Peki, bunu sınav merak ediyormuş.
+
+29
+00:06:27,252 --> 00:06:30,232
+Bir kişi bile merak etse herhalde merakını gidermiştir.
+
+30
+00:06:31,952 --> 00:06:34,312
+Siz derslerde de mi böyle konuşmuyorsunuz hiç?
+
+31
+00:06:35,612 --> 00:06:37,412
+Yoksa bana mı bir şeyiniz var?
+
+32
+00:06:39,292 --> 00:06:40,272
+Gareziniz var?
+
+33
+00:06:42,652 --> 00:06:44,112
+Var mı gareziniz?
+
+34
+00:06:46,212 --> 00:06:49,292
+Estağfurullah hocam, genelde sessizlik oluyor ya derslerde.
+
+35
+00:06:50,192 --> 00:06:52,152
+Evet, hiç konuşmuyorsunuz yani, ne bileyim.
+
+36
+00:06:54,132 --> 00:07:02,752
+Diğer dersler biz oluyoruz değil mi? Neyse. Tamam, önemli değil arkadaşlar. Anlayın da siz.
+
+37
+00:07:04,352 --> 00:07:18,332
+Hiçbir şey önemli değil. Peki. Şimdi, bu arada sınavımız 10. haftanın sonuna kadar, yani bugünün sonuna kadar arkadaşlar.
+
+38
+00:07:20,596 --> 00:07:40,796
+Sınav tarihi hala da iran edilmedi. Herhalde bölümümüzdeki haftadan sonra olur diye düşünüyorum. Yani bugünkü dersin sonuna kadar sınavımıza dahi. Bir de sorular oluyor. Sormazsınız ama ben sormadan söyleyeyim. Belli olmuş mu?
+
+39
+00:07:46,067 --> 00:07:50,627
+O zaman zaten bu hafta şey yapmamız lazımmış, bunları öğrenmemiz lazımmış, tamam.
+
+40
+00:07:52,907 --> 00:07:54,247
+Ne diyecektim ya?
+
+41
+00:07:55,347 --> 00:07:56,967
+Siz sormazsınız, ben söyleyeyim.
+
+42
+00:08:00,307 --> 00:08:03,007
+Bir dakika ama haftaya 23 hangi gün oluyor arkadaşlar?
+
+43
+00:08:07,187 --> 00:08:28,247
+Cuma mı oluyor? Çarşamba. Sizinle yine ders yapmış olacağız. Siz çok şanslısınız ha. Güzel gruplarda hiç ders yapamadık. Şeyden önce de sizinle sorunlar çözmüştük falan. Herhalde konuşmuyoruz falan ya, o yüzden şey oluyor. Diğerleri çok konuştuğundan cezalanıyor mu? Ne oluyor? Şey diyecektim.
+
+44
+00:08:28,723 --> 00:08:51,144
+Arkadaşlar, ilk sınavdan sonraki kısımla, 10. haftaya kadar olan kısım önce çalışın. Çünkü genelde öyle sorulur. Sınav 5. haftanın sonuna kadardı. Yani 6 ile 10. haftalar arasında önce çalışırsanız, zamanınız kalırsa diğerlerine de bakın ki zaten diğerlerinde bir şey yok.
+
+45
+00:08:56,148 --> 00:08:58,288
+Bilmeden zaten bunları çözemeyiz.
+
+46
+00:08:58,288 --> 00:09:15,587
+O yüzden sınav onuncu haftaya kadar, onuncu haftanın sonuna kadar ve ilk düzeden sonraki konulardan onuncu haftaya kadar olan kısmı çalışırsanız sizin için daha kolay olabilir.
+
+47
+00:09:16,768 --> 00:09:17,228
+Tamam mı?
+
+48
+00:09:20,028 --> 00:09:22,968
+Peki, sınav tarihini sizden öğrendiysem.
+
+49
+00:09:23,572 --> 00:09:25,192
+Bu da güzel. Teşekkür ederim.
+
+50
+00:09:31,347 --> 00:09:36,147
+Bugün vektör uzaylarından bahsedeceğiz. Geçen hafta vektörlerden bahsetmiştik.
+
+51
+00:09:37,987 --> 00:09:47,567
+Şöyle arkadaşlar, normalde [öğrenci] ilk 5 haftadan direkt soru olabilir.
+
+52
+00:09:48,947 --> 00:09:54,867
+Ama şu var, yani mantıken baktığın zaman, zaten ilk 5 hafta matrislerin özelliklerinden bahsettik.
+
+53
+00:09:55,923 --> 00:10:20,303
+Çok temel kavram var yani. Tutup da oradan size iki matrisin çarpımını soracak halleri yok bence yani. Onu kastettim. Ama şu, mesela ilk haftadan soru var mı yok mu? Tutar der ki sorunun içinde bir tanesinde işte A matrisi her mükemmel matris olmak üzere. Alsana ilk haftalardan soru. Değil mi?
+
+54
+00:10:22,803 --> 00:10:43,103
+O yüzden, önce, beşinci haftadan sonra, zaman kalmış kalırsa da, ilk haftadır, özellikle özel matris tiplerini, ya da zaten çözdük, size de yüktedim herhalde şeyi, orada çıkmış sorularda, hani ne tür sorular vardı, onlara böyle bir göz geldiyseniz yeter. Tamam mı?
+
+55
+00:10:45,395 --> 00:11:02,395
+Şimdi vektör uzayı dediğimiz kavram arkadaşlar aslında belli başlı özellikleri içeren ve de belli işlemler altında aynı sonucu veren elemanların topluluğu.
+
+56
+00:11:03,956 --> 00:11:05,456
+Haftaya ders var, evet öğrettim.
+
+57
+00:11:07,576 --> 00:11:08,755
+Haftaya ders var.
+
+58
+00:11:14,196 --> 00:11:16,775
+Zaten o yüzden 16 yıl marası yapmışlar sınavları.
+
+59
+00:11:19,436 --> 00:11:30,495
+Nasıl kümeler, küme dediğiniz zaman lisede hatırlayın ya da ne zaman öğrettiler bilmiyorum ama belli başlı özellikleri aynı olan nesleler topluluğuna ne diyorduk biz?
+
+60
+00:11:30,615 --> 00:11:31,196
+Küme diyorduk.
+
+61
+00:11:31,696 --> 00:11:35,375
+Şimdi burada da, bekle uzayımda aslında siz bir küme olarak bakabilirsiniz.
+
+62
+00:11:37,936 --> 00:11:40,196
+Nesleler topluluğu değil ama burada...
+
+63
+00:11:41,460 --> 00:12:08,560
+İşlemler altında aynı özellikleri gösteren elemanların topluluğu diyebilirsiniz bunu basit olarak. Bu niye sağlıyor arkadaşlar? Şunu sağlıyor. Eğer belli başlı işlemler altında belli başlı özellikleri sağlıyorsa bu elemanlar bize işlemlerde kolaylık sağlıyor. Mesela en basit bir şey.
+
+64
+00:12:09,331 --> 00:12:35,072
+Bildiğiniz real sayılar kümesinde, yani real sayılarda, iki tane real sayıyı, iki artı beşi topladığınız zaman ne yapıyor? Yedi yapıyor. Yedi de bir real sayı, real sayı dedim değil mi? Tam söylemem, real sayı. Aynı şekilde beşte ikiyi topladığınız zaman da yedi yapıyor. Yani demek ki real sayılarda toplama işleminin değişme özelliği var.
+
+65
+00:12:36,500 --> 00:13:01,500
+Bunun gibi. Tamam. Şimdi, biz real vektör uzaylarından bahsedeceğiz. Bu arada Mehmet Emin Hoca'nın noktaları sizde var. Burada yüklü. Şu zamanı gelirse oradan da bakarız ama ben biraz kendi noktlarımdan bahsedeceğim. Biraz da farklı noktlardan bahsedeceğim bugün. Siz oradan takip edebilirsiniz. Şey değil. Zaten aynı şeyler. Bak çok farklı bir şey yok.
+
+66
+00:13:03,091 --> 00:13:11,231
+Ben biraz hızlı olsun diye kendi notlarıma geçtim. Onun notları biraz daha böyle detaylı olduğu için zamanımızı hayli alıyordu.
+
+67
+00:13:12,111 --> 00:13:24,871
+Şimdi arkadaşlar, V bir küme, boştan farklı bir küme. Bu küme üzerinde iki tane işlem tanımlıyorum. Bu artı yuvarlağın içinde artı, bu da yuvarlağın içinde çarpı işlemi.
+
+68
+00:13:25,296 --> 00:13:33,596
+Bu vektör uzaylarını belirtmek için kullandığımız işlemler bunlar. Yani vektör uzayı olduğunu göstermek için. O yüzden kafanız karışmasın.
+
+69
+00:13:34,416 --> 00:13:42,495
+Yani bildiğiniz toplama ve bildiğiniz çarpma işlemi değil bunlar. O arada bir toplama ve çarpma işlemleri tamamlanacak. Tamam mı? Bilmiyoruz biz ne olduğunu.
+
+70
+00:13:44,176 --> 00:13:52,755
+Bu iki işlemle beraber şu 9 koşulu, aşağıdaki 9 koşulu sağlayan V kümesine real vektör uzayı deniyor.
+
+71
+00:13:53,203 --> 00:13:57,884
+Şimdi burada biz dersle sadece real vektör uzaylarından bahsedeceğiz arkadaşlar.
+
+72
+00:13:59,504 --> 00:14:09,443
+Onun sebebi de şu, daha doğrusu real vektör uzayı denmesinin sebebi şu, aşağıda özellikler de göreceksiniz, skalerleri aldığımız küme,
+
+73
+00:14:16,211 --> 00:14:21,451
+kompleksten alsaydık, C'den alsaydık, bu sefer kompleks vektör uzayı olacaktı ki bizim onlarla işimiz yok.
+
+74
+00:14:22,272 --> 00:14:28,992
+Hep realden aldığımız için skalerleri, o yüzden real vektör uzayı ya da vektör uzayı diyeceğiz sadece.
+
+75
+00:14:29,692 --> 00:14:37,032
+Ama biz yani bu dersteki işimiz skalerler real değeri olan vektör uzayları.
+
+76
+00:14:37,451 --> 00:14:41,992
+Birincisi, şimdi iki işlem var ya, birinci işlem artı işlemi.
+
+77
+00:14:46,451 --> 00:14:48,451
+A şıkkında görüyorsunuz.
+
+78
+00:14:50,451 --> 00:14:51,612
+V kümem var benim.
+
+79
+00:14:53,512 --> 00:14:54,451
+V kümesinde
+
+80
+00:14:54,451 --> 00:14:58,032
+bir tane eleman alıyorum.
+
+81
+00:14:59,392 --> 00:15:01,652
+Pardon, iki tane eleman alıyorum. Özür dilerim.
+
+82
+00:15:05,427 --> 00:15:10,128
+U ve V gibisinin, hatta VW gibisinin,
+
+83
+00:15:16,563 --> 00:15:17,963
+Uvedomu ne gibi düşünmem.
+
+84
+00:15:22,707 --> 00:15:27,008
+U artı W şeklinde tanımlanıyor.
+
+85
+00:15:27,628 --> 00:15:29,988
+Şimdi birinci özelliği şu olmalı arkadaşlar.
+
+86
+00:15:31,168 --> 00:15:42,567
+V'den aldığım U ve V elemanlarının toplamı, yani vektörer toplam, V'nin elemanı olması lazım.
+
+87
+00:15:43,427 --> 00:15:46,727
+Yani V kümesi bu işlem altında kapalıdır.
+
+88
+00:15:47,668 --> 00:15:48,528
+Kapalıdır demesi,
+
+89
+00:15:49,011 --> 00:15:53,151
+Toplama işlemini aslında sağlıyor. Yani bu iyi tanımlı. Tamam mı? Bu önemli.
+
+90
+00:15:54,371 --> 00:16:04,432
+İlk önce bunu test ediyoruz. Aldığım iki tane elemanın bu tanımlanan ya da verilen işleme göre gerçekten iyi tanımlı mı? Ya da kapalı mı?
+
+91
+00:16:05,471 --> 00:16:09,491
+İkincisi, bu toplama işleminin değişme özelliği olacak.
+
+92
+00:16:12,831 --> 00:16:15,812
+Değişme özelliği olmalı her uygulay için.
+
+93
+00:16:16,820 --> 00:16:18,480
+Birleşme Üzeri İmamalı
+
+94
+00:16:24,115 --> 00:16:29,435
+Yani U artı V artı W eşittir. U artı V artı W eşit olmalı.
+
+95
+00:16:31,355 --> 00:16:36,336
+Vektör uzayının toplamaya göre birim elemanı olmalı.
+
+96
+00:16:36,975 --> 00:16:42,015
+Yani sıfır olmalı. Buna sıfır elemanla ya da toplamaya göre birim diyebilirsiniz.
+
+97
+00:16:42,255 --> 00:16:46,375
+Yani U artı sıfır eşittir. Sıfır artı U olacak şekilde.
+
+98
+00:16:46,975 --> 00:16:50,975
+Burada sıfır bildiğiniz sıfır değil arkadaşlar. Sadece gösterim olarak sıfır.
+
+99
+00:16:52,179 --> 00:16:53,899
+Bir sıfır elemanım olmalı.
+
+100
+00:16:54,939 --> 00:16:55,620
+Buna da sıfır.
+
+101
+00:16:55,859 --> 00:16:57,759
+Ya da kopumayı verebilirim diyebilirsiniz.
+
+102
+00:17:02,067 --> 00:17:21,367
+Dördüncü de U elemanının toplamaya göre tersi olmalı. Yani U ile herhangi bir başka bir elemanı topladığınız zaman ki burada ecisi U olarak alınmış, bu sıfır elemanı verecek. Toplamaya göre ters.
+
+103
+00:17:28,019 --> 00:17:36,819
+ilk kısmı, yani ilk toplama işlemiyle alakalı olan kısım, bir de çarpma ile alakalı olan kısım var. Çarpma da,
+
+104
+00:17:41,844 --> 00:17:53,004
+R çarpı V'den V'ye. Yani burada bir tane skaler alıyorsunuz. V vektörüyle çarpıyorsunuz. Bu yine acaba?
+
+105
+00:17:57,587 --> 00:17:58,347
+yapacağız bundan.
+
+106
+00:18:06,483 --> 00:18:23,323
+Acaba hangi özellikleri sağlamalı? Birincisi yine kapalı olmalı arkadaşlar. Yani U, V'deki herhangi bir vektör, C'de bir real sayı ya da skader, bu x'in çarptığı zaman, skader ile bir vektör çarptığı zaman, V'nin elemanı olmalı.
+
+107
+00:18:24,903 --> 00:18:30,023
+Yani çarpma işlemine göre kapalı olacak. İkincisi,
+
+108
+00:18:30,644 --> 00:18:36,324
+Çarpmanın yukarıda ağda tamamladığım toplama üzerine dağılma özelliği olacak sağlam.
+
+109
+00:18:42,740 --> 00:19:07,220
+Diğeri, bakın bu içisi farklı arkadaşlar. Toplamanın, bildiğimiz anlamda toplamanın, bu şey toplama değil, bu skalal ve vektöral toplama değil, şey ya, C ile de real sayı var ya, arkadaşlar, real sayı var ya, toplamanın, tamamlanan çarpma üzerine dağılma özelliği olacak. O da şu şekilde tamamlanacak.
+
+110
+00:19:09,268 --> 00:19:13,148
+C çarpı U toplamayı da yukarıda vektör olarak toplama yapmıştık.
+
+111
+00:19:14,327 --> 00:19:15,407
+Şu koşul sağlanacak.
+
+112
+00:19:18,208 --> 00:19:24,788
+Bunlar böyle çok gözünüzü korkutmasın. Çok zor şeyler değil arkadaşlar. Belki ilk defa gördüğünüz için garipmiş gibi gelebilir.
+
+113
+00:19:25,688 --> 00:19:30,407
+Diğerincisi çarpmanın dağılma özelliği olacak.
+
+114
+00:19:31,228 --> 00:19:32,548
+C burada bir real sayı.
+
+115
+00:19:33,107 --> 00:19:43,427
+C ile D'yi çarptığımız zaman, real sayılardaki çarpma ama U vektör olduğu için bu vektörel çarpma, şurada tanımlanmamış gerçekten.
+
+116
+00:19:44,728 --> 00:19:52,187
+Ve sekizinci olarak da çarpmaya göre birim eleman olmalı.
+
+117
+00:19:52,187 --> 00:20:00,407
+Bu işte 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+118
+00:20:01,236 --> 00:20:18,576
+koşulu sağlayan V kümesine, arkadaşlar, şu işlemlerle beraber, bir ren vektör uzayı deniyor.
+
+119
+00:20:20,616 --> 00:20:25,656
+Demek ki, birinci işleme göre ne olacakmış, toplamaya göre ne olacakmış arkadaşlar?
+
+120
+00:20:27,059 --> 00:20:54,539
+Kapalı olacak, değişmeli, birleşmeli, sıfır eleman olacak ve toplamaya göre ters eleman olacak. İkinci işleme göre ise kapalı olmalı, çarpmanın birinci işleme göre dağılma özelliği olmalı, skalerle toplamanın çarpma üzerine dağılma özelliği olmalı, skalerle çarpmanın birleşme özelliği olmalı, bir de son olarak da çarpmanın birim elemanı mevcut olmalı.
+
+121
+00:20:55,892 --> 00:21:00,692
+Normalde biz vektör diyeni iyi tanımlamıştık. Yönlendirilmiş doğru parçasına vektör demiştik.
+
+122
+00:21:03,032 --> 00:21:09,072
+Artık biz vektör uzayının elemanlarına vektör diyeceğiz.
+
+123
+00:21:15,827 --> 00:21:25,347
+Reel sayılar kümesinin elemanlarına da skalerler diyeceğiz. Bu işleme vektörler toplama, diğerine de skaler çarpma demiştik.
+
+124
+00:21:26,508 --> 00:21:35,087
+Şimdi aklınıza gelmesin, daha vektörlerde skaler çarpma işleminden bahsetmiştik hocam, onunla bu karışmasın diye. Ben zaten söylemiştim orada, uyardım arkadaşlar.
+
+125
+00:21:35,827 --> 00:21:42,888
+Normalde oradakinin ismi skaler çarpma değil, oradakinin ismi iş çarpım ya da nokta çarpım arkadaşlar.
+
+126
+00:21:43,548 --> 00:21:50,168
+Sadece bazı Türkçe kitaplarda skaler çarpım olarak kullanılmış. Bu çok doğru bir ifade değil.
+
+127
+00:21:52,327 --> 00:21:59,127
+Zaten eğer iş çarpım verildiyse ya da iş çarpım sorulduysa herhangi bir sınava, o belirtilir, bu iş çarpım diye.
+
+128
+00:21:59,928 --> 00:22:02,988
+Tamam mı? Yani orada bir karışıklık olmasın.
+
+129
+00:22:07,731 --> 00:22:14,451
+3 özelliğinde verilen 0'a da 0 vektörüne de, 0'a da 0 vektörü deniyor.
+
+130
+00:22:15,951 --> 00:22:23,491
+Eksi u ya da bir vektörün ters işaretçisi ya da toplamaya göre tersi ya da negatif değil ya da zıttı diyorsun.
+
+131
+00:22:26,932 --> 00:22:30,932
+Tabi burada sıfır toplamaya göre birim eleman.
+
+132
+00:22:42,228 --> 00:22:43,768
+eksi o da
+
+133
+00:22:45,548 --> 00:22:46,828
+o olmaya göre
+
+134
+00:22:50,644 --> 00:23:03,043
+ters yedim. Bu toplamaya göre birim ve toplamaya göre bir elemanın tersi birim var tek arkadaşlar. Bir tek tersim bulabiliyorsunuz. Bir vektörün toplamaya göre.
+
+135
+00:23:05,423 --> 00:23:10,543
+Demek ki bundan sonra real vektör uzayı dediğimizde,
+
+136
+00:23:11,700 --> 00:23:25,180
+Vektör dediğimizde, real vektör uzayının, ya da, real vektör uzay dememize gerek yok, biz işimiz zaten real vektör uzayıyla, vektör uzayı dediğimizde, bu uzayın elemanları olarak vektörleri alacağız.
+
+137
+00:23:26,519 --> 00:23:26,940
+Tamam mı?
+
+138
+00:23:29,340 --> 00:23:32,140
+Şimdi, re üzeri ne?
+
+139
+00:23:33,200 --> 00:23:38,360
+Re üzeri ne'nin elemanları, ne çarpı bir tüm mekin bütün matrislerdi, değil mi?
+
+140
+00:23:40,211 --> 00:23:44,532
+Biz bunlara vektör demiştik. Aynı zamanda.
+
+141
+00:23:46,532 --> 00:23:53,971
+m şartı 1 tıkındaki bütün matrislerin kümesini, r üzeri m ile gösteriyoruz. Yani bu aslında benim v kümen.
+
+142
+00:23:57,332 --> 00:24:22,592
+Bu küme üzerinde arkadaşlar toplama işleminin artıyı matrislerle toplama işlemi olarak yani şuraya yazayım. Şöyle yapacağız. Matrislerimizi gösterelim. Ve
+
+143
+00:24:24,180 --> 00:24:42,840
+W elemanı da V için, V artı W eşittir. Bunlar tabii matris arkadaşlar. V artı W. Bildiğiniz anlamda toplam işlemi olarak tanımlanıyor.
+
+144
+00:24:52,980 --> 00:25:15,179
+C elemanı da V ve U elemanı da V için C çarpı U'da C çarpı U. Yani matrislerde skalalı çarpma işlemi olarak tanımlanıyor. Tamam mı?
+
+145
+00:25:19,412 --> 00:25:23,251
+v üzerinde bir vektör uzayıdır.
+
+146
+00:25:25,711 --> 00:25:32,192
+Bana inanmıyorsanız, tek tek bakın, hatta hızlıca bakabiliriz şu bu kadar koşullara.
+
+147
+00:25:32,731 --> 00:25:33,331
+Hemen bakalım.
+
+148
+00:25:34,791 --> 00:25:38,672
+Hemen bakalım, bu kızı yapmadan konuşarak.
+
+149
+00:25:40,172 --> 00:25:44,451
+u artı v, iki tane n çarpı bir tane matrisin toplamı yine
+
+150
+00:25:45,332 --> 00:26:11,132
+N çarpı bir matrisidir, değil mi? O halde toplama evleri kapalı. Matrislerde toplama işleminin değişme özelliği var, birleşme özelliği var. Sıfır matrisiyle bir matrisi toplarsanız ne olur? Kendisini elde ederseniz. Demek ki sıfır matrisi, R üzeri ne için? Sıfır eleman. Sıfır eleman yani.
+
+151
+00:26:12,723 --> 00:26:29,923
+Böyle bakıyorum, her U maddesi için artık matrislerden bahsediyorum. U ile eksi U'yu toplarsam, ki buradaki artı vektörer toplaması kalınmamıştı, matrislerle toplama işlemi, sıfır matrisini elde edelim. Demek ki A koşulların hepsi sağlandırıyor.
+
+152
+00:26:30,923 --> 00:26:39,103
+Geldim B'ye, U maddesi, U maddesini C skalayı ile çarparsanız yine ne yapar? Bir maddistir.
+
+153
+00:26:39,571 --> 00:26:47,231
+M çarpı bir tipinde bir matristir. O halde V'nin elemanıdır. Yani R üzeri M'nin elemanıdır. O halde çarpmaya göre kapalı.
+
+154
+00:26:48,771 --> 00:26:54,271
+İki tane matris aldım, bir tane de R'ye sayı aldım. Bu iki matris topladığım zaman ben ne oluyordu?
+
+155
+00:26:55,331 --> 00:27:05,551
+Pardon bu şey. Bir skalerle iki matrisin toplamını çarpmak demek ne demek? Bu skalerle U'yu çarp, sonra
+
+156
+00:27:06,003 --> 00:27:31,163
+Diğeriyle çarp ve topla demek. Bunlarda bağımlı özelliği var. İki skaleri toplayıp bir matrisle çarparsanız, o skaleri matrisle çarpımıyla diğerini toplarsanız buna eşit olacak zaten. Birleşme özelliği de var. Birim matris nasıl olacak?
+
+157
+00:27:32,980 --> 00:27:49,079
+Birim matris şeyde, bilim elemanı pardon, rey üzerindeydi. Bütün elemanları, bir olan mı olacak yoksa, bu buradaki bir ne? Skalermi şey mi, matris mi?
+
+158
+00:27:53,268 --> 00:27:54,567
+Bu skalalardım arkadaşlar.
+
+159
+00:27:56,728 --> 00:28:16,688
+Evet, aynen öyle. Bir zaten, bir ile hangi maksı çarparsanız çarpın, kendisini elde edeceksiniz. Demek ki bütün bu vektör uzayı olma koşullarını sağlıyor. Demek ki R üzeri N bir real vektör uzayıymış. Tamam mı?
+
+160
+00:28:19,284 --> 00:28:21,504
+Şimdi gelelim ikinci örneğe.
+
+161
+00:28:26,036 --> 00:28:32,576
+m çarpı n ekipindeki bütün matrislerin kümesini şu şekilde gösteriyoruz arkadaşlar.
+
+162
+00:28:33,436 --> 00:28:45,996
+Matrisinden geliyorum. m çarpı n ekipinde bütün matrislerin kümesi üzerinde vektörer toplama işlemini matrislerde toplama işlemi olarak alıyorsunuz.
+
+163
+00:28:48,084 --> 00:28:51,544
+vektörer çarpma işlemini de skalerle çarpma işlemi olarak.
+
+164
+00:28:51,764 --> 00:28:54,044
+Oluyorsunuz ki biraz önce yaptığımız işlemin aynısı.
+
+165
+00:28:55,044 --> 00:29:08,804
+Bu işlemlerle beraber M çarpı N tipindeki bütün matrislerin kümesi bir vektör uzayı oluyor.
+
+166
+00:29:09,304 --> 00:29:12,824
+Şimdi aklınıza tabii şu soru gelecek. Acaba hepsi ya vektör uzayı oluyor mu?
+
+167
+00:29:12,964 --> 00:29:15,264
+En basitinden şuradan bir örnek vereyim size.
+
+168
+00:29:17,332 --> 00:29:18,132
+Törünki
+
+169
+00:29:23,827 --> 00:29:25,907
+Ya da K'nı niye diyorum ki? K demeyelim.
+
+170
+00:29:29,067 --> 00:29:31,687
+Ama tabii farklı tanımlayacağım. K eşittir.
+
+171
+00:29:32,768 --> 00:29:34,248
+M, N çarpı M.
+
+172
+00:29:38,708 --> 00:29:39,968
+Şaşı, stener bir iş.
+
+173
+00:29:43,667 --> 00:29:48,487
+matrislerin, ne çarpı, ne tık, ne terslerine bir matrislerin kümesi olur.
+
+174
+00:29:52,211 --> 00:30:04,232
+Soru şu arkadaşlar. Bilinen matris toplama ve skalerle çarpma işlemleri altında, Gauss'un kümesi bir vektör uzayı mıdır?
+
+175
+00:30:10,548 --> 00:30:11,508
+Soru anlaşıldı mı?
+
+176
+00:30:13,988 --> 00:30:24,988
+Matrislerdeki toplama işlemi ve matrislerle skalerle çarpma işlemi altında K kümesi bir vektör uzayı mıdır?
+
+177
+00:30:29,875 --> 00:30:30,875
+Bu, anıcı, ploma.
+
+178
+00:30:34,516 --> 00:30:36,655
+Fikta oltta söylemek isteyen.
+
+179
+00:30:47,059 --> 00:30:48,119
+Eu konfikus.
+
+180
+00:30:52,211 --> 00:30:55,771
+Arkadaşlar beni duyuyorsunuz da sesimde bir problem var mı?
+
+181
+00:30:58,971 --> 00:31:00,612
+Hoca taktı sizi değil mi bugün?
+
+182
+00:31:02,812 --> 00:31:07,672
+Arkadaşlar şunu duyuyor musunuz? Ya hocam sen işine bak, niye bize soru sorup duruyorsun falan?
+
+183
+00:31:08,852 --> 00:31:12,572
+Arkadaşlar size soru soruyorum ki siz de derse kapatın mı daha iyi anlayın yani yoksa?
+
+184
+00:31:15,632 --> 00:31:18,231
+Olabilir. O da güzel bir cevap.
+
+185
+00:31:24,596 --> 00:31:36,076
+Arkadaşlar, matematik genelde şöyle, matematik şey yaptığımız için kesinlik arz ediyor. Bir şey ya vardır ya yoktur. Ya öyledir ya değildir. Yani olabilir olmuyor sebep.
+
+186
+00:31:37,695 --> 00:31:50,076
+Soru şu, K, N çarpı N tipindeki ters denilir bütün matrislerin kümesinden oluşuyor. K kümesi.
+
+187
+00:31:51,059 --> 00:31:58,059
+Bu kümün üzerinde vektörer toplamayı matrisler üzerinde bildiğimiz toplama işlemi olarak
+
+188
+00:32:01,619 --> 00:32:07,619
+Vektörel çarpmayı da bir matrisle skalerin çarpımı olarak kalınmalıdır.
+
+189
+00:32:09,739 --> 00:32:13,799
+K bu işlemler altında bir vektör uzayı mıdır?
+
+190
+00:32:15,799 --> 00:32:16,939
+Soru bu.
+
+191
+00:32:31,284 --> 00:32:32,284
+Değil midir?
+
+192
+00:32:34,443 --> 00:32:35,443
+Neden?
+
+193
+00:32:44,084 --> 00:32:58,604
+Arkadaşlar, rahat olmayın. Kimseye yanlış yapacak diye şey yapmıyorum burada. Hem takılıyorum. Acaba alınıyor musunuz bilmiyorum ama. Tamam, şu. Çok fazla da abartmayalım madem. Arkadaşlar, ilk olarak bakmamız gereken de toplama işlemi nasıl tanımlanmış?
+
+194
+00:33:03,827 --> 00:33:14,007
+Matrislerdeki toplam işlem olarak, yani iki tane eleman aldım, bunlar ne çarpı ne tipinde matrisler, ve terslenebilir matrisler değil mi? Elemanları K için.
+
+195
+00:33:16,327 --> 00:33:20,247
+A artı B eşittir. A artı B.
+
+196
+00:33:20,852 --> 00:33:44,912
+Şimdi, A matrisi terslenebilir bir matris, B matrisi de terslenebilir bir matris, N çarpı N tipinde, bu bir C matrisi oldu. C'nin, K'nın içinde olabilmesi için, hem kapalı özelliği vardı ya, C'nin ne olması lazım? Terslenebilir olması lazım. Peki soru şuna düştüğü zaman, A matrisi terslenebilir, B matrisi de terslenebilirken, A artı B terslenebilir mi?
+
+197
+00:33:50,836 --> 00:34:15,615
+Kesin olarak, kesin olarak söyleyemeyiz toplamıyla alakalı. O yüzden K bu işlemler altında bir vektör uzayı değil. Peki, o zaman sizin işinizi kolaylaştırayım ya da size ödev vereyim. Belki sınavda sorarlar. Bana da ya kızarsınız ya da bu ay dersiniz. Bilmiyorum.
+
+198
+00:34:16,307 --> 00:34:24,507
+K, terslenebilir matrislerin kümesi, n çarpı n tipindeki toplama işlemini,
+
+199
+00:34:27,699 --> 00:34:30,399
+A çarpı B, bu 3 çarpım değil arkadaşlar.
+
+200
+00:34:33,479 --> 00:34:34,239
+Matris çarpım.
+
+201
+00:34:39,219 --> 00:34:49,159
+Çarpmıyla skalali çarpım olarak tanımıyoruz. Yani bildiğimiz skalali çarpım işlemi altında.
+
+202
+00:34:50,979 --> 00:34:57,679
+Bu işlemler altında K bir vektör uzayı mıdır? Arkadaşlar size sınav soru. Biraz düşünün.
+
+203
+00:35:01,364 --> 00:35:03,144
+Peki, devam edelim o zaman.
+
+204
+00:35:22,931 --> 00:35:38,771
+Yani şu, ondan belki bahsetmeliyiz için kafanız karıştı ilk aşamada. Arkadaşlar, vektör uzayı olduğunu göstermeniz için bütün o on koşulun sağlandığını göstermeniz gerekiyor.
+
+205
+00:35:39,532 --> 00:35:46,171
+Vektör uzayı olmadığını göstermek daha kolay. Değil mi? O on koşuldan bir tanesini sağlamıyorsa,
+
+206
+00:35:46,867 --> 00:36:11,807
+Nedir? Vektör uzayı değildir. O yüzden önce kapalı gözetlerinden başlarsanız, yani ilk işleme göre kapalı mı, ikinciye göre kapalı mı? Zaten kapalı değilse diğerlerine bakmanıza gerek kalmaz. Daha sonra eğer kapalıysa iki işleme göre de, şuna bakın, ilk işleme göre, yani toplama işlemine göre eşiği var mı, sıfırı var mı, birimi var mı?
+
+207
+00:36:13,972 --> 00:36:25,552
+Yine toplamaya göre her elemanın tersi var mı? Bunlara bakın. Eğer onlar da varsa diğerlerine bakabilirsiniz. Eğer onlardan biri yoksa zaten vektör uzayı değiliz. Tamam mı?
+
+208
+00:36:30,260 --> 00:36:43,340
+Üçüncü örnek, demek ki m çarpı n etiklindeki bütün matrislerin kömesi, bilinen matrislerdeki toplama işlemi ve skalarlı çarpma işlemi altında bir vektör uzayıymış.
+
+209
+00:36:46,220 --> 00:36:57,440
+Vektoral toplamı, c-a sayılarda bilinen toplama işlemi ve vektoral çarpımı da r sayılardaki standart çarpma olarak tanımlarsak,
+
+210
+00:36:57,940 --> 00:37:03,060
+Bütün reas sayıların kümesi bu işlemlerle beraber vektör uzayı oluyormuş.
+
+211
+00:37:04,440 --> 00:37:05,119
+Aslında bu.
+
+212
+00:37:07,680 --> 00:37:09,860
+R üzeri n'ye bir vektör uzayı demiştik ya.
+
+213
+00:37:11,360 --> 00:37:14,960
+R üzeri n'nin n eşittir bir için durum.
+
+214
+00:37:14,960 --> 00:37:15,340
+Değil mi?
+
+215
+00:37:16,940 --> 00:37:18,119
+Reas sayıların kümesi de.
+
+216
+00:37:20,760 --> 00:37:21,360
+Peki.
+
+217
+00:37:24,820 --> 00:37:42,159
+Tam sayılar kümesi, şu işlemler altında, bilinen toplam ve çarpma işlemi altında bir vektör uzay. Bunu düşünün bakalım. Düşünün aşağıda cevabı var, söyleyeceğiz zaten. Siz aşağıdaki cevabı gelene kadar düşünün.
+
+218
+00:37:54,420 --> 00:38:14,739
+R ne iyi? Hani biz, siz de sormuştunuz. Bu notları yazıyorum ya, [öğrenci]. Paylaşırım ama şey değil, önemli değil. Bunu da paylaşırım, unutmazsın. Ders sonunda bana hatırlatır mısın?
+
+219
+00:38:26,996 --> 00:38:44,155
+Ve ne? Bir çarpı ne tipindeki bütün matrislerin kümesi. Yani sıfır matrislerinin kümesi. Normalde biz bunlara da, genelde denmiyor ama kafanız karışmasın diye bunlara da vektör demiştik.
+
+220
+00:38:54,132 --> 00:39:01,731
+kümen üzerinde toplama işlemini, yine matris toplama işlemi aslında diyor değil mi?
+
+221
+00:39:02,652 --> 00:39:06,251
+Birinci satır, birinci sütündeki elemanla topluyorsun.
+
+222
+00:39:07,692 --> 00:39:09,811
+Birinci satır, ikinci sütündeki elemanla topluyorsun.
+
+223
+00:39:09,952 --> 00:39:12,572
+Ve çarpma işlemini, skalayla çarpma işlemi olarak tanımıyorsun.
+
+224
+00:39:13,431 --> 00:39:16,912
+Bu iki işlem altında, rene, bir vektör uzayı.
+
+225
+00:39:17,292 --> 00:39:20,431
+Yani aslında bir fark yok, biraz önceki tanımlamamızdan benzer şeyler.
+
+226
+00:39:22,579 --> 00:39:23,960
+Beşinci örneğe bakalım.
+
+227
+00:39:28,019 --> 00:39:50,480
+ve izi sıfır olan iki çarpı iki tipinlikle bütün matrislerin kömesi oldu. Yani V öyle elemanlardan oluşuyor arkadaşlar. Böyle A matrislerinden oluşuyor. Bu A matrisleri iki çarpı iki tipinde, burada tabi A, B, C, D, R sayılar, çünkü reallektör uzaylarından bahsediyoruz.
+
+228
+00:39:56,052 --> 00:40:06,112
+Bu matrisin izi neymiş? Sıfırmış. Bir matris de iz neydi? Köşegenlik elemanların toplamıydı. Yani A artı D eşittir sıfır.
+
+229
+00:40:07,452 --> 00:40:12,412
+Şimdi, bu küme üzerinde, küme bu şekilde tanımlanmış.
+
+230
+00:40:18,867 --> 00:40:21,068
+Bu küme üzerinde arkadaşlar,
+
+231
+00:40:26,003 --> 00:40:40,643
+Toplama işlemini, matris toplama işlemi ve vektörel çarpma işlemini de skalayla çarpma işlemi olarak tanımlarsak ve bir vektör uzayı mıdır? Aslında soru bu.
+
+232
+00:40:42,183 --> 00:40:49,583
+Hemen bakmamız gereken şu, matrisler bir toplama işlemi. Bunun için iki tane eleman almamız lazım V'den.
+
+233
+00:40:50,260 --> 00:41:17,400
+Bir tanesi A olsun, A, B, C'de ve A'nın izi A artı B eşittir, sıfır olacak çünkü V'nin içinde. Diğeri de B olsun. B ile X, Y, Z, T diyelim. B, V'nin elemanı olduğu için izi sıfır olmalı değil mi? O halde X artı T eşittir. Ne olacak arkadaşlar? Sıfır. Çünkü V'nin içinden alıyorum yani.
+
+234
+00:41:19,251 --> 00:41:22,951
+A, B elemandır, V olmak üzere diyorum.
+
+235
+00:41:25,271 --> 00:41:34,491
+Peki, iki elemanı topladığım zaman V'deki acaba V'nin içine düşer mi? Yani toplamaya göre topalı mı?
+
+236
+00:41:36,371 --> 00:41:41,672
+Toplama işlemi nasıl tanımlanmış? Matrislerdeki bildiğimiz toplama olarak tanımlanmış.
+
+237
+00:41:42,672 --> 00:41:45,411
+Yani A artı B.
+
+238
+00:41:46,291 --> 00:42:10,795
+A artı B'yi hemen toplayalım. A artı X, B artı Y, C artı Z, D artı T. Bu toplamın V'nin içine düşmesi için ne olmalı arkadaşlar? İzi sıfır olmalı ve 2 çarpı 2 tipinde olmalı. 2 çarpı 2 tipinde zaten. Acaba izi sıfır mı? Yani...
+
+239
+00:42:12,244 --> 00:42:35,764
+A artı x artı, bunun izi nedir? D artı t. D artı t eşittir sıfır mı? Bakıyorum hemen, A artı d sıfır, x artı t buradan sıfırdı. Demek ki bu sıfır. O halde A artı b neyin içine düşer? V'nin içine düşer. Demek ki toplamaya göre kapalı.
+
+240
+00:42:37,876 --> 00:42:48,336
+Skader ile çarpmaya göre kapalı olduğu A şikayet niye? Siz bunu bir lambda ile çarparsanız, ne olur bu? Lambda A, lambda D, lambda C, lambda D olur.
+
+241
+00:42:49,056 --> 00:42:55,016
+A artı D sıfırdı, lambda ile A artı D'yi çarparsanız yine sıfır olacak, yani çarpmaya göre de kapalı.
+
+242
+00:42:56,236 --> 00:43:04,436
+Peki, daha sonra neye bakalım demiştik? Şey var mı? Toplamaya göre, ne var mı?
+
+243
+00:43:07,315 --> 00:43:08,515
+Süpür eleman var mı?
+
+244
+00:43:14,260 --> 00:43:30,360
+[öğrenci] bir şey mi dediniz? Z demişim. Toplamaya göre ne var mı? Sıfır eleman var mı? Yani ne yapacağız arkadaşlar? Çok önemli değil. Ben bir şey mi soruyorsunuz? Burada da Z var ya, bunlara kalın bir şey soruyorum.
+
+245
+00:43:32,500 --> 00:43:41,720
+İşte arkadaşlar ben çok ince düşünüyorum ama inşallah yanlış anlamıyorsunuz. Ben sizi rencide etmek için değilim.
+
+246
+00:43:42,356 --> 00:43:44,196
+Bir şey soruyor musunuz diye.
+
+247
+00:43:45,936 --> 00:44:09,776
+A, B, C, D, eşittir, pardon özür, sorayım, artı, bilmiyoruz bunu, x, y, z, t, burada direkt görülüyor zaten de, eşittir.
+
+248
+00:44:11,188 --> 00:44:16,828
+A, B, C, D.
+
+249
+00:44:18,968 --> 00:44:21,728
+Şimdi arkadaşlar, sıfır tanımında neydi?
+
+250
+00:44:23,088 --> 00:44:27,768
+U artı sıfır eşittir sıfır artı U.
+
+251
+00:44:28,688 --> 00:44:33,608
+U da eşittir U olacak şekilde bir sıfır elemanı V var mı?
+
+252
+00:44:39,284 --> 00:44:48,923
+Şimdi, A, bu A. A, V'nin elemanı. A ile yine ben bir tane elemanı toplayacağım, bu sıfır olacak.
+
+253
+00:44:49,143 --> 00:44:59,384
+Tabii bilmiyorum ne olduğunu. A'nın kendisini elde edeceğim. O halde X, Y, Z, T ne olur arkadaşlar? Hepsi sıfır olur. Güzel.
+
+254
+00:45:01,603 --> 00:45:05,623
+Bu koşulu sağlık ama bir de ne olması lazım V'nin içine düşebilmesi için?
+
+255
+00:45:06,963 --> 00:45:25,023
+Arkadaşlar, izin sıfır olması lazım. Evet, izin sıfır sıfır artı sıfır, sıfır. Demek ki, u artı ya da burada a artı bu. a artı sıfır eşittir, sıfır artı a, o da eşittir, a olacak şekilde sıfır elemanıdır ve var.
+
+256
+00:45:26,183 --> 00:45:30,884
+Diğer koşulları da benzer şekilde zaten burada da var. Siz de gösterebilirsiniz arkadaşlar.
+
+257
+00:45:34,291 --> 00:45:46,911
+Bunun yüzden dolayı, bir tane de tersini gösterelim mi? Tersini gösterelim son olarak. Yerlenmesi gösterebilirsiniz. Şimdi tersinde de ne diyordu?
+
+258
+00:45:48,771 --> 00:45:59,071
+A artı eksi A, tabi bunu bilmiyoruz eksanın ne olduğunu şu anda. A artı eksi A eşittir. Sıfır olacak şekilde.
+
+259
+00:46:00,148 --> 00:46:03,327
+Eksi A elemanıdır ve var mı?
+
+260
+00:46:06,347 --> 00:46:07,668
+Hemen A ne?
+
+261
+00:46:10,027 --> 00:46:12,067
+A, B, C, D'den oluşuyordu.
+
+262
+00:46:14,148 --> 00:46:16,947
+Toplama işlemi benim matrislerdeki toplama işlemiydi.
+
+263
+00:46:17,288 --> 00:46:18,567
+Zaten hemen bilirim ki ben.
+
+264
+00:46:19,059 --> 00:46:34,599
+Bu matrisin tersini topladığımızda, ters işaretçisini özür dilerim, sıfır matrisini elde edeceğim. O halde ben C olarak ya da eksi A olarak, daha doğrusu burada C'yi yazdık önce, C eksi A açıkça önemli değil.
+
+265
+00:46:35,480 --> 00:46:46,059
+C diyeyim isterseniz, çok teşekkür ediyorum. A artı C eşitliği olacak şekilde, C elemanıdır, V var mı? C'yi siz eksi A olarak alırsanız,
+
+266
+00:46:46,324 --> 00:47:03,004
+A ile C'yi topladığımız zaman biz sıfır elde ederiz. 1V ne olmalı? C, V'nin içinde mi? Arkadaşlar, yani aldığınız eleman C'nin çevrenin içine düşmeli. Bunun yolda, kontrol etmenin yolda. İzine bakıyorum. Eksi A.
+
+267
+00:47:07,188 --> 00:47:11,188
+x'i a, x'i b, bu da x'i a artı d'ye eşit.
+
+268
+00:47:11,928 --> 00:47:14,728
+a'nın izinden a artı d'nin sıfır olduğunu biliyorum.
+
+269
+00:47:15,228 --> 00:47:16,648
+Demek ki bunun izi de sıfırmış.
+
+270
+00:47:16,827 --> 00:47:27,688
+O halde c'nin bir elemanı ve her a elemanının toplamsal tersi mevcut.
+
+271
+00:47:28,688 --> 00:47:29,508
+Tamam mı?
+
+272
+00:47:32,115 --> 00:47:37,855
+Diğer özellikleri de arkadaşlar benzer olarak gösterebilirsiniz. Zaten şunu söylemiştim.
+
+273
+00:47:41,748 --> 00:47:48,628
+Mesela 7 koşulunu burada göstermiş. Çarpmanın birleşme özelliği. Bu da K, M'ler neler? Veya sayılar.
+
+274
+00:47:50,088 --> 00:47:59,507
+Sıkalarla çarpma işlem olarak tanımlanmıştı zaten. Bu da şu olacak. K çarpı M çarpı A matrisi. A matrisi işte A, B, C'den oluşuyordu.
+
+275
+00:48:00,788 --> 00:48:08,728
+K çarpı M çarpı A işte bu. Bir de ne olmalı? Bunun izi sıfır olmalı.
+
+276
+00:48:10,708 --> 00:48:21,887
+İz'i zaten sıfır niye? A artı bir sıfır neyle çarparsanız çarpın. Sıfır yapar. Bununla bu birbirine eşit olur.
+
+277
+00:48:25,523 --> 00:48:29,143
+Geldik diğer bir önemli örneğe arkadaşlar.
+
+278
+00:48:31,423 --> 00:48:36,003
+Koninomlardan oluşan, sıkça karşınızda çıkacak bildiğiniz koninom.
+
+279
+00:48:37,223 --> 00:48:39,263
+Koninomlar fonksiyonların aslında özel hemleri.
+
+280
+00:48:42,303 --> 00:48:47,263
+Yani her fonksiyon koninomdur ama her fonksiyon koninom değil.
+
+281
+00:48:47,384 --> 00:48:49,003
+Neyse çok oraya girmiyoruz.
+
+282
+00:48:50,363 --> 00:48:52,503
+Burada A0, A, N'ler, R, S, Y var.
+
+283
+00:48:53,427 --> 00:49:01,447
+ve negatif olmayan bir tam sıfır. Yani sıfır olabilir ama negatif olamaz.
+
+284
+00:49:03,667 --> 00:49:07,607
+t'ye bir değişken, t'ye bağlı diyeceğiz zaten o yüzden.
+
+285
+00:49:08,907 --> 00:49:11,267
+pt şu şekilde gösteriliyor arkadaşlar.
+
+286
+00:49:12,347 --> 00:49:19,067
+a ne t üzerinde artı, a ne eksik t üzerinde eksik t artı artı işte a ve t artı a sıfır.
+
+287
+00:49:22,003 --> 00:49:24,344
+Polinom deniyor, özel bir fonksiyon bu.
+
+288
+00:49:26,644 --> 00:49:37,963
+Eğer bu da ani sıfır değilse, bu pt, t'ye bağlı polinomun derecesine ne ediyoruz?
+
+289
+00:49:38,864 --> 00:49:45,063
+Tamam mı? Demek ki bir polinomun derecesi, kat sayısı, bunlara da kat sayılar deniyor.
+
+290
+00:49:49,940 --> 00:50:02,519
+Bir polinomun derecesi, kas sayısı sıfırdan farklı olan en yüksek dereceli, en yüksek kuvveti sahip teriminin derecesine işliyor. Tamam mı?
+
+291
+00:50:03,380 --> 00:50:12,079
+Mesela, iki t artı bir polinomunda en yüksek dereceli terim, bu da t, t'nin derecesinde bir. Demek ki bu polinomun derecesi bir.
+
+292
+00:50:15,284 --> 00:50:37,723
+Burada şey yok, t yok. Bu sabit polinom, buna sabit polinom deniyor. Bunun derecesi de sıfır. Sıfır polinomu da sadece sıfırla gösteriliyor. Bakın polinom bu arada sıfır polinomu. Bunun derecesi yok. Yani bunun derecesi tamamlanmamış.
+
+293
+00:50:43,155 --> 00:50:47,376
+Geldik bir küme tanımlamaya, özel bir küme.
+
+294
+00:50:48,276 --> 00:51:01,115
+Peki, Pn dereceleri n'den küçük ve n'ye eşit bütün polinomlarla beraber sıfır polinomundan olursun.
+
+295
+00:51:01,236 --> 00:51:02,776
+Bir de sıfır polinom var muhakkak.
+
+296
+00:51:04,296 --> 00:51:06,596
+Demek ki derecesi n'den.
+
+297
+00:51:06,996 --> 00:51:15,195
+Küçük ve n'ye eşit bütün polinomlar ve bir de sıfır polinom var bu kümenin içerisinde.
+
+298
+00:51:16,875 --> 00:51:27,396
+Yani, pardon, bu kümen üzerinde vektörer toplama işlemini şu şekilde tanımlıyoruz.
+
+299
+00:51:28,275 --> 00:51:30,215
+İki tane eleman aldım, pt ve qt.
+
+300
+00:51:33,043 --> 00:51:42,623
+Şu şekilde yazabiliriz. Tamam, bunun derecesi burada neymiş gibi görünse de, diyor ya, neyden küçük veya eşit, yani ani burada sıfır olabilir.
+
+301
+00:51:43,063 --> 00:51:49,844
+Yani belki derecesinin engellisi birdir, belki birdir, belki de sıfırdır. Tamam, önemli değil.
+
+302
+00:51:59,092 --> 00:52:02,932
+Polinomlardaki toplama işlemi olarak tanımlıyoruz ki şöyle oluyor arkadaşlar.
+
+303
+00:52:03,712 --> 00:52:07,192
+Aynı dereceli terimleri, kas sayılarını topluyorsunuz.
+
+304
+00:52:07,192 --> 00:52:13,552
+Yani burada Tn'nin yanında kas sayı An var, burada Tn'nin yanında kas sayı Bn var.
+
+305
+00:52:14,032 --> 00:52:21,192
+An artı Bn'i aynı şekilde diğer terimlerin, aynı dereceli terimlerin kas sayılarını topluyorsunuz.
+
+306
+00:52:24,492 --> 00:52:26,372
+Vektöral toplamayı böyle tanımlıyoruz, tamam mı?
+
+307
+00:52:28,083 --> 00:52:37,683
+C skaleri ile çarpmayı da bu polinomdaki her bir kas sayı C ile çarpma olarak kanımlıyoruz.
+
+308
+00:52:38,683 --> 00:52:40,523
+Her bir kas sayı C ile çarpıyoruz.
+
+309
+00:52:42,443 --> 00:52:49,203
+İşte bu işlemler altında arkadaşlar, bu hatta gösterecek mi? Tamam.
+
+310
+00:52:49,723 --> 00:52:52,723
+Devam edelim. Hemen söylemeyelim ne olduğunu.
+
+311
+00:52:56,500 --> 00:53:02,320
+Bu işlemlerle beraber t ne? Bir vektör uzayıdır arkadaşlar.
+
+312
+00:53:05,180 --> 00:53:12,940
+Hemen vektör uzayı olduğunu birkaç tane şeyi göstererek hepsini göstermemiz lazım normalde.
+
+313
+00:53:13,019 --> 00:53:14,860
+Siz diğerlerine bakın o kadar vaktimiz yok.
+
+314
+00:53:18,612 --> 00:53:35,871
+İki tane eleman alacağım değil mi? Bu vektör uzayı değil şu anda. Bu kümeden, Pn'den iki tane eleman aldım. Pt ve Qt. Pn'nin elemanları nasıl elemanlardı? Dereceleri n'den küçük veya eşit ve de sıfır konumundan oluşan elemanlar.
+
+315
+00:53:40,275 --> 00:53:45,615
+Bu yukarıda tanımlanan toplam ve çarpı işlemlerine göre vektör uzay kuşlarının savluyumu ona bakalım.
+
+316
+00:53:48,556 --> 00:53:56,615
+Birincisi şu, kapalı mı toplamaya göre? Siz iki tane polinomu şurada, iki tane polinomu topladığınız zaman,
+
+317
+00:53:58,579 --> 00:54:08,459
+Ne yapar arkadaşlar? Bu iki polinomun toplamı, yine derecesinin n ya da n'den küçük olan, ya da sıfır polinomuysa bunlar, sıfır polinomu yapar.
+
+318
+00:54:08,799 --> 00:54:15,739
+Yani toplamaya göre toplam, şey pardon, kapıldık. Benzor olarak çarpmaya göre kapıldıkta çok rahat görülüyor.
+
+319
+00:54:23,188 --> 00:54:25,768
+Şimdi bir koşulu için, ne demiş bu?
+
+320
+00:54:29,228 --> 00:54:33,128
+Acaba, ilk işleme göre değişme özelliği var mı?
+
+321
+00:54:36,088 --> 00:54:42,668
+Yani, pt artı qt eşit bir qt artı pt mi? pt artı qt'yi yukarıda tanımamıştık.
+
+322
+00:54:43,092 --> 00:55:02,432
+Qt artı pt'de ne olacak? Yine aynı dereceye sahip terimlerin kaç sayı yok toplamı? Yani bn artı ani. Ancak ben biliyorum ki, line sayılarda toplamının değişme özelliği var. Yani bu ani artı bn eşit. O halde Qt artı pt eşittir. Pt artı Qt'ye.
+
+323
+00:55:06,432 --> 00:55:08,932
+Diğerini de benzer olarak gösterebilirsiniz.
+
+324
+00:55:12,820 --> 00:55:37,700
+pt artı sıfır eşittir, pt olacak şekilde sıfır elemanı ne olacak? Sıfır polinomu. Bunu da bulabiliriz zaten. Bir polinomun zıttı da yine polinomun ne eksi alırsanız, yani bütün elemanların negatif'e çevirirseniz toplamayı göre ters olacak. Bu da rahatlıkla görülüyor. Başka bakalım ne varmış?
+
+325
+00:55:39,476 --> 00:55:40,976
+Altıyı gösterelim demiş.
+
+326
+00:55:44,659 --> 00:55:53,079
+Skaderli toplama işleminin Skaderli topladığınız zaman Skaderli çarpma işleminin üzerinde dağılma özelliği var mı?
+
+327
+00:55:53,079 --> 00:56:01,619
+Ona bakacağız. Yani C artı B çarpı Pt eşittir. C çarpı Pt artı.
+
+328
+00:56:12,788 --> 00:56:22,268
+çarpı pt artı d çarpı pt.
+
+329
+00:56:22,867 --> 00:56:27,248
+Buna bakacağız. Bunun için sol taraf hesaplarsınız, sağ taraf hesaplarsınız.
+
+330
+00:56:27,347 --> 00:56:33,347
+Sol taraf hesaplayalım. c artı d çarpı pt demek ne demek?
+
+331
+00:56:33,467 --> 00:56:36,447
+Her bir kas sayısını c artı d ile çarpı demek. Bu da buna eşit.
+
+332
+00:56:39,635 --> 00:56:48,576
+Toplamanın, bildiğiniz toplamın çarpı üzerine, dalının üzerinden bu ne olacak? C çarpı a, n, t, n artı, d çarpı a, n, t üzerinde olur.
+
+333
+00:56:50,115 --> 00:56:57,895
+Burada da c'ler geliyor. Burada hepsini c ve d parantezine alırsanız arkadaşlar, c parantezine aldıklarınız p, t olur.
+
+334
+00:56:57,895 --> 00:57:01,155
+d parantezine aldıklarınız da ne olur?
+
+335
+00:57:03,516 --> 00:57:06,335
+Yine p, t olur. O halde
+
+336
+00:57:06,804 --> 00:57:17,784
+C, skrat çarpımı, p, t, artı, D skrat çarpımı, p, t. Demek ki alt tuşunda sağ olunur.
+
+337
+00:57:33,556 --> 00:57:53,436
+Ve real değerli, sonucu real sayı olan, görüntü kümesi real sayı olan, sürekli, hani anenizde matematik alanlarınız biliyordur ya da matematik bir alanınız biliyorsunuz zaten, sürekli bütün fonksiyonların kümesi olsun.
+
+338
+00:58:01,108 --> 00:58:11,228
+Toplama işlemini, iki fonksiyonun toplamı, skalerle çarpma işlemini de normal bir skalerle fonksiyonun çarpma işlemi olarak tanımlıdır.
+
+339
+00:58:11,347 --> 00:58:15,248
+Çünkü yukarıda zaten polinomlarda yaptığımız işlem de aynısı.
+
+340
+00:58:16,188 --> 00:58:21,648
+Bu işlemlerle beraber V1 vektör uzayı ve C-sonsuz sonsuz de gösteriliyor.
+
+341
+00:58:21,728 --> 00:58:23,967
+Bunlar özel kömeler olduğu için tanımlıyorum arkadaşlar.
+
+342
+00:58:24,347 --> 00:58:26,407
+Yani sınavda karşınıza çıkarsa bunu ne demeyin.
+
+343
+00:58:26,900 --> 00:58:33,659
+Demek ki C eksi sonsuz sonsuz demek, değer değerli sürekli fonksiyonlardan oluşan vektör uzaymış.
+
+344
+00:58:34,319 --> 00:58:41,759
+Ve de toplama, polinomlardaki toplama işlemi, çarpma da yine polinomlardaki çarpma işlemi denk.
+
+345
+00:58:42,039 --> 00:58:43,359
+Skala ile çarpma işlemi de denk.
+
+346
+00:58:47,443 --> 00:58:48,283
+8'e bakın.
+
+347
+00:58:52,980 --> 00:58:56,139
+ve bütün reansiyonların hükümesi, yani re,
+
+348
+00:59:00,307 --> 00:59:07,148
+Hüküme üzerinde toplama işlemini bu eksi V olarak, yani bilinen çıkarma işlemi olarak tanımlamış.
+
+349
+00:59:08,947 --> 00:59:14,668
+Vektörer çarpımında ne olarak tanımlamış? Bildiğimiz çarpma işlemi olarak tanımlamış arkadaşlar.
+
+350
+00:59:16,248 --> 00:59:19,427
+V kümesi bu işlemlerle beraber bir vektör uzayı mıdır?
+
+351
+00:59:22,487 --> 00:59:25,788
+Eğer vektör uzayı değilse vektör uzayı aksiyonlarından hangilerini sağlamış?
+
+352
+00:59:27,603 --> 00:59:53,363
+Şimdi arkadaşlar, ben dedim ya, ilk önce kapalı mı, değil mi, ona bakın. Evet, ilk önce ona bakmanızda fayda var. Ama burada, şimdi çıkarma işleminin bilinen özellikleri var. Ya da bilinen sağlamadığını bildiğimiz özellikleri var. Mesela çıkarma işlemi neyi sağlamaz? Değişme özelliğini sağlamaz. Yani aldığım iki tane real sayı için.
+
+353
+00:59:58,452 --> 01:00:06,751
+U-V eşit değildir, V-U. Hatta bunun için böyle genel yazmanıza da gerekiyor. Bir tane ters örnek vermeniz yeterli.
+
+354
+01:00:07,892 --> 01:00:18,751
+2-3 elemanı da R için 2-3 eşit değildir, 3-2 olduğunda...
+
+355
+01:00:18,963 --> 01:00:28,764
+Bu bir vektör uzayı değildir arkadaşlar. Diğer hangi köşeğe sağlar ise sağlasın yani. Çok da umurumuzda değil. Hatta diğerlerine bakmanıza gerek yok.
+
+356
+01:00:28,764 --> 01:00:37,563
+Tamam mı? Sağlamayan bir tane bulduk. O yüzden bu V kümesi bir vektör uzayı değilmiş.
+
+357
+01:00:48,436 --> 01:00:49,695
+Tjav, bir az önceki.
+
+358
+01:00:55,059 --> 01:01:01,099
+Hatta bunu devamında da birkaç tanesinin sağlanmadığını göstermiş. Önemli değil, bir tanesinin sağlanmadığını göstertek yetmez.
+
+359
+01:01:01,980 --> 01:01:06,880
+Biraz önce sorduğum soruydu bu, dokuzuncu örnek. Ne diyor?
+
+360
+01:01:09,000 --> 01:01:11,680
+Ve bütün tam sıydın hükümesi, yani Z.
+
+361
+01:01:17,043 --> 01:01:30,663
+Bildiğiniz toplama işlemi ve bilinen çarpma işlemi altında, acaba z tam sayıda kümesi bir vektör uzayı mıdır? Soru bu.
+
+362
+01:01:33,143 --> 01:01:40,983
+3 olgun belki aklına şey geldi. Evet vektör uzayıdır diye geldi. Tamam.
+
+363
+01:01:41,811 --> 01:01:45,431
+Vektor uzaylayanlar olmuş mu diye düşüncelerler oldu mu vektör uzaylı oldu mu?
+
+364
+01:02:01,012 --> 01:02:03,072
+Düşünmemişiniz, olsun düşünmeyin.
+
+365
+01:02:04,852 --> 01:02:16,072
+Şimdi arkadaşlar, bu vektör uzayı değil, tam seyir arkadaşlarımız üzerinde bildiğiniz topan ve çarpma işlemler altında bir vektör uzayı değil.
+
+366
+01:02:16,292 --> 01:02:16,932
+Sebebi de şu.
+
+367
+01:02:20,563 --> 01:02:35,203
+U elemandır V. V dediğim ne benim, bir tam sayı. Tam sayılar kümesi, yani U dediğim bir tam sayı. C skalerini nereden alacağım? R sayılardan alacağım. Onu da köküç olarak alayım.
+
+368
+01:02:36,323 --> 01:02:47,563
+Ve ben köküçle bir tam sayı çarparsam ne yapar? Bir tam sayı yapmaz. Arkadaşlar, yani çarpmaya göre kapalı değil. O halde...
+
+369
+01:02:48,820 --> 01:02:56,260
+Tam sayılar kümlesi, bilinen toplama ve bilinen çarpma işlemleri altında bir vektör uzayı değildir.
+
+370
+01:02:57,940 --> 01:03:00,260
+Tamam. Anlaşıldı mı?
+
+371
+01:03:03,795 --> 01:03:11,215
+Şimdi ben bugün üzerek de aslında kendi notlarımdan da işledim. Şundan dolayı, arkadaşlar burada farklı örnekler var.
+
+372
+01:03:11,215 --> 01:03:24,215
+İşte diğer sizin şeyde, duvarınızda olan notlarda farklı örnekler var. Daha fazla örnek görmüş olursunuz böylelikle diye düşündüm.
+
+373
+01:03:26,795 --> 01:03:28,536
+Neyse buna bakarsınız.
+
+374
+01:03:34,387 --> 01:03:37,788
+Bakın şu not çok önemli bir not.
+
+375
+01:03:40,307 --> 01:03:44,188
+Definition, bu da İngilizce notlardan kalmış da neyse.
+
+376
+01:03:46,268 --> 01:03:56,588
+Çünkü, size verilen, iki işlemle beraber verilen V kümisinin vektör uzayı olduğunu göstermek için,
+
+377
+01:03:56,980 --> 01:04:05,000
+Bütün o işte yukarıda ilk başta verdiğimiz sanımdaki bütün koşullarına sağladığını göstermek gerekiyor. Yani vektör uzayı olduğunu göstermek için.
+
+378
+01:04:05,179 --> 01:04:21,559
+Ancak vektör uzayı olduğunu göster, daha doğrusu vektör uzayı olduğunu olmadığını göstermek için, gerçi olup olmadığını ilk başta bilemezsiniz. O zaman şöyle düzelteyim.
+
+379
+01:04:21,972 --> 01:04:32,592
+İlk önce verilen bir kümenin vektör uzayı olup olmadığını kontrol etmeniz için toplamaya göre ve çarpmaya göre kapalı mı ona bakıyorsunuz.
+
+380
+01:04:32,652 --> 01:04:34,332
+Yani A ve B koşulları bunu söylüyordu.
+
+381
+01:04:34,452 --> 01:04:35,552
+Toplamaya göre kapalı mı?
+
+382
+01:04:39,315 --> 01:04:40,655
+Çapme evleri kapalı mı?
+
+383
+01:04:44,436 --> 01:04:57,916
+Bunu kontrol ettikten sonra eğer kapalıysa arkadaşlar, birinci işleme göre sıfır elemanı var mı, yok mu, ona bakmanız daha avantajlı olacak.
+
+384
+01:05:00,056 --> 01:05:06,056
+Eğer sıfır elemanı da varsa, her elemanın tersi var mı, yok mu, ona bakın, o da varsa diğerlerine bakın.
+
+385
+01:05:09,155 --> 01:05:09,996
+Anlaşıldı mı?
+
+386
+01:05:16,052 --> 01:05:17,052
+Teşekkürler.
+
+387
+01:05:22,547 --> 01:05:32,247
+Geldik alt vektör uzayı konusuna. Bu da çok önemli. Her sınavda karşınıza çıkacak bir konu.
+
+388
+01:05:38,324 --> 01:05:57,744
+Tabii şimdi online dersin şöyle bir sıkıntısı var arkadaşlar. Pardon. Tamam [öğrenci] bunları şey yapacağım, paylaşacağım, yazmana gerek yok ama tabii üstündeki notlarla paylaşamıyorum, onu bilmiyorum. O zaman şey oluyor, farklı bir şeyler çıkıyor falan. En azından benim yazdıklarımı yazabilirsin.
+
+389
+01:06:00,483 --> 01:06:02,344
+Sürekli konuşmak zorunda kalıyorum.
+
+390
+01:06:05,907 --> 01:06:30,907
+Siz de hiç şey yapmıyorsunuz. [kişisel bilgi]. Artık konuşamıyorum ben bir yerden sonra. Ders de olsaydı en azından yazardım şiddetim onlar sınıfta. Sonuçluklarımı yazmış oluyorum ben. Şimdi yazılanları okumuş oluyorum.
+
+391
+01:06:34,260 --> 01:06:36,300
+Arkadaşlar, vektör uzayı çok önemli bir kavram.
+
+392
+01:06:38,800 --> 01:06:40,280
+Sınavda karşınızda çıkacak.
+
+393
+01:06:44,211 --> 01:06:48,211
+ve vektör uzayı arkadaşlar, v'nin vektör uzayı olduğunu biliyoruz.
+
+394
+01:06:50,211 --> 01:06:55,211
+W de, o W mi deniyor? W mi deniyor?
+
+395
+01:06:57,211 --> 01:07:03,211
+Türkçe W diyorlar sanki, şimdi bak ne yazıyor. W hem W hem W.
+
+396
+01:07:04,211 --> 01:07:07,211
+W, v'nin...
+
+397
+01:07:10,579 --> 01:07:24,859
+Şu alt küme işareti. Bazen bunu kaldırıyorlar. Bu W'nun V'ye eşit olabileceği anlamına geliyor. Şu eşitlik. Ya da kaldırırsanız eşit olmaz.
+
+398
+01:07:26,859 --> 01:07:35,119
+W, V'nin boş kümeden, bu da boş küme işareti, boş küme böyle gösteriliyor.
+
+399
+01:07:36,851 --> 01:07:38,431
+Şöyle de gösterilir.
+
+400
+01:07:42,612 --> 01:07:48,212
+boş kümeden farklı bir alt kümesi olsun. Şimdi V vektör uzayı ya arkadaşlar.
+
+401
+01:07:51,132 --> 01:07:57,112
+Demek ki V üzerinde tanımlı toplama ve istikrarla çarpma işlemi altında bir vektör uzayı.
+
+402
+01:07:57,112 --> 01:08:06,172
+Eğer W bu V'deki işlemler altında bir vektör uzayı oluyorsa,
+
+403
+01:08:07,507 --> 01:08:14,887
+W'da bu V'deki işlemler altında bir vektör uzayı oluyorsa, W'ye V'nin alt vektör uzayı deniyor.
+
+404
+01:08:34,260 --> 01:08:36,899
+alt vektör uzayı deniyor.
+
+405
+01:08:38,059 --> 01:08:45,539
+Tabii biz alt vektör uzayını göstermek için ya da alt vektör uzayı olduğunu göstermek için arkadaşlar,
+
+406
+01:08:47,760 --> 01:08:50,960
+bütün bu koşulların sağlanmanı göstermemiz gerekmiyor.
+
+407
+01:08:51,800 --> 01:08:53,899
+Bu tören var, tören bir.
+
+408
+01:08:55,280 --> 01:09:01,600
+Bu tören yardımıyla bir alt kümenin alt vektör uzayı olup olmadığını biz göstermiş oluyoruz.
+
+409
+01:09:01,935 --> 01:09:14,575
+Şimdi burada küçük bir not size söyleyeyim. Diğer notlar da farklı almış biraz. Aslında farklı almasının bir şeyi yok, aynı şeyler ama oraya bir geleyim, [öğrenci].
+
+410
+01:09:27,988 --> 01:09:32,868
+Arkadaşlar, notların sunumdan ziyade piliye forması herhalde daha iyi değil mi?
+
+411
+01:09:34,068 --> 01:09:36,448
+Bu pili şeylerin sunumları...
+
+412
+01:09:36,448 --> 01:09:37,188
+Kötü oluyorum daha iyi.
+
+413
+01:09:37,708 --> 01:09:40,788
+Kötü oluyor değil mi? Çıktı sınavınca ben sizin için de.
+
+414
+01:09:42,068 --> 01:09:43,568
+Yani yapacak bir şey yok.
+
+415
+01:09:48,115 --> 01:10:13,496
+Benim noktarım İngilizce, o yüzden ben şey yapamıyorum, pdf noktarı. İngilizce üzerinden anlatınca da bazı arkadaşlar da sıkıntı olabiliyor ister istemez, yani niye Türkçe dersleri İngilizce noktalar üzerinden anlatılıyor gibi. O yüzden ben de Mehmet Emur'u'yu sağ olsun Türkçe noktalarını bana verdi. Ondan dolayı böyle yapıyoruz. Ve de İngilizce dersleri uyumlu olsun diye yine onun İngilizce noktalarını kullanıyorum. Problem o.
+
+416
+01:10:14,131 --> 01:10:18,391
+Şimdi bakın, geldik vektör uzayını nasıl test ediyoruz, at vektör uzayı, pardon.
+
+417
+01:10:20,311 --> 01:10:25,551
+Ve toplama ve çarpma işlemleriyle beraber vektör uzayı. Tamam mı?
+
+418
+01:10:26,791 --> 01:10:36,971
+W, V'nin boştan farklı bir alt kümesi, W'nun V'nin bir alt uzayı olabilmesi için şu iki koşulu sağlaması lazım arkadaşlar.
+
+419
+01:10:40,051 --> 01:10:42,551
+V'deki toplamayı göre kapılacak.
+
+420
+01:10:51,091 --> 01:11:11,731
+Ve yine W, V'deki çarpmaya göre kapalı olacak. Bakın çok kolay. Demek ki toplamaya ve çarpmaya göre V yükmesi üzerinde, V vektör uzayı üzerinde kalınma toplama ve çarpmaya göre kapalı olması yeterli bizim için, alt vektör uzayı olabilmesi için.
+
+421
+01:11:19,060 --> 01:11:36,860
+Çok az kaynaklarda. Ben bunu bayağı araştırdım. Yani hani araştırdım derken araştırılacak bir durum da değildi. Acaba ben mi yanlış biliyorum ama burada büyük ihtimalle Mehmet Emre'nin de şundan dolayı bunu yazdı. Burada bir üçüncü koşul da var. Kafanızı karıştırmasın diye açıklıyorum bunu arkadaşlar. Veğne sıfır, onun sıfır hissediyor.
+
+422
+01:11:40,360 --> 01:11:45,180
+Zaten hani biz alt vektör uzayı tanımında dedik ya.
+
+423
+01:11:46,612 --> 01:12:12,372
+V'nin, W, V'nin alt kümesi, eğer W, V'nin işlemleri altında bir vektör uzayı oluşturuyorsa, alt vektör uzayıdır dedik. Zaten V'nin sıfırı onunla sıfırı olacak. Bir ikincisi, bir ikincisi, biz bu üçüncü koşulu arkadaşlar, alt vektör uzayı olduğunu göstermek için değil de,
+
+424
+01:12:12,979 --> 01:12:28,219
+Alt vektör uzayı olmadığını göstermek için kullanıyoruz. Yani şu iki koşul yeterli. Bunun olmasına gerek yok. Bunun bakmanıza gerek yok. Anlatabildim mi? Önök üzerinde de göreceğiz zaten.
+
+425
+01:12:40,851 --> 01:12:57,351
+Göstermenize gerek yok, alt vektör uzayının olduğunu göstermeniz için. Ama alt vektör uzayı değilse zaten öyledir. Yani bunun sıfırı, bunun sıfırı değildir. Neyse, geleyim buraya. Böyle bir üzerinde vardır zaten.
+
+426
+01:12:58,832 --> 01:13:06,551
+Demek ki bu iki koşul sağlanıyorsa, alt vektör uzayı oluyormuş. Buna alt vektör uzayın kesti de deniyor.
+
+427
+01:13:10,452 --> 01:13:34,172
+Şimdi bakın bu 10. örnekle çok çok önemli bir örnek. Diyor ki, sınavda böyle bir şey sorulur size, her vektör uzayının en az iki tane alt uzayı vardır. Bir tanesi kendisi, bir tanesi de sadece sıfır vektöründen oluşan şu küme, alt kümesi.
+
+428
+01:13:37,716 --> 01:13:49,615
+Zaten kendisi, yani o yüzden eşitlik vardı ya, V'nin alt kümesi olduğunda, V vektör uzayı zaten, bu da vektör uzayı.
+
+429
+01:13:50,756 --> 01:13:58,316
+O zaman kendisinin alt vektör uzayı bu bir. İkincisi, sadece sıfır vektöründen oluşan küme veren alt vektör uzayı.
+
+430
+01:13:59,676 --> 01:14:02,396
+Sıfırla sıfırı toplarsak sıfır yapar.
+
+431
+01:14:05,652 --> 01:14:32,551
+İçine düştü. Yukarıdaki şey kullanıyorum arkadaşlar. Teoremi kullanıyorum. Sıfırla sıfır toplarsak sıfır yapacak. Herhangi bir skaderle sıfır çarptığımız zaman da yine sıfır yapacak. Yani kümenin içine düşüyor. Diğer özellikleri de zaten sağlatmanıza gerek yok. Bu teorem bu ikisi yeterli diyor. Bu durumda.
+
+432
+01:14:35,123 --> 01:14:45,123
+toplamaya ve skalayla çarpmaya göre kapalı olduğundan V'nin bir alt vektör uzayıdır. Buna V'nin sıfır uzayı da deniyor.
+
+433
+01:14:58,228 --> 01:15:15,127
+P, bütün polinomların vektör uzayı. Yani derecesini falan bilmiyoruz. Bütün sıfır polinomu da var, işte neyinci dereceden polinomlar da var, neyinci dereceden büyük polinomlar da var.
+
+434
+01:15:16,587 --> 01:15:22,127
+Bu polinomların vektör uzayı. Yani bu küme üzerinde, P kümesi üzerinde.
+
+435
+01:15:23,539 --> 01:15:31,719
+Toplama işlemi, iki tane polinomu toplama, çarpma işlemi de bir polinomla bir skalerin çarpması olarak tanımlanmış.
+
+436
+01:15:33,199 --> 01:15:42,300
+P'nin derecesi 2'ye eşit ve 2'den küçük olan bütün polinomları ve sıfır polinomunu içeren bir alt kümesini alalım, P2.
+
+437
+01:15:43,920 --> 01:15:48,360
+P2, derecesi 2'den küçük veya eşit olan
+
+438
+01:15:49,587 --> 01:16:16,188
+Ve sıfır konularını içeren bir küme. Bu acaba bütün konuların vektör uzayı olan P'nin bir alt vektör uzayı mıdır? Ne yapacağım hemen? Bu P2'de iki tane eleman alacağım. Bu iki tane elemanın toplamı P2'nin içine düşer mi? Ona bakacağım.
+
+439
+01:16:18,100 --> 01:16:20,420
+Göstermemişmişsiniz ama hızlıca gösterelim.
+
+440
+01:16:25,460 --> 01:16:30,219
+P2'nin elemanları, pt derecesi,
+
+441
+01:16:34,131 --> 01:16:58,011
+A2, c'nin karesi, artı, a bit t, artı, a sıfır, qt ve b2, t kare artı, b bit t artı, b sıfır.
+
+442
+01:16:58,011 --> 01:16:59,252
+Tamam.
+
+443
+01:17:00,564 --> 01:17:03,904
+Ne yapacağım? Bu iki elemanın toplamı ne yapacak arkadaşlar?
+
+444
+01:17:04,623 --> 01:17:11,104
+a2 artı b2 tekeri artı a1 artı b1 t artı a0 artı b0.
+
+445
+01:17:13,784 --> 01:17:18,784
+Bu da, elde ettim, polinom da, yani pt artı qt polinomu da nedir?
+
+446
+01:17:19,504 --> 01:17:26,123
+Birisi ikiden küçük veya eşit bir polinomudur. Demek ki p2'nin içine düşer. Yani a koşul sağlamakü öğrenmekte ki.
+
+447
+01:17:27,060 --> 01:17:37,739
+pt'yi bir c skaleri ile çarparsam yine derecesi 2 veya 2'den küçük bir polinom ergi ederim. Demek ki p2, p'nin bir alt vektör uzayı.
+
+448
+01:17:45,043 --> 01:17:46,783
+Genel olarak arkadaşlar,
+
+449
+01:17:51,796 --> 01:17:59,655
+Derecesi n'den küçük veya eşit olan bütün polinomları ve sıfır polinomlu içeren P-N kümesi, P vektör uzayının bir alt uzayıdır.
+
+450
+01:18:01,136 --> 01:18:14,476
+Ayrıca derecesi n artı 1'e eşit veya n artı 1'den küçük olan polinomların vektör uzayının bir alt uzayı da P-N'dir.
+
+451
+01:18:14,476 --> 01:18:16,836
+Yani derecesi n'den küçük veya eşit olanlar.
+
+452
+01:18:18,195 --> 01:18:40,775
+12. örneğe bakın, burada da ilginç bir şey var. Biraz önceki tanımımıza benzer. Ve bu defa derecesi sadece 2 olan. Bütün polinomların kümesi olarak kalmış. Derecesi 2'den küçük veya eşit değil, bakın sadece eşit.
+
+453
+01:18:42,515 --> 01:19:02,595
+Ve bütün polinomların vektör uzayı, P'nin bir alt kümesi, değil mi? Bütün polinomların kümesinin bir alt kümesi, evet. Ancak alt uzayı değil. Neden? Bunun için hemen alt vektör uzayı şeyine bakacaksınız. Ne derler? Alt vektör uzayı aksiyonlarına bakacağız.
+
+454
+01:19:03,415 --> 01:19:08,615
+Derecesi ikonlar iki tane polinom alıp, genel almanıza gerek yok.
+
+455
+01:19:09,939 --> 01:19:37,539
+Çünkü öyle olmalı aşikar. Bakın, bu da ikinci dereceden bir koninom. Bu da ikinci dereceden bir koninom. Ancak bunları toplarsanız, iki tekare ile eksi iki tekare birbirine götürür. Ne olur? 4T artı 3 diye bir koninom elde edersiniz. Bunun derecesi iki değil. Yani neyin içine düşmez, V'nin içine düşmez. Dolayısıyla bir alt vektör uzayı değildir.
+
+456
+01:19:39,380 --> 01:19:40,039
+Tamam mı?
+
+457
+01:19:41,699 --> 01:19:42,340
+Tamam.
+
+458
+01:19:43,059 --> 01:19:44,439
+Anlaşılıyor değil mi arkadaşlar?
+
+459
+01:19:46,140 --> 01:19:47,199
+Evet hocam.
+
+460
+01:19:51,891 --> 01:19:54,591
+Geldik 13. örneğe.
+
+461
+01:20:01,939 --> 01:20:09,739
+Diğer notlarda da bayağı bir bol örnek var. Şimdi başka bir şeyden de geniştire birkaç örnek yazacağım.
+
+462
+01:20:10,679 --> 01:20:19,639
+W, R3'te, yani 3 çarpı 1 tipinde matrislerin kümesi aslında.
+
+463
+01:20:21,419 --> 01:20:24,939
+A, B, R, T, neler? R, T, neler? R, T, neler? Bütün vektörlerin kümesi.
+
+464
+01:20:26,228 --> 01:20:30,748
+Ve bu küm üzerinde, W üzerinde toplama işlemini şu şekilde tanımlıyor.
+
+465
+01:20:31,807 --> 01:20:35,128
+Yok, bildiğimiz toplama işlemi olarak tanımlamış. Tamam, farklı bir şey yok.
+
+466
+01:20:36,208 --> 01:20:36,387
+Tamam.
+
+467
+01:20:38,668 --> 01:20:41,148
+Ben farklı mı tanımladı diye düşündüm ama yok.
+
+468
+01:20:41,688 --> 01:20:49,728
+Bildiğimiz toplama işlemi, matrislerdeki, çarpma işlemini de skalerde çarpma işlemi olarak tanımlamış.
+
+469
+01:20:54,644 --> 01:20:55,463
+Bir dakika ya.
+
+470
+01:20:58,284 --> 01:20:59,644
+Özür dilerim arkadaşlar.
+
+471
+01:21:00,064 --> 01:21:00,264
+Pardon.
+
+472
+01:21:02,623 --> 01:21:14,503
+W şu formdaki A, B, A artı B, normalde R3'teki elemanlar nasıl elemanlar?
+
+473
+01:21:15,304 --> 01:21:17,423
+A, B, C şeklinde elemanlar.
+
+474
+01:21:18,264 --> 01:21:21,864
+W özel olarak A, B, A artı B olarak tanımlamış.
+
+475
+01:21:22,355 --> 01:21:24,835
+W, R için bir alt kümesi.
+
+476
+01:21:28,564 --> 01:21:31,264
+Göstereyim güzel olmadı ama olsun.
+
+477
+01:21:32,564 --> 01:21:37,963
+Şimdi W'nun, R3'ün bir alt vektör uzayı olmadığına bakacağız. Ne yapacağız?
+
+478
+01:21:38,664 --> 01:21:44,564
+Alt vektör uzayı olma teoremini kullanacağız. İki tane eleman alacağım W'dan. U ve V.
+
+479
+01:21:44,564 --> 01:21:52,963
+W'nun elemanları A, B, A artı B şeklinde. O halde A1, B'dir. A1 artı B'dir. V'de A2, B2, A2 artı B2 şeklinde olacak.
+
+480
+01:21:55,731 --> 01:22:19,231
+Matrisler, toplayım işlemini kullanacağım. Ne oldu? A1 artı A2, B1 artı B2, A1 artı A2 artı B1 artı B2. Yani W'nun içine düştü. Skalarla çarparsam da yine W'nun içine düşüyor. Dolayısıyla ne oluyor? W, Z'in bir alt vektör uzayı olmuş oluyor.
+
+481
+01:22:29,332 --> 01:22:45,452
+Arkadaşlar, şeyde de yine vektör uzayında da, yani şu toplamanın yerine, vektör uzayı olarak veriliyorsun, normal toplama gibi çarpma işlemin yerine de bu şekilde gösterilebilirim.
+
+482
+01:22:45,452 --> 01:22:51,852
+Yani böyle şekilde de gösterebiliriz.
+
+483
+01:22:55,636 --> 01:22:56,636
+Peki.
+
+484
+01:22:59,236 --> 01:23:00,636
+Şimdi bunu
+
+485
+01:23:02,136 --> 01:23:03,236
+acaba
+
+486
+01:23:03,436 --> 01:23:06,136
+bu dahil mi diye düşünüyorum da
+
+487
+01:23:09,136 --> 01:23:11,136
+Diğerme kavramı dahil değil.
+
+488
+01:23:11,636 --> 01:23:14,636
+Şeye bakalım. Diğer nota bakalım.
+
+489
+01:23:29,492 --> 01:23:41,912
+Bunların hepsinin alt vektör uzayı olduğunu söyledik. Gerçi P2'nin, P2 değil de, iki mertebeli bir olumlardan oluşan sadece alt vektör uzayı olmadığını söyledik.
+
+490
+01:23:44,552 --> 01:23:51,771
+Burada da yine bol bol örnek var. Şeye bakıyorum sadece arkadaşlar, germe kavramıyla alakalı bir şey var mı diye.
+
+491
+01:23:53,971 --> 01:23:59,351
+Evet, evet, yani 11. haftada doğrudan öğrettim. Ama burada öyle bir şey yok.
+
+492
+01:24:04,083 --> 01:24:05,804
+Şimdi neymiş?
+
+493
+01:24:09,163 --> 01:24:10,844
+Bu İngilizcesi, muhtarın.
+
+494
+01:24:11,884 --> 01:24:14,064
+Ya ben size soru gösterecektim.
+
+495
+01:24:14,543 --> 01:24:15,463
+Şuradan yazacağım.
+
+496
+01:24:28,020 --> 01:24:28,739
+Sonuç yok.
+
+497
+01:24:52,307 --> 01:24:55,947
+Kaç eşittir?
+
+498
+01:25:09,268 --> 01:25:12,728
+Böyle ki, her elementu vuruyor.
+
+499
+01:25:16,916 --> 01:25:22,916
+kümesi. Bakın bu arkadaşlar ikillerden oluşuyor. Neyin alt kümesi bu?
+
+500
+01:25:24,916 --> 01:25:25,868
+R2 mi?
+
+501
+01:25:30,612 --> 01:25:44,211
+Fümisi, Y2'nin bir alt vektör uzayımız.
+
+502
+01:26:10,676 --> 01:26:11,496
+Ne dersiniz?
+
+503
+01:26:29,844 --> 01:26:31,384
+Sınavı böyle sordular sizi.
+
+504
+01:26:37,395 --> 01:26:38,275
+Ne yöpeceksiniz?
+
+505
+01:26:51,572 --> 01:26:53,392
+Evet, vama, çiklava.
+
+506
+01:27:08,020 --> 01:27:09,020
+Merhaba, merhaba.
+
+507
+01:27:12,851 --> 01:27:16,231
+alt elektroze yolunma koşullarını sağlıyordu. O yüzden güzel değil mi?
+
+508
+01:27:16,231 --> 01:27:23,652
+Ona bakacağız başka bir şey yok arkadaşlar. İki tane eleman alın. Hatta buna kafanız karışıyorsa u değil.
+
+509
+01:27:23,652 --> 01:27:31,652
+u eşittir, t eksi beş de v eşittir.
+
+510
+01:27:31,652 --> 01:27:36,152
+Buna da t değil.
+
+511
+01:27:39,220 --> 01:27:42,220
+K diyeyim, yani ne bileyim, K diyeyim.
+
+512
+01:27:44,220 --> 01:27:46,220
+Eksisi 5K.
+
+513
+01:27:46,220 --> 01:27:49,220
+Elemanıdır, ne bu? E.
+
+514
+01:27:50,220 --> 01:27:59,220
+E için 1, U artı, tabi burada da R2 ne bir şey?
+
+515
+01:28:00,220 --> 01:28:05,164
+Vektör uzayı, bildiğimiz vektörlerdeki toplama ve iskareli çakma işlemi altında.
+
+516
+01:28:06,963 --> 01:28:11,364
+Bu halde u artı v eşittir u artı v.
+
+517
+01:28:13,364 --> 01:28:15,064
+u ile v'yi toplamak ne demek?
+
+518
+01:28:16,604 --> 01:28:22,304
+t artı k eksi beş parantezinde t artı k.
+
+519
+01:28:27,764 --> 01:28:41,604
+t real sayı, k real sayı, bu da bir real sayı, p gibi, bu da p, p, eksi 5p.
+
+520
+01:28:43,604 --> 01:28:48,604
+Bakıyorum, evet, t eksi 5'ti, haşın içine düşüyor o zaman.
+
+521
+01:28:53,203 --> 01:28:55,304
+C çarpı U'ya bakıyorum.
+
+522
+01:28:59,444 --> 01:28:59,944
+C
+
+523
+01:28:59,944 --> 01:29:02,324
+T
+
+524
+01:29:02,324 --> 01:29:04,904
+Eksip
+
+525
+01:29:04,904 --> 01:29:05,624
+Beş
+
+526
+01:29:21,076 --> 01:29:22,016
+Bu ne olacak arkadaşlar?
+
+527
+01:29:23,516 --> 01:29:24,695
+C çarpı t,
+
+528
+01:29:25,775 --> 01:29:27,096
+eksi 5 çarpı
+
+529
+01:29:27,096 --> 01:29:28,856
+ct,
+
+530
+01:29:29,496 --> 01:29:30,256
+yine ct,
+
+531
+01:29:30,996 --> 01:29:32,676
+a gibi bir real sayı,
+
+532
+01:29:33,796 --> 01:29:34,536
+ve bu da a,
+
+533
+01:29:35,136 --> 01:29:37,655
+yani a, eksi 5a,
+
+534
+01:29:37,655 --> 01:29:38,896
+bu da
+
+535
+01:29:38,896 --> 01:29:41,456
+e'nin elemanı. Bu halde
+
+536
+01:29:41,456 --> 01:29:43,956
+h kümesi
+
+537
+01:29:43,956 --> 01:29:47,076
+r2'nin bir alt vektör uzayıymış.
+
+538
+01:29:48,115 --> 01:30:00,215
+Hatta bunu şöyle de geometrik olarak bir yorumlayabilirsiniz. Yani yorumlayabiliriz. Çok güzel bir şey var. Şimdi H'nin elemanları ne var arkadaşlar?
+
+539
+01:30:03,215 --> 01:30:04,835
+T, x, 5, t.
+
+540
+01:30:04,835 --> 01:30:14,215
+5, t şeklinde elemanlar. O halde, U diyelim burada, T herhangi bir...
+
+541
+01:30:14,387 --> 01:30:33,327
+Real sayı burada ya da herhangi bir parametre. O halde ben bunu k çarpı bir eksi beş olarak yazabilirim değil mi? Demek ki k'nin elemanları k çarpı bir eksi beş biçiminde yazılabiliyor.
+
+542
+01:30:40,916 --> 01:30:44,416
+Çünkü vektör uzayının bir elemanı var. Biz vektör diyoruz.
+
+543
+01:30:45,876 --> 01:30:56,315
+1-5 ile 1 real sayının çarpımına eşit. Peki, 1-5 ne arkadaşlar? 1-5 aslında bir vektör.
+
+544
+01:31:06,003 --> 01:31:17,023
+Biz nasıl gösterebiliriz? Doğru olarak sıfır sıfır noktası ve bir eksi beş noktalarından geçen doğru üstünde.
+
+545
+01:31:17,023 --> 01:31:32,583
+Yani u vektörünü belirten vektör ya da belirten nokta sıfır sıfır ve bir eksi beş noktalarından geçen doğrunun üstündeymiş.
+
+546
+01:31:34,387 --> 01:31:37,927
+Geometrik olarak o zaman her kümlesine ne diyebilirsiniz arkadaşlar?
+
+547
+01:32:00,212 --> 01:32:08,572
+Demek ki başlangıç noktasından ve 1-5 noktasından geçen doğru.
+
+548
+01:32:12,372 --> 01:32:14,152
+Her ekümesi böyle bir doğruymuş.
+
+549
+01:32:15,832 --> 01:32:16,692
+Tamam mı?
+
+550
+01:32:18,832 --> 01:32:22,832
+Hocam bu şartlarda ikinci koşul hep doğru çıkmaz mı?
+
+551
+01:32:22,912 --> 01:32:25,752
+C ile bir şeyle çarptığımızda yine katı eder.
+
+552
+01:32:25,872 --> 01:32:27,112
+O da bir LSEV olur zaten.
+
+553
+01:32:28,352 --> 01:32:29,352
+Bir ders söyle anlamadım.
+
+554
+01:32:30,092 --> 01:32:33,252
+İkinci de C ile çarpıyoruz ya vektörü.
+
+555
+01:32:33,272 --> 01:32:33,512
+Evet.
+
+556
+01:32:34,092 --> 01:32:36,392
+Alt uzayı vektörü mü?
+
+557
+01:32:36,472 --> 01:32:37,772
+Alt uzayı dedi zaten.
+
+558
+01:32:38,547 --> 01:32:45,887
+O zaman her defasında zaten bir kat sayıyla çarptığımızda yine başka bir real sayı yetmez mi? Her durumda aynı şey olmaz mı?
+
+559
+01:32:48,307 --> 01:32:50,927
+Örnek üzerinde söyler misin? Şu C çarpı U'yu mu diyorsun?
+
+560
+01:32:51,347 --> 01:32:51,728
+Evet.
+
+561
+01:32:52,408 --> 01:32:58,847
+Şimdi C çarpı U demek ne demek? C bir real sayı, C ile T eksi beş T'yi çarp demek.
+
+562
+01:33:00,368 --> 01:33:01,168
+Tamam mı?
+
+563
+01:33:01,948 --> 01:33:02,368
+Evet.
+
+564
+01:33:03,128 --> 01:33:04,648
+Burada T'dir real sayı.
+
+565
+01:33:05,076 --> 01:33:16,396
+C çarpı t, birer sayı yapacak, a real sayısı. C çarpı t zaten real sayıydı, a işte, a eksi beşer. Yani şu formda olmasını istiyorum ama o yüzden h'nin içine düştü. Sen neyi sordun?
+
+566
+01:33:17,136 --> 01:33:25,916
+Zaten hep aynı şeyi sağlamaz mı? Bir sayıyla herhangi bir sayının çarpımı bir real sayıdır diye. Hep sağlar diyorum bunu.
+
+567
+01:33:27,060 --> 01:33:41,760
+Hep sağlamasın ben sana bir tane örnek vereyim. Yani bu tanımladığımız küme üzerinde sağlanıyor. Hep niye sağlasın? Özel olarak K kümesi bu şekilde tanımlamış. Aslında sağlamayan örnek. Yani sen kümeyi nasıl tanımlarsan ona göre K.
+
+568
+01:33:48,307 --> 01:34:02,707
+t artı 1, 2t. t elemanıdır, r. r içinin alt vektör uzayı mıdır?
+
+569
+01:34:17,939 --> 01:34:22,019
+Burada toplama işlemi olduğu için bir vektörle çarparsın. Tamam hocam, anladım. Çok sağ olun.
+
+570
+01:34:22,339 --> 01:34:26,479
+Tamam. Bu arkadaşlar alt vektör uzayı değil.
+
+571
+01:34:29,559 --> 01:34:31,059
+Şunu yapabilirsiniz.
+
+572
+01:34:32,339 --> 01:34:38,559
+Yine Mehmet Eminecun anlatlarında anlatırken söylemiştim.
+
+573
+01:34:39,519 --> 01:34:45,159
+Alt vektör uzayı olduğunu, alt vektör uzayı olmadığını göstermek için arkadaşlar.
+
+574
+01:34:45,971 --> 01:34:53,971
+0'ın bu küme içinde olmadığını gösterirseniz, taklit gözü olmadığını göstermiş olursunuz.
+
+575
+01:34:53,971 --> 01:35:02,971
+R2'nin 0 nedir? 0, 0'dur. Değil mi? Acaba 0, 0 bu kümenin içerisinde mi?
+
+576
+01:35:06,355 --> 01:35:17,055
+0, 0, hükümen içerisinde olmalı. 0 içermedi. 0, 0 eşittir. T artı 1, 2 T olacak şekilde.
+
+577
+01:35:23,699 --> 01:35:25,699
+Bulacak şekilde,
+
+578
+01:35:29,140 --> 01:35:32,420
+t elemanları z bulunamadığında,
+
+579
+01:35:37,716 --> 01:35:39,716
+0, 0 elemanı değildir.
+
+580
+01:35:39,716 --> 01:35:42,716
+E, ne kadar kötü yazdım.
+
+581
+01:35:46,716 --> 01:35:51,716
+Dolayısıyla, E, R'nin, R'nin, R'nin, bir alt vektör uzayı değildir.
+
+582
+01:35:53,716 --> 01:35:58,716
+Ya da, şunu yapabilirsiniz, yukarıdaki koşullarda olduğu gibi.
+
+583
+01:36:02,452 --> 01:36:21,231
+t artı 1, 2t, bu u vektörü, v vektörü de k artı 1, 2k, bu iki vektörü topluyorum, u artı v yazayım, t artı k artı 2.
+
+584
+01:36:25,716 --> 01:36:37,496
+t artı k, t artı k'ya ben p diyeyim, p artı iki, iki tane p.
+
+585
+01:36:38,956 --> 01:36:42,976
+Halbuki ne formlu olmalıydı? p artı bir formlu olmalıydı.
+
+586
+01:36:43,416 --> 01:36:50,936
+Dolayısıyla bu, p'nin içinde değil, yani alt vektör uzayı değil arkadaşlar.
+
+587
+01:36:53,108 --> 01:37:18,528
+Bunlarla alakalı şeyde de bayağı örnek var. Mehmet Emine'cun hocanın notlarında da örnek var bayağı. Ben de örnek yazdım. Vaktimin imkan verdiği ölçüde. O zaman haftaya görüşeceğiz herhalde sınav dönünce. Yine de şimdiden başarı var. Efendim bekle.
+
+588
+01:37:26,707 --> 01:37:30,047
+İlk hatırlatayım, unutmuştum. Tamam, anlattarı yükleyeyim.
+
+589
+01:37:34,420 --> 01:37:40,339
+Haftaya görüşürüz. Haftaya kadar ama çalışın. En azından, evet evet dersin duvarına yükleyeceğim.
+
+590
+01:37:42,279 --> 01:37:46,859
+Normalde haftaya ders işlemeyin, soru çözeriz. O yüzden benimle şanslısınız diye.
+
+591
+01:37:48,779 --> 01:37:50,379
+Haftaya soru çözeriz inşallah.
+
+592
+01:37:52,179 --> 01:37:59,119
+Ama gerçi şu da var. Şimdi diğer arkadaşlara haksızlık oluyor ama yapacak da bir şey yok ki yani.
+
+593
+01:37:59,796 --> 01:38:11,816
+Neyse, bakarız. Haftaya daha uzun bir süre baş. Kendinize dikkat edin. İyi hazırlanın arkadaşlar sınava. Bir şey olursa yine mail atabilirsiniz, sorabilirsiniz. Problem değil.
+
+594
+01:38:14,696 --> 01:38:19,096
+Hocam, ilk vizelerde şey vardı, bu ders işlenmeyecek falan. Bu vizelerde hiç öyle bir şey yok değil mi?
+
+595
+01:38:19,096 --> 01:38:20,776
+Yok, ikinci vizelerde iyi oluyor ders.
+
+596
+01:38:22,296 --> 01:38:23,416
+Tamamdır hocam, sağ olun.
+
+597
+01:38:23,976 --> 01:38:26,816
+Peki. Arkadaşlar, görüşmek üzere. Dikkat edin kendinize.

@@ -1,0 +1,1715 @@
+1
+00:01:03,283 --> 00:01:04,644
+Buradan devam edeceğiz.
+
+2
+00:01:05,444 --> 00:01:08,384
+Hemen önce bir iki dakika bekleyelim de işte arkadaşlar gelsinler.
+
+3
+00:01:09,063 --> 00:01:10,283
+Ratingimiz artsın.
+
+4
+00:01:16,787 --> 00:01:19,867
+Ancak kenar arkadaş yahtsa daha indokusu oldu.
+
+5
+00:01:46,483 --> 00:01:48,803
+Kaç kişi olduğumuz kere?
+
+6
+00:03:09,395 --> 00:03:12,075
+22. Daha alt mutlaka var. Neyse, biraz daha bekleyelim.
+
+7
+00:04:21,843 --> 00:04:24,764
+Bekleyin bir uzayın fazla.
+
+8
+00:05:46,644 --> 00:05:51,764
+Peki, 95 geçiyor neredeyse. 29 volt. Başlayalım madem öyle. Yavaş yavaş.
+
+9
+00:05:57,172 --> 00:06:09,132
+Arkadaşlar, ben içeri olarak bu random access risk geriye yaşam konusu kaldı. Onu da bugün bitiririz diye düşünüyorum. Onun ardından haftaya özel bir konumuz yok.
+
+10
+00:06:09,620 --> 00:06:36,199
+Haftaki ders durumunu siz belirleyeceksiniz arkadaşlar. Öyle söyleyeyim. Şu an kadar yaptığımız konulardan, çalıştığımız noktalardan takıldığınız, kafanıza oturmayan, şu konuda zayıf kaldık, şöyle bir şeyler yapalım falan dediğiniz konular olursa onlara bakarız. Yoksa da yapmayız yani. Onun dışında bugün random access konusuyla, rastgele ilişki konusuyla başlayalım.
+
+11
+00:06:37,331 --> 00:06:47,351
+Şu ana kadar dosyalara çeşitli modlarda, işte binary olsun, text olsun, çeşitli modlarda, çeşitli şekillerde açtık, nasıl işlem yapacağımızı gördük.
+
+12
+00:06:47,351 --> 00:06:56,391
+Ama bunların hepsi ar dışı ya da sıralı erişim şeklindeydi. İlk kayıttan başlayıp son kayıta kadar sırayla gittik.
+
+13
+00:06:57,139 --> 00:07:17,899
+Şimdi biz herhangi bir dosyada, çalışan kayıtlarını yazdığımız dosyada, herhangi bir çalışanın kayıtını bulmak istiyorsak, listelerin dosyanın başından başlayıp o kayıdı bulan kadar okumamız gerekiyor normalde. Keza mesela dizilerde de öyle. Bir alimanı bulmak için en baştan başlayıp alimanı bulan kadar okuma yapmamız gerekiyor.
+
+14
+00:07:18,324 --> 00:07:46,283
+Ama eğer daha hızlı bir arama istiyorsaydı dizilerde, binary search gibi sıralı dizi üstünde çalışan algoritmaları kullanıyorduk. Dosyalar için de benzer durumu geçerli. Eğer sıralarsak daha kolay bulabiliriz. Burada sıralama daha tercih edilebilir. Çünkü dosya erişim bellek erişiminden daha yavaş. Ortalama en bölüki erişim bellekte çok daha kısa sürer.
+
+15
+00:07:46,324 --> 00:07:58,244
+Dosyaları çok daha uzun sürmektedir. Fakat dosyaları sağlamak da uzun sürecektir. Bu nedenle, neyse önemi birazdan geçeceğiz.
+
+16
+00:07:58,644 --> 00:08:20,384
+Şimdi, amacımız eğer biz nasıl ki mesela bellekteki herhangi bir dizi elemanına gittiğiniz üçüncü elemanına, beşinci elemanına, onuncu elemanına eriştiği doğrudan biz indeks verebiliyorsak benzer şekilde dosyalarda işlem yapabilir miyiz? Yapabiliriz. Buna da random access rastge erişim deniliyor.
+
+17
+00:08:20,384 --> 00:08:24,024
+Bunu yapabilmek için iki tane temel fonksiyonumuz var.
+
+18
+00:08:26,644 --> 00:08:51,663
+Fseek bize dosya konum işaretçisini belirli bir byte pozisyonuna götürmeyi sağlıyor. Ftel ise dosya konum işaretçisinin şu anda dosyanın kaçıncı byte'ında olduğunu söylüyor. Bu iki fonksiyon üstünden, bu iki fonksiyonu kullanarak da istediğimiz bir yere dosya konum işaretçisini götürebiliriz ve oradan itibaren okumaya başlayabiliriz.
+
+19
+00:08:55,988 --> 00:08:58,567
+Sonunda da geçeceğim. Evet.
+
+20
+00:08:59,155 --> 00:09:17,495
+F-Seq'in fonksiyon imzasını görüyorsunuz arkadaşlar. İlk eleman bir file pointerı. İkinci parametre offset bir başlangıç noktası. Bu sıfır olabilir, negatif olabilirse Karnış.
+
+21
+00:09:27,155 --> 00:09:49,899
+Bu örneğe bakalım.
+
+22
+00:09:49,971 --> 00:10:00,692
+Bu stream dosya işaretçisi binary modda ise byte cinsinden bir değer olmuş oluyor. Offset'e vereceğimiz rakam. 3 ise 3 byte örneği.
+
+23
+00:10:11,283 --> 00:10:20,923
+Eftel'in bize söylediği değerdir. Peki zaten konunun neresindeysek o bize eftel fonksiyonu zaten ona için yarıyor.
+
+24
+00:10:21,384 --> 00:10:28,584
+Bu zaman bu kadarıyla hatırlamıyorum. Pratiğini yaparız. Negatif sayıyı metin modunda veremiyormuşuz galiba.
+
+25
+00:10:28,584 --> 00:10:34,543
+Peki. Ben size işte offsetten başlamak kaydıyla nereye gitmek istediğimiz.
+
+26
+00:10:35,251 --> 00:10:52,192
+Bu arada bu nereye gitmek istediğimizle ilgili üç tane ön tanımlı sabit var. Seek set dosyanın başı. Seek current şu anki pozisyon. Seek end ise end of fire dosyanın sonuna git anlamına geliyor.
+
+27
+00:10:56,500 --> 00:11:05,279
+Örneğin işte, ayrıca tabii ki bir şey de unutmayalım. Bu fonksiyon bana int olarak bir sonuç göndürüyor.
+
+28
+00:11:09,812 --> 00:11:12,812
+Şöyle bir fonksiyon çağırdığım zaman,
+
+29
+00:11:12,812 --> 00:11:16,524
+StatEasyon Fsic File Pointer On Seek Set şöyle oluyor.
+
+30
+00:11:20,563 --> 00:11:44,183
+Pardon, dosyanın başından 10. karaktere git. Tamam da. O zaman şurada adlandırma ile ilgili bir problemim var. Ben şimdi şu adlandırmada... Ha, offset. Tamam, peki. Nereden başlayıp... Nereye? Tamam, peki hala.
+
+31
+00:11:45,203 --> 00:11:58,104
+Şimdi yanlış bilgi vermek istemiyorum. Ondan itibaren. Nereden? Nereden itibaren? Evet, tamam. Özür dilerim. Doğru düzgün okumadığımdan kaynaklanıyor bu.
+
+32
+00:11:59,483 --> 00:12:08,463
+Baştan alıyorum. Efsik fonksiyonunun ilk parametresi dosya işaretçisi, file point'tu.
+
+33
+00:12:09,652 --> 00:12:16,912
+İkinci parametre kaç bayt ilerlemek istediğimiz? Bu negatif olabilir tabii ki. Çünkü geri gitmek isteyebiliriz.
+
+34
+00:12:17,235 --> 00:12:31,816
+Bulunduğumuz konumdan. Ama nereden itibaren offset kadar gideceğiz? Ya mesela en baştan gitmek isteyebiliriz. Bulunduğumuz konudan itibaren gitmek isteyebiliriz. Veya dosyanın sonundan itibaren bir yere gitmek isteyebiliriz.
+
+35
+00:12:31,816 --> 00:12:45,235
+Tabii ki eğer şey, run to seek and deyip de offset'i de sıfırdan büyük sayı verirsek bu bize problem çıkartacaktır. Çünkü zaten dosyanın sonundan daha ileride.
+
+36
+00:12:45,235 --> 00:12:51,435
+Geri gidebileceğimiz bir yer yok. Ancak geri gitmemiz söz konusu olabilir. O yüzden offset negatif olabiliyor.
+
+37
+00:13:01,107 --> 00:13:03,048
+Evet, şimdi daha doğru oldu.
+
+38
+00:13:03,788 --> 00:13:17,647
+Bunun da şimdi efsikli bir file pointer verdiğimizde, örneğin on ve silkset dersek, şu an dosya konum işaretçisinin bulunduğu noktada on byte ileri git anlamına geliyor.
+
+39
+00:13:18,567 --> 00:13:25,647
+Ve o on byte ileri gittiğimizde itibaren ne varsa, bundan sonra okuyacağımız veya...
+
+40
+00:13:25,823 --> 00:13:43,563
+Okuyacağımız eleman o olacak veya yazacağımız bir şey varsa okunma yazıyor, bulacağız. Eğer işlem başarılı ise sıfır döndürüyor bizi. Statın değeri sıfır olmuş oluyor. İşlem başarısız ise sıfır olmayan bir değer dönmüş oluyor.
+
+41
+00:13:46,803 --> 00:14:07,884
+Biraz ters mantık gibi ama yani sıfırsa problem yok. O şekilde düşünün. Sıfır dışında herhangi bir problem var anlamına geliyor. Bu arada streamleri de, ki her file point aslında stream olarak, akış olarak işleniyordu hatırlarsınız. Sıfırdan başlanıyor. O yüzden ben buraya on dersen bu aslında on birinci karakter olmuş oluyor.
+
+42
+00:14:08,563 --> 00:14:16,303
+Ona git ve biz sonrakinden o konuda itibaren oku. Ama sıfırdan saymaya başladığımız için aslında bu on birinci karakter olmuş oluyor.
+
+43
+00:14:18,843 --> 00:14:25,143
+Şimdi, F-Stick'in sıfır dışında bir sorun geri döndürmesi neden olabilir?
+
+44
+00:14:25,143 --> 00:14:29,143
+Örneğin, diyelim ki biz...
+
+45
+00:14:33,395 --> 00:15:01,395
+Tam da onun için Lead Onlay'la ilgili alakalı olduğunu bulmaya çalışıyorum. Çünkü zaten eğer biz dosyanın end of file pozisyondan daha ileriye atmaya çalışırsak mantıksız bir şey zaten. Okuma amaçı yaptıysak mantıksız. Yazma amaçı yaptıysak bence yine mantıksız. Yani sadece şöyle bir şey belki olmuş olabilir. Dosyanın yazma modunu da açtık. Dosyanın sonundan itibaren diyelim ki...
+
+46
+00:15:01,395 --> 00:15:22,515
+OnByte ile gidelim dedik. Ondan sonra bir şeyler yazmaya başlayacağız. Bu adada kalan kısım ne olacak? Acaba binary olarak sıfır mı dolduracak? Text yaptıysak boşluk mu dolduracak? Yoksa rastgele bir şeyler mi dolduracak? Bilemiyorum. Eğer vaktimiz kalırsa deniriz. O bile bana biraz mantıksız geliyor.
+
+47
+00:15:29,620 --> 00:15:41,280
+Belki kabul edilebilir. Ama yine bana biraz ters geldi. Write modunda, yazman modunda açtıysak bile endofar konumundan daha ileri taşımak bana garip geldi.
+
+48
+00:15:44,211 --> 00:16:02,471
+Peki, C-Candy, dosyanın sonundan itibaren offset verme konusu daha çok sadece okuma amaçlı açtığımız dosyalarda olup ve negatif, sıfır veya negatif mantıklı çünkü daha ileriye gidemediğimizi söylemiştik zaten bir yukarıda.
+
+49
+00:16:04,991 --> 00:16:08,171
+Peki, veya mevcut konumdan da.
+
+50
+00:16:25,327 --> 00:16:43,027
+Tabii ki dosya konunun işaretçisini dosyanın sınırları dışına atmamız lazım. Peki, madem bu durum geçerli, o zaman yazılmamak açıklığı bir seek and leave ve pozitif offset vermek de o zaman mantıksız. O yüzden bunları bir deneriz.
+
+51
+00:16:45,788 --> 00:16:46,967
+İşaretlerimi koyayım.
+
+52
+00:16:52,532 --> 00:16:56,532
+Bunu diyor. Hem de...
+
+53
+00:16:58,532 --> 00:16:59,412
+Right.
+
+54
+00:17:02,412 --> 00:17:04,532
+Seekset.
+
+55
+00:17:05,751 --> 00:17:06,831
+Nereye?
+
+56
+00:17:09,032 --> 00:17:09,892
+Gitmeye.
+
+57
+00:17:11,271 --> 00:17:13,092
+Olumsuz bir şey.
+
+58
+00:17:13,751 --> 00:17:14,092
+Demiyor.
+
+59
+00:17:15,152 --> 00:17:17,012
+Bunları dene diyeceğim.
+
+60
+00:17:17,811 --> 00:17:35,851
+Ama tabii ki yani C'nin farklı standartları ve işletim sistemlerinin farklı standartları nedeniyle benim yaptığım denemeler bazıları bende doğru sonuç veriyorken başka bir işler sistemlerine sonuç verebilir.
+
+61
+00:17:36,092 --> 00:17:39,311
+O yüzden aslında yapmaya çalıştığımız şeyler hep mantıklı şeyler olmalı.
+
+62
+00:17:39,455 --> 00:17:49,455
+Bu, şu en son maddenin sınırında kalmalıyız. Bunun aksini yapmamıza izin verse de vermese de sistem.
+
+63
+00:17:51,455 --> 00:18:00,395
+Böylece taşınabiliremiz de yüksek olmuş oluruz. Yani ortaya çıkan kodun taşınabilirdiği farklı platformlarda çalıştırılabilir bir de daha yüksek olmuş oluruz.
+
+64
+00:18:04,852 --> 00:18:20,892
+Normalde asker ilişimi yapıyoruz. Dosyanın herhangi bir konumuna gitmek önemli ama dosyanın neresinde olduğumuzu bilebilmek de önemli. Bunun için FDELF fonksiyonumuz var. Altı tek parametre dosya işaretçisi bize döndürdüğü ise.
+
+65
+00:18:22,516 --> 00:18:33,296
+Dosyanın konunun başlangıcından itibaren kaçıcı byte'da olduğumuzu bizi geri döndürüyor.
+
+66
+00:18:38,476 --> 00:18:45,196
+Yalnız binary değil de metin dosyasındaysak o zaman F'den döndürdüğü farklı şekillerde yorumlanabiliyor.
+
+67
+00:18:48,180 --> 00:18:57,180
+Define ver, meaning only when used as an offset to an Fseq call. Peki, şimdi Fseq...
+
+68
+00:18:58,003 --> 00:19:21,663
+İki parametresi vardı. Offset ve Rans. Şimdi ben neredeysem diyelim ki 10'dan 10 byte ileri. Onun için zaten 6 set kullanıyoruz. Yani şunun için bir şey bulamadım. Yani düzgün bir use case bulamadım. Bakın.
+
+69
+00:19:29,044 --> 00:19:31,044
+Bu ne de bakti ya, no tonucu.
+
+70
+00:19:45,748 --> 00:20:02,268
+Temel olarak iki tane gelicimiz var. EFSEEK ve EFTA. EFSEEK ile ilgili olarak bize herhangi bir noktaya gidebilmemiz yarıyor. EFTA'da neredeyiz onu öğrenmemize yarıyor. Bunları bir araya getirecek bir örnek yapalım. Örneğimiz şu olacak.
+
+71
+00:20:05,683 --> 00:20:23,864
+Hızlı erişim yapmak istiyoruz. Bunun için dosyayı sıralamaktan kaçınmak istiyoruz. Çünkü dosyayı sıralamak da masrafı bir iş bulacak. Ayrıca bu masrafa bir yatırım olarak bakıp sık sık arama işlemleri yapacaksak işimizi yine kolaylaştıracaktır.
+
+72
+00:20:23,864 --> 00:20:31,943
+Fakat bir de şöyle düşünün. Ben sadece çalışan numarasına göre sıralama yapmak istemeyebilirim.
+
+73
+00:20:32,211 --> 00:20:50,172
+Çalışım adına göre sıralama yapmak isteyebilirim. Çalışımın maaşına göre sıralama yapmak isteyebilirim. Çalışımın bizde kaç yıldır çalıştığına göre sıralama yapmak isteyebilirim. Yani farklı kriterlere göre sıralama yapmak isteyebilirim. Daha doğrusu farklı kriterlere göre arama yapmak isteyebilirim.
+
+74
+00:20:50,448 --> 00:21:14,188
+O yüzden her bir fikir değiştirdiğimde, ihtiyaç değiştirdiğimde dosyayı tekrar tekrar sağlamak da hiç mantıklı bir şey değil. Ama birden fazla indeks oluşturmak mantıklı bir şey işte. Bırakın dosya olduğu gibi sırasız kalsın. Fakat biz o dosya için bir ya da daha fazla indeks tutalım, dizim tutalım yani.
+
+75
+00:21:17,779 --> 00:21:35,779
+Hangi sırada gezmek istiyorsak o dosyayı, ilgili indeks dosyası üzerinden. İndeks dosyamız şöyle olacak. Öncelikle adları mı göre mi sığarımı olacak. Bir şeyleri okuyacağız. Bilgileri okuyacağız. Okudukça sığarama yapmak istediğimiz kayıtın...
+
+76
+00:21:35,955 --> 00:21:58,395
+İlgili alanını, ada göre ise ad örneği, bunları belleye okuyacağız, bir diziye yazacağız. Yapacağımız ama şöyle bir strat kullanmamız gerekiyor. Birinci eleman, stratın birinci alanı, indeks alanımız neyse örneğin isim. İkinci alanı ise bu kayıdın dosyada kaçıncı kayıt olarak yer aldığı.
+
+77
+00:21:59,220 --> 00:22:23,039
+İster öyle tutabilirsiniz, ister kaçıncı byte'da yer aldığını tutabilirsiniz. Ama ikisi de aynı kapıya çıkacak. Çünkü bizim kayıt yapımızın byte uzunluğu belli. Eğer bizim kayıt yapımız 64 byte uzunluğunda ise, örneğin 10. kayıt 640. byttan itibaren yer alacaktır.
+
+78
+00:22:23,476 --> 00:22:34,196
+Bu nedenle birinden ötekini hesaplayabiliriz çok rahatlıkla. Tekrarlıyorum. İndeksimizi nasıl tutacağız? İndeksimiz bir stack yapısında olur. İki tane elemanı olur.
+
+79
+00:22:34,196 --> 00:22:51,196
+Birinci alanı ya da bir alanı diyelim. İndekste tutmak istediğimiz bilgi. İkinci alanı bizim bu kayıdımız dosyada kaçıncı konumda yer alıyor? Sonra biz o stacklardan...
+
+80
+00:22:51,476 --> 00:22:58,115
+Diziyi sıraladığınızda işte size sıralı indeks.
+
+81
+00:22:58,511 --> 00:23:25,951
+Ve biz kaç farklı alanda indeks tutmak istiyorsak o kadar farklı bizdimiz olur. Hatta sonra bu indeksi de ayrı bir dosyaya bile yazabiliriz kalıcı olmasını istiyorsak. Bu mantıklı çünkü programımız her açıldığında indeksi sıfırdan oluşturmaya çalıştırmak yerine oluşturduğumuz indeksi dosyaya da yazabiliriz.
+
+82
+00:23:27,923 --> 00:23:35,943
+Sonra programımız bir daha çalıştığında eğer indeks dosyası varsa o zaman bunu tekrar oluşturmaya kalkmaz.
+
+83
+00:23:36,604 --> 00:23:40,544
+Sadece on listeden hızlıca okur, tekrar asla arama işlemi yapmaz.
+
+84
+00:23:40,976 --> 00:24:03,296
+Bu da bizim için bir avantaj olur. Başka ne diyebilirim? Ama tabii ki indeksin güncel tutulması da gerekmektedir. Bu ilgili çalışanlar dosyasına herhangi bir düzenleme yapıldığında indeksin de tekrar taze alması, yapılması gerektiğini programcı olarak unutmamamız gerekmektedir.
+
+85
+00:24:03,700 --> 00:24:20,000
+Eğer veri dosyasına da düzenleme yapılmışsa da iki seçeneğimiz olabilir. Birincisi, indekslemi yeniden yaparız. İkincisi, sadece bir yere bir işaret koyarız.
+
+86
+00:24:21,907 --> 00:24:48,468
+Dosya değişti şeklinde. Bizim diğer bir programımızda indeks oluşturması gereken, indeksli çalışması gereken herhangi bir programımız başladığında da ilk önce o işarete bakar. Bu dosyada yeniden indekslenmesi gerekiyor mu? Gerekiyorsa kaçarıyor. İndeksler ondan sonra çalışmasına başlar. Ve o işaretle bu arada kaldırır. Çünkü artık indeksleri tazeledim ders.
+
+87
+00:24:48,847 --> 00:24:50,087
+O şekilde devam eder.
+
+88
+00:24:50,748 --> 00:24:55,367
+Yani böyle bir ana mantık üstünden şimdi bir uygulama yapacağız sizinle.
+
+89
+00:25:04,403 --> 00:25:16,943
+Örnek olarak bir kaydımız var. Çalışan ismi, ID'si veya kimlik numarası gibi bir şey ve doğum tarihi diyelim ki.
+
+90
+00:25:18,104 --> 00:25:25,223
+Ve dosyamızda kayıtların sırası da bu olsun. Jordan ilk kayıtımız olsun, Janss'ın son kayıtımız olsun.
+
+91
+00:25:25,223 --> 00:25:29,523
+Şimdi ben isme göre sıralama yapmak istiyorum.
+
+92
+00:25:34,804 --> 00:25:51,044
+Soyat, At şeklinde yazmış ama gerçekten name'e ona bir bakmak istiyorum. Aslında soyata göre sıvaramış. Peki, soyata göre sıvaramak yapacağız diyelim ki. O zaman bizim indeks aranımız soyat. Yani örgüle kadar olan kısım.
+
+93
+00:26:02,420 --> 00:26:12,680
+Tüm isim de kullanabilirim. Çünkü soyad art şeklinde yazılmış. O zaman tüm isim aslında benim anahtarım olabiliyor nihayetinde. Çünkü bu ilk harflerden göre sıralama yapacağız.
+
+94
+00:26:14,100 --> 00:26:25,860
+Şimdi benim ilk kayıdım Jordan. Ama sıfır indeksten sarmaya başlamayı unutmamalıyız. İkinci kayıdım bir indeksteki bird. Üçüncü kayıdım iki indeksteki earning. Bu şekilde devam ediyor.
+
+95
+00:26:29,587 --> 00:26:37,587
+Şu indeks yapısını sıralarsak, o zaman biz indeksimizi de sarmış oluyoruz.
+
+96
+00:26:40,276 --> 00:27:04,556
+Key Stoom'undaki değerlere göre sığarama yapıyoruz. Bird Örneğin bir indeks kayıttı. Artık ilk başta Bird geçiyor, bir indeks kayıt. Sonra sırada iki indeks kayıt geçiyor. İkinci sırada Irving. Sonra Johnson, bu ana dosyamızda dört indeks konumda. Bu şekilde sığarama yapmış oluyoruz.
+
+97
+00:27:08,276 --> 00:27:13,496
+Tüm personeli listelerimiz gerektiğinde önce dosyanın bir indesindeki konumuna gideceğiz.
+
+98
+00:27:13,836 --> 00:27:21,076
+Dosyanızı, kaydımızı okuyacağız. Sonra iki konumuna gideceğiz. Oradaki kaydımızı okuyacağız.
+
+99
+00:27:21,215 --> 00:27:29,175
+Sonra dört konumuna gideceğiz. Oradaki kaydı okuyacağız. Bu şekilde çalıştığımızda işimiz hallolmuş olacaktır.
+
+100
+00:27:31,675 --> 00:27:33,975
+Şimdi böyle bir şey yapmak için nasıl bir kod yazacağız?
+
+101
+00:27:34,448 --> 00:27:40,587
+Önce inceleyelim, ondan sonra videoya geçiririz ve çalıştırırız.
+
+102
+00:27:47,028 --> 00:28:10,908
+Şimdi önce tarih için ayrı bir stack tanımlıyorum. 5 byte, 4 byte, 11 byte şeklinde. Şimdi tabii bu ne oluyor? 20 byte oluyor. Yani 16'ya sığdıramıyoruz ama 32'de harcamıyoruz. İnşallah doğru bir sıralamayla daha belli ve verimli kullandığını hatırlıyoruz bu tür çalışmanın.
+
+103
+00:28:12,500 --> 00:28:21,500
+Ondan sonra, start'ımız ise isim, id, kimlik marası ve doğum tarihi şeklinde kayıtlarımızı tanımlıyoruz.
+
+104
+00:28:22,500 --> 00:28:28,395
+Ondan sonra, şimdi main fonksiyonumuza bakacağız. Ne yapıyoruz?
+
+105
+00:28:28,403 --> 00:28:54,023
+Dosya işaretçimiz var. Bu arada indeksi ayrıca dosyayı tutmuyormuşuz. Bellek de tutuyormuşuz. Mümkün olduğunca yalın tutmaya çalışmışız. Dört kişilik bir liste oluşturacağım. Dizi oluşturacağım. Bundan sonra ReCourse.Binary modda çalışacağım. Yazma ve Binary modda dosyamı açıyorum. Daha evvel kayıt varsa da siliyorum çünkü W dediğim için.
+
+106
+00:28:54,451 --> 00:29:05,092
+Artı koymadığım için dosya varsa silinecek. Ondan sonra dört kişi için kişilerin bilgilerini istiyorum kullanışta.
+
+107
+00:29:07,592 --> 00:29:20,971
+Ondan sonra şimdi şeyi hatırlayın. Şimdi biz bir struct kullanıyoruz ve struct içinde yine struct kullanacağımız zaman burada
+
+108
+00:29:22,548 --> 00:29:48,948
+Ampersant, yani adres işaretçisi kullanmamanız gerektiğini hatırlayın. Hiçbirini de kullanmıyoruz ama doğrudan yazmak da problem olabiliyor. Gerçi şey biz denizliğimizde olmamıştır diye hatırlıyorum geçen şeylerimizde, örneklerimizde ama neyse. Platformdan platforma değişiyor olabilir. Biz yine geçici değişken kullanalım bir problem olmaz.
+
+109
+00:29:49,460 --> 00:29:55,460
+Gün, ay, yıl bilgilerini de ilgili stakt alanlarına yazdıktan sonra...
+
+110
+00:29:59,347 --> 00:30:25,847
+Bu bizim kayıtlarımızı dosya işaretçisine ne kadar byte yazacağız? Bizim stack'ımız toplamda ne kadar bytes o kadar byte yazılacak. O parametri vermek gerekiyordu hatırlarsınız. Ondan bir kayıt yazacağız. Yazdığımız kayıt da oluşturduğumuz ilk sıradaki stack kayıdı.
+
+111
+00:30:26,288 --> 00:30:30,587
+Veyahut da işte şu şekilde filan da yazabiliriz.
+
+112
+00:30:37,748 --> 00:30:43,748
+Şimdi şu neden dediğimi şey demedim, hatırlayamadım. Yani şeyi yazmazsak...
+
+113
+00:30:50,003 --> 00:31:09,383
+Sadece bir slash en eklemenin ne gibi amacı olabilir bilmiyorum. Şimdi bunu çıkartamadım. Mantıksız geldi bana. Belki en son bunu yazsak falan. Ya da ney? Belki yeni satır. Bunu dosyaya yazmanın ne anlamı var? Hiçbir anlamı yok.
+
+114
+00:31:09,383 --> 00:31:16,123
+Peki. Bunun ne anlamı var diye bir bakayım.
+
+115
+00:31:27,955 --> 00:31:28,747
+Tamam.
+
+116
+00:31:35,188 --> 00:31:42,508
+Evet, peki. Ondan sonra şimdi kalitlerimizde girdik. Yani dosyayı oluşturduk. Şimdi indeksimizi oluşturalım.
+
+117
+00:31:46,259 --> 00:32:08,539
+En fazla bin kayıtla çalışabiliyormuşuz. Peki, buna tam olarak nerede ihtiyacımız var? Kodun ilerisine gittikçe bakarız. İsim uzunluğu buna ihtiyacımız var. Çünkü bizim sızlakta isimlerimiz en fazla 19 karakterdi. Okurken de ona göre okuyacağız. İsim alanı 19 karakter, 19 karakter okuyacağız, 19 karakter yazacağız. Şeklinde çalıştığımız için.
+
+118
+00:32:09,460 --> 00:32:33,520
+İstıraktımızı tekrar tanımlıyorum. Tarih ve kayıt istıraktımızı. Aslında tabii bu normalde en mantıklısı bu istıraktı bir dosyada tanımlamak, onu da import etmek en mantıklısı. Çünkü bu yapıda bir değişiklik olması gerektiğinde gidip bu yapıyı tanımladığımız her yerde ilgili düzeltmeleri yapmamız gerekecek. Bu nedenle aslında.
+
+119
+00:32:35,316 --> 00:32:41,276
+Bu yapının ayrı bir dosyada yer alması daha mantıklı olacak. Biz ders kapsamında görmüyoruz o konuyu.
+
+120
+00:32:42,855 --> 00:32:54,316
+Onun dışında, indeks yapımızı oluşturalım. İndeks bizim byte cinsinden, ilgili kaydın yok byte cinsinden demiyorum.
+
+121
+00:32:54,976 --> 00:32:58,276
+Sıra numara sola. Çünkü şeydeki örneğimiz öyleydi.
+
+122
+00:32:59,059 --> 00:33:21,000
+Yansıtlık örneğimiz öyleydi. Aksini görürsek, şeyleri düzeltelim, bunun adını da index, position falan derim. Ama indexden position çok rahatlıkla index çarpı size of personal stat dediğimde onu hesaplerebildiğimizden en mantıksız burada gerçekten de index olarak tutmak.
+
+123
+00:33:21,000 --> 00:33:27,000
+Anahtar alanımızda isim olacağında key olarak da onu veriyoruz.
+
+124
+00:33:27,059 --> 00:33:34,759
+İndeksimiz bu. Peki, yapılarımızı tanımadık. Şimdi indeksimizi oluşturmaya başlayalım.
+
+125
+00:33:43,251 --> 00:34:02,220
+Peki, maksimum kalit sayımız, aslında end of file'a gidene kadar yapacağız ama aslında end of file'a kadar gitmekle ilgili belki sıkıntımız olur falan diye madem biz...
+
+126
+00:34:02,355 --> 00:34:19,355
+Yani şimdi o ayrı, o ayrı. Yani dosya oluşturmak ayrı. Bu arada kaç kayıt tuttuğumuzu yazmıştık. Ondan sonra şimdi bu ayrı bir program. O yüzden ben şimdi hani kaç kayıt girileceğini...
+
+127
+00:34:23,059 --> 00:34:40,239
+Durumu, şimdi 4 girdik sonra 10 tane gideceğiz diyelim ki. Hani burada esneklik sağlama açısından ne yapılabilir diye düşünüyorum. Şimdi şu main share'imize bakıyorum tekrar. Yok hayır yani burada kaç kayıt okuyacağım diye sormuyor zaten peki hala.
+
+128
+00:34:40,724 --> 00:34:55,764
+Ama işte bu şu esnekliği yani en adet herhangi bir sayıda adet kayıt girilmesi durumunda esneklik sağlayabilmek için bir maksimum kayıt sayısı şeklinde alan tanımlamışız pek bir zaman.
+
+129
+00:34:56,724 --> 00:34:59,264
+Şimdi buraya bakmıştık. Buraya bakalım.
+
+130
+00:35:03,123 --> 00:35:09,983
+Şimdi indeksi oluşturmak için GetRecodes fonksiyonumuz var.
+
+131
+00:35:14,068 --> 00:35:29,427
+Global Değişken Tanımlamaya dikkat ediyorduk. Bu nedenle üstünde çalışacağımız dosya işaretçisini, bu indeks değerlerinin saklanacağı diziyi ve en fazla kaç kayıt okuyabileceğimiz bilgilerini fonksiyona parametre olarak veriyoruz.
+
+132
+00:35:31,827 --> 00:35:51,907
+Dosyanın başından itibaren bütün kayıtları okumamız gerekeceği için offset geçişi değişkenimize 0 veriyoruz. Şu anda aynı kayıt okumadık sayışı değişkenimiz 0. Yani bu 0'ları da atamazsak da zaten aslında default değer 0 ama bunlar önemli birer indeks değişkenleri olduğu için.
+
+133
+00:35:52,755 --> 00:36:16,755
+Bu indekslerin önemini binaen. Onun dışında, for döngüsü için bir k değişkenim. Ve acaba kaç karakterlik isim okumuşuz, onu tutmanız da gerekecek diye bir geçişi değişkenim de var.
+
+134
+00:36:18,739 --> 00:36:38,119
+Şimdi şu ne meyi illaki, pekala, şimdi tamam. F-lead için kullanacağız ama ilk başta maksimum olabilir. Fakat kaç okuduysak, bakıyorum daha önce.
+
+135
+00:36:38,804 --> 00:37:01,824
+Daha sonra, şu NM'nin ilk geçtiği yerde direkt F-RED'in sonucu dönüyor. Eğer diyelim ki ilgili dosya yok. Dosya olmasa bile bu NM'ye bir şey gelecek yani bir değer atanacak. Şu NM'ye ilk değer atmanın fikri yokmuş gibi gözüküyor. Bakırız.
+
+136
+00:37:04,436 --> 00:37:21,476
+Ve indeks için kullanacağımız, şimdi her bir yavaşçı sahibi okuyacağız. O yüzden bu indeks için okuyacağımız değeri de saklamak için bir name-i dizisi de tutuyoruz.
+
+137
+00:37:21,476 --> 00:37:27,936
+Yani bir kayıtlık key alanı, bir kayıtlık anahtar alan. Onu da tanımlamış oluyorum.
+
+138
+00:37:33,396 --> 00:37:44,856
+Öncelikle dosyadan ilk kaydımı okuyorum. Bu yorumun sadece ismini okuyacağım. Okuyacağım veriyi neyi alanına yazacağım.
+
+139
+00:37:45,248 --> 00:38:09,648
+Sadece bir kayıt okuyacağım. Ve 19 olarak hatırlarsınız name-i. Yani ismin uzunluğu kadar. Ama sadece bir kayıt okuyacağım. Okuduğum name-i karakter dizisine yazacağım. Dosya içeride. Şimdi data file zaten onu mutlaka vermek zorundayım. Ondan sonra for dönemesi içerisinde k anahtara kullanarak da.
+
+140
+00:38:10,867 --> 00:38:24,807
+Ya işte maksimum kayıt kadar veya isim uzunluğumuz, yani daha isim okuyacak alanımız olduğu kadar okuma yapmamız gerekiyor.
+
+141
+00:38:28,083 --> 00:38:48,503
+Ters mantığı şeklinde. H ve Q'nun tersi not P or not Q'dur ya. O mantık ters mantıkla for döngümüzün devam etme koşulunu yazmışım. Aslında çıkma koşulunu yazdım. Bu olunca artık okumaya keseceğiz anlamında.
+
+142
+00:38:52,467 --> 00:38:52,927
+Peki.
+
+143
+00:38:55,347 --> 00:39:21,128
+Ondan sonra şimdi indeksi oluşturup geri döndürmesi gerekiyor bu fonksiyonu. Geriye ya pointer döndürebiliyorduk hatırlarsınız. Veyahut da geriye döndürmek istediğimiz bilgiyi de bir fonksiyon parametresi olarak yazıyorduk. İki tane çalışma biçimimiz vardı. İkincisini seçmişiz. Çünkü bu getrecordsun sonunda
+
+144
+00:39:21,679 --> 00:39:37,539
+Sonuç olarak geriye kaç kayıt okuduysak onu döndürmek daha önemli diye düşünüp onu geri dönüş olarak tanımlamışız. İndeksesi oluşturup fonksiyon parametresi üzerinden geri döndürmeyi tercih edmişiz.
+
+145
+00:39:38,920 --> 00:39:47,319
+İlgili ismi aktarıyorum. Ondan sonracıma bir sonraki kayıda gitmek için.
+
+146
+00:39:48,179 --> 00:40:09,659
+Bu benim kayıt yapımın gençliği ve ebadeli ne kadarsa onu size of ile öğrenip o kadar ileri aktarıyorum. Onun için de F2 kullanıyorum. Data Fire'ımda bu offset kadar. Şu anda bulunduğum com'dan itibaren ilerli diyorum.
+
+147
+00:40:14,996 --> 00:40:26,775
+Bir sonraki kayıtın okuma fonksiyonunu yazıyorum. For dönküsü bittiği zaman da kaç kayıt okuyup işleyip indekse yazdığını bana geri döndürecek.
+
+148
+00:40:27,315 --> 00:40:38,916
+Ki ayrıca şeyi hatırlayın, dizilerde kaç eleman bir diziyle ilgili işlem yaparken hem o dizinin en fazla kaç tane eleman alacağını,
+
+149
+00:40:39,344 --> 00:40:55,123
+Belirtmek zorundayız. Hem de o anda o dizide kaç tane eleman olduğunu bilmek ve saklamak ve işlemek zorundayız. Bu ikinci ama içinde illaki kaç kayıt okuduğumuz bilgisinin geri döndürülmesi gerekiyor.
+
+150
+00:41:00,083 --> 00:41:20,003
+Şimdi burada bir şey beni işkillendirdi. O da şu. Şimdi ilk kayıtımı okudum. Okuyunca dosya işaretçisi o ismin sonuna gelmedi mi?
+
+151
+00:41:27,092 --> 00:41:39,612
+Direkt kayıt boyutu kadar ilerlemem. Acaba ikinci kayıtın isim alanı kısmı mı? Atlamama, pas geçmeme sebep olmaz mı? Bu beni bir işkillendirdi.
+
+152
+00:41:41,231 --> 00:41:48,112
+Ama bakacağız, eğer denensek, denince çalışırsa problem olmadığını görürüz.
+
+153
+00:41:50,132 --> 00:42:08,212
+Olsaydı ben onu büyük ihtimalle bu Kodfun diye yazar ve üstünden geçerdim. Bu şekilde bırakmazdım ders notunda. Fakat şimdi burada bir Afri'de bir bakmak istiyorum, bir geri dönmek istiyorum. Hafızalını tazelemek istiyorum. Afri'nin ilk geçtiği noktaya bir bakalım.
+
+154
+00:42:15,923 --> 00:42:17,763
+FED'ye geçtiğiniz yere bir bakalım.
+
+155
+00:42:27,507 --> 00:42:28,347
+En fılpın.
+
+156
+00:42:31,956 --> 00:42:39,456
+F6, F1, F-Close, P-Keyağ.
+
+157
+00:42:43,539 --> 00:42:45,539
+Krak'tan enklar tut.
+
+158
+00:42:45,539 --> 00:42:49,539
+Fkets, Fputs değil.
+
+159
+00:42:49,539 --> 00:42:51,539
+Fread. Peki bakalım şimdi.
+
+160
+00:42:51,539 --> 00:42:53,539
+Block.io'da geldik.
+
+161
+00:42:53,539 --> 00:42:55,371
+Fread, Fright.
+
+162
+00:43:02,483 --> 00:43:06,283
+Şu an kadar hiç konum ihlalçesiyle ilgili bir şey söylemiyor.
+
+163
+00:43:09,972 --> 00:43:10,251
+Peki.
+
+164
+00:43:22,675 --> 00:43:23,675
+Tamam peki.
+
+165
+00:43:26,396 --> 00:43:29,675
+Kalbim üzerinden devam edelim.
+
+166
+00:43:33,204 --> 00:43:53,184
+Sonraki derste de çalıştırırız. Zaten bakmış oldum da. Peki, GetRekord'un üstünden geçtik. Bir tek şurada hani F-Read'le ilgili bir şeyim var, yani soru işaretim var. Sizin de az önce paylaştım. Bakalım devam etelim.
+
+167
+00:43:56,947 --> 00:44:13,708
+Biz nihayetinde bir sıralama yapacağız. Sıralama yaparken de bunu biraz daha eli yüzü düzgün şekilde yapmak istiyoruz. Her ne kadar bizim bir straktımız olsa da ondan sonra o strakt içerisinde biliyoruz ki, hatırlayayım hemen adını.
+
+168
+00:44:15,860 --> 00:44:34,640
+Tİ alanında, karakter dizisi türündeymiş. Bunda sıralama yapacağımızın nasıl olacağını biliyoruz. Hatta STL-CMP fonksiyonu var. Onun üstünden iki sırala şeklinde kodumuzu yazabiliriz pek rahatlıkla.
+
+169
+00:44:37,043 --> 00:44:52,423
+Zaten komple fonksiyonu da o kadarmış. Yani iki tane kayıtın hangisi daha büyükse. Yani tek satılık fonksiyon yazmak da şey olmuş ama biraz abes olmuş diyebilirim.
+
+170
+00:44:58,547 --> 00:45:14,247
+Kodu bir yeniden kullanılabilirdiğini arttırmak açısından veyahut da bizim daha sonra farklı farklı anahtar alanlarımız olabilir karşılaştırma yapmak için. Onların karşılaştırması da basit olmayabilir.
+
+171
+00:45:15,539 --> 00:45:33,899
+Tam sayı olsa bir direkt büyüktür, küçüktür işareti. En baba zaten bu string, onu da karşılaştırmak bir tek STR, CMP ile ilgili. Çok da mantığını göremedim bunu ayrı fonksiyon yapmak ama neyse problem değil.
+
+172
+00:45:35,891 --> 00:45:45,511
+Peki, şimdi esas sıralama işlerine bakalım. Esas sıralama işinde kolaylıkla Qsort fonksiyonunda, QuickSort fonksiyonunda ilerleyebiliyoruz.
+
+173
+00:45:46,951 --> 00:45:51,172
+Bir dakika. Peki, tamam anlaşıldı.
+
+174
+00:45:51,172 --> 00:45:57,172
+Şimdi tabii QuickSort kullanabilmek için hangi sıralama algı...
+
+175
+00:45:57,780 --> 00:46:24,860
+Aslanma algoritması QuickSort'u daha esnek yazmaya çalışmışlar. Bu yüzden herhangi iki elemanı, hangisi daha büyük, hangisi daha küçük, onu karşılaştırmak için bizim kendi fonksiyonumuzu tanımlanması için izin vermişler. O nedenle gerekiyor. Şunun açıklamasına onu yazsaydık.
+
+176
+00:46:25,396 --> 00:46:28,356
+Bu kadar bunları yazacağımız, onu da eklesek iyi olurmuş.
+
+177
+00:46:29,076 --> 00:46:36,115
+14'e baktığımda hemen şu QuickSort'a parametre olarak veriyoruz. O hemen dikkatimi çekti.
+
+178
+00:46:36,115 --> 00:46:42,436
+Şimdi şurada geçici değişkeni tanımlıyoruz. Ondan sonra bir fonksiyon pointerı tanımlıyoruz.
+
+179
+00:46:42,936 --> 00:46:45,115
+Geçen hafta...
+
+180
+00:46:45,311 --> 00:46:52,652
+Geçen haftakinde işlemiştik. Fonksiyon point'ı tanımlıyoruz. Nereye? Bu karşılaştırma fonksiyonu.
+
+181
+00:46:58,132 --> 00:47:23,652
+İndeksi oluşturduktan sonra, burada çağırmıyor. Main'de oluşturacağız ve bir sort indekse vereceğiz. Main'de bir önceki yansıdaki şu getri kodusu çalıştıracağız. Bunu çalıştırmamızın ardından indeks dizisini elde etmiş olacağız. Daha sonra elde ettiğimiz indeks dizisini sort indeks metoduna sığanama için aktarmış olacağız.
+
+182
+00:47:26,132 --> 00:47:40,291
+Herhangi iki elemanın hangisi daha küçük sıralamada o yüzden öne geçecek. Ona karar vermek için de bu karşılaştırma fonksiyonunu kodlamışız ve QuickSort'a vermişiz.
+
+183
+00:47:40,563 --> 00:47:52,103
+Böylece sarılma işlemini de tamamlandıktan sonra artık nihayet indekslenmiş dosya kayıtlarının indeksli sırada yazılmasına geçebiliriz.
+
+184
+00:47:52,784 --> 00:48:02,163
+Okuyacağımız kayıt için bir geçi değişken tutuyorum. Kaç adet kayıt okuduğumuzu tutmak için g-for-downsı içerisinde indeksli değişken olarak kullanıyorum.
+
+185
+00:48:03,364 --> 00:48:05,623
+Gidiyorum. Yapacağım şey.
+
+186
+00:48:08,563 --> 00:48:33,183
+Bir okuma işlemi yapacağız. Fakat dosyanın başından okumayacağız. Benim şimdi kaçıncı kayıdı okumam gerekiyorsa o indeksi kayıdı okuyacağım. Bu nedenle benim öncelikle ilgili konuma gitmem gerekiyor. Onun için de F-seek fonksiyonunu görmüştük, konuşmuştuk. Şimdi onu kullanıma alıyoruz.
+
+187
+00:48:33,876 --> 00:48:45,776
+Dosya işaretçimde dosyanın başından itibaren kaçıncı kayıda gitmek istiyorum?
+
+188
+00:48:46,420 --> 00:49:11,400
+Ama Fsik benden kaçıncı byte'a gitmek istediğimi ister, öğrenmek ister. O yüzden de index çarpı, kayıtımın boyu. Kaç byte kısa onu da size of ile öğreniyorum. Böylelikle ilgili yere gidiyorum. Eğer ilgili yere gidemiyorsa o zaman da exit 1 diyorum. Yani bir problem oluştu anlamında.
+
+189
+00:49:12,755 --> 00:49:26,475
+Ama eğer gidebilmişse, o zaman okuma işlemini yapıyorum. Okunan byte'ları yazacağım. Struct elemanını veriyorum. Bir kayıt okuyacağım.
+
+190
+00:49:27,059 --> 00:49:31,219
+O kayıt, benim kayıt boyutum ne kadarsa o kadar byte'dan oluşacak.
+
+191
+00:49:31,619 --> 00:49:35,179
+Ve bunu git data file dosya işaretçisinden oku diyorum.
+
+192
+00:49:35,759 --> 00:49:43,920
+Ondan sonra okuduğum kayıdı struct.ps tümde olan kayıdın bütün değerlerini ekran yazdırıyorum.
+
+193
+00:49:44,480 --> 00:49:45,400
+Böylelikle bitiyor.
+
+194
+00:49:53,876 --> 00:50:10,516
+Main içerisinde ise yaptığımız, hani nispeten az, güzel bir şekilde parametrize etmişiz konu. Her bir işi kendi fonksiyonunda tanılamışız. Yani fonksiyonlar düzgün biçimde ayırmışız. Şimdi onları çalmak kalıyor sadece main fonksiyonunda.
+
+195
+00:50:11,796 --> 00:50:17,516
+Geçir değişkenlerimi tanıyorum. Hatta şey...
+
+196
+00:50:18,516 --> 00:50:36,815
+Şeyleri de kayıtlı. Burada aynı zamanda biz daha iki kuş bulmuş olmak için hangi dosyayı okuyacağım bilgisinin kullanıcıdan program çalışma anında istemiyoruz da programa parametre olarak daha komut satığından çalıştırırken parametre olarak veriyormuşuz.
+
+197
+00:50:36,815 --> 00:50:45,815
+O nedenle argüman sayısına bakıyoruz. Eğer bu ikilerin küçükse mutlaka iki argüman olmalı. İşte dosya adı ve...
+
+198
+00:50:46,516 --> 00:51:06,895
+İndeks dosyasının adı. İkisinin de ihtiyacımız var. Şimdi bakıyorum tekrar. Yanlış söylemiş olmayayım. Evet, tamam. Dosya adı ARGV1. Tamam. ARGV0 bu executable dosyanın kendi adıydı. Hatırlarsınız. ARGV1 dosya adı.
+
+199
+00:51:13,043 --> 00:51:17,023
+Nerede yazacağız? AVGV2, o da lazım.
+
+200
+00:51:24,980 --> 00:51:38,000
+Neyse çıkartamadım. Şey yapalım arkadaşlar, 10 dakika aramızı verin. Bu arada ben de çıkartmış olurum. İkinci dersimizde örneğimizi çalıştırırız. Çeşitli denemelerimizi de yaparız. Bu nedenle 10 dakika ara diyelim.
+
+201
+00:51:42,612 --> 00:51:50,891
+İçinde 9.50 ile 10.00 arasına numaramızı verelim.
+
+202
+00:51:56,371 --> 00:51:57,971
+Mühendisliği, Alifayız.
+
+203
+01:02:22,420 --> 01:02:36,199
+Evet arkadaşlar, şimdi ara süremiz doldu. Şu kodu tekrar incelemeye devam edelim. Main fonksiyonunu incelemeye devam edelim.
+
+204
+01:02:40,692 --> 01:02:52,672
+Komut satırından biz Dosyayç Executor'da çalıştırdığımızda bu RGV'lerini ifade ediyor. O örnek kodumuz vardı.
+
+205
+01:02:53,248 --> 01:03:17,687
+Eski haftalardan hatırlarsınız. Onu çalıştırdım. Hatırlamı tavsiye ederim. ARGV0, Executable'ın adını veriyor. ARGV1 ise ilk parametre buluyor. Bu yüzden bu indeks dosyası ilk parametre olacak. Şu an başka bir parametreye de ihtiyaç yok.
+
+206
+01:03:18,612 --> 01:03:22,231
+Peki, şeyleri nereden alıyorduk ya?
+
+207
+01:03:26,420 --> 01:03:30,508
+İlgili kayıtları okumak için bunu...
+
+208
+01:03:30,547 --> 01:03:56,947
+Ha tamam. Onun için ayrı program yazmıştık. İlk programda, ilk kodumuzda verileri oluşturmuştuk. İkinci bu programda sadece ve sadece indeksi oluşturmak ve sağlamak ve yazmak şeklinde çalışacaktık. O ayeti unutmuşum. O yüzden dersin sonunda biraz kafam karışmış bu nedenle.
+
+209
+01:03:58,547 --> 01:04:05,667
+Bakalım amacımız şey oluşturmak, index dosisimi oluşturmak. Onu da binary olarak oluşturuyoruz.
+
+210
+01:04:09,876 --> 01:04:37,576
+İlgili kayıtları dosyadan okuyoruz. Get-ghost fonksiyonumuzu çalıştırdıktan. Şu kadar kayıt okuduğum şeklinde ekrana çıktığımızı yazıyoruz. Ondan sonra sarama işlemini yapıp saramadan sonra da durum şu dolu deyip indekslenmiş kayıtları indeks sırasında göre ekrana yazan fonksiyonumuzu çalıştırdıktan sonra F-Close yapmayı unutmuyoruz. Kesinlikle ve Ritual 0 ile programdan çıkıyoruz. Bakalım şimdi bunları yazalım, çalıştalım.
+
+211
+01:04:37,876 --> 01:04:55,276
+Düzgün çalışıyor mu? Görelim. Çalışmayan yerlerde hataları bulmaya çalışalım. Çalışma yer olmazsa da biz kasten bir yerlerini kurcalayıp kalan ders saatimizde tecrübeler kazanmaya çalışalım.
+
+212
+01:05:00,307 --> 01:05:03,188
+Şimdi, komut sıtırı gerekecek.
+
+213
+01:05:05,188 --> 01:05:05,728
+Bakalım.
+
+214
+01:05:07,108 --> 01:05:08,148
+O bir tarafta dursun.
+
+215
+01:05:09,307 --> 01:05:10,188
+Ondan sonra çama.
+
+216
+01:05:11,128 --> 01:05:18,568
+Şeyi de, dosyaları oluşturmayı ayrı projeye, ondan sonra indeks dosyasını oluşturmayı ayrı projeye yazalım ki,
+
+217
+01:05:18,568 --> 01:05:22,508
+birinin ikisini de ayrı ayrı düzü çarp.
+
+218
+01:05:23,059 --> 01:05:27,159
+Ya bir yerlerini değiştirip tekrar çağırma gibi işlemler yapabilirim.
+
+219
+01:05:28,000 --> 01:05:32,639
+Şimdi, o yüzden şöyle başlara doğru dönelim.
+
+220
+01:05:33,679 --> 01:05:38,119
+İlk başta, kayıtları oluşturma projemiz.
+
+221
+01:05:38,760 --> 01:05:43,659
+Şimdi, hepsinin konut satırından da yapmışken de çalıştırabilir miyiz? Çalıştırırız.
+
+222
+01:05:45,539 --> 01:05:47,159
+Ama, nasıl da bakalım şimdi.
+
+223
+01:05:47,159 --> 01:05:49,920
+Önce sıslaklarımızı oluşturalım.
+
+224
+01:05:52,148 --> 01:05:59,748
+Aslında belki hala main'de bir şey, bir sistem parsu çalıştırmak isteyebilirim diye düşünüyorum.
+
+225
+01:05:59,748 --> 01:06:11,748
+Peki şimdi stack'larımızı aldık. Ondan sonra main içerisinde, şimdi bunları yıkacağız ve daha sonra fb10.0.
+
+226
+01:06:12,275 --> 01:06:23,596
+Tamam, burada bize işler başarı oldu falan diye özellikle bir çıktığı okuyup değerlendirme ihtiyacımız olmayacak. O yüzden tamam, sistem taz yaparsak bile olursun.
+
+227
+01:06:26,115 --> 01:06:32,996
+Bir dakika, inebiliyor muyum? Ha tamam, inebiliyorum. Ayrı ayrı dosyalara şey etmemiştim. Metin kutularına yapmamışım bu işi.
+
+228
+01:06:43,827 --> 01:07:00,288
+O zaman şöyle de sıfıra şey diyorum, kapatıyorum. Tabi girintiler hak getire. Şimdi bunun için şuralara bir şeyler koysam en azından yapabilirim.
+
+229
+01:07:09,407 --> 01:07:13,708
+O dosyayı incelememiz pek bir şey ifade etmeyecek, açık incelememiz.
+
+230
+01:07:20,851 --> 01:07:24,552
+Dört kayıt geri çektik peki. Yapalım bakalım.
+
+231
+01:07:30,708 --> 01:07:56,088
+İki kişimiz, birinci girdiğim kişi, doğum tarihi E-D-11-1-1971. Peki. İkinci kişi, Emre. Tarihin 2, Şubat-1972 olsun.
+
+232
+01:07:57,076 --> 01:08:18,335
+Üçüncü kişisi açık olsun. 3 Mart 1973 olsun. Dördüncü kişisi Can olsun. 4444 olsun. Doğum tarihi 4 Nisan 1974 olsun.
+
+233
+01:08:19,028 --> 01:08:27,028
+Ondan sonra herhalde işlem tamam. Press entity to continue. En azından oluşan dosyaya bakalım.
+
+234
+01:08:27,028 --> 01:08:31,028
+Tamam, burada değil ama en azından şöyle diyebiliriz.
+
+235
+01:08:44,372 --> 01:09:03,291
+Neyse, şuradan yukarı doğru kayabiliyorum. Eskiden kayamıyorduk da. Bakıyorum şimdi. Bilgidat. 22'si ayın bugün. Tamam da. 10.53 olmamalıydı. Saat 10.07. Pardon, 2019 ya. Çok özür dilerim.
+
+236
+01:09:03,291 --> 01:09:10,891
+Evet. Şimdi, ne ediyorduk? Bakayım şimdi. Tarih Kort, Dat. Peki.
+
+237
+01:09:11,764 --> 01:09:27,644
+Ve CodeStat. Ha, şurada. Peki. Evet, ayın tam da çok ilginç. Niye ayın 17'si? Ha, dosyayı ilk oluşma tarihini yazıyor. Bakacağım. Peki, şey demedim. CodeStat'ı da yeteneklerimi çok bayatlamış.
+
+238
+01:09:37,984 --> 01:09:59,984
+Altyazı
+
+239
+01:10:08,627 --> 01:10:13,067
+İlk otobüsün 19 demek istiyorum. Tekrar çalıştıracağım şunu.
+
+240
+01:10:17,876 --> 01:10:27,235
+Bir dakika. Peki şey başka oluşturmuş olan? Yok hayır. Executor ile aynı yerde. O yüzden konulmaması lazım. Tekrar çalıştırmışım.
+
+241
+01:10:46,868 --> 01:10:47,868
+İçeride, ne?
+
+242
+01:11:04,819 --> 01:11:06,119
+Başak 2, 2.
+
+243
+01:11:21,684 --> 01:11:26,484
+Tamam, oluşturdu. Bakalım şimdi. Şöyle bakalım.
+
+244
+01:11:26,484 --> 01:11:34,984
+F5.licos.dat. Var mı bakalım. Dosya oluşturmuyor. Çok genç.
+
+245
+01:11:40,564 --> 01:11:45,676
+Otostat Acı var. Başka bir yerim oluşturuyor. Bakalım.
+
+246
+01:11:53,492 --> 01:12:21,452
+Devsip'i de şey oluşturuyor. Kodda değil de başlangıç noktası olarak bu Devsip'i kurduğum konumu kullanıyor. Ben şimdi eğer bunu konut satınlar çalıştığım için olsaydım oraya kodun içerisinde oluşturacaktı. Devsip'i dördün oraya koyuyor. Peki, bu biraz kafa mı karıştırdı? Özür dilerim sizden. Şimdi şuradan yapalım.
+
+247
+01:12:21,492 --> 01:12:27,271
+O eşit madem öyle. Projecture Excel. Onun da burada yer aldığını görelim.
+
+248
+01:12:49,300 --> 01:12:55,600
+Tamam, peki. Şimdi bakıyorum.
+
+249
+01:12:59,988 --> 01:13:01,507
+Şurada arama falan yapmıştım.
+
+250
+01:13:03,808 --> 01:13:07,808
+Bakın, şeydeki burada 10'u 10 geçe yaptım.
+
+251
+01:13:08,488 --> 01:13:11,908
+Kodun içerisindeki de, o da burada.
+
+252
+01:13:12,288 --> 01:13:14,688
+Bir sonra 10'u 11 geçe yaptım.
+
+253
+01:13:16,828 --> 01:13:20,908
+Demek ki geçen sene direkt komut satığından çalıştırmışım.
+
+254
+01:13:21,068 --> 01:13:23,608
+İde'den çalıştırmamışım. Onu da anlamış olduk.
+
+255
+01:13:24,051 --> 01:13:31,871
+10-10 yazar, 10'da ikisinin arasında sadece ikinci kişinin tc-kin numarası farklıydı. Doğru çalıştığına bakarız.
+
+256
+01:13:36,627 --> 01:13:42,627
+Peki, şimdi bunu oluşturduğumuza göre, şimdi indeksleme işini yapalım.
+
+257
+01:13:44,627 --> 01:13:45,627
+File Open Project.
+
+258
+01:13:50,963 --> 01:13:51,627
+Teşekkürler.
+
+259
+01:13:55,539 --> 01:13:58,719
+Peki bu şeyle ilgili.
+
+260
+01:13:59,680 --> 01:14:00,500
+Ve yapabiliriz.
+
+261
+01:14:02,399 --> 01:14:08,260
+Şimdi indeksi oluşturmaya ve sıralamaya.
+
+262
+01:14:08,260 --> 01:14:18,100
+Şimdi şu fonksiyonlar için gerekli olan ek şeyleri koyup stdf bu arada zaten yok. Hepsinden alalım zaten.
+
+263
+01:14:23,539 --> 01:14:33,899
+Main'de bir tuşa basın kalsın. O yüzden şöyle almak istiyorum.
+
+264
+01:14:37,108 --> 01:14:47,608
+Gereksiz fonksiyonları kaldırıyorum. Gerekli fonksiyonları koyacağım. Yalnız bu arada eklemiyi unuttuğum header dosyası yok.
+
+265
+01:14:47,608 --> 01:14:57,608
+Tamam peki iyi. Ondan son açıdan şu fonksiyonları almaya başlayalım. Gerekli fonksiyonlarımızı.
+
+266
+01:15:15,923 --> 01:15:16,779
+Teşekkürler.
+
+267
+01:15:34,899 --> 01:15:47,659
+Q sort, a function pardon, function to provide a...
+
+268
+01:15:54,644 --> 01:16:00,744
+Şimdi, provide someone something. Bu da to, neyse o kadar.
+
+269
+01:16:02,244 --> 01:16:08,123
+Comparison. Evet tamam.
+
+270
+01:16:08,603 --> 01:16:09,804
+Kıda yetenek.
+
+271
+01:16:17,619 --> 01:16:32,859
+Şöyle alalım. Buraya 3 tutalım. Sonra esas main'in, yani daha main'in ne kadar şey, indekslenmiş kayıtları yazdırmak isimimiz var.
+
+272
+01:16:32,859 --> 01:16:40,844
+Buraya koyduk. Ondan sonra main'in ilçe. Tamam.
+
+273
+01:16:44,340 --> 01:16:45,100
+Teh
+
+274
+01:16:52,307 --> 01:16:53,487
+Tamam, hadi bakalım.
+
+275
+01:17:02,355 --> 01:17:10,355
+Buna hangi script yapmıyorum. Komut satımından çalıştıracağım. Project3.
+
+276
+01:17:10,355 --> 01:17:18,355
+Project3. Buna parametre olarak, korts.dat dosyamızı vereceğiz.
+
+277
+01:17:31,123 --> 01:17:53,043
+Kodu hatırlamam lazım. Hemen write için açıyor muyduk? Ofsa bilgiyi girdikten sonra mı açıyorduk? Bakalım. Bunlara gir. Allah açıyormuşuz. Hem de yazma için. O dosya uçtu. Peki ama bir üst dizinde oluşturduğumuz dosya var. Büyük ihtimalle uçtu. Bir bakalım şimdi.
+
+278
+01:17:55,103 --> 01:17:57,543
+Şu bilgi dağıt.
+
+279
+01:17:58,068 --> 01:18:23,048
+1 KB oldu. 1 KB. Gerçi olabilir. Şuna bir bakalım. Şuradaki Record Start. O da 1 KB gerçi. Neyse, dur bakalım şimdi. Şunu alıp şuradaki, pardon, Record Start. Bakın, 0 KB. Tamam, peki bunu sormuyorum. Record Start'a bakacak.
+
+280
+01:18:23,731 --> 01:18:26,731
+Bu likodosu buradan kopyala yapayım bari.
+
+281
+01:18:28,731 --> 01:18:31,731
+Yapıştırayım. Evet, peki.
+
+282
+01:18:32,731 --> 01:18:34,731
+Project 2-exe.
+
+283
+01:18:34,731 --> 01:18:36,731
+Kolot start.
+
+284
+01:18:37,731 --> 01:18:39,731
+Yazış bakalım.
+
+285
+01:18:42,731 --> 01:18:44,731
+Pardon, 3 olacak.
+
+286
+01:18:46,731 --> 01:18:49,963
+3 tamam, o da kolot start'ını yazma şeyi istatmıyor. Allah Allah.
+
+287
+01:18:50,036 --> 01:18:53,836
+Evet.
+
+288
+01:18:55,036 --> 01:18:56,095
+Güzel. Peki.
+
+289
+01:18:56,595 --> 01:18:57,756
+Zatıra'nın kayıt okudum diyor.
+
+290
+01:19:01,195 --> 01:19:04,476
+Acaba bir önce yanlış mı şey yaptım?
+
+291
+01:19:06,336 --> 01:19:08,496
+Kayıt girişi yaptım. İki tane mi emine girmiştim?
+
+292
+01:19:08,832 --> 01:19:22,032
+En baştan çalıştıracağım emin olmak için. Yani şu anda gözüken sıralı ama doğru bilgi girişiyle mi çalıştım ondan emin olamadım. Özür dilerim. Şimdi tekrar çalıştığım ilk programla.
+
+293
+01:19:23,912 --> 01:19:29,592
+İlk programla birlikte tekrar çalıştım. Şimdi önce Project Braggs'e çalışıyorum.
+
+294
+01:19:34,579 --> 01:20:02,144
+1 1
+
+295
+01:20:02,144 --> 01:20:07,164
+Project 3- ve kayıt dosyası da records.
+
+296
+01:20:11,164 --> 01:20:18,504
+Tamam. Daha önce girdiğim dosya, güzel bir girişi yapmadığımız dosyaymış. Şimdi bakıyorum.
+
+297
+01:20:19,028 --> 01:20:46,268
+E, O, S, Y. Artık olarak sırarı, işleri doğruya yapabilmişim. İlgili sırrımı yaptıktan sonra ilgili konumdaki kayıda gidip okuma işlemini yapabilmişim. Herhangi bir problem yok. Bu durumda benim ayrıca bir önceki yansılardan kafama takılan husus olan şu... Neredeydi? Get Records.
+
+298
+01:20:47,475 --> 01:20:58,575
+Bir EFRED yaptıktan sonra bir sonraki EFRED'e kadar şu pozisyon değişmiyormuş.
+
+299
+01:21:00,355 --> 01:21:13,215
+Şimdi acaba bunu bir denesek mi? Deneriz de. Öncelikle sizin sorularınız üstünden gidelim. Ondan sonra benim merakımı tahmin etmeye çalışırız.
+
+300
+01:21:15,123 --> 01:21:23,484
+Peki, şimdi buraya kadar yaptığınız noktalardan, hocam şu konuyu tekrar inceleyelim, şurasına tekrar bakalım dediğiniz nereler varsa bakalım arkadaşlar.
+
+301
+01:21:41,203 --> 01:21:43,923
+Yoksa sizden soru gelene kadar ben oynayacağım kodla.
+
+302
+01:21:51,475 --> 01:22:02,915
+Her seferinde şu pozisyonu yazmasını istiyorum. Peki. O zaman şuraya yaparsam bir sonraki FLEAD'den de itibaren onu yazacaktız.
+
+303
+01:22:09,779 --> 01:22:14,899
+Tam sayı olarak yazsın ve ondan sonra da bir boşluk koysun.
+
+304
+01:22:16,340 --> 01:22:19,979
+Ve neyi yazacak?
+
+305
+01:22:21,180 --> 01:22:21,699
+Eftel.
+
+306
+01:22:23,699 --> 01:22:25,159
+Onu yazacak.
+
+307
+01:22:26,379 --> 01:22:30,319
+Burada hiç eftel kullanmadım değil mi? O yüzden notları geri döneyim.
+
+308
+01:22:36,851 --> 01:22:39,672
+Sadece Firepoint'ı alır. Tamam, başka bir şey yokmuş.
+
+309
+01:22:40,952 --> 01:22:47,952
+Fireposition Indicator'ın konunu döndürür. Peki, iyi. O zaman benim dosyam şu Data Fire.
+
+310
+01:22:55,444 --> 01:23:03,703
+Evet, peki. Hatta bunu aslında en başta da sıfır yazmasını bekliyorum. O yüzden bir de şuraya bir alayım şunu.
+
+311
+01:23:04,644 --> 01:23:12,644
+Derse 10 dönem yüzünü hatta ilk FBK yapmadan bile öncesine bunu koyuyorum. Bakalım böyle çalıştığımı bakayım şunu.
+
+312
+01:23:16,083 --> 01:23:18,123
+Dosya konum yerlerini görelim.
+
+313
+01:23:19,384 --> 01:23:20,103
+Ha evet, tamam.
+
+314
+01:23:20,443 --> 01:23:21,064
+Aa, tamam.
+
+315
+01:23:21,304 --> 01:23:23,824
+Şey, dosya index gerekiyor. Dosya adını soruyor.
+
+316
+01:23:24,103 --> 01:23:26,943
+Ama şimdi bunun default konum olarak şeye bakıyordu.
+
+317
+01:23:28,623 --> 01:23:31,304
+D4'e bakıyordu ya, kod slash demem lazım.
+
+318
+01:23:31,304 --> 01:23:34,724
+Neyse ben bunu zaten konut satığından çalıştırmaya devam ederim.
+
+319
+01:23:35,923 --> 01:23:39,423
+Ondan sonra şu mail'e geri dönüp bakıp bu arada.
+
+320
+01:23:41,844 --> 01:23:46,844
+Şimdi, AI index tosusunu girin, aksi taktirde...
+
+321
+01:23:50,676 --> 01:24:05,796
+Küçükse o zaman yazdı ve şuradan skenefi şey diyor. Tamam. Sadece şu ilk komutu baktıktan sonra uzun olduğu için gözüm noktalı bir günün sonrasını görmemiş. Ben bunu şöyle düzeltmek istiyorum.
+
+322
+01:24:13,876 --> 01:24:27,656
+Bu satıra koymak istiyorum. Bir kodun arkadaşlar anlaşılabilirliğini arttırmak için yaptığınız her türlü değişikliği var. Kodun anlaşılabilirliğini arttırmak önemlidir.
+
+323
+01:24:27,656 --> 01:24:31,996
+Bu nedenle şimdi şuraya geliyorum.
+
+324
+01:24:35,572 --> 01:24:36,619
+Yine geliyorum.
+
+325
+01:24:44,372 --> 01:24:51,372
+Arkadaşlar, bu şekilde örneğe bakalım.
+
+326
+01:25:00,979 --> 01:25:18,679
+Şimdi 0,19,75. Şöyle diyorsun. Az küçülteyim. Yandan da şu kodu bir inceleyelim bakalım. Şunu da şöyle.
+
+327
+01:25:25,876 --> 01:25:26,655
+Olsun bir bakalım.
+
+328
+01:25:28,496 --> 01:25:28,735
+Şimdi
+
+329
+01:25:28,735 --> 01:25:33,755
+yazıldığım şey şu.
+
+330
+01:25:38,323 --> 01:26:00,183
+Evet, peki. Şimdi ilk başta sıfır dosyanın başında. Evet, dosyanın başında. Sonra ad uzunluğu kadar ki o da 19'du veriyi okuyorum ve gidiyor bana dosya konuğum şu an 19'da diyor. Peki, güzel.
+
+331
+01:26:00,787 --> 01:26:13,287
+Ondan sonra, önce form dönmesinin içine girdiğimde 19 şu ilk iterasyonda ekran yazılan şey.
+
+332
+01:26:13,287 --> 01:26:24,087
+Peki, 19. konumdayım. Kopyalama işlemini yapıyor. Ondan sonra offset artı eşittiz size of person's start.
+
+333
+01:26:29,747 --> 01:26:46,447
+O seti de bir en baştan yazdırsam bu da anlamlı olabilir. Ve yalnız şimdi anahtar şurada. Sik set en başımıyorsa konum konum muydu? Bir bakayım. Bunu hatırlayalım şimdi.
+
+334
+01:26:54,131 --> 01:27:10,832
+Evet, beginning. Tamam, curl değil. Set acaba şu an neredeyse orada mı? Şeklinde aklımda yanlış kalmış. O yüzden orada bir sıkıntım var demiştim size. Olmaz gerekiyormuş.
+
+335
+01:27:10,832 --> 01:27:19,171
+Sek set demiş. Yani beginning. Ben set şu an neredeyse o anlamda kalmış aklımda. Bu adlandırmayı beğenmedim ya. Neyse.
+
+336
+01:27:20,819 --> 01:27:21,719
+Köl, köl.
+
+337
+01:27:27,604 --> 01:27:41,504
+3 harfli olsun diye mi seçmişler, begin dememişler. Onlar da o belki hizayı öncelikli tutmuşlar. Neyse peki tamam. En beginning'den itibaren olursa tabii ki elbette hiç bir adem yok.
+
+338
+01:27:46,931 --> 01:28:02,692
+Tekrar inceleyelim. Evet, baştan itibaren offset, ikide offset hep altı yaşlı bir kümünatif tutuyoruz. Tamam. Ayrıca çarpma işlemine gerek yok. Ondan tasarruf etmiş oluyoruz. Çarpma işleminden tasarruf etmiş oluyoruz. Güzel, peki.
+
+339
+01:28:05,391 --> 01:28:12,112
+Evet arkadaşlar, ben bakın merak ettiğim yere baktım. Sizlerin de merak ettiği yerler varsa onları da kurucalayalım, dedikleyelim lütfen yani.
+
+340
+01:28:30,804 --> 01:28:32,103
+Hocam, sesim geliyor.
+
+341
+01:28:32,103 --> 01:28:33,583
+Merhaba, [öğrenci]. Geliyor [öğrenci], buyurun.
+
+342
+01:28:34,484 --> 01:28:52,703
+Şeyi sormak istiyorum. Struct'ın içinde Char Star tanımlarsak ve bu Struct'ı doğrudan değer türü olarak initialize ederken, curly brace ile ona bir değer atarsak, o memori'yi biz free'lememiz gerekiyor mu, gerekmiyor mu?
+
+343
+01:28:53,224 --> 01:28:53,764
+Gerekmez.
+
+344
+01:28:54,547 --> 01:29:02,868
+Mal lock karşılığında free yapıyoruz hep. Ne tür mal lock yaptıysak onun eşleniği olan free'yi yapmak zorundayız.
+
+345
+01:29:03,948 --> 01:29:11,827
+Buraya yaptığımız örneğin buradaki name'e kıvrık parantez açıp yapacağımız bir atama free'yi etmemiz kesinlikle gerekmiyor.
+
+346
+01:29:12,188 --> 01:29:16,948
+Free tek bir fonksiyon var ama değil mi? Free yazarken free'nin türleri yok mu?
+
+347
+01:29:16,948 --> 01:29:21,407
+Yok free'nin türleri yok. Tek parametre alıyor. O da bir pointer oluyor.
+
+348
+01:29:22,547 --> 01:29:30,108
+Ve işte nereleri mallok ile açtıysak o pointerı illaki kodumuzda da kullanıyoruzdur, kaybetmiyoruzdur.
+
+349
+01:29:30,108 --> 01:29:36,467
+Onları aynı sıra, ters aynı sırada eşlenip olarak da sırayla free etmeyi unutmamalıyız.
+
+350
+01:29:36,868 --> 01:29:41,887
+Bir de şey sorabilir miyim? 9'u 4 geçe geldim de ilk 4 dakika konuşulduğumu bilmiyorum.
+
+351
+01:29:42,368 --> 01:29:46,087
+Yok, zaten 3-4 dakika bekledim ve ondan sonra derse başladım.
+
+352
+01:29:46,448 --> 01:29:50,528
+Hiçbir şey konuşmadık. Sadece bu random akses mantığıyla konuşmaya başlayarak.
+
+353
+01:29:50,547 --> 01:29:55,927
+Ödevle ilgili soru sorabilir miyim şu an hocam?
+
+354
+01:29:55,927 --> 01:29:59,768
+Buyurun. Ondan sonra [öğrenci] Bey'i alırız. Buyurun.
+
+355
+01:30:01,587 --> 01:30:05,747
+Ödevde tüm memori alokasyonları malokla yapılmalı diyor.
+
+356
+01:30:06,487 --> 01:30:06,747
+Evet.
+
+357
+01:30:08,387 --> 01:30:13,307
+Çoğu fonksiyonda buffer var. Yani her fonksiyonda. Onları da malokla mı yapalım?
+
+358
+01:30:14,268 --> 01:30:14,528
+Evet.
+
+359
+01:30:15,444 --> 01:30:24,144
+Peki hocam. Sanki Ahmet Hoca onları köşeli parantezle alabilirsiniz tarzı bir şey dedi. Sadece bufferlar için emin değilim yaptığı ders.
+
+360
+01:30:24,144 --> 01:30:26,043
+Bakalım. Bakalım şimdi.
+
+361
+01:30:26,584 --> 01:30:42,324
+Çünkü şey oluyor. Bazen sadece şart sağlanmadıysa else ile çıkmak lazım. Yani çıkmam gerekiyor return void fonksiyondan. Boşu boşuna 3-4 kere free yapmış oluyorum yani. Buffer için. Ekstra bir kalabalık oluyor sadece.
+
+362
+01:30:45,460 --> 01:30:58,940
+O şekilde ekstra kadoku oluyor. Göz önüne yani sinyeye çekip yazın. Ondan sonra yazdığınız kodun bütlüğüne baktığınızda belki bir yerlerde bir optimizasyona gidebileceğinizi fark edebilirsiniz belki de.
+
+363
+01:30:59,283 --> 01:31:27,083
+O yüzden ilk hedefiniz doğru çalışan kod olsun. Bu arada kafanızda olası optimizasyonları düşünerek yazın kodunuzu. Ama daha sonra bunu doğru tamamlayıp, ondan sonra çalıştırıp, aradaki gerekli düzeltmeleri yaptıktan sonra tamam kod son dediğiniz noktada çalışmanızı yedekleyin. Ondan sonra optimizasyon için acaba ben neresine ne yapabilirim diye kurcalayın.
+
+364
+01:31:27,283 --> 01:31:36,943
+Düzeltmelerinizi yapın. Buna refactoring deniz. Ondan sonra eğer yine düzgün çalışmaya devam ediyorsa tamam artık son hali budur deyip öyle devam edin diyor.
+
+365
+01:31:37,144 --> 01:31:38,703
+Tamamdır hocam. Teşekkür ederim.
+
+366
+01:31:41,103 --> 01:31:44,943
+Evet buyurun. Soru vardı [öğrenci] Bey galiba. Sesinden tanıdım. Buyurun.
+
+367
+01:31:45,395 --> 01:32:09,475
+Hocam soru değildi, bir rica. Şimdi anladığım kadarıyla derslerimizi bitirdik. Haftaya daha böyle soru cevaplı gideceğiz. Bugün iki tane hatta kimilerinin işletim standarı ne oldu bilmiyorum ama üç tane sınav var öğleden sonra ikiden başlayan. Yani eğer sizin için de mümkünse ne bileyim erken mi bitirebilir, ya da haftaya mı bırakırsınız, nasıl isterseniz çok makbul ediyoruz.
+
+368
+01:32:10,292 --> 01:32:16,032
+Zaten iki saat yapacağız. Çok güzel hocam. Çok teşekkür ederim.
+
+369
+01:32:16,112 --> 01:32:21,731
+Getirelim. Gerçekten benim de saat 17'de bir tez izleme konuşması var mı var?
+
+370
+01:32:22,392 --> 01:32:26,292
+İşte kalp kalbe karşı demek ki hocam. Çok teşekkür ederim. Sağ olun.
+
+371
+01:32:27,252 --> 01:32:30,392
+Peki. Evet var mı başka soru arkadaşlar? Buyurun konuşalım.
+
+372
+01:32:30,412 --> 01:32:32,472
+Hocam ben de projeleriyle ilgili bir şey sorabilirim.
+
+373
+01:32:32,692 --> 01:32:34,132
+Tamam buyurun herhalde. Buyurun.
+
+374
+01:32:37,631 --> 01:32:54,211
+Acaba mesela bir öğrenci eklemesi yapacağız. Öğrenci eklemesini hemen dosya işlememiz mi gerekiyor? Yoksa önce bir strak dizisinde tutup programdan çıkarken bütün güncellemeleri dosyaya atmamız daha uygun olur. Çünkü o şekilde çok daha hızlı olacak ve efektif olacak diye düşündüm ama.
+
+375
+01:32:54,612 --> 01:33:08,092
+Evet, şimdi size kalmış. Burada düşünmeniz gereken şey şu. Eğer birkaç işlemi biriktirip diske yazma aktarma yaparsanız.
+
+376
+01:33:08,399 --> 01:33:23,239
+Diyelim ki bir undo yapılması gereken şey varsa o zaman onu şimdi acaba diske kaydettim mi yoksa sadece bellekte mi orada mı undo etmem gerekecek şeklinde bu sefer kodumuz daha karmaşıklaşacaktır.
+
+377
+01:33:23,239 --> 01:33:29,499
+Örneğin, öğrenci ders öğretim üyesi için ders eklemesi ve güncelleme işlemlerini yapınız diyor.
+
+378
+01:33:29,679 --> 01:33:35,999
+Şimdi bunu menülemeyi nasıl yapacaksanız farklı farklı yapılır da diyelim ki işte.
+
+379
+01:33:36,399 --> 01:33:50,119
+Öğrenciye ders ekleme ekranındasınız şu an. Eklediğiniz bir öğrenciye, birinci öğrenciye birinci ders eklediniz, ikinci öğrenciye ikinci ders eklediniz, üçüncü öğrenciye üçüncü ders eklediniz.
+
+380
+01:33:50,119 --> 01:34:00,879
+Şimdi, önce bunları ekledikten sonra, bu ekrandan çıkmadan önce bu yaptığınız değişiklikleri diske aktarabilirsiniz.
+
+381
+01:34:01,460 --> 01:34:29,200
+Ondan sonra diyelim ki bir numaralı öğrencilerden bir numaralı dersi silmek için tamam en son belek yaptığınız değişiklikleri diske aktarmışsınız. Yapacağınız iş kesinlikle diskten olacak. Burada bir belirsizlik yok. Ama siz yani programın ta en başında bütün dosyayı yükledim. Ondan sonra bütün işlemleri hep belli yaptım. Ondan sonra programdan çıkacağım veyahut da işte kaydetmenin seçeneği olacak mıydı? Burada yok ama.
+
+382
+01:34:29,460 --> 01:34:41,420
+İsterseniz ekleyebilirsiniz mesela. Ya kullanıcı bir menü seçeneği gerektiğinden hadi her şeyi, dosyaları kaydet şeklinde bir konut da verebilir.
+
+383
+01:34:42,771 --> 01:35:10,771
+Kullanıcının bunu girmesi unutulabilir diye düşünüp programdan çıkarken bunu ben kodda çalıştıracağım, değişiklikleri dosyayı yazacağım da diyebilirsiniz. Siz bilirsiniz ama bu ya dediğim ikincisinde şöyle bir program var. Kullanıcı yanlışlıkla Ctrl-C bastı ve hatta konut satırı kapandı. Bütün dosya silindi. Bakın benim az önce yaptığım gibi. Veri girişinde Ctrl-C yaptım. Dat dosyası uçtu. Bir kenarımda bir dat dosyam var.
+
+384
+01:35:10,771 --> 01:35:27,692
+Bazı da onu koydum, devam edebildim. Onun böyle bir sakıncası var. O yüzden bilinçlediğim en mantıklı, öğrenci ders ekleme ekranında bütün ekleme seçildikten sonra dosyayı güncellemek bir performans arttırıcı bir yol olarak kullanılabilir.
+
+385
+01:35:30,631 --> 01:35:32,631
+Anladım hocam, teşekkür ederim.
+
+386
+01:35:35,631 --> 01:35:37,771
+Başka sorusu olan arkadaşım var mı?
+
+387
+01:35:49,011 --> 01:35:50,311
+Kodlanmaya at projeden.
+
+388
+01:36:03,923 --> 01:36:05,904
+Hocam, ben bir soru daha sorabilir miyim?
+
+389
+01:36:06,204 --> 01:36:07,184
+Sorun mu? Tabii ki.
+
+390
+01:36:08,844 --> 01:36:25,184
+Projede ders kayıtları eşleştirme olarak tutacağız. Öğrenci numarasıyla ders kodu. Onun güncelleme fonksiyonu da var diyor orada. Hani güncellemek için de bir fonksiyon yazın diyor. Güncelleme ne olabilir? Yani orada çünkü eğer...
+
+391
+01:36:25,779 --> 01:36:46,179
+Kaydı bırakırsa zaten sıfıra döndürüyoruz. Öğrenci numarasıyla ders kodu değişmemiş oluyor. Ve ders kayıt tarihi de silmememiz gerekiyor anladığım kadarıyla. O yüzden koyuyoruz. Hani burada güncellemek ve silmek arasında bir fark şey olabilir gibi geliyor. Ya ders kodu değişecek ya öğrenci numarası değişecek.
+
+392
+01:36:46,179 --> 01:36:50,679
+Bakalım. Derse kayıt olması.
+
+393
+01:36:51,264 --> 01:37:18,764
+Dersten kayıt silmesi. Beşinci maddeyle ilgili benim sorduğum sorum. Peki, bir öğrenci çok seyir ders alabilirken bir dersi çok seyir öğrenci alabileceği için, evet, öğrenci ders kayıt silme, bir dosyada hangi ders aldığı öğrencinin o ders kodu eşleştirilmesi yönetilir, saklanmadığı. Peki, ben bile eşleştirilme için falan olmadı. Evet, acaba eşleştirilmesi ders kayıt durumunu derse kardona tarihde saklanmadınız. Tamam, peki şimdi silme veya güncelleme kısmını anlayamadım. Tekrar alayım sorumluluğun.
+
+394
+01:37:19,264 --> 01:37:29,824
+Silme fonksiyonu bariz. Kayıtlıysa bıraktıya dönecek. Güncellemek için ne kalıyor geriye? Güncelleme fonksiyonunda yapılabilecek ne kalıyor?
+
+395
+01:37:29,824 --> 01:37:30,704
+Evet.
+
+396
+01:37:34,624 --> 01:37:37,963
+Hiçbir şey kalmıyor aslında. Ya kaydoluz ya siler.
+
+397
+01:37:41,587 --> 01:37:46,288
+Evet, tek güncelleminin bir anlamı yok burada. Doğru. Genel amaçla düşmüşüz yazmış.
+
+398
+01:37:46,408 --> 01:38:00,007
+Şey geldi aklıma yani. Öğrenci numarası değişirse ki ben şu an değişmesine izin veriyorum. Yazdığım fonksiyonu o kısmını en azından. Gidip ders kayıtta da öğrenci numaralarının hepsini yenisiyle mi değiştireceğiz? Bir tek aklıma o geliyor çünkü.
+
+399
+01:38:00,435 --> 01:38:10,475
+İsterseniz, şimdi burada öyle bir şey yazmıyor. Öğrencinin numarası değişebilir diye bir şey yazmıyor. O yüzden yapmak zorunda değilsiniz. Öyle söyleyeyim.
+
+400
+01:38:10,875 --> 01:38:12,715
+Tamamdır hocam. Peki, teşekkürler.
+
+401
+01:38:15,775 --> 01:38:17,955
+Hocam benim de aklıma bir soru daha geldi.
+
+402
+01:38:18,255 --> 01:38:18,815
+Tabii, lütfen.
+
+403
+01:38:20,395 --> 01:38:27,295
+Bu öğrenci ekle, ders ekle vs. işlemlerinde böyle tekrardan kaçınmak için function pointer.
+
+404
+01:38:27,956 --> 01:38:47,295
+Kullanın diye bir not düşürmüş ama ben bu konuda nasıl Function Pointer'la tekrardan kaçınılması gerektiğini tam olarak anlayamadım. Yani Java'daki jenerikler veya işte C++'daki template'lere benzer bir yapım var acaba diye baktım ama o tarz bir şey de bulamadım. Burada tam ne kastlanıyor.
+
+405
+01:38:55,188 --> 01:39:21,887
+Function pointer olmadan ben kodumu yazarım. Düzgün çalıştığından emin olurum falan filan. Ondan sonra acaba ben bu kodumda nereye Function pointer yapsam kazanırım diye sonra geriye dönüp bakalım. Ben sizin yerinizde olsa. Benim de çok aklıma gelmiyor bu aşamada Function pointer'ı nerede işe yarar. Benim de aklıma gelmiyor.
+
+406
+01:39:23,060 --> 01:39:24,320
+Tamam mı hocam? Teşekkür ederim.
+
+407
+01:39:24,340 --> 01:39:36,380
+Bazen şöyle yatıyoruz arkadaşlar. Sınavı ve projeye hazırlarken illaki öğrettiğimiz bir şeyi de bakalım öğrenebilmiş misiniz bakmak için bir gereksinimi koyuyoruz illa.
+
+408
+01:39:36,380 --> 01:39:46,180
+Belki çok çok fazla esprisi olmuyor ama yine de işte koyuyoruz. Çünkü bakalım o noktada aklınızda kalmış mı diye bakmak için. Belki böyle bir şey olmuş.
+
+409
+01:39:52,243 --> 01:39:59,923
+Bakın, bir önceki derste konuyu yazmak, o function point'ın içine çok kurtuldu.
+
+410
+01:40:00,000 --> 01:40:20,159
+Neye göre, tamam sarama yapacağım ama sarama yaparken işte neye göre küçüktür, büyüktür bakacağım. Programcıya bir şans veriyor. Sarama fonksiyonunu, özür dilerim, karışlaşma fonksiyonunu yazıp ona pointer veriyorsunuz. Böylelikle farklı farklı kriterlere göre sarama yapmak mümkün olabilecek.
+
+411
+01:40:22,336 --> 01:40:28,996
+Benzer bir şey acaba burada olabilir mi? Bakayım, burada bir herhangi sıralamadan bahsetmiyor.
+
+412
+01:40:32,564 --> 01:40:47,104
+Bahsetmiyorum. Oradan yakalayamadık. Dediğim gibi bütün kodu yazarsınız sonra girerim baktığınızda bu function pointer olayını da nereye koyabilirim diye bakıp oradan bir yere koymaya karar verebilirsiniz yani.
+
+413
+01:41:07,764 --> 01:41:09,063
+Kılıbı geliyor.
+
+414
+01:41:09,063 --> 01:41:10,983
+Kılıbı var.
+
+415
+01:41:13,463 --> 01:41:15,743
+Koytma masifine gücü enleme.
+
+416
+01:41:28,372 --> 01:41:29,195
+Teşekkürler.
+
+417
+01:41:37,011 --> 01:41:40,631
+Ayrı aynı dosya. Yani bir dosyada farklı olabilir.
+
+418
+01:41:40,631 --> 01:41:41,251
+Kayıt.
+
+419
+01:41:42,131 --> 01:41:44,332
+Çet dans, stans öğrenci var.
+
+420
+01:41:53,844 --> 01:42:21,844
+Function Point'in aklıma gelen bir şey, eğer hem öğrenciler hem öğretim üyelerinin ikisinin birlikte tutulduğu bir dosya veya yapı veya bir dizi olsa, o zaman işte eğer öğrenci ise bunu yap şeklinde bir şey yerine, orada öğrenci ise ne yapılacaksa ayrı bir fonksiyon, öğretim üyesi ne yapılacaksa ayrı bir fonksiyon ve işi yapacağım zaman ya öğretim üyesine...
+
+421
+01:42:21,844 --> 01:42:42,684
+Öğrenç fonksiyonunu ver ya, öğrenci fonksiyonunu ver türünden bir şey düşündüm ama öyle bir gereksinim yok burada. Dediğim gibi önce bütün her şeyi bir kodlayın, düzgün çalışsın. O yeterince bir çabaya var olacaktır zaten. En sonunda bakarsanız şuraya function point'ı koyabilir miyim diye en uygun düşündüğünüz olduğunu düşünüyorsanız yerine koyun function point'ı mı?
+
+422
+01:42:48,180 --> 01:42:51,119
+Başka sorusu olan arkadaşımla nasıl konuşalım?
+
+423
+01:43:15,252 --> 01:43:17,052
+Şu kaygı değiştirelim bakalım.
+
+424
+01:43:46,836 --> 01:43:55,576
+Şimdi haftaya hatırlatıyorum. Öğrenci soruları üzerinden bir de çek istiyorum.
+
+425
+01:43:57,456 --> 01:43:59,436
+Evet, çekmekten geldi bir soru galiba.
+
+426
+01:43:59,920 --> 01:44:25,279
+Evet, haftaya. Evet, doğru. Haklısınız. Sınavlar en zor kısım. Haklısınız. Tamam, haftaya bekleriz o zaman. Bring in on yani. Getirin sonra yapmaya çalışıyorum. Ben ne kadar becerilerini yanıtlamıyor olsa ayrı konu da elimden gelen şeyleri gösterirken tabii ki. Yanıtlayamadığımı da sonraki 14. haftada yakalar bulur yaparım yani. Eyvallah.
+
+427
+01:44:26,228 --> 01:44:36,627
+Peki arkadaşlar, o zaman şimdilik Allah'a ısmarladık. Haftaya görüşmek üzere. Bütün sınavlarımızda başarılar diliyorum. Bol bol inşallah. Kolay gelsin. Allah'a ısmarladık.
+
+428
+01:44:41,811 --> 01:44:43,612
+Önce Stop Share'ı bakalım.
+
+429
+01:44:44,992 --> 01:44:46,771
+Sonra ben daha kolay çıkabiliyorum.

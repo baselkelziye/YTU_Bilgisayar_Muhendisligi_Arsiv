@@ -1,0 +1,347 @@
+1
+00:01:59,924 --> 00:02:01,924
+Selamlar arkadaşlar.
+
+2
+00:02:08,276 --> 00:02:10,276
+Sesim geliyor sanırım değil mi?
+
+3
+00:02:10,276 --> 00:02:13,276
+Geliyor hocam.
+
+4
+00:02:13,276 --> 00:02:15,276
+Nasılsınız?
+
+5
+00:02:19,764 --> 00:02:45,284
+Teşekkürler. Arkadaşlar, teslimat detaylarını şu an görüyor olmanız lazım. Yine bir forma yükleyeceksiniz cevabınızı. Ve sınav başlangıcı 14.10'da, sınav bitişi de 15.35'de olacak. Yine yüklemeniz için ekstra 5 dakika verildi. Birazdan soruyu anlatmaya başlayacağım.
+
+6
+00:02:49,364 --> 00:03:01,524
+Arkadaşlar, lütfen her laboratuvarda olduğu gibi dosya isminizi numaranız olarak yapın ve sadece C dosyanızı yükleyin. Ziplemenizi, rarlamanıza gerek yok.
+
+7
+00:03:04,979 --> 00:03:06,979
+Başkanı Lab 4 yazacak mıyız?
+
+8
+00:03:06,979 --> 00:03:10,979
+Hocam, başkan Lab 2 yazıyor ya. Evet, onu yazacak mıyız hocam? Çünkü karışık.
+
+9
+00:03:10,979 --> 00:03:20,979
+Yazabilirsiniz. Lab 2 bu eski şeyden kalmış. Lab 4 yapalım onu. Lab 4 yazın. Ama burada en önemlisi numaranızın olması.
+
+10
+00:03:20,979 --> 00:03:22,979
+Tamamdır hocam.
+
+11
+00:03:22,979 --> 00:03:30,979
+Lab 4 yazın onu. Bu eski laboratuvar dokümanından aldığımız için öyle kalmış. Kusura bakmayın. Lab 4 alt türe numaranız olsun.
+
+12
+00:03:34,900 --> 00:03:41,900
+Özellikle main olarak gönderenleriniz var ve birçok kişi main olarak gönderdiği zaman çok zor oluyor ayırt etmesi.
+
+13
+00:03:48,659 --> 00:04:00,139
+Hocam bu pdf'i çeteye yükleyebilir misin? Efendim? Bu pdf'in linkini çeteye atabilir misiniz veya? Öyle yapacağım. Soruyla beraber yükleyeceğim birazdan olur mu?
+
+14
+00:04:00,139 --> 00:04:00,747
+Olur.
+
+15
+00:04:21,684 --> 00:04:23,684
+Nerede paylaşacaksınız? Havet sitemi?
+
+16
+00:04:23,684 --> 00:04:26,684
+Hem chat'e atacağım hem de Havet site paylaşacağım.
+
+17
+00:04:33,204 --> 00:04:40,084
+Hemen atayım. Birazdan atayım paylaştıktan sonra VSS linkimi de paylaşayım sizlerle.
+
+18
+00:04:40,084 --> 00:04:42,244
+Çete de göndereceğim zaten.
+
+19
+00:04:52,115 --> 00:04:57,875
+Şu an 76 kişi olduk. Ben soruyu anlatmaya başlıyorum arkadaşlar.
+
+20
+00:04:59,635 --> 00:05:03,875
+Şimdi basit bir sorunuz var bu son laboratuvarda.
+
+21
+00:05:05,195 --> 00:05:08,755
+Başladım bu arada, hiçbir sıkıntı yok değil mi ekranda?
+
+22
+00:05:09,315 --> 00:05:10,115
+Yok hocam.
+
+23
+00:05:10,163 --> 00:05:27,764
+Tamam, süper. Şimdi arkadaşlar, şöyle basit bir sistem düşünün. Bir tane ampulümüz var ve butonlarımız var. Bu ampul sadece üç tane butonun butona basılmasıyla çalışılıyor. Ne iki, ne dört, yani daha fazla ya da eksik değil. Sadece üç tane butonla çalışıyor.
+
+24
+00:05:27,764 --> 00:05:36,363
+Ve kullanıcıdan, şuradaki ilk örneğe bakın, kullanıcıdan kaç tane buton olduğunu alıyorsunuz. Yani buradaki butonlar örnek olarak.
+
+25
+00:05:38,163 --> 00:06:06,043
+Ardından kullanıcıdan bu ampulün çalışması için ne kadar enerji gerektiğini alıyorsunuz. Sonra size şunu yapmak düşüyor. Bu ampulü çalıştırmak için gerekli enerjiyi sağlayan üçlü grupları bulmak. Bu grupları bulduktan sonra sizden tek istediğimiz en az bir tane grup bulduktan sonra ampulün yanıp yanmadığı bilgisini ekrana göstermeniz. Yani burada üç tane grup bulunmuş.
+
+26
+00:06:06,163 --> 00:06:14,163
+Örneğin gerekli enerji 8, 5, 1, 2, bunun sırası önemli değil, butonların sırası aynı anda basıldığını varsayıyoruz.
+
+27
+00:06:14,163 --> 00:06:20,163
+Bu şekilde üç tane farklı grup bulunmuş, bunun sonucunda ampulen az bir kere yanmış demektir.
+
+28
+00:06:20,163 --> 00:06:30,163
+Bu yüzden output olarak ampul, yanar yazmanız yeterli ekrana. Bu listeyi ekrana açıkta olarak vermenize gerek yok.
+
+29
+00:06:34,163 --> 00:06:49,163
+ve bir tane grup bulunmuş ve yine ampul yanar çıktısını veriyoruz. Ama üçüncü örnekte gerekli enerji 50, hiçbir üçlü grup bu 50'yi sağlamadığı için output olarak ampul yanmaz çıktısı veriliyor.
+
+30
+00:06:49,163 --> 00:07:02,163
+Bu şekilde olacak. Burada bir diğer sizden istediğimiz şey programı recursive olarak yazmanız. Recursive yapmayanlardan ciddi puan kesilmesi olacak, kesimi olacak.
+
+31
+00:07:02,163 --> 00:07:13,503
+Ve yine söylediğim gibi, buradaki butonları listelemenize gerek yok. Sizden tek istediğimiz output olarak ampul yanar veya ampul yanmaz diye çıktı vermeniz ve programınızı recursive yazmanız.
+
+32
+00:07:14,503 --> 00:07:15,503
+Yine tekrar...
+
+33
+00:07:15,503 --> 00:07:19,663
+Hocam, buton değerleri birbirinden farklı mı olması gerekiyor?
+
+34
+00:07:19,987 --> 00:07:28,487
+Aynada girebilirsiniz, farklı senaryoları deneyebilirsiniz, bunu kullanıcı giriyor olarak varsayın, kullanıcı sıfırda girebilir, aynada girebilir.
+
+35
+00:07:28,487 --> 00:07:38,487
+Burada şey değil, yani butonların ne sırası önemli, ne de şeyi, yani kaçtan grup olduğu hiç önemli değil.
+
+36
+00:07:39,987 --> 00:07:43,987
+Kaç buton olduğu?
+
+37
+00:07:44,148 --> 00:07:56,148
+Bu buton sayısı ve değerleri kullanıcıdan alınacak. Burada yedi tane olması bir örnek sadece. Kullanıcı beş tane buton olacak dedi. Kullanıcıdan beş tane değer alacaksınız. Buton değeri.
+
+38
+00:07:56,148 --> 00:08:00,148
+Integer değil mi hocam? Double değil. Bütün değerler integer.
+
+39
+00:08:00,148 --> 00:08:02,028
+Integer olarak bir şekilde.
+
+40
+00:08:05,235 --> 00:08:08,115
+[öğrenci] konuşuyor değil mi?
+
+41
+00:08:08,115 --> 00:08:15,035
+Evet hocam, şeyi soracağım, iki buton veya dört buton olma durumlarını kontrol etmiyoruz. Sadece ve...
+
+42
+00:08:15,035 --> 00:08:16,035
+Yok.
+
+43
+00:08:16,035 --> 00:08:16,144
+Tamam.
+
+44
+00:08:16,144 --> 00:08:30,344
+Sadece 3. Ve burada gerekli enerji 8 yazıyor ya, mesela bundan da fazla olmayacak. Tam olarak 8'e bakıyorsunuz. 10 enerji elde ettim, o zaman 8 her türlü çalışır gibi düşünmüyorsunuz arkadaşlar. Tam olarak 8.
+
+45
+00:08:30,344 --> 00:08:31,544
+Tamam anladım hocam.
+
+46
+00:08:31,544 --> 00:08:33,544
+Yani kullanıcı kaç girerse.
+
+47
+00:08:33,544 --> 00:08:34,943
+Teşekkürler hocam.
+
+48
+00:08:34,943 --> 00:08:39,744
+Hocam, bir maksimum buton sayısı kabul edelim mi, bir dizide tutmak için?
+
+49
+00:08:39,744 --> 00:08:40,744
+Efendim?
+
+50
+00:08:41,235 --> 00:08:46,235
+Maksimum buton sayısı kabul edelim mi dizide tutmak için? Örneğin 10-15 falan gibi.
+
+51
+00:08:46,235 --> 00:08:54,235
+Onu yapmak zorundasınız. Dinamik programlama sanırım hala görmediniz. Yapmak zorundasınız. Bir maksimum tutabilirsiniz sorun değil.
+
+52
+00:08:54,235 --> 00:08:58,987
+Ama bunu nasıl yapacağınızı bilmeniz gerekiyor zaten. Global değerden kaçının.
+
+53
+00:08:59,668 --> 00:09:14,668
+Ampul birisi, [öğrenci] şey yazmış, bir tane üçlü grup bulmanız yeterli. Kaç tane oldu, bu grupların içeriğini yazdırmanıza gerek yok. Dediğim gibi, recursive yazmanız ve output olarak yanar yanmaz diye bilgi vermeniz yeterli.
+
+54
+00:09:14,668 --> 00:09:27,668
+Buradaki örneklerde olduğu gibi örneğin, birinci örnekte üç tane ayrı grup bulunmuş, yine ampul yanar çıktısı. Burada bir tane örnek bulunmuş, yani bir grup bulunmuş, yine ampul yanar çıktısı veriyor.
+
+55
+00:09:27,668 --> 00:09:42,168
+Ama burada hiç bulunmadığı için yanmaz çıktısı veriliyor. Hayır, gerekli enerji kullanıcıdan arkadaşlar. Arkadaşlar, lütfen şurayı okuyalım, ben hemen paylaşayım.
+
+56
+00:09:42,168 --> 00:09:49,168
+Buton sayısı ve değerleri kullanıcıdan alınacak. Ampulun çalışması için gereken enerji yine kullanıcıdan alınacak.
+
+57
+00:09:50,168 --> 00:09:52,168
+Saç hocam, pozitif değerler mi bu arada?
+
+58
+00:09:53,620 --> 00:10:02,620
+Evet, pozitif değerler. Negatif değer de olsa bir şey fark etmez. Yapacağınız işlemi aynı ama pozitif değer girmeniz yeterli.
+
+59
+00:10:05,844 --> 00:10:09,844
+Aslında negatif pozitif çok etkilemeyecek zaten sizin işleminizi.
+
+60
+00:10:13,076 --> 00:10:22,676
+Ben hemen bir dakika bu şeyi kapatıp hemen her yerde size bunu PDF paylaşacağım.
+
+61
+00:10:22,676 --> 00:10:26,276
+Chat'e şu an gönderdim.
+
+62
+00:10:30,580 --> 00:10:35,180
+Evet, 14.10 oldu arkadaşlar. Yani süreniz de başlamış oldu.
+
+63
+00:10:39,187 --> 00:10:43,187
+O, yüzeyde paylaştım hemen, o, yüzeyde linkimi de açayım.
+
+64
+00:10:59,827 --> 00:11:01,367
+OVSS linkimi dağıttım.
+
+65
+00:11:07,668 --> 00:11:10,227
+Şöyle tekrar fikanımı paylaşacağım.
+
+66
+00:11:14,644 --> 00:11:24,644
+3 tane labın en yükseğe alınacak. Katılmanıza gerek yoktur ama bilmiyorum. Siz yine de yapın isterseniz, ona hocalarınız karar veriyor.
+
+67
+00:11:26,644 --> 00:11:36,644
+Yani biz sadece her labda notunuzu veriyoruz ama 3 labın da 100 ise tabi buna gerek yok. Ama ben olsam garanti olması için yapardım.
+
+68
+00:11:43,700 --> 00:11:47,779
+Fatih her şeyi attım, başka istediğim bir link yok sanırım.
+
+69
+00:12:21,043 --> 00:12:33,423
+Hocam, son olarak bir şey sorabilir miyim? Formda rar dosyası içine aynı isimli C dosyası olsun demiş de, rar içinde mi göndereceğiz yoksa normal C dosyası olarak mı göndereceğiz?
+
+70
+00:12:33,423 --> 00:12:39,423
+Hayır, nasıl aynı isimli derken sadece C dosyasına yüklüyorsunuz, numaranız...
+
+71
+00:12:39,423 --> 00:12:47,423
+Hocam orada şey yazmış da o yüzden sorma, kod dosyası lab4 numara.rar dosyası içinde olmalıdır yazıyor da o yüzden sorma.
+
+72
+00:12:47,423 --> 00:12:48,923
+Nerede yazıyor o?
+
+73
+00:12:50,067 --> 00:12:52,067
+Formda şöyle yazıyor.
+
+74
+00:12:52,067 --> 00:13:01,067
+Formda tamam, onu unutmuşuz arkadaşlar. Durun onu düzeltelim. Eskisinden kopyaladığımız için bazen böyle sorunlar çıkıyor.
+
+75
+00:13:01,067 --> 00:13:11,067
+Bir dakika, burada şöyle kaldım. Neyse, siz normal C dosyası yükleyin. Ben şuradan şöyle pimon düzelteyim.
+
+76
+00:13:58,419 --> 00:14:08,659
+Arkadaşlar, [öğrenci]'in bir sorusu var. Bunları yazdırmayacaksınız. Yani yazdırmanızı istemiyoruz. Tutmasanız da olur. Yani yönteminiz size kalmış. Ama yazdırmayacaksınız.
+
+77
+00:14:10,899 --> 00:14:21,379
+Yani bir grup bulmanız yeterli. Önemli olan bu laboratuvar sorusunda recursive bir fonksiyon yazıp yazamadığınızı görmek.
+
+78
+00:15:20,596 --> 00:15:26,596
+Arkadaşlar, sorunuz yoksa ben 1-2 dakika içinde çıkacağım. Aklınıza gelenler varsa sorabilirsiniz.
+
+79
+00:15:56,371 --> 00:16:06,871
+Arkadaşlar, zaten soru o. Üçlü grupları siz buluyorsunuz ama bir tane de bulmanız yeterli ve sonucunda ampul yanar, yanmaz şeklinde çıktı alıyorsunuz.
+
+80
+00:16:07,475 --> 00:16:14,796
+Buton sayısını, buton değerlerini, gerekli enerjiyi kullanıcıdan alıp üçlü grupları siz buluyorsunuz.
+
+81
+00:16:14,796 --> 00:16:22,716
+Ve eğer grup bulabilirseniz ampul yanar, bulamazsanız ampul yanmaz şeklinde çıktı veriyorsunuz.
+
+82
+00:16:22,716 --> 00:16:27,115
+Önemli olan programınızı yani fonksiyonunuzu recursive oluşturmanız.
+
+83
+00:16:51,412 --> 00:16:54,912
+Evet arkadaşlar, ben kapatıyorum. Sizlere başarılar dilerim.
+
+84
+00:17:00,659 --> 00:17:08,259
+Soru yok galiba. Chatten de aldınız zaten dokümanı form linkini oraya yüklüyorsunuz.
+
+85
+00:17:11,796 --> 00:17:13,796
+Recursive olması yeterli [öğrenci].
+
+86
+00:17:15,796 --> 00:17:22,796
+Tabi yapabildiğiniz en iyi şekilde yapmaya çalışın. Çünkü zaten fazlaca süreniz var bu soru için.
+
+87
+00:17:28,980 --> 00:17:31,980
+Kolay gelsin, başarılar dilerim, hoşçakalın.

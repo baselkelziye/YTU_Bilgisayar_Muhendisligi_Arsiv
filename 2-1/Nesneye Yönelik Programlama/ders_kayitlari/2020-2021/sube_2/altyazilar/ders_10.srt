@@ -1,0 +1,3971 @@
+1
+00:00:00,980 --> 00:00:01,439
+Thank you.
+
+2
+00:00:07,508 --> 00:00:24,287
+Evet arkadaşlar, özür dilerim. Biraz geç kaldım. Gerçi her halde biraz 9.5 geç olmasını bekliyordum katılımınız artsın diye. Ama niyetim bu değildi. Ben yine de 9'da katılmaya çalışıyordum. Neyse, birazdan başlayacağız. Birazdan ekran paylaşmayı yapacağım ve başlayacağız.
+
+3
+00:00:34,292 --> 00:00:35,871
+Başlayabiliriz.
+
+4
+00:00:37,811 --> 00:00:38,531
+Paylaş bakalım.
+
+5
+00:00:45,363 --> 00:00:48,183
+Evet, şimdi Nesneye Kavaklanmadan,
+
+6
+00:00:50,323 --> 00:00:51,524
+akıllı hale kalkmıştık.
+
+7
+00:00:57,652 --> 00:00:58,951
+Evet, bir şey var.
+
+8
+00:01:10,355 --> 00:01:11,355
+Bir şey de değiştirmiş.
+
+9
+00:01:11,495 --> 00:01:12,415
+Anlayış bakarız.
+
+10
+00:01:12,415 --> 00:01:13,756
+Anlayış bir şey.
+
+11
+00:01:14,495 --> 00:01:15,316
+Çok da dert.
+
+12
+00:01:30,036 --> 00:01:34,176
+Peki arkadaşlar, şimdi bugün iki yönlü ilişkilerle devam edeceğiz.
+
+13
+00:01:34,756 --> 00:01:37,915
+Sahiplik ilişkisini çift yönlü yapacağız bu sefer.
+
+14
+00:01:41,492 --> 00:01:49,572
+Geçen hafta yaptığımız tek yönlü sahiplik ilişkisiydi. Bir şahıs arabası olduğunu biliyordu. Ama araba sahibini bilmiyordu.
+
+15
+00:01:50,731 --> 00:01:58,852
+Gerçekten tabii ki bir araba bilinçli bir varlık olmadığı için hiç sahibini bilmez tanımaz ama şöyle değişik senaryolar düşünebilirsiniz.
+
+16
+00:01:58,852 --> 00:02:08,531
+Örneğin bir motorda taşıt bilgi sistemi söz konusuysa bir araç kaydına ulaşıp oradan acaba bunu sahibim diye sorgulama yapmak isteyebilirsiniz mesela.
+
+17
+00:02:09,139 --> 00:02:17,719
+Veya öte yandan belki sahibini parmak izinden tanıyan araçlar olacak falan gibi her neyse.
+
+18
+00:02:18,439 --> 00:02:33,219
+Ama yani bu stülistik düşünmesek bile en azından bir bilgi sisteminde bir araba nesnesine referans almışsak, oradan ilgili bunu sahibi kim onu sorgulamak istiyorsak, öbür tarafa doğru olan ilişkiye de ihtiyacımız var.
+
+19
+00:02:33,219 --> 00:02:35,919
+Bu durumda sınıf işlemesi şu hali alıyoruz.
+
+20
+00:02:36,307 --> 00:02:39,867
+Burada şunu şöyle bir göster yapalım.
+
+21
+00:02:41,812 --> 00:02:46,772
+Peki, şimdi bunu nasıl koda dökeceğiz? Onu bir bakalım. Önce modelimize bakalım.
+
+22
+00:02:46,772 --> 00:02:55,692
+Şimdi normalde ilişki person'dan kara doğruydu. Şimdi kardan person'a doğru da ok çizdiğime göre demek ki k sınıfının kodu değişecek.
+
+23
+00:02:56,132 --> 00:02:59,552
+Person sınıfında hiçbir değişiklik yapmıyorum bir önceki haftaya göre.
+
+24
+00:03:00,012 --> 00:03:07,752
+Ama madem artık karda person'ın sahibini bilecek, bu durumda kardan person'a doğru olan ok uçla koyuyorum.
+
+25
+00:03:08,312 --> 00:03:09,692
+Person tarafına da sıfır.
+
+26
+00:03:09,812 --> 00:03:14,952
+Biri yazıyorum. Çünkü bir araba oluşturur, oluşturmaz, illaki bir kişiye verilecek diye bir kural yok.
+
+27
+00:03:15,492 --> 00:03:25,912
+Şurada sağ tarafta iki parametreli iki tane constructor görüyoruz. Birisi sadece plaka yer alan, birisi plaka ve sahibi alan olmak üzere.
+
+28
+00:03:26,472 --> 00:03:35,192
+Şimdi bu iki constructora herhangi bir çağrılabilirsiniz. Bu durumda eğer ilk il çağrılırsa bir sahip vermeden sadece araba oluşturuyor anlamına gelmektedir.
+
+29
+00:03:35,192 --> 00:03:37,812
+Bu durumda da bir araba nesnesi...
+
+30
+00:03:37,812 --> 00:03:42,112
+Belli bir anda belli bir sahiple, belli bir kişiyle ilişkili olmayabilir.
+
+31
+00:03:42,832 --> 00:03:57,292
+Bu nedenle aynı nasıl ki personal introduce selfini yazarken o anda bir arabayla ilişkiliyse ancak arabanın plakısını da söyle dediğimiz gibi benzer işlemleri K sınıfında da yapmamız gerekli.
+
+32
+00:03:57,972 --> 00:04:11,852
+Onun dışında, madem bu owner ve bu okuda cardan personal'a doğru giden okuda kodlayabilmek için, kars sınıfında personal türünden bir üye alana ihtiyaç var. Ona da owner demişiz.
+
+33
+00:04:12,512 --> 00:04:18,331
+Onlar için getter, resettir metotları var. Arjın sahibi değişebilir nihayetinde.
+
+34
+00:04:19,172 --> 00:04:24,111
+Plakonun da içinde getter, resettir metotları var ve kar içinde yeni bir introduce self metodu var.
+
+35
+00:04:24,111 --> 00:04:25,971
+Bu introduce self metodu...
+
+36
+00:04:25,971 --> 00:04:53,971
+Bu konuda kendisi hakkında bir string oluşturacak. Ayrıca eğer bir sahip ile ilişkiliyse de onun hakkında da bilgi içeren haber string oluşturup geri döndürecek. Artık bu introduce self metotlarının çalışmasını bu şekilde yapıyoruz. Daha evvel ilk zamanlarda ekrana bilgi yazdırıyordu. Şimdi bu bilgiyi oluşturan stringi geri döndürüyor. Bu introduce self metodu nereden çağırılmışsa o artık bunu istiyor.
+
+37
+00:04:53,971 --> 00:05:02,531
+İster ekrana mı yazar, ister bir diyalog baksa mı yazar, ister bir veri tabanına mı atar, ister bir dosyaya mı kaydeder, nasıl isterse kullanır.
+
+38
+00:05:02,531 --> 00:05:07,572
+Bu nedenle artık çalışma biçimimiz bu olacak, introdujsel metodunun.
+
+39
+00:05:08,292 --> 00:05:14,651
+Ve bir detayı bunları denemek için main metodu içeren bir başka sınıf daha yazacağız. Böyle ilerleyeceğiz.
+
+40
+00:05:18,132 --> 00:05:25,792
+Evet, şimdi bunları konuştuk. Sözde söylemiş oldum buradaki yazanları. Kodu bir inceleyelim.
+
+41
+00:05:26,387 --> 00:05:48,108
+Şimdi ne eklendi? İşte Person, Tune'den owner adlı üye alan eklendi. İşte iki tane constructor gayet basit, get-to-setter metodları gayet basit. Introduce-to-set metodu da basit aslında. Çünkü artık biliyoruz ki bir owner ilişkisi olup olmadığını, o üye alanın null olup olmadığına göre kontrol ederek de yapabileceğiz.
+
+42
+00:05:48,528 --> 00:05:55,248
+Ne yapmışız? Intro stringini tanımamışım. Plakam şudur bilgisini atmışım onun içine.
+
+43
+00:05:55,588 --> 00:06:02,988
+Ve sonra eğer işte sahibim aldıysa o zaman sahibimin adı da şudur şeklinde biraz daha bilgi eklemişim stringi.
+
+44
+00:06:03,268 --> 00:06:06,068
+Ve nihayetinde stringi geri döndürmüşüm. Bu kadar basit.
+
+45
+00:06:10,259 --> 00:06:38,139
+Evet, o kısmı unutmayacağız haliyle. Peki şimdi acaba şey, yani sırf acaba şuradaki kontrolü unutmamak için, şu nal kontrolü unutmamak için acaba ilk constructor kaldırsak mı? Böylece her aracı mutlaka bir sahibi olur. O zaman nal kontrolüne gerek yok. Bence öyle yapmaktansa bu şekilde yapmamız daha iyi. Çünkü hani olur da bu ilk konstruktörü sildik diyelim ikinci konstruktör var sadece.
+
+46
+00:06:38,259 --> 00:06:45,559
+Buna rağmen birisi kodda kar nesnesi oluştururken ikinci parametre olarak elle nal yazar.
+
+47
+00:06:45,739 --> 00:06:49,379
+İşte size güya person yani derlemeden geçer ama atanen bir person yok.
+
+48
+00:06:49,559 --> 00:06:53,799
+Bu nedenle bu nal kontrolünü her zaman için yapmakta yarar var.
+
+49
+00:07:02,291 --> 00:07:05,271
+Şimdi, hadi şey geçelim, koda geçelim.
+
+50
+00:07:05,971 --> 00:07:06,851
+Çalıştıralım.
+
+51
+00:07:12,819 --> 00:07:13,439
+artık.
+
+52
+00:07:15,919 --> 00:07:17,079
+Hangi paketiydi?
+
+53
+00:07:17,159 --> 00:07:18,159
+NYP 035.
+
+54
+00:07:20,219 --> 00:07:20,539
+Evet.
+
+55
+00:07:22,539 --> 00:07:24,500
+Önce person'i hatırlayalım.
+
+56
+00:07:26,196 --> 00:07:30,836
+İşte bir değişiklik yok. Introduce-to-to-to-be benzer şekilde.
+
+57
+00:07:30,836 --> 00:07:34,196
+Bu arada şimdi artık her ikisinde introduce-to-to-to-to-to-to var.
+
+58
+00:07:54,196 --> 00:07:59,636
+Ama class sınıfında konuştuğumuz üzere, yansıda konuştuğumuz üzere aynı kodu görüyoruz.
+
+59
+00:08:00,096 --> 00:08:02,555
+Ondan sonra bir de işte main programına da bakalım.
+
+60
+00:08:02,555 --> 00:08:04,555
+Main programda diyor ki...
+
+61
+00:08:08,851 --> 00:08:36,851
+Şimdi işte bu ilişki iki yönlü olduğu için iki yönlük ilişkileri bir kontrol edelim. Ve tabii ayrıca şimdi her iki senede iki farklı insana iki tane farklı araba verelim. Bakalım her şey yolunda gidecek mi? Oktay adlı bir insan nesnesi oluşturuyorum. Rover adlı bir kar nesnesi oluşturuyorum. Şimdi Oktay'ın set-car metodunu çağırıyorum. Rover'ı ona veriyorum. Ama şimdi Rover'ın da set-owner metodunu...
+
+62
+00:08:36,851 --> 00:08:53,831
+Bu konuda bunu çağırıp Oktay'ı da ona vermem lazım. İlişki iki yönlü ya, bu iki yöndeki ilişkiyi de kurmayı unutmamamız lazım. Arabaya, insana arabasını verdik, tanıttık. Daha doğrusu insanla arabayı ilişkilendirdik ama arabayla da insanı ilişkilendirmemiz de lazım bu durumda.
+
+63
+00:08:55,796 --> 00:09:00,875
+İkisini de yani buradaki durumda hem 6. hem 7. satırda adaki kodları yürütmem lazım.
+
+64
+00:09:01,416 --> 00:09:07,355
+Ondan sonra işte Octane'in kendini tanıtı sitemini ekmana yansıtıyorum ve doğrun kendini tanıtı sitemini ekmana yansıtıyorum.
+
+65
+00:09:07,355 --> 00:09:12,336
+Sonra bu sefer Aziz diye bir insan oluşturuyorum. Sonra Honda diye bir araç oluşturuyorum.
+
+66
+00:09:12,696 --> 00:09:16,976
+Ondan sonra yine Aziz'e Honda'yı veriyorum. Honda'ya da Aziz'i veriyorum.
+
+67
+00:09:17,756 --> 00:09:22,355
+Ondan sonra bunların kendisini tanıtmalarını sağlıyorum. Bunları çalıştıracağım zaman.
+
+68
+00:09:25,875 --> 00:09:41,695
+Problemsiz bir şekilde, Octay 06 plakalı arabam var, 06 plakalı arabada Octay adlı sahibim var diyor. Benzer şekilde Aziz 47 plakalı aracım var diyor. 47 plakalı araçta benim Aziz adlı sahibim var diyor. Bir problem yok.
+
+69
+00:09:45,844 --> 00:10:11,943
+Azize araba vermeyebilirdik tabii elbette bir problem yok. Null kontrolü yaptığımız için de herhangi bir problem olmayacaktır. Şimdi mesela Azize Honda'yı vermiyorum, Honda'ya da Azize vermiyorum. Bunu kapattığımda, çalıştığımda herhangi bir problem olmayacaktır. İnsan Azize diyor başka bir şey demiyor. Kırk edip bir araçlar plakam şu diyor başka bir şey demiyor. Herhangi bir problem yok.
+
+70
+00:10:12,659 --> 00:10:20,879
+Esas problem şurada olur. Mesela diyelim ki, Oktay'a Rower'ı verdik ama Rower'a senin sahibin Oktay demeyi unuttuk.
+
+71
+00:10:21,331 --> 00:10:49,331
+Veya tersi şekilde Azize araba vermeyi unuttuk ama Honda'ya dedik ki senin sahibin Aziz'dir dedik. Bu durumda çalıştırdığımızda o zaman mantıksız sonuç ortaya çıkacak. Değerleme hatası yok ama biz iki yönlü olduğunda iki yönlük ilişkiyi de kurmayı unutmamalıyız. Unutursak işte böyle durum ne oluyor? Oktay diyor benim 0x plakalı bir aracım var diyor. Ama 0x plakalı araç hiç bundan haber.
+
+72
+00:10:49,331 --> 00:10:51,252
+Haberdar değil. Olması gerekiyordu.
+
+73
+00:10:51,792 --> 00:11:00,851
+Öte yandan Aziz herhangi bir arabası olduğunu beyan etmiyor ama 47 plakanı aracının sahibi sorgulandığında sahibi Aziz'dir diyor mesela.
+
+74
+00:11:01,491 --> 00:11:07,032
+Bunlar işte tutarsızlık problemi, bug. Bunları vermeyi unutmamalıyız.
+
+75
+00:11:08,467 --> 00:11:26,627
+Peki, madem tutarsızlıklar önemli hatalardır, diyelim ki bu hataya düşmeyi zorlaştırmak veya engellemek için acaba oktay aracı verdiğimde araç da kendi sahibinin oktay olduğunu anlayamaz mı? O şekilde yazamaz mıyız kodu?
+
+76
+00:11:26,627 --> 00:11:36,467
+Veyahut da bir araca sahip atadığımız zaman o insanın da aracı artık budur şeklinde bir kod yazamaz mıyız?
+
+77
+00:11:36,467 --> 00:11:36,927
+Arkadaşlar, class, object,�
+
+78
+00:11:36,927 --> 00:11:42,447
+Yazarsak da bunu nereye vereceğiz? Yazabiliriz. Şimdi onun üstüne konuşacağız zaten.
+
+79
+00:11:43,567 --> 00:11:56,708
+Diyelim ki Oktay'a aracı verdiğimizde, ROW'a barınayım. Oktay tamam benim aracım bu diyecek. Ondan sonra da ROW'a diyecek ki o araca, hey sen araç, senin yeni sahibin benim diyecek.
+
+80
+00:11:56,708 --> 00:12:03,807
+Yani şu yedinci satırda yaptığımız işi aslında Oktay'ın, yani insanın set-call metodu yapacak.
+
+81
+00:12:04,927 --> 00:12:15,427
+Her şekilde bir araca bir sahip atadığımız zaman, 14. satırdaki kodu çalıştığında örneğin, bu araca set owner metodu diyecek ki, ey insan senin yeni aracın benim.
+
+82
+00:12:15,427 --> 00:12:24,588
+Yani 13. satırda yazılan bir insana araba atama metodunu aslında arabaya insan atama metodu yürütecek.
+
+83
+00:12:25,088 --> 00:12:32,908
+Yani her iki yönde bunun olabilmesini istiyorum. O zaman acaba işi nasıl düzenleriz? Şimdi o noktaya geleceğiz.
+
+84
+00:12:32,927 --> 00:12:34,048
+Sizinle birlikte.
+
+85
+00:12:35,368 --> 00:12:39,908
+Ama arada acaba söylemeyi unuttuğum bir şeyler olmasın değil mi?
+
+86
+00:12:40,128 --> 00:12:40,807
+Tamam, bekalı.
+
+87
+00:12:41,927 --> 00:12:44,388
+Neleri değiştirmeliyiz? Oraları değiştirmeliyiz.
+
+88
+00:12:44,447 --> 00:12:45,307
+Ama bakacağız şimdi.
+
+89
+00:12:46,100 --> 00:13:05,740
+Ayrıca bir şey daha bizim işimizi karmaşıklaştıracak. Şeyin, kars sınıfının şu konstruktörü da, sahip atanan konstruktörü da, ayrıca işimizi biraz şey diyecek, karmaşıklaştıracak. Neyse, şimdi önce bu konstruktörü bir sonra yaparız, adım adım ilerleyelim mesela.
+
+90
+00:13:05,740 --> 00:13:09,679
+Şuan, unutmak için hazır var mıydı bir yerde? 3B, tamam pek.
+
+91
+00:13:10,932 --> 00:13:22,152
+Tamam. Ama şimdi bunu bir önce bir şey yapmaya çalışalım. Biraz hani acemice yapalım da bir takıldığınız yeri görelim. Ondan sonra ne olacağını, ne olması gerektiğine bakalım.
+
+92
+00:13:23,591 --> 00:13:30,252
+Şimdi şu paketi, ctrl c, ctrl v, 3, a diyeyim. Alternatif falan.
+
+93
+00:13:38,932 --> 00:13:54,232
+Şimdi şu set, nademim, person'ın set car metronuna bir girelim bakalım. İlk aşamada tamam, işte insanın araç üye alanını parametre olarak yani nesne olarak atayalım. Ondan sonra da car.set owner diyelim.
+
+94
+00:13:54,655 --> 00:14:07,275
+Parametro olarak da this, yani metodu çağrılan nesne, hangi person nesnesine set car metodu çağrılmışsa artık o car nesnesinin sahibi de bu metodu çağırılan insan nesnesi olsun diyorum.
+
+95
+00:14:08,075 --> 00:14:17,355
+Benzer şekilde car sınıfında set owner metoduna girip owner nokta işte set car this diyorum.
+
+96
+00:14:22,655 --> 00:14:37,575
+artık onun set karnetunu çağırıp senin aracın benim diyecek araba. Peki, yaptık gibi duruyor ama bir kere ters gidecek. Ne olacak bir bakalım.
+
+97
+00:14:42,227 --> 00:14:50,487
+Şimdi her şeyi de unutmayalım bu arada. Main programı da şöyle bir düzeltelim. Ha tamam, komentler orada duruyor. Peki güzel. Yalışın bakalım.
+
+98
+00:14:59,572 --> 00:15:00,451
+Arkadaşlar, cest de geçeç kalutin.
+
+99
+00:15:08,244 --> 00:15:20,543
+Şimdi, bu arada ne oldu? Biraz bir şeyler bıdıdı gitti gitti ama ondan sonra, yani ilk başta hata vermiyordu, bekledi bekledi. Ondan sonra bir stock overflow error dedim. Tekrar çalıştığım.
+
+100
+00:15:23,028 --> 00:15:38,747
+Önce biraz durdu, bekledi, ondan sonra bir şey dedi, ne dedi? Stack overflow error, Allah Allah, stack nedir? Bu niye overflow taşmış etmiş? Ne olmuş şimdi? Bir exception olunca, hatırlıyorsunuz, bu exception onlara ne yol açtı? Onları görüyorum.
+
+101
+00:15:39,967 --> 00:15:50,768
+Karın set owner'ı çalıştı, person'ın set karı çalıştı, tekrar karın set owner'ı çalıştı, tekrar person'ın set karı çalıştı. Burada bir sonsuz döngüye girdi. Buna anlıyorum.
+
+102
+00:15:51,028 --> 00:16:10,587
+Peki, demek ki bir problem var. Bu problemi de nasıl çözeceğim? Şöyle bir çözmeye çalışalım bakalım. Bir kere önce problemin neden kaynaklandığını bir anlamaya çalışalım. Bu sonsuz döngü olmuş ama acaba problemi anlamaya çalışırken belki çözümünü de keşfederiz şimdi.
+
+103
+00:16:17,875 --> 00:16:23,995
+Source, yok, compare with, il çağdır diyeceğim.
+
+104
+00:16:24,395 --> 00:16:29,115
+Tabii hiçbir şey benzemeyecek ama en azından acaba şöyle yan yana görebilecek miyim?
+
+105
+00:16:31,056 --> 00:16:33,576
+Bu yok, bu renklendirme işi biraz bozuyor bence.
+
+106
+00:16:34,135 --> 00:16:35,855
+Öyle yapmayayım o zaman, şöyle yapayım.
+
+107
+00:16:40,735 --> 00:16:42,275
+Açayım iki tane notepad.
+
+108
+00:16:48,148 --> 00:17:05,148
+Biri burada olsun. Bir tane daha atayım. Bir de burada olsun. Ondan sonra açma. Arayayım tuasını şuraya. Motor AC. Tuasını şimdi yerle birleştireyim.
+
+109
+00:17:06,148 --> 00:17:15,148
+Çap lazım olunca yaşırabiliyorum. En iyisi düz mantık. Ondan sonra karı da alayım buraya. Şuraya da karı yapıştırayım.
+
+110
+00:17:16,051 --> 00:17:38,211
+Bu arada şöyle azıcık. Tabla çok olduğu için biraz. Çok fazla kodu yok dedi. Tamamı ya şimdi bu kurtarız. Peki. Gelelim şimdi Annotation'a. Annotation'ı alayım. Bunlar çizmeye başlayayım şimdi.
+
+111
+00:17:41,779 --> 00:17:47,599
+Şimdi diyelim ki çalıştırdığımız şey ilk başta ne çalıştırmıştık?
+
+112
+00:17:47,839 --> 00:17:49,699
+Dur şimdi şunu bir tekrardan anlatayım.
+
+113
+00:17:50,319 --> 00:17:51,099
+Kapatayım.
+
+114
+00:17:51,719 --> 00:17:55,019
+Main metodunda ilk şunu yapmaya çalışmıştık.
+
+115
+00:17:55,420 --> 00:17:58,420
+Octave.setCast.roll demeye çalışmıştık.
+
+116
+00:17:58,639 --> 00:17:58,839
+Peki.
+
+117
+00:17:59,839 --> 00:18:01,240
+Kopyalayayım mesela.
+
+118
+00:18:02,539 --> 00:18:03,819
+Buradan başlayalım.
+
+119
+00:18:04,000 --> 00:18:05,599
+Neyin yalnız gittiğini göstermeye.
+
+120
+00:18:08,660 --> 00:18:19,320
+Demiştim ki işte şunu demiştim. Octa.set.car.ru bunu demiştim. Bu bir problem çıkardı bana. Peki. O zaman acaba ne oluyor? Bir bakalım.
+
+121
+00:18:19,320 --> 00:18:32,639
+Biraz kımdatım. Tabii şey yazarken iyi oldu da ondan sonra şey gitti. Peki. Tekrar teksti. Şuraya yazarsam bir problem olmaz.
+
+122
+00:18:34,900 --> 00:18:40,180
+Evet, tamam. Oktaylıkta set card var dedi. Bu bana bir problem çıkardı. Ne olduğuna bir bakalım şimdi.
+
+123
+00:18:42,400 --> 00:18:44,280
+Pekala, geldik şimdi.
+
+124
+00:18:48,596 --> 00:18:50,596
+Şimdi
+
+125
+00:18:50,596 --> 00:18:51,135
+Tamam.
+
+126
+00:18:54,536 --> 00:18:56,276
+Şimdi şey modu
+
+127
+00:18:56,276 --> 00:18:57,256
+neydi ya.
+
+128
+00:18:59,016 --> 00:18:59,496
+Tamam.
+
+129
+00:19:11,951 --> 00:19:29,532
+Tamam
+
+130
+00:19:11,476 --> 00:19:20,656
+Kiliyorsun. Kalem moduna nasıl dönüyorduk karıştırdım. O yüzden yine şu kalem haline getireyim şunu.
+
+131
+00:19:20,656 --> 00:19:23,996
+Neyse şu an.
+
+132
+00:19:25,236 --> 00:19:26,956
+Octane.setclass.
+
+133
+00:19:30,076 --> 00:19:32,176
+Şöyle yapsam olur mu o zaman? Dur.
+
+134
+00:19:33,096 --> 00:19:33,756
+Şuraya gel.
+
+135
+00:19:36,136 --> 00:19:37,536
+Böyle demiştik.
+
+136
+00:19:38,259 --> 00:19:39,480
+Özür dilerim.
+
+137
+00:19:39,840 --> 00:19:40,819
+Bunayı karıştırıyorum.
+
+138
+00:19:43,220 --> 00:19:46,080
+Evet, şimdi bu komutu çağırdık.
+
+139
+00:19:46,140 --> 00:19:52,440
+Octay.setCarRoller. Peki, Octay bir person. O yüzden bu setCar metoduna denetim akışı geldi şimdi.
+
+140
+00:19:54,019 --> 00:19:57,720
+Burada ne diyebilirim?
+
+141
+00:19:58,120 --> 00:20:03,420
+Tamam, şimdi setCar, burada car olarak şu an aktif olan şey roller.
+
+142
+00:20:03,420 --> 00:20:03,880
+Peki.
+
+143
+00:20:05,268 --> 00:20:14,388
+Kar dediği rover şu an. Ama henüz personal üye alanı olan kar şu an null. Tamam mı? İlk başta null.
+
+144
+00:20:14,703 --> 00:20:33,663
+Peki, şimdi ilk komut yürüdü. This.car eşittir car. Peki, şimdi bu kar nesnesi geldi, atandı. Buraya this.car olarak atandı. Artık bunun ardından şuradaki karda rover olarak kendini gösteriyor. Peki, şimdi renk kodu yazacağım. Renk koduyla devam edeceğim.
+
+145
+00:20:42,703 --> 00:20:51,323
+metodu çağrılıyor. This de person olan oktay olsun. Oktay da yeşil yapayım. Ondan sonra çöp.
+
+146
+00:20:51,728 --> 00:20:57,328
+Şimdi buradaki diz oktay olmuş oluyor. Metodu çağıran oktay çünkü.
+
+147
+00:20:57,328 --> 00:21:07,008
+O bir parametre olarak kar nesnesinin o şu an rowı set owner metodunun çağrılmasına sebep oluyor.
+
+148
+00:21:07,248 --> 00:21:11,208
+Peki hala. O zaman geldik şimdi buraya. Karın set owner metoduna.
+
+149
+00:21:11,788 --> 00:21:14,608
+Şu an person parametresi oktay.
+
+150
+00:21:16,748 --> 00:21:17,828
+Yeşil olan.
+
+151
+00:21:18,228 --> 00:21:44,768
+Peki, ama karın şu an owner üye alanı henüz null. Parametro olarak gelen owner artık üye alan owner olarak atanmış oldu. Güzel. Bu artık yeşil oldu yani oktay oldu. Sonra bu metot set owner metodunun sonunda tekrar diyor ki owner'ın yani şu an oktay set car metodu çağrılacak. Parametro olarak da dis verilecek. O dis metodu çağıran kar ne zor olsun.
+
+152
+00:21:45,332 --> 00:21:47,092
+Diste oturuncu olan.
+
+153
+00:21:48,819 --> 00:22:16,819
+Peki, set-oner metodu çağırılıyor. Tekrar buraya geldik. Oner olan Octay. Octay'ın tekrar set-oner metoduna geldik. Yine parametre olarak Rover verildi buna. Tekrar Rover'ın üstüne yine Rover atıldı. Ondan sonra Rover'ın tekrar set-oner metodu çağırıldı. Parametre olarak Octay verildi. Tekrar Rover'ın set-oner metodu...
+
+154
+00:22:16,819 --> 00:22:38,819
+çağırdı, octay parametro olarak verildi. Sonra Rogen'un set owner metodu tekrar octayin set car metodunu çağırdı. Bu böyle gidip geliyor, nerede bitiyor, bitmiyor. Bittiği noktada şu oluyor, her bir metot içerisinde metot çağırıldığında, Java sanal makinesine ayrılmış bellik alanında, hip memori, yığın bellik alanında yeni bir...
+
+155
+00:22:41,011 --> 00:23:00,691
+Snapchat oluşturuluyor. Her bir Snapchat'ta o metot çağrımdan önce ilgili nesnelerin durumları kaydediliyor ve yığına atılıyor. Yeni bir metot çağırdığında onun içerisinde en üstteki yeni bölgeye değişiklikler yapılmaya başlanıyor.
+
+156
+00:23:09,011 --> 00:23:28,351
+Metot bilgileri oralara yazılıyor. Ne zaman bir metot çağrısı bittiği anda yığından o en üstteki bellek bilgisi atılıyor artık. Bir geri dönüldüğünde geri dönülen andaki bellek durumundan çalışılmaya devam ediliyor. Bir yapıları dersinde yığın mantığını görmüşmüzdür.
+
+157
+00:23:37,011 --> 00:23:44,431
+Stack Overflow Exception gerçekleşiyor ve sonsuz döngü bir noktada kırılıyor. İşte bu noktada kırılıyor diyelim.
+
+158
+00:23:44,931 --> 00:23:46,831
+Peki biz bunu nasıl düzelteceğiz?
+
+159
+00:23:47,731 --> 00:23:53,351
+Şimdi ben sınıfta olsaydık yapacağım şey şu oluyordu bu örnekte.
+
+160
+00:23:53,791 --> 00:23:58,591
+Gidiyordum bir arkadaşımın yanına kürsülenip, merhaba benim adım Yunus diyordum.
+
+161
+00:23:58,591 --> 00:24:03,031
+Arkadaşım da kendi elini uzatıyordu. Merhaba benim adım işte Mehmet Hane ise.
+
+162
+00:24:03,431 --> 00:24:04,991
+Sonra ben tekrar merhaba benim adım Yunus diyorum.
+
+163
+00:24:05,011 --> 00:24:10,431
+O da ne yapsın çocuk? Şaşırıyor. Yine benim adım Mehmet diyor. Böyle er sıkışmaya devam ediyoruz kutban pazarlığı yapar gibi.
+
+164
+00:24:10,771 --> 00:24:13,591
+Yani sürekli birbirimizi tanıtıyoruz birbirimizi ama bir türlü durmuyoruz.
+
+165
+00:24:13,831 --> 00:24:18,251
+Ya artık tamam ben seni tanıdım, sen de beni tanıdın. Bunu bir kes artık demek lazım.
+
+166
+00:24:18,691 --> 00:24:21,451
+Aynı şeyi burada da bu kodda da yapmak lazım.
+
+167
+00:24:22,051 --> 00:24:26,731
+Araç insanı tanıdı, insan aracı tanıdı. E artık bir noktada kesmemiz lazım.
+
+168
+00:24:26,731 --> 00:24:32,771
+Bu durumda yapmamız gereken şey şu. Örneğin bir insana bir araba verdiğimizde tamam.
+
+169
+00:24:33,011 --> 00:24:39,931
+İnsan o arabayı sahiplensin ama bu işi sadece sahibi zaten kendi değilse yapsın.
+
+170
+00:24:40,551 --> 00:24:47,991
+Tamam mı? Çünkü eğer ben bu arabanın sahibi zaten bensem, niye yeni sahibim tekrar benim demek zorunda olayım ki?
+
+171
+00:24:47,991 --> 00:24:51,111
+Böyle bir şeye gerek yok. Kodumuzu buna göre yazacağız.
+
+172
+00:24:51,611 --> 00:24:53,891
+Bu anlamda yapmamız gereken şey şu olacak.
+
+173
+00:24:54,871 --> 00:24:56,211
+Şimdi clear orderlamak istiyorum.
+
+174
+00:24:58,631 --> 00:24:59,991
+Buraya diyeceğim ki...
+
+175
+00:25:00,211 --> 00:25:02,451
+Şimdi tamam, arabayı atadım kendime.
+
+176
+00:25:02,971 --> 00:25:10,571
+Ama diyeceğim ki, işte eğer bu karın bir olmanına bir bakalım önce bir.
+
+177
+00:25:11,011 --> 00:25:11,451
+Tamam mı?
+
+178
+00:25:12,511 --> 00:25:16,352
+Bu olmanı zaten ben değilsem sahiplenme işini yapayım.
+
+179
+00:25:16,951 --> 00:25:18,112
+Ünlem eşit, tırdız.
+
+180
+00:25:18,951 --> 00:25:21,092
+Yani bu aracın sahibine bir bakayım.
+
+181
+00:25:21,892 --> 00:25:24,211
+Eğer o kişi ben değilsem...
+
+182
+00:25:24,660 --> 00:25:48,320
+Artık işte o zaman bu aracın yeni sahibi benim şeklinde. Bu aracı sahipleniyor. Benzer şekilde. Araçta da, gidelim ki, bu benim yeni sahibim olduğu tamam. Bu aracıya, bu insanı kendimi sahiplendireyim. Ama zaten ben bu kişinin aracı değilsem bunu yapayım şeklinde.
+
+183
+00:25:52,084 --> 00:26:03,503
+get car, önlem eşittir, this, o zaman, overall.setCar, eşittir, this dersen, bu problem çözürüz.
+
+184
+00:26:04,163 --> 00:26:05,524
+Tekrarlayalım şimdi bu durumu.
+
+185
+00:26:06,104 --> 00:26:12,384
+Octa.setCarRover dediğimizde, bir problem çıkacak mı, çıkmayacak mı, onu bir görelim.
+
+186
+00:26:13,104 --> 00:26:15,784
+Şimdi mesela yine alayım annotation'ı.
+
+187
+00:26:18,771 --> 00:26:26,771
+Evet. O kadar nokta set card loba dedim. Peki. Şimdi aynen öyle olmayacak belki ama.
+
+188
+00:26:27,700 --> 00:26:55,679
+Octay.setCarRover, evet tamam. Octay.setCarRover dedik. Roll'u şu an işaretledim. Ve personal olan Octay'ın setCar metoduna geldik. Car parametresi de Roller. Peki. İlk başta dis.car boş şu an aldık. Peki. Ama yalnız bu gelen metot parametresini işte dis.car atadık. Tamam. Peki. Sonra bakıyorum car'ın getOwner metodunu çağırıyorum. Peki yani Roller'ın getOwner metodunu.
+
+189
+00:26:55,700 --> 00:27:06,940
+Şu an herhangi bir şeye atanmamış, Java nesnesinde, null. Yani kar.getOwner'ı bana ilk başta null döndürüyor. Null döndürmesini de şöyle kırmızı yazayım.
+
+190
+00:27:10,539 --> 00:27:18,700
+Null kırmızıyla kodlanmış durumda. İlk başta null. Tamam, peki. Kar.getOwner metodu bana...
+
+191
+00:27:19,251 --> 00:27:20,832
+null döndürdü.
+
+192
+00:27:21,332 --> 00:27:21,731
+Tamam mı?
+
+193
+00:27:21,971 --> 00:27:22,951
+Car null değil ama
+
+194
+00:27:22,951 --> 00:27:27,291
+car'ın get owner metodu bana sonuç olarak null döndürmüş oldu.
+
+195
+00:27:27,672 --> 00:27:29,432
+Bu yüzden ikisini birlikte istiyoruz.
+
+196
+00:27:30,412 --> 00:27:32,592
+Peki null dis'e eşit değil.
+
+197
+00:27:32,852 --> 00:27:33,412
+Evet doğru.
+
+198
+00:27:33,551 --> 00:27:34,592
+Çünkü dis oktay.
+
+199
+00:27:34,951 --> 00:27:36,332
+Null dis'e eşit değil.
+
+200
+00:27:36,332 --> 00:27:37,491
+O zaman girdi içeri.
+
+201
+00:27:37,852 --> 00:27:39,632
+Car'ın set owner metodunu çağırıyor.
+
+202
+00:27:39,751 --> 00:27:40,971
+Peki car bu.
+
+203
+00:27:41,683 --> 00:27:50,983
+Onun set on the metodu çağrılacak. Parametro olarak da dis olan octay atanılacak buna.
+
+204
+00:27:50,983 --> 00:27:57,723
+Evet, octayı da şöyle yaptık.
+
+205
+00:27:58,387 --> 00:28:17,567
+Peki, güzel. Şimdi rover'ın set order metodu geldi. Parametro olarak buna verilmiş olan octay. Güzel. Şu an aslında o rover'ın order'ı null. Fakat şu atamanın ardından artık this.order'da octay oldu. Tamam, güzel.
+
+206
+00:28:18,291 --> 00:28:45,851
+Bu arada şu atamayı yaptım ama işaret demeyi unuttum. This.car ataması yapınca artık şu da şey oldu yani. Peki güzel. Peki, owner yani octay. Onun get car metodu çağrıldığında, şu an owner octay. Onun get car metodu çağrıldığında bakıyorum, owner'ın yani octay'ın karı şu an rovers. Bu bana, bu metot hepsi birlikte bana.
+
+207
+00:28:46,579 --> 00:28:52,739
+Rover'ı döndürmüş oldu. Peki this ne? Yine Rover. This, this'e eşit olduğu için
+
+208
+00:28:53,119 --> 00:29:17,399
+Rover this olduğu için, Rover this'e eşit değil ifadesi oldu şimdi bu. Bu ifade false oluyor. Çünkü this de Rover, ornanın get car da Rover. Rover, rover'a eşit değildir ifadesi false oluyor. Doğru bir ifade olmuyor. O yüzden artık şu ornanın set car metodunun tekrar çağrılması engellenmiş oluyor.
+
+209
+00:29:18,099 --> 00:29:26,479
+Bu noktada artık set on'ın metodu sona eriyor, tamamlanıyor ve kontrol akışı şu noktaya geri dönüyor.
+
+210
+00:29:27,859 --> 00:29:38,039
+O tamamlandıktan sonra zaten artık person-on set karl metodunda yapılacak başka bir şey yok. Böylece bir problem olmadan ilişkiler kurulmuş olunuyor.
+
+211
+00:29:39,919 --> 00:29:43,099
+Evet, kafanıza yatmayan bir konu var mı bu hususta?
+
+212
+00:29:51,796 --> 00:29:53,495
+Tabii çalıştırıp görelim diyeceksiniz.
+
+213
+00:29:53,615 --> 00:29:55,375
+Elbette çalıştırıp göreceğiz.
+
+214
+00:30:03,539 --> 00:30:15,379
+Evet. Bunu da şöyle yapacağız şimdi. Dedik ki eğer şu an carddayız.
+
+215
+00:30:17,519 --> 00:30:25,539
+Only.getCard.unlum eşittir.disk ise o zaman only.setCard.disk.
+
+216
+00:30:30,036 --> 00:30:32,196
+Eğer
+
+217
+00:30:32,196 --> 00:30:37,156
+şimdi ne? Karın
+
+218
+00:30:37,156 --> 00:30:39,836
+get olmasın.
+
+219
+00:30:41,096 --> 00:30:42,855
+Ünleme şartı dizisi.
+
+220
+00:30:42,855 --> 00:30:44,716
+O zaman
+
+221
+00:30:45,299 --> 00:30:47,339
+current set owner this diyorum.
+
+222
+00:30:47,899 --> 00:31:01,859
+Ve bu şekilde main program 02'yi çalıştırdığımızda şunları komentlememiş olmamıza rağmen program düzgün şekilde çalışıyor.
+
+223
+00:31:02,500 --> 00:31:07,839
+Oktay 06 plakalı aracım var diyor. 06 plakalı araçla sahibim Oktay diyor.
+
+224
+00:31:07,839 --> 00:31:12,839
+Aziz diyor ki 47 plakalı aracım var. 47 plakalı araçla diyor ki sahibim Aziz.
+
+225
+00:31:13,299 --> 00:31:16,779
+Gördüğünüz gibi bu sefer hiç problem olmadı.
+
+226
+00:31:17,759 --> 00:31:21,500
+Birinde arabanın set on'un metodunu komentledim.
+
+227
+00:31:21,579 --> 00:31:23,579
+Ötkisinde insanın set kan metodunu komentledim.
+
+228
+00:31:23,879 --> 00:31:27,720
+Buna rağmen çift yönlü ilişkiler düzgün şekilde kurulabilindi.
+
+229
+00:31:27,720 --> 00:31:35,180
+Peki acaba komentleri geri alırsam, yine yürütmeye çalışırsam bir problem olur mu acaba falan?
+
+230
+00:31:35,700 --> 00:31:37,079
+Yok, hiç bir problem olmaz.
+
+231
+00:31:38,159 --> 00:31:40,720
+Sadece şu mesela Rover'a Oktay...
+
+232
+00:31:41,299 --> 00:31:56,220
+Zaten Oktay iken tekrar sahibi Oktay olarak atanır ama ondan sonra işte bu zaten Oktay Rover'ın sahibi olduğu için Rover tekrar git Oktay'ın yeni arabası benim şeklinde set car metodumu çağırmayacak.
+
+233
+00:31:56,220 --> 00:32:00,099
+Az önce yazdığımız kontrol, eklediğimiz kontrol nedeniyle.
+
+234
+00:32:01,844 --> 00:32:24,284
+Bakın bir problem olmadı. Oktay 06 plakalı aramım var. 06 plakalı aramım var. Oktay sahibim diyor. Aziz 47 plakalı aracım var diyor. 47 plakalı aracım da sahibinin aziz olduğu ortaya çıkıyor. Yani herhangi bir problem yok. Ama yine de sizin sununuz olabilir. Sizin kafanıza yakmayan noktalar olabilir. Varsa lütfen buyurun şimdi.
+
+235
+00:32:40,692 --> 00:32:42,051
+Çata baktım, yok bir şey.
+
+236
+00:32:43,451 --> 00:32:47,051
+Peki, o zaman önce şuraya bir bakalım.
+
+237
+00:32:49,672 --> 00:32:52,612
+Evet, yani şu işleri yaptığımızı söyledik.
+
+238
+00:32:52,612 --> 00:32:54,612
+Onun dışında...
+
+239
+00:32:56,084 --> 00:33:14,504
+Ha, ha, constructordaki olayı unuttuk. Tamam, pekala şimdi. Tamam, bu güzel güzel gözüküyor ama, constructorda da bir kişinin aracını set edebiliyoruz. Böyle bir durumda acaba işler doğru olacak mı? Bunu biz tabii şimdi ele almalıyız.
+
+240
+00:33:19,700 --> 00:33:32,720
+Bu kavdaydı. Karın iki ayrı constructor vardı. O zaman desem ki ben mesela şimdi. Karın ikinci constructorına oktay dedim.
+
+241
+00:33:33,720 --> 00:33:41,700
+Oktay dedim. Ve şu diğer set metotlarını çalıştırmadım.
+
+242
+00:33:42,932 --> 00:34:01,432
+Ne de olsa hani iki üç dönemde işitki otomatik kurulacak falan diye bekliyorum ya. Ama şimdi ben bunu böyle yaparsam olmayacak. Araç sahibinin Oktay olduğunu bilecek. Çünkü sadece basit iş atıma yapılıyor ama Oktay'ın araçtan herhangi bir haberi olmayacak. Gördüğünüz gibi Oktay'ın araçtan haberi yok ama aracın Oktay'dan haberi var.
+
+243
+00:34:11,507 --> 00:34:15,167
+Bu şekilde çalıştırdığımızda her şey düzgün gözüküyor.
+
+244
+00:34:16,047 --> 00:34:23,667
+Ama ya unutursak ya da işlerin daha otomatik olmasını bekliyorduk.
+
+245
+00:34:23,927 --> 00:34:24,887
+O zaman gideceğiz.
+
+246
+00:34:25,327 --> 00:34:26,947
+Karsınızın constructorına.
+
+247
+00:34:27,447 --> 00:34:31,367
+Basitçe atamayı yapmakla kalmayacağız.
+
+248
+00:34:32,268 --> 00:34:36,567
+Diyeceğiz ki, hatta şu satırı tamamen şeyle değiştirebilirim.
+
+249
+00:34:36,567 --> 00:34:38,787
+Derim ki, set on.
+
+250
+00:34:41,012 --> 00:34:43,052
+Olmaz.
+
+251
+00:34:46,052 --> 00:34:46,892
+Böyle diyebilirim.
+
+252
+00:34:47,892 --> 00:34:50,572
+Ya listesem de olur, on demesem de olur.
+
+253
+00:34:53,212 --> 00:34:56,012
+Şimdi bu şekilde baktığımda
+
+254
+00:34:56,012 --> 00:35:00,952
+artık bir problem olmadan çalışmasını bekliyorum.
+
+255
+00:35:00,952 --> 00:35:01,752
+Bakalım şimdi.
+
+256
+00:35:03,332 --> 00:35:04,752
+Hala komentler yerinde.
+
+257
+00:35:05,556 --> 00:35:16,056
+Evet, bakın şimdi, Oktay 0 artı belakalı aracım var. 0 artı belakalı araçta sahibim Oktay diyor. Herhangi bir problem olmadan bunu da yapmış olduk. Peki, güzel.
+
+258
+00:35:23,668 --> 00:35:24,128
+Evet, tamam.
+
+259
+00:35:30,356 --> 00:35:31,416
+Peki, bir dakika.
+
+260
+00:35:32,775 --> 00:35:33,756
+Evet, verdik işte.
+
+261
+00:35:33,896 --> 00:35:34,956
+Şunu anlamadım, bir dakika.
+
+262
+00:35:35,735 --> 00:35:36,256
+Yaptık ya.
+
+263
+00:35:37,856 --> 00:35:38,356
+Bir dakika.
+
+264
+00:35:41,204 --> 00:35:57,204
+K'da set 10'un olmadıydık. Tamam, pekala. Evet, böylece böyle bir prog çıktı. Evet, düzgün çıktı verdik. Peki, acaba aynı esnekliği K sınıfının ikinci konstraktörüne da versek nasıl olacak?
+
+265
+00:35:57,204 --> 00:35:59,543
+Diyor abi, bir dakika ya.
+
+266
+00:36:01,556 --> 00:36:18,016
+Sadece yansıların yeri değişmiş olmalı bence. Peki bunu nasıl yaparız? İşte böyle yaparız gibisinden olması lazım. Sayfının yeri değişmiş. O benim kafamda, kafa karışıklığına yol oldu.
+
+267
+00:36:18,016 --> 00:36:29,016
+Şu notta da bakalım acaba başka bir şey? Ha şimdi ne tamir durumuna bakacağız zaten. Çatlaşık matlaşık falan o kısımla da bakacağız. Ha bu nedenle...
+
+268
+00:36:29,715 --> 00:36:32,576
+Açmaç, açlık, açlık.
+
+269
+00:36:33,996 --> 00:36:37,475
+Burada yaranması. Neyse, onun aradığı düşünürüm ben bunun sarmısını da.
+
+270
+00:36:37,795 --> 00:36:39,735
+Şimdi şöyle bir durumu inceleyelim sizinle.
+
+271
+00:36:40,115 --> 00:36:42,456
+Biraz daha çaplaşık durumları bir inceleyelim.
+
+272
+00:36:45,652 --> 00:36:54,192
+Constructor üstünden mi yapacağız bu çaplaşıklığı yoksa setting metotları üzerinden mi yapacağız? Bakalım bakalım.
+
+273
+00:36:54,192 --> 00:36:57,091
+Şu an önce Constructor'ı düşünmüyorum.
+
+274
+00:36:59,091 --> 00:37:09,811
+Şimdi, pardon, şey, illa tabii karnesini oluşturması gerekiyor da, ne olsa hacı plakasıyla kanı oluşturalım.
+
+275
+00:37:12,659 --> 00:37:23,999
+Octay'ın set car lower dedim. Lower'a da set on'u octay dedim. Peki ama şimdi acaba şu print anandini sona taşımak istiyorum arkadaşlar.
+
+276
+00:37:23,999 --> 00:37:37,719
+Bu çapta açıklık durumlarını göstermek için. Print anandini sona taşıyorum. Ve hatta şey, şunları da sağlamasalım diye eşitliyorum şu aşamada.
+
+277
+00:37:38,547 --> 00:37:46,167
+Yani burada yaptığım sarama değişikliklerinin koda şu an hiçbir yan etkisi yok. Yine beklendiği şekilde çalışacak kod.
+
+278
+00:37:48,147 --> 00:37:54,047
+Oktay, sıfır, süper, süper, süper, süper, süper, oktay, aziz, 47, 47, aziz diyor. Yani burada bir problem yok.
+
+279
+00:37:54,047 --> 00:38:04,147
+Peki acaba şimdi oktay.setcardLower dedim ve ondan sonra bu sefer de diyeceğim ki
+
+280
+00:38:05,715 --> 00:38:12,995
+aziz.setkaz.zora diyeceğim mesela. Ne olacak acaba? Bakalım şimdi.
+
+281
+00:38:20,244 --> 00:38:36,023
+İlginç bir şey oldu. Oktay'a Lover'ı verdim. Ama ondan sonra diyelim ki Oktay aracını Aziz'e satacak. Aziz'e de set car Lover dedim. Bakın nasıl bir çift atılacak. Görelim.
+
+282
+00:38:41,460 --> 00:39:08,900
+Oktay 06 plakar aracım var. 06 plakar aracım var. Sahibim Aziz diyor. Aziz 06 plakar aracım var diyor. 47 plakar aracın sahibi yok. Son iki çıktı mantıklı ama şu ikinci, üçüncü, dördüncü satırlar çıktılar mantıklı ama Oktay'ın benim 06 plakar arabam var demesi artık doğru değil.
+
+283
+00:39:10,420 --> 00:39:13,940
+Böyle bir durumu acaba nasıl çözebiliriz? Onu düşünelim.
+
+284
+00:39:16,559 --> 00:39:20,460
+Yine setter metodu üzerinden gideceğiz.
+
+285
+00:39:20,880 --> 00:39:30,199
+Sonra bunun simetriyini yani karın da setPerson, setOwner metodunu da değiştirmek durumunda kalacağız.
+
+286
+00:39:30,920 --> 00:39:32,480
+Yapalım şimdi sizinle birlikte.
+
+287
+00:39:34,228 --> 00:39:36,207
+Person'un set-car metodu.
+
+288
+00:39:36,748 --> 00:39:36,967
+Peki.
+
+289
+00:39:36,967 --> 00:39:38,087
+Şimdi.
+
+290
+00:39:46,452 --> 00:40:11,672
+Azize arabayı verdiğimizde artık bu arabanın daha evvel bir sahibi varsa ve bu durumda o kişinin arabasını nal yapmak zorundayız. Bunu nasıl yapacağız? Biraz daha karmaşık ve şu çift yönlü ilişki bozmadan da bunu yapmak zorundayız.
+
+291
+00:40:12,148 --> 00:40:13,807
+Şimdi peki.
+
+292
+00:40:16,467 --> 00:40:28,788
+Aracı aldık. Şimdi üstümüze alacağız. Aracı üstümüze almadan önce, yani set onları listemeden önce, acaba gerçekten bu aracın bir onları var mı? Bir ona bakalım.
+
+293
+00:40:29,447 --> 00:40:42,307
+Şimdi bu onları için üç olasılıktan biri söz konusunda. Birincisi null'dır. Henüz o arabaya bir sahibi yoktur. İkincisi o aracın sahibi this'dir. This insan, this person.
+
+294
+00:40:44,467 --> 00:40:46,067
+Önlememiz gerekiyor.
+
+295
+00:40:47,487 --> 00:40:57,527
+Dis değilse, nal da değilse, başka bir insan ise, o zaman o insanın artık arabasının olmadığını belirtmek lazım.
+
+296
+00:40:58,127 --> 00:41:00,807
+Onun arabasını nala set etmek lazım.
+
+297
+00:41:01,487 --> 00:41:06,467
+Ama bir insanın arabasını nala set ettiğim zaman da...
+
+298
+00:41:07,155 --> 00:41:20,815
+Şurada bu null olan gelecek metot parametresi karın, get owner metodunu çağırmaya çalıştığımız zaman null pointer exception yeriz. Bu nedenle şimdi işler epey aslında karmaşıklaşıyor.
+
+299
+00:41:21,748 --> 00:41:28,688
+Bu kezleri doğru sırada ele alıp doğru şekilde kodlamamız gerekecek.
+
+300
+00:41:29,228 --> 00:41:31,508
+Şimdi ben bir kod yazacağım mesela sizinle birlikte.
+
+301
+00:41:32,008 --> 00:41:33,688
+Belki bunu çok verimli yazamayacağım.
+
+302
+00:41:33,688 --> 00:41:39,528
+Daha düzgün, daha az ve daha verimli satırla da ifade edilebilecek durum söz konusu olabilir.
+
+303
+00:41:39,908 --> 00:41:43,268
+Ama şu an ilk hedefim alnına akıyla bu işten çıkmaya çalışmak.
+
+304
+00:41:43,388 --> 00:41:45,268
+Belki biraz uzun kod olur.
+
+305
+00:41:46,528 --> 00:41:49,748
+Ama yine de bakalım şu işi doğru yapabiliriz.
+
+306
+00:41:49,748 --> 00:42:04,948
+İlk durum, acaba şimdi bu karın owner'ını bir alalım. Bunu bir geçici bir person nesnesinde tutabiliriz.
+
+307
+00:42:17,780 --> 00:42:19,340
+K.geto olmadı diyorum.
+
+308
+00:42:23,539 --> 00:42:25,460
+Ondan sonra şimdi sırayla bakacağım.
+
+309
+00:42:26,159 --> 00:42:28,300
+Bu bahsettiğim case'lere bakacağım.
+
+310
+00:42:30,380 --> 00:42:30,800
+If
+
+311
+00:42:30,800 --> 00:42:33,800
+P O
+
+312
+00:42:33,800 --> 00:42:36,019
+Nal ise
+
+313
+00:42:36,019 --> 00:42:37,980
+mesela
+
+314
+00:42:37,980 --> 00:42:40,599
+K nokta set on
+
+315
+00:42:40,599 --> 00:42:42,219
+this
+
+316
+00:42:42,219 --> 00:42:44,019
+Peki, tamam mı?
+
+317
+00:42:44,307 --> 00:42:56,607
+Önce diyelim ki bu aracın herhangi bir sahibi yok.
+
+318
+00:42:56,607 --> 00:42:57,367
+Tamam mı?
+
+319
+00:42:57,827 --> 00:43:09,227
+Eğer Previous 10'u Nulis'a o zaman K.S.T.O. Nulis artık bu arabanın yeni sahibi benim üstlensin.
+
+320
+00:43:10,387 --> 00:43:35,208
+Hatta o zaman şöyle diyeyim. Previous onları null ise veya yok bir dakika. Previous onları null ise bir bunu yapsın. Ondan sonra veya veya veya olmaz.
+
+321
+00:43:35,860 --> 00:43:38,019
+Ben değilsem, ünleme çıkardır.
+
+322
+00:43:40,140 --> 00:43:42,140
+Aracın yeni sahibi benim.
+
+323
+00:43:43,240 --> 00:43:50,800
+Aksi takdirde bu aracın bir eski sahibi var ve artık o eski sahibin hiçbir aracı olmamalı.
+
+324
+00:44:01,907 --> 00:44:03,768
+set, class, null.
+
+325
+00:44:04,768 --> 00:44:10,487
+Bu kişinin artık yeni bir aracı, herhangi bir aracı yok diyor.
+
+326
+00:44:10,847 --> 00:44:11,067
+Peki.
+
+327
+00:44:12,867 --> 00:44:14,248
+Tekrar bakalım şimdi.
+
+328
+00:44:15,047 --> 00:44:20,288
+Daha önce hiç sahibi yoksa, veyahut da sahibi ben değilsem bir kere bulun, her şekilde üstlenmeliyim.
+
+329
+00:44:20,567 --> 00:44:20,827
+Bu bir.
+
+330
+00:44:21,387 --> 00:44:22,907
+Ondan sonra...
+
+331
+00:44:24,755 --> 00:44:36,735
+Mesela şimdi aradığım akitler arki sahibi Aziz. Tamam. Aziz şey değil, bunu yaptı. Ondan sonra da oradan çıktı gitti. Tamam, peki.
+
+332
+00:44:41,940 --> 00:44:59,579
+Else dememeliyim bu durumda. Sadece şey demeliyim. Belki de evet fazladan şey çıkacak, çıkacak dediğim gibi verimsiz olacak ama desem ki şöyle bir şey desem. Else demiyorum. Yine sadece if diyorum.
+
+333
+00:45:02,063 --> 00:45:07,183
+Şimdi ve bu durumda prevolunur, ünlem eşittir, null.
+
+334
+00:45:07,183 --> 00:45:11,183
+Ha peki arabayı ya kendi kendisine atacaksa?
+
+335
+00:45:11,183 --> 00:45:12,763
+Peki.
+
+336
+00:45:13,763 --> 00:45:16,683
+Olunur, ünlem eşittir.
+
+337
+00:45:17,583 --> 00:45:22,263
+Evet, ünlem eşittir, null.
+
+338
+00:45:23,263 --> 00:45:26,623
+And prevolunur.
+
+339
+00:45:27,123 --> 00:45:53,803
+ciddi ise de o zaman previews onların setkarına. Peki çünkü belki de tuttuk tekrar oktaya rovda tekrar atadık. Bu durumda kendi kendisinin arabasını düşürmemeli. Böyle bir durum ortaya çıkmamalı. O yüzden bir de şu ifadeyi yazdım. Umarım bunlar bu işi kotarır. Ama şimdi şu tehlikeli bir durum var.
+
+340
+00:45:55,123 --> 00:45:58,503
+class'ın set-car metodu çağrıldığında ona bir null parametri gelebiliyor.
+
+341
+00:45:58,503 --> 00:46:11,203
+Ve bu durumda, şurada 14. satırda, null olan bir kar nesnesinin get-on-on metodu çağrılmaya çalışıldığında null pointer exception yiyeceğim.
+
+342
+00:46:16,307 --> 00:46:34,307
+O yüzden şöyle yapmak zorundayım. Önce bir person, previous owner bir tanımlıyım ve ondan sonra diyeyim ki if işte cause ne meşit personal ise o zaman previous owner...
+
+343
+00:46:37,268 --> 00:46:41,107
+k.getOwner demeliyim.
+
+344
+00:46:41,107 --> 00:46:52,228
+Ve şimdi peki, burada pre-order bir nal, yani inşilas edilmemiş olabilir falan diyor.
+
+345
+00:46:52,228 --> 00:46:53,087
+Peki.
+
+346
+00:46:55,219 --> 00:46:59,339
+Buradan nasıl kulturluz bir bakalım diyelim.
+
+347
+00:47:00,159 --> 00:47:08,099
+Kar, nal değilse hepsini bir komple bu kar, ünlümeşti nal içerisine alabilirim.
+
+348
+00:47:08,539 --> 00:47:18,619
+Bu durumda da ki karın kendisi nal ise zaten onun bir nal olanında sahibini atamaya, boşu boşuna çalışmamıza da gerek yok.
+
+349
+00:47:18,619 --> 00:47:20,319
+Tamam peki şöyle bir şey bu zaman.
+
+350
+00:47:23,668 --> 00:47:25,968
+Şöyle kalacak ama
+
+351
+00:47:25,968 --> 00:47:29,708
+if, cause,
+
+352
+00:47:30,028 --> 00:47:31,347
+bundan eşittir, nazi,
+
+353
+00:47:31,508 --> 00:47:33,168
+hepsini, geri kalan
+
+354
+00:47:33,168 --> 00:47:37,928
+metotların, hepsini, çağrıların hepsini bu if bloğunun
+
+355
+00:47:37,928 --> 00:47:39,367
+içerisine koyacağım.
+
+356
+00:47:40,648 --> 00:47:42,128
+Şimdi, oldu.
+
+357
+00:47:42,948 --> 00:47:43,428
+İnşallah.
+
+358
+00:47:43,428 --> 00:47:44,948
+Diyebiliriz. Tamam mı?
+
+359
+00:47:46,948 --> 00:47:47,827
+Peki.
+
+360
+00:47:49,711 --> 00:47:55,832
+Bu işi çözebilecek gibi benzer mantığı K sınıfına da kodlamamız gerekiyor.
+
+361
+00:48:03,251 --> 00:48:05,532
+Evet, set oner metoduna.
+
+362
+00:48:06,112 --> 00:48:11,392
+Şimdi nasıl yaptığımızı, bundan size bir şey yaptık ama nasıl yaptık, şimdi onu hatırlayıp yapmamız gerekiyor.
+
+363
+00:48:11,952 --> 00:48:12,412
+Pekala.
+
+364
+00:48:13,132 --> 00:48:18,751
+Şimdi bir kere her şeyden önce bu oner'ın nal olup olmama durumuna bakacağız.
+
+365
+00:48:21,272 --> 00:48:28,192
+Bunu da yaparken, şimdi evet bu genel parametre nal değilse şeklinde yapacağız.
+
+366
+00:48:28,192 --> 00:48:28,572
+Peki.
+
+367
+00:48:29,396 --> 00:48:52,655
+if, işte, on'ımız, num eşittir, null ise, diyorum ki, şimdi ne diyeceğim, bu sefer, inşallah doğru yapmışım da şimdi ötekini de, bakacağım şimdi, previous car, peki, tamam.
+
+368
+00:48:59,596 --> 00:49:01,596
+Ondan sonra
+
+369
+00:49:01,596 --> 00:49:04,536
+Sonra işte şu
+
+370
+00:49:04,536 --> 00:49:06,016
+Ben şunu
+
+371
+00:49:06,016 --> 00:49:08,836
+Büyük İfim Sersin'e alacağım ama biraz daha da
+
+372
+00:49:08,836 --> 00:49:10,696
+Geliştirmek zorundayım.
+
+373
+00:49:11,176 --> 00:49:12,556
+İlk ele aldığım durum
+
+374
+00:49:12,556 --> 00:49:15,496
+Previews'un null olması
+
+375
+00:49:15,496 --> 00:49:17,716
+Ve dis olmaması.
+
+376
+00:49:17,716 --> 00:49:18,316
+Peki.
+
+377
+00:49:19,236 --> 00:49:19,916
+Şimdi o zaman
+
+378
+00:49:25,331 --> 00:49:50,011
+Şimdi araba demiş, kişide dedik ki önceki sahibi, tamam. Arabada da dedik ki önceki arabası. Ondan sonra diyorum ki bu önceki olan Narsa veya Dis değilse. Önceki, tamam. Prevkar ne meşittir.
+
+379
+00:49:50,547 --> 00:49:53,527
+Null ve demiştim ki
+
+380
+00:49:53,527 --> 00:49:58,627
+oğuz
+
+381
+00:49:58,627 --> 00:50:00,607
+ve onun getkar ünleme çıkartı
+
+382
+00:50:00,607 --> 00:50:02,407
+değilse o zaman bunu bir
+
+383
+00:50:02,407 --> 00:50:04,727
+sahiplensin. Ondan sonra el
+
+384
+00:50:04,727 --> 00:50:06,927
+silmeden yine if olaraktan
+
+385
+00:50:06,927 --> 00:50:08,047
+diyorum ki
+
+386
+00:50:08,775 --> 00:50:10,595
+O,
+
+387
+00:50:08,659 --> 00:50:19,479
+Bu sefer şu benzer kodu sadece, bu arada şeyi yanlış yaptım, eşit eşit tırnal ve ünlem eşit tırdis.
+
+388
+00:50:19,479 --> 00:50:22,779
+Tamam. Eşit eşit tırnal ve ünlem eşit tırdis.
+
+389
+00:50:23,199 --> 00:50:27,619
+Ondan sonra ama bu sefer şöyle bir şey yapıyoruz.
+
+390
+00:50:29,799 --> 00:50:33,679
+Aynı benzer örüntüyü bu sefer ters olarak şey edeceğiz.
+
+391
+00:50:34,319 --> 00:50:35,439
+Ünlem eşit tırnal.
+
+392
+00:50:37,204 --> 00:50:39,144
+and, evet, değil mi?
+
+393
+00:50:39,564 --> 00:50:44,124
+Unlemme açıttı null, unlemme açıttı this, evet, bu durumda da null atacağız.
+
+394
+00:50:44,364 --> 00:50:45,084
+Peki, tamam.
+
+395
+00:50:45,084 --> 00:50:52,504
+O zaman, prevkanın set on'u null.
+
+396
+00:50:54,644 --> 00:50:58,904
+Metrik çözüm bize öyle yapmamızı gerektiriyor.
+
+397
+00:50:59,944 --> 00:51:03,224
+İyi, bakalım şimdi acaba yapabildik mi?
+
+398
+00:51:03,444 --> 00:51:04,164
+Bir gelin bakalım.
+
+399
+00:51:07,315 --> 00:51:10,975
+Evet. Bakalım.
+
+400
+00:51:12,975 --> 00:51:14,895
+Tek yanda da bu sesi şimdi arka planda.
+
+401
+00:51:17,135 --> 00:51:19,555
+Bakalım. En azından non-pointer yemedik.
+
+402
+00:51:19,795 --> 00:51:23,755
+Oktay diyor. Sadece oktay.
+
+403
+00:51:24,275 --> 00:51:42,595
+06 plaka diyor ki, 06 plaka aracım var, sahibim Aziz Sanca. Aziz diyor, evet 06 plaka aracım var. Ondan sonra, ha tamam, 47 plaka aracıyla hiçbir sahipten bahsetmiyor. Tamam, iyi, geçmiş olsun. Bu kısmı yapabildik. Bu kısmı çalıştı.
+
+404
+00:51:46,547 --> 00:51:50,207
+Şeyleri nasıl yapabileceğiz bakalım bir bakalım.
+
+405
+00:51:50,867 --> 00:51:55,747
+Peki. Şimdi Aziz'in önceden Honda'sı olsun tamam mı?
+
+406
+00:51:55,947 --> 00:52:00,407
+Ama ondan sonra Honda'nın yerine Rover'ı sahiplensin diyelim bakalım.
+
+407
+00:52:08,659 --> 00:52:23,519
+Şimdi acaba tutup da Honda kendisinin acaba sahibinin hala Octay olduğunu söyleyecek mi? Öyle bir durum olacak mı? Bakalım bizim yani yazdığımız kod onu da düzeltmiş olabilecek mi? Bakalım bakalım.
+
+408
+00:52:24,659 --> 00:52:34,719
+Tamam tamam bu arada 3 ağları çalıştım. Şu 2'yi, 3'ü diyelim. Evet. Önce çalışan da 0, 2, 2. Tamam peki. Koş bakalım.
+
+409
+00:52:37,619 --> 00:52:47,099
+Oktay, 0-6 plaka, Aziz, 0-6 plaka, 47, evet 47 hala kendisinin, sahibinin Aziz olduğunu sanıyor.
+
+410
+00:52:47,999 --> 00:52:52,439
+Pekala. O zaman ne yapacağız? Diyeceğiz ki.
+
+411
+00:52:55,939 --> 00:52:58,059
+Aziz'in setka hındı. Peki şimdi.
+
+412
+00:52:58,419 --> 00:53:01,459
+Kişiye yeni bir araç atan, he tamam peki.
+
+413
+00:53:01,459 --> 00:53:02,059
+Şimdi.
+
+414
+00:53:03,315 --> 00:53:15,195
+Kişiye yeni bir araç atanacağı zaman, eğer kendi mevcut aracı NAL değilse artık senin bir sahibin yok demek de lazım. Peki.
+
+415
+00:53:15,855 --> 00:53:21,775
+Car ünleme şiddetinin NAL ise previous owner car.get ornağı. Ondan sonra şuraya şunu yakınmam lazım.
+
+416
+00:53:23,455 --> 00:53:30,096
+Car. bir dakika. yok. this.car. tamam peki.
+
+417
+00:53:30,867 --> 00:53:34,067
+k demince this.k demem gerekiyordu özellikle.
+
+418
+00:53:34,067 --> 00:53:42,987
+this.k.setonless.null
+
+419
+00:53:46,771 --> 00:53:51,672
+Bu noktada şu işlemi dis.k demekte yalar var.
+
+420
+00:53:52,211 --> 00:53:55,092
+Çünkü, ha pardon, öncesine, öncesine, öncesine.
+
+421
+00:53:57,511 --> 00:54:01,711
+Önce dis.k nokta set onları, şuraya değil, şuraya.
+
+422
+00:54:04,788 --> 00:54:19,148
+Ve şimdi bunu da anlıyor. Öncelikle artık mevcut arabamın sahibini nal yapacağım. Aa bir dakika, onu nal yapmaya kalktığımda acaba ilgili kişinin yok o kadar kodu yazmamıştım.
+
+423
+00:54:20,148 --> 00:54:23,547
+Ne alsan al, tamam. Zaten ondan sonra onu da aracımlar yapmaya çalışmaya çalışmam.
+
+424
+00:54:25,467 --> 00:54:27,007
+Yalnız şunu demem gerekiyor.
+
+425
+00:54:28,228 --> 00:54:31,607
+Hemen, belki daha henüz bu kişinin hiç arabası bile yok.
+
+426
+00:54:31,607 --> 00:54:35,927
+O yüzden ilk başta bunu kafadan yazmam doğru olmayacak.
+
+427
+00:54:36,047 --> 00:54:37,987
+Şimdi if kontrolüyle yazmak zorundayım.
+
+428
+00:54:38,507 --> 00:54:40,607
+If this nokta...
+
+429
+00:54:41,268 --> 00:54:56,127
+Car, numem eşittir, null. Bu durumda şimdi oldu gibi. Bakalım. Benzer şey arabaya da yapmam lazım yalnız tabii ki. Set owner'da.
+
+430
+00:55:06,260 --> 00:55:19,580
+this.onus.setcause null dememi lazım simetrik çözümünü unutmamalıyım. Şimdi bakalım şu bana nasıl bir tepki verecek.
+
+431
+00:55:23,860 --> 00:55:43,559
+Allah, bir sonsuz dönkeye gördüm. Pekala. İyi, o zaman şimdi şey yapalım. Bir 10 dakika ara verelim. Tamam mı? Ondan sonra bunu düzeltmeye çalışırız. Ya da artık o kadarını da düşünmeyelim diye de bağlayabiliriz. Göreceğiz bakalım. 10 dakika ara. Ondan sonra kaldığımız yerden devam edeceğiz arkadaşlar.
+
+432
+00:55:46,059 --> 00:55:50,300
+10-00-00 ve 10-10 arasında ara.
+
+433
+00:55:55,827 --> 00:55:57,907
+Peki nereye koydum şimdi şu paylaşım şeyini?
+
+434
+01:05:42,228 --> 01:06:00,268
+Evet arkadaşlar, şimdi süremiz doldu. Bu arada bir hızlı bir düşündüm. Şöyle bir şey yapabiliriz. Ama şimdi tekrar screen'e döneyim. Tam ekran paylaşımına. Evet, şu an şey açtım, eklipsimi açtım. Görebiliyor olmamız lazım diye düşünüyorum.
+
+435
+01:06:03,268 --> 01:06:09,847
+Sonrasında söyleyin lütfen. Şimdi şöyle bir şey yapabilirim.
+
+436
+01:06:10,132 --> 01:06:38,112
+Yani bu tekrar işte set owner'ı null peki. Ondan sonra kalın set owner'a geldi. Bunun sahibi null değilse owner set car null falan oldu falan. Ama tamam. O zaman yapacağım şu. Bunu artık bu durumu set owner üstünden değil de başka bir metot üzerinden kotaracağım. Bunun için k sınıfına bir tane metot ekliyorum. Remove owner diye. Tamam mı? Remove owner.
+
+437
+01:06:38,132 --> 01:06:56,452
+Bu işi de yaparken, public metot olmak zorunda bu. Çünkü person çağırabilsin. Ve çağırırken de kafadan herhangi araba nesnesinin onlarını remove edemeyelim.
+
+438
+01:06:56,851 --> 01:07:12,551
+Sadece bir insan, yani şey, onların nal direk kafadan atayabilmemiz için tek gerekli koşul onun mevcut sahibinin o kişi olması.
+
+439
+01:07:13,111 --> 01:07:19,531
+Şimdi sözle ifade etmek biraz daha belki garip oldu ama kodu yazayım da bir oradan bakalım bakalım.
+
+440
+01:07:19,531 --> 01:07:21,451
+Şöyle diyeceğim ki.
+
+441
+01:07:21,856 --> 01:07:32,676
+Şimdi eğer bu kişinin arabası şu an o null diyesi yeni arabaya sahiplenecek ama eski arabası için şöyle bir şey diyeceğim.
+
+442
+01:07:32,676 --> 01:07:36,256
+K sınıfına şöyle bir şey ekleyeceğim.
+
+443
+01:07:37,176 --> 01:07:48,336
+Public void numu almas person previous almas.
+
+444
+01:07:50,516 --> 01:07:56,635
+if
+
+445
+01:07:56,635 --> 01:08:00,216
+pre-owness
+
+446
+01:08:00,216 --> 01:08:01,876
+eşit eşit
+
+447
+01:08:01,876 --> 01:08:04,556
+o zaman
+
+448
+01:08:04,556 --> 01:08:06,635
+owner eşit
+
+449
+01:08:06,635 --> 01:08:07,276
+null
+
+450
+01:08:07,276 --> 01:08:10,956
+ve şuraya gideceğim
+
+451
+01:08:10,956 --> 01:08:12,416
+diyeceğim ki bu durumda
+
+452
+01:08:12,416 --> 01:08:13,396
+diyeceğim ki
+
+453
+01:08:13,396 --> 01:08:16,916
+this.k.remove
+
+454
+01:08:25,492 --> 01:08:29,271
+Şimdi inşallah olduk.
+
+455
+01:08:38,836 --> 01:08:54,256
+Oktay, tamam, arabası demiyor. 06 plakalı araç, sahibim Aziz diyor. Aziz, 06 plakalı aracım var diyor. 47 plakalı araçta hiçbir sahibim var demiyor. Çok şükür bu işi yapabildik.
+
+456
+01:08:58,996 --> 01:09:04,355
+Ama şimdi benzer çözümün simetriğini de yapmam gerekiyor.
+
+457
+01:09:04,355 --> 01:09:11,655
+Madem cara remove owner dedik, ondan sonra person'a da remove car diyebilmem lazım.
+
+458
+01:09:14,415 --> 01:09:19,175
+Public void remove car.
+
+459
+01:09:21,747 --> 01:09:28,207
+class, şimdi adlandırmamızda şey diyelim, preview class, tamam peki.
+
+460
+01:09:28,207 --> 01:09:38,608
+preview class, if, preview class, eşit eşit car, artık bu discard olmuş oluyor.
+
+461
+01:09:38,608 --> 01:09:42,787
+aynı ayetinde, car eşit eşit mağdım.
+
+462
+01:09:45,460 --> 01:10:02,440
+Simitliğini yaptığımız için benzer durumlu, şu an insanlar üstünden gittik ama arabalar üstünden de gitsek, yani Rover.seton'un türünden de bu işleri yapsak, yine benzer çözüm geçerli olmuş olacak.
+
+463
+01:10:03,479 --> 01:10:13,100
+Evet, epey ithala döktük değil mi? Peki. Ama soru varsa lütfen, şimdi buyurun, şu kısım kafamaylatmadı dediğiniz noktalar varsa açıklamaya çalışalım.
+
+464
+01:10:28,180 --> 01:10:30,079
+Çaprazla tağla tamam.
+
+465
+01:10:30,079 --> 01:10:31,120
+Bir deniniz ama.
+
+466
+01:10:38,260 --> 01:10:49,500
+Peki. Şimdi bir dakika bakalım. 3C'deki kişi araba, çapla, satağlı, atama. Şöyle bir şey yapalım.
+
+467
+01:11:03,347 --> 01:11:05,667
+Çapı azaltma derken nasıl bir şey diyorduk?
+
+468
+01:11:06,667 --> 01:11:06,827
+Şu
+
+469
+01:11:29,492 --> 01:11:31,811
+Tamam tamam. Bakalım.
+
+470
+01:11:33,131 --> 01:11:37,252
+Çaplar sata alatama derken mesela şöyle bir şeyden bahsediyoruz.
+
+471
+01:11:37,752 --> 01:11:40,412
+Gerçi o eski verasyonlar için geçerli.
+
+472
+01:11:40,412 --> 01:11:46,731
+Yani şuradaki daha henüz mesela buradaki kavda
+
+473
+01:11:48,243 --> 01:11:57,923
+Settir metotlarının tek satırlık olduğu halde mesela diyelim ki Oktay'a Rover'ı verdik.
+
+474
+01:11:58,483 --> 01:12:04,243
+Fakat Rover'a da mesela Aziz'i verdik. Böyle bir durumlar söz konusu olabilir.
+
+475
+01:12:04,603 --> 01:12:13,443
+Çapraz atamayla aslında kastettiğim o insan ve araba çiftlerini normalde böyle paylı olarak düz Oktay'a Rover'ı, Rover'a Oktay'a atadık falan.
+
+476
+01:12:13,443 --> 01:12:16,043
+Ama çapraz yapsaydık işte şu şekilde.
+
+477
+01:12:16,243 --> 01:12:17,543
+Şu şekilde bir çatrazlık olsaydı.
+
+478
+01:12:17,663 --> 01:12:19,644
+Octave Orwell, Aziz Honda.
+
+479
+01:12:19,983 --> 01:12:21,323
+Normalde böyle atamaya var.
+
+480
+01:12:21,603 --> 01:12:23,583
+Ya çatrazlaştasaydık ne olacaktı?
+
+481
+01:12:23,583 --> 01:12:30,163
+Onu zaten şu setter metotlarını geliştirerekten onu çözmüş olduk zaten.
+
+482
+01:12:32,023 --> 01:12:33,663
+Ama yine de bir bakalım bakalım.
+
+483
+01:12:34,144 --> 01:12:36,023
+Bir şeylik olmasın, bir terslik olmasın.
+
+484
+01:12:36,443 --> 01:12:37,203
+Şimdi.
+
+485
+01:12:41,619 --> 01:12:43,460
+Bunun için nasıl bir şey yapalım?
+
+486
+01:12:43,559 --> 01:12:48,619
+Diyelim ki, mesela işte, eski kodlar kısmı karıştırmasın.
+
+487
+01:12:49,840 --> 01:12:56,619
+Octay.setK, normalde Octay'a ROR'ı vermeye niyetleniyoruz.
+
+488
+01:12:58,000 --> 01:13:08,699
+Fakat sonra diyelim ki, Azize'de, sonra ROR'a da set on us.
+
+489
+01:13:09,039 --> 01:13:32,899
+Aziz diyorum. Bakalım ne olacak. Şimdi normalde en son yapılan işlemin geçerli olmasını bekliyorum. Yani şu 11. satır yürütürdükten sonra Rover sahibim Aziz demeli, Aziz araban var Rover demeli. Oktay'ımda hiçbir arabası olmadan sadece kendisini söylemesini bekliyorum. Bakalım. Bu işe ricap.
+
+490
+01:13:34,515 --> 01:13:36,095
+Ya inşallah ya ben çünkü.
+
+491
+01:13:37,779 --> 01:13:51,760
+Oktay, 0-6 plaka, Sabim Aziz, Aziz, 0-6 plaka, 45. Tamam. Aslında şu olarak yine bir önceki durumla da benzer bir durum yol açıyormuş böyle bir çapraz atamada. İyi, buna da bağışık olduğunu gördük.
+
+492
+01:13:51,760 --> 01:14:01,719
+Şimdi, aranızda yazılım sınamasına doğal yeteneği olan arkadaşım var mı? Bu nasıl belli olacak?
+
+493
+01:14:05,779 --> 01:14:16,279
+Yanlış bakışı katacağım veyahut da null pointer, exception, bir şeyler patlatacağım programı diyen arkadaşım varsa, hocam bir şunu yazın bakalım görelim ne olacak dediğiniz bir şey varsa lütfen.
+
+494
+01:14:25,427 --> 01:14:27,487
+Bakın bu fırsat her zaman elinize geçmez ha.
+
+495
+01:14:31,667 --> 01:14:59,268
+Sizi bilemeye çalışayım şimdi. Üçüncü sınıfta bilgisayar projesi dersi alacaksınız. Dördüncü sınıfta bitirme projesi dersi alacaksınız. Bu projeleri inşallah başarıyla tamamlarsınız ve sınavına girme hakkı kazanırsanız çalışmanızı, demosunu da yapacaksınız sınavda, jüri karşısında. Jüri üç yerden oluyor. Birisi projeyi üreticiniz, projeyi birlikte üreticiniz hocam.
+
+496
+01:14:59,667 --> 01:15:03,647
+Diğer iki hocada YÜT programına göre random atanıyor.
+
+497
+01:15:04,287 --> 01:15:18,887
+Şimdi o hocalar sınavda sizin programınıza bir hata bulmak için, şunu şöyle gir, bunu görev gir, hadi buna gir bakalım diye böyle ilginç test kesiler ve programınıza hata yaptırmaya çalışacaklar.
+
+498
+01:15:18,887 --> 01:15:26,307
+Siz bunun bir intikamını alamayacaksınız. Hadi şimdi siz sorun bakalım.
+
+499
+01:15:27,667 --> 01:15:32,567
+Hocam bak şöyle yazarsanız patlayacak diye düşündüğünüz bir şey varsa buyurun.
+
+500
+01:15:39,252 --> 01:15:39,692
+Yok mu ya?
+
+501
+01:15:42,692 --> 01:15:47,532
+Peki. Öyle olsun. Sonra da aklınıza bir şeyler girse paylaşırsınız benimle. Tamam mı?
+
+502
+01:15:50,252 --> 01:15:53,932
+Tamam. Bunu yaptık. Sonra notumu alalım.
+
+503
+01:15:53,932 --> 01:15:56,932
+Ya da unutmuyorum. Şimdi bir...
+
+504
+01:15:56,932 --> 01:16:03,932
+Belkeler...
+
+505
+01:16:04,404 --> 01:16:10,543
+0.3a'dan oldu diyorum.
+
+506
+01:16:11,224 --> 01:16:16,424
+Peki yani, şimdi bütün bunlardan bir ne ders çıkardık hayat dersi olarak.
+
+507
+01:16:16,424 --> 01:16:19,504
+Ders anlamında değil de hayat dersi anlamında ne çıkardık.
+
+508
+01:16:20,984 --> 01:16:28,484
+Daha doğrusu bir yazın geliştirme sürecindeki açısından ne dersler çıkardık.
+
+509
+01:16:29,684 --> 01:16:32,084
+İki yönlü ilişkiler çok daha esnek.
+
+510
+01:16:35,164 --> 01:16:40,443
+Yani elimdeki kişi kaydı varken araba kaydını sorgulamak kolaydı.
+
+511
+01:16:40,564 --> 01:16:42,344
+Evvelki örneklerimizden beri kolaydı.
+
+512
+01:16:42,443 --> 01:16:46,244
+Ama elimizde araba kaydı varken bunun sahibinin kim olduğunu sorgulayamıyorduk.
+
+513
+01:16:47,724 --> 01:16:49,783
+Bilmiyordum çünkü araç sahibinin kim olduğunu.
+
+514
+01:16:50,144 --> 01:16:51,524
+Şimdi ilişki iki yönlü yaptık.
+
+515
+01:16:52,307 --> 01:16:54,568
+Araçtan da arabayı sorgulayabiliyoruz.
+
+516
+01:16:54,648 --> 01:17:08,568
+Fakat bu iki yön ilişkileri kurmak için, basit setter metotları yapıldığında tutarlılığı kurmak için diğer yönliki atamayı da yapmayı unutmamamız lazım diyorum.
+
+517
+01:17:09,108 --> 01:17:25,307
+Ama hadi dedik, bu işi biraz daha esnek olarak yapıp bu iki yönlü ilişki, iki yönünde bizden kurmayı unutursak, tek yönde kurmaya çalıştığımızda öbür yönde kurulsun için yapmaya çalıştığımız konu, bakın ne kadar uzun sürdü.
+
+518
+01:17:26,208 --> 01:17:27,347
+Epey çaba adadık değil mi?
+
+519
+01:17:28,180 --> 01:17:39,860
+Bu nedenle öncelikle çift yönlü ilişki, tek yönlü ilişkiye göre daha esnek, daha kuvvetli ama kurulması da kolay ama tutarlılığının sağlanması kolay değil.
+
+520
+01:17:40,787 --> 01:17:44,268
+Bu nedenle ek çaba gerektiriyor, daha masraflı.
+
+521
+01:17:46,407 --> 01:18:00,967
+Bir gerçek bir yazılım projesinde ise, şöyle düşünebilirsiniz, bu ilik şimdi tek yönlü, ya mı işte bunu çift yönlü istersen olacak, ben şimdiden bunu çift yönlü kodlayayım diye düşünürseniz eğer, o fikri hemen kenara atın, uygulamayın.
+
+522
+01:18:00,967 --> 01:18:07,907
+Çünkü zaten zaman açısından sıkışık olacak hep projeleriniz.
+
+523
+01:18:08,307 --> 01:18:36,307
+%99 projeleriniz zaman açısından sıkışık olacak. Zaten zamana sıkışıksınız. Bir de bunu henüz müşteri istememiş, belki iş istemeyecek, sadece belki isteyecek diye buna ekstra çaba harcamanın hiçbir anlamı yok. Başka şeyleri kodlamakla zaten meşgul olacaksınız. Onları kodlayın. Müşterinin şu anda size istediklerini kodlayın. Daha sonra değiştirebiliriz müşteri isteğini. Onu o zaman yaparsınız. Şu an elinizde...
+
+524
+01:18:36,307 --> 01:18:40,028
+Sizin tasarımınız neyse ona doğru gidin.
+
+525
+01:18:40,907 --> 01:18:49,768
+Bunu ileride de şöyle olabilir gibisinden düşünerek şimdiden esnekleştirmeye çalışmayın şeklinde sözünü, o sözünü söyledim.
+
+526
+01:18:51,487 --> 01:18:55,868
+Ve şimdi geçiyoruz yeni ilişki türlerine.
+
+527
+01:18:57,939 --> 01:19:17,260
+Aggregation ve composition olmak üzere iki yeni ilişki türü göreceğiz. Bunlar parça-bütün ilişkileri. Aggregation biraz daha zayıf parça-bütün ilişkisi. Composition biraz daha kuvvetli parça-bütün ilişkisi. Ne demek istediğimi anlatacağım şimdi.
+
+528
+01:19:18,131 --> 01:19:24,711
+Egregation ilişkisi elmas ve ok şeklindedir.
+
+529
+01:19:24,871 --> 01:19:26,332
+Bakın burada başka bir şey var mı?
+
+530
+01:19:26,332 --> 01:19:27,171
+Evet, o zaman teşhirli.
+
+531
+01:19:27,171 --> 01:19:27,912
+Tamam, gel.
+
+532
+01:19:31,311 --> 01:19:36,751
+Egregation ilişkisi içi boş elmas ile gösteriliyor bir tarafta.
+
+533
+01:19:37,332 --> 01:19:40,152
+Elmasın bulunduğu taraf bütünü simgeliyor.
+
+534
+01:19:40,627 --> 01:19:43,268
+Diğer taraf parçaları simgeliyor.
+
+535
+01:19:44,108 --> 01:19:57,868
+Şu şekilde basit gösterim olsa bile aslında buradan bir anlamanız gereken şey, yine bu şeylerdeki sınallardaki, UMLN aşamalarındaki gizli bilgi türünden söylüyorum.
+
+536
+01:19:58,427 --> 01:20:03,028
+Aslında elmas tarafı değil de diğer tarafta bir ok var.
+
+537
+01:20:04,207 --> 01:20:05,407
+Çizmesek bile bu var.
+
+538
+01:20:06,292 --> 01:20:11,372
+Çünkü bütün parçalarının ne olduğunu her zaman bilir.
+
+539
+01:20:12,572 --> 01:20:17,912
+Ve aynı zamanda bu elmas sanki B'den A'ya bir ok gibi davranmaktadır.
+
+540
+01:20:18,231 --> 01:20:20,292
+Elmas şeklinde ok başı düşünün.
+
+541
+01:20:21,292 --> 01:20:25,032
+Parça da hangi bütüne ait olduğunu bilir.
+
+542
+01:20:26,003 --> 01:20:36,363
+Ve eğer aksi ifade edilmemişse bu ilişkideki nicelikler yani sayılar her zaman için şu tarafta bir var. Bütün tarafında bir var. Bir bütün. Bir bütün.
+
+543
+01:20:37,043 --> 01:20:56,384
+Yıldız adet parçadan oluşacaktır. Sıfır ya da daha fazla. İlla ki bir alt sınıf vermek zorunda değiliz. Sadece şu elmas ve çizgi şeklinde ise çizim, bu üstüne turuncu ile eklediğim ek işaretlerde mutlaka vardır. En azından bunu anlayacağız.
+
+544
+01:20:56,851 --> 01:21:23,332
+Daha fazlası da olabilir. Yani burada bir alt limit söz konusu olabilir işin parça tarafında. Veya bir üst limit veya ikisi birden söz konusu olabilir gibi. Örneğin bu bir futbol takımıysa sahada oynayan elemanlar açısından düşünürsek, yok ya şey diyelim, mutlaka 11 kişi olacak. Genel olarak takım olarak düşünelim. Şimdi ben futbol çok iyi anlamıyorum.
+
+545
+01:21:24,851 --> 01:21:31,351
+Anlayan arkadaşlara sorayım. Bir futbol takımının sahip olabileceği oyuncu sayısının üst sınırı var mı?
+
+546
+01:21:34,963 --> 01:21:57,963
+Hemen genet geliyor. Evet, diyorum ki var. Kaç nedir [öğrenci]? Biliyor musun? Bilen arkadaşım var mı? Varsa bir söylesin lütfen. Yani bir futbol takımının 20'den fazla oyuncusu olamaz ki bir durum var mı? Durum var ama o sayı kaç? Onu bilen arkadaşım varsayasın lütfen. Peki varmış. Diyelim ki...
+
+547
+01:22:00,851 --> 01:22:09,012
+Önceden 25. Tamam. Hadi değişmiş olabilir. Zamanın içine hadi değişelim. O kadar da fark etmek zorunda olmayalım. Ama bu güzel bir bilgi. Teşekkür ederim.
+
+548
+01:22:15,604 --> 01:22:30,864
+Mümkün, o zaman bu demek oluyor ki, ve tabii ki sahada da maç oynayabilmek için, acaba bir futbol takımının yedeksiz sahaya çıkmasını engelleyen bir kural var mı? Hadi orada söyleyeyim bari lütfen.
+
+549
+01:22:36,659 --> 01:22:43,500
+Bir futbol takımının yedek oyuncu olmadan maça çıkmasına izin var mı?
+
+550
+01:22:47,123 --> 01:22:50,003
+Ve bu yedek sayısında bir üst limiti var mı?
+
+551
+01:22:53,427 --> 01:22:54,827
+Evet, uzmanlık soruları.
+
+552
+01:22:59,699 --> 01:23:03,500
+7 yedek. Peki. Tamam. 7 yedek. Kafi yedek. Peki.
+
+553
+01:23:05,000 --> 01:23:12,819
+Yedek. Tamam. Peki. Pandemi zamanı kurallar esnetiyorduk. Tamam. Bu bir exception. Exception'ı almayalım.
+
+554
+01:23:16,756 --> 01:23:23,756
+Hatta bu hangi maça, hangi oyuncuya, hangi yedeklerde çıkılacağın önceden de bildirilmesi gerekiyor diye biliyorum.
+
+555
+01:23:25,475 --> 01:23:28,735
+Ama yine pandeminin de kurallar esnetilmiş olabilir.
+
+556
+01:23:28,735 --> 01:23:33,735
+Peki, o zaman eğer bu bir A tarafında takım...
+
+557
+01:23:42,292 --> 01:23:44,592
+Futbol team. Şöyle yazayım.
+
+558
+01:23:45,592 --> 01:24:04,532
+Futbol team ise, B tarafında da player ise, demek ki aslında bu, 11 saha oyuncusu 7 de yetek, 18, iki nokta yan yana 25 olacak.
+
+559
+01:24:05,235 --> 01:24:33,235
+Böyle bir şey olabilir mesela. Yıldız değil de bir sabit bir alt nimit ile üst nimitte olabilir. O zaman mutlaka bu işte bu bütüne parçayı ekleme de mutlaka olacak, olmalı. Çünkü bir parçayı bütüne eklemek için bütüne ekleme metotları koymalıyız. Bunun örneklerini yapacağız. Hatta aslında siz ilk laboratuvar dersinde işte kitaplık, kitap falan gibi örnekle ilk grup diğer grubunkini şu an hatırlamıyorum.
+
+560
+01:24:33,235 --> 01:24:36,615
+Yaptınız bu işi aslında.
+
+561
+01:24:37,416 --> 01:24:38,876
+Kitaplığa kitap eklemek tamam.
+
+562
+01:24:39,775 --> 01:24:40,996
+Bunu ayrıntılarını göreceğiz.
+
+563
+01:24:41,195 --> 01:24:42,576
+Yani bunu ayrıntılarını göreceğiz.
+
+564
+01:24:42,676 --> 01:24:44,496
+Şu an çok fazla şey ekleyin, kurucalamayın.
+
+565
+01:24:44,815 --> 01:24:49,176
+Ama tabii ki illaki bütüne parça ekleme metotları olacak.
+
+566
+01:24:49,176 --> 01:24:56,676
+Ve bu parça eklemek metodu da bu problem alanıyla ilgili kuralları enforce etmek, uygulamak zorunda.
+
+567
+01:24:57,492 --> 01:25:04,612
+Bu anlamda, football team ve player örneğinde, sağ tarafta 18, 2.25 demek durumundayız.
+
+568
+01:25:05,371 --> 01:25:07,891
+20 artı olamıyor, 17 olamıyor gibi.
+
+569
+01:25:10,171 --> 01:25:13,751
+Peki, şimdi o zaman Clear All Drawings diyebilirim.
+
+570
+01:25:15,192 --> 01:25:16,492
+Evet, şunları söktüm.
+
+571
+01:25:18,420 --> 01:25:40,059
+Şimdi peki, bir örneğimizi görelim. Şimdi son tarafta, elmas tarafında otobüs hattı var. Sağ tarafta da durak var. Otobüs durağı. Bir otobüs hattı, en az iki durak, iki ya da daha fazla durak içermelidir. Bir başlandırıcı, bir bitiş şeklinde. Böyle bir durum söz konusu.
+
+572
+01:25:41,779 --> 01:26:05,139
+Onun dışında, şimdi bu elmas şu anlama da geliyor. Yani bir otobüs hattına durakları kafanıza göre de ekleyemezsiniz. Tamam en azı ki olmalı ama üstü sınırı yok. Bunun için mutlaka çeşitli kurallar var. Örneğin, nedir? Bir şey kafadan atayım.
+
+573
+01:26:09,811 --> 01:26:22,872
+Bir hat diğer hattın nested iki şey tamamen sadece üst kümesi şeklinde olamaz benimki. Öyle söyleyeyim mesela.
+
+574
+01:26:24,399 --> 01:26:31,479
+Böyle bir kurallar olabilir. Yani bir durağa bir otobüs hattını eklemek için illa ki çeşitli kurallar vardır.
+
+575
+01:26:31,479 --> 01:26:46,279
+Ve bir durak da bir durağın da tek başına bir anlamı yoktur. İllaki bir otobüs hattının bir parçası olmalıdır gibi kurallar düşünülebilir.
+
+576
+01:26:46,720 --> 01:26:52,399
+Yani hiçbir şey olmasa bile en azından bu parçaları bütünü eklemenin bir kurallar.
+
+577
+01:26:52,399 --> 01:27:11,399
+Bu bir kavramsız olarak da bir parça bütün ilişkisidir. Biraz dikkatimizi çekiyor buradaki elmas. Yoksa ben otobüs hattıyla otobüs kurakları arasındaki ilişkiyi böyle normal saatlik ilişkisiyle de çizebilirdim. Hiç fark etmez. Her iki durumda da mutlaka...
+
+578
+01:27:15,475 --> 01:27:23,275
+Her iki durumda da Buzzroot tarafında stop türünden bir dizi veyahut da ilerleyen haftalarda göreceğiz.
+
+579
+01:27:23,655 --> 01:27:28,515
+Generic, linked listler veyahut da işte mapler falan filan değişik bir yapıları göreceğiz.
+
+580
+01:27:28,515 --> 01:27:32,515
+Bir dizi veya başka bir veri yapısı tanımlanmış olmalı.
+
+581
+01:27:32,795 --> 01:27:36,455
+Buzzroot'ın içerisinde stop nesneleri alabilecek şekilde.
+
+582
+01:27:36,795 --> 01:27:43,475
+Yani onu düz çizgileri çizsem, elmasla da çizsem aslında kodumun, kaynak kodumun...
+
+583
+01:27:43,475 --> 01:27:54,015
+Ayrıntıları bana bu işte bir otobüs hattına durak ekleme, çıkarma nasıl olur, nasıl biter, müşterimin bana söyleyeceği kurallar gereksinler doğrultusunda kullanacağım.
+
+584
+01:27:54,375 --> 01:28:01,055
+Ama ben bunu tasar verken ister elmas şeklinde çizip gösteririm, ister düz çizgile çizip gösteririm.
+
+585
+01:28:01,555 --> 01:28:07,055
+Çok da problem değil. Ama tabii ki elmas ile göstermek daha doğru. Bu bir parça bütün ilişkisi çünkü.
+
+586
+01:28:08,979 --> 01:28:10,999
+Evet, şunları çizilebilirim şimdi.
+
+587
+01:28:12,179 --> 01:28:15,579
+Clear mode drawings. Şunu kapatayım ve devam edelim.
+
+588
+01:28:18,099 --> 01:28:22,919
+Bir de composition. Bu da parça bütün ilişkisi ama daha kuvvetli bir ilişki.
+
+589
+01:28:23,259 --> 01:28:25,599
+Kuvveti nereden geliyor? Konuşalım.
+
+590
+01:28:26,059 --> 01:28:30,439
+Burada farklı yorumlayanlar var aslında, farklı ekoneler.
+
+591
+01:28:30,439 --> 01:28:35,375
+Mesela şurada demişiz ki, bu eğer şey ise...
+
+592
+01:28:35,376 --> 01:28:58,516
+Composition ilişkisi ise, bakıyorum şimdi, bütün tarafında takım var, parça tarafında oyuncu var. Genel bir takım olarak düşünelim, futbol takımı olarak düşünmemize gerekiyor. Bir parça aynı anda sadece bir tek bütüne dahil olabilir. Şeklinde bir yorum kazanıyor eğer bu elmasın içi doluysa.
+
+593
+01:28:59,060 --> 01:29:10,060
+Öte örnekte bir otobüs durağı bizden fazla hattın parçası olabilir. Bunda hiçbir sakınca yok. Ama bir oyuncu belirli bir anda sadece bir tek takımın parçasıdır.
+
+594
+01:29:11,960 --> 01:29:19,140
+O nedenle bu durumu içi dolu, koyu olan kompozisyon ve göstermemiz daha doğru olacak.
+
+595
+01:29:24,064 --> 01:29:38,384
+Çok da problem değil yani. Kaynak kodda bu gereksinimi, kodlamayı unutmayalım, yeter. Ama tabii ki aslında daha tasarımımızda bunu içi siyah elmas ile doldurmamız bize bu önemli bilgiyi vermiş oluyor.
+
+596
+01:29:39,043 --> 01:29:48,684
+Keza önümüzdeki sene yazılım mühendisliği dersinde göreceksiniz. Kullanım senaryosu metinleri yazma durumunu. Bu kadar kullanım senaryosu metinlerinde de açık açık yazılmalacaktır zaten.
+
+597
+01:29:48,684 --> 01:29:52,064
+O yüzden buradaki elması ve içi...
+
+598
+01:29:52,064 --> 01:29:57,304
+Bu elması bu şekilde çizmeyi unutmuş olmanız çok da problem oluşturmayacaktır.
+
+599
+01:29:57,304 --> 01:30:00,284
+Ama fark etmişseniz lütfen doldurun içini.
+
+600
+01:30:01,564 --> 01:30:02,923
+Şeklinde söyleyeyim.
+
+601
+01:30:03,003 --> 01:30:04,663
+Yoksa kaynak kot aynı olacak.
+
+602
+01:30:05,203 --> 01:30:08,123
+Bu elması ister içi dolu ister içi boş ya da hiç elmas yok.
+
+603
+01:30:08,224 --> 01:30:09,244
+Dürtü süzge devam ediyor.
+
+604
+01:30:09,524 --> 01:30:09,844
+Ayrıca.
+
+605
+01:30:11,956 --> 01:30:23,036
+Öte yandan şöyle bir yorum da olabiliyor ama o yorumu sildim. Daha az karşılaştım çünkü. Acaba bu parçaların bir bütün olmadan anlamı var mı yok mu?
+
+606
+01:30:25,792 --> 01:30:32,292
+Kimisi de şöyle diyor ki, içi boş elmas parçalar tek başına da yaşayabilir bir anlamı vardır.
+
+607
+01:30:32,872 --> 01:30:38,652
+İçi dolu elmas ise parçaların tek başlarına anlamı yoktur gibi bir ifadeye getiriyor.
+
+608
+01:30:39,372 --> 01:30:47,832
+Bu ifadede takım ve oyuncu bu şekilde gösterilmemeli eğer o notasyonu kullanıyorsanız, o anlamı ekliyorsanız siz buna.
+
+609
+01:30:47,832 --> 01:30:53,792
+Çünkü bir oyuncu bir takımın parçası olmasa bile profesyonel oyuncudur, elinde lisansı vardır veya amatör oyuncudur.
+
+610
+01:30:53,792 --> 01:30:56,391
+Amatörlerin de lisans oluyor mu bilmiyorum ama
+
+611
+01:30:56,391 --> 01:31:02,311
+bilen arkadaşım var mı? Amatör sporcularının lisansı oluyor mu?
+
+612
+01:31:07,220 --> 01:31:09,819
+Oluyor demiş ona [öğrenci]. Teşekkür ederim.
+
+613
+01:31:10,319 --> 01:31:18,199
+Yani olmasa bile yani kardeşim ben oynuyorum işte yani illa kendi kendime bile oynarım ne olacak.
+
+614
+01:31:18,619 --> 01:31:22,340
+Belki deli derler bana ama olsun kendi kendime oynarım diyebilirim yani.
+
+615
+01:31:24,100 --> 01:31:24,840
+Pekala.
+
+616
+01:31:26,036 --> 01:31:40,976
+O kısmı kapatıyorum ama daha çok bir duda ders kapsamında düşündüğümüz ama çok da fazla didiklemeyeceğimiz husus bir parça sadece bir anda tek bir bütüne dahil olabilecekse onu içi dolu elmasıyla gösteriyoruz diyelim ve devam edelim.
+
+617
+01:31:42,836 --> 01:32:00,076
+O yüzden işte bir yıldız ister association, caclick olsun, ister aggregation, ister composition olsun. İlla işte dediğim gibi o yıldız tarafını simgelemek için dizi veyahut da işte listeler, yığınlar, kuyruklar, işte hip, ağaç, graf vesaire bir şeyler olacak illa ki.
+
+618
+01:32:01,332 --> 01:32:29,112
+Şimdi Nesli dizi kullanımı da göreceğiz. Örneğimizde dizi kullanımı yapacağız ilk başta. Ama onun yeterince esnek olmadığının siz de farkındasınız. Bir yıllardır aslında dizi işlemleri yapıyorsunuz. Dizilerde araya eleman ekleme, eleman silme gibi işlerin verimsiz olduğunu biliyorsunuz. Ama liste gibi bir yapıldığıyla bu işin çok daha rahat yapıldığını, daha verimli yapıldığını, ha kodlaması kolay mı? Kodlaması evet. Onu da kodlamasız zor ama bir kere kodladıktan sonra çok daha verimli.
+
+619
+01:32:29,332 --> 01:32:45,731
+rahat bir şekilde kullanıyorsunuz. Keza kaldı ki birçok dilde, inşallah buna dahil, hazır veri yapılarıyla geliyor. Gelmiyorsa bile siz kendi veri yapılarınızı bir kere hazırlayıp test ettikten sonra artık istediğiniz gibi kullanabilirsiniz. Rahat rahat.
+
+620
+01:32:50,547 --> 01:33:15,767
+Bir kısa işte, laboratuvarda da gördünüz aslında. Ha bir daha evvel C dersi demeyin, yapısal programlama derslerinde gördüğünüz dizilerde ilkeller vardı. Şimdi yine dizili olacak ama bir dizi isterseniz ilkel elemanlar içecek şekilde tanımlarsınız. İster herhangi bir sınıftan nesneler içecek şekilde tanımlarsınız. Ve kullanırsınız yani fark yok arada. Göreceksiniz.
+
+621
+01:33:16,500 --> 01:33:29,000
+Bunu örneklemek için bir galeri sınıfı oluşturmak istiyorum. Galeride satılmak üzere bekleyen bir daha fazla araba yer alacak. Araba sınıfını yeniden kullanacağız.
+
+622
+01:33:30,496 --> 01:33:43,936
+Burada şey, şimdi peki galerideki araçların sahibi kim olacak? Galerinin bir sahibi olacak. İsterseniz aracın sahibi galeri sahibidir diye düşünebilirsiniz.
+
+623
+01:33:43,936 --> 01:33:58,176
+Ya ilk başta sahibi yok, nallı öyle bekliyordu diye de düşünebilirsiniz. Çok da önemli değil ondan sonra. Ama işte bu işi çok da karmaşıklaştırmadan biraz daha sade tutmak için hani belki şey yapabilirsiniz.
+
+624
+01:33:58,496 --> 01:34:02,376
+Sadece plaka numara sunan constructor olsun mu araba sınıfında diğerini sileyen mi?
+
+625
+01:34:02,816 --> 01:34:03,736
+Yok, gerek yok işte.
+
+626
+01:34:03,736 --> 01:34:05,736
+Yani siz verirsiniz kararınızı.
+
+627
+01:34:06,576 --> 01:34:12,596
+Araba galeriye eklendiğinde ya sahibini galeri sahibi olarak atarsınız veyahut da NAL olarak alın sahibi yok.
+
+628
+01:34:13,396 --> 01:34:15,496
+Belki öylesi daha bile doğru zaten.
+
+629
+01:34:16,076 --> 01:34:16,696
+Öyle olabiliriz.
+
+630
+01:34:18,596 --> 01:34:19,896
+Evet, şimdi bakalım.
+
+631
+01:34:20,056 --> 01:34:25,956
+Ayrıca burada dizilerin kullanımı, for döngüsü, bunda bir yeni hali var, for each döngüsü.
+
+632
+01:34:26,496 --> 01:34:29,456
+Hepsinin kullanımını örneklediğimiz bir çalışma olacak.
+
+633
+01:34:30,776 --> 01:34:34,356
+Şimdi tasarımın şu şekilde yine person-car arasındaki durum değişmiyor.
+
+634
+01:34:34,356 --> 01:34:35,796
+Birebir çift yönlü.
+
+635
+01:34:37,524 --> 01:34:41,984
+Hiçbir kodu değiştirmek zorunda değiliz. Ne person sınıfından ne kar sınıfından.
+
+636
+01:34:41,984 --> 01:34:49,123
+Şimdi biz galeri sınıfı oluşturuyoruz ve galeri sınıfında işte satın ötürüyle bekleyen araba nesnelerim olacak.
+
+637
+01:34:49,304 --> 01:34:53,043
+O yüzden birey yıldız şeklinde bunu düz sahiplik şeklinde yazdım.
+
+638
+01:34:53,404 --> 01:34:56,364
+Yani bunu parça bütün yapmak içimden hiç gelmedi.
+
+639
+01:34:56,524 --> 01:35:01,264
+Çünkü yani bir galeri arabaların toplamından oluşmaz.
+
+640
+01:35:01,463 --> 01:35:05,164
+Sadece satılacak arabalar içerir bence. O yüzden bunu düz.
+
+641
+01:35:05,524 --> 01:35:19,824
+Herhangi bir pek bir kurada da yok. Galeri arabayı aldı mı aldı. Arabayı zaten gerekli kanuni işlemleri yaparak aldı üstlendi. İster galesinde tutar, ister bir yerde kapalı otoparkta tutar falan.
+
+642
+01:35:21,104 --> 01:35:30,284
+Bu yüzden çok aşırı bir kural da yok. Bu nedenle düz çizgi, sahiplik ilişkisiyle göstermeyi kararlardım. Galeri sınıfının ve her galerinin bir adı var.
+
+643
+01:35:30,771 --> 01:35:41,992
+İşte galeride yer alacak araçlar var. Cartoon'dan bir dizi. Eğer şimdi ben burada birey yıldız demişsem ve şemada bu diziyi vermemişsem siz olması gerektiğini anlayacaksınız zaten.
+
+644
+01:35:42,431 --> 01:35:48,491
+Dizilerle çalışırken, şimdi dizi sabit genişlikle ancak oluşturabiliyorsunuz.
+
+645
+01:35:48,491 --> 01:35:50,591
+Diyelim ki 50 araçlık kapasite.
+
+646
+01:35:51,111 --> 01:35:58,711
+Fakat belli bir anda galeride 50 araçlık tüm kapasite kullanılmış anlamına gelmez bu.
+
+647
+01:35:59,031 --> 01:36:01,311
+Belli bir anda galeride kaç araba var?
+
+648
+01:36:01,631 --> 01:36:05,871
+Onun sayısını da ayrıca tutmanız, saklamanız gerekmektedir mutlaka.
+
+649
+01:36:06,351 --> 01:36:10,431
+Ve ayrıca galeriye yeni araba geldiğinde bunun dizinin hangi...
+
+650
+01:36:10,431 --> 01:36:14,071
+Gözüne yazacağım. Onu tutmak için de indis değişkeni olarak da gerekli.
+
+651
+01:36:14,411 --> 01:36:17,731
+Yani buradaki car count hem iş mantığı için gerekli.
+
+652
+01:36:17,731 --> 01:36:23,531
+Hani şu an arabam galerimde kaç araba var falan gibi bir sorgu gerisi onu yanıtlayabilmek için.
+
+653
+01:36:24,071 --> 01:36:30,111
+Hem de bu diziyle çalışırken illaki bir indeks değişkeni tutmam gerekiyor.
+
+654
+01:36:30,271 --> 01:36:33,431
+Onun için çift amaç bu car count bir alanı.
+
+655
+01:36:33,891 --> 01:36:38,031
+Ve her galerinde bir sahibi olsun dedim. O da kişi olarak da.
+
+656
+01:36:38,431 --> 01:37:06,271
+birebir olarak geçiyor. Sahipsiz galeri olamaz. İsimsiz galeri de olamaz. O yüzden constructor da hem galeri adı hem de galerinin sahibini veriyorum parametre olarak. Gerçi odamız galeri ile arabalar arasındaki ilişki olacak ama yapmışken örneği biraz daha tam yapmaya çalışalım. Metotlara gelelim. Ha işte evet, constructor'ını söyledik. Galeri ismi için getter, setters, adı değişebilir.
+
+657
+01:37:06,431 --> 01:37:06,795
+Arkadaşlar, class, object,
+
+658
+01:37:07,091 --> 01:37:34,291
+Şimdi, şu add car metoduna bir bakalım. Galeriye yeni bir araba geldi, satılmak üzere. Peki, add car metoduna. Parametro olarak yeni eklenecek araba nesnesini alacak. Ve bir boorin geri dönüşü. Boorin geri dönüşülerin anlamı şudur. İşlem başarılı ise true, başarısız ise false döndürülecek anlamına gelmektedir. Peki, bir galeriye acaba araba ekleme işlemi neden başarısız olabilir?
+
+659
+01:37:35,091 --> 01:37:43,091
+Bu çuklu sahiplik ilişkilerinde temel olarak dikkat edeceğimiz, ben söylemesem bile dikkat etmeniz gereken iki tane husus var.
+
+660
+01:37:43,731 --> 01:37:50,551
+Birincisi, eğer dizi kullanıyorsanız belki dizide yer kalmamışsınız. O yüzden poz görülüyorsunuzdur.
+
+661
+01:37:51,551 --> 01:37:52,211
+İkincisi,
+
+662
+01:37:52,884 --> 01:37:59,264
+Bir parça, bir bütün de, aynı bütün de sadece bir kere alır, iki kere alamaz.
+
+663
+01:37:59,804 --> 01:38:03,283
+Aynı arabayı bir galeriye iki kere eklemek doğru değildir.
+
+664
+01:38:03,283 --> 01:38:12,363
+O yüzden galeride zaten olan bir arabayı tekrar galeriye eklemek istiyorsak yine bu işlem başarısız olmalı ve bize false döndürmelidir.
+
+665
+01:38:13,743 --> 01:38:15,923
+Bu iki durumu mutlaka kontrol etmeliyiz.
+
+666
+01:38:20,756 --> 01:38:43,536
+Sonra bir de dizi kullanmamız nedeniyle, dizileri de sabit genişlikli olarak tanımlamamız nedeniyle dizide yer kalmamış olabilir. Ama size şimdi kodlamada göstereceğim. Java'da, sizde böyle olmayı ama Java'da bir dizinin kapasitesini, maksimum kapasitesini isterseniz genişletebilirsiniz.
+
+667
+01:38:44,212 --> 01:39:09,311
+Ama bunu yaptığımızda dizide yer alan eski elemanlar siliniyor. Daha geniş ama bomboş bir dizi oluşuyor. Bu nedenle, yani bunu da üstesinden gelebilirsiniz. Daha geniş kapasiteli yeni dizi oluşturursunuz. Eski daha küçük kapasitedeki dizideki bütün elemanları yeni diziye kopyalarsınız.
+
+668
+01:39:09,876 --> 01:39:28,196
+Ondan sonra üye alan olarak düşündüğünüz bu eski diziyi, yeni oluşturduğunuz, metod içerisinde oluşturduğunuz daha geniş boyutlu diziyi, üye alan olan diziyi atama yaparsınız. Böylelikle bu işi çözebilirsiniz. Yani yapacağız sizinle birlikte orada.
+
+669
+01:39:28,196 --> 01:39:37,456
+O yüzden aslında bir veri yapısından kaynaklanan bir sabit bir üst sınırlı problemimiz yok.
+
+670
+01:39:37,876 --> 01:39:42,036
+O yüzden eğer dizide yer kalmadıysa isterseniz diziyi genişletmeyi de seçebilirsiniz.
+
+671
+01:39:42,636 --> 01:39:43,736
+Dizi de genişletirsiniz.
+
+672
+01:39:44,336 --> 01:39:49,856
+Ama tabii yine aracı eklerken bu araç daha önce dizide yer alıyor mu diye bakmak her zaman için lazım.
+
+673
+01:39:49,856 --> 01:39:59,856
+O yüzden eğer bu diziyi genişletme şeklinde yazarsanız kodunuzu bu etkal metodunun false döndürdüğü tek case, tek vaka aynı aracın tekrar...
+
+674
+01:40:00,000 --> 01:40:01,559
+eklenmeye çalışılmasıdır.
+
+675
+01:40:02,279 --> 01:40:04,099
+Veyahut da bir plaka sahtekarlığı vardır.
+
+676
+01:40:04,199 --> 01:40:06,859
+Yani iki farklı araç nesnesi ama plakaları aynı.
+
+677
+01:40:07,279 --> 01:40:09,019
+Bu durumda da eklememeliyiz.
+
+678
+01:40:09,460 --> 01:40:15,460
+Burada işin içerisine object identity versus unique identifier giriyor.
+
+679
+01:40:17,460 --> 01:40:36,680
+Tekil nesne durumu devreye giriyor. Şöyle ki, sadece yeni gelen arabanın plakası üstünden aynı plakaya sahip bir araç var mı diye kontrol ediyorsanız, aslında aynı plakada farklı iki nesne olabilir. Bu durumu kontrol ediyorsunuz.
+
+680
+01:40:36,680 --> 01:40:45,460
+Bir de, yani bellekte ayrılan, belli bir adreste yer alan aynı araba nesnesi olmalı.
+
+681
+01:40:45,460 --> 01:40:46,500
+Nasıl durumu başka?
+
+682
+01:40:47,340 --> 01:41:05,400
+Dikkat ederseniz bu aynı bellek notasında yer alan aynı araba nesnesi olma durumunu az önce işte araç, insan, sahip, bunları zaten sahibi ben değilsem filan gibi konutlarla bunu da aslında üstesinden geçtik yani.
+
+683
+01:41:05,400 --> 01:41:09,220
+Burada kişinin adı üstünden karşılaştırma yapmadık.
+
+684
+01:41:09,440 --> 01:41:13,400
+Bakın yeni sahibinin adıyla eski sahibinin adı veya yeni sahibinin adıyla...
+
+685
+01:41:13,460 --> 01:41:35,880
+TC-2 numarası ile eski sahibinin TC-2 numarası aynı ise aynı değilse şeklinde yapmadık. Şu anki sahibi eski sahibi ile aynı isa gibisinden atamalar yaptık. Orada object identity kullanmış olduk. Burada ise işi tekil tanımlayıcı eşitliği üstünden yapacağız. Öyle yapmamız daha doğru olacak buradaki örnekte.
+
+686
+01:41:39,252 --> 01:41:47,712
+Evet. Çünkü buradaki örnekte yapacağımız tekke tanımlayıcı üzerinden kontrol daha geniş çaplı oluyor.
+
+687
+01:41:49,587 --> 01:42:17,587
+Öyle söyleyeyim. Çünkü plaka, sahtekarlığı gibi şeyler doğabiliyor. Eğer ikilemde kalırsanız herhangi bir sınavda, hocam işte Nesli'nin kendisi üzerinden mi kontrol yapacağım? Tekir tanımlayıcısı üzerinden mi kontrol yapacağım? Eğer aksesülenmemişse tekir tanımlayıcı üzerinden kontrol yapmak her zaman daha doğrudur. Ama işte bu car person, çık taraf atma gibi durumlarda o zaman yapmamız gereken şey object identity üzerinden yani tekir tanımlayıcı üzerinden.
+
+688
+01:42:17,587 --> 01:42:23,687
+tırmanın cizliğinde neslinin bizatihi kendisi olması açısından kontrol yapıyorduk.
+
+689
+01:42:25,087 --> 01:42:27,127
+Pekala, çok fazla uzatmayayım.
+
+690
+01:42:27,927 --> 01:42:29,227
+Ama şunu da bir deneyeyim.
+
+691
+01:42:29,347 --> 01:42:30,967
+Etkal metodu ile işim henüz bitmedi.
+
+692
+01:42:31,427 --> 01:42:35,487
+Madem aynı plakaya sahip bir aracı iki kere eklememeliyiz,
+
+693
+01:42:35,867 --> 01:42:41,047
+o zaman acaba şu an Galil'de o plakaya sahip bir araç var mı diye bir soğuduramak gerekecektir.
+
+694
+01:42:41,047 --> 01:42:43,847
+Bu hem genel olarak da gerekebilir.
+
+695
+01:42:44,404 --> 01:42:55,444
+Hem de mutlaka bu Edgar metodunun içerisinde çağırmak için de gerekebilir. Bu nedenle bunu ayrı bir metot yapalım. Bu işi Edgar'ın içerisinde hardcode olarak kodlamayalım.
+
+696
+01:42:55,844 --> 01:43:06,664
+Belli bir plakası olan aracı plakasını verip aracı nesnesinin kendisine ulaşmak zaten işimize yarayacak kendi içinde anlamlı bir iştir.
+
+697
+01:43:09,427 --> 01:43:21,868
+Search car metodu var. Hatta search car metodunun iki versiyonu var bakın. İkisi de değişik senaryolarda ihtiyaç duyabiliriz ikisine de. Birinci search car metodu parametre olarak bir car nesnesi alıyor.
+
+698
+01:43:22,355 --> 01:43:47,395
+Ve o k nesnesinin bizatihi kendisi arabalar arasında var mı? Varsa turu döndürüyor yoksa false döndürüyor. Öte yanda belirli bir plakayı alan, parametre olarak alan search car metodum da var. O plakaya sert bir araba nesnesi varsa da onu döndüren yoksa da null döndürecek olan bir search car versiyonum daha var.
+
+699
+01:43:49,203 --> 01:43:55,083
+Bir de tabii ki şimdi araba satılacak veya galerden çıkacak falan. Onun için Ribo metodu da gerekli.
+
+700
+01:43:55,523 --> 01:44:03,503
+Bir dakikası verilen aracı listeden çıkar, galerden çıkarmaya yarayan bir metodum var.
+
+701
+01:44:04,023 --> 01:44:07,603
+Peki bunun geriye bir kar nesnesi döndürmesinin amacı nedir?
+
+702
+01:44:07,603 --> 01:44:14,223
+Amacı şudur. Şimdi tamam o araba nesnesi diziden sildim. Artık dizinin içerisinde yer almıyor.
+
+703
+01:44:17,203 --> 01:44:45,203
+işaretçiye hala ihtiyacım olabilir. Mesela işte başkasına satacağım ya diyelim ki o arabayı ya da satacağım demiyorum. Satma galeriyle en önemli bir metodu. O arabayı nesnesine aldım. Belki bir motoru taşıdığa bilgi sisteminden hani hurdaya çıkarılacak o araç. Oradan silmek için o araba nesnesine silebilmek, sililebilmek için o araç nesnesine ihtiyacı olabilir. Yani bu metot diyor ki tamam ben sildim bu aracı kendimden ama yine de al yani oradan çık.
+
+704
+01:44:45,203 --> 01:44:56,203
+Çıkardım, kendimden çıkardım, sana veriyorum. Sen ister at, ister sil, ne yapacaksan yap diyor. Kullanıcıya metod çağıran kimse. O yüzden bunu yani...
+
+705
+01:44:56,595 --> 01:45:10,815
+Bu yönde döndürebilirdik mesela. Arabayı silmek başarılıysa true, başarısızsa false. Arabayı silmek neden başarısız olabilir? O plaka araba yoktur da ondan başarısız olabilir mesela. Öyle de düşünebilirdik.
+
+706
+01:45:10,815 --> 01:45:20,815
+Hatta isterseniz öyle bir versiyonunu da kodlayabiliriz ama o zaman doğru bir overload işlemi yapmış olmayız.
+
+707
+01:45:24,595 --> 01:45:30,175
+parametre, metot parametrisi türü farklı, hem geri dönüş türü farklı.
+
+708
+01:45:31,095 --> 01:45:40,515
+Metot parametreleri aynı olup, sadece geri dönüş türleri fark ediyorsa, aynı adlı iki metotun bize derleme hatası vermektedir.
+
+709
+01:45:40,835 --> 01:45:49,695
+O yüzden geriye, acaba volume mu döndüreyim, veyahut da kal mı döndüreyim türünden bir seçenekle karşı karşıyorsanız,
+
+710
+01:45:50,015 --> 01:45:52,456
+Neslinin kendisini döndürmesi daha mantıklı elbette.
+
+711
+01:45:52,595 --> 01:46:07,555
+çünkü Burien dönersek sadece True ya da Fos ama kar dönerse o kar yoksa da Null döner ama o kar nesnesi varsa nesnenin kendisi komple döneceğinden onu çok daha farklı işler için kullanabiliriz.
+
+712
+01:46:07,555 --> 01:46:12,795
+Ama elimizde sadece bir True dönerse tamam vardı sildim e ne oldu yandı bir tıkkır oldu.
+
+713
+01:46:13,095 --> 01:46:16,755
+Ne attım ki ne sildim ne oldum bir ihtiyacım var bir şey daha yapacaktım ben ona.
+
+714
+01:46:17,215 --> 01:46:18,795
+Geçmiş olsun oluyor mesela.
+
+715
+01:46:20,051 --> 01:46:28,551
+Peki, sell car metodu bir aracı bir yeni bir kişiye sattıracak.
+
+716
+01:46:28,944 --> 01:46:56,444
+İşlem başarılıysa, turu döndürecek. Bunun için tabii ki o araç var mı? Varsa ancak satabilecek. Bu da mani işleri söz konusu etmeyeceğiz. O işleri size egzersiz olarak bırakacağız. Ama tasarımdan bahsedeceğim ama ayrıntılarını size bırakacağım artık. Ve yine Galer için bir Introduction's metodu olacak. Bunda şöyle bir şey olmasını düşünüyorum. Galer'in adını söylesin, sahibini söylesin ve Galer'imde şu kadar araç var desin. Böyle bir şey düşünüyorum.
+
+717
+01:46:56,944 --> 01:46:58,184
+Metodu içinde.
+
+718
+01:47:00,404 --> 01:47:11,144
+Onun dışında, buraya kadar söylediklerimden, acaba kafanıza yatmayan bir şey var mı? Varsa buyurun lütfen.
+
+719
+01:47:24,787 --> 01:47:26,247
+Tamam, hemen bunun altı.
+
+720
+01:47:30,292 --> 01:47:57,612
+Tamam, peki bu arada, evet, ufak tefek notlarım var. Doğru. Shake kısmına geri dönersem, mesela şu normal araç şeyine geri dönersem, insan, araba, şimdi bir arabanın ilaç sahibi olmayabilir. O yüzden hani aslında ilişkin her iki yönünde de 0-1-0-1 demek daha doğru. Henüz o şemayı düzeltmemişim. Düzeltirsem, düzeltilmiş şekliyle kodlarım, yans, şey, ders noktana eklerim.
+
+721
+01:47:58,292 --> 01:48:07,244
+Bunlar aslında birebir değil de yani illa her aracının sahibi olmak veya her insanın bir aracı olacak durum değil. Bu nedenle...
+
+722
+01:48:08,627 --> 01:48:15,767
+Aslında 0-1, 0-1 olması gerekiyordu. Onun dışında başka bir şey var mı? Falan falan.
+
+723
+01:48:16,347 --> 01:48:23,007
+Yani bir de şöyle de olabilir. Şimdi dizilerle uğraşırken dizinin maksimum kapasitesi olması gerektiğini söylemiştik.
+
+724
+01:48:23,007 --> 01:48:31,527
+En azından ilk aşamada tanınmarken öyle. Biz istersek dizinin kapasitesini genişletebiliriz de demiştik.
+
+725
+01:48:36,627 --> 01:48:56,227
+En fazla elli araç satışta olabilir belli bir anda veya bir galeride, galerinin üzerinde en fazla elli araç olabilir gibi bir kanuni bir limit söz konusuysa o zaman buraya bir private car limit üyesi ekleyebiliriz.
+
+726
+01:48:56,227 --> 01:49:04,347
+Hatta bu bir kanun maddesi olduğunda hangi galeri olursa olsun bu limit geçerli olduğunda
+
+727
+01:49:04,627 --> 01:49:11,287
+Bu bir sabit değer olarak düşünülüp, public, final, static olarak da şey edilenebilirsiniz, atanabilirsiniz.
+
+728
+01:49:11,287 --> 01:49:22,067
+Ama eğer öte yandan şöyle düşünüyorsak, bu galerinin sahip olduğu fiziksel mekana en fazla 50 araç sığabilir.
+
+729
+01:49:22,527 --> 01:49:29,467
+İşte otoparkı, galerinin içi ve arkasındaki otoparkı açık ya da kapalı en fazla o kadar araç barındırıyor.
+
+730
+01:49:30,003 --> 01:49:57,724
+O zaman public, finance, static olmayan normal, private üye alan olaraktan bir galeri kapasite üye alanı ekleyebilirsiniz. O zaman tabii Ed Carr metodunda zaten galerinin o maksimum kapasitesine ulaşılmışsa, dizi yeniden bu kapasitesini genişletme gibi bir şey söz konusu olamayacak. Basitçe bunu ekleyemiyor. Yani false döndürme konusu geçerli olacak.
+
+731
+01:49:58,003 --> 01:50:00,000
+Buon.
+
+732
+01:50:00,000 --> 01:50:01,260
+Aynı zamanda memle nihayetinde.
+
+733
+01:50:01,840 --> 01:50:06,619
+Ve hangisinin kullanılacağını aslında müşteri size söyleyecek.
+
+734
+01:50:06,840 --> 01:50:08,619
+Gereksinimlerde veyahut da ben sınavda.
+
+735
+01:50:08,699 --> 01:50:10,439
+İşte bu böyle olacak şekilde söyleyeceğim.
+
+736
+01:50:10,439 --> 01:50:15,359
+Veya söylemeyi unutmuşsak da, belirtmeyi unutmuşsak da, kafamıza bir şey takıldıysak.
+
+737
+01:50:15,739 --> 01:50:18,220
+Şimdi sınavla paralel olarak ders oturumu da olacak.
+
+738
+01:50:18,399 --> 01:50:19,460
+Ben de derste olacağım.
+
+739
+01:50:19,899 --> 01:50:22,880
+Chat üstünden sorularınızı yazabilirsiniz.
+
+740
+01:50:23,059 --> 01:50:24,859
+Soracağım şu nedir, bu nedir diye.
+
+741
+01:50:25,239 --> 01:50:27,779
+İster tercihen private olarak yazın.
+
+742
+01:50:28,000 --> 01:50:37,300
+Ama hani bir kopya vermemek şartıyla public olarak da yazabilirsiniz chatte. Zamanı gelince bunları tekrar konuşuruz.
+
+743
+01:50:38,739 --> 01:50:47,519
+Peki o zaman şimdi aramızı verelim. Geçti bile diyelim. 10.55, 11.05 arasında ara.
+
+744
+01:50:53,524 --> 01:50:54,144
+Arkadaşlar, şey bu.
+
+745
+02:00:47,315 --> 02:00:57,495
+Evet arkadaşlar, aramız sona aldı. Şimdi derse kaldığımız yerden devam edelim. Tekrar paylaşma yapayım.
+
+746
+02:00:58,675 --> 02:01:08,315
+Şimdi bu arada bir iki bir şey daha söylemek istiyorum size. Şimdi dizi kullanımını göreceğiz, örnekleyeceğiz.
+
+747
+02:01:08,315 --> 02:01:14,835
+Fakat ders notlarında eklemeye unuttum bir husus var. Onu bir eklemiş olayım.
+
+748
+02:01:15,412 --> 02:01:17,387
+Şimdi eee
+
+749
+02:01:20,500 --> 02:01:24,820
+Bunun dışında, şimdi ekliyorum. Tamam peki bu bir yıldız oranından bahsetmiştik falan.
+
+750
+02:01:25,100 --> 02:01:39,420
+Şimdi, eğer isterseniz Java dilinde bir dizinin kaç elemanlık yere sahip olduğunu, yani kapasitesini dizinin adı nokta length diyerekten öğrenebiliyorsunuz.
+
+751
+02:01:39,859 --> 02:01:41,939
+Burada dikkat ederseniz sonunda bir parantez yok.
+
+752
+02:01:42,459 --> 02:01:43,479
+Üye alan erişimi gibi.
+
+753
+02:01:44,099 --> 02:01:50,399
+Aslında arka planda Java dilinde dizilerde birer nesnedir aslında.
+
+754
+02:01:50,879 --> 02:01:52,979
+Nesneler içeren kendisi de bir nesnedir.
+
+755
+02:01:52,979 --> 02:01:59,339
+Bu nedenle aslında nokta length dediğimizde bir üye alan erişimi olduğunu gördük aslında.
+
+756
+02:01:59,779 --> 02:02:01,779
+Ve bu arada hem de kafadan üye alan erişilmiş.
+
+757
+02:02:02,379 --> 02:02:03,639
+Normalde biz ne dedik?
+
+758
+02:02:03,999 --> 02:02:06,619
+Üye alanlara getir metotlar üzerinden erişiriz.
+
+759
+02:02:06,959 --> 02:02:07,859
+Bu bir...
+
+760
+02:02:07,859 --> 02:02:29,319
+İlkediz, verilgi izleme ilkesidir dedik. Bu ilkeye mutlaka uyul. Bu örnekte uyulmamış, yani Java dinin tasarımcılığı burada bir hani get length gibisinden bir metot eklemektense bu şekilde nokta length deyip erişmeyi daha uygun görmüşler.
+
+761
+02:02:31,091 --> 02:02:46,851
+Tamam, peki. Ama siz normalde böyle yapmamanız gerektiğini biliyorsunuz. Bu dilin kendi çekirdek mantığında uygulanan bir tek bir istisna diyelim. Başka bir yerde böyle bir istisnanın ben farkında değilim.
+
+762
+02:02:46,851 --> 02:02:56,251
+İnşallah dilimde. Bir arkadaşım varsa söylesin. O yüzden bilebildiğim kadarıyla bu tek istisna. Normalde bütün yalanlar getter metotlar üzerinden erişilir.
+
+763
+02:02:59,091 --> 02:03:06,211
+Ne demiştik? Eğer bir üye alan hem public hem final hem statik ise public olarak tanımlayabilirsiniz demiştik.
+
+764
+02:03:06,551 --> 02:03:14,311
+Ama bir dizinin length üyesinin ya da kapasitesinin diyelim, bunun statik olması diye bir şey söz konusu değil.
+
+765
+02:03:14,771 --> 02:03:23,371
+Yoksa şu olurdu, hangi türden kaç tane farklı dizi oluşturursanız oluşturun, hepsinin kapasitesi aynı olacak anlamına geliyordu.
+
+766
+02:03:23,371 --> 02:03:26,912
+Ortak kullanım anlamında statik. Bu nedenle length statik.
+
+767
+02:03:27,091 --> 02:03:55,091
+Olamaz, statik değil. Final belki olabilir ama bu bir problem teşkil etmiyor. Dizinin boyutunu yeniden boyutlandırabilirsiniz. Çünkü constructor çağırarak aslında diziyi yeniden boyutlamış oluyorsunuz. Bu nedenle final olmasının bir engelli yok. Çünkü yepyeni nesne oluşturuyorsunuz ve o yepyeni dizinin yeni bir kapasitesi olmuş oluyor.
+
+768
+02:03:55,091 --> 02:04:09,532
+Ve ilk o anda tanınanmış olacak. Sonradan tekrar değiştiremeyeceksiniz. Set, set, length veya length, 50 falan gibi kodlar yazmanıza zaten izin vermeyecek Java devleyicisi.
+
+769
+02:04:12,751 --> 02:04:19,971
+Evet, şamalısından konuşmuştuk. Şimdi biraz biraz kodu incelemeye başlayalım.
+
+770
+02:04:24,180 --> 02:04:38,840
+GALERYN, o da var. İçeride arabalar, car dizisinin yer alıyor. Bu arada pardon, artık sesim açıklanmaya başladı. Bir yani şekerine ihtiyacım var.
+
+771
+02:04:41,820 --> 02:04:49,940
+Üçüncü yalan car count, arada sayısı. İşte dediğim gibi diziyle çalışacağımız için bir indeks değişkeni olması açısından da buna ihtiyacım var.
+
+772
+02:04:54,195 --> 02:05:02,955
+Galerinin sahibi kimse, onun da üye alanı var. Bir bakalım Constructor'a. Constructor, Galeri ismini ve galeri sahibini alıyor. Bunları otomatik olarak atıyoruz.
+
+773
+02:05:04,564 --> 02:05:23,244
+Dizilerle çalışırken diziyi de nesmi gibi ilklendirmek gerekiyor. Yani daha doğrusu aslında bir kapasite atamak gerekiyor. İlk başta ara açı sayısı sıfır. Bunu yazmasak da normalde sayısal ilkelerin default değeri sıfır ama ben bu...
+
+774
+02:05:23,412 --> 02:05:50,572
+Bir indeks değişkenidir. Onun tutulması ve tutarlılığının sağlanması önemlidir. Bu nedenle Constructor'da açıkça Kalkan Teşit'e sıfır diye bir atıma yapmayı tercih ettim. Yapmasanız da olursun ama ben ettim. Fakat şunu mutlaka yapmalıyız. Bu Kars dizisine bir alan, bir kapasite ayırmak zorundayız. Onun için de dizinin adını diyorum, eşittir diyorum, new diyorum. Hangi tür nesneler içerecekse o sınıfın adını yazıyorum.
+
+775
+02:05:51,412 --> 02:05:53,712
+Aneteziler içerisinde kapasite yazıyor.
+
+776
+02:05:54,152 --> 02:05:55,992
+Burada 30 dedim geçtim.
+
+777
+02:05:56,471 --> 02:05:59,652
+Şimdi normalde böyle bir şey yapmak pek güzel değil.
+
+778
+02:05:59,652 --> 02:06:03,132
+Yani 30 niye 40 değil, niye 25 değil?
+
+779
+02:06:03,572 --> 02:06:15,311
+Veyahut da buraya acaba bir üçüncü üye alan olarak işte private int galeri kapasiti eşittir 30 deseydim daha doğru olmaz mıydı?
+
+780
+02:06:16,712 --> 02:06:16,891
+Şimdi.
+
+781
+02:06:18,387 --> 02:06:34,507
+Java'da buna yapmamızın çok bir sıkıntısı yok. Çünkü birincisi, zaten siz burada ellerini yazmış olursanız olun, istiyorsanız, gerekiyorsa herhangi bir anda işte class.length diyerekten o sayıya erişebilirsiniz.
+
+782
+02:06:34,507 --> 02:06:46,387
+Öbür türlü her yerde bu oturtu sadece kodla bir tek yerde geçiyor da olacak. Yoksa hani dizideki her elemanı işlemek falan gibi işler için zaten length'i kadar...
+
+783
+02:06:46,387 --> 02:07:02,747
+Bu kadar değil de araba sayısı kaç taneyse o kadar kerefor döngüsünü döndüreceğiz. Yani bu uzunluğa, sayıya, kapasiteye başka bir yerde 30 rakım geçmeyecek. Göreceksiniz. O nedenle bu ilk anda bir default kapasite olarak buraya gelebilir.
+
+784
+02:07:02,747 --> 02:07:12,907
+Veyahut da belki de üçüncü parametre olaraktan Galerian'in ilk kapasitesi diye belki bunu ilk parametre olarak verselik daha da şık olurdu belki.
+
+785
+02:07:14,387 --> 02:07:34,287
+Bu aşamada bir sakıncası yok. Siz de sınavlarda böyle bir şey yaparsanız ben bir sakınca görmüyorum bundan. Kaldı ki aslında değişken kapasitesi ve veri yapıları kullanıyor olacağız. Madem elimizde böyle bir yetenek var ama daha henüz kullanmayı öğrenmedik. İlerleyen haftalarda öğreneceğiz orada.
+
+786
+02:07:36,051 --> 02:07:46,152
+Galerad için getter setter metodu, introduce self metoduna baktığım ise, işte bu bir araç galerisidir, adı da şudur, sahibi de adı şudur.
+
+787
+02:07:46,152 --> 02:07:54,311
+Ve şu an burada işte şu kadar araç satılacak makro üzeri bekliyor gibisinden mesajımı oluşturuyorum.
+
+788
+02:07:55,311 --> 02:07:56,692
+Ve devam ediyorum.
+
+789
+02:07:57,551 --> 02:08:01,331
+Şimdi add car metodunu bir kodlayalım, bakalım.
+
+790
+02:08:02,003 --> 02:08:04,043
+Şimdi
+
+791
+02:08:04,043 --> 02:08:06,403
+mesela bakın
+
+792
+02:08:06,403 --> 02:08:07,304
+geldik burada.
+
+793
+02:08:09,427 --> 02:08:37,427
+Şimdi araba ekleyeceğiz. Diyelim ki diziye araba ekleyeceğiz. Öncelikle bir kere bir bakalım. Yani o araba zaten acaba dizide var mı yok mu? Varsa tekrar eklemeyelim. Hatta aslında ben burada dediğim için not, sol, çıkar, ekar. Yani parametre olarak araba nesnesini vermişim. Aynı araba tekrar gariye eklenmesin diye. Hani belki burada şey versiyonunu değil de parametre olarak...
+
+794
+02:08:37,427 --> 02:08:59,427
+olarak kar nesnesi alan versiyonu değil de plakayı alan versiyonu çağırsan belki daha doğru olurdu. Onu tartışırız. Bütün kodu konuştuktan sonra. Bu durumda, bu arada şey yapıyorum şimdi. Şimdi iki türden gidebilirsiniz. Eğer her şey yolundaysa...
+
+795
+02:09:00,000 --> 02:09:04,319
+Arabayı ekle ve true döndür, abstract, de false döndür de diyebilirsiniz.
+
+796
+02:09:04,839 --> 02:09:15,420
+Veyahut da önce olumsuz herhangi bir koşullarsa onun kontrolünü yapıp onunla false döndür, abstract, de işte aracı ekle ve true döndür şeklinde kodu yazabilirsiniz.
+
+797
+02:09:15,819 --> 02:09:18,460
+Size kalmış. Hangi sırada yapacağınız bu hiç önemli değil.
+
+798
+02:09:18,880 --> 02:09:21,179
+Yeter ki doğru bir sonuca ulaşın.
+
+799
+02:09:22,100 --> 02:09:33,100
+Buradaki örnekle işte eğer araba zaten yoksa ve dizide arabayı ekleyecek yerim varsa o zaman arabayı ekle.
+
+800
+02:09:33,659 --> 02:09:37,439
+Veri true'u döndük, aksi taktirde false döndük şeklinde yazmışım kodu.
+
+801
+02:09:38,319 --> 02:09:50,800
+Şimdi, dizide yeri bu olmadığında şöyle bakacağız. Şu an o dizide veya galeride, şu an ikisi de ayrı kapıya çıkıyor. Kaç araba var? Cal-contre yaşında tutuyorduk. Dizimizin kapasitesi de belli.
+
+802
+02:09:50,800 --> 02:10:00,000
+Eğer araba sayısı da dizinin kapasitesinden küçükse, o zaman yer var demektir. Ekleyeceğiz. Araba dizisinin şu anki en...
+
+803
+02:10:00,180 --> 02:10:02,880
+indisini tuttuğumuz yerine parma nesnisi ekleyeceğiz.
+
+804
+02:10:03,199 --> 02:10:06,520
+Araba sırısını bir hatırlamayı unutmayalım ve return tool diyelim.
+
+805
+02:10:06,820 --> 02:10:07,340
+Olay bitsin.
+
+806
+02:10:08,000 --> 02:10:12,460
+Yok, obür tool aksi taktirde return force olacak ve iş bitecek.
+
+807
+02:10:14,836 --> 02:10:31,836
+Öte yandan bakalım. Evet, bu şekilde öğrenebiliriz demiştim. Az önce geçiyor. Unutmamışım aslında ya. Yani şu bak burada söyleyecekmişim bunu zaten. Ondan sonra cema. Ama unutmayın. Dizi nokta length dediğinizde o anda dizideki olan eleman sayısını değil, dizinin kapasitesini dondurmaktadır.
+
+808
+02:10:33,203 --> 02:11:00,903
+O yüzden aslında işte bu 30 diye bir rakam attık. Max K diye bir üyalama ihtiyacımız yok ama öyle de yapabilirdik. İsterseniz böyle bir şeyler de olabilirdi. Peki, o zaman sadece şimdi o yorumun, şurada bir yorumum vardı, o yorumun yerine getirmişim ama simili unutmuşum. O yüzden arada bir şunları ekledim falan filan. Ama yani bir şeyin ikiye tekrar almasında bir sıkıntı var mı?
+
+809
+02:11:01,203 --> 02:11:02,783
+Yok, hayır, tamam.
+
+810
+02:11:03,384 --> 02:11:05,104
+Düşün, belki sizin, belki sizin.
+
+811
+02:11:06,304 --> 02:11:06,703
+Peki.
+
+812
+02:11:13,427 --> 02:11:17,847
+İşte, bir bakayım.
+
+813
+02:11:19,947 --> 02:11:21,887
+Tamam dedi, sonraki yansıtlardan basıyorum.
+
+814
+02:11:21,987 --> 02:11:23,027
+Yazmışım, yazmışım.
+
+815
+02:11:23,027 --> 02:11:23,487
+Evet, tamam.
+
+816
+02:11:23,587 --> 02:11:23,947
+Peki hala.
+
+817
+02:11:24,347 --> 02:11:25,587
+Peki niye bunu da yazmışım ki?
+
+818
+02:11:25,667 --> 02:11:27,228
+Başka şunlar da olabilir falan filan.
+
+819
+02:11:28,228 --> 02:11:30,967
+Edkar, Selkaz, Nokar.
+
+820
+02:11:31,127 --> 02:11:31,728
+Peki, tamam.
+
+821
+02:11:31,907 --> 02:11:32,127
+Peki.
+
+822
+02:11:32,847 --> 02:11:35,427
+Bunu niye şimdi en sonuna koymamışım?
+
+823
+02:11:35,527 --> 02:11:36,987
+Ha, Yaryok diye mi koymamışım?
+
+824
+02:11:37,467 --> 02:11:38,207
+Peki, tamam.
+
+825
+02:11:39,604 --> 02:11:41,224
+Bu da bile çok şık olmamış.
+
+826
+02:11:42,283 --> 02:11:48,344
+Yani hepsini yaptıktan sonra bu örneği şöyle geliştirebilirsiniz falan demek daha doğru haliyle.
+
+827
+02:11:49,483 --> 02:11:51,043
+Neyse, bakacağız şimdi.
+
+828
+02:11:52,403 --> 02:11:54,963
+Sayfanın sırasında çok değiştirmeyeyim ama.
+
+829
+02:11:55,644 --> 02:11:55,884
+Neyse.
+
+830
+02:11:57,884 --> 02:11:59,884
+Nasıl tarif edeceğimi bilemiyorum.
+
+831
+02:12:00,463 --> 02:12:01,743
+Şuraya bir not ekleyeyim.
+
+832
+02:12:01,743 --> 02:12:04,963
+Diyeyim ki, pardon gözden geçir.
+
+833
+02:12:05,203 --> 02:12:06,203
+Yine açıklama.
+
+834
+02:12:11,060 --> 02:12:12,340
+Aslında şey.
+
+835
+02:12:13,844 --> 02:12:39,243
+Tamam, peki. Şimdi demişim ki önce isterseniz siz kendiniz kodlamaya çalışın demişim. Peki, bunu yapabilirsiniz isterseniz. Çünkü aslında gördünüz ve söylemiş de olduk. Yani dizilerle ilgili işlem yapmayı gayet iyi biliyorsunuz aslında. Kaç dönemde aldığınız derslerde bunları yaptınız. Şu an sadece dizinin elemanları ilkel diye de nesneler olacak. Onlarla işlemleri çok rahatlıkla yapabilirsiniz.
+
+836
+02:12:41,332 --> 02:12:53,652
+Onun dışında şunu da bir onunla bağdaşlarak yazarsam o zaman az önce bahsettiğim eleştirimi geri almış olabilirim.
+
+837
+02:12:59,956 --> 02:13:00,476
+Şuraya.
+
+838
+02:13:07,988 --> 02:13:09,588
+Slide falan dersam.
+
+839
+02:13:10,988 --> 02:13:14,468
+Ama o zaman da şunu biraz ilginç oluyor.
+
+840
+02:13:15,068 --> 02:13:16,568
+Şöyle bir şey yaparsam.
+
+841
+02:13:17,208 --> 02:13:20,028
+O zaman da bunu ilginç oluyor.
+
+842
+02:13:20,028 --> 02:13:22,228
+Ama şöyle yapabilirim en azından.
+
+843
+02:13:25,347 --> 02:13:26,888
+Şimdi daha iyi oldu.
+
+844
+02:13:29,235 --> 02:13:49,456
+Evet, pekala. Bu yansıya geçmiştik. Geldik bu noktaya. Bu length olayından bahsettik. Car count'a ihtiyacımız var mı, yok mu, niçin var, niçin olabiliriz onları tartıştık. Bir max capacity gibisinden max car veya max capacity bunu zaten tartıştık az önce. Tamam, hepsini tartışmış olduk.
+
+845
+02:13:50,931 --> 02:13:54,832
+Şimdi sonraki yansılarda işte ne yapacağız?
+
+846
+02:13:59,828 --> 02:14:27,028
+Tamam, search card burada tamam. Evet, yapacağız. Şimdi search card'ı bir sonraki yansıda kodlayacağız. Onu söylemek istiyorum. Peki, başka neler yapabileceğiz? Belki bir aracı satmak söz konusu olabilir. Onu ileriki yansıra da yok ama siz bir egzersiz olarak yapabilirsiniz. Birlikte de yapabiliriz. Bakacağım şimdi diğer gruplerde biz neredeyiz falan. Ona göre karar vereceğim bunlara.
+
+847
+02:14:27,828 --> 02:14:31,228
+Tabii ki o sonraki ders olacak herhalde. Şimdi onu bir tamamlayalım.
+
+848
+02:14:31,228 --> 02:14:42,288
+Ve yine son olarak bu satma işleminde acaba bu sefer parasal durumları devreye alacaksak acaba nasıl bir tasarım yapmalıyız?
+
+849
+02:14:42,608 --> 02:14:49,847
+Onu bir söyleyeyim. Ama ipucu vereyim size. İsterseniz öncelik, önceden, şimdiden.
+
+850
+02:14:55,828 --> 02:15:04,828
+Şu tasarımınızda bir kere para işine kadar devreye alacaksınız. Birincisi, bir aracın fiyatı olacak tabii ki.
+
+851
+02:15:05,216 --> 02:15:15,195
+Galerinde bir bütçesi olacak tabii ki. Galeriye araba ekleneceği zaman o araba galeri tarafından aslında satın alınmış olacak.
+
+852
+02:15:15,736 --> 02:15:21,296
+Aracın alış, ha bir de aslında bir aracın alış maliyeti olacak. Satış maliyeti olacak. Ondan sonra acaba.
+
+853
+02:15:22,076 --> 02:15:29,796
+Galeriye araba ekleneceği zaman aracın alış maliyetini galerinin bütçesinden düşürmek zorundayız.
+
+854
+02:15:30,096 --> 02:15:33,216
+Galerinin zaten o kadar bütçesi yoksa da zaten bu işlem...
+
+855
+02:15:33,216 --> 02:15:39,336
+O zaman etkar metodunu tutarlık kontrolleri konusuna bir kez daha ekleyeceğiz.
+
+856
+02:15:40,516 --> 02:15:45,155
+Galeri yeterli parada varsa ancak ekle diziye diyebileceğiz mesela.
+
+857
+02:15:45,736 --> 02:15:53,056
+Ve aracı satarken de galerinin bütçesini aracın satış fiyatı kadar arttıracağız.
+
+858
+02:15:53,476 --> 02:15:56,856
+Peki bu arada kişilerin de bir bütçesini düşünelim mi?
+
+859
+02:15:57,460 --> 02:16:11,260
+Katıp katmamak size kalmış. İsterseniz person.to yani person sınıfına bir ne bileyim bütçe ya da balance şeyini ekleyebilirsiniz, üyalanına ekleyebilirsiniz, funds falan gibi.
+
+860
+02:16:11,819 --> 02:16:23,979
+Veya belki daha doğrusu şu da olabilir. Hem person'ın hem belki galerinin bir ne bileyim bank account veyahut da ne bileyim işte gibi bir şeyleri devleyebilebilir.
+
+861
+02:16:25,460 --> 02:16:34,399
+örneği daha da fazla kalmaçlıklaştırabiliriz. Şimdi nakit para söz konusu olabiliriz. Ne bileyim, banka hesapları söz konusu olabilir.
+
+862
+02:16:34,399 --> 02:16:52,319
+Ya belki bir cüzdan diye düşünüyorsunuz. Cüzdan diye bir sınıfı sınıfı olur. Hem person'ın da bir cüzdan üyesi olur. Belki galerinin cüzdan üyesi olabilir veya galerinin sahibinin cüzdanını şey olarak galerinin bütçesi olarak değerlendirebilirsiniz.
+
+863
+02:16:53,459 --> 02:17:05,739
+Farklı farklı tasarım örnekleri. Bunların değişik şekillerini kendiniz düşünüp, kodlamaya çalışıp yaparsanız bu da güzel bir alıştırma olur sizler için diye söyleyeyim.
+
+864
+02:17:07,799 --> 02:17:11,399
+Evet, pekala. Buna baktık, buna baktık.
+
+865
+02:17:12,211 --> 02:17:14,092
+Gelelim şimdi search car metoduna.
+
+866
+02:17:14,572 --> 02:17:19,092
+İşte parametre olarak bir car nesnesi alan versiyonu bu.
+
+867
+02:17:19,412 --> 02:17:20,311
+Diğerlerini kodlayacağız.
+
+868
+02:17:20,851 --> 02:17:22,231
+Plaka alanı da kodlayacağız.
+
+869
+02:17:22,592 --> 02:17:24,171
+Parametre olarak car nesnesini alıyor.
+
+870
+02:17:24,691 --> 02:17:25,551
+Search car metodu.
+
+871
+02:17:25,731 --> 02:17:27,752
+Geriye işte true ya da false döndülecek.
+
+872
+02:17:28,331 --> 02:17:30,211
+Şimdi şuradaki for döngüsüne bir dikkat edin.
+
+873
+02:17:30,612 --> 02:17:32,211
+Bu değişik bir notasyon.
+
+874
+02:17:33,171 --> 02:17:35,531
+Aslında belki öncesiniz şunu gösterebiliyorum.
+
+875
+02:17:35,531 --> 02:17:37,551
+Sonra bunu konuşsam daha doğru olur.
+
+876
+02:17:37,952 --> 02:17:39,391
+Arttaki search car metodu.
+
+877
+02:17:40,211 --> 02:17:46,791
+parametre olarak plakayı alan, oradaki for döngüsü, normal bildiğimiz for döngüsü, işte
+
+878
+02:17:49,075 --> 02:18:15,715
+değişkeni sıfırdan araba sayısına kadar birer birer arttır. Dizideki her arama bak, class dizisinin iyinci elemanı, ki bu bir kar nesnesidir. O yüzden nokta deyip bir kar nesnesinin nasıl az önce Honda'ymış, doğrulmuş tek tarih nesnesinin metodunu çağırdık. Denizler şekilde nokta deyip bir kar metodu çalıştırabiliriz. Plakasını al ve bunu karşılaştır. Şu parametre olarak gelen plakayla karşılaştır.
+
+879
+02:18:17,075 --> 02:18:24,175
+Fır çıkarsa o zaman o dizideki o şu an baktığın araba nesnesini geri döndürür diyorum.
+
+880
+02:18:24,475 --> 02:18:27,815
+Ve o dönüşünden de çıkıp metot geri dönmüş olacak.
+
+881
+02:18:28,615 --> 02:18:37,175
+Veya eğer dizinin sonuna geldim, hala bir şey geri döndürmüş olamadım, o zaman da null döndürsün şeklinde söyleyebilirim.
+
+882
+02:18:37,995 --> 02:18:44,475
+Keza bu arada aslında belki de şunu compare to yerine equals metoduyla da kodlayabiliriz.
+
+883
+02:18:44,675 --> 02:18:45,075
+Bu birinci.
+
+884
+02:18:45,075 --> 02:19:01,075
+İkincisi, belki, şimdi plakada araç plakası büyük harfler yazılı ama kullanıcı acaba küçük harfleri de vermiş olabilir plakasını. O zaman belki burada compare to ignore case deseydim daha iyi olabilirdi belki.
+
+885
+02:19:03,075 --> 02:19:05,955
+Veya equals ignore case diyebilirdim mesela.
+
+886
+02:19:11,507 --> 02:19:13,067
+Böyle olabilirdi mesela.
+
+887
+02:19:17,067 --> 02:19:18,507
+Onun dışında...
+
+888
+02:19:18,675 --> 02:19:21,695
+Evet zaten onlara döktüm, search kavramatodum işte burada.
+
+889
+02:19:22,175 --> 02:19:24,935
+Ha şimdi gelelim eski yani yeni versiyonuna.
+
+890
+02:19:24,935 --> 02:19:35,935
+Şimdi şuradaki alttaki search kavramatodumdaki for döngüsü, klasik for döngüsü, bunu yukarıdaki şekilde de Java deninde yazabiliyoruz.
+
+891
+02:19:36,855 --> 02:19:38,855
+Şimdi for diyorum, parantez içerisinde.
+
+892
+02:19:40,355 --> 02:19:44,396
+Şimdi normalde klasik forda ne yapıyorum? Bir indeks değişkeni mi oluyor?
+
+893
+02:19:46,675 --> 02:19:50,236
+Oradaki araba nesnesinin metodunu çağırmış oluyorum.
+
+894
+02:19:50,236 --> 02:19:59,876
+Bu notasyon yerine diyorum ki ben bu fordörlüsünün iş aslında indeks değişkeni değil de bu dizide dolaşmak üzere kullanacağım bir geçici nesne tanımlıyorum.
+
+895
+02:19:59,995 --> 02:20:03,495
+Cartoon'dan adı küçük c ile car olan bir geçici nesne.
+
+896
+02:20:04,115 --> 02:20:06,635
+İlk nokta üst üste koyuyorum ve dizinin adını yazıyorum.
+
+897
+02:20:07,443 --> 02:20:13,963
+Bu dizi eğer bu tanımladığım geçiş nesneyle aynı türden olmazsa zaten değerleme hatası verecek.
+
+898
+02:20:14,224 --> 02:20:21,824
+Bu demek oluyor ki, bak kardeşim küçük C ile başlayan kar adlı büyük C ile başlayan kar sınıfından bir geçiş nesne oluşturdum.
+
+899
+02:20:22,144 --> 02:20:30,623
+Bu nesneyi for döngüsünün her iterasyonunda sıradaki elemanı gösterecek şekilde ilişkiyi kur demiş oluyorum.
+
+900
+02:20:30,623 --> 02:20:35,443
+O yüzden bu döngünün her iterasyonunda kar nesnesi...
+
+901
+02:20:35,443 --> 02:20:39,664
+Sıla ile Biffin'in sıfırıncı indeksindeki elemandan başlayarak da
+
+902
+02:20:40,724 --> 02:20:50,244
+Bütün elemanlar üzerinde dolaşarak sürekli o sıradaki nesneye atamış olacak kendisini.
+
+903
+02:20:50,244 --> 02:21:04,804
+Eğer şu an baktığım, dolaşmakta kullandığım kar nesnesinin dizide gösterdiği nesne parametre olarak gelen kar nesnesi eşitse o zaman tulu döndüreceğiz.
+
+904
+02:21:05,164 --> 02:21:08,263
+Evet, bu araç bizzat bu araç burada var.
+
+905
+02:21:08,724 --> 02:21:17,724
+Ama döngüden çıktım, aynı aracı bulamadım, o zaman false döndü şeklinde metodu kodlamışım.
+
+906
+02:21:19,904 --> 02:21:22,484
+Öte yandan şimdi bir şey söyleyeceğim.
+
+907
+02:21:23,123 --> 02:21:26,924
+Onu şu an bakmamız gerekli olabilir.
+
+908
+02:21:26,924 --> 02:21:35,064
+Onu bir bakacağım şimdi.
+
+909
+02:21:37,492 --> 02:21:41,772
+Peki, Zimul metoduna bakalım şimdi.
+
+910
+02:21:42,432 --> 02:21:45,311
+Diyelim ki bir aracı satacağız diyelim ki.
+
+911
+02:21:47,412 --> 02:21:51,492
+Satmak amacıyla, can satacağımız zaman ne yapacağız? Diziden silmemiz gerekiyor.
+
+912
+02:21:51,852 --> 02:22:01,992
+İşte belirli bir plakalı aracı diziden silmek ve sildiğimiz nesneyi de sonra metodu çağrına belki bir şekilde kullanır mı diye geri döndürme şeyim var.
+
+913
+02:22:01,992 --> 02:22:10,551
+Ne yapıyorum? İşte bu sefer yine classic 4 dönemüsünü kullanmışım. Kaç araba varsa o kadar elemana bakacağım.
+
+914
+02:22:13,396 --> 02:22:16,335
+Şimdi aslında burada search cover kullansaymışım daha iyi olurum işlemi.
+
+915
+02:22:16,335 --> 02:22:19,216
+Burada tekrar, hayır pardon özür dilerim.
+
+916
+02:22:20,436 --> 02:22:23,355
+Yani şimdi burada tekrar dizi içerisinde arama işlemi yapıyorum.
+
+917
+02:22:23,436 --> 02:22:24,515
+Tek tek elemanlara bakıyorum.
+
+918
+02:22:24,636 --> 02:22:25,536
+Aracın plakasını al.
+
+919
+02:22:26,076 --> 02:22:27,835
+Tekrar plakayla karşılaştır.
+
+920
+02:22:28,076 --> 02:22:29,976
+Bu sefer burada comparator kullanmışım mesela.
+
+921
+02:22:30,456 --> 02:22:31,675
+Ignorator'si de dememişim.
+
+922
+02:22:31,876 --> 02:22:35,195
+Daha evvel equals, ha pardon, comparator.
+
+923
+02:22:35,636 --> 02:23:03,636
+Daha önce komperördü kullanmıştım. Peki sıfıra eşitse yani iki aracın plakası eşitse o zaman şimdi diziden aradaki elemanı silmek biliyorsunuz çettefilli bir iş. Bunu yapabilmek için sileceğiniz elemanın bir sonraki indisindeki elemanı sileceğiniz elemanın gözüne aktarmanız gerekiyor. Böyle böyle sürekli sileceğiniz elemanın bir sağındaki elemanı.
+
+924
+02:23:03,636 --> 02:23:09,916
+Elemanı bir sola atama şeklinde böyle shuffle etmeniz gerekiyor, shift etmeniz gerekiyor.
+
+925
+02:23:09,916 --> 02:23:25,256
+Silincenk elemanın sağında kalan, daha yüksek indisi kalan elemanları ve en sonunda da en son aynı nesneden, aynı arabadan iki tane kalmasın dizinin sonunda diye en sondaki nesneyi de nala eşitlemeyi unutmayalım.
+
+926
+02:23:25,636 --> 02:23:31,556
+Ve artık galeriden de bir araba eksildiğini de göstermek üzere car count'u da bir eksiltmeyi unutmayalım.
+
+927
+02:23:31,636 --> 02:23:49,376
+Bu arada işte sileceğim elemanı da The Car diye bir geçici nesne içerisinde saklamışım. Metodun sonunda da onu döndürüyorum. Ama işte for döngüsünden çıktım. Hiçbir döndürecek araba bulamamışsam zaten o araba yok. O zaman null döndür şeklinde söylüyorum.
+
+928
+02:23:50,100 --> 02:24:04,600
+Şimdi aslında burada Remue Card'da şeyi kullansam, Search Card'ı kullansaydım daha doğru olabilirmiş. Niye aynı şeyi iki kere yapıyorum? Yani onu o şekilde düzeltelim lütfen. Öylesi daha mantıklı.
+
+929
+02:24:06,819 --> 02:24:16,100
+Öte yandan Serk'a bakalım. Arabayı satıyorum. Ama burada para işlerini diye almıyorum kesinlikle.
+
+930
+02:24:16,659 --> 02:24:20,659
+Şimdi öncelikle satılacak olan arabayı...
+
+931
+02:24:21,263 --> 02:24:49,243
+Vimokar metodunu kullanarak da bir dizden siliyorum. Eğer dizde öyle bir araba yoktuysa bu yüzden silememiş olma durumu da var. O yüzden bunun mal olmaması durumunda artık bu satılacak arabanın yeni sahibini atıma işlemini yapıyorum. Ondan sonra true döndürüyorum. Ama öbür türlü bu işlem başarısız false döndürüyorum. Bu şekilde gale sınıfının kodumu tamamlanmış.
+
+932
+02:24:49,263 --> 02:24:50,083
+Olabilir.
+
+933
+02:24:54,355 --> 02:24:58,236
+Başka ne diyebilirim? Burada başka bir söyleyecek bir şeyim yok.
+
+934
+02:24:59,995 --> 02:25:02,956
+Şimdi bunun bir testine bir bakalım bakalım.
+
+935
+02:25:04,396 --> 02:25:09,935
+Kod üstünden bakalım çünkü artık bundan sonra koşturup doğru çalıştığını da göstermek istiyorum size çünkü.
+
+936
+02:25:14,708 --> 02:25:15,708
+Şimdi...
+
+937
+02:25:16,564 --> 02:25:27,004
+K sınıfı değişmedi. Aynı karı kullanıyorum. Çift yönlü sahip ilişkisiyle. Person da değişmedi. Yine kar da çift yönlü sahip ilişkisi içerisinde kullanıyorum.
+
+938
+02:25:28,064 --> 02:25:44,304
+Ama gerçi şey yani az önceki ekstra tutarsız durumları kullandığım hali değil. Bir önceki daha limitli tutarsızlık, yani çaplar zaman işini daha limitli şekilde yapan olan versiyonunu kullanıyorum.
+
+939
+02:25:44,564 --> 02:25:47,263
+Sonra gelelim galeriye.
+
+940
+02:25:48,180 --> 02:26:02,520
+Galeri kodu aynı şeyde gördüğünüz gibi, yansılarda gördüğünüz gibi, add-car metodu var, iki tane search-car metodu var, ondan sonra rule-car metodu var, ilgili öteleme işlemini yapar falan filan.
+
+941
+02:26:04,440 --> 02:26:09,720
+Sel-car metodu hepsi şeylerde gördüğünüz gibi, yansılarda gördüğünüz gibi.
+
+942
+02:26:16,180 --> 02:26:17,340
+Denemeleri yapıyorum.
+
+943
+02:26:17,940 --> 02:26:22,299
+Yıkmayın metodunda önce bir tane galeri nesnesi tanımlıyorum ve ilklendiriyorum.
+
+944
+02:26:23,659 --> 02:26:24,920
+Sahibiyle birlikte.
+
+945
+02:26:25,683 --> 02:26:53,683
+Ondan sonra bir araba oluşturuyorum, BMW, plakası bu, sahibi yok. İkinci arabamı oluşturuyorum, Audi, plakası bu, sahibi yok. Ondan sonra galeriye ekliyorum ilk arabayı. Bunun başarılı olması lazım. Yani ilk başta 30 kapatitleri oluşuyor, o arabayı daha evvel eklememişim. Bunun başarılı olması lazım. Eğer başarılıysa o zaman ekleme işlemi başarılı ama aksi takdirde ekleme işlemi...
+
+946
+02:26:53,683 --> 02:26:54,463
+Başarısız.
+
+947
+02:26:55,123 --> 02:27:05,443
+Hep böyle o yüzden kodu da doğru yazmışsan eğer, galeri kodu mu filan, hep böyle bir operation succeeded filan demesini bekleyeceğim.
+
+948
+02:27:06,403 --> 02:27:08,403
+Sonra bu sefer audio ekliyorum.
+
+949
+02:27:09,323 --> 02:27:10,644
+Bunu da ekleyebilmiş olmalıyım.
+
+950
+02:27:11,123 --> 02:27:12,463
+Bunu tekrar testini yapmadım.
+
+951
+02:27:12,623 --> 02:27:17,403
+Yani birincisini ekledim, ikincisini de ekleyebilmiş mi diye tekrar yazmadım.
+
+952
+02:27:19,347 --> 02:27:33,508
+Ama sonra, daha sonra, şu eklediğim arabayı, Audi'yi mesela, yok şimdi, Audi'yi evet ilerlerde bir yerlerde silmeye çalışacağım.
+
+953
+02:27:33,508 --> 02:27:40,508
+Eğer bir kere başarı ekleyememişsen zaten silmede problem olacaktır diyebilirim.
+
+954
+02:27:43,123 --> 02:28:01,704
+Peki, evet, audio ekledim. Arabalarını kendini tanıtmasını istedim. Bu arada, bakayım bu arada, bu arada, ha, Galil sahibi bu dedim. Evet, peki. Sonra acaba şunu nerede diyorum.
+
+955
+02:28:08,051 --> 02:28:10,871
+Bir dakika, elucopulation succeeded veya failed, tamam.
+
+956
+02:28:11,292 --> 02:28:15,871
+O ekledim, ondan sonra, ha, peki, Galerinin kendini tanıtmasını sağladım.
+
+957
+02:28:16,371 --> 02:28:22,912
+Galerinin şu kadar, evet, 30K demeliydi, dur bir dakika, onu düzük tekrar çalıştırayım.
+
+958
+02:28:23,811 --> 02:28:27,092
+Aradayken bir test yapmıştım da, evet, aşağıya oldu.
+
+959
+02:28:28,332 --> 02:28:33,612
+Ve zaten de çalıştırmamıştım, bu oldukça daha evvelki bir çalışmadan kaynaklanan bir şeydi.
+
+960
+02:28:35,028 --> 02:29:02,808
+Peki, tamam, şimdi oldu. Şimdi BMW'yi ekledim, ekleminin başarılı olması lazım. Ben sonra Alvi'yi ekledim. Ondan sonra Galerinin kendisinin tanıtmasını sağladım. Burada satılacak iki araban var demeli. Eğer Alvi'nin eklenmesi zaten başarısız olmuşsa orada iki car, two car değil de one car derdi mesela. Veya belki three car derdi, ne bileyim iki araba eklemine rağmen. Ondan sonra acaba BMW'nin kendisinin tanıtmasını sağladım.
+
+961
+02:29:03,028 --> 02:29:23,587
+Burada BMW kendisini tanıtırken sahibin galeri sahibi olduğunu söyledi. Çünkü, şimdi çok konuşum kodu hatırlamıyorum, geri dönüp tekrar bakalım. Şu etkar metodunda, arabayı da galeriye eklemeden önce arabanın sahibini galeri sahibi olaraktan atama yapmışım.
+
+962
+02:29:23,587 --> 02:29:29,148
+PowerPoint'te de öyle mi demiştim? Bakayım şimdi hatırlayayım. Etkar, etkar.
+
+963
+02:29:30,036 --> 02:29:46,355
+Ha, orada dememişim. Tamam, pekala. O da olabilir, o da olabilir. Siz bilirsiniz. İkisinin de olabileceğini konuşmuştuk. Bari hangisini yapalım, hangisini tarih edersiniz? Onu da bir bakalım şuraya.
+
+964
+02:29:55,603 --> 02:29:57,323
+İlk yastan sonra unutmayalım.
+
+965
+02:30:04,703 --> 02:30:07,523
+Peki, tekrar koda dönmek istiyorum.
+
+966
+02:30:08,483 --> 02:30:09,723
+Main programa.
+
+967
+02:30:10,644 --> 02:30:14,343
+Peki, yani onu eklerseniz öyle çalışır, eklerseniz böyle çalışır.
+
+968
+02:30:14,423 --> 02:30:16,423
+İkisi de olabilir, ikisi de kabulümdür demiştik.
+
+969
+02:30:17,063 --> 02:30:18,475
+Ondan sonra galeride...
+
+970
+02:30:18,484 --> 02:30:37,123
+BMW aracını Nesne'nin kendisi olarak arıyorum. Bulabilmesi lazım. Başarılı. Bulamazsa da search başarısız diyecek. Ondan sonra, isterseniz son olarak şu plakasından aramayı dekodlamıştık. Onu da bir test edebiliriz. Neyse sonra. Bu sefer.
+
+971
+02:30:37,652 --> 02:31:05,652
+Ha, tamam. Peki. Şimdi Audi'yi sileceğim listeden. Plakasını alıp siliyorum. Neler kodlamıştım burada? Remove card'a, remove card'a. Plakalı olan var ama aracın kendisini silme metodu kodlamışım. Ona gerek yok. Search'te daha gerek olabilir hem plakayı verip arabaya ulaşmaya hem de Nesne'in kendisini verip, pardon. Search'te hem Nesne'in...
+
+972
+02:31:05,652 --> 02:31:15,432
+Hem kendisini verip arabaya ulaşmaya var mı diye hem de aracın plakasını verip aracın kendisine ulaşmaya ikisine ihtiyaç olabilir.
+
+973
+02:31:16,011 --> 02:31:25,051
+Hani ikisinin de bu şekilde yapılabileceğini de göstermiş olalım diye aynı zamanda Search Core'ı override etmiş, overload etmiş oldum.
+
+974
+02:31:25,051 --> 02:31:27,351
+Sözü deneyim overload deniyor bu işleme.
+
+975
+02:31:29,531 --> 02:31:31,051
+Sonra...
+
+976
+02:31:32,435 --> 02:31:59,975
+Tekrar gelelim. Peki. Silebilmişse başarı diyecek. Başarı demesini bekliyorum. Başarısız dememesini bekliyorum. Çünkü Audi'yi eklemiştim. Ondan sonra Audi'yi sildim. Sildikten sonra aramaya çalıştığımda da bu sefer bulamaması lazım. O yüzden tekrar Audi'yi aradığımda eğer aracın yani bu bana force döndürürse başarılı olarak bulamadı diyorum.
+
+977
+02:32:00,435 --> 02:32:12,295
+Stopulation is correct. Ama öbür türlü yani bu iş başarılı oldu ama başarılı olmaması gerekiyordu şeklinde test case eklemiş oldum.
+
+978
+02:32:12,295 --> 02:32:28,435
+Ve çalıştırdığımda ise işte gördüğünüz gibi mantıklı sonuçlar geliyor. Ekleme başarılı, galeride iki araç var. Araç sahibinde galeri sahibi arama başarılı, remove başarılı. Son operasyon.
+
+979
+02:32:28,435 --> 02:32:48,435
+Düzgün bir şekilde başarısız oldu şeklinde şeyimi aldım, çiftalarımı aldım. Her şey doğru yolunda gibi gözüküyor. Bir ufak tartışımını yaptık. Hani compare to yerine equals olabilir ve ignore case yapmak daha doğru olabilir falan. Hepsini konuştuk, tartıştık. Ama yine de...
+
+980
+02:32:48,479 --> 02:32:56,899
+Sizin kafanıza yatmayan ya da benim atlamış olduğum için kafanızda soru işareti oluşturan bir nokta var mı? Varsa lütfen konuşalım.
+
+981
+02:33:03,412 --> 02:33:04,871
+Sorarınızı bekliyorum arkadaşlar.
+
+982
+02:33:35,860 --> 02:33:39,119
+diğer grubun da nerede kaldığına bir bakıyorum.
+
+983
+02:33:44,979 --> 02:33:47,860
+Öbür gün hızlı. Peki.
+
+984
+02:34:09,172 --> 02:34:17,051
+Peki, soru gelmedi. O zaman, ben bakayım şimdi, ondan sonra ne var mı yok, bir onlara bakalım. Kalıtıma gideceğiz, kalıtıma haftaya gideceğiz.
+
+985
+02:34:18,112 --> 02:34:29,072
+Şeye baktığımda, haftaya yine önce, kalıtımı yine labda önce göreceksiniz. Neyse, ne yapalım, böyle olmuş oldu diyelim.
+
+986
+02:34:30,551 --> 02:34:31,172
+Onun dışında...
+
+987
+02:34:34,644 --> 02:34:38,004
+Neydim acaba? Dün ders yapar mıydım? Ama yok.
+
+988
+02:34:38,804 --> 02:34:42,923
+Diğer dönem projesi öğrenci görüşmelerine ayırıyordum. Yapamazdım zaten.
+
+989
+02:34:42,923 --> 02:34:47,884
+Peki.
+
+990
+02:34:49,747 --> 02:35:15,747
+O zaman bugünlük bu kadar diyorum arkadaşlar. Katılan ve bana özellikle futbol konusunda birçok şeyler öğreten arkadaşlarıma. Hepinize, herkese teşekkür ederim. Haftaya laboratuvar oturumumuz olacak. Yani ayın 14. de laboratuvar olacak. Inheritance abstract konularını uygulamada yine önce uygulamada görmüş olacaksınız. Sonra biz üstünden çiftlik iş geçmiş olacağız.
+
+991
+02:35:17,747 --> 02:35:22,747
+Hepinize kolay gelsin. Sağlıkla kalın, sağlıcakla kalın. Görüşmek üzere inşallah.
+
+992
+02:35:24,387 --> 02:35:29,427
+Bu arada bakalım, çatı soru. Sadece iyi günler dedikleri. Teşekkürler. Ben de teşekkür ederim arkadaşlar.
+
+993
+02:35:30,108 --> 02:35:34,288
+Görüşmek üzere, sağlıcakla kalın. Stop share diyelim ve bitirelim.

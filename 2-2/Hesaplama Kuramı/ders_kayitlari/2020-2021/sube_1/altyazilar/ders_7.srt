@@ -1,0 +1,3051 @@
+1
+00:02:11,731 --> 00:02:14,051
+Merhaba arkadaşlar. Günaydın hepinize.
+
+2
+00:02:17,683 --> 00:02:18,963
+Sesim geliyor mu?
+
+3
+00:02:24,144 --> 00:02:43,723
+Bugün saat 11.35-11.50 arasında kuyzimiz var. 15 tane soru sordum. 15 dakikalık bir kuyuz. Her bir soruya bir dakika var. Sorular çok basit. O yüzden süre yeterli.
+
+4
+00:02:45,075 --> 00:02:58,515
+Saat 11.30'da bugün dersimizi bitireceğim. 5 dakika size hazırlanma süresi. Sonra 5 dakika sonra da işte 11.35'te de sınavımız başlayacak. Kıyı sınavımız başlayacak.
+
+5
+00:03:00,695 --> 00:03:11,316
+Geçen haftalarda ne görmüştük? Regular expression'ları görmüştük, regular dilleri görmüştük, NFA, DFA görmüştük.
+
+6
+00:03:12,051 --> 00:03:22,551
+Şimdi bu derste context-free dilleri, yani bağımsız dilleri göreceğiz.
+
+7
+00:03:26,484 --> 00:03:33,783
+Yani context-free esasında bir bağlamsız derken bağlamlı, bir bağlamın olduğu dilleri göreceğiz.
+
+8
+00:03:33,783 --> 00:03:35,783
+Şimdi...
+
+9
+00:03:42,644 --> 00:04:05,903
+Yani, biraz bu ders çok önemli. Özellikle, yani bu birinci vize, tamam hani context-free diller yok ama ikinci vize ve finalde context-free diller çok önemli yer kaplayacak sorular arasında.
+
+10
+00:04:05,903 --> 00:04:07,364
+Okey.
+
+11
+00:04:08,979 --> 00:04:21,759
+Context-free languages, as we remember that we had the languages, regular languages. Regular language is a language which is recognized or accepted by NFA or DFA.
+
+12
+00:04:22,919 --> 00:04:33,399
+So regular languages has also regular expressions. You can express each regular language by an expression. As you see here,
+
+13
+00:04:33,875 --> 00:04:45,576
+A star and B star is the language that starts by symbols A and ends with symbol B.
+
+14
+00:04:46,415 --> 00:04:48,495
+So this is another one.
+
+15
+00:04:49,456 --> 00:04:52,815
+This is the other regular expression.
+
+16
+00:04:53,495 --> 00:04:59,035
+So for these regular expressions, we can design an NFA or DFA.
+
+17
+00:04:59,891 --> 00:05:25,891
+What about this language? As you see, this language is a context-free language. And this language is complex. And you cannot design an NFA or DFA to recognize, to accept this language. Because the resources in the machine are limited. For example, the memory is limited.
+
+18
+00:05:26,447 --> 00:05:49,036
+Bu, bu
+
+19
+00:05:49,108 --> 00:06:06,288
+So, these languages are called context-free languages. As you see that, there are some contexts, there are some patterns. The number of symbol A is equal to the number of symbol B.
+
+20
+00:06:06,867 --> 00:06:24,327
+So, what you need to do, first you have to recognize the symbol A's, and you have to recognize the symbol B's after symbol A's, and you have to also recognize that their number are equal.
+
+21
+00:06:24,327 --> 00:06:34,447
+So, you see that there is some context. The number of A is related to the number of B, and this is the context.
+
+22
+00:06:34,867 --> 00:06:52,708
+What about here in this context-free language? You see that the first, you are given a verb and the string, the first half is equal to the reverse of the second half.
+
+23
+00:06:53,055 --> 00:07:07,596
+So, here again, you have to recognize the verb, both verb, and you have to recognize the W string, and then there is a context between them.
+
+24
+00:07:07,596 --> 00:07:16,115
+This context is that W and the WR are the reverses of each other.
+
+25
+00:07:21,396 --> 00:07:31,456
+So, in this case, this language and this language cannot be expressed in terms of the regular expression.
+
+26
+00:07:31,656 --> 00:07:33,656
+So, they are not regular languages.
+
+27
+00:07:33,656 --> 00:07:36,616
+So, they are context-free languages.
+
+28
+00:07:39,436 --> 00:07:40,316
+Okay?
+
+29
+00:07:41,296 --> 00:07:44,656
+So, context-free languages, as you see that...
+
+30
+00:07:46,016 --> 00:07:49,176
+As you see that it has context-free grammars.
+
+31
+00:07:49,556 --> 00:07:50,036
+Okay, good.
+
+32
+00:07:50,716 --> 00:08:00,816
+And it has, when you context-free languages, in order to implement the context-free languages, I mean the machine, is called pushdown automata.
+
+33
+00:08:01,236 --> 00:08:05,176
+Pushdown automata recognizes the context-free languages.
+
+34
+00:08:05,956 --> 00:08:12,976
+Okay, context-free languages, we don't use regular expressions, we use context-free grammars.
+
+35
+00:08:13,492 --> 00:08:22,092
+And for context-free languages, we don't have NFA or DFA, but we have pushdown automata.
+
+36
+00:08:22,712 --> 00:08:30,312
+In the pushdown automata, each pushdown automata consists of two modules.
+
+37
+00:08:30,812 --> 00:08:34,192
+The first module is automaton. This is NFA and DFA.
+
+38
+00:08:34,192 --> 00:08:37,251
+The second module is this tag.
+
+39
+00:08:39,475 --> 00:08:53,375
+Context-free languages are recognized by pushdown automata, which is the combination of the NFA and DFA, which is the combination of NFA and STAC.
+
+40
+00:08:55,256 --> 00:08:57,415
+So, context-free grammars.
+
+41
+00:08:57,844 --> 00:09:10,443
+As you know that each language has grammar. For example, we are using the Turkish language for communication. So Turkish language has a grammar. English language has a grammar.
+
+42
+00:09:11,044 --> 00:09:19,844
+So grammar is very important because based on the grammar, you create the sentences for communication. What you want to express is to...
+
+43
+00:09:20,724 --> 00:09:47,756
+Bu, bu
+
+44
+00:09:47,764 --> 00:09:55,644
+ve bu grammer gibi, bu ekran, bu ekran, bu ekran, bu ekran, bu ekran, bu ekran, bu ekran, bu ekran, bu ekran ve ekran,
+
+45
+00:10:00,179 --> 00:10:25,919
+Artikel and the noun, like M is R or D, sorry, D is the art A and D or N, this is the article. And there are some noun and the predicate, these are the verb, like these are the verb. And the verb article may have this value like A and the D and the noun can have cat and the dog.
+
+46
+00:10:26,192 --> 00:10:28,751
+You see now, this is the grammar.
+
+47
+00:10:30,132 --> 00:10:33,951
+So based on this grammar, you can create the sentences.
+
+48
+00:10:34,812 --> 00:10:39,392
+For example, let us look at the deviation of the string, the dog walks.
+
+49
+00:10:39,392 --> 00:10:43,852
+The sentence has two parts.
+
+50
+00:10:44,672 --> 00:10:47,072
+You see, this is the implication.
+
+51
+00:10:47,932 --> 00:10:50,831
+Sentence implies noun phrase and the predicate.
+
+52
+00:10:51,283 --> 00:10:57,344
+And this implies noun phrase and the predicate turns to verb because of this rule.
+
+53
+00:10:59,583 --> 00:11:02,724
+Where predicate turns to verb.
+
+54
+00:11:03,703 --> 00:11:06,203
+So predicate turns to verb.
+
+55
+00:11:06,823 --> 00:11:17,224
+And then noun phrase, this implies that noun phrase turns to article and noun based on this.
+
+56
+00:11:18,196 --> 00:11:24,276
+Noun phrase turns to article and noun based on this grammar rule.
+
+57
+00:11:25,156 --> 00:11:30,076
+We write this and the article turns to the.
+
+58
+00:11:30,855 --> 00:11:41,755
+Okay, so this is the article may turn to a or the, but here it turns to the and the noun repeats.
+
+59
+00:11:41,755 --> 00:11:44,755
+And then the noun turns to...
+
+60
+00:11:45,268 --> 00:11:48,207
+Noun can turn to cat or dog.
+
+61
+00:11:49,148 --> 00:11:50,927
+So noun turn to dog.
+
+62
+00:11:51,427 --> 00:11:56,807
+And the verb, verb can or may turn to runs or slips.
+
+63
+00:11:57,707 --> 00:11:59,927
+And the verb turns to slips.
+
+64
+00:12:00,067 --> 00:12:04,927
+So as you see that using this grammar, look at this grammar.
+
+65
+00:12:05,707 --> 00:12:08,168
+One, two, three are rules.
+
+66
+00:12:08,168 --> 00:12:09,888
+And one, two.
+
+67
+00:12:10,355 --> 00:12:27,375
+And these are the terminals. So this is the total grammar. Okay. These are the rules, grammar rules. And these are the grammar terminals because they terminal. So for example, noun turns to cat, but cat cannot turn to anything else. So this is the last.
+
+68
+00:12:28,724 --> 00:12:34,043
+So, based on these rules, we generate this sentence, the dog sleeps.
+
+69
+00:12:34,704 --> 00:12:34,844
+Okay?
+
+70
+00:12:35,403 --> 00:12:40,183
+Deviation of stringHesaplama, a cat runs, is similarly.
+
+71
+00:12:40,923 --> 00:12:47,423
+You will follow up all the rules.
+
+72
+00:12:47,423 --> 00:12:56,283
+And based on the rules, the sentence will transform, will deviate to result a cat runs.
+
+73
+00:12:56,724 --> 00:13:18,204
+Okay, so this is the, based on the rules we obtain the eketrans. So you see that eketrans is a string. Okay. And the language of this grammar, this is the grammar, the language of this grammar, this. You see that? What is the language? Language is the set of the strings.
+
+74
+00:13:18,707 --> 00:13:42,728
+So, as you see that, this is the set of strings. A cat runs, a cat slips, the cat runs, the cat slips, a dog runs, a dog slips, the dog runs, the dog slips. So, how many to, there are eight strings. So, this, the size of this language is, the size of this language is eight, and this is the language. Is it?
+
+75
+00:13:43,604 --> 00:13:46,604
+Bu grammerin bir anlamda.
+
+76
+00:13:46,604 --> 00:13:51,604
+Bu gram regular değil mi?
+
+77
+00:13:56,851 --> 00:13:58,091
+Regular hocam.
+
+78
+00:13:59,651 --> 00:14:00,052
+Efendim?
+
+79
+00:14:00,891 --> 00:14:02,432
+Regular, çünkü sonlu.
+
+80
+00:14:02,871 --> 00:14:04,091
+Evet, regular.
+
+81
+00:14:04,312 --> 00:14:12,631
+As we said at the beginning that, one second, regular languages is a subset of context-free languages.
+
+82
+00:14:13,271 --> 00:14:14,451
+Okay, that is right.
+
+83
+00:14:15,052 --> 00:14:22,552
+So, for regular languages, we have regular expression, we have also context-free grammar.
+
+84
+00:14:23,155 --> 00:14:30,315
+So you can write context-free grammar for the regular languages, or you can give regular expressions.
+
+85
+00:14:30,835 --> 00:14:37,955
+But for all the context-free languages, we have grammar, but not regular expressions.
+
+86
+00:14:38,355 --> 00:14:40,695
+For example, for this, we don't have a regular expression.
+
+87
+00:14:41,415 --> 00:14:41,695
+Okay?
+
+88
+00:14:42,259 --> 00:14:52,939
+We don't have regular expression for all context-free languages, but we have a context-free grammar for all regular languages.
+
+89
+00:14:54,899 --> 00:15:04,419
+Okay, so as you see that the grammar help us to produce eight different sentence.
+
+90
+00:15:04,980 --> 00:15:25,800
+Okay? So, productions, as you see that, these are the productions or the rules, the sequence of, and also the, are the terminals. So, for example, noun, these are the variables, noun turn to cat. Okay? The noun is the variables, variables of the grammar.
+
+91
+00:15:26,320 --> 00:15:46,740
+And the cat, this cat, dog, runs, sleeps, these are the terminal. So sentence is a variable. So sentence variable turns into the concatenation of non-phrase variable and the predicate variable. So this is the concatenation, this part and this part concatenated. So non-phrase.
+
+92
+00:15:48,659 --> 00:16:13,179
+non-phrase will be, this variables will be terminated by a term, sequence of terminals. So this is, this is, this are the called productions or the rules. So for example, an example, you see that this is the grammar, this is the capital letter S is the variable.
+
+93
+00:16:14,451 --> 00:16:36,451
+And this variable turns to A as B, B is A and B are the symbols. So the, one second, here, or alphabet is A and B. Okay, so,
+
+94
+00:16:38,303 --> 00:16:44,063
+Epsilon is the terminals, and this is the empty string, as we know before.
+
+95
+00:16:49,427 --> 00:17:16,947
+So, we can look at the deviations. As you see that, these are the production rules. Let us deviate the A, B. So, variable S implies A, S, B. And here, now, we use this production. You see? From here to here, we use this production.
+
+96
+00:17:17,428 --> 00:17:41,428
+What we did, we substitute this production, we substitute variable S with this. So we obtained this one. And here, we use the second production rule. So variable S is substituted by this production, so epsilon. So we obtained AB. So this is the...
+
+97
+00:17:41,875 --> 00:17:51,275
+Deviation of AB string, so how you obtain like this, this is the deviation using the productions.
+
+98
+00:17:55,476 --> 00:17:59,476
+What about the deviation of double A and double B?
+
+99
+00:17:59,476 --> 00:18:00,476
+Okay.
+
+100
+00:18:00,476 --> 00:18:03,476
+So you see here,
+
+101
+00:18:03,476 --> 00:18:06,476
+variable S,
+
+102
+00:18:06,476 --> 00:18:08,476
+you use the first production,
+
+103
+00:18:08,476 --> 00:18:10,476
+you obtain this,
+
+104
+00:18:10,476 --> 00:18:12,476
+you use the first production again,
+
+105
+00:18:12,476 --> 00:18:13,476
+you obtain this,
+
+106
+00:18:13,476 --> 00:18:16,476
+and then you use the second production,
+
+107
+00:18:16,476 --> 00:18:17,476
+and you obtain this.
+
+108
+00:18:18,096 --> 00:18:43,996
+Okay. So at the end, you obtain this string, AA and the B. As you see that, you can deviate many other symbols. Look at this. So you start variable S, you obtain AAA and BBB. Or by the variable S, you can obtain AAA, BBB. So as you see that, this is the grammar.
+
+109
+00:18:44,528 --> 00:18:52,688
+And this grammar is the grammar of the language, this language.
+
+110
+00:18:53,248 --> 00:18:59,168
+So this language, as we know that this is not a regular language, but this is the grammar for this language.
+
+111
+00:18:59,168 --> 00:19:07,228
+So by using this grammar, you can create all those strings that are element of this language.
+
+112
+00:19:10,708 --> 00:19:27,708
+So, convenient notation, sometimes we use imply star. This is the imply symbol. So, imply star. Implied symbol means variable s may turn to.
+
+113
+00:19:28,243 --> 00:19:54,903
+AAA ve B. So, there are some sequence of productions. When you apply the sequence of productions, you will obtain this string out of this variable. So, this variable actually, this notation is used to simplify the, it takes so much time, it sometimes becomes very complex. Instead of this,
+
+114
+00:19:55,279 --> 00:20:14,159
+This notation is just used to show all these sequence of productions. Look at this. Variable S turns to A variable S B and like this and then you obtain triple A and triple B. Instead of this, we will use this.
+
+115
+00:20:18,516 --> 00:20:19,516
+Bir second.
+
+116
+00:20:22,316 --> 00:20:23,516
+İmpliyiz.
+
+117
+00:20:26,216 --> 00:20:31,516
+But the number, the sequence, there are many productions means this, okay?
+
+118
+00:20:36,372 --> 00:21:02,532
+And in general, when we write string W1, star implies, string WN means you have W1 implies, implies, implies, implies, at the end you reach the WN.
+
+119
+00:21:03,539 --> 00:21:11,180
+Okay, these are the many deviation states.
+
+120
+00:21:12,519 --> 00:21:16,839
+So trivially, we say that W implies star is W.
+
+121
+00:21:17,920 --> 00:21:20,620
+We can also say trivially.
+
+122
+00:21:21,039 --> 00:21:42,039
+So, this is also, in this case, the number of sequences is, you see the WW, the number of sequences is zero. The number of used production is zero. Oops, pardon.
+
+123
+00:21:45,364 --> 00:21:46,124
+Bu kez.
+
+124
+00:22:12,723 --> 00:22:38,963
+This is also trivalu correct. Okay. The number of user productions is zero. So example grammar. So these are the possible deviation deviations. So from variable s you get empty string, you can get a b or you can get triple a triple b. Okay.
+
+125
+00:22:41,268 --> 00:22:45,827
+So, this is the short notation. And any question?
+
+126
+00:22:48,948 --> 00:22:59,168
+Another convenient notation is you see that variable s turn to a variable s b, but also here variable s turns to empty string.
+
+127
+00:22:59,168 --> 00:23:05,548
+So, we combine these two, we combine these two production as one production rule.
+
+128
+00:23:05,887 --> 00:23:12,147
+You see that variable s may turn to a variable s p or empty string.
+
+129
+00:23:12,147 --> 00:23:17,747
+This vertical line means or.
+
+130
+00:23:18,167 --> 00:23:18,487
+Okay?
+
+131
+00:23:18,963 --> 00:23:36,203
+So, look at it here. There are two production rule. Article turns to A, article turns to D. So, we combine both as like this. So, you see the article variable may turn to A or D.
+
+132
+00:23:45,327 --> 00:24:12,076
+Bu birçok
+
+133
+00:24:12,243 --> 00:24:15,283
+Let us look at the grammar.
+
+134
+00:24:15,503 --> 00:24:22,624
+For example, all productions are, so all the productions here are in the form.
+
+135
+00:24:22,723 --> 00:24:28,283
+You see that variable as may turn to some strings or some, another string.
+
+136
+00:24:28,403 --> 00:24:30,783
+So these are the productions here.
+
+137
+00:24:31,783 --> 00:24:35,963
+And example, look at this example.
+
+138
+00:24:36,468 --> 00:25:00,988
+As you see that this grammar, when we write, what are the productions? Here there are two productions. One production is this. Look at this. Variable S may turn to A, may rival S P. So you see the first production. The second production, variable S may turn to epsilon. So this is the second production. So this is the set of the productions.
+
+139
+00:25:01,503 --> 00:25:28,463
+So it has two elements. Okay. So we did this. What about the start variable? Start variable is the here, as you see, that variable S. So this is S, similar. And what about the terminals? Terminals are A and B. Okay. A and B, these are the terminals. So based on the terminals, you define the alphabet. You see that? A and B.
+
+140
+00:25:28,915 --> 00:25:50,395
+And the Epsilon is empty string. It is not the element of the alphabet. And variables, you see only one variable. So it has one variable. You see, this is this variable set. So for this context-free grammar, this is the definition. Okay?
+
+141
+00:25:52,836 --> 00:25:54,496
+The language of grammar.
+
+142
+00:25:56,243 --> 00:26:20,103
+Here, for a grammar, G would start the variable S. So what is, how can I write the grammar? So W is such a string that you start by variable S and after many productions, rules, you reach the string such that
+
+143
+00:26:20,400 --> 00:26:44,844
+This string is a clean star opera is the element of the clean star operated of the terminals. As you see that this is the language of the grammar. Let me write, for example, the language of the grammar for this. One second.
+
+144
+00:26:46,516 --> 00:27:09,516
+So, this is the grammar or grammar. The language of the grammar is like this. W, such that you start by the variable S and you did many operations, you achieve many productions.
+
+145
+00:27:09,516 --> 00:27:13,156
+So, this is, and you reach W.
+
+146
+00:27:13,748 --> 00:27:20,508
+And the W is the element of A and B star.
+
+147
+00:27:23,188 --> 00:27:27,328
+Okay, this is the language of this grammar.
+
+148
+00:27:28,908 --> 00:27:31,088
+You can express like this.
+
+149
+00:27:35,220 --> 00:27:36,059
+Any question?
+
+150
+00:27:41,140 --> 00:27:47,500
+Okay, for example, context-free grammar is this.
+
+151
+00:27:48,840 --> 00:27:53,280
+The language of this context-free grammar, we can write also like this.
+
+152
+00:27:54,560 --> 00:28:07,600
+So, this grammar will yield to all the sequences of A power and B power and like this, LG.
+
+153
+00:28:10,516 --> 00:28:11,536
+Such that,
+
+154
+00:28:14,476 --> 00:28:23,036
+you start variable S, after many operations, you obtain A power N, B power N, such string.
+
+155
+00:28:24,236 --> 00:28:24,996
+And here,
+
+156
+00:28:26,676 --> 00:28:29,756
+N is greater than or equal to zero.
+
+157
+00:28:30,756 --> 00:28:34,116
+And this is enough.
+
+158
+00:28:35,616 --> 00:28:36,956
+And the W is
+
+159
+00:28:37,556 --> 00:28:38,655
+Element of
+
+160
+00:28:38,655 --> 00:28:42,735
+One second
+
+161
+00:28:48,115 --> 00:29:04,956
+I think I should write like this. W, this is equal to a power n, b power n, such that n is greater than zero, and the w is element of, of course, a and b, clean star.
+
+162
+00:29:05,587 --> 00:29:32,652
+Bu, bu
+
+163
+00:29:32,852 --> 00:29:40,372
+You obtain this string for any n greater than or equal to zero.
+
+164
+00:29:44,403 --> 00:29:52,164
+So context-free language, a language L is context-free if there is a context-free grammar like this.
+
+165
+00:29:52,164 --> 00:30:00,484
+Okay? Context-free language has context-free grammar. If the language has a context-free grammar, then that language is context-free.
+
+166
+00:30:01,284 --> 00:30:03,364
+So every con-regular languages...
+
+167
+00:30:12,084 --> 00:30:16,364
+Ağır,
+
+168
+00:30:38,132 --> 00:30:39,112
+Arnat.
+
+169
+00:30:47,700 --> 00:30:48,059
+Ok?
+
+170
+00:30:54,672 --> 00:31:19,372
+Ağır,
+
+171
+00:30:54,451 --> 00:30:59,132
+Bu nedenle, çünkü all regular languages have the grammar,
+
+172
+00:30:59,132 --> 00:31:03,491
+but all the context free languages have no regular expression.
+
+173
+00:31:05,491 --> 00:31:09,892
+So, this is another example, this is the example we continue.
+
+174
+00:31:09,892 --> 00:31:13,971
+This is a context free languages because it has the context free grammar
+
+175
+00:31:13,971 --> 00:31:15,892
+that generates this grammar.
+
+176
+00:31:17,172 --> 00:31:19,331
+You can generate this language L.
+
+177
+00:31:22,099 --> 00:31:37,000
+Another example, look at this example. You see that you have, you start variables. Let me do some trials. One second.
+
+178
+00:31:40,243 --> 00:31:48,483
+Okay, so you start by variable s and
+
+179
+00:31:53,940 --> 00:31:54,299
+Ok?
+
+180
+00:32:02,355 --> 00:32:08,596
+Aslında, burada, bu kadar produksiyon var. Burada, 3 produksiyon var.
+
+181
+00:32:16,307 --> 00:32:40,203
+Bu, bu
+
+182
+00:32:41,268 --> 00:32:44,928
+So, this is the representation in the here, as we said.
+
+183
+00:32:48,208 --> 00:32:53,848
+G, grammar, V, terminal, start state, end of productions.
+
+184
+00:32:58,548 --> 00:33:00,148
+This is the set.
+
+185
+00:33:02,488 --> 00:33:04,168
+These are the variables.
+
+186
+00:33:05,868 --> 00:33:08,188
+Terminals, A and B.
+
+187
+00:33:09,768 --> 00:33:11,807
+And the start state.
+
+188
+00:33:13,607 --> 00:33:16,067
+So the start variable and the productions.
+
+189
+00:33:28,211 --> 00:33:40,292
+Bu dağlamaz, bu dağlamaz, kontekst-free grammer, kontekst-free grammer, kontekst-free grammer, or the pumping, we will see later.
+
+190
+00:33:48,596 --> 00:33:54,096
+Ok, let us generate the sequences.
+
+191
+00:33:57,652 --> 00:34:13,152
+Let's say for example the variable s. So I substitute the variable s with like this. Now I substitute here. Variable s is substituted by let me I will put it here.
+
+192
+00:34:16,532 --> 00:34:18,072
+So, I will have
+
+193
+00:34:22,132 --> 00:34:26,372
+Here, I will put here, for example, let's say,
+
+194
+00:34:32,884 --> 00:34:37,264
+I will substitute symbol A, variable as symbol A.
+
+195
+00:34:37,963 --> 00:34:39,264
+So the result will...
+
+196
+00:34:43,443 --> 00:34:47,524
+Here I will substitute like this.
+
+197
+00:34:47,524 --> 00:34:51,983
+And here I will substitute epsilon empty string.
+
+198
+00:34:55,764 --> 00:34:56,444
+Dön.
+
+199
+00:35:00,563 --> 00:35:04,563
+ABA, ABA.
+
+200
+00:35:07,563 --> 00:35:08,563
+As you see that,
+
+201
+00:35:14,563 --> 00:35:17,563
+this part, let me use different colors,
+
+202
+00:35:19,563 --> 00:35:21,563
+this part and this part are same.
+
+203
+00:35:23,563 --> 00:35:24,563
+So this is the string.
+
+204
+00:35:24,563 --> 00:35:25,563
+So this is the,
+
+205
+00:35:26,931 --> 00:35:29,051
+Result, this is what we have.
+
+206
+00:35:29,652 --> 00:35:30,072
+Okay?
+
+207
+00:35:46,612 --> 00:36:01,231
+Or, let's say, let us do another deviation of string, move, one second.
+
+208
+00:36:08,532 --> 00:36:09,612
+Let me start.
+
+209
+00:36:35,092 --> 00:36:59,332
+Here, I obtained this one. As you see now, this part and this part are reversed. Like, this is the W, this is the W reverse. And also, this is W, and W reverse. Because reverse is itself equal in this case. So, this is the grammar.
+
+210
+00:37:01,172 --> 00:37:17,032
+This is the grammar of this one. The language such that W, W is a concatenation of two strings and the W is element of AB, clean star.
+
+211
+00:37:18,731 --> 00:37:25,211
+Space is not available. Okay. Where can I write? Okay, I can write here.
+
+212
+00:37:27,132 --> 00:37:28,132
+One second.
+
+213
+00:37:35,219 --> 00:37:55,319
+I will write the language, the language is like this, W, such that W is written as W and W reverse, and W and V is element of AB, clean star.
+
+214
+00:37:56,599 --> 00:37:59,500
+This is the language of this grammar.
+
+215
+00:38:01,076 --> 00:38:14,135
+Okay, you can look at, you can analyze the grammar and you can find some example strings and based on these example strings, you can write the language.
+
+216
+00:38:17,715 --> 00:38:27,255
+So here is another, for example, look at here, this is the language grammar.
+
+217
+00:38:28,175 --> 00:38:39,935
+For example, the number of, here an A means the number of A in the string is equal to the number of symbol B in string.
+
+218
+00:38:40,755 --> 00:39:02,935
+This NABW means the number of symbol A in string W is equal to the number of symbol B in string W is equal. So this is the language. So look at this language. So actually this language is used to describe the prefixes.
+
+219
+00:39:03,295 --> 00:39:12,055
+For example, you can choose A is the symbol, left parenthesis, and B is the symbol. So right parenthesis, if you choose.
+
+220
+00:39:12,416 --> 00:39:14,636
+So you can create these paranteses.
+
+221
+00:39:15,115 --> 00:39:16,596
+Şimdi burada şunu söylemek istiyorum.
+
+222
+00:39:16,716 --> 00:39:19,056
+Mesela bir yazılımda ne yapıyoruz?
+
+223
+00:39:19,195 --> 00:39:20,276
+İşte parantez açıyoruz.
+
+224
+00:39:20,456 --> 00:39:21,655
+Parantezi kapatmalıyız.
+
+225
+00:39:21,736 --> 00:39:27,376
+Mesela bir CD kod yazıyorsan, if that'ın açtığın parantez, onu kapatmalısın.
+
+226
+00:39:27,756 --> 00:39:29,516
+Ya da bir aritmetik işlemler yapıyorsun.
+
+227
+00:39:29,716 --> 00:39:31,596
+Açtığın parantez, onu kapatmalısın.
+
+228
+00:39:31,596 --> 00:39:36,416
+Ve açık parantez ya da kapanmamış parantez olmamalı.
+
+229
+00:39:36,776 --> 00:39:37,115
+Değil mi?
+
+230
+00:39:37,636 --> 00:39:38,776
+İşte bunun için ne olmalı?
+
+231
+00:39:38,896 --> 00:39:40,416
+Mesela bu sağdaki mesela.
+
+232
+00:39:40,416 --> 00:40:04,456
+Mesela açık parantez, sol parantez ve sağ parantezlerin sayısı ne olmalı? Eşit olmalı. Eğer eşitse bu dizi doğru bir dizidir. Mesela bir tane yazılım dili olsun, C programlama dili. İçindeki bütün karakterleri atın, sadece geriye parantezler kalsın. Parantezlerin ne olması lazım? Bu dil ailesine uygun olması lazım. Mesela bunu bu şekilde.
+
+233
+00:40:04,992 --> 00:40:13,452
+Ne yapabiliriz? Bunu gösterebiliriz. Bu şekilde bir dille gösterebiliriz. Sorusu olan var mı?
+
+234
+00:40:18,739 --> 00:40:20,179
+Deviation of trees.
+
+235
+00:40:20,659 --> 00:40:23,559
+So we have also the deviations.
+
+236
+00:40:24,259 --> 00:40:28,059
+Let us consider the following example here.
+
+237
+00:40:28,199 --> 00:40:29,579
+There are five productions.
+
+238
+00:40:30,179 --> 00:40:33,479
+First production, second, third, fourth, and the fifth.
+
+239
+00:40:33,899 --> 00:40:35,000
+These are the productions.
+
+240
+00:40:35,659 --> 00:40:39,000
+And based on these productions, we will deviate the...
+
+241
+00:40:39,795 --> 00:40:51,976
+String leftmost, we have two deviations of strings, leftmost deviation and rightmost deviation. In the leftmost deviation, you start by the left variable.
+
+242
+00:40:52,367 --> 00:41:12,027
+In the rightmost deviation, you start by the right variable. What I mean, this is the start state, sorry, this is the start variable. You see that the start variable is the concatenation of two variables, A and B. When you deviate a string, you will always use the left one.
+
+243
+00:41:12,980 --> 00:41:39,159
+So this is called leftmost deviations. If you use always the right variable, and this is called rightmost deviations. So let us look at the leftmost deviation of order string AWB. So variable S, you use this because this is the start variable. So the first production is AB. Okay, good.
+
+244
+00:41:39,572 --> 00:42:05,632
+And then you will deviate for, and you will deviate the strings from the last variables. Which one is left? The variable A is left. You will look at the productions for A, and then you choose this one. Okay? You choose the second rule because we are, we want to generate the A, B string from this production set.
+
+245
+00:42:06,036 --> 00:42:26,996
+So, we deviate the left one. So, A, A, A, B. Okay? So, now this is the left. Again, you look at here, which variable is the left? Is the left one? So, the variable A is the left one. So, here there are the productions. Okay?
+
+246
+00:42:27,539 --> 00:42:34,139
+Bu, bu, ikinci birçok oluşturdu.
+
+247
+00:42:34,139 --> 00:42:37,860
+Bu, bu, birçok var var.
+
+248
+00:42:39,552 --> 00:42:45,371
+In this case, variable B is the left, because there is only one variable, so it is the left.
+
+249
+00:42:45,371 --> 00:42:51,612
+So here I used production 4, I obtained this one.
+
+250
+00:42:52,052 --> 00:42:55,231
+Here again, which variable is the left one?
+
+251
+00:42:55,411 --> 00:42:59,971
+So variable B is the left one, because there is only one variable.
+
+252
+00:43:00,851 --> 00:43:04,672
+So I used the variable sort of production.
+
+253
+00:43:05,204 --> 00:43:21,963
+bu adıcı
+
+254
+00:43:22,003 --> 00:43:29,023
+We can generate these strings by using the rightmost deviations.
+
+255
+00:43:29,923 --> 00:43:32,043
+We start by the variable S.
+
+256
+00:43:32,503 --> 00:43:35,303
+Here we obtain this concatenation.
+
+257
+00:43:35,983 --> 00:43:40,063
+And we look at here which variable is the right one.
+
+258
+00:43:40,483 --> 00:43:42,263
+So variable B is the right one.
+
+259
+00:43:42,383 --> 00:43:46,483
+So I use production, this production.
+
+260
+00:43:47,699 --> 00:43:50,780
+And here, which variable is the right one?
+
+261
+00:43:51,300 --> 00:43:52,300
+Here again, B.
+
+262
+00:43:52,780 --> 00:43:54,559
+So I use this production.
+
+263
+00:43:54,800 --> 00:43:57,519
+So I obtained this result.
+
+264
+00:43:58,019 --> 00:44:00,199
+So which variable is the right one?
+
+265
+00:44:00,300 --> 00:44:02,440
+Of course, there is only one variable.
+
+266
+00:44:02,440 --> 00:44:05,860
+So the right one is absolutely A.
+
+267
+00:44:06,099 --> 00:44:09,619
+So here I use this production.
+
+268
+00:44:10,096 --> 00:44:28,795
+So, if there is only one, I will obtain this, there is only one variable. So, which variable is the right one? So, A, capital letter A is the variable. So, I use this production and I obtain it double A, B string.
+
+269
+00:44:29,331 --> 00:44:32,831
+Bu, bu, called rightmost deviation.
+
+270
+00:44:32,831 --> 00:44:35,991
+Rightmost deviation and leftmost deviation
+
+271
+00:44:35,991 --> 00:44:37,771
+should not be the same,
+
+272
+00:44:37,771 --> 00:44:39,991
+but yani...
+
+273
+00:44:40,148 --> 00:45:08,148
+Bazen, bazen bazen
+
+274
+00:45:08,148 --> 00:45:09,748
+So it changed.
+
+275
+00:45:09,748 --> 00:45:18,748
+But in many cases, rightmost deviation and the leftmost deviations are used to obtain the same string.
+
+276
+00:45:18,748 --> 00:45:20,388
+So this is also possible.
+
+277
+00:45:20,388 --> 00:45:22,388
+Sometimes they use the both.
+
+278
+00:45:22,388 --> 00:45:23,108
+Okay.
+
+279
+00:45:23,108 --> 00:45:28,628
+But generally, we should use leftmost derivation or the rightmost derivation.
+
+280
+00:45:28,628 --> 00:45:29,420
+Okay.
+
+281
+00:45:30,612 --> 00:45:42,632
+And consider some examples. These are the productions and the deviation of AWB. When you look at this deviation, is it rightmost deviation or the leftmost deviation?
+
+282
+00:45:43,852 --> 00:45:45,312
+When you look at this.
+
+283
+00:45:47,472 --> 00:45:50,092
+Leftmost or the rightmost? Which one?
+
+284
+00:46:01,876 --> 00:46:03,576
+Evet arkadaşlar, soru sorduk.
+
+285
+00:46:06,275 --> 00:46:12,175
+Is this deviation? Is rightmost or leftmost?
+
+286
+00:46:21,204 --> 00:46:24,103
+Evet, bu, leftmost deviyat.
+
+287
+00:46:25,103 --> 00:46:25,764
+Ok, good.
+
+288
+00:46:26,623 --> 00:46:30,403
+Deviyat 3, sometimes we also...
+
+289
+00:46:31,123 --> 00:46:52,123
+Show the deviations as three, for example, you see the variable S turns to concatenation of A and B, concatenation of variable N and B. You can show it as a three. So you see, variable S may turn to concatenation AB. Look at this level. When you look at here,
+
+290
+00:46:58,356 --> 00:46:59,576
+You look at here.
+
+291
+00:47:02,016 --> 00:47:03,536
+Okay, you look at here.
+
+292
+00:47:05,195 --> 00:47:06,316
+You look at here.
+
+293
+00:47:06,675 --> 00:47:07,516
+You see what?
+
+294
+00:47:08,256 --> 00:47:10,135
+You see the deviation.
+
+295
+00:47:11,476 --> 00:47:12,876
+You see the concatenation.
+
+296
+00:47:13,076 --> 00:47:14,776
+A and B concatenated.
+
+297
+00:47:15,216 --> 00:47:16,236
+Okay, at this level.
+
+298
+00:47:17,056 --> 00:47:22,096
+So, this is the level.
+
+299
+00:47:25,300 --> 00:47:27,940
+Level 1.
+
+300
+00:47:28,220 --> 00:47:29,740
+Okay, this is the first level.
+
+301
+00:47:33,040 --> 00:47:35,800
+So, look at now this deviation.
+
+302
+00:47:37,480 --> 00:47:42,760
+You see that the deviation, so this is the leftmost deviation.
+
+303
+00:47:43,400 --> 00:47:48,300
+You see, left 3 increases, the level increases at the left.
+
+304
+00:47:49,560 --> 00:47:52,640
+This is the level 1, this is level 2.
+
+305
+00:47:53,523 --> 00:47:54,083
+Okay?
+
+306
+00:47:57,203 --> 00:47:59,784
+And this is level still one.
+
+307
+00:47:59,884 --> 00:48:00,123
+Why?
+
+308
+00:48:00,223 --> 00:48:03,123
+Because we use the leftmost deviation.
+
+309
+00:48:03,864 --> 00:48:06,483
+So this is the tree for this deviation.
+
+310
+00:48:07,103 --> 00:48:07,723
+Look at here.
+
+311
+00:48:07,824 --> 00:48:08,763
+When you look at here,
+
+312
+00:48:13,780 --> 00:48:29,680
+These are the concatenation, you see? The bottom level are the concatenation. You see that A, A, variable A and the variable B are concatenated to yield this one.
+
+313
+00:48:36,019 --> 00:48:38,019
+Evet.
+
+314
+00:48:38,019 --> 00:48:44,019
+Şimdi, bu yukarıda, bu yukarıda,
+
+315
+00:48:44,019 --> 00:48:47,019
+ve şimdi,
+
+316
+00:48:47,019 --> 00:48:51,019
+yukarıda, yukarıda,
+
+317
+00:48:51,019 --> 00:48:52,019
+yukarıda,
+
+318
+00:48:52,019 --> 00:48:52,652
+tamam.
+
+319
+00:49:05,396 --> 00:49:08,476
+This is the rightmost deviation, you see?
+
+320
+00:49:09,936 --> 00:49:11,056
+You use this one.
+
+321
+00:49:12,176 --> 00:49:14,896
+So now their levels are same.
+
+322
+00:49:15,636 --> 00:49:15,996
+You see?
+
+323
+00:49:16,396 --> 00:49:25,516
+When you see that their levels are same, so you understand that leftmost deviation and the rightmost deviation are done together.
+
+324
+00:49:26,115 --> 00:49:26,356
+Okay?
+
+325
+00:49:26,816 --> 00:49:28,976
+So their levels are same.
+
+326
+00:49:29,236 --> 00:49:31,076
+One leftmost, one rightmost.
+
+327
+00:49:35,923 --> 00:49:48,923
+Again, now one leftmost deviation done. So the level on the left branch increases. So this is at the third level. And the right one still at two.
+
+328
+00:49:52,164 --> 00:49:59,923
+Now deviation. So now we have rightmost deviation. So now there...
+
+329
+00:50:01,043 --> 00:50:27,884
+Bu da aynı.
+
+330
+00:50:27,891 --> 00:50:39,351
+Dissapre, so this is the generation of double AB. This is the deviation parse tree to generate the string double AB. Okay.
+
+331
+00:50:41,971 --> 00:50:51,411
+This is very simple. Sometimes deviation order doesn't matter. So leftmost deviation and rightmost deviation give the same.
+
+332
+00:50:53,556 --> 00:50:55,556
+aynı devleti 3'ye veriyor.
+
+333
+00:51:01,940 --> 00:51:07,679
+Okay, leftmost deviation and rightmost deviation may sometimes give the same deviation tree.
+
+334
+00:51:09,960 --> 00:51:12,440
+And there is ambiguity.
+
+335
+00:51:13,380 --> 00:51:23,400
+For this ambiguity, I will, if they give the same tree and we have the ambiguity, ambiguity means
+
+336
+00:51:30,260 --> 00:51:33,180
+Bir second, bir örnek.
+
+337
+00:51:56,340 --> 00:52:02,620
+2x2, bu 4x2, bu 6x2.
+
+338
+00:52:02,620 --> 00:52:03,820
+Bu bir şey var.
+
+339
+00:52:25,012 --> 00:52:29,012
+Bu bir şey mi?
+
+340
+00:52:29,012 --> 00:52:33,012
+Evet, 10 minuten sonra
+
+341
+01:06:29,331 --> 01:06:31,172
+Evet arkadaşlar, devam edelim.
+
+342
+01:06:32,632 --> 01:06:38,791
+Şimdi şöyle, biraz bu kısımları Türkçe açıklayayım, bir arkadaşınıza mesaj da geldi.
+
+343
+01:06:39,851 --> 01:06:44,711
+Şöyle anlatalım arkadaşlar, iki türlü türetim var.
+
+344
+01:06:44,711 --> 01:06:52,031
+Yani değişkenleri kullanarak dizileri türetmeye çalışıyoruz.
+
+345
+01:06:52,371 --> 01:06:54,711
+Soldan türetim ve sağdan türetim.
+
+346
+01:06:55,023 --> 01:07:11,643
+Bazı ağaçlarda hem soldan türetim hem de sağdan türetim değişmeyebilir. Aynı stringi elde edebilirsiniz. Soldan ya da sağdan türetimi kullanarak aynı stringi üretebilirsiniz.
+
+347
+01:07:15,219 --> 01:07:26,819
+Gramerler olabilir ki, soldan türetebildiğiniz bir stringi, bir diziyi sağdan türetimle elde edemeyebilirsiniz. Buna dikkat edelim.
+
+348
+01:07:27,819 --> 01:07:42,159
+Şimdi ambiguity'ye başlayacağız. Ambiguity'de şöyle bir ifade var. Mesela şu ifadeye baktığımızda bir matematiksel expression'ları bu ifadeyle, bu gramerle ifade edebiliriz.
+
+349
+01:07:43,188 --> 01:08:04,947
+Bu E, büyük E harfi değişken olmaktan. İşte bu değişken ne oluyor? E artı E şeklinde bir diziye dönüştürülebilir. Bakın bu toplama işareti değil burası. Buradaki artı bir sembol. E değişkeni, sembol E değişkeni.
+
+350
+01:08:07,956 --> 01:08:32,136
+Sembol, yıldız işareti yani, yıldız işareti, E değişkeni. Ya da parantez, bu bildiğimiz parantez, matematiksel parantez değil, buradaki sembol. Sembol, E değişkeni, sembol veya A. Yani buradaki şey şu, yani bunlar bir, bu grameri kullanarak aşağıdaki diziyi üretiyorsunuz.
+
+351
+01:08:32,595 --> 01:08:40,595
+Bu bir dizi, matematiksel bir işlem değil. Şimdi burada açıklama yapmak istiyorum. Bazı arkadaşlarınız bu geçmiş senelerde...
+
+352
+01:08:41,300 --> 01:09:08,360
+Şimdi şunu görüyor, zannediyor ki buradakini toplama işareti, buradaki çarpma işareti, buradaki parantez, işte A'ya ben bir verirsem, bir artı bir eder iki, iki çarpı bir iki, artı işte buraya bir verirsem, iki çarpı bir, iki artı üç, iki artı üç, beş yapar. Bunun sonucu beştir gibi saçma sapan yorumlar yapan arkadaşlarınız olmuştu geçmiş senelerde abileriniz yani.
+
+353
+01:09:09,300 --> 01:09:34,020
+Bir şey yok. Biz burada dillerle uğraşıyoruz. Dil. Ne demekti dil? Diziler kümesine dil deniyordu. Değil mi? Diziler kümesine dil deniyor. Bu da dizilerden bir tanesi. Bu bir string. String dizisi. Parantez işaretlerinden, A harfinden, artı ve çarpma işaretlerinden oluşan bir dizi.
+
+354
+01:09:36,884 --> 01:09:38,064
+Soru falan var mı?
+
+355
+01:09:45,395 --> 01:10:01,895
+Arkadaşlar, sesim geliyor mu? Bakın, derse katılımınız olmazsa, vizeyi daha da zor yaparım. Bunu söyleyeyim yani. Bak, bu dersten geçemezsiniz. Derse katılım yapmak zorundasınız. Çünkü bu dersi siz işliyorsunuz. Ben sadece dersi anlatıyorum.
+
+356
+01:10:05,876 --> 01:10:10,136
+Hocam dinlemiyor değil mi? Dinliyor musunuz? Geliyor musunuz?
+
+357
+01:10:10,136 --> 01:10:11,956
+Dinliyor hocam, sesiniz geliyor, dinliyoruz yani.
+
+358
+01:10:12,136 --> 01:10:17,615
+Tamam, ama katılın da dersi. Bir soru sorunca cevap verin arkadaşlar, öyle tek başına olmaz yani bu işler.
+
+359
+01:10:18,976 --> 01:10:24,056
+Yani hocam bazen şey oluyor böyle, tereddütte kalıyorum, girsem mi, girmesem mi, yanlış söylüyorum falan.
+
+360
+01:10:24,056 --> 01:10:33,435
+Tereddütte kalma, direkt hemen söyle. Yani aklınızda bir tane soru oluşursa.
+
+361
+01:10:34,068 --> 01:10:55,908
+Hemen söyleyin, kalmasın. Anlamadığınız bir şey olursa hemen söyleyin. Aklınızda soru işaret olarak kalmasın. Sizin soracağınız bir soru bir diğer arkadaşınızın anlaymasını kolaylaştıracaktır. Belki de senin aklındaki o soru işareti başka arkadaşlarının aklında da var.
+
+362
+01:10:57,268 --> 01:11:11,207
+Dolayısıyla eğer sen soruna cevap bulduğunda diğer arkadaşların da buradan istifade edecek. Dolayısıyla yardımcı olmuş oluyorsunuz birbirinize. Soru sormak güzel bir şey. Sorgulayan olmak, sormak.
+
+363
+01:11:14,967 --> 01:11:23,987
+Bu kadar Türkçe konuştuktan sonra şunu demek istiyorum. Şu ifade bir dizidir. Bu matematiksel bir ifade değil.
+
+364
+01:11:24,351 --> 01:11:30,211
+Bir dizi, harflerden oluşan, bir dizi, sembollerden oluşan bir dizi.
+
+365
+01:11:30,431 --> 01:11:41,611
+Okay, this is the string and this string is, this string is, this string is generated by this grammar.
+
+366
+01:11:41,611 --> 01:11:46,192
+Okay, denotes any number, A denotes any number.
+
+367
+01:11:46,791 --> 01:11:51,611
+This is, by default, this is,
+
+368
+01:11:55,315 --> 01:11:58,296
+Ok, this is the string.
+
+369
+01:12:02,707 --> 01:12:28,387
+Okay, so using this string, you can do many algebraic operations. Look at now this one. This is the tree. For example, leftmost deviation for this string, leftmost deviation. So this is the variable A. You obtain lucidit plus. So you obtain A plus A because of this.
+
+370
+01:12:28,916 --> 01:12:50,515
+And you will do leftmost. Which variable is left here? This variable is left. So you will deviate on this variable. So you will, you see that after plus there is one letter A, so symbol A. So you will use this production. And now,
+
+371
+01:12:50,931 --> 01:13:08,931
+We have this, which variable is the left one? So this is the, there is only one variable. This is the left one. So you see that it has this one. So there is a star. So I use this production. So I obtain it here, this one. As you see that
+
+372
+01:13:09,363 --> 01:13:31,304
+Now, the number of variable is 2. Here, the number of variable is 1. Now, the number of variables is 2. Which one is the left one? This one. So, you deviate, you use this production, and you have this result. And on this one,
+
+373
+01:13:32,307 --> 01:13:34,028
+Bu birçok birçok birçok birçok.
+
+374
+01:13:34,028 --> 01:13:36,347
+Bu birçok birçok birçok.
+
+375
+01:13:36,347 --> 01:13:37,467
+Bu birçok birçok.
+
+376
+01:13:37,467 --> 01:13:39,028
+Ve buçok birçok.
+
+377
+01:13:39,028 --> 01:13:40,747
+Bu birçok birçok.
+
+378
+01:13:41,908 --> 01:13:48,188
+Bu birçok.
+
+379
+01:13:48,747 --> 01:13:54,068
+Ve buçok.
+
+380
+01:13:54,068 --> 01:13:55,788
+Çünkü bu birçok.
+
+381
+01:13:56,347 --> 01:13:59,427
+Bu birçok.
+
+382
+01:14:00,083 --> 01:14:06,984
+Darişen, you see this, this is the deviation two, this is the third deviation.
+
+383
+01:14:09,564 --> 01:14:24,683
+Sorry, this is the third deviation, and this is the other one, and this is the last. So these are the, you see the all the productions on this tree. In the exam, we may ask you to generate these trees, for example.
+
+384
+01:14:26,612 --> 01:14:27,852
+Hocam bir şey sorabilir miyim?
+
+385
+01:14:28,231 --> 01:14:28,492
+Evet.
+
+386
+01:14:29,252 --> 01:14:32,711
+Şimdi bu E artı E sembolü var ya, ikinci sıra.
+
+387
+01:14:33,211 --> 01:14:37,131
+Oradan sonra biz E'yi A'ya çektik direkt. A artı E şeklinde yazdık.
+
+388
+01:14:37,452 --> 01:14:37,731
+Evet.
+
+389
+01:14:37,872 --> 01:14:42,352
+Burada E çarpı E artı E şeklinde yazmakta A'ya bir yönelim yaptık.
+
+390
+01:14:43,131 --> 01:14:46,211
+Burada da o şekilde ilerleyemez miydik? Aradaki fark nedir?
+
+391
+01:14:47,432 --> 01:14:51,112
+Yani burada biz soldan türetim yapıyoruz her zaman.
+
+392
+01:14:51,711 --> 01:14:52,272
+Tamam.
+
+393
+01:14:52,752 --> 01:14:58,992
+Yani şimdi soldan türetim yaptığımız zaman şununla da başlayabiliriz değil mi? Sen onu demek istiyorsun.
+
+394
+01:14:59,092 --> 01:15:02,452
+Evet, evet. Yani bir tercih mi yoksa zorunluluk mu?
+
+395
+01:15:02,452 --> 01:15:08,572
+Hayır, hayır. Onu yapalım hadi beraber yapalım. Olur mu?
+
+396
+01:15:09,092 --> 01:15:09,652
+Olur hocam.
+
+397
+01:15:10,172 --> 01:15:13,592
+Şimdi şöyle ben bir grameri yazayım şuraya.
+
+398
+01:15:15,432 --> 01:15:16,152
+Bir saniye.
+
+399
+01:15:23,123 --> 01:15:42,243
+E dedik. E artı E. E yıldız E. Başka? Parantez içinde E. Bir de A. Bir de A. Şimdi şöyle yapabilirdik. E dedik. Şununla başlayabilirdik.
+
+400
+01:15:45,183 --> 01:15:49,203
+Şimdi ne yapacağız? Hep soldan gireceğiz. Çünkü soldan türetim yapıyoruz.
+
+401
+01:15:49,652 --> 01:16:14,291
+O zaman ne yapabiliriz buraya? E artı E, yıldız E olur. Değil mi? Bak, shoot production'ı kullandım. Sonra yine soldan gidiyorum. Bu sefer bir sonrakisi ne olacak? Şöyle yazayım. A artı E, yıldız E. Bir daha soldan gittim. A artı A, yıldız E.
+
+402
+01:16:15,028 --> 01:16:23,028
+Sana bir daha soldan gittim. A artı A, Yıldır D, A. Bu şekilde üretebiliriz.
+
+403
+01:16:24,427 --> 01:16:26,408
+Tamam, yani gene aynı sonucu elde etmiş olduk.
+
+404
+01:16:26,427 --> 01:16:28,167
+Gene aynı sonucu elde etmiş olduk. Evet.
+
+405
+01:16:28,888 --> 01:16:29,988
+Tamam, teşekkürler hocam.
+
+406
+01:16:30,268 --> 01:16:30,828
+Teşekkür ederim.
+
+407
+01:16:32,347 --> 01:16:41,167
+As you see that, we have the same string, okay, we have the same string, but different.
+
+408
+01:16:41,876 --> 01:16:42,876
+Deviations.
+
+409
+01:16:43,656 --> 01:16:44,036
+You see?
+
+410
+01:16:45,176 --> 01:16:49,156
+Actually, it means that different three.
+
+411
+01:16:49,536 --> 01:16:50,896
+Can we write its three?
+
+412
+01:16:51,896 --> 01:16:54,056
+So, we have A.
+
+413
+01:16:58,963 --> 01:17:02,023
+A star A, ok?
+
+414
+01:17:11,731 --> 01:17:12,971
+Evet, zorunluluk için.
+
+415
+01:17:28,307 --> 01:17:31,467
+H star A, sonuna,
+
+416
+01:17:43,796 --> 01:17:56,275
+Okay, this is the deviation three of this one. This is the three for this and this is three for this. One second.
+
+417
+01:18:04,659 --> 01:18:07,960
+Şu bir ekranı durdurup açmam gerek ya.
+
+418
+01:18:08,100 --> 01:18:08,619
+Bir saniye.
+
+419
+01:18:47,188 --> 01:18:57,507
+Arkadaşlar, as you see, this is another deviation already we did here.
+
+420
+01:18:58,327 --> 01:19:06,768
+So this string has two different trees.
+
+421
+01:19:07,208 --> 01:19:08,167
+Look at these trees.
+
+422
+01:19:09,228 --> 01:19:10,667
+And look at these trees.
+
+423
+01:19:12,048 --> 01:19:13,827
+These two trees are different.
+
+424
+01:19:14,804 --> 01:19:37,036
+Bu da aynı değişim
+
+425
+01:19:37,908 --> 01:19:45,948
+Programming languages, there should be always one tree to generate a certain string.
+
+426
+01:19:47,788 --> 01:19:54,148
+Yani bir dizi üretmek için her zaman ne olmak zorunda? Bir tane tree olmak zorunda.
+
+427
+01:19:55,268 --> 01:20:03,948
+Eğer birden fazla aynı dizi üreten ağaç varsa, yani birden fazla dediğim soldan türetimi kullanarak,
+
+428
+01:20:05,332 --> 01:20:28,051
+Aynı diziyi birden fazla üreten, pardon, aynı diziyi üreten birden fazla soldan türetimli ağaç var ise o zaman o gramer ne olmuş oluyor? Ambiguity olmuş oluyor. Yani ambiguity'nin tam Türkçe karşılığı nedir?
+
+429
+01:20:28,819 --> 01:20:54,600
+Bakmak lazım. Yani tam böyle belirsizlik, ikilemli, belirsizlik, belirsizlik var, bir ikilemlik var. Tamam mı? Ve bu da hesaplamalarda problem çıkartıyor. Örnek veriyorum, bir tane Java kodunuz var, yazdınız. Eğer Java kodunda ambiguity olsa, işte iki türlü doğru olabilir. Bu da doğru, bu da doğru. Nasıl olacak?
+
+430
+01:20:55,391 --> 01:21:11,731
+Ya da elinizde bir dizi var, siz o diziyi tanımak için bu Turing'i mi kullanacaksınız, bu Turing'i mi kullanacaksınız? Hangisini kullanacaksınız? Mesela şu diziyi üretmek için. Ya da bu dizinin doğru olduğunu anlamak için.
+
+431
+01:21:12,112 --> 01:21:38,212
+Bu Turing'i kullanacağız, bu Turing'i kullanacağız. Hangisini kullanacağız? Bu bir ikilemlik karışık oluşturuyor. Örnek verelim, şöyle bir şey olsun, matematiksel işlemler olsun. Mesela burada A2 olsa, tamam mı? A2 olsa, şimdi soldaki işleme göre ne oluyor? Önce A diyor, E artı E, şöyle bir işlemler yapılıyor. Bu işlemlere göre hangisinde doğru işlem yapılıyor?
+
+432
+01:21:39,155 --> 01:22:02,995
+Bak önce ne oluyor? 2 artı 2, sonra bak önce çarpmalar yapılıyor. Bak şu daha yukarıda. 2 çarpılıyor. Sonra toplamlar yapılıyor. Yani 2 artı 2, 4 çarpı 2. Ne oluyor? 8 oluyor. Çünkü bu alttan başlıyorsun önce. 2 artı 2, 4 çarpı 2, 8. Bu ağaç 8'i verirken.
+
+433
+01:22:03,796 --> 01:22:16,896
+Sadece matematiksel olarak görmek için diyorum. Yani mesela matematiksel bu bir gramer, bu bir gramer, matematiksel ifadeleri oluşturmak için bir gramer.
+
+434
+01:22:17,956 --> 01:22:30,916
+Şimdi buradayı da bir bakalım. Burada ne yapıyor? Önce çarpma işlemini yapıyor. Çünkü en az seviyede çarpma var. 2x2, 4 var. Artı 2, 6. Şimdi soldaki ağaçla siz matematiksel olarak 6.
+
+435
+01:22:31,475 --> 01:22:37,536
+İşlemini elde ederken, sağdakinde 8 işlemini elde ediyorsun. Ama aynı String.
+
+436
+01:22:38,068 --> 01:22:56,347
+Çünkü biz ne yapıyoruz? Normalde biz neydi bu? Bu bir tree. Bunlar da bir string. Tamam bu string ama biz ne yapıyoruz daha sonra bu bilgisayarda? Bunlara her bir sembolü bir anlam yüklüyoruz. Mesela bu artı işaretine, artı işaretine ne diyoruz? Bu artık bir toplama işaretidir.
+
+437
+01:22:56,347 --> 01:23:05,368
+Ve CPU'de aritmetik lojikteki iki tane sayı toplar çarpma ise buna da bir anlam yüklüyoruz, işlem yüklüyoruz.
+
+438
+01:23:06,068 --> 01:23:16,188
+Operasyon yüklüyoruz. Yıldız işaretine de çarpma diyoruz. Aritmetik, lojik, ünitteki iki tane sayıyı çarpar diyoruz.
+
+439
+01:23:16,827 --> 01:23:24,688
+Şimdi bilgisayardaki o aritmetik, lojik, ünite gelmeden önce bu ifadenin pars edilmesi lazım.
+
+440
+01:23:24,688 --> 01:23:33,007
+2 artı 2 çarpı 2. Tamam mı? 2 artı 2 çarpı 2. Soldakiyle pars edersen sonuç.
+
+441
+01:23:34,899 --> 01:23:38,239
+6, sağdaki ile parsedersen sonuç 8.
+
+442
+01:23:42,260 --> 01:24:04,260
+Tamam mı? Ama biz ne yapıyoruz? Bu bir dil. Bu bir gramer. Bu gramerden bu diziyi oluşturuyoruz. Mesela burada bu bir diziyi oluşturduk. Bu dizi, örnek verelim, bu dizi kullanıcı girdi. 2 artı 2 çarpı 2 girdi. Bu Turing'i kullanırsak.
+
+443
+01:24:04,659 --> 01:24:15,779
+Bilgisayara bu tree'yi kullanarak komutlar gönderirsek, o CPU'ya, o zaman ne oluyor? Sonuç 6. Bunu kullanarak bilgisayara komutlar gönderirsek, sonuç 8 olmuş oluyor.
+
+444
+01:24:18,659 --> 01:24:22,699
+Matematiksel olarak hangisi doğru? 8 mi, 6 mı?
+
+445
+01:24:30,644 --> 01:24:54,864
+Önce çarpma gelir. 2x2, 4. Normalde 6 olması gerekir. Dolayısıyla bu tri doğru bir tri. Bu tri ise yanlış bir tri. Önce çarpma işlemini yaparız, sonra toplama işlemini yaparız. Ama bak burada bir precedence yok. Dolayısıyla bu dil nedir? Bu dil bir ambiguity dildir, ambiguous'tir. Yani belirsizlik vardır bu dilde.
+
+446
+01:24:55,699 --> 01:25:09,699
+Bu belirsizliği ortadan kaldırmamız gerekir. Ortadan kaldırmak için ne yapabiliriz? Onu göreceğiz. Dolayısıyla, as a result, if...
+
+447
+01:25:10,771 --> 01:25:17,652
+So, two different deviation trees may cause problems in applications which use the deviation trees.
+
+448
+01:25:17,771 --> 01:25:29,431
+For example, in applications we use the deviation trees and you see that for the same string we have two deviation trees which causes some problems in the application layer.
+
+449
+01:25:29,792 --> 01:25:32,872
+But this is for the language.
+
+450
+01:25:33,252 --> 01:25:37,692
+So this is the tree to recognize the string.
+
+451
+01:25:38,032 --> 01:25:40,132
+This is the tree to recognize the string.
+
+452
+01:25:40,132 --> 01:25:42,132
+But this...
+
+453
+01:25:42,144 --> 01:25:54,424
+Trees are different. This difference causes some problems in the applications, like giving orders, the commands to the CPU, or running your code.
+
+454
+01:25:54,424 --> 01:26:06,424
+Okay? So when you evaluate the expressions in general in compilers for programming languages, we need to always have one deviation tree for...
+
+455
+01:26:06,931 --> 01:26:34,311
+each, string, so each string, each certain string, should have, must, should have to have one deviation tree. Okay? Should have to have one deviation tree. Yani her bir diziyi bir tane deviation tree ile oluşturmak zorunda. Yani leftmost deviation'lardan bir tane olacak.
+
+456
+01:26:34,996 --> 01:26:39,876
+Hem rightmost hem leftmost olabilir, onda bir sıkıntı yok ama bir tane olmak zorunda.
+
+457
+01:26:42,236 --> 01:26:56,096
+So, ambiguous grammars is the grammar, a context-free grammar is ambiguous if there is a string which has two different deviation trees or two leftmost deviations, okay?
+
+458
+01:26:56,787 --> 01:27:05,268
+So, if you have two leftmost deviations or two different deviation trees, then we say that this is the ambiguous grammar.
+
+459
+01:27:05,268 --> 01:27:12,948
+And this grammar is ambiguous grammar, as you see that to generate the strings, we have two different trees.
+
+460
+01:27:14,167 --> 01:27:17,608
+So, this causes the ambiguity, okay?
+
+461
+01:27:18,108 --> 01:27:21,207
+So, let us look at this expression.
+
+462
+01:27:22,260 --> 01:27:36,120
+This is ambiguous grammar. If statement is, if expression then something, or if expression then something else something. Is it ambiguous or not?
+
+463
+01:27:47,699 --> 01:27:51,539
+Let me give you an example why it is ambiguous.
+
+464
+01:27:54,479 --> 01:27:57,479
+Let me write one second.
+
+465
+01:27:58,800 --> 01:27:59,559
+If statement.
+
+466
+01:28:09,876 --> 01:28:10,515
+Eve,
+
+467
+01:28:21,140 --> 01:28:23,140
+Bu, bu produkler.
+
+468
+01:28:31,155 --> 01:28:33,395
+XPD'den
+
+469
+01:28:39,060 --> 01:28:40,560
+S, T, M, T.
+
+470
+01:28:41,700 --> 01:28:44,340
+Tamam, bu bir başka bir prodüksiyon.
+
+471
+01:28:46,380 --> 01:28:46,740
+Hocam,
+
+472
+01:28:48,540 --> 01:28:49,500
+if,
+
+473
+01:28:49,940 --> 01:28:52,060
+or, then, if,
+
+474
+01:28:52,500 --> 01:28:52,680
+b,
+
+475
+01:28:53,220 --> 01:28:54,180
+hence,
+
+476
+01:29:05,011 --> 01:29:29,611
+Evet, şimdi onu göstereceğim işte. Şimdi tam olarak ne demek istediğini anladım ben seni. Şimdi onu görelim. Tamam mı? Şimdi şöyle bakalım. İki tane elimizde ne var? Production var.
+
+477
+01:29:30,996 --> 01:29:46,456
+Bakın, iki tane production var. Şimdi ben bir tane yazıyorum. If yazıyorum. Sonra burada expression olacak. Then olacak. Something.
+
+478
+01:29:54,676 --> 01:29:56,036
+Hatta bunu şöyle yazayım.
+
+479
+01:29:59,036 --> 01:30:04,576
+If expression then.
+
+480
+01:30:07,516 --> 01:30:09,216
+Şimdi something ne olabilir?
+
+481
+01:30:09,936 --> 01:30:15,576
+Tekrar bir if expression.
+
+482
+01:30:33,555 --> 01:30:35,555
+Niye SMT yazıyorum ki ya?
+
+483
+01:30:36,195 --> 01:30:37,155
+STMT
+
+484
+01:30:37,155 --> 01:30:39,536
+AS
+
+485
+01:30:48,724 --> 01:31:14,884
+Böyle yazarsak daha doğrulur. Okay, something, something. So when you look at this, this is the first production, if expression, then something, and the second production, if expression, then something, add something. Look at this expression now. This is, if, then, and add something, and this is something.
+
+486
+01:31:20,595 --> 01:31:40,315
+Ok, you see that? Or, this one, let me write in blue, if expression, then whole is something.
+
+487
+01:31:49,140 --> 01:31:49,900
+Diziz,
+
+488
+01:31:56,564 --> 01:31:59,204
+This one, all is together.
+
+489
+01:32:01,764 --> 01:32:09,884
+You see that this as belongs to question.
+
+490
+01:32:10,484 --> 01:32:15,623
+This as belongs to this if or this if.
+
+491
+01:32:20,595 --> 01:32:28,235
+Yani bu en sonundaki something hangi ife ait? Görebiliyor musunuz?
+
+492
+01:32:36,148 --> 01:32:37,887
+Let me write the production.
+
+493
+01:32:38,807 --> 01:32:39,347
+One second.
+
+494
+01:32:53,332 --> 01:32:55,332
+Let me run, we have the something.
+
+495
+01:33:03,859 --> 01:33:06,359
+We have something, we have if.
+
+496
+01:33:10,420 --> 01:33:16,220
+expression, then something,
+
+497
+01:33:20,083 --> 01:33:24,011
+Yeni bu.
+
+498
+01:33:27,731 --> 01:33:36,731
+or this is if expression, then if
+
+499
+01:33:41,619 --> 01:33:53,180
+expression than something as something.
+
+500
+01:33:56,307 --> 01:34:03,068
+This is, look at this expression. Now I will do the other one, something.
+
+501
+01:34:03,068 --> 01:34:22,068
+Statement, yani, statement, statement, if expression, then statement, as statement.
+
+502
+01:34:24,884 --> 01:34:42,503
+Now, the first statement here, we will delete if expression, then if expression,
+
+503
+01:34:46,931 --> 01:34:56,872
+Then, statement, this is generated for this.
+
+504
+01:35:00,659 --> 01:35:05,039
+as statement.
+
+505
+01:35:07,379 --> 01:35:09,500
+Okay, this one.
+
+506
+01:35:14,068 --> 01:35:15,488
+is equal to this one.
+
+507
+01:35:18,068 --> 01:35:24,668
+So, this statement, as you see, here belongs to this one.
+
+508
+01:35:26,108 --> 01:35:31,047
+Here, this statement belongs to this one.
+
+509
+01:35:33,847 --> 01:35:40,828
+So, as you see that, this string is similar to this string.
+
+510
+01:35:41,235 --> 01:35:44,395
+But the statement belongs to different if.
+
+511
+01:35:46,155 --> 01:35:50,855
+So this, here the statement belongs to the second if.
+
+512
+01:35:51,416 --> 01:35:54,055
+Here the statement belongs to the first if.
+
+513
+01:35:54,055 --> 01:35:57,855
+So this is causes, this is the ambiguity.
+
+514
+01:35:58,536 --> 01:36:01,496
+So there is ambiguity on this grammar.
+
+515
+01:36:02,855 --> 01:36:05,115
+On this grammar there is ambiguity.
+
+516
+01:36:05,735 --> 01:36:08,695
+So you cannot see a language.
+
+517
+01:36:09,140 --> 01:36:20,780
+Yani bir tane programlama dili göremezsiniz. Bu şekilde bir statement expression olduğunu. Bu ambiguity kaldırmamız gerekiyor. Ne yapmamız gerekir bu ambiguity kaldırmak için?
+
+518
+01:36:23,100 --> 01:36:33,900
+Bakın iki tane aynı dizi üreten. Ne yapmamız gerekir? Onu göreceğiz. Şöyle yapabiliriz. Bakın buraya bir ant işaretini koyarsak.
+
+519
+01:36:37,363 --> 01:36:43,323
+End işaretini koyarsak, parantez açıp parantez kaparsak bu en büyük yit ortadan kalkmış oluyor.
+
+520
+01:36:44,203 --> 01:36:55,623
+Bu end işareti, bu statement'ın bu ife ait olduğunu söylüyor. Bu end işareti de bu statement'ın bu ife ait olduğunu söylüyor. Bunu göreceğiz.
+
+521
+01:36:56,423 --> 01:36:58,764
+Şimdilik bu şekilde devam edelim.
+
+522
+01:36:59,380 --> 01:37:26,979
+Yani bunu görün yani şimdi bir C kodunu, bir Java kodu öğrendiğinizde hani ne yapıyoruz biz? If diyoruz, yazarken if diyoruz, A eşittir 5 diyoruz mesela. Sonra ent diyor, parantez açıyoruz. Burada bir takım işler yapıyoruz değil mi? A eşittir 5 diyoruz, burada bir takım işler. İşte şu parantezler var ya bunlar, en büyük itiyor ortadan kaldırmak için kullanılıyor.
+
+523
+01:37:27,444 --> 01:37:37,123
+Aksal'da hangi if'in, hangi statement, yani buradaki işlemler hangi if'e ait olduğunu bilemeyiz. Karışıyor.
+
+524
+01:37:39,944 --> 01:37:54,123
+Dolayısıyla, as you see that, this is the string, if expression, then if expression two, then something one or else something two. This is the statement, this is the tree.
+
+525
+01:37:55,220 --> 01:38:21,868
+Bu, bu
+
+526
+01:38:21,908 --> 01:38:46,388
+Precedence. Okay? Look at this one. This is the ambiguous grammar. This is ambiguous grammar. This is equivalent but non-anguis and not ambiguous grammar. You see that E, you apply the E plus T. This is the operation, but the operation plus operation is applied on different
+
+527
+01:38:46,996 --> 01:39:13,155
+Variables. Here, the plus operation is on the same variables and also multiplication is on the same variables. Because of the same variables here on the same string, this causes the ambiguity. But here you see that A plus T, T is different variable. So you see that you change.
+
+528
+01:39:13,555 --> 01:39:40,715
+Bu, bu
+
+529
+01:39:40,979 --> 01:39:59,099
+O, each operation, each production, we define a variable to separate the productions. You see? And, and finally, this is the parentheses, and you put the parentheses at the end. You cover the parentheses, like you, for example,
+
+530
+01:40:00,000 --> 01:40:25,100
+Here, T, T goes to F, F goes to the E parentheses. So these are the expressions. So this is the equivalent languages, these are, but this is non-ambiguous grammar. This is ambiguous grammar. Okay, but they are equivalent, means that they generate the same language. So one language may have
+
+531
+01:40:25,619 --> 01:40:38,739
+Ambiguous grammar or they have non-ambiguous grammar. Yani bir dil birden fazla gramare sahip olabilir. Bazı gramarlar ambigüistir, bazı gramarlar ambigüist olmayabilir.
+
+532
+01:40:40,880 --> 01:40:43,059
+Çok güzel bir true-false sorusu.
+
+533
+01:40:47,444 --> 01:41:07,344
+Ok. For example, by using this grammar, we have this production. First, you apply the plus, you apply the first production, and then you apply this production, and then you follow all the deviations, you obtain this string.
+
+534
+01:41:07,344 --> 01:41:14,544
+When you look at this string, sorry, when you look at the tree, this is the tree, and this tree is unique.
+
+535
+01:41:16,532 --> 01:41:41,652
+So, for this, there is no second tree to generate this string. So, this grammar is not ambiguous. Look at this language. So, this is the language L, E power N, B power N, union. Can we generate, what is the grammar for this language?
+
+536
+01:41:43,764 --> 01:42:09,644
+Can we write the grammar for this? One second. What is the language? What is the grammar? Can we? Okay, grammar. So I have the grammar. Let's say this is starts by like this. So I will go.
+
+537
+01:42:10,355 --> 01:42:13,095
+A or B, okay?
+
+538
+01:42:14,935 --> 01:42:21,995
+And A will go to A, B many times.
+
+539
+01:42:24,135 --> 01:42:30,255
+And then, and A, B, A, B, A, B.
+
+540
+01:42:31,475 --> 01:42:32,555
+And then,
+
+541
+01:42:39,412 --> 01:42:40,912
+Yes, one second.
+
+542
+01:42:46,739 --> 01:42:49,140
+A, C,
+
+543
+01:42:56,627 --> 01:42:58,747
+D, B.
+
+544
+01:42:59,347 --> 01:42:59,608
+Okay?
+
+545
+01:42:59,608 --> 01:43:01,608
+A is goes to...
+
+546
+01:43:07,923 --> 01:43:09,923
+Ok, and the C is...
+
+547
+01:43:17,076 --> 01:43:17,815
+And
+
+548
+01:43:22,292 --> 01:43:25,612
+I will explain how, one second.
+
+549
+01:43:47,091 --> 01:44:01,091
+This is the language, and in order to generate this language, this is the grammar. I wrote this grammar by looking at this language. Look at this language. The number of A is equal to the number of B and concatenated by the...
+
+550
+01:44:01,427 --> 01:44:29,307
+A, symbol C's, many symbol C's, but the number of C does not depend on the number of A and B. So what I do, I have this one is represented as the concatenation. This part is concatenated by this language. So here I put A concatenated C. Okay? Union, this is OR.
+
+551
+01:44:29,427 --> 01:44:45,807
+Look at here, the number of B is equal to the number of C, so I represented by B, and this is concaten- and the number of the A is concatenated by this language, so this is DB.
+
+552
+01:44:46,399 --> 01:45:09,359
+Look at here, A, A is, number of A is equal to number of B, so I've used this production. So for each A, I put A and B at the same time, to the left and right. So when I do these productions, the number of A and B increases, and then it goes to the epsilon to cancel this, to stop, to terminate this.
+
+553
+01:45:10,836 --> 01:45:13,716
+bu stringin bir kere
+
+554
+01:45:13,716 --> 01:45:14,836
+bu kere
+
+555
+01:45:14,836 --> 01:45:16,836
+kere
+
+556
+01:45:16,836 --> 01:45:20,836
+bu kere
+
+557
+01:45:20,836 --> 01:45:22,836
+kere
+
+558
+01:45:22,836 --> 01:45:24,652
+bu kere
+
+559
+01:45:24,836 --> 01:45:25,836
+kere
+
+560
+01:45:24,659 --> 01:45:48,431
+Yörepeat, and then, so this is here, this production belongs to this one, and this production belongs to this part. So D and the B concatenated, as you see here, union operation here, and A and the C is concatenated, A and the C is concatenated, as you see here. So this is the...
+
+561
+01:45:48,431 --> 01:46:02,711
+This is the grammar for this language. And when you look at this language, it is ambiguous. Why? Let me explain. Look at here. ABC.
+
+562
+01:46:07,699 --> 01:46:14,500
+ABC is element of this language.
+
+563
+01:46:18,100 --> 01:46:23,500
+Also, element of this language.
+
+564
+01:46:28,627 --> 01:46:53,227
+Okay? So, this one has grammar, this one also has grammar because this is the language. So, this is also language. So, each language has the grammar. So, this has the grammar, this has the grammar. So, in order to recognize this string, we have two grammars, for this and for this. Okay? So, this language is ambiguous.
+
+565
+01:46:54,515 --> 01:47:18,395
+How can I remove the ambiguity? I can remove the ambiguity? I change the variables. Let's say this is ABCD and ABCD. For example, now, yes, now the ambiguity is removed.
+
+566
+01:47:21,036 --> 01:47:21,715
+Anyway.
+
+567
+01:47:22,912 --> 01:47:36,912
+kere
+
+568
+01:47:22,228 --> 01:47:29,768
+So, the language of this, the grammar for this language is this.
+
+569
+01:47:30,387 --> 01:47:32,288
+This is the grammar for this language.
+
+570
+01:47:32,648 --> 01:47:38,728
+And this is the grammar for this language.
+
+571
+01:47:38,868 --> 01:47:40,328
+So, this grammar is this.
+
+572
+01:47:40,627 --> 01:47:42,248
+So, this is very simple.
+
+573
+01:47:48,724 --> 01:47:53,724
+Let us do some examples about the grammars.
+
+574
+01:48:43,539 --> 01:49:08,119
+Okay, this is what, this is NFA. NFA is the, is a, so the language, this is the machine, the language of this machine is regular language. So this is the subset of context-free language. So it is also context-free.
+
+575
+01:49:10,547 --> 01:49:12,927
+O yüzden, kontekst free.
+
+576
+01:49:16,724 --> 01:49:43,363
+So it has the grammar. What is the grammar? First, what I will do, I will give the names. Let's say this is S. So this is the final state. Okay, good. And let's say this is B. And this is C. So let me write the grammar for this. So you start by like this.
+
+577
+01:49:44,372 --> 01:49:47,612
+For symbol A, it goes to B.
+
+578
+01:49:50,112 --> 01:49:50,752
+Okay.
+
+579
+01:49:51,192 --> 01:49:52,652
+The second one, B,
+
+580
+01:49:53,792 --> 01:49:55,992
+goes to
+
+581
+01:49:55,992 --> 01:49:58,912
+AB, same.
+
+582
+01:49:59,412 --> 01:50:00,112
+You see that?
+
+583
+01:50:00,912 --> 01:50:06,092
+If you are at state B, for input symbol A, you remain on the same.
+
+584
+01:50:06,092 --> 01:50:06,452
+So,
+
+585
+01:50:07,652 --> 01:50:08,492
+here.
+
+586
+01:50:09,772 --> 01:50:11,572
+And, or,
+
+587
+01:50:12,083 --> 01:50:15,783
+B, you go to state C.
+
+588
+01:50:17,743 --> 01:50:19,043
+And C,
+
+589
+01:50:21,623 --> 01:50:28,024
+AC, or C goes to state variable S.
+
+590
+01:50:30,543 --> 01:50:37,083
+Further, look at here, B, and also what is here, there is,
+
+591
+01:50:38,484 --> 01:51:05,420
+Bu, bu
+
+592
+01:51:06,036 --> 01:51:11,036
+Evet, bir başka bir düzenli.
+
+593
+01:51:14,452 --> 01:51:16,452
+Bu, final state.
+
+594
+01:51:17,812 --> 01:51:19,812
+Both are final state.
+
+595
+01:51:20,452 --> 01:51:25,812
+1, 1, 1, 0.
+
+596
+01:51:26,752 --> 01:51:31,692
+No, maybe we should have only one final state, one second.
+
+597
+01:51:32,512 --> 01:51:34,512
+This is the final state.
+
+598
+01:51:36,652 --> 01:51:42,028
+A, B, A,
+
+599
+01:51:43,123 --> 01:52:10,323
+E. Okay. So what is its grammar for this one? This is the machine one. One second. This is for machine one. This is machine two. And what is the grammar for this machine? Let's say this is a letter variable and this is A. Okay.
+
+600
+01:52:10,963 --> 01:52:38,083
+So, what I will write, so we start by variable s, we remain, and empty string. Why? Because variable s is the final state. And again, what we have? We have B variable a. Okay?
+
+601
+01:52:38,804 --> 01:53:03,844
+And another one. So A, A variable A, and B variable S. So this is the grammar. This is the machine 2. So this is the machine 1. So what I will do, insert.
+
+602
+01:53:13,844 --> 01:53:15,596
+Find the grammar.
+
+603
+01:53:26,899 --> 01:53:33,612
+L1, concatenated, L2,
+
+604
+01:53:37,108 --> 01:53:42,047
+The language of the first machine, concatenated language of the second machine.
+
+605
+01:53:42,467 --> 01:53:44,987
+What is this grammar for this?
+
+606
+01:53:46,747 --> 01:53:47,188
+Okay.
+
+607
+01:53:49,188 --> 01:53:51,228
+We can obtain easily.
+
+608
+01:53:57,587 --> 01:54:13,227
+For this grammar, what I will have, I will have concatenation means, I will start by letter, let's say this is the S, it will go to S1, S2, because of the concatenation.
+
+609
+01:54:26,228 --> 01:54:47,307
+And B1, it should be AB1, BC1, Epsilon. And C1 is AC1. No need to change this C. Actually, sorry.
+
+610
+01:54:52,724 --> 01:55:15,543
+Look at here, the letter A is not used here, but used here, but the letter, capital letter S is here both, so we use different. So this is no need to change. So here's A, B, okay, and
+
+611
+01:55:22,515 --> 01:55:49,355
+S1, S2, A, S2, BA, A, B, B, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A,
+
+612
+01:55:49,779 --> 01:55:57,460
+AC, CS, but this is not CS, CS1.
+
+613
+01:55:59,000 --> 01:55:59,359
+Okay?
+
+614
+01:56:00,800 --> 01:56:02,239
+Be careful.
+
+615
+01:56:04,979 --> 01:56:06,380
+One second.
+
+616
+01:56:18,612 --> 01:56:26,612
+C, S1, this one, be careful, this, look at here, here this one becomes S1 because of this.
+
+617
+01:56:28,212 --> 01:56:28,532
+Okay.
+
+618
+01:56:30,532 --> 01:56:37,892
+And here A will go to A, A and B, S2.
+
+619
+01:56:38,692 --> 01:56:44,732
+So this is the grammar for this concatenation.
+
+620
+01:56:44,732 --> 01:56:45,612
+Okay.
+
+621
+01:56:48,884 --> 01:56:55,244
+Şimdi 10-minutun bir süre sonra, 10-minutun bir süre sonra devam edelim.
+
+622
+01:56:55,244 --> 01:56:59,124
+10.59.
+
+623
+02:12:09,811 --> 02:12:10,832
+Evet arkadaşlar.
+
+624
+02:12:20,404 --> 02:12:46,604
+So, in order to generate this string, as you see that this string is element of this set or this language or the element of this language. So each language has different trees. Finally, we say that the language itself is
+
+625
+02:12:47,891 --> 02:12:49,891
+ambigüse.
+
+626
+02:12:49,891 --> 02:12:51,891
+So now...
+
+627
+02:12:59,091 --> 02:13:05,491
+We will focus on, we will continue by the pumping lemma for context-free languages.
+
+628
+02:13:06,771 --> 02:13:15,051
+So there are two pumping lemma. One pumping lemma is for regular expressions, regular languages.
+
+629
+02:13:15,631 --> 02:13:20,711
+The other pumping lemma is proposed for context-free languages.
+
+630
+02:13:20,931 --> 02:13:25,011
+So there are languages are not context-free. For example,
+
+631
+02:13:29,716 --> 02:13:33,996
+Önce, bu kadar önce...
+
+632
+02:14:08,307 --> 02:14:14,307
+What is this regular expression for this DFA? Look at here.
+
+633
+02:14:15,987 --> 02:14:17,667
+Actually, this.
+
+634
+02:14:36,051 --> 02:14:38,051
+This is A, this is B.
+
+635
+02:14:38,051 --> 02:14:40,051
+What is the grammar for this?
+
+636
+02:14:40,051 --> 02:14:42,051
+The grammar for this?
+
+637
+02:14:42,051 --> 02:15:02,051
+We start by A, 0A, and 1B, and 4B, 0B, and 1C, and C, 0C, and 1A.
+
+638
+02:15:02,304 --> 02:15:19,184
+So this is the grammar for this DFA. What about the regular expression? Kim söyleyecek bunun için regular expression'ı?
+
+639
+02:15:20,863 --> 02:15:29,104
+İki tane final state var. Öyleyse en az iki tane terim olacak. Öyleyse ne olabilir? Zero yıldız.
+
+640
+02:15:30,036 --> 02:15:52,916
+A'ya gidecek. Zero yıldız. A'ya gidecek. Diğeri ise zero yıldız. Bir, sıfır yıldız. Bir, sıfır yıldız olursa da buradan da C durumuna geçecek. A durumuna geçiyor ve C durumuna.
+
+641
+02:15:58,771 --> 02:16:16,011
+A durumundan C'ye de geçebilir. Dolayısıyla ne olacak burada? MT var, artı. A durumundan C'ye geçebilir. 0 yıldız, 1, 0 yıldız, 1, 0 yıldız.
+
+642
+02:16:17,231 --> 02:16:18,991
+Hocam şu anda yakında bir şey yazıyor musunuz?
+
+643
+02:16:19,831 --> 02:16:20,231
+Efendim?
+
+644
+02:16:20,831 --> 02:16:22,271
+Şu anda yakında bir şey yazıyor musunuz hocam?
+
+645
+02:16:23,271 --> 02:16:24,251
+Evet, yazıyorum.
+
+646
+02:16:24,948 --> 02:16:27,048
+Hem görümünü de, en zaman görümünü de.
+
+647
+02:16:27,508 --> 02:16:29,307
+Evet, tamam. Şu anda geliyor ama.
+
+648
+02:16:29,888 --> 02:16:30,688
+Şu anda gözüküyor hocam.
+
+649
+02:16:31,068 --> 02:16:39,828
+Tamam. Şimdi sıfır yıldızda, nereye gidiyoruz? Bakın sıfır yıldız şuradan başladık, sıfır yıldız hep ağda kaldık değil mi? Ağ durumunda kalıyoruz.
+
+650
+02:16:40,868 --> 02:16:43,567
+Yani şurada ağ durumuna geçiyorum.
+
+651
+02:16:47,092 --> 02:17:13,792
+Bunu girişte, bu diziye uygularsam, bakın, sıfır yıldız, bir, sıfır yıldız, bir, sıfır yıldız. Nerede ulaştım? Burada da C durumuna ulaştım. Şimdi C durumuna ulaştım. Ne yapabilir? Şimdi bu ikisinde iki durum var. Sonra ne olabilir? C'den A'ya geçebilirim ya da C'den tekrar C'ye gelebilirim değil mi?
+
+652
+02:17:14,579 --> 02:17:29,180
+Dolayısıyla, şöyle olacak bu da, olasılıklar, mesela A'dan A'ya geçebilirim. MP artı A'dan C'ye geçebilirim.
+
+653
+02:17:39,059 --> 02:17:42,979
+Ya da ne olabilir? A'dan A'ya gidebilirim.
+
+654
+02:17:51,796 --> 02:18:03,115
+Bunun da nesi? Yıldızı. Peki C'deki durum ise? C'ye vardım. C'den ne yapabilirim? C'ye kalabilirim. Ya da C'den A'ya geçebilirim.
+
+655
+02:18:09,492 --> 02:18:13,172
+ya da C'den C'ye gidebilirim.
+
+656
+02:18:23,763 --> 02:18:27,984
+ve bunun nesi? Yıldızı. İşte regular expression'ın bu olmuş olduğu.
+
+657
+02:18:35,603 --> 02:18:36,563
+Artı
+
+658
+02:18:36,563 --> 02:18:40,403
+ve şu.
+
+659
+02:18:56,852 --> 02:19:01,252
+İşte bu bizim regular expression'ımız olmuş. Burada tabii yıldız olmak zorunda.
+
+660
+02:19:03,252 --> 02:19:10,252
+Yani bunun için, bu NFA için şu bir regular expression'ımız ve bu da gramerimiz.
+
+661
+02:19:10,592 --> 02:19:14,632
+Bakın şimdi böyle bir NFA için gramerle uğraşmak daha kolay oluyor.
+
+662
+02:19:14,632 --> 02:19:15,132
+Değil mi?
+
+663
+02:19:16,531 --> 02:19:17,172
+Şimdi.
+
+664
+02:19:20,703 --> 02:19:35,824
+Bu gerçekten, bu bir dil, bu dilin örneklerini yazalım. Ne olabilir bu? Mesela sıfır dizisi. Elemanıdır. Değil mi? Bu makine olsun. M makinesi.
+
+665
+02:19:37,963 --> 02:19:44,703
+Sıfır da elemanı. Sıfır sıfır bir de elemanı.
+
+666
+02:19:49,299 --> 02:19:54,579
+Mesela bir, bir, bir de elemanı mı?
+
+667
+02:19:58,227 --> 02:20:01,907
+elemanı değil. Ama bir bir elemanı.
+
+668
+02:20:05,971 --> 02:20:09,971
+Yani bunu görüyorsunuz. Bu regular expression'ı, bu da grameri.
+
+669
+02:20:11,511 --> 02:20:14,731
+Şimdi, bazı diller var. Örnek verelim.
+
+670
+02:20:16,671 --> 02:20:17,252
+Şu bir dil.
+
+671
+02:20:32,115 --> 02:20:47,796
+Bu bir değil. Bu nedir? Context-free midir, değil midir? Bunu zaten biliyoruz, context-free olduğunu. Bakın, A'ların sayısı, B'lerin sayısına eşit. Bu nedir? Bir context-free'dir. Peki şu?
+
+672
+02:20:57,523 --> 02:21:03,603
+Bu nedir? A'ların sayısı, B'lerin sayısının bir eksiği. Bu da context-free'dir.
+
+673
+02:21:04,403 --> 02:21:07,183
+Çünkü bir tane bağımsız var.
+
+674
+02:21:08,603 --> 02:21:09,083
+Peki şu?
+
+675
+02:21:23,667 --> 02:21:25,148
+Bu context-free midir?
+
+676
+02:21:27,108 --> 02:21:27,907
+Evet arkadaşlar.
+
+677
+02:21:36,371 --> 02:21:39,171
+Sadece işbilsen olarak değildir diyebilir miyim?
+
+678
+02:21:40,051 --> 02:21:41,412
+Ne değildir?
+
+679
+02:21:42,592 --> 02:21:44,031
+Context-free değildir diyebilir miyim?
+
+680
+02:21:44,531 --> 02:21:58,931
+Yok, şöyle düşün. Bağıntı var. Kaç tane bağıntı var burada? Bu ağların sayısıyla bu ağların sayısı eşit olacak. Bir tane bağıntı var, başka yok. Dolayısıyla bir context-free'dir.
+
+681
+02:22:00,111 --> 02:22:03,572
+Tamam? Şimdi bakın, bir örnek vereceğim.
+
+682
+02:22:04,244 --> 02:22:07,804
+A üzeri ne, B üzeri ne, C, A üzeri ne?
+
+683
+02:22:10,603 --> 02:22:12,344
+Bu context-free midir?
+
+684
+02:22:13,664 --> 02:22:14,344
+Bu değil midir?
+
+685
+02:22:14,904 --> 02:22:15,783
+Bu değildir işte.
+
+686
+02:22:18,024 --> 02:22:19,204
+Context-free değil.
+
+687
+02:22:20,020 --> 02:22:43,040
+Neden? A'ların sayısı, bakın şu A'ların sayısı, bu A'ların sayısıyla eşit olacak ve bu A'ların sayısı, B'lerin sayısıyla eşit olacak ve bu B'lerin sayısı buradaki A'ların. Yani bağıntı sayısı birden fazla. Bağlam sayısı. Tamam mı? Bağlam sayısı birden fazla. Dolayısıyla context-free değil. Mesela şu context-free midir?
+
+688
+02:22:57,396 --> 02:22:58,396
+Ne, meka.
+
+689
+02:23:12,884 --> 02:23:14,043
+Context-free midir?
+
+690
+02:23:17,344 --> 02:23:18,063
+Değildir.
+
+691
+02:23:18,324 --> 02:23:29,344
+Değildir. Çünkü neden? A'ların ve B'lerin sayılarının maksimumu C'nin sayısına eşit olmak zorunda. Dolayısıyla bir tane bağlam var. Doğru mu?
+
+692
+02:23:32,043 --> 02:23:33,583
+Context-free değil mi bu?
+
+693
+02:23:39,443 --> 02:23:44,423
+Ama şöyle olsaydı, bakın yine aynısı.
+
+694
+02:23:51,443 --> 02:23:56,844
+N büyüktür, K olacak ve M büyüktür, K olacak.
+
+695
+02:23:58,644 --> 02:24:00,324
+Context-free midir, değil midir?
+
+696
+02:24:04,819 --> 02:24:06,819
+Context-free değildir.
+
+697
+02:24:09,500 --> 02:24:13,360
+Niçin? Bağlam sayısı kaç tane burada? İki tane.
+
+698
+02:24:17,843 --> 02:24:33,083
+Çünkü A'ların sayısı C'lerin sayısından fazla olacak. Bu birinci bağlam. Sonra ne diyoruz? B'lerin sayısı C'lerin sayısından fazla olacak. Bu da ikinci bağlam. Dolayısıyla iki tane bağlam var. Dolayısıyla context-free değildir. Değil mi?
+
+699
+02:24:34,083 --> 02:24:41,263
+Ben hepini tamamlamadım hocam ya. Nasıl? Max olanı tamamlamadım. Burada da şöyle bir şey.
+
+700
+02:24:41,907 --> 02:25:01,087
+A'ların ve B'lerin sayılarının her ikisinin toplam sayısı, değil mi? Toplam A'ların ve B'lerin sayılarının sayıyorsun ve bunun maksimumunu alıyorsun, maksimum KH'de olacak. Bunu context-free midir bu sence? Değil mi?
+
+701
+02:25:02,927 --> 02:25:04,468
+Context-free oluyor mu hocam?
+
+702
+02:25:05,067 --> 02:25:05,867
+Sence değil mi?
+
+703
+02:25:08,468 --> 02:25:10,427
+Sence burada kaç tane bağlam var?
+
+704
+02:25:15,636 --> 02:25:39,616
+Bir kere şu var değil mi? A'ların sayısı ve B'lerin sayısını bulacaksın ve bunun maksimumunu alacaksın. Bulman gerek. Bu bir bağlam ve bu da C'ye eşit olacak. Dolayısıyla arkadaşınızın şüphesi doğru. Sana bir artı beş puan vermek lazım. Dolayısıyla bu da context-free değildir.
+
+705
+02:25:40,468 --> 02:25:43,427
+Peki, şu bir context-free mi de örnek verelim.
+
+706
+02:25:43,427 --> 02:25:44,228
+L
+
+707
+02:25:54,451 --> 02:25:55,691
+context-free midir?
+
+708
+02:26:00,819 --> 02:26:01,739
+Değildir hocam.
+
+709
+02:26:02,520 --> 02:26:03,500
+Değildir hocam yani.
+
+710
+02:26:04,459 --> 02:26:05,559
+Context-free'dir bu.
+
+711
+02:26:07,779 --> 02:26:10,180
+Niye? Çünkü eleman sayısı sonlu.
+
+712
+02:26:10,819 --> 02:26:12,219
+6 tane eleman var burada.
+
+713
+02:26:13,020 --> 02:26:13,599
+Nedir bunlar?
+
+714
+02:26:16,000 --> 02:26:16,479
+Epsilon.
+
+715
+02:26:31,507 --> 02:26:35,308
+CCC, PDA DEU, AMEDIRA, CCCC.
+
+716
+02:26:42,420 --> 02:26:47,360
+Dolayısıyla 6 tane elemanı var. Dolayısıyla bu nedir? Context-free'dir. Aynı zamanda regular'dır değil mi?
+
+717
+02:26:51,028 --> 02:26:52,288
+Peki, şu?
+
+718
+02:27:23,476 --> 02:27:25,155
+Context-free midir, değil midir?
+
+719
+02:27:27,576 --> 02:27:31,236
+Ağların sayısı, hatta şöyle yapalım, bak.
+
+720
+02:27:34,899 --> 02:27:37,399
+N diyelim, N, N, K olsun.
+
+721
+02:27:45,332 --> 02:27:48,752
+Yok, öyle yapmayalım. M, N olsun.
+
+722
+02:27:52,084 --> 02:27:58,924
+M, N, K olsun. M ve N de büyük eşittir, sıfır. Konteks free mi de değil midir?
+
+723
+02:27:59,844 --> 02:28:03,264
+Hocam, K, Turing, K, B5 oldu da.
+
+724
+02:28:04,884 --> 02:28:05,524
+Nasıl?
+
+725
+02:28:06,564 --> 02:28:11,244
+Hocam, K, Turing, K, K, K, B5 oldu da.
+
+726
+02:28:11,244 --> 02:28:12,443
+Y ve N olacaklar.
+
+727
+02:28:13,244 --> 02:28:16,704
+Doğru. Soruyu şey yapıyorum. Buraya bir M diyelim. Tamam.
+
+728
+02:28:19,188 --> 02:28:22,548
+Context-free olması lazım hocam çünkü neyle ilgili bir bağıntı yok.
+
+729
+02:28:23,668 --> 02:28:28,388
+Bence tek bir bağıntı var diyor, Turing arasında. Context-free gibi bir bende.
+
+730
+02:28:29,168 --> 02:28:37,348
+Bakın A'yla A'ların sayısıyla C'lerin sayısı arasındaki bağıntı sayısı, A'ların sayısıyla C'lerin sayısı ne oluyor?
+
+731
+02:28:37,988 --> 02:28:45,148
+M, 5'ten küçük için eşit oluyor ve sonlu sayıda oluyor mu? 6 tane terim.
+
+732
+02:28:45,556 --> 02:29:03,136
+A'ların sayısı ve C'lerin sayısı eşit. Sonra hep C'lerin sayısı 5'te kalıyor. Dolayısıyla bu nedir? Hem context-free midir? Context-free'dir. Aynı zamanda nedir aynı zamanda? Regular'dır değil mi aynı zamanda? Hem regular, hem regular'dır, hem de context-free'dir.
+
+733
+02:29:09,043 --> 02:29:10,203
+Ama şöyle olsaydı,
+
+734
+02:29:27,412 --> 02:29:29,772
+Böyle olsaydı, bu ne olacaktı?
+
+735
+02:29:31,131 --> 02:29:37,371
+Hocam, sanırım bunda 3 tane bağımsız var. A'ların sayısı ve B'lerin sayısı arasında, A ve C arasında ve B ve C arasında.
+
+736
+02:29:38,112 --> 02:29:42,391
+Bakın, B'lerin sayısı bir yerden sonra değişmiyor, hep sabit kalıyor.
+
+737
+02:29:43,572 --> 02:29:46,492
+M'nin sayısı 5'ten büyükse hep 5 kalıyor.
+
+738
+02:29:48,152 --> 02:29:49,492
+Bağımsız gramerler, bağlamdan kayboluyor burada.
+
+739
+02:29:51,603 --> 02:30:01,984
+Yani A ile C arasındaki bağımsız grubu sınırlı sayıda. 6 tane bağımsız grubu var A ile C arasında. Değil mi?
+
+740
+02:30:03,703 --> 02:30:18,183
+Çünkü A'ların sayısı mesela 1 ise, burada 1 tane C olabiliyor. Minimum olduğu için 5 tane değil. 2 ise 2 tane, 2A varsa 2C, 3A varsa 3C, 4A varsa 4C, 5A varsa 5C.
+
+741
+02:30:18,868 --> 02:30:38,828
+100 tane A varsa yine 5C. 1 milyon tane A varsa yine 5C. C'lerin sayısı tabit kalıyor. Yani bağımsız yok oluyor. Sadece sonlu sayıda bir bağımsız var A ile C sayısında. Dolayısıyla bu ikisinin arasında bağımsız yok. O zaman bu nedir? Context-free diyor değil mi?
+
+742
+02:30:44,755 --> 02:30:46,855
+Ama şöyle olsaydı, bakın.
+
+743
+02:31:01,427 --> 02:31:02,468
+Böyle olsaydı.
+
+744
+02:31:09,139 --> 02:31:10,259
+Context-free midir?
+
+745
+02:31:12,040 --> 02:31:14,939
+Evindir hocam. Bunlar bağımsız gramerler değil.
+
+746
+02:31:15,360 --> 02:31:28,599
+Şimdi bağım bak, bunun da bunun sayısı eşit olacak. Mesela K'nın, M'nin yüz değeri için A ile C'nin sayısı da eşit olacak. Dolayısıyla bağımsız sayısı, bağlam sayısı ikiden fazla. Dolayısıyla context-free değildir.
+
+747
+02:31:29,739 --> 02:31:32,099
+Peki yukarıdaki dile bakalım. Bu regular mıdır?
+
+748
+02:31:34,379 --> 02:31:36,000
+Regular değildir değil mi? Şuan.
+
+749
+02:31:37,396 --> 02:31:38,916
+Şu regular değildir.
+
+750
+02:31:39,195 --> 02:31:39,675
+Non-regular.
+
+751
+02:31:42,596 --> 02:31:44,476
+Ama şu regular'dı, bakın.
+
+752
+02:31:45,596 --> 02:31:50,236
+Bakın, ufak ufak değişikliklerle her şeyi değiştirebiliyoruz.
+
+753
+02:31:50,316 --> 02:31:52,056
+Mesela diyelim ki bir tane dil olsun.
+
+754
+02:31:54,136 --> 02:31:57,776
+A üzeri M, B üzeri A üzeri N.
+
+755
+02:31:59,896 --> 02:32:03,776
+Sonra diyoruz ki C üzeri.
+
+756
+02:32:05,012 --> 02:32:19,711
+C üzeri K olsun. Sonra diyoruz ki, N eşittir, K faktörü olsun. Tamam mı? N eşittir, K faktörü olsun.
+
+757
+02:32:23,711 --> 02:32:32,132
+Ve M eşit büyüktür, M de şey olsun, M olsun.
+
+758
+02:32:33,203 --> 02:32:34,543
+Büyük eşitler ne olsun?
+
+759
+02:32:42,484 --> 02:32:44,963
+Hocam, 50 saniye kaldı ama quiz'e.
+
+760
+02:32:46,024 --> 02:32:56,783
+Pardon ya, arkadaşlar, zaman geçti. Şimdi quiz'e başlamanız lazım. Hadi kolay gelsin hepinize, iyi çalışmalar. Ben unuttum, hatırlattığım için teşekkürler. Hepinize başarılar diliyorum, iyi çalışmalar arkadaşlar.
+
+761
+02:32:59,783 --> 02:33:08,344
+Dikkat edin, 15 tane sorumuz var. Hemen online olun, quiz'e hemen başlayın, hazır olun. Tamam? Kapatıyorum, sonlandırıyorum dersi.
+
+762
+02:33:09,556 --> 02:33:11,115
+İyi dersler hocam, teşekkürler.
+
+763
+02:33:11,316 --> 02:33:23,476
+Hadi iyi günler, kendinize iyi bakın, sağlıklı günler. İyi çalış, iyi sınavlar diliyorum, hepinize başarılar diliyorum. Haftaya sınavda görüşürüz. Haftaya sınav var.

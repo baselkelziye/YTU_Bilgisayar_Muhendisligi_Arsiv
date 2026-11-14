@@ -1,0 +1,1287 @@
+1
+00:01:10,292 --> 00:01:19,731
+Günaydın arkadaşlar. Hoş geldiniz. Peki bugün sizin sunumlarınıza başlayacağız.
+
+2
+00:01:22,212 --> 00:01:37,611
+Maalesef böyle yarışıyor gibi olacak zamanla ama daha önce belirttiğim gibi 4 dakika ve sorularla birlikte 6 dakika içinde bitirmemiz gerekiyor.
+
+3
+00:01:38,036 --> 00:02:01,436
+Ben sırayla sizi söylediğimde şu anda ekran paylaşım hakkını verdim size. Herkes sırası geldiğinde ekranını paylaşabilecek. Ben söylediğimde hızlıca başlamanızı, ben size 3. 4. dakika civarı uyarayım. O noktada da toparlayıp bitirmenizi isteyeceğim.
+
+4
+00:02:01,939 --> 00:02:20,379
+Hemen hızlıca bir sorunuz varsa alayım. Mikrofon da açabilirsiniz. [öğrenci] hatta sahne başlayabilir miyiz? Bir ekranını paylaşmayı dener misin bizle? Efendim? Duyamadım.
+
+5
+00:02:20,379 --> 00:02:28,879
+Evet, başlayabiliriz. Tamam. O zaman sen bir ekranını paylaşmayı dener misin bizle? Bir sıkıntı var mı görelim?
+
+6
+00:02:29,972 --> 00:02:47,852
+Tamam, süper. Güzel, konu da güzel. Peki ben, yani hiç seveceğim bir şey değil ama kronometre tutmak zorunda kalacağım. Adil olsun diye. [öğrenci] hazır olduğunda başlayalım.
+
+7
+00:02:49,972 --> 00:02:56,972
+Kendini kısa bir tanıt. Bu arada mikrofonun kapalı, farkındaysan.
+
+8
+00:02:58,099 --> 00:03:01,379
+Evet hocam, açıyorum şu anda [öğrenci].
+
+9
+00:03:02,019 --> 00:03:03,180
+Tamam, bekliyorum.
+
+10
+00:03:08,116 --> 00:03:10,176
+Tamam hocam, açtım. Başka işlebilirim.
+
+11
+00:03:10,836 --> 00:03:12,016
+Tamam, dinleyelim seni.
+
+12
+00:03:14,136 --> 00:03:27,816
+Bugün konumun ismi Santranç'ta Yapay Zeka. Biliyoruz ki yapay sinir ağlarını kullanım 1950'lerde ortaya atılıyor ve birçok konu üzerinde nasıl kullanılabilir, bu yapay sinir ağlarını nasıl kullanılabiliriz gibi soru işaretleri getiriyor.
+
+13
+00:03:29,816 --> 00:03:30,415
+Peki.
+
+14
+00:03:31,219 --> 00:03:44,859
+Burada hani satrancın önemi ne? Şimdi yapay sinir ağları insan zihninden kopya çekilerek yapılıyor. Ve bu işle uğraşan bilim insanları, mühendisler diyor ki insan zekası ne kadar yakın hareket edebilirsek yapay zekayı o kadar geliştirmiş olabiliriz.
+
+15
+00:03:45,379 --> 00:03:58,979
+Satranç da burada devreye girecek. Çünkü insan zekasının yaratıcılık, hesaplayabilme kapasitesi, öngörü yetişsi, bu tarzda birçok özelliğini test ediyor bu satranç oyunu. Bu yüzden yapay yön yükselişi içinde aslında uygun bir düzlem oluşturmuş oluyor.
+
+16
+00:04:00,979 --> 00:04:27,000
+Şimdi ben yapay zekanın elle yazılmış bir programın daha doğrusu. Nasıl santranç onları kısaca bir açıklayayım. Bu yapay sınavının kullanımıyla her hamleyi puanlandırıyor santranç ve işlem kapasitesinin yettiği kadarıyla bu ekranın şu anda gördüğünüz decision tree dediğimiz ve en yüksek puanlı hamleleri tespit edebildiği ağaçlar oluşturuyor. Bu hamleler arasından en yüksek puanlı hamleyi yapıyor. Bu şekilde bir çalışma stili var yapay zekanın.
+
+17
+00:04:28,788 --> 00:04:40,327
+Bu programlar 60-70'lerde insanların karşısına çıkıyor fakat bu Grandmaster dediğimiz santrancının en yüksek ücret bir usulun yenmekte başarısız oluyor. Bu yüzden herhangi bir sükse yaratamıyor uzun bir süre boyunca.
+
+18
+00:04:41,908 --> 00:04:53,947
+Daha sonradan 1985 yılında dönemin dünya birincisi GM Jerry Kasparov, 4 farklı şirketin amiral gemisi yapay zekalarına karşı 32 sıfırlık ekranla gördüğümüz oyun 32 sıfırlık sert bir galibiyet elde ediyor.
+
+19
+00:04:54,508 --> 00:05:08,288
+Fakat IBM'de başta olmak üzere birçok firma bu işin peşini bırakmıyor. Ondan sonra ilk kez IBM'in Diptoht ismini verdiği bir yapay zekası ünlü bir GM'e karşı bir galibiyet elde ediyor. Ondan sonra tekrar gözler dünya birincisi Kasparov'u yenebilir miyiz de dönüyor.
+
+20
+00:05:09,620 --> 00:05:30,840
+Ondan sonra 1996 yılında yeni ismiyle Deep Blue Kasparov'un karşısına çıkıyor tekrardan. Fakat ilk maçı kazanıyor Kasparov'a karşı. Ondan sonra Kasparov yapay zekanın nasıl bir mantık kullanarak Santranç oynadığını çözümledikten sonra kalan bütün maçları yeniyor ve Deep Blue'yu alt ediyor. Ondan sonra da yapay zeka hükmü diyelim bir yıl sonraya kalmış oluyor bu şekilde.
+
+21
+00:05:32,019 --> 00:05:41,860
+Ondan sonra bir yıl sonraya kadar olan süreçte IBM'in mühendisleri Deep Blue'nun oyun süresinde kullandığı ağaçlarda en az getirisi olan devam yollarını elemek gibi bir algoritma geliştiriyor.
+
+22
+00:05:41,980 --> 00:05:49,340
+Çünkü mesela Santranç'ta sallıyorum ikinci hamlede şah sürmek gibi bir hamle hiçbir zaman yapılmaz.
+
+23
+00:05:49,419 --> 00:05:54,192
+Ama Deep Blue ağaç oluştururken bunları ayırt edemediği için ikinci hamlede şah...
+
+24
+00:05:54,192 --> 00:06:16,732
+İlerle etmekten başlayıp da onun arkasından gelen binlerce hamleyi de test ediliyor. Mühendisler bu tarz çok kötü olan sonuçları bu decision tree'den kaldırarak Deep Blue'nun işlem kapasitesini en azından ilk katına çıkarmayı becidiyorlar bu algoritma sebebiyle. Ondan sonra 1997 yılında tekrardan Deep Blue yeni versiyonuyla Kasparov'un karşısına çıkıyor.
+
+25
+00:06:17,267 --> 00:06:21,667
+Bu ünlü The Rematch olarak geçer, Rövanş Maç olarak geçer. Çok ünlüdür.
+
+26
+00:06:21,667 --> 00:06:31,987
+Ondan sonra 1997 yılında karşı karşıya geldiğinde Deep Blue Kasparov'a karşı 3.5-2.5'luk bir galibiyetle bu yapay zeka çoğu dediğimiz çağın kapılarını açmış oluyor.
+
+27
+00:06:31,987 --> 00:06:35,347
+Tarih 2 dakikan kaldı. Özür dilerim.
+
+28
+00:06:35,347 --> 00:06:39,747
+Burada şöyle bir münas var. Bu Deep Blue...
+
+29
+00:06:39,860 --> 00:06:59,459
+Mühendislerin beklediği şekilde insan beynine çalışarak hareket etmiyor aslında. Sadece kaba kuvvet kullanıyor. İşlem kapasitesinin gücüyle bu işi yapmış oluyor. O yüzden bir takım tartışmaya çıkıyor. Hem santranç ne kadar zeka oyunudur tartışmalara çıkıyor çünkü kaba kuvvetle yenilebildi. Hem de yapay zeka insana benzemek zorunda mı diye bir soru işaretlerini birlikte getirmiş oluyor kendisiyle.
+
+30
+00:07:01,459 --> 00:07:29,459
+Ondan sonra yapay öğrenme konumuz var. Daha son iki yıllardan yapay sinir ağlarından daha öte bir şekilde farklı bir çığır açan yapay öğrenme yöntemleri yükselişe geçiyor. Google AlphaGo isimli bir yapay zeka yapıyor. Bu yapay zeka Santranç gibi basit algoritmalarla çözümlenmeyecek Go oyunu var. Meşhur bir oyundur. Milyonlarca hamlesi vardır. O Go oyununda ortaya çıkıyor. Basit algoritmalara bağlı değil de insanların oyunu da 30 milyon tane hamleyi AlphaGo'ya izletiyorlar. Ondan sonra AlphaGo ilk kez 2016 yılında Dünya Go şampiyonunu yeniyor.
+
+31
+00:07:29,459 --> 00:07:50,979
+Bu gelişmenin de ardından şöyle bir şey daha ortaya çıkıyor. Diyor ki biz insanların oynadığı 30 milyon hamle yerine bu AlphaGo Zero'yu kendisiyle oynatalım diyorlar. Ve AlphaGo Zero diye yeni bir versiyon çıkartıyorlar. Bu yeni versiyonla sadece Santrancın kurallarını öğretiyorlar. Kurallarını öğrettikten sonra da bu yapay zeka kendi kendisiyle oynamaya başlıyor. Bu şekilde bir yöntem deniyorlar.
+
+32
+00:07:51,956 --> 00:08:17,976
+Ondan sonra bu Alphagozü'lü ilk başta saçma sapan oyunlar oynuyor. Kendisi hiçbir şey bilmediğinden dolayı en kötü hamleleri yapıyor. Az bir şey santrançı bir insan bile bu ne oynuyor diyeceği cinsen oyunlar oynuyor. Fakat 30 milyon oyun oynadıktan sonra Alphagozü'lünün yani eski versiyonunun, insan hamlelerini izleyen versiyonunun karşısına çıkartıyorlar ve Go oyununda yine 100-0'lık korkunç bir galibiyet alıyor yeni versiyonumuz Alphagozü'lü versiyonu.
+
+33
+00:08:19,956 --> 00:08:30,336
+Slight'ta gördüğünüz gibi bu gerçekten şaşırtıcıydı. Fark ettik ki insan belisi on yıllarda topladığımız bütün bilgiler aslında bizi kısıtlıyor olabilir diyor. Çünkü yapay zekanın kendi kendisi oynadığında daha iyi oynadığını fark ediyoruz.
+
+34
+00:08:31,216 --> 00:08:32,296
+[öğrenci].
+
+35
+00:08:34,419 --> 00:08:57,000
+Tamamdır. Ondan sonra Alfa Gozio'da satrancı oyarlıyoruz ve satrancının o dönemdeki en iyi yapay zekalandan biri olan Stockfish'i 100 maçta 28-0'lık bir galibiyetle yeniyor. Ondan sonra Stockfish bir de saniyede 6 milyona hamle incelerken bu Alfa Gozio dediğimiz kendi kendine öneren yapay zeka ise sadece saniyede 60 bin hamle inceleyebiliyor. Buna rağmen Stockfish'i çok rahat bir şekilde yenebiliyor. Böyle bir durum var.
+
+36
+00:08:58,100 --> 00:09:20,920
+Son çok kısa bir sızaytım kaldı hocam. Günümüze geldiğimizde ise Santranç motorları büyük işlem kapasitesine ihtiyaç duymadan telefonumuza kadar küçülmüş durumda var. Bu resimde gördüğümüz bizim ilk başta Kasparov'ya yenen Deep Blue'nun ekranı. Şu anda insanlar olarak yapay zekalı maçlar oynadılar. Kendimizi Santranç'la bir yandan geliştirirken bir yandan da kendi hamlelerimizin doğruluk puanını yapay zekadan alıyoruz. Öyle bir duruma gelmiş durumda.
+
+37
+00:09:21,364 --> 00:09:48,723
+Dünya turnuvalarında da keza bu GM'lerin tercihleri yapay zekalara gösteriliyor. Ne derece doğru hamle yaptı, neden yenildi gibisinden. Ayrıca biz de ekranda gördüğünüz gibi sadece kendi kişisel bilgisayarımızda, telefonumuzda bu yapay zeka üstününü kesin olarak kabul ediyoruz. Ondan doğruluk puanı alıyoruz. Hatta şu an güncel dünya şampiyonu Magnus Carlsen turnuvalarda bu yapay zeka Stockfish'e göre %97 doğrulukta oynadı diye insanlık adına seviniyoruz, böyle bir şey yapabiliyoruz diye. Yapay zeka da bu hale gelmiş durumda şu anda.
+
+38
+00:09:49,364 --> 00:09:54,044
+Bence ele geçirdiği düşünülüyor direkt olarak. Böyle bir durum var. Teşekkür ediyorum dinlediğiniz için.
+
+39
+00:09:55,064 --> 00:09:55,444
+Teşekkürler.
+
+40
+00:09:55,444 --> 00:09:56,464
+Kaynaklar da şekilde.
+
+41
+00:09:57,144 --> 00:09:58,204
+[öğrenci]'ı sağlayabilirim.
+
+42
+00:09:58,904 --> 00:10:02,964
+Sağ olasın. [öğrenci] burada mısın? [öğrenci]?
+
+43
+00:10:05,644 --> 00:10:12,264
+[öğrenci] burada isen ekranı paylaşmanı isteyeceğim. Bir ses ver ama göremiyorum listede ben.
+
+44
+00:10:12,504 --> 00:10:13,364
+Hocam buradayım.
+
+45
+00:10:13,364 --> 00:10:14,084
+Tamam.
+
+46
+00:10:14,580 --> 00:10:30,940
+Tamam, sen ekranını paylaşırken sorunuz var mı arkadaşlar [öğrenci]'a? Mikrofon açabilirsiniz. Chatten yazabilirsiniz. Peki. [öğrenci] benim bir sorum olacak veya bir yorumum olacak.
+
+47
+00:10:31,759 --> 00:10:40,440
+Decision trees tam olarak yapay sinir ağ değil. Orada böyle sanki biraz kavram mı karıştı diye düşünüyorum.
+
+48
+00:10:41,011 --> 00:10:50,611
+Hocam, şöyle oldu. Konu santranç olduğu için çok derinine girmek istemedim. Hemen oraya yapay sinalarından ortaya çıkıyor. Sonra böyle bir noktaya varıyoruz diye kısa özet geçeyim dedim. Öbür türlü çok uzuyordu çünkü konu.
+
+49
+00:10:50,911 --> 00:11:04,411
+Tamam, o zaman arkadaşların için belirtmiş olalım. Decision 3 tam olarak bir yapay sınırağı değildir. Onun farklı bir çalışma şekli var. Peki hemen başlayalım [öğrenci] senle.
+
+50
+00:11:04,411 --> 00:11:06,531
+Tamam, başlıyorum hocam.
+
+51
+00:11:07,796 --> 00:11:11,796
+Merhaba arkadaşlar.
+
+52
+00:11:12,796 --> 00:11:23,796
+Bu sistem, yani bilgisayar sistem olarak bir parçacı ele alıp, ona karmaşık sistemden üretmek. Arkada, yandırda bir örnek var.
+
+53
+00:11:23,796 --> 00:11:28,796
+Yanda da, teller otomatik, başta görmüşsünüzü denilen bir örnek var.
+
+54
+00:11:29,152 --> 00:11:44,552
+Şimdi bunun tarihinden bahsedersek ilk olarak Westworld'den şu an günümüzde de olan bir film. Yetnik'lerde ilk olarak çekiliyor. Bunda kullanılıyor ve sağ üst kışıda gördüğünüz gibi robot görüşe sahip oluyor.
+
+55
+00:11:45,364 --> 00:12:00,364
+Ama en önemli, daha günümüze uygun şekilde partikul sistem dediğimiz şeyler, yani grafik üretimi bilgisayarda Star Trek filminde oluyor.
+
+56
+00:12:05,364 --> 00:12:12,364
+Bazı animasyonları örnek verecek olursak şu animasyonlardan, mesela Arya Aşi ile ilgili bir animasyon var.
+
+57
+00:12:13,652 --> 00:12:40,872
+Bu önemli olan özellik, mesela burada nasıl yazarız programda, o zor olan. Bunun içinde insanlar veri paralel hesaplaması denen bir şey önermişler. Bu işte GPU'nun temeli genel olarak. Bunun dışında bunu yazarken de bir parçacıya ekleyeceğim şeyler konum olacaktır, hız olacaktır ve iğne olacaktır.
+
+58
+00:12:41,652 --> 00:12:54,912
+Bu özelliği kullanarak karmaşık şekilde öğretebiliriz. Mesela ayın altında hortumu görmekteyiz. Patlamalar var mesela sağ üstte. Bunun dışında şelale var sağ ayın altında. Bu şekilde.
+
+59
+00:12:55,912 --> 00:13:08,152
+Burada grafiklerin gelişimini görmek için bir örnek olarak koydum. 80'li yıllardan günümüze kadar gelmiş bir oyun olan oyun var. The Elder Scroll diye. Onu koydum.
+
+60
+00:13:09,364 --> 00:13:33,259
+Burada sağdan ne kadar geliştiğini görmekteyiz. Solda ise küçük, küçük görmekteyiz. Render olayı daha az olan. Kodlamaya gelecek olursak şu şekilde bir kodlama var. Artık adına bir parçacık oluşturuyoruz. Yani bir nesne oluşturuyoruz burada. Bu nesnenin başta bahsettiğim gibi konumu, hızı bir de...
+
+61
+00:13:33,331 --> 00:13:41,132
+Bir mes olacak. Sarı ile gösterdim diye koment aldığım kısım var.
+
+62
+00:13:41,132 --> 00:13:46,331
+Mesela şu şekilde bakarsak aşağı doğru bir hareket olacak partijin.
+
+63
+00:13:46,331 --> 00:13:50,891
+Bunun dışında işte şeyleri filan kontrol ettim.
+
+64
+00:13:52,179 --> 00:14:12,419
+Bunun dışında parçaca bazı özellikler eklemekten bahsetmiştim. Mesela buna bir den eklersek lifespan diye. 255'ten başlıyor. Bir de diğer bir özellik ise hızı sağ ve sola doğru rastgele bir şekilde olsun demiştim. Şekilde. Yarsak sağa doğru gidiyor mesela. Ve soluyor.
+
+65
+00:14:15,220 --> 00:14:42,460
+Peki bunu birden fazla kez yaparsak ne olur? İşte buna biz particle sistem diyoruz. Yani bir parçacıklar varmış kompleks bir sistem oluşturmaya başlıyoruz. Bunun için yaptığım şey ilk olarak partikalları yani parçacıkların oluşan bir liste oluşturmak. Sonra bu liste ise particle dediğim bir fonksiyon var. Onu ekleyeceğiz o liste. Yani oluş yaparak yeni partikallar ekleyeceğiz.
+
+66
+00:14:43,347 --> 00:15:05,055
+Yüz tane ekleyince sağdaki bir şekilde oluşacak. Bu dönemli olan kısımda bilgisayarı zorlamamak için lifespan'i bitmiş olan şeyi silmemiz lazım. Ömrü biten bir parça değil silmemiz lazım. Bunun içinse run fonksiyon içinde sayılabilmek kısımda sondan başa doğru...
+
+67
+00:15:05,056 --> 00:15:10,056
+Ölmüş olan partikülü silmemiz lazım.
+
+68
+00:15:10,056 --> 00:15:12,056
+Son iki dakika.
+
+69
+00:15:12,056 --> 00:15:14,056
+Tamam hocam.
+
+70
+00:15:15,056 --> 00:15:18,056
+O şekilde sileceğiz.
+
+71
+00:15:18,995 --> 00:15:42,316
+Bunun temelinde ne yatıyor? Connection, daha doğrusu 80'lerde olan bir şeyi, 80'lerde bahsediyoruz burada nasıl bir grafik tasarlamışlar. Onun için ise Harvard'da bazı şeyler var. Data sharing şeklinde oluşan connection machineler var.
+
+72
+00:15:43,700 --> 00:15:51,580
+Şöyle sol işte diyoruz mesela. Bunlar işte GPU'nun temeli olarak bahsedilebilir. Şu şekilde.
+
+73
+00:15:51,580 --> 00:16:05,380
+Dört tane. Daha doğrusu işte her bir işlem. Şöyle bahsedeyim. Mesela.
+
+74
+00:16:06,676 --> 00:16:26,756
+Bizim bir verimiz var. O veriyi bir ikleme sokmak lazım. Bunu da hep bütün veriyi tamamen aktararak gerçekleştirebiliriz. Çünkü her bir partikül çok küçük bir ikleme tabi. Yani çok küçük bir hesaplamaya sahip. O zaman bizim milyonlarca iklemcimiz olsa ve hep çok küçük olursa biz bunu hesaplayabiliriz diye düşünmüşler.
+
+75
+00:16:28,052 --> 00:16:38,052
+Onu örneğe bakalım. Örneğe bakalım. Örneğe bakalım.
+
+76
+00:16:38,052 --> 00:16:46,052
+Burada bir flöking sistem var. Bu flöking sistem böyle rastgele hareket ediyor ve birleşiyorlar.
+
+77
+00:16:49,748 --> 00:16:56,468
+Sistem, yani bundaki amaç şuraya gelirse açıcık da cruising cover oluyor. Yani eşleşiyorlar.
+
+78
+00:16:57,708 --> 00:16:59,508
+Sizleriniz için teşekkür ederim.
+
+79
+00:17:00,248 --> 00:17:01,187
+Gördüğünüz için teşekkür ederim.
+
+80
+00:17:01,228 --> 00:17:02,248
+Teşekkür ediyoruz.
+
+81
+00:17:02,908 --> 00:17:05,488
+Şurada bir kanal var. Ona bakabiliriz.
+
+82
+00:17:06,407 --> 00:17:10,367
+Tamam. Sunumlarınızı bir yerden paylaşırım ben ana sayfadan.
+
+83
+00:17:12,307 --> 00:17:17,867
+Böyle der zamanda yapıyoruz. Kusura bakmayın. Peki Miracettin sen paylaşım yapar mısın?
+
+84
+00:17:18,508 --> 00:17:19,148
+Tamam hocam.
+
+85
+00:17:24,660 --> 00:17:26,019
+Şu an ekran görünüyor mu hocam?
+
+86
+00:17:27,560 --> 00:17:32,240
+Evet, görünüyor. Bir büyütebilirsin belki tam ekran yap istersen.
+
+87
+00:17:32,780 --> 00:17:33,080
+Tamam.
+
+88
+00:17:33,080 --> 00:17:34,400
+Bu konuda geçersen.
+
+89
+00:17:37,120 --> 00:17:38,300
+Tamam, başlıyorum.
+
+90
+00:17:38,920 --> 00:17:39,200
+Evet, lütfen.
+
+91
+00:17:39,200 --> 00:17:41,220
+Bugün size Adana'yı tanıtacağım.
+
+92
+00:17:42,100 --> 00:17:45,860
+Girişte birkaç genel bilgi vereceğim. Daha sonra tarih ve coğrafyasına bakacağız.
+
+93
+00:17:46,860 --> 00:17:49,680
+En sona da tarih ve turistik yerler hakkında.
+
+94
+00:17:50,355 --> 00:18:15,115
+Bilgi vereceğim. Adana, Türkiye'nin güneyinde yer alan, Akdeniz bölgesinde yer alan bir şehirdir. Nüfusa göre de Türkiye'nin en büyük altıncı ilidir. Çukurova, birimi toprakları nedeniyle tarih boyunca pek çok farklı medeniyet ev sahipliği yapmıştır. Tarihi kaynaklara göre burada kurulan ilk devlet Kitvanza Krallığı'dır. Daha sonra bölgeye yerleşen Romalılar, fotoğrafta gördüğümüz taş köprü başta olmak üzere bölgede çok fazla eser bırakmışlardır.
+
+95
+00:18:18,387 --> 00:18:26,047
+Şehre yerleşen Ramazanoğullar da yine bugün hala ayakta olan, 500-600 yıldır ayakta olan eserler, mimari eserler bırakmışlardır.
+
+96
+00:18:26,847 --> 00:18:37,768
+Kurtuluş Savaşı sırasında Pozantı ilçesinde gerçekleştirilen Pozantı Kongresi'nde, Atatürk'ün de katılımıyla gerçekleştirilen Pozantı Kongresi'nde ulusal mücadele için önemli kararlar alınmıştır.
+
+97
+00:18:38,887 --> 00:18:43,628
+Coğrafyasından bahsedelim. Şehrin Kuzey Toros Dağları ile çevrilidir.
+
+98
+00:18:44,276 --> 00:19:00,276
+Güneyde şehir merkezinin olduğu yerde Çukurova bulunur. Kuzeyde karasal iklim görülürken Güneyde de Akdeniz iklimi görülür. İklim çeşitliliği nedeniyle tarımsal ürün çeşitliliği il sınırları içerisinde oldukça fazladır. Bu da Adana'yı iyi bir tarım şehri yapar.
+
+99
+00:19:01,875 --> 00:19:08,044
+Aynı zamanda resimdeki Mersin ve İskenderunmanlarıyla da önemli bir...
+
+100
+00:19:08,051 --> 00:19:26,271
+Geçiş noktasıdır. Şehir bu nedenle ticaret ve ulaşım için de önemli bir noktadadır. Şehrin Akdeniz'e yaklaşık 160 km'lik bir kıyısı bulunur. Kıyıdaki Karataş ve Yumurtalık ilçeleri arasında yer alan Yumurtalık Tabiatı Koruma Alanı, pek çok endemik türün, nesne tükenme tehlikesinde olan türün yaşadığı bir doğal alandır.
+
+101
+00:19:28,352 --> 00:19:35,392
+Tarihi ve turistik yerleri Adana deyince aklı ilkelenin Taş Köprü'dür. Şu an dünyada hala kullanımda olan en eski köprüdür.
+
+102
+00:19:35,695 --> 00:20:01,056
+Romallar döneminde, dördüncü yılda yapılmıştır. Şehir merkezinde, Seyhan Nehri üzerinde yer alır. Taşköprünün kitabesi bugün Adana Arkeoloji Müzesi'nde yer alıyor. İkincisi, Büyük Saat Kulesi ise, Klasik Osmanlı Saat Kuleleri'ne bir örnektir. Vali Ziya Paşa döneminde, 1881 yılında yaptırılmıştır. 32 metre ile de Türkiye'deki en uzun saat kulesidir.
+
+103
+00:20:01,907 --> 00:20:14,248
+Ramazanoğları şehre yerleştiklerinde, Anadolu Beylikleri döneminde şehre yerleştiklerinde burada hem devlet işlerini yürütmek hem de bey ve ailesinin yaşayacağı bir alan yaptırmak için bu konayı yaptırmışlardır.
+
+104
+00:20:14,248 --> 00:20:22,167
+Yanada bir medrese yaptırmışlardır. 1495 yılından beri bu iki yapıda hala şehir merkezinde ayaktadır.
+
+105
+00:20:23,635 --> 00:20:40,375
+St. Paulanus adına 1880 yılında yapılan İtalyan Katolik Kilisesi de tepesinde bulunan Meryem Ana heykelinin bebeğe benzetilmesinden dolayı Bebekli Kilise ismiyle anılmıştır. Daha sonra da resmi ismini yine bu şekilde değiştirilmiştir.
+
+106
+00:20:41,255 --> 00:20:50,315
+Tepe Bağ Hüyü, Hüyük'te yapılan kazılarda, alt katmanlarda, Tunçan'da ait çeşitli araç gereçler bulunmuştur.
+
+107
+00:20:50,740 --> 00:20:56,220
+Bu da şehir merkezindeki yaşamın çok çok eski tarihlere dayandığının kanıtıdır.
+
+108
+00:20:57,940 --> 00:21:08,559
+Ulu Camii de yine Ramazanoğulları döneminde yapılmış bir camidir. Memlük ve Selçuklu mimarisinin izlerini taşımaktadır. Bu kadar. Dinlediğiniz için teşekkür ederim.
+
+109
+00:21:10,919 --> 00:21:14,480
+Biz teşekkür ederiz. Sen erken bitirmiş oldun. Süper.
+
+110
+00:21:15,059 --> 00:21:29,519
+Peki, şimdi [öğrenci] buradaysan senden ekranı paylaşmanı isteyelim. Arkadaşlar var mı sorularınız? Miraciyetine sorabiliriz. [öğrenci] sen bir yandan paylaş ekranını.
+
+111
+00:21:35,635 --> 00:21:37,455
+Günaydınlar herkese. Sesim iyi geliyor mu?
+
+112
+00:21:38,495 --> 00:21:39,415
+Evet, iyi geliyor.
+
+113
+00:21:41,395 --> 00:21:41,715
+Tamam.
+
+114
+00:21:42,515 --> 00:21:54,035
+Konum Blitzkrieg. Blitzkrieg ya da Türkçesiyle Yıldırım Harbi çok uzun bir geçmişi var ama en etkili Almanların kullandığını biliyoruz.
+
+115
+00:21:55,315 --> 00:22:02,235
+İkinci Dünya Savaşı sırasında Almanların temel stratejisiyle ve temel olarak bahsetmek istersek bu savaşta
+
+116
+00:22:02,708 --> 00:22:19,948
+Savaş şu şekilde yürüyor genel olarak. Almanların meşhur Lufthofeleri, yani uçakları, öncelikle bütün ulaşım ağlarını, bütün haberleşme ağlarını ve tanklara zarar verebilecek bütün topçu mevzilerini bombalıyorlar.
+
+117
+00:22:28,243 --> 00:22:32,323
+Temel olayı tankları, Almanların hızlı ve güçlü tankları.
+
+118
+00:22:34,323 --> 00:22:49,043
+Bu uçaklar cepheyi bombalarken normal askerleri de sis perdesi kurup savaşın nereden geleceğini gizlemeye çalışıyorlar.
+
+119
+00:22:49,923 --> 00:22:53,603
+Bu genelde her zaman başarılı oluyor. Çünkü...
+
+120
+00:22:53,779 --> 00:23:05,139
+Üstlerinden uçak geçerken ve sürekli saldırı atındayken düşmanın komutanları ve askerler panik halinde doğru kararlar veremiyorlar.
+
+121
+00:23:06,199 --> 00:23:14,719
+Bu kararsızlık başladığı zaman Almanların tek bir yere topladığı bütün tanklar düşmanın ana cephesine doğru koşmaya başlıyor.
+
+122
+00:23:15,159 --> 00:23:18,839
+Çok hızlı gidiyorlar ve tam ortalarından yarıyorlar.
+
+123
+00:23:19,571 --> 00:23:45,151
+Yarma işlemi başarılı olduktan sonra sağ ve sola iki tarafa hilal taktiği gibi yayılıyorlar ve kapatıyorlar bütün düşmanı. Düşman kapatıldıktan sonra tamamen bütün hareketleri kısıtlanıyor. Hareketleri kısıtlandığı için ya teslim olmak zorundalar ya da Almanlar tarafından katlediliyorlar. Katledilme olayı genelde Almanların o düşmandan ne kadar nefret ettiğine bağlı oluyor.
+
+124
+00:23:46,996 --> 00:24:13,455
+Kalan askerler piyadeler tarafından esir alınıyor ya da öldürülüyor demiştik. Peki bu taktik ne işe yaradı Almanlar adına? Almanlar Fransa'ya savaş açtıktan 3 hafta sonra Fransız topraklarının neredeyse 2 bölü 3'ünü tamamen almıştı. Bunun komik bir hikayesi de var. Fransızlar bu devasa Alman ordusunu görmesine rağmen.
+
+125
+00:24:13,844 --> 00:24:36,903
+Hiçbir şekilde önleme almıyorlar. Yani bu pilotlar üstlerinden geçiyor Alman ordusunun. Bunu bildiriyorlar. Ama Fransızlar o kadar güvenmiyorlar ki kendi askerlerine bile pilotların dağla geçtiğini düşünüyorlar. Ve iki haftada bu şekilde ilerlenemeyeceğini düşünüyorlar. Kendileri sınıra asker bile yollamıyorlar. Bu yüzden Almanların hiçbir şekilde önü kesilemiyor.
+
+126
+00:24:37,587 --> 00:24:46,268
+Önü kesilemeyen Almanlar Paris'e dayandıktan sonra hiçbir şekilde savaşamayacağını anlayan Fransa, Paris'e zarar gelmemesi için Paris'i savaşmadan bırakıp gidiyorlar.
+
+127
+00:24:48,347 --> 00:24:58,288
+Polonya'ya da aynı şekilde savaş aşağı açmaz başkentlerini almaları iki hafta sürüyor. Ve o kadar hızlı alıyorlar ki yürüyen piyadeleri tanklarına yetişemiyor.
+
+128
+00:24:59,763 --> 00:25:16,124
+Peki Rusya'da neden işe yaramıyor? Aslında işe yarıyor. Stalingrad'a kadar çok çok hızlı bir şekilde Rusya'yı topraklarına alıyorlar. Hatta 3 milyona yakın Rus öldürüldüğü söyleniyor bu savaşta.
+
+129
+00:25:17,243 --> 00:25:26,743
+Peki neden kaybediyorlar? İklimi hesaba katmıyorlar. Rusya'ya gittikçe sonbahardan kışa kadar bir vakit geçiyor.
+
+130
+00:25:27,539 --> 00:25:49,620
+Bütün tankları donmaya başlıyor. İçerisindeki yakıtları donmaya başlıyor. İnsanların üzerinde kıyafetler yetersiz gelmeye başlıyor. Hava ikmal yapmaya çalıştıklarında Ruslar artık olayı anladıkları için ikmal yapan bütün uçakları vurmaya başlıyorlar. Bu şekilde hiçbir yardım gelemiyor. Ki Stalingrad çok fazla Rusların içerisinde olduğu için uzak bir nokta.
+
+131
+00:25:54,708 --> 00:26:14,764
+İstediğiniz için teşekkür ederim.
+
+132
+00:26:15,188 --> 00:26:28,208
+Stalingraddik insanların savaşamadan ölmesinin temel sebebi de Rusların o dönemde bizim Kurtuluş Savaşı gibi ciddi bir savunma göstermesi, kadın erkek hepsi bir araya geliyor ve Almanları arkalarından kapatıyorlar.
+
+133
+00:26:29,508 --> 00:26:32,948
+Toyga, yavaş yavaş toplamanı istiyorum. Yavaş değil, hızlı.
+
+134
+00:26:33,848 --> 00:26:38,188
+Tamam hocam, bitti zaten. Konum bu kadardı. Denediniz için teşekkürler.
+
+135
+00:26:39,788 --> 00:26:41,368
+Tamam, teşekkür ediyoruz.
+
+136
+00:26:41,887 --> 00:26:51,788
+[öğrenci] burada mısın? Buradaysan ekranı sana devredelim. Arkadaşlar, sorunuz var mı? Hemen hızlı bir şeyler soracaksanız.
+
+137
+00:26:52,827 --> 00:26:53,447
+[öğrenci] açar.
+
+138
+00:26:55,587 --> 00:26:56,707
+Geliyor mu sesim?
+
+139
+00:26:57,847 --> 00:26:58,508
+Geliyor biraz.
+
+140
+00:26:58,528 --> 00:26:58,988
+Sesim geliyor mu?
+
+141
+00:27:00,107 --> 00:27:01,907
+Geliyor [öğrenci] biraz kesin.
+
+142
+00:27:01,907 --> 00:27:02,467
+Sesim gelmiyor mu?
+
+143
+00:27:03,768 --> 00:27:08,147
+Geliyor, geliyor. Gelmiyor değil de. Şu anda mikrofonu kapattın.
+
+144
+00:27:10,067 --> 00:27:11,647
+Şuan net sesim.
+
+145
+00:27:13,508 --> 00:27:17,948
+Biraz yankı var. Herhalde bağlantıyla ilgili problem yok.
+
+146
+00:27:19,948 --> 00:27:21,228
+Büyütebilir misin?
+
+147
+00:27:23,048 --> 00:27:25,248
+Tamam, başlayalım ondan sonra.
+
+148
+00:27:26,248 --> 00:27:31,228
+Merhaba arkadaşlar, ben [öğrenci]. Bugün sizlere Japonya'da hayat ve kültürden bahsedeceğim.
+
+149
+00:27:31,763 --> 00:27:40,483
+Öncelikle Japonya dediğimiz yer Doğu Asya'da bir adı ülkesi. Başkentinde Tokyo, Rusya, Kuzey Kore, Güney Kore, Çin ve Tayvan'la komşu.
+
+150
+00:27:40,483 --> 00:27:48,003
+Japonlar buraya Nihon diye ithal hitap ediyorlar ve yukarıda da kanca gösterimini gösterdim.
+
+151
+00:27:48,003 --> 00:27:54,483
+Bunlardan ilki güneş, ikincisi de köken anlamına geliyor. Bu yüzden de zaten doğal güneşin ilkesi olarak bilmiyor Japonya.
+
+152
+00:27:54,963 --> 00:28:06,084
+Japon'u dört bölgeye ayırabiliriz. Tokaido, Honšu, Shikoku ve Kuyushi olarak. Bizdeki aynı Akdeniz, Kalemizli, Çanadolu gibi onlar da bu şekilde ayırıyorlar.
+
+153
+00:28:06,624 --> 00:28:23,263
+Japonya, 6852 adadan oluşan bir takım ada. Para birimi olarak gen kullanılıyor burada. Bizdeki yaklaşık 7-8 kuruşa tekabül ediyor. 378 bin kilometre kare yüzü ölçümlü ve 128 milyon nüfusa yaklaşık olarak sahip.
+
+154
+00:28:24,384 --> 00:28:29,084
+Endonez'den sonra ikinci en kalabalık adı ilkesi ve genellikle dağlık bir bölgede.
+
+155
+00:28:29,971 --> 00:28:43,151
+Bunlar da yanardağ genellikle bu dağlarda. En yüksek dağ da zaten Japonya'nın Fujida'ı bir yanardağ. Burada da Fujida'ndan görseller koydum. Japonya'da 4 mevsim belirgin bir şekilde yaşanabiliyor.
+
+156
+00:28:44,367 --> 00:28:51,367
+Bir ucundan diğer ucuna sıcak ve soğuk sakıntıları geçtiği için de pek çok balık türü burada yaşıyor.
+
+157
+00:28:51,367 --> 00:28:54,367
+Bu yüzden balıkçılık da popüler aslında Japonya'da.
+
+158
+00:28:54,367 --> 00:28:59,367
+Yanındaki görselde bir sakura ağacı koydum. Bu Japonya'da çok popüler bir ağaç.
+
+159
+00:28:59,367 --> 00:29:04,367
+Yaprakları pembe, pembe döken bir ağaç. Kiraz ağacını olarak biliniyor.
+
+160
+00:29:04,367 --> 00:29:07,367
+Genelde Mart ayı gibi açıyor ve hızlı yaprak döken bir ağaç.
+
+161
+00:29:07,367 --> 00:29:10,367
+Ve Japonlar bunun oluşturduğu görüntüyü çok seviyorlar.
+
+162
+00:29:11,284 --> 00:29:31,744
+Japonya'da üç çeşitli bir afabe kullanılıyor. Bunlardan biri kanji, bir de kiragana, bir de katakana. Kanji, Çin'den geçme bir afabe. Aynı Çin'deki gibi semboller ve kelimeler ifade ediliyor. Hatta şuradaki güneşi ilk slide'da göstermiştim Japonya'yı ifade ederken güneşme köken demiştim.
+
+163
+00:29:32,112 --> 00:29:48,592
+Bunlar tabi ifade ettikleri şeye benzer olarak başta dizayn ediliyor ama zamanlar değişiyor ve en sağdaki halini alıyor günümüzdeki hale. Yaklaşık 2000 kancı var ve bunlardan 1000'i çocukları ilkokulda diğer 1000'i de ortaokulda öğretiliyor günlük kullanımda.
+
+164
+00:29:48,592 --> 00:30:00,000
+Diğer iki alfabeya Hiragana ve Katakana dedim. Bunlar da seslerden ve gelerden oluşan alfabeler. Farkı şu, Katakana genelde yabancı dilden geçen kelimeleri anlatmak için kullanılıyor.
+
+165
+00:30:00,000 --> 00:30:04,279
+Hiragana ise kendi dillerindeki kelimeleri ifade etmek için böyle bir ayrımı var.
+
+166
+00:30:04,756 --> 00:30:14,756
+Japonya'da zorunlu eğitim 9 yıl, 6 yıl ilkokul, ortaokul 3 yıl sanatlı istiyor ve üniversite geliyor. Bizdeki gibi aynı sınava girerek geçiyorlar buralara.
+
+167
+00:30:15,496 --> 00:30:21,696
+Çocuklar Sony Mini Nintendo'nun ürettiği video oyunlarını oynamayı seviyorlar, anime izlemeyi ve manga okumayı seviyorlar.
+
+168
+00:30:22,016 --> 00:30:27,676
+Onun dışında geleneksel olarak oynadıkları oyun ve oyuncaklar mevcut. Mesela origami gibi, bunu hepimiz zaten biliyoruz.
+
+169
+00:30:27,776 --> 00:30:32,756
+Keleplerin katlanarak şekiller oluşturulan bir sanat. Ejder, ağdır, kuş, figürler yapılıyor.
+
+170
+00:30:32,756 --> 00:30:45,355
+Renkli misleklere benzeyen solda Opojikiler var. Bunlar genelde kız çocuklar seviyorlar. Mislep gibi oynanan bir oyun. Yan tarafta da Beygoma var. Bunun da genelde erkek çocuklar seviyor. Bir söndürülerek oynanan bir topaç oyunu.
+
+171
+00:30:46,451 --> 00:31:05,231
+Japonya'da beyzbol sporu popüler. Jyvushu sporları popüler. Judo, Kento, Karate, Smo, Aikido gibi. Judo, rakibin ağırlığını yere sermek için kullanmaya değeri bir spor. Ortadaki görseller de var. Kendo, zırsız ve mihperli kılıçla oynanan bir oyun. O da sağdaki görseller.
+
+172
+00:31:05,632 --> 00:31:17,692
+Sumo biraz güreşe benzer bir oyun. Genel kilolu insanlar oynuyor çünkü sadece eller kullanılarak oynanan bir spor. Aikido da yine karate'ye benzer ama yine kılıç katakana kullanılan bir spor.
+
+173
+00:31:18,644 --> 00:31:40,024
+Japonya'da geleneksel kıyafet olarak kimonolar mevcut. Kadınlarınki daha renkli desenli çiçeklidir. Erkeklerinki düz renk oluyor. Bellerinde bele dedikleri kuşaklar, kemerler bulunuyor. İpek kumaşlar ve kolları geniş. Bunları pek günlük kullanımda rahat olmadığı için kullanmıyorlar. Geleneksel törenlerde vesaire.
+
+174
+00:31:45,875 --> 00:31:50,875
+Günlük kullanımda bizim gibi aynı tişört, kot, pantolon, spor gömlek ve şokman giyiyorlar.
+
+175
+00:31:51,028 --> 00:32:11,587
+Son olarak bu özel günleri koydum. Bunları tek tek anlatmayacağım da burada bahsetmek istediğim çok fazla özel gün ve kutlama yaptıkları mavi olanlar, geleneksel ve törenler bunlar tahtil değil, kırmızılar da tahtil. Mesela işte bir de Nevruz var. Bizden onun resmi tahti değil, bizden onlar için ilk buhar gün günü resmi tahti olaraktır.
+
+176
+00:32:11,587 --> 00:32:18,327
+İşte anayasa günü, yeşil çevre günü, çocuk günü, yaşlara saygı, kültür günü gibi böyle değişik.
+
+177
+00:32:19,028 --> 00:32:23,528
+Tatiyle yaptıkları, resmi tahsil olan günler var bizden farklı olarak.
+
+178
+00:32:24,688 --> 00:32:29,408
+Maviler de dediğim gibi, festival olan günler, Bon Festivali gibi.
+
+179
+00:32:29,408 --> 00:32:34,567
+Genelde çocuklara özel festivaller oluyor, kız çocuklarına ve erkek çocuklarına özel.
+
+180
+00:32:34,567 --> 00:32:38,228
+Erkek çocuklarına flagalar renkli flaglar koyuyoruz.
+
+181
+00:32:38,228 --> 00:32:42,728
+Kız çocuklarına bebekleri, gizlilikleri bir tören var.
+
+182
+00:32:42,768 --> 00:32:47,948
+Bunlar gibi. Anlatacaklarım bu kadar. Dinlediğiniz için teşekkür ederim. Kaynaklarımla bunlar.
+
+183
+00:32:49,528 --> 00:32:56,248
+Teşekkürler. Soru varsa sorun diyeceğim. Özgür bir yandan slide'larını açar mısın?
+
+184
+00:32:57,768 --> 00:32:59,268
+Tabii hocam. Sesim geliyor değil mi?
+
+185
+00:32:59,868 --> 00:33:00,288
+Geliyor.
+
+186
+00:33:00,288 --> 00:33:00,488
+Tamam.
+
+187
+00:33:06,168 --> 00:33:06,968
+Peki.
+
+188
+00:33:07,955 --> 00:33:09,375
+Şöyle görebiliyorsunuz.
+
+189
+00:33:09,555 --> 00:33:10,835
+Evet, şimdi güzel.
+
+190
+00:33:11,395 --> 00:33:18,175
+Tamam, başlıyorum. Merhaba arkadaşlar, isim [öğrenci]. Bugün elektrogitarlar nasıl çalışır? Genel bir bakış atacağız buna.
+
+191
+00:33:19,075 --> 00:33:32,215
+Bu sunumda önce temel çalışma prensiplerinden başlayıp, daha sonra çalışmasını sağlayan manyetikleri, daha sonra amfisi, manyetiklerin tipleri ve en son çıkarılan ses ve bu ses nasıl değiştirilebilir? Buna bakacağız.
+
+192
+00:33:34,259 --> 00:33:44,019
+Elektrik gitar temel olarak gövdesindeki manyetikler sayesinde tellerdeki titreşimi yakalayıp bunu bir elektrik sinyaline çevirip amfiye verir.
+
+193
+00:33:44,879 --> 00:33:50,220
+Ve amfi de bu elektrik sinyalini güçlendirip hoparlöre vererek dışarıya ses çıkmasını sağlar.
+
+194
+00:33:51,220 --> 00:34:00,980
+Elektrik gitarların gövdesi sesin yansıyıp yükselemeyeceği akustik bir gövde olmadığı için eğer amfiye bağlamazsak çok yüksek bir ses alamayız tellerden.
+
+195
+00:34:03,059 --> 00:34:27,399
+Elektrik itirme manyetikleri bir mıknatısın etrafına çok sayıda ince iletken tel dolanmasıyla oluşur. Gövdede tellerin hemen altında bulunan manyetikler bu titreşimi gövdede hemen tellerin altında bulunan manyetikler bu mıknatısın manyetik alanı sayesinde tellere etki eder ve tellerin bir titreşiminde bu manyetik alanı sapmaya sebep olur.
+
+196
+00:34:27,827 --> 00:34:32,307
+Bu sapma da mıknasının etrafındaki tellerde bir elektrik akımı oluşturur.
+
+197
+00:34:33,068 --> 00:34:39,007
+İşte bu akım da hoparlöre verilemeyecek kadar küçük olduğu için amfi burada devreye girer.
+
+198
+00:34:39,547 --> 00:34:44,887
+Amfinin görevi burada bu akımı büyütüp ve istediğimiz gibi değiştirip hoparlöre vermektir.
+
+199
+00:34:46,367 --> 00:34:50,528
+Burada fişe takılan alet amfidir. Elektro gitarların kendisi.
+
+200
+00:34:51,092 --> 00:34:57,092
+Bir fıçe takılması gerektirmez. Ama bazılarında kendi içinde batarya bulunabilir.
+
+201
+00:34:59,092 --> 00:35:05,092
+Manyetiklerin tiplerine geldiğimizde Single Coil adı üstünde tek bobinden oluşan manyetiklerdir.
+
+202
+00:35:05,092 --> 00:35:11,092
+Bu manyetikler farklı enerji kaynaklarından dışarıdan istemeyen gürültü çekebildiği için
+
+203
+00:35:11,572 --> 00:35:37,372
+Single Coil, Distortion dediğimiz Rock ve Metal şarkılarının daha çok kullanılan efekt için pek ideal değildir. Çok temiz ses üretemez. O yüzden Hammaker üretilmiştir. Hammaker'da iki bobinin kutupları ters bağlanır. Bu şekilde birinin çektiği gürültüyü, diğeri sıfırlayabilir ve Distortion'da çok daha temiz bir efekt alınabilir. Rock ve Metal şarkılarının daha çok Hammaker tercih edilir bu yüzden.
+
+204
+00:35:39,923 --> 00:35:54,163
+Bu manyetik dediğimiz şeyler gövdede genelde iki single bir hambakır, iki hambakır veya üç single olarak bulunur. Hambakırlar genelde köprüye yani tellerin tutulduğu yere daha yakın bulunur.
+
+205
+00:35:55,283 --> 00:36:04,243
+Ve gitarın gövdesinde ayrıca bu manyetiklerin hangisini kullanacağımızı seçmek için ve sesi ayarlamak için topuzlar bulunur.
+
+206
+00:36:04,851 --> 00:36:16,851
+Bunun dışında amfinin de karmaşıklığına göre üstünde birçok efekt seçimi bulunabilir sesi değiştirmek için. Dinlediğiniz için teşekkürler. Bunlar da kaynaklarım.
+
+207
+00:36:18,531 --> 00:36:30,271
+Teşekkür ederiz [öğrenci]. Sorularınız var mı arkadaşlar? İhtar, merakınız? Peki [öğrenci] bir yandan slide'larını açabilir misin?
+
+208
+00:36:39,059 --> 00:36:58,860
+[öğrenci] duyuyorsun değil mi beni? Hocam, [öğrenci] yerine ben almıştım hatırlarsanız. Tamam, tamam. Teyza, tamam. Sen açar mısın o zaman? Tamam. Hazır olduğunda başla. Ekranım geliyor şu an herhalde. Geliyor. Tamamdır. Ekran yapabilirsen.
+
+209
+00:37:01,619 --> 00:37:22,699
+Merhaba herkese. Sunumunda sizlere Exoplanets yani öte gezegenleri anlatacağım. Bizim güneş sistemimiz dışında kalan bütün gezegenler öte gezegen kategorisine geliyor. Bu sunumda da bu gezegen keşiflerinin nasıl yapıldığını, nasıl yöntemlerin izlendiğini anlatacağım. Sonrasında da bir gezegeni yaşanabilir, kılabilecek olan özelliklere değineceğim.
+
+210
+00:37:23,923 --> 00:37:37,023
+İlk gezegen keşfi 1995 yılında Michel Mayor ve Edier Coelhoz adındaki iki araştırmacı tarafından yapılıyor. Bu 51 Pegasi B gezegenine güneş benzeri bir yıldızın yörüngesinde keşfedilen ilk gezegen.
+
+211
+00:37:38,003 --> 00:37:45,784
+Bu araştırmacılar bu gezegen keşfini halk dilinde yalpalama yöntemi olarak bilinen radyal uçuculuk yöntemini kullanıyorlar.
+
+212
+00:37:45,784 --> 00:37:58,124
+Bu yöntem şu ortada görmüş olduğunuz görselde yıldız ve gezegeninin aralarındaki kütle çekim kuvvetinden kaynaklanan dairesel dönme hareketine dayanıyor.
+
+213
+00:37:59,224 --> 00:38:06,003
+Buradan şunu görüyoruz. Yıldız gezegenini hareket ettiriyor fakat gezegende az bir miktarda da...
+
+214
+00:38:06,003 --> 00:38:11,884
+Yıldız'ın hareket ettiriyor aslında. Bunu gözlemlerimizde şu şekilde kullanıyoruz.
+
+215
+00:38:12,284 --> 00:38:19,804
+Mesela yıldızın bize doğru, biz aslında bir yıldızı gözlemlerken ondan gelen ışınların özelliklerine göre belirli değerlendirmeleri yapıyoruz.
+
+216
+00:38:20,403 --> 00:38:29,624
+Mesela yıldız bize yaklaşırken ışınları sıkışıyor gibi düşünelim. Dolayısıyla frekans artıyor, dalga boyu küçülüyor. Biz onu mavi dalgalar şeklinde gözlemliyoruz.
+
+217
+00:38:29,963 --> 00:38:31,371
+Uzaklaşırken de...
+
+218
+00:38:31,572 --> 00:38:47,172
+Tam tersi şekilde, bu sefer kırmızı dalgalar şeklinde gözlemliyoruz. Dolayısıyla biz diyoruz ki bu yıldız hareket ediyorsa onun etkilendiği, dolayısıyla hareketine sebep olan bir cisim daha olması lazım. Bu cisimde gezegen olmuş oluyor.
+
+219
+00:38:48,391 --> 00:38:58,991
+Toplamda gezegen keşiflerinde kullanılan beş tane yöntem var. Fakat ağırlıklı olarak şu ilk iki yöntem kullanılıyor. Diğer bir metot da transit metodu.
+
+220
+00:38:59,476 --> 00:39:22,976
+Transit metodu yıldızdan gelen parlaklığı ölçerek, parlaklık miktarına göre sonuçlar veriyor. Mesela parlaklık seviyesi buradayken bir anda bakıyorlar ki düşme olmuş, sonra tekrar çıkmış. Bu gezegenleri direkt göremiyorlar tabii, parlaklığına göre yorum yapıyorlar. Dolayısıyla diyorlar ki bu yıldızın önünden bir cisim geçiyor.
+
+221
+00:39:23,391 --> 00:39:37,471
+Tabi bu tek seferlik bir gözlemi bu cisne bizim gezegen diyebilmemiz için yeterli değil. Bu gözlemlerin, şu değişimin yani düzenli aralıklarla gerçekleşmesi gerekiyor ki biz ona gezegen diyebilirim.
+
+222
+00:39:37,471 --> 00:39:43,152
+Aksi taktirde bu yıldızın o an yörüngesine girmiş herhangi bir cisim de olabilir çünkü.
+
+223
+00:39:44,307 --> 00:39:51,367
+Daha sonra 2011 yılında NASA'nın Kepler Uzay Teleskobu tarafından Kepler-11 gezegeni kesiliyor mesela.
+
+224
+00:39:52,048 --> 00:40:01,188
+Şimdi yaşanılabilir bir gezegen nasıl olmalı? Bir kere yüzeyinde H2O'nun sıvı halde bulunması gerekiyor bizim canlılığın var olduğunu söyleyebilmemiz için.
+
+225
+00:40:02,148 --> 00:40:07,748
+Sıvı halde bulunması da o gezegenin yörüngesinin yaşanabilir bölge aralığında olması gerekiyor.
+
+226
+00:40:10,547 --> 00:40:30,547
+Bu bölgede bulunması da canladığın var olduğunu söylüyoruz için yetmiyor. Sıcaklık anlamında da yetmiyor aslında. Venüs'ü örnek verebiliriz. Venüs de mesela bizim gibi yaşanabilir bölge aralığında fakat atmosferinde bulunduğu sere gazları yüzey sıcaklığını bin dereceye kadar çıkarabiliyor.
+
+227
+00:40:31,059 --> 00:40:43,500
+Teknik Volkanik hareketler atmosferinde bulundurması gereken gazlar anlamında önemli. Tüm yüzeyinin ışık alması gerekiyor. Bir tarafının çok sıcak, bir tarafının çok soğuk olmaması anlamında.
+
+228
+00:40:44,179 --> 00:41:07,260
+Keşfedilen ve yaşanılabileceği düşünülen bazı gezegenleri paylaştım. Mesela üç tane yıldızı olan bir gezegen var. Başka tek bir sistemde iki farklı yaşanılabileceği düşünülen gezegenler var. Şu görmüş olduğunuz yaşanılabilir bir bölge olduğunu gösteriyor. Bunlar diğer yaşanılabileceği düşünülen gezegenler.
+
+229
+00:41:08,467 --> 00:41:17,107
+Bizim henüz gözlemleyebildiğimiz gezegenler şu alan içerisinde. Daha fazlası için, hocam siteye girebiliyor muyum bilmiyorum ama.
+
+230
+00:41:18,487 --> 00:41:21,827
+Vaktimiz de çok yok ama hemen bir tıklayı istersen.
+
+231
+00:41:21,827 --> 00:41:35,288
+Zaten çok kısa, hemen açacağız. Eğer daha fazlasını gözlemlemek isterseniz, dolanmak isterseniz, buradan mesela herhangi bir yıldızı tıklıyorum.
+
+232
+00:41:35,699 --> 00:41:53,639
+Biz göremiyoruz ekranını yalnız. Onu ayrı herhalde paylaşman gerekiyor. O zaman burada bitireyim ben vakti daha fazla anlayacağım. Arkadaşların kendine baktığımı teşekkür ediyoruz. [öğrenci] burada isten senden.
+
+233
+00:41:53,639 --> 00:41:54,639
+Sesini geliyor mu hocam?
+
+234
+00:41:54,639 --> 00:41:59,499
+Biraz daha sesini yükseltebilirsin veya bir daha ver.
+
+235
+00:42:02,036 --> 00:42:04,195
+Biraz sesini açabiliyorsan iyi olur.
+
+236
+00:42:04,856 --> 00:42:05,715
+İyi bakayım hocam.
+
+237
+00:42:07,675 --> 00:42:09,715
+Şu an fulle ya, yani maalesef.
+
+238
+00:42:09,816 --> 00:42:13,135
+Tamam, tamam. Birazcık sen yüksek konuşursan duyuluyor.
+
+239
+00:42:13,596 --> 00:42:15,715
+Tamam, tamam. Ekranı paylaşayım.
+
+240
+00:42:22,420 --> 00:42:38,279
+Tamam. Ben bugün Picasso'yu anlatacağım. Sunum içeriğim Picasso'nun resmi başlayışından itibaren zaman içerisinde geçirdiği değişimler ve dönemleri ve kibz'in de dahil olmak üzere en ünlü eserlerini anlatacağım.
+
+241
+00:42:39,347 --> 00:42:52,607
+Picasso, ressam bir babanın oğlu ve babasından da etkilenerek yönlendirmesiyle zaten ötesinin iç içe güzel sanatlı okuluna gidiyor.
+
+242
+00:42:53,007 --> 00:43:17,207
+Güzel Sanatlı Rukun'a gittikten sonra 1901'de Paris'e göç ediyor İspanya'dan. Paris'e göç etmesinin sebebi de Paris'e o dönem diğer Avrupa şehirlerinden daha özgürlükçü ve açık fikirdi. Bu yüzden kendi ülkelerinde tutunamayan sanatçılar özellikle Paris'te aküm ediyor. Yani cazip bir yer sanatçılar için.
+
+243
+00:43:17,907 --> 00:43:38,768
+Paris'e ilk gittiğinde Picasso büyük zorluklar yaşıyor. Eserlerini alıcı bulamıyor. Maddi olarak sıkıntılar çekiyor. Üstüne İspanya'dan Paris'e beraber göçtüğü arkadaşın intiharıyla da iyice ruhsal olarak çöküntüye giriyor.
+
+244
+00:43:45,907 --> 00:43:49,907
+Daha düzünlü, gram yüklü ve dışarıda...
+
+245
+00:43:50,324 --> 00:44:11,224
+İstediğinde dışlanmış insanları daha çok resmediyor. Bu biraz da Picasso'nun kendisini ifade etmesi gibi, kendisini resmediyor gibi bir şey. Mavi döneminden sonra Pembe dönemine geçiyor. Pembe döneminde Picasso artık Fransızcıyı iyice öğrenmeye başlıyor, bir sosyal çevre edinmeye başlıyor.
+
+246
+00:44:18,324 --> 00:44:38,324
+Burada yine resimlerin yani resmetli insanların yüzlerine baktığımızda yine pek aslında mutlu olduklarını göremiyoruz. Ama daha çok sirkte çalışan insanları resmediyor ve önceki mavi dönemden ayrı olarak...
+
+247
+00:44:38,804 --> 00:45:00,655
+Bu insanlar biraz daha içinde umut taşıyorlar diyebiliriz. Çünkü bir gelirleri var ve aslında büyük bir gruba mensuplar. Böyle pembe dönemi. Pembe döneminden sonra, 1906'dan sonra, Picasso artık belli bir yer edindikten sonra...
+
+248
+00:45:00,655 --> 00:45:06,995
+Yenilik arıyor ve kübizm akımına öncülük edecek abignomlu kadınlar eserini yapıyor.
+
+249
+00:45:08,096 --> 00:45:21,895
+Kübizm'i kısaca bahsetmek gerekirse resimde geometrik şekillerin kullanılması ve uzaylık üç boyutlu resmelerin iki boyutlu hale getirilmesi.
+
+250
+00:45:22,420 --> 00:45:30,740
+Ve bunu yaparken de farklı açılardan o nesneyi bir arada görebildiğimiz gibi söyleyebilirim aslında.
+
+251
+00:45:32,660 --> 00:45:46,180
+Cubism ile alakalı ilk eserini Avignonlu kadınları Picasso'dan çok sık sık gittiği, Paris'teki Etnografya Müzesi'nde gördüğü Afrika kabilelerinin masklarından esinlenerek aslında yüzlerini yapıyor.
+
+252
+00:45:46,400 --> 00:46:12,039
+Bu eseri ilk yaptıktan sonra ressam arkadaşlarını davet ediyor ve bu resmi gösteriyor onlara. Fakat hiç beklediği bir tepki alamıyor. Pek beğenilmiyor resmi. Ve bu resmi aslında 1916'ya kadar sunmuyor Picasso. Öyle kalıyor. Ama yine de kübizm alanında eserler ve çalışmalar yapmaya devam ediyor.
+
+253
+00:46:12,628 --> 00:46:22,880
+Picasso'nun en önemli eserlerinden biri olan çoğumuzun bildiği Guernica eseri. O dönem İspanya İç Savaşı'nda İspanyol...
+
+254
+00:46:22,880 --> 00:46:36,780
+Milletçi güçlerinin yönlendirmesiyle Alman ve İtalyan uçaklarının Guernica şehrini bombazlaması sonucu oluşan trajiden dolayı böyle bir resim ortaya çıkıyor.
+
+255
+00:46:36,780 --> 00:46:45,680
+İspanyol hükümetinin o sırada Paris'te yapılacak bir sergi için Picasso'ya imkan sağlayıp böyle bir resim yapmasını istiyor.
+
+256
+00:46:46,228 --> 00:47:06,188
+Bu aslında trajedinin diğer bir boyutu da Guernica şehri aslında o savaşta herhangi bir stratejik konuma sahip değil. Ama tamamen savunmasız insanlar bombalanıyor. Bu da ayrı insanlıkçı boyutu bu olayım.
+
+257
+00:47:06,963 --> 00:47:11,883
+[öğrenci] toplamanı isteyeceğim, özür dilerim. Hızlıca geçer.
+
+258
+00:47:11,883 --> 00:47:13,883
+Tamam.
+
+259
+00:47:13,883 --> 00:47:28,811
+Ağlayan Kadın da Picasso'nun Glanica'dan sonra yaptığı eseri. Burada da yine İspanya'nın ilk savaştan sonra yaşadığı acıları resim etmiş. Bu da yaşlı getirdiği eseri Mavi Döneminden.
+
+260
+00:47:28,884 --> 00:47:48,523
+Bu eserde o dönem yaşadığı, buhramları dışa vurduğu ve görüyoruz neredeyse ölmek üzere olan bir insan var. Böyle, bunu resmet diye bir eser. Benim anlatacaklarım bu kadardı. Teşekkür ederim dinlediğiniz için. Öyle.
+
+261
+00:47:49,643 --> 00:47:53,923
+Teşekkür ediyoruz. Var mı arkadaşlar Picasso sorunuz?
+
+262
+00:47:54,483 --> 00:47:58,864
+[öğrenci] bir yandan ekranını paylaşabilirsin, buradasın değil mi?
+
+263
+00:47:58,864 --> 00:48:00,423
+Tabii hocam, sesim geliyor mu?
+
+264
+00:48:01,324 --> 00:48:02,284
+Evet, aha geliyor.
+
+265
+00:48:10,931 --> 00:48:16,631
+Görünüyor değil mi? Evet, evet sıkıntı yok. Başlayalım.
+
+266
+00:48:16,631 --> 00:48:24,311
+Evet, merhaba arkadaşlar. Ben [öğrenci]. Ben bugün Microsoft'un kurcusu olan Bilge Esin başarı hikayesi hakkında konuşmak istiyorum.
+
+267
+00:48:24,811 --> 00:48:33,091
+Sonunun içeriği Bilge Esin ilk kim olduğundan bahsedeceğim. Microsoft'u nasıl şu an konuma getirdiğinden ve son olarak da tabii ne kadar zengin olduğundan bahsedeceğim.
+
+268
+00:48:33,775 --> 00:48:53,875
+Bilgisayar Mühendisliği kimdir? 1955 yılında Seattle, Washington kentinde doğan ünlü bir girişimcidir. 13 yaşında bilgisayar programcılığına ilgi duymaya başlamıştır. Tabi projelerini tek başına yapmamıştır. Orta poler aranla birlikte geliştirdiği teknolojik yenilikler Microsoft'un dünyanın en büyük yazılım şirketi olmasını sağlamıştır. Bilgisayar Mühendisliği'nde yaklaşık 96,5 milyar doğalık serveti vardır.
+
+269
+00:48:54,867 --> 00:49:22,288
+Seattle Washington'da avukat bir babayla öğretmen bir annenin oğlu olarak dünya gelmiştir. Gates, seniz 12 yaşındayken ilk informatik kurslarına gitmiştir. Okul arkadaşı Paul'larınla birlikte de boş zamanlarında çoğunlukla bilgisayar yazılımı geliştirmektedirler. Bu iki arkadaş yakınlarındaki bir şirketin büyük bilgisayarını para ödemeden kullanabilmek için yazılım hatalarını arayıp buluyorlardı. Bu şekilde bilgisayar konusunda uzmanlaşan öğrenciler 1972'de ilk şirketlerini yani Traffodate'ye kurdular.
+
+270
+00:49:22,867 --> 00:49:27,468
+Şirket bir trafik sayımı ve kontrol sistemi için yazılımları üreterek hemen 20 bin dolanlık satış yaptı.
+
+271
+00:49:27,928 --> 00:49:32,648
+Gays bundan sonra, bundan bir yıl sonra TRW adlı silah işletmesinde staj gördü.
+
+272
+00:49:33,407 --> 00:49:38,288
+Kişisel bilgisayar 70'li yılların ortasında henüz gelişmenin ilk aşamasında bulunuyorlardı.
+
+273
+00:49:38,807 --> 00:49:48,208
+MIT şirketinin 6R adını verdikleri yani şu, en önemli numara ise henüz tek biçim kullanılabilir bir yazılıma sahip olmayan ve tamamlanmamış bir işletim sistemine sahipti.
+
+274
+00:49:50,867 --> 00:49:57,428
+Müştürt'te geçtikleri yazılım dili Basic sayesinde bilgisayar kullanıcıların programlarını kendileri yazabiliyorlardı.
+
+275
+00:49:57,847 --> 00:50:00,000
+MIT şirketi genç araştırmacılardan pazarttıkları yazıyor.
+
+276
+00:50:28,000 --> 00:50:28,880
+İmzaladım.
+
+277
+00:50:29,907 --> 00:50:54,108
+Geis akıllıca bir öngörüyle haklarını mahvuz tutarak diğer donanım üyesiyleyle satış yapabildi. Bunu izleyen zamanda giderek daha çok şirket IBM ile bağlaşan ayrıcıları piyasaya sürünce geliştirdikleri işletim sistemi bütün bilgisayarlar için tek biçim hale geldi. Bu arada bin çalışanı olan şirket 80'li yılların ortasından sonra Avrupa'da şubeler kurdu. Şirketin başkanlığını yürüten Geis tutarlı ekip çalışmasına katı bir verim ilkelerine önem veriyordu.
+
+278
+00:50:54,508 --> 00:50:57,847
+Geis'in işletim sistemini paralel olarak uygulama yazılımları alındır.
+
+279
+00:50:57,907 --> 00:51:07,648
+Son derece başarılı çalışmalar ortaya koydu. Multipline içler hesap yazılımından sonra 1983'te ilk kez fareyi kullanan Word adlı metin işlemi sistemini başlattım.
+
+280
+00:51:09,043 --> 00:51:22,384
+Microsoft'un yazılım alanındaki kesim başarısı Apple şirketinin kendilerine verdikleri siparişli gerçekleşti. Macintosh adını verdikleri örnek oluşturarak nitelikli bilgisayar için çiçekli uygulama sistemleri yani Word, Excel, PowerPoint gibi geliştirildi.
+
+281
+00:51:22,943 --> 00:51:30,183
+Gage şirketinin 1986 anayın şirketi çevirdi. Aradan çok geçmeden yalnız kendi payının borsa değeri 1 milyar doların üzerindeydi.
+
+282
+00:51:30,675 --> 00:51:38,755
+Hemen çalıştırma işletim sistemin grafik bir iyileştirmesi olan Windows'un geliştirilmesi çalışmalarına Gates 1985 yılında başlamıştı.
+
+283
+00:51:39,275 --> 00:51:43,375
+Windows piyasaya sürdükten 3 yıl sonra bir pazarlama kampanyası da başarılı oldular.
+
+284
+00:51:43,915 --> 00:51:47,415
+Microsoft bu sistemi sürekli olarak daha ileri yazılım elemanlarıyla genişletiyordu.
+
+285
+00:51:47,556 --> 00:51:51,615
+Gates özellikle Windows'u daha basit ve daha kullanışlı bir biçime sokmaya önem verdi.
+
+286
+00:51:52,155 --> 00:51:55,076
+Microsoft 1993'te tartışma piyasanın lideriydi.
+
+287
+00:51:55,675 --> 00:51:58,675
+Gates'in kişisel servette yaklaşık 96,5 milyar dolar oldu.
+
+288
+00:51:58,675 --> 00:52:09,556
+Arkada da yaklaşık 300 milyon dolara yaptırdığı kendi evi var. Yani bayağı bir zengin hale geldi. Bunlar da kaynaklarım. Teşekkürler.
+
+289
+00:52:10,835 --> 00:52:22,496
+Teşekkür ederiz. Bir soru var mıydı arkadaşlar? Peki. [öğrenci], bir miktar vaktimiz var. İstersen sen de sunumunu yapabilirsin.
+
+290
+00:52:22,496 --> 00:52:23,715
+Tabii sesim geliyor mu hocam?
+
+291
+00:52:24,079 --> 00:52:46,139
+Giliyor. Tamamdır. Yani başka günde yapabilirim ama iyi olur şimdi. Başla. Başla. Tamam. Ekrana görüyor musunuz? Evet. Tamamdır. Benim konum Ural Altay değil ailesi. Seçmemin sebebi de ilkokuldan beri, okula başladığımızdan beri bu aile öğretildiği hep böyle biliyoruz ama birazcık ayrıntısı var. O konuya açıklık getirmek istedim biraz.
+
+292
+00:52:46,512 --> 00:52:58,752
+Çünkü öğrendim hemen de şaşırmıştım. Harita şöyle gösteriliyor. Bizim ders kitaplarında da buna yakın bir dönem vardı. Şimdi kardeşimin lisede onu kontrol ettim. Şu an göremedim ama bilmiyorum.
+
+293
+00:52:59,188 --> 00:53:21,268
+Birkaç farklı dala ayrılmış, işte Mongolik, Tunizik, Türkik, Finnogrik falan diye çok geniş bir dil ailesi görüyoruz. Öncelikle teoriden bahsedeyim. 19. yüzyılda ve bazı ülkelerde 20. yüzyıl ortalarına kadar, bazı ülkelerde de Türkiye oluyor herhalde, yaygın biçimde kabul ediliyordu bu dil ailesi. Ural ve Altay diye iki ayrı grubu tek bir dil ailesi olarak görüyordu.
+
+294
+00:53:22,387 --> 00:53:35,847
+Zaman içinde destek azaldı teoriye ve hatta alt grubu olan altay dillerinin kendi aralarında da alakalarının genetik olarak olmadığı ayrı dil haleleri oluşturduğu keşfedildi. Yani daha çok düşünülmeye başlandı daha doğrusu.
+
+295
+00:53:35,847 --> 00:53:47,847
+Bu aralarındaki tipolojik benzerliklerin, kelime benzerliklerinin, kelimelerin, kökenlerinin aynı yerden gelmelerinden değil de tarih boyu diller arası alışveriş olması ve temas sonucu...
+
+296
+00:53:48,563 --> 00:54:07,364
+Bu kelimelerin ortaklaştığı kabul edilen görüş olmuştur. Günümüzde 60'lardan bu yana Ural-Altay Dil Ailesi'ne nazaran Ural dillerinin kendi ayrı dil ailesini oluşturduğu, Altay dillerinin ise kendi aralarında bir genetik ilişki bulundurmayıp bir dil bölgesi oluşturduğu en yangın görüş konumundadır.
+
+297
+00:54:07,860 --> 00:54:20,140
+Günümüzde çoğu dil bilimci Ural Altay aylılarının sondan eklemelilik, özne nesne yüklem sıralması ve cinsiyetsiz kelimeler olması gibi benzerliklerine yakınsama ile sonuçlanmış karşılıklı etkileşilme açıklamaktadır.
+
+298
+00:54:20,140 --> 00:54:30,280
+Yani Sprachbund deniyormuş buna. Almanca orijinal terimin ortaya konulma amacı da bu Altay dillerindeki benzerliğin açıklanmasıymış. Yani bu ne demek?
+
+299
+00:54:30,771 --> 00:54:42,971
+Altay dillerinde bir genetik benzerlik olduğu düşünülmüyor. Aynı kökenden geldiği. Sadece uzun süre tarih boyunca aynı yerde bulunduğu için bu insan grupları dillerde bazı ortak özellikler ortaya çıkmış.
+
+300
+00:54:43,811 --> 00:54:51,891
+Aynı zamanda tabii bu teorinin Türkiye özelinde, Türkolojide çok önemli bir yeri var. Türkolojiyle ilgilenen bilim adamları hep bu konuda araştırma yapmışlar.
+
+301
+00:54:52,340 --> 00:55:11,900
+Güneş Dil Teorisi diye bir teori vardı. Yaklaşık 60-70 sene önce Türkiye'de kabul gören. Bunu destekleyen dil bilimciler aynı zamanda Ural Altay ya da sadece Altay Dilalesi teorisini de desteklemişlerdi. Çok geniş bir aileden bahsediyoruz. Bunların arasında genetik bağ olduğu düşünülmüyor artık dediğim gibi.
+
+302
+00:55:12,628 --> 00:55:32,768
+Tabii bahsettim, dil birliği nedir? Burada bir de tanımını koymak istedim. Coğrafi yakınlık ve dil iletişiminden kaynaklanan ortak özelliğe sahip dil grubudur. Yani bu altayik diller için söylenebilir mesela Moğolca, Türkçe, Korece, Türkçe gibi ama bu genetik bir benzerlik olduğunu söylemez. Sadece ortak bir tarih olduğunu gösterir ortada.
+
+303
+00:55:34,003 --> 00:55:54,723
+Çok özet geçeyim burayı zaman azlatan. Şey, Ural Altay teorisinin ortaya çıkışı İsveçli bir subay Poltava Savaşı'nda esir alınıyor ve Rusya'ya sürülüyor. Sibirya'da bu yerli halklara üzerinde, dilleri üzerine çalışma yapıyor ve bir kitap yazıyor. Teorinin çıkışı da buna dayandırılıyor. Ardından tabii işte isimlerini yazdım.
+
+304
+00:55:55,923 --> 00:56:17,184
+1700'le 1800'lerden sonra bu teori kabul edilmeye başlanıyor. Tabii bu kelimelerin benzer olduğu bazı işte paternler olduğu doğru. Bunları göstermek istedim. Altay Dilleri Kuramı'nda bu dönem mesela. Bu tarz örnekler karşımıza çıkıyor.
+
+305
+00:56:18,260 --> 00:56:39,059
+Bazı harflerin diğer Altay dillerinde de aynı olduğunu görüyoruz. Bir patern olduğunu görüyoruz. Ben dil bilimci değilim. Bana evlendici geliyor mesela. Ama bu benzerlikler, önceden de saydığım Sprahbund sebebiyle ortada bir tarihsel metinler sonucu ortada genetik bir ilişki olduğunu koyamıyoruz.
+
+306
+00:56:39,059 --> 00:56:45,800
+Yani Türkçe ve Moğolca bile ne kadar bize benzer oluyor gibi de gelse, buradaki örneklerden mesela.
+
+307
+00:56:46,159 --> 00:57:03,059
+Aynı kökenden gelmiyor gibi gözüküyor. Buradaki benzerlikler bunu kanıtlamaya yeterli değil. Bölgesel tipolojiyle, sprahbund ile açıklanabilecek türden benzerlikler bunlar. Bunlar zaten dünyanın her yerinde genetik akrabalığı bulunmendillerde de ortak olabilir. Bu pek bir şey ifade etmiyor.
+
+308
+00:57:06,239 --> 00:57:28,159
+Bu zaten akademiyada süren bir tartışma hala. Gördüğünüz gibi isimleri okumaya gerek yok. Bir sürü insan bunu 2000'li yıllara kadar hala da yazılıyordur büyük ihtimalle araştırmalar. Ama yavaş yavaş akademiya 1900'lerin son çeyreğinden beri Ural Altay ve Altay fikrine aşmış daha çok.
+
+309
+00:57:28,851 --> 00:57:53,331
+Şu hipoteze yaklaşmış da bitmek üzere süre bitiyorsa. Bunun yerine, Uralata hipotezi yerine Türk Dilleri ailesini artık kabul ediyoruz daha çok. Daha yakın gördüğünüz gibi gruplama. Yani Türkiye diller bizim aynı genetik kökenden geldiğini düşündüğümüz diller bunlar. Moğolcadır, Korecadır, Macarcadır. Bunlar tarihi ortaklığımızın olduğu ama genetik olarak yani dil ailesine koyamayacağımız.
+
+310
+00:57:53,940 --> 00:58:12,159
+Benzerlik olmayan diller. Şu anda sadece Türkiye dillerden bahsedebiliyoruz. Bir de Türkiye dillerinin ne olduğunu söyledim. Türk dilleri 180 milyon kişi tarafından konuşuluyor. Bildiğimiz Türkçe, Azerice, Özbekçe, Uygurca, Kazakça diğer bu genetik ilişki olmayan dillere de katmıyoruz. Teşekkür ederim denediğiniz için.
+
+311
+00:58:13,108 --> 00:58:30,988
+Teşekkür ediyoruz [öğrenci]. Arkadaşlar, eğer dersle ilgili sorunuz varsa hızlıca ben de onları alayım. İki, üç dakika biraz geçtik ders süremizi ama şeyi ben söyleyeyim. Ders duvarına koyduğum listelerde daha önümüzdeki haftanınkini eklememiştim.
+
+312
+00:58:32,268 --> 00:58:37,888
+İsminizin yanında göreceğiniz rakam hafta numarası. Şu anda dört olarak.
+
+313
+00:58:38,291 --> 00:58:56,211
+Bugün sunum yapan arkadaşlarınız işaretlenmiş durumda. Beşinci haftaninkileri ve devamını da listede işaretleyeceğim. Ve ona uygun olarak sunum yapmanızı bekliyoruz. Başka sormak istediğiniz bir şey var mı? Notları yine ders duvarından ulaşabilirsiniz.
+
+314
+00:58:56,788 --> 00:59:11,748
+Ders notları kısmında ekleyemedim. Önce konu bölmelerine falan girmek gerekiyor herhalde. Ders duvarına koydum slide'ları. Oradan bunlara da ulaşabilirsiniz. Sorunuz varsa cevaplayayım ben.
+
+315
+00:59:13,347 --> 00:59:21,487
+Hocam, ben bir şey sormak istiyorum. Ben deneme yaptığım zaman sunum yaklaşık 4 dakika hatta biraz da geçiyordu.
+
+316
+00:59:21,907 --> 00:59:46,307
+O nedenle sunum sırasında işte biraz daha hızlı olmaya çalıştım. Erken de bitirdim. Yani çok mu erken bitirdim? Herhangi bir sorun olur mu? Biraz hızlanır mı? Hayır, hayır, hayır. Erken bitirenler için teşekkür ediyorum. Ya değil, hani hoş değil, böyle olmaması lazım ama maalesef dönem ve sayınız itibariyle böyle bir şeyimiz var. Hayır, erken bitirmeniz sorun değil. Geç bitirmeyin yeterli.
+
+317
+00:59:46,771 --> 01:00:00,000
+Zaten slide'larınızı gönderiyorsunuz. Bu arada şeyle ilgili bir şey yapamıyorum. Yine diğer grup hocalarına danışacağım. Maalesef konuyu ve slide'ları zamanında göndermeyen arkadaşlarım.
+
+318
+01:00:00,000 --> 01:00:26,600
+Arkadaşlarımızı sunuma dahil edemeyebilirim. O konuda diğer gruplarla ortak davranmamız gerektiği için alınan kararı ben bozamayacağım. Ama diğer hocalarınızla ortak eğer bir uzatma verme ihtimalleri varsa söyleyeceğim size ama zannetmiyorum. Onun sebebini de açıklamış olayım. Başka sorunuz yoksa bitireceğim. Varsa sorabilirsiniz.
+
+319
+01:00:27,135 --> 01:00:30,095
+Buradayken.
+
+320
+01:00:32,315 --> 01:00:41,275
+Peki. O zaman teşekkür ediyorum herkese hem sunumları için hem dinlediğiniz için. Haftaya görüşmek üzere diyorum.
+
+321
+01:00:41,935 --> 01:00:43,415
+Görüşürüz hocam. İyi günler.
+
+322
+01:00:43,435 --> 01:00:45,595
+İyi günler. Sağ olun. Görüşmek üzere.

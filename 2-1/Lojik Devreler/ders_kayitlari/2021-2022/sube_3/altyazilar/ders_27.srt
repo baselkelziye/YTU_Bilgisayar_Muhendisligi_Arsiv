@@ -1,0 +1,1563 @@
+1
+00:02:31,924 --> 00:02:37,164
+Merhaba arkadaşlar. Hocam, aldım ben. Tamamdır.
+
+2
+00:02:46,195 --> 00:02:51,376
+Arkadaşlar, biraz bir beş dakika daha bekleyelim, herkes gelsin. Ekranda ben sonunu yansıta durayım.
+
+3
+00:03:26,388 --> 00:03:44,468
+Zaten çok kişi de gelmeyecek. Öncelikle şeyi sormak istiyorum şimdi hem yüz yüze hem online ile beraber yürüttüğüm için. Sizde en son acaba SRE devreleri yani SET-RESET, JKT ve D flip-flopları anlatmış mıydı?
+
+4
+00:03:48,403 --> 00:03:50,204
+En son nerede kalmıştım sizde?
+
+5
+00:03:55,412 --> 00:03:56,472
+Burada mıyız arkadaşlar?
+
+6
+00:03:58,612 --> 00:04:00,632
+Buradayız hocam, hiç hatırlamıyorum.
+
+7
+00:04:04,819 --> 00:04:17,860
+Arayüzünüz de, neyse tamam o zaman biraz hızlıca bunlardan da geçip bir daha şu sunumun başından başlayalım. Meli Moğru anlatmış mıydım en azından?
+
+8
+00:04:18,939 --> 00:04:21,279
+Evet, Meli Moğru anlatmıştınız hocam, hatırlıyorum onu.
+
+9
+00:04:21,339 --> 00:04:23,659
+Tamam, o zaman şuradan başlayalım tekrardan.
+
+10
+00:04:32,884 --> 00:04:38,384
+Yüz yüze ve online olunca şimdi hangisinde ne işlediğim karışabiliyor.
+
+11
+00:04:39,224 --> 00:04:43,724
+O yüzden seriden bir sıfırdan başlayalım, örneklerle bitirelim bu hafta.
+
+12
+00:04:45,264 --> 00:05:07,724
+Evet arkadaşlar, ardışıl devre tasarımından bahsediyorduk. Ardışıl devrelerin yapısında bir tane depolama birimi olması gerektiğinden bahsetmiştik. Bu bir depolama birimi aslında çalışma prensibi, geçen hafta anlattığımı düşündüğüm gecikmeler üzerinden olduğunu bahsetmiştik. Bunu hatırlıyor muyuz? Kapılarının arasında gecikmelerden doğan hafızalama.
+
+13
+00:05:07,724 --> 00:05:09,564
+Evet hocam, onu hatırlıyorum.
+
+14
+00:05:09,939 --> 00:05:31,939
+Tamam. Yani buradaki storage elements dediğimiz kısım yine bizim aynı normal iki AND, bir OR, bir NOT gibi böyle kapılar koyarak yaptığımız bir devre tasarımı ve amacımız burada bizim gecikmeler, bu kapı gecikmelerinden doğan, gecikmeyi ters düz edip girişe verdiğimiz ve böylelikle aslında bir...
+
+15
+00:05:32,500 --> 00:05:39,500
+Bir bitlik veriyi tuttuğumuz havza elemanı olacak. Ve biz bunlara flip-flop veya latch devresi diyeceğiz.
+
+16
+00:05:39,987 --> 00:05:45,567
+Bu hafta leç devresi, zaten bunu geçen hafta anlatmıştık, bir daha gelmiyorum nasıl olduğunu.
+
+17
+00:05:46,067 --> 00:05:50,187
+Leç devresi mimarisinden başlayacağız ve flip-flopları doğru evireceğiz.
+
+18
+00:05:50,408 --> 00:05:56,268
+Şimdi leç devreleri ile flip-flop arasındaki en bariz fark tetikleme sinyalidir.
+
+19
+00:05:56,867 --> 00:06:02,007
+Biz şundan bahsetmiştik, senkron ve asenkron mimariler var, ardışıl devreler var.
+
+20
+00:06:02,007 --> 00:06:07,987
+Senkron dediğimiz şey dışarıdan bir senkronize edilen sinyal vasıtasıyla güncelleme.
+
+21
+00:06:07,987 --> 00:06:12,971
+Yani girişteki değişim durumunu çıkışta yansıtan...
+
+22
+00:06:12,980 --> 00:06:29,120
+Devre elemanlarıydı, senkron devre elemanları. Yani dışarıdan bir sinyal gelmez ise girişlerdeki değişimler ne olursa olsun benim için çıkışta değişim gözlemlenmeyecekti. Senkronlar kastımız buydu.
+
+23
+00:06:29,520 --> 00:06:40,040
+Asenkron ise herhangi bir sinyalizasyon, bir senkronize sinyale ihtiyaç duymayan, girişteki değişimi anında çıkışa aktaran devre elemanlarıydı dedik.
+
+24
+00:06:40,819 --> 00:06:45,860
+Şimdi latch devreleri asenkron, flip-floplar ise senkron devre elemanlarıdır.
+
+25
+00:06:46,339 --> 00:06:51,559
+İlk başta aslında latch devresini senkronize edilmiş hali flip-flop oluşturacak.
+
+26
+00:06:51,559 --> 00:06:55,240
+Şu an biz latch devresiyle başlayacağız ve flip-flop'a doğru gideceğiz.
+
+27
+00:06:55,360 --> 00:07:01,120
+Şimdi şu şekilde gördüğümüz yine bir çıktıların, şu tableti bir ayarlayalım.
+
+28
+00:07:14,036 --> 00:07:22,056
+Şekilde yine aynı şekilde iki tane NAND kapısı ve bu kapıların çıkışlarının birbirine beslemesinden doğan bir hafızalama birimi var.
+
+29
+00:07:23,415 --> 00:07:28,456
+Amaç, yani yapılan işlem aslında gecikmelerle tekrar beslemek kapıları.
+
+30
+00:07:28,456 --> 00:07:34,635
+Şimdi SR-Latch devresi NAND veya NOR kapılarıyla gerçekleştirilebilir.
+
+31
+00:07:35,276 --> 00:07:41,656
+Eğer ki NAND kapılarıyla gerçekleştirilirse, S değil, R değil Latch devresi oluyor.
+
+32
+00:07:41,983 --> 00:07:46,403
+Yani buranın aktif lojik durumunda çalışması söz konusu.
+
+33
+00:07:46,983 --> 00:07:50,463
+Ve set, reset lejik devresi olarak geçiyor.
+
+34
+00:07:50,803 --> 00:07:56,103
+Yani S burada bizim setimizi, reset ise, R ise resetimizi gösterir.
+
+35
+00:07:56,623 --> 00:08:01,383
+Yani set benim için Q'yu 1'leyecek, reset ise Q'yu 0'layacak.
+
+36
+00:08:01,943 --> 00:08:06,923
+Ve herhangi bir lejik veya flip-flop devresinde, kılıf şöyle bir şey olsun.
+
+37
+00:08:07,827 --> 00:08:13,707
+İki giriş, üç yani tek giriş veya başka bir sayısına bağlı olarak
+
+38
+00:08:14,483 --> 00:08:25,584
+İki tane çıkış olur. İki çıkış kesindir. Bir normal çıkış, bir de bu çıkışın değili şeklinde gösterilen değil şeklindeki çıkışı mevcuttur.
+
+39
+00:08:25,923 --> 00:08:36,844
+Şimdi serdeş devrisinde de aktif low, yani sıfırda aktif olan bir entegre olduğundan dolayı sete sıfır verdiğimde Q1 olacak.
+
+40
+00:08:37,716 --> 00:08:58,296
+Resete 0 verdiğimde Q 0 olacak. Tabi akabinde Q değil, 1 olacak doğal olarak. İkisine 0 0 veya 1 1 verdiğimde de farklı bir çalışma prensibine sebep olacak. Şurada hemen bir diagramı mevcut tablosu. Set'e 0 verdiğimde Q 1 oldu, yani set oldu.
+
+41
+00:08:59,220 --> 00:09:23,539
+Resete 0 verdiğimde, q 0 oldu, resetlendi. Ne zamanki 1-1 verisi verdiğimde, benim q önceki durumu hatırlayacak. Yani çıkışın bir önceki çıkışın aynısı olacak. Ne zamanki 0 tekrardan resetledim ve tekrardan 1-1 verdim. Bu durumda yine bu 0'ı hatırlayacağız. Hatırladım.
+
+42
+00:09:24,947 --> 00:09:39,668
+Ama bu set reset entegralindeki istenmeyen bir durum var. O da 0-0 durumu. Ama ne için? NAND kapılarıyla kurulmuş latch devreleri için. Çünkü NAND kapılarında S değil, R değil latch devresi. Bunu unutmayın.
+
+43
+00:09:40,788 --> 00:09:50,788
+0-0 geldiğinde istenmeyen durum dediğimiz aslında ikisinin de bir olduğu, yani aslında yüksek empedans gösterdiğini buradan anlayabiliriz.
+
+44
+00:09:50,827 --> 00:09:54,668
+Yüksek empedans sonucu üreten bir entegredir bu latch devresi.
+
+45
+00:09:55,188 --> 00:09:58,228
+Şimdi dediğimiz gibi burada herhangi bir tetikleme sinyali yok.
+
+46
+00:09:58,228 --> 00:09:59,988
+Yani sete bir verdi.
+
+47
+00:10:00,000 --> 00:10:14,059
+SET'e 0 verdiğimde Q, 0 olacak. SET'e 0 verdiğimde Q, 0 olacak. SET'e 0 verdiğimde Q, 0 olacak. İkisine 1, 1 verdiğimde Q'nun bir önceki durumu tekrardan Q'da gözlemlenecek ve Q değil de bunun NAT'ı olacak.
+
+48
+00:10:14,480 --> 00:10:23,420
+Ama ikisini de 1, 1 verdiğimde istenmeyen durumu gösteren bir entek, latch devresi.
+
+49
+00:10:24,211 --> 00:10:49,111
+Şimdi bunlar aslında storage elements. Bunları biz kombinezonsal devrelerde kullanacağız. Yani aslında biliyorsunuz ki daha önce geçen haftalarda da anlattığımız bu kayda neydi? Bir kombinezonsal devre tasarımımız var. Biz bunu ardışıl forma getirmek için state'leri tuttuğumuz birimdi burası. Tekrar belirtiyorum, elementler, depolama elementlerinde biz state'ler arası geçişi sağlayacağız.
+
+50
+00:10:50,419 --> 00:11:08,000
+Durumları arası geçiş yani. Bir diğer leç devremiz, bu NAND kapılarıyla yapılanın, NOR kapılarıyla yapılanın. Bu, Active-Low değil arkadaşlar, yani birle set, birle, yani birle Active-High olan bir entegre.
+
+51
+00:11:08,532 --> 00:11:28,524
+Buna baktığımızda da ne zaman sete bir versem, q bir olacak. Reset'e bir versem, q sıfır olacak. İkisine sıfır sıfır verdiğimde remember yapacak. Ne zaman bir bir verdim, istenmeyen durum olacak. Bu ikisini niye gösteriyoruz? Çünkü...
+
+52
+00:11:28,532 --> 00:11:32,092
+Biz latch devresinden flip-flop yapacağız.
+
+53
+00:11:32,092 --> 00:11:37,052
+Flip-flop'un birinci kaydısı asenkron değil, senkron olması.
+
+54
+00:11:37,052 --> 00:11:42,731
+Senkronize etmesi için de bu latch devrenin önüne kapı koymamız gerekecek.
+
+55
+00:11:42,731 --> 00:11:45,132
+Nasıl bir kapı? Şimdi ona geliyoruz.
+
+56
+00:11:45,132 --> 00:11:51,412
+Bu çalışma karakteristiklerinin set, bu tabii NOR ile yapılanı.
+
+57
+00:11:52,179 --> 00:12:17,899
+Set 1, reset 0 ise Q1 olmuş, burası 0, burası 1 ise burası 0 olmuş, gördüğünüz gibi. Ne zaman 0, 0 geldi? Şuradan itibaren. Burayı hatırladı, yani 0 oldu. Ne zaman gene setledik? Bir süre sonra tabii burada bir geçik mapayı var. Bir lendi. Sonra tekrardan 0, 0 oldu mesela şuralar.
+
+58
+00:12:18,932 --> 00:12:28,491
+Biri hatırlayarak devam etti. Ta ki benim resetim bir olasaya kadar, burası bir olduğu için benimki birden sıfıra düşmek zorunda.
+
+59
+00:12:30,572 --> 00:12:41,772
+Şimdi geldik tetiklemeli SR ileç. Aslında bu bizim için SR-flip-flopunu oluşturacak. Yani set-reset-flip-flopu diyeceğiz biz buna.
+
+60
+00:12:42,100 --> 00:12:51,740
+Baktığımızda şu kısım, zaten demin anlattığım SR, Nantli yapının aynısı ama nasıl? S değil, R değil leç devresiydi.
+
+61
+00:12:55,059 --> 00:13:03,639
+Şimdi bunun önüne ben bir NAND yapısı, biliyorsunuz ki ya NOR'larla devreyi tasarlarım ya da NAND'larla, niye maliyeti düşük olsun diye.
+
+62
+00:13:04,139 --> 00:13:12,899
+Şimdi NAND yapısında ben bunun önüne bir NAND mimarısı daha koyarsam aslında bu S değil, R değilden S, R leçe dönecek.
+
+63
+00:13:13,779 --> 00:13:25,419
+Ama bir de clock mimarisiyle bunları tetikliyorum. Yani clock ne zaman bir olursa, biliyorsunuz ki NAND'larda burası birse, öteki taraf sıfırsa, buradan ne çıkacak? Sıfır çıkacak.
+
+64
+00:13:25,419 --> 00:13:32,043
+Ama öteki taraf sıfırsa, buradan bir çıkacak. Öteki taraf birse...
+
+65
+00:13:32,083 --> 00:13:58,583
+Buradan 0 çıkacak. Yani aslında tam tersini alıyor. Yani bu kuloğun 0 olduğu, 0'a düşen kenar diye tetiklemeli yapsam, ben setim 1 ise 1-0'dan 1'i, resetim 0 ise 0-0'dan 1'i çıkartabiliyorum. Yani aslında bu kuloğ bunları tetikliyor. Hangisini buraya geçirmek istiyorsak bu kuloğ olmadan geçmiyor.
+
+66
+00:13:59,347 --> 00:14:08,548
+Burada Kulok mimarisiyle aslında biz Leci, yani asentron çalışan Leci devresini Kulok'la çalışan mimarili flip-flop eylendik.
+
+67
+00:14:09,227 --> 00:14:11,607
+Ve biz bunu şöyle bir kılıfı alırsak.
+
+68
+00:14:15,956 --> 00:14:30,716
+set reset girişleri olan, bir adet dışarıdan plot paysi göndereceğimiz girişi olan ve bir Q ile bir Q değil'i çıkmış olarak belirten bir S-R flip-flop'u elde etmiş oluyoruz.
+
+69
+00:14:33,236 --> 00:14:35,136
+Bunun çalışma prensibine bakarsak,
+
+70
+00:14:37,395 --> 00:14:40,956
+Burası bir önceki durumu gösteriyor T anında.
+
+71
+00:14:41,395 --> 00:14:50,395
+S reset'i yaptıktan sonra, KLOG'a bastığında, yani KLOG tetiklediğinde oluşanı da T artı bir olarak gözlemliyoruz.
+
+72
+00:14:50,395 --> 00:14:52,395
+Bakın, burada KLOG...
+
+73
+00:14:53,716 --> 00:15:03,396
+Kıt diyebiliriz. Yani, clocklanmış etkiyi gözlemlememiz lazım. Ben buraya clock basmadım, herhangi bir sinyal gelmedi ama girişleri değiştirdim.
+
+74
+00:15:03,396 --> 00:15:15,936
+Örneğin, 0 vardı. Yani, çıkışım QT anında 0'dı. Seti 1 yaptım, reseti 0 yaptım. Normalde bunu 1 yapması lazım. Değil mi? SRL sonuçta set etmesi lazım.
+
+75
+00:15:16,467 --> 00:15:24,628
+Şimdi bu kulağa basmadıktan, buradaki change olmadıktan sonra buraya bu sıfır gönderecek Erda.
+
+76
+00:15:25,628 --> 00:15:31,888
+Ve sıfır gönderdiği için de çıkışın bir önceki çıkışın aynısı olacak, değişmeyecek.
+
+77
+00:15:33,011 --> 00:15:45,391
+Anlatabildim mi? Burada Klob mimarisinin etkisi, Klob'a basıldığında buradaki veri burayı sonucu güncelliyor. Zaten senkron devreler de böyle demişti.
+
+78
+00:15:45,844 --> 00:16:13,844
+Bir önceki durumda 0, set reset 0, bir değişim yok. Bir önceki durum 0, resetledim, yine 0 oldu, clear etti zaten. Setledim, 1 yaptım, bir önceki durum 0'da ama 1 oldu. Bu SR devresinde NAND yapılarıyla kurulmuş olmasına rağmen iki NAND arda arda kullanıldığı için biliyorsunuz ki SDI R değilken SR devresi moduna geldi. Bu durumda 1-1 vermek...
+
+79
+00:16:13,844 --> 00:16:19,244
+Artık ki durumda 0-0 vermek bunu tanımsızlığa yetiyordu. Bu durumda da 1-1 vermek tanımsızlığa yetecek.
+
+80
+00:16:19,464 --> 00:16:26,924
+0-0'da önceki durumu aynı şekliyle koruyacağız. Şurada da mesela 0-0'da önceki durumu korudu.
+
+81
+00:16:28,864 --> 00:16:33,984
+0-1'de resetledik 1 olmasına rağmen 0 oldu çünkü reset yapıldı.
+
+82
+00:16:34,868 --> 00:16:45,848
+Bir set ettim, ne olursa olsun giriş zaten set olacak. Bir birdeyken yine aynı şuradaki olduğu gibi tanımsızlık bu SR devreleri için mevcut.
+
+83
+00:16:49,172 --> 00:16:51,312
+çalışması anlaşıldığını düşünüyorum.
+
+84
+00:16:56,340 --> 00:17:06,680
+Şimdi bunun bir başka versiyonu var. D latch devreleri. D tipi flip-flop olarak da biz bunu söyleyeceğiz.
+
+85
+00:17:06,780 --> 00:17:17,620
+Clock-Piles olduğu için. Yapılan tek şey şu. Set ile reset bağlanıp bir tane reset'e inverter gidecek şekilde bağlanıp tek bir giriş yapılıyor.
+
+86
+00:17:17,620 --> 00:17:22,620
+Amacı da şu. Zaten buna data type flip-flop denilir.
+
+87
+00:17:22,996 --> 00:17:31,556
+Ne demek bu? Buradan 0 veriyorsam, zaten resete 1 geleceği için resetlenmiş olacağız.
+
+88
+00:17:31,859 --> 00:17:50,900
+Buradan bir veriyorsam, tabii bu bir change'i clock-pice geldikten sonra buraya yansıyacak. Bunu hiçbir zaman unutmayalım. Bir değiştirdim, clock'a bastım, burası bir olacak. Yani aslında D tipi flip-flop'un yaptığı tek şey, ismi üstünde data tipi, girişteki D tek pini var. Yani şöyle bir flip olduğunu düşünün bunu.
+
+89
+00:17:52,531 --> 00:18:08,231
+Bir girişim D var, bir de plot-pilesi sinyal senkronizasyonuna bağladım. Bir de Q ile Q diye çıkışlarım var. D'ye ne verirsem, 0 verdiysem Q 0, 1 verdiysem 1. Yani datanın direkt aktarıldığı flip-flop şeklidir diyeceğiz.
+
+90
+00:18:10,132 --> 00:18:18,652
+Doğru şey tablosu da 0 iken 0 geldi 0. Ya aslında bir önceki duruma hiç bakmıyor. D 0, D 1.
+
+91
+00:18:19,023 --> 00:18:24,723
+D0, D1 şeklinde T artı bir değiştiren flip-flop.
+
+92
+00:18:27,344 --> 00:18:29,783
+Sembolde genelde bir kutu çizilir.
+
+93
+00:18:30,603 --> 00:18:31,663
+İşte D de böyle.
+
+94
+00:18:32,403 --> 00:18:33,983
+İşte bazılarında şöyle olur.
+
+95
+00:18:34,183 --> 00:18:36,344
+İşte set, reset.
+
+96
+00:18:37,443 --> 00:18:38,203
+Bunlar yok tabii.
+
+97
+00:18:38,563 --> 00:18:41,043
+Şuradan da şöyle bir block-pice yazılır.
+
+98
+00:18:41,583 --> 00:18:43,344
+Bazıları buraya üçgen koymaz.
+
+99
+00:18:43,563 --> 00:18:44,603
+Şöyle bir şey yapar.
+
+100
+00:18:45,044 --> 00:18:48,884
+Amaç burada, Boole clock payasını göstermektir.
+
+101
+00:18:51,004 --> 00:19:02,584
+JK flip-flop'una baktığımızda, özel bir flip-flop, yaptığı tek güncellemesi şu, set reset ile aynı. Burada J sete tekabül gelir.
+
+102
+00:19:03,188 --> 00:19:05,648
+K, resete tekabül gelir.
+
+103
+00:19:06,347 --> 00:19:10,048
+Ama set resetteki en büyük sıkıntı şuydu hatırlarsınız.
+
+104
+00:19:10,228 --> 00:19:14,888
+1-1 durumunda set resette unidentified oluyordu.
+
+105
+00:19:16,568 --> 00:19:18,408
+Yani tanımsızdı.
+
+106
+00:19:19,408 --> 00:19:26,508
+JK'da ise 1-1 durumunda Q'nun, Qt'nin değilini yansıtırdı.
+
+107
+00:19:26,508 --> 00:19:29,688
+Nereye? Qt artı 1'e.
+
+108
+00:19:30,291 --> 00:19:39,672
+Aradaki tek güncelleme bu, opposite state'e, yani bir önceki durumun tam tersine eviren bir çalışması var.
+
+109
+00:19:41,031 --> 00:19:50,011
+T tipi flip-flop, bir başka JK'dan üretilmiş flip-flop. Bunun açılımı toggle dediğimiz bir açılımı var, toggle.
+
+110
+00:19:51,092 --> 00:19:57,572
+Flip-flop. Bu da şu demek, biliyorsunuz, toggle eviren, çeviren, işte tersini alan flip-flop demek.
+
+111
+00:19:58,152 --> 00:20:02,812
+Eğer ki, bunun da kutu mimarisini sizlerin tek bir girişi var zaten, T.
+
+112
+00:20:03,272 --> 00:20:07,032
+Şurası da clock-pice diyelim. Burası Q ve Q değil.
+
+113
+00:20:08,832 --> 00:20:18,172
+Şimdi, T benim sıfırsa eğer, hiç değiştirmiyor. Q'nun değeri, yani Q, T artı bir.
+
+114
+00:20:18,836 --> 00:20:37,076
+QT'ye eşit ol. Ama şuraya şöyle, toggle sıfırsa diyelim. Toggle birse, yani E1 dediğimiz şekliyle kullanırsak, QT artı biri, benim için QT'nin değini olacak diyeceğiz.
+
+115
+00:20:37,844 --> 00:20:59,844
+Bunun aslında iç yapısı, bakın buraya koymuş muydum? Evet, iç yapısı iki şekilde oluşturuluyor. Ya D tipine XOR kapılarıyla oluşturabiliriz değil mi? D tipi çünkü şuradaki veriyi direkt buraya yazan flip-flop, datatipiydi. Sıfırsa sıfır, birse bir. Tog'un sıfır olduğu senaryoda ben biliyorum ki XOR'da aynı veriler...
+
+116
+00:21:01,172 --> 00:21:09,991
+Yani 0-0 girişlerindeki bit değişimi yoksa 0, eğer girişlerindeki bitler farklıysa 1 üreten kapılardır.
+
+117
+00:21:10,392 --> 00:21:17,751
+Mesela ben 0 verdim, 0 çıktı, buraya 0 geldi ve TOGUL'u 0'ladım. Yine 0 gelecek değil mi?
+
+118
+00:21:18,412 --> 00:21:26,192
+Ama ben buraya 1 gelse yine 1 gelecek. Yani şey değişmeyecek, şu senaryo gelse buradan.
+
+119
+00:21:27,284 --> 00:21:35,824
+1, 0'dan buraya yine 1 gelecek yine senaryum değişti. Yani aslında ben şöyle bir T tipi flip-flop üretebilirim D tipi kullanarak.
+
+120
+00:21:38,203 --> 00:21:47,344
+İçerisinde bir adet D tipi kullandım. Başına bir XOR kapısıyla toggle'ı bağladığımda aslında ben toggle etmiş oluyorum.
+
+121
+00:21:47,624 --> 00:21:54,344
+Çünkü toggle'a ben buraya 1 verdiğimde, yani çevir dediğimde, burası 0 geldiğimde 1 çıkacak, çevirmiş olacak.
+
+122
+00:21:54,720 --> 00:22:13,680
+Veyahut da bir geldiğinde sıfır çıkacak, yani yine çevirilmiş olacak. Birinci yapılabilme opsiyonu bu. Bir diğeri ise JK flip-flop bundan dolu yapılıyor. Onu nasıl yapıyorlar? Şöyle kutusu çizeyim. JK, clock diyelim.
+
+123
+00:22:14,420 --> 00:22:20,579
+J ve K'yı direkt birbirine bağlayıp T tip yapılıyor arkadaşlar. Niye bu?
+
+124
+00:22:21,236 --> 00:22:29,536
+Bu şekilde çünkü ben toggle'a 0 verdiğimde 0-0, JK flip-flop için Q'nun aynısını koy demekti.
+
+125
+00:22:30,136 --> 00:22:40,236
+1 verdiğimde 1-1, set ve resepte tanıdısı olan 1-1, JK için bunun toggle'ını al, yani tümleyenini al demekti.
+
+126
+00:22:40,636 --> 00:22:47,196
+Tümleyenini yansıtacak. Yani aslında iki şekilde de T tepki flip-flop'un gerçekleştirilmesi mümkün.
+
+127
+00:22:49,140 --> 00:22:55,620
+Anladık mı arkadaşlar bu kısma? Problem yok herhalde.
+
+128
+00:23:01,011 --> 00:23:28,631
+Şimdi burada biz gördüğümüz D tipi, T tipi, JK ve set-reset tipi flip-flopların karakteristik tablosunu, karakteristik denklemini ve en önemlisi bu altındaki tablonun, yani anlam çıkartma tablosunu öğreneceğiz. Bunları bileceğiz arkadaşlar. Bunlar zaten atla deve değil, set-resete bağladıktan sonra mentaliteyi. Bunları ezbere yazmamız lazım.
+
+129
+00:23:29,011 --> 00:23:36,251
+Misal, D tipi flip-flop'un girişi 0 ise, bir sonraki çıkış 0 olacak. Zaten data tipi.
+
+130
+00:23:37,151 --> 00:23:40,751
+Girişin 1 ise, bir sonraki çıkışın 1 olacak. Bu bilgiyi bileceğiz.
+
+131
+00:23:41,511 --> 00:23:49,031
+Ve bunun denklemini çizdiğimizde aslında T artı 1'deki çıkışın sadece D'ye bağlı olduğunu çıkartabiliriz.
+
+132
+00:23:49,692 --> 00:23:50,911
+Ters açıdan bakarsın.
+
+133
+00:23:51,443 --> 00:24:01,603
+QT artı 1'in ne olduğunu biliyorsak, D tipi flip-flop'un gidişine ne gelebileceğini, ne gelmesi gerektiğini bulmamız gereken tablo bu aslında.
+
+134
+00:24:02,363 --> 00:24:10,083
+Mesela şu an T artı 1'de, şu an değil, bir sonraki T'de sıfırmış. Demek ki D'im benim sıfır olacak.
+
+135
+00:24:10,083 --> 00:24:12,076
+Veya bir sonraki...
+
+136
+00:24:12,692 --> 00:24:19,812
+T artı bir aşamasında çıkışım birmiş, demek ki benim gidişim bir olacak, kaidesini anlamını çıkartacağız.
+
+137
+00:24:20,711 --> 00:24:27,292
+Bu D ve T tipi flip-flop da çok sıkıntı değil. Set, reset ve JK'da bu biraz sıkıntı olacak.
+
+138
+00:24:28,012 --> 00:24:37,951
+T tipine bakalım, toggle yani tersleyen flip-flop. Sıfırsa toggle, bir sonraki durum, bir önceki durumun aynısı olacak.
+
+139
+00:24:38,771 --> 00:25:05,751
+Bir ser toggle, yani bir verisi veriliyorsa gelişe, bir sonraki çıkışım benim bir önceki çıkışım, invert hali, NOT hali olacak, komplement hali olacak. Karaktersi de zaten T ile Q'nun EXOR'lanması çıkmıştı. Ters açıdan bakarsak, bir sonraki aşamada eğer ki bir önceki aşamanın çıkışını görüyorsak, toggle'ım benim sıfırdır.
+
+140
+00:25:06,516 --> 00:25:18,756
+Ama NOT'lanmışını, komplement halini görüyorsak, bir sonraki T'de, bir önceki T'nin çıkışlarını kıyasladığımızda, benim T tipi flip-flop'un girişi 1 olması gerekiyor diyeceğiz.
+
+141
+00:25:21,416 --> 00:25:32,216
+SR flip-flop, set reset'e baktığımızda zaten yukarıya bir daha 0,0'dayken hatırlıyor. 0,1'de iken reset diyor, 1,0'dayken set diyor, 1,1'deyken çalışmıyor dedik.
+
+142
+00:25:32,980 --> 00:25:58,700
+Şimdi anlam çıkartmasına bakacağım. Bunu şu açıdan önerdim. Qt anda sıfırmış, t artı bir anda da sıfır kalmış. O zaman iki olasılık var. Ya set resetle ben resetlemişimdir ya da set resetle bir önceki durumun aynısı olduğu için sıfır sıfırlamışımdır. Çünkü ben biliyorum ki sıfır sıfırda no change yapıyor. Yani hatırlıyor.
+
+143
+00:25:59,443 --> 00:26:22,864
+İşte burada yazarken bu ikisini beraber yazmamız lazım. Olabilecek olasılıkları. Burada ortak olan sıfır. Bir kere set kesinlikle bir olmaması lazım. Ama resetin ne olduğunun önemi yok diyebilmemiz lazım. Çünkü birdeyken de bu sonuç çıkıyor. Yani sıfırken sıfır kalıyor. Sıfırdayken de sıfırdan sıfır kalıyor.
+
+144
+00:26:23,763 --> 00:26:42,384
+0-1 örneğine bakalım. Bir kere setlenecek başka bir şey yok. Çünkü ben şunu biliyorum. Set, reset, flip-flopları komplement almaz. Bir önceki durumun çiftliğe, bir önceki durumun komplement formunu koymaz. 1-0'da da keza aynısı. 0-1 yani resetlemesi lazım sadece.
+
+145
+00:26:42,384 --> 00:26:51,384
+1-1'deyken de ya şunu diyebilirim 0-0 set reset'in ikisine de 0-0 vermişimdir hatırlamıştır.
+
+146
+00:26:51,443 --> 00:27:04,743
+Çünkü aynısı. Ya da reset setlemişidir. Yani sete bir vermiştir. Yani set reset ya bir sıfırdır ya da set reset sıfır sıfırdır.
+
+147
+00:27:05,163 --> 00:27:11,163
+Buna baktığımda reset zaten sıfır olacak ama setin ne olduğu önemli değil diyeceğiz.
+
+148
+00:27:11,803 --> 00:27:17,443
+Bunu ne için bu işlemi yapıyoruz? Şunun için. Biz set reset bir entegre kullandık.
+
+149
+00:27:18,324 --> 00:27:27,443
+Set, Reset. Şimdi bunun önünde bir kombinezonsal lojik diyagram çıkması lazım. Ki sete o veri gelsin.
+
+150
+00:27:28,663 --> 00:27:38,564
+Buraya bir lojik kapılarla devre tasarımı yapacağız. Zaten hatırlarsanız birinci slide'da kombinezonsal devreye eklenen bir storage elemaktan bahsediyoruz.
+
+151
+00:27:39,188 --> 00:27:44,068
+Bu noktada kombinezonsal devrenin tasarlanması lazım. Onunla neye göre tasarlayacağız?
+
+152
+00:27:44,548 --> 00:27:58,588
+İşte elimizdeki set-reset girişlerini şöyle istenen formatta, hani QT ve QT artı birin durumuna göre oluşmuş set ve reset uçlarında Karnaugh map yapacağız biz.
+
+153
+00:27:58,988 --> 00:28:05,228
+Ve bu Karnaugh map'in neticesinde benim elime bir devre tasarımı gelecek, bu devreyi buraya bağlayacağım.
+
+154
+00:28:06,932 --> 00:28:31,884
+Q, T ile Q değil T olacak. Örnek yapacağız. JK, flip-flopunu da analiz edelim. 0, 0'dayken, yani aynısı bir önceki durumu 0, 1'iken resetledim, 1, 0'iken setledim, 1, 1'iken deminki olmayan komplementi var. Tersten bakalım. 0, 0, ya resetlemişimdir, yani ya...
+
+155
+00:28:31,923 --> 00:28:44,163
+0, 1 vermişimdir ya da aynısı kalsın dediğim için 0, 0 vermişimdir. O yüzden 0, X. 0, 1'deyken ya setlemişimdir ya komplementini almışımdır.
+
+156
+00:28:44,163 --> 00:28:59,304
+Yani ya, pardon, ya setlemişimdir şöyle ya da komplementini almışımdır. Baktığımda ortaklara aslında 1, X'dir değil mi? Resetmin'e bakmıyor.
+
+157
+00:29:00,596 --> 00:29:05,515
+1, 0'dayken de X1 olacak, 1, 1'dayken de X0 olacak.
+
+158
+00:29:09,748 --> 00:29:12,788
+Evet, bir diyagram, timing diyagramlarına bakalım.
+
+159
+00:29:13,588 --> 00:29:21,448
+Clock-piesi ve D tipi ve T tipi iki flip-flop'un girişlerine verilen sinyal, bu da çıkışları flip-flop'un.
+
+160
+00:29:21,668 --> 00:29:26,808
+Şimdi ilk başta D ve T'yi bir yapmama rağmen herhangi bir değişim yok.
+
+161
+00:29:26,988 --> 00:29:32,028
+Neden yok? Çünkü clock-piesine kadar çıkışlarım hiçbir zaman güncellenmeyecek.
+
+162
+00:29:32,488 --> 00:29:35,568
+Clock-piesinden de ufacık bir gecikme yaşayacağız.
+
+163
+00:29:36,088 --> 00:29:37,748
+Bu D tipinde bir tık daha fazla.
+
+164
+00:29:37,748 --> 00:29:56,828
+Bu gecikmenin neticesinde data tipi 1 olduğu için 1'e çıktı. Toggle ise, yani işte tersine alan flip-flop'u 1 verdiğim için toggle'a et dedik, tersine al dedik. Bir önceki durum 0 iken şu an 1 yaptı, toggle etti.
+
+165
+00:30:00,000 --> 00:30:20,000
+Sonra sıfıra indirmişim ve bir değişim yok. Niye yok? Çünkü benim flip-flop'um yükselen kenar tetikleme, şimdi üç tarz tetikleme davranışı var. Yükselen kenar tetikleme bir flip-floptan bahsediyorsak, sadece ve sadece falstlerin yükselen kenarında güncellemeler gerçekleştirilir.
+
+166
+00:30:21,172 --> 00:30:28,312
+Düşen kenar tetiklemede olamaz mı? Olabilir. O zaman da sadece düşen kenardan sonra güncelleme gerçekleştirilir.
+
+167
+00:30:28,312 --> 00:30:39,552
+Bir de düzey tetikleme var. Bu düzey boyunca olan değişimlerin aniden hissedildiğini gösterecek. Ama bizim şu anki örneğimiz yükselen kenar tetikleme.
+
+168
+00:30:42,163 --> 00:30:56,483
+0'a düşürdüm ama çıkışlarda bir değişim yok. Neden yok? Çünkü ilk clock payısından sonra değişecek. Misal, 0'a düşürdüm, data tipi düşmesi lazım. Çünkü datam benim 0 artık. Ama ilk clock'tan sonra düşüyor.
+
+169
+00:30:58,063 --> 00:31:08,403
+Toggle tipi de 0 vermişiz. Yani aynısını devam ettir dedik. Qt artı 1, Qt'ye eşit.
+
+170
+00:31:10,996 --> 00:31:16,996
+Sonra bir başka ClockPiles'e baktığımda, bu sefer bir vermişsiz datatipi 1'e yükseldi.
+
+171
+00:31:18,216 --> 00:31:21,316
+Toggle'da 1'i 0'a düşürdü vs.
+
+172
+00:31:25,395 --> 00:31:27,155
+JK ile SR'ye bakalım.
+
+173
+00:31:33,044 --> 00:31:56,044
+Clockpiesinin tetiğiyle beraber ikisi 1-0, yani sete 1, J'ye 1 verilmiş olan senaryoda çıkışın 1. Öteki Clockpiesinin yükselen kenarında 0-1 verilmiş, resetlendi ikisinde de. Öteki Clockpiesinde 1-1 verisi geliyor. Şimdi 1-1 verisi Sere için tanımsız. O yüzden ne olacağını bilmiyorum. Ama...
+
+174
+00:31:56,756 --> 00:32:13,176
+JK flip-flop için bir bir toble ettim. Ve toble ederek benim yükselen aktif haydi yaptım. Sonraki şeyde, clock payısına bakıyorum, 0-1miş, resetledim. Bu da resetlendim.
+
+175
+00:32:18,067 --> 00:32:34,647
+Master Slave yapılarını çok detaylıca anlatmayacağım, sadece mantığla anlatacağım, çok önemli değil. Normalde diyoruz ki biz flip-flop'u clock-pies ile titikleyeceğiz, doğru mu? Anca o zaman dışarıda sonuç neticelenecek, yani sonuç güncellenecek.
+
+176
+00:32:41,460 --> 00:33:03,359
+AND'a tetiklenir. Misal yükselen kenar dedik mi, şuralarda tetiklenecek. Ama ben iki tane flip-flop'u, clock-pice'leri 1 ve 0, yani biri 1 iken öteki 0, öteki 0 iken öteki 1 olacak şekilde ayarlarsam, hem yükselen kenarda hem düşen kenarda. Şimdi yükselen kenarda bu tetiklediği.
+
+177
+00:33:03,807 --> 00:33:06,827
+Düşen kenarda da bunu atladığım için bu tetiklenecek.
+
+178
+00:33:07,208 --> 00:33:11,327
+Aslında güncellemeyi sadece burada değil, burada da almış olacağım.
+
+179
+00:33:11,847 --> 00:33:16,847
+Yani güncelleme parametresi aralığını kısaltmış olacağım daha hızlı çalışsın diye.
+
+180
+00:33:17,647 --> 00:33:22,167
+Bu anlamda master slav yapıları kullanılıyor, kuruluyor.
+
+181
+00:33:22,528 --> 00:33:24,748
+Ama dediğim gibi çok da detaylıca anlatmayacağım.
+
+182
+00:33:26,836 --> 00:33:37,516
+Evet, şimdi dört tane flip-flop'tan bahsettik. D tipi, T tipi, JK vs. Bunların çalışma karakteristik tablolarını vs. izah ettik.
+
+183
+00:33:37,916 --> 00:33:50,176
+Şimdi geldik bu tarz ardışıl devrelerdeki ait soruları nasıl çözeceğiz? İki tip soru şekli var. Birincisi devre analizi. İkincisi ise devre sentezi.
+
+184
+00:33:50,804 --> 00:34:00,804
+Şimdi devre analizini çözerken soru şöyle geliyor. Karşınıza bir devre veriliyor ve bu devre ne iş yapıyor gibi soru sorulabilir.
+
+185
+00:34:00,964 --> 00:34:08,804
+Veyahut da bu devrenin çalışma prensibini izah edin gibi soru sorulabilir. Bunun için yapılması gereken adımlar var.
+
+186
+00:34:09,043 --> 00:34:18,184
+Ardışıl devre olduğu için flip-flop mimarilerinde durum diyagramları ve durum tablolarının oluşturulması lazım.
+
+187
+00:34:18,771 --> 00:34:33,952
+Şimdi, durum diyagramı esasında soruda istenen en nihai şey, bu devre nasıl bir durum stepler arasında, stage'ler arasında, state'ler arasında, durumlar arasında nasıl bir graf çizecek?
+
+188
+00:34:34,231 --> 00:34:36,552
+Bunu sorgulanıyor aslında devre sorgulanıyor.
+
+189
+00:34:37,032 --> 00:34:44,592
+Bunu yapacağımız ilk işlem devre analizinde çözümlere ulaşacağımızda ilk etapta şunu yapacağız.
+
+190
+00:34:45,076 --> 00:34:50,956
+Her bir flip-flopun, bir tane olmak zorunda değil, iki, üç, dört tane flip-flop olur.
+
+191
+00:34:51,756 --> 00:35:00,895
+Her bir flip-flopun girişlerine ait devrenin çıkışlarına ilişkin bu fonksiyonlarını devreye bakarak çıkartacağız.
+
+192
+00:35:00,895 --> 00:35:04,895
+Yani benim flip-flopun girişlerindeki devre...
+
+193
+00:35:05,364 --> 00:35:12,123
+Nasıl bir fonksiyon, yani fonksiyon mimarası nasıl getirdik onu yapacağız. Yani fonksiyon halinde yazacağız.
+
+194
+00:35:12,963 --> 00:35:21,984
+Şimdi burada flip-floplar bir olabilir, iki olabilir, üç olabilir dedik ya aslında her bir flip-flop bizim durumlarımızı gösterecek.
+
+195
+00:35:21,984 --> 00:35:24,884
+Ne demek bu? Misal diyoruz ki biz.
+
+196
+00:35:25,619 --> 00:35:45,699
+Geçen haftaki örnekte şöyle bir soru vardı herhalde yanlış olmasın ama şifre çözmeydi. 1-0, 1-0 geldiğinde LED yansın. Şimdi burada durumları tanımlarken neydi? Ne demiştik biz? Birinci dijit bir tane durumu. İşte bu durumdan öteki duruma geçmek için ben bir verisini veriyorum. Çıkışım 0 dedi.
+
+197
+00:35:47,987 --> 00:36:13,887
+Bir geldikten sonra, öteki durumdan bir sonraki duruma geçmek için de sıfır verisi vermemiz gerekiyor dedik. Sonra tekrar bir verisi vereceğim, başka bir duruma geçelim. Sonra sıfır vereceğim ve ledi yapacağım gibi. Şu an olan bir durum yani böyle bir sekvens geldiğinde mesela. Yani biz burada durumdan kastımız neydi? Her bir dijitti.
+
+198
+00:36:14,900 --> 00:36:22,800
+İlk hanede 1'e basınca 2. hane, sonra 0'a basınca 3. hane, 1'e basınca 4. hane, yanlış mı oluyor?
+
+199
+00:36:23,880 --> 00:36:37,860
+Bu 1. hane, 1 bastım 2. hane, 0 bastım 3. hane, 1 bastım 4. hane ve tekrar 0 bastımda artık bu hane bittiğinden seküensin tanımlanacak.
+
+200
+00:36:38,340 --> 00:36:40,199
+Yani aslında buradaki her biri dijitti.
+
+201
+00:36:40,788 --> 00:36:49,887
+Şimdi, durumlardan kastımız buydu. Aslında problemi durumlara özümsüyorduk. Yani bir durumları tanımlıyorduk. Burada dijitti mesela.
+
+202
+00:36:51,731 --> 00:37:18,391
+Flip-flop aslında, burada mesela kaç tane durum oldu? En son belki şöyle bir şey yapabilir, sana kilitlensin ve başa gelsin dersek, işte şöyle bir şey yaptığımızı düşünelim bu senaryo için. Şu an baktığımızda bizim dört tane durumumuz var. Yani iki bitle gösterebilirdim. 0-0, yani decimal olarak karantin içerisinde de 0-1 durum. 0-1, birinci durum. 1-0, ikinci durum.
+
+203
+00:37:19,059 --> 00:37:31,980
+1, 1, 3. durum şeklinde yazabiliyorum. Neden? Çünkü 4 durumu 2 bit ile gösterebiliyorum. Şimdi flip-floplar aslında buradaki her bir durumun dijitini gösterir.
+
+204
+00:37:32,180 --> 00:37:38,891
+Mesela bu flip-flop 1 olacak. Bu flip-flop 2'yi gösterecek. Yani durumların...
+
+205
+00:37:38,931 --> 00:37:43,971
+Binary bitsel anlamdaki genişliği benim flip-flop'un adedinemeyecek.
+
+206
+00:37:44,471 --> 00:37:49,891
+Mesela 2 bit, yani 4 durumu gösteren burada 2 tane flip-flop kullanacağız.
+
+207
+00:37:51,251 --> 00:37:55,011
+Çünkü 2 bit ve her bir bitte bir durum saklayabiliyor.
+
+208
+00:37:55,011 --> 00:38:02,291
+Şimdi örnek verecek olursa, 8 tane durumum olsa, 8 tane durum.
+
+209
+00:38:03,476 --> 00:38:09,735
+tasarladım. İşte sıfırdan yediye kadar sayan bir sayı. Herhalde onu geçen hafta yapmıştık. Durum diyagramından.
+
+210
+00:38:10,435 --> 00:38:15,916
+Sıfırı, bir, iki, üç, dört, beş, altı, yedi ve sonra sıfıra girdim. Böyle bir şeydi. Sekiz tane durum.
+
+211
+00:38:16,576 --> 00:38:28,516
+İki üzeri N'in bu durum sayısından eşit olması lazım. Yani sekiz tane durum. O zaman burada bu N benim kaç adet
+
+212
+00:38:30,164 --> 00:38:32,344
+Flip-flop kullanacağımı gösteriyor.
+
+213
+00:38:34,564 --> 00:38:41,344
+Bu durumda, mesela 8 tane durum var, 3 tane, yani işte 0, 0, 0, 0. durum.
+
+214
+00:38:43,604 --> 00:38:45,784
+İşte aralar var tabii, 1, 1, 1.
+
+215
+00:38:46,420 --> 00:39:00,820
+Yedinci durum diyelim. Yani sıfırdan başlayınca yedi, sayısal sistemde birden başlarsak sekiz olacak. Yani aslında üç bit ile gösterilebilen bir durum. Ve bunların her biri benim için bir flip-flopu gösterecek.
+
+216
+00:39:02,643 --> 00:39:15,663
+Burada, yani soru da bir tane değil, birden fazla flip-flop varsa, aslında bitsel anlamda flip-flopların ondalık karşılığı, yani decimal karşılığı bana maksimum olabilecek durum sayısını gösterecek.
+
+217
+00:39:16,443 --> 00:39:17,783
+Tersten de düşünürsek.
+
+218
+00:39:18,099 --> 00:39:42,359
+Birinci aşamamız bizim devre analizinde flip-flopların girişindeki devrelerin Boole cebri'ni yazacağız. Sonra flip-flopun geçiş fonksiyonları kullanarak durum fonksiyonları, bir sonraki durum fonksiyonları elde edilecek, durum tablosu oluşturulacak ve durum diyagramı çizilecek. Örnekten gidelim, mesela şöyle bir devre. Bakıyoruz devrede iki tane flip-flop var.
+
+219
+00:39:43,188 --> 00:39:47,807
+Yani iki tane flip-flop varsa maksimum kaç durum yazılabilir?
+
+220
+00:39:53,235 --> 00:40:04,096
+4 adet durum yazılabilir. Çünkü, buraya ben yazmamış ama, FA diyeyim, flip-flop A çıkışından dolayı, buraya da flip-flop B diyeyim.
+
+221
+00:40:04,536 --> 00:40:11,976
+Yani aslında, flip-flop A, flip-flop B şeklinde oluşan ikili bir durum mimarisi var.
+
+222
+00:40:12,532 --> 00:40:24,372
+Yani QA ve QB'nin ikisi beraberinde bana bir durumu gösterecek. Şu A ve B'yi çıkış alırsak QA, QB diyebiliriz. Durumu gösterecek.
+
+223
+00:40:25,232 --> 00:40:35,372
+Şimdi birinci aşamamız şuydu. Flip-flop'un girişlerindeki lojik diyagramlar, lojik kapılarla yapılmış olan bu kombinezonsal yapıların,
+
+224
+00:40:36,596 --> 00:40:56,135
+Boole cebri'ndeki karşılığını yazalım. Yani ben, hatta yazmıştım, input'lar, output'lar, state'ler falan burada yazılı. İlk bunu, bu D tipi flip-flop'un girişini formülüze ettim. Nasıl formülüze ettim? Bu A demiş direkt aslında, QA da olabilir.
+
+225
+00:40:56,659 --> 00:40:59,959
+A flip-flopu diyelim buraya, buraya da B flip-flopu.
+
+226
+00:41:00,439 --> 00:41:08,039
+A flip-flopunun bir sonraki aşaması D tipi olduğu için arkadaşlar, bakın burayı tekrar buluyorum.
+
+227
+00:41:08,559 --> 00:41:10,919
+D tipi olmasaydı direkt böyle yazamazdık.
+
+228
+00:41:11,579 --> 00:41:15,779
+D tipi flip-flop olduğu için, neden bunun olduğu için diyorum.
+
+229
+00:41:15,779 --> 00:41:22,479
+Çünkü buradaki değer aslında QA T artı 1'in aynısı.
+
+230
+00:41:23,123 --> 00:41:48,023
+Çünkü datatifli oldur. D girişindeki şu Boole cebri benim t artı 1'i verecek. Şu AT artı 1 eşitti. AT çarpı XT. Yani aslında şuradan AT geliyor. XT ile entlenmiş. Sonra XT'nin şuradan BT ile entlenmesi ve bunun orlanmasına bağlı. T artı 1 anı.
+
+231
+00:41:48,371 --> 00:42:03,672
+Öteki taraftan, B flip-flop'una bakarsak, A'nın D'li, LX, X burada bizim input girişimiz, girişin entlendiği giriş oluyor, D tipi.
+
+232
+00:42:05,092 --> 00:42:11,911
+Tekrardan belirtiyorum, D tipi olduğu için, ve biz demin de yazdığımız, B, T artı 1'i,
+
+233
+00:42:12,884 --> 00:42:18,884
+D'ye eşit olması, burada D'nin de aslında buradaki kapılarla oluşan A'nın...
+
+234
+00:42:22,132 --> 00:42:37,891
+ve x'in AND'lenmesinden doğduğunda biz direkt bt artı bir yazdık. Yani bir sonraki durumun bir önceki durumlar ve inputlarla yazımı, Boole cebri'ni şu an oluşturuyoruz.
+
+235
+00:42:38,532 --> 00:42:46,371
+En son bir tane de outputumuz varmış, y onu da yazdık. O da neymiş? İşte bt çarpı x değil de
+
+236
+00:42:49,172 --> 00:43:16,392
+dediğimiz şu, pardon, BT artı AT ile bunun X değil T, entlenmiş harim. Bu üç denklemi oluşturduktan, çıkarttıktan sonra devre analizinde durum tablosunu oluşturacağız. Durum tablomuz bize aslında bu formüldeki değerlerin yazıldığı yer. AT, işte şu sol taraf durum tablosunu anlatmıştım. Sol taraf benim için aynı.
+
+237
+00:43:16,884 --> 00:43:23,023
+Doğruluk tablosunda olduğu gibi inputlarımız sağ tarafta alt tutlarımızı gösterecek.
+
+238
+00:43:23,644 --> 00:43:31,003
+Input'um 0, 0 iken, yani şurada yerlerine koyduğumda, X'de 0 iken, AT artı 1 ne oluyor? Bunu buraya yazıyorum.
+
+239
+00:43:31,003 --> 00:43:39,764
+Bu durum tablosunu oluşturmamızdaki kayda şu, burada Boole cebri çıkarttığımız denklemin durum tablosu üzerine koyarak,
+
+240
+00:43:43,635 --> 00:43:49,175
+Ya şuradayken, 0, 0'dayken, inputum 0 nereye gitmiş bunu gözlemlemek için.
+
+241
+00:43:49,895 --> 00:43:56,435
+Bunu böyle yazabileceğimiz gibi, geçen hafta da anlatmıştım ve bu bana daha yatkın geldiği için bu şekilde de oluşturabiliriz.
+
+242
+00:43:57,175 --> 00:44:03,815
+Yani gidişimiz, bu da aslında bir gidiş ama hani daha satır sayısı az olsun diye bunu heading'e almışız.
+
+243
+00:44:04,500 --> 00:44:12,579
+0-0-0'dayken şu denklemde ne oluyor? 0-0-0'dayken bu denklemde ne oluyor? Ve Y'de ne oluyor? Bunun analizi.
+
+244
+00:44:13,980 --> 00:44:19,780
+Bunu yaptıktan sonra aslında biz bu durum tablosundan durum diyagramını elde edeceğiz. Ne demek bu?
+
+245
+00:44:27,923 --> 00:44:33,923
+Dışarıdan 0 geldiğinde, yine 0-0'a gitmiş. Yani aslında şöyle yapacaktım.
+
+246
+00:44:35,804 --> 00:44:38,204
+Ve çıkışım da benim 0'mış.
+
+247
+00:44:39,824 --> 00:44:45,864
+Bu tablodan, durum tablosundan durum diyagramını oluşturacağız. Misal 0-1'e gitmiş.
+
+248
+00:44:51,315 --> 00:44:52,835
+Ve çıkışım sıfırmış.
+
+249
+00:44:55,495 --> 00:44:57,635
+Anlaşıldı mı durum tablosu?
+
+250
+00:44:59,635 --> 00:45:01,056
+Ve durum diyagramı.
+
+251
+00:45:01,855 --> 00:45:08,596
+Durum tablosundan sonra da durum diyagramını tabloya bakarak çıkarttığımız soru şeklindir bu devre analiz.
+
+252
+00:45:12,692 --> 00:45:21,872
+Meli ve Moor'a göre tabii bu değişecek. Çünkü şunu biliyoruz, bakarsak şu tabloya. Bu Meli mi Moor mu? İlk onu bir sorayım.
+
+253
+00:45:25,523 --> 00:45:27,744
+Meri gösterimimi, mor gösterimimi.
+
+254
+00:45:34,291 --> 00:45:35,532
+Bu da mizah arkadaşlar.
+
+255
+00:45:43,923 --> 00:45:45,043
+Tepki bekliyorum.
+
+256
+00:45:54,132 --> 00:46:02,612
+Kesin %100 finalde soru soracağım bir kısım burası ve şu an herhangi bir cevap da gelmiyor açıkçası.
+
+257
+00:46:02,612 --> 00:46:03,331
+Acıyan.
+
+258
+00:46:05,891 --> 00:46:07,652
+Meli mi Murmolu?
+
+259
+00:46:11,507 --> 00:46:15,247
+Çalışacaksınız arkadaşlar. Geçiyorum buraları.
+
+260
+00:46:19,827 --> 00:46:45,827
+Hiç fikir dahi yok mu yani? Mailimle mi olmadı diyeyim. Evet, bir başka örnek. Lojik diyagramı verilmiş, herhangi bir inputu olmayan sırasal devre tasarımı. Ne demek inputu yok? Ben elektrik verdim de devreye. Başlıyor bir işlemden, işte ilk durumdan, son duruma gidiyor ve tekrar başa alan devreler. Herhangi bir inputa bağlı olmaksızın.
+
+261
+00:46:46,527 --> 00:46:55,507
+Ve bir adet de Z altın var. Yine aynı mentalde de oluşturuyoruz. Diyoruz ki ilk başta bizim girişlerimiz, çıkışlarımız ne? Bunları tanımladık.
+
+262
+00:46:55,507 --> 00:47:05,807
+Ve burada denklemleri çıkartacağız. Bakıyorum AT artı bir neye bağlı? D tipi olduğu için direkt yazabilirim.
+
+263
+00:47:06,187 --> 00:47:08,027
+AT artı bir benim için.
+
+264
+00:47:09,139 --> 00:47:11,079
+Şuradan bir gidelim, nerelere gidiyor.
+
+265
+00:47:11,559 --> 00:47:15,219
+BT ile CT'nin entlenmiş versiyonu.
+
+266
+00:47:16,279 --> 00:47:21,619
+BT artı 1, burada bir kapı mimarisi var, bunun denklemini çıkartıp yazacağız.
+
+267
+00:47:21,619 --> 00:47:28,380
+B değil T çarpı CT'ymiş, BT ve C değil T'ymiş, artık BT'nin XOR'uymuş.
+
+268
+00:47:29,059 --> 00:47:33,139
+CT artı 1'de yazdık ve en son da Z çıkışımızda.
+
+269
+00:47:33,715 --> 00:47:38,835
+Yani B, T ve C, T şeklinde şustan doğru yazdık.
+
+270
+00:47:39,935 --> 00:47:44,795
+Şimdi bunları bulduktan sonra tekrardan durum tablosu oluşturacağız.
+
+271
+00:47:44,935 --> 00:47:52,715
+Bütün ABC gidişlere göre AT artı bir, apostrofları biliyorsun T artı bir olarak gösteriyorduk.
+
+272
+00:47:52,715 --> 00:47:54,295
+Hatta şuraya da yazıyorum, evet.
+
+273
+00:47:55,535 --> 00:47:56,175
+Buraya.
+
+274
+00:47:56,947 --> 00:48:11,907
+Her bulduğumuz Boole cebine göre yerine koyarak bir sonraki durumu gösteriyoruz. Yani sıfırdan 1'e gitmiş, 1'den 2'ye gitmiş, 2'den 3'e gitmiş, 3'den 4'e dönmüş ve dediği atmış. Yani output'un 1 olmuş.
+
+275
+00:48:12,667 --> 00:48:22,708
+Sonra 4'den 0'a dönmüş, 5'den 2'ye gitmiş, 6'dan 2'ye gitmiş ve 7'den de 4'e giden bir devre.
+
+276
+00:48:23,072 --> 00:48:39,572
+Ve sonuçta çıkış bir olmuş. Bunun da straight diyagramını oluşturduğumuzda 0, 1, 2, 3, 4 arasında dönen 5'e geldiğinde ve 6'ya geldiğinde 2'ye, 7'ye geldiğinde ve 4'e dönen bir ardışıl devre tasarımları.
+
+277
+00:48:44,755 --> 00:48:58,875
+Şimdi başka bir D tipi flip-flop. Ne yapacağız burada? Direkt çıkartılmış zaten. Hani şuradaki X, Z'ler vs. yani D0 ve D1'in denklemleri çıkartılmış, Z'nin de çıkartılmış.
+
+278
+00:48:59,515 --> 00:49:10,615
+Dediğimiz gibi ilk etapta şimdiki durumlar ve bu şimdiki durumları koyduğumda oluşan D0 durumu sonraki durum olacak.
+
+279
+00:49:11,856 --> 00:49:18,856
+D tipi flip-flop'unda flip-flop girişleri ve bir sonraki durumlar ayrı kolonlarda yazılmamıştır.
+
+280
+00:49:19,276 --> 00:49:21,396
+Yani bu şekilde yazılmamıştır.
+
+281
+00:49:21,856 --> 00:49:24,996
+Ama bu şekilde yazmak daha iyi olacak.
+
+282
+00:49:24,996 --> 00:49:36,476
+Neden? JK ve SR tipi flip-floplarda hatta toggle T tipi flip-floplarda giriş, flip-flop'un girişi bir sonraki durumu kendisi değil.
+
+283
+00:49:36,884 --> 00:49:48,884
+Ama burada D tipi flip-flop'ta QT artı 1, benim için D tipi flip-flop'un girişine birebir eşit olduğundan, hani böyle şimdiye kadar hiç ayrı yazmadık.
+
+284
+00:49:49,724 --> 00:50:00,724
+Şimdi bir ayrı yazalım. Ne olacak? İşte 0, 0'dayken, burada gene X nerede? X 0 iken 0 çıkacak. Misal D 0, D 1'e bakalım.
+
+285
+00:50:02,324 --> 00:50:14,503
+Yanlış mı yazdım? 0, 0'dayken 1 çıkacak herhalde değil mi? Evet. Şey 0 çıkacak tamam. Aşağıya yazmış zaten. D0 ve D1'i şuradaki denklemlere göre doldurdu.
+
+286
+00:50:15,024 --> 00:50:22,284
+Şimdi flip-flop'un girişleri aslında bir sonraki durumu oluşturuyor D tipinde. O yüzden yana direkt aynısını yazdı. Ama...
+
+287
+00:50:22,739 --> 00:50:39,439
+JK tipi flip-flopta bunları bu şekilde yazmayacağız. Yani girişleri, benim bir sonraki çıkışımı o girişlere göre oluşturacağım. Örnek verelim. Misal burası D1 ve D02 flip-flopun girişleri ya, şöyle bir şey yapsaydık.
+
+288
+00:50:48,980 --> 00:50:51,519
+Pardon, ters oldu. Şöyle yazacaktık.
+
+289
+00:50:53,940 --> 00:50:57,760
+J1, J0, K1, K0.
+
+290
+00:50:59,420 --> 00:51:00,300
+Değil mi?
+
+291
+00:51:00,619 --> 00:51:02,920
+Tabii bu daha aşağı doğru uzayacaktır.
+
+292
+00:51:03,000 --> 00:51:07,940
+Çünkü bu sıfırlar ve birler hem J1 hem J0 için denenmesi lazım.
+
+293
+00:51:08,079 --> 00:51:09,380
+Aşağı doğru gittiğini düşünüyorum.
+
+294
+00:51:09,380 --> 00:51:15,700
+Şimdi bu durumda benim J ve K'nın bu girişleri birbirine göre
+
+295
+00:51:16,063 --> 00:51:43,063
+1-1 ne yapıyordu JK flip-flop'ta? Tersini alıyor. Birinci flip-flop olduğu için de Q1'in, yani bu sıfırın tersini alarak buraya sıfır yazmamız gerekiyor. Anlatabildim mi? Yani JK flip-flop'un veya SR flip-flop'un flip-flop girişleri benim o girişlere göre bu çıkışı üretmeme, bir sonraki durum üretmemi sağlayacaktı.
+
+296
+00:51:44,052 --> 00:51:51,032
+Ona ait örnek de yapacağız. Şimdilik sadece D tipi üzerinden gidelim. D tipi direkt birbirine eşit olduğu için aynısını yazdık.
+
+297
+00:51:51,032 --> 00:51:56,032
+Ve yazdıktan sonra da şurada...
+
+298
+00:51:56,659 --> 00:52:11,480
+Şu an 0'dan X0 iken 2'ye gitmiş, 0 iken X1 iken 3'e gitmiş gibi D0, D3, D0, D2 şeklinde 0 ve 1'e göre yön eylemlerini bütün hepsi için yazdık.
+
+299
+00:52:11,539 --> 00:52:20,739
+Hatta şöyle bir tablo oluşturmakta da fayda var. Tutup da işte bu 0, 0, 0, 1 ne olduğunu bilmek yerine D0, 0. durum D1, D2, D3.
+
+300
+00:52:20,739 --> 00:52:24,659
+D0, D2'ye gitmiş, D1, D2'ye gitmiş, D2.
+
+301
+00:52:24,659 --> 00:52:33,679
+D2'de kalmış, D3'de D0'a dönmüş, X0'ken diyebileceğiz. Böyle bir ufak tablo da oluşturmak da faydalıdır.
+
+302
+00:52:34,839 --> 00:52:44,839
+Şimdi JK örneğini geçmeden önce ben bir su içeyim, genizim kurudu. Siz de bunu yapmanızı istiyorum arkadaşlar, lütfen.
+
+303
+00:52:45,839 --> 00:52:49,319
+Elinizde kağıt kalem alın, 15 dakika süre veriyorum size.
+
+304
+00:52:49,844 --> 00:53:15,064
+Saat şu an 3, 3 çeyrekte geleceğim. 3 çeyrekte şunu istiyorum sizden, o tablo, yani şuradaki tablo da açık kalsın. Ama ikisini aynı anda nasıl açarım? Bu tabloya göre, yani simgesel durum çok şart değil, şimdiki durum, flip-flop girişleri, sonraki durum ve çıkışı, o tabloyu buradan elde edelim. Nasıl elde ediyorduk?
+
+305
+00:53:16,947 --> 00:53:18,667
+Bu değerleri yazıyorduk.
+
+306
+00:53:19,288 --> 00:53:23,467
+K0 için bu Boole cebri'ni kullanarak tabloyu oluşturacağız.
+
+307
+00:53:23,587 --> 00:53:25,607
+Hatta tabloyu şuraya ben çizeyim size.
+
+308
+00:53:28,027 --> 00:53:31,987
+Şöyle biraz ufak çizeceğim ama şimdiki durum.
+
+309
+00:53:36,371 --> 00:53:38,112
+Burada X var mı var? Tamam.
+
+310
+00:53:39,331 --> 00:53:43,152
+Sonraki, dur, flip-flop ve ardışıl devreler.
+
+311
+00:53:59,123 --> 00:54:03,344
+Şimdiki durum şuraya Q0 yazdım, şuraya Q1 yazdım.
+
+312
+00:54:04,344 --> 00:54:10,423
+0, 1, 0, 1, 0, 0, 1, 1.
+
+313
+00:54:11,784 --> 00:54:19,503
+X0 iken, X1 iken, flip-flop girişleri, şey 0, K0.
+
+314
+00:54:21,503 --> 00:54:24,644
+Ama bunları biraz daha detayda yazmam lazım.
+
+315
+00:54:25,427 --> 00:54:26,748
+Şöyle yapacağız zaman.
+
+316
+00:54:29,567 --> 00:54:34,347
+Şöyle yapalım. X0'ı biraz daha şuraya büyüteyim şöyle. Geniş olsun.
+
+317
+00:54:35,768 --> 00:54:39,727
+Şurası da X1 diyeyim. Burayı da büyütmem lazım. İnşallah sığdırabilirim.
+
+318
+00:54:39,727 --> 00:54:50,987
+Şurası J1, K1, J0, K0, J1, K1, J0, K0.
+
+319
+00:54:52,403 --> 00:54:54,844
+Şöyle bir şey yapmaya çalışıyorum.
+
+320
+00:55:02,420 --> 00:55:03,340
+Şöyle yapın.
+
+321
+00:55:11,059 --> 00:55:17,099
+Ortada tabii sonraki durumda da şeye göre yazmadık ya, X0'a X1'e göre.
+
+322
+00:55:25,012 --> 00:55:26,352
+Sonraki durumda şurası.
+
+323
+00:55:26,352 --> 00:55:29,472
+Kür bir, Kür sıfır.
+
+324
+00:55:30,372 --> 00:55:30,972
+Bu olacak.
+
+325
+00:55:33,452 --> 00:55:34,412
+Şöyle bir durum.
+
+326
+00:55:34,932 --> 00:55:38,372
+Şimdi burada şunu istiyorum sizden tabloyu doldururken.
+
+327
+00:55:38,872 --> 00:55:40,132
+Şimdiki durumlara göre
+
+328
+00:55:40,132 --> 00:55:42,852
+J0, K0, J1, K1 ve Z'yi
+
+329
+00:55:42,852 --> 00:55:44,552
+Z'yi de yazalım.
+
+330
+00:55:45,211 --> 00:55:45,632
+Çıkış.
+
+331
+00:55:47,251 --> 00:55:48,352
+Z diyelim.
+
+332
+00:55:51,635 --> 00:56:03,556
+Z'de yazalım. Yani bu durumlarda şu an sıfırıncı durumdan bu flip-flop girişlerine göre hangi duruma gidecek bu tabloyu doldurmanızı istiyorum.
+
+333
+00:56:04,496 --> 00:56:13,715
+Saatimiz şu an 3 geçiyor. 3.20'de uğraşmanızı istiyorum. 3.20'de gelip yapacağız. Yani size yaptıracağım hatta.
+
+334
+00:56:13,715 --> 00:56:16,056
+Amaç Q1 dediğimiz şey.
+
+335
+00:56:16,724 --> 00:56:26,164
+J1 ve K1'i ilgilendiren bölüm ve burada da Q1'i ilgilendiren bölüm. Q0 dediğimizde J0, K0'ı ilgilendiren bölüm olacak.
+
+336
+00:56:29,124 --> 00:56:34,524
+İkinci flip-flop da blok yerine K bağlanmış ya, o kısım...
+
+337
+00:56:34,524 --> 00:56:36,444
+Yok, o şu aşağıyı gösteriyor ya.
+
+338
+00:56:37,588 --> 00:56:39,688
+K yok yani, aşağıya gösteriyor.
+
+339
+00:56:39,988 --> 00:56:41,108
+Ortaklımda saat bağlamış.
+
+340
+00:56:41,568 --> 00:56:44,768
+Bunlar klop, saat yani, şuradaki saat line.
+
+341
+00:56:51,027 --> 00:56:52,987
+3'ü 20 geçe geliyorum arkadaşlar.
+
+342
+01:13:03,475 --> 01:13:08,956
+Evet arkadaşlar, ne yaptık? Kapabilecek var mı? Çıkartan.
+
+343
+01:13:14,707 --> 01:13:15,868
+Burada mıyız arkadaşlar?
+
+344
+01:13:27,252 --> 01:13:29,312
+Yok mu uğraşan eden yapar?
+
+345
+01:13:41,332 --> 01:13:50,392
+Burada değiliz herhalde arkadaşlar. O yüzden seri seri anlatıp bitiriyorum dersi. Anladığım kadarıyla çok ilgili değilsiniz.
+
+346
+01:13:52,012 --> 01:13:56,252
+Sırayla yerine koyduğumuzda şöyle bir sonuç elde edeceğiz. Hatta direkt açayım.
+
+347
+01:13:58,132 --> 01:13:59,372
+00 durumda.
+
+348
+01:14:00,212 --> 01:14:10,812
+Verdiğimizde buraya Q1 ve Q0'ları, J1K1, J0, K0 gibi farklı farklı işte elde ettiğimiz bu cebine göre sonuçlar çıkacak.
+
+349
+01:14:10,952 --> 01:14:12,812
+Buraya yazacağız ve şunu düşüneceğiz.
+
+350
+01:14:12,812 --> 01:14:20,032
+Diyeceğiz ki birinci flip-flop'un QT anında 0 iken 0-1 girişlerinde
+
+351
+01:14:20,692 --> 01:14:29,112
+Qx0 iken yine aynı şekilde Q1'i ne olur? Yani burası T artı biri gösterecek. Burası T'yi gösterecek.
+
+352
+01:14:30,152 --> 01:14:38,551
+Q1 sıfırmış. 0, 1 veriyorsam ben reset yapıyorum demektir. O zaman Q1 burası sıfır olmasını beklerim.
+
+353
+01:14:38,551 --> 01:14:47,092
+Hatta açılmışından gideyim zaten çok burada değilsiniz. 0, 1, 0 set ettim.
+
+354
+01:14:47,507 --> 01:15:10,987
+Yani şuradaki 1'e bakıyorum. 0, 1 reset ettim. 1 iken 1, 0'dan set ettim. Burada 0, 0 şeyine bakalım. C1 için 0'dı. X1 iken 0, 0 geldiği için aynen hatırladı. 1, 1 durumuna bakalım. 0'dı. 1, 1 iken 1 geldi gördüğünüz gibi.
+
+355
+01:15:11,507 --> 01:15:17,448
+Sonra ne yapıyoruz? T ve T artı bir anındaki tabloyu daha özet bir hale getirdik.
+
+356
+01:15:18,188 --> 01:15:29,067
+Sıfırıncı state'den X0 iken 1'e, 1'deyken 3'e, 2'deyken 1'e gibisinden bunları yazıp tablonuzu oluşturuyoruz.
+
+357
+01:15:30,899 --> 01:15:58,899
+Şimdi öteki bu devre analizi kısmıydı. Devre sentezi kısmında bir tık daha işler karışıyor. Devre sentezini yaparken yani devrenin kurulmasını istediğimizde yine dört aşamalı bir analiz sürecimiz var. Bir kere Lafsen bize devrenin nasıl çalışacağını anlatılacağı o Lafsen sorunu iyi bir okumak lazım. Bu okuduktan sonra ne iş yapacağı gibi açıkça...
+
+358
+01:15:58,899 --> 01:16:21,180
+tanımlanacak. Yani ne amaçlanıyor? Buradan durum tablosu elde edilecek. Durum tablosundaki durum sayılarından kaç adet flip-flop kullanacağı bilgisi çıkarılacak ve flip-floplarda o tablolarında, karakteristik tablolarındaki çalışma prensibine göre karnoları yapıp, tabloyu oluşturup state diyarlarını çıkartacağız. Örnek bir soru.
+
+359
+01:16:21,587 --> 01:16:36,787
+Girişi X, çıkışı ise Z ile ifade eden bir ardışıl devrenin girişine 1.0.1 bit dizisi geldiğinde çıkışının lojik 1, aksit durumda lojik 0 yapan ardışıl devreyi T tipi flip-floplar kullanarak tasarda inizlenmiş.
+
+360
+01:16:38,484 --> 01:17:04,123
+İlk başta bu lafzen anlatılan soruyu state diyagramı şeklinde getirerek daha iyi, buradan biz durum diyagramını çıkartmayı hedefliyoruz. Deminki ardışıl devre analizinin tam tersi bir analiz söz konusu. Burada sentez yapacağız. Yani tersten gideceğiz. İlk başta soruyu lojik durum diyagramı şeklinde getireceğiz. Sonra durum tablosu, durum diyagramı.
+
+361
+01:17:05,203 --> 01:17:20,003
+durum tablosu ve durum tablosu elde ettikten sonra Karnaugh ve ondan sonra da devre kurma dediğimiz dört aşamadan oluşturacağız.
+
+362
+01:17:20,203 --> 01:17:31,163
+Girişi X çıkışı Z ile ifade edilen demiş, şuraları X'i gösterecek, çıkışlarımızda Z'leri de yanları olacak ki bu bir melee dediğimiz gösterimdi.
+
+363
+01:17:32,180 --> 01:17:43,360
+0. durum, 1. durum, 2. durum ve 3. durum diye 4 tane durum tasarlanmış. Neden 4 durum? Çünkü 4 tane dicidimiz var ve 1-0, 1-0 gelince ondan sonra başa alacak.
+
+364
+01:17:44,079 --> 01:17:50,000
+D0'dan 1-0, 1-0'ı buraya doğru bir şekilde yazdık ve redi yaptık.
+
+365
+01:17:50,484 --> 01:18:08,123
+Diğer bütün durumlarda şu kurguyu geçen hafta şifre, passwordla örneğini çözerken de anlatmıştım. Bunun dışındaki durumları da düşünmemiz lazım. Mesela iyi ki sıfır geldiğinde kendi üzerinde sayması lazım. Neden? Çünkü benim ilk iştim bir.
+
+366
+01:18:08,627 --> 01:18:14,207
+Ne zaman bir geldi, sonraki dicide gidecek ve tekrar bir gelme durumuna üstüne dönecek.
+
+367
+01:18:14,407 --> 01:18:18,807
+Çünkü şu durum da olabilir. Hep bir geldi, sonra bir sıfır, bir sıfırda.
+
+368
+01:18:19,247 --> 01:18:24,147
+Şunun çalışabilmesi için ilk birinin biri daha kontrol edilmemesi lazım.
+
+369
+01:18:25,907 --> 01:18:31,447
+Burada bir bastım, bir bastım, bire basmış olduğum için bir sıfır, bir sıfırda ledi yakmam lazım.
+
+370
+01:18:31,988 --> 01:18:59,347
+D2'den 0 gelince başa alacağım. Neden başa alacağım? Çünkü D2 benim için 1 verisini beklediğim veri. 0 geldiğinde başa alıp tekrar 1 verisinin gelmesi lazım. Sonraki son aşamada 1'i de bastım. 1, 0, 1'i bastım yani. Son dijitte de 1 gelirse tekrardan D1'e geçmem lazım. Bunu çıkarttıktan sonra durum diyagramının, bunun durum tablosunu oluşturmak zor değil. Durum tablosunda
+
+371
+01:19:00,340 --> 01:19:04,780
+Şuradan, durum tablosunu oluşturmak için de
+
+372
+01:19:06,068 --> 01:19:15,068
+Durum diyagramını aslında tersine yorumluyoruz. D0'dan D1'e X1'deyken geçmiş, X0'deyken üzerinde durmuş gibi yazdık.
+
+373
+01:19:15,427 --> 01:19:19,028
+Şimdi burada karar vereceğimiz şey şu, kaç adet flip-flop kullanacağız?
+
+374
+01:19:19,548 --> 01:19:24,587
+4 tane durum olduğu için 2 üzeri 2'den 2 adet flip-flop kullanmamız gerekiyor.
+
+375
+01:19:24,728 --> 01:19:26,688
+Yani 2 bit ile gösterebiliyoruz.
+
+376
+01:19:27,247 --> 01:19:34,068
+Ve bu 2 bit gösteriminde şimdiki durumu nomine eden Q0 flip-flop ile Q1 flip-flop olacak.
+
+377
+01:19:34,068 --> 01:19:46,808
+D tipi dediği için direkt hani flip-flop'un girişleri yazılabilir. Ama zaten bu girişler sonraki flip-flop'u belirttiği için bile bir D tipi olduğu için direkt de yazılabilirdi.
+
+378
+01:19:47,667 --> 01:19:55,747
+Giriş pahası sıfır veya bir olma durumu, pardon girişi. Ve en sonunda salt pahasını buraya bir simgesi olarak konulmuş.
+
+379
+01:19:56,507 --> 01:20:00,000
+Sıfır sıfırdan sıfır sıfıra sıfır sıfır, x bir olma durumu.
+
+380
+01:20:00,000 --> 01:20:21,680
+10.1'e gibi bu tabloyu oluşturduk. Bu tabloyu oluşturduktan sonra yapacağımız şey, her bir flip-flopun, ki burada, şimdi tersten gidiyoruz dedim ya, devre analizinde, devre verilmiş devrenin, D1 ve D0 pinlerine bağlı lojik diagramı biz bu cebriyle yazıyorduk.
+
+381
+01:20:22,644 --> 01:20:36,264
+Tersten bunun Boole cebri'ni yazmamız lazım. Yani D1 ve D2'yi bu şekliyle, yani şimdiki durum ve sonraki durum, bu şimdiki durumdan sonraki durumu oluşturacak D1'in ne input gelmesi gerektiğini düşündük.
+
+382
+01:20:37,064 --> 01:20:48,423
+İşte sıfır gelmesi lazım. Çünkü D tipi zaten şunun aynısı olacak. İşte burası sıfır, burası bir ise bir gelmesi lazım gibi bu D1 ve D0'ı çıkarttık.
+
+383
+01:20:48,787 --> 01:21:14,627
+Bunlar dediğim gibi tekrardan şimdilik ve sonraki durum arasındaki çevrime bağlı, state transition'e bağlı, durumun değişimine bağlı. D tipinde bu basit, JK'da zor buna çalışın. Çünkü onunla alakalı örnek zannedersem yapmayacağım. Evet yapmayacağım, doğru yapmayacağım. JK'yi burada nasıl uyguluyoruz buna çalışacaksınız. Çok ilgilisiniz o yüzden size görev veriyorum çalışın.
+
+384
+01:21:15,155 --> 01:21:31,076
+Burada D1 ve D0'a ayrı ayrı inputlarına gelmesi gereken veriyi yazdık. Bunları sonra Karnaugh map yapıyoruz arkadaşlar. Neye göre Karnaugh yapıyoruz? X, Q0 ve Q1'e göre. Buraya D yazılmış ama bu X olacak.
+
+385
+01:21:32,115 --> 01:21:41,415
+Karnaugh yapıyoruz ve D1 için ayrı, D0 için ayrı Karnaugh yapıyoruz. Bu Karnaugh'lardan sonucunda bize bir Bull C1 geliyor.
+
+386
+01:21:41,415 --> 01:21:55,115
+Sadeleşmiş Bull C1 geliyor. Yalnız şu D1 olacak herhalde, bu D0 olacak şekle baktığımda. Sonra bunları da iki tane flip-flop kullanacağımı söylemiştim.
+
+387
+01:21:55,167 --> 01:22:19,427
+Flip-flop 0 ve flip-flop 1 dersek, D0 ve D1 girişlerinin aslında Boole cebri bu. Bunu kurgulayarak buraya yazıyoruz, D0 ve D1'i. Z çıkışını da ayrıca, yani devresini tasarlıyoruz ve aslında bize devre analizinde vermiş olduğunu tam tersi devresini elde ettiğimiz bir problemi sentez etmiş oluyoruz.
+
+388
+01:22:21,247 --> 01:22:22,307
+Anlaşıldı mı?
+
+389
+01:22:23,283 --> 01:22:43,963
+Soru var mı? Yok herhalde. Arkadaşlar, bugünkü dersimiz bu kadar. Dediğim gibi garanti soru gelecektir. JK'yi çalışın. Lab'da bununla alakalı soru sorulacak size. Vesair vesair. Umarım finalde de yaparsınız diye düşünüyorum.
+
+390
+01:22:45,783 --> 01:22:49,404
+Tamam, dersimiz bu kadar. Haftaya başka bir konuya geçeceğiz.
+
+391
+01:22:50,003 --> 01:22:51,663
+Hep hizeyi çalışmıyoruz.

@@ -1,0 +1,3383 @@
+1
+00:12:11,988 --> 00:12:12,968
+Herkese günaydın.
+
+2
+00:12:16,851 --> 00:12:18,111
+Sesim geliyor mu arkadaşlar?
+
+3
+00:12:30,035 --> 00:12:33,355
+Günaydın. Sanırım sesim geliyor. Tamam, süper.
+
+4
+00:12:36,615 --> 00:12:45,615
+Evet, sizler nasılsınız? Keyifler nasıl? Sınavı geride bıraktık. Sınav nasıldı? Zorluk derecesi nasıldı? Biraz geri dönüş yapın bakalım.
+
+5
+00:12:50,868 --> 00:12:52,928
+İsteyen mikrofonunu açabilir arkadaşlar.
+
+6
+00:13:02,419 --> 00:13:03,939
+Hiç kimseden ses yok.
+
+7
+00:13:04,679 --> 00:13:07,979
+Günaydın hocam. İyiydi bence yani. Seviyesi kolaydı.
+
+8
+00:13:09,079 --> 00:13:09,359
+Güzel.
+
+9
+00:13:10,079 --> 00:13:17,479
+İşlediğimiz içeri birebir aynıydı. Çok da azıcık fazla düşünmeyi gerektirmiyordu. Kolaydı bence.
+
+10
+00:13:18,000 --> 00:13:19,679
+Ters köşe bir durum olmadı yani.
+
+11
+00:13:19,679 --> 00:13:28,519
+Yok hayır bence. Yani şey, sequence dışında bizim daha önce alıştırma yapmadıysak kendine başımıza. Zorlanacağımız bir durum yoktu bence.
+
+12
+00:13:29,139 --> 00:13:30,100
+Güzel, tamam.
+
+13
+00:13:32,360 --> 00:13:36,980
+Evet, bir de ikinci vizeniz olacak, bir de dönem projeniz olacak arkadaşlar.
+
+14
+00:13:37,980 --> 00:13:40,519
+Bunun dışında zaten laplara katılıyorsunuz.
+
+15
+00:13:42,419 --> 00:13:48,340
+İkinci vizeniz de son haftadan bir hafta önce, 13. haftada olur diye tahmin ediyorum.
+
+16
+00:13:48,340 --> 00:13:52,799
+O da Mayıs'ın son haftası olur diye tahmin ediyorum.
+
+17
+00:13:54,292 --> 00:14:09,912
+Bitirme projenizi de daha henüz açıklamadık. Onu da yakın zamanda açıklıyor oluruz. O da yine dönemin son haftasında vermeniz gereken bir proje olmuş olacak.
+
+18
+00:14:12,211 --> 00:14:19,471
+Tekli ya da ikili gruplar, ikili öğrenci grupları şeklinde yapabileceksiniz. Seçim size ait olacak.
+
+19
+00:14:20,307 --> 00:14:24,827
+Onu da diğer derse veren diğer hocalarla konuşup yakın zamanda açıklıyor oluruz.
+
+20
+00:14:27,528 --> 00:14:32,847
+Okey, o zaman ben yavaştan başlıyorum. Yavaş yavaş arkadaşlarımız da gelir.
+
+21
+00:14:35,908 --> 00:14:46,307
+Today we are going to talk about a special topics in object-oriented programming, which is enum type.
+
+22
+00:14:47,475 --> 00:15:00,196
+So far in this lecture, we have seen primitive data types, eight different primitive data types, integer, double, float, character, and so on.
+
+23
+00:15:00,196 --> 00:15:09,015
+We had eight different primitive data types, and we also learned complex data types.
+
+24
+00:15:09,975 --> 00:15:13,196
+And as for the complex data types, we said that...
+
+25
+00:15:13,748 --> 00:15:18,348
+Any class can be a type of an object.
+
+26
+00:15:19,168 --> 00:15:19,327
+Okay.
+
+27
+00:15:19,968 --> 00:15:27,908
+And we learned different special complex types such as string.
+
+28
+00:15:28,868 --> 00:15:33,327
+And also we learned wrapper complex types.
+
+29
+00:15:33,327 --> 00:15:40,588
+We said that for every primitive data type, we also have wrapper classes.
+
+30
+00:15:41,104 --> 00:15:48,784
+And we can use this as the complex type for the primitive data types.
+
+31
+00:15:49,304 --> 00:15:49,444
+Okay.
+
+32
+00:15:50,324 --> 00:15:55,584
+And now we are going to learn another data type, which we will call Enum.
+
+33
+00:15:56,264 --> 00:15:56,624
+Okay.
+
+34
+00:15:57,403 --> 00:16:01,724
+Now we use Enum for such cases.
+
+35
+00:16:01,724 --> 00:16:02,663
+For example.
+
+36
+00:16:03,412 --> 00:16:14,512
+If there is a variable where the variable should hold a restricted set of values, for example, weekdays, right?
+
+37
+00:16:14,512 --> 00:16:26,892
+A weekday can be Monday, Tuesday, Wednesday, all the way to Sunday, right? There are seven different weekdays that is possible, right?
+
+38
+00:16:29,556 --> 00:16:40,996
+Another type which may take certain values, for example, t-shirt types, right?
+
+39
+00:16:41,816 --> 00:16:44,996
+Small, medium, large, x, okay?
+
+40
+00:16:44,996 --> 00:16:51,336
+There are restricted set of values that can be assigned to such variables.
+
+41
+00:16:51,736 --> 00:16:55,036
+If there is such a case, then we use enum type.
+
+42
+00:16:55,539 --> 00:17:16,000
+Okay. Now, so we can either use primitive enum type or we can use a class version of the enum type. For example, in this slide, you see that there is an example here.
+
+43
+00:17:16,372 --> 00:17:25,751
+And in this particular example, this enum type, so we use enum in order to identify the type.
+
+44
+00:17:26,592 --> 00:17:32,432
+And this is, this variable is defined as public and the name of the variable is size.
+
+45
+00:17:32,972 --> 00:17:33,132
+Okay.
+
+46
+00:17:34,152 --> 00:17:40,632
+And you should know that always the enum types, it starts with the capital letter.
+
+47
+00:17:41,203 --> 00:18:02,803
+Arkadaşlar, okay. And within the curly parentheses, I need to assign all possible values that needs to be assigned for this enum type, which means that this enum type has restricted values of these values, small, medium, large, extra large, okay.
+
+48
+00:18:03,703 --> 00:18:07,403
+And this is how we define enum type.
+
+49
+00:18:07,695 --> 00:18:14,875
+And later, when I want to use the value enum type in the code, okay, I can use it in this way.
+
+50
+00:18:16,275 --> 00:18:26,875
+I can, so here you see that since enum type is already defined, okay, and since this is a type.
+
+51
+00:18:27,316 --> 00:18:39,215
+Okay, I can use this type in order to define a variable in this particular case, S.
+
+52
+00:18:39,355 --> 00:18:43,276
+I'm saying that S will be in the type of this enum type size.
+
+53
+00:18:44,536 --> 00:18:48,036
+And then I need to assign a value to this variable.
+
+54
+00:18:48,660 --> 00:19:14,100
+Arkadaşlar, ok? And look at the way that I am assigning value. Since I know that this enum type can only have these values, ok? What I do is that I write the name of the enum type, then dot, and I pick one of the values, ok, that is available for this enum type, and then I assign it to this variable here.
+
+55
+00:19:27,539 --> 00:19:54,639
+Now, this was the primitive enum type. I can also use as the class enum type. In fact, the version that I have shown you is a simplest way of class definition. As you see in this example, this is just, this is exactly similar for the class representation. You see that.
+
+56
+00:19:55,700 --> 00:20:03,900
+This is a class definition and there are some values that I'm assigning to this enum type.
+
+57
+00:20:03,900 --> 00:20:10,680
+And apart from that, there is no constructor, there is no getter setter methods in this class.
+
+58
+00:20:11,299 --> 00:20:20,539
+The reason that I'm calling this primitive enum type is that I only put the values that needs to be assigned this enum type.
+
+59
+00:20:20,880 --> 00:20:21,019
+Okay.
+
+60
+00:20:23,316 --> 00:20:30,216
+Now, I want to define a class version of enum type, which I will call enum class.
+
+61
+00:20:30,216 --> 00:20:41,496
+Now, in this particular case, so this time, not only I am putting the values that I want to assign to this enum type,
+
+62
+00:20:41,844 --> 00:20:51,963
+Arkadaşlar, okay, but also I have the rest of the class code in this enum class, okay.
+
+63
+00:20:52,344 --> 00:21:05,023
+Arkadaşlar, now you see that similar to this one, so this, this, in this version, I only had one dimension, okay, I only assign one dimension values to this enum type.
+
+64
+00:21:05,023 --> 00:21:07,463
+Arkadaşlar, now in this particular case,
+
+65
+00:21:07,855 --> 00:21:13,455
+I want to assign objects to the enum type.
+
+66
+00:21:13,455 --> 00:21:17,255
+For example, now this is an object.
+
+67
+00:21:19,220 --> 00:21:23,059
+Arkadaşlar, and this is another object and this is another object.
+
+68
+00:21:23,299 --> 00:21:29,940
+Arkadaşlar, and for each of these objects, I give a particular name and this is the name of this object.
+
+69
+00:21:29,940 --> 00:21:32,059
+Arkadaşlar, this is the name and this is another name.
+
+70
+00:21:32,340 --> 00:21:36,559
+Arkadaşlar, so these are the objects of this a new class.
+
+71
+00:21:37,320 --> 00:21:38,240
+Arkadaşlar, now.
+
+72
+00:21:38,708 --> 00:21:54,188
+As you remember, for every object, okay, so we are calling the constructor of this class, since this has three parameters, obviously, you see that there should be a three parameter constructor, okay?
+
+73
+00:21:54,548 --> 00:22:06,208
+Exactly, I have a three parameter constructor here, you see, and in the enum class, different from any classes that we have learned so far,
+
+74
+00:22:06,708 --> 00:22:08,907
+The constructor has to be private.
+
+75
+00:22:09,608 --> 00:22:10,008
+Okay.
+
+76
+00:22:11,268 --> 00:22:18,108
+And obviously we learned that all the global memory variables by convention, we are defining them as private.
+
+77
+00:22:18,307 --> 00:22:18,708
+Okay.
+
+78
+00:22:19,168 --> 00:22:24,008
+Now in this enum class, you see that I have three global member fields.
+
+79
+00:22:25,108 --> 00:22:31,508
+And I have three parameter constructor where I initialize the value of these three global member fields.
+
+80
+00:22:32,108 --> 00:22:33,807
+And then I have getter methods.
+
+81
+00:22:35,412 --> 00:22:35,892
+Okay.
+
+82
+00:22:36,851 --> 00:22:37,192
+Now,
+
+83
+00:22:37,991 --> 00:22:38,491
+um,
+
+84
+00:22:39,667 --> 00:23:07,387
+Here you see, these are the things that I want, that this particular enum type can have. These are the restricted values, okay, that this enum type can have. And each of these restricted value is declared as an object, okay. And for each of the objects, you see these are the values that are
+
+85
+00:23:07,667 --> 00:23:25,667
+Arkadaşlar, send to the constructor of this enum class. Now this is no different than this one. The only difference is that here for the primitive enum type, this is again, you see this is a class definition. I am only assigning
+
+86
+00:23:27,107 --> 00:23:35,667
+one dimension values. However, in this particular example, I wanted to assign
+
+87
+00:23:35,667 --> 00:24:03,547
+Arkadaşlar, objects, therefore, so I define this enum type as an enum class, and I inserted constructor, getter methods, and also I have a global member field. Now that this enum class has constructor, global member fields, and also getter methods, and I can also create
+
+88
+00:24:03,667 --> 00:24:08,107
+Arkadaşlar, objects of this enum class, I can give name to these objects.
+
+89
+00:24:09,427 --> 00:24:18,307
+Arkadaşlar, and I can insert them into the enum class as the as the restricted values that this enum class is going to get.
+
+90
+00:24:19,667 --> 00:24:20,027
+Arkadaşlar, OK.
+
+91
+00:24:23,387 --> 00:24:27,547
+Arkadaşlar, Now, this is a simple UML diagram.
+
+92
+00:24:28,387 --> 00:24:30,067
+Arkadaşlar, So we chose
+
+93
+00:24:31,508 --> 00:24:54,907
+We chose that. So here in this UML diagram, I have a enum class. Okay. So remember in the UML class definition, we have three segments. Here in the upper segment, I write the name of the class. And in order to distinguish that it is a enum class, I have to write this notation.
+
+94
+00:24:55,731 --> 00:25:04,451
+Arkadaşlar, now in the UML diagram, you see that just like any other classes, I show the global member fields.
+
+95
+00:25:05,192 --> 00:25:17,371
+Arkadaşlar, but the difference is that now, since this is an enum class, I also need to put the restricted values that this enum class type will get.
+
+96
+00:25:17,371 --> 00:25:21,471
+Arkadaşlar, so I have three restricted values and each of them is an object.
+
+97
+00:25:23,092 --> 00:25:38,112
+And then you see that in the method body, so I have a constructor, so you should notice that the constructor is private because there's a minus here. And then I have the getter methods.
+
+98
+00:25:38,644 --> 00:25:51,824
+Now, in this particular case, there is association relationship. Every subscription has a tarif. And also, you see the association, every person has one subscription.
+
+99
+00:25:55,412 --> 00:26:08,352
+Arkadaşlar, okay. Now, here, a simple example that you see here. And so here I have a test class that tests. So this particular code.
+
+100
+00:26:09,844 --> 00:26:35,683
+Now, so in the test class, I have the main method. In the main method, you see that I am defining a variable where its type is enum type. And so you see that tariff is my enum class. Okay. And now I'm going to assign a value to this variable. And what I do is that
+
+101
+00:26:37,076 --> 00:26:45,916
+Since this enum type can take only restricted values, I need to write the name of the class and dot.
+
+102
+00:26:46,395 --> 00:26:50,635
+And I had only three restricted values that I could assign.
+
+103
+00:26:50,956 --> 00:26:52,215
+One of them is net4.
+
+104
+00:26:52,556 --> 00:26:58,536
+So I assigned this object to this variable.
+
+105
+00:26:58,536 --> 00:26:59,096
+Okay.
+
+106
+00:26:59,584 --> 00:27:04,923
+And then later on, I can use this in the rest of the code.
+
+107
+00:27:04,923 --> 00:27:09,124
+And so in this particular case, I'm creating a new person.
+
+108
+00:27:10,423 --> 00:27:14,284
+And then I call this Yunus.
+
+109
+00:27:14,683 --> 00:27:22,003
+And then I subscribe to this Enum object that I have here.
+
+110
+00:27:22,463 --> 00:27:24,204
+And I create another person.
+
+111
+00:27:24,624 --> 00:27:30,124
+And then I want this person to subscribe to another tarif.
+
+112
+00:27:30,124 --> 00:27:41,563
+And you see that tarif.netfree, this is another object, okay, which Enum, this particular Enum type can get.
+
+113
+00:27:41,943 --> 00:27:47,403
+So I subscribe to this person to another object, okay.
+
+114
+00:27:47,744 --> 00:27:49,543
+Then I print out the results.
+
+115
+00:27:54,291 --> 00:27:59,731
+Okay. Now, this is not that visible. So let me show you some codes.
+
+116
+00:28:06,675 --> 00:28:07,175
+Pust.
+
+117
+00:28:33,652 --> 00:28:41,132
+Now, let me show you another example. Let's take a look at this example.
+
+118
+00:28:44,980 --> 00:29:05,860
+Okay, now in this particular example, so I have a class called CRAPS, and in this particular class, so these are my global member fields, and as you see, one of the global member fields that I have is the primitive enum type.
+
+119
+00:29:06,675 --> 00:29:12,955
+You see that I am defining the primitive enum type here.
+
+120
+00:29:13,295 --> 00:29:16,056
+And this tells me that this is going to be enum type.
+
+121
+00:29:16,556 --> 00:29:20,195
+And this is the name of the type that I'm declaring.
+
+122
+00:29:20,955 --> 00:29:28,155
+And these are the values that means that these are the restricted values that will be assigned to this enum type.
+
+123
+00:29:28,155 --> 00:29:28,755
+Okay.
+
+124
+00:29:29,231 --> 00:29:36,572
+Now you see that this is primitive enum because I did not write the rest of the class definition.
+
+125
+00:29:37,092 --> 00:29:39,271
+Now let's take a look at the code.
+
+126
+00:29:40,451 --> 00:29:48,251
+And in this particular code, you see that by using this enum type that I declared at the beginning,
+
+127
+00:29:49,012 --> 00:29:56,451
+I am defining a local variable, gain status, where the type is this enum type status.
+
+128
+00:29:57,236 --> 00:29:57,796
+Okay.
+
+129
+00:29:59,376 --> 00:30:04,936
+And then in the rest of the code, I have a roll dice method.
+
+130
+00:30:05,096 --> 00:30:12,756
+What this roll dice method is that it rolls the dice and it returns at an integer value to me.
+
+131
+00:30:13,655 --> 00:30:16,976
+And then I have a switch case.
+
+132
+00:30:17,916 --> 00:30:19,976
+So remember, so we had...
+
+133
+00:30:21,428 --> 00:30:33,468
+If and else, switch case, these are the flow control mechanisms that we use in Java.
+
+134
+00:30:34,132 --> 00:30:41,211
+And for the switch case, and so this is the value, the variable that I'm putting here.
+
+135
+00:30:41,211 --> 00:30:50,531
+And these are the different possible values that this variable can take.
+
+136
+00:30:50,912 --> 00:30:59,192
+So based on the value that this variable will take, so I basically will change the control.
+
+137
+00:30:59,912 --> 00:31:04,092
+I will pick one of the corresponding cases.
+
+138
+00:31:04,412 --> 00:31:10,692
+If none of the cases are available, then I will pick the default case.
+
+139
+00:31:10,692 --> 00:31:14,211
+So this is just like the if and else.
+
+140
+00:31:14,531 --> 00:31:16,711
+So these are the different conditions.
+
+141
+00:31:17,112 --> 00:31:17,271
+Okay.
+
+142
+00:31:17,652 --> 00:31:18,892
+And based on the value.
+
+143
+00:31:18,912 --> 00:31:43,352
+As a value of sum of device, the case will be, the corresponding case will be executed. Okay. Now, you see that, so I have, so different values for each of these constant values that I'm defining here.
+
+144
+00:31:43,731 --> 00:31:52,951
+And based on the value of sum of device, the corresponding case will be executed.
+
+145
+00:31:53,592 --> 00:31:53,692
+Okay.
+
+146
+00:31:54,152 --> 00:31:58,271
+Now, let's say that the second case is executed.
+
+147
+00:31:58,491 --> 00:32:00,172
+Let's take a look at the second case.
+
+148
+00:32:00,172 --> 00:32:07,072
+In the second case, I want to assign a value to this variable game status.
+
+149
+00:32:07,796 --> 00:32:35,476
+Now, in order to do that, what I do is that I, so this game status has a type, enum type status, okay? So this means that I can only assign restricted values. What are the restricted values of this enum type? Continue, one, lost, okay? Now you see that I am assigning the one case, one value to this enum.
+
+150
+00:32:35,796 --> 00:32:59,156
+Arkadaşlar, variable. And let's say this particular case happens. In that case, this code segment will be executed. These two lines will be executed. And this time, so what I do is that, again, I need to assign a value to game status. The way that I do that, status.most, this is one of the restricted values that EnumType can take.
+
+151
+00:32:59,471 --> 00:33:11,692
+Okay. And you see the same thing in the default segment of the switch case. Again, I am assigning one of the enum type values to this enum type.
+
+152
+00:33:12,371 --> 00:33:17,991
+Okay. And you see the usage of the enum type in the rest of the code as well.
+
+153
+00:33:18,912 --> 00:33:25,172
+Now let's take a look at another example, but this time I want to show you enum class.
+
+154
+00:33:25,599 --> 00:33:27,720
+Okay, now take a look at this.
+
+155
+00:33:29,419 --> 00:33:35,720
+So here I am defining an enum as a class.
+
+156
+00:33:35,720 --> 00:33:41,939
+Okay, so in this particular example, I defined enum.
+
+157
+00:33:43,220 --> 00:34:11,199
+Arkadaşlar, as a primitive enum type, the rest of the class definition, I did not use them. I only use the constant values that needs to be assigned to this enum type. But in this particular case, as you see, I am defining this enum type as a class. Now you see that these are the constant
+
+158
+00:34:11,219 --> 00:34:15,239
+Arkadaşlar, values that will be assigned to this enum type.
+
+159
+00:34:15,719 --> 00:34:15,839
+Arkadaşlar, okay.
+
+160
+00:34:16,319 --> 00:34:23,059
+Arkadaşlar, and you see that every one of the value has two dimensions.
+
+161
+00:34:23,419 --> 00:34:30,479
+Arkadaşlar, so you see that since it has two dimensions, that is the reason why that I am defining this enum as a class.
+
+162
+00:34:31,000 --> 00:34:31,139
+Arkadaşlar, okay.
+
+163
+00:34:31,659 --> 00:34:37,079
+Arkadaşlar, and for every object, okay, I am giving a name to these objects.
+
+164
+00:34:37,439 --> 00:34:39,219
+Arkadaşlar, you see these are the names of the objects.
+
+165
+00:34:39,219 --> 00:34:50,655
+Arkadaşlar, objects. OK. And since this is a class and this class has global member fields. OK. In this case title and copyright here.
+
+166
+00:34:50,655 --> 00:35:02,155
+And you see that this one has a constructor. It has two parameter constructor where I am assigning values to these global member fields and I have getter methods.
+
+167
+00:35:02,975 --> 00:35:11,295
+Okay. Now that I defined a new class, I can use it in my code. Let's see.
+
+168
+00:35:12,675 --> 00:35:17,215
+Okay. You see that here I have another class called enumtest.
+
+169
+00:35:18,387 --> 00:35:20,807
+In this Enum test, I have a main method.
+
+170
+00:35:21,927 --> 00:35:34,568
+Now, in the main method, you see that first, so I'm writing something into screen, and then I have a for loop.
+
+171
+00:35:35,228 --> 00:35:37,827
+And this is, remember, this is a for each loop.
+
+172
+00:35:37,827 --> 00:35:38,288
+Okay.
+
+173
+00:35:38,708 --> 00:35:40,248
+And you see that.
+
+174
+00:35:42,003 --> 00:35:56,724
+Arkadaşlar, in the foreach loop, so in this second portion of the foreach loop, which is after the colon, so there should be a data structure.
+
+175
+00:35:56,724 --> 00:36:06,724
+There should be a string or any data structures that we will learn today, or it could be an enum.
+
+176
+00:36:09,780 --> 00:36:13,780
+Arkadaşlar, it could be also the enum values.
+
+177
+00:36:14,220 --> 00:36:21,280
+Arkadaşlar, now in this particular case, I want to get all the enum values which are enum objects.
+
+178
+00:36:22,380 --> 00:36:26,860
+Arkadaşlar, so remember here I have how many objects do I have?
+
+179
+00:36:27,340 --> 00:36:34,060
+Arkadaşlar, I have six different objects that these are the values that can be assigned to this enum type.
+
+180
+00:36:35,060 --> 00:36:35,240
+Arkadaşlar, okay.
+
+181
+00:36:36,659 --> 00:36:39,460
+Now, what I do is that I get the values.
+
+182
+00:36:40,139 --> 00:36:40,300
+Okay.
+
+183
+00:36:40,539 --> 00:36:42,420
+I have six different values here.
+
+184
+00:36:42,599 --> 00:36:45,440
+And every one of them has a type book.
+
+185
+00:36:46,139 --> 00:36:46,500
+Okay.
+
+186
+00:36:46,940 --> 00:36:51,599
+And this class is defined as the enum class.
+
+187
+00:36:52,115 --> 00:37:06,355
+Now, for every object I'm assigning this local variable book where the type of it is also enum class book.
+
+188
+00:37:07,195 --> 00:37:07,355
+Okay.
+
+189
+00:37:07,596 --> 00:37:12,916
+And then I'm going to write details of each of these objects.
+
+190
+00:37:14,036 --> 00:37:14,396
+Okay.
+
+191
+00:37:14,396 --> 00:37:17,796
+And then I'm going to write something else to the screen.
+
+192
+00:37:18,708 --> 00:37:43,548
+And then what I'm going to do again this time, so I'm going to do again for each loop, but for this time, when I do for each loop, instead of using all available values in the enum type, this time I'm going to use a class.
+
+193
+00:37:44,019 --> 00:38:01,220
+Enum set, which is available at under Java.util, okay, which will have a static member field, member methods range. Remember, for the static methods, we don't need to create the instance of the object.
+
+194
+00:38:02,771 --> 00:38:29,032
+Arkadaşlar, now what this range is doing, okay, it's going to take the values of the enum type, two different values of the enum type, and it's going to get all possible values between this range and assign it one by one, okay, it will return to me a set of values and with the for each loop.
+
+195
+00:38:29,360 --> 00:38:53,819
+I'm going to iterate on these set of values. So in this particular line, so before what we did, we took all possible values, okay, from all possible objects that can be assigned to this enum type. But here, I am only taking the values that are between this range. So what are the values between this range?
+
+196
+00:38:56,307 --> 00:39:02,247
+Okay, now between this one and I believe this one.
+
+197
+00:39:04,247 --> 00:39:05,167
+Okay.
+
+198
+00:39:07,987 --> 00:39:21,608
+Between this one and this one, the first one and the fourth one, all the values between these, I want to take and I want to iterate on them.
+
+199
+00:39:22,228 --> 00:39:25,947
+And as I iterate on them, I want to write their details.
+
+200
+00:39:25,947 --> 00:39:26,847
+So let's see.
+
+201
+00:39:32,692 --> 00:39:58,492
+Arkadaşlar, now you see that at first I wrote all the details of the six possible object values that can be assigned to this enum value in a type and then later on I only wrote the range of the objects so that I defined here.
+
+202
+00:40:00,000 --> 00:40:09,119
+Arkadaşlar, into the screen. Okay. Now this is how we are using primitive enum type and also the enum class.
+
+203
+00:40:11,199 --> 00:40:18,239
+Arkadaşlar, okay. So let me go back to the slides. So if you have any questions, you can stop me at any point.
+
+204
+00:40:49,043 --> 00:41:02,884
+Okay, now this was the example that I have shown you in the course, the class craps, and in this particular example, I showed you how we are using the primitive enum type.
+
+205
+00:41:04,264 --> 00:41:06,923
+And this was the other example.
+
+206
+00:41:10,063 --> 00:41:11,643
+Give me a second, please.
+
+207
+00:41:23,155 --> 00:41:23,596
+Ok.
+
+208
+00:41:24,340 --> 00:41:51,539
+And this was the second version of using enum type. And this year, so we used the enum class. And these were the objects as the restricted values that can be assigned to this enum type. And if I do it this way, obviously, since I defined it as a class, this class must have the global member fields.
+
+209
+00:41:52,340 --> 00:41:54,180
+Constructor and the getter methods.
+
+210
+00:41:54,659 --> 00:41:59,220
+And you can see the example of this here in this slide.
+
+211
+00:42:00,779 --> 00:42:02,340
+Hocam, soru sorabilir miyim?
+
+212
+00:42:02,760 --> 00:42:03,220
+Tabii ki.
+
+213
+00:42:03,560 --> 00:42:06,720
+135. slide'ı açar mısınız? Oradaydı sorun.
+
+214
+00:42:07,960 --> 00:42:09,119
+İki önceki galiba.
+
+215
+00:42:10,547 --> 00:42:24,728
+Hocam, burada tarif 4 diye bir obje oluşturmuş ya, biz tarif.net 4'te başka bir obje oluşturursak aynı yeri mi gösterecekler yoksa farklı farklı objeleri mi oluşuyor?
+
+216
+00:42:25,188 --> 00:42:32,827
+Mesela çünkü altta siz direkt tarif.net free yazmışsınız obje oluşturmadan. Ben burada biraz anlamadım da.
+
+217
+00:42:32,827 --> 00:42:35,827
+Tamam. Şimdi şunu demiştik, dedik ki...
+
+218
+00:42:36,335 --> 00:42:50,416
+Biz eğer enum type'ını kullanıyorsak bu enum type'ına assign edilecek değerleri belirliyoruz. Yani bunlar haftanın günleri gibi spesifik değerler oluyor.
+
+219
+00:42:51,123 --> 00:43:05,983
+Ben bunu eğer tek dimension yapacaksam bu şekilde yapabilirim. Yani sadece tek bir değer atlayacaksam, tişörtün size'ları, haftanın günleri bu şekilde yapabilirim.
+
+220
+00:43:05,983 --> 00:43:19,123
+Ya da eğer bu enum type'a obje atlayacaksam bu şekilde de objeleri belirtebilirim. Burada objeleri de isim vererek belirtmişim. Yani normalde biz objeyi yaratırken...
+
+221
+00:43:19,123 --> 00:43:42,804
+keyword'ü kullanıyoruz. Burada bu sintaksta objelere isim veriyorum. Üç tane obje varmış. Bu enum type'ın alabileceği. Şimdi obje dediğin zaman hani objeye constructor çalıştırmam lazım. Constructor değerlerini de burada veriyorum. Şimdi demek ki bu enum type'da üç tane obje olabilir. Şimdi geliyorum koda.
+
+222
+00:43:43,699 --> 00:43:51,939
+Şimdi burada ben bir tane local variable tanımlıyorum ve bu tanımladığıma tarif for diyorum.
+
+223
+00:43:52,099 --> 00:43:55,500
+Hani bunun tipi diyorum ki bu enum class tipinde olacak.
+
+224
+00:43:56,279 --> 00:44:03,340
+Yani bu arkadaş bir tane tarif tipinde bir objeye point edecek.
+
+225
+00:44:03,340 --> 00:44:08,380
+Tarif tipinde bir obje var memoride. Bu arkadaş buna point edecek.
+
+226
+00:44:08,820 --> 00:44:35,640
+Şimdi buna point edeceği objeyi de assign etmem lazım ve bu objeyi de nereden alıyorum? Bu tarifin içerisinden alıyorum. Çünkü ne dedik? Biz bu objeler zaten compile edildiğinde kod, memoryde yaratılıyor ve memoryde buna ilgili adresini de elde etmek için.
+
+227
+00:44:36,820 --> 00:44:45,060
+adresine tarif nokta net dörtten ulaşabiliyorum. Tarif enum taypının başka objesi olmadığı için bu şekilde ulaşıyorum.
+
+228
+00:44:45,360 --> 00:45:11,560
+Şimdi bu objenin adresini bu arkadaşa verdim. Artık bu objeye ben şu lokal variable'ı takip ederek ulaşabileceğim gibi aşağıdaki gibi de ulaşabilirdim yani. Yani tarif nokta net 4'ü aşağıda da kullanabilirdim ama her ikisi de aynı objeye point ediyor. Burada da tarif nokta net free diyorum yani bu objeye direkt olarak bu şekilde ulaşıyor.
+
+229
+00:45:13,360 --> 00:45:37,860
+Atamışım. Lokal değerle artık netfor'a ulaşmaya başlamışım. Burada da direkt ulaşmışım. Yani her zaman bu tarifin dört tane, üç tane objesi olacak. Dördüncü olmayacak. Beşinci olmayacak. İki tane lokal isim atayabiliyor muyuz? Mesela tarif dört gibi. Mesela tekrardan, mesela tarif, tarifi çeşitli tarif nokta net dört yazabilir miyiz? Tekrardan yoksa hata mı verir o zaman?
+
+230
+00:45:38,771 --> 00:45:45,771
+Tekrardan başka bir lokal değişkenle de aynı objeyi takip edebilir misin? Edebilirsin.
+
+231
+00:45:46,692 --> 00:45:47,391
+Tamamdır hocam.
+
+232
+00:45:47,751 --> 00:45:52,751
+Yani istediğim kadar lokal değişkenlerle aynı objeyi takip edebilirim. Onda bir sorun yok.
+
+233
+00:45:52,751 --> 00:45:58,631
+Ama her bir lokal değişkene aynı objeyi referansını atamam lazım.
+
+234
+00:45:59,492 --> 00:46:00,612
+Peki hocam. Sağ olun.
+
+235
+00:46:04,659 --> 00:46:16,500
+Ok. Primitive Enum Type'ın örneğini gördük. Kompleks Enum Type'ın yani class şeklinde tanımlanmış Enum Type'ın örneğini gördük arkadaşlar.
+
+236
+00:46:21,652 --> 00:46:27,771
+Okay, now we are going to go into another topic, which is generic class.
+
+237
+00:46:27,771 --> 00:46:32,512
+And the generic classes is used in data structures in Java.
+
+238
+00:46:33,752 --> 00:46:36,752
+And so therefore, it is highly important topic.
+
+239
+00:46:37,112 --> 00:46:43,072
+Now let's talk about what generic type intends to do.
+
+240
+00:46:43,672 --> 00:46:43,792
+Okay.
+
+241
+00:46:45,556 --> 00:46:52,036
+Now, so far in the classes that we have learned, okay, let me show you.
+
+242
+00:46:56,148 --> 00:46:57,507
+Example of,
+
+243
+00:47:00,507 --> 00:47:02,248
+I don't have it here.
+
+244
+00:47:06,867 --> 00:47:14,587
+So let me go back to the codes.
+
+245
+00:47:32,916 --> 00:47:35,676
+Okay, now, let's take a look at this code.
+
+246
+00:47:37,336 --> 00:47:40,916
+Now, so this is the code that you have seen so far.
+
+247
+00:47:40,916 --> 00:47:45,576
+So you see the generic class definition.
+
+248
+00:47:46,079 --> 00:47:48,920
+And here you see a global member field.
+
+249
+00:47:49,659 --> 00:47:55,760
+And for this global member field, and I'm defining the type of this member field as with object.
+
+250
+00:47:55,760 --> 00:48:04,699
+You remember, Java.lang object is one of the classes that comes with the Java software development kit.
+
+251
+00:48:05,400 --> 00:48:05,480
+Okay.
+
+252
+00:48:06,000 --> 00:48:12,699
+And so this was the root object for the class hierarchy.
+
+253
+00:48:13,199 --> 00:48:13,760
+So every...
+
+254
+00:48:14,079 --> 00:48:21,500
+Arkadaşlar, object that we create is actually an object of the object class.
+
+255
+00:48:21,500 --> 00:48:22,019
+Arkadaşlar, okay.
+
+256
+00:48:22,400 --> 00:48:24,880
+Arkadaşlar, and I have getter and setter methods.
+
+257
+00:48:25,319 --> 00:48:26,720
+Arkadaşlar, and look at the main method here.
+
+258
+00:48:27,359 --> 00:48:31,840
+Arkadaşlar, now, so I named this class as box2.
+
+259
+00:48:32,300 --> 00:48:35,019
+Arkadaşlar, I'm creating an object of this class.
+
+260
+00:48:35,619 --> 00:48:41,460
+Arkadaşlar, now you see that here, I want to set first an integer.
+
+261
+00:48:42,195 --> 00:48:54,055
+Okay, to this object that I created, which is, so B, okay, small letter B, okay, and then I'm writing the value of it.
+
+262
+00:48:54,675 --> 00:49:02,535
+And then I want to put string value to the global member field of this class.
+
+263
+00:49:03,035 --> 00:49:03,175
+Okay.
+
+264
+00:49:03,515 --> 00:49:05,375
+And again, I use the set object.
+
+265
+00:49:06,035 --> 00:49:09,895
+And after I assigned it, then I'm writing the value of this object.
+
+266
+00:49:09,895 --> 00:49:21,475
+Now, as you see, as the global member field, I did not choose any known primitive data type or their wrappers.
+
+267
+00:49:22,335 --> 00:49:22,675
+I did.
+
+268
+00:49:22,675 --> 00:49:25,995
+I did not use integer, string, double.
+
+269
+00:49:26,455 --> 00:49:40,355
+I wanted to pick the type as object because I want to put different kinds of things into the data member field of this object.
+
+270
+00:49:40,355 --> 00:49:41,096
+Okay.
+
+271
+00:49:42,475 --> 00:49:43,315
+Now.
+
+272
+00:49:43,728 --> 00:50:01,308
+If there is a case where you want to have an object and you want to put different kinds of things as the value of this object, then you want to use a class like this.
+
+273
+00:50:01,308 --> 00:50:01,988
+Okay.
+
+274
+00:50:02,480 --> 00:50:13,380
+At the beginning, when you write your class, you don't know what kind of things that this class is going to hold, what kind of objects of this class is going to hold.
+
+275
+00:50:13,775 --> 00:50:31,596
+So therefore, you define the type as object. If you can, if you do that, then you can do things like this. First, I, as you see, I put an integer and then I put a string value. Okay. So now,
+
+276
+00:50:32,115 --> 00:50:38,655
+Arkadaşlar, what Java is doing, Java and high-level programming languages, they make it easy.
+
+277
+00:50:39,115 --> 00:50:46,735
+So, they make it easier in the syntax, this kind of usage of the classes.
+
+278
+00:50:47,876 --> 00:50:49,516
+Now, take a look at this.
+
+279
+00:50:50,516 --> 00:50:51,936
+Now, this time,
+
+280
+00:50:53,172 --> 00:51:01,371
+When I want to have a class like this, a class, okay, which can hold different kinds of things.
+
+281
+00:51:01,775 --> 00:51:05,876
+What I do is that I parameterize this class.
+
+282
+00:51:06,436 --> 00:51:12,476
+As you see, at the beginning, I change the notation of the class.
+
+283
+00:51:12,635 --> 00:51:24,396
+At the end of the class name, I use this notation, which tells me that this class will take a parameter, which is a generic type.
+
+284
+00:51:26,260 --> 00:51:33,940
+Arkadaşlar, and for the generic type, I use one of the capital letters.
+
+285
+00:51:34,420 --> 00:51:34,560
+Okay.
+
+286
+00:51:34,760 --> 00:51:38,700
+In this particular case, I choose capital T.
+
+287
+00:51:39,220 --> 00:51:46,400
+And then in the global member fields, okay, and I use this generic type here.
+
+288
+00:51:47,347 --> 00:52:14,627
+Arkadaşlar, ok? And I'm defining a global member field here with the generic type T, capital T. And I also have setter and getter methods. These setter and getter methods, obviously, so setter method takes the input with the type, generic type capital T, and it returns a value with the generic type capital T.
+
+289
+00:52:15,251 --> 00:52:38,311
+Now, let's take a look at the main method. In the main method first, I am going to define, I'm defining a local variable B1 where the type is, okay, this class, okay. And as you see, in this class,
+
+290
+00:52:38,900 --> 00:52:49,099
+And I am giving integer class as the parameter to this class.
+
+291
+00:52:49,099 --> 00:52:50,059
+Okay.
+
+292
+00:52:50,360 --> 00:52:57,599
+Which I'm saying that this generic class box is going to hold integer type.
+
+293
+00:52:58,099 --> 00:53:26,099
+Arkadaşlar, very values in it. Okay. Now, since I define it this way, when I create the object of this generic class, I need to follow the same thing. Okay. You see that since I defined it this way, when I created object of it, so I put integer as the parameter of this generic class. Okay. And
+
+294
+00:53:26,099 --> 00:53:32,279
+Arkadaşlar, and so I, so this is the default constructor.
+
+295
+00:53:32,679 --> 00:53:36,159
+So remember the default constructor for the default constructor.
+
+296
+00:53:36,400 --> 00:53:41,920
+If you don't have any constructor, Java Virtual Machine will create a default constructor for me.
+
+297
+00:53:42,219 --> 00:53:43,799
+So it is okay to write this.
+
+298
+00:53:44,480 --> 00:53:48,880
+And here I am creating an object of it and I am assigning to this value.
+
+299
+00:53:49,331 --> 00:54:02,531
+Now I can call the set method and the get method of this class for the set method. Since I defined the generic class in this way, I can insert.
+
+300
+00:54:03,699 --> 00:54:31,519
+Integer value. And here I'm getting the value for this object and I'm writing, writing into onto console. Now let's take a look at this, this year. Now this time I wanted to put string types of values into this generic class. Okay. Now for this, again, for the parameter of this generic class this time I, I'm writing string.
+
+301
+00:54:31,699 --> 00:54:38,519
+Because I want to keep string type thing, string type values in this generic class.
+
+302
+00:54:39,155 --> 00:54:47,016
+And here I am creating an object of this generic class with the string parameter.
+
+303
+00:54:47,596 --> 00:54:47,675
+Okay.
+
+304
+00:54:48,396 --> 00:54:53,336
+And then I can call the set method of this class.
+
+305
+00:54:53,756 --> 00:54:59,356
+And you see that I am putting some string value and I am getting its value.
+
+306
+00:54:59,916 --> 00:55:00,155
+Okay.
+
+307
+00:55:00,155 --> 00:55:02,155
+Now the third example.
+
+308
+00:55:03,256 --> 00:55:03,996
+So this time.
+
+309
+00:55:04,724 --> 00:55:17,864
+I, instead of using the wrappers, the specific wrappers, I am saying that I want to put any kinds of things into this object, okay?
+
+310
+00:55:18,324 --> 00:55:24,164
+And therefore, I put object as the parameter to this generic class, okay?
+
+311
+00:55:24,164 --> 00:55:32,724
+And you see that first, since I, since this generic type class can now hold any kind of...
+
+312
+00:55:32,724 --> 00:55:52,324
+Of things because here as the parameter I chose Java dot long object class. First, I was I am able to put a string value and then as the value and then later I am able to put an integer value as the value. Okay.
+
+313
+00:55:55,987 --> 00:56:11,687
+Şurada gördüğümüz örnekte arkadaşlar bizim daha önceki öğrendiğimiz class kullanımında her zaman global member field'larda data member field'ların ne olacağını belirtiyorduk.
+
+314
+00:56:21,427 --> 00:56:25,867
+Hangi tipte member field'ler tutacağını baştan söylüyorum.
+
+315
+00:56:25,867 --> 00:56:36,647
+Ama olur da eğer öyle objelere ihtiyacım var ki objenin içerisine data member field olarak ne koyacağımı sonradan karar vereceğim.
+
+316
+00:56:37,447 --> 00:56:44,127
+İçine string de koyabilirim, integer de koyabilirim. Böyle bir durumda böyle bir sınıfa ihtiyacınız var.
+
+317
+00:56:44,487 --> 00:56:49,347
+Yani benim global member field'taki sınıfın elemanların tipini
+
+318
+00:56:49,427 --> 00:56:51,947
+encelerik tiple belirtmem gerekli.
+
+319
+00:56:52,747 --> 00:57:08,947
+Şimdi bu yöntemi kullanarak bizim şu ana kadar öğrenmiş olduğumuz class yapısıyla gördüğünüz gibi bir objenin içerisinde birden farklı tipteki değerleri tutabiliyorum.
+
+320
+00:57:09,107 --> 00:57:14,167
+İşte burada objenin objeyi yaratmışım, bir lokal değişkeni atamışım.
+
+321
+00:57:14,567 --> 00:57:17,427
+Öncelikle bu objenin içerisine integer değer koymuşum.
+
+322
+00:57:17,427 --> 00:57:45,287
+Sonra bu objenin içerisine string koymuşum. Şimdi Java diyor ki ya da bütün high level object oriented programming language'ler ben hayatı kolaylaştırayım. Bununla uğraşma. Ben sınıfı aynı metotları parametreleştirdiğim gibi metotların parametreleri olduğu gibi sınıfı da parametreleştireyim. Sana öyle bir sintaks kullanayım ki istediğin sınıfı bu şekilde generic type olarak generic type.
+
+323
+00:57:45,427 --> 00:58:03,027
+Sınıf olarak kullanabilir. Bunun için de şu notasyonu kullanıyoruz. Sınıftan sonra şu notasyonu getiriyorum ve bu notasyonun içerisinde de generic type olarak kullanacağım bir tane capital letter seçiyorum.
+
+324
+00:58:03,360 --> 00:58:25,300
+Tamam mı? Bu capital letter herhangi bir letter olabilir. Buradaki seçtiğim T olmuş. Bu T, generic T type tipinde bir tane burada global member field belirlemişim ve bu generic type ve bu member field için setter ve getter'ları da belirtmişim.
+
+325
+00:58:31,360 --> 00:58:34,440
+Return olarak dönderdiğim tip de bu generic class tipi.
+
+326
+00:58:34,440 --> 00:58:46,380
+Şimdi bu sınıfı bu şekilde tanımladığım için artık bu sınıfın içerisine istediğim tipteki objeleri, istediğim tipteki değerleri koyabilirim.
+
+327
+00:58:46,700 --> 00:58:54,500
+Mesela burada şunu yapmaya çalışmışım. Demişim ki ben bu sınıfın içerisinde integer değerler tutmaya karar verdim.
+
+328
+00:58:54,820 --> 00:58:58,300
+O yüzden de sınıfı bu şekilde tanımlıyorum. Sınıfı tanımlarken.
+
+329
+00:58:58,900 --> 00:59:10,059
+İçerisine integer tipinde şeyler tutacağımı bildiğim için parametre olarak integer sınıfını gönderiyorum.
+
+330
+00:59:10,420 --> 00:59:14,960
+Ondan sonra da bunun objesini yaratırken de aynı şekilde yaratmam lazım.
+
+331
+00:59:15,139 --> 00:59:20,219
+Yani şuradaki parametrenin içerisine ne koyduysam burada da onu koymam lazım.
+
+332
+00:59:20,219 --> 00:59:26,159
+Bir objesini yaratmışım ve bu lokal B1 değişkenini atamışım.
+
+333
+00:59:26,900 --> 00:59:32,219
+Bunu kullanaraktan ben bu objenin içerisine bir integer koyabilirim.
+
+334
+00:59:33,139 --> 00:59:54,740
+Şimdi daha sonra da demişim ki ben başka bir tane obje yaratacağım. Yalnız bu objenin içerisine string değerler tutmaya karar verdim. O yüzden de parametre olarak buraya ne yapıyorum? String class'ının ismini yazıyorum. Bunun bir objesini yaratıyorum. Ondan sonra da bu objenin içerisine de bir string değeri koyabilirim.
+
+335
+01:00:00,000 --> 01:00:20,699
+Bu jenerik sınıfın içerisine istediğim şeyi koymak istiyorum. O yüzden de object sınıfını, yani bütün sınıfların global root sınıfı olan object'i koymuşum. Aynı şekilde bunun bir instance'ını oluşturmuşum.
+
+336
+01:00:21,108 --> 01:00:28,628
+Öncelikle buraya bir string değeri koymuşum koyabilirim. Arkasından da bir tane integer değeri koymuşum koyabilirim.
+
+337
+01:00:28,628 --> 01:00:34,628
+Biz bu generic tip classları şimdi ne gibi durumda kullanıyoruz? Ne zaman ki biz...
+
+338
+01:00:35,572 --> 01:00:50,072
+Eğer bir sınıfın içerisinde, jenerik sınıfın içerisinde farklı tipteki verileri tutmak istiyorsak bu durumda biz neyi kullanıyoruz? Bu jenerik classları kullanıyoruz.
+
+339
+01:00:53,972 --> 01:00:56,012
+Tekrardan şeye dönelim.
+
+340
+01:01:21,108 --> 01:01:35,028
+Okay. Now, as you see here, and if I have shown you a generic class with one parameter now.
+
+341
+01:01:35,603 --> 01:01:44,884
+Arkadaşlar, so you can also think that if you parameterize a class like this, then there could be more than one parameter as well, right?
+
+342
+01:01:45,384 --> 01:01:50,103
+Arkadaşlar, now in this particular example, so we have one more than one parameter.
+
+343
+01:01:50,103 --> 01:01:54,623
+Arkadaşlar, now let's take a look at this class ordered pair, okay?
+
+344
+01:01:55,123 --> 01:02:00,003
+Arkadaşlar, now ordered pair class is keeping two different values, okay?
+
+345
+01:02:00,384 --> 01:02:03,603
+Arkadaşlar, and these two different values, okay, they...
+
+346
+01:02:03,603 --> 01:02:09,684
+Also, need to be generic type.
+
+347
+01:02:10,079 --> 01:02:19,059
+Because I don't know for sure what kind of things that I am going to hold in the object of this class at the beginning.
+
+348
+01:02:19,740 --> 01:02:30,159
+Hani daha baştan bu objenin global member field'larında ne tutması gerektiğine karar vermediğim için bunları jenerik olarak tanımlamak istiyorum.
+
+349
+01:02:30,380 --> 01:02:37,380
+Belki şimdi ileride string koyacağım yahut da integer koyacağım. Bunu bilmiyorum. O yüzden jenerik tanımlıyorum.
+
+350
+01:02:38,079 --> 01:02:57,800
+Eğer birden fazla variable'ım varsa o zaman sınıfımın parametrelerini de, generic type parametrelerini de ona göre belirliyorum. Burada iki tane benim member field'ım varmış. O yüzden bu generic class'ımda da iki tane var. Baktığım vakit bir tane constructor'ım olması gerekiyor.
+
+351
+01:02:59,188 --> 01:03:16,887
+Bu constructor'ım two parameter constructor. Bunların değerlerini set ediyorum. Bir de getter değerlerim var. Buradaki örnekte bu regular class bir tane interfejse implement etmiş. Dikkat edin, interfejse bir sınıf olduğu için
+
+352
+01:03:17,311 --> 01:03:17,811
+Okay.
+
+353
+01:03:18,811 --> 01:03:23,751
+Just like any of the classes, interface is also a class.
+
+354
+01:03:23,751 --> 01:03:32,072
+So therefore, I can also use these generic classes for the interface classes.
+
+355
+01:03:32,492 --> 01:03:38,112
+So you see that here I am defining this interface class as a generic class.
+
+356
+01:03:38,672 --> 01:03:43,032
+And in this interface, I have two methods.
+
+357
+01:03:43,311 --> 01:03:44,692
+Remember in the interfaces,
+
+358
+01:03:45,311 --> 01:03:46,992
+I only have the method description.
+
+359
+01:03:47,572 --> 01:03:47,692
+Okay.
+
+360
+01:03:48,152 --> 01:03:51,972
+And I have two method description here, no method bodies.
+
+361
+01:03:52,592 --> 01:03:59,172
+And this means that any regular class which will implement this interface must have these two methods.
+
+362
+01:03:59,172 --> 01:04:07,851
+So therefore, you see that I have these two methods because the interface that I am implementing has these two methods.
+
+363
+01:04:08,572 --> 01:04:08,672
+Okay.
+
+364
+01:04:08,972 --> 01:04:12,172
+Now, this is the example of two parameter.
+
+365
+01:04:13,311 --> 01:04:15,192
+Two parameter generic class.
+
+366
+01:04:15,271 --> 01:04:18,251
+This is the example of one parameter generic class.
+
+367
+01:04:19,172 --> 01:04:19,391
+Okay.
+
+368
+01:04:19,612 --> 01:04:25,692
+Now let's take a look at how I initialize two parameter generic class.
+
+369
+01:04:25,692 --> 01:04:33,751
+You see that here I have a, I'm defining a local variable P1.
+
+370
+01:04:34,092 --> 01:04:36,811
+And you see here when I define.
+
+371
+01:04:37,231 --> 01:05:00,771
+And I passed two parameters. First one is string, second one integer, which means that in the objects that will be generated from this class, I will hold string type and integer type elements in it, okay, within the object which will be created from this class.
+
+372
+01:05:01,427 --> 01:05:04,467
+I will keep string and integer values.
+
+373
+01:05:04,807 --> 01:05:08,807
+So therefore, as the parameters, I am passing string and integer.
+
+374
+01:05:09,487 --> 01:05:15,148
+And as you see, I am creating an object of this particular regular class.
+
+375
+01:05:15,148 --> 01:05:23,827
+And as I create the object of it, pay attention, you see that I must keep the same.
+
+376
+01:05:24,340 --> 01:05:27,800
+Arkadaşlar, notation as just like here.
+
+377
+01:05:28,120 --> 01:05:38,160
+Arkadaşlar, since I defined it as the two parameters as string and integer, when I initialize, I must have this notation as well.
+
+378
+01:05:38,680 --> 01:05:45,060
+Arkadaşlar, since I am creating an object, I must call the constructor of this object.
+
+379
+01:05:45,060 --> 01:05:49,060
+Arkadaşlar, so therefore, as always, as you've seen in the previous...
+
+380
+01:05:51,119 --> 01:05:54,199
+Arkadaşlar, our previous examples.
+
+381
+01:05:54,759 --> 01:06:00,259
+So I'm calling the constructor, which in this case, I have two parameter constructor.
+
+382
+01:06:00,259 --> 01:06:01,839
+I'm calling with two parameters.
+
+383
+01:06:03,315 --> 01:06:23,076
+Now, if you look at the second example, this time I am calling this, I'm defining another local variable where I am passing string and string in as the generic types to this class.
+
+384
+01:06:23,503 --> 01:06:33,063
+Okay, which means that I'm going to keep only the string values for the two global member fields for this class objects.
+
+385
+01:06:33,556 --> 01:06:37,556
+And here again, I am creating an object of this class.
+
+386
+01:06:38,076 --> 01:06:43,436
+I must keep the same notation for the class name.
+
+387
+01:06:43,976 --> 01:06:46,756
+And then I am calling the its constructor.
+
+388
+01:06:47,296 --> 01:06:47,356
+Okay.
+
+389
+01:06:47,636 --> 01:06:56,456
+Now, this is the, this is how we are using the generic class, classes when we have two parameters.
+
+390
+01:06:57,715 --> 01:07:02,115
+Okay. So let's give a 10 minute break. Then we will continue.
+
+391
+01:07:04,556 --> 01:07:06,335
+Beyond the Kikara veririz arkadaşlar.
+
+392
+01:17:46,579 --> 01:17:50,039
+Evet, devam edelim arkadaşlar. Sesim geliyor mu? Bir teyit edin lütfen.
+
+393
+01:17:54,931 --> 01:17:55,672
+Kereo, Jean.
+
+394
+01:17:56,271 --> 01:17:56,832
+Super.
+
+395
+01:18:00,404 --> 01:18:05,384
+generic classlarla ilgili sorusu olan var mı arkadaşlar? Bundan sonrası için oldukça önemli.
+
+396
+01:18:08,284 --> 01:18:16,084
+Anlamadığınız zaman lütfen beni durdurun. Çünkü bütün konuşacağımız data structure'lar bu generic sınıflar üzerine kurgulanmış.
+
+397
+01:18:20,724 --> 01:18:37,144
+Okay. Now that we learned the generic classes, we know that with the generic class, we are able to hold different kinds of things in an object.
+
+398
+01:18:37,144 --> 01:18:43,804
+Okay. If I use a generic class and if I create an object of the generic class,
+
+399
+01:18:44,435 --> 01:18:48,435
+Within that object, I can keep different kinds of things.
+
+400
+01:18:48,675 --> 01:18:57,475
+I can first start keeping integer, then I can start keeping citring, then I can start keeping double, okay?
+
+401
+01:18:58,415 --> 01:19:08,495
+So different kinds of things can be held in a given generic class object, okay?
+
+402
+01:19:10,068 --> 01:19:13,887
+Now, we are going into the details of data structures.
+
+403
+01:19:13,887 --> 01:19:15,048
+So far,
+
+404
+01:19:15,439 --> 01:19:19,539
+As a data structure, we learned arrays.
+
+405
+01:19:20,219 --> 01:19:31,939
+An array is a way of keeping different kinds of data in an organized way in the physical memory.
+
+406
+01:19:32,719 --> 01:19:36,019
+Just like the array, there are other data structures.
+
+407
+01:19:36,739 --> 01:19:43,439
+There are other data structures like link list, ArrayList, HashMap, all...
+
+408
+01:19:43,439 --> 01:19:45,139
+We will learn in this class.
+
+409
+01:19:46,039 --> 01:19:49,299
+And these data structures are just like array.
+
+410
+01:19:49,299 --> 01:19:58,680
+They keep the data or the objects in an organized way in the physical memory.
+
+411
+01:20:00,059 --> 01:20:00,739
+Okay.
+
+412
+01:20:01,680 --> 01:20:03,180
+And...
+
+413
+01:20:04,500 --> 01:20:18,780
+So, let's, and so, obviously, when you write a program, you will choose different kind of data structures and to hold your data in the physical memory.
+
+414
+01:20:19,319 --> 01:20:24,479
+Depending on your choice, your program may run faster or slower.
+
+415
+01:20:24,479 --> 01:20:29,300
+So, therefore, choosing the right data structure is also important.
+
+416
+01:20:29,899 --> 01:20:32,500
+Now, we will learn different kinds of data structures.
+
+417
+01:20:32,500 --> 01:21:00,492
+Arkadaşlar, class, object,
+
+418
+01:21:02,868 --> 01:21:11,108
+Arkadaşlar, you can see in the slide, the linkless data structure consists of list nodes.
+
+419
+01:21:11,948 --> 01:21:12,068
+Okay.
+
+420
+01:21:12,708 --> 01:21:16,968
+And each list node is an object.
+
+421
+01:21:17,808 --> 01:21:22,368
+And in this object, I have two global member fields.
+
+422
+01:21:22,688 --> 01:21:26,628
+One member field is the data itself.
+
+423
+01:21:27,475 --> 01:21:36,636
+The second member field is the reference to another list node.
+
+424
+01:21:37,335 --> 01:21:37,456
+Okay.
+
+425
+01:21:37,755 --> 01:21:44,076
+Now this is an object reference and this is the data.
+
+426
+01:21:44,675 --> 01:21:44,796
+Okay.
+
+427
+01:21:44,796 --> 01:21:52,595
+Now in this particular example, I have five different list node objects.
+
+428
+01:21:53,796 --> 01:21:53,935
+Okay.
+
+429
+01:21:54,612 --> 01:22:00,532
+And in this particular example, I also have one linked list.
+
+430
+01:22:05,172 --> 01:22:08,172
+Object and you see that the linked list.
+
+431
+01:22:10,012 --> 01:22:10,612
+Has.
+
+432
+01:22:11,055 --> 01:22:16,615
+A head node, which is also a reference to a list node object.
+
+433
+01:22:17,355 --> 01:22:23,495
+And tail node, this is also a reference to a list node object.
+
+434
+01:22:23,956 --> 01:22:24,055
+Okay.
+
+435
+01:22:24,376 --> 01:22:31,376
+Now, the linked list has two parameters, head node and the tail node.
+
+436
+01:22:31,775 --> 01:22:39,195
+Arkadaşlar, and the object of the linked list, as you see, this is an, the whole thing is an object of the linked list.
+
+437
+01:22:39,695 --> 01:22:47,775
+Arkadaşlar, and the head node is pointing to the first list node in the linked list.
+
+438
+01:22:48,175 --> 01:22:53,095
+The tail node is pointing to the last list node in the linked list.
+
+439
+01:22:53,636 --> 01:22:59,755
+Arkadaşlar, and each list node has a data and member field and also.
+
+440
+01:22:59,775 --> 01:23:09,695
+So, the reference member to the two global member fields. One is data, the other one is the list node reference.
+
+441
+01:23:09,695 --> 01:23:25,615
+Okay. And the list node reference is pointing to another list node. Okay. Demek ki bir link list arkadaşlar. Link list objesi bütün list notları bilmek zorunda değil. Sadece birinci ve sonuncuyu bilmesi yeterli.
+
+442
+01:23:26,579 --> 01:23:38,199
+Birinci zaten hem tutması gereken datayı tutuyor hem de bir sonraki list nodu memori'deki obje referansına point ediyor.
+
+443
+01:23:38,979 --> 01:23:47,420
+İkinci list nod da hem datayı tutuyor hem de bir sonraki list nodun memori'deki obje referansına point ediyor.
+
+444
+01:23:47,420 --> 01:23:54,579
+Ben bu link list içerisinde hangi değerler tutuluyor diye takip ettim.
+
+445
+01:23:54,579 --> 01:24:07,279
+Link list objesi içerisindeki head not'tan başlıyorum ve sırasıyla list notlar üzerinde iterate ederek bütün list notların değerlerini elde edebiliyorum.
+
+446
+01:24:09,779 --> 01:24:14,279
+Okay. Now, let me show you first.
+
+447
+01:24:20,724 --> 01:24:22,344
+Example code for
+
+448
+01:24:28,307 --> 01:24:30,427
+For ListNot and List.
+
+449
+01:24:38,323 --> 01:24:38,643
+Ok.
+
+450
+01:24:48,692 --> 01:24:51,412
+Okay, now here is the example.
+
+451
+01:24:53,252 --> 01:24:57,891
+Obviously, Java has an implementation for called linked list.
+
+452
+01:24:57,891 --> 01:25:04,492
+We will study, we will use the linked list implementation provided by Java.
+
+453
+01:25:05,252 --> 01:25:09,832
+But this is an example how the linked list is implemented.
+
+454
+01:25:10,332 --> 01:25:13,592
+Okay, now you see that I have two classes here.
+
+455
+01:25:13,711 --> 01:25:15,112
+One is the list node.
+
+456
+01:25:16,032 --> 01:25:16,192
+Okay.
+
+457
+01:25:17,043 --> 01:25:17,824
+This year.
+
+458
+01:25:21,524 --> 01:25:32,623
+Okay, now this is the list node class and the second class is the list class and this is the list class.
+
+459
+01:25:33,344 --> 01:25:37,344
+Okay, it goes all the way to here.
+
+460
+01:25:37,844 --> 01:25:40,783
+Okay, now the list class.
+
+461
+01:25:41,971 --> 01:26:09,951
+Okay, in Java we have, so in Java implementation we have here link list, okay? But here just for you to understand how the link list is implemented, I called it list, okay? And here list is the whole thing, which is the class for the whole link list.
+
+462
+01:26:09,971 --> 01:26:26,231
+And this particular here is the list node. Okay. List is consists of the list node objects. Now let's take a look at the list node class. Now list node class has two global member fields. One is
+
+463
+01:26:26,836 --> 01:26:54,836
+The data itself, as you remember, we want to hold different kinds of things in the generic classes. Therefore, I define this as a generic class. Okay. Now, the second thing is a reference to another list node objects. You see that the type of this is the same as the...
+
+464
+01:26:54,836 --> 01:27:03,036
+class, okay, which means that I'm going to use this in order to point to another list node objects, okay.
+
+465
+01:27:03,336 --> 01:27:17,316
+Now, as you see, I have a one parameter constructor, I have two parameter constructor, and I have a getter methods, getter methods for the data and getter methods for the list node reference, okay.
+
+466
+01:27:17,695 --> 01:27:20,816
+Now, take a look at the list class.
+
+467
+01:27:20,816 --> 01:27:22,556
+Now, list class.
+
+468
+01:27:22,836 --> 01:27:32,556
+Arkadaşlar, is, has two global member fields, three global member fields. One is the name of the linked list, any name that you want to give to this linked list.
+
+469
+01:27:33,695 --> 01:27:50,676
+Arkadaşlar, but the other two is important. The, so I have one reference that points to the first node. I have another reference. I'm defining another reference that points to the last node. Okay. Now, here you see that I have
+
+470
+01:27:50,836 --> 01:27:57,016
+One default constructor, one parameter constructor where I give the name to this list.
+
+471
+01:27:57,016 --> 01:27:57,456
+Okay.
+
+472
+01:27:57,775 --> 01:28:15,855
+And then you see different kinds of methods which allows me to put another list node into this linked list or remove a node from this linked list or remove it from the front, remove it from the back.
+
+473
+01:28:16,316 --> 01:28:16,456
+Okay.
+
+474
+01:28:17,176 --> 01:28:18,836
+And there are...
+
+475
+01:28:18,836 --> 01:28:21,496
+Methods, whether this linked list is empty.
+
+476
+01:28:22,096 --> 01:28:22,256
+Okay.
+
+477
+01:28:22,556 --> 01:28:25,596
+I can also print the contents of the linked list.
+
+478
+01:28:25,756 --> 01:28:25,896
+Okay.
+
+479
+01:28:25,996 --> 01:28:31,275
+These are the methods of the list class.
+
+480
+01:28:31,775 --> 01:28:31,916
+Okay.
+
+481
+01:28:31,916 --> 01:28:32,775
+Now,
+
+482
+01:28:33,427 --> 01:28:46,368
+Link list implementation of Java is exactly the same thing. Instead of list, I have linked list and instead of the list node, I have the list node in the Java implementation.
+
+483
+01:28:46,967 --> 01:28:56,011
+Okay. And we will use the Java implementation in order to implement the linked list. For example, let's take a look at...
+
+484
+01:28:56,787 --> 01:29:07,387
+This list test Java class. In this particular class, I'm going to test the list class.
+
+485
+01:29:08,287 --> 01:29:15,347
+And you see that I have the main method here. In the main method, you see I am creating a list.
+
+486
+01:29:15,923 --> 01:29:26,023
+Arkadaşlar, and the type of the list is here, and I know that I'm going to hold integer values in this particular list that I am creating.
+
+487
+01:29:26,023 --> 01:29:40,583
+Arkadaşlar, therefore, I pass integer to the generic class, and here I am creating an object of it and assigning to this local variable.
+
+488
+01:29:41,395 --> 01:29:59,995
+And as you see, first I put, I call insert at front method. I put minus one. Okay. And then I call the print method, which writes the content of the list onto the.
+
+489
+01:30:00,000 --> 01:30:14,139
+console. And then I put zero at, again, by calling the insert at front. So in this particular case, when I write it, it will be like zero and one.
+
+490
+01:30:16,780 --> 01:30:17,460
+Okay.
+
+491
+01:30:18,547 --> 01:30:24,768
+So in this particular case, in my linked list, first value will be zero, then second value will be one.
+
+492
+01:30:25,188 --> 01:30:30,228
+And then I am going to insert another one, which is another value, which is one.
+
+493
+01:30:30,228 --> 01:30:34,467
+But this time I'm going to insert it at the back.
+
+494
+01:30:34,608 --> 01:30:36,547
+So this should be minus one.
+
+495
+01:30:39,228 --> 01:30:39,788
+Okay.
+
+496
+01:30:45,011 --> 01:30:53,851
+So, when I write it, in this case, so since I insert this at the back, so my linked list will be like this.
+
+497
+01:30:54,291 --> 01:31:01,771
+And then, again, if I insert another value, my linked list will be like this.
+
+498
+01:31:01,771 --> 01:31:07,291
+So, when I print it, the value, the order of the values will be similar to this one.
+
+499
+01:31:07,611 --> 01:31:07,832
+Okay?
+
+500
+01:31:09,108 --> 01:31:12,167
+Now, this is the linked list implementation.
+
+501
+01:31:12,688 --> 01:31:23,648
+Now, let's go back to the slides so that I can show you how we are doing the insert and remove from this linked list.
+
+502
+01:32:00,979 --> 01:32:01,299
+Ok.
+
+503
+01:32:13,619 --> 01:32:29,899
+Arkadaşlar, ok. Now, in the linked list, so as I have shown you, so we have different methods, like, so this is the simplest, so this is the illustration of a linked list.
+
+504
+01:32:30,355 --> 01:32:40,635
+And you see that first node is pointing to this node, last node is pointing to another list node, but this is the last list node, this is the first list node.
+
+505
+01:32:41,175 --> 01:32:46,415
+So let's look at the insert at front method.
+
+506
+01:32:46,415 --> 01:32:46,935
+Okay.
+
+507
+01:32:48,575 --> 01:32:51,415
+So at the beginning, I have...
+
+508
+01:32:53,363 --> 01:33:10,543
+I have a linked list just like this. I have two nodes. OK. And the first node of the linked list global member field, first node global member field of the linked list is pointing to the first list node. OK.
+
+509
+01:33:10,863 --> 01:33:21,304
+Now I want to call insert at front method and I want to add a value which is 12. OK. Now in this particular case when I want to insert
+
+510
+01:33:21,363 --> 01:33:46,443
+Arkadaşlar, class, object,
+
+511
+01:33:47,539 --> 01:34:10,260
+Since I, so once I create the new list node, okay, in the reference member fields of the list node is now going to point to the first node. I update the reference of the new list node to be the first node, okay?
+
+512
+01:34:10,735 --> 01:34:30,315
+Arkadaşlar, how do I get the location of the first node? I use the first node member fields. Okay. And once I updated the new list node, okay, then I am going to update the value of first node of the linked list.
+
+513
+01:34:30,688 --> 01:34:41,467
+How do I update it? I get the object reference from this one from the new list node which then I assign it to the first node.
+
+514
+01:34:41,467 --> 01:34:50,448
+Ok. Arkadaşlar, ekleme yaparken ilk işim öncelikle yeni ekleyeceğim objemi oluşturuyorum. Bu objemin
+
+515
+01:34:50,880 --> 01:35:07,199
+Referans, bu objemin içerisinde bir tane member field datanın kendisi, az önce kodda gösterdim. Bir tanesi de bir sonraki list node'da referans vereceğim referans member field'ı.
+
+516
+01:35:07,699 --> 01:35:28,639
+Referans member freedom'ı bu ekleme yapacağım link list'in first node'unun adresiyle update ediyorum. Peki bu first node'un adresini nereden alıyorum? Bu link list'in içerisinde first node ve last node referansları vardı ya, oradaki first node'dan alarak update ediyorum.
+
+517
+01:35:28,639 --> 01:35:35,639
+Bu update'i yaptıktan sonra artık benim yeni ekleyeceğim eleman bu first node'u görebilecek.
+
+518
+01:35:35,699 --> 01:35:46,699
+göstermeye başladı. Ama işim bitmedi. Bu sefer de bu link listin first note değişkeni vardı. Bu link listin first note değişkenini...
+
+519
+01:35:48,404 --> 01:36:06,664
+Ne yapıyorum? Bu yeni yaratmış olduğum objenin adresini atıyorum. Bunu da nasıl atacağım? Bunu yarattığım zaman New List ile yaratmıştım. New List notla. Bunu takip etmek için kullandığım referansın değerini First node'a atıyorum. Bu Insert at Front için yaptığım yöntem.
+
+520
+01:36:06,664 --> 01:36:13,923
+Now, so let us take a look at the Insert at Back. Now, this is my link list.
+
+521
+01:36:14,304 --> 01:36:27,284
+I have now three elements, 12, 7, 11, and the first node is pointing to the first list node. Last node is pointing to the last list node.
+
+522
+01:36:27,423 --> 01:36:38,484
+Now, if I wanted to create another list node from the back, now you see that I am first, I'm creating another list node object by using the new keyword.
+
+523
+01:36:40,020 --> 01:37:02,739
+Okay. Now, first, what I do is that I, since I know the location of the last note by using the last note reference, since I know the location of the last note by using the last note reference of the linked list, okay, I go to the last note.
+
+524
+01:37:03,283 --> 01:37:12,723
+And then I update the reference or reference member fields of the last node to point to this new list node.
+
+525
+01:37:13,363 --> 01:37:13,523
+Okay.
+
+526
+01:37:14,483 --> 01:37:16,503
+And how do I update it?
+
+527
+01:37:16,503 --> 01:37:20,463
+I assign the new list node reference to this one.
+
+528
+01:37:21,143 --> 01:37:28,483
+And in this case, this last node is now pointing to the new list node that I just created.
+
+529
+01:37:29,063 --> 01:37:29,183
+Okay.
+
+530
+01:37:29,443 --> 01:37:30,743
+But I'm not finished.
+
+531
+01:37:31,188 --> 01:37:41,628
+Next, after that, I am now going to update the value of last node to point to the new list node that I added at the back.
+
+532
+01:37:42,008 --> 01:37:54,208
+How do I do that? I assign the value of a new list node, which is the reference that points to the new list node, and I assign the value to the last node.
+
+533
+01:37:54,208 --> 01:37:58,468
+Okay, now this way, now the last node is pointing to this node.
+
+534
+01:37:58,931 --> 01:37:59,391
+Ok?
+
+535
+01:38:05,524 --> 01:38:06,064
+No.
+
+536
+01:38:07,060 --> 01:38:34,460
+So these are the two methods of a linked list can have. Insert at back, insert at front. And there are other methods which I have shown you. In the example code, you may take a look at the code. There are remove methods, remove at back, remove at front.
+
+537
+01:38:35,060 --> 01:38:38,480
+Or print methods and other, there are other methods as well.
+
+538
+01:38:38,480 --> 01:38:38,940
+Okay.
+
+539
+01:38:42,000 --> 01:38:45,220
+Now, this is a...
+
+540
+01:38:45,747 --> 01:38:54,847
+This linked list is one of the data structures that is provided by the Java.util package.
+
+541
+01:38:54,847 --> 01:38:55,367
+Okay.
+
+542
+01:38:55,627 --> 01:39:01,067
+Now, we will not implement the data structure classes.
+
+543
+01:39:01,207 --> 01:39:02,307
+We will just use them.
+
+544
+01:39:02,527 --> 01:39:02,807
+Okay.
+
+545
+01:39:02,967 --> 01:39:06,207
+Because they are available under Java.util package.
+
+546
+01:39:06,747 --> 01:39:08,363
+And you see that...
+
+547
+01:39:09,300 --> 01:39:14,840
+So we just are learning the linked list data structure.
+
+548
+01:39:15,399 --> 01:39:20,920
+And there are other data structures like ArraySet, TreeSet, HashSet.
+
+549
+01:39:21,319 --> 01:39:21,460
+Okay.
+
+550
+01:39:21,699 --> 01:39:30,099
+They all are inherited from an interface which is called Collection.
+
+551
+01:39:30,099 --> 01:39:35,920
+So this is the inheritance tree of the data structures provided by Java.
+
+552
+01:39:37,171 --> 01:39:37,651
+Okay.
+
+553
+01:39:39,271 --> 01:39:49,691
+Now, this is another visualization of Java data structures inheritance tree.
+
+554
+01:39:49,691 --> 01:39:55,931
+As you see, at top, I have the collection interface from this interface.
+
+555
+01:39:56,191 --> 01:39:59,931
+So, there is another interface list.
+
+556
+01:40:00,115 --> 01:40:05,855
+And from this list, one of the regular classes that we will learn is the link list.
+
+557
+01:40:06,195 --> 01:40:06,336
+Okay.
+
+558
+01:40:06,956 --> 01:40:09,096
+And another one, ArrayList.
+
+559
+01:40:09,515 --> 01:40:09,796
+Okay.
+
+560
+01:40:09,876 --> 01:40:12,015
+We will also learn ArrayList as well.
+
+561
+01:40:12,475 --> 01:40:12,716
+Okay.
+
+562
+01:40:13,355 --> 01:40:21,836
+And so another interface, which is another one that we will use, Map Interface.
+
+563
+01:40:21,836 --> 01:40:27,015
+And from this, we have a regular class HashMap.
+
+564
+01:40:27,636 --> 01:40:27,836
+And we...
+
+565
+01:40:28,115 --> 01:40:54,695
+tree map and we will learn hash map. Okay. And you don't have it here, but there is also another regular class called vector. Okay. And we will also use vector is also a list. And that's also regular class. Okay. We will also learn vector. Now there are other utility classes that we will learn. So one of them is collections. The other one is arrays.
+
+566
+01:40:55,220 --> 01:41:02,720
+Collections class and Arrays class have static methods which are useful for us to use.
+
+567
+01:41:03,079 --> 01:41:12,440
+And these static methods are helpful in order to perform some operations on these data structure classes.
+
+568
+01:41:13,060 --> 01:41:17,680
+We will learn later on the code.
+
+569
+01:41:22,355 --> 01:41:22,895
+Okay.
+
+570
+01:41:23,735 --> 01:41:24,076
+Now,
+
+571
+01:41:25,460 --> 01:41:48,379
+So, what are the advantages of the linked list? So, I will show you an example of usage of example class using the linked list provided by java.util package. But first, let me talk about the advantages of linked list.
+
+572
+01:41:48,379 --> 01:41:53,379
+Now, with the linked list, so far you learned...
+
+573
+01:41:53,460 --> 01:42:16,559
+Arkadaşlar, in the previous classes, what arrays are, how arrays are being used. Now you are learning the linked list. And so when you when you want to enlarge the linked list, OK, enlarging the linked list cosmetic because all we did when we enlarge when we make it bigger, all we did was
+
+574
+01:42:20,115 --> 01:42:23,336
+All we did was update the references.
+
+575
+01:42:23,855 --> 01:42:32,216
+Okay, when I wanted to add another object into the linked list, all I did was update the references.
+
+576
+01:42:32,876 --> 01:42:46,615
+Okay, but in the array, when you use array, if you want to create the size of the array, okay, you need to create another array with the higher capacity.
+
+577
+01:42:48,115 --> 01:43:14,836
+Move all the objects from one array to another. OK, compared to the arrays, enlarging a list cause nothing. And insertion and removal of elements is also faster because if you want to remove something from the linked list, all you need to do is again update the references, for example.
+
+578
+01:43:16,051 --> 01:43:32,551
+Let's say if you wanted to remove this particular list node from the linked list, all you need to do, you need to update the node, list node reference, to point to the next list node.
+
+579
+01:43:32,551 --> 01:43:40,051
+If you do that, in that particular case, you will actually remove this particular list node.
+
+580
+01:43:46,996 --> 01:43:56,835
+Arkadaşlar, okay. And especially if you have sorting algorithms, okay, linkless is much better to use.
+
+581
+01:43:56,835 --> 01:44:03,955
+Arkadaşlar, okay. So the linkless data structure is faster when you use sorting algorithms.
+
+582
+01:44:04,595 --> 01:44:05,835
+Arkadaşlar, okay. Now...
+
+583
+01:44:06,323 --> 01:44:20,023
+Arrays have also advantages compared to the linked list because in array, if you wanted to access directly to the certain member of the array, it is directly accessible.
+
+584
+01:44:20,203 --> 01:44:27,043
+Let's say you want to access the fifth element of the array, you can directly access that member.
+
+585
+01:44:27,423 --> 01:44:33,363
+But if you are using linked list, and if you want to reach, for example,
+
+586
+01:44:34,323 --> 01:44:44,583
+Arkadaşlar, the third element of the, for example, the linked list, you have to start from the first one, then go to the next one, and then go to the third one, okay?
+
+587
+01:44:44,583 --> 01:44:52,643
+But in Array, you can directly access to the certain member of Array, okay?
+
+588
+01:44:52,903 --> 01:44:57,023
+So that's the advantages of Array. It provides direct access.
+
+589
+01:44:58,612 --> 01:45:07,632
+And we have only, I have only shown you a single linked list, okay, but we also have a double linked list.
+
+590
+01:45:08,072 --> 01:45:21,712
+In the double linked list, what we have here, not only this node is pointing to this node, this node is also pointing back to this node, which means that in every list node,
+
+591
+01:45:22,355 --> 01:45:47,815
+We have three global member fields. One is the data. The second one is pointing to the next node. The third one is pointing to the previous node. Okay. So we have the next node reference as the global member field. We have the previous reference as the global member field and we have the data itself in every list node.
+
+592
+01:45:49,492 --> 01:45:51,231
+And that's the double limplist.
+
+593
+01:45:51,851 --> 01:45:51,971
+Okay.
+
+594
+01:45:53,832 --> 01:45:54,372
+And
+
+595
+01:45:59,507 --> 01:46:03,707
+Okay.
+
+596
+01:46:03,867 --> 01:46:13,447
+Now I'm going to talk about arrays and collections classes, but I want to show you examples of these.
+
+597
+01:46:13,447 --> 01:46:25,347
+Again, arrays and collections classes are utility classes, okay, which have static methods that are useful for us.
+
+598
+01:46:25,680 --> 01:46:30,120
+To perform certain operations on the data structures.
+
+599
+01:46:30,240 --> 01:46:38,180
+For example, you can do sort, you can do binary search, you can shuffle, you can do the reverse.
+
+600
+01:46:38,180 --> 01:46:47,920
+And all these things are static methods and they all are either in collections class or arrays class.
+
+601
+01:46:48,360 --> 01:46:53,680
+Obviously, arrays class is doing all this on the array data structure.
+
+602
+01:46:53,680 --> 01:47:02,260
+Arkadaşlar, and the collections class is doing all the all different types of collections that we have covered.
+
+603
+01:47:02,260 --> 01:47:19,460
+Arkadaşlar, okay, the collections utility class can do all these operations on any of the regular classes on any of the regular classes that were generated that were inherited from the collection inheritance class.
+
+604
+01:47:21,619 --> 01:47:22,119
+Okay.
+
+605
+01:47:23,880 --> 01:47:26,980
+Now let's take a look at some examples of linked list.
+
+606
+01:47:45,076 --> 01:47:57,555
+OK. Previously, I have shown you how the Java's Java linked list implementation.
+
+607
+01:47:58,435 --> 01:48:09,715
+Actually is now let's take a look at how we are using the linked list class. OK, now, as you see here, I'm importing the.
+
+608
+01:48:10,707 --> 01:48:33,347
+Arkadaşlar, link list, Arkadaşlar, class, and every member of the, Arkadaşlar, link list class from the Java dot util. And as you see, Arkadaşlar, every member of the link list is also list. Okay. Now take a look at this code.
+
+609
+01:48:35,636 --> 01:48:45,736
+Here in the main method, first thing, I am creating an array where the type is string or string array.
+
+610
+01:48:46,196 --> 01:49:02,716
+And in the curly parentheses, I am assigning all these values to this array, which means that I am creating an array of string where the number of elements in the string array is six.
+
+611
+01:49:03,412 --> 01:49:03,932
+Okay.
+
+612
+01:49:06,492 --> 01:49:17,072
+Now, after I created this array, okay, what I'm doing is that I am creating a linked list.
+
+613
+01:49:18,032 --> 01:49:18,792
+Okay.
+
+614
+01:49:19,432 --> 01:49:26,392
+I am defining first the linked list and I'm saying that the linked list is going to hold string type.
+
+615
+01:49:27,552 --> 01:49:28,272
+Okay.
+
+616
+01:49:28,851 --> 01:49:32,591
+And the variable that I'm going to use this one.
+
+617
+01:49:33,091 --> 01:49:36,872
+And here I am creating an object of the linked list.
+
+618
+01:49:37,252 --> 01:49:42,891
+Remember, when I create an object of the generic type, the signature of this.
+
+619
+01:49:43,296 --> 01:49:45,676
+It has to be the same like this one.
+
+620
+01:49:46,115 --> 01:49:46,235
+Okay.
+
+621
+01:49:46,815 --> 01:49:54,515
+And then since I am creating an object, so I'm calling the default constructor.
+
+622
+01:49:54,695 --> 01:49:56,796
+So I need to call one of the constructors.
+
+623
+01:49:57,975 --> 01:50:04,275
+Then what I do is that I do a for each loop on this array.
+
+624
+01:50:04,756 --> 01:50:12,376
+Okay. And every element of this array, for every element of this array, I am going to insert.
+
+625
+01:50:12,884 --> 01:50:39,863
+This element into this link list that I created. Now notice that here I have a method add. Okay. Now a link list has different methods. Okay. So one of them is add. Then there are other methods that we will also see. You can add, you can add it to the front. You can add it to the back.
+
+626
+01:50:40,884 --> 01:50:45,443
+You can remove from the front, you can remove from the back.
+
+627
+01:50:45,863 --> 01:50:46,023
+Okay.
+
+628
+01:50:47,304 --> 01:50:52,323
+There are a number of different linked list methods that we will be using.
+
+629
+01:50:52,783 --> 01:50:52,903
+Okay.
+
+630
+01:50:52,903 --> 01:51:00,443
+Now here, this add method is adding to the end, adding the value to the end.
+
+631
+01:51:01,103 --> 01:51:01,203
+Okay.
+
+632
+01:51:01,983 --> 01:51:08,144
+Now, after I add to all these values to the linked list, okay.
+
+633
+01:51:10,739 --> 01:51:13,839
+And so let's go back here.
+
+634
+01:51:14,199 --> 01:51:14,359
+Okay.
+
+635
+01:51:15,139 --> 01:51:20,839
+And then I am creating another array, colors two.
+
+636
+01:51:21,000 --> 01:51:28,819
+And here you see that I have another six elements that I am assigning to this second array.
+
+637
+01:51:29,300 --> 01:51:39,619
+And for the second array, I am again, and also I am creating another linked list here and call it list two.
+
+638
+01:51:40,279 --> 01:51:44,479
+Okay, now I have list one and list two, two linked lists.
+
+639
+01:51:44,479 --> 01:51:53,279
+And in the first linked list, I added all the values of the colors array into this linked list.
+
+640
+01:51:53,739 --> 01:51:55,460
+Now in the second array,
+
+641
+01:51:55,872 --> 01:52:03,672
+I am also adding all the values of the second array to the second linked list, as you see.
+
+642
+01:52:04,132 --> 01:52:04,232
+Okay.
+
+643
+01:52:04,652 --> 01:52:13,672
+And as I am doing this, I am adding all the values to the end of the linked list, which means that first I am going to add gold.
+
+644
+01:52:14,072 --> 01:52:17,532
+And then when I add white, it will be gold white.
+
+645
+01:52:17,912 --> 01:52:21,592
+Then when I add brown, then it will be gold, white, brown, et cetera.
+
+646
+01:52:23,060 --> 01:52:41,260
+Now you see that you see another method of the linked list class, which is at all. Now with this method, what you can do, you can concatenate two different lists. You can add them together.
+
+647
+01:52:41,876 --> 01:52:49,956
+Now, what I do here is that I am adding the list 2, which is this particular linked list.
+
+648
+01:52:49,956 --> 01:52:50,515
+Okay.
+
+649
+01:52:50,935 --> 01:52:55,815
+And I added all these values to the list number 2.
+
+650
+01:52:56,215 --> 01:53:00,735
+And I'm going to concatenate everything to the first linked list that I have.
+
+651
+01:53:01,655 --> 01:53:02,135
+Okay.
+
+652
+01:53:02,376 --> 01:53:06,855
+Then I'm going to assign null value to the list 2 reference.
+
+653
+01:53:07,279 --> 01:53:21,279
+Okay, now by using the list one reference, I can access to all values because I already concatenated list two to list one.
+
+654
+01:53:22,399 --> 01:53:27,099
+Okay, and then I'm going to print everything onto the screen.
+
+655
+01:53:28,659 --> 01:53:37,840
+Now, here in this particular class, I call convert to uppercase string method. Let's go to this method.
+
+656
+01:53:39,988 --> 01:53:51,348
+Now, as you see, convert uppercase string method that I wrote here, okay, is taking a linked list object, okay.
+
+657
+01:53:51,348 --> 01:53:58,508
+Now, the linked list object, so this is a reference to the linked list object, okay.
+
+658
+01:53:59,208 --> 01:54:04,348
+And this linked list object that I'm talking about is...
+
+659
+01:54:07,123 --> 01:54:11,623
+Arkadaşlar, is concatenated object which consists of both these values.
+
+660
+01:54:11,863 --> 01:54:24,804
+Arkadaşlar, first, the values that you see here and then second, all the values that you see here because remember we concatenated the values of this to to this one at this line.
+
+661
+01:54:25,463 --> 01:54:27,743
+Arkadaşlar, now here.
+
+662
+01:54:28,644 --> 01:54:34,764
+Arkadaşlar, I am going to use an iterator in order to iterate on the linked list.
+
+663
+01:54:35,104 --> 01:54:42,783
+Okay, for this, Java.util package provides another class called list iterator.
+
+664
+01:54:43,380 --> 01:54:58,539
+Arkadaşlar, okay. Now the list iterator class is being used in order to iterate on the linked list, just like we were doing, we were using for loop on the arrays in order to iterate on the array.
+
+665
+01:54:58,539 --> 01:55:11,120
+Arkadaşlar, in the linked list, instead of doing the for loop, we are doing the while loop, but so when we are doing the while loop, we are using the list iterator.
+
+666
+01:55:11,380 --> 01:55:16,060
+Arkadaşlar, object in order to move to the next list node in the linked list.
+
+667
+01:55:17,060 --> 01:55:17,320
+Arkadaşlar, okay.
+
+668
+01:55:17,800 --> 01:55:23,820
+Arkadaşlar, now you see that here is the reference to the linked list.
+
+669
+01:55:24,240 --> 01:55:38,740
+Arkadaşlar, from the linked list, I can get, I can call the list iterator method, which will then return to me a reference to the list iterator object.
+
+670
+01:55:39,347 --> 01:55:54,748
+Now, what this list iterator object is doing is basically it's a pointer or it's a reference that is pointing to the first node in the linked list.
+
+671
+01:55:55,119 --> 01:56:08,500
+Arkadaşlar, now this, every time I am asking this first, this reference, whether there is a list node that it is pointing to.
+
+672
+01:56:08,500 --> 01:56:14,680
+Arkadaşlar, if there is a list node that it is pointing to, then I am getting the value of that node.
+
+673
+01:56:15,239 --> 01:56:15,840
+Arkadaşlar, okay.
+
+674
+01:56:16,595 --> 01:56:22,915
+And assigning a temporary variable. And then in this particular case, I made it uppercase.
+
+675
+01:56:23,575 --> 01:56:38,055
+And then I, by using the iterator, again, I took this value and I set it to the list node object that it is pointing to. Okay.
+
+676
+01:56:39,667 --> 01:56:57,307
+Yapmış olduğum işlem arkadaşlar, bir tane Array yarattım. En başta Array'e 6 tane değer atadım. İlk başta bu Array'i 6 tane string değeri, string objesi tutacak şekilde yaratmış oldum bunu yaparaktan.
+
+677
+01:56:57,908 --> 01:57:07,408
+Sonra bir tane link list yer attım ama link listin içerisinde string objeleri tutulacağını bildiğim için parametre olarak string'i geçtim.
+
+678
+01:57:07,988 --> 01:57:22,908
+Mutlaka bir link listin tanımını yapıyorken eğer içerisine hangi parametreyi koyacağımı belirtmişsen bunun objesini oluştururken de aynı sintaksi kullanmak zorundayım.
+
+679
+01:57:22,908 --> 01:57:31,368
+Bunu sınavlarda geçen senelerden gördüğümüz kadarıyla yapmayabiliyorsunuz. Bu da puan kırmamıza sebep oluyor.
+
+680
+01:57:31,699 --> 01:57:37,300
+Mutlaka şurada nasıl tanımladıysanız şunun parametresi de aynı olmalı.
+
+681
+01:57:38,340 --> 01:57:47,039
+Şimdi ondan sonra ne yapıyorum? For döngüsünde bu link liste bütün bu Array'in elemanlarını atıyorum.
+
+682
+01:57:47,539 --> 01:57:52,720
+Aynı şeyi ikinci bir link liste yapıyorum. İkinci link listin içerisine de Array'in elemanlarını atıyorum.
+
+683
+01:57:53,268 --> 01:58:09,307
+Ondan sonra da link listin bir diğer metodu olan addAll metodunu kullanaraktan iki tane link listi birbirine concunate edebilirim. Bu durumda ne yaptım? List 2'nin hepsini list 1'in en sonuna ekledim.
+
+684
+01:58:09,307 --> 01:58:20,127
+Bunu yaparken de en son list 1'in last node referansı vardı.
+
+685
+01:58:21,268 --> 01:58:22,148
+referansını
+
+686
+01:58:23,252 --> 01:58:48,392
+Artık List2'nin Last Node referansı olacak şekilde göstereceğim. Bir de List1'in Last Node'undaki elemanın bir sonra göstereceği List Node için obje referansını ne yapıyorum? Update ediyorum. List2'nin First Node'u olacak şekilde update ediyorum. Yani sadece referansları update ederek bu concunate işlemini gerçekleştirebiliyorum.
+
+687
+01:58:51,252 --> 01:58:57,232
+add all metodu. Ben bu add all metodunu ve link listin diğer metotlarını iyi öğrenmeliyim.
+
+688
+01:58:58,420 --> 01:59:26,420
+Bunu sizler için söylüyorum. Yani link listin bütün metotlarını öğrenerekten bununla ilgili örnekler yapmanızı istiyorum. Daha sonra ne yapıyorum? Ne yapmışım? List 2'nin referansını artık null demişim. Yani artık list 2'yi list 2 hala memori'de. Yani memori'den şu anda Java 1.3.meş'in bunu silmedi. Ama ben list 2'yi takip edeyim.
+
+689
+01:59:26,420 --> 01:59:41,220
+obje referansıma null verdim. Artık ben şu anda kendi kodumda bu noktadan sonra listikiye tekrardan ulaşamam. Ama hala bu obje memoride olacak. Ta ki Java Virtual Machine kendisi silene kadar.
+
+690
+01:59:41,684 --> 02:00:05,664
+Sonra yaptığım list 1'i ekrana yazdırmışım. Hani print list 1. Buraya list 1'i point eden obje referansını göndermişim. Burada ne yapıyorum? Bir tane for döngüm var, for each döngüm var. Link list'in içerisindeki bütün elemanları teker teker alıp bir string değerine atıyorum ve burada yazdırıyorum.
+
+691
+02:00:06,899 --> 02:00:18,079
+Biz for each loop'u konuşurken ne demiştik? Hani buradaki kolondan sonra, kolon değerinden sonra buraya bir data structure gelir. Bu bir Array olabilir.
+
+692
+02:00:18,591 --> 02:00:23,032
+Bir link list olabilir, başka bir collection tipindeki bir data structure olabilir.
+
+693
+02:00:23,032 --> 02:00:26,992
+Demek ki for each'i data structure'larla kullanabiliyoruz.
+
+694
+02:00:27,251 --> 02:00:33,891
+Kullandığımız zaman yani kolondan sonra sağ tarafta data structure'ı point eden bir referans olunca o ne yapıyor?
+
+695
+02:00:33,992 --> 02:00:42,112
+Data structure'ın içerisindeki her bir objeyi her bir iterasyonda yandaki sol taraftaki değişkeni atıyor.
+
+696
+02:00:42,707 --> 02:01:06,187
+Burada yazdırmışım. Sonra convert uppercase strings metoduna gitmişim. Burada da bir link list üzerinde iterate etmek istiyorsam yani birinci elemanından sonuncu elemanına kadar adım adım gitmek istiyorsam list iterator objesini kullanıyorum.
+
+697
+02:01:10,707 --> 02:01:32,947
+List'in içerisinden yani link list'in içerisinde bulunan list iterator metodunu çağırdığında bana bir tane list iterator objesi veriyor bu metot. Bu list iterator objesini aldıktan sonra bu obje bu link list'in ilk noduna point ediyor. Aynı first node gibi.
+
+698
+02:01:34,003 --> 02:02:01,983
+Linklist'in ilk noduna point ediyor. Ve ben burada bu iterator sınıfının hasnext'ini kullanaraktan bu linklist üzerinde iterate edebiliyorum. Öncelikle bu iterator referansının point etmiş olduğu ilk nod, böyle bir şey var mı? Yani ilk nod var mı? Eğer varsa bu ilk nodun değerini al, colorata, ondan sonra da
+
+699
+02:02:02,003 --> 02:02:18,623
+Bunu uppercase yap sonra bu ilk nodu point ediyordu. İlk nodun set metodunu kullanaraktan bunun değerini oraya set et. Yani küçük harfle olan değerleri büyük harf yaptıktan sonra tekrardan oraya set et.
+
+700
+02:02:18,943 --> 02:02:27,524
+Tekrardan while'ın başına döndüm. Bu sefer artık iterator first nodu değil de first nod'dan bir sonraki nodu artık point ediyor.
+
+701
+02:02:28,180 --> 02:02:33,100
+First Not'tan bir sonraki not var mı diye soruyor. Eğer varsa buna devam ediyor.
+
+702
+02:02:33,560 --> 02:02:46,119
+Demek ki iterator objesi bizim link list üzerinde birinci nottan başlayarak adım adım devam edip bütün list notları takip etmemiz için kullandığımız bir obje.
+
+703
+02:02:47,764 --> 02:02:48,724
+Hocam,
+
+704
+02:02:48,963 --> 02:02:52,184
+Conwork da uppercase string metodu da ne yapmış oldu?
+
+705
+02:02:53,003 --> 02:02:57,144
+Elimdeki list not değerlerini, string değerlerini uppercase yapmış oldu.
+
+706
+02:02:57,244 --> 02:02:58,844
+Sonra tekrardan bunu yazdırıyorum.
+
+707
+02:03:00,204 --> 02:03:05,423
+Ondan sonra burada başka bir metot var implement etmişim.
+
+708
+02:03:05,503 --> 02:03:07,524
+Remove items metodu. Bir de buna bakalım.
+
+709
+02:03:11,828 --> 02:03:32,307
+Remove items metoduna gelelim. Remove items metoduna geldiğim zaman da link listin içerisindeki belirli pozisyonlardaki list nodları eğer çıkarmak istiyorsam bu durumda link listin başka bir metodu var. Aynı add all metodu gibi.
+
+710
+02:03:32,815 --> 02:03:34,695
+sublist metodu var.
+
+711
+02:03:35,575 --> 02:03:38,475
+Sublist metodu iki tane değer alıyor.
+
+712
+02:03:38,915 --> 02:03:41,635
+Bir start bir de end değeri alıyor.
+
+713
+02:03:41,735 --> 02:03:42,975
+Bunlar integer değerleri.
+
+714
+02:03:44,555 --> 02:03:50,095
+Bir link listin birinci elemanı yani birinci elemanına sıfır indisli eleman diyelim.
+
+715
+02:03:50,235 --> 02:03:56,975
+Sıfırdan başlayarak devam edecek olursak hangi indisler arasındaki elemanları çıkarmak istiyorsam bunları belirtiyorum.
+
+716
+02:03:56,975 --> 02:04:00,815
+Ve bu sublistin clear sublist.
+
+717
+02:04:00,815 --> 02:04:22,095
+Geriye bana bir obje döndürüyor. Yani döndürmüş olduğu obje de ne olacak? Bir tane küçük bir link list olacak. Bu link listin de clear metodunu çağırıyorum. Clear metodunu çağırdığım zaman o link listin değerlerini çıkartıyor, remove ediyor benim için.
+
+718
+02:04:28,815 --> 02:04:51,395
+araktaki değerleri toplu olarak çıkarmak istiyorsam, link listin sağlamış olduğu diğer bir metot, sublisti kullanacağım. Şu ana kadar link listle ilgili öğrendiğim metotlar neler oldu? Link list neydi? Java.utl package'i altında sağlanan data structure'dı. Şu ana kadar ben add metodunu öğrendim. Add all metodunu öğrendim.
+
+719
+02:04:52,659 --> 02:05:03,879
+List iterator metodunu öğrendim. Özellikle bu list üzerinde birinciden başlayarak iterate etmek için. Yine bir başka öğrendiğim metodu sublist metodu.
+
+720
+02:05:11,155 --> 02:05:29,096
+Diğer bir metot implement etmişim burada. Print Reverse List metodu. Print Reverse List metoduna gidelim. Buraya da yine Link List'in referansını göndermişim. Link List'in referansını gönderirken bu metot içerisinde şunu yapmışım.
+
+721
+02:05:39,155 --> 02:05:58,096
+Yani bu list nokta size dediğim zaman listin içerisinde kaç tane eleman varsa onu belirtiyorum. Yani list iterator objesine diyorum ki bu listenin en sonundaki list nodunu point edecek şekilde bana bir iterator objesi ver diyorum.
+
+722
+02:05:58,096 --> 02:06:07,136
+Bu artık first nodu point eden bir iterator değil artık last nodu point eden bir tane.
+
+723
+02:06:07,155 --> 02:06:09,155
+iterator objesi olmuş oldu.
+
+724
+02:06:09,676 --> 02:06:16,096
+Şimdi elimdeki link nislin sondan başlayarak üzerinde iterate edeceğim.
+
+725
+02:06:16,532 --> 02:06:43,292
+Buraya baktığım zaman bu sefer iterator has previous, biraz önce has next'i kullanmıştık. Bu sefer iterator has previous'i kullanıyorum. Bu da bir boolean değer döndürüyor. Plural ya da false. Eğer bu iterator objesi last node'u point ediyorsa ve orada bir tane obje varsa, ne yapıyorum? Bu while loop'un içerisine giriyorum ve onun değerini alıyorum, yazdırıyorum.
+
+726
+02:06:44,532 --> 02:07:10,972
+iterasyon da artık bu ne yapıyor? Iterator bir öncekine dönüyor. Eğer bir önceki varsa içine giriyorum, while döngüsünün onun değerini alıyorum, yazdırıyorum. Yani has previous'i kullanarak iterator'la istersen bir link listi sondan da yazdırabilirim ya da has next'i kullanarak iterator'la bir link listi birinci elemandan başlayarak da yazdırabilirim.
+
+727
+02:07:10,972 --> 02:07:12,532
+Şimdi bir tane daha.
+
+728
+02:07:12,532 --> 02:07:22,852
+şey öğrenmiş olduk. Literator, list literator, iterator sınıfının has next metodu olduğu gibi has previous metodu da var arkadaşlar.
+
+729
+02:07:25,619 --> 02:07:40,360
+Şimdi bu konuştuğumuz link listin metotları. Biz link listi derste kullanacağız. Bu metotları bu yüzden alışıyor olmanızı istiyorum, kullanıyor olmanızı istiyorum.
+
+730
+02:07:42,003 --> 02:08:10,003
+Şimdi biz ne dedik? Şu ana kadar öğrendiğimiz iki tane data structure var. Geçen derslerde öğrendiğiniz Array data structure'ı, şimdi de Link List data structure'ını öğrendiniz. Hem Link List'in implementasyonunu öğrendiniz. Hani burada göstermiştim ya, şurada. List not ve list şeklinde Link List'in implementasyonunu öğrendiniz. Bir de bu Link List'in implementasyonunu öğrendiniz.
+
+731
+02:08:10,003 --> 02:08:19,903
+Kütüphane olarak bize sağlayan Java'nın Linkless sınıfının metotlarını şu ana kadar öğrenmiş oldunuz.
+
+732
+02:08:20,532 --> 02:08:32,192
+Şimdi ben iki tane daha sınıftan bahsetmiştim. Bir tanesi Array sınıfı bir de Collections sınıfı. Şimdi bu iki sınıfı da anlatayım ondan sonra dersi bitireceğim.
+
+733
+02:08:33,192 --> 02:08:46,351
+Şimdi birinci sınıf Array sınıfı. Bu Array sınıfı yine Java.Util altında olan bir tane sınıf. Bu sınıfın özelliği içerisinde statik metotları var.
+
+734
+02:08:46,868 --> 02:09:11,188
+Bu static metotları kullanaraktan ben özellikle ArrayLer üzerinde bir takım benim için faydalı fonksiyonları çalıştırabiliyorum. Neymiş faydalı fonksiyonlar? Burada bir tane örneği var. Main metodu içerisinde yine ben bir tane string tipinde bir tane ArrayList yapmışım ve bunu initialize etmişim.
+
+735
+02:09:11,471 --> 02:09:26,631
+Bu üç tane değeri içeren değeri bu Array'e atamışım. Artık benim şu satırdan sonra memory'de bir tane içinde üç tane string objesi olan bir tane Array'im var.
+
+736
+02:09:28,751 --> 02:09:34,311
+Şimdi bu Array'i ben bir link liste dönüştürmek istiyorum.
+
+737
+02:09:35,028 --> 02:09:58,668
+Şimdi bu link liste dönüştürmek istiyorsam, ben şu link listin, Java'nın sağlamış olduğu link listin, constructorlarından bir tanesi de, yine list tipinde bir şey geliyorsa,
+
+738
+02:10:00,051 --> 02:10:25,292
+input geliyorsa, link list bunu link liste dönüştürüyor. Link list sınıfı link list tipinde bir tane obje üretiyor. Bu Array sınıfını kullanarak Array'sin asList diye bir tane metodu var. Bu asList metodu bir tane Array'i input olarak alıp bunu bir list tipinde bir
+
+739
+02:10:27,568 --> 02:10:30,287
+List tipinde bir obje olarak döndürebiliyor.
+
+740
+02:10:30,847 --> 02:10:37,648
+List neydi? Link List'in implement etmiş olduğu interface'in ismiydi.
+
+741
+02:10:38,000 --> 02:10:57,079
+Demek ki interface tipinde yani bunun bir üst inheritance tree'de bir üstünde bulunan sınıfın tipinde bir obje yaratıp bunu ArrayS sınıfı bana döndürüyor.
+
+742
+02:10:57,079 --> 02:11:02,920
+Bunu link liste constructor olarak verdiğimde artık bana bir tane link list yaratmış olacağım.
+
+743
+02:11:03,439 --> 02:11:06,000
+Link liste yarattıktan sonra link listin...
+
+744
+02:11:06,000 --> 02:11:14,479
+standart metotlarını kullanaraktan ben bu mevcuttaki link liste içinde 3 tane elemanı olan link liste yeni şeyler ekleyebilirim.
+
+745
+02:11:16,020 --> 02:11:37,520
+Demek ki benim bu Arrays'in şu anda öğrenmiş olduğum bir tane metodu asList. AsList neymiş? Bir tane Array alıyormuş. Bana da geri dönüş olarak list tipinde bir tane obje döndürüyormuş. Bu using Array. Şimdi bir de Collections'a bakalım.
+
+746
+02:11:40,275 --> 02:11:50,275
+Collections'ı gösterirken şunu şu şekilde göstereyim. Aslında kafa karıştırmamak adına şunu...
+
+747
+02:12:13,043 --> 02:12:41,003
+Şu anlık link listi öğrendiğiniz için bunu yaptım. Bir sonraki derste ArrayList'i de öğreneceksiniz. Şimdi burada ben bir tane Array yaratmışım. İçerisinde yine 6 tane eleman olan bir Array, String Array'i. Daha sonra Array sınıfını kullanaraktan bu Array'sin içerisinde olan asListStatic metoduna bu String Array'ini vermişim. Bu da bana geri return olarak list.
+
+748
+02:12:41,043 --> 02:12:56,884
+list tipinde bir tane obje dönüştürmüş. Bu list tipinde objeyi bir tane link list sınıfına, constructorında verdiğim zaman bana bu objenin içerisinde bulanan elemanlardan oluşan bir tane link list objesi veriyor.
+
+749
+02:12:57,231 --> 02:13:03,231
+Bu objeyi de linked list objesini de şuradaki local variable ile takip ediyorum.
+
+750
+02:13:04,032 --> 02:13:18,532
+Şimdi bu benim elimdeki bu data structure'ın yani list linked list data structure'ın üzerinde ben bir takım işlemler yapmak istiyorum.
+
+751
+02:13:18,712 --> 02:13:21,332
+Bunun için de collection sınıfını kullanıyorum.
+
+752
+02:13:21,648 --> 02:13:44,188
+Collection sınıfı aynı şekilde Array sınıfı gibi içerisinde statik metotların olduğu bir sınıf arkadaşlar. Bunlardan bir tanesi de Sort. Sort'un yaptığı işlem içerisine Link List gibi bir data structure'ı aldığı zaman bu data structure'ın içerisindeki elemanları
+
+753
+02:13:44,659 --> 02:14:01,819
+sort ediyor. Neye göre sort ediyor? Eğer bu string ise lexical graphical order'a göre sort ediyor. Eğer bunun içerisinde integer varsa integer değerlerine göre sort ediyor. Double varsa double değerlerine göre sort ediyor.
+
+754
+02:14:01,819 --> 02:14:12,599
+Demek ki collection sınıfının bana sağlamış olduğu metotlar var. Array sınıfının bana sağlamış olduğu metotlar var. Bu iki sınıfın da
+
+755
+02:14:12,659 --> 02:14:15,039
+metotlarını öğreneceksiniz.
+
+756
+02:14:15,679 --> 02:14:17,819
+Tekrar edelim şu ana kadar neleri öğrendiniz?
+
+757
+02:14:18,399 --> 02:14:25,340
+Link List Data Structure'ını öğrendiniz ve ArrayList'i öğrendiniz bir de Collections sınıfını öğrendiniz.
+
+758
+02:14:26,619 --> 02:14:32,659
+Bundan sonra artık Link List'ten sonra bir sonraki ders biz neden konuşuyor olacağız?
+
+759
+02:14:32,819 --> 02:14:34,300
+ArrayList'den konuşuyor olacağız.
+
+760
+02:14:34,300 --> 02:14:38,760
+Şimdi tekrardan son olarak bir slide'lara döneceğim.
+
+761
+02:14:59,731 --> 02:15:18,852
+Array sınıfını konuştuk, collection sınıfını konuştuk. Arrays'in sağlamış olduğu static metotlar var. Collections'ın sağlamış olduğu static metotlar var. Bu Array sınıfı içerisinde objeler içeren Array'ler üzerinde işlemler yapıyor.
+
+762
+02:15:27,731 --> 02:15:32,712
+Data structure snuffer üzerinde bu metodları çalıştırabiliyor.
+
+763
+02:15:34,972 --> 02:15:37,472
+Link listi öğrendik.
+
+764
+02:15:39,092 --> 02:15:45,592
+Data structure inheritance tree'yi konuşmuş olduk.
+
+765
+02:15:46,068 --> 02:15:59,407
+Bundan sonra artık ArrayListler var. ArrayListleri bir sonraki derste ben başlayıp devam edeceğim. ArrayList'te LinkList'in Array şekilde implement edilmiş olan Data Structure arkadaşlar.
+
+766
+02:16:00,228 --> 02:16:14,068
+LinkList bir liste şeklinde Data Structure implement ederken ArrayList'te geri planda LinkList'i implement ediyor ama sağlamış olduğu metotlar tamamıyla bir link.
+
+767
+02:16:14,068 --> 02:16:28,507
+listi Array şeklinde kullanmak üzerine tasarlanmış bir data structure sınıfı. Bunun da detaylarını gelecek hafta konuşuyor olacağız. Benim anlatacaklarım bugün bu kadar. Sorunuz var mı arkadaşlar?
+
+768
+02:16:33,459 --> 02:16:42,819
+Sanırım yok. Sorusu olamazsa e-mailine de bana ulaşabilir. Sınavlarınızı henüz okumadım. Haftaya kadar okuyor olacağım.
+
+769
+02:16:43,519 --> 02:16:44,459
+Hocam sesim geliyor mu?
+
+770
+02:16:44,459 --> 02:16:44,679
+Evet.
+
+771
+02:16:46,819 --> 02:16:50,459
+Ben şey merak ettim. Bu linklerizlerde sıralama...
+
+772
+02:16:51,079 --> 02:16:57,619
+Şu an duymamıştım. Evet. [öğrenci] söyleyebilirsin.
+
+773
+02:16:59,540 --> 02:17:04,640
+Hocam, arkadaşlar da soruyordu. Onlar daha önce sorabilir. Ben yazmak için söyledim sadece.
+
+774
+02:17:04,860 --> 02:17:07,220
+Tamam, tamam. Ben sesinizi duymamışım arkadaşlar. Buyurun.
+
+775
+02:17:08,240 --> 02:17:15,420
+Hocam, ben şey merak ettim. Bu link listede sıralama algoritmaları daha hızlı dediniz ya. Onun sebebi ne? Tam olarak.
+
+776
+02:17:17,012 --> 02:17:38,772
+Linkless sıralama algoritmalarında mesela QXSort'u düşünelim. Ondan sonra ne yapıyoruz? Sürekli olarak o data structure içerisindeki sayıların değerlerinin yerlerini eleştiriyoruz.
+
+777
+02:17:40,020 --> 02:17:58,819
+Yani sürekli olarak bir kopyalama ve yer değiştirme işlemi var. Bunu yaparken ben sadece referansları değiştirerek gerçekleştirirsem bu benim için daha hızlı gerçekleşen bir şey.
+
+778
+02:17:59,507 --> 02:18:19,367
+Yani ne yapıyorum? İçerisindeki objelerin referanslarını update ediyorum. Ama bunun dışında kullandığım data structure'lar benim daha fazla computation cost sağlamama yer oluşturuyor.
+
+779
+02:18:19,367 --> 02:18:27,507
+Yani mesela Array'lerde takip etmem gereken değer sayısı ve update etmem gereken değer sayısı.
+
+780
+02:18:27,507 --> 02:18:30,827
+Link listelere göre daha fazla.
+
+781
+02:18:32,587 --> 02:18:38,527
+Teşekkür ederim hocam. Bir tane daha soru sormak istiyorum. Bu geçen haftayla alakalı, yani geçen dersle alakalı.
+
+782
+02:18:40,128 --> 02:18:46,507
+Abstract class'larda hocam şey demiştiniz, interface yerine abstract class'ı tercih etmek için...
+
+783
+02:18:46,959 --> 02:18:52,319
+Hani gövdeli metot kullanıyorsak abstract tercih edin demiştiniz.
+
+784
+02:18:53,840 --> 02:19:00,000
+Dersinde şöyle bir şey gördük. Default metot varmış interfeyslerde de gövdeli olarak kullanmak için.
+
+785
+02:19:00,279 --> 02:19:04,479
+Hani bu durumda abstractın bize bir avantajı kalıyor mu interfeysa karşı?
+
+786
+02:19:05,659 --> 02:19:12,479
+Interfeysi yani by convention olarak hani interfeysi tercih etmemizin sebebi interfeys...
+
+787
+02:19:13,007 --> 02:19:18,567
+Yetenekleri gruplandırmak için kullandığımız bir yapı arkadaşlar.
+
+788
+02:19:18,567 --> 02:19:27,567
+Yani abstract sınıfı kullandığımız zaman biz yeteneklerin bazılarını genelleştiriyoruz.
+
+789
+02:19:28,387 --> 02:19:33,468
+Bazılarını ise aşağıdaki sınıflara diyoruz ki siz bunları kullanmak zorundasınız.
+
+790
+02:19:33,920 --> 02:19:40,520
+Ama interfeisi kullanma şeyimiz yetenekleri gruplandırmak.
+
+791
+02:19:41,099 --> 02:19:51,719
+Zaman içerisinde Java ve diğer programlama dilleri bu interfeise daha değişik yeteneklerde katmış olabilir.
+
+792
+02:19:51,880 --> 02:19:57,279
+Ama interfeisi kullanma yaklaşımımız her zaman yetenekleri gruplandırmak.
+
+793
+02:19:57,279 --> 02:20:00,000
+Şey değil, metotların bir kısmı...
+
+794
+02:20:00,000 --> 02:20:13,180
+Ben bir üst sınıfta implement edeyim, böylelikle alttaki sınıflarda daha az tekrar olmuş olsun olayını sağlamak istiyorsak, o zaman abstract sınıf kullanımına gidiyoruz.
+
+795
+02:20:14,860 --> 02:20:16,059
+Tamam hocam, teşekkür ederim.
+
+796
+02:20:16,579 --> 02:20:23,000
+By convention, mutlaka eğer yetenekleri gruplandırmak ihtiyacım varsa...
+
+797
+02:20:23,167 --> 02:20:31,227
+Metotların bazılarını ben bir üst sınıfta implement edeyim ihtiyacım yoksa interface'i tercih ediyorum.
+
+798
+02:20:32,527 --> 02:20:34,387
+Evet, başka sorusu olan var mı arkadaşlar?
+
+799
+02:20:35,067 --> 02:20:43,608
+Hocam, benim sorumda hashtag fonksiyonunu kullandığımızda geri tarafı da görüyoruz.
+
+800
+02:20:43,608 --> 02:20:46,507
+Yani çift yönlü link liste mi oluyor bizim link liste tanımımız?
+
+801
+02:20:47,108 --> 02:20:47,527
+Java'da.
+
+802
+02:20:47,987 --> 02:20:50,547
+Double Link liste sordun değil mi?
+
+803
+02:20:50,727 --> 02:20:52,067
+Evet.
+
+804
+02:20:52,268 --> 02:20:57,931
+Şimdi, evet, çift yönlü liste, yani şuradaki grafikte...
+
+805
+02:20:57,971 --> 02:21:15,271
+Her bir list nodun içerisinde, list nod şeyini gösterdim ya kodda, list nodun içerisinde bir data member field vardı. Bir de bir sonrakine referans veren list nod objesi vardı değil mi? Global member field'lerde.
+
+806
+02:21:15,271 --> 02:21:25,851
+Şimdi bunun yanı sıra şeyde iki tane global member field var. Bir tanesi bir sonrakine bir tanesi bir öncekine şey yapıyor.
+
+807
+02:21:25,971 --> 02:21:53,811
+gösteriyor. Yani her bir list nodun içerisinde iki tane referans objesi var. Bunun avantajı şu oluyor. Şimdi diyelim ki siz herhangi bir nodu sileceksiniz. Yani single link list üzerinde gidiyorsunuz. Bunun üzerinde işte bir nodu sildiniz. Sildiğiniz zaman
+
+808
+02:21:53,971 --> 02:22:21,971
+Bu nodun bir öncesindeki nodun alıp onun değerini şeye atamanız lazım. Sildiğiniz noddan sonraki list noda atamanız gerekiyor. Bunu yapabilmek için bir önceki list nodu da takip etmeniz gerekecek. Yani şuradan başladınız, şuradan şundan şuna gittiniz. Bunu şimdi sileceksiniz. Bunu silmek için bir önceki
+
+809
+02:22:21,971 --> 02:22:49,811
+bir nodu gösteren referansa da ihtiyacınız var. Mesela bunu tutmak için, takip etmek için remove metodu içerisinde ayrı bir değişken kullanıyorsunuz. Ama burada ben double link liste geriye de dönüp istediğim anda bir önceki noda ulaşıp ondan sonra onun bir sonraki nodu ifade eden, point eden şeyini update edebilirim.
+
+810
+02:22:49,971 --> 02:23:08,811
+Bunun dışında double link list ile beraber gelen diğer avantajlar var. Yani hem geriye dönük hem de ileriye dönük traverse edebilirim link listi. Ama benim için ne yapmış oluyor? Sadece additional bir tane memoride yer tutmama sebep oluyor.
+
+811
+02:23:09,471 --> 02:23:16,131
+Yani ben şeyi sordum aslında, Java Util link list yani o sistemi kullanıyor değil mi? İki tarafı tutan. Tek taraflı değil de böyle.
+
+812
+02:23:16,691 --> 02:23:20,072
+Java'nın kullanmış olduğu link list mi?
+
+813
+02:23:20,572 --> 02:23:20,851
+Evet.
+
+814
+02:23:21,851 --> 02:23:32,391
+Link list, bir bakalım, ArrayList single link listi kullanıyor ama link list double link listi kullanıyor olması lazım.
+
+815
+02:23:32,391 --> 02:23:32,591
+Evet.
+
+816
+02:23:33,531 --> 02:23:38,811
+HespireVC kullandınız ya hocam, o yüzden sordum. Direkt double link listi ayırmıyoruz yani oluştururken.
+
+817
+02:23:38,831 --> 02:23:39,351
+Yok hocam.
+
+818
+02:23:39,831 --> 02:23:40,072
+Tamam.
+
+819
+02:23:42,851 --> 02:23:43,491
+Hocam.
+
+820
+02:23:43,924 --> 02:23:44,664
+Evet abi.
+
+821
+02:23:45,844 --> 02:23:49,864
+Şey, biz while'ın içinde has next kullanmıştık ya hocam.
+
+822
+02:23:50,283 --> 02:23:51,744
+Tamam, şimdi oraya geliyorum.
+
+823
+02:23:52,384 --> 02:23:59,364
+Bu has next bir sonraki eleman var mı yok mu diye mi kontrol ediyor yoksa bir sonraki elemana mı geçiyor?
+
+824
+02:24:00,924 --> 02:24:07,144
+Öncelikle has next şöyle şuradan koda gidelim, kodda konuşalım.
+
+825
+02:24:30,739 --> 02:24:33,619
+Evet. Şunu diyorsun değil mi?
+
+826
+02:24:35,200 --> 02:24:36,000
+Evet hocam, evet.
+
+827
+02:24:36,000 --> 02:24:55,500
+Şimdi burada ben öncelikle iterator objemi aldım. Bu listin üzerinde iterate edeceğim objemi aldım. Şimdi bu iterator objem aynı first node gibi, last node gibi list notları point eden bir obje.
+
+828
+02:24:56,628 --> 02:25:19,608
+Şimdi bu obje şu anda first node'u point ediyor. First node'u point ederken burada has next dediğim zaman bu point etmiş olduğu, o anda point etmiş olduğu arkadaş var mı yok mu onun bu değerini döndürüyor.
+
+829
+02:25:20,407 --> 02:25:22,168
+Boolean değerini döndürüyor.
+
+830
+02:25:22,932 --> 02:25:47,292
+Bu Boolean değerini döndürdüğü zaman eğer bana true döndürüyorsa buradaki next metodunu çağırdığım zaman hala yani point etmiş olduğu arkadaş kendisinin bir öncekindeki arkadaş olduğu için bunun değerini alıyor ve bir sonraki şeye point etmeye başlıyor.
+
+831
+02:25:47,292 --> 02:25:50,932
+Yani değerini alıyor ondan sonra bir sonraki liste.
+
+832
+02:25:50,932 --> 02:25:56,992
+base node'a point edecek şekilde iterator objesini update ediyor.
+
+833
+02:25:57,472 --> 02:26:03,952
+Buraya geldiğim zaman artık bu iterator objesi first node'u değil, second node'u point ediyor.
+
+834
+02:26:04,391 --> 02:26:09,692
+Second node'da bu sefer has next'i var mı? Yani önünde bir tane node var mı yok mu? Ona bakıyoruz.
+
+835
+02:26:10,252 --> 02:26:14,512
+Eğer zaten yoksa bu durumda while döngüsünden çıkıyoruz.
+
+836
+02:26:16,275 --> 02:26:17,575
+Bu sorunun yanıtı oldu mu?
+
+837
+02:26:18,015 --> 02:26:19,335
+Evet hocam, teşekkür ederim.
+
+838
+02:26:21,695 --> 02:26:23,955
+Evet, başka sorusu olan var mı arkadaşlar?
+
+839
+02:26:28,020 --> 02:26:28,420
+Tamam.
+
+840
+02:26:28,852 --> 02:26:48,852
+Arkadaşlar, biliyorsunuz bu kodlar dersin sayfasında var. Bunları indirip bir Eclipse projesine çevirin diye konuşmuştuk. Bunlar özellikle link listin kullanımı. Ben hem size link listin implementasyonunu anlatmış oldum, geri plandaki implementasyonunu hem de link listin kullanımını anlatmış oldum.
+
+841
+02:26:56,852 --> 02:27:24,852
+derslerde hem link listin hem ArrayList'in örneklerine bakıyor olacağız. Bu örnekler daha çok size bir problem vereceğiz. Bunu bir data structure kullanaraktan bu örneği gerçekleyin şeklinde olacak. Bunu gerçeklerken işin içerisinde add metotları olacak, remove metotları olacak. O yüzden bu link listin bu metotlarını biliyor olmanız gerekiyor ki bu size verilmiş olan problemdeki data.
+
+842
+02:27:24,852 --> 02:27:49,932
+Data Structure'ı rahat bir şekilde kullanın. O yüzden benim tavsiyem bu kodlar üzerinde özellikle link listin kullanımını, özellikle Arrays sınıfını, bir de Collections sınıfını kullanaraktan bir link list üzerinde bir takım statik metotları çalıştırmayı öğrenmenizi tavsiye ediyorum.
+
+843
+02:27:52,852 --> 02:27:58,032
+listesi üzerinde iterate edebilmeyi öğrenmenizi tavsiye ediyorum arkadaşlar.
+
+844
+02:28:00,072 --> 02:28:05,172
+Bugünlük anlatacaklarım bu kadar. Derse katılımınız için teşekkür ediyorum. Haftaya görüşmek üzere.
+
+845
+02:28:10,195 --> 02:28:11,435
+Sağ olun hocam. İyi günler.
+
+846
+02:28:11,876 --> 02:28:12,376
+İyi günler.

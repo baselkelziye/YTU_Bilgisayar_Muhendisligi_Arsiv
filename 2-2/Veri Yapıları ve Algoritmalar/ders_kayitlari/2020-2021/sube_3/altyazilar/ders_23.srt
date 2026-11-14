@@ -1,0 +1,575 @@
+1
+00:04:55,956 --> 00:05:14,836
+Evet arkadaşlar, hepiniz hoş geldiniz. Bugün lap saatinde Betül hocamız sizlere 3. ödevinizle ilgili bilgiler verecek ve çözümle ilgili nasıl bir çözüm oluşturulması gerektiğine dair yöntemleri gösterecek.
+
+2
+00:05:15,776 --> 00:05:17,496
+Saat 12.10 geçe başlayacağız.
+
+3
+00:05:19,124 --> 00:05:43,824
+Diğer grupların da bu gruba dahil olmasını bekliyoruz. Orada da hocalarımız duyurularını yapıyorlar. Hatta yeni katılan arkadaşlarımız da var aramıza. Onlara da hoş geldin izliyorum. Sizin için güzel bir saat olmasını diliyorum. Yaklaşık 12'ye 10 gece Betül Hoca sizlere. Hoş geldin Betül.
+
+4
+00:05:43,824 --> 00:05:44,384
+Merhaba.
+
+5
+00:05:45,620 --> 00:05:51,360
+Sizlere konuyla ilgili detaylı bir sunum yapacak sorularınızı yöneltebilirsiniz.
+
+6
+00:05:52,259 --> 00:05:57,620
+Onun dışında şu anda bir soru sormak isteyen varsa ben onu da alabilirim.
+
+7
+00:06:02,324 --> 00:06:06,024
+Muhtemelen yaklaşık en fazla bir saat sürecektir.
+
+8
+00:06:07,663 --> 00:06:12,604
+Onun dışında kalan sürenizi dönem ödevinizi yapmak için kullanabilirsiniz.
+
+9
+00:06:13,144 --> 00:06:14,364
+Dönem ödevinizi gördünüz.
+
+10
+00:06:15,144 --> 00:06:19,463
+Aslında çok zor olmayan, oldukça kolay bir proje.
+
+11
+00:06:20,144 --> 00:06:21,704
+Keyifli de bir proje olduğunu düşünüyorum.
+
+12
+00:06:22,624 --> 00:06:23,324
+Sorularınız olursa...
+
+13
+00:06:23,951 --> 00:06:29,951
+mail yoluyla bizzle iletebilirsiniz ya da önümüzdeki hafta pazartesi günü derste de sorabilirsiniz.
+
+14
+00:06:31,211 --> 00:06:36,992
+Bu hafta sonunu iyi kullanırsanız muhtemelen bu hafta sonu %80-90'ını bitirmiş olursunuz diye tahmin ediyorum.
+
+15
+00:06:37,451 --> 00:06:39,611
+En azından finallerin haftasında da pek bir şey kalmaz.
+
+16
+00:06:41,372 --> 00:06:43,971
+Hepinize güzel, sağlıklı bir hafta diliyorum.
+
+17
+00:06:46,031 --> 00:06:47,391
+Tekrar kolay gelsin arkadaşlar.
+
+18
+00:06:47,492 --> 00:06:48,471
+Teşekkür ederiz hocam.
+
+19
+00:06:49,908 --> 00:06:58,968
+Betül sana da kolay gelsin. Seninle şimdi host yapıyorum. Biz bölüm toplantısı olduğu için bölüm toplantısına geçeceğiz arkadaşlar. Görüşmek üzere.
+
+20
+00:07:13,716 --> 00:07:24,615
+Arkadaşlar, biraz daha bekleyelim. Bayağı az katılım var şimdilik. 10 geçe falan başlarız. Tamam.
+
+21
+00:16:51,187 --> 00:16:57,788
+5 dakika daha bekleyin dedim ama çok daha fazla bir katılım olmadı. Başlayalım madem biz.
+
+22
+00:17:35,443 --> 00:17:55,443
+Şimdi üçüncü ödevinizde hepiniz uğraştınız az çok. Yapabilenler oldu, yapamayanlar oldu. Ben yine de bir tekrar edeceğim ödev neyle ilgiliydi. Şimdi iki tane bize graf veriliyordu. Ondan sonra bu grafın nodlarında
+
+23
+00:17:57,428 --> 00:18:07,668
+bir string var. Bu string de bir arama şeyini ifade ediyor. Ondan sonra bu stringin
+
+24
+00:18:08,723 --> 00:18:13,163
+Bağlı olduğu diğer nodlarda ilgili aramaları ifade ediyor.
+
+25
+00:18:14,163 --> 00:18:17,583
+Bu grafın undirected olduğuna dikkat çekiyorum.
+
+26
+00:18:17,864 --> 00:18:25,183
+Yani sadece Türkiye tarihi, Türkiye coğrafyası değil, aynı zamanda Türkiye coğrafyası da Türkiye tarihine bağlı olacak.
+
+27
+00:18:25,864 --> 00:18:29,203
+Ondan sonra bu şekilde iki grafımız vardı. Bunları birleştireceğiz.
+
+28
+00:18:29,803 --> 00:18:31,943
+Zaten ödevin ana şeyi buydu.
+
+29
+00:18:32,596 --> 00:18:51,655
+Nasıl birleştireceğiz? Burada ortak olan, daha doğrusu stringi ortak olan, misal, Türkiye coğrafyası gibi ve Türkiye nüfusu gibi, bunları ortak olan nodlardan birleştireceğiz. İki grafı şu şekilde.
+
+30
+00:18:53,256 --> 00:18:56,875
+Türkiye coğrafyası hem buna hem de buna bağlı olduğu için.
+
+31
+00:18:57,268 --> 00:19:15,668
+İki grafı bu şekilde birleştirip bir graf elde edeceğiz. Bizim amacımız ne? Aynı Google arama motoru gibi bir tane arama yaptığımız zaman en altta bir tane benzer aramalar diye bir şey çıkıyor. Bu da benzer aramaları bize gösterecek.
+
+32
+00:19:18,579 --> 00:19:37,579
+Aslında ödevinizin bir tane de ayrıntısı var. Ben burada üç ya da daha fazla node eklemedim bir tanesine. O yüzden burada gerek olmadı ama üçten fazla eğer ilgili arama, benzer arama varsa bunların…
+
+33
+00:19:40,531 --> 00:19:56,771
+En yüksek arama, yani şunu arayan en çok bunu aradıysa bu daha öncelikli gösterilecek. Yani en fazla arana gösterilmesi gerekiyor.
+
+34
+00:19:57,891 --> 00:20:05,531
+Şimdi ben burada grafın yapısını anlattığım zaman birazcık daha nodların neler içerdiğini biraz daha...
+
+35
+00:20:06,228 --> 00:20:08,928
+Daha iyi anlayabileceğinizi düşünüyorum.
+
+36
+00:20:09,988 --> 00:20:13,468
+Şimdi ilk önce grafımız nodlardan oluştuğu için önce noda bakalım.
+
+37
+00:20:13,648 --> 00:20:17,548
+Nodun içinde bir tane search value diye bir şey var. Bu bir string.
+
+38
+00:20:18,259 --> 00:20:38,259
+Ondan sonra bir tane search count var. Yani kaç kere arandığını, eğer bir ödevinizin bir parçası olarak bir de search var. Eğer search yaparsanız bir node üzerinde o node'un search count'unu arttırmanız gerekiyor. Ve bu bir linkli liste olduğu için bir sonraki node'un da adresi...
+
+39
+00:20:39,955 --> 00:21:02,015
+Bunun içinde yer alması gerekiyor. Şimdi grafımız nelerden oluşuyor? Kaç tane node var bunun içinde? Number of vertex dediğimiz. Bir de her bir node'un bağlı olduğu node'ları içeren bir linkli listemiz var. Bir listemiz var. Nodlar listesi.
+
+40
+00:21:10,259 --> 00:21:27,380
+graf oluşturmak için şimdi ilk önce ben şuradan şeye bakayım bu şekilli olanı bir anlatayım size şimdi graf oluşturmak için ilk önce bir tane mod oluşturuyorsunuz ondan sonra bu modun şu
+
+41
+00:21:34,355 --> 00:21:54,775
+Şu nodun listesi var ya, bu listeyi ilk önce boş. Ondan sonra bir başka nod getirip bu listedeki daha önce grafa konmuş olan noda bağlamak istediğiniz zaman her iki nodu da birbirinin listesine yazmanız gerekiyor.
+
+42
+00:21:55,731 --> 00:22:02,731
+Bunu nasıl yapacaksınız? Şu şekilde mesela. Ben burada kola yer vermedim. Sudoku üzerinden gideceğiz.
+
+43
+00:22:02,731 --> 00:22:17,731
+Şimdi mesela graf eğer zaten hiç yoksa yani bir graf yaratmamız gerekecek. Bu grafın yaratılmış olduğunu varsayarak şu aşağıdaki şeyi yapalım.
+
+44
+00:22:17,731 --> 00:22:21,644
+Şimdi bir tane new node oluşturduk. Valu su valuymuş.
+
+45
+00:22:21,652 --> 00:22:30,652
+Ondan sonra bu new node için bir tane liste.
+
+46
+00:22:31,220 --> 00:22:56,539
+allocate ediyoruz. Şuradaki gibi. Bir liste allocate ediyoruz. Ondan sonra bağlamak istediğimiz nodu bağımsız, yani hepsinin en az bir tanesi bağlı olduğunu düşünün grafta. Ondan sonra bağlı olması için bir tane related nodumuz var. Yani bu iki, bu new nodla bu related nod birbirine bağlı olmasını istiyoruz.
+
+47
+00:22:57,107 --> 00:23:02,607
+Ondan sonra value'larına bakarak yani burada string oluyor.
+
+48
+00:23:02,607 --> 00:23:08,607
+Value'larına bakarak eskiden grafın içinde olan related node'u bulduk.
+
+49
+00:23:08,607 --> 00:23:13,307
+Ondan sonra related node'un listesine new node'u ekliyoruz.
+
+50
+00:23:13,307 --> 00:23:19,107
+New node'un listesine de related node'u ekliyoruz ve count'u bir arttırıyoruz.
+
+51
+00:23:25,203 --> 00:23:34,364
+şey neydi adı number of vertex. Tamam. Count'u bir arttırıyoruz. Number of vertex'i bir arttırıyoruz.
+
+52
+00:23:34,364 --> 00:23:39,723
+desek daha mantıklı olacakmış. Tamam.
+
+53
+00:23:40,243 --> 00:24:04,143
+Ondan sonra burada da aynı şekilde, yani burada anlattığım şekilde bir tane nodu buraya eklediğim zaman bunun listesine bunu, bunun listesine bunu yazıyorum. Aynı şekilde devam ediyorum. Ondan sonra bir not daha ekledim diyelim. Bunu da A'ya bağlamak istedim. Bu sefer A'nın listesinde hem B hem C olduğu halde C'nin listesinde de sadece A olacak.
+
+54
+00:24:04,592 --> 00:24:10,592
+Aynı şekilde bu grafı oluşturacağım. Peki bu nasıl görünecek? Şuradan göstereyim size.
+
+55
+00:24:12,592 --> 00:24:22,592
+Bu bağladığımızı düşünün. Ondan sonra bu linkli liste gibi görünecek bunun listesi. Ondan sonra A.
+
+56
+00:24:24,915 --> 00:24:36,875
+Buradaki şimdi nodların her biri bir link listesinin başında ilk nod oluyor ya, ilk başındaki ilk eleman oluyor.
+
+57
+00:24:36,875 --> 00:24:40,935
+Yani peşinden diğer nodları sürüklüyor.
+
+58
+00:24:51,635 --> 00:25:03,315
+Listin 0'ında yer aldığını düşünürsek, ilk önce onu eklediğimi düşünürsek, bu 0'daki link listin head'i A olacak.
+
+59
+00:25:04,315 --> 00:25:13,315
+Ondan sonra sırasıyla hangi şeyleri eklediysem onların bir sonraki nodun adresini gösterecek.
+
+60
+00:25:13,748 --> 00:25:31,327
+Aynı şekilde B'ye de A'yı eklemiştim ya, o da yine o listenin birincisinde yer alan nodun, birincisinde yer alan link listesinin ilk nodunu yani B'yi şey yapıyor, ifade ediyor.
+
+61
+00:25:31,807 --> 00:25:36,307
+Tamam mı? Bu şekilde birbirine bağlamış oluyoruz. Listeyi de bu şekilde şey yapıyoruz.
+
+62
+00:25:36,307 --> 00:25:39,768
+Şimdi ödevimizin soru var mı?
+
+63
+00:25:41,236 --> 00:25:43,236
+Chat'ten sorabilirsiniz ya da
+
+64
+00:25:48,339 --> 00:25:50,139
+El kaldırabilirsiniz.
+
+65
+00:25:50,799 --> 00:25:52,940
+Geleceğim. Şunu nasıl açıyormuşum.
+
+66
+00:25:55,719 --> 00:25:58,159
+Tamam, yok herhalde. Devam ediyorum.
+
+67
+00:25:58,659 --> 00:26:01,519
+Şimdi bizim ödevin en önemli kısmıydı.
+
+68
+00:26:02,059 --> 00:26:07,679
+Bu zaten grafı oluşturmayı sanırım anlattılar size.
+
+69
+00:26:08,199 --> 00:26:10,599
+Ama bu grafları birleştirmemiz gerekiyordu.
+
+70
+00:26:13,428 --> 00:26:17,868
+Şimdi burada ufak bir yanlışım var. Onu düzeltmeyi unutmuşum.
+
+71
+00:26:19,571 --> 00:26:21,251
+Tamam, onu söylerim ben size.
+
+72
+00:26:22,251 --> 00:26:25,811
+Şimdi, grafı birleştirmek için iki tane grafımız var.
+
+73
+00:26:25,971 --> 00:26:29,891
+Bazı, bazı demeyeyim, bayağı arkadaşınız şey yapmış.
+
+74
+00:26:30,612 --> 00:26:31,911
+Yeni bir graf oluşturmuş.
+
+75
+00:26:32,371 --> 00:26:37,692
+Ondan sonra graf 1 ile graf 2'yi kurallarına göre o yeni grafa atmış.
+
+76
+00:26:37,851 --> 00:26:39,172
+Buna gerek var mıydı?
+
+77
+00:26:39,911 --> 00:26:43,152
+Yoktu. Yani bir grafin içinde de toplayabilirdiniz bunu.
+
+78
+00:26:44,071 --> 00:26:44,612
+Şöyle ki.
+
+79
+00:26:46,067 --> 00:26:58,067
+Şimdi bütün vertexleri dolayı, bütün içindeki bütün nodları dolaşacağımızı varsayın. Ondan sonra ve N1 diye graf 1'deki...
+
+80
+00:27:00,596 --> 00:27:25,548
+Birinci noda, bir iyinci noda diyeyim. Graf birdeki iyinci noda N1 dediğimizi. Graf ikidekine de N2 dediğimizi varsayın. Buradaki yanlışım da şu. J'yi şurada sıfırlamam lazım. Yani şu N1'i yaptıktan sonra bu V ile girmeden önce sıfırlamam lazım. Ondan sonra yani şuradaki J...
+
+81
+00:27:25,875 --> 00:27:43,596
+Y0 atma işini şu arada yapacaktık. Sonra diyelim ki N1 ile N2 aynı stringe sahip. Aynı stringe sahip olanları önce bulmaya çalışıyorum. Nasıl bulacağım?
+
+82
+00:27:45,076 --> 00:28:08,956
+Nerede bu? Şimdi mesela bu iki grafımız var diyelim. Ondan sonra i'inci nodu aldım. Ondan sonra buradaki j'inci nodu. Baktım aynı mı değil. Aynı mı değil, aynı mı değil, aynı mı değil. Ondan sonra i'yi bir arttırdım geldim b'ye. Burada b'yi buldum tamam mı? Aynıymış bunlar. Şimdi ne yapacağız?
+
+83
+00:28:11,443 --> 00:28:15,463
+Önce buradan anlatayım. Şey üzerinden biraz daha zor oluyor.
+
+84
+00:28:18,463 --> 00:28:21,043
+Şimdi ne yapacağız? B'yi buldum diyelim.
+
+85
+00:28:21,043 --> 00:28:33,543
+B'nin sahip olduğu listesini ve B'yi, listesini B'nin birinci graftaki B'yi ekleyeceğiz.
+
+86
+00:28:34,344 --> 00:28:34,683
+Tamam mı?
+
+87
+00:28:35,827 --> 00:28:52,907
+Yani B'nin listesinde birinci grafa göre B'nin listesinde kim vardı? A vardı. Artık B'nin listesinde bir de F olacak. F'nin olabilmesi için ilk önce F'yi burada yaratmamız lazım. Nasıl yapıyoruz? Şöyle.
+
+88
+00:28:53,652 --> 00:29:08,112
+Eğer bu ikisi birbirine eşitse, ondan sonra graf 2'nin listesi de nal değilse yani bir şeyler varsa içinde, o elemanı graf 1'de arıyoruz.
+
+89
+00:29:08,592 --> 00:29:20,491
+Eğer o eleman graf 1'de mevcut değilse, mesela burada BC'ye de bağlı olabilirdi, bu durumda ikisini birbirine bağlayacaktık sadece, yeni bir node oluşturmayacaktık.
+
+90
+00:29:21,299 --> 00:29:47,299
+O yüzden eleman orada var mı yok mu ona bakacağız dupliketlerden kaçınmak için. Ondan sonra baktık hem elemanımız graf 1'de yokmuş o zaman yeni bir graf oluşturacağım. Yeni bir graf oluşturmayacağım, yeni bir not oluşturup grafa ekleyeceğim. Bunun value'su ne olacak? Search value olacak.
+
+91
+00:29:48,276 --> 00:30:14,251
+Ondan sonra yani şuradaki F olacak. Ondan sonra F'yi getireceğim search value ile o elemanı. Buradaki şeyde value var, count'umuz var. Bir de related node'umuz var. Kime bağlayacağımız var yani. Ondan sonra graf 1'in count'u.
+
+92
+00:30:14,420 --> 00:30:20,059
+Yani daha doğrusu burada count değil de şey olacak, number of vertex olacak.
+
+93
+00:30:20,480 --> 00:30:25,900
+Graf 1'in number of vertex'ini ve n1'i yani kimi bağlayacaktık?
+
+94
+00:30:26,079 --> 00:30:27,480
+Şimdi elimizde n1 vardı.
+
+95
+00:30:27,640 --> 00:30:34,900
+n1 ile n2'nin burasını takip edebiliyorsunuz değil mi?
+
+96
+00:30:39,827 --> 00:30:50,067
+Yani aynı şey olanın listesinde kim varsa hangi nodu gösteriyorsa onu bağlıyoruz.
+
+97
+00:30:50,067 --> 00:31:01,268
+Tamam mı? Burada dikkatinizi şuraya çekiyorum. Burada number of vertex otomatik olarak 1 artacak.
+
+98
+00:31:03,220 --> 00:31:10,759
+O yüzden grafımız bir tane fazladan noda sahip olacak. Graf büyüdü yani. Tamam.
+
+99
+00:31:12,339 --> 00:31:19,639
+Ondan sonra graf 1 değil bu, graf 2 olacak. Şurayı da yanlış yazmışım.
+
+100
+00:31:19,955 --> 00:31:25,155
+Kusura bakmayın. Graf 2'nin number of vertex'ini de bir azaltacağım.
+
+101
+00:31:25,755 --> 00:31:30,835
+Buradan graf 2'den M2'yi silerek. Tamam mı? Yani şunu yapıyorum.
+
+102
+00:31:31,515 --> 00:31:35,175
+B'yi buradan, burada B'yi buldum. Burada da B'yi buldum ya.
+
+103
+00:31:35,635 --> 00:31:42,495
+B'nin listesini buradaki B'ye ekliyorum. Sonra buradan B'yi siliyorum. Şu. Tamam mı?
+
+104
+00:31:48,276 --> 00:32:00,996
+3-4 tane vardı, 5 tane oldu. Tamam mı? Bu delete'in şeyini yazmadım. Graph'tan eleman çıkartmanın.
+
+105
+00:32:01,587 --> 00:32:22,467
+Ama az çok tahmin edebilirsiniz. Ondan sonra burada işte en sonunda şöyle bir şey olacak ki graf 2'de hiç node kalmayacak. Graf 1'de de bütün node'lar graf 1'e gitmiş olacak. Tamam mı? Şimdi başlayalım. Şuradan birazcık anlattım. Şimdi gelelim.
+
+106
+00:32:29,587 --> 00:32:41,587
+İkinci grafın orijinali. Birinci grafta B'yi buldum. İkinci grafta B'ye bağlı olanları burada B'ye bağladım. Eğer burada zaten o node yoksa...
+
+107
+00:32:43,443 --> 00:33:06,063
+O nodun, o nodu oluşturdum ilk önce. Grafa yeni bir nod ekledim. Ondan sonra number of vertex'i bir arttırdım. Artık burada beş tane var. Bir tanesi de F isimli. Tamam mı? Sonra geldik burada B'yi sildik. Burada artık üç tane var. Burada da beş tane var. Geldim yine, arıyorum.
+
+108
+00:33:06,544 --> 00:33:25,304
+Aynısından arıyorum. Ondan sonra bakıyorum C varmış mesela. Ondan sonra bakıyorum C'ye. O da F'ye bağlıymış. Ama bende artık F zaten bulunduğu için yeni grafımda. Graf 1'i ona göre update etmiştim. Ondan sonra gittim onu oraya.
+
+109
+00:33:26,291 --> 00:33:46,031
+Bağladım sadece. Bunun listesine, C'nin listesine bir de F yazdım. F'de şurada F'yi de yazmıştım. Hatırlıyorsanız. Artık o da benim nodlarımdan bir tanesi, vertexlerimden bir tanesi. Oraya bir de C'yi ekledim. Ondan sonra aynı şekilde devam ediyorum. F'yi buluyorum.
+
+110
+00:33:46,675 --> 00:34:03,195
+Zaten vardı diyorum. Ondan sonra F kime bağlıymış burada? K'ya bağlıymış. Benim graf birimde K var mı? Hayır yok. O zaman yeni bir tane node ekle. Ondan sonra bunun ismine K de. Ondan sonra da F ile bağla.
+
+111
+00:34:12,947 --> 00:34:21,947
+Ondan sonra F'nin de listesine, K'nın listesine F'yi yazdım, F'nin listesine K yazdım. Bu şekilde grafı oluşturmuş oldum.
+
+112
+00:34:23,547 --> 00:34:36,148
+Tamam mı? En son K'ya baktım. Ondan sonra K'yı buldum burada. Buldum. Burada da buldum. Ondan sonra bakın şurada da bir tane while'da şey vardı.
+
+113
+00:34:38,099 --> 00:34:44,099
+listesi null değilseydi ama bunun listesi null o zaman bir şey yapmıyor.
+
+114
+00:34:50,739 --> 00:34:53,639
+Tamam mı? Soru var mı?
+
+115
+00:34:55,519 --> 00:34:58,819
+Ooo, arkadaşları kaybediyoruz. 35 kişi kalmış.
+
+116
+00:35:03,315 --> 00:35:05,076
+Tamam, şimdi search yapmak.
+
+117
+00:35:06,455 --> 00:35:08,435
+Şimdi graflarımızı birleştirdik diyelim.
+
+118
+00:35:08,435 --> 00:35:10,655
+Artık elimize sadece bir tane graf var.
+
+119
+00:35:11,635 --> 00:35:14,555
+Bunu graf 1'de birleştirmiştik.
+
+120
+00:35:15,135 --> 00:35:19,935
+Ondan sonra graf içinde stringi arayacağım.
+
+121
+00:35:20,675 --> 00:35:21,375
+Nasıl arayacağım?
+
+122
+00:35:22,576 --> 00:35:28,435
+Yine aynı şekilde bütün vertexleri dolaşacak şekilde grafın...
+
+123
+00:35:29,588 --> 00:35:52,368
+node'una n demişim. Ondan sonra n'nin search valuesu benim stringimle aynı mı değil mi ona bakıyorum. Aynıysa ne yapacağım? Burada iki seçeneğim var. Eğer n listesinde üçten fazla eleman barındırıyorsa listesini bir sort etmem gerekecek.
+
+124
+00:35:52,916 --> 00:36:14,216
+Tamam mı? Ama eğer listede 3'ten fazla eleman yoksa sort etmeye gerek yok. Ondan sonra eğer listede 3'ten fazla eleman varsa sort ediyorum. Ondan sonra da ilk 3'ünü, ilk 3 elemanını print ediyorum.
+
+125
+00:36:15,411 --> 00:36:31,411
+Sort ettikten sonra. Diyelim ki 3'ten fazla eleman yok, aynı bizim grafta olduğu gibi. O zaman ne yapıyorum? Direkt print ediyorum. Ondan sonra buradaki önemli olan şey n'yi aramıştım.
+
+126
+00:36:31,411 --> 00:36:38,315
+n'nin stringini aramıştım. O zaman n'nin search count'unu bir arttırmam gerekiyor.
+
+127
+00:36:38,452 --> 00:36:51,112
+ney'nin search count'unu bir arttıracağım. Aynı zamanda da işte main'e ya da nereden çağırdıysanız bu fonksiyonu oraya bir font dönmeniz gerekecek.
+
+128
+00:36:52,412 --> 00:37:05,012
+Eğer bu if'in içine hiç giremediyse demek ki öyle bir node yok. Öyle bir string hiç yok bizim arama şeyimizde. O zaman böyle bir şey bulunamadı.
+
+129
+00:37:06,164 --> 00:37:15,164
+Nasıl bir bilgi dönmek isterseniz kullanıcıya dönebilirsiniz.
+
+130
+00:37:15,164 --> 00:37:22,164
+Şimdi ödev bu kadardı, bu şekildeydi. Sorunuzun olmaması değişik yani.
+
+131
+00:37:22,164 --> 00:37:26,164
+Herhalde hayatınızdan çıkardınız diye düşünüyorum.
+
+132
+00:37:26,164 --> 00:37:29,164
+Yaptıktan sonra bu şeyi...
+
+133
+00:37:31,891 --> 00:37:37,211
+Tamam, sorunuz varsa alabilirim. Bayağı erken bitirmiş olduk.
+
+134
+00:37:39,192 --> 00:37:40,531
+Teşekkür ederiz hocam.
+
+135
+00:37:41,111 --> 00:37:50,152
+Rica ediyorum. Umarım anlamışsınızdır. Birazcık şey oldu, belki karışık olmuştur. Anlamadığınız yer varsa sorabilirsiniz.
+
+136
+00:37:54,356 --> 00:38:06,636
+Ödevin mantığı zor değildi. C'ye implement etmesinde sorunlar yaşanıyordu ama onları da tekrar konu üzerinden geçerek ekranda görmek yerini açıp kendimizi incelememiz gerekiyor sanırım. Teşekkür ederiz.
+
+137
+00:38:06,636 --> 00:38:10,636
+Tabii evet öyle oluyor. Ama şey zaten hani...
+
+138
+00:38:12,179 --> 00:38:32,859
+Örneklere vesaireye de bakarak şey yapabilirdiniz. Zaten önemli olan şu yani bu grafların az çok mantığını hani struct yapısını da bildiğiniz için bunu şey yapabilirdiniz ama şu merge etme kısmında biraz algoritmasını oluşturmak belki şey zorlayabilirdi sizi.
+
+139
+00:38:32,859 --> 00:38:39,579
+Ama orası da çok şey değildi diye düşünüyorum. Yine de fazla yapan olmamış ödevi galiba.
+
+140
+00:38:40,179 --> 00:38:57,939
+Açıkladık şeyi, duyuru egzelinize koyduk şeyleri, sonuçları. Oradan da kontrol edebilirsiniz. Yine bize her zaman yaptığınız gibi YTO üzerinden de dönebilirsiniz.
+
+141
+00:38:59,860 --> 00:39:14,579
+İlgili arkadaşlar itirazlarınıza veya sorularınıza cevap verecek. İlgili arkadaşların içinde ben de varım kendim. Şey yapmış olmayayım. Peki o zaman madem.
+
+142
+00:39:17,360 --> 00:39:19,200
+İyi günler hocam. Tekrar teşekkür ederim.
+
+143
+00:39:19,200 --> 00:39:20,220
+Teşekkürler. Sağ olun.
+
+144
+00:39:21,220 --> 00:39:22,039
+Görüşürüz.

@@ -1,0 +1,1919 @@
+1
+00:00:16,115 --> 00:00:28,916
+Günaydın. Bu hafta biraz bir önceki haftayı tekrar ederek başlayacağım. Geçen haftada derse 9'a çeyrek geçe başlayacağımızı söylemiştim.
+
+2
+00:00:31,055 --> 00:00:42,975
+Bu zamana kadar biraz geçen haftaki slide üzerinden devam edelim. Öncelikle bir programımızı hatırlayalım.
+
+3
+00:01:08,659 --> 00:01:14,640
+İlk hafta giriş ders planı, genel bilgiler ve yazılım mühendisliği tanımından başlamıştık.
+
+4
+00:01:17,640 --> 00:01:20,659
+Buradaki, ilk baştaki...
+
+5
+00:01:22,900 --> 00:01:39,820
+Sorun yoktu fakat daha sonra yazılım mühendisliği adımları ve yazılım geliştirme sürecinin anlatımında biraz kesiklik oldu. O yüzden oradaki konuları hızlıca bir tekrar edeceğiz.
+
+6
+00:01:46,932 --> 00:01:51,392
+Sistem analizinde sadece waterfall modeli görmüştük.
+
+7
+00:01:51,392 --> 00:02:00,552
+Waterfall modelin yanında spiral model, rat model, prototip model gibi model.
+
+8
+00:02:03,152 --> 00:02:13,391
+Önümüzdeki haftada çevik modeller ve bunu destekleyecek diğer konular üzerinde duracağız.
+
+9
+00:02:59,060 --> 00:03:00,620
+Yazılım Mühendisliğinin
+
+10
+00:03:05,171 --> 00:03:09,331
+Bakıyorum kaç kişi var sınıfta? 35 kişisiniz.
+
+11
+00:03:13,268 --> 00:03:17,468
+Geçen haftaki konulardan devam ediyorum.
+
+12
+00:03:19,764 --> 00:03:34,524
+Yazılım mühendisliğini tanımlamıştık. Bu konu üzerinde ayrıntılı olarak durdum. Kaliteli yazılımı en ekonomik olarak hazırlamak üzere mühendislik araçlarını ve yeteneklerini kullanan bilim dalıdır demiştim yazılım mühendisliği için.
+
+13
+00:03:42,580 --> 00:04:09,800
+Yazılım geliştirme süreçlerinden, yazılım kalite ve test bölümü, yazılım proje yönetimi, analiz ve tasarım tekniklerini nesne yönelik modelleme ile de biraz daha ayrıntılı göreceğiz. Zaten bu konuda bir dersiniz de var. Bu ders ise tamamlayıcısı olarak konularda olacak dersimiz içinde.
+
+14
+00:04:15,764 --> 00:04:33,324
+Bu bir boyuttaki donanımda çalışan bilgisayar programı. Ama bu derste sistem analizi dersinden başlayarak yerleştirmeye çalıştığımız yazılım eşittir program değil.
+
+15
+00:04:37,875 --> 00:04:43,775
+Belgeler ve veri tabanıyla ilişkili açıklamalardır.
+
+16
+00:04:44,135 --> 00:04:52,495
+Yazılım türlerine gelecek olursak, sistem yazılımı, mühendislik yazılımı, gömülü yazılım gibi yazılım türleri var.
+
+17
+00:05:05,875 --> 00:05:15,915
+Gömülü embedded yazılımlarla karşılaştınız. Bunların ayrıca tanımı üzerinde tekrar durmayacağım.
+
+18
+00:05:15,915 --> 00:05:25,995
+İşte uygulama yazılımları, kurumsal yazılımlar, bir işletmede gerekli işleri gerçekleştiren yazılımlar.
+
+19
+00:05:26,135 --> 00:05:31,055
+Özellikle kurumsal yazılımlar, şurada da gördüğünüz gibi.
+
+20
+00:05:31,540 --> 00:05:45,379
+Zamanla eski yazılım haline dönüşürler. Burada eski yazılım legacy software kavramı da yine Presma'nın kitabında geçen bir kavram.
+
+21
+00:05:45,379 --> 00:05:54,279
+Tabii ki iş hayatında da kullanılıyor. İş sürecinin önemli bir parçası olan uzun süredir kullanılan.
+
+22
+00:05:54,656 --> 00:06:11,196
+Bazı yazılımlar, burada bazı olumsuzluklar, eksik ve hatalı dokumentasyon olabilir, zamanla kodda düzeltmeler, yapılar yapılar karmaşıklaşmış olabilir, esnek olmayan bir yapısı olabilir.
+
+23
+00:06:12,432 --> 00:06:27,312
+Ve yazılım mühendisliği gelişmelerine paralel olarak gerçekleştirilmemişse buradaki belgeler falan bu konuda problem olabilirler. İş alanındaki yeni gereksinimler nedeniyle.
+
+24
+00:06:27,764 --> 00:06:44,363
+Güncel sistemlere uygunluk kazandırması için bunlar da güncelleme gerekebilir ama bu güncellemeleri de yapmak çok kolay değildir. Çünkü belge azdır bu tür yazılımlarda.
+
+25
+00:06:47,519 --> 00:07:02,639
+Yazılım geliştirmeyi etkileyen eğilimler vardır. Bilgi işlem kaynaklarının yaygınlaşması, haberleşme ağının yaygınlaşması, açık kaynaklı yazılımın olması.
+
+26
+00:07:03,315 --> 00:07:27,336
+Ve mutlaka bir ekip çalışması olması gibi eğilimlerle yeni yaklaşımlar gelmektedir. Ki bu yeni yaklaşımlardan önümüzdeki hafta bahsedeceğimiz ECEAN yöntemlerinde artık zaten kullanılmaya başlandığı da.
+
+27
+00:07:27,827 --> 00:07:42,668
+Bu, neredeyse 20 sene oldu. Çünkü, yani sektörde yaygınlaşması değil de bizim toplantılarda tanımını yaptığımız 20 yıl oldu.
+
+28
+00:07:49,716 --> 00:07:57,176
+hakkındaki yanılgılardan bahsettik yine geçen hafta.
+
+29
+00:08:31,283 --> 00:08:39,443
+Evet, tekrar sesi açtım. Yazılım hakkındaki yanılgılar, müşteri açısından olan yanılgılar.
+
+30
+00:08:39,443 --> 00:08:49,723
+Biz hatırlıyorsanız, geçen sene sistem analizinde bilgi sistemi geliştirirken paydaşlarımız kimlerdir diye.
+
+31
+00:08:50,176 --> 00:09:10,956
+Öncelikle başlamıştık. Burada tabii ki bir müşteri var. Müşteri kime diyorduk? Müşteri yazılımı kullanacak olan firma ya da aynı şirkette çalışıyorsak yazılımı kullanacak olan departman olacaktır.
+
+32
+00:09:12,211 --> 00:09:30,551
+Müşteri kapsamında bir de doğrudan uç kullanıcı ya da kullanıcı kavramı var. Bu da örneğin muhasebe departmanı ise bizim müşterimiz, muhasebe departmanında bizim yazdığımız programı bizzat kullanacak olan çalışanlardır.
+
+33
+00:09:34,196 --> 00:09:57,536
+Bunların tarafından yanlış bilinen ve yanlış yapılan neler yazılımı kötü yönlendirir? Amaçları belirlemem yeter diye düşünebilir. Ben sadece ne istediğimi söylerim. Ayrıntıları sonra kararlaştırırız. Nerede ekleme istesem yapabilirler.
+
+34
+00:10:00,000 --> 00:10:06,460
+Gereksinimler belirsizse, yazılımın hazırlanması sırasında zorluk çıkacaktır.
+
+35
+00:10:06,460 --> 00:10:12,879
+Başka bir düşüncesi de yazılım esnektir. Değişen gereksinimleri kolayca sisteme uyarlayabilirler.
+
+36
+00:10:13,480 --> 00:10:20,579
+Bu da yazılım yaşam döngüsü ilerlediğinde değişen gereksinimleri uyarlamanın bedeli artacaktır.
+
+37
+00:10:20,700 --> 00:10:25,179
+Çünkü yazılım geliştiren kişilerin iş gücü artacaktır.
+
+38
+00:10:27,316 --> 00:10:37,296
+Dolayısıyla bu yanılgılar daha fazla maliyete neden olabilir.
+
+39
+00:10:38,115 --> 00:10:45,636
+Programcı açısından, yani yazılımı hazırlayan kişi, yazılımcı ya da programı yazan kişiler diyebiliriz.
+
+40
+00:10:46,256 --> 00:10:51,796
+Hepsine genel olarak yazılım geliştiriciler dememiz daha doğru.
+
+41
+00:10:53,940 --> 00:11:05,080
+Biz yazılımı tamamlayıp, kodunu yazıp, müşteriye teslim ettiğimizde işimiz biter. Müşteriye ilk teslimattan sonra bir takip süresi vardır.
+
+42
+00:11:05,583 --> 00:11:23,524
+Bu takip süresinde müşterinin yazılıma alıştığı, belgeleri kullanmaya alıştığı, help bölümünü kullanmaya alıştığı, eğitimin iyi sonuç verdiğinin takip edilmesi gerekir. Yoksa başımıza daha fazla problem çıkabilir.
+
+43
+00:11:24,083 --> 00:11:50,223
+Yazılımı tamamlamadan kalitesini ölçemem. Kalite güvence yöntemleri yazılım hayat döngüsünün her aşamasında uygulanır. Yani arada da gözden geçirmeler var. Bunları kalite yönetimi sırasında göreceğiz daha sonraki konularda. Kalite ölçükleri vardır. Ölçme değerlendirme yapabiliriz arada.
+
+44
+00:11:51,475 --> 00:12:18,035
+Bunu daha önce de söyledik. Yazılım eşittir program değil. Tabii ki bunu yazılım geliştiricilerin sürekli tekrar etmesi gerekir. Çünkü belge hazırlamak yazılım hazırlayanların çok hoşuna gitmez. Gereksinim analizi ve gereksinim analiz raporunun hazırlanması özel bir emek isteyecektir.
+
+45
+00:12:18,416 --> 00:12:30,476
+Test çalışmalarının da hangi test verisi kullanıldığını, nasıl gerçekleştirildi, yine bu da belgelenmesi gerekir.
+
+46
+00:12:31,536 --> 00:12:39,736
+Yazılım mühendisliğinin gereklerini uyguladığımızda boşa çaba harcıyoruz. Süremiz artıyor diye şikayet edebilirler.
+
+47
+00:12:39,936 --> 00:12:46,336
+Ki bu şikayetler de çok fazla gelmektedir yazılım geliştiricilerden.
+
+48
+00:12:46,416 --> 00:13:08,636
+Bu çerçevede mutlaka yazılım mühendisliği adımlarını uygulayarak hangi modeli kullanıyorsak seçtiğimiz modele uyarak yazılımı geliştirmemiz gerekir.
+
+49
+00:13:09,971 --> 00:13:25,432
+Üçüncü ayağı da yazılım geliştiren paydaşlar arasında. Yazılımın geliştirdiği kurumun yöneticileri, bu müşteri kurumun yöneticileri de olabilir. Yazılım geliştiren kurumun yöneticileri de olabilir.
+
+50
+00:13:26,432 --> 00:13:35,772
+Yönetim ekibinde, özellikle yazılımın yönetimini sağlayan grupta eğer işler yetişmiyorsa.
+
+51
+00:13:36,255 --> 00:13:47,895
+Ekibe yeni programcılar ekleriz. Bu hayat döngüsü için de sonradan katılacak şeyler daha fazla yavaşlatabilir bile.
+
+52
+00:13:48,532 --> 00:14:15,471
+Yeni elemanların yazılıma kullanılacak tool'lara hakim olması, ekip yapısına hakim olması daha zordur. Bu yüzden işte burada yazılım proje yönetiminin de önemi ortaya çıkıyor. Önceden planlayarak ne kadar elemana, hangi evrede ne kadar elemana ihtiyacımızın olduğu ortaya çıkarılmalıdır.
+
+53
+00:14:16,052 --> 00:14:27,052
+geliştirilmesini üstlendiğim bir yazılım var ama bunu ben alttaki birçok şirkete dağıtarak hızlıca yapabilirim.
+
+54
+00:14:27,052 --> 00:14:41,052
+Tabii ki alt yüklenici kullanılır ama bunun da baştan planlanarak alt yükleniciler arasında kullanılacak kuralları...
+
+55
+00:14:42,964 --> 00:15:06,464
+Yönetmeliği, kuralları kayıt altına almak gerekir. Proje ilerlemesini firmanın kendi içinde denetleyebilmesi gerekir. Dışarıya yaptığı işi de aynı şekilde bu dış paydaşları nasıl denetleyeceğini.
+
+56
+00:15:06,964 --> 00:15:32,444
+Bilmesi gerekir. Açık kaynaklı yazılım üretimi de yine idari olarak seçecek yollardan bir tanesi. Bu da yine çok gelişen bir taraf açık kaynak yazılımı. Burada da kar şeyleri var, kar faktörleri.
+
+57
+00:15:32,864 --> 00:15:36,024
+Zaten artık günümüzde yaygın kullanılıyor.
+
+58
+00:15:37,024 --> 00:15:45,864
+Şimdi bu haftada yazılım geliştirme süreç modellerini göreceğiz.
+
+59
+00:15:47,024 --> 00:15:51,144
+Yazılım geliştirme süreç modellerini görebilmemiz için
+
+60
+00:15:51,572 --> 00:15:57,392
+Yazılım geliştirme sürecinin adımları nelerdir? Bunlara tekrar bakalım.
+
+61
+00:15:57,532 --> 00:16:05,372
+Tekrar diyorum çünkü sistem analizi dersinden gelen bir bu adımlarla tanışıklığımız var.
+
+62
+00:16:05,772 --> 00:16:17,552
+Ama burada biraz daha sistematik olarak ve tüm bilgi sistemini geliştirmek değil, sadece yazılımı geliştirmek çerçevesinde bakıyoruz olaya.
+
+63
+00:16:18,644 --> 00:16:29,524
+Birincisi, burada dikkat ederseniz yazılım proje planlamayı, ön inceleme ve fizibiliteyi almadım.
+
+64
+00:16:39,572 --> 00:16:42,011
+Sorunuz mu var?
+
+65
+00:16:43,211 --> 00:16:44,491
+Pardon, yanlışlıkla oldu.
+
+66
+00:16:45,692 --> 00:16:46,331
+Evet, tamam.
+
+67
+00:16:48,072 --> 00:16:58,072
+Çözümleme, analiz, tasarım, gerçekleme, implementation, sınama, testing, bakım, maintenance.
+
+68
+00:16:58,631 --> 00:17:02,331
+Bu adımlar yazılım geliştirme sürecinin genel adımları.
+
+69
+00:17:05,291 --> 00:17:06,331
+Çözümleme...
+
+70
+00:17:06,644 --> 00:17:11,084
+Nedir? Onunla başlayalım. Bütün bu adımları tanıyalım önce.
+
+71
+00:17:11,844 --> 00:17:16,764
+Hocam pardon, bölüme geçmeden bir şey sorabilir miyim?
+
+72
+00:17:17,824 --> 00:17:18,664
+Evet.
+
+73
+00:17:19,144 --> 00:17:20,744
+[öğrenci] Bey, günaydın.
+
+74
+00:17:21,544 --> 00:17:21,844
+Evet.
+
+75
+00:17:23,064 --> 00:17:30,244
+Bu açık kaynakta para kazanma nasıl oluyor? Tam olarak onu ben en son deminki konuda şey attığınız cümlelerde.
+
+76
+00:17:31,347 --> 00:17:42,627
+Yani açık kaynak bir yazılım yazan firmaya veya gruba danışmanlık soruları sorulabilir. Bunlarla da kazanç olabilir.
+
+77
+00:17:43,007 --> 00:17:51,248
+Yani açık kaynak yazan firma para kazanamıyor yoksa. Sonuçta orada herhangi bir kazanç yok. Tamamıyla açık sonuçta bildiğim kadarıyla.
+
+78
+00:17:51,607 --> 00:17:59,327
+Evet, ama kullanımı sırasında nasıl uygulanacağı konusunda danışmanlık hizmeti verilmesi istenebilir.
+
+79
+00:17:59,347 --> 00:18:07,687
+Ben hiç öyle düşünmemiştim. O zaman şeye dönüyor bu, bir virüs yazıp, antivirüsü bende var demek gibi bir şey bu da.
+
+80
+00:18:08,547 --> 00:18:17,107
+Evet ama günümüzde yaygın olan bir yöntem. Evet şimdi devam ediyoruz. Yazılım süreç.
+
+81
+00:18:17,107 --> 00:18:18,248
+Teşekkür ederim hocam sağol.
+
+82
+00:18:18,708 --> 00:18:19,487
+Teşekkürler.
+
+83
+00:18:21,299 --> 00:18:36,960
+Çözümleme dediğimizde bir şeyi anlayabilmek için parçalara ayırmak. Geçen sene de sistem analizi dersinde analiz aşamasında, çözümleme aşamasında ne sorusuna cevap veriyoruz demiştik.
+
+84
+00:18:36,960 --> 00:18:46,960
+Burada gerçekleşecek sistem nedir? Biz neyin yazılımını hazırlayacağız? Bunu anlamamız gerekiyor.
+
+85
+00:18:47,359 --> 00:19:03,119
+Burada anlayacağımız yazılımda uygulama alanı nedir, kullanıcıların gereksinimleri nelerdir, program parçaları arasındaki ilişkiler neler olmalıdır, sorunu anlamaya çalışıyoruz.
+
+86
+00:19:03,119 --> 00:19:15,359
+Ama sorunu sadece genel olarak anlamak değil, her bir parçasını ayrı ayrı ele alıp burada hangi bilgiler alınıyor, hangi bilgiler kullanılıyor.
+
+87
+00:19:15,359 --> 00:19:24,500
+Bunları değerlendirmek çözümleme sırasında yapılan işler olarak karşımıza çıkıyor.
+
+88
+00:19:26,279 --> 00:19:42,279
+Ne sorusunu anlamadan, problem nedir'i iyice anlamadan bizim yazılımı tasarlamamız da mümkün değil. Gerçeklememiz, yani implementation'ını yapmamız hiç mümkün değil.
+
+89
+00:19:42,900 --> 00:20:02,759
+Burada tabii ki biz bu derste daha sonra bunların üzerinde ayrıntılı olarak duracağız. Şimdi modelleri anlayabilmek için bizim yaptığımız iş adımları, süreçteki iş adımları nelerdir onların üzerinden geçiyoruz.
+
+90
+00:20:07,571 --> 00:20:18,731
+Daha sonra gereksinim analizinden, gereksinim SRS raporundan, Software Requirement Specification'dan bahsedeceğiz.
+
+91
+00:20:22,483 --> 00:20:39,203
+Bilgi toplama, modelleme ve SRS belgesini hazırlama diye daha kısa gördüğümüz analiz sürecini daha fazla aydınlatmış olacağız bu dönemde.
+
+92
+00:20:40,423 --> 00:20:46,183
+Şimdi yazılım geliştirme süreçlerinin genel adımlarında tasarım adımına bakalım.
+
+93
+00:20:46,708 --> 00:21:00,448
+Tasarımda ne yapıyoruz? Bir araştırma ya da geliştirme sürecinin çeşitli dönemlerinde izlenecek yol ve işlemleri tasarlayan bölüm.
+
+94
+00:21:01,208 --> 00:21:11,548
+Şimdi biz gereksinim analizinde veya çözümleme analiz aşamasında sorunu anladık.
+
+95
+00:21:11,988 --> 00:21:33,968
+Bu sorunu kağıt üzerinde ya da prototiple çözüme nasıl ulaştırırız? Yani nasıl bu anladığımız sorunu nasıl çözüme ulaştırırız? Hangi bilgisayar yazılım tekniklerini kullanarak?
+
+96
+00:21:34,319 --> 00:21:46,140
+modelini oluştururuz. Buna karar vermek aşaması, tasarım aşaması. Gerçekleme aşamasında ise
+
+97
+00:21:46,644 --> 00:22:05,844
+Eldeki tasarımı seçtiğimiz programlama dili, veri tabanı ve hem veri yapısını hem işlemleri tasarımdan alıp gerçekleme yapacak süreçtir implementation aşaması.
+
+98
+00:22:12,403 --> 00:22:24,403
+Bu süreçte, tasarım aşamasında yaptıklarımızı geçen hafta sözlü olarak yazılım mühendisliğinin alt bölümlerini söylediğimde
+
+99
+00:22:26,367 --> 00:22:42,248
+Yazılım geliştirme süreci ve bununla ilişkili modeller, yazılımla ilişkili genel bilgiler ve yazılım geliştirme sürecindeki analiz, tasarım, bütün adımların anlaşılması demiştim.
+
+100
+00:22:42,887 --> 00:22:47,347
+Yazılım proje yönetimi, yazılım kalite yönetimi de diğer bölümlerde.
+
+101
+00:22:54,367 --> 00:23:20,427
+Mühendislik yöntemlerini kullanarak anlatan yazılım mimarisi de ayrı bir alt başlık olarak verildiğini görüyoruz. Hatta ayrı dersler de var. Bizde de Göksel Bey yazılım mimarisi dersini seçimlik dersi olarak veriyor.
+
+102
+00:23:21,395 --> 00:23:35,195
+Bu tasarımı nasıl yapmak çok önemli olduğu için sektörde de yazılım mimarları çok önemli çalışma yapan uzmanlardan biri olarak kabul edilir.
+
+103
+00:23:35,195 --> 00:23:41,596
+Evet, şimdi burada... Pardon.
+
+104
+00:23:43,251 --> 00:23:55,451
+Tasarım ve gerçeklemeyi gördük. Gerçekleme konusunda dikkat ettiğiniz gibi çok fazla şey söylemiyorum. Çünkü programlama dilleri derslerinde bunları ayrıntılı olarak görüyorsunuz.
+
+105
+00:23:57,591 --> 00:24:07,912
+Sınama test aşaması. Gerçekledikten sonra acaba biz doğru hazırladık mı?
+
+106
+00:24:08,336 --> 00:24:21,175
+Müşteriden aldığımız bilgileri doğru hayata geçirdik mi? Problemi doğru çözdük yazılımı hazırlarken?
+
+107
+00:24:24,339 --> 00:24:45,231
+Bu test aşaması da yine önemli. Burada tabii ki sonraya kalan hatalar üstel olarak artacaktır. Zamanında çözmemiz gerekir. Benim hep derslerde, sistem analizinde de kullandığım iki tane diagram vardı. Buraya koymadım onları ama…
+
+108
+00:24:45,231 --> 00:25:09,991
+Yazılım geliştirme sürecini x eksenine yerleştirdiğimizde yazılım geliştirme süreci arttıkça hatanın bulunma olasılığı azalır. Yazılım geliştirme süreci arttıkça hatanın düzeltilme maliyeti de artar.
+
+109
+00:25:10,548 --> 00:25:16,768
+Şimdi buradan yola çıkarak hataları zamanında yakalamamız gerekecek.
+
+110
+00:25:18,708 --> 00:25:27,988
+Ortaya çıkacak hataları zamanında yakalamak için sadece en sonunda test yapmak yetmeyecek.
+
+111
+00:25:28,807 --> 00:25:34,827
+Ecel yöntemlerde olduğu gibi testi önceden kararlaştırmak gerekecek.
+
+112
+00:25:35,548 --> 00:25:43,248
+Hatta arada, ecel de değil, bütün yazılım geliştirme süreçlerinde bu vardır.
+
+113
+00:25:43,847 --> 00:25:46,668
+Bir review, gözden geçirme yapmamız gerek.
+
+114
+00:25:46,708 --> 00:26:08,668
+Hataların çoğunun kökenini tasarım aşamasındaki sorunlara dayandırırız. Mümkün olduğunca erken kalite yönetimini daha yazılıma başlarken yapmamız gerekecek.
+
+115
+00:26:12,596 --> 00:26:39,836
+Sınadık, kullanıma verdik. Bakım süreci var bundan sonra. Yani kullanıma başladıktan sonra müşteri grup neden bakım yapmamız gerekir? Tasarım hatası olabilir, kodlama hatası olabilir, gereksinim analizi hatası olabilir.
+
+116
+00:26:40,367 --> 00:27:04,367
+Bu hataları düzeltmek gerekir. Burada tasarım hatası ve gereksinim analizi hataları daha korkutucu. Çünkü yazılım geliştirme evrelerinin en başına dönmemiz gerekecek. Bu yüzden daha maliyetli.
+
+117
+00:27:05,647 --> 00:27:27,847
+olabilir. Sistemin işlevlerini değiştirmek için, yeni fonksiyonlar eklemek için ya da hatalar varsa onları düzeltmek için ya da yazılımı farklı bir ortama taşımak istiyorsak o zaman bakım çalışmalarını gerçekleştiririz.
+
+118
+00:27:30,900 --> 00:27:51,900
+Yani buradan da şunu anlıyorsunuz değil mi? Bir donanım ya da bir makine parçasının bakımıyla yazılımın bakımı arasında fark var. Yazılımın bakımı daha maliyetli. Çünkü belki en baştaki evreye döndürüp yeniden...
+
+119
+00:27:53,556 --> 00:28:00,076
+Hazırlamak gibi bir zorunluluğa götürebilir bizi.
+
+120
+00:28:19,092 --> 00:28:33,612
+Şimdi bir de bu yazılım geliştirme sürecini biz anladık bir bakıma, tekrarlamış olduk yeni eklemeler yaparak.
+
+121
+00:28:34,352 --> 00:28:40,772
+Yazılım geliştirme süreci, bir de şundan bahsetmiştim yine Prespa'nın kitabında olan.
+
+122
+00:28:45,683 --> 00:29:09,884
+Analiz, tasarım, gerçekleme, test, bakım. Bunlar için yazılım geliştirme sürecinin temel adımları diyoruz. Bu adımları mutlaka birer birer ya da modelin yapısına göre iç içe yürütmemiz gerekir.
+
+123
+00:29:10,355 --> 00:29:34,055
+Bunları yaparken daha sağlıklı çalışabilmemiz için bir de destek, umbrella, şemsiye aktivitelerimiz var. Bu aktiviteleri daha sağlıklı yürütebilmek için bunlar da yazılım proje yönetimi, yazılım kalite yönetimi.
+
+124
+00:29:34,511 --> 00:29:54,011
+Yazılım konfigürasyon yönetimi gibi bu yazılım geliştirme işini yöneten, hatta ilk dersimizde geçen hafta mühendisliğin temel gereklerinden biridir dedikimiz ölçme işi de var.
+
+125
+00:30:01,811 --> 00:30:24,951
+Bu da bir destek aktivitesi. Bu temel adamları yaparken yaptığımız işleri ölçmemiz, bu yazılım geliştirme sırasında olan değişiklikleri kayda almamız, konfigürasyon yönetimi.
+
+126
+00:30:25,460 --> 00:30:32,460
+Bu süreci yani çözümlemeden başlayarak tasarım gerçekleme...
+
+127
+00:30:32,564 --> 00:31:00,504
+Sınama, test ve bakım sürecinin bir plan dahilinde yapılması ve bu sürecin hepsinde ilk baştan başlayarak kalite yönetiminin sağlanması, kalite değerlendirmelerinin sağlanması bunların hepsi bu temel işlerin iyi yapılabilmesi için koruyucu şensiye aktiviteler, yazılım.
+
+128
+00:31:00,564 --> 00:31:12,284
+Mühendisliği süreçlerini iyi yürütebilmenin gerekleri. Yani sadece bu temel işleri yaparız ve hemen başarılı oluruz diye bir şey yok.
+
+129
+00:31:12,864 --> 00:31:20,624
+Buralarda başarılı olabilmek için bu koruyucu aktiviteleri de yapmamız gerekiyor.
+
+130
+00:31:21,664 --> 00:31:23,324
+Evet, şimdi devam edebiliriz.
+
+131
+00:31:42,067 --> 00:31:52,867
+Evet, şimdi bu case kavramından sistem analizinde böyle sadece kelime olarak bahsetmiştim.
+
+132
+00:31:52,867 --> 00:31:58,247
+Case, Computer Aided Software Engineering.
+
+133
+00:31:59,347 --> 00:32:01,867
+Bu kavram...
+
+134
+00:32:05,332 --> 00:32:18,491
+Yani çok eski 90'lardan 80 sonlarından itibaren var olan ve bir takım örnekleri geliştirilen sistemler.
+
+135
+00:32:18,491 --> 00:32:25,832
+Benim de ilk bildiri konumdu.
+
+136
+00:32:30,612 --> 00:32:33,832
+Nasıl otomatik olarak gerçekleştirilebilir?
+
+137
+00:32:34,832 --> 00:32:37,312
+Computer Aided Software Engineering.
+
+138
+00:32:37,312 --> 00:32:55,812
+Burada nasıl ki CAD CAM gibi yazılımlar varsa, tasarımcılara, mimarlara kolaylık sağlayan, kendi işlerimiz içinde,
+
+139
+00:32:56,256 --> 00:33:13,176
+Bir yardımcı yazılım oluşturalım. Bu süreci daha hızlandırılmış olarak, daha destekli olarak geçirebilir miyiz acaba diye hazırlanan yazılımlar.
+
+140
+00:33:13,844 --> 00:33:34,903
+Birçok örneğini bugün de görüyoruz. Bizim analiz ve tasarım sırasında mesela klasik yaklaşımla yaptığımız veri akış diagramları için, yapısal diagramların çizimleri için de bu tür ortamlar var.
+
+141
+00:33:37,748 --> 00:34:03,528
+Bu nesne yönelik olanlar içinde var. Bu süreçte çizdiğimiz bir takım diagramlar var. UML diagramları, use case diagramları gibi. Bunları sadece çizme değil, biz size laboratuvarda sadece çizim olarak da gösteriyorduk. Tam case aracı örneği.
+
+142
+00:34:05,619 --> 00:34:10,119
+Değilse de tam case aracı olması neye bağlı?
+
+143
+00:34:12,244 --> 00:34:39,764
+Burada adımlar arasında da birleşiklik sağlanıyor. Mesela analiz modeli çıkarılmış bir yazılımın tasarım UML diagramlarını hazırlarken analizdeki çiziminize aykırı daha fazla aktör kullanmışsanız UML diagramında uyumsuzluk varsa bunu da bildiriyor. Yani bu kontrolleri da yapıyor.
+
+144
+00:34:40,244 --> 00:34:58,003
+Sadece çizim değil, çizim içinde sembolleri daha kolay çizeceğiniz yardımcılar var. Ama bunun yanında hem veri olarak hem işlemler olarak bir süreç içinde...
+
+145
+00:34:58,239 --> 00:35:08,839
+Ardışık olarak aynı problemin analizden sonra tasarımını yaparken de bizi yönlendiren yazılımlar diyebiliriz.
+
+146
+00:35:09,259 --> 00:35:15,699
+Burada işlemler var. Hangi tasarım teknikleri kullanılıyor bunlar?
+
+147
+00:35:18,943 --> 00:35:35,644
+Bu diagram çiziminin anlatımı ve kodlama aşamasında da kullanılıyor. Bütünleşik case araçları dediğimizde bütün süreci takip edebilen case araçlarını anlıyoruz.
+
+148
+00:35:37,224 --> 00:35:45,963
+Mesela bütün süreci takip edebilen daha proje planlamadan başlayarak.
+
+149
+00:35:46,228 --> 00:36:01,528
+Analiz sırasındaki modellemede, tasarımda ve tasarımın belirtilen tasarımın yazılımının hazırlanmasında, program kodunun hazırlanmasında.
+
+150
+00:36:02,164 --> 00:36:18,284
+yardımcı olan bütünleşik yazılımlar var ya da sadece bir evreyi. Mesela ekran görünümlerini verdiğiniz, tanımladığınız
+
+151
+00:36:20,179 --> 00:36:43,159
+Ortamlar için bu ekran yapısının çalışmasını sağlayan kodun yazılması gibi otomatik kod geliştiriciler ya da analiz ve tasarım için sadece nesneye yönelik UML diagramlarını destekleyen şeyler gibi programlar var.
+
+152
+00:36:47,344 --> 00:37:09,223
+Analiz ve tasarımda diagramları çizebilmemiz için Wild diye bir küçük yazılım var. Bu aslında case aracı olarak çok kapsamlı yazılımlarda geliştirildi.
+
+153
+00:37:11,092 --> 00:37:27,092
+Büyük sistemlerde, büyük uygulamalarda çalışacak. Tabii ki bunların kullanımı, yazılım geliştiricinin işini eğer iyi kullanılırsa kolaylaştırıyor. Ama eğer bu karmaşık araçlar hakkında, bu küçük...
+
+154
+00:37:27,315 --> 00:37:42,255
+Yazılımlar için demiyorum. Bütün evreyi kapsayan yazılımlar üzerinde yeterli eğitim almamış kişiler kullanırsa, yeterli deneyimle kullanılmazsa, bunun ilk kullanılan projede...
+
+155
+00:37:42,255 --> 00:37:58,335
+Baştan da yeterli bir hazırlık yapılmamışsa zararı bile olabilir. O yüzden bunları kullanmadan önce bunun eğitiminin iyi verilmesi gerekiyor.
+
+156
+00:37:58,675 --> 00:38:25,255
+Böyle bütünleşik case araçları için hangi işlemler yapılıyor? Diagram çizimi, tasarım ve analiz işlemleri ve kod dönüştürücüsü. Bir veri tabanında da arşivde de hangi fonksiyonlar, hangi işlemler, hangi modeller bunlar tutulabiliyor.
+
+157
+00:38:25,588 --> 00:38:35,588
+Bu şekilde bir case kavramını da size tanıtmış ya da hatırlatmış oldum.
+
+158
+00:38:37,168 --> 00:38:44,588
+Şimdi bir 10 dakikalık ara verelim. Ondan sonra yazılım geliştirme süreç modelleri üzerinde duracağız.
+
+159
+00:39:07,123 --> 00:39:07,743
+Bak Yunus.
+
+160
+00:39:11,583 --> 00:39:13,303
+Şimdi bir dakika.
+
+161
+00:39:13,643 --> 00:39:14,443
+Şimdi ara veriyorum.
+
+162
+00:39:17,972 --> 00:39:19,172
+Hocam mikrofonunuz açık.
+
+163
+00:54:02,835 --> 00:54:18,995
+Evet, arayı tamamladık. Şimdi yazılım geliştirme süreçlerini tanımlamaya başlıyoruz. Herkes katılımda değil mi şu anda? Aradan döndünüz.
+
+164
+00:54:20,455 --> 00:54:21,195
+Evet hocam.
+
+165
+00:54:29,300 --> 00:54:47,099
+Tekrar ara verip devam edecektim ikinci derste de ama Yunus Hoca bu müdek için sizin sınıftan da öğrenci seçimi için dersi her iki sınıfı birden alacak. Onu çağıracağım.
+
+166
+00:54:51,099 --> 00:54:55,500
+Haberleşmemize göre ya ara verip biraz yaptıktan sonra ona devrederim.
+
+167
+00:54:55,827 --> 00:55:03,768
+Ya da blog yapıp devam ederken onu eklerim. Bilginiz olsun istedim.
+
+168
+00:55:05,148 --> 00:55:10,487
+Evet, biliyorsunuz bir müdek sürecimiz var. Bilmiyorum başka derslerde anlatıldı mı?
+
+169
+00:55:15,731 --> 00:55:34,811
+Bu süreç içinde öğrencilerle de görüşülecek, bizlerle de görüşülecek. Mart sonunda onun için bir takım hazırlıklar yapıyoruz.
+
+170
+00:55:36,952 --> 00:55:39,972
+Daha önceden iki defa geçirdiğimiz bir süreç.
+
+171
+00:55:41,748 --> 00:55:46,928
+Evet, şimdi bu kadar şeyden sonra derse devam edelim.
+
+172
+00:55:48,884 --> 00:56:01,243
+Yazılım geliştirme süreci dediğimizde az önce bütün yazılım geliştirme adımlarında neler yapıyoruz onu gördük.
+
+173
+00:56:01,243 --> 00:56:09,463
+Şimdi bu süreç modelleri nedir? Onun üzerinde duracağım biraz.
+
+174
+00:56:14,612 --> 00:56:22,032
+Yani hepsinde yine analiz, tasarım, gerçekleştirme, test, bakım aşaması var.
+
+175
+00:56:23,376 --> 00:56:46,996
+Sırası ve ilişkileri, kuralları değişik. Şimdi biz bu hafta klasik süreçler üzerinde duracağız. Yani şöyle bir şey yok, artık agile kullanılıyor, diğer süreçler hiç kullanılmıyor diye de bir kural yok.
+
+176
+00:56:47,347 --> 00:56:57,327
+Ama ne zaman hangisi daha iyi, daha yeterli? Onları da görerek ilerleyeceğiz.
+
+177
+00:56:57,327 --> 00:57:06,968
+Şimdi ilk etapta biz waterfall üzerinden gitmiş olduk.
+
+178
+00:57:07,248 --> 00:57:30,708
+Yani bir aşama bittiğinde zaten sistem analizinde de sadece waterfall'a göre görmüştük. Bir adım bittiğinde diğer adıma geçiyorduk. Bir adım bittiğinde diğer adıma geçiyorduk. Tabi bu da süreyi uzatıyor. Önce analiz, analizi tamamlayıp sonra tasarıma geçiyoruz.
+
+179
+00:57:33,972 --> 00:57:46,352
+Süreç modellerinde, spiral modelde daha farklı kurallar var. Rad modelde amacımız farklı, daha farklı kurallar var.
+
+180
+00:57:46,352 --> 00:57:56,236
+Şimdi bunları her birinin kendine has avantajı var, dezavantajı var. Bu avantajları...
+
+181
+00:57:56,755 --> 00:58:10,295
+Ve dezavantajları da irdelemeye çalışacağız. Bugün hala bu konularda çalışmalar, araştırmalar, anketler yapılıyor yazılım geliştirme firmalarıyla.
+
+182
+00:58:19,795 --> 00:58:31,036
+Daha doğrusu uzaktan katıldık bu senekine. Yüz yüze toplantı yaptığımız geçen yıldaki toplantıda.
+
+183
+00:58:31,572 --> 00:58:37,211
+Acaba agile projeleri hep destekliyoruz diyoruz.
+
+184
+00:58:37,812 --> 00:58:52,472
+Agile projeler hakikaten, agile yazılım geliştirme metodolojisi, hakikaten iyi mi yoksa bazı yanılgılara mı götürüyoru irdeleyen iki tane bildiri vardı.
+
+185
+00:58:53,043 --> 00:59:05,983
+Ama tabii ki sektör için bir dinamizm kazandırdığı aşikar. O yüzden önümüzdeki haftada bunları konuşacağız.
+
+186
+00:59:06,423 --> 00:59:10,603
+Hocam çok özür diliyorum. Ecel yazılım derken belki ben unutmuş olabilirim.
+
+187
+00:59:12,947 --> 00:59:27,788
+Agile yazılım kavramı aslında geçen sene üzerinde durmadık ama sektörde, stajlarda falan duymuş olabilirsiniz diye biliyorsunuz gibi şey yapıyorum.
+
+188
+00:59:29,228 --> 00:59:40,087
+Çelik yazılım yani süreci daha hızlandıralım ve bunun kuralları var. Onların üstünde önümüzdeki hafta duracağız.
+
+189
+00:59:40,947 --> 00:59:42,327
+Agile olarak yazılan değil mi?
+
+190
+00:59:42,387 --> 00:59:44,708
+Evet, çevik anlamında.
+
+191
+00:59:45,047 --> 00:59:46,327
+Tamam, çok teşekkür ederim.
+
+192
+00:59:47,867 --> 00:59:57,507
+Evet, ilk modelimiz şelale modeliydi. Şelale, waterfall, sequential, artificial bunların hepsi aynı anlamda, aynı şeyi ifade ediyor.
+
+193
+00:59:57,507 --> 01:00:00,000
+Sırayla çözümleme...
+
+194
+01:00:00,000 --> 01:00:10,400
+Birleşme bitiyor, tasarım başlıyor, tasarım bitiyor, kodlama başlıyor. Zaten Gant diagramında da, zaman planında da bunları ardışık olarak görüyoruz.
+
+195
+01:00:11,359 --> 01:00:23,460
+İşte öncelik, sonralık ilişkileri nasıl diye baktığımızda biri bitip diğeri başlıyor. Ama kendi içinde birbirinin bitişini beklemeyen alt adımlar da var.
+
+196
+01:00:24,563 --> 01:00:42,643
+Genel olarak bu genel adımlarda bir adımın tamamlanmasından sonra diğerine geçilerek ilerleniyor. Eğer ancak eksiklik ve hata varsa bir öncekine dönüş var.
+
+197
+01:00:43,123 --> 01:01:01,023
+Ama eksiklik hata yoksa, birincisi tamamlanmışsa ikinciye geçiliyor. Bunun tabii ki artıları var, iyi tanımlanmış adımlar var, yaygın kullanımı var, burada eksiler de var tabii ki.
+
+198
+01:01:01,427 --> 01:01:21,867
+Uzun sürüyor. Müşteri sonuç göremiyor. Yani bir prototip gibi bir şey göremiyor. Adımlar ilerledikçe hata varsa sonra dönüp düzeltmek zorlaşıyor. Müşteri de uzak kalıyor gereksinimleri bildirmekten.
+
+199
+01:01:23,679 --> 01:01:40,419
+Burada, yani eğer gereksinimleri anlaşılmış, daha evvelden de bu konuda yazılım varsa, kurumsal yazılımlar geliştirilirken waterfall kullanılabilir, hala da kullanılıyor.
+
+200
+01:01:40,864 --> 01:01:51,283
+Ama yeni bir müşterinin alışkın olmadığı yeni bir program yazılıyorsa o zaman müşterinin canlandırması zor oluyor.
+
+201
+01:01:53,643 --> 01:02:03,203
+Evet, waterfall üzerinden zaten geçen hafta da süreçleri anlattığım için bunu geçiyorum.
+
+202
+01:02:03,648 --> 01:02:11,808
+Ön ürün modeli, aslında bunu prototip model olarak daha fazla duyuyoruz.
+
+203
+01:02:11,808 --> 01:02:28,448
+Burada müşteriyi dinleyip bir prototip oluşturup sonra bu prototipi müşterinin denemesiyle bir tasarımı daha kolay yapmak.
+
+204
+01:02:28,820 --> 01:02:35,720
+Ve tasarımdan çıktıktan sonra esas ürünü geliştirmek.
+
+205
+01:02:36,940 --> 01:02:40,480
+Burada tabii ki bu prototip niye oluşturuluyor?
+
+206
+01:02:40,480 --> 01:02:50,320
+Yani bir daha kolay araçlara olan yazılım geliştirme elemanlarıyla.
+
+207
+01:02:50,835 --> 01:03:10,815
+Altyapısıyla bir prototip oluşturuyoruz, bir model oluşturuyoruz. Bu model sayesinde müşteri, kullanıcı ürünü daha erken tanımlamaya başlayabiliyor.
+
+208
+01:03:21,940 --> 01:03:26,299
+Programın artıları, modelin artıları daha erken denenmesi.
+
+209
+01:03:27,759 --> 01:03:43,400
+Eksiler de tabii ki burada gerçek fizibilitede belirlenen esas şeyler kullanılmadığı için eksiler olabilir, mükemmel olmaz.
+
+210
+01:03:45,019 --> 01:03:46,619
+Eksik hazırlanabilir.
+
+211
+01:03:47,219 --> 01:04:01,979
+Bir de prototipte daha kolay ürünlerle geliştirileceği için buradaki alışkanlıklar sonradan da müşteriye yansıyabilir.
+
+212
+01:04:01,979 --> 01:04:15,219
+Yani siz bir işte mesela bunu nasıl görebilirsiniz? Bir ekran tanımı yaptığınız çok basit bir araç kullandınız ama esas yazılımınızda programlarla bunu yapabilirsiniz.
+
+213
+01:04:15,219 --> 01:04:37,359
+Müşterinin yanında, işte bak bu oldu mu falan diyorsunuz, olmadıysa değiştiriyorsunuz orada. Esas yazılımınızda da bunları kolay değiştirebileceğiniz kanısına varabilir. O yüzden bu açılardan da biraz sakıncası olabilir.
+
+214
+01:04:42,132 --> 01:04:55,812
+Şimdi ikisinin karmaşası olan spiral modeli önce görelim. Sonra rat model ve bileşen tabanlı modellere geçeceğiz.
+
+215
+01:04:59,112 --> 01:05:06,892
+Spiral model hem artımsal hem yinelemeli model olarak karşımıza çıkıyor.
+
+216
+01:05:07,443 --> 01:05:20,543
+Spiral modelin bir özelliği de hem prototip modelin hem waterfall modelin özelliklerini taşıması.
+
+217
+01:05:23,083 --> 01:05:28,364
+Burada daha sağlam gidiliyor Spiral modelde.
+
+218
+01:05:30,835 --> 01:05:42,595
+Şurada baktığımızda artımsal, inkremental ve yinelemeli modeller, iteratif modeller bölümüne koyuyoruz.
+
+219
+01:05:42,675 --> 01:05:45,435
+Speral modeli, sarmal modeli.
+
+220
+01:05:47,915 --> 01:05:50,335
+Gereksinimler anlatılır.
+
+221
+01:05:51,315 --> 01:06:13,556
+Artımsal, inkrementer model diye geçen daha basit bir yapıda olanı da var. Ama sarmal modelde bunu daha iyi görüyoruz. Prototip model ve ardışıl modelin güçlü yönlerini toplamış modellerdir bunlar.
+
+222
+01:06:15,668 --> 01:06:33,627
+Ama eksisi nedir? Siz çok küçük bir yazılım geliştirecekseniz ya da rekabete dayalı bir firmada çalışılıyorsa piyasaya hızlı ürün servis etmek isteyen, o zaman spiral model çok uygun değil.
+
+223
+01:06:33,627 --> 01:06:42,847
+Çünkü burada çok fazla kontroller yapılıyor. Hata kritik yazılımlarda kullanılması daha uygun spiral modeli.
+
+224
+01:06:43,347 --> 01:06:53,347
+Şimdi spiral modelin yapısına gelelim. Neden? Hem artımlı hem iteratif.
+
+225
+01:06:53,347 --> 01:06:56,347
+Şimdi burada prototipi...
+
+226
+01:06:56,788 --> 01:07:10,488
+En içte prototipi bütün yazılım geliştirme sürecindeki adımları uygulayarak geliştiriyoruz. En içte prototip var. Bu yüzden sarmal model.
+
+227
+01:07:11,628 --> 01:07:19,867
+Sonra şurada bir prototip geliştiriyoruz. Bu kullanıma alınmayacak olan ürün.
+
+228
+01:07:20,275 --> 01:07:34,955
+Sonra kullanıma alacağımız ürünü geliştiriyoruz. Burada kör sırla işaret ediyorum her bir sarmalı ama görebiliyor musunuz hareketlerini?
+
+229
+01:07:35,875 --> 01:07:36,235
+Görünüyoruz.
+
+230
+01:07:36,235 --> 01:07:36,775
+Közüküyoruz.
+
+231
+01:07:37,095 --> 01:07:38,615
+Tamam, teşekkürler.
+
+232
+01:07:38,615 --> 01:07:40,615
+Sonra...
+
+233
+01:07:41,427 --> 01:07:53,447
+Yeni ekleme yapılmış hali, ürünün zenginleştirilmiş hali, daha sonra da bakım sürecinde de yine bu yol izlenerek gidiyor spiral modelde.
+
+234
+01:07:54,447 --> 01:08:05,508
+Yani bu nedir? Biz ilk başta prototip modelde belirttiğimiz gibi bir prototip oluşturuyoruz.
+
+235
+01:08:09,427 --> 01:08:13,407
+Önce müşteriyle iletişim, gereksinimlerin belirlenmesi.
+
+236
+01:08:14,547 --> 01:08:20,727
+Sonra bu gereksinimlere göre planlama yapıyoruz.
+
+237
+01:08:20,847 --> 01:08:25,487
+Kaynaklar, zamanlama kullanılacaklar, yapılacaklar.
+
+238
+01:08:27,220 --> 01:08:34,500
+Risk analizi yapıyoruz. Teknik, mali riskler nelerdir?
+
+239
+01:08:34,500 --> 01:08:48,059
+Ki spiral model, her aşamada risk analizinin yapıldığı tek yazılım geliştirme süreç modeli.
+
+240
+01:08:51,503 --> 01:09:13,083
+Planı hep gözden geçiriyoruz ve plan üzerinde risk analizi yapıyoruz. Sonra çözümleme ve tasarım, analiz ve tasarım aşamasından geçiyoruz. Sonra gerçekleme ve kurulum. Daha sonra da müşteri tarafından değerlendirilmesi.
+
+241
+01:09:17,779 --> 01:09:20,539
+Prototip geliştirirken de kullanılıyor.
+
+242
+01:09:22,319 --> 01:09:29,460
+Kullanılacak temel yazılımı elde ederken de bütün bu adımlardan geçiliyor.
+
+243
+01:09:31,239 --> 01:09:37,719
+Ürünün eklemelerle zenginleştirildiği süreçte de geçiyor.
+
+244
+01:09:38,292 --> 01:09:58,932
+Bakım aşamasında da yine bakımda nelere ihtiyacınız var, neden bakım istiyorsunuz, planlamada bu bakımı yapmak için hangi kaynaklar gerekli, ne zamana bitirebiliriz ve neler yapabiliriz, neleri yapamayızın irdelenmesi.
+
+245
+01:10:00,000 --> 01:10:22,779
+Bu planın risklerinin belirlenmesi, ona göre analiz tasarımın gerçekleştirilmesi ve şurada da gerçekleme ve kurulum aşaması ki bu aşamaya construction yapım aşaması da denir spiral modelde.
+
+246
+01:10:22,779 --> 01:10:24,779
+Construction aşaması.
+
+247
+01:10:26,899 --> 01:10:53,839
+Burada da bütün bunların, bu bir prototip de olabilir, bu esas kullanılacak ürün de olabilir, zenginleştirilmiş ürün de olabilir, eklemeler yapılan. Müşteri bu ürünü değerlendirecek. Yani bu ürün bizim istediğimiz ürün mü, nedir, ona bakılması gerekecek.
+
+248
+01:10:55,060 --> 01:11:11,060
+O zaman bu spiral modelde bir önceki adımda tanımladığımız hem artımsal hem yinelemeli özellik sağlanmış oluyor.
+
+249
+01:11:13,060 --> 01:11:19,680
+Burada bakıyoruz artımsal ve yinelemeli.
+
+250
+01:11:22,963 --> 01:11:32,904
+Dışa doğru gittiğimizde hep tekrarlı yani prototipte de aynı evreleri geçiriyoruz.
+
+251
+01:11:35,224 --> 01:11:39,543
+Yazılımı üretirken de aynı evreleri geçiriyoruz.
+
+252
+01:11:40,963 --> 01:11:44,783
+Ürüne eklemeler yaparken de aynı evreleri geçiriyoruz.
+
+253
+01:11:51,699 --> 01:12:19,039
+Artımsal. Şuradaki altı adım da birbiriyle ardışık. Aslında yine burada isimler farklı. Müşteriyle iletişim, planlama, risk analizi, çözümleme ve tasarım, gerçekleme ve kurulum, deployment ve müşteri tarafından değerlendirilmesi.
+
+254
+01:12:19,551 --> 01:12:34,131
+Bunların hepsi waterfall'da da var ama eklemeler var. Yani waterfall'da biz çözümlemeden itibaren başladık. Umbrella activities.
+
+255
+01:12:34,931 --> 01:13:01,051
+İşte ön inceleme, planlama olmalıdır buraya geçmeden önce dedik. Planlamayı yaparken müşteriyle iletişimi de gerçekleştirecek zaten dedik. Risk analizi yoktu. Bu adımlar açısından aslında isimler farklı ya da daha ayrıntılı yazılmış ama yine aynı şeyler yapılıyor.
+
+256
+01:13:01,555 --> 01:13:23,335
+Burada süreci uzatan nedir? Daha evrimsel hale getirmek, iyileştirici hale getirmek, önce bir prototip sonra ürünü geliştirmek.
+
+257
+01:13:23,648 --> 01:13:36,288
+Sarmal model, spiral model de söz konusu. Bu spiral modeli tekrar söylüyorum.
+
+258
+01:13:38,288 --> 01:13:51,028
+Şimdi sadece bir waterfall modelle kıyasladığımızda bu daha çok zaman gerektiriyor. Ama kontroller çok fazla.
+
+259
+01:13:51,731 --> 01:14:14,351
+Daha iyileştirmeye dayalı tekrarlar yapılıyor. Dolayısıyla hatanın en aza indirildiği, bütçenin de çok düşük olmadığı yazılım ürünlerini geliştirirken bu spiral model kullanılabilir.
+
+260
+01:14:16,083 --> 01:14:42,083
+Bir de burada biraz daha böyle Eca ile geçerken olan kazan kazan modeli var. Bu aslında bütün kaynaklarda yok. Presman'ın kitabında var. Yani sadece şeyi bilmeniz yeterli burada. Böyle bir şey var, yazılım geliştirme süreç modeli.
+
+261
+01:14:44,500 --> 01:14:48,159
+Spiral model gibi hem iteratif hem evrimsel.
+
+262
+01:14:50,420 --> 01:15:11,840
+Adımlar daha farklı. Paydaşlar, müşteridir, yazılım geliştiricidir, yöneticidir. Bunlar belirleniyor. Her birinin kazancı nedir? Ne istiyor bu yazılımı geliştirirken? Bunlar belirleniyor. Bunlar için uzlaşma seçenekleri belirleniyor. Yani şey farklı.
+
+263
+01:15:13,844 --> 01:15:30,844
+Yürütme adımları farklı. Ama dediğim gibi bu tür şeylerde, yazılım geliştirme süreç modellerinde iteratif ve yinelemeli olan…
+
+264
+01:15:31,091 --> 01:15:58,252
+Spray modelin adı daha fazla geçecektir ama bu tipte bir de win-win model olduğunu ve burada da paydaşları belirleyip her birinin kazancı nedir, nereden yazılımını ne tür geliştirirsek isteğidir onun, onu belirtip her birinin isteğini yerine minimumda getirecek şekilde devam etmek.
+
+265
+01:15:59,155 --> 01:16:06,556
+Evet, şimdi klasik yazılım geliştirme süreç modellerine devam edelim.
+
+266
+01:16:11,028 --> 01:16:34,548
+Ön ürünü, prototipi gördük. Bir de hızlı yazılım geliştirme süreç modelleri var. Hızlı yazılım geliştirme süreç modelleri, RAT model, rapid application development, hızlı uygulama geliştirme.
+
+267
+01:16:37,876 --> 01:17:03,996
+Artımsal bir model. Hedef ne? Daha hızlı geliştirmek. Bu daha çok şirketlerde çok hızlı yazılım geliştirme ihtiyacı varsa o zaman bunu hızlandırmak için neler yapmamız gerekiyor?
+
+268
+01:17:06,452 --> 01:17:30,371
+Bir de her uygulamaya bunu uyarlayabilir miyiz? Her uygulamada kullanabilir miyiz? Burada alt bölümlere ayırabiliyor muyuz yazılımımızı, problemimizi? Sadece alt bölümlere ayırmak yeterli değil, eş zamanla ilerleyebilecek.
+
+269
+01:17:32,020 --> 01:17:34,480
+Alt modülleri olması gerekiyor.
+
+270
+01:17:35,440 --> 01:17:40,819
+Ve bileşenlerden kurulabilmesi gerekiyor.
+
+271
+01:17:41,780 --> 01:17:56,900
+Bir de tabii ki yazılım evinin de yeterince zenginlikte olması gerekiyor ki böyle alt bölümler yazılımın her bir parçasına ekleyecek kadar, atayacak kadar elemanı var mı?
+
+272
+01:18:01,908 --> 01:18:10,688
+Çalışanlar uyum sağlayabilecek ve yüksek teknik riskler varsa yine burada da zor.
+
+273
+01:18:12,247 --> 01:18:18,427
+Şimdi bunun bir slide'da şekli vardı ama şu anda bunda yok.
+
+274
+01:18:20,927 --> 01:18:24,688
+Daha sonra bir aradan sonra ara veririz yine.
+
+275
+01:18:24,688 --> 01:18:28,968
+Aradan sonra bunun şekli üzerinde de.
+
+276
+01:18:30,644 --> 01:18:32,164
+geliştirebiliriz.
+
+277
+01:18:34,664 --> 01:18:35,064
+Bu
+
+278
+01:18:41,939 --> 01:18:59,859
+Hızlı yazılım geliştirme araçlarında önce problem anlaşılır, ne isteniyor ve bu koşullara uygun mu? Proje alt bölümlere ayırabiliyor muyuz?
+
+279
+01:19:07,167 --> 01:19:20,027
+Alt modülüne ekip ayarlıyoruz ve her bir parçası için biz analiz, tasarım,
+
+280
+01:19:21,971 --> 01:19:31,531
+Veri modelleme, işlem modelleme ve hızlı yazılım geliştirme adımlarını uyguluyoruz. Her bir parçası için.
+
+281
+01:19:31,531 --> 01:19:44,391
+Ve bunları tek başına o yaptıklarımızı test ediyoruz. Sonra ortak bir test işlemine uyumluluğu açısından tabi tutuyoruz ve kullanıma alıyoruz.
+
+282
+01:19:46,351 --> 01:19:59,531
+Bu koşullara uyan firma, koşullara uyan uygulama koşulu ile bu sağlanabilir. IBM tarafından bu.
+
+283
+01:20:00,340 --> 01:20:16,180
+Ortaya atılmış, yani kullanıma alınmış bu işletmelerdeki rekabete dayalı hızlı uygulamaya geçecek yazılımları geliştirmek üzere ortaya atılmış bir model.
+
+284
+01:20:19,891 --> 01:20:34,131
+Bir de komponent based yaklaşım var. Uygulama hazır bileşenlerden oluşursa. Zaten bu komponent based'i, bu komponentlerin kullanımı, hazır kütüphanelerin kullanımı RAT modelde de var.
+
+285
+01:20:34,131 --> 01:20:43,572
+Ama özellikle bu tarafının kullanılarak geliştirdiğini belirten bileşen tabanlı modeller de var.
+
+286
+01:20:46,676 --> 01:21:02,195
+Daha çok sayıda da model çıkarılmıştır. Şimdi ben size aradan sonra bir de Unified Process Model üzerinde de birkaç şey söyleyeceğim.
+
+287
+01:21:04,336 --> 01:21:09,195
+Yani hangi modeli kullanacağımız konusunda...
+
+288
+01:21:09,568 --> 01:21:15,568
+Alternatifler var. En çok yaygınlaşanlar üzerinde duruyoruz.
+
+289
+01:21:17,568 --> 01:21:35,468
+Konu odaklı, domain odaklı, bileşen odaklı ya da seçilen bileşenlerin yazılıma uyarlanması şekliyle.
+
+290
+01:21:36,148 --> 01:21:53,768
+kullanılır. Birleşenler daha sonra bir araya getirilir. Bu komponent-based yazılımda yeniden kullanım reusability önemli.
+
+291
+01:21:57,376 --> 01:22:06,836
+Şirketin bir yazılım kütüphanesinin olması, komponentlerinin belirlenmesi ve bu reusability'ye önem vererek giderilmesi.
+
+292
+01:22:06,836 --> 01:22:09,836
+Biz birkaç hafta sonra...
+
+293
+01:22:11,444 --> 01:22:28,144
+Yazılım kalite özelliklerinden bahsedeceğiz. Yazılım kalite özelliklerinden bahsettiğimizde yeniden kullanılabilirlik önemli bir yer tutuyor. Bu yeniden kullanılabilirliği de destekliyor komponent-based yaklaşım.
+
+294
+01:22:31,667 --> 01:22:36,507
+Eksileri de her zaman uygun bileşenler bulunamayabilir.
+
+295
+01:22:38,108 --> 01:22:48,948
+Ancak bir şirket çok benzer programlar hazırlıyorsa bunları komponentler haline getirir ve böyle bir modeli kullanabilir.
+
+296
+01:23:00,787 --> 01:23:09,927
+Evet, o zaman şimdi bir ara verelim. Ben Yunus Hoca'yı davet edeceğim ders sonunda.
+
+297
+01:23:09,927 --> 01:23:18,787
+Ve şimdi bir on dakika ara veriyorum.
+
+298
+01:23:19,220 --> 01:23:36,220
+Bu aradan sonra da önce ben bu Unified Process model hakkında bilgi vereceğim. Daha sonra da bu seçimle ilgili iş için Yunus'u davet edeceğim.
+
+299
+01:23:52,148 --> 01:23:53,587
+10 dakika ara verdim.
+
+300
+01:38:39,123 --> 01:39:05,743
+Evet, merhabalar. Şimdi devam ediyoruz. Bu modellere Unified Process modeli de ekliyorum. Çünkü bundan da biraz bahsetmek istedim. Nesneye yönelik modeller içinde, nesneye yönelik yaklaşım kullanıldığında buna bağlı olarak kullanılan bir model bu da.
+
+301
+01:39:06,144 --> 01:39:26,984
+Bu Rational Rose ürünü var. Bugün hem herkes katılım sağladı mı? Derste şu anda. Ara verdik. Tekrar geldi mi herkes?
+
+302
+01:39:31,475 --> 01:39:34,175
+Tamam, teşekkür ederim.
+
+303
+01:39:35,155 --> 01:39:48,055
+Rational Rose ürününü hiç duyan oldu mu? Aslında artık IBM bunu bir platform olarak gösteriyor. Bugün case aracı konusunu da gördük.
+
+304
+01:40:00,000 --> 01:40:14,000
+İçin case aracı da diyebiliriz biz buna ama IBM'deki tanımı şu anda platform. Bu case ürünlerinin çıktığı ilk yıllarda, 90'lı yıllardır, Rational Rose...
+
+305
+01:40:15,699 --> 01:40:21,439
+Kendi adıyla üretilen bir firma tarafından hazırlanmıştı.
+
+306
+01:40:22,359 --> 01:40:34,139
+Ve bu bütün süreci takip edebildiği için büyük kurumsal firmalarda kullanım dahilindeydi.
+
+307
+01:40:35,139 --> 01:40:41,699
+Daha sonra bu ürün firmadan IBM tarafından satın alındı.
+
+308
+01:40:42,131 --> 01:41:07,871
+IBM'in bir platformu haline geldi, Rational Rose platformu. Özellikle nesneye yönelik yaklaşımla hazırlanan yazılımların takibinde, bütün sürecin evrilmesinde kullanılan bir yazılım geliştirme süreç modeli olarak karşımıza çıktı.
+
+309
+01:41:10,131 --> 01:41:19,111
+Bu yazılım geliştirme süreç modeli üzerinde duracağız.
+
+310
+01:41:20,011 --> 01:41:34,831
+Burada da aslında bir döngüsel bir yapı var ve daha sonra önümüzdeki hafta XP'yi gördüğümüzde ona da benziyor biraz çevrim adımları.
+
+311
+01:41:35,539 --> 01:41:47,239
+Burada özellikle her bir aşamada hangi işi gerçekleştiriyoruz bunun üzerinde duracağız.
+
+312
+01:41:51,123 --> 01:42:07,423
+Şimdi şekil olarak baktığımızda bir iletişim var tabii ki. Yani spiral modeli de gözünüzün önüne getirin. Önce müşteriyle iletişim, sonra planlama, sonra risk analiziydi spiral modelde.
+
+313
+01:42:07,423 --> 01:42:15,723
+Burada da communication, planlama, modelleme, construction, spiral modeldeki tanımlarıyla.
+
+314
+01:42:16,180 --> 01:42:31,079
+Ve deployment, müşterinin değerlendirilmesi ve release aşaması. Release yani ürünü açığa çıkarma, ürünü artık satış haline getirme. Pek çok release olabilir.
+
+315
+01:42:33,108 --> 01:42:47,228
+Bakım çalışmalarıyla yeni rilizlere geçebilir ürün. Buradaki değişikliklerin takibi de konfigürasyon yönetimi olarak çıkacak karşımıza.
+
+316
+01:43:01,108 --> 01:43:10,707
+Takip edebilmemizi sağlayan, en uyumlu olarak çalışan bir yazılım geliştirme süreç modeli olarak karşımıza çıktı.
+
+317
+01:43:17,492 --> 01:43:34,051
+Inception aşaması burada bizim müşteriyle iletişimimiz ve planlamaya başlamamızı, Inception başlangıç aşaması gösteriyor.
+
+318
+01:43:34,051 --> 01:43:45,492
+Elaboration'da planı tamamlayıp modellemeye geçme aşaması burada hazırlık ve modelleme.
+
+319
+01:43:45,492 --> 01:44:08,631
+Bundan sonra construction, tasarımın bir bölümü ve kodlama ve daha sonra da test, construction aşaması, transition aşaması da kullanıcı testi ve kullanıcı değerlendirmelerinin gerçekleştirilmesi.
+
+320
+01:44:12,500 --> 01:44:40,500
+Karşımıza çıkıyor. Spiral'daki gibi, önce prototip, sonra ürün, sonra ürünü zenginleştirilmiş hali diye katmanları saymıyoruz burada. Hangi katmandaysak onu kullanılacak ürün olarak çıkarıyoruz. Software Increment'da yeni bir yazılım artımı, yani yazılım ürünün yeni bir aşaması.
+
+321
+01:44:40,500 --> 01:44:46,739
+Bu konuları olarak karşımıza çıkacak bu katmanla.
+
+322
+01:44:49,939 --> 01:44:55,779
+Unified Process model yaklaşımı. Her birinde neler yapılıyor?
+
+323
+01:44:56,595 --> 01:45:14,575
+Şimdi önce biz bunların isimlerini şurada belirledik. Communication ile planlamanın ilk başlangıcı inception aşaması. Planlamayla modellemeyi elaboration'da birleştirmiş oluyoruz.
+
+324
+01:45:17,631 --> 01:45:32,391
+Yine construction aşaması. Yani construction'ı ne olarak tanımlamıştık spiral modelde? Kodlama, yapım aşaması, kodlamayı ve mühendislik testini içeriyor.
+
+325
+01:45:35,699 --> 01:45:50,979
+Bundan sonra kullanıma geçiş aşaması için transition aşaması, en son aşamada production yani ürünün elde edilmesi aşaması.
+
+326
+01:45:51,140 --> 01:45:59,039
+Ama temel olarak inception, elaboration, construction ve transition adımları var.
+
+327
+01:45:59,636 --> 01:46:19,896
+Unified Process yaklaşımında, Inception fazında bir vizyon dokümanı çıkarılıyor. Bu vizyon dokümanında temel olarak kabaca gerçekleştirmesi denilen işin vizyonu nedir?
+
+328
+01:46:20,256 --> 01:46:27,576
+Bir başlangıç use case modeli çıkarılıyor. Başlangıç proje sözlüğü çıkarılıyor.
+
+329
+01:46:31,572 --> 01:46:38,892
+İşletmecilik şeyi nedir? Risk değerlendirmesi yapılıyor mu?
+
+330
+01:46:38,892 --> 01:46:46,892
+Yani buraya baktığımızda spiral modeldeki gibi bir risk için ayrı bir aşama koymamış.
+
+331
+01:46:48,112 --> 01:46:52,587
+Ama başlangıç aşamasındaki çalışmalarda da bu...
+
+332
+01:46:53,619 --> 01:47:19,099
+Risk değerlendirmesini oluşturuyor. Bir planlama gerçekleştiriliyor. Bu temel planlama, burada bir iş modeli çıkartılıyor ve bir prototip de oluşturuyor. Bir tane ya da daha fazla bir prototip oluşturuluyor.
+
+333
+01:47:19,503 --> 01:47:23,783
+Bu hazırlık aşaması.
+
+334
+01:47:24,307 --> 01:47:37,327
+İşe ilk başlayacağımız zaman yapılacak işin anlaşılması açısından bu inception fazı, başlangıç aşaması kullanılıyor.
+
+335
+01:47:37,327 --> 01:47:50,347
+Tekrar özetlersek, bu işin vizyonu nedir? Bu açıklanıyor. Başlangıç olarak use case modelinde yapılacak iş ve ilgililer belirtiliyor.
+
+336
+01:47:52,307 --> 01:48:08,027
+Bu şekilde ki terimler hem müşteri tarafından hem bizim tarafımızdan. Ortak dilimiz ne olacak? Öyle bir sözlük çıkarılıyor. Ve bu iş şeyi nedir?
+
+337
+01:48:10,036 --> 01:48:24,756
+Nasıl bir case? O ortaya çıkarılıyor. Ve ilk başlangıçta daha bir risk değerlendirmesi de yapılıyor. Yani bu işin riskleri nedir? Nasıl bir iş modelidir? Eğer gerekirse bir prototip oluşturuluyor.
+
+338
+01:48:31,060 --> 01:48:36,020
+Planlamayla modelleme eşleştiriliyor aslında.
+
+339
+01:48:36,979 --> 01:48:41,060
+Burada baktığımızda artık gerçek...
+
+340
+01:48:42,836 --> 01:48:49,416
+modelleme aşaması sırasında use case modelimizi çıkarıyoruz.
+
+341
+01:48:50,195 --> 01:48:59,576
+Gereksinimler, yani işlevsel olmayan gereksinimleri de kapsayan gereksinimler veriliyor.
+
+342
+01:49:00,180 --> 01:49:23,619
+Şimdi tabii biz gereksinim analizini daha ayrıntılı olarak görmedik. İşlevsel ve işlevsel olmayan gereksinimler dediğimizde işlevsel gereksinimlerden bu işi yapmak için neler yani bu işin içinde hangi alt başlıklar kapsanmaktadır bu bahsediliyor.
+
+343
+01:49:27,631 --> 01:49:46,911
+Sadece bu işe özgü olmayan özellikleri nelerdir? Kalite özellikleri mesela. Neyse, bu gereksinim analizine geldiğimizde fonksiyonel ve fonksiyonel olmayan gereksinimleri daha iyi kavrayabileceksiniz.
+
+344
+01:49:50,355 --> 01:50:08,195
+Yazılım mimarisinin tanımlanması, tabi bu aslında tasarım modelinde tam yazılım mimarisi belirlenecek. Burada bir başlangıç çalışması gerçekleştiriliyor. Ön tasarım modeli.
+
+345
+01:50:08,595 --> 01:50:16,855
+Ve dikkat ederseniz, burada ilk risk değerlendirmesi yapıldı başlangıç aşamasında.
+
+346
+01:50:17,395 --> 01:50:26,995
+Elaboration fazında da bu risk listesi üzerinden geçirilerek netleştiriliyor.
+
+347
+01:50:27,295 --> 01:50:29,535
+Yani bu uygulamada hangi riskler var?
+
+348
+01:50:29,535 --> 01:50:36,595
+Ayrı bir bölüm değil ama bu hazırlık ve bu modelleme aşaması.
+
+349
+01:50:36,595 --> 01:50:51,815
+Aslında riskler tanımlanmış oluyor. Proje planı, milestone'larımız nelerdir? Bunlar da elaboration aşamasında çıkıyor.
+
+350
+01:50:54,931 --> 01:51:18,292
+Construction aşamasında modelin tasarlanması, yazılım komponentlerinin belirlenmesi, bütünleşik yazılım artımlarının, yani yazılımın her ürününün oluşturulması. Şurada tekrar şekle bakalım.
+
+351
+01:51:18,868 --> 01:51:35,648
+Construction yapım aşaması. Burada modelleme sırasında ortaya çıkanların ayrıntılı tasarımının yapılması ve program ya da veri tabanı gerçeklemesiyle ortaya çıkarılması anlaşılır.
+
+352
+01:51:37,548 --> 01:51:44,188
+İşte bu construction aşamasında yapılanlar ayrıntılı bir tasarım modeli.
+
+353
+01:51:44,528 --> 01:51:56,048
+Yazılım elemanlarının ortaya çıkışı ve bütünleşik yazılım artımlarının elde edilmesi.
+
+354
+01:52:10,612 --> 01:52:35,212
+oluşturulması gerekir. Bunlar hem kullanıcı belgeleri, hem kurulum el kitapları olarak destek belgeleri ve o anda hangi inkrementta, hangi artımda olduğumuzun ifadesi construction fazında yapılanlar.
+
+355
+01:52:35,731 --> 01:52:58,471
+Şimdi şu şeklin üzerinden tekrar construction aşamasında modellemeden sonra ayrıntılı tasarımın, burada başlanmış olan tasarımın ayrıntılandırılması, programının yazılması, kodunun oluşturulması. Tekrar sorunuz mu var?
+
+356
+01:53:06,644 --> 01:53:07,923
+Soru mu sordu birisi?
+
+357
+01:53:11,384 --> 01:53:11,944
+Aynen.
+
+358
+01:53:12,944 --> 01:53:27,923
+Construction aşamasında test planlarının, bu hazırlanan yazılım komponentleri üzerinde test planlarının oluşturulması, test keyfilerinin oluşturulması ve belgelemenin yapılması gerekiyor.
+
+359
+01:53:29,744 --> 01:53:31,644
+Bundan sonraki adımda...
+
+360
+01:53:32,180 --> 01:53:34,819
+Transition adımı
+
+361
+01:53:35,475 --> 01:53:50,475
+Şurada, deployment ile yani müşteri değerlendirmesine eklemekle, müşteri değerlendirmesine gitmek için geçiş işlemlerinin yapılması.
+
+362
+01:54:02,068 --> 01:54:12,787
+Bir test raporlarının oluşturulması ve genel bir kullanıcı geri beslemesi, kullanıcı geri beslemesinin yapılması.
+
+363
+01:54:15,024 --> 01:54:29,804
+İşte alfa test, beta test bunları sonra göreceğiz. Bunlar da bu translation fazında gerçekleştirilmesi gereken işlemler şeklinde karşımıza çıkabilirler.
+
+364
+01:54:36,275 --> 01:54:40,496
+Şimdi bu işleri gerçekleştiriyoruz.
+
+365
+01:54:45,043 --> 01:55:12,764
+Hangi sırada gerçekleştirdiğimizi de biliyoruz. Hangi aşamada ne kadar kişi çalışıyor? Biraz bu tarafını belki geçen seneki sistem analizi dersinde de göstermiş olabilirim bunu ama bunu canlandırmak için hangi aşamada kimler ne kadar çalışıyor? Bunun üzerinde de.
+
+366
+01:55:13,043 --> 01:55:14,283
+Durmak istiyorum.
+
+367
+01:55:18,195 --> 01:55:20,195
+Şuradan paylaşımını değiştireyim.
+
+368
+01:55:51,604 --> 01:56:16,663
+Proje ekibine bakarsak, proje planlamadan sonra planlama aktiviteleri, analiz projenin tanımlarında her bir farklı modelde bu analizin, tasarımın, gerçekleştirmenin yapıldığını görüyoruz ama sırası değişebiliyor.
+
+369
+01:56:17,119 --> 01:56:21,119
+Adımların önemleri değişebiliyor.
+
+370
+01:56:25,235 --> 01:56:43,835
+Öncelik, sonralık aslında sıralaması değişmiyor ama aynı anda yapılabilmesi ve bu adımların işlerinin bazen daha bütünleşik olması gibi farklılıkları olabiliyor.
+
+371
+01:56:48,819 --> 01:57:07,819
+Kimler daha çok çalışacak, daha çok çalışan olacak diye baktığımızda proje zamanı ilerledikçe planlama...
+
+372
+01:57:08,243 --> 01:57:25,563
+İlk başta daha az kişi tarafından yapılıyor. Ama bu planlamayı yaparken tabii ki müşteri tarafından istek ve bilgileri alarak proje yöneticisi daha fazla çalışacak.
+
+373
+01:57:27,667 --> 01:57:55,667
+Ama burada proje ekibindeki kişilere ve proje yazılım geliştirme projesi ekibinde olmayan yazılım birimini destek veren bilgisayar uzmanlarına danışarak, örneğin network, veritabanı gibi genel alanlarda çalışanlara danışarak planlanıyoruz.
+
+374
+01:57:55,667 --> 01:58:20,347
+Anlamayı gerçekleştirecek. Daha sonra analiz aşamasında daha fazla kişi çalışacak. Analiz aşamasında çalışanlar, yazılım geliştiricilere yine soru sorarak burada
+
+375
+01:58:20,948 --> 01:58:36,807
+Sistem analistleri çalışabilir, yazılım mühendisleri de çalışabilir ama daha çok bu yazılım geliştirilmesi sırasında
+
+376
+01:58:37,395 --> 01:58:47,975
+Analiz aşamasında sistem analizleri ve yazılım geliştiriciler, yazılım mimarları tasarım aşamasında daha çok çalışacaklar.
+
+377
+01:59:03,539 --> 01:59:16,259
+Modellemeler kapsamında daha fazla yapılacak işler var. Diagramlar çizilecek. Bunların bütünlük içinde çalıştıkları duyulacak.
+
+378
+01:59:21,043 --> 01:59:25,343
+Daha az çalışan var implementasyona göre.
+
+379
+01:59:25,763 --> 01:59:39,083
+İmplementasyonda doğal olarak bu yazılım geliştirme işinde çalışanlar daha fazla olacak.
+
+380
+01:59:42,263 --> 01:59:46,883
+İmplementasyon aşaması en fazla çalışanın olduğu.
+
+381
+01:59:47,376 --> 01:59:51,196
+Aşama olarak karşımıza çıkıyor.
+
+382
+01:59:53,976 --> 01:59:56,496
+Buraya kadar sorunuz var mı?
+
+383
+01:59:57,136 --> 02:00:08,376
+Hem şeylerle ilişkili, yazılım geliştirme süreciyle, hem de gerçekleştirdiğiniz...
+
+384
+02:00:41,684 --> 02:00:56,404
+Evet, bugünkü konularla ilişkili sorunuz var mı? Modeller anlaşıldı mı? Bugün özellikle klasik süreç modellerinden bahsettim.
+
+385
+02:00:56,404 --> 02:01:03,404
+Ama burada şu şeyi tekrar paylaşayım.
+
+386
+02:01:23,764 --> 02:01:26,184
+Oya hocam, selamlar. Ben girebildim.
+
+387
+02:01:26,203 --> 02:01:33,423
+Merhabalar Yunus. Şimdi anlatabilirsin öğrencileri.
+
+388
+02:01:33,844 --> 02:01:39,123
+Tamam hocam. Bu arada baktım, ben de bileşen tabanları falan hemen hemen aynı yerdeyiz.
+
+389
+02:01:39,163 --> 02:01:39,403
+Evet.
+
+390
+02:01:39,403 --> 02:01:45,623
+Ben tam bu artımsal süreçlerin tanımının başına geldim. Orada sizleriniz, orada bıraktım.
+
+391
+02:01:45,663 --> 02:01:45,943
+Evet.
+
+392
+02:01:45,943 --> 02:01:46,963
+Peki.
+
+393
+02:01:48,595 --> 02:01:52,415
+Katılan bütün öğrenciler duyabiliyor değil mi?
+
+394
+02:01:55,355 --> 02:01:56,435
+Duyuyoruz hocam.
+
+395
+02:01:56,735 --> 02:01:58,667
+Tamam, evet. O zaman...
+
+396
+02:01:58,739 --> 02:02:01,659
+Yunus hocamın anlatacaklarını dinleyebiliriz.
+
+397
+02:02:01,759 --> 02:02:17,899
+Teşekkür ederim. Bu arada sizden izin isteyeceğim. Sizin stop share yapmanızı ve onun ardından hemen o aynı düğmenin altında çıkan işte birden fazla kullanıcı aynı anda paylaşabilir ayarını açmanızı rica edeceğim hocam.
+
+398
+02:02:18,799 --> 02:02:19,319
+Bir dakika.
+
+399
+02:02:19,999 --> 02:02:22,039
+Bu şey mi?
+
+400
+02:02:22,771 --> 02:02:24,771
+Katılımcılardan mı?
+
+401
+02:02:25,311 --> 02:02:31,351
+Tamam yaptım. Siz stop edince ben girebildim işin içerisine.
+
+402
+02:02:31,891 --> 02:02:59,891
+Arkadaşlar, dersimizi kestiğim için özür dilerim. Fakat önemli bir destek arayışındayım bu aşamada. Şimdi sizler üçüncü sınıf öğrencisi olarak duymuşunuzdur mutlaka. Fakültemiz tüm bölümleri ile MÜDEK akreditasyonu için başvurdu. Tüm raporlarımızı hazırladık. Şimdi artık Mart sonu itibariyle MÜDEK değerlendiricileri kurumumuz.
+
+403
+02:02:59,891 --> 02:03:18,771
+Bu konuları online ziyaret ederek değerlendirme aşamasını tamamlayacaklar. Programımızın akredite olması ne demek ve ne gibi sonuçlar ortaya çıkartır? Ülkemizdeki MÜDEK kurumu mühendislik programlarını akredite etmeye yetkisi olan bir kuruluş.
+
+404
+02:03:27,891 --> 02:03:43,072
+Akredite olan programların akreditasyon seneleri hem MÜDEK web sitesinde hem Washington Accord web sitesinde sürekli taze olarak tutulmaktadır ve güncellenmektedir.
+
+405
+02:03:43,671 --> 02:03:50,271
+Eğer MÜDEK akreditasyonunu alırsak bu akreditasyon en az 2 sene için verilmekte.
+
+406
+02:03:50,911 --> 02:03:54,791
+Kuvvetli bir başvuru 4 ya da 5 sene için akreditasyon alabilmekte.
+
+407
+02:03:55,891 --> 02:04:23,891
+Bir eksiklik yoksa, ama bazı zayıflıklar söz konusuysa, iki senelik akreditasyon alınır. İster iki sene olsun, ister dört ya da beş sene olsun, o sürenin sonunda tekrar akreditasyon başvurusu için, başvurup süreçlerin tekrarlandığı bir çalışma biçimi ve akredite olan programlardan mezun olan öğrencilerin diplomaları, uluslararası ölçekte daha yüksek tanınılığa...
+
+408
+02:04:23,891 --> 02:04:37,971
+Ve geçerliye sahip olmuş oluyor. Bu nedenle akreditasyon çalışmalarımızı başlattık. Daha eskiden de akreditiydik ama akreditasyonumuzun süresi 2016'da doldu.
+
+409
+02:04:37,971 --> 02:04:49,112
+2015'den kaynaklanan olaylar nedeniyle, ülke çapındaki elim olaylar nedeniyle toparlayamadık tekrar akreditasyon çabalarını.
+
+410
+02:04:51,891 --> 02:05:09,891
+Tekrar akvalitasyon için irademizi koyduk ortaya. Bu anlamda sizlerin de desteğine ihtiyacımız olacak. Hakemler, değerlendiriciler sadece akademik personel ile idari personel ile değil, öğrencilerle de görüşecekler. Sizleri de çeşitli sorularla...
+
+411
+02:05:11,475 --> 02:05:33,015
+Ne diyeyim? Bölüm, program, üniversite, sizlere sağlanan kaynaklar, bunların yeterliliği, yetersizliği konusunda görüşlerinizi alacaklar. Çeşitli sorularla bunların düzeyini anlamaya, öğrenmeye çalışacaklar. Bu nedenle belirli istekleri oldu müdek değerlendiricilerinin.
+
+412
+02:05:33,376 --> 02:05:53,016
+Bu kapsamda 29 Mart pazartesi günü saat 11.40 ile 12.20 arasında düzenlenecek bir online oturumda öğrencilerle görüşmek istiyorlar. Bu görüşmeyi yaparken de belirli koşulları taşıyan öğrencilerle görüşmek istiyorlar.
+
+413
+02:05:53,016 --> 02:06:01,356
+Bu anlamda bizim bölümümüzde soyadlarının ilk harfleri A, E ve K harfleri ile.
+
+414
+02:06:01,376 --> 02:06:10,096
+başlayan farklı not ortalaması düzeylerinde yüksek, ortak, düşük ikişer öğrenci talep ediyorlar.
+
+415
+02:06:10,868 --> 02:06:29,087
+Bu nedenle, ben önce kendi yazılım mühendisliği dersiminin grubunun başında öğrencilerimle konuştum. İki destek aldım onlardan sağ olsunlar. Şimdi sizlerden de gönüllü olan arkadaşlarımdan ve bu şartlara uygun arkadaşlarımdan destek rica ediyorum.
+
+416
+02:06:38,868 --> 02:07:05,608
+Örneğin bir desteğim var, bir desteğe daha ihtiyacım var mesela. Bu anlamda ben şimdi ders katılımcı listesini de bir yandan açtım. Burada şimdi listeden tarayarak ve katılımcı arasında tarayarak bulduğum arkadaşlarıma sormak istiyorum. Destek olur musunuz, olmaz mısınız diye. Şimdi mesela neymiştik? A, E, K.
+
+417
+02:07:06,068 --> 02:07:11,068
+Mesela, evet. Alaaddin [öğrenci]. Burada galiba.
+
+418
+02:07:11,908 --> 02:07:12,847
+Evet hocam, buradayım.
+
+419
+02:07:13,488 --> 02:07:18,108
+Şimdi dinlediğiniz Alaaddin, ne dersiniz? Bu konuda bize destek olmak ister misiniz?
+
+420
+02:07:18,108 --> 02:07:26,568
+Destek olmak derken, şunu da bir açığa çıkartayım. Olumlu olumsuz, her türlü görüşünüzü kendi açınızdan aktarınız lütfen.
+
+421
+02:07:26,707 --> 02:07:47,868
+Olumlu görüşlerde biz bunları daha ileriye taşıyan, iyileştirmeye çalışacağız. Olumsuz görüşlerinizle bunları iyileştirmeye çalışacağımız noktalar olacak. O yüzden lütfen kendi samimi yanıtlarınızı vereceğiniz bir konuşma olarak olacak bunda. Desteklemek ister misiniz? Bizi ve arkadaşlarınıza.
+
+422
+02:07:48,340 --> 02:07:50,860
+Evet hocam, tabii ki desteklemek isterim olabilir.
+
+423
+02:07:50,860 --> 02:08:01,660
+Hay hay, çok teşekkür ederim Allahattin. Şimdi bu anlamda ben destek vermeyi kabul eden bütün arkadaşlarımın Yusis e-mail adreslerine mesaj göndereceğim.
+
+424
+02:08:02,300 --> 02:08:13,400
+29. pazartesi 11.40-12.20 arasında olacağını hatırlatacağım ve o aralıkta eğer dersi olan öğrenciler varsa bana haber vermelerini isteyeceğim.
+
+425
+02:08:13,400 --> 02:08:16,340
+Çünkü ders veren hocaya...
+
+426
+02:08:16,340 --> 02:08:25,440
+Bence bu şekilde görevlendirdik. Onu bütten bugün izinli sayın diyeceğiz. O şekilde ek bilgi de vereceğiz hocalara. O açıdan da çekinceniz olmasın.
+
+427
+02:08:26,620 --> 02:08:32,840
+Keza zaten online derslerinde bir güzelliği. Sonra tekrar da izleyebiliyorsunuz. Öyle bir avantajınızı da buluyor.
+
+428
+02:08:32,840 --> 02:08:34,780
+Peki hala.
+
+429
+02:08:35,572 --> 02:09:00,552
+O zaman şimdi orta not ortalması gruplarına şöyle bir inelim. Sarı filan gibi bir aralıktan bakalım. Mesela örneğin diyelim ki 2.94'de yüksek mi kalıyor? Çok da şey değil aslında. Ama soyad olarak A, E, K bakacağız mesela. Örneğin [öğrenci] da aramızda mı? Değil.
+
+430
+02:09:01,363 --> 02:09:08,403
+A.E.K. [öğrenci], [öğrenci] aramızda mı? Değil.
+
+431
+02:09:10,264 --> 02:09:16,203
+Ondan sonra cema bakalım A.E.K. [öğrenci] aramızda değil.
+
+432
+02:09:17,123 --> 02:09:22,363
+A.E.K. [öğrenci] aramızda mı? Değil.
+
+433
+02:09:23,264 --> 02:09:26,564
+[öğrenci] aramızda mı?
+
+434
+02:09:27,572 --> 02:09:31,391
+Bakıyorum, değil galiba. Tunat Adede'ye de yazmış olabilir.
+
+435
+02:09:33,192 --> 02:09:38,551
+Art [öğrenci] aramızda mı? Bakıyorum, değil.
+
+436
+02:09:41,051 --> 02:09:46,291
+[öğrenci] aramızda mı? Değil.
+
+437
+02:09:47,771 --> 02:09:52,411
+Ayka, [öğrenci] aramızda mı? Değil.
+
+438
+02:09:53,043 --> 02:10:18,683
+[öğrenci] aramızda değil. [öğrenci] aramızda mı? Değil. Sözde diyorum çünkü bazen başka bilgisayardan girmiş olabiliyorsunuz. Ad başka olarak gözüküyor. O da her zaman ayrı bir olasılık oluyor. [öğrenci] aramızda mı? Değil.
+
+439
+02:10:19,347 --> 02:10:45,127
+A.E.K. [öğrenci] aramızda mı? Değil. A.E.K. [öğrenci] aramızda mı? Değil. A.E.K. [öğrenci] aramızda mı? Değil. Umut [öğrenci] aramızda mı? Değil.
+
+440
+02:10:45,811 --> 02:10:50,172
+AYK, AYK, AYK. [öğrenci] aramızda mı? Değil.
+
+441
+02:10:51,311 --> 02:10:59,511
+AYK, AYK, AYK. [öğrenci] aramızda mı? Bakalım yukarı çıkıyorum.
+
+442
+02:10:59,511 --> 02:11:12,792
+AYK, [öğrenci] aramızda mı? Değil. AYK, [öğrenci] aramızda mı?
+
+443
+02:11:13,971 --> 02:11:29,992
+[öğrenci] değil. Bakalım. [öğrenci] aramızda mı? [öğrenci] ya da [öğrenci] diye bakalım. Onlarımızda değil galiba.
+
+444
+02:11:38,868 --> 02:11:56,828
+A.E.K. [öğrenci] 2. aramızda mı? Değil. [öğrenci] aramızda mı? [öğrenci] değil. [öğrenci] aramızda mı? Değil.
+
+445
+02:12:05,300 --> 02:12:08,340
+[öğrenci] [öğrenci] aramızda mı?
+
+446
+02:12:09,119 --> 02:12:10,119
+K.
+
+447
+02:12:11,119 --> 02:12:11,880
+Değil.
+
+448
+02:12:12,640 --> 02:12:17,320
+[öğrenci] aramızda değil.
+
+449
+02:12:18,239 --> 02:12:19,619
+[öğrenci]'ya da bakalım.
+
+450
+02:12:19,880 --> 02:12:20,260
+Değil.
+
+451
+02:12:20,720 --> 02:12:22,279
+Ve bu kadar.
+
+452
+02:12:22,752 --> 02:12:32,752
+Peki. Oya Hocam teşekkür ederim. [öğrenci] sana da özellikle teşekkür ederim. Durum bu kadar. Ben müsaadenizle...
+
+453
+02:12:32,752 --> 02:12:34,372
+Kaç bir şey oldu şimdi?
+
+454
+02:12:35,123 --> 02:12:45,963
+Hocam, sizden bir kişi alabildim. Toplamda 1, 2, 3 öğrenci oldu 3. sınıflardan. Şimdi bana yine iş düşüyor.
+
+455
+02:12:45,963 --> 02:12:54,423
+Yusist'ten arkadaşlarım, işte AYK, telefon etmeye başlayacağım. Efendim?
+
+456
+02:12:56,283 --> 02:13:02,143
+[öğrenci] burada görünüyor ama az önce sordun mu onun adını?
+
+457
+02:13:02,323 --> 02:13:08,443
+Hayır hocam, soyadlardan bakıyorum, A, E, K diye. A, E, K bulamazsam diğer harflere geçeceğim.
+
+458
+02:13:10,263 --> 02:13:14,343
+Ama aslında, yani bilmiyorum [öğrenci], eğer yardımcı olmak isterseniz olur.
+
+459
+02:13:14,643 --> 02:13:19,983
+Çünkü hani kız öğrencimiz çok çıkmadı destek verecek olanlardan.
+
+460
+02:13:20,363 --> 02:13:23,163
+Müsaitseniz sizin de desteğinizi alırız [öğrenci].
+
+461
+02:13:25,283 --> 02:13:26,483
+Ne dersiniz?
+
+462
+02:13:30,771 --> 02:13:32,551
+[öğrenci] burada mısın?
+
+463
+02:13:40,051 --> 02:13:49,192
+Gerçi [öğrenci]'da Yeşil gruptan ve Yeşil gruptan iki desteğimiz var ve daha çok Sarıya Mühendisliği gruplardan alsak ve kırmızılara yakın.
+
+464
+02:13:50,131 --> 02:13:52,231
+Orantılı olması istenmiş.
+
+465
+02:13:55,412 --> 02:13:58,851
+Hocam, teşekkür ederim. Çok sağ olun.
+
+466
+02:13:59,011 --> 02:14:00,492
+Tamam, teşekkürler.
+
+467
+02:14:00,492 --> 02:14:01,811
+Teşekkürler.
+
+468
+02:14:03,192 --> 02:14:04,332
+Sağ olun hocam.
+
+469
+02:14:11,220 --> 02:14:24,239
+Dersi bitirmeden önce bu hafta anlattıklarımla ilişkili sorunuz var mı? Yani yazılım geliştirme süreç modelleri konusunda.
+
+470
+02:14:42,323 --> 02:14:47,404
+Yazılım geliştirme süreç modelleri konusunda sorunuz var mı?
+
+471
+02:14:49,203 --> 02:15:01,484
+Bugün ilk dersin başında da bahsettiğim gibi yazılım geliştirme sürecini tekrar adımlarıyla gördük.
+
+472
+02:15:04,659 --> 02:15:23,259
+Farklı dizilişleriyle, farklı hedefler için nasıl kullanıldığını belirterek bu modelleri işledik ve yazılım geliştirme süreç modellerinin çevik hali.
+
+473
+02:15:25,363 --> 02:15:43,363
+Geldiğinde nasıl bir yaklaşımla ele alıyoruz? Onu da haftaya göreceğiz. Bu arada case kavramı üzerinde durduk. Computer Aided Software Engineering. Bütün bu kavramlarla ilişkili sorunuz var mı?
+
+474
+02:15:50,612 --> 02:16:06,372
+Çetten yazan da yok. O zaman haftaya çevik modelleri görerek devam edeceğiz.
+
+475
+02:16:09,939 --> 02:16:35,319
+Projelerinizi daha sonra vereceğim. Bir projeniz olduğunu biliyorsunuz. Proje gruplarınızı oluşturmaya çalışın. Dört kişi ya da projeyi biraz daha genişleterek beş kişi de yapabilirsiniz. Proje gruplarınızı oluşturmanız gerekiyor.
+
+476
+02:16:35,827 --> 02:16:52,487
+Notlarınızda projeler ve iki sınav olacak. Bir sınav daha klasik sınav şeklinde, bir sınav da test sınavı şeklinde gerçekleştirilecek.
+
+477
+02:16:55,007 --> 02:17:02,327
+Bu çerçevede de proje tanımlarını daha sonraki haftalarda vereceğiz.
+
+478
+02:17:03,123 --> 02:17:05,123
+Başka sorunuz var mı?
+
+479
+02:17:14,963 --> 02:17:26,083
+Evet, o zaman dersi bitiriyorum. Haftaya belirttiğim konularda çalışmak üzere devam edeceğiz. İyi haftalar diliyorum.
+
+480
+02:17:27,164 --> 02:17:27,863
+Teşekkürler hocam.

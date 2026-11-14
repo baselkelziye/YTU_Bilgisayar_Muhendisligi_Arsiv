@@ -1,0 +1,867 @@
+1
+00:00:23,539 --> 00:00:29,699
+Evet, merhabalar arkadaşlar. 10-5 geçe başlayalım. Bir iki dakika daha bekleyelim.
+
+2
+00:01:37,012 --> 00:01:52,111
+Evet arkadaşlar, başlayabiliriz herhalde. Yeterdi süre geçti. Geçen hafta ders yapamadım. Bir yere gitmiştik görevlendirmeyi de. Uçak iptal oldu vs. derken iki grubu beraber yapma durumumuz oldu.
+
+3
+00:01:53,072 --> 00:02:03,652
+Gökhan Hoca zannedersem diyotları anlatmış ama ben de hızlıca üstümden geçmek istiyorum. Zaten yeterince hafta bazından baktığımızda konuların yetişememe gibi bir durumun söz konusu değil.
+
+4
+00:02:04,115 --> 00:02:27,295
+Burada biraz PN-Church'ın dediğimiz PVN materyalle yarı iletken, katkılı yarı iletken materyallerin oluşma biçiminden, nasıl oluştuğundan ve diyotun aslında elektronik olarak karakteristiğinin fiziksel olarak nasıl olduğundan, fiziksel olan bir olay neticesinde olması durumunun oluştuğundan, bunlardan biraz daha bahsedelim.
+
+5
+00:02:27,764 --> 00:02:42,624
+Diyotu bir tur daha üzerinden geçerek daha net anlayalım. Çünkü transistör dediğimiz yapı veyahut da ileride MOSFET dediğimiz yapılar bizim aslında hepsinde. Biz yarı iletkinlerin PN Junction modülünü aslında kullanacağız.
+
+6
+00:02:45,139 --> 00:02:55,379
+P-Type'ın ve N-Type'ın yarayı reskenlerin bir araya gelirken oluşturduğu etki tepki olayları önemli. Bunları bir daha üstünden geçmiş olalım.
+
+7
+00:02:56,211 --> 00:03:23,831
+Bu hafta da. Evet, zaten anlattı muhtemelen Gökhan Hoca ama ben sanki sıfırdan olmasa da yine bir tık daha tekrardan üstünden geçeceğim. Diyot dediğimiz iki terminalde bir yapı. Yani iki tane bacağımız var. Transistör üç terminalde mesela veya direnç iki terminalde diyoruz değil mi? Yani aslında iki tarafı, iki ucu olan, iki bacağı olan devre elemanı diyor. Da aynı bir direnç gibi.
+
+8
+00:03:24,211 --> 00:03:38,991
+Transüter ama üç terminalde, dört terminalde yapılar var, altı terminalde yapılar var gibi gibi terminalden kastımız bizim elektronik elemanlarından bahsederken bacak bağlantısını kastediyoruz, bacakları kastediyoruz.
+
+9
+00:03:39,831 --> 00:03:45,931
+Evet, iki terminalde bir yapısı var ve diyotun genel gösterimi devre içerisinde bu şekilde bir üçgen.
+
+10
+00:03:46,451 --> 00:04:05,111
+Ve önündeki tereyi de gösteriliyor. Aslında en ideallebilmemiz gereken şu ideal diyot dediğimizde, şimdi burada iki yapı oluşacak, ideal diyot diye bir tabir var. Bir de normalde gerçek halde kullanılan diyot diye bir yapı var.
+
+11
+00:04:12,656 --> 00:04:28,620
+Şu iki çalışma prensibini aklımıza getireceğiz. İdeal diyotlar eğer ki doğru bir polarizasyonla, doğru bir iletim hattıyla beslenirse, kısa devre gibi...
+
+12
+00:04:28,692 --> 00:04:45,192
+Ama ters bir kolorizasyonla beslenirse, yani çalışması için uygun olmayan bir potansiyel fark oluşturmak üzerine beslenirse, o zaman da açık devre olarak çalışacak diyeceğiz. Bu ideal bir diyotun çalışma prensibi.
+
+13
+00:04:46,192 --> 00:04:53,771
+Sadece ideal diyotlar, tekrar ediyorum, tekrar tekrar üstüne vurguluyorum. İdeal diyot diyorsak eğer,
+
+14
+00:04:54,259 --> 00:05:18,279
+Doğru polarma da kısa devre, ters polarma da da açık devre. Ki açık devrenin önemi şu aslında. Burada çok sonsuz derecede bir direncin olmasını kastediyoruz. Kısa devrenin de olayı şu direncin olmadığını gösteriyoruz. Yani herhangi bir engelleyici bir yapının bulunmadığını söylüyoruz doğru polarma için.
+
+15
+00:05:19,252 --> 00:05:36,231
+Dediğim gibi bu ideal bir diyotun çalışma krensibi. Aksi belirtemedikçe ideal diyot alınabilir. Sorularda da biz ideal diyotmuş gibi yapabiliriz ama aksi ideal olmayan bir diyot diye belirtilirse nüansları var onlara geleceğiz.
+
+16
+00:05:40,819 --> 00:05:53,919
+Burada tabii doğru polarmada oluşan akımın yönü de önemli. Mesela işte artı eksi doğru bir polarmada biz aynı direncin üzerinden geçen akımı gösterirken şöyle gösteriyorduk değil mi devlet evlisinden?
+
+17
+00:05:56,052 --> 00:06:16,512
+Mesela direnç üzerinde böyle bir polarizasyon oluştuysa, artıdan eksi bir akımın geçtiğini söylüyordum. Bu tüketeşler için mi? Üreteşler için ise tam tersini söylüyorum. Değil mi? Yani eğer ki artı ve eksi bir uçtan bahsediyorsak, içeride de yokur biz.
+
+18
+00:06:17,620 --> 00:06:40,000
+Artıdan çıkma durumunda bir üretişten bahsediyordum. Bu diyot da aslında tüketici. Yani absorb eden bir devre elemanı. O nedenden dolayı da artı eksik polarizasyonu doğru polarmada, ki doğru polarma olayına geleceğiz biraz sonra, akımın oluştuğu yön yine artının eksiği, aynı dirençte nasıl oluşuyorsa böyle oluşacak.
+
+19
+00:06:47,028 --> 00:07:00,228
+Diyodun karakteristiğinde ideal bir diyotta şunu bekliyoruz. Ne zamanki artı ve eksi uçlarında doğru polarizasyon gerçekleşirse bu ne demek oluyor? Potansiyel farkı.
+
+20
+00:07:13,076 --> 00:07:39,656
+Yani şu kısmı kastediyoruz. Diyotun üzerinden geçen ı-d akımı maksimum olacak. Yani kısa devre olmuş gibi olacak ve ı-d akımı maksimum. Yani sonsuz olmuş olacak. Bunu teorik yani ideal diyotta şöyle izah edebiliyoruz esasında. Kısa devre olduğunda bir direnç olmayacak değil mi? Ve direncin bulunmadığı yerlerde akım ölçülemez esasında. Yani sonsuzdan kastımız bu.
+
+21
+00:07:40,403 --> 00:07:52,324
+İdeal olmayan diyotlarda böyle gösterim olmayacak. Buna değineceğiz ileride ama ideal diyot da bizim için sıfırın üstündeki herhangi bir pozitif potansiyel farkla,
+
+22
+00:07:53,383 --> 00:08:00,644
+diyotun üzerinden geçen akımın sonsuz olduğunu söyleyeceğiz.
+
+23
+00:08:01,055 --> 00:08:07,536
+Şimdi peki burada potansiyel farkının yönü tabii ki de diyotun yönüyle alakalı orantılı bir şekilde olması lazım.
+
+24
+00:08:07,536 --> 00:08:14,855
+Biz bu tarafa anot bacağı diyoruz. Bu tarafa ise katot bacağı diyoruz.
+
+25
+00:08:16,564 --> 00:08:40,923
+Anot'a belki şöyle izah aklınızda kalabilir. Artının anot bacağına, eksinin de katot. Yani A'dan belki aklınızda kalabilir. Yani anot bacağına artı bir polarizasyonun, katot bacağına da eksi bir polarizasyonun belirilmesi lazım ki bizim doğru polarma dediğimiz feed forward veya ileri besleme dediğimiz.
+
+26
+00:08:41,940 --> 00:09:02,680
+Çalışma karakterisinde sokulsun biliyorum. Ve o durumda yani anotuna artı, katotuna eksi gerilim verildi veya işte anotuna artı veya şöyle diyelim, anot ile katot arasındaki potansiyel fark anottan artı olacak şekilde olacağı durumda ıd akımının maksimum olduğunu söylüyoruz.
+
+27
+00:09:08,083 --> 00:09:26,203
+Diyotun üstündeki feed forward'ın ileri beslemenin potansiyel farkı ile akımı maksimum olduğu için böldüğümüzde RF limit sıfıra doğru gidecek değil mi? Limit sıfıra doğru gittiği için de aslında kısa devrilmiş gibi ideal olan yapıda kısa devrilmiş gibi davranacak diyoruz.
+
+28
+00:09:30,355 --> 00:09:46,536
+Eksi, katoduna artı. Yani potansiyel farkın katod tarafından artılı olacak şekilde ayrılırsa, verilirse, ıd akımı normalde hani oluşması beklenen ters akım oluşması. Yani bu artıdan eksiye doğru oluşması lazım değil mi?
+
+29
+00:09:57,107 --> 00:09:59,947
+Buraya bir bariyer oluşturması söz konusu oluyor.
+
+30
+00:10:00,000 --> 00:10:28,000
+Ve burada bizim VR bölü IR'miz, buradan bir akım oluşmadığı için, yani çok çok çok ufak bir akım oluştuğu için, ona da biz sızıntı akımı değil ki diyeceğiz. Çok çok ufak bir akım oluştuğu için biz bu gerilimi, diyotun üzerindeki gerilimi çok çok ufak bir akıma böldüğümüzde maksimum, yani bu diyotun üzerindeki direncin, rezidif etkinin sonsuz olduğu için.
+
+31
+00:10:28,000 --> 00:10:54,759
+Yani aslında bir açık devreymiş gibi olduğunu göreceğiz. Bunun tabii ideal gösterimi bu değil ama şey yani ideal olmayan gösterimi bu değil ama ideal gösterimde biz şunu savunacağız. VD'nin yani diyotun üzerindeki potansiyel farkın negatif olması durumunda bunun üzerinden herhangi bir I-D akımının diyot üzerinden geçen akımın olmadığını, oluşmadığını söyleyeceğiz.
+
+32
+00:10:55,956 --> 00:11:02,136
+İdeal yapı bunları arkadaşlar. Bunları şuraya da yazalım. İdeal diyot karakteristiği.
+
+33
+00:11:04,496 --> 00:11:13,416
+Şimdi yarı iletkenlere biraz girelim. Yarı iletkenler genelde 3 metallerlerden yapılıyor. Silisium, Germanyum ve Galyum, Arselin.
+
+34
+00:11:13,908 --> 00:11:25,968
+Bu materyaller aslında neden önemli? Çünkü bunlar katkı maddesi alınca yarı iletkenlerin normalde durduğu yerde iletkenlik düzeyi düşüktür.
+
+35
+00:11:26,419 --> 00:11:49,499
+Çok bir iletken kadar iletkenliğe sahip değildir. Zaten bunu rezitifi anlatırken, materyaların direnç rezitif etkisini anlatırken de bahsetmiştik devre teorisinden. Yarı iletkenler dediğimiz yapılarda aslında iletken olma durumunu geçirmesi için biraz katkı maddesi koymak gerekiyor.
+
+36
+00:11:54,419 --> 00:11:57,399
+Kolay kabul eden gelmeyelim.
+
+37
+00:11:57,519 --> 00:12:00,399
+Silişyon ve galiba arseniz kullanılıyor genelde.
+
+38
+00:12:05,587 --> 00:12:26,668
+Katkı maddesi ekleme işlemi neyse? Biz doping işlemi diyoruz arkadaşlar. Ve biz bu germanyum, silisyum veya arsenit metallerini belli bir koşullar altında katkı maddesi, nasıl bir katkı maddesi? Bu tabii bir kimyasal vesaire değil. Yani elektron veya proton yüklenmesi veya çekilmesi yapılıyor.
+
+39
+00:12:27,220 --> 00:12:50,320
+Bu durumda eğer ki materyale germanyum olur, silüsyum olur, elektron yüklenmesi yapıldığında ne olacak bu materyalin içerisindeki? Elektron sayısı artacak. Elektron sayısı arttığı için de n-type materyali olduğu, yani n-type bir yarı iletken olduğu bu ismine nitelendiriliyor.
+
+40
+00:12:53,076 --> 00:13:06,415
+Holes diyoruz Türk İngilizce, pozitif yüklerin daha fazla olduğu durumda ise key type, yani o şekliyle katkı maddesi katkılandırıldığı vakit ise key type materyale dönmüş oluyor.
+
+41
+00:13:06,415 --> 00:13:17,795
+Yani genel olarak söyleyecek olursak n-type yarı iletkenler, içerisinde elektronların çok daha fazla olduğu ve iletkenliği bir tık daha artmış olan,
+
+42
+00:13:18,163 --> 00:13:37,203
+Bir metayeli gösteriyor. P-type metayeller ise içerisindeki pozitifliklerin daha fazla olduğu ve bu yüzden de yine onun da elektrik iletkenlerinin arttığı, normal sim kandukterdan bir tık daha iyi iletkenlik haline geldiği bir metayelden bahsediyoruz.
+
+43
+00:13:39,803 --> 00:13:42,563
+Peki bunları nasıl yapıyorlar, nasıl bağlıyorlar?
+
+44
+00:13:43,764 --> 00:13:54,424
+Daha doğrusu iki tane P-type semiconductor ile N-type semiconductor'ı yan yana getirerek aslında bir P-en junction oluşturuyorlar.
+
+45
+00:13:55,064 --> 00:14:08,744
+Yani pozitif type ile negatif diyebileceğimiz elektronların fazla olduğu ve pozitif figlarının fazla olduğu iki tane yarı iletkenin bir araya getirerek oluşturulduğu yapıya biz P-en junction diyoruz.
+
+46
+00:14:09,556 --> 00:14:17,836
+Peki bunu niye yapıyorlar? Aslında bunu yapmalarının nedeni daha kontrol edilebilir bir devre elemanı üretebilmek.
+
+47
+00:14:18,272 --> 00:14:32,591
+Ve mesela diyotlar, bilgisayar mimarların tarihsel gelişimine baktığınızda, ENIAC gibi, çok büyük bir bilgisayarların atası dediğimiz, yapıdaki vaküm tüpleriyle yapılmış bilgisayarlar bunlar.
+
+48
+00:14:32,591 --> 00:14:46,272
+Yani vakum tüpü dediğimizde diyotun şu an minnacık gördüğümüz, kullanacağınız veya diyot yapısının çok çok daha şöyle büyük halleri ve amaç, hedef yine aynı şey. Kontrollü bir elektrik.
+
+49
+00:14:46,272 --> 00:15:09,992
+Yani onu kontrol edebilmek. Tek taraflı akım geçiren devreler. Yani tersine akım geçirmemesi lazım. Kontrol edilmesi lazım. Tersine akımın olmadığı bir senaryoda düz akımda ben kontrolü sağlayacağım. Tersine akımda belki o diyotun çalışma prensibine dayalı bir şeyler gerçekleştirebilirim.
+
+50
+00:15:10,388 --> 00:15:29,648
+Amaç aslında kontrolü sağlayabilmek ve bu PN Cakşın'ın, pozitif ve negatif yüklerin ağırlıkta olduğu iki metal hediye yan yana getirerek aslında bunu hedefliyorlar. Daha elektrik akımını kontrol edebilecekleri bir devre ekipmanı. Mesela dirençte bu yok.
+
+51
+00:15:31,604 --> 00:15:59,604
+Yani kontrolden kastımız tabii ki de akımı kontrol etmek reostalarla mümkün. Yani ayarlı dirençlerle mümkün. Ama akımın yönünü kontrol etmek mümkün değil. Yani dirençten iki taraftan da akım geçecektir. Geçtiği yön veya potansiyel farkın olduğu taraftan öteki tarafa doğru akımın yönü değişir. Yani iki taraftan da direnç akımı geçirecektir. Ama işte tek taraflı akım geçirme eğiliminde diyotlar ön plana.
+
+52
+00:15:59,604 --> 00:16:19,324
+Transistörlerde kontrollü akımı geçirecek ileride göreceğimiz. Peki bu işlem nasıl yapılıyor? Aslında şöyle. PN Junction'ı kastettik. Bunlar ayrı iki mimariyken, şöyle böyledim hatta. Burası P-Type. Burası da N-Type.
+
+53
+00:16:21,444 --> 00:16:25,604
+Semiconductor yani yarı iletişim. İkisi de germanyum olur, silişim olur, fark etmez.
+
+54
+00:16:26,355 --> 00:16:37,335
+P-type ile N-type'ı birleştirdiğimizde P-type'daki artı yükler doğal olarak N-type'daki elektronların çoğunluğundan dolayı bu tarafa geliyor.
+
+55
+00:16:38,775 --> 00:16:48,855
+Değil mi? N-type'daki negatif yükler de P-type'ın içerisindeki çoğunluktan dolayı bu tarafa geliyor.
+
+56
+00:16:50,227 --> 00:17:09,027
+Yani mobility charge diyoruz bunlara, hareketli yükler. Hareketli yükler yer değiştiriyor. Neden? Çünkü iki tarafın dengesizliği söz konusu. Bu yer değiştirme ta ki dengeyi sağlayana kadar, neredeki dengeyi sağlayana kadar, uç noktalardaki dengelerin sağlanana kadar devam ediyor.
+
+57
+00:17:12,915 --> 00:17:28,720
+Buranın da dengelenmesi söz konusu. Arada oluşan bu denge durumu bizim bir bariyer oluşturuyor. Biz bu bariyere, Deplation Region diyoruz. Yani buraya şey de diyorlar, şarj...
+
+58
+00:17:28,720 --> 00:17:55,340
+Yük uzay boşluğu, yük boşluğu da diyorlar, şarjın space de diyorlar vs. Yani burada ama biz depletion region olarak bilmemiz yeterli olacaktır. Yani burada bir bariyer oluşuyor. Nasıl bir bariyer? Aslında dengeyi sağlandı. Yani burada bir dengelenme söz konusu. Yani yükler burada dengeleyip. Buralarda yine p-type ve n-type fazlalığı olabilir.
+
+59
+00:17:56,720 --> 00:18:10,920
+Burada bir denge olduğu için uzak köşedeki burayı şey yapamıyor. Burayı dengele, yani bu aradaki denge sağlandığı için uzak köşedekiler de uzakta kaldığından bu aradaki bariyeri geçmiyor.
+
+60
+00:18:11,347 --> 00:18:26,788
+Burada nihayetinde P-Type ve N-Type arasında yüklerin dengelenmesi oluştuğundan burada bir bariyer oluşuyor. Bu taraf yine P-Type ve N-Type şeklinde kalabilir. Ama bariyer oluştuğundan dolayı da artık akım geçmiyor.
+
+61
+00:18:29,087 --> 00:18:36,887
+Aslında özü bu. Burada bir bariyerin oluşma durumundu. Bunlardan bahsettik.
+
+62
+00:18:41,172 --> 00:18:48,551
+Evet, burada işte P-type'da mesela mobile dediğimiz hareketli yükler, artı yükler. Çünkü bunlar P-type'da daha fazla.
+
+63
+00:18:49,092 --> 00:18:54,511
+Ve hareket edecek, yani ikisini P ve N-type'yı birleştirdiğimizde hareket edecek yükler artı yükler.
+
+64
+00:18:55,471 --> 00:19:03,392
+Öteki tarafta N-type yer iletken var, mesela birleştirmeden önce. Yani hareket eden fazlalık olan yükler elektronlar.
+
+65
+00:19:09,236 --> 00:19:31,695
+Bu tarafa gelmesi, pozitiflerin bu tarafa hareket etmesiyle bu arada bir bölge oluşuyor ve bu bölge dengeye gelesiye kadar bu alışveriş devam ediyor. Bu bölge dengeye girdiğinde bir ekonomik oluştuğunda, denge oluştuğunda burada artık bir bariyer oluşuyor. İşin özü bu. Bu bariyeri tabii nasıl kullanacağız? Birazdan anlatacağız.
+
+66
+00:19:35,412 --> 00:19:37,692
+Space Charge Layer diyorlar. Evet yani.
+
+67
+00:19:38,672 --> 00:19:42,071
+Charge Space dedim de Space Charge Layer da deneyebiliyor ama
+
+68
+00:19:42,071 --> 00:19:51,371
+Deplation Layer olarak bilmemiz veya Declation Region olarak yani doyum nokta, doyum bölgesi veya doyum katmanı olarak bilmemiz yeterli.
+
+69
+00:19:55,451 --> 00:20:00,000
+Evet şimdi bu potansiyel oluşan bariyerin etkisi nasıl bilmiyor?
+
+70
+00:20:00,000 --> 00:20:14,039
+Bir etki şöyle. Şimdi bunu iki farklı materyal. Ne kadar da burada yük, yani iki mıknatısı tuttunuz düşün. Mıknatıslar birbirini çeker değil mi? Ve burada da aslında.
+
+71
+00:20:15,284 --> 00:20:31,564
+Bu iki materyalin birbiriyle olan şuradaki denge durumu, bu iki yapıyı birbirinden yani fiziksel olarak ayırmıyor esasında. Oradaki yük elektrik alanı anlamında bir dengeye kavuşturuyor. Ama hala fiziksel olarak ayrı iki materyal bunlar.
+
+72
+00:20:32,051 --> 00:20:54,891
+Şimdi bu fizik olarak ayrı iki metal yeri. Ben sol tarafını ve sağ tarafını ayrı ayrı analiz ettiğimde şunu göreceğim. Sol tarafı tamam genel olarak şu layer'da, depreşim layer'da bir denge söz konusu. Ama ayrı ayrı analiz ettiğimde sol tarafta eksi yüklerin, sağ tarafta da art yüklerin fazla olduğunu bileceğim. Çünkü bu mobility olan...
+
+73
+00:20:55,316 --> 00:21:00,675
+Eksi yükler buraya geldi. Mobilte olan art yükler de öteki tarafa gitti ve burayı oluşturdu.
+
+74
+00:21:02,516 --> 00:21:24,516
+Potansiyel fark olmasından dolayı aslında burada bir gerilim boyutunu, yani bu potansiyel farkı bozacak seviyesinde, ki bu VB gerilimidir, bu potansiyel farkı, bu yüklenmedeki değişimi bozacak seviyede bir gerilim vermem lazım ki buradaki bariyer ortadan kalksın.
+
+75
+00:21:24,516 --> 00:21:29,596
+Ve bu potansiyel fark birbirinden, yani bu potansiyel fark oluşmasın.
+
+76
+00:21:30,516 --> 00:21:51,216
+Sağ taraf, artı durumu ortadan katsın. İşte bu gerilim, yani buradaki depreation region'ı yok edecek olan gerilimi, biz burada mesela diyot gerilimi diyoruz veya diyot iç gerilimi diyoruz veya diyot eşit gerilimi diyoruz, diyot işte bariyer gerilimi diyoruz. Farklı tabirler var.
+
+77
+00:21:57,440 --> 00:22:06,740
+Ancak bir şekilde gerilim vererek bunu ortadan kaldırabiliriz. Ama bu gerilimin nasıl verileceğini birazdan anlatacağız.
+
+78
+00:22:11,028 --> 00:22:35,528
+Burada iki tane akım oluşuyor. Bariyer oluşurken arkadaşlar, mesela şuradaki eksi yükler buraya geldi, artı yükler buraya geldi. Bu bariyeri, deflation region bölgesi oluşurken iki tane akım aslında ortaya çıkıyor. Eğer ki işte majority yükler P-type da artı yükler, N-type da elektronlar.
+
+79
+00:22:35,892 --> 00:22:51,572
+Değil mi? İşte buradaki elektronların daha ufak yere, pozitif yüklerin daha öteki tarafa geçerken bir difizyon akımı oluşuyor. Bu çok ufak bir akım.
+
+80
+00:22:51,920 --> 00:23:03,140
+Bir diğeri ise Minority Carrier'ler. Yani işte N-type'da pozitif yükler, P-type'da mesela elektronlar. Bunlar da kendi içerisinde bir akım oluşuyor.
+
+81
+00:23:03,140 --> 00:23:10,140
+Ve normalde bir Deflation Region oluştuğu durumda buradaki Diffusion ve...
+
+82
+00:23:10,816 --> 00:23:30,516
+Diffusion ve drift akımları birbirine eşitleniyor. Yani bir denge de oluyor. Enerjinin konumunda bunu gerektiriyor. Yani aslında buradaki defisyon ve drift bölgesinin oluşmasında defisyon ve drift yani kayan akım, yani Türkçesi çok oturmuyor.
+
+83
+00:23:37,811 --> 00:23:45,311
+Drift akımına eşit olduğunda bu deflation region'da aslında ekülyübüma ulaşmış oluyor. Yani bir doyuma gelmiş oluyor.
+
+84
+00:23:48,371 --> 00:23:53,531
+Evet, burada da bir video var ama bu video çok da önemli değil.
+
+85
+00:23:54,371 --> 00:23:55,755
+Evet, şimdi peki...
+
+86
+00:23:55,796 --> 00:24:14,175
+Biz böyle bir yapıda P-type ve N-type'ı bir araya getirdik. Bir süre geçti ve Depthation Region oluştu. Artık diffusion ile drift akım birbirine eşit. Ve artık dengede. Metal diyelim, havada elle diyotu tuttuğumuzda olan şey bu. Aslında ilk başta oluşuyor o Depthation Region ve öyle kalıyor.
+
+87
+00:24:23,519 --> 00:24:48,379
+Devrede kullanacağız. İşte şu an ileri beslemede ne olacağına değineceğiz. İleri beslemede arkadaşlar ilk başta hatta şuradan gösterebiliriz. Bu ters beslemeyi göstermiş. İleri besleme görüntüsünü koymamışız ama şunu silelim. İleri besleme durumundan. Burası artı. İleri beslemeden kastımız şu. Dedik ki diyor şöyle bir şey.
+
+88
+00:24:50,036 --> 00:25:10,655
+Burası anot, burası katot. Anot, p-type dediğimiz, yani pozitif yüklerin daha fazla olduğu bölge, katot ise elektronların daha fazla olduğu bölge. Yani şu an şu diagramda bizim anotumuz burası, katotumuz burası.
+
+89
+00:25:15,796 --> 00:25:33,635
+Biz pozitif besleme dediğimiz, ileri yönlü besleme dediğimiz senaryoda artı ve eksi veriyoruz. Şu an şunlar reverse piyasta kalmış. Bunları silelim. Bu durumda, yani P-type'ı artı, N-type'ı eksi gelen bir besleme yaptığımızda.
+
+90
+00:25:34,099 --> 00:25:49,079
+Neler değişiyor buna bakalım. İlk başta buradaki artı, burada daha fazla, sonuçta buradaki mobility charge'lar neydi? Artı pozitif yüklerdi. Ve bu pozitif yükler bu artıyla beraber aslında itiliyor.
+
+91
+00:25:49,079 --> 00:25:58,819
+Aynı iki mıknatısın artı uçlarını, yani iki mıknatısın aynı yükleri yan yana itirdiğimizi düşünelim.
+
+92
+00:25:59,412 --> 00:26:22,111
+Buradaki artı yükleri zorluyor. Nereye doğru? N-type'a doğru geçmesini. Değil mi? Buradaki eksi yüklerse, buradaki eksi yükleri zorluyor. Niye? P-type'a doğru geçmesini. Yani aradaki bu depletion region dediğimiz bölgedeki bari yer aslında iki taraflı zorlanıyor.
+
+93
+00:26:23,092 --> 00:26:40,092
+İki tarafı zorlandığı için bu bariyer, normalde dengedeydi hatırlarsınız burası, dengesini bozuyoruz. Yani bir taraftan biz depletion, drift akımlarını buradan oluşturuyoruz. Bir taraftan öteki akım olan...
+
+94
+00:26:42,420 --> 00:26:55,819
+Akımın eşmini, difüsyon akımlarını buradan oluşturuyoruz. Ve böyle olunca aslında bu iki akımın dengesizliğinden dolayı biz bu aradaki depletion region'ı daraltmış oluyoruz.
+
+95
+00:26:57,011 --> 00:27:03,031
+Yani dengesiz olma durumunu kendince bütün hepsini dengeye haline getirmek için uğraşıyoruz.
+
+96
+00:27:03,031 --> 00:27:08,751
+Ve bu aradaki bariyer narrow, yani daha da kısalıyor, daha da ufalıyor.
+
+97
+00:27:09,312 --> 00:27:13,292
+Ve ufaldıktan sonra bir yerden sonra bu bariyer ortadan kalkıyor.
+
+98
+00:27:14,011 --> 00:27:20,612
+İşte o yer, normalde ideal diyotta sıfırın üstü herhangi bir pozitif polarmada.
+
+99
+00:27:20,771 --> 00:27:23,332
+Mesela buraya ben 0.1 volt verdim.
+
+100
+00:27:23,731 --> 00:27:47,051
+Veya 0,0,0,0 çok ufak bir değer verdim. Ama artısı artısı eksi eksisinde. İdeal diyodda bunda bile bu depletion regilin ortadan kalkacağını söylüyoruz. Ama gerçekte tabii ki de öyle değil. İdeal olmayan diyodda arkadaşlar kullanılan bu P-type ve N-type'da 3 materyalden bahsettik. Gelmeyelim. Silisyum, arsenik.
+
+101
+00:27:47,539 --> 00:27:56,559
+Şimdi Germanyum, Silisyum ve Arsenik metal yerine özgü olarak buradaki polarizasyon hızı ve istenen yerlerin farkı değişiyor.
+
+102
+00:27:57,236 --> 00:28:15,296
+Germanyum da 1.2, silisyum da 0.7, arsenik de 1.2, germanyum da 0.3 herhalde. Birazdan gelir. Çok da önemli değil ama neticede materyalin cinsinden dolayı.
+
+103
+00:28:15,796 --> 00:28:41,236
+Bizim bu polarizasyon farkını oluşturmak için gerekli olan, yani şuradaki bahsettiğimiz VB gerilimi değişkenlik gösteriyor. Hatta hava sıcaklığında bile değişkenlik gösteriyor. Yani dışta hava, işte diyotu kullandığımız bölgede hava çok sıcaksa bu VB gerilimi daha düşük bir şekilde bu polarizasyonu sağlayabiliyor.
+
+104
+00:28:41,811 --> 00:29:01,511
+Dış ortamdaki sıcaklığında etkisi var. Yani artı uçlar, pozitif polarma, P-type ve N-type'ı doğru polarizasyon yaptığımızda dengesi bozulduğundan bu dengeyi tekrar sağlayabilmesi için buradaki depression region bölgesi, denge bölgesini ortadan kaldırıyor.
+
+105
+00:29:02,132 --> 00:29:09,391
+Yani sönümlendiriyor. Ve böylelikle bu bariyer ortadan kalktığı potansiyel fark da...
+
+106
+00:29:09,392 --> 00:29:27,231
+Şurayı kastırıyorum. Tam şu noktada mesela. Neyse buradaki nokta. Bu noktada artık bunlar ortadan kalkıyor. Yani artık Deplation Region ortadan kalkıyor. Ve benim için bu gerilim bu diyotu doğru iletimde tutan bir gerilim oluyor.
+
+107
+00:29:27,231 --> 00:29:33,172
+İşte gelman silisyumda bu 07, arsenikte 1.2 volt gibi değerler.
+
+108
+00:29:35,859 --> 00:29:57,460
+Ama ideal diyotta, tekrar belirtelim, ideal diyotta sıfırın üstündeki herhangi bir pozitif polarmada, anotun artı ucun katodunun eksi ucun verildiği senaryoda, sıfırın üstünde herhangi bir voltaj farkı oluştuğunda, anot ve katod arasında, iletime geçtiğini düşüneceğiz.
+
+109
+00:29:58,819 --> 00:30:02,019
+Öyle kabul edeceğiz. Peki ters polarmada ne oluyor?
+
+110
+00:30:04,852 --> 00:30:15,991
+Ters polarmada da aslında demin anlattığımızda tam tersi olacak. Yani art ucuna kat oda verdiğinde, eksi ucuna anota verdiğinde, P-type'lar eksi ucu tarafından geçir.
+
+111
+00:30:17,107 --> 00:30:42,727
+Yani mobility çarşlar eksi ucuna gelecek. Buradaki elektronlar da artı ucundan dolayı çekecek. Ve nihayetinde benim buradaki depreşim ve canın dengesi yine bozulacak. Çünkü artı ve eksiler gidecek. Ama bu sefer bozulma nedeni şu. Yani etraftaki drift ve işte difüzyon akımlarının yönleri birbirinden farklı.
+
+112
+00:30:43,188 --> 00:30:48,148
+Ve öyle olduğu için de buradaki Depthation Region bölgesi daha da artacak.
+
+113
+00:30:49,108 --> 00:30:52,328
+Çünkü aradaki dengeyi sağlayan yükler de gidiyor.
+
+114
+00:30:53,648 --> 00:30:57,528
+Yani dengeyi destekleyebilecek bir yük de kalmıyor.
+
+115
+00:30:57,528 --> 00:31:06,828
+Öyle olunca buradaki Depthation Region maruz kalınan ters gerilime doğru orantılı olacak şekilde artacak.
+
+116
+00:31:07,528 --> 00:31:10,508
+Ters gerilim arttıkça Depthation Region daha da artacak.
+
+117
+00:31:11,124 --> 00:31:36,064
+Ve arttığı için de bu bölgeye bir akım oluşmayacak. Bir tane akım var. Kendi içerisinde, sonuçta burada da pozitif ve negatif yükler var hala. Ve bu yüklerin kendi içerisinde ufak bir iç akımı var. Çok çok ufak. Leaket körlük diyeceğiz buna. Sızıntı akımı. Burada bir sızıntı akımı oluşabilir. Ama çok da önemli değil. Çoğu şeyde göz ardı edilir.
+
+118
+00:31:38,420 --> 00:32:01,299
+Evet, burayı anlattık zaten. Burayı da anlattık. Evet, normalde isolated junction dediğimiz, yani bir yüzyotı elinizde havada tuttuğunuzda aslında beklenen şey, burada bir denge var ve bu denge anca ve anca belli bir gerilimle bozulabileceğini gösteriyor.
+
+119
+00:32:02,195 --> 00:32:13,715
+Biz eğer ki doğru polarma yaparsak, yani P-Type'ine artı, N-Type'ine eksi verirsek, burada içerisindeki Deplation Raging azalacak.
+
+120
+00:32:13,715 --> 00:32:25,175
+Ve azaldığı için de bizim akım yönü, yani besleyiciden gelen akımdan dolayı buradaki gerilim, yani üzerine düşen gerilim, diyotun üzerindeki gerilim düşecek.
+
+121
+00:32:26,271 --> 00:32:52,211
+Bunu şöyle izah edebiliriz. Şimdi havada tuttuğumuz biyotun aslında üzerinde o deflation range'in aşması için beklenen bir gerilim var. Yani bir gerilim oluşuyor. Çünkü burası bir rezidif etkiye gösteriyor. Bir bariyer burası. Ve bu bariyerin üzerinden bir akım geçirerek okuduğumuz da değeri bir gerilim olacak. Bu gerilim aslında bariyerin gerilimi.
+
+122
+00:32:52,915 --> 00:33:01,875
+Yani bu bariyerin gerilimi de aslında silisyum veyahut da germanyuma göre değişkenlik gösteren gerilimi kastetiyoruz.
+
+123
+00:33:01,875 --> 00:33:11,355
+Havada tuttuğumuz bir silisyum diyorsa 0.7 bir gerilim okuyacağız veya arsenik ise 1.2 volt bir gerilim okuyacağız.
+
+124
+00:33:12,035 --> 00:33:15,955
+Çünkü neden? 1.2 voltluk bir bariyer var burada.
+
+125
+00:33:16,339 --> 00:33:27,979
+Demek olacak. Ben bu materyalleri doğru podaramayla bu depreşim rejini azalttığım için buradaki üzerine düşen diyotun üzerine düşen gerilim düşecek.
+
+126
+00:33:28,799 --> 00:33:40,859
+Ta ki VB'yi yani sıfıra düşürmemiz için 0.7 volt verirsek bu uçlardan burada bir depreşim rejini kalmayacak ve kalmadığı için de
+
+127
+00:33:41,619 --> 00:33:55,959
+Bir rezistif etkiye, bir gerilim birikmesine söz konusu olmayacak ve şu durum aslında bu diyotun tamamen iletime geçtiği durum olacak. Çünkü diyotun üzerinde bir gerilim oluşmayacak. Çünkü diyot kısa devrede.
+
+128
+00:33:56,719 --> 00:34:02,959
+Ters polarizasyona bakarsak, ne kadar yüksek gerilim verirsek ters polarize şeklinde,
+
+129
+00:34:03,059 --> 00:34:24,940
+Bu silisyumun veya germanyumun boşta bulunan 0.7 veya 1.2 voltluk o eşik yerlemini, Depleation Region'ını arttırdığım için, büyüttüğüm için ne yapacağım? Daha da yukarılara çıkartacağım. Ve bu potansiyel fark yani bu anot ve katot arasında ölçülen bu potansiyel fark gitgide artacak. Çünkü akım geçmeyecek.
+
+130
+00:34:25,427 --> 00:34:46,307
+Akım geçmediği için de veyahut da akım çok ufak bir akım geçecek ama direnç etkisi çok yüksek olacak. Sızıntı akımı ona göre bir göz araya edelim. Bu üzerindeki gerilim diyotun daha da artacak. Yani mesela 5 volt ters polarma veriyoruz. Diyotun üzerindeki gerilim 5.7 volta kadar çıkacak.
+
+131
+00:34:53,076 --> 00:35:10,336
+Burası çok önemliydi arkadaşlar. Bu aslında PN'deki, bu yapıyı bir araya getirdiğimizdeki, isolated durumdaki sızıntı akımları, difüzyon ve drift akımlarıyla alakalı bir tabir. Buna girmeye çok gerek yok. Önemli de değil çok fazla.
+
+132
+00:35:13,108 --> 00:35:32,347
+Ama şunu belki dikkat etmek lazım. Dedim ya, izole olduğu veya diyotların yapısında sıcaklıkla alakalı bir ters orantı var. Onu da şuradan çıkartabiliriz. Bu formül aslında diyotun üzerinden geçen akımın ne olacağını gösteren bir formül.
+
+133
+00:35:37,268 --> 00:35:46,208
+Neye neden olacak? Akımın azalmasına neden olacak değil mi? Ters orantılı bir etki var.
+
+134
+00:35:49,688 --> 00:35:59,128
+Evet, diyotun çalışması üç farklı noktada analiz edilebilir. Herhangi bir polarizasyon olmadığı durumda ki biz buna izolated durum diyoruz değil mi?
+
+135
+00:36:00,371 --> 00:36:28,351
+Bu ne için önemli? Aslında metalyelin aslında izole olma durumundaki eşik geriliminin ne olduğunu çıkarmak için belki kullanılabilir. İşte germanyum ise neymiş? Teflation Rejin'i aşmak için gerekli eşik. Bunu öğrenmek için kullanılabilir. Bu anlamda değerlendirilebilecek bir çalışma koşulu. İleri yönlü besleme ve ters yönlü besleme olmak için 3.
+
+136
+00:36:28,371 --> 00:36:28,751
+Teşekkürler.
+
+137
+00:36:30,260 --> 00:36:40,080
+Evet, herhangi bir biyasi bir kolorizasyon yokken, besleme yokken aslında herhangi bir akımın geçmediğini, üzerinde de herhangi bir gerilim olmadığını biliyoruz.
+
+138
+00:36:40,680 --> 00:36:48,660
+Bunu böyle bir diyotun ucuna siz ölçü aletleri koyarak bir şey ölçmeye çalıştığınızda göreceksiniz ki çok yüksek bir direnç çıkacak.
+
+139
+00:36:48,660 --> 00:36:55,320
+Ters bağladığınızda tabii ölçü aletini. Düzgün bağladığınızda da çok düşük bir direnç değeri çıkacak.
+
+140
+00:36:55,820 --> 00:36:58,260
+Hatta bu dersin sonunda da hani diyodun yanı...
+
+141
+00:36:58,260 --> 00:37:11,060
+Yanlış mı yoksa çalışıyor mu olduğunu böyle bu mihvalde anlayabiliriz. Bias kullanarak. No Bias modunda. Herhangi bir gelin beslemesi yok yani buralarda.
+
+142
+00:37:13,040 --> 00:37:23,400
+Sadece nasıl bir depresi oluşacak? Sadece metallerin kendi öz iç yapısından dolayı oluşan bir depresi oluşturucu olacak.
+
+143
+00:37:24,884 --> 00:37:39,824
+Ters beslemini anlatmıştık zaten. Artısını katotuna, eksisini anotuna bağladığımızda aslında biz burada bu yüklerin arasındaki dengeyi ters yönde bozmuş oluyoruz.
+
+144
+00:37:40,503 --> 00:37:43,983
+Ve ters yönde bozduğumuz için de depression region artmış oluyor.
+
+145
+00:37:43,983 --> 00:37:50,976
+Böyle bir durumda da diyotun üzerinde çok yüksek bir direnç etkisi olmasından dolayı.
+
+146
+00:37:50,976 --> 00:37:59,096
+Akım çok az da geçse, sonuçta girişteki bu VD gerilimi bunu Diot'un üzerinde birikiyor. Çünkü bir iletim olmuyor.
+
+147
+00:38:03,507 --> 00:38:30,627
+Doğru polarizasyonda da Deplation Region'ın azalma durumu söz konusu. Bir noktadan sonra artık bu Deplation Region tamamen kaybolacak ve bu kaybolduğu için de akım geçebilecek. Daha doğrusu şöyle söyleyelim. Kaybolduğu için diyotun üzerinde çok çok ufak bir gerilim düşümü olacak. Çünkü bir direnç etkisi yok ve bu düşük gerilim olduğundan dolayı da akımı iletmiş olacak.
+
+148
+00:38:31,443 --> 00:38:48,864
+Evet, şimdi bu actual diyot dediğimiz, aslında ideal diyot olmama durumunda, ideal olmayan durum, gerçek diyotlarda karakteristiğe baktığımızda şöyle bir şey görüyoruz.
+
+149
+00:38:56,019 --> 00:39:04,500
+Diyotun üzerinde, VD diyotun üzerindeki gerilim oluşmadığını, çünkü burada akımın maksimum olduğunu söyledik.
+
+150
+00:39:04,755 --> 00:39:24,076
+Demek ki ideal diyot özelinde. Çünkü üzerinde, sıfırın üstündeki bilgilerinde Depthation Range'in tamamen ortadan kaldırdığını ve kaldırdığı içinde herhangi bir restif etkinliği olmamasından dolayı ÖD diyotun üzerinden geçen akımın maksimum olduğunu söyledik.
+
+151
+00:39:24,076 --> 00:39:32,076
+Bu ideal yapıydı. Ama normalde Germanyum Studios'un materyalin çeşidine göre...
+
+152
+00:39:33,172 --> 00:40:00,000
+0'ın üstündeki hemen bir 0, 1, 0, 2, 0, 5 gibi değerlerde biz bu depletion region'ı ortadan kaldıramıyoruz. Metaryelin iç yapısından dolayı. İşte bu germanyum için 0,3, silisyum için 0,7, işte arsenik için 1,2 gibi değerler kırılma hattına sahip oluyor. Bu değer doğru polarizasyonunda bu değerlerin bu gelin...
+
+153
+00:40:00,000 --> 00:40:18,420
+Eşiğinin geçirmesi lazım ki o aradaki bariyer ortadan kalksın ve bariyer kalktıktan sonra da akım yine aynı şekilde maksum olacak şekilde akımın geçirmiş olalım. İdeal olmayan da farkı bu. Yani materyalin cinsinin önemi var.
+
+154
+00:40:19,891 --> 00:40:45,211
+Peki, ters yöndeki duruma bakalım. Yani ters polarizasyonla beslemede. Normalde ters beslemede bir şunu dedik. Sıfır olacak akım. Ama gerçekte böyle olmuyor işte. Ne kadar depreation region açsak da burada bir leakage curve dediğimiz sızıntı akımı çok ufak. Mesela 0,1 mikroamper seviyesinde çok ufak bir sızıntı akımını ters yönde görüyoruz.
+
+155
+00:40:50,099 --> 00:41:12,199
+Başka burada ne diyeceğimiz bir şey yok. Bunlardan bahsettik. P-type ve N-type'daki ağırlıklı yükler ve ufak yükler. Evet, bir de zener bölgesi var arkadaşlar. Şimdi iki tarz diyot var. Bir normal diyot anlattığımız, bir de zener diyot.
+
+156
+00:41:12,820 --> 00:41:37,760
+Zenert diyot mimarisinin tek farkı arkadaşlar, ileri yönde herhangi bir sıkıntı yok. Bu da yine ideal olmayan bir diyot mimarisinde çalışıyor. İleri yönde işte metal yerin cinsine göre 0, 3, 0, 7 veya 1, 2. O eşiği geçtikten sonra devreşen reyce ortadan kalkıyor ve bu ortadan kalktıktan sonra da diyotun üzerinden akım sonsuzla geçmiş oluyor.
+
+157
+00:41:39,188 --> 00:41:49,827
+Ters yönde zaten bir özelliği var, zener diyordun. Ters polarizasyonda yine belli bir ters polarizasyona kadar zener gerilim diyoruz biz buna.
+
+158
+00:41:50,487 --> 00:41:59,927
+Zener gerilimine kadar aynı şekilde normal diyot, ideal olmayan diyotmuş gibi sızıntı akımı olacak şekliyle sadece çalışıyor.
+
+159
+00:42:06,751 --> 00:42:34,351
+Polarizasyonu 50 volt verdiğimizde bu diyota, zener diyota, bu 50 voltun üstünde birden ters yönde akım geçiriyor. Bu bölgeye biz zener bölgesi diyoruz. Bu şu gibi konularda işe yarıyor. Fabrikalarda çok yüksek ters gerilim oluştuğunda bu ters gerilimde eğer ki kontrol edilmesi isteniyorsa burada ters akım oluşuyor ve ters akımda bazı şeyleri kontrol edebiliyorlar.
+
+160
+00:42:34,771 --> 00:42:38,711
+Yani Sener Yorum'da kendince farklı çalışma bölgesi alanları var.
+
+161
+00:42:45,043 --> 00:42:59,283
+Evet, burada bahsetmişiz. Galyum ve arsenide diyotlar 1.2 volt, silikonlar 0.7, gelme ayunlar da 0.3 eşik deblation rejini yok etmek için gereken, bunu işte daha da ufaltmak için gereken gelinim hatları bunlar.
+
+162
+00:43:02,068 --> 00:43:24,808
+Sıcaklık etkisi bahsetmiştim. Sıcaklık etkisi diyotun karakteristiğini oynatıyor. Eğer ki sıcaklık artarsa diyotun üzerinde enerji daha çok yükleniyor. Gerekli olan bu doğru polarizasyondaki 0.3-0.7-1.2. Meteller neyse bu gerekli olan gerilim daha da düşüyor.
+
+163
+00:43:25,248 --> 00:43:44,107
+Yani sıcaklık 25 derecede 1.2 volt ise 50 derecede belki 1.1 voltlara düşmüş oluyor gerekli olan. Çünkü o sıcaklık o deklation regiondaki enerjiyi arttırdığından oradaki dengedeki kalacak olan o bariyer daha da ufalmış oluyor.
+
+164
+00:43:47,067 --> 00:43:49,107
+Ayrıca sıcaklık arttığında da...
+
+165
+00:43:50,195 --> 00:43:55,815
+Ters akımın oluştuğundaki, yani o ters akımı da arttırmış oluyorum.
+
+166
+00:44:01,043 --> 00:44:10,003
+Evet, germanyumun daha hassas olduğu, çünkü 0,3 volt zaten eşiği, daha hassas olduğunu söyleyebiliriz sıcaklıkta.
+
+167
+00:44:12,052 --> 00:44:36,912
+Evet, tabii direnç etkisi, direnç bu yarı il etkenlerin de direnç rezidif etkisi söz konusu. Normalde biz bu direnç yapısını şöyle çıkartıyoruz. Yani bir diyotun direnci var mı? Evet var. Çünkü oradaki bir baliyer yapısı var ve bu rezidif etkiyi gösteriyor. Yani tam bir direnç gibi olmasa da sonuçta akımı önünü keşiyor. Böyle bir karakteristik eğrisi olduğu düşünelim.
+
+168
+00:44:37,492 --> 00:45:01,052
+Şimdi buradaki VD gerilimi, Diyot üzerindeki gerilimi, I-D akımı. Biz bu karakteristik eride VD bölü I-D, Aynı OM kanununda olduğu gibi yaptığımızda aslında Diyot'un o anki, yani o gerilim farkı, anot ve katut arasında oluşan potansiyel farkı binaen oluşan akımdan biz Diyot'un içerisindeki ne kadarlık bir rezitif etkiye sahip olduğunu çıkarabiliyoruz.
+
+169
+00:45:02,643 --> 00:45:26,563
+AC'de bu biraz daha farklı. Çünkü AC'nin biliyorsunuz değişkenliği söz konusu. Bunda genelde iki farklı nokta üzerinden yapılır. Yani AC anlızı derde. İşte normalde şu iki noktaya karşı bu iki gerilim hattı arasındaki farkın oluşturduğu akımdaki farkı benim için AC'deki direnç etkisini gösterir.
+
+170
+00:45:28,820 --> 00:45:46,360
+Bu diyotu tabi devrelerde biz direkt hani şöyle kullanacağız ama hani modellemek istediğimizde aslında içerisinde bunun ters olarak yani anotunda şöyle olacak şekilde artısı eksisi bir direnç.
+
+171
+00:45:47,668 --> 00:46:06,028
+Böyle bir modeli var. Yani burası 0.7 de olabilir, 0.3 de, 1.2 de. Bu neyi gösteriyor? Ben bunu doğru polarma yaptığımda, şöyle bir devreyi, anotuna, artıya, anot, eksiye katot verdiğimde,
+
+172
+00:46:06,643 --> 00:46:23,143
+Aslında ben şu 0.7 ters bataryanın üzerindeki gerilimi geçmeye çalışıyorum. Bunu ortadan kaldırdığımda, buradan 0.8'lik bir doğru polarma gönderdiğimde, bu ortadan kalktığı için burası artık normalde bağlantılı olanmış bir devre yapısına bürünüyor.
+
+173
+00:46:23,143 --> 00:46:34,643
+Yani aslında modellersek ideal diyotun yanına bunları koymamız gerekiyor. İdeal diyotu biz hep dedik, V'de sıfırdan büyükse, I'de sonsu.
+
+174
+00:46:34,643 --> 00:46:41,363
+V'de sıfırdan ufaksa Ö'de sıfır diyeceğiz değil mi?
+
+175
+00:46:42,103 --> 00:46:50,123
+Bu yapıda olduğun, bu ideal diyordun önünü biz bir dirençle, bu direnci de deminki hesaplamayla bulabiliriz.
+
+176
+00:46:50,123 --> 00:46:56,243
+Ve bir ön gerilimle 0,7 eşit gerilimiyle gösterebiliriz.
+
+177
+00:47:00,019 --> 00:47:25,019
+Diyodlar ayrıca kapasitans olarak da çalışabiliyor arkadaşlar. Yani orada biliyorsunuz bir yük, depreşen ayarında yük tutma durumu söz konusu. İleriye doğru forward bias yaptığımızda aslında bu kapasitans etkisi daha da artıyor. Ters yaparsak eğer, gelimi yani ters bağlama, reverse bias yaparsak kapasitans etkisi azalıyor. Çünkü yalıtkan durumuna doğru geçiyor.
+
+178
+00:47:28,788 --> 00:47:45,467
+Bir de bir recovery time durumu var. Çünkü mesela biz diyotu ters bağladık. Diyotu ters bağladığımızda ne olmasını bekliyoruz? Bir akımın geçmemesini bekliyoruz. Ama diyotu doğru bağladığımızda hemen akabinde...
+
+179
+00:47:46,003 --> 00:47:58,903
+Veya tam tersi de söyleyebiliriz. Doğru bağlanan bir diyotta birden ters akım gönderirsek, ters anotuna negatif katotuna pozitif verirsek o durumda birden reverse'e düşmesi lazım.
+
+180
+00:48:01,043 --> 00:48:28,284
+Kesime gitmesi lazım. Kesime gittikten bir süre sonra biz akımın yönünü veya gerilim potansiyel farkı değiştirsek bile, forward bias yapsak bile hemen iletime geçmiyor. Bir süre daha kesimde kalıyor. Bunlar tabii çok ufak saniyeler. Hani sadece bir recovery time'ın olduğunu bilmekte fayda var. Yani bir tersine beslemeden sonra tekrar düz forward bias yaparsak hemen iletime geçmiyor.
+
+181
+00:48:30,387 --> 00:48:58,267
+Diyotun data sheetleri var. Yani her farklı farklı diyot yapılarının veri katalogları mevcut. Bu veri kataloglarında belli başlı bilgiler önemli. Mesela akım veya sıcaklığa doğru akımın veya feed forward voltage'ın, ileriye doğru besleme geyleminin nasıl değiştiğine ait bilgiler öğrendi. Çünkü bunu demin söylemiştik sıcaklık arttıkça.
+
+182
+00:48:58,387 --> 00:49:02,667
+Eşit gerilimi düşüyor mesela. Ama nasıl düşüyor? Bununla alakalı bilgiler okunabilir.
+
+183
+00:49:03,284 --> 00:49:20,444
+Veya işte belli başlı sıcaklıklardaki ileri yönlü akımla alakalı, yani siz o eşiği ortadan kaldırdınız ama o akımın belli bir seviyesinde geçmesi söz konusu olabilir. Yani ideal olmadığı için veya ters akımla alakalı bilgiler olabilir.
+
+184
+00:49:29,364 --> 00:49:49,083
+Beslemeden doğru beslemeye geçtiğimizdeki yenilenme zamanıyla alakalı bilgiler olabilir. Çalışma sıcaklığıyla alakalı bilgiler. Yani diyotun karakteristiğini de aynı sensörlerde olduğu gibi hatırlarsanız, data sheetinden, veri katalogundan öğrenebiliriz.
+
+185
+00:49:51,027 --> 00:49:55,747
+Gösterimleri farklı farklı mevcut ama biz en çok tabii ki de şunu göstereceğiz devrelerde.
+
+186
+00:49:55,747 --> 00:50:03,647
+Ama bunun dışında zaten elle fiziki olarak da böyle bir yapıya benziyor. Belki aldınız, belki almadınız, belki gördünüz.
+
+187
+00:50:04,427 --> 00:50:12,147
+Buradaki siyah çizgi bunun kat otucunu gösteriyor. Yani eksi, negatif ucunu. Öteki taraf ise an otucunu gösteriyor.
+
+188
+00:50:12,407 --> 00:50:16,627
+Artı beslemenin aslında şöyle yapılması gerektiğini söylüyor bu.
+
+189
+00:50:17,811 --> 00:50:34,931
+Başka gösterimler de mevcut. Bu üçü farklı diyot tipi. Hatta şu direkt LED biliyorsunuz belki. Bu işte fototransistör vs. fotodiyot vs. Yani bunlar farklı diyot çeşitleri ama hepsinde amaç sensör mihvali de olabilir.
+
+190
+00:50:34,931 --> 00:50:44,592
+İşte üzerine ışık düştüğünde iletime geçmesi aslında diyot mihvalisiyle aynı şekilde anlaşılıyor.
+
+191
+00:50:45,844 --> 00:51:12,563
+Diyotlar yanabiliyor tabii. Yani çok yüksek ters gerilim verildiğinde, reverse verildiğinde diyotun yanması söz konusu. Bunları nasıl test ediyoruz? Aslında diyot checkerlar var. Yani aynı eten satılıyor. Veya 10 metrelerle basit ölçü aletleriyle test edebiliyoruz. Veya işte osyoskop gibi kör analiz yapan, yapılan cihazlarla da test edilebiliyor.
+
+192
+00:51:13,235 --> 00:51:33,455
+Normalde mesela Diyot Checker bu gerilimler boyutunda diyotun iletkenini kontrol eden bir alet. 10 metrede nasıl kontrol ediyoruz peki? Demin bahsetmiştim. Normalde eğer ki 10 metrenin problarındaki artı ucunu anotağın...
+
+193
+00:51:33,456 --> 00:52:01,456
+Eksi ucunu veya kom ucunu katoda koyarsam ben buradan bir direnç ölçeceğim 10 metreden. Bu direncin değeri çok çok düşük direnç değeri çıkması bekliyorum. Çünkü burada işte aslında iç yapısında 10 metre şunu yapıyor. Bir gerilim boyutu üretiyor ve bu akımı buradan gönderip buradan ölçüyor. Şimdi bu akımı buradan gönderdiğinde tabii bunun üzerine düşen bu ileri doğru bir polarizm.
+
+194
+00:52:01,456 --> 00:52:27,456
+İstasyon olduğu için düşen gelin çok düşük olduğu için direnci de çok düşük çıkmış olacak. Ama tam tersini yaptığımda komucuna, anota, artucudu, katota verdiğimde buradan bir akım geçirmeye çalışacak. Ama bu akım geçmeyecek doğal olarak tepkişin rejim daha da artacağı için. Çok yüksek bir direnç etkisi gösterecek. Böyle olunca da...
+
+195
+00:52:28,659 --> 00:52:43,240
+Diyotun ters yönünde çalışmamasını söyleyecek aslında bu bize. Eğer bunlar okunmuyorsa veya ikisine de çok yüksek direnç okunuyorsa veya ikisine de çok düşük direnç okunuyorsa bu diyot zaten bozulmuştur diyeceğiz.
+
+196
+00:52:45,920 --> 00:52:48,860
+Curve Tracker'lar, oseloskopla alakalı, geçiyorum.
+
+197
+00:52:49,844 --> 00:53:12,963
+Zener diyotlardan bahsettik. Bir de ledler var. Aslında onlar da diyot. Yani normal devrelerdeki ışıklar var ya. Bunlar da diyot. Bir de diyot madrisleri var. Diyotların toplu halde kullanıldığı. Zener'i anlatmıştık. Tekrar edelim. Zener'in sembolü böyle gösteriliyor arkadaşlar. Üzerinde VZ denen şey Zener'in aslında Zener gerilimi.
+
+198
+00:53:14,516 --> 00:53:35,344
+Tek farkı şu, burası yine katod, burası yine anod. Eğer anoddan katoda doğru polarizasyon sağlanırsa diyot gibi çalışıyor zaten. Ama ters yönden, hani katoddan anoda, katodun ağırtı anoduna eksi verildiğinde ise bu VZ gerilimini geçtiği zaman...
+
+199
+00:53:35,344 --> 00:53:49,443
+Geçişe kadar veya burası yine kesimde herhangi bir iletim olmuyor. Yani IZ burada sıfır oluyor. Ama bu VZ'yi belirtilen gerilim geçildiğinde ters yönde de IZ'nin tekrardan geçmesi söz konusu.
+
+200
+00:53:52,264 --> 00:53:59,583
+Genelde işte zenerler 1.8 volt ile 200 volt arasında değişkenlik gösteren zener gerilimlerine sahip oluyorlar.
+
+201
+00:54:03,284 --> 00:54:29,164
+LED'ler aslında onlar da biliyor. Doğru bir polarizasyon üzerinden geçen akım, bunlar da etki yaratıyor. Yani aynı bir normal ampuller gibi içerisinden bir akım geçtiğinde ampulün içindeki rezidif dirençten dolayı bir parlama görüyoruz değil mi? Burada da aynı şekilde LED'lerde de aslında akım geçiyor ve akım bir parlama etkisiyle bize görselleştiriliyor.
+
+202
+00:54:31,123 --> 00:54:56,123
+Diyot matrisleri var. Burada diyot matrislerde de genellikle iki yapı kullanılıyor. Ortak anot ucu, ortak katot ucu. Ortak anot dediğimiz uçlarda, yani bu diyotları iletime geçirmek için ortak bir uç var, 14'ün o mesela. Buraya ben artı vermem lazım. Diğer tarafları, hangilerini bağladıysam GND'ye, onların çalışma durumu var. Mesela bu senaryoda.
+
+203
+00:54:57,043 --> 00:55:15,823
+1, 4 ve 10'un iletime geçmesini negatif yani katot uçlarına bağladığım gerilimle kontrol ediyorum. Veya hepsini ben genedeye bağlayabilirim. Ama buralara buton bağlarım mesela.
+
+204
+00:55:19,860 --> 00:55:45,840
+Bu durumda butona bastığım diyotları kullanmış oluyorum. Yani ortak anot ucunda biz katotları kontrol ediyoruz aslında. Ters biraz. Ötekisine baktığımızda ortak katot ucunda, katot olduğu için bunu genediye bağladım. Hangisine ben 5 volt veya 10 volt ne verirsem, hangisine gerilim verirsem o aslında iletime geçiyor.
+
+205
+00:55:46,324 --> 00:55:58,423
+Burada da aslında ortak katotta anotlara verdiğimiz gerilimle kontrol ediyoruz. Ortak anotlarda da katotlara verdiğimiz genediyeye bağlama dizaynıyla kontrol ediyoruz.
+
+206
+00:56:00,980 --> 00:56:18,539
+Yapı biraz ters oluyor. Onu dikkat edelim. Ortak anod ve ortak katod değil. İki diyot mimarisi var. Mahdis yapısı var. Ve bu iki mahdis yapısında da bunlar genelde nerede kullanılacak? Seven segment display'ler olacak. Yani şöyle.
+
+207
+00:56:23,539 --> 00:56:33,280
+Şöyle yapsak daha iyi oluyor. Böyle bir display var ve bunların her bir segmenti aslında bir diyor.
+
+208
+00:56:34,220 --> 00:56:41,260
+Ve bunun çalışma prensibinde, seven segmentin, ortak anot veya ortak katot olma durumu söz konusu.
+
+209
+00:56:41,260 --> 00:56:44,860
+Eğer ortak anot ise biz hepsini artı veriyoruz.
+
+210
+00:56:45,300 --> 00:56:51,699
+Ama hangisini söndürmek istiyorsak ona katoddan negatif vermemiz gerekiyor gibi bir yapı var.
+
+211
+00:56:52,840 --> 00:56:56,960
+Bunu mikro işlemci de üçüncü sınıf dersi göreceğiz.
+
+212
+00:56:57,820 --> 00:57:01,159
+Ama burada da diyot mimarisinde olduğunu bilirdim.
+
+213
+00:57:03,340 --> 00:57:05,139
+Evet arkadaşlar, sorumuz var mı?
+
+214
+00:57:13,204 --> 00:57:38,064
+Sorunuz yoksa bu haftalık bu kadar yeter diyelim. Ramazan'da ilk günü zaten biraz yavaştan gidelim. Dediğim gibi vaktimiz yeterli. Yani konuların yetişmesi noktasında bir sıkıntı yok. Bu haftayı böylelikle diyot konusuyla bitirelim. Haftaya Clipper ve Clamper devrelerine giriş yapacağız. Yani diyotun kullanıldığı devreler var. Bu devrelere bakacağız.
+
+215
+00:57:39,744 --> 00:57:41,403
+Ama bu haftalık bu kadar yeter.
+
+216
+00:57:43,484 --> 00:57:44,744
+Sorumuz var mı?
+
+217
+00:57:48,947 --> 00:58:02,568
+Sorunuz yoksa arkadaşlar dersi bitireceğim. Yok herhalde. Hepinize iyi çalışmalar arkadaşlar, iyi dersler. Haftaya görüşmek üzere.

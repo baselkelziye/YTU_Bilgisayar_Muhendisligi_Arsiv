@@ -1,0 +1,3151 @@
+1
+00:12:17,683 --> 00:12:18,803
+Arkadaşlar, günaydın.
+
+2
+00:12:21,764 --> 00:12:22,443
+Günaydın.
+
+3
+00:12:23,243 --> 00:12:24,863
+Sesim geliyor, değil mi? Tamam.
+
+4
+00:12:24,963 --> 00:12:25,363
+Evet, evet.
+
+5
+00:12:25,843 --> 00:12:26,363
+Tamamdır.
+
+6
+00:12:29,124 --> 00:12:37,543
+Evet, bugün ArrayList konusundan devam edeceğiz. Bir önceki derste LinkList konusunu konuşmuştuk.
+
+7
+00:12:38,323 --> 00:12:43,483
+LinkList Data Structure'ının örneklerini yapmıştık.
+
+8
+00:12:44,628 --> 00:12:46,188
+Saatimi de kurayım burada.
+
+9
+00:12:55,028 --> 00:13:01,067
+Bugün ArrayList konusunu konuşacağız. ArrayList'den sonra HashMap konusunu konuşacağız.
+
+10
+00:13:02,348 --> 00:13:10,468
+Diğer bir data structure HashMap. Ondan sonra da zaman kalma durumuna göre exception handling konusunu konuşacağız.
+
+11
+00:13:11,108 --> 00:13:17,388
+Amacım typecasting konusuna kadar gelebilirsek bu konuları örnekleriyle beraber işlemek istiyorum.
+
+12
+00:13:20,179 --> 00:13:30,759
+Henüz daha midtermünüzü okuma fırsatım olmadı ama bu hafta sonu okuyup onların sonuçlarını USS üzerinden açıklıyor olurum.
+
+13
+00:13:32,039 --> 00:13:35,819
+Bunun dışında biliyorsunuz dönem projeniz açıklandı.
+
+14
+00:13:36,399 --> 00:13:39,919
+Dönem projesini online Yıldız Edüteri üzerinden açıkladım.
+
+15
+00:13:39,919 --> 00:13:41,919
+Dönem projesinde de...
+
+16
+00:13:47,892 --> 00:14:00,112
+Size verilmiş olan bir UML diagramı üzerinden giderekten bir tane information system implement etmenizi istiyoruz.
+
+17
+00:14:00,112 --> 00:14:09,532
+Bu UML diagramı içerisinde implement edeceğiniz sistemle ilgili bütün detaylar var.
+
+18
+00:14:10,259 --> 00:14:34,259
+Kullanıcı arayüzü üzerinden neler bekliyoruz? Input checkleri neler olmalı? Bunların hepsi var. Zor bir ödev olduğunu düşünmüyorum. Bu ödevi zaten implement ederekten dersin sonundaki final sınavına ve ikinci midterm sınavına hazırlanmış olacaksınız. Ödevi mutlaka yapın.
+
+19
+00:14:37,812 --> 00:14:46,851
+Dediğim gibi hem dersin sınavlarına hazırlık için sizin için çok önemli hem de dersten iyi bir notla geçebilmek için önemli.
+
+20
+00:14:50,676 --> 00:14:54,216
+Okay. Let's get started.
+
+21
+00:14:55,916 --> 00:15:06,156
+We are now going to talk about a second data structure, which is called ArrayList.
+
+22
+00:15:07,596 --> 00:15:10,156
+If you remember...
+
+23
+00:15:15,283 --> 00:15:18,803
+Arkadaşlar, our first data structure that we learned was linked list.
+
+24
+00:15:19,524 --> 00:15:23,124
+Arkadaşlar, now if you look at this, this is the...
+
+25
+00:15:24,532 --> 00:15:33,492
+inheritance tree for different data structures provided by java.util package.
+
+26
+00:15:33,492 --> 00:15:37,012
+Okay. You see here that java.util package.
+
+27
+00:15:37,992 --> 00:15:44,932
+And you see here is that linked list implementation is here.
+
+28
+00:15:45,392 --> 00:15:52,231
+Linked list is actually implementing an interface called list interface.
+
+29
+00:15:52,532 --> 00:15:57,532
+Okay. And there are others also in...
+
+30
+00:15:58,580 --> 00:16:26,580
+Regular classes which are implementing the list interface. An example of this is the ArrayList. As you see, ArrayList is also a regular class which is implementing the list interface. Okay. Just like the ArrayList, there is also another regular class which is called Vector. This is also is implementing the list interface. So what does this mean?
+
+31
+00:16:26,580 --> 00:16:40,960
+Arkadaşlar, when we say that all these data structures are implementing list interface, which means that in the background, all these data structures are implemented with using a linked list.
+
+32
+00:16:41,491 --> 00:16:56,480
+Okay, both ArrayList or the Vector or the LinkedList, they all are implementing the using LinkedList data structure. Okay. Only the LinkedList regular class is...
+
+33
+00:16:56,480 --> 00:17:02,920
+Providing you the methods that you would see with the linked list implementation.
+
+34
+00:17:03,639 --> 00:17:03,799
+Okay.
+
+35
+00:17:04,160 --> 00:17:05,360
+So what does this mean?
+
+36
+00:17:05,619 --> 00:17:18,059
+Remember in the previous class, we learned, we learned the methods, okay, different kinds of methods that we have with the linked list.
+
+37
+00:17:18,500 --> 00:17:18,700
+Okay.
+
+38
+00:17:21,779 --> 00:17:31,680
+I have shown you the examples of the methods in the codes, not in the slides.
+
+39
+00:17:31,680 --> 00:17:38,180
+OK. And with those methods, basically, you can add a...
+
+40
+00:17:38,448 --> 00:18:06,448
+Açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açıklık ve açık
+
+41
+00:18:06,448 --> 00:18:09,728
+provided by Java.util package.
+
+42
+00:18:10,348 --> 00:18:10,448
+Okay.
+
+43
+00:18:11,168 --> 00:18:32,128
+Now, this time, we are going to use another regular class, ArrayList, but this ArrayList is providing us methods that we can use a linked list as if we are using an array.
+
+44
+00:18:33,140 --> 00:18:48,280
+Okay, so what does this mean? Normally, when we use an array for the data structure, remember, we can put an object into array by providing the index of the cell of the array.
+
+45
+00:18:48,280 --> 00:18:58,280
+Okay, we can provide the index in which we want to put this object. We can say, okay, I want to put the object into...
+
+46
+00:18:59,316 --> 00:19:04,855
+Arkadaşlar, is the first position of the array or the last position of the array.
+
+47
+00:19:05,016 --> 00:19:06,736
+Arkadaşlar, so we can indicate the index.
+
+48
+00:19:07,516 --> 00:19:11,536
+Arkadaşlar, okay, we can indicate the position of the item.
+
+49
+00:19:13,956 --> 00:19:25,056
+Arkadaşlar, just like that, we want to provide methods, okay, with the ArrayList so that we can use the linked list as if we are using the array.
+
+50
+00:19:25,652 --> 00:19:31,132
+Now, take a look at how I am generating, how I am creating an instance of the ArrayList.
+
+51
+00:19:32,211 --> 00:19:39,812
+Remember, ArrayList, all the data structures are using the generic classes.
+
+52
+00:19:39,812 --> 00:19:45,412
+So, therefore, we learned what the generic class is in the previous lecture.
+
+53
+00:19:46,072 --> 00:19:50,412
+So, here I am creating a generic class ArrayList.
+
+54
+00:19:50,992 --> 00:19:53,652
+And as you see, so with this...
+
+55
+00:19:53,652 --> 00:19:57,932
+Arkadaşlar, class, object,
+
+56
+00:19:57,932 --> 00:19:59,972
+ArrayList, that I'm going to keep person type of.
+
+57
+00:20:00,000 --> 00:20:02,000
+ArrayList.
+
+58
+00:20:02,000 --> 00:20:03,000
+Therefore,
+
+59
+00:20:03,000 --> 00:20:08,000
+here you see that I am defining an ArrayList called Liste.
+
+60
+00:20:08,000 --> 00:20:13,000
+And then here I am creating an instance of the ArrayList here.
+
+61
+00:20:13,000 --> 00:20:20,000
+And then I am assigning the reference of this object to this variable.
+
+62
+00:20:20,000 --> 00:20:21,000
+Okay.
+
+63
+00:20:21,000 --> 00:20:25,000
+What's important here is that when I generate an ArrayList,
+
+64
+00:20:25,000 --> 00:20:28,000
+I indicate that I'm going
+
+65
+00:20:28,000 --> 00:20:49,700
+to keep person type objects in the ArrayList. Arkadaşlar, burada eğer person'ı burada belirtmemiş olsaydım, yani direkt şurada ArrayList objesi olarak yaratmış olsaydım, bunun içerisinde birden farklı objeler tutabilirdim.
+
+66
+00:20:50,548 --> 00:21:00,728
+Yani birden farklı tipte objeler tutabilirdim ama burada person diyerekten özellikle bu ArrayList içerisinde person tipinde objeler tutacağımı söylüyorum.
+
+67
+00:21:05,299 --> 00:21:14,259
+Okay, now, so let's take a look at what kind of methods that the ArrayList data structure is providing to us.
+
+68
+00:21:14,559 --> 00:21:18,480
+Now, you see, there is one method, add method.
+
+69
+00:21:19,923 --> 00:21:27,543
+We can add a method, we can add an object of any type into this ArrayList, okay?
+
+70
+00:21:28,083 --> 00:21:35,364
+And so when we do that, it's going to add the object at the end of the list, okay?
+
+71
+00:21:35,763 --> 00:21:43,543
+Now, another method, get method, this time, you see that I am providing the indus.
+
+72
+00:21:44,819 --> 00:21:48,019
+From which that I want to receive the object.
+
+73
+00:21:48,539 --> 00:21:50,079
+Okay, so therefore get method.
+
+74
+00:21:50,480 --> 00:21:56,539
+Now, this is, this allows me to use the linked list as if it is an array.
+
+75
+00:21:57,000 --> 00:21:57,299
+Okay.
+
+76
+00:21:57,899 --> 00:22:00,719
+Now, another method, size method.
+
+77
+00:22:00,899 --> 00:22:05,460
+It returns the number of elements in the ArrayList.
+
+78
+00:22:06,000 --> 00:22:06,279
+Okay.
+
+79
+00:22:06,963 --> 00:22:11,983
+Now, so let's take a look at other methods.
+
+80
+00:22:12,983 --> 00:22:14,063
+Ensure capacity.
+
+81
+00:22:15,284 --> 00:22:36,504
+Okay, now, so with this method, okay, if I want to, let's say, at the beginning, so I created the ArrayList, okay, when I create the ArrayList, I don't tell the ArrayList how many elements that I am going to keep in the ArrayList, okay.
+
+82
+00:22:36,976 --> 00:23:00,516
+Now, if I call the ensure capacity method, then I am telling the ArrayList that, okay, I am going to keep this many objects in the ArrayList, so please keep, allocate certain size of memory so that I can keep all these objects, okay?
+
+83
+00:23:01,587 --> 00:23:26,688
+Bir Array'i yaratırken en başta kaç tane obje tuttuğunu söylüyorum değil mi? Yeni bir Array'i yaratırken. Burada da bu Array List'in sağlamış olduğu bu metotla ben baştan Array List'in içerisinde kaç tane eleman tutacağımı söyleyebilirim. Bu durumda Array List benim için memori'de o kadarlık bir yer arıyor. Bu mesela Link List'te bu metot yok.
+
+84
+00:23:29,587 --> 00:23:37,847
+Yine geri planda link list data structure'ını kullanaraktan sanki bir Array kullanıyormuşum gibi metotlar sağlıyor.
+
+85
+00:23:39,268 --> 00:23:43,067
+Diğer bir metot TrimToSize.
+
+86
+00:23:44,115 --> 00:24:01,096
+Okay, so what does this method is doing? It trims the capacity of ArrayList to the current size of the ArrayList. Okay, so let's say if at the beginning I called the ensure capacity, let's say I said 30.
+
+87
+00:24:01,844 --> 00:24:15,624
+Arkadaşlar, but in fact, I have only 10 objects in my ArrayList. Now, if I call trim to size, then it will reduce the capacity of the ArrayList into 10. Okay.
+
+88
+00:24:16,704 --> 00:24:25,503
+Now, so another method, set method. And now, as you see, this, with the set method, if I want to put
+
+89
+00:24:25,940 --> 00:24:37,539
+Or if I want to update an element in my ArrayList, I can indicate the indus number position and I can put an element into this ArrayList.
+
+90
+00:24:37,539 --> 00:24:45,160
+Okay. And just like that, I can also remove an object from the ArrayList.
+
+91
+00:24:45,360 --> 00:24:50,940
+I can. So for this, I also need to give an indus to the method.
+
+92
+00:24:52,211 --> 00:25:19,331
+Arkadaşlar, okay. Now, if I use set method and remove method by giving the index, okay, and if the current size of the array or ArrayList is less than i, then I will get an exception, okay, index out of bounds exception for just like if I wanted to access to
+
+93
+00:25:20,211 --> 00:25:27,251
+In this of an array which is not available, I will get an exception, then I will have to deal with exception.
+
+94
+00:25:27,711 --> 00:25:31,231
+Okay, we will learn how to deal with exception later.
+
+95
+00:25:32,632 --> 00:25:38,791
+Okay, now these are the methods of the ArrayList which is provided to us.
+
+96
+00:25:38,791 --> 00:25:39,251
+Okay.
+
+97
+00:25:40,307 --> 00:26:07,268
+Arkadaşlar, again, so we have learned linked list. We have learned the methods of a linked list. So, before linked list, we learned how to use array as a data data structures in the previous sessions of this lecture. In the last lecture, we learned how to use linked list. Now, we are going to see the examples of ArrayList. Okay.
+
+98
+00:26:08,276 --> 00:26:32,276
+Arkadaşlar, now, here is an example of an ArrayList by using a composition relationship between the course class and the student. Okay. Now, so let me actually show this on the code so that we can...
+
+99
+00:26:35,412 --> 00:26:37,632
+I can show you other examples as well.
+
+100
+00:26:43,955 --> 00:26:44,315
+Okey.
+
+101
+00:26:58,548 --> 00:26:59,028
+Ok.
+
+102
+00:27:07,092 --> 00:27:08,912
+Hocam bir şey sorabilir miyim?
+
+103
+00:27:19,859 --> 00:27:20,960
+Evet, seni dinliyorum.
+
+104
+00:27:21,719 --> 00:27:29,219
+Az önceki slide'da bazı yerlerde element bazı yerlerde object diyordu. Element primitive type'ları mı söyleniyor?
+
+105
+00:27:32,159 --> 00:27:40,599
+Bir daha bakayım. Şu anda başka bir şeye geçtiğim için ne kastettiğini hemen anlayayım.
+
+106
+00:27:41,339 --> 00:27:44,539
+ArrayList'in fonksiyonlarında söylüyorduk onu.
+
+107
+00:27:45,203 --> 00:27:52,003
+Şimdi ArrayList'in fonksiyonlarında oradaki element dediğimiz şey generic type.
+
+108
+00:27:53,324 --> 00:27:56,884
+Biz generic type'ı bir önceki derste konuştuk.
+
+109
+00:27:57,683 --> 00:28:04,844
+Oradaki generic type'tan kasıt herhangi bir objeyi ben ArrayList içerisinde tutabilirim.
+
+110
+00:28:05,140 --> 00:28:18,140
+Yani en başta iki türlü ben ArrayList'i kullanabilirim. Bir ArrayList'i kullanırken mesela ArrayList'in içerisinde tutacağım şeyleri en baştan söyleyebilirim.
+
+111
+00:28:18,140 --> 00:28:31,320
+Okey, ne derim o zaman? ArrayList işte parametre olarak az önceki örnekte person şeyini geçirmiştim. Mesela şuradan örnek vererek konuşalım.
+
+112
+00:28:32,211 --> 00:28:35,112
+Mesela ArrayList test.
+
+113
+00:28:37,112 --> 00:28:38,052
+Okey.
+
+114
+00:28:39,492 --> 00:28:43,152
+Şimdi ben burada şuradaki örneği görüyorsun.
+
+115
+00:28:44,951 --> 00:28:47,612
+Şuradaki gözüktüğünden de eminim. Tamam.
+
+116
+00:28:48,032 --> 00:28:49,192
+Şuradaki örneği görüyorsun.
+
+117
+00:28:49,751 --> 00:28:52,831
+Ben burada elimde bir tane ArrayList yapıyorum.
+
+118
+00:28:52,992 --> 00:28:56,592
+ArrayList'in içerisine de String objeleri koyuyorum.
+
+119
+00:28:57,107 --> 00:29:16,728
+Şimdi ben burada bu ArrayList'in string objeleri koyacağımı baştan söylemiş oldum. Ben bunun yerine başka bir şey de yapabilirdim. Şu ArrayList'in içerisine string objesi koymak yerine jenerik objeler de koyabilirdim.
+
+120
+00:29:16,728 --> 00:29:23,667
+Yani mesela şuradaki örnekte şöyle bir şey yapmıştık.
+
+121
+00:29:23,955 --> 00:29:45,175
+Evet, mesela. Şimdi bu şekilde tanımlanmış olsaydım, yani ArrayList'in içerisine mesela T yazsaydım, bu durumda ArrayList'in içerisine T yazdığım zaman bu ArrayList'in içerisine öncelikle mesela şey koyabilirdim, string koyabilirdim, arkasından mesela integer koyabilirdim.
+
+122
+00:29:45,715 --> 00:29:57,955
+Ama baştan ArrayList'i tanımlarken eğer belli bir tipte tanımladığım zaman bu durumda bunun içerisine sadece o tipte şey koyuyorum.
+
+123
+00:29:57,955 --> 00:29:59,155
+Mesela şurada.
+
+124
+00:30:00,000 --> 00:30:05,099
+Bunu box değil de ArrayList diye düşün. Şurada box değil de ArrayList varmış diye düşün. Tamam mı?
+
+125
+00:30:05,619 --> 00:30:12,199
+Bunun içerisine ben buraya integer koydum. Artık bunun içerisine koyacağım bütün obje tipleri integer olmalı.
+
+126
+00:30:12,639 --> 00:30:20,819
+Buradaki örnekte de box yerine yine ArrayList düşün. Burayı string diye tanımlamışım. İçerisine hep string tipinde objeler koymak durumundayım.
+
+127
+00:30:21,203 --> 00:30:40,172
+Şimdi buradakini de ArrayList diye düşün. Buradaki ArrayList'i de ben mesela ne diye tanımlamışım? İşte obje diye tanımlamışım. İşte buraya bir tane generic type koyuyorum. Bu koymuş olduğum generic type'ı ben...
+
+128
+00:30:40,596 --> 00:30:48,395
+Şuna generic type olarak, az önceki şeyde obje demiş oldum.
+
+129
+00:30:48,395 --> 00:31:00,036
+Bunun bu şekilde tanımladığım vakit, yani class'ını şu şekilde tanımlıyorum. ArrayList'in geri plandaki implementasyonu bu şekilde tanımlanmış.
+
+130
+00:31:00,556 --> 00:31:05,836
+Ben buraya istediğim tipteki şeyi koyabilirim. Mesela şunu şöyle uçurayım.
+
+131
+00:31:10,003 --> 00:31:32,124
+Şimdi ben bunun içerisine istersem string koyabilirim, istersem ne koyabilirim? Integer koyabilirim. Çünkü bunu bu şekilde tanımlamışım. Yani içerisine istediğim tipteki elemanı koyabilirim. Buradaki t yerine e de olabilirdi.
+
+132
+00:31:32,660 --> 00:31:39,460
+Okey. Şunların hepsi E'de olabilir. Herhangi bir capital letter kullanabilirsin generic type olarak.
+
+133
+00:31:40,403 --> 00:31:41,624
+Anladım hocam.
+
+134
+00:31:41,644 --> 00:31:42,344
+Çok teşekkür ederim.
+
+135
+00:31:42,523 --> 00:31:45,864
+Bunu geçen derste hani jenerik tipleri konuşurken şey yaptık.
+
+136
+00:31:45,983 --> 00:31:57,743
+Eğer bir data structure'ın içerisinde birden fazla tipteki şeyleri kullanmak istiyorsak data structure'ı geri planda şu şekilde tanımlıyoruz.
+
+137
+00:31:57,743 --> 00:31:59,503
+Yani jenerik class olarak tanımlıyoruz.
+
+138
+00:32:00,063 --> 00:32:01,864
+Link list de bu şekilde tanımlanmış.
+
+139
+00:32:02,663 --> 00:32:05,303
+Geri planda ArrayList'i link listi kullanıyor.
+
+140
+00:32:05,683 --> 00:32:08,403
+Dolayısıyla içerisinde istediğim tipteki şeyleri kullanıyoruz.
+
+141
+00:32:08,403 --> 00:32:24,503
+İstersem bu şekilde spesifik olarak hangi parametreyi geçireceğimi söyleyebilirim. İstersem de bu şekilde tanımlayabilirim. Bu şekilde tanımladığım zaman içerisine istediğim şeyi, istediğim farklı şeyleri koyabilirim. Mesela şuradaki ArrayList'e bir bakalım.
+
+142
+00:32:26,104 --> 00:32:33,903
+Şimdi burada öncelikle bir tane string Array'i yaratmışım. İçerisinde beş tane elemanım var.
+
+143
+00:32:36,884 --> 00:32:43,463
+Bunu mesela şu şekilde de yapabilirdim değil mi? Yani bu new string.
+
+144
+00:32:49,491 --> 00:33:07,651
+5 deyip ondan sonra sonra bu şunu şu şekilde tanımlayıp işte stringin sıfırıncı hücresine bu sıfırıncı ikinci birinci hücresine şu gelecek ikincisi üçsine şu bu şekilde de bir atama yapabilirdim.
+
+145
+00:33:07,651 --> 00:33:10,791
+Yavut da bir ereği bu şekilde de tanımlayabiliyorum.
+
+146
+00:33:11,251 --> 00:33:28,051
+Bunu yaptığım zaman Java Virtual Machine benim için şunu anlıyor. Bu arkadaş 5 tane büyüklüğünde bir tane string yaratacak ve bu yaratmış olduğu stringin 0. hücresinden 4. hücresine kadar da şu değerleri atamak istiyor.
+
+147
+00:33:28,051 --> 00:33:36,211
+Yani bir satırda ben bir ERA'ye hem yaratmış oluyorum hem de değerlerini atamış oluyorum.
+
+148
+00:33:36,468 --> 00:33:48,807
+Şimdi burada da bir tane ArrayList yaratıyorum. ArrayList'in başta da tipini söylüyorum. İsteseydim ben bu ArrayList'i şu şekilde de yaratabilirdim.
+
+149
+00:33:53,364 --> 00:34:02,364
+Hocam burada ArrayList için herhangi bir kapasite değeri girmiyoruz. O zaman biz Ensure Capacity fonksiyonu neden kullanıyoruz?
+
+150
+00:34:02,864 --> 00:34:19,064
+Ensure Capacity'yi şu şekilde düşün. Şimdi biz bu ArrayList bize bir link listi bir Array gibi kullanma yeteneği sağlıyor ya.
+
+151
+00:34:21,364 --> 00:34:44,403
+Physical Memory'de ben yeterli physical memorinin içerisinde ne yaratıyor Java? Java Virtual Memory yaratıyor. Ve onun içerisinde de bizim kodlarımız çalışıyor. Ben diyelim ki Java Virtual Machine içerisinde 10 tane program çalıştırıyorum ve bu 10 tane program da memoriden bir takım alanları kullanıyor.
+
+152
+00:34:49,364 --> 00:35:05,304
+Bunun içerisinde de ben eminim ki o data structure'da 30 tane obje tutulması gerekli. Yani maksimum 30 tane obje tutulması gerekli. Ve baştan o 30 tane obje için memoride yer ayırıyorum.
+
+153
+00:35:06,356 --> 00:35:29,096
+Yani Ensure Capacity Java Virtual Machine diyor ki, bak benim programım için memory'de en nihayi olarak şu kadarlık bir yere ihtiyacım var. Programımın çalışma hayat süresi içerisinde. Bunun için memory'de benim adıma 30 tane eğer bu string objeleri tutacaksa 30 tane string objesi tutacak kadar benim için yer allocated.
+
+154
+00:35:29,907 --> 00:35:44,488
+Bunu sağlıyor. Aslında biz bir Array'i yaratırken de onu yapıyoruz. Yani ben burada string colors new, string 5 demiş olduğumda, memory diyorum ki Java Virtual Machine bana bu kadarlık yer ayır.
+
+155
+00:35:45,927 --> 00:35:47,208
+Tamam hocam, teşekkür ederim.
+
+156
+00:35:47,699 --> 00:35:52,099
+Şimdi ben burada bu ArrayList'i bu şekilde de yaratabilirim dedim.
+
+157
+00:35:52,439 --> 00:35:57,919
+Yahut da ArrayList'i az önce gösterdiğim gibi şu şekilde de yaratabilirim.
+
+158
+00:35:57,979 --> 00:36:04,199
+Bu şekilde yarattığım zaman özellikle diyorum ki ben ArrayList'in içerisine string tipteki objelerini tutacağım.
+
+159
+00:36:04,639 --> 00:36:05,759
+Parametresine veriyorum.
+
+160
+00:36:05,759 --> 00:36:06,279
+Tamam.
+
+161
+00:36:07,059 --> 00:36:09,039
+Şimdi ondan sonra ne yapıyorum?
+
+162
+00:36:09,619 --> 00:36:12,859
+Bu colors Array üzerinde bir for each loop yapıyorum.
+
+163
+00:36:13,299 --> 00:36:15,699
+Ve bu colors Array'i...
+
+164
+00:36:15,699 --> 00:36:41,719
+içerisindeki bütün elemanları ne yapıyorum? Listeme ekliyorum. ArrayListeme ekliyorum. Bu add metodu bana neyi sağlıyordu? Her seferinde elimdeki listin en sonunu ekleyecekti. Magenta'yı ekleyecek, ondan sonra red'i ondan sonra ekleyecek, sonra white'ı ekleyecek. Tamam. Şimdi ikinci bir tane Array yaratmışım. Remove colors. Bu ikinci Array için bir tane ArrayList yaratmışım.
+
+165
+00:36:42,079 --> 00:37:03,079
+Ona da remove list demişim. Aynı şeyi bunun için yapmışım. Remove list'e eklemişim. Ondan sonra bununla ilgili bir şeyler yazdıracağım. Öncelikle bir klasik for döngüsü içerisinde bu liste üzerinde ne yapıyorum? Gidiyorum.
+
+166
+00:37:04,916 --> 00:37:16,836
+Bu liste üzerinden giderken dikkat edin listenin ArrayList'in get metodunu kullanıyorum. Yani indis veriyorum.
+
+167
+00:37:17,396 --> 00:37:44,155
+Normalde mesela link liste bu yoktu. Link liste ben bir iterasyon yaparken list iterator sınıfını kullanıyordum. Link list üzerinde iterasyon yaparken. Geçen ders gördük. Ama burada ben link liste üzerinde pardon ArrayList kullanaraktan indis numarası vererek elimdeki liste üzerinden gidebiliyorum.
+
+168
+00:37:45,396 --> 00:38:05,796
+metoduna indis vermişim. Bana dönderdiği objeyi de burada yazdırıyorum. Burada kimi yazdırıyorum? İlk listeyi yani şu beş tane elemanı olan listeyi yazdırıyorum. Tamam. Ondan sonra burada bir tane metot implement etmişim. O metoda gidelim. Remove colors diye. Bu remove colors iki tane listeyi input olarak almış.
+
+169
+00:38:06,192 --> 00:38:29,311
+İki tane listeyi input olarak şey yapıyorum. Buna pes ediyorum. Dikkat edin, remove colors o metodunun iki tane argümanı var, input argümanı. Bunların tipleri de şu şekilde tanımlanmış. Çünkü ben ilk başta bu ArrayList'i tanımlarken içerisinde string tipinde eleman tutacağım diye söylemiştim.
+
+170
+00:38:29,652 --> 00:38:52,811
+Şimdi burada yalnız şunu görüyorsunuz. Hani ben buraya tipi geçirirken list tipinde geçirmişim. Yapabilir miyim bunu? Yapabilirim. Çünkü biz ne demiştik? Bir regular class'ın objesini bunun parent'ın tipini kullanarak takip edebilirim.
+
+171
+00:38:53,492 --> 00:39:12,572
+Parent'ı ne? ArrayList'de, LinkList'de, Vector'de bunların hepsi list interface'ini implement ediyor. Dolayısıyla list interface sınıfı bunların parent'ı olduğu için bunu kullanarak ben list objeli, ArrayList objelerini takip edebilirim.
+
+172
+00:39:12,572 --> 00:39:21,492
+Buraya benim pas ettiğim aslında birer ArrayList objeleri ama bunu ArrayList tipi kullanarak değil de ArrayList.
+
+173
+00:39:21,492 --> 00:39:40,492
+ArrayList'in parent'i olan list tipini kullanarak takip ediyorum. Şimdi buradaki örnekte öyle yapmışım. Yani her zaman bu şekilde yapmak zorunda değilim. Buradaki sadece bunu yapabileceğimi göstermek için buradaki örneği size gösteriyorum. Şimdi bunun içerisinde de...
+
+174
+00:39:41,396 --> 00:39:59,976
+Şimdi ne yapmışım? Bu sefer iterator sınıfını kullanaraktan ne yapıyorum? Bu liste üzerinde hareket ediyorum. Bunu nasıl yapabiliyorum? Hatırlayın ArrayList esasında geri planda nasıl implement edilmişti?
+
+175
+00:40:00,000 --> 00:40:28,000
+bir link list şeklinde implement edilmişti. Geçen derste size list nodunu, şunu göstermiştim. Bir ArrayList'in geri plandaki implementasyonunda bir list nod vardı. Bir de şu list dediğimiz şey link listi. Şu da bu link listin her bir parçasını oluşturan list noddu. Yani geri planda aslında ArrayList'e bu list...
+
+176
+00:40:28,000 --> 00:40:30,279
+notları kullanarak implement edilmiş.
+
+177
+00:40:30,699 --> 00:40:31,619
+Tekrardan dönelim.
+
+178
+00:40:33,043 --> 00:41:01,043
+Dolayısıyla ben bu parent tipi yani list tipinde bir ArrayList objesini takip ettiğim zaman bu liste üzerinde sanki bir link list kullanıyormuşum gibi hareket edebilirim. Ne yapmışım burada? Onu yapmışım. Bu list üzerinden bir tane iterator almışım. Bu iterator üzerinde sürekli hasnext'lerle bu şeyin...
+
+179
+00:41:01,043 --> 00:41:13,543
+Ereğin üzerinde hareket etmişim. Ereğin üzerinde hareket etmişim. Bu ereğin üzerinde hareket ederken de öncelikle birinci ereğ yani içerisinde beş tane eleman olan ereğ üzerinde hareket ediyorum.
+
+180
+00:41:14,036 --> 00:41:30,456
+Hareket ederken de ikinci Array yani listiki bu üç tane elemanı olan Array'in elemanları eğer birincisinde ikinci listedeki elemanlar birinci listede varsa onları çıkartıyorum.
+
+181
+00:41:30,655 --> 00:41:40,815
+Nedir mesela? Magender, Red, White, Blue bunlardan hangileri? Mesela Red ikincisinde var. İkincisinde varsa bunu birinci listeden çıkartıyorum.
+
+182
+00:41:42,036 --> 00:41:45,056
+write var, çıkartıyorum, blue var, çıkartıyorum.
+
+183
+00:41:47,255 --> 00:41:51,775
+Şimdi bunu da gerçekleştirdim, remove color'sı da gerçekleştirdim.
+
+184
+00:41:51,916 --> 00:41:57,115
+Remove color'ı gerçekleştirdikten sonra listeyi tekrardan yazdırıyorum.
+
+185
+00:41:59,715 --> 00:42:02,775
+İlk baştaki benim ArrayList'imin içeriği buydu.
+
+186
+00:42:03,380 --> 00:42:19,199
+Remove Colors'ı çağırdıktan sonra ne yaptım? İkinci listenin içerisindeki her bir elemanı bu while döngüsü içerisinde birinci listeyle kontrol ettim. Eğer varsa bunu çıkarttım.
+
+187
+00:42:26,132 --> 00:42:28,652
+Şimdi birkaç tane daha ArrayList örneği görürüm.
+
+188
+00:42:36,659 --> 00:42:41,179
+Peki, evet.
+
+189
+00:42:43,179 --> 00:42:46,979
+Şimdi, az önce size bir örnek göstermiştim.
+
+190
+00:42:47,339 --> 00:42:51,019
+Hani, course, bir de student örneği.
+
+191
+00:42:51,339 --> 00:42:56,819
+Bir course'un içerisinde çok sayıda student olabilir.
+
+192
+00:42:57,423 --> 00:43:00,884
+bir composition ilişkisi vardı.
+
+193
+00:43:01,764 --> 00:43:06,203
+Bunu ben şimdi bir ArrayList kullanaraktan implement edeceğim.
+
+194
+00:43:06,364 --> 00:43:11,884
+Öncelikle bu course'un, öncelikle student sınıfına bir bakalım.
+
+195
+00:43:11,884 --> 00:43:20,963
+Student sınıfı benim course içerisinde tutmak istediğim objeler.
+
+196
+00:43:21,604 --> 00:43:23,963
+İki tane global member field'ı var.
+
+197
+00:43:24,083 --> 00:43:25,043
+Number ve name.
+
+198
+00:43:25,423 --> 00:43:42,923
+Ondan sonra bir tane constructor var. İki parametreli constructor, getter'ları. Bir de getter metotları var. Basit bir sınıf. Şimdi korsa gidelim. Bu kors içerisinde global member filtlarıma bakalım. Üç tane global member filtım var.
+
+199
+00:43:44,467 --> 00:43:57,487
+Dersin kodu, ismi ve kapasitesi, bir de buradaki ArrayListim içerisinde bir de ArrayListim var. Dikkat edin ArrayListimin içerisinde student objeleri tutacağıma baştan söylüyorum.
+
+200
+00:43:57,907 --> 00:44:17,427
+Bir tane constructorım var. Bu üç parametreli constructorım. Burada dersin kodunu geçmişim. Name'ine bir de kapasitesini geçmişim. Global Member Filter'ımı initialize etmişim. Ve aynı zamanda benim elimdeki ArrayList'imi de burada initialize etmişim. Görüyorsunuz.
+
+201
+00:44:17,844 --> 00:44:23,684
+Ok. Constructor'ın görevi neydi? Her zaman global member filleri initialize etmekte.
+
+202
+00:44:23,684 --> 00:44:40,083
+Şimdi sınavda şu hatayı yapıyorsunuz. Burada ArrayList'i olması gerektiği gibi tanıttığınız halde ArrayList'i initialize ederken doğru parametreyle etmiyorsunuz. Bundan da puan kırılıyor. Bunu yapmayın arkadaşlar.
+
+203
+00:44:45,331 --> 00:44:51,811
+Burada getter metotlarım var. Buradaki bütün global member fiyatlarım için.
+
+204
+00:44:53,291 --> 00:45:01,331
+Get student count diye bir tane metodum vardı benim şey üzerinde. Bana verilmiş olan...
+
+205
+00:45:01,907 --> 00:45:16,728
+UML diagramda. Bunu nasıl implement edeceğim? ArrayList'in size diye bir tane metodu var. Bu ArrayList'in içerisindeki kaç tane obje varsa bunu bana döndürüyor.
+
+206
+00:45:18,387 --> 00:45:44,907
+Add student metoduna bakalım. Add student metodu içerisinde bir tane student objesi eklemeye çalışıyorum. Yapmaya çalıştığım, öncelikle bu iki tane kontrol yapmam lazım. Bir data structure'ına yeni bir veri eklerken bütün add metotlarında öncelikle bu data structure'ın kapasitesi maksimum kapasiteye erişmiş mi?
+
+207
+00:45:45,523 --> 00:45:51,423
+İkincisi, bu eklemek istediğim obje bu data structure'da var mı?
+
+208
+00:45:52,603 --> 00:45:58,764
+Bu add metotlarında bu input check'i yapmadığınız zaman puan kaybediyorsunuz arkadaşlar.
+
+209
+00:45:59,380 --> 00:46:24,199
+Hem kapasitesini hem de varmıyı kontrol edeceksiniz. Burada kapasiteyi nasıl kontrol ederim? Get student count metodunu çağırdığım zaman bana mevcuttaki öğrenci sisyeri verecek. Eğer bu maksimum kapasiteye erişmişse o an için o durumda ben ekleme yapmayacağım. Yani bu if statement'ın içerisinde return false döndüreceğim.
+
+210
+00:46:27,380 --> 00:46:50,019
+aynı if condition içerisinde bu öğrenci var mı? Bunun için find student diye bir tane metot var. Az önce gösterdiğim UML diagramı içerisinde. Şimdi bu find student metodunun döndermiş olduğu true ve false şeyi var.
+
+211
+00:46:51,956 --> 00:47:04,016
+Pardon, find student metodunun döndermiş olduğu bir obje var. Ne yapıyorum? Bunun almış olduğu input değerini veriyorum. Input değeri öğrencinin numarası, string değeri.
+
+212
+00:47:04,628 --> 00:47:21,748
+Ve bu da bana geriye bir tane obje döndürüyor. Eğer bu obje null'dan farklıysa bu ne demek? Bu ArrayList içerisinde bu obje var demek. Bu obje varsa bu durumda artık aynısını eklemiyorum. Zaten eklenmiş diyorum.
+
+213
+00:47:22,356 --> 00:47:33,576
+Ondan sonra eğer bu kondişona girmiyorsam zaten bu öğrenciyi students add diyerek add metodunu kullanarak ArrayList'in ekliyorum ve return true'ü gönderiyorum.
+
+214
+00:47:34,456 --> 00:47:35,936
+Find student metoduna bakalım.
+
+215
+00:47:38,260 --> 00:47:54,500
+Biz daha önce şunu demiştik. Bütün data structure'lar için for each metodunu kullanabiliyoruz. Burada for each döngüsünde data structure'ın değişkeninin ismini sağ tarafa yazıyoruz.
+
+216
+00:47:54,500 --> 00:48:06,200
+Data structure'ın içerisinde bulunan objeleri ve bu objenin tipini de sol tarafa yazıyoruz. Buraya objenin tipini yazdım ve buraya da bir tane.
+
+217
+00:48:06,260 --> 00:48:08,180
+lokal değişken ismi yazdım.
+
+218
+00:48:08,916 --> 00:48:20,255
+Bu şu demek, her bir döngüde bu data structure içerisinden bir tane obje al, şu lokal değişkeni ata ve bu for döngüsünün içerisinde kullan demek.
+
+219
+00:48:20,255 --> 00:48:36,516
+Şimdi bu for each döngüsü içerisinde ne yapıyorum? Bu students ArrayList'i üzerinde bir iterasyon yapıyorum. Her bir iterasyonda da bu student objesinin içerisinden get number değerini alıyorum. Bu bir string olacak.
+
+220
+00:48:36,916 --> 00:48:48,596
+Sonra almış olduğum stringin değerini bu input olarak geçmiş olduğum number değeriyle karşılaştırıyorum. Eğer birbirine eşitse bunlar sıfır döndürüyorum.
+
+221
+00:48:49,588 --> 00:48:52,828
+Farklı bir suyu döndürüyorum.
+
+222
+00:48:53,168 --> 00:49:01,388
+Sıfır döndermişsem zaten bu durumda objeyi bulmuşum demektir ve bu objeyi referansına return olarak döndürüyorum.
+
+223
+00:49:01,388 --> 00:49:12,468
+Eğer zaten şuradaki for döngüsünü hiçbir şey bulmadan çıkaracak olursa yani şuradaki if statement'ın içine hiç girmeyecek olursa zaten return null döndürüyor.
+
+224
+00:49:13,972 --> 00:49:21,972
+Yine bir UML diagramında yine bir başka metodum var. Increase capacity. Burada da ben...
+
+225
+00:49:23,284 --> 00:49:34,364
+Bu örnekte ben öğrenci sınıfın size'ını capacity diye bir tane değişkenle, global değişkenle takip ediyorum.
+
+226
+00:49:34,364 --> 00:49:47,604
+En başta eğer 30 kişilik bir sınıf tanımlamış isem bu 30 kişilik sınıfın dolup dolmadığını bu capacity integer değeriyle takip edeceğim.
+
+227
+00:49:48,244 --> 00:49:51,164
+Ve bu integer'ı da zaten yeni eleman eklerken.
+
+228
+00:49:51,284 --> 00:49:54,784
+Sürekli kontrol ediyorum. Acaba o integer değerine ulaşmış mıyım diye.
+
+229
+00:49:54,784 --> 00:49:59,784
+İşte ilk başta benim yapmış olduğum kapasiti değerinden daha...
+
+230
+00:50:00,000 --> 00:50:17,200
+Daha yüksek kapasite, yani sınıfın kapasitesini arttırmak istersem bu durumda bu metodu çağırıyorum. Bu metotta da arttırmak istediğim kapasite değeri mevcuttaki kapasiteden daha küçükse ve eşikse zaten hiçbir şey yapmadan bir return değeri gönderiyorum.
+
+231
+00:50:17,200 --> 00:50:27,200
+Ama eğer daha büyükse, yani gerçekten arttırmak istediğim değer daha büyük bir değerse bunu yeni kapasite değerini...
+
+232
+00:50:28,000 --> 00:50:28,600
+Güncel diyorum.
+
+233
+00:50:32,080 --> 00:50:50,920
+Burada da show class list metodu içerisinde bir yine for each döngüsüyle elimdeki ArrayList'in üzerindeki bütün objeler üzerinde gidip bu ArrayList'in içerisindeki objelerin bir numaralarını bir de isimlerini alıp yazdırıyorum.
+
+234
+00:50:54,708 --> 00:50:58,488
+Şimdi bunun şeyine bakalım.
+
+235
+00:51:00,768 --> 00:51:01,968
+Main metoduna bakalım.
+
+236
+00:51:03,728 --> 00:51:07,108
+Main metodunda da bir tane sınıf oluşturmuşum.
+
+237
+00:51:07,108 --> 00:51:09,028
+3 parametreli.
+
+238
+00:51:10,003 --> 00:51:32,023
+Constructor'ını çalıştırarak bir tane sınıf objesi oluşturmuşum. Bunun referansını sınıfa atamışım. Arkasından bir tane öğrenci objesi oluşturmuşum. Bunun referansını şuradaki lokal değişkeni atamışım. Sonra bu sınıf objesi, sınıf sınıfa bir tane öğrenci eklemişim.
+
+239
+00:51:34,036 --> 00:51:55,916
+Bu add student metodu bana true ya da false gönderiyor. Eğer bu göndermiş olduğu true ise bu durumda şu if condition'ı false olacak. Yani burada bir şu statement'ı yazdırmayacak.
+
+240
+00:51:56,403 --> 00:52:16,344
+Eğer zaten bunu false döndürmüş olursa şu başına negation'ı koyduğum için burası true olacak bunu yazdıracak. Arkasından aynı öğrenciyi yazdırmaya çalışıyorum. Zaten bu öğrenciyi yazdığı için ikinci öğrenciyi yazmaya çalıştığı zaman bana neyi döndürecektir?
+
+241
+00:52:24,403 --> 00:52:26,304
+Ne yapacaktır? Yazdırmayacaktır.
+
+242
+00:52:26,963 --> 00:52:53,063
+Arkasından ikinci bir öğrenci yaratıyorum. Bu öğrenciyi benim data structure'ıma ekliyorum. Sonra üçüncü bir öğrenci yaratıyorum. Bunu da data structure'ıma ekliyorum. Dördüncü bir öğrenci yaratıyorum. Bu data structure'ıma ekliyorum. Dördüncü öğrenciyi yarattığın zaman add metodu bana ne döndürecektir? True'yu döndürecektir.
+
+243
+00:52:54,675 --> 00:53:03,855
+Okey. Bu true'yu dönderdiğinde bu durumda şu statement'ı yazacaktır. Okey.
+
+244
+00:53:05,331 --> 00:53:31,192
+Ondan sonra bu öğrenciyi bu sefer bulmaya çalışmışım. Şu numaralı öğrenciyi bulmaya çalışıyorum. Bu numaralı öğrenciyi bulmaya çalıştığımda ki var. Bu dönderdiği obje student 3 objesi. Bu student 3 objesi bundan farklı mı? Değil. Burası false. Bunu yazdırmayacaktır.
+
+245
+00:53:33,331 --> 00:54:01,331
+class list dediğim zaman show class list metodunu göstermiştim. Onu çalıştıracak. Burada aslında bu bir ArrayList ile implement edilmiş bir sınıfa add metotlarıyla ben yeni objeler ekliyorum yahut bir tane objeyi çıkartıyorum ya da işte bir tane objeyi bulmaya çalışıyorum.
+
+246
+00:54:01,331 --> 00:54:29,331
+Bunun örneği. Şimdi bu aynı örneğin bir de ArrayList implementasyonu da var. Hani ben bunu anlatmayacağım. Bu ArrayList implementasyonu daha önceden sınıfta örneklerini konuşmuştuk. Buna kendinizle kodlardan bakabilirsiniz. Ama ikisini karşılaştırdığınız zaman bir ArrayList data structure'ı kullandığınız zaman yazmış olduğunuz...
+
+247
+00:54:29,331 --> 00:54:34,172
+Kodların ne kadar daha basitleştiğini sizler de göreceksiniz arkadaşlar.
+
+248
+00:54:37,780 --> 00:54:39,500
+Tamam, başka ArrayList ile ilgili.
+
+249
+00:54:41,179 --> 00:54:41,500
+Evet.
+
+250
+00:54:42,460 --> 00:54:45,000
+Şimdi tekrardan slaytlarımıza dönemiyoruz.
+
+251
+00:54:47,019 --> 00:54:49,400
+Buraya kadar sorusu olan var mıdır arkadaşlar?
+
+252
+00:55:09,108 --> 00:55:22,668
+Okay. I have just shown you this particular example. I have shown you the implementation of students. I have shown you the implementation of course. And also I have shown you the implementation of uses.
+
+253
+00:55:24,748 --> 00:55:27,348
+So we have seen this in the course.
+
+254
+00:55:28,548 --> 00:55:30,868
+And we have seen this in the course.
+
+255
+00:55:31,572 --> 00:55:35,192
+Okay, and this is the array implementation of the same thing.
+
+256
+00:55:35,432 --> 00:55:52,052
+Okay, so instead of ArrayList, here I am using an array of the same implementation, but I am not going into details of the array implementation because we already covered how to use arrays as a data structure in the previous lecture.
+
+257
+00:55:52,052 --> 00:55:59,231
+And this is, so I have already shown you the main method.
+
+258
+00:55:59,572 --> 00:56:06,312
+Arkadaşlar, that you can use in order to add, remove, or find a student in the data structure.
+
+259
+00:56:07,292 --> 00:56:19,052
+Arkadaşlar, now we are going to talk about another data structure, which is a map data structure, in which we are going to keep...
+
+260
+00:56:19,092 --> 00:56:22,412
+More than one object in the data structure.
+
+261
+00:56:22,751 --> 00:56:28,711
+We are going to keep pair of objects in the data structure.
+
+262
+00:56:28,711 --> 00:56:34,532
+For this, we are going to use another data structure, which we are going to call MAP.
+
+263
+00:56:34,992 --> 00:56:41,231
+But I want to give a 10-minute break, and then I will continue with the MAP data structure.
+
+264
+00:56:41,812 --> 00:56:45,432
+Onda ki karı veririm arkadaşlar, sonra bir sonraki sesyonda başlayalım.
+
+265
+01:06:19,411 --> 01:06:23,611
+Evet, tekrardan merhaba arkadaşlar. Sesim geliyor mu? Bir key dedin lütfen.
+
+266
+01:06:27,635 --> 01:06:28,435
+Geliyor hocam.
+
+267
+01:06:28,915 --> 01:06:29,576
+Tamam, süper.
+
+268
+01:06:31,415 --> 01:06:34,775
+Okay, now we are going to talk about another data structure.
+
+269
+01:06:34,975 --> 01:06:39,115
+So far we have learned, at the beginning of the lecture, we have learned Array.
+
+270
+01:06:40,035 --> 01:06:48,615
+Then two lectures before, we learned Linklist.
+
+271
+01:06:51,668 --> 01:07:04,867
+Now we are, we learned how to, how to use ArrayList. Now we are going to learn another data structure, which is HashMap. Okay.
+
+272
+01:07:08,387 --> 01:07:15,068
+Now, before I go to details of the HashMap, I just want to also mention that.
+
+273
+01:07:15,827 --> 01:07:19,427
+There is also another data structure called vector.
+
+274
+01:07:20,427 --> 01:07:20,768
+Okay.
+
+275
+01:07:21,048 --> 01:07:23,488
+It is just like the ArrayList.
+
+276
+01:07:23,748 --> 01:07:24,728
+There is no difference.
+
+277
+01:07:25,588 --> 01:07:27,688
+All the methods are the same.
+
+278
+01:07:29,907 --> 01:07:34,148
+It is also using linked list in the background.
+
+279
+01:07:34,448 --> 01:07:36,228
+All of its methods are the same.
+
+280
+01:07:36,887 --> 01:07:37,028
+Okay.
+
+281
+01:07:37,028 --> 01:07:39,448
+The only difference is that
+
+282
+01:07:39,827 --> 01:08:02,547
+The vector data structure is thread safe. ArrayList data structure is thread unsafe. What does thread safe means? What does thread unsafe means? Thread safe means if, for example, two program is trying to access to the same.
+
+283
+01:08:03,507 --> 01:08:06,507
+Object in the data structure.
+
+284
+01:08:07,207 --> 01:08:07,327
+OK.
+
+285
+01:08:07,727 --> 01:08:12,367
+And if they both want to update the value in that object.
+
+286
+01:08:12,747 --> 01:08:13,067
+OK.
+
+287
+01:08:13,287 --> 01:08:16,147
+Then you need synchronization.
+
+288
+01:08:17,067 --> 01:08:17,287
+OK.
+
+289
+01:08:17,647 --> 01:08:23,007
+Let's say one of them is trying to they both are trying to update the value.
+
+290
+01:08:23,108 --> 01:08:23,347
+Right.
+
+291
+01:08:23,987 --> 01:08:26,528
+They both access to the same value.
+
+292
+01:08:27,060 --> 01:08:34,800
+And then they read the value. For example, the value of the variable in the object is 5.
+
+293
+01:08:34,960 --> 01:08:43,980
+They both read the value as 5. Okay. One of them wanted to increment that value by 1, made it 6.
+
+294
+01:08:44,564 --> 01:08:54,564
+And the other one is also trying to update its value by one. It made it also six. Okay. And so...
+
+295
+01:08:55,636 --> 01:09:01,615
+And the second one replaced the value with six.
+
+296
+01:09:01,935 --> 01:09:16,275
+But normally, the second one should have waited for the first one to update it, which the first one should make that value six so that the second one can update that value to be seven.
+
+297
+01:09:16,275 --> 01:09:16,876
+Okay.
+
+298
+01:09:17,236 --> 01:09:19,496
+Which means that if there are two.
+
+299
+01:09:20,115 --> 01:09:29,935
+Process or programs trying to access a value in the data structure to update, then you need a synchronization.
+
+300
+01:09:30,456 --> 01:09:38,935
+Now, vector is providing that synchronization. On the other hand, ArrayList does not provide that synchronization.
+
+301
+01:09:38,935 --> 01:09:47,476
+Therefore, we are calling vector as threat-safe data structure, ArrayList as a threat-unsafe data structure.
+
+302
+01:09:48,212 --> 01:09:55,652
+Okay. And similarly, we have the same thing in.
+
+303
+01:09:59,155 --> 01:10:02,956
+We have the same thing in HashMap and HashTable.
+
+304
+01:10:02,956 --> 01:10:03,475
+Okay.
+
+305
+01:10:03,735 --> 01:10:13,716
+Now, HashMap data structure is thread unsafe, just like the ArrayList, and HashTable data structure is thread safe.
+
+306
+01:10:14,155 --> 01:10:14,275
+Okay.
+
+307
+01:10:14,895 --> 01:10:24,815
+Now, these two data structures, they both have the same methods because they are implementing the same interface, map interface.
+
+308
+01:10:25,555 --> 01:10:36,036
+Okay. Now, what is the difference between the map-based data structures than the list-based data structures?
+
+309
+01:10:36,036 --> 01:10:45,595
+Now, we have learned the list-based data structures. We have learned the linked list. We have learned the ArrayList. I have also mentioned about the vector. Okay.
+
+310
+01:10:46,136 --> 01:10:53,515
+Now, we are going to learn map-based data structures. One of them is HashMap. The other one is HashTable.
+
+311
+01:10:53,555 --> 01:11:02,895
+Now, as you see, this is also a generic class, which means that at the beginning,
+
+312
+01:11:04,404 --> 01:11:11,524
+You can identify what kind of objects that you want to keep in this data structure.
+
+313
+01:11:12,084 --> 01:11:21,404
+Or you can leave it open and you can put different types of objects in this data structure.
+
+314
+01:11:22,043 --> 01:11:27,244
+Now, let's say this data structure is taking two elements.
+
+315
+01:11:27,244 --> 01:11:30,744
+Now, first one is we call it is a key.
+
+316
+01:11:31,164 --> 01:11:32,144
+Second one is.
+
+317
+01:11:32,404 --> 01:11:54,804
+Arkadaşlar, for the value. Okay. And if we want to keep track of the values by using the key objects. Okay. Now, so I will show you examples of how we are going to use HashMap. Okay. But let us first take a look at what kind of methods does it have. Now you see that
+
+318
+01:11:56,064 --> 01:12:05,764
+If I wanted to put an object into the hashmap, you can see that I am using by using key value pairs.
+
+319
+01:12:06,484 --> 01:12:06,584
+Okay.
+
+320
+01:12:06,804 --> 01:12:13,744
+Now, key is the value that I'm going to use as an index number for the value.
+
+321
+01:12:14,224 --> 01:12:14,664
+Okay.
+
+322
+01:12:15,220 --> 01:12:24,319
+And once I call the put method, okay, it will return the object value to me as a return value.
+
+323
+01:12:25,235 --> 01:12:36,095
+Okay, it will tell me that, okay, I put the value that you want to insert and this is the value that, so this is the value that I inserted.
+
+324
+01:12:36,935 --> 01:12:43,315
+And there is, you see that get method and with the get method, you indicate the, in this number.
+
+325
+01:12:43,828 --> 01:13:11,528
+Okay. And for which it returns the corresponding value number. Remember, within the hash map, it's sort of a table. The first column is the indices, keys. The second column is the values that I want to keep. Okay. And if I give the data structure the index number, which is the key number, it will return to me the value. And you see that it has a method, remove method.
+
+326
+01:13:11,828 --> 01:13:39,212
+I can give the index number. It will remove that entry from the table. And it has a values method. It will return to me all the values in that table as a collection type object. OK. Now remember, collection is the parent type or parent class in the
+
+327
+01:13:40,851 --> 01:13:42,811
+Data structure tree.
+
+328
+01:13:43,112 --> 01:13:44,131
+So you see that.
+
+329
+01:13:44,672 --> 01:13:48,871
+So all of these are collections.
+
+330
+01:13:49,051 --> 01:13:50,752
+So you see that collection interface.
+
+331
+01:13:50,752 --> 01:14:03,512
+So collection interface is the parent interface not only for the list type objects, also the map type objects.
+
+332
+01:14:09,203 --> 01:14:17,003
+Okay, so you see that map interface here, map interface also inherited from the collection interface.
+
+333
+01:14:17,003 --> 01:14:25,463
+So therefore, so, so it will return to me the collection.
+
+334
+01:14:27,315 --> 01:14:37,296
+which is the parent type for all the values that I'm going to keep in the values.
+
+335
+01:14:38,496 --> 01:14:52,615
+Buradaki values objelerini bir liste tipindeki, bir collection tipindeki bir data structure olarak bana döndürüyor.
+
+336
+01:14:55,315 --> 01:15:05,475
+ne yapabilirim? Bir list sınıfının, list sınıfını kullanıraktan bunun üzerinde iterasyon yapabilirim.
+
+337
+01:15:05,475 --> 01:15:20,876
+OK. Is empty method, it basically checks whether this map data structure is empty or not. Size method, it returns me the size of the table.
+
+338
+01:15:21,555 --> 01:15:28,715
+Contents key, you give the index number and it tells you whether or not there is a value there.
+
+339
+01:15:29,375 --> 01:15:29,495
+Okay.
+
+340
+01:15:30,515 --> 01:15:35,395
+Or you can check whether there is a value in that table.
+
+341
+01:15:35,595 --> 01:15:43,155
+You can give the value itself and it checks all the values in the table and it returns true or false.
+
+342
+01:15:43,155 --> 01:15:44,115
+Okay.
+
+343
+01:15:44,948 --> 01:15:50,368
+Now, so this is the class, the HashMap class, okay?
+
+344
+01:15:50,927 --> 01:15:54,667
+K for indicates the key, V indicates the value.
+
+345
+01:15:55,688 --> 01:16:10,708
+And so we talked about the get method, we talked about the put method, we talked about the values method, which returns a collection type data structure.
+
+346
+01:16:12,884 --> 01:16:29,703
+Okay, now let's take a look at a code of the same problem. Remember the problem we had. So let's go back to the UML diagram. So this was our problem. So we have a course.
+
+347
+01:16:30,112 --> 01:16:42,471
+And we have in this course, we have a number of students and we have one main class which we are using in order to insert students into this course.
+
+348
+01:16:43,072 --> 01:16:48,791
+And initially I implemented this course by using the ArrayList data structures.
+
+349
+01:16:48,992 --> 01:16:55,231
+Now I am going to do the same implementation, but this time I'm going to use HashMap.
+
+350
+01:16:56,351 --> 01:16:56,992
+Now.
+
+351
+01:16:57,684 --> 01:17:03,363
+Arkadaşlar, look at the student implementation will be the same.
+
+352
+01:17:03,463 --> 01:17:05,863
+The only changes will be in the course implementation.
+
+353
+01:17:06,144 --> 01:17:08,484
+Let's take a look at the course implementation.
+
+354
+01:17:09,484 --> 01:17:16,724
+Now, remember, so we had the global member fields, three global member fields, code, name, and capacity.
+
+355
+01:17:18,484 --> 01:17:24,584
+Then I am creating, I am defining, actually, I am defining my hash map.
+
+356
+01:17:24,895 --> 01:17:30,155
+Now you see that it's going to be a private variable.
+
+357
+01:17:30,644 --> 01:17:41,184
+And you see that in the hash map, so in the arguments of the hash map generic class, I have two types.
+
+358
+01:17:41,884 --> 01:17:46,884
+For the key, I am telling the hash map, I am going to keep string type objects.
+
+359
+01:17:47,484 --> 01:17:51,004
+For the value, I am going to keep student type objects.
+
+360
+01:17:51,543 --> 01:17:51,684
+Okay.
+
+361
+01:17:52,024 --> 01:17:58,284
+And here is the name of the variable that I want to use for this hash map.
+
+362
+01:17:58,644 --> 01:18:23,024
+Arkadaşlar, now take a look at the constructor. I have three parameter constructor. In the first line, I am initializing all the global member fields. In the second line, I am creating an object of this hash map. And then I am assigning the address of this hash map object to this global member field that I already defined.
+
+363
+01:18:23,828 --> 01:18:30,828
+Burada arkadaşlar hash map'i tanımlarken şu kısmı yazmıyorsunuz ve puan kaybediyorsunuz.
+
+364
+01:18:30,828 --> 01:18:40,288
+Okey. Bir hash map'i nasıl define etmişsem onun objesini yaratırken de aynı şekilde define etmem gerekli.
+
+365
+01:18:41,007 --> 01:18:48,628
+Okey. Now then I have getter methods for get code, for code, for name and capacity.
+
+366
+01:18:49,300 --> 01:18:51,659
+And then I have get student count.
+
+367
+01:18:52,800 --> 01:18:58,680
+Just like the ArrayList in HashMap, I also have a size method.
+
+368
+01:18:59,280 --> 01:19:04,739
+The size method returns to me the number of entries in the table.
+
+369
+01:19:04,739 --> 01:19:05,340
+Okay.
+
+370
+01:19:05,560 --> 01:19:13,280
+How many entries that I have in that table, it will return to me as the size.
+
+371
+01:19:13,960 --> 01:19:14,280
+Okay.
+
+372
+01:19:15,764 --> 01:19:18,664
+Now, let's take a look at the add student method.
+
+373
+01:19:19,224 --> 01:19:19,444
+Okay.
+
+374
+01:19:20,024 --> 01:19:24,623
+Now, add student method obviously takes the student object as an input.
+
+375
+01:19:25,123 --> 01:19:29,364
+And you see that there is a, so this is an add method.
+
+376
+01:19:29,524 --> 01:19:32,604
+Therefore, I have to do an input check.
+
+377
+01:19:32,963 --> 01:19:34,884
+I have to have an if condition here.
+
+378
+01:19:36,435 --> 01:19:39,815
+First, I am checking whether I reach the maximum capacity.
+
+379
+01:19:40,456 --> 01:19:45,216
+Okay, I check whether the get student count equal to capacity.
+
+380
+01:19:45,735 --> 01:19:50,515
+The second thing, I'm checking whether the student is already in the course.
+
+381
+01:19:51,315 --> 01:19:56,575
+Okay, if one of them is true, then I will return false.
+
+382
+01:19:58,175 --> 01:19:59,195
+Bir saniye arkadaşlar.
+
+383
+01:20:41,363 --> 01:20:41,863
+Okay.
+
+384
+01:20:45,263 --> 01:20:55,863
+Then, if none of these conditions are true, in that case, I can add the student into the class.
+
+385
+01:20:56,683 --> 01:20:56,783
+Okay.
+
+386
+01:20:56,983 --> 01:21:01,403
+Now, you see that when I call the put method in the key.
+
+387
+01:21:02,323 --> 01:21:22,323
+A segment of the as a key. I am giving the string, which is the student number. Okay, I get the student number as a string and I give it as a key value. Then I am putting the actual student object as a value.
+
+388
+01:21:23,252 --> 01:21:34,912
+Demek ki key value pairleri olarak öğrencinin numarasını string olarak tutuyorum. Öğrencinin kendi objesini ise student objesi olarak veriyorum.
+
+389
+01:21:34,912 --> 01:21:43,292
+Ve bunu put metodunu kullanarak bu hash map'e ekliyorum.
+
+390
+01:21:48,756 --> 01:22:11,036
+Now, let's take a look at the find student. Now, you see that this time, when I give the number of the student to the find student method, I can call the get method of the hash map because as a key value, remember, I use the student number.
+
+391
+01:22:11,667 --> 01:22:22,807
+string type student number as the key value. So therefore, I can directly get the student by calling the get method. Okay.
+
+392
+01:22:24,307 --> 01:22:35,028
+Now, the increased capacity is exactly the same like the example that I have shown you while I was explaining the ArrayList.
+
+393
+01:22:35,528 --> 01:22:40,028
+Now, the show class, so let's take a look at the show class.
+
+394
+01:22:40,568 --> 01:22:46,908
+Now, remember, in all data structures, I can use the for each method.
+
+395
+01:22:47,368 --> 01:22:50,068
+But now, take a look at what I'm doing.
+
+396
+01:22:50,484 --> 01:23:16,264
+And so this students is the hash map, right? And hash map is keeping two different objects for every entry in the table, key and value. But when I call the values method, okay, values will return to me all the values in the table, okay, as a collection type data structure.
+
+397
+01:23:17,108 --> 01:23:23,808
+And in which case I have here, I have a data structure, which is a collection type.
+
+398
+01:23:23,808 --> 01:23:31,667
+Then I can use the for each method on the collection type.
+
+399
+01:23:33,555 --> 01:23:37,635
+values, data structure.
+
+400
+01:23:38,195 --> 01:23:48,555
+Burada yapmış olduğum collection tipindeki bir objelerden oluşan bir data structure'ı alıyorum.
+
+401
+01:23:49,171 --> 01:24:17,152
+Bunun üzerinde for each yapıyorum. Daha önce söylemiştik bir data structure'ın içerisinde tek boyutlu bir data structure olacak ama tek boyutlu bir data structure üzerinde for each metodu kullanabilirim. Bu bir ArrayList olmuş olsa, LinkList olmuş olsa, Array'da olmuş olsa yapabilirim. Ama burada students iki boyutlu bir data structure. Çünkü objeleri takip etmek için key objesini kullanıyorum. O yüzden ne yaptım?
+
+402
+01:24:17,171 --> 01:24:45,171
+HashMap'in values kısmını yani ikinci elemanlarından oluşan bir data structure'ı çektim. HashMap'in sağlamış olduğu values metoduyla. Bana bu ne dönderdi? Collections tipinde bir data structure dönderdi. İçinde tek boyutlu objeler var. Values'deki student objeleri var. Onun üzerinde for each yaparaktan bütün...
+
+403
+01:24:45,171 --> 01:24:47,171
+öğrencileri burada yazdırıyorum.
+
+404
+01:24:49,951 --> 01:24:58,451
+Okay. Now, this main method is exactly the same main method that I have shown you in the examples before.
+
+405
+01:25:00,971 --> 01:25:08,211
+Okay. Now, we have learned the linked list. We have learned the ArrayList. We have learned the HashMap.
+
+406
+01:25:08,724 --> 01:25:21,144
+Arkadaşlar, and I have already told you that vector is the same, exactly the same as ArrayList, but the only difference is that vector is synchronized, which means that it is thread safe.
+
+407
+01:25:21,144 --> 01:25:28,244
+Arkadaşlar, if two thread or if two process is trying to access to the same object.
+
+408
+01:25:28,627 --> 01:25:35,007
+Arkadaşlar, so the vector is synchronizing, synchronizing these two objects.
+
+409
+01:25:35,688 --> 01:25:38,347
+And hash table is exactly like the hash map.
+
+410
+01:25:38,547 --> 01:25:39,927
+All the methods are the same.
+
+411
+01:25:40,347 --> 01:25:45,987
+The only difference is that hash map, hash table is synchronized.
+
+412
+01:25:46,608 --> 01:25:46,868
+Okay.
+
+413
+01:25:47,699 --> 01:26:10,340
+Yani HashTable'a dikkat edin arkadaşlar. Diğerlerinin hep ikinci kelimesi büyük harfle başlıyor. ArrayList'in listi, ondan sonra HashMap'in map'i. Ama bir tek HashTable'da ikinci kelime küçük t ile başlıyor. Onu şey yaparken sınavda da kesinlikle yanlış yapmayın.
+
+414
+01:26:13,140 --> 01:26:18,460
+Now, so what are the advantages and disadvantages of these data structures?
+
+415
+01:26:18,780 --> 01:26:24,960
+So you can ask, which one should I choose when I choose a data structure?
+
+416
+01:26:25,260 --> 01:26:27,659
+For example, for the linked list, okay?
+
+417
+01:26:27,960 --> 01:26:31,780
+Now, remember, the linked list is implementing the list interface, right?
+
+418
+01:26:31,840 --> 01:26:34,760
+I have shown you the inheritance tree.
+
+419
+01:26:35,412 --> 01:26:52,811
+Now, with the linked list, if you want to do an insertion or deletion, it is fast. Why? Because remember, when we do the insertion or deletion, all we do, we update, we basically update the references. So remember.
+
+420
+01:26:57,876 --> 01:27:14,376
+Okay. Now, if I wanted to, for example, add a new node here, okay, a new node at the beginning of the head node, for example, all I need to update that head node, the head node is going to point to the new node that I want to add, right?
+
+421
+01:27:14,736 --> 01:27:25,876
+And also, I need to update the reference section of the new node that I want to add, and the reference section should point to the first node of the list.
+
+422
+01:27:25,876 --> 01:27:36,556
+Linklist. OK. All I, therefore, the adding a new node or deleting is much faster when you use Linklist regular class.
+
+423
+01:27:38,676 --> 01:27:39,496
+OK.
+
+424
+01:27:40,340 --> 01:27:44,980
+But it is slow when you do the random access.
+
+425
+01:27:45,500 --> 01:27:45,640
+Okay.
+
+426
+01:27:45,840 --> 01:28:06,780
+When you do the random access, it is slow because in that case, if you wanted to access a particular element in the linked list, you have to start from the first element and you have to traverse the whole linked list in order to access to the right node.
+
+427
+01:28:06,780 --> 01:28:07,680
+Okay.
+
+428
+01:28:08,724 --> 01:28:13,463
+And for this, we use list iterator object.
+
+429
+01:28:14,195 --> 01:28:41,895
+Arkadaşlar, now the second one is ArrayList. This ArrayList is also implementing the list interface. Now, with this one, with ArrayList implementation, it has faster random access because you can access to the certain indices of the data structures in MeshFast array.
+
+430
+01:28:42,195 --> 01:28:49,555
+in much faster way. And but the insertion and deletion is slower compared to the linked list.
+
+431
+01:28:50,915 --> 01:29:00,995
+OK, now vector is exactly the same like ArrayList. OK, it has all the advantages and disadvantages compared to the linked list, same.
+
+432
+01:29:00,995 --> 01:29:03,315
+But the only difference is that it is synchronized.
+
+433
+01:29:04,467 --> 01:29:15,247
+Now, if you look at the HashMap, HashMap compared to the linked list and ArrayList, it is much faster when you do a search.
+
+434
+01:29:15,796 --> 01:29:26,736
+Okay, because when you do a search, you do by index, okay, you can just put the values corresponding to index key value.
+
+435
+01:29:26,736 --> 01:29:34,176
+And when you want to access to the value, you can just use the key value in order to access the value.
+
+436
+01:29:34,516 --> 01:29:38,695
+So searching is much faster in the hashmap.
+
+437
+01:29:39,380 --> 01:29:52,640
+Arkadaşlar, okay. And the hash table is exactly the same as the hash map, but the only difference is that it is thread safe, which is it allows you to do synchronization.
+
+438
+01:29:53,579 --> 01:29:56,760
+Arkadaşlar, okay. Now let's take a look at some examples.
+
+439
+01:30:14,323 --> 01:30:14,923
+Okay.
+
+440
+01:30:30,868 --> 01:30:54,128
+Okay, I have already shown you this course example class by using the HashMap data structure. You have seen this. Let's take a look at this map test. Okay, here, there's a simple class. Now, here you see that
+
+441
+01:30:56,851 --> 01:31:10,371
+I have a hash, so what I'm, what I do here, I am creating first a hash map object, okay?
+
+442
+01:31:11,412 --> 01:31:37,912
+So when I create this HashMap object, I am assigning the object reference to a variable where the type of the variable is the parent of the HashMap. Can I do that? Yes, I can. Remember, wherever the child object is created, I can use the parent type.
+
+443
+01:31:38,739 --> 01:32:04,739
+Okay. Now, then, and you see that, so I did not define the kind of objects that I will keep in this particular, in this particular hash map. So let me, so,
+
+444
+01:32:05,524 --> 01:32:22,524
+Okey. Bu klavyede istediğimi yapamadım. Neyse. Burada HashMap'in içerisinde tutacağım değişkenleri belirtmedim. Dolayısıyla ben burada şunu demiş oluyorum. İstediğim tipteki objeleri...
+
+445
+01:32:23,155 --> 01:32:45,456
+Yani bu hash map'in ilk entriesinde key olarak ve value olarak istediklerimi tutabilirim. İkinci entriesinde başka bir tipteki objeyi tutabilirim. Bunu baştan belirtmedim. Eğer baştan belirtirsem, mesela şu şekilde yapacak olursam.
+
+446
+01:32:46,068 --> 01:32:47,908
+Buradaki gibi yapacak olursam.
+
+447
+01:32:48,427 --> 01:32:57,667
+Bu durumda bu HashMap'in içerisine koyacağım key value'ların hepsi string tipinde olmalı.
+
+448
+01:32:58,448 --> 01:33:00,907
+Value'ların hepsi student tipinde olmalı.
+
+449
+01:33:01,388 --> 01:33:05,568
+Buradaki örnekte bunu tanımlamamışım.
+
+450
+01:33:05,708 --> 01:33:10,208
+Yani key değerine bir de value değerine istediğim tiptekini koyabilirim.
+
+451
+01:33:10,548 --> 01:33:12,427
+Şimdi gelmişim birinciyi koymuşum.
+
+452
+01:33:13,555 --> 01:33:15,735
+put metodunu çağırmışım.
+
+453
+01:33:17,155 --> 01:33:23,915
+String tipinde, pardon, evet, string tipinde bir tane obje koymuşum ilk eleman olarak.
+
+454
+01:33:24,455 --> 01:33:28,355
+Value olarak da yine string tipinde bir tane obje koymuşum.
+
+455
+01:33:29,235 --> 01:33:30,415
+İkincisine gelmişim.
+
+456
+01:33:30,804 --> 01:33:48,323
+key değerine string tipinde koymuşum, value değerine ise bakın integer tipinde koymuşum. Bunu yapabiliyorum. Neden? Çünkü ilk başta bu hash map'i tanımlarken içerisine koyacağım jenerik tipin ne olacağını specify etmemişim.
+
+457
+01:33:49,779 --> 01:34:10,920
+Üçüncüsünde yine her ikisine de ne koyuyorum? String tipinde koyuyorum. Daha sonra da bu yazdırdığımı, birinci indeksi aldığım zaman en son yazdığım nedir? Şuradaki string tipindeki değerdir. Bana vericeği de bu olacaktır.
+
+458
+01:34:14,068 --> 01:34:28,908
+Yani burada görmenizi istediğim şey şu, jenerik tipteki bir sınıfı ilk başta initialize ederken illa bu jenerik sınıfın tipini vermek zorunda değilsiniz.
+
+459
+01:34:28,908 --> 01:34:41,868
+Ama eğer size soruda özellikle bu data structure içerisinde hangi tipteki şeyleri tutacağınız söyleniyorsa, objeleri söyleniyorsa burada
+
+460
+01:34:42,068 --> 01:34:46,188
+Mutlaka bunu tanımlarken o şekilde tanımlamanız lazım.
+
+461
+01:34:46,328 --> 01:34:50,888
+Yani HashMap'i ilk defa define ederken bu şekilde tanımlayacaksınız.
+
+462
+01:34:51,288 --> 01:34:55,708
+Ve HashMap'i initialize ederken de bu şekilde initialize edeceksiniz.
+
+463
+01:35:00,787 --> 01:35:08,067
+Evet, bundan başka HashMap ile ilgili başka göstereceğimiz örneğimiz var mı?
+
+464
+01:35:15,956 --> 01:35:20,536
+Tamam. Buradan devam edelim.
+
+465
+01:35:22,855 --> 01:35:24,735
+Buraya kadar sorusu olan var mı arkadaşlar?
+
+466
+01:35:50,355 --> 01:35:56,756
+Okay, now, so we are going to start with a new topic called exception handling.
+
+467
+01:35:59,556 --> 01:36:15,716
+Now, when we write our code, our code may create some errors. Okay, it may create some problems as it runs. Okay.
+
+468
+01:36:16,243 --> 01:36:21,224
+Now, these could be related with the input given by the user.
+
+469
+01:36:21,224 --> 01:36:31,083
+It could be related by the code that we are written, or it could be related with totally randomly, okay?
+
+470
+01:36:33,783 --> 01:36:40,083
+Random things that might happen during the execution of our program, okay?
+
+471
+01:36:40,484 --> 01:36:44,224
+So, therefore, what we need to do, we need to...
+
+472
+01:36:44,243 --> 01:36:53,184
+Make sure that even though there may be some errors in our program, our program will continue to run.
+
+473
+01:36:54,123 --> 01:36:54,283
+Okay.
+
+474
+01:36:54,644 --> 01:37:07,184
+Now, in order to do this, we are going to add some additional checks in our program, which will...
+
+475
+01:37:07,507 --> 01:37:15,667
+Catch these errors when they appear, okay, and it will allow our program to continue to run.
+
+476
+01:37:16,647 --> 01:37:27,987
+Okay, what kind of checks that we are going to add into this program is the topic of this class, which is exception handling.
+
+477
+01:37:28,307 --> 01:37:31,987
+Okay, so what we are going to do, we are going to...
+
+478
+01:37:34,355 --> 01:37:42,876
+put our code into exception handling syntax, which you will see in a minute.
+
+479
+01:37:43,395 --> 01:37:51,836
+OK, so that when such errors happens, our exception handling methodology will catch these errors.
+
+480
+01:37:52,315 --> 01:38:00,836
+OK, now, as for the exception handling, Java programming language is providing some classes to us.
+
+481
+01:38:01,184 --> 01:38:22,204
+Arkadaşlar, okay? And these are the exception ending classes, inheritance tree. And you see that at the top of the inheritance tree, we have the probable class. And from this, we have an error class family and also exception class family, which is
+
+482
+01:38:23,667 --> 01:38:29,047
+Inherited, they inherit their properties from the probable parent.
+
+483
+01:38:29,967 --> 01:38:30,067
+Okay.
+
+484
+01:38:30,507 --> 01:38:37,047
+Now, error class family, these are unchecked, which we are going to call unchecked.
+
+485
+01:38:37,867 --> 01:38:38,847
+And exception,
+
+486
+01:38:40,884 --> 01:38:50,724
+Class family has also IO exception, okay, and runtime exception subclasses which are inherited from the exception.
+
+487
+01:38:51,984 --> 01:39:07,344
+The IO exception class family, they are the checked exception handling classes. Runtime exception, they are the unchecked exception classes. What does unchecked means here, okay?
+
+488
+01:39:08,884 --> 01:39:30,923
+The checked exception handling classes tells you that if there is a error that is that requires a check exception class, then the compiler will not compile unless you use the exception handling.
+
+489
+01:39:32,364 --> 01:39:32,524
+Okay.
+
+490
+01:39:32,524 --> 01:39:36,364
+Eğer siz kod yazarken.
+
+491
+01:39:36,948 --> 01:40:02,167
+Bazı hatalar vardır ki, yani oluşabilecek bazı hatalar vardır ki, bu hatalar için size Java compiler mutlaka bu hata oluşabilecek durumları bir exception handling sintaksı içerisine koymanızı zorlar. Aksi takdirde compile etmez kodunuzu. Hata verir.
+
+492
+01:40:02,771 --> 01:40:18,551
+Bu tip hataları, olası hata durumlarını exception handling sintaksı içerisine koymak için kullandığımız sınıflara IO exception sınıfları diyoruz.
+
+493
+01:40:19,091 --> 01:40:28,551
+Bir de oluşabilecek hatalar için kullanabileceğimiz bazı exception handling sınıfları var ki,
+
+494
+01:40:29,043 --> 01:40:34,104
+Bunlar için Java compiler'ı hata vermiyor.
+
+495
+01:40:35,043 --> 01:40:42,944
+Ama biz bu tür hataları yine exception handling sınıfı içerisine koymak istiyoruz.
+
+496
+01:40:42,944 --> 01:40:51,583
+Aksi takdirde bu hatalar bizim programımızın çalışması sırasında ortaya çıkarsa programımızın çalışmasını durduracak hatalar.
+
+497
+01:40:52,051 --> 01:40:57,931
+Bunları da runtime exception handling sınıfını kullanarak ne yapıyoruz?
+
+498
+01:40:58,451 --> 01:41:01,331
+Exception handling sintaksi içerisine koyuyoruz.
+
+499
+01:41:01,331 --> 01:41:08,291
+Bir de bu error tipinde oluşabilecek
+
+500
+01:41:09,235 --> 01:41:33,256
+Hatalar var ki bunlar bizim programımızla alakalı hatalar değil. Bunlar işletim sistemiyle ilgili ya da fiziksel memorinin yetersizliğiyle ilgili hatalar. Biz bu tür hatalar için herhangi bir exception handling yapmıyoruz. Bizim yaptığımız exception handling çalışması tamamıyla bizim yazdığımız kodla ilgili olacak.
+
+501
+01:41:33,619 --> 01:41:37,460
+Ok, now let's take a look at the details of these classes.
+
+502
+01:41:38,260 --> 01:41:40,140
+Now, Java long error.
+
+503
+01:41:40,140 --> 01:42:00,100
+Now, this exception handling class indicates the serious problems that are related with the JVM, that are related with the physical memory, which are not related with the execution of our program.
+
+504
+01:42:06,260 --> 01:42:16,820
+OK, exception handling classes are interested in the kinds of problems that are not related with our program.
+
+505
+01:42:16,820 --> 01:42:23,300
+It is related with the Java virtual machine and the physical memory and the operating system.
+
+506
+01:42:23,579 --> 01:42:31,619
+OK, so therefore in this course, we are not interested in this family of Java exception handling classes.
+
+507
+01:42:32,435 --> 01:42:38,355
+Now, the second type, exception in link classes is runtime exception.
+
+508
+01:42:39,155 --> 01:42:45,555
+Now, this is related with the way that we are writing our code.
+
+509
+01:42:45,935 --> 01:43:04,915
+Okay, for example, null pointer exception. Let's say in our code, we have a division. Okay. And as for the, so in a division, you have a nominator and you have the denominator, right? And for the denominator, let's say you put zero. So when you put zero, in that case,
+
+510
+01:43:05,844 --> 01:43:30,703
+So it will produce an arithmetic operation error, right? In that case, this is a runtime exception error. For example, null pointer exception. Let's say you have an array and this, so you, and you want to access to a, in this, okay, which is bigger than the size of the array. In that case, it will return.
+
+511
+01:43:31,155 --> 01:43:47,036
+It will return index out of bounds exception error. For Java null pointer exception, if you try to access to an object which is not available in the memory, it will return to you as null pointer exception.
+
+512
+01:43:47,036 --> 01:43:59,155
+Now, these are all runtime exception and these are unchecked, which means that Java compiler does not force you to put these quotes in.
+
+513
+01:43:59,155 --> 01:44:24,836
+into exception handling. Okay. And the third one is the I.O. exception. And for these types of errors, okay, Java compiler force you to put these codes into exception handling syntax. Now let's take a look at what the exception handling syntax look like.
+
+514
+01:44:25,747 --> 01:44:51,108
+Now, this is the exception handling syntax. You see that there is try, curly parentheses, and then catch. And you see that catch has an argument that it is taking as an input and then curly parentheses. Now, the code that we are writing, okay, which might produce an error is going to be here.
+
+515
+01:44:52,212 --> 01:45:06,632
+And when that error happens, okay, then the Java Virtual Machine will catch that error and then it will execute this segment of the code.
+
+516
+01:45:06,931 --> 01:45:19,311
+And here we are going to write some code when that error happens, okay, we are going to execute this kind of, so this segment of the code, okay.
+
+517
+01:45:20,467 --> 01:45:33,747
+Demek ki ben diyelim ki mesela bir aritmetik operasyon yapıyorum, bir division operasyonu yapıyorum. Bu division operasyonu yaparken kullanıcı denominator'a, paydaya sıfır yazabilir.
+
+518
+01:45:34,260 --> 01:46:01,120
+yazmayabilir. Ama sıfır yazdığı zaman ben benim Java programımın hata vermesini istemiyorum. Sadece ekrana kullanıcıya paydayı sıfır yazmayacağıyla ilgili bir tane yazı yazdırmak istiyorum. Bu durumda burada ben ne yapıyorum? Bunun bir try metodu içerisine koyuyorum. Catch metodu içerisinde de bir tane system out print line yazdırıyorum. Diyorum ki lütfen.
+
+519
+01:46:02,163 --> 01:46:03,723
+Paydaya sıfır koymayın.
+
+520
+01:46:04,583 --> 01:46:06,723
+Bunu yapmamış olsan ne yapacak?
+
+521
+01:46:07,723 --> 01:46:10,103
+Benim programım hata vererek duracak.
+
+522
+01:46:10,263 --> 01:46:22,763
+Demek ki bu exception handling sintaksını yani try-catch'i kullanaraktan ben programımın durmadan hatalarla karşılaşsa bile çalışmaya devam etmesini sağlıyorum.
+
+523
+01:46:23,828 --> 01:46:33,387
+Peki bu hatalar ne tip olabilir? Kullanıcının girmiş olduğu input değerlerinden olabilir programıma.
+
+524
+01:46:33,876 --> 01:46:45,376
+Yahut da eğer benim programım file sistem üzerinden bir file okuyorsa ya da siliyorsa, file sistem üzerinde bu file bulamazsa ondan dolayı olabilir.
+
+525
+01:46:45,376 --> 01:47:01,856
+Yani benim programımın kullanmış olduğu input değerleriyle ilgili bir programım beklediği gibi çalışmazsa, o tür durumlarda ben bu cache blokları içerisine programımın ne yapması gerektiğiyle ilgili kodları yazıyorum arkadaşlar.
+
+526
+01:47:01,876 --> 01:47:12,036
+Şimdi bu try catch blow içerisine ben kodumu koyup, try'in içerisine koyup catch metodu içerisinde ne yapacağını söylüyorum.
+
+527
+01:47:12,036 --> 01:47:27,956
+Aynı zamanda similarly what I can do, let's say if I have a method in that method, okay, I might have some code that might also possibly produce some errors.
+
+528
+01:47:28,916 --> 01:47:44,536
+So in that case, if I don't want to put the inside of the code into try catch, what I can do, I can put the trolls keyword that Java provides to me.
+
+529
+01:47:45,716 --> 01:47:52,395
+And I can write what kind of exception that in this code might happen.
+
+530
+01:47:52,395 --> 01:48:00,796
+Okay. And then in that case, I don't have to put the inside of this method into try-catch block.
+
+531
+01:48:01,256 --> 01:48:07,996
+Okay. Burada yapmış olduğum hani bu metodun içerisindeki kodu istersen böyle try-catch block'una koyabilirdim.
+
+532
+01:48:08,787 --> 01:48:25,228
+Ama bunun yerine şunu düşündüm. Dedim ki ben bu metodun içerisinde buradaki koddaki oluşabilecek hatayı yakalamak istemiyorum. Bu metodu ben nerede çağırıyorsam, belki bir main metodu içerisinde çağırıyorum, belki bir başka metoddan burayı çağırıyorum.
+
+533
+01:48:29,203 --> 01:48:51,043
+Bu metot nereden çağrılıyorsa oraya throw edeyim, oraya atayım. Orada try catch bloğu içerisine konulsun. Bu durumda buradaki kod segmentini try catch'e koymuyorum. Throw keyword ile exception'i throw ediyorum. Nerede çağrılmışsa onun içerisinde try catch'e koyuyorum.
+
+534
+01:48:55,828 --> 01:49:02,108
+By when we use try catch block, we might have more than one catch blocks.
+
+535
+01:49:03,007 --> 01:49:04,728
+Okay, so what does this mean?
+
+536
+01:49:05,088 --> 01:49:13,847
+Which means that in my code, there may be more than one type, there may be more than one type of errors.
+
+537
+01:49:14,088 --> 01:49:18,748
+For example, there may be a Java null pointer exception error.
+
+538
+01:49:19,220 --> 01:49:25,720
+Or, and there may be arithmetic operation errors.
+
+539
+01:49:26,539 --> 01:49:26,680
+Okay.
+
+540
+01:49:27,060 --> 01:49:32,960
+Or there may be, for example, IO exception errors.
+
+541
+01:49:33,640 --> 01:49:33,780
+Okay.
+
+542
+01:49:34,740 --> 01:49:36,980
+There may be different types of errors.
+
+543
+01:49:37,100 --> 01:49:41,800
+In that case, for each type of error, I will have a different catch block.
+
+544
+01:49:42,460 --> 01:49:43,060
+Okay.
+
+545
+01:49:43,667 --> 01:49:59,987
+Now, if I can do this way or I can create two different try-catch blocks, I can create nested try-catch blocks, but that...
+
+546
+01:50:00,000 --> 01:50:12,799
+Arkadaşlar, that does not necessarily suggest that if you have more than one error that may happen in your code, in that case, you will use more than one catch blocks.
+
+547
+01:50:14,319 --> 01:50:26,559
+Arkadaşlar, okay. Now, in the try catch exception handling syntax, I might also have finally segment. Okay, try catch finally.
+
+548
+01:50:27,188 --> 01:50:39,927
+Okay, now, if I use finally, in that case, the code in finally will be executed regardless of whether an error happens or not.
+
+549
+01:50:40,427 --> 01:50:46,447
+So what does this mean? Let's say here you see that I have one try block and two catch blocks.
+
+550
+01:50:47,315 --> 01:50:59,015
+Now, let's say, so when the call in the try block is executed and there is no error, in that case, none of these catch blocks will be executed.
+
+551
+01:50:59,855 --> 01:51:12,155
+But since there is a finally segment here, right after the try block code segment, Java Virtual Machine will execute the code segment in finally.
+
+552
+01:51:13,684 --> 01:51:30,564
+Okay, now let's think of the second case. This time, there is an error in my program and one of the catch block catches this error and it executes the code segment in the catch block.
+
+553
+01:51:31,507 --> 01:51:49,987
+Arkadaşlar, okay. In that case, finally, we'll also be executed, which means that finally block executes whether an exception is strong or not. Okay, so, and we usually use finally when we want to close, for example.
+
+554
+01:51:50,771 --> 01:51:59,731
+You learn a scanner object, for example. Every time we use scanner object, we want to close the scanner object once we are done. Okay.
+
+555
+01:52:00,952 --> 01:52:18,511
+Similarly, if you want to use, if there is something that you must do when you exit your program, in that case, you can write those kinds of codes, such as closing the scanner object.
+
+556
+01:52:18,771 --> 01:52:20,532
+into finally segment.
+
+557
+01:52:22,731 --> 01:52:23,091
+OK.
+
+558
+01:52:25,731 --> 01:52:27,372
+Now, let's take a look at this code.
+
+559
+01:52:31,091 --> 01:52:36,532
+OK, before we go into details, let's give a 10 minute break and then we'll continue.
+
+560
+01:52:36,532 --> 01:52:39,212
+Arkadaşlar, bir ondeki kere verelim, sonra devam edeceğiz.
+
+561
+02:02:29,203 --> 02:02:32,923
+Arkadaşlar, tekrardan merhaba. Sesim geliyor mu? Bir teyit edebilir misiniz?
+
+562
+02:02:34,303 --> 02:02:35,063
+Geliyor hocam.
+
+563
+02:02:38,739 --> 02:03:05,220
+Okay, now you see there's an example of exception handling here. In this particular class exception example 01, you see that I have two global member fields. The first one has a type my screen renderer. The second one has a type my cat file. Obviously, these are some classes. Okay.
+
+564
+02:03:05,939 --> 02:03:09,399
+And you see there's one method here.
+
+565
+02:03:09,720 --> 02:03:13,639
+And in this method, I have a void method.
+
+566
+02:03:14,260 --> 02:03:18,939
+It's going to do a parse operation.
+
+567
+02:03:20,479 --> 02:03:29,539
+Now, you see that in this code segment of this method, I have try, catch, and finally, blocks.
+
+568
+02:03:30,484 --> 02:03:40,304
+Now, in the try block, you see that I am putting the code which might produce an problem.
+
+569
+02:03:40,304 --> 02:03:41,104
+Okay.
+
+570
+02:03:42,484 --> 02:03:51,864
+Now, in this particular code, you see that first I am creating an object of this class which I have here.
+
+571
+02:03:52,287 --> 02:03:54,867
+which I defined in the global member fields.
+
+572
+02:03:55,827 --> 02:04:05,187
+And then I am going to open, obviously there is a file called, there is a method called open file, which is not available here.
+
+573
+02:04:05,187 --> 02:04:11,787
+And so, but you should consider that there is such a, there is such a method, open file.
+
+574
+02:04:12,387 --> 02:04:15,107
+And so it is going to open a file.
+
+575
+02:04:16,819 --> 02:04:24,539
+Which in turn return an object reference which has a type for this class.
+
+576
+02:04:25,500 --> 02:04:25,599
+Okay.
+
+577
+02:04:25,819 --> 02:04:40,979
+And then by using this particular object reference, I'm going to call another method of that object, read from file, which in turn will return to me an array of this type.
+
+578
+02:04:40,979 --> 02:04:41,460
+Okay.
+
+579
+02:04:42,515 --> 02:04:49,555
+Arkadaşlar, and as you see, after all of this, then I'm going to close this file here.
+
+580
+02:04:50,475 --> 02:04:50,875
+Arkadaşlar, okay.
+
+581
+02:04:51,328 --> 02:04:59,868
+Now, you see that, obviously, in this particular code segment, okay, I am doing an input-output operation.
+
+582
+02:04:59,868 --> 02:05:17,648
+You have not seen yet what the input-output operation, but you can consider that we are writing, we are reading something from the file system and also, or we are writing into the file system.
+
+583
+02:05:17,828 --> 02:05:19,328
+There is something that...
+
+584
+02:05:19,328 --> 02:05:21,548
+We are doing related with the file system.
+
+585
+02:05:22,028 --> 02:05:28,528
+OK, now, if this is the case, then we use the IO exception handling class.
+
+586
+02:05:29,208 --> 02:05:37,128
+OK, in the catch block, we indicate that there may be an error of type IO exception.
+
+587
+02:05:37,668 --> 02:05:43,348
+In that case, in the catch block, when such an exception happens, we are going to catch it.
+
+588
+02:05:43,548 --> 02:05:46,208
+And in this case, we are going to write.
+
+589
+02:05:47,572 --> 02:05:50,952
+A simple statement about what this error is.
+
+590
+02:05:51,552 --> 02:05:58,832
+And we are going to call the printstack3 trace method of this exception handling class.
+
+591
+02:05:59,692 --> 02:06:01,972
+Bir saniye bana müsaade edin arkadaşlar. Geliyorum.
+
+592
+02:06:38,387 --> 02:06:40,347
+Ok. Sesim geliyor mu arkadaşlar?
+
+593
+02:06:41,448 --> 02:06:42,007
+Evet hocam.
+
+594
+02:06:44,528 --> 02:06:53,708
+Now you see that printstack trace will give me the details of what kind of error happened in the try-catch block.
+
+595
+02:06:53,708 --> 02:07:05,148
+Ok. And you see that here if this kind of error happens I put here system.exit which means that it's going to exit the program.
+
+596
+02:07:05,844 --> 02:07:06,283
+Ok?
+
+597
+02:07:08,307 --> 02:07:19,727
+And I also have a finally segment here, which means, so which releases all the sources for this particular class that I implemented here.
+
+598
+02:07:19,727 --> 02:07:24,527
+Apparently, this class has release sources method in it, okay?
+
+599
+02:07:24,987 --> 02:07:36,268
+But what you need to know that in finally, if there is a final thing that I need to do before I exit my program, in that case, I'm going to put that.
+
+600
+02:07:36,307 --> 02:07:37,547
+into the finally block.
+
+601
+02:07:38,487 --> 02:07:38,707
+Okay.
+
+602
+02:07:39,127 --> 02:07:43,268
+If there is no such thing, then I don't need to use the finally code segment.
+
+603
+02:07:43,827 --> 02:07:44,367
+Okay.
+
+604
+02:07:44,627 --> 02:07:46,227
+Now you may ask.
+
+605
+02:07:46,511 --> 02:08:12,131
+Here, there is a system.exit which will automatically exit the program. Java Virtual Machine automatically will kill the program. If I write system.exit here, will the finally will be executed. Yes. Java Virtual Machine will execute to finally, then it will exit the system. Now remember.
+
+606
+02:08:12,756 --> 02:08:19,796
+Regardless of whether there is an error happens here or not, finally will always be executed.
+
+607
+02:08:20,155 --> 02:08:30,336
+If there is an error here, then the catch statement will also, catch block will also be executed, but also finally will be executed.
+
+608
+02:08:37,043 --> 02:08:48,404
+Okay. Now, sometimes, we might have our own special exception handling class.
+
+609
+02:08:48,979 --> 02:09:11,420
+Okay. In that particular case, what we are going to do, we are going to write our own exception handling class. Now, in this particular case, I want to have my own exception handling class, which will then execute this IO exception class. Remember?
+
+610
+02:09:12,595 --> 02:09:16,235
+We had different exception handling.
+
+611
+02:09:16,755 --> 02:09:20,695
+So this is the exception handling inheritance tree.
+
+612
+02:09:21,175 --> 02:09:28,535
+Remember, here I have IO exception, which is a checked exception, and runtime exception, which is an unchecked exception.
+
+613
+02:09:29,011 --> 02:09:39,271
+At the beginning, I already told you that we are not interested in Java long error type exceptions because these are the exceptions outside of our code.
+
+614
+02:09:39,271 --> 02:09:46,231
+These are related to Java Virtual Machine. But these exception handling classes are related with our code.
+
+615
+02:09:46,851 --> 02:09:57,011
+Now, if I want to have a checked exception, which means that if I want compiler to force me to put the code into try catch block, then I will...
+
+616
+02:09:57,011 --> 02:09:58,292
+I will extend the IOException.
+
+617
+02:09:58,931 --> 02:09:59,171
+Okay.
+
+618
+02:09:59,372 --> 02:10:07,952
+But if I want to have an unchecked exception handling class, then I will extend the runtime exception class.
+
+619
+02:10:08,211 --> 02:10:14,431
+Now, in this particular case, I want to have a checked exception class, my own.
+
+620
+02:10:15,271 --> 02:10:19,551
+In that case, I'm going to write the name of the class, which will extend the IOException.
+
+621
+02:10:20,131 --> 02:10:22,431
+And you see that in this class,
+
+622
+02:10:24,083 --> 02:10:43,804
+I have, I must have a constructor. Okay. Now in the earlier version of Java, I used to have also a default constructor, but the newer version of Java, so I don't have to have a default constructor, but I must have a one parameter constructor.
+
+623
+02:10:44,336 --> 02:10:54,256
+Okay, one parameter constructor, in this one parameter constructor, I have a string, one parameter input.
+
+624
+02:10:54,716 --> 02:11:05,256
+And you see in the code segment of the constructor, I call super, which in this case I am passing the...
+
+625
+02:11:06,036 --> 02:11:10,916
+parents constructor the error message that I want to pass.
+
+626
+02:11:11,295 --> 02:11:11,376
+Okay.
+
+627
+02:11:11,916 --> 02:11:20,416
+So for every exception handling class, then I must have one parameter constructor just like this.
+
+628
+02:11:20,475 --> 02:11:22,595
+So this is the syntax that I will have.
+
+629
+02:11:24,115 --> 02:11:24,416
+Okay.
+
+630
+02:11:25,135 --> 02:11:33,576
+Now, one other thing that we should know about exception handling, I already told you that.
+
+631
+02:11:33,920 --> 02:11:51,939
+If there is a method and if inside the method, if I don't want to use the try catch block, in that case, what I can do, I can write, I can use the throws keyword and right after the definition of the method.
+
+632
+02:11:52,595 --> 02:12:09,076
+And then after the troves keyword, I can write the exception handling class, which in this case, I am telling Java Virtual Machine that if such an error happens within my method, wherever this method is called,
+
+633
+02:12:09,716 --> 02:12:16,836
+Please force that place to be put into try-catch block.
+
+634
+02:12:16,836 --> 02:12:24,596
+Yani bu process file içerisindeki kod segmentini try-catch block içerisine koymak istememişim.
+
+635
+02:12:25,596 --> 02:12:29,956
+Bu process file'ı nerede çağırıyorsam,
+
+636
+02:12:30,323 --> 02:12:43,804
+Oradaki kodu try-catch bloğuna koymak istemişim. Yani exception handling'i metodun içerisinde değil de metodun çağrıldığı yerde kullanmak istemişim. O yüzden de buraya trows'u koyuyorum.
+
+637
+02:12:52,020 --> 02:13:07,699
+Benim logic flow'umdan dolayı bir noktada belli bir durum söz konusu, belli bir condition olduğu zaman exception oluşmasını istiyorsam bu durumda exception'i kendim de oluşturabilirim.
+
+638
+02:13:07,699 --> 02:13:17,520
+Bu durumda throw keyword'ünü kullanıyorum. Throw diyorum, new exception objesini yaratıyorum. Bu exception ending sınıfını zaten kendim yaratmıştım.
+
+639
+02:13:17,840 --> 02:13:22,539
+Bunun bir objesini alıştırıyorum. Bir tane exception'ı kendim oluşturuyorum.
+
+640
+02:13:22,720 --> 02:13:33,220
+Ama bunu ancak benim logic flow'umda yani yapmak istediğim şey içerisinde özel bir condition varsa bunu kullanıyorum.
+
+641
+02:13:35,359 --> 02:13:37,819
+Now, let's take a look at an example.
+
+642
+02:13:39,412 --> 02:13:45,072
+So in this particular example, first, I want to create my own exception handling class.
+
+643
+02:13:45,212 --> 02:13:49,532
+And I'm saying that this exception handling class will be a checked exception.
+
+644
+02:13:50,192 --> 02:14:00,492
+When I say a checked exception, you must know that when I create my exception handling class, I must extend IO exception.
+
+645
+02:14:01,312 --> 02:14:01,932
+Okay.
+
+646
+02:14:02,868 --> 02:14:07,028
+Now, you see that my exception ending class extends IOException.
+
+647
+02:14:07,028 --> 02:14:14,888
+And in this exception ending class, I already told you that we must have a one parameter constructor.
+
+648
+02:14:15,128 --> 02:14:19,948
+And within the one parameter constructor, I must call super constructor.
+
+649
+02:14:20,108 --> 02:14:22,828
+I must call parents constructor by using the super.
+
+650
+02:14:23,828 --> 02:14:24,088
+Okay.
+
+651
+02:14:24,608 --> 02:14:27,728
+And one thing that you should also know.
+
+652
+02:14:28,212 --> 02:14:42,212
+Now, in the exception handling class, okay, I also use a serial number. You will learn this later when we talk about...
+
+653
+02:14:42,591 --> 02:14:48,992
+I.O. package, Java input-output package.
+
+654
+02:14:48,992 --> 02:14:58,992
+But you should know that Java gives you a warning, Java compiler gives you a warning if you do not...
+
+655
+02:14:59,104 --> 02:15:27,104
+Enter the serial number into this class. Therefore, in order not to get warning, okay, you need to write suppress warnings serial here right in front of the class name, okay? Do not pay attention to this because you will learn it later in the class. But for now, at least you should learn that there is such a thing which is such as suppress warning.
+
+656
+02:15:27,104 --> 02:15:35,104
+Arkadaşlar, which allows us Java compiler not to write warnings when we write our code.
+
+657
+02:15:36,104 --> 02:15:41,104
+Arkadaşlar, now here is my exception ending class, which is called impossible info.
+
+658
+02:15:42,899 --> 02:15:57,519
+And here is my class person. And in this person class, you see that I have two global member fields. I have one constructor, one parameter constructor. I have getter methods and I have one two string method.
+
+659
+02:15:58,380 --> 02:16:07,460
+And also I have a set age method. Now in the set age method, you see that I have some code segment.
+
+660
+02:16:08,020 --> 02:16:32,540
+Okay. And in this code segment, I am thinking, I am considering that there may be some errors that may happen. So therefore, I put throws keyword here. And I, for the kind of error that might happen here, I know that it will be impossible info type errors. Therefore, I throw impossible info.
+
+661
+02:16:34,739 --> 02:16:56,239
+Arkadaşlar, exception. Arkadaşlar, now let's take a look at the inside of the set H. You see that there is a if statement here. Arkadaşlar, in the if statement, there are two conditions. One is H is less than zero. The other one is H is 100, bigger than 150. Arkadaşlar, now these both are not possible conditions.
+
+662
+02:16:56,595 --> 02:17:09,216
+If a person enters a H, which is below and above impossible conditions, then we will throw an impossible info exception.
+
+663
+02:17:09,876 --> 02:17:19,876
+Okay. Now you see that this is from my logic, because I know that these are the impossible conditions.
+
+664
+02:17:19,876 --> 02:17:23,155
+Therefore, I am throwing them.
+
+665
+02:17:24,595 --> 02:17:47,876
+In impossible info exception by myself. How do I do that? Do that? I use the throw keyword. Now there is two different keywords. One is throws. The other one is throw. We use the throws keyword right after the method definition. And when we use the throw keyword, but I want to create a new exception handling object.
+
+666
+02:17:48,628 --> 02:17:53,808
+Eğer bunları karıştırır, yanlış yazarsınız sınavda bulunan puan kaybediyorsunuz arkadaşlar.
+
+667
+02:17:55,427 --> 02:18:02,468
+Now, if such a condition does not happen, then I can set the age for this person.
+
+668
+02:18:03,667 --> 02:18:31,407
+Okay. Now, let's take a look at the main method in which I am actually using this exception handling class. Now, here is my test exceptions class. Within this, I have this main method. Now, you see that at the beginning of the main method, I have a scanner object. I'm creating a scanner object and I'm assigning to this scanner type variable.
+
+669
+02:18:31,667 --> 02:18:36,268
+And I'm asking the user to enter the person's name.
+
+670
+02:18:36,747 --> 02:18:41,167
+And I am getting that and I'm assigning it to the name.
+
+671
+02:18:41,547 --> 02:18:48,647
+And then I'm creating, as you see, a person object with the one parameter constructor.
+
+672
+02:18:49,927 --> 02:18:50,707
+Now.
+
+673
+02:18:51,636 --> 02:19:00,015
+As you see here, I am going to use this person object reference and I'm going to call the setH methods.
+
+674
+02:19:00,716 --> 02:19:08,155
+Now, remember the setH method throws impossible info exception.
+
+675
+02:19:08,976 --> 02:19:15,376
+And I know that impossible info exception extends the IO exception, which is a checked exception.
+
+676
+02:19:16,076 --> 02:19:18,316
+So therefore, I must put.
+
+677
+02:19:18,804 --> 02:19:44,443
+In some that set age method in to try catch block. I say must because otherwise Java compiler will not compile our code. It will produce an error. Okay. And when I put in to try catch block in the catch block, I must catch the impossible info type object.
+
+678
+02:19:45,459 --> 02:20:10,019
+Arkadaşlar, exception object. Okay. Now, here you see that I asked the user to enter the age and I retrieve it and assign it to this temporary variable and then I set the age by calling the set age method. Then I print this person. If the user enters an impossible age.
+
+679
+02:20:10,515 --> 02:20:34,815
+Okay, outside these borders, then this method will throw an impossible info exception, in which case it will be called in this catch block. And then I will call print state trace method, which then will write the where the error was produced, where the error happens. Okay.
+
+680
+02:20:35,731 --> 02:20:42,231
+Arkadaşlar, and you see that in finally, I am closing the scanner object which I created. Remember,
+
+681
+02:20:42,231 --> 02:20:45,231
+Arkadaşlar, and
+
+682
+02:20:44,500 --> 02:20:51,959
+If there is something that needs to be done at the end of the program, then I use the finally block.
+
+683
+02:20:52,479 --> 02:20:52,639
+Okay.
+
+684
+02:20:52,979 --> 02:20:57,920
+So in this particular case, I need to close the scanner object, which I create at the beginning.
+
+685
+02:20:57,920 --> 02:21:00,360
+In that case, I am putting into finally.
+
+686
+02:21:01,000 --> 02:21:06,340
+Regardless of there is an error in the try block, finally will be executed.
+
+687
+02:21:06,520 --> 02:21:10,819
+If there is an error, then it will be caught here, but finally still be executed.
+
+688
+02:21:13,780 --> 02:21:27,200
+Okay, now I'm not going into typecasting, but I want to show you, today I want to show you some more examples for exception handling.
+
+689
+02:21:42,195 --> 02:21:42,595
+Okey.
+
+690
+02:21:48,404 --> 02:22:16,404
+Bu olanaksız, impossible info örneğini gördük. Burada olanaksız bilgi diye geçmişiz. Eğer sınırların dışında bir şey girmişse, kullanıcı, bunu ben ne yapıyorum? Catch bloğu içerisinde yakıyorum. Bu olanaksız bilgi, kişi ve test kişi, az önce size gönderdiğim, gösterdiğim kodların aynısı arkadaşlar. Sadece bunu...
+
+691
+02:22:16,404 --> 02:22:23,324
+Türkçeleştirerek yazmışım. Bu kodların hepsi şeyin içerisinde var. Sizinle paylaştığım kodların içerisinde var.
+
+692
+02:22:23,963 --> 02:22:39,804
+Şimdi burada yine bir başka örnek var. Kitaptan bir örnek. Burada divide by zero no exception handling. Burada exception handling yok. Bir tane metodum var.
+
+693
+02:22:40,244 --> 02:22:47,244
+co-tient metodu, numerator alıyor, denominator alıyor, bir tane division işlemi gerçekleştiriyor.
+
+694
+02:22:48,884 --> 02:23:16,664
+Scanner objesi yaratmışım. Bu scanner objesini yarattıktan sonra kullanıcıdan iki tane integer değeri almışım ve bu metodu çağırıyorum. Şimdi bunu çağırdığım zaman exception handling yapmadığım için mesela numerator'a 3 diyelim, denominator'a 0 diyelim. Benim programım hata vererek duruyor. Bunu önlemek için de ne yapıyorum? Exception handling yapıyorum.
+
+695
+02:23:16,884 --> 02:23:22,504
+Reception Lending yaptığım zaman ne yapmışım? Bir saniyenizi rica ediyorum.
+
+696
+02:24:12,884 --> 02:24:15,184
+Okey, devam edelim. Sesim geliyor mu arkadaşlar?
+
+697
+02:24:20,308 --> 02:24:21,128
+Evet hocam.
+
+698
+02:24:23,412 --> 02:24:46,211
+Buradaki örnekte quotient metodumun içerisinde bir tane hata oluşabileceğini düşündüğüm için, çünkü bir tane ne yapıyorum? Bu hatayı iki türlü yakalayabilirim. Bir tanesi numerator divided by denominator kodunu metodun içerisinde try-catch bloğuna koyabilirim.
+
+699
+02:24:51,412 --> 02:24:58,492
+O yüzden throws keywordünü dikkat edin metodun definition'ın hemen arkasına koymuşum.
+
+700
+02:24:58,891 --> 02:25:07,112
+Ve burada gerçekleşebilecek olan exception'ı da belirtmişim. Aritmetik exception demişim.
+
+701
+02:25:07,191 --> 02:25:17,131
+Bu aritmetik exception da benim runtime exception'ımı extend eden exception sınıflarından bir tanesi.
+
+702
+02:25:18,963 --> 02:25:44,524
+Şimdi koda bakalım. Bu kod içerisinde ne yapıyorum? Yine scanner objesini oluşturuyorum. Burada bir tane loop yapacağım. Do while loop yapacağım. Bu do while loopu da belli condition sağlanana kadar devam ettirmek istiyorum. O yüzden buraya true demişim. Bu do while loopun içerisine girince try block da ne yapmışım? Ona bakalım.
+
+703
+02:25:45,075 --> 02:25:50,335
+Yine az önceki gibi numerator ve denominator'ı kullanıcıdan almışım.
+
+704
+02:25:51,556 --> 02:25:52,855
+Metodumu çağırmışım.
+
+705
+02:25:54,295 --> 02:26:04,095
+Metodumu aldıktan sonra metodun dönderdiği sonuçla beraber numerator, denominator değerlerini yazdırmışım.
+
+706
+02:26:04,235 --> 02:26:07,216
+Sonra da continue loop'u false demişim ve çıkmışım.
+
+707
+02:26:07,216 --> 02:26:09,036
+Yani şu demek şu.
+
+708
+02:26:09,615 --> 02:26:12,595
+Eğer düzgün bir şekilde operasyon tamamlanmışsa,
+
+709
+02:26:12,927 --> 02:26:27,727
+Bir defa execute et bu loopu. Ama düzgün bir şekilde yapılmamışsa, yani şurada bir hata çıkıyorsa, şurada hata çıktığında ve catch blow yakalanırsa, o durumda bu loopu devam ettir diyor.
+
+710
+02:26:27,727 --> 02:26:31,608
+Şimdi burada iki tane tip.
+
+711
+02:26:33,203 --> 02:26:57,043
+Error oluşabilir diye iki tane farklı catch bloğu yaratmışım. Bunlardan Arithmetic Exception'e bakalım biz. Arithmetic Exception oluştuğu vakit ben ne yapıyorum? Arithmetic Exception'la ilgili bu objeyi yazdırıyorum ve ekrana bunun hatanın ne olduğunu yazdırıyorum.
+
+712
+02:26:57,043 --> 02:27:00,344
+Bununla ilgili mesela şu kodu çalıştıralım.
+
+713
+02:27:01,843 --> 02:27:23,363
+Bu sefer numerator'a 7 verdim, denominator'a 0 verdim. Ne yaptı? Bana benim istediğim hatayı yazdırdı ve programımı durdurmadı. Tekrardan dikkat edin, benden veri istiyor. Bu sefer de numerator'a 7 verdim, ondan sonra denominator'a da 7 vereyim.
+
+714
+02:27:23,956 --> 02:27:41,896
+Ne yaptı? Bu sefer Loop'dan çıktı, programımı durdurdu. Demek ki exception handling ile ben ne yapıyorum? Programım durmadan doğru çalışma, hatalar, kullanıcıdan gelecek hatalardan dolayı programımı durdurmadan çalışmaya devam etmesini sağladım.
+
+715
+02:27:41,896 --> 02:27:51,956
+Şimdi bu benim birinci göstereceğim örnek. Bunun haricinde şuradaki örneği zaten slide'larda göstermiştim.
+
+716
+02:27:51,956 --> 02:28:08,940
+Şunu göstermiştim. Diğer bir göstereceğim örnek. Bunu file sistemi konuşurken konuşacağız. Bir de şuna bakalım. Hani burada da...
+
+717
+02:28:10,067 --> 02:28:19,948
+Birbiri içerisinde çağrılan metotlar var. Bu birbiri içerisinde çağrılan metotlar içerisinde exception handling nasıl yapılmış ona bakalım.
+
+718
+02:28:20,667 --> 02:28:28,727
+Şimdi bir main metodum var. Main metodumun içerisinde bir tane metot 1'i çağırıyorum. Metot 1 diye bir başka metodum var.
+
+719
+02:28:29,587 --> 02:28:34,067
+Bu metot birin içerisine öncelikle bakalım.
+
+720
+02:28:34,407 --> 02:28:44,128
+Metot birin içerisinde ben metot bir bir hata oluşabileceğini bildiğim için bir tane exception true etmişim.
+
+721
+02:28:44,128 --> 02:28:53,187
+Şimdi bu metot birin içerisindeki kod segmenti nedir? Şudur.
+
+722
+02:28:53,907 --> 02:28:59,948
+Şimdi bu kod segmentini ben zaten try catch bloğu içerisine bakın koyuyorum.
+
+723
+02:29:01,167 --> 02:29:03,788
+Try catch bloğu içerisine koyuyorum.
+
+724
+02:29:04,247 --> 02:29:08,967
+Yani burada exception'ı troll etmeme aslında gerek yoktu.
+
+725
+02:29:09,523 --> 02:29:16,363
+Ama gitmişim, bunun catch blow içerisine de bir tane throw new exception koymuşum.
+
+726
+02:29:16,484 --> 02:29:20,324
+Yani catch blow içerisinden de bir tane exception atıyorum.
+
+727
+02:29:20,324 --> 02:29:27,324
+Yani bu metodun, metod ikinin içerisinde bir exception oluştuğunda, catch içerisinde...
+
+728
+02:29:28,084 --> 02:29:41,364
+Yakalanacak. Ama catch'in içerisinde yakalandığı zaman da bir exception throw'n ettiğim için bu metod birin içerisinde metod birin bir tane exception throw edeceğini yazmak zorundayım.
+
+729
+02:29:42,104 --> 02:29:53,984
+Şimdi metod bir, bir tane exception üreten bir tane metod olduğu için bu metod biri de çağırdığım yerde bu metod biri bir tane try catch blow içerisinde koymak durumundayım.
+
+730
+02:29:54,611 --> 02:30:08,711
+Şimdi metod 1'e gidelim. Metod 1'in içerisinde kod segmentinde metod 2'yi çağırıyordum. Metod 2'ye gidelim. Şimdi metod 2'nin içerisine girdim. Metod 2'nin kod segmenti içerisinde metod 3 var.
+
+731
+02:30:10,511 --> 02:30:21,072
+Şimdi ben metod 3'ü try catch blow içerisine koymuşum. Yani metod 3 oluştuğu zaman ben zaten bunu catch blow içerisinde yakalayacaktım. Ama burada da gitmişim.
+
+732
+02:30:21,424 --> 02:30:26,084
+Bu cache bloğun içerisinde de bir tane throw new exception koymuşum.
+
+733
+02:30:27,424 --> 02:30:32,224
+Yani burada da bir hata oluştuğu zaman bir exception atacağım.
+
+734
+02:30:32,324 --> 02:30:38,123
+Dolayısıyla da method 2'nin de sonuna throw exception'i koymak zorundayım.
+
+735
+02:30:39,044 --> 02:30:40,864
+Şimdi method 3'e gelelim.
+
+736
+02:30:41,304 --> 02:30:46,084
+Method 3'ün içerisinde dikkat edin kod segmenti neresi? Şurası.
+
+737
+02:30:46,184 --> 02:30:48,783
+Ben burada bir tane throw new exception koymuşum.
+
+738
+02:30:49,876 --> 02:30:55,816
+Bunu koyduğum zaman artık mecburum ki bu metot bir tane exception true etmek zorunda.
+
+739
+02:30:56,476 --> 02:31:00,456
+Ne yapıyorum? Bu durumda sıralama nasıl olacak?
+
+740
+02:31:00,995 --> 02:31:04,136
+Öncelikle metot 3 bir tane exception true edecek.
+
+741
+02:31:04,788 --> 02:31:13,548
+Bu exceptionı trove edince bunu çağıran metot 3'ü çağıran metot 2 içerisinde şurada exception oluşacak.
+
+742
+02:31:13,988 --> 02:31:17,608
+Bu exception try-catch bloğu içerisinde yakalanacak.
+
+743
+02:31:18,508 --> 02:31:21,427
+Buradan bir exception trove edilecek.
+
+744
+02:31:22,288 --> 02:31:25,388
+Bu durumda metot 2 bir exception trove etmiş oluyor.
+
+745
+02:31:26,148 --> 02:31:28,468
+Metot 2'nin çağrıldığı yer neresi? Burası.
+
+746
+02:31:28,468 --> 02:31:30,847
+Burada bir exception oluşmuş olacak.
+
+747
+02:31:31,316 --> 02:31:55,776
+Bu exception'ı kim yakalayacak? Buradaki try-catch bloğunun keçi yakalayacak. Buradan da bir tane exception trove edilecek. Bu durumda method 1 exception'ı trove etmiş olacak. Method 1'in trove edildiği nokta burası. Buradaki exception'ı da buradaki try-catch bloğunun keçi yakalayacak.
+
+748
+02:31:57,459 --> 02:32:11,459
+Bu şekilde ben birbiri içerisinde nested, chained, exception, handlingler yapabildiğimi göstermek için bu kodu gösteriyorum.
+
+749
+02:32:23,956 --> 02:32:45,416
+Gördüğünüz gibi yukarıdan aşağıya ta metot 3'ün içerisindeki en alttaki exception'dan dolayı yukarıdaki exception'ın oluştuğunu adım adım konsoldan izleyebiliyorum.
+
+750
+02:32:48,724 --> 02:33:08,224
+Yine burada başka bir örnek var. Bu örneğe de bakalım. Bu örnekte de bir mail metodum var. Mail metodumun altında dışında iki tane daha metodum var. Bir tanesi true exception, bir tanesi does not true exception metodları. Şimdi bunları bir bakalım.
+
+751
+02:33:09,164 --> 02:33:14,224
+True exception metoduna bakalım. Şimdi true exception metodunu çağıralım.
+
+752
+02:33:15,123 --> 02:33:37,103
+Throw exception metodu, throws exception demiş. Yani demiş ki, benim içerisinde bir tane şey oluşabilir. Exception oluşabilir. İçine bakmadan söylüyorum. Tamam mı? Metodun şu definisyonda bunu dediği için, bunu dediği için ben burada throw exception'ı mutlaka try catch blow içerisine koymak zorundayım.
+
+753
+02:33:37,523 --> 02:33:58,263
+Okey? Metodda eğer böyle bir şey varsa ben bunu try catch blow içerisine koymak zorundayım. Burada da koymuşum. Şimdi bir de does not throw exception var. Ona gidelim. Does not throw exception'da böyle bir şey yok. O yüzden de does not throw exception'ı try catch blow'ına koymuyorum. Peki burada throw exception demiş. Neden demiş? Bir ona bakalım.
+
+754
+02:33:58,739 --> 02:34:16,279
+Bunun kod segmenti içerisinde aslında esasındaki kod segmenti bu. Yani trough exception sınıfının kod segmenti içinde iki tane satır var. Bir, bir system print outline ile bir şey yazdırmak istemiş. İkincisi de bir tane exception trough etmiş.
+
+755
+02:34:17,700 --> 02:34:20,279
+Yalnız bu exception trough ederken,
+
+756
+02:34:21,043 --> 02:34:44,304
+Bu exception, throw ettiği exception'ı buradaki catch block'ta yakalıyoruz. Şuradaki catch block'ta yakalıyoruz. Bu catch block içerisinde bir sistem outprintln yapıyoruz. Ondan sonra bakın catch block içerisinde tekrardan şuradaki yakalamış olduğu exception objesini tekrardan throw ediyor.
+
+757
+02:34:44,979 --> 02:34:59,139
+Bakın, burada yeni bir exception objesi oluşturmuyor. Bu yaratmış olduğu objeyi burada yakalamıştı, input olarak aldı. Aynı objeyi tekrardan trove ediyor. Ondan dolayı da burada trove exception'ı yazmak zorundayım.
+
+758
+02:35:00,595 --> 02:35:15,036
+Ne yapacak? Öncelikle burada exception oluşturacak. Sonra catch'in içerisinde bu exception'i tekrar trove ettiği için şunu yazmak zorunda. Bunu yazmak zorunda olduğum için de buradaki trove exception metodunu tryCatch bloğuna koymak zorunda kaldım.
+
+759
+02:35:15,891 --> 02:35:33,491
+Bir de finally metodum var, finally segmentum var. İster hani bu şey olmamış olsaydı yani şurada exception oluş olmuş olsaydı ister oluşmuş olsa her halükarda bu finally'yi ne yapacak? Execute edecek yani bunu yazdıracak.
+
+760
+02:35:34,592 --> 02:35:37,592
+Şimdi does not throw exception metoduna bakalım.
+
+761
+02:35:39,311 --> 02:35:42,971
+Does not throw exception metodundaki kod segmenti neresi? Şurası.
+
+762
+02:35:43,700 --> 02:36:08,100
+Bir tane system out print line var. Burada bir exception gerçekleşmiyor. Gerçekleşmediği için de burada bir troves exception yazmamışım. Burada gerçekleşmiş olması durumunda catch bloğu execute edilecekti ve bu yazılacaktı. Ve her halükarda gerçekleşmiş olsun ya da olmasın finally bloğu mutlaka yazılacaktı.
+
+763
+02:36:09,716 --> 02:36:18,956
+Burada bir de finally blown'dan sonra bir de bu metot tamamlanmadan çıkmadan bir de şunu yazdırmışım.
+
+764
+02:36:18,956 --> 02:36:29,916
+Bunu da çalıştırıp buradaki konuştuklarımızın gerçekleşmesine siz kendiniz de bakabilirsiniz arkadaşlar.
+
+765
+02:36:30,495 --> 02:36:43,495
+Yine burada bir başka exception handling ile ilgili bir başka örneğim var. Ben bunun da çalışmasını size bırakacağım. Buradaki kodları çalıştırıp...
+
+766
+02:36:43,680 --> 02:36:53,159
+exception handling ile ilgili hem chain exception hem metodun içerisinde exception olması durumunda
+
+767
+02:36:53,159 --> 02:37:04,740
+trows keyboard ile exception oluşturmak hem de az önce yaptığımız gibi exception'ı kendimizin oluşturma durumları için exception oluşturup
+
+768
+02:37:04,740 --> 02:37:09,940
+sonra da bu exception'ı yakalamak durumlarını çalışmanızı istiyorum.
+
+769
+02:37:10,440 --> 02:37:11,680
+Bunları sınavda...
+
+770
+02:37:11,680 --> 02:37:30,560
+size sözlü olarak metnin içerisinde vereceğiz. Diyeceğiz ki hani böyle bir durum söz konusu olduğunda bununla ilgili kendi exception handling sınıfınızı yaratın ve böyle bir exception olması şu condition'larda oluşabilir.
+
+771
+02:37:31,123 --> 02:37:39,443
+Hani bu durumda mesela buradaki olanaksız bilgi şeyinde olduğu gibi kendi exception handling sınıfınızı oluşturacaksınız.
+
+772
+02:37:39,443 --> 02:37:55,443
+Yine böylesi bir kondişimde kendi exception'inizi throw edeceksiniz. Bununla ilgili metoddan bu exception'i yakalamak yerine metodun çağrıldığı yerde exception'i yakalamak için throws keyword'ünü kullanacaksınız.
+
+773
+02:37:58,804 --> 02:38:06,424
+Spesifik olarak vermeyeceğiz. Sadece metin olarak anlatacağız. Bunu sizin kendinizin implement edebiliyor olmasını bekleyeceğiz.
+
+774
+02:38:07,891 --> 02:38:27,051
+Bu yüzden de sizden isteğim, sizle paylaşmış olduğum kodlar içerisinde bu exception handling ile ilgili buraya koymuş olduğum kodları çalıştırmanız ve bunları iyice anladığınızdan, sınavda sorulduğunda yapabileceğinizden emin olmanız.
+
+775
+02:38:35,891 --> 02:38:53,092
+Şimdi sekizinci slide oluyor. Tag casting'den devam ederek derse devam edeceğim. Dönem projeniz yayınlandı. Onunla ilgili bilgileri online Yıldız Eduteri sayfasından bulabilirsiniz arkadaşlar.
+
+776
+02:38:54,252 --> 02:38:56,471
+Hocam, ikinci vize haftaya mı olacak?
+
+777
+02:38:57,876 --> 02:39:03,536
+İkinci vize son dönem Haziran'ın son haftası.
+
+778
+02:39:05,556 --> 02:39:09,855
+Son haftası diyorum. Haziran'ın ilk haftasının sonu.
+
+779
+02:39:10,876 --> 02:39:14,076
+Ondan bir önceki hafta olmuş olması lazım.
+
+780
+02:39:14,256 --> 02:39:15,876
+Yani 13. hafta.
+
+781
+02:39:17,459 --> 02:39:37,899
+Bunu ben kontrol edeyim. Yani şu anda benim düşüncem gelecek hafta değil, ondan sonraki hafta olacağı yönde. Yani ne zaman oluyor? Ayın üçünde, Haziran'ın üçünde olacağını ben düşünüyorum. Ama bunun aksi bir bilgi olacak olursa zaten ben bununla ilgili duyuruyu size yapıyor olacağım.
+
+782
+02:39:38,739 --> 02:39:40,180
+Teşekkür ederim hocam. İyi günler.
+
+783
+02:39:40,180 --> 02:39:45,020
+Şu an ikinci vizeyi ayın üçünde olacakmış gibi düşünüyorum.
+
+784
+02:39:48,500 --> 02:39:48,959
+Tamam.
+
+785
+02:39:49,959 --> 02:39:51,779
+Tamamdır Aşam. İyi günler. Teşekkür ederim.
+
+786
+02:39:52,180 --> 02:39:56,099
+İyi dersler dilerim. Teşekkür ederim katıldığınız için. İyi dersler, iyi günler arkadaşlar.
+
+787
+02:39:56,099 --> 02:39:57,079
+Teşekkürler, iyi günler.
+
+788
+02:40:03,443 --> 02:40:05,163
+Arkadaşlar, class, object,

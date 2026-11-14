@@ -1,0 +1,3279 @@
+1
+00:10:25,460 --> 00:10:27,460
+Günaydın arkadaşlar, merhabalar.
+
+2
+00:10:40,692 --> 00:10:42,192
+1-2 dakikadan başlayalım.
+
+3
+00:13:36,692 --> 00:13:43,292
+Evet arkadaşlar, hepinizde iyi dersler, hoşgeldiniz.
+
+4
+00:13:44,652 --> 00:13:58,412
+Şimdi, geçen haftadan bu 5 değişkenli durumla alakalı bir yapamadığımız bir şey vardı, onu daha sonradan hatırlayabilirim.
+
+5
+00:13:59,692 --> 00:14:02,971
+Bunu genelde kitaplarda bulamazsınız, onun için.
+
+6
+00:14:04,115 --> 00:14:10,115
+2007 miydi, 2008 miydi? O zamanki ders notlarından tekrarıp çalıştım.
+
+7
+00:14:11,115 --> 00:14:14,115
+Hatta, burada da müzoğrafı işte aynı arada.
+
+8
+00:14:15,115 --> 00:14:18,115
+Bunu şimdi netleye kavuşturalım.
+
+9
+00:14:20,115 --> 00:14:27,115
+Şimdi bu makroonun adı genel olarak şeydir, bir derece alt seviyeden karnı haritası kullanarak,
+
+10
+00:14:28,275 --> 00:14:34,275
+5 değişkenliyi 4 değişkenli karna haritası ile 4'ü 3'le 3'ü 2'yle çözebiliyorsunuz.
+
+11
+00:14:34,275 --> 00:14:44,275
+Eğer 2 değişkenli varsa da onu 1 değişkenli karna haritasına gerek kalmadan çözebilirsiniz.
+
+12
+00:14:44,275 --> 00:14:49,740
+Mesela şöyle diyelim 2 değişkenli AB ekran geliyor mu arkadaşlar?
+
+13
+00:14:58,035 --> 00:15:06,035
+Burada bir olsun, burada bir olsun. Bu şeyde yapılacak olan şey bir alt seviyede.
+
+14
+00:15:06,035 --> 00:15:10,035
+Ses çizgilecek.
+
+15
+00:15:19,635 --> 00:15:28,875
+Şu an nasıl arkadaşlar ses? Tamam iki tane mikrofon var bazen diğeri çalışıyor. Mesela bunu istersek
+
+16
+00:15:30,675 --> 00:15:36,135
+bir lojik fonksiyon olarak ne yapabiliyorduk? Karno haritasında yapabiliriz, çizebiliriz.
+
+17
+00:15:36,975 --> 00:15:43,596
+Ne olacak? Direkt iki değişken olduğu için iki birebirlik şöyle bir karno haritasıyla
+
+18
+00:15:46,004 --> 00:16:00,004
+AB, 01, 01, 01, 01'de 1, 01'de 1, 01'de 1, 01'de 1, 01'de 1, 01'de 1 var. Bunları nasıl gruplayacağız? Bu çapraz gruplama olması için 4 tane olması lazım arkadaşlar.
+
+19
+00:16:00,004 --> 00:16:12,004
+Bunu bir tekli grupluyoruz, bunu da tekli grupluyoruz. Burada A değil B gelir şundan, buradan da artı B değil A gelir. Zaten ilk soru elde ederiz.
+
+20
+00:16:14,611 --> 00:16:27,812
+Şuraya baktığımızda, şimdi bu bir olma durumu. Şöyle bakıldığında bunu bir boyutlu karno haritası ile de,
+
+21
+00:16:29,812 --> 00:16:35,611
+tabi bir boyutlu olunca biraz daha iş değişiyor. Yani burada bir boyutlu örnek vermeye gerek yok.
+
+22
+00:16:36,851 --> 00:16:44,011
+A'nın 0 olduğu durumda B 0 iken 0 olmuş, B 1 iken 1 olmuş. O zaman burası da daha etkileyen şey B'dir diyeceğiz.
+
+23
+00:16:45,052 --> 00:16:52,731
+Yani şöyle tabii dememiz lazım. Tek boyutlu çizemediğimiz için iki şey orada olmayacak.
+
+24
+00:16:52,731 --> 00:16:57,652
+A'nın 1 olduğu durumda A 1 iken 0 olmuş.
+
+25
+00:16:58,227 --> 00:17:05,467
+B1 iken 0 olmuş, B0 iken 1 olmuş. O zaman burada da ne vardır? B'nin değili vardır diyeceğiz.
+
+26
+00:17:07,467 --> 00:17:18,228
+A'nın değili ile B artı B'nin değili birlikte geliyor.
+
+27
+00:17:19,228 --> 00:17:25,228
+Bu şekilde karın artısına gerek olmadan çözebiliyoruz. Tabi bunu bu şekilde bir değişken de yapmak biraz anlamsız.
+
+28
+00:17:26,291 --> 00:17:49,471
+Şimdi geçen haftaki örneği çözelim. Bir de geçen haftaki 5 değişkenliydi. Öyle zannediyorum. 4 değişkenli miymiş? 5'miş. Onu çözelim. Bir de ispat etmek için bir başka örnek daha hazırladım. Onu çözelim. Önce şu diğerini yapalım arkadaşlar.
+
+29
+00:17:50,163 --> 00:17:54,523
+Hatta diğerini yapmadan önce şu işi kolaylaştırmak adına
+
+30
+00:17:57,084 --> 00:17:58,364
+New diyeyim
+
+31
+00:17:59,124 --> 00:18:00,923
+Şuradan bir Snapchat alayım
+
+32
+00:18:29,875 --> 00:18:41,215
+Karnı Artaş çizelim. Bu lojik ifadenin sonucunda şurada bir varmış. Yani bu bir problem. Ben birileri tespit ediyorum buraya göre.
+
+33
+00:18:43,955 --> 00:18:46,235
+Ondan sonra 0, 1, 1 de
+
+34
+00:18:48,755 --> 00:18:49,955
+0
+
+35
+00:18:53,236 --> 00:18:53,996
+1 1 0
+
+36
+00:18:53,996 --> 00:18:57,076
+Şurada 1 1 varmış.
+
+37
+00:18:58,816 --> 00:18:59,856
+0 1 1
+
+38
+00:19:03,988 --> 00:19:07,668
+Ya bir dakika, şuraya yanlış yaptık arkadaşlar.
+
+39
+00:19:09,668 --> 00:19:11,668
+Değişken olarak alacaktık.
+
+40
+00:19:11,668 --> 00:19:12,668
+Yo.
+
+41
+00:19:13,668 --> 00:19:14,948
+Aslında doğru.
+
+42
+00:19:16,228 --> 00:19:17,508
+Sıfır.
+
+43
+00:19:23,347 --> 00:19:32,228
+Çubur, bubir, bubir, safar, bubir, safar.
+
+44
+00:19:42,067 --> 00:20:02,567
+Şu bir, 0, 1, 1. Şurada bir hata var, şu bir olacak. 0, 1, 1, 1. Ama tabii böyle bir karnı haritası olmaz. Çünkü biz 6 değişkenleden aldığımız için...
+
+45
+00:20:12,948 --> 00:20:18,628
+Yani örnek olarak göstermek için hızlıca yapayım dedim de.
+
+46
+00:21:17,619 --> 00:21:23,779
+Geçen hafta bir arkadaşımız, dörtlü grup iki defa çakışmaz diye öyle bir şey söylemişti.
+
+47
+00:21:23,779 --> 00:21:29,619
+[öğrenci] sen miydin? Yanlış hatırlamıyorsam bir arkadaşımız o kayıtları tekrar okuyamadım da.
+
+48
+00:21:29,619 --> 00:21:39,219
+Böyle bir şey de vardı. Öyle bir kural yok. Onu kim söyleyse, yani Banu Hoca söyledi falan demiş ki, öyle bir kural yok. Onu da inceledim.
+
+49
+00:21:39,219 --> 00:21:45,219
+Çakışmalar da istediğimiz kadar alabiliyoruz.
+
+50
+00:21:47,284 --> 00:21:55,984
+Bunlar tamamen arkadaşlar şu 0 ve 1'ler random yani random derken problemden çıkacak şeyler. Ben burada sadece random olarak veriyorum.
+
+51
+00:21:57,784 --> 00:21:59,564
+101, 0
+
+52
+00:22:09,203 --> 00:22:19,824
+Evet. Yani genel olarak böyle bir şey vermiş olsun. Şimdi ben bunu iki türlü bir dördüncü dereceden karno ile çözebilirim.
+
+53
+00:22:46,740 --> 00:22:52,860
+çizemiyoruz ama halledeceğiz. Bir de diyoruz ki üçüncü dereceden karnı ile çizelim.
+
+54
+00:22:57,011 --> 00:23:07,251
+Bu şunun için önemli, karnı haritalarında illaki 0 ve 1 veya don't care durumu olmaz. Bir başka değişkende yazılabilir işte burada olduğu gibi.
+
+55
+00:23:13,268 --> 00:23:19,268
+Bir de hazır buraya gelmişken, hocam bazı hocalarımız şöyle yapıyor diye soranlar oldu.
+
+56
+00:23:19,268 --> 00:23:28,268
+Yani buradaki değişkenlerimiz A, B, C, D. Burada grey koduna göre arkadaşlar bu karın haritası kodlanır.
+
+57
+00:23:28,268 --> 00:23:39,115
+Bazı kaynaklarda şöyle görebilirsiniz. İşte 00 yerine burada C, D değişkeni var ya. C değil, D değil, C değil, D.
+
+58
+00:23:39,380 --> 00:23:48,380
+Bu şekilde yazıldığını görürsünüz. Hocalardan bazıları da bu şekilde anlatır. Ama o zaman şu oluyor, bu daha jenerik bir yoldur.
+
+59
+00:23:49,580 --> 00:23:51,019
+Grey kodu yazmak.
+
+60
+00:23:53,540 --> 00:23:58,380
+Yani cd yerine xy olursa bu sefer xy'yi dönüştürmekte insanlar zorlanabiliyorlar.
+
+61
+00:23:59,380 --> 00:24:03,019
+Yani o geçiş her zaman bazen kolay sağlanmıyor.
+
+62
+00:24:03,540 --> 00:24:06,540
+Onun yerine şu şekilde grey kod.
+
+63
+00:24:07,571 --> 00:24:11,251
+1 bit değişimde grey kod yeterli olur.
+
+64
+00:24:13,571 --> 00:24:20,771
+Aynı soruyu önce 4 değişkenli karun haritasıyla çözelim. Sonra 3 değişkenli nasıl çözeceğiz? Bir de ona bakalım.
+
+65
+00:24:22,051 --> 00:24:35,500
+Şöyle 00001'de burada 1 varmış. 0010'da 1 varmış. 0011'de 1 varmış. 0011'de 1 varmış. 0011'de 1 varmış. 0011'da 1 varmış. 0011'da 1 varmış. 0011'da.
+
+66
+00:24:35,796 --> 00:24:47,076
+1 varmış. Sonra 1, 0, 1, 1 de. 1 var. 1 de 1, 1, 1 de. Yani şu ikisi 1.
+
+67
+00:24:49,756 --> 00:24:58,476
+Şimdi burada gruplama yaparken nasıl bir şey yapacağız? Dörtlü bir gruplama mesela şuradan başladığımda dörtlü bir gruplama yapamıyorum hiçbir şekilde.
+
+68
+00:24:59,092 --> 00:25:04,771
+O zaman ikili gruplamalar yapacağız. Birinci dörtlü gruplamamız şu olsun.
+
+69
+00:25:06,532 --> 00:25:13,892
+Sonra ikinci dörtlü gruplamamız bu olsun. Açıkta eleman kalmayacak şekilde gruplama yapabiliriz.
+
+70
+00:25:16,291 --> 00:25:19,492
+Öbürü de bu olsun. Şunu düzgün yazamadık.
+
+71
+00:25:31,284 --> 00:25:33,284
+Hemen şöyle altına...
+
+72
+00:25:34,164 --> 00:25:38,284
+Nedir şu birinci elemanımızın durumu? A değil, B değil.
+
+73
+00:25:40,284 --> 00:25:44,284
+C'de bir değişim var. Şunu sileyim arkadaşlar, kafa karıştırmayalım.
+
+74
+00:25:45,284 --> 00:25:52,284
+C'de bir değişim var, onun için yazamam. D'de bir değişim yok. D'yi yazıyorum. D bir olduğu için D olarak yazıyorum. Artı.
+
+75
+00:25:52,284 --> 00:25:57,284
+Aslında bu birleri grupladığım için bu birle bir çarpma işlemidir arkadaşlar. Tamam mı?
+
+76
+00:25:58,355 --> 00:26:07,576
+Şuraya geldiğimizde A değil, A'da bir değişim yok, B'de bir değişim var. A'da değişim olmadığı için, bir de sıfırda değişim olmadığı için A değil yazdık.
+
+77
+00:26:08,596 --> 00:26:16,215
+Bu eksen boyunca C ve D'de değişim yok. C'ye yazıyorum, D değil yazıyorum. Tabi bu da 1 ile çarpmak demek. Artı.
+
+78
+00:26:17,836 --> 00:26:25,016
+Şuraya baktığımda A'da bir değişim yok, B'de bir değişim var, C ve D'de değişim yok, 1 olarak yok, çarpı 1.
+
+79
+00:26:25,652 --> 00:26:52,532
+Sonucumuz buymuş. Ben diyorum ki gelin bunu bir de üç değişkenli bir karno haritası ile çözelim. Ne yapacağız? İnceleyeceğiz. Şimdi bir nerede gördük? Burada gördük. O zaman bir gördüğümüzde biri elde eden aynı olan ilk üç bite bakıyorum. Çünkü D burada kullanmayacağım. A, B ve C'ye bakacağım. Şimdi 0, 0, 0 durumu şurası. O zaman burayı bir inceliyoruz.
+
+80
+00:26:53,491 --> 00:26:59,371
+İncelerken yapacağım şey şu, bu üç bitin aynı olması farklı olan bite göre durum değerlendirmesi.
+
+81
+00:26:59,371 --> 00:27:03,931
+Sıfırken sıfırmış birken birmiş. O zaman bu D'ye bağlı değişiyor diyoruz.
+
+82
+00:27:03,931 --> 00:27:08,091
+A, B, C, 0, 0 durumunda buraya D yazıyorum.
+
+83
+00:27:08,091 --> 00:27:13,891
+Sonra geldim 0, 0, 1 durumunda yani şurada iki tane bir gördüm.
+
+84
+00:27:13,891 --> 00:27:18,811
+Şimdi şu önce şu 1'e baktığımda, şu 1'i gördüğümde şuradakini
+
+85
+00:27:18,932 --> 00:27:23,932
+diyorum ki 0, 0, 1. Bunun ortak olan bitleri şurası. O zaman bu ikisini birlikte inceleyeceğim.
+
+86
+00:27:23,932 --> 00:27:32,932
+Şimdi bu ikisini birlikte incelerken 0'ken de 1'miş, 1'ken de 1'miş. O zaman 0, 0, 1 durumunda bu daima 1 oluyormuş.
+
+87
+00:27:32,932 --> 00:27:44,932
+Geldik, 1, 1 daha var. Şurası. Şimdi bu bir ortak olan 3 biti şu son ikisi. O zaman bu ikisini birlikte inceleyeceğiz. Diğer durumlar zaten 0.
+
+88
+00:27:46,355 --> 00:28:12,655
+yapacağımız şey şu olacak arkadaşlar. Bir dakika, kaç tane? Bir de devamı var. 0, 1, 1 iken şu iki duruma bakıyoruz. 0, 1, 1 iken ortaklar. 1 iken 0 çıkıyor. Pardon, 0 iken 1 çıkıyor. D, 0 iken 1 çıkıyor. D, 1 iken 0 çıkıyor. O zaman bu D'nin değildir. 0, 1, 1 durumunda D'nin değil olarak ekliyor değişkenimiz.
+
+89
+00:28:13,779 --> 00:28:23,500
+Buraya kadar takip edebiliyorsunuz herhalde. Şurada bir 1 gördüm. Bu 1'i gördüğümde diğer ortak bitlerine bakıyorum. Ya altındadır ya üstündedir. Baktığım zaman 1, 1, 0. Yani şuraya bakacağız.
+
+90
+00:28:26,380 --> 00:28:34,179
+0 iken 0 çıkmış, 1 iken 1 çıkmış. O zaman bu bir D'dir. 1, 0, 1'de D vardır diyoruz.
+
+91
+00:28:34,779 --> 00:28:41,500
+Şuraya baktığımız zaman doğrudan üstteki ile aynıdır. 0 iken 0, 1 iken 1 D'dir. Zaten burada
+
+92
+00:28:41,567 --> 00:28:49,248
+Ne çıkar arkadaşlar? Dördüncü değişkenine bağlı olarak ya sıfır çıkar, şu mavi ile yazdıklarım, ya bir çıkar.
+
+93
+00:28:49,248 --> 00:28:55,387
+Mesela şurada sıfırken de sıfır, birken de sıfır. O zaman bu sıfırdır. Bir şey yazmadık onun için.
+
+94
+00:28:55,387 --> 00:29:00,887
+Burada sıfırken de sıfır, birken de sıfır. Bu da sıfırdır. Bunları yazmıyoruz.
+
+95
+00:29:00,887 --> 00:29:06,567
+Ya sıfır çıkar, ya bir çıkar, ya d çıkar, ya da d değil çıkar. Bu değişkenin durumu.
+
+96
+00:29:06,900 --> 00:29:17,579
+Evet, bunu aldıktan sonra önemli olan kısım burası. Şimdi arkadaşlar, burada D'leri veya D değilleri bir don't care durumu gibi düşüneceğiz.
+
+97
+00:29:17,579 --> 00:29:30,019
+Ve ona göre kendi içerisinde bir gruplama yapacağız. Bu gruplamayı yaparken de dikkat etmemiz gereken şey şu, birileri gruba dahil edebiliyoruz.
+
+98
+00:29:30,820 --> 00:29:34,500
+Çünkü bir dediğimiz şey D artı D değildir burada.
+
+99
+00:29:34,847 --> 00:29:35,847
+Bu değişkeni.
+
+100
+00:29:36,447 --> 00:29:40,307
+Birileri gruba dahil ediyoruz. Ama ayrıca şunu da yapmamız gerekecek.
+
+101
+00:29:42,827 --> 00:29:43,467
+Ayrıca
+
+102
+00:29:43,467 --> 00:29:46,507
+eğer boşta bir bir kalıyorsa
+
+103
+00:29:46,507 --> 00:29:48,907
+onu da eklememiz gerekecek.
+
+104
+00:29:49,768 --> 00:29:49,967
+Şimdi
+
+105
+00:29:49,967 --> 00:29:54,307
+bir de şurada d vardı pardon.
+
+106
+00:29:58,516 --> 00:29:59,715
+Şuraya daya ikiye.
+
+107
+00:30:05,268 --> 00:30:06,268
+Şöyle.
+
+108
+00:30:10,675 --> 00:30:13,275
+Neyse, kalınlıkta bir problem var. Evet.
+
+109
+00:30:16,456 --> 00:30:21,436
+Şimdi yapacağımız birinci grup, şimdi şu D'yi birle gruplayabiliyorum.
+
+110
+00:30:22,195 --> 00:30:26,795
+Çünkü dörtlü grup yapmaya çalıştığımda olmuyor. Şurada bir şey olması lazım.
+
+111
+00:30:27,395 --> 00:30:32,996
+D'yi D değil ile gruplayamam. Onun için birinci gruplu. Bunun hemen sonucunu yazalım arkadaşlar.
+
+112
+00:30:32,996 --> 00:30:35,135
+Bunun başında bir D parametresi gelecek.
+
+113
+00:30:35,731 --> 00:30:39,672
+A'da bir değişim yok. A'nın değilinde. Şöyle küçük harfle yazalım.
+
+114
+00:30:42,791 --> 00:30:50,672
+D çarpı A'nın değilinde bir değişim yok. B'nin değilinde bir değişim yok. C'de bir değişim var.
+
+115
+00:30:51,731 --> 00:30:59,891
+Yani bu A'nın değil'i B'nin değil'i şu D'yi de sonuna çarpma olarak yazalım. Alfabet ikisini D'nin kendisi.
+
+116
+00:31:02,127 --> 00:31:29,187
+Şu iki D'yi birbiri içerisinde gruplayabilirim. Bakın A, B, D'nin D'li. A, B, D, şunu bulduk şu an. Şu iki D'yi gruplamaya çalıştığımda şu D'nin D'ini alamam. Biri de alamam. O zaman ikili olacak. Başka bir çare yok. Nedir bu? A çarpı B'de bir değişim var. C'de bir değişim yok. A, C, D.
+
+117
+00:31:29,779 --> 00:31:31,779
+O da şuna karşılık geliyor.
+
+118
+00:31:31,779 --> 00:31:34,779
+Şimdi geldik şu kısma.
+
+119
+00:31:34,779 --> 00:31:37,779
+Şununla da şunu gruplayabiliriz.
+
+120
+00:31:37,779 --> 00:31:39,779
+D'nin değiliyle D olmaz.
+
+121
+00:31:39,779 --> 00:31:41,779
+Ama D'nin değiliyle bir gruplanır.
+
+122
+00:31:41,779 --> 00:31:44,779
+Buna bir D'nin D ile çarpanı gelecek.
+
+123
+00:31:44,779 --> 00:31:46,779
+A'nın D'li var.
+
+124
+00:31:46,779 --> 00:31:49,779
+B kendi içinde değişiyor. C değişmiyor.
+
+125
+00:31:49,779 --> 00:31:51,779
+A'nın D'li C çarpı D'nin D'li.
+
+126
+00:31:51,779 --> 00:31:54,779
+Bu üçünü topladığımızda bakın şunun aynı sonucunu veriyoruz.
+
+127
+00:31:57,652 --> 00:31:58,652
+Bu bir örnek.
+
+128
+00:32:02,996 --> 00:32:10,996
+Biri ayrıca burada gruplamaya gerek yok. Çünkü arkadaşlar, biri hem şununla grupladık hem de bununla grupladık. Ayrıca gruplamaya gerek yok. Şimdi bir örneğimiz var.
+
+129
+00:32:11,996 --> 00:32:22,996
+Orada bir daha bakacağız. Bu tabii doğrulama yapmak için. Yani kendi anlattığımız şeyi doğrulama yapmak için kullandığım bir şey. Şimdi şuna geldiğimde
+
+130
+00:32:31,124 --> 00:32:40,724
+Tamam, bunu bu şekilde yapmaya tekrar gerek yok. Zaten bu mevzuyu anlatmış oldum. Şöyle bir karno haritası üzerinden örnek yapalım.
+
+131
+00:32:46,067 --> 00:32:48,067
+dörtlü olsun bu sefer.
+
+132
+00:32:50,067 --> 00:32:54,763
+Gruplama için bir örnek daha yapmış olalım. Ondan sonra bitireceğim bu konuyu.
+
+133
+00:33:01,460 --> 00:33:08,460
+Ya bu bize neyi sağlar? En fazla beşli bir değişken çıkarsa, hani şu diğer tablo yöntemini
+
+134
+00:33:09,660 --> 00:33:14,780
+hatırlamazsanız beşliyi dörtlü karnın haritası ile çözebilirsiniz.
+
+135
+00:33:15,280 --> 00:33:17,340
+Biz bunu sınavda sormayız zaten.
+
+136
+00:33:19,639 --> 00:33:22,200
+Lojikçiler bile anlatmamış olabilirler.
+
+137
+00:33:23,980 --> 00:33:26,539
+Lojikte karnın haritalarına geçtiniz mi şu an?
+
+138
+00:33:28,660 --> 00:33:30,060
+Şurayı almış ya da.
+
+139
+00:33:38,483 --> 00:33:41,304
+Belki orada bunu anlatacaklardır da.
+
+140
+00:33:42,324 --> 00:33:48,203
+Ben birçok kitapta, kaynak kitaplarda da bu anlattığım yöntemi göremedim.
+
+141
+00:33:49,483 --> 00:33:55,384
+Mesela karnın haritası arkadaşlar, E değişkeni, dördüncü değişkenin şu şekilde oluşturulmuş olsun.
+
+142
+00:33:56,663 --> 00:33:59,223
+İşte bu, bir E burada.
+
+143
+00:34:00,503 --> 00:34:01,784
+Bir E burada.
+
+144
+00:34:03,563 --> 00:34:05,884
+Ondan sonra bir E şurada varmış.
+
+145
+00:34:08,307 --> 00:34:13,307
+1, 1, 1, 1, 1, bir de böyle bir şey varmış.
+
+146
+00:34:14,307 --> 00:34:16,300
+Şimdi bu ifadeyi
+
+147
+00:34:19,315 --> 00:34:31,076
+5 değişkenli bir şeyde oluşturup, yani ya bu levir kurallarıyla ya da tablo yöntemiyle çalıştırdığınızda şunu bulacaksınız.
+
+148
+00:34:45,172 --> 00:34:53,172
+A, B, C, A, C, D.
+
+149
+00:34:53,172 --> 00:34:56,172
+Şöyle ifade gelecek.
+
+150
+00:34:56,172 --> 00:35:02,172
+Şu ilk üçünü E'li gruplamalardan bulacağım. Bunu da birli gruplamalardan bulacağım.
+
+151
+00:35:02,172 --> 00:35:05,172
+Ve bu şekilde tamamlayacağız.
+
+152
+00:35:05,172 --> 00:35:10,172
+Şimdi tek başına bir varsa, biraz önceki yaptığımız örnekte,
+
+153
+00:35:12,148 --> 00:35:25,148
+Bir bununla bir bununla gruplandığı için biri ayrıca gruplamaya gerek kalmadı. Yani gruplasaydık ne olurdu? Artı A'nın değili, B'nin değili, C diye bir şey gelirdi.
+
+154
+00:35:25,148 --> 00:35:39,148
+Sonra buradan ortak parantezleri alıp yine ne olurdu? Yani bu gereksiz bir gruplama oluyor. Bu terim A'nın değili, B'nin değili, C. Bu terim ne olurdu arkadaşlar?
+
+155
+00:35:39,668 --> 00:35:42,988
+giderdi yani birbirine sadeleşirdi. Onun için gerek kalmıyor.
+
+156
+00:35:45,047 --> 00:35:47,347
+Şimdi geldiğim zaman bunu nasıl gruplayalım?
+
+157
+00:35:48,108 --> 00:35:49,387
+E'li bir şeyi
+
+158
+00:35:50,427 --> 00:36:01,688
+mümkün olan en fazla grubun içerisine dahil etmek istersen o zaman E'yi şöyle alabilirim arkadaşlar. Bakın şu bir E, bunu bir, birili, ikili, üçlü, dörtlü bir gruba adabiliyorum.
+
+159
+00:36:02,188 --> 00:36:04,748
+O zaman bu olabilir. Bunu yazalım hemen.
+
+160
+00:36:05,556 --> 00:36:08,496
+Bu E ile gelecek çarpı E diyeceğiz.
+
+161
+00:36:11,336 --> 00:36:15,175
+D ve D değeri gruplamak gerektiğinde nasıl oluyor? Ne nasıl oluyor?
+
+162
+00:36:19,668 --> 00:36:22,288
+D ve D değil gruplanmaz birlikte.
+
+163
+00:36:22,967 --> 00:36:27,568
+D'yi burada bir 1 ile birlikte aldık, bir de D değil ile 1 aldık.
+
+164
+00:36:27,568 --> 00:36:33,448
+Bir iki defa zaten gruplanmış olur. Ayrıca biri kendi başına gruplanmak istersem, ki şimdi onu yapacağız.
+
+165
+00:36:34,368 --> 00:36:36,488
+Yani bir burada tekli gruplanır.
+
+166
+00:36:37,427 --> 00:36:40,568
+Zaten biraz önce D ile veya D değil ile gruplanır.
+
+167
+00:36:41,948 --> 00:36:45,867
+Bir tek başına gruplanır. O da şöyle bir şey gelir.
+
+168
+00:36:45,907 --> 00:36:57,627
+Yani beraber olmasaydı, birli olmasaydı, D ile D'nin D ile X'ini birden gruplamak durumunda kalmış olsaydık. Aşağıdaki iki D'den birisi D değil olsaydı mesela.
+
+169
+00:36:58,627 --> 00:36:59,027
+Şu mu?
+
+170
+00:36:59,507 --> 00:36:59,707
+Evet.
+
+171
+00:36:59,707 --> 00:37:05,148
+Mesela şu. O zaman D değil ile beraber yani o durumu...
+
+172
+00:37:05,148 --> 00:37:06,887
+Benzeri ile mi gruplayacaktık?
+
+173
+00:37:07,268 --> 00:37:09,188
+Tabii D değil ile D değil gruplanırdı.
+
+174
+00:37:10,003 --> 00:37:16,003
+Ama o durumda tabii ayrıca göz önüne alıp ona göre karnı haritasını düzenlemek lazım.
+
+175
+00:37:16,003 --> 00:37:21,003
+Yani yeniden sıfırdan bir örnek çözmek gibi bakmak lazım orada.
+
+176
+00:37:21,003 --> 00:37:30,003
+Ama şurada iki defa gruplandığı için gereksel. Şimdi şuradaki örneğe de bakalım. Herhalde demek istediğine yakın bir şey çıkar burada.
+
+177
+00:37:30,003 --> 00:37:37,003
+Şimdi bu E'li grubu grupladığımda arkadaşlar, bunların içerisinde E artı E değiller var. Onun için gruplayabiliyoruz.
+
+178
+00:37:37,427 --> 00:37:59,427
+A'da bir değişim yok, B'de bir değişim yok. Ondan sonra C ve D'de sürekli değişim var. C ve D'yi alamam. O zaman ne oluyor burası? A, B, E oluyor. Tabii ben büyük harfle yazmışım da şunu da oradan bulduk. Sonra gelelim şuradaki E'ye. Buradaki E'yi gruplamak istediğimizde.
+
+179
+00:38:02,427 --> 00:38:04,688
+Mesela ne bulalım? Şunu bulalım.
+
+180
+00:38:05,523 --> 00:38:10,644
+Buradaki E'yi şöyle alırsak dörtlü bir grubu içerisine dahil edebiliyoruz.
+
+181
+00:38:13,724 --> 00:38:14,743
+Artı
+
+182
+00:38:28,532 --> 00:38:29,252
+Artı.
+
+183
+00:38:31,252 --> 00:38:41,252
+A'da bir değişim yok. Ondan sonra C'de bir değişim yok. Diğerlerinde B ve C, D'de değişim var. Burayı E'li grupladım. Şimdi E yazıyorum. Artı.
+
+184
+00:38:41,252 --> 00:38:52,771
+Şimdi geldik şuraya. Burada yapabileceğimiz gruplama en fazla ikili olur. Şununla şu ikisini alabiliriz. Başka bir terim alamıyoruz.
+
+185
+00:38:54,804 --> 00:39:10,804
+A'da bir değişim var, B'de bir değişim yok, C ve D'de değişim yok, artı, ne de değişim yok arkadaşlar, E yazacağız, artı.
+
+186
+00:39:10,804 --> 00:39:17,804
+Şimdi şöyle bir şey yaptık. Düşün ikisi gruplandı, birler kendi içerisinde burada gruplanmadı.
+
+187
+00:39:18,739 --> 00:39:45,779
+Birileri tekrar burada kendi içerisinde dikkate almak durumundayız. Bu yöntemin birazcık böyle kafalarda soru işareti bırakan şey bu ama olması gereken hali de bu. Şimdi bunu ikili gruplayabiliriz. Bunu ikili gruplayabiliriz. Çünkü şöyle yaptık. Biraz önce şunu söylemek için yapıyorum arkadaşlar. Aslında bunun mantığı da şu. Şimdi ben biraz önce şu büyük dörtgende şu biri aldım.
+
+188
+00:39:46,260 --> 00:39:48,660
+Ama o birinin içerisindeki neyi aldım?
+
+189
+00:39:49,140 --> 00:39:54,180
+E ile birlikte E'yi aldım. Onun içerisinde bir E'nin değili terimi kaldı. Anlatabildim mi?
+
+190
+00:39:55,980 --> 00:40:01,300
+Şurada aynı şekilde bunun E'nin değili terimi kaldı.
+
+191
+00:40:01,900 --> 00:40:06,660
+Aynı şekilde şunda da bir E'nin değili terimi kaldı. Onun için bu birileri tekrar grupluyorum.
+
+192
+00:40:07,100 --> 00:40:09,100
+Biraz önce şunu da yaptığımızda...
+
+193
+00:40:10,228 --> 00:40:20,948
+Burada yaptığımızda bu D'nin D'yi D ile grupladık. D'nin D'li de D'nin D'lini burada grupladık. Anlatabildim mi?
+
+194
+00:40:21,907 --> 00:40:31,228
+D artı D'nin D'li bir burayla bir burayla gruplanmış oldu. Gereksiz terim gereksiz gruplamaya gerek kalmadı. Ama şurada D'nin D'leri açıkta kaldı.
+
+195
+00:40:32,608 --> 00:40:34,788
+Pardon E'nin D'leri açıkta kaldı.
+
+196
+00:40:38,291 --> 00:40:55,492
+iki kere, bir kere, yok iki kere gruplamaktan kasıt değil arkadaşlar. D'yi şurada, D artı D değil ya bu. D'yi D ile gruplamış gibi yaptım. Ama D'nin D ile açıkta kaldı. O D'nin D'ini de şurada grupladık. O zaman oldu.
+
+197
+00:40:58,372 --> 00:41:03,971
+Öyle söyleyeyim yani. Diğer durumda da, şurada tabii biraz önce ne yapmıştık?
+
+198
+00:41:08,467 --> 00:41:20,467
+Burada D vardı. İki defa almaya gerek kalmadı. Şimdi burada şu E'nin D'li burada açıklık alalım. Onun için bu birileri bir grupluyorum. Sonra bu biri yine aynı şekilde grupluyorum.
+
+199
+00:41:20,467 --> 00:41:35,403
+Herhangi bir şekilde E'nin D'li terimiyle bu biriler bir şekilde gruplanmadı. Yine şu biri de şöyle bir gruplama yapacağım. Üç tane terim gelecek. Birinci terimiz şu ikisi arasında A, B ve D arasında.
+
+200
+00:41:36,436 --> 00:41:58,736
+çarpı bir, birler üzerinde gruplama yaptığım için. Artı, ikinci durum AB ve C üzerinde. Artı, üçüncü durum şurası, AC ve D. Bunların hepsi birer çarpanı olduğu için işte sonlarında aslında bir bir çarpanı var.
+
+201
+00:42:03,860 --> 00:42:19,400
+Yani koşu yaparsanız, incelerseniz, yani nedir A, B, C, D, E, doğruluk tablosundan çıkan bu sonucu alıp incelerseniz şey olur, bu yöntemi bu sonucu elde edersiniz.
+
+202
+00:42:20,119 --> 00:42:28,560
+Tabi bu 5T değişkene kadar karnın haritası çözüm. Eğer 6 ve üstü ise, aslında 6 ve üstünün de ne var? 2 boyutlu karnın haritalar var.
+
+203
+00:42:31,315 --> 00:42:58,515
+3 bitlik grey kodlar yazılıyor veya 2 bitlik yazıp 2 tane şey çiziyorsun. Ama orada zor olan şey şu arkadaşlar, ortak gruplamalar çok daha zorlaşıyor, yani kafa karışıklığı oluyor. Onun yerine, bu tabular metot veya queen dediğimiz metoda gerek duyuyoruz. Onu hızlıca tekrar özetleyeyim size. Aslında bu metot,
+
+204
+00:43:00,115 --> 00:43:04,796
+Bizim sadeleştirme dediğimiz şu metottan geliyor.
+
+205
+00:43:05,756 --> 00:43:16,235
+Örneğin A, B, C, D, E değil var. Bir de A, B, C, D, E var. Biz burada A, B, C, D parantezini alarak E artı E değil yazabiliyoruz.
+
+206
+00:43:16,235 --> 00:43:21,355
+Sonra diyoruz ki bu 1'dir. Buradan A, B, C, D'ye indiriyoruz.
+
+207
+00:43:26,291 --> 00:43:44,511
+Neye göre yapacağız? Bitler arasındaki ortak bir sayısına göre. Yani burada kaç tane bir var? Dört tane bir var, bir tane sıfır var demektir. İşte dört tane bir olanlar arasında ortaklık var mı? Onlara bakarak bir gruplama yapılıyor. O ortak parantezi alma mantığıyla çalışan bir yöntem.
+
+208
+00:43:44,947 --> 00:43:49,947
+Bu işin algoritmik tarafı, yani bu doğrudan algoritm olarak kullanılabiliyor.
+
+209
+00:43:49,947 --> 00:43:59,947
+Şimdi genelde örnekler dört üzerinden verilmiş çünkü tablolar uzamasın diye ama bunu istediğiniz boyutta yani yedi boyut, sekiz boyut yapılabilir.
+
+210
+00:43:59,947 --> 00:44:10,947
+Şimdi şu karnın haritasını çizdiğinizde içerisinde sıfır tane bir olanlar,
+
+211
+00:44:12,148 --> 00:44:16,628
+bir tane bir olanlar, iki tane bir olanlar şeklinde bir ayrım yapılacak.
+
+212
+00:44:18,148 --> 00:44:19,908
+Şimdi sıfır burada.
+
+213
+00:44:20,628 --> 00:44:27,748
+Birinci bir tane bir olanların grubu burada, o bir iki ve sekizden geliyor. İki tane bir olanların grubu şunlar.
+
+214
+00:44:28,307 --> 00:44:30,628
+Üç tane bir olanların grubu da bunlar.
+
+215
+00:44:31,668 --> 00:44:35,748
+Sonra, zaten bunun sonucunu şu şekilde yazmış.
+
+216
+00:44:36,748 --> 00:44:38,948
+Şimdi bu birinci durumu
+
+217
+00:44:39,923 --> 00:44:42,804
+Birinci durumu, yani initial durumu alıyoruz.
+
+218
+00:44:44,003 --> 00:44:51,123
+Sıfırlı gruplarla birli gruplar arasında bir ortak grup yapabiliyor muyum? Bir bit değişimle.
+
+219
+00:44:51,484 --> 00:44:55,923
+Bir ile iki arasında yapabiliyor muyum? İki ile üç arasında yapabiliyor muyum?
+
+220
+00:44:56,244 --> 00:45:00,244
+Yapabildiklerimi ne yapacağım? Bir sonraki adıma taşıyacağım.
+
+221
+00:45:00,500 --> 00:45:27,779
+Şimdi 0 ve 1 arasına bakacağım. 0, 2, 0, 3, 0, 8'e bakacağım. Bunlar arasında birer bitlik değişimi var mı? Şimdi 0 ve 1'e baktığımda ilk 3 bit aynı, 4. bit değişmiş. O zaman ilk 3 bit aynı diyeceğim, 4. bit böyle. 0, 2'ye baktım, bunu bu şekilde yazdım. 0, 8'e baktım, bunu bu şekilde. Sonra 1, 5, 1, 6, 1, 9, 1, 10. Onu sonra 2, 5, 2, 6, 2, 9, 2, 10. 8, 5 falan bakacağım.
+
+222
+00:45:28,275 --> 00:45:35,515
+Bunlara baktığım zaman, tabii hepsinde bakmama gerek yok. 2 bit değişim varsa onları yazmıyorum. Sadece 1 bit değişiklik olanları yazıyorum.
+
+223
+00:45:36,515 --> 00:45:53,235
+Aynı şekilde işte 5, 7, 5, 14, 6, 7, 6, 14. Mesela 9 ile 14'e bakmamış. 9 ile 7'ye baktığımız zaman ne var? 2 bitten fazla değişim var. 1 bitten fazla değişim var.
+
+224
+00:45:53,235 --> 00:45:55,875
+Bunlar da bu şekilde aktarıldı. Sonra
+
+225
+00:45:55,956 --> 00:46:04,676
+Ne yapıyorum? 0, 1 ile şu birinci kısımla ikinci kısmı, 2 ile 3'ü karşılaştırıyoruz burada iki şekilde.
+
+226
+00:46:05,615 --> 00:46:16,115
+Burada da böyle şekiller çıkmış. En sonunda kısım neye geliyor? Bunlara geliyor. Aynı şunlar tekrar ettiği için 0, 8, 1, 9, 0, 8, 1, 9 bunlar iki defa yazmıyoruz.
+
+227
+00:46:16,695 --> 00:46:17,695
+Genel olarak
+
+228
+00:46:17,952 --> 00:46:34,952
+0189, 02810 ve 261014 grupları varmış. Bunları yazdığımız zaman ne görüyor? 0 yani şu değişkenler gelecek. Ve bu değişkenleri kullanarak bir tablo yapıp şuradaki bütün...
+
+229
+00:46:36,788 --> 00:46:44,028
+şeyleri sağlıyor mu, sağlamıyor mu? Bunu kontrol ediyoruz. Bütün durumları içine alıyor mu, almıyor mu? Bunu kontrol ediyoruz. Bu kadar basit bu.
+
+230
+00:46:44,028 --> 00:46:55,587
+Tabii birazcık az kullanıldığı için çok fazla belki karşımıza gelmiyor. Şimdi şurada bir tane daha örnek vardı. Geçen hafta belki bunu gösterdim size.
+
+231
+00:46:55,587 --> 00:47:00,148
+Şu örneği mesela bunu size kopyalayayım.
+
+232
+00:47:01,012 --> 00:47:07,412
+Buradaki örneği incelersiniz. Bir beşli örnek kendiniz yaparsanız, bu konuda çok sıkıntı yaşamazsınız arkadaşlar.
+
+233
+00:47:08,432 --> 00:47:18,412
+Burada da gayet güzel adım adım anlatmış. Önemli olan terim seçerken, problemde verilen mintermlerden,
+
+234
+00:47:26,579 --> 00:47:38,579
+Bir seçim yapmak gerekiyor en son adımda. Şimdi mesela burada W, X, Y, Z'yi seçtiğimiz zaman tek bir minitörüm var. Sıfırı kapsıyor.
+
+235
+00:47:38,579 --> 00:47:48,579
+Önce diyorum ki bunu seçmeden önce en fazla minitörümü içeren ne var? W, Y var. W, Y'yi seçtiğinde 3'ü almış oluyorum. 6'yı almış oluyorum, 7'yi almış oluyorum. Güzel.
+
+236
+00:47:49,492 --> 00:48:07,652
+Ondan sonra X, Z var. Burada da 5'i aldım, 7'yi aldım, 13'ü aldım. Şimdi boşta kalan, ondan sonra ikili olan W, X, Y var. Buradan da 12'yi elde ettim. X, Y, Z'yi mesela şu an bunu elde ettiğim için bunu hiçbir zaman almama gerek kalmadı.
+
+237
+00:48:08,083 --> 00:48:22,043
+Diğerlerini almak için W, Y ve W, X, Z aldıktan sonra ne yapıyoruz? İşte bu sonucu W, X, Z artı W, Y artı X, Y, Z artı X değil Y, Z değil ve X, Z olarak ve şu olarak geliyor. Şuna gerek kalmıyor.
+
+238
+00:48:24,443 --> 00:48:30,863
+Bu örnek güzel bir örnek. Mesela burada çalışma sorusu da var. Buna bakabilirsiniz. Herhalde burada başka soru yoktur.
+
+239
+00:48:32,755 --> 00:48:41,555
+Şeyi de anlattım geçen hafta, sadece NAND kapıları, sadece NOR kapıları ile nasıl yapılır, onlarda birazcık çalışırsınız, yeterli olur.
+
+240
+00:48:42,956 --> 00:48:46,956
+Gelelim, geçen hafta kaldığımız slide'a.
+
+241
+00:48:48,055 --> 00:48:51,755
+Yine 40 dakikamız geçen haftadan şey olarak geldi.
+
+242
+00:48:59,827 --> 00:49:13,827
+Kümelerle alakalı kısmı bitirmiştik herhalde. Şöyle ilerleyelim. Kuvvet kümelerini falan gördük. Bağıntıya geldik herhalde değil mi? Kart edilen çarpım mıydı?
+
+243
+00:49:31,027 --> 00:49:36,707
+Bunu görmüştük. Bu örneği yaptığımızı hatırlıyorum.
+
+244
+00:49:40,659 --> 00:49:41,659
+Bunu da baktık.
+
+245
+00:49:43,059 --> 00:49:45,659
+Şimdi diziler, evet diziler ve seriler.
+
+246
+00:49:46,659 --> 00:49:52,659
+Şimdi arkadaşlar dizileri biz burada programlamadaki diziler gibi de düşünebilirsiniz.
+
+247
+00:49:52,659 --> 00:49:55,659
+Yani işte sinyal sistemlerde de farklı şekilde anlatıyoruz.
+
+248
+00:49:56,659 --> 00:50:00,659
+Sıralı bir listeyi göstermek için kullanılan ayrık bir sıra yapıdır.
+
+249
+00:50:00,659 --> 00:50:03,659
+Genel olarak şu şekilde gösteriliyor.
+
+250
+00:50:03,659 --> 00:50:06,659
+Indies'in durumuna göre elemanlar farklılık gösterebiliyor.
+
+251
+00:50:07,251 --> 00:50:10,251
+elemanların kaçıncı eleman olduğunu söylüyoruz.
+
+252
+00:50:11,751 --> 00:50:14,811
+Ve n doğal sayılardan oluşur.
+
+253
+00:50:15,331 --> 00:50:16,891
+İşte sonlu bir alt kümedir.
+
+254
+00:50:19,291 --> 00:50:22,992
+Örneğin bir sn kuralı verilen bir dizi.
+
+255
+00:50:23,091 --> 00:50:24,291
+Fonksiyon aslında bu.
+
+256
+00:50:24,391 --> 00:50:25,652
+Bu fonksiyon niye böyle?
+
+257
+00:50:26,271 --> 00:50:28,091
+Sürekli zaman değil bir anlamda.
+
+258
+00:50:28,711 --> 00:50:29,511
+X'e bağlı değil.
+
+259
+00:50:29,631 --> 00:50:31,051
+X'in yerine n getiriyoruz ve
+
+260
+00:50:31,051 --> 00:50:33,431
+X'in alacağı değer aradıkları
+
+261
+00:50:34,483 --> 00:50:48,764
+yerine yani x burada normal bir fx fonksiyonunda x ne olabiliyordu? x eleman real sayı oluyordu ama bizde burada ne var? Sn'ler var. n eleman doğal sayılar var arkadaşlar.
+
+262
+00:50:50,283 --> 00:50:57,423
+Burada bunu söyleyebileceğiz. Dolayısıyla aslında fonksiyonların sahibi olduğu birçok şeye de sahiptir bu konu.
+
+263
+00:50:58,963 --> 00:51:08,304
+Dizi bu şekilde tanımlanırsa, elemanlar bu şekilde ifade ediliyor. N yerine 1, 2, 3, 4 yazıyorsunuz ve sonucu alıyorsunuz.
+
+264
+00:51:09,203 --> 00:51:24,644
+Şimdi bir dizinin artan veya azalan olmasının kuralı, işte n artı 1'in bütün elemanları, bütün n artı 1'ler, bütün n ince elemanlardan büyükse, yani bu kural bütün bir dizi boyunca sağlanıyorsa artan değil, diğer durum ise azalan.
+
+265
+00:51:25,396 --> 00:51:45,016
+Bu şekilde kontrol edebiliriz. İşte ne yapıyor? Burada bir azalan bir dizi var, burada artan bir dizi var. Eğer bu şartlardan herhangi birini bozan bir durum varsa, ne bileyim artıyor artıyor artıyor bir anda düşüyor olabilir. O zaman burada bir artan veya azalandan söz edemiyoruz.
+
+266
+00:51:46,016 --> 00:51:51,336
+Şimdi dizinin alt dizisi, subsequence dediğimiz bir şey.
+
+267
+00:51:52,019 --> 00:52:01,460
+Bir s seküensinin sn alt seküensi tn ile gösterilir ve sıralama düzeyi aynı kalmak şartıyla s seküensinin elemanlarından elde edilir.
+
+268
+00:52:01,460 --> 00:52:08,679
+İşte burada bir sn dizisi varmış ve sn dizisinin kuralı n'miş ve n 1, 2, 3 şeklinde ifade edilecekmiş.
+
+269
+00:52:08,880 --> 00:52:12,079
+Yani bunu bir sayma sayıları gibi düşünebilirsiniz.
+
+270
+00:52:13,159 --> 00:52:18,820
+Bu sn'den başka bir de tn dizisi varmış. Bu 2n şeklinde oluşuyormuş.
+
+271
+00:52:19,795 --> 00:52:35,115
+Domainimiz yine aynı. Bu T dizisi, S dizisinin bir alt hükümesidir. Birisi çift sayılar, birisi diğer sayılar.
+
+272
+00:52:35,895 --> 00:52:40,995
+Şimdi toplama notasyonu, bunu nerede kullanacağız? Özellikle algoritma analizinde gelecek hafta başlayacağız.
+
+273
+00:52:41,995 --> 00:52:44,555
+Algoritmalarının analiz edilmesinde kullanacağımız bir şey.
+
+274
+00:52:45,076 --> 00:52:53,635
+bir alt limitten üst limite elde edilen bütün terimleri belli bir kurala göre toplamak için kullandığımız bir sembol.
+
+275
+00:52:53,635 --> 00:53:04,115
+İşte ne demektir? Bu A1, A2, A3, A4, A5, M'ye kadar terimlerin toplamını veren bir sigma sembolü Yunan alfabesinde kullanılıyor.
+
+276
+00:53:04,115 --> 00:53:09,556
+Çarpım sembolü de bunun çarpma versiyonudur. İşte bir alt limitten üst limitten.
+
+277
+00:53:12,019 --> 00:53:35,159
+i eşittir sıfırdan i küçük işte n'e kadar i artı artı dediğimizde arkadaşlar, şurada bir şey yapacağız. Bu for döngüsünü ya toplam veya çarpım şeklinde, genellikle toplam şeklinde, diyeceğiz ki bu sıfırdan n'e kadar n dahil değil. Burada bir işlem var. Bu işlem belki bir olacak veya başka bir değişken olacak. İyi olabilir.
+
+278
+00:53:38,612 --> 00:53:46,472
+Şuradaki algoritmanın fonksiyonunu yazacağız. Yani bir fn'e bağlı, bir zamana bağlı, adım sayısına bağlı bir fonksiyon yapacağız.
+
+279
+00:53:47,152 --> 00:53:48,412
+Bunu analizde kullanacağız.
+
+280
+00:53:49,672 --> 00:53:51,832
+Şimdi şuna baktığımızda eksi bir üzeri k.
+
+281
+00:53:53,092 --> 00:53:54,912
+Eksi bir üzeri k nedir arkadaşlar?
+
+282
+00:53:55,792 --> 00:53:58,700
+Eksi bir üzeri dört artı...
+
+283
+00:53:59,251 --> 00:54:20,092
+eksi bir üzeri beş artı, eksi bir üzeri altı artı, işte eksi bir üzeri yedi artı, eksi bir üzeri sekiz, şunlar götürecek. Bu da artı bir gelecek. Şuna baktığımız zaman bu biraz daha karmaşık. Şimdi bunu şu şekilde ifade edebiliriz demişiz.
+
+284
+00:54:23,092 --> 00:54:28,952
+Şöyle yazalım. Bu toplam sembolü i eşittir 1'den 4'e.
+
+285
+00:54:31,332 --> 00:54:38,652
+j yerine önce 1 yazdığımızda ne olacak arkadaşlar? Buradan 1 çarpı i, i gelecek.
+
+286
+00:54:40,512 --> 00:54:48,012
+Sonra j yerine 2 yazdığımızda 2 iyi gelecek. Sonra j yerine 3 yazdığımızda 3 iyi gelecek.
+
+287
+00:54:49,043 --> 00:54:52,943
+Şu dıştaki, yani en içteki toplam sembolüden bunu bulacağız.
+
+288
+00:54:54,043 --> 00:54:59,063
+Nihayetinde bu i eşittir 1'den 4'e, ne oldu? 6 i oldu.
+
+289
+00:54:59,783 --> 00:55:01,263
+6'yı da başa atabiliriz.
+
+290
+00:55:03,783 --> 00:55:05,543
+i eşittir 1'den 4'e i.
+
+291
+00:55:06,163 --> 00:55:10,403
+1'den 4'e kadar sayıların toplama, işte nedir bu?
+
+292
+00:55:10,403 --> 00:55:13,864
+6 çarpı i çarpı i artı 1.
+
+293
+00:55:14,900 --> 00:55:30,900
+bölü 2 idi. Şöyle yapalım. Bu da ne oluyor? 4 çarpı 5 bölü 2 den 10 oluyor. 6 çarpı 10 dan neyi buluyoruz? 60'ı buluyoruz. Bunları herhalde biliyorsunuz ama hızlıca bir tekrar edelim istedik. Önce içerideki çalışacaktır.
+
+294
+00:55:30,900 --> 00:55:39,900
+Şimdi dizgilerde baktığımızda diziler sadece sayılardan oluşacak değil, string karakterlerden de oluşur.
+
+295
+00:55:40,340 --> 00:55:49,460
+İşte bir alfabemiz var, kümemiz var. Bu alfabenin farklı uzunluktaki alt kümeleri belli bir kurala göre yazılabilir.
+
+296
+00:55:50,519 --> 00:55:56,400
+Stringlerden oluşuyor. Örneğin bir alfa stringi x kümesi üzerinde tanımlanmış. Böyle bir şey.
+
+297
+00:55:57,599 --> 00:56:01,960
+Bunu kısaca şu şekilde de yazabiliyoruz. Düzenli ifadeler konusunda da göreceğiz ileride.
+
+298
+00:56:02,675 --> 00:56:11,896
+Bunun eğer uzunluğundan bahsedeceksek şöyle mutlak değer sembol içerisinde yazdığımızda kaç karakter varsa onu söylüyoruz. Bunlar programlamada karşımıza çıkan şeyler.
+
+299
+00:56:11,896 --> 00:56:26,735
+Eğer bir string boş eleman içermiyorsa boş string kullanılır ve şu lambda ile gösteriliyor. Space olan boşluk değil arkadaşlar. Hiçbir şey yok. Lambda diyoruz.
+
+300
+00:56:26,867 --> 00:56:32,867
+Hani bizim C'deki bu dönem görüyorsunuz backslash sıfıra karşılık diyebiliriz.
+
+301
+00:56:32,867 --> 00:56:43,867
+Eğer bu clean star dediğimiz boşluk dahil bütün stringler kümesinden bahsedeceksek yıldız diyoruz.
+
+302
+00:56:43,867 --> 00:56:48,867
+Plus cleani dersek de
+
+303
+00:56:49,523 --> 00:57:05,644
+Bu kümeden, ClinicStar'dan sadece boşluğun çıkartılmasıyla elde edilen boş olmayan stringlerdir. İki string içerisinde bir concatenation yapılabilir. Ne oluyor? Birini diğerini sonuna getiriyorsun.
+
+304
+00:57:12,115 --> 00:57:22,615
+Kurallı bir string ise, yani kurallıktan kuraldan katlediğimiz run length encoding diye bir yöntem vardır. Belki incelediniz arkadaşlar bir yerlerden duymuşsunuzdur.
+
+305
+00:57:25,175 --> 00:57:26,195
+RLE
+
+306
+00:57:26,456 --> 00:57:35,416
+Bu şunu yapıyor, peş peşe gelen eğer birden fazla karakter varsa, hatta ikiden fazla, özellikle üç ve sonrası iyidir.
+
+307
+00:57:35,635 --> 00:57:40,635
+İki tane varsa çok bir anlam ifade etmiyor. Bir tane varsa hiç anlam ifade etmiyor.
+
+308
+00:57:41,336 --> 00:57:46,696
+Örneğin burada iki tane varmış. B'nin ikisi veya B kare yazılıyor. Sonra A bir yazıldı.
+
+309
+00:57:47,716 --> 00:57:55,096
+C dört tane. Bakın C'yi dört bu şekilde yazdık. Dolayısıyla buradaki dört karakterini attık. İki karakteri yarı yarıya yüzde elli düşürdük.
+
+310
+00:57:56,175 --> 00:57:58,876
+Sonra A'nın karesi B A şeklinde.
+
+311
+00:57:59,476 --> 00:58:26,236
+yapılabiliyor. Eğer bu, bu şekilde yazılıyorsa daha kısa bir formatta saklanabilir. Yine bunun kardinalitisine baktığımızda iki stringin birleşimi kardinalitilerinin toplamına eşittir. Bu da bildiğimiz şeyler. Şimdi sayı sistemleri konusu. Şimdi bu dönem benden sinyal dersi alırken burada duyan arkadaşlar tekrar aynı şeyleri duyacaklar belki.
+
+312
+00:58:27,092 --> 00:58:49,492
+Yani şeyde zannediyorum, Assembilde bunu görüyorsunuz, Logic'de bunu görüyorsunuz, Ayrık'ta görüyorsunuz, bir de sinyal sistemlerde görüyorsunuz. Başka hangi dersiniz kaldı ikinci sınıfta bilmiyorum. Ne var başka bu dönem ders olarak? Yapısalda da kısmen görülüyor olabilir de ben yapısalda anlatmıyorum. Başka ne var? Beşinci, altıncı ders.
+
+313
+00:58:50,260 --> 00:59:15,680
+İngiltere, evet. Onun için arkadaşlar bunları yani anlatmama gerek yok. Bilmiyorum diyen arkadaş varsa söylesin, bir şekilde anlatırız, yani söyleriz, ulaştırırız. Bunlarla zaman kaybetmeye gerek yok. Genel olarak ikili sistemler, sekizli sistemler, onaltılı sistemler ve onlu sistemleri bunların birbiri arasındaki dönüşümleri çok iyi bilmeniz gerekiyor arkadaşlar.
+
+314
+00:59:16,307 --> 00:59:39,987
+16'lık bir sistemde bir sayı verdim. Geçenlerde mesela bu konuyu ben elektronik birinci sınıflarda anlattım da, hocam biz taban aritmetiği lisede görmedik dediler. Onları anlattık mesela. 2'den 8'e, 8'den 16'ya veya 3. tabandan 7. tabana nasıl dönüştürülüyor onları genel olarak anlattım. Ama burada yeteri kadar gördüğünüzü düşünüyorum.
+
+315
+00:59:43,284 --> 01:00:09,923
+İkili tabağın, burada sadece bilmeniz gereken kural olarak bunu da biliyorsunuz da gerçi. Herhangi bir tabağında, bizim için de birinci sınıfta ilginç bir konu derken, lisede artık görülmüyor mu bu arkadaşlar? Ben mezun olalı kaç? 2006'da mezun oldum. Şey yok mu? Yani lisede taban aritmetiği kaldırdı mı?
+
+316
+01:00:12,403 --> 01:00:26,864
+Yani, bizim zamanımızda, hatta üniversite sınavında soru da çıkıyordu. Belki gereksiz olabilir de, bizim için lazım. Burada kural olarak şunu bilmek gerekiyor, onu hatırlatalım, onu hala unutanlar var.
+
+317
+01:00:39,987 --> 01:01:04,467
+bütün A, İ'ler ne olmak zorunda? X'den küçük olmak zorunda. Sayısal değer olarak. Buna dikkat etmek gerekiyor. Bir de şu önemlidir. Hep bu örneği veriyorum. 38 ile 76'yı topladığımızda. 8, 6 daha 14. 14'ün 4'ü elde var. 1 dedik. 14'ün 4'ü derken neye göre yapıyoruz?
+
+318
+01:01:05,844 --> 01:01:26,943
+14'den 10'u çıkartıyoruz, o 4 kalıyor. Yani şu 14-10. İşte o çıkardığımız o 10 niye? Taban olan 10. Nedir? İşte 4 kaldı dedik, 1 de elde var dedik. Örneğin şunu yapacak olursak, kaçıncı tabanda yapalım? Mesela 16'lık hexadesimal tabanda daha çok yapalım.
+
+319
+01:01:33,043 --> 01:01:41,243
+2, E, B diyelim mesela. Bunu toplamak istiyoruz.
+
+320
+01:01:43,023 --> 01:01:46,863
+6 bizim bildiğimiz 6, B dediğimiz şey 11.
+
+321
+01:01:49,083 --> 01:01:53,643
+A'nın, B'nin ne olduğunu da artık herhalde öğrenmişsinizdir. A 10'dan başlıyor.
+
+322
+01:01:54,163 --> 01:01:58,523
+F dediğimiz şey 15'e kadar gidiyor. Şimdi 6 bu.
+
+323
+01:01:59,123 --> 01:02:15,623
+B 11, 11 6 daha 17. 17'nin kaçı diyeceğiz? Şimdi 14'ün 4'ü dedik de 17'nin 1'i diyeceğiz. 17-16 kalan 1, 1 de elde var 1.
+
+324
+01:02:17,903 --> 01:02:24,244
+Bu şuraya yazacağımız ifade 17'nin 1'i gelecek, burada 1 göreceğiz. Elde var 1, buraya gelecek.
+
+325
+01:02:27,572 --> 01:02:52,692
+E 14, ne oldu? 15, 14, daha 29, bir de bu vardı 30. 30'un kaçı? 30'un 14'ü. 30'un 14'ü demek kaç? 14 E'ye karşılık geliyor. Yanlış yapmadıysam. Kalan bir, yani 30-16 dediğimizde 14 kaldı. İşte bir de elde var.
+
+326
+01:02:55,092 --> 01:02:55,811
+14.
+
+327
+01:02:56,392 --> 01:02:57,231
+Bir elde 15.
+
+328
+01:02:57,632 --> 01:02:59,072
+İki de bu ne var?
+
+329
+01:02:59,572 --> 01:03:01,032
+17. 17'nin
+
+330
+01:03:01,032 --> 01:03:03,831
+yine biri elde var.
+
+331
+01:03:03,972 --> 01:03:05,932
+1. 2. 3 daha 5. 6.
+
+332
+01:03:06,172 --> 01:03:07,132
+Yanlış yapmadıysam
+
+333
+01:03:07,132 --> 01:03:09,771
+çok zorlandınız.
+
+334
+01:03:10,291 --> 01:03:11,892
+Hani 16'lık sistemi toplamada.
+
+335
+01:03:12,052 --> 01:03:14,311
+Daha kolay yol nedir? İkilik sisteme çevirirsiniz.
+
+336
+01:03:15,192 --> 01:03:16,072
+16'lık mesela
+
+337
+01:03:16,072 --> 01:03:16,831
+2E
+
+338
+01:03:18,099 --> 01:03:23,099
+F6. Bunları Banu Hoca uzun uzun anlatıyordur kendi grubunda çocukları sıkmak için.
+
+339
+01:03:23,099 --> 01:03:31,099
+Yani o belki bu konuda hani ben bu dönem 3 dersinize de girdiğim için içeriği biliyorum. Biz burada biraz daha hızlı geçelim.
+
+340
+01:03:31,315 --> 01:03:39,715
+Çok zorlandınız, bunu yapamıyorsunuz. O zaman ne yapabilirsiniz? Bunları ikilik sisteme çevirirsiniz. Daha kolay. 1'leri toplamak, 1 ve 0'ları toplamak daha kolay.
+
+341
+01:03:39,715 --> 01:03:46,515
+Nasıl çevireceğiz? Şu ikiyi dörtlük sistemde, on altlık sistemde, pardon ikilik sistemde, bunlar ikilik sistemde.
+
+342
+01:03:46,515 --> 01:03:54,115
+0, 0, 1, 0. E dediğimiz şey kaçtı? On dört'tü. Ne olur? Sekiz, altı daha.
+
+343
+01:03:54,356 --> 01:03:59,296
+Pardon, 8, 4 daha 12, 2 de şurada şu gelecek.
+
+344
+01:03:59,296 --> 01:04:05,416
+F dediğimiz şey 1, 1, 1, 1, 6 dediğimiz şey de 0, 1, 1, 0.
+
+345
+01:04:05,416 --> 01:04:10,656
+Bunun aynısını şekilde şunu da ikilik formatta yazıp toplarsınız.
+
+346
+01:04:10,656 --> 01:04:13,756
+Elde ettiğiniz toplam işte ne olsun 1, 1.
+
+347
+01:04:13,756 --> 01:04:18,556
+Hadi toplayalım onu da yapalım, sağlamasını yapalım en azından aşağıdakinin.
+
+348
+01:04:18,556 --> 01:04:19,556
+3'ü yazıyorum.
+
+349
+01:04:19,556 --> 01:04:21,556
+00, 1, 1.
+
+350
+01:04:22,228 --> 01:04:41,628
+2'yi yazıyorum, 0, 0, 1, 0. E'yi yazıyorum, E dediğim 1, 1, 1, 0'dı. B'yi yazıyorum, B11'di. 1, 0, herhalde şu olacak o da. Doğru herhalde. Şimdi bunu toplayalım.
+
+351
+01:04:42,068 --> 01:04:58,188
+bakalım 0, 1 daha 1, 1 daha 0 elde var 1 buraya geldi.
+
+352
+01:04:58,996 --> 01:05:05,956
+Burası 1 geldi, elde geldi. Buradan 1 geldi, elde geldi. Buradan 1 geldi, elde geldi. Bu elde sonunda buraya geldi.
+
+353
+01:05:06,916 --> 01:05:17,556
+1, 1 daha 0 elde var 1. Buradan buraya 1, 1 daha 0 elde var 1. 1, 1 daha 0 elde var 1. Şuradan 1, 1 daha 0 elde var 1.
+
+354
+01:05:18,776 --> 01:05:23,936
+Bir dakika, şurada hata yaptık. Şunlar 0 olmayacak mıydı arkadaşlar?
+
+355
+01:05:26,579 --> 01:05:52,556
+Şöyle sıfır, sıfır, şuradan bir gelecek, şuradan biri bulacağız. Şurada da sıfır olacak. Evet. Şimdi bunu artık Binary sistemde yazmak istersek, şurası bir olur. Yani on altıla çift çeviriyoruz. Bu iki, sekiz, dört daha, on iki, iki daha, on altı.
+
+356
+01:05:52,628 --> 01:06:03,628
+Pardon 12-14. 14'ün karşılığı neydi? E idi. E1. Şurası 4 sistemde 1. Şu da 6. 6-1-E1. Bakın doğru yapmışız.
+
+357
+01:06:03,628 --> 01:06:11,628
+Yani çok zorlandınız. Şuradaki toplanmalarda çıkarmalarda o zaman ne yaparsınız? İkilik formata çevirebilirsiniz.
+
+358
+01:06:11,628 --> 01:06:18,628
+8'deki sistem biz çok hani yine kullanılıyor da eskisi kadar çok fazla karşımıza gelmiyor. Bunları geçiyorum.
+
+359
+01:06:20,755 --> 01:06:36,115
+Şimdi ikili toplama, eğer bunu bir şey olarak yapacaksak, ikili sistemde toplamayı, sıfır sıfır daha sıfır, sıfır bir daha bir, bir sıfır daha bir, bir bir daha sıfır.
+
+360
+01:06:38,255 --> 01:06:45,255
+Ama bir bir daha iki olacağı için, işte şu ne oluyor? Bir taşma biti, elde biti olarak kullanılıyor. Bunu işlemcilerde,
+
+361
+01:06:49,108 --> 01:06:52,608
+Status Register içerisinde 80-80 altında anlatacaklar.
+
+362
+01:06:52,608 --> 01:06:59,608
+Keriflek bir olur. Kerifleğin bir olma durumuna göre kontrol edilir.
+
+363
+01:06:59,608 --> 01:07:07,608
+Keriflek bir olacak da iki şeyi topladığınızda işaretli sayılar durumu var arkadaşlar.
+
+364
+01:07:07,608 --> 01:07:09,608
+Mesela şuraya bir diyelim.
+
+365
+01:07:09,608 --> 01:07:16,108
+Eğer ben bunları işaretsiz sayılar durumunda ele alırsam, pozitif sayılar olarak düşünürsem bu ne olacak? Sıfır.
+
+366
+01:07:16,532 --> 01:07:27,032
+Buraya bir geldi sıfır, buraya bir geldi sıfır, şu elde ettiğim sayı bu. Şimdi keyfilek bir olarak yanacak, burada elde çıkacak.
+
+367
+01:07:27,032 --> 01:07:37,532
+İşaretsiz sayı üzerinden toplama yaptığım için sonucu ne olarak göreceğim? Artı sekiz olarak görebiliriz, düşünebiliriz.
+
+368
+01:07:37,532 --> 01:07:41,532
+Ama eğer işaretli sayıysa, burada bir ne var arkadaşlar?
+
+369
+01:07:42,003 --> 01:07:51,243
+Overflow Flag diye bir şey var işlemcilerde. Overflow son bitten yani şuradan şuraya elde aktarımı olup olmadığına bakıyor.
+
+370
+01:07:51,723 --> 01:07:58,163
+Ve diyor ki negatif bir sayıdan pozitif bir sayıya geçiş var mı yok mu? Overflow olmuş mu olmamış mı? Onu kontrol ediyor.
+
+371
+01:07:58,163 --> 01:08:08,563
+Detaylarını Assemblede, bilgisayar donanımında, belki şeyde, Lojik'te ve mikro işlemciler dersinde görürsünüz. O biraz daha farklı bir şey.
+
+372
+01:08:09,172 --> 01:08:27,452
+Binary toplama bu şekilde yapılıyor. Yani bunu da tekrar anlatmaya gerek yok. Hexadesimal sayı sistemleri dedik. İki sayıyı toplarken hexadesimal sayımız bu olsun demiş. Buna bakarsınız. Anlamadığınız bir şey varsa haftaya yine konuşuruz arkadaşlar.
+
+373
+01:08:37,747 --> 01:08:57,528
+İşte F'ye kadar da F'de ne oluyor? 15 oluyor. 10, 15 daha. 25. 25'in kaçı? 25'in 9'u mu oluyor? 9'u elde var, 1. 8, 3 daha 11, 1 de elde 12. 12C'ye karşılık gelir, C. Herhangi bir elde yok bakın. Niye?
+
+374
+01:09:14,484 --> 01:09:16,024
+16 tank küçük olduğu için.
+
+375
+01:12:45,747 --> 01:13:08,627
+Arkadaşlar, bir elektrik gitti geldi. Ses geliyor değil mi şu an? Neyse şöyle bir zaten ders saati de bayağı bir saat yapmışız. Beş dakika daha ara verelim. Geldiğimizde devam ederiz.
+
+376
+01:13:09,908 --> 01:13:14,228
+Saat 13 geçer, yani 7 dakika falan aramız olsun. Geldiğimizde de devam edelim.
+
+377
+01:19:48,979 --> 01:19:52,659
+Evet arkadaşlar, en son burada kaldık. Devam edelim.
+
+378
+01:19:54,659 --> 01:19:56,659
+A, 17
+
+379
+01:19:59,219 --> 01:20:02,659
+F, 15
+
+380
+01:20:03,699 --> 01:20:06,420
+25, 9, elde var 1
+
+381
+01:20:06,420 --> 01:20:09,939
+8, 3, 11, 12
+
+382
+01:20:09,939 --> 01:20:15,379
+12, C'ye karşılık geliyor. Herhangi bir elde olmadığı için bir şey yazmıyoruz.
+
+383
+01:20:15,796 --> 01:20:17,176
+Bu şekilde tamamlıyoruz.
+
+384
+01:20:18,316 --> 01:20:22,515
+Şimdi gelelim kümelerden sonra bağıntılara.
+
+385
+01:20:24,476 --> 01:20:29,916
+Şimdi kümelerle arkadaşlar bir A kümesi ve B kümesi diyelim.
+
+386
+01:20:29,916 --> 01:20:36,916
+Bu kümenin elemanları arasında yazılacak bütün sıralı ikililer kartezyen çarpım oluyor biliyorsunuz.
+
+387
+01:20:37,855 --> 01:20:42,275
+A kartezyen B işte A virgül B'lerden oluşur.
+
+388
+01:20:42,771 --> 01:20:53,211
+A eleman şeyken, büyük A iken ve B eleman büyük B iken diye ifade ederiz.
+
+389
+01:20:54,211 --> 01:20:55,891
+Böyle bir gösterimi vardır.
+
+390
+01:20:56,912 --> 01:21:03,711
+Bu sıralı ikililerin bir alt kümesi de ne olacak?
+
+391
+01:21:03,711 --> 01:21:05,031
+Kartezian çarpımı olacak.
+
+392
+01:21:06,231 --> 01:21:07,311
+Örnek olarak,
+
+393
+01:21:08,948 --> 01:21:14,948
+bir alt kümesi ise kartezyen çarpıma bir bağıntı olarak söyleyeceğiz arkadaşlar.
+
+394
+01:21:18,948 --> 01:21:28,948
+R, X ve Y, X kartezyen Y kümesinin alt kümesi olup X'den Y'ye bir ikili bağıntı olarak verilmiş olur demiş.
+
+395
+01:21:28,948 --> 01:21:35,884
+İşte bunun alt kümesi kaç tane? Normalde 6 tane kartezyen çarpımı X kartezyen Y.
+
+396
+01:21:36,916 --> 01:21:48,115
+Altı elemanlı bir sıralı kirliler kümesidir. Bunun bir alt kümesi olan işte 1A, 1B, 2B, 3A demiş. Bu ikisi arasında bir bağıntıdır.
+
+397
+01:21:48,996 --> 01:21:59,876
+Biliyorsunuz x kartezyen g eşit değildir y kartezyen x'e. Bu sıralı kirlilerde öncelik önemli. x'den y'ye bir bağıntı var.
+
+398
+01:21:59,876 --> 01:22:02,515
+Bu bağıntılar üzerinde bazı şeylere bakacağız.
+
+399
+01:22:03,572 --> 01:22:09,412
+Bu bağıntıları arkadaşlar biz matrislerde ve graflarda kullanacağız daha çok.
+
+400
+01:22:10,612 --> 01:22:16,692
+Graf teorisine falan girince, hatta o zaman bir tekrar edeceğim o konuya gelince.
+
+401
+01:22:18,211 --> 01:22:27,211
+Bu x ve y'den oluşan bir r bağıntısında r'nin tanım kümesi, domain dediğimiz tanım kümesi,
+
+402
+01:22:31,636 --> 01:22:39,636
+y'deki bazı y'ler için yapılıyor. Değer kümesi de x'deki bazı elemanlar için yapılıyor.
+
+403
+01:22:39,636 --> 01:22:54,412
+İşte x ve y'miz buymuş, relationship'imiz buymuş, domain dediğimiz tanım kümesi 1 ve 2, değer kümesi range'imiz de a ve b oluyor.
+
+404
+01:22:57,300 --> 01:23:15,700
+Bu bağıntıyı eğer bir graf üzerinde ikili koordinat düzeninde gösterecek olursak, işte bu taraf bir, iki üçü, bu taraf yani x'i burası, y'yi burası gösterecek. Yani domenimizi
+
+405
+01:23:19,796 --> 01:23:23,876
+Şurayı, domeni burası, range'i burası gösterecek arkadaşlar.
+
+406
+01:23:25,916 --> 01:23:29,695
+Kesişen yerde de bir tane bir yazıyoruz veya nokta koyuyoruz.
+
+407
+01:23:30,596 --> 01:23:33,076
+Şimdi bir kartezyen çarpımda,
+
+408
+01:23:34,076 --> 01:23:34,636
+eğer
+
+409
+01:23:36,436 --> 01:23:39,256
+kartezyen çarpım üzerinde,
+
+410
+01:23:39,756 --> 01:23:42,316
+bir, tabi ağ üzerinde söylenmiş ama
+
+411
+01:23:43,436 --> 01:23:44,876
+bütün elemanlar
+
+412
+01:23:45,427 --> 01:23:51,167
+kümedeki bütün elemanlar bu şekilde sıralı ikili şeklinde yazılabiliyorsa burada bir yansıma özelliği vardır diyoruz.
+
+413
+01:23:52,167 --> 01:24:04,747
+Eğer bazı elemanlar için bu yoksa, bu durum yoksa yansımasız, non-reflexif bir durum vardır, özellik vardır diyeceğiz.
+
+414
+01:24:12,787 --> 01:24:20,307
+Bu şart sağlanmıyorsa, böyle bir şey bağıntıda yoksa irreflexif durum vardır diyeceğiz.
+
+415
+01:24:20,307 --> 01:24:26,387
+Üç tane elemanımızdan bir tanesi iki tanesi sağlıyor, birisi sağlamıyorsa non-reflexif.
+
+416
+01:24:26,387 --> 01:24:31,188
+Eğer hepsi sağlamıyorsa irreflexif durum vardır.
+
+417
+01:24:31,188 --> 01:24:36,147
+Şimdi bir bağıntıda
+
+418
+01:24:37,460 --> 01:24:55,460
+XY tarzının XY varken YX varsa veya XY yokken YX yoksa, bakın bu önemli. Yani XY diye bir şey yok ama YX var o zaman simetrik olmaz.
+
+419
+01:24:55,460 --> 01:25:01,460
+Her XY ikizler için böyle bir özellik varsa buna simetrik özelliği diyoruz.
+
+420
+01:25:04,564 --> 01:25:05,884
+Bu kuralı bozan
+
+421
+01:25:12,787 --> 01:25:17,947
+Eğer bir durum varsa, buna da antismetrik özelliği diyoruz.
+
+422
+01:25:18,747 --> 01:25:22,587
+xy ve rx için, yx için buna bakacağız.
+
+423
+01:25:23,667 --> 01:25:25,867
+Genelde bunlar da bilinen şeyler.
+
+424
+01:25:26,507 --> 01:25:36,107
+Eğer bir bağıntıda yine, xy varken, yz varsa ve bununla birlikte, xz de varsa,
+
+425
+01:25:36,659 --> 01:25:55,959
+Bu da geçişkenli, transit bir özelliktir. Biz bu geçişkenliği veri tabanında çok kullanıyoruz arkadaşlar. Örneğin öğrenci ID'si var. Öğrenci adı soyadı bir şeyler var. Bunları bir öğrenci tablosunda saklıyoruz. Öğrenciler mesela derse kaydolur.
+
+426
+01:25:59,444 --> 01:26:15,344
+Hangi derse kayıt olur? İşte birden fazla derse kayıt olabilir. İşte öğrencilerin derse kayıt olması için arada bir geçişkenlik tablosu oluşturuluyor arkadaşlar. Çünkü dersin de bir ders id'si var. Ders adı falan var.
+
+427
+01:26:17,344 --> 01:26:24,963
+Şimdi öğrenci kendi içerisinde bir tablo. Dersler kendi içinde bir tablo. Öğrencilerden derse kayıt olma ile alakalı
+
+428
+01:26:25,684 --> 01:26:39,904
+Bir ekstra tablo tutuyor. İşte bu geçişkenliği söylüyor. Bakın orada tekrar veri tabanında görürsünüz. Gelecek sene ilk dönem ben diyorum bir sene sonra. Orada öğrenci ID ile ders ID arasında.
+
+429
+01:26:41,904 --> 01:26:50,904
+Bu öğrenci bu ders almış, bu bu ders almış. Sonra biz ne yapabiliyoruz? İşte sizin ders listenizi çıkartabiliyoruz. Bu tablo sayesinde.
+
+430
+01:26:52,115 --> 01:26:57,076
+tablo arasında şöyle üçlü bir geçişkenlik durumu vardır. Bu bunu ifade eder.
+
+431
+01:26:59,796 --> 01:27:08,396
+Şimdi A eşittir B kare şeklinde AB ikillerinden oluşan bir A kümesinde bir bağıntı olacakmış.
+
+432
+01:27:09,296 --> 01:27:13,816
+Böyle bir şey varmış. Aşağıdaki bağıntıların hangi özellikleri mevcuttur?
+
+433
+01:27:13,816 --> 01:27:19,136
+Şimdi R11. Refleksif midir arkadaşlar?
+
+434
+01:27:25,300 --> 01:27:27,300
+Değildir. Neden değildir?
+
+435
+01:27:33,844 --> 01:27:35,844
+1-1 var da 2-2
+
+436
+01:27:37,844 --> 01:27:41,844
+Ondan sonra, yani buradan 2-2 tanımlanabilir mi?
+
+437
+01:27:46,003 --> 01:27:48,003
+2-2 tanımlanabilir mesela.
+
+438
+01:27:49,003 --> 01:27:51,003
+B'nin yerine 2 koyarsak A
+
+439
+01:27:52,003 --> 01:27:55,003
+4 olacak. Gerçek B² formda olduğu için
+
+440
+01:27:56,003 --> 01:27:59,003
+2'ye 4 olacak. Başka türlü olmaz.
+
+441
+01:27:59,003 --> 01:28:01,003
+Non-reflective midir?
+
+442
+01:28:03,003 --> 01:28:06,003
+Evet. Çünkü bir tanesi var.
+
+443
+01:28:07,003 --> 01:28:09,003
+O zaman irreflective olmayacak.
+
+444
+01:28:10,228 --> 01:28:20,788
+Çünkü en az bir tane eleman burada sağladı. Yani 4-4 diye bir şey olsaydı veya 2-2-3-3-4-4 olsaydı o zaman sağlardı.
+
+445
+01:28:24,627 --> 01:28:26,155
+Bir dakika arkadaşlar.
+
+446
+01:29:44,595 --> 01:29:48,835
+devam edelim. Simetri özelliği var mıdır peki?
+
+447
+01:29:57,524 --> 01:29:59,324
+simetri özelliği arkadaşlar.
+
+448
+01:30:04,212 --> 01:30:06,532
+Duyuyor muyuz? Sıkıntı yok değil mi seste falan?
+
+449
+01:30:08,891 --> 01:30:10,112
+Duyuyorum sıkıntı yok.
+
+450
+01:30:10,712 --> 01:30:10,992
+Tamam.
+
+451
+01:30:14,412 --> 01:30:15,012
+Hayır.
+
+452
+01:30:15,452 --> 01:30:25,292
+Niye simetri özelliği yok? Çünkü işte bir bir varken bir bir var da dört iki varken iki dört yok. Onun için simetri özelliği yok diyeceğiz.
+
+453
+01:30:26,771 --> 01:30:34,131
+Antisimetri özelliği var mı? Antisimetri var çünkü o simetrik özelliğini sağlamıyoruz. Geçişkenlik var mı?
+
+454
+01:30:40,692 --> 01:30:43,332
+Bu biraz şey, kafa karıştırıyor bu geçişkenlik.
+
+455
+01:30:51,028 --> 01:31:14,347
+Şimdi geçişkenlik var arkadaşlar. Niye? Şimdi 1-1 varken sıralı ikillerden 1 ile başlayan herhangi bir sıralı var mı? Yok. 4-2 varken 2 ile başlayan bir şey var mı? Yok. Onun için geçişkenlik vardır. 4-2 varken 2 ile başlayan mesela 2-3 olsaydı
+
+456
+01:31:15,123 --> 01:31:26,443
+O zaman diyecektik ki 4, 3'ünde olması lazım diyecektik. Şu haliyle geçişkendir. Tamam mı? Yani 1, 1 varken 1 ile başlayan bir şeye bakacağız.
+
+457
+01:31:28,404 --> 01:31:42,503
+Eğer 4, 2 varken 2 ile başlayan bir şey varsa vardır. Transitif. Boş küme geçişken midir? Evet, boş küme geçişkendir. Bir boş böyle bir şey geçişkendir.
+
+458
+01:31:43,796 --> 01:31:54,036
+Şart şurada önemli. Bunu hep hani biz böyle biraz önce söylediğimi bu şekilde veriyoruz ama bu arada arkadaşlar bakın V var.
+
+459
+01:31:55,316 --> 01:32:02,476
+Bu varken, bu elemanı iken ve şu elemanı iken o zaman bunun da eleman olarak olmasını bekliyoruz.
+
+460
+01:32:08,051 --> 01:32:09,051
+devam edelim.
+
+461
+01:32:14,836 --> 01:32:15,336
+Şüda.
+
+462
+01:32:19,636 --> 01:32:30,016
+Bağıntının tersi dediğimiz şeyde sıralı ikillerin yapması, yer değiştirmesi. Bağıntının tersi bağıntıyla aynı değildir.
+
+463
+01:32:31,275 --> 01:32:40,775
+Bağıntılarda birleşke bir bağıntının bir başka bağıntıyla ilişkiye girip yeni bir bağıntı oluşturmasına birleşke diyoruz.
+
+464
+01:32:42,096 --> 01:32:45,236
+Örneğin buradaki R² ve R³'ü bulun demiş.
+
+465
+01:32:46,676 --> 01:32:55,456
+R ile R'ye, R ile R'nin bileşkesine baktığımızda işte 1, 1, 2, 1, 3, 1, 4, 2 oluyor.
+
+466
+01:33:03,539 --> 01:33:26,539
+Tamam. Brekküpe baktığımızda bu geliyor. Bunlarda herhalde sorun yoktur. Şu bir, bu kümeden oluşturulan farklı bağıntılar hangi özellikler var ona bakalım. Şimdi bu,
+
+467
+01:33:26,899 --> 01:33:36,579
+Refleksif midir? 1, 1, 2, 2, 3, 3, 4, 4 olmasını bekliyoruz. 2, 2 var ama 1, 1 yok. Onun için non-refleksiftir.
+
+468
+01:33:36,579 --> 01:33:42,899
+Refleksif diyemeyiz. Bütün elemanların olmaması lazım. 2, 2'den dolayı gidiyor.
+
+469
+01:33:42,899 --> 01:33:54,100
+Simetrik midir? 2, 3 varken 3, 2 var. Bu sağlıyor. 2, 2 var zaten. 2, 4 varken 4, 2 yok. Onun için non-simetrik oluyor.
+
+470
+01:33:55,923 --> 01:34:12,324
+Ne as? Ne as neydi ya? Transitif özelliği de var. O da şöyle, 2-3 varken 3-3 var. Ondan sonra oradan da 3-2 var.
+
+471
+01:34:12,324 --> 01:34:21,923
+3-3 varken 3-4 var. Oradan da yine 3-4'ü bulabiliyoruz.
+
+472
+01:34:22,739 --> 01:34:42,979
+Transistress haklı, bu non-asimetrik, non-simetrik olduğu için non-asimetrik özelliğini de sağlıyor. Çünkü o da şu 2-3 varken 3-3-3-2 var ya, tamamen asimetrik de diyemiyoruz. Ne simetrik, ne asimetrik.
+
+473
+01:34:47,572 --> 01:35:14,872
+Bu refleksif midir? Evet. 1-1 var, 2-2 var, 3-3 var, 4-4 var. Simetrik midir? 1-2 varken 2-1 var. O zaman asimetrik oluyor. Aynı zamanda transitif midir? Transitif özelliği 1-2 varken 2-1 varmış. Yani 1-1 için bunlara zaten doğrudan 1 ile başlayan 1-2 var. 1-2'den 2-1'e bakıyoruz. 1-2 varken 2 ile başlayan 2-1 var.
+
+474
+01:35:15,347 --> 01:35:16,768
+Oradan da 1-1 bulduk.
+
+475
+01:35:17,667 --> 01:35:20,288
+1-2 varken 2-2 olan şey var.
+
+476
+01:35:20,387 --> 01:35:22,347
+Oda da 1-2 tekrar kendine geliyor.
+
+477
+01:35:23,087 --> 01:35:24,108
+Transitif de diyoruz.
+
+478
+01:35:24,927 --> 01:35:27,387
+Örneklere daha çok bakarsınız arkadaşlar.
+
+479
+01:35:28,988 --> 01:35:30,967
+Şimdi denklik bağıntısı.
+
+480
+01:35:32,448 --> 01:35:32,988
+Ne dedik?
+
+481
+01:35:32,988 --> 01:35:36,148
+Küme, kümelerden bir kartezyen çarpım.
+
+482
+01:35:36,228 --> 01:35:37,268
+A kartezyen B.
+
+483
+01:35:38,420 --> 01:35:52,920
+Bunun içerisinde bir relationship, bunun içerisinde bir equivalence relation, bunun bir alt gümesi aslında. Eğer refleksif, simetrik ve transitif özellikleri varsa buna denklik bağıntısı diyoruz.
+
+484
+01:35:54,020 --> 01:36:03,779
+Bu bize aslında neye götürüyor? Fonksiyonların tanımına götürecek. Yani her bağıntı biliyorsunuz fonksiyon olmuyor.
+
+485
+01:36:04,435 --> 01:36:08,435
+Bu fonksiyonun tanımına giderken karşılaştığımız kısıtlar
+
+486
+01:36:08,435 --> 01:36:14,435
+burada işte bu denklik bağıntısıyla veya diğer tanımlarla sağlanmaya çalışıyorlar.
+
+487
+01:36:14,435 --> 01:36:24,435
+Ve bu şekilde gösteriliyor arkadaşlar, çift yonlu ok ile x kümesi üzerindeki bir bağıntı.
+
+488
+01:36:24,435 --> 01:36:27,275
+Bu refleksif midir?
+
+489
+01:36:28,787 --> 01:36:42,147
+vardır. Bakın, 1, 1, 2, 2, 3, 3. Simetrik midir? İşte 1, 2 varken 2, 1 var. 1, 3 varken 3, 1 var. 2, 3 varken 3, 2 var. Şu aradaki ilgili olacak.
+
+490
+01:36:45,747 --> 01:36:56,047
+Transitif midir? Transitif de 1, 2 varken 2, 1'den 1, 1'e gidebiliyoruz. Ondan sonra 1, 3 varken 3, 1'den yine 1, 1'e. 2, 3 varken 3, 2'den 2, 2'ye.
+
+491
+01:36:56,659 --> 01:37:05,659
+giderebiliyor vardır. Antisimetri yoktur. Burada simetri özelliğini sağladığı için ve bu bir denklik bağıntısı oluyor.
+
+492
+01:37:13,268 --> 01:37:22,148
+R'in de tanılı R bağıntısı için x bağıntı y, x eksi y eşittir 5 olarak verirsin.
+
+493
+01:37:23,148 --> 01:37:26,007
+R'nin denklik bağıntısı olup olmadığını göstermiş.
+
+494
+01:37:27,528 --> 01:37:30,807
+Şimdi mesela x eksi y 5 için.
+
+495
+01:37:34,804 --> 01:37:37,743
+şöyle diyelim, slide'dan x 1,6
+
+496
+01:37:37,743 --> 01:37:43,363
+bunun yani böyle bir sayı bulabiliriz.
+
+497
+01:37:43,363 --> 01:37:44,923
+1,6
+
+498
+01:37:44,923 --> 01:37:47,363
+pardon 6,6
+
+499
+01:37:54,068 --> 01:37:58,568
+x ve y'ler 1,6 olacak. Evet, 6,1 şeklinde yapabiliriz.
+
+500
+01:37:59,448 --> 01:38:08,148
+Bu bağıntı transitif refleksif midir? Değildir.
+
+501
+01:38:08,407 --> 01:38:20,688
+Çünkü 1,1 olacak, 6,6 olacak. Yani x ve y'ler için söylediğimizde, x'e 1, y'ye 6 veya x'e 6, y'ye 1 verdiğimizde küme elemanlarımıza
+
+502
+01:38:20,735 --> 01:38:36,855
+1-1'in 6-6'nın olmasını bekleriz bu bağıntıda. Onun için refleksif değildir. 1-1 de yok, 6-6 da yok sonuçta. Simetrik midir? Simetrik değildir. O zaman antisimetri özelliğini sağladığını görüyoruz.
+
+503
+01:38:36,855 --> 01:38:42,755
+Yani işte 6-1 varken 1-6 olsaydı simetrik diyebilirdik ama o yok.
+
+504
+01:38:43,380 --> 01:39:04,260
+Geçişkenlik var mı? Geçişkenlik de yok. Yani 1-6-1 varken 1 ile başlayıp başka türlü biten bir şey. Geçişkenlik aslında var. Hani 1-6'lı bir şey olmadığı için bunu geçişkenlikten söz etmeye gerek yok. Şunu sağlamıyor. Yani refleksiy sağlıyor. Refleksif değil.
+
+505
+01:39:08,115 --> 01:39:32,456
+simetrik değil, transitif. Onun için denklik bağıntısı değildir diyeceğiz. Şuna baktığımızda, bu bir denklik bağıntısı mıdır? Önce refleksif özelliğine, 1, 1 var, 2, 2 var, 3, 3 var, 4, 4'ü gördük, 6, 6'yı gördük, 5, 5 var mı? 5, 5 de var. Evet.
+
+506
+01:39:37,363 --> 01:39:48,304
+Simetri özelliğine baktığımızda, 1-3 varken 3-1 var, 1-5 varken 5-1 var, 2-6 varken 6-2 var, 5-3 varken 3-5 var, diğerleri zaten sağlıyor.
+
+507
+01:39:48,304 --> 01:40:01,304
+Bunu sağladı, bunu sağladı. Transitife baktığımızda, şimdi 1-3, 3-1, 1-1, 1-5, 5-1 veya 5-3. Şimdi bakın arkadaşlar, 1-5 için hem 5-3'e bakacağım.
+
+508
+01:40:04,532 --> 01:40:29,672
+1-5 için hem 5-1'e bakacağım, hem 5-3'e bakacağım, hem de 5-5'e bakacağım. Öyle değil mi? Başka 5 ile başlayan varsa onlara. Şimdi 1-5 ile 5-1'den dolayı 1-1 var. Tamam, bu sağladı. Ondan sonra 1-5 iken 5-3, 1-3 var. Bu da sağladı. 1-5 iken 5-5, 1-5 bu da sağladı. Tamam dedik.
+
+509
+01:40:30,484 --> 01:40:37,644
+Diğerlerine de baktığımızda böyle insan biraz yoran bir şey transitif özelliğini de sağlıyor. Dolayısıyla bu bir denklik bağıntısıdır.
+
+510
+01:40:38,923 --> 01:40:39,963
+Diyoruz.
+
+511
+01:40:42,003 --> 01:40:43,756
+Bir dakika arkadaşlar.
+
+512
+01:41:12,595 --> 01:41:30,035
+Şimdi bunların, bir de sıralama bağıntısı diye bir şey var. Eğer bir sıralama bağıntısı, bir bağıntı refleksif, antisimetrik ve transitif özellikleri varsa buna sıralama bağıntısı diyoruz.
+
+513
+01:41:30,035 --> 01:41:38,675
+Şimdi arkadaşlar, biz bu bağıntılardan fonksiyonlara ve fonksiyonlardan işlemleri üretiyoruz.
+
+514
+01:41:40,467 --> 01:42:00,707
+Bu bağıntı, fonksiyon işlemlerden sonra yani relation, function ve operation bunlardan sonra bu şeylerin bunların işte bu refleksif, antisimetrik ve transitif özellikleri bu derslerin ilk açıldığı yıllar soyut matematik veya diskret matematik ilk yılları.
+
+515
+01:42:03,507 --> 01:42:31,067
+şeyler de anlatılıyordu, cebirsel yapılar diye. Buna bakabilirsiniz. Biraz da artık bu matematikçileri ilgilendiren bir şey olup için. Cebirsel yapılar. Bu cebirsel yapılar da işlemden sonra halka diye, ring, grup diye, bu grubun işte abelyan, abel grup diye farklı yapıları, farklı alt kümeleri var. Özelleştikçe gidiyor. Mesela çarpma.
+
+516
+01:42:31,796 --> 01:42:54,836
+bir abel grup olmuyor. Neden? İşte ters eleman fonksiyonlarda ters eleman özelliği var ya, her elemanın tersi var mıdır diye. Bunu ben kriptoloji anlatırken size diyeceğim ki bakın mod 26'da her elemanın tersi yok çarpmaya göre tersi. Dolayısıyla çarpma abel grup olmuyor. Toplama abel grup oluyor.
+
+517
+01:42:56,212 --> 01:43:22,172
+Bunlar, yani, Abel grubu bilmişle bilmemişim, böyle bir bilgisayar mühendisinin çok anlamı yok. Ama önceden anlatılıyor. Bunları bazı kaynaklarda, Türkçe kitaplarda falan da görebilirsiniz. Bir yere kadar işimize lazım, bir yerden sonra çok fazla kullanmayacağız. Ama mesela kriptoloji çalışacak olan arkadaşlar, cebirsel yapılardan haberdar olması gerekiyor. Çünkü sonlu uzaylar üzerinde çalışılıyor.
+
+518
+01:43:23,188 --> 01:43:47,007
+kriptolojide. Şimdi bu sıralama bağıntılarının grafiksel gösterimi, hers diagramları, bu bir şey birazdan gelecek. Buna da bakarız. Demek ki bu üç özelliği sağlaması gerekiyormuş. Mesela x, y'yi bölüyor bu küme içerisinde. Böyle bir ilişki var. Bu ilişkiye göre baktığımızda
+
+519
+01:43:47,667 --> 01:43:52,927
+Böyle bir küme ortaya çıkıyor. Bu bir sıralama bağıntısı mıdır diye baktığımızda. Şimdi niye bakacağız?
+
+520
+01:43:55,047 --> 01:44:04,927
+Refleksif, antisimetrik ve transitif. Eksik olan ne diğerine göre? Denklik bağıntısına göre simetrik yerine antisimetrik olması.
+
+521
+01:44:10,387 --> 01:44:15,208
+Refleksif özelliği var mı? Bunu da söyleyemiyorum. 1, 1, 2, 2, 3, 3, 4, 4 var.
+
+522
+01:44:15,828 --> 01:44:41,748
+1-2 varken 2-1 var mı? Yok. Onun için antisimetrik oldu bakın. 1-3 varken 3-1 yok. Onun için antisimetrik. 1-4 varken 4-1 yok. Bunu sağladık, bunu sağladık. Transit mi? 1-2 varken 2 ile başlayan bu var. 1-2'den ne oldu? Tekrar 1-2'ye geldik. 1-3 varken 1-3'e geliyoruz şununla. Başka da zaten transit özellikleri sağlıyor.
+
+523
+01:44:42,739 --> 01:44:46,319
+Bu üçünü de sağladığı için bir sıralama bağıntısı diyoruz.
+
+524
+01:44:47,019 --> 01:44:57,739
+Sıralama bağıntısı özelliklerini grafiksel olarak gösteren, Alman matematikçinin tarafından geliştiren şu diagramlara da bir baktığımızda, örneğin...
+
+525
+01:44:58,323 --> 01:45:06,043
+X kümesi üzerinde A ve B'lerden tanımlı bir bağıntı şu şekildeymiş. A, B'den küçük veya eşit olacak.
+
+526
+01:45:06,823 --> 01:45:14,443
+Şimdi bu A, B'den küçük veya eşit, eşitlikten dolayı neyi sağlar? Bir kere refleksif özelliği sağlıyor. 1, 1, 2, 3, 4, 4.
+
+527
+01:45:16,643 --> 01:45:22,443
+Antisimetri özelliğini de sağlayacaktır. 1, 2 varken hiçbir zaman 2, 1 olmayacaktır.
+
+528
+01:45:22,676 --> 01:45:44,596
+Tamam. Transitif özelliğine baktığımızda onlar da sağlanacaktır. 1, 2 varken işte 2, 3 var oradan 1, 3'ü buluyoruz. Ondan sonra 1, 3 varken 3, 4 var 1, 4'ü buluyoruz. Bu da sağlanıyor. Bunu şu şekilde gösteriyorlar. Şimdi 1, 1 kendi içine dönüyorsa bu refleksif olan özellik.
+
+529
+01:45:45,332 --> 01:46:12,152
+Sonra baktığımız zaman elemanları şöyle sıralıyoruz. Küçükten büyüğe, 1, 2, 3, 4. Bu bağıntıyı gösteren okların yönü sürekli yukarıya doğru. Yani bir yöne doğru. Okların bir kısmı aşağıya, bir kısmı yukarıya gitmiyor. Neden? Şu özelliği sağlıyor arkadaşlar. Ya böyle kendi için olacak ya da bu ne olacak?
+
+530
+01:46:12,595 --> 01:46:17,715
+Bu özelliği sağladığı için buna bir sıralama bağıntısı diyoruz.
+
+531
+01:46:17,715 --> 01:46:27,395
+Mesela yansıma özelliğini çıkarttığımızda bundan refleksif özelliği çıkarttığımızda kalan şey nedir arkadaşlar?
+
+532
+01:46:27,395 --> 01:46:29,235
+Şu kalıyor.
+
+533
+01:46:29,235 --> 01:46:32,595
+Geçişkenliği çıkarttığımızda geçişkenlik ne demek?
+
+534
+01:46:32,595 --> 01:46:36,035
+İşte 1, 3 varken
+
+535
+01:46:36,243 --> 01:46:40,563
+Şu arada mesela bundan buna bir geçişkenlik var. Bunu çıkarttığımızda bunu elde ediyoruz.
+
+536
+01:46:41,263 --> 01:46:47,383
+Buradan baştan sona elemanları birden ikiye, ikiden üçe ve üçten dörde bir sıralama elde ediliyor.
+
+537
+01:46:47,543 --> 01:46:49,163
+Bu Hess diagramları bu şekilde.
+
+538
+01:46:52,143 --> 01:46:54,423
+Bağıntıdaki kapalılık özelliği.
+
+539
+01:46:55,763 --> 01:47:01,963
+Bağıntı üzerinde refleksif, simetrik ve transitif özellikleri mevcut değilse
+
+540
+01:47:02,579 --> 01:47:16,399
+Bağıntının bu özelliklere sahip olabilmesini sağlama işlemine kapallılık closure deniyor. Buna geçişken kapallılık veya varşal algoritması yapılmış, önerilmiş.
+
+541
+01:47:17,939 --> 01:47:23,579
+Bu verilen bağıntının transitif özelliğini sağlamadığı görülmektedir.
+
+542
+01:47:25,011 --> 01:47:38,231
+Diagramını çizdiğimizde şöyle bir şey, mesela BA varken A ile başlayan AD var ama BD yok mesela. BA varken AD var, doğrudan B'den D'ye bir geçiş yok.
+
+543
+01:47:38,231 --> 01:47:51,891
+Tamam mı? Ondan sonra bunu sağlamak için veya bunu şu şekilde bir matriz formatında da yazabiliriz arkadaşlar.
+
+544
+01:47:52,692 --> 01:47:57,971
+Şuraya A, B, C, D yazacağız. Buraya A, B, C, D yazacağız.
+
+545
+01:48:00,532 --> 01:48:15,471
+B'den A'ya var. A'dan B'ye yok mesela şu an için. Ondan sonra A'dan D'ye bir tane var. Bu şekilde yazıyor. Bunu daha sonra graflarda detaylı inceleyeceğiz arkadaşlar.
+
+546
+01:48:16,371 --> 01:48:18,971
+Bunu çözümü için mesela Marshall algoritması demiş.
+
+547
+01:48:20,435 --> 01:48:24,595
+Bu algoritmaya göre şunu uygularsak,
+
+548
+01:48:27,255 --> 01:48:30,795
+örneğin k eşittir bir için yaptığımız şey,
+
+549
+01:48:31,835 --> 01:48:39,115
+matristeki ij değerini ik ve kj ile şuradaki döngüyü çalıştırarak veya yapıyoruz.
+
+550
+01:48:40,395 --> 01:48:44,915
+Aslında bu şuna karşılık geliyor, matrisin
+
+551
+01:48:46,228 --> 01:48:56,208
+karesini almak gibi bir şey de tam daha sonra detayına bakacağız, graflarda bakacağız buna. Böyle bir algoritma var. Bu prosedürü çalıştırırsanız k eşittir 1 için
+
+552
+01:48:56,208 --> 01:49:09,347
+mesela şurada bir örnek yapalım. i eşittir, k eşittir, i eşittir, j eşittir, i eşittir, k eşittir 1 olsun. Diyor ki
+
+553
+01:49:10,355 --> 01:49:35,756
+V'nin İ'sinin C'si, yani şurada, tabi burada sıfır olarak C gibi düşünmeyin. Bu İ, C sıfır olan elemanla İ, K yine sıfır ve K, C yine sıfır. Burası sıfır olarak kalacaktır. Nerede bir 1 gördüysek,
+
+554
+01:49:39,412 --> 01:49:44,212
+Yani bu algoritmayı koşturduğumuzda birinci şeylerde herhangi bir şey yok.
+
+555
+01:49:44,212 --> 01:49:49,012
+Şuradaki bunlar 1-2 olunca ne olacak?
+
+556
+01:49:49,012 --> 01:50:02,212
+Mesela bir önceki şeyle bir üst satırdaki elemandaki bir alt satırdakini etkileyeceği için ne olacak?
+
+557
+01:50:02,212 --> 01:50:05,212
+Şuradaki mesela örneğin şurada bir tane 1 olacak.
+
+558
+01:50:06,484 --> 01:50:32,764
+Bir önceki satıra bakıyoruz. Ondan sonra başka nerede? Şurada bir tane bir olacaktır. Bu sayede birilerinin sayısını artırıyoruz. Birilerinin sayısını artırmak ne demek? Şuradan şuraya bir hat çekmek demektir. B ve D arasında işte veya ne bileyim C ile C ile B arasında istersek gidiş yönüyle. Burada B, C arasında var da C, B arasında yok.
+
+559
+01:50:33,395 --> 01:50:38,255
+Bağıntı kurmak demektir bu şey. Mesela bir sonraki adımına bakalım. Şunu sireyim.
+
+560
+01:50:45,619 --> 01:50:46,899
+Saatimiz kaç olmuş?
+
+561
+01:50:52,819 --> 01:51:17,819
+Bir beş dakikada şey yapalım. Herhalde bu da azaldı. Bundan sonra ara veririz. Bakın bir sonraki adımda ne oldu? Şurada bir tane eleman bu satırda çıkardık. Bir şekilde üst satırda eğer bir 1 varsa bakın şurada hiçbir zaman A'dan A'ya şöyle bir şey olmamış. Çünkü bunun üst satırında bir ilişki yok.
+
+562
+01:51:18,292 --> 01:51:25,292
+Ondan sonra bu alt satırdan tabii yine elde edilebilir. Bu şekilde bir bağıntı. Böyle arttırıp
+
+563
+01:51:27,392 --> 01:51:35,792
+hem geliş yönlü hem gidiş yönlü bağıntılar ne yapılabilir? Bağıntıyı arttırabiliyoruz. Aslında yol eklemek iki şey arasında.
+
+564
+01:51:38,012 --> 01:51:44,792
+Mesela yansıma ve simetri özelliklerini taşıyan küme içi bağıntılar. Farklı ülkelerden kişiler ve beş ayrı dil.
+
+565
+01:51:45,011 --> 01:51:49,072
+Kim hangi dili konuşuyor? Bu bilgi bizde olsun bu şekilde.
+
+566
+01:51:50,992 --> 01:51:55,612
+Hangi diller kimler tarafından konuşuyor? Bu da bunun tam tersi olacak.
+
+567
+01:51:56,751 --> 01:51:58,671
+A'lar ve B'ler yer değiştirmiş.
+
+568
+01:52:00,331 --> 01:52:09,351
+Eğer ben burada şununla şunu çarparsam kim kiminle konuşabilir? Bunu bulabilirim.
+
+569
+01:52:11,667 --> 01:52:34,907
+Bu matris formatında yazdığımda. Örneğin, A3 kişisi B3 ve B5 dillerini biliyor. B3'ü ve B5'i bilen kim var? Mesela A3 ile konuşabilir, A4 ile konuşabilir, A6 ile konuşabilir veya A3 ile konuşabilir.
+
+570
+01:52:36,180 --> 01:52:52,260
+A3'le, A4'le, A6'yla işte A3'ün bununla konuştuğunu ne yapabileceğiz yapacağız. Bu benim biraz önce size söylediğim bu ders seçme konusunda da buna benzer bir mantık vardır. Bakın burada bağıntıları bir matriz formatında yazıp kullanabiliyoruz.
+
+571
+01:52:52,260 --> 01:52:56,260
+Şimdi yapısal programlama dersinizde de eğer...
+
+572
+01:52:57,300 --> 01:53:19,380
+alıştırma yapmak, soru çözmek isterseniz, mesela bir bağıntı oluşturup, işte bu yansıma özelliği var mı, simetri özelliği var mı, antisimetri var mı, transitif özelliği var mı, bunlar, işte yani dizilerde saklayın, bu özellikleri kontrol eden bir kod yazmayı deneyin çalışmak isterseniz. Hem C çalışırsınız, hem de bu ders çalışmış olursunuz. Koduna bakarsınız.
+
+573
+01:53:20,692 --> 01:53:37,592
+Matris bağıntıları kısmına geldik. 5 dakika saatimiz kaç? 47 geçiyor. Hadi 50 diyelim. 11'e kadar bir ara verelim arkadaşlar. Gelince devam ederiz. Bu arayı biraz daha uzun vereyim öncekine göre. 11'de görüşmek üzere.
+
+574
+02:07:18,515 --> 02:07:20,195
+Evet arkadaşlar, devam edelim.
+
+575
+02:07:22,596 --> 02:07:31,136
+Şimdi bu bağıntıları, özellikle ikili bağıntıları, ne yapabiliyoruz? Matriz formatında gösterebiliyoruz.
+
+576
+02:07:31,235 --> 02:07:34,556
+Bu bizim bilgisayarcı bakış açımıza da çok güzel yarıyor.
+
+577
+02:07:36,216 --> 02:07:40,015
+Graflarda veya başka veri yapılarında bunu kullanabiliyoruz.
+
+578
+02:07:40,015 --> 02:07:42,015
+Ve burada...
+
+579
+02:07:43,283 --> 02:07:53,923
+Herhangi bir matris üzerinde kümenin elemanları, işte bir taraf bir kümeyi, diğer taraf diğer kümeyi gösterecek şekilde satırlar ve üstünler.
+
+580
+02:07:54,703 --> 02:08:05,323
+İşte x kümesi satırları, y kümesi üstünleri gösterecekse bu kümenin her bir elemanı, yani bağıntının her bir elemanı, sıralı ikilisi.
+
+581
+02:08:06,100 --> 02:08:22,659
+Matristeki yerlere yazılacak olan şey ilişkinin varlığı ve yokluğu. İlişki varsa bir, yoksa sıfır yazıyoruz. Örnek üzerinde daha rahat anlaşılır. Buna daha sonra tekrar tekrar bakacağız. Bu bizim için önemli.
+
+582
+02:08:24,100 --> 02:08:29,340
+1, 2, 3, A, B, C'de demişiz. Aslında bu 3'e 4'lük bir matristir.
+
+583
+02:08:30,579 --> 02:08:42,000
+Bunu kodladığınızda, 1'den A'ya, burada bir 1 varmış, 1'den D'ye, burada bir 1 varmış, 2'den A'ya, 1 varmış, 2B, 2C, 1 varmış diyoruz.
+
+584
+02:08:42,939 --> 02:08:47,579
+Bu şekilde bir bağıntıyı sayısal sormakta saklıyoruz.
+
+585
+02:08:48,319 --> 02:08:54,500
+Bu 1'lere, 2'lere, 3'lere biraz önce diller ve konuşan kişiler deyin veya şehirler ve arasındaki yollar deyin.
+
+586
+02:08:55,412 --> 02:09:10,172
+Ve bu arada hangi şehirden hangi şehire gidilecek, tek seferde gidilecek, tek komşuluklu iller, çift komşuluklu iller gibi ilişkileri çıkartabiliyoruz. Bunları daha sonra tekrar gireceğiz arkadaşlar.
+
+587
+02:09:11,392 --> 02:09:11,792
+Ne oldu?
+
+588
+02:09:15,923 --> 02:09:22,284
+Bir bağıntıda x kümesinden x kümesine bir ilişki oluşturuluyorsa bu kare maddesi olacaktır.
+
+589
+02:09:22,944 --> 02:09:29,324
+Eğer bu bağıntınız bir de simetrik özelliği sağlıyorsa pardon refleksif özelliği sağlıyorsa ne olacaktır?
+
+590
+02:09:29,764 --> 02:09:34,064
+Diagonaliniz bir olacaktır. Bunlar yani birbirinden türetilecek şeyler.
+
+591
+02:09:35,064 --> 02:09:40,423
+Şimdi geldik bağıntının da bir alt kümesi fonksiyon. Her bağıntı biliyorsunuz fonksiyon olamıyor.
+
+592
+02:09:42,579 --> 02:09:49,180
+x'den y'ye bir bağıntı olsun demişiz. Şu şekilde gösteriliyor bu fonksiyon.
+
+593
+02:09:50,439 --> 02:09:57,939
+x, f'in domain tanım kümesi, y'de değer kümesi olacak.
+
+594
+02:09:58,880 --> 02:10:02,579
+Burada iki şart vardır biliyorsunuz arkadaşlar.
+
+595
+02:10:03,279 --> 02:10:09,279
+Domainimizde hiçbir eleman boşta kalmayacak. Şimdi bağıntı da boşta kalabiliyor.
+
+596
+02:10:09,939 --> 02:10:13,259
+Her eleman illaki bir yere gidecek karşı tarafta.
+
+597
+02:10:14,039 --> 02:10:18,579
+Ve bir eleman en fazla karşı tarafta bir elemanla eşleşecek.
+
+598
+02:10:19,219 --> 02:10:23,920
+İki eleman bir elemanla eşleşebilir ama bir eleman iki elemana gidemez.
+
+599
+02:10:24,679 --> 02:10:29,199
+Her elemanın bir tane nesi olacak? Görüntüsü olacak.
+
+600
+02:10:29,199 --> 02:10:35,099
+Şimdi şu range kümesine, değer kümesine, kümesinin bir alt kümesi var.
+
+601
+02:10:35,988 --> 02:10:54,408
+1, 3 ve 5. Bu 1, 3 ve 5'e de ne diyoruz? Görüntü kümesi diyoruz matematikte. Görüntü kümesinde her elemanla, en fazla bir elemanla eşleşir. Domeyindeki bir eleman, tanım kümesindeki eleman. Buna dikkat edelim.
+
+602
+02:10:55,891 --> 02:11:08,171
+O zaman şu oluyor zaten, hani bunu grafikten, bu bir fonksiyonsa, işte x ekseni ve y ekseni diyelim, x ekseninde bir çizgi çizdiğinizde y ekseninde paralel olarak en fazla bir noktada kesecek demektir.
+
+603
+02:11:08,891 --> 02:11:18,811
+Eğer bunu şu şekilde düşünürsek, şu bir fonksiyon olmuyor mesela, şöyle bir şey, x'e karşılık iki tane görüntü var demektir.
+
+604
+02:11:19,071 --> 02:11:22,731
+O zaman fonksiyon olmuyordu. Bunları biliyorsunuz herhalde değil mi? Bilmeyen var mı arkadaşlar?
+
+605
+02:11:24,307 --> 02:11:26,307
+Belki unuttunuz.
+
+606
+02:11:27,367 --> 02:11:30,927
+Hatırlatma babında bunları hızlıca geçmek istiyoruz.
+
+607
+02:11:30,927 --> 02:11:34,087
+Çok fazla gereksiz detaya girmeye gerek yok.
+
+608
+02:11:35,907 --> 02:11:45,307
+Şimdi gelelim. İki fonksiyonumuz var. x² artı x eksi x² bunların toplamları varmış ve çarpımları varmış. Tamam.
+
+609
+02:11:47,527 --> 02:11:49,887
+X şu değerler için.
+
+610
+02:11:51,283 --> 02:11:55,283
+Bu bağıntı bir fonksiyon mudur diye baktığımızda. Şimdi ne olacak?
+
+611
+02:11:56,283 --> 02:12:13,283
+1'den A'ya bir şey var. Tamam, 1'i almışız. 2'den B'ye gidiyor. Tamam, bu da yani bu eleman. 3'ün A'ya gittiğini görüyoruz. Evet, 3 A'ya gidebilir. Problem değil. Yeter ki işte bir başka yere gitmesin veya iki başka yere gitmesin.
+
+612
+02:12:17,076 --> 02:12:30,076
+Bu bir fonksiyon mudur? 1A'ya gitmiş, tamam, şimdilik sıkıntı yok. 2B'ye gitmiş, evet, bu da olabilir. 3C'ye gitmiş, bu da olabilir. Ama 1B'ye tekrar gidemez. 1G'de C'ye yere gitti. Onun için hayır diyoruz.
+
+613
+02:12:33,076 --> 02:12:41,076
+Şimdi bu fonksiyonların da kendi içerisinde işte birebir, birebir örten, ne bileyim başka şeyleri var, fonksiyonları var.
+
+614
+02:12:42,068 --> 02:12:47,347
+Şimdi birebir fonksiyon one to one. Çok zor anlaşılır bir şey değil.
+
+615
+02:12:49,028 --> 02:12:56,768
+Her y sadece bir x değerine karşılık olacak şekilde eşleşiyorsa buna birebir fonksiyon diyoruz.
+
+616
+02:12:57,608 --> 02:13:01,508
+Alternatif olarak x'den y'ye bir fonksiyonda
+
+617
+02:13:02,003 --> 02:13:09,444
+One to one şu ancak bu ancak şu duruma göre sağlanır. Buradaki if and only if'tir. Yani çift if arkadaşlar, bidirectional if dediğimiz şey.
+
+618
+02:13:09,444 --> 02:13:17,604
+x kümesindeki her değeri x1, x2, y kümesindeki y1, y2 gibi farklı iki değere karşılık gelir.
+
+619
+02:13:17,604 --> 02:13:22,163
+x1'in görüntüsü y1, x2'nin görüntüsü y2 olacaktır diyoruz.
+
+620
+02:13:22,163 --> 02:13:27,604
+Örnek olarak fx eşittir 2 üzeri x. Her bir sayının
+
+621
+02:13:28,404 --> 02:13:32,564
+2 üzeri x'te karşı farklı bir değeri vardır. Öyle değil mi?
+
+622
+02:13:32,564 --> 02:13:36,964
+Real sayılar için buna 1'e 1 deniyor.
+
+623
+02:13:36,964 --> 02:13:40,964
+From the real sayı.
+
+624
+02:13:40,964 --> 02:13:53,444
+Eğer bu real sayılardan real sayılara tanımlıysa f x² birebir olmuyor. Çünkü 2 de 4'e gidiyor. x'e 2 de 4'e gidiyor.
+
+625
+02:13:53,939 --> 02:13:57,931
+Bu, sonuçtan dolayı bunu sağlamıyoruz.
+
+626
+02:14:03,796 --> 02:14:09,676
+Örten fonksiyon, her y eleman için en az bir tane x mevcuttur demiş.
+
+627
+02:14:12,676 --> 02:14:19,155
+Bakalım bunun örneği buna birazdan gelecek herhalde.
+
+628
+02:14:23,380 --> 02:14:32,599
+Yani bu tabi şey arkadaşlar, şu tanım kümesinde elemanların bir kere her birinin bir karşılığı olacak.
+
+629
+02:14:36,699 --> 02:14:44,500
+Değer kümesindeki elemanlar da boşta kalmayacak, o zaman örten oluyor.
+
+630
+02:14:44,948 --> 02:14:51,788
+Yani değer kümesi eşittir, görüntü kümesi olursa örten oluyor. Boşta eleman kalmaması demektir.
+
+631
+02:14:53,928 --> 02:15:02,828
+Bejective function'lar, eğer bir fonksiyon bejective ise, birebir ve örten şartlarını sağlayacak.
+
+632
+02:15:03,728 --> 02:15:12,448
+Genellikle işte ax artı b gibi linear fonksiyonlar veya bunlara affin fonksiyon da diyoruz bu formata, ax artı b'ye.
+
+633
+02:15:12,948 --> 02:15:28,307
+Bunlar objective fonksiyon oluyor, birebir ve örten. İşte x küp mesela yine birebirliği sağlıyor, örtenliği de sağlıyor. Buna da objective diyebiliyoruz.
+
+634
+02:15:28,307 --> 02:15:39,988
+Şimdi bu bir birebir fonksiyon mudur? Evet, bunun bir görüntüsü var, bunun bir başka görüntüsü var.
+
+635
+02:15:40,180 --> 02:15:54,180
+örten fonksiyonu mu? Değildir. Şu boşta kalıyor. Şuna baktığımızda bu birebir midir? Bu buna gidiyor, bu buna gidiyor, bu buna gidiyor ama bu buna gidiyor. Bu buna gittiği için birebir olmuyor.
+
+636
+02:15:55,180 --> 02:16:07,119
+Ama bütün elemanlara karşı bir de şey olduğu için örten fonksiyon oluyor. Şöyle baktığımızda bu buna gitmiş, bu buna gitmiş, bu buna gitmiş, bu buna gitmiş, bu buna gitmiş. Herkes yani hem birebir
+
+637
+02:16:07,859 --> 02:16:29,539
+hem de örten özelliğini sağlıyor. Şuna baktığımız zaman, bu ne birebir ne de örten. Şu şeyden dolayı birebirliği iptal ediyoruz. Buradan da örten özelliğini iptal ediyoruz. Bu neymiş?
+
+638
+02:16:34,963 --> 02:16:36,963
+Bu bir fonksiyon mudur arkadaşlar?
+
+639
+02:16:43,636 --> 02:16:52,136
+değildir. Neden? A'dan çıkan bir şey, hem 2'ye hem 4'e gidemez. Onun için bir fonksiyon değildir.
+
+640
+02:16:54,675 --> 02:17:05,936
+Şimdi, ters fonksiyon, bir fonksiyonun görüntü kümesiyle tanım kümesinin yer değiştirmesi olarak ifade edebiliriz.
+
+641
+02:17:05,936 --> 02:17:08,396
+f üzeri eksi 1 ile gösteriyoruz.
+
+642
+02:17:11,316 --> 02:17:19,855
+f-1'in bir fonksiyon olması gerekmez demiş. Bu tanım kümesi ve görüntüm kümesine göre tersi illaki fonksiyon olması gerekmiyor.
+
+643
+02:17:20,956 --> 02:17:31,236
+İşte f-x eşittir x² için f-1, 4 ise artı eksi 2 mesela bu durumda tersi bir fonksiyon olmayabiliyor.
+
+644
+02:17:32,456 --> 02:17:38,615
+Ona dikkat etmek lazım. Eğer bir fonksiyon bijektif ise terside bir fonksiyondur ama. Niye?
+
+645
+02:17:39,412 --> 02:18:02,132
+Aslında ojektif fonksiyonlar, arkadaşlar, şu üçüncü dereceden, dördüncü dereceden şeyler oluyor. Mesela şöyle kuadratik şu tarz şeyler fonksiyon, bunun tersi kendisi bir fonksiyon değil ama tersi bir fonksiyon. Şunun kendisi de tersi de bir fonksiyon veya lineer veya afin fonksiyonların tersi de bir fonksiyondur. Şuna baktığım zaman bu kuadratik fonksiyon nasıl olacak? Şöyle bir şey.
+
+646
+02:18:03,347 --> 02:18:08,027
+Bunun tersini aldığınızda, şuna benzer bir şey gelir. Onun için fonksiyon olmaz.
+
+647
+02:18:09,108 --> 02:18:11,108
+Bu bir özellik.
+
+648
+02:18:13,507 --> 02:18:17,108
+Şunun f-1'ine baktığımızda, bunlar bilinen şeyler.
+
+649
+02:18:17,108 --> 02:18:25,067
+Buna baktığımızda, şunu kullanmanız yeterli arkadaşlar. y eşittir fx x artı 1.
+
+650
+02:18:27,628 --> 02:18:29,067
+Tersini almak için
+
+651
+02:18:30,100 --> 02:18:49,659
+Şu şekilde yazabiliriz. x'leri y, y'leri x yaptığımızda x eşittir y artı bir oluyor. y'yi yalnız bırakıyoruz. y eşittir x eksi bir oluyor. y yalnız kaldıktan sonra x ve y'yi tekrar yer değiştiriyoruz. x eşittir y eksi bir oluyor. Pardon. y eşittir x eksi bir olacak.
+
+652
+02:18:49,659 --> 02:18:55,880
+Ve bu bizim yalnız bıraktıktan sonra ters fonksiyonumuz olacak. Tekrar ileriye gitmeye gerek yok.
+
+653
+02:18:58,484 --> 02:19:02,083
+Ax artı b gibi bir şeyde de bunu yapabiliriz. y eşittir.
+
+654
+02:19:03,463 --> 02:19:04,703
+Ax artı b.
+
+655
+02:19:06,863 --> 02:19:12,564
+y'yi yalnız bırakmak, önce x'yi yalnız bırakalım. y-b bölü a eşittir x'tir.
+
+656
+02:19:13,423 --> 02:19:17,703
+x ile y'yi yalnız yer değiştirelim. y eşittir x-b bölü a'dır.
+
+657
+02:19:18,463 --> 02:19:19,144
+Şunu buluruz.
+
+658
+02:19:19,667 --> 02:19:27,247
+adım adım yapmak isterseniz. Bunun hani üniversite sınavı zamanında kısa yollarını falan anlatırlar. İşte rasyonel bir fonksiyon olsa, şey seçmişse falan diye.
+
+659
+02:19:28,347 --> 02:19:34,167
+y'yi buraya y derseniz x'i yalnız bırakırsınız. Daha sonra x ile y'yi yer değiştirsiniz. Fonksiyon olur.
+
+660
+02:19:36,587 --> 02:19:45,448
+Şimdi burada ikinci dereceden bir fonksiyon olunca bunu yalnız bırakarak y eşittir ax kare artı bx artı c.
+
+661
+02:19:46,067 --> 02:19:52,067
+Bulmaya çalıştınız her zaman ne olacak? Mesela şöyle bir şey çıkıyormuş adım adım gittiğimizde.
+
+662
+02:19:56,067 --> 02:19:58,067
+Bu da böyle çıkıyormuş.
+
+663
+02:19:59,067 --> 02:20:01,067
+Fonksiyonların bileşkesi
+
+664
+02:20:02,067 --> 02:20:09,067
+x y'den bir fonksiyon ve y z'den bir fonksiyona doğrudan x'den z'ye geçmek için yapılan bir operasyondur bu.
+
+665
+02:20:10,067 --> 02:20:14,059
+F'in içerisinde x gördüğümüz yere bir başka fonksiyonu yazmak demektir.
+
+666
+02:20:14,324 --> 02:20:27,283
+İşte f gx'imiz bu, fx'imiz buysa f birleşke gx, f de gx yazmak demektir. X gördüğümüz yere f de x kare eksi bir yazacağız. O da bunu getiriyor.
+
+667
+02:20:28,184 --> 02:20:38,824
+Bileşkelerde arkadaşlar f birleşke g, birleşke h şu özellik vardır. Ama yani birleşme özelliği vardır, değişme özelliği yoktur. Buna dikkat edelim.
+
+668
+02:20:40,020 --> 02:20:45,680
+Üstel fonksiyonlar biliyorsunuz artış ve azalışları ifade ederken çok kullandığımız şeyler.
+
+669
+02:20:46,420 --> 02:20:51,279
+İşte buna eksponansiyel fonksiyon, buna logaritmik fonksiyon diyoruz.
+
+670
+02:20:51,799 --> 02:20:55,900
+Biz logaritma 2 tabanını, logaritma e tabanını çok fazla kullanırız.
+
+671
+02:20:56,659 --> 02:21:01,020
+Eğer bir fonksiyonun f'ten g'ye bileşkesine bakacak olursak,
+
+672
+02:21:01,779 --> 02:21:07,159
+f'de 2 üzeri log x gördüğümüzde ne olacaktır?
+
+673
+02:21:07,391 --> 02:21:15,592
+Bu iki tabanında Lgx, xg karşılık gelecektir veya tam tersini yazdığımızda yine x'i bulacağız.
+
+674
+02:21:15,592 --> 02:21:22,752
+Bu üstel fonksiyonlar, logaritmik fonksiyonlar birbiriyle tam tersi olduğu için birbirinin inverse gibi düşünebiliriz.
+
+675
+02:21:22,752 --> 02:21:24,551
+Doğrudan x'i buluruz.
+
+676
+02:21:26,471 --> 02:21:32,231
+Stringlerin tersi, bir stringin tersini almak ne demek? Baştan sonuna stringi geri yazmak demektir.
+
+677
+02:21:34,067 --> 02:21:43,427
+Floor fonksiyonu, Floor zemin biliyorsunuz. Bir sayıyı en küçük tam sayıya çevirir. Kendisine küçük. Sayılda tavan demektir.
+
+678
+02:21:44,628 --> 02:21:56,067
+8.38 olacak. İşte 1 bölü 2 sıfır olacak. Bu eksi 9 olacak. Eksi şeyden dolayı. 7 zaten 7'dir dedik. Eksi 1 bölü 2 eksi 1.
+
+679
+02:21:57,268 --> 02:22:00,067
+Banu Hoca da böyle güzel güzel şeyler yapmış.
+
+680
+02:22:00,788 --> 02:22:02,067
+animasyonlar.
+
+681
+02:22:07,827 --> 02:22:10,827
+Bunları da herhalde biliyoruz.
+
+682
+02:22:11,827 --> 02:22:17,427
+Şimdi birkaç soruluk slide kaldı. Onu da bitirelim. Ders tamamlarız. Zaten daha vaktimiz varmış.
+
+683
+02:22:20,407 --> 02:22:25,227
+Nasıl gidiyor arkadaşlar? Sıkıntı yok inşallah. Dersten memnun musunuz?
+
+684
+02:22:26,587 --> 02:22:28,967
+Bir problem varsa çözelim.
+
+685
+02:22:29,907 --> 02:22:37,448
+Biraz belki ilk konular monoton, sıkıcı gelebilir ama algoritma konularına girmeye başlayacağız önümüzdeki haftadan itibaren.
+
+686
+02:22:38,468 --> 02:22:45,688
+Daha makul geleceğini düşünüyorum. Sizin bir öneriniz varsa derse içeri ilişkin lütfen söyleyin.
+
+687
+02:22:45,768 --> 02:22:52,628
+Hocam şöyle yapsak daha iyi olmaz mı diye. Bunları da değerlendirelim. Gerekirse yani uygulayabileceğimiz şeylerse uygularız.
+
+688
+02:22:54,628 --> 02:22:56,268
+Evrensel küme üzerinde.
+
+689
+02:22:58,995 --> 02:23:13,236
+Siz de sağ olun arkadaşlar. Yani dediğim gibi hiç çekinecek bir şey yok. Bugünleri atlatana kadar bu süreci hem sizin için hem bizim için en iyi şekilde yönetebilmemiz lazım. Faydalı olabilmemiz lazım.
+
+690
+02:23:16,115 --> 02:23:20,876
+Zaman çünkü en değerli şey. Sağlık ve zaman.
+
+691
+02:23:22,216 --> 02:23:24,576
+A, B ve C kümeleri varmış.
+
+692
+02:23:25,427 --> 02:23:34,847
+Bunların listelenmesi işte A birleşim B. Bunlar ufak tefek sorular olarak gelebilir. B fark A. B'de olup A'da olmayanlar.
+
+693
+02:23:36,788 --> 02:23:49,687
+Üniversal kümenin değili boş kümedir. A birleşim üniversal küme üniversal kümedir. B'nin farkıyla C fark A. B'nin değiliyle C fark A'nın kesişimi. Şimdi B'nin değili nedir arkadaşlar?
+
+694
+02:23:50,804 --> 02:23:53,243
+2, 4, 6, 8'dir.
+
+695
+02:23:54,243 --> 02:23:55,923
+C fark A nedir?
+
+696
+02:23:56,644 --> 02:23:58,484
+C'de olup A'da olmayanlar
+
+697
+02:23:58,484 --> 02:24:03,304
+2, 4, 6, 6 ve 8 var.
+
+698
+02:24:04,904 --> 02:24:08,564
+Bu ikisi 2, 4, 6, 8 ve 6'in kesişimi 6, 8 oluyor.
+
+699
+02:24:09,824 --> 02:24:10,763
+Buna da bakabilirsiniz.
+
+700
+02:24:12,804 --> 02:24:13,984
+Venn diagramı olarak
+
+701
+02:24:15,796 --> 02:24:20,236
+Boyayın demiş. Yani, işte şurası nedir falan diye.
+
+702
+02:24:21,275 --> 02:24:24,476
+Mesela, C kesişim A.
+
+703
+02:24:25,796 --> 02:24:26,956
+Şurası.
+
+704
+02:24:28,876 --> 02:24:30,476
+B fark A.
+
+705
+02:24:35,379 --> 02:24:37,379
+Şimdi C kesişim A'dan
+
+706
+02:24:37,379 --> 02:24:40,759
+B fark A'nın
+
+707
+02:24:40,759 --> 02:24:43,399
+Değili. Şimdi B fark A'nın
+
+708
+02:24:43,399 --> 02:24:45,659
+B fark A burası, B fark A'nın
+
+709
+02:24:45,659 --> 02:24:47,479
+Değili olan yerler
+
+710
+02:24:47,479 --> 02:24:50,520
+Şuralar
+
+711
+02:24:50,520 --> 02:24:53,819
+Bu C fark A'yı çıkartırsak
+
+712
+02:24:53,819 --> 02:24:56,279
+Herhalde şunlar kalacak
+
+713
+02:24:56,279 --> 02:25:01,619
+Bunu da C ile kesiştirirsek
+
+714
+02:25:03,188 --> 02:25:10,507
+Şöyle bir yer kalacak. Öyle bir şey görünüyor. Tabi bunu tekrar bakmak da gerekir.
+
+715
+02:25:10,507 --> 02:25:16,808
+Bunu şu şekilde de yapabilirsiniz. Matriz formatında A, B, C, A, B, C.
+
+716
+02:25:16,808 --> 02:25:23,727
+İşte birler sıfırlar ekleyip A ile B'nin kesiştiği yer, A ile şeyin kesiştiği yer.
+
+717
+02:25:23,727 --> 02:25:28,007
+Buraya derece verilebilir. Öyle de çıkar.
+
+718
+02:25:29,236 --> 02:25:44,236
+Bu soruyu çözdün arkadaşlar. Üniversite sınavında bunlardan çok çok çözdünüz. Şu kadar öğrenci var, şu kadar kişi şu dersi alıyor, bu kişi bunu yapıyor falan. Bunlara bir bakarsınız.
+
+719
+02:25:48,979 --> 02:26:05,219
+Ne kadar kişi not business iken Fransızca ve müzik dersi alıyormuş falan diyor. Ne kadar kişinin yerine yerleştirmiş.
+
+720
+02:26:09,427 --> 02:26:17,427
+X, Y ve Z kümeleri üniversite kümenin alt kümeleridir. Assume that the University of Cartesian product da buymuş.
+
+721
+02:26:17,427 --> 02:26:24,427
+Şunlardan hangisi true'dur ve bunların
+
+722
+02:26:28,788 --> 02:26:55,668
+değerlerini verin demiş. Şimdi x birleşim, x kesişim, y birleşim, y fark, x. x'e eşit midir? diyor. Yani bunda yine küme özelliklerinden çıkartabiliriz. Peki burada muhtemelen bunların bir şeyi var, kesişimleri var. x, y ve z diyelim şöyle.
+
+723
+02:27:00,084 --> 02:27:02,644
+X ile Y'nin kesiştiği yer şuralar.
+
+724
+02:27:04,304 --> 02:27:07,684
+Y'nin X'den farklı olduğu yerler buralar.
+
+725
+02:27:11,156 --> 02:27:21,816
+Şurası da dahil. Bu ikisi eşit midir? İkisi eşit bir zaman eşit değildir arkadaşlar. Daha çok yani bu ikisinin birleşimi daha çok y'ye eşit gibi geliyor. Onun için false.
+
+726
+02:27:27,827 --> 02:27:38,067
+Aşağıdaki dizi için bunun hesabını yapın demiş. 1'den 4'e AI. Şimdi bu şu şekilde olacak.
+
+727
+02:27:42,036 --> 02:28:05,475
+i eşittir 1'den 4'e i kareler, eksi, 3 çarpı i eşittir 1'den 4'e i'ler, artı, 3 kere 4, 12. Yani şunu da yazalım, i eşittir 1'den 4'e, ne olacak? 3.
+
+728
+02:28:06,868 --> 02:28:13,268
+Şimdi i kareler nedir? Tabii bunun formu da var, seri toplamları.
+
+729
+02:28:13,768 --> 02:28:20,688
+Birin karesi, artı ikinin karesi, artı üçün karesi, artı dördün karesi.
+
+730
+02:28:21,648 --> 02:28:31,347
+Birden dörde kadar sayıların toplamı 3 çarpı, 4 çarpı 5 bölü 2, artı 3 kere 4, 12.
+
+731
+02:28:33,347 --> 02:28:34,347
+Doğru mu?
+
+732
+02:28:35,028 --> 02:28:38,108
+Şunları bulan bir formül vardı arkadaşlar, hatırlamıyorum.
+
+733
+02:28:40,407 --> 02:28:44,747
+1 artı 4 artı 9 artı 16 eksi
+
+734
+02:28:46,547 --> 02:28:47,828
+30
+
+735
+02:28:49,368 --> 02:28:50,907
+artı 12
+
+736
+02:28:51,407 --> 02:28:52,948
+Şu formülü hatırlayan var mı?
+
+737
+02:28:53,968 --> 02:28:59,347
+25, 30, 30'lar gitti. Sonuç 12 mi geliyor? Herhalde 12 gerçek, evet.
+
+738
+02:29:01,907 --> 02:29:24,907
+İlerleyen zamanlarda algoritmanın arzında belki şunun formülünü zaten orada slide'larımda vardı. Öyle bir formülü vardı. Neydi? Teşekkür ederim [öğrenci]. n çarpı n artı 1, 2n artı 1 bölü 6. Ona ihtiyaç duyacağız. Ama sınavda ihtiyaç var mı? Sınavda öyle bir ihtiyaç yok. Bu da nedir arkadaşlar? 3 çarpı 4 çarpı...
+
+739
+02:29:28,468 --> 02:29:30,468
+Tabii şuraya göre yazacağız.
+
+740
+02:29:31,668 --> 02:29:35,668
+3'ün karesi eksi 3 çarpı 3 artı 3
+
+741
+02:29:36,568 --> 02:29:37,768
+çarpı
+
+742
+02:29:38,168 --> 02:29:42,168
+4'ün karesi eksi 3 çarpı 4 artı 3
+
+743
+02:29:42,468 --> 02:29:44,468
+Şu iki terimi çarpacağız.
+
+744
+02:29:44,868 --> 02:29:53,968
+Buradan 3'ün karesi 9, buradan 3 geliyor. 16'dan 12 çıktı 4, 3 daha 7 geliyor. 21 sonucunu buluyoruz.
+
+745
+02:29:57,971 --> 02:29:59,371
+Şunu hesaplayın demiş.
+
+746
+02:30:03,112 --> 02:30:06,492
+Ziler önce toplanacak. Ondan sonra
+
+747
+02:30:06,492 --> 02:30:11,811
+Yiler toplanacak. İkisinin toplamı. Şimdi Zileri toplarsak
+
+748
+02:30:11,811 --> 02:30:16,092
+i kare eksi i veya i çarpı i eksi bir
+
+749
+02:30:16,092 --> 02:30:21,211
+uzun uzun yazabilirsiniz. Bir de buna bakın arkadaşlar.
+
+750
+02:30:23,152 --> 02:30:24,711
+Şimdi bu sayı
+
+751
+02:30:25,172 --> 02:30:42,252
+9.5. 1, binary, oktal, decimal ve hexadecimal bir sayı belirtir mi diyor. Binary, oktal, decimal ve hexadecimal. Binary olur mu arkadaşlar? Binary bir sayı olabilir mi?
+
+752
+02:30:51,283 --> 02:30:57,504
+Hayır olmaz. Niye? Çünkü sembol olarak ya sıfır olacak ya da bir olacaktır. Final olmadı.
+
+753
+02:30:57,504 --> 02:31:07,184
+Oktal olur mu? Oktal en fazla sekizdir. Yediye kadar bir şeyler bekleriz. Oktal da olmaz. Desimal oluyor. Hexadesimal oluyor.
+
+754
+02:31:10,579 --> 02:31:16,959
+Burada evet, hayır demiş. Bu bir desimal olur mu? Olur. Hexadesimal olur mu? O da olur.
+
+755
+02:31:18,959 --> 02:31:21,579
+Bir R ilişkisi için.
+
+756
+02:31:25,108 --> 02:31:33,548
+Bunun bütün elemanlarını sayarsak, x artıya altıdan küçük olacak şekilde elemanları buymuş.
+
+757
+02:31:33,548 --> 02:31:41,227
+Bunun range nedir dediğimizde, range neydi arkadaşlar? 1, 2, 3, 4, 5 ili.
+
+758
+02:31:41,227 --> 02:31:50,708
+İlişkinin tersinin range nedir dersek, bu da aynı çünkü aynı küme üzerinde tanımlanıyor.
+
+759
+02:31:54,611 --> 02:32:20,912
+Aşağıdaki ilişki refleksif, simetrik ve non-transitif midir? Buna bakalım. Refleksif özelliğini sağlıyor. Simetrik midir? Evet, onu da sağlıyor. Non-transitif midir? Non-transitif özelliğine bakmak için şimdi 1-1 var, 1-2 var. Buradan 1-2 tekrar geliyor. 2-2 varken 2-1 var.
+
+760
+02:32:21,876 --> 02:32:26,675
+Evet, transitifi bozan bir tane örnek bulsak yeterli.
+
+761
+02:32:28,076 --> 02:32:35,675
+2-3 varken, 3-2 var, 3-3 var, hangisi bozuyor an transitifi olma durumunda?
+
+762
+02:32:37,576 --> 02:32:42,376
+1-1-1-2-3-4
+
+763
+02:32:54,260 --> 02:32:56,260
+Ama bir dakika, 3-4'e götüren
+
+764
+02:32:56,260 --> 02:33:00,579
+3-3 varken
+
+765
+02:33:04,051 --> 02:33:09,691
+3-4 nasıl olacak ki? Ben mi göremiyorum?
+
+766
+02:33:20,468 --> 02:33:21,468
+3-1
+
+767
+02:33:21,468 --> 02:33:23,788
+Evet, 1-1 varken
+
+768
+02:33:23,788 --> 02:33:24,908
+1-3
+
+769
+02:33:24,908 --> 02:33:25,587
+Evet
+
+770
+02:33:25,587 --> 02:33:29,788
+3-3 varken
+
+771
+02:33:33,172 --> 02:33:37,072
+3-4 anlamadım ya [öğrenci]. 3-1'e bakalım da.
+
+772
+02:33:42,932 --> 02:33:56,812
+Hayır, 4, 4'ü şimdi şöyle, 1, 4 gibi bir şey olsaydı, yani 4 ile biten bir şey olacak. O 4 ile biten bir şey, 4 ile bir şeyi başlatacak. Anlatabildim mi? Yani şöyle bakalım. Dur.
+
+773
+02:34:12,564 --> 02:34:13,064
+Aynen.
+
+774
+02:34:16,628 --> 02:34:42,848
+Ama bir tane... Mesela bir iki var. İki ile başlayan iki bir var. İki üç var. O zaman ben bir biri bulacağım. Var. Bir üçü bulacağım. İşte o yok. Değil mi? Bir üç yok. Bir üçten dolayı sağlamıyor. Bakın. Bir iki varken iki üç var. Bir üç yok. Üç bir de olmaz.
+
+775
+02:34:44,275 --> 02:34:45,896
+3-1'e şöyle bakalım.
+
+776
+02:34:50,164 --> 02:34:54,764
+2-2'den mesela 2 ile başlayan ne var? 2-1 var.
+
+777
+02:34:56,564 --> 02:35:00,404
+Zaten bir tane bulmak, göstermek yeterli. 2-1'den dolayı gidiyor.
+
+778
+02:35:01,164 --> 02:35:02,963
+Yok, 2-1 zaten var.
+
+779
+02:35:07,731 --> 02:35:09,172
+En azından 1-3'ü bulduk ama.
+
+780
+02:35:10,912 --> 02:35:11,412
+3-3.
+
+781
+02:35:13,292 --> 02:35:16,731
+Mesela 3-3'den sonra 3-2 demiş.
+
+782
+02:35:17,572 --> 02:35:19,312
+Doğrudan 3-2 zaten kendisi.
+
+783
+02:35:20,312 --> 02:35:20,932
+Evet, 1-3.
+
+784
+02:35:21,972 --> 02:35:22,891
+3-2 de olmuyor.
+
+785
+02:35:24,371 --> 02:35:25,772
+3-2 zaten kendisi olduğu için.
+
+786
+02:35:27,572 --> 02:35:30,932
+3-2'den sonra mesela 2 ile başlayan ne var?
+
+787
+02:35:31,711 --> 02:35:33,191
+2 ile başlayan 2-2 var.
+
+788
+02:35:34,995 --> 02:35:51,236
+Tamam, tamam. Aslında 3-1 de olur. 3-2'den sonra 2 ile başlayan 2-3 var. 3-3 var. Tamam. 3-2'den sonra 2 ile başlayan 1 var. 3-1 yok. 3-1 de mesela bozuyor. Bunu da sıralayabiliriz.
+
+789
+02:35:53,236 --> 02:35:59,615
+Şuna baktığımız zaman bu bir refleksif gibi görünüyor ama
+
+790
+02:36:02,324 --> 02:36:08,484
+3-3 ve 4-4 üzerinde refleksif olmadığı için non-reflexif diyoruz.
+
+791
+02:36:08,484 --> 02:36:12,963
+Simetrik midir? 1-1 var, 1-2 varken 2-1 var, tamam.
+
+792
+02:36:12,963 --> 02:36:19,684
+Simetrik, not asimetrik oluyor, antisimetrik oluyor.
+
+793
+02:36:19,684 --> 02:36:24,484
+Ve transitif midir? 1-2 varken 2-1 var, o zaman 1-1'e bakacağız.
+
+794
+02:36:24,484 --> 02:36:27,924
+1-2 varken 2-2 var, yine 2-2 kendisi var.
+
+795
+02:36:28,564 --> 02:36:51,564
+Dolayısıyla transit oluyor. Yani A virgül B, B virgül B olursa zaten doğrudan transit dur arkadaşlar. Niye? AB varken, BB varsa AB'ye bakacağız. AB'nin kendisi zaten var. Eğer böyle bir şeyde refleksif bir bağıntıyla elemanla işleme alırsak gerek kalmıyor.
+
+796
+02:36:52,948 --> 02:37:14,427
+R ve S ilişkiler olsun, bağıntılar olsun demişler. Aşağıdaki ifade true mu false mu? Eğer yanlışsa bir karşıt örnek verin demiş. R ve S antisimetrik ise R birleşimse antisimetrik midir?
+
+797
+02:37:21,747 --> 02:37:31,747
+olmama ihtimali de var. Çünkü R bağıntısı ve S bağıntısı birleşip, antisimetrik özelliği kaybedip simetrik hale gelebilir.
+
+798
+02:37:31,747 --> 02:37:42,747
+Yani birinde örneğin 1,2 vardır, öbüründe de 2,1 vardır. İkisini birleştirirsin. Bu önerme yanlış olur. Counter örnek olarak verebiliyoruz.
+
+799
+02:37:49,971 --> 02:37:55,412
+Bu bir denklik bağıntısı mıdır? Bu bağıntıya bakacağız.
+
+800
+02:37:57,011 --> 02:38:03,652
+Şimdi ne olacaktı denklik? Aslında refleksif olacaktı. 1, 1, 2, 2, 3, 3, 4, 4 var ve 5, 5 var.
+
+801
+02:38:04,211 --> 02:38:11,891
+Simetri olacak. 1, 5 varken 5, 1 var. 3, 5 varken 5, 3 var. 1, 3 varken 3, 1 var. Bir de transitif olacak.
+
+802
+02:38:12,852 --> 02:38:27,788
+Şunlar zaten transitifliği sağlıyor. 1-5 varken, 5-1 varken, 1-1 var. 3-5 varken, 5-3 varsa, 3-3 de var. 1-3 de orada da var. Ondan sonra 1-3'ten 3-5'e baktığımızda...
+
+803
+02:38:30,932 --> 02:38:49,352
+1, 5 var. 1, 3, 3, 5. Yani 1, 3, 3, 5. Ne olur? Bundan 1, 5'i bulacağız. Üçünü de sağlıyor. Şunun için, bu zaten bakmıştık, 3 x artı y'nin bölen durumunda bu false oluyor. Çünkü
+
+804
+02:38:49,352 --> 02:38:53,352
+bir şeyi sağlamıyoruz bu üç özelliği.
+
+805
+02:38:58,708 --> 02:39:06,448
+Şimdi aşağıdaki fonksiyonlar birebir fonksiyonmuş. İnversiyonu bulun demiş. Nedir bunun inversiyon? x eksi 2 bölü 4 olacak.
+
+806
+02:39:08,448 --> 02:39:12,427
+Şunun inversiyonuna baktığımızda 1 bölü x eksi 3 olacak.
+
+807
+02:39:17,368 --> 02:39:18,768
+Sorumuz var mı arkadaşlar?
+
+808
+02:39:21,988 --> 02:39:26,208
+Şimdi bizim gelecek haftaki konumuz normalde number teori idi.
+
+809
+02:39:27,347 --> 02:39:36,547
+Number Theory daha çok işte çok uzun bir konu yine bir matematikçiler açısından tamamen aslında bir ders olarak okutulabilen bir şey.
+
+810
+02:39:37,387 --> 02:39:47,247
+Biz orada biraz bölme bölünebilme işte asal sayılar, obibokek onları anlatacağız ama haftaya anlatmayacağız onu söyleyeceğim.
+
+811
+02:39:49,971 --> 02:40:04,191
+Neden olduğunu da şimdi söyleyeyim. Bir de orada ne var? Kriptoloji ile alakalı bazı konular var. İşte basit şifreleme algoritmaları. Ben bunları daha önceden BBG1'de bile uygulamalar yaparken anlatıyordum algoritma çözerken size. Tabi o zamanlar asistan iken.
+
+812
+02:40:05,471 --> 02:40:16,851
+Şimdi şöyle arkadaşlar, algoritma ve sonraki konular daha önemli olduğu için dönem içinde de o konulara daha çok ağırlık vermek istiyoruz. İşte algoritmaların analizi, karmaşıklık sınıfları.
+
+813
+02:40:17,620 --> 02:40:36,800
+Asimtotik notasyonlar, ağaçlar, ondan sonra bazı temel veri yapıları konular var. Bunlar gelecek dönem size veri yapıları dersinde de çok faydalı olacak konular, önemli konular. Yani bir EBOG-EKO algoritması çok daha basit şey. Kriptolojinin giriş konuları daha kolay.
+
+814
+02:40:44,884 --> 02:40:54,404
+rafa kaldırdık. Yani her şey hazır, slide falan her şey var da biraz daha hani hepinizin buradaki işte fonksiyon gibi, bağıntı gibi bildiğiniz konular.
+
+815
+02:40:55,184 --> 02:41:00,904
+Dolayısıyla o konuyu geçip önümüzdeki hafta inşallah algoritmalara giriş yapacağız.
+
+816
+02:41:02,443 --> 02:41:11,504
+Bu konuyla alakalı Banu Hoca'ya ben slide gönderdim. Yaklaşık 100 sayfalık bir slide oldu. O bir üzerinden geçip düzenlemeye çalışıyor.
+
+817
+02:41:12,404 --> 02:41:30,824
+İlk kısımlarına böyle bir bakarak gelirseniz slide derste daha rahat olur. Onun haricinde zaten derste onu başından sonuna inceleyeceğiz. Bundan sonraki konularımız dediğim gibi daha çok algoritma ağırlıklı. İşte arama algoritmaları, optimizasyon algoritmaları, bread first search'ları falan hep onları göreceğiz.
+
+818
+02:41:31,083 --> 02:41:37,923
+Tabi burada daha çok kod üzerinde görmeyeceğiz. Yaklaşım üzerinden. İmplementasyonu yine birazcık anlatırım da.
+
+819
+02:41:38,739 --> 02:41:58,619
+Belki yapısal programlama derslerinde veya işte onlara girilebilir. Ben kendi grubumda bazı örnekler çözeceğim yani o konuda. O şekilde ilerleyeceğiz. Sormak istediğiniz bir şey var mı arkadaşlar? Yoksa hepinize iyi hafta sonları. Haftaya görüşmek üzere diyelim. Kendinize iyi bakın.
+
+820
+02:42:07,059 --> 02:42:09,059
+İyi günler arkadaşlar, hoşçakalın.

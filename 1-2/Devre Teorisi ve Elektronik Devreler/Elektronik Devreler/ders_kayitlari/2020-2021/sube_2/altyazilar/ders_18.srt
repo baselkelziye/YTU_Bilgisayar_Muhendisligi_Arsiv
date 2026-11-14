@@ -1,0 +1,1207 @@
+1
+00:00:53,235 --> 00:00:56,595
+Arkadaşlar merhaba. Duyuyor musunuz beni?
+
+2
+00:00:57,995 --> 00:00:58,775
+Duyuyoruz hocam.
+
+3
+00:01:01,035 --> 00:01:08,695
+Şimdi yavaş yavaş mevcudumuz artarken, Alper Hocanız Piyazada soruyu yayınladı bu arada, bunu indirin oradan.
+
+4
+00:01:12,036 --> 00:01:16,176
+Yine geçen defaki stilimiz aynı. Biz size çözüm için yer ayırdık.
+
+5
+00:01:17,756 --> 00:01:19,596
+Hem Türkçe hem İngilizceleri var.
+
+6
+00:01:21,364 --> 00:01:32,524
+Ders İngilizce bildiğim kadarıyla ama isteyen İngilizce yazabilir. Eğer çok zorlanıyorsanız Türkçe yazın. Ama tercihimiz İngilizceden yana tabii ki. Değil mi ders İngilizce diye hatırlıyorum. Yanlış değil herhalde.
+
+7
+00:01:36,180 --> 00:01:39,700
+Sanırım hocama emin değilim ama derste Türkçe işleniyor zaten.
+
+8
+00:01:40,180 --> 00:01:55,160
+Tamam neyse nasıl rahat ediyorsanız. Zaten çok laflı yerler çok o kadar yok. Genelde işlemsel ve ekran çıktısıyla ilgili iş yapıyoruz. Ama tabii açıkladığınız kısımlar da var. Ben şimdi soruların üzerinden bir hemen geçeceğim. Mevcudunuz iyice artsın.
+
+9
+00:01:56,800 --> 00:02:03,140
+Herkes indirsin bir defa, herkes ekranı açsın. Ben ekran paylaşmayacağım. Sayfa numarası söyleyerek size şu sayfada şu var, bu sayfada bu var diyeceğim.
+
+10
+00:02:04,659 --> 00:02:30,659
+Projeleriniz gelmeye devam ediyor. Öneri dökümanını yüklemeyi unutmayın. Alper Hoca bakmıştı şimdiye kadar. Şimdiden sonra da ben de biraz bakacağım. Öneri dökümanı bir sayfalık onun üzerinde yeterli sayıda komponent var mı, yapılabilir mi? Mesela bugün ben bir tane bir şey gördüm. Birkaç projeler var orada bilmiyorum onaylandı mı, onaylanmadı mı. Ama onaylanmamıştı galiba. Alper Hoca da onaylamaz zaten onu. Mesela FM verici demiş. Muhtemelen, kim bilmiyorum bizim gruptan birimi.
+
+11
+00:02:31,348 --> 00:02:53,388
+FM Receiver Transmitter demiş, muhtemelen mikrofondan sesini radyoya aktarmaya çalışacak. O projeler o kadar kolay olmuyor arkadaşlar. Hani seçerken birazcık böyle hobi projelerini anlatan, işte YouTube kanalı falan oralarda araştırın. Olabildiği kadar komponent sayısı anlamında değil ama projenin ispatlanabilirliği bakımından kolay şeyler seçin.
+
+12
+00:02:54,611 --> 00:03:21,592
+Hep aynı örneği veriyorum. Benim de lisanslık projem Vumetre'ydi. Vumetre mesela onlardan bence biri. Şimdi bobinli falan projeler biraz zor oluyor. Bobini sarmak gerekiyor veya bobin derken şey bobin. Bildiğimiz komponent olan bobin değil. Bir de sarılarak yapılan bir şey var. O da değil. O uygun değil. Öyle şeyler seçmeyin. Normal hani satın aldığımız hazırda gelen bobinden bahsetmiyorum. Onda sorun yok.
+
+13
+00:03:23,219 --> 00:03:39,439
+Birkaç projeler var güzel ama yapılabilirliğiyle ilgili mesela renk analizörü demiş. Nasıl yapacak? Herhalde bir almaç var, sensörü var. Ne yapacak? Ekran yazıp ekranda rengini mi söyleyecek acaba? O projeyi incelmedim daha. İspatlanabilirliğine dikkat edin yani özetle.
+
+14
+00:03:48,915 --> 00:04:11,496
+Bu kadar. Yok. Çalıştığını görmemiz gerekecek ya o açıdan. Metal dedektörü demiş mesela. Ben o metal dedektörün de o kadar kolay olmadığını düşünüyorum. Bilmiyorum. Belki kolaydır. Yani yapıldığından emin olun. İnsanlar internette proje koyarken de tabii forum size evden falan alıyorsunuz. Doğruluğu soru işaretli. Biz size o yüzden bir defa protesto kurup deneyin diyoruz muhakkak. Bunlara dikkat edin. Sonradan sorun olmasın.
+
+15
+00:04:16,148 --> 00:04:31,468
+Şimdi, herkes dokümanı açsın arkadaşlar. Bir JT, yani bir Polar Junction Transistor ile ilgili bir laboratuvarımız var bu hafta. Yüksek ihtimalle önümüzdeki haftalardan birinde önce herhalde CMOS, sonra da o pump yaparız gibi duruyor.
+
+16
+00:04:31,468 --> 00:04:40,708
+Hocalara yine sorarız, bittikleri, konuyu bitirdikleri, genelde uygulama çözdükleri hafta, mesela bu hafta, biz de onunla ilgili laboratuvar yapıyoruz. Bu hafta öyleydi mesela.
+
+17
+00:04:42,355 --> 00:04:46,776
+Derste CMOS veya OPPAMP'a henüz geçmediniz değil mi? Bugün ne yaptınız mesela?
+
+18
+00:04:49,135 --> 00:04:55,875
+Hocam, transistörlerin devredeki gerilim bölücü devret gibi şeylerin üzerine soru çözdük.
+
+19
+00:04:55,875 --> 00:05:08,355
+Tamam, bizim laboratuvarımızla ilgili. Bugün görmüşsünüz taze taze. O kadar ileri şeyler yok zaten bizde. Onun bir örneği var sadece. İyi denk geliyor. O zaman BGT'desiniz daha değil mi? BGT'deyiz daha. CMOS'a geçmedik.
+
+20
+00:05:09,056 --> 00:05:09,635
+Evet hocam.
+
+21
+00:05:11,091 --> 00:05:35,231
+Önümüzdeki 1-2 hafta için artık bilmiyorum ne kadar ilerlerse hocalar ona göre biz yine şey yaparız. Herhalde kesin konuşmamakla birlikte haftaya herhalde konu olarak 2 tane henüz işlenmediği için herhalde yapmayız gibi duruyor laboratuvar. Yine duyuruları takip edin Piazza'dan. Piazza'yı son defa kullanıyoruz biz de bu arada. Aslında çok iyi bir arayüzü var ama artık paralı yapmışlar onu da.
+
+22
+00:05:35,732 --> 00:05:46,172
+Pek çok online öğretim platformunu yaptıkları gibi önümüzdeki yıllardaki örneğin mikro işlemcileri bizden alırsanız herhalde orayı kullanamayız gibi duruyor.
+
+23
+00:05:47,012 --> 00:05:50,572
+Çünkü Ağustos'tan itibaren paralı yapıyoruz demişler.
+
+24
+00:05:50,932 --> 00:05:52,891
+Ama sayfada bilmiyorum size de öyle bir bilgi çıkıyor mu?
+
+25
+00:05:55,031 --> 00:05:56,852
+Şimdi ilk sayfadan başlayalım.
+
+26
+00:05:58,012 --> 00:06:01,192
+Açıklamam bittikten sonra 2 saati vereceğim. Bunlar sürenizden gitmiyor yani.
+
+27
+00:06:02,291 --> 00:06:25,191
+Kullanılacak malzemeleri söylemişiz. Burada tek kritik şey bir tane daha eleman var. Onun ne olduğunu soruyoruz zaten. O yüzden ismini vermedik. Malzeme listesi kodları ile birlikte burada var. Proteus'ta nasıl seçeceğiniz, bir yerde data sheet okumanız gerekecek. Hangi elemanın data sheetini internette o koduyla arayarak bulacaksınız. Genelde Çin sitelerinde oluyor İngilizce data sheet.
+
+28
+00:06:25,684 --> 00:06:51,824
+İlk sayfada neleri öğreneceğiz? Bunları okursunuz az sonra başlayınca. İki tane sorumuz var. Bir tanesi tek transistörlü, diğeri de çift transistörlü. Kullanılan iki devredeki transistörün tipleri birbirinden farklı olmak isteyebilir. Birincisinde bir devre kurduk biz size ve bunu analiz etmenizi istiyoruz aslında bir şekilde. Biraz oynayarak biraz da tasarıma yaklaştırmanızı istiyoruz.
+
+29
+00:06:52,851 --> 00:07:00,391
+A şıkkında bir tane switch ve bir transistör var gördüğünüz gibi devrede. Bunların görevini soruyoruz. Ne işe yaradığını burada.
+
+30
+00:07:01,631 --> 00:07:08,371
+Bu devrede transistör ne yapıyor? Transistör tanımı ile ilgili aslında bu sorudaki sorulan şu ne işe yaradığı.
+
+31
+00:07:08,971 --> 00:07:14,431
+Switch'in de ne işe yaradığını soruyor bu devre için. İzah ederseniz devredeki diğer konfantları göz önüne alarak.
+
+32
+00:07:15,971 --> 00:07:18,331
+Sonra devrenin çalışma durumunu çözülemenizi istiyor.
+
+33
+00:07:19,444 --> 00:07:24,564
+Yani bu haliyle eleman değerleri görünüyor şu anda. Diğerlerini de sonun başında söylemiş.
+
+34
+00:07:25,224 --> 00:07:31,784
+I, C, I, B, V, L, B, V, B, V, C. Bunları ölçerek aslında bize bir ekran çıktısı sunuyorsunuz.
+
+35
+00:07:32,244 --> 00:07:56,884
+Bu bir sayfayı açmayacak şekilde biraz küçük olabilir sorun yok. Şöyle altına da isterseniz yorum koyarsınız. Ama biz şunu görelim. Kollektör baz akımı nedir? Baz emitter gerilimi nedir? Kollektör emitter gerilimi nedir? Şimdi en başta şunu söyleyeyim. Soru bazında demiyorum ama şık bazında kararımız şudur. Soruyu yarısını yapayım, yarısını yapmayayım yok.
+
+36
+00:07:57,300 --> 00:08:23,060
+Çünkü burada bu A şıkkında birinci kısımda ve ikinci kısımda sorulan örneğin üç tane adım var burada. Switch'in görevini yazıyorsun, transiyonun görevini yazıyorsun. Ya benim zamanım kalmadı. I, B, I, C'yi de ölçmeyeyim deyip geçerseniz bu sorudan sıfır alırsınız. Çünkü her şıkkın kendi içinde soruluş amacı onu tamamen yapmanız. Bütün adımlarını tamamlayın. Yorum soruları için belki bu esnetilebilir. Örneğin en sondaki sorunun en son şıkkı. Uzun biraz zaten.
+
+37
+00:08:23,540 --> 00:08:37,120
+O hadi tamam yarısını doğru yaptıysan yarım puan belki verilebilir ama şıklı böyle adım adım sayısal sonunda sizi bir yere vardıran sorularda e-switch'in görevini yazayım deyip geçip oradan kısmı bir puan alamazsınız. Onu söyleyeyim.
+
+38
+00:08:39,379 --> 00:08:42,960
+B şıkkında dediğim bahsettiğim data işte bakma sorusu bu.
+
+39
+00:08:43,572 --> 00:08:54,912
+Transition data sheet'ına bakarak bir hesap isteniyor burada sizden. Okursunuz. Uzun uzun anlatmayayım. Baz emitter gerilimini satüre eden baz akım var. O test edilmiş daha önceden.
+
+40
+00:08:55,347 --> 00:09:22,507
+VBE Saturated 0.7 kabul ediliyor. Yani bir baz akımı var ve bu VBE'yi 0.7 volta sürüyor. Bu sırada gerekli bir revir direnci var. Buna hesaplamanızı istiyor. Tabi ki data sheet'e gidip bu daha evvelden test edilen maksimum UBE akımını oralardan bulmanız gerekecek. Bu soru da o. Transistörün değerini yazacaksınız. Teorik olarak derivation nasıl yapılıyor onu söyleyeceksiniz. Nasıl hesapladınız? Teorik kaset bölümüne de onu yazacaksınız.
+
+41
+00:09:23,347 --> 00:09:41,427
+Örneğin, ikinci sayfada D şıkkı bitsin. D şıkkı bitemez, devamı da varmış. E şıkkı yukarılara gelmesin veya diğer sayfaya geçmesin. Öyle söyleyeyim. Okurken bize de çok sorun olmasın. Sizin açınızdan kötü oluyor, görmüyoruz bazen. Eksik puan almayın diye söylüyorum.
+
+42
+00:09:43,567 --> 00:09:46,427
+Sonra R1 direncini belirlediniz bu şıkta.
+
+43
+00:09:47,091 --> 00:09:55,411
+Değişik, biraz daha ölçümlü bir şey. Adım adım yapmanızı istiyor burada aslında. Önce şunu yapın, kaydedin diyor bir yerlere. Okursunuz yine sizde detaylı olarak.
+
+44
+00:10:00,000 --> 00:10:26,159
+İC ve IB kollarından geçen akımı, ayrıca VC ve VB arasındaki gerilimi hesaplamanızı istiyoruz önce. Bu değerleri ölçmenizi istiyoruz. Sonra 24 ohma çıkaracaksınız lambanın direncini. Tekrar bu ölçümleri yapacaksınız. En baştaki ve sonradan değiştirdikten sonra yaptığınız ölçümleri, ilkini bir yere falan yazmanızı istemiyoruz. İsterseniz yazın. Biz aslında burada şunu soruyoruz. Lambanın parlaklığı nasıl değişti? Değişti mi?
+
+45
+00:10:26,624 --> 00:10:40,544
+Değiştiyse neden değişti? Burada onu açıklamanızı istiyoruz aslında. Ekran görüntüleriyle burada izah edersiniz. Ölçüm şeylerini bağladım ben bu durumda. Ölçtüm. 24 ohm yaptıktan sonra.
+
+46
+00:10:40,544 --> 00:10:53,264
+Ve şu an üçüncü sayfaya geçtim. Burada da lambanın durumuyla ilgili. Bu değişiklikleri yapıp bu ölçümleri yaptıktan sonra lambayı da şöyle gözlemledim. Ki parlaklık değişimi var mı yok mu o nasıl değişti ve neden değişti?
+
+47
+00:10:53,971 --> 00:11:16,671
+Eşıkkı'dan önce de onları yazarsınız. Dördüncü sayfada. Sonra Eşıkkı var. Tekrar lambanın direncini 1K yapıyorsunuz. Eşıkkının 3 alt şıkkı var. A, B, C. Çözümleri de hemen altında. Burada sizden bir tasarım yapmanız isteniyor aslında. Bunu bir aydınlatma sistemi olarak kullanacaksınız. Switch'iniz var.
+
+48
+00:11:20,532 --> 00:11:46,052
+Burada söylüyor. Switch kapalıyken açıldığında, yani kafanız burada ters çalışabilir. Devre teorisinden belki hatırlarsanız. Switch'i kapatmak demek, açmak demek ne demek ona dikkat edin. Burada parantezde bir izah verildi ama söylemeyeyim artık biliyorsunuzdur. Switch'i açmakla kapatmak normal kafamızdaki açmakla kapatmak gibi değil. Oradan akımın iletimini sağlamak veya sağlamamak olarak düşünün.
+
+49
+00:11:46,772 --> 00:12:00,851
+Sonra bu durumdayken, switch ile ilgili işlemi yaptıktan sonra, biz lambanın minimum 5 saniye, maksimum 10 saniye, hatta mümkünse böyle exact bir sayısal hesap yapabiliyorsanız, 6 saniye yanmasını istiyoruz.
+
+50
+00:12:02,532 --> 00:12:13,272
+Bunun için aslında 3 adımdan oluşuyor bu. En sonunda da yorumu var. Hangi elemanı eklemeniz gerekiyor buraya? İşte yukarıda hani eleman listesinde ismini vermediğimiz eleman.
+
+51
+00:12:15,764 --> 00:12:39,083
+Bu elemanı ekledikten sonra devrenin neresini ekleyeceksiniz o da var. Ona ekledikten sonra proteost ekran çıktısını koyuyorsunuz. Dördüncü sayfanın sonunda sonra beşinci sayfada. Bu elemanı koyduğunuz zaman o elemanın size minimum beş, maksimum on hatta mümkünse altı saniye o ilgili lambayı yanık bırakabilmesi için zaten bence çok basit bunun şu an hangi eleman olduğunu herkes tahmin etmiştir.
+
+52
+00:12:40,340 --> 00:12:50,659
+Sadece o elemanın ne olduğunu yazıp ekran çıktısını koymak gördüğünüz üzere 20 puan. Bunu da belirtmek isterim. O yüzden bu soruyu sakın yanım yapmayın.
+
+53
+00:12:53,120 --> 00:13:06,799
+Hemen B şıkkında bu konulan elemanın değerini soruyor bize ve nasıl hesapladığınızı soruyor. Mümkünse elle. Devlet teorisi de bunu gördünüz aslında. Bir zaman sabiti hesabı var orada.
+
+54
+00:13:07,296 --> 00:13:33,916
+O zaman sabitinin aslında sizi 5 saniye boyunca yanık bırakacak şekilde set edilmesi gerekiyor. O kadar kopya vereyim. Ama elle yapamıyorum, hatırlamıyorum diyorsanız da, bakın parantezde şey yazmışız 5. sayfada. Nasıl hesapladığınızı teorik açıklama yapınız. Online hesaplayıcı kullanarak da bunun ekran görüntüsünü koyarak yapabilirsiniz. İnternette siteler var. Siz ayarlıyorsunuz oradaki değerlerini. O size o ilgili elemanın değerini döndürüyor.
+
+55
+00:13:34,803 --> 00:14:01,843
+Veya öyle yapabilirsiniz dediğim gibi. Bir de bu devrenin adı nedir? Bu haliyle böyle bir tasarım yaptınız. Bu devrenin adı nedir? Size onu soruyor. Devreyi tasarladıktan sonra böyle o ilgili komponentlerin isimlerini internette arayarak işte bir şey bir şey virgül bir şey bir şey li devre diye arayıp görsellere bakabilirsiniz falan Google'dan. O şekilde size hangi ne devresi olduğu ile ilgili bir fikir verebilir.
+
+56
+00:14:03,923 --> 00:14:23,843
+Burada şunu söyleyeyim. Bu devrenin ne işe yaradığıyla ilgili bu. Beşinci sayfadaki devrenin adı bir cümlelik cevap. Bu devrenin ne işe yaradığını bulamaz. Tahmini yürütemezseniz eğer orada kullanılan bir GT transistörün o konfigürasyondaki adını da yazsanız olur.
+
+57
+00:14:27,572 --> 00:14:38,991
+Emiterli bazlı isimler var ya böyle. Onlardan birine de yazabilirsiniz. Çok sorun değil. İkinci soruya geldik. Burada artık iki tane transistör var. Dikkat edin. Kullanılan transistör ilk soruda kullanılan transistörlerden farklı.
+
+58
+00:14:53,460 --> 00:15:11,460
+Burada L1 lambasındaki gerilimi, lambanın durumunu gözlemlemenizi istiyoruz. Yani gerilim ölçeceksiniz, lambanın durumunu yazacaksınız. Mesela 3'ü yaptım, lambanın gerilimini yazdım, statüsü yazdım, bıraktım ben bu soruyu, olmaz. Bu soruda bütün ölçümlerin yapılıp ve bunların herhangi birinin ispatına...
+
+59
+00:15:11,700 --> 00:15:22,019
+Kurduktan sonra ölçüm cihazını nereye yerleştireceğiz volta ölçerken onu da koyduktan sonra devrenin ekran görüntüsünü de bu A şıkkına 6. sayfada koymanızı istiyoruz.
+
+60
+00:15:23,100 --> 00:15:27,720
+Lamba durumlarını da biz buraya kadar böyle buradan sonra böyle demek ki diyebilelim okurken.
+
+61
+00:15:29,519 --> 00:15:34,700
+Şimdi burada dediğim gibi bu sorudaki transistörle ilk sorudaki transistör arasındaki fark var.
+
+62
+00:15:35,340 --> 00:15:38,960
+Buradaki bu farkı soruyor size aslında. Hatta kopya da vermiş.
+
+63
+00:15:39,379 --> 00:16:04,620
+İşte NPN Transistörü'nün çalışma prensibini özetle anlatınız diyor. İlk adımda ilk soruya göre olan farkı nedir? İşte bu şu, bu transistör değil de bu transistördür. İlk sorudakinden farklı olarak ve bu şu durumda şu işi yapar gibi bir izah isteniyor burada iki cümleyle. Sonra çalışma prensibi. Biraz daha burada bu sorunun içerisinde neden kullanıldığını.
+
+64
+00:16:05,491 --> 00:16:18,151
+Böyle maksimum 10 cümleyle, eğer çizebiliyorsanız çizimle, birazcık bu aşağı kayabilir sorun değil, izah ediyorsunuz. Bu soru için kullanılan transistörü.
+
+65
+00:16:19,151 --> 00:16:25,491
+Şimdi bu da biraz böyle sizi araştırmaya sevk edecek bir soru. C şıkkı, 7. sayfada.
+
+66
+00:16:27,700 --> 00:16:51,759
+Şimdi ölçüm yaptınız. İlk sorudaki transistöre göre bu sorudaki transistörü kıyasladınız. Tamam, işte bu soruda da bir lamba var. Hatta değişik değerlerde ölçüm yaparak lambanın durumunu gözlemlediniz. Bu sırada aslında, örneğin aşıkındaki ölçümleri de göz önüne alarak, 3 aşağı 5 yukarı size bu devre ne için kullanılabileceğiyle ilgili bir fikir veriyor olmalı. A ve B'yi yaptıktan sonra.
+
+67
+00:16:52,788 --> 00:17:15,028
+C şıkkında bu devrenin işlerini soruyor. İsmi gibi düşünebilirsiniz. Ne işe yaradığı ile ilgili. Bir cümlede bu devre şu işi yapar diye izah ediyorsunuz. Bulabiliyorsanız eğer ismini buluyorsunuz bunun ve nerelerde kullanılabileceğine dair isterseniz bulursunuz. Direkt işte bir yerde yazar, bir forum sitesinde aynı devre. Der ki burada burada kullanılır. Tamam yazarsınız. Sorun değil.
+
+68
+00:17:15,508 --> 00:17:42,367
+Eğer bulamıyorsanız da siz akıl yürütebilirsiniz. Burada biraz bu araştırma, fikir yürütme sorusu gibi düşünebilirsiniz. Değişikli biraz daha teknik. Elektronik elemanların burada ne için kullanıldığının yorum sorusu. Maksimum iki sayfaya kadar resim çizebilirsiniz, elle çizip resim koyabilirsiniz, paint de çizebilirsiniz, proteöste çizip üzerinde manipülasyon yapabilirsiniz, nasıl isterseniz. Ama ne kadar görsel, güzel adım adımı izah etme o kadar bizim için okumak için kolay.
+
+69
+00:17:42,836 --> 00:18:09,115
+Ne dediğinizi anlayabiliriz çünkü. Bu 30 puanlık bir soru çünkü. Devrenin kaç tane çalışma durumu olduğunu soruyor. Transistörün stakelerini hakkınıza getirin. Ve önceki şıklarda denediğiniz durumları düşünün. Gerilim, akım değerleri ne oldu? Siz sonuçta ne elde ettiniz? Ve bunu transistörün hangi davranışı sağladı? İşte o davranış geçişleri aslında stakelerin değişimleri olmuş oluyor.
+
+70
+00:18:10,355 --> 00:18:32,016
+Bir şey sizin için bu soru da önemli değil. İzha ederken D1, Q1, Q2 gibi değerleri çok dikkate alarak anlatmayın. Burada mümkün mertebe transistörün sizi çalışma prensibiyle ilgili yorumlar bence önemli. Bu sırada tıpkı A şıkkında ampulün yanması, sönmesi meselesi gibi statüs değişimi demiştik ona.
+
+71
+00:18:36,948 --> 00:19:02,028
+Yine ölçüm, akım ve gerilim ölçücüler koyabilirsiniz. Ampermetre, voltmetre. Stake'lerin değişimini görsel olarak da o şekilde gösterebilirsiniz. Örneğin ben buradaki gerilimi buraya çıkardım. Bakın buradaki akım ölçer şunu gösteriyor. Dolayısıyla buradan akım akmıyor. Atıyorum şu an kafadan. Bu bacakta şu anda gerilim bir önceki duruma göre yükseldi. Bu demek oluyor ki buradaki transistör şunu yapıyor gibi bir izah istiyoruz burada sizden.
+
+72
+00:19:03,476 --> 00:19:07,936
+Saat 16.22, 18.22'ye kadar süremiz başladı. Sorusu olan var mı?
+
+73
+00:19:14,483 --> 00:19:38,364
+Herkes anladı. Tamam. Herkese kolay gelsin. Ben şimdi chat'e yükleme linkini de paylaşıyorum. Kuralımız geçen şeydekiyle aynı. PDF yüklüyoruz. PDF'i isimlendirirken bu raporun başında veya formu yüklerken orada da bir izah koyduk. Hangi formatta isimlendirmeniz gerektiği yazıyor.
+
+74
+00:19:40,243 --> 00:19:58,423
+10 megabayttan bir yüksek dosyayı kabul etmeyecek. Yalnızca bir defa yükleme şansınız var. Bir de bana bir arkadaş mail atmış. Belki buradan biridir. Yanlış yüklemiş galiba. Burada mı o arkadaş? Proje önerisi yerine final linkinden yüklemiş. Burada mı?
+
+75
+00:20:02,003 --> 00:20:16,443
+Şeyi ben bilmiyorum. Bir kere yükledikten sonra o kişiyi bir daha yükleme hakkı siz bilen varsa aranızda bana söylesin Gmail'den. Bakacağım. Eğer olmazsa onu başka bir mail adresinden tekrar atarsın. Sorun değil.
+
+76
+00:20:20,403 --> 00:20:36,064
+Bu elektrik kesintileri de yani garip bir hal almaya başladı. Yani bunun için geçen hafta bir öğrencinin başına geldiğinde bana yaşadığı bölgedeki elektrik kurumunun sitesindeki olan şeyi paylaşmıştı.
+
+77
+00:20:36,064 --> 00:20:46,644
+Benim bunu kabul edebilmem için, ismini vermiyorum şu anda, özelden yazmışsın. Bana lütfen öyle bir kesintinin olduğunu gösteren bir ibare olursa iyi olur. Çünkü herkes bunu diyebilir.
+
+78
+00:20:50,867 --> 00:21:12,607
+Hangi bölgede yaşıyorsun bilmiyorum. Hangi ildesin? Bizdeki anlık kesintilerin gözlendiği bir şey var. Hangi ildeysen, İstanbul'da BEDAŞ galiba. Onun sitesine git lütfen. Oradan yaşadığın bölgede kesinti olduğunu ve o bölgede yaşadığına dair bana bir mail at lütfen. Ondan sonra sorun yok.
+
+79
+00:21:16,435 --> 00:21:16,935
+Tamam.
+
+80
+00:24:07,827 --> 00:24:11,107
+Yükleme linkini chat'e koydum. Oradan bitiren yükleyebilir.
+
+81
+00:34:36,659 --> 00:34:59,059
+Sayımızda değişim oluyor arkadaşlar. Yeni gelenler falan olduysa ufak bir hatırlatma yapayım tekrar. Yükleme linkini çete yazdım. Soruların şıklarında her şık için kısmi cevaplar vermemeye çalışın. Bütünlüğüyle o soruyu cevaplayın. O şıkkı cevaplayın. Örneğin birinci sorunun A şıkkını. Mesela sizden hangi eleman kullanılabilir?
+
+82
+00:35:00,019 --> 00:35:22,860
+Şu elemanı yazdıktan sonra onu devredeki haline ekleyip ekran çıktısını koymazsanız eğer veya koyduğunuzda yanlış koyarsanız elemanı doğru tespit etmeniz yetmez. Bizim böyle adım adım sizi yönlendiriyor olmamız soruyu nasıl düşünmeniz gerektiğiyle ilgili yönlendirmek adına. Yoksa bütünlüklü olarak okuyacağız o şıkkı. O yüzden ona dikkat edin. Elemanı yazdım hocam buradan neden puan vermediniz gibi bir durum olmasın sonradan.
+
+83
+00:35:23,443 --> 00:35:42,403
+Elemana doğru tespit edildikten sonra nereye bağlamanız gerektiğine de örneğin doğru karar verin. Veya 3 volt, 5 volt, 7 volt, 12 volt için ölçümler yaptırıyoruz mesela. İşte bir yerde bir değişim olacak. Belli soruluş amacı o. Onu yanlış tespit ederseniz de oradan hani ama ben 3 volt için doğru hesaplamışım yeterli değil.
+
+84
+00:36:46,708 --> 00:37:04,708
+Hocam. İniyorum. Proteus'da sıkıntısı olunca onu nasıl çözüyorduk? Şu an ben hiçbir şeye basamıyorum da. Kitledi kendini. Kitledi derken, şey gelemiyorum yani. Mouse seçme şeyinde kaldı. Çıkamıyorum oradan.
+
+85
+00:37:05,492 --> 00:37:11,891
+Solda, hani böyle ok işareti falan onlardan bahsediyorsun herhalde. Onun dışında böyle bir şey yaşamadı ama.
+
+86
+00:37:12,391 --> 00:37:20,211
+Kalem halinde kaldı hocam. Hani kendisi hareket ettirme modunda kaldı o haldeyken. Ondan çıkılmıyor yani kapatmam lazım herhalde.
+
+87
+00:37:20,612 --> 00:37:22,052
+Eski ipi bastığında da düzelmiyor mu?
+
+88
+00:37:22,492 --> 00:37:24,731
+Yok. Ben direkt her türlü duşa basıyorum şu an yani.
+
+89
+00:37:25,012 --> 00:37:33,452
+Peki sol üstte hani böyle seçenekler var. Şimdi ne vardı hatırlamıyorum. Biri ok işaretidir kesim onun, biri komponent seçimidir. Onların arasına gidip gelme.
+
+90
+00:37:33,492 --> 00:37:42,351
+Ne yaptın? Yapabiliyor muyum? Tava falan bastı. Yok hocam, onu herhangi bir tuşla. Bir saniye, ben bir batımı seçeyim.
+
+91
+00:37:59,891 --> 00:38:05,871
+Tamam, kalem varken sonra gidip yukarıya Selection moda seçtiğin zaman onun tekrar imlece dönmesi lazım ama.
+
+92
+00:38:06,112 --> 00:38:12,091
+İşte oraya geçemiyorum hocam. Grid var ya, grid'in içinde de sıkışık kaldı seçme şeyi.
+
+93
+00:38:12,371 --> 00:38:16,991
+Bir defa böyle bir şey diyorum ama. Anladım ne demek istediğim. Seni sürüklüyor sağa sola doğru.
+
+94
+00:38:17,371 --> 00:38:22,652
+Aynen hocam, sadece sürükleyebiliyorum. Hiçbir şeyi de değiştirme falan da izin vermem. Lambaları falan filan olsun.
+
+95
+00:38:24,532 --> 00:38:26,771
+F1'e basınca işte şey, her bir şeye geliyor.
+
+96
+00:38:27,112 --> 00:38:28,612
+Sağ tuşa basabiliyor musun?
+
+97
+00:38:29,112 --> 00:38:29,532
+Ney hocam?
+
+98
+00:38:29,811 --> 00:38:31,552
+Sağ tuşa basabiliyor musun herhangi bir yerde?
+
+99
+00:38:31,972 --> 00:38:33,472
+Yok hocam, sağ tuşla çalışmıyor.
+
+100
+00:38:33,572 --> 00:38:38,912
+O zaman başka bir parada. Normalde sağ tuşu bu pozisyonda bastığın zaman Place, Select All Objects falan gibi şeyler çıkıyor.
+
+101
+00:38:38,912 --> 00:38:43,811
+Yok. Büyük ihtimalle simülasyon şeyinde kaldı hocam herhalde. Onu öyle düşünüyorum.
+
+102
+00:38:44,372 --> 00:38:47,932
+Aşağıdaki şeylere de Stop Up da basamıyorsun.
+
+103
+00:38:48,172 --> 00:38:49,572
+Yok hocam, aynen gitmiyor mouse.
+
+104
+00:38:49,851 --> 00:38:52,172
+O zaman kapatıp açacaksın, başka çare yok.
+
+105
+00:38:52,532 --> 00:38:57,172
+Bir şey diyebilir miyim? Shift'e bas bir düzelir belki.
+
+106
+00:39:01,912 --> 00:39:03,572
+Neymiş peki bu? Ben de öğreneyim.
+
+107
+00:39:03,652 --> 00:39:13,172
+O şey hocam, projede gezme shift'e bastığınızda sağa götürürseniz sağa sürüklüyor, sola götürürseniz sola sürüklüyor. Tekrar basınca düzeliyor.
+
+108
+00:39:13,592 --> 00:39:14,731
+Sağ basın.
+
+109
+00:39:16,512 --> 00:39:19,532
+Hocam bir de bu fırsatta ilk soru da...
+
+110
+00:39:20,436 --> 00:39:26,892
+Kapalı iken mi screenshot'ını koyalım yoksa açıkken mi? Switch. Bakayım bir daha sür.
+
+111
+00:39:30,739 --> 00:39:33,420
+Birinci sorunun ilk şıkkı değil mi? Evet hocam.
+
+112
+00:39:40,659 --> 00:39:41,259
+Hmm.
+
+113
+00:39:45,940 --> 00:39:57,920
+Şimdi cevabı çok açık ama. Söylemeyeyim hangisi olduğunu. Onu tahmin etmelisiniz bence zaten. Çünkü birinden bu defa değer okuyamazsın ya.
+
+114
+00:39:58,760 --> 00:39:59,460
+Evet hocam fark ettim.
+
+115
+00:39:59,460 --> 00:40:13,460
+Bir tanesinde, sana değil de herkese söylüyorum bunu. Herkes birinin sonuna aşıkına tekrar bakabilir. Bir konumda kalırsa, hangi konum olduğunu siz bilirsiniz artık Sevic'in veya diğer konum. Birinci konumda kalırsa eğer, o zaman zaten ölçmenizi istediğimiz şeyi...
+
+116
+00:40:13,811 --> 00:40:25,271
+Oradan sıfır olur. O zaman o olmaz. Oradaki değerleri sıfır ölçmeniz için istemiyoruz. Öyle söyleyeyim. Gerçekten hepsi iletimde olsun. Hepsinin sayısal sıfır dışında bir değeri olmanı.
+
+117
+00:40:29,271 --> 00:40:29,911
+Dinliyorum.
+
+118
+00:40:30,692 --> 00:40:38,799
+Yani az önce dediniz ya, ölçümüzü gereken bir şeyler, onun sıfır gelmemesi lazım. O kolda şey diye öğrendik. Yani çok çok...
+
+119
+00:40:38,800 --> 00:40:54,039
+Cüzi bir miktar, küçük bir miktarda akım geçmesi lazım, görmeniz lazım demişti hocam. Ama ben bu küçük bir miktarda akım görmüyorum. Yani oranla, herhangi başka bir kola oranla. Bahsettiğim şeyi anladınız mı? Hangi kola oranla?
+
+120
+00:40:54,060 --> 00:40:55,140
+Baz akımından mı bahsedin?
+
+121
+00:40:55,480 --> 00:40:57,579
+Evet. Yani çok çok küçük bir şey değil.
+
+122
+00:40:58,900 --> 00:40:59,980
+Çok çok küçük bir şey değil mi?
+
+123
+00:41:00,600 --> 00:41:02,539
+Evet yani, örneğe gitti ama.
+
+124
+00:41:05,811 --> 00:41:07,031
+Bakıyorum bir saniye daha.
+
+125
+00:41:07,731 --> 00:41:18,211
+Mesela Collector'la kıyasladığım zaman, hatta direnç değerimi söyleyebilirim istersen.
+
+126
+00:41:38,771 --> 00:41:47,271
+Çok büyükse olmaz. Ama akım zaten amper felansa o zaman sorun vardır da bilemedim.
+
+127
+00:41:52,724 --> 00:41:58,163
+Milyamper düzeyinde hocam ama Collector'la kıyasladığımda ciddi bir fark yok yani.
+
+128
+00:41:58,463 --> 00:42:00,644
+Peki hani şu BGT'nin denklemleri var ya.
+
+129
+00:42:02,384 --> 00:42:06,264
+BNN-O'c cinsinden yazılışı falan. Bunları sağlayabiliyor musun şu anda?
+
+130
+00:42:09,764 --> 00:42:12,684
+Bir denklemi sağlıyor. Bir eşitliği sağlıyor.
+
+131
+00:42:12,784 --> 00:42:15,984
+Beta'lı falan formüller var ya mesela. Oradan teyit edebilirsin doğru yapmak.
+
+132
+00:42:16,503 --> 00:42:18,644
+Anladım. Tamam teşekkür ederim hocam.
+
+133
+00:42:18,644 --> 00:42:19,943
+Hepiniz için geçerli tabii yine.
+
+134
+00:43:11,860 --> 00:43:16,260
+İngilizlerin bilmemesindeydi. Bir şey olayacak ama.
+
+135
+00:47:48,244 --> 00:47:53,144
+Hocam, birinci sorunun beş hakkında teorik hesaplama ne oluyor acaba?
+
+136
+00:48:01,715 --> 00:48:14,076
+Şimdi data sheeti açtığınız zaman VB'yi satüre eden, satürasyona sokan, IB akımı var test edilen. Önce data sheetten bunu tespit etmemiz gerekiyor. Buna baktın mı?
+
+137
+00:48:18,900 --> 00:48:19,820
+Evet, baktım.
+
+138
+00:48:20,539 --> 00:48:41,539
+Tamam. Bu değeri sana sağlayan gerekli revir direnci var. Yani VB'nin satüre olmasını sağlayan, ki bu sırada VB'nin bir değeri var, bunu sağlayan bir revir direnci var. Bunu tekrar hesaplamanı istiyor. Sen başta onu rastgele seçtin ya.
+
+139
+00:48:42,228 --> 00:48:43,927
+Evet, peki o...
+
+140
+00:48:43,927 --> 00:49:00,748
+Şimdi artık R1'in yeni değeri şunu garanti etmeli. VB saturasyonda, ÜB buna istinaden test edilen maksimum akımında ve bu iki durumu sağlayan bir R1 direnci var. Onun ne olduğunu soruyor sana.
+
+141
+00:49:02,587 --> 00:49:06,448
+Hocam hem direnci soruyor hem de teorik çözüm diye bir şey soruyor ya.
+
+142
+00:49:08,307 --> 00:49:09,748
+Birim B şıkkından bahsediyorsun.
+
+143
+00:49:10,175 --> 00:49:10,716
+Evet.
+
+144
+00:49:11,916 --> 00:49:19,096
+Birinin B'sinde data sheetten bakarak ve B'yi bu sorudan eminiz değil mi? Aynı sorudan bahsediyoruz.
+
+145
+00:49:19,956 --> 00:49:20,235
+Evet.
+
+146
+00:49:21,115 --> 00:49:23,536
+Tamam. Neyi soruyorsun burada? Bir daha sor şimdi.
+
+147
+00:49:27,795 --> 00:49:39,715
+B şıkkında R1 direncinin ne olduğunu soruyor. Hemen altında da teorik çözüm diye bir kısım var. O teorik çözümün ne olduğunu anlamadım.
+
+148
+00:49:39,715 --> 00:49:48,996
+R1 direncini direkt yazacaksın. Atıyorum kafadan. Binon. Oraya onu yazacaksın. Sadece bir değer. Aşağıda da onu nasıl hesapladığını anlatacaksın.
+
+149
+00:49:50,235 --> 00:49:50,915
+Yazıyla mı?
+
+150
+00:49:52,371 --> 00:49:56,192
+Yani hesap olduğuna göre biraz hesap verman gerekecek sayısal.
+
+151
+00:49:58,831 --> 00:50:00,371
+Fotoğraf mı yükleyeyim yani?
+
+152
+00:50:01,612 --> 00:50:12,731
+İşte nasıl arzu edersen, ister elinle kağıdı çizip resmini yükleyebilirsin, ister Word dokümanında equation kullanabilirsin. Nasıl rahat ediyorsan.
+
+153
+00:50:13,811 --> 00:50:14,171
+Anladım.
+
+154
+00:57:05,940 --> 00:57:07,220
+Hocam bir şey sorabilir miyim?
+
+155
+00:57:08,480 --> 00:57:08,800
+Evet.
+
+156
+00:57:09,880 --> 00:57:14,440
+Birinci sorunun D şıkkında ikinci bir lambayı mı bağlamamız gerekiyor devreye?
+
+157
+00:57:15,579 --> 00:57:17,000
+Hayır büyük ihtimalle ama bakayım.
+
+158
+00:57:20,692 --> 00:57:22,412
+Yok, iç direncini değiştiriyorsun.
+
+159
+00:57:22,731 --> 00:57:24,112
+Sadece olan devrede değil mi?
+
+160
+00:57:24,112 --> 00:57:30,192
+Tabii tabii. İlgili devredeki gördüğün lambanın iç direncini güncelliyorsun.
+
+161
+00:57:30,632 --> 00:57:31,872
+Tamamdır hocam, teşekkür ederim.
+
+162
+01:00:21,715 --> 01:00:23,935
+Arkadaşlar, aranızda eşitlığına gelen var mı?
+
+163
+01:00:28,724 --> 01:00:31,364
+E şıkkına gelen veya direkt ona geçen var mı?
+
+164
+01:00:40,275 --> 01:00:43,076
+Geçince o zaman, hocam ben eşliklığına geçtim.
+
+165
+01:00:44,355 --> 01:00:44,975
+Değil mi?
+
+166
+01:03:02,228 --> 01:03:09,847
+Bir arkadaş ben geçtim demiş ama diğerleri de yaklaşıyorlardır herhalde. Bir soruya bakın şöyle.
+
+167
+01:03:14,739 --> 01:03:20,279
+Bir eleman ekleyeceksiniz, bir yere ekleyeceksiniz. Şimdi elemanı tespit etmek bence çok zor değil ama nereye koyacağınız biraz sıkıntılı olabilir.
+
+168
+01:03:22,659 --> 01:03:33,739
+Şöyle yapabiliriz bunu bence. Ben sizin doğru gidip gitmediğinizi algılayabilmem adına bana chatten mesela sadece benim göreceğim şekilde...
+
+169
+01:03:34,516 --> 01:03:56,895
+Hocam bence şuraya bağlayacağız diye şöyle 3-5 kişi yazabilir şimdi yaklaşan ve o soruyu yapan herkes. Şu elemanı şuraya bağlayacağız diyebilirsiniz mesela. Eleman doğru mu? Bağlayacağınız yer doğru mu? Ben gidişat nasıl gidiyor? İstatistiki olarak sınıf düzeyinde onu görmüş olurum böylece. Eğer iyi gidiyorsa çok müdahale etmem ama eğer iyi gitmiyorsa müdahale ederim.
+
+170
+01:04:12,307 --> 01:04:22,167
+Denediğiniz zaman görsel olarak az çok anlarsınız zaten denediğiniz eleman doğru yere bağlandı mı ve istenilen şeyi gerçekleştiriyor mu?
+
+171
+01:04:22,288 --> 01:04:26,248
+Aslında hani siz kendi kendinize de doğru yapıp yapmadığınızı ölçebilirsiniz.
+
+172
+01:04:41,396 --> 01:04:43,396
+Hocam ben yazdım ama geldi mi mesaj?
+
+173
+01:04:46,216 --> 01:04:47,275
+Kim, ismi ne?
+
+174
+01:04:47,836 --> 01:04:49,016
+[öğrenci], [öğrenci] sağlam.
+
+175
+01:04:49,416 --> 01:04:50,336
+Evet, geldi okudum.
+
+176
+01:04:51,775 --> 01:04:57,235
+Yani evet ya da hayır demeyeceğim kimseye ama bir sürü gelsin bir gidişata bakayım.
+
+177
+01:04:57,356 --> 01:04:59,576
+Çoğunlukla yapıldı mı, yapılamadı mı? Onu ölçayım en azından.
+
+178
+01:04:59,836 --> 01:05:04,476
+Alper hocanız da yazıyor hatta onun sınıfında da aynı şeyi yapmasını şey yapacağım rica edeceğim.
+
+179
+01:05:05,615 --> 01:05:06,155
+Tamam hocam.
+
+180
+01:05:07,891 --> 01:05:12,072
+Devam edin yani siz. Zaten doğruluğunu aslında kendin görmüşsündür.
+
+181
+01:05:13,431 --> 01:05:13,891
+Evet, evet.
+
+182
+01:11:56,979 --> 01:12:01,619
+Diğer arkadaşlar, ilenleyemedim mi arkadaşlar? Çok az iki kişi yazdı bana ama.
+
+183
+01:12:06,771 --> 01:12:13,771
+Bir işi yapıyor olup yanlış yapıyor olabilirsiniz. Bana geri bildirimde bulunun ki eğer iyi gitmiyorsa ben müdahale edebileyim.
+
+184
+01:12:16,192 --> 01:12:19,631
+Daha E şıkkına [öğrenci] ve [öğrenci] dışında gelen olmadı mı hiç?
+
+185
+01:12:22,192 --> 01:12:24,211
+Bana özelden iki arkadaş yazdı.
+
+186
+01:12:37,811 --> 01:12:44,992
+Hocam, açıkçası lab soruları derste çözdüğümüz örneklerle pek uyuşmadığı için ben zorlanıyorum yapmakla. Diğerlerini bilmiyorum ama.
+
+187
+01:12:46,372 --> 01:12:54,391
+Evet hocam, ben de hala birinci sorudayım. Yani Hamza Hocanın çözdüğü örnekler arasında bu kadar zorları yoktu.
+
+188
+01:12:55,471 --> 01:13:02,391
+Aslında soru zor değil. Soru bir yere uygulandığı için size zor geliyor. Normalde, yani lamba mesela size...
+
+189
+01:13:02,655 --> 01:13:21,815
+O lamba var falan diyorsanız orada bir hatanız var yani. O bir direnç aslında. Hani o konfigürasyon, gördüğünüz konfigürasyon bazında direnç, kolektöründe direnç bağlı, emitörü toprağa bağlı bir yapı. Dolayısıyla hoca eminim daha zorunu çözmüştür yani. Çözüyor biliyorum çünkü.
+
+190
+01:13:25,971 --> 01:13:28,311
+Koyduğu şeyler daha kapsamlı ve daha karışık.
+
+191
+01:13:28,631 --> 01:13:29,711
+Evet, ben de aynı fikirdeyim.
+
+192
+01:13:30,231 --> 01:13:33,912
+Birkaç tanesi de, birkaç tane koyduğu şeyde de bu sorunun çözümü var bu arada.
+
+193
+01:13:34,511 --> 01:13:40,072
+Yani o yüzden siz uygulama tarafından baktığınız için karışık geliyor büyük ihtimalle şu anda.
+
+194
+01:13:40,551 --> 01:13:42,192
+Aslında soru saf haliyle.
+
+195
+01:13:43,692 --> 01:13:48,912
+Sağda solda birer direnç kullanan, ortada bir tane BGD olup, diğer emitter bacağı, toprağa bağlı bir konfigürasyon.
+
+196
+01:13:49,939 --> 01:14:08,359
+Ben onun adını söylemeyeyim, onu zaten şıklarda ne işe yaradığını değil de konfigürasyon adına yazabilirsiniz dediğim şeyi söylediğimi varsayın şu anda. İki kelimeli. O teknik ismi internette arasan bu çıkıyor zaten. Ama lamba değil de direnç var. Onunla da ilgili bir sürü çözüm var.
+
+197
+01:14:10,359 --> 01:14:16,579
+Yani uygulama tarafından bakınca zor geliyor. Evet ama yoksa yani Arper hocanızın az önce dediği gibi.
+
+198
+01:14:16,912 --> 01:14:17,852
+Aslında öyle değil.
+
+199
+01:14:19,252 --> 01:14:21,012
+Hocam burada, buyurun hocam.
+
+200
+01:14:21,552 --> 01:14:23,992
+Birinci sorunun en şıkkı için ipucu verebiliriz.
+
+201
+01:14:25,092 --> 01:14:26,112
+İdşaata göre, tamam mı?
+
+202
+01:14:26,399 --> 01:14:28,879
+Ben benim grupta şey yaptım. Sen de verebilirsin.
+
+203
+01:14:29,219 --> 01:14:51,399
+Tamam. Ben istatistik aldım ama yazan olmamıştı zaten. Böylesi daha doğru. Yine az önceki konuyla ilgili bir ekleme daha. Bu laboratuvarın zor denilebilmesi için bence Alper hocanızın burada Small Signal Circuit Equivalent ile ilgili kapasiteli bir soru sorması lazımdı. Böyle internal ve external kapasitelerle birlikte. Bu soru o zaman zor olurdu. Bu haliyle bu normal DC analiz yani.
+
+204
+01:14:57,524 --> 01:15:05,564
+Şu an kaçıncı şeydesiniz? Herkes böyle söylesin bakayım. Birinci soruda herkes büyük ihtimalle. Kaçıncı ışıkta? Onu söyleyebilirsiniz mikrofonlarınızı açarak A, B, C, D diye.
+
+205
+01:15:11,380 --> 01:15:27,920
+Kimse duyamıyor mu beni? Ben de yapıyorum şu an. Hangisini anlamadım? D yapıyorum ben. D desin tamam. Ben biraz karışık yapıyorum. C, D, E hepsinden birazcık. Ben de dedeyim hocam. D, E geldin yani peki.
+
+206
+01:15:29,979 --> 01:15:36,140
+Şimdiden söyleyeyim o zaman çok sıkıntı yok. Devreyi bir elemanla sürmemiz gerekiyor.
+
+207
+01:15:36,448 --> 01:16:02,168
+Ve bu bize bir süre daha enerji sağlaması gerekiyor. Artık hani adını söylesem bu kadar açık söylenmez bence o eleman. Nereye bağlayacağımız belki kafamızı karıştırabilir. Bu tarz devrelerin, bu tarz devrelerde bir noktayı beslemenin çok önemli olan çalışabilmesi için öyle düşünün.
+
+208
+01:16:03,444 --> 01:16:18,123
+O kadar kopya vereyim. Hangi bacağı sürekli bağladığınız, bağlamanız aktif tutmanız gerekiyor ki, transistör çalışır durumda olup ilgili lamba üzerinden, kolektörden emitterere doğru akım aksın.
+
+209
+01:20:56,564 --> 01:20:59,664
+Şu an herkes daha bir de değil mi arkadaşlar? İkiye geçen var mı?
+
+210
+01:21:02,664 --> 01:21:10,463
+Tamam, şöyle yapalım o zaman. Arkadaşlar, hocanızla ortak kararınız. Bir yarım saat daha süre ekleyelim. Şimdiden de söyleyelim bunu. Herkes ona göre hareket etsin.
+
+211
+01:21:12,364 --> 01:21:20,564
+Madem hani zor geldiğini söylüyorsunuz. 18.22 ile onu 18.52 yapalım. Olur mu? Bir itirazı olan yok değil mi?
+
+212
+01:21:26,355 --> 01:21:53,136
+Şu şey içinde, birinin en şıkkı içinde bir kopyada vereyim. Transistörü aktif olarak, hani normalde transistör için şey derler ya, iki tane özelliği vardır. Bir tanesi onun amplify etme özelliği, bir tanesi de switch olarak kullanılma özelliği. Yani açılsın, kapansın. Şimdi burada hangisini kullanıyoruz bir onu düşünün.
+
+213
+01:21:54,868 --> 01:22:01,728
+Bunu sağlamak için de bunu musluğa benzetirler hatta. Musluğu böyle kısarsınız kesilir, açarsınız akmaya devam eder.
+
+214
+01:22:02,168 --> 01:22:06,847
+Aslında buradaki şey kolektörden emitöre doğru bir akışın olmasını veya olmamasını sağlamak.
+
+215
+01:22:07,388 --> 01:22:13,888
+Bunu da nereden ayarlıyoruz biz? Hangi noktadan ayarlıyoruz? Karaktör veya emitör değil demek ki.
+
+216
+01:22:14,708 --> 01:22:19,847
+Dolayısıyla o noktayla ilgili bir müdahale yapmanız gerekiyor. O noktayı beslemeye devam etmeniz gerekiyor ki
+
+217
+01:22:20,287 --> 01:22:37,107
+Transistör bir süre daha iletimde kalarak aktif olsun ve böylece lamba yanmaya devam etsin. O zaman ben o sivici kessen bile tepeden, oraya bir eleman bağlayarak bir yerlere hemen onu aktifleyebilirim o zaman. Bunu gözünde bulundurun.
+
+218
+01:31:32,819 --> 01:31:46,379
+İlgili eklenen elemanın değerini, işte deneme yanılmayla bulundayım, şimdi mesela bir arkadaş. Bunlar kabul edilebilir değil, elbette. Onun bir hesabı var, o elemanı bulduktan sonra onun birbirine bağlı olduğu diğer elemanlarla birlikte.
+
+219
+01:31:47,979 --> 01:32:00,219
+İşte transistör falan var ya mesela altta. Aslında orada bazen emitter gerilimi var. İşte kolektör bacağında bir, dediğim gibi, lamba değil aslında bir direnç var. Oradan bir akım akıyor.
+
+220
+01:32:00,819 --> 01:32:14,739
+Bağladığınız bir yer var, onun üzerinden devam ediyor. Sonra bazda bir direnç var, R1 direnci. Bu komple ve en sağda 12 volt var. Bu komple bir sistem aslında normal devre teorisinde gördüğümüz kapalı bir devre.
+
+221
+01:32:28,275 --> 01:32:53,695
+Yapıya karşı geliyor. Orada biz bir hesap yapıyorduk. Orada kullanılan elemanın bize ne kadar daha süre enerji sağlayacağıyla ilgili. O hesap aslında hesap. Ha hesap ya unuttum ben o. Tamam devlet örücüsü unutmuş olabilirsiniz. O zaman dedik ki ona online olarak bir yerlerden bakın, onda ekran çıkısını koyun. İşte giriş bir şey bir şeyi ve çıkış bir şey bir şeyi. Hani başlangıç ve bitiş.
+
+222
+01:32:54,644 --> 01:32:58,924
+Ve bunun tekabül ettiği süre için gerekli olan o elemanın değeri.
+
+223
+01:32:59,963 --> 01:33:03,004
+Öyle forum siteleri var mesela, öyle hesaplayan online siteler veya o.
+
+224
+01:33:03,644 --> 01:33:08,004
+Ama tercih edilen şey tabii ki oradaki zaman sabitinin hesaplanması.
+
+225
+01:33:10,463 --> 01:33:12,024
+Bak zaman sabiti dedim, dikkat edin.
+
+226
+01:33:14,764 --> 01:33:18,315
+O bile aslında hangi eleman olduğu ile ilgili bilgi veriyor ve...
+
+227
+01:33:18,452 --> 01:33:22,752
+Onun hesabıyla ilgili böyle basit bir formül var. Hani onu kullanacaksınız. Öyle bir kopya olmuş olsun.
+
+228
+01:33:30,195 --> 01:33:40,815
+Mesela bir arkadaşımız şu an anlamış özelden yazdığına göre. O tarz bir hesap kullanmamız gerekiyor. Yani zaman sabitini hesaplamamız gerekiyor. Özetle.
+
+229
+01:50:39,604 --> 01:50:54,703
+Hocam, ikinci sorunun ilk sorusunda devrenin ekran görüntüsünü istiyor da, orada 3, 5, 7 ve 12 voltlar için tek tek ekran görüntülerini koymak durumunda mıyız? Yoksa bir tanesi için koyacak oluyor mu?
+
+230
+01:50:54,703 --> 01:50:59,824
+Yok hayır, aslında şablonu hazırlarken ben öyle yapmıştım ama bunu Alper hocanız böyle düzeltmiş. Muhtemelen.
+
+231
+01:51:00,564 --> 01:51:16,504
+Benim perspektifim ayrı ayrı koymaktan yanaydı ama sonra gerek olmadığı da belli aslında. Herhangi bir gerilim değeri, yani oraya bağlanan gerilim ölçücü orada olsun da nerede olduğu doğru olsun. Orada gösterilen değer zaten neyse oraya not edeceksiniz. O yüzden tek bir tanesinin ekran görüntüsü yeterli.
+
+232
+01:51:21,844 --> 01:51:23,783
+Hocam süre ne zamana kadardı?
+
+233
+01:51:24,623 --> 01:51:29,724
+18.52. Yarım saat uzatmayla birlikte. Saat 7'ye 8 kala.
+
+234
+02:06:23,507 --> 02:06:25,068
+Hocam bir soru sorabilir miyim?
+
+235
+02:06:26,927 --> 02:06:27,368
+Tabii.
+
+236
+02:06:29,708 --> 02:06:36,847
+İkinci soru da bipolar mı yoksa failed child mi kullanmamız gerekiyor? İkisinin arasında bir voltaj farkı var da ölçüm yaparken.
+
+237
+02:06:38,247 --> 02:06:40,667
+İkinci soru da hangi şıkkına bahsediyorsun?
+
+238
+02:06:41,268 --> 02:06:42,407
+Evet, A şıkkından.
+
+239
+02:06:43,208 --> 02:06:44,788
+İkinci sorunun A şıkkında tamam.
+
+240
+02:06:46,128 --> 02:06:50,487
+Transistörü kullanarken bipolar mı yoksa failed child mi kullanalım? Bir farkı var mı?
+
+241
+02:06:51,028 --> 02:06:54,307
+Çünkü voltmetre ile ölçerken değerler farklı çıkıyor ikisinde.
+
+242
+02:06:55,688 --> 02:06:59,427
+Bipolar mı yoksa field effect transistör mü diye soruyorsun.
+
+243
+02:06:59,907 --> 02:07:02,868
+Evet. Aynı koddan iki tane devre var.
+
+244
+02:07:03,568 --> 02:07:06,148
+Bipolar junction transistör. BGT ya bunlar.
+
+245
+02:07:07,128 --> 02:07:07,948
+Tamam, teşekkür ederim.
+
+246
+02:07:07,968 --> 02:07:08,688
+Field effect değil.
+
+247
+02:07:10,688 --> 02:07:11,247
+Tamamdır.
+
+248
+02:17:14,100 --> 02:17:16,520
+Nasıl gidiyor arkadaşlar? Sorusu olamaz mı? Bitirebildiniz mi?
+
+249
+02:17:25,236 --> 02:17:28,476
+Gerekli açıklamalardan sonra biraz daha anlaşılır hale geldi mi?
+
+250
+02:17:33,108 --> 02:17:35,407
+Ben şöyle kaç kişi göndermiş bakayım bu arada.
+
+251
+02:17:35,927 --> 02:17:38,747
+24 kişi göndermiş şimdiye kadar.
+
+252
+02:17:54,708 --> 02:17:56,028
+Bakalım şöyle gönderenlere bir.
+
+253
+02:28:06,164 --> 02:28:11,024
+Evet arkadaşlar, 20 dakikamız var. 18.52'de bitireceğiz.
+
+254
+02:31:51,028 --> 02:32:14,227
+Şimdi biz bitirince 18.52'de arkadaşlar. Raporlarınızı teslim ettikten sonra eğer çözümleri dinlemek istiyorsanız Alper hocanız bununla ilgili kendi sınıfında bizim bitirmemizin ardından. Onlar da birkaç dakika önce bitirecek herhalde. Bütün gruplar bittikten sonra şu an Gökhan hocanın sınıfında piyasadan bir link paylaşacak. O link vasıtasıyla o sınıfa geçiş yapıp orada çözümleri dinleyebilirsiniz.
+
+255
+02:32:15,048 --> 02:32:18,468
+Hocam payita altına alınacak mı? İftilar Saate'den geliyor da tam.
+
+256
+02:32:21,620 --> 02:32:30,920
+İftar saatine denk gelmiyor ya. 18.52. 18.52 iftar saatine denk gelmiyor.
+
+257
+02:32:32,340 --> 02:32:42,400
+Hocam başlayacak devamı için. Aynen. 5 dakikada bitmez mi ihtimalle? Yok 5 dakikada bitmez ama 15 dakikadan da uzun sürmez bence. Ya öyle bir ders falan değil yani öyle düşündüğü seniz hayır.
+
+258
+02:32:43,219 --> 02:32:55,539
+Daha doğudaki arkadaşlar falan vardır belki. Doğru söylüyorsun. Onu düşünemedim. Ben İstanbul'a göre hareket ediyorum tabii. Haklısın. Ben Alper'e sorarım ne kadar sürecek. Ama tabii ki kaydoluyor. Endişe etmeyin. Sonradan da dinleyebilirsiniz.
+
+259
+02:32:59,347 --> 02:33:04,868
+Ben sorarım şimdi Alper'e. Çok uzatma derim olmadı. Hızlıca özetler en azından şöyle bir çözümleri.
+
+260
+02:33:05,688 --> 02:33:06,307
+Teşekkürler hocam.
+
+261
+02:33:07,707 --> 02:33:08,288
+Bir şey diyeyim.
+
+262
+02:33:42,067 --> 02:34:00,608
+Evet, sordum arkadaşlar. Tam olarak 5-6 dakika sürer dedi zaten. Öyle tahmin etmiştim ben de. O sebeple sorun olmaz yani. 7'ye kadar işiniz bitmiş olur. İşi olan varsa da sonradan videoyu izleyebilir. En azından çözümün nasıl olduğunu merak ederseniz cevabını bulmuş olursunuz. Bir şey değil.
+
+263
+02:47:27,347 --> 02:47:28,987
+Hocam ben bir şey sorabilir miyim?
+
+264
+02:47:29,987 --> 02:47:41,028
+Peki ben şu an dosyamı yükledim. PDF'i biraz şeymiş, minimum kalitesiyle gönderilmiş.
+
+265
+02:47:41,028 --> 02:47:47,948
+Ama Word'dan PDF'e çevirince daha kalitelisini yüklemedim.
+
+266
+02:47:50,420 --> 02:47:58,940
+Nasıl okunabilir bir şekilde olması için nasıl size tekrar yükleyebilirim?
+
+267
+02:47:59,220 --> 02:48:01,239
+Yüklediğin dosyanın görüntü kalitesi kötü mü?
+
+268
+02:48:02,579 --> 02:48:05,979
+Evet, görüntüler biraz blurry olmuş.
+
+269
+02:48:07,239 --> 02:48:12,840
+Peki, düşük kalitede yapmadan PDF'e çevir. Çok mu yüksek oluyor dosya bulutu?
+
+270
+02:48:13,427 --> 02:48:19,548
+Hayır, hayır. O kadar olmuyor ama Google Form'da yükleme şansı.
+
+271
+02:48:19,548 --> 02:48:23,308
+10 MB ama zaten. 10 MB'den fazla olmaz yüksek kalite de olsa bence.
+
+272
+02:48:24,247 --> 02:48:27,347
+Şey, yükledim bitmiş. Yani formu göndermiş.
+
+273
+02:48:27,368 --> 02:48:31,667
+Ben göremeyecek kadar mı kötü bir bakayım. Değilse mail atarsın artık. Yapacak bir şey yok.
+
+274
+02:48:31,667 --> 02:48:32,128
+Tamam.
+
+275
+02:48:53,043 --> 02:48:54,004
+Numaran nedir?
+
+276
+02:48:57,304 --> 02:49:01,623
+19.011.915.
+
+277
+02:49:21,683 --> 02:49:27,163
+Yani çok kötü hani bazıları. Bazıları fena değil de hiçbir şey görünmüyor. Tamam, mail atma hadi.
+
+278
+02:49:28,403 --> 02:49:31,583
+Tamam diyorum. Sizin mailiniz...
+
+279
+02:49:31,583 --> 02:49:32,943
+Yazıyorum.
+
+280
+02:49:35,603 --> 02:49:41,503
+Bu kadar da küçük. 407 MB göndermişsin. Hani 10 MB'ye kadar sınırınız var aslında. O kadar da sıkıştırmaya gerek yok.
+
+281
+02:49:42,036 --> 02:49:51,615
+Şey sıkıştırmadım. Sadece Word'dan PDF'e çevirince o standart şey tıklamamış.
+
+282
+02:49:52,816 --> 02:50:00,736
+Peki. Word'un ayarlarından DPI ayarını resimlerinden düzeltirsin o zaman sonrasında. Yani bu hafta özel okey ama sonra...
+
+283
+02:50:00,736 --> 02:50:05,576
+Çünkü ben de okurken unuturum. Notum boş kalır. Takip etmezsem o benle gider.
+
+284
+02:50:06,615 --> 02:50:08,995
+Mailim Allah yalnız mailimi yazın. Neyse şunu yazayım.
+
+285
+02:50:10,195 --> 02:50:11,036
+Teşekkürler.
+
+286
+02:50:11,216 --> 02:50:13,216
+Yok şu son attığım meyli, bu öğrenci meyli.
+
+287
+02:50:13,576 --> 02:50:13,815
+Tamam.
+
+288
+02:50:19,891 --> 02:50:29,412
+Atabilirsin. Yıldız mailin bu. İkinci attım. Yani bu hani Word'ün sol üstünde seçenekler var ya. Ayarlarda böyle.
+
+289
+02:50:29,412 --> 02:50:33,672
+Ve şu an daha kalitelisini şey, PDF'ye aldım.
+
+290
+02:50:34,531 --> 02:50:43,631
+Orada resim koyduğunuz zaman buraya, ekran çıktısı özellikle. O onun kalitesini bazen kendisi seyrederken düşürüyor veya PDF'e çevirirken.
+
+291
+02:50:43,987 --> 02:50:59,307
+Onu 330 yaparsan eğer, o 330 DPI yaparsan, o zaman save ederken şey yapmaz. Bu hale dönüştürmez. Bu kadar kötü görüntü yapmaz. 10 megawatt'ı da aşmaz zaten merak etmeyelim. Ben öyle uyarıda bulundurum.
+
+292
+02:50:59,747 --> 02:51:03,967
+Daha kalitelisi tam okunabilir bir de ondan daha küçük.
+
+293
+02:51:03,967 --> 02:51:09,247
+Evet, o DPI ayarını ayarlayalım. Sorunun onunla ilgili bence.
+
+294
+02:51:11,540 --> 02:51:12,140
+Tamam mı?
+
+295
+02:51:13,580 --> 02:51:14,300
+Teşekkür ederim.
+
+296
+02:51:14,500 --> 02:51:18,520
+Bir şey diyip diğer arkadaşlar da herhalde yüklemişlerdir. Çıkabilirsiniz arkadaşlar yüklediyseniz.
+
+297
+02:51:19,280 --> 02:51:25,840
+Hani dinlemek isteyenler, Arpil Hoca'nın oraya işi olan varsa online kayıt olacak sorun değil. Sonra da izleyebilirsiniz.
+
+298
+02:51:27,640 --> 02:51:28,659
+Var mı sorusu olan başka?
+
+299
+02:51:32,884 --> 02:51:42,664
+Hocam, Alper Hoca'nın dersine nasıl girerleriz? Şöyle, Piyaz'da da link paylaşmış. Direkt olarak herhalde Zoom'dan ben de şimdi gireceğim, deneyeceğim. Herhalde giriliyordu. Bak arkadaş paylaştı.
+
+300
+02:51:42,664 --> 02:51:44,564
+Tamam, bir arkadaş. Evet, paylaştı.
+
+301
+02:51:44,884 --> 02:51:52,263
+Giriyor demek ki o paylaştığında. Kapatıyorum burasını artık. Teşekkür ederim arkadaşlar katıldığınız için. Görüşmek üzere.
+
+302
+02:51:54,404 --> 02:51:55,363
+İyi akşamlar.

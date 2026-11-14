@@ -1,0 +1,3659 @@
+1
+00:08:15,444 --> 00:08:16,684
+Günaydın arkadaşlar.
+
+2
+00:08:19,044 --> 00:08:20,984
+Şöyle 3-4 dakika sonra başlarız.
+
+3
+00:11:22,131 --> 00:11:24,351
+Evet arkadaşlar, nasılsınız?
+
+4
+00:11:45,268 --> 00:11:50,427
+Şu kitabın slide'ında birkaç örnek var.
+
+5
+00:11:51,988 --> 00:11:56,668
+Onlara bakarız ondan sonra yeni konuya geçeceğiz.
+
+6
+00:11:58,488 --> 00:12:00,408
+Bu hafta 6. hafta değil mi arkadaşlar?
+
+7
+00:12:13,875 --> 00:12:25,855
+Şimdi bu hafta ve gelecek hafta, bu hafta 6. haftaysa tabii ki, yanılmıyorsam, işlediğimiz konulara kadar, işte algoritmaları 2 hafta boyunca anlatacağız.
+
+8
+00:12:27,975 --> 00:12:37,175
+Sınavımız 8. haftaya konulmuş, dekanlıktan dün bilgi geldi. Gelecek hafta daha çok sınav hakkında konuşuruz.
+
+9
+00:12:41,107 --> 00:12:54,387
+Şimdi burada bazı örnekler var. Bağıntılarla alakalı. Bu slide'ı belki graflar konusuna gelince tekrar konuşacağız da. Banu hoca daha buranın sorularını bitirmemiş.
+
+10
+00:12:54,387 --> 00:13:00,707
+Geçen chapter'ın. Ben de ekstra o zaman bazı şeyler yaparım bu hafta.
+
+11
+00:13:01,812 --> 00:13:24,812
+Şimdi arkadaşlar, bağıntı ve fonksiyonların geçen hafta tanımlarına, özelliklerine bakmıştık. Burada özellikle bağıntının özellikleriyle alakalı birkaç güzel slide var. Bu ikili bağıntılarda geçen hafta gördüğümüz işte şu graf gösterimiydi, şu da matriz gösterimiydi.
+
+12
+00:13:26,676 --> 00:13:33,156
+Diğer zaten küme gösterimi bir sıralı kirliler cinsinden yazılmış. Konuştuk.
+
+13
+00:13:35,716 --> 00:13:36,916
+Mesela
+
+14
+00:13:39,475 --> 00:13:40,596
+Neredeydi?
+
+15
+00:13:44,275 --> 00:13:54,515
+Şimdi refleksif yansımalı bağıntı dediğimizde, şuradakilerin refleksif olduğunu görüyoruz.
+
+16
+00:13:55,795 --> 00:14:04,515
+Her A virgül B işte real sayısı için burada böyle bir refleksif özelliği sağlandığını görürüz.
+
+17
+00:14:05,155 --> 00:14:06,755
+Şunlar da refleksif değildir.
+
+18
+00:14:07,755 --> 00:14:11,735
+Refleksif olmadığını kanıtlayın deyince mesela şu bağıntının.
+
+19
+00:14:12,340 --> 00:14:14,340
+Ne yapmamız gerekir sizce?
+
+20
+00:14:15,940 --> 00:14:21,539
+İspat edin dediğimizde ispat yöntemlerini gördük. Hangi ispat yöntemini kullanabiliriz?
+
+21
+00:14:30,227 --> 00:14:36,827
+Aksine örnek gösterme değil mi arkadaşlar? Proof by contradiction falan değil de,
+
+22
+00:14:36,827 --> 00:14:45,107
+aksine örnek gösterme, bir tane örnek bulabiliyorsak, işte zaten Reflex olmayacaktır. Bunlara baktığımızda,
+
+23
+00:14:45,107 --> 00:14:49,187
+şuradaki örneklerin hepsi aslında bir aksine örnektir.
+
+24
+00:14:51,923 --> 00:14:58,323
+Sonra simetrik bağıntı özelliğine bakmıştık. A virgül B mesela şunlar simetrik oluyor.
+
+25
+00:14:58,323 --> 00:15:12,323
+Farklı x ve y sayıları için düşünürsek bunları aynı kümede real sayılar kümesinde. Bunlar A ve B varken işte B ve A'nın olacağını ifade ettik.
+
+26
+00:15:12,323 --> 00:15:17,483
+Şurada da bunların simetrik olmayacağını yine aksine örneklerle
+
+27
+00:15:17,652 --> 00:15:28,372
+Söylemişte böyle bir bağıntı varsa A'lar B'lerden ya küçük olacak ya da eşit olacak. Tamam eşit olmayı sağlarsın da küçük olmayı sağlayamazsın.
+
+28
+00:15:29,432 --> 00:15:34,092
+İşte 3-2 var, 2-3 varken 3-2'yi bu bağıntıda yazamıyorsun gibi.
+
+29
+00:15:35,692 --> 00:15:42,372
+Antisimetri özelliği de işte A ve B varken B ve A'nın olmaması.
+
+30
+00:15:42,868 --> 00:15:50,668
+Eğer AB varsa BA olmayacak. AB yoksa zaten BA'nın varlığından tekrar söz etmeye gerek yok.
+
+31
+00:15:54,067 --> 00:16:00,067
+Mesela bunun şöyle örnekleri var. Geçişken bağıntıyı zaten çok daha rahat kavrayabiliyoruz.
+
+32
+00:16:04,596 --> 00:16:21,755
+iki bağıntının birleşimi olunca da işte birleşim üzerinde yani normal küme elemanlarında yaptığımız kesişim ve birleşim, combination diyelim buna biz. Doğrudan birleşim dersek kümedeki birleşim gibi algılanır.
+
+33
+00:16:23,796 --> 00:16:28,155
+Bunları kullanabiliyoruz. Composition dedik.
+
+34
+00:16:30,836 --> 00:16:37,932
+Daha çok biz ikili bağıntılar üzerinde çalışıyoruz. Matris gösteriminden konuştuk, onları bağınalttık.
+
+35
+00:16:41,427 --> 00:17:08,307
+Şimdi matris gösterimi konusuna gelince burada bu matris arkadaşlar simetrik olmak zorunda değil. Simetrik ise tabi o da bir bağıntı olabilir ama yönlü graflar dediğimiz veya simetrik olmayan matrislerle 0-1 matrisleriyle bağıntılarımızı gösterebiliyoruz.
+
+36
+00:17:11,124 --> 00:17:34,124
+Eğer bağıntımız mesela refleksifse bütün diagonalimiz ne olacak? 1 olacak. Ondan sonra bağıntı simetrikse, diagonal'a göre ne olacak? Karşılıklı bütün elemanlar birbirine eşit olacak. Yani doğrultudaki bütün elemanlar. 0 ise 0, 1 ise 1 olacak.
+
+37
+00:17:38,612 --> 00:17:39,731
+Şu bağıntının
+
+38
+00:17:44,019 --> 00:17:54,519
+Bu mantının işte bir şey olduğunu refleksif olduğunu görebiliyoruz. Şöyle baktığımızda da ne olduğunu görürüz simetrik olduğunu görebiliyoruz.
+
+39
+00:17:55,539 --> 00:18:06,799
+Bütün elemanlar eşittir, R refleksiftir, MR simetriktir, R is işte antisimetriktir demiş falan.
+
+40
+00:18:09,460 --> 00:18:16,759
+Aynı şeyi bir de graflarla göstereceğim ama bu konunun daha detayını biz graflar konusuna gireceğiz arkadaşlar. Sadece bunu
+
+41
+00:18:16,759 --> 00:18:19,820
+basit şu ana kadar yaptığınız bilginizle
+
+42
+00:18:19,820 --> 00:18:25,900
+çizebilirsiniz ama bunların başka özelliklerine de gireceğiz daha sonra.
+
+43
+00:18:31,059 --> 00:18:38,379
+Bunları genellikle arkadaşlar, digraf dediğimiz açılımı directed graflar kullanıyoruz.
+
+44
+00:18:39,379 --> 00:18:45,619
+Şimdi demişiz ki şurada örnek var. Zaten bu örneği yapalım, ondan sonra yeni konuyu geçeriz.
+
+45
+00:18:46,500 --> 00:18:52,500
+Bağıntının hangi özellikleri bu grafta vardır? Şimdi bu refleksif midir?
+
+46
+00:18:52,980 --> 00:18:58,779
+Refleksif değildir. Sadece A var. Bunun B, C ve D'de olması gerekir.
+
+47
+00:18:59,251 --> 00:19:09,172
+simetrik midir? Evet. Yani A'dan B'ye bir kenar yok. Onun için B'den A'ya bakmıyorum. Sadece A'dan A'ya var. O da zaten simetrik sağlıyor.
+
+48
+00:19:10,672 --> 00:19:19,751
+Antisimetrik midir? Önemsizdir ama evet. Antisimetriktir. Hani A'dan B'ye bir kenar olmadığı için B'den A'ya bakmama da gerek yok.
+
+49
+00:19:20,339 --> 00:19:31,000
+Oradan antisimetrik diyoruz. Transitif midir? Evet. Yani A'dan B'ye yok. İşte B'den D'ye yok. Onun için A'dan D'ye bakmıyorum. Bu tarz örnekler olmadığı için
+
+50
+00:19:31,000 --> 00:19:43,500
+sadece refleksif özelliğini sağlamıyor. Diğer özelliği sağlıyor. Bakın simetrik özelliğini sağlayıp antisimetrik özelliğini sağlayan bir durumla karşılaştık. Buna da dikkat edin.
+
+51
+00:19:44,779 --> 00:19:47,639
+Tamam mı? Şimdi birazdan bunlar değişecek.
+
+52
+00:19:48,627 --> 00:19:57,708
+Şuraya baktığımızda refleksif özelliği yine yok. Çünkü A'dan A'ya, B'den B'ye, D'den ve C'den kendilerine herhangi bir şey yok. Loop olmadı.
+
+53
+00:19:58,728 --> 00:20:06,407
+Simetrik midir baktığımızda A'dan B'ye bir ilişki varken B'den A'ya bir ilişkinin olmasını bekliyoruz. Onun için buna no dedik.
+
+54
+00:20:07,607 --> 00:20:08,607
+Antisimetrik midir?
+
+55
+00:20:09,428 --> 00:20:30,348
+A'dan B'ye bir ilişki var, B'den A'ya ilişki yok. Tamam mı? Bu antisimetrik özelliği sağlıyor da bunu bozan B'den D'ye varken D'den B'ye bir özelliğin olması, durumun olması. Onun için bu antisimetriyi bozuyor. Tamam mı? Bakın bu sefer de ikisinde yine no oldu. Biraz önce ikisi yes'ti, ikisi de no oldu.
+
+56
+00:20:32,403 --> 00:20:45,804
+Transitif midir? Baktığımız zaman A'dan B'ye, B'den D'ye bir durum var. Onun için A'dan D'ye bir durumun olmasını bekliyoruz. Hiç mesela C'yi devreye katmadık.
+
+57
+00:20:51,571 --> 00:21:06,132
+Şurayı yanlış yazmış. A'dan B'ye olacak. C'ye herhangi bir kenar yok. Bu da B'den D'ye olacak. Şurayı doğru yazmış da bakın şurayı yanlış yazmış.
+
+58
+00:21:08,871 --> 00:21:17,771
+Evet, şimdi şuna baktığımızda refleksif olmadığını direkt söyleyebiliriz. Simetrik midir dediğimizde simetrik olarak herhangi bir
+
+59
+00:21:18,291 --> 00:21:25,371
+yönlü graflarından geriye dönüş yok. Antisimetrik midir? Evet, bunu doğrudan şu şekilde söyleyebiliriz.
+
+60
+00:21:25,431 --> 00:21:35,951
+Yönlü graflarda geriye dönüş hiçbirinde olmadığı için, hemen bakalım [öğrenci]. Yönlü grafların hiçbirisinde geriye dönüş olmadığı için,
+
+61
+00:21:35,951 --> 00:21:42,331
+evet, buraya yes diyeceğiz bakın. Transitif midir baktığımızda, işte buradan buraya bir gidiş var.
+
+62
+00:21:42,804 --> 00:22:01,423
+Oradan başka bir yere gitmiyor. İşte buradan buraya gitmiş. A'dan C'ye, C'den B'ye gitmiş. O zaman A'dan B'ye gitmesi gerekir. O da var. Transitif özelliğini bu sağlıyor. Peki, there is no edge from A'dan B'ye.
+
+63
+00:22:01,884 --> 00:22:08,864
+Yani burada bir karışıklığı var. Buna yes diyecek. Şimdi A'dan C'ye var, C'den B'ye var, A'dan da B'ye var.
+
+64
+00:22:09,748 --> 00:22:19,748
+Şu muhtemelen kenarın durumlarını yanlış yazdı. Burada transitif özelliği var. Kitabın sliderında maalesef böyle ufak tefek yanlışlar çıkıyor.
+
+65
+00:22:19,748 --> 00:22:36,768
+Şimdi bakalım D'den A'ya olsaydı geçişli olur muydu? Yok. A'dan B'ye, B'den D'ye varsa A virgül B. B virgül D olması gereken şey ne olacak? A virgül D olacak. Yani şöyle bir şey olmasını bekleriz.
+
+66
+00:22:38,516 --> 00:22:39,516
+Tamam, tamam.
+
+67
+00:22:46,067 --> 00:22:56,867
+Şuradaki de neden hatalı? Yani, there is no h demiş. Halbuki h var. Yani a'dan b'ye gidiyor. Muhtemelen ya bunların harflerini yanlış yazdılar.
+
+68
+00:22:57,827 --> 00:23:03,307
+İşte şurası b olacaktı, şurası c olacaktı. Ama buradaki görünüme göre var.
+
+69
+00:23:06,307 --> 00:23:12,827
+Bunda da yine refleksif özellik yok. Simetrik midir baktığımızda simetrik özellik bilgiden okun.
+
+70
+00:23:13,364 --> 00:23:16,104
+Tam tersten geri gelmesi lazım. Bu da yok.
+
+71
+00:23:17,624 --> 00:23:22,983
+Yani tersten geri gelmesi lazım. Şöyle bir şey olsaydı bile kabul edebilirdik ama yok.
+
+72
+00:23:23,403 --> 00:23:29,183
+Antisimetrik midir? Bakalım. A'dan B'ye bir şey var. D'den A'ya yok.
+
+73
+00:23:29,483 --> 00:23:33,983
+Yani iki okunda tam tersi, ikisi de olmadığı için yine yes diyoruz.
+
+74
+00:23:34,387 --> 00:23:46,687
+transitif özelliği var ama önemli değil. A'dan D'ye, D'den herhangi bir yere gitmiyoruz. D'den B'ye veya D'den C'ye gitseydik, o zaman A'dan C'ye gitmenin yolunu arayacaktık.
+
+75
+00:23:47,407 --> 00:23:53,087
+Bu bağıntılar gittikleri yerde kalmışlar. Tekrar aktarma olmuş, onu da yes diyoruz.
+
+76
+00:24:02,099 --> 00:24:11,400
+kuvvetlerini almak ne demek? Aslında bunun kuvvetlerini almak elde edilen ilişki matrisinin karesini,
+
+77
+00:24:11,400 --> 00:24:20,779
+işte üçüncü dereceden, üçüncü dereceden kuvvetini, dördüncü dereceden kuvvetini almak demek. Böyle bir bağıntımız varmış.
+
+78
+00:24:22,319 --> 00:24:27,319
+İşte bunu sıfır ve birler şeklinde yazarsanız matrisi de yazdığınızı düşünün. Dördü dördük bir matris.
+
+79
+00:24:28,276 --> 00:24:31,956
+Bunun karesini aldığımızda şunu elde edersiniz.
+
+80
+00:24:32,956 --> 00:24:39,756
+Şimdi burada bir bağıntı üzerinde baktığımızda mesela ne var? Şey yok.
+
+81
+00:24:40,196 --> 00:24:43,635
+Refleksif özellik yok bütün elemanlar için.
+
+82
+00:24:43,996 --> 00:24:48,756
+Sonra baktığımızda A'dan B'ye işte B'den C'ye gitmiş.
+
+83
+00:24:49,155 --> 00:24:52,756
+A'dan C'ye bir şey olmasında geliriz. Transitif özellik yok.
+
+84
+00:24:54,644 --> 00:25:05,804
+Biz graf konusunda bunu tekrar konuşacağız. Diyeceğiz ki A'dan C'ye gitmek için kaç yola ihtiyacım var? İşte burada iki yol üzerinden gidebiliriz. Bunun karesini alınca işte biraz daha farklılaşıyor.
+
+85
+00:25:07,104 --> 00:25:19,824
+Bu şekilde elde edilen ilişki matrisinin karesini alarak ne yapabiliyoruz? Bir bağıntının kuvvetlerini de bulabiliyoruz. O konunun hani teknik detayı şurada.
+
+86
+00:25:20,276 --> 00:25:27,956
+Biz çok ikinci, üçüncü dereceden kullanmayacağız da matrislerin karesini küpürüne alma kısmına bakacağız. Neredeydi o?
+
+87
+00:25:33,076 --> 00:25:34,316
+Powers on Relation.
+
+88
+00:25:36,436 --> 00:25:38,476
+Bir basic stepimiz var.
+
+89
+00:25:39,376 --> 00:25:46,796
+Bunun ikinci dereceden veya üçüncü dereceden bulmak istersek ne yapıyoruz?
+
+90
+00:25:46,916 --> 00:25:49,195
+R ile R'nin birleşkesine bakıyoruz.
+
+91
+00:25:53,107 --> 00:26:02,927
+Ama aynı çok bu şekilde bizim kullandığımız bir şey değil. Denklik sınıflarda şu an bizim baktığımız bir şey değil. Burada biraz daha farklı bir konuya giriyor.
+
+92
+00:26:13,971 --> 00:26:29,791
+Şu HES diagramlarına bakmıştık. Ne olacaktı? Burada bir sıralama vardı, elemanlar şeye göre sıralanıyordu. Transitif özellikleri, refleks özellikleri şunları direkt gösteriyordu zaten. Biraz daha grafların farklı bir hali.
+
+93
+00:26:33,587 --> 00:26:34,028
+Peki.
+
+94
+00:26:35,847 --> 00:26:37,387
+Şimdi gelelim.
+
+95
+00:26:38,228 --> 00:26:41,108
+Bu konunun slide'ını Banu Hoca duyuracaktı.
+
+96
+00:26:41,947 --> 00:26:43,548
+Henüz sayfasına koydum bilmiyorum.
+
+97
+00:26:43,708 --> 00:26:44,748
+Avesine bakarsınız.
+
+98
+00:26:46,268 --> 00:26:50,567
+Ama kendisiyle bazı konularda farklılaştık.
+
+99
+00:26:50,728 --> 00:26:58,008
+Yani ben onun duyuracağı slide yaklaşık 115 veya 120 sayfa falan.
+
+100
+00:26:58,008 --> 00:27:00,008
+Ben bunu...
+
+101
+00:27:00,596 --> 00:27:13,416
+PDF olarak şeyin sayfasına koyarım, canlı ders kısmına koyarım online yılınızda. Bazı eklemeler yapmıştım, hoca çıkarmış da ben çıkarılmasının doğru olmadığını düşünüyorum. Aradaki bazı şeyleri atlamayalım diye.
+
+102
+00:27:17,556 --> 00:27:40,796
+Banu Hoca'daki slide işte biraz daha az şey. Şimdi arkadaşlar, artık geldik algoritmalara. Bundan sonraki kısım biraz daha bizim bölüm tarafında sizin karşılaşacağınız derslere hazırlık mahiyetinde bir şey olacak. Veri yapıları konularının, ondan sonra otomata kısmının kullandığı konular bunlar biraz daha.
+
+103
+00:27:42,420 --> 00:27:47,019
+Bu 130 sayfayı bu hafta ve gelecek hafta bitirmeye çalışacağız.
+
+104
+00:27:48,059 --> 00:27:55,980
+Şimdi algoritmanın bu slide'ın içerisine baktığımızda temel yapıları, veri yapılarına, temel problemlere bakacağız.
+
+105
+00:27:56,760 --> 00:28:03,420
+Fonksiyonların growth'u, büyümesi, asimtotik notasyonlara bakacağız. Asimtot konusuna biraz geleceğiz.
+
+106
+00:28:03,604 --> 00:28:07,023
+Algoritmaların nasıl analiz edileceği kısmına bakacağız.
+
+107
+00:28:07,684 --> 00:28:16,483
+Algoritma işte şu Ebu Cafer Muhammed İbni Musa El-Harezmi dediğimiz kişinin ortaya attığı bir kavram.
+
+108
+00:28:17,704 --> 00:28:18,003
+Evet.
+
+109
+00:28:19,344 --> 00:28:23,064
+Hesaplama yapmak amacıyla veya bir problemi çözmek amacıyla
+
+110
+00:28:23,064 --> 00:28:26,827
+sonlu, kesin...
+
+111
+00:28:27,476 --> 00:28:48,976
+Komut dediğimiz, buyruk dediğimiz, emir dediğimiz instruction'ların kümesine algoritma diyoruz. Önemli olan şey sonlu olacak. Ne demek sonlu? Yani en tane adım belli olacak. Bu işin sonunda sonsuz bir işleme yapmayacağız. Kesin dediğimiz şey sizin işlemcinizde veya bir programlama dilinizde
+
+112
+00:28:49,523 --> 00:28:55,643
+ifade edilen komutlar cinsinden algoritmayı yazabilirsiniz. İşlemciniz sadece toplama yapıyorsa
+
+113
+00:28:56,123 --> 00:29:06,643
+ve siz integral hesabı yapacaksanız, integrali tek bir toplama işlemiyle yapacaksınız. Eğer işlemciniz hem toplama hem çarpma yapıyorsa işiniz biraz daha kolay integral hesabında.
+
+114
+00:29:07,243 --> 00:29:17,163
+İşte bu kesin işlemi işlemcinin komut repertuarında olan komutlar yoluyla, işte şu buyruk veya emir dediğimiz komutlar yoluyla yapılacak olması.
+
+115
+00:29:17,683 --> 00:29:35,604
+Yani problemde diyoruz ki işte bir türev alma işlemi yapalım. Şöyle bir fonksiyon var. Bunun türevini alalım. Bunun türevini alacağız da o türevin nasıl alacağını belli sayıda adımla işte adım bir, adım iki, adım üç veya herhangi bir programlama dilinde
+
+116
+00:29:37,076 --> 00:30:03,076
+İşlemci içerisindeki veya çalışacak uygulama platformdaki komut setine sadık kalarak, o somut komut setindeki her bir komutu kullanarak problemi çözmek zorundayız. Örnek olarak, sonlu bir tam sayı dizisinde maksimum değeri bulmak için gereken algoritma. Yani dizi var elimizde, en büyük değeri bulacağız.
+
+117
+00:30:04,147 --> 00:30:22,127
+Dizinin ilk elemanı geçici maksimum değer olarak seçilir. Yani burada bir ne var? Atama işlemi var değil mi arkadaşlar? Assignment operatörü. Bu işlemci de var mı? Var. Bir sonraki eleman geçici maksimum elemanla karşılaştırır. İşte burada bir büyüktür, küçüktür işlem var. Bu da genel olarak birçok işlemci de var.
+
+118
+00:30:22,612 --> 00:30:27,612
+Eğer sayı geçici maksimumdan büyükse geçici maksimuma bu sayı atanır. İşte bu da bir atama işlemidir.
+
+119
+00:30:27,612 --> 00:30:33,112
+If'in kontrol sonrasında. Dizinin son elemanına kadar önceki adım tekrarlanır.
+
+120
+00:30:33,112 --> 00:30:41,612
+Assembli görüyorsunuz. Assembli'de Luke diye bir komut vardır mesela. O da genel olarak kullanılıyor. Var çoğu işlemde.
+
+121
+00:30:41,612 --> 00:30:48,612
+Algoritma sonlandı da dizideki en büyük sayı bulunur. Zaten bakın ne yaptık. Şurada algoritmayı bitirdik.
+
+122
+00:30:50,228 --> 00:30:56,988
+Kesinlik kısmında bir tereddütümüz var mı arkadaşlar bu soruda? Kesin olmayan bir durum var mı?
+
+123
+00:31:04,723 --> 00:31:12,983
+Yok görünüyor. Yani muğlak, yani acaba şunu nasıl yaparız diye ifade edeceğimiz doğrudan bir şey yok arkadaşlar.
+
+124
+00:31:14,223 --> 00:31:22,163
+Şeye baktığımızda sonluluk var mı? Evet, var. Neredeyse üç adımda, genel olarak bu algoritmayı dört adımda ifade etmiş olabiliriz.
+
+125
+00:31:24,304 --> 00:31:26,824
+Böyle. Devam edelim.
+
+126
+00:31:27,955 --> 00:31:41,675
+Algoritma nasıl belirtilir, nasıl ifade edilir? İşte herhangi bir doğal dilde, Türkçe, İngilizce veya Södokod dediğimiz, sözel kodla, akış yamasıyla veya bir programlama diliyle ne yapılır ifade edilir.
+
+127
+00:31:41,675 --> 00:31:48,935
+Sadece ifade edeceğimiz şey biraz önceki kesinlik ve sonluluk.
+
+128
+00:31:50,324 --> 00:31:56,984
+ifade edilmesi lazım. Algoritmayı yaklaşımla, problem çözüm yaklaşımıyla veya approach dediğimiz
+
+129
+00:31:57,584 --> 00:32:04,484
+şeyle karıştırmamak gerekiyor. Örneğin size bir ödev verdiğimizde, bunun pseudo kodunu yazın dediğimizde,
+
+130
+00:32:05,683 --> 00:32:10,324
+işte ne diyelim mesela bir matristeki en küçük sayının bulunması.
+
+131
+00:32:10,900 --> 00:32:18,259
+Bunu ne yapacaksınız? Biraz önceki slide'da olduğu gibi adım adım kesin adımlarla ve sonlu adımlarla yazmanız gerekiyor.
+
+132
+00:32:18,259 --> 00:32:23,060
+Şunu diyebilirsiniz, ya işte matrisi başından sonuna gezerim, tamam mı?
+
+133
+00:32:23,060 --> 00:32:32,900
+İşte ilk elemanı en küçük eleman veya en büyük eleman diye atarım, bütün eleman matrisi gezerim, işte orada karşılaştırma yaparım.
+
+134
+00:32:33,268 --> 00:32:38,947
+Bu daha çok bir approach oluyor. Bu approach'u böyle sıralı, kesin ve sonlu adımlarla yazmak algoritm oluyor.
+
+135
+00:32:40,307 --> 00:32:46,067
+Sözde kod, İngilizce adımların, İngilizce açıklaması da bu adımların programı.
+
+136
+00:32:46,067 --> 00:32:49,268
+Yani bu sözde kodun bir ara basamak olduğunu,
+
+137
+00:32:50,268 --> 00:32:58,268
+biraz daha yardımcı olan, daha böyle programlamada kendisini yeni hisseden kişilerin kullandığı bir teknik.
+
+138
+00:33:01,395 --> 00:33:20,056
+Açıklama yapıyoruz. Doğal dile bağımlı olduğundan insanlar arasında iletişimde sözde kodda bazı problemler olur. Burada akış yaması biraz daha diller üzeri bir görüntü sağlıyor. Daha ortak bir dil ifade etmeyi sağlıyor. Akış yamasını kullanabiliyoruz.
+
+139
+00:33:20,627 --> 00:33:26,067
+sözde kod ve akışlamasına ihtiyaç yoksa algoritma ne yapabilir? Doğrudan kodlayabilirsiniz.
+
+140
+00:33:27,208 --> 00:33:36,288
+Yani bugün C'de yazılmış bir şeyi anlayabiliyorsanız onun ne sözde koduna ne de flowchartına gerek yok.
+
+141
+00:33:36,288 --> 00:33:40,288
+Genel olarak algoritmanın özelliklerine baktığımızda
+
+142
+00:33:40,468 --> 00:33:48,148
+Bir algoritma belirli bir kümeden giriş elemanlarına sahip olması lazım. Yani girişler olacak.
+
+143
+00:33:48,148 --> 00:33:55,348
+Algoritmamız bu girdiği değerlerinden çıktığı değerleri üretecek ve bu bir çözüm olarak karşımıza gelecek.
+
+144
+00:33:57,044 --> 00:34:20,764
+Algoritma her girdi değeri için doğru çıktı değerlerini üretmesi gerekiyor. Algoritmanın doğruluk özelliği. Sonluk, finitlis özelliği. Herhangi bir girdi için sınırlı sayıda adımdan sonra çıktığı üretebilmesi lazım. Etkililik, efektiflik her adımı doğru ve sınırlı bir süre içerisinde gerçekleştirilebilir olması lazım.
+
+145
+00:34:20,764 --> 00:34:22,764
+Şimdi sınırlı bir süre.
+
+146
+00:34:22,867 --> 00:34:29,307
+Yani bu program çalışır ama ne zaman cevap verir bilmiyoruz. İşte bu sıkıntı sınırlı bir sürede olacak.
+
+147
+00:34:30,127 --> 00:34:37,087
+Genellik ifadesi, genellik özelliği istenen formdaki tüm problemler için çalışmalıdır diyoruz algoritma.
+
+148
+00:34:37,148 --> 00:34:38,427
+Örneğin sıralama algoritması.
+
+149
+00:34:39,728 --> 00:34:44,307
+Şimdi biz genelde sayıları sıralıyoruz da nesneleri de özelliklerine göre sıralayabiliyoruz.
+
+150
+00:34:44,407 --> 00:34:47,367
+Öğrencileri diyoruz ki mesela numarasına göre sırala. Tamam.
+
+151
+00:34:47,827 --> 00:34:53,148
+Ama bir de notuna göre sırala veya adına göre sırala, adındaki ilk harife, ikinci harife göre.
+
+152
+00:34:53,148 --> 00:35:03,307
+İşte bu sıralama algoritması tüm problemler için çalışabilir bir şey. Yani her şeyi özdeş olan nesnelerden bahsediyoruz.
+
+153
+00:35:03,307 --> 00:35:08,268
+Bir özelliğine göre sıralayabiliyorsunuz.
+
+154
+00:35:08,500 --> 00:35:30,439
+Elinizde meyveler var. Meyvelerin glikoz oranları, şeker oranları var. Tamam, meyveleri belki isimlerine göre sıralamak gerekmez ama ne yapıyorsunuz? Şeker oranlarına göre sıralıyorsunuz. Bunların hepsi sıralama algoritmasının çözümü mümkün olan şeyler. Sıralama algoritmasıyla çözümü mümkündür.
+
+155
+00:35:32,628 --> 00:35:53,668
+Bir dizideki en büyük elemanı bulan algoritma demişiz. Bunu sözde kodla yazmış arkadaşlar. Bir n'den 1'den n'e kadar integerlarımız var. Ne yaptık? Önce a1'i kabul ettik. Daha sonra ikinci elemandan başladık. İşte a1'leri kontrol ediyoruz. Bu döngünün sonunda en büyük elemanı return ediyoruz.
+
+156
+00:35:54,788 --> 00:35:59,660
+Baktığımızda şurada şöyle bir şey de yapabildik. Maksimuma 1 de atardık.
+
+157
+00:36:00,179 --> 00:36:23,479
+Tamam mı? Birinci eleman, en büyük eleman olsun. Birinci elemanın değerini atamadık. Dikkat edin. Sonra dedik ki, A'nın max'ıncı elemanı küçükse A'nın yinci elemanından max'ını iyi gönder diyebiliriz.
+
+158
+00:36:24,820 --> 00:36:30,460
+Çünkü yerini bildiğimiz bir şeyin değerini zaten bulabiliyoruz dizilerde. Bu da bir çözüm yöntemi.
+
+159
+00:36:30,460 --> 00:36:38,380
+Şimdi bütün özellikleri sağlıyor mu diye baktığımızda, girdilerimiz var mı? Var. Çıkış var mı? Var. Doğruluk.
+
+160
+00:36:38,380 --> 00:36:45,460
+Doğruluğu zaten algoritmada işecektik. Sonlu bir işlem mi? Evet, sonlu bir işlem. Sonsuza giden bir durum yok.
+
+161
+00:36:50,324 --> 00:37:14,804
+Kaç tane işlemden oluşur diye bahsedersek, şurada bir atama işlemi var, bir tane işlem. Şurada ikiden n'e kadar giden şu kadar işlem var. Buradaki işlemlere baktığında bir tane sıralama var. Her zaman olmayacak ama bazı durumlarda olacak. Bir tane de bir atama işlemi var. Yani burada temel olarak iki tane işlem var diyebiliriz.
+
+162
+00:37:17,536 --> 00:37:23,355
+ikilerin toplamı işte şu en değeri de zaten sonlu bir dizi çünkü bellekte biz sonlu bir şey tutabiliriz.
+
+163
+00:37:24,036 --> 00:37:33,136
+İşte ikiden ene kadar sayıların ikilerin toplamı. Yani en tane iki dersek yaklaşık buradan iki en eksi iki gibi bir şey çıkıyor.
+
+164
+00:37:33,956 --> 00:37:44,235
+İki en eksi iki bu var. Bir de şu var iki en eksi bir. Hani şunu kabul edersek iki en yaklaşık iki en adımda dizideki gelen elemana göre ne oluyor? Problem çözülüyor.
+
+165
+00:37:46,387 --> 00:38:08,007
+Genellik, şimdi bu algoritmayı şöyle genelleştirebilir miyiz? Integer'lar içinde ne bileyim başka string'ler için yapabilir miyiz? Yapabiliriz. Yani o hale dönüştürülebilir. Sadece şuradaki bazı operatörleri uyarlamak gerekir. Yani burada A'nın birinci elemanını alıp integer olarak düşünmek yerine başka kabuller de yapabiliyoruz arkadaşlar.
+
+166
+00:38:09,940 --> 00:38:20,940
+Genel algoritma problemleri bizim çalışmalarımızda arkadaşlar, inceleyeceğimiz algoritma türleri işte arama algoritmaları, sıralama algoritmaları ve optimizasyon algoritmaları olacak.
+
+167
+00:38:20,940 --> 00:38:27,940
+Optimizasyon algoritmalarını bu dersin kapsamında değil de biraz daha graflar konusunu görünce orada bakacağız.
+
+168
+00:38:28,596 --> 00:38:38,315
+Arama demek ne demektir? Bir elemanın arama uzayındaki yerinin bulunmasıdır. Bakın bir integer dizisinde aramaktan bahsetmiyoruz sadece.
+
+169
+00:38:38,315 --> 00:38:46,836
+Sıralama işte bir listenin elemanlarını genellikle artan sırada ama bazen de azalan sırada belli bir sıraya koymaktır.
+
+170
+00:38:48,211 --> 00:39:05,891
+Optimizasyon algoritmaları da tüm olası girdiler üzerinden belirli bir büyüklüğün en iyi değerinin belirlenmesi. İşte en düşük maliyeti veren durum, en yüksek verimi veren durum. Bunu işte graflarda konuşunca ne bileyim böyle şeylerimiz olacak arkadaşlar.
+
+171
+00:39:07,476 --> 00:39:18,276
+haritamız var. İşte A noktasından B noktasına gitmek istiyoruz. En kısa yolu acaba nasıl bulabiliriz? Böyle graf yollarımız var. Bu bir optimizasyon problemidir. Onu da orada konuşacağız.
+
+172
+00:39:19,695 --> 00:39:27,516
+Arama algoritmasına baktığımızda işte bir dizi içerisinden X elemanını bulmak veya listede olmadığını ifade etmekten korup söz ediyoruz.
+
+173
+00:39:30,068 --> 00:39:41,068
+Problemin çözümü listedeki terimin x'e eşit olan konumudur. Genellikle burada konum buluruz. Yani aradığımız şey bir konumdur. Bulduğumuz şeyde sonuçta konumu return ederiz.
+
+174
+00:39:41,068 --> 00:39:53,836
+Eğer konum bilgisini bulamadıysak genellikle 0 veya eksi 1 gibi bir şey döndürürüz ki böyle bir şey bulunamadı diye. Arama dediğimiz gibi sadece bir sayı listinde eleman aramak demek değildir.
+
+175
+00:39:54,260 --> 00:40:00,860
+Buradaki farklı arama algoritmasından, lineer arama ve doğrusal ikili arama algoritmasından bahsedeceğiz demişiz.
+
+176
+00:40:02,780 --> 00:40:08,260
+Mesela bir fonksiyon var arkadaşlar elimizde. Sayısal analizde belki bu konuyu görmüşsünüzdür.
+
+177
+00:40:08,260 --> 00:40:13,860
+Fonksiyonun en küçük değerini bulmaya çalışıyoruz. Ama fonksiyon real sayılardan oluştuğunu kabul edelim.
+
+178
+00:40:14,340 --> 00:40:16,340
+Bu bir arama algoritması mesela.
+
+179
+00:40:17,268 --> 00:40:23,408
+Doğrusal arama, ikili arama, bu ikili aramadan başka turner-search dediğimiz
+
+180
+00:40:25,708 --> 00:40:28,268
+ikili aramayı belki çoğunuz biliyorsunuz.
+
+181
+00:40:28,788 --> 00:40:33,148
+Böyle bir şey var. Sonra interpolation-search dediğimiz, buraya yazmadığımız
+
+182
+00:40:35,307 --> 00:40:38,268
+başka aloma algoritması var. Ondan sonra hash
+
+183
+00:40:38,768 --> 00:40:44,408
+veri yapısıyla arama algoritması var. Onlara birazdan belki rafli yer gelince bakacağız.
+
+184
+00:40:45,940 --> 00:40:53,320
+doğrusal veya linear arama. Ne yapıyorsunuz? Dizinin başından başlayıp, ilk elemandan başlayıp, son elemana kadar
+
+185
+00:40:53,320 --> 00:41:03,960
+veya aradığınız elemanın yerini bulana kadar arada bir yerde de kesebilirsiniz. Arama işlemi yapıyorsunuz.
+
+186
+00:41:04,640 --> 00:41:11,800
+Ama en küçük, en büyük gibi bir şey arayacaksanız o zaman kesinlikle sonuna kadar gitmeniz lazım. Bütün durumlara bakmanız lazım.
+
+187
+00:41:12,596 --> 00:41:18,195
+Birinci elemandan başladığımızı kabul edelim. Birinci elemandan eninci elemana kadar.
+
+188
+00:41:21,576 --> 00:41:32,076
+Aradığımız eleman, üzerinde baktığımız elemandan farklı olduğu müddetçe ne yapıyoruz? Bir sonraki elemana bakmak için i değişkenini arttırıyoruz.
+
+189
+00:41:37,876 --> 00:41:43,376
+nden küçük veya eşit durumdaysa bulmuşuzdur demektir. Lokasyon bilgisini gönderiyoruz.
+
+190
+00:41:44,176 --> 00:41:53,276
+Eğer lokasyon bilgisi değil yani herhangi bir şey bu şart sağlam olursa lokasyon bilgisi sıfır olsun diyoruz.
+
+191
+00:41:53,676 --> 00:41:56,676
+Ve işlem sonunda lokasyonu gönderiyoruz.
+
+192
+00:41:58,176 --> 00:42:03,376
+Herhangi bir yerde bulundu veya bulunamadı. Bu doğrusu aramadır.
+
+193
+00:42:04,244 --> 00:42:10,043
+Şimdi şöyle bir örnek söyleyeyim. Elimizde bir kitap var. Kitabın 40. sayfasını arayacağız.
+
+194
+00:42:10,644 --> 00:42:13,963
+Bu örneği birazdan karşılaştırma yapmak için şey yapacağım.
+
+195
+00:42:15,003 --> 00:42:17,564
+İşte 200 sayfalık kitap. Tamam mı?
+
+196
+00:42:18,064 --> 00:42:23,444
+Birden başladınız, ikiden başladınız, 40'a geldiniz. 200 sayfaya kadar gitmenize gerek yok. Burada kesiyorsunuz.
+
+197
+00:42:25,484 --> 00:42:27,543
+Oldu mu? Bu böyle.
+
+198
+00:42:28,500 --> 00:42:40,659
+İkili aramada da eğer elimdeki aradığım arama uzayı artan veya azalan sıralama şartını sağlıyorsa, böyle tek tek bakmama gerek yok diyorum.
+
+199
+00:42:40,819 --> 00:42:48,539
+Örneğin artan bir dizi var, şöyle hindise göre şöyle artan bir şey olsun, bir şekilde artıyor veya ne bileyim böyle artıyor.
+
+200
+00:42:48,539 --> 00:42:53,739
+Gerçi şu olmaz da. Yani şöyle arttığını kabul edelim.
+
+201
+00:42:54,739 --> 00:43:07,199
+O zaman diyoruz ki bunun orta noktasına bakalım. Orta noktasından büyükse aradığımız şey artık şu tarafa bakmaya gerek yok veya küçükse bu tarafa bakmaya gerek yok mantığıyla hareket ediyoruz.
+
+202
+00:43:07,199 --> 00:43:17,199
+O zaman bu orta noktayı bulmak benim için bir mesele. Orta noktayı da genel olarak dizinin left side'ı ve right side'ı veya işte...
+
+203
+00:43:18,003 --> 00:43:27,243
+i ve j dediğimiz start point'i, end point'i diyebiliriz. Bu ikisinin toplamının yarısına veya toplamının belli bir oranına bakacağız.
+
+204
+00:43:27,243 --> 00:43:31,324
+İşte bu toplamının yarısı mı daha iyi olur veya başka bir oran mı daha iyi olur?
+
+205
+00:43:31,324 --> 00:43:41,163
+Burada bize bazı performans iyileştirme düzeni sunuyor. Binary Search demiş ki bunu doğrudan biz yarısına bakalım.
+
+206
+00:43:45,043 --> 00:44:03,163
+i artı j şarpı bir bölü iki yani yarısı olsun ortalaması olsun diyor. Her defasında eğer dediğim gibi aradığım yer bu orta noktadan yukarıdaysa o zaman ne yapacağım? Bu i'yi şu aradığım yerin bir sonrakine çekeceğim.
+
+207
+00:44:03,731 --> 00:44:10,731
+i buraya gelince artık bir sonraki orta nokta ne olacak? Buradaki i artı j bölü 2'den dolayı şu tarafta bir yerde olacak.
+
+208
+00:44:10,731 --> 00:44:17,731
+İşte burada tekrar bir güncelleme yapacağız. İşte aradığımız şey elemanı bulana kadar tabii varsa gidecek.
+
+209
+00:44:17,731 --> 00:44:28,396
+Bir yerde i ve j bu kaydırmalardan kaynaklı olarak i bu tarafa geçecek, j bu tarafa geçecek. O zaman diyeceğiz ki bulamamışız, bulamadık.
+
+210
+00:44:29,460 --> 00:44:36,460
+Yani i'nin daima j'den küçük olması gerekiyor. Birbirinin yer değiştirilirse büyüklük açısından orada bir sıkıntı var.
+
+211
+00:44:36,460 --> 00:44:47,460
+Bulamadık diyeceğiz. Genel olarak şeyi böyle. Şimdi okuyalım. Aradığımız bir x integer sayısı var. Bir dizimiz var. Artan bir diziymiş arkadaşlar. Yani küçükten büyüğe sıralı.
+
+212
+00:44:47,460 --> 00:44:54,316
+Birinci elemandan eninci elemana kadar start ve end point'leri tutuyoruz.
+
+213
+00:44:54,643 --> 00:45:16,863
+i, j'den küçük olduğu müddetçe orta noktayı şu şekilde midpoint'i bulduk. Sonra diyoruz ki eğer bulduğumuz x elemanı orta noktadaki eleman, pardon x elemanı orta noktadaki elemandan büyükse i'yi ne yap? Orta noktanın bir fonraki değerine kaydır. Değilse j'yi de orta noktaya getir.
+
+214
+00:45:21,568 --> 00:45:33,268
+Burada da M var. Ya İ buraya gelecek ya da J buraya gelecek. Artık iki durumdan şey. Ne yaptık? Sadece şu elemanın orta noktaya göre durumunu inceledik.
+
+215
+00:45:34,608 --> 00:45:47,268
+Bu döngü bittikten sonra eğer X eşittir AI ise yani aradığım eleman İ inci elemanla eşitse çünkü ne yaptık? Döngüden çıktık.
+
+216
+00:45:47,987 --> 00:45:55,108
+Çıktığımız yerdeki i değeriyle aradığım eleman eşitse elemanı bulmuşum demektir. O zaman i'yi gönderiyorum.
+
+217
+00:45:55,747 --> 00:45:58,487
+Değilse bulamamışım demektir. O zaman sıfır gönderiyorum.
+
+218
+00:45:59,148 --> 00:46:02,367
+Ne zaman çıkacağız? Dikkat edelim arkadaşlar. Ne zaman çıkacağız?
+
+219
+00:46:03,327 --> 00:46:13,127
+i'nin j'den küçük olma şartının bozulduğu durumda. Yani i j'ye eşit olacak veya j daha büyük, j daha küçük olacak. O zaman çıkacağız.
+
+220
+00:46:13,652 --> 00:46:21,652
+Sonra da lokasyonumuzu ne yapıyoruz? Return ediyoruz. Şimdi biraz önceki örneğe geri geldiğimizde, 1'den 200'e kadar kitap sayfamız vardı. Ben 40 arıyordum.
+
+221
+00:46:21,652 --> 00:46:36,652
+Şimdi ne yapacağız? 1'den 100'e kadar ki olan kısmı yani 200 ile 1 arasında orta noktayı 100 diyelim. Buraya bakıyoruz. 40, 100'den küçük mü küçük? O zaman şu kısmı at. Sonra gel, 100'de 1 arasında 50'ye bak.
+
+222
+00:46:38,867 --> 00:47:05,887
+40'dan büyük olduğu için bu kısmı da at, bu tarafa gel. 50 ile 1 arasında 25 var. Buradan bak, 25'den 1'e kadar kısmı. Sonra 25, 50'ye bak. 25 ile 50'nin arasında, hadi 38 olsun diyelim. 38 ile 50 arasında bak. 38 ile 44'e bak.
+
+223
+00:47:06,579 --> 00:47:08,279
+Sonra ne oldu?
+
+224
+00:47:09,359 --> 00:47:13,099
+2, 4, 6, 42, 38 ile 42'ye bak.
+
+225
+00:47:13,819 --> 00:47:14,840
+Ondan sonra ne oldu?
+
+226
+00:47:15,220 --> 00:47:18,159
+38 ile 42 arasında direkt 40'a bak ve 40'ı bul.
+
+227
+00:47:19,260 --> 00:47:20,159
+Şeklinde ilerliyor.
+
+228
+00:47:20,260 --> 00:47:25,380
+Biraz öncekine göre, biraz önce birden 40'a giderken 40 defa bakmak zorundaydık.
+
+229
+00:47:26,039 --> 00:47:32,039
+Şimdi zannediyorum yaklaşık 7-8 defa, 7-8 adımda bulabildik.
+
+230
+00:47:33,172 --> 00:47:40,871
+Aranan bir elemanı en kötü ihtimalle kaç adımda bulacağını söyleyen bir bağıntı var eleman sayısına bağlı olarak.
+
+231
+00:47:42,271 --> 00:47:45,971
+Bu da aslında algoritmanın karmaşıklığından gelen bir şey.
+
+232
+00:47:46,871 --> 00:47:52,091
+Aranan bir eleman, binary search'te logaritma iki tabanında n ile bulunuyor.
+
+233
+00:48:01,396 --> 00:48:10,356
+Bu da ne oluyor? 10 defa denemede bunu bulabiliyorsun demektir. Bunu biz daha sonra diyeceğiz ki bu ifade nerede karşımıza gelecek?
+
+234
+00:48:10,356 --> 00:48:22,348
+Algoritma karmaşıklığında gelecek. Yani şu döngü aslında arkadaşlar kaç defa dönüyor en fazla binary search'te? Eğer 1024 ise 10 defa dönüyor demektir.
+
+235
+00:48:23,092 --> 00:48:36,751
+10 defa da en kötü ihtimalle bulursun veya bulamazsın. Eğer eleman yoksa bulamayacaksın. Ama 10 defa bakacaksın. 1024 tane bir şeye de 10 defa da bakmak, varlığını veya yokluğunu da bulabilmek gayet güzel bir şey.
+
+236
+00:48:39,251 --> 00:48:44,552
+Sıralama işlemi de arkadaşlar elemanları belli bir sıraya koymak, artan veya azalan.
+
+237
+00:48:46,291 --> 00:48:51,931
+Önemli bir problem olarak karşımıza geliyor. İşte biraz önce bunun önemini nerede gördük? Binary Search'te gördük.
+
+238
+00:48:53,051 --> 00:49:00,191
+Veya elimizde belli bir dizin indeksleme gerekiyor. Veri tabanlarında, büyük verilerde işlemler yapacağız.
+
+239
+00:49:00,351 --> 00:49:03,911
+İşte bu sıralama bize birçok açıdan fayda sağlıyor.
+
+240
+00:49:05,891 --> 00:49:12,611
+Farklı türlerdeki verilere göre de yapılabilir. İşte insanların maaşlarına göre sıralağa, ne bileyim yaşına göre sıralağa.
+
+241
+00:49:13,652 --> 00:49:39,592
+Elimizde dikdörtgen tarlalar var mesela, dikdörtgen şeklinde. Bunları alanlarına göre sıralar gibi. Birçok sıralama algoritması var. Bu sıralama algoritmalarının çeşitliliği neden kaynaklı dersek, problem çözme yaklaşımlarının çeşitliliğinden kaynaklı. Ve acaba daha performanslı bir algoritma bulabilir miyiz onunla alakalı bir şey?
+
+242
+00:49:40,467 --> 00:50:04,027
+Şimdi örneğin kabarcık sıralaması. Bir dizide işte belli bir geçiş yaparak sıra dışı olan, kural dışı olan bütün noktaların ikilileri tespit edilip bu kural dışı duruma getirilmesiyle alakalı bir şeydir. Şimdi birinci elemandan başlıyor arkadaşlar. Diyor ki bununla buna bir bakayım.
+
+243
+00:50:05,139 --> 00:50:11,139
+Bununla bunun arasında azalan sıralama, artan sıralama diyelim mesela. Yani küçükten büyüye olsun.
+
+244
+00:50:11,139 --> 00:50:16,139
+Küçükten büyüye kuralı ihlal ediliyor mu? Ediliyorsa bu ikisini yer değiştireceğiz.
+
+245
+00:50:16,139 --> 00:50:21,139
+Sonra bununla buna bakacak ediliyor mu? Ediliyorsa yer değiştirecek.
+
+246
+00:50:21,139 --> 00:50:28,043
+Şimdi mesela şurada 3, 2, 1 olsun. Şu işlemin sonunda 3 ile 2 önce bir yer değiştirecek.
+
+247
+00:50:28,532 --> 00:50:38,772
+Sonra birle de üç yer değiştirecek. Dolayısıyla ne olacak? Şu hale gelecek. Ama hala tamamen sıralamadık. İşte bu şekilde gidiyor. Bu şekilde gittikten sonra bir tur daha başlıyor.
+
+248
+00:50:40,892 --> 00:50:51,772
+Buradan nereye kadar gidecek? İşte önce belli bir yere kadar gider. Yani tamamı kontrol etmesine belki gerek yok. Sonra bir tur daha yapacak. Sonra bir tur daha yapacak. Bir yerde göreceğiz ki...
+
+249
+00:50:52,916 --> 00:51:03,916
+bütün bir tur boyunca baştan sona bütün elemanlar doğru bir şekilde gidiyor. Herhangi bir swap işlemine gerek kalmadan yapılıyor. İşte bu kabarcık sıralaması. Herhalde şurada bir örneği vardı.
+
+250
+00:51:05,816 --> 00:51:12,856
+Önce first pass dediğimiz, yani birinci defa diziyi turluyoruz. 3 ile 2'ye baktık. Değişecek mi? Değişecek. Evet.
+
+251
+00:51:13,916 --> 00:51:17,916
+3 ile 4'e bakıyoruz. Artık 2-3 oldu. 3 ile 4'e bakıyoruz. Değişmeyecek.
+
+252
+00:51:18,547 --> 00:51:31,387
+4 ile 1'e bakıyoruz değişecek. 4 ile 5'e bakıyoruz değişmeyecek. Bu birinci turumuz. Dizinin sonuna geldik. Sonra ikinci tura baktığımızda 2 ile 3'e baktık değişmeyecek. Dizinin son hali burası.
+
+253
+00:51:33,527 --> 00:51:41,687
+2 ile 3'e baktığımızda 3 ile 1'e bakıyoruz. Bu değişecek. 1 ve 3 olacak. Sonra burada da diyeceğiz ki
+
+254
+00:51:43,635 --> 00:51:48,235
+Bu şekilde elemanları değiştire değiştire tamam mı?
+
+255
+00:51:48,755 --> 00:51:53,875
+En sona götürdüğümüz eleman artık en büyük elemandır. Yani bunu garanti ediyoruz.
+
+256
+00:51:54,635 --> 00:52:05,916
+Tamam mı? Artık bundan sonraki adımda şu en büyük elemana yani en sona kadar bakmana gerek yok diyor. Zaten algoritmada da dikkat ederseniz n-i'ye kadar gidecek demek.
+
+257
+00:52:10,195 --> 00:52:36,115
+İlk adımda buna baktık, değiştirmedik. Sonra ikinci adımda üç ile bire baktık, değişecek mi değişecek? Ne olacak? İşte bir üç olacak. Bir üçte baktıktan sonra üç ve dörde baktık, değişti mi değişmedi. Bir diğer adıma gidiyoruz. Artık burada da diyoruz ki dört ikinci en büyük elemandır. Tekrar baştan başladık. İki ile bire baktık, iki ile bir yer değiştirdi. Bir ve iki, iki ve üç yer değiştirmedi gerek yok.
+
+258
+00:52:36,563 --> 00:52:45,684
+Artık burada da üçü garanti ettik. Bir geçiş daha yapıyoruz. Bu geçişte bir ve ikiye baktık, yer değiştirmedi. Yer değiştirmediği için algoritmayı kesebiliriz.
+
+259
+00:52:46,384 --> 00:52:51,563
+Veya işte bundan sonra ikiyi garanti ettik, işte bire bakacak bir durum yok. Burada bitirebiliyoruz.
+
+260
+00:52:53,427 --> 00:52:58,427
+Bu şekilde bir yapısı var. Buna bakarak kodlanabilir bir algoritma.
+
+261
+00:52:58,427 --> 00:53:07,427
+Şimdi insertion sort da biraz daha farklı bir algoritma, araya ekleme algoritması. Belki BBG yapısalda falan göstermişlerdir yapısala girişte.
+
+262
+00:53:07,427 --> 00:53:11,427
+Burada biz biraz daha farklı bir açıdan inceleyeceğiz.
+
+263
+00:53:11,427 --> 00:53:21,420
+Insertion sorttaki elemanlarımız ikinci elemanla bir kıyaslama yapılıyor. İkiyi birle kıyaslıyor.
+
+264
+00:53:21,780 --> 00:53:29,539
+Eğer bu büyük değilse ne olacak? İşte daha küçük bir elemansı bunu buraya alacak. Yani ara ve araya ekleme yapacak.
+
+265
+00:53:29,539 --> 00:53:41,539
+Daha sonra diğer elemanlara bu mantıkla üçüncü eleman için bakacak. Üçüncü eleman için baktığında da üçüncü elemandan önceki elemanların araya eklenmesi durumuna bakacak.
+
+266
+00:53:41,539 --> 00:53:48,340
+N artı birinci elemanda ilk N artı bir elemanlar arasında doğru bir konuma elemanı yerleştireceğiz.
+
+267
+00:53:48,755 --> 00:53:58,215
+Şimdi mesela ikinci eleman burada yerinde kaldı ama mesela şuraya baktığımızda dördüncü eleman göre dördüncü eleman belki şu araya girebilir diyeceğiz. Orada bir değişim olacak.
+
+268
+00:54:03,956 --> 00:54:11,636
+Burada elemanın doğru pozisyonunu bulmak için de neden faydalanıyoruz? Doğrusal arama algoritmasından faydalanıyoruz.
+
+269
+00:54:12,916 --> 00:54:16,636
+Şimdi bu sıralamayı bitirdiğimizde aramaya biraz daha devam edeceğiz.
+
+270
+00:54:17,156 --> 00:54:22,636
+Genel olarak kod şöyle o şekilde 2'den n'e kadar işte birinci elemanda birden başlamış.
+
+271
+00:54:23,796 --> 00:54:30,836
+Neden birden başlamış? 2'yi 1 ile kontrol edecek. 2'yi 2 ile kontrol edecek demektir.
+
+272
+00:54:31,347 --> 00:54:53,387
+Bütün şu kuralları bozan durum var mı? While döngüsüyle bakıyor. Bozan bir durum olduğunda while döngüsünden çıkıyor. Daha sonra bu bozan duruma kadar ki olan verileri ne yapıyor? Shift yapıyor. Ne demek shift? İşte şurada bir bozan durum var. Bu elemanlar artık araya, şuradaki eleman gelecek mesela. Buradaki elemanı buraya getireceğiz.
+
+273
+00:54:53,972 --> 00:55:00,211
+Bunu buraya almadan önce ne yapılıyor? İşte bunu bir yedekliyoruz. Şunları birer birer shift ediyoruz arkadaşlar.
+
+274
+00:55:00,972 --> 00:55:07,032
+Ondan sonra bu eleman nereye geliyor? İşte burada 2 olsun, buraya 2 gelecek. Buradaki eleman önce 3 olsun, buraya 3 gelecek.
+
+275
+00:55:07,751 --> 00:55:15,652
+Burada da işte ne bileyim 1 olsun, buraya da 1 gelecek şeklinde. Sonuçta 1, 2, 3 şeklinde bu eski değerler gitti.
+
+276
+00:55:16,612 --> 00:55:20,512
+Bir ara sıralama adımı yapmış olacağız. Herhalde bunun da şeyi vardı.
+
+277
+00:55:22,228 --> 00:55:29,288
+3 ve 2'ye baktık. 3 ve 2'ye baktığımızda ne olacak? İşte bu eleman doğrudan bununla yer değiştirecek.
+
+278
+00:55:30,488 --> 00:55:35,847
+4. elemana baktığımızda 4, 3'den büyük, 3'de 2'den de büyük bu yerinde kalıyor.
+
+279
+00:55:36,708 --> 00:55:40,188
+Sonra 1. elemana baktığımızda 1 ne olacak? Buraya gelecek.
+
+280
+00:55:41,068 --> 00:55:44,508
+1'in buraya gelmesi için aslında yapılan şey bir kaydırma işlemi arkadaşlar.
+
+281
+00:55:44,728 --> 00:55:47,688
+Shift işlemi 1 ile öncekileri kontrol ediyoruz.
+
+282
+00:55:48,371 --> 00:56:00,851
+Biri bir yedekliyoruz. Dördü birin yerine aldık. Üçü dördün yerine aldık. İkiyi üçün yerine aldık. Alacak yer başka kalmadı. Biri de getirdik buraya yazıyoruz. Sonra beş için bakılıyor.
+
+283
+00:56:02,992 --> 00:56:11,391
+Evet, bu arama ve sıralama algoritmalarının bir sürü örneği var. Biz bunları hani işte Selection Sort mesela. Ne yapıyor Selection Sort?
+
+284
+00:56:11,956 --> 00:56:17,956
+Her bir seferinde dizinin en küçük elemanını bulup, işte n tane eleman içerisinden en küçük elemanı buluyor.
+
+285
+00:56:17,956 --> 00:56:21,956
+Şimdi en küçük elemanı bulmak için kaç defa kontrol etmesi lazım?
+
+286
+00:56:21,956 --> 00:56:25,956
+n tane elemanım varsa birinci adımda n defa kontrol yapacak.
+
+287
+00:56:25,956 --> 00:56:28,956
+Buraya getirip bu birinci elemanı yazacak.
+
+288
+00:56:28,956 --> 00:56:35,956
+Sonra ikinci en küçük eleman için n-1 tane. Birincisinde n taneydi.
+
+289
+00:56:35,956 --> 00:56:39,884
+Diğerinde n-1 tane bir karşılaştırma yapıp n küçüğü bulacak.
+
+290
+00:56:41,108 --> 00:56:51,608
+Sonra n-2 tane işlem karşılaştıracak. Sonra n-3. Sonra n-n yani 0 tane karşılaştırma yapana kadar bulacak.
+
+291
+00:56:52,288 --> 00:57:03,528
+Şimdi şurada n'leri toplarsak n tane n geliyor. n çarpı n. Ve birden n'e kadar sayıların toplamı ama negatif toplamı.
+
+292
+00:57:04,388 --> 00:57:08,088
+İşte n çarpı n-1 bölü n çarpı n artı 1 bölü 2.
+
+293
+00:57:08,884 --> 00:57:35,324
+Yani buradan n kareli, pardon birden n'e kadar sayıların toplamı n-1. Evet, n kareli bir şey gelecek. Bir karmaşıklık gelecek. Bunları daha sonra tekrar analiz edeceğiz. Mesela Selection algoritması bunu yapıyor. Şimdi Search algoritmalarından şöyle bir örnek daha vereyim. Araştırmanızı tavsiye ederim. İşinize yarar.
+
+294
+00:57:36,148 --> 00:58:03,648
+Turnier Search'den bahsettik. Turnier Search şunu yapıyor arkadaşlar. Binary Search orta noktayı bulurken, midpoint bulurken işte i ve j'nin i artı j çarpı 1 bölü 2. Yani tam orta noktayı bulurken 1 bölü 2 ile çarpıyor. Burada da demişler ki 2 bölü 3 gibi bir sayı ile çarpsak her defasında.
+
+295
+00:58:04,275 --> 00:58:06,275
+Yani burayı üç bölüme bölüyor.
+
+296
+00:58:07,275 --> 00:58:08,275
+Mid nokta
+
+297
+00:58:09,875 --> 00:58:11,875
+işte şurada olacak diyor.
+
+298
+00:58:12,576 --> 00:58:26,275
+Her defasında iki bölü üçe göre bakarak mesela burada şöyle bir avantaj sağlayabiliriz. Eğer aradığımız eleman orta noktadan büyükse bayağı bir kısım atılıyor. Şu kadar kısım kalıyor.
+
+299
+00:58:26,675 --> 00:58:31,275
+Böyle bir durumda istese olarak böyle bir şeyi yakalarsak faydalı bir ayı görürtme.
+
+300
+00:58:32,659 --> 00:58:54,299
+Bir de interpolasyon search var. M eşittir i artı j çarpı şurada 1 bölü 2 yerine x bölü y gibi bir interpolasyon karşılaştırması yapıyor. Bu da şu demek, mevcut bulunduğum orta noktadan acaba ben nereye gidersem aşağıya veya yukarıya?
+
+301
+00:58:55,827 --> 00:59:16,867
+nereye gidersem bir projeksiyon yapayım, daha kısa bir sürede, daha kısa aramada bu işlemi yapabilirim yoluyla düşünen ve bulunduğum noktadan, bulunduğum orta noktadan bir denklem çıkarıyorlar, interpolasyon değeri çıkarılıyor. Ona göre bir orta nokta, midpoint buluyoruz.
+
+302
+00:59:17,460 --> 00:59:28,780
+Bu neye örnektir? Kitap örneği verdik ya arkadaşlar, 1'den 40. sayfayı arıyorduk. Şu kitap sesini duyarsınız ve ne demek istediğimi anlarsınız.
+
+303
+00:59:29,639 --> 00:59:36,320
+Kitabı ararken elimizde bir hareket yaparız ve ona göre bir sayfanın yerini tayin etmeye çalışırız. Anlatabildim mi?
+
+304
+00:59:37,119 --> 00:59:40,099
+O işlem Interpolation Search'a yakın bir şeydir.
+
+305
+00:59:40,692 --> 00:59:50,531
+İşte elimizde baktık, işte 40. sayfa arıyoruz. Şu an 30'u bulmuşuz. İşte 30'dan az bir şey gidersek 40'ı bulacağımızı söyleriz. Belki 42'ye gideriz, oradan bir iki yer geliriz.
+
+306
+00:59:51,131 --> 00:59:58,271
+Böyle 2-3 deneme de genellikle bulunur. Bu mantıkla yapılan bir şeydir. Şu Öklü tel görütmesini de anlatalım, bir ara verelim.
+
+307
+01:00:00,000 --> 01:00:26,419
+algoritması, iki sayı arasında biraz daha algoritmalar farklılaşıyor burada. Obep bulmada kullanılan bir algoritma. Çoğunuz bunu biliyorsunuz. İki sayının obebi normal olarak nasıl bulunabilir? Şimdi m ve n iki sayı var. Ben şunu yapabilirim. Bunlardan minimumunu bulurum. Minimum n virgül n'i bulabilirim. İşte buradan gelen x değerine göre x'den x'den bire doğru giderim.
+
+308
+01:00:27,443 --> 01:00:48,884
+x, x eksi 1, x eksi 2 diye devam eder gideriz. Şimdi bu arama işlemlerinde eğer ikisi de iki sayıda tam bölen bir değer bulabilirsem arada o benim obebim olur. Burada küçük n değil de büyük n kadar bir adımla yani linear search gibi bir şeyle ne yapıyoruz? x'den 1'e kadar.
+
+309
+01:00:49,344 --> 01:00:55,063
+bir arama yapıyoruz. Bu bir algoritma. Diner doğrusu arama algoritması gibi düşünebiliriz.
+
+310
+01:00:55,844 --> 01:00:59,423
+Röklük demiş ki bu daha kolay bir şekilde de yapılabilir. O da şöyledir.
+
+311
+01:01:01,103 --> 01:01:07,163
+M ve N, M büyük N olmak üzere bunu şu şekilde yapıyoruz. Küçük sayıyı alıp buraya doğrudan yazıyoruz.
+
+312
+01:01:08,063 --> 01:01:13,724
+Daha sonra ikinci tarafa M'in N'ye modunu alarak yazıyoruz.
+
+313
+01:01:15,380 --> 01:01:41,500
+İkinci taraf, şu taraf, sıfır olana kadar devam ediyor. O zaman OBV'i buluyoruz. Mesela 60'a 24 demişiz. GCD 60,24. Ne olacak? Buraya doğrudan GCD 24'ü yazacağız. Şuraya da 60 ile 24'ün bölümünden kalan, işte 48 var, kalan 12 oluyor. Bunu yazacağız. Tekrar bunu çalıştırıyordum. Şurayı sıfır bulamadık.
+
+314
+01:01:42,036 --> 01:02:07,976
+gcd 12 diyoruz. 24 ile 12'nin bölümünden kalan 0. 0'ı bulduktan sonra gcd obepimiz budur diyoruz. Bakın biraz daha hızlı. Şöyle koduna bakacak olursak, genel olarak kodu şu şekildedir arkadaşlar. N0'dan farklı olduğu sürece gcd diyelim.
+
+315
+01:02:09,012 --> 01:02:16,211
+Burada M, N var. Bir sonraki adımda M yerine ne gelecek? Doğrudan N gelecek. Şu.
+
+316
+01:02:16,211 --> 01:02:31,012
+N yerine ne gelecek? Doğrudan R gelecek. R neydi? İşte M mod N'di. Bu işlemleri yapıyor ve N sıfır olana kadar, sıfırdan farklı olduğu müddetçe bu döngü çalışıyor.
+
+317
+01:02:31,012 --> 01:02:36,211
+Döngünün sıfıra ulaşma olasılığı elbette var. Ulaştıktan sonra ne yapacaksınız?
+
+318
+01:02:36,563 --> 01:02:50,003
+m yi bulacaksınız. Mesela gcd 6,12 dediğimizde bu ne olur? 6'yı yazacağız şurada arkadaşlar. 6'yı yazmadan önce şuna bakıyoruz.
+
+319
+01:02:50,003 --> 01:02:56,483
+6'nın 12'ye modundan kalan nedir?
+
+320
+01:02:58,228 --> 01:03:06,467
+Pardon, önce bunu yazacağız. 12'yi doğrudan buraya yazacağız. Çünkü şu algoritmaya göre ne yapacağız? n'i buraya almamız gerekiyor. n burada 12.
+
+321
+01:03:06,467 --> 01:03:14,228
+Sonra 6'nın 12 ile modundan kalan ne? 6'dır. Yani küçük sayıyı bölemezsiniz. Doğrudan 6 yazarsınız.
+
+322
+01:03:14,228 --> 01:03:25,228
+Ne oluyor? GCD 12 6. Devam edelim bir adım daha. Burada 6 geldi. 6'nın 12 ile bu sefer modundan kalan kaç? 0. İşte nedir? GCD 6 diyoruz.
+
+323
+01:03:25,536 --> 01:03:34,516
+Büyük sayı bazen sağ tarafa yazılır. O bir adım sonra, bir iterasyon sonra önce büyük sayı, sonra küçük sayı haline geliyor.
+
+324
+01:03:36,536 --> 01:03:42,536
+Bir diğer çözüm, benim biraz önce söylediğim bir şey. İki sayıdan küçük olanı da bulduk. Küçük sayıdan...
+
+325
+01:03:43,315 --> 01:04:09,436
+küçük sayıdan işte bire doğru veya birden küçük sayıya doğru tek tek arama yaparsınız. Ben küçük sayıdan bire doğru gitmeyi tercih ederim. Eğer ikisini de bir yerde bölebiliyorsam işte orası GCT'dir diyorum. Bu bir de olabilir. Eğer bir ise iki sayı aralarında asaldır. Zaten bunu da matematikten biliyoruz. Bunun bir ortaokul yaklaşımı var. Mesela ne yapılıyor? Onu bu slide'da atlamış mıyım? Vardı da muhtemelen Banu Hoca onu da kaldırdı galiba.
+
+326
+01:04:10,291 --> 01:04:18,291
+veya işte lisede de anlatılır iki tane sayı x ve y gibi iki tane sayı. Bunun asal çarpanlarını bulursunuz.
+
+327
+01:04:19,731 --> 01:04:27,572
+İşte 2 üzeri 3 çarpı 2'nin 3'ün karesi diyelim. Burada da 2'nin 3'ün kübü çarpı 2'nin karesi diyelim.
+
+328
+01:04:28,291 --> 01:04:35,911
+İkisinde de ortak olanları yazdınız mı o bölümü buluyorsunuz. İkisinde de 2'nin karesi ortak, 2'nin karesi. İkisinde de 3'ün karesi ortak.
+
+329
+01:04:36,851 --> 01:04:56,371
+Böyle bir şey bulabilirsiniz. Tabi burada asıl problem bu bir algoritma mı? Algoritma değil. Bu bir yaklaşım. Niye yaklaşım? Çünkü ben bir x ve y sayısının şu değerlerini, şu asal çarpanlarını bulmam gerekir. Problem içinden başka bir problem çıktı. Şöyle bir algoritma yok. Sen sayıyı vereceksin.
+
+330
+01:04:57,076 --> 01:05:16,076
+Çünkü, pardon, böyle bir operatör ya komut yok. Sayı vereceksin, sana asal çarpanlarını verecek. Böyle bir şey yok. Böyle bir fonksiyonum olsaydı anlardım. Ya bunun için ayrı bir kod yazacağız, ya da elimizde bunlar hazır olarak verilmiş olacak. Eğer hazır olarak verilmişse bunu kullanmak, tabi diğer yöntemlere göre daha mantıklı.
+
+331
+01:05:16,076 --> 01:05:23,076
+Şimdi, tam bir saat oldu. Bir ara verelim. Geldiğimizde devam ederiz.
+
+332
+01:05:23,764 --> 01:05:27,364
+Saat 10 geçe görüşelim arkadaşlar.
+
+333
+01:14:54,100 --> 01:14:57,120
+Evet arkadaşlar, devam edelim.
+
+334
+01:15:01,332 --> 01:15:11,052
+ders, bu dersin aynı saatinde başka bir ders var mı arkadaşlar aldınız? Genelde bu derse katılım yani ellilerde falan oluyor da.
+
+335
+01:15:15,572 --> 01:15:17,420
+Herkes uykuda mı acaba?
+
+336
+01:15:29,939 --> 01:15:35,479
+Diğer derslerimizde katılım genelde yani daha 70'lerde falan çıktı ama burada nedense 50.
+
+337
+01:15:36,559 --> 01:15:38,420
+Herkese bir ders de diğerlerinden daha zevkli.
+
+338
+01:15:39,799 --> 01:15:41,959
+Ama kolay bir ders yani. O da gerçek.
+
+339
+01:15:44,779 --> 01:15:47,299
+Evet, şimdi devam edelim arkadaşlar.
+
+340
+01:15:49,699 --> 01:15:53,619
+Bundan sonra kısımda algoritma tasarımı ve veri yapıları kısmına bakacağız.
+
+341
+01:15:54,579 --> 01:15:56,299
+Burada bahsettiğimiz her bir bölüm...
+
+342
+01:15:57,844 --> 01:16:22,744
+Algoritma tasarımı olsun, veri yapılar olsun. Bunların hepsi ayrı bir ders. Şimdi arkadaşlar, genel olarak algoritma tasarımında kullanılan yöntemleri şurada görüyoruz. Mesela brute force. Bu brute force, kaba kuvvet tekniği, yani en basit anlamıyla exhaust-to-storage dediğimiz bütün olasılıkları tek tek problemin tamamını baştan sona tek tek çözmek demektir.
+
+343
+01:16:23,891 --> 01:16:32,211
+Mesela birden yüze kadar sayıları toplayacaksınız. Before döngüsüyle birden yüze kadar sayıları toplamak brute force tekniğidir.
+
+344
+01:16:32,211 --> 01:16:41,811
+Divide on Conquer, problem uzayınızda kullandığınız ve problemde kullandığınız verinin alt parçalara bölünüp,
+
+345
+01:16:41,811 --> 01:16:50,532
+daha çok bölme ile, yani önce yarısını, sonra onun yarısını, daha onun yarısını, en küçük parçaya kadar bölüp,
+
+346
+01:16:50,899 --> 01:17:00,579
+En küçük parçadan en büyük parçaya doğru elde edilen çözümleri birleştirme yoluyla hareket edilir. Merge Sort mesela bununla alakalı bir algoritmadır.
+
+347
+01:17:00,579 --> 01:17:09,059
+Quicksort aynı şekilde. Ne yapıyorsunuz? Örneğin 8 tane elemanımız var. Önce bunu bir 4 parçaya bölüyorsunuz.
+
+348
+01:17:09,652 --> 01:17:20,452
+Ondan sonra onu iki parçaya bölüyorsun. İki parçayı sıraladıktan sonra bu iki parça sıralanıyor, bu iki parça sıralanıyor. Daha sonra bu sıralanan iki parçalar ikişerli olarak birleştiriliyor.
+
+349
+01:17:21,652 --> 01:17:30,652
+Ve çözüme öyle gidiyorsunuz. Ve bir çözüm de iyileştirme sağlıyor. Decree and Conquer de bunun gibi ama burada bir bölme yerine
+
+350
+01:17:30,804 --> 01:17:39,863
+işte n eleman varsa önce n-1 elemanı, o n-1 elemanın içerisinden n-2 elemanı, onun içinden n-3 elemanı, böyle azaltı azaltı çözüyorsunuz.
+
+351
+01:17:40,603 --> 01:17:47,264
+Transforming Conquer, bildiğiniz bir algoritma var, bir problemi çözmek için kullanılıyor.
+
+352
+01:17:48,183 --> 01:17:55,163
+Siz bu algoritmaya elinizdeki veri setinizi uyduruyorsunuz, farklılaştırıyorsunuz.
+
+353
+01:17:58,127 --> 01:18:03,007
+farklılaştırdığınız veri seti üzerinden gerçekleştirip gerçek problemi çözüyorsunuz.
+
+354
+01:18:03,007 --> 01:18:11,528
+Mesela şöyle bir şey sorayım. Dizinin en küçük elemanını bulmayı sağlayan bir fonksiyonumuz var. Hazır bir fonksiyon.
+
+355
+01:18:11,528 --> 01:18:23,127
+Yani inputu veriyorsunuz, diziyi veriyorsunuz, size minimumu veriyor. Bu minimumu bulma yoluyla dizinin en büyük elemanını nasıl bulursunuz?
+
+356
+01:18:24,724 --> 01:18:29,084
+Bu fonksiyonu kullanarak en büyük elemanı nasıl buluruz?
+
+357
+01:18:36,948 --> 01:18:59,988
+Evet, güzel. Demek ki bir yerlerden gördünüz. Dizideki bütün elemanları negatif yaparsanız, o bulduğunuz elemanlar içerisindeki minimum değer, ne olur? Bizim maksimum değerimize karşılık gelecektir. Tekrar tabii bulduktan sonra minimumu tekrar, aynı işlemi tekrar yapacağız. Mesela şöyle örnek yazayım.
+
+358
+01:19:04,787 --> 01:19:06,787
+Bu bize 2'yi verecek.
+
+359
+01:19:06,787 --> 01:19:12,787
+Eğer ben bunların hepsini önce bir negatif yaparsam bu fonksiyon eksi 8'i verecek.
+
+360
+01:19:12,787 --> 01:19:16,787
+Eksi 8'i bulduktan sonra tekrar negatifini bulursam diyeceğiz ki işte 8'dir.
+
+361
+01:19:16,787 --> 01:19:23,787
+Bu bilinen bir var olan bir yöntemle bir algoritmayla yeni bir problemi çözmek.
+
+362
+01:19:23,787 --> 01:19:27,500
+Space and time trade-off. Trade-off ne demek?
+
+363
+01:19:29,684 --> 01:19:55,724
+Ödünleşme mi deniyor artık? Yani ya space'den, bellekten kayıp vererek veya zamandan kayıp vererek problemi çözme. Bazı problemler vardır ki zaman önemli değildir. Yani çözülsün de ne zaman çözülse çözülsün denir. O zaman zamandan ödün vererek yani uzun bir sürede belleği optimum kullanarak problemi çözebiliriz.
+
+364
+01:19:56,372 --> 01:19:59,932
+veya bellekten ödün vererek kısa sürede problemi çözebiliriz.
+
+365
+01:19:59,932 --> 01:20:10,092
+Örneğin şuradaki Merse Sort, daha kısa sürede bir algoritma çözüyor ama onu yaparken de bellekten fazla kullanıyor gibi.
+
+366
+01:20:10,092 --> 01:20:16,771
+Greedy algoritmalar, exact soluşunu, tam soluşunu vermeden
+
+367
+01:20:17,076 --> 01:20:21,076
+Size optimum soluşunu vermeyi sağlayan algoritmalar.
+
+368
+01:20:21,076 --> 01:20:23,076
+Optimum soluşu.
+
+369
+01:20:23,076 --> 01:20:27,076
+Örneğin iki şehir arasında, işte Türkiye haritasını düşünelim.
+
+370
+01:20:27,076 --> 01:20:29,076
+İki şehir arasındaki en kısa yolu bulacaksınız.
+
+371
+01:20:29,779 --> 01:20:40,979
+Belki 100 tane yol var. O 100 tane yoldan size en kısasını gerçek anlamda vermiyor ama olabilen, mümkün olabilen en kısa yolu bulmaya çalışıyor veya maliyet problemi.
+
+372
+01:20:41,699 --> 01:20:51,699
+Dynamik programlama dediğimiz şey yine bir optimizasyon yöntemi. Burada tam kesin çözümü bulabiliyorsunuz dynamik programlama yöntemiyle.
+
+373
+01:20:52,564 --> 01:20:58,324
+Optimizasyon ama kesin eglerik solucu verilebiliyor.
+
+374
+01:20:59,104 --> 01:21:02,344
+Iterative Improvement dediğimiz elimizde bir çözüm var.
+
+375
+01:21:03,204 --> 01:21:06,204
+Bu çözümü bir sonraki adımda daha iyi noktaya getirelim gibi.
+
+376
+01:21:07,144 --> 01:21:09,824
+Backtracking dediğimiz şey bir çözüme ulaştık.
+
+377
+01:21:09,824 --> 01:21:11,824
+O çözümü bize götüren...
+
+378
+01:21:11,840 --> 01:21:24,139
+En iyi yol nedir onun kullanımı? Bunların hepsi arkadaşlar, veri yapıları algoritma dersinde ayrı bir başlık olarak anlatılan şeyler. Biz burada sadece bir tanıtım yapar gibi bu dersi işleyeceğiz.
+
+379
+01:21:25,079 --> 01:21:34,780
+Branch and Bound'da işte ağaç yapısı şeklinde en iyi, en optimum şeyi bulurken, en optimum çözümü bulurken kullanılan bir başka tekniktir.
+
+380
+01:21:36,692 --> 01:21:41,851
+Şimdi algoritmaları analiz ederken genel olarak kullandığımız iki teknik var.
+
+381
+01:21:43,592 --> 01:21:50,971
+Hız ve süre, time efficiency bizim bir metrimiz olacak. Bir de bellek, space efficiency bir diğer metrimiz olacak.
+
+382
+01:21:51,692 --> 01:21:57,332
+Eğer benim iki tane algoritmam varsa A algoritması B algoritması, daha üçüncü algoritmam olsun C algoritması.
+
+383
+01:21:57,332 --> 01:21:59,832
+İşte birisi on milisaniyede.
+
+384
+01:22:00,724 --> 01:22:13,523
+Biri 20 milisaniyede, birisi 5 milisaniyede bu işlemi yapıyor. Birisi 10 byte kullanıyor, birisi ne bileyim 20 byte kullanıyor, birisi 5 byte kullanıyor.
+
+385
+01:22:13,523 --> 01:22:24,123
+Hepsi de aynı problemi çözüyor belki. Sayıları çok böyle şey yaptım ama. Şu zaman ve bellek açısından kötüdür. Hatta şunu 100 yapalım arkadaşlar.
+
+386
+01:22:24,659 --> 01:22:34,100
+Bu zaman açısından şuna göre iyi ama bellek açısından buna göre iyi. Buna baktığımız zaman bu iki açıdan da diğerlerine göre iyidir diyeceğiz. Avantajlıdır.
+
+387
+01:22:34,100 --> 01:22:44,619
+Daha iyi bir algoritma var mıdır? Eğer alt sınırlarımızı ve optimal çözümleri dikkate alarak, bu iki kriteri alarak...
+
+388
+01:22:45,235 --> 01:23:10,235
+Optimal çözümde özellikle daha çok kullanıyoruz. Optimizasyon algoritmalarla bir sonraki adımda daha iyi bir çözüm bulabiliyorsak veya farklı bir yöntemle daha iyi bir çözüm bulabiliyorsak algoritmayla o zaman o bizim için daha iyi bir algoritma oluyor. Veya belli sınırlarda yani elimizde bir problem veri seti var. O veri setinin belli bir sınırlarıyla çalıştığımızda daha iyi bir sonuç elde edebiliyorsak
+
+389
+01:23:10,836 --> 01:23:34,996
+Bu bizim için daha iyi bir algoritma olarak karşımıza gelecektir. Önemli karşılaştığımız problemler, sıralama problemi bunu konuştuk, arama problemi konuştuk, metin işleme problemi veya bu çok kapsamlı bir konu. Mesela text search, yani bir veri içerisinde veri arama.
+
+390
+01:23:36,020 --> 01:23:45,020
+Bunun farklı algoritmaları. Graf algoritmalarının kısmına, bir kısmına bakacağız. Kombinasyonlar ve problemler. Örneğin elimde
+
+391
+01:23:45,020 --> 01:23:56,380
+işte üç elemanlı bir alfabe var. Yani A, B, C böyle bir alfabemiz var. Bundan kaç farklı kombinasyon oluşturabilirim üç elemanlı gibi.
+
+392
+01:23:57,076 --> 01:24:07,076
+Bunların örneğin bir şifre oluşturma problemi. Geometrik problemler dediğimiz işte grafların çizilmesi veya kompütür grafite kullanılan şeyler.
+
+393
+01:24:07,076 --> 01:24:17,076
+Sayısal problemler, nümerik analizde gördüğünüz şeyler olabilir. Sayısal analizde sayısal işaret işlemede göreceğimiz konular olabilir. Bunların hepsi nümerik bir problemdir.
+
+394
+01:24:17,076 --> 01:24:24,076
+İşte Fourier dönüşümü dediğimiz bir şey var. Mesela Fourier dönüşümü, Fourier transform. En kare karmaşıklı bir şey.
+
+395
+01:24:24,671 --> 01:24:34,431
+Bunu Fast Fourier Transform'u ile n log n karmaşıklığa indirebilmişler. Bunların hepsi sayısal problemlere örnekler.
+
+396
+01:24:36,271 --> 01:24:41,551
+Ve buradan sonra arkadaşlar, temel veri yapıları kısmına geliyoruz. Şimdi veri yapısı ne demek?
+
+397
+01:24:42,851 --> 01:24:50,091
+Algoritmayı biliyoruz. Veri yapısını anlayabilmemiz için önce bilgisayarın çalışma mantığını anlamamız gerekiyor.
+
+398
+01:24:50,091 --> 01:24:51,951
+Biliyorsunuz bizim bir işlemcimiz var.
+
+399
+01:24:52,467 --> 01:25:07,907
+Bir de bu işlemcideki işlenecek komutların, pardon koşturulacak komutların ve işlenecek dataların kullanıldığı, saklandığı belleğimiz var.
+
+400
+01:25:10,387 --> 01:25:14,827
+Bu bellek, yani bizim RAM diye ifade ettiğimiz bir bellek.
+
+401
+01:25:14,827 --> 01:25:20,268
+Bir de ne var? Kalıcı hafızamız var. İşte daha çok HDD diyoruz.
+
+402
+01:25:20,692 --> 01:25:24,971
+Burada da bunlar aslında böyle bir ilişki vardır.
+
+403
+01:25:25,931 --> 01:25:35,271
+Şimdi kullandığımız verilerin, yani algoritmamızın hızlı çalışması için veriye hızlı ulaşmamız gerekiyor değil mi?
+
+404
+01:25:36,412 --> 01:25:40,192
+Veriye ne kadar hızlı ulaşırsak o kadar bizim için iyi.
+
+405
+01:25:40,811 --> 01:25:47,271
+Veriye hızlı ulaşmak için de veriyi bellekte, ister kalıcı bellek ister uçucu bellek olsun.
+
+406
+01:25:48,212 --> 01:25:58,712
+en optimum şekilde organize etmek gerekiyor. Tamam mı? Hızlı ulaşım için hızlı bir şekilde yerleştirecek organizasyonu yapmamız lazım. Bu,
+
+407
+01:25:58,712 --> 01:26:07,551
+hızlı organizasyonların tekniklerine veri yapıları diyoruz. Örnek olarak işte 100 öğrencinin notunu,
+
+408
+01:26:09,692 --> 01:26:13,712
+ben 100 tane değişkenle kullanabilir miyim? 100 veraybılığa.
+
+409
+01:26:14,771 --> 01:26:41,771
+100 öğrencinin vize notu diyelim. 100 tane veri algıl kullanılabilir ama bunun üzerinde işlem yapmak, programlama yapmak çok verimsizdir. Yani problemi çözerim ama verimsizdir. Bunun yerine ne yapıyoruz? Biz 100 elemanlı dizi kullanıyoruz. Bu 100 elemanlı dizide tek bir not tutuyor. Eğer 2 not tutacaksak 100 çarpı 2 elemanlı bir matriz tutuyoruz. Bakın bunlar hep veriye hızlı erişmemi sağlayacak.
+
+410
+01:26:42,452 --> 01:26:43,452
+Veri yapıları.
+
+411
+01:26:43,452 --> 01:26:53,452
+İşte sadece bunlarla hani dizilerle olmuyor da daha farklı türde veri yapıları var. Genel olarak veri yapıları konusunda incelenen şeyler.
+
+412
+01:26:53,452 --> 01:27:00,452
+Biz burada veri yapısını anladığımız şey verinin verliğe yerleştirilmesi olacak, verliğe erişilmesi olacak.
+
+413
+01:27:01,300 --> 01:27:18,860
+ve verinin işlenmesinde bize sağladığı kolaylıklardan bahsedeceğiz. Bunun için bellek dediğimiz şey arkadaşlar, kaç boyutlu? Van diye bir şeydir. Genel anlamda bütün veri yapıları bir boyutlu yapıdadır fiziksel olarak.
+
+414
+01:27:19,347 --> 01:27:26,888
+Ama mantıksal olarak biz burada iki boyutlu, üç boyutlu, dört boyutlu veya daha fazla boyuttan veri yapıları oluşturabiliyoruz.
+
+415
+01:27:27,228 --> 01:27:33,007
+Şimdi mesela matris dediğimiz şey iki boyutlu görünüyor değil mi? Birinci öğrencinin notları, işte öğrencinin birinci notu, ikinci notu gibi.
+
+416
+01:27:33,007 --> 01:27:40,768
+Ama baktığımız zaman bu belleğe yerleşeceği için bellekte ne olacak? İşte böyle bir sayı dizisi olacak burada yani.
+
+417
+01:27:41,247 --> 01:27:42,007
+İşte bunun bir kısmı...
+
+418
+01:27:43,123 --> 01:27:49,123
+verleyin birinci notları bir kısmı ikinci notlarını gösterecek. Fiziksel anlamda her şey bir boyutlu.
+
+419
+01:27:49,123 --> 01:27:56,123
+Şimdi birazcık onlara bakalım. Örnek olarak listeler. Yani liste dediğimiz şey arkadaşlar,
+
+420
+01:27:56,123 --> 01:28:07,123
+ister bir boyutlu olsun ister iki boyutlu olsun verilerin bir şekilde saklandığı, yani bir düzene göre saklandığı, peş peşe saklandığı durumlardır.
+
+421
+01:28:07,123 --> 01:28:10,123
+Burada bir listelerde dizileri görüyoruz.
+
+422
+01:28:10,676 --> 01:28:15,796
+Dizi dediğimiz şey, bellekte peş peşe gelmesi lazım.
+
+423
+01:28:17,316 --> 01:28:18,076
+Elemanların.
+
+424
+01:28:19,296 --> 01:28:22,476
+Yani burası P adresi, burası P artı bir adresi olacak.
+
+425
+01:28:23,316 --> 01:28:28,416
+Elemanların genel olarak aynı türden olması gerekir ama bu çok böyle yani katı bir durum değil.
+
+426
+01:28:28,596 --> 01:28:31,396
+Bazı dillerde farklı türlerden birileri de saklanabiliyor.
+
+427
+01:28:32,056 --> 01:28:33,216
+Şimdi bunda sorun şu.
+
+428
+01:28:34,115 --> 01:28:36,336
+İster dinamik bellek kullanalım, ister kullanmayalım.
+
+429
+01:28:37,652 --> 01:28:48,652
+Bir dizi kullandığımızda, peş peşe yer sebebiyle istediğimiz kadar elemanı belleğe saklayamayabiliriz.
+
+430
+01:28:48,771 --> 01:28:50,131
+Bellekte saklayamayabiliriz.
+
+431
+01:28:50,832 --> 01:28:53,931
+Yani bir milyon elemanlık bir şey var, bellek ihtiyacımız var.
+
+432
+01:28:54,051 --> 01:28:57,271
+Bellekte de bir milyonluk yer var ama bir milyonluk peş peşe yer yok.
+
+433
+01:28:58,231 --> 01:29:00,031
+Onun için bu biraz dezavantaj.
+
+434
+01:29:00,711 --> 01:29:03,531
+Bağlantılı liste, bağlı linked liste dediğimiz şey şudur.
+
+435
+01:29:04,212 --> 01:29:10,972
+Yine bellekte elemanlar var ama bellekteki elemanları öyle bir sıralamışız ki, işte şu head eleman dediğimiz bir şey olacak.
+
+436
+01:29:11,852 --> 01:29:16,572
+İlk eleman. Sonra birinci eleman, işte bunun hemen bitişinde değil, başka bir yerde.
+
+437
+01:29:16,792 --> 01:29:21,311
+Birinci eleman girecek, başka bir yeri gösterecek. O girecek, başka bir yeri gösterecek.
+
+438
+01:29:21,311 --> 01:29:29,012
+Ta ki nul görene kadar. Böyle bir yapısı vardır. Şuna göre bellekte yer bulma açısından daha hızlıdır.
+
+439
+01:29:29,712 --> 01:29:30,612
+Ama burada da ne var?
+
+440
+01:29:31,507 --> 01:29:47,188
+dizilerde rastgele bir erişim, üçüncü elemana, sekizinci elemana erişim yapabiliyorken Linked Listelerde bunu yapamayacağız. Çünkü istediğimiz bir elemanı ararken Head'den itibaren ne yapacağız? Sonuna kadar gideceğiz.
+
+441
+01:29:47,188 --> 01:29:54,067
+Mesela dizide bir Shift işlemi yapacağız. Şuradan sonraki elemanlar birer kaydırılsın.
+
+442
+01:29:54,127 --> 01:30:20,787
+Bu dizilerde biraz zor. Ne yapıyorsun? En sonundan itibaren birer birer kaydırıyorsun. Araya istediğin elemanı getiriyorsun. Linked listelerde daha kolay. Araya bir eleman, boş yer buluyorsun. Diyorsun ki işte bunu kimi gösterecek? Şu şunu göstersin. O zaman bu da bunu göstersin diyorsun. Diğer elemanları kaydırmanın aradaki linkleri yer değiştirerek bu işlem yapılıyor. Stringler işte karakter dizileri dedik. Şimdi yığın ve kuyruk çok hatta priority queue.
+
+443
+01:30:21,524 --> 01:30:28,644
+Çok temel ama birçok yerde karşımızda çok önemli üç veri yapısı. Aslında iki veri yapısı var burada.
+
+444
+01:30:29,364 --> 01:30:41,203
+Dizilerin özelleştirilmiş bir hali. Şimdi ben herhangi bir elemana erişip aradan, ortadan, baştan, sondan eleman erişimi yapıyorum.
+
+445
+01:30:41,203 --> 01:30:45,043
+Gerekirse değiştiriyorum, gerekirse silebiliyorum, yer değiştirebiliyorum.
+
+446
+01:30:45,043 --> 01:30:49,203
+Şimdi burada yığın ve kuyrukta bir kısıtla karşılaşacağız.
+
+447
+01:30:49,395 --> 01:31:01,456
+sadece izin verilen elemanları erişip değiştirebileceğiz. Alacağız veya sili, ekleyeceğiz veya sileceğiz. Genel olarak yapılan işlem aslında ekle sil işlemi var burada. Değiştirme pek olmaz.
+
+448
+01:31:02,355 --> 01:31:13,296
+Yani burada değiştirmeyi şey yapabiliyoruz ikisinde. Ama burada bir kuyruk, işte yığın dediğimiz yapıda ekleme ve silme. Bu ekleme ve silmenin de kendine göre mantığı var. Birazdan gelecek bunlar.
+
+449
+01:31:14,296 --> 01:31:15,296
+Graflar.
+
+450
+01:31:16,819 --> 01:31:28,099
+Belli bir mantıkla oluşturulan, yani yine bunlar da matrislerle falan temsil edeceği, yani şunlar arkadaşlar, şu kısım, şunların da temeli.
+
+451
+01:31:29,379 --> 01:31:36,219
+Belli bir mantıkla işte noktalar ve kenarlar kümesi şeklinde düşünülen bir veri yapısı.
+
+452
+01:31:36,599 --> 01:31:38,639
+Bunu detaylı olarak göreceğiz bu derste.
+
+453
+01:31:38,839 --> 01:31:42,439
+Ağaçlar grafların bir alt kümesidir, onu da detaylı göreceğiz.
+
+454
+01:31:43,283 --> 01:31:51,263
+Kümeler var. Kümelerde de ne yapıyoruz? Birden fazla türden veriyi bir kümede saklayabiliyoruz. İşte hash setler falan diye karşımıza geliyor.
+
+455
+01:31:51,891 --> 01:32:15,751
+Şimdi diziler ve Linkedlist'ler arasındaki bağıntıya benzerliğe bakalım önce. Şu dediğimiz bir dizidir. İndisler yoluyla veya C'de en kötü ihtimal pointer yoluyla. Birinci elemanın adresini biliyorsak ne yaparız? Ya pointer aritmetiyle veya indis aritmetiyle bütün elemanlara erişiriz. Bellekteki organizasyonu burada olduğu gibi bitişiktir.
+
+456
+01:32:16,404 --> 01:32:23,744
+artışıl olarak yetiştirilir. Bağlı listelerde durum öyle değildir. İşte bir head elemanımız vardır, ilk eleman.
+
+457
+01:32:24,404 --> 01:32:29,244
+Bellekli herhangi bir noktaya yerleştirilir. Bu head elemanın içerisinde bir de pointer değişkeni tutulur.
+
+458
+01:32:29,324 --> 01:32:36,923
+Bakın burada biz datayı böyle tutuyoruz, indisi tutuyoruz. Bu elemanlarda da düğümler diyoruz, bunlara node diyoruz hepsine.
+
+459
+01:32:37,427 --> 01:32:54,487
+nodlar birleştirerek listeleri oluşturuyor. Bu düğümler içerisinde her bir notta bir data son tutuluyor, bir de bir sonraki düğümün adresi tutuluyor. Herkes bir sonraki yerin adresini de bilmek zorunda listenin tamam olması için. Ta ki son düğümde null adresini tutacak.
+
+460
+01:32:54,927 --> 01:32:59,327
+Bu da ne demek? Listenin sonlandığını, bundan sonra yeni bir eleman gelmeyeceğini söylüyor.
+
+461
+01:32:59,327 --> 01:33:09,327
+Liste mesela ekleme yaparken burada nasıl ekleme yapabiliriz? İşte araya ekleyeceksek arama ekleme, sona ekleyeceksek sona ekleme veya başa ekleyeceksek başa ekleme. Shift işlemiyle yapıyoruz.
+
+462
+01:33:21,427 --> 01:33:33,028
+Eğer bunu LinkedDiste üzerinde yapacak olursak, ilk elemandan aradığımız yere kadar, eğer arama ekleyeceksek, işte şuraya bir yere gelceğiz, buraya E elemana ekleyelim diyoruz.
+
+463
+01:33:34,148 --> 01:33:43,828
+Bu eleman burayı gösterecek. Şunun gösterdiği yeri yedekleyeceğim, buraya alacağım. Bu da C'nin adresini gösterecek. Aradaki şu düğümü de koparacağım.
+
+464
+01:33:43,828 --> 01:33:46,507
+Ne olmuş olacak?
+
+465
+01:33:46,963 --> 01:33:54,243
+Bu şekilde bir LinkedList'e eleman eklemiş olacağım. Sona ekleyeceksek zaten ne yapacağız? Direkt getirip sona ekleyeceğiz.
+
+466
+01:33:55,663 --> 01:34:04,083
+Sona eklediğim bu düğüm artık burayı null göstermeyecek. Burası işte f'yi göstersin. Ondan sonra buradaki kısmı da null yapıyorum dizinin sonunu almak için.
+
+467
+01:34:05,003 --> 01:34:14,224
+LinkedList'ler içerisinde veya diziler içerisinde, bakın dizilerde de mümkün, birden fazla veri saklayabiliriz. Yani sadece Integer 3-5 gibi bir şey.
+
+468
+01:34:14,771 --> 01:34:39,851
+saklamak zorunda değiliz. Aynı şey dizilerde de mümkün. Şimdi biz yapısal programlama, bilmiyorum [öğrenci] sen bu derste yapısal programlamayı da muhtemelen ihtifalıyorsun. Orada hep Integer dizileri üzerinde çalışıyoruz ama gelecek haftalardan itibaren Straklar ve Strak dizileri üzerinde çalıştığımızda ne yapacağız? İşte burada birden fazla veri saklıyor olabileceğiz. Dizi genel bir konsepttir arkadaşlar.
+
+469
+01:34:40,404 --> 01:34:43,144
+karakter intejri olarak düşünmeyin. Tamam mı [öğrenci]?
+
+470
+01:34:46,584 --> 01:34:55,464
+Burada başka soru var mı? Listeler ve bağlı listeler bu şekilde. Bunun detayları, kodlanması, implementasyonu hangi derste? Veri yapıları dersinde.
+
+471
+01:34:55,804 --> 01:35:00,044
+Biz bu dönem yapısal programlamada bu konuya giriyor muyuz? Giriyoruz.
+
+472
+01:35:00,204 --> 01:35:05,364
+Straklar adı altında ve Strak dizileri adı altında linkit listeleri oluşturacağız.
+
+473
+01:35:05,971 --> 01:35:11,211
+Zaten straklarda şöyle diziler oluşturacağız da bir de Linked listeleri de yapacağız, tasarlayacağız.
+
+474
+01:35:13,411 --> 01:35:15,031
+Şimdi gelelim kuyruklara.
+
+475
+01:35:15,551 --> 01:35:20,871
+Şimdi kuyruk ve stek dediğim gibi dizilerden türeyen, listelerden türeyen bir veri yapısıdır.
+
+476
+01:35:20,971 --> 01:35:22,291
+Özel amaçlı kullanılır.
+
+477
+01:35:23,051 --> 01:35:26,531
+Şimdi kuyruğun günlük hayattaki kuyruklardan hiçbir farkı yok.
+
+478
+01:35:26,731 --> 01:35:31,451
+İlk gelen ilk çıkar, ilk gelen ilk hizmet görür veya son gelen son çıkar.
+
+479
+01:35:31,855 --> 01:35:53,715
+prensibine göre erişim sağlanıyor. Ne demek bu erişim? Yani bunlarda add ve remove diye veya ekle sil diye iki tane temel işlem var. Buna in, out da diyebiliyoruz. Kuyruğa bir ekleme yapacaksak, add yapacaksak kuyruğun sonundaki gösterilen noktaya ekleme yapacağız. Yani arada herhangi bir yere ekleme yapamıyoruz.
+
+480
+01:35:54,996 --> 01:36:02,775
+Kuyruktan bir şey çıkacaksa da o da ilk noktadan çıkacak. Bu ilk noktayı gösteren, bakın Linked Listlerle de yapılır bu, dizilerle de yapılabilir.
+
+481
+01:36:03,796 --> 01:36:09,916
+İlk noktanın ve son noktanın yerini gösteren iki tane pointer tarzında veya indis tarzında bir göstergeç olacak.
+
+482
+01:36:11,436 --> 01:36:15,096
+Bunlar yoluyla sadece ekleme ve silme yapabiliyoruz.
+
+483
+01:36:15,956 --> 01:36:21,195
+Eklemeye, in veya en queue dediği gibi çıkarmaya da out veya de queue ifadeleri söylenir.
+
+484
+01:36:22,036 --> 01:36:47,296
+Mesela nerede çok kullanılır? İşletim sistemleri, proseslerinizi işlemciye belli bir sıraya göre alır. Bu işte işlem kuyruğu dediğimiz mantık burada çalışıyor. Yani hangi işlem önce alınacak? Şu kuyruğa ilk gelen işlem, proses önce işlemciye gidecektir. İşte kuyruğa ekleme ve çıkarma bu mantığa göre yapılıyor işlemcilerde. Öncelik var.
+
+485
+01:36:50,228 --> 01:37:07,148
+Kuyruğa araya ekleme, kaynak derler ya bizim günlük hayatta. Yapma işlemini zorlarsan o da nedir? İşte datanın durumuna göre mesela araya eleman ekleyelim. İçerisinde sayılar var veya başka değerler var. İşte bunların adı ne dönüyor? Priority Q diyoruz.
+
+486
+01:37:11,768 --> 01:37:16,847
+Öncelikli kuyruk. İşte bir yeni data geldi. Bunların içeriğine bakarak eleman ekliyorsun.
+
+487
+01:37:17,363 --> 01:37:23,363
+O zaman dizi işlemlerinde nasıl araya ekliyorsak o elemanı araya eklemek mantığıyla düşünün.
+
+488
+01:37:23,363 --> 01:37:29,363
+Ve biz bunu HIP veri yapısıyla belki vaktimiz kalırsa anlatırız, gerçekleyebiliyoruz.
+
+489
+01:37:29,363 --> 01:37:32,363
+HIP de Priority Q'nun bir çeşididir.
+
+490
+01:37:32,363 --> 01:37:40,363
+Burada demek ki ilk gelen ilk çıkıyormuş. Bir diğer yöntemimiz yığın, stack.
+
+491
+01:37:41,076 --> 01:37:51,916
+Bu da özel amaçlı. Burada ilk gelen son çıkıyor veya son gelen ilk çıkar mantığıyla çalışıyor. First in last out veya last in first out mantığıyla çalışıyor.
+
+492
+01:37:52,775 --> 01:38:03,175
+Yine bunu dizilerle veya bağlı listelerle oluşturuyoruz. Burada da yine ekleme ve çıkarma işlemi var. Buradaki ekleme işleminin özel adı, stacklerdeki özel adı push'tur.
+
+493
+01:38:03,764 --> 01:38:11,264
+çıkarmadaki işlemin özel adı da Pupp'dır. İşte burada elemanlarımız var. Bu bir dizi. Dizi normalde biz genelde yatay gösteririz de
+
+494
+01:38:11,264 --> 01:38:21,764
+stacklerde böyle düşey gösteriliyor. Push ve Pupp'ı daha iyi anlayabilmemiz için. İşte bu sıfırıncı eleman, birinci eleman, ikinci eleman, üçüncü eleman, dördüncü eleman böyle devam edip gidiyor.
+
+495
+01:38:21,764 --> 01:38:26,764
+Veya bunu bir Linked List olarak düşünsek, işte burası Head elemanı.
+
+496
+01:38:27,188 --> 01:38:52,568
+Dediğim gibi bu dizilerle veya bağlı listelerle oluşturulabilir. Bir eleman ekleyeceksek en üste ekleniyor. Araya bir şey ekleme yok. Burada öncelikle yığın diye bir şey de yok arkadaşlar. Doğrudan en üste ekliyorsunuz. Bir eleman çıkartılacak da en üstten çıkartılıyor. Yani bir üst üste koyduğunuz tabaklar var. En üste tabak koyarsınız. Almak istediğinizde de en üstten tabak alırsınız. Aradan bir şey almadığınızı düşünürsek. Ama yığın diyoruz.
+
+497
+01:38:52,948 --> 01:39:00,788
+Bunun kullanım alanları çok fazla kullanımı var. Biz burada bazı özelliklerinden, uygulamalarından bu ders kapsamında bahsedeceğiz.
+
+498
+01:39:01,528 --> 01:39:06,927
+Mesela işlem içerisindeki Stack Pointer. Assembly'de belki bunu görüyorsunuz.
+
+499
+01:39:08,188 --> 01:39:17,387
+Şimdi verimlilik burada şey, uygulamaya göre değişir [öğrenci]. Eğer dizi kullanarak daha
+
+500
+01:39:18,068 --> 01:39:33,887
+hızlı bir şekilde işlem yapacaksak, bellek veya zaman açısından diziyi kullanacağız. Dizi işimize yaramıyorsa, LinkedList'e daha fazlaysa, uygulamada onu kullanacağız. Bu tamamen kesin bir şey, burada illa ki dizi kullanılacak diye bir şey yok.
+
+501
+01:39:35,828 --> 01:39:40,108
+Assembilde belki Stack Pointer'ları görüyorsunuz.
+
+502
+01:39:47,123 --> 01:39:48,403
+Stag pointer
+
+503
+01:39:51,483 --> 01:39:58,383
+Yok, Linked liste şöyle bir, tabii görünüşte belki şöyle bir zorluk Linked liste görürsünüz de
+
+504
+01:39:58,643 --> 01:40:04,523
+Yardımcı pointer ile her zaman için en son bulunan node'un bir pointer'ını saklayabiliyorsunuz.
+
+505
+01:40:04,783 --> 01:40:10,923
+Yani en sona gitmek istediğinizde her zaman baştan sona gitmenize gerekiyor. Bir pointer değişkeni yedek pointer tutacaksınız.
+
+506
+01:40:11,443 --> 01:40:14,003
+Birisi head'i tutacak, p-head'i tutacak.
+
+507
+01:40:15,891 --> 01:40:22,291
+Diğeri de mesela P last'ı tutacak.
+
+508
+01:40:23,311 --> 01:40:32,011
+Ekleme veya silme yaptığımızda P last'ın içerisindeki değeri de günceleyeceksiniz. Bu sayede ne yaparsınız? Doğrudan en son düğümü tutabilirsiniz.
+
+509
+01:40:32,011 --> 01:40:40,731
+Bunu yapısal programlama dersinde benim grubumdaysam belki örneklerini orada yapacağım görürsünüz. Ama şeyde de anlatılıyor.
+
+510
+01:40:40,948 --> 01:40:44,627
+veri yapılarında da anlatılıyor, daha analiz açısından anlatılıyor.
+
+511
+01:40:45,488 --> 01:40:58,307
+Stack pointer'lar mesela arkadaşlar, bir fonksiyon çağrısında, yine bunun da detayını yapısalda anlatacağız, fonksiyon çağrısında programın kaldığı yerden devam etmesi için bazı bilgilerin bir yerde saklanması lazım.
+
+512
+01:40:58,927 --> 01:41:03,927
+İşte burada stack pointer'lar kullanılıyor, stack mantığıyla o bilgileri saklayabiliyoruz.
+
+513
+01:41:04,435 --> 01:41:09,796
+Veya bizim daha çok programlama matematiksel ifadelerin yazılımı değerlendirilmesinde kullanıyoruz.
+
+514
+01:41:10,555 --> 01:41:16,195
+Biliyorsunuz ki bir matematiksel ifade, şunu çok fazla burada detaylandırmayacağız, bunu bu kısmı detaylandıracağız.
+
+515
+01:41:16,956 --> 01:41:20,055
+Operatörler ve operantların birleşiminden oluşuyor.
+
+516
+01:41:20,055 --> 01:41:24,876
+Bu operatörlerin ve operantların farklı sırada yazımı mümkündür.
+
+517
+01:41:25,376 --> 01:41:27,895
+Biz günlük hayatta daha çok neyi kullanıyoruz?
+
+518
+01:41:28,404 --> 01:41:39,043
+A artı B işte parantez işlem önceliğini ifade etmek için çarpı C. Eğer burada parantezleri kullanmazsak önce ne yapacağımızı biliriz, çarpının yapılacağını biliyoruz.
+
+519
+01:41:39,043 --> 01:41:53,224
+İşte bu işlem önceliğinin karıştırılmaması ve derleyicilerin parantezi anlamak yerine daha çok operatörlerin üzerinden işlem önceliğini anlaması için bazı kolaylıklar, notasyon farklılıkları geliştirilmiş.
+
+520
+01:41:55,188 --> 01:42:01,508
+sıralamalar farklı ama sonuçların aynı olmasını ifade eden bir notasyon öğrenmek.
+
+521
+01:42:02,508 --> 01:42:13,148
+İşte matematiksel ifademiz buysa buradaki operantlarımız A, B ve C, operatörlerimizde artı ve çarpı veya işte bu çarpıyı x olarak görmeyi normal bizim çarpı işlemi diyebilebiliriz.
+
+522
+01:42:14,268 --> 01:42:15,828
+Bu yığın uygulamalarında
+
+523
+01:42:17,268 --> 01:42:29,228
+Şu günlük hayatta kullandığımız A artı B, 7 eksi 9 gibi ifadeler, yani iki operanın ortasına bir operatörün gelmesi infiks notasyonu olarak karşımıza geliyor.
+
+524
+01:42:29,988 --> 01:42:37,688
+Bu ifadeyi verdiğimizde veya şunu verdiğimizde acaba sonuç ne olacak? Bunun elde edilmesi bir stack uygulamasıdır.
+
+525
+01:42:38,467 --> 01:42:41,608
+Bir diğer notasyonumuz prefiks, pre ön demektir arkadaşlar.
+
+526
+01:42:44,595 --> 01:43:09,695
+operatörün operantların önünde geldiği duruma prefiks notasyonu veya polish notasyonu da dönüyor. Postfix de bunun tam tersi. Operatör operantlardan sonra geliyorsa buna postfix diyoruz. Post zaten sonrası demektir. Reverse polish notasyon olarak da ifade edilir. Bilgisayar sistemlerindeki bu infix yazılımındaki operatör önceliğinin çözünürlüğü sebebiyle. Niye zor?
+
+527
+01:43:10,100 --> 01:43:24,140
+Çünkü bilgisayar ve değerleyici doğrudan parantezlerle uğraşmak istemez. Onun yerine parantezleri postfix veya prefix ile değerlendirirse bu bize daha kısa sürede hesaplama yapmayı sağlıyor.
+
+528
+01:43:24,564 --> 01:43:29,564
+ve burada belli bir dönüşüm yapılıyor. Bazı dönüşümler yapılıyor.
+
+529
+01:43:29,564 --> 01:43:38,564
+infiksten posfikse veya posfiksten infikse, infiksten prefikse veya tam tersi, prefiks, posfikse arasında dönüşümler de yapılabiliyor.
+
+530
+01:43:38,564 --> 01:43:45,564
+Bu dönüşümlerle birlikte verilen bir notasyon, bir ifadenin acaba sayısal sonucu nedir?
+
+531
+01:43:45,564 --> 01:43:48,564
+Bir denklem verdik, burada sayısal sonucu nedir?
+
+532
+01:43:49,268 --> 01:44:12,108
+Bu dönüşümleri yaparken temel olarak iki tane teknik vardır bildiğimiz. Birincisi stack bir yarı yapısı kullanma. Bu kısımda bunu anlatacağız. Bir de ikili ağaçların kullanımı. Onu da ağaçlar konusunu görünce göreceğiz. Stack burada biraz daha basit işlemlerle. Eklesil var çünkü değil mi stack arkadaşlar? Eklesille bu işi yapacağız ama algoritması birazcık karmaşık.
+
+533
+01:44:12,851 --> 01:44:27,371
+Ağaçlar üzerinde daha fazla işlem var. Orada daha fazla işlem yapabilme kabiliyetimiz daha fazla olduğu için daha kolay bir şekilde yapıyoruz. Eğer basit bir yapıyla uğraşacaksak stekle yapmak mümkün. Bunların ikisini de bilmeniz gerekiyor.
+
+534
+01:44:27,371 --> 01:44:33,228
+Şimdi şunu benim anlatacağım derslerde...
+
+535
+01:44:34,163 --> 01:45:00,524
+Hani hep kısa yol olarak gösteririm. Infix operatörün içeride olduğunu, prefix operatörün başta olduğunu, postfix operatörün dışta olduğunu ve sol operant, operatör, sağ operant, sol operatör sağa. Şimdi bazı şeylerde sol operatör sağa bunları ezberletirler. Hiç ezberlemeye gerek yok arkadaşlar. Operatör içeride ise artı içeride ise infix.
+
+536
+01:45:00,948 --> 01:45:11,948
+Öndeyse Prefix, sondaysa Postfix. Özellikle ağaçlar konusuna gelince, orada da işte inorder, proorder ve postorder tekniğini konuşacağız.
+
+537
+01:45:11,948 --> 01:45:24,948
+Orada da aynı şey var. Bir ağaç şu şekilde gelişecek. Ben bu ifadeyi bir ağaca yerleştireceksem, mesela infix formatı ile yerleştireceksem veya şöyle yerleştirdiğimizi kabul edelim A artı B.
+
+538
+01:45:25,844 --> 01:45:35,884
+Bu bir infiks notasyonudur. Bunu infiks formunda yazın dersek, önce soldakini, sonra operatörü, sonra sağdakini yazmak demektir.
+
+539
+01:45:36,543 --> 01:45:43,184
+Bundan yola çıkarak ben postfiks'e dönüştüreceksem, önce solu, yani birinci operatörü, sonra ikinci operatörü, sonra operandı yazacağım.
+
+540
+01:45:43,184 --> 01:45:48,764
+Pardon, önce birinci operandı, sonra ikinci operandı, sonra operatörü yazacağım demektir.
+
+541
+01:45:48,884 --> 01:45:50,963
+A, B, artıyı buradan bulacağım.
+
+542
+01:45:53,235 --> 01:45:59,235
+örneklerle bunları kendiniz kafanızda kodlarsanız ileride çok rahat edersiniz. Şimdiden söyleyeyim.
+
+543
+01:46:00,695 --> 01:46:05,315
+Mesela ilk uygulama, bu dersin sonuna kadar bu uygulamaları yapacağız arkadaşlar.
+
+544
+01:46:05,315 --> 01:46:12,456
+İnfiks bir ifadenin sayısal sonucunun değerlendirilmesi. Yani bir denklem vereceğiz böyle bir şey. Bunun sayısal sonucu nedir?
+
+545
+01:46:13,916 --> 01:46:15,315
+Bunu derleyiciye yaptıralım.
+
+546
+01:46:16,435 --> 01:46:22,435
+Burada genel arkadaşlar baktığımızda operantlar sayısal değerlerdir, sayı real sayılardır.
+
+547
+01:46:22,435 --> 01:46:28,435
+Kabul edilen operatörler işte artı, eksi, çarpı, modülatör, modulation ve üst işlemi.
+
+548
+01:46:29,435 --> 01:46:35,435
+Boşluklara izin veriliyor yani arada karmaşıklık olmasın diye.
+
+549
+01:46:35,435 --> 01:46:39,435
+Parantezlere de izin veriliyor bu tarz şeylerde.
+
+550
+01:46:39,435 --> 01:46:42,435
+Bizim amacımız stack kullanarak bunu nasıl çözebiliriz?
+
+551
+01:46:44,404 --> 01:47:01,583
+Bu arada siteye başka bir örnek de vereyim. Mesela bir matematiksel ifade var. Küme işlemi yaptığımızı düşünelim günlük hayatta. Şunların kuralına göre kapatılıp kapatılmadığının kontrolünü yapabiliriz mesela sitekle. Ne yaparız?
+
+552
+01:47:03,064 --> 01:47:10,583
+Sitek dediğimiz şey şöyle bir şeydi. Ekleme silme yapıyorduk. Açma parantezi gelirse ekleyeceğim. Ne yapacağım? Bunu ekleyeceğim.
+
+553
+01:47:11,507 --> 01:47:23,507
+Sonra açma parantezi geldi, ekleyeceğim. Açma parantezi geldi, ekleyeceğim. Kapama parantezi gelirse çıkaracağım. Ama çıkardığım şey bu kapama parantezinin aynısıysa çıkaracağız.
+
+554
+01:47:23,507 --> 01:47:31,507
+Baktığımda tam tersiyse çıkaracağız. Bu gelmiş, bunu çıkartıyorum. Çıkarttığım şey bununla ters mi? Evet, o zaman çıkartabilirim.
+
+555
+01:47:31,891 --> 01:47:46,032
+Sonra bu gelmiş, bununla bu ters birbirine çıkartabilirim. Sonra bu gelmiş, bununla bu ters birbirine çıkartabilirim. İfadenin sonuna geldim. Sonuna geldiğimde ne istek boş durumda mı? Boş durumda. O zaman ifade kurallıdır. Şuna bakalım.
+
+556
+01:47:50,612 --> 01:48:03,852
+Şöyle bir şey olsun, şu köşeli parantez olsun. Ne yapacağız? Site bu ekleme açma parantezini ve şunu ekliyoruz, köşeli parantezi. Sonra bu geldi. Bu geldiğinde arkadaşlar ne yapıyoruz?
+
+557
+01:48:05,852 --> 01:48:13,572
+Çıkartmaya çalışacağım ama çıkarmaya çalışacağım şey şu. Bununla bu birbirine denk olmadığı için çıkartamıyorum. Sonra diğerine geliyorum.
+
+558
+01:48:14,323 --> 01:48:34,123
+Bu, bununla bunu çıkartmaya çalışıyorum. Yani en son hala bunu çıkartamadığım için o yerinde duruyor. Bununla bunu çıkartmaya çalışıyoruz, çıkartamıyoruz. Çıkartamadığımız için ifadenin sonuna geldiğimizde stack dolu, bu ifade yanlıştır diyeceğiz. Bakın böyle bir uygulama. Veya bir kelime verdik, A, B, C'de bunu tersten yazın dedik stack kullanarak.
+
+559
+01:48:34,484 --> 01:48:52,623
+A'yı eklerim, B'yi eklerim, C'yi eklerim, D'yi eklerim. İfadenin sonuna geldim. Eklenecek başka bir şey yok. Bu sefer çıkartırız. Çıkarttığımızda da D, C, B, A yoluyla çıkar. Bakın biz stringin tersini bu mantıkla da bulabiliyoruz. Burayı anladık mı?
+
+560
+01:48:56,372 --> 01:49:20,771
+Çünkü bu bir sitein egzersizi olsun. Bu egzersiz üzerinden şu problemleri çözeceğiz. Diyoruz ki bunu yapmak için iki tane stack kullanacakmışız. Birisi operant stack'i, diğeri operatör stack'i. Bu operasyonları da şu order of precedence'ye göre dikkat etmemiz gerekiyor stack'te.
+
+561
+01:49:21,747 --> 01:49:45,227
+En üstte eksponansiyel, daha sonra çarpma bölme, daha sonra toplama çıkarma. Nasıl dikkat edeceğiz? Bir sonraki slide'da gelecek. Bunlar parantezlerde bu kuralları geçersiz şey yapmak için, üstünü kılmak için hangisi daha üstün olacaksa ayrıca kullanılabiliyor günlük matematikte. Buna dikkat edeceğiz.
+
+562
+01:49:45,227 --> 01:49:47,987
+Şimdi şöyle bir algoritmamız var.
+
+563
+01:49:50,579 --> 01:50:15,579
+Eğer karakter operant ise, bunu operant stack'ine ekle. Eğer operatör ise, şimdi bakıyoruz. Eğer stack boş ise, bunu doğrudan staya ekliyoruz. Stack boş değilse, şunları yapacağız. Operatörlerin önceliğine bakacağız. Eğer operatör önceliği
+
+564
+01:50:16,148 --> 01:50:24,387
+Büyükse ve eşitse top operatörü, yani stay'in üstündekinden büyükse bunu çıkartıyoruz.
+
+565
+01:50:25,927 --> 01:50:32,547
+Üstteki operatörü yani şey çıkarır. Yani burada örneğin artı var. Ben çarpı eklemeye çalışıyorum.
+
+566
+01:50:34,488 --> 01:50:37,448
+Şimdi çarpı artıdan büyük. O zaman bunu ne yapıyorum? Çıkartıyorum.
+
+567
+01:50:39,007 --> 01:50:39,828
+Bunu söylüyor burada.
+
+568
+01:50:41,716 --> 01:51:04,056
+Sonra çarpıyı ekliyoruz bunun geldiği yere. Artı çıktı, yerine çarpı geldi. Eğer karakterin önceliği küçükse bundan, mevcut tab operatörüden örneğin ne bileyim veya eksi olabilir veya burada çarpı olsun çarpının yerine artı gelsin.
+
+569
+01:51:04,056 --> 01:51:07,956
+Tab durumda ki artı veya eksi gelsin.
+
+570
+01:51:08,884 --> 01:51:12,544
+Bu prosesi yapacağız. Ne yapacağız? Buraya artıyı ekleyeceğiz demektir.
+
+571
+01:51:13,324 --> 01:51:18,404
+Eğer karakterimiz açma parantezi ise bunu operatör siteyine ekliyoruz.
+
+572
+01:51:19,124 --> 01:51:32,944
+Kapama parantezi ise yukarıdaki şeye karşılık gelen bu paranteze karşılık gelen işlemi pop yapacağız. Bir tane çıkartacağız.
+
+573
+01:51:37,108 --> 01:51:39,548
+expression tamamlandığında
+
+574
+01:51:40,548 --> 01:51:42,868
+Operatör siteyimiz boşsa
+
+575
+01:51:44,548 --> 01:51:46,148
+bu işlemi
+
+576
+01:51:51,699 --> 01:51:57,979
+Pardon. İşlem tamamlandı boş değilse yukarıdaki işlemler stek boşalana kadar yapılacak.
+
+577
+01:52:00,799 --> 01:52:08,799
+Diğer operant isteğinde kalan değer bizim sonucumuz olacak. Yani operant sistemimizde de bir değer kalacak.
+
+578
+01:52:08,799 --> 01:52:11,699
+Şimdi gelin bunu şuradan inceleyelim.
+
+579
+01:52:13,819 --> 01:52:14,999
+Bu algoritma.
+
+580
+01:52:15,475 --> 01:52:21,115
+ve yani bu sürü de kodu olarak söyleyebiliriz. Yani hemen hemen burada her şeyi tanımlı.
+
+581
+01:52:22,076 --> 01:52:26,235
+Şimdi gelin şunu detaylı olarak inceleyelim.
+
+582
+01:52:27,256 --> 01:52:30,315
+Buraya Operatör diyorum, Operatör.
+
+583
+01:52:31,595 --> 01:52:33,387
+Buraya da Operant diyorum.
+
+584
+01:52:36,564 --> 01:52:37,844
+İki tane sayım var.
+
+585
+01:52:38,364 --> 01:52:41,164
+Ve infiks ifademiz şu şekilde arkadaşlar.
+
+586
+01:52:41,944 --> 01:52:44,244
+Şimdi bunu baştan itibaren okuyoruz.
+
+587
+01:52:45,003 --> 01:52:49,104
+Bu bir nedir operanttır bunu operant sayına push ediyoruz.
+
+588
+01:52:50,124 --> 01:52:53,724
+Sonra bu bir yıldızdır bunu operatör sayına push ediyoruz.
+
+589
+01:52:55,244 --> 01:52:59,604
+Bu parantez operatör sayına push ediyoruz.
+
+590
+01:53:00,884 --> 01:53:26,823
+Bu 5, bunu operatör siteyine, operant siteyine push ettik. Sonra yıldız dedik, yıldızı buraya getirdik. Sonra bir parantez, parantezi buraya ekledik. Biraz uzuyor ama. Sonra 3, bunu 3'e ekledik, buraya ekledik. Artı var.
+
+591
+01:53:27,412 --> 01:53:30,731
+Artı doğrudan bunlara etki etmez.
+
+592
+01:53:31,512 --> 01:53:32,792
+Doğrudan ekledik.
+
+593
+01:53:33,292 --> 01:53:34,832
+Altıyı ekliyoruz.
+
+594
+01:53:38,195 --> 01:53:44,015
+Sonra kapama parantezi geldi. Şimdi kapama parantezi gelince, bakın herhangi bir push yapmıyoruz.
+
+595
+01:53:44,956 --> 01:53:56,775
+Diyor ki kapama parantezi gelince, iki tane eleman çek. İki tane eleman çektiğimizde işte ne yapacak? Altıyı çekecek, üçü çekecek.
+
+596
+01:53:56,775 --> 01:54:03,775
+Şimdi burada sıralama önemli arkadaşlar. Sonra bir tane...
+
+597
+01:54:05,140 --> 01:54:31,640
+şey çek, operatörden çek, artıyı çek. 6 artı 3, şimdi ilk çektiğimiz eleman 6, burada left operant, ikincisi right operant, araya da artı geldi. Sonra 6 artı 3 gerçekleştiriyor, 9. Bunu yaptıktan sonra bu 9'u, yani 6'yı çektik, 3'ü çektik.
+
+598
+01:54:32,051 --> 01:54:33,171
+Artık bunlar gitti.
+
+599
+01:54:34,531 --> 01:54:40,191
+Gelen 9'u operant isteğine ekliyor. Yani 3'ün olduğu yerde artık 9 var.
+
+600
+01:54:42,251 --> 01:54:48,251
+Sonra, tabii artıyı da çekmiştik. Yani şöyle yapabilirim. Sileyim isterseniz öyle yapalım.
+
+601
+01:54:49,311 --> 01:54:50,331
+Zaten orada şey var.
+
+602
+01:54:51,251 --> 01:54:55,371
+Sonra, parantez geldikten sonra arkadaşlar ne yapacağız?
+
+603
+01:54:56,911 --> 01:54:57,371
+Buradaki...
+
+604
+01:54:58,260 --> 01:55:25,040
+elemanı da çekiyoruz. Bu parantezde çekiyoruz. Çünkü aynı parantezdir. Bu adım bitti. Bakın bir parantez geldiğinde bunu yaptık. Sonra bir parantez daha gelmiş. Ne yapacağım? Önce 9'u çekeceğiz. Sonra bir tane daha çekeceğiz. 5'i çekeceğiz. Gideceğiz. Operatör siteyinden çarpıyı çekeceğiz. 45.
+
+605
+01:55:26,420 --> 01:55:53,040
+Sonra bunu gideceğiz, yerine yazacağız. 45 oldu. 45'i de aldıktan sonra, tabi buradan da çarpıyı çekmiştik. En son kalan şunu çekiyoruz. Ha, bunun öncesinde şöyle bir ek kontrolü yapmak gerekir. Biraz önce Balanced Parantez örneğini verdim ya, ifadenin Balanced Parantez'e sahip olup olmadı. Yani düzgün bir şekilde parantezlerle ifade edilmediği kontrol edilir. Bu da nasıldır?
+
+606
+01:55:53,555 --> 01:56:17,716
+baştan sona bir stekle bulduğun her parantezi siteye atarsın. Diğer ifadeleri değil. Açma parantezlerini atadın. Kapama parantezi geldiğinde uygun olarak, eğer burada şey verirsek, diğer parantezleri de verebiliriz. Kapama parantezi geldiğinde stekten çekersin. İfadenin sonunda stek boşsa, dersin ki bu doğru. Ondan sonra bu infiks değerlendirmeye geçersin. Yani ön işlem olarak o yapılır.
+
+607
+01:56:18,615 --> 01:56:20,496
+Devam edelim. Şunu bitirmiştik.
+
+608
+01:56:20,979 --> 01:56:27,699
+Sonra ne geldi? Bölü geldi. Bölüyü ne yapıyoruz? Buraya ekliyoruz. Bölüyle bu ikisi de eşit olduğu için bir şey yapmaya gerek yok.
+
+609
+01:56:28,959 --> 01:56:32,419
+Sonra 15 geldi. 15'i ne yapacağız? Buraya push edeceğiz.
+
+610
+01:56:34,799 --> 01:56:40,659
+Sonra eksi geldi. Eksi gelince arkadaşlar doğrudan eklemiyoruz.
+
+611
+01:56:41,399 --> 01:56:45,659
+Niye? Eksi bölüden daha düşük operatör.
+
+612
+01:56:47,891 --> 01:56:59,891
+Önce git operant kısmından operant stekinden iki tane veriyi çek. 15'i çektik, 45'i çektik.
+
+613
+01:57:01,572 --> 01:57:06,891
+Sonra yapacağımız şey, tabi burada şöyle bir şey yapmış.
+
+614
+01:57:09,372 --> 01:57:11,492
+Yani keşke bunu söyleseydi.
+
+615
+01:57:11,891 --> 01:57:35,731
+Bölme olduğu için çektiğimiz 15 bu tarafa geliyor, 45 bu tarafa geliyor. En son çünkü 15 ve 45 vardı. Yani left operand, right operandı burada ifade etmemiş. Halbuki 15'i çekersek 15 right'e gider, pardon left'e gider, 45'i çekersek 45 right'e gider. Burada bölme olduğu için bunu böyle yazması gerekirdi, yani tanımlaması gerekirdi.
+
+616
+01:57:36,692 --> 01:57:56,811
+İlk çekeceğimiz şey nereye gelecek? İşte onu ifade etmek gerekiyor. 45 bölü, ondan sonra buradan bölmeyi çektik. Bakın çıkarma duruyor bir kenarda hala. Daha girmedi. Sonra bu işi yaptık. Elde ettiğimiz şey 3. Şuradan da 15 ve 45'i bulmuştuk. Burada da 3'ü getirdik. 3'ü diyor ki buraya ekle.
+
+617
+01:58:00,659 --> 01:58:14,819
+Sonra 3'ü ekledikten sonra 3'ü ve 2'yi çıkar. 3'ü önce ekledik. Daha sonra 3'ü tekrar çıkartıyoruz.
+
+618
+01:58:15,639 --> 01:58:23,019
+Sonra, çünkü ne var? Eksi hala eklenmiyor arkadaşlar. Çünkü çarpı kaldı. Eksi'yi ekleyeceğim ama çarpı kaldı.
+
+619
+01:58:28,948 --> 01:58:30,948
+Sonra çarpıyı çıkarıyoruz.
+
+620
+01:58:32,948 --> 01:58:35,948
+Altı geldi. Altıyı bu sefer ne yapıyoruz?
+
+621
+01:58:36,948 --> 01:58:37,948
+Buraya ekliyoruz.
+
+622
+01:58:40,948 --> 01:58:43,948
+Sonra eksi artık buraya eklenebilir oluyor.
+
+623
+01:58:45,948 --> 01:58:53,948
+Ve bu adımı bitirmiş oluyoruz. Bakın eksi görünce bir bölüyle karşılaştık. Bir de aşağıdaki çarpıyla karşılaştık.
+
+624
+01:58:54,448 --> 01:58:56,448
+Bu işlem bizi baya bir yordu.
+
+625
+01:58:56,692 --> 01:59:00,692
+Sonra gelen ifadene 2. 2'yi getirip ekliyoruz.
+
+626
+01:59:03,011 --> 01:59:05,851
+2'yi ekledikten sonra ne var?
+
+627
+01:59:08,192 --> 01:59:14,192
+İfadenin sonuna geldik. İfadenin sonuna geldiğimizde bakacağız ki operatör siteyimizde eleman var mı? Var.
+
+628
+01:59:15,131 --> 01:59:17,371
+O zaman diyoruz ki buradaki bütün elemanları çıkar.
+
+629
+01:59:18,311 --> 01:59:24,211
+Bakın yine çıkarma işleminde de bir işlem tanımlanmamış. Yani çıkarmada da yapılacak olan şey.
+
+630
+01:59:25,011 --> 01:59:26,551
+Burada önce
+
+631
+01:59:27,311 --> 01:59:28,591
+ikiyi çıkarmak
+
+632
+01:59:29,112 --> 01:59:31,152
+yani left, right'a atmak
+
+633
+01:59:31,412 --> 01:59:32,952
+sonra altıyı çıkarmak olacak
+
+634
+01:59:33,711 --> 01:59:35,251
+Sonra işte yaptığımız şey
+
+635
+01:59:35,771 --> 01:59:38,331
+Operatör siteyinden operatörü çıkarıyoruz iki
+
+636
+01:59:38,831 --> 01:59:39,612
+eksi
+
+637
+01:59:40,371 --> 01:59:43,692
+Sonra bunu ne yaptık? Bu işlemi gerçekleştirdik
+
+638
+01:59:44,471 --> 01:59:46,771
+Sonra bunları çıkardığımız için bunu getirdik
+
+639
+01:59:47,032 --> 01:59:48,811
+Şunu da çıkarmıştık, bu da gitti
+
+640
+01:59:49,331 --> 01:59:50,091
+Burada dört
+
+641
+01:59:50,351 --> 01:59:52,152
+Burada herhangi bir operatör kalmadı
+
+642
+01:59:52,479 --> 01:59:59,979
+Bu kalmak için işlem bitti diyoruz. Burada da zaten sonuna geldik. Operans sistemimizden en son çıkarttığımız değer 4 sonucumuz oluyor.
+
+643
+02:00:00,979 --> 02:00:18,479
+Tamam mı? Bakın sadece yaptığımız işlem üstten ekleme, üstten çıkarma. Ama ekstra algoritmik şeyler var. Hatta bazı açıklar da var. Yani şuradaki eksi işlemi 2 ve 6'yı çıkarıyorsun da 2 eksi 6, 4 olur. Eksiye göre bunların sıralarını da şurada yazması gerekirdi.
+
+644
+02:00:19,859 --> 02:00:23,199
+Gördüğüm kadarıyla yazmamış. Aynı şeyi şurada bölmede de var.
+
+645
+02:00:26,699 --> 02:00:29,380
+Arada başka bir işlem yapmadık.
+
+646
+02:00:30,480 --> 02:00:30,720
+Evet.
+
+647
+02:00:32,500 --> 02:00:35,180
+Şimdi bir de gelelim prefiks ifadenin değerlendirmesine.
+
+648
+02:00:35,900 --> 02:00:37,039
+Prefiks neydi arkadaşlar?
+
+649
+02:00:37,520 --> 02:00:39,039
+Bir dakika burada niye post-x ediyor?
+
+650
+02:00:51,475 --> 02:00:52,475
+Burada bu an hoca.
+
+651
+02:00:55,475 --> 02:00:58,443
+Bir dakika arkadaşlar, şuradan bir şey bakayım.
+
+652
+02:01:09,076 --> 02:01:20,615
+Şöyle yapalım mı? Bir ara verelim isterseniz. Zaten 55 geçiyor. 10 dakika ara verelim. 5 geçe görüşürüz. Ben de o arada şu prefiks ifadenin değerlendirmesi kısmını düzelteyim.
+
+653
+02:11:46,868 --> 02:11:51,028
+Evet arkadaşlar, görüntü geldi mi şu an prefiks ifadenin değerlendirmesi diye.
+
+654
+02:12:01,011 --> 02:12:02,011
+Tamamdır.
+
+655
+02:12:02,011 --> 02:12:07,011
+Kısa bir arada vermiş olduk.
+
+656
+02:12:07,011 --> 02:12:07,947
+Böylece.
+
+657
+02:12:13,587 --> 02:12:19,988
+Şimdi prefiks dediğimiz şey nasıldı? İfade öndeydi. Yani artı AB formatındaydı.
+
+658
+02:12:21,988 --> 02:12:27,887
+Bunun en hani stack kullanmadan aslında stack kullanıyoruz da.
+
+659
+02:12:28,688 --> 02:12:32,207
+Şey şudur. Şimdi ifadeyi sondan başa doğru tararsınız.
+
+660
+02:12:33,207 --> 02:12:33,927
+Şöyle.
+
+661
+02:12:35,827 --> 02:12:40,547
+Nerede bir operatör gördük? Artı. Artıdan önceki ilk iki operandı.
+
+662
+02:12:41,716 --> 02:13:07,855
+O operatörle işleme geçiririz. Yani eksi bölü çarpı 20 çarpı 50. 3 artı 6 9 olacak. 9 302. Sonra yine sondan başa doğru tarıyoruz. Çarpıyı da karşılaştık. Çarpıdan önceki iki işlem ne şu. Buradan 9 450 geldi. Sonra devam ediyoruz.
+
+663
+02:13:09,427 --> 02:13:10,667
+Herhalde yanlış yapmıyorum.
+
+664
+02:13:12,268 --> 02:13:16,327
+Yine operant görene, operatör görene kadar devam ediyorum.
+
+665
+02:13:16,327 --> 02:13:19,887
+Ne var burada? 20 çarpı şu var.
+
+666
+02:13:21,148 --> 02:13:21,667
+Bu nedir?
+
+667
+02:13:24,027 --> 02:13:24,827
+9000.
+
+668
+02:13:26,707 --> 02:13:34,167
+Sonra yine eksi bölü 9302.
+
+669
+02:13:34,768 --> 02:13:35,867
+Devam ediyoruz.
+
+670
+02:13:36,188 --> 02:13:37,131
+Burası...
+
+671
+02:13:37,268 --> 02:14:04,648
+Ne oluyor? 90 bölü 3 mü oluyor? 30. 30-2 bakın 28. En naif yolu hani şey yolu böyle kısa yoldan. Ama bunu biz tabii ne yapacağız? Stake ile yapacağız. Çünkü şu 300'ler falan stake de biraz daha farklı bir mantıkla ilerliyor. Yine burada bir stake kullanacağız arkadaşlar. Öncelikle
+
+672
+02:14:05,747 --> 02:14:09,347
+verilen ifade reverse ediliyor, tersine çeviriliyor.
+
+673
+02:14:10,307 --> 02:14:16,747
+Yani, ben nasıl burada sondan başladıysam bunu sec de kullanmak için ters yapıyoruz.
+
+674
+02:14:17,147 --> 02:14:22,747
+Eğer karakter digit ise, bir string temp diye bir şey kullanıyorsunuz.
+
+675
+02:14:23,147 --> 02:14:28,747
+Bir sonraki digit'i alıp bu stringten bir sayı üretiyorsunuz. Yani onunla çarparak.
+
+676
+02:14:29,147 --> 02:14:29,931
+Tamam mı?
+
+677
+02:14:30,323 --> 02:14:34,683
+Sonra bunu number'a dönüştürüyoruz ve stay'e atıyoruz.
+
+678
+02:14:35,703 --> 02:14:43,123
+Yani ne yaptık? Şimdi bunu ters çevirdiğimizde 2, 0, 0, 3 gibi bir şey gelecek değil mi?
+
+679
+02:14:43,643 --> 02:14:50,043
+Bu aslında 300. Reverse ettik ama bunu ne yapıyoruz? 300 elde etmemiz için böyle bir durum var.
+
+680
+02:14:51,323 --> 02:14:55,403
+Eğer operatörse, bakın bir tane stek var.
+
+681
+02:14:57,235 --> 02:14:59,935
+Stekten operandı check diyoruz.
+
+682
+02:15:04,756 --> 02:15:08,155
+ve bunu bir, pardon, hop, operan.
+
+683
+02:15:09,216 --> 02:15:12,916
+Eğer bu operatörse, operatörden bir taneyi çek, S1 yap.
+
+684
+02:15:13,836 --> 02:15:19,236
+Operatörden bir daha çek, S2 yap, şu perform, işlemi uygula.
+
+685
+02:15:20,115 --> 02:15:23,716
+S1, operatör, S2 uygula ve sonucu tekrar push'a at.
+
+686
+02:15:23,776 --> 02:15:28,476
+Bakın, operatör görünce, operatörü siteye atmadık.
+
+687
+02:15:28,896 --> 02:15:29,776
+Biraz önce ne yaptık?
+
+688
+02:15:30,420 --> 02:15:36,660
+İki stack kullanmıştık. Prefix sayesinde bir staya indirdik. Operatörü de ne yaptık arkadaşlar?
+
+689
+02:15:36,660 --> 02:15:43,420
+Siteye atmadık. Biraz daha hızlı performans oluyor. Operasyon yani expression tamamlandığında
+
+690
+02:15:43,420 --> 02:15:52,980
+stack de ne olacak? Bir final sonuç içerecektir. O elde edilen sonucu da pop yap ve sonucu gösterdi.
+
+691
+02:15:52,980 --> 02:15:57,260
+Şimdi örneğine bakalım. Bakın tek bir stack var.
+
+692
+02:15:58,420 --> 02:16:11,739
+İfademiz bu. Bunu ters çevirdik. Şöyle de bir stack çizelim. Reverse 2, yani 2'yi ters çevir ve stay ekle diyor.
+
+693
+02:16:13,899 --> 02:16:20,179
+003, bunu ters çevir, stay ekle diyor. Yani aradaki o 300'ü elde etme matematik işlemleri burada atladık.
+
+694
+02:16:25,492 --> 02:16:53,072
+3'ü ne yaptık? Ters çevirdik, atadık. Boşluklar bize sayıların ayrıldığını gösteriyor. 6 artı geldi. Artı gelince diyor ki birinciyi çek. Şuradakine dikkat edelim arkadaşlar. Bakın burada işlem tamam. S1 operatör, S2. Birinci S1 olacaktı. Ne yaptık? 3'ü getirdik. Sonra 6'yı getirdik. Bunlar çekildiği için bunlar gitti. Toplamı getirdik. Buraya yazdık. Ben de biraz önce ne yapmıştım?
+
+695
+02:16:53,780 --> 02:17:19,500
+Şurada. Önce ilk yaptığım işlem neydi karşılaştığında? Artıyı görene kadar git altıdan, artıdan önceki ilk iki operatörü almıştım. Bakın stack kullanmadığında böyle yapmıştım. Size mesela şunu sorabiliriz. Stack kullanarak bunu yapacaksınız. Stack kullanmadan işte benim şurada şu şekilde yaptığım gibi yapacaksınız. Sorunun gelişi veya ağaçlarla yapacaksınız. Ağaçlar görünce orada bir daha konuşacağız.
+
+696
+02:17:21,492 --> 02:17:48,072
+9. Şimdi sonra ne geldi? 0, 5 geldi. 0, 5'i ters çeviriyoruz, 50'yi ekliyoruz. Sonra çarpı geldi. Çarpı geldiği için çarpı duruyor. Stekten bir tane çekiyorum, buraya yazıyorum. Bir tane çekiyorum, buraya yazıyorum. 9. Ne oldu? Sonuç 450'yi yazdık. Ve doğrudan stek ekledik. Sonra
+
+697
+02:17:49,876 --> 02:18:07,096
+0,2 gelmiş 20 ekleyeceğiz. Sonra çarpı gelmiş bir çarpı daha geldiği zaman 20 ve 450. Ondan sonra 20 ve 450'nin sonucunu 9000 yazıyoruz.
+
+698
+02:18:11,443 --> 02:18:31,263
+Sonra bölü gelmiş. Bölü geldiği için 9000'i aldık. 300'ü aldık. 30 gelmiş. Sonra çıkartma işlemi geldi. 30'u çekiyorum. 2'yi çekiyorum. Sonuç 28. Şimdi burada şuna dikkat etmenizi istiyorum.
+
+699
+02:18:39,540 --> 02:19:02,040
+infiks ifadede iki tane istek kullanmıştık. Bir diğer şey neydi? Şu parantezlerdi. Bakın burada prefiks ifadede parantez yok. Bir diğer şey operatör precedence diye bakmadık arkadaşlar. Yani artı gelince işte aşağıda çarpma varsa bekle önce çarpmayı bir hallet ondan sonra artıyı ekle yapmadık değil mi?
+
+700
+02:19:05,876 --> 02:19:13,596
+matematik işlemlerde böyle kolaylık sağlığı, derleyicilerde de böyle bir kolaylığı var. Bunu öğrenmek gerekiyor.
+
+701
+02:19:14,876 --> 02:19:23,436
+Gelelim postfix ifadenin değerlendirmesine. Postfix dediğimiz şey böyle bir şeydi. Böyle bir şey verdiğimizde bunu nasıl değerlendirecek?
+
+702
+02:19:24,396 --> 02:19:33,355
+Bu şekle dönüştürüp böyle bir AB artı yapacak. Eğer bir şey karakterse, yani operantse,
+
+703
+02:19:33,876 --> 02:19:37,076
+Onu siteye atıyoruz. Operatör ise
+
+704
+02:19:38,275 --> 02:19:46,275
+Bir tane çekiyoruz, S1 diyoruz. Bir tane daha çekiyoruz, S2 diyoruz. Burada S2, Operatör, S1 yapıyoruz. Dikkat edelim.
+
+705
+02:19:46,876 --> 02:19:51,675
+Ve sonucunu tekrar siteye atıyoruz. Stake tamamlandığında işlem bitiyor.
+
+706
+02:19:52,876 --> 02:19:55,275
+Sadece prefikte yerler değişti.
+
+707
+02:19:57,556 --> 02:19:59,556
+Burada tabi daha başka bir şey var.
+
+708
+02:20:00,595 --> 02:20:08,495
+2, 5, 3, 6, stey ekledik. 2 eklendi, 5 eklendi, 3 eklendi, 6 eklendi. Bakın burada bir reverse işlemi yapmadık.
+
+709
+02:20:08,495 --> 02:20:15,655
+Dikkat edin. Çünkü prefix işlemini değerlendirmek dolaylı yoldan postfix yapmak demektir arkadaşlar.
+
+710
+02:20:17,236 --> 02:20:24,315
+Buna dikkat edelim. Birazdan birbirlerine dönüşümlerde onu söyleyeceğim. 6 geldi, 6 artı geldi.
+
+711
+02:20:24,852 --> 02:20:48,932
+6'yı çekiyorum, buraya atıyoruz dikkat. 3'ü çekiyoruz, buraya atıyoruz. Şunların yerine ne yazacağız? 9 yazacağız. Çarpı geldi. Çarpıyı çekiyoruz, 9. Şurada. 5'i çekiyoruz, bu. Sonucu 45 buraya yazdık. Bir çarpı daha geldi.
+
+712
+02:20:51,219 --> 02:20:55,299
+45'i çekiyoruz, 2'yi çekiyoruz. Sonuç 90.
+
+713
+02:20:57,459 --> 02:21:01,299
+5 geldi, şuraya getirdik, yeni bir 5 yazdık.
+
+714
+02:21:03,340 --> 02:21:07,700
+Bölü geldi, bölü geldiği için bir tane daha çekiyoruz, 5'i çektik.
+
+715
+02:21:08,540 --> 02:21:10,299
+Alttakini çekiyoruz, 90'dı.
+
+716
+02:21:11,479 --> 02:21:14,759
+90 bölü 5, 18. Bunlar gitti, şurada 18 kaldı.
+
+717
+02:21:17,075 --> 02:21:20,275
+Hızlı gitmiyorum değil mi arkadaşlar? Yani anlaşılıyordur herhalde.
+
+718
+02:21:21,075 --> 02:21:26,275
+18 kaldıktan sonra 2 geldi, yukarıya 2'yi yazdık, kıstekte.
+
+719
+02:21:28,275 --> 02:21:36,171
+Eksi geldi, 2'yi çektik buraya yazdık, 18'i çektik buraya yazdık, sonuç 16.
+
+720
+02:21:39,188 --> 02:21:53,768
+Bakın daha hızlı. Aynı şeyi mesela çalışmak isterseniz şu infiks ifadede yaptığımız şeyi birazdan infiksi prefikse veya postfiks'e çevirin. Ondan sonra o postfiks'in değerlendirmesini yapın.
+
+721
+02:21:53,768 --> 02:21:58,988
+Önce infiks formatında yazmak gerekiyor. Şimdi onlara geleceğiz. Bunlar değerlendirme.
+
+722
+02:22:00,819 --> 02:22:15,680
+Eğer ben postfix veya infix değerlendirmesi yapacaksam neye ihtiyacım var? Bakın postfixlerde, infixlerde parantez yok. Operatör önceliğine gerek yok. O zaten operatör önceliğine göre sıralanıyor. Tamam mı?
+
+723
+02:22:20,500 --> 02:22:22,840
+Şimdi infix, postfix dönüşümü.
+
+724
+02:22:24,700 --> 02:22:26,239
+Şimdi de geldik dönüşümlere.
+
+725
+02:22:26,959 --> 02:22:28,399
+Yani böyle bir ifade vereceğiz.
+
+726
+02:22:29,700 --> 02:22:30,739
+Böyle bir şeyi elde edeceğiz.
+
+727
+02:22:30,860 --> 02:22:31,500
+Bunu vereceğiz.
+
+728
+02:22:31,759 --> 02:22:32,520
+Bunu elde edeceğiz.
+
+729
+02:22:32,860 --> 02:22:35,099
+Şimdi şundan, şu kolay da stekte.
+
+730
+02:22:35,239 --> 02:22:36,239
+Bu biraz daha karışık.
+
+731
+02:22:36,319 --> 02:22:36,419
+Niye?
+
+732
+02:22:37,059 --> 02:22:37,939
+Bunda parantez var.
+
+733
+02:22:38,059 --> 02:22:39,360
+İşte işlem öncelikleri falan var.
+
+734
+02:22:40,279 --> 02:22:42,439
+Bir operatör stek kullanıyoruz arkadaşlar.
+
+735
+02:22:44,719 --> 02:22:47,219
+Buradaki operatör önceliklerine böyle dikkat etmemiz gerekiyor.
+
+736
+02:22:48,691 --> 02:23:14,752
+Karakterimiz operant ise bunu sonuca ekliyoruz. Bakın bir tane stake var. Operatör ise, eğer operatör siteğimiz boşsa boş olana ekliyoruz. Değil ise, eğer operatör siteği boş değilse burada operatör önceliğine bakacağız. Eğer daha büyük veya eşit bir öncelikte operatör geldiyse,
+
+737
+02:23:15,603 --> 02:23:33,203
+Stekten pop yapacağız, yani eleman çekeceğiz ve yaptığımız elemanın sonucunu operatör steyne geri ekleyeceğiz demek. Eğer operatör önceliği küçükse pop yapıp direkt bunu sonuca ekliyoruz.
+
+738
+02:23:34,403 --> 02:23:40,403
+İşte parantez açma kapama parantezleri geldiğinde ona göre parantezi görene kadar bu işlemleri yapıyoruz.
+
+739
+02:23:40,628 --> 02:23:55,927
+Şimdi örnekte biraz daha şey olur. Bu genel algoritma. Şimdi gelelim buraya. Bunu vermiş, bunu elde ediyor. Bakın parantez var, parantez burada yok. Ne yaptık? Bir tane stay'im var, bir de result değişkenim var.
+
+740
+02:24:01,523 --> 02:24:03,523
+A'yı result'a ekliyoruz.
+
+741
+02:24:04,523 --> 02:24:08,523
+Artı geldi, artı'yı ekledik siteye.
+
+742
+02:24:08,523 --> 02:24:10,523
+B'yi result'a ekliyoruz.
+
+743
+02:24:10,523 --> 02:24:13,523
+Bakın doğrudan baştan ifadeden okuyoruz.
+
+744
+02:24:13,523 --> 02:24:16,523
+Çarpı geldi, şimdi çarpı
+
+745
+02:24:16,523 --> 02:24:19,523
+şeyden daha yüksek.
+
+746
+02:24:21,523 --> 02:24:23,523
+Artıdan daha yüksek.
+
+747
+02:24:23,523 --> 02:24:25,523
+Herhangi bir şey ne yapacağız?
+
+748
+02:24:25,523 --> 02:24:28,523
+Bir dakika, burada şu algoritmaya göre.
+
+749
+02:24:31,476 --> 02:24:32,676
+Bir okuyayım arkadaşlar.
+
+750
+02:24:36,876 --> 02:24:43,136
+Doğrudan ekliyoruz bakın. Daha büyük veya eşitse doğrudan ekliyoruz. O zaman ne olacak burada? Çarpıyı ekledik.
+
+751
+02:24:44,576 --> 02:24:49,576
+Sonra parantez geldi. Parantezi de buraya ekliyoruz. Açma parantezi.
+
+752
+02:24:52,576 --> 02:24:55,596
+Sonra C geldi. Bakın C'yi de result'a ekledik.
+
+753
+02:24:56,796 --> 02:24:57,276
+Sonra
+
+754
+02:24:58,164 --> 02:25:05,963
+Ne gelmiş? Bu gelmiş. Şimdi bunun bir öncelik yani daha şununla bir şey olmadığı için doğrudan bunu ekliyoruz. Üst alma işlemi.
+
+755
+02:25:08,364 --> 02:25:24,664
+Sonra D'ye geldi. D'yi de ekliyoruz. Sonra çıkarma geldi. Şimdi çıkarma geldiğinde bunu çıkarmaya ekleyebilmem için burada böyle bir şey var. Böyle bir şey olduğu için daha küçük bir öncelikle diyor ki bunu
+
+756
+02:25:25,108 --> 02:25:38,888
+Buradan çıkar, buraya ekle. Rizalta ekle. Sonra bunu çıkardığım için ne yapacağım? Buraya getireceğim, ekleyeceğim. Sonra E geldi.
+
+757
+02:25:41,628 --> 02:25:51,048
+Tamam. E geldikten sonra kapama parantezi geldi. Kapama parantezi geldiği için artık ne yapacağım? Açma parantezini görene kadar
+
+758
+02:25:52,147 --> 02:26:02,547
+gideceğiz. Açma parantezini görene kadar ne var? Şimdi bir tane eksi var. Eksi ekliyorum. Sonra bu gittikten sonra, şöyle sileyim,
+
+759
+02:26:04,628 --> 02:26:11,468
+bunu çıkartıyorum stekten. Parantezi buraya eklemedim, dikkat edin. Sonra ne var? Stek boşalana kadar,
+
+760
+02:26:13,327 --> 02:26:18,647
+ifade bitti, stek boşalana kadar başka ekleyecek bir şey kalmadı. Ne yapıyoruz?
+
+761
+02:26:19,796 --> 02:26:41,456
+elemanları tek tek stekten çıkarıyoruz. Çarpı, art. Bu bir ne oldu şimdi? Postfix ifade oldu. Şimdi biraz önce şöyle bir şey demiştim. Postfix ifadeyi değerlendirirken, burada yapılan şey de şudur arkadaşlar.
+
+762
+02:26:46,739 --> 02:26:48,639
+Neredeydi? Şurada yaptık galiba.
+
+763
+02:26:50,259 --> 02:26:55,340
+Prefix bir ifadeyi sondan başa doğru gelip operatör görene kadar.
+
+764
+02:26:55,500 --> 02:26:59,219
+Postfix ifadeyi değerlendirirken de şunu yapacağız.
+
+765
+02:27:00,479 --> 02:27:01,779
+Baştan sona doğru gidiyoruz.
+
+766
+02:27:02,340 --> 02:27:04,119
+İlk operatörü nerede gördük? Bunu gördük.
+
+767
+02:27:04,119 --> 02:27:05,340
+Bunu bir yapacağız.
+
+768
+02:27:06,299 --> 02:27:08,000
+2, 5, 6, 3, daha 9.
+
+769
+02:27:08,239 --> 02:27:09,799
+Zaten burada sırayla gidiyor.
+
+770
+02:27:09,920 --> 02:27:10,759
+Çarpı çarpı.
+
+771
+02:27:12,319 --> 02:27:13,920
+5 bölü 2 eksi.
+
+772
+02:27:14,355 --> 02:27:19,995
+Yine devam ediyoruz baştan. 2, 5, 9. 5 ve 9'u ne yapacakmışız? Çarpacakmışız. 45.
+
+773
+02:27:22,396 --> 02:27:39,855
+2, 45. Şu ne oldu? 90. Ne oldu? 95 bölü 2 eksi mi kaldı? 90 ile 5'i bölecekmişiz. Buradaki sıraya göre işte ne oldu? 18.
+
+774
+02:27:40,852 --> 02:27:44,412
+18'den de 2'yi çıkaracakmışız, 16. Bakın böyle bir mantık var.
+
+775
+02:27:45,012 --> 02:27:48,972
+Şimdi şu postfix'i elde ettiğimde ne yapacağım demek?
+
+776
+02:27:50,112 --> 02:27:56,672
+C ile D'nin önce üstünü alacağım. Hakikaten burada baktığımda parantez içinde üstü önceliği olan bu var.
+
+777
+02:27:57,512 --> 02:28:06,731
+Sonra o üstünü aldığım şey bir şey üretecek. X ile E'nin, yani bunun sonucu ile E'nin çıkartma işlemini yapacağım.
+
+778
+02:28:08,628 --> 02:28:14,468
+Sonra bu elde ettiğim y ile b'yi çarpacağım. Sonra da toplama yapacağım.
+
+779
+02:28:16,587 --> 02:28:18,848
+Nasıl? Güzel gidiyor mu? Anlaşılıyor mu arkadaşlar?
+
+780
+02:28:21,528 --> 02:28:29,247
+Adım adım stack operasyonlarını kullanıyoruz. Bir soru varsa soruyorum. Yani tşet ekranını takip ediyorum. Bakalım.
+
+781
+02:28:29,888 --> 02:28:33,948
+Şimdi infiksten postfikse dönüştürdük. Infiksten prefikse dönüştürme.
+
+782
+02:28:34,675 --> 02:28:46,635
+infiksten prefikste doğrudan dönüşüm yok. Tamam mı? Önce ifadeyi tersten yazıyoruz. infiks postfiks dönüşümünü uyguluyoruz. Dolaylı olarak yapıyoruz.
+
+783
+02:28:47,635 --> 02:28:54,495
+Genel olarak yapacağımız şey yine stack kullanacağız. İşte bu kurallar aynı. Diyor ki önce reverse infiks expression'ı reverse et.
+
+784
+02:28:54,495 --> 02:29:01,975
+Şimdi infiks expression'ı reverse edilince ne olur? E, pardon önce parantez var. E eksi D.
+
+785
+02:29:02,739 --> 02:29:24,680
+Bilmem ne bilmem ne. Sonra bu işlemdeki tersine çevirdiğin parantezleri tekrar tersine çeviriyorsun. Yani parantezler şöyle E-D olacak. Mantıksız bir şekilde görünmeyecek parantezler. E-D üzeri C işte şöyle oluyor. Sonra diyor ki buna şey uygula. Post-Fix notasyonunun dönüşümünü uygula. Bakalım.
+
+786
+02:29:25,716 --> 02:29:30,835
+A artı B şuraya bir şey çizelim. Bir de result değişkenimiz olsun.
+
+787
+02:29:35,731 --> 02:29:37,912
+Infix, Prefix evet doğru yazıyoruz.
+
+788
+02:29:39,291 --> 02:29:41,851
+Şimdi bunu ters döndürdük, bu şekilde geldi.
+
+789
+02:29:42,432 --> 02:29:44,851
+Parantezleri de ters çevirdik, bu hale getirdik.
+
+790
+02:29:45,731 --> 02:29:47,051
+Burada anlaşılmayan bir şey yoktur.
+
+791
+02:29:47,971 --> 02:29:50,491
+Parantez, operatör gördüğümüz mü ne yapacağız?
+
+792
+02:29:51,551 --> 02:29:54,092
+Operatör önceliğinde dikkat alarak işlem yapıyoruz.
+
+793
+02:29:54,752 --> 02:29:57,131
+Şimdi parantez görmüşüz, siteye attık.
+
+794
+02:29:58,612 --> 02:30:00,131
+E gördük, sonuca yazdık.
+
+795
+02:30:01,716 --> 02:30:26,355
+Sonra eksi gördük, siteye attık. Şurası kötü olacak arkadaşlar, şöyle yapalım. Yani ben de hiç çizemiyorum burada ama. Parantez, eksi. D gördük, sonucu buraya yazdık. Üst gördük, üst daha büyük olduğu için ekleyebiliyorduk, küçük olursa sıkıntı var. C gördük, buraya yazdık.
+
+796
+02:30:27,796 --> 02:30:37,156
+Bunu gördük. Şimdi bunu gördüğümüzde kapama parantezi. Diyor ki, bir tane pop yap. Pop yapınca ne olacak? Bu gelecek buraya.
+
+797
+02:30:38,195 --> 02:30:44,836
+Şeyi görene kadar pop yapınca. Bunu da pop yaptık. Ondan sonra bunu da pop yapacağız. Yani en son burada eksi var. Bakın parantezi almadık.
+
+798
+02:30:45,355 --> 02:30:55,556
+Sonra yıldız geldi, yıldıza ekledik. Sonra b geldi, b'yi buraya yazdık. Sonra artı geldi, artıyı ekleyeceğiz fakat
+
+799
+02:30:57,459 --> 02:31:21,919
+Artının önceliği şeyden küçük olduğu için, yıldızdan küçük olduğu için diyor ki yıldızı önce çek. Ondan sonra yıldızı çektikten sonra getir artıyı buraya yaz. Sonra A geldi, A'yı getir. İfade bitti, bittikten sonra stekte ne varsa getir sırayla.
+
+800
+02:31:23,987 --> 02:31:25,987
+EDC
+
+801
+02:31:25,987 --> 02:31:27,987
+Sonra bunu da
+
+802
+02:31:27,987 --> 02:31:30,987
+Reverse yap. Sonucu reverse yap.
+
+803
+02:31:30,987 --> 02:31:32,987
+Artı A
+
+804
+02:31:32,987 --> 02:31:35,987
+Çarpı B
+
+805
+02:31:35,987 --> 02:31:37,987
+Eksi
+
+806
+02:31:37,987 --> 02:31:39,987
+Ünlem
+
+807
+02:31:39,987 --> 02:31:41,987
+CDE
+
+808
+02:31:41,987 --> 02:31:43,947
+Şimdi bunu
+
+809
+02:31:44,051 --> 02:32:03,912
+Prefiks ifadenin değerlendirilmesi örneğinde yapmıştım. Ne yapıyordum? Sondan geriye doğru geliyordum. Önce c-d'nin c üzeri d'yi yapacağız. Sonra c üzeri d'nin sonucunu e'den çıkaracağız. Sonra o çıkardığımız sonucu b ile çarpacağız. Sonra ona da a etleyeceğiz. Böyle sondan başa doğru çözebiliyoruz.
+
+810
+02:32:06,851 --> 02:32:10,912
+Şimdi bir de postfix'e nasıl dönüştürebiliriz?
+
+811
+02:32:12,275 --> 02:32:35,076
+Biraz daha karışık. Yine bakın tek operatör, şey, stack kullanıyoruz. Eğer karakterimiz operant ise, bakın operant ise, stake ekliyoruz bakın arkadaşlar. Biraz önce operatörleri site eklemiştik, infiksten post ise. Bu operant ise, stake ekledik. Operatör ise,
+
+812
+02:32:35,763 --> 02:32:48,163
+operanttan siteye çek, S1'de. Yani operanttan çek, S1'de. Bir daha çek, S2'de. S2 operatör S1'i yap, uygula. Siteye tekrar at.
+
+813
+02:32:50,163 --> 02:32:56,743
+İşte sonlanana kadar bu işlemleri devam et diyor. Sonucu return et. Şimdi bakın, siteye atacağımız şeyler artık ne olacak?
+
+814
+02:32:57,623 --> 02:33:00,603
+A bölü B gibi bir şeyler olacak.
+
+815
+02:33:01,139 --> 02:33:09,539
+Onun için biraz daha hani bu karmaşık gidiyor. Operatör önceliğine de dikkat etmek gerekiyor. Şöyle geniş bir strek çizeyim.
+
+816
+02:33:25,139 --> 02:33:27,139
+Neyse, çizemedik.
+
+817
+02:33:27,139 --> 02:33:29,139
+A'yı siteye at dedik.
+
+818
+02:33:35,924 --> 02:33:37,364
+B'yi siteye atıyoruz.
+
+819
+02:33:39,584 --> 02:33:41,204
+C'yi siteye atıyoruz.
+
+820
+02:33:43,204 --> 02:33:45,384
+Bölü geldi. Şimdi bölü gelince,
+
+821
+02:33:46,644 --> 02:33:50,984
+şuradaki kurala göre, yani S2, S1. İlk çektiğimiz S1
+
+822
+02:33:50,984 --> 02:33:55,904
+buraya gelecek. İkincisi buraya gelecek.
+
+823
+02:34:01,587 --> 02:34:10,027
+Sonra B bölü C'yi siteye atıyoruz. Bu bir çünkü string gibi düşüneceğiz.
+
+824
+02:34:11,128 --> 02:34:19,987
+Tabii önüne sonuna parantez eklenebilir. Çünkü infikse dönüştüreceğimiz için burada parantezleri her bir ifadede eklemek doğru olur.
+
+825
+02:34:21,288 --> 02:34:25,987
+Şu köşeli parantezler site'in sınırlarını gösteriyor arkadaşlar. Onları yani ifade gibi düşünmeyin.
+
+826
+02:34:26,420 --> 02:34:48,500
+Ama şurada yaptığımız B bölü C'nin sonucunu getirdik burada yazdık. Sonra eksi gelmiş. Eksi gelince, stekten burayı çekiyoruz, B bölü C geldi. Bunu çektik, A geldi. Şimdi burada A eksi B bölü C'yi büyük bir parantezle şuraya atıyoruz.
+
+827
+02:34:54,227 --> 02:34:55,227
+Şöyle bir şey oldu.
+
+828
+02:34:56,707 --> 02:35:00,967
+Şunun üzerinden biraz daha gidelim. Sonra A geldi ifade. A'yı atadık.
+
+829
+02:35:02,007 --> 02:35:04,347
+Sonra K geldi. K'yı atadık.
+
+830
+02:35:05,407 --> 02:35:15,427
+Sonra bölü geldi. Bölü gelince işte K buraya geldi. A buraya geldi. Bölü buraya geldi. Şurada A bölü K şöyle parantez içinde olacak.
+
+831
+02:35:16,887 --> 02:35:19,367
+Bundan sonrası biraz karışıyor işte. Yani şeyler karışıyor.
+
+832
+02:35:24,371 --> 02:35:26,371
+çizebildiğim şeyi şimdi çizememek.
+
+833
+02:35:33,652 --> 02:35:35,652
+L gelmiş, L'yi siteye atıyoruz.
+
+834
+02:35:37,551 --> 02:35:42,172
+Eksi gelmiş, eksi gelince L'yi buraya aldık, A bölü K'yı buraya aldık.
+
+835
+02:35:44,391 --> 02:35:50,992
+Sonra A bölü K eksi L'yi şuraya, A bölü K eksi L'yi buraya böyle atayalım.
+
+836
+02:35:53,112 --> 02:35:53,672
+Şöyle.
+
+837
+02:35:55,172 --> 02:35:59,711
+Site'nin ilk kısmında ne var? A eksi B bölü C'ye var, ikinci kısmında A bölü K eksi L'ye var.
+
+838
+02:36:00,788 --> 02:36:04,028
+Çarpı gelmiş. Çarpıyı çağırınca ne yapacağız? Çarpı diyeceğiz.
+
+839
+02:36:05,247 --> 02:36:08,368
+A bölü K eksi L bu tarafa gelecek.
+
+840
+02:36:09,628 --> 02:36:11,747
+Eşitliğin sağ tarafı, çarpımın sağ tarafı.
+
+841
+02:36:11,868 --> 02:36:13,888
+Soluna A eksi B bölü C'ye gelecek.
+
+842
+02:36:15,808 --> 02:36:20,288
+Sonra bunu siteye tekrar alacağız.
+
+843
+02:36:21,348 --> 02:36:25,747
+Siteye aldıktan sonra başka bir işlem kalmadığı için sitekten çıkartacağız.
+
+844
+02:36:26,420 --> 02:36:41,040
+ve parantez ekleyerek çıkarmış a-b bölü c çarpı a bölü k eksi. Yani şurada herhangi bir ambiguity olmadan bu ifadeyi doğrudan infixe çeviriyoruz.
+
+845
+02:36:42,520 --> 02:36:47,180
+Anlaşıldı mı? Bunun şeyi biraz daha uzun. Postfix'ten infixe dönüşüm.
+
+846
+02:36:53,363 --> 02:36:54,363
+Devam edelim.
+
+847
+02:36:56,043 --> 02:37:00,363
+Şimdi prefiksten infikse dönüşümü yapmadım.
+
+848
+02:37:00,603 --> 02:37:04,363
+Modla örneğini olmazsa slide eklerim ama buna bakabilirsiniz.
+
+849
+02:37:04,363 --> 02:37:08,363
+Yani çok benzer bir şey var. Bir de prefiksten postfiks dönüşüm veya işte
+
+850
+02:37:08,804 --> 02:37:11,963
+ne eklenebilir? Postfiks den prefikse dönüşüm de eklenebilir.
+
+851
+02:37:12,563 --> 02:37:14,563
+Bir de bunun mantığına bakalım.
+
+852
+02:37:15,563 --> 02:37:20,963
+Eğer karakter operant ise bunu siteye ekliyoruz. Operatör ise
+
+853
+02:37:21,075 --> 02:37:47,115
+S1 ve S2 diye iki defa çekiyoruz. S1, S2 operatör yapıyoruz. Bakın, dikkat edin. Biraz önce yaptığımız neydi? S1, S2 operatör, S1 de burada. S1, S2 operatör. Niye? Prefixin mantığı buydu bize. Şunu vereceğiz, şunu alacağız. Operatör sonda olacak. İşte bu işlemi sonuna kadar yapacağız.
+
+854
+02:37:49,940 --> 02:37:53,819
+Evet, şöyle şuraya çizmeye çalışayım. Belki daha rahat çizelim.
+
+855
+02:37:57,427 --> 02:37:57,968
+Bu da bir.
+
+856
+02:38:08,244 --> 02:38:17,604
+Haa, şurada ekran kayıyormuş arkadaşlar ben. Onu tek monitör ayarlamamışım. Öbür monitöre de giriyormuş.
+
+857
+02:38:19,524 --> 02:38:22,164
+Bu kadar diyorum hassas değildi çünkü bu niye böyle oldu?
+
+858
+02:38:27,476 --> 02:38:29,776
+Yok, o derleyicilere göre değişen bir şey, Serban.
+
+859
+02:38:30,376 --> 02:38:34,956
+Yani, ama şöyle, postfix biraz daha mantıklı.
+
+860
+02:38:35,156 --> 02:38:39,015
+Çünkü postfix'i, prefix'i de postfix'e dönüştürüyorsun ya bazı durumlarda.
+
+861
+02:38:40,056 --> 02:38:42,195
+Yani hangi derleyici hangisini kullanıyor onu bilmiyorum.
+
+862
+02:38:42,376 --> 02:38:45,916
+O konuda bilgim yok ama postfix o açıdan biraz daha mantıklı olabilir.
+
+863
+02:38:47,676 --> 02:38:53,456
+Şimdi, dikkat edeceğimiz şey arkadaşlar, iterasyonu burada yaparken
+
+864
+02:38:55,603 --> 02:39:04,603
+sağdan sola doğru okuyacağız. Bakın bunun böyle bir özelliği var. Yani baştan okumuyoruz, sağdan sola doğru okumuyoruz. Iteration.
+
+865
+02:39:04,603 --> 02:39:19,603
+L'yi aldı. Siteye ekledik. K'yı aldı, siteye ekledik. A'yı aldı, siteye ekledik. Bakın şu an düzgün yazıyorum. Demek ki sabahtan beri iki monitör kullanıyormuş şu kalem. Ben de diyorum niye böyle?
+
+866
+02:39:20,180 --> 02:39:25,959
+Sonra bölü geldi. Bölü geldikten sonra A'yı stekten çekiyoruz.
+
+867
+02:39:27,680 --> 02:39:33,000
+Ondan sonra K'yı stekten çekiyoruz. A dediğimiz S1'di. K dediğimiz S2 idi.
+
+868
+02:39:34,079 --> 02:39:39,860
+S1, S2 operatör işlemini yapıyoruz. Operatörümüz neydi? Bölüydü. AKL.
+
+869
+02:39:39,860 --> 02:39:42,500
+AKL'yi
+
+870
+02:39:44,755 --> 02:39:54,376
+pardon AK şeyi, bölüyü yazacağız. Yani şunu çıkarmıştık, bunu çıkarmıştık. Bunun yerine AK bölü yazıyor. Bakın hiç parantez yok.
+
+871
+02:39:56,475 --> 02:40:02,515
+Sonra eksi geldikten sonra AK bölüyü çıkartıyoruz.
+
+872
+02:40:09,108 --> 02:40:21,087
+AK bölüyü çıkarttıktan sonra bir de L'yi çıkartıyoruz. Bunu da çıkarttıktan sonra operatörü getirip bunun sonuna ekliyoruz. Ne oldu? AK bölü L eksi oldu.
+
+873
+02:40:29,587 --> 02:40:53,407
+Evet, şuradaki gibi. C geldi. Yok, C gelmedi. Pardon. Evet, C geldi. Sonra B geldi. Sonra bölü geldi. Bölü gelince yapacağım size C'yi çıkardık, şey B'yi çıkardık, buraya yazdık. C'yi çıkardık, buraya yazdık. B, C geldi.
+
+874
+02:40:54,195 --> 02:40:59,056
+BC bölüğü ne yapacağız? Şuraya BC bölüğü ekleyeceğiz. Şu gidecek.
+
+875
+02:41:02,675 --> 02:41:04,275
+Sonra A geldi.
+
+876
+02:41:08,020 --> 02:41:16,940
+Sonra eksi geldi. Eksi gelince duracağız. A'yı alacağız. Bc bölüyü alacağız. Eksi'yi alacağız.
+
+877
+02:41:18,680 --> 02:41:29,560
+Sonra bunların hepsini abc bölü eksi diye ekleyeceğiz bu ifadeyi. Şuradaki gibi. Sonra çarpı geldi.
+
+878
+02:41:31,924 --> 02:41:52,463
+abc bölü eksi ak bölü l eksi çarpı diyeceğiz. Bunu bir siteye ekleyeceğiz. İfade bittiği için sitekten tekrar çıkaracağız ve abc bölü eksi ak bölü l eksi çarpı. Bunu bulacağız.
+
+879
+02:41:58,515 --> 02:42:00,716
+Şimdi şurada aslında olmayan ne var?
+
+880
+02:42:02,495 --> 02:42:06,736
+Prefix'ten postfix'e dönüşüm var değil mi? Ben onu da kalayım da slide ekleyeyim olmazsa.
+
+881
+02:42:14,036 --> 02:42:15,236
+başka ne vardı?
+
+882
+02:42:21,652 --> 02:42:33,612
+Bir de prefiksten infikse dönüşüm var. Olmayan. Postfiksten infikse. Pardon, postfiksten prefikse dönüşüm yok. Şunu ters yazdık.
+
+883
+02:42:36,432 --> 02:42:42,172
+Onları da örneklerini, bir saniye arkadaşlar, bir bekleteyim. Prefiksten infikse.
+
+884
+02:42:49,780 --> 02:42:55,240
+Şu sayfadan bakalım orada vaktimiz var. Konuyu burada bitireceğim.
+
+885
+02:43:07,987 --> 02:43:35,268
+sayfa açıldı. Şöyle bir şey, artı AB'yi, A artı B'ye dönüştürme, prefiksten infiksenine. Ne diyormuş? Eğer operant ise siteye ekle, operatör ise S1, S2 diye çek, S1 operatör S2 uygula. Tamam mı? Prefiksten infikse. Bunu da reverse order'la yapacaksın diyor bakın okurken. Right'tan left'te.
+
+886
+02:43:35,667 --> 02:43:56,667
+Biraz önce ne vardı? PostFix'te farklı bir şey kullanmıştık. L'yi alıyor, K'yı alıyor. Ondan sonra A'yı alıyor steke. Sonra bölü gelince birincisini çekti S1 yaptı. İkincisini çekti S2 yaptı. A'da S1 var, K'da S2 var.
+
+887
+02:44:03,667 --> 02:44:04,747
+A'yı çekti.
+
+888
+02:44:05,948 --> 02:44:08,347
+A bölü K kaldı, evet.
+
+889
+02:44:09,768 --> 02:44:12,007
+A bölü K'yı tekrar ekliyor.
+
+890
+02:44:12,247 --> 02:44:15,067
+Daha sonra eksi gelince A bölü K'yı çekecek.
+
+891
+02:44:15,868 --> 02:44:18,768
+A bölü K'yı çektiğinde sonra L'yi çekecek.
+
+892
+02:44:19,067 --> 02:44:21,827
+A bölü K eksi L diyecek parantezler ekleyerek.
+
+893
+02:44:21,948 --> 02:44:23,108
+Daha sonra C'ye gelecek.
+
+894
+02:44:24,768 --> 02:44:27,207
+Bu da bu şekilde devam edip gidiyor.
+
+895
+02:44:27,387 --> 02:44:28,628
+Yani uzatmama gerek yok.
+
+896
+02:44:29,727 --> 02:44:30,507
+Bir de ne vardı?
+
+897
+02:44:32,659 --> 02:44:55,000
+prefiksten postfixe miydi? Evet, postfixe'den prefixe var mıymış ona bir bakayım. Convert, postfixe'dir, prefixe herhalde o da var. Tutorial Horizon sitesinde aldım ben bunları. Evet, ab artı gelince artı ab. Yaptığımız şey, bunu soldan sağa normal okuyoruz.
+
+898
+02:44:55,603 --> 02:45:18,283
+Önce Operatör gelecek, sonra S2 gelecek, sonra S1. Yani burada çektiğim sıra A, B, C. İşte C'yi çekiyoruz, B'yi çekiyoruz. Önce B'yi yazıyoruz, sonra C'yi yazıyoruz. Sonra onun öncesinde de Operatör'ü yazıyoruz. Şu sırayla yapıp bütün siteyi dolaşıyoruz. Bayağı bir site uygulaması oldu herhalde.
+
+899
+02:45:20,435 --> 02:45:24,716
+Evet, şimdi arkadaşlar, bakalım sonraki slide'ımızda ne var?
+
+900
+02:45:25,536 --> 02:45:27,515
+Algoritma analizine geldik diye hatırlıyorum.
+
+901
+02:45:27,515 --> 02:45:31,056
+Evet, burada duralım. Burası yeni bir konu.
+
+902
+02:45:32,896 --> 02:45:39,175
+Genel olarak burası veri yapılarının basit bir uygulaması gibi düşünebilirsiniz.
+
+903
+02:45:39,355 --> 02:45:40,756
+Yani şu bugün anlattıklarımız.
+
+904
+02:45:41,315 --> 02:45:43,615
+Mesela kuyruk üzerinde de şey yapacağız.
+
+905
+02:45:44,979 --> 02:45:49,979
+Ama onu graflar üzerinde anlatacağım. Yani kuyruk üzerinde şüphesiz bir sürü uygulama var.
+
+906
+02:45:51,579 --> 02:45:54,880
+Yani burada da belki anlatılabilir ama çok gerek yok.
+
+907
+02:45:56,619 --> 02:46:01,399
+Graflar konusuna gelince orada onlara değiniriz tekrardan.
+
+908
+02:46:03,420 --> 02:46:05,559
+Sormak istediğiniz bir şey var mı burada?
+
+909
+02:46:14,835 --> 02:46:15,736
+Şöyle görelim.
+
+910
+02:46:20,295 --> 02:46:26,655
+Sınava kadar hangi, nereye gelirsek, yani bu slide biterse yaklaşık işte bir 90 sayfa falan var.
+
+911
+02:46:26,835 --> 02:46:32,095
+Yani bir, bazı slide'ları biraz daha genişlettim tabii burada ders arasında.
+
+912
+02:46:33,935 --> 02:46:39,755
+Bu slide'ın sonuna gelemesek de geldiğimiz yere kadar sınavdan son olacağız.
+
+913
+02:46:39,755 --> 02:46:42,475
+Daha detaylı olarak haftaya o konuyu görüşürüz.
+
+914
+02:46:42,995 --> 02:46:47,095
+Onun haricinde bir sorunuz yoksa hepinize iyi günler, iyi hafta sonlar arkadaşlar.
+
+915
+02:47:00,468 --> 02:47:02,220
+görüşmek üzere, iyi günler arkadaşlar.

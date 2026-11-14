@@ -1,0 +1,2339 @@
+1
+00:00:46,868 --> 00:00:48,868
+ve daha sonra da izleyiciler.
+
+2
+00:01:01,619 --> 00:01:10,679
+Şimdi, son takvim daha fazla şey bizim konular da ilerlememiz gerek. Onu da şimdi nasıl yapalım?
+
+3
+00:01:26,867 --> 00:01:37,027
+Başlık. Bakalım şimdi bu işaretin konuları ve pek belki de ekran serbest gelinelim. Bakacağız.
+
+4
+00:01:37,027 --> 00:01:46,347
+Peki. Şimdi biraz süreye ihtiyacım var arkadaşlar. Ders de başlamadan önce. O yüzden şöyle yapalım.
+
+5
+00:01:51,987 --> 00:02:05,768
+Ekran paylaşımına, ekran paylaşımına, ekran daha sağlı şuna, 0.915 diyeceğiz arkadaşlar.
+
+6
+00:02:07,908 --> 00:02:15,768
+9.15'a kadar bekleyelim, birazcık da ekstra bir ihtiyacım var, o yüzden biraz müsaadenizle.
+
+7
+00:20:10,516 --> 00:20:14,916
+Evet arkadaşlar, başlayabiliriz. Biraz beklediğiniz için teşekkür ederim.
+
+8
+00:20:14,916 --> 00:20:17,416
+Zamanı ekleyen şunlarım.
+
+9
+00:20:24,819 --> 00:20:26,019
+Şöyle ayağlayalım.
+
+10
+00:20:28,599 --> 00:20:29,559
+Sizlikle kolay.
+
+11
+00:20:42,067 --> 00:20:52,288
+Evet, kayıt zaten kayıtta, ekran paylaşımında tamam.
+
+12
+00:20:55,476 --> 00:21:20,436
+Proje sunumlarının programını biraz daha önünüzdeki günlerde duyuracağız arkadaşlar. Bu konuda asistan hocalarınızdan yardım isteyeceğim. Programa göre projenin sunumu ve yazılan kodun demonstrasyonu için bir anlama yapacağız. Belki ikisini de asistan hocalarınızı sunacaksınız. Belki birisini bilemiyorum.
+
+13
+00:21:23,476 --> 00:21:44,956
+Bu konuları bitirmek gerekiyor. Belki şöyle bir şey yapabiliriz. Çok uygulamalı olmayan, teorik artı olan konularda ders videosu da yükleyebilirim. Bakacağız bu konularda ne yapacağımızı. O yüzden lütfen odresle sayfalarımızı izlemeye devam edip sizlere bilgilendireceğim.
+
+14
+00:21:48,051 --> 00:22:02,331
+Ders notlarında sınavı aşıları bitmeden sonra karşımıza yazılım proje yönetimi ile ilgili hususlar giriyor. Onların üstünden verimli bir şekilde geçelim inşallah. Şimdi sohbette bir şey var bakalım.
+
+15
+00:22:02,331 --> 00:22:13,471
+Zahfana diyor ki, notlar duman nasıl olacak ikinci vize kalktığı için? Şöyle düşünüyoruz. Dönem sonu etkinliği yani final sınavı %40, dönem içi etkinlikleri %60.
+
+16
+00:22:16,051 --> 00:22:22,731
+Düşüneceğimiz %30 proje, %30 şeklinde. Herhalde bu şekilde yapacağız.
+
+17
+00:22:24,511 --> 00:22:29,951
+Çünkü o bir kural %60 dönem içi etkinlikleri, %40 dönem sonu etkinliği yani final.
+
+18
+00:22:31,291 --> 00:22:36,711
+Yani %30 artı %30 şeklinde geçecek çok büyük olasılıkla.
+
+19
+00:22:37,971 --> 00:22:38,891
+Böyle söyleyebilirim.
+
+20
+00:22:40,891 --> 00:22:41,531
+Peki.
+
+21
+00:22:42,003 --> 00:22:48,144
+Başlayalım yazılım proje yönetimiyle ilgili. Bazı anahtar noktalara değinmek istiyoruz, Gidars kapsamında.
+
+22
+00:22:48,788 --> 00:22:58,708
+Yazılım projelerinin tanımına göre başarılı olma oranının ancak %50'lerde olduğunu konuşmuştuk zaten daha ilk haftalarda bile.
+
+23
+00:22:59,188 --> 00:23:05,307
+Onu da bir tekrarlamayalım. Ama bu konudaki bazı zorluklara dikkatinizi çekmek istiyorum.
+
+24
+00:23:05,807 --> 00:23:11,528
+Bir kere yazılım geçirme işi başlı başına entelektüel çaba, zihinsel çaba gerektiren soru.
+
+25
+00:23:11,708 --> 00:23:16,508
+Onun dışında ölçek büyüklükleri bizi zorlamaktadır çoğunlukla.
+
+26
+00:23:16,788 --> 00:23:28,587
+Çözülecek problemin ölçü, ortaya çıkacak yazılımın ölçü, bu projede çalışacak kişilerin, bütün paydaşların ölçü, sayısal niceliğinin çokluğu anlamında.
+
+27
+00:23:29,107 --> 00:23:35,788
+Ve ne kadar çok kişi işin içerisine girerse onlara çalışmak bu kadar zorlaşıyor.
+
+28
+00:23:35,788 --> 00:23:44,788
+Onları organize bir biçimde çalıştırmanın veya onlarla organize bir biçimde etkileşimde bulunmanın güçlükleri.
+
+29
+00:23:44,788 --> 00:24:04,668
+Bu konularda önerilen best practice'lere uyaraktan ve yazılım sağ gereçlerin de desteğiyle bu ölçekleri, ölçek problemlerini çözmeye çalışıyoruz. Ama bu ölçekte sürekli ileri taşındığında bizim de bu tempoya yak uydurmamız gerekmekte.
+
+30
+00:24:06,036 --> 00:24:29,856
+Üçüncü zorluğumuz testirim yani tahminlemedeki zorluklar. Şimdi bir projenin ne kadar sürede tamamlanacağına ilişkin istatistiksel yöntemler var. Birazdan onları deneyeceğiz, edeceğiz. Fakat onların da net bir hassasiyetle tahminleme yapması hala çok kolay değil. Göreceğiz.
+
+31
+00:24:30,291 --> 00:24:37,011
+Ölçme sonuçlarını değerlendirmenin de zor olduğundan ayrıca bahsedeceğiz.
+
+32
+00:24:37,151 --> 00:24:39,951
+Yine yazılım ölçüleri konusunda biraz kapsamında.
+
+33
+00:24:40,351 --> 00:24:43,071
+Şimdilik bir ana hatlarıyla toparlamış olalım soruları.
+
+34
+00:24:44,111 --> 00:24:47,251
+Sonra insanlarla çalışmak başı başına bir zorluk.
+
+35
+00:24:49,011 --> 00:24:54,051
+İnsanlar her ne kadar mantıklı varlıklar olsa da duygusal yanımızda var.
+
+36
+00:24:54,251 --> 00:24:56,631
+Oradan kaynaklar alınmıyor, güçlüler olabilir.
+
+37
+00:24:57,200 --> 00:25:06,840
+Bilinç hayatımızda fark etmediğimiz eğilimlerden kaynaklı, razı olup olabilir. Bir örneğini yazılım süreç konusunda tartışmıştık mesela.
+
+38
+00:25:07,604 --> 00:25:26,084
+Daha sonra açılma. Böyle durumlar var. Ki farklı ülkelerdeki farklı kültür ve farklı yaklaşım ve farklı çalışma disiplinleri farklı. Çalışma kültürleri yine sahip insanlarla da aynı zamanda çalışmak zor olacaktır haliyle.
+
+39
+00:25:26,723 --> 00:25:35,604
+Teknoloji sürekli değişiyor, gelişiyor onlara okudurmamız lazım. O da pek kolay bir işleyi. Gereksinlerde değişmelerin kaçınılmaz olduğunu daha daha söylemiştim.
+
+40
+00:25:35,604 --> 00:25:47,124
+Zaten sadece bir hatırlatmış olalım. Politik değişimler elbette burada önemli bir kriter. Burada politik derken aslında ülke politikasından bahsetmiyorum daha çok.
+
+41
+00:25:47,844 --> 00:25:54,183
+Tabii onun da etkisi var elbette ama bunun için şirket politikalarının da çok büyük etkisi var.
+
+42
+00:25:54,183 --> 00:26:02,604
+Yani politika deyince sadece yönetim, yani ulus yönetimi, ülke yönetimi anlamında değil, şirket yönetimi anlamında da en az onu kadar.
+
+43
+00:26:03,604 --> 00:26:25,983
+Piş oluyor yazılım projesi. Ve son olarak mali değişimler. Bu genel olarak küresel düzeydeki mali dalgalanmalar olabilir. Ülke düzeyindeki mali dalgalanmalar olabilir. Firma düzeyindeki mali dalgalanmalar olabilir. Bunların da önceden tahmini, gerçeği ortaya çıktığında etkin azaltılması vs. kolay işler değiller.
+
+44
+00:26:26,483 --> 00:26:35,403
+Yazılım proje yönetimi ise bütün bu denilen zorluklardaki zorlukları kolaylaştırmaya yönelik bir ilgi alanıdır arkadaşlar.
+
+45
+00:26:35,403 --> 00:26:44,423
+Ve önem sırasına göre yazılım proje yönetiminin alt ilgi alanları şunlar. Bir kere en başta kişiler geliyor arkadaşlar.
+
+46
+00:26:47,508 --> 00:26:53,508
+Her zaman için ilk başta en önemli odak noktasında daima kişiler var arkadaşlar.
+
+47
+00:26:53,668 --> 00:26:54,948
+Üstüne vurgulayarak söylüyorum.
+
+48
+00:26:56,148 --> 00:27:01,728
+Çünkü esas işi ortaya çıkaracak olanlar kişiler.
+
+49
+00:27:03,248 --> 00:27:11,907
+Diğer alt ilgi alanlarında ne kadar iyi olursak olalım, ne kadar disiplinli olursak olalım, ne kadar mükemmel olursak olalım.
+
+50
+00:27:12,403 --> 00:27:30,403
+Kişileri doğru yönetemezsek doğru, kişilerle çalışamıyorsak, kişileri bir ıkım olma ruhu etrafında hedefe kentleyemiyorsak, yeterince güdüleyemiyorsak, o iş başarısız olacaktır. Mutlaka bir mutlaka bir araç. Bu nedenle her şeyden önce birinci sıra kişileri koyuyoruz. Proje yönetiminin ilgi alanları arasında.
+
+51
+00:27:30,932 --> 00:27:44,852
+Ardından ortaya çıkaracağımız ürün geliyor bu nihayetinde. Çünkü amacımız işe yarayan, kullanışlı ve başarılı bir ürünün ortaya çıkarmak. Kaliteli, iyi nitelikleri sahip bir ürünün ortaya çıkarmak. İkinci odak noktumuz o.
+
+52
+00:27:45,364 --> 00:27:56,364
+Üçüncü odak noktamız, kullandığımız süreç, yazılım geliştirme süreci, onun alt adımları, bunları nasıl iyi, verimli, doğru, düzgün bir biçimde yürütülürüz ederiz, ona ilgileniyor.
+
+53
+00:27:56,684 --> 00:28:02,204
+Ve en son olarak da projenin genel olarak bütününe odaklanıyor proje yönetimi.
+
+54
+00:28:03,864 --> 00:28:12,443
+Yani adımla proje yönetimi olduğu için ilk odak noktası proje diye düşünmeyin, son nokta proje. Bu önemli sırasına göre sıralım istedim.
+
+55
+00:28:12,884 --> 00:28:23,923
+Ve yazılım proje yönetimi de çok kolayca bir iş değil arkadaşlar. Disiplinler arası bir çalışmaktadır. Farklı konularda uzmanlık yeteneği gerektirmektedir.
+
+56
+00:28:34,003 --> 00:28:43,223
+ve bilgi sahibi olmak gerekiyor, bilgi ve deneyim ve proje yönetimi bilgi ve deneyimine de sahip olmak gerekiyor. Üç ayrı.
+
+57
+00:28:44,468 --> 00:28:57,148
+SACAYA şeklinde üç ayrı birleşen var. Bütün bu konularla ilgili bilgi ve deneyim gerekiyor bu konuda iyi ilerleyebilmek için.
+
+58
+00:28:57,588 --> 00:29:01,788
+Veya bu konuda kariyer inçaltmak için bu üç alanlarda çalışmak gerekiyor.
+
+59
+00:29:02,228 --> 00:29:08,148
+Hepsinin kesişimi ancak ve ancak yazılım proje yönetimi. O yüzden de biraz zor bir iş.
+
+60
+00:29:12,819 --> 00:29:29,819
+Şimdi, proje ölçeğinden de biraz bahsedelim. Burada hani rule of thumb diye söyleyebileceğimiz genel geçer, çok keskin sınırlarla belirlenmemiş ama ortalama olarak söyleyebileceğimiz rakamsal...
+
+61
+00:29:30,036 --> 00:29:44,796
+Önceliklerden de bir hissedelim. Çünkü yazılım projesinin büyüklüğü bizim ne gibi yönetim ve denetim mekanizmaları kullanalım, ne gibi araçlar kullanalım, ne gibi teknolojilerden mutlaka faydalanmamız gerekiyor.
+
+62
+00:29:44,796 --> 00:29:50,916
+Bu sorun yanıtlarını değiştirecektir. O yüzden küçük proje dediğimizde,
+
+63
+00:29:50,960 --> 00:29:59,960
+Eğer bir iki kişi içeren çok kısa süreni, bir iki ay gibi sürede tamamlanması planlanan bu projelerden bahsiyorsak bunlar çok...
+
+64
+00:30:00,000 --> 00:30:16,240
+Küçük ölçekli şeklinde adlandırılıyor. 2-3 kişi içeren kısa süreli, 2-3 ay gibi süreli projelerde küçük ölçekli projelerde geliyor. Bu tip projelerde aslında basit bir kullanıcı uygulama programı tekniğiyle düzenlemeler yapabiliyoruz.
+
+65
+00:30:16,799 --> 00:30:28,000
+Çok fazla ayrıntılı, basitede olmayan basit bir görev yönetimi ve hangi için ne zaman yapılacağını, belki egzatlasılarından bile takip edilebilmesi.
+
+66
+00:30:28,000 --> 00:30:29,880
+Çözüm olabiliyor.
+
+67
+00:30:31,700 --> 00:30:42,920
+Büyük ölçekli projeler ise en az 5, genelde ortalama 20'ye kadar çıkabiliyor bu. Bu projeler 2-3 yıla kadar sürebiliyor.
+
+68
+00:30:42,920 --> 00:30:59,700
+Aslında günümüzün şartlarına baktığımda ve daha çok hem TÜBİTAK, TEDEP tarafından desteklenen yazılım, arge bacağı dolan yazılım geliştirme projelerini hem de üniversitelerdeki teknoloji geliştirme bölgelerinde yaptığım hakikaten.
+
+69
+00:30:59,700 --> 00:31:26,740
+Kemiklerden yola çıkarak proje sürelerine baktığımda genelde daha çok bir yıl gibi süreler. Hatta altı ayı da çok rahat görüyorum. Altı ay, bir yıl gibi süreler. Fakat şunu da söyleyeyim. Bu gibi durumlarda genelde ortaya çıkacak projeyi fazlar haline ayırmış oluyorlar ve her biri kendi içerisinde anlamlı ve yararlı işler yapabilecek alpazlar alabiliyorlar.
+
+70
+00:31:27,700 --> 00:31:33,599
+6 aylık, 4 faz ya da 6 faz halinde aslında.
+
+71
+00:31:34,079 --> 00:31:48,319
+Ana proje planlarını yapıyordu. Az kısımda her bir proje olarak el alındığında 6 ay gibi bir proje olabiliyor. Ama hepsine baktığımızda 2-3 seneye çıkabiliyor. O yüzden çok da yanlış bir şey değil.
+
+72
+00:31:48,319 --> 00:32:00,299
+Ayrıca zamanımızın daha hızlı temposunda proje süreleri de daha kısa olmaya da eğilimli oluyor.
+
+73
+00:32:01,748 --> 00:32:11,028
+Büyük ölçekli projelerin diğer bir özelliği çok sayıda ağır sistemden oluşmalarıdır ve çok büyük olasılıkla başka sistemlerle de tümleştirilmesi gerekecektir.
+
+74
+00:32:11,447 --> 00:32:18,248
+Bu gibi projelerde mutlaka bir iş planlama yazılımı ve bir kod yönetim yazılımı kullanmak gerekmektedir.
+
+75
+00:32:18,248 --> 00:32:22,327
+İş planlama yazılımı derken proje kapsamında hangi işler yapılacak?
+
+76
+00:32:22,771 --> 00:32:31,831
+Bunlar kimler tarafından yapılacak ve hangisi herhalde yapılacak ve iç kalemlerinin birbirleriyle bağımlılıkları da söz konusu da şu bitmeden şu bitmez.
+
+77
+00:32:31,951 --> 00:32:37,491
+Veyahut da şu belli bir yüzleri tamamlanmadan şuna başlanamaz gibi bağımlılıklar vardır.
+
+78
+00:32:37,591 --> 00:32:43,951
+Bütün o bağımlılıkları göz önünde taraktan bir planlama yapabilmek çok da kolay bir iş değildir.
+
+79
+00:32:44,071 --> 00:32:47,771
+Fakat bu konuda da yardımcı olan planlama yazılımları da mevcuttur.
+
+80
+00:32:47,771 --> 00:32:49,951
+Gerek keyif sistemlerinde gerek.
+
+81
+00:32:50,367 --> 00:33:07,768
+IBM Reaction ve Microsoft, Azure gibi bütüncül bir yazım geliştirme süreç üzerinde de buna yarayan geliştirme mevcuttur. Ya da bağımsız açık kaynak gereklerde mevcuttur.
+
+82
+00:33:18,367 --> 00:33:36,807
+Git ve SolSorge gibi bir kod havuzu oluşturup o kod havuzuna katkıda bulunmanın çeşitli kurallara dahil olduğu. Ondan sonra Civa belirli eşlikleri geçemeyen kod havuza kabul edilmediği ve istenilen anlarda proje yönetici.
+
+83
+00:33:36,807 --> 00:33:45,307
+Bu yeni versiyonlar oluşturarak önceki versiyonları dondurup sakladığı kod yönetimi uygulamaları mevcuttur.
+
+84
+00:33:46,367 --> 00:33:56,067
+Bunlar kim zaman hayat kurtarıcı olabiliyorlar. Örneğin aktif olarak geliştirilen bir yazılım projesinde belli bir noktada bir kullanıcıya demo yapılacağı zaman,
+
+85
+00:33:56,067 --> 00:34:14,067
+Smoke Test demiştik ya, yeni eklenen bazı kodlar Smoke Test'in göçmesine sebep olabilir. O gibi durumlarda hemen Smoke Test'in başarılı olmuş bir önceki versiyon üstüne geçip, onun üzerinden...
+
+86
+00:34:14,367 --> 00:34:17,007
+demo yapabilmek hayat kurtarıyor.
+
+87
+00:34:22,507 --> 00:34:29,188
+Temel amacımız yazılım projelerinde elbette kullanıcıları bir yarağı sağlamak. Bunu hep hatırlamamız gerekiyor.
+
+88
+00:34:29,599 --> 00:34:57,159
+Planlama yaparken 3 ayrı yaklaşım türü kullanılabiliriz. Birincisi basitlik yaklaşımı. Basitlik yaklaşımının taraftarı diyorlar ki, geleceğin getireceği değişiklikler çoğu zaman ayrıntılı planlama gereğini ortadan kaldırır. Çünkü o ayrıntılı planlar değişikliğe daha hassastır. Zaman içerisinde olabilecek değişiklikleri o yüzden çok hızlı bir şekilde geçersiz olabiliyorlar. Oturup yine ağır ağır plan yapmanız gerekiyorsa.
+
+89
+00:34:57,599 --> 00:35:09,599
+Ve bu işi sürekli tekrarlarken kendimizi görüyor olabiliyoruz diyorlar. Bunun zıttında geleneksel yaklaşım var. Onlar da diyorlar ki planlama demek, projemiz için bir yoğun haritası belirlemek demektir diyor.
+
+90
+00:35:09,599 --> 00:35:24,599
+Haritamız ne kadar ayrıntıysa kaybolma olasılığımız o kadar düşer diyorlar. İki tarafında haklı olduğu noktalar var. Bu iki yaklaşımını dengelemek üzere çevik yaklaşım da önerilebiliyor. Ön hazırlık mutlaka gereklidir.
+
+91
+00:35:25,599 --> 00:35:29,940
+Yol haritası projeye ilerledikçe belirleni yönetleştiriyor diyorlar.
+
+92
+00:35:32,751 --> 00:36:00,612
+Ben de bu türden bir yaklaşım taraftarıyım. Ama yazılım evinin çalıştığı süreçleri, yazılım geçimi süreçleri ve projenin ölçülerine göre de basitlik veya geleneksel yaklaşımına kayılabilir. Küçük ölçek hızlı değişen projelerde basitlik yaklaşımı, şelale modeliyle çalışılan daha büyük ölçeklik projelerde geleneksel yaklaşım üzerinden gitmek daha uygun olacaktır.
+
+93
+00:36:04,083 --> 00:36:11,303
+Onun dışında, uçak dışında hangisini kullanırsanız, aklınıza bulunmanız gereken bazı ilkelerden bahsederim.
+
+94
+00:36:11,743 --> 00:36:14,483
+Birincisi, projenin sınırları belirlenmelidir arkadaşlar.
+
+95
+00:36:15,043 --> 00:36:21,683
+Nereye gideceğinizi bilmezsiniz, kaybolursunuz veya başka bir değişe ne kadar ilerlemeniz gerektiğini bilmiyorsanız,
+
+96
+00:36:22,063 --> 00:36:29,083
+ya az ilerleyip yarı yorda karışsınız veyahut da gereksiz yere çöllerde kaybolup durursunuz diyebilirim.
+
+97
+00:36:29,083 --> 00:36:31,603
+Burada şu örneği vermeyi istemiyorum.
+
+98
+00:36:32,083 --> 00:36:36,743
+Eskilerden örnek, Charles Babbage'ın Analytical Engine.
+
+99
+00:36:37,300 --> 00:36:39,480
+duymuşsunuzdur. Ben daha evvel
+
+100
+00:36:39,480 --> 00:36:41,519
+BBG'ye bile girdiğimde bunu söylüyordum.
+
+101
+00:36:42,039 --> 00:36:43,420
+Charles Babacık'ın analytical
+
+102
+00:36:43,420 --> 00:36:45,600
+engine'in tamamlanmamış
+
+103
+00:36:45,600 --> 00:36:47,640
+olmasının kendi yaşamımız zamanında
+
+104
+00:36:47,640 --> 00:36:49,600
+en büyük nedeni Babacık'ın
+
+105
+00:36:49,600 --> 00:36:52,039
+nereye duracağını bilmemesidir.
+
+106
+00:36:52,539 --> 00:36:53,680
+Şu da olmalı, bu da olmalı,
+
+107
+00:36:53,740 --> 00:36:55,900
+şu da yapılabilir, bu da yapılabilir derken
+
+108
+00:36:55,900 --> 00:36:57,900
+şu özellikle olabilirdi derken
+
+109
+00:36:57,900 --> 00:36:59,780
+onlara göre tasarım yapa yapa tasarım
+
+110
+00:36:59,780 --> 00:37:01,980
+değişirle değişirle ortaya çalışabilir
+
+111
+00:37:01,980 --> 00:37:03,200
+bir ürün çıkarmamıştık.
+
+112
+00:37:03,460 --> 00:37:05,240
+Ama çıkarabilseydi
+
+113
+00:37:05,300 --> 00:37:16,780
+Belki işin teknolojilerini çok daha erken tanışmış olurdu, insanoğlu ve onun neler olabileceğine yönelik bir bilim kurgu'nun alt dılı var.
+
+114
+00:37:16,900 --> 00:37:25,780
+Steampunk diye. Hani cyberpunk'ın daha geçmişten başlayanı steampunk, buhar. O zamanlar buhar güç kullanılıyordu ya. Neyse, çok fazla dağılmıyor.
+
+115
+00:37:26,739 --> 00:37:31,340
+Planlama eylemlerinde mutlaka müşteri de müdahil olmalıdır arkadaşlar.
+
+116
+00:37:31,880 --> 00:37:40,119
+Tabii bunun nasıl yapılacağını ayrıntıları kullandığımız süreç ve her iki kurumun kültürüne göre de farklılık gösterecektir elbette.
+
+117
+00:37:40,119 --> 00:37:44,939
+Ama elbette öncelikleri, sınırları ve zamanlamalıyım işleri belirliyor.
+
+118
+00:37:45,420 --> 00:37:52,340
+Ama bu sırada gerçekliği, gerçekçiliği daha doğrusu kurumak amacıyla yazılım ekibi de kazarlık yapıyor.
+
+119
+00:37:53,972 --> 00:38:13,472
+Dolayısıyla böyle. Çünkü müşteri için ürünü hazırlıyoruz. Benim şu kadar sürede şuna ihtiyacım var diyor. Tamam hay hay. Ama o ihtiyacın o sürede gerçeklenmesi mümkün değilse ya süreyi azaltacağız ya alt fazlalara böleceğiz. Bu şekilde biz de planlarının ayaklarının yere basmasını sağlayacağız.
+
+120
+00:38:15,432 --> 00:38:18,512
+Sonra planlamanın doğası aslında yinelemedir.
+
+121
+00:38:18,867 --> 00:38:25,167
+Plan asla taşaya yazılmaz, deyim olarak söyledim. Çünkü planlar değişecektir, değişebilecektir.
+
+122
+00:38:25,167 --> 00:38:41,167
+Herbette, istesemez. Dördüncüsü tahminleme yaparken, bilgi bilikiminizi, DNA'minizi de kullanmamızı öneriyoruz. Bu bilginizin kapsamı, doğruluğu, belirginliği, netliği.
+
+123
+00:38:42,675 --> 00:39:08,395
+Nice, neteliği, neteliği, sizin yapacağınız tahminin doğruluğunu doğrudan etkileyecektir. Ve her ne kadar çıplattığım üzere değişik proje tahmin yöntemleri söz konusu olsa da, geçmiş deneyimlerden yararlanarak yapılan tahminleme de matematiksel modellere yakın sonuçlar vermektebilir. Bazı zaman daha iyi, bazı zaman daha kötü. O yüzden tecrübe önemli arkadaşlar.
+
+124
+00:39:08,880 --> 00:39:17,659
+Risk değerlendirmesi konusunu işlemiştik. Bu konuyu mutlaka ve mutlaka her aşamasına ekleyin.
+
+125
+00:39:17,659 --> 00:39:34,119
+Bir dakika, işlemiş mi? İşlememiş mi? Ben işlemiş, biraz öne çekmiş, işlemiş diye hatırlıyorum. Çünkü bu proje kapsamında yapacağımız bir şeydi. Tamam, peki.
+
+126
+00:39:37,684 --> 00:39:57,604
+Neyse, yok, evet, pekala. Sonra gelelim, şey, planlama yaparken gerçekçi de, risk yönetimleri, her aşamaya eklemek lazım, onu unutmayalım. Ve tahmin evlerimizi yaparken de gerçekçi olmalıyız.
+
+127
+00:40:00,000 --> 00:40:16,039
+Herkesin belli bir kapasitesi var. O kapasite çok çalışmayla ve güdülemeyle, belli bir nokta kadar çok bir ölçüde arttırılabilir ama hızlıklamalar olamaz, mümkün değil. O yüzden bunu da unutmamak gerekiyor.
+
+128
+00:40:19,007 --> 00:40:34,768
+Şimdi planlama ölçü önemli. İnce ayrıntılı mı planlar mı yapacağız? Yoksa ana hat, daha kaba ayrıntılı olan hatlarıyla mı planlar yapacağız? Aslında ikisini de yapmalıyız arkadaşlar. Sağ vadeli planlarımızı ince ayrıntılı olarak yapmalıyız.
+
+129
+00:40:35,668 --> 00:40:59,807
+Uzun vadeli planlamalarımızı daha genel ayrıntılarıyla yapabiliriz. Çünkü onlar zaman ilerledikçe değişme olasılıkları da arttığı için en mantıklı çözüm bu gözüküyor. Zaman ölçeğinde ilerledikçe de genel ayrıntıyla bıraktığımız noktalar ince ayrıntıya geçiririz. O anki güncel durumlara göre.
+
+130
+00:41:00,340 --> 00:41:07,420
+Karite güvence eylemlerini mutlaka tanımlı bir planlamaya eklemeniz. Yazılım karitesi konusunda onlardan bahsedilir.
+
+131
+00:41:08,280 --> 00:41:17,320
+Değişikliklerin nasıl kabul edileceği, müşteriyle sözleşmeye bağlanması iki tarafında kanunlu olarak başını en az ağrıtacak yöntemdir.
+
+132
+00:41:18,260 --> 00:41:25,060
+O konuda standartlar öneriler vardır. Zaten çift süreçlerde çalışıyorsanız da zaten bu da.
+
+133
+00:41:26,036 --> 00:41:51,155
+Bu sürecin bir geriye olarak da tanımlanmıştır. Ve plan yapılıp bırakılmıyor elbette. Sürekli izleniliyor. Planlar içinde miyiz, dışında mıyız, sapıyor muyuz? Sapıyorsak bu sapmamızın nedeni nedir? Geleksinimlerdeki zorunlu değişikliklerden kaynaklanıyorsa bu sapmalar o zaman yeniden planlamalar yapmamız gerekebilir. Bütün bu konuları göz önünde bulundurup ayarlamalar yapmamız elzemdir.
+
+134
+00:41:52,019 --> 00:42:07,460
+Evet, risk yönetiminde bu noktada gelmişiz. Yani bunu ümit ederim. Proje ödevlerinizi yüklerken buna bakarak yapmışsınızdır. Şimdi burada bir ayrıntılarını bir konuşalım.
+
+135
+00:42:09,139 --> 00:42:24,859
+Riskele uğraşmanın temel olarak iki yöntemi var. Sonradan uğraşmak ve önceden uğraşmak. Sonradan demek reaktif, önceden demek doğaktif. Reaktif yani sonradan uğraşmak, risk gerçekleşince bunun işaresine bakmak.
+
+136
+00:42:25,231 --> 00:42:29,371
+Öncelikle ulaşmak ise riskleri daha gerçekleşmeden önlemeye çalışmaktır.
+
+137
+00:42:29,811 --> 00:42:32,711
+Exploratif yaklaşımları inceleyeceğiz elbette.
+
+138
+00:42:33,231 --> 00:42:43,371
+Burada bir örnek olarak bir bina inşaatında yapılan bir binada çayacının ve işçilerin, elektrikçilerin görevlerini söyleyebilirim.
+
+139
+00:42:43,795 --> 00:43:11,795
+Diyelim ki Allah konusu olan bir binada yangın oldu ve o yangının sebebi bir elektrik altyapısında olan bir problem nedeniyle oradan bir kıvrıcılma başladıysa itfaiyeci geliyor, yangınını söndürüyor. Yani yangın gerçekleşmesi diyor. O risk gerçekleşirse itfaiyeci gelin söndürürüz. Kayıpları azaltmaya çalışır. Ama daha işin en başında o binanın inşaatı...
+
+140
+00:43:11,795 --> 00:43:30,695
+Sırasında işçiler, teknisyenler işlerini dolu yapsalardı. Kablolamayı dolu düzgün halletselerdi. Elektrikçiler sigorta ve elektrik panellerini dolu bir biçimde, dikkatli bir biçimde bağlasaydı, etseydi.
+
+141
+00:43:30,695 --> 00:43:39,795
+Bu daha en başında işin planını yapan elektrik mühendisi çeşitli simülasyonlardan geçirilseydi bu planı.
+
+142
+00:43:39,795 --> 00:43:49,975
+Ve ondan sonra müteahhit, gerekli malzemeyi, kaliteli malzemeyi kullansaydı, tüm bunları sayabiliriz, daha da şeyler söylemeyebilir.
+
+143
+00:43:50,376 --> 00:44:01,795
+Tüm bu kişiler önceden riski, varlığını bilip ona göre işlerini yatsaydı, o zaman itfaiyecinin reaktif olarak bir an önce söndürmesine gerek de kalmayacaktı.
+
+144
+00:44:07,795 --> 00:44:20,355
+İki özelliği konusunda uzlaşılmıyor galiba. Bunlardan birincisi olasılık. Yani belirli bir risk ortaya çıkabilir veya çıkmayabilir. Birisi mutlaka gerçekleşecek, yüzde yüz olası bir gerçekleşecek diye bir şey yok.
+
+145
+00:44:20,688 --> 00:44:36,728
+Ama eğer gerçekleşirse bir kayıp ortaya çıkarıyor. Bu da ikinci ulaşım özellik. İstenmeyen sonuçlar ve kayıplar oluyor. Bu kayıpların nereyi etkileyeceğine göre risk çeşitleri üçe arıyor arkadaşlar. Proje riskleri, teknik riskler ve iş riskleri.
+
+146
+00:44:37,268 --> 00:44:42,148
+Bunun farklı sınıflandırmaları var ve farklı işleme önerileri de var.
+
+147
+00:44:42,568 --> 00:44:45,068
+Serinin top verencilik, en tutun tutun tutulursunuz.
+
+148
+00:44:45,268 --> 00:44:47,087
+S&M'i önermişti.
+
+149
+00:44:47,447 --> 00:44:50,268
+ISO ve ANSI'nin önerileri var.
+
+150
+00:44:50,947 --> 00:44:56,627
+Farklı makalelerden, farklı planlardan, farklı araştırmaçlar, farklı yöntemlerinde görürsünüz.
+
+151
+00:44:56,927 --> 00:45:05,127
+Bunlardan bazıları spesifik problem alanlarını ve spesifik ekip özelliklerini ve spesifik süreç kullanımlarına gelip olabilir.
+
+152
+00:45:05,268 --> 00:45:19,608
+Eğer sizin durumunuzda bu sık durma uyuyorsa, onların dediklerini kulak kapatmanıza ve önerilerini uygulamamamızda yarar olacaktır.
+
+153
+00:45:20,068 --> 00:45:26,627
+Ve bunlar proje riskleri, teknik riskler ve iş riskleri. Bir sonraki yansıda bunların neler olduğunu söylüyoruz.
+
+154
+00:45:27,027 --> 00:45:54,188
+Proje riskleri proje planını tehdit ediyor. Ve bu tür bir risk gerçekleşirse, projenin zamanlaması daha ileri tarihlere sarkıyor ve maliyet bu nedenle artıyor. Neden? Çünkü süre uzadı. Bu projesinde çalışacak kişilere daha uzun süre maaş vereceğiz, üretileceğiz. Zaten kadrolu personelimiz olabilir. Orası aynı mesele de bu proje üzerinde baktığımızda.
+
+155
+00:45:55,027 --> 00:46:03,867
+uzadığında, o projede çalıştırdığımız iş biliminin de çalışmasını uzadığında, o projeye yönelik olarak maliyet artmaktadır.
+
+156
+00:46:05,387 --> 00:46:18,927
+Mesela, bütçe riskleri bu konuda olabilir. Şirket nakit başında sıkıntılar varsa, projemizin ilerlemesi için gelip nakit akışımı sağlayamıyorsa, proje batıyor.
+
+157
+00:46:19,539 --> 00:46:33,300
+Zaman riskleri söz konusu olabilir. Bu da test ve tahminlemeden kaynaklanan riskler çok bulunan. Personel riskleri bu çok önemli bir ayrıntı arkadaşlar.
+
+158
+00:46:33,300 --> 00:46:44,300
+Yani özellikle yazılım alanında yurt dışında da böyle, yurt dışında da böyle, yurt dışında da böyle, yurt dışında daha büyük ölçekleri belki böyle. Birlikli personel...
+
+159
+00:46:44,596 --> 00:46:51,536
+ve sahip çıkmak ve onları kurumda tutmak gitgide zorlaşıyor.
+
+160
+00:46:53,811 --> 00:47:00,471
+Gençlerin de bir hızlı iş değiştirme eğilimi ayrıca oluyor.
+
+161
+00:47:00,471 --> 00:47:14,471
+Doğa hızlı geliri. Bütün bunlar baş başa konulduğunda bu konuda ciddi ciddi uğraşması gerekiyor. Özellikle insan kaynakları ekiplerinin.
+
+162
+00:47:14,831 --> 00:47:21,471
+Sonra teknik rüzgüle gelelim. Teknik rüzgüle ise ürettiğimiz yazılımın kalitesini ve zamanda bitirilmesini...
+
+163
+00:47:21,811 --> 00:47:43,811
+etkileyen risklerdir. Ve gerçi bu riskler gerçekleşirse yazılım gerçekten zorlaşır ve hatta belki olanaksızlaşır bile. Tabi ki bu zorlaşma nedeniyle daha fazla bunun üzerinde tafa patlatıp emek alacağımız gelecek. O nedenle yazılımın zamanında bitmesi...
+
+164
+00:47:44,047 --> 00:48:07,607
+Etkilenecek, bitmemesi ortaya çıkabilecek. Yani bu proje ile karıştırmamak lazım. Proje örneklerine ayrı söyledik. Teknik riskler örnek olarak şunu söyleyelim mesela. Burada özellikle bunlar yazılım girişme süreçlerindeki analiz, tasarım, gerçekleme ve bakım aşamaları ile doğrudan ilgili riskler oluyorlar.
+
+165
+00:48:07,607 --> 00:48:12,047
+Örnek olarak ben burada son teknoloji ürünlerinin kullanımından bahsettim.
+
+166
+00:48:12,047 --> 00:48:24,747
+Belki illa son teknoloji olmak zorunda değil, bizim bu yazılım projesinde ilk defa kullanacağımız ürünler de olabilir. İlk defa kullanacağımızdan bahsedelim.
+
+167
+00:48:24,747 --> 00:48:34,747
+Eğer böyle bir kurulu, geleceği, framework'ı, her neyse ilk defa kullanıyorsak ve bu geleceğin öğrenme ehlisi de yüksekse,
+
+168
+00:48:35,123 --> 00:48:45,523
+O zaman bu projede işimize yarayabilecek bir düzeyde bu framework, gereği için öğrenmek ve kullanmaya başlamak ek bir çaba gerektirecektir.
+
+169
+00:48:45,523 --> 00:49:02,423
+Proje planında bu ek çaba için zaman ayırmış olmamız lazım. Ayırmış olsak bile öngördüğümüzden daha zor ve karmaşık olabilir ona hakim olmamız o zaman bir teknik risk devreye girmiş ve gerçekleşmiş olacaktır.
+
+170
+00:49:02,704 --> 00:49:07,444
+Son teknoloji ünlüler ise özellikle yüksek teknik risklere sahiptir.
+
+171
+00:49:07,444 --> 00:49:12,923
+Örneğin, ne kullanıyoruz?
+
+172
+00:49:17,972 --> 00:49:36,052
+Büyük veri madenciliği uygulamasında diyelim ki, genelde Apache Kafka kullanılıyor ama yeni bir açık kaynak bir ürün ortaya çıkmış, diyelim ki çok da iyiymiş, çok da yetimlik miymiş falan, hadi bunu kullanalım denilebilenir belki yeni çıktığımız falan.
+
+173
+00:49:36,052 --> 00:49:43,712
+Tamam da, acaba bu yeni çıkan framework'te çeşitli hatalar var mı?
+
+174
+00:49:44,467 --> 00:49:57,747
+yeni olduğu için bu hataların daha önce kimse farkına varmamış olabilir ve bizim projemizde ilk defa ortaya çıkmış olabilir bu hatalar. Nasıl çözülecek? Allah kolaylık versin.
+
+175
+00:49:57,747 --> 00:50:08,648
+Açık kaynak bir yazılım ise siz de çözmeye çalışabilirsiniz ama işin başında böyle problemler çıktı, biz bunu çözmeye zaman yarayacağız diye düşünmedik ki.
+
+176
+00:50:09,108 --> 00:50:27,988
+Ya da işte eğer şey olsa teknik dokumentasyonu bu kullandığımız art ürünlerin kamsa o da bir noktaya kadar bizi destekleyecek ama o dokumentasyonu okuyup anlamımız da gerekecek. Ama de şey dediğim gibi belki dokumentasyonu hiç bulamayabilirsiniz bile.
+
+177
+00:50:28,371 --> 00:50:41,511
+Sonuçta biz bir teknolojiyi tamamladık mı? Bizden ne istiyor, ne istemiyor? Biz ona uygun bir biçimde kullanıyoruz bunlara. Belki en önemli soru da yarın bu teknoloji hayatta olacak mı?
+
+178
+00:50:42,483 --> 00:50:59,064
+Diyelim ki belki bir 0.8 versiyonları çok yetenekli falan birkaç yıl içerisinde bir nokta 0 süreçliğiyle çıktı ama ondan sonra artık kimse bu projeye destek vermemeye başladı. Çeşitli başka hayat şartları falan nedeniyle. O zaman ne oldu? Kaldı.
+
+179
+00:50:59,407 --> 00:51:17,407
+Bu kullanacağımız gereksinim bakımı yapılmayacağından zaman içerisinde biz yeni turlar, teknikler kullanmak zorunda kaldığımızda o kullandıklarımızla bu son teknoloji, o zamanın son teknolojisi uyumlusu.
+
+180
+00:51:18,643 --> 00:51:26,804
+hale gelebilir. O durumda da onu artık kullanımını ithal etmek zorunda kalacağız. Boşa yaptığımız bir yatırım gibi değerlendirebilirsiniz.
+
+181
+00:51:27,860 --> 00:51:52,860
+Son olarak da işletme listlerinden bahsetmek istiyorum. Bir iki alt örneğini vereyim. Ben bu konularda çünkü çok uzman değilim. Bunlar aslında Management Information Systems ya da Master of Business Administration yani işletme masterı gibi konularda değinilen şeyler aslında bunlar. Örneğin pazar listleri söz konusu. Acaba bu ortaya çıkacağımız bir ürünün bir mevcut pazarı var mı?
+
+182
+00:51:53,460 --> 00:52:21,460
+Bu ürüne bir talep olur mu? Kullanılır mı? Kullanılmaz mı? İkincisi satış riskleri. Bizim bir pazar renkli ekibimiz varsa, çift girişimlerde bu olmuyor bile. Ama biraz daha büyük ölçekliyiz. Kobi bile olsak biraz daha büyürüz. Diyelim ki var. Ama tamam mı? Bu ekip bu ürünü nasıl satacağını biliyor mu acaba? Güçlü yönlerinden, rakiplerine göre farklarından ve orası müşterilerin nelerine...
+
+183
+00:52:21,460 --> 00:52:32,199
+kazandırabileceğinden ve görüşmeye gittiği bir müsteriye de yararlı olamayacağından yeterince bu konularda bilgisi var mı? Bilgisi olmazsa satamaz.
+
+184
+00:52:32,199 --> 00:52:43,199
+Düğünüz gibi durumlar sözler olsun. İki örnekle geçelim. Risk işleme çalışması arkadaşlar genç katılımcı ile yapılması gerekmektedir.
+
+185
+00:52:45,615 --> 00:52:59,615
+Tüm ekip tercihler, belki ayrı bir risk işleme biriminde olabilir ama bu birimde zaten genelde farklı departmanlardan kişilerin close cutting, çatlar olarak bir araya getirmesiyle oluşuyorlar.
+
+186
+00:52:59,615 --> 00:53:07,335
+Bu risk işleme ekibinin tüm üyeleri olası riskli olup ortaya çıkarsın bir risk versin.
+
+187
+00:53:08,275 --> 00:53:18,195
+Bu konuda tabii ki herkes kendi anı uzmanlık alanına giren risklerde daha fazla ortaya çıkartması ve katkıda bulunması beklenir.
+
+188
+00:53:18,643 --> 00:53:29,463
+Mesela, diyelim ki, teknik bir risk örnek olarak, canlarından daha yeni, daha düşük yeniden kullanım olasılığından bahsedebiliriz mesela.
+
+189
+00:53:29,463 --> 00:53:46,363
+Bir hedefimiz varsa, işte bu projemiz daha evvelki şu projelerimize benzediğinden, eski projelerimizdeki bir takım kodları yeniden kullanabiliriz diye farkına vardık, kullanabileceğimize farkına vardık ve bu olanında yüzde.
+
+190
+00:53:46,643 --> 00:53:49,403
+30 olacağını düşündük.
+
+191
+00:53:50,068 --> 00:54:10,048
+Aslında bu oran, uluslararası olarak da genelde maksimum fayda, maliyet açısından fayda. Ama ben şimdi kod açısından söylüyorum. Ortaya çıkacak yeni yazılım projesinin kodu yüzde otuzluk bir kısmını bizim mevcut kod tütfanyelerimizden karşılayabiliriz diye planlama yaptık.
+
+192
+00:54:18,068 --> 00:54:38,108
+Bir oranda kod yayından kullanılımını yapamayacağımızın, tahminimizin yanlış olduğunu ortaya çıkması durumunda, o zaman işte ya ekstra mesai yapacağız, ya planı öteleyeceğiz, ya başka bir şey yapacağız. Bunların mutlaka birinin yapılması gerekmektedir.
+
+193
+00:54:39,108 --> 00:54:44,708
+Kullandığımız gençlerde deneyimsizlik olabilir. Ha evet, ilk defa kullanıyorsak azaltyazı gibi.
+
+194
+00:54:45,331 --> 00:54:49,331
+Risklerin gerçekleşme olasılıkları değerlendirilmelidir arkadaşlar.
+
+195
+00:54:49,951 --> 00:54:54,051
+Re-cant ölçeğinde ister 3, ister 4, ister 5 ölçekte yapabilirsiniz.
+
+196
+00:54:54,511 --> 00:55:02,211
+Hani 3 ölçeğinde düşük, orta, yüksek 3 kategori ya da 5 ölçeğinde çok düşük, düşük, orta, yüksek, çok yüksek olabilir mesela.
+
+197
+00:55:02,211 --> 00:55:04,111
+Bu şekilde bir kategori gelin.
+
+198
+00:55:04,631 --> 00:55:07,211
+Ardından risk etki büyüklüğünü değerlendirelim.
+
+199
+00:55:07,991 --> 00:55:11,471
+Bunu da 3, 4 ya da 5 re-cant ölçeğine göre yapabilirsiniz.
+
+200
+00:55:12,980 --> 00:55:36,519
+Sonra her riskin bir de ID'si olsun ve bu bilgilerden bir tablo yapıldı arkadaşlar. Şöyle bir şey olacak şimdi, sonraki sahneye geçelim. 9 tane risk belirlemişiz diyelim ki bu tablomuzda. Her bir riskin adı var. Ne türden bir risk, işte plaj riskin, teknik riskin, iş riskin etkisi ne düzeyde olur?
+
+201
+00:55:37,108 --> 00:55:50,668
+Yani bize ortaya çıkaracağı zarar küçük büyük orta demişiz. 3 ölçekli yapmışız. Peki gerçekleşme olasılığı nedir? Bunu da 3 düşük orta yüksek şekli yine 3 ölçekte yapmışız.
+
+202
+00:55:50,668 --> 00:56:04,708
+Tabloyu oluşturduktan sonra bir eksen olasılık ekseni, bir eksende etki zarar ekseni olacak şekilde grafik çizelim ve bu grafiğe bahsettiğimiz riskleri ID'leriyle yerleştirelim.
+
+203
+00:56:05,108 --> 00:56:12,488
+Bunları yerleştirdikten sonra bu grafik dört ayrı aks bölmeye ayrılmış oluyor.
+
+204
+00:56:12,488 --> 00:56:15,927
+Tam gerçekleşme olasılığı en yüksek.
+
+205
+00:56:18,260 --> 00:56:33,000
+Hem de gerçekleşirse bizim zararı çok olacak olan şu 9 numaralı risk, daha doğrusu bu bölgedeki riskler, sağ üst alandaki riskler mutlaka ve mutlaka izlenmelidir arkadaşlar.
+
+206
+00:56:33,715 --> 00:57:01,575
+Sol alt kaşıdaki riskler hem gerçekleşme olmasını düşük gerçekleşirse de pek canınızı yakmayacak olan risklerdir. Şunun gibi riskler, bu bölmedeki riskler. 4-7-8 de öyle. Bunları ise hiç izlemeyelim bile arkadaşlar. Çünkü risk işler izlemede ayrı bir proje etkinliğidir. Ayrı bir üstünde çaba harcanması gerekir. Ayrı bir emek harcanı. Bu nedenle burada harcadığımız çaba.
+
+207
+00:57:01,715 --> 00:57:03,935
+bize yeterince
+
+208
+00:57:04,916 --> 00:57:32,175
+Avantaj sağlamayacaktır, yeterince geri dönüşü sağlamayacaktır. Hani deyin vardır ya, attığın taş ürküttüğün kurbaya değmiyor. İşte o da onun gibi bir durum oluyor. Onlara hiç bakmıyoruz bile. Ama diğer köşelerdekini duruma göre, hem sizin projenin durumuna göre, hem yazılım evinin durumuna göre, hem müşterinin durumuna göre değişik etkenlerle işlemeyi de seçebiliriz, işlememeyi de seçebiliriz.
+
+209
+00:57:32,916 --> 00:57:54,456
+Mesela gerçekleşme olası yüksek ama etkisi küçük olsun. Ben bunu gözlerim diyorsanız o zaman işleyemezsiniz mesela sağ alt köşeye. Öteki taraftan sol üst köşeye bakarsak gerçekleşme olası düşük ama bir gerçekleşirse çok canımızı yakacak dediğimiz riskler var mesela.
+
+210
+00:57:59,699 --> 00:58:11,519
+Mesela finansal durumumuz peki değilse, bu yazılıma başarılı olup oradan elde edeceğimiz satış gelirlerini hayatımıza sürdürmemiz için ve yeni projelere bahsederlememiz için mutlaka ihtiyacımız varsa.
+
+211
+00:58:11,952 --> 00:58:25,312
+Teknik riskleri yüksek bir projeyse vs. vs. bu gibi durumda değerlendirip ya şu boğazılık ama gerçekleşirse biz bu öldürürlerdiyse o yüzden izleyeceğiz diyebilirsiniz mesela.
+
+212
+00:58:25,312 --> 00:58:39,932
+Ama demeyebilirsiniz de size kalmış. Bu bağlamda bu grafiği oluşturduğunda hangi riskleri izlemeyi artık seçtiyseniz onların her biri için tek tek ayrıntılı risk.
+
+213
+00:58:39,952 --> 00:59:04,652
+Bilgi sayfaları oluşturulmalı. Nasıl olabilir bunlar? Her riskin ID'si var dedik ve adını yazalım. Sonra gerçekleşme olasılığını ne belirlemişiz, etkisini ne belirlemişiz, türünü ne belirlemişiz onları bir yazalım. Bu riski biraz açıklayalım diyelim ki, örneğin firmamız sadece yazım geliştiricilerinde olan şirketi kadro ile çalışmaktadır. Ortaya çıkacakacağımız yazım piyasada epey bir sayıda artan. Devamlısı. Peki.
+
+214
+00:59:05,204 --> 00:59:15,704
+Acaba bu riskin gerçekleşmeye yüz tuttuğu, yaklaştığı, büyük olasılıklarda gerçekleşeceğinin işaretleri, sinyalleri neler olabilir?
+
+215
+00:59:16,184 --> 00:59:27,444
+Onları mutlaka belirleyip yazalım ki risk yönetimi kapsamında bu proje yönetimi kapsayan bir etkinliktir dedik ve bu sırada bu göstergeler gerçekleşmeye başlamış mı, başlamamış mı?
+
+216
+00:59:27,444 --> 00:59:33,204
+Mutlaka izlemeliyiz. Gerçekleşmeye başlamışsa da o zaman bir sonraki bölümdeki önlemlerimizi...
+
+217
+00:59:33,204 --> 01:00:00,000
+Almalıyız. İki tane işaret belirlemişiz. Biri diyor ki mesela, müşteri adayları ile görüşmediği dinleyicilerin ilgisiz kaldırması ve biz zaten X'ını kullanıyoruz. Neden sizi seçerim? Bütün yorumlarının çok gelmesi gibi. Bu biraz objektif aslında veya başka nedenlere de dayanabilir. O gün mesela sizi dinleyen kişinin belki başka bir kişiden sorunu vardı, şu vardı, bu vardı. O yüzden belki ilgisiz kaldı. Yoksa ürünü beğenmişsiniz.
+
+218
+01:00:00,000 --> 01:00:22,559
+İkincisi ise daha objektif bir ölçüt, bir işaret. Bakım aşamasının ilk 6 ay süresince önümüzün kendisini amorti etme oranının yüzde ellinin altında kalması. Bakın çok net. Süre belli, miktar belli, oran belli, her şey belli.
+
+219
+01:00:22,996 --> 01:00:32,996
+Biz de mesela burada planımızı yaparken bu yazılımın bir sene içerisinde kendisini tamamen amorti etmesini ve bundan sonraki yapacağımız her saat için bizi kâle geçirmesini planladıysak eğer...
+
+220
+01:00:33,907 --> 01:00:50,647
+Ortalama bu bir senenin yazısı olan 6 aylık bölümde de amorti olanında yaklaşık yine yarı yarıya %50 olmasını bekleriz. Bu noktaya kadar geldik. Ya da ilk 3 aylığa döndüğümüzde de %25 olacak mesela.
+
+221
+01:00:50,647 --> 01:01:01,907
+Eğer bu bir senede %100 ulaşma hedefimizden çok geride kaldıysak o zaman hemen bu önlemleri hayata koymak.
+
+222
+01:01:03,411 --> 01:01:31,411
+Sırası gelmiştir. Bakın, daha hedefe ulaşmadık. Hedefe ulaşma yolunda kontrol ediyoruz. Yoksa ara hedefe ulaşamadık, şu an bir şeyler yapıyoruz. Bu reaktif değil arkadaşlar. Bu aktif bir planlama yöntemiyle ve sürekli takip ile gidiyoruz. Peki ne olmuş olabilir önlemler? Bir programcımıza MBA yaptınız mesela akşam saatlerinde. Buna katılmasına eczemiyorum. Saftalı bir gün belki sınav.
+
+223
+01:01:31,411 --> 01:01:41,751
+Parti çalışmasına üsün veririz ve belki de maddi destek de sağlarız bu MBA yapısına. Belki de mesela böyle işlemler olabilir partisi içerisinde.
+
+224
+01:01:42,324 --> 01:01:53,124
+İkinci önlem neymiş? Gereksinim mühendisliği aşamasında konu uzmanlığı olarak danışmalı hizmeti mutlaka almak. Bu önlemden bahsetmiştik, burada da hatırlanmış söylenmiş.
+
+225
+01:01:53,644 --> 01:02:02,884
+Son olarak, bir iki firmaya da pilot uygulama yapmak ve bu firmalara ürünü özel indirim ile satmak. Burada da aslında bir kazan kazan durumu söz konusudur.
+
+226
+01:02:03,572 --> 01:02:20,331
+Şimdi sınama kısmını konuşurken göreceğiz. Bir ne kadar çok zor ve ne kadar farklı çıla tarafından sınanırsa ve sahada gerçek çalışma ortamlarında test edilirse olası hataların bulunma olasılığı o kadar artar.
+
+227
+01:02:20,331 --> 01:02:27,532
+Ve erken bulunma olasılıkları da daha fazla artar. Bu nedenle bu.
+
+228
+01:02:29,492 --> 01:02:54,832
+Problemlerin gerçekleşmemesiyle elde edeceğimiz tasarruf ve karının bir kısmını pilot uygulama yaptığımız müşterilerle paylaşmış oluyoruz. Çünkü çok önemli saha sonuçları, uzman kullanıcı bildirimi gibi aslında çok önemli bilgiler sunmuş olmaları bize. O yüzden bu bir kazan kazan olgusu olaraktan söylenildi.
+
+229
+01:02:57,043 --> 01:03:12,344
+Peki, bakayım. Proje yönetiminde kişi etkenleri. Bundan bahsedeceğiz, bahsederiz ama isterseniz bir ara vergiden sonra bahsedelim. Zaten 10 yaptık.
+
+230
+01:03:13,344 --> 01:03:24,423
+Neredeyse ya, şöyle. Evet, tamam. Peki. Şu noktada artık 10 dakika aramızı verelim arkadaşlar.
+
+231
+01:03:25,139 --> 01:03:34,280
+Demek oluyor ki saat 10.00. 10.00 ile 10.00 arasında 10 dakika.
+
+232
+01:15:34,355 --> 01:15:40,775
+Evet arkadaşlar, sözlerimiz doldur. İlk dakikada geçtim. Kaldığımız yerden devam edelim.
+
+233
+01:15:42,895 --> 01:15:46,895
+Kişi etkenlerine geçelim. İlk yönetimi konusunda daha sonra çıkarttık.
+
+234
+01:15:48,735 --> 01:15:57,056
+Şimdi proje yönetiminin aslında ilk dersinde söylediğimiz üzere üç ayrı konuda bilgi gerekiyor demiştik.
+
+235
+01:15:57,423 --> 01:16:04,703
+Projedeki yönetimdeki takım yöneticisi de bu konulardan deneyimli ve bilgili olmalı.
+
+236
+01:16:04,703 --> 01:16:10,103
+Tabii ki kendisi teknik ekibinin bir parçası olacağında teknik yetenekleri yüksek olmalı.
+
+237
+01:16:10,523 --> 01:16:19,003
+Ama ağırlıklı olarak insanlarla ilgili de eylemlerle bulunacağı için sosyal ve yönetimsel vesileklere de yüksek olmalı.
+
+238
+01:16:22,963 --> 01:16:49,884
+Teknik yöneticiden bahsediyoruz aslında. Proje yöneticisi konumu üstünde spesifik olarak konuştuğumuzda gerek ülkemizde gerek yurt dışında iki ayrı yaklaşım var. Birincisi teknik proje yöneticisi, ikincisi teknik olmayan proje yöneticisi. Şimdi bu ders kapsamında daha çok teknik proje yöneticisinden bahsedeceğiz fakat
+
+239
+01:16:50,292 --> 01:16:53,452
+Teknik olmayan proje yöneticileri de kullanılabilir.
+
+240
+01:16:53,452 --> 01:17:01,632
+Ve tek eşit projenin yönetimi ve izlenmesinden sorumlu olmak oluyor teknik olmayan proje yöneticisinin.
+
+241
+01:17:02,292 --> 01:17:12,532
+Mesela endüstri mühendisliği, işletme ya da işletme mühendisliği gibi konularda uzmanlık alanlarından derece almış olabiliyor bu kişiler.
+
+242
+01:17:14,623 --> 01:17:26,663
+O yazılım projesinin ya da yöneticiye yazılım projelerinin konu alanında da uzmanlık sahibi olabiliyor mesela. Diyelim ki CAD CAM yazılımları üretiyorsanız makine mühendisliği olabiliyor mesela.
+
+243
+01:17:27,663 --> 01:17:39,064
+Ve dediğim gibi bir anda bizden fazla projeyi yönetiyor. Proje yönetim süreçlerini izliyor, değerlendiriyor, takip ediyor, gerekli önlemleri alıyor vesaire gibi.
+
+244
+01:17:39,471 --> 01:17:50,111
+Bu yaklaşımı da görüyoruz. Teknik yönetici yaklaşımını da görüyoruz. İkisinin de kullanılabilmiyor. İkisinin de avantajı, dezavantajı var.
+
+245
+01:17:51,444 --> 01:18:16,024
+Teknik olmayan proje yöneticisinin getirebileceği dezavantajlar, o proje ekibinin üyesi olacak bir teknik yöneticinin özellikle teknik risk ve konulara odaklanmış olan bir kişi ve genel olarak diğer proje yönetim sürecini yönetecek, diğer proje yöneticisinin de birlikte çalışması da söz konusu olabiliyor.
+
+246
+01:18:19,444 --> 01:18:32,944
+Çok iyi birbirinden ayrı sınırlarının iyi belirlenmiş olması gerekir. Aksi takdirde yetki çatışmaları ortaya çıkar ve bu da birazdan söyleyeceğimiz üzere takım ruhunu bozan önemli bir etkendir.
+
+247
+01:18:34,804 --> 01:19:01,183
+Meydan verilmemesi gerekmektedir. Teknik yöneticiden bahsedelim. Teknik yönetici, teknik ekibi istekli kılabilmelidir arkadaşlar. Ve kişilerin, yani ekibinin ve hatta ama aslında diğer paydaşlardan da bahsediliriz. Ve kullanılacak yazılım geliştirme sürecini üzerine çalışan ürün veya ürün partilisinden göre düzenleyebilmelidir. Ve bu düzenleneler Türkiye'de büyük ölçekte olabilmelidir.
+
+248
+01:19:02,804 --> 01:19:07,043
+Çevik süreçlerde epey bir konuşmuştuk. Burada çok fazla tekrarlamayalım.
+
+249
+01:19:10,304 --> 01:19:19,083
+İVİT teknik yönetici aynı zamanda her ne kadar ürün ve süreç sınırları belli olmakla birlikte ekibini yaratıcı fikirler üretmeye de teşvik edebilmelidir.
+
+250
+01:19:22,036 --> 01:19:32,036
+Yaratıcı fikirler, projede karşılaşılan belki teknik zorlukların çözünür veya hukta...
+
+251
+01:19:34,515 --> 01:20:00,000
+Olası değişikliklerden etkilenme olasılığını düşürecek şeyler olabilir. Bu biraz şeyle çelişiyor gibi olmasın. Projenin sınırları belirlenmesi gerekiyor. Reklama sadık kalınması gerekiyor. Bir noktaya kadar bu sözlerimle çelişmiyor dediğim şey. Bu yaratıcı fikirler yaptığımız çalışmayı nasıl daha verimli şekilde yapabiliriz?
+
+252
+01:20:00,000 --> 01:20:17,880
+Gibi fikirler de olabilir. Veyahut da diyelim ki gereksinimlerdeki bir noktada bir şeylerin daha iyi yapılabileceği fark ederiz ve müşteriye danışarak bunu bu şekilde çevirmek gibi öneriler de olabilir. Böyle şeylerden bahsediyoruz.
+
+253
+01:20:19,188 --> 01:20:30,188
+Takım yöneticisi, teknik yönetici aynı zamanda tabii ki iyi bir sorun çözücü olmalı. Bu sorunlar hem teknik olabilir hem de yönetimsel ya da işte insansal kişisel sorunlar olabilir.
+
+254
+01:20:31,568 --> 01:20:44,288
+Eğer o genel proje yöneticisi de varsa teknik olmayan yönetimsel sorunları o üstlenmiş olabilir. Çünkü yani gördüğünüz gibi teknik yöneticinin aslında işi yoksa peyde fazla bir şey bekleniyor kendisinden.
+
+255
+01:20:45,908 --> 01:21:04,387
+Solunumluğu kalması da gerekiyor o teknik yönetişinin. Seçtiği bir çözüm yolu tıkandığında ısrarcı olmaması da gerekiyor. O teknik sorunlara problemlere, teknik problemlere tabii ki genelde tanı koyabilmeli ve onun çözümüne yönelik uygun bir plan yapabilmelidir. Bunlar çok kolay şeyler değil arkadaşlar.
+
+256
+01:21:06,036 --> 01:21:19,115
+Görüştüğüm bir teknik yöneticinin sözlerini hatırlıyorum. Kendimi bir yandan da müşteri bir yandan da teknik ekip arasında sıkışmış bir sünger gibi hissediyorum diyor dedi.
+
+257
+01:21:19,115 --> 01:21:31,056
+Bu arada gerçekten anlayabiliyorum kendisini. Çünkü paydaşların çıkarlarının içerişebileceğini söylemiş. Müşteri çıkarları ve teknik ekip çıkarları birbiriyle içerişebiliriz kimi noktada.
+
+258
+01:21:34,036 --> 01:21:41,835
+Hızın ortaya çıkartacak şekilde çalışabilmek kolay bir iş değil arkadaşlar gerçekten.
+
+259
+01:21:43,835 --> 01:21:50,076
+Evet. Peki, yöneticiden baktık. Teknik ekibi bakalım şimdi.
+
+260
+01:21:51,636 --> 01:21:57,736
+Teknik ekip, yazılım geliştirme ekibi, her şeyden önce takım ruhuna uygun kişilerden oluşmalı.
+
+261
+01:21:58,275 --> 01:22:04,496
+Çoğu süreçlerde bu tabii çok daha önemli ama normal süreçlerde, klasik süreçlerde de önemli. Her şeyden önce bu çok önemli.
+
+262
+01:22:04,956 --> 01:22:09,676
+Takım üyeleri birbirine sahip duymalı. Ortak bir amaç ekrafında kendine bilmeli.
+
+263
+01:22:09,676 --> 01:22:18,096
+Ki o ortak amaçla nedir? Çalışan yazılımı, doğru yazılımı zamanla vaktinde müşteriye sunabilmek.
+
+264
+01:22:18,612 --> 01:22:38,652
+Bütün amaç bu. Başarısız olunacaksa bile, oturup birlikte ağlayabilmeli. Sen şöyle yaptın, ben böyle yaptım da, o yüzden böyle olduğu gibi bir suçlamak yerine. Gerekirse, başarısızlık varsa da bundan ders çıkartıp birlikte üzülebilmeli, birlikte sevinebilmeli.
+
+265
+01:22:40,051 --> 01:22:52,171
+Ve mümkünse takımları oluştururken birbirini tamamlayacak yeteneklere sahip olan işleri bir araya getirmek çok daha iyi bir çalışma biçimi ortaya koyulmasını sağlar.
+
+266
+01:22:52,595 --> 01:23:13,415
+Mesela bir kişi ayrıntılara çok önem veren, dikkatli bir yapıdayken, diğer bir kişi yaratıcı düşünme ve sadist düşünme konusunda gayet net olursa, bunlar gibilerinin zayıf noktalarına destek olaraktan ortaya daha iyi bir çalışmanın ortaya çıkmasını sağlayacağız.
+
+267
+01:23:14,100 --> 01:23:31,720
+Böyle bir şeylerden bahsediyoruz. Kimin sosyal yetenekleri, kimin yöneticisal yetenekleri, kimin teknoloji yetenekleri daha fazladır. Kimi daha yırmaz, dirençlidir, kimsiz daha en kötü vs. vs. Bu gibi sosyal yeteneklerin de birbirini tamamlayıcı olması yararlı olacak.
+
+268
+01:23:31,720 --> 01:23:33,819
+Peki.
+
+269
+01:23:35,507 --> 01:23:45,507
+Bu takım durumunu bozan etkenlerden bahsedelim de bu etkenlerin ortaya çıkmaması sağlamak üzerine düşünülebilsin.
+
+270
+01:23:46,507 --> 01:23:52,076
+Bir kere her şeyden önce telaşçı iş ortamın takım durumunu çok bozuyor arkadaşlar.
+
+271
+01:23:54,131 --> 01:24:06,451
+Ve bu aynı zamanda ikinci maddelerle de çok ilgili. Sık ortaya çıkan hayal kırıkları ve başarısızlıklar takım yerleri arasındaki sütuşmayı da arttırabilir arkadaşlar.
+
+272
+01:24:06,451 --> 01:24:15,451
+Şimdi birinci siteler şey ortamı. İşte son dakikada bir şey geldi ya da bir hata çözmeye çalışacak falan ama…
+
+273
+01:24:17,108 --> 01:24:27,468
+Bir heyecan moduyla telaş modu işin üstesinden girilir belki ama o işin üstesinden girildikten sonra ortaya çıkacak olarak zihinsel yorgunluk.
+
+274
+01:24:28,408 --> 01:24:37,448
+Onun üstünden çok kolay gelinemeyebiliriz. Daha onun üstünden girilmeden yeni bir acil problem çıktı falan derken bunu öyle yürürmez.
+
+275
+01:24:37,448 --> 01:24:44,228
+Biz robot değiliz. Bu telaş takılmığını bozar arkadaşlar.
+
+276
+01:24:45,587 --> 01:24:58,188
+Sık ortaya çıkan hayal kırıklıkları ve başarısızlıklar da hem takımın genel motivasyonu bozulur hem de takım üyeleri arasındaki sürtüşmeyi arttırır.
+
+277
+01:24:58,188 --> 01:25:08,427
+Çünkü çoğu zaman insanlar kendilerinde hiçbir kusur olmadığını düşünür ve bütün kusurları dışarıda başkalarında arar.
+
+278
+01:25:10,452 --> 01:25:13,612
+Bu takım arkadaşları da olabilir.
+
+279
+01:25:14,612 --> 01:25:19,612
+Genel bir şey söylemek istiyorum arkadaşlar. Bu bence çok önemli bir hayat dersi.
+
+280
+01:25:20,391 --> 01:25:30,252
+Eğer herhangi bir şeyde, herhangi bir olayda, olguda, kişide bir kusur, bir eksiklik, bir olumsuzluk görüyorsanız o aynen sizde daral arkadaşlar.
+
+281
+01:25:31,471 --> 01:25:32,612
+Aynen. Çünkü...
+
+282
+01:25:33,235 --> 01:25:59,296
+İnsan beyni bilmediği bir şeyi algılayamaz, bilmediği bir şeyi tanımlayamaz, o bilmekte deneyimlemekten geçmektedir. O gördüğünüz kusur aynısı ama daha az ama daha çok ölçekte sizde de var. Bunu ben dahi bütün insanlar için söylüyorum. Çünkü olay bu. Bilmediğiniz, tanımladığınız bir şeyi algılayamazsınız. Biliyorsunuz demek ki sizde de var.
+
+283
+01:26:00,127 --> 01:26:14,827
+Aklınızın bir kenarını da tutun arkadaşlar. Benim çok yararlandığım bir hayat dersi. Bu alamda düşünürsek, bunu önlemeyi şöyle yapabiliriz.
+
+284
+01:26:16,532 --> 01:26:29,372
+Şimdi diyelim ki başarılı bir ekibimiz var diyelim ki. Tam takımlı uygun kişilerden oluşmuş tamam filan. Çünkü başarılılarda, yeteneklilerde. O yüzden bütün zor işleri hep onlara veriyoruz diyelim ki.
+
+285
+01:26:39,347 --> 01:26:45,108
+Takım ruhu git git git git de uyumlu takım uyumlusuzlaşmaya başlayacaktır küçük küçük de olsa.
+
+286
+01:26:45,667 --> 01:26:59,728
+Ve bu noktada başarısızlık riski artacaktır ve başarısızlık arttıkça da o takım artık organik bir takım olarak sıkı ölmüş, sıkı renklenmiş bir takım olarak faaliyet gösteremeyecektir.
+
+287
+01:26:59,728 --> 01:27:06,728
+O yüzden en zor işleri aynı takıma vermemeliyiz. Zaman zaman o takıma o takımları atlatıcı.
+
+288
+01:27:07,347 --> 01:27:18,028
+nispeten daha kolay işleri de vermemiz gerekiyor. Çekici bile çok kullanırsız yıpranıyor. O yüzden hep aynı çekici kullanmamak lazım.
+
+289
+01:27:18,847 --> 01:27:29,648
+Üçüncü olarak doğru yönetilemeyen yazılım geliştirme süreci. Şimdi burada mesela diyelim ki
+
+290
+01:27:31,699 --> 01:27:53,879
+Klasik süreçlerde çalışıyorsunuz. İş tanımları falan hangi aşamada ne yapılacağı, nasıl yapılacağı çok belli. Fakat siz bu belli olmasına rağmen proje yöneticisi veya teknik yönetici olarak bu sürecin gerekliliklerini tam olarak yerine getiremiyorsanız,
+
+291
+01:27:56,148 --> 01:28:05,248
+Projenizde başarısızlığa uğrama olasılığınız yükseliyor ve bunun da takım yapısını, onun da etkilemesi olasılığı çok artıyor.
+
+292
+01:28:06,988 --> 01:28:10,468
+Bir sebebide şu, toparlanmış bir şey diyecektim.
+
+293
+01:28:12,659 --> 01:28:40,619
+Evet, benim klasik süreçte sıkı kontrol mekanizmaları bulunuyor. Bu kontrol mekanizmalarını yetince sıkı tutamazsanız problem olacaktır. Bir de bir süreç genelde kendi içerisindeki ana konsept ve çalışma biçimleriyle bir bütündür arkadaşlar. Bu bütün parçalar bir araya o şekilde tamamen o şekilde bir araya.
+
+294
+01:28:40,659 --> 01:29:00,180
+geldiğinde en iyi biçimde çalışmaktadır. O parçaların farklı kullanım alternatifleri önerilebilir belki. Fakat o alternatifler de yine her biri aslında o sürecin bütünü göz önünde bulundurarak farklı alternatifler önerilebilir.
+
+295
+01:29:08,659 --> 01:29:21,619
+O zaman o ona uyumayacak gibi, yani dünya reddilecek ister istemez. Bu noktada takım ruhu olumsuz etkilenecek şeylerin başında geliyor. Bu nedenle buna dikkat etmek lazım.
+
+296
+01:29:21,619 --> 01:29:33,899
+Ve son olarak, eğer takım yapısını, sorumlulukları ve zorları net olarak tanımlayamadıysak, belirsizlikler söz konusuysa, o zaman yine takım ruhu olumsuz etkilenecektir. Neden?
+
+297
+01:29:35,444 --> 01:29:51,324
+Yetki çatışmaları çıkabilir. Bu benim sorumluluğum ben yapacağım, bu benim için ben yapacağım diye sahiplenme olabilir. Veya tam tersi, ya bu benim için değil, ben niye bakayım, zaten üstünde bir dolu iş var diye kimse işlenmez yapılması gereken belli bir şeyi.
+
+298
+01:29:51,324 --> 01:29:59,463
+O ortada kalır iş. Ne zaman fark ederiz? Ulaşı aksamaya başlıyor. O altındaki şeyler aksamaya başlıyor mu?
+
+299
+01:30:00,000 --> 01:30:09,680
+O zaman proje yönetiksin ancak sana denk gelip, bak bu iş kimsinin içinden büyük, o zaman sen şu şey atıyorum gibisinden karar verip o iş o zaman yürütülür ama araya gider geçmiş.
+
+300
+01:30:09,680 --> 01:30:23,000
+Boş zaman satılması ki bu da bizim için aşırı lütf zaten zamanlaması ve problemleri altına çalışıyoruz. Bir de böyle şeylerle boşuna vakit harcamayalım demek istiyorum.
+
+301
+01:30:24,920 --> 01:30:25,619
+Bunlar bunlar.
+
+302
+01:30:27,956 --> 01:30:31,576
+Şimdi bir de takım yaklaşımlarına da inelim.
+
+303
+01:30:36,979 --> 01:30:55,899
+Bir takımı kurarken, 4 yaklaşım var arkadaşlar, son yaklaşımda da bir tane var. Birinci yaklaşım, kapalı yaklaşım. Bu işte şelale süreci gibi geleneksel süreçlerle çalışırken kullanılması en doğru olan şey. Geleneksel bir yetki hiyerarşisi var ve geleneksel kontrol mekanizmaları var.
+
+304
+01:30:56,756 --> 01:31:14,456
+Bu çalışma biçimi geçmiş deneyimlere benzer projelerde o başarının tekrarlanması açısından epey başarılı bir yapı oluyor. Fakat dezantıcı ise yaratıcı fikirler ortaya çıkarmak için uygun değildir.
+
+305
+01:31:18,176 --> 01:31:31,256
+Gerek bizim için, gerek ülke için veya akademik camia için bir yenilik ortaya çıkartacak, çıkartması beklenen, hedeflenen bir proje ise o zaman orada kapıda yaklaşım işe yaramak mı aktardır?
+
+306
+01:31:31,376 --> 01:31:46,156
+Çünkü yaratıcılığı ve ARGE projelerinin doğası olan belirsizlikleri getirecekleriyle baş etme için onu engelleyen bir yapısı vardır, uluşmayan bir yapısı vardır. Sonra dikkat etmek gerekmektedir.
+
+307
+01:31:46,176 --> 01:31:57,136
+İkinci yaklaşımımız rastgele yaklaşım, random. Sabis bir yaklaşımdır bu. Takım üyeleri bireysel ve teknik yetenekleri göre kendi aralarında biliyor.
+
+308
+01:31:57,503 --> 01:32:23,884
+Tabii bunu yapabilmeleri için birbirlerinin tamamlayacağı niteliklerinin ne olduğunu iyi bilmeleri durumda, durumundalar, zorundalar bunlar. Bu çalışan ölçümeyi, yaratıcı fikirleri ortaya çıkarmak için en uygun yaklaşım oluyor. Fakat bir disiplin düzen elde etmek rol olabiliyor bu noktada da. Yani kapalı yaklaşımın tam spektrumun öbür tarafında kapalı yaklaşıma göre bu rastgele yaklaşım.
+
+309
+01:32:25,967 --> 01:32:44,108
+Kapalı ve rastgele yaklaşım yol arasında kendini konulandırmaya çalışıyor. Böylelikle işte optimize etmek şeyinde, iddiasında ama yani diyelim ki her takım, her projeme, her ekip, her firma için uygun olmuyor haliyle. Yoksa herkes öyle çalışıldı.
+
+310
+01:32:45,007 --> 01:32:53,967
+Açık yaklaşımda çeşitli kontrol mekanizmaları var elbette ama yapılanma kısmı serbest. Daha çok demokratik bir yapı sunuluyor.
+
+311
+01:32:53,967 --> 01:33:10,407
+Yani bir karnaşık bir program ortaya çıktığında bunun çözümü için çok uygun bir yaklaşım. Çünkü bu demokratik yapıda son söz, yani söz ağırlıklı olarak proje yöneticisinin değil, herkese soruyor arkadaşlar.
+
+312
+01:33:21,967 --> 01:33:38,467
+7 kişilik takım, proje yöneticisi ve 6 kişi, 3-3 oy verildiği bir konuda. Artık eşitliği kıracak şey, takım yöneticisinin oyu olacak durumda gibi yöntemler kullanılabilir.
+
+313
+01:33:39,467 --> 01:33:49,456
+Böyle bir demokratik yapıdan bahsediyoruz. Ama bu çalışma enliçinde de verimliliği, etkinliği sağlamak zor oluyor. Çünkü farklı görüşlerin…
+
+314
+01:33:49,456 --> 01:34:03,916
+sahibi olanlar diyelim ki bu görüşlerini savunmada o kadar ısrarcı ve istekli oluyorlar ki ve bir türlü de karşı tarafın görüşününle ilgili bir herhangi bir uzlaşmaya da bağırıyorlar.
+
+315
+01:34:03,916 --> 01:34:17,456
+Konuşuluyor da konuşuluyor, konuşuluyor da konuşuluyor arkadaşlar. Böyle bir noktada takım yöneticisinin artık kifayeti müzakere yani bu tartışmalarının artık yeterli olduğu, kafi oluyor.
+
+316
+01:34:17,456 --> 01:34:33,956
+Her açının aslında dile getirdiği, şimdiki konuşmanın ise aynı açıların tekrarlanması şeklinde olduğu nedeniyle kifayeti müzakere deyip kendi tiebreaker oyunu kullanabilir veyahut da işte o şekilde ilerleyebilir.
+
+317
+01:34:35,336 --> 01:34:43,996
+Ona da teknik yöneticiye çok işleşiyor. Bunu her zaman yapamayabilir de. O yüzden bu açık yaklaşımda verimliliği sağlamak biraz zor.
+
+318
+01:34:46,131 --> 01:35:10,611
+Son olarak, eş zamanlı yaklaşım. Yalnız bu her zaman uygulanamıyor tabii ki. Rapid application, de o noktada kullanılabilen bir yaklaşım bu. Problemin takımın süre düşen bölümünün alt parçalarla ayrılması ve her bir alt parça üzerinde ekibin ayrı bir alt kümesinin çalışması şeklindedir. Alt takımla arasında eş geçimler müspeten azdır.
+
+319
+01:35:12,532 --> 01:35:25,492
+Her problemi uygulamayacağı için sadece bu şekilde çalışıyoruz diye bir şey yok. Red, Rapid Application Network konusundaki belirttiğim o sürecin avantaj ve dezavantajları burada da geçerlidir arkadaşlar.
+
+320
+01:35:26,420 --> 01:35:52,920
+Ve takım içinde ve takımlar arasında iletişim, haberleşme, koordinasyon nasıl olacak? Onlardan da bahsederim. Gerçekten olarak biliyorsunuz da resmi yollar ve gayri resmi yollar söz konusunda resmi haberleşmede veya resmi gözden geçirme, resmi diğerlerle bir şey resmi ise yazılımlar bir sürü bağlamında bu iş yazı ile yazışarak yapılmaktadır. İlla kağıt kalem olarak düşünmeyin. E-mail de olabilirsin. O da bir yazı.
+
+321
+01:35:54,420 --> 01:36:05,180
+Mesajlaşmalar zamanlıdır ve kurallıdır. Bu yazılım sinemasındaki beta testindeki kurallardan bahsetmiştik mesela onun gibi.
+
+322
+01:36:05,939 --> 01:36:23,259
+Belli bir form üstünden belli bir protokolle göre yapılıyor. Ve aynı zamanda zamanlanmış toplantılar ile yapılıyor. Şu gün şu saattir, şu gündemde kullanılacak deniliyor mesela. O şekilde gidiyor. Hepsinin bir kuralı kaydısı var resmi yollarda.
+
+323
+01:36:23,615 --> 01:36:33,395
+Gayri resmi yollarda ise sözlü yetişim tercih ediliyor. Kişisel etkileşimler de yapılıyor genelde ve gün içerisinde ne zaman ihtiyaç olduysa o zaman yapılabiliyor.
+
+324
+01:36:33,755 --> 01:36:44,576
+Ve sadece ihtiyacı olanların katıldığı bir haberleşme veya toplantı olabiliyor bu. Bunu da içerik süreçler konusunda konuşmuştuk. Çok fazla burada tekrarlamaya gerek yok.
+
+325
+01:36:48,212 --> 01:36:56,672
+Eğer sorunuz yoksa ya da paylaşmak istediğimiz bir şey yoksa bu noktada proje yönetiminde ölçüm konularına geldik. Daha sonlardan bahsedelim.
+
+326
+01:36:56,672 --> 01:36:58,132
+Şimdi sorunuz yoksa.
+
+327
+01:37:03,667 --> 01:37:28,728
+Neredeyiz bakalım? Şöyle bir hatırlayın. Biz de. Burada tam yazılım ölçüklerine gelmedi. Kalite avanlığında ölçüklere geleceğiz. Bir bakalım. Bu maliyet tahminiYazılımda, bu ders tahminiYazılımda belki bitiririz. En azından bugün proje yönetimi mutlaka bitirmiş oluruz. Sonra kalite ölçüklere geliyor ve o daha son konumuz oluyor. Tamam, pek güzel.
+
+328
+01:37:33,203 --> 01:37:33,724
+Evet.
+
+329
+01:37:38,163 --> 01:37:39,123
+Evet, şu noktayız.
+
+330
+01:37:43,123 --> 01:37:59,463
+Şimdi, proje yönetimi bağlamına baktığımızda ölçüm erkenlikleri aslında iki alt kılınımda incelenebilir. Birincisi projenin ölçümü, ikincisi sürecin ölçümü.
+
+331
+01:38:00,051 --> 01:38:14,671
+Proje ölçümü, proje ilerlemesinin ve proje çıktısı olacak yazılımın ölçülmesidir. Bu da kendi içerisindeki ayrı alt kılınımdır. Bunu önümüzdeki saatte veya haftada inceleyeceğiz.
+
+332
+01:38:16,500 --> 01:38:44,180
+Burada odamız teknik düzeyde oluyor ve amacımızda iç kalite ölçütlerini yüksek tutmak oluyor. Kalite kısmında bunu tekrarlayacağız, söyleyeceğiz esas. Şimdi burada biraz kamik yumurta şeyi var arkadaşlar. Yani proje yönetiminde ölçme önem taşıyor. Ölçmede de proje yönetiminle ilgili bilgiler önem taşıyor. Ölçmeyi daha evvel bahsetsek, bu sefer hani risk yönetiminin anlatılmasını epey sarkıyor falan.
+
+333
+01:38:44,500 --> 01:39:02,200
+İkisini bir araya tam karıştırarak versek de konuları o zaman biraz çorba oluyor. O yüzden bunun en verimli şekilde şu sırada şöyle anlatılığı yok. O yüzden böyle gerektikçe ileri geri referanslar vererek veya ön bilgi vererek de anlatmak şeklinde tercih ettik.
+
+334
+01:39:02,200 --> 01:39:12,500
+İç kalite ölçütleri demek arkadaşlar, yazılımı gerçekleştiren ekibin yazılımı kodlayan ortaya çıkaran ekibin ilgi alanlarına yönelik.
+
+335
+01:39:12,500 --> 01:39:21,800
+İç kalite bileşenleri demek. Dış kalite ölçütleri ise o yazılım kullanıcılarını ilgilendiren kalite özellikleri demek oluyor.
+
+336
+01:39:22,239 --> 01:39:33,560
+Dış ölçümünde amacımız iç kalite ölçütlerini yüksek tutmak. Kullandığımız yöntem ise yaptığımız ölçümlerin sonuçlarına göre yazılım geliştirme ekibini daha ilgiye doğru yönlendirmek.
+
+337
+01:39:33,560 --> 01:39:36,920
+Bu proje ile ilgili ama. Hatırlatayım.
+
+338
+01:39:37,427 --> 01:39:46,467
+İkincisi ise süreç ölçümü. Yazılım geliştirme sürecinin ölçülmesidir. O dağımız yönetimsel düzeydedir. Amaçla dış kalite ölçütlerine yönelik.
+
+339
+01:39:46,467 --> 01:39:59,387
+Yaptığımız işle şu oluyor. Kullandığımız yazılım geliştirme sürecinin bu üstüne çalıştığımız projedeki geçirdiği sürecin tüm aşamalarında istatistikler tutacağız.
+
+340
+01:40:00,000 --> 01:40:02,260
+istatistiklerinden yorumlayarak
+
+341
+01:40:02,260 --> 01:40:04,260
+anlamlandırarak teknik ve
+
+342
+01:40:04,260 --> 01:40:05,920
+yönetimsel açıdan süreçlerimizi
+
+343
+01:40:05,920 --> 01:40:07,359
+iyileştirmeye çalışacağız.
+
+344
+01:40:07,979 --> 01:40:09,340
+Örneğin diyelim ki
+
+345
+01:40:09,340 --> 01:40:12,100
+hata bulma etkinliğimiz
+
+346
+01:40:12,100 --> 01:40:12,739
+düşükse
+
+347
+01:40:13,203 --> 01:40:29,043
+Ondan bahsediyoruz mesela. O zaman bu etkinliği yükseltmek için otomatik test case oluşturma ve yönetimi yazılımlarına incelemek ve bunlardan birini kullanmaya başlamak gerekir.
+
+348
+01:40:31,731 --> 01:40:49,291
+Veyahut da işte kral yazışma prosedürümüzde bazı kritik hatalara geri dönüşler aksıyorsa o zaman mesela hataları için bir önem düzeyi derecelendirmesi ve dereceye göre farklı.
+
+349
+01:40:52,404 --> 01:41:00,044
+Kaba emek ve geri dönüş zamanı ayrılmasına bir yöntem uygulama bilinir belki mesela örnek olalım.
+
+350
+01:41:00,864 --> 01:41:08,804
+Nerede aksadığımızı keşfedip, istatistiksel bir yeri inşallah bu aksadığımız yeri iyileştirmeye yönelik çalışmaktır.
+
+351
+01:41:11,084 --> 01:41:19,264
+Bu da aslında CMM'deki 5. düzey optimized çalışma yöntemi için söylediklerimiz de paralel şeyler.
+
+352
+01:41:23,220 --> 01:41:33,899
+Evet, şimdi kaliteyle ilgili, ya bu arada şu göğün çubuğu da çok enteresan bir bazen üstte kalın ve tekrar sunumdan geçir bakayım. Tamam, oldu, göğün çubuğunu kapatabildik.
+
+353
+01:41:35,119 --> 01:41:40,220
+Evet, şimdi amacımız evet orta kaliteli bir yazılma ortaya çıkarmak.
+
+354
+01:41:44,220 --> 01:41:50,560
+Onunla ilgili epey konuşmayacağız ama kaliteyi etkileyebilecek olgulardan bir bahsedelim.
+
+355
+01:41:50,960 --> 01:41:58,460
+Onun en iyi yeri burada bahsetmek oluyor. Birincisi kitleler. Zaten odak noktamız kişilerdi hatırlarsınız.
+
+356
+01:42:00,039 --> 01:42:05,800
+Çalışanların yetenek ve istekliliği en önemli etken, kaliteyi olumlu ya da olumsuz etkileye.
+
+357
+01:42:07,283 --> 01:42:32,884
+Ondan sonra ürün geliyor. Ürünün karmaşıklığı kaliteyi ister istemez olumsuz etki edebilecektir. Çünkü karmaşık, çünkü zor. Yani karmaşık olduğu için zor. Zor olduğu için de hata yapma olasılığı yüksek. Hatalar da çoğaldıkça ve işler güçleştikçe hatadan bahsettikçe onu söylüyorum. Takımın maneviyatı, morali azarabilir.
+
+358
+01:42:33,471 --> 01:42:49,831
+Buna dikkat etmek lazım. Ya işte alt parçalarla bölük görevi dağıtacağız. Veyahut da işte dediğim gibi aynı takımın aynı zor işleri vermeyeceğiz gibi. Üçüncü olarak teknoloji.
+
+359
+01:42:50,547 --> 01:43:10,528
+Kullandığımız yazılım geliştirme araçları ve donanım birleşenlerinin kalitesi, ürünün de kalitesini doğrudan etkileyecektir. Ne gibi kalite ölçülerinden bahsediyoruz? Olgunluktan bahsediyoruz, yeterlilikten bahsediyoruz, etkinlikten bahsediyoruz, eğitimsel belgeler gibi dokumentasyondan bahsediyoruz.
+
+360
+01:43:14,355 --> 01:43:24,675
+Yani acaba kullandığımız yazılım geliştirme araçları ve doğalim bileşenleri bizim projemizin sterlerini karşılamaya yönelik yeterli düzeyde mi bunlar?
+
+361
+01:43:26,475 --> 01:43:33,215
+Karşılıyor, biliyor olurlar ama ne kadar verimli bir biçimde karşılıyorlar, etkinlik geliyor işin işlerisine.
+
+362
+01:43:33,655 --> 01:43:39,755
+Az çabayla çok iş yapabiliyor muyuz? Yani işlerimizi epey kolaylaştırabiliyor mu bu geliştirme? Çok kolaylaştırmıyoruz. Anlamı yok.
+
+363
+01:43:40,307 --> 01:43:49,828
+İşte öğrenebilmek için, üstüne çalışabilmek için, eğitimsel belge edecektik, dokumentasyonu tamlamamız konusunda geçen ders saatinde söylemiştik. Aynı konusla bunlar.
+
+364
+01:43:50,927 --> 01:44:00,028
+Dördüncü orta çevresel koşullar söz konusu. Aslında çevresel koşulları yukarıda bahsettiğimiz üç etkenden biriyle ilişkilendirebiliriz.
+
+365
+01:44:00,384 --> 01:44:05,564
+Ama ayrı başlı başına da bir etken ailesi olarak inceleyebiliriz.
+
+366
+01:44:05,984 --> 01:44:11,503
+Örneğin, müşterinin özellikleri projenin kalitesini doğrudan etkileyecek.
+
+367
+01:44:11,864 --> 01:44:15,724
+Müşterinin iletişim yeteneği, işbirliği yeteneği gibi özellikleri.
+
+368
+01:44:28,384 --> 01:44:38,123
+Kolay iletişim kurabilen, verimli bir iletişim kurabilen insanlarla çalışıyorsak bu süreçler o kadar hızlanacak ve verimli olacaktır.
+
+369
+01:44:38,484 --> 01:45:06,423
+İçbirliği yeteneği çok önemli. Madem her ikisi çeşit süreçlerde çalışıyorsak müşteri sürecin içerisinde ayrılmaz bir parçası. Ama acaba o parça yeterli verimlilikle, yeterli düzeyde katkı sağlayabiliyor mu? Bizimle yeterince işbirliği yapabiliyor mu? Kenetlenmiş bir yazılım takımımız varsa o takımla birlikte hareket edebiliyor mu? Yoksa yolumuza taş mı koyuyor?
+
+370
+01:45:06,484 --> 01:45:11,984
+Bu çok önemli bir bileşen kalite için.
+
+371
+01:45:13,971 --> 01:45:18,971
+Ama tabii ki mesela bu söylediklerimi direkt kişilere de etkiyi yedirebilirim.
+
+372
+01:45:19,791 --> 01:45:27,271
+Çünkü yani bu müşteri de bir kişi, o da bir parça, o da bir kişi. O yüzden oraya ilişkilendirebilirim.
+
+373
+01:45:27,331 --> 01:45:33,931
+Ya da çevresel koşullarda hep kendi kategorizasyonunu da yapabilirsiniz. Değişik kişilerin değişik görüşleri var bu konuda.
+
+374
+01:45:34,651 --> 01:45:41,971
+İş koşulları mesela, çevresel koşullar, şirket kültürü, iş akış kuralları, filmin maddi olan...
+
+375
+01:45:41,971 --> 01:45:52,571
+FİLMA'nın personel memnuniyetini attırma ve personel kaybını önleme konusunda yaptıkları.
+
+376
+01:45:52,951 --> 01:45:56,971
+Şimdi bunu yine personel dediğimiz için kişileri şey edebiliriz.
+
+377
+01:46:01,971 --> 01:46:05,031
+Vesade. Bu kadar tartışmak yeterliyim.
+
+378
+01:46:05,460 --> 01:46:13,119
+Ve madem işte ölçümler yapacağız köşeyi yönetirken, burada üç ayrı ölçü toplama düzeyinden bahsedebiliriz.
+
+379
+01:46:13,279 --> 01:46:18,059
+Ve bunların hangi, nereye özel, nereye açık olması lazım, onlardan konuşalım.
+
+380
+01:46:18,519 --> 01:46:23,800
+Birincisi bireysel düzey. Bireysel düzey ölçüden kişiye özel olmalıdır.
+
+381
+01:46:24,404 --> 01:46:47,944
+Takım düzeyi ölçüler takıma özel olmadır. Proje düzeyindeki ölçüler ise tüm çalışanlara özel olmalıdır. Yani bireysel ölçüler sadece o kişi tarafından ayrıntılı bilmelidir. Bir başka bir eleman, diğer başka bir elemanın bireysel ölçülerini, ölçüm sonuçlarını görmemelidir.
+
+382
+01:46:52,404 --> 01:47:14,463
+Bir astım ölçütlerinin izleyebilmesi de önemlidir ve yarar sağlayacaktır. Ama denk olan, hierarşik kategoride denk olan, farklı takımların denk olan kişilerin farklı taraflardan bahsediyorum. Birbirlerinin ve çalışanların ölçütlerini de görmemesi gerekmektedir.
+
+383
+01:47:15,284 --> 01:47:20,364
+Takım düzenindeki ölçütleri, o takımın A takımındaki her çalışan.
+
+384
+01:47:20,404 --> 01:47:27,844
+A takımının takım düzeyi ölçülerini görebilmiyor ama B takımının çalışanları, üyeleri A takımın ölçülerini görememeli.
+
+385
+01:47:28,204 --> 01:47:37,944
+Öyle şeylerden bahsediyoruz. Burada ölçüler kesinlikle insanları utandırmak, ölmek veya hediye etmek amacıyla kullanılmamalı arkadaşlar.
+
+386
+01:47:38,384 --> 01:47:48,244
+Proje planına sadık mıyız? Proje kalite dair hedeflerimize sadık mıyız? Aksiyorsak da nereyi desteklemeniz lazım? Şeklinde yapıcı bir bakış açısı gereklidir.
+
+387
+01:47:48,404 --> 01:47:58,204
+Örnek olarak, bireysel vize ölçek olarak yazılan bin satır kod başına bulunmuş hata sayısı diyebiliriz.
+
+388
+01:47:58,204 --> 01:48:03,144
+Şimdi hangi görevi kimin yazdığı belli, hangi kod farkındasının kimin yazdığı belli.
+
+389
+01:48:05,235 --> 01:48:31,235
+Böyle baktığımızda, eğer herkes birbirinin bu ölçüm sonuçlarını biliyorsa, yani işte bin kısatır koltuğu başına gerçekleşen hata sayısı, bu belki de ne kadar beceriksizsin, en çok hata senden çıkıyor, sen bize ayak bağlı oluyorsun vesaire vesaire gibisinden, gerek denkleri tarafından, gerek...
+
+390
+01:48:32,020 --> 01:48:42,520
+Üst amiri tarafından böyle umutlanma potansiyeli de var. Bunların önüne geçmek için bu sıradaki insanı utandırmak öyle bir atlet teknik olmamalı.
+
+391
+01:48:43,220 --> 01:48:53,980
+Ve sosyal yetenekleri de yüksek olan teknik yönetici bu durumun kök nedenini çok iyi araştırabilir ve çözebilmelidir.
+
+392
+01:48:55,731 --> 01:49:21,452
+O hata oranı çok yüksek olan kişi, belki en yetenekli, en deneyimli, en akıllı kişimiz. O yüzden buna hep zor problemleri atıyoruz. Veyahut da ona hep zor kodlama görevlerini veriyoruz. O yüzden de o zorluklu orantılı olarak o kişinin belki bin satır başına karşı düşen bulunan hata sayısı oranı daha yüksek.
+
+393
+01:49:23,731 --> 01:49:41,752
+İlgelenmesi lazım. Böyle bir değerli kişiye sen şöylesin, böyle bir şey diye haksız ithamlarda bulunup, o takım doğunu bozup takımdan ve daha da kötüsü şirketten kaybetmeyelim. Zaten zor çözüm elemanlar demiştik ya. Bütün bunlardan dikkat etmek lazım.
+
+394
+01:49:42,163 --> 01:49:53,663
+Ölçüm önemli, izleme önemli ama ölçümlerin görünülü güzeyi de çok önemli ve ölçüm sonuçlarıyla neler yapılacağı da çok önemli arkadaşlar.
+
+395
+01:49:55,764 --> 01:50:02,264
+Şimdi nihayet bir tane proje yönetim ölçütü, freç ölçütü önerebiliriz mesela.
+
+396
+01:50:05,444 --> 01:50:07,824
+Bu bahsettim, hata sayısı.
+
+397
+01:50:08,724 --> 01:50:18,724
+Şimdi bu kod satırıyla ilişkilendirmeden dinlediyoruz. Önemli olan hataları tabii ki bakım aşamasından önce bulmak.
+
+398
+01:50:19,507 --> 01:50:40,147
+Önce bulunanlar çok daha rahat verimli kolay biçimde düzeltilebilirken sahaya çıkmış yazılımda hata düzeltmek çok daha zor olmaktadır. Hatırlayın. Bu nedenle bakım aşamasına geçmeden önce bulunan hataların sayısı ve sonra bulunan hataların sayısı ayrı öneme sahip oluyorlar. Bu bağlamda mümkün olduğu kadar önce bulmaya çalışacağız.
+
+399
+01:50:47,507 --> 01:50:51,047
+yapıyoruz. O aynayla bir tane ölçüt, proje ölçüt önelim.
+
+400
+01:50:51,859 --> 01:51:15,800
+Hata gider mi etkinliği olsun. H, G, Eşittir. T, Ö, Gülü, parantez içerisinde T, Ö, A, T, S. T, Ö, ürünün müşteriyi tesliminden önce bulunan hatası. T, Ö, teslimden önce. T, S, teslimden sonra, yani bakım aşamasında bulunan hata sayısı. Böyle baktığımızda teslimden önce ve sonra bulunan hatalar toplam bulunan hatalardır.
+
+401
+01:51:19,859 --> 01:51:25,859
+Hata sayısı ortaya çıkıyor. Burada testinden önce sayısı ne kadar yüksek ise,
+
+402
+01:51:26,771 --> 01:51:48,651
+Bu keserin de etkinlik düzeyi olarak %100'e daha yakın, daha iyi olması ile orantılı. Öteki türünü de testinden sonra bulunan hataların artması ise paydayı arttıracağından daha küçük etkinlik sonuçlarının çıkmasına yol açmaktadır.
+
+403
+01:51:50,260 --> 01:52:08,980
+Bu da T ve TS yerine. Eğer klasik süreç kullanıyorsak, işte gereksinim, analiz, tasarım falan gibi aşamalar. Eğer çevik süreç kullanıyorsak ise her bir sonraki iteras yolumuzu çevremizi örnek verebileceğiz.
+
+404
+01:52:09,712 --> 01:52:37,612
+A adım 1 ve adım i ve adım i artı 1 şeklinde olabilir. Yani testinden sonra demektense bir adım rondan önceki, sonraki adım şeklinde de düşünebilirsiniz. Örneğin A i çözümlemede bulunan hata sayısı, A i artı 1 ise tasarımda bulunan hata sayısı ise çözümleme hata giderme etkinliği eşitir.
+
+405
+01:52:37,712 --> 01:52:43,052
+Aİ bölü, parantin içerisinde Aİ artı A, Yartı 1 olmuş olmaktadır.
+
+406
+01:52:45,524 --> 01:53:01,504
+İçinde bulunduğumuz projede bu hata giderme etkinliklerini her aşama için hesapladıysanız eğer, bu etkinlik eğer azalma yoluna gidiyor eğilimine girmişse o zaman onu yetiştirmek için önlemler alınabiliriz.
+
+407
+01:53:03,384 --> 01:53:13,524
+Mesela işte yazılıma daha fazla zaman, yazılım sınavısına daha fazla zaman ayırmak, ekstra iterasyon ayırmak, biraz daha fazla geriye doğru regresyon.
+
+408
+01:53:13,524 --> 01:53:27,944
+testi yapmak falan gibi şeyler düşünmenebiliriz. Olaylar bunlar. Diğer dispatel, subjektif olabilecek birkaç daha diyeyim ondan sonra galiba ara veririz.
+
+409
+01:53:28,384 --> 01:53:36,564
+Doğruluk eşitlik bulunan hata sayısının proje boyutuna oranı. Böyle bir doğrultuktan bahsediyoruz. İşte line of code burada devreye giriyor.
+
+410
+01:53:37,084 --> 01:53:41,024
+Line of code başına şey hata sayısı bir tür doğruluk ölçü olarak kullanılabilir.
+
+411
+01:53:41,684 --> 01:53:55,304
+Bakım kolay da önemli. Bir hatanın bulunması ile giderilmesi arasında geçen zaman, o bütün hatalar için yapıp ortalama sağladığımızda ne kadar kolay bakabildiğimizi söyleriz bu yazılım.
+
+412
+01:53:55,304 --> 01:54:05,224
+Ama tabii ki bakım işlemini yapacak olan ekibin niteliği de bu konuda önemli konuşlar doğuruyor elbette.
+
+413
+01:54:07,604 --> 01:54:17,724
+Geçmiş projelerdeki bu bakım kolaylığına bakarken bakım kolaylığı iyi yüksek çıkmışsa belki bunun nedeni bakım ekibinin yetenekli olmasıdır.
+
+414
+01:54:19,144 --> 01:54:27,844
+Aslında çok kolay bakım yapabilecek bir ürün olmayan yerde. Bununla ilgili ise ayrı deryadeniz ölçümler, akademik çalışmalar söz konusu.
+
+415
+01:54:28,564 --> 01:54:39,704
+Bu güvenlik, işte bulduğumuz güvenlik açıkları, bu açıkların ciddiyet düzeyi gibi veriler üstünden ölçüm yapılar yaparak da güvenlik ölçümleri de yapabiliriz.
+
+416
+01:54:40,044 --> 01:54:49,364
+Ve diğer dış kalite ölçütleri söz konusu olabilir ki onların işlemler olduğunu biraz da ölçütler konusunda inceleyeceğiz.
+
+417
+01:54:50,707 --> 01:55:02,028
+Ve aynı bu, az önce bahsettiğim, örneğin DSR ölçütleri, takım izleyi ölçütleri gibi, süreç ölçütlerinin kullanımı da bir amaç değil, araç olmalı arkadaşlar.
+
+418
+01:55:02,028 --> 01:55:14,247
+Ve şirketin boyutu ve hatta proje boyutu ile bu ölçüm için ayrılan çabanın boyutu bir orantılı olmalı.
+
+419
+01:55:14,560 --> 01:55:27,800
+Küçük ölçekli bir projede çok yüksek hata eklema işlemlerini yapmamız mesela anlamsız olmaktadır gibi.
+
+420
+01:55:28,380 --> 01:55:31,460
+Veya olduğunda o sayıların yüksek çıkma olasılığı yok.
+
+421
+01:55:31,600 --> 01:55:36,899
+Çünkü projemiz büyük ama eleman sayımız nispeten küçük.
+
+422
+01:55:36,899 --> 01:55:38,979
+İki şey sana zorunluğumda alınacak.
+
+423
+01:55:40,212 --> 01:55:57,092
+Ve her ölçü, her proje için ve her ekip için ve her yazılım geliştirme süreci için uygun değildir. Ayrıca bir kere kullanılan programlama yaklaşımı da bu konuda bir söyleyeceği söz vardır. Ona dikkat edinmelidir. Örnek.
+
+424
+01:55:57,844 --> 01:56:08,844
+Depth of Meritance 3 diye bir ölçütümüz var, kalıtım ağacının verilmeli. Bu geçen seneki dersimizde, bu kalıtım ağacının çok verilmektedir.
+
+425
+01:56:08,844 --> 01:56:19,844
+Bu kalıtım ağacının çok verilmektedir. Ama eğer bu kodumuzda yazılımla kullanarak yazılmasını tutamadan orada kalıtım yok. O zaman o ölçümü nasıl yapacağız anlamı olmayacak.
+
+426
+01:56:19,844 --> 01:56:24,844
+O yüzden bu ölçütleri belirlememiz ve kullanmamız gerekiyor dedim.
+
+427
+01:56:25,268 --> 01:56:41,787
+Bu konuda S&P'nin ve S&P'nin önerdiği bazı ölçüt geliştirme yaklaşımları var. İlerine arkadaşlar bu olmalara bakabilirler ama tabii çok daha farlısız başkası da var. Bu dediğim gibi başlı başına bir uzmanlık alalım.
+
+428
+01:56:42,095 --> 01:56:54,675
+Ve süreç iliştirme modellerini devreye sokup ölçümü o şekilde proje yönetimiyle ilgili yapıyorsak, daha başka ölçüleri kullanılması istesemez gerekebilecektir.
+
+429
+01:56:56,815 --> 01:57:00,996
+Bu kısmını bırakalım, bir on dakika arayı hak edecek demek istiyorum.
+
+430
+01:57:01,456 --> 01:57:07,576
+Mali tahmin yöntemleri nispeten biraz daha ayrı bir konu bunlar da. O yüzden on dakika aramızı verelim.
+
+431
+01:57:09,171 --> 01:57:13,491
+Bu da demek oluyor ki saat 10.55 diyelim.
+
+432
+01:57:14,371 --> 01:57:15,311
+Açamadım bütün.
+
+433
+01:57:16,311 --> 01:57:24,211
+10.55 ile 11.05 arasında 10 dakika.
+
+434
+01:57:25,111 --> 01:57:29,091
+10.53, 11.53 olmuş olacak ama neyse.
+
+435
+02:10:41,908 --> 02:10:49,348
+Evet arkadaşlar, son biraz saatimize de başladık. Başlayalım.
+
+436
+02:10:54,963 --> 02:11:04,024
+Mali tahmin yöntemleri diyeceğiz. Çok kolay olmadığını söylemiştim. Şimdi biraz bazılarını ayrıntılı inceleyelim.
+
+437
+02:11:08,692 --> 02:11:28,891
+Bu ister belli bir müşterinin isteğine yönelik olarak hazırladığımız yazılım projelerinden bahsedelim. İster çeşitli büyük oyuncuların yazılım ihalelerine girme açısından düşünelim. Acaba bu yapacağımız iş ya da yapımız istenen iş bize ne kadara mal olursa?
+
+438
+02:11:29,460 --> 02:11:47,243
+Birilerin süre ve diğer istatörler çerçevesinde ki ona göre bir yazı nevi olarak elbette bir ticari kulumuz ve kar etmek istiyoruz. Başka türlü hayatta kalmayabiliriz. Bu alanda bir projeye altına girerken, üstlenirken ya da...
+
+439
+02:11:48,819 --> 02:12:03,899
+Bunun üzerine ne kadar maliyet olacağını bilmemiz lazım ki ona göre teklif verelim. Veyahut da pazarı açacağımız zaman bu ürün kendisini amort etme süresi de önemli. Bu anlamda masrafımız ne olacak?
+
+440
+02:12:05,171 --> 02:12:24,811
+Belki plünün ne fiyat konumunu ne göre? Biz nasıl fiyatlandıracağız ve buna göre ne noktada başa baş geleceğiz gibi hesapla firmalar için kritik önüme sahip. Bu nedenle ne kadar iyi tahminleme, kestirme yapabiliyorsak o kadar avantajlıyız demek istiyorum.
+
+441
+02:12:29,460 --> 02:12:36,979
+Tabii ki %100 hassasiyete ulaşamayabiliriz ama hiç yapmamaktan daha iyi.
+
+442
+02:12:39,619 --> 02:12:44,420
+Hassasiyetimizi tahmin doğruluğumuzun mümkün olduğu kadar yukarıya çekmeye çalışacağız.
+
+443
+02:12:44,739 --> 02:12:46,760
+Bu da bilgi ve deneyimle oluyor arkadaşlar.
+
+444
+02:12:47,279 --> 02:12:55,880
+Eski bilgi ve deneyim sonuçlarına bakarak da bundan sonraki tahminlerimizi daha iyileştirmemiz mümkün oluyor.
+
+445
+02:12:56,564 --> 02:13:09,003
+Bu amaçla geliştiren çeşitli tahmin yöntemleri var. Bunlardan bazılarını inceleyeceğiz bu bölümde. Bilirkişi takdiri, DELF yöntemi, analiz yöntemi ve istatistiksel modeller göreceğiz.
+
+446
+02:13:09,003 --> 02:13:17,003
+Bunun hakkında birkaç kişiler süre geliyor. Bilirkişi takdiri yani Export Estimation.
+
+447
+02:13:18,068 --> 02:13:31,268
+Birlikçe takdiri daha önce tamamlamış olduğumuz ve maliyetiyle bitirme süresinde bildiğimiz projelerle şu an tahminlemelerde bulunacağımız projeyle karşılaştırmak yoluyla yapmış oluyoruz arkadaşlar.
+
+448
+02:13:32,148 --> 02:13:38,068
+Tabii ki eski ve yeni projenin maliyet kalemlerini bilirip bunlar arasında görülen farkların...
+
+449
+02:13:39,347 --> 02:13:50,628
+Oransal yüzdelerini de bulup, üzerinde bulundurup, buna göre bu proje şu kadar masrafı ve şu kadar reye mal olacaktır diyebiliriz.
+
+450
+02:13:51,028 --> 02:14:07,788
+Buradaki tahminin pahalarını arttıran en önemli şey, ilkişilerin deneyimi sahibi olmaları ve iki projeler arasındaki farklılıkları net doğru gerçekliği biçimde hesaplamaları. Bu iki art birleşenler ne kadar iyiysek tahminimizde o kadar hassas olacaktır.
+
+451
+02:14:13,108 --> 02:14:33,268
+Dersi yöntemimiz de var. Bu bilikçi yöntemiyle birlikte kullanılabiliriz belki. Ve aslında sosyal bilimlerde kullanılan bir anket değerlendirme yöntemi bu dersi yöntemi. Fakat bir proje takdiri, yani proje süre kestirme, belirlenmesi için de uyarlanmış hali de var. Bu bağlamda biz onu göreceğiz.
+
+452
+02:14:33,747 --> 02:14:46,587
+Bir koordinatör yönetiminde, bir ekibi tarafından birkaç kez tekrarlanan yazılı bir kestirin takdirleme yöntemidir bu. Daha çok kişinin o bir işin içerisinde olmalısı.
+
+453
+02:14:50,195 --> 02:15:04,815
+Tek kişiye bağımlı olmaktan çıkarıp, bu nedenle daha yüksek hata olasılığına sahip olmaktan çıkarıp, daha çok kişiye bağlayarak hata düzeyini aşağıya indirmektir esas fikir.
+
+454
+02:15:05,376 --> 02:15:07,115
+Peki de bir yöntem uygulanıyor.
+
+455
+02:15:07,551 --> 02:15:20,391
+Koordinatör bir kişilere sistem tanımlama belgelerini ve tahmin formunu veriyor. Sistem tanımlama yani software, requirements, specification, O, NU, şartlar ne, gereksinimler ne.
+
+456
+02:15:24,148 --> 02:15:27,707
+Ve tahminlerini sonacak.
+
+457
+02:15:28,127 --> 02:15:35,568
+Bilir kişiler birbirinden bağımsız ve habasiz olarak tahminlerini nedenleriyle birlikte koordinatöre iletiyor.
+
+458
+02:15:35,908 --> 02:15:47,108
+Bu nedenlerle ilgili önceki projelerdeki benzerlikler, farklar, neyin değiştiği, hep bu gibi şeyler ve yönelik açıklamalar yapıyorlar tahmin sonlarında.
+
+459
+02:15:47,108 --> 02:15:52,148
+Ve bu tahminler bilir kişiler toplam.
+
+460
+02:15:52,148 --> 02:16:08,768
+Koordinatörü de toplanıyor. Şimdi eğer tahminler birbirine yakınsa problem yok. Bunların ortalaması bizim tahminimizdi diyebiliriz. Fakat aykırı tahmin sonuçları varsa, outlier diye tahmin söyleniyor.
+
+461
+02:16:08,768 --> 02:16:20,087
+Diyelim ki beş kişi değerlendiriyor bunu. Bir kişi altı ay dedi, bir kişi beş ay dedi, bir kişi de yine altı ay dedi. Fakat bir kişi söyledi.
+
+462
+02:16:20,148 --> 02:16:47,007
+Dördüncü kişi bu dokuz ay süre diyor. Bir kişi de bu üç ayda biter diyor. Şimdi bu üç ve dokuz sayıları ortalamadan uzak. Biraz aykırı diyarlarına göre. Fakat kendince gerekli şeyler olan bir tahmin. O zaman koordinatör diyor ki, şimdi ortalama tahmin şu çıktı ama şöyle ortalama daha yüksek tahmin de geldi.
+
+463
+02:16:47,540 --> 02:16:52,520
+Bu bilgiler ışığında lütfen tahminlerinizi revize edin diyor koordinatör.
+
+464
+02:16:53,020 --> 02:16:55,620
+Eş değerlendiricisi de tahmini revize ediyor.
+
+465
+02:16:56,760 --> 02:17:03,060
+Eğer yani burada daha yakınlaşması tahminin birbirine yakınlaşması beklenir.
+
+466
+02:17:03,300 --> 02:17:05,760
+Ama yakınlaşmamış da olabilir tekrar sorunur.
+
+467
+02:17:06,360 --> 02:17:08,080
+Bu ne kadar sürecek?
+
+468
+02:17:09,080 --> 02:17:12,580
+Ortak bir değere yaklaşıncaya kadar bu iş sürecek.
+
+469
+02:17:13,043 --> 02:17:31,863
+Hepsi herkesin ortalaması. Çünkü bir noktada eğer sadece fazla tahmin şeklinde altıları ayırılarsa, o zaman onların gerekçeleri, onun gerekçesiyle daha ortalama olan gerekçeleri, belki o yüksek tahmin edenin aklına gelmemiştir ortalama tahminiyle.
+
+470
+02:17:31,863 --> 02:17:41,004
+Ya da tam tersi. Nihayetinde bir taraf yerine verir. Böylece ve ortada uzlaşılan ortak noktaya gelir.
+
+471
+02:17:41,043 --> 02:17:53,903
+Herkesin aynı sonuç temizleni de gerek yok. Belirli bir oranda yakınlaması yeterlidir. Mesela %10. Bunu da koordinatör karar verecektir.
+
+472
+02:17:57,747 --> 02:18:24,667
+Analiz yöntemimiz var. Bu analiz yukarıdan aşağı, şöyle diyelim, yukarıdan aşağı, evet ama aşağıdan yukarıda geri dönüşü var. Analiz yöntemi iki ayrı açıdan analiz işlemi yapar. Birincisi ortaya çıkacak ürünü, ikincisi bu ürünü üretme biçimimiz, yani teknik işlerin yapacağı faaliyetler.
+
+473
+02:18:25,268 --> 02:18:47,387
+Ürünü veya işlemi, üretimi, hiyerarşik olarak alt öğelerine giriyoruz. Öncelikle, yani yukarıdan aşağı doğru kriterlerini alt bileşenme ayırıyoruz. Daha sonra en alt öğelerden başlayıp, yukarı gide gide bunların ne kadar süreceğini veya kaça maal olacağını biriktirerekten ilerliyoruz.
+
+474
+02:18:47,387 --> 02:18:53,268
+Örneğin, ürün analiz kartında bunun alt dalları, girdi sistemi, değiştirme artı sistemi ve çıkartılığı.
+
+475
+02:18:53,268 --> 02:19:08,007
+Çıktı artı sistemi, girdi artı sisteminin altında veri okuma modülü, veri yapıları artı sisteminin, değiştirme artı sisteminin altında veri denetimi ve sayar sonuçları, kod sistemi, çıktı artı sisteminin denkli bir artı sonu birleşimi yokmuş.
+
+476
+02:19:13,567 --> 02:19:23,867
+Ne kadar sürede tamamlanacağı? Bu ikisinin toplamı, oku modülü ve veri yapılan modül art sisteminin toplamı, girdi sisteminin yeni oluşturacaktır.
+
+477
+02:19:24,187 --> 02:19:34,367
+Ama bunlardan ek olarak bounce yapılacak bir şeyler varsa o da ayrıca eklenir tabii ki adetle. Böylece en aşağıdan yukarıya doğru maliyetleri toplayarak ürün maliyetini buluruz.
+
+478
+02:19:34,968 --> 02:19:38,887
+Benzer bir süreçle üretim analiz kararası için de yürütürüz.
+
+479
+02:19:39,283 --> 02:19:57,583
+Orada nedir? Proje yönetimi geliştirme, yani kodlama, sınama, servisler, tümleşme olabilir, tümleştirme olabilir veyahut da bundan veri alacak başka servislere veri açışı olabilir ki o yayın oluyor.
+
+480
+02:20:06,324 --> 02:20:13,364
+Karşılaşacağınız hataları şu dev seviyelerine göre en çok şu kadar sürede çözüleceği garanti edilir.
+
+481
+02:20:13,364 --> 02:20:33,364
+Ondan sonra şu kadar senin içerisinde çıkacak o işletim sistemleri veya programlama dilik platformla, örneğin Java kullanırsak, 18, 19, 20 gibi veyahut da .NET kullanırsak, 3.9, 4.9 gibi bu yeni ürünlere karşı 2 sene uyumluluğun bulunacağı.
+
+482
+02:20:34,324 --> 02:20:49,963
+Proje yönetiminin üretim faaliyeti albette ne adrileşenleri var? Planlama ve inceleme, yani izleme, inceleme. Geliştirme aşamasının ne? Tasarım, kodlama ve
+
+483
+02:20:50,420 --> 02:21:02,000
+Bilim sınavları. Bilim sınavlarını sınavaya almış da, geliştirmeye almış. Çünkü onu kodlayan kişi tarafından yatılıyordu ya, testleri öncelikle olarak. O yüzden geliştirdim aslında.
+
+484
+02:21:02,719 --> 02:21:11,659
+Idea yanındaki sınava atlalının birleştirme sınavları. Yani integration testing, onlardan bahsediyoruz.
+
+485
+02:21:17,716 --> 02:21:23,515
+Doğlamama ve geçerleme testinde geçerleme testleri bunlar ve kabul testleri haline tabii ki.
+
+486
+02:21:23,956 --> 02:21:31,536
+İkinci sıradaki alt ikinci düzey kılın servisler, yayın ve bakım onu en güzel söylenmiş olup, garantiyle söylenmiş olup.
+
+487
+02:21:31,536 --> 02:21:34,536
+Bunların maliyetleri ve veya...
+
+488
+02:21:35,924 --> 02:21:48,463
+Panalanma sürelerindeki tahminler, değerler toplanarak da üretim ve ürün maliyet ve süreleri proje ise bu ürün ve üretim toplamları şeklinde söylenir.
+
+489
+02:21:51,664 --> 02:21:57,004
+Evet, her alt basamaktaki ürünün giderleri takdir edilir ve yukarıya doğru toplamları alınır.
+
+490
+02:21:57,407 --> 02:22:06,867
+Gider takdir ederken Neo-Jell-Line of Code anlamına geliyor. PP'de Function Point anlamına geliyor arkadaşlar. Birazdan göreceğiz bunları.
+
+491
+02:22:07,867 --> 02:22:16,967
+Ve kişi ay ölçülerine dayanılmaktadır. Şu kadar line of code olduğu için veya şu kadar Function Point yani büyüklüksel ölçüler bunlar.
+
+492
+02:22:16,967 --> 02:22:25,407
+Bu büyüklüksel ölçülere göre şu kadar kişimiz var. Bu nedenle şu kadar kişi ay halinde.
+
+493
+02:22:25,407 --> 02:22:34,887
+O kadar kişimiz, şu kadar kişimiz varsa, kişi ayı kişiye böldüğümüzde, şu kadar sürecek şeklinde tahminleme ortaya çıkmaktadır.
+
+494
+02:22:35,476 --> 02:22:43,776
+Gider kalemlerini geçmiş projelerde gerçekleşen gider ortalamalarını alarak, ondan yalananarak gidebiliriz.
+
+495
+02:22:44,556 --> 02:22:49,156
+Veya işte DERF yöntemini de burada alt yöntem olarak kullanabiliriz bu noktada.
+
+496
+02:22:49,976 --> 02:23:02,695
+Ve ortaya çıkacak toplam çaba aslında, eğer herif birden fazla tahmin varsa ve bunları DERF ile birleştiremiyorsak, birleştirmemize gerek de yok aslında.
+
+497
+02:23:04,884 --> 02:23:23,283
+En kötü tahmini bir ağırlıkla alıyoruz. En ilimsel tahmini de bir ağırlıkla alıyoruz. Daha ortada kalan tahminlerin ortalamasını ise, ya da üç tahminimiz varsa ortada kalan tahminin ağırlığını da dörtle ediliyoruz. Bunları hepsini toplayıp da altıya bölüyoruz.
+
+498
+02:23:23,283 --> 02:23:32,884
+Yani dikkat ederseniz altıları ayırlar, bir bölü altı ve bir bölü altı olabilir etkiliyor. Ortalama tahminleri ise dört bölü altı olanlar olabilir.
+
+499
+02:23:32,884 --> 02:23:46,903
+Bu konuda etkiliyor. O çıkartacağımız tahmin sonucu. Bunun ardından çeşitli istatistiksel modeller geliyor arkadaşlar. Onlar hakkında da birkaç dört soru vermek lazım. Örnekler de göreceğiz.
+
+500
+02:23:49,920 --> 02:24:04,799
+Evet, şunu bitirelim, bitirmemiz lazım ki ya haftaya ya da başka bir ek dersle şu ölçüde konusunu da bitirelim. Evet, peki. İstatistik sağır modellerdeyiz.
+
+501
+02:24:11,731 --> 02:24:26,891
+Statistik modelleri, ana hatlarıyla doğrudan ölçemeyeceğimiz bir değeri, ki burada ne kadar mal olacağını yazılımın ve veya süresi ne kadar süreçte biteceği konusu, doğrudan ölçemiyoruz.
+
+502
+02:24:27,391 --> 02:24:32,331
+Bunu, ölçülebilen bağımsız bir değişken ya da değişkenler yardımıyla,
+
+503
+02:24:32,703 --> 02:24:47,644
+kestirmek amacıyla kurulmuştur. IH'tir fx şeklinde fonksiyonlar bu şekilde ve yazılım proje tahmininde ise genelde a çarpı x üzeri b şeklinde bir üstü bir fonksiyon modeli genelde kullanılıyor.
+
+504
+02:24:49,123 --> 02:24:56,144
+Burada bağımsız değişkenimiz olacak x neler olabilir, neler kullanılabilir x için?
+
+505
+02:24:56,755 --> 02:25:21,835
+Tahmini kiloline of code satırı olabiliriz. Porsiyon noktası ölçütü olabiliriz. Proje süresi olabiliriz. Maliyet kestireceksek, orada süre yeterince uygun bir bağımsız değişken ulu. Ya da iş hacmi de olabiliriz.
+
+506
+02:25:25,396 --> 02:25:37,656
+Bu noktada neyi kestireceğiz? İş harcımını kestirebiliriz. Ama tabii ki iş harcımı kestirmek için varımlı değişik olarak iş harcımı kullanılmaz tekrar tabii ki. Farklı şeyler kullanmamız gerekiyor.
+
+507
+02:25:37,656 --> 02:25:49,316
+Proje süresi. Yani süreyi kestirecekken de süreyi kullanmamız anlamsız ama çabayı hesaplayacaksak süreyi kullanmamız mantıklı bağlı değiştirme olarak da.
+
+508
+02:25:49,695 --> 02:25:58,376
+Belgi sayfası proje yönetiklik dokumentasyonu ve son kullanıcı yönetik dokumentasyonu olacak. O kullanılabiliniz ondan sonucuna.
+
+509
+02:26:00,376 --> 02:26:04,355
+Ve hacim kilolayınıfkortu süremiş. O da tekrar kullanılabilmiyor.
+
+510
+02:26:07,956 --> 02:26:25,076
+Peki, A, B bunlar nereden belirlenecek? Bunun belirlenmesi için daha evvel tamamlanmış olan, gerek kendi şirketimizdeki projeler, gerek bu şekilde veri kaynağı siteleri var, Kaggle gibi mesela.
+
+511
+02:26:25,076 --> 02:26:35,076
+Ama Kaggle'ımız kıtan daha eski zamanlarda bununla ilgili çalışmaları yapan pirimsyan veya uygulayıcıların...
+
+512
+02:26:35,956 --> 02:26:46,195
+Yayınladığı rakamlar verilerden, o verilerden yola çıkarak o verilere bir eğri, bir fonksiyon uydurmaya çalışıyoruz.
+
+513
+02:26:46,195 --> 02:26:54,296
+Bu şekilde A ve B katsayıları hesaplanmış oluyor. Bunun için de çok sık kullanılan bir yöntem en küçük kareler yöntemidir.
+
+514
+02:26:54,935 --> 02:27:01,536
+Arkadaşlar, bunu herhangi bir istatist kitabından bakabilir. Bu da ayrıntısına gireceğiz.
+
+515
+02:27:03,059 --> 02:27:23,159
+Örnek bir iki statistiksel model, bir tanesi Walston Felix mesela. Walston Felix, 60 aylık yazılım projesini inceliyorlar. Bu yazılım projeleri 4.000 satır koddan 467.000 satır kodakada değişen aralıkta hacimde bunlar bu projeler.
+
+516
+02:27:23,731 --> 02:27:41,412
+Oradan, onların gerçekleşme değerlerinden aşağıdaki formülleri çıkarmışlar. Demiş ki, iç hacmi, yani adam ay, kişi ay ya da ayda kişi anlamında hacim, hacim eşittir 5.2 çarkı, kilolay nasıl kod üzeri 0.91. Bu arada basit.
+
+517
+02:27:41,971 --> 02:27:59,711
+Bu arada şu da var. Şimdi, Watson Felix bu katsayıları önermiş, o yazılım projelerini incelediğinizde. Biz daha evvel başarıyla tamamladığımız projelerin değerlerinden yola çıkaraktan da farklı katsayılar belirleyebilirsiniz.
+
+518
+02:28:02,611 --> 02:28:24,451
+Proje süresi için ne öneriyor? 4.1 çarpı kilolaynaf kod üzeri 0.36 veya iş hacmini hesapladıysanız 2.47 çarpı hacim üzeri 0.35. Peki kaç kişi gerekecek? İş gücü tayyibimiz ne olacak? 0.4 çarpı hacim üzeri 0.06 şeklinde kapatatsak.
+
+519
+02:28:26,324 --> 02:28:38,404
+Kapıtasak değil mi aslında? Ve hazırlanması gereken belge hacmi sayfa sayısı cilsinden ise 49 çarpı kilolay noktaları 1,01 şeklinde ortaya çıkmış.
+
+520
+02:28:39,184 --> 02:28:49,084
+Tabi dediğim gibi buradaki katsayıların hepsi sizin kendi firmamızdaki geçmiş projeler anlamında incelendiğinde bu sayılar olmak durumunda değiller.
+
+521
+02:28:49,444 --> 02:28:53,764
+En küçük karar yönteminde kullanarak siz de kendi katsayılarınızı ilerleyebilirsiniz.
+
+522
+02:28:54,484 --> 02:29:00,244
+Benzler başka şeyler de var ama hepsi A çarpı, BX-ZLB olduğu için çok fazla didiklemeye gerek yok.
+
+523
+02:29:00,564 --> 02:29:05,064
+Biraz daha farklı bir şey olarak da Kokomo ve Kokomo 2'den bahsetmek istiyorum size.
+
+524
+02:29:06,264 --> 02:29:14,524
+Tamam, function pointler de sonraki dersle haftaya, yani şeyde, yazılım ölçüde konusunda geçiyor, değil mi?
+
+525
+02:29:14,664 --> 02:29:16,824
+Hatırlayamayacaklar mı? Evet, sonra.
+
+526
+02:29:22,100 --> 02:29:32,780
+Evet, Kokomo. Kokomo'nun açılımı arkadaşlar, Constructive Cost Model. Yani oluş...
+
+527
+02:29:32,915 --> 02:29:50,595
+Yapıcı bir biçimde yapıcı maliyet modeli diye bir şekilde çevirebiliriz. Bunun üç ayrı basamak halinde versiyonu var. Temel kokumu, orta kokumu, ileri kokumu şeklinde. Biz temel kokumoyu inceleyeceğiz.
+
+528
+02:30:00,000 --> 02:30:04,760
+Fazla serbest değişken denecek. Onu da biraz ayrım planından bahsedeceğiz.
+
+529
+02:30:06,420 --> 02:30:13,439
+İleri kokumada ise, kullanılan yazılım gelişme sürecinin her aşaması için ayrı ayrı özel fonksiyonlar kullanılıyor.
+
+530
+02:30:13,439 --> 02:30:24,239
+Eğer şelale metodu kullanıyorsak, gereksinim analizi, analiz, tasarım, kodlama, sınama, tek tek aşamalar için bakım saymayabiliriz.
+
+531
+02:30:24,540 --> 02:30:30,739
+Tek tek her aşama için ayrı ayrı özel fonksiyonlar bile içerisinde o kadar abartmeyeceğiz konuları.
+
+532
+02:30:31,020 --> 02:30:33,299
+Ama temel ve ortak okumayı inceleyelim.
+
+533
+02:30:33,551 --> 02:30:42,811
+Şimdi temel kokumu, kilolaynılık koda dayanarak iş hacmini tahmin ediyor. Oradan yola çıkarak da proje süresini hesaplıyor.
+
+534
+02:30:43,379 --> 02:30:56,779
+Hacim eşittir A çarkı, kirli olaynaf kod üzeri B ve süreli eşittir C çarkı, H yani hacim üzeri D. Peki bu kat sayıları nasıl bulmuş? 63 ay yazılım projesinin sonuç değerlerine bakmış.
+
+535
+02:31:02,896 --> 02:31:13,056
+Farklı görüşleri orta noktada toplamaya çalışmış. Buna göre farklı yazılım ürünleri için farklı değerler ortaya çıkarmış.
+
+536
+02:31:13,576 --> 02:31:19,116
+Bakın ilk derste konuştuğumuz farklı yazılım türlerinin bir etkisi olarak da bu geliyor.
+
+537
+02:31:19,476 --> 02:31:25,036
+Ben de son derece mantıklı çünkü dediğim üzere farklı yazılım türlerin farklı öner ihtiyaçları olduğunda
+
+538
+02:31:25,811 --> 02:31:31,811
+Bunların maliyet tahminleri farklı kat sayılar dışından yapmak en doğrusu olacak.
+
+539
+02:31:35,891 --> 02:31:53,992
+Demiş ki bu an, temel kokumada, genel application software uygulama programları için, hacim eşitliği 2.4, yani 2.4 şart kilo, line, off code, 1.05 ve zaman ise 2.5 şartı, bu hacim üzeri 0.38 demiş.
+
+540
+02:31:54,611 --> 02:32:20,151
+Çeşitli utility gelişler, yardımlı programlar için 3 çarpı kilolaynaf kod üzeri 1,12 ve zamanda 2,5 çarpı H hacim üzeri 0,35 demiş. Sistem yazılımları için ise 3,6 kilolaynaf kod üzeri 1,20 ve şeyde zamanında 2,5 çarpı H hacim üzeri 0,32 demiş.
+
+541
+02:32:20,852 --> 02:32:48,832
+Buradaki kat sayıları birbiriyle karşılaştırırsak mesela, en azından önce üstel olanlara baktığımızda, uygulama programının gereksinimlerini nispeten straightforward otoyu düzel koyuyor. O yüzden iki olayla kutu üzeri en kısa onun üzerinde var. Yardımcı programlar, en zor ve kanlısı sistem yazılımları, o bir bölü yeni. Yardımcı programlar arası ise bu ikisinin arasında bir durma sahibi ve üstel kat sayı oradan.
+
+542
+02:32:48,852 --> 02:32:49,272
+bakalım.
+
+543
+02:32:50,963 --> 02:33:07,283
+Foldaki direkt çarpan ise, üst telin yanında nispeten daha az önemli gözükse, yine de onun da önemi var tabii ki. Oradaki kaç sayılarında değerlerini karşılaştırarak, üst için benzer şeyler söyleyebiliriz.
+
+544
+02:33:07,283 --> 02:33:18,963
+Ama uygulama programlarının mesela HZ038 iken, sistem yazılımda HZ032. Uygulama programının gereksinimleri çok daha hızlı bir şekilde geçebilmekte.
+
+545
+02:33:18,963 --> 02:33:37,603
+Ama sistem yazılımlarında input belli, output belli. Yani olması gereken input'e karşılık, olması gereken output nedir? Onlar çok belli. Zaman içerisinde işmez. O yüzden onun katsayısı da H'nin sonunda 2.5 katsayısı varmış mesela. Bütün bunları çıkarımlarından daha fazlasını siz de yapabilirsiniz.
+
+546
+02:33:39,224 --> 02:33:45,263
+Evet, temel olarak, temel kokonu da rakamlar böyle yönelilmiş. Geliyoruz orta düzeye kokonmaya.
+
+547
+02:33:45,600 --> 02:33:52,100
+Orta düzey Kokomo'da çaba düzeltme çarpanları, sabit değişkenleri işin içerisine giriyor.
+
+548
+02:33:52,100 --> 02:34:04,180
+Ve bu düzeltme faktörünün 0.91.40 arasında alınmasının daha doğru olduğu sonucuna varmış.
+
+549
+02:34:04,180 --> 02:34:05,700
+Diyor ki mesela,
+
+550
+02:34:06,111 --> 02:34:19,171
+1000 mikro eşyamcıda uzaktan haberleşme amiciyetiyle kullanacağımız 10.000 satır kodlu bir embedded yazılım hazırlayacağız. Düzeltme faktörünü 1,17 alırsak eğer hacim eşittir.
+
+551
+02:34:21,871 --> 02:34:39,251
+3,16,1,20 sistem yazılımına giriyor çünkü. O şekilde hesapladıktan sonra 1,17'de, for example factor anıla artan, 66,8 programcı bir ay, yani 67 kişi diyebiliriz.
+
+552
+02:34:40,251 --> 02:34:49,531
+Ve proje süresi ise, 66,8'i yerine koyduğumuzda, bir önceki Yansıt'taki formüllerde, 9,6 ay.
+
+553
+02:34:49,871 --> 02:35:05,611
+şeklinde gerçekleşmiş. Peki burada hocam, ERAF'yi kaçıracağımızı nereden bileceğiz diyorsanız ise, işte burada geçmiş tecrübelerinizden yola çıkaraktan en uygun kapsayı ne aralıkta bir yerde olduğunu belirleyebilirsiniz.
+
+554
+02:35:06,051 --> 02:35:15,711
+Ya da bu ayında çalışmasında burası temel bazı önerileri vardır. O kadarını almamışız artık. Olayın ana hatlarıyla anlayabilmeniz için bu kadar yeter.
+
+555
+02:35:17,716 --> 02:35:33,236
+Bir de PNR modeli var, Northern Riley. Yıllık iş hacimini, bin satır kod sayısına, Kilo Line of Code'a, teknoloji kat sayısını ve yıl olarak geliştirme sürecine bağlı olarak hesaplamak için o da bir formüle önermiş.
+
+556
+02:35:41,296 --> 02:35:48,515
+Yıllık geliştirme sürecinin zamanının üzeri 4'ü şeklinde.
+
+557
+02:35:50,776 --> 02:36:06,515
+Burada CK'yı ne alacağız bu teknoloji kart sayısını? Şöyle öneriyor. Düşük teknoloji ortamında 2000, iyi teknoloji ortamında 8000, otomatik yazılım ağaçlarının kullanıldığı ortamda da 12000 şeklinde alıyor.
+
+558
+02:36:09,299 --> 02:36:15,259
+Burada esas vansiyem şu oluyor, yine göğeş uluşluğu kapıton dışmış, kıymdan.
+
+559
+02:36:15,259 --> 02:36:17,180
+Biraz sonra buna gireyim.
+
+560
+02:36:21,587 --> 02:36:29,507
+Evet, şöyle diyelim. Şimdi, temel olarak,
+
+561
+02:36:30,227 --> 02:36:44,047
+Proje geliştirme aşamasında toplam iş gücünün yüzdesinin zamana bölündüğünde şöyle bir eğri ortaya çıkmış genelde. Tam eşit değil dikkat ederseniz. Tam homojen dağılım değil.
+
+562
+02:36:45,727 --> 02:36:54,327
+Buna dayanarak bu formülleri önermiş Putnam-Nordun Vare'ye üç ayrı araştırmaçı.
+
+563
+02:36:54,804 --> 02:37:11,423
+Ve düşünüyorum ki işte, bu da özür dilerim, toplam iş gücü ihtiyaçları, iş gücü ihtiyacı proje süresinin basamaklarına ve böylece sürecin en başından şu an kadar geçen zamana bağlı olduğunu söylüyorum.
+
+564
+02:37:12,603 --> 02:37:22,664
+Şimdi şey noktasında, kodlama gerçekleşmesinin aşamasında, ilk yapmakla birlikte, tepe yapmakla birlikte, daha sonraki dinki sınama aşamalarında daha az personel.
+
+565
+02:37:22,804 --> 02:37:38,484
+Bu iş yapılabilir. En azından yazılım gelişimine boşa çıktığında onlara başkanla yenilmiş verilip diğer birkaç kişiyi bu eski projedeki test aşamalarında çalıştırmaya devam etmek gibi yöntemler kullanılıyor genelde.
+
+566
+02:37:39,263 --> 02:37:46,384
+Yanlarda da oluyor diyeyim. O da keşfetmiş ve bu şekilde bir eğri oluşturmuş.
+
+567
+02:37:48,979 --> 02:38:02,159
+Neden PNR'yi işlettim? Kokomo'dan hemen sonra. Çünkü benzer yaklaşımlar. Kokomo 2 daha farklı. O yüzden bu noktaya ayırdık. Ama girmeyeceğiz bu aşamada.
+
+568
+02:38:04,000 --> 02:38:09,199
+Bu konu üzerinde bir sekizden sonra yaptığımız çalışmalar var.
+
+569
+02:38:10,291 --> 02:38:17,252
+Eğer isterseniz onlara referans yönlendirip ya da kendiniz de dolu kaynak bulabilirsiniz kokonuyla ilgili.
+
+570
+02:38:18,171 --> 02:38:26,731
+Kokonun ikinci düzeyiyle ilgili. Bu konuda çok fazla konuşmayacağız. Bu kadar yetişim diyelim bugünlük.
+
+571
+02:38:27,167 --> 02:38:45,247
+Şu konulardan da konuştuk. Özellikle bir kere zaten kurama ile ilgili JUnit üstüne ayrıntılı çalıştık. O konularda çok konuştuk. Bu dünkü dersin başında version, control, system hakkında kelimeler söyledik. Tekrar almaya gerek yok.
+
+572
+02:38:46,468 --> 02:38:55,067
+Dünyanlar modelleme araçlarının çift yönlü dönüşmeyen koddan, şemaya, şemadan koddan dönüşme istekleri ne kadar iyiyse kapsayıcıya serişimiz o kadar.
+
+573
+02:38:55,167 --> 02:38:57,028
+Bu konuda kolaylaştırırız diyoruz, hatırlıyorum.
+
+574
+02:38:57,608 --> 02:39:00,507
+Reaction ve Team System ya da Azure DevOps oldu.
+
+575
+02:39:00,648 --> 02:39:04,387
+2,5 daha sonra onların yetenekleri yararlarından da yeterli konuştuk.
+
+576
+02:39:04,707 --> 02:39:05,988
+Bunu böyle bir toparlayalım.
+
+577
+02:39:06,587 --> 02:39:19,067
+Tabii ki projenin ölçeklerine göre de bunların kullanılmaması gerektiğini, karar verilmesi gerektiğini ve ayrıntılarını ilk ders saatimizde de söylemiştik.
+
+578
+02:39:19,067 --> 02:39:22,207
+Peki, o zaman bugünlük bu kadar diyeceğim.
+
+579
+02:39:22,611 --> 02:39:26,091
+168'e kadar gelebildik bugün.
+
+580
+02:39:27,451 --> 02:39:37,591
+135, 168 yani bu parça yönetimi tamam diyoruz.
+
+581
+02:39:38,591 --> 02:39:41,912
+Geriye kaldı ölçüm ve kalite.
+
+582
+02:39:44,051 --> 02:40:02,871
+Yani üç saatlik bir dersimizde bitirebiliriz. Yeter. Tamam. Peki daha fazla bu açıdan eklerse yapmamıza gerek olmayacak ama bu proje sunumları ve kod gösterimleri için ayrı bir zamanlama bildireceğiz size.
+
+583
+02:40:03,432 --> 02:40:08,952
+İzlemeye devam edin diyorum ve bu kadar diyorum. İzleyicimde kalmamış.
+
+584
+02:40:09,791 --> 02:40:16,452
+Ama yani kafanızda kadar soruları hafta iki ders saatimizde de mutlaka sorabilirsiniz demek istiyorum.
+
+585
+02:40:17,191 --> 02:40:19,572
+Şimdilik kadar ısmarladık. Haftaya görüşmek üzere.

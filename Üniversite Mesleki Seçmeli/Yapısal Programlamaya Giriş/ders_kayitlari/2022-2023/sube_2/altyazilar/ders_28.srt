@@ -1,0 +1,3435 @@
+1
+00:03:49,876 --> 00:03:51,156
+Arkadaşlar, günaydın.
+
+2
+00:03:57,395 --> 00:03:59,395
+Sesin net geliyor mu acaba?
+
+3
+00:04:00,395 --> 00:04:02,395
+Geliyor hocam, günaydın.
+
+4
+00:04:02,395 --> 00:04:04,395
+Teşekkür ederim, sağ olun.
+
+5
+00:04:04,395 --> 00:04:07,395
+[öğrenci] ve [öğrenci]
+
+6
+00:04:10,548 --> 00:04:17,747
+Duyuyor musunuz beni? Dura mısınız? Evet, protestoçum. Ne dediniz? Yok. [öğrenci] ve [öğrenci] dedim.
+
+7
+00:04:21,076 --> 00:04:31,076
+Tamam, ben şimdi sizi çok kısa zoom odasına alayım. Dersimiz 3-4 dakika sonra başlayacak arkadaşlar.
+
+8
+00:07:21,235 --> 00:07:23,235
+Tekrardan merhabalar arkadaşlar, günaydın.
+
+9
+00:07:30,387 --> 00:07:52,067
+Bugün kalan konumuz var, onu bitireceğiz. Bugün çok kod yazmalık bir şey var yoksa, biraz bu ders sizlere neler verdi, bundan sonra nelere doğru ilerlemeniz lazım, biraz problemlerimiz, konularımız bunlarla alakalı olacak.
+
+10
+00:07:55,124 --> 00:08:02,884
+Sesim net mi arkadaşlar? Yani böyle derinden falan geliyorsa lütfen söyleyeyim de daha sonra anlatılmadığı yorum oluyor.
+
+11
+00:08:04,884 --> 00:08:08,164
+Can bana göre her zamanki gibi yani iyi.
+
+12
+00:08:08,164 --> 00:08:20,564
+Tamam, net geliyorsa. Çünkü iki tane mikrofon var. Birisi kulaklığın bir mikrofonu, birisi bilgisayarın mikrofonu. İşte onlar nasıl oluyorsa yer değiştiriyormuş. Bazen derinden bir ses geliyormuş.
+
+13
+00:08:21,172 --> 00:08:28,012
+Şimdi ilk problemimiz, ilk konumuz matriz, matriz, matriz, değişim dediğimiz şey.
+
+14
+00:08:29,292 --> 00:08:30,012
+Konu.
+
+15
+00:08:33,395 --> 00:08:44,435
+matris çarpımı diyelim. Matris çarpımından kastımız ne? Elimizde iki tane matrisimiz olacak.
+
+16
+00:08:48,019 --> 00:08:54,019
+Bu muaddislerin çarpılmasından önce iki vektörün çarpımını bir konuşalım.
+
+17
+00:08:55,019 --> 00:09:02,419
+İki vektörü çarpmak için bir kere vektörümüzün uzaklığına n tane elemanlı vektör dersek,
+
+18
+00:09:04,019 --> 00:09:07,019
+Scalar çarpım mı diyoruz buna karşıt olarak?
+
+19
+00:09:09,019 --> 00:09:13,019
+Buna A vektörü, buna B vektörü diyelim.
+
+20
+00:09:13,519 --> 00:09:15,947
+Bu vektörün çarpımı nasıl oluyor?
+
+21
+00:09:15,988 --> 00:09:16,988
+Matematikte.
+
+22
+00:09:19,988 --> 00:09:22,988
+Bunların şöyle şeylerimi çıkayım.
+
+23
+00:09:27,860 --> 00:09:53,200
+Dinerce bir ders alıyor musun? Aldım değil mi? Bu dönem mi alıyor musun? Aldık hocam geçen dönem. Aldık hocam. Şimdi iki vektörü çarpmak demek şu karşılıklı olan elemanları çarpıp bu elemanların çarpımlarının toplamlarını bulmak. Yani ben buraya işte A ve B'nin şöyle mi gösteriyordu, bu noktayı da gösteriyordu herhalde. Çarpımı dediğimde olacak olan şey şu, aslında bir toplam sembolü var.
+
+24
+00:09:53,683 --> 00:10:04,083
+D eşittir birinci elemandan diyelim, eninci elemana kadar A'nın İ inci elemanıyla B'nin İ inci elemanları çarpıyorum, bu çarpımları topluyorum. Tamam mı?
+
+25
+00:10:04,884 --> 00:10:08,083
+Burada ikisinin de en uzunluklu olması zorunlu.
+
+26
+00:10:08,884 --> 00:10:15,283
+Matris çarpımda bunu genelleştirilmiş hali. İki matrisi çarpmak için şöyle bir kuralımız var.
+
+27
+00:10:18,355 --> 00:10:28,855
+Ancak biz neyi çarpabiliriz? Şöyle büyük çarpı yapayım. B çarpı C'lik bir şeyi çarpmam gerekiyor. İşte bu ikisinin eşit olmasının zorunlığı aslında şuradan geliyor.
+
+28
+00:10:28,855 --> 00:10:40,115
+Çünkü yapacağımız şey, siz şuradaki satırla buradaki satırı, sütunu çarpacaksınız.
+
+29
+00:10:40,115 --> 00:10:44,556
+Elde edeceğiniz şey, ne olacak? Yeni bir matris diyelim.
+
+30
+00:10:46,259 --> 00:10:58,259
+Buna A çarpı B'lik diyorum, buna B çarpı C'lik diyorum. B çarpı C'lik bir matriz. Bu A çarpı C'lik bir sonuç verecek.
+
+31
+00:10:58,259 --> 00:11:07,052
+Şuradaki A çarpı B'lik matrizin ilk satırının uzunluğu nedir? B'dir değil mi arkadaşlar?
+
+32
+00:11:07,059 --> 00:11:16,459
+Bunun da ilk satırının üzümünü B'dir. İşte bu B'ye B'lik bir iki tane vektörü çarpmak demek. İşte bunu çarpınca neyi buluyoruz? Şunu buluyoruz.
+
+33
+00:11:17,059 --> 00:11:27,459
+Sonra ikinci stütunu çarptığımızda yerine gelen şey şuradaki sayısal sonucu veriyor. Bu mantıkla mantıklı çarpımı gerçekleşmiş oluyor.
+
+34
+00:11:27,859 --> 00:11:33,059
+Peki bunu kod olarak, hani yazmak istesek, söz ve kod haliyle yazacağım.
+
+35
+00:11:33,331 --> 00:11:46,331
+Ne var? Elimde bir kere iki tane A ve B şeklinde matrisim var. Bir de C matrisim olacak. Şuna A matrisi diyelim, buna B matrisi diyelim, şuna da C matrisi diyelim.
+
+36
+00:11:46,331 --> 00:11:56,331
+Üç tane değişkenimiz var. Şimdi ben ne yapacağım? Birinci satırı tamamen gezeceğim. Birinci satırla beraber burada da birinci sütunu gezeceğim.
+
+37
+00:11:56,331 --> 00:11:59,244
+Ve elde ettiğim şey tek bir tane sayısal sonuç olacak.
+
+38
+00:11:59,764 --> 00:12:07,764
+Çünkü şu çarpımdan yola çıkarak elde edeceğim şey. O zaman birinci satırı gezmek için A maddında for diyoruz.
+
+39
+00:12:07,764 --> 00:12:19,764
+i eşittir, birden başta n'e kadar git, birer birer art demek. Ondan sonra bir daha yazacağız. Bu yazacağımız şey de şurada gezinti yapacak.
+
+40
+00:12:26,515 --> 00:12:44,515
+Karşılıklı olarak çarpabilirim. Yalnız çarpacağım şeyler kümülatif olarak toplanacak. Şimdi burayı seçerken şimdi bir de ileride şunu seçme durumum var. Ondan sonra aynı şekilde burada bunu seçme durumum var. Dolayısıyla iki döngü burada işe yaramıyor.
+
+41
+00:12:51,104 --> 00:13:03,604
+Çarparak tek bir tane eleman elde ettim. Ama ben bütün bir satırı veya diğer satırları da doldurmak için neye ihtiyacım var? Bir döngüye daha ihtiyacım var. Ona da for diyelim, k olsun.
+
+42
+00:13:03,604 --> 00:13:17,604
+Bu da işte A maddesimiz A'ya B'lik. Aslında N demeyelim. Şunlar da şunlar da şunlar da şey olsun. Hatta şuraları A ve B demeyelim. Dert kapılırda N'ye, M'ye demişler. Küçük N'ye.
+
+43
+00:13:17,812 --> 00:13:34,312
+M demişiz, o zaman bu M çarpı nelik olduğunu? M'ye P'ymiş. O zaman bu ne olacak? N çarpı P'lik bir maddesi olacak. Şöyle biraz daha anlaşılır olsun. Şu bizim birinci boyutumuz, şu diğer boyutumuz, şu da diğer boyutumuz.
+
+44
+00:13:34,852 --> 00:13:41,731
+Birinci döngümüz N tane satır olduğu için N tane satır A maddesi için dönecek. İkinci döngümüz burada.
+
+45
+00:13:42,355 --> 00:13:49,675
+P tane sütun olduğu için bu kadar dönecek. Üçüncü döngümüz K birden başlayacak.
+
+46
+00:13:49,675 --> 00:13:57,235
+M'ye kadar gidecek. Neden M'ye kadar gidecek? Şimdi her bir satırı şuradaki sütunla verilerini çarpacağız.
+
+47
+00:13:57,235 --> 00:14:03,355
+M'ye diyelim. Bu kadar döneceğiz. Şimdi dönerken ne yapacağız? Karşıklı olarak çarpacağız.
+
+48
+00:14:10,292 --> 00:14:29,091
+İ'sinin K'sı ile B'nin K'sının nesini çarpacağız? Ne diyeceğiz buraya?
+
+49
+00:14:29,091 --> 00:14:32,091
+J'sini mi hocam?
+
+50
+00:14:32,091 --> 00:14:33,868
+Aynen, J'sini çarpacağız.
+
+51
+00:14:33,971 --> 00:14:49,331
+Yani şuradaki şeyle şunu çarptım, sonra şununla bunu çarptım, bununla bunu çarptım. Bu şekilde baktığımız zaman i inci satır sabit, k böyle sağa doğru değişimi gösteriyor.
+
+52
+00:14:49,331 --> 00:14:56,771
+Burada da yine k ne olacak aşağıya doğru artacak, j inci sütun sabit olacak.
+
+53
+00:14:56,771 --> 00:14:58,771
+Şimdi bununla bunun çarpımını...
+
+54
+00:14:59,316 --> 00:15:17,316
+Ne yazacağız? Şuraya yazacağız. Şimdi i inci satır, j inci sütun diyeceğiz. Şimdi i ve j'yi göstermek için ne yapmamız lazım? Şurada sürekli i ve j'ye yazamam. Bu döngünün bittiği yerde, bu döngü mesela şurada, and for diyelim.
+
+55
+00:15:25,268 --> 00:15:52,868
+i'sinin j'sine tam değişkenimiz olsun. Şimdi bir tane yaz. Şimdi neden sam? Bu çarpımları bir yerde toplamam gerekiyor. İşte tam artı eşittir diyelim. Şöyle yazabiliriz. Arada bir işlem var. Aradaki işlem de nedir? Şu tam değişkeni her işlem arasında, yani her bir yeni karşılıklı çarpım vektör çarpım yaparken ne olması lazım? Sıfıra eşit olması lazım.
+
+56
+00:15:56,340 --> 00:16:05,340
+Şimdi bu bizim için neden önemli bir konu maddesi çarpımı? Arkadaşlar bilgisayar bilimlerinde şimdi böyle bazı alt konular var. Örneğin kompütür grafik.
+
+57
+00:16:09,427 --> 00:16:15,587
+ve bununla beraber actual, virtual reality, augmented reality dediğimiz kavramlar.
+
+58
+00:16:15,587 --> 00:16:17,867
+Sonra game programming.
+
+59
+00:16:17,867 --> 00:16:30,268
+Aslında bu da şey. Sonra robotik gibi doğrudan bilgisayar bilimlerinin computer science'ın alt konuları.
+
+60
+00:16:30,268 --> 00:16:36,427
+Hatta burada AI ve AI'nin özelinde deep learning dediğimiz
+
+61
+00:16:36,788 --> 00:16:41,788
+Derin öğrenme konusu doğrudan matrisler üzerinde işlemlik.
+
+62
+00:16:41,788 --> 00:16:49,788
+Şimdi bu nedenle bu matris çarpımı bizim çok çok üzerinde durduğumuz, yaptığımız bu operasiyon.
+
+63
+00:16:49,788 --> 00:16:55,788
+Onun için bizim için önemli. Mesela manipülatörler vardır, bilir misin? Manipülatör nedir?
+
+64
+00:17:00,788 --> 00:17:12,587
+Manipülatör farklı farklı anlamlara gelebilir. Ekonomide başka anlam var. Bizim buradaki bahsettiğimiz manipülatör ne olabilir acaba?
+
+65
+00:17:18,003 --> 00:17:26,003
+Ne demek manipülatör? Kelimenin anlamından yola çıkarak manipüle eden demek. Neyi manipüle edebiliriz?
+
+66
+00:17:30,420 --> 00:17:32,420
+Yok mu bir fikri olan?
+
+67
+00:17:32,420 --> 00:17:35,420
+Hocam, yönlendirici demek diye düşünüyorum.
+
+68
+00:17:35,420 --> 00:17:37,420
+Yönlendirici şeydir, router'dır.
+
+69
+00:17:37,420 --> 00:17:41,420
+Bir baktım da oradan Google'a manipülatör yazdım.
+
+70
+00:17:42,420 --> 00:17:45,420
+Yani ilk bulduğu şey şöyle bir şey oldu bak.
+
+71
+00:17:45,420 --> 00:17:47,420
+Ne bu?
+
+72
+00:17:48,420 --> 00:17:50,420
+Şöyle bakalım.
+
+73
+00:17:51,420 --> 00:17:53,420
+Şunlar neye benziyor?
+
+74
+00:17:54,420 --> 00:17:56,420
+Hocam robot kol gibi bir şeye bence.
+
+75
+00:17:56,420 --> 00:17:58,220
+Aynen, robot kol bak.
+
+76
+00:17:58,420 --> 00:18:06,420
+Şimdi bu robot kolların aynı bizim elimiz kolumuz gibi şu mouse'un ucundan bakabilirsiniz.
+
+77
+00:18:06,420 --> 00:18:12,420
+İşte burada bir nokta var, şurada bir eklem noktası var, daha sonra şurada bir nokta var, şurada bir nokta var, şurada bir nokta var.
+
+78
+00:18:12,420 --> 00:18:20,396
+Ucuna kadar giriyorsunuz. Ucuna ne bağlarsanız bunu ona göre bu robot şey değişiyor. Aslında bu bir basit anlamda robot.
+
+79
+00:18:20,564 --> 00:18:27,564
+Günümüzün imalat sektöründe şu çok güzel görmektir, robotic manipulator dediğimiz şey.
+
+80
+00:18:27,564 --> 00:18:36,564
+Bunlar aynı koldaki şey gibi. Kolunuzu omuzunuzdan hareket ettirdiğinizi düşünün.
+
+81
+00:18:36,564 --> 00:18:42,564
+Kolunuz hareket edince dirseğiniz de hareket ediyor, bileğiniz de, yani bütün eklemleri söylüyorum.
+
+82
+00:18:42,564 --> 00:18:46,564
+İşte parmaklarınızdaki eklemlerinizde, parmak ucunuza kadar her yer hareket ediyor.
+
+83
+00:18:47,700 --> 00:18:53,900
+Kolunuzun, şöyle bir hesap yapmak gerekebiliyor. Bu manipülatörlerde çok yapılan bir şey.
+
+84
+00:18:53,900 --> 00:18:57,700
+Buna transformasyon ve rotasyon diyoruz. Örneğin döndürdünüz.
+
+85
+00:18:57,700 --> 00:19:13,700
+Omzunuzdan bir dönme hareketi uyguladığınızda, yani omzdan kastım şu robotun en dibindeki şeyden mafsal diyorlar aslında bana link veya ekleminden hareket oluşturduğunuzda uçtaki değişim miktarı ne olacak?
+
+86
+00:19:14,099 --> 00:19:28,099
+Çünkü öyle bir şey ki, siz bir komut vereceksiniz, işte şu parçayı al, o parçayı alabilmek için bu uç kısmın konum değiştirmesi gerekiyor. Robotikte bu konu detaylı olarak anlatılır, bu konum değiştirmesi de...
+
+87
+00:19:28,660 --> 00:19:38,260
+4'e 4'lük matrislerin çarpımları ile oluyor. 4'e 4'lük belki 5-6 tane matris çarpıyorsunuz. Örneğin şuradaki eklem sayısına göre bunlar gerçekleştiriliyor.
+
+88
+00:19:38,260 --> 00:19:42,260
+Buna robot kinematik derler, robotik ders falan alırsanız görürsünüz.
+
+89
+00:19:42,260 --> 00:19:56,460
+Şimdi dolayısıyla orada bir sürü şey var. Derin öğrenme dediğimiz şey, verilerimizi alıyoruz, matrik formatında alıp bir optimizasyon gerçekleştirip bilgisayara öğretim yapılıyor. Orada da kullanılıyor.
+
+90
+00:19:56,627 --> 00:20:07,387
+Onun için önemli bir şey. Peki bunun karmaşıklığı nedir? Şu kodun karmaşıklığı. Şimdi şurada bir antfor var. Bir de bunun antforu olacak. Şuraya e, f diyelim. Bir de şunun antforu olacak. Kod bu kadar.
+
+91
+00:20:08,407 --> 00:20:22,487
+Bunun zaman karmaşıklığına tn dersek. Aslında t burada neye bağlı olur? n'e olur, t'ye bağlı olur, bir de m'ye bağlı olur değil mi? Bunun zaman karmaşıklığı için ne söylersiniz?
+
+92
+00:20:24,147 --> 00:20:27,647
+Bu kod kaç defa döner, yani bu döngüler?
+
+93
+00:20:30,932 --> 00:20:40,932
+N küp, N küpü neye göre söyledik arkadaşlar? Yani burada N eşittir, M eşittir, P diyerek mi söyledik?
+
+94
+00:20:42,932 --> 00:20:46,932
+Yani ikisi kare matriz olduğunu söyleyerek mi dediniz?
+
+95
+00:20:51,124 --> 00:21:01,284
+Şimdi matrislerimiz n çarpı m, m çarpı p'lik olduğu için burada üç tane değişkeni var. Dolayısıyla bizim karmaşıklığımız şu üç tane değişkene bağlı olacak.
+
+96
+00:21:01,284 --> 00:21:08,963
+Şimdi bu döngü kaç defa dönüyor? n defa dönüyor. Bu birer birer arttı. Kare olarak düşünüyoruz. Tamam. Ben de öyle düşündüğünüzü düşündüm.
+
+97
+00:21:08,963 --> 00:21:17,963
+Şu döngü kaç defa dönüyor? Bu da p defa dönüyor. Bu döngü kaç defa dönüyor? Bu da m defa dönüyor. Peki şuradaki çarpma işlemi kaç defa gerçekleşecek?
+
+98
+00:21:18,163 --> 00:21:31,163
+N çarpı P çarpı M defa gerçekleştirdik. Eğer genel haliyle bunu konuşacak olursak, bu kadar çarpma ve toplama işlemleri var.
+
+99
+00:21:31,163 --> 00:21:43,756
+Bu, bu kadar. Peki bunu kare maddesi olarak arkadaşımızın söylediği şekilde söylersek, şimdi N, M'ye eşit. Kare maddesi de N eşittir M. M'de P'ye eşit.
+
+100
+00:21:43,923 --> 00:21:50,923
+O zaman burası sadece neye bağlı bir değişken olduğu için en küplük bir algoritma karşımıza geliyor.
+
+101
+00:21:50,923 --> 00:21:57,923
+Şimdi bunu iyileştiren algoritma analizi dersinde göreceksiniz ilerleyen dönemlerde.
+
+102
+00:21:57,923 --> 00:22:08,923
+En üzeri daha iyi algoritmalar var. 2.6'ydı zannediyorum. 6x diyelim. 2. küsüre indirgeyebiliyorlar.
+
+103
+00:22:09,332 --> 00:22:31,332
+Dwight Concurve ve Recursive algoritmaları çalıştırarak. Normal algoritmamız bu şekilde. Bu klasik çalışan bir algoritm. Şimdi bir de bunun şöyle iyileştirmesi konusu, günümüzde işlemcilerimizin bir sürü çekirdeği var. Bir sürü çekirdek ne demek? Aynı anda işlemci birden fazla komutu işletebiliyor.
+
+104
+00:22:31,763 --> 00:22:38,323
+Şimdi siz matriz çarpımını paralelleştirebiliyorsunuz. Aslında ölçeklenebilirlik, scalability diyorsunuz.
+
+105
+00:22:38,963 --> 00:22:41,123
+Şöyle söyleyeyim, mantığını anlatayım.
+
+106
+00:22:41,364 --> 00:22:49,523
+Şimdi ben şu bir nolu vektör olsun, iki nolu vektör, üç nolu vektör, işte dört nolu vektör, böyle devam edelim.
+
+107
+00:22:49,523 --> 00:22:58,403
+Şimdi bir ile iki nolu vektörü çarparken aynı zamanda bir ile üçü çarpabilir miyim? Sonuca bir zararı olur mu bunun?
+
+108
+00:23:02,387 --> 00:23:12,387
+Sonuca zarar olmaz hocam. Olmaz değil mi? 1 ile 2'yi bir yandan çarparken aynı zamanda eğer işlemcim müsaitse 1 ile 3'ü çarparım, hatta 1 ile 4'ü çarparım.
+
+109
+00:23:12,387 --> 00:23:23,231
+Eğer yeterince çekirdeğim varsa bilgisayarımda hani şu an 4 tane korumuz var diyoruz işlemde şu kadar işte ne bileyim şey var bir de...
+
+110
+00:23:23,231 --> 00:23:38,831
+Bu her bir korun içerisinde threadler var. Bu donanım tarafında göreceğiniz şey aslında bir tane değil belki yüz tane eş zamanlı olarak işlemcinin komut çalıştırabilme, komut yürütebilme teyvar kapasitesi var.
+
+111
+00:23:38,831 --> 00:23:40,331
+Dolayısıyla siz...
+
+112
+00:23:40,852 --> 00:23:51,852
+Bu işlemi paralelleştirebiliyorsunuz. İşte Matlab gibi, Python gibi dillerde bunlar mümkün. Yani C'de de mümkün. Paralel kod yazarak şu en küplük maliyet yine oluyor ama
+
+113
+00:23:51,852 --> 00:24:04,852
+en küplük maliyeti zaman açısından örneğin en küplük maliyet ne kadar sürsün? Bir dakika sürsün. Siz bir tane işlemci ile bir dakikada sürecek
+
+114
+00:24:05,491 --> 00:24:11,892
+Bir işlemi, iki işlemciyle kaç dakikaya indirgeyebilirsiniz ideal olarak?
+
+115
+00:24:14,711 --> 00:24:16,251
+8 ile 1 ile mi?
+
+116
+00:24:16,251 --> 00:24:17,532
+Yok.
+
+117
+00:24:18,291 --> 00:24:25,451
+Şimdi şeyden geçeceğiz. En küplük kod bir dakika sürüyor. Değerimiz mesela 1000 olsun.
+
+118
+00:24:25,451 --> 00:24:30,072
+İşte en eşittir 1000 için 1000'in küpü bir dakika sürüyor. Bunu ölçtük.
+
+119
+00:24:30,324 --> 00:24:42,324
+İki tane işlemci ile bunu ne kadara indirgeyebiliriz? Zaman burada şey değil yani, n'e bağlı bir şey, onu hesap ettik, o bir dakika sürüyor. En eşittir, 1000 için.
+
+120
+00:24:42,324 --> 00:24:44,324
+Düşünüm 30 saniye gibi duruyor.
+
+121
+00:24:44,324 --> 00:24:57,580
+30 saniye indirgeyebiliriz, ideal olarak. Eğer işlemci tamamen kusursuz bir şekilde, eğer iki tane işlemci varsa veya üç tane kullanacaksak, işte 20 saniye indirgeyebiliyorsunuz bu sayede. Tamam mı?
+
+122
+00:24:58,771 --> 00:25:12,771
+Bakın, karmaşıklık üzerinden bu hesabı yapmadık. n küp üzerinden hesap yapmadım, dikkat edin. Yani n küp süreyi söyledi bana. Dedi ki, n küp en eşittir, bin için, işte ölçtük, biçtik, bir dakika süre edecek.
+
+123
+00:25:24,915 --> 00:25:39,915
+hizmetlerinden yararlanarak, kodu paralelleştirerek çalıştırırsanız, iki ise yarım dakikaya kadar veya üç ise yirmi saniye kadar indirgeme imkanınız var.
+
+124
+00:25:39,915 --> 00:25:52,907
+Şimdi tekrar manipülatöre geri dönelim. Dedim ya, aslında manipülatör şöyle bir şey, burada bir kaynak var, bu uzun hatta buna mafsal deniyor robotikte.
+
+125
+00:25:52,915 --> 00:26:02,716
+Sonra bir eklem koyuyorsunuz, şöyle bir şey oluyor, sonra ucuna bir şey daha, ucuna bir şey daha böyle, sonra ucuna mesela şöyle bir şey takıyorsunuz, çalışıyor.
+
+126
+00:26:02,716 --> 00:26:15,915
+Burada bunu yöneten sistem var. Şimdi buradan buraya bir matriz çarpımı, buradan buraya bir matriz çarpımı, buradan buraya bir matriz çarpımı, buradan buraya bir matriz çarpımı, buradan buraya bir matriz çarpımı gerçekleştirecek. Örneğin siz şurada...
+
+127
+00:26:17,680 --> 00:26:26,000
+5 santimlik bir hareket yapmak isteriniz. Bunun buradaki nereye tekabül edeceğini bu matriz çarpımı ile buluyorsunuz. Bu robotiğin bir konusu.
+
+128
+00:26:26,000 --> 00:26:40,200
+Arkadaşlar, burada bir A matrizi olsa, burada B matrizi, şurada C, şurada B matrizi olsa, şimdi A matrizi çarpı, B matrizi çarpı, C matrizi çarpı, D matrizi gibi bir durum var.
+
+129
+00:26:45,940 --> 00:26:50,940
+Dual Conquer kullanıyor. Ama bir de, bakın bu iki tane matrisin çarpını.
+
+130
+00:26:50,940 --> 00:26:55,940
+Şimdi daha fazla sayıda matris varsa farklı iyileştirme teknikleri de var.
+
+131
+00:26:55,940 --> 00:27:05,644
+Şimdi A çarpı B çarpı C çarpı D matrisini biz konucunu hesaplarken önce A ile B'yi çarpsam.
+
+132
+00:27:06,163 --> 00:27:13,163
+Bunlar çarpılabilir olması lazım değil mi? Çünkü şu boyutlar birbiriyle uyumlu olacak. Biz bunların çarpılabilir olduğunu kabul ediyoruz.
+
+133
+00:27:13,163 --> 00:27:20,163
+Genelde de robotikte dörde dörtlük kare matrisler kullanır. Dolayısıyla hepsi birbiriyle çarpılabiliyor. Boyutlar gerek yok.
+
+134
+00:27:20,163 --> 00:27:30,163
+A ile B'yi çarpsam önce, sonra C ile D'yi çarpsam, sonra da bu ikisinden elde edilen sonuçları çarpsam sonucu bulurum.
+
+135
+00:27:34,003 --> 00:28:00,603
+B çarpı C çarpı D de yapabilirim. Hatta ondan sonra ne yapabiliriz? A çarpı B çarpı C çarpı D de yapabilirim. Kaç farklı durum oluyor? İşte dağıtım, o kadar bir sürü farklı durum var. Kombinatör yer bir problem.
+
+136
+00:28:01,107 --> 00:28:26,788
+Şimdi, o zaman, acaba bunlar, bu çarpım sıralarını değiştirsek, şey olabilir mi? İyileştirme olabilir mi? Şu örnek üzerinden bakacağız. Örneğin A matrisimiz olsun. Notlarımızdaki örneği, 10'a 30'luk bir matrismiş. B matrisimiz olsun. 30'a 5'lik bir matrismiş. C matrisimiz olsun.
+
+137
+00:28:27,604 --> 00:28:53,163
+Bu da 5'e 60'lık bir maddesi. 3 maddesi çarpıp sonucunu bulmak istiyoruz. Ne yapabiliriz? A, B ile çarparız. Şöyle C yapabiliriz. Bir de A, B, C yapabiliriz. Başka ihtimalimiz var mı? Sırayı bozmak yani A ile C'yi çarpamıyoruz. Ya B ile C'yi önce çarpacağız ya da A ile B'yi önce çarpacağız. Başka ihtimal yok.
+
+138
+00:28:54,003 --> 00:29:03,003
+Peki burada a, b ile c'yi çarptığımızdaki karmaşıklık, biraz önce karmaşıklık hesabını n çarpı m çarpı p demiştik.
+
+139
+00:29:03,003 --> 00:29:10,003
+Şimdi a, b ile c'yi çarptığımızdaki sonucu bulalım. a ile b'yi çarparak karmaşıklığımız ne olacak?
+
+140
+00:29:10,003 --> 00:29:14,955
+10 çarpı, 30 çarpı, 5 olacak değil mi?
+
+141
+00:29:16,627 --> 00:29:25,127
+Burada m bu, n bu, şu da, bu da n, bu da p oluyor. m çarpı n çarpı p, 10 çarpı 30 çarpı 5. Yani 1500.
+
+142
+00:29:25,127 --> 00:29:34,127
+Şimdi, burada elde ettiğimiz matriz, kaça kaçlık bu ikisinin çarpımından elde ettiğimiz matriz?
+
+143
+00:29:34,127 --> 00:29:39,980
+10 çarpı 30, 30 çarpı 5. Yani şunun sonucu, ne oluyor? 10'a 5'lik oluyor değil mi?
+
+144
+00:29:40,915 --> 00:29:54,555
+10'a 5'lik bir matriz sonuçla 5'e 60'lığı çarpacağım. Bu da nedir? 10 çarpı 5 çarpı 60'tır. Ne oluyor burası? 600, 3000 mi oluyor?
+
+145
+00:29:56,955 --> 00:30:04,155
+1500 tane işlem şurada yapıyoruz. 3000 tane işlem burada yapıyoruz. Toplamda 4500 tane işlem yapıyoruz.
+
+146
+00:30:05,155 --> 00:30:06,891
+Biraz aşağıya inelim.
+
+147
+00:30:08,852 --> 00:30:22,852
+Eğer şu yolu izlersem, şimdi B ile C'yi çarpacakmışım. B ile C'yi çarptığında elde ettiğim sonuç nedir? 30x5x60. Buradan ne geliyor?
+
+148
+00:30:22,852 --> 00:30:35,788
+Şu 9, 90, iki tır burada 9000 tane geliyor. Şimdi bu B, C'nin sonucu nedir?
+
+149
+00:30:36,243 --> 00:30:38,884
+BC'nin sonucu 30'a 60'lıktır.
+
+150
+00:30:40,723 --> 00:30:43,203
+A'nın boyutu ne? 10'a 30.
+
+151
+00:30:43,923 --> 00:30:47,923
+Ne gelecek? 10 çarpı 30 çarpı 60.
+
+152
+00:30:48,483 --> 00:30:50,644
+Buradan geliyor 18.000.
+
+153
+00:30:51,284 --> 00:30:57,203
+Yani toplamda 27.000 işlem yapıyormuşuz.
+
+154
+00:30:57,844 --> 00:31:02,963
+Bakın hangisi daha iyi? Şunu yapmak, total karmaşık olarak daha iyi.
+
+155
+00:31:03,155 --> 00:31:15,476
+Sonuç aynı sonuç ama ne yaptık? Bu sıralamayı, şuradan itibaren gidecek sıralamayı eğer, tabi bunu çarpma yapmadan önce yapmamız gereken bir ön işlem.
+
+156
+00:31:15,476 --> 00:31:23,155
+Daha şuradaki koda girmeden, böyle bir kod yazmadan önce diyoruz ki boyutlara göre bir optimizasyon yapalım.
+
+157
+00:31:23,155 --> 00:31:29,099
+Eğer böyle üç tane maddesimiz varsa ne olacak? İki farklı durumda. Dört tane olursa ne olur?
+
+158
+00:31:29,364 --> 00:31:35,083
+Şimdi A, B, C, kaç farklı 4 oluruz? Yani 4 olursa kaçarlı bakarız? İşte bir buna bakarız.
+
+159
+00:31:35,083 --> 00:31:47,083
+Ondan sonra buna bakıp, şuna bakıp ne yaparız? Bir de ortadaki işlem yaparız. 3 tane durum buradan geliyor. 3 tane sonuç alacağız.
+
+160
+00:31:47,083 --> 00:31:54,604
+Ondan sonra buna bakarız, bununla elde ettiğimizde şununla çarparız, ondan sonra onunla elde ettiğimizde bununla çarparız. Üçlü böyle geldi.
+
+161
+00:31:54,771 --> 00:31:59,692
+Sonra başka ne olabilir? Bu olur, şu olur, bununla bunu çarparız.
+
+162
+00:31:59,692 --> 00:32:04,372
+Elde ettiğimiz onunla da onu çarparız. Bakın farklı farklı durumlar oluyor mantısı çarparı için.
+
+163
+00:32:04,372 --> 00:32:10,132
+Bunları tek tek kontrol eden algoritma var. Yani bu da birazcık permitasyon, kombinasyon mantığıyla
+
+164
+00:32:10,132 --> 00:32:15,892
+olası bütün durumların önce sayma durumlarını yapıyor, yani analizini yapıyor.
+
+165
+00:32:15,892 --> 00:32:21,011
+İşte diyor ki böyle yaparsam 4500 tane işlem yapacakmışım. Bakın bunlar basit işlemler.
+
+166
+00:32:21,299 --> 00:32:42,299
+Çünkü şu çarpmaların maliyeti nedir? Bu ön işlemler gayet basit. Ne yapıyorsun? Elinde boyutlar var. 2-3 tane çarpma yapıyorsun. Bu çarpmaların maliyeti, ön işlem maliyeti bir birim zamanlık bir şeydir. Değil mi? Belki en tane maddesin varsa en kötü ihtimalle n'e kadar gider.
+
+167
+00:32:42,387 --> 00:32:56,788
+Ama şundan çok çok daha iyi sonuçlar elde etmeyi mümkün hale getiriyor. Yine n küp olacak ama, 4500 üzerinden elde edeceğin n küp ile 27000 üzerinden elde edeceğin n küp çok çok daha farklı oluyor.
+
+168
+00:32:56,788 --> 00:33:00,387
+Evet, burada anlaşılmayan bir şey var mı?
+
+169
+00:33:00,387 --> 00:33:06,788
+Hocam, bunların daha az veya çok işlem olması neye göre denk geliyor, neye göre belirleniyor?
+
+170
+00:33:08,115 --> 00:33:35,675
+Neyin daha az veya çok? Bu 4500'de 27000 olması hangi yani? Şimdi maddis çarpımında temel yaptığımız operasyon ne? Bu kadar döngüyü döndük, şuradaki çarpma işlemdir. Öyle değil mi? Hı hı. Hepsinde de bu çarpma işlemi birinde 4500 defa olacak, öbüründe 27000 defa olacak. İşte o sayıların hangi parametreleri etkiliyor yani? Nasıl? Bunu neye göre hesapladık? Mesela şeyi soruyorum, işte şöyle bir şey diyebilir miyiz?
+
+171
+00:33:36,031 --> 00:33:41,031
+N ve P sayılarımız var ya, boyutlarımız.
+
+172
+00:33:41,031 --> 00:33:42,031
+Evet.
+
+173
+00:33:42,031 --> 00:33:47,031
+İlk işlemde N ve P birbirine daha yakın olursa daha az işlem çıkar.
+
+174
+00:33:47,031 --> 00:33:48,031
+Yoksa bunların hepsini...
+
+175
+00:33:48,031 --> 00:33:50,031
+Yani öyle bir genelleme değil.
+
+176
+00:33:50,031 --> 00:33:54,031
+Aslında biz burada karmaşıklığı hesaplarken şu formülü niye göre çıkarttık?
+
+177
+00:33:56,031 --> 00:34:01,031
+Şuradaki N ve P ve M boyutlarının çarpımı kadar...
+
+178
+00:34:01,875 --> 00:34:07,875
+Elementer çarpma işlemi, şuradaki çarpma işlemini yapacağız. Temel işlem buradan çıkıyor.
+
+179
+00:34:07,875 --> 00:34:15,876
+Şimdi boyutları burada verdiğinde bunların birbirine büyüklüğü, yakınlığı, uzaklığını doğrudan dikkat alan bir şey var mı bilmiyorum.
+
+180
+00:34:15,876 --> 00:34:26,876
+Onu biraz matematikçe göre bakmak lazım. Ama sana böyle boyutlar verildiğinde çarpım sıralarını bu şekilde analiz ederek, A ile B'ye bir bakayım.
+
+181
+00:34:26,976 --> 00:34:46,847
+Önce çarpayım, ondan elde ettiğin sonucu C ile çarpayım. İşte o zaman 4500 tane işlem yapıyormuşuz. Sonra A ile bir şey çarpmadan önce önce B ile C'yi çarpayım. Ondan sonra onun sonucunu A ile çarpayım. Bir de bu sıraya bakıyorsunuz 27000 elde ediyormuş. Bu çarpımlar şuradaki gelen değerlerle. Bu değerler arasında uzaklık, yakınlık ilişkisi...
+
+182
+00:34:46,847 --> 00:34:52,608
+Üzerinden bir şey çıkartılabilir mi? Onu araştırmak lazım. Bilmiyorum. Şu ana kadar incelemedim.
+
+183
+00:34:52,608 --> 00:34:58,127
+Buradan gelen sonuçlara göre, diyorsun ki bizim adayımız, şu olursa kötü oluyor.
+
+184
+00:34:58,127 --> 00:35:05,807
+Bunu yapma. Çok daha fazla işlem yaparsın. Şunu yapmak daha uygundur diyebiliriz. Tamamdır hocam.
+
+185
+00:35:05,807 --> 00:35:09,643
+Galiba 10.30 yerine 10.10 yazmışız.
+
+186
+00:35:09,907 --> 00:35:15,907
+Bakalım nerede yazmışız. Şimdi 10 çarpı 30 çarpı 5, şurada 1500 olacak.
+
+187
+00:35:15,907 --> 00:35:19,907
+Yani şey, bir altındaki satır galiba 30 çarpı 5 çarpı 60 mı olacaktı?
+
+188
+00:35:19,907 --> 00:35:26,907
+Hemen bakalım. 30 çarpı 5 çarpı 60 şurası. Yani ilk B ile C'yi çarptığımızda elde ettiğimiz sonuç.
+
+189
+00:35:26,907 --> 00:35:32,907
+Ne oluyor? 6 kere 5, 30. 30 ile 3 çarptık 90. İki tanesi kurutuydu. 9000.
+
+190
+00:35:32,907 --> 00:35:36,907
+Buradan elde edeceğimiz sonuç nasıl bir maddistir?
+
+191
+00:35:37,427 --> 00:35:45,427
+30 çarpı 5 ile 5 çarpı 60, 30'a 60'lık bir maddestir. Dışarıdaki maddisimiz de 10'a 30'luktu, evet.
+
+192
+00:35:47,427 --> 00:35:51,427
+Üsttekinde önce A ile B çarpıyoruz ya, 10'un ikinci satırında.
+
+193
+00:35:51,427 --> 00:36:00,427
+Tamam, şimdi A ile B'yi çarptığımızda elde edeceğimiz sonuç 10'a 5'lik bir şey. C'nin boyutu da 5'e 60'lık.
+
+194
+00:36:01,300 --> 00:36:06,300
+10 çarpı 5 çarpı 60'lık bir sonuç elde edeceğiz. Burada bir sıkıntı göremedim.
+
+195
+00:36:06,300 --> 00:36:08,300
+Tamamdır hocam.
+
+196
+00:36:09,300 --> 00:36:11,300
+Başka sorumuz var mı?
+
+197
+00:36:14,739 --> 00:36:25,739
+Peki, devam edelim. Şimdi farklı bir konu matriz şeyini burada. Yani bunların detayları arkadaşlar, kimisi robotik dersinde anlatılır şunun detayları.
+
+198
+00:36:25,739 --> 00:36:36,739
+Eğer şuradaki konulara girecek olursanız, bilgisayar grafiği, oyun programlama, yapay zeka derin öğrenme gibi şeyler, orada da matriz bu işlerinde yapılır.
+
+199
+00:36:36,739 --> 00:36:42,475
+Ve kullanılan programlama dilleri bunların özelliklerini sağlarlar.
+
+200
+00:36:42,739 --> 00:36:58,939
+Yani siz bilgisayar grafiğinde bir matriz çarpımı yap derseniz, şöyle uzun uzun kod yazmayacaksınız. Matriz malikli yaşımla alakalı ilgili kodu çağıracaksınız. O kod bazı dillerde doğrudan hiçbir şey yapmadan arka planda neyi yapıyor? Paralelleştirme, ölçekleme yapıyor.
+
+201
+00:36:58,939 --> 00:37:04,139
+Şu 2.6'ya indirgeyen algoritmalar mesela şunun adını yazayım.
+
+202
+00:37:04,139 --> 00:37:06,139
+Strassdans.
+
+203
+00:37:06,139 --> 00:37:10,339
+Kişinin ismi böyleydi. Strassdans.
+
+204
+00:37:11,123 --> 00:37:25,344
+Matrix Multiplication diye bir algoritma var. Bu aslında şunu yapıyor, dün gece sizden gelen sorulara cevap olsun diye şey göndermiştim, 20. yüzyılın top 10 algoritmaları diye.
+
+205
+00:37:25,344 --> 00:37:38,304
+Şimdi algoritmaları gerçekleştirirken yöntemlerden bir tanesi problemi böl yönet taktiği ile çözmek. Ne demek böl yönet? Tarihte de vardır ya, böl parçaların.
+
+206
+00:37:38,516 --> 00:37:55,468
+Bir büyük problemi daha küçük alt parçalara bölüp her küçük parçayı çözmek daha kolay hale geliyor. O elde ettiğiniz çözümleri birleştirerek sonuca gidiyoruz. Aslında biz bunu böl parçalar yönet stratejisini...
+
+207
+00:37:55,476 --> 00:38:15,836
+x üzeri n'i hesaplarken bulmuştuk. x üzeri n normalde n defa işlem yapıyordu hatırlarsanız. Ama biz bunu x üzeri önce n bölü 2'yi hesaplayalım, ondan önce n bölü 4'ü hesaplayalım mantığıyla logaritma 2 tabanında n'e indirgemiştik. Nasıl orada indirgeniyorsa, burada da matrisi daha küçük parçalara indirgeyip
+
+208
+00:38:16,096 --> 00:38:28,395
+2.6'ya düşürebilen yöntem var. Hatta farklı farklı algoritmalarda, bunun farklı modifikasyonları da var. İşte ikimiz 2.6 oluyor, ikimiz 2.5, 2.59 oluyor.
+
+209
+00:38:29,096 --> 00:38:40,596
+En üzeri 3'ten 2.6'ya indirgemek bile çok iyi bir şey arkadaşlar. Çünkü bazı durumlarda süre çok önemli bir şeydir. Mesela oyun oynuyorsunuz, oyunun takılmasını itlemezsiniz değil mi?
+
+210
+00:38:41,076 --> 00:38:49,076
+En köprü bir algoritmanın sonuç vermesi ile en üzeri 2.6. sonuç vermesi arasında çok ciddi ciddi farklar var.
+
+211
+00:38:49,076 --> 00:39:01,076
+Şimdi gelelim biraz da bellek üzerinden konuşmaya. Şimdi biz zaman karmaşıklığını söylüyoruz da, bir de karşımızda bellek karmaşıklığı var. Zaman zaman bunu da konuştuk.
+
+212
+00:39:05,460 --> 00:39:24,460
+boyutları arttığı için bu biraz göz ardı edilmiş durumda ama hala bazı durumlarda işimize yarıyor. External sort diye ifade edilen ama bunun içinde bir de external sort diye de söylenen bir algoritma olmuş. Bunun mantığı şu.
+
+213
+00:39:25,811 --> 00:39:37,811
+Bütün işlemler işlemcide yapılıyor bilgisayarda. Bizim işlemcimiz olmazsa hiçbir iş yapamayacak. Peki işlemciler çalışacak kodları ve dataları nereden getiriyor?
+
+214
+00:39:42,547 --> 00:39:50,487
+İşlemciye çalışacak kodlar ve işletilecek datalar nereden geliyor?
+
+215
+00:39:50,487 --> 00:39:52,148
+Rem'imizden?
+
+216
+00:39:52,148 --> 00:40:03,547
+Rem'den geliyor. Burada üç tane bus'ımız var. Bir tanesi adres bus, bir tanesi data bus, öbürü de control bus.
+
+217
+00:40:09,108 --> 00:40:18,788
+Örneğin 8 GB RAM olsun diyelim. RAM'den ne yapıyorsunuz? Sizin programınız varsa o programın kodlarını, burada MyProgram diye bir şeyiniz var.
+
+218
+00:40:18,788 --> 00:40:29,548
+Mesela siz 4 ile 4'ü toplayan bir program yazdınız. Bunun her bir satırı teker teker gelecek. Eğer bu satırlar içerisinde datalara ihtiyaç varsa o datalar da gelecek.
+
+219
+00:40:29,708 --> 00:40:32,488
+Burada işlenecek. Sonuçlar tekrar buraya yazılacak.
+
+220
+00:40:33,108 --> 00:40:42,387
+Programınızı çalıştırdığınızda bellekte bunu kullanacaksınız. Bu konuyu daha detaylı olarak işin donanım tarafıyla bilgisayar organizasyonunun işletim sistemi derslerinde göreceksiniz.
+
+221
+00:40:42,387 --> 00:40:56,228
+Şimdi yaklaşım böyle. Peki, RAM az bir miktarda, 8 GB çok fazla da yani en fazla hani günümüzde 32 GB'lık böyle kişisel bilgisayarlarda şeyler var. Şimdi 32 GB da az.
+
+222
+00:40:57,076 --> 00:41:21,076
+Dolayısıyla her şey RAM'de tutulamadığı için bir de ne var bizim? Kalıcı, bir de RAM'in özelliği neydi? Volatile diye yapılıyor. Yani uçucu. Elektrik kitle mi RAM'de hiçbir şey kalmıyor. Onun için kalıcı olarak HDD dediğimiz veya şu an STD solid driver'larımız var. Bunlar daha böyle şey dememişte 1TB veya 10TB'lık artistlerimiz günümüzde var.
+
+223
+00:41:21,748 --> 00:41:32,748
+Gerektiğinde bu tarz veriler ne oluyor? Rame hardstic'den getiriyor. Ama hardstic'de şöyle bir durum var, Rame göre çok çok yavaşlıyor.
+
+224
+00:41:32,748 --> 00:41:43,748
+Dolayısıyla ben buradan beri Rame getireyim veya Rame'i devreden çıkarayım, CPU gitsin doğrudan hardstic üzerine yazmaya çalışsın dersek,
+
+225
+00:41:49,012 --> 00:42:08,711
+Sürekli veri aktarmaktan çok çok daha zor bir şey. Yani REM'e aktarırsınız veriyi, REM üzerinde çalışırsınız çok çok daha hızlanır. Bunlar bu elemanların fiziksel kapasiteleri ile alakalı. Yani hız kapasitesi veya hız kabiliyeti falan bu şeylerden kaynaklı. Bunlara müdahale edemiyorsunuz.
+
+226
+00:42:08,711 --> 00:42:09,512
+Hocam.
+
+227
+00:42:09,599 --> 00:42:12,360
+CPU'ya RAM eklesek daha hızlı olur mu?
+
+228
+00:42:12,360 --> 00:42:20,880
+CPU'ya RAM eklenmez, CPU içerisinde sadece register'lar vardır. CPU'ya RAM eklemek demek ne demek? Şuraya bir tane daha RAM atarsın, 32-64 yaparsın.
+
+229
+00:42:20,880 --> 00:42:31,360
+CPU'nun içine en fazla register'lar vardır. Bu register'larda 1-byte'lık, 2-byte'lık, 3-byte'lık, 4-byte'lık veriler tutarlar.
+
+230
+00:42:31,360 --> 00:42:36,640
+CPU'yu genişletirsen, CPU olmaktan çıkar.
+
+231
+00:42:37,396 --> 00:42:40,396
+Hocam, CPU'daki ön bellek olayı neydi?
+
+232
+00:42:40,396 --> 00:42:53,396
+Ön bellek dediğim şey, şuradaki CPU'nun bir tane içinde, işte L1 cache dediğimiz veya CPU ile RAM arasında L2 cache, L3 cache dediğimiz bellek yapıları.
+
+233
+00:42:53,396 --> 00:42:59,396
+Bunlar RAM'e göre biraz daha hızlı, CPU içerisindeki register'lara göre daha yavaş.
+
+234
+00:42:59,396 --> 00:43:02,284
+Şu araya cep bellek koyuyorsunuz.
+
+235
+00:43:02,483 --> 00:43:24,483
+Bir yerden sonra şu da karşımıza giriyor. Sürekli RAM'den bir şeyleri getirmek, buraya yazmak, cp getirip götürmek, o da yavaşlatıyor. Arada bir tane cep bellek koyarak sürekli RAM'den getirmek yerine cache bellek üzerinden getiriliyor. O da öyle bir donanım çözümü. Ama o da kapasitesi şey. Örneğin bu...
+
+236
+00:43:24,864 --> 00:43:36,384
+64 MB'tir yani. Bakın, burada Gigabyte'tan bahsediyor, 64 MB. Çok küçük yapılar, yetmiyor. Cache'lerin özelliği de bu.
+
+237
+00:43:36,384 --> 00:43:50,943
+Şu an hani Cache'in varlığı bizim için hiç küçücüğüm değil bazı durumlardan. Niye çözüm değil? Birazdan problemi söyleyince, yani burada RAM işe yaramıyorsa Cache hiç işe yaramıyor diyeceğiz. Tamam mı arkadaşlar?
+
+238
+00:43:53,012 --> 00:43:59,152
+Şimdi, External Merge Sort bu yapıda neye karşılık gelecek? Şurayı bir sileyim önce.
+
+239
+00:43:59,152 --> 00:44:14,012
+Örneğin, sizin RAM'iniz 1 GB olsun. Eski tarz RAM'lerdi.
+
+240
+00:44:14,012 --> 00:44:19,980
+Data dediğim şey, harç üzerinde tutulacak bir şey.
+
+241
+00:44:19,987 --> 00:44:21,987
+9 GB olsun.
+
+242
+00:44:23,187 --> 00:44:29,987
+Ve problem olarak da sort data diyeceğiz.
+
+243
+00:44:32,187 --> 00:44:39,987
+Şimdi bizim insertion sort, bubble sort, ondan sonra selection sort algoritmalarımızın karmaşıklığı ne?
+
+244
+00:44:40,287 --> 00:44:45,987
+Zaman karmaşıklığı n kare. Yani 9 GB'lık data yeri sıralamak için
+
+245
+00:44:46,175 --> 00:45:12,935
+81, yani 9 GB ne kadardır, kaç tane verilir? 9 böyle yazılır, Giga dediğim şey 2 üzeri 30'dur. Şu 9'u yaklaşık olarak hani 2 üzeri 3 desek, 2 üzeri 33 tane bellek hücresine ihtiyacınızdır. Şimdi bunu sıralama yaptığınızda 2 üzeri 33'ün karesi kadar, yani ne oluyor 2 üzeri 66 kadar
+
+246
+00:45:13,235 --> 00:45:36,235
+İşlem yapmanız gerekiyor. Belki işlemlerimiz bu kadar işlemi yapar. Ama mesele ne? Şimdi işlenecek datanın RAM'de tutulması değil mi? RAM'de olmadıktan sonra hardtiside doğrudan datanın olması bir anlam ifade etmiyor. Peki bu 9 GB'lık data 1 GB'lık RAM'e sığar mı? Fiziken böyle bir şey mümkün mü? Değil. O zaman ne yapacağız?
+
+247
+00:45:36,947 --> 00:45:53,947
+Şimdi bu external merge sort şöyle bir yaklaşım sunuyor arkadaşlar. Şöyle yapalım. Birincisi arkadaşlar şöyle diyelim. Rem'i şöyle çizeyim. Buna Rem diyelim.
+
+248
+00:45:57,172 --> 00:46:04,172
+RAM'i mesela 100 MB'lık parçalara böreceğiz. 10 tane parçaya böreceğiz.
+
+249
+00:46:04,172 --> 00:46:18,172
+Hatta şöyle 1,3,4,5,6,8,9,10. Bunlar hepsi 100 MB.
+
+250
+00:46:21,300 --> 00:46:23,300
+Bu parçalara böldük.
+
+251
+00:46:23,300 --> 00:46:28,300
+Şimdi, datayı da arkadaşlar, 9 GB datayı da
+
+252
+00:46:34,708 --> 00:46:37,708
+Şöyle 1 GB'lık parçalara bösek.
+
+253
+00:46:39,708 --> 00:46:40,708
+1 GB
+
+254
+00:46:44,947 --> 00:46:53,387
+Şu 1 GB'lık datayı RAM'e getirsem, hatta şu an 100 MB'lık parçaya da bölmeye gerek yok.
+
+255
+00:46:53,387 --> 00:47:00,307
+Şöyle diyelim, data burada dur. 101 GB'lık datayı RAM'e getirdim. Getirebilir miyim? Getirebilirim.
+
+256
+00:47:00,307 --> 00:47:07,307
+Bunu sıraladım. Şimdi yerinde sıralama yapmam gerekiyor çünkü 1 GB RAM'in tamamını kapladı.
+
+257
+00:47:07,635 --> 00:47:17,876
+Yerinde sıralama yapmak için Merge Sort kullanamam. Çünkü Merge Sort ne yapıyor? External Merge var mı? Hani buradaki Merge Sort bizim bildiğimiz Merge Sort değil. Oradaki Merge işlemini kullanacağız.
+
+258
+00:47:17,876 --> 00:47:34,195
+1 GB getirdim. İsterseniz Selection Sort ile ama biraz daha hızlı olsun derseniz Quick Sort ile datayı sıralarsınız. Şu 1 GB. Sıraladığım kısmı getirdiniz, yerine yazdınız. Sonra bunu getirdiniz, sıraladınız. Ne oldu?
+
+259
+00:47:34,996 --> 00:47:39,355
+Alt segmentleri sıralanmış bir dizi elde edersiniz değil mi arkadaşlar?
+
+260
+00:47:39,355 --> 00:47:43,436
+Dizinin kendisi tamamen sıralanmış oluyor mu bunu yaparak da?
+
+261
+00:47:48,340 --> 00:47:55,700
+Olmuyor gibi hocam. Olmuyor değil mi? Çünkü merdiven gibi bir şey oluyor burada biraz. Tam merdiven de değil de gerçi.
+
+262
+00:47:55,700 --> 00:48:06,740
+Aynen yani sıralı 10 tane parçamız var gibi. Yani şöyle diyelim, aynen 10 tane parçamız var. İşte şurada 2 olsun, 8 olsun, 18 olsun.
+
+263
+00:48:06,867 --> 00:48:33,588
+Şurada 1 olsun, 4 olsun, 7 olsun. Yani tablına böyle devam ediyor. Şurada 70 olsun, 78 olsun, 98 olsun. Şurada 71 olsun, 77 olsun, 80 olsun. Böyle bir dizi. Kendi içlerinde sıralı ama genele baktığımızda hala sıralı değil. Şimdi böyle bir ön işlemle ne yaptık? Daha sıralamaya yakın hale getirdik.
+
+264
+00:48:34,228 --> 00:48:40,627
+Şimdi, her bir grubu sıraladıktan sonra şunu yapabiliriz. External merge code aslında bunu yapacak.
+
+265
+00:48:40,627 --> 00:48:49,228
+Şimdi biz bir merge algoritması ikili merge algoritması kodlamıştık, hatırlatmıştık. Dönemi ilk haftalarında yaptık.
+
+266
+00:48:49,228 --> 00:48:58,427
+Ne yapıyorduk orada? Şuraya daha hızlıca hatırlatayım. Bir tane sıralı olduğunu bildiğim bir dizim var. Bir tane daha sıralı olduğunu bildiğim bir dizim var.
+
+267
+00:48:58,427 --> 00:49:01,228
+İşte burada i değişkeni dedik, şuraya j dedik.
+
+268
+00:49:01,684 --> 00:49:06,684
+Bu iki diziyi birleştireceğim. İki sıralı diziyi tek bir sıralı diziye birleştireceğim. Ne yapıyordum?
+
+269
+00:49:07,684 --> 00:49:16,184
+A'nın İ'sine bakıyordum, B'nin J'sine bakıyordum. Hangisi daha küçükse onu alıp şuradaki K'ıncı yere yazıyordum.
+
+270
+00:49:16,684 --> 00:49:23,684
+Ve İ'yi bir arttırıyordum. Mesela İ daha küçük olsun. Ne olacak? İ buraya geldi. Daha sonra A'nın İ'si ile B'nin J'sine bakıyordum. Hangisi daha küçükse?
+
+271
+00:49:24,184 --> 00:49:28,184
+Ne yapıyorduk? Böyle merge yapıyorduk değil mi? Bakın bu merge işlemi, sort işlemi değil.
+
+272
+00:49:28,371 --> 00:49:35,692
+Bu sıralı, bu da sıralı, bu sıralı iki diziyi şuraya birleştiriyordu. Burada karmaşıklık ne oluyordu? Şunun boyutu arttı, şunun boyutu kadar.
+
+273
+00:49:35,692 --> 00:49:45,451
+Yani buraya n dersek, buraya m dersek, n artı m kadar, ikisine de hatta n diyelim, n artı n kadar, yani iki n kadar işlem.
+
+274
+00:49:45,451 --> 00:49:55,132
+Bu ikiyi de görmezden gelirsek ortamına n tane işlem yapıyoruz. Doğru mu? Burayı hatırladık mı? Şimdi bunu kullanacağız.
+
+275
+00:49:55,539 --> 00:50:00,140
+Ama ikili değil, bu sefer daha farklı bir şekilde kullanacağız.
+
+276
+00:50:01,940 --> 00:50:09,099
+Yapacağımız strateji şu olacak arkadaşlar. Bizim RAM'imizi 100 MB'lık parçalara gördük.
+
+277
+00:50:09,880 --> 00:50:12,440
+Şimdi biliyoruz ki şu
+
+278
+00:50:13,460 --> 00:50:16,268
+part dişteği, burası HDD, tekrar yazayım.
+
+279
+00:50:16,467 --> 00:50:42,427
+Bu bölgedeki datalarımız kısmen sıralı. Diyorum ki, şuradan bir 100 MB al, getir buraya koy. 9 GB olduğu için ne olacak? Biri buraya, biri buraya, biri buraya, biri buraya, biri buraya, biri buraya, biri buraya, bir buraya, bir buraya, bir buraya, bir buraya, şurası boş. Niye boş? Çünkü 9 GB'lık datam var. Şurada da 900 MB'ni almış olduk değil mi? Her birinin.
+
+280
+00:50:42,815 --> 00:50:45,496
+İlk 100 MB'lık kıtımlarını aldık.
+
+281
+00:50:45,496 --> 00:50:56,815
+Şimdi şurada arkadaşlar öyle bir şey yazacağız ki, 9 taneli şurada ikili bahsettiğimiz şeyin burada dokuzlusunu yazıyoruz.
+
+282
+00:50:56,815 --> 00:51:01,815
+Yani bunu dokuzu değil enli olarak da yazabilirsin. Bu genelleştirilebilir bir şey.
+
+283
+00:51:01,815 --> 00:51:08,555
+Ne yapacak? Şunlara önce ilk datalarına bakacak. Hangisi en küçükse getirip buraya yazacak.
+
+284
+00:51:08,916 --> 00:51:12,195
+Ama birleştirme şurada oluyor, burada merge yapıyoruz.
+
+285
+00:51:15,235 --> 00:51:26,916
+Burada merge yapmanın detayına girmiyorum. 9'lu merge yapmak demek, 9 tane değişken tanımlarsınız veya 10 tane değişken tanımlarsınız, dizi üzerinden yapılır. Bunu yapan algoritmalar var.
+
+286
+00:51:27,316 --> 00:51:30,916
+Şimdi ne oluyor peki burada? Şurası bir yerden sonra doluyor değil mi arkadaşlar?
+
+287
+00:51:30,916 --> 00:51:35,235
+Burada karşılaştırma yaptınız, her birinin ilk datalarına baktınız.
+
+288
+00:51:36,148 --> 00:51:42,148
+Ve şunların her birinde bir pointer'larınız var, işaretçileriniz var. Ne oluyor? Bunlar şuraya doğru ilerliyor.
+
+289
+00:51:42,148 --> 00:51:49,148
+Ve şurası bir yerden doluyor. Şimdi burası dolduğunda hard disk'in başka bir yerine dolu olan kısmı getiriyorsun.
+
+290
+00:51:49,148 --> 00:51:58,148
+Artık şu, çünkü burası dolu olan kısım ne? Bütün dataların ilk değerleri, bütün segmentlerin ilk değerleri alınarak
+
+291
+00:51:58,260 --> 00:52:08,260
+Dizi artık şuradan itibaren sıralı bir şekilde ilerlemeye başlıyor. Bakın burası artık bir yeri, burası başka yeri. Şimdi burası tamamen dolduğunda getirdim buraya yazdım.
+
+292
+00:52:08,260 --> 00:52:19,260
+Şimdi burası tamamen dolması ne demek? Şuralarında artık ne olması? İlerlemesi demek. Sonra buradan ikinci, üçüncü artık neresi boşalıyorsun hangi segmente?
+
+293
+00:52:19,260 --> 00:52:22,828
+Boşaldıkça buraya veri aktarıyorsun.
+
+294
+00:52:22,900 --> 00:52:28,219
+Şurası bir taraftan boşalacak duruma giriyor, şurası bir yandan doluyor, doldukça burayı buraya dolduruyoruz.
+
+295
+00:52:28,219 --> 00:52:36,900
+Boşaldıkça buradan veri geçiyoruz. Bakın burası hard disk'in bir yeri, şurası RAM. RAM sürekli bir doluyor bir boşalıyor.
+
+296
+00:52:36,900 --> 00:52:46,500
+Burası da hard disk'in bir başka yeri. Bu işin sonunda bütün datalar böyle sırayla girip hard disk'in yeni yerinde ne olmuş oluyor?
+
+297
+00:52:46,771 --> 00:53:00,371
+Sıralı bir halde gelmiyoruz. Sıralı bir şekilde yerleştirmiş oluyor. Sonra eski yere, eski yerdeki verileri siliyorsunuz. Yani yer israfı olmasın diye. Sadece siz aslında bunun işaretçisini siliyorsunuz.
+
+298
+00:53:00,371 --> 00:53:11,971
+Orijinal datalarınız yeni yerde sıralanmış bir vaziyette. Aynı şekilde erişirsiniz. Yani örneğin bir klasördür, bir dosyadır. Dosyanın yeri değişir ama siz o dosyaya yine ismen ulaşabiliyorsunuz arkadaşlar.
+
+299
+00:53:12,275 --> 00:53:17,275
+Evet, Merge Sort, External Merge Sort dediğimiz kavram bu. Burada anlaşılmayan bir şey var mı?
+
+300
+00:53:22,099 --> 00:53:34,099
+Genel olarak, önce ne yaptık? 9 GB bir data ise, her GB'ını ne yapmış olduk? 1 GB belleğe sığacak şekilde böldük.
+
+301
+00:53:34,099 --> 00:53:41,099
+Her GB'ı kendi içinde QuickSort ile sıralamak en kolay. Çünkü QuickSort ne yapıyordu? Yerinde sıralıyordu.
+
+302
+00:53:41,099 --> 00:53:46,099
+Bakın, 1 GB'ı 1 GB'lık bir RAM'de MergeSort ile sıralayamaz. Niye?
+
+303
+00:53:46,304 --> 00:54:10,503
+Merge Sort ayrıca 1 GB'lık yere ihtiyaç duyuyordu. Ama Quick Sort, Selection Sort gibi algoritmalarla yerinde her bir segment sıraladık. Sonra her bir segmenti 100 MB'lik alt bölümleri alıp bellekte şunu alayım, bunu alayım, bunu alayım dediniz. Sonra bunları burada Merge yapa yapa ve bir yandan da Hardtik'e elde ettiğiniz konuşları yaz ayırlar.
+
+304
+00:54:10,751 --> 00:54:20,751
+Bu datayı bu şekilde sıralayabiliyoruz. Elbette başka yollar var da, burada hard tipi de işin içine sokarak böyle bir problem çözünü gerçekleştirmişler arkadaşlar.
+
+305
+00:54:20,751 --> 00:54:29,751
+Burada şimdi data structure dediğimiz konu, diziler, matrizler diyoruz ve bu data structure'lar RAM üzerindeki veri yapılar arkadaşlar.
+
+306
+00:54:29,751 --> 00:54:38,699
+Siz bir dizi tanımladığınızda, matriz tanımladığınızda veya ağaç oluşturduğunuzda, linked liste oluşturduğunuzda bunlar RAM'de olan şeyler, linked list.
+
+307
+00:54:39,603 --> 00:54:48,603
+Sonra array, sonra iki boyutlu array, üç boyutlu array. Bunlar RAM üzerinde oluyor. Bir de disk data structure'lar var.
+
+308
+00:54:48,603 --> 00:54:54,603
+Yani orada daha çok ağaçlardan, dengeli ağaçlardan yararlılıyor. İşte onun da ayrı dersi var.
+
+309
+00:54:54,603 --> 00:55:05,603
+File organization diye bakarsanız belki inceleyebilirsiniz. Disk data structure'lar üzerinde de sıralama gibi işlem yapabilmek kısmen mümkün.
+
+310
+00:55:06,963 --> 00:55:16,443
+Şimdi etki harçlıkları konuşacak olursak, 7200 RPM diye, RPM diye bir şey görmüşsünüzdür belki.
+
+311
+00:55:16,443 --> 00:55:23,323
+Şimdi işlemci dediğimiz şey gigahertzlerle çalışıyor arkadaşlar. Bakarsanız işlemcinin özelliğine gigahertz.
+
+312
+00:55:23,323 --> 00:55:29,483
+Bu ne demek? Örneğin 1 gigahertzlikler işlemci olsun ki günümüzdeki işlemciler daha yüksek.
+
+313
+00:55:29,483 --> 00:55:33,523
+Saniyede 10 üzeri 9 tane işlem yapabiliyor demek.
+
+314
+00:55:34,900 --> 00:55:43,659
+Komut işleyebilir demektir. Tamam mı? Bunun frekansı, bu ise hertz frekans birimi, 10 üzeri 9 tane işlem yapabilir.
+
+315
+00:55:43,659 --> 00:55:53,019
+RAM'e geldiğimizde bunlar megahertz ile çalışıyor. Örneğin 10 megahertz diyelim, 10 çarpı 10 üzeri 6 tane, 10 üzeri 7 tane.
+
+316
+00:55:53,019 --> 00:55:59,019
+Bakın burada 10 üzeri 9, bu 10 üzeri 7. Bu bunun kaç katı? RAM'in kaç katı o?
+
+317
+00:56:01,396 --> 00:56:03,396
+10 üzeri 2 katı mı hocam?
+
+318
+00:56:03,396 --> 00:56:12,396
+Aynen, 10 üzeri 2. Yani 100 katı kadar daha hızlı. Düşünün bakın, arada 10 üzeri 2 fark var, o 2 kat falan değil. 100 kat.
+
+319
+00:56:13,396 --> 00:56:21,396
+Dolayısıyla, bir işlem yapılacaksa, işlemci çalışma frekansı, işlemci aslında çoktan bu işi yapıyor.
+
+320
+00:56:21,396 --> 00:56:29,164
+Mesela diziyi sıraladığınız ekrana yazdırıyorsunuz, ekranda böyle uzun uzun yazıyor. Halbuki o çoktan sıralandı.
+
+321
+00:56:29,268 --> 00:56:46,067
+Yani işlemci onu çoktan bitirdi. Sadece işte RAM üzerinden ekran kartına gitmesi, ekrandan ekrana bastırılması gibi işlemler uzun olan şey. Onun için RAM biraz yavaş. Şimdi art diske gelince art bundan daha yavaş. Şimdi Route per minute'tur bu.
+
+322
+00:56:48,467 --> 00:56:55,427
+7200 defa dakikada dönüyor. Şimdi dakikayı saniyeye çevirelim. Bir dakikada
+
+323
+00:56:55,487 --> 00:57:07,248
+Yani 60 saniyede 7200 defa dönüyorsa 1 saniyede kaç defa dönecek hesabını yaparsak bunu hertz ile çevirebiliriz.
+
+324
+00:57:07,248 --> 00:57:09,807
+Nedir bu da? 120 hertz.
+
+325
+00:57:09,807 --> 00:57:14,688
+Bakın burada megahertz den bahsettik. Yani mega demek 10 üzeri 6 demek.
+
+326
+00:57:14,688 --> 00:57:21,007
+Burada giga dedik 10 üzeri 9. Burada hertz'ın kendisi var. Yani bildiğiniz 120. 10 üzeri bir şeylisi yok.
+
+327
+00:57:21,204 --> 00:57:41,963
+Yani, hatta bunu 10 üzeri 2 diyelim yaklaşık olarak. Şimdi 10 üzeri 2 diyoruz, 10 üzeri 6 diyoruz, 10 üzeri 9 diyoruz. Yani burada 10 üzeri 7 kat, milyondan 10 milyon kat daha hızlı bir yapı var. Dolayısıyla bunu disk üzerinde yapabilmek mümkün ama çok çok geciktirici bir şeydir. Meselenin özü bu arkaç.
+
+328
+00:57:46,612 --> 00:57:53,972
+Hocam, SSD'lerde direm olabiliyor ya hani, o şekilde mi hızlandırmaya çalışıyorlar?
+
+329
+00:57:53,972 --> 00:58:01,972
+SSD'lerin çalışma mantığı, şimdi hard disklerin kullandıkları malzeme yapısıyla, SSD'nin kullandığı malzeme yapısı farklı.
+
+330
+00:58:01,972 --> 00:58:05,411
+SSD'nin daha hızlı günümüzde kullanılan artık her yerde.
+
+331
+00:58:05,411 --> 00:58:07,612
+SSD'nin videomu için SSD'nin izleyin.
+
+332
+00:58:07,612 --> 00:58:12,612
+Daha hızlı, yani bakalım mesela SSD'yi bir frekans bakalım.
+
+333
+00:58:12,612 --> 00:58:14,604
+SSD...
+
+334
+00:58:14,771 --> 00:58:21,771
+Ssd'de tam bir sözüm değil yani. Bir de maliyeti yüksek.
+
+335
+00:58:21,771 --> 00:58:29,771
+Tabi burada ssd'de doğrudan hani şey...
+
+336
+00:58:40,820 --> 00:58:43,820
+Şöyle bir tane... Yok, niye çıkanıyor?
+
+337
+00:58:54,900 --> 00:58:56,900
+Ssd kartını...
+
+338
+00:58:56,900 --> 00:59:00,900
+Bir saniye araştırıyorum da, yani siz de bakabilirsiniz.
+
+339
+00:59:00,900 --> 00:59:02,900
+Ssd, ssd, ssd...
+
+340
+00:59:02,900 --> 00:59:05,900
+Örnektir, şey üzerinden bakacağım.
+
+341
+00:59:12,788 --> 00:59:29,788
+Saniyede okuma hızı 470 MB denmiş. Yani burada 470 MB veri okuyorsa bunu megahertz cilsinden söyleyebiliriz. Dolayısıyla bir RAM'e yaklaşıyor. Kabaca tabii ki.
+
+342
+00:59:33,876 --> 01:00:01,016
+Ben araştırdığımda hocam, DRAM diye bir şeyler kullanılıyormuş. Yani kullanılan malzeme, dinamik RAM, onu şimdi söyleyeceğim. Sonuçta ne kullanırsan kullan, bunun bir çalışma frekansı vardır. Yani RAM'in de çalışma frekansı, işlemli de çalışma frekansı, şunun da çalışma frekansı. Yani bu 120 Hz'lik bir şey, 7200 RPM. 7200 RPM de en iyi eski artistlerin dönme hızı. 5400'ler vardı, 7200'ler vardı.
+
+343
+01:00:01,300 --> 01:00:14,900
+Bu açıdan diyorum. SSD kullandığındaki şey, çalışma frekansı senin SSD'nin hızını ifade ediyor. Tamam mı? Arkadaki malzeme zaten SSD'yi SSD yapan o dinamik remme.
+
+344
+01:00:14,900 --> 01:00:24,700
+Şimdi eski harfistiklerde kullanılan şey peromanyetik malzemeler arkadaşlar. Orada demir tozlarından oluşan bir manyetik malzeme var.
+
+345
+01:00:24,700 --> 01:00:28,100
+Okuma yazma yapılıyor, blok şeklinde. Onun için yavaş.
+
+346
+01:00:28,371 --> 01:00:42,371
+SSD'ler de cache yapılarına benzer şekilde transistörler ve fondansörler, bildiğim kadarıyla daha çok transistörler görev oluyor ve veriyi hem kalıcı saklayabiliyorsun hem de daha hızlı okuma yazma işlemi yapabiliyorsun.
+
+347
+01:00:42,371 --> 01:00:49,371
+Dinamik RAM'den kastet budur. Bir statik RAM'ler vardır, bir de dinamik RAM'ler vardır. Bunların detayları donanım dersinde görecek.
+
+348
+01:00:49,371 --> 01:00:55,371
+Yani işin tasarım, fiziksel tasarım boyutunda onlar hızlandırma yapıyor ama...
+
+349
+01:00:56,052 --> 01:01:21,452
+Sonuçta yine ne kullanırsan, kullan, onun çalışma frekantına bakacaksın. İşte şurada bizim, benim yani gördüğüm şey işte megahertz seviyesi gibi anladım ben. Yani tekrar bakmak lazım da hani bir FSD hard disk de çıkıp onun şeyine bakıp, ne derler, özelliğine bakıp, bakayım şurada bir e-ticaret sitesinden bulabilirsem. High level 120 GB.
+
+350
+01:01:24,500 --> 01:01:48,500
+Mesela şuradan reklam gibi olmasını istiyorum da birazcık. Evet. 120 GB bir şey varmış. Bakın yazma hızı 530 MB saniyede, okuma bundan biraz daha hızlı 550 MB. Şimdi saniyedeki okuma yazma hızları şey, yani bunu bir frekansa çevirirseniz, yani bu kadar veri okuma yazma iyi bir şey.
+
+351
+01:01:48,755 --> 01:01:58,755
+Megahertz deviyeti denebilir belki. Dönüştürmek gerekiyor, hesap yapmak gerekiyor. Klasik artistlere göre çok çok daha hızlı elbette.
+
+352
+01:01:58,755 --> 01:02:07,755
+Tamam mı? Başka sorumuz var mı? Şimdi farklı bir konuya giriş yapacağız.
+
+353
+01:02:07,755 --> 01:02:14,755
+Öncesinde isterseniz ara verelim, geldiğimizde blok yapalım arkadaşlar. 10 dakika 25 geçiyor, 35 geçiyor.
+
+354
+01:02:16,403 --> 01:02:22,824
+Geldiğinizde devam ederiz. Görüşmek üzere. Bu arada sorusu olan varsa sorabilir, ben buradayım.
+
+355
+01:02:26,739 --> 01:02:29,940
+[öğrenci], duyuyor musun beni? [öğrenci] miydi?
+
+356
+01:02:49,331 --> 01:02:51,331
+Hocam, soru sorabilir miyim?
+
+357
+01:02:51,331 --> 01:02:53,331
+Tabii tabii sorabilirim, ben buradayım.
+
+358
+01:02:53,331 --> 01:02:58,331
+[öğrenci] sorusu açabilir misiniz? Az önce.
+
+359
+01:02:58,331 --> 01:03:00,331
+Şunu, yani şurada.
+
+360
+01:03:00,331 --> 01:03:02,331
+Birleştirme algoritması.
+
+361
+01:03:02,331 --> 01:03:03,331
+Evet.
+
+362
+01:03:05,331 --> 01:03:10,331
+Şimdi tam olarak birleştirme yapılabiliyor mu hocam burada?
+
+363
+01:03:10,331 --> 01:03:15,331
+Yaparsın tabii. Yani şimdi her bir segment üzerinde...
+
+364
+01:03:15,891 --> 01:03:32,891
+Mesela şöyle sorayım hocam, diyelim ki bütün 9 GB'da 100, 100, 100, 100 alıyor ya, onların hepsini sıraladığı başka bir yere. Sonra yeni gelen bir başka yerde, 102. de en küçük değer sıraladığı yerdekinden daha küçük.
+
+365
+01:03:32,891 --> 01:03:34,891
+Öyle bir şey olabilir mi?
+
+366
+01:03:34,891 --> 01:03:36,891
+Olabilir.
+
+367
+01:03:36,891 --> 01:03:38,635
+Hayır, şimdi bak.
+
+368
+01:03:38,835 --> 01:03:44,635
+Şimdi bizim şuradaki her bir segmentimiz, her bir gigabaytımız sıralı kendi içinde. Değil mi?
+
+369
+01:03:44,635 --> 01:03:49,955
+Biz bunun ilk bölümlerine ilk 100 megabaytlık yerlerini aldık. Sıralı.
+
+370
+01:03:49,955 --> 01:03:51,795
+Sıralara yerleştirdik.
+
+371
+01:03:51,795 --> 01:03:59,635
+İlk başta yaptığımız şey, bütün bir datayı parça parça parça parça ramde sıralamaktır. Tamam mı?
+
+372
+01:04:01,012 --> 01:04:10,012
+Dolayısıyla şurada zaten sıralı bir verimiz var. Dolayısıyla sen bunun ilk 100 MB'li kısmını aldığında, şuradaki ilk 100 MB'li kısmını aldığında ne olacak?
+
+373
+01:04:10,012 --> 01:04:17,012
+Bunlar yavaş yavaş şuradaki aldığın yerler tükenecek. Şurada merch edilecek. Merch ettikleri de buraya yazacaksın. Tamam mı?
+
+374
+01:04:17,012 --> 01:04:20,012
+Sıralı olduktan unutmuşum hocam, pardon.
+
+375
+01:04:20,012 --> 01:04:27,724
+O olmadan olmaz var. Bir şeyi merch edebilmek için, iki sıralı diziyi merch edebilmek için ön şart...
+
+376
+01:04:27,795 --> 01:04:29,451
+İlian sıra bulması.
+
+377
+01:05:31,188 --> 01:05:37,588
+Hocam, RAM'ler de aslında artık GHz cinsinden ölçülebilir bence.
+
+378
+01:05:39,588 --> 01:05:53,988
+Şimdi, eğer o tarz RAM'ler varsa, yani tabi biz önceden RAM'leri, yani işte 4 GB'lık bir RAM, çalışma frekansı 1000, kaçtı ya? 700 MHz, dur bakayım bir tane RAM bakayım.
+
+379
+01:05:54,356 --> 01:06:04,856
+En son hocam, çünkü DDR4, DDR5 RAM'ler 3600-4500 civarlara geçti. 1000 dediğimiz için de artık hediyebiliriz sanki.
+
+380
+01:06:04,856 --> 01:06:13,856
+Ama işlemci çok çok daha yüksek GHz'de. Şöyle baktığımda 1 GHz dedim de ben.
+
+381
+01:06:14,132 --> 01:06:34,132
+Belki 40 GHz seviyesinde veya daha yüksek kapasiteli olanlar var. Bir de işlemcinin şöyle bir durumu var, işlemcide tek bir tane core yok. Yani işlem ünitesi yok. Aynı anda ne kadar geliyor? 4 tane core oluyor, 8 tane core oluyor. Hatta ben kendim işlemcisine bir bakayım.
+
+382
+01:06:34,132 --> 01:06:42,028
+Bir de oradan threadler de var dedik. Yani totalde işlem gücü... Her türlü belleği aşıyor.
+
+383
+01:06:42,164 --> 01:06:52,563
+Her türlü aşıyor. Bu bilgisayar bakın, 2000 kaç yılında aldım? 2013 yıllık, 10 yıllık olmuş. Buna baktığım zaman nerededir işlemcisi?
+
+384
+01:06:53,764 --> 01:06:56,963
+Hocam, isterseniz görev yöneticisinden de bakabilirsiniz.
+
+385
+01:06:57,963 --> 01:07:02,963
+Device Manager'dayım da şu an gördüğüm şey var değil mi? Aşağıda prosesör var hocam.
+
+386
+01:07:03,764 --> 01:07:09,764
+Bakın bu 1.7 GHz'lik bir bilgisayarmış. Yani çok 3. neslet işlemci.
+
+387
+01:07:09,903 --> 01:07:33,903
+i5. Bunu nasıl hızlandırdım? Ben de SSD ile hızlandırdım. Yok eski şey ile çok yavaş çalışıyorduk. Bunun RAM'leri mesela burada görünüyor mu? Bunda kaç RAM vardı ya? Şuradan görebiliriz 600 GB RAM varmış. İş görüyor mu ders anlatırken falan yeterli oluyor gayet iş görüyor bana. Bu RAM'lerin...
+
+388
+01:07:33,972 --> 01:07:42,871
+Hani, feature'larına baktığınızda, bunlar megahertz, veya belki 1033 megahertz bir RAM olabilir.
+
+389
+01:07:42,871 --> 01:07:45,972
+Çok çok daha işlemci bundan hızlı.
+
+390
+01:07:45,972 --> 01:07:52,972
+Yani işte donanım çözümü ayrı zaten.
+
+391
+01:07:52,972 --> 01:07:58,764
+Bizim mechatronik bölümünde bir hocamız vardı, şu an art disklerin...
+
+392
+01:07:58,867 --> 01:08:05,467
+Kullandıkları malzemeler için farklı araştırmalar yapılıyor demişti Japonya'da özellikle.
+
+393
+01:08:06,607 --> 01:08:16,108
+Feromanyetik malzemeler ve SSD'deki kullanılan malzemeler, bu metaloji malzeme mühendisliği var ya, onun da bir konusu aslında.
+
+394
+01:08:16,108 --> 01:08:22,407
+Okuma-yazma konusunda bazı problemleri var. Bunları da aşacak yeni araştırmalar var.
+
+395
+01:08:24,564 --> 01:08:36,564
+Kirlikleniyor olay aslında hard disk ile ilgileniyor. Yani RAM'i hızlandırıyorsun ama hard disk'in hızlı değilse, en yavaş, en zayıf halkan kadar hızın oluyor.
+
+396
+01:08:36,564 --> 01:08:47,564
+Şurası çok yüksek, CPU'yu çok yüksek. RAM belki ondan biraz daha düşük ama hard disk çok çok daha düşük seviyede. Ama bu bütün sistemi etkileyeceği için...
+
+397
+01:08:47,988 --> 01:08:55,988
+Ne oluyor? Bilgisayarın sistemin harddiskin hızı kadar olmak durumuna kalır. Buna bottleneck diyorum, darboğaz.
+
+398
+01:08:55,988 --> 01:08:59,988
+Hocam şimdi şişe bozuluk değil bu bottleneck.
+
+399
+01:09:00,692 --> 01:09:04,692
+Hibrit metodlar var, direktmen harddiskten de veri alaraktan.
+
+400
+01:09:04,692 --> 01:09:13,692
+Alıyor ama algoritmik çözümler ayrı, donanumsal çözümler ayrı, hatta işletim sistemi tarzında sistem çözümleri ayrı.
+
+401
+01:09:13,692 --> 01:09:23,692
+Zaten bizim alanımız, hangi alandan gidiyorsan, donanım çalışacaksan, donanım çözümleriyle, yazılım çalışacaksan, yazılım çözümleriyle bunlarla meşgul olmalı.
+
+402
+01:09:23,692 --> 01:09:27,404
+Hocam, peki ısınınca neden hızları düşüyor?
+
+403
+01:09:27,764 --> 01:09:52,764
+Isınınca neden hızları düşüyor? Yani sistemde belli bir koruma şeyi var. Özellikle işlemcide belli fonksiyonlarını şey yapıyor, ne derler? Inaktif veya pasif koruma getiriyor. Bu biraz daha hızı azaltan bir şey. Çünkü çok aşırı derecede burada şey var. Şimdi onu da söyleyelim. İşlemci nasıl işliyor? İçerisinde yarı iletken malzemeler var. Yani 0 ve 1'ler. Bu yarı iletken malzemeler...
+
+404
+01:09:53,427 --> 01:10:01,868
+Translitör olarak çalışıyor. Belki bunun içerisinde 40 milyon tane, yanlış değilsem, Translitör var, mikro trans.
+
+405
+01:10:01,868 --> 01:10:15,427
+Bu transitör şöyle, içlerinde şöyle diyelim, böcik kapılar aslında. Bunlar böyle dip gibi şeyler. Sen bunları çalıştırdığında elektrik enerjisi veriyorsun. Şimdi iki, bunların arasında iletkenler var tabii.
+
+406
+01:10:15,667 --> 01:10:23,067
+Bu iletkenler elektrik enerjisi sayesinde ısınıyorlar. Bir de kapasite oluşuyor. İki iletken arasında böyle yalıtkan boşluklar var.
+
+407
+01:10:23,067 --> 01:10:29,467
+Şimdi rezistif ve kapasitif etki sayesinde burada ısı oluşuyor veya başka başka etkiler oluşuyor.
+
+408
+01:10:29,467 --> 01:10:35,868
+Sistemin bir şekilde kendini koruma altına alması lazım. Yok da sonuna kadar at gibi değil sonunda.
+
+409
+01:10:35,868 --> 01:10:40,667
+Hani şuursuzca çalıştırırsan atması çatlarsa bu da bir şekilde patlayacak, çatlayacak.
+
+410
+01:10:40,851 --> 01:10:50,152
+Böyle bir şey olmasın diye koruma modu yapıyorlar. Ben en genel hatları gösteriyorum, daha detaylı donanım özelliklerine de bakmak lazım.
+
+411
+01:10:50,152 --> 01:11:04,851
+BIOS üzerinde bazı yazılımla kontrol eden ayarlamaları var, bir de donanımın kendi içinde kendini kontrol eden, donanımsal koruma mekanizmaları var diyelim.
+
+412
+01:11:05,268 --> 01:11:14,268
+Yerine göre onlar devreye gidiyor ve bu sistemi rahatlatacak güvenlik şeyatçı oluşuyor aslında.
+
+413
+01:11:14,268 --> 01:11:23,115
+Çok aşırı ısınma olduğunda bunu bir pasif konuma getirip orada işi birazcık rahatlatacak aşamaya gelmiyor.
+
+414
+01:11:44,724 --> 01:11:48,652
+Yorum yoksa saatimiz gelmiyor, bir iki dakikamız daha var.
+
+415
+01:11:58,676 --> 01:12:06,676
+Hocam, biliyor musunuz bilmiyorum da, ekran kartları şu anda yapay zeka geliştirmek için kullanılıyor. Bu nasıl oluyor?
+
+416
+01:12:06,676 --> 01:12:24,396
+Ekran kartlarının da kendi içinde işlemcileri var. Yani GPU dediğimiz. Yapay zeka geliştirmekten kasıt orada şu. Yani GPU'lar da, şurada biz bir tane CPU içerisinde bir tane kordelik ya, veya dört tane kordelik.
+
+417
+01:12:24,627 --> 01:12:30,427
+Cpool'larda belki bu 40 tane falan da değil, belki binlerce core oluşuyor işlem elemanı.
+
+418
+01:12:30,427 --> 01:12:37,227
+Çünkü ekranın özelliğine grafik işlemi çok fazla matriz işlemi gerektirir.
+
+419
+01:12:37,227 --> 01:12:44,028
+O öyle bir donanım yapısına sahip ki o matriz işlemlerini çok çok hızlı yapması lazım.
+
+420
+01:12:44,028 --> 01:12:48,028
+Dolayısıyla belki binlerce hatta milyonlarca tam detaylarını bilmiyorum.
+
+421
+01:12:48,028 --> 01:12:50,227
+İşlem elemanı var onların içerisinde.
+
+422
+01:12:50,771 --> 01:13:02,771
+Yapay zeka kodlarını GPU üzerinde, Graphical Processing Unit dediğimiz bunlar üzerinde çalıştırarak daha hızlı sonuç elde edebiliyoruz. İşte yapay zeka modelleri eğitliyor.
+
+423
+01:13:02,771 --> 01:13:14,283
+Hatta GPU'dan da öte şimdi TPU, Tensor Processing Unit. Şimdi GPU'lar matriz temelli ama bunlar matrizin 3-4 boyutlusu temelli çalışıyor.
+
+424
+01:13:14,515 --> 01:13:40,775
+Mesela o da şu, biz biraz önce dedik ki şurada vektör çarparken, iki tane vektörü çarparken aslında şurada bir for döngüsü dönüyor değil mi? Ben bunu iki vektörü çarpacak bir donanım tasarlarsam bu for döngüsü en defa döndürmek yerine bir defa da bu vektörü çarpabilirim. Çünkü şununla şunu çarpmayı ilgilendiriyor. Hepsi birbirinden bağımsız koşabilir.
+
+425
+01:13:41,716 --> 01:13:50,716
+Böyle durumda, bu bir defaya indirgenebildiği gibi, bir matrisi tek seferde tek adımda çarpmanın donanım çözümleri de var.
+
+426
+01:13:50,716 --> 01:14:02,716
+Veya bir matrisi değil, üçe üçlük, pardon bir küp diyelim artık, üç boyutlu bir matrisi, üç boyutlu bir matris ile çarpmanın da donanım çözümleri var.
+
+427
+01:14:02,716 --> 01:14:08,716
+Onlar hem daha fazla işlem yapıyor, daha çok ölçekleme yapıyor ve bu ölçekleme sayesinde sen
+
+428
+01:14:08,960 --> 01:14:14,720
+N küpü belki N'lere veya hatta N'den de aşağıya, log N'lere indirgeyebiliyorsun.
+
+429
+01:14:14,720 --> 01:14:21,039
+GPU'ların veya TPU'ların mantığı da budur. Daha çok işlem elemanıdır.
+
+430
+01:14:21,039 --> 01:14:32,960
+Bu da şunun sayesinde bu, CPU üzerinde geliştirilen teknolojide işlem elemanları artık CPU'yu daha geliştirebiliyorsun ama ekran kartlarının geliştirme teknoloji biraz daha farklı.
+
+431
+01:14:33,140 --> 01:14:39,739
+İşlem açısından. Bakın orada hafızadan bahsetmiyoruz. Bunların da kendine ait RAM'leri var, o ayrı mevzu.
+
+432
+01:14:39,739 --> 01:14:46,739
+Orada daha çok işlem yapacak şeyler mümkün hale gelmiş, donanım olarak yapılmıştır.
+
+433
+01:14:54,131 --> 01:14:57,891
+Bir dakika bekleteceğim arkadaşlar, hemen başlayacağız.
+
+434
+01:16:10,036 --> 01:16:20,395
+Şimdi arkadaşlar, gelelim başka bir konuya. Şimdi bizim ekran görünüyor herhalde yazdığım şey. Problem...
+
+435
+01:16:23,444 --> 01:16:27,844
+Types dediğimiz, bunu gelecek dönemlerde daha detaylı inceleyeceksiniz.
+
+436
+01:16:28,644 --> 01:16:30,444
+Bir konuda, problem tipleri.
+
+437
+01:16:31,244 --> 01:16:33,444
+Ne demek problem tipi? Ne anlaşılıyor buradan?
+
+438
+01:16:34,844 --> 01:16:36,244
+Çok genel bir kavram değil mi?
+
+439
+01:16:40,916 --> 01:16:55,796
+Şimdi problemler, çözülebilirlik açısından en genel haliyle iki parçaya ayrılmış. P-type, NP-type.
+
+440
+01:16:59,060 --> 01:17:14,060
+P-type dediğim şey, polinomiyalı. Polinom nedir? n karedir, n küptür, n üzeri dörttür, böyle şeylerdir değil mi? np ne olabilir peki sizce?
+
+441
+01:17:16,060 --> 01:17:18,060
+Non-polinomiyalı.
+
+442
+01:17:28,340 --> 01:17:55,460
+Polinomizm. Şimdi bir problemi, bakın bunlar problemlerin türleri. P-type ne demek? Eğer bir problemi çözebilen polinom zamanlı bir algoritmanız varsa bu P-type bir problemdir. Örneğin sıralama diyelim. Sıralamayı biz en kötü nasıl bir karmaşıklıkla çözüyoruz?
+
+443
+01:18:00,787 --> 01:18:23,587
+Insertion Sort'un karmaşıklığı nedir? N kare. N kare veya n log n, quick sort. Bakın bu n log n zaten polinom zamandan daha aşağıda bir zamanda. N kare bir polinom zamanda. Ben sıralama problemini, bakın sorting bir problem. Sorting için bir algoritma yazdınız. Selection Sort.
+
+444
+01:18:26,387 --> 01:18:34,708
+Bu konuların daha detayları gelecek ki ben bu derse uygun haliyle. Bu bir problem. Bu da bir algoritma.
+
+445
+01:18:36,228 --> 01:18:42,948
+Ben bu problemi Selection Sort N² algoritma ile çözebildiğim için bu bir P-type problemdir.
+
+446
+01:18:43,507 --> 01:18:45,987
+Algoritmalar P-type olmaz arkadaşlar.
+
+447
+01:18:46,644 --> 01:19:06,644
+Problemler, bakın p-type veya non-p-type veya bunun np-complete, np-hard denen farklı versiyonlar da var ama biz np diyelim np en genel hali tamam mı? Ondan sonra mesela sıralama, arama algoritmaları gibi bunlar nedir? p-type problemlere önerilmiş algoritmalar.
+
+448
+01:19:07,283 --> 01:19:18,884
+Genellikle çok karıştırılıyor. Bazen ben bile söylerken işte arama algoritması veya selection sort P-type'dır, algoritmadır diyoruz ama o yanlıştır. Problemler kendisi yaparlandır.
+
+449
+01:19:18,884 --> 01:19:28,683
+Peki non-deterministik ne demek? Deterministik olan şey nedir arkadaşlar? Deterministik ne demek? Önce onu bilelim.
+
+450
+01:19:34,355 --> 01:19:38,855
+Belirli. Belirli olan ne? İdala açar mısın bu arada?
+
+451
+01:19:43,539 --> 01:19:47,539
+Bir şeye deterministik deyince, hani, oradan ne anlayabiliriz?
+
+452
+01:19:49,039 --> 01:19:55,539
+Felsefede böyle bir şey var değil mi? Determinizm diye bir felsefe var. Ben yazarken sen, ben söylerken en yazın.
+
+453
+01:19:56,039 --> 01:19:58,539
+Hocam, sonucu belli falan gibi bir şey mi?
+
+454
+01:19:59,840 --> 01:20:03,539
+Sonucu belli, yani, onu açarsam, şimdi, [öğrenci]'ın dediği gibi olur.
+
+455
+01:20:05,739 --> 01:20:09,239
+Sonucu, sıralamanın da sonucu belli. Yani, veya, ne bileyim.
+
+456
+01:20:09,684 --> 01:20:13,884
+Sonucu belli olmayan şey üzerinde algoritma çalışmaz zaten.
+
+457
+01:20:13,884 --> 01:20:17,284
+Algoritmalar problemleri çözerken belli olacak.
+
+458
+01:20:17,284 --> 01:20:23,083
+Belli ki kelimesi çok yakışmıyor. Tam oturmuyor. Yakışmıyor da demeyelim.
+
+459
+01:20:27,252 --> 01:20:45,652
+Şimdi, determinizm şu demek arkadaşlar. Bir elinizde deney düşünün. Siz o deneyi yapıyorsunuz, hep aynı sonuçları buluyorsunuz. Ortada stokastik olmayan, yani rastlantısal randomize olmayan bir durum var.
+
+460
+01:20:45,652 --> 01:20:53,252
+Bir defa denediniz, bir sonuç elde ettiniz, başka bir şey de denediniz, başka sonuç elde ettiniz değil. Hep aynı. Parametreleriniz hep aynı.
+
+461
+01:20:53,492 --> 01:21:13,492
+Hep aynı sonuçlar edilir. Yani iki kere iki ne kadar, işte dörtse, yani her defasında dört. Determin de bu demek. Tamam mı? Şimdi non-deterministik olması, n-pi, non-deterministik polinom olması, polinom zamanda çözülüp çözülmediği belli değil.
+
+462
+01:21:13,492 --> 01:21:18,492
+Bazı problemler vardır, bazı durumlarda polinom zamanlığı çözülebiliyor.
+
+463
+01:21:19,155 --> 01:21:47,148
+Bazı durumlarda çözülemiyor. Tamam mı? Polinom, şöyle yazayım, zamanlı bir algoritma ile çözülüp çözülmediği belli değil. O belli dediğiniz kelime bu açıdan doğru. Ama bunu bu şekilde detaylandırmak gerekiyor.
+
+464
+01:21:48,212 --> 01:22:01,212
+Yani belli olmaması, öyle bir durum var ki n kare ile n küplük çözebiliyorsun. Ama öyle bir durum var ki n kare n küplük algoritmanız işe yararlı. Bazı problemlerde. Tamam mı?
+
+465
+01:22:01,212 --> 01:22:10,212
+Şimdi polinom zaman dediğimiz şey nedir? Non polinom zaman nedir? Onu şey yapalım. Şimdi biz algoritmaların karmaşıklıklarını
+
+466
+01:22:12,180 --> 01:22:18,680
+Bildiğimiz yöntemlerle, bizim en iyi algoritma karmaşıklığı nedir arkadaşlar?
+
+467
+01:22:21,380 --> 01:22:29,880
+Şu şeyler cinsinde yazıyor. O1 olabilir mi hocam? Evet, O1'dir değil mi? 1. Bundan biraz daha kötü olan ne var?
+
+468
+01:22:33,587 --> 01:22:34,587
+Log n.
+
+469
+01:22:34,587 --> 01:22:48,587
+Log n. Hatta ondan önce bizim bu interpolasyon, search veya regular party yöntemimiz var. Log log n. Bundan biraz daha ileride log n. Sonra bundan biraz daha ileride n var.
+
+470
+01:22:48,587 --> 01:22:54,283
+Niye bildirim? Sonra n ile log n'i çarpıyorsunuz. n log n var.
+
+471
+01:22:54,771 --> 01:23:18,552
+Ondan sonra işte n kare, n küp, böyle bir aile var, n üzeri 4. Ama bu n üzeri 4, n üzeri k diyelim, n üzeri n'e kadar gitmiyor. Bakın burası polinom zaman kuşağını gösteriyor size. Bunlar bizim iyi diyebileceğimiz arıyor. Ha, n üzeri 4'ü n log n'e indirgerseniz, log n'e indirgerseniz çok harika. Mümkün oldukça bire yaklaşmak lazım.
+
+472
+01:23:19,060 --> 01:23:23,860
+Şimdi şu en üzeri k, en üzeri 10 mesela, en üzeri 10. Ama en üzeri 1000 değil mesela.
+
+473
+01:23:23,860 --> 01:23:35,700
+Bir yerden sonra bu en üzeri k'dan daha kötü algoritmalar, yani daha karmaşıklığı fazla olan iki üzeri üstten eksponansiyel algoritmalar var.
+
+474
+01:23:35,700 --> 01:23:40,900
+Bakın, logaritmik fonksiyonlar, işte polinom fonksiyonlar, bunlar iyiler.
+
+475
+01:23:40,900 --> 01:23:43,300
+İki üzeri en, işte üç üzeri en.
+
+476
+01:23:44,500 --> 01:24:09,500
+K üzeri N diyelim burada da, yani 5 üzeri N, 10 üzeri N gibi şeyler bunlar geliyor. Bundan sonra ne var? En üzeri N var mesela. Hatta önce ne var? N faktöriyel var. Bundan daha böyle şiddetli olan, en üzeri N, hatta böyle karmaşıklı şey. Çünkü N faktöriyel birden N'e kadar sayılarının çarpımı. Bu N tane N sayının çarpımı. Şimdi şuraya ne kadar uzak da...
+
+477
+01:24:10,260 --> 01:24:20,059
+ne kadar uzaksa o kadar iyi. Örneğin bir yöntemimiz var, n faktörleri çözüyor, bir başka yöntem 2 üzerenini çözüyor. Hangisi daha iyi? 2 üzeren daha iyi.
+
+478
+01:24:20,059 --> 01:24:28,260
+Tamam mı? Şimdi bunlar P ailesi diyelim, bu da non-P ailesi diyelim.
+
+479
+01:24:28,260 --> 01:24:38,092
+Şu non-P type problemleriniz, eğer sizin algoritmalarınız şu zaman kuşağında çözüm üretebiliyorsa, işte onlar bu aile.
+
+480
+01:24:38,547 --> 01:24:46,228
+Yani şu ana kadar o probleme belki P zamanda, şu aralıkta hiçbir çözüm üretilmemiş.
+
+481
+01:24:47,327 --> 01:24:51,108
+Öyle bir algoritma çıkmamış. Ama üretilmeyecek anlamında değildi.
+
+482
+01:24:51,587 --> 01:24:55,427
+Yani şu an bir problem var, bunu m-faktörerle çözebiliyoruz.
+
+483
+01:24:55,427 --> 01:24:58,427
+Ama dünyanın sonuna kadar yani...
+
+484
+01:24:58,931 --> 01:25:23,532
+Evren var olduğu sürece, buna hiçbir zaman siz şuradan üretemez diyemezsiniz. Birisi gelir, bir yöntem bulur, onu belki Logan ile çözer. Onun için non-deterministlik, henüz şu ana kadar ki tecrübelerimizle biz polinom zamanlı bir çözüm bulamadık ama bu tamamen bulunamayacağı anlamına gelmez. Bunu söylüyoruz. Burayı anladık mı önce?
+
+485
+01:25:27,188 --> 01:25:48,667
+Dersimizin başından beri biz genellikle P-type problemler üzerinde yoğunlaştık. Dikkat edersiniz. Ne yaptık? Dizileri aldık, dizilerin içinde dolaştık, matrislerin üzerinde işlemler yaptık, seçim sistemleri dedik, random algoritmalar dedik. Orada ne yapıyorduk? En son matris çarpımı yaptık. Çoğunda en küplük, en üzeri dörtlük.
+
+486
+01:25:49,503 --> 01:25:59,003
+Mesela tepet analizinde dedik ki, üç kürleri bulmak istersek, ürün üç kürlerini en üzeri dörtlük algoritma çıkıyoruz. Bakın, P-type bir problem. Çünkü en üzeri dörtlük bir çözüm üretiyoruz.
+
+487
+01:25:59,003 --> 01:26:10,503
+Ama bazı problemler var ki, şimdi birazdan örneklerine bakacağız. 2 üzeren, 3 üzeren, K üzeren gibi bir şey. Şimdi dün gece Clouds'ından gönderdiğim ileti de...
+
+488
+01:26:12,787 --> 01:26:40,587
+Son 100 yılın algoritmaları var. Ne yapmış adam? Mesela Quicksort demiş. N kareden demiş ki, ben n log n'e indirgiyorum. Bunu yaparken de ayrıca bellek kullanmıyorum. Çünkü Merge Sort n kareden o da n log n'e indirgiyor ama o ayrıca bellek kullanıyor. Bellek yeterli değilse Merge Sort çöp. Ama diyor ki, Quicksort ben hem hızı indirgiyorum,
+
+489
+01:26:40,659 --> 01:27:02,059
+Hem de zamanı ve efisiyat verimli kullanıyorum. Onun için son 100 yılın en iyi algoritmalarından veya fast Fourier transform var. Gelecek sene sinyal sistem veya işaret işleme dersinde göreceksiniz. Normalde Fourier transform en karelik bir algoritma ama fast Fourier yapınca onu da en log'e indirgeyebiliyoruz.
+
+490
+01:27:02,676 --> 01:27:09,115
+Ve bu da çok ciddi bir buluş. Şu an yapay zeka dediğiniz birçok şeyin arkasında aslında fast-forward transform var.
+
+491
+01:27:09,115 --> 01:27:13,636
+İşte konvolüsyon işlemlerinde falan. Çok harika bir buluş. Tamam mı?
+
+492
+01:27:14,636 --> 01:27:29,636
+Gelelim artık biz şu problem ailesinden bazı örnekler göreceğiz. Bunların çözümlerinin normal algoritmalarla olamayacağını söyleyip başka bir derse kapı aralayacağız. Hatta birkaç derse kapı aralayacağız.
+
+493
+01:27:30,547 --> 01:27:37,047
+Şimdi sorumuz şu, n sayı içinde toplamı k olan bir alt küme var mı?
+
+494
+01:27:50,868 --> 01:28:16,548
+var mı? Yani bu bir aslında varlık yokluk problemi. Existence problem. Mesela şöyle bir sayı oluşturalım. Tabii n sayısı burada dikkatinizi çektim. 4, 8, 2, eksi 1, 5, 10, 6. Sayılarımız bunlar. K değerimizde ne olsun mesela?
+
+495
+01:28:18,996 --> 01:28:34,996
+15 olsun. Biz öyle bir alt küme bulacağız ki burada, toplamı 15 olacak. Şimdi ne olabilir? Söyleyin bakalım. Şuraya liste diyelim. Gözle bakın içi, algoritmik bakmayın buraya.
+
+496
+01:28:34,996 --> 01:28:43,996
+10 ve 5. 10 ve 5, başka? 8, 2, 5. 8, 2, 5, başka?
+
+497
+01:28:44,627 --> 01:28:46,627
+Özellikle şöyle eksi 1 yazdım.
+
+498
+01:28:46,627 --> 01:28:48,627
+16 ve eksi 1.
+
+499
+01:28:48,627 --> 01:28:50,627
+16 eksi 1. Başka?
+
+500
+01:28:50,627 --> 01:28:52,627
+8, 2, 6, eksi 1.
+
+501
+01:28:53,627 --> 01:28:56,627
+8, 2, 6, eksi 1. Başka?
+
+502
+01:28:56,627 --> 01:28:59,627
+14, 2, eksi 1.
+
+503
+01:29:00,627 --> 01:29:04,627
+14, 2, eksi 1. Başka?
+
+504
+01:29:05,627 --> 01:29:07,627
+6, 4, 5.
+
+505
+01:29:08,627 --> 01:29:11,563
+6, 4, 5. Tamam.
+
+506
+01:29:13,076 --> 01:29:18,195
+Bayağı çıktı bakın değil mi arkadaşlar? Peki bunu yaparken neye göre baktınız? Nasıl baktınız?
+
+507
+01:29:22,420 --> 01:29:48,860
+Vallahi gözle baktık dediniz değil mi? Önce ikişer ikişer varım diye. Şimdi ikişer ikişer bakarak olmaz. Yani ikişer ikişer şöyle mi baktım? Yani işte on ve beş ilk gözüme çarpıyor. Sonra diyorum ki üçlü sayıları kombinleyeyim. Şimdi ilk gözüme çarpan orada anahtar kelime var. Şimdi sen gittin onu gördün, beşi gördün. İşte ne var mesela? On beşe yaklaşmaya çalışıyorsun. Şimdi burada şöyle bir durum yok. Aligoretik bir çözüm yapmadınız aslında.
+
+508
+01:29:49,332 --> 01:29:50,332
+Aynen.
+
+509
+01:29:50,332 --> 01:29:56,332
+Algorithm olması için bunun bakarak gözlekin. Yani bir yerden başlayıp adım adım giden bir çözümünüz yok.
+
+510
+01:29:56,332 --> 01:29:59,332
+Hani bunun kodunu yazın desem yaptığınız şeyi yazamayacaksınız.
+
+511
+01:29:59,332 --> 01:30:05,332
+Çünkü ne yapıyorsunuz? Dili küçük olduğu için, burada kaç tane? 3-6-7 tane eleman var. Ne yapıyoruz? Direkt gözlekin.
+
+512
+01:30:05,332 --> 01:30:10,332
+Peki burada 70 bin tane eleman olsa aynı mantık çalışır mı çalışır mı çalışır mı?
+
+513
+01:30:10,332 --> 01:30:15,332
+Peki bu ne problemi? Aslında alt kürü küme problemi.
+
+514
+01:30:15,923 --> 01:30:36,423
+7 tane elemanım varsa, burada kaç tane alt kümem var? 2 üzeri 7 tane farklı, hatta öz alt küme sayısına bakacağız. Hiçbir eleman almadığımıza bakmayacağız. Bu kadar farklı duruma bakacağım. Önce tekerle bakarım. Mesela burada sadece 15 de olabilirdi. Bir eleman diyelim, şu da 15 olsun.
+
+515
+01:30:38,547 --> 01:30:47,547
+Şimdi bunu bir probleme çevireceğim. Bildiğimiz bir problem derste anlatmıştım. 2 üzeri 8-1 tane yani 255 farklı durum var.
+
+516
+01:30:47,547 --> 01:30:59,547
+255 farklı durum, bunu en genelleştirsek 2 üzeri n-1'e gidiyor bakın. Yani ne oldu? Şuradaki şeyden bir şey buldum.
+
+517
+01:31:00,979 --> 01:31:07,139
+Bunu daha böyle genel düşünürsek aslında n faktöreyle kadar gidebiliyor. Şimdi nasıl olacağını konuşacağız.
+
+518
+01:31:08,420 --> 01:31:11,460
+Bakın bu bir np type olacağını söylüyor.
+
+519
+01:31:13,380 --> 01:31:19,579
+Şimdi peki bunu hani kod olarak yazmak istesek, ne yapabilirim?
+
+520
+01:31:19,979 --> 01:31:25,380
+Bir kere 15 eşit olan bir şey var mı ona bakarım. Şimdi bakarım ne yaparım işte
+
+521
+01:31:25,587 --> 01:31:42,087
+Bu aslında bir sum problemidir. Size bir 3 sum problemi diye dönem başında bir sunum göstermiştim. Nedir? Diziyi baştan sona gezersin. Bu ne demek? Alt kümelerinden, bir elemanlı alt kümelerinden 15 olan, yani k'ya eşit olan bir veri var mı?
+
+522
+01:31:50,100 --> 01:31:57,600
+A'nın bir elemanının alt kümelerine bakıyorsun. Bu bir kombinasyonel durum oldu. Şimdi bunu nasıl çözersiniz? Bunun açılımı nedir?
+
+523
+01:31:57,600 --> 01:32:07,600
+A'nın eleman sayısından da A diyelim yani, pardon N diyelim. N elemanlı kümenin birlik kombinasyonu. Şimdi N faktöriyel bölü neydi bu?
+
+524
+01:32:07,600 --> 01:32:17,600
+N-1! çarpı 1 miydi? 1 faktöriyel miydi? Öyleydi herhalde. Kombinasyonun açılımı formülü bu değil mi arkadaşlar?
+
+525
+01:32:18,484 --> 01:32:19,484
+Çok iyi.
+
+526
+01:32:29,203 --> 01:32:40,203
+Evet, herhalde bu olacak. N! bölü, yani n'in r'lisi. Şuna n dedik, şu r faktörü, evet doğru.
+
+527
+01:32:40,203 --> 01:32:55,203
+Bakın, bu kadar farklı durum kontrolü yapacağız. Yani ne oldu? Buradan bir kere n! geldi. Şimdi bu bir elemanla bakmayacağız. Şimdi bir de ikili ikili bakarsınız. O zaman da n'in ikilisi oluyor. Yani ikili bakmak için ne yaparsınız peki?
+
+528
+01:32:55,231 --> 01:33:13,731
+Şimdi bir elemanlı bakmak için bir for döngüsü ile bakarsınız. 15'e eşit olan var mı? İki elemanlı bakmak için bu n! bölü, n-2! çarpı, 2! Yani buradan da faktölyel çıkıyor ama bunu kod olarak yazmak için for, bir for daha, ikişerli ikişerli bakarsınız.
+
+529
+01:33:14,731 --> 01:33:20,032
+Buna treat, two-some şey diyoruz. İki tane herhangi iki elemanı 15'e eşitmiş.
+
+530
+01:33:20,659 --> 01:33:25,960
+Bu yetmeyecek, n'in üçlüsüne bakacaksınız. O zaman, krih-sam oldu, üçlü döngü.
+
+531
+01:33:25,960 --> 01:33:32,859
+n'in dörtlüsü, n'in beşlüsü, n'in enlisine kadar, yani bütün alt kümelerine kadar bakmak gerekiyor.
+
+532
+01:33:32,859 --> 01:33:43,859
+Bakın, bunu kodlamaya çalıştığınızda, n faktörüyle giden bir karmaşıklıkla, yani bu for döngüleri, for, for, for, for, böyle yazdığınızda, karmaşıklığınız n faktörüyle kadar gidiyor.
+
+533
+01:33:43,859 --> 01:33:48,060
+Problemin kendi çözüm uzayında yapmanız gereken işlem sayısı...
+
+534
+01:33:48,287 --> 01:34:05,287
+2 üzeri n, yani bunu elle yapmaya kalktığınızda, 2 üzeri n tane alt küme oluşturursunuz. Bakarsınız, bu 2 üzeri her bir alt kümenin toplamı 15'e eşittir. Ama kodla yapmaya kalktığınızda bakın n faktörlere ulaşan bir şey görüyoruz.
+
+535
+01:34:05,287 --> 01:34:09,287
+Hocam, binary counter yapabiliriz aslında.
+
+536
+01:34:09,287 --> 01:34:11,287
+Ne yaparız?
+
+537
+01:34:11,287 --> 01:34:14,287
+Binary counter yaratmak için...
+
+538
+01:34:14,452 --> 01:34:35,452
+Nasıl bir döngüye ihtiyacımız var hocam? Binary counter, o ne olduğunu bilmiyorum yani. Öyle bir konu var. Yani hocam şey, hani ikilik sayı sistemi var ya hocam. Evet. İkili sayı sisteminde biz istediğim sayıyı yazmak için ikinin kombinasyonlarını kullanırız. Evet.
+
+539
+01:34:42,355 --> 01:34:48,355
+İlk elemanın toplamı, ilk elemana bakarız, ikinci elemana bakarız, ilk elemanla ikinci elemana bakarız.
+
+540
+01:34:50,355 --> 01:35:07,355
+Sen şunu diyorsun, o dediğin zaten şu, önce diyorsun ki hiç elemanlar olmadı, önce örneğin burada şu kadar eleman var, önce sadece bir elemana bakayım, sonra ikinci elemana bakayım, sonra birini, yani şurada binary olarak...
+
+541
+01:35:08,180 --> 01:35:11,180
+Bir ile ikinci elemana bakayım. Evet hocam.
+
+542
+01:35:11,180 --> 01:35:18,180
+Bu da zaten iki üzeri en tane durum getiriyor. Bunu kodlarken de yine şu şeyi yapıyoruz.
+
+543
+01:35:18,180 --> 01:35:24,180
+Sadece tek elemana bakmak şunlar demek. İkili elemanlara bakmak şöyle durumlarda.
+
+544
+01:35:24,180 --> 01:35:30,180
+Mesela bir, bir, bir, şu var. Bu durumlarda aslında kombinasyona gidiyor.
+
+545
+01:35:33,235 --> 01:35:41,735
+Kodunu yazmaya çalıştın, çalış dediğimde, biz kod yazarken didileri kullanıyoruz, işte döngüleri kullanıyoruz, ipi kullanıyoruz, başka bir şey yok.
+
+546
+01:35:41,735 --> 01:35:50,035
+Recursive yöntemlerle belki bazı şeyleri kolaylaştırıyorsun ama yapacağın işlem sayısı faktörüyle yaklaşıyor.
+
+547
+01:35:51,507 --> 01:36:02,507
+Bunun daha farklı çözümünü yapamamışlar. Belki yöntemlerle. Mesela sıralayıp biraz daha iyileştirebiliyorsun. Hatta Tristan probleminde biz ne yapmıştık?
+
+548
+01:36:02,507 --> 01:36:16,492
+O dersin ilk haftalarındaki sunumu hatırlarsınız? Hatta size sunum olarak da paylaştım. Diziyi bu şekilde yapmak yerine sıralama yapıyorlar önce. Çünkü sıralamanın maliyeti enlogen. Bu sıralama sonrasında
+
+549
+01:36:16,948 --> 01:36:27,948
+Tek tek bakıyorsun, 15'e eşit olan verileri binary search ile kontrol ediyorsun. Eğer binary search ile bir sonuç çıkıyorsa, biraz daha iyileştirme mümkün.
+
+550
+01:36:27,948 --> 01:36:37,948
+Bakın bu bir MP type ailesinden bir şey ve bunun karmaşıklığını şimdilik biz en faktörer olarak bilin, en genel halinin karmaşıklığı tamam mı?
+
+551
+01:36:37,948 --> 01:36:42,508
+Bir diğer problemimiz...
+
+552
+01:36:42,963 --> 01:36:47,403
+Traveling Sales-Porsum veya Salesman Problems, gezgin satıcı.
+
+553
+01:36:47,403 --> 01:36:49,403
+TSP diyoruz ama.
+
+554
+01:36:53,011 --> 01:37:09,011
+Şimdi şöyle, ben harita çizmeye çalışayım. Türkiye'de 81 tane il var da biz hepsini çizmiyoruz. Şurada İstanbul olsun, şurada İzmit olsun, şurada Sakarya olsun, şurada Dülce olsun, şurada Bursa olsun, şurada Balıkesir.
+
+555
+01:37:09,011 --> 01:37:17,011
+Burası nedir? Kütahya mı oluyor? Kütahya falan yok, Kütahya değil mi? Neresi orası? Etkişehir herhalde veya Etkişehir değildir.
+
+556
+01:37:20,115 --> 01:37:46,396
+Herhangi bir ilden başlayalım, bunların arasında böyle yollar var. Yollar böyle şey olabilir. Şöyle bir harita. Ben bir ilden başlayacağım, bütün illeri geçeceğim ama geçtiğim yoldan bir daha geçmeyeceğim ve başladığım yere geri geleceğim. En az maliyetli gezinmeyi nasıl yapabilirim?
+
+557
+01:37:49,108 --> 01:38:01,108
+Tüm şehirlerden en az bir kere geçeceğim. En kısa rutayı bulacağım ve başladığım yere geri geleceğim. Şimdi burada kaç, bir, iki, üç, dört, beş, altı, yedi tane şehir var.
+
+558
+01:38:03,108 --> 01:38:16,108
+Ne yapabiliriz? Mesela İstanbul'dan başladıktan sonra tık tık tık tık tık tık tık. Bu arada hani İstanbul'un mesela doğrudan şuraya da gitme olası mı? Uçakla buraya da gidelim. Yani şöyle de bir yol var.
+
+559
+01:38:16,500 --> 01:38:32,180
+Onları da söyleyelim. Buraya yol var ama şuraya da bir yol var. Veya buraya da yol var. Ondan sonra buradaki şeyin şuraya da bir yolu var. Herkes herkese gidebiliyor tamam mı? Uçak, tren, karayolu, bütün yollar mümkün.
+
+560
+01:38:32,180 --> 01:38:36,740
+İstanbul'dan başladıktan sonra bizim yedi tane şehrimiz vardı ya.
+
+561
+01:38:37,043 --> 01:38:56,804
+Kaç farklı ihtimal var? Altı farklı ihtimal var. Altıdan bir tanesini gezdim, sonra beş farklı ihtimal. Sonra dört farklı, sonra üç farklı, sonra iki farklı. Sonra zaten tekrar İstanbul'a geri geleceğim. İşte burada bir farklı, sonra tekrar İstanbul'a geliyorum. Yani en tane şehir için en eksi bir faktöryel kadar.
+
+562
+01:38:58,707 --> 01:39:05,068
+Deneme yapmam gerekiyor. Bu kadar farklı ihtimali deneyeceğim, süre olarak veya başka maliyetim neyse.
+
+563
+01:39:05,068 --> 01:39:10,347
+Onlardan en küçüğünü seçeceğim. Şimdi burada 7 faktörel çok büyük bir sayı değil.
+
+564
+01:39:10,347 --> 01:39:18,148
+Nedir işte? 6 faktörel 127, 840 gibi bir şey oluyor. Çok büyük bir sayı olmadığı için belki denenebilir.
+
+565
+01:39:18,148 --> 01:39:22,747
+Ama Türkiye için düşündüğümüzde, bütün illeri düşündüğümüzde,
+
+566
+01:39:24,340 --> 01:39:34,340
+Bir il için 80! kadar bir şey çıkıyor. Çok büyük bir sayı. Bütün ihtimalleri deneyip, bütün şeylere bakıp olmuyor.
+
+567
+01:39:34,340 --> 01:39:39,340
+Karayolu olarak düşündüğünüzde de olmuyor. Çözümü çok geç.
+
+568
+01:39:39,340 --> 01:39:47,020
+Burada şimdi şöyle bir numara, bu tarz TSP problemlerinin karmaşıklı arkadaşlar, genel anlamda N! faktör yeri.
+
+569
+01:39:47,859 --> 01:39:52,859
+Eğer n tane şeyiniz varsa n-1 dediniz, onu da n! gibi genelleştirebilirsiniz.
+
+570
+01:39:52,859 --> 01:40:00,460
+Şimdi n! ile n artı 1! arasında kaç kat fark var?
+
+571
+01:40:06,260 --> 01:40:08,260
+Bu bunun kaç katı?
+
+572
+01:40:09,260 --> 01:40:10,260
+N artı bir.
+
+573
+01:40:11,260 --> 01:40:26,260
+Yani aynen, n! çarpı n artı bir diyorsunuz ki n artı bir faktöriyel olsun değil mi? Şimdi siz bu problemi çözmek için, n! bir problemi çözmek için bir donanım geliştirin. Müthiş bir işlemci yaptınız, tamam mı?
+
+574
+01:40:27,260 --> 01:40:30,260
+Güzel probleminiz de çözüyor yani hızlı bir şekilde çözüyor.
+
+575
+01:40:31,988 --> 01:40:40,387
+Ama sizin probleminiz n artı bir faktöre, yani probleme bir tane daha data eklediğinizde çözüm n artı bir faktöre ile çıkıyorsa,
+
+576
+01:40:42,188 --> 01:40:49,387
+elde ettiğiniz, tasarladığınız o donanımın n artı bir kat daha fazla çalışması gerekiyor. O da mümkün değil.
+
+577
+01:40:49,688 --> 01:40:52,988
+Yani donanımınızı çöpe götürecek kadar büyük bir, zor bir problem.
+
+578
+01:40:54,488 --> 01:40:58,688
+Başta hesapladığınız, planladığınız, işte dediniz ki bu n faktöre bir şey.
+
+579
+01:40:58,863 --> 01:41:09,264
+Teknolojiyi sefer göre ettiğiniz n-faktöyeli çözecek bir donanım geliştiriniz. Bunu n-faktöyel hale getirdiğinizde problemi donanım çöpe atabiliyorsunuz.
+
+580
+01:41:10,264 --> 01:41:19,463
+Mesela bunların klasik algoritmalarla çözümleri n-faktöyelik olduğu için ben bunu kodlamak mümkün değil çünkü n-faktöyelik bir döngü yazamıyoruz arkadaşlar.
+
+581
+01:41:20,863 --> 01:41:25,463
+Burada karşımıza sonuç açısından baktığımızda
+
+582
+01:41:25,587 --> 01:41:34,587
+Şöyle söyleyelim, şuraya yazayım. Bizim için algoritmalarda, dün özellikle şeyde de söyledim, mailde de yazdım.
+
+583
+01:41:34,587 --> 01:41:43,587
+Üç tane kriter var. Bir tanesi zaman, öbürü bellek, bir de doğruluk pekürisi.
+
+584
+01:41:46,996 --> 01:42:01,496
+Şimdi bunların trade-off'ları neydi? Örneğin zamandan kazanmak için belki bellekten trade-off yani bellekten ödün verebiliyorsunuz veya bellekten ödün vererek zamanı uzatabiliyorsunuz gibi gibi.
+
+585
+01:42:01,496 --> 01:42:11,996
+Şimdi bu tarz problemlerde, accuracy'den ödün verilerek çözümlere gidilebilir. Yani ne bellek ne zamandan ödün vereceksiniz.
+
+586
+01:42:12,627 --> 01:42:18,627
+Belki n-faktürelik bir algoritmayı n üzeri 4'e indirgeyen bir yöntem üzerinden çözüm ediyoruz.
+
+587
+01:42:18,627 --> 01:42:25,627
+En üzeri 4 de belki kötü bir şey ama hiç çözmemekten ise n üzeri 4 veya n üzeri 10 iyi bir çözüm diyeceğiz.
+
+588
+01:42:26,627 --> 01:42:32,627
+İşte bu accuracy'den ödün vermek iki farklı şekilde oluyor. Yani bunun adı şudur.
+
+589
+01:42:37,140 --> 01:42:44,740
+Optimal nokta ne demek? Exact solution dediğimiz şey.
+
+590
+01:42:44,740 --> 01:42:56,100
+Optimal slash exact solution diyelim. Bunun alternatifi approximate solution dediğimiz şey arkadaşlar.
+
+591
+01:42:56,100 --> 01:43:02,260
+Approximate solution de yaklaşık çözüm. Siz gerçek çözüme
+
+592
+01:43:02,547 --> 01:43:12,547
+Makul bir zamanda ulaşamıyorsunuz, en faktörüel, sekten faktörüeli çözmek için, işte sen bin yıl bekle, ben sana çözeceğim. Böyle bir dünya yok.
+
+593
+01:43:12,547 --> 01:43:19,547
+Yani adam Türkiye'yi gezmek istiyor, tatile çıkmak istiyor, beklemeye zamanı yok. Ama sen yaklaşık bir çözümle...
+
+594
+01:43:21,171 --> 01:43:30,572
+Gerçeklikten ödün vererek, örneğin Türkiye haritasında bütün illeri gezmenin gerçek çözümü bilmiyoruz ama ben tamamen uydurayım.
+
+595
+01:43:30,572 --> 01:43:37,211
+7800 kilometre olsun. Bu gerçek çözüm budur diyelim.
+
+596
+01:43:37,211 --> 01:43:43,131
+Sizin yaklaşık çözümü, yani bunu bulmak işte 1000 yıl diyelim.
+
+597
+01:43:45,043 --> 01:43:56,644
+Ama sizin yaklaşık çözümünüz 9500 kilometre buldu. Arada ne var? Gezecek bir adam için bu çok ciddi bir fark değil. Yani siz bunu belki 3 dakikada buldunuz.
+
+598
+01:43:56,644 --> 01:44:11,923
+Bin yıl nerede, 3 dakika nerede değil mi arkadaşlar? İşte bu trade-off, üçlü trade-off bize optimal çözümü bulmak konusunda eğer zaman ve bellek yetersiz kalıyorsa
+
+599
+01:44:12,064 --> 01:44:20,463
+Bir şeyler yapamıyorsan, accuracy'den ödün vererek yaklaşık çözümü bulabilirsin diyor. Burayı anladık mı? Bu önemli bir konu.
+
+600
+01:44:22,503 --> 01:44:31,944
+Bunu yapabilen algoritmalar da daha çok AI derslerinde, yapay zeka derslerinde göreceğiniz şeyler. Birkaç örnek vereceğiz.
+
+601
+01:44:31,944 --> 01:44:37,543
+Neden yapay zeka? Çünkü algoritma geliştirirken doğadaki
+
+602
+01:44:37,844 --> 01:44:55,844
+Daha çok canlıların veya bazı biyolojik, sinirsel olayların, biyolojideki olaylar veya gravitasyon dediğimiz yerçekimiyle alakalı fiziksel olayların, biyolojik olayların hatta kimyasal olayların gerçekleşmesini simüle eden algoritmalar var.
+
+603
+01:44:55,844 --> 01:44:59,844
+Şimdi karınca polonisi algoritması mesela, yapay zeka dersinde anlatılır.
+
+604
+01:44:59,844 --> 01:45:01,844
+Bir arama algoritmasıdır.
+
+605
+01:45:02,931 --> 01:45:13,431
+Bu yaptığınız, bu TSP probleminde yaptığınız tek tek aramadan daha performanslı. Çünkü tek tek arama dediğim gibi zaman açısından tabii daha performanslı.
+
+606
+01:45:13,431 --> 01:45:22,231
+En faktörel kadar arama yapmak yerine bu karınca algoritması veya AI'daki başka algoritmalar daha polinom zamanlı algoritmalar.
+
+607
+01:45:22,231 --> 01:45:29,931
+Polinom zamanlı olunca belki gerçek sonucu, tam sonucu elde edemiyorsun ama yaklaşık sonucu elde ediyorsun ve bu iyi bir çözümdür.
+
+608
+01:45:30,100 --> 01:45:38,660
+Eğer bir sonraki adımda bundan daha iyi bir şey, örneğin bir algoritma 9500 kilometre vurdu, öbürü 9300 kilometre vurdu. Bunların yarışmaları var mesela.
+
+609
+01:45:38,660 --> 01:45:55,596
+Siz yeni bir algoritma öne sürüyorsunuz, bunu daha iyileştirirseniz, örneğin zaman açısından, kilometre açısından diyelim, bulacağının sonuç açısından, bu sizin bir literatürde öne çıkmanızı sağlıyor. Bu mesela makaleler falan bunun üzerine yazılıyor.
+
+610
+01:45:56,115 --> 01:46:09,115
+Zamana müdahale edemiyorsunuz yani running time'a, bellek miktarına müdahale edemiyorsunuz ama accuracy'yi gerçeğe yaklaştıracak, daha iyi çözüm oluşturacak şekilde yöntemler önerebilirsiniz. Tamam mı?
+
+611
+01:46:09,115 --> 01:46:16,115
+Şimdi bu yöntemlerden bir tanesi şudur.
+
+612
+01:46:24,083 --> 01:46:50,083
+Teoristik çözüm öde. Mesela siz şu an projeyi yaparken proje dün teslim edildi. Hocam bazı arkadaşlar diyor ki, ya çok geç bitiyor. İşte geç bitmesinin sebebi, problem öyle büyük ki. Yani karmaşıklık, ha deyince program açıldığıyla kapanması bir arada olmuyor. Uzun uzun bekliyoruz. İşte o problemin karmaşıklığıyla alakalı. Onun için bilerek o otomatik çözüm...
+
+613
+01:46:50,224 --> 01:47:04,684
+şeyini kodlayın dedik. Elbette geç gidecek, onu da normal. Mesela on bir değil de ne bileyim, otuz beşe otuz beşlik bir oyunda belki çok çok bitmeyecek şeyi günlerce beklemek lazım.
+
+614
+01:47:04,684 --> 01:47:17,764
+Biz satranç tahtasını nasıl biliyoruz? Sekize sekiz. Daha büyük satranç oyunları var. Onların mesela çözümü neredeyse imkansız yani onu bilgisayarla oynatamıyoruz. Sekize sekizlik satranç yine kısma oynanabilir.
+
+615
+01:47:18,387 --> 01:47:38,387
+Şimdi bu selgitel çözüm yöntemlerinden bir tanesi, solution 1 diyelim, yani TSP için. Siz olsanız nasıl bir şey önerirsiniz? Mesela bir Türkiye'yi gezmek istiyorsunuz, bir algoritmik bir çözüm önereceksiniz. Yani bizim için optimal solution önemli bir tane yaklaşık bir şey. Siz nasıl bir çözüm önerirsiniz?
+
+616
+01:47:44,851 --> 01:47:45,851
+Evet.
+
+617
+01:47:47,351 --> 01:47:49,851
+Belki daire çizerek yapabilir.
+
+618
+01:47:49,851 --> 01:47:51,851
+Daire mi? Nereye çizeceğiz daire?
+
+619
+01:47:51,851 --> 01:47:56,851
+Yani Türkiye'nin önce etrafını sonra içlerine doğru gide gide.
+
+620
+01:47:57,171 --> 01:48:23,171
+Anladım. Yani etrafı derken İstanbul'dan başladık. İstanbul'dan nereye gideceğiz? Kırklareli mi? Kırklareli herhalde deniz tarafında. Oradan Edirne, Tekirdağ, ondan Çanakkale, Balıkesir, Bursa, Balıkesir belki. Sonra İlmir, yanlış değilsen, ondan sonra Aydınluğla, Antalya, ondan sonra Mersin, Adana.
+
+621
+01:48:23,551 --> 01:48:43,551
+Hatay. Öyle o şekilde işte. Ama şey yani böyle sarmal yapmak sanki biraz ulatır gibi yolu. Yani İstanbul'un etrafındayken Trakya'yı bir gezersin bir daha tekrar bu tarafa gelmene gerek kalmadı. Öyle değil mi? Sonuçta İstanbul'u gezmişin dibinde işte şey var, Tekirdağ var, Kırklareli var, Edirne var. Sadece...
+
+622
+01:48:43,923 --> 01:48:57,123
+Tekirdağ'a falan aradaki bir ile gelmek için, mesela Adana civarındasın, Adana'da işte orada Konya var. Tekrar Konya'ya gelmek için böyle başkan bir gezmen gerekiyor yani. Sanki şey, biraz yolu uzatıyorsun sanki. Öyle mi?
+
+623
+01:48:57,123 --> 01:49:01,123
+Galiba hocam. Marmara'yı direkt devre dışı bırakabiliriz sanırım.
+
+624
+01:49:01,123 --> 01:49:04,524
+Ya bütün şeyleri devre dışı. Başka çözüm önerisi o.
+
+625
+01:49:04,524 --> 01:49:10,123
+Hocam, benim de direkt arkadaşımızın dediği geldi. Alternatif olarak da zigzag olabilir.
+
+626
+01:49:10,547 --> 01:49:16,767
+Ziksak, yani nasıl? Çok detaylı şeydir, zor düşünüyorsunuz. Siz de yola çıkılmaz ya.
+
+627
+01:49:16,767 --> 01:49:21,727
+Ama bilmiyorum, benim de direkt aklıma kaba kuvvet olarak arkadaşın dediği geldi.
+
+628
+01:49:21,727 --> 01:49:30,727
+Şöyle, herhangi bir ilden başlasanız, o ile en yakın olanlardan birine gitseniz, mesela şöyle diyelim.
+
+629
+01:49:34,420 --> 01:49:46,420
+Benzin pahalı biliyorsunuz yani. Siz de yola çıkarsak çok maliyet olur. Şimdi şuradan başladık. Bunların maliyetleri var kilometre olarak. Bunlardan en yakınına gitsem, artık bunu ziyaret ettim.
+
+630
+01:49:47,420 --> 01:49:59,420
+Sonra bunun en yakınına gidebilirim değil mi? Artık en son buradayım. Bundan en yakın neresi? Buraya gidebilirim. Ve şuraya gideyim. Sonra bunun en yakını ne? Gibi gibi böyle...
+
+631
+01:50:00,000 --> 01:50:10,000
+Mesela şurayı ziyaret ettiysem, işte buraya geldim, bunun en yakınında bu var belki, tabii gerçi olmayacak da, ziyaret ettim bir yere geldiysem artık oraya gitmeyeceğim.
+
+632
+01:50:10,000 --> 01:50:20,000
+Ne yapacağım başka, ikinci bir en yakın, üçüncü en yakın gibi alternatifle arayacağım. Böyle bütün yerleri gezene kadar ve başa dönecek şekilde olduğumuz yere de geri geldik.
+
+633
+01:50:20,000 --> 01:50:24,524
+Bu bir çözüm yöntemi. Peki, bu çözümün karşılığına bakalım şimdi, en yakın.
+
+634
+01:50:26,739 --> 01:50:28,739
+Komşu il diyelim.
+
+635
+01:50:29,739 --> 01:50:33,739
+Şimdi orijinal çözümümüz, yani gerçek çözümümüz m faktöreye kadar.
+
+636
+01:50:33,739 --> 01:50:35,739
+Şimdi ben bir tane il seçtim.
+
+637
+01:50:35,739 --> 01:50:42,739
+Bu ilin, yani en tane ilim var. Bu ilin komşuları kaç tane olabilir? En eksi bir tane olabilir değil mi?
+
+638
+01:50:44,739 --> 01:50:46,739
+En yakınlarından bir tanesini seçtim.
+
+639
+01:50:46,739 --> 01:50:51,739
+Şimdi o en eksi bir tane ilin kaç tane komşusu var? En eksi iki tane il var. Çünkü bir tanesine uğradım.
+
+640
+01:50:52,819 --> 01:51:06,260
+n-1 tane kaldı. Bu n-1, dilden n-2 tane komşu var. Bunun n-3 tane komşusu var. Bu nereye kadar gelecek? 3 komşu artı 2 komşu, 1 komşu olana kadar gelecek.
+
+641
+01:51:06,260 --> 01:51:18,420
+Peki bu nedir? 1'den n'e kadar olan sayıların toplamı değil mi? Yani n çarpı n artı 1, 4, 2 gibi bir şey değil mi? Bu kadar farklı ihtimal deneyim. Yani bu da yaklaşık olarak n karelik bir çözüme geliyor.
+
+642
+01:51:19,283 --> 01:51:35,283
+Şimdi n kare, n kare arkadaşlar, çok çok çok çok küçük bir çözüm önerisi, n faktörüyle kıyasladığınızı ve çok süper bir çözüm.
+
+643
+01:51:35,283 --> 01:51:40,283
+Ama neden ödün verdik? Bakın zaman güzel, yani zaman açısından iyiyiz.
+
+644
+01:51:40,283 --> 01:51:47,083
+Bellek de burada fena değil, yani n tane verilerimiz aynen tutuluyor. Neden ödün verdik? Şundan ödün verdik.
+
+645
+01:51:47,764 --> 01:52:03,144
+accuracy, acaba bu çözüm iyi bir çözüm mü? Yani optimal exact solution oldu mu? Başka önerisi olan var mı çözüm olarak? En yakın komşuluk mesela bizim çözüm önerilerimizden bir tanesi bu.
+
+646
+01:52:05,144 --> 01:52:07,983
+Ben henüz yola çıkmadığımızı varsayıyorum.
+
+647
+01:52:08,604 --> 01:52:10,604
+Şimdi şöyle diyelim.
+
+648
+01:52:12,884 --> 01:52:15,884
+Burdur ile Isparta arasında yarım saat.
+
+649
+01:52:15,884 --> 01:52:16,884
+Evet.
+
+650
+01:52:16,884 --> 01:52:26,884
+Şimdi, Isparta'ya en yakın şehre gitmek için Burdur'dan gidiyorsam eğer, rotamı Isparta, Burdur ve diğer şehir olarak güncellelerim.
+
+651
+01:52:27,884 --> 01:52:29,884
+Bir dakika, şu an neredeyiz?
+
+652
+01:52:32,180 --> 01:52:36,300
+Şu anda hiçbir yerde değiliz hocam. Rotamızı belirlemedik daha.
+
+653
+01:52:36,300 --> 01:52:40,940
+Isparta'ya geldiysek Burdur'a geçeceğiz, Burdur'a geldiysek Isparta'ya geçeceğiz, öyle mi?
+
+654
+01:52:40,940 --> 01:52:44,900
+Yani hocam, rotayı hesaplamak için mesela Burdur'dan başlayalım.
+
+655
+01:52:44,900 --> 01:52:45,900
+Hı hı.
+
+656
+01:52:45,900 --> 01:52:51,740
+Ama şey hesaplamak için yola çıktığımız yer olarak varsaymıyorum şu anda.
+
+657
+01:52:51,740 --> 01:52:53,740
+Tamam, Burdur'a geri geleceğiz.
+
+658
+01:52:53,740 --> 01:52:54,740
+Evet.
+
+659
+01:52:54,963 --> 01:53:04,963
+Isparta'ya en yakın, Burdur'a en yakın şehir Isparta. Ama mesela Isparta'ya en yakın şehir ve en yakın olan yol Burdur üzerinden geçiyor.
+
+660
+01:53:04,963 --> 01:53:05,963
+Tamam.
+
+661
+01:53:05,963 --> 01:53:09,963
+O zaman Burdur'u başlangıç noktası değil, orta noktaya alırım.
+
+662
+01:53:10,963 --> 01:53:16,963
+Anladım. Yani dolaşacağım, döneceğim, dolaşacağım, geleceğim, Burdur'a geleceğim, Burdur'dan da Isparta'ya geçeceğim.
+
+663
+01:53:16,963 --> 01:53:17,963
+Evet hocam.
+
+664
+01:53:17,963 --> 01:53:19,963
+O zaman Isparta'dan mı başlayacağız?
+
+665
+01:53:20,979 --> 01:53:22,979
+Öyle gibi oluyor.
+
+666
+01:53:22,979 --> 01:53:27,979
+Anladım. Burada dediğim gibi başlangıç noktası önemli. Birazdan onu göstereceğim.
+
+667
+01:53:27,979 --> 01:53:40,979
+Yani başlangıç nokta önemli çünkü yani Burdur'dan bizim eğer karayoluyla düşünsek, ne derler, Donguldak'a gitme olasılığımız yok. İşte nereye gideriz? Antalya'ya gidebiliriz.
+
+668
+01:53:40,979 --> 01:53:44,979
+Ondan sonra belki yukarıda Alpiyon var, yan tarafta Isparta var.
+
+669
+01:53:45,587 --> 01:54:00,947
+Aydın değil belki de, bu arada Uşak var gibi gibi veya Denizli var. O çevrede dolaşacağız. Tamam dediğin güzel, o bir iyileştirme.
+
+670
+01:54:00,947 --> 01:54:12,347
+Şimdi burada şöyle bir sıkıntı var arkadaşlar. Bizim aslında maliyetimizi şöyle grafik olarak çizdirsek şöyle bir şey.
+
+671
+01:54:12,724 --> 01:54:17,724
+Global ve lokal minimum maksimum noktaları var ya, böyle bir fonksiyon.
+
+672
+01:54:17,724 --> 01:54:25,724
+Aynen bu çözümlerde de lokal minimumlara takılma olasılığınız var. Tamam, çözüm çok güzel.
+
+673
+01:54:25,724 --> 01:54:34,724
+Ama işte şuradaki şu kriter, eküristik kriteri, doğruluğa ulaşma kriteri bazen sıkıntı olabiliyor.
+
+674
+01:54:34,724 --> 01:54:36,716
+Şimdi şöyle bir Türkiye haritası açayım.
+
+675
+01:54:39,283 --> 01:54:44,299
+Arkadaşlar, printf ve
+
+676
+01:54:55,796 --> 01:55:03,296
+Şimdi, mesela bir siz olsanız hangi ilden başlarsınız arkadaşlar?
+
+677
+01:55:09,300 --> 01:55:13,800
+Bir yerinden başlamak istiyorsunuz. Hangi ilden? Karitayı görüyorsunuz değil mi?
+
+678
+01:55:14,800 --> 01:55:15,800
+Evet hocam.
+
+679
+01:55:18,500 --> 01:55:22,800
+Başka arkadaşların çözümlerlerini de dinlemek istiyorsunuz. Hangi ilden başlarsınız?
+
+680
+01:55:22,800 --> 01:55:26,800
+Büyük bir ilden de başlamak, küçük bir ilden de başlamak daha iyi olur.
+
+681
+01:55:27,800 --> 01:55:31,800
+Ankara'dan, Konya'dan veya her durumdan başlasak.
+
+682
+01:55:32,800 --> 01:55:35,800
+Çünkü büyük il olunca komşu sayısı daha fazla giresin değil mi?
+
+683
+01:55:36,756 --> 01:55:46,756
+Daha çok komşulardan beğenme olasılığımız olacak gibi. Bir bunu belirlemek gerekiyor.
+
+684
+01:55:46,756 --> 01:55:58,756
+Veya ben dedim ki, biraz önce [öğrenci] dedi, hadi ben de Burdur diyeyim, şöyle işaret diyeyim. Şöyle rengi bir değiştireyim bir saniye.
+
+685
+01:55:58,756 --> 01:56:01,756
+Burdur'dan başladım.
+
+686
+01:56:02,644 --> 01:56:15,363
+Gerçi Burdur'day mı? Sen Isparta'dan, Burdur'dan başkanlayacağım. Şurası Denizli'den, Denizli olacak kadar da olasın. Isparta, Burdur, Denizli. Şurası Denizli. Var mı? Denizli ile aramızda? Doğru mu işaretledim? Gerçi şeye bakalım yani.
+
+687
+01:56:15,363 --> 01:56:17,403
+Evet hocam, Denizli'ye doğru işaretlediniz.
+
+688
+01:56:17,403 --> 01:56:26,043
+Denizli'den en yakın olan yer Burdur olsun. Ya Burdur olmasın pardon, Aydın olsun.
+
+689
+01:56:26,043 --> 01:56:29,739
+Bir dakika.
+
+690
+01:56:29,779 --> 01:56:39,939
+Burdur olsun, pardon Burdur'a gidelim. Isparta'yı unuttu. Denizli'den buraya geldik. Buradan en yakın il Antalya olsun.
+
+691
+01:56:39,939 --> 01:56:55,340
+Ondan sonra... Antalya'dan en yakın il Muğla olsun. Muğla'dan en yakın il Aydın olsun. Gerçi burada da İzmir var.
+
+692
+01:56:55,699 --> 01:57:23,539
+Ben şöyle çözümü düzeltiyorum arkadaşlar. Aydın'dan başladım. Aslında en güzel örnek. Aydın'a en yakın il Denizli olsun dedik. Denizli'ye en yakın il Burdu olsun dedik. Burdu'ya en yakın il Antalya olsun dedik. Antalya'ya en yakın il Muğla olsun dedik. Muğla'ya en yakın il [öğrenci]. Ama ne oldu bakın.
+
+693
+01:57:25,779 --> 01:57:33,179
+Burada ne yaptık? Biz Türkiye'ye girecektik, şurada tıkandık kaldık değil mi?
+
+694
+01:57:34,279 --> 01:57:38,179
+Evet hocam, benim çözüm size söylediğimde şey yapıyorduk.
+
+695
+01:57:38,179 --> 01:57:44,179
+Lokal minimuma takıldık bakın, burada gidecek bir olasılık kalmadı.
+
+696
+01:57:44,179 --> 01:57:47,779
+Şimdi buraya geri gidersem problemin şeyi bozulmuş olurdu.
+
+697
+01:57:47,779 --> 01:57:50,979
+Şimdi problemin kısıtlarını da diktat etmek lazım.
+
+698
+01:57:51,091 --> 01:58:04,491
+Dolayısıyla şu biraz önce yaptığımız en yakın komşuya gitme şeyi bu tarz durumlarda takılır. Eğer böyle bir harita varsa, yapacağınız şey şu olacak, mümkün oldukça orta yerlerden başlayacaksınız. Türkiye gibi yerlerde.
+
+699
+01:58:04,491 --> 01:58:14,651
+Ortadan başlayıp, işte mesela buradan başladım, buradan nereye gidebilirim, buraya gidebilirim, buraya gidebilirim, buraya gidebilirim, buraya gidebilirim, buraya, buraya, şuraya. Bunlardan en yakınını seçin.
+
+700
+01:58:14,651 --> 01:58:18,291
+Sonra mesela en yakını şu olsun. Bundan sonra en yakın kim var? Şu var.
+
+701
+01:58:18,547 --> 01:58:23,047
+Şuraya çok yaklaşmayacağız. İşte belki, yani ona göre çözüm üretmek gerekiyor.
+
+702
+01:58:23,047 --> 01:58:33,047
+Bunlar karşılaştığımız problemler. Bir de şu var, şimdi başlangıç noktamız da önemli dedik ya, bunu da şu ders noktası üzerinden anlatayım.
+
+703
+01:58:39,828 --> 01:58:45,828
+Şimdi mesela şöyle illerimiz var. İller arasındaki maliyetler de bize bu şekilde verilmiş olsun.
+
+704
+01:58:45,828 --> 01:58:47,828
+Yapacağımız şey şu.
+
+705
+01:58:50,828 --> 01:58:56,828
+Sezgisel algoritmamız, yani en yakın komşu olarak B'den başladı. Şimdi B'den başlayınca en yakın kim var?
+
+706
+01:58:56,828 --> 01:58:59,828
+A2'de B1 uzakta. O zaman B'den C'ye gelirim.
+
+707
+01:59:00,828 --> 01:59:05,828
+C'ye en yakın D var, başka ihtimali yok. C'den D'ye gireceğim. D'den E'ye gideceğim.
+
+708
+01:59:06,260 --> 01:59:32,420
+E'den F'ye gireceğim, F'den A'ya geleceğim, oradan tekrar B'ye geleceğim. Yani toplam uzunluk ne oluyor? B'den C'ye bir, ondan sonra C'den B'ye bir, iki, üç, dört, şey de öyle, altı da öyle. Yani B'ye tekrar gelmenin maliyetini burada es geçiyoruz. B'ye tekrar gelmenin, bütün şehirleri gireceğiz, bitecek. Yani burada başladığımız noktayla değiştirmeklerimiz farklı olacak. Bunun rota uzunluğu ne oldu? On oldu.
+
+709
+01:59:33,363 --> 01:59:50,064
+B'den başlamak yerine, mesela açgözlülük yaptık, en kısa yol dedik ya, B'den A'ya gitsem, iki, A'dan tekrar B'ye gelsem ama ne yapıyor burada?
+
+710
+01:59:50,064 --> 02:00:00,000
+Ha bu tam şey, TSP değil de. B'den başlıyorum, A'ya bir gidiyorum, A'yı devreden çıkartıyorum, sonra B'den C'ye tekrar B'ye...
+
+711
+02:00:00,000 --> 02:00:23,099
+B'ye geliyorum. Aslında bir şekilde kuralı overwrite ettik ama bakın bu daha iyi bir çözüm. B'yi aldık, A'ya geldik. Sonra tekrar B'ye gelip B, C, D, E, F dedik şu 6'yı devreden çıkarttık. Bu şekilde ne oluyormuş? İşte A, C, D, E, F'yi sırayla gezmek. İşte 8 birim oluyormuş. Optimal çözümlerden biri de A'dan başla. A, B, C, D, E, F yap.
+
+712
+02:00:23,891 --> 02:00:43,152
+Bu da 6 derim. Tekrar başa gelirsek, bu döngüsel bir şey olduğu için her mahiyete tekrar başladığım noktaya gelsen hepsi de aynı olacak ama amaç bütün şehirleri gezme üzerine olunca hani böyle bir durumda bakın farklı farklı çözümler. İşte bu lokalle takılma durumu var, bir de başlangıç noktasının doğru.
+
+713
+02:00:43,507 --> 02:00:58,867
+seçilmesi var. Şimdi şurayı okuyalım. Bazı serinsel yaklaşımlar, bazı problemler türünde bazı kısmı altında optimal çözümü garantiler. Ama çoğunlukla böyle değildir. Bunların daha detaylı algoritmalarını yapay zeka dersinde anlatıyor Fatih Hoca o dersi veriyor.
+
+714
+02:01:00,020 --> 02:01:12,020
+Optimum'u bulmanın şart olmadığı durumlarda çok fazla beklemek yerine, optimal olmayan yani yaklaşık çözüme giden, görebinde söylediğiniz approximately sonuçlar giden çözümler tercih edilir.
+
+715
+02:01:12,020 --> 02:01:17,020
+Yani sen gezecek bir adama 5 yıl bekle sana en uygun rotayı vereyim diyemezsin.
+
+716
+02:01:17,020 --> 02:01:24,428
+Bir tane çözüm önerirsin. Eğer o çözüm herkes tarafından da kabul gördüyse, mevcut literatürdeki en iyi çözüm ise,
+
+717
+02:01:24,884 --> 02:01:33,564
+Şu an için bu kullanı. İleride daha iyi bir sır birisi bulunursa, onu bulan kişinin namı yürür, çok iyi ödübüler alır.
+
+718
+02:01:33,564 --> 02:01:42,644
+Örneğin mesela sadece gezgin satıcı üzerinden düşünmeyen DNA'lar üzerinde, proteinler üzerinde kanser araştırmaları yapan Aziz Sancar.
+
+719
+02:01:42,644 --> 02:01:52,564
+Orada computational bir model var. Bu çok güzel bir çözüm ünerdiği için insan, Nobel'e layık görüldü. Bunu düşüneceksiniz.
+
+720
+02:01:53,140 --> 02:02:06,140
+Bununla alakalı detaylı dersler önümüzdeki dönemlerde göreceğimiz farklı derslerde farklı çözümler var. Bakın buralarda hiç dikkat ettiniz mi? Kod yazamıyoruz doğrudan. Çünkü şu problemi çözecek en faktörüellik bir kodu yazmak mümkün değil.
+
+721
+02:02:06,140 --> 02:02:09,140
+Neden mümkün değil? Şimdi ona geleceğim.
+
+722
+02:02:09,140 --> 02:02:16,140
+Biz bilgisayarda arkadaşlar, biraz önce dedik ya, belleği kullanıyoruz.
+
+723
+02:02:18,228 --> 02:02:21,228
+Bellek nasıl bir yapı? Onu görelim.
+
+724
+02:02:25,587 --> 02:02:30,587
+Bellek aslında dümdüz bir yapı değil mi? Yani bir dizi gibi düşünün.
+
+725
+02:02:36,595 --> 02:02:59,895
+Şöyle veya dik çizelim aslında. Ram dediğimiz. Bu arada bitireceğiz yani 15-20 dakika en kötü şey yaparız. Siz bütün problemlerinizi yani dizide olsa, matrisde olsa, linkli listede olsa, bir harita da olsa bu belleğe uyarlıyorsunuz. Şimdi bu bellek sayı doğrusu gibi.
+
+726
+02:03:00,020 --> 02:03:26,200
+0. hücre, 1. hücre, 2. hücre, yani tek boyutlu bir sayı doğrusu arkadaşlar. Tek boyutlu sayı doğrusunda bütün real sayıları, real number, tek bir büyüklükle ifade edebilirsiniz. Yani bu tabi burada tamamen tam sayılarla bellek göze var da, işte bir int gibi bir real gibi tek bir değişkenle belleğe ulaşabiliyorsunuz. İşin özü bu. Gerçek dünya,
+
+727
+02:03:26,931 --> 02:03:37,931
+Tek boyutlu bir dünya değil. En basitinden karmaşık sayıları düşünün. Karmaşık sayılar x artı yi şeklinde iki boyutlu değil mi? Orada ikinci bir boyuta çizmek gerekiyor.
+
+728
+02:03:37,931 --> 02:03:50,731
+İşte bir real part var, bir imajiner part. Aynı burada da olduğu gibi gerçek dünya tek boyutlu değil, geometrik bir durumda. Geometrik olması ne demek? En alt iki boyutlu var.
+
+729
+02:03:50,899 --> 02:03:56,500
+Şimdi en az iki boyutlu, üç boyutlu, dört boyutlu şeyi her zaman için tek boyuta indirgeyemiyorsun.
+
+730
+02:03:56,500 --> 02:04:04,099
+Şimdi öğrencinin finali vizesi işte bunların en büyüğü. Bunu alırsın, iki boyutu tek boyuta indirgersin, çözersin.
+
+731
+02:04:04,099 --> 02:04:10,899
+Niye? Çünkü çözüm uzayın belli. Yani en karelik uzayda dönüp duruyorsun.
+
+732
+02:04:10,899 --> 02:04:13,771
+Ve bize çarpı şey öğrenci sayıda kadar.
+
+733
+02:04:13,908 --> 02:04:19,908
+Şimdi, öyle durumlar ki, şimdi bu durumu çözmek için işte olasılıklar şöyle ağaç gibi yükseliyor.
+
+734
+02:04:19,908 --> 02:04:30,908
+Şimdi bu ağaç fonlu bir ağaç değil. Yani gerçek dünya geometri dedik ya, bu problemi çözerken gideceğin yani çözüm olasılıkları böyle dallanıp budaklanıyor.
+
+735
+02:04:30,908 --> 02:04:38,828
+Dolayısıyla sen bu dal, ağaç yapısını sonsuza kadar giden bir yapı olduğu için, bir sürü olasılıksal bir durum olduğu için
+
+736
+02:04:38,868 --> 02:04:50,868
+D diye indirgeyemiyorsun, yani belleğe indirgeyemiyorsun, tek bölge indirgeyemiyorsun. Mesela bu. Bakın üç boyutlu verileri indirgersin, iki boyutlu verileri indirgersin, ağaçların bir kısmı en sonlu ağaçsa indirgersin.
+
+737
+02:04:50,868 --> 02:04:59,868
+İşte graflarsa indirgersin ama çözüm olasılıkları böyle n! ilerlerse n! kadar bir kere bellekte yerin yok.
+
+738
+02:04:59,868 --> 02:05:06,380
+Bellekte yer olmadığı için bir kere buradan bir sıkıntı var. O kadar şeyi çözecek işlem kabiliyeti de yok.
+
+739
+02:05:06,771 --> 02:05:19,771
+Kuantum tekniği belki burada ileride karşımıza yenilikler getirecek bir şey diyemeyiz ama mevcut bilgisayar sistemleri bu gerçek çözüme ulaşmak için yeterli imkanları sağlamıyor. Mesele budur. Tamam mı?
+
+740
+02:05:19,771 --> 02:05:32,300
+Şimdi mesela bir örnek göstereceğim. Bunu ben öğrenciyken sınıf arkadaşlarımız diye hoca ödev vermişti. O zaman da ayrık matematik dersinde yüksek lisans bilimsel hazırlık öğrencisi. Dik işte şey yaptık.
+
+741
+02:05:32,340 --> 02:05:56,099
+Gezgin satıcı problemini, biz makalesini de yazdık. Hatta şu an bayağı atıf alan da bir makale bu. Genetik algoritma, bu bir yapay zeka algoritması. Bir de karınca kolonsi algoritmasıyla çözmeye çalışan, çözüm bulan bir şekilde çözmeye çalıştık. Türkiye haritası üzerinde falan bunu denemiştik. Böyle bir yüzler interfezimiz var, bunu göstereceğim şimdi.
+
+742
+02:05:57,587 --> 02:06:05,747
+Haritayı yüklüyorsunuz, bunlar haritalar özel veri yapılarıyla saklanıyor. Yani görsel olarak bunu yüklemek çok basit bir şey. Ufak tefek kodlar yedirmiş.
+
+743
+02:06:05,747 --> 02:06:12,347
+Bakın şöyle rotalar çıkartın. Birisi mavi, birisi kırmızı, öbürü de yeşil gibi bir şey.
+
+744
+02:06:12,347 --> 02:06:18,827
+Bunlar çözüm. Tabi bu optimal çözüm kesinlikle değil. Şimdi optimal olmadığını göstereceğim.
+
+745
+02:06:19,283 --> 02:06:29,283
+Karınca kolonisi algoritması ne yapıyor? Karıncaların yem arama ve o kendi aralarındaki ilişkisel davranışlarını modelleyen bir algoritma.
+
+746
+02:06:29,283 --> 02:06:40,283
+Bu algoritmaya göre biz 1000 adımda 9.966 kilometre ile Türkiye'yi gezecek bir rosa çıkartmışız.
+
+747
+02:06:40,283 --> 02:06:45,003
+Tabii bu karayollarından alınan haritaya göre yani aradaki yeni yollar, tüneller.
+
+748
+02:06:45,043 --> 02:07:03,043
+2013 yılı, 2014 yılı işte bunu yaptığında, şu an belki güncellendi. Bakın, 10.000 km fena değil değil mi? Bir Türkiye'yi 10.000 km ile gelebileceğinizi düşünün müydü? Şu an daha kısa süredir çünkü yeni yeni yollar falan oldu. 10.000 iyi bir çözüm değil mi arkadaşlar?
+
+749
+02:07:05,043 --> 02:07:10,043
+Ve bunu algoritmayı koşturmak için bizim yaptığımız süre 15 dakikada süre bulmuş.
+
+750
+02:07:10,931 --> 02:07:19,931
+Karınca Kolonisi Aliburit'in 15 dakikada şöyle bir rota. 15'den başlarsan, 15 nolu ilinden başlarsan, 15 nerenin plakası?
+
+751
+02:07:21,931 --> 02:07:22,931
+Burda başlıyor.
+
+752
+02:07:23,931 --> 02:07:27,931
+Burdur bak. 32'de Isparta. Tam senin dediğin olmuş yani.
+
+753
+02:07:27,931 --> 02:07:29,931
+Evet.
+
+754
+02:07:29,931 --> 02:07:32,931
+32, 64 neresi?
+
+755
+02:07:32,931 --> 02:07:38,891
+Isparta'dan nereye gidiyor? Afyon değildir.
+
+756
+02:07:39,988 --> 02:07:50,387
+Bakayım, 15, 32, 64, şurada Kütahya mı olacak veya Uşak olacaktır? 64 nelerin plakası? Hangi şehir?
+
+757
+02:07:55,252 --> 02:08:00,252
+Uşak'tan nereye gidiyormuş kırmızı olan? 3 Afyon'a gidiyor.
+
+758
+02:08:00,252 --> 02:08:13,252
+Sonra 43 Kütahya, sonra 26 Eskişehir, ondan sonra 11 Bilecik, 16 Bursa, Bursa'dan sonra 77 Yalova, ondan sonra 41 İzmit,
+
+759
+02:08:13,252 --> 02:08:20,252
+sonra 54 Sakarya diyor, sonra 81 Düzce. Bakın ne yaptı? Şu şeyden başladı.
+
+760
+02:08:20,756 --> 02:08:42,636
+Burdur civarından başladı, yani böyle göller yöresinden başladı, sonra tepeden Ankara, İç Anadolu'nun içine geldi. Sonra böyle İç Anadolu'yu böyle dolaşıp Konya, daha sonra Akdeniz falan böyle dolaşıp gidiyor. Bu 9.900 yani 10.000 diyelim. Genetik algoritma o da bir teknik. Bu da...
+
+761
+02:08:42,899 --> 02:08:49,380
+Crossing over, çaprazlama var ya biyolojide görüntü, onu kullanan bir çözüm,
+
+762
+02:08:49,380 --> 02:08:54,020
+hocam ne alaka yani nasıl bir algoritma, yeri gelince yapay zeka dersini göreceksiniz.
+
+763
+02:08:54,020 --> 02:09:02,340
+11.700, yaklaşık işte 12.000 kilometre. Bakın bu da şeyden başlamış.
+
+764
+02:09:02,340 --> 02:09:10,739
+Muhtemelen biz bunu başlatırken [öğrenci] senin dediğin gibi bir şey yaptık yani muhtemelen bu iller arası en az mesafe hangi iki şehir arasında?
+
+765
+02:09:10,931 --> 02:09:21,431
+En azdır, onu bilerek yapmışız. Belki bunu makalede yazdık ve 10 yıl geçti için hatırlamıyorum. Bakın arama süresi hemen hemen birbirine aynı arkadaşlar.
+
+766
+02:09:21,431 --> 02:09:29,431
+1000 adım algoritmayı, 1000 iterasyon çalıştırmışız. Belki biraz daha fazla çalıştırsak, belki rota azalabilir.
+
+767
+02:09:29,431 --> 02:09:34,431
+Burada da 12.000, nereden farklılaşıyor şöyle bakarsak.
+
+768
+02:09:34,836 --> 02:09:45,236
+15, 32, 64, 3, 43, 26, 11, 16, 77, 41, 54, 81, 14, 6, 8, 17, nereden ayrılıyor?
+
+769
+02:09:45,236 --> 02:09:53,336
+19, 5, 60, 58, 70, 51, 63, nereden sonra farklılık var ona bir bakayım lan.
+
+770
+02:09:55,096 --> 02:09:58,516
+Şu arada muhtemelen bir şey farkı var arkadaşlar.
+
+771
+02:10:00,340 --> 02:10:22,020
+Şöyle şehirlere bakarsak, yani evet mesela 14 Noğlu şehirden birisi 64'e geçmiş, birisi mesela 6'ya geçmiş. Şu 14'ten sonra 14'ü bulursak, bulmak da biraz olur maalesef. Ha 14'ten 6'ya geçiyor burada. Şurada o da 14'ten 6'ya geçiyor.
+
+772
+02:10:24,275 --> 02:10:34,636
+Gerçi şuradaki listede ufak bir farklılık olabilir. Şekillere baktığımızda şey görünüyor. Birinin maliyeti o kadar, birinin maliyeti biraz daha fazla.
+
+773
+02:10:34,636 --> 02:10:48,636
+Bundan daha iyi algoritma var mıdır? Tabii bu problem çözümünde, bizim o zaman yaptığımız şeyde sadece çözümünün göstermekte elbette daha iyi çözüm vardır. Belki 8000 kilometreye inmiştir bu süreç.
+
+774
+02:10:49,876 --> 02:10:57,876
+Bunları dediğimiz gibi daha farklı derslerde göreceksiniz. Mesela dünkü paylaştığım şeyde...
+
+775
+02:11:02,707 --> 02:11:12,507
+Aynısını, simplex diye bir metot var mıydı burada ya? Mesela soft computing, gerçi tam şey değil mi? Bir tane daha vardı. Bakayım.
+
+776
+02:11:16,851 --> 02:11:32,851
+Ben size yani Quick Sort'u ve Fast Fourier Transform'u söyledim. Mesela Matrix Decomposition dediğimiz bir şey var. Büyük matrisleri daha basit matrisler cinsinden yazıp birçok problemi çok rahat çözebiliyorsunuz. Bu güzel bir şey.
+
+777
+02:11:32,851 --> 02:11:43,787
+Linear Programming Simplex Matrizi. Bu şudur. Endüstri mühendisleri bunu çok kullanırlar. Hangi işkiye hangi işi atarsam en az maliyeti ve en fazla verimi elde ederim. Bu zor bir problem.
+
+778
+02:11:44,083 --> 02:11:53,444
+Örneğin N tane işçi var, M tane iş var, herkes her işi ne kadar sürede yapabiliyor, ne kadar maliyetli yapabiliyor, bu tarz elinizde kısıtlarınız var.
+
+779
+02:11:53,444 --> 02:12:01,043
+Simplex metodu mesela, endüstricilerin kullandığı çok güzel bir algoritma. Farklı farklı alanlarda farklı algoritmalar var.
+
+780
+02:12:01,043 --> 02:12:07,524
+Tabi bilgisayar mühendisli olarak sizin işiniz tamamen matematiksel boyutuyla da ilgilenmekte değil ama...
+
+781
+02:12:07,764 --> 02:12:33,764
+Bu derste göreceğiniz diğer dersler bu olaya daha iyi algoritma nasıl geliştirilir, yönünden bakmaktır. Bu bizim için önemli çünkü öyle problemler var ki çok geç sonuç veriyor. Çözüm neredeyse işe yaramıyor veya geri geliyor, çok aşırı bellek tüketiyor, çözüme ulaşamıyorsunuz. Bilgisayarcı olarak bu alanlara ilgimiz olması lazım.
+
+782
+02:12:34,015 --> 02:13:01,255
+Bunun için de bir de ayrıca bir kitap önereyim. Meşhur bir kişi var. Birçok kitabım. Donald Mott. Bunu inceleyebilirsiniz. Art of serisi var bu kişinin. Computer Programmer. Başka başka kitapları var ya.
+
+783
+02:13:02,068 --> 02:13:27,068
+The Art of, şöyle kısa hattılmış. Bu seriye baktığınızda, 3-4 farklı, mesela, volümü görüyorsunuz. Şöyle bakalım, yani bunun görseli de vardı. Birinci volüm, birinci baskı kitabı, temel algoritmalar. MIT tarafından basıp, şey bir detayları var. Sonra, semi-limate algoritmalar.
+
+784
+02:13:27,764 --> 02:13:47,963
+detaylarına bakın. Sonra bakın sorting ve searching algoritmalarının detaylarına bakın. Sonra atıl işin zorlaştığı kombinatoryal algoritmalar. Bakın bu iki parça. Bu algoritmaları ve işte daha diğer versiyonların sürekli belki bileceğiz. Hatta ne varmış? 2022'de baskıda çıkmış şunu.
+
+785
+02:13:48,372 --> 02:14:01,372
+Bunları edinebilirsiniz, elektronik olarak falan da bulmak lazım. İnceleyin, okuyun, mesleğinizin bir parçası. Şöyle kitaplarınla bakalım.
+
+786
+02:14:16,787 --> 02:14:29,287
+Evet, şu tarz şeyleri vardır. Rahatlıkla bulabilirsiniz şeyleri internette. Tavsiye ederim buradaki farklı problemleri ve problemleri üretilen algoritmaları inceleyin, okuyun.
+
+787
+02:14:35,988 --> 02:14:54,988
+Algorithmist diye Stanford'ın bir kitabı var, Robert Sejvik. Belki bunu diğerlerde gördüğünüz şu kırmızı kitap. Bunun online animasyonları, kodları, bir sürü kaynakları var. Bu da algoritmaları birkaç farklı içerikle inceliyor. Gelecek dönemlerde...
+
+788
+02:14:55,572 --> 02:15:05,972
+Bizim diskredit matematik dersimiz, ondan sonra veri yapıları algoritmalar dersimiz, algoritma analizi dersimiz bu kitaplar üzerinden size farklı bakış açıları kazanırız.
+
+789
+02:15:05,972 --> 02:15:11,012
+Evet, özetleyecek olursak biz bu Yapısal Programlamaya Giriş BLM 10.12 dersinde
+
+790
+02:15:11,252 --> 02:15:31,932
+Sizde artık dersi kapatıyoruz, yani bedava gibi. Ne yaptık arkadaşlar? Algoritma nedir? İyi algoritma nedir? Bunun özellikleri nelerdir? Hangi açılardan biz algoritmaya iyi diyebiliriz? Bunları özetlemeye çalıştık. Farklı örnekler üzerinde, gerek kod gerek işte blow chart üzerinden örneklerimizi yaptık.
+
+791
+02:15:32,212 --> 02:15:35,532
+Ve dersimizi bu şekilde tamamlayabiliriz.
+
+792
+02:15:35,532 --> 02:15:43,212
+Ders sadece dediğimiz gibi bir programlama dersi değil, bize biraz algoritmik bakış açısı kazandırmaya amaçlıyor.
+
+793
+02:15:43,212 --> 02:15:51,811
+Giriş dersi olduğu için bazen çok basit algoritmalar üzerinde konuştuk ama onların iyileştirilme safaları, işte şunu değiştirsek ne olur, bunu yaparsak ne olur.
+
+794
+02:15:51,811 --> 02:15:57,412
+Matematiğin ve mantığın burada rolü nedir? Çok güzel bazı örneklerimiz vardı ki matematikle
+
+795
+02:15:57,619 --> 02:16:12,619
+Enlik bir algoritmayı birliğe indirgeyebildik. Ben hatta öğrencilerime hep onu diyorum, bir belleği kullanarak veya zamanı kullanarak algoritmayı iyileştiremiyorsan kafayı kullanıp matematiği ve mantığı kullanıp çok iyi çözümler sunabilirsin.
+
+796
+02:16:12,619 --> 02:16:19,359
+Yani burada da hani şanın yürür, namın yürür öyle söyleyeyim çok güzel çözümler yapabilirsin.
+
+797
+02:16:19,359 --> 02:16:28,359
+Bunun yarışmaları var. Bununla alakalı araştırmalar yapabilirsiniz, okumalar yapın. Bu anlamda genel kültürünüzde ayrıca geliştirin arkadaşlar.
+
+798
+02:16:28,359 --> 02:16:33,360
+Dersiniz bu kadar. İnşallah dönem boyunca faydalı olmuştur. Bir sorunuz var mı?
+
+799
+02:16:35,360 --> 02:16:45,899
+Hocam doğrudan dersle alakalı değil de, şu karınca kolonisi algoritması ve genetik algoritmanın karşılaştırması için kaç örnek üzerinden karşılaştırılıyorlar?
+
+800
+02:16:46,420 --> 02:16:54,420
+Örnek üzerinden değil, şimdi orada problem uzayında, onlar her türlü arama probleminden uygulanabilen algoritmalar.
+
+801
+02:16:54,420 --> 02:16:58,420
+Maliyet söz konusu olduğunda maliyeti minimize eden algoritmalardır.
+
+802
+02:16:58,420 --> 02:17:01,420
+Farklı arama uzaylarında çözümler üretirler.
+
+803
+02:17:01,420 --> 02:17:05,420
+Yani onun bir sürü farklı parametre var. Mesela karınca sayısı.
+
+804
+02:17:06,100 --> 02:17:15,100
+Bir toplulukta 30 tane karınca olursa farklı oluyor, 100 tane. Bu karınca sayısı tabii zaman maliyetini değiştiren bir şey.
+
+805
+02:17:15,100 --> 02:17:22,100
+Örnek dışında ayrıca şeyler var. Örnekten kastında eğer bir haritaysa, o örnek uzay sabit.
+
+806
+02:17:22,100 --> 02:17:31,051
+Ama örneğin bir makinenin çalışma frekansıyla alakalı veya çalışma parametrelerini belirleyeceksen, orada örnekler daha farklı, farklı veriler toplanıyor.
+
+807
+02:17:31,092 --> 02:17:45,531
+Veya bir yapay zeka optimizasyonu yapılacaksa, bunlar optimizasyon algoritmaları bu arada. Yapay zeka optimizasyonu yapılacaksa farklı veriler üzerinde şey yapıyorsunuz. Bunun kesin bir kalıbı yok, her türlü probleme uyarlanabilir algoritmalar.
+
+808
+02:17:46,388 --> 02:17:57,388
+Yani şöyle örnek vereyim, bir dizinin en küçük elemanını bulmak için algoritma belli, istersen onu öğrenci notlarına uygula, istersen insanların isimlerine uygula, istersen başka şeylere uygula.
+
+809
+02:17:57,388 --> 02:18:05,388
+O nasıl globalse, bu algoritmalar da çok globaldir. Belli şartlarda parametrelerini belirleyip kullanabiliyorsun.
+
+810
+02:18:05,388 --> 02:18:09,388
+Ben şey hocam, sergisel algoritma dedik ya.
+
+811
+02:18:10,191 --> 02:18:12,871
+Her defasında farklı çözümü veriyor yoksa?
+
+812
+02:18:12,871 --> 02:18:18,191
+Evet, bunların her defasında farklı çözüm verme olasılıkları var. Onun için non-deterministik algoritmalar.
+
+813
+02:18:18,191 --> 02:18:32,671
+Zaten bütün parametreleri aynı verirsen, eğer randomize bir parametresi yoksa, yine aynı sonucu elde edersin ama algoritmaların iç yapısına bakarsan, random sayı üreterek veya işte randomize operasyonlar kullanarak çözüm ürettiklerini görürsün.
+
+814
+02:18:32,671 --> 02:18:35,311
+Onun için her zaman aynı sonucu da vermeyebilirim.
+
+815
+02:18:35,667 --> 02:18:43,667
+Hocam her zaman aynı sonucu vermiyor ya, ondan da genetik algoritmadan üstünlüğünü kanıtlamak için mesela kaç deney yapmamız gerekiyor?
+
+816
+02:18:43,667 --> 02:18:50,667
+Yani onun istatistikler şeyleri var, en az 30-35 deneyi yapmak gerekiyor ama üstünlüğünü burada kanıtlayacak bir şey tam yapamıyoruz.
+
+817
+02:18:50,667 --> 02:18:56,667
+Yani genetik algoritma her adımda şeyden kötüdür, karıncadan kötüdür, her problemde diyemiyoruz.
+
+818
+02:18:56,667 --> 02:18:59,667
+O öyle bir şey, yargıya varmak mümkün değil.
+
+819
+02:18:59,667 --> 02:19:03,667
+Bazı problemlerde genetik algoritma problemleri, çözümü daha iyidir.
+
+820
+02:19:03,667 --> 02:19:16,468
+Bazı bazı da karınca dahilir. Öyle bir yargı yapılmaz burada da. Mesela bu problem üzerinde karınca daha iyi vermiş. Mesela arı algoritması var, kedilerin algoritması var, balık sürüleri algoritmaları var.
+
+821
+02:19:16,468 --> 02:19:19,868
+Böyle bakarsınız, hatta durun ben size kitabını şey yapayım.
+
+822
+02:19:23,868 --> 02:19:29,420
+Nature mıydı yani? Yok. Ha, Clever algoritmiz. Şu kitabı inceleyebilirsiniz.
+
+823
+02:19:30,291 --> 02:19:40,291
+Zeki algoritmalar. Bakın burada size chatten de paylaşabilirim. Hatta bu kitap çok faydalı. Önce algoritmanın matematiğini ve mantığını anlatıyor.
+
+824
+02:19:40,291 --> 02:19:47,291
+İşte çalışma mantığını nereden esinlendiğini anlatıyor. Burada şöyle görebilirsiniz. Sonra kodunu falan da gösteriyor.
+
+825
+02:19:47,291 --> 02:19:56,108
+Bakın pdf olarak da oradan indirilir, genebilir. Burada farklı gruplardan işte nöral algoritmalar, immün algoritm mesela demiş ki, clonal selection.
+
+826
+02:19:56,371 --> 02:20:12,371
+Art, yapay vahşıklık sisteminin algoritmasını kullanmış. Sürü algoritmaları, karınca bunlardan bir tanesi, probabilistik algoritmalar, fiziksel algoritmalar gibi gibi böyle bir sürü çeşit algoritmalar. Tabi bunlar yapay zekanın konusu. İncelemenizi tavsiye ederim.
+
+827
+02:20:15,072 --> 02:20:17,072
+Başka sorumuz var mı?
+
+828
+02:20:18,963 --> 02:20:22,963
+Hocam, sayısal analiz dersinde ne yapıyorsunuz? Kontrole devam mı ediyorsunuz?
+
+829
+02:20:22,963 --> 02:20:29,963
+Evet, kontrole devam ediyoruz. Adli kontrolümüz kaldı. Bu dersin finali ile alakalı Fatih Hocam ile henüz görüşmedik.
+
+830
+02:20:29,963 --> 02:20:38,963
+Yani sınavlar biliyorsunuz online olacak. Online olacağı için test yapabiliriz, klasik yapabiliriz. Bununla alakalı sizlere bilgi gelecek arkadaşlar.
+
+831
+02:20:39,891 --> 02:20:56,691
+Dersi takip eden, laboratuvarlarda, ödevlerde, ondan sonra gerekli çalışmalar yapanın çok zorlanmayacağı bir sınav olacağını düşünüyorum. Genellikle öyle oluyor. İlgisi olan rahatlıkla nasıl ki vize de şeyse, burada da buna benzer bir şey olur.
+
+832
+02:20:56,691 --> 02:21:01,492
+Sınavın şartlarını özellikle sizlere ayrıca ilan edeceğiz.
+
+833
+02:21:02,739 --> 02:21:08,739
+Bu söylediğiniz algoritmaları Gauss dağılımını elde edene kadar mı yapıyorsunuz?
+
+834
+02:21:08,739 --> 02:21:11,739
+Hangisinde? Karınca falan mı?
+
+835
+02:21:11,739 --> 02:21:12,739
+Evet.
+
+836
+02:21:12,739 --> 02:21:20,739
+Yok, öyle bir şartımız da yok yani Gauss'a ulaşana kadar. Öyle bir şey yapmadık biz. Belki yapılabilir de belli durumlarda ama bizim öyle bir durumumuz yok.
+
+837
+02:21:20,739 --> 02:21:25,515
+Çünkü hani genel normal durumlarına yaklaşıyor ya, onun için demiştim.
+
+838
+02:21:25,683 --> 02:21:34,183
+Evet ama şimdi onu yapmanın da bir maliyeti var. Eğer o kadar tekrarlama çok fazla sürecekse sıkıntı olabilir.
+
+839
+02:21:39,636 --> 02:21:50,236
+O da ayrı düşünülmesi gereken şey. Bunlar da bu tarz yapay zeka ile alakalı çözümler sunarken, şunu şunu şunu uygularsan şunu elde edeceksin diyemiyoruz.
+
+840
+02:21:50,236 --> 02:21:59,436
+Çünkü biraz önce [öğrenci]'nin de söylediği gibi, non-deterministik olan bir şey var. Belli durumlarda belli çözümler, belli durumlarda başka çözümler işe yarıyor.
+
+841
+02:22:02,868 --> 02:22:22,268
+Evet, başka sorumuz yoksa arkadaşlar, dersimizi kapatabiliriz. İnşallah faydalı olmuştur. Ben tekrardan memnun oldum. Gelecek dönem bilmiyorum tekrar karşılaşır mıyız. Tekrardan hepinizde başarılar diliyorum. Sınavlarınızda, finallerinizde iyi bir tatil diliyorum. Kendinize iyi bakın arkadaşlar.
+
+842
+02:22:23,540 --> 02:22:25,540
+Bütün ders için teşekkürler hocam.
+
+843
+02:22:25,540 --> 02:22:26,540
+Ben teşekkür ederim.
+
+844
+02:22:26,540 --> 02:22:28,540
+Anlatımlarınız, katkılarınız için teşekkürler hocam.
+
+845
+02:22:28,540 --> 02:22:30,540
+Estağfurullah, sağ olun. Ben teşekkür ederim.
+
+846
+02:22:30,540 --> 02:22:34,540
+Hocam, son olarak dersi kapatmadan önce bir de şey sorabilir miyim?
+
+847
+02:22:36,540 --> 02:22:40,540
+Yapay zekayla ilgili kime danışmamı tavsiye edersiniz?
+
+848
+02:22:40,540 --> 02:22:43,540
+Yani bölümde çoğu hoca yapay zeka çalışıyor.
+
+849
+02:22:43,540 --> 02:22:46,540
+Yapay zekanın hangi alanına çalışman gerektiğini önce belirle.
+
+850
+02:22:46,540 --> 02:22:49,540
+Yani görüntüsü var, ne bileyim videosu var.
+
+851
+02:22:49,540 --> 02:22:50,252
+Hocam, ee.
+
+852
+02:22:50,260 --> 02:22:57,260
+Optimizasyonu var. Yani hocaların CV'lerine bakarsan, kendine en yakın gördüğüm konuda,
+
+853
+02:22:57,260 --> 02:23:03,260
+bizde 25 hoca varsa 25'in belki 20'si yapay zeka çalışıyor.
+
+854
+02:23:03,260 --> 02:23:07,260
+Anladım hocam. Alanda Türkçe ne LP?
+
+855
+02:23:07,260 --> 02:23:14,260
+NLP ise o zaman Banu Hanım, Pati Hoca, Göksel Hoca falan onlar bakıyorlar daha çok.
+
+856
+02:23:14,260 --> 02:23:16,260
+Tamamdır hocam, teşekkürler.
+
+857
+02:23:16,260 --> 02:23:16,780
+Rica ederim.
+
+858
+02:23:18,100 --> 02:23:33,100
+Emir, ben seni hemen şimdi Zoom odasına çağırıyorum. Mikrofonla hazırlar lütfen. Evet, dileyen arkadaşlarım çıkabilirim sorusu yok da. Ben bir arkadaşınızla görüşeceğim arkadaşlarımın. Ondan sonra kapatacağım.
+
+859
+02:23:36,100 --> 02:23:38,092
+Başarılarla iyi günler arkadaşlar.

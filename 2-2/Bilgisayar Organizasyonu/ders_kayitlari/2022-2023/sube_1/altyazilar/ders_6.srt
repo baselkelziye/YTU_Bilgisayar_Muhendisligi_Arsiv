@@ -1,0 +1,2883 @@
+1
+00:05:58,995 --> 00:05:59,995
+Arkadaşlar, merhaba.
+
+2
+00:06:04,115 --> 00:06:29,656
+Dersler hibrite döndüğü için sınıfları da bir kontrol ettim. Gelen giden var mı diye. Fiziki olarak burada olan kimse yok herhalde. Okul tarafından. Sınıflar boştu çünkü. Grup 1 ve grup 2 için. O yüzden ben derse şimdi bölümdeki odamdan devam edeceğim. Onu söylemiş olayım.
+
+3
+00:06:31,540 --> 00:06:46,120
+Geçen haftaki kısa sınavdaki hatalı sorularla ilgili o hatalı soruları iptal edip geri kalanlar üzerinden puanlama yapacağım. Daha onları yapmadım. Bunu söyleyeyim.
+
+4
+00:06:48,620 --> 00:06:54,720
+Bir de geçen hafta kaldığımız nokta itibariyle ekran paylaşarak başlıyorum.
+
+5
+00:07:00,307 --> 00:07:02,307
+Görüyorsunuz senaryum ekranı.
+
+6
+00:07:07,732 --> 00:07:11,912
+Senkron sayıcı mantığını konuşmuştuk en son.
+
+7
+00:07:12,572 --> 00:07:17,232
+Ve burada hata düzeltme, auto correction mantığından bahsetmiştik.
+
+8
+00:07:18,212 --> 00:07:30,372
+Zorunlu olmayan bir edebiyat olarak da rastgele oluşturmuş olduğunuz bir keyfi sayıcı da tüm durumları içermeyen, örneğin 3.5 sayıcı da 6 tane durum olsun.
+
+9
+00:07:31,532 --> 00:07:34,612
+Rastgele sayma değerleri üretti. Peş peşe birbirini takip eden.
+
+10
+00:07:35,379 --> 00:07:45,879
+Minimal bir fonksiyon elde etmeye çalıştığımızda, artificial senkron devre olarak iki tane durumun da doğal olarak nereye gideceklerini tanımlamış oluyorduk.
+
+11
+00:07:45,879 --> 00:07:52,759
+Bu tanımlamalar çerçevesinde sistemin auto-correction'u var mı? Kendi kendini düzeltebiliyor, düzeltemiyor mu?
+
+12
+00:07:52,800 --> 00:07:56,879
+Onların için yapmamız. Sonrasında da eğer auto-correction yoksa...
+
+13
+00:07:57,492 --> 00:08:16,812
+Auto-correction yapabilmek için ne tür adımlar izlemek lazım? Örneğin, atıyorum şöyle bir senaryo olmuş olsa, işte bu buraya değil, bu buraya değil, bu buna dönüyor olsa, bu buna dönüyor olsa, yani seçmiş olduğu minimal fonksiyona göre böyle bir şey çıkmış olsa, ne yapacaksınız?
+
+14
+00:08:16,812 --> 00:08:23,391
+İşte bunu buraya dönmesini veya herhangi bir duruma dönmesini sağlamanız gerekiyor.
+
+15
+00:08:24,755 --> 00:08:37,755
+Bu da eninde sonunda bir autocorelection olmuş olacak. Bu durumdaki tablomuzda, hani karno map yaptık, karno map'te şu kısmı aldık, bunlardan bir tanesi X'ti, bunu bir olarak seçmiş olduk aslında.
+
+16
+00:08:38,655 --> 00:08:47,415
+Şu geçişi sağlayabilmek adına belki bunu tekrar sıfıra dönüştürmemiz gerekiyor olabilir. Bunu kontrol edip devreyi yeniden tasarlamak gerekiyor.
+
+17
+00:08:47,892 --> 00:08:55,732
+Buradaki devre mantığı, auto correction mantığı bu şekildeydi. Dersde en son bunu konuşmuştuk diye hatırlıyorum.
+
+18
+00:08:57,672 --> 00:09:03,092
+Sonrasında çeşitli datapath kavramlarının yapılarına geçecektik.
+
+19
+00:09:05,652 --> 00:09:09,052
+Onlar temelde, şöyle yapalım daha ne geliyor.
+
+20
+00:09:09,052 --> 00:09:12,092
+Temelde 3 tip var. Bunlardan birisi,
+
+21
+00:09:14,611 --> 00:09:40,971
+Her bir yardımcının gerisinde kendisine adanmış dedike bir MUX'un olması. İkincisinde ortak bir MUX var. Dolayısıyla registerların önüne bu MUX'dan geçerek bir BUS üzerinden geliyor. Üçüncü yöntemde ise artık MUX kullanmayıp onun yerine Tristate Buffer mantığında giriş çıkışı aynı kanal üzerinden yapmamız.
+
+22
+00:09:41,327 --> 00:10:03,887
+Mantık ortaya çıkıyor. Bu üç yapıyı ve hangi tür komutları desteklediğini, hangi tür komutları desteklediğini inceleyeceğiz. Daha sonrasında ötelemeli yazmaçlarla bir uygulamamız var. Ötelemeli yazmaç kullanarak seri toplayıcı mantığı ona bakacağız. Ondan sonra da bu haftanın konusuna geçiyor olacağız.
+
+23
+00:10:08,340 --> 00:10:18,940
+A ile işaretlenmiş olan yapıda gördüğünüz durum her bir yazmacın kendi arkasında dedike bir MUX'unun, multitextrinin olduğu senaryo ile karşılaştırıyor.
+
+24
+00:10:23,740 --> 00:10:27,879
+Yazmaçlarımızı tanımlayacak olursak yazmaçlarımızın yükleme kontrolü var.
+
+25
+00:10:27,980 --> 00:10:32,480
+Load işareti olarak geçiyor. Her bir yazmacın böyle bir yükleme kontrolü var.
+
+26
+00:10:35,251 --> 00:10:47,932
+Her bir yazmacımızın veri giriş ve veri çıkış uçları, basları var. Veri giriş, veri çıkış, veri giriş, veri çıkış basları var. Bunlar en bittikmiş. Dolayısıyla yazmaçlarımız en bittik yazmaçlar.
+
+27
+00:10:48,932 --> 00:10:54,932
+Burada üç tane yazmaç üzerinden konuştuğumuz için aslında bir tanesi de hedef olacağı için.
+
+28
+00:10:55,604 --> 00:11:10,484
+Diğer iki yazmaçtan bir tanesini seçtirerek getirdiği bir senaryo var. Dolayısıyla her bir yazmacın gerisindeki MUX'umuz diğer iki yazmaçtan gelen input'u alıp seçip kendi yazmacını aktaracak şekilde tanımlanmış durumda.
+
+29
+00:11:11,704 --> 00:11:20,544
+Dolayısıyla örneğin R0'a gelen MUX girişlerini incelediğimizde 0 numaralı girişe gelenin R2'den olduğunu
+
+30
+00:11:21,011 --> 00:11:31,391
+Mesela yazalım şöyle, R2'den olduğunu. Bir numaralı girişe geleni, R1'den olduğunu. Hem görmüş hem de not etmiş olalım.
+
+31
+00:11:32,231 --> 00:11:41,871
+R1 yazmacının kendi Mux'un 0 girişine, R0'dan bir giriş var, R0 diye gelmiş. Diğer ucumuz ise R2'den geliyordu.
+
+32
+00:11:41,871 --> 00:11:43,932
+R2 diye.
+
+33
+00:11:46,227 --> 00:11:52,788
+R2'nin 0 numaralı MUX girişine gelen değer R0'dan geliyor.
+
+34
+00:11:54,347 --> 00:11:57,927
+Bu da R1 olması lazım. Takip edelim. R1'den geliyor.
+
+35
+00:12:00,507 --> 00:12:08,927
+Dolayısıyla MUX girişleri de bu şekilde. Kontrol işaretlerimiz neler? Sadece load işaretleri yok. Her bir yazma için load işareti yok. Aynı zamanda...
+
+36
+00:12:09,460 --> 00:12:26,700
+Her bir dedike MUX için bir de seçim ucu var. İkiye birlik MUX'lar oldukları için bir tane seçim uçları bunlar da yeterli. Dolayısıyla buradaki A ile işaretlenmiş olan dedike MUX yapısında toplam 6 tane kontrol işaretimiz mevcut.
+
+37
+00:12:27,940 --> 00:12:33,200
+Mesela burada yapabileceğimiz işlemleri tanımlayacak olursak mesela bir örnek verelim.
+
+38
+00:12:34,803 --> 00:12:46,963
+İşte R0 yazmacına R1'deki değeri atamak istiyoruz. Bu işlemi yapabilmek için kontrol işaretlerimizin ne olması lazım?
+
+39
+00:12:47,043 --> 00:12:53,803
+Hani yazıyorduk ya register transfer dilinde, koşulu oluşturan, tur olarak oluşturan senaryo ve yaptığı işlem şeklinde.
+
+40
+00:12:54,443 --> 00:12:59,803
+Burada da bu işlemi yapmak istiyorsak. Yazmaçların çağrışma mantığı da şu zaten.
+
+41
+00:13:00,947 --> 00:13:22,887
+Yazma için içerisinde saklı olan değer çıkış uçlarında mevcut. Data out da mevcut. Data in de farklı bir değer olabilir. Load işareti uygulandığında data in'deki değer içeri kopyalanıyor ve çıkış uçlarına da aktarılıyor. Ama load işareti gelmediği sürece girişteki değer içeri aktarılıyor.
+
+42
+00:13:24,019 --> 00:13:39,200
+Buna göre biz R0'a bir aktarım yapmak istediğimiz için L0'ın ne olması lazım? 1 olması lazım. Bununla birlikte L1 ve L2'nin ne olması lazım? Bunlara herhangi bir atıma yapmamamız lazım.
+
+43
+00:13:41,960 --> 00:13:51,240
+Bu görmüş olduğunuz datapath yapısının senkron kısımları mavi ile işaretlenmiş. Ardışıl devre kısımları mavi ile işaretlenmiş.
+
+44
+00:13:52,115 --> 00:14:16,955
+Siyahla işaretlenmiş olanlar bunun kombinasyonel devre kısımları. Kombinasyonel devre kısımları çıkış üretmek için saat sinyali beklemez. Girişine değer geldiği vakit, işte propagasyon dileği kadar, yani işlemlerin kendi kapılarına geçmesi kadar bir süre yürüttükten sonra çıkışları doğrudan üretir. Dolayısıyla ne demiştik? İşte R1, R2 çıkışı mevcut.
+
+45
+00:14:17,683 --> 00:14:44,343
+R1'in çıkışı da mevcut. Dolayısıyla MUPS'ta da bir sıfır veya bir değeri var seleccion olarak. Sonuç itibariyle buraya bir değer geliyor. R0'a yükleme yapacağımız için bu anlamlı. Ama R1'e yükleme yapmayacağız. Girişinde değer var. R2'ye yükleme yapmayacağız. Girişinde değer var. O zaman L0'ın 1 olması gerekiyor. L1'in 0 olması gerekiyor.
+
+46
+00:14:45,107 --> 00:14:58,408
+L2'nin 0 olması gerekiyor. Bu sadece R0'a yükleme yapabilir. Daha sonra S1 ve S2'nin durumuna bakacak olursak bunlar don't care durumuna geldi.
+
+47
+00:14:58,408 --> 00:15:11,168
+Çünkü ne olursa olsun zaten yükleme yapmayacağımız için önemli değil. Şuradan yazalım. S1 don't care. S2 don't care.
+
+48
+00:15:12,211 --> 00:15:37,231
+S0 için ne diyeceğiz? S0 için de neyi yüklemek istiyormuşuz? R1'i yüklemek istiyoruz. R1 bir kanalında o zaman S1'in bir olması lazım. Dolayısıyla bu kontrol işaretlerini uyguladığımızda, bu 6 tane kontrol işaret için verilen değerleri uyguladığımızda, Dedicate MOOCs yapısındaki datapette R0'a R1'deki değer kopyalanmış oluyor.
+
+49
+00:15:40,211 --> 00:15:47,111
+Şunu yapabilir miyiz? Bakalım. Şöyle bir komutu şuraya yollayalım.
+
+50
+00:15:49,512 --> 00:15:59,312
+R0'a R1'i aktarayım ve eşanlı olarak da R2'ye R1'i aktarmak istiyorum.
+
+51
+00:16:00,192 --> 00:16:05,132
+Bu yan yana virgülle ayırdığımız zaman bu eşanlı aktarım demekti. Yani paralel aktarım demekti.
+
+52
+00:16:06,227 --> 00:16:29,467
+Burada özellikle kafayı karıştıran kısımın şu olduğunu hatırlayalım. Buradaki load işaretleri anlık bir işlemdi, anlık bir kontrol işlemleriydi ve saat işaretinin yükselen kenarıyla gerçekleşiyordu. Problem yaratabilecek kısım neydi? Örneğin R0'a bir şey yükleyeceğiz ve R2'ye bir şey yükleyeceğiz.
+
+53
+00:16:34,740 --> 00:16:59,540
+çıkış uçlarından, R2'nin girişine kadar gelip, daha yükleme işaretini kaldırmadan içeri yüklenebilirim. Yani iki adım sonranın değeri yüklenmiş bir sanaryo olur. Aslında bu hiçbir zaman gerçekleşmiyor. Neydi mantığımız? Kombinasyonel devre çıkışlarında, clock işareti beklemeden asenkron bir şekilde bütün değerler oluşturuldu ve girişlerde bizim ses ettiğiniz değerler mevcut.
+
+54
+00:17:00,724 --> 00:17:09,864
+İşlem ne zaman gerçekleşiyor? İşlemin ne zaman gerçekleştiğine bakacak olursak, şöyle yapsam herhalde sıkıntı olmaz.
+
+55
+00:17:09,864 --> 00:17:17,824
+Bir bakayım. Gerçi kulaklıktan geliyor ses. Tamam. Girişlerde değerlerimiz hazır.
+
+56
+00:17:18,387 --> 00:17:43,487
+Load işaretini veriyoruz. Anlık olarak kulak işaretinin yükselen kenarında içeri kopyalamayı gerçekleşiyor. Sonra kulak işaretinin yükselen kenarı kalkıyor zaten. Yani bunun tekrar çıkıştan diğer yazmaçlara propagate etmesi veya yayılması mümkün değil. Öyle bir yükleme zamanı veya yükleme enable'ı ayırmıyoruz. Dolayısıyla anlık olarak bu işlem gerçekleşiyor. Şimdi eş anlaşığı yürütmeye bakacak olursak.
+
+57
+00:17:44,660 --> 00:18:02,539
+R0 ve R2'ye yükleme yapıyoruz. Dolayısıyla burada L0'ın, load 0'ın 1 olması lazım. L1 için oraya yükleme yapmayacağız. 0 olması lazım. L2'nin yükleme yapacağı 1 olması lazım. Eşanlı yükleme yapacaksınız.
+
+58
+00:18:09,683 --> 00:18:33,983
+R1 ucumuz R0'ın girişine kadar aktarılsa. R1'e bir yükleme yapmıyoruz. Dolayısıyla S1 don't care olarak kalabilir. Fakat S2'ye baktığımızda aynı zamanda R1 yüklemek istiyoruz. R1 de bir kanalında o zaman S2'nin de bir olması gerekiyor. Dolayısıyla eş anlı yüklemeyi de gerçekleştirebilen hatta şöyle diyelim eş anlı olarak
+
+59
+00:18:34,579 --> 00:18:48,619
+Farklı kaynaklara farklı değerleri, aynı değeri yüklemişiz ama bunu sıfırda yapabilirdik. Şu anda 1 yapmışız. O zaman bu datapathin nelerle desteklediğini şöyle kavaca bir toparlayalım.
+
+60
+00:18:48,619 --> 00:19:00,559
+1. Farklı bir yazmaçtan yüklemeyi destekliyor. Aynı kaynaktan farklı yazmaçlara yüklemeyi destekliyor.
+
+61
+00:19:01,428 --> 00:19:05,367
+Aynı zamanda şunu da destekler sanırım. Değil mi? Onu da kontrol edelim.
+
+62
+00:19:06,888 --> 00:19:16,768
+R1, R2'ye de R0. Bunu da destekler değil mi? Aynı mantık. Sadece neyi değişecek?
+
+63
+00:19:17,748 --> 00:19:24,307
+R2'ye R0 aktarabilmemiz için S2 kontrolünün 0 olması gerekiyor. Yani şöyle olacak.
+
+64
+00:19:25,140 --> 00:19:46,320
+L0, 1 olacak. L1, 0 olacak. L2, 1 olacak. Sonrasında S0, 1 olacak. S1 yine don't care. Ve S2 değerimiz 0 olduğu vakit bunu da destekliyor. Şöyle ayıralım bunları.
+
+65
+00:19:53,268 --> 00:20:10,968
+Farklı bir kaynaktan tekil yüklemeyi destekliyor. Aynı kaynaktan farklı hedeflere eş anlı yüklemeyi destekliyor. Yine farklı kaynaklardan farklı hedeflere eş anlı yüklemeyi destekliyor. Bir soru var herhalde buyurun.
+
+66
+00:20:11,807 --> 00:20:15,648
+İlk örnekte L2 don'tuk yeri olmayacak mı? Bunu sıfır yaptık.
+
+67
+00:20:20,852 --> 00:20:22,332
+L2 mi, S2 mi?
+
+68
+00:20:22,812 --> 00:20:25,512
+L2. Don't care olması gerekmiyor mu?
+
+69
+00:20:25,832 --> 00:20:29,832
+Eğer don't care yaparsak sıfır da olabilir, bir de olabilir. Değil mi?
+
+70
+00:20:30,412 --> 00:20:36,752
+Yani bu durumda buraya bir gelebilme ihtimali var. Bir gelirse R2'ye bir şey yüklemiş olur.
+
+71
+00:20:36,992 --> 00:20:41,312
+Halbuki bizim istediğimiz sadece R0'a bir şey yüklenmiş. O da R1.
+
+72
+00:20:41,748 --> 00:20:49,628
+Bundan dolayı, burada açıkça R2'ye bir değer yüklenmesi belirtmediğimiz için yüklenmeyecek olarak onu algılamamız.
+
+73
+00:20:50,347 --> 00:21:02,067
+Zaten şimdi burada L uçlarında yükleme olmasını ayarladığımız için bundan dolayı S'lerde donk gelir kullanıyoruz.
+
+74
+00:21:04,067 --> 00:21:05,048
+Anlatabildim mi?
+
+75
+00:21:06,355 --> 00:21:10,816
+Yükle emri yoksa yüklememe emri olarak anlamamız gerekir.
+
+76
+00:21:10,816 --> 00:21:25,416
+Evet, evet kesinlikle. Zaten bu fonksiyon bu şekilde çalışıyordu. L'ler bu şekilde çalışıyordu. Eneybolucu gibiydi. Bu yükle işaretini aktif ettikten sonra clock işaretinin yükselen kenara geldiğinde yükleme yapıyordu. Bunun tersi de yüklememe demek.
+
+77
+00:21:29,940 --> 00:21:31,260
+Anlaşılır oldu mu acaba?
+
+78
+00:21:32,840 --> 00:21:34,260
+Anladım hocam. Teşekkür ederim.
+
+79
+00:21:34,260 --> 00:21:35,220
+Teşekkürler.
+
+80
+00:21:36,380 --> 00:21:46,420
+Dolayısıyla şu anda bizim oluşturduğumuz bu incelediğimiz sistem farklı bir kaynaktan, kendisinden farklı bir kaynaktan tekinliklerini destekliyor.
+
+81
+00:21:47,340 --> 00:21:53,800
+Bir kaynaktan farklı hedeflere yüklemeyi destekliyor eşanlı olarak.
+
+82
+00:21:55,571 --> 00:22:04,451
+Farklı kaynaklardan, farklı hedeflere eş anlı yüklemeyi destekliyor. Peki bu sistemin problemi ne? Nerede sıkıntı çıkabilir?
+
+83
+00:22:05,331 --> 00:22:16,271
+Yani burada yükleme olarak gördük ama geçen hafta hatırlayacak olursanız bu MUX'ların arkasında bir takım aritmetik, lojik işlemleri koyabiliriz demiştik.
+
+84
+00:22:16,391 --> 00:22:23,192
+Yani illaki burada saf yazmaç transferi değil, bunun yanında şeyler de olabilir misin?
+
+85
+00:22:24,307 --> 00:22:37,768
+Öyle bir ayarlama yapabiliriz ki R0'ın MUPS'unun 0. seçim ucuna R1 ile R2'nin toplamını getirebiliriz veya R1'in değilini getirebiliriz gibi senaryolar yine her zaman aklımızda olsun.
+
+86
+00:22:37,907 --> 00:22:43,387
+Ama biz bunu biraz indirgeyip saf transfer aşaması gibi inceliyor durumdayız.
+
+87
+00:22:43,927 --> 00:22:50,387
+Sorumuz şu, bu dedike MUPS yapısı hangi tür işlemlerde bize problem çıkarır?
+
+88
+00:22:52,660 --> 00:22:58,940
+Yaptığı, desteklediği şeyleri gördük, kabaca inceledik. Ama problem çıkartacağı yerler var.
+
+89
+00:23:07,700 --> 00:23:20,759
+Hocam, registerlara sizin söylediğiniz gibi başka değerler, yani registerların içerisinden farklı toplama çıkarma gibi işlemler yapıp bir hazırmaya çalışırsak ona bu şekilde izin vermez.
+
+90
+00:23:22,300 --> 00:23:33,179
+Şöyle desek de izin vermez mi? Mesela şu uca R2 değil de, mesela bu uca R1, aritmetik toplama R2'yi giriyor.
+
+91
+00:23:34,451 --> 00:23:39,771
+Yani şuradan doğrudan yazmaçtan gelmişse böyle bir aritmetik işlemden gelecek.
+
+92
+00:23:40,111 --> 00:23:42,311
+Evet, uçları değiştirmemiz gerekir.
+
+93
+00:23:42,571 --> 00:23:46,951
+Uçları değiştirebiliriz. Yani kabaca öyle düşünelim. Onu destekler.
+
+94
+00:23:47,872 --> 00:23:51,892
+Yani burada aritmetik lojik işlemleri farklı yazmaçlardan destekliyor.
+
+95
+00:23:52,811 --> 00:23:53,951
+Neyi desteklemez ama?
+
+96
+00:23:57,051 --> 00:24:00,652
+[öğrenci]'ın yorumuna tekrar şöyle bir ekleme yapmaya çalışayım.
+
+97
+00:24:01,107 --> 00:24:12,748
+Buradaki datapath yapısını birebir kullanarak değil. Burada önemli olan dedike mux yapısı fix kalacak. Her bir yazmacın arkasındaki dedike mux yapısı fix kalacak. Bununla birlikte...
+
+98
+00:24:13,107 --> 00:24:37,327
+MUPS'ların girişlerine vereceğimiz şeyleri sadece yazmaçlardan getirmeyebiliriz. İki yazmacın toplamı olabilir, iki yazmacın bitwise end'i olabilir, bir yazmacın nat'ı olabilir, tuz komplement'i olabilir gibi işlemleri buraya kombinasyonel devre mantığıyla bağlayabiliriz. Dolayısıyla onları destekliyor ama neyi destekliyor bu dedike MUPS yapısını, ikiye birlik MUPS kullanarak?
+
+99
+00:24:37,927 --> 00:24:40,667
+Shift veya counter işlemini mi?
+
+100
+00:24:41,875 --> 00:25:06,195
+Onları da destekleyebilir aslında. Çünkü onlar da kombinasyonel devre. Yani şöyle düşünün. R2 yazmacının değeri geldi. Bir tane shift yazmacına girmiş durumda. Oradaki ayrı bir kulak işareti çalışabilir belki bilmiyorum. Ama neticede shift ettikten sonra en kötü ihtimal bir sonraki cycle'da giriş uçlarında shift edilmiş ötelenmiş değerler mevcut olur.
+
+101
+00:25:06,483 --> 00:25:16,563
+Onu da yükleyebiliriz. Yani R1'in shift edilmiş halini R0'a yükleyebilirim. Bu yapı çerçevesi. Neyi yapamayız?
+
+102
+00:25:20,756 --> 00:25:35,356
+Hocam, aynı anda bir clock cycle'da mesela hem aynı diğeri hem R0'a hem de R1'i aktarmamız gerekebilir. Bu zaman bir cycle'da yapamayız sanki.
+
+103
+00:25:35,836 --> 00:25:40,816
+Mesela R2'yi hem R1'i hem R0'a aktarmak istiyorsam.
+
+104
+00:25:42,516 --> 00:25:52,036
+Yok, R2'ye bir değer atacağız. O değeri aynı anda R1'de veya R0'da göstermek istersek.
+
+105
+00:25:53,236 --> 00:26:04,316
+İki adım da yapabiliriz. Öyle bir mimari var ki burada, sabit bir değeri yaymak için iki cycle kullanıyor olabilir. O da değil aradı.
+
+106
+00:26:06,804 --> 00:26:19,804
+Aradığım daha basit bir şeydi aslında. Yani şu dedike MUX yapısını ikiye bir kullanıyorsak R0'a R0'ı tekrar atayamıyoruz. Yani aynı kaynak aynı hedef kullanamıyoruz. Bunu demek istiyordum aslında.
+
+107
+00:26:20,564 --> 00:26:31,624
+Yani bunu genelleştirecek olursak, burada bir şey koysak, atıyorum, NAT kapısı koysak, R0'a R0 atamak anlamlı değil de hani o yüzden genelleştirilmiş durum ifade etmeye çalıştık.
+
+108
+00:26:31,683 --> 00:26:39,244
+Normalde biz R0'ın 1'e tümleyeni R0 atamak istesek, bunun için burada uygun bir şey yok mesela.
+
+109
+00:26:40,144 --> 00:26:45,044
+2'ye 1 MUX olduğu için kendisine ait bir fonksiyonu kendi üzerine atamıyor.
+
+110
+00:26:47,380 --> 00:27:07,140
+Kısıtlama var sadece. Onu ifade etmek istiyordum burada. Ama genel olarak MUX'u genişletecek olursak, şuradaki MUX'u ve bu kısıt sadece bu ikiye birlik MUX kullandığımız durum için. Yani kaynaklarda diğer yazmaçlardan geldiği için.
+
+111
+00:27:07,955 --> 00:27:30,955
+Onu alt etmenin yolu da şu tabii doğrulara. MUX'umuzu daha geniş kullanırsak her bir kaynaktan gelen veriyi, R0'ı da buraya versek, R1'i de, R2'yi de ilgili dedike MUX'a verebilsek, artı bunlara ilişkin aritmetik lojik fonksiyonları da sokabilsek buradan, o kadar geniş bir MUX kullanabilsek her bir register'ın arkasında. O zaman bu yapı...
+
+112
+00:27:31,807 --> 00:27:36,768
+Kendi üzerinden atamayı da destekleyecek. Ama şu anki haliyle onu destekleyelim.
+
+113
+00:27:38,028 --> 00:27:40,448
+Dolayısıyla aslında bahsetmek istediğim konu buydu.
+
+114
+00:27:41,368 --> 00:27:47,228
+Bir sonraki yapıya geçecek olursak o da ortak bir bas kullanımı içeriyor.
+
+115
+00:27:48,668 --> 00:27:54,628
+Buradaki seçim uçlarına bakacak olursak yine her bir yazmaca ilişkili yükleme işaretimiz mevcut.
+
+116
+00:27:55,251 --> 00:28:15,711
+Artı bir tane MUX'umuz var. Bu MUX tüm kaynaklardan tüm hedeflere bir taşıma yapabiliyor. Bunu yaparken nasıl yapmış? Farklı 3 kaynaktan input almış. R0, R1 ve R2'den input almış. Fakat çıkışını çoğullayarak tüm yazmaçları aynı değer olarak gönder.
+
+117
+00:28:21,140 --> 00:28:25,840
+Hangi numaralı yazmacı ortak basa aktarılacağını seçiyor.
+
+118
+00:28:26,360 --> 00:28:34,260
+Buna göre bu B ile işaret etmiş olduğumuz bas yapısında, veri aktarım veya datapath yapısında şu işlemi yapabilir miyiz?
+
+119
+00:28:34,880 --> 00:28:37,460
+Veya hangi kontrol işlemleriyle yapabilir miyiz?
+
+120
+00:28:38,280 --> 00:28:40,880
+Mesela R1'i R0'a atamak istiyoruz.
+
+121
+00:28:43,620 --> 00:28:46,880
+R0 atama yapacağımız için doğal olarak...
+
+122
+00:28:47,763 --> 00:28:59,384
+L0'ımızın 1 olması lazım. L1'imizin 0 yükleme yapma. L2'imizin yine 0 olması lazım. Yükleme yapma şeklinde belirlenmiş olması lazım.
+
+123
+00:29:00,423 --> 00:29:14,243
+R1'i ortak basa aktarabilmek için R1 bir numaralı kanalda. Dolayısıyla S1, S0 seçim uçlarına binary 1 yazdıracak şekilde 0, 1 değerlerinin yüklenmiş olması durumunda.
+
+124
+00:29:15,092 --> 00:29:27,711
+Ne yapacak? R1 buraya kadar gelmiş. R1'i tüm uçlara çıkartacak. R1, R1, R1. Bakın bu senaryoda kendi verisi, kendi girişine kadar gelebildi.
+
+125
+00:29:29,092 --> 00:29:36,132
+Ve load işaretiyle birlikte de bu aktarma işlemi yürütülebilmiş olacak. Bunu yapabildik. Güzel.
+
+126
+00:29:37,771 --> 00:29:39,832
+Peki başka ne yapabiliriz? Ona bakalım.
+
+127
+00:29:40,852 --> 00:29:52,971
+Yine şunu yapabilir miyiz? Eşanlı bir yüklemeye bakalım. Az önce baktığımız ikinci durumdu. R1 ve yine R2 yazmadığına R1'i atamak şeklinde.
+
+128
+00:29:52,971 --> 00:30:03,531
+Şimdi bas yapısı, ortak bas yapısı buna izin veriyor. Çünkü yine ben seleksiyon uçlarından R1'i seçtireceğim. İçeri aktarmak için.
+
+129
+00:30:03,968 --> 00:30:25,988
+R1 değer tüm yazmaçların girişlerine geliyor. Gayet güzel. O zaman hangi ikisine eşanlı yükleme yapacaksam onlara load işareti vereceğim. Bu durumda L0'ımız 1 olacak. L1'imiz 0 olacak. L2'imiz yine 1 olacak. Bu durumda yükleme işlemi R0 ve R2'de gerçekleştirdik. Seçim ucu olarak da.
+
+130
+00:30:26,352 --> 00:30:38,731
+S1, S0 olarak da vereceğimiz değer 0, 1 olacak. Bunu yaptığımızda eş anlı olarak R1 MUX'dan seçilip tüm yazmaçların girişine kadar getirildi.
+
+131
+00:30:39,612 --> 00:30:44,551
+Yükleme işaretine verdiğimizde hangilerini seçtiksek R1 değeri bunlara yüklendi.
+
+132
+00:30:44,551 --> 00:30:52,392
+Dolayısıyla bu datapath yapısı da şunu destekliyor. Bir kaynaktan çokça hedefe.
+
+133
+00:30:52,884 --> 00:30:58,484
+kopyalama veya transfer işlemini destekliyor diyebiliriz. Peki neyi desteklemiyor burası?
+
+134
+00:30:59,403 --> 00:31:00,824
+SWAP işlemi destekleniyor.
+
+135
+00:31:01,324 --> 00:31:11,104
+SWAP işlemi veya farklı kaynaklardan farklı yazmaçlara transferi destekleniyor. Yani şu işlemi eşanlı yapamıyoruz.
+
+136
+00:31:18,771 --> 00:31:33,411
+R0'ı atayacak olsak bunu yapamıyoruz. Bunu yapabilmemiz için ortak basa iki farklı değer çıkmak lazım. Bir cycle'da bunları çıkamayacağız. Dolayısıyla bu işlemi desteklemediğini söyleyebiliriz.
+
+137
+00:31:34,551 --> 00:31:44,331
+Bu datapath yapısının bunu desteklemediğini söyleyebiliriz. Peki ikincinin birinciye göre bir avantajı var mı? Temel olarak şöyle var.
+
+138
+00:31:44,915 --> 00:31:52,915
+Seçim uçları bir tane azaldı gördüğünüz gibi. Devre karmaşıklığı azaldı. Ortak bas kullanımını sağlamış olduk.
+
+139
+00:31:54,215 --> 00:32:02,915
+Yani üç tane ikiye bir MUX yerine dörde bir MUX kullanmak belki bir tane şundan bir taneyi...
+
+140
+00:32:05,107 --> 00:32:15,347
+Bıraktırmış oluyor sanki kabaca. Dolayısıyla devre karmaşıklığında görece azaldığını söylememiz mümkün. Bu ikisi arasında böyle bir fiyaslama yapmamız mümkün diyelim.
+
+141
+00:32:15,347 --> 00:32:30,048
+Şimdi üçüncü örnekle ilgili gidecek olursak, burada da şeylerimiz var. Hangi durum için gerçekleşiyor, hangi durum için gerçekleşiyor, ikinci senaryo için olan mantık bu şekilde.
+
+142
+00:32:31,284 --> 00:32:53,264
+Bir üçüncü yapıda three state bus kullanımı yani üç durumlu yol kullanımı. Burada aslında şunu yapıyoruz bakın. Bir yazmacımızın yapısı şu şekildeydi. Yazmacımızın data out'u ve data ile bu şekilde.
+
+143
+00:32:56,372 --> 00:33:08,912
+bir Tristate Buffer ve Enable üzerinden bağlayacak olursak, bu durumda ortak yolu kullanan tüm elemanlar için bir takım kontrol işaretlerinden kurtulmuşum.
+
+144
+00:33:09,092 --> 00:33:16,971
+Bu sistem nasıl çalışacak? Şöyle çalışacak. Bir ortak bas var. Şurada görmüş olduğunuz. Giriş ve çıkış yönünü çalışabiliyor.
+
+145
+00:33:18,211 --> 00:33:23,311
+Eğer ki ben aynı anda çakışmayacak şekilde bu ayarlamayı yapmamız lazım. Bu önemli.
+
+146
+00:33:24,115 --> 00:33:45,176
+Ben buradan veri çıkışı sağlamışsam bu veri çıkışı yani R0'ın değil bu R0 olsun. Diğer tüm yazmaçlara giriş olarak aktarılıyor ve aynı zamanda aynı zamanda da kendisine de gelmiş oluyor. Yani burada MOOCs basının ortak baslı durumun.
+
+147
+00:33:45,556 --> 00:34:05,955
+Bir benzeri diyebiliriz. Ama MUPS'u da ortadan kaldırıyoruz. Her bir veri çıkışının kendine ait Tristake buffer kontrolü var. Eğer enable ucuna sıfır vermişsek bu yazmaç veri yoluna veri çıkamıyor. Sadece gelen veriyi okuyabiliyor. Böyle bir mantık söz konusu.
+
+148
+00:34:06,579 --> 00:34:30,739
+Buradaki yazmaç aktarımlarını bir kontrol edelim. Yazmaya çalışalım. Mesela bu mantık çerçevesinde artık MOOC seçimi kontrolücü kalmadı. Onun yerine three-state bufferları enable eden bir kontrolümüz var. Onu söyleyebiliriz. Mesela yapmak isteyeceğimiz işlem yine basit bir şekilde R0'a R1'i atamak olsun.
+
+149
+00:34:33,780 --> 00:34:41,280
+Enable 3'leri ne sağlıyor? İlgili yazmacın veri çıkışını sağlıyor. Veri kim çıkacak? R1 yazmacı. O zaman şunu diyeceğiz.
+
+150
+00:34:42,920 --> 00:34:56,320
+E0, Enable 0, E0, E11. Bu ortak basa R1 veri çıktı ama bir ikinci bir daha olmaması lazım. Bu da önemli bir nokta.
+
+151
+00:35:00,692 --> 00:35:16,332
+Sadece bir tane 1 olması lazım. Hem R2 hem R1 veri çıkmış olsaydı ne olacak? Yani her ikisinin de Tristate bufferına kontrol işareti olarak 1 gelmiş olsaydı ikisi de aynı hatta veri çıkmaya çalışacaktı.
+
+152
+00:35:16,891 --> 00:35:26,211
+Sıkıntı nerede olurdu? Eğer bunlardaki değerler aynı değilse birisi 0, biri 1 ise bir hat üzerinde bir kısa devre durumu oluşacak. Dolayısıyla bu istenmeyen bir durum.
+
+153
+00:35:26,623 --> 00:35:33,623
+O zaman buradaki kısıtımız enable'lardan sadece bir tanesi 1 olabilir bu senaryoda.
+
+154
+00:35:35,123 --> 00:35:40,063
+Bunu yapabilmek için başka neyi yapmamız lazım burada kontrol için? Load işaretlerine de bakalım.
+
+155
+00:35:40,224 --> 00:35:51,503
+Yükleme R0'a gerçekleştiği için L0'a 1 vereceğiz. L1'e 0 vermemiz lazım.
+
+156
+00:35:53,139 --> 00:36:05,279
+L2'ye de yine 0 vermemiz gerekiyor. Burada bu işlemi bu kontrol işaretleriyle yapabiliyoruz. Yani tek bir kaynaktan tek bir hedefe farklı bir hedefe aktarma yapabiliyoruz.
+
+157
+00:36:05,759 --> 00:36:17,739
+Peki burada R0'dan R0'a aktarma mümkün mü? O da mümkün. Bu sefer ne yapacağız yukarıdan farklı olarak? Enable 0'ı 1 yapacağız.
+
+158
+00:36:18,420 --> 00:36:31,159
+Load 0'ı 1 yapacağız. Diğerleri 0 olacak. Enable 1, Enable 2, Load 1, Load 2 0 olacak. Kendi yazmaç değerini yine kendi üzerine kopyalatabiliriz.
+
+159
+00:36:32,539 --> 00:36:39,220
+Üçüncü bir durum şu olabilir. Eşanlı atamalarla ilgili, paralel yüklemelerle ilgili şunu yapabiliriz.
+
+160
+00:36:46,356 --> 00:36:56,556
+R2'ye de R1'i eş anlı olarak atayabiliriz. Burada yukarıda saygı olduğumuz kısıt bozulmuyor, kırılmamış oluyor.
+
+161
+00:36:57,336 --> 00:37:04,516
+Netice itibariyle ortak basa sadece R1 veri çıkmış oluyor.
+
+162
+00:37:06,655 --> 00:37:12,676
+R1'in veri çıkmasını sağlamak için yine enable 1'i yapmamız.
+
+163
+00:37:14,195 --> 00:37:36,536
+Enable 0'ı 0 set etmemiz, Enable 2'yi yine 0 olarak set etmemiz gerekiyor. Şu anda BAS da R1 haricindeki bütün yazmaçlar da bunlar aktif değil ve uçlarına gelen değer R1 ve yüklemeyi bekliyorlar. Dolayısıyla yükleme içinde L0'ımız 1 olacak.
+
+164
+00:37:37,204 --> 00:37:50,284
+L1'imiz yükleme yok onda 0 olacak ve son olarak L2'imiz 1 olarak verdiğimizde tek kaynaktan çokça hedefe veri transferini gerçekleştirebilen bir yapı olduğunu görüyoruz.
+
+165
+00:38:04,532 --> 00:38:22,811
+R0 atamak istesen bunda problem yaşıyorum. Bunu bir çevremde yapamayacağım. Çünkü neydi kuralımız? Problematik kısım. Eğer iki tane yazmaç aynı anda veri yoluna veri çıkarsa bir çakışma olabilir.
+
+166
+00:38:24,532 --> 00:38:32,932
+Bunu da istemediğimizden dolayı bu gerçekleşemeyen bir durum olarak karşımıza çıkmış oluyor arkadaşlar.
+
+167
+00:38:34,572 --> 00:38:49,271
+Dolayısıyla bu 3 veri yolu tasarımını gördükten sonra, datapath tasarımını gördükten sonra, bu en son versiyonun bizim için öncekine göre avantajı ne diyecek olursak.
+
+168
+00:38:50,420 --> 00:39:05,300
+Fonksiyonelite olarak aynı. Fakat bir MUX yapısından kurtularak bir Tristate Buffer yapısında ortak VAS kullanımı üzerinden tanımlamasını gerçekleştirmiş durumda olduğunu söyleyebiliriz.
+
+169
+00:39:06,220 --> 00:39:11,740
+Bu datapath tasarımlarıyla ilgili dediğim gibi bunlar şu anda sadece veri transferi için.
+
+170
+00:39:12,244 --> 00:39:31,324
+Tanımlanmış durumda ama bunları MIPS'larını genişleterek, daha yüksek giriş seviyeleri sağlayarak sadece yaz maçları tekil olarak değil, yaz maçlar üzerinde yürütülebilecek çeşitli kombinasyonel devre fonksiyonlarını da yürüterek bu mantığı sağlamak mümkün olabilir.
+
+171
+00:39:32,724 --> 00:39:46,224
+Ama temelde dedike MUX, MUX ortak bası ve ortak bas şeklinde 3 farklı transfer noktasında yapı mevcut olduğunu söylemiş olalım.
+
+172
+00:39:46,963 --> 00:39:49,304
+Burayla ilgili sormak istediğiniz bir şey var mı arkadaşlar?
+
+173
+00:40:00,820 --> 00:40:16,220
+Yoksa bir sonraki başlığımıza devam edelim. Bu shift yazmaçları görmüştük. Bu shift yazmaçlara ilişkin olarak bunlarda nasıl, nerede kullanılabileceğine dair bir uygulama.
+
+174
+00:40:17,556 --> 00:40:30,336
+Gerçekleyeceğiz. Şimdi bununla ilgili olarak hatırlayacağınız üzere bu işit yazmaçlara bir clock girişi var, bir seri input var, bir de seri output var.
+
+175
+00:40:32,336 --> 00:40:41,956
+İşte en bitkik bir yazmaç için bunlardan iki tanesini kaskat bağlayarak daha büyük bir yazmaç oluşturmamız mümkün. Belki bahsetmediğimiz bir konu buydu.
+
+176
+00:40:42,384 --> 00:40:56,283
+Yani bir 4 bitlik yazmaçtan elde ettiğimiz çıkışı bir sonraki yazmacın girişine bağlayarak toplamda 8 bitlik bir yazmaç elde etmemiz mümkün diyebiliriz çalışma mantığı olarak.
+
+177
+00:40:57,043 --> 00:41:02,564
+Şimdi şeye gelelim, şurada problem tanımı olarak verelim bunu.
+
+178
+00:41:04,304 --> 00:41:06,064
+Şurada yazabilirsem güzel olacak.
+
+179
+00:41:30,099 --> 00:41:32,559
+Problem tanım olarak şöyle bir şey düşünelim.
+
+180
+00:41:34,719 --> 00:41:42,239
+4 bitlik 2 tane 4 bitlik seri ötelemeli yazmaçlarımız var.
+
+181
+00:41:44,079 --> 00:41:45,480
+Veya seri de deneyelim.
+
+182
+00:42:00,916 --> 00:42:05,356
+Biz bunları kullanarak 4 bitlik bir seri toplayıcı yapmak istiyoruz.
+
+183
+00:42:15,603 --> 00:42:37,903
+Seri toplayıcadan kasıt şu, elimizdeki bu 4 bitlik yazmaçlar toplayacağımız 2 sayıyı tutacak. Bu 2 sayının da en düşük anlamlı bitlerinden itibaren bize tek tek göndermelisi lazım. Yani en düşük anlamlı bitini gönderecek her 2 yazmaçta. Daha doğrudan bunların işleme sokacağım.
+
+184
+00:42:38,483 --> 00:42:54,264
+Daha sonra bir elde olabilir, olmayabilir, onu şimdi tasarlayacağız. Daha sonra ikinci sıradaki anlamlı bitleri gönderecek, üçüncü anlamlı seslenir bitleri gönderecek ve bu toplama işlemlerini 4 bit üzerinden gerçeklemeye çalışacağız ve yine işlem sonucunun da
+
+185
+00:43:01,268 --> 00:43:03,268
+Sonucu da yazmaçta saklansın.
+
+186
+00:43:10,420 --> 00:43:21,460
+Bunun için nasıl bir datapath tasarımı yaparız? Şimdi öncelikle bu seri olarak gelen veriye ilişkin olarak bu toplayıcı mantığımızı nasıl oluşturmalıyız? Ona bakalım.
+
+187
+00:43:22,800 --> 00:43:34,960
+Şimdi normal elde ile kağıt üzerinde decimal toplama yaparken ne yapıyoruz? 1, 2, 8, 7, 1, 1, 2, 2 diyelim mesela.
+
+188
+00:43:36,179 --> 00:43:40,519
+Burada toplamayı yaparken en düşük anlamlı bitleri topluyoruz önce değil mi?
+
+189
+00:43:41,839 --> 00:43:49,099
+Dolayısıyla en düşük anlamlı bitler için başta bir elde değerimiz yok. O elde değeri 0. Topladık 9.
+
+190
+00:43:51,579 --> 00:43:54,480
+Elde olmadığı için bir sonraki basamağı elde gitmedi.
+
+191
+00:43:57,059 --> 00:44:00,019
+8-2 topladık 0. Elde var 1.
+
+192
+00:44:01,268 --> 00:44:20,088
+Bunu elde taşıdık. 2, 1, 3, 1, 4. Bu tarafa elde gelmedi. Topladık. 2. Toplamayı bu şekilde yürüttük. Yani bakın bu işlemi yürütürken aslında tutacağımız durumu da tanımlamış olduk. Yani bu şekilde bize seri olarak basamaklar geliyorsa.
+
+193
+00:44:20,596 --> 00:44:30,536
+Bir senkron artışın devre tasarımı yapmak istiyorsak bizim tutmamız gereken hafıza veya tutmamız gereken hafızamızı tutmamız gereken bilgi ne olarak ortaya çıkmış oluyor arkadaşlar?
+
+194
+00:44:32,355 --> 00:44:32,976
+Ne dersiniz?
+
+195
+00:44:42,643 --> 00:45:03,623
+Tekrar bakalım. 7 ile 2'yi toplarken elde yoktu. O da 0 olarak işaretledim. 9. 9'dan bir sonraki basamağı elde taşmadı. 8'i 2'yi topladım. Elde ile 0'dı. 10. 0'ını yazdım. 10'lar basamağı elde olarak gitti. Burada elde var. Sadece sıradaki basamakları gören bir toplayıcı yapmak istiyorum.
+
+196
+00:45:04,403 --> 00:45:10,344
+Dolayısıyla bunu senkron artışlı devlet olarak tasarlayın istiyorum. Hafızada tutmamız gereken şey nedir?
+
+197
+00:45:13,940 --> 00:45:20,980
+Hırayla gelen A ve B değerlerinin sonucu mu?
+
+198
+00:45:22,500 --> 00:45:23,880
+Sonuç çıktı mı zorca?
+
+199
+00:45:24,460 --> 00:45:24,639
+Evet.
+
+200
+00:45:25,000 --> 00:45:28,380
+Sonucumuz çıktı. Hafızada tutmamız gereken şey mi?
+
+201
+00:45:29,659 --> 00:45:40,059
+Mesela 7 ile 2 geliyor. Topluyoruz, soldan veriyoruz, onu kaydediyoruz. Sonra 2 diğer geliyor, topluyoruz, kaydediyoruz.
+
+202
+00:45:41,139 --> 00:45:48,699
+Onları kaydetme işini şöyle yapacağız. Toplam sonuçlarını bir yazmaçta saklayarak bunu gerçekleştireceğiz.
+
+203
+00:45:49,559 --> 00:46:00,079
+Ama bir senkron ardışlı devre tasarımı olarak düşündüğümüzde burada aslında bir önceki basamaktan gelen eldeyi biz hafızada tutmamız lazım.
+
+204
+00:46:00,079 --> 00:46:08,679
+Çünkü yaptığımız işlem ona göre değişiyor. Yani bizim başlangıçta sıfır olan bir hafıza durumumuz var, elde yok.
+
+205
+00:46:09,076 --> 00:46:31,556
+Daha sonra yapmış olduğumuz işlem sonucunda 9 üretildi ama elde varsa elde var durumuna gideceğim. Elde yoksa elde yok durumunda kalacak. Bizim asıl hafızamızı tutmamız gereken bir önceki işlem sonucunda elde var mıydı yok muydu mantığı. Bunu şöyle tanımlayacağız. Örneğin sıfır durumu diyeceğiz. Bu elde yok durumu. Bundan yapmayalım.
+
+206
+00:46:37,364 --> 00:46:42,784
+Elde yok durumundayız.
+
+207
+00:46:45,124 --> 00:46:47,423
+Ve elde var durumundayız.
+
+208
+00:46:49,264 --> 00:46:54,043
+Binary sayılar üzerinde çalışıyoruz. Desimal sayı çalışmayacağız. Bunu sadece örnek için vermiştim.
+
+209
+00:46:54,844 --> 00:46:58,884
+Elde yoksa, bir önceki toplama işleminden bir elde gelmemişse,
+
+210
+00:46:59,280 --> 00:47:25,980
+0 ile 0'ı toplamışsam. Bu sistemin kaç tane girişi var? Bakın onları da tanıtıyorum. Sistemin inputları neler var? Mesela [öğrenci] A ve B sayıları dedi. Aİ ve Bİ sayıları bunlar bizim inputlarımız. Çıkış ne? Çıkışlarımız her bir toplama sonucu sonucunda bir SAMİ değerim gelecek. Ya 0 ya 1 duruma gibi. Durumu neyle ifade edeceğim? Durumu da
+
+211
+00:47:26,547 --> 00:47:31,087
+Q ile bir tane Q ile ifade etmem yeterli. O da L'de var.
+
+212
+00:47:32,587 --> 00:47:35,227
+L'de var ya da yok durumu.
+
+213
+00:47:36,927 --> 00:47:39,527
+Yok'u sıfırla kodladım, var'ı birle kodladım.
+
+214
+00:47:40,227 --> 00:47:41,547
+Böyle bir yapı oluşturalım.
+
+215
+00:47:42,267 --> 00:47:50,667
+Dolayısıyla bizim bu durum diagramımızda iki tane hafıza elemanı için, pardon, iki tane hafıza değeri için
+
+216
+00:47:51,123 --> 00:48:12,083
+Her bir okumuz iki tane input içeriyecek. Dolayısıyla sıfıra sıfırdan kaç tane ok çıkması lazım? İki tane input olduğuna göre. Sıfır durumundan girişlerim sıfır sıfırken bir çıkış. Sıfır durumundan sıfır birken çıkış. Bir sıfırken çıkış. Bir birken çıkış. Her durumundan dört tane çıkış olacak.
+
+217
+00:48:12,563 --> 00:48:36,563
+Dolayısıyla elde yokken girişlerim 0, 0 gelmişse elde yok, girişlerim de 0, 0. Bununla 3'ünü topladım. Sonuç 0. Yine elde yok. Dolayısıyla bunu şöyle göstereceğiz. Kendisine dönecek. Giriş olarak 0, 0 verdim. Çıkışım elde yoktu. 0 girdi. A 0'dı, B 0'dı. Toplam sonucum yine 0.
+
+218
+00:48:37,108 --> 00:48:41,088
+Bunu da işte yazmaçta tutacağım. Onun için de ekstra bir şey yapmam lazım. Bakacağız.
+
+219
+00:48:42,708 --> 00:48:56,307
+Daha sonra 0, 1 gelsin. 0, 1 geldiğinde elde yoktu. A, 0 geldi. B, 1 geldi. 3'ünü topladım. Sonuç 1. Ama yine bir sonraki basamağı elde üretme. Yine kendine dönüyoruz.
+
+220
+00:49:00,436 --> 00:49:27,416
+Çıkış olarak 1 üretiyor. Çünkü 0 artı, 1 artı, önceki eldemde 0'dır. Toplam sonucu 1. Ama bir sonraki basamağı elde üretmiyor. Yine aynı şey şurası için de geçerli. Bu sefer 1, 0 gelmiş olsa yine çıkışın 1. Ama yine 0, elde yok durumuna dönüyor. Ne zaman elde vara geçelim? Elde vara geçebilmem için 0, 0 durumunda. 1, 1 gelmiş olması lazım.
+
+221
+00:49:27,764 --> 00:49:52,164
+1 artı 1 artı 0 çıkışım 0 ama bir sonraki basama bir tane elde üretmiyor. Dolayısıyla elde var durumuna geçiyorum. Elde var durumu için 0 0 gelmişse 1 var 0 var 0 var bir sonraki basama için elde üretmiyor. Demek ki 0 0 girişi gelmişse bir çıkışı üreterek tekrar elde yok durumuna dönüyor.
+
+222
+00:49:52,532 --> 00:50:14,392
+Peki, 1, 0 gelmişse ne olacak? Bakalım, kendi üzerine dönecek. 1, 0 gelmişse, 1 var, 1 var, 0 var. Toplam sonucum 0 ama bir de elde üreteceğim. Sonra, şeye bakalım, 0, 1 gelmişse ne olur? Aynısı olacak. Basamakların yerini değişmiş bir şey ifade etmem lazım.
+
+223
+00:50:14,963 --> 00:50:24,503
+Son olarak eğer ki 1-1 gelmiş olsaydı bir işlerdi. 1 artı 1 artı 1. Toplam sonucu 1. Ama bir de elde üretiyor. Yine kendi üzerine dönüşüyor.
+
+224
+00:50:24,664 --> 00:50:33,624
+Dolayısıyla bu seri toplayıcının bir bitlik seri toplayıcının iki tane girişi var. A sayısının sıradaki bitiyle B sayısının sıradaki biti.
+
+225
+00:50:33,624 --> 00:50:37,804
+Ve bu bitler bize en düşük anlamlı bitinden itibaren geliyor ise.
+
+226
+00:50:38,324 --> 00:50:52,764
+Bu her adımda bir tane çıktı üretir, SI'leri üretir ve durumlarımız iki tane, bir tane hafız elemanıyla kodlanabilir, bir tane kömüz var deminki ve durum diagramı da gördüğünüz yapıda bir şekil olmuş oluyor.
+
+227
+00:50:52,764 --> 00:50:58,264
+Şimdi bunu gerçekleyebilmek üzere.
+
+228
+00:51:00,019 --> 00:51:26,840
+Biz tabloyu aktaralım. Tablomuzu aktarırken ne yapıyorduk arkadaşlar? Tablomuzu aktarırken girişlerimizi yazıyoruz. Girişlerimiz ne var? A, İ var. A diyelim şimdilik. B, O ve Q değerlerimiz var. Bunlar girişlerimiz. Bunlara bağlı olarak bir sonraki durum Q ve çıkışımız S değerimiz çıkış olarak mevcut.
+
+229
+00:51:27,603 --> 00:51:30,723
+Şimdi biraz daha kaybedebiliriz.
+
+230
+00:51:33,163 --> 00:51:36,823
+Toplamda 8 farklı senaryo olacak. Onları yazalım şöyle.
+
+231
+00:52:01,172 --> 00:52:02,991
+Bunlar da karışmayacak şekilde böyle.
+
+232
+00:52:04,831 --> 00:52:07,291
+Bir bitik seriyi toplayıcı yapmaya çalışıyoruz.
+
+233
+00:52:07,591 --> 00:52:12,751
+0-1, 0-1, 0-1, 0-1.
+
+234
+00:52:13,331 --> 00:52:14,811
+Durum diagramına göre bakalım.
+
+235
+00:52:15,531 --> 00:52:20,131
+0 durumundayım. 0-0 geldi. 0 durumundayım. 0-0 geldi. Şurası.
+
+236
+00:52:20,971 --> 00:52:23,951
+Hangi duruma dönüyormuşum? Tekrar 0 durumuna dönüyormuşum.
+
+237
+00:52:24,788 --> 00:52:35,967
+S çıkışımız ne? 0. Bunu da D flip flop ile yürütmeye çalışalım. D flip flop'un ucuna bağlanması gereken değer de nedir? Onu da büyük Q'ları elde ettikten sonra hesaplıyoruz.
+
+238
+00:52:36,768 --> 00:52:45,148
+Bir durumundayım. 0-0 geldi. 0-0 geldi. 0 durumuna dönüyormuş. Çıkış değerim 1 oluyormuş.
+
+239
+00:52:46,260 --> 00:53:02,460
+0 durumundayım, 0-1 geldi. 0 durumundayım, 0-1 kendi üzerine dönüyormuş. Ama çıkışım 1 olmamış. 1 durumundayken 0-1 geldi. Çıkışım 0 oluyor ama 1 durumunda kalmıyorum.
+
+240
+00:53:06,804 --> 00:53:32,723
+0 durumundayım. Bu sefer 1-0 geldi. Yine kendi üzerine dönüyor. 0. Çıkışımız 1. Çıkışımız 1 oluyor. 1 durumundayım. 1-0 geldi. Çıkışım 0. Ama yine aynı duruma dönüyorum. 0 durumunda 1-1 geldi. Karşıya gidiyorum. 1 durumuna gidiyorum. Çıkışımız 0. 1 durumundayım. 1-1 geldi. Kendi üzerine döneyim.
+
+241
+00:53:33,715 --> 00:53:59,255
+Çıkışımız 1. D flip flop ile yapacaksak, bir sonraki durumda ne görmek istiyorsak, girişi onları vermeyeyim. Dolayısıyla 0, 0, 0, 1, 0, 1, 1, 1 olmuş oluyor. Elde ettiğimiz sonuç bu. Şimdi bunu tasarıma geçecek olursak. Ne yapacağız bu durumda? Şunu yapacağız. 1, S, Y, A.
+
+242
+00:53:59,956 --> 00:54:04,135
+B ve küçük Q cinsinden bir lojik fonksiyon olarak yazmamız lazım.
+
+243
+00:54:04,275 --> 00:54:12,036
+Ve yine D ile ayrı bir fonksiyon A, B ve Q cinsinden ifade etmeniz gerekiyor.
+
+244
+00:54:12,115 --> 00:54:14,675
+Bunları yaptığımız zaman bu tasarımı gerçekleştirmiş oluyoruz.
+
+245
+00:54:14,715 --> 00:54:18,576
+En azından ardışın devlet tasarımını gerçekleştirmiş oluyoruz.
+
+246
+00:54:19,336 --> 00:54:21,576
+Şimdi bunu yapabilmek için şöyle yapalım.
+
+247
+00:54:22,936 --> 00:54:26,215
+Bu tabloları A, B, Y, Q olacak şekilde.
+
+248
+00:54:26,835 --> 00:54:54,175
+Bir karnomete taşıyalım. 0, 0, 0, 1, 1, 1, 1, 0 olacak şekilde. Bunlar da 0 ve 1 olacak şekilde belirtelim. Bu D fonksiyonu için olsun. D fonksiyonu için bunlar 0, 0'mış. Daha sonra 0, 1 için 0, 1'miş. Daha sonra bu tarafa geçiyoruz. 0, 1'miş.
+
+249
+00:54:54,708 --> 00:54:56,888
+Son olarak burası da 1-1'miş.
+
+250
+00:55:00,563 --> 00:55:10,523
+Böyle bir lojik çıktı. Bu lojik aslında tanıdığımız bir şey. Neye benziyor bu?
+
+251
+00:55:18,804 --> 00:55:21,463
+Bu, tam toplayıcının
+
+252
+00:55:27,572 --> 00:55:34,652
+RAM toplayıcının kerisine benziyor. Bakın onu da yapalım isterseniz.
+
+253
+00:55:38,420 --> 00:55:52,079
+Veya direkt şurada yazabiliriz zaten. İşlem sonucunda elde yok. İşlem sonucunda elde yok. İşlem sonucunda elde var. Şu satırda elde olur. Elde olmaz, elde olur. Elde olur, elde olur.
+
+254
+00:55:52,180 --> 00:55:58,440
+Bu vejlian birebir tam toplayıcının kerisinin fonksiyonunun aynısı çıktı yani burada. Bunu görmüş olduk.
+
+255
+00:55:59,960 --> 00:56:03,559
+SAM'da ne var? SAM'da zaten tam toplayıcının SAM'ı.
+
+256
+00:56:04,371 --> 00:56:05,351
+Şöyle kırıyoruz.
+
+257
+00:56:05,731 --> 00:56:09,911
+Bu da zaten tam putlayıcının zamanı.
+
+258
+00:56:16,019 --> 00:56:21,179
+O zaman biz elimizde bir şey varsa, tam toplayıcı modül varsa böyle yapabiliriz.
+
+259
+00:56:24,596 --> 00:56:32,795
+Zaten mantıklı onu getiriyor. Q'da elde ettikliğimize göre, D girişine de aynısı bağlanacağı için mantıklı bir durum.
+
+260
+00:56:33,715 --> 00:56:46,476
+Elimizde bir tam toplayıcımız var. Tam toplayıcının işte A girişi var. B girişi var. Carry-in girişi var. Carry-in girişine ne bağlanacak?
+
+261
+00:56:48,476 --> 00:56:49,795
+Yıkılıp değeri hocam.
+
+262
+00:56:50,291 --> 00:57:06,871
+Flipflop'un Q'su bağlanacak değil mi bu şekilde? Bunun, Flipflop burada değil bu arada, Flipflop başka bir yerde. Flipflop işte şu bir sonraki kaskat yapıda çizebiliriz. Şöyle çizebiliriz.
+
+263
+00:57:09,691 --> 00:57:15,731
+D Flipflop'umuz var. Bunun Q'su var. Bunun Q'su dönüp kereğine giriyor.
+
+264
+00:57:16,596 --> 00:57:20,456
+D'ye ne bağlanacakmış? D'ye de bunun kere altı bağlanacak.
+
+265
+00:57:25,780 --> 00:57:31,920
+Peki, SAM çıkışımız ne olacak? SAM çıkışımızı da alıp bir yerlerde saklamamız lazım.
+
+266
+00:57:33,460 --> 00:57:44,400
+Clock işaretimiz var burada. CLK'mız. Ne demiştik bir de? İki tane 4 bitlik yazmacımız var. Ötelemeli yazmacımız var.
+
+267
+00:57:45,159 --> 00:57:52,639
+Şu bunun serial input'u, bunun serial output'u. Yine bunun da bir clock işareti var.
+
+268
+00:57:54,963 --> 00:57:56,803
+Tincisi için de şöyle yapalım.
+
+269
+00:57:58,863 --> 00:58:02,503
+Bir serial input, bir serial output.
+
+270
+00:58:03,403 --> 00:58:06,143
+Bu şekilde besliyoruz. Yine bunun da clock işareti var.
+
+271
+00:58:09,383 --> 00:58:12,783
+Bu clock işaretleri ortak olmalı değil mi?
+
+272
+00:58:12,783 --> 00:58:13,903
+Geceği itibaren de.
+
+273
+00:58:16,383 --> 00:58:20,503
+Senkron bir devre yapıyorsak, clock işaretleri ortak.
+
+274
+00:58:21,652 --> 00:58:38,172
+Öyleyse şu ana kadar kurduğumuz sistemde ne yapabiliyoruz? Sırasıyla işte bu A sayımız olsun, bu B sayımız olsun. Bunlarda değer yüklü olduğunu varsayalım.
+
+275
+00:58:38,172 --> 00:58:48,231
+Her clock darbesinde, clock darbesi gelmeden önce zaten A ve B değerimiz burada hazır. Sum çıkmış, ondan sonra kere çıkmış.
+
+276
+00:58:48,576 --> 00:59:08,635
+Elde var. İlk başta bunu da şöyle diyelim. Şunun da Q, T eşittir, sıfır. Sıfır olarak ayarlanmış olsun. Resetler üzerinden. Bu durumda sırasıyla SAM üretiyoruz. Her bir gelen sıradaki basamak için SAM üretiyoruz.
+
+277
+00:59:15,284 --> 00:59:18,443
+Bir yerde saklayacağız demiştik. Bu SAM'ı ne yapabiliriz?
+
+278
+00:59:22,867 --> 00:59:26,967
+Registra, shift'in yapabiliriz hocam.
+
+279
+00:59:28,268 --> 00:59:48,367
+Seri giriş üzerinden bunu bağlasak, diğer seri girişe de sıfır değeri bağlasak, bu durumda 4 clock işareti sonucunda A ve B sayıların toplamı sum olarak B yazmacında saklanıp, sonuç olarak oluşan keri de bizim Q değerimizde mevcut olmuş olur.
+
+280
+00:59:48,655 --> 01:00:00,235
+Bu yapı bir yine datapath yapısı. Bunun senkron ardışım kısımları bunlar. Bunun kombinasyonel kısmı şurası.
+
+281
+01:00:00,235 --> 01:00:13,355
+Ok şartları gösterelim. Ve yürüttüğümüz işlemde seri olarak gelen anlam sırasındaki bitleri toplayarak bunlar üzerinden seri toplama gerçekleştirme.
+
+282
+01:00:13,748 --> 01:00:30,068
+İşleme baktığımızda da hafızamızda tutmamız gereken tek şey şu ana kadar gelen bir önceki bir önceki adımdan gelen bir toplama var mı yok mu şey elde var mı yok mu bunu tutmak şeklinde bir durum.
+
+283
+01:00:34,648 --> 01:00:41,268
+Dolayısıyla gördüğünüz gibi SAM tekrar feed edilmiş.
+
+284
+01:00:41,648 --> 01:00:43,568
+Burada A yazmaçını da tutmuşlar.
+
+285
+01:00:47,248 --> 01:00:56,028
+Cary, üçüncü Cary'in girişinden beslenmiş. Cary out, D girişine giriyor. Bir önceki adımdan elde var yok. Hafızada tutuyorsun.
+
+286
+01:00:57,108 --> 01:01:02,848
+Dört clock cycle verdiğimizde A ve B yazmaçlarındaki değer toplanıp
+
+287
+01:01:03,092 --> 01:01:10,072
+A yazmacında birikmiş olacak ve bu şekilde seri toplama, datapath yapısını gerçekleştirmiş olacak.
+
+288
+01:01:11,932 --> 01:01:20,092
+Buraya kadar olan kısımla ilgili sormak istediğiniz bir şey var mı? Bu haliyle burayı bitirmiş olacağız. Bir sonraki saatte.
+
+289
+01:01:22,003 --> 01:01:32,703
+Komut yapısına, adresleme modlarına, ISA, CISC yapısına doğru geçmeye çalışacağız. Var mı burayla ilgili sormak istediğiniz? Bu haliyle datapath kavramını tanımlamış olduk.
+
+290
+01:01:33,703 --> 01:01:43,723
+Çeşitli veri aktarım donanımlarını incelemiş olduk. Yazmaç transfer dili üzerinden nasıl notasyon kullanacağımızı görmüş olduk.
+
+291
+01:01:44,244 --> 01:01:57,543
+Kabaca kağıt üzerinde bir fonksiyonu atamayı, işlem aritmetik, lojik işlemler barındıran atamaları nasıl gerçekleştireceğinizi tasarlayabildiğimizi tanımlamış olduk bu ders itibariyle.
+
+292
+01:01:58,063 --> 01:02:00,284
+Var mı buraya kadar olanla ilgili sormak istediğiniz?
+
+293
+01:02:11,284 --> 01:02:19,684
+Soracağımız bir şey yoksa arkadaşlar, bir 15 dakika ara verelim. 3'ü 20 geçe kaldığımız yerden devam edelim. 3'ü 20 geçe devam edelim.
+
+294
+01:18:32,180 --> 01:18:37,340
+Tekrar merhaba arkadaşlar. Bir sonraki konuda devam ediyoruz.
+
+295
+01:18:39,200 --> 01:18:40,960
+Okyan paylaşım yapacağım şimdi.
+
+296
+01:18:49,652 --> 01:19:05,492
+Bir sonraki konumuz, komut mimarisi, komut set mimarisi ve bunun nasıl tasarlanabileceğine ilişkin aynı zamanda adres modlarına ilişkin olarak da inceleme yapacağız.
+
+297
+01:19:17,328 --> 01:19:42,628
+Dil karşılığıdır ki bu da SM'li dilini makine koduna çeviren SM'lığı da gerçekleştirilir. Dolayısıyla elde ettiğimiz makine kodu bloğunu bir algoritma yazdık diyelim. Bu algoritma ilişkin olarak SM seviyesine kodlama yaptık. Bunu da aldık derledik, makine kodunu çevirdik. Daha sonra bu makine kodunu bir hafıza birimine yükledik ve bu hafıza biriminden adım adım bunları yürütmeye başladık diyelim.
+
+298
+01:19:44,479 --> 01:19:56,099
+Bu durum aslında Instruction Set Arkitekçik Komut Seti mimarisi olarak karşımıza çıkan sanayi. Dolayısıyla bu çerçevede ne tür komutlar var onları inceleyeceğiz.
+
+299
+01:19:56,099 --> 01:20:07,099
+Yine adresleme modları nelerdir onları görüyor olacağız bu kapsamda.
+
+300
+01:20:07,539 --> 01:20:30,059
+Şimdi öncelikli olarak genel konsept şu olarak varsayalım. Elimizde bir işlevsel CPU var veya tasarlamak istiyoruz. Bunda ne tür komutların yürütülmesini istiyoruz. İlla ki bir takım aritmetik işlemlerin yürütülmesini isteyebiliriz. Yine bir takım lojik işlemleri isteyebiliriz.
+
+301
+01:20:30,484 --> 01:20:43,024
+Benzer şekilde öteleme, döndürme işlemlerine ilişkin bir beklentimiz olabilir. Bununla birlikte veri okuma, memoriden veri okuma ve veri yazmaya ilişkin komutlarımız olabilir.
+
+302
+01:20:45,264 --> 01:20:51,724
+Gibi bu komutları bir çerçevede değerlendirmek lazım. Tabii bunlar arasında önemlilerinden birisi de şu.
+
+303
+01:20:52,500 --> 01:21:01,120
+Programlarımız eğer ardışık olarak yazmış olduğumuz interakşınların yürütüleceği şekilde bir program ise aslında bu bir program değil.
+
+304
+01:21:02,159 --> 01:21:11,340
+Neticede programı program yapan çeşitli kontroller ve çeşitli dallanmalar programı akışını sağlayan bu.
+
+305
+01:21:11,340 --> 01:21:12,340
+Dolayısıyla yine...
+
+306
+01:21:12,979 --> 01:21:27,000
+Çeşitli IF kontrolleri, döngüler, bunlara ilişkin olarak yapılarda bizim aradığımız veya Instruction Set olarak, Komut Set olarak işlemcimizde bulunmasını isteyeceğimiz komut grupları olacak.
+
+307
+01:21:27,636 --> 01:21:35,016
+Ne tür komut gruplarını koymak istiyorsak ona göre her birisi için aslında arka tarafta bir devre tasarımı var.
+
+308
+01:21:35,136 --> 01:21:43,436
+Mesela sadece aritmetik işlemleri yerine getireceksek bir bloğu koyuyor yerleştirme, sadece o bunlarla ilişkili bir fonksiyonu yerine getiren bir modül tasarlayabiliriz.
+
+309
+01:21:43,936 --> 01:21:48,436
+Yine sadece lojik işlemleri gerçekleştirilen bir birim varsa onu tasarlayabiliriz.
+
+310
+01:21:48,896 --> 01:21:53,956
+Bu ikisini bir arada bir kontrol mantığında ele alırsak bir aritmetik lojik birimimiz olabilir.
+
+311
+01:21:54,323 --> 01:22:06,863
+Bunun yanında, bununla aynı seviyede bir öteleme döndürme modülümüz olabilir. Yine sistemin dallanma kontrolünü sağlayan bir branş kontrol birimimiz olabilir.
+
+312
+01:22:06,863 --> 01:22:14,863
+Tabii yazmış olduğumuz, gerçeklediğimiz algoritmanın makine kodu karşılığına göre baktığımız durumda.
+
+313
+01:26:02,292 --> 01:26:09,532
+Merhaba tekrar arkadaşlar. Fiziki koşullarla ilgili bir şeye bakmak için geldiler de okul tarafına.
+
+314
+01:26:11,212 --> 01:26:13,912
+Şimdi temel olarak ne diyorduk?
+
+315
+01:26:14,963 --> 01:26:34,224
+Bir algoritmayı gerçekledik. Buna ilişkin SMB kodumuz mevcut. Bu SMB kodunu makine koduna çevirdik. Ve aslında bu makine kodumuzu nereye yerleştiriyoruz? Bir program hafızası var oraya yerleştirdik. Program hafızasında hangi sıradaki kodun yürütüleceğini tutan bir tane yazmacımız var.
+
+316
+01:26:36,435 --> 01:26:43,115
+Program Counter olarak tanımlayabileceğimiz bir yazmaç. 8086'da Instruction Pointer olarak bunu görüyorduk.
+
+317
+01:26:44,255 --> 01:26:54,155
+Şimdi yapılan tasarıma göre 8086'da bunu kod segmentle birlikte kullanıp 21 tıkla adres oluşturulan sanaryo var ama daha basit bir şey düşünelim.
+
+318
+01:26:54,315 --> 01:27:02,876
+Sadece bu Instruction Pointer veya Program Counter dediğimiz yazmacın ilgili program hafızasını kendi başına adresleyebildiğini varsayalım.
+
+319
+01:27:03,699 --> 01:27:14,635
+Program hafızasında sıradaki kod yürütüldükçe program counter'ın kod boyutluğu kadar artması lazım. Bir basitleştirme daha yapalım. Her komutumuzun...
+
+320
+01:27:14,644 --> 01:27:34,203
+Bir program hafızası gözü kadar yer kapladığını varsayalım ki bu da olası bir durum. Özellikle risk mimarisindeki bir tasar yapıyorsak risk mimarisinde de komutların boyutları eşit, yürütme süreleri eşit. Yani her bir komut bir saykılda yürütülecek şekilde tasarlanmış durumda. Karmaşık komutlar yok.
+
+321
+01:27:34,612 --> 01:27:45,631
+Ama SISC mimarisinden aslında, SISC mimarisinde karmaşık komutlar var. Komutların yürütülme süreleri birbirinden farklı ama kompleks işlemleri yerine getirebiliyoruz. Temel olarak buna izin veren bir mimari işler konusu.
+
+322
+01:27:46,771 --> 01:28:00,252
+Dolayısıyla basitleştirmemizde her bir komut ürününde bir sonraki program hafızası gözünü gösterecek şekilde program kantarımız arttı. Belirli bir noktada bir karar noktasına vardık, bir dallanma noktası var, bir kontrol işlemi gerçekleştiriyoruz.
+
+323
+01:28:00,252 --> 01:28:09,119
+Kontrol işlemi sonucunda yapmış olduğumuz kontrol işlemi doğru bir sonuç üretmişse bu sefer göstermiş olduğu etikete...
+
+324
+01:28:09,119 --> 01:28:28,940
+Veyahut da göstermiş olduğu adrese gitmemiz lazım, dallanmamız lazım. Dolayısıyla ilgili program kauntanın orada verilen offset değeri kadar, görece adres değeri kadar yükselmesi lazım. Bu durumda birer birer arttığı senaryoda arada bir noktaya geldik ve işte offset değeri kadar büyümesi gerekiyor, toplanması gerekiyor.
+
+325
+01:28:37,119 --> 01:28:54,899
+net değeri kadar toplamayı gerçekleştirecek kapsamda bir yapı olduğunu varsayabiliriz. Bununla birlikte yüksek seviyeli dillerde görmüş olduğumuz pek çok döngü işleminin doğrudan bir karşılığının olmadığını biliyoruz esenli tarafında veya yapılan tasarımlarda. Onları nasıl sağlıyoruz?
+
+326
+01:28:54,899 --> 01:29:00,739
+Koşulsuz dallanmalar ve koşullu dallanmalarla birlikte bunları sağlıyorduk.
+
+327
+01:29:01,011 --> 01:29:27,791
+Dolayısıyla koşullu dallanma mantığına oturttuğumuzda bu mantık önüne oturmuş olacak. Dolayısıyla şimdi bizim elimizde bir program hafızası var. Tüm komutlarımız mesela 14 bitlik gözlere sahip program hafızası var. Tüm komutlarımız 14 bit. Biz kaç farklı komut oluşturmak istiyoruz? İki türlü düşüneceğiz. Bir oluşturmak istediğimiz komut sayısına göre bizim program hafızası bit geliştiğimiz ne olmalıya karar verebiliriz.
+
+328
+01:29:28,115 --> 01:29:51,115
+Bir yandan da bizim program hafızası için kullanabileceğimiz alanın bit genişliği bu kadar. Ona göre kaç tane komut ayırabiliriz? Buradaki komut yapısını nasıl birbirleriyle ilişkinlendirebiliriz? Onları tasarlayabiliriz. Bu noktada da gerçekleştirici veya karşılaştığımız senaryolardan birisi şu oluyor. Bir komut için...
+
+329
+01:29:51,123 --> 01:29:59,343
+Mesela en bitten oluşan bir komut için 3 alt ana başlıktan bahsediyoruz. Bunlardan bir tanesi opcode kısmı.
+
+330
+01:30:00,115 --> 01:30:22,956
+OPCODE kısmı temelde o fonksiyonu tanımlıyor. Yani örneğin aritmetik işlemlerin belirli bir OPCODE'u var. İşte lojik işlemlerin belirli bir OPCODE'u var. Döndürmelerin belirli bir OPCODE'u var. Bununla birlikte memoriden okuma, memoriye yazma işlemlerinin belirli bir OPCODE'u var. Dolayısıyla bunlar komut gruplarını tanımlayan ana başlıklar olarak karşımıza çıkıyor.
+
+331
+01:30:28,115 --> 01:30:55,716
+Bu konuda gerçekleşiyor olabilir. Dolayısıyla bunu veriyoruz. Veya bir memory adresiyle başka bir yazmaç üzerinden işlem yapıyor olabiliriz. Veyahut da biz bu hafıza gözünü doğrudan adres değeri vererek değil de bir yazmaç üzerinden dolaylı olarak adresleyerek veriyor olabiliriz. Tüm bunlara ilişkin mod tanımlamaları bu çerçevede gerçekleştiriyor. Son olarak da adres ve operan alanı var.
+
+332
+01:30:56,180 --> 01:31:13,300
+Bu alanda ise şunu belirtmek gerekiyor. Eğer bir memori işlemi yapacaksak o memoriye ilişkin olarak adres buraya sığabilir veya yazmaçla üzerinden işlem yapacaksak onları burada barındırabiliriz.
+
+333
+01:31:22,484 --> 01:31:36,444
+Temelde iki operantlı istrakşınların, komutların bulunduğu bir senaryoyu düşünecek olursak orada neydi? İlk operant aynı zamanda hedef oluyordu. Dolayısıyla iki operantı burada yerleştirmiş oluyorduk.
+
+334
+01:31:36,756 --> 01:31:54,576
+Bunun aksi durumlar mesela 3 operantlı temelde 3 operantlı senaryolar olabilir. Onlardan birisi de şu. Mesela add R1, R2, R3 gibi bir komut ürünlüğü. 3 operantlı senaryolarda MIPS mimarilerinde olduğu gibi. Buradaki yapıda ise
+
+335
+01:31:55,060 --> 01:32:07,480
+Bir ilk operandımız hedef, sonraki gelen iki operandımız iki kaynağı belirtecek şekilde verilebiliyor. Dolayısıyla bu operand veya adres kısmı temelde bu operandları tutan kısım olarak karşımıza çıkıyor.
+
+336
+01:32:08,724 --> 01:32:21,664
+Burada yürütülebileceğimiz bir senaryo şu olabilir. Örneğin OPCOD genişliğini biz belirleyip biliyorsak, işte 5 bitse bizim toplamda 32 farklı komut grubumuz olabilir diyebiliriz.
+
+337
+01:32:21,664 --> 01:32:32,304
+Mesela komut sayısının sınırına ilişkin bir durumda OPCOD kısmının genişliği oluyor. Bu noktadan itibaren artık yürüteceğimiz hafıza işlemlerinin
+
+338
+01:32:32,756 --> 01:32:39,136
+nasıl gerçekleşeceğine ve dolayısıyla adresleme modlarına değinmeye başlıyor olacağız.
+
+339
+01:32:39,855 --> 01:32:48,476
+Adresleme modu bir veri erişiminin, hafızadan veri erişiminin nasıl gerçekleşebildiğine eriştiğin bir takım tanımları içeriyor.
+
+340
+01:32:48,476 --> 01:32:55,476
+Bu yapacağımız tasarım bunların hepsini, bir kısmını sadece bir tanesi destekliyor olabilir.
+
+341
+01:32:56,296 --> 01:32:59,275
+Ama kavramsal olarak bunların her birinin ne olduğunu.
+
+342
+01:32:59,636 --> 01:33:02,636
+İfade etmek önemli. Bu noktada...
+
+343
+01:33:03,380 --> 01:33:13,860
+Burada görmüş olduğunuz program hafızası içerisinde 250, 251, 252 gibi adres gözlerini görüyorsunuz.
+
+344
+01:33:13,860 --> 01:33:23,579
+Ve bizim bir program komutumuzun iki adrese sığadığını görüyorsunuz. Onu da nasıl gördük? Bir komutun op kodu, modu ve adres operantörü olması lazım.
+
+345
+01:33:24,239 --> 01:33:30,860
+Gördüğünüz gibi iki adreslik alana sığılıyor. Ve şu anda mevcut durumda program kauntörümüzün 250'yi gösterdiğimiz...
+
+346
+01:33:31,380 --> 01:33:35,020
+başlayalım. Bir de akümülatör yazmacımızın durumu var.
+
+347
+01:33:39,988 --> 01:33:57,368
+Bu durumda akümülatörün ne olduğunu bir hatırlamaya çalışalım. Akümülatör dediğimiz kavram özel bir yazmaç. Örneğin 80-86 için akümülatör olarak tanımlayabileceğimiz yazmaç AX yazmacı. Akümülatörü diğer yazmaçlardan ayıran şey nedir?
+
+348
+01:33:57,939 --> 01:34:11,879
+Şu akümülatörü ayıran özellik. Akümülatöre özel komutlar var. Bu komutlar diğer yazmaçlarla aynı şeyi yapmak istediğimiz senaryoda akümülatör kullandığınız durumda daha hızlı çalışabiliyor. Yani ona özel bir donanım var.
+
+349
+01:34:11,879 --> 01:34:25,939
+Ve genel olarak aritmetik lojik işlem biriminin çıktılarının varsayılan olarak saklandığı yer akümülatör diyebiliriz. Yani bunu da bazı gizli operantlar olarak 8086'da özellikle AX yazmacı.
+
+350
+01:34:25,939 --> 01:34:46,639
+Bu konuları kullanılıyor olmasıyla ifade edebiliriz. Şimdi bizim program counter'ımız bu örnek üzerinde 250 değerini gösteriyor. 250 değerini gidip okuduğumuzda bize bir opcode ve mod okuması sağlamış oluyor. Bize opcode'dan gelen şey akümülatöre bir değer yüklü şeklinde.
+
+351
+01:34:47,828 --> 01:35:04,028
+ve mod olarak doğrudan adresleme seçilmiş. Dolayısıyla bize bir sonraki adresten yapacağımız okuma yine data memory için bir veri adresi olarak gelecek.
+
+352
+01:35:04,228 --> 01:35:13,468
+Yani bizim okuduğumuz değer opcode olarak load to akümülatör, mod direct adresi, adres olarak da 500 değeri yazılı.
+
+353
+01:35:16,180 --> 01:35:29,940
+Mikro işlemci şu şekilde çalışacak. Önce gitti, bu 2 byte'ı aldı, okudu. Daha sonra bunu çözümledi. Daha sonra operantları alacak. Operant nerede? İlgili data memory'nin 500 numaralı adresini.
+
+354
+01:35:29,940 --> 01:35:44,159
+500 numaralı adrese gidiyor, operantları fetch ediyor, 500 değerini çekti ve ekseküt edecek işlemle yürütme. Neyi yürütecek? Akümülatöre değer atama. Akümülatöre 800 değerini atadı ve geriye bir değer yazma.
+
+355
+01:35:44,180 --> 01:35:53,420
+Bu komutun yürütülmesini sağladı. Bu adresleme mantığı arkadaşlar doğrudan adresleme olarak geçiyor.
+
+356
+01:35:54,140 --> 01:36:03,460
+Ve komut için, komut tarafında, örneğin burada 500 yazdığını söylemiştik, doğrudan adres değeri komut içerisinde yer alıyor.
+
+357
+01:36:03,780 --> 01:36:10,720
+Bunu bir adres değeri olarak kullanıyoruz. Bu iki şart sağlandığında bu doğrudan adreslemenin karşılığı olmuş oluyor.
+
+358
+01:36:11,412 --> 01:36:19,404
+İkinci bir örneğimize bakacak olursak, ikinci örneğimiz bir yine doğrudan adresleme örneği fakat...
+
+359
+01:36:19,539 --> 01:36:42,315
+Buradaki yapıda bir dallanma komutuna bakıyor olacağız temel olarak. Program kauntörümüz 300 adresini gösteriyor. 300 adresinde bir opcode ve moda karşılık bir binary dizi var. Ve 301 adresinde de bir sabit değer ve bir adres olarak ifade edebileceğimiz bir bölge var. Akümülatörümüzde bir değer var. O sırada...
+
+360
+01:36:42,868 --> 01:37:09,368
+ve adres içeriğinde 500 değeri yazılı yine 500 değerinde de bir başka instruction var. Böyle bir yapıyı varsayalım. Mikro işlemci program counter'ın ilgili gösterdiği adresi aldı okudu 2 byte aldı. Bunları değerlendiriyor, çözümlüyor şimdi. Hop kodumuz neymiş? Akümülatör 0 ise dallan.
+
+361
+01:37:10,707 --> 01:37:18,188
+Mod, direct addressing, doğrudan dallan. Nereye dallanacak o zaman? Bir sonraki adreste yazan değere dallanacak.
+
+362
+01:37:18,188 --> 01:37:26,927
+Demek ki bu kodu çözümlediğinde eğer ki akümülatördeki değer 0'sa program counter'ı 500 yap demişiz diyoruz.
+
+363
+01:37:28,207 --> 01:37:34,188
+Akümülatör 0'sa yani true ise program counter'ı 500 yap. Eğer program counter...
+
+364
+01:37:35,039 --> 01:37:55,579
+Pardon, akümülatör değerimiz 0 değil ise bir sonraki instruction'a geçecek, komuta geçecek. O da hangi adreste? Bir sıradaki komutumuz 300'de. Bunun bir byte'ında opcode ve mod var, bir byte'ında da adres var. Dolayısıyla bir sonraki komutumuz 302'de. 302 numaralı adrese gidecek. Mesela 8086'da.
+
+365
+01:37:56,083 --> 01:38:23,324
+Her komutun boyunun farklı olduğunu söylemiştik. Ama RISC mimarisinde her komutun boyutu aynı demiştik. Dolayısıyla RISC mimarisinde bir sonraki instrakşını hesaplamak kolay. Direkt işte her bir komut 2 byte yer kaplıyorsa artı 2 diyeceksin. Ama 8086'da bunu nasıl belirleyecek? Bu şekilde şu şekilde belirleyecek. Yürüteceğimiz opcode ne? Mod ne? Bunları dikkate alarak bu komutun kaç byte yer kaplayacağı belirlenmiş oluyor. Ona göre arttır.
+
+366
+01:38:24,051 --> 01:38:50,051
+Ona göre arttıracağız. Dolayısıyla biz OPCOD olarak branch if akümülatör eşittir 0, mod direct adres, adres değeri 500 gibi bir komuta okumuşsak bu yürütüldüğünde akümülatör değerimiz 0 ise program kauntörü 500'e set ediyor. Akümülatör değeri 0 değil ise program kauntörü 302'ye set ediyor. Şeklinde bu komutu yorumlayabiliriz arkadaşlar.
+
+367
+01:38:54,484 --> 01:38:56,743
+Bu, sona ki, komploadır.
+
+368
+01:39:10,387 --> 01:39:24,627
+Şimdi bir sonraki örneklerimizin hepsi burada görmüş olduğunuz verilen durum için yürütülecek. Yani şurada görmüş olduğunuz örneklerin hepsini bu hafıza durumu ve bu inişal durumlar için yürütmeni çalışacağız.
+
+369
+01:39:26,907 --> 01:39:33,427
+Program counter'ımızın varsayılan değeri 250. 250 adresinde bir opcode ve mod değeri var.
+
+370
+01:39:33,971 --> 01:39:59,132
+Daha sonra 500 sabit değerimiz yazılmış oraya. 252 adresinde bir sonraki komutumuz var. 400 adresinde 700 verisi var. 500 adresinde 800 verisi var. 750 ile 600 var. 800 ile 300 var. 900 adresinde 200 veri var. Ve akümülatörümüz burada mevcut. Yürüteceğimiz opcode da akümülatöre değer yükle komutu. Şimdi buna göre sırasıyla komutlarımıza bakalım.
+
+371
+01:40:00,532 --> 01:40:20,872
+Doğrudan adreslemenin nasıl çalıştığını az önce de görmüştük. Doğrudan adresleme modundaysak. Yani load akümülatör, LDA olarak kısaltılmış ve adres değeriyle vermiş olduğumuz komut, bu sembolik olarak veya minemanik olarak bir şekilde ifade etmiş olduğumuz komutun karşılığı şu.
+
+372
+01:40:27,028 --> 01:40:40,287
+Burada almış olduğu adres değeri operant fetch açamasında kullanacağı adresin kendisi oluyor. Dolayısıyla 500 numaralı adrese gidiyor. 8 değerini alıyor ve akümülatöre 800 değerini yüklemiş oluyor. Bunu nasıl ifade edebiliriz?
+
+373
+01:40:41,427 --> 01:40:49,847
+Akümülatöre şöyle yazabiliriz. Akümülatöre memorinin 500 adresini yükle.
+
+374
+01:40:50,963 --> 01:41:06,283
+diye ifade edebiliriz. Daha açık bir şekilde böyle ifade edebiliriz. Burada adres olarak gördüğünüz değer şurada 500 olarak verilmiş. Dolayısıyla akümülatörün nihai değeri de 800 olarak elde edilmiş oluyor. Bu doğrudan adreslemeyi kullandığımız bir senaryo.
+
+375
+01:41:06,644 --> 01:41:31,144
+Peki, bizim ihtiyaç duyabileceğimiz komutlardan birisi de bir yazmaca veya akümülatöre sabit bir değer yüklemek olabilir. Yani gidip de hafızadan bunu oku değil de bir initial değer yüklemek istiyor olabilir ve bu bildiğiniz bir değer olabilir. Bu durum arkadaşlar immediate adresleme olarak ifade ediliyor. Türkçe'de hemen adresleme olarak geçiyor veyahut da sabit değer atama olarak ifade edebileceğimiz bir değer.
+
+376
+01:41:32,659 --> 01:41:53,980
+Bu durumda ise akümülatöre yüklenen şey, akümülatöre yüklenen şey, akümülatöre yüklenen şey, opcode load akümülatördü, mod diyor immediate adres kullanacağım.
+
+377
+01:41:54,384 --> 01:42:17,944
+Dolayısıyla sonraki adreste yer alan sayımız, yani bu operandanın içerisinde gömülü olarak gelen sayı bizim sabit değerimiz. Dolayısıyla akümülatöre buradaki değeri yükledim. Dolayısıyla sonuç akümülatöre 500 değeri yüklendi. Hangi adresteki değeri yükledik? 251 adresindeki değeri yüklemiş olduk. Netice itibariyle efektif adresleri hangi adresteki değeri yükledik? Buradaki değeri yüklemiş olduk.
+
+378
+01:42:17,944 --> 01:42:20,844
+Bir başka şey arkadaşlar şu olabilir.
+
+379
+01:42:21,279 --> 01:42:47,279
+Indirect, dolaylı adresleme olabilir. Dolaylı adreslemede ise şunu yapıyoruz. Bir yazmaç üzerinden veya yazmaç üzerinden olursa bu index addressing olarak tanımlanmış burada veya oradaki değer bize bir dolaylı adres değeri belirtiyor olacak. Bunu nasıl kullanacağız? Eğer ki komutumuz indirect addressing ise.
+
+380
+01:42:48,404 --> 01:42:54,364
+500 adresinin içeriğindeki değer bizim için bir hafıza gözü adresi olmuş olacak.
+
+381
+01:42:55,204 --> 01:43:01,864
+Direct addressing de nasıldı? Bu bizim için bir doğrudan hafıza gözü adresi olmuştu. Oradaki veriyi okumuştuk.
+
+382
+01:43:02,204 --> 01:43:11,024
+Dolaylı adreslemede ise buradaki operant içerisinde yer alan adres değeri bizim dolaylı olarak erişeceğimiz adresi işaret ediyor olacak.
+
+383
+01:43:11,604 --> 01:43:15,404
+Dolayısıyla bizim asıl erişmek istediğimiz adres 800 adresinin içeriği.
+
+384
+01:43:15,731 --> 01:43:42,051
+Dolayısıyla 300 değeri akümülatöre iklimi soracak. Dolaylı adreslemede bu mantık geçerli. Hangi adresteki veriyi okuduk? 800'deki veriyi okuduk ama 800 adresini bize gösteren M500 yani şu içteki memory adres erişimi bize 800 adresini oluşturdu. Biz gidip M800 ile 800 adresinin içeriğini dolaylı olarak okumuş olduk.
+
+385
+01:43:42,931 --> 01:44:09,931
+Bir başka adresleme modu, relatif adresleme. Relatif adresleme temel olarak ne kadar bir öteleme yapacağımızı belirtiyor. Ne kadarlık bir öteleme yapacağımızı belirtiyor. Dolayısıyla adres değerimizle mesela bir sabit referans değeri toplayarak bunu yapabiliriz. Bunu nerede mesela kullanıyoruz? Bu relatif adreslemeyi mesela 8086'da.
+
+386
+01:44:09,939 --> 01:44:26,419
+Cam komutlarıyla veya koşulu dallanma komutlarıyla birlikte kullandığımız senaryolarda program counter'a burada üretilmiş olan makine kodu ekleniyordu. Hatırlayacak olursanız orada. Makine kodu tarafında ürettiğimiz değer bir işaretli sayıyım.
+
+387
+01:44:26,419 --> 01:44:34,419
+Dolayısıyla bulunduğumuz program counter satırından yukarıya veya daha düşük adreslere veya ileriye veya daha yüksek adreslere.
+
+388
+01:44:34,815 --> 01:44:59,615
+Geçiş imkanı bu mantık çerçevesinde, işaretli sayı çerçevesinde sağlanıyordu. Burada eğer dolaylı adreslemeyi tanımlayacak olursak, buradaki genel çerçevede, mevcut program counter değerimizi vermiş olduğumuz operant değeriyle toplayıp, görece olarak bu kadar ileriye gidip, oradaki değeri okuyor olacağız. Şimdi bunu yürütmeye ilişkin örneğe bakacak olursak,
+
+389
+01:45:00,275 --> 01:45:27,655
+Biz şu anda bu komutu yürütmek istediğimizde program counter 252'ye gelecek. Şu anda 250 adresindeki komutu yürütmekle ilgili mikro işlemci uğraşıyor. Bu uğraşma sırasında program counter otomatik olarak bir sonraki instrakşını ifade ediyor, işaret ediyor. O da 252 adresi. Program counter bu komut yürütülürken 252'yi gösteriyor demek ki.
+
+390
+01:45:29,076 --> 01:45:38,676
+Relatif adresleme modunda çalıştığını gördük. Bu komut çözülürken işlemci tarafında ve adres veya ikinci operant kısmını aldığımızda orada da 500 yazıyor.
+
+391
+01:45:38,676 --> 01:45:54,336
+O zaman işlemci şunu yapacak. Mevcut program counter değerini okumuş olduğum operant ekleyip, relatif olarak ekleyip 752 adresine ulaşacak. 752 adres içerisindeki değeri okuyacak. Bu yaklaşım relatif adreslem olarak ifade ediliyor.
+
+392
+01:45:54,996 --> 01:46:02,796
+Yine bir başka yaklaşım arkadaşlar, indeks adresleme. İndeks adreslemeyi şöyle ifade edebiliriz.
+
+393
+01:46:04,796 --> 01:46:08,796
+Bunu 8086'da...
+
+394
+01:46:09,779 --> 01:46:17,019
+Mesela bir dizi tanımladık. Dizinin SI numaralı gözüne gitmek istiyoruz. Mantığından hatırlayabilirsiniz.
+
+395
+01:46:18,059 --> 01:46:32,819
+Dolayısıyla böyle bir indeks adresleme modunda bir komut yürütülmeye çalışıldığında operant içerisinde yer alan adrese RI yazmacındaki değer kadarlık bir öteleme veyahut da o numaralı indekse erişmiş oluyoruz.
+
+396
+01:46:32,819 --> 01:46:34,500
+Aslında bunu şöyle düşünebiliriz.
+
+397
+01:46:36,243 --> 01:46:49,423
+Operant işlem, neydi onları, komutla birlikte bize verilmiş olan adres değeri veya sabit operant değerimiz bizim için ilgilendiğimiz tablonun başlangıç adresini ifade ediyor.
+
+398
+01:46:49,563 --> 01:46:53,903
+R1 ise bu tablonun kaç numaralı gözüne gitmek istediğimizi ifade ediyor.
+
+399
+01:46:54,023 --> 01:47:04,243
+Fakat mikro işlemci tarafında bunların her birisi birer adrese tekabül ettiği için çözümlemesi adres, baz tablo adresi artı indeks adresi şeklinde.
+
+400
+01:47:04,243 --> 01:47:30,123
+Bir karşılık buluyor. Buna bakacak olursak, eğer ki mod değerimiz index adres olmuşsa ve index olarak da R1 yazmacını kullanmışsak, bu operant çözümlenirken 500 referans baz tablo adreslerini aldık. Bu adresin 400 adres ötesindeki göze gidip oradaki değeri okuyacağız. Yani 900 adresindeki değeri okuyarak aküminatöre aktörüyor olacağız.
+
+401
+01:47:30,996 --> 01:47:53,436
+Yazmaç adresleme var, register addressing var. Register addressing mantığında ise doğrudan yazmacı işlemde kullanılıyor. Yani akümülatöre R1 yazmacının içeriğini aktarıyoruz. Bu durumda memoriye gidip bir şeye erişmiyoruz. Yazmacı içerisindeki değeri alıp aktarmış oluyoruz. Bir de yazmaç dolaylı adresler var.
+
+402
+01:47:53,855 --> 01:48:12,715
+Yazmaç dolaylı adreslemede erişip verisini okumak istediğimiz adres, hafıza adresi R1 içerisinde gömülü. Dolayısıyla Register Indirect Addressing yapmışsak R1'de 400 değeri var. Bu durumda şuradakini dikkate almıyoruz. Sadece bir satırlık komut gibi düşünün.
+
+403
+01:48:15,604 --> 01:48:24,804
+Akümülatörü ata ve mod olarak da register indirect kullan. O zaman 400 adresine gidip oradaki değeri akümülatöre aktarmış olacak.
+
+404
+01:48:25,443 --> 01:48:34,184
+Buradaki komutların 8086'daki karşılıklarını yazmaya çalışacak olursak, mesela direct addressing için şunu söyleyebiliriz sanırım.
+
+405
+01:48:39,347 --> 01:49:00,087
+100 desek, orada köşeli parantezle ifade edilirdi çünkü. Bu, direct addressing'e ilişkin bir örnek olmuş oldu. Bu bir numaralıya ilişkin bir örnek vermek gerekirse, herkes herhalde SMB aldı, oradan hatırlamak daha kolay olur diye 80-86 örnekleri veriyor bu.
+
+406
+01:49:06,452 --> 01:49:08,231
+Hemen adresleme örneği.
+
+407
+01:49:09,971 --> 01:49:14,412
+80.86'da bu şekilde bir indirect adresin mantığı yok.
+
+408
+01:49:16,231 --> 01:49:19,252
+Dolayısıyla onu nasıl ifade edebiliriz?
+
+409
+01:49:21,552 --> 01:49:25,391
+Adresin içeriğine gidip oradan bir değer almak gibi bir mantık yok.
+
+410
+01:49:26,231 --> 01:49:31,851
+O yüzden onu geçelim. Relatif adreslemede ise şunu söyleyebiliyorduk katılacak olursanız.
+
+411
+01:49:32,787 --> 01:49:57,967
+jump less or equal, mesela label one diyelim. Böyle bir komut yürütüldüğünde bunun makine kodu karşılığında L1 etiketi hangi adresi gösteriyorsa onu bu komutun yürütüldüğü satıra görece offset olarak verildiği duruma karşılık geliyordu.
+
+412
+01:50:00,000 --> 01:50:08,199
+İşaretli bir 8 bit 16 bit bir sayı vardı. Bunu direkt program counter'a ekleyerek makine kodu karşılığında relatif olarak gidebiliyorduk.
+
+413
+01:50:09,159 --> 01:50:12,340
+İndeks adreslemeye örnek olarak şunu verebiliriz.
+
+414
+01:50:12,340 --> 01:50:14,279
+İşte move.
+
+415
+01:50:18,479 --> 01:50:19,779
+Yazamadım.
+
+416
+01:50:21,460 --> 01:50:22,539
+AL virgül.
+
+417
+01:50:25,332 --> 01:50:31,432
+Tizi, S, I gibi bir şey dediğimizde kabaca indeks adreslemeye karşılık geliyor.
+
+418
+01:50:31,592 --> 01:50:39,812
+5 numaradaki örnek karşılığımız MOVAL,BL gibi bir örnek diyebiliriz.
+
+419
+01:50:40,492 --> 01:50:52,352
+6'daki örneğimizde doğrudan MOVAL,SI gibi verebileceğimiz bir örnek.
+
+420
+01:50:52,752 --> 01:50:54,352
+Olarak karşımıza çıkıyor.
+
+421
+01:50:55,652 --> 01:51:05,712
+Dolayısıyla burada görmüş olduğumuz adresleme modları genel olarak genel anlamda karşılaşabileceğimiz adres modlarının tamamını ifade etmiş oluyor.
+
+422
+01:51:08,052 --> 01:51:11,352
+Bu noktada sonra devam edecek olursak.
+
+423
+01:51:13,952 --> 01:51:19,352
+Adresleme modlarının yanında önemli konulardan birisi de bizim yürüteceğimiz.
+
+424
+01:51:20,404 --> 01:51:34,144
+Komut grupları neler olmasını istiyoruz. Yani bir iklemci tasarlayacağız. Bu işlemcide desteklenecek komutların neler olmasını isteyebiliriz. Onlara ilişkin bir bakış açısı sağlayacak kısımdayız şu anda.
+
+425
+01:51:35,044 --> 01:51:45,204
+Örneğin bir işlemcinin mutlaka ki bir hafıza elemanından veri okuma yazmasını isteyebiliriz veya giriş çıkış birimlerine veri aralık okumasını isteyebiliriz.
+
+426
+01:51:46,100 --> 01:51:48,079
+Burada özellikle
+
+427
+01:51:59,220 --> 01:52:12,340
+Veri aktarım komutları dediğimiz zaman memoriye yazan, okuyan, giriş çıkış birimlerine veri ortaran veya veri okuyan ve bunun yanında yığını kullanan komutları da birlikte kastediyoruz.
+
+428
+01:52:13,800 --> 01:52:23,420
+Burada load işlemini temel olarak hafıza elemanına bir değer aktarma komutu olarak düşünebiliriz.
+
+429
+01:52:23,859 --> 01:52:31,859
+Store işlemini ise hafızadan bir değeri getirmek şeklinde düşünebiliriz.
+
+430
+01:52:32,819 --> 01:52:39,799
+Move komutu farklı bir anlam taşıyor olabilir. Ona ilişkin bir örnek var mı burada?
+
+431
+01:52:43,699 --> 01:52:54,699
+Doğrudan yok. Move komutu belki yazmaçlar arasında yapacağımız işlemleri tanımlamak için ayrı bir komut grubu olarak karşımıza çıkabilir. Ama temelde...
+
+432
+01:52:56,884 --> 01:53:13,304
+Temelde hafızaya bir veri aktarımı ve hafızadan veri getirmeyi içerecek iki komut temelde yeterli olabilir. Bununla birlikte exchange komutu veri aktarım komutları içerisinde yer alıyor. Bu swap işlemini yerine getiren bir komut.
+
+433
+01:53:24,884 --> 01:53:44,844
+Aslında uygun bir compiler optimizasyonu ile bir seferde yapması lazım. Halbuki biz bunu bir C koduyla gerçeklemek istesek ne yapacağız? Bizim işte 3 tane değerimiz olacak. A, B ve temp şeklinde.
+
+434
+01:53:45,332 --> 01:54:06,971
+Ondan sonra A ile B'nin yerlerini değiştirmek istiyorsak yürütmemiz gereken 3 adımlı bir işlem olacak. Önce A'yı T'ye atacağız. Daha sonra A'yı bozabiliriz artık. A'yı bozabiliriz. Daha sonrasında da B'yi bozmamız gerekiyor. Yani gördüğünüz gibi bir C'nin de bu swap işlemini.
+
+435
+01:54:07,604 --> 01:54:19,804
+tanımını göz ardı edecek olacak. Üç adımda yürütüyoruz. Halbuki eğer ilgili işlemci bu exchange, swap işlemini destekliyorsa bir okuma yazmak saygılı da.
+
+436
+01:54:20,819 --> 01:54:44,480
+Bunu gerçekleyebilir demek. Dolayısıyla bizim elimizdeki C kodunu compiler'dan geçirdikten sonra oluşan SM'li kodu iyi bir optimizasyondan geçmemişse bu kodun yürütülmesi 3 clock cycle vakit alırken optimize edilmiş bir kodun yürütülmesi exchange komutunu aktif bir şekilde kullanmasıyla bir clock cycle'da gerçekleşebilir.
+
+437
+01:54:44,916 --> 01:54:58,435
+Dolayısıyla bu noktada da günümüzde yüksek seviyeli dillerle programlar yazıyoruz ama orada bize sunulmuş olan compilerlar ve bunların optimizasyon seviyelerine belki de hiç dokunmadan doğrudan kullanıyoruz.
+
+438
+01:54:59,376 --> 01:55:06,036
+Bu noktada SMD'nin SMD dersinde de çokça gündeme gelen SMD ne işimize yarar dediğimiz noktada.
+
+439
+01:55:08,083 --> 01:55:31,003
+Belki dönüp bakıp compiler'ın ürettiği SM'li kodunu bir incelemek gerekiyor olabilir. Yani siz işlemci tarafında kapasiteleri ve kabiliyetlerin farkındaysanız dönüp üretilen kod için optimizasyon seviyesini değiştirmekten çıkan SM'li kodunu manuel olarak manipüle etmeye kadar pek çok işlemi belki yürütmek isteyebilirsiniz.
+
+440
+01:55:32,275 --> 01:55:44,976
+Dolayısıyla Exchange komutu bu çerçevede değerlendirilebilir. Push ve pop komutları özel bir hafıza bölgesi olan yığının kullanımına ilişkin bir bölge, bir komut ikincisi.
+
+441
+01:55:51,060 --> 01:56:17,260
+Last in, first out mantığında çalışan bir yığın bölgesi. Bunu yürütmek üzere, yığınla ilgili işlemleri yürütmek üzere ayrı pointerlar mevcut. Dolayısıyla hem yığının kendisi, hafıza bölgesinin kendisi hem de bununla ilgili kontrolleri yürütecek ilgili işaretçilerin bir aradığı bulunduğu senaryo var ise veya o donanımsal yapı gerçeklenmişse sistemimiz kuş ve pop komutlarını destekleyebilir.
+
+442
+01:56:17,971 --> 01:56:32,171
+Push ve pop komutları aslında sıralı olarak bizim yığına bir şeyler attığımız ve push komutuyla da şey push komutuyla sıralı olarak bir şeyleri attığımız pop komutuyla da o anda yığının en üstündeki değer neyse onu çekebildiğimiz bir yapı.
+
+443
+01:56:32,971 --> 01:56:41,551
+Yığın nerelerde kullanılır diye bakacak olursak yığın mantığı temelde alt yordamlara parametre aktarımında kullanılabilir.
+
+444
+01:56:42,228 --> 01:56:50,068
+Yine program akışı içerisinde geçici bir hafıza bölgesi olarak kullanılabilir. Yani yığına değeri atıp daha sonra tekrar çekebiliriz.
+
+445
+01:56:51,807 --> 01:56:59,127
+Bununla birlikte program kollarında geri dönüş adreslerinin tutulduğu ve saklandığı bir alan olarak kullanılabilir.
+
+446
+01:57:00,427 --> 01:57:06,407
+Push ve pop komutları da temelde yığına push komutuyla yeni bir veriyi atıyoruz.
+
+447
+01:57:07,028 --> 01:57:21,488
+POP komutuyla da yığının en üstündeki değer neyse onu çekiyoruz. Push komutu da yığının en üstüne yeni bir değer atıyor. Bu aradaki kontrolü gerçekleyen de yığına veri yazdığımızda veya yığından veri çektiğimizde otomatik olarak değeri değişen bir yığın pointer.
+
+448
+01:57:31,923 --> 01:57:46,544
+Tıpkı hafıza komutları gibi dış dünyaya yani mikro işlemci içerisinden belirli bir takım dış dünyadaki birimlere veri gönderen veya veri okuyan komutlar.
+
+449
+01:57:47,724 --> 01:57:53,684
+Temel olarak hafıza komutları ile in-out komutlarını ayırıyor olmamızdaki temel sebep şu.
+
+450
+01:57:54,163 --> 01:58:16,163
+Dış dünyadan gelen komutları incelediğimizde veya dış dünyaya veri aktarımını incelediğimizde mikro işlemci ve bilgisayar sisteminin belirli bir elektriksel seviye standartında tasarıma sahip olduğunu, dış dünyadan yapacağımız bağlantıların farklı bir takım elektriksel ve lojik seviyelerde tanımlanmış olabileceğini dolayısıyla bunlar arasında...
+
+451
+01:58:16,479 --> 01:58:23,479
+Bir takım dönüştürücülere, fiziki dönüştürücü, elektriksel dönüştürücülere ihtiyacımız olduğunu gündeme getiriyor.
+
+452
+01:58:24,239 --> 01:58:33,259
+Bununla birlikte mikro işlemci ve bununla doğrudan bağlı olan birimler arasında yine üst bir standart üzerinde veri alışverişi mevcut iken,
+
+453
+01:58:34,879 --> 01:58:44,019
+bağlayacağımız I.O. cihazının kendine has bir standartı olabilir. Dolayısıyla bizim o cihazı veri aktarımı için uzunca bir süre bekliyor olmamız gerekiyor olabilir.
+
+454
+01:58:44,479 --> 01:58:57,479
+Dolayısıyla bunları IO cihazlarıyla, memori birimlerini birbirinden ayırarak ayrı komutlar çerçevesinde bunları değerlendirmek daha yönetilebilir bir instruction set yapısı oluşturmak için uygun oluyor diyebiliriz.
+
+455
+01:58:57,479 --> 01:59:06,019
+Yine input ve output komutlarına baktığımız zaman bağlayabileceğimiz çevre elemanı sayısıyla veya çevre birimlerinin sayısıyla
+
+456
+01:59:06,676 --> 01:59:14,444
+Memori bilimlerinin kapasitesi ve sayısının birbirlerinden farklı olduğunu görüyoruz. Memori bilimleri az sayıda...
+
+457
+01:59:14,484 --> 01:59:21,104
+Fakat her biri yüksek miktarda kapasiteye sahip birimler şeklinde karşımıza çıkıyor.
+
+458
+01:59:21,583 --> 01:59:31,083
+IO birimleri ise bunun tam tersi şeklinde. Çok sayıda fakat her birisi küçük hafıza büyüklüklerinde cihazlar olarak karşımıza çıkıyor.
+
+459
+01:59:31,184 --> 01:59:37,644
+Yani örneğin incelediğimiz zaman bir paralel giriş çıkış birimi IO uzayında 4 byte'lik yer katlıyor.
+
+460
+01:59:37,744 --> 01:59:42,304
+Ama bir hafıza birimine bakıyoruz. Örneğin 512 kilobaytlık bir alan katlıyor.
+
+461
+01:59:42,484 --> 01:59:47,083
+Örnek olarak yine bunu göz önüne getirebilirsiniz diyebilirim.
+
+462
+01:59:47,724 --> 01:59:51,724
+Bu komutlarımız temel olarak karşılaşabileceğimiz veri transfer komutları.
+
+463
+01:59:52,444 --> 01:59:56,684
+Bununla birlikte yığının nasıl çalıştığına ilişkin bir örnek burada var.
+
+464
+01:59:56,684 --> 02:00:01,904
+Yığın yazmacı o sırada 101 adresini gösteriyor iken.
+
+465
+02:00:02,547 --> 02:00:18,688
+Ve yığında daha önce A ve B gibi değerlerimiz de mevcutken biz yığına R1 yazmacı içerisindeki değeri atmak istersek bu durumda öncelikli olarak yığın yazmacı sırasındaki boş gözü gösterecek şekilde bir azalacak. Yani artık yüzü gösterecek.
+
+466
+02:00:19,072 --> 02:00:34,912
+Azalması veya artması bu yığının çalışma mantığına göre farklılık gösterilir ama 80-86'da da nasıldı? Stack pointer yüksek bir adresten başlıyordu. Biz yığına bir şeyler attıkça, pushladıkça adres değerimiz küçülüyordu. Tıpkı onun gibi bir örnek vermiş olalım.
+
+467
+02:00:35,667 --> 02:01:02,767
+Stag pointer sıradaki boş gözü gösterecek şekilde değişiyor. 100'ü gösteriyor ve R1 içerisindeki değer Stag pointer'ın gösterdiği adrese yazıyor. Yani 400 değeri 100 adresine yazılmış oluyor. Veya yığından bir şey çekmek istediğimizde yığının Stag pointer'ın o sırada göstermiş olduğu değer sıradaki dolu gözü gösteriyor. Dolayısıyla o göstermiş olduğu dolu gözdeki değeri çekiyoruz. Daha sonrasında Stag pointer 1 artıyor.
+
+468
+02:01:03,412 --> 02:01:17,292
+Yığının çalışma ve kontrol mantığında bu şekilde gerçekleşiyor. Yine bizim tipik olarak bir mikro işlemci sistemimizde desteklemesini isteyeceğimiz komut grubu aritmetik komutlar olarak karşımıza çıkabilir.
+
+469
+02:01:18,515 --> 02:01:44,996
+Örneğin, temel olarak bir inkrement komutu veya dikrement komutuna ihtiyaç duyabiliriz. Bunun, add ve subtract komutundan ayrı olarak gerçekleşmesini isteyebiliriz. Çünkü, inkrement komutu bir birimlik bir artış sağlayacağı için, belki o ALU'nun özel bir komut bloğuyla çalıştırılması sonucunda veyahut da basit bir kontrol algoritmasıyla hızlı bir şekilde yürütülemeyecek bir komut grubu olarak elde edilebilir.
+
+470
+02:01:46,515 --> 02:01:52,796
+Alternatif bunu add operand 1, 1 olarak da vermek. Her zaman için bu da mümkün ama.
+
+471
+02:01:53,416 --> 02:02:01,096
+İnkrement ve dikrement komutlarını add sapraktan ayrı bir şekilde vermek çok sıklıkla karşılaşılan senaryolardan birisi.
+
+472
+02:02:01,916 --> 02:02:06,435
+Dolayısıyla increment komutumuz ilgili operandı bir arttıran, dikrement bir azaltan komut.
+
+473
+02:02:06,435 --> 02:02:12,975
+Add komutu iki adet operand alıyor temelde ve bu iki operandı toplayarak işlem sonucunu.
+
+474
+02:02:13,408 --> 02:02:29,408
+Eğer iki operantlı bir mimari ise ilk operanda atıyor. Üç operantlı bir mimari ise ilk operandımız add r1, r2, r3 diye bir komut veriyorsak MIPS'de olduğu gibi. Bu durumda da birinci operandımız kaynağı belirlemiş oluyor.
+
+475
+02:02:41,140 --> 02:02:43,260
+Bu operantları dikkate alıyordu.
+
+476
+02:02:44,260 --> 02:02:50,939
+ADD işlemi sonucunda işaretsiz sayı toplaması sonucunda oluşacak taşmayı bir kere bitiyle ifade edebiliyordu.
+
+477
+02:02:50,939 --> 02:03:01,800
+Dolayısıyla örneğin sekit bitik bir mimaride çalışıyorsak, ADD komutunu çalıştırmışsak bu ADD komutu aslında 0 ile 255 arasındaki sonuçları döndürebilir taşma olmadan.
+
+478
+02:03:02,359 --> 02:03:08,939
+Eğer yürüttüğümüz toplama işlemi sonucunda 255'in ilerisinde bir değer üretiyorsa bu durumda...
+
+479
+02:03:09,140 --> 02:03:20,640
+elde ettiğimiz sonuçta bir taşma olup olmadığını, yani çıkan işaretsiz toplam sonucunun 0.255 arasına sığıp sığmadığını Keribit'ine bakarak anlayabiliriz.
+
+480
+02:03:20,779 --> 02:03:27,619
+Bu durumda dönüp şunu söyleyeceğiz. İşaretsiz sayı toplamalarında Keribit'i taşmayı belirtir.
+
+481
+02:03:28,619 --> 02:03:30,480
+Çıkartma işleminde ise
+
+482
+02:03:31,091 --> 02:03:39,891
+İşaretli sayılar üzerinden işlem yapıyor olacağız. Örneğin 8'lik mimaride, eksi 128 ile 127 arasındaki değerlerini ifade edebiliriz.
+
+483
+02:03:41,431 --> 02:03:55,431
+Yapmış olduğumuz çıkartma işlemi bu renç dışında bir değerle tekabül ediyorsa, işaretli sayı taşmasını da overflow bayrağı üzerinden takip ediyor, kontrol ediyor olacağız.
+
+484
+02:03:56,275 --> 02:04:05,175
+Yine çarpma işlemi ve bölme işlemi için bunların işaretsiz sayı ve işaretli sayı versiyonlarını tanımlayabiliriz.
+
+485
+02:04:05,255 --> 02:04:10,655
+Verilen operantlar üzerinden çarpma bölme işlemlerini gerçekleştirip işlem sonucunu döndürüyor.
+
+486
+02:04:11,395 --> 02:04:16,195
+Bununla birlikte çok sıklıkla karşılaşabileceğimiz komutlardan birisi Edward Carry komutu.
+
+487
+02:04:16,627 --> 02:04:32,727
+Edwitt-Cary komutu temelde örneğin bizim geliştireceğimiz mimar 8 bitlik bir donanımsal desteğe sahip olsa bile yazılım tarafında kütüphanelerle 16 bitlik toplama çıkartma işlemlerini yapabileceğimiz bir mantık oluşturabiliriz.
+
+488
+02:04:33,167 --> 02:04:44,587
+Bunu oluşturabilmek için en önemli ihtiyaçlardan birisi de 3 kanunlamlı 8 bitin donanımsal toplama sonucunda oluşan değeri bir yüksek anlamlı 8 bite aktarabileceğimiz bir instruction cycle.
+
+489
+02:04:44,627 --> 02:04:56,107
+süresine sahip bir komut. O da Edwitt-Cary komutu. Temelde yaptığı şey, Cary bayrağını iki operandı birlikte toplayarak üç tane değeri toplayıp işlem sonucu döndürmesi.
+
+490
+02:04:56,107 --> 02:05:05,103
+Aynı şeyi Subtract with Barrow işlemiyle de tanımlayabilir. Bu da çıkartma işlemini.
+
+491
+02:05:05,104 --> 02:05:14,463
+Yine örneğin 8 bitlik çıkartma işlemlerini bir kütbane vasıtasıyla 16 bitlik bir tanıma ulaştırabileceğimiz bir senaryoyu tanımlayabilir.
+
+492
+02:05:15,484 --> 02:05:22,604
+Negate işlemi ne değinmek istiyorum bu noktada? Negate işlemi de tek operant alan bir komut.
+
+493
+02:05:22,604 --> 02:05:32,444
+Vermiş olduğumuz girdiği tuz komplement karşılığını üretip aynı operantta saklayan bir yaz maç olarak karşımıza çıkıyor.
+
+494
+02:05:33,300 --> 02:05:41,140
+Bununla birlikte bizim yine ihtiyaç duyabileceğimiz komut setlerinden birisi lojik ve bit işlem komutları.
+
+495
+02:05:41,860 --> 02:05:47,659
+Şimdi çeşitli aritmetik komutlar toplama çıkartma yapacağımız senaryolar için aritmetik komutlar lazım.
+
+496
+02:05:48,239 --> 02:05:55,840
+Ama lojik ve bit işlem komutları da örneğin lojik seviyede gerçekleştireceğimiz bir takım kontroller varsa örneğin.
+
+497
+02:05:56,180 --> 02:06:17,600
+Bu şu olabilir. Bir operant içerisindeki birilerin sayısını saymak istiyoruz. Veyahut da trailing zero var. Yani tuttuğumuz sayının sonunda sıfırlar var ama ilk bir kaçıncı basamakta başlıyor gibi işlemleri takip edebilmek adına bu komutlara ihtiyacımız var.
+
+498
+02:06:20,627 --> 02:06:35,627
+Bu komutlara bakacak olursak bunlardan birincisi ilgili operandı sıfırlayan clear komutu, ilgili operandı birleyen set komutu, ilgili operandın bire göre tümleyeni alan komplement komutu NAT olarak kısaltması verilebilir.
+
+499
+02:06:36,268 --> 02:06:41,667
+Bitwise AND, Bitwise OR, Bitwise XOR gibi komutlar yine gerçekleştirebilecek komutlar.
+
+500
+02:06:42,467 --> 02:06:47,347
+Bu arada şunu bir uygulamamız lazım. Mesela C dilinde yazmış olduğumuz IF.
+
+501
+02:06:47,923 --> 02:06:58,783
+İşte A eşit eşit eşit B gibi bir komut ile if
+
+502
+02:07:02,579 --> 02:07:15,280
+A, AND, B şeklinde yürüteceğimiz bir komut birbirlerinden farklı. Bu işlem sonucu bitwise AND işlemini AND-AND diye yazmam lazım.
+
+503
+02:07:15,280 --> 02:07:29,440
+Öncelikle, AND-AND işlemine tekabül edecek veya şuradaki senaryoyla sadece AND komutu AND işareti ampersantla bırakırsak, bu da logical AND'e karşılık geliştir. Şurası bitwise.
+
+504
+02:07:33,043 --> 02:07:34,063
+Burası logical.
+
+505
+02:07:36,323 --> 02:07:41,463
+Baktığımız zaman donanım tarafında bunların bitwise versiyonları doğrudan destekleniyor.
+
+506
+02:07:42,103 --> 02:07:44,583
+Logical taraf ayrı bir yapı.
+
+507
+02:07:44,963 --> 02:07:46,063
+Onu da ifade etmiş olalım.
+
+508
+02:07:47,443 --> 02:07:50,903
+Yine özel olarak bayraklarla ilgili komutlarımız olabilir.
+
+509
+02:07:51,063 --> 02:07:52,463
+8086'da da vardı.
+
+510
+02:07:53,123 --> 02:08:00,143
+Mesela sadece carry flay'ini sıfırlayan, carry flay'ini bir yapan ve carry flay'ini toggle ettiren komutlarımız olabilir.
+
+511
+02:08:00,819 --> 02:08:21,859
+Bunları da şu amaçla kullanabiliriz. Çeşitli seri veri iletişimlerinde veyahut da sayılıyı döndürmek gibi yani anlam sırasını döndürmek istediğimiz durumlar varsa o gibi durumlarda komplement veya keri üzerinden işlemlere ihtiyaç duyabiliriz tanımlı olarak.
+
+512
+02:08:22,739 --> 02:08:46,300
+Bununla birlikte yine ihtiyaç duyabileceğimiz komut gruplarından birisi de döndürme ve öteleme komutları olarak karşımıza çıkıyor. Döndürme ve öteleme komutlarının temel farkı şu rotate ve shift işlemlerine bakacak olursanız. Rotate işleminde çıkan bit boş kalan göze tekrar besleniyor. Rotate işlemi bu şekilde.
+
+513
+02:08:47,283 --> 02:09:04,024
+Shift işlemlerinde ise ötelenen bit sonucu itibariyle boş kalan yere dışarıdan bir besleme yapılıyor. Çıkan bit tekrar döndürülmüyor.
+
+514
+02:09:05,024 --> 02:09:12,623
+Shift işlemlerine baktığımızda shift işlemlerini lojik ve aritmetik olarak iki başlık altında ele alabiliriz.
+
+515
+02:09:13,300 --> 02:09:21,100
+Lojik işlemlerde sağ veya sola öteleme için örneğin sağ ötelemede
+
+516
+02:09:21,587 --> 02:09:49,587
+En düşük anlamlı bitimiz kere bitine aktarılıyor. İkinci anlam sırasındaki bitimiz en düşük anlamlıya. En yüksek anlamlı bitimiz bir düşük anlamlı basama aktarılıyor. Şu anda burası boş. Boş olan kısımda dışarıdan sıfır ile besleniyor. Sağa doğru öteleme mantığı bu şekilde. Aynı şey sola öteleme içinde geçerli. Sol ötelemede en yüksek anlamlı bit kereye geldi. Bir düşük anlamlısı en yüksek anlamlısına taşındı. En düşük anlamlı bitimiz ikincisi.
+
+517
+02:09:49,587 --> 02:09:56,127
+Sıradaki anlam bitine taşındı. Burası boş kaldı. Boş kalan yere de dışarıdan sıfır beslenmiş oldu.
+
+518
+02:09:56,607 --> 02:10:01,427
+Lojik shift işlemi sağa ve sola öteleme işlemi bu şekilde tanımlanabiliyor.
+
+519
+02:10:02,107 --> 02:10:09,287
+Aritmetik shift'e bakacak olursak, aritmetik shift'te ise özellikle aritmetik shift right için bu geçerli.
+
+520
+02:10:09,367 --> 02:10:11,344
+Aritmetik shift left ile...
+
+521
+02:10:11,344 --> 02:10:35,203
+Logical Shift Left aynı şekilde çalışıyor. Burada yapabileceğimiz bir şey yok. Ama Shift Aritmetik Right işleminde amacımız sayının işaretini koruma. Sayının işaretini korumak da şu şekilde sağlanıyor. Örneğin sayının işaret biti sıfırsa sağa doğru öteleme yaptırdığımız en düşkandan bu kere geldi. Her birisi bir basamak kaydı. İşaret bitimiz sıfırdı. Sıfır buraya kaydı.
+
+522
+02:10:37,268 --> 02:10:53,847
+Orijinal en yüksek anlamlı bitimiz neyse onunla feed ettik ve sayımızın en yüksek anlamlı biti 0, 0 oldu. Yani bu aritmetik olarak işaretini koruyarak bir pozitif sayıyı ikiye bölmek anlamına geldi. Velev ki en yüksek anlamlı bitimiz 1 olmuş olsaydı.
+
+523
+02:10:54,224 --> 02:11:18,524
+En düşük anlamlı bit kediye geldi. Anlam sırasına göre kaydırdık. En yüksek anlamlı bitimiz bir anlam sırası kaydı. Burası boş. Buraya sayının orijinaldeki işaret biti gelecek. Yani bir ile bunu besledik. Sayımız şu anda bir bir ile en yüksek iki anlamlı biti işaretlenmiş oldu. Bunun anlamı da bu sayıyı negatif olarak negatif sayıyı ikiye bölmek oldu. Örnek vermek gerekirse arkadaşlar.
+
+524
+02:11:19,699 --> 02:11:33,720
+Örneğin sayımız şu olsun. 4 bitlik bir mimaride çalışalım. Sayımız şu olsun. Bu sayı kaça tekabül ediyor? İşaretli tuz komplement mantıkla çalışıyor olan 4 bit. Bu sayı kaça karşılıklıdır?
+
+525
+02:11:42,195 --> 02:12:09,676
+Bu değerimiz eksi 2'ye karşılık geliyor. Doğru. Şimdi bunda shift aritmetik write işlemini yapalım. Yani en düşük anlamlı bit yitirildi. Bu bir en düşük anlamlıya geçti. Buradaki birimiz sıraya geçti. Buradaki birimiz üçüncü anlam sırasına geçti. Dördüncü bitimizde orijinal işaret bitimiz neydi ise o beslenecek ve elde ettiğimiz sayı bu oldu. Şimdi bu sayının karşılığı nedir? Plus komponel işareti olarak baktığımızda.
+
+526
+02:12:10,355 --> 02:12:12,336
+Bu da neye karşılık geliyor?
+
+527
+02:12:14,695 --> 02:12:15,796
+Eksi 1 hocam.
+
+528
+02:12:16,475 --> 02:12:19,016
+Evet, bu da eksi 1'e karşılık geliyor. Eksi 2 idi.
+
+529
+02:12:19,796 --> 02:12:25,256
+Dolayısıyla sağa doğru ötelemek sayıyı 2'ye bölmeye karşılık geliyor.
+
+530
+02:12:26,016 --> 02:12:31,895
+Dolayısıyla işaretinin korunduğunu da bu şekilde Shift-Aritmetik-Write ile bunu görmüş oluyoruz.
+
+531
+02:12:32,895 --> 02:12:33,695
+Dolayısıyla
+
+532
+02:12:34,195 --> 02:12:58,395
+Şimdi overflow veya taşma işlemini düşünecek olursak aritmetik shift write işlemlerinde bir overflow olma ihtimali yok değil mi? Çünkü her zaman için işaret bitimiz korunuyor. Bu döndürme ve ötelemelerde overflow taşma ne zaman oluyor? Buradaki taşma da şöyle oluyor. Sayımız pozitif bir sayıydı. Döndürdük öteledik bir şey yaptık. Sonuç negatif çıktı.
+
+533
+02:12:58,612 --> 02:13:16,452
+O zaman bu taşma demek. Benzer şekilde negatif bir sayımız vardı. Döndürdük, öteledik, bir şey yaptık, sayı sonuç pozitif çıktı. Yine taşma var. Ama sonuç itibariyle Shift Aritmetik Right mantığını düşündüğümüzde Shift Aritmetik Right'da taşma olmuyor arkadaşlar. Çünkü işaret bitimizi her zaman koruyoruz.
+
+534
+02:13:16,452 --> 02:13:24,891
+Shift Logical, pardon Shift Aritmetik Left işlemine baktığımızda ise örneğin 0, 1 şeklinde bir gidişat olsun.
+
+535
+02:13:26,163 --> 02:13:46,083
+Bunun logical shift ile aynı olduğunu söylemiştik. 0 keliye taşındı. 1 en yükseklik anlamlı bite taşındı. Sayımız orijinalde pozitif bir sayıydı. Öteleme işlemi sonucunda negatif oldu. Dolayısıyla shift aritmetik, shift, logic, left işlemlerinde taşma olma ihtimali mevcut. Onu da not etmiş olalım.
+
+536
+02:13:46,515 --> 02:13:54,935
+Rotate işlemine baktığımızda, Rotate'lerde iki başlık altında, Cary kullanmayan ve Cary kullanan Rotate işlemleri olarak karşımıza çıkıyor.
+
+537
+02:13:55,775 --> 02:14:04,275
+Cary kullanan Rotate işlemleri, örneğin 8 bitlik bir yazmacımız varsa, Cary'i de 1 bitlik bir hafıza birimi olarak düşünelim.
+
+538
+02:14:04,795 --> 02:14:09,875
+Toplamda 9 bitlik veri üzerinde döndürüm yapıyor, sağ veya sola doğru.
+
+539
+02:14:10,387 --> 02:14:17,607
+Cere olmayan durumlar ise orijinal 8 bitir yazma üzerinde döndürme yapıyor. Ama çıkan değerler Cere'ye de kopyalanıyor.
+
+540
+02:14:18,367 --> 02:14:23,687
+Cereli ve Ceresiz Rotate işlemlerinde temelde bu çerçevede tanımlamış oluyoruz.
+
+541
+02:14:25,687 --> 02:14:29,067
+Float sayı gösterimleriyle ilgili kısmı geçiyorum.
+
+542
+02:14:31,207 --> 02:14:32,887
+Kaç slide'ımız kalmış bu arada?
+
+543
+02:14:38,420 --> 02:14:59,860
+Bir başka komut grubumuz arkadaşlar program kontrol komutları. Bunlar temelde programımızı program yapan şeyler bunlar. Yani bir şeyi kontrol edeceğiz, bir durumu kontrol edeceğiz. Ona göre aksiyon alacağız. Programı program yapan şeyler bunlar. Yoksa sıralı akış şeklinde bir algoritmayı koşturmamız mümkün değil.
+
+544
+02:15:00,900 --> 02:15:05,800
+Karşılaştığımız komutlardan ilki arkadaşlar koşuldu dallanma komutu, branş komutu.
+
+545
+02:15:06,292 --> 02:15:30,172
+Branch komutu çeşitli durumları kontrol ederek bir dallanmanın gerçekleşip gerçekleşmeyeceğini belirleyen komut. Kontrol edebileceğimiz şeyler, örneğin bir takım işaretli ve işaretsiz işlemler sonucunda bir takım karşılaştırmalar yapmamız lazım. Bu karşılaştırmalara göre dallanma yürütmemiz lazım.
+
+546
+02:15:31,636 --> 02:15:44,176
+Bir branş komutunu yürütmeden önce mutlaka bir karşılaştırma komutunun gerçekleştirilmesi gerekiyor. Bu karşılaştırma komutu büyüklük, küçüklük, eşitlik,
+
+547
+02:15:44,595 --> 02:16:01,755
+Büyük eşit, küçük eşit gibi senaryoları içeriyorsa burada yürüteceğimiz aritmetik bir karşılaştırma olduğu için compare komutunu kullanıyor olacağız. Compare komutu aslında çıkartma işlemini, işaretli sayı çıkartma işlemini yürütüyor.
+
+548
+02:16:01,755 --> 02:16:12,595
+Fakat işaretli sayı çıkartmasından yani subtract komutundan farklı olarak baylakları etkiliyor. Sadece işlem sonucu bir.
+
+549
+02:16:12,595 --> 02:16:17,015
+Bir yerde saklandır. Yani şunu da diyelim aslında.
+
+550
+02:16:18,387 --> 02:16:41,247
+Bir branch komutunu yürütmeden önce bir aritmetik karşılaştırma yapacaksam compare de kullanabilirim, subtract komutu da kullanabilirim. İkisi de aynı sonucu üretiyor netice itibariyle branch için. Ama yapmış olduğum bu karşılaştırma işlemi sonucu subtract komutunda birinci operanda bozuyor ama compare komutunda herhangi bir operanda bozulmuyor.
+
+551
+02:16:41,247 --> 02:16:46,247
+Dolayısıyla sadece değerleri birbiriyle görece olarak karşılaştırmak istiyorsam...
+
+552
+02:16:46,388 --> 02:16:54,508
+Compare komutu anlamlı ama zaten o çıkartma işlemini yapıp da bir işlem yapacaksan o zaman subtract komutunu kullanmak daha anlamlı oluyor.
+
+553
+02:16:55,148 --> 02:17:06,968
+Veya yapacağımız işlem bit bazında bir kontrolse. Yani mesela bir yazmacın, R1 yazmacının işte 7 numaralı biti 1 mi 0 mı?
+
+554
+02:17:11,379 --> 02:17:19,723
+O zaman test komutunu kullanacağız. Test komutu da temelde lojik komutlardan bitwise end işlemini yerine getiriyoruz.
+
+555
+02:17:20,180 --> 02:17:43,800
+Bitwise end işleminin yerine getirerek onu gerçekleştirdi. Yine test komutunun end komutundan farkı şu. Test komutunu yürüttüğümüzde bayraklar değişiyor, uygun şekilde değişiyor ama işlem sonucu bir yerde saklanmıyor. End işlemini yürüttüğümüzde 80-86'da düşünün. Birinci operandın değeri uygun şekilde bu Bitwise end işleminin sonucuna göre güncellenmiş oluyordu.
+
+556
+02:17:46,420 --> 02:17:49,420
+Mesela bu noktada şeyi sormak istesem.
+
+557
+02:17:51,619 --> 02:17:54,840
+A şöyle bir akış yazalım.
+
+558
+02:17:54,840 --> 02:17:56,399
+If A büyük B.
+
+559
+02:18:11,252 --> 02:18:15,031
+Böyle bir şey yazmak istesek karşılaştırmayı nasıl yapacağız?
+
+560
+02:18:15,031 --> 02:18:17,112
+İşte compare komutunu kullanacağız.
+
+561
+02:18:18,031 --> 02:18:22,092
+Compare komutu. Daha sonra branch hangi şekilde yazacağız?
+
+562
+02:18:22,231 --> 02:18:24,231
+Çıkartma işlemini A'dan B'yi çıkarttı.
+
+563
+02:18:24,752 --> 02:18:26,612
+Branch komutunu da şu şekilde kullanacağız.
+
+564
+02:18:26,731 --> 02:18:32,112
+Branch if greater olarak tanımlayacağız.
+
+565
+02:18:33,523 --> 02:18:46,283
+Şimdi bu branch if greater komutu çeşitli bayraklara bakıyor. Baktığı bayraklar mesela bu işlem sonucunda keri bayrağının sıfır olmasına bakıyor olabilir.
+
+566
+02:18:46,463 --> 02:18:52,984
+Keri bayrağı sıfırsa F fonksiyonunu yürütecek. Tamam mı? Keri bayrağı sıfırsa F fonksiyonunu yürütecek.
+
+567
+02:19:00,304 --> 02:19:10,304
+Başka if'lerde olabilir. Mesela if not less or equal da aynı komuta bakıyor olabilir.
+
+568
+02:19:10,664 --> 02:19:17,564
+Not greater or equal da aynı bayrağa ve aynı şekilde bakıyor olabilir. Biz bunlardan hangisini kullanacağız?
+
+569
+02:19:17,564 --> 02:19:26,744
+Pratik olarak, karşılaştırma şartı olarak ne yazdıysak ona dair mutlaka bir if var. O if'i kullanırsak kodun okunabilirliği daha yükselir.
+
+570
+02:19:26,995 --> 02:19:52,515
+Yani ben buraya şey de yazabilirdim. Branch if greater or, branch if greater less, greater if below or equal da yazabilirdim. Branch if not, great, branch if not, below or equal ile branch if above aynı şey. Komut olarak aynı şey. İkisi de AB'den büyükseyi kontrol ediyor.
+
+571
+02:19:53,012 --> 02:20:08,572
+İkisi de aynı bayraklara bakıyor ama ben buraya not blower equal yazdığımda neyi kontrol ediyordum diye sorabilirim. Akışım neyi gerektiriyorsa, neyi şekilde yazmışsam onun birebir if kontrolü vardır. Onu kullanman kod okunurluğunu arttırır.
+
+572
+02:20:15,956 --> 02:20:38,695
+5, 6, 7, 8. Bunun ilgili biti 0 mı 1 mi diye bakmak istiyoruz. Şu bitinin 0 olduğu durumda bir dallanma yapmak istiyoruz. Yani if A'nın 0, 1, 2, 3 numaralı biti eşit eşit 1 ise F fonksiyonunu çalıştıracağım.
+
+573
+02:20:41,299 --> 02:21:02,420
+G fonksiyonu çalıştıracağım. Bunu nasıl kontrol edebiliriz? Bu durumda test komutunu kullanacağız. Buranın şu biti maskeleyebilmek için end işlemi yaptığımıza göre ilgilenmediğimiz bitlerin sıfır olduğu, ilgilendiğimiz bitin bir olduğu bir maske uygulayacağız.
+
+574
+02:21:04,884 --> 02:21:09,023
+Dolayısıyla bizim yürüteceğimiz end işlemi şu oluyor. Pardon test işlemi.
+
+575
+02:21:12,123 --> 02:21:24,443
+Test bu A diye bir yazmacımız olsun. A ile sabit değerimiz ne şu anda? 0, 8, H. 0, 8, H'ı teste soktuk. Bitwise end işlemini yapıyor.
+
+576
+02:21:25,563 --> 02:21:32,083
+Neydi biz? İlgili bitimiz birse davranacaktı. O zaman branch, BR'ymiş.
+
+577
+02:21:33,172 --> 02:21:52,051
+BR işlem sonucu, bu end işlemi sonucu 0 ise ilgilendiğimiz bit 0 demektir. 1 ise o zaman ilgilendiğimiz bit 1 demektir. Yani 0 değilse o zaman branch not 0 L1 diyeceğiz. Dolayısıyla bu L1'de F fonksiyonumuz olacak.
+
+578
+02:21:53,511 --> 02:21:58,031
+İlgili bitim 1 olma durumunu da temel olarak bu şekilde anlıyor olacağız.
+
+579
+02:21:58,804 --> 02:22:24,623
+Bunun dışında bu koşullu dallanma komutu dışında koşulsüz dallanma komutumuz da var. Jump. Jump'ı özellikle döngülerde kullanıyoruz. Şöyle ki, döngünün başında durum kontrolünü bir branşla sağladık. Daha sonrasında ise döngünün son adımında doğrudan tekrar jump komutu ile koşullu dallanmaya tekrar gidiyoruz.
+
+580
+02:22:25,396 --> 02:22:27,236
+Bu şekilde döngümüzü sağlayabiliyor.
+
+581
+02:22:29,576 --> 02:22:38,396
+Bunun dışında fonksiyon çağıran komutlarımız var. Call ve Return gibi komutlarımız var. Bunlar da modüler programlama çerçevesinde kullandığımız modüler.
+
+582
+02:22:39,396 --> 02:22:50,336
+Örneğin, yazacağımız fonksiyonları modüler olarak, birer fonksiyon olarak yazmak hem maintenance açısından hem de yönetilebilirlik açısından bize avantaj sağlıyor.
+
+583
+02:22:50,816 --> 02:22:58,976
+Bu durumda fonksiyonlar şeklinde modüllerize etmiş olduğumuz kod parçacıklarımızı yeniden kullanabilir hale geliyoruz.
+
+584
+02:22:59,347 --> 02:23:05,567
+Mevcut bir kütüphane veya mevcut bir fonksiyonu tekrar çağırmak için call fonksiyonunu kullanıyoruz.
+
+585
+02:23:05,708 --> 02:23:10,927
+Call fonksiyonu temelde bizim programımız belirli bir hafıza bölgesinde yerleşik olmakla birlikte.
+
+586
+02:23:11,128 --> 02:23:14,708
+Çağıracağımız fonksiyon başka bir adres bölgesinde yerleşik olabilir.
+
+587
+02:23:14,847 --> 02:23:20,488
+Dolayısıyla mevcutta bulunduğumuz noktayı unutmadan ilgili fonksiyona gidip belki parametre aktarıp,
+
+588
+02:23:20,488 --> 02:23:25,067
+ilgili fonksiyonu parametrelerle yürütüp tekrar kaldığımız yere geri dönmemiz gerekiyor.
+
+589
+02:23:27,347 --> 02:23:41,668
+İki temel özellik var. Bunlardan birincisi, mevcutta bulunduğumuz program gözünün adres değerinin bir yerde saklanması gerekiyor. İkincisi, program counter'ın gideceğimiz fonksiyonu gösterecek şekilde yücelenmesi gerekiyor.
+
+590
+02:23:47,987 --> 02:23:52,827
+Bu hafızada saklamış olduğumuz geri dönüş adres değerlerinin geri yüklenmesini tetikliyor.
+
+591
+02:23:53,527 --> 02:24:02,487
+Ve aynı zamanda da program counter'ın dolayısıyla kaldığımız ana programda kaldığımız yere dönmesini sağlamış oluyor.
+
+592
+02:24:02,587 --> 02:24:05,807
+Dolayısıyla call ve return birlikte fonksiyon gösteriyor.
+
+593
+02:24:06,227 --> 02:24:30,628
+Eğer kod akışı içerisinde bir noktaya jump ile gitmişse geri kaldığımız yere tekrar jump ile dönebiliriz. Fakat kod akışı içerisinde call ile bir fonksiyon çağırmışsak onun dönüşünü mutlaka return ile yapmalıyız. Çünkü call kendi içerisinde az önce söylediğimiz gibi geri dönüş değerlerinin bir yerde saklanması ve geri dönüş değerlerinin tekrar çağrılması süreçlerini bünyesinde barındırıyor diyebiliriz.
+
+594
+02:24:32,115 --> 02:24:35,536
+Dolayısıyla temel program akış kontrollerimiz bu şekilde.
+
+595
+02:24:36,256 --> 02:24:41,695
+Şimdi koşulu dallanma komutları ve bunlara ilişkin olarak kontrol edilen bayraklara bakabiliriz.
+
+596
+02:24:43,028 --> 02:25:02,688
+Buradaki koşullu dallanma durumlarını iki seviyede inceleyeceğiz öncelikli olarak. Basit dallanmalar ve karmaşık dallanmalar olarak inceleyeceğiz. Karmaşık dallanmaları da yine ikiye ayıracağız. İşaretsiz sayı işlemleri sonucu ve işaretsiz sayı işlemleri sonucundaki durumları ele almaya çalışacağız.
+
+597
+02:25:10,639 --> 02:25:36,959
+Aksiyon alan komutlar. Örneğin, branch if zero, BZ minimoni ile gösterilmiş, zero bayrağı birse dallanmayı gerçekleştiriyor. Branch if not zero, yine zero bayrağı bakıyor, zero bayrağı sıfırsa dallanma gerçekleştiriyor. Branch if keri, keri bayrağına bakıyor, keri bayrağı birse dallanıyor. Branch if no keri veya BNC olarak kısaltılmış, keri bayrağı sıfırsa dallanıyor.
+
+598
+02:25:38,579 --> 02:25:57,380
+Branch if negatif veya branch if minus olarak geçmiş. Bu ise işaret bitimize veya işaret bayrağımıza göre dallanmış. O da neydi? Bizim ilgilendiğimiz bir yazmaç var. O yazmacın en yüksek anlamlı bitiyle ilgili değerlendirme yapıyor demek ki.
+
+599
+02:25:57,380 --> 02:26:05,719
+Eğer işaret bitimiz bir ise dallanıyormuş. Branch if plus veya branch not negatif olarak kısaltabileceğimiz komut.
+
+600
+02:26:06,131 --> 02:26:26,311
+İşaret bitine bakıyor. Negative bit. Sıfırsa dallanıyor. Bu da aynı zamanda sayıda pozitif olduğu anlamına geliyor. Branch if overflow. Bir overflow bayrağımız var. Overflow bayrağı ne demiştik? Taşma bayrağı, overflow bayrağı. Bu işaretli sayılarda yapmış olduğumuz işlem sonucunu elde ettiğimiz değerin
+
+601
+02:26:28,084 --> 02:26:40,604
+İlgili bit genişliğindeki mimariye sığmadığını gösteriyor. Yani 8 bitlik işaretli sayı, eksi 128, altı 127 aralığına sığmayan bir sonuç üretmişsek overflow bayrağı bir oluyor.
+
+602
+02:26:40,604 --> 02:26:51,304
+Yine keri bayrağında ne gibi düşünelim demiştik. Keri bayrağında işaretsiz sayılardaki işlem sonucunda bir taşmayı işaret ettiğini düşünebiliriz demiştik.
+
+603
+02:26:51,924 --> 02:27:19,463
+Dolayısıyla branch if overflow overflow bayrağına bakıyor. Bir ise dallanıyor. Branch if no overflow veya branch not overflow da overflow bayrağı sıfırsa dallanan komut olarak karşımıza çıkıyor. Bunlar basit komutlardır. Şimdi karmaşık komutların bir dalını inceliyor olacağız. Onlar da işaretsiz sayı işlemleri sonucunda oluşabilecek dallanmalara ilişkin komut grubu.
+
+604
+02:27:19,840 --> 02:27:36,719
+Şimdi bir kere işaretli sayı işlemlerini add komutuyla işaretsiz sayı işlemlerini hani subtract komutuyla yapıyoruz demiştik. Bu noktada da yine netice itibariyle oluşan sonuç compare komutu ve subtract kullanılıyor.
+
+605
+02:27:36,719 --> 02:27:45,579
+Bu subtract komutundaki sonucu, oluşan sonucu biz işaretsiz sayı olarak mı değerlendireceğiz yoksa işaretli sayı olarak mı değerlendireceğiz noktasında da.
+
+606
+02:27:45,871 --> 02:27:50,912
+İşaretsiz sayı komutlarıyla işaretli sayı komutlarını birbirinden ayırmamız gerekiyor.
+
+607
+02:27:51,511 --> 02:28:04,291
+Bu noktada işaretsiz sayılar için birbirlerine görece büyüklük ve küçüklüğü above ve below kelimelerini ifade ediyoruz ve bunlara ilişkin komutlarda branch if above veya branch if below şeklinde karşımıza çıkıyor.
+
+608
+02:28:05,991 --> 02:28:12,991
+İşaretsiz sayılardaki büyüklük küçüklüğü ise greater or less, greater veya less komutlarıyla
+
+609
+02:28:13,780 --> 02:28:24,079
+Tanımlamış oluyoruz. Bu önemli. Elde ettiğimiz sonuç tek. Çünkü subtract komutu kullanıyoruz. Subtract komutunu kullandıktan sonra elde ettiğimiz sonucu ve bayrakları
+
+610
+02:28:24,479 --> 02:28:47,759
+Hangi bayraklara bakacağımızı nasıl belirleyeceğimiz? Bu işaretli sayı olarak değerlendireceksek bakacağımız bayraklar farklı. İşaretsiz sayı olarak değerlendireceksek bakacağımız bayraklar farklı. Dolayısıyla bunları birbirinden ayırt etmek adına işaretsiz sayı komutlarında greater ve less ibareleri kullanılıyor. İşaretsiz sayı komutlarında ise above veya below kelimeleri kullanılıyor.
+
+611
+02:28:47,759 --> 02:28:52,020
+Şimdi biz bir işlem yapmış olalım. Yani şöyle bir komut yürütmüş olalım.
+
+612
+02:28:52,531 --> 02:29:14,711
+Compare A, B diye bir komut yürütelim. Daha sonra da biz şunu istiyoruz. Noktalı virgül koyalım komut. A büyüktür, B ise dallan yapmak istiyoruz. Dallan. Yani yürüteceğimiz komut branch if above L1 etiketine gideceğiz.
+
+613
+02:29:15,219 --> 02:29:32,579
+A sayısı B sayısından büyükse L1 etiketine gir. Yani bu branş EBOV komutu hangi durumda true üretir, hangi durumda L1 etiketine dallanır ona bakacağız. Bunlar eğer işaretsiz sayılarsa EBOV komutunu kullandığımıza göre işaretsiz sayılar.
+
+614
+02:29:33,259 --> 02:29:39,879
+AB'den büyük ise ve sadece büyükken dallanıyorum, eşitken değil.
+
+615
+02:29:40,564 --> 02:30:00,000
+A'nın B'den büyük olma durumunda A-B işlemini yaptığımızda arkadaşlar ne olacak? Herhangi bir barov kere oluşmaz değil mi? Kere bayrağımız kesinlikle sıfır çıkar. Eğer ki 0 bayrağımız 1 çıkıyorsa bunun anlamı ne? 0 bayrağı 1 çıkıyorsa sayılar birbirine eşit dememiz.
+
+616
+02:30:00,435 --> 02:30:08,255
+Değil mi? Çıkartma işlemi sonucunda işlem sıfırsa zero bir flag bir olur ve bu sayılarımızın birbirine eşit olduğu anlamı yok.
+
+617
+02:30:08,315 --> 02:30:16,435
+Ama ben sadece büyükken dallanmak istiyorum. Dolayısıyla Z'nin de bire eşit olmaması lazım. Yani Z'nin de sıfır olması gerekir.
+
+618
+02:30:19,075 --> 02:30:22,315
+Hem Kerinin hem de zero flag'in sıfır olma durumunu.
+
+619
+02:30:22,719 --> 02:30:35,819
+Lojik olarak CORZ0 kontrolüyle sağlayabilirim. Dolayısıyla ben Compare A, B komutunu yürüttükten sonra elde etmiş olduğum bayraklarda yani bir ALU birimim var.
+
+620
+02:30:35,819 --> 02:30:50,299
+Çıkartma işlemini yaptı. İlgili bayraklarda değerler üretti. Ben eğer ki gidip carry bayrağı ile zero file'yi orlarsam çıkan sonuç 0 ise branch above komutu L1'e dallanacak. Dallanması gerekiyor.
+
+621
+02:30:51,252 --> 02:31:17,531
+Şeye bakalım şimdi, bir sonrakine bakalım. Bu sefer branch above or equal'u yürüteceğiz. Yani eşit ise branch above or equal. Yani hangi durumda dallanabilir? AB'den büyükse dallansın veya AB'ye eşitse dallansın. Yani ne olabilir? Ya keri sıfır olabilir veya zirosu bir olabilir.
+
+622
+02:31:19,603 --> 02:31:44,403
+0'su 0'da olabilir. O da geçerli bir durum. Yani Cary'nin 0 olduğu durumda 0'su 1'de olabilir. Cary'nin 0 olduğu durumda 0'su 0'da olabilir. Bunu genelleyecek olursak Cary'nin 0 olması yeterli. Dolayısıyla ben A ile B'yi çıkarttım birbirinden. Cary file'ye baktım. Eğer Cary file'im 0'sa bu durumda AB'den büyük eşittir demek olur.
+
+623
+02:31:45,268 --> 02:31:54,227
+AB'den büyük eşitmiş demek oluyor. Buna göre AB'den büyük eşittir dallanma koşulun true sonuç üretiyor ve ilgili etikete dallanıyor.
+
+624
+02:31:54,747 --> 02:32:08,727
+Şimdi şeye bakalım, BLOV komutuna bakalım. Yine CMP A virgül B komutunu çalıştırdım. Bu temelde A-B işlemini yürüttü. Ben ne işliyorum?
+
+625
+02:32:10,995 --> 02:32:17,155
+B'den küçükse dallanmak istiyorum. Yani branch, if, below, L1.
+
+626
+02:32:18,067 --> 02:32:28,987
+AB'den küçükse L1 etiketine dallanmak istiyorum. Eğer AB'den küçük olsaydı arkadaşlar, çıkartma işlemi sonucunda mutlaka bir C değerim oluşurdu.
+
+627
+02:32:29,087 --> 02:32:36,768
+C değerim, yani bunu keri değil de barov olarak düşünelim bu aşamda. Yani çıkartma işlemi sonucunda bir elde oluşturan durum.
+
+628
+02:32:37,967 --> 02:32:45,527
+Yani keri toplamalarda elde, C bayda, fakat çıkartmalarda küçük sayı, büyük sayıdan çıktığında barov fonksiyonunu gösteriyor.
+
+629
+02:32:46,131 --> 02:32:58,671
+Bir keri durumu var. Zero filayının de sıfır olmasını istiyorum. Eşitlik durumunu istemiyorum. Dolayısıyla, blov durumunu bu şekilde ifade edebileceğiz.
+
+630
+02:33:07,924 --> 02:33:22,584
+1 olmamasını da sağlıyor. Niye? Eğer ki bu iki sayı birbirine eşit olmaş olsaydı, keri bayrağı zaten 1 çıkmazdı. Dolayısıyla keri bayrağının 1 çıkmasını yakaladığım an benim için yeterli. A'nın B'den küçük olmasını yakalamak için yeterli.
+
+631
+02:33:23,204 --> 02:33:32,644
+Küçük eşit durumuna bakalım. Küçük eşit durumuna baktığımızda ne istiyoruz yani? Küçük eşitlik. Branch, lower equal. İstiyorum.
+
+632
+02:33:34,164 --> 02:33:59,744
+A, B'den küçüktür çıkarttığımda kerisi 1 olur veya A, B'ye eşittir çıkarttığımda 0 bayrağım 1 olur ve keri bayrağım 0 olur. Dolayısıyla ya kerinin tek başına 1 olması yeterli veya 0'nun 1 iken kerinin 0 olması yeterli. Bunu toparlayacak olursak, keri ile 0'nun.
+
+633
+02:34:00,564 --> 02:34:05,504
+OR işlemi sonucu 1 ise AB'den küçük eşittir kesinlikle.
+
+634
+02:34:06,384 --> 02:34:09,904
+Eşitlik durumunu yakalamak için bakmamız gereken tek bayrak 0 bayrağı.
+
+635
+02:34:10,103 --> 02:34:15,443
+Eğer işlem sonucu 0 üretiyorsa, işlem sonucu 0 ise 0 bayrağı 1 oluyor zaten.
+
+636
+02:34:15,603 --> 02:34:17,024
+Dolayısıyla AB'ye eşittir.
+
+637
+02:34:17,544 --> 02:34:23,123
+0 bayrağı 0 üretmişse çıkartma işlem sonucunda AB'ye eşit değildir diyebiliriz.
+
+638
+02:34:27,028 --> 02:34:35,128
+Büyüklük, küçüklük, eşitlik ve bunların çeşitli karmalarının nasıl kontrol edileceğine ilişkin bir yaklaşım.
+
+639
+02:34:35,768 --> 02:34:41,227
+Peki, işaretli sayılarda ne olabilir? İşaretli sayılarda bir de taşma durumu gündemde gelecek.
+
+640
+02:34:42,308 --> 02:34:49,448
+Bu durumda da hatırlayacak olursanız, az önce de söylemiştik, büyüklük için greater, küçüklük için less kelimlerini kullanıyoruz.
+
+641
+02:34:51,572 --> 02:35:12,512
+AB'den büyük durumunu ele almak istersek hangi durumlarla karşılaşabiliriz? Mesela AB'den büyükse, AB büyük B durumunu incelerken, A büyük bir pozitif sayı olabilir, B küçük bir pozitif sayı olabilir. Senaryolardan birisi bu.
+
+642
+02:35:17,523 --> 02:35:33,004
+A'mız bir pozitif sayı olabilir ve hatta bu büyük bir pozitif sayı olabilir. B'miz çok küçük bir negatif sayı olabilir. Ve A'yı B'den çıkarttığımda dolayısıyla bu rencin dışına çıkan bir şey olabilir.
+
+643
+02:35:34,283 --> 02:35:39,523
+Başka senaryo. A'mız bir pozitif sayı olabilir. Büyük bir pozitif sayı.
+
+644
+02:35:40,051 --> 02:35:52,811
+B'miz ne olabilir? Ha şeyi yazmadık, pardon. A'mız bir negatif sayı olabilir. B'miz çok küçük bir negatif sayı olabilir. Bunlar haricinde başka bir durum var mı? A'nın bu önemli bir durum olmasını sağlıyor.
+
+645
+02:35:57,611 --> 02:36:06,631
+A bir pozitif sayı, küçük bir pozitif sayı. B küçük bir negatif sayı olabilir. Bir senaryomuz da bu var. Şimdi bunları niye bu şekilde yazdık?
+
+646
+02:36:07,347 --> 02:36:28,688
+Şundan dolayı. Şu işlem sonucu, şu işlem sonucu bir, yine range'imiz içerisinde kalabilir. Yani ne gibi örnek verelim buna? Mesela 127 ile mesela 10 gibi bir değer. Bunları birbirinden çıkarttığımızda sonuç 117 olarak range içerisinde kalıyor.
+
+647
+02:36:34,484 --> 02:37:00,943
+Eksi 100 olsun mesela. İşlem sonucumuz pozitif yönde 227'ye taşıyor. Taşma var. Bir overflow bayrağı çıktı ama yine AB'den büyük. Şu duruma bakalım. Bu durumda da taşma oluşmaz. Ne gibi mesela? Eksi 10 ile eksi 20'yi değerlendirelim. Sonuç yine.
+
+648
+02:37:01,780 --> 02:37:10,079
+Ne olacak? 10 değerinde bir pozitif değer ve yine range içerisinde kalmış olabiliriz.
+
+649
+02:37:10,180 --> 02:37:19,600
+Dördüncü bir senaryomuz A'nın pozitif ve çok küçük bir sayı için bunu yapmıştık. Pardon buna ilişkin bir örnek olmadı.
+
+650
+02:37:23,188 --> 02:37:24,148
+Bu ne yazdık.
+
+651
+02:37:28,531 --> 02:37:32,592
+Şu iki örneği şu kapsamda değerlendirelim.
+
+652
+02:37:33,912 --> 02:37:36,191
+Yani bunun bir açılımı da şu olabilirmiş.
+
+653
+02:37:36,971 --> 02:37:42,711
+Küçük bir negatif sayıya, küçük bir pozitif sayıyı da yine bu kapsamda değerlendirmiş olalım.
+
+654
+02:37:42,912 --> 02:37:44,011
+Şöyle yazmış olalım.
+
+655
+02:37:44,752 --> 02:37:47,891
+Üçüncü senaryoya örnek vermek gerekirse şuradaki senaryo.
+
+656
+02:37:47,891 --> 02:37:51,671
+Eksi 10'a mesela eksi 128.
+
+657
+02:37:53,459 --> 02:38:02,399
+Bu örnek sonucunda yine taşma oluyor mu? Burada asla taşma olmuyor değil mi? Sonucumuz 127 olacak. Burada taşma yok.
+
+658
+02:38:04,479 --> 02:38:19,259
+Çok küçük bir sayı da versem, pozitif bir sayı da versem, ikinci operandum negatifse ancak ve ancak ne zaman taşma olabiliyor? İlk değerim çok büyük bir sayıysa taşma olabiliyor.
+
+659
+02:38:19,695 --> 02:38:33,456
+Son senaryoya bakacak olursak da yine pozitif bir sayı olarak 10-10 yine 20 gibi bir değer elde edebiliriz. Burada bunu diyebiliriz.
+
+660
+02:38:35,975 --> 02:38:41,435
+Çok küçük sayıyla, çok negatif sayıyla çok küçük negatif sayı için de yaptık.
+
+661
+02:38:41,435 --> 02:38:44,876
+Tamam, genel olarak böyle bir senaryolarımız var. Olabilecek senaryolar bunlar.
+
+662
+02:38:46,804 --> 02:39:08,747
+İşlemlere bakacak olursak, taşma olduğu senaryoda, normalde bu sayımızın işaret biti ne olacak arkadaşlar? İşaret bitimiz bir pozitif değer değil mi? Ama taşma var. İşaret bitimiz pozitif ama bir taşma var. Dolayısıyla...
+
+663
+02:39:09,523 --> 02:39:24,804
+Diğer duruma bakalım. Negatif yönde bir taşmayı üretmeye çalışalım. Negatif durumdaki bir taşmada nasıl olabilir? Çok küçük bir negatif sayıyla bir pozitif sayıyı topladığımız senaryoda olabilir. Bunu yapmamıştık. Bunu yapalım mesela.
+
+664
+02:39:25,396 --> 02:39:45,576
+Bunu yapmamıştık değil mi? Mesela eksi 127 ile eksi 10 yaptığımız semaryoda bunu yapmamıştık. Çıkan sonucumuz ne olmuş oldu? Eksi 137 oldu. Sayımız negatif. Sayımız negatif. Ve yine taşma var. V'miz var. Taşmamız mevcut.
+
+665
+02:39:53,492 --> 02:40:11,492
+Taşmanın olması, burada taşma olduğu için, ilgilendiğimiz bir değer mi? Evet, taşma olduğu için bir ve sayı l'yemiz negatif. Dolayısıyla n'yemiz de bir olarak karşımıza çıkıyor.
+
+666
+02:40:12,412 --> 02:40:20,492
+Şimdi bunları incelediğimizde bir kere büyüklük işlemine baktığımız zaman eşitlik olmayacak. Eşitlik olmaması ne demek? Z'nin sıfır olması.
+
+667
+02:40:21,236 --> 02:40:28,816
+Bir kere kesinlikle Z sıfır gelecek. Z'nin sıfır gelmesini artı Z eşittir sıfırla sağlayabiliriz.
+
+668
+02:40:29,516 --> 02:40:36,776
+Diğer tarafa bakalım. Diğer tarafa baktığımızda şurada bir yanlış yapmış olabilir miyim diye tekrar kontrol etmek istiyorum.
+
+669
+02:40:37,416 --> 02:40:44,195
+Çok küçük negatif bir sayıdan bir pozitif sayıyı çıkarttığımızda işlem sonucu negatif oluyor ve taşmamız mevzu.
+
+670
+02:40:46,579 --> 02:41:03,500
+Ama bu bizim aradığımız bir senaryo değil. Çünkü bu durumda AB'den büyük değil. Bunu göz ardı edebiliriz. Bizim ilgilendiğimiz durumlarda ya taşma oluyor ve sonuç pozitif çıkıyor veya taşma olmuyor ve sonuç negatif çıkıyor.
+
+671
+02:41:03,500 --> 02:41:14,060
+Sonucun negatif çıktığı bir örnek verelim. Örneğin onu yazmamışız. Onu nerede görebiliriz?
+
+672
+02:41:14,644 --> 02:41:15,224
+Kıfırma.
+
+673
+02:41:19,283 --> 02:41:22,844
+Hem AB'den büyük olacak hem de sonuç negatif olabilir mi?
+
+674
+02:41:25,223 --> 02:41:27,583
+Olabilir mi öyle bir durum? Öyle bir durum olamıyor değil mi?
+
+675
+02:41:28,164 --> 02:41:32,683
+Çünkü o zaman B daha büyük olur sonucun negatif çıkabilmesi için baktığımız zaman.
+
+676
+02:41:33,243 --> 02:41:34,903
+Dolayısıyla karşılaşacağımız sanayi o şu.
+
+677
+02:41:35,523 --> 02:41:38,304
+Ya böyle bir durum olacak, taşmalı bir durum.
+
+678
+02:41:39,183 --> 02:41:40,583
+Veyahut da taşma olmayacak.
+
+679
+02:41:40,743 --> 02:41:43,484
+Taşma olmadığında V'miz sıfır değerinde.
+
+680
+02:41:47,316 --> 02:41:54,675
+V'miz sıfır değerinde, N'miz de sıfır değerinde olmuş oluyor.
+
+681
+02:41:57,675 --> 02:42:01,636
+X10, X128, X128.
+
+682
+02:42:06,515 --> 02:42:12,236
+Bunlarda sıkıntı yok. Taşma yok. İşaret bitimiz sıfır.
+
+683
+02:42:15,443 --> 02:42:39,543
+Taşma var ve işaret bitimiz 1. Bunu yanlış yapmışım. Ondan dolayı takalım. Sayımız 227 olmakla birlikte. Şimdi ne yaptık bakın? Şöyle sayı doğrusunu yazalım. 0, nokta nokta nokta, 127'ye kadar geldi. Şunlar da eksi 1, nokta nokta nokta nokta, eksi 128'e kadar geldi. Biz ne yapıyoruz? 127'den.
+
+684
+02:42:39,920 --> 02:42:56,619
+Eksi yüzü çıkartıyoruz. Dolayısıyla sayımız şu tarafa doğru gitmiş oluyor. Bu tarafa doğru gittiğinde bu sayının 127 desimal sonucunu üretse bile lojik işlem sonucunda bunun n biti 1 olarak karşımıza çıkıyor. İşaret biti negatif oluyor.
+
+685
+02:42:56,619 --> 02:43:02,159
+Yani iki tane pozitif sayı topladık ve sonuç negatif çıktı. Zaten taşma bundan oluyordu.
+
+686
+02:43:02,592 --> 02:43:19,112
+Dolayısıyla bizim karşılaşacağımız senaryolarda ya taşma oluyor ve işaret 2, 1 çıkıyor veya taşma olmuyor ve işaret 2, 0 çıkıyor. O zaman ne demek bu? N ve V aynı değere sahip olması lazım. İkisinin de aynı değere sahip olması lazım. Bunu sağlayan da XOR işleminde.
+
+687
+02:43:25,587 --> 02:43:33,367
+XOR işlemi sıfır değeri üretiyordu. Biz Z'nin de sıfır olmasını istiyoruz. Dolayısıyla bunları orlayarak işlem sonucunu elde etmiş oluyoruz.
+
+688
+02:43:33,367 --> 02:43:46,227
+Dolayısıyla bu analiz sonucunda elde ettiğimiz sonuç şu. Eğer ki biz büyük sayıdan bir küçük sayıyı çıkartmışsak ya
+
+689
+02:43:46,932 --> 02:43:53,691
+taşma olup işaret biti negatif oluyor veya taşma olmayıp işaret bitimiz pozitif oluyor.
+
+690
+02:43:53,691 --> 02:43:58,652
+Ve bunlara ek olarak sayıların birbirine eşit olmaması gerekiyor.
+
+691
+02:43:58,912 --> 02:44:03,551
+Dolayısıyla burada kontrol ettiğimiz lojik işaret bitiyle
+
+692
+02:44:03,871 --> 02:44:11,252
+taşma bitinin birbiriyle aynı olması ve 0 bayrağının da 0 olması gerekeliği.
+
+693
+02:44:11,252 --> 02:44:17,671
+Bunu sağlayan lojik fonksiyon N, X, Zor, V ve bunların 0 ile orlanmış halidir.
+
+694
+02:44:18,036 --> 02:44:46,036
+Biz buraya eşit dire eklemek istersek, eşit dire eklemek istediğimizde 0 bayrağının 1 olma durumu da bize bir alternatif. Dolayısıyla 0'nun 0 ve 1 olma durumlarına dikkate alınmak demek, onu göz ardı etmek demek oluyor. Çünkü her iki durumda da sağlandığı için sadece işaret ve overflow bayraklarının aynı değerde olmasını sağlamak gerekiyor. Küçüklük için, less durumu için ise işaret bitiyle taşma bitinin farklı işaretlerde olması gerekiyor.
+
+695
+02:44:46,036 --> 02:45:14,036
+Ne demek bu? Mesela A sayısıyla B sayısını birbirinden çıkartacağım ve ben A'nın B'den küçük olduğu bir senaryoyu arıyorum. Bu durumda A'dan B'yi çıkarttığımda işlem sonucu mutlaka negatif oluyor. Eğer taşma yoksa ve negatifse bu benim aradığım bir üstünüz. Veya taşma oluyorsa taşmayı da nerede yapabiliriz sağlayabiliriz? Örneğin A, B'den küçükse çok küçük bir negatif sayıyla çok yüksek bir pozitif sayıyı birbirinden çıkarttığımız durum.
+
+696
+02:45:14,036 --> 02:45:23,175
+Bunu çıkartma işlemi olduğu için iki tane negatif sayıyı birbirinden çıkarttığında taşma olacak ve işaret biti pozitif olacak.
+
+697
+02:45:23,956 --> 02:45:36,556
+Taşma var, N bitimiz 0, V bitimiz 1 olarak elde ediliyor. Dolayısıyla bütün senaryolarda küçüklük için N ve V'nin birbirinden farklı bitler olması gerektiği ortaya çıkıyor.
+
+698
+02:45:37,007 --> 02:45:58,448
+Burada eşitlik durumu için özel olarak ya şuradan bir gelecek veya 0 bayrağı bir olacak. Dolayısıyla bunlardan herhangi birisinin bir olması gerektiği. Or, Z olarak bunu yazabiliriz. Eşitlik durumu için zaten öncekiyle aynı. 0 bayrağı bir ise eşit, 0 bayrağı sıfırsa eşit değil olarak bunları tanımlayabiliyoruz.
+
+699
+02:46:02,644 --> 02:46:22,208
+Burada kesmelerle ilgili bir durum ve kontrol mantığından bahsedebiliriz. Program counter'ı etkileyen senaryolardan birisi. Program counter'ı etkileyen senaryolardan ilki koşullu dallanma komutlarıydı. Koşullu dallanma komutları üretirse ilgili etikete göreceli olarak program counter'ı...
+
+700
+02:46:22,208 --> 02:46:47,667
+değiştiriyorduk. Orayı gösterecek şekilde değiştiriyorduk. İkinci durum kollardı. Kollarla bunları sağlıyorduk. Üçüncü durum ise kesme alt programlarıyla. Bu sağlanabilir. Kesme alt programları temelde bir kesme kontrolcüsü tarafından sağlanıyor. Örneğin bizim dört farklı kaynaktan bir kesme isteği ihtimalimiz olabilir. Kesme de şöyle düşünelim. Benim o sırada yapmakta olduğum bir işlem var.
+
+701
+02:46:48,048 --> 02:46:58,448
+Bana dışarıdan bir kesme geldiğinde yaptığım işlemi yarıda bırakıyorum. Kaldığım yeri unutmamak adına geri dönüş adresini bir yerde saklıyorum ve gidiyorum kesme ilişkin alt yordamı yürütüyorum.
+
+702
+02:46:59,087 --> 02:47:05,228
+Alt yordam bittikten sonra kaldığım yere geri dönmek istiyorum. Bu da program kauntürü etkileyen senaryolardan birisi.
+
+703
+02:47:05,648 --> 02:47:11,608
+Kesme isteği geldiği zaman temel olarak kesme isteği karşılanacaksa.
+
+704
+02:47:11,667 --> 02:47:21,288
+Bunu bir acknowledge işaretiyle biz karşı tarafa bildiriyoruz. Karşı taraf bunun üzerine hangi tip kesmenin yürütüleceğine dair bize bir kesme vektör adresi gönderiyor.
+
+705
+02:47:21,288 --> 02:47:31,528
+İşte bu gelen kesme vektör adresine göre program counter'ımız ilgili bir hafıza gözünü kesme alt fonksiyonlarla ilişkin ilgili bir adres gözünü gösteriyor.
+
+706
+02:47:31,628 --> 02:47:39,288
+Dolayısıyla kesme tebelli veri iletişiminde de vektör adresi üzerinden harici cihazın acknowledge...
+
+707
+02:47:39,667 --> 02:47:46,108
+aldıktan sonra bize göndermiş olduğu vektör adresine göre de biz hangi kesme alt programını yürüteceğimizi belirliyoruz.
+
+708
+02:47:46,208 --> 02:47:53,948
+Bu da dolaylı olarak program counter'ımıza yeni bir değer yüklenmesini sağlamış oluyor.
+
+709
+02:47:54,352 --> 02:48:01,492
+Özetleyecek olursak, koşullu dallanmalarda program counter yazmacımıza görece bir toplama çıkartma yapılıyor.
+
+710
+02:48:02,112 --> 02:48:16,372
+Call işleminde doğrudan değer yükleniyor ve yine kesme iletişiminde de, kesme tabanlı iletişiminde de program counter'ımıza farklı sıfırdan yeni bir değer yüklenerek kesme alt programı ürtülmeye çalışıyor.
+
+711
+02:48:16,372 --> 02:48:19,731
+Bu haftaki sunumumuz arkadaşlar bu şekilde.
+
+712
+02:48:20,239 --> 02:48:30,200
+Buraya kadar olanlarla ilgili sormak istediğimiz bir şey varsa alabiliriz. Yoksa dersimizi sonlandırabiliriz bu hafta için. Var mı sormak istediğimiz bir şey?
+
+713
+02:48:32,380 --> 02:48:34,260
+Hocam, bir sonraki haftanın konusu nedir?
+
+714
+02:48:35,340 --> 02:48:38,260
+Bir sonraki haftanın konusu için bakalım.
+
+715
+02:48:54,739 --> 02:48:55,399
+Anlatıyorum.
+
+716
+02:48:59,827 --> 02:49:18,967
+Bir sonraki haftanın konusu merkezi işlem birim tasarımı. Yani burada da şeyi göreceğiz. Bir ALU, basit bir ALU nasıl tasarlanır? Basit bir aritmetik birim nasıl tasarlanır? Lojik birim nasıl tasarlanır? Shift birimi nasıl tasarlanır? Dolayısıyla bir aritmetik, lojik unit nasıl tasarlanır?
+
+717
+02:49:19,347 --> 02:49:45,788
+Onu inceleyeceğiz. Daha sonrasında bunu bir register file mantığıyla birleştireceğiz ve kontrol işaretleri üzerinden bir komutu bu ALU'yu ve register file'i kullanarak buna gerekirse bir sonraki hafta, o da vizeden sonraki hafta oluyormuş, vizeden sonraki haftada buna memori birimlerini ve instruction decode kısımlarını da ekleyerek basit bir işlemci tasarımına gerçekleştirmiş olacağız.
+
+718
+02:49:47,347 --> 02:49:51,347
+Genel olarak bu aritmetik, lojik bilimlerin tasarımı nasıl olur onlara bakıyor olacağız.
+
+719
+02:49:55,667 --> 02:49:56,907
+Teşekkürler hocam.
+
+720
+02:49:59,127 --> 02:50:01,347
+Var mı başka sorunuz arkadaşlar?
+
+721
+02:50:07,283 --> 02:50:15,523
+Başka soru yoksa bu hafta için teşekkür ediyorum. Katıldımınız için teşekkür ederim. Haftaya görüşmek üzere. Herkese iyi günler arkadaşlar.

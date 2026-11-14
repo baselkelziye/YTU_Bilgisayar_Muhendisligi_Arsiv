@@ -1,0 +1,3015 @@
+1
+00:00:59,923 --> 00:01:00,863
+Günaydın [öğrenci].
+
+2
+00:01:11,251 --> 00:01:13,811
+[kişisel bilgi] Varla yok.
+
+3
+00:02:39,731 --> 00:02:42,451
+[öğrenci], do yunuşa.
+
+4
+00:02:47,987 --> 00:02:49,324
+İletişim ortamları,
+
+5
+00:02:53,044 --> 00:02:55,364
+Kendisi yok, sureti var herhalde, unutum da.
+
+6
+00:02:56,404 --> 00:03:00,183
+Dur bakalım, diğer arkadaşlar gelecek mi?
+
+7
+00:03:07,316 --> 00:03:08,316
+bir kuş
+
+8
+00:06:12,468 --> 00:06:13,355
+Evet.
+
+9
+00:06:20,660 --> 00:06:22,060
+Bir iki dakika daha bekleyelim.
+
+10
+00:06:27,348 --> 00:06:28,148
+Neyse yani.
+
+11
+00:06:28,807 --> 00:06:30,187
+Neyse de o poldu.
+
+12
+00:08:31,444 --> 00:08:42,543
+Neyse arkadaşlar bu durumda vakit kaybetmiyor ki ben başlayacağım. Sonuçta saat 9'da dersimiz başlıyordu.
+
+13
+00:08:49,971 --> 00:08:56,351
+Sizlere bugünkü dersin online yapılacağıyla ilgili OBS üzerinden mesaj atmıştım.
+
+14
+00:08:56,971 --> 00:09:02,792
+Fakat şu an gelip gelmediği konusunda tradütlüyüm. Tek bir katılımcı var.
+
+15
+00:09:08,659 --> 00:09:26,839
+Ancak yine de hani elimizdeki zamanı değerlendirebilmek adına başlamayı tercih edeceğim. Hem diğer gruptan gerideyiz, online gruptan gerideyiz. Onu telafi etmek istiyorum bir taraftan da. Zaten hani şey olmasa bile, şu an katılamasanız bile daha sonra dinleme ihtimaliniz ve şansınız var.
+
+16
+00:09:28,120 --> 00:09:33,639
+Şimdi bugün önce geçen hafta yapamadığımız dersle ilgili olan kısmı yani.
+
+17
+00:09:34,611 --> 00:09:49,611
+Kodlama tekniklerinde kalan kısmı bitireceğiz. Örneksel, sayısal, sayısal, örneksel, örneksel, örneksel, örneksel kodlamaları konuşacağız. Neler var, neler yok. Hangi yöntemleri kullanıyoruz? Bunların detaylarını konuşacağız. Sonrasında ise...
+
+18
+00:09:55,635 --> 00:10:03,635
+İlerleyen şeyde iletim tekniklerini konuşacağız ve iletim ortamını konuşmaya başlayacağız.
+
+19
+00:10:03,775 --> 00:10:12,495
+İletim ortamı dediğimiz zaman aslında fiziksel olarak veri iletimini sağladığımız yapılardan,
+
+20
+00:10:12,495 --> 00:10:21,535
+yani mesela kablodan, mesela radyo frekansından, mesela infraredten, mesela mikroverden, mesela ışıktan bahsediyoruz.
+
+21
+00:10:22,128 --> 00:10:25,807
+Bunların detaylarını konuşacağız sonraki derste de.
+
+22
+00:10:26,567 --> 00:10:27,807
+Ufaktan başlayalım.
+
+23
+00:10:29,668 --> 00:10:32,148
+Bir saniye, zaten kendi kendimi ver ben.
+
+24
+00:10:32,148 --> 00:10:35,368
+O zaman videoyu kapatayım.
+
+25
+00:10:37,648 --> 00:10:41,508
+Örneksel sayısal kodlama yapacağız diyoruz.
+
+26
+00:10:41,728 --> 00:10:45,708
+Aslında örneksel dediğimiz sinyal nasıl bir sinyal? Daha önce de konuşmuştuk.
+
+27
+00:10:46,248 --> 00:10:47,567
+Devamlılığı olan bir sinyal.
+
+28
+00:10:49,524 --> 00:10:58,104
+devamlılığı olduğu için de aslında bunu nasıl yorumluyoruz? Sonsuz sayıda örnek olarak yorumluyoruz.
+
+29
+00:10:59,604 --> 00:11:05,484
+Bunu sayısıyla çevirmek için ne yapmamız lazım?
+
+30
+00:11:08,124 --> 00:11:11,484
+Belli aralıklar ile örnek almamız lazım sinyarda.
+
+31
+00:11:12,663 --> 00:11:16,984
+Aldığımız örnek sayısı ne kadar yüksekse aslında kaybımız da o kadar.
+
+32
+00:11:17,587 --> 00:11:42,387
+Az olacaktır tahmin edeceğiniz gibi. Neden? Sinyal içerisindeki değişimleri fark edebileceğiz. Sinyal içerisindeki değişimlerden kastımız ne? Sinyalin yönündeki hem bütünlendeki değişiklikleri daha hassas görebileceğiz. Ne kadar kısa sürede o kadar fazla örnek alırsak daha yüksek bir çözünürlüğümüz olacak. Dolayısıyla sinyali daha iyi takip edebileceğiz.
+
+33
+00:11:44,692 --> 00:11:53,072
+Eğer aldığımız örneksel sinyali sayısala çevirdikten sonra tekrar örneksele çevirmek bir derdimiz varsa, misal sesle bunu yapıyoruz aslında.
+
+34
+00:11:53,211 --> 00:12:03,692
+Ne yapıyoruz? Mikrofondan sesi örnekliyoruz. Ondan sonra spikör üzerinden tekrar örneksel sayısı ula çevirmiştik.
+
+35
+00:12:03,792 --> 00:12:06,912
+Sayısaldan da tekrar örneksel çevirip dışarı basıyoruz.
+
+36
+00:12:06,912 --> 00:12:08,912
+Bu ikisi arasında...
+
+37
+00:12:08,912 --> 00:12:10,471
+Çok pardon.
+
+38
+00:12:12,307 --> 00:12:13,288
+Efendim sunallah.
+
+39
+00:12:20,596 --> 00:12:31,115
+Tamam, öğrencilerin haberi var o zaman mesaj falan gitmiş, bir sıkıntı yok. Çocuklar sadece... Tamam, tamam, peki. Tamam. Hadi görüşürüz.
+
+40
+00:12:37,235 --> 00:12:44,535
+Bu örnekleme işi için kullandığımız yönteme Pulse Amplitude Modulation diyoruz.
+
+41
+00:12:44,535 --> 00:12:53,475
+Tam olarak yaptığımız şeyi aslında burada grafik olarak bakacak olursak daha iyi anlaşılabilir.
+
+42
+00:12:53,615 --> 00:12:56,331
+Solda örneksel bir...
+
+43
+00:12:57,587 --> 00:13:01,387
+İşaret görüyorsunuz. Sonsuz değerden oluşuyor gördüğünüz üzere.
+
+44
+00:13:01,968 --> 00:13:08,908
+BAM ile yaptığımız şey belli zaman aralıklarında, eşit zaman aralıklarında bu sinyaldan örnekler almak.
+
+45
+00:13:09,048 --> 00:13:17,488
+Bu sinyaldan örnekler aldığımız zaman da içeride böyle dikdörtgenler şeklinde gördüğünüz aslında yapıyı elde etmiş oluyoruz.
+
+46
+00:13:17,567 --> 00:13:24,168
+Yani o sinyalin amplitude anlamında nereye kadar çıktığını, nerede olduğunu vesaireyi takip edebilir hale geliyoruz.
+
+47
+00:13:24,947 --> 00:13:50,707
+Burada şuna dikkat edin. Hep ne diyorum? Eşit aralıklarla örnek alınması diyoruz. Bir de örnek sayısının fazla olması diyoruz. Örnek sayısı şu an baktığınızda sağ tarafta işte 4, 2, 3, 7, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22. 22 tane örnek var. Şimdi bu 22 örnek yerine 3 tane ya da 5 tane örnek alsaydınız
+
+48
+00:13:53,203 --> 00:14:04,563
+Olası bu sinyali tekrar oluşturmak istediğinizde şey sıkıntısını yaşayacaktık.
+
+49
+00:14:06,163 --> 00:14:09,823
+Bu sinyal acaba nereden geçiyor sıkıntısını yaşayacaktık.
+
+50
+00:14:10,363 --> 00:14:19,403
+Şimdi buradaki o barlara doğru baktığınız zaman sinyal hakkında 3 aşağı 5 yukarı bir fikriniz var ve orijinaline çok yakın bir şey çizebilirsiniz.
+
+51
+00:14:19,919 --> 00:14:25,399
+Sağdaki grafikte sadece barlar olsa kalan taraftan sinyali siz çizebilirsiniz.
+
+52
+00:14:25,740 --> 00:14:26,919
+Ve fakat...
+
+53
+00:14:27,980 --> 00:14:28,859
+Merhaba Amut.
+
+54
+00:14:29,619 --> 00:14:33,199
+Çok güzel. Şimdi duyuyorsun da tahminen sen bilgisayarı açtın, sonra gittin.
+
+55
+00:14:34,059 --> 00:14:39,539
+Ben de o 5-10 dakika boyunca sana sesimi duyurmak için uğraştım.
+
+56
+00:14:41,039 --> 00:14:42,879
+Kaydı tekrar dinlersen duyarsın zaten.
+
+57
+00:14:45,620 --> 00:14:52,319
+Mesajım geldi mi, gelmedi mi, arkadaşlarınız biliyor mu, bilmiyor mu onu sormak için aslında sana ulaşmaya çalışıyordum.
+
+58
+00:14:52,980 --> 00:15:04,700
+Bölüm tarafını da aradım. Sınıfta kimse var mı, yok mu bir şekilde şeyse, haberleri yok mu çocukların acaba mesaj mı gitmedi vesaire diye öğrenmeye çalıştım.
+
+59
+00:15:04,839 --> 00:15:13,240
+Ama gördüğüm kadarıyla mesaj gelmiş. Sadece arkadaşlar gelmedi bugün. Kısmet. Biz dersimizi tamamlayalım, bakarız.
+
+60
+00:15:14,868 --> 00:15:24,088
+Hocam, o şeyden oldu. OBS'deki mail bizim maillerimize düşmüyor. İsteyi ayrıca ziyaret etmemiz gerekiyor. Bundan galiba oldu.
+
+61
+00:15:26,008 --> 00:15:32,208
+Ama sınıfta da değil arkadaşlar. Onu nasıl açıklıyorsun?
+
+62
+00:15:32,928 --> 00:15:34,408
+Onu açıklayamayacağım acaba.
+
+63
+00:15:35,347 --> 00:15:53,347
+Yani o testler bunu da açıklasın gibi bir durum oluyor. Hani yok, normal şartlarda burada olmayan arkadaşların, 14 kişinin ikisi burada şu an, geri kalan 12'sinin sınıfta olması beklenir. Sınıfta bir arkadaş var, onun da haberi varmış zaten. İlginç bir şekilde. O da herhalde...
+
+64
+00:15:54,323 --> 00:16:03,323
+bölümde başka işi vardı. Onun için geldi. Gelmişken, okulunlar dersi dinlemek var. Bilemiyorum artık. Neyse. Biz konumuza PAMA alalım.
+
+65
+00:16:07,323 --> 00:16:09,723
+Ha, [öğrenci] sen misin? İyi, tamam.
+
+66
+00:16:13,427 --> 00:16:14,248
+Ay ay.
+
+67
+00:16:17,971 --> 00:16:19,912
+Ne? Bir dakika dur.
+
+68
+00:16:23,711 --> 00:16:27,871
+Haa. Bir şey söylenmedi mi? Ben sizin mesaj gönderdim.
+
+69
+00:16:28,412 --> 00:16:30,471
+Şeyden, sistemden o bir şekilde.
+
+70
+00:16:36,980 --> 00:16:38,779
+O daim.
+
+71
+00:16:48,724 --> 00:17:09,104
+Sana zahmet, şu an değil artık çok fazla şey yapmayalım, bölmeyelim. Ama bir bakar mısın daha sonra sisteme şey var mı yok mu, sana demek var gelmiş mi gelmemiş mi ona göre bir kontrol ediver sana zahmet. Şey yapalım.
+
+72
+00:17:11,892 --> 00:17:17,991
+Hocam ben işletim sitemleri için grubumuz vardı, oraya attım, en azından bir sonraki dersimizde şey olur.
+
+73
+00:17:18,672 --> 00:17:21,352
+Ben o derslere de hepsine mesaj gönderdim gerçi.
+
+74
+00:17:21,692 --> 00:17:24,632
+Evet, görmemişlerse en azından ona görürler.
+
+75
+00:17:25,832 --> 00:17:38,971
+Tamam, mantıklı. Çünkü bugün normal şartlarda 4 tane ders var, 4'ü içinde değil mi?
+
+76
+00:17:39,796 --> 00:17:53,215
+4 ders var, 4 içinde tek tek mesaj attım herkese, hani şey olmasın diye. Dünden attım, problem olmasın, son dakika olmasın falan diye ama yine olacağı varsa oluyor galiba. Neyse.
+
+77
+00:17:56,275 --> 00:18:06,255
+Pause Antitude Modulation diyorduk. Yaptığımız şey aslında belirli örnek, belirli zaman aralıklarında örnek almak. Bu arada birinizin şeyi açık.
+
+78
+00:18:06,655 --> 00:18:12,996
+Mikrofonu açık ve devamlı pıtıt pıtıt pıtıt mesaj sezleri geliyor. Kapatın lütfen.
+
+79
+00:18:13,336 --> 00:18:24,655
+Bir derse şimdi gelmek istiyorlar da, sonuna cevap. Link attım da hocam. Link atmana gerek yok ki, sisteme bağlantıkları zaman gelebilirler zaten.
+
+80
+00:18:28,372 --> 00:18:31,632
+Ondan yıldız etkili oraya girdiklerinde gözüküyor olması lazım dersin.
+
+81
+00:18:33,231 --> 00:18:35,372
+Evet gözüküyor. Onu da galiba bilmiyor.
+
+82
+00:18:38,052 --> 00:18:38,652
+Arkadaşlar.
+
+83
+00:18:38,972 --> 00:18:41,852
+Yani arkadaşlar da ama biraz fazla mı şey acaba?
+
+84
+00:18:42,872 --> 00:18:46,372
+Onu bilmiyoruz, bunu bilmiyoruz. O öyle olmadı, bu böyle olmadı.
+
+85
+00:18:46,992 --> 00:18:50,271
+Niye bu arkadaşlar bu üniversitede öğrenci değil mi? Başka bir yerde mi yaşıyorlar?
+
+86
+00:18:51,032 --> 00:18:52,992
+Başka bir uzayda mı takılıyorlar?
+
+87
+00:18:53,852 --> 00:18:55,892
+Yani neyse.
+
+88
+00:18:57,332 --> 00:18:59,211
+Yelen varsa bari bekleyin biraz.
+
+89
+00:19:21,203 --> 00:19:22,243
+Gelen de yok.
+
+90
+00:19:25,123 --> 00:19:28,203
+Neyse, biz devam edelim. Gelen ucundan bağlanır.
+
+91
+00:19:29,443 --> 00:19:32,483
+PAM'la yani Pals Amputate Modulation'la aslında ne yapıyoruz?
+
+92
+00:19:37,283 --> 00:19:43,983
+Elimizde sinyalin o anki amputate değerlerine karşılık gelen ölçümlerimiz var.
+
+93
+00:19:44,283 --> 00:19:46,123
+Aslında elektriksel bir sinyal olduğuna göre.
+
+94
+00:19:47,635 --> 00:19:54,355
+gerilim ya da akım cinsinden değerler var. Bunu ne yapıyor olmamız lazım? Quantize diye olmamız lazım.
+
+95
+00:19:56,775 --> 00:20:06,976
+Quantize, yani Ano, Digital, Converter vs. bunları herhangi bir derste konuştuysanız zaten 3 aşağı 5 yukarı fikir sahibi olacaksınız ama
+
+96
+00:20:06,976 --> 00:20:14,996
+olay aslında burada yapılan şey ne? Sizin ortamdan bir sinyali örnekleme durumunuz var.
+
+97
+00:20:16,596 --> 00:20:23,695
+örneklerken bir şey kullanıyorsunuz, analog digital converter kullanıyorsunuz aslında.
+
+98
+00:20:25,375 --> 00:20:29,735
+Bu analog digital converter'ın da bir bit genişliği var.
+
+99
+00:20:30,476 --> 00:20:34,715
+Yani 8 bitlik, 10 bitlik, 12 bitlik ya da işte 16 bitlik vesaire olabilir.
+
+100
+00:20:34,715 --> 00:20:38,715
+Bu bit genişliğine bağlı olarak ölçebileceğiniz değerin...
+
+101
+00:20:40,403 --> 00:20:44,264
+Maksimum, minimum karşılıkları var.
+
+102
+00:20:46,103 --> 00:20:56,884
+Sinyalin genliğine bağlı olarak bu maksimum değerde nereye düşeceğini, maksimum aralık içerisinde nereye düşeceğini hesaplıyor olmanız, yani quantizing olmanız lazım.
+
+103
+00:20:57,043 --> 00:21:06,264
+Bunun elde ettiğimiz şey de aslında ham sonucunda elde ettiğimiz de böyle bir şey.
+
+104
+00:21:07,028 --> 00:21:17,028
+Daha sonra false code modülasyon'a çevirip, pardon, PCM ile bunu elde ediyoruz. PCM ile elde ettiğiniz şeyde...
+
+105
+00:21:17,428 --> 00:21:41,428
+Böyle bir dizi oluyor aslında. Yani tamamen sayısal. 16, 48, 50, 18 vs. diye burada yazılmış. Bu illa 8 bit olması gerekmiyor. PCM'in 8 bitlik versiyonu var. İlk ortaya atılan hali çünkü telefon hatları için. Dolayısıyla orada da 8 bit fazla fazla yetiyor. Ama baktığınız zaman PCM'in yanlış hatırlamıyorsam...
+
+106
+00:21:41,683 --> 00:21:45,963
+24 bit, 16 bit vesaire gibi versiyonları da var.
+
+107
+00:21:46,423 --> 00:21:53,203
+Hani şeyi arttırmak istediğiniz zaman, kaliteyi ya da duyarlılığı arttırmak istediğiniz zaman bunu yapmak mümkün.
+
+108
+00:21:54,344 --> 00:21:58,324
+Bir şey soracağım hocam. Bunların artış sınıfı düzensiz mi?
+
+109
+00:21:58,603 --> 00:22:00,983
+Yani mesela bit sayıları farklı farklı.
+
+110
+00:22:01,103 --> 00:22:03,603
+Normalde 8'in, 2'nin katı falan değiller ya.
+
+111
+00:22:05,764 --> 00:22:07,603
+ADC'nin bit genişliğini mi soruyorsun?
+
+112
+00:22:08,063 --> 00:22:08,463
+Evet.
+
+113
+00:22:09,268 --> 00:22:18,488
+Şöyle, o aslında ekonomik bir karar tamamen. Yani mikro kontrolür üzerinde bakacak olursan tamamen ekonomik bir karar.
+
+114
+00:22:19,067 --> 00:22:25,768
+Bazı mikro işlemcilerde şeyi görürsün, yani 8 bit zaten artık olmazsa olmaz bir durum.
+
+115
+00:22:26,668 --> 00:22:32,748
+Ve fakat adam hani bunu 10 bit, 12 bit vesaire gibi de şey yapar.
+
+116
+00:22:32,748 --> 00:22:33,907
+Nedir o?
+
+117
+00:22:34,771 --> 00:22:41,771
+Böyle ekstra genişletir ya da sana fazladan şey sunar.
+
+118
+00:22:42,991 --> 00:22:43,911
+Nedir o?
+
+119
+00:22:45,711 --> 00:22:51,971
+Böyle kaliteyi arttırmak adına, samplerin kalitesini arttırmak adına onu sunar.
+
+120
+00:22:52,471 --> 00:22:53,871
+Fakat bu aslında ne demek?
+
+121
+00:22:55,911 --> 00:22:57,711
+ADC nasıl çalışıyor arka tarafta?
+
+122
+00:23:02,003 --> 00:23:06,423
+SAR modeliyle, yani Sacrosive Approximation ile çalışıyor.
+
+123
+00:23:07,023 --> 00:23:15,243
+Şimdi oradaki bit sayısını arttırmak, aslında o ADC'nin konverjant zamanını arttırır.
+
+124
+00:23:16,523 --> 00:23:27,864
+Yani şey, farklı bir ADC modeli olsa, mesela doğrudan, tek şatla sample alabilen modeller de var.
+
+125
+00:23:28,211 --> 00:23:52,612
+Onlardan bir tanesi olsa en azından süre anlamında bir kaybın olmaz. Ama successive approximation yaptığın zaman şeyle gidiyorsun. Nasıl diyeyim? Mesela 12 bit varsa ya da 10 bit varsa ya da 8 bit varsa fark etmez. En yüksek anlamlı değeri set ettiğin zaman oluşan sinyalle senin örneklemeye çalıştığın sinyal arasında bir fark var mı?
+
+126
+00:23:53,107 --> 00:24:18,168
+Var, sinyal daha yukarıda. O zaman ne yapacaksın? Bu kalacak, bir sonraki bite geçeceksin. Sonra bir sonrakine, sonra bir sonrakine, sonra bir sonrakine falan diye gidiyor. Yani successive approximation'ın çalışma mantığı bu. Bu yüzden de şey sıkıntısı var. Bit sayısı arttıkça aslında sampling rate'i düşüyor. Sampling süresi artıyor.
+
+127
+00:24:19,796 --> 00:24:27,096
+Dolayısıyla bir nedenlerden bir tanesi bu. İyi ki, bit sayısını arttırman, oradaki bint genişliğini arttırman eşittir maliyet.
+
+128
+00:24:27,976 --> 00:24:38,195
+Tahmin edeceğin üzere. O yüzden de hani mikro kontrolürlerde böyle hani 8, 16, 24 falan gibi şeyleri pek görmezsin.
+
+129
+00:24:38,376 --> 00:24:41,215
+Yani en azından genel amaçlı mikro kontrolürlerde görmezsin.
+
+130
+00:24:41,584 --> 00:24:51,724
+Yoksa şey gibi bir mikro kontrolü de böyle özel ses uygulaması için kullanılacak bir mikro kontrolü de doğrudan 16 bitlik bir ADC'de görebilirsin.
+
+131
+00:24:56,019 --> 00:24:57,440
+Soruyu kim sordu?
+
+132
+00:25:00,139 --> 00:25:01,839
+Teşekkürler hocam, anladım.
+
+133
+00:25:05,220 --> 00:25:06,099
+Okey.
+
+134
+00:25:07,940 --> 00:25:11,659
+Ama şey tarafından soruyorsan, bu mikro kontrolü tarafından cevabı.
+
+135
+00:25:13,039 --> 00:25:21,880
+Kodlama tekniği açısından soruyorsan, yani niye PCM8'de şey yapmışlar, nedir o?
+
+136
+00:25:23,220 --> 00:25:40,119
+Başlatmışlar, niye doğrudan 16 bit olmamış vesaire diye soruyorsan. O da tamamen aslında teknoloji ve şeyin yeterliliği. 8 bitlik sampling'in bizim ses konusunda, telefon üzerinden aktaracağımız ses konusunda yeterliliği.
+
+137
+00:25:41,076 --> 00:25:49,776
+Yani böyle crystal clear bir ses duymana ya da işte ne bileyim en ufak ses içerisindeki iç çekişe kadar her şeyi duymana gerek yok.
+
+138
+00:25:49,896 --> 00:25:54,356
+Adamı anla yeter mantığıyla yapılmış bir yapı, oluşturulmuş bir yapı.
+
+139
+00:25:57,576 --> 00:25:59,596
+Şimdi elinizde ne var?
+
+140
+00:26:02,296 --> 00:26:03,416
+DCM sonrasında.
+
+141
+00:26:05,332 --> 00:26:11,952
+Sayısal değerler var. Bunlar ikilik sisteme de çevirdiğiniz zaman işte aşağıda olduğu gibi bir şeyler oluyor.
+
+142
+00:26:12,592 --> 00:26:16,672
+Bunu ne yapıyor olmamız lazım bu noktadan sonra? Örneksi sayısal çevirdik.
+
+143
+00:26:17,192 --> 00:26:27,412
+Eğer bunu dijital bir ortama aktaracaksak, yani gene sayısal bir ortama aktaracaksak, o zaman sayısal sayısal bir kodlama tekniği kullanıp üstüne öyle devam ediyor olmamız lazım.
+
+144
+00:26:27,412 --> 00:26:30,316
+Şimdi PAM yapılırken...
+
+145
+00:26:31,892 --> 00:26:37,192
+Örnek alıyoruz. Bu örneklerin eşit zaman aralıklarında alınıyor olması lazım.
+
+146
+00:26:37,192 --> 00:26:56,311
+Yani parzı misal 100 kHz'lik bir sampling yapacaksam burada her sampling'ın arasında 100 kHz dediğime göre 10 mikrosaniye olması lazım.
+
+147
+00:26:56,980 --> 00:27:08,400
+Yani birinde 9 mikrosaniye, birinde 5 mikrosaniye, birinde 2 mikrosaniye farkla, yani örnekler arasında öyle şeyler yapıyorsam, ortalık karışır. Çok da bir şey ifade etmez.
+
+148
+00:27:11,920 --> 00:27:17,140
+Dolayısıyla eşit aralık olması gerekiyor. Bu bir. İki, ne kadar örnek alacağımız önemli.
+
+149
+00:27:19,140 --> 00:27:24,559
+Olmayacak örneği belirleyen şey aslında Nyquist teoremi. Genelde biz Nyquist teoremi üzerinden gidiyoruz.
+
+150
+00:27:25,011 --> 00:27:35,751
+Nyquist teoremi üstüne daha farklı teoremlerde geliştirilmiş şey anlamında.
+
+151
+00:27:35,751 --> 00:27:39,751
+Mesela özellikle böyle...
+
+152
+00:27:41,140 --> 00:27:56,960
+Compressed Sensing denilen bir çalışma alanı var. Orada sampling rate iki kat olmasa da ben sinyali tekrar şey yapabilir miyim acaba? Reconstruct edebilir miyim? Kendine getirebilir miyim? Falan gibi çalışmalar var.
+
+153
+00:27:58,440 --> 00:28:03,259
+Ve fakat bizim kabul ettiğimiz, herkesin kabul ettiği ve düzgün olan şey şu.
+
+154
+00:28:03,731 --> 00:28:23,071
+Örnek alacağımız bir işaretin, herhangi bir örneksel işaretin sayısallaştırılabilmesi için, düzgün şekilde sayısallaştırılabilmesi için, OSI işaret içerisindeki en yüksek sıklık bileşeninin en az iki katı kadar örnek alınması gerekiyor.
+
+155
+00:28:28,564 --> 00:28:36,084
+1000 ile 4000 Hz arasında bir sıklık değeri olan işareti sayısıyla alıştırmak istiyorsanız ki bu aslında neye denk düşüyor?
+
+156
+00:28:36,704 --> 00:28:38,644
+İnsan sesi konuşmaya denk düşüyor.
+
+157
+00:28:39,664 --> 00:28:41,924
+8000 adet örnek almanız gerekiyor.
+
+158
+00:28:43,744 --> 00:28:46,804
+Çünkü buradaki en yüksek bileşenle 4 kHz.
+
+159
+00:28:48,484 --> 00:28:51,824
+Şimdi baktığınız zaman bu sürece aslında ne yapıyoruz?
+
+160
+00:28:52,204 --> 00:28:53,884
+Deminden beri konuştuğumuz kısma.
+
+161
+00:28:54,420 --> 00:29:09,000
+Pulse Amplitude Modulation, PAM'la ölçüm yapıyoruz. PCM ile Quantize ediyoruz. İkiliye Encode ediyoruz. Sonra da sayısaldan sayısal çevirip kodlamasını, modülasyonunu bitirmiş oluyoruz aslında.
+
+162
+00:29:10,520 --> 00:29:20,000
+Örneğin, sesin mesela bir şebeke üzerinden aktarılması ya da bir yere elektronik, daha doğrusu dijital ortama kaydedilmesini konuşuyorsak.
+
+163
+00:29:23,124 --> 00:29:43,683
+Sayısal örneksel kodlama tekniklerini konuşacağız bir sonraki adımda. Sayısal örnekseli nerede kullanıyoruz? Aslında en çok kullandığımız nokta, en azından eskiden,
+
+164
+00:29:44,180 --> 00:29:55,000
+İnternete bağlanmak için kullandığımız modemlerdi. Bilgisayarı ne yapıyoruz? İnternete bağlanmak için modem üzerinden dial-up yapıyorduk.
+
+165
+00:29:55,000 --> 00:30:07,980
+Var mesela işte standart ISP'nizin bir telefon numarası var. O modeminize o numarayı aratıyorsunuz. Sonra aktarmak istediğiniz bilgiyi aslında...
+
+166
+00:30:08,147 --> 00:30:17,327
+O telefon hattı üzerinden telefonda ses görüşmesi için ayrılmış olan noktada göndermeye çalışıyorsunuz.
+
+167
+00:30:17,387 --> 00:30:23,167
+Yani aslında dijital bilgiyi örneksel bir işarete çeviriyordunuz.
+
+168
+00:30:23,527 --> 00:30:32,007
+Yaptığımız şey buydu. Hatta eğer paralel bir hattınız varsa, modem çalışırken şeyi kaldırıp baktığınız zaman,
+
+169
+00:30:32,007 --> 00:30:32,787
+nedir o?
+
+170
+00:30:33,395 --> 00:30:39,955
+A yüzeyi kaldırıp baktığınız zaman orada aslında duyulabilir şekilde aktarılan veriyi görüyordunuz.
+
+171
+00:30:43,955 --> 00:30:45,655
+Bir saniye.
+
+172
+00:30:51,059 --> 00:30:54,279
+İkisi aynı anda olabilen şeyler değildi.
+
+173
+00:30:54,879 --> 00:31:06,539
+Yani şöyle, siz telefonu açtığınız zaman aslında modemin iletişimini dinliyorsunuz.
+
+174
+00:31:07,859 --> 00:31:08,839
+Onda bir sıkıntı yok.
+
+175
+00:31:08,839 --> 00:31:16,539
+Ama o iletişim yapılırken sizin kalkıp da başka bir numara tuşlayıp başka biriyle konuşmaya başlamak gibi bir şansınız yok.
+
+176
+00:31:17,044 --> 00:31:38,564
+Hatta şu bile olabilir, başınıza gelen gelebilecek şeylerden biri, hattınızın teknolojik seviyesine bağlı olarak avizeyi kaldırdınız, dinlediniz, avizeyi çat diye yerine koyarsanız aslında hang-up sinyali üretmiş ve karşı tarafa hattı kestiriyor olabilirdiniz.
+
+177
+00:31:39,284 --> 00:31:45,784
+Dolayısıyla o telefon eğer öyle kaldırıp dinlenmeye başlandıysa böyle çok yavaş, sakin, sakin falan yerine konurdu.
+
+178
+00:31:46,683 --> 00:31:56,784
+Şey olmasın diye. Ya da kenara ayrı bir yere konur, öyle beklenirdi. Yanlışlıkla bir şey yaptıysanız gitmesin diye bağlandı.
+
+179
+00:31:57,844 --> 00:32:04,744
+Yoksa aynı anda ikisini birden yapmak gibi bir şey yok. Çünkü zaten sese ayrılmış olan band üzerinde veriyi aktarıyorsunuz.
+
+180
+00:32:06,675 --> 00:32:14,836
+Şimdi, bu sayısal örneksin kodlamaya en güzel örnek bu demiştik.
+
+181
+00:32:17,155 --> 00:32:22,756
+Aslında orada yaptığımız şey, 0 ile 4 kHz arası.
+
+182
+00:32:23,188 --> 00:32:43,708
+diyebiliriz. O dört kilo astroplantta ses verisi taşınması hedeflenmiş ama onun yerine biz sayısal veriyi taşıyacağız. Bunun için de ne yapıyoruz? Kodlama tekniklerini kurulmuş. Ama günümüzde böyle mi? Günümüzde böyle değil. O dört kliarsik frekansa sıkışmış durumda birisi.
+
+183
+00:32:46,387 --> 00:32:53,988
+ADSL'ler var. Asenkon Digital Subscribers Line diye. DSL'leri aslında ne yapıyor?
+
+184
+00:32:55,908 --> 00:33:09,408
+ISP, sizin hattınızı yine aynı bakır telefon hattı olmasına rağmen, kablo aynı, medya aynı olmasına rağmen, arka tarafta DSLAM denilen bir cihaza bağlanıyor.
+
+185
+00:33:13,279 --> 00:33:21,960
+sadece analog değil, yani şey çalışmıyor, ses sinyali çalışmıyor, onun daha fazlasını da çalıştırabiliyor.
+
+186
+00:33:23,120 --> 00:33:28,240
+Böylece çok daha yüksek bir bant genişliğine sahip oluyorsunuz, daha fazla veri aktarabiliyorsunuz.
+
+187
+00:33:33,907 --> 00:33:41,127
+Bakalım ne yapabiliriz? Sayısal bilgiyi, sayısal işareti örneksele çevirmek için ne kullanabiliriz?
+
+188
+00:33:44,767 --> 00:33:52,827
+Ne yapmamız lazım? Örneksele çevireceğimize göre örneksel bir işaretin özellikleri üzerinde oynama yapmamız lazım.
+
+189
+00:33:53,027 --> 00:33:56,767
+Üç tane temel özelliği var zaten. Biri genlik, biri sıklık, biri de fas.
+
+190
+00:33:58,767 --> 00:33:59,407
+Dolayısıyla
+
+191
+00:34:00,147 --> 00:34:20,027
+Temelde bu üç özellik üzerinden kodlama yapıyoruz. Amplitude üzerinden yaptığımızda Amplitude Shift Keying, Frequency Shift Keying, Faz üzerinden yaptığımızda da Face Shift Keying diyoruz.
+
+192
+00:34:26,260 --> 00:34:34,800
+modülasyon tekniği olarak hem genlik hem fazın bir arada modüle edildiği, değiştirildiği, oynandığı
+
+193
+00:34:34,800 --> 00:34:40,539
+QAM Quadrature Amplitude Modulation var.
+
+194
+00:34:40,680 --> 00:34:49,740
+Onun da işte QAM 64, 128 vs. 32 vs. gibi versiyonlarını göreceğiz, konuşacağız.
+
+195
+00:34:49,740 --> 00:34:51,760
+Şimdi
+
+196
+00:34:54,867 --> 00:34:58,327
+Örneksel işaretin özelliklerini modifiye edeceğiz dedik.
+
+197
+00:34:59,568 --> 00:35:01,707
+Genliğini, sıklığını, fazını.
+
+198
+00:35:02,387 --> 00:35:08,307
+Dolayısıyla ne yapmamız lazım?
+
+199
+00:35:11,247 --> 00:35:17,307
+Öncelikle bu özelliklerini modifiye edebileceğimiz bir sinyale sahip olmamız lazım.
+
+200
+00:35:18,228 --> 00:35:36,948
+Bu sinyale taşıyıcı işaret, işte carry signal diyoruz. Normalde hatta olması gereken bir sinyal var. Biz bu sinyalin özellikleriyle oynuyoruz ki karşı taraf farkı anlasın ve onu anlamlandırsın.
+
+201
+00:35:40,436 --> 00:35:48,204
+Bunları zaten konuştuk. Yapılan değişiklikler, modülasyon vesaire. Şimdi burada...
+
+202
+00:35:52,179 --> 00:36:02,380
+Yapacağımız bağlantı, yani alıcı ile göndereceği arasında kurduğumuz iletimin kapasitesi, bağlantının kapasitesi birkaç şeye bağlı.
+
+203
+00:36:02,539 --> 00:36:09,800
+Tabii ki ortamın desteklediği, yani çektiğiniz bu kablonun kapasitesi de bunun parametrelerden bir tanesi.
+
+204
+00:36:19,155 --> 00:36:21,536
+Şey için bir belirleyici.
+
+205
+00:36:23,076 --> 00:36:23,876
+Nedir o?
+
+206
+00:36:24,555 --> 00:36:29,715
+Aktarabileceğiniz veri miktarı, bandwidth anlamında bir belirleyici.
+
+207
+00:36:29,835 --> 00:36:29,996
+Neden?
+
+208
+00:36:30,515 --> 00:36:33,655
+Eğer sıklık yüksek olursa ne olacaktır?
+
+209
+00:36:33,996 --> 00:36:39,876
+Sinyal üzerinde birim zamanında daha çok değişiklik yapabileceksiniz.
+
+210
+00:36:40,795 --> 00:36:41,515
+Tan basitinden.
+
+211
+00:36:43,555 --> 00:36:44,555
+Şimdi
+
+212
+00:36:47,635 --> 00:36:55,076
+Madem hızı konuşuyoruz, burada konuşmamız gereken bir nokta daha var. O da bit hızı ve bout hızı arasındaki fark.
+
+213
+00:36:58,416 --> 00:37:07,355
+Bit hızı, yani adı üzerinde zaten bit per second diye de ifade ediyoruz. Bir saniyelik süre içerisinde yollanan bit miktarını ifade ediyor.
+
+214
+00:37:08,340 --> 00:37:15,500
+Şimdi, bant hızı ise bir saniyelik süre içerisinde yollanan sinyalin sayısını ifade eder.
+
+215
+00:37:15,619 --> 00:37:23,420
+Hani demin söyledim ya ki taşıyıcı sinyalin frekansıyla aktarabildiğiniz bilgi arasında doğrudan bir ilişki var.
+
+216
+00:37:23,680 --> 00:37:31,380
+Frekansı arttıkça sinyalin ne olacak? Bant hızı artacak. Bant hızı arttıkça da aslında bit hızınız da artacak.
+
+217
+00:37:36,596 --> 00:37:46,355
+Siz bir ya da daha fazla bit ifade ediyorsunuz. Özellikle şeyi konuşurken daha net olacak bu.
+
+218
+00:37:46,355 --> 00:38:00,271
+Şimdi ASK, PSK, PSK'da bout ve bit hep aynı ve fakat QAM'ye geçtiğimiz zaman şeyi göreceğiz. Herhangi bir boutta aslında biz...
+
+219
+00:38:00,271 --> 00:38:08,671
+Evet, sadece bir biti, yani sıfır ya da biri değil, zaman zaman işte üçlüler halinde bitleri ifade ediyor olacağız.
+
+220
+00:38:08,671 --> 00:38:22,452
+Yani işte o boutta gönderdiğimiz sinyaldeki değişiklik sıfırı ya da biri değil, sıfır sıfırı, sıfır biri, bir sıfırı ya da bir biri ifade ediyor olacak.
+
+221
+00:38:23,072 --> 00:38:25,492
+Dolayısıyla bit hızı bout hızının iki katı olacak.
+
+222
+00:38:28,467 --> 00:38:36,247
+Birazdan zaten bununla ilgili daha detaylı konuşuyor olacağız.
+
+223
+00:38:38,407 --> 00:38:41,527
+Şimdi şeyden başlayalım, en basitinden başlayalım.
+
+224
+00:38:41,728 --> 00:38:44,307
+Amplitude Shift Gain, yani genlik modülasyonu.
+
+225
+00:38:48,211 --> 00:39:03,731
+Teknik olarak yaptığımız ya da yapacağımız şey burada ne aslında? İşaretin diğer özelliklerini sabit tutacağız. Diğer özellikler dediklerimiz neler? Sıklığı ve fazı. Bunları sabit tutarken sadece genliğini değiştireceğiz.
+
+226
+00:39:06,771 --> 00:39:13,731
+Hangi genlik seviyesinin neyi ifade edeceği kullanacağınız sistemin özelliği.
+
+227
+00:39:18,164 --> 00:39:32,923
+Onu siz belirleyeceksiniz. Ama burada ASK dediğimiz modülasyon da işin doğası gereği oluşacak bazı sıkıntılar var.
+
+228
+00:39:35,444 --> 00:39:41,543
+Şurada dağınır net olacak grafikle beraber göreceksiniz. Nedir o sıkıntılar? Aklınıza gelen ilk şey ne?
+
+229
+00:39:49,652 --> 00:40:16,572
+Konuza bir şey gelmiyor. Neyse. O zaman ben sordum, ben anlatayım. Ben cevaplayayım. Şimdi bakın. Burada sinyali takip ediyorsunuz. Aynı sinyal burada da var. Aradaki fark gelmek. Bunlardan bir tanesi sıfırı, bir tanesi biri ifade ediyor. Diyelim ki düşük olduğunda sıfır, yüksek olduğunda bir olsun. Şimdi böyle karar verdik.
+
+230
+00:40:17,268 --> 00:40:28,268
+Tek yaptığımız şey ne? Buradaki genlik değerlerini değiştirmek. Ve fakat bu genlik değerleri neyle de değişebilir?
+
+231
+00:40:29,608 --> 00:40:31,807
+Parazit vesaire değil mi?
+
+232
+00:40:32,288 --> 00:40:39,847
+Aynen öyle. Parazitle değişebilir. Aslında başka neyi konuştuk daha önce de bol bol?
+
+233
+00:40:40,248 --> 00:40:43,868
+Döteniyatını konuştuk. Yani sinyalin zayıflamasını konuştuk.
+
+234
+00:40:44,115 --> 00:40:58,536
+Mesafeye bağlı olarak bu sinyalde ne olabilir? Bir zayıflama olabilir. Dolayısıyla sizin farz-ı misal 1'i ifade etmek için gönderdiğiniz böyle bir sinyal, farz-ı misal 50 metre sonra bu hale gelebilir.
+
+235
+00:41:01,115 --> 00:41:08,016
+Dolayısıyla çok uzun mesafelerde bunu kullanıyor olmanız da sıkıntı, gürültü.
+
+236
+00:41:08,467 --> 00:41:12,228
+Yine zafiyet gösterdiği şeylerden biri.
+
+237
+00:41:12,768 --> 00:41:24,907
+Dolayısıyla Amplitude Shift Keying çok da sevilen kullanılım dediğimiz bir yöntem değil doğruda.
+
+238
+00:41:25,728 --> 00:41:27,467
+Baktığınız zaman bu sinyalin içerisinde...
+
+239
+00:41:28,371 --> 00:41:47,031
+Dikkat edin, şurada bir kalın çizgi var. 1, 2, 3, 4, 5. Burada 5 tane bout var. Çünkü her yaptığınız modülasyon aslında bir bout. Hani burada bir saniyelik alan diye düşünün. Şu siyahtan eksen başlangıcına kadar olan kısım.
+
+240
+00:41:47,031 --> 00:41:55,531
+Bout hızı 5, bit hızı da 5. Çünkü bizim her boutta gönderdiğimiz işaret karşılığında neye denk düşüyor? Bir bite denk düşüyor.
+
+241
+00:41:57,652 --> 00:42:04,011
+Alternatif, başka yöntem ne vardı? Frequency shift gain var. Sıklık üzerinde oynayacağız.
+
+242
+00:42:05,832 --> 00:42:11,372
+Yani şeyi sıkıştıracağız, frekansını arttıracağız ya da azaltacağız.
+
+243
+00:42:12,471 --> 00:42:16,751
+Güzel tarafı ne? Frekansıyla oynadığınız için sinyalin.
+
+244
+00:42:16,751 --> 00:42:21,251
+Aslında doğrudan amplitude shift gain de olduğu gibi, ASK'da olduğu gibi.
+
+245
+00:42:26,579 --> 00:42:31,099
+Dış ortam parazitlerinden etkilenmesi çok kolay değil.
+
+246
+00:42:31,340 --> 00:42:36,059
+Daha bu gibi durumlara karşı daha dayanıklı, daha şey.
+
+247
+00:42:43,092 --> 00:42:49,052
+Şimdi yaptığımızı daha iyi görselleştirebilmek adına şu slide'a geçmek daha efektif olacak.
+
+248
+00:42:49,632 --> 00:42:58,771
+Şimdi sinyaliniz bu. Bununla mesela sıfır ifade ediyorsunuz. Biri ifade etmek için bunun frekansını ne yapmışız?
+
+249
+00:42:59,771 --> 00:43:03,652
+1, 2, 3, 4, 2, 2 katına çıkartmışız.
+
+250
+00:43:04,371 --> 00:43:17,751
+Yavaşlatmışız, arttırmışız, yavaşlatmışız, arttırmışız. Burada da dikkat edin, gene şu siyah çizgiyle eksen başlangıcı arasında 5 tane aralık var, 5 tane bout var, 5 kere şeyimiz değişmiş, frekansımız değişmiş.
+
+251
+00:43:17,751 --> 00:43:25,531
+Her birinde de bir bit ifade ediyoruz. Dolayısıyla bit hızı da 5 bit per second, bout hızı da 5 bout per second. Aynı.
+
+252
+00:43:26,483 --> 00:43:37,264
+Yapabileceğiniz diğer bir modülasyon, face shift gain, yani faz üzerinde oynama. Fazla oynadığınız zaman ne olacak? Sinyalin aslında başlangıç yerini değiştireceksiniz.
+
+253
+00:43:38,643 --> 00:43:52,103
+Parzı mesela, şu aşağıdaki grafiğe bakacak olursanız, en baştaki aralık birinci bout için bit hızı ne? Pardon, bit hızı nereden çıktı? Sinyal ne?
+
+254
+00:43:52,512 --> 00:43:55,792
+Şu şekilde giden bir sinyal.
+
+255
+00:43:57,471 --> 00:43:58,931
+Bunu ne yapacağız?
+
+256
+00:44:00,512 --> 00:44:03,311
+Bazını, yani başlangıç noktasını değiştireceğiz.
+
+257
+00:44:03,572 --> 00:44:04,512
+Nasıl değiştirelim?
+
+258
+00:44:04,512 --> 00:44:05,912
+Ters çevirerek.
+
+259
+00:44:09,472 --> 00:44:16,112
+Yani 180 derece çevirdiğin zaman olabilir mesela.
+
+260
+00:44:16,659 --> 00:44:21,559
+Hocam, bir şey soracaktım. Öncekiyle ilgili. Hani ilkinde şey vardı ya.
+
+261
+00:44:22,559 --> 00:44:29,279
+[öğrenci], sen misin? Yani şey, şu an konuşanı görmüyorum da kim olduğunu anlamak için baktım. Efendim?
+
+262
+00:44:29,679 --> 00:44:38,279
+Evet, bunda hani bozulma oluyordu ya, şey bundan bir öncekinde. Peki bu frekans ve az önce gösterdiğiniz o anda, herhangi bir eksisi var mı bunun?
+
+263
+00:44:39,719 --> 00:44:44,079
+Şimdi şöyle bir şey var. Amplütüdu implement etmek çok kolay.
+
+264
+00:44:45,300 --> 00:45:07,560
+Doğru mu? Evet. Neden? Çünkü değiştirebiliyoruz zaten. Biz gönderdiğimiz sinyale bağlı. Hepsini sen gönderiyorsun zaten. Birini, baban birini, amcan göndermiyor. Hani hepsini sen gönderiyorsun. Hepsini değiştirmek senin elinde ama değiştirirken yapacağın şey ne? Bunu da sinyalin çıkışına koyacağın bir amplifier.
+
+265
+00:45:08,947 --> 00:45:16,788
+Doğrudan çat diye sinyalin şeyini değiştirebilir. Amplitüdünü değiştirebilir. Çok kolay. Doğru mu?
+
+266
+00:45:17,548 --> 00:45:17,708
+Evet.
+
+267
+00:45:19,467 --> 00:45:25,987
+Frequency shift gain yapacaksın. Dolayısıyla sinyalin frekansını devamlı değiştirmen lazım.
+
+268
+00:45:26,867 --> 00:45:32,268
+Şunu unutma. Sinyali gönderdim bitti değil. Sinyali karşı tarafta da algılaman lazım.
+
+269
+00:45:32,755 --> 00:45:39,495
+Yani bu frekans değişikliğini algılaman lazım. Dolayısıyla bunun implementasyonu biraz daha zor. Çok kolay bir şey değil.
+
+270
+00:45:46,452 --> 00:45:57,612
+Bunun her şeyini sormuştun sen. Dışarıdan parazite bozulmaya vesaire etkisini sormuştun. Bozulabilir tabii ki. Doğru değil mi? Ben soruyu yanlış hatırlamadım. Yani kafa karıştı.
+
+271
+00:45:57,612 --> 00:46:10,791
+Onu anladım o kısmı. Sonuçta varsa şey olmuyor, doyorsa daha az oluyor diğerine göre. Ama şeyi söyleyecektim ben. Bu metodu kullanmanın yan etkisi falan var mı diye söyleyecektim. Zor implementasyon olduğunu söyledim zaten.
+
+272
+00:46:11,472 --> 00:46:14,452
+Yani şöyle düşün. Radyoda ne dinliyor?
+
+273
+00:46:14,452 --> 00:46:18,432
+Ne dinliyorsun sen? Hangi kanalları dinliyoruz?
+
+274
+00:46:19,972 --> 00:46:23,152
+Yani şey normal frekanslarını dinliyoruz işte.
+
+275
+00:46:23,632 --> 00:46:27,152
+Ne ama? Hangi banttan dinliyorsun?
+
+276
+00:46:29,332 --> 00:46:32,392
+Ya şekil, bantları, numaraları mı söyleyeyim yani?
+
+277
+00:46:33,311 --> 00:46:36,211
+Evet, numara söyle, reklam yap burada bize.
+
+278
+00:46:37,852 --> 00:46:40,012
+Efendim dinliyor olabilir misin?
+
+279
+00:46:40,592 --> 00:46:40,992
+Evet.
+
+280
+00:46:41,452 --> 00:46:41,992
+Efendim ne?
+
+281
+00:46:44,692 --> 00:46:46,632
+Tam bilmiyorum.
+
+282
+00:46:48,971 --> 00:46:51,152
+Bak, slide'da yazıyor aslında.
+
+283
+00:46:54,011 --> 00:46:55,951
+Bak, burada ne yazıyor?
+
+284
+00:46:56,431 --> 00:46:56,991
+Frecans.
+
+285
+00:46:57,692 --> 00:46:58,491
+Burada ne yazıyor?
+
+286
+00:46:59,152 --> 00:47:00,531
+Frecans, bilasyon.
+
+287
+00:47:01,091 --> 00:47:02,152
+Efendim, AM ne?
+
+288
+00:47:03,431 --> 00:47:04,071
+Camplitude.
+
+289
+00:47:05,011 --> 00:47:10,251
+Aynen öyle. Yani zaten aslında bunları gerçek hayatta kullanıyoruz da.
+
+290
+00:47:11,699 --> 00:47:12,859
+Belli açılardan.
+
+291
+00:47:15,519 --> 00:47:22,179
+Şimdi, birebir bunu kullanmıyoruz. Benzer bir şey kullanıyoruz.
+
+292
+00:47:22,940 --> 00:47:29,259
+Orada yaptığımız şey aslında örnekseli örnekselin üzerine bindirmek. Onu da sonra konuşacağız.
+
+293
+00:47:30,219 --> 00:47:37,139
+Ama orada yaptığımız şey de tam Frequency Shift Gain değil ama Frekans modülasyonu yapıyoruz orada da gene.
+
+294
+00:47:39,311 --> 00:47:48,751
+Ki biraz ileride konuşacağız. Şimdi bunun yan etkisi vesairesi gibi bir şey değil de hani şunu söylemek lazım.
+
+295
+00:47:48,751 --> 00:47:55,891
+İşte ASK'ya göre FSK implementasyon anlamında bir tık daha zor.
+
+296
+00:47:57,132 --> 00:48:03,672
+Feyzi konuştuğumuz zaman o daha da zor. Ama sonra QAM'yi konuşacağız.
+
+297
+00:48:07,284 --> 00:48:11,784
+şey yapıyorsunuz, faz değişikliği yapıyorsunuz, onu yapmak çok daha zor.
+
+298
+00:48:13,504 --> 00:48:24,024
+Ve bunlar hani sadece yapmak değil, karşı tarafta da şöyle düşünün, her modülasyonda bir şey modüle ediyorsanız başka birini de demodüle etmesi lazım.
+
+299
+00:48:24,344 --> 00:48:25,604
+Yani açıp çözmesi lazım.
+
+300
+00:48:26,784 --> 00:48:28,084
+Ki anlamlandırabilsin.
+
+301
+00:48:28,744 --> 00:48:30,403
+Bu da eşittir, hassasiyet.
+
+302
+00:48:31,184 --> 00:48:33,544
+Yani QAM'de de mesela şey var.
+
+303
+00:48:34,195 --> 00:48:46,235
+Baktığınız zaman 4 kullanabilirsiniz, 8 kullanabilirsiniz, 16, 32, 64, 128 diye gidiyor. Ama onu her hatta, her sinyalde, her ortamda kullanamıyorsunuz.
+
+304
+00:48:46,235 --> 00:48:56,735
+Çünkü oraya işte şey yapmaya başladığınız zaman, 64 ya da 128 kullanmaya başladığınız zaman birazdan göreceğiz bir harita çıkıyor. O haritada semboller birbirine çok yakın.
+
+305
+00:48:57,155 --> 00:49:02,027
+Yani ufacık bir sapmada ne haline geliyorsun? İşte farz misal...
+
+306
+00:49:02,612 --> 00:49:09,832
+0, 0, 0, 0, 0 iken bir anda 1, 1, 1, 1 algılıyor karşı taraf. Tamamen batırabiliyorsun.
+
+307
+00:49:11,771 --> 00:49:14,672
+Şimdi fazı konuşuyorduk zaten.
+
+308
+00:49:16,552 --> 00:49:22,152
+Misal burada bakın, 0 ve 180 derece dönüşüm üzerinden ne yapılmış?
+
+309
+00:49:22,751 --> 00:49:26,112
+Sinyalin başlangıç noktası, faz noktası değiştirilmiş.
+
+310
+00:49:28,755 --> 00:49:36,235
+0 bit değerleri gönderin. Burada dikkat edin. Gene her bout bir bit. Dolayısıyla bout hızı ve bit hızı aynı aslında.
+
+311
+00:49:38,875 --> 00:49:54,096
+Bunu ne yapabiliriz? Biraz karıştırabiliriz. Nasıl karıştırabiliriz? Eğer sadece iki tane, pardon, açı değil, daha fazla açıyı kullanacak olursak, yani
+
+312
+00:49:56,052 --> 00:50:13,852
+0, 90, 180 ve 270'i kullansak, o zaman ne olacak? 0, 90, 180, 270. 4 ayrı şeyimiz var. Doğru mu? Fazımız var.
+
+313
+00:50:14,324 --> 00:50:21,544
+4 ayrı fazımız varsa, bu 4 ayrı fazı ifade etmek için ne yapabiliriz? 2 bit kullanabiliriz.
+
+314
+00:50:21,664 --> 00:50:29,564
+Yani gönderdiğimiz her şey, sinyal aslında 2 farklı biti ifade edecek.
+
+315
+00:50:30,684 --> 00:50:40,564
+Dolayısıyla da, burada bu örnek üzerinden bakacak olursanız, mesela, pardon, 90 derece,
+
+316
+00:50:41,492 --> 00:50:44,372
+Şurada bir dakika, orijinal sinyal nerede? En sondaki.
+
+317
+00:50:45,272 --> 00:50:52,092
+0 derecede 0,0 ifade ediyoruz. 0,1'i 90 dereceyle ifade ediyoruz. Dikkat edin, 90'dan başlıyor sinyal.
+
+318
+00:50:54,272 --> 00:51:01,412
+Şeyi, 1,0'ı 180 ile ifade ediyoruz. 90 derece daha ileriden başlamış ikincisi.
+
+319
+00:51:02,931 --> 00:51:09,692
+Üçüncüsü de gene bir sıfır kombinasyonu olduğu için onu da 180'den başlatmışız.
+
+320
+00:51:10,271 --> 00:51:14,192
+Bir bir de son şeyimiz zaten 270 derece olacak dediğimiz.
+
+321
+00:51:14,731 --> 00:51:16,991
+Onu da 270'den başlatmışız.
+
+322
+00:51:17,431 --> 00:51:20,791
+Aslında alttaki ilk tepe noktasından başlatmışız.
+
+323
+00:51:22,452 --> 00:51:26,732
+Böyle yaptığımız zaman her boutta ne gönderiyoruz aslında? 2 bit gönderiyoruz.
+
+324
+00:51:26,832 --> 00:51:31,812
+Dolayısıyla bit hızımız 10 bit per second oluyor ama bout hızımız yine 5 oluyor.
+
+325
+00:51:32,492 --> 00:51:36,272
+Bu biraz daha kafanıza oturdu inşallah diye düşünüyorum.
+
+326
+00:51:38,272 --> 00:51:39,812
+Ama bilemiyorum tabii.
+
+327
+00:51:41,292 --> 00:51:48,132
+Şey noktasında, demin gördüğünüz parçaları, şimdi burada tek de bakacak olursanız.
+
+328
+00:51:48,532 --> 00:51:52,692
+İşte 0, 0 zaten orijinal sinyal. Bakın solda görüyorsunuz.
+
+329
+00:51:54,772 --> 00:52:07,492
+0, 1 için 90 derece şuradan başlamışız. 1, 0 için 180'den başlamışız. 1, 1 için de 270'den başlamışız.
+
+330
+00:52:13,844 --> 00:52:28,584
+Şimdi yapabileceğiniz şeylerden bir tanesi, ne demiştik? Fazla amplitude'ü bir arada modüle etmek. Böylece balt başına aktarabildiğiniz bit sayısını arttırmak.
+
+331
+00:52:31,584 --> 00:52:37,184
+Bunu yaptığınız zaman aslında böyle bir harita oluşturuluyor.
+
+332
+00:52:39,411 --> 00:52:56,791
+Şimdi 4 faz kullandınız. Deminki örneği hatırlayın. 0, 90, 180, 270. 4 tane faz kullanmıştınız. Tek bir genlik seviyesi kullandığınız zaman buna QAM4 diyoruz. Ve böyle bir haritası oluyor aslında.
+
+333
+00:53:03,891 --> 00:53:08,131
+Sinyalin neye karşılık geldi?
+
+334
+00:53:08,811 --> 00:53:10,871
+Şimdi bunu ne yapabilirsiniz?
+
+335
+00:53:11,871 --> 00:53:16,131
+4 faza 2 de genlik eklediğiniz zaman aslında 8 kombinasyon oluyor.
+
+336
+00:53:16,251 --> 00:53:21,971
+Dolayısıyla her bir sembolünüz bu sefer ne ifade etmeye başlayacak?
+
+337
+00:53:22,651 --> 00:53:24,451
+3 bit ifade etmeye başlayacak.
+
+338
+00:53:29,076 --> 00:53:39,655
+Bunun canlı örneğine bakacak olursak, dikkat edin, orijinal sinyalimiz bu aslında.
+
+339
+00:53:40,115 --> 00:53:43,316
+0-0-0 değişmemiş hali.
+
+340
+00:53:44,436 --> 00:53:48,775
+Bunda ne yapabiliriz? Haritayı bir hatırlayın, şu tarafı.
+
+341
+00:53:50,255 --> 00:53:53,275
+Genliğini arttırdığınız zaman 0-0 biriyiz.
+
+342
+00:53:54,003 --> 00:54:00,403
+İfade ediyor demişiz. Dikkat edin, aynı sinyal, genliğini arttırmışız. 001 olmuş.
+
+343
+00:54:02,883 --> 00:54:14,403
+Sonra ne var? 100. Bunu 180 derece çevirdiğimiz zaman 100 olacak demişiz. Bakın bunu 180 derece çevirmişiz.
+
+344
+00:54:15,403 --> 00:54:16,463
+100 olmuş.
+
+345
+00:54:18,579 --> 00:54:28,379
+Bunu 180 derece çevirip, orijinal sinyali 180 çevirip bir de genliğini arttırırsak 1, 0, 1 olacak demişiz. O da burası. Tamam mı?
+
+346
+00:54:33,108 --> 00:54:41,628
+Şimdi kollama tekniğiyle elde edebileceğiniz bout ve bit hızı arasındaki ilişki burada verilmiş.
+
+347
+00:54:45,408 --> 00:54:58,428
+Siz normalde ASK, FSK vs. kullanıyorsanız aslında hızınız bout ve bit cinsinden aslında aynı.
+
+348
+00:54:59,188 --> 00:55:08,027
+Ne zamanki işin içerisine olasılıkları arttıracak şekilde, mesela fazla iki faz değil de dört faz kullanmaya başladınız.
+
+349
+00:55:08,208 --> 00:55:11,867
+Yani her değişikliğiniz iki bitle ifade edilebilir hale geldi.
+
+350
+00:55:12,128 --> 00:55:16,568
+O zaman bit hızınız, baut hızınıza göre artmaya başlıyor.
+
+351
+00:55:17,768 --> 00:55:18,987
+Aritmetik de burada zaten.
+
+352
+00:55:21,235 --> 00:55:48,175
+Demin konuştuğumuz şeylerden bir tanesi örneksel örneksel kodlama. En böyle yaygın, en bilinen, en böyle hayatımızda olan kısmı da radyo haberleşmesi. Radyoda ne yapıyoruz? Zaten örneksel olan bir işareti, sesi. Yine örneksel olan bir sinyalin üzerine bindirip şey yapıyoruz, yolluyoruz. Üç tane de temel modülasyonu var. AM, FM, PM.
+
+353
+00:55:48,980 --> 00:56:12,980
+Ama biz genelde FM'i kullanıyoruz. Yaptığımız şey ne? Aynı. Taşıyıcı sinyalin genliğini arttırmak istenen örneksel işaret ile kipliyoruz EM'de. Hani doğrudan genliği şuraya çıkart, buraya indir vs. değil. Taşıdığımız sinyalin kendisiyle bir şekilde...
+
+354
+00:56:14,099 --> 00:56:39,599
+Ne yapıp? Birleştirip, öyle gönderiyoruz. Modifikasyonu ona göre yapıyoruz aslında. Frequency Modulation'da da aynı şeyi yapıyoruz. Yine yaptığımız şey, taşıyıcı simyalin sıklığı üzerinde oynamak. BM'de bu sefer de fazı üzerinde.
+
+355
+00:56:40,000 --> 00:56:48,900
+Oynuyoruz. Yani taşıdığımız örneksel sinyalin amplitude değerlerini kullanarak fazında ya da frekansında modülasyon yapıyoruz.
+
+356
+00:56:49,519 --> 00:56:54,599
+Şimdi, bu geçen hafta diğer grupla konuştuğumuz kısımdı. Bu bitti. Güzel.
+
+357
+00:56:55,900 --> 00:56:58,000
+Bir 10 dakika ara verelim.
+
+358
+00:56:59,780 --> 00:57:01,280
+Şeye başlayacağız. Şimdi.
+
+359
+00:57:02,559 --> 00:57:04,539
+Bir saniye. New share diyeyim.
+
+360
+00:57:04,539 --> 00:57:06,280
+Bugün.
+
+361
+00:57:07,635 --> 00:57:26,215
+Diğer grupla da konuştuğumuz sayısal veri iletim tekniklerine başlayacağız. Bir de iletim ortamına başlayacağız. Onları konuşacağız. Bir 10 dakika ara verin. Pardon, ben de bir boğazımı bir dinlendireyim. Sonrasında devam edeceğiz arkadaşlar.
+
+362
+01:07:32,371 --> 01:07:37,471
+Arkadaşlar, şimdi kaldığımız yerden devam edelim.
+
+363
+01:07:41,844 --> 01:07:48,603
+Kalan kısımda sayısal veri iletim tekniklerine bakacağız. Yani temelde paralel ve seri iletimi konuşacağız.
+
+364
+01:07:50,224 --> 01:08:03,463
+Her ikisi için de geçerli olan temel bazı tanımları konuşacağız. Mesela DT, LCR, para birimler. Bunların bağlantı şekillerini konuşacağız.
+
+365
+01:08:04,043 --> 01:08:06,203
+Bağlantıları ile ilgili standartları konuşacağız.
+
+366
+01:08:07,027 --> 01:08:15,947
+Artı, iletim ortamını konuşmaya başlıyoruz. İletim ortamı dediğimiz şey guided ya da unguided olabilir. Yani guided ve unguided'dan kastımız ne?
+
+367
+01:08:19,127 --> 01:08:23,948
+Haberleşmeyi bir kablo üzerinden gerçekleştiriyor olabiliriz. Bu kablo da yerine göre...
+
+368
+01:08:25,779 --> 01:08:29,299
+Elektriksel sinyal de aktarıyor olabiliriz. Işık da aktarıyor olabiliriz.
+
+369
+01:08:29,379 --> 01:08:38,319
+Yani aslında bir bakır kablodan da elektrik sinyaline aktardığımız kablolar aslında bakır kablo olarak düşündüğümüz, konuştuğumuz yerler.
+
+370
+01:08:38,439 --> 01:08:43,599
+Bakır kablodan da bahsediyor olabiliriz. Fiber optik bir kablodan da bahsediyor olabiliriz.
+
+371
+01:08:43,599 --> 01:08:49,599
+Yani içerisindeki malzemenin silika.
+
+372
+01:08:49,984 --> 01:09:17,564
+Cam tabanlı olduğu, içerisinden bir ışık sinyalini aktarabildiğimiz kablodan da bahsediyor olabilir. Bunlar hep nasıl ortamlar? Guided ortamlar. Yani belirli bir sınır ve kapsam içerisinde hareket etmesini sağladığımız, aktarmaya çalıştığımız sinyalin, o kapsam içerisinde kalmasını sağladığımız ortamlar. Bunun dışında bir de unguided ortamlar olabilir. Misal, infrared misal, radio frekans, RF misal.
+
+373
+01:09:18,707 --> 01:09:25,268
+Microway, yani olabilir, olabilir alternatifleri, farklı noktaları mevcut.
+
+374
+01:09:26,007 --> 01:09:30,047
+Şimdi, tüm bunların üzerinden geçeceğiz.
+
+375
+01:09:30,147 --> 01:09:32,587
+Bunu bir tersi koymazsa tamamlayacağız.
+
+376
+01:09:32,727 --> 01:09:34,107
+Öbür gruba da yetişmiş olacağız.
+
+377
+01:09:35,627 --> 01:09:37,907
+Şurayı kapatırsam daha rahat edeceğim.
+
+378
+01:09:39,507 --> 01:09:40,907
+Temel olarak...
+
+379
+01:09:44,051 --> 01:09:59,931
+Neyi konuştuk şu ana kadar? Haberleşmeyle ilgili alıcıyı, vereceği konuştuk. Bir haberleşmenin gerçekleşmesi için yoldalacak sinyal üzerinde nasıl modülasyonlar yapabileceğimizi konuştuk.
+
+380
+01:10:00,931 --> 01:10:09,931
+Ama bunun dışında konuşmamız gereken birkaç konu daha var. Nedir onlar? Misal, biz alıcı ve vereceği...
+
+381
+01:10:10,176 --> 01:10:12,556
+Haberleşme ortamına nasıl bağlayacağız?
+
+382
+01:10:15,396 --> 01:10:19,496
+Yani nasıl bir konnektör üzerinden bağlanacak şeylerden bir tanesi bu.
+
+383
+01:10:20,056 --> 01:10:20,776
+Konnektörün tipe.
+
+384
+01:10:21,356 --> 01:10:32,016
+Bir diğer şey, haberleşme ortamı eğer guided bir ortamsa özellikle de kaç tane tel olacak, hangi telden neyi aktaracağım?
+
+385
+01:10:33,460 --> 01:10:41,000
+Birazdan konuşacağız, seri haberleşmiş bir özellikle. Senkron, asenkron, hatta isosenkron yeri bir yapı var.
+
+386
+01:10:43,796 --> 01:11:02,716
+Bunlardan hangisi olduğuna bağlı bir kılak sinyali olacak mı, olmayacak mı, olacaksa hangi telden gönderilecek, hangi tel transmit, hangi tel receive kontrol sinyali varsa bunun hangisi hangi telde olacak vesaire gibi şeylerin ne yapılmış olması lazım? Belirlenmiş olması lazım.
+
+387
+01:11:03,347 --> 01:11:18,128
+Bugün genel kapsamda hep bunları konuşacağız. Ama bunu konuşmadan önce nasıl bir ayrım yapacağız? Öncelikle haberleşmedeki iletim tekniğini paralel veya seri olarak sınıflayacağız.
+
+388
+01:11:27,252 --> 01:11:44,471
+Aynı anda aktarıyorsak, bu en bit işte 8 de olabilir, 4 de olabilir, 16 de olabilir, 32 de olabilir, fark etmez. Yapınıza bağlı olarak. Aynı anda aktarıyorsak, o zaman aynı andan kastım şu yalnız hani.
+
+389
+01:11:44,815 --> 01:12:05,155
+Aynı çerçeve içerisinde aktarmak, aynı şeyle aktarmak değil. Aslında her biri için, kaç bitlikse, 8 bitlikse, 8 bitin her biri için ayrı bir tel kullanıp bilgiyi aktarırken de bunu 8 biti birden, ilgili tel üzerinden, teller üzerinden tek seferde aktarmaktan bahsediyoruz.
+
+390
+01:12:05,155 --> 01:12:06,716
+Bu yapı ne? Paraleliyetim.
+
+391
+01:12:10,260 --> 01:12:15,180
+Paralel iletimin en büyük artısı ne? En büyük avantajı ne?
+
+392
+01:12:17,180 --> 01:12:19,920
+Tabii ki hız. En büyük dezavantajı ne?
+
+393
+01:12:23,988 --> 01:12:25,847
+Bunu da çok hızlı söylersiniz zaten.
+
+394
+01:12:25,968 --> 01:12:27,228
+Tarih telin olması.
+
+395
+01:12:27,847 --> 01:12:28,188
+Yani?
+
+396
+01:12:29,828 --> 01:12:30,768
+Maliyet mi oluyor?
+
+397
+01:12:32,768 --> 01:12:38,948
+Yani bu hayatta her şeyin ucu iki şeye dayanır. Onlardan bir tanesi paradır.
+
+398
+01:12:41,088 --> 01:12:43,328
+Dolayısıyla aynen öyle para.
+
+399
+01:12:43,328 --> 01:12:46,328
+Şimdi farz misal...
+
+400
+01:12:47,220 --> 01:13:01,220
+5 metre için kablo çektiğin zaman ne yapacaksın? 8 bitlik bir paralellik varsa, 8 biti aynı anda göndermek istiyorsan, bir yerine 8 kablo çekeceksin, 5 yerine 40 metre kablo harcayacaksın gibi düşün.
+
+401
+01:13:01,220 --> 01:13:13,220
+Ya da bu şeyde çok batmayabilir, kısa mesafelerde çok batmayabilir ama bir kilometrelik bir yere gitmeye kalktığın zaman aynı şeyin olması can sıkıcı olacaktır.
+
+402
+01:13:16,500 --> 01:13:28,739
+Dolayısıyla, şey yaptığı, nedir o? Dezamataj olarak karşımıza çıktığı temel yer, maliyet paralel iletiminde.
+
+403
+01:13:29,640 --> 01:13:43,120
+Paralel iletiminde aslında baktığınız zaman, bir diğer sıkıntı ya da problem de şu, paralel portun, paralel haberleşmenin en çok kullanıldığı yer aslında printerlar.
+
+404
+01:13:43,828 --> 01:13:53,427
+Printer'larla ilgili bu yapı kurulduğunda sadece her aktarılan bit için şey yapılmamış, nedir o?
+
+405
+01:13:55,528 --> 01:14:03,228
+Bir bağlantı noktası, bir pin kullanılmamış. Bunun yanı sıra kontrol pinleri de oluşturulmuş.
+
+406
+01:14:03,228 --> 01:14:05,828
+Kontrol pininden kastımız ne?
+
+407
+01:14:06,644 --> 01:14:12,584
+Bir printer var karşı tarafta, bir tarafta da bilgisayar var, bilgisayar veriyi gönderiyor, printer da basıyor.
+
+408
+01:14:13,304 --> 01:14:17,923
+Printer'ın geri bir şey göndermesi, veri göndermesi gibi bir şey söz konusu değil mi? Normal şartlarda.
+
+409
+01:14:19,064 --> 01:14:30,084
+Onun yerine ne olması lazım? Printer'ın bir şekilde PC'ye bazı özel durumları haber ediyor ya da bildirebiliyor olması lazım.
+
+410
+01:14:30,764 --> 01:14:32,324
+Misal, kağıt bitti.
+
+411
+01:14:34,484 --> 01:14:42,224
+Misal, benim bufferım dolu biraz yavaş gönder. Yani sen pıtır pıtır gönderiyorsun da ben daha onu işleyemedim. Neden?
+
+412
+01:14:42,864 --> 01:14:47,024
+Printed dediğimiz şey, özellikle eskiye baktığımız zaman çokça mekanik bir yapı.
+
+413
+01:14:49,104 --> 01:14:57,024
+PC zaten daha hızlı bir yapı. Takır takır bilgi gönderiyorsunuz ama adam onu o kadar hızlı yazamıyor ya da şeye dönüştüremiyor olabilir.
+
+414
+01:15:00,787 --> 01:15:21,347
+Dolayısıyla arada başka kontrol pinleri de var. Baktığınız zaman DB25 bağlantısını, konnektör tipini kullanıyorlar aslında. Ama bu DB25 içerisinde aslında 18 tane kullanılıyor. 8 tanesi databiti, düşünün işte geriye kalan 10 tane şey.
+
+415
+01:15:21,779 --> 01:15:39,760
+PIN, işte Ground'u var, bunun bircisi var, signal'ı var, paper out'u var, error'u var, reset'i var, vesairesi var. Var da var. Onların da birçoğu aslında doğrudan kullanılmıyor.
+
+416
+01:15:41,860 --> 01:15:45,239
+Tasarımsa olarak standartın içerisine konmuş, bu da fakat kullanılmıyor.
+
+417
+01:15:49,908 --> 01:16:08,208
+Paralel haberleşme ile ilgili bir diğer sıkıntı, maliyeti zaten söyledik. Çok kablolu bir iletim var. Yani DB25'de 18 tane tel kullanılıyor. Dolayısıyla 1, 2, 3, 5 seride ne çekeceksiniz, topu topu en fazla 4 tane çekersiniz.
+
+418
+01:16:08,208 --> 01:16:15,048
+Hani ground-to-clock'u transmitter gibi deseniz, 4 tane ile bitirebilirsiniz de.
+
+419
+01:16:15,408 --> 01:16:25,927
+Daha kasarsanız, diferansiyel kullanıp, kulağı kullanmayıp, vesaire yapıp, bunu yapıp, bunu yapıp, 3'e, 2'ye indirmek bile mümkün. Özellikle tek yönlü çalışacaksanız.
+
+420
+01:16:27,808 --> 01:16:39,408
+Şeyde ise, burada ise 18 tane tel var. Yani iş maliyet olarak anlamsız derecede yüksek. Bir diğer sıkıntı da mesafe sınırı. Bu paralel haberleşmedeki...
+
+421
+01:16:42,644 --> 01:16:57,764
+Çok pardon. Verinin aktarımı için aslında belli bir mesafe sınırı da var. Bunun da temel nedeni veri aktarımının aslında yine bir klok üzerinden yapılıyor olması.
+
+422
+01:16:57,764 --> 01:17:09,884
+Baktığınız zaman konnektörün hangi pininin ne için kullanıldığı bilgisi burada var. Fakat bunlar nasıl diyeyim?
+
+423
+01:17:10,228 --> 01:17:14,887
+Hani ezberlemeniz, by default bilmeniz gereken falan şeyler değil.
+
+424
+01:17:15,148 --> 01:17:19,448
+Öyle bir beklenti yok, öyle bir şey de yok, düşünce de yok benim tarafımda.
+
+425
+01:17:19,448 --> 01:17:26,948
+Onu baştan söyleyeyim. Sadece genel kültür öyle biliyor olun ya da bakıyor olun gibi düşünebilirsiniz.
+
+426
+01:17:29,528 --> 01:17:35,988
+Paralel iletimde normal şartlarda yani paralel haberleşme için oluşturulmuş yani.
+
+427
+01:17:36,304 --> 01:17:46,423
+O mantıkta oluşturulmuş en temel yapı, bildiğimiz, kullandığımız yapı aslında PC ile printer arasındaki haberleşme.
+
+428
+01:17:46,423 --> 01:17:55,604
+PC ile printer arasındaki haberleşme aslında modifiye edilerek PC'den PC'ye haberleşme de sağlanabiliyordu eskiden.
+
+429
+01:17:55,744 --> 01:18:02,564
+Fakat yapı olarak ya da mantık olarak dikkat edin, printer'a spesifik bir ton pini var.
+
+430
+01:18:03,091 --> 01:18:11,171
+Dolayısıyla doğrudan iki paralel portu birbirine bağlayıp sonra da çalışmasını beklemek gibi bir durum yok. Onun yerine şöyle bir durum var.
+
+431
+01:18:13,203 --> 01:18:34,543
+Null modem bağlantısı gibi bir bağlantı yapıp, yani iki bilgisayarın TB25 bağlantı portları arasında pinlerin bazılarını çaprazlayacak şekilde bir bağlantı yapıp, sonra da özel bir yazılımla aslında software kontrol bir şekilde haberleşmeyi sağlayabiliyorsunuz.
+
+432
+01:18:39,507 --> 01:18:48,467
+Şeye bakacak olursanız, tablonun ortasına kadar bakacak olursanız, aslında 3 aşağı 5 yukarı şeyi görürsünüz.
+
+433
+01:18:52,307 --> 01:19:01,047
+Nedir o? Yansımayı görürsünüz. O yansımada da bir şeyi, pin sırasını ters yazmışız. Öbür türlü yazsak daha net göreceksiniz.
+
+434
+01:19:02,003 --> 01:19:16,523
+Bikkanın Error Select Paper Out, Acknowledge Büzü'ye bağlı ilk 4 bit. Bu taraftaki ilk 4 bit de, şurada sıralamayı ters kaydırmışız herhalde, Error Select Paper Out, Acknowledge Büzü'ye bağlı. Yani crosslanmış bir şekilde.
+
+435
+01:19:16,523 --> 01:19:27,543
+Bir taraftan data çıktığı zaman karşı tarafta oluşacak olan şeyi kullanarak, nedir o?
+
+436
+01:19:28,500 --> 01:19:42,139
+Interrupt'ı kullanarak aslında, dikkat edin hiile burada o. Yani ne yapıyorsunuz? Datanın 4 bitlik kısmı, daha doğrusu 5 bitlik kısmı, neye karşılık geliyor karşı tarafta?
+
+437
+01:19:42,520 --> 01:19:51,639
+Hep kontrol pinlerine karşılık geliyor. Bu kontrol pinleri de ne olmasını sağlayacak? Karşı tarafta veri geldiği zaman bir uyarı oluşmasını sağlayacak.
+
+438
+01:19:54,899 --> 01:20:05,059
+İlla ve illa ya error, ya select, ya peep, router, ya eknology, ya buizi bir tanesi uyarılacak herhangi bir kombinasyonda.
+
+439
+01:20:09,876 --> 01:20:15,796
+Şimdi alternatif olarak yapabileceğiniz, paralel iletim yerine yapabileceğiniz şey ne? Seri iletim tabii ki.
+
+440
+01:20:18,355 --> 01:20:23,896
+Seri iletimin avantajı ne? En temel avantajı deminden beri konuştuğumuz tel sayısının azaltılması.
+
+441
+01:20:23,896 --> 01:20:29,896
+Yani 8 bitlik ya da 16 bitlik bir iletim yapıyorsanız kullanacağınız tel sayısı.
+
+442
+01:20:30,931 --> 01:20:43,711
+Paralelde 8 ya da 16 iken seride öyle bir kısıt yok. Dolayısıyla tel miktarını azalttığınız için maliyet azalıyor. Bir diğer şey mesafe kısıtını ortadan kaldırmak.
+
+443
+01:20:45,332 --> 01:21:08,672
+Mesafe noktasında çok daha uzun mesafelere gidebilme şansınız var. Mesafe ile ilgili şeyi daha önce de konuşmuştuk hatırlarsanız. Oluşturduğunuz sayısal sinyal ne olacak? Ortalamasına bağlı olarak, sinyalin ne seviyede kaldığına bağlı olarak DC bir bileşim oluşturabilir. İletimi bu da zorlaştırabilir.
+
+444
+01:21:09,300 --> 01:21:29,100
+Kablo uzunluğu sinyalin zayıflaması demektir. Çok uzun bir mesafede clock vesaire aktaramazsınız. O da bir problem. Aktarırsınız da kaymalar olacaktır, problem olacaktır. Seri iletimde bunları çözebilecek çeşitli işler yapıyoruz. Bu sayede daha uzun mesafeye, daha az maliyetle gidebiliyoruz.
+
+445
+01:21:33,939 --> 01:21:41,059
+Ana şeyde, kategoride düşünebiliriz. Bunlardan bir tanesi asenkron, diğeri de senkron.
+
+446
+01:21:41,779 --> 01:21:49,539
+S zamanlı ya da S zamanlı olmayan diye de bakabilirsiniz. S zamansız ve S zamanlı diye de bakabilirsiniz. Nasıl isterseniz.
+
+447
+01:21:50,359 --> 01:22:00,579
+Bu iki grubun özelliği şu. S zamanlılık aslında alıcı ve göndericinin aynı clock sinyalini kullanıyor olmasını ifade eder.
+
+448
+01:22:01,747 --> 01:22:10,188
+hattımızın üzerinde bir clock sinyali var ve bu clock sinyalini her ikimizde kullanıyoruz.
+
+449
+01:22:10,188 --> 01:22:16,007
+İkimizden biri üretiyor bunu ama ikimiz birden bu sinyale bağlı olarak ne yapıyoruz?
+
+450
+01:22:16,127 --> 01:22:19,807
+Hattı üzerindeki verinin değişimini takip ediyoruz.
+
+451
+01:22:24,627 --> 01:22:41,708
+Bu her zaman bu kadar kolay olmuyor. Her zaman daha önce de konuştuğumuz sebeplerden dolayı. Mesela kılığı böyle hatta koyup göndermek istemiyorsunuz. Bunun yerine farklı şekillerde de eş zamanlık sağlamaya çalışıyoruz. Detaylarını burada konuşacağız.
+
+452
+01:22:42,195 --> 01:22:50,376
+Seri iletim dediğimiz zaman akla gelen en böyle temel şeylerden bir tanesi Aras 232.
+
+453
+01:22:50,376 --> 01:22:54,376
+Aslında Aras 232 şey...
+
+454
+01:22:59,828 --> 01:23:08,228
+EIA olarak da, EIA 232 olarak edilir. Yani standardı koyan organizasyon ismiyle.
+
+455
+01:23:09,788 --> 01:23:15,668
+Arası 232'de ne yapmışlar? Non-returned to zero linear kodlama yapılmış.
+
+456
+01:23:16,608 --> 01:23:22,148
+Topu topu 3 tane tel yeterli oluyor. Biri transmit, biri receive, biri de ground.
+
+457
+01:23:25,043 --> 01:23:38,323
+Ama hani konnektör olarak baktığınız zaman genelde DB9 diye bir konnektörü var. 9 pinli bir konnektör ama 3'ü sadece yeterli. Geri kalan pinleri eğer isterseniz akış kontrolü sağlamak için kullanıyorsunuz.
+
+458
+01:23:38,323 --> 01:23:47,463
+Yani ready to send, clear to send vs. şeklinde iki ucu arasındaki sinyalleşme için kullanıyorsunuz.
+
+459
+01:23:47,539 --> 01:23:55,579
+Uzun mesafelere giderken ne olur demiştik? Sinyal seviyesinde zayıflama olur, düşebilir vs. demiştik.
+
+460
+01:23:55,639 --> 01:24:02,119
+Dolayısıyla uzun mesafe gitmek istiyorsanız, gerilim aralıklarınızın böyle geniş olması lazım.
+
+461
+01:24:03,779 --> 01:24:08,119
+Herhangi bir etkiye karşı dayanıklı olmayı istiyorsanız. Burada da onu yapmışlar.
+
+462
+01:24:09,420 --> 01:24:15,020
+Eksi 5 ile eksi 15 volt arası biri ifade etmek için kullanılmış.
+
+463
+01:24:15,667 --> 01:24:21,047
+Artı 5 ile artı 15 arası da 0 ifade etmek için kullanılır.
+
+464
+01:24:21,587 --> 01:24:31,407
+Bu ne demek? Siz bir uçta eksi 15'i bastığınız zaman, bilmem kaç metre sonra bu sinyalde bir zayıflama olsa bile ne olacak?
+
+465
+01:24:33,119 --> 01:24:39,340
+Üstüne çıkmayacak aslında. Yani eksi dört olmayacak ya da eksi iki olmayacak ya da sıfır olmayacak.
+
+466
+01:24:39,880 --> 01:24:46,559
+Dolayısıyla daha uzun mesafeye gidebileceksiniz. Hala anlamlandırabildiğiniz aralıkta kalıyor olacak.
+
+467
+01:24:53,587 --> 01:25:01,707
+Şimdi, iletimi yaparken, yani seri iletimi yaparken S zamanlı ya da S zamansız olabiliriz demiştik. S zamansızdan başlayalım.
+
+468
+01:25:03,987 --> 01:25:15,547
+S zamansızda, şurada bir grafik var mıydı? Var da. Bu çok atlamış olacağız galiba. Gene de atlayalım, bu grafikle konuşalım önce.
+
+469
+01:25:16,595 --> 01:25:26,775
+Sonra dün bu tarafı konuşalım. Daha mantıklı ya da daha anlamlı. Dün en azından buraya gelince arkadaşların kafası biraz daha netleşti. Bazı şeyler daha iyi oturdu.
+
+470
+01:25:27,435 --> 01:25:34,135
+Şimdi es zamansızız. Yani iki taraf arasında bir es zamanlılık yok. Bir şekilde bir senkronluk yok.
+
+471
+01:25:44,692 --> 01:26:08,652
+Bir karar verdiğimiz yapı olması lazım. Yani, burada şimdi şeyi görüyorsunuz, başlangıç noktası, bir start biti var. Burada hattı bir değişim olmuş, start bitinden sonra birinci bit için bir değişim olmuş, sonra diğer bit için bir değişim olmuş, diğer bit için değişim olmamış, aynen devam etmiş, arada dört tane sıfır gelmiş, sonra tekrar bir değişim olmuş.
+
+472
+01:26:09,039 --> 01:26:18,440
+Şimdi asenkron yapacaksak bu işi, şu bit aralığının süresi konusunda önceden anlaşmış olmamız lazım.
+
+473
+01:26:20,220 --> 01:26:24,619
+Her iki tarafın bunun içerisinde anlaşmış olması lazım. Ortak bir kulağımız yok.
+
+474
+01:26:26,000 --> 01:26:27,180
+Onun yerine neyimiz var?
+
+475
+01:26:30,960 --> 01:26:35,920
+İşaretin hatta duracağı süre konusunda bir anlaşmışlığımız var.
+
+476
+01:26:37,300 --> 01:26:38,300
+Hmm...
+
+477
+01:26:45,395 --> 01:26:59,835
+Ve fakat burada şöyle bir problem var. Mesela RS-232'de hatta eğer veri yoksa bile eksi gerilim seviyesi basılıyor. Yani eksi 15'i basıyor.
+
+478
+01:27:00,895 --> 01:27:08,655
+Dolayısıyla ne yapması lazım? Bir yerde uzunluğunun böyle bir eksi 15 devam eden bir dizi var.
+
+479
+01:27:09,055 --> 01:27:34,695
+Asenkronuz zaten. Herhangi bir T anında adam bilgisi varsa gönderecek. Bu bilgiyi gönderirken de ne olacak? Bir yerde bilginin başladığını söylemesi lazım. Yani başına bir şey eklemek lazım. Hatta devamlı negatif voltaj varsa bir şeyin başladığını söylemenin en güzel yolu ne olacak? Alternatif olan pozitif gerilimi söylemek. Yani sıfır koymak.
+
+480
+01:27:35,123 --> 01:27:40,343
+Eksiler 1'di, pozitifler 0. Dolayısıyla 0 başlangıç biti olarak konması lazım.
+
+481
+01:27:42,363 --> 01:27:53,064
+Akabinde de şey yapısı gereği, RS-232'nin yapısı gereği, orada tanımlanmış şeyde, toplamda 8 bitlik bir veri gönderiyorsunuz.
+
+482
+01:27:53,603 --> 01:27:57,963
+Yani start biti, sonra 8 bit, sonra bir de stop bitini gönderiyorsunuz. Toplam 10 bit.
+
+483
+01:28:03,220 --> 01:28:20,300
+8 bitin seçilmiş olmasının temel nedeni de bu dediğimiz asenkron durum. Yani ortak bir clock sinyali yok. Önceden anlaşılmış olan bir zaman aralığı var. Her zaman aralığında ne olacağını bekliyoruz.
+
+484
+01:28:20,623 --> 01:28:31,904
+işarette bir değişim olduğunu ya da olabileceğini bekliyoruz. Yani sıfırdan sıfıra geçerken bir değişim yok ama artık ikinci sıfıra başladığını biliyor olacağız.
+
+485
+01:28:32,724 --> 01:28:39,003
+Bunu yapabilmek için neye ihtiyacımız var? Bu sistemler birbirinden bağımsız sistemler, distributed sistemler, ortaklık logları da yok.
+
+486
+01:28:39,304 --> 01:28:46,203
+Sadece süre üzerinde anlaşmışlar. Dolayısıyla start bitini gördükten sonra ne yapacaklar? Kendi timerlarını set edecekler.
+
+487
+01:28:46,431 --> 01:28:49,451
+Birbirinden bağımsız iki timer'ı set edecekler.
+
+488
+01:28:51,532 --> 01:28:56,731
+Bu timer'lar arasında da, ya daha doğrusu bu timer'lar da bir clock sinyaline bağlı.
+
+489
+01:28:56,791 --> 01:28:59,511
+Bu clock sinyaller arasında ne olabilir? Drift'ler olabilir.
+
+490
+01:28:59,511 --> 01:29:02,692
+Siz ne kadar hassas yapmaya çalışırsanız yapın.
+
+491
+01:29:03,172 --> 01:29:08,112
+Üretimden kaynaklı olan, mesela bir oscilatör aldığınızda bile,
+
+492
+01:29:10,771 --> 01:29:20,684
+Şeyi, nedir o? Hassasiyet değeri vardır. %1, %5, %10 vs. gibi. %10 çöp zaten aslında belli açılardan. %1 bile olsa...
+
+493
+01:29:21,140 --> 01:29:42,020
+%1 iyi bir seviye. Bu şu demek, zamanlayıcınızda, biriniz bir dakikayı ölçtüğünde, diğeri bir dakikadan %1 daha fazla. Yani 60 saniye değil de 66 saniye ölçmüş olabilir. Ya da işte 6 saniye daha az, 54 saniye ölçmüş olabilir.
+
+494
+01:29:47,796 --> 01:30:04,336
+Saniye değil de mikrosaniyelere indirdiğinizde ne ihtimali var? Her zaman için bir kayıklık oluşması, bir drift oluşması ihtimali var. Bu drift ne olacaktır? Peşi sıra gelen bitlerde eklenerek artacak.
+
+495
+01:30:05,619 --> 01:30:16,239
+Birincisindeki %5 ihtimaliniz, ikincisinde %10, üçüncüsünde %15, dördüncüsünde %20 vs. diye artı artı gidecek kayıklı konular.
+
+496
+01:30:16,239 --> 01:30:24,979
+Sonunda da bir yerden sonra neye bağlayacaktır? İlla ve illa %100'e doğru gidecek. Mutlaka bir hata olacak.
+
+497
+01:30:25,579 --> 01:30:30,188
+Dolayısıyla bu hata oranını makul seviyede tutmak adına da buradaki bit...
+
+498
+01:30:31,028 --> 01:30:34,448
+Tek seferde aktarılan o bit miktarı 8 ile sınırlanmış.
+
+499
+01:30:35,488 --> 01:30:45,728
+Burada protokol kapsamında haberleşmeyi ifade etmek için bir kodlama tekniği var.
+
+500
+01:30:46,268 --> 01:30:50,868
+Şimdi bir başlama bitiniz var. 8 bitlikleri gönderiyorsunuz.
+
+501
+01:30:51,184 --> 01:31:12,163
+bir bitte bitiş gönderiyorsunuz. Bunu genelde 8-N-1 diye ifade ediyoruz. Buradaki N aslında eğer bu veri aktarımı sırasında bir de hata kontrolü yapmak istiyorsanız, yani aktardığınız verinin içerisinde bir hata oluşup oluşmadığını takip edebilmek istiyorsanız bir de parity biti koyabiliyorsunuz.
+
+502
+01:31:12,163 --> 01:31:14,684
+N demek burada parity olmadığı anlamına.
+
+503
+01:31:18,003 --> 01:31:45,304
+Anlamına geliyor. Bunun yerine parity ekleyebilirsiniz. Ne ekleyebilirsiniz? Parity nasıl olur? İki çeşidi var. Odd ya da Even. Dolayısıyla odd için O, Even için E'yi kullanarak farklı haberleşme şeyleri oluşturmak mümkün. Mesela aşağıda bir örnek verilmiş. 8 bit değil, 7 bitlik veri aktaracağım. Parity Even olacak, Stop Bit'i de 1 olacak.
+
+504
+01:31:46,228 --> 01:32:04,367
+Şeklinde bir kodlama yapabilirsiniz. Burada dikkat edin, start biti hiçbir yerde geçmiyor kodlamada. Çünkü start biti aslında standart. Her seferinde start için bir bit zaten konulacak o garanti. Ama burada gönderilen verinin nerede bittiğini göstermek için bir de stop biti var.
+
+505
+01:32:08,467 --> 01:32:25,807
+1, 1.5 ya da 2 gibi değişik versiyonları var. Bunları yapmak mümkün. Bunları gerçeklemek mümkün. Dolayısıyla onu özellikle o yüzden 8-N-1 olarak yani stopun 1 olduğunu, 1.5 olduğunu ya da 2 olduğunu söylemek gerekiyor.
+
+506
+01:32:27,807 --> 01:32:29,047
+Bunu geçtik.
+
+507
+01:32:35,923 --> 01:32:47,384
+Burada şey zaten konuştuk. Yani bir byte göndermek istiyorsanız, 8 bit göndermek istiyorsanız, eğer bunu normal non-party ile göndereceksiniz, zaten bir start, bir stop biti gelmesi lazım.
+
+508
+01:32:47,384 --> 01:32:53,503
+Yani verinin kendisi 8 bitken 10 bit gönderiyorsunuz, %25 daha fazlasını gönderiyoruz.
+
+509
+01:32:53,963 --> 01:33:01,564
+Ya da toplam yollanan verinin %20'si aslında kontrol bilgisi oluyor. Bir ekstra yükü var. Burada dikkat edin.
+
+510
+01:33:03,347 --> 01:33:20,707
+Bunun dışında asenkron bir iletim olduğu için ne olması lazım haliyle? Sizin bilgiyi oluşturup göndermeniz karşı tarafa ulaşması arasında da böyle çok düzenli, şerifsel bir yapı beklenmiyor. Nedir o?
+
+511
+01:33:24,115 --> 01:33:45,635
+Eşit aralıklarla dağılan bir yapı beklenmiyor. Siz ne zaman veriniz varsa o zaman gönderiyorsunuz. Herhangi bir şekilde bir eş zamanlık durumunu beklemiyorsunuz. Mesela farklı bir protokol ya da farklı bir yapı olarak her kulağın başında göndereyim, her saniyenin başında göndereyim falan gibi bir durum yok. Bilgi ne zaman varsa o zaman hatta çıkıyorsunuz.
+
+512
+01:33:49,635 --> 01:33:51,435
+Bunu konuştuk.
+
+513
+01:33:54,323 --> 01:34:13,103
+Bu iletimi eğer S zamanlı yapacaksanız, ne olacak? Yani Sediye Haberleşme'de S zamanlı bir iletimi yapacaksanız, bir şekilde şeyi sağlamamız lazım. İki taraf arasında S zamanlılığı sağlamak lazım.
+
+514
+01:34:16,020 --> 01:34:20,700
+Bu eş zamanlılığı nasıl sağlayabiliriz? Birkaç farklı şekilde sağlayabiliriz.
+
+515
+01:34:20,960 --> 01:34:26,700
+Bir, ortak bir sinyal kullanmak bunlardan bir tanesi. Ortak bir clock sinyali kullanmak. Doğru mu arkadaşlar?
+
+516
+01:34:41,460 --> 01:34:42,360
+değil galiba.
+
+517
+01:34:46,228 --> 01:34:52,488
+Hocam, klock sinyalinden kastınız. Bir sinyal gönderip iki tarafta da klock başlatmak mı? Az önce söylediğiniz gibi.
+
+518
+01:34:53,008 --> 01:35:04,568
+Hayır. Alıcının ya da göndericinin hatta devamlı bir klock basması. Yani 0, 1, 0, 1, 0, 1 gibi. Yani 0, 1 değil de mesela gerilim değeri üzerinden konuşulsak.
+
+519
+01:35:04,568 --> 01:35:14,208
+5, 0, 5, 0, 5, 0, 5, 0 falan gibi bir şey. Birinin bir klocku, mesela kendi klockunu hatta basması, karşı tarafında o klocktaki değişme.
+
+520
+01:35:14,228 --> 01:35:29,288
+ne yapması? Kendini senkronize etmesi. Yani clock değişiminde sinyalin üstten aşağı düşmesi, düşen kenarda ya da yükselen kenarda data hattında bir değişiklik olmasını bildirmesi.
+
+521
+01:35:29,288 --> 01:35:40,748
+Clock bunun için var. Bir tanesi bu olabilir. Yani gönderici ya da alıcının o hatta bir clock basıyor olması, o hatta bir clock sinyali üretiyor olması.
+
+522
+01:35:41,395 --> 01:35:49,755
+Alternatifi ne? Mesela kulu ayrıca göndermek istemediğimiz zaman ne yapıyoruz diye konuşmuştuk kodlamalarda.
+
+523
+01:36:03,475 --> 01:36:08,676
+Konuşmamıştık, bizim haberimiz yok. Ben bilmem falan mı diyorsunuz, ne diyorsunuz?
+
+524
+01:36:19,091 --> 01:36:32,331
+Şeyi hatırlıyor musunuz? Manchester desem. Manchester United değil ama. Manchester Coding. Manchester Coding'in özelliği neydi?
+
+525
+01:36:38,292 --> 01:36:39,572
+Orada mısınız gençler?
+
+526
+01:36:40,432 --> 01:36:49,612
+Hocam, sanırım sıfırı kullanmıyorduk. Veri değiştikçe sinyalin karakterini değiştiriyorduk. Öyle bir konu vardı.
+
+527
+01:36:51,192 --> 01:37:00,712
+Aslında clock ile veriyi ilk zorluyorduk. Yani clock'ı haricen göndermek yerine verimize bağlı olarak değişecek.
+
+528
+01:37:01,716 --> 01:37:06,916
+Daha doğrusu verimizi kuluğa bağlı olarak modüle ediyorduk. Özellikle diferansiyelde.
+
+529
+01:37:08,496 --> 01:37:14,776
+Hatırlayın, bir sürekliliği sağlamak için kullandığımız şeydi.
+
+530
+01:37:14,876 --> 01:37:20,436
+Dolayısıyla bir anda negatiften pozitife dönen bir işaretle biri ifade edebiliyordu.
+
+531
+01:37:21,296 --> 01:37:24,436
+Pozitiften negatife dönen bir işaretle biri ifade edebiliyordu.
+
+532
+01:37:24,436 --> 01:37:28,976
+Yani statik şeyler değil, sinyaller, karşılıklar değil.
+
+533
+01:37:29,344 --> 01:37:37,043
+Neler vardı? Kuloğu sağlayacak, oradaki pulse'ı sağlayacak şekilde anlamlandırıyorduk.
+
+534
+01:37:37,143 --> 01:37:39,783
+Tamam mı? Dolayısıyla burada da aynısını yapabilirsiniz.
+
+535
+01:37:39,963 --> 01:37:50,963
+Es zamanlılığı sağlamak için ayrı bir kulo göndermek yerine veriyi bir şekilde kuloğa entegre etmek, daha doğrusu kulo veriyi entegre etmeyi kullanabilirsiniz.
+
+536
+01:37:51,163 --> 01:37:55,263
+Başka bir şey daha var. Üçüncü bir yöntem daha var. Onu sizinle daha önce konuşmadık.
+
+537
+01:37:57,268 --> 01:38:16,068
+Ama onu da şimdi söyleyeyim. Her zaman yapacağınız senkron iletim şey olmak zorunda değil, böyle guided bir media üzerinde olmak zorunda değil. Gerçi guided media üzerinde olsa bile bunu yapabilirsiniz. Bir preamble kullanabilirsiniz.
+
+538
+01:38:16,528 --> 01:38:23,648
+Yani bir garbage veri basarsınız hatta. Bu garbage veri geldiği zaman karşı taraf neyi bilir? Birazdan veri gelecek.
+
+539
+01:38:24,368 --> 01:38:32,127
+O yüzden ne yaptınız? Aslında bir senkronizasyon sağladınız. Veri gelecek, veri öncesi preamble geldi.
+
+540
+01:38:35,412 --> 01:38:45,572
+Toplamda baktığınız zaman böyle üç ayrı şey var, yapı var. Bunlara girmiyorum. Bunları zaten konuştuk. Differensiyel, differensiyel vesaire. Şeyi de konuştuk.
+
+541
+01:38:51,060 --> 01:39:04,500
+Ama preamble dediğimiz yapı, doğrudan fiziksel bir teknik değil. O aslında ne seviyesinde? Physical layer değil, logical link kontrolü de, LLC üzerinde çalışıyor.
+
+542
+01:39:04,500 --> 01:39:18,020
+Bunu şeyde, nedir o? Radyo frekansı üzerindeki haberleşmede, mesela Wi-Fi'de var, kullanıyoruz preamble.
+
+543
+01:39:18,676 --> 01:39:38,115
+yapısı var. Orada, burada slide 100 biti geçmez vesaire yazmış ama hani aslında geçebiliyor. Ona çok fazla takılmayın. Baya yapılarda ise HDLC diye bir protokol var. Data linkleri konuşurken konuşacağız HDLC ve türevlerini. Orada mesela 48 bit kontrolü amaçlı ilave edilen bir preamble var.
+
+544
+01:39:39,091 --> 01:39:59,771
+Böyle bir preembel eklediğiniz zaman ne oluyor? Seri iletimde zaten blok halinde veri iletiyoruz. Es zamanlı da özellikle. Ne yapıyoruz? Diyelim ki burada örnek üzerinde bin karakterlik bir bilgi aktarması konuşulmuş.
+
+545
+01:40:00,000 --> 01:40:03,039
+1000 karakter eşittir 8 bitten her bir karakter.
+
+546
+01:40:03,699 --> 01:40:08,340
+8048'de kontrol şeyi var, preamble var.
+
+547
+01:40:09,380 --> 01:40:11,560
+Topladığınız zaman 8048.
+
+548
+01:40:12,220 --> 01:40:20,060
+Şeye baktığınızda, blok başına kontrol üreticisinin getirdiği ek üke baktığınızda işte binde 6 gibi bir şeye denk düşüyor.
+
+549
+01:40:20,779 --> 01:40:22,199
+Binde 6 şeyi hatırlayın.
+
+550
+01:40:24,140 --> 01:40:25,579
+Asenkron üretimi hatırlayın.
+
+551
+01:40:26,707 --> 01:40:29,927
+Çok daha üst tek %20 ya da %25 diye bakıyorduk.
+
+552
+01:40:31,247 --> 01:40:34,648
+%20 olarak bakıyor olsak arada dağlar kadar fark var.
+
+553
+01:40:34,988 --> 01:40:37,307
+Ve eş zamanlılığın bazı artıları var.
+
+554
+01:40:38,087 --> 01:40:40,427
+Nedir o artı durumlar?
+
+555
+01:40:41,768 --> 01:40:45,427
+Daha etkin kullanım, daha iyi hata kontrolü, daha yüksek hız.
+
+556
+01:40:46,427 --> 01:40:47,967
+Eş zamansızlığın artıları ne?
+
+557
+01:40:48,327 --> 01:40:50,167
+Daha basit bir yapı, daha ucuz.
+
+558
+01:40:50,804 --> 01:41:02,243
+zam anlamı için ek çabanız yok. Dezavantajları da var. Hız biraz daha sınırlı, hata kontrol mekanizması biraz daha sınırlı.
+
+559
+01:41:02,243 --> 01:41:16,764
+Yani orada sadece bir tane paratibit kullanıyorduk mesela arası 232'de. Overhead'ı yüksek yani %20'lik şey üzerinden bakacak olursak, toplam gönderilen bir genin ne kadar bir kontrol bit olduğuna bakacak olursak %20'lik de bir kayıp var.
+
+560
+01:41:18,260 --> 01:41:33,599
+Şimdi paralel ya da seri fark etmez haberleşmeden bahsediyorsak kullandığımız cihazları aslında iki temel sınıfa ayırıyor olmamız lazım. Bunlardan bir tanesi Data Terminal Equipment.
+
+561
+01:41:33,599 --> 01:41:44,139
+Aslında veri uç birimi diyoruz. Yani veriyi üreten ya da işleyen cihazlar. Misal bilgisayarımız veriyi üreten yer.
+
+562
+01:41:45,171 --> 01:41:55,831
+printer'ınız veriyi işleyen yer. Diğer tarafta da ne var? DCE'ler var. Yani Data Circuit Terminating Equipment.
+
+563
+01:41:55,831 --> 01:42:10,451
+Aslında veri iletişim birimi. Yani bir taraftan aldığı veriyi ilgili modülasyona sokup aktarmaya yarayan, iletimi sağlayan kısım.
+
+564
+01:42:11,380 --> 01:42:17,780
+Bu cihazlara çoğu zaman bir tarafta modülasyon, diğer tarafta demodülasyon yaptığı için modem diyoruz.
+
+565
+01:42:19,180 --> 01:42:22,720
+Baktığınız zaman yapı aslında bu grafikte gördüğünüz gibi.
+
+566
+01:42:24,243 --> 01:42:33,903
+Haberleşme için iki tarafta da DTE'nin olması lazım. Bu DTE'lerin birer DCE'ye bağlı olması lazım. Bunların da A üzerinden birbiriyle haberleşme olması lazım.
+
+567
+01:42:33,903 --> 01:42:44,243
+Şimdi eskiden eski yapıyı düşündüğümüzde burada aslında dial-up modemler vardı DCE olarak. DTE olarak yine PC'miz vardı ama arada seri bağlantı vardı.
+
+568
+01:42:44,443 --> 01:42:49,583
+İşte belirlenen standardı uygun şekilde V32, V34 vesaire şeklinde.
+
+569
+01:42:50,739 --> 01:42:59,739
+Ama burada ağ olmaması ya da ağın kullanılmaması durumunda ne yapabiliyorduk? Nal modem bağlantısı yapıp bu iki bilgisayarı da birbirine bağlayabiliyorduk.
+
+570
+01:42:59,920 --> 01:43:12,799
+Günümüzde ne var? Burada gene bir DCN'iz var. Yok değil. Nedir ama o? Bir EDSL modem, bir kablo modem ya da bir şey nedir o? Fiberoptik modem.
+
+571
+01:43:16,372 --> 01:43:30,432
+DTE ile DCE'nin yani o modeminizin arasındaki bağlantı tipi değişti. Eskiden böyle doğrudan DB9 konvektörlü seri bağlantılar vesaireler ya da paralel bağlantılar kullanırken şimdi ne kullanıyoruz?
+
+572
+01:43:30,992 --> 01:43:37,932
+Wi-Fi kullanıyoruz aslında. Orada da bir A interpeyesi var. Ya da Ethernet kullanıyoruz duruma göre hala kullanan varsa.
+
+573
+01:43:40,083 --> 01:43:46,064
+Demin söylediğim gibi, DT ve DC arasında tariflenmiş standartlar var.
+
+574
+01:43:46,064 --> 01:43:58,744
+İşte RS-232, RS-442, RS-449, bunlardan birkaçı ya da ITU tarafından belirlenmiş olan V24-32-32 vs. gibi şeyler de var.
+
+575
+01:43:59,364 --> 01:44:04,644
+Hala kullanılan router tarafındaki, router tipi cihazlarda kullanılan X-Series standartlar var.
+
+576
+01:44:08,500 --> 01:44:29,119
+Burada şeylere çok fazla girmeyeceğim. Yani DT, D, C'ye ara birim, hangi pin, ne işe yarar vs. Bu tek tek böyle ezberlenecek, akılda tutulacak vs. değil. Sadece genel kültür olarak olması adına slide'larda da var. Bunu doğrudan şey yapma derdinde değilim. Hani bilmeniz ya da sorgulama derdinde değilim. Ama hani şeyi görebiliyor olmanız lazım.
+
+577
+01:44:33,684 --> 01:44:56,583
+Temel şeyleri, mesela Receive Data var, Transmit Data var, 2-3, Clear to Send var, Ground'ı zaten konuşmayacağız ama Data Terminal Read'i var, temel kontrol sinyalleri var.
+
+578
+01:45:00,627 --> 01:45:27,707
+Ne dedim demin? Hani iki PC'yi doğrudan birbirine de bağlayabilirsiniz. Yani bu grafikte diyelim ki iki PC fiziksel olarak aynı ortamda ve siz bunun birinden diğerine bilgi aktarmak istiyorsanız, işte farklı modemler bir internete bağlanıp falan öyle bir aktarmak yerine bunun DC'ye bağlantısını birbirine birleştiriyorsunuz. Ama nasıl birleştiriyor olmanız lazım? Tabii ki crosslayarak birleştiriyor olmanız lazım.
+
+579
+01:45:28,627 --> 01:45:43,727
+Kastımız ne? Birinin transmitini, diğerinin receive'ine koymak, clear to send'ini, onun request to send'ine koymak vs. şeklinde. Böyle otomatikman ne olacak? Birinin gönderdiği, diğer tarafından algılanabilecek hale gelecek.
+
+580
+01:45:43,907 --> 01:45:53,087
+Burada ekstra bir yazılım vs. de gerekmiyor çok zaman. Şimdi konuşacağımız şeylerden bir diğeri bugün. İletim ortamı. İletim ortamına baktığımız zaman.
+
+581
+01:45:53,779 --> 01:46:14,219
+Aslında genel bir ağ oluşturmaya kalktığınızda iletim ortamı için eğer de guided bir ortam ise yani kablolu bir ortam ise yaptığınız maliyet toplam harcama içerisinde çok da az bir meblağı tutuyor. Öyle söyleyeyim.
+
+582
+01:46:15,923 --> 01:46:27,063
+Genellikle yaptığınız harcama ya aktif cihazlara ya aktif cihazlar üzerindeki komponentlere olacak şekilde olur.
+
+583
+01:46:27,583 --> 01:46:33,983
+Dolayısıyla kablolama maliyeti düşüktür ve fakat yeniden kablolama yapılması maliyeti yüksektir.
+
+584
+01:46:34,844 --> 01:46:36,203
+Çok pardon bir saniye arkadaşlar.
+
+585
+01:46:47,731 --> 01:47:01,851
+Dolayısıyla bu noktada şunu unutmamak lazım. Kablolama maliyeti düşük ve fakat bir şey olduğu zaman onun recover edilmesi, düzeltilmesi noktasında maliyet yüksektir.
+
+586
+01:47:01,851 --> 01:47:10,311
+Örneğin hani mesela kampüs içinde kablolama yapılırken A noktasından B noktasına kabloleşemek için ısınmaliyetimiz oranın kazılması.
+
+587
+01:47:10,771 --> 01:47:38,152
+Oraya veya hattın döşenmesidir. Kablonun kendi maliyeti çok daha uygundur. Dolayısıyla da kablolama yatırımına bir altyapı yatırımı olarak bakmak ve ona göre planlamak gerekir. Örneğin A'dan B'ye tek bir kablo ihtiyacınızı çözüyorsa sadece tek kablo sermezsiniz. Birkaç tane çekersiniz. Tahminen iki tane çekersiniz aynı altı üzerinde.
+
+588
+01:47:38,484 --> 01:47:46,484
+Ama bu ne olacaktır? Sizi çeşitli kazalara karşı koruyacaktır o kabloda oluşabilecek. Misal, fare kemirmesi, misal...
+
+589
+01:47:47,731 --> 01:48:00,411
+Başka bir altyapı çalışması, misal atık su, misal sulama sistemi, misal elektrik kablosu çekimi gibi durumlarda oraya birinin zarar vermesinin durumunda diğer kabloya geçme şansımız olabilir.
+
+590
+01:48:00,951 --> 01:48:06,331
+Fakat tahminen birine zarar verdiyse diğerine de büyük ihtimalle zarar verebilir bu durumlar.
+
+591
+01:48:06,711 --> 01:48:12,331
+Dolayısıyla alternatif olarak aslında yapılması gereken oradaki tek...
+
+592
+01:48:12,659 --> 01:48:28,399
+Hattı ikinci bir alternatif oluşturması. Yani A'dan B'ye böyle gidiyorsanız, bunu da çift şeyle gidiyorsanız, hatla gidiyorsanız, bir başka yol üzerinden şöyle dönerek, dolaşarak falan yine bir başka çiftle gitmek, böylece şeyi çoklamaktır.
+
+593
+01:48:28,399 --> 01:48:34,799
+Çaprazlayarak çoklamaktır. Bu hani başta şey gibi gelebilir. Nedir o?
+
+594
+01:48:35,923 --> 01:48:57,904
+Boşa bir yatırım maliyeti arttırmak gibi gelebilir ama arıza ya da sıkıntı durumunda size kazandıracağı fayda çok daha yüksek. Öyle bakmak lazım. Bir diğer şey, burada yaptığınız her kablolama eğer aktif cihazlarınızda yeter miktar uç varsa ya da yoksa bile daha sonra buraya aktif cihazlar ekleyerek ne yapabileceksiniz?
+
+595
+01:49:03,923 --> 01:49:06,124
+Önümde şey yapmaya kalktınız, şey yok.
+
+596
+01:49:07,124 --> 01:49:17,724
+Kablolama yapmaya kalktınız. Bu kablolamayı yaparken 100 gigabitlik fiber bağlantılar oluşturmak modül fiyatlarının yüksek olmasından dolayı sıkıntı olabilir.
+
+597
+01:49:18,624 --> 01:49:28,724
+Ya da kırklık modüllerle bir şeyleri gerçekleştirmek sıkıntı olabilir. Eğer mesela kırklık sizin için çok pahalıya geliyorsa, bunun yerine kablo sayısını bir değil...
+
+598
+01:49:29,043 --> 01:49:34,283
+A ile B arasında bir hat değil, dört hat olacak şekilde yapıp onluk modüllerle yapabilirsiniz.
+
+599
+01:49:35,003 --> 01:49:42,183
+Diyelim ki bir onluk modül, bir birim, kırklık modül, on birim fiyatındaysa böyle bir yaklaşım ne olacaktır?
+
+600
+01:49:42,183 --> 01:49:47,623
+Otomatikman link seviyesinde de bu bağlantıları birleştirirsiniz.
+
+601
+01:49:50,283 --> 01:49:55,123
+Aggregation yaparsınız. Link aggregation kontrol yaparsınız.
+
+602
+01:49:56,020 --> 01:50:20,860
+Böylece kapasitesi 40 gigabit olur. 40 gigabit olduğu zaman da hem yüksek hızla bağlantı yapmış olursunuz, hem yedekliliği sağlanmış olursunuz. Nasıl yedekliliği sağlayacaksınız? Hatta bir tanesi koptuğu zaman sizin 40 kapasiteniz 30'a inecek. Ama zaten sizin orijinalde beklediğiniz ya da istediğiniz kapasite 10'du. Dolayısıyla servis vermeye ve çalışmaya devam edeceksiniz.
+
+603
+01:50:21,716 --> 01:50:30,396
+sorundan etkilenmeyeceksiniz ama yarın öbür gün başınıza bir şey geldiği zaman hala çalışma payınız olacak.
+
+604
+01:50:30,396 --> 01:50:34,996
+Yani üç bağlantınız var, bir tanesi daha gitti, iki bağlantınız var. Hala çalışmaya devam edeceksiniz.
+
+605
+01:50:35,096 --> 01:50:41,216
+Bu sırada sorunu çözebilme ya da kimseyi hissettirmeden ortamı düzeltebilme şansınız olacak.
+
+606
+01:50:42,484 --> 01:50:50,004
+Şimdi ortamlar yönlendirilmiş, yönlendirilmemiş, gaydet ve unguided olarak iki ayrı olur demiştik.
+
+607
+01:50:51,764 --> 01:50:57,684
+Yönlendirilmiş ortam aslında baktığımız zaman bir kablodan bahsediyoruz. Bu kablo bakır da olabilir, fiber de olabilir.
+
+608
+01:50:59,584 --> 01:51:08,744
+Bakır ise zaten elektrik sinyali aktarıyoruz. Fiber ise bu zaten silika tabanlı bir şeydir. Yani bir nevi camdır. Bu cam üzerinden ışık aktarıyoruz.
+
+609
+01:51:09,363 --> 01:51:17,623
+Kablolama ile ilgili birçok standart var. Takip edilebilirliğin ötesinde çok sayıda standart var.
+
+610
+01:51:19,963 --> 01:51:28,983
+Amerika tarafında EYA'nın standartları var. Uluslararası olarak ISO'nun standartları var. Selenek'in de Avrupa Birliği için standartları var.
+
+611
+01:51:29,643 --> 01:51:34,983
+Bir şekilde bunlar çoğu zaman örtüşüyorlar. En azından minimum bazı şeyleri sağlıyorlar.
+
+612
+01:51:36,659 --> 01:51:51,599
+Şimdi yönlendirilmiş kablo dediğimiz zaman aklımıza ilk gelen kablo aslında koaksiyel yani eşeksenli kablolar. Eşeksenli kabloları aslında hala kullanıyoruz günümüzde. En çok gördüğümüz yerde uydu alıcıları.
+
+613
+01:51:51,599 --> 01:52:03,999
+Eğer uydu üzerinden televizyon izliyorsanız yani bir çanak varsa elinizde o çanağın ucunda LNB'den o alıcı tarafından çıkan ve uydu alıcısına, receiver'a.
+
+614
+01:52:05,684 --> 01:52:22,104
+Gelen bir kablo var. Genelde de beyaz renkte. O beyaz renkli kablo aslında koaksiyel bir kablo. Özellik gereği 75 ohm şeyinde direnç gösteriyor.
+
+615
+01:52:22,104 --> 01:52:30,044
+75 ohmluk direnç gösteriyor. Ama bizim bilgisayar haberleşmesinde, yani sayısal veri aktarımı için kullandıklarımız 50 ohmluk.
+
+616
+01:52:30,515 --> 01:52:41,715
+direnç gösteriyor. Yapı gereği, tek damarlı bir kablodan bahsettiğimiz için aslında otomatikman bu ne hale getiriyor bu ortamı?
+
+617
+01:52:42,868 --> 01:52:49,707
+Halt dubleks hale getiriyor. Yani aynı anda bir daha fazla termi, orada bir şey gönderme şansı yok.
+
+618
+01:52:50,228 --> 01:52:57,467
+Öyle bir durumda bir collusion olacak. Gönderilen bir üstü de çıkışacak. Anlamlı hale de gelmeyecek. Dolayısıyla problem oluşacak.
+
+619
+01:52:57,467 --> 01:52:59,467
+Bunun yerine...
+
+620
+01:53:02,003 --> 01:53:13,344
+Ne yapılması lazım? Herkesin sırayla konuştuğu, sadece herhangi bir tane anında bir kişinin gönderebildiği half-dubleks bir yapı oluşması lazım. Zaten doğası gereği de olay böyle oluyor.
+
+621
+01:53:14,263 --> 01:53:17,003
+Koaksiyel kabloları nerede kullanıyoruz? Aslında...
+
+622
+01:53:17,408 --> 01:53:33,488
+Kuaksal kabloları Eternet'te kullanıyoruz. Tin ve Tick Eternet diye iki farklı Eternet var. Bu Eternet'in ilk versiyonları yalnız öyle düşünün. Çünkü Eternet de zaman içerisinde evrim geçirmiş bir teknoloji. İlk başta bass yapısında.
+
+623
+01:53:34,612 --> 01:53:50,032
+Yol topolojisinde yani. Yol topolojisi olduğu ilk zamanlarda da TIC Ethernet var. RG8 kablolar kullanılıyor. Böyle sarı kalın kablolar. Onun etrafına bağlanan bir konnektör var.
+
+624
+01:53:50,032 --> 01:53:59,572
+O konnektör aslında kablonun dış izolasyonunu vesaire delip içeride bakıra kadar girmesini sağlayan dişlere sahip.
+
+625
+01:54:01,460 --> 01:54:07,099
+Konnektörün bir ucunda da 15 pinlik bir arayüz var.
+
+626
+01:54:08,692 --> 01:54:26,692
+O arayüzden de başka bir kablo ile PC'ye bağlantı yapıyorsunuz. Herhangi bir tahanında canınız çektiği yerde bu bağlantıyı yapıp kabloya dişleri, vampir dişi diye geçiyor zaten, dişleri geçirip o bağlantı arayüzünü bağlayıp bir bilgisayarı sisteme bağlayabiliyorsunuz. Belli açılardan sisteme bağlanmak çok kolay.
+
+627
+01:54:26,692 --> 01:54:34,631
+Bu yüzden güvenlik anlamında da sıkıntı. Yani sizin istemediğiniz bir adam da geçen kabloyu gördüğü zaman kendisini oraya bağlayabiliyor belli açılardan.
+
+628
+01:54:36,692 --> 01:54:44,731
+şey gözünüzde canlanması için baktığımızda tik Ethernet'in böyle sarı bir rengi var zaten.
+
+629
+01:54:46,091 --> 01:54:51,532
+Sağ altta gördüğünüz resimde de aslında bu vampir dediğimiz konnektörü görüyorsunuz.
+
+630
+01:54:51,532 --> 01:54:57,751
+O konnektörün şeyi tamamı aslında şu şekilde var.
+
+631
+01:54:58,011 --> 01:54:58,532
+Yani kablo...
+
+632
+01:54:59,315 --> 01:55:16,315
+Şu tarafta bağlanıyor. Üstüne kıstırarak bağlanıyoruz bir şey. Burada da bilgisayara bağlayacağınız DB15 tipinde bir şey denilen Attachment Unit Interface, AUI denilen bir arayüz var.
+
+633
+01:55:16,495 --> 01:55:23,095
+DB15 tipinde bir konnektörle buradan çıkıp nereye bağlıyorsunuz? Bilgisayardaki karta bağlıyorsunuz.
+
+634
+01:55:27,283 --> 01:55:40,443
+Sonrasında TIN Ethernet geliyor. RG58D de isimlendiriliyor. Bunda yapı biraz değişmiş. Ne olmuş? Bağlantı için BNC adı verilen böyle özel e-al.
+
+635
+01:55:41,492 --> 01:55:56,311
+aparatlardan faydalanıyoruz. BNC'de aslında şöyle bir şey, bir tarafı kabloya oturuyor, diğer tarafında da şöyle bir kilit mekanizması var. Bu kilit mekanizması şey boyunca nedir o?
+
+636
+01:55:58,931 --> 01:56:11,992
+bas boyunca, yol topolojisi boyunca kablonun herhangi bir yerini kesip oraya girebilmenizi sağlıyor. Böyle bir T komponent var. O komponenti kitlemek için kullandığınız şey.
+
+637
+01:56:13,372 --> 01:56:19,755
+Güzel tarafı hani şeye göre, Tick Ethernet'e göre şeyi...
+
+638
+01:56:20,083 --> 01:56:30,483
+segmentlerin boyutu daha büyük. Buradaki segment şey aslında oluşturabildiğiniz topolojinin boyutu. İçerisinde desteklediği bağlantı miktarı daha az.
+
+639
+01:56:30,483 --> 01:56:41,279
+Şöyle, 100 bağlantı var. Burada ise 30 bağlantı var. Ama tabii beraberinde getirdiği bir...
+
+640
+01:56:41,279 --> 01:56:49,619
+Kablonun ince olmasından dolayı beraberinde getirdiği bir rahatlık, bir temizlik var. Daha rahat kablolama vesaire şeyi var.
+
+641
+01:56:49,619 --> 01:56:58,819
+Tin Ethernet'ten sonra, aslında buraya kadar Ethernet diye geçiyor, ilk oluşmuş haliyle Ethernet olarak geçiyor.
+
+642
+01:56:59,479 --> 01:57:05,599
+Buradan sonra Ethernet, Switch bir hale geliyor. Sonrasında da Fast Ethernet'e geçiyor.
+
+643
+01:57:06,003 --> 01:57:26,543
+Bu SwitchEternet ve FastEternet'e geçiş, bunları şeyde konuşacağız aslında, daha çok fiziksel katmanda, şu an fizikseli konuşuyoruz, kabloları konuşuyoruz ama bu teknolojinin gelişmesine, eternetin değişimini, Data Linkleri de konuşuyor olacağız, yani 100 katman da konuşuyor olacağız. Orada şunu göreceğiz.
+
+644
+01:57:27,315 --> 01:57:34,035
+Ethernet evet 10 megabit çalışıyor ama sonra bunun hızlandırılması, arttırılması lazım.
+
+645
+01:57:34,315 --> 01:57:38,595
+Hızlandırmalardan bir tanesine bunun switched hale getirilmesi.
+
+646
+01:57:38,595 --> 01:57:43,155
+Yani baz topolojisinde sadece herhangi bir TAN'ında bir kişi konuşabilirken.
+
+647
+01:57:44,212 --> 01:57:51,912
+Bunu farklı perilerin kendi içerisinde konuşabilmesini sağlayacak şekilde switch anahtarlanabilecek hale getirmek, anahtarlamalı yapmak.
+
+648
+01:57:52,532 --> 01:58:00,311
+Bir sonraki adım ne? Burada işi biraz daha değiştirelim, daha hızlı iletim yapalım.
+
+649
+01:58:00,724 --> 01:58:17,323
+Yani 10 Mbps yetmez. Bunu 100'e taşıyalım. Daha fazla çıkartalım kafası. O zaman da Fast Ethernet portu yapılıyor. İşte bu Switch Ethernet ve Fast Ethernet'te sırasında hem bağlantı tipi hem kullanılan kablo tipi değişiyor.
+
+650
+01:58:17,323 --> 01:58:22,203
+Burada kullanılmaya başlayan kablo, Twisted bir kablo haline geliyor.
+
+651
+01:58:23,539 --> 01:58:36,199
+Kablo içerisinde aslında kablo çiftleri var, teller var, farklı teller var. Bunlar ikili ikili burgulanmış şekilde, yani kendi üzerine böyle dönen, burgu edilmiş şekilde kablolar.
+
+652
+01:58:37,000 --> 01:58:45,939
+Bu kabloların isimlendirilmesi ya da şey yapılması, çok ilerideymiş ya, pardon. Önce ileri gideyim, sonra geri gelirim en tutu.
+
+653
+01:58:46,963 --> 01:59:02,863
+İçindeki kablo çiftlerinin nasıl korunduğuna, dışta nasıl bir koruma olduğuna vesaireye göre değişiyor. Ama biz genelde günümüzde UTP kullanıyoruz. Unschillit, Twisted, B. Yani kablolar ikili burların her birinin birbirine bulgulandı.
+
+654
+01:59:03,444 --> 01:59:13,184
+Kabloları kullanıyoruz. Ama aslında bunun üzerine, bu ikili grupların üzerine elektromanyetik gürültüyi azaltmak için bir shield geçirilmesi.
+
+655
+01:59:13,364 --> 01:59:23,964
+Aslında oradaki de shield değil de foil, yani alüminyum bir kaplama. Nasıl şey bilirsiniz, mutfak için kullanılan alüminyum folyolar var.
+
+656
+01:59:24,124 --> 01:59:30,524
+Onun gibi bir kaplamanın geçirilmesi durumu var. Burada buna FTP diyorlar.
+
+657
+01:59:31,444 --> 01:59:32,544
+peynir diyorlar. İşte
+
+658
+01:59:32,544 --> 01:59:35,284
+eğer hem iş
+
+659
+01:59:35,284 --> 01:59:37,504
+foylt hem dışarıdan
+
+660
+01:59:37,504 --> 01:59:39,664
+diğer etkilere
+
+661
+01:59:39,664 --> 01:59:41,584
+yani ne bileyim darbe
+
+662
+01:59:41,584 --> 01:59:42,744
+vesaire gibi şeylere
+
+663
+01:59:42,744 --> 01:59:45,764
+de karşı dayanımını
+
+664
+01:59:45,764 --> 01:59:47,184
+arttırmaksa o zaman buna
+
+665
+01:59:47,184 --> 01:59:49,064
+bir de bakır örgü
+
+666
+01:59:49,203 --> 02:00:00,000
+ekleniyor, shielded deniyor. Bunun farklı versiyonları ve kombinasyonları var. Yani mesela tablonun ortasından bir ayrıçın geçmesi, çiftleri birbirinden ayıran.
+
+667
+02:00:00,000 --> 02:00:26,239
+plastik bir ayrıcın geçmesi, folyonun bütün çiftlerin dışına tek seferde sarılması, her bir çiftin üstüne ayrı ayrı sarılması, her kablonun üzerine ayrı sarılması, çiftlerin üstüne ayrı sarılması, hepsinin üstüne toptan bir daha sarılması, şiitlerin genele, pair'lara ya da pair'ların içerisindeki her kablaya sarılması şeklinde böyle isimlendirmede kaosu oluşturacak kadar çok sayıda aslında kablo tipi var ama 3 temel tip diyebiliriz.
+
+668
+02:00:28,000 --> 02:00:33,199
+Anlaşılmadığı Unshielded Twisted Bear, Shielded Twisted Bear ve Foyled Twisted Bear.
+
+669
+02:00:34,819 --> 02:00:42,419
+Şimdi peki biz niye burgulu kablo yapıyoruz ya da burgulu kabloları burgu etmemizin temel nedeni ne?
+
+670
+02:00:45,684 --> 02:01:11,064
+Şimdi elektromanyetik gürültü var diyoruz etrafta. Olabilir her zaman, her yerde bir şeyler olabilir. Dolayısıyla bu gürültü eğer kablo bir şekilde twist edilmez ise kablo tellerine etkisi, yani aynı kablo içerisindeki birden fazla tele etkisi birbirinden farklı olabilir. Dolayısıyla twist edilmesi, yani burgulanmasının temel nedeni bu etkinin homojen olarak dağılmasını sağlamak.
+
+671
+02:01:12,435 --> 02:01:38,675
+Bu noktada birkaç tane daha şey var, twist-by kabloların yapısıyla ilgili. İçerideki tellerin böyle tek damar olma ihtimali olduğu gibi birden fazla damar ince tellerden oluşması durumu da var. Böyle UDP kablolar da var. Bunlar esneklik anlamında ve kırılganlık anlamında daha iyi performans gösterse de, yani kolay kolay kırılmasa, kopuk yapmasa vesaire de şey sıkıntıları var.
+
+672
+02:01:39,859 --> 02:01:59,999
+Normalde ilettiğiniz sinyal aslında kablonun, o içerideki telin dış yüzey ile merkezi arasındaki alanda taşınıyor. Bu alan çok damarlı kalmadı. Otomatik her bir damar oldukça ince olduğu için şey yapıyor, çok az bir alanda kalıyor.
+
+673
+02:02:06,036 --> 02:02:13,695
+aktarılmasına engel teşkil ediyor. Yani sinyali zayıflatıyor. Dolayısıyla burada tek damar tercih ediliyor.
+
+674
+02:02:18,216 --> 02:02:23,996
+Burada twisted pairler hep, yani şöyle bir kodlama yapısı var. Bunu da söylemek lazım.
+
+675
+02:02:24,436 --> 02:02:31,996
+Her bir çifte bir renk kodu veriyoruz aslında. Mavi, turuncu, yeşil ve...
+
+676
+02:02:32,404 --> 02:02:42,244
+Kahverengi gibi. Payer'ın kendi içerisinde ayrılması için de bunlardan bir tanesi mavi olan Payer içerisinde biri mavi, dümdüz mavi, diğeri mavi beyaz.
+
+677
+02:02:42,244 --> 02:02:46,564
+Bunların içerisinde bir yeşil, bir yeşil beyaz vs. oluyor bu şekilde.
+
+678
+02:02:47,044 --> 02:02:56,684
+Tabii yeşil beyaz ya da mavi beyaz ya da kahverengi beyaz olan ya da turuncu beyaz olan kabloya da halk dilinde arada ne deniyor? Pijamalı deniyor.
+
+679
+02:02:57,664 --> 02:02:59,924
+Aynı bilardo toplarında olduğu gibi yani.
+
+680
+02:03:00,404 --> 02:03:07,384
+Hiçbir şey değişmiyor. Konnektör olarak bu kablolarda da artık BNC ya da Vampir vs. yerine şey kullanıyoruz.
+
+681
+02:03:07,764 --> 02:03:09,964
+RJ45 tipinde bağlantı kullanıyoruz.
+
+682
+02:03:10,064 --> 02:03:21,304
+RJ45'in aslında kablonun iki ucunda telleri hangi sırayla dizdiğiniz iki tarafta da aynı olduğu sürece şey yapmayabilir.
+
+683
+02:03:21,743 --> 02:03:45,743
+Nedir o? Etki etmeyebilir diye düşünebilirsiniz. Ama aslında zaman zaman ettiği yerlerde olur. Mesela iki tane standart var burada. 568A ve 568B diye. Tecrübeyle sabittir. Bazı cihazlar, bazı network kartları vs. özellikle bunlardan birini isteyebilir. Gerçi günümüzde pek kalmadı o iş. Otonebe şehit ediyorlar, anlıyorlar, kullanıyorlar ama...
+
+684
+02:03:47,891 --> 02:03:56,251
+Yine de bu standartlara bağlı şekilde kablolama yapmak her zaman için daha efektif olacaktır. Aklınızda olsun.
+
+685
+02:04:00,627 --> 02:04:07,847
+Bu hani kablolananın bu şekilde yapılmasının ya da buna uygun yapılmasının, istenmesinin ya da beklenmesinin birkaç tane nedeni var.
+
+686
+02:04:08,328 --> 02:04:19,668
+Şimdi dört tane çiftiniz var, dört tane ikiliniz var ve aslında hızı arttırabilmek için bu dört çiftin tamamı da veri aktarımı için kullanılıyor.
+
+687
+02:04:19,668 --> 02:04:26,788
+Dolayısıyla hepsi canlı. Özellikle 1 giga haberleşmede hepsi canlı.
+
+688
+02:04:27,380 --> 02:04:38,359
+Dolayısıyla bu aynı kablo içerisinde yer alan bu tellerin, bu pairlerin tamamının birbiri üzerine etkileri var.
+
+689
+02:04:39,019 --> 02:04:51,019
+Baktığınız zaman bu etkiler, yakın çapraz girişim, uzak çapraz girişim, eş düzey uzak çapraz girişim falan gibi, next, fax, lfax falan gibi isimleri var.
+
+690
+02:04:51,539 --> 02:05:03,580
+Yani bu aslında şu demek, sizin en üstte soldaki çiftinizle kendisiyle aynı yerde bulunan diğer çiftler arasında bir girişim, cross talk olabilir.
+
+691
+02:05:06,452 --> 02:05:22,351
+En üste, solda gene çiftinizle, bu çiftin ta öbür ucunda yer alan çiftleriyle bir etkileşimi olabilir. Dolayısıyla da bu yüzden pin dizilimleri önemli. Kablo nereye, ne zaman, nasıl konduğu anlamda önemli.
+
+692
+02:05:22,351 --> 02:05:30,512
+Şimdi UDP kabloları sınıflandırılmasında CAT, yani işte kategori 1, 2, 3, 4, 5 vs. diye gidiyoruz zaten.
+
+693
+02:05:31,923 --> 02:05:47,343
+Günümüzde şu an zaten CAT5, CAT5'e CAT6'yı kullanıyoruz günlük hayatta. Çoğu zaman üniversitede gördüğümüz kadrolar ya CAT5'tir ya CAT5'edir. Zaman zaman da CAT6'lar vardır. Ne kadar çektiklerine ne yaptıklarına bağlı olarak.
+
+694
+02:05:49,619 --> 02:05:56,940
+Zaten CAT 7 ve sonrasında ne oluyor? Konnektör değişiyor. Bambaşka bir noktaya gidiyoruz. Onu şu an kullanmıyoruz o yüzden.
+
+695
+02:05:57,600 --> 02:06:02,279
+Şimdi bakır kabloları artan olarak konuşabileceğimiz, yapabileceğimiz şey ne dedik?
+
+696
+02:06:03,899 --> 02:06:14,279
+Fiber kablolar. Fiber kablo aslında baktığımızda temelde silika ve plastikten üretilen kablolar. İçi tarafta bir silika var, bir cam katman var.
+
+697
+02:06:15,380 --> 02:06:21,139
+Haneyle böyle bir sinika kablo üretmek pahalı, maliyetli bir yapı.
+
+698
+02:06:22,639 --> 02:06:25,219
+Ve fakat bunun bize getirdiği başka artılar var.
+
+699
+02:06:25,219 --> 02:06:29,739
+Bir kere içeride aktardığımız şey elektrik sinyali değil.
+
+700
+02:06:30,127 --> 02:06:50,127
+Işık dolayısıyla elektromanyetik etkilerden etkilenmesi, gürültülerden etkilenmesi gibi bir şey söz konusu değil. Böyle bir artısı var. İki, ışığın farklı dalga boylarını kullanarak şey yapma şansınız var. Çok geniş bir bandwidth oluşturma şansınız var. Delay anlamında ya da simya zayıflığı anlamında da daha...
+
+701
+02:06:50,420 --> 02:07:06,759
+avantajlı. Bunun üstüne bir de üstüne üstlük fiber bağlantılar. Hani şimdi Ethernet'i konuşurken, özellikle Tic Ethernet'i konuşurken ne dedik? Adamın biri gelip oraya bir makas atıp çat diye sisteme bağlayabiliyor. Şu an kullandığınız CAT5 ya da CAT.
+
+702
+02:07:07,988 --> 02:07:35,988
+Altı kablolarda bile aynı şey mümkün. Yani kabloyu kes, oraya bir dal at, aynen dinle. Ama fiber kabloların bağlantıları böyle yapılmıyor. Onun için özellikle kaynak vesaire yapılması gerekiyor. Onun da düzgün yapılması gerekiyor. Çok böyle sağda solda çaktırmadan yapılabilecek bir şey değil. Dolayısıyla belli açılardan sağladığı bir de güvenlik yapısı var. Bu arada demin konuşurken halk yapı yatırımı ile ilgili fazladan kablo çekilmesi...
+
+703
+02:07:35,988 --> 02:07:45,967
+Vesaire gibi şeyleri konuşmuştuk. Fiber aslında senelerdir şeyler tarafından, altyapı filmleri tarafından, ESP'ler vesaire tarafından kullanılan bir teknoloji.
+
+704
+02:07:46,347 --> 02:07:54,572
+Ve fakat ne yapıyor adamlar bu kablolomayı yaparken? Hani bu mahalleye bir tane fiber yapar deyip onu çekmiyorlar. Çoğu zaman...
+
+705
+02:07:55,539 --> 02:08:12,319
+İçerisinde birden fazla konu, çok sayıda konu. Yani mesela 16, 24, 32, 48 vesaire konu olduğu büyük kablolar çekiyorlar. Böylece ihtiyaç anında şey yapabiliyorlar, oradaki kapasiteyi arttırabiliyorlar. Sadece cihaz ekleri tekrar kazmamaz mı gerekmiyor.
+
+706
+02:08:17,684 --> 02:08:24,244
+Kullandıkları fiber kablolar içerisinden, daha doğrusu core'lar içerisinden ışık geçiyorlar.
+
+707
+02:08:24,344 --> 02:08:29,043
+Diğer core'lar içerisinden ışık geçmiyor. Çünkü bir yere bağlı değiller, aktiv cihazlara bağlı değiller.
+
+708
+02:08:29,963 --> 02:08:35,704
+O fiberlere de ne diyoruz? Dark fiber diyoruz. İçinde ışık olmadığı için.
+
+709
+02:08:36,384 --> 02:08:40,024
+Mesela dark fiber diye görürseniz aklınıza bu gelsin.
+
+710
+02:08:40,595 --> 02:08:49,195
+Fiber kabloya baktığınız zaman yapısı çoğu zaman sağda aşağıda gördüğünüz gibi ortada bir cam çekirdek var, core kısmı.
+
+711
+02:08:49,675 --> 02:08:55,475
+Bışında bir kılıf var. Sonrasında da primary ve secondary bufferlar var.
+
+712
+02:08:55,615 --> 02:09:00,595
+Yani kablonun bir şekilde zarar görmesini engellemeye yönelik olan kısımlar var, kılıflar var.
+
+713
+02:09:02,292 --> 02:09:25,532
+Bu normalde iç ortamda böyle iki aktif diyazı birbirine bağlamak için kullandığımız daha çok kablonun yapısı. Bunun dışında dış ortamda da fiberler kullanılır. Dış ortam dediğimiz zaman bunların etrafında aslında koruyucu bir katmanın olması gerekiyor. Neden koruyucu? Siz bunu topraktan geçiriyorsanız bir kemirgen kemirebilir. Bir başka kazı ya da bir başka çalışma sırasında bunun üzerine bir şeyler gelebilir.
+
+714
+02:09:25,532 --> 02:09:30,292
+Dolayısıyla mümkün olduğu kadar dış ortamdan korunacak şekilde olması lazım. Zaten o dış ortam fiberi.
+
+715
+02:09:30,292 --> 02:09:49,572
+Tek damardan oluşumu. Aslında bu Glass Core, Clading ve Primary Buffer'ın olduğu kabloları böyle çok sayıda hepsini bir araya getirip böyle bir kablo içerisine 20 tanesini, işte 40 tanesini, 50 tanesini neyse bir araya getirip öyle bir dış ortam kablosu oluşturuyorlar. Böyle tek tek oluşumu.
+
+716
+02:09:51,731 --> 02:10:02,051
+Baktığımız zaman fiber kablolar aslında iki temel fiber kablo var. Bir tanesi single modü bilder, diğeri multi modü bilder. Bunlar arasındaki temel fark her zaman olduğu gibi duygusal.
+
+717
+02:10:14,832 --> 02:10:29,092
+Işığı diğer tarafa hiç kırılmadan, bükülmeden dümdüz gönderebiliyor. Tabii ki bunu yapmak maliyetli bir iş. Ama efektif bir iş gördüğünüz üzere. Input-pass ile output-pass arasında bir fark yok neredeyse.
+
+718
+02:10:30,512 --> 02:10:38,632
+Multi-mode fiberde ise, verdiğiniz yani bu fiberin içerisine verdiğiniz ışık aslında saçılarak ve kırılarak ilerliyor.
+
+719
+02:10:40,212 --> 02:10:46,792
+Bu şekilde gördüğünüz üzere, farklı yerlerden yansımalar halinde öbür ucaya geliyor.
+
+720
+02:10:47,032 --> 02:10:50,932
+Dolayısıyla girişteki pass ile çıkıştaki pass arasında baya bir fark olabiliyor.
+
+721
+02:10:52,152 --> 02:10:58,572
+Baktığımız zaman MultiMod Fiber'in iki farklı versiyonu var. Biri Step Index, biri Grade Index.
+
+722
+02:10:58,572 --> 02:11:03,132
+Step Index'in özelliği şu.
+
+723
+02:11:03,520 --> 02:11:16,160
+Bu kablo içerisinde kullanılan silikanın özelliği her noktada yansıma yoğunluğu aynı.
+
+724
+02:11:17,260 --> 02:11:25,640
+Dolayısıyla dış yüzeye çarptığı zaman, şurada olması lazım, dış yüzeye çarpılmalar olduğu zaman
+
+725
+02:11:26,579 --> 02:11:45,359
+Ne oluyor? Yoğunluk aynı olduğu için sekerek ilerleyenler aslında daha uzun bir mesafe alıyor. Yoğunluk aynı olduğu için de aynı hızlık veriyor. Dolayısıyla kaynaktan çıkan sinyalin farklı yerlere dallanması sonucunda çıkışta her birinin farklı zaman aralıklarıyla çıktığını görüyorsunuz.
+
+726
+02:11:53,268 --> 02:12:06,948
+Yoğunluk daha fazla. Kenarlarda ise yoğunluk daha az. Dolayısıyla bir ışık kaynağından saçılım olduğu zaman şu hatta mesela daha çok yol gidiyorsunuz.
+
+727
+02:12:07,247 --> 02:12:31,247
+Evet, ama bu yol sırasında yoğunluk devamlı değişiyor. Merkezde daha yoğun, dolayısıyla daha yavaş, kenarlarda daha az yoğun, dolayısıyla daha hızlı gidiyorsunuz. Sonuçta da, dikkat edin, aslında saçılımlar ne oluyor? Hep bir yerlerde birleşiyor. Kablonun öbür ucunda da aralarındaki fark çok az olduğu için çıkış biraz daha makul ya da mantıklı oluyor. Bu yüzden de...
+
+728
+02:12:33,203 --> 02:12:37,843
+Daha çok grade index olan multi-mod fiber kablolar tercih ediliyor.
+
+729
+02:12:38,603 --> 02:12:43,083
+Şimdi fiber kablo üzerinde kablonun özelliğini konuştuk. Bir de şeyi konuşmamız lazım.
+
+730
+02:12:43,743 --> 02:12:47,023
+Işık aktaracağımıza göre ışık kaynaklarını konuşmamız lazım.
+
+731
+02:12:47,223 --> 02:12:53,583
+Burada iki tane temel çözüm var. Biri de lazer, injection laser diode diye geçiyor aslında.
+
+732
+02:12:53,583 --> 02:13:00,503
+Lazerin özelliğine daha kesintisiz, düz, odaklanmış bir şekilde sinyal üretilmek eşittir.
+
+733
+02:13:01,203 --> 02:13:14,403
+Aklınıza single mode fiber. Led isene odaklanma yok, yayılım var. Dolayısıyla multi mode fiber için daha uygun olduğunu hemen zaten şey yapıyorsunuz, çözüyorsunuz.
+
+734
+02:13:14,707 --> 02:13:38,707
+Işığın kaynağı olduğu gibi ışığın öbür tarafta algılanmasını sağlayacak bir şeye de ihtiyacımız var. Ona da fotosensitimsel deniyor aslında, fotodiyot deniyor. Yani üzerine ışık düştüğü zaman bunu neye çeviriyor? Elektriksel sinyale çeviriyor olması lazım. Bakır ve fiber optik üzerine zaten en başta biraz konuştuk. Çok daha bir daha bir daha konuşmaya gerek yok. Yani fiberin artılarını konuştuk. Burada belki...
+
+735
+02:13:39,391 --> 02:14:01,391
+Hem bu slide'da hem diğer slide'da artıları konuşulmuş ve fakat eksilerini de konuşmak lazım. Fiber kablo, siz mesela şu an çalışma odasında, bizim bölümdeki çalışma odalarında ne yapıyorsunuz? Sandalyenizle oradan oraya gezmiyorsunuz. O sırada fiberlerden çıktı. Bakır kablonun üzerinden geçiyorsunuz. Bak kablo...
+
+736
+02:14:01,587 --> 02:14:11,747
+Ruhunu teslim etmek üzere ama hala çalışıyor bir şekilde. Fakat aynı şeyi fiber döşeli ortamda yaparsanız o kabloyu bir daha kullanamazsınız. O kablo bitmiş olur.
+
+737
+02:14:13,427 --> 02:14:29,427
+Dolayısıyla aktiber kablolar aslında daha böyle pamuklara sarıp sarmalarak kullanılan ya da saklanan yapılar. Daha dikkatli olunması gereken yapılar. Evet, daha ince vesaire oldukları için daha az yer kaplarlar ama ince oldukları kadar narindi.
+
+738
+02:14:34,644 --> 02:14:42,284
+Bu kablolar üzerinde ulaşabilecek ya da konnektörler üzerinde ulaşabilecek her türlü ufacık problem size büyük problem olarak geri dönüyor.
+
+739
+02:14:42,384 --> 02:14:53,004
+Mesela kablonun konnektörü üzerinde bir yağ lekesi, bir toz bir şey olduğu zaman aslında haberleşmeyi doğrudan engelliyor.
+
+740
+02:14:53,652 --> 02:15:06,831
+Dolayısıyla bunların düzgün şekilde kullanılmadığı zaman, kapaklarının takılır, hem aktif cihazın ucu tarafına, hem kablo uçlarına böyle saklanması lazım.
+
+741
+02:15:08,291 --> 02:15:10,992
+Bir diğer şey kablo ile ilgili.
+
+742
+02:15:13,460 --> 02:15:24,060
+İçerisinde lazer aktarılıyorsa, özellikle ÖLD kullanılıyorsa, o lazer range olarak göze zararlı bir lazer.
+
+743
+02:15:24,199 --> 02:15:30,520
+Şimdi fiber kablo ile bağlantı yaptığınız zaman aslında bir pair ile bağlantı yapıyorsunuz.
+
+744
+02:15:30,600 --> 02:15:32,260
+Bir taraf transmit, bir taraf receive.
+
+745
+02:15:38,068 --> 02:15:46,847
+İki göz var, bir tanesinde lazer çalışıyor, diğerinde bir şey yok. Ne var? Şey diyordunuz var.
+
+746
+02:15:47,216 --> 02:16:04,456
+Işığa hassas, fotosensitif diyodunuz var. Ne için? Bu taraftaki sinyali göndereceksiniz. Karşı tarafta fotosensitif diyoda bağlı olacak. Buradaki lazer de buradaki fotosensitif diyoda bağlı olacak. Yani transmitörüsü birbirinden fiziksel olarak da ayrılmış durumda.
+
+747
+02:16:04,456 --> 02:16:15,195
+Bu kablonun hangisini nereye takacağınızı anlamak için kabloyu bir uca taktınız. Diğer uçta sinyalin nerede olduğuna bakmak için çevirip yüzünüze bakmıyor olmanız lazım. Çünkü lazerse eğer.
+
+748
+02:16:15,216 --> 02:16:34,376
+zaten doğrudan göze zararlı. Dolayısıyla bunu anlamanın ya da bakmanın yolu, ortamı karartmak ya da karanlık bir yerde kabloyu şöyle elinizle kapatıp tutmak, ışığın ne taraftan çıktığına bakmak olmalı. Bu da aklınızda olsun. İş kazası olmasın. Şimdi bu hafta konuşacaklarımız bu kadar.
+
+749
+02:16:36,884 --> 02:16:46,943
+Varsa bir sorunuz, sormak istediğiniz bir şey onu alayım. Önümüzdeki hafta inşallah yüz yüze görüşmek üzere diyorum. Önümüzdeki haftada zaten unguided ortamları konuşacağız.
+
+750
+02:16:46,943 --> 02:16:59,884
+Yani nedir o radyo frekansı, mikro vevi, infra redi vs. bu teknolojileri bunların ne olduğunu, nasıl çalıştığını, ne yaptığımızı vs. konuşacağız.
+
+751
+02:17:00,500 --> 02:17:12,920
+Sonra temel bazı kavramlara bakacağız. Mesela multiplexing'e, onu işte frekans tabanlı, zaman tabanlı vesaire yapma kısmına bakacağız.
+
+752
+02:17:13,060 --> 02:17:25,400
+Sonrasında, yani zamanımız kalırsa eğer, error detection ve error correction yapılarını konuşuyor olacağız.
+
+753
+02:17:28,531 --> 02:17:34,631
+Evet, herhalde bir sorunuz yok gibi anladım bu durumda. O zaman haftaya görüşmek üzere arkadaşlar.
+
+754
+02:17:36,432 --> 02:17:37,031
+Esen kutlu.

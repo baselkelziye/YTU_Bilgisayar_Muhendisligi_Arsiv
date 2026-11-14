@@ -1,0 +1,2483 @@
+1
+00:05:00,788 --> 00:05:02,788
+Arkadaşlar, merhabalar, hoş geldiniz.
+
+2
+00:05:07,540 --> 00:05:08,300
+Çok güzel.
+
+3
+00:05:20,211 --> 00:05:22,123
+Bir iki dakika daha bekleyelim.
+
+4
+00:05:51,411 --> 00:05:55,411
+dersimizin herhangi bir iletişim grubu, Whatsapp grubu falan var mı arkadaşlar?
+
+5
+00:06:06,387 --> 00:06:12,267
+Şöyle, derse kaydolup henüz online yazıza kaydı yapılmamış arkadaşlar olabilir.
+
+6
+00:06:13,167 --> 00:06:18,427
+Size zahmet bu linki benim grubum için, yani de not düşerek,
+
+7
+00:06:19,187 --> 00:06:30,327
+işte neydi, Yapısal Programlamaya Giriş 2, Yapısal Programlamaya Giriş Grup 2 katılım linki diye paylaşırsanız, belki arkadaşlarımız katılırlar.
+
+8
+00:06:31,060 --> 00:06:39,779
+Bana şu ana kadar bir mail gelmedi de dersimiz şey kontenjan 110'dan 112'ye çıkmış. Herhalde yeni kayda olanlar vardır.
+
+9
+00:07:04,435 --> 00:07:06,435
+Sağ ol [öğrenci], teşekkür ederim.
+
+10
+00:07:07,935 --> 00:07:20,435
+Evet, şimdi geçen derslerimizde algoritma kavramına böyle temelden yol alarak ulaşmaya çalıştık. Sonra iyi algoritma nedir dedik?
+
+11
+00:07:20,935 --> 00:07:29,931
+Bir problem üzerinde, TRI-SAN problemi üzerinde bir algoritmanın iyileştirme ile ne kadar etkisinin olduğunu süre açısından gördük.
+
+12
+00:07:30,451 --> 00:07:46,851
+Tabi aslında süreyi etkileyen bir başka parametre vardı. Temel operasyonumuz kaç defa tekrar edilecek. Bu bizim için önemliydi. Bununla alakalı ders notunu gösterdiğim, Premson Üniversitesi'nin slide'ını ders notlarınıza yükledim arkadaşlar.
+
+13
+00:07:46,851 --> 00:07:57,252
+Şimdi şöyle başlayalım. Acaba algoritmayı tasarlamakla iş bitiyor mu? Biter mi sizce?
+
+14
+00:08:00,019 --> 00:08:01,019
+Tabi ki de hayır.
+
+15
+00:08:02,019 --> 00:08:04,019
+Ne yapmamız lazım? Kim konuştu?
+
+16
+00:08:04,019 --> 00:08:06,019
+[öğrenci].
+
+17
+00:08:07,019 --> 00:08:10,019
+Tabi ki bunun da makinada çalışabileceğinden emin olmamız lazım.
+
+18
+00:08:10,019 --> 00:08:15,019
+Biz fiziksel hale getirmemiz gerekiyor diyoruz.
+
+19
+00:08:15,019 --> 00:08:18,019
+Yani o zaman ne yapmamız gerekiyor?
+
+20
+00:08:18,019 --> 00:08:24,019
+From Algorithma to Program
+
+21
+00:08:26,516 --> 00:08:32,516
+Aslında program da bir algoritma da, program sadece algoritma bir ifade tipi.
+
+22
+00:08:32,516 --> 00:08:41,516
+Şimdi programın ne olduğunu kısaca özetleyeceğim, daha sonra C dilinin bazı özelliklerini bahsedeceğiz.
+
+23
+00:08:41,516 --> 00:08:51,115
+İşte burada ufak tefek bazı detaylar vereceğim. Geçen dönem görmediğiniz ama bu dönemden sonra çok çok karşılaşacağınız detaylarla alakalı konuşacağız.
+
+24
+00:08:51,443 --> 00:08:59,443
+Şimdi, bir algoritmanın çalışmasının performansını, işte elde edeceğimiz çıktıkları kağıt üzerinde test etmeniz her zaman mümkün değil.
+
+25
+00:08:59,443 --> 00:09:08,443
+Basit bir algoritmadır, işte kağıtla trace edersiniz, bütün değişkenleri analiz edersiniz. Bu olabilir ama gerçek hayat maalesef bundan çok uzak.
+
+26
+00:09:08,443 --> 00:09:18,443
+Mecburen bir program haline algoritmayı getirmemiz gerekiyor. Yalnız burada şöyle bir durum var, algoritma bir donanım üzerinde çalışacak.
+
+27
+00:09:18,772 --> 00:09:31,272
+Bilgisayar sistemini katmanlı bir mimari şeklinde düşünürsek, en altta hardware dediğimiz bir katman var. Bu katmanın altında da bizi en çok ilgilendiren CPU var.
+
+28
+00:09:31,272 --> 00:09:41,772
+Şimdi bir algoritmanın ifade edilmesi, komutlar cilsinden yazılması demek. Komutlar cilsinden yazınca bunu CPU'nun anladığı dilde yazmamız gerekiyor demektir.
+
+29
+00:09:42,131 --> 00:09:54,131
+Bu açıdan bir program yazabiliriz. Yani algoritmayı CPU'ya uyumlu olarak yazabiliriz. Buna ne diyoruz? Machine Language diyoruz. Yine bu.
+
+30
+00:09:56,131 --> 00:10:09,131
+Machine Language. Bu doğrudan ne ile alakalı? CPU ile alakalı bir şey. Yani CPU özelinde makine gibi yazılır.
+
+31
+00:10:09,331 --> 00:10:21,812
+Bir CPU'nun modeli bile farklılaşsa, aynı markayı düşünelim, Intel CPU'lar modeli bile farklılaşsa, makine dili değişeceği için programı değiştirmek gerekiyor.
+
+32
+00:10:21,812 --> 00:10:32,531
+Bu açıdan neye bağlı? Dolayısıyla Machine Dependent dediğimiz bir durum var. Bu pek istediğimiz bir şey değil. Özellikle
+
+33
+00:10:32,851 --> 00:10:44,851
+Taşınılabilirlik, portability açısından istenilen bir şey değil. Neden? Ben işte bu bilgisayarda programımı yazdım, başka bir bilgisayara aktarmam gerekir. Genellikle öyle bir program var.
+
+34
+00:10:44,851 --> 00:10:53,851
+Dolayısıyla o makinenin CPU'suna özel tekrar program yazmam çok çok saçma. Yani doğru bir şey olmuyor.
+
+35
+00:10:54,323 --> 00:11:02,323
+Bu machine language üzerinde kod yazdığımızı önce kabul edelim. Tamam, başka bir makineye taşımayacağız veya bütün işlemciler aynı.
+
+36
+00:11:02,323 --> 00:11:08,823
+Bu makine dili nelerden oluşuyor? Sıfır ve birlerden oluşuyor dedikmiştik. Geçen derste böyle şeylerden oluşuyor.
+
+37
+00:11:08,823 --> 00:11:19,323
+Bunun biraz da anlaşılır hali, günlük hayattaki kullandığımız hali assembly dili. Bu, mnemonik dediğimiz...
+
+38
+00:11:20,724 --> 00:11:32,224
+Gerçek hayattaki kullandığımız ifadeleri böyle kısa kısa yazan şeyler. Şu kelimeyi tam doğru yazamamış olabilirim. İngilizcesine bakarsınız. Yani üç aşağı beş yukarı böyle.
+
+39
+00:11:32,224 --> 00:11:37,068
+Örneğin toplama yapmak için add, veri aktarmak için move.
+
+40
+00:11:37,268 --> 00:11:48,668
+Ondan sonra artış yapmak için increment, azal için decrement böyle ifadeler kullanılıyor. Yanına başka başka şeyler kullanılıyor. Yalnız bu ikisi birbirinin kopyası.
+
+41
+00:11:48,668 --> 00:12:00,067
+Yani add dediğimiz şeyin yanına bir şeyler ekliyorsunuz, onun doğrudan birebir makine dilindeki karşılığı kullanılıyor. Dolayısıyla bu da makineye bağlı bir şey. Bu da işimizi görmüyor.
+
+42
+00:12:00,436 --> 00:12:04,436
+Sadece kolaylığı ne? 0 ve 1'lerle kod yazmak biraz zor.
+
+43
+00:12:04,436 --> 00:12:10,436
+Daha böyle anlaşılır, günlük hayattan ifadelerle yazmak, program yazmayı kolaylaştırıyor.
+
+44
+00:12:10,436 --> 00:12:13,436
+Ama makine bağlılığından bizi kurtaramadı.
+
+45
+00:12:13,436 --> 00:12:21,436
+İşte bu aşamadan sonra makine bağımlı durumdan ayrılıp, yeni bir katman ekliyoruz.
+
+46
+00:12:21,436 --> 00:12:27,436
+Bu katmanlar 2 tane olur, 3 tane olur, 4 tane olur, artar gider. Ben 2 tane ekleyeceğim.
+
+47
+00:12:27,796 --> 00:12:48,716
+Burada mid-level languages dediğimiz programlama dili. Burası low-level languages. Yani şu iki kavramı low-level olarak düşünebiliriz. Düşük seviyededir. Düşük seviyeden kastımız makineye en yakın.
+
+48
+00:12:48,980 --> 00:12:57,680
+Aslında hız açısından en fazla hızlı diyebileceğimiz de, çünkü doğrudan makinenin anladığı dilden konuşuyorsunuz. Araya bir tercüman koymuyoruz.
+
+49
+00:12:57,680 --> 00:13:05,480
+Öyle değil mi? Şimdi 20 dakika bir insanla, bir yabancıyla konuşuyorsunuz ama konuştuğu dili bilmiyorsunuz. O zaman ne olacak?
+
+50
+00:13:05,480 --> 00:13:12,680
+Yani tamamen 10 dakika tercüme dersek 10 dakika konuşmuş gibi oluyorsunuz gerçekte. Bu da bunun gibi.
+
+51
+00:13:13,779 --> 00:13:17,779
+Bu dilleri bu şekilde iki parçaya genel olarak ayırabilirsin.
+
+52
+00:13:17,779 --> 00:13:23,779
+Orta seviyeli diller hızlı bir şekilde makinenin anlayacağı dile çevrilebilir.
+
+53
+00:13:23,779 --> 00:13:31,779
+Ve genellikle sistem programlama dilleri burada da genellikle mid-level language içerisinde C programlama dilleri görüyoruz.
+
+54
+00:13:31,779 --> 00:13:38,779
+Çünkü doğrudan neye dönüştürülebiliyor veya çok az optimizasyonlarla, az işlemlerle
+
+55
+00:13:39,392 --> 00:13:51,792
+assembly diline ve daha sonra makine diline çevrilemiyor. Bunu birazdan bir program yazıp, assembly dilindeki karşılığı nedir, makine dilindeki karşılığı nedir onu örneklerle göstereceğim. Kod yazacağız, göstereceğiz.
+
+56
+00:13:51,792 --> 00:14:02,592
+Şimdi buna mid-level dedik. Şimdi bunun midi varsa bir de high-level vardır. Günümüzde hatta veri high-level veya işte
+
+57
+00:14:03,091 --> 00:14:08,091
+User Perspective Level dediğimiz kullanıcı perspektifinden program yazan diller var.
+
+58
+00:14:08,091 --> 00:14:15,091
+En basitinden hani bugün ChatGPD ile beraber şunu görüyorsunuz, işte şunu yapan programı yazar mısın diyorsunuz.
+
+59
+00:14:15,091 --> 00:14:19,091
+Üç aşağı beş yukarı doğrusuyla yanlışıyla size bir şeyler üretiyor.
+
+60
+00:14:19,091 --> 00:14:25,091
+Ne kadar kullanıcıya uzaklaşırsa arada o kadar tercüman, dönüşme, ekstra işlemler yapılacak demektir.
+
+61
+00:14:25,091 --> 00:14:30,091
+Bu da aslında bir overhead, gereksiz bir beklemeye neden olabilir.
+
+62
+00:14:30,419 --> 00:14:34,519
+Şimdi C'de ne yazılır arkadaşlar? Genellikle sistem programları yazılır.
+
+63
+00:14:36,819 --> 00:14:42,960
+Biraz daha zorlarsanız işte Operating Systemler yazılıyor ki çoğu şeyler.
+
+64
+00:14:43,740 --> 00:14:46,039
+Embedded System programları yazılıyor.
+
+65
+00:14:47,819 --> 00:14:52,939
+Yani her şey ile size ait olan olmasını istediğiniz bir program yazacaksanız
+
+66
+00:14:53,459 --> 00:14:57,559
+bütün detaylarıyla bütün güvenlik vesaire durumlarıyla C'de yazabilirsiniz.
+
+67
+00:14:57,940 --> 00:15:08,139
+Burada makineye bağlı değiliz arkadaşlar. Arada bir aracıyla sizin yazdığınız programlar, print, her dilde ekrana bir şey yazdırma demek.
+
+68
+00:15:08,139 --> 00:15:17,139
+Ne bileyim for hemen hemen her dilde var. Ondan sonra ne var? While döngüsü var, hatta if var. While'e gelmeden önce if yazalım. Şart işlemi deneyim.
+
+69
+00:15:17,139 --> 00:15:20,139
+Yazma işlemi daha esnek.
+
+70
+00:15:20,724 --> 00:15:28,404
+Dönüşüm yaparak makine diline çeviriyoruz. Dolayısıyla makineden bağımsız, machine independent bir durum var.
+
+71
+00:15:33,652 --> 00:15:52,852
+Şimdi C'nin dezavantajı var mı? Var. Şöyle dezavantajı var. Küçük bir dil, kelime sayısı veya işte repertuarındaki ifade edilecek şey, kavram sayısı az. Az bir kelime sayısıyla çok fazla şey ifade etmeye çalışıyoruz. O açıdan bazen programlar uzayabiliyor.
+
+72
+00:15:53,056 --> 00:16:00,056
+İşte internette görmüşsünüzdür, işte Hello World yazmak için C'de belki 5-6 satır yazarsınız ama Python'da bir satır yazsanız oluyor.
+
+73
+00:16:00,056 --> 00:16:08,056
+Bu açıdan değil, öyle düşünmeyin arkadaşlar. Bir web programı yazacaksınız, bir mobil uygulama yazacaksınız. Bunu C'de belki yazabilirsiniz.
+
+74
+00:16:08,056 --> 00:16:19,788
+Yani gerekli frameworkler, kütüphaneler varsa yazılabilir ama işi uzatırsınız. Dolayısıyla ne kadar sistem programlama, işletim sistemleri gibi uygulamalarda tercih edilse de,
+
+75
+00:16:19,860 --> 00:16:35,860
+User level'da, yani en tepeye de şuraya bir user'ı koyalım. İşte burada bir kişi var. Bu kişi programlarla işte user olarak istediği programı çalıştırmak isteyecek. En basitimler işte PowerPoint diyelim.
+
+76
+00:16:35,860 --> 00:16:45,860
+PowerPoint tarzı uygulamaları C'de yazmak biraz zor. İşte Zoom görüyorsunuz. Farklı diller kullanılıyor. Buna da high level languages diyoruz.
+
+77
+00:16:50,196 --> 00:17:17,155
+Örnek olarak Java'yı verebiliriz, C şarkı verebiliriz, hepinizin çok sevdiği Python'ı verebiliriz, ben de severim, yani iyidir. Ondan sonra Rust var, yeni yeni çıkıyor. Gerçi Rust artık C'ye alternatif olarak gösterilen bir dil. Onu orta seviyeli olarak da düşünmek mümkün gibi gibi gibi bir sürü, işte JavaScript mesela web uygulamalarında çok fazla karşımıza geliyor gibi söyleyebiliriz.
+
+78
+00:17:17,523 --> 00:17:25,923
+Günün sonunda olması gereken şey, yukarıdan aşağıya bir translation dönüşüm yapılması gerekiyor.
+
+79
+00:17:25,923 --> 00:17:33,844
+Sonuçta isterseniz en tepe seviyede de yazacak olsanız, ChatGP'den de, GPT'den de bir program üretecek olsanız,
+
+80
+00:17:33,844 --> 00:17:38,483
+bunun çalışacağı bir hardware, CPU var, o CPU'ya dönüşüm gerekiyor.
+
+81
+00:17:38,483 --> 00:17:40,483
+Şimdi bu translation dönüşüm işleminin...
+
+82
+00:17:41,523 --> 00:17:46,123
+Detaylandıracağım. Buraya kadar bir sorumuz var mı? Sormak istediğiniz herhangi bir şey var mı?
+
+83
+00:17:47,163 --> 00:17:57,403
+Algoritmayı programa çevirirken yapmamız gerekenleri birazcık böyle kısaca özetlemiş olduk. Bir kısmı geçen dönemden bir kısmı bu dönemin yeni konuları olarak şimdi konuşacağız.
+
+84
+00:17:59,183 --> 00:18:07,123
+Dönüşüm demek programlama dilleri ve işte böyle bir hesaplama teorisi diye bir ders vardır.
+
+85
+00:18:07,571 --> 00:18:12,371
+Şimdi dili oluşturmak ayrı mevzu, yani bir programlama dilini yazabilmek ayrı mevzu.
+
+86
+00:18:13,371 --> 00:18:19,371
+Yazılmış bir programda program yazıp o programı makine diline çevirebilmek ayrı mevzu.
+
+87
+00:18:19,371 --> 00:18:24,371
+Biz burada programlama dili yazmıyoruz, program yazıyoruz ve bunu makine diline çeviriyoruz.
+
+88
+00:18:24,971 --> 00:18:32,971
+Tavsiyelerim mesela şey yazın, chat GPT kullanıyorsanız, işte bana bir programlama dili yazabilir misin diye soru olarak.
+
+89
+00:18:33,299 --> 00:18:41,539
+Veya herhangi bir dil, insanlar arasındaki konuşma dili bir yazabilir misin diye bakalım neler göreceksin biraz araştırın.
+
+90
+00:18:41,539 --> 00:18:54,980
+Şimdi burada yaptığımız ama şey var olan bir dil var. Şimdi bir dil varsa bunun grameri vardır. Bunun alfabesi vardır. Öyle değil mi?
+
+91
+00:18:54,980 --> 00:19:00,659
+Bu gramer ve alfabeye uygun olarak bir translation, dönüşüm gerçekleşmesi gerekiyor.
+
+92
+00:19:00,756 --> 00:19:27,756
+Tabi bu C gibi işte şey diller, bunların hepsi makine dili asem dili dahil formal diller, biçimsel. Bunlar şöyle diyelim. Yine grameri ve alfabesi olan, kendine ait kuralları olan bizim günlük konuşma dileme, onlara da doğal dili diyoruz. Natural Languages. Mesela Natural Language Processing var.
+
+93
+00:19:28,531 --> 00:19:34,531
+Ne bu? Doğal dil işlemi. Bir kelimeyi veriyorsun veya cümleyi veriyorsun, ögelerini ayırt ettiriyorsun bilgisayarda.
+
+94
+00:19:34,531 --> 00:19:40,531
+Veya bir paragraf verdin, bu paragraf hangi konu üzerinde bunu tahmin ettiriyorsun?
+
+95
+00:19:40,531 --> 00:19:46,531
+Yani bunlar doğal dil işleminin alt konuları ama bizim burada yapacağımız şey formal iller üzerinde.
+
+96
+00:19:46,531 --> 00:19:54,283
+Bunların daha detaylarını hesaplama kuramı diye dersiniz var. O başlık altında bu konuyu daha çok incelersiniz arkadaşlar.
+
+97
+00:19:54,644 --> 00:20:03,324
+Şurayı içlerini doldurmuyorum. Burada zaten farklı örnekleri şurada verdik. Şimdi bu Translation işlemi nasıl olacak? Sizin yazdığınız bir program var.
+
+98
+00:20:03,324 --> 00:20:12,244
+Ve bu program bizim günlük hayattaki konuşma dilimize çok çok yakın. Formal bir dili ama çok çok yakın. İşte bunu C'de yazdığımızı kabul ediyoruz.
+
+99
+00:20:21,619 --> 00:20:29,819
+Neye dönüşmesi lazım günün sonunda? Makinenin anlayacağı, makine koduna, yani CPU'nun anlayacağı makine koduna dönüşmeleri lazım.
+
+100
+00:20:29,819 --> 00:20:37,420
+Buna da genellikle işte exe uzantılı veya out uzantılı dosyalar diyoruz. İşte buna da yine my diyelim.
+
+101
+00:20:38,119 --> 00:20:41,619
+Bu da oradan çalıştırılabilir. Runnable bir kod.
+
+102
+00:20:42,019 --> 00:20:44,619
+Şimdi burada birkaç farklı aşama var.
+
+103
+00:20:44,915 --> 00:20:50,115
+Bir kere ön işlemler yapılması gerekiyor, pre-processing.
+
+104
+00:20:53,115 --> 00:21:01,316
+Bu ön işlemlerde kodun içerisinde yazılan define işlemleri, makro işlemleri, substitution işlemleri gerçekleştirilir.
+
+105
+00:21:01,915 --> 00:21:11,316
+Bu ön işlemlerden sonra kodun bir ara kodu dediğimiz, işte obje kodu üretilecek.
+
+106
+00:21:12,307 --> 00:21:20,107
+Bu şudur, sizin kodunuz içerisinde bazı yazdığınız satırlar vardır ki, bunun doğrudan makine koduna çevrilmesi gerek.
+
+107
+00:21:20,107 --> 00:21:27,107
+Bazı satırlar vardır ki, onların zaten çevrilmiş halleri bir yerlerde duruyordu. Örneğin print.
+
+108
+00:21:27,107 --> 00:21:33,507
+Şimdi her defasında print işlemini derleyip makinenin anlayacağı koda çevirmek bir zaman kaydı.
+
+109
+00:21:33,507 --> 00:21:39,507
+Zaten o bir yerlerde çevrildi. Hatta stdio diye ekliyoruz ya C ile zaten onu ekliyoruz aslında.
+
+110
+00:21:39,700 --> 00:21:47,260
+Dolayısıyla burada objek kodda compile işlemi gerçekleşiyor. Compiler yardımıyla bu işlemi yapıyoruz.
+
+111
+00:21:47,260 --> 00:21:55,579
+Ne oluyor? Programın içerisindeki bazı kodlar, örneğin şurada şöyle bir şey ekleyelim, a eşittir 5 diye bir şey yazdınız.
+
+112
+00:21:55,579 --> 00:22:03,660
+Bu a eşittir 5'in compile aşamasına karşılığı move ax,5 diye. Güzel yazmaya çalışayım.
+
+113
+00:22:08,756 --> 00:22:34,715
+x,5. Böyle bir formata dönüşüyor. Ama bir yerlerde mesela print var. Şurada. Burada o print hala kalıyor. Çünkü bu daha önce değerlendi zaten. Tekrar değerlemeye gerek yok. Sonra devam ediyoruz. Bu değerlenmiş olan, başka yerlerden gelen kütüphanelerle, hani şu bizim değerlenmiş kodumuz, bir de başka yerlerde hali hazırda değerlenmiş olan şeyler var.
+
+114
+00:22:36,115 --> 00:23:00,115
+Bunu ne yapıyoruz? Bağlama yapıyoruz, linking. Veya buna şöyle içeride diyelim, linking diyelim şuraya. Linking'i kim yapar? Linker'lar yapar. Linker bir program. Compiler işlemi kim yapar? Bunu da compiler yapar. O da bir program.
+
+115
+00:23:02,644 --> 00:23:09,244
+Link işlemi yapıldıktan sonra artık sizin programınız executable hale geliyor.
+
+116
+00:23:09,244 --> 00:23:15,844
+Bunun daha sonraki aşamada, üstüne çift tıkladınız, çalıştınız, artık bunu işletim sistemine devrediyorsunuz. Başka başka aşamaları var.
+
+117
+00:23:15,844 --> 00:23:29,644
+Demek ki bir C programının çalıştırılabilir hale gelmesi, yani makine dilini, machine language diyelim şöyle, bu dile çevrilmesi için yapılması gereken genel aşamalar bunlarmış.
+
+118
+00:23:30,163 --> 00:23:32,163
+Buraya kadar bir sorumuz var mı?
+
+119
+00:23:34,163 --> 00:23:41,163
+Bu bize neyi sağladı? Bir, kodu taşıyabiliyoruz. Taşıyabilmemiz sayesinde işte geliştirici yazdığı programın
+
+120
+00:23:41,715 --> 00:24:05,715
+Deploy edebilir. Deployment ne demek? Bir programı aldınız. Normalde konuşlandırma diye bilmiyor ama bizim terminolojimizde deployment yazılan bir programın, hedef hangi makineye taşınacaksa, bu bir müşteri olabilir, başka bir şey olabilir. O gidip ilgili bilgisayara çalıştırılabilir hale getirmek. Bu aşamalar bittikten sonra bizim programımız çalışabilir hale geldi.
+
+121
+00:24:06,132 --> 00:24:09,132
+Peki, o zaman biz neyi bilmemiz lazım arkadaşlar?
+
+122
+00:24:09,132 --> 00:24:24,132
+Algoritmadan programa dönüşüm yaparken, bir, şu Translation işlemini, özellikle bunu C dini üzerinde, C dininin gramerini, alfabesini öğrenmemiz gerekiyor ki, algoritmanın kod karşılığını yazalım.
+
+123
+00:24:24,132 --> 00:24:29,132
+Şimdi algoritma geliştirmek bir problem, programlama da bir başka problem.
+
+124
+00:24:29,488 --> 00:24:35,888
+Doğrudan, yani hep şunu söylerler ama yanlıştır. İşte algoritmayı geliştirebilsen programı yazmak kolay.
+
+125
+00:24:35,888 --> 00:24:41,688
+Vallahi her zaman kolay değil. Öyle C dilinde A deyince istediğin algoritmayı geliştireceğin program yazamazsın.
+
+126
+00:24:41,688 --> 00:24:46,488
+Belki Python gibi C şart gibi dillerde yazmak mümkünür ama özellikle C'de...
+
+127
+00:24:46,688 --> 00:24:59,408
+Gramer tarafında çok çok fazla detay var. Belki detay algoritmadan daha fazla. Siz algoritmada ok işaretlerini biliyorsunuz, kareler var, altıgen semboller var.
+
+128
+00:24:59,408 --> 00:25:07,568
+Burada biraz daha bizim alfabemiz ve gramerimiz kalabalıklaşıyor. Bunlara dikkat etmemiz gerekiyor. O zaman bundan sonraki başlığımız ne olacak?
+
+129
+00:25:08,147 --> 00:25:30,147
+C programlamaya giriş gibi bir şey olacak. Tabi artık bundan sonraki şeyleri böyle her şeyi yazmayacağım. Hani tahta şeklinde değil de biraz daha varsa slide üzerinden bazı şeyleri. Yoksa işte program ve kod yazarak devam edeceğiz. Şimdi bununla alakalı bir slide'ım var. Onu bir açayım. Bunları da size ayrıca paylaşıyorum zaten.
+
+130
+00:25:33,460 --> 00:25:36,859
+Bakın, bir yerden dolaşa dolaşa C'ye kadar geldik.
+
+131
+00:25:41,332 --> 00:25:55,332
+Şimdi C programlama dili ile alakalı size daha önceden birkaç kitap kaynağı söylemiştim. Şunlar bizim beğendiğimiz kitaplar. Elektronik olarak bulursunuz, şunu özellikle bulabilirsiniz.
+
+132
+00:25:55,332 --> 00:26:01,332
+Bunu biz gelecek dönem yapısal programlama dersinde de anlatmayı planlıyoruz, üzerinden gideriz.
+
+133
+00:26:01,652 --> 00:26:17,932
+Şimdi Coursera üzerinde C programlama, Courses diye aratırsanız bir sürü şey var. Tutorials Point gibi siteler var. Ben size ayrıca linkler de yükledim. Buradan bulabilirsiniz. Neyi öğreneceğiz? Bir kere senin gramerini öğreneceğiz, kurallarını öğreneceğiz.
+
+134
+00:26:18,259 --> 00:26:32,259
+Ondan sonra zaten kod yaza yaza. Öğreneceğiz derken ezberlememiz gerekmiyor. For döngüsü nasıl yazılırmış, bunu alayım, deftere yazayım, defterde tekrar edeyim, öyle bir şeye gerek yok. Kod yazdıkça öğrenirsiniz.
+
+135
+00:26:32,531 --> 00:26:39,531
+Zaten sayısal analiz dersinde de C dili üzerinde kod yazmanızı istememizin sebebi bu dersi tamamlaması gerekiyor.
+
+136
+00:26:39,531 --> 00:26:50,531
+Şimdi algoritma ile alakalı burada bazı flowchartların şeyleri var. Bunları anlatmıyorum. BBG almamış arkadaşlarım da bu şey üzerinden devam edebilir.
+
+137
+00:26:50,531 --> 00:26:58,531
+Bazı örnekler falan ekledim buraya. Burada bakabilirsiniz. Bunların çıktıları ne olur? Mesela yan tarafa yazabilirsiniz. Bunları geçiyorum.
+
+138
+00:27:04,339 --> 00:27:19,939
+Şimdi şurada anlattığımız şeyler de işte bilgisayar dillerinin, programlama dillerinin hiyerarşik sınıflandırması. Makine dediğimiz şey böyle, asemil dediğimiz biraz daha böyle günümüz diline yakın ama tam değil. Bu ikisi makineye bağlı dedik.
+
+139
+00:27:19,939 --> 00:27:29,644
+Makineden bağımsız olan yüksek seviyeli diller var. Bir de doğal dillerimiz var. O da günlük konuşma dilimize en yakın şeyler. Aslında hepsi...
+
+140
+00:27:29,940 --> 00:27:37,940
+konuşma dilimize bir benzerlik içeriyor. Çünkü program yazarak biz ne diyoruz? Bilgisayara şunları şunları şunları yap, emirler veriyoruz.
+
+141
+00:27:38,940 --> 00:27:48,940
+Şimdi bu arada yapılabilen işlemlerin hani compiler ve linker dedik. Burada interpreter diye bir kavram var. Bu şudur arkadaşlar.
+
+142
+00:27:48,940 --> 00:27:55,532
+Günümüz programlama dilleri, hani C'den sonraki dillere baktığımızda, Java, Python, Matlab,
+
+143
+00:27:55,635 --> 00:28:10,395
+gibi diller değerlenmeden yorumlanarak çalıştırılabilir hale geliyor. Bu bize şunu sağlıyor, programın tamamını inceleyip çalıştırılabilir kod yapmak bir yöntem.
+
+144
+00:28:10,395 --> 00:28:21,195
+Tamamını değil de satır satır, parça parça çalıştırılabilir koda çevirme stratejisine buna interpretir, yorumlama diyoruz. Detaylarının daha sonuna gerekirse bakarız.
+
+145
+00:28:21,364 --> 00:28:35,364
+Bunların özelliklerine baktığımızda, avantajına baktığımızda bir kere portable. Ne demek portable? Taşınılabilir. Okunup anlaşılması kolay. Yani şurada 0 ve 1'lere baktığınızda bu neye karşılık geliyor, bunu bilmiyoruz.
+
+146
+00:28:35,364 --> 00:28:47,340
+İşlemcinin içerisinde bunlar saklı duruyor, 0 ve 1'ler şeklinde, devreler şeklinde duruyor. Onun ancak nereden tespit edersiniz bunun neye karşılık geldiğini? İşlemcinin kullanma kılavuzu dediğimiz data sheetine bakarsınız.
+
+147
+00:28:47,380 --> 00:28:51,380
+Bunun neye karşılık geldiniz? Dekode edersiniz. O biraz zor bir şey ama.
+
+148
+00:28:51,380 --> 00:28:59,380
+Bu ikisi kolaysa, bunun sürdürülebilirliği, bakımı gibi şeyleri de kolay olur.
+
+149
+00:28:59,380 --> 00:29:03,380
+Yani ben rahat anlayabildiğim bir şeyi daha rahat üzerinde değişiklik yapabilirim.
+
+150
+00:29:03,380 --> 00:29:06,380
+Veya bir hata olduğum onu daha rahat değiştirebilirim.
+
+151
+00:29:06,380 --> 00:29:10,380
+Dezavantaj ne? Bir kere efficiency açısından sıkıntılı.
+
+152
+00:29:10,380 --> 00:29:13,380
+Derleyiciye bağlı, makineye...
+
+153
+00:29:13,711 --> 00:29:24,211
+bağlı değil ama derleyiciye bağlılık var. İşte uygun derleyicinin bulunması lazım. Bir de derleyiciye bağlılıktan kaynaklı olarak ne yapması gerekiyor? Translation yapılması gerekiyor.
+
+154
+00:29:24,211 --> 00:29:37,211
+Şimdi şöyle bir durum var. Sizin bir kaynak kodunuz var. C'de yazdınız ama farklı farklı derleyicileriniz var. Bu farklı derleyiciler demek farklı şekilde dönüştürülmüş
+
+155
+00:29:37,364 --> 00:29:49,263
+Programlar veya farklı bilgisayara uygun programlar elde edebilmek demek bu açıdan bir kaynak kodun doğrudan makineye dönüştürülüyor olması yüksek sivil dilimlerde bir dezavantaj diyebiliriz.
+
+156
+00:29:49,263 --> 00:30:00,000
+Ama günümüz uygulamalarının oranlamasına baktığınızda günümüzde gömülü sistem veya sistem programlarının oranı belki çok çok küçük bir şeydir. Herkes mobil uygulamalarında...
+
+157
+00:30:00,000 --> 00:30:27,279
+uygulama, web uygulaması, masaüstü uygulamaları veya IoT uygulamaları gerçekleştiriyor. Bunları yaparken yüksek seviyeli dillerle geliştirebilmek çok çok daha hızlı. Çünkü frameworkler var, kütüphaneler var özellikle web ve mobil tarafında. Çok hızlı bir şekilde algoritma bilmeyen bile program geliştirebiliyor. Bu açıdan programı ayağa kaldırabilmek dediğimiz aşamalar çok hızlı olabiliyor bunların sayesinde. İşte avantaj, dezavantaj kelimesi burada da var.
+
+158
+00:30:27,488 --> 00:30:39,248
+Şimdi C'ye baktığımızda Bell Laboratörü'nde 72 yıllarında bu kişi tarafından geliştirilen bir şey. Bunun kendi kitabı da var, araştırabilirsiniz, okuyabilirsiniz.
+
+159
+00:30:41,248 --> 00:30:51,488
+Versiyonları 72'den itibaren farklı farklı versiyonlar. Biz genellikle 89 ve 99 standartını eğitimde kullanırız, yani ders verirken.
+
+160
+00:30:51,663 --> 00:31:04,263
+Bunlara bakarız. İşte bu özellikle 89'a ansı C, standart C deniyor. Buna uygun programlar yazmayı öğrendikçe, yani bunu öğrendikçe diğerleri de çok çok daha kolay gelecektir.
+
+161
+00:31:04,756 --> 00:31:24,756
+Nelerde kullanıldığını burada işte işletim sistemi, mikro kontrolörü, gömülü sistem, DSP prosesörleri dediğimiz. Yani performans ağırlıklı uygulamalarda bunu kullanıyoruz. Hız önemli ise C'yi çok çok kullanıyoruz. Bunların hepsi donanıma yakın uygulamalar. Mesela bir audio üzerine bir...
+
+162
+00:31:25,203 --> 00:31:37,683
+kontrolör yazacaksınız, örneğin sesle alakalı bir şey yapmak istiyorsunuz. Donanıma hemen dönüşebilen bir kod gerekiyor. Dolayısıyla bu DSP prosesörlerde çok çok karşılaştığımız bir özellik.
+
+163
+00:31:39,043 --> 00:31:48,043
+Özelliklerine biraz daha devam edersek, çok az kelimesi var. Yani gramerli de basit, nispeten şey de basit, alfabesi de basit.
+
+164
+00:31:48,564 --> 00:32:13,663
+Şimdi kendiniz farklı veri tipleri oluşturabiliyorsunuz CD'inde. Bu ne demek? Şimdi sayısal analiz dersinde konulara girdikçe anlayacaksınız. Örneğin, bir polinom nasıl modellenir? Normalde şu ana kadar bildiğiniz veri tipleri, işte integer, floating point, ondan sonra ne var? Karakter, bu. Yani 3-4 tane bir şey. Ama bunlardan compound karmaşık veri tipleri oluşturabiliyorsunuz.
+
+165
+00:32:14,932 --> 00:32:30,932
+Pointerlar yoluyla belleğe hükmedebiliyorsunuz. Dizileri Efficient şekilde yine pointerlarla kullanabiliyorsunuz. Bunlar yetmiyor. Dışarıdan geliştirilen kütüphaneleri kendi programınıza entegre edebiliyorsunuz.
+
+166
+00:32:30,932 --> 00:32:39,932
+Kolay bir şekilde compile edilebiliyor. Makro özelliklerini de sağlıyor. Makro yuva 7 geldiğinde özetleriz.
+
+167
+00:32:40,915 --> 00:32:58,915
+Tabi bu C'nin bu avantajları, makineye yakın olmanın avantajları ve bu yukarıda bastırtığımız avantajlar dışında bazı tehlikeli özellikleri de var. Yani bıçak gibi düşünün. Bıçak faydalı bir şey mi? Evet ama yerine göre doğru kullanırsanız.
+
+168
+00:32:58,915 --> 00:33:08,875
+Örneğin, güçlü bir dirilir ama bir range checking yapmıyor. Şimdi bazı dillerde örneğin 5 elemanlı bir dizi tanımladınız, A5 diyelim.
+
+169
+00:33:09,076 --> 00:33:17,796
+Dizinin 6. elemanına bazı diller erişmeyi kabul etmez. Ama C'de eriştirme işini kontrol etmiyor, size bırakıyor.
+
+170
+00:33:17,796 --> 00:33:25,396
+Ben hep şöyle özetlerim, C'de her şeyi kendiniz yazmanız gerekiyor. Bütün detaylara kendiniz hakim olmanız lazım. Onun için güçlü tarafı bu.
+
+171
+00:33:25,396 --> 00:33:30,756
+Bir bilgisayar mühendisini diğer programcılardan ayırt eden şey de...
+
+172
+00:33:30,928 --> 00:33:40,928
+Özellikle bilgisayar belleğine dair birçok şeye hakim olmanız gerekiyor. O açıdan C'de bu şeyler öğrenmek en önemli, en mühim taraflardan bir tanesi diyebiliriz.
+
+173
+00:33:41,928 --> 00:33:48,928
+Özellikle type checking çalışma zamanında kontrol edilmiyor. Yani siz bir değişkene bir değişken atacaksınız.
+
+174
+00:33:48,928 --> 00:33:55,928
+Burada mesela integer a diye bir şeyimiz olsun. Siz bir scanf yaptınız.
+
+175
+00:33:57,203 --> 00:34:19,203
+Şöyle bir şey, %d dediniz. Şöyle bir şey yaptınız. Şimdi A'nın içerisine girilecek veri diğer dillerde önceden kontrol edilir. Gerekirse truncation falan yapılır ama siz mesela kullanıcıdan A, B, C diye bir şey aldığınızda bunu doğrudan atamaya çalışır. Program atamayınca işte hata falan verir. Dolayısıyla programınız crash edebiliyor.
+
+176
+00:34:25,139 --> 00:34:29,539
+Şu aşamalarda hiçbir sıkıntı yok, program çalışabilir hale geldi.
+
+177
+00:34:29,539 --> 00:34:37,300
+Çalıştığı esnada program patladı. Yani siz gittiniz müşteriye programı verdiniz, o çalıştırdı program kreş etti, hata verdi.
+
+178
+00:34:37,300 --> 00:34:42,179
+Ne olacak? Hadi gidin konu tekrardan yazın. Müşteriye karşı bir itibar kaybı olabilir.
+
+179
+00:34:42,179 --> 00:34:45,779
+Onun için her şeyi başından düşünmeniz gerekiyor C'de.
+
+180
+00:34:45,779 --> 00:34:49,739
+Şimdi, software üretiminin aşamaları.
+
+181
+00:34:50,003 --> 00:34:55,603
+Burada biraz yazılım mühendisliği ile alakalı kısımlar var ama bizi ilgilendiren trafiği ile ilgileneceğiz.
+
+182
+00:34:55,603 --> 00:34:59,323
+Ürünün özelliklerini tespit edeceksiniz. Yani problem ne?
+
+183
+00:34:59,323 --> 00:35:03,523
+Öyle değil mi? Biz size bir problem veriyoruz. Problemin ne olduğunu anlayacaksınız.
+
+184
+00:35:03,523 --> 00:35:08,884
+Sonra buna mimari dizayn. Yani ben burada hangi değişkenleri, hangi veri yapılarını kullanabilirim?
+
+185
+00:35:08,884 --> 00:35:14,804
+Kullanıcıdan hangi girdileri alacağım? Çıktılar ne olacak? Bunları problemden elde edeceğim. Yani bir metin var.
+
+186
+00:35:14,963 --> 00:35:38,963
+Bu metinden siz okudunuz, şunları çıkarttınız, dediniz ki burada üç tane input var, iki tane output var. Bu inputların ne oldukları belli, outputların ne oldukları belli. Bunları proje planlaması yapıyorsunuz. Detaylı dizaynlar dediğimiz örneğin, algoritma yani flowchart yapıyorsunuz. Ondan sonra kodluyorsunuz. Kodladıktan sonra çalışmanızı debug ediyorsunuz. Nedir debug?
+
+187
+00:35:39,423 --> 00:35:43,423
+Kodunuzu uç değerlerle test edersiniz. Acaba doğru sonuçlar verecek mi?
+
+188
+00:35:43,423 --> 00:35:49,824
+Bu debug aşamasında bazı hataları görürsünüz, gidersiniz. Sonra programı tamamen test edersiniz.
+
+189
+00:35:49,824 --> 00:35:54,224
+Gerekinize bakım yaparsınız. Böyle bu yazılım geliştirme aşaması devam eder gider.
+
+190
+00:35:54,224 --> 00:35:58,224
+Şurada bahsettiğim her bir şey aslında ayrı bir ders günümüzde.
+
+191
+00:35:58,708 --> 00:36:07,148
+Coding bir programlama dersi, debugging başka bir ders, detaylı dizayn yazılım mühendisliğinde anlatılıyor, yazılım mühendisliğinin içerisinde başka başka dersler çıkıyor.
+
+192
+00:36:07,148 --> 00:36:09,908
+Hepsinin altında söylenecek uzun uzun şeyler var.
+
+193
+00:36:09,908 --> 00:36:15,748
+Şimdi burada köprü metaforu dediğimiz bir şey var aslında bu aşamada baktığınızda.
+
+194
+00:36:15,748 --> 00:36:18,748
+Şimdi köprüyü düşünün.
+
+195
+00:36:19,059 --> 00:36:29,539
+En başından çok düzgün bir şekilde planlanması ve ona göre temelinden işletime alınmak kadar her şeyin detaylı yapılması lazım.
+
+196
+00:36:29,539 --> 00:36:34,099
+Yani temeli sağlam olmayan bir şeyin acı sonuçlarını maalesef gördük.
+
+197
+00:36:34,099 --> 00:36:44,260
+Dolayısıyla bu da bunun gibi, yazılımınız veya herhangi bir proje büyüdükçe sizin tasarım ve planlama aşamanız çok çok daha önemli hale geliyor.
+
+198
+00:36:44,724 --> 00:36:55,724
+Çalak alem, hadi bakalım kodu yazalım diyemiyoruz yazdımda. Yıllar önce bir uçak kazasının sebebinin değişken dönüşümün olduğu literatüre programlama kitaplarına girmiş bir şey.
+
+199
+00:36:55,724 --> 00:37:02,724
+Yani en ufak bir detayımla atladığınızda bunun çok çok kötü acı sonuçlarını görebiliyoruz. Her alanda olduğu gibi.
+
+200
+00:37:02,724 --> 00:37:10,544
+Ne kadar siz hatalarınızı erken keşfederseniz bu sizin için ne kadar o kadar iyi. Özellikle bir programı yazdımı...
+
+201
+00:37:10,543 --> 00:37:20,783
+İşletimi almadan bunlar keşfedilirse çok çok daha iyi. Bunların hataların çok kötü sonuçlara mal olabileceğini görüyoruz, gördük, zamanında da gördük, hala da var.
+
+202
+00:37:20,783 --> 00:37:29,783
+Yani burada bir de ne var? Ön oluşturulmuş parçaların kullanımı...
+
+203
+00:37:31,155 --> 00:37:33,295
+şeyi geliştirme zamanı
+
+204
+00:37:33,295 --> 00:37:35,135
+birazcık kısıtlayabiliyor, kesebiliyor.
+
+205
+00:37:35,255 --> 00:37:37,155
+Bunlar köprüyle alakalı şeyler.
+
+206
+00:37:37,755 --> 00:37:39,076
+Köprü nedir? Çünkü köprü
+
+207
+00:37:39,076 --> 00:37:41,175
+dediğimiz örneğin Boğaziçi Köprüsü diyelim.
+
+208
+00:37:41,315 --> 00:37:43,076
+Önce bunun ayaklarının olacağı
+
+209
+00:37:43,076 --> 00:37:44,335
+yerlere temel atılır.
+
+210
+00:37:45,456 --> 00:37:47,175
+Ondan sonra yukarıya böyle
+
+211
+00:37:47,175 --> 00:37:48,715
+şeyler, kuleler koyulur.
+
+212
+00:37:48,855 --> 00:37:51,036
+Yakın zamanda işte 18 Mart Köprüsü'nün
+
+213
+00:37:51,036 --> 00:37:53,416
+belgeseli falan var incelerseniz.
+
+214
+00:37:54,235 --> 00:37:54,855
+Sonra işte bu
+
+215
+00:37:54,855 --> 00:37:57,056
+bağlantı yolları bunlara kedi yolu deniyor.
+
+216
+00:37:57,536 --> 00:37:58,476
+Şunlar oluşturuluyor.
+
+217
+00:37:58,900 --> 00:38:07,340
+Ondan sonra parça parça tabliye dedikleri şeyler var. Yani önce buradan başlıyorsun, bir taraftan da buradan başlıyorsun. Bunları böyle birleştire birleştire gidiyorsun.
+
+218
+00:38:07,340 --> 00:38:19,119
+Tabii bunun hepsinin öncesinde, şu temel atmanın öncesinde bir plan var. İşte o andaki yeryüzü, yer şekillerine bakıyor gibi gibi gibi. Benim de uzmanlığımı aşan çok böyle kabaca bunları anlatıyorum.
+
+219
+00:38:19,119 --> 00:38:22,199
+Burada da, hani yazılımda da benzer mantıkla...
+
+220
+00:38:22,516 --> 00:38:34,356
+Program kim için yapılacak, ne için yapılacak, nasıl yapılacak, nerede çalıştırılacak gibi bir sürü sorular sorup iyi bir bilgi bankası oluşması gerekiyor projenin tasarımı aşamasında.
+
+221
+00:38:35,356 --> 00:38:37,356
+Farklılığı ne?
+
+222
+00:38:37,619 --> 00:38:48,819
+Tabii köprüyü yaptığınız köprüyü daha sonra değiştiremiyorsunuz. Yani buna iki şerit ekleyelim, ondan sonra ne bileyim üstünden başka bir trende geçsin diyemiyorsunuz. Yapıyorsunuz ve bitiyor. Dolayısıyla her şeyi başından düşünmeniz gerekiyor.
+
+223
+00:38:48,819 --> 00:39:00,220
+Ama burada software'in farklılığı şu, değişim için yapılması lazım. Çünkü yazılım bizim günlük hayattaki ihtiyaçlarımızı kolaylaştıran bir ürün.
+
+224
+00:39:04,244 --> 00:39:19,043
+Değil mi? Yani şu an bir banka uygulaması kullanıyorsunuz. İleride ihtiyaçlar değişiyor. Yeni bir modül eklenmesi gerekiyor. Köprüyü kullanmaktaki amacımız belli. Başka bir ihtiyacımız olmayacak köprüde. Orada bir değişim gerekmiyor. Ama yazılım böyle değil.
+
+225
+00:39:19,264 --> 00:39:36,264
+değişim için tasarlanması gerekiyor. İleride bu yazılıma bir şeyler eklenebilir mi gibisinden düşünüp, hep açık uçlar koymamız gerekiyor. Tekrar kullanabilir parçalar olması, tekrar kullanabilir parçalar olması burada bir şey. Yani bir şeyi burada kullandık, o artık bitti.
+
+226
+00:39:36,264 --> 00:39:41,264
+Tekrar böyle tadilata girene kadar veya yıkılana kadar tekrar köprüde yapamayız ama...
+
+227
+00:39:41,615 --> 00:39:47,115
+Burada yazılımda bunu yapmamız gerekiyor. Test edilebilir olması gerekiyor. Çünkü sürekli bir değişim var.
+
+228
+00:39:47,615 --> 00:39:52,615
+Köprünün testi aynı şey yok. Her şeyi baştan sıkı bir şekilde tasarlanmak gerekiyor.
+
+229
+00:39:53,615 --> 00:39:58,916
+Evet, bu genel bilgiyi de verdikten sonra C'nin dizaynına bakalım.
+
+230
+00:39:59,615 --> 00:40:07,115
+Şimdi derleme aşamasında source file'leriniz var. Tek bir source file olabileceği gibi birden fazla source file kaynak kodunuz olabilir.
+
+231
+00:40:07,476 --> 00:40:27,476
+Bunların hepsinin compiler'lar aracılığıyla objekt kodlara dönüştürülmesi gerekiyor. Bu objekt kodlar daha sonra birbirine bağlanıp, runtime library'ler dediğimiz çalışma zamanı kütüphanelerine de bağlanacak. Bunlar mesela printf'ler falan. Bunlar bağlandıktan sonra executable kod üretilecek.
+
+232
+00:40:27,476 --> 00:40:33,476
+Şimdi bu iş için şurada bahsettiğimiz şeyi yapan bir yazılıma ihtiyaç var.
+
+233
+00:40:34,164 --> 00:41:01,963
+Benim yeğenim bir ara buna şey diyordu, yani dayı senin de program yapan program varmış, nasıl oluyor falan diyordu. İşte program yapan programlara ihtiyacınız var. Bunlara IDE diyoruz, Integrated Development Environment. Bunların görevi şu, şimdi source kodu yazmamız gerekiyor bir kere. Yani açtık ama bunu not defterinde de yapabiliriz. O zaman not defterinden farklı görevleri, üstünlükleri olması lazım. Nedir? Örneğin yazarken,
+
+234
+00:41:02,835 --> 00:41:10,835
+Programlama dilinin kendisine ait ifadeleri farklı renklerde yazsın. Hata yaptıysam hatayı söylesin, öneri sunsun olabilir.
+
+235
+00:41:10,835 --> 00:41:19,835
+Veya şu an günümüzdeki idelerin bazılarında şey var, programı tamamlıyoruz işte, sen taba bas diyor herhalde bunu demek istedim diyor, devam ediyorsun, hızlı bir şekilde geliştiriyorsun. Bu bir.
+
+236
+00:41:19,835 --> 00:41:25,451
+İkincisi, kodu değerlemesi lazım. Değerleme işlemini de yapacak benim adım.
+
+237
+00:41:26,291 --> 00:41:30,491
+Kodu gerekirse bağlaması lazım ve kodu egretik etmesi lazım.
+
+238
+00:41:30,491 --> 00:41:33,891
+Hata bulursak hatayı söylemesi lazım. Hatayı şurada yaptım.
+
+239
+00:41:33,891 --> 00:41:40,291
+Bir de ona göre değişti. Hatta hataya öneriler sunması lazım. Bak bunu yaparsan çözülebilir gibi.
+
+240
+00:41:40,291 --> 00:41:48,092
+İşte bu tarz programlar ideler yoluyla. Integrated dediğimiz kavram ne?
+
+241
+00:41:48,092 --> 00:41:53,891
+Şuradaki bütün gereksinimleri yapılacak adımları benim adımım yapacak entegre bir yazılım.
+
+242
+00:41:53,972 --> 00:42:17,052
+Bahsettiğimiz şey bu. Biz bu dersimizde dfc++ code blocks veya mac kullanan arkadaşların x kodu tercih ediyoruz. Bunların hepsi gcc derleyicisinin içerisinde barındırdığı için böyle. Şunu çok tercih etmiyorum arkadaşlar, bu derste kullanmayın. Burada detaylı hata yazarak sizin kullanmanız gerekiyor.
+
+243
+00:42:17,715 --> 00:42:36,415
+Güncelleri de istemiyoruz. Elşit temelinden yaparak, böyle biraz detaylarına hakim olarak yapılan arkadaşlar. Gelecek seneden itibaren işte başka derslerinizde onları kullanırsınız. Tamam mı? Yani ya DFC++ ya CodeBlocks bu ikisinden bir tanesini programını da bilgisayarınızda korun.
+
+244
+00:42:36,532 --> 00:42:47,251
+Eğer Mac kullanıyorsanız, GCC'yi kullanabilirsiniz, eğer Linux kullanıyorsanız zaten şu Codeblocks sağlıyor, işte DFC++ da sağlıyor. Bunları tavsiye ederim.
+
+245
+00:42:47,251 --> 00:42:59,012
+Size vereceğimiz ödevleri de DFC++ veya Codeblocks üzerinde derleğin gönderin. Çünkü standartlar farklılaşabilir. Bu ödevleri veya projeleri...
+
+246
+00:42:59,184 --> 00:43:09,384
+Bunlar üzerinde değerlemeden gönderirseniz programınız çalışmaz. Bu da düşük not veya sıfır puan almanıza neden olabilir. Onun için bunları ödev tesliminden önce mutlaka kullanmanızı istiyoruz.
+
+247
+00:43:09,384 --> 00:43:19,784
+Bunların görevlerini söyledik. Şimdi bir Linux'te program yazdığımızı düşünelim. Burada kodu anlatacağım, kısaca göstereceğim, uygulamalı olarak anlatacağım.
+
+248
+00:43:19,784 --> 00:43:25,184
+Şimdi bunun bir kere C uzantısı olacaktır. Dosyanın bir uzantısı var.
+
+249
+00:43:25,615 --> 00:43:37,016
+Gcc compiler dediğimiz derleyici bir program var. Bakın bu bir program, siz bu programa C uzantılı bir metin veriyorsunuz. Bu metin size verilenmiş kod veriyor.
+
+250
+00:43:37,016 --> 00:43:48,215
+Olabilir, BIM falan da kullanabilirsiniz, çok çok detaylıdır. Yani her şeyi kendiniz yapmanız gerekir. Bu elinizin alışması için tavsiye edilen şeyler.
+
+251
+00:43:48,215 --> 00:43:53,215
+Ama biz BIM'e gerek kalmadan şu üçünden bir tanesini kullanmanızı istiyoruz.
+
+252
+00:43:54,931 --> 00:44:18,891
+Daha sonra arkadaşlar size bu program obje faili oluşturuyor. İşte bubblesort C dosyasını derlediniz. Şöyle derleniyor. Gcc yazıyorsunuz. BubbleSort C dosyasını yazıyorsunuz. Bunun dosyasının adını yine bubblesort olsun diye tıre o dediniz. Ve daha sonra bu dosyayı çalıştırdığınızda yazdığınız programın çalışmış halini görebiliyorsunuz. Deluxe de bu böyle. Şimdi Windows'da göstereceğiz. Örneğin bir...
+
+253
+00:44:19,027 --> 00:44:40,527
+Dosyamız var. İşte stdio.t2012'de yazmışız. Böyle bir program yazdınız. Bunu işte bir şekilde kaydettiniz. Şu formatta çalıştırdığınızda verilenebilir kodu göreceksiniz. Şimdi burayı bir geçelim. Ben dfc++ üzerinden anlatacağım.
+
+254
+00:44:45,876 --> 00:45:06,876
+Burada bir program yazıp değerleme işleminin Windows ortamında nasıl yapacağız? Windows ortamında Linux'daki kadar kolay değil. Ek ayarlar yapmamız gerekiyor. Bu ek ayarların ne olduğunu anlatacağım. Çünkü çoğunuz, %70'iniz daha çok Windows üzerinde kod ediyorsunuz. Şunu şöyle alalım.
+
+255
+00:45:08,148 --> 00:45:18,648
+Bu programı kurduğunuzda, file menüsünden new diyorsunuz, source file diyorsunuz. Proje oluşturmanıza şimdilik gerek yok. Source file ile bu işlemler olur.
+
+256
+00:45:18,648 --> 00:45:29,148
+New dedik, source file dedik. Şimdi source file'ı seçtikten sonra bana böyle bir ekran açılıyor. İşte şurada kodlarımı yazabiliyorum. Basit bir C kodu yazayım.
+
+257
+00:45:34,099 --> 00:45:59,940
+stdio.h, int, main, integer a eşittir, işte 5 diyelim. Printf, a eşittir, %d diyorum. Bu %d'lerin ne olduğunu bir kısmımız biliyor ama bilmeyen arkadaşlar için de böyle hızlıca bir tekrar yapacağız. Normalde bu geçen dönemin dersinin devamı.
+
+258
+00:46:01,876 --> 00:46:25,376
+Şimdi şöyle incelediğimde, kodun mantığını okuyalım. Bir tane kütüphane ekledik, dahil eklemektir. Bütün C programların main ile başlar, şununla biter. Bir değişken tanımladık. Bu değişkenin değerini ekrana yazdırdık. Return 0 dedik. Program kapandığında, eğer ben 0 değerini görüyorsam,
+
+259
+00:46:25,523 --> 00:46:30,523
+Program buraya kadar kazasız, belasız bir şekilde tamamlanmıştır. Herhangi bir hata yoktur.
+
+260
+00:46:31,023 --> 00:46:35,523
+Sıfırın dışında bir şey görüyorsan, demek ki arada bir yerlerde bir hata vardır. Onu anlayacağım.
+
+261
+00:46:35,523 --> 00:46:40,023
+Buraya return 0 değil isterseniz return 5 yazın. Ama bir gelenek haline gelmiştir.
+
+262
+00:46:40,023 --> 00:46:48,023
+Şimdi bunu koda gerek kalmadan değerlendirmek için compile diyorsunuz. Compile dediğinde diyor ki önce bu dosyayı bir yere kaydedelim.
+
+263
+00:46:48,023 --> 00:46:53,023
+İşte masa üstüne gideyim, bir klasör açayım. Kodlar diyelim mesela.
+
+264
+00:46:54,804 --> 00:47:22,043
+Klasörün içerisinde gireyim. Şuradan dosya ismini, dosya tipini C olarak kaydediyoruz. C++ kaydetmeyin. Bakın, bu önemli bir şey. Eğer C++ kaydederseniz, verleyici C++ standartına göre çalışır, olmaz. Biz bu derste C olarak kaydedeceğiz. İşte kod 1 diyelim. Kod 1 noktası, save diyorum. Şimdi aşağıda bir şeyler oluyor. Bakın, şöyle biraz yukarıya doğru çıkalım.
+
+265
+00:47:23,251 --> 00:47:34,851
+Diyor ki bu bir tek dosya derleme işlemi. Bu dosyanın adı şuymuş. Dosyanın derleyicisi bakın GCC'yi gördük. İşte versiyon filan bilgisi var burada.
+
+266
+00:47:34,851 --> 00:47:47,931
+Diyor ki bu dosya işleniyor. İşlenirken GCC-exe isimli bir program var. O programın yolu buradaymış. Sonra diyor ki bakın bizim şuradaki koda benzer bir şey var ama biraz daha uzun görünüyor.
+
+267
+00:47:47,931 --> 00:47:50,331
+Şuna baktığımızda nerededir o?
+
+268
+00:47:51,572 --> 00:48:18,572
+gcc boşluk program noktası, tre o boşluk bir şey. Şöyle bakalım. gcc.exe, exesini yazmasak da olur Windows Word'un da. Bakın programın yolu. Programın burada yolunu doğrudan yazmak gerekiyor çünkü gcc programı şurada. Burada olduğu için buraya kendi source kaynak kodumuzun yoluyla beraber yazmamız gerekiyor. Tre o dedik. Bu tre o'ya da
+
+269
+00:48:19,123 --> 00:48:32,323
+Yine bulunduğumuz klasörün altında egze isimli program oluştu diye şunu yazıyoruz. Bundan sonrası şey bazı optimizasyonlar, bunlar mühim değil. Sonra derleme işlemi tamamlandı, herhangi bir hata yok, herhangi bir uyarı yok.
+
+270
+00:48:32,323 --> 00:48:43,723
+Elde ettiğimiz çıktı, code1.exe imiş, output'un size'ı şu kadarmış, ne kadar sürede derlemiş, bu kadar süre sürmüş. Şimdi gelelim şu kodlar dosyamızı bir inceleyelim.
+
+271
+00:48:44,211 --> 00:48:57,811
+Burada devs-i programı bizim bu derleme işini bayağı kolaylaştırdı gördüğünüz gibi. Şimdi kod 1 size ne kadar? 1 kilobyte. Derlenmiş program 145 kilobyte. Ooo nereden çıktı bu kadar veri?
+
+272
+00:49:00,051 --> 00:49:05,092
+Bir sürü şey çıktı karşımıza. Yani 144 kilobyte'lık bir fark var. Nereden gelebilir bu?
+
+273
+00:49:12,788 --> 00:49:14,788
+Evet, fikir olan.
+
+274
+00:49:14,788 --> 00:49:28,351
+Kullandığımız kütüphanelerden, evet kullandığımız kütüphanelerden geliyor. Çünkü include dediğimiz işlemle STD-IO, stüdyo değil arkadaşlar, genelde bunu yanlış okurlar. STD-IO, Standart Input Output.
+
+275
+00:49:28,351 --> 00:49:36,031
+dosyası, başlık dosyası programımıza dahil ediliyor. O birerden nasıl dahil edildiğini detaylı göreceğiz.
+
+276
+00:49:36,031 --> 00:49:45,751
+Ve bakın çalıştırılabilir programımız burada bu şekilde. Ben bunu üzerine tıkladığımda program açılıyor, kapanıyor, tamamlanıyor ve hızlıca kapanıyor. Dolayısıyla sonucunu göremiyorum.
+
+277
+00:49:45,751 --> 00:49:52,351
+Sonucunu görmek için şuraya geleyim. Yani kapatmadan görebilecek şeyler de yapabiliriz de şöyle compile ve run diyelim.
+
+278
+00:49:53,076 --> 00:50:04,675
+A eşittir 5'tir, bakın 0 ile tamamlanmıştır dedi. Bu bitti. Şimdi bu şurada yapılan işlemler, benim adıma yapılıyor da bunu ben kendim yapmak istiyorum.
+
+279
+00:50:04,675 --> 00:50:15,635
+Aynen Windows'da şeyde olduğu gibi. Şimdi şuraya sağ tıkladığımızda, o zaman şöyle yapalım, direkt cmd diye açayım.
+
+280
+00:50:20,019 --> 00:50:46,240
+Aktif klasörüm, user'ın içerisindeki A51-7. Burada desktop'a geçeceğim. Daha sonra C'de desktop'ın altındaki kodlar isimli klasöre gireceğim. Bakın, bir dediğimde buradaki hangi dosyalar varmış bunları görebiliyormuş. Klavyemi bir yapayım, Türkçe olsun. Bakın C dosyam varmış, code1.exe dosyam varmış. Mesela şunu şimdi silelim. Bu gitsin. Şuradan yok edeyim.
+
+281
+00:50:46,963 --> 00:50:51,463
+Tekrar dır diyeyim, sadece C dosyamın olduğunu görüyorum. Düzel.
+
+282
+00:50:52,463 --> 00:50:56,463
+Şimdi benim yapacağım şey GCC programını çalıştırmak.
+
+283
+00:50:56,463 --> 00:51:03,463
+Şimdi GCC programı eğer bu kodlar şeyinin altında olsaydı, doğrudan böyle yazabilirdim.
+
+284
+00:51:03,463 --> 00:51:07,463
+Bakın biraz önce Devsi bana ne yaptı? Uzun uzun yol yazdı.
+
+285
+00:51:07,463 --> 00:51:08,963
+Şurada.
+
+286
+00:51:08,963 --> 00:51:14,463
+Şimdi bunu sürekli böyle uzun uzun yazmamak için bilgisayarınızda bir ayar yapmanız gerekiyor.
+
+287
+00:51:14,771 --> 00:51:20,771
+Yazılan bütün konutların arandığı bir havuz var. Bu havuza ulaşalım.
+
+288
+00:51:24,271 --> 00:51:30,271
+Bilgisayarın özelliklerine geliyorum. Bu Windows için yapılan bir şey. Kodla da yapılabilir veya Linux'te başka bir şey de yapılabilir.
+
+289
+00:51:30,271 --> 00:51:34,771
+Şimdi ileri sistem ayarları, gelişmiş sistem ayarları dediğimiz şöyle bir şey var.
+
+290
+00:51:34,771 --> 00:51:39,771
+Burada environment variables, çevresel değişkenler diye buraya geliyoruz.
+
+291
+00:51:42,164 --> 00:52:07,164
+Şurada pet diye bir şey var arkadaşlar. Bu pet, aranılan programların bulunduğu havuzu söylüyor. Bazı kodları bu havuzun içerisine atarsak, bulunduğunuz yerde yoksa gidiyor bu havuzun içerisindeki alt klasörlerde arıyor ve bunlar noktalı bir gülde ayrılmış şeyler. Mesela bunu edit diyelim. Ne varmış? İçerisinde Python'a ait, Anaconda diye bir şey varmış. Başka Windows'a ait bir şey var. Bakın şu bizim...
+
+292
+00:52:07,635 --> 00:52:11,476
+GCC'nin bulunduğu yer, önce bunu ben şimdi sileyim.
+
+293
+00:52:11,476 --> 00:52:14,556
+Ya bunu edit diyelim, önce bir kopyalayalım.
+
+294
+00:52:14,556 --> 00:52:21,196
+GCC'nin bulunduğu yer, GCC şu an çalışsaydı çalışırdı, yani yapsaydım çalıştırabilirdim.
+
+295
+00:52:21,196 --> 00:52:26,836
+Şunu da bir bakayım, burada var mıymış? Burada GCC olmaması lazım. Tamam yok, güzel.
+
+296
+00:52:26,836 --> 00:52:31,436
+Şimdi bunu okey diyorum, kapatıyorum, okey diyorum, kapatıyorum. GCC dediğimde,
+
+297
+00:52:31,436 --> 00:52:33,996
+şuraya geleyim.
+
+298
+00:52:34,931 --> 00:52:42,931
+Dedi ki, böyle bir, gerçi burayı tekrar çalıştıracağız. Çünkü hala kendini command drop güncellemedi.
+
+299
+00:52:42,931 --> 00:52:57,931
+cdv-stop, hatta direkt burada gcb diyelim. Bakın dedi ki, bu tanımlanan bir şey değil. Böyle bir program yok. Niye yok? Çünkü bu klasörün altındayız. Şöyle gidelim, cdv-stop diyelim. cd-kodlar diyelim.
+
+300
+00:52:58,132 --> 00:53:11,612
+Burada gcg, burada da yok. İşte bunu görebilmek için biraz önceki yere geldik, ileri sistem ayarları dedik, environment variable dedik, path dedik. Bunu edit diyelim. Yeni diyorum, buraya bunu ekle diyorum.
+
+301
+00:53:13,072 --> 00:53:24,731
+Ne oldu? Bir şeyi arada başka bir şeye mi bastık? Şuraya yakıştırmaya çalışayım. Ah evet. Başka bir şey almışız. Neyse.
+
+302
+00:53:24,831 --> 00:53:34,991
+Bizim bu GCC'yi bulup getirmemiz gerekiyor. GCC genelde arkadaşlar, dfc++ kurduysanız, şimdi şöyle bir bilgisayarıma girelim.
+
+303
+00:53:36,031 --> 00:53:44,711
+Biraz böyle ayarlama yapmak uzun maalesef. Bir defa ayarımı mahsus yapıyoruz. C'nin içerisinde, program files'in içerisinde dfc++ var.
+
+304
+00:53:45,071 --> 00:53:51,591
+Bunun içerisinde mingevi 64 var. Şurada 1000 var. Bakın burada GCC var. Bana şu yol lazım.
+
+305
+00:53:52,820 --> 00:54:06,820
+Bu yolu aldım, kopyala dedim. Şurada zaten new demiştim, bunu buraya yapıştır diyorum, okey diyorum. Şunu edit dediğinizde de aynı şeyi yaparsınız ama mühim değil. Yani bir tanesini yapmış olmak için.
+
+306
+00:54:06,820 --> 00:54:16,820
+Şimdi bu AL1YTO, bilgisayarınızdaki bu kullanıcının, eğer bütün kullanıcılar için olmasını istiyorsanız, şurada düzenleme yapmanız gerekiyor, bunu buradan eklemeniz gerekiyor.
+
+307
+00:54:16,820 --> 00:54:19,820
+Bir şey fark etmez. Şimdi bunu açtık.
+
+308
+00:54:20,467 --> 00:54:29,108
+Geldim buraya, tekrar şunu da kapatalım, okey diyelim. Artık ekledik. Ama hala görmeyecek çünkü en son halini güncellemedi. Şimdi bunu tekrar açıyorum.
+
+309
+00:54:31,708 --> 00:54:47,047
+cmd, gd-restop, gd-kodlar, gd. Bakın dedik ki şimdi farklı bir şey. Patal error, no input file. Yani gcc'yi yanlış kullandığımızı söylüyor. Derleme işlemi sonlandırıldı.
+
+310
+00:54:47,347 --> 00:55:13,527
+Nasıl derleyeceğiz? YCC, programın adını veriyoruz. Code1.c, pre-o, boşluk, benim kodum, benim programım diyelim. Enter dediğimde bakın ne oldu? Bir şeyler oldu, bitti, aşağıya geldik. Ve bakın ne oldu? Benim programım.exe diye bunu derleyebildik. İşin özü bu.
+
+311
+00:55:14,195 --> 00:55:40,195
+Şimdi bu arada yalnız şunu söylemedik. Ben dedim ki C dosyasından pre-process olacak, başka bir şey olacak, şu olacak, bu olacak, öyle. Biz en son olması gerekeni burada görüyoruz. Arada başka işler var. Şimdi bunları görmemiz gerekiyor, bunları incelememiz gerekiyor. Aradaki işlerin ne olduğunu bir mühendis olarak anlayabilmek için. Saatimiz gelmiş, 16.50 olmuş. Bir 10 dakika ara verelim. Geldiğimizde de bunun detaylarına bakacağız arkadaşlar.
+
+312
+00:55:40,724 --> 00:55:42,724
+Bu arada sorusu olan varsa yazabilir.
+
+313
+00:55:48,628 --> 00:55:50,628
+Tam 17'de devam ederiz.
+
+314
+01:05:05,652 --> 01:05:32,052
+Evet arkadaşlar, devam edelim. Şimdi biraz önce bahsettiğimiz bu ara işlemler aslında arka planda yapılıyor. Bazı dosyalar oluşturuluyor. Fakat biz onları göremeden değerleyici program tarafından bunlar siliniyor. Şimdi ben bunların silinmesini istemiyorum. Açık açık görelim ne olduğunu diyeceğiz. Şunu şöyle kaldıralım yeniden. Ses ve ekran geliyor değil mi arkadaşlar?
+
+315
+01:05:33,108 --> 01:05:53,367
+Burada şöyle bir ekleyeceğiz. Mesela kod bir noktası, benim biraz önce yazdığım şey. Değerleme yapmadan önce, şuraya şey ekliyorum, save diyorum. Sonra tere, temporary file. Şimdi bakın bu bir program. Program aslında kendi içerisinde parametre olarak şunları alıyor.
+
+316
+01:05:54,228 --> 01:06:20,228
+Geçen dönem belki fonksiyonları C'de gördünüz veya işte BBG olduğu için belki anlatılmamış olabilir. Bu programın kendisine parametre aldığını düşüneceksiniz. Hep bazı sorular gelir size. Hocam bu main'in içerisi niye böyle boş, dolu olabilir mi? Veya hazır bir program açtığınızda burada şöyle şeyler görsün. Argument counter, kar yıldız, ARGB falan.
+
+317
+01:06:20,532 --> 01:06:29,832
+Bu verdiklerimiz aslında bununla alakalılar. Tabi bu GCC derlenmiş hazır bir program. Biz kendi programımızı bunun kontrolünden geçireceğiz.
+
+318
+01:06:29,832 --> 01:06:41,432
+Şunu eklediğimizde, başka hiçbir şey yapmadık, tre, o, z yine aynı, enter diyorum. Yine bakın bir şeyler oldu, şöyle geldiğinde bakın burada, bu sefer farklı dosyalar gördüm.
+
+319
+01:06:41,432 --> 01:06:47,532
+Bir tane i diyor, bir tane o diyor, bir tane s diyor, bir tane de benim programım egze ismi var.
+
+320
+01:06:47,764 --> 01:07:09,764
+Şimdi burada olan olayları kısaca şöyle anlatayım. Hani bunu yazdığımızda ne olacak? İşte şu bizim şeyimiz, comment promptumuzun ekranı gcc test.c diye veya işte kod1.c diye bu sizin kendi programınız veya şöyle diyelim daha genel olsun.
+
+321
+01:07:15,572 --> 01:07:28,572
+.c diye bir bilgi verdiniz. Sonra tere, sev, tere, temporary files dediniz. Tere o, burada da my,
+
+322
+01:07:33,172 --> 01:07:35,572
+Ne diyelim? Compilot program diyelim.
+
+323
+01:07:40,467 --> 01:07:49,267
+Benim derlenmiş programım. Şimdi yapılan şeyi, şurayı analiz edecek olsak bu, compiler programdır arkadaşlar.
+
+324
+01:07:51,567 --> 01:07:59,567
+Nerede olduğunu biraz önce gördük. İşte cnl içerisinde program files, dfc++ girdik orada bin klasörün altında hazır bir program.
+
+325
+01:08:00,067 --> 01:08:03,267
+Şu sizin source kodunuz.
+
+326
+01:08:06,367 --> 01:08:08,267
+Şunlar flatler arkadaşlar.
+
+327
+01:08:09,907 --> 01:08:33,907
+Ne için flagler? Temporary files için. Bu da bir flag. Ne için flag? Compilation işlemi için. Compiling için. Bu da bir isim. Ne için bir isim? Compiled program files.
+
+328
+01:08:34,292 --> 01:08:43,492
+Hatta link name diyelim. Eğer link name vermezseniz bunu kapatırsanız default bir isim aktarıyor. O default ismi bilmiyorum. Yani kaldırıp şey yapabilirsiniz. Yani böyle bir şey var.
+
+329
+01:08:43,492 --> 01:09:01,292
+Peki bu işlem gerçekleşirken, biz biraz önce şurada çizdik. Dedik ki önce preprocessing olacak, sonra compilation olacak, sonra linking olacak gibi şeyler. Şimdi burada şu i dosyası nedir, o dosyası nedir, s dosyası nedir buna bakacağız.
+
+330
+01:09:02,484 --> 01:09:15,484
+Yapılan iş preprocessing. Bu preprocessing ne için kullanılıyor arkadaşlar? Sizin kaynak kodunuz içerisinde en çok aklınıza şu gelsin, substitution için.
+
+331
+01:09:17,484 --> 01:09:26,984
+Substition, şurada bir i daha var. Bu substitution ne için? Include için bir substitution var.
+
+332
+01:09:27,539 --> 01:09:52,860
+define için bir substitution var, macrolar için substitution var. Ne demek istiyorsun hocam? Şunu demek istiyorum. Program daha derlenmeden önce şu include std.io.h'ın içerisinde ne varsa buraya getirilip yapıştırılacak. O zaman ben test C'den sonra elde edilmiş, pro-process edilmiş dosyamın içerisinde daha fazla şey göreceğim.
+
+333
+01:09:53,300 --> 01:10:02,300
+Bunun output'u, burada şöyle bir şey diyelim, input'u nedir? İşte myprogram.c diyelim buna.
+
+334
+01:10:05,300 --> 01:10:19,244
+myprogram.c output'u myprogram.c uzantısı ne olacak tahmin edebilen var mı? Şunlardan hangisi olabilir?
+
+335
+01:10:19,572 --> 01:10:23,072
+I, O, S, bunlardan 3 tane de bir olacak. Ne olabilir?
+
+336
+01:10:28,884 --> 01:10:39,684
+Evet, iyi diyen çıktı. Herhalde daha önceden bir tecrübe var. [öğrenci], bilerek mi yoksa %33 şansım var salı gibi mi dedin?
+
+337
+01:10:42,384 --> 01:10:48,384
+İyi oldu, doğru. MyProgram.i hatırladım. Tamam, önceden demek ki bir tecrübe var. Teşekkürler.
+
+338
+01:10:48,384 --> 01:10:54,384
+Şimdi, ben MyProgram.i'nin içerisine bakalım o zaman ne varmış.
+
+339
+01:10:54,579 --> 01:11:05,960
+Şunu göster desem, şuraya getireyim şöyle arkadaşlar. Ah, yanlış oldu, onu kapattık. Şuraya getirelim.
+
+340
+01:11:07,840 --> 01:11:17,700
+Bakın, program başlıyor, bayağı da bir şey var gibi, şöyle scroll'u aşağıya doğru kandıramıyorum. Bakın, code1.c demiş, böyle gidiyor gidiyor, baya baya şeyler var.
+
+341
+01:11:18,452 --> 01:11:23,051
+Şöyle baktığımda çok da anlaşılmıyor bazı şeyler. Time falan demiş.
+
+342
+01:11:24,332 --> 01:11:28,692
+Peck demiş falan, böyle değişik değişik hiç görmediğimiz şimdiye kadar.
+
+343
+01:11:28,952 --> 01:11:34,832
+Acayip acayip, mesela vs scanf demiş. Bizim şu scanf'e benziyor mu acaba? vs scanf demiş.
+
+344
+01:11:35,612 --> 01:11:40,731
+Demek ki scanf de buralarda bir yerde olabilir. Şöyle attribute falan diyor.
+
+345
+01:11:41,612 --> 01:11:45,852
+Sn printf demiş. Mesela bunlar da printf'e benziyorlar.
+
+346
+01:11:46,036 --> 01:12:04,435
+printf'in daha geliştirilmiş, genelleştirilmiş halidir arkadaşlar bunlar. Scanf içinde var. Bunlar stdio dediğimiz şeyin içerisinde yazılı olan programın kodları. Bakın bizim burada intmail'i gördük.
+
+347
+01:12:05,908 --> 01:12:15,708
+Buraya kadar std-ionun içerisinde bakıyorum, 691 satır substation yapılmış. Sonra başka bir substation göremiyorum. a eşittir 5 demiş, a demiş, şunu demiş.
+
+348
+01:12:15,708 --> 01:12:31,408
+Demek ki i dosyası bu. Şimdi ben kod'a tekrar geri geliyorum. Burada şöyle bir şey yapacağım. Define diye bir şey görmüşsünüzdür. Define max'imiz diyelim. Sonra a'nın yerine 5 değil de şöyle max yazıyorum.
+
+349
+01:12:32,212 --> 01:12:41,212
+Bu ne demek? Nerede max görürsen 100 olarak göster. İşte bu derleme aşamasında şöyle kaydedeyim.
+
+350
+01:12:41,212 --> 01:12:50,212
+Derleme aşamasında ne olacak arkadaşlar? Nerede max gördüyse daha derlemeye geçmeden 100-100-100 diye gidip yapıştıracak.
+
+351
+01:12:50,212 --> 01:12:57,212
+O zaman gelelim bu konu tekrar derleyelim. Şunu tabii önce şundaki şeyi bir kapatayım.
+
+352
+01:12:59,091 --> 01:13:01,412
+Şuradaki dosyaları da sileceğim tabi ki.
+
+353
+01:13:04,371 --> 01:13:12,211
+Orjinal kodla o ara i dosyası üzerindeki farkı burada daha detaylı bu aşımaların sona daha detaylı görürüz.
+
+354
+01:13:13,171 --> 01:13:14,371
+i'yi görelim.
+
+355
+01:13:19,923 --> 01:13:22,484
+Bakın yine stdio burada görünüyor.
+
+356
+01:13:24,783 --> 01:13:26,844
+Geldik geldik buraya kadar.
+
+357
+01:13:29,144 --> 01:13:31,443
+Aa bakın bizim burada define yok olmuş.
+
+358
+01:13:31,703 --> 01:13:35,023
+Orijinal kodda define vardı, max vardı.
+
+359
+01:13:35,543 --> 01:13:37,083
+Şurada bir tane max vardı.
+
+360
+01:13:37,323 --> 01:13:43,484
+Burada max yazmıyor, ayyüz yürü. Demek ki bu ön işlemede substitution'lar yerine getiriliyor.
+
+361
+01:13:43,724 --> 01:13:45,523
+Substitution'ların ne olduğunu da gösteriyor.
+
+362
+01:13:45,783 --> 01:13:47,064
+Genellikle makrolar.
+
+363
+01:13:47,412 --> 01:14:06,172
+include'lar. Hatta şöyle bir şey daha yapalım, onu da göstereyim. Hiç burada comment satırı yazmadık. Comment diyelim. Aşağıya gelelim, şöyle bir şey yapalım, yorumlar diyelim. Şöyle kaydedelim.
+
+364
+01:14:07,667 --> 01:14:16,967
+Ön işleme olarak bunlar kodun kendisi ile alakalı değil. Yani makine koduna çevrilmeyecek. Dolayısıyla bunların da ön işlemde yok edilmesi lazım.
+
+365
+01:14:16,967 --> 01:14:18,967
+Şunları tekrar sileyim.
+
+366
+01:14:18,967 --> 01:14:22,268
+Şunu da silelim.
+
+367
+01:14:22,268 --> 01:14:26,967
+Geliyorum, aynı kodu tekrar çalıştırıyorum.
+
+368
+01:14:26,967 --> 01:14:34,368
+Bakın bunlara doğrudan kod 1.i ara dosyalara orijinal dosya üzerinden isimler dedik.
+
+369
+01:14:40,243 --> 01:14:46,123
+Bakın ne oldu? Yorumlar silindi, substitutionlar yerine geldi ve bizim program bu halini aldı.
+
+370
+01:14:46,123 --> 01:14:56,564
+Birinci aşama preprocessing aşaması bu. Şimdi bunun içine baktığımızda daha böyle makine koduna benzeyen herhangi bir şey göremiyoruz arkadaşlar.
+
+371
+01:14:56,564 --> 01:15:06,843
+Print yerinde duruyor, int yerinde duruyor, a eşittir yüz duruyor. Daha bakın şey yok. Burada artık ikinci adım ne olacak? Compilation olacak.
+
+372
+01:15:12,275 --> 01:15:21,876
+Peki burada ana programda, şurada compile edilebilecek olan ne? Şunu belki compile edebiliriz, şunu compile edebiliriz.
+
+373
+01:15:21,876 --> 01:15:32,275
+Şunu compile etmeye gerek yok printf'i çünkü zaten bu daha önce bir yerlerde compile edilmiş. Dolayısıyla şunların bir kısmının assembly kod karşılıklarını göreceğim ama printf yine yerinde duracak.
+
+374
+01:15:32,275 --> 01:15:38,876
+Bakalım şimdi bu compilation işleminde conversion diyelim buna.
+
+375
+01:15:41,684 --> 01:15:44,884
+Pronto. Source kod.
+
+376
+01:15:50,355 --> 01:15:52,755
+into assembly code.
+
+377
+01:15:57,076 --> 01:16:15,076
+Burada bu işlemler yapılıyor. Bunun inputu nedir? Bunun inputu myprogram.i. Bunun outputu nedir? Yine myprogram diyelim.
+
+378
+01:16:17,427 --> 01:16:40,188
+Burada geçici dosya olduğu için S olacak. En son olanı O. Çünkü output file alacağız burada. Böyle bir dönüşüm gerçekleştik. Şimdi o zaman O'nun içerisine bakalım. Bakın bu O farklı görünmüyor dikkat edersin. Pardon S'nin içerisine bakacağız. Yalnız söyledik. Şurada S dedik ya. S'yi getirdiğimde.
+
+379
+01:16:42,899 --> 01:17:06,619
+Bakın bu nedir? Bir assembly dosyasına benziyor. İşte main diye bir şey varmış. Bu bizim main fonksiyonu gösteriyor. Arada mesela bakın şu yüzü bir yere aktarıyor. Atama yapmıştık ya eşittir demiştik. Arada bilmediğimiz farklı operasyonlar var. Bakın printf yerinde duruyor. Bu printf'i hala çözememiş. Demiş ki bu printf, gcc bilmem neden daha gelecek. Yani tam anlamıyla iş bitmiş değil.
+
+380
+01:17:07,412 --> 01:17:13,652
+port1.c dosyasının compile edilmiş hali burada karşımıza geliyor.
+
+381
+01:17:13,652 --> 01:17:20,932
+Peki bundan sonra ne yapacağız? Compile edilmiş programı link etmemiz gerekiyor.
+
+382
+01:17:20,932 --> 01:17:28,652
+Burada bir translation gerçekleşecek. Arada söylemedik ama şöyle yazalım.
+
+383
+01:17:30,739 --> 01:17:52,500
+Bu dönüşüm, yani buranın geneline de Translation diyoruz ama burada özel bir adım olarak, buna assembly kodun makine koduna dönüşümü. Conversion from assembly code into machine code.
+
+384
+01:17:57,395 --> 01:18:15,895
+Burada encoded bir file göreceğiz. Yani bunun inputu myprogram.s iken outputu myprogram.o oluyor.
+
+385
+01:18:16,467 --> 01:18:24,868
+O zaman onun içerisine bakalım, çok da anlamayacağımız makine kodlarını göreceğiz. Bu makine kodları 0 ve 1'ler demiştik hatırlarsanız.
+
+386
+01:18:24,868 --> 01:18:35,667
+Ama o 0 ve 1'leri böyle dosya formatında 0 1 0 1 değil de, bunu da encoded, şifrelenmiş bir şekilde saklanıyor. Bakın şöyle bir hale geldik burada.
+
+387
+01:18:35,667 --> 01:18:44,067
+Çok da anlayacağımız şey değil, anlamamamız da gerekiyor. Bakın printf hala yerinde duruyor. Neredeydi o printf?
+
+388
+01:18:44,979 --> 01:19:00,219
+Niye? Çünkü printf'i daha bağlamadık. Printf çünkü bir yerde hazır duruyordu ya, daha bağlamadık. Bundan sonra o bağlanmış kod da getiriliyor, şu elgide içerisinde şey yapılıyor. Bakın dikkat ederseniz, şurada bizim 1 kilobaytlık kodumuz var.
+
+389
+01:19:00,219 --> 01:19:06,219
+Bundan i'yi oluşturduk, 41 kilobayt. Bundan o'yu oluşturduk.
+
+390
+01:19:06,899 --> 01:19:15,899
+Bundan S'yi oluşturduk. Pardon bundan İ'den S'yi, S'den O'yu oluşturduk. Sonra printf'i de getirip bağladığımızda 125 kb'a çıktı.
+
+391
+01:19:16,051 --> 01:19:25,291
+Şurada bakın baya detaylı bir şey geldi ama yeterli değil. Printf gelecek diye. Printf'in de bir sürü kodu var. Sonuçta ekrana yazdırmak istiyoruz.
+
+392
+01:19:25,291 --> 01:19:31,411
+Ekrana yazdırmak için ekran kartı harekete gidecek, veriler, basitlar üzerinden hareket edecek bir sürü olay.
+
+393
+01:19:31,411 --> 01:19:36,011
+O arka plandaki kodlar da geliyor. Bu payda benim programımın egza üzerine bağlanıyor.
+
+394
+01:19:37,291 --> 01:19:42,411
+Peki, burada sorumuz var mı? Son aşama olarak da şunu yazalım.
+
+395
+01:19:43,283 --> 01:19:56,083
+Şurayı şöyle bir Ctrl A desem, burayı birazcık küçültelim, gruplandır diyelim. Şöyle birazcık Zoom yapalım.
+
+396
+01:20:01,555 --> 01:20:02,555
+Linking.
+
+397
+01:20:06,003 --> 01:20:30,144
+Binding, yani bağlama veya link etme veya hatta buna binding demeyelim de, combining other.o.vires Yani şuradan elde ettiğimiz bir o var, bu bizim programın o'su. Bir de printf'in o'sunun bulunduğu yer, başka o'lar da gelecek.
+
+398
+01:20:32,819 --> 01:20:37,819
+runExecutableFiles.
+
+399
+01:20:39,819 --> 01:20:48,819
+Sonra en son aşamada runExecutableFiles.
+
+400
+01:20:50,819 --> 01:20:53,819
+Neyse bunun adı, bunun çıktısı nedir mesela?
+
+401
+01:20:54,819 --> 01:20:57,579
+Benim şuradaki program MyCompilot program.
+
+402
+01:21:00,724 --> 01:21:12,324
+program.exe diye, yani şurada yazdığımız neyse onu buraya getirdik. Bunun output'unu buraya output diyelim, elde ettik.
+
+403
+01:21:13,923 --> 01:21:26,783
+Bir programın yazılmasından çalıştırılmasına kadar geçen detaylı aşamalar burada. Ha bu detaylı aşamaların her birisi yine ayrı bir ders. Derleyici nasıl yazılır?
+
+404
+01:21:27,283 --> 01:21:34,603
+Translation nasıl yazılır, bağlama nasıl yapılır, onlarda programlama dilleri, teorisi diye ders vardır, orada anlatılır arkadaşlar.
+
+405
+01:21:34,603 --> 01:21:40,403
+Herhalde bu geçen dönem görmediğimiz bir detaydı. Sormak istediğiniz bir şey var mı arkadaşlar?
+
+406
+01:21:40,403 --> 01:21:44,724
+Herhalde anlatılmamıştı diye tahmin ediyorum. Çünkü o dersi de zamanla verdik.
+
+407
+01:21:44,724 --> 01:21:51,363
+Biraz daha orada üstünkörü geçiyorlar ama burada olması gereken detayı bu şekilde söylemiş olalım.
+
+408
+01:21:54,836 --> 01:22:14,136
+Peki, size bir soru. Programı geldim, şuradan noktalı virgülü kaldırdım ve kaydettim. Ne olacak? Şuradan da değerleyeceğim. Program üzerinden GCC falan şey yok, ne bileyim, devc++ yok elimde. Ne olacak?
+
+409
+01:22:14,136 --> 01:22:18,136
+GCC bize uyarı verecek.
+
+410
+01:22:22,899 --> 01:22:41,339
+Şurada program çalışınca hiçbir şey görmeden tamamlanıyor. Aslında ne var? Orada GCC'nin içine bakarsanız şöyle return olmayan bir şey var. Yani return boşluk. Program bitiyor, daha sonra bize devrediyor. Şimdi burada hata olunca arada bir trafik kazası var.
+
+411
+01:22:41,339 --> 01:22:47,659
+Çalıştıralım. Dedi ki, bakın güzel bir şey GCC için.
+
+412
+01:22:48,180 --> 01:23:01,620
+Bir dediği hata var, beklenilen olması gereken noktalı bir gün, before return'dan önce, şundan önce bir şey var. Şimdi gelelim programa bakalım. Bakın kodun satırını, beşinci satır olduğunu burada bana söylemedi.
+
+413
+01:23:03,060 --> 01:23:10,420
+C'nin 10'unda ikisinde, yani burada 10 diyor, yani 10. satır değil.
+
+414
+01:23:10,579 --> 01:23:35,780
+Farklı bir yorum. İşte bu programlar, devsi gibi programlar şurada derlersem, dedi ki bakın şurada, yine bu da buradan şey verdi. Yani aynı şeyi bu da yapıyor. Daha güncel programlar, diyor ki şurada olması gereken bir noktalı virgül vardı. Şimdi buradan geriye doğru gittiğimde, şunların hepsi, yani şuraya kadar olan şeylerin hepsi, boş, çök. Zaten derleme aşamasında onlar yok. Arada onlar uçuruldu.
+
+415
+01:23:36,819 --> 01:23:38,819
+Bakın böyle bir hatayı oradan da aldık.
+
+416
+01:23:38,819 --> 01:23:40,819
+Göremediğiniz gibi.
+
+417
+01:23:40,819 --> 01:23:46,819
+İşte şunu düzelt diyor, düzelttikten sonra böyle bir çıktı veriyor ve bizi tekrar ana şeye gönderiyor.
+
+418
+01:23:46,819 --> 01:23:59,819
+Tekrar program edit işlemini tamamlamamız gerekiyor. Bunların hepsinden önce yapmamız gereken şey var. Edit your program programımızı yazacaksınız, düzenleyeceksiniz.
+
+419
+01:23:59,819 --> 01:24:02,819
+Bu step 0 diyelim.
+
+420
+01:24:04,724 --> 01:24:16,324
+Bunun da önce, hatta step 1 dersek, step 0'ı da design an algoritm. Algoritmanı design ettin. Sonra bunu programa yaptın. Ondan sonra işte 1-2-3-4 böyle adımlar devam edip gidiyor.
+
+421
+01:24:18,324 --> 01:24:25,524
+Evet, genel derleme işlemi de bu şekilde. Şimdi arkadaşlar, şuradan devam edin. Dersi bitireceğiz bu slide bitirdikten sonra.
+
+422
+01:24:25,524 --> 01:24:31,524
+Yine buradan sonra söyleyeceğim şeyler de şununla alakalı. Soru varsa alabilirim.
+
+423
+01:24:32,340 --> 01:24:43,340
+Temel grameri ve özelliklerini anlatıp bitireceğiz. Artık çarşamba gününden sonra [öğrenci] hemen sorunu alacağım. Şunu yapacağız. Önümüzde bir problem var. Bu problem için algoritmayı yazalım.
+
+424
+01:24:43,340 --> 01:24:52,340
+Algoritmayı yazdıktan sonra, gerekirse doğrudan kodunu yazalım. Algoritmayı tartışacağız, kodu yazacağız, kodu çalıştıracağız. Acaba daha iyisini yapabilir miyiz? Daha iyi algoritmayı.
+
+425
+01:24:52,340 --> 01:24:56,064
+Bunun daha iyi algoritmayı gerçekleyeceğiz ve ders bu şekilde devam edecek.
+
+426
+01:24:56,064 --> 01:25:03,703
+Bu dersin devamı için gerekli C ve algoritma bilgisi bu kadar yeterli. Yani bu dersin sonuna anlatacaklarım kadar yeterli.
+
+427
+01:25:03,703 --> 01:25:12,543
+Biraz daha BBG almayan, detay isteyen arkadaşlarım, geçen dönem o dersi açan hocalarımızın eski videoları var, onları temin edersiniz.
+
+428
+01:25:12,543 --> 01:25:14,904
+Şimdi [öğrenci] sorunu alabilirim, ondan sonra devam edeyim.
+
+429
+01:25:14,904 --> 01:25:18,184
+Peki hocam, GCC'nin...
+
+430
+01:25:18,804 --> 01:25:26,123
+Noktalı virgül istediği yere noktalı virgül koyarsak çalışıyor değil mi? Mesela return'ın olduğu satıra noktalı virgül koysam da çalışır.
+
+431
+01:25:26,123 --> 01:25:38,603
+Bir dakika, tam anlamadım. Şu comment line'da dediği şey mi yoksa şuradakini mi? Şuraya noktalı virgül koyarsam, tamam anladın demek istediğini.
+
+432
+01:25:38,603 --> 01:25:39,603
+Evet hocam.
+
+433
+01:25:46,036 --> 01:25:55,036
+Bakın ne oldu? Yorumlar gittiği için şuradaki şey şununla birleştirdi. Yani ben programımı böyle noktalı birgide hemen şuraya koymak zorunda değilim.
+
+434
+01:25:56,036 --> 01:26:04,036
+Bu aradaki, ha arada mesela başka bir şey olsaydı, A eşittir, işte ne bileyim 8 gibi bir şey olsaydı, o zaman bunu buraya koymam gerekiyordu.
+
+435
+01:26:04,036 --> 01:26:10,036
+Yani arada executable bir şey olmadan istediğim yere koyabiliriz noktalı birgide.
+
+436
+01:26:10,579 --> 01:26:23,579
+Noktalı virgül için de bir başlık açayım. Gerçi bu C ile alakalı ama noktalı virgül neyin sonuna konur? Imperatif, emir ifade eden komutların sonuna konur.
+
+437
+01:26:23,579 --> 01:26:32,524
+A eşittir max olarak ata. Ekrana şunu yaz. Şimdi emir olmayan ifadeler var. Mesela bunlardan bir tanesi if.
+
+438
+01:26:33,203 --> 01:26:47,443
+if bilmem ne doğruysa, doğruysa da tamamsa ne? Yani doğruysa ne yapacağız? Yanlışsa ne yapacağız söylememiz. Eğer burada noktalı virgül dersek doğruysa hiçbir şey yapma demektir. Bu mantıksız olduğu için iften sonra noktalı virgül koymayız.
+
+439
+01:26:47,443 --> 01:26:57,163
+Veya işte for, for şuradan şuraya kadar noktalı virgül. Noktalı virgül dersek boş bir döngü koymuş oluruz. Aynısı vahil içinde var.
+
+440
+01:26:57,376 --> 01:27:10,976
+Dolayısıyla bu tarz durumlarda noktalı bir gül konmaz, bunun altındaki bloklara konur. İşte A eşittir, 5 olarak ata. A'yı bir arttır. Ondan sonra işte scanner, kullanıcıdan bir A değeri aldı.
+
+441
+01:27:10,976 --> 01:27:19,676
+Bakın bunlar hep emir zindeleri. Emir olarak yani bir Türkçe veya İngilizce'ye çevirdiğinizde emir ifadesiyle dönüşüyor bunlar. Bunlar da noktalı bir gül konur.
+
+442
+01:27:24,819 --> 01:27:36,819
+Böyle bir şey yok. Sadece bunun bir istisnası var. Do while döngüsünde bir noktalı virgül koyuyoruz. Onu da yeri yerinden anlatacağım. Karışmasın diye bu do while döngüsünde bir işlem yapılıyor.
+
+443
+01:27:36,819 --> 01:27:50,819
+Onun dışında if-in sonuna virgül koyarsanız, noktalı virgül koyarsanız if-in doğru olması durumunda kod çalışmaz. For'un sonuna koyarsanız çalışmaz. Bunları test edip deneyebilirsiniz. Şimdiden devam edelim. Soruya herhalde cevap verdim.
+
+444
+01:27:50,819 --> 01:27:51,435
+Hadi.
+
+445
+01:27:51,891 --> 01:27:53,891
+Anlını doğru anlayabiliyoruz.
+
+446
+01:27:53,891 --> 01:27:54,891
+Tamamdır.
+
+447
+01:27:54,891 --> 01:27:56,891
+Bir soru soru.
+
+448
+01:27:56,891 --> 01:28:04,891
+Peki hocam, biz translation kısmını tersine çevirebilir miyiz? Makine kodunu SM'li koduna çevirebilir miyiz?
+
+449
+01:28:04,891 --> 01:28:12,891
+Bunu yapan komutlar var. Decompiler deniyor. Özellikle Java gibi, C-sharp gibi yüksek seviyeli diller de var.
+
+450
+01:28:13,328 --> 01:28:23,328
+C için hiç araştırmadım ama muhtemelen vardır. Makine kodunu çözüp orijinal program kodunu elde ettiren programlar var. Ama o başka bir program.
+
+451
+01:28:23,328 --> 01:28:34,328
+Çünkü orada şunu yapıyor, temel olarak öyle düşün. Decompiler programı bu bilgisayar üzerine yükledik mesela. Bu bilgisayarın makine kodunu işlemciden çekiyor bir kere.
+
+452
+01:28:39,887 --> 01:28:47,087
+Onunla karşılaştıra karşılaştıra orijinal program koduna çevirmeye çalışıyor. Ama burada bazen sıkıntılar olabilir.
+
+453
+01:28:47,087 --> 01:29:05,087
+Çünkü benim şurada oluşturduğum .o dosyası bir de sıkıştırılırsa, ki bazen sıkıştırma yapılır güvenlik amaçlı veya obfuscation dediğimiz kodun karmaşıklaştırılması gibi bazı işlemler yapılırsa çok verimli çalışmayan programlar olabilir. Yüzde yüz çevre olacak diye değil.
+
+454
+01:29:05,119 --> 01:29:14,119
+Özellikle C'de bu mümkün ama olmadığı durumlarda olabilir. Dile göre veya kullanılan derleyiciye göre değişiyor.
+
+455
+01:29:14,119 --> 01:29:25,119
+Bazı derleyiciler var ki kodunuzu derler, .o'yu oluşturur, o makineye göre bir program haline getirir, onu sıkıştırır.
+
+456
+01:29:25,119 --> 01:29:31,724
+Sıkıştırdıktan sonra gerekirse şifreler, çalışması için bile o şifreyi temin etmeniz gerekiyor. Tamam mı?
+
+457
+01:29:32,819 --> 01:29:57,420
+Anladım hocam, sağ olun. Mesela Code Obfuscation dediğimiz şey şudur. Bunu nereden alabiliriz? Şöyle yapalım. Benim size paylaştığım şeyler de vardır. Code Obfuscation. Bunun hatta yarışmaları var. Neydi ya? Yarışmanın İngilizcesini şu an Camp miydi? Dur. Şöyle yapayım.
+
+458
+01:30:00,000 --> 01:30:17,963
+Contest değil de, camp gibi bir şey. Mesela bakın şu bir program, done diye böyle yazılmış. Normalde program çalışır mı çalışır ama böyle yarışmaları yapılıyor işte şöyle şeyler.
+
+459
+01:30:17,971 --> 01:30:42,091
+Bu biraz daha böyle kodun anlaşılabilir misiniz? Özellikle yok computation de değil, başka bir şey var, böyle bir kelime var. Şöyle bakalım. A, Q, Z, O, Z. Şu kitabın içerisinde bununla alakalı bir şey var. Nerededir?
+
+460
+01:30:43,667 --> 01:30:48,667
+Bunları açacağım ama herhalde açarız. Yok değil.
+
+461
+01:30:50,667 --> 01:30:53,667
+Bunlardan dağımın tepkini veriyoruz.
+
+462
+01:31:01,619 --> 01:31:02,475
+Bakın.
+
+463
+01:31:06,547 --> 01:31:17,467
+Benim size paylaştığım ders notlarında bunun pdf olması lazım arkadaşlar ama şu an şuna bakalım.
+
+464
+01:31:28,275 --> 01:31:31,595
+Burada bir pdf download diye bir şey vardı.
+
+465
+01:31:33,655 --> 01:31:36,215
+PDF download, temelde şu.
+
+466
+01:31:37,496 --> 01:31:39,795
+Bu da bizi başka bir noktaya götürüyor.
+
+467
+01:31:45,043 --> 01:32:06,644
+Şöyle gidelim, burada olabilir. Contestmiş, ben başka şey daha tıklıyorum da. Bakın mesela böyle bir program yazmış bir kişi. Bu programı yazdığında böyle bir dünya haritasına benzer bir şey ortaya atıyormuş. Ödül alan bir şey. Kaç yılında bunun burada hikayesi de var.
+
+468
+01:32:11,796 --> 01:32:25,796
+Böyle şeyler yaptığında şey bulamıyorlar. Orijinal kodu bulunmasını istemiyorsanız, gizlilik içeren bir makine, şey, orijinal kaynak kodunuz varsa böyle bir durum var. Tamam mı?
+
+469
+01:32:26,796 --> 01:32:35,724
+Şimdi bu başlığın altından bir programlama dilini öğrenmemiz gerektiğini anladık. Yani onun grameri ve alfabesi var. Programlama dilini...
+
+470
+01:32:36,787 --> 01:32:40,068
+Donut noktası çok ilginç. Hangisi?
+
+471
+01:32:43,988 --> 01:32:45,988
+Nerede o? [öğrenci]?
+
+472
+01:32:48,988 --> 01:32:54,988
+İnternette var da, öyle dot şeklinde dönen bir şey çıkıyor alt olarak da.
+
+473
+01:32:54,988 --> 01:32:59,988
+Yani bu işte farklı, artık insanlar bu alanda da çalışanlar var.
+
+474
+01:32:59,988 --> 01:33:06,988
+Bu veri güvenliği, bilgi, bilişim güvenliği ile alakalı bir alt konudur. Code Obfuscation.
+
+475
+01:33:07,988 --> 01:33:08,988
+Devam edelim.
+
+476
+01:33:09,652 --> 01:33:16,652
+Şimdi dil öğrenmek ne demek arkadaşlar? Bir kere dilin kurallarını öğreneceğiz. Yani grameri öğreneceğiz.
+
+477
+01:33:20,787 --> 01:33:31,027
+Bununla beraber o dildeki data structure'ları öğreneceğiz. Asıl önemli olan bu. Yani gramer dediğimiz for, if, değişken tanımlama, sabit tanımlama, toplama, çıkarma, atama.
+
+478
+01:33:31,027 --> 01:33:41,027
+Data structure. Şimdi data structure'ın en bilinen şeyi aslında değişkenler. Ondan sonra array, matrix falan bunları öğrenmek.
+
+479
+01:33:41,027 --> 01:33:46,707
+İşte string mesela burada aynı şekilde. Bununla alakalı gerekirse farklı fonksiyonlar.
+
+480
+01:33:47,859 --> 01:34:06,859
+Değişkenler ve sabitler. Şimdi değişken nedir? Bir problem çözerken biz günlük matematikte x, y, z gibi değişkenleri kullanıyoruz, denklem kuruyoruz. Burada da bellek alanlarını, bilgisayarımızın belleğini, verileri saklayabilmek için kullanacağız. Değişebilir veriler olacak. Örneğin...
+
+481
+01:34:07,060 --> 01:34:17,060
+Burada şu bizim bilgisayarımızın belleği olsun. Bu belleğin nasıl organize edildiğini de gelecek derste kodlar üzerinde göstereceğim. Öyle gelişigüzel belleğe yerleşmiyor değişkenler.
+
+482
+01:34:17,060 --> 01:34:25,060
+İşte ne varmış? J'nin içerisinde 5 artı 10 diye bir şey saplanacakmış. Önce 5 artı 10 yapılıyor, sonra J'nin içerisinde 15 değeri saplanıyor.
+
+483
+01:34:25,060 --> 01:34:33,964
+J, bu değişkenin etiketi, bunun bellekte fiziksel bir adresi var. Burada değeri var, hatta şuranın bir range'i vardır.
+
+484
+01:34:34,100 --> 01:34:40,500
+Kaç byte olacağı bellidir. Integer genelde 4 byte'dır. Şunların her birisine bir statement diyoruz.
+
+485
+01:34:40,500 --> 01:34:43,380
+Bakın ifade var, noktalı virgül var.
+
+486
+01:34:43,380 --> 01:34:50,020
+Şurada i eşittir j eksi 2 imiş. Önce bu yapılacak, daha sonra bu yapılacakmış. Daha sonra i eşittir i artı 2 demiş.
+
+487
+01:34:50,020 --> 01:34:53,300
+i'yi de burada saklıyormuşuz gibi gibi.
+
+488
+01:34:53,300 --> 01:35:00,980
+İşte 15 ne oldu? Önce 13 oldu. Sonra 2 arttı. Aslında tekrar 15 olacak da şurada silmiş haliyle 15 olacak.
+
+489
+01:35:01,140 --> 01:35:08,140
+Böyle bir değişkenleri kullanacağız. Şimdi değişkeni tanımlayabilmek için birkaç farklı şeye ihtiyacımız var.
+
+490
+01:35:08,140 --> 01:35:14,140
+İsimlendirme kurallarını programlama dilinde özellikle C özelinde düşünmemiz gerekiyor.
+
+491
+01:35:14,140 --> 01:35:20,652
+İsimlendirme kuralları değişkenler için, sabitler için, fonksiyonlar için bizim işimize lazım olacak.
+
+492
+01:35:20,692 --> 01:35:28,891
+Bir değişken neler içerebilir? Harfler içerebilir, sayılar ve dijitler içerebilir ve sadece underscore karakteri içerebilir.
+
+493
+01:35:28,891 --> 01:35:34,292
+Onun dışında virgül, noktalı virgül, ünlem işareti başka şeyler nokta içeremiyor.
+
+494
+01:35:34,292 --> 01:35:43,292
+Bunlar olacak, bununla beraber bir değişken ya underscore ile ya da harfle başlayacak. Rakamla başlayamaz.
+
+495
+01:35:43,667 --> 01:35:56,068
+Bir de değişken ismimiz C'nin kendi rezerv edilen kelimelerinden olmayacak. Yani gidip de bir int diye bir değişken tanımlayamayız. For diye değişken tanımlayamayız.
+
+496
+01:35:56,068 --> 01:36:08,768
+Bir de C dili karaktere duyarlıdır. İşte şöyle bir şey yaptınız, küçük U'yu büyük U yapayım dediğinizde bunlar farklı türden beraber oluşuyor. Yani burada belirlikte üç tane alan rezerve etmiş olursunuz.
+
+497
+01:36:08,768 --> 01:36:10,768
+Şunlar geçerli isimler.
+
+498
+01:36:11,060 --> 01:36:26,060
+Şunlar geçerli olmayan, neden geçerli değil? On ile başlayamaz. Return, reserved keyworddür. Bir şey dolar içermez. Bakın başka dillerde dolar sembolü kullanılıyor, burada kullanılıyor. İşte şu semboller olmaz, underscore olabilir sadece. Bu örnekler bizim için yeterli.
+
+499
+01:36:26,060 --> 01:36:34,060
+Reserved keywordler C'de çok az. Yani bunu aşinalık kazandıkça öğreneceğiniz şeyler. Bunlardan herhangi bir değişken yazanıyorsunuz.
+
+500
+01:36:34,192 --> 01:36:43,692
+Veri tiplerini bilmemiz gerekiyor değişken tip için. Değişken tanımında veya sabit tanımında yapacağımız en önemli şey, datatype'ı yazıyoruz en genel formatıyla.
+
+501
+01:36:44,692 --> 01:36:59,692
+Boşluk variable name, noktalı virgül. Eğer bir tane değişken tanımlayacaksa, eğer birden fazla değişken tanımlayacaksak, variable name 1, variable name 2, virgül virgül deyip noktalı virgül deyelim.
+
+502
+01:36:59,967 --> 01:37:08,967
+Şimdi data tipleri void bir veri tipidir. Bu dönem görmeyeceğiz, gelecek dönem görüntü. Scalar tiplerimiz var. Bunlar primitive veri tipleri arkadaşlar.
+
+503
+01:37:09,967 --> 01:37:16,967
+Ne demek primitive? Ben ilk derste, geçen hafta ilk pazartesi de size 0 ve 1'lerden türete türete şeyler anlattım.
+
+504
+01:37:18,967 --> 01:37:24,967
+Bunlar tam sayılar, floating point sayılar olarak aritmetik tipler.
+
+505
+01:37:25,363 --> 01:37:32,524
+Bunların pointerları, mesela tam sayıların pointerı, floating pointerı, bir de enumerated dediğimiz tipler.
+
+506
+01:37:32,524 --> 01:37:39,363
+Biz bu derste şunu göreceğiz, şunları göreceğiz, şunları göreceğiz, şunları göreceğiz, dolayısıyla bunları görmüş oluyoruz.
+
+507
+01:37:39,363 --> 01:37:47,764
+Bir de aggregate tiplere giriş yapacağız. Aggregate tiplerde integral tipleri, floating point tipleri birleştirip yeni tip oluşturacağız.
+
+508
+01:37:47,920 --> 01:38:04,819
+Mesela kompleks sayı demiştim hatırlarsanız, bir kompleks sayı oluşturmak için iki tane neye ihtiyacımız var? Floating point sayıya ihtiyacımız var. Örneğin bir daire. Daire sadece bir floating point ile üretilebilir. Çünkü merkez yarı çapını bilelim yeterli. Ama dairenin bir de merkez noktası var.
+
+509
+01:38:04,819 --> 01:38:13,819
+Daire tipi oluşturmak için bir merkez noktasının x-y koordinatı, bir de yarı çap bilgisini gösteren bir R bilgisi var değil mi? Şöyle R.
+
+510
+01:38:14,068 --> 01:38:21,068
+3 tane real sayıdan oluşan bir tip oluşturup daire isminde yeni değişken türü yazabileceğiz.
+
+511
+01:38:21,068 --> 01:38:25,068
+Biraz burada ilgileyeceğiz. Özellikle sayısal alanlarınız dersinde bu size lazım olacak.
+
+512
+01:38:25,068 --> 01:38:36,068
+Şimdi bu aggregate, temel veri tiplerine baktığımızda car, int, float, double, enumerated dediğimiz, bakın bunların hepsi aslında integer tipler.
+
+513
+01:38:36,068 --> 01:38:41,068
+Sadece şu ikisi floating point. Car da bir integer tiptir, doğrudan dönüşür.
+
+514
+01:38:41,363 --> 01:38:46,804
+Bunların önüne qualifier dediğimiz boyutunu arttırıcı, azaltıcı şeyler koyabiliyoruz.
+
+515
+01:38:46,804 --> 01:38:54,963
+Long integer, unsigned integer, sadece pozitif değerler olsun, signed integer, pozitif ve negatif değerler olsun diye bunları koyabiliyoruz.
+
+516
+01:38:54,963 --> 01:39:00,403
+Şimdi burada bunun tablosu var, ezberlenecek bir tablo değil, aşinalık olsun diye koyduk.
+
+517
+01:39:00,403 --> 01:39:01,724
+İşte karakter...
+
+518
+01:39:02,804 --> 01:39:10,804
+unsigned olabilir veya signed olabilir. Tek bir tane karakter tutar. Örneğin bir A karakterini tutmak istiyorsunuz.
+
+519
+01:39:10,804 --> 01:39:18,804
+Veya bir 3, işte bir karakterini tutmak istiyorsunuz gibi şöyle diyelim. Bunun boyutu bir byte'dır arkadaşlar.
+
+520
+01:39:18,804 --> 01:39:26,804
+Şimdi şu programınızın içerisindeki kaç tane karakter var bunları sayarsanız, bilgisayarda tutulan yer...
+
+521
+01:39:27,828 --> 01:39:39,028
+Şuraya geldiğimizde, burada 1 kilobyte gösteriyor ama, şunun özelliklerine bakın daha azdır. Bakın 149 byte'miş. Demek ki bunun içerisinde sayarsanız 149 tane karakter olduğunu görürsünüz.
+
+522
+01:39:39,028 --> 01:39:50,028
+İşte boşluğuyla, şu suyla, bu süre 149 tane karakter var. Disk üzerinde 1 kilobyte'a tamamlandı. Şimdi bunun limitlerine bakalım. Şimdi 1 byte kaç bitti? 8 bitti.
+
+523
+01:39:54,707 --> 01:40:08,647
+Hiçbir şey yoksa işaretli demek. O zaman 8 bitin 1 biti işarete gidecek. 2 üzeri 7 ama eksi olacak başına. Yani eksi 128'den 0'a kadar geldi. Şimdi 0'dan şuraya kadar 2 üzeri 7 tane durum var.
+
+524
+01:40:08,832 --> 01:40:33,952
+Buradan buraya kadar 2 üzeri 7 eksi 1'e kadar, yani bu da 127 demek, bu aralıkta bütün değerleri tutabilirsiniz kar üzerinde. İster integer olarak, ister bunu ASCII'ye kodlayabilir, kodlayabilecek şekilde. Eğer unsigned yaparsak işarete bir şey gitmiyor, 8 bitin 8'inde kullanır. O zaman 0'dan 2 üzeri 8 eksi 1'e kadar, 0'dan dahil ettiğim için eksi 1, 255'e kadar değerli.
+
+525
+01:40:35,028 --> 01:40:54,547
+Short int, long int için de geçerli. Mesela 4 için baktığımızda eğer bunu işaretli kabul edersek, 4 byte kaç bittir? 32 bittir. Şu eksi 2 üzeri 31'den, bu artı 2 üzeri 31, eksi 1. Eksi aşağıda olacak şekilde bir aralık kazanıyor.
+
+526
+01:40:54,912 --> 01:41:06,592
+Şuna bakarsak, 32 bit 0'dan 2 üzeri 31 aşağıda eksi 1 şeklinde aralığımız var. Bakın şurada long int şu kadar demiş. Bu 64 bit demektir.
+
+527
+01:41:06,592 --> 01:41:14,752
+Eksi 2 üzeri 63'den 2 üzeri 63 eksi 1'e kadar veya şurada 2 üzeri 64 eksi 1'e kadar değerler tutulabiliyor. Bunlar da zaten aynısı.
+
+528
+01:41:15,475 --> 01:41:30,475
+Bu nerede geçerli? Ben bir problem çözeceksem kullanacağım değişkenlerin aralığına göre değer almam lazım. İşte en önemli şeylerden bir tanesi bu. Eğer gireceğim sayılar çok büyük sayılardan oluşacaksa o zaman long long integer falan kullanmam gerekecek.
+
+529
+01:41:31,475 --> 01:41:39,475
+Şimdi değişkenlerin, bunlar range'leri, bir de size'ları var. Şunları görmek için bilgisayardan bilgisayara değişebilir. Bunu alırsınız.
+
+530
+01:41:39,923 --> 01:41:46,143
+Bizim programlama dilimizde sizeof diye bir operatör var. Bakın bu bir operatördür, fonksiyon değildir.
+
+531
+01:41:46,143 --> 01:41:51,923
+Şunu şöyle source file'e, yeni bir source file açalım. Execute diyelim.
+
+532
+01:41:56,307 --> 01:41:57,587
+Ordu 2 diyorum.
+
+533
+01:42:01,555 --> 01:42:11,555
+İşte car ne kadarmış, short ne kadarmış, integer genelde 4 byte'dır arkadaşlar, long 4 byte'mış. İşte bunu long long yaparsak işte 8 byte'dan 16 byte'e falan çıkıyor.
+
+534
+01:42:11,555 --> 01:42:22,555
+Bu kadar aralık elde ediyoruz. Bakın burada 22 diye bir şey gördük. Çünkü şurada printf 22 tane karakter basıyor, bu bastığı 22 değeri buraya düşüyor.
+
+535
+01:42:22,555 --> 01:42:25,555
+Ekranda şey geliyor, geldim buraya, return 0 yazayım.
+
+536
+01:42:30,676 --> 01:42:50,235
+Bakın ne oldu? Sıfırla bitti. Program herhangi bir kazaya uğramadan tamamlandı. Bir de arkadaşlar kod yazarken şuraya int yazalım. Bir de böyle bir blok açtığımızda şöyle bir boşluk bırakırsak kodun onlaşılabilirliği, okunulabilirliği artıyor. Bu kuralları ben geri geldikçe sizleri yaza yaza.
+
+537
+01:42:50,420 --> 01:42:58,859
+Size de söyleme veya uygulama üzerinden bayağı bir tekrar edeceğiz. Artık eliniz alışır ona. Hem eliniz hem de gözünüz alışır.
+
+538
+01:42:58,859 --> 01:43:06,460
+Evet, Variable Declaration dediğimiz bir işlemdir bu. Bakın deklarasyon, definition demiyoruz. Definition burada farklı bir kavram.
+
+539
+01:43:06,460 --> 01:43:10,779
+Nerededir edit?
+
+540
+01:43:13,619 --> 01:43:19,619
+Bakın bir karakter türünde değişkenler yapmışız. Aynısı işte tek seferinde iki değişken.
+
+541
+01:43:20,115 --> 01:43:44,315
+Şöyle şeyler. Bakın şu yazılıma dikkat edin. Buna camel case diyoruz. Eğer sizin değişkeninizin ismi birden fazla kelimenin birleşinden oluşacaksa ilk kelime küçük harfle, sonraki kelimeden her birisi büyük harfle oluyor. İşte number of students. Genellikle değişken tanımlarken arkadaşlar isimlere anlamlı değişkenler verilir. O programı örneğin ben ödev okuyacaksam anlamakta güçlük çekmeyeyim de.
+
+542
+01:43:44,756 --> 01:43:52,156
+Buna deklarasyon dedik, initialization yaparsak, aslında bu definition oluyor, değişkeni tanımladığımız yerde ilk değerini atayabiliyoruz.
+
+543
+01:43:52,156 --> 01:43:59,956
+İşte bu tek tırnak olduğu için şeydir, bu bir karakterdir. Şurada bir integer değeri aktarıyoruz, şurada bir double değer aktarıyoruz gibi gibi.
+
+544
+01:43:59,956 --> 01:44:03,356
+Mesela şurada unsigned car demiş, 25 demiş. Burada...
+
+545
+01:44:03,667 --> 01:44:18,787
+Ne oluyor? Gizli bir dönüşüm var. Implicit Conversion dediğimiz bir dönüşüm var. 25'i karakter integer olduğu için böyle saklarsınız. Ama isterseniz 25'i yazdırdığınızda ASCII kod tablosunda 25'e karşılık gelen değer neyse onu görürsünüz.
+
+546
+01:44:19,907 --> 01:44:26,228
+Şimdi bir şeyin önüne const ifadesi koyarsak bunu da sabitliyorsunuz. İleride değiştirilemez hale getiriyorsunuz. Bunun iki yolu var.
+
+547
+01:44:30,623 --> 01:44:41,023
+Ön işlemci olarak yapacağız. Bakın bu bir değişken değil. Bu ön işlem. Ne oluyordu biraz önce değerleme aşamasında? Gelip yerine yazılıyordu. Dolayısıyla değiştiremiyorsunuz. Olduğu yerde kalıyor.
+
+548
+01:44:41,023 --> 01:44:57,523
+Yani ben pi eşittir, pi artı 3 gibi bir şey yazamam. Çünkü ne oluyor? Pi'nin yerine şu gelecek. 3.14. 3.14 eşittir, 3.14 artı 3 gibi bir şey olmayacak. Dolayısıyla bunlarda böyle bir şey yapılmaz. Aynısı şurada da olmaz.
+
+549
+01:44:57,844 --> 01:45:07,244
+Niye? Çünkü bunu sabitlemişiz. Şu hem ön işlemci olduğu için olmaz hem de constant bir ifade olduğu için olmaz diyelim.
+
+550
+01:45:07,244 --> 01:45:13,043
+Peki hocam, bu define'ı kullanırken ne kadar büyüklükte şeyler koyabiliyoruz?
+
+551
+01:45:13,043 --> 01:45:17,644
+Burada büyüklük önemli değil. Dikkat edersen noktalı bir külfrağını da yazmadım.
+
+552
+01:45:17,716 --> 01:45:24,956
+Her nerede böyle bir şey göreceksek, yani pi göreceksek bunun karşılığı bu olacakmış. Sen istersen çok büyük bir sayı yaz.
+
+553
+01:45:24,956 --> 01:45:36,275
+Ama aşağıda kullanacağın değişkenler buna göre değer aralığını almalı. Örneğin pi sayısıyla alakalı bir işlem yapacaksan ve onu bir x değişkeni üzerinde saklayacaksan, işte float mesela x dedin.
+
+554
+01:45:37,811 --> 01:45:45,811
+O zaman olmaz. Çok uzun bir pi sayısı değişkeni saklayamazsın. Bunu aşağıda, yukarıdakine göre planlama yapmak gerekiyor.
+
+555
+01:45:46,811 --> 01:45:50,811
+Şimdi, literal dediğimiz ifadelerde... Buyur, sorun var.
+
+556
+01:45:50,811 --> 01:45:52,811
+Yok hocam, teşekkür edecektim sadece.
+
+557
+01:45:53,587 --> 01:45:59,747
+Literal dediğimiz şey, biraz burada hızlanayım, şu slide'ı olabildiğince bitirmeye çalışıyorum.
+
+558
+01:45:59,747 --> 01:46:08,387
+Değişkene aktarılacak olan sabit değerler, bunlara literal diyoruz. 22 integer'in literali, şu temel tipler.
+
+559
+01:46:08,387 --> 01:46:14,787
+Bunların yanına unsigned veya long ifadelerini veya float ifadelerini koymak için, belirtmek için,
+
+560
+01:46:18,804 --> 01:46:34,003
+sign it olarak ifade edelim. Eğer bunu unsigned yapmak istersek a u'yu ekliyoruz. Eğer bunu long bir ifade olarak yazmak istiyorsak daha fazla bellekte yer tutsun. İleride çünkü genişleyebiliriz. Biraz önce senin sorduğun soruyu da aslında söyleyebiliriz.
+
+561
+01:46:34,003 --> 01:46:45,603
+J mesela long intüründe ama ilk başladığı değer çok long olmayan bir yirmi iki. Yirmi iki yap ama bunu long int'e dönüştürerek yer ayır diyebilirsiniz. Bu ifadeler yazılabilir.
+
+562
+01:46:46,003 --> 01:47:04,403
+Şunlar, bakın bir literaldir double için, float için böyle bir şey veya long float için dediğimizde e3 ile e üzeri 10 üzeri 3 şeklinde ifade edilebilen long double'lar. Bunları, yani şunları falan çok kullanmıyoruz da genelde şunlar karşımıza geliyor arkadaşlar.
+
+563
+01:47:04,403 --> 01:47:13,003
+Şimdi dönüşümler var, bunları böyle hızlıca söyleyeyim. İşte decimal 4, 8'lik taban da böyleydi. Eğer bunu hexadecimal yazmak istiyorsanız
+
+564
+01:47:13,395 --> 01:47:18,395
+0x4 diye, yani bir şeyi hexadecimal olarak C'de saklamanız mümkün.
+
+565
+01:47:18,395 --> 01:47:29,395
+İşte integer x dediniz, eşittir dediniz, 0x4 dediniz, bunu hexadecimal olarak gösterebilirsiniz veya ekrana yazarken kullanabilirsiniz.
+
+566
+01:47:29,395 --> 01:47:38,347
+Floating point tipler, işte bizim real sayıları göstermek için kullandığımız şeyler. 0.1, 7.0 gibi şeyler bunlar.
+
+567
+01:47:38,387 --> 01:47:43,667
+float ve double. Şimdi bizim iSriple 754'ümüz vardı hatırlarsınız.
+
+568
+01:47:45,987 --> 01:47:53,987
+Bunun bir 32 bitliği vardı, bir de 64 bitliği vardı. 32 bitlik float'a karşılık geliyor diyebiliriz. 64 bitlik ve double'a karşılık geliyor diyebiliriz.
+
+569
+01:47:55,427 --> 01:48:01,268
+Şimdi şu float'ların, bunların bazıları legal, legal demişiz. Bakın şöyle bir şey, bu integer'dır.
+
+570
+01:48:01,492 --> 01:48:11,091
+Böyle bir şey yok, bir nokta, bir gül diyemeyiz, bir nokta gibi şeyler söyleyelim. Bunlar illegal atamalar. Yani şu doğrularını bilirsek diğerine gerek yok arkadaşlar.
+
+571
+01:48:11,091 --> 01:48:24,291
+Mesela 8 yerine 1e gibi şeyler söyleyemeyiz. Bunları söyleyelim. Şimdi bir de değişken tiplerini gördükten sonra giriş çıkış, çünkü dışarıdan veri alacağız, dışarıya veri göndereceğiz.
+
+572
+01:48:24,291 --> 01:48:27,091
+Şu ana kadar printf ve scanf'i gördünüz.
+
+573
+01:48:27,956 --> 01:48:40,956
+şimdi printf, dışarıdan verilen verileri dışarıya tekrar ekrana yansıtmak için kullanılan bir belirteç. Şimdi belirtirken bir kere printf'te ne kullanıyoruz? Bir string işlem kullanıyoruz printf.
+
+574
+01:48:41,844 --> 01:48:48,083
+Bir karakter dizisi alıyor iki tırnak arasında. Sonra gerekirse yanına argümanlar koyuyoruz. İşte bu stringin içerisinde
+
+575
+01:48:48,083 --> 01:48:55,363
+yazdığınız argümanları ilişkilendirmek için format specifier dediğimiz şeyler kullanacak. İşte %c ise bir karakter yazılacak demektir.
+
+576
+01:48:55,363 --> 01:49:04,323
+İşte şeyin içerisinde nerede bir % kullanırsak, c'yi görünce gidecek, onunla ilgili sıradaki şeyi getirecek. Bunları hızlı geçiyorum.
+
+577
+01:49:04,323 --> 01:49:07,923
+Örneğin %d demiş, gidecek bu a'ya bağlanacak.
+
+578
+01:49:08,467 --> 01:49:20,167
+Şöyle olmadı, bu a'ya bağlanacak, şu b'ye bağlanacak. Burada a artı b yüzde d demiş, şu buraya bağlanacak ama buraya bağlanmadan önce toplama işlemi tamamlanacak, ondan sonra yüzde d'ye bağlanacak.
+
+579
+01:49:20,167 --> 01:49:35,467
+Bu yüzde f buraya bağlanacak, buradaki değer float'a dönüştürülmüş bir şekilde yazılacak. Burada da beş tane boşluk açılacak. Desimal formatta böyle bir değer yazılacak. Beş tane boşluk açınca ne demek? Şöyle beş tane yer açıyor, bunu
+
+580
+01:49:35,631 --> 01:49:40,811
+Sığa dayalı olarak 123'ü sağa dayalı olarak yazdırıyoruz. Böyle bir çıkısı var.
+
+581
+01:49:40,811 --> 01:49:50,692
+Scanf'de de ne yapıyoruz? Scanf, veri girmek için kullanılan şey. Ne okuyacağımızı söylüyoruz. Diyoruz ki bir yüzde D oku. Bakın C'de her şeyi kendiniz yapmak zorundasınız demiştim ya.
+
+582
+01:49:50,692 --> 01:49:56,871
+Onun güzel bir örneği. Dışarıdan bir sayı okuyacaksan hangi tür veri okuyacağını, nereye okuyacağını, o da yetmiyor.
+
+583
+01:49:56,871 --> 01:49:59,431
+Belliğin hangi adresine okuyacağını söylüyorsun.
+
+584
+01:49:59,431 --> 01:50:00,000
+Yukarıda...
+
+585
+01:50:00,000 --> 01:50:10,000
+Eğer sen integer sayı bir dediğimiz bir şey tanımladığında, bunun bellekte bir adresi var. Bu adresi elde etmek için de şu ampersand operatörünü kullanmamız lazım.
+
+586
+01:50:10,000 --> 01:50:19,916
+Yeterince program yazdıysanız, geçen dönem zaten ödev falan yaptıysanız, bunlar sizin için çok kolay. Hocam, bunlar niye anlatıyorsun diyebilirsiniz ama ben hazırlık amacıyla bunları anlatıyorum.
+
+587
+01:50:20,051 --> 01:50:27,051
+Dediğim gibi, BBG'yi almayan arkadaşlarım, bunlar böyle ezberlenecek şeyler değil. Kod yaza yaza, hata yapa yapa özellikle görecek.
+
+588
+01:50:27,051 --> 01:50:35,051
+Hele devsi üzerinde hata yaptığınızda, çok rahat bunları şey yapmanız mümkün. Mesela şöyle silelim, işte virgülü sildik.
+
+589
+01:50:35,051 --> 01:50:44,971
+Ne oldu? Bana bakın dedi ki, burada böyle bir şey var, bir tane parantez var. Halbuki parantez hatası değil, virgül hatası. Bu hataları gidere gidere öğreniyorsunuz.
+
+590
+01:50:45,203 --> 01:51:05,203
+Kutsu ve Getsi geçelim, bunlar daha kolay versiyonlar. Şimdi bir de Mixed Type var. Özellikle sayısal analizde arkadaşlar, bir matematiksel işlem yaparken kullandığınız operatörlerin yanındaki şeyleri operant deriz. Şu bir operanttır, bu da bir operanttır. Bu iki operantın birbiriyle tutarlı olması gerekiyor. Eğer tutarlı değilse...
+
+591
+01:51:05,684 --> 01:51:25,064
+Büyük türde, büyük size olan operantı dönüşüm gerçekleşiyor. Buna gizli arka planda yapılan dönüşüm diyoruz. Şimdi büyüklük ne demek? Size açısından en büyük şey double türde değişkenler. Ondan sonra float, ondan sonra integer falan gelir. Dolayısıyla ben bu integer, bu double o zaman sonuç double'a dönüşüyor.
+
+592
+01:51:25,747 --> 01:51:36,427
+Yani burada yapılan şey böyle bir ifade. Veya şurada 2.0 ile 1 bölü 2'yi şartır. Şimdi 1 integer, 2 de integer. 1'i integer'a 2'ye böldüğünüzde buradan 0 değine elde edersiniz.
+
+593
+01:51:36,427 --> 01:51:47,228
+Halbuki bunlardan bir tanesi 2.0 olsaydı 0.5'i bulabilirdiniz. Bunlar gizli dönüşümler. Yeri geldiğince detaylandıracağız. Şimdi eksi 3 bölü 4.
+
+594
+01:51:47,731 --> 01:51:58,231
+Şimdi bu, bir kere şurada önce bölme işlemi yapılacak, eksi 3 bölü 4, bu da integer, bu da integer, burası 0 olur. 0 artı 2.5, 2.5, float türünde bir değer elde edersiniz.
+
+595
+01:52:01,231 --> 01:52:10,931
+Burada işte operatörlerin de operantların ne olduğunu söyleyeyim, 2 artı 3.5 deseydik burada, bunu 2.0 artı 3.5 şeklinde ifade ederiz.
+
+596
+01:52:10,931 --> 01:52:15,231
+Dolayısıyla burada 5.5'i görürüz ama şurada sonucumuz 2.5 olur.
+
+597
+01:52:16,787 --> 01:52:24,227
+Hiyerarşik olarak bu dönüşüme dikkat etmemiz gerekiyor. En tepede long double var. Long double'ı double'a çevirirken bir kayıp yaşarız.
+
+598
+01:52:24,227 --> 01:52:28,947
+Yani aşağıdan yukarıya dönüşümlerde sıkıntı yok ama yukarıdan aşağıya dönüşümlerde veri kaybı olur.
+
+599
+01:52:28,947 --> 01:52:34,787
+Bu kayıp sayesinde, hocam işte biz yanlış sonuç görüyoruz diye sayısal alanınızda çok şeyler göreceksiniz.
+
+600
+01:52:34,787 --> 01:52:40,227
+Veri tipi dönüşümlerini doğru yapmamaktan kaynaklı olan hatalardır bunlar. Bunu söyleyebiliriz.
+
+601
+01:52:40,384 --> 01:52:46,944
+Bir de bunları göstere göstere açık bir dönüşüm yapabiliyoruz. Buna da unboxing diyoruz.
+
+602
+01:52:46,944 --> 01:52:53,824
+Typecasting. Diyoruz ki, J'yi önce float'a çevir. Parantez içerisinde böyle J'nin yerin türünü yazıyorsunuz.
+
+603
+01:52:53,824 --> 01:53:00,144
+Bölme yapılmadan önce J'nin yeni türü oluşturuluyor. Ondan sonra K'ya bölme gerçekleştiriliyor.
+
+604
+01:53:00,144 --> 01:53:04,384
+Dolayısıyla bakın burası ne oldu? 3.0 bölü 2.
+
+605
+01:53:05,108 --> 01:53:21,608
+Şimdi 3.0 nedir? Float. O zaman bunu da float'a dönüştürüyor. Buradan 1.5 sonucunu elde edebiliyorsunuz. Bu biraz güzel ama implicit olan tehlikeli. Yani bir şey, detay unutursanız sonucu farklı görebilirsiniz.
+
+606
+01:53:21,608 --> 01:53:31,307
+Evet, bugünlük anlatacaklarım bu kadardı. Normalde biz pazartesi günleri ders yapmayız arkadaşlar. Üçüncü, dördüncü haftadan sonra uygulamalar başlayınca beni görmeyeceksiniz.
+
+607
+01:53:31,503 --> 01:53:45,703
+Ama belki diğer grup da yapmıyordur bugün de. Ben algoritma nedir, program nedir, program nasıl yazılır, C'de program nasıl yazılır bunların detaylarını bu saatleri değerlendirip anlatmak istedim. Bunun geri kalanı...
+
+608
+01:53:45,971 --> 01:54:12,912
+BBG dersini eğer almamışsanız siz de, yani bu konuda yapacak bir şey yok, ben daha fazla derinlerine giremem. Örnekler yaptıkça aslında derinlerine gireceğiz ama bu işin temelini ben cidden öğrenmek istiyorum diyenler, BBG dersini özellikle almadıysa o derste de lütfen tekrar dinlesinler. Yoksa ilerleyen haftalarda konuştuğumuz bazı şeyleri yakalayamayabilirsiniz. Çünkü dersin de kendisine göre bir içeriği var, onu devam ettirmemiz için.
+
+609
+01:54:13,300 --> 01:54:19,619
+Daha fazla derinlerine giremiyorum. Bu ders, o dersin devamı nitelinde olduğu için. Sizin bir sorunuz var mı?
+
+610
+01:54:23,028 --> 01:54:32,028
+Bora onu iyi söyledim, paylaşayım, şöyle yapalım. Bugünkü şu 15 haftalık şeyi ben çevireyim.
+
+611
+01:54:32,028 --> 01:54:39,028
+Genellikle baktım yazılar çok kötü olmadığı için anlaşılabilir durumda hani böyle bir edit etmeye çalıştım.
+
+612
+01:54:39,028 --> 01:54:46,028
+Şuradaki arayüzden edit ettiğimde biraz kötü sonuçlar geliyordu. Yani çok farklı dönüşümler yapıyor. Sonuçta bu da bir yapay zeka ürünü.
+
+613
+01:54:46,028 --> 01:54:50,735
+Bu haliyle herhalde paylaşsam şey olmaz. Yani çekiniyorum.
+
+614
+01:54:50,735 --> 01:54:59,735
+Hocam, paylaştığınız nokta ben bunu yanlış anladım deyip ileride yanlış şeyi savunan arkadaşlar olur mu gibi düşüneceğim ama en azından kayıtlarda var.
+
+615
+01:54:59,735 --> 01:55:09,735
+Yani kayıtlara girdiği için bunu paylaşmakta benim açımdan sıkıntı yok. Gün içerisinde vakit bulabilirsem yetiştiririm olmadı. Çarşamba gününe tamamen paylaşmış oluruz.
+
+616
+01:55:09,735 --> 01:55:14,735
+Size de paylaştığım klasörde onları da bulabilirsiniz. Başka sorusu olan...
+
+617
+01:55:18,739 --> 01:55:30,340
+Gelecek hafta, pazartesi günü ders yapar mıyız, yapmaz mıyız? Onu çarşamba günü dersin ilerleme durumuna göre sizlere belirtirim arkadaşlar. Eğer çarşamba her şeyi bitirirsek, pazartesi ders yapmayız.
+
+618
+01:55:35,731 --> 01:55:44,152
+Bu Google link [öğrenci] senin söylediğin Fatih Hoca'nın sayfası ise maddislerle alakalı kodlar olması normal çünkü bu derste de maddisleri kullanacağız.
+
+619
+01:55:47,112 --> 01:55:49,231
+BBG'ye ait değil bu derse ait.
+
+620
+01:55:55,923 --> 01:55:59,923
+Evet, hepinize iyi akşamlar. Katıldığınız için teşekkür ederim arkadaşlar.
+
+621
+01:55:59,923 --> 01:56:00,923
+Çarşamba görüşmek üzere.

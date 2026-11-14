@@ -1,0 +1,4599 @@
+1
+00:01:26,355 --> 00:01:27,275
+Arkadaşlar, merhabalar.
+
+2
+00:01:34,579 --> 00:01:35,480
+Merhaba hocam.
+
+3
+00:01:37,239 --> 00:01:50,879
+Şimdi bu haftaki dersimizi şu şekilde işleyeceğiz. İki saat dersimiz olacak. Dersin son saatinde bize sınav sorularını asistan arkadaşımız çözecek. Dolayısıyla belki ortak grupta çözmek daha pratik olabilir.
+
+4
+00:01:51,819 --> 00:02:00,060
+Classroom üzerinde bir tane link koyarız. Herkes o linke girer. Büyük ihtimal gruplardan birisinin devam eden session olur bu.
+
+5
+00:02:01,427 --> 00:02:14,907
+Soru çözümünü, vize soru çözümlerini yapıyor olacak. Sonrasında da zaten laboratuvarla ilgili sözlü sınav ilanı ve laboratuvar süreci olacak. Onları da takip edersiniz. Dolayısıyla bugünkü akışımız kabaca bu şekilde.
+
+6
+00:02:15,867 --> 00:02:26,467
+Şimdi vize sınavlarıyla ilgili tabii çoktan seçme tarafı değerlendirmek hızlı oluyor. Fakat aynı şekilde dönüp de sözümlerle birlikte değerlendirmek var. Süre biraz uzuyor.
+
+7
+00:02:26,975 --> 00:02:39,256
+Birkaç kontrol daha yapıp yakın bir zaman içerisinde hem kısa sınav hem de vize sonuçlarını ilan ediyor olacağız.
+
+8
+00:02:39,355 --> 00:02:41,675
+Onu tekrar söylemiş olayım sizler sormadan.
+
+9
+00:02:42,776 --> 00:02:46,316
+Şimdi bu hafta ne yapacağız? İlk başta ondan bir bahsedelim.
+
+10
+00:02:46,316 --> 00:02:51,316
+Bu hafta ilk olarak neticede şu ana kadar getirdiğimiz konu itibariyle.
+
+11
+00:02:51,348 --> 00:03:07,368
+Op-amp konusunu gördük. Op-amp konusunu dirençlerle birlikte ele aldığınız olarak ideal Op-amp'ın evren çevirici, evren kuvvetlendirici, evinmeyen kuvvetlendirici, buffer gibi çalışma mantıklarını veya toplayıcı gibi özelliklerini görmüş olduk.
+
+12
+00:03:08,188 --> 00:03:14,348
+Onun peşine de RL, RLC devrelerini, birinci derece RL, RLC devrelerini gördük. Dolayısıyla şu aşamada
+
+13
+00:03:14,783 --> 00:03:26,063
+O-amp devreleriyle ilgili eksik kalmış olan bir kısım var. İntegral travel bu devre. Ona bir bakacağız. Daha sonrasında da ikinci dereceden devreler, yani RLC devrelerine bir devre olacak.
+
+14
+00:03:27,063 --> 00:03:28,644
+Amacımız şu temelde.
+
+15
+00:03:32,147 --> 00:03:38,147
+RLC devrelere ilişkin zaman domeninde çözüm yaklaşımlarını elde etmek, bunları görmek.
+
+16
+00:03:38,348 --> 00:03:42,548
+Tabi bu yaklaşım zaman domeninde ikinci dereceden diferansiyel bir denklem oluşturuyor.
+
+17
+00:03:43,468 --> 00:03:50,187
+Bizim müfredatımızda diferansiyel denklemler yok. Dolayısıyla ona böyle bir yumuşak geçişle ele almaya çalışacağız.
+
+18
+00:03:50,968 --> 00:03:56,348
+Ve bu yine daha sonraki haftalarda göreceğimiz fazör gösterimine bir temel oluşturacak.
+
+19
+00:03:56,348 --> 00:03:58,247
+Fazör gösterimi dediğimiz yaklaşım şu.
+
+20
+00:03:59,123 --> 00:04:14,043
+Şimdi RLC devrelerinde bu hafta itibariyle DC kaynakların açılıp kapandığı, sisteme verildiği veya sistemden kesildiği durumları analiz ediyor olacak. Yani geçiş durumları DC kaynaklarının açıldığı, kapandığı durumlara ilişkili olacak.
+
+21
+00:04:14,740 --> 00:04:33,519
+Fakat biz her zaman için bu geçiş anıyla ilgilenecek değiliz. Bizim için asıl önemli olan sisteme enerji verildikten sonra, güç kaynağa bağlandıktan sonra bunun geçici halleri bitip de artık kaynağın baskın hale geldiği durumlardaki devre davranışını analiz etmek isteyeceğiz.
+
+22
+00:04:34,519 --> 00:04:39,399
+Dolayısıyla önümüzdeki hafta göreceğimiz fazör konusu aslında özetle söylemek gerekirse.
+
+23
+00:04:40,019 --> 00:04:50,139
+Devremiz yine RLC devreleri olabilir. Kaynağımız ise sinizoidal devreler olacak. Yani bir kosünüs, sinüs şeklinde, sinüs veya kosünüs şeklinde bir kaynağımız olacak.
+
+24
+00:04:50,759 --> 00:05:02,699
+Ve geçici hallerin, yani kaynak sisteme bağlandıktan sonraki o geçici zamanların, beş ta olduk zamanların geçtiğini varsaydıktan sonra devrenin sürekli sinizoidal hal dediğimiz
+
+25
+00:05:04,468 --> 00:05:08,108
+Genel davranışını analiz etmeye çalıştığım bir senaryo olacak.
+
+26
+00:05:08,248 --> 00:05:11,468
+Ve orada göreceğiz ki eğer kaynağımız bir zöyler işaretse...
+
+27
+00:05:12,019 --> 00:05:30,219
+Biz fazör dediğimiz bir başka uzaya geçip, normalde diferansiyel denklemler olarak tanımlı olan eleman tanım bağıntılarının lineer denklemler haline, yani tıpkı bu fazör uzayına geçtiğimizde direnç elemanı lineer bir eleman gibi davranacak.
+
+28
+00:05:30,339 --> 00:05:37,379
+Kapasite elemanı da lineer bir eleman gibi davranacak. Endüktans elemanı da yine bir lineer eleman gibi davranıyor olacak fazör uzayına geçtiğimizde.
+
+29
+00:05:37,379 --> 00:05:40,019
+Dolayısıyla sanki elimizde bir direnç devresi...
+
+30
+00:05:40,019 --> 00:06:02,300
+Bu çözümleme yapacağız. Fakat dikkat edeceğimiz nokta artık real sayılar uzayında değil de karmaşık sayı uzayında olacağımız gerçeği. Dolayısıyla bu karmaşık sayı uzayında yaptığımız çözümlemeleri, lineer çözümlemeleri getirip tekrar zaman domenindeki karşılıklarını bulup devrenin genel davranışını, sürekli siz böyle halkışınız, doydel haldeki davranışını bulmuş olacağız, görmüş olacağız.
+
+31
+00:06:03,668 --> 00:06:09,968
+Dolayısıyla bu haftadan getirdiğiniz bilgiyi önümüzdeki haftaya taşımak açısından önemli bir konudan bahsetmiş olduk.
+
+32
+00:06:10,487 --> 00:06:14,088
+Yani bu hafta RLCDevre'nin zamanında mevcut çözüyor olacağız.
+
+33
+00:06:14,188 --> 00:06:25,348
+Önümüzdeki haftada yeni bir yaklaşım, fazör yaklaşımı şu ana kadar görmemiş olduğunuz bir yaklaşım ile diferansiyel denklemli sistemlerin çözümüne ilişkin bir başka yöntemde görmüş olacağız.
+
+34
+00:06:25,779 --> 00:06:33,379
+Şimdi, öyleyse bu haftanın ilk konusu olan op-amp devrelerinin süreç alıcı ve integral alıcı versiyonlarına bakıyor olacak.
+
+35
+00:06:33,379 --> 00:06:39,300
+Buraya kadar olanla ilgili genel açıklamalarla ilgili sormak istediğiniz bir şey varsa alalım, yoksa konuya geçelim arkadaşlar.
+
+36
+00:06:39,300 --> 00:06:43,379
+Van bir önden sormak istediğiniz bir şey, genelde olabilir.
+
+37
+00:06:49,108 --> 00:06:52,067
+Yoksa, ekran paylaşarak konuya başlıyorum.
+
+38
+00:07:12,276 --> 00:07:17,056
+Birinci devre, op-amp devreleri dediğimiz yaklaşımlar aslında arkadaşlar şuna karşılık geliyor.
+
+39
+00:07:17,956 --> 00:07:18,916
+Nedir onun adı?
+
+40
+00:07:24,755 --> 00:07:32,755
+Bu şuna karşılık geliyor. İçerisinde bir adet enerji depılayan eleman bulunan devrelere karşılık geliyor.
+
+41
+00:07:32,895 --> 00:07:38,095
+Tabi bu noktada hemen şeyi hatırlayalım. İdeal bir op-amp'ın tanım bağımsızı neydi onu hatırlayalım.
+
+42
+00:07:38,795 --> 00:07:49,995
+İdeal bir op-amp olduğu vakit bu op-amp'ın bir tane eksi bir tane artı girişi vardı. Bu eleman da kendiliğinden enerji üretmiyordu. Bunların besleme gerilimleri vardı.
+
+43
+00:07:50,612 --> 00:08:02,192
+V-V-A, V-A diyeceğimiz besleme gerilimleri vardı. İhtiyaç duyduğu enerjiyi bu besleme uçlarından alıyordu. Bir de V-A, V-A vardı. Normalde çizerken bu beslemeleri göstermiyorduk besleme gerilimlerini.
+
+44
+00:08:02,608 --> 00:08:11,728
+Çalışma mantığı neydi bu elemanın? Şuradaki ve şuradaki gerilimlere VN ve VP diyecek olursak, ideal durumda VN, VP'ye eşit oluyordu.
+
+45
+00:08:12,268 --> 00:08:19,228
+Ve yine şuradan IN ve IP diyeceğimiz iki tane akım varsa, bunlar da birbirine eşit ve sıfır oluyordu.
+
+46
+00:08:20,448 --> 00:08:27,208
+Bu özelliklerini kullanarak, direnç devrelerini, op-amp, direnç devrelerini çözümlemiştik.
+
+47
+00:08:29,680 --> 00:08:31,620
+Evren kuvvetlendirici.
+
+48
+00:08:35,316 --> 00:08:42,476
+Bir kısmı evirmeyen kuvvetlendir. Yani burada isim önemli değil. Karşınıza bu tür bir devre çıktığında bunu çözebilmek önemli.
+
+49
+00:08:48,659 --> 00:08:50,759
+Bununla birlikte toplama devresi yapabiliyorduk.
+
+50
+00:08:53,299 --> 00:08:56,539
+Yine bir tampon devresi yapabiliyorduk.
+
+51
+00:08:58,319 --> 00:08:59,779
+Veya buffer olarak geçiyordu bu.
+
+52
+00:09:01,319 --> 00:09:02,759
+Bunların nasıl çalıştığını hatırlayalım.
+
+53
+00:09:02,899 --> 00:09:07,759
+Evren kuvvetlendirici, bağlamış olduğunuz dirençlere göre eksi...
+
+54
+00:09:08,083 --> 00:09:14,183
+Bir R direnci bölü, R1 direnci bölü, R2 direnci şeklinde bir kuvvetlendirmek miktarına sahipti.
+
+55
+00:09:14,783 --> 00:09:25,983
+İkinci elemanda, bu kuvvetlendirme miktarı, yani girdisinin çıktısına baktığımız zaman, evren kuvvetlendirme miktarı, girdimiz şöyle birisinin şöyle işaretse, çıktığımız nasıl bir şey oluyordu?
+
+56
+00:09:26,623 --> 00:09:32,563
+Çıktığımız bunun işte ters fazında genliği de değişebilir. Mesela farklı bir genlikte bir değer olabilir.
+
+57
+00:09:33,183 --> 00:09:36,083
+Faz farkı aynı, fakat sadece genlikte bir.
+
+58
+00:09:36,083 --> 00:10:00,243
+işaret farklı ve genelde farklı. Mesela bu giriş işaretimizde inputumuz bu. Alt kutumuz olabilir. Dolayısıyla giriş işaretini kuvvetlendiriyor ve negatifle çarpıyor diyebiliriz. Evirmeyen kuvvetlendirmeye baktığımızda da kabarıyor onu. Giriş işaretimiz şöyle bir işimizde öden işaretle. Çıkış işaretimiz yine aynı frekans ve fazla.
+
+59
+00:10:01,652 --> 00:10:10,211
+Şöyle bir işaret olarak karşımıza çıkıyordu. Yani işaretimizin genliği artıyor. Genlik yönü de aynı. Pozisyon ve pozisyon alıyordu.
+
+60
+00:10:11,552 --> 00:10:16,112
+Toplama devresi birden farklı kaynak değerini toplayıp bunu çıktığıya aktarabiliyordu.
+
+61
+00:10:16,112 --> 00:10:18,112
+Buffer dediğimiz devreler de temelde...
+
+62
+00:10:18,816 --> 00:10:36,336
+Örneğin, bu daha çok pratikle ilgili bir durumdu, buffer devreleri. Örneğin, bir lojik çıkışın bir fan-out değeri var. Bu fan-out dediğimiz değer, o çıkış kaç tane lojik girişi sürebilir ve bu türde lojik değerin kaybı olmaz.
+
+63
+00:10:36,336 --> 00:10:46,336
+Bu fan-out değerinden daha fazla sayıda girişi sürmeye çalışırsak, akım değerlerinden dolayı lojik 1 veya lojik 0 olarak avlanacak seviyelerin,
+
+64
+00:10:46,816 --> 00:11:14,816
+Utrechhoff'ların dışında bir takım değerler üretme ihtimali var. Dolayısıyla yanlış değerleri yüzde olarak aktarmış oluruz. Buffer kullanmanın amacı şu, aynı gerilimi tekrarlıyor. Biraz birkaç girişe bağladık çıkışımızı, gerilim değerleri hafif oynadı ama bufferdan geçirdiğimiz zaman o gerilim değerleri tekrar orjinal değerlerine yükseltildik, işte fan out miktarı yükseltilebiliriz oluyor. Yani bu gerilim değerini tekrarlamak için kullandığımız bir yaklaşım diyebiliriz. Bunları görmüştüm.
+
+65
+00:11:14,816 --> 00:11:38,296
+Şimdi burada göreceğimiz yaklaşım ise arkadaşlar, burada göreceğimiz yaklaşım ise temelde, kapasite ve endüptans elemanlarının bağlı olarak bulunduğu devrelerle birlikte arkadaşlar bir, nedir onun adı, bir integral alıcı devre ve sürev alıcı devre oluşturma.
+
+66
+00:11:38,899 --> 00:11:51,279
+Çarpma devrelerini de görmüştük. Çarpma devreleri aslında R1-R2 direnciyle birlikte kuvvetlendirdiği için yani o doğal olarak misafirle çarpmaya karşı geliyor. Onları bahsetmemiş olduk ama burada söylemiş olalım.
+
+67
+00:11:53,587 --> 00:12:08,028
+Temelde integral ve diferansiyel alan devreler ne işe yarıyor diyecek olursak, günümüzde kullanmış olduğumuz sayıta sistemler aslında her zaman için, yani tarihi olarak her zaman bu dijital sayıta sistemler olarak bulunmuyordu.
+
+68
+00:12:08,148 --> 00:12:17,668
+Bunun öncesinde analog bir bilgisayar mantığı vardı. Bu analog bilgisayar mantığı da temelde aslında örneğin bir kontrol işlemini yürütmek için oldukça faydalıydı ve yeterliydi.
+
+69
+00:12:21,139 --> 00:12:28,559
+Ne olabilir? Bir hız kontrolü olabilir veya bir uzay mekiğinin ay görünmesine oturtulması olabilir gibi bir takım işlemler.
+
+70
+00:12:29,107 --> 00:12:36,047
+Bu işlemleri yürütebilmek için bir takım integral, diferansiyel hesaplamaları gerçekleştirmek lazım.
+
+71
+00:12:36,187 --> 00:12:43,167
+İşte bu matematiksel işlemlerin elektriksel elemanlarla yapıldığı süreç analog bilgisayarlar olarak karşımıza çıkıyor.
+
+72
+00:12:43,767 --> 00:12:50,987
+Dolayısıyla o pamplı, diferansiyel ve integral alan devreler analog bilgisayarlarda oldukça yaygın bir şekilde kullanılmaktaydı.
+
+73
+00:12:51,604 --> 00:13:00,524
+Biz burada, Ohm'la kapasite ile ilgili olarak hangi özellikleri hatırlamalıyız? Ohm'la ilgili olarak hatırlamamız gereken özellikler şunlar arkadaşlar.
+
+74
+00:13:04,692 --> 00:13:13,172
+Bu uçlarından akan akımı gerilimindeki değişimle orantılıydı ve aynı zamanda bu kapasitans miktarı ile orantılıydı.
+
+75
+00:13:13,272 --> 00:13:19,412
+Dolayısıyla bunu farklı bir şekilde yazacak olursak da Q eşittir C çarpı V şeklinde ifade edelim.
+
+76
+00:13:19,532 --> 00:13:21,792
+Hatta bunlar zamana bağlı olduğu için şöyle yazalım.
+
+77
+00:13:22,432 --> 00:13:25,912
+C çarpı V T diyelim. Bu da V, C, T oldu.
+
+78
+00:13:26,751 --> 00:13:29,111
+Bu şekilde bir temel denkleminiz vardı.
+
+79
+00:13:30,355 --> 00:13:42,475
+Uygun şekillerde kullanarak kapasite elemanı ilişkin tanımı diferansiyel veya integral formda yazabiliyorduk.
+
+80
+00:13:45,055 --> 00:13:48,456
+Bunu yazabilmek için şu bilgiye de ihtiyacımız var.
+
+81
+00:13:52,467 --> 00:14:04,108
+Zamana bağlı olarak integraline karşılık geliyordu. Bu bilgiyi kullanıp, her iki tarafın türevini aldığımızda, zamana bağlı olarak VC, VC değişiyor. Dolayısıyla onun türevi, C sabitli akım değerini yazabiliyorum.
+
+82
+00:14:04,108 --> 00:14:16,847
+Veya tersten düşünecek olursak da, akımın integrali bize gerilimle ilişkili bir sonucu verecek diye bunu kullanabiliyoruz. Dolayısıyla kapasiteyle ilgili hatırlamamız gereken noktalar bunlar diyelim.
+
+83
+00:14:21,620 --> 00:14:22,840
+Bunlar burada kaldı.
+
+84
+00:14:24,759 --> 00:14:32,800
+Şimdi bu özellikleri kullanarak ve op-amp'ın az önce bahsetmiş olduğumuz tanım bağımsızlığını kullanarak burada gördüğümüz devreyi ele almaya çalışalım.
+
+85
+00:14:33,560 --> 00:14:36,259
+Şimdi op-amp'ın tanım bağımsızlığı gereği ne vardı arkadaşlar?
+
+86
+00:14:37,000 --> 00:14:39,280
+VP, VN'ye eşit olacaktı.
+
+87
+00:14:43,923 --> 00:14:54,844
+VN, VP, burası bizim VN gerilimimiz, bu da VP gerilimimiz. Bunlar birbirine eşde oluyor. Buradaki gerilim değerimiz doğrudan Grande bağlı olduğu için 0 V. Dolayısıyla burada da 0 V değerini görmemiz gerekiyor.
+
+88
+00:14:55,644 --> 00:15:08,204
+Dolayısıyla şuradaki gerilim değerimiz Vs etiketli bir gerilim olduğu için biz bu kapasite elemanının uçları arasındaki gerilim düşümünü, yani Vc gerilimini ne olarak ifade edebiliriz?
+
+89
+00:15:08,576 --> 00:15:17,536
+VC gerilimimiz, VS gerilimine eşit. Yani kaynak gerilimine eşit. Bununla birlikte bu koldan akan akımı nasıl tanımlayabiliriz?
+
+90
+00:15:17,656 --> 00:15:22,076
+Koldan akan akımı şöyle tanımlayabiliriz. IC akımını. Neydi IC akımımız?
+
+91
+00:15:22,515 --> 00:15:36,655
+C çarpı, bunu daha pratik olması için, VC'nin türevi şeklinde böyle ifade edelim. Yani bu da aynı zamanda C çarpı, VS'nin türevi şeklinde yazabiliriz. Zamana bağlı türevi olarak yazabiliriz.
+
+92
+00:15:37,076 --> 00:15:50,655
+Yine o pampın bir başka tanım bağımsız. Şuradan içeri akan akım 0 amper olmalı. Benzer şekilde buradan içeri akan akımda 0 amper olması gerekiyor. Dolayısıyla bu RC akımımız, şurada gördüğünüz, UR akımına eşdeğer.
+
+93
+00:15:51,596 --> 00:16:00,316
+Bu koldan gelen akım ikiye ayrılıyor. Bir tarafa sırf 1 amper gidiyor. Dolayısıyla bu 3 amper akım değeri yukarı gidecek. Dolayısıyla UR olarak bunu ifade edebiliriz.
+
+94
+00:16:00,672 --> 00:16:27,331
+ÜR neye eşit? 0-V0 bölü R'ye eşit. 0-V0 bölü R'ye eşit. Yani bu VR dediğimiz gerilim buna eşit. Şimdi bunları birbiriyle ilişkilendirecek olursak, C çarpı Vs'nin sürevi eşittir. Eksi V0 bölü R'ye eşit. Bizim bulmak istediğimiz ne burada? Temel olarak bu tanım bağımsızda bulmak istediğimiz şey.
+
+95
+00:16:28,500 --> 00:16:32,180
+Bağlantım kesiliyor diyor. Hemen o şeye geçeyim.
+
+96
+00:16:33,840 --> 00:16:37,740
+Hotspot'a geçelim. Okulda mükemmel bir sıkıntı var bununla ilgili.
+
+97
+00:16:40,600 --> 00:16:42,879
+Hemen bir saniye şunu ayarlayayım arkadaşlar.
+
+98
+00:16:52,083 --> 00:16:59,264
+Duyabiliyor musunuz beni? Dersle ilgili olarak sıkıntı var mı? Bağlantı değiştirdim.
+
+99
+00:17:00,403 --> 00:17:01,183
+Duyuluyor hocam.
+
+100
+00:17:01,703 --> 00:17:10,983
+Tamamdır, süper. Şimdi, nerede kalmıştık? Bizim yapmak istediğimiz şey ne? Yani bu devreyi çözerken bizim bulmak istediğimiz nihai şey şu aslında.
+
+101
+00:17:11,519 --> 00:17:20,000
+Biz V0'ı giriş gerilimi cinsinden yazmak istiyoruz. Yani şöyle bir formül bulmak istiyoruz. Çok yaklaşmıştı. Bakın şunu elde etmişiz.
+
+102
+00:17:20,000 --> 00:17:30,000
+V0'ı yalnız bırakacağız. Bunu yalnız bıraktığımızı elde edebileceğimiz sonuç şu oluyor. V0 eşittir. Eksi RC çarpı.
+
+103
+00:17:30,548 --> 00:17:49,288
+D, V, S bölü, D, T. Yani, V, S'nin türevi bu şekilde yazabilir. Ne elde etmiş olduk? Bakın arkadaşlar, V0'da gördüğümüz gerilim, eğer kapasite ve feedback direnci olarak da bir R direnci bağlamışsak ve kapasiteyi negatif girişine bağlamışsak,
+
+104
+00:17:58,708 --> 00:18:08,548
+negatifini de almış. Yani bir sürü iş yapmış aslında ama temelde baktığımızda VSE'nin türevini alıyor. Çok önemli bir nokta.
+
+105
+00:18:09,128 --> 00:18:14,827
+Şimdi bu durumda şöyle bir dalga şekli çizsek ne olur diye konuşalım. O şekil kaybolmasın oradan şöyle dursun.
+
+106
+00:18:15,708 --> 00:18:19,088
+Mesela bizim giriş gerilimimiz şöyle bir şey olsaydı ne olacaktı bakalım.
+
+107
+00:18:21,428 --> 00:18:25,368
+Şöyle bir üçgen dalga olsaydı bu bizim.
+
+108
+00:18:26,067 --> 00:18:34,208
+Vs gerilimimiz böyle bir üçgen dalga olmuş olsaydı, bu bizim mavi ile işaretlediğimiz Vs gerilim diyelim.
+
+109
+00:18:34,607 --> 00:18:41,127
+İşte farklı bir renk alayım, şuradan kırmızı alayım. Bu gidiş gerilimine karşılık çıkış gerilimimiz nasıl bir şey olur? Ne dersin?
+
+110
+00:18:45,491 --> 00:18:51,371
+Türev alacak ya, şimdi bir kere Türev'lerin, Vs'nin Türev'lerin değiştiği noktaları şöyle işaretleyelim.
+
+111
+00:18:53,192 --> 00:18:54,092
+Burada bir değişiyor.
+
+112
+00:18:55,791 --> 00:18:57,692
+Türev değeri yine, ah yanlış yaptık.
+
+113
+00:18:58,931 --> 00:18:59,891
+Denk getirememişiz.
+
+114
+00:19:02,031 --> 00:19:03,511
+Burada değişiyor.
+
+115
+00:19:05,152 --> 00:19:06,371
+Ne istemiyorum bunu.
+
+116
+00:19:07,652 --> 00:19:10,172
+Şurada değişiyor, şurada değişiyor.
+
+117
+00:19:10,836 --> 00:19:26,715
+Şimdi bakın, burada gerilim şey, eğim pozitif, yani pozitif bir eğim var. Bir RC kat sayısıyla da çarşacak bir de negatif değerle çarşacak. Tam kaç olduğunu bilmiyoruz ama kabaca şekil olarak şöyle bir şey çıkacaktır arkadaşlar. Negatif eğim, negatif bir sabit değer çıkacak.
+
+118
+00:19:27,892 --> 00:19:39,672
+Vs geriliminin düştüğü yerde eğim negatif. Eksiyle çarpacağız ve RC ile çarpacağız. Kabaca aynı genlikte. Şuradaki mesafe neyse aynı mesafede. Bu sefer şöyle bir işaret göreceğiz çıkmış olarak.
+
+119
+00:19:40,711 --> 00:19:45,932
+Kırmızıyla gösterdiğimiz şeyde Vout olacak. Ve bu tekrarlayacak. Bu şekilde.
+
+120
+00:19:49,715 --> 00:19:59,675
+Bu şekilde. Elde ettiğimiz sonuç böyle bir şey olacak. Yani üçgen dalga gireceğiz ve kare dalga çiftçisi elde edeceğiz gibi. Bu başka ne olabilir? Nerede bunun denemesini yapabiliriz?
+
+121
+00:20:01,775 --> 00:20:11,955
+Bir kare dalga gireriz. Sürevi input şeklinde bir şey olabilir. Bunun bir sıra falan önceki açıkçası. Veya ikinci dereceden bir denklem gireriz.
+
+122
+00:20:12,855 --> 00:20:16,035
+İkinci dereceden bir denklem gireriz. Şöyle mesela.
+
+123
+00:20:19,604 --> 00:20:29,724
+İkinci dereceden bir polinomyal denklem olsun. Bunun eğimleri de işte burada giderek artan bir şey olacak. Burada sıfıra gelecek gibi.
+
+124
+00:20:30,084 --> 00:20:38,403
+Dolayısıyla bundan üçgen dalga çıkacak. Üçgen dalganın trevinden de kare dalga çıkacak gibi düşünebilirsiniz. Bu x kareli bir şey gibi veya t kareli diyelim.
+
+125
+00:20:39,084 --> 00:20:46,884
+A çarşı t kareli bir denklem olsa, onun grafiği olsa, trev alıcı devreye soktuğumuzda bunun çıktısı da bir üçgen dalga olmuş olacak mesela.
+
+126
+00:20:48,051 --> 00:20:54,172
+Onu da çizmeye çalışsak nasıl bir şey olur bakalım.
+
+127
+00:20:56,912 --> 00:21:02,891
+Şimdi şurada eğimimiz sıfır. Eğimimiz sıfır olduğu için türevin sıfır olması lazım. Yani şurada bir yere değecek bu.
+
+128
+00:21:03,751 --> 00:21:09,912
+Bir farklı bir renkle yapalım, bir yeşille yapalım. Eğim sıfır. Şurada eğim en yüksek. Dolayısıyla büyük ihtimal şöyle bir şey geldi.
+
+129
+00:21:11,380 --> 00:21:34,260
+Şu noktada, bu tepe noktasında. Yine şuraya baktığımız zaman sıfırdan başlayacak, verili bir değere kadar yükselecek. Şurada yine sıfır eğimimiz var. Dolayısıyla şöyle bir değer büyük ihtimal. Bir de negatifi vardı. Onu bir kontrol edelim şimdi. Ne olacak? Buradaki eğimimiz yüksekten başlıyor, giderek azalıyor. Bir de eksiyle çarpacağız. Demek ki aslında şöyle olacakmış.
+
+130
+00:21:38,355 --> 00:21:42,716
+Eksiyle çarpacağımız için burada şöyle bir eğim olacak.
+
+131
+00:21:43,355 --> 00:21:44,336
+Pardon, o da değil.
+
+132
+00:21:44,536 --> 00:21:45,875
+Sürde sıçrı olması lazım.
+
+133
+00:21:46,576 --> 00:21:52,875
+Şöyle, şöyle, şöyle, şöyle bir V0 çift işaretimiz olacak.
+
+134
+00:21:53,016 --> 00:21:57,276
+Yoksa yeşille çizdiğim V0, kırmızıyla çizdiğimiz Vs olacak.
+
+135
+00:21:57,416 --> 00:22:02,615
+Vs dediğimiz yerinde zamana karesel olarak bağlı bir fonksiyon olmuş olacak arkadaşlar.
+
+136
+00:22:03,124 --> 00:22:15,963
+Dolayısıyla bu bizim türev alıcı devremiz buna karşılık gelmiş oluyor. Bunun çalışma mantığıyla ilgili, çözümle ilgili bir sıkıntısı olan var mı? Bu anlaşıldı mı? Çok önemli bir nokta bu. Anlaşıldı mı burası? Sorusu olan var mı?
+
+137
+00:22:24,019 --> 00:22:31,019
+tepki yok, süper anlaşıldı o zaman. Öyleyse kısa sınavlarda bununla görüşürüz.
+
+138
+00:22:31,019 --> 00:22:35,019
+Bir sonraki bu çözümlemeyi yapmışlar. Geçer devre.
+
+139
+00:22:35,019 --> 00:22:44,779
+Şimdi burada ise elde ettiğimiz sonucu yok. Neydi sonuç elde ettiğimiz sonuç? Hemen yazalım şuraya.
+
+140
+00:22:45,140 --> 00:22:53,940
+Elbettiğimiz sonuç, Vout, zamana bağlı olarak, eksi RC çarpı, DVS bölü, DT olarak verdiğimiz bir fonksiyonmuş.
+
+141
+00:22:54,400 --> 00:23:01,559
+Şimdi buradaki işaretimize bakalım. Bu işaretimiz bir step fonksiyonu, birim basama fonksiyonu.
+
+142
+00:23:01,620 --> 00:23:05,480
+Şurada UT, 5 birim ötelenmiş, bir de 3'den çarpılmış.
+
+143
+00:23:05,480 --> 00:23:12,140
+Yani giriş işaretimiz çizmek olursak, şöyle alalım, bizim VS işaretimiz nasıl çalışıyormuş bu?
+
+144
+00:23:12,592 --> 00:23:31,812
+5 saniyeye kadar sıfırda geziyor bu vatanlar. 5. saniyeye geldiğimizde UT fonksiyonu 1'e çıkacak ama 3 da çarpıldığı için 3 voltluk bir gerilim seviyesinden şöyle koyalım. 5. saniyeden itibaren 3 volt sabitleyen veriyor olacak.
+
+145
+00:23:40,531 --> 00:23:55,852
+Kapasite elemanı olduğu için başlangıçta bunun bir initial değeri de olabilir. O initial değeri 0 olarak verilmiş dedi. Hani onu da nereden hatırlayacağız? Baştan bir yük depolamış, daha sonra sisteme varlanmış olabilirdi. Fakat şu an 0 olarak verilmiş.
+
+146
+00:23:59,827 --> 00:24:02,268
+0'dan 3 volta kadar 5 saniye de değişiyor.
+
+147
+00:24:02,788 --> 00:24:06,407
+Peki, buradaki çıktı işareti nasıl hesaplayacağız ona bakalım.
+
+148
+00:24:12,788 --> 00:24:24,168
+Çıkış işaretimiz bir geçici zaman analizine bir de sürekli hal analizine ihtiyaç duyuyor.
+
+149
+00:24:25,327 --> 00:24:28,688
+Sürekli hal analizi ne zaman geçerli?
+
+150
+00:24:29,567 --> 00:24:34,228
+Sürekli hal analizi temelde aslında bizim kapasite değerimizin.
+
+151
+00:24:34,228 --> 00:24:36,228
+Burada vermiş olduğumuz...
+
+152
+00:24:37,172 --> 00:24:48,652
+Neydi bunun adı? Bir gerilim kaynağının gerilim değerine çok yaklaştığı bir zaman. Yani 5 çarpı RC tau zamanıydı bunu yapabilirsiniz.
+
+153
+00:24:48,652 --> 00:24:54,752
+Tau zamanı kadar bekledikten sonra çıktığı hal bunun sürekli haklı hali olmuş oluyordu.
+
+154
+00:24:59,763 --> 00:25:12,663
+5 saniye önceki halinde de 0 değerine sahip. 5 saniyeden 5 RC'ye kadar olan süreçte ise bu geçici hal olarak karşımıza çıkıyor.
+
+155
+00:25:13,583 --> 00:25:22,364
+Bu durumda aslında bizim VC'deki gerilimimiz 0 ile başladığı için önce 0'da geziyor.
+
+156
+00:25:22,799 --> 00:25:32,639
+Daha sonrasında yükselerek, bir eksponantiyel yükselim yaparak, VC'deki gerilim kabaca şöyle bir değere asimpatik olarak yaklaşmasını bekliyoruz.
+
+157
+00:25:32,700 --> 00:25:38,579
+Eksponantiyel olarak, artan bir fonksiyon olarak. Şimdi buna ilişkin çözümlemeye bir bakmaya çalışalım.
+
+158
+00:25:40,559 --> 00:25:49,919
+Şimdi bu belirlemiş olduğumuz T0 değeri, yani 5 saniyeden daha küçük değerlerde bizim VC gerilimli 0 eşit. Çünkü kaynak kapalı.
+
+159
+00:25:50,612 --> 00:26:01,912
+5. saniyeden sonra ise bizim kapasite elemandaki gerilimimiz nasıl değişecek? Bir başlangıç değerinin üzerine ekleme yapacak.
+
+160
+00:26:02,420 --> 00:26:10,620
+Nihai olarak neye ulaşacak? Nihai olarak ulaşacağı değer aslında bizim gerilim kaynağımızın yerini, 3 volta kadar ulaşacak.
+
+161
+00:26:11,160 --> 00:26:18,660
+Başlangıç değerinden 3 volta kadar belirlediğimiz TAL süresiyle, TAL da neye eşit? RC değerine eşit hesaplanmış olacak.
+
+162
+00:26:18,660 --> 00:26:26,579
+Dolayısıyla bizim 5 saniyeden sonraki değişimimiz maksimum 3 volta kadar çıkacaktır.
+
+163
+00:26:26,660 --> 00:26:30,400
+3 çarpı E üzeri T-5, 5. saniye.
+
+164
+00:26:30,420 --> 00:26:39,360
+Bu değişim başladığı için E ekli 5 olarak uzanmak zorundayız. 0,8 de nereden geliyor? Bu da V çarpı C değerimiz.
+
+165
+00:26:39,763 --> 00:26:52,243
+40 çarpı 10 üzeri eksi 6 para çarpı 20 çarpı 10 üzeri 3 Ohm dediğimiz zaman bu ikisinin çarpımı bize tau yani saniye cinsinden bir birim karşılığı verecek.
+
+166
+00:26:52,723 --> 00:27:02,023
+O da neye karşılık geliyor? 3 burada 10 üzeri eksi 3 kaldı. Eksi 2, eksi 1. 0.8 saniyelik bir durum kalmış oluyor.
+
+167
+00:27:07,763 --> 00:27:21,183
+Ve pratikte biz bu kapasitenin artık şarj olduğunu kabul ediyoruz. Beşinci saniyeden itibaren bunun davranışı bu şekilde. Bu yalnız op-amp ile ilgili değil, sadece kapasite ve kaynağımızın etkisi.
+
+168
+00:27:23,044 --> 00:27:33,483
+O-pamp'ın etkisi nerede? O-pamp'ın etkisi sadece burası 0 volt olduğu için, burası da 0 volt. Yani bir kaynak var, kapasiteyi şarj ediyormuş gibi davranıyor aslında. Onu görmüşüz.
+
+169
+00:27:42,132 --> 00:27:45,552
+Burada o hesabı ilişkin şeyi biraz daha detaylı anlamış.
+
+170
+00:27:47,892 --> 00:27:51,776
+Burada ne var? Eğer ki kaynak değerimiz...
+
+171
+00:27:51,776 --> 00:28:01,336
+Bir step fonksiyonu değil, siz öyle bir işaret olmuş olsaydı, bu durumda bizim Vout yerimiz ne olacaktı? Burada sadece Vc'ye ilişkin bir hesap yaptık.
+
+172
+00:28:01,796 --> 00:28:11,176
+Vout'a ilişkin hesabı yaptık. Birim basamak fonksiyonu varken 5. saniyede basamak atlıyor.
+
+173
+00:28:18,963 --> 00:28:37,144
+Kapasitedeki gerilimimizin türevini hesaplıyor olacağız. Bunu hesaplayabilmek için de T5'den küçük olduğu sürece 0'da, T0'dan 5 tau'ya kadar yine bir değişim yok gibi kabul edebiliriz.
+
+174
+00:28:49,619 --> 00:28:51,699
+Bir saniye şurada bir şey alatmam lazım.
+
+175
+00:28:55,731 --> 00:29:07,071
+Akım değerini hesaplamamız lazım. Akım değerini hesaplayıp, direnç üzerinden geçen akım değerini bulup, daha sonrasında da onunla 5 kere girelim.
+
+176
+00:29:14,324 --> 00:29:29,204
+Şurada bir eksiklik var, şu kısımda. Şunda bir hata var da onu göreceğim. Söyleyeceğim daha doğrusu. Şu kısım doğru, şunda bir hata var. Buradaki şu kat sayı koymamışız. Ondan dolayı bir hata var.
+
+177
+00:29:29,204 --> 00:29:36,244
+Şimdi elimizdeki VC'nin renkleri neydi? 3 çarpı E üzeri eksi T eksi 5.
+
+178
+00:29:36,660 --> 00:29:45,280
+Bölü 0.8. Biz bunun t'ye göre süremini aldığımızda, dt dediğimizde, 3 sabit zaten öne gelecek.
+
+179
+00:29:45,940 --> 00:29:50,920
+Burada ne var? Kat sayı olarak eksponansiyel bir fonksiyonun sürevi yine kendisine eşit.
+
+180
+00:29:51,340 --> 00:29:56,020
+Ama bu yukarıda da bir fonksiyon var. Bunun da t'ye göre süreminin gelmesi lazım.
+
+181
+00:29:56,140 --> 00:30:02,540
+Yani eksi 1 bölü 0.8 değeri gelecek ve fonksiyon aynen eksponansiyel fonksiyon kendisini koruyacak.
+
+182
+00:30:03,316 --> 00:30:20,636
+Dolayısıyla bizim Vout dediğimiz gerilimde elde edeceğimiz sonuçta şu kat sayının gelmesi lazım. Burada göstermiş olduğumuz şurada bir hata olmuş. Onu bu şekilde düzeltmiş olalım. Yani yukarıdaki geçerli, aşağıdakinde o bilgi kaybolmuş durumda. Onu düzeltmiş olalım.
+
+183
+00:30:26,836 --> 00:30:35,076
+Burada görmüş olduğumuz devrede, Vs kaynağımızı bilim basamak fonksiyonu değil de sinizoydar bir fonksiyon olarak alırsak ne olun ona bakalım.
+
+184
+00:30:36,076 --> 00:30:44,215
+Bu durumda yapacağımız işlem yine aynı şekilde. Giriş işaretimizin, neticede giriş işaretimiz Vc'ye eşit oluyor.
+
+185
+00:30:44,996 --> 00:30:50,115
+Vs'nin türemini alıp bunu Rc ile çarpıp bizim yönünü değiştirmemiz gerekiyor.
+
+186
+00:30:50,576 --> 00:30:58,455
+2 kilo ohmluk bir direnç, 0.1 mikrofarlaklık bir kapasite varsa buradaki bizim tau değerimiz ne olur onu hesaplayalım.
+
+187
+00:30:58,615 --> 00:31:05,855
+2 çarpı 10 üzeri 3 çarpı 1 çarpı 10 üzeri eksi 7 diye bunu ifade edebiliriz.
+
+188
+00:31:06,635 --> 00:31:08,776
+Buradan elde ettiğimiz sonuç ne olmuş oluyor?
+
+189
+00:31:10,635 --> 00:31:12,895
+3 gitti, 4 kaldı.
+
+190
+00:31:13,844 --> 00:31:21,484
+0.2 çarpı 10 üzeri eksi 3 saniye, yani 0.2 milisaniye gibi bir değer yapıyor.
+
+191
+00:31:22,203 --> 00:31:24,564
+Şu değeri kullanabiliriz. Tav değerimiz bu.
+
+192
+00:31:28,819 --> 00:31:44,859
+Yani RC değerimiz aynı zamanda RC değerimiz. Dolayısıyla biz Vout'un hesabındaki şuradaki RC çarpımını 0.2x10 üzeri x3 olarak bulmuş olduk. Kaynağımız 2xsinus 500t gibi bir fonksiyonsa, o zaman biz bunun t'ye göre türevini alacağız.
+
+193
+00:31:52,788 --> 00:32:11,788
+ve bir de içerideki fonksiyonun türemini almamız lazım. O da 500 yapıyor. Dolayısıyla 1000 çarpı cos 500t olmuş oluyor. Daha önceden de 0.2 çarpı 10 üzeri x 3 derimi gelecekti. Bunlar birbirine götürmüş olsun. Yani 0.2 çarpı cos
+
+194
+00:32:12,147 --> 00:32:40,147
+500t gibi bir fonksiyon elde etmiş oluyoruz. Son olarak bir de evirme, yani negatife çevirme durumu vardı. Eksisinde eşit eklediğimiz vakit. Giriş işaretimiz 2 çarpı sinüs 500t gibi bir fonksiyon ise çıkış işaretimiz bu diferansiyel integral şey, travelcidevredeki çıkış işaretimiz 0.2 çarpı kosinüs 500t olmuş oluyor. Bunun çıktısını çizerek görmeye çalışsak kabaca şöyle bir şey.
+
+195
+00:32:40,147 --> 00:32:50,147
+Giriş işaretimizi yine kırmızıyla çizelim. Sinüsün değeri 0. Dolayısıyla şöyle bir fonksiyon görüyor olacağız.
+
+196
+00:32:50,147 --> 00:33:05,147
+Çıkış işaretimiz ise buna vs diyelim. Çıkış işaretimiz de mavi renkle işaretleyelim. Bakın ne oluyor? Bir kere yönü değişiyor ve kosünüs işareti. Normalde kosünüs işareti birden başlayıp
+
+197
+00:33:05,652 --> 00:33:08,771
+Bunun tam tepe yaptığında sıfıra erişecekti.
+
+198
+00:33:09,592 --> 00:33:12,451
+İşte bunun tam sıfıra geldiği yerde bu tepe yapacaktı.
+
+199
+00:33:12,951 --> 00:33:17,311
+Bunun yine sıfıra geldiği noktada, şey tepe yaptığı noktada bu sıfır olacaktı.
+
+200
+00:33:17,311 --> 00:33:22,211
+Ama işaretimiz ters dönecek. O zaman bizim çıkış işaretimiz şöyle bir şey olmuş olacak.
+
+201
+00:33:23,011 --> 00:33:24,311
+Tabacat çizce koluşta.
+
+202
+00:33:26,011 --> 00:33:26,632
+Geldi.
+
+203
+00:33:27,451 --> 00:33:29,731
+İfas farkıyla şurada tepe yaptı.
+
+204
+00:33:30,451 --> 00:33:55,331
+Tabii aynı genliğe de çıkmak zorunda değil. Onu biraz daha küçük çizelim şöyle. Zaten x 0.5 olduğu için. Daha sonrasında ne yapacak? Şurada 0'dan geçmesi lazım. Şurada negatiften tepe yapması lazım. Şu noktada. Daha sonra burada 0'dan geçmesi lazım. Dolayısıyla şu açık mavi silecek olursak, şöyle yapabiliyorsun ki ya, noktalı olanı.
+
+205
+00:33:57,107 --> 00:34:17,707
+Ve şöyle yazacak olursak, bu da Vout gerilimimiz. Ne yapmış olduk? Türevini aldık. Sinüsün türevi koşun üstü. Bir part farkı var, 90 derece. Ama bir de işaretini negatif çevirdi. Bu iki etkiyi birinden burada çıkış ilerisine görmüş olacağız. Bunların grafiğini çizecek olsak elde edeceğimiz sonuç bu şekilde bir sonuç olacaktı.
+
+206
+00:34:17,707 --> 00:34:20,148
+Bir adım daha ilerleyelim.
+
+207
+00:34:26,675 --> 00:34:50,336
+Şimdi burada sinüs ve kosinüsler arasında dönüşüm yapabilmek için bir özellik var. Onları da hatırlayalım. Onları bilip çember üzerinde çizerek gösterebiliriz belki. Ve bunu daha sonra kullanacağız. Şöyle ki, elimizde bir üçgen olsun. Şurası alfa derece ise, burası 90 ekte alfaysa şunu yazabiliriz.
+
+208
+00:34:54,675 --> 00:34:56,675
+Şunu yazabiliriz.
+
+209
+00:34:58,076 --> 00:35:03,355
+Cosinus alfa eşittir. Cosinus alfa dediğimiz şurası, şurası.
+
+210
+00:35:03,355 --> 00:35:07,996
+Ne eşit olmuş oluyor? Sinus 90 eksi alfaya eşit olmuş oluyor.
+
+211
+00:35:07,996 --> 00:35:11,515
+Şimdi bunu da getirip şöyle koyalım.
+
+212
+00:35:11,515 --> 00:35:13,515
+Yapabilirsek eğer.
+
+213
+00:35:16,036 --> 00:35:18,835
+Burada alfa dediğimiz şey mesela 500'te.
+
+214
+00:35:22,516 --> 00:35:34,516
+Şurası bizim, birim çember de çizelim. Şurası bizim alfa derecemiz olsun. Bu alfanın kosünüsü şuna tekabül ediyor, alfanın sinüsü şuraya tekabül ediyor.
+
+215
+00:35:35,876 --> 00:35:49,796
+Aynı zamanda şunu da söyleyebilirim. Burası alfa derece olsa bunun da sinüsü buraya eşit değil mi? Yani bu aynı zamanda şuna eşitmiş. Kosünüs alfadan değil de sinüs alfadan gelelim.
+
+216
+00:35:50,804 --> 00:35:59,144
+Sinüs alfa için şunu da yazabiliyormuşuz. Bakın, sinüs alfa için sinüs 180-alfa diyebiliyormuşuz. Değil mi?
+
+217
+00:36:00,003 --> 00:36:02,804
+Alfa yerine bu sefer şunu...
+
+218
+00:36:06,804 --> 00:36:11,684
+Kosünüs x eşittir sinüs 90-x diyelim.
+
+219
+00:36:12,564 --> 00:36:17,583
+Burada alfa yerine 90-x yazarsak, yani sinüs x.
+
+220
+00:36:21,064 --> 00:36:22,264
+Kosünüs x.
+
+221
+00:36:24,179 --> 00:36:50,220
+Sinüs 90-x'e eşit olmakla birlikte, bunu alfa yerine yazarsak şunu da yazabiliyormuşuz. Sinüs 180-90 artı x olarak da yazabiliriz. Yani burada ne olmuş oluyor? Sinüs 90 artı x'e de eşitmiş. Kosinüs x, sinüs 90 artı x'e de eşitmiş. Bunu da yazabiliyoruz. Bunu hem bu şekilde ilim çember üzerinden yapabiliriz.
+
+222
+00:36:50,612 --> 00:36:57,672
+Hem de istersek şunu da yapabiliriz. Sinüs ve kosünüslerin çarpım kuralları var ya, onlar üzerinden de doğrulayabiliriz.
+
+223
+00:36:57,731 --> 00:37:08,612
+Mesela sinüs A artı B, E eşitti. Sinüs A çarpı kosünüs B artı, sinüs B çarpı kosünüs A şeklinde yazılabilir.
+
+224
+00:37:15,443 --> 00:37:27,023
+sin A, sin B olarak yazabiliriz. Dolayısıyla bunu şurada elde ettiğimiz konucu yerine koyacak olursak, 90 artı x sin 91'e eşit gitti. Kosünüs x kaldı burada.
+
+225
+00:37:28,844 --> 00:37:37,144
+Sinüs x var, kosünüs 90 sıfır o terim gitti. Dolayısıyla sinüs 90 artı x'in kosünüs x'e eşit olduğunu da buradan doğrulamış olduk yine.
+
+226
+00:37:42,036 --> 00:37:48,135
+Kosinüsü sinüse çevirmek istediğimiz zaman şunu yazıyormuşuz.
+
+227
+00:37:50,496 --> 00:37:55,195
+90 artı x olarak bu şeyi yazmamız mümkündü.
+
+228
+00:37:57,715 --> 00:38:00,056
+90 artı x olarak yazmamız mümkün.
+
+229
+00:38:00,556 --> 00:38:06,755
+Bir de, yani şuradaki sonuç, bir de baştaki negatif işaretini içeri almak istersek ne yapacağız?
+
+230
+00:38:07,536 --> 00:38:08,815
+Elimizde yani bu da ne demek?
+
+231
+00:38:10,452 --> 00:38:22,932
+Bu da şu demek. Elimizde eksi sinüs x diye bir terim var. Biz bunu, eksiği kaybetmek istesek, bu içeride ne gibi bir değişiklik yapmamız gerekiyor. Ona bakalım şimdi.
+
+232
+00:38:22,932 --> 00:38:36,132
+Yine birim çemberdeyiz. Şu değerimiz bizim neye eşit? Sinüs alfa değerine eşit. Ben şöyle bir şey yapıyorum. Aynı miktarca, yani şurası alfa olacak şekilde bir.
+
+233
+00:38:36,563 --> 00:38:46,023
+işlem bir açı daha belirliyorum. Bu açımın sinüsü, şurası, tam olarak burada elde etmem gerekenin negatifi.
+
+234
+00:38:46,603 --> 00:38:53,343
+Dolayısıyla şunu söyleyebiliriz. Burada tersten gidelim şöyle. Bu bir negatif açı olarak da karşımıza çıkıyor.
+
+235
+00:38:53,343 --> 00:39:00,983
+Veya 180 artı alfa olarak düşünelim bunu. Ne diyeceğiz şimdi? Sinüs alfa değerimiz.
+
+236
+00:39:04,083 --> 00:39:12,763
+Sinüs 180 artı alfanın negatifiymiş. Bu şekilde yazabiliriz.
+
+237
+00:39:12,763 --> 00:39:25,403
+Değil mi? Bu şekilde yazabiliriz. Bunu düzenlediğimizde de yine şeyi biliyoruz biz. Şurada eksi varsa bunu artı yapabiliriz. Eksi sinüs alfa sinüs 180 artı alfaya eşit olabilir.
+
+238
+00:39:27,583 --> 00:39:30,123
+Alfa dediğimiz değer bu arada hangisi?
+
+239
+00:39:31,507 --> 00:39:49,507
+Şu kısım, şu kısım, eksi 180, bunu aynı zamanda nasıl yazabiliriz? Bakın tersten yazacak olursak, şuradaki açı olarak da yazacak olursak, sinüs alfanın aynı zamanda eksi, sinüs 180 eksi alfa ama bu eksi işareti.
+
+240
+00:39:49,647 --> 00:39:58,047
+Bu şekilde yazılabilmesi demektir. Yani şuradaki açıya baktığımızda burası bir negatif açı ve genliği de 180 eksi alfalık bir değer.
+
+241
+00:39:58,579 --> 00:40:04,039
+Dolayısıyla buna da eşit olabilir. Her iki tarafı negatifle çarparsak, dolayısıyla şunu da yazabiliyormuşuz.
+
+242
+00:40:04,699 --> 00:40:15,019
+Eksi sinüs alfa, sinüs alfa eksi 180 olarak da yazılabilir. Bizim alfa değerimiz negatif şartı içeri almadan önce 500p artı 90'dı.
+
+243
+00:40:15,079 --> 00:40:19,559
+Artı 90 nereden gelmişti? Kosinüsü sinüs cinsinden yazmazdan gelmişti.
+
+244
+00:40:20,211 --> 00:40:33,751
+Eksiği içeri almak istediğimizde de açımıza bir eksi 180'lik katkı yaptığımız zaman değeri elde etmiş oluyoruz. Dolayısıyla bu dönüşümü yapmamız mümkün olmuş oluyor.
+
+245
+00:40:36,052 --> 00:40:45,552
+Amacımız ne? Baştaki eksi işaretinden kurtulmak, içerideki faz farkını da eksi 180 artı 180 arasında tutmak.
+
+246
+00:40:46,420 --> 00:40:48,600
+Ona yönelik bir düzenleme yaptıklar.
+
+247
+00:40:50,660 --> 00:40:51,640
+Görüşüm olarak.
+
+248
+00:40:55,092 --> 00:40:57,552
+Şimdi bir başka devre yapımız var. Ona bir bakalım.
+
+249
+00:40:57,552 --> 00:40:58,752
+Saat konferi yapıyoruz bu arada.
+
+250
+00:41:07,539 --> 00:41:24,300
+Bir başka devremiz var. Bu devre yapısında ne değişmiş? Feedback olarak artık direnç yok, feedback olarak kapasite var. Direnç, evren giriş ucuna bağlı. Yani eksi uca bağlı. Şimdi nasıl çözeceğiz bunu? Şöyle çözeceğiz.
+
+251
+00:41:27,139 --> 00:41:32,740
+O-pump'un tanım bağımsızlarından yararlanalım. Şurası, granda bağlı olduğu için sıfır bağlı.
+
+252
+00:41:33,088 --> 00:41:39,307
+Op-amp'un tanım bağıntısından yararlı diyorum. Vf ile Vn birbirine eşit olmalı. O zaman burası da 0 op-amp.
+
+253
+00:41:40,668 --> 00:41:50,387
+Daha sonra şurası vs gerilimine eşit. vs'den 0'a akan bir akım var. Bu koldaki ır yakımını bulabiliriz.
+
+254
+00:41:50,507 --> 00:41:57,987
+ır diyeceğimiz akım vs-0 bölü r'dir değil mi? vs-0 yazmadım.
+
+255
+00:41:58,579 --> 00:42:19,039
+Akan akım bu. Şimdi, Op-amp'ın ikinci tanım bağımsızından yararlanıyor. Buradan içeri akan akım, I, N'miz sıfır, I, P pozitif akımımız da sıfır. O zaman buradan gelen akım ikiye ayrıldı, bir tarafa sıfır gidiyorsa, şuraya gidecek I, C akımı da I, C, R'ye eşit olmadı. Değil mi? Bunu söyleyebilirim.
+
+256
+00:42:19,987 --> 00:42:24,507
+Şimdi kapasite elemanın üzerindeki gerilim farkına bakalım.
+
+257
+00:42:24,507 --> 00:42:28,927
+VC dediğimiz şey 0-V0 yani eksi V0 eşit.
+
+258
+00:42:29,847 --> 00:42:31,427
+Kapasitenin tanım bağımsızı neydi?
+
+259
+00:42:32,427 --> 00:42:34,087
+Kapasitenin tanım bağımsızı şuydu.
+
+260
+00:42:41,460 --> 00:43:07,460
+Vc, şöyle diyelim, baştan gelelim, Q dediğimiz değer, c çarpı vc'ye eşitti. Ve de bu da aynı zamanda it, dt olarak verilir. Şimdi o zaman bu da ıc aslında. O zaman biz buradaki ıc değerini burada yerine koyalım. Dolayısıyla şu oluyor, vc dediğimiz gerilim, c çarpı vc gerilimi,
+
+261
+00:43:08,083 --> 00:43:13,103
+İntegral, IC'nin neye eşit? VS bölü R'ye eşit, DT.
+
+262
+00:43:14,023 --> 00:43:21,403
+VC neye eşitti? Eksi V0'a. O zaman V0 eşittir. Eksi 1 bölü RC, düzenliyorum biraz.
+
+263
+00:43:22,163 --> 00:43:25,163
+VS, DT olmuş oldu. Bakın ne olmuş oldu?
+
+264
+00:43:25,963 --> 00:43:31,123
+Çıkış gerilimimiz, giriş gerilimimizin bir integrali olarak yazılabilir.
+
+265
+00:43:31,572 --> 00:43:35,311
+Öyleyse ben bir giriş gerilim verip bunun integralini hesaplattırabiliyorum.
+
+266
+00:43:35,411 --> 00:43:44,592
+Tabi bir evirme var, yani negatifleştirme var, bir de bir katsayı geliyor ama bunları uygun şekilde tune ettiğim vakit istediğim değeri elde etmem mümkün.
+
+267
+00:43:44,692 --> 00:43:51,751
+Yani analog bilgisayar anlamında istediğim integral ve strev hesabını yapmamızın mümkün olduğunu görüyoruz.
+
+268
+00:43:53,731 --> 00:43:56,612
+Dolayısıyla genel olarak bu devrenin çözümünü bu şekilde verebiliriz.
+
+269
+00:43:57,715 --> 00:44:00,475
+Bunun örneklerine bakabiliriz bu arada.
+
+270
+00:44:10,356 --> 00:44:28,436
+Şimdi bir örnek olarak verilen kapasite ve direnç değerlerine sahip olan ve verilen giriş gerilimine sahip olan integral alıcı devrede ve out gerilimini hesaplamaya çalışalım.
+
+271
+00:44:29,176 --> 00:44:35,696
+Buna ilişkin olarak eksi bir bölü RC değerimiz 25 kilo on ve 5 nanofara. 5 nanofara da nasıl yazacağız arkadaşlar?
+
+272
+00:44:37,748 --> 00:44:47,387
+Neydi şimdi, nasıl gidiyordu? Bir birimimiz vardı, kilo, mili, mikro, daha sonra
+
+273
+00:44:52,755 --> 00:45:17,355
+Nano, Pico. Bu şekilde gidiyor. Yani 10 üzeri eksi 3, 10 üzeri eksi 6, 10 üzeri eksi 9. O zaman bizim burada hesaplatacağımız değer, RC değeri olarak 25 çarpı 10 üzeri 3 ve 5 çarpı 10 üzeri eksi 9'luk paratla çevirdikten sonra çarpacağımız değer olacak.
+
+274
+00:45:19,923 --> 00:45:29,183
+İntegral alırken de, bu işaretimizin genlik değeri nerede yazıyor, onu bir bakalım.
+
+275
+00:45:29,703 --> 00:45:30,663
+Burada yazıyor, tamam.
+
+276
+00:45:32,643 --> 00:45:38,324
+Radyan bölü saniyeli bir omega, yani açısal hız değerimiz var, omega t değerimiz var.
+
+277
+00:45:38,923 --> 00:45:42,943
+Biz bunun integralini alacağımız vakit, 3 sabit dışarı aldık.
+
+278
+00:45:43,280 --> 00:45:53,780
+Neyin türevi sinüsü yapar? Eksi kosinüsün türevi sinüsü yapar. Dolayısıyla burada bir eksi işareti daha gelecek. Bu eksi bir değerindeki eksi kayboldu.
+
+279
+00:45:53,780 --> 00:46:03,780
+Çıkış değerimiz kosinüs. İçeri değeri aynı kalacak. Biz de içerinin t'ye göre türevini aldığımızda 6240 çarpanı da buraya gelmiş olacağız aynı zamanda.
+
+280
+00:46:03,780 --> 00:46:07,280
+Dolayısıyla elde ettiğimiz değer bu olmuş oldu.
+
+281
+00:46:07,860 --> 00:46:11,260
+T2 anı için elde edeceğimiz değer bu olmuş oldu.
+
+282
+00:46:15,987 --> 00:46:21,887
+Dolayısıyla integral alıcı devreye ilişki çözünümüzü bu şekilde gerçekleştirmiş olduk.
+
+283
+00:46:21,887 --> 00:46:28,347
+Tabi integral alma söz konusu olduğu için biz bunu belirli bir zaman aralığında almak durumundayız.
+
+284
+00:46:28,427 --> 00:46:36,327
+Bu zaman aralığında aldığımız vakit, yani T1 ve T2 aralığında aldığımız vakit, burada V0'ın T1 anındaki başlangıçlarını da eklememiz lazım.
+
+285
+00:46:36,851 --> 00:46:48,871
+Bu örnek özelinde ise başlangıç anında, ilk başladığımız anda, V0'ın eksi Vc'ye eşit olduğunu bildiğimiz için, T eşittir sıfır anında, T'ye sıfır verdiğimizde ne olmuş oldu?
+
+286
+00:46:48,971 --> 00:46:53,851
+390, burası 1 gelmiş olacak. Yani 3.85 voltluk bir değer olmuş olacak.
+
+287
+00:46:55,411 --> 00:47:06,431
+Uygun şekilde initial başlangıç değeri oluşturabilmek adına da V0T1'inde 3.85x3.85v olduğunu not etmemiz gerekiyor.
+
+288
+00:47:06,531 --> 00:47:15,672
+T eşittir sıfır anı için gerilim değerimizin sıfır olmasına hareketle bu başlangıç değerini tespit etmiş oluyoruz.
+
+289
+00:47:15,672 --> 00:47:18,871
+Böyle bir eklemeden bahsedebiliriz.
+
+290
+00:47:19,507 --> 00:47:29,507
+Bunları çizdirdiğimizde ise, bu iki giriş ve çıkış değerlerini birbirine göre çizdirdiğimizde ise, neyi görmüş oluyoruz?
+
+291
+00:47:31,507 --> 00:47:45,288
+Bir faz farkı var. Bu faz farkı aslında sinüs ve kosünüs arasındaki dönüşümden kaynaklanıyor. Bakın, giriş işaretimizdesiniz, çıkış işaretimizde kosünüs bulmuştuk. Onu da sinüse çevirdiğimiz zaman artı 90'lık bir faz farkı gelecek.
+
+292
+00:47:46,260 --> 00:48:06,540
+Bu faz farkından dolayı bir öteleme var. Faz farkı değişim var. Onu burada net bir şekilde görebiliyoruz. Nerede eşleşiyor? Kırmızıyla işaretli olmuş olan değer ve yeşille işaretlenmiş olan değer. Bunları mesela yeşilin sıfır olduğu yerde kırmızı tepe yapıyor gibi.
+
+293
+00:48:08,692 --> 00:48:14,132
+Bunu görebiliriz. Bu faz farkını görebiliriz. 90 dereceli faz farkına karşılık gelmiş oluyor.
+
+294
+00:48:15,332 --> 00:48:23,271
+Bir başka örneğimiz de, temel olarak aslında bu aşamada integral oluji ve trevalisi devreleri tamamlamış olduk.
+
+295
+00:48:24,231 --> 00:48:29,652
+Bir başka örneğimiz de, kaç sayısınız kalmıştı, yakın da geçmek gerektiği için biraz daha çözü gidebiliriz.
+
+296
+00:48:30,711 --> 00:48:31,532
+Ama bize bakalım.
+
+297
+00:48:32,251 --> 00:48:34,132
+Daha önce yapmış olduğumuz...
+
+298
+00:48:34,739 --> 00:48:39,980
+Örneklerde, yani Prevalenti devrelerde kapasitemizin bir başlangıç değeri yoktu.
+
+299
+00:48:41,019 --> 00:48:49,739
+Velev ki bir başlangıç kapasite değerimiz olmuş olsaydı, bu durumda sistem nasıl çalışır diye bakacak olursak, bu durumda...
+
+300
+00:48:50,483 --> 00:48:58,243
+Buradaki kapasitedeki initial değer, başlangıç değeri, R1 direnci üzerine bir gerilim farkı oluşturacak.
+
+301
+00:48:58,363 --> 00:49:02,103
+Ona dikkat almamız gerekiyor. Burada bir kaynak yok. Bu örnekte bir kaynak yok.
+
+302
+00:49:02,103 --> 00:49:10,763
+Ama R1 direnci üzerine bir gerilim düşümüne sebep olacak. Bu gerilim düşümü aynı zamanda akım değerini belirleyecek.
+
+303
+00:49:10,863 --> 00:49:15,383
+Bu akım değeri kapasiteyi etkileyeceği için kapasitedeki değişimi belirlemiş olacak.
+
+304
+00:49:19,603 --> 00:49:34,463
+Bunu modellerken de temel olarak bu başlangıç gerilimini, başlangıç gerilimi sanki orada bir ek kaynak varmış gibi modellememiz mümkün. Bu şekilde ilerleyebiliriz.
+
+305
+00:49:36,383 --> 00:49:41,423
+Akım değeri olarak baktığımızda da bu VR1 dediğimiz değere karşılık gelen değer,
+
+306
+00:49:41,871 --> 00:49:48,511
+Sanki orada bir kaynak varmış gibi etki gösterecek. Bunu dirence böldüğümüzde de o koldaki akımı belirlemiş olacağız.
+
+307
+00:49:49,251 --> 00:49:59,571
+Bu akım üzerinden de T son sıra gittiğinde BC'nin 0 olması gibi özelliklerden faydalanarak aslında uç değerleri de bulmaya çalışıyor olacağız.
+
+308
+00:50:01,211 --> 00:50:04,891
+Birazcık buralarımızı geçeceğim. Çok fazla süremiz yok çünkü.
+
+309
+00:50:07,572 --> 00:50:32,052
+Bir de şeyden bahsedelim. Bunda zorunlu olmayan bir ev ödev olarak size vermiş olalım. Burada görmüş olduğunuz bu ne devresiydi? Türev alan devre. Bu türev alan devreyi zorunlu olmayan bir ev ödedi bir endipans elemanı kullanarak da gerçekleyebilir miyiz?
+
+310
+00:50:32,351 --> 00:50:35,871
+Buna ilişkin zorunlu olmayan ev ödevi. Siz kendiniz uğraşın.
+
+311
+00:50:35,871 --> 00:50:40,451
+Veya bir başka örneğimizde, şöyle ilerliyorum.
+
+312
+00:50:42,231 --> 00:50:51,931
+Burada bir integral alıcı devre var. Bu integral alıcı devreyi, integral alma mantığını bir endüktans elemanı kullanarak gerçekleyebiliriz.
+
+313
+00:50:52,091 --> 00:50:57,192
+Bunda zorunlu olmayan bir ev ödevi olarak uğraşmanızı rica edeceğim. Bunları toplamayacağız.
+
+314
+00:50:59,827 --> 00:51:10,168
+Sizden istemeyeceğiz ama zorunlu olmayan bir ev ödebi olarak yapmanızı rica ediyorum. En azından bu Norton'da da oluyor mu, olmuyor mu, oluyorsa nasıl oluyor bir bakmış olmanızı istiyorum.
+
+315
+00:51:11,487 --> 00:51:21,548
+Şimdi bu birinci dereceden Ofan devrelerini burada sonlandıralım arkadaşlar. Bir sonraki saatimizde de RLC devrelerine geçmek lazım. Çok haklı kalmıyor yoksa.
+
+316
+00:51:21,983 --> 00:51:30,483
+Buraya kadar olanla ilgili sormak istediğiniz bir şey varsa alayım. Yoksa bir ara vereceğim. Bir 10 dakika ara verelim. Ondan sonra devam edelim. Var mı sormak istediğiniz bir şey?
+
+317
+00:51:43,315 --> 00:51:44,255
+Var mı sorunuz?
+
+318
+00:51:52,019 --> 00:52:02,800
+Sorunuz yoksa arkadaşlar ben ara veriyorum. Kaç geçe dönelim de? 2-5 geçe dönelim arkadaşlar. 2-5 geçe dönelim. 10 dakika bir ara veriyorum. Aradan sonra görüşmek üzere.
+
+319
+01:09:35,283 --> 01:09:43,064
+İkinci konumuz, bu haftanın ikinci konusu RLC devreleri. Buna ilişkin olarak hemen şöyle bir kampaylaşım başlatayım.
+
+320
+01:09:51,507 --> 01:10:08,347
+İkinci derece devre demek iki tane enerji depolayan eleman var. Yani iki tane integral, integral, deferansiyel denkleminiz var. Bu ikisini eşanlı olarak çözen bir takım şeyler arıyoruz. Nihai çözümler arıyoruz anlamına geliyor.
+
+321
+01:10:11,859 --> 01:10:22,500
+Burada özellikle şunu göreceğiz. Teorik olarak ders kaptamında müfredattan çıkartıldığı için çok uzak bir zamanda değil, yakın zamanda, düferansel denklemler dersinin.
+
+322
+01:10:23,139 --> 01:10:27,959
+O düferansel denklemler dersi olsa dahi devre teorisi 3 sınıf dersi oldu.
+
+323
+01:10:28,099 --> 01:10:34,340
+Bunu biraz yumuşak bir şekilde geçmeye çalışacağız ama genel konsepti vermeye çalışacağım.
+
+324
+01:10:35,028 --> 01:10:51,148
+Şimdi örneğin birinci derece devrelerde ne çıkıyordu aşağı yukarı? Öyle bir denklemle karşılaşıyorduk ki kendisinin türevi, yani şöyle bir şey çıkıyordu, fx diye bir fonksiyonumuz var veya fx diyelim, fx diyelim.
+
+325
+01:10:56,307 --> 01:11:24,247
+Kabaca şöyle bir denklem çıkıyordu, birinci dereceden devrelerde. Fonksiyonun kendisi türeviyle lineer bağımlı çıkıyordu. Bu ne demek? Fonksiyon, öyle bir fonksiyon arıyoruz ki, türevi de kendisiyle aynı tipte bir fonksiyon oldu. Yani bu x kare olabilir mi? Olamaz. x kare tipli bir şeyin türevi 2x. Bir yerde x kare var, bir yerde x var. Bunlar birbiriyle lineer bağımlı olamaz. Ne oldu? Nasıl bir şey çıkıyordu burada? Türevi kendisine benzeyen bir fonksiyon arıyordu. Ne çıkıyordu?
+
+326
+01:11:29,140 --> 01:11:30,140
+Ne çıkıyordu?
+
+327
+01:11:32,140 --> 01:11:33,140
+E üzeri x mi?
+
+328
+01:11:33,140 --> 01:11:34,140
+Evet.
+
+329
+01:11:34,140 --> 01:11:45,140
+Aynen, e üzeri x diye bir denklem çıkıyor. Mesela fx için e üzeri x formunda bir şey kabul etsek, bunun türevi yine e üzeri x çıkıyor. Dolayısıyla bunlar birbirleriyle neler bağımlı oluyor.
+
+330
+01:11:45,140 --> 01:11:52,140
+e üzeri x değil de e üzeri 5x olsa, bunun türevi ne olacak? 5 çarpı e üzeri 5x olacak. Yine
+
+331
+01:11:52,532 --> 01:12:14,672
+E üzeri 5x, E üzeri 5x, bunlar birbiriyle linear bağlı. Yani ben birinci elde ettiğim değeri, örneğin, eksi 5 ile çarpsam, bunların A eksi 5 olsa, B 1 olsa, bu durumda bu ikisinin toplamını sıfır yazabiliyoruz. Dolayısıyla bu değer çıkıyor. Birinci derecede ekranlarda kabaca böyle bir sonuç çıkıyordu. Biz de çözümümüzü buna göre genişletiyoruz. Ne diyorduk?
+
+332
+01:12:22,003 --> 01:12:23,863
+E üzeri
+
+333
+01:12:23,863 --> 01:12:25,744
+eksi t
+
+334
+01:12:27,828 --> 01:12:55,288
+Eksi t sıfır diye bir sabit diyebiliriz. Böyle, tau gibi bir değer yazıyordu. Değil mi kabaca? Böyle bir şey yazıyordu. Böyle bir çözümü elde ettiğimiz zaman bunun herhangi bir sabit katsayıyla çarpılmış hali, illa A diyelim fark etmez. Bunun sabit bir sayıyla çarpılmış hali de bizim genel çözümümüzü oluşturuyor. Yani integral, diferansiyel denkleme, söz eklenme bunu koyup A parantezini aldığımızda yine aynı sonucu elde edebiliyorduk.
+
+335
+01:12:55,828 --> 01:13:03,768
+Dolayısıyla şu bir çözümse, e üzeri x'li bir çözümse, bunun bir sabitle çarpımı daha genel bir çözüm oluşturuyordu.
+
+336
+01:13:03,768 --> 01:13:05,448
+Differansiyel denklem mantığında.
+
+337
+01:13:06,008 --> 01:13:07,488
+Dolayısıyla bizim genel çözümümüz buydu.
+
+338
+01:13:08,728 --> 01:13:20,768
+Geçen haftaki derste, önceki derste, şuradaki sabitin sistemdeki bağlı olan RC veya RL değerlerine bağlı olarak hesaplanabildiğini görmüştük.
+
+339
+01:13:21,203 --> 01:13:24,443
+Buradaki A kat sayısı ise nereden hesaplanıyordu?
+
+340
+01:13:25,304 --> 01:13:28,644
+Genel çözümdeki A kat sayısı nereden hesaplanıyordu?
+
+341
+01:13:37,492 --> 01:13:47,711
+Ne yapıyorduk biz burada? Kendisi türetiyle linear bağımlı bir fonksiyon ne gibi bir şey olabilir? E üzeri x gibi bir şey olabilir diyorduk.
+
+342
+01:13:48,811 --> 01:14:01,492
+Yazdığımız zaman, mesela şurada yerine koyduğumuzda bu denklemi, A çarpı E üzeri x artı B çarpı E üzeri x eşittir sıfır değil bir şey çıkıyordu.
+
+343
+01:14:04,212 --> 01:14:15,811
+Burada bir tau birimleri geliyordu. Bu tau birimleri R ve C'ye veya RL'ye bağlıydı. Ama en genel çözümün başında koyabileceğimiz kat sayılar nereden geliyordu arkadaşlar?
+
+344
+01:14:17,412 --> 01:14:22,192
+Atlayabiliyor muyuz? Bu kat sayı sınır değerlerinden geliyordu.
+
+345
+01:14:24,952 --> 01:14:31,712
+Ne gibi sınır değeri dediğimiz şey neydi? Mesela biz şöyle durumlarla ilgileniyorduk. Bir anahtarımız var.
+
+346
+01:14:32,467 --> 01:14:54,807
+Anahtar normalde açık. İşte T eşittir sıfır anında kapanıyor. Dolayısıyla T eşittir diyelim. T eşittir sıfır eksi anında sistemde bir başlangıç değeri var. Mesela kapasite elemanı için bir başlangıç gerilim değeri var. Bunu VC sıfır eksi olarak gösteriyordu. Anahtarı kapattıktan sonra da VC sıfır artı diye bir gerilim değeri oluşuyordu.
+
+347
+01:14:55,347 --> 01:15:10,648
+Kapasite için biliyoruz ki gerilim değeri kontinüüs bir şey olması lazım. Dolayısıyla hemen sıfırdan önceki, yani bu anahtar kapatılmadan önceki ve kapatıldıktan hemen sonraki değerlerin birbirine eşit olması gerekiyordu. Bu bizim sınır değerimizdir.
+
+348
+01:15:11,123 --> 01:15:16,363
+Bu sınır değerini kullanarak bu genel çözümdeki sabit katsayı bulmamız mümkün oluyordu.
+
+349
+01:15:16,863 --> 01:15:20,163
+Aynı şey burada ikinci dereceden denklemler içinde geçerli olacak.
+
+350
+01:15:20,163 --> 01:15:24,123
+Ama burada iki tane sınır değerine ihtiyacımız olacak. Ne gibi?
+
+351
+01:15:25,884 --> 01:15:36,083
+Mesela bu tür denklemleri çözdüğümüzde genel olarak karşımıza çıkan senaryo A çarpı FX artı B'nin sürevi ve
+
+352
+01:15:37,108 --> 01:15:42,108
+f'in ikinci dereceden türevi bir sabit kat sayılarla linear bağımlı olarak görülecek.
+
+353
+01:15:42,108 --> 01:15:45,108
+Yine burada önerebileceğimiz çözüm ne olacak?
+
+354
+01:15:45,108 --> 01:15:53,108
+Burada önerebileceğimiz çözüm, yani fonksiyonun kendisi birinci dereceden türevi, ikinci dereceden türevi aynı formatta vermeyecek.
+
+355
+01:15:53,108 --> 01:15:56,012
+Ne olur bu denklem?
+
+356
+01:15:59,060 --> 01:16:06,540
+Doğal olarak eksponansiyel bir şey olacak. Yani yine önereceğimiz şey, F için önereceğimiz şey, E üzeri x'li bir şey olacak.
+
+357
+01:16:06,720 --> 01:16:12,560
+E üzeri x'li bir şey olacak. E üzeri ax diyeceğiz hatta. Yani en genel durumu ifade edebilmek için.
+
+358
+01:16:14,239 --> 01:16:18,960
+Dolayısıyla burada a'ya bağlı ikinci dereceden bir denklem çıkacak.
+
+359
+01:16:18,960 --> 01:16:25,020
+Yani biz bu E üzeri ax'e getirip buraya koyduğumuzda, şunu göreceğiz arkadaşlar.
+
+360
+01:16:25,344 --> 01:16:36,984
+E üzeri AX parantezinde A kare artı BA artı C gibi bir denklem çıkacak.
+
+361
+01:16:37,504 --> 01:16:42,144
+Biz burada A'yı çözdüğümüzde A1 ve A2 olmak üzere iki tane kök bulacağız.
+
+362
+01:16:42,264 --> 01:16:49,224
+Yani bizim çözümümüz E üzeri A1X ve E üzeri A2X şeklinde iki tane çözüm çıkacak.
+
+363
+01:16:49,811 --> 01:16:57,092
+Şimdi, E üzeri A1x'i biz bu denkleme koyduğumuzda 0 verecek, E üzeri A2x'i de verdiğimizde sonuç verecek.
+
+364
+01:16:57,532 --> 01:17:05,752
+Peki, bunun en genel çözümü, ben bunu bir kat sayıla çarpabilsem, mesela D diye bir kat sayıla çarpabilsem, bu da bir çözüm.
+
+365
+01:17:06,387 --> 01:17:22,927
+Ben bunu E diye bir kat sayıyla çarptım. Bu da bir çözüm. İkisini nasıl birleştireceğiz? İkisini birleştirirken de bunların niner çarpının en genel hali bu ikisi toplamak da bizim bir çözümümüzdür demiş olacağız arkadaşlar. Bu da bizim bir çözümümüzdür demiş olacağız.
+
+366
+01:17:23,847 --> 01:17:31,768
+Yine buradaki A1 ve A2'yi R, L, C değerlerine bağlı olarak çözeceğiz, bulacağız.
+
+367
+01:17:32,372 --> 01:17:39,012
+Büyük D ve E'yi ise yine sınır değerlerine bağlı olarak çözeceğiz.
+
+368
+01:17:39,592 --> 01:17:41,391
+Sınır değerleri için neyi dikkate alacağız?
+
+369
+01:17:41,532 --> 01:17:46,352
+Bir kapasite elemanının durum değişiminden hemen önceki gerilimiyle
+
+370
+01:17:46,771 --> 01:18:07,512
+durum değişiminden hemen sonraki gerilim değeri birbirine eşit, kontinüüs bir şey olması lazım. Dolayısıyla geçiş anında eşit olmalı. İkincisi de bir endüktans elemanının geçiş anından hemen önceki ve geçiş anından hemen sonraki akım değerleri kontinüüs olmalı. Bir endüktans elemanının akım değeri kontinüüs olmalı. O geçiş anında buradan da bir ikinci.
+
+371
+01:18:08,724 --> 01:18:20,423
+İkinci bir kısıt bulmaya çalışacağız. İkinci bir sınır değeri bulmaya çalışacağız. Bu sınır değerlerini yerine koyduğumuzda iki bilinmeyen iki denkler olacak. D ve E'yi buradan çekiyor olacağız temel olarak. Yaklaşımlarımız bu şekilde olacak.
+
+372
+01:18:20,644 --> 01:18:32,503
+Şimdi genel resim bu şekilde ilerleyelim. İkinci dereceden devreler dediğimiz şeyler neler? Örneğin bir kapasite ve bir enditans elemanı barındıran seri VLC devresi olabilir.
+
+373
+01:18:32,948 --> 01:18:37,448
+Veya bir endüktans, bir kapasite içeren bir paralel RLC devresi olabilir.
+
+374
+01:18:38,568 --> 01:18:46,528
+İki tane endüktans elemanı, iki tane kapasite elemanı içeren yapılarda yine ikinci dereceden devreler olarak karşımıza çıkıyor olacak arkadaşlar.
+
+375
+01:18:46,668 --> 01:18:49,048
+Bunların hepsi ikinci dereceden beklemler.
+
+376
+01:18:50,828 --> 01:18:57,448
+Temel olarak incelediğimiz durumlar bir step fonksiyonuna karşılık.
+
+377
+01:18:57,587 --> 01:19:00,048
+Bu bir kaynağın...
+
+378
+01:19:00,239 --> 01:19:10,680
+Devreye bağlanması veya kaynağın devreden çıkartılması senaryoları olacak. Bu senaryolara göre biz işlem yapıyor olacağız.
+
+379
+01:19:11,819 --> 01:19:25,680
+Başlangıç koşullarını hesaplayabilmek adına önemli noktalardan birisi de şu, eğer ki kapasite elemanı uzun süreler boyunca DC kaynak ile sürülüyor ise,
+
+380
+01:19:27,699 --> 01:19:32,219
+Kaynakla sürmüş olan bu kapasite elemanı nasıl çalışacak? Yani şunu soruyoruz.
+
+381
+01:19:32,219 --> 01:19:42,979
+Bir kapasite elemanı C, DC şartlar altında nasıl çalışıyordu?
+
+382
+01:19:43,988 --> 01:20:08,288
+Şeklinden anlayabiliyorduk. Şekli nasıl? İki tane paralel plaka. Dolayısıyla açık devre eleman gibi davranacak. Yani biz durum değişiminden hemen önceki başlangıç durumunu, yani VC0-VC0-VC0 dediğimiz durumu tespit edebilmek için örneğin devre uzunca bu süre boyunca kaynaksız bir şekilde bekleyecek. Daha sonra sisteme kaynağa bağlayacağız.
+
+383
+01:20:10,260 --> 01:20:18,659
+Kapasite elemanı veya Endüktans elemanı uzun süreler boyunca DC kaynakla birlikte sürülüyor olacak. Kaynağı devreden çıkartacağız.
+
+384
+01:20:19,180 --> 01:20:24,440
+Devreden çıkartmadan hemen önceki akım değeri Endüktans elemanı için bizde önemli.
+
+385
+01:20:25,860 --> 01:20:36,039
+Dolayısıyla kapasite elemanı DC şartlar altında açık devre elemanı gibi davranıyor. Endüktans elemanı ise DC şartlar altında şeklini hatırlayın bir tane tel dönerek gidiyor.
+
+386
+01:20:38,547 --> 01:20:43,127
+Kısa devre eleman gibi davranıyor olacak. Buna göre biz başlangıç şartlarımız hesaplıyor olacağız.
+
+387
+01:20:44,268 --> 01:20:53,007
+Yine başka bir özellik bizim sınıf koşullarından yani genel çözümün katsayılığını bulmak için şu iki özellikten de faydalanacağız.
+
+388
+01:20:53,147 --> 01:20:57,608
+Kapasite elemanının gerilimi, durum değişiminin öncesinde ve sonrasında gerilime eşit olmalı.
+
+389
+01:20:58,108 --> 01:21:04,547
+Endüktans elemanın ise durum değişiminden önce ve hemen sonra akım değerleri eşit olmalı.
+
+390
+01:21:05,652 --> 01:21:07,711
+Sınır değerlerini buna göre belirleyeceğiz.
+
+391
+01:21:16,083 --> 01:21:22,543
+Dolayısıyla yapacağımız iş, başlangıç koşullarını hesaplayıp devreyi çözmek.
+
+392
+01:21:25,003 --> 01:21:33,304
+Bunu yaparken de kapasite elemanlarını açık devre eleman gibi, enditans elemanlarını kısa devre eleman gibi koyup devreyi çözüyoruz.
+
+393
+01:21:33,763 --> 01:21:36,663
+Başlangıç durumunu, initial durumları buluyoruz.
+
+394
+01:21:38,003 --> 01:21:41,543
+Daha sonra yine zaman değerimiz sonsuza giderken,
+
+395
+01:21:42,260 --> 01:21:55,260
+Bir başka nihai durum oluşturmak adına, yani kapasite elemanlarının veya devredeki herhangi bir trenç elemanın gerilim değerini bulmak istiyorsak, bir de T sonuçta giderken gibi durum için analiz yapabiliriz.
+
+396
+01:21:55,739 --> 01:22:05,980
+O da yine uzun süre boyunca durum değişiminden sonraki DC şartlarda devrenin nihai varması gereken durumları belirlediği için elde etmiş olduğumuz
+
+397
+01:22:06,355 --> 01:22:17,815
+E üzeri eksponansiyel fonksiyonu bu şartlar altında kontrol edeceğiz. Yani T sonuçta gittiğinde E üzeri denklemimizde T yerine konuk koyacağız, çıkan değere bakacağız.
+
+398
+01:22:18,315 --> 01:22:25,775
+Bir de devreyi T sonuçta giderken DC şartlar altında çözüp elde ettiğimiz değerle karşılaştıracağız. Bunların birbirine tutması gerekiyor arkadaşlar.
+
+399
+01:22:25,995 --> 01:22:30,975
+Özellikle kontrol açısından yani yaptığımız işlemin doğruluğu açısından buna bakmamız gerekiyor.
+
+400
+01:22:34,387 --> 01:22:52,047
+Burada bir örneğimiz var. Bu örneğimiz devrede mevcutta bulunan enduktans elemanı ve kapasite elemanına ilişkin başlangıç akım ve gerilim durumlarını tesis etmemize yönelik bir soru.
+
+401
+01:22:52,047 --> 01:23:00,707
+Soru şu şekilde. T0 anında anahtar açılıyor ama T0 anına kadar anahtar kapalı.
+
+402
+01:23:01,492 --> 01:23:16,772
+Anahtar kapalı. Yani devremizin bir eşdeğerini çizecek olsak, devremizin eşdeğerini çiziyoruz. Ne için? T küçüktür. T sıfır için eşdeğer devre çiziyorum. Ne demek bu?
+
+403
+01:23:17,619 --> 01:23:26,459
+Eksi sonsuzdan T0'a kadar, yeterince uzun süre boyunca kaynak devredeyken, yani DC'nin şartlar altında bu devre çalışmış.
+
+404
+01:23:26,840 --> 01:23:42,439
+O zaman bu devrenin eşdeğerini çizecek olursak, işte kaynağımız var, V1 kaynağı, şurada R1 direncimiz var, anahtar kapalı, şurada R2 direncimiz var, şurada bir R2 direncimiz var.
+
+405
+01:23:44,148 --> 01:23:48,628
+Daha sonra en dükkans elemanı kısa devre eleman. Onu kısa devre elemanı olarak çizdim.
+
+406
+01:23:49,268 --> 01:23:55,087
+Burada bir tane R3 direncimiz var ve kapasite elemanı açık devre olarak çalışıyor.
+
+407
+01:23:55,667 --> 01:23:57,228
+Yani R3 bir yere bağlı değil.
+
+408
+01:23:57,788 --> 01:23:59,167
+Ama şöyle tamamlayalım.
+
+409
+01:24:00,548 --> 01:24:05,688
+R3 bir yere bağlı değil. Dolayısıyla bu kola bir akım gitmez. Buradaki akım değerimiz 0.
+
+410
+01:24:06,528 --> 01:24:09,128
+Peki, şeylere bakalım.
+
+411
+01:24:09,747 --> 01:24:14,028
+Buradaki akım değerinin sıfır olduğunu bulduğumuz vakit şunu diyebileceğiz dolayısıyla.
+
+412
+01:24:15,948 --> 01:24:22,227
+ÖL akımımız ve ÖC akımımız sıfıra eşit.
+
+413
+01:24:23,127 --> 01:24:24,619
+Bununla birlikte...
+
+414
+01:24:24,627 --> 01:24:42,467
+V, L gerilimimiz akım akmadığı için, zaten kısa devre elemanı için gibi çalışıyor, bu sıfıra eşit. Fakat VC eleman gerilimimiz neye eşit? O şuna eşit, V1 bölü, R1 artı R2 çarpı R2'ye eşit arkadaşlar.
+
+415
+01:24:52,627 --> 01:25:00,287
+Gerilimi aynı zamanda şuradaki gördüğümüz VC gerilimi eşit birbirine. O zaman R2 direnci üzerindeki gerilim düşümüne bakacağız.
+
+416
+01:25:00,867 --> 01:25:06,147
+Bir tane kaynağımız var. R1 ve R2 üzerinden geçiyor. Gerilim bölücüsü olarak çalışıyorlar. Bu koldaki akım.
+
+417
+01:25:06,587 --> 01:25:11,188
+V1 bölü R1 artı R2. Akımı bulduk. Bunu R2 ile çarpıp VC gerilimimizi bulmuş olduk.
+
+418
+01:25:11,688 --> 01:25:18,047
+Dolayısıyla burada bulmamız gereken, aradığımız başlangıç koşullarını bu şekilde ifade etmek mümkün oluyor.
+
+419
+01:25:21,203 --> 01:25:23,523
+Bakalım ne ilişki farklı bir şey söylemiş mi?
+
+420
+01:25:26,484 --> 01:25:33,943
+VL'yi sıfır bulmuştuk, ÖL'yi sıfır, ÖC'yi sıfır bulmuştuk, VC'yi de V1 çarpı R2 bölü, R1 artı R2 olarak bulmuştuk.
+
+421
+01:25:34,003 --> 01:25:36,103
+Dolayısıyla bunlar bizim aradığımız sonuçlar.
+
+422
+01:25:36,663 --> 01:25:42,623
+Peki, bir başka DC koşu daha var, onu da tespit etmeye çalışalım.
+
+423
+01:25:42,724 --> 01:25:45,099
+O da neydi? İlk başta yaptığımız şey...
+
+424
+01:25:45,108 --> 01:25:50,108
+T değerimiz, eksi sonsuz ile T sıfır arantısındayken bunu yaptık.
+
+425
+01:25:50,587 --> 01:25:51,608
+Az önceki devre.
+
+426
+01:25:52,028 --> 01:25:53,148
+Şimdi de şeye bakacağız.
+
+427
+01:25:53,388 --> 01:25:56,728
+T sonsuza giderken ki duruma bakacağız.
+
+428
+01:25:56,888 --> 01:26:00,528
+T sonsuza giderken bu sefer anahtarımız açıldı.
+
+429
+01:26:01,288 --> 01:26:02,208
+Anahtarımız açıldı.
+
+430
+01:26:02,768 --> 01:26:03,827
+Geriye ne kalmış oluyor?
+
+431
+01:26:06,648 --> 01:26:11,167
+Kapasite elemanının belirli bir gerilim değeri var.
+
+432
+01:26:12,051 --> 01:26:13,652
+Yüklenmiş bu.
+
+433
+01:26:14,731 --> 01:26:19,971
+T eşittir, t sıfır anında bu yükleme yapılmış.
+
+434
+01:26:20,291 --> 01:26:24,211
+Yükleme değerimiz de V1 çarpı R2 bölü ve R1 artı R2 idi.
+
+435
+01:26:24,211 --> 01:26:26,271
+Bu yükleme değeriyle başlıyor.
+
+436
+01:26:27,971 --> 01:26:29,951
+Burada şey yazmış, t sonuçlu için yazmamış.
+
+437
+01:26:29,992 --> 01:26:30,791
+Çok özür dilerim.
+
+438
+01:26:35,111 --> 01:26:38,291
+Bu çok kısa bir anlık bunu yapmış.
+
+439
+01:26:39,764 --> 01:26:42,164
+Onu düzeltiyorum. Şöyle yapalım.
+
+440
+01:26:43,264 --> 01:26:46,684
+T eşittir sonsuzluğun için değil de, T eşittir.
+
+441
+01:26:49,744 --> 01:26:54,384
+T büyüktür, T sıfır civarında. Yani bu yakın civarda.
+
+442
+01:26:54,503 --> 01:26:58,324
+T sıfırın hemen ötesinde devre nasıl davranıra bakıyorum şimdi.
+
+443
+01:26:59,891 --> 01:27:27,451
+Dolayısıyla T0'a kadar kapasitemiz şarj oldu. Ulaştığı değerimiz V1 çarpı R2 bölü, R1 artı R2 değerine sahip. Kaynağı devreden çıkarttığımızda bu kol koptu. Sadece burada R2 var, bir VL'miz var, yani endütsantımız var, bir R3 trenzimiz var. Devremiz bu tek gözlü devreye indirgenmiş oldu. Bu kolda akacak akımı kim belirleyecek? Kapasite üzerinde yüklü olan gerilim değeri bunu belirleyecek.
+
+444
+01:27:27,743 --> 01:27:43,963
+Bunu nasıl test edeceğiz? Bunu test ederken de işte bir akım değerimiz var. Bu anakol akımında I diyelim, I akımı diyelim. Bu I akımı şunlara eşit olması lazım. Hem I, C'ye eşit olması lazım hem de Ö, L'ye eşit olması lazım. İkinci dereceden denklem zaten buradan gelecek.
+
+445
+01:27:52,895 --> 01:27:56,735
+D, V, C bölü, D, T'ye eşit. Bunu yazabiliriz.
+
+446
+01:27:57,215 --> 01:28:00,055
+Ö, L dediğimiz değer neye eşit? Ö, L içinde ne diyorduk?
+
+447
+01:28:00,195 --> 01:28:03,895
+B eşittir, L çarpı V diyorduk.
+
+448
+01:28:05,055 --> 01:28:07,915
+L çarpı İ diyorduk, pardon, İ diyorduk.
+
+449
+01:28:08,536 --> 01:28:12,435
+Dolayısıyla D, V, Hattar şöyle yazalım.
+
+450
+01:28:13,075 --> 01:28:16,115
+V, D, T eşittir, L çarpı İ, L diyebiliriz.
+
+451
+01:28:16,175 --> 01:28:18,895
+Dolayısıyla karşıya aktığımızda da Ö, L neye eşitmiş?
+
+452
+01:28:19,315 --> 01:28:26,395
+ÖL'de şuna eşit, 1 bölü L, VL'nin türevi şeklinde bunu yazabiliriz.
+
+453
+01:28:26,456 --> 01:28:28,255
+VL'nin türevi şeklinde yazabiliriz.
+
+454
+01:28:28,695 --> 01:28:32,335
+Bir de buradaki çevre denklemini diyeceğiz.
+
+455
+01:28:32,475 --> 01:28:34,135
+Onu da şu diyeceğiz.
+
+456
+01:28:34,715 --> 01:28:40,555
+VC artı VL artı I çarpı R2 artı R3.
+
+457
+01:28:41,175 --> 01:28:42,195
+Şuna da R diyelim.
+
+458
+01:28:42,895 --> 01:28:44,115
+Bu sıfır eşit olacak.
+
+459
+01:28:44,640 --> 01:28:47,079
+Şunlardan birisi VL olmalıydı.
+
+460
+01:28:58,131 --> 01:29:04,351
+Bir de bunu yazdık. Şimdi buradan demek ki biz hepsini I cinsinden yazmaya çalışacağız.
+
+461
+01:29:04,492 --> 01:29:13,711
+VC dediğimiz gerilim neye eşittir? Mesela VC gerilimimiz, şuradan dönüştürerek yazacak olursak,
+
+462
+01:29:14,391 --> 01:29:25,631
+1 bölü C çarpı İ D T'ye eşit, V L gerilimimiz neye eşit? Bir şey yanlış mı yazdık?
+
+463
+01:29:39,956 --> 01:29:43,136
+Bir şey yanlış yazdım. Şurada bir şey yanlış yazdım.
+
+464
+01:29:45,076 --> 01:29:47,976
+V çarptı, V çarptı, V'deydi.
+
+465
+01:29:48,916 --> 01:29:50,076
+Ha, şunu yanlış yazmışız.
+
+466
+01:29:51,115 --> 01:29:53,595
+Şu integral olacaktı. Bunu yanlış yazmışız.
+
+467
+01:29:53,595 --> 01:29:54,896
+V değil de integral olacak.
+
+468
+01:29:57,076 --> 01:29:59,195
+Bunu yazdık. Şu şekilde yazdık.
+
+469
+01:30:00,615 --> 01:30:03,956
+Bunu da elde etmişiz zaten. Şimdi onu toparlayalım.
+
+470
+01:30:04,876 --> 01:30:07,036
+V, L dediğimiz gerilim şurada vardı.
+
+471
+01:30:07,604 --> 01:30:11,463
+L çarpı DI bölü DT olacak.
+
+472
+01:30:13,224 --> 01:30:14,644
+VL gerilimimiz de belli.
+
+473
+01:30:15,644 --> 01:30:18,604
+İ de kendisi var. Dolayısıyla akımın kendisi var.
+
+474
+01:30:20,304 --> 01:30:21,884
+Kürevi var, integrali var.
+
+475
+01:30:22,283 --> 01:30:25,783
+Akıma bağlı ikinci dereceden bir diferansiyel denklem çıkmış oluyor bundan.
+
+476
+01:30:27,084 --> 01:30:30,784
+Akıma bağlı ikinci dereceden bir diferansiyel denklem burada çıkmış oluyor.
+
+477
+01:30:32,467 --> 01:30:37,467
+Ama DC Analiz tarafına baktığımızda şunu göreceğiz.
+
+478
+01:30:38,467 --> 01:30:48,336
+T sonsuza gittiği vakit, ÖL değerimiz yine 0 olacak. Çünkü artık kapasite açık devre gibi çalışacak. VL değerimiz olarak süre devre oluşuyor yine 0.
+
+479
+01:30:48,336 --> 01:30:56,975
+Kapasite değerimiz 0 ve kapasite gerilimimiz de yine 0'a gidecek. Kapasite gerilimimizin 0'a gitmesi de şu anlamda aslında.
+
+480
+01:30:57,615 --> 01:31:08,055
+T eşittir 0 anında burada bir başlangıç gerilimi var. Ama bu zamanla R dirençleri üzerinden harcanacağı için T sonuçta gittiğinde gerilim değerimizin 0 olması gerekiyor.
+
+481
+01:31:10,055 --> 01:31:15,015
+Yine aynı değerlerin T0 civarındaki sonuçları da
+
+482
+01:31:15,055 --> 01:31:33,735
+Devreye bir anda mevcut olan gerilim kaynağını çektiğimiz için gerilimde değişim var, akımda değişimler var. Dolayısıyla ÖL, I, C, VL, V, C değerleri sıfırdan farklı değerler olacak. Bunları tespit etmek için de az önce çıkarttığımız mantıktaki sonuçlar kullanılacak.
+
+483
+01:31:35,215 --> 01:31:42,315
+Bir başka örnek de ilerleyelim. Başlangıç durumlarını bulabilmek adına iki gözlü bir devremiz var, iki kaynağımız var.
+
+484
+01:31:42,703 --> 01:31:57,003
+Başta yine şurada görmüş olduğunuz anahtar kapalı, daha sonra T0 anında açılıyor. Dolayısıyla eksi sonsuzdan T0 anına kadar devrenin eşlerini çizecek olursak, böyle bir yapı var her iki kaynakta devrede.
+
+485
+01:31:57,003 --> 01:32:09,123
+Bu durumda bu devreyi çözmek istediğimizde bir tane göz üzerinden hesap yapalım. Şöyle bir göz üzerinden hesap yapalım.
+
+486
+01:32:11,091 --> 01:32:28,971
+Ne yapacak bu? İşte x2, bir kol akımımız olsun, i diyelim, i çarpı 5k artı, bu kısa devre oldu, yine i çarpı 5k artı 5 eşittir sıfır olacak.
+
+487
+01:32:35,956 --> 01:32:58,695
+10K çarpı i'yi eksiyle koyduk. Yani ne olmuş oldu? 0.3 mA'lık bir değer. Eksi 0.3 mA'lık bir değer bulmuş olduk. Eğer yanlış bulmadıysam, arttan geçiyor. Böyle bir değer bulduk. Bu i akımımız. Bu ÖL üzerinden geçen akım aynı zamanda.
+
+488
+01:33:02,420 --> 01:33:04,420
+Ters yönünü bulduk sanırım ama.
+
+489
+01:33:04,420 --> 01:33:14,420
+Eksi iki, beş, üç buradaydı. Karşı tarafı attık. Yani bizim için doğru sanırım.
+
+490
+01:33:14,420 --> 01:33:19,420
+En lüktan üzerindeki gerilim düşümü kısa devreli çalıştığı için sıfır.
+
+491
+01:33:19,667 --> 01:33:32,787
+Kapasite elemanı üzerinden açık devre gibi olduğu için akım akmayacak sıfır. Kapasite elemanı üzerindeki gerilim düşümü ne diye bakacak olursak şöyle yapalım onu da. Bu sefer de şöyle bir çevre alıyoruz.
+
+492
+01:33:33,844 --> 01:33:57,904
+Eksi 2 artı, İ çarpı 5K artı, Vc eşittir 0. İ değerimiz bizim, Eksi 0.3 mA'di. K ile çarptığımız zaman, Eksi 3 çarpı, K gitti, 5 kalacak. 1.5, Eksi 1.5 olmuş olacak. Eksi 2 ile topladığımızda, Eksi 3.5 karşıya attığımızda, Vc 3.5 V olarak bulunmuş olacak.
+
+493
+01:34:01,216 --> 01:34:16,195
+3.5 volt olarak başlıyoruz. Hemen şeye bakacak olursak, T0'a yakın bir değerlerdeyken, bu sonsuz için mi yapmış? Tekrar bakalım.
+
+494
+01:34:17,016 --> 01:34:28,315
+Evet, burasını yine T sonsuza doğru giderken için yapmış. Bu durumda bu kaynağımız zaten anahtar açıldığı için devre dışı.
+
+495
+01:34:28,851 --> 01:34:41,511
+Devremiz şu hale indirgeniyor. Bu hale indirgenizde bir göz var ve bu göz açık devreyle tamamlanamamış durumda. Dolayısıyla BC'de göreceğimiz gerilim kaynağın kendisi olacak 5 volt.
+
+496
+01:34:42,011 --> 01:34:52,451
+Devrede akım akmadığı için akım değerlerimiz 0. Endüktans elemanı kısa devre olarak çalıştığı için güçler arasında herhangi bir gerilim, güçüm yok. Gerilim değeri 0 olarak PS9'a giderken bulunabilmiş olacak.
+
+497
+01:34:54,195 --> 01:34:59,536
+Dolayısıyla durum değişimi anında ve T sonrasında giderken bu çözümlemeyi yapabiliriz.
+
+498
+01:35:00,135 --> 01:35:08,215
+T, şey civarındayken, nedir onun adı? T sıfır civarındayken yapacağımız işlem ise biraz daha farklı tabii.
+
+499
+01:35:08,376 --> 01:35:16,395
+O aslında bizim ikinci devreceden diferansiyel denklemize karşılık gelen tutumu oluşturmuş olacak.
+
+500
+01:35:20,275 --> 01:35:20,775
+Tamam.
+
+501
+01:35:35,572 --> 01:35:44,971
+Yine benzer bir senaryo. Burada ise uzun süre bir boyunca, yani eksi sonsuzdan T0'a kadar açık bırakılan bir anahtar. T0'a da kapatılıyor.
+
+502
+01:35:44,971 --> 01:35:53,971
+Buna göre bu devreyi ele alırken şu uç durumlara bakacağız. Birincisi T'nin eksi sonsuz ile.
+
+503
+01:35:54,452 --> 01:36:14,692
+T0 arasında kaldığı yeterince uzun süredeki, dişsili şartlardaki davranışı. Bu durumda açık olduğu için başta devrenin bu kısmı başta yok. Şu kısım var. Bunu da eşdeğer devre olarak çizdiğimde bu endüstrans elemanı kısa devre. Şöyle çizelim, kısa devre. Diğer eleman da kısa devre.
+
+504
+01:36:16,180 --> 01:36:23,060
+Şurada direncimiz var, daha sonra burada bir 5 voltluk kaynağımız var. Böyle bir yapıyla karşılaşmış oluyoruz.
+
+505
+01:36:23,800 --> 01:36:33,079
+Akım değerimizi belirleyen şey kaynak ve direnç değerlerimiz. Dolayısıyla 5 voltlu 5K dediğimiz zaman şu yönle akacak olan bir akımımız var burada.
+
+506
+01:36:33,600 --> 01:36:41,119
+Bu akım değerimizde ne olmuş oluyor? 5 voltlu 5K, bir miliamperlik bir akım olmuş oluyor bu yönde.
+
+507
+01:36:44,307 --> 01:36:56,967
+IL1 değerimiz, IL1 değerimiz, eksi 1 miliampere, IL2 verilen yönde 1 miliampere, VL1 ise 0 volt olarak bulunabiliyor.
+
+508
+01:36:57,487 --> 01:37:01,787
+Vermiş oldu, eksi sonsuzdan, T0'a kadar olan aralıkta bu şekilde bulunabiliyor.
+
+509
+01:37:07,315 --> 01:37:19,315
+Bu şekilde bulunabiliyor. Bir de T sonsuza giderken durumuna bakalım. O da şuradaki devremiz. Yani alttaki devremiz. Burada ne var? Her iki kaynağımız da devrede. Fakat...
+
+510
+01:37:20,532 --> 01:37:44,992
+VL1 ve VL2 kısa devre gibi davranacağı için bir şekilde bir senaryomuz var. İki kaynak ve buna ilişkin bir çözümleme yapacağız. Yapacağımız çözümlemede şuraya V gerilim diyecek olursak, bu yönle akacak akım, V-2 bölü 5000 artı şu
+
+511
+01:37:46,292 --> 01:37:48,931
+Şu yönlü akımımız, bu yönlü akımımız nedir?
+
+512
+01:37:50,731 --> 01:37:56,351
+Aslında şöyle tabii ki, burası bizim ground'ımız olduğu için burası da 0 volt olmuş olacak.
+
+513
+01:37:57,131 --> 01:38:00,351
+O zaman neyi bulmamız isteniyordu?
+
+514
+01:38:00,492 --> 01:38:03,051
+Öl1 ve Öl2 gerilimlerini bulmamız isteniyordu.
+
+515
+01:38:03,652 --> 01:38:07,332
+Dolayısıyla Öl1 gerilimini, akımını şöyle bulabiliriz.
+
+516
+01:38:08,711 --> 01:38:11,412
+Şurası ground olduğu için burası 0 volt.
+
+517
+01:38:11,760 --> 01:38:30,000
+ÖL1 dediğimiz akım, ÖL1 dediğimiz akım, 0-5 bölü 5K, yani 1 mA olmuş oluyor. ÖL2 dediğimiz akım ise, onu nasıl bulacağız? Onu bulurken bir de şuradaki akımı bulalım.
+
+518
+01:38:39,520 --> 01:38:50,700
+i-i ile 1 şeklinde bulunabilir. Oysa i'yi bulabilmek için de 2-0 bölü 5k diyeceğiz. Bu da ne olmuş oluyor?
+
+519
+01:38:50,700 --> 01:38:58,900
+2-10, 0.4 mA yapıyor sanırım değil mi?
+
+520
+01:39:02,387 --> 01:39:14,807
+0.4 mA yapmış oluyor. Yerine koyduğumuz zaman 0.4-1, yani 1.4 mA'de ÖLE2 akımımız yapmış oluyor.
+
+521
+01:39:15,747 --> 01:39:22,427
+VL2 ve VL1'e bakacak olursak, bunlarda kısa devre elemanı davrandığı için, dışlarındaki gerilim düşünleri eşit.
+
+522
+01:39:22,815 --> 01:39:29,695
+Dolayısıyla gerilim düşmüş sıfır, gerilim değerlerimiz de sıfır olmuş oluyor. Bu şekilde ilk koşulları bulmuş oluyoruz.
+
+523
+01:39:29,695 --> 01:39:42,735
+Şimdi bir şeye bakalım son olarak da T0 civarındaki zamanlarda bir devre nasıl davranır? Bu devre burada bir endüktans elemanı ve burada bir endüktans elemanı kalacak şekilde çalışır.
+
+524
+01:39:43,135 --> 01:39:49,895
+Fakat bildiğimiz noktalar ne var? ÖL1 değerimiz eksi 1 mA ile başlamış oluyor. T eşittir.
+
+525
+01:39:50,815 --> 01:39:59,255
+0 artı anında UL1 1 mA ile başlıyor. UL2 ise eksi 1 mA ile başlıyor. Bu değerleri yanlış hatırlıyor olabilirim.
+
+526
+01:39:59,335 --> 01:40:06,055
+Yukarıda ne bulmuştuk? Aynısını yazacağız aslında. Neymiş? UL1 eksi 1 mA'miş. Ters yazmışım.
+
+527
+01:40:12,020 --> 01:40:26,360
+ÖL1, T eşittir, T sıfır anında, eksi 1 mA ile başlıyor. ÖL2'de, T eşittir sıfır artı anında, 1 mA ile başlıyor. Bu inişal koşullar çerçevesinde ikinci dereceden bir fürensel denklem çıkartıp devreyi çözmeye çalışacağız.
+
+528
+01:40:26,660 --> 01:40:38,360
+Burada önemli olan şu aşamada sınır koşullarını bulabilmek. T eşittir, T sıfır anında durum geçişinin olduğu anda, hemen öncesinde T sonsuza giderken,
+
+529
+01:40:38,431 --> 01:40:48,692
+Bunları bulmak önemli. Bunlar hem devreyi doğrulamak adına hem de bir takım kat sayılarımız var bulmamız gereken. O kat sayıları bulmak için kullanılan örnekler.
+
+530
+01:40:54,644 --> 01:40:59,644
+Bir süreye de bir yandan bakıyorum. Hep aynı örnek, aynı örnek devam edersek sıkıntı olmazsın.
+
+531
+01:41:05,876 --> 01:41:09,155
+O yüzden az önceki örneği geçtim.
+
+532
+01:41:10,456 --> 01:41:18,796
+İlk yapacağımız işlem, seri bir RLC devresinin birim basamak fonksiyonuna tepkisi nedir? Onu bulmak.
+
+533
+01:41:20,935 --> 01:41:24,796
+Seri RLC devresinde buradaki öncelikli olarak değerleri...
+
+534
+01:41:31,572 --> 01:41:42,152
+Genel olarak çözeceğiz. Daha sonra genel bir çözüm önerisi yapacağız. Yani buradaki 2K ve mikro hendi gibi değerleri şu anda takılmayalım. Öncelikli olarak devreyi nasıl çözmeliyiz ona bakalım.
+
+535
+01:41:43,471 --> 01:41:52,431
+Şöyle bir şey alalım. Hatta şuraya geçsek belki daha iyi olacak. Seri 1 RLC devresi oluşturduk.
+
+536
+01:41:52,819 --> 01:41:58,640
+Bilim basamak fonksiyonu var. Bu bilim basamak fonksiyonu, bu devre nasıl çalışıyor diye bakacağız.
+
+537
+01:41:58,739 --> 01:42:02,699
+Şimdi bu bilim basamak fonksiyonunu incelediğimizde kaynağımız atılmış bir yolu çizelim önce.
+
+538
+01:42:04,779 --> 01:42:12,119
+1-Ut şeklinde. Yani bu Ut-T0 nasıl çalışıyor? Şöyle bir grafik çizecek olursak.
+
+539
+01:42:13,979 --> 01:42:20,220
+T0 anında 1'e çıkıyor. Bunu eksiyle çarptığımızda yani eksi Ut-T0 ne olacak?
+
+540
+01:42:21,171 --> 01:42:27,991
+O da sıfırda gelecek gelecek gelecek. Sonra burada eksi bire düşmüş olacak.
+
+541
+01:42:29,051 --> 01:42:38,171
+t eşittir p sıfır anda. Bu neydi? u t eksi t sıfır. Buradaki grafimiz eksi u t eksi t sıfır fonksiyonu.
+
+542
+01:42:39,171 --> 01:42:42,471
+Bir de bir eksi u t eksi t sıfırı çizeceğim.
+
+543
+01:42:44,051 --> 01:42:48,551
+Bundan biri bundan çıkarttığımız zaman da şu olacak. Uzunca bir süre boyunca.
+
+544
+01:42:49,235 --> 01:43:16,855
+Bu 1'de kalmış, T0'a düşmüş ve 0'da devam etmiş. Dolayısıyla böyle bir durum var. Bu ne demek? Kaynak uzunca bir süre boyunca, bir de bunu vs ile çarpmış bakın. Şu anda 1 buradaki değerimiz bir ama vs ile çarpılacak. Uzunca bir süre boyunca DC vs gerilimi devreye verilmiş. T eşittir, T0'a bu değer devreden çıkartılıyor.
+
+545
+01:43:17,300 --> 01:43:25,940
+İlk koşullar oluşturulmuş, daha sonra kaynaksız bir RLC devresiyle çözüm elde edilmeye çalışılmış.
+
+546
+01:43:29,555 --> 01:43:40,555
+Şimdi bu durumda devremizi çözebilmek için neler yapmalıyız? Şurada ben yazmaya çalıştım şimdi seri RLC devresini. Aynısı paralel RLC devresi içinde yapabilirsek süper olacak.
+
+547
+01:43:57,555 --> 01:44:00,036
+Şimdi ne demiştik? Bir kaynağımız var.
+
+548
+01:44:10,836 --> 01:44:35,775
+Bir tane kaynağımız var. Bu kaynağımız Vs çarpı 1-Ut-T0 şeklinde çalışan bir kaynak. Daha sonra seri RLC'miz var. Dolayısıyla burada bir L endüksans değerine sahip bir endüksansımız var. Bir direncimiz var. R değeri. Bir de kapasite elemanımız var. Bunun c ve C şeklinde verilmiş olsun.
+
+549
+01:44:36,243 --> 01:44:50,463
+Devremizin referans gerilimi şurası. Buna göre bu devreyi çözmek istesek. En genel anlamda, tabii öncelikli olarak şeye bakalım. Başlangıç koşulları ne oluyor diye bir bakabiliriz.
+
+550
+01:45:03,636 --> 01:45:14,876
+sisteme vs olarak uygulanıyor. Hani onu grafimde çizmiştik şöyle. vs grafimizi çizdik olursak, şurada bir vs değerimiz var.
+
+551
+01:45:15,856 --> 01:45:25,676
+Bunun her cese vs oldu ama bakalım. İsim vermemiş neyse. vs değeri daha sonra sıfıra düşüyor ve sıfırda kalıyor.
+
+552
+01:45:25,676 --> 01:45:30,736
+T sıfırda kaynağımız bu şekilde bir kaynağı. Dolayısıyla şu durum için eşdeğer devremizi çizelim.
+
+553
+01:45:31,283 --> 01:45:39,723
+Eşdeğer devremizde burada bir vs kaynağımız var. vs kaynağı devrede, t0'a kadar, eksik kontrol t0'a kadar vs devrede.
+
+554
+01:45:40,643 --> 01:45:49,603
+Endüktans elemanımız bir kısa devre elemanı gibi çalışıyor. Direnç elemanımız burada. Kapasite elemanımız da aksi gibi bir açık devre elemanı olarak çalışıyor.
+
+555
+01:45:51,063 --> 01:45:52,403
+Başlangıç durumlarını bulalım.
+
+556
+01:45:53,303 --> 01:45:58,663
+I ile t0 eksi neye eşit? Açık devre olduğu için.
+
+557
+01:45:59,956 --> 01:46:16,256
+Akım akımayacağım. ÖL0 dediğimiz şey T0. T0 hemen öncesinde ÖL değerimiz 0. VL değerimiz T0 hemen öncesinde neye eşit? O da 0. Çünkü kısa devreler olduğu için uçlar arasında gerilim düşme farkı yok.
+
+558
+01:46:17,536 --> 01:46:20,916
+İYİNCE değerimize bakalım. T0 hemen öncesinde.
+
+559
+01:46:21,555 --> 01:46:47,735
+Açık devre olduğu için akım akamayacak, 0. Değer sadece nerede var? VC gerilimimiz de var. O da VS değerine sahip. Kapasitemizin ilk başlangıç gerilim değeri bu şekilde. Yine aynı devreyi biz alıp şeye baksak ne olacak? T eşitli sonsuza gittiğindeki eşdeğer devreye bakalım. T eşitli sonsuza gittiğinde VS kaynağımız artık kalkmış durumda.
+
+560
+01:46:49,171 --> 01:46:53,171
+Vs kaynağımız kalkmış durumda, dolayısıyla şöyle bir durum var.
+
+561
+01:46:53,171 --> 01:46:56,171
+Vs değerimiz 0 oldu.
+
+562
+01:46:56,171 --> 01:47:06,171
+Hendüktans elemanımız, kısa devre elemanı, direncimiz var. Kapasite elemanımız da yine açık devre elemanı olarak çalışıyor.
+
+563
+01:47:09,619 --> 01:47:11,619
+Böyle bir yapı var.
+
+564
+01:47:15,619 --> 01:47:23,619
+Böyle bir durumda ise kapasite elemanı normalde hemen T0 civarında aslında bir gerilim değeriyle başlamıştı.
+
+565
+01:47:23,619 --> 01:47:26,619
+Kaynağımızı sıfırladık.
+
+566
+01:47:26,619 --> 01:47:34,604
+Bir endüktans elemanı ve direnç elemanı var. Aslında direnç elemanı üzerinden yavaş yavaş yavaş yavaş bunu yitilecek. Dolayısıyla T sonuçta giderken
+
+567
+01:47:34,676 --> 01:47:48,676
+ÖL sonsuzun sıfır olmasını, işte VL sonsuzun sıfır olmasını, IC sonsuzun sıfır olmasını ve VC sonsuzun yine sıfır olmasını bekliyoruz.
+
+568
+01:47:49,735 --> 01:47:53,115
+Bu iki uçturup, iki tane uç duysu şart durumu oluşturduk.
+
+569
+01:47:53,115 --> 01:47:58,936
+Şimdi şeye bakalım, bu devremizin hemen T0 civarındaki eşlerini çizelim.
+
+570
+01:48:02,420 --> 01:48:12,559
+T0 civarında, hemen T0'ın civarındayken bu devre nasıl çalışıyor?
+
+571
+01:48:13,619 --> 01:48:15,979
+Gerilim kaynağını çıkartmıştık devreden.
+
+572
+01:48:16,880 --> 01:48:19,139
+Enjuptans elemanımız var, burada duruyor.
+
+573
+01:48:20,319 --> 01:48:21,939
+Trenç elemanımız var, duruyor.
+
+574
+01:48:21,939 --> 01:48:29,939
+Bunun I ile T0-0 demiştik.
+
+575
+01:48:31,444 --> 01:48:50,844
+Yine burada bir kapasite elemanımız var. Kapasite elemanı için burada bir BC0-VS değerindeydi. Böyle bir devremiz var. Bunları biliyoruz.
+
+576
+01:48:51,844 --> 01:48:58,684
+Şimdi biz neyi arıyoruz? Burada bir anakol akımı var. Bu I akımını çözmeye çalışacağız.
+
+577
+01:48:59,988 --> 01:49:14,568
+başlangıç değerleri falan filan üzerinden bunu çözmeye çalışacağız. Şuradaki gerilim değerimizi biz VL olarak tanımlayalım. Yine şuradaki gerilimimizi VC olarak tanımlayalım ve her birinden geçen akım yine bir akım olacak. Bu da VR olarak veririz.
+
+578
+01:49:14,568 --> 01:49:22,788
+Biz biliyoruz ki bu çevrede VL artı VR artı VC eşittir sıfır değeri vermek durumunda.
+
+579
+01:49:23,380 --> 01:49:36,100
+ve her bir elemanın akım değeri de birbirine eşit. Yani i kol akımı i, l, y, o da i, c, y, o da i, d, y eşit olmak durumunda. Sonucu eşite gerek yok.
+
+580
+01:49:38,260 --> 01:49:46,159
+Şimdi, tanım bağıntılarından hareketle ilerleyelim. Şimdi neyi biliyoruz? Gerilimler toplamı şeklinde bunu yazacağız.
+
+581
+01:49:49,619 --> 01:49:58,980
+Endüptans elemanı için biz biliyoruz ki VL'nin integrali L çarpı IL'ye eşit.
+
+582
+01:50:01,000 --> 01:50:07,539
+Direnç elemanı için biliyoruz ki IR çarpı R VR'ye eşit.
+
+583
+01:50:08,360 --> 01:50:16,420
+Kapasite elemanı için de biliyoruz ki IC dediğimiz değer C çarpı DVC bölü DT'ye eşit.
+
+584
+01:50:17,108 --> 01:50:27,967
+Bunlardan hareketle şu denklemi yürütmeye çalışalım. Demek ki VR yerine I çarpı R yazabilirim. Hepsi birbirine eşit olduğu için I çarpı R yazabilirim.
+
+585
+01:50:29,148 --> 01:50:41,047
+VC yerine ne yazacağız? VC yerine şunu yazacağız. İntegral I bir bölü C. I çarpı DT yazacağız.
+
+586
+01:50:45,427 --> 01:50:49,387
+VL yerine de kim yazacağız?
+
+587
+01:50:50,707 --> 01:50:51,707
+L çarpı
+
+588
+01:50:51,707 --> 01:50:54,807
+DI bölü
+
+589
+01:50:54,807 --> 01:50:56,688
+DT yazacağız.
+
+590
+01:50:57,967 --> 01:51:02,228
+Bunları düzenleyelim şimdi. Bunların toplamı sıfır olmak durumundaymış.
+
+591
+01:51:11,123 --> 01:51:12,103
+Şöyle yazalım.
+
+592
+01:51:13,103 --> 01:51:14,083
+İ çarpı R
+
+593
+01:51:14,083 --> 01:51:16,843
+artı
+
+594
+01:51:22,292 --> 01:51:46,352
+Burada L çarpı İ'nin türevi var, artı 1 bölü C çarpı İ'nin integrali var. Eşittir sıfır. Burada hepsinin tekrar P'ye göre bir türevini alacak olursak, şu çıkar sonuç olarak, integralin türevi yine kendisi yapacak. 1 bölü Cİ artı,
+
+595
+01:51:47,220 --> 01:51:57,520
+R çarpı i'nin türevi artı, L çarpı i'nin ikinci dereceden türevi sıfır şeklinde bir denklem elde etmiş oluyoruz.
+
+596
+01:51:57,560 --> 01:52:01,680
+Şeyden bir kontrol edelim şimdi, şuradaki denklemden.
+
+597
+01:52:05,492 --> 01:52:12,731
+Nerede yazmış? Bunun gerilim cinsinden yazmış. RC gerilim cinsinden yazmış. Biz de öyle yazabilirdik aslında.
+
+598
+01:52:17,876 --> 01:52:19,876
+Biz de öyle yazalım.
+
+599
+01:52:20,876 --> 01:52:23,876
+Fark etmeden aslında bu da aynı hesaba getirecek.
+
+600
+01:52:23,876 --> 01:52:25,876
+Anafol akımını bulup olacağız.
+
+601
+01:52:25,876 --> 01:52:27,876
+Şimdi burada ne var?
+
+602
+01:52:27,876 --> 01:52:35,876
+Kendisi, birinci dereceden türevi ve ikinci dereceden türevi, kendisiyle neler bağımlı olan bir fonksiyon arıyoruz.
+
+603
+01:52:35,876 --> 01:52:41,876
+Bu fonksiyonumuz nasıl bir şey olabilir? E üzeri alfa t'li bir şey olabilir diyorduk.
+
+604
+01:52:41,876 --> 01:52:43,436
+Dolayısıyla bizim...
+
+605
+01:52:43,507 --> 01:52:49,108
+i akımı için, i t için önerildiğimiz denklem şöyle bir şey olsun diyoruz.
+
+606
+01:52:49,248 --> 01:52:54,328
+e üzeri alfa t şeklinde bir komisyon olsun diyoruz.
+
+607
+01:52:54,328 --> 01:52:55,347
+Şimdi bunu yerine koyalım.
+
+608
+01:52:56,288 --> 01:53:00,568
+1 bölü c çarpı e üzeri alfa t artı v çarpı
+
+609
+01:53:01,300 --> 01:53:16,100
+Şunun birinci dereceden türevi ne olacak? Alfa gelmeye e üzeri alfa t yine gelecek. Artı L çarpı, şimdi bunun ikinci dereceden türevi ne oluyor? Alfa kare çarpı e üzeri alfa t eşittir sıfır şeklinde yazılabilir.
+
+610
+01:53:29,844 --> 01:53:40,944
+Bu değerimiz sıfır olmuş olsaydı, biz I yerine sıfır çözümünü önermiş olacaktık. Yani bu bizim aradığımız bir çözüm değil. Dolayısıyla şunun sıfır olması bizim aradığımız bir çözüm.
+
+611
+01:53:40,944 --> 01:53:50,324
+O zaman alfa kare L artı alfa R artı bir bölüce eşittir sıfır denkleminden hareketle.
+
+612
+01:53:50,804 --> 01:54:13,804
+Hepsini L'ye bölelim bunların. Alfa kare artı alfa R bölü L artı bir bölü LC eşittir sıfır. Değerini elde ederiz. İkinci dereceden bir denklem. Alfa karenin iki tane kökü var. Yani alfanın iki tane kökü var. Alfa bir de alfa iki. Bunlar ne olacak mesela? Kökleri nasıl buluyorduk? Eksi B.
+
+613
+01:54:14,804 --> 01:54:41,524
+Artı eksi kök, B kare eksi 4AC bölü 2A, denklemi bize alfa 1 ve 2'yi verecekti. Bunları yerine koyacak olursak, eksi R bölü L, bu bizim eksi B'miz, artı diyelim, B kare, R kare bölü, R kare bölü, L kare, eksi,
+
+614
+01:54:42,032 --> 01:55:05,231
+4 çarpı, A dediğimiz değer ne? 1, C dediğimiz değer, LC, 1 bölü LC, bölü LC yaptık. Bölü 2A, o da 2. Diğer çözümümüz de, eksi R bölü L, eksi R kare bölü L kare, eksi 4LC, 4 bölü LC.
+
+615
+01:55:09,427 --> 01:55:11,807
+Bölü 2. Bu da bizim ikinci çözümümüz.
+
+616
+01:55:13,728 --> 01:55:15,207
+Bu da bizim ikinci çözümümüz.
+
+617
+01:55:17,728 --> 01:55:20,528
+Birisi alfa 1, birisi alfa 2. Bu şekilde bulduk.
+
+618
+01:55:20,847 --> 01:55:23,768
+Dolayısıyla bizim elimizde şu anda iki tane çözüm olmuş oldu.
+
+619
+01:55:24,627 --> 01:55:32,887
+Biz e üzeri t için, it için önerdiğimiz çözümde iki farklı alternatifle karşılaşmış olduk.
+
+620
+01:55:33,387 --> 01:55:35,207
+Genel çözümümüzü nasıl bulacağız o zaman?
+
+621
+01:55:35,680 --> 01:55:50,640
+İT dediğimiz akımı bir A kat sayısıyla E üzeri alfa 1, şurada hesapladığımız alfa 1 var ya, alfa 1T artı B çarpı E üzeri alfa 2T olarak veriyoruz. En genel çözümümüzü bu şekilde veriyoruz.
+
+622
+01:55:51,796 --> 01:56:16,975
+Şimdi toplam şeklinde olduğu için bizim az önce bulmuş olduğumuz diferansiyel denkleme, o diferansiyel denklemimiz nerede? O diferansiyel denklemimiz şu denklem. Bunun birinci kısmını versek çözüm olur. Eşitlik sıfırı sağlar. İkinci kısmını versek de sağlar. Dolayısıyla bunun E üzeri alfa 1t'nin ve E üzeri alfa 2t'nin birer bir linear birleşim ile bu denklemin çözümüdür diyebiliriz.
+
+623
+01:56:18,323 --> 01:56:33,123
+En genel çözümümüz bu. Alfa 1 ve alfa 2'yi bulduk. Peki A ve B'yi nasıl bulacağız? A ve B'yi bulabilmek için de bizim yapmış olduğumuz işlemler vardı ya. Nedir onun adı? Neredeydi onlar? Hemen bulalım.
+
+624
+01:56:33,643 --> 01:56:42,923
+Şurada bulmuş olduğumuz değerleri kullanacağız. Burada bulmuş olduğumuz değerleri kullanacağız. Örneğin ÖLT0'ın 0 olması gerekiyormuş.
+
+625
+01:56:43,380 --> 01:56:52,059
+Bu arada bu T olarak yazdığımız şeyler, durum değişimi T0 anında olduğu için, 0 anında olmadığı için aslında şöyle yazmak daha uygun.
+
+626
+01:56:52,720 --> 01:56:57,220
+T-T0, T-T0 diye yazmamız daha uygun.
+
+627
+01:56:58,599 --> 01:57:00,599
+Durum değişimi T0'da olduğu için.
+
+628
+01:57:01,119 --> 01:57:02,380
+Şimdi biz ne biliyoruz?
+
+629
+01:57:03,059 --> 01:57:06,279
+Ülüğe'nin veya bu da zaten üliye eşit.
+
+630
+01:57:06,739 --> 01:57:21,380
+T0'daki, T0 eksideki değeri ne olacak? 0'da değil mi? Bakalım şuradan tekrar kontrol edelim. Bu değerimiz 0 olacak. Dolayısıyla biz gelip burada T yerine T0 koyacağız.
+
+631
+01:57:21,380 --> 01:57:32,420
+E üzeri 0, 1. E üzeri 0, 1. Dolayısıyla buradan çıkan sonucumuz A artı B değerimizin 0 oldu. Birinci çözümlememiz bu.
+
+632
+01:57:32,832 --> 01:57:57,532
+İkinci çözümlememiz de şu olacak. Bu i değerini getirip, bu aynı zamanda kapasitenin akımı ya, bunu getirip kapasite akımı ile ilişkilendireceğiz. Nasıl yapıyorduk onu? Hemen şuradan bakalım. Şurada bir denklem var. Akım değerimiz t eşittir, yani nedir onun adı? Akım değerimizi biliyoruz. Bu akım değerinin integraliydi aslında.
+
+633
+01:58:00,659 --> 01:58:11,220
+Yani bu ÜT değerimiz var ya, ÜT değerimizin integralini alıp, bunun C çarpı VCT olduğunu söyleyebiliriz.
+
+634
+01:58:11,840 --> 01:58:20,520
+Ve biz bu denklem içerisinde, VCT0'ında ne kadardı? VS geriliminde olduğunu biliyoruz.
+
+635
+01:58:20,520 --> 01:58:26,520
+Dolayısıyla ikinci denklem de buradan girecek. Getirip burada yerine koyacağız. Dolayısıyla tekrar,
+
+636
+01:58:27,667 --> 01:58:32,547
+t yerine 0 koyduğumuzda a artı b gibi bir terim kalmış oluyor.
+
+637
+01:58:33,587 --> 01:58:40,287
+A artı b dt eşittir. c çarpı, bu da bs'ye eşit.
+
+638
+01:58:40,287 --> 01:58:50,287
+Oysa bunun integralini aldığımızda da a artı b çarpı t diyebiliriz.
+
+639
+01:58:51,380 --> 01:58:57,220
+t yerine t'si koyacağımız vakit, bu da c çarpı vs'ye eşit olmuş olacak.
+
+640
+01:59:00,564 --> 01:59:15,324
+Veya integral değerini alıp da, işte, uygun şekilde koyarak da olabilir. Dolayısıyla buradan da bir ikinci denkleminiz gelmiş olacak. İkinci koşulu da bu şekilde sağlamış olmamız gerekiyor. İki bilinmeyen iki denklemle buradan çözümü elde etmemiz mümkün olacak.
+
+641
+01:59:22,768 --> 01:59:43,708
+VC gerilimin cinsinden yazmaya çalışmıştık. Biz de şu denklemi yazmıştık. Daha sonra hepsini İ cinsinden yazmaya çalışmıştık. Halbuki biz biliyoruz ki İL dediğimiz akım aslında şurada VC gerilimin ikindilerin neden süreviyle ilişkisi.
+
+642
+01:59:44,212 --> 02:00:08,932
+İ, R dediğimiz akım, V, C'nin türeviyle ilişkili, bir de V, C gerilimlerimiz var. Bu şekilde yazdığımız zaman daha pratik bir yazım elde etmiş oluyoruz. Yine aynı ikinci dereceden bir denklem. Başlangıç koşullarını da elde ettikten sonra çözüm önerimiz bu şekilde. Bu çözüm önerisi içerisinde işte S'leri buluyoruz. İki tane çözüm değerimiz var. Bunları buluyoruz. Bunlardan sonra da
+
+643
+02:00:11,412 --> 02:00:34,511
+A1 ve A2 kat sayılarını bulabilmek için ne yapacağız? Bu sefer de başlangıç koşullarının, BC'nin T0'daki değerinin 0 olmasını ve akım değerimizin T0'ndaki 0 olması özelliklerini kullanarak burada 2 bilinmeyen 2 denklemle çözümü elde etmemiz gerekiyor arkadaşlar.
+
+644
+02:00:34,511 --> 02:00:36,091
+Şimdi ben bu noktada duracağım.
+
+645
+02:00:36,787 --> 02:00:52,467
+Daha sonraki hafta buradan devam edeceğiz. Burada köklerin, yani denkleminiz süzdü ya, S1 ve S2 köklerini buluyoruz ya, bulmuş olduğumuz bu köklerin durumuna göre, ki bu durum ne olabilir?
+
+646
+02:00:53,767 --> 02:01:02,187
+İki ayrı real kök olabilir, eşlenik kök olabilir veya imajiner kökler olabilir. Bunların durumuna göre elde edeceğim çözümler,
+
+647
+02:01:02,707 --> 02:01:09,707
+Over-damp, Under-damp veyahut da Critical-Damp şeklinde 3 farklı senaryo oluşturuyor.
+
+648
+02:01:09,707 --> 02:01:13,515
+O 3 farklı senaryoyu biraz daha detaylı bir şekilde inceleyeceğiz.
+
+649
+02:01:13,619 --> 02:01:31,060
+Şimdi bu noktada dersimize son vereceğim. Bir sonraki saat için Google Classroom'dan kontrol edelim. Bize sorulan çözümüyle ilgili asistan arkadaşlarımız yardımcı olacaklar. Tek bir grupta birleşilecektir. Onunla ilgili duyuru yapılmış oldu. Kontrol edeyim.
+
+650
+02:01:39,507 --> 02:01:46,047
+Ben benim dersim linkini paylaşayım, diğer grup buraya girsin. Hemen şöyle yapalım.
+
+651
+02:01:47,748 --> 02:01:59,087
+Önlerden participan, invite, copy, invite link diyorum. Daha sonrasında da bu linki paylaşalım.
+
+652
+02:02:03,347 --> 02:02:11,428
+Arkadaşlar, dersten çıkmayın. Ben diğer grup için de duyuru olarak yazayım şimdi. Google Classroom'a da yazıyorum.
+
+653
+02:02:46,963 --> 02:02:48,963
+İki öğrencilere, şimdi,
+
+654
+02:02:50,284 --> 02:02:51,564
+On için katılacak.
+
+655
+02:02:53,884 --> 02:02:55,404
+O, iki öğrencilere,
+
+656
+02:03:09,747 --> 02:03:21,228
+Bu şekilde gönderdi. Dediğim gibi grup 1'deki öğrenciler çıkmasınlar. Grup 2'deki öğrenciler buraya katılım sağlayacaklar. Google Klasikları düğürü olarak koydum.
+
+657
+02:03:31,572 --> 02:03:35,332
+Dersin buraya kadar olan kısmıyla ilgili sonuç dediğimiz bir şey var mıydı bu arada?
+
+658
+02:03:41,011 --> 02:03:43,751
+Örneklerle biraz daha netleşecektir, öyle söyleyeyim.
+
+659
+02:05:02,068 --> 02:05:06,047
+Hocamızın kapalıma olma hostesu çözüme geçeceğiz.
+
+660
+02:05:12,083 --> 02:05:13,564
+Bu dağmenin adı kendin mi?
+
+661
+02:05:23,891 --> 02:05:27,112
+Bir dakika sonra, istersen gel buraya, gel gel.
+
+662
+02:05:35,891 --> 02:05:37,891
+Niye bulamıyorum [öğrenci] ya?
+
+663
+02:05:39,331 --> 02:05:43,331
+[öğrenci] kendisini ne gördük, gördüm ama önce.
+
+664
+02:05:43,331 --> 02:05:45,331
+Gördüm, gördüm, tamam.
+
+665
+02:05:50,644 --> 02:05:52,983
+Post olarak ayarladım, bundan sonra sendin.
+
+666
+02:05:53,403 --> 02:05:55,583
+Sağ olun hocam. Teşekkür ederim.
+
+667
+02:05:56,304 --> 02:05:56,743
+Sağ olun.
+
+668
+02:05:58,563 --> 02:06:00,243
+Arkadaşlar merhaba herkese.
+
+669
+02:06:04,083 --> 02:06:05,703
+Sesimi alıyorsunuz değil mi?
+
+670
+02:06:11,475 --> 02:06:37,275
+Tamam, süper. Şimdi gençler, bugün sizinle, sonlarınıza bakalım dedik. Baştan sona kadar çözeceğiz ama, bir saatlik bir süremiz var. Bir saatlik süre içerisinde de bütün soruları tek tek böyle ayrıntısıyla çözmek çok mümkün olmayacak.
+
+671
+02:06:38,260 --> 02:06:54,540
+O yüzden de şey değil, hani bir dakika, diğer şubedeki arkadaşlarım da buraya gelmesi gerekiyor ama bunu nasıl yapabiliriz? Bir dakika.
+
+672
+02:08:56,307 --> 02:09:04,507
+Arkadaşlar, Google Class'ından duyurduk ama bir de WhatsApp gruplarınızdan da duyurmanızı rica ediyorum.
+
+673
+02:09:05,347 --> 02:09:12,847
+Hamza Hoca'nın grubu da bu şubeye gelirse uygulamaya dahil olur.
+
+674
+02:09:14,207 --> 02:09:18,307
+Haber olmayan kalmasın. Eğer WhatsApp grubunuz varsa...
+
+675
+02:09:18,948 --> 02:09:20,127
+Atlık hocam, gruptan da.
+
+676
+02:09:21,068 --> 02:09:21,707
+Tamam.
+
+677
+02:09:22,355 --> 02:09:30,376
+Süper, ben iki üç dakika bekliyorum. Herkes toplansın, ondan sonra başlayalım, olur mu?
+
+678
+02:09:32,996 --> 02:09:33,555
+Tamam hocam.
+
+679
+02:09:34,496 --> 02:09:37,195
+Hocam, dersin kayıt linkinde klastürme koymanız mümkün mü?
+
+680
+02:09:38,235 --> 02:09:43,376
+İzilebilmemiz adına. Hani çünkü Hamza hocadan görenler şey göremiyorlar da online yıldızda, bu dersin kaydını.
+
+681
+02:09:45,296 --> 02:09:47,596
+Bu dersin kaydını göremiyorlar mı?
+
+682
+02:09:48,851 --> 02:09:55,271
+Şöyle ben Hamza Hoca'dan geldiğim için Hamza Hoca'nın kaydı var sadece. Bu dersin kaydını göremeyeceğim muhtemelen ondan yıldızdan, o yüzden.
+
+683
+02:09:56,492 --> 02:10:13,992
+Anladım. Onu hocalarla ben bir konuşayım. Çünkü görememesi gayet normal. Bu dersi Erkan Hoca'nın şubesindekiler daha sonra izleme imkanlar sahip olacaklar ama katılamayan öğrencilerimiz için.
+
+684
+02:10:14,547 --> 02:10:21,547
+Ne yaparız? Eğer video dosyası indirilebiliyorsa Google Classroom'la paylaşabiliriz.
+
+685
+02:10:22,407 --> 02:10:25,467
+Böyle bir şeyler yapabiliriz. Ben bu hocalarla konuşayım.
+
+686
+02:10:27,047 --> 02:10:33,207
+Tekrar durma göre çözüm yolu duyurulara koyarım. Olur mu? Öyle yapalım.
+
+687
+02:11:59,667 --> 02:12:03,667
+Evet, başlayalım artık. Herkese gelmiştir herhalde.
+
+688
+02:12:04,927 --> 02:12:07,787
+Şimdi arkadaşlar, birinci sorudan başlayacağım.
+
+689
+02:12:08,467 --> 02:12:17,667
+Ama benim anladığım kadarıyla zaten her soruyu tek tek anlatmaya bir saatlik bir süre yetmeyecek.
+
+690
+02:12:17,667 --> 02:12:24,787
+O yüzden kalan soruları, çözünürlerini dinlemek isterseniz.
+
+691
+02:12:25,716 --> 02:12:48,436
+Bana mail atabilirsiniz, hocam biz soruyu siz yetişmedik, anlatamıyordunuz. Ben de cevabını öğrenmek istiyorum deyip mail atarsanız size yardımcı olmaya çalışırım. Bu şekilde. Şimdi başlayalım isterseniz.
+
+692
+02:12:58,068 --> 02:12:58,368
+Evet.
+
+693
+02:13:09,555 --> 02:13:11,295
+Ekranımı görüyor musunuz?
+
+694
+02:13:11,955 --> 02:13:12,635
+Evet hocam.
+
+695
+02:13:13,655 --> 02:13:14,795
+Süper, harika.
+
+696
+02:13:15,955 --> 02:13:23,795
+Birinci sorumuz gayet kolay bir soru. KVL kullanarak bulunur demiş. KVL kullanmamış şart değil.
+
+697
+02:13:24,835 --> 02:13:25,175
+Burada.
+
+698
+02:13:26,895 --> 02:13:29,695
+Ama ben yine de klasik yöntemle yaptım.
+
+699
+02:13:30,275 --> 02:13:33,035
+Bakın arkadaşlar, burada üç tane göz var.
+
+700
+02:13:33,795 --> 02:13:35,155
+Üç tane çevrim var.
+
+701
+02:13:35,923 --> 02:13:39,204
+Bu gözlerin denklemlerini teker teker yazdım.
+
+702
+02:13:40,984 --> 02:13:45,423
+Birinci gözle 24 voltu bu tarafa aldım.
+
+703
+02:13:46,423 --> 02:13:49,003
+Bakın şurada 24 volt.
+
+704
+02:13:49,744 --> 02:13:57,704
+Sonra 4 volt zaten karşı tarafta olduğu için yine 24 voltla aynı işarete sahip oluyor.
+
+705
+02:13:58,604 --> 02:14:00,124
+2 volt da aynı şekilde.
+
+706
+02:14:01,555 --> 02:14:04,835
+Sonra buradan, bu çevrinden devam ediyorum.
+
+707
+02:14:05,555 --> 02:14:10,595
+Eksi üç voltumuz var. Neden? Çünkü işaretler değişti artık.
+
+708
+02:14:10,995 --> 02:14:12,595
+Gördüğünüz gibi.
+
+709
+02:14:12,995 --> 02:14:14,595
+Sonra geçiyorum.
+
+710
+02:14:16,035 --> 02:14:19,395
+Alt tarafta altı volt var.
+
+711
+02:14:20,035 --> 02:14:24,035
+Altı voltu da toplayıp yirmi dört voltu buluyorum.
+
+712
+02:14:24,435 --> 02:14:27,155
+Sonra bunları tümden topladığımda,
+
+713
+02:14:27,235 --> 02:14:28,835
+eksi ve eksi.
+
+714
+02:14:29,716 --> 02:14:32,716
+Burada, eksi dört bol olarak kalıyor.
+
+715
+02:14:35,056 --> 02:14:36,816
+Sorusu olan var mı?
+
+716
+02:14:39,195 --> 02:14:40,115
+Yok.
+
+717
+02:14:41,776 --> 02:14:43,536
+E şıkkı doğru cevaptı.
+
+718
+02:14:45,056 --> 02:14:47,476
+Geçiyoruz. Evet, ikinci sorumuza gelelim.
+
+719
+02:14:48,076 --> 02:14:50,296
+İkinci sorumuz ne diyormuş? Bakalım.
+
+720
+02:14:51,296 --> 02:14:54,096
+B elemanından sola doğru on amper.
+
+721
+02:14:55,444 --> 02:15:04,064
+B elemanı da sola doğru 10 amper. B elemanı 3 voltluk bir gerilim kaynağı. Tamam.
+
+722
+02:15:05,423 --> 02:15:17,524
+R3 direncinden aşağı doğru 3 amper. R3 direncinden aşağı doğru 3 amper. R3 direncinden aşağı doğru 5 amper akım akarsa.
+
+723
+02:15:18,484 --> 02:15:24,804
+R5 trendinden geçen akımın değeri ve Vx polarasyonun referansında yönü nedir?
+
+724
+02:15:25,924 --> 02:15:26,444
+Bakalım.
+
+725
+02:15:28,884 --> 02:15:31,604
+Yine burada 3 tane düğümümüz var.
+
+726
+02:15:32,304 --> 02:15:34,944
+Aynı devre zaten, yukarısıyla aynı devre.
+
+727
+02:15:35,624 --> 02:15:36,084
+Bakalım.
+
+728
+02:15:36,784 --> 02:15:39,264
+Birinci düğümün denklemini yazıyorum.
+
+729
+02:15:40,024 --> 02:15:40,804
+Ne var burada?
+
+730
+02:15:41,364 --> 02:15:42,664
+24 volt var.
+
+731
+02:15:43,347 --> 02:15:53,627
+Sonra ne var? Eksi 4 volt oldu. Neden? Çünkü işaretleri ters, ters bağlanmış. Sonra yine bir eksi koyuyorum. Niye?
+
+732
+02:15:53,627 --> 02:16:07,467
+Bir de şunu belirteyim. Birinci düğümün saat yönünde, birinci düğümün içerisinde saat yönünde olan akıma A dedim.
+
+733
+02:16:08,787 --> 02:16:21,787
+İkinci düğümün içerisinde saat yönünde olan akıma IB dedim. Üçüncü düğümün içerisinde saat yönünde akan akıma da ÖC dedim. Tamam mı?
+
+734
+02:16:23,787 --> 02:16:35,788
+Sonra birinci düğüm içerisindeki çevrim denklemini yazıyoruz. Saat yönünde R3'ün üzerinden akan
+
+735
+02:16:36,468 --> 02:17:01,587
+Akımdan bahsediyorum şu anda. Saat düğümünde IA olacak. Yan düğümde IB olduğu için saat düğümünde tersi olacak. IA eksi IB çarpı R'iz. Geçtim. Devam ediyorum düğüme. Eksi 3V. Geçtim. Devam ediyorum düğüme. Eksi 6V. Eşittir sıfır. Değil mi?
+
+736
+02:17:04,435 --> 02:17:15,195
+Buradan matemiksel sistemleri yaptım. Ne çıktı? IA-IB çarpı R eşittir. Ne çıktı? 11O.
+
+737
+02:17:17,115 --> 02:17:27,315
+Benim soruda R3 trencinden aşağı doğru 3A akıyormuş ya. Bu ne anlama geliyor benim bu düğmanın üzerinde?
+
+738
+02:17:31,540 --> 02:17:35,940
+Nedir? 3 amperedir. Değil mi?
+
+739
+02:17:38,440 --> 02:17:48,940
+İkinci düğüme geçiyorum. İkinci düğüme geçiyorum. Bu sefer saat yönünde ama bu sefer ıb-ıa yapıyorum.
+
+740
+02:17:49,340 --> 02:17:54,060
+Neden? Çünkü akımın yönünü tersine çeviriyor.
+
+741
+02:17:54,900 --> 02:17:58,080
+ıb-ıa çarpı R3
+
+742
+02:17:58,548 --> 02:18:21,368
+Eksi 2 volt, yukarıda. Artı, R4 çarpı, IB eksi IC. IB neydi? Benim ikinci düğümün içindeki akan, akım. IC neydi? Üçüncü düğümün içinde akan, saat yönünde akan, akım.
+
+743
+02:18:21,747 --> 02:18:35,867
+Dolayısıyla R4'ten geçen akım nedir? I, B, I, C'dir değil mi? Çarpı R4'ü yanına koyduğumda oradaki potansiyel fankı denkleme yerleştirmiş oluyoruz.
+
+744
+02:18:37,147 --> 02:18:47,387
+Buradan I, B, I, C, 5A soruda verilmiş. Bakın R4 direndiğinden aşağı doğru 5A akımı geçiyor.
+
+745
+02:18:48,659 --> 02:19:13,200
+R4 çarpı B eksi I C'de 13 volt çıkıyor bu denklemden hareketler. Zaten biz zaten B eksi A çarpı R3'ü eksi 11 volt bulmuştuk. Buradan da bu R4 çarpı B eksi I C'yi 13 volt olarak bulduk. Geçiyorum üçüncü düğümüne.
+
+746
+02:19:15,156 --> 02:19:28,476
+Üçüncü düğümde artık her şey çok açık seçik. Neden? Çünkü bakıyoruz, şu R4'te oluşan potansiyel fark 13 volt. Değil mi?
+
+747
+02:19:28,476 --> 02:19:38,736
+Bunu artı alırsa, buradaki 3 voltu ne almam lazım? Eksi almam lazım. Buradan geçtim. V eksi.
+
+748
+02:19:41,108 --> 02:19:49,507
+Ve sonra da eksi 8 volt yazdım. Sıfıra eşitledim. Üçüncü düğümünde denklemini yazdım.
+
+749
+02:19:49,507 --> 02:20:02,668
+E burada her şey artık çok belli zaten. Ve eksi 2 volt çıktı. Yukarıda zaten A eksi B'yi 3 amper bulmuştum.
+
+750
+02:20:07,891 --> 02:20:17,891
+UB-UC'yi de 5 Amper bulduğum için, UAN benim UC artı 8 Ampere eşit oldu.
+
+751
+02:20:17,891 --> 02:20:33,771
+10 Amper de neydi? B elemanından sola doğru alkan atı. Yani UC artı 8'e tekabül ediyor ki, benim UC'm da artık nedir?
+
+752
+02:20:34,355 --> 02:20:41,355
+Bu denklemlerden 2 amper çok rahat bir şekilde çıkartabiliyorum.
+
+753
+02:20:42,015 --> 02:20:48,095
+Hocam, artı 2A mı, eksi 2A mı olduğunu nereden biliyorum?
+
+754
+02:20:48,695 --> 02:20:50,396
+Nereden biliyorum arkadaşlar?
+
+755
+02:20:51,275 --> 02:20:56,855
+Vx'ten. Vx'im eksi 2 volt değil, 2 volt çıktı.
+
+756
+02:20:57,556 --> 02:21:00,835
+Dolayısıyla benim ürüncem de 2 amper.
+
+757
+02:21:01,203 --> 02:21:03,203
+Çıkmak durumunda.
+
+758
+02:21:04,644 --> 02:21:06,644
+Var mı sözü olan?
+
+759
+02:21:08,484 --> 02:21:10,484
+Tamam, geçiyorum.
+
+760
+02:21:15,028 --> 02:21:18,927
+Gerçekten anlıyorsunuz değil mi anlattığım şeyleri?
+
+761
+02:21:19,648 --> 02:21:20,328
+Evet hocam.
+
+762
+02:21:21,528 --> 02:21:23,587
+Ben kendi kendime anlatmıyorum yani.
+
+763
+02:21:26,907 --> 02:21:28,387
+Tamam, geçiyorum.
+
+764
+02:21:29,347 --> 02:21:30,587
+Üçüncü soruya gelelim.
+
+765
+02:21:31,188 --> 02:21:32,868
+Üçüncü soruda nelerimiz var?
+
+766
+02:21:33,587 --> 02:21:34,708
+Kondansatörlerimiz var.
+
+767
+02:21:35,528 --> 02:21:38,768
+Gayet güzel bir soru.
+
+768
+02:21:39,987 --> 02:21:42,307
+Üçüncü soruda ne olacak arkadaşlar?
+
+769
+02:21:42,987 --> 02:21:45,347
+Kırk K'dan akım geçmeyecek.
+
+770
+02:21:46,007 --> 02:21:46,247
+Neden?
+
+771
+02:21:47,087 --> 02:21:48,948
+Çünkü burada bir ne var?
+
+772
+02:21:50,147 --> 02:21:51,407
+Kondansatör var.
+
+773
+02:21:51,407 --> 02:22:04,747
+O yüzden biz VC2, yani C2 kondansatöründe toplanan kapasiteye VC2 dedik.
+
+774
+02:22:05,652 --> 02:22:27,292
+C1 kondansatöründe toplanan kapasiteye, VC1 dedik. C3 kondansatöründe toplanan kapasiteye de VC3 dedik. Nasıl hocam bu olur? Şöyle olur arkadaşlar. Bir kere devremizin gerilimi, toplantı gerilimi kaç volt?
+
+775
+02:22:30,899 --> 02:22:31,619
+Kaç volt?
+
+776
+02:22:34,219 --> 02:22:35,619
+20 değil mi hocam?
+
+777
+02:22:36,559 --> 02:22:43,399
+Evet, 20. Sadece biriniz cevap veriyor. Onu mu seçtin? Sözcü olarak.
+
+778
+02:22:46,219 --> 02:22:56,099
+20 volt değil mi? Dolayısıyla ben bu 20 voltu devreme paylaştıracağım. Burada bir direnç var.
+
+779
+02:22:57,203 --> 02:23:13,203
+Burada da dirençlerim var ve kondansatörlerim var. Bakalım nasıl oluyor? Benim bu mantıkla VC2 bölü V toplam. V toplamım kaç? 20V.
+
+780
+02:23:14,043 --> 02:23:23,804
+VC2 mi kaç? VC2 derken neyi kastediyorum? Şunu kastediyorum gençler. Şurası A noktası olsun.
+
+781
+02:23:24,691 --> 02:23:26,691
+Burası B noktası olsun.
+
+782
+02:23:27,891 --> 02:23:34,291
+A ve B noktaları arasındaki potansiyel farkı kastediyorum aslında.
+
+783
+02:23:36,591 --> 02:23:37,431
+Anlaştık mı?
+
+784
+02:23:38,451 --> 02:23:42,971
+BC2, dirençlerle orantılı olarak.
+
+785
+02:23:43,731 --> 02:23:46,131
+Çünkü benim dirençlerim seri bağlanmış.
+
+786
+02:23:46,131 --> 02:23:50,991
+Bakın, 30 kilom var, bir de 50 kilom var.
+
+787
+02:23:51,987 --> 02:23:53,268
+Gördüğünüz gibi.
+
+788
+02:23:54,768 --> 02:24:07,367
+Benim seri bağlanmış dirençlerim varsa, elimde olan potansiyel fark da bu dirençlerin oranında doğru orantılı olarak paylaştırılacak.
+
+789
+02:24:08,987 --> 02:24:12,647
+Tamam, VC2 bölü V toplam.
+
+790
+02:24:13,788 --> 02:24:15,467
+VC2'nin neresiydi?
+
+791
+02:24:16,027 --> 02:24:18,948
+A ve B noktaları arasındaydı.
+
+792
+02:24:19,443 --> 02:24:43,884
+Oradaki dirençler ne? 30 kilo, 50 kilo. 30 artı 50'yi paya yazdım. V toplamımı kaç? 20 mi? Pardon. V toplamımıma tekabül eden dirençler nereleri? 20 kilo, 30 kilo, 50 kilo. Onu da paydaya yazdım.
+
+793
+02:24:44,531 --> 02:25:09,751
+Benim, VC2'min ve toplam oranı kaç çıktı? 4 bölü 5. Bunu 20 ile oranlarsa, VC2'm kaç? 16 kubos çıktı değil mi? Tamam, VC1 ve VC3'ümüzü de bulalım. Onu nasıl bulabiliriz? Şöyle bulabiliriz. Yine aynı mantık. VC1'im,
+
+794
+02:25:11,891 --> 02:25:16,572
+Hangi direncin üzerinde? 30 kilomuk direncimin üzerinde.
+
+795
+02:25:18,332 --> 02:25:22,612
+VC3'üm de 50 kilomuk direncimin üzerinde.
+
+796
+02:25:23,292 --> 02:25:36,412
+Yine ben bu 16 voltu 3 ve 5 olarak, 3K ve 5K olarak paylaştırdığımda VC1'im 6 volt, VC3'üm de 10 volt çıkıyor.
+
+797
+02:25:37,412 --> 02:25:39,211
+Yani benim doğru cevabım.
+
+798
+02:25:39,520 --> 02:25:40,520
+C şıkkı.
+
+799
+02:25:41,520 --> 02:25:49,119
+BC 2'üm 16, BC 3'üm 10, BC 1'ümde 6 bol çıkıyor.
+
+800
+02:25:51,220 --> 02:25:53,700
+Dördüncü soruya gelelim gençler.
+
+801
+02:25:59,956 --> 02:26:07,195
+Dördüncü soru da eşdeğer kapasitansı hesaplıyoruz. Nasıl hesaplıyorduk? Söyleyin bakalım, biraz müyondan uyumak.
+
+802
+02:26:08,795 --> 02:26:09,956
+Nasıl hesaplıyorduk?
+
+803
+02:26:12,155 --> 02:26:14,515
+Eşdeğer kapasitansı hesaplarken.
+
+804
+02:26:17,216 --> 02:26:19,216
+Dirençlerdekinin tersi gibi mi yapıyorduk hocam?
+
+805
+02:26:20,315 --> 02:26:21,915
+Evet, değil mi?
+
+806
+02:26:23,379 --> 02:26:27,959
+Dirençlerde ne yapıyorduk? Paralel bağlanırsa dirençlerde ne yapıyorduk?
+
+807
+02:26:31,603 --> 02:26:36,383
+Paralel bağlanırsa dirençlerde ne yapıyorduk? Bir bölüsünü alıyorduk değil mi?
+
+808
+02:26:39,144 --> 02:26:49,423
+Ama dirençlerde seri bağlarsa topluyorduk. Ama kapasitansları hesaplarken ne yapacağız? Tam tertini yapacağız.
+
+809
+02:26:50,263 --> 02:26:56,463
+Eşdeğer kapasitansları hesaplarken. Bakalım devreye. Devreye bakalım.
+
+810
+02:26:59,156 --> 02:27:04,956
+Burada 12 Fahrat'la, 10 Fahrat.
+
+811
+02:27:08,659 --> 02:27:11,159
+Kapasitanslar birbirine ne?
+
+812
+02:27:15,219 --> 02:27:37,539
+Ne bunlar? Paralel. Değil mi? Paralel. 7 faratta bunlara ne? Seri. Dolayısıyla ben 12 ile 10 ne yapacağım? Toplayacağım. Tam dersini yapıyorum ya. 7 de seri olduğu için.
+
+813
+02:27:40,564 --> 02:28:07,004
+Onu da bir bölürü işleme tabiye tutacağız. Tamam. Sonra, burada dört farat kapasitansı da, bunların hep şu gruba paralel. Değil mi? Onda ne yapıyorum? Tam tersini yaptığım için topluyorum. Sonra,
+
+814
+02:28:09,396 --> 02:28:35,175
+Bu kısma geçiyorum. İki kısım var. Çok rahat bir şekilde görünüyor zaten. Şu on iki faratla bir faratlık kapasitanslarla birbirine seri bağlanmış. Şunlar. Şu ikisi. Birbirine seri bağlanmışsa ne yapıyordum?
+
+815
+02:28:35,924 --> 02:28:51,604
+Bir bölüm olarak topluyordum değil mi? Sonra beşte bunlara paralel bağlandığı için bunları da topluyordum. Topluyorum yani. Sonra
+
+816
+02:28:55,924 --> 02:29:05,664
+Bu iki grupta birbirine paralel olduğu için aynı noktalara sahip oldukları için bir başka deyişler, aynı noktalar arasında oldukları için.
+
+817
+02:29:06,724 --> 02:29:12,604
+Ne yapıyorum? Bunları da yine bir bölürü bir vaziyette kopuyor.
+
+818
+02:29:13,244 --> 02:29:20,244
+Bakalım. 12-10'da 22, bir bölü 22, 7 seri olduğu için.
+
+819
+02:29:20,788 --> 02:29:28,407
+1 bölü 7 yaptım, 29 bölü, üzerine 4 çıktı. Ters çevirdim tabii ki 1 bölü olduğu için.
+
+820
+02:29:29,188 --> 02:29:38,188
+Üzerine 4 bölü 29, 4'ünü yaptım, paralel olduğu için topladım. 270 bölü 29 çıktı, sol taraf.
+
+821
+02:29:39,067 --> 02:29:46,448
+Sağ tarafa geçiyorum. 12 ile 1 parattık şey, birbirine seri bağlı olduğu için.
+
+822
+02:29:47,059 --> 02:29:49,059
+Bir bölümü olarak topladım.
+
+823
+02:29:51,779 --> 02:29:55,059
+Ters çevirdim. Daha sonra on iki bölü on üç çıktı.
+
+824
+02:29:55,059 --> 02:30:01,059
+Beş parlaklık kapasitadan bunlara paralel olduğu için bunu da topladım.
+
+825
+02:30:01,059 --> 02:30:04,059
+Yetmiş yedi bölü on üç çıktı.
+
+826
+02:30:04,059 --> 02:30:09,059
+Daha sonra bu iki büyük parça da birbirine...
+
+827
+02:30:09,059 --> 02:30:11,059
+Evet.
+
+828
+02:30:12,404 --> 02:30:35,384
+Seri bağlandığı için normalde, birbirine seri bağlandığı için ne yapıyorum? Paralelmiş gibi işlem yapıyorum. Bir bölü olarak topladım ve son cümle çıktı. 3.61 gibi bir rakam çıktı.
+
+829
+02:30:37,523 --> 02:30:42,723
+Cs çıktığına tekabül ediyor arkadaşlar. Şimdi
+
+830
+02:30:46,772 --> 02:30:51,152
+Beşinci soruya geçiyorum. Bir şey sorusu.
+
+831
+02:30:56,852 --> 02:30:58,812
+Op-amp sorusu.
+
+832
+02:31:00,272 --> 02:31:07,592
+Bu op-ampa baktığınızda hangi çeşit op-amp olduğunu anlıyorsunuz?
+
+833
+02:31:08,592 --> 02:31:12,711
+Veya op-ampın çeşidini anlayabiliyor musunuz?
+
+834
+02:31:13,299 --> 02:31:14,519
+Örneğin bana bakalım.
+
+835
+02:31:20,852 --> 02:31:22,112
+Evren mi hocam?
+
+836
+02:31:25,683 --> 02:31:26,804
+İranmi!
+
+837
+02:31:31,763 --> 02:31:42,243
+Evren olması için işaretinde değişmesi lazım değil mi? İşaretinde değişecek diyorsun yani öyle mi?
+
+838
+02:31:48,564 --> 02:31:56,344
+Başka fikri olan var mı bu op-amp konusunda? Bu soruyu hiçbiriniz yapmadı mı ya?
+
+839
+02:31:59,224 --> 02:32:05,064
+Hocam, yanlış hatırlamıyorsam Hamza Hoca İrmiyetli olduğumu söyledi cevabım. Burada 12 işaret demiş.
+
+840
+02:32:07,564 --> 02:32:09,564
+Ne olduğunu söyledin?
+
+841
+02:32:10,204 --> 02:32:12,044
+D şıkkı, İrmiyetli oldu.
+
+842
+02:32:14,963 --> 02:32:17,384
+Tamam, ben size başka bir şey soruyorum.
+
+843
+02:32:20,443 --> 02:32:21,864
+Sizin fikrinizi soruyorum.
+
+844
+02:32:24,244 --> 02:32:29,744
+Bu devre şey mi yani, eviren mi, yükselten mi?
+
+845
+02:32:31,744 --> 02:32:34,603
+Çünkü opamların biliyorsunuz bir sürü çeşidi var.
+
+846
+02:32:37,984 --> 02:32:39,024
+Evirmeyen demiş.
+
+847
+02:32:40,659 --> 02:32:43,579
+Sevilmeyen ve üstlendirilecek.
+
+848
+02:32:44,139 --> 02:32:44,399
+Evet.
+
+849
+02:32:50,291 --> 02:33:06,551
+Tamam, kiminiz yapmış, kiminiz yapmamış. Ben söyleyeyim. Arkadaşlar, bu Ofan devresi evirmeyen ve yükseltici bir devredir. Bakalım çözümlerden bakalım.
+
+850
+02:33:12,628 --> 02:33:39,628
+Şimdi arkadaşlar, ne yapıyorduk? O PAM devletinde. Şu eksorucuna akım gitmiyordu değil mi? O yüzden bu yüz onluk dirençten geçen akım, şu akım, olduğu gibi yukarı devam edip sekiz yüz elli onluk dirençin üzerinden geçecek değil mi? Yani biz de...
+
+851
+02:33:41,971 --> 02:33:45,291
+Bu akımı hesaplarken niye hesaplayacağız?
+
+852
+02:33:46,971 --> 02:33:50,291
+İlk önce V1'e hesaplanmamız lazım.
+
+853
+02:33:51,491 --> 02:34:00,851
+V1'de arkadaşlar, burada 10 kilo ohm ve 1 milamperlik akım var. Bakın, burada.
+
+854
+02:34:02,851 --> 02:34:08,691
+Burada bir akım üretici var. Buradaki potansiyel fark.
+
+855
+02:34:09,332 --> 02:34:34,832
+V birimi de tekabrediyor, Of-app'larda. Dolayısıyla ben buna hesaplarsam, neyi bulurum ilk önce? 10 kilo olmuş çarpı 1 mili amperle çarparsam, V birimi ne bulurum? 10 moc bulurum. Peki, V birimi 10 moc buldum. Yetti mi? Hayır, yetmedi.
+
+856
+02:34:37,652 --> 02:35:00,652
+V1 dediğim, Ohm, şurası, aslında V-in dediğim şeyin, şeye tam olarak tekabül etmiyor. Niye? Şurada da bir V2'lik bir potansiyel fark var. Dolayısıyla ben V-in'i bulmak için,
+
+857
+02:35:05,139 --> 02:35:30,360
+Pardon. Yanlıştırdım, pardon. V in bir o zaten. Tamam. V out yerine v in dedi. V biri buldum arkadaşlar.
+
+858
+02:35:31,283 --> 02:35:33,003
+Kaç bok umur?
+
+859
+02:35:33,724 --> 02:35:37,023
+Peki benim ve altın umudamış?
+
+860
+02:35:37,384 --> 02:35:37,963
+Hayır değil.
+
+861
+02:35:38,683 --> 02:35:39,283
+Niye değil?
+
+862
+02:35:40,484 --> 02:35:40,884
+Beni
+
+863
+02:35:44,819 --> 02:36:12,000
+V6, şu V2, artı, şuradaki olmuyor. Topluyorum. V2'nin işareti ters olduğu için. 10-V2, benim V6'umu temsil ediyor. Bölü, şuradaki direnç, RF dediğimiz direnç, 1710.
+
+864
+02:36:13,203 --> 02:36:23,203
+V'nin bir volttu, bir bölü, R1'i 110, bir bölü.
+
+865
+02:36:24,963 --> 02:36:32,144
+Denklemleri işler dışarı çarpımı yaptığında V6'un 27 volt çıkıyor gençler.
+
+866
+02:36:34,543 --> 02:36:37,684
+Gayet basit bir şey, burada önemli olan şey şuydu.
+
+867
+02:36:39,379 --> 02:37:00,059
+Birincisi şuradaki Ohm voltu görmeniz, bu Ohm voltu da V6 hesaplarken, V2 ve Ohm voltun işaretini doğru yazmanızda, gerisi zaten çok basit. Tamam. Bu kadar. Evet.
+
+868
+02:37:05,427 --> 02:37:07,927
+Zevap 27 mi oldu şimdi?
+
+869
+02:37:08,847 --> 02:37:09,328
+Efendim?
+
+870
+02:37:09,968 --> 02:37:11,328
+Zevap 27 mi oldu?
+
+871
+02:37:12,148 --> 02:37:12,968
+Evet, 27.
+
+872
+02:37:13,628 --> 02:37:18,188
+Ama bu işlemlerde yazmamız gerekiyor. 27 işaretli.
+
+873
+02:37:18,927 --> 02:37:19,547
+Evet, aynı.
+
+874
+02:37:19,547 --> 02:37:21,468
+Tam yeterli olmuyor.
+
+875
+02:37:21,988 --> 02:37:32,347
+Yani burada asıl önemli olan hatta ve hatta şu V6 formülünü doğru yazmanız.
+
+876
+02:37:32,819 --> 02:37:57,739
+10-V2 olması çünkü onu o şekilde yapmazsanız zaten 27 voltu ulaşamazsınız. Onu yapmanız gerekiyor. Yani bu devreyi iyi anlamış bir öğrenci bu formülü zaten yazabilir. Ben de umarım anlatabiliyorumdur. Anladın mı gençler 5. soruyu? Çok kişi yapamamış sanırım.
+
+877
+02:37:58,995 --> 02:38:03,655
+Hocam ben 10-V2'nin neden olduğunu tam anlayamadım.
+
+878
+02:38:04,815 --> 02:38:05,555
+Alt kısmında.
+
+879
+02:38:07,015 --> 02:38:07,795
+Şöyle bak.
+
+880
+02:38:09,975 --> 02:38:10,955
+Hemen anlatayım.
+
+881
+02:38:18,484 --> 02:38:30,164
+On eksi, yani karşı tarafa eksi bir volt yazdığım için öyle yazdım. Aslında şöyle de olur. V2 eksi on da olur.
+
+882
+02:38:31,904 --> 02:38:35,184
+O zaman tabii eksiyle şey yaptığım için karşı taraf pozitif olacak.
+
+883
+02:38:43,827 --> 02:39:08,547
+Sen aslında bu Ohm potansiyelini kullanıyorsun. Yeni kalan kısmı bu üst tarafta kuvvetlendirme olarak kullanıyorsun. O yüzden zaten V2-10 bölü 1700. Karşı tarafta 1 bölüyüz. Aslında aynı kapıya çıkıyor.
+
+884
+02:39:10,367 --> 02:39:11,407
+Anladım hocam.
+
+885
+02:39:12,180 --> 02:39:12,680
+Tamam.
+
+886
+02:39:14,220 --> 02:39:25,579
+Çok fazla karıştırmayın çünkü zaten op-amp var çok basit oynan ama karıştırmaya çok müsaittir. O yüzden.
+
+887
+02:39:26,515 --> 02:39:39,155
+Hocam, ben şurada hani 1 milyamper ve 10 kilom var ya, onu Norton'dan Thevenin'i çevirmeye çalıştım da, oradan sonra 10 kilom seri geldi.
+
+888
+02:39:39,755 --> 02:39:44,475
+Niye böyle şeyler yapıyorsun? Norton Thevenin'i çevirmeyi değil ki, koopan.
+
+889
+02:39:44,475 --> 02:39:50,135
+İşte değil hocam da hani, oradan sonra 10 kilom seri geldiği için.
+
+890
+02:39:50,675 --> 02:39:55,015
+Üzerinde kaç volt bırakacağını da tam çözemediğim için yapamadım.
+
+891
+02:39:56,475 --> 02:40:02,775
+Sorba yapmayın soruları, basit düşünüyorum. Diğer sorularda da aynı şey yok.
+
+892
+02:40:03,855 --> 02:40:17,675
+Bir yerde op-amp yani vardır tabii ki, bu konuda kesin konuşmak istemiyorum ama yani op-amp sonrasında Thevenin Norton'la çözüldüğünü ben...
+
+893
+02:40:18,260 --> 02:40:42,500
+Hiç karşılaşmadım desem yeridir. Hiç hatırlamıyorum yani. Hani çok olası bir şey değil. O yüzden gerçekten yani sorulara baktığınızda mümkün ben de basit düşünmeye çalışıyorum. Basit düşünürseniz sizin için. Çözüm ulaşmanız daha kolay olabilir. Evet.
+
+894
+02:40:43,667 --> 02:40:54,427
+Artık da op-amp sorusunu geçiyorum. Sorusu olan yoktu, sohbete bakayım. Evet, yokmuş. Tamam. Geçiyorum artık.
+
+895
+02:40:59,603 --> 02:41:24,463
+Altıncı soru, uzun uzun yazmadım. Denklemlerini yazdım sadece. Gayet ne derler? Normal bir soru bu soru. Yani düğüm gerilimlerine bulunur demiş. Düğüm analizi yöntemi zaten ilk konuları yöntemi. Tek tek denklemlerini yazdım, bakalım.
+
+896
+02:41:24,463 --> 02:41:26,123
+D1
+
+897
+02:41:29,012 --> 02:41:56,372
+V1, V3x, I2, bu arada ben bu akımlara yine I1, I2, I3 gibi isimler verdim. Siz değişik isimler verebilirsiniz. Ia, Ib, Ic gibi. Her bir dairenin içinde işte saat önünde veya tam tersi önünde.
+
+898
+02:41:57,203 --> 02:42:12,743
+yazan akımların tek tek isimler verip, ben 11-23 dedim. Dediğim gibi, başka şeyler diyerek de bu problemi daha iyi bir şekilde çözebilirsiniz gençler.
+
+899
+02:42:24,404 --> 02:42:51,164
+Sekiz direnç farkı alarak bu ilk denklemi yazdım. V1 eşittir, V3 eşittir, I2 çarpı 8. Veya V3 eşittir, V1 artı 8 çarpı I2. Aynı şey. Şeye fark ettim. Sonra ikinci denklemimi yazıyorum. V2 eşittir.
+
+900
+02:42:52,948 --> 02:42:54,247
+V2'ü düğüm.
+
+901
+02:42:56,528 --> 02:42:59,548
+V1-I1 çarpı 20.
+
+902
+02:43:00,427 --> 02:43:03,988
+Şu ilk cümle oluşan akımın I1 dedim.
+
+903
+02:43:05,188 --> 02:43:06,288
+V3 çeşittir.
+
+904
+02:43:06,907 --> 02:43:10,727
+V4-I4 çarpı I2.
+
+905
+02:43:11,948 --> 02:43:14,247
+Pardon, I4 çarpı 12.
+
+906
+02:43:15,247 --> 02:43:16,528
+I2 nereden çıktı?
+
+907
+02:43:17,067 --> 02:43:18,488
+I4 çarpı 12.
+
+908
+02:43:19,268 --> 02:43:20,268
+Bunu da yazdım.
+
+909
+02:43:20,639 --> 02:43:45,319
+V4'ünün dediği şey, zaten direk 15 gol ta tekabül ediyor. Bu denklemleri çözerseniz, V1 22.4, V2 27.4, V3 17.4 çıkıyor. Arkadaşlar, tek tek denklem çözümünü de yazmadım.
+
+910
+02:43:47,092 --> 02:43:49,172
+Hocam hani üst kısmı anlamadım.
+
+911
+02:43:52,031 --> 02:43:52,832
+V2'li.
+
+912
+02:43:53,551 --> 02:43:54,932
+Nereye anlamadım?
+
+913
+02:43:55,492 --> 02:43:56,112
+V2.
+
+914
+02:43:56,851 --> 02:43:59,512
+V2, V1 eksi.
+
+915
+02:44:00,471 --> 02:44:03,031
+Bak, V1 burası ya.
+
+916
+02:44:05,531 --> 02:44:08,031
+V1, V2'den.
+
+917
+02:44:11,636 --> 02:44:29,115
+Ve yirmi çarpı i1'den oluştu. i1 dediğim akımda şu düğümün içinde dolaşan akım. Yani yirmi olmuş direnç üzerinden geçen akım.
+
+918
+02:44:29,115 --> 02:44:34,355
+Yirminin sağında olması gerekmez miydi V2'ye o denklem için?
+
+919
+02:44:34,355 --> 02:44:36,155
+Yok, hayır.
+
+920
+02:44:38,324 --> 02:44:42,404
+Çünkü V1 daha büyük burada.
+
+921
+02:44:44,544 --> 02:44:46,064
+Hı, tamam.
+
+922
+02:44:50,804 --> 02:45:15,443
+Tamam. Ben bunu da yıkıyorum. Bu da kolay bir soru. Şimdi yedinci soruya gelelim. Evet arkadaşlar. Yedinci soru yine vakit alıcı ve çok uğraştırıcı bir soru. Yine düğüm akımları var burada da.
+
+923
+02:45:15,987 --> 02:45:19,827
+Artık burada zaten akımların üç bincesi var, artık dönülür.
+
+924
+02:45:24,500 --> 02:45:26,840
+Hemen bakalım, hemen yazalım.
+
+925
+02:45:29,280 --> 02:45:31,860
+Hemen yazıyorum düğüm akımlarını.
+
+926
+02:45:33,079 --> 02:45:44,940
+3 çarpı 30, artı 5BA, artı 20 çarpı 3 bu tarafa.
+
+927
+02:45:45,639 --> 02:45:50,600
+2 de bu tarafa geçeceği için, 3, 2 eşittir 0.
+
+928
+02:45:51,040 --> 02:46:17,080
+Birinci denklemimi yazdım. Düğüm. Ondan sonra bunu güzelce açtım, çarptım, bölgümü topladım. Ondan sonra ne buldum? V A eşittir, eksi 10 I B artı 15 buldum. Kenara koydum. Daha sonra gençler, burada
+
+929
+02:46:19,860 --> 02:46:45,860
+Bakın burada ne var? Yukarı doğru iki amper var. Gördünüz mü? Bu bana ne anlatıyor? Bu bana demek istiyor ki benim artık I2'm belli. Eksi iki amper. Ben zaten şurada IB'yi göstermişim.
+
+930
+02:46:46,260 --> 02:46:53,799
+Benim ıbem aslında bu tarafa yönlü olduğu için 3x2'ye tekrarlayın.
+
+931
+02:46:58,675 --> 02:47:06,876
+Bu tarafa da bir akım göstermişim. O da 3, I, B'yim. 3, I, B'yim mi?
+
+932
+02:47:26,144 --> 02:47:45,064
+ve o 2'nin yerine de eksi 2 amped yazınca, I3'ün, IB-2, I1'in de 4, IB-2 çıktı. Bunu da kenara koydum tekrardan. Sonra ne yaptım? Geldim buraya.
+
+933
+02:47:49,427 --> 02:47:59,027
+Şu zaten benim potansiyel farkım belli. Buraya ne demişim? VA demişim değil mi? VA'ya ne demişim?
+
+934
+02:48:00,027 --> 02:48:13,327
+10 çarpı, I1'im bu tarafa akıyor, aşağı doğru, I2'im de yukarı aktığı için, 10 çarpı I1'i İ2, benim VA'ma için.
+
+935
+02:48:13,971 --> 02:48:17,371
+O da neye tekabül ediyor? Şu denklemden.
+
+936
+02:48:21,236 --> 02:48:43,516
+40 IB'ye tekam ediyor. Yani benim VA 40 IB olarak çıktı burada. Sonra ben iştüğümde VA'mı aynı zamanda ne bulmuştum? 15 ekse 10 IB bulmuştum. Bunları eşitleyeyim o zaman. Eşitliyorum.
+
+937
+02:48:45,268 --> 02:49:12,108
+Eksi 10 IB artı 15 eşittir 40 IB'miş. Buradan IB'mi çok güzel çekip hesaplayabiliyorum. IB'mi biliyorsam artık ben I3'ümü ve I1'imi ne yaparım hesaplayabilirim. Değil mi? I1'imi 8 Amper çıkıyor. I3'ümde.
+
+938
+02:49:12,495 --> 02:49:36,655
+Eksi bir nokta yedi amper çıkıyor gerilimler. Doğru cevabında değişiklik oluyor. Tamam mı? Bununla geçiyorum. Sekizinci sorumuz, bir Ezber teorik bilgi sorusu. Bunun sadece cevabını verip geçeceğim.
+
+939
+02:49:37,268 --> 02:49:54,268
+Mikrodalga elektroniğinde, bütün empedansı, kaybı ortadan kaldırmak için, Reaktif elemanların eklenmesiyle iletim hattının empedansına uyarlanır. Bunu biliyorum zaten.
+
+940
+02:49:58,579 --> 02:50:10,059
+Bu uyarlama hangi teoriyle ilgilidir? Hangi teoriyle ilgilidir? Yani bunu şıklara bakarak da aslında bulabilirdiniz.
+
+941
+02:50:11,440 --> 02:50:21,680
+Hiç yani sadece Laplara katılan dersleri böyle üstün körü dinleyen bir öğrenci bu soruyu yapabilirdi bence.
+
+942
+02:50:21,680 --> 02:50:25,780
+Çünkü Norton ve Thevenin ile alakası yok.
+
+943
+02:50:26,515 --> 02:50:51,456
+Bu bahsedilen şey. KVL zaten çok alakası. KCR de öyle. Geriye zaten ne kalıyor? Bir tek C şıkkı kalıyor. C şıkkı'nın işaretlerdi. Ben dilek bilmesem bile onun işaretlerdi. Evet. Dokuzuncu soruya geçiyorum. Ne diyor?
+
+944
+02:50:52,404 --> 02:50:54,604
+Bir tane ıte akımımız var.
+
+945
+02:50:58,195 --> 02:51:02,415
+Adım fonksiyonlarını toplamı olarak yazabilmek için.
+
+946
+02:51:05,195 --> 02:51:08,956
+Gereken birim adım fonksiyonlarının sayısı nedir?
+
+947
+02:51:11,976 --> 02:51:13,415
+Nasıl yapalım soruyor.
+
+948
+02:51:20,244 --> 02:51:22,463
+Yani bu soruyu yapabilenler mi?
+
+949
+02:51:25,404 --> 02:51:27,204
+Gayet güzel bir soru.
+
+950
+02:51:28,064 --> 02:51:29,084
+Yapılabilir diye.
+
+951
+02:51:38,291 --> 02:51:39,771
+Arkadaşlar, uyumluyuz.
+
+952
+02:51:42,251 --> 02:51:42,891
+Hünce?
+
+953
+02:51:43,671 --> 02:51:44,351
+Evet.
+
+954
+02:51:45,411 --> 02:51:51,831
+Başka bir soruda da vardı ya yine bu tarz fonksiyon sorusu gibi, ben o tarz bir şekilde yola çıkarak yapmıştım.
+
+955
+02:51:52,971 --> 02:51:54,371
+Bakın arkadaşlar, ne diyor?
+
+956
+02:51:55,331 --> 02:51:58,571
+Bu, ırtayakımın bir fonksiyon.
+
+957
+02:51:59,531 --> 02:52:04,691
+Diyor ki, sadece adım fonksiyonları toplam olarak yazabilmek için.
+
+958
+02:52:04,691 --> 02:52:05,451
+Şimdi.
+
+959
+02:52:06,227 --> 02:52:15,707
+Adım fonksiyonlarını toplam olarak yadırmak için o fonksiyonların içinde bütün değişiklikleri
+
+960
+02:52:19,347 --> 02:52:20,847
+Almak zorundasınız.
+
+961
+02:52:25,299 --> 02:52:26,159
+Anlatabildim mi?
+
+962
+02:52:29,971 --> 02:52:36,192
+Ya bakın şimdi, şu grafiğe bir bakın. Neyle tekrar ediyor? Beşte.
+
+963
+02:52:42,131 --> 02:52:50,691
+5'te tekrar ettiği için en garantili yöntem 5 adım almaktadır.
+
+964
+02:52:58,708 --> 02:53:01,868
+Beş tane adım fonksiyonu almaktır.
+
+965
+02:53:03,908 --> 02:53:04,927
+Geçiyorum bunu.
+
+966
+02:53:05,868 --> 02:53:07,788
+Zaten mantıklı bir soru.
+
+967
+02:53:08,528 --> 02:53:12,588
+Yani mantıklı çözülebilecek bir soru işlemle bir soru değil.
+
+968
+02:53:13,728 --> 02:53:14,728
+Onuncu soru.
+
+969
+02:53:16,328 --> 02:53:19,448
+Onuncu sorunun da enteresan bir çözümü var.
+
+970
+02:53:24,340 --> 02:53:26,899
+Yapabildiniz mi bu soruyu? Merak ediyorum.
+
+971
+02:53:28,479 --> 02:53:28,920
+Hocam?
+
+972
+02:53:30,079 --> 02:53:30,439
+Evet.
+
+973
+02:53:30,899 --> 02:53:47,899
+Ben şey diye düşünmüştüm. A'nın yanına bağlı olan ilk R direnci var ya, onun dışında geri kalanları birbirine paralel sonsuza kadar gittiği için o kısmın eşdeğer direnci çok düşük olur, ihmal edilebilir diye düşünüp direkt 110 demiştim ama yanlış yapmışım.
+
+974
+02:53:48,920 --> 02:53:50,039
+Evet, öyle değil.
+
+975
+02:53:50,515 --> 02:53:52,956
+İzmane, leklendi, şey yok.
+
+976
+02:53:54,755 --> 02:53:56,775
+Oledi, ay kresi, ay şimdi.
+
+977
+02:54:00,275 --> 02:54:01,316
+Böyle yapıyoruz.
+
+978
+02:54:02,316 --> 02:54:02,695
+Şimdi
+
+979
+02:54:08,884 --> 02:54:35,884
+Bu devreye baktığınızda ne görüyorsunuz? Hep tekrar bir şeyden sonra tekrar eden bir devre var. Kendisini tekrar eden bir devre var. Dolayısıyla biz bu tekrar eden kutumu bulduğumuzda şeyde bulunuş oluyoruz değil mi? Cevap da bulunuş oluyoruz aslında. Peki ne yapalım hocam? Ne yapalım işte? Şu Rx'e.
+
+980
+02:54:37,043 --> 02:54:37,724
+Bakın.
+
+981
+02:54:39,724 --> 02:54:40,884
+Nasıl yapacağım onu?
+
+982
+02:54:47,796 --> 02:54:50,655
+Siz benim kuzerim görüyorsunuz değil mi bu arada?
+
+983
+02:54:53,915 --> 02:54:54,915
+Evet hocam görünüyor.
+
+984
+02:54:55,995 --> 02:54:57,195
+Tamam görünüyorsunuz.
+
+985
+02:54:57,315 --> 02:54:59,235
+Bir şey çıkmeme gerek yok.
+
+986
+02:55:01,755 --> 02:55:02,556
+Şuradan.
+
+987
+02:55:09,780 --> 02:55:31,660
+Buradan, buraya bir çizgi çekiyorum. Ve sağ üst tutma. Yani kendini tekrar eder. Kısma Rx diyor. Dedim mi? Dedim. Rx. Buraya da yazıyorum. Bakın.
+
+988
+02:55:37,363 --> 02:55:37,863
+Ne?
+
+989
+02:55:42,708 --> 02:55:58,708
+Eğer ben bu çılgıyı şuradan şuraya çekersem bu taraf yine ne olacak? Rx eşde olmayacak. Öyle olmayacaktı. Dolayısıyla benim Rx'tim.
+
+990
+02:56:04,371 --> 02:56:13,111
+Şuradaki ren seri, buradaki ren seri, ki bunu artıyla ifade ediyorum.
+
+991
+02:56:22,036 --> 02:56:27,895
+Şuradaki R'ye paralel, şu kusum yine R'ye ikisi olacağı için.
+
+992
+02:56:32,915 --> 02:56:41,315
+Böyle bir denklemi çıkıyor karşımda. Bunu anlamayan var mı?
+
+993
+02:56:53,268 --> 02:56:55,368
+Yardığım şeyi anlamayanlar mı?
+
+994
+02:56:56,387 --> 02:57:01,827
+Hocam, kendi değeri, kendisiyle alak olan bir denkleme meşgul oluyor.
+
+995
+02:57:02,827 --> 02:57:06,987
+Bak, Rx'e ne dediğimi anladın mı? Neyi katlediğimi?
+
+996
+02:57:07,448 --> 02:57:08,288
+Haskettiğimi.
+
+997
+02:57:09,108 --> 02:57:12,548
+Rx'e nereyi katlediğimi anladın mı?
+
+998
+02:57:13,887 --> 02:57:15,948
+Yatırdım sanırım hocam, o yüzden anlayamadım.
+
+999
+02:57:16,507 --> 02:57:19,268
+Bak, Rx...
+
+1000
+02:57:19,763 --> 02:57:28,263
+Buradan buraya bir tane çizgit çekiyorum. Şu üst taraf sonuçta kadar R8 oluyor.
+
+1001
+02:58:00,500 --> 02:58:17,479
+Bak, şurası. Böyle bir çizgi çektim. Bu taraf, bu tarafı full Rx dedim.
+
+1002
+02:58:23,316 --> 02:58:26,355
+Eben, aynı tübi.
+
+1003
+02:58:35,412 --> 02:58:44,231
+Buradan buraya çekersem de, bu taraf sonuçta gittiği için yine Rx olmayacak mı?
+
+1004
+02:58:45,231 --> 02:58:45,992
+Evet hocam.
+
+1005
+02:58:48,472 --> 02:58:51,731
+Burası benim şu Rx'im.
+
+1006
+02:58:53,752 --> 02:58:56,352
+Buradaki R'e paralel yazdım.
+
+1007
+02:58:58,852 --> 02:59:01,592
+Buradaki artı R'yi koydum.
+
+1008
+02:59:02,739 --> 02:59:08,340
+Ne oldu? Bu kısım yine Rx'e hiç olmadı mı?
+
+1009
+02:59:11,763 --> 02:59:12,384
+Ben söyleyeceğim.
+
+1010
+02:59:12,943 --> 02:59:14,244
+Onu yazdım işte buraya.
+
+1011
+02:59:19,188 --> 02:59:21,667
+Anlaştık mı? Herkes anladı mı?
+
+1012
+02:59:26,131 --> 02:59:50,291
+Anladın mı bu? Neyse, bir tepki verin. Anlaşıldı hocam. Bunu böyle yazdıysam matematiksel işleme dökebilirim abi. Ne yaparım? İlk önce şunu yazarım değil mi? Yazıyorum. R'ye keşittir. R artı.
+
+1013
+02:59:53,587 --> 03:00:02,087
+Bir bölü R artı, bir bölü R eksi topladım. Ve ters çevirdim. R çarpı R eksi.
+
+1014
+03:00:09,363 --> 03:00:10,083
+Bölü
+
+1015
+03:00:19,507 --> 03:00:24,307
+R artı R çıktı arkadaşlar.
+
+1016
+03:00:28,371 --> 03:00:29,131
+Tamam mı?
+
+1017
+03:00:32,500 --> 03:00:34,819
+Görebiliyorsunuz değil mi bu yazdıklarımı?
+
+1018
+03:00:35,119 --> 03:00:35,759
+Evet hocam.
+
+1019
+03:00:36,339 --> 03:00:38,599
+Tamam. Bunu da yazdım.
+
+1020
+03:00:40,599 --> 03:00:41,899
+Sonra...
+
+1021
+03:00:46,388 --> 03:00:48,427
+Denklemlerime devam ediyorum.
+
+1022
+03:00:54,324 --> 03:00:56,404
+En soldaki re'yi de topladım.
+
+1023
+03:00:57,184 --> 03:01:06,604
+Re kare artı, re çarpı re'yi artı, re çarpı re'yi artı, re çarpı re'yi bölüm, re artı re'yi çıktı.
+
+1024
+03:01:09,104 --> 03:01:11,744
+Yani bunları topladım da ben,
+
+1025
+03:01:14,644 --> 03:01:17,324
+Re kare artı,
+
+1026
+03:01:21,492 --> 03:01:22,371
+Ay pardon.
+
+1027
+03:01:23,631 --> 03:01:27,051
+İki re çarpı rey
+
+1028
+03:01:33,716 --> 03:01:46,755
+Bölü, R artı, Rx çıktı. Bu da eşittir, Rx oldu arkadaşlar.
+
+1029
+03:01:50,131 --> 03:01:53,152
+Şuradaki Rx'i bu tarafa geçiyorum.
+
+1030
+03:01:55,871 --> 03:01:56,371
+Tamam mı?
+
+1031
+03:01:57,572 --> 03:01:59,931
+Buradan da ister dışlar çarpımı yapıyorum.
+
+1032
+03:02:18,484 --> 03:02:24,424
+R'le akımları yasalarını, 2R çarpı R.
+
+1033
+03:02:31,379 --> 03:02:36,379
+İstediğe, reikler.
+
+1034
+03:02:42,004 --> 03:02:45,564
+Altı, Re, Kale çıktı.
+
+1035
+03:02:52,788 --> 03:03:20,427
+Buradan da, Denklemimizi sadeleştiriyorum. Rx kare eksi, R çarpı, Rx eksi, R kare, eşittir sıfır çıkıyor. Bu denklemden sonra çarpanları ayırmak.
+
+1036
+03:03:21,523 --> 03:03:36,503
+Hani çarpanlar ayırmada hatırlarsanız, evet, X1'in formülü vardı, x ve artı x kare kütücünde b kare x, 4ac bölü 2a, hatırladınız mı?
+
+1037
+03:03:38,983 --> 03:03:48,923
+O formülden, Rx'i buluyorsunuz, Rx'i bulduktan sonra, Rx ise buradan kaç çıkmış olur?
+
+1038
+03:04:01,620 --> 03:04:07,420
+5 artı 45, 5 artı 5 45 çıkıyor.
+
+1039
+03:04:09,459 --> 03:04:11,819
+5 artı 5.
+
+1040
+03:04:15,412 --> 03:04:16,971
+5.45 çıkıyor.
+
+1041
+03:04:28,564 --> 03:04:52,384
+Bu formül de bu. Bunu da buldum. Şimdi şu formül, A x kare artı B x artı C eşittir sıfır formülü ya, bu formülden biz R x'i bulabiliriz değil mi? Çarpanları ayırarak. Çarpanlarımızdan biz R x diğeri de R zaten.
+
+1042
+03:04:53,108 --> 03:05:08,728
+Dolayısıyla biz buradan x'i bulduk. x'imiz kaç çıkmış? 5 kök 5 artı 5 çıkmış. O da 161,8 olmak. Tekabül ediyor ki cevabımız da o zaten.
+
+1043
+03:05:12,128 --> 03:05:18,888
+Yine çöğren açtığınız bana mail atarsınız. Ben çözümünü size de ulaştırabilirim.
+
+1044
+03:05:20,979 --> 03:05:30,939
+Tamam, on birinci soruya geçiyorum. Hemen çok kısa anlatacağım. On ikinci sordan da bahsedeyim. Sonra da bitireyim.
+
+1045
+03:05:30,939 --> 03:05:47,851
+Diğer kalan sorularla alakalı olarak, dediğim gibi bana soru sorabilirsiniz kesinlikle. Bu bir saatte yetişmedi ama yetişmeyecek gibi duruyor ama bana kesinlikle...
+
+1046
+03:05:47,860 --> 03:06:00,540
+Mail atarak veya okusuma gelerek, Hocam, işte ben bu soruyu yapamadım, bana anlatırsınız derseniz, ben gönül rahatlığıyla size anlatırım ya sıkıntı etmeyin.
+
+1047
+03:06:02,180 --> 03:06:09,399
+Hocam, bu soruların çözümünün olduğu dosyaları klasrumdan paylaşabilir misiniz?
+
+1048
+03:06:09,399 --> 03:06:13,440
+Evet, de bir düzenliyim. Şu anda biraz düzensiz.
+
+1049
+03:06:14,420 --> 03:06:21,319
+Düzenleyin, bana hatırlatın bir süre sonra, bir iki hafta sonra. Bir iki hafta sonra paylaşayım, olur mu?
+
+1050
+03:06:22,299 --> 03:06:23,719
+Tamamdır, teşekkür ederim.
+
+1051
+03:06:24,000 --> 03:06:34,180
+Rica ederim. Çünkü düzensiz biraz, cevapları hazırladık ama düzensiz, o yüzden düzenli bir şekilde paylaşayım. Olur mu? Öyle yapalım.
+
+1052
+03:06:36,020 --> 03:06:40,059
+Evet, on birinci soruda aslında standart bir formül var gençler.
+
+1053
+03:06:42,899 --> 03:06:46,299
+Hatta bu konuyla alakalı slide'da da var o formü.
+
+1054
+03:06:47,099 --> 03:06:51,379
+Ben 11. soru yemen statı anlıyorken, sonra 12'ye geçirem.
+
+1055
+03:06:52,179 --> 03:06:58,339
+12. soru önemli çünkü sınavda da çıkma ihtimali olabilen bir soru.
+
+1056
+03:06:59,479 --> 03:07:00,479
+Sınavda farklı.
+
+1057
+03:07:02,479 --> 03:07:03,479
+O yüzden...
+
+1058
+03:07:09,043 --> 03:07:14,183
+Onların sordan bahsetmek istiyorum size. Pardon, on iki sorda.
+
+1059
+03:07:24,564 --> 03:07:25,123
+Bir daha.
+
+1060
+03:08:03,731 --> 03:08:30,871
+Bakın arkadaşlar, on birinci soruyla alakalı sıraçlarda bir formül var. O formül de der ki, VCT çarpı E üzeri eksi TNT çarpı V der. O formüle göre biz uygulayalım. Ne yaparız hocam?
+
+1061
+03:08:31,316 --> 03:08:51,316
+Bunu yapıyoruz arkadaşlar. İlk önce bu devrenin üzerinden geçen, devrede üzerinden akım geçen, anahtarı kapattığımızda üzerinden akım geçtiği, dirençlerin eşdeğer direncini buluyoruz.
+
+1062
+03:08:51,316 --> 03:08:58,316
+Neyse onlar, 20 kilo ol ve 60 kilo ol.
+
+1063
+03:08:58,611 --> 03:09:03,011
+Eşdeğer dirençlerini bulduk. Kaç çıktı? 15 kilo.
+
+1064
+03:09:05,451 --> 03:09:12,851
+Burada bir 20 miliamperimiz var. Dolayısıyla 20 miliamperlik bir akım üretiyor.
+
+1065
+03:09:13,572 --> 03:09:22,191
+Dolayısıyla eşdeğer dirençle 20 miliamperlik bir akımı çarparsak neyi buluruz?
+
+1066
+03:09:26,644 --> 03:09:43,283
+Potansiyel farkını buluruz. Yani VC'mizi buluruz. Eşdeğer direncimiz 15 kilomu çıkmıştı. Bunu 20 mA ile çarpıyoruz. Kaç çıkıyor? 300 voltumuz.
+
+1067
+03:09:53,683 --> 03:09:59,863
+Bu, E üzeri kısmının önüne koyuyoruz.
+
+1068
+03:10:00,403 --> 03:10:02,323
+Kormuş, öyle çünkü o şekilde.
+
+1069
+03:10:05,963 --> 03:10:08,683
+Diğer devam eden kısmında da,
+
+1070
+03:10:11,644 --> 03:10:14,203
+orada da VT fonksiyonu var.
+
+1071
+03:10:15,083 --> 03:10:16,843
+Onu da şu şekilde hesaplıyoruz.
+
+1072
+03:10:18,043 --> 03:10:18,884
+15 kilo.
+
+1073
+03:10:21,236 --> 03:10:29,116
+Bizim devremizin toplam bilenci 15 kilo artı 10 kilo, 25 kilo yapıyor.
+
+1074
+03:10:30,156 --> 03:10:41,236
+Onunla mevcut kapasitesiyle çarptığımız zaman 1000 milisaniye buluyoruz.
+
+1075
+03:10:41,876 --> 03:10:44,336
+O da bizim frekansımızı veriyor.
+
+1076
+03:10:48,691 --> 03:10:59,691
+Ve eşik bunu buluyoruz arkadaşlar. Evet, şimdi on ikinci soruya gelelim. On ikinci soru da
+
+1077
+03:11:05,716 --> 03:11:08,195
+Ne demiş? Süperpozisyon.
+
+1078
+03:11:21,876 --> 03:11:34,416
+Verpozisyon yöntemine alaylar. Ben burada size şıkları göstermek için bu uygulamayı yapmıyorum.
+
+1079
+03:11:37,175 --> 03:11:45,036
+Hocam, zaman yetmeyebilir dediniz ya, zaman yetme diyen soruları en azından göstermeniz açısından söyledim.
+
+1080
+03:11:45,036 --> 03:11:49,036
+Ben cevapların içinde paylaşacağımı söyledim.
+
+1081
+03:11:49,268 --> 03:11:54,447
+Yani hangi soruyu anlatıyorsam ekranda onu göstereceğim tabii ki de.
+
+1082
+03:11:56,907 --> 03:12:04,907
+Yani bazen istekleriniz bana biraz mantıksız geliyor geçten.
+
+1083
+03:12:05,367 --> 03:12:12,907
+Hocam yani isteğimin sebebi en azından sınav notumuzu şimdiden öğrenirsek, diğer dersler de biliyoruz.
+
+1084
+03:12:13,268 --> 03:12:14,907
+Ona göre çalışmamızı belirliyoruz.
+
+1085
+03:12:15,391 --> 03:12:17,231
+O açıdan söylerim.
+
+1086
+03:12:17,231 --> 03:12:38,491
+Merak etmenizi öğrenmek isteğinizi anlıyorum ama benim amacım burada size cevapları, yani soruların cevaplarını vermek değil. Soruların cevaplarının nasıl olduğunu anlatmak. Anlatabildim mi?
+
+1087
+03:12:41,139 --> 03:12:49,000
+Evet hocam, anladım zaten de sadece demek istediğim, bazı soruları anlatamayacağınızı süreden dolayı dediniz. Neyse ben zamanınızı almayayım, siz anlatın.
+
+1088
+03:12:49,000 --> 03:12:50,020
+Teşekkür ederim.
+
+1089
+03:12:50,739 --> 03:13:00,579
+Anla, tamam. Anlaştık biz. Tamam. Evet arkadaşlar, şimdi 12. soru olarak anlatıyorum, zaten zamanımız doldu.
+
+1090
+03:13:01,299 --> 03:13:07,239
+Lavak atılmanızı aldım, o yüzden hızlıca anlatıyorum. 12. soru da şu var.
+
+1091
+03:13:07,700 --> 03:13:26,700
+Süperpozisyon yöntemini uygulamanız gerekiyordu. Süperpozisyon yöntemi nedir? İki şeyi kullanıyorduk. Birincisi akım kaynağını açık devre yaparak ilgili akımları hesaplıyorduk.
+
+1092
+03:13:33,108 --> 03:13:38,507
+Gerilim kaynağını, bu devre yaparak akımları hesaplıyorduk.
+
+1093
+03:13:39,468 --> 03:13:44,108
+Sonra da ne yapıyorduk arkadaşlar?
+
+1094
+03:13:45,408 --> 03:13:50,748
+Bu iki akım değerlerini her bir hesapladığımız akım için topluyorduk.
+
+1095
+03:13:51,448 --> 03:13:55,048
+Burada hesaplamamızı istediğimiz akım değerleri hangisi?
+
+1096
+03:13:55,847 --> 03:13:58,108
+R2, R3.
+
+1097
+03:13:58,772 --> 03:14:02,732
+Hemen bakalım nasıl yaparız hocam. Nasıl yaparız bakalım.
+
+1098
+03:14:05,812 --> 03:14:18,052
+Şimdi, ilk önce akım kaynağını açıp devre yaptık. Karşımıza ne çıktı gençler? Şöyle bir devre çıktı değil mi?
+
+1099
+03:14:19,252 --> 03:14:24,892
+Hocam ne yapacağız bu devreyle? Artık bu devre elimizde var. Bu devreye göre
+
+1100
+03:14:25,492 --> 03:14:50,471
+Düğüm gerilimlerinden hesap ederek, R, V, A, B dedik. Ben öyle dedim yani. Bu devreyi bu arada istediğiniz herhangi bir şekilde çözebilirsiniz. İllaki bu yöntemini kullanmak zorunda değilsiniz. Düğüm gerilim yöntemi hiç çıkarttım ben. Siz başka yöntemde kullanabilirsiniz yani.
+
+1101
+03:14:52,724 --> 03:15:16,644
+VAB dedim buraya, buraya V1 dedim buraya, şuraya V2 dedim ve yazdım V1 düğümü için V1-VAB bölü R1 artı bir düğüme giren ve çıkan akımlar birbirine eşit olduğu için.
+
+1102
+03:15:19,572 --> 03:15:45,092
+Şuradaki on mod var. Bakın. Bölü R2 dedim. Şu akım. V1-V2. Bölü R4 dedim. Şu akım. Eşittir sıfır. V1 düğümü için denklemini yazdım. V2 düğümü için de yazdım. Bakın. V2-V1 bölü R4.
+
+1103
+03:15:47,092 --> 03:16:10,672
+V2 düğümün haldeydi, burda ayıdı. V2-V1 bölü R4. V2-Ucu bağlı ucuna artı 8 bölü R5. Eşittir 0. V2 düğümün için de aynı şeyi yazdık. VAB düğümün için de aynı şeyi yazdık.
+
+1104
+03:16:14,899 --> 03:16:42,360
+V1, V2 ve VAB'yi bulduktan sonra zaten dirençler elimizde olduğu için, R2 ve R3 değerlerini ne yapıyorum? Bulabiliyorum. Bu denklemlerin türlü V1, V2, VAB değerlerinin bulunması gerek. Sadece o kadar. O zaman zaman işleme batıyor. Onun uzun uzadıya.
+
+1105
+03:16:44,628 --> 03:16:58,188
+Anlatmam sizin için de benim için de vakit kaybolur. Daha sonra bunları çözdükten sonra, IR2 ve IR3 için ayrı ayrı değerler buldum. Daha sonra ne yaptım?
+
+1106
+03:17:00,827 --> 03:17:09,528
+Bu sefer gerilim kaynaklarını açık devre yaptım.
+
+1107
+03:17:10,644 --> 03:17:18,824
+Ve yine V3, V2, V1 düğümler için şeylerimi, denklemlerimi yazdım.
+
+1108
+03:17:19,884 --> 03:17:22,884
+IR2 ve IR3 değerlerini buldum.
+
+1109
+03:17:23,804 --> 03:17:35,004
+IR2 için buradaki bulduğum değerleri, buradaki bulduğum değeri toplayıp IR2 değerini buldum.
+
+1110
+03:17:36,564 --> 03:18:03,308
+Yine aynı şekilde, R3 içinde buradaki bulduğum değerle, buradaki bulduğum değeri toplayıp, R3 değerini bulduk. Onun için de doğru cevap, R2, 1,55 mA çıkıyor, R3 de 1,84 mA.
+
+1111
+03:18:03,763 --> 03:18:14,383
+Milli amper olarak çıkıyor. Bunların işlemleri biraz uzun. Ben tek tek koymadım. Ama yaparsanız çıkıyor çok rahat bir şekilde.
+
+1112
+03:18:15,943 --> 03:18:26,143
+Denerseniz yapın. Yaparsanız iyi olur eğer. Sınavda yapamadıysanız. Sonradan yaparsanız iyi olur.
+
+1113
+03:18:32,884 --> 03:18:39,124
+On üçüncü, diğer kalan soruların da cevap alaklarlarını göstereyim şu şekilde.
+
+1114
+03:18:40,884 --> 03:18:41,284
+Bakın.
+
+1115
+03:18:43,804 --> 03:18:50,044
+On dördücü soruyu artık yapmış olmamız gerekiyor bence.
+
+1116
+03:18:51,204 --> 03:18:54,684
+On beşinci soruda altı tekrar çıkıyor.
+
+1117
+03:18:55,684 --> 03:18:58,724
+Türk formülünden yapıyorsunuz.
+
+1118
+03:18:59,379 --> 03:19:26,339
+On altıncı soruyu herhangi bir düğüm yöntemiyle yapabilirsiniz. Başka yöntemlerle yapabilirsiniz. On altı soru eklektir, Ohm çıkıyor on altıncı soru. On yedinci soru, ETV'nin basit bir soru. Bu da 5-10 çıkıyor.
+
+1119
+03:19:27,252 --> 03:19:30,471
+Vaktimiz kalmadığı için sadece cevap veriyorum.
+
+1120
+03:19:34,420 --> 03:19:59,420
+On sekizinci soru, Dc-BSM'de devreli indiktör, usta devre oluyor ve öyle çalışır. Kondansatörü de açık devre olarak çalışır gençler. Cevap değişikli. On dokuzuncu soruyu ben şöyle çözmedim.
+
+1121
+03:20:00,595 --> 03:20:18,515
+Başka bir hoca arkadaşımız çözdü ama çözümleri verirken yine onu da ekledim. Bu sayısal değerlerin hiçbiri çıkmıyor. Dediğim gibi çözüm şu anda bende yok. Ama dediğim gibi çözümünü verelim.
+
+1122
+03:20:19,515 --> 03:20:27,575
+Yirminci soruda da bu fonksiyona ait doğru sayı A şıklıdır.
+
+1123
+03:20:28,564 --> 03:20:36,764
+Zaten diğerleri bakınca anlaşılıyor ama sizin için çok kolay olmayabilir.
+
+1124
+03:20:38,623 --> 03:20:41,224
+Öyle, bu şekilde bitirelim.
+
+1125
+03:20:42,283 --> 03:20:45,924
+Ben istedim ki sürem daha fazla olsun.
+
+1126
+03:20:48,023 --> 03:20:51,384
+Diğer soruları da daha detaylı bir şekilde anlatayım.
+
+1127
+03:20:51,384 --> 03:20:55,804
+Ama belli başlı işlemli yüksek olan soruları.
+
+1128
+03:20:55,956 --> 03:21:11,235
+Elimden geldiğince anlatmaya çalıştım. Dediğim gibi daha fazla sorunuz olursa veya içeriğine giremediğim sorular hakkında sorularınız olursa bana mail atın ofisime gelmek için.
+
+1129
+03:21:12,055 --> 03:21:22,855
+Hocam ben işte bu soruları da sormak istiyorum, bana anlatsın deyin. Ben de ona göre silahım ne uvereyim. Ona göre gelin anlatayım.
+
+1130
+03:21:23,603 --> 03:21:25,084
+O şekilde yapabiliriz.
+
+1131
+03:21:25,224 --> 03:21:27,543
+Bugünlük bu kadar.
+
+1132
+03:21:28,804 --> 03:21:30,023
+Yapınız var sanırım.
+
+1133
+03:21:32,304 --> 03:21:34,283
+Teşekkür ederim beni dinlediğiniz için.
+
+1134
+03:21:35,103 --> 03:21:37,664
+Diğer sınavlarınızda da başarılar diliyoruz.
+
+1135
+03:21:38,623 --> 03:21:40,443
+Lammalarda zaten görüşürüz.
+
+1136
+03:21:43,003 --> 03:21:45,144
+Hepinize başarılar, iyi akşamlar diliyorum.
+
+1137
+03:21:46,523 --> 03:21:47,603
+Teşekkürler hocam.
+
+1138
+03:21:49,084 --> 03:21:49,863
+İyi akşamlar.
+
+1139
+03:28:44,468 --> 03:28:46,268
+Arkadaşlar, otobumu kapatıyorum.
+
+1140
+03:28:47,028 --> 03:28:48,528
+Deneyiniz başka bir lütfen.
+
+1141
+03:28:53,523 --> 03:28:56,023
+Hocam, belli bir günü var mı? Bize söylenecek mi?
+
+1142
+03:28:58,723 --> 03:28:59,923
+Neyin bir günü?
+
+1143
+03:29:00,523 --> 03:29:02,523
+Deneyiniz başka gün dediniz ya hani.
+
+1144
+03:29:04,143 --> 03:29:05,523
+Başka gün demedim.
+
+1145
+03:29:06,923 --> 03:29:09,183
+Pardon, bugün, bugün, şimdi.
+
+1146
+03:29:11,003 --> 03:29:14,683
+Bu link de mi olacak yoksa başka bir link mi atacaksınız?
+
+1147
+03:29:14,683 --> 03:29:20,043
+Bu kalsınma bakın, oradan diğer hocalarınız duyurdu. Bence yapmış ama.
+
+1148
+03:29:20,691 --> 03:29:27,511
+Diğer başka bir link de yapacaksınız.
+
+1149
+03:29:28,231 --> 03:29:28,891
+Tamam hocam.
+
+1150
+03:29:29,492 --> 03:29:33,851
+Ben şimdi oturumu kapatıyorum çünkü bu oturumu kullanılmıyor daha.

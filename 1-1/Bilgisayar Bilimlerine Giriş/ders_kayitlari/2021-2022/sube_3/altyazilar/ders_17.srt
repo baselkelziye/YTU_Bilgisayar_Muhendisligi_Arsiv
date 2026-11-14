@@ -1,0 +1,2767 @@
+1
+00:03:37,747 --> 00:03:41,108
+Evet merhaba arkadaşlar. Herkese iyi günler.
+
+2
+00:03:45,524 --> 00:03:46,364
+İyi günler hocam.
+
+3
+00:03:50,099 --> 00:03:52,099
+Şöyle ekranımı paylaşayım.
+
+4
+00:04:09,235 --> 00:04:14,955
+Evet, videoda herhalde bir sorun yok diye düşünüyorum. Ekran geldi değil mi?
+
+5
+00:04:17,596 --> 00:04:18,435
+Gözlem gözüküyor.
+
+6
+00:04:19,036 --> 00:04:34,795
+Tamam, çok güzel. Sanıyorum katılım için daha fazla beklememize gerek yok. 37-35 öğrenci var şu anda. Yavaş yavaş başlayalım. Evet, ilk iki hafta.
+
+7
+00:04:35,795 --> 00:04:51,836
+Güzel bir giriş ve bilgisayar mühendisliği nedir? Sayı sistemleri nedir? Bu işin temelinde ne vardır? Bilgisayar mimarisi temel olarak nasıl çalışır? Bellek organizasyonu ve işlemci de işlerin nasıl yürüdüğü konusunda?
+
+8
+00:04:51,836 --> 00:04:55,836
+Pardon, yapmam lazım.
+
+9
+00:05:11,668 --> 00:05:30,668
+Böyle bir girişleri yaptıktan, temel kavramları öğrendikten sonra artık arada da bir hafta biliyorsunuz bayram resmi tatilimiz vardı ve sonrasında da uygulamayla da pekiştirdik ve artık konularda ilerlemeye başlıyoruz ve bugünkü başlığımız…
+
+10
+00:05:31,668 --> 00:05:59,668
+algoritmaya giriş ile başlayıp daha sonrasında da algoritmaları nasıl ifade ederiz, akış diyagramı ne demektir, nasıl çizeriz, detayları ve örneklerle yolumuza devam edeceğiz. Önümüzdeki hem bu hafta hem de önümüzdeki hafta yani iki haftalık bir periyot boyunca derste birlikte olacağız. Yani ben anlatacağım. Daha sonraki iki haftada Amaç Hoca tekrar ele alacak. Ondan sonraki iki haftada yine ben ele alacağım şeklinde sürekli.
+
+11
+00:05:59,668 --> 00:06:24,388
+sürekli dönüşerek gideceğiz. Ders Online Yıldız Editor'e Amaç Hoca üzerine tanımlı olduğu için doğal olarak o açmak zorunda kalıyor ve sonrasında bana pas ediyor dersi. Bu şekilde ilerleyeceğiz. Evet, çok muhteşem bir çözüm olmayacak belki ama en azından sağlıklı bir şekilde konu paylaşımıyla bu online grubumuzu da yürütmeye gayret edeceğiz.
+
+12
+00:06:25,076 --> 00:06:35,916
+Tekrardan katılımı kontrol ediyorum. Genellikle 50-60 arasında oluyormuş. O yüzden hani biraz lafı uzatıyorum. Konuya girmeden mümkün olduğunca fazla kalabalık hale gelelim istiyorum.
+
+13
+00:06:38,416 --> 00:06:40,136
+Bir şey sorabilir miyim hocam?
+
+14
+00:06:40,475 --> 00:06:41,216
+Tabii ki, buyurun.
+
+15
+00:06:41,651 --> 00:06:46,831
+Bizim syllabus'ımızda 9. hafta vize görünüyordu ama sanırım güncelleme geldi.
+
+16
+00:06:47,391 --> 00:06:58,671
+Evet, o konuda iyi hatırlattınız, teşekkür ederim. Dün derste de yine derse başlamadan önce duyuru yapmıştık. Online grupta da tekrar bu duyuruyu paylaşmış olalım.
+
+17
+00:06:58,671 --> 00:07:09,651
+Evet, syllabus'da 9. hafta olarak planlamıştık çünkü geçen senelerde sürekli 9. hafta vize haftası olarak Senat O'da belirtildi.
+
+18
+00:07:09,651 --> 00:07:10,231
+Yirleniyordu.
+
+19
+00:07:11,060 --> 00:07:39,060
+Aslına bakarsanız yine öyleydi fakat bir güncelleme yapmışlar. Biz de doğal olarak Senato'nun kararları bağlayıcı olduğu için onlara uymak mecburiyetindeyiz. Çünkü üniversite genelinde alınan bir karar bu. Vize haftasını 8. haftaya çekmişler. Bu nedenle bizim de syllabusımızda bir güncelleme, yani ders planımızda, akışımızda bir güncelleme yapmamız gerekecek. Bu durumda tabii laboratuvar ve uygulama çalışmaları ve ödevler de bundan etkilenebilir.
+
+20
+00:07:39,060 --> 00:08:03,500
+Çünkü biz her şeyi dokuzuncu haftadaki vizeye göre önüne ve arkasına olacak şekilde yerleştiriyorduk. Bu hafta çalışacağız. Bir güncelleme yapmamız gerekirse güncel silibusu eskisini kaldırıp tekrar sizinle paylaşıyoruz. Hatırlarsanız ilk derste daha, ilk hafta zaten yine birlikteydik. Burada online grubumuzda da, orada da
+
+21
+00:08:04,115 --> 00:08:32,076
+ders akışını söylerken değişebilir tentative şeklinde notlar başlıklarda yer alıyordu. Bu gibi olaylar, bu gibi güncellemeler olabilir. Biliyorsunuz zaten hani içinde bulunduğumuz dönem olağan dışı şartlarda yaşayabiliyoruz. Ola ki bir kapanma olur, bir şey olur. Bu gibi durumlarda da hani yine ufak tefek değişiklikler yaşanabilir. O yüzden yüzde yüz kesin diyemiyoruz. Ama mümkün.
+
+22
+00:08:32,115 --> 00:08:37,796
+olduğunca planımıza, programımıza bağlı olacak şekilde hareket etmeye gayret ediyoruz.
+
+23
+00:08:38,796 --> 00:08:42,135
+Evet, katılımımız da yine nispeten arttı yavaş yavaş.
+
+24
+00:08:42,576 --> 00:09:07,635
+Ödevler konusunda da ödevlerinizin duyurularını ilk haftada belirttiğimiz araştırma görevlisi arkadaşlarımız var biliyorsunuz. Onlar kendi Avesiz sayfalarından duyurmuşlar. Duyurmuş durumdalar. Duyurmuşlar biraz yanlış bir cümle oldu. Duyurmuş durumdalar. Eğer hani o konuda da bir şey varsa ödev notunuzu görememi gibi bir durum.
+
+25
+00:09:33,600 --> 00:10:00,000
+Görebilirsiniz. Bu şekilde dönem boyunca da böyle devam edecek. Peki, öyleyse ben artık derse başlayayım. Başlığımız, daha doğrusu konu başlığımız ilk olarak algoritmaya giriş. Girmeden önce aslında şunu söylemekte fayda var. Bu iki hafta boyunca tanıyacağımız algoritma kavramı ve algoritmanın ifade edilmesi yani gör...
+
+26
+00:10:00,000 --> 00:10:11,220
+Görsel halde çizilmesi ya da akış diyagramlarıyla ifade edilmesi. Bundan sonraki hem eğitim hayatınızda hem de iş hayatınızda
+
+27
+00:10:11,572 --> 00:10:21,271
+temel teşkil edecek. Yani sizin bundan sonra yapacağınız bütün çalışmaların tabiri caizse kalbinde her zaman için algoritma yer alacak.
+
+28
+00:10:21,711 --> 00:10:29,392
+Algoritmik düşünmek, direkt olarak böyle slide'lardan ya da bir kitaptan açıp okunarak öğretilebilecek bir kavram değil.
+
+29
+00:10:29,892 --> 00:10:39,572
+Burada en önemli olan sizin mümkün olduğunca fazla alıştırma yapmanız, soru çözmeniz, daha doğrusu problemlere algoritma yapmanız.
+
+30
+00:10:39,572 --> 00:11:01,572
+algoritmik çözümler hem de bir probleme farklı farklı yaklaşımlarla mümkün olduğunca çözüm üretip algoritma geliştirmeye çaba sarf etmeniz olacaktır. Eğer bunları yaparsanız adım adım zaman içinde daha iyi algoritmalar, daha iyi çözümler geliştirmeye başlarsınız. Tasarımlarınız iyileşmeye başlar. Eğer bunları yapmazsanız...
+
+31
+00:11:03,572 --> 00:11:08,231
+Yine öğrenirsiniz ama tabii ki eksikleri de kalabilir. Bu nedenle
+
+32
+00:11:11,379 --> 00:11:17,799
+Temellerini aldıktan sonra, bugün zaten dersin sonlarına doğru da örneklerle pekiştirmeye başlayacağız.
+
+33
+00:11:18,519 --> 00:11:32,059
+Mümkün olduğunca farklı problemleri çözerseniz ve bu şekilde problemlere farklı algoritmik çözümler üretmeye gayret ederseniz sizin için çok daha faydalı olacaktır.
+
+34
+00:11:32,059 --> 00:11:33,240
+Peki başlayalım.
+
+35
+00:11:42,004 --> 00:11:53,124
+Zoom fücranları biliyorsunuz biraz böyle hayırlı olduğu için sağdan soldan uğraşmam zorunda kalabiliyorum. Tamam, evet. Evet, şimdi başlayalım.
+
+36
+00:11:53,940 --> 00:12:21,940
+Şuradan başlamak istiyorum. Bilgi nedir? Ve özellikle de madem ki biz bilgisayarla hesaplama yapmaya çalışıyoruz. Bilgisayarlar için bilgi ne demektir? Ya da biz bunu nasıl ifade etmeliyiz? Yani yaptırmak istediklerimizi nasıl ifade etmeliyiz? Aslında temelde iki çeşit bilgi vardır. Şimdi biz insanız ve insan olduğumuz için beynimizle, mantığımızla, düşünerek ya da gözleyerek gerçekleri ve doğruları...
+
+37
+00:12:21,940 --> 00:12:49,539
+Bunları bilebiliyoruz ya da bunları çıkartabiliyoruz. Yani bu doğrulara ya da bu gerçeklere, bilgilere erişebiliyoruz. Ve bunları bir şekilde dil ile ya da resim ile ya da başka şekillerde ifade edebiliyoruz, tanımlayabiliyoruz. İşte biz bu tip bilgilere, gerçeklere, doğrulara anlayabildiğimiz, algılayabildiğimiz ve çıkarımla elde edebildiğimiz her tür bilgiye
+
+38
+00:12:49,940 --> 00:12:52,720
+tanımlayıcı bilgi adı veriyoruz.
+
+39
+00:12:55,059 --> 00:13:22,619
+bir kalem alalım. Tanımlayıcı bilgi, yani gerçek karşılığıyla ya da hani literatürdeki bilmenin adıyla deklaratif, ne oluç? Adı veriyoruz. İşte bu böyledir şeklindeki tanımlar. İşte su belirli dereceler arasında akışkandır. Ya da tabii sınıf ortamında olmadığımız için şimdi güzel örnek veremiyorum ama mesela ben [öğrenci]'dan kısayım.
+
+40
+00:13:23,059 --> 00:13:43,823
+şeklinde farklı ifadeler, tanımlayıcı, gerçekleri tanımlayan bilgilerdir. İyi, çok güzel ama şimdi ben [öğrenci]'dan kısayım. Bilgisayar bunu nasıl bilecek? Ya da su işte belirli dereceler arasında sıvıdır. Bunu bilgisayar nasıl bilecek? Ya da işte bir elinizde...
+
+41
+00:13:43,823 --> 00:14:04,504
+tahta var, sınıfta olduğumuzu yine düşünelim. Bu tahtayı silmeye çalışıyorsunuz. Tahtayı nasıl sileceğinizi siz tanımlayabilirsiniz ya da bunu bilirsiniz. Tekrardan bunu adım adım ifade etmeye ihtiyaç duymazsınız insan olduğunuz için. Fakat bir bilgisayar mimarisi ve çalışma yapısı gereği.
+
+42
+00:14:04,820 --> 00:14:21,820
+Bunları bilemez. Bunları bilmek gibi bir durumu yoktur. Peki bilgisayar ne yapar? Nedir bilgisayarın özü? Doğal olarak bir işlemci var, hatırlayalım. İşlemcinin bir tanımlı komut kümesi var. Bu komut kümesinde tanımlı olan bütün eylemleri
+
+43
+00:14:21,888 --> 00:14:39,968
+Çok yüksek hızda ve hiç hata yapmadan çalıştırma yeteneğine sahip. Demek ki eğer biz bir şekilde tanımladığımız gerçekleri, bilgileri, belirli bir işi yapmak üzere, belirli bir sonucu elde etmek üzere, bunları gerçekleştirmek için
+
+44
+00:14:40,467 --> 00:14:51,387
+kesin, değişmez, farklı, anlaşılmaz, anlaşılamaz tanımlar halinde ifade edebilmemiz gerekir. Biz ne zamanki tanımlayabildiğimiz bilgiyi
+
+45
+00:14:51,923 --> 00:15:18,463
+Komutlar halinde, buyruklar halinde tanımlarız, tanımlayabiliriz. İşte o zaman da bu bilgi tipine de buyurucu bilgi yani imperative knowledge adını veririz. Artık komutlardan ya da buyruklardan oluşan bilgi kümesini ya da eylem setini biz bir bilgisayar üzerinde işletebilir, çalıştırabilir ve bunun nihayetinde de sonuçlarını alabilir hale geliriz.
+
+46
+00:15:19,443 --> 00:15:21,724
+Aranızda yumurta kırmayı bilen var mı?
+
+47
+00:15:24,303 --> 00:15:27,283
+Yumurta pişirmeyi bilen var mı diye sorayım.
+
+48
+00:15:28,823 --> 00:15:30,764
+Çok zor bir şey değil zaten hocam.
+
+49
+00:15:31,384 --> 00:15:36,484
+Peki bana anlatır mısın? Buyurucu bilgi şeklinde. Adım adım ifadelerle.
+
+50
+00:15:37,604 --> 00:15:45,543
+İlk önce tavayı alıyoruz, içine yağ koyuyoruz ve altını açıyoruz. Yağın kızmasını bekliyoruz.
+
+51
+00:15:47,124 --> 00:16:08,624
+İkinci adım olarak yumurta veya yumurtaları ne kadar kıracaksak bir kabın içine kırıp istersek karıştırarak ve içine tuz veya başka bir şey ekleyeceksek ekliyoruz. Yağ kızdığında ise yumurtayı bunun içine dökerek karıştırarak pişmesini bekliyoruz.
+
+52
+00:16:08,624 --> 00:16:11,563
+Bu kadar.
+
+53
+00:16:11,988 --> 00:16:27,848
+Tamam. Birinci adım dedin, dört tane iş saydın, farkında mısın? Tavayı aldın, yağı koydun, altını açtın, kızmasını bekledin, dört ya da beş olmuş galiba. Demek ki bunlar aslında ayrı adımlar belki de. Tamam. Yumurtayı nasıl kıracağımı söylemedin ama.
+
+54
+00:16:27,848 --> 00:16:36,528
+O kadar diyorsunuz, açıklayıcı olmuş. Evet, aynen öyle. Yani yumurtayı kabuklarıyla beraber tavanın içine atmalı mıyım?
+
+55
+00:16:36,884 --> 00:16:38,604
+Yok kesinlikle, hoş olmuyor.
+
+56
+00:16:39,024 --> 00:16:44,604
+Hoş olmaz. Bak ne oldu? Burada kesin değişmez, herkesin aynı anlayacağı şeyler yok.
+
+57
+00:16:45,344 --> 00:16:51,903
+Yemek tarifleri birer buyurucu bilgidir, doğrudur. Hatta biraz sonra yemek tarifleri de birer algoritmadır diyeceğiz.
+
+58
+00:16:52,344 --> 00:16:57,524
+Ama bunları çok düzgün bir şekilde adım adım tanımlamamız gerekir.
+
+59
+00:16:57,644 --> 00:17:02,163
+Peki, bakalım algoritmaya geçelim o zaman. Teşekkür ediyorum. Fena değil.
+
+60
+00:17:02,644 --> 00:17:25,864
+Yumurta kırma algoritmanın gidişatı eksikleri olmakla birlikte en azından adım adım buyrukları güzel tanımladık. Ama burada işte mesela tavanın nasıl olması gerektiği, ateşin ne kadar açılması gerektiği, yağ miktarının ne olması gerektiği, işte yumurta sayısı tamam, okey fark etmez ama kabuklarının ne yapmamız gerektiği.
+
+61
+00:17:26,228 --> 00:17:53,907
+Sonrasında ne kadar süre bekleyeceğiz? Hani pişene kadar diyoruz ya, o pişmenin nasıl anlaşılacağı, en azından nereye kadar pişirmeye devam edeceğim? Yakmalı mıyım? Kapkara olana kadar mı pişirmeliyim? Yoksa sıvı mı kalmalı gibi? Hani burada durma noktanızı da tanımlayarak, belirleyerek anlatsanız gerçekten hani tam bir imperatif tanım yapmış olursunuz. Yani buyurucu bir tanım yapmış olursunuz.
+
+62
+00:17:54,228 --> 00:18:12,468
+Evet, özetle bir deklarasyonlar bir de buyruklar var. Bizim bir şekilde bunları birbirine dönüştürebiliyor olmamız lazım ki artık bilgisayar üzerinde bunları komutlar halinde ifade edip çalışmasını sağlayabilelim.
+
+63
+00:18:15,092 --> 00:18:31,112
+Dediğim gibi buyurucu bilgi haline dönüştürerek bir ifade etmemiz, yani bu şekilde bir tanıma dönüştürmemiz gerekiyor ve bilgisayarlı hesaplama işlemlerinin hepsinin özünde, altında, temelinde, içinde bu temel kavram yer alır.
+
+64
+00:18:31,488 --> 00:18:55,327
+Peki, ben o zaman bunu nasıl ifade edeceğim? Yani ben bu bilgiyi nasıl aktaracağım, nasıl göstereceğim? İşte burada da tam olarak karşımıza algoritma ifadesi çıkıyor. Algoritmanın tanımı şudur, bir problemi çözmek için, hop burada problem de önemli, bizim mutlaka bir problemimizin olması gerekiyor. Takip edilecek, sonlu sayıda adımdan oluşan
+
+65
+00:18:56,243 --> 00:19:09,503
+Hmm, demek ki sonsuza kadar pişirmemeliyim yumurtayı. Ya da bir problemi çözerken sonsuza kadar beklemek ya da sonsuza kadar çalışmak diye bir şey tanımlı olmaması gerekir.
+
+66
+00:19:10,243 --> 00:19:21,023
+Sonlu sayıda adımdan oluşan çözüm akışının ifadesine biz algoritma adını veriyoruz. Yani aslında buyurucu bilgi tanımı diyebiliriz daha da basit olacak şekilde.
+
+67
+00:19:21,556 --> 00:19:47,635
+Bir başka aynı ifadeyi bir başka cümleyle, şuraya bir nokta koyalım, şuraya da bir nokta koyalım. Bir başka şekilde ifade etmek istersek, yine bir problemin mantıksal çözümünün, burada teorik bir çözümden bahsediyoruz, o yüzden mantıksal diyoruz. Pratik bir çözüm şu anda tam olarak gözükmüyor. Ne zaman pratik olacak? Biz bunları programlar haline getirdiğimizde, çalıştırdığımızda pratik çözümler olacak. Adım adım.
+
+68
+00:19:48,692 --> 00:20:07,771
+Mantıksal çözümün adım adım nasıl gerçekleştireceğinin tanımlanmasına algoritma ifadesi adı verebiliriz. Bunları algoritmalarımızı demin [öğrenci]'nin söylediği gibi sözlerle ifade edebiliriz. Tavayı al, ocağa koy.
+
+69
+00:20:08,372 --> 00:20:17,932
+Ateşi aç ya da ateşi belirli bir dereceye kadar aç, şu kadar miktarda yağı tavanın içine koy şeklinde sözlerle ifade edebiliriz.
+
+70
+00:20:18,355 --> 00:20:35,416
+Fakat burada bazen sıkıntılar da yaşayabiliriz. Özellikle de İngilizce hatta Türkçe'de var. Bu eş anlamlı kelimeler yüzünden çok ciddi sıkıntılar yaşayabiliyoruz. Bu durumda herkes o cümleden aynı anlamı çıkartamayabiliyor.
+
+71
+00:20:35,416 --> 00:20:43,436
+Şimdi şuradan Toolbox'ımdan bir şey alıyorum. Şuraya bir metin yazacağım.
+
+72
+00:20:44,307 --> 00:20:53,188
+yazdım.
+
+73
+00:21:02,483 --> 00:21:20,203
+Buradan kim ne anlıyor? Bana birisi hemen söyleyebilir mi? Uçan uçaklar tehlikeli olabilir. Uçan uçaklar tehlikeli olabilir. Tamam. Başka bir anlam çıkaran var mı? Uçakları uçturmak tehlikeli olabilir. Evet, çok güzel. Yani...
+
+74
+00:21:20,211 --> 00:21:48,192
+Burada Flying Plains bir sıkıntı, değil mi? Yani ben bunu söylediğimde acaba uçan uçaklar mı tehlike yaratıyor yoksa birinin uçağı uçurması mı tehlikeli? Bunu tam olarak anlayamıyorum. O zaman Türkçede de buna benzer çok örnek verebiliriz tabii ki. Özellikle de eş anlamlı kelimeler yüzünden. Hele bir de araya virgül koymadığınızda biliyorsunuz. Hani oku baban gibi falan şeklindeki cümleleri de bilirsin.
+
+75
+00:21:48,211 --> 00:22:16,211
+tanımlarımız, deklarasyonumuzu ifade etmemiz adım adım sıkıntı doğurabiliyor. Nasıl doğurabiliyor? İşte ben buradan iki farklı, tamamen farklı anlam çıkartabiliyorum. Birinde insanın eyleminin tehlikeli olduğunu, öbüründe ise uçan nesnenin tehlikeli olduğunu söylemiş oluyorum. O zaman benim bir şekilde her bakanın, her okuyanın aynı anlamı çıkaracağı şekilde bir gösterime ihtiyaç var.
+
+76
+00:22:16,211 --> 00:22:38,711
+İşte burada da önceden tanımlı, anlamlarının ne olduğu belli olan bir sembol kümesi kullanarak görsel bir dil ile yani görsel bir gösterim ile, ifade ile algoritmalarımızı tanımlayabiliriz ya da dokümante edebiliriz. İşte biz bunlara akış diyagramı adını veriyoruz.
+
+77
+00:22:40,692 --> 00:22:51,491
+Akış diyagramlarını da dersin hemen ikinci kısmında aslında göreceğiz ve nasıl kullanıldıklarının ya da nasıl çizilmeleri gerektiğiyle ilgili temel bilgilere sahip olacağız.
+
+78
+00:22:52,652 --> 00:22:59,372
+Bir başka algoritma tanımı yetmedi. Üçüncüyü de tanımlayalım. Belirli bir problemi çözmek için arda arda uygulanacak.
+
+79
+00:22:59,372 --> 00:23:03,432
+Yani aslında adım adım, sonlu sayıda hep aynı şeyi söylemeye çalışıyoruz.
+
+80
+00:23:03,827 --> 00:23:14,307
+Kesin direktiflerden oluşan, bunu söyledik, nasıl bir tava, ne kadar ateş, yumurtanın kabuğu falan, nereye gidecek gibi şeyleri kesin olarak tadımlıyoruz.
+
+81
+00:23:15,028 --> 00:23:20,067
+Sonlu bir kümedir. Yine burada sonsuza kadar çalışmaması gerektiğini de ifade etmiş olduk.
+
+82
+00:23:20,500 --> 00:23:47,940
+Bir algoritmanın doğal olarak çalışması için girdilere ihtiyacı vardır. Olmaya da bilir, ondan da bahsedeceğiz. Ama genellikle bir girdi verisi üzerinde, aldığınız bilgi üzerinde çalışmanız daha doğru olacaktır. Peki, siz size verilen bir algoritma olarak size verilen mantıklı olan ve doğru olan
+
+83
+00:23:48,403 --> 00:24:09,163
+Tüm girdiler için doğru olarak çalışmalısınız. Yanlış çalışırsanız o zaman siz doğru bir ya da düzgün bir algoritma değilsiniz ya da algoritma değilsiniz. Ve doğru çıktığı yine doğru olarak çalışıp doğru çıktığı sonlu bir zamanda üretmeniz gerekir. İşte adımlar.
+
+84
+00:24:09,556 --> 00:24:25,415
+Sonluluk, doğru girdi ya da düzgün girdi de doğru çalışmak ve doğru çıktığı üretmek bir algoritmanın temel özellikleri. Bunlar olmazsa ya da bunların dışındaki bütün durumlara algoritma adını vermiyoruz. Bunlar algoritma değildir diyoruz.
+
+85
+00:24:26,099 --> 00:24:37,599
+Evet, algoritmayı kitabi bilgi olarak yani bir tanım olarak ifade etmeye çalıştım. Üç farklı şekilde aynı şeyi biraz biraz değiştirip söyleyelim.
+
+86
+00:24:37,599 --> 00:24:41,899
+Bu arada şunu tabii şuradan temizlememiz gerekiyor.
+
+87
+00:24:42,740 --> 00:25:00,740
+Tarihçeden biraz bahsetmemiz yine güzel olacaktır. Niye algoritma diyoruz? Kelime mi kalmadı? Nereden geliyor bu algoritma kelimesi acaba diye merak ederseniz işte her şeyin sorumlusu şurada gördüğünüz zatı muhterem. Adı şu kısım tam...
+
+88
+00:25:01,236 --> 00:25:12,036
+Emin olmamakla birlikte bunun birkaç hani Abdullahlı ya da Caferli versiyonları var. O yüzden şu kısımdan çok emin değilim. Orayı şöyle kırmızıyla üstünde çizmiş olalım ama şu taraf kesin.
+
+89
+00:25:12,456 --> 00:25:20,856
+El-Harezmi. El-Harezmi burada aslında önemli anahtar kelime. Algoritmayı buraya bağlayanlar var.
+
+90
+00:25:24,211 --> 00:25:49,692
+780 yılında Harezm'de doğmuş. Bu günümüzde Horasan olarak biliniyor. Horasan'ı belki tarih derslerinizden hatırlıyorsunuzdur. Böyle beylikler falan filan zamanları eski. Orada da bir ülkeler kurulmuştu. Bugün günümüzde Özbekistan topraklarında bulunuyor. Ve 850 yılında Bağdat'ta da vefat etmiş El Harezm.
+
+91
+00:25:50,259 --> 00:26:17,519
+Pers bir gökbilimci, yani kökeni günümüzde İran halkının oluşturduğu genel kavim diyebiliriz. Bir Pers gökbilimci ve matematikçi. Niye gökbilimci ve matematikçi diyoruz? Çünkü bu yıllarda başka bir genel bilim alanı yok. Yani hani böyle fiziktir, kimyadır ya da bilgisayar bilimleridir şeklinde bir ayrım yok. Astronom, aslına bakarsanız işte hesapla, hesaplamayla, geometriyle.
+
+92
+00:26:18,259 --> 00:26:45,620
+yıldızların hareketlerini ya da göklü cisimlerinin konumlarını ya da işte dünyanın üzerindeki pozisyonlamayı hesaplamaya çalışıyorlar. Ve daha olarak bunu matematik kullanarak ve matematiğin o anda bilinmeyen özelliklerini de aslında tanımlayıp keşfederek ortaya koymaya çalışıyorlar. Bu yüzden çok eski zamanlarda bu tip çalışmaları yapan matematik, bilgisayar, bilgisayar bilimleri, algoritmalarla ilgili çalışmaları yapan herkes gökbilimci ya da ve veya matematikçi olarak
+
+93
+00:26:46,259 --> 00:27:10,500
+sıfat alıyor, isimlendiriliyor. Ve genel olarak hayatını Bağdat'ta geçirmiş. Zaten Bağdat'ta da vefat etmiş. Peki ne yapmış El-Harezmi? 825 yılında, yani ölmeden yakışık 25 yıl öncesinde, 826'da adres diyenler var. Çok önemli değil. Arapça bir kitap yazıyor. Şu kelime şurada geçiyor. Kitabın adı, hesap zaten, Al-Cabr, Val-Mukabala.
+
+94
+00:27:10,864 --> 00:27:18,423
+Bunu Türkçe'ye çevirdiğinizde, bu da şey kapağı bu arada sağ tarafta gördüğünüzde kitabın ilk sayfası.
+
+95
+00:27:19,044 --> 00:27:29,203
+İşte şuradan kitap diye başlıyor. Bunu Arapça okuyabilen birisine okuttum. Doğru yani gerçek şey başka bir yanlış sayfa değil.
+
+96
+00:27:29,884 --> 00:27:38,124
+Bu kitabın başı olduğu kesin. Bunu garantiledim. Doğrulattırdım. Adı özetle Hint rakamlarıyla hesap yöntemleri.
+
+97
+00:27:38,864 --> 00:27:40,864
+Böyle bir kitap yazıyor. O zamanlarda
+
+98
+00:27:41,556 --> 00:27:52,556
+İslam ve Arap coğrafyasında matematik çalışmaları ön planda, dünyada da önemli çalışmalar orada başlamış ya da oralarda yürütülüyor.
+
+99
+00:27:53,375 --> 00:28:06,195
+Sonrasında işte merkezin ya da bilimin merkezinin ve bu tip hesaplamalı bilimlerin merkezinin Avrupa'ya ya da Batı'ya kaymasıyla birlikte de Latin diye bir çevirisi yapılıyor bu kitabın.
+
+100
+00:28:06,296 --> 00:28:09,556
+1300'lü yıllarda Latince'ye çeviriliyor. Nasıl bir isim alıyor?
+
+101
+00:28:09,556 --> 00:28:18,415
+İşte hesap alcebra, val mukabbala. Şuradaki alcebra zaten buradan geliyor. Algoritmi de numero indorum. Yani
+
+102
+00:28:19,859 --> 00:28:46,519
+Hint rakamlarıyla hesaplama şeklinde bir karşılık buluyor ve burada bulduğu karşılık ile algoritmi kelimesinden Latincede başlayarak El-Harezmi, Al-Cabr, Cebir zaten algoritma buradan doğmuş oluyor. Yani bütün algoritma kelimesinin kökeni El-Harezmi'nin yazdığı bu kitaptaki başlığın Latinceye çevrilmesinden geliyor.
+
+103
+00:28:47,859 --> 00:29:15,159
+Kaynaklar ya da bazı kitaplarda antik Yunan'daki kelimelerden çıktığını iddia edenler de var ama bu yanlış bir bilgi. Gerçek olan bu şekilde El Harizmi'nin çalışmalarından doğmuş ve Latince'ye çevrilen kitabın isminin günümüzde hala algoritma şeklinde bütün dillerde neredeyse ortak olacak şekilde kullanılması gerçek kökeni.
+
+104
+00:29:16,180 --> 00:29:34,180
+kökenlerimizi bilmek önemli. Algoritmada nereden geliyor bunu bilmek. Sonrasında bunu kullanırken tarihçesine de hakim olmak bir erdemdir. O yüzden bunlardan da bahsetmek istedim ya da bahsetmeden geçmek istemedim.
+
+105
+00:29:34,675 --> 00:29:59,915
+Peki, ne dedik? Deklaratif bilgimiz var. Bunu imperatif bir bilgiye çevirmemiz gerekiyor. Yani tanımı direktiflere çevirmemiz gerekiyor dedik. İşte bu sürece de aslında algoritmanın oluşturulması adını veriyoruz. Dediğim gibi biz gerçekleri biliriz ya da çıkarabiliriz ya da bunları çok güzel bir şekilde tanımlayabiliriz. Örneğin matematiksel bir subfonksiyon tanımlıması da. Deklarasyonunu söyleyeyim. Kare kök. Kare kök.
+
+106
+00:30:00,000 --> 00:30:05,000
+Almanın deklarasyonu aslında şudur. En temel, en basit haliyle.
+
+107
+00:30:05,263 --> 00:30:11,763
+y çarpı y eşittir x. Burada x girdi, y çıktı olarak düşündüğümüzde şöyle de okuyabiliriz.
+
+108
+00:30:12,203 --> 00:30:26,983
+Çıktının karesini aldığınızda girdiğe eşit olan bir denklik oluşturduğunuzda yani bunu gerçeklediğinizde, bunu gerçek hale getirdiğinizde bu tanımı doğru yapmış olursunuz ve yaptığınız işlemede kare kök alma adı verilir.
+
+109
+00:30:26,983 --> 00:30:29,863
+İşte mesela bu resmi bir tanım, deklarasyon dediğim gibi.
+
+110
+00:30:30,451 --> 00:30:45,172
+Hadi bakalım şimdi bilgisayara bunu ifade edin. Y çarpı Y eşittir X gerçeğini hesap yapmak üzere. Yani ben ona bir sayıp... Pardon.
+
+111
+00:30:50,548 --> 00:31:02,347
+bir x sayısı verdiğimde y çarpı y değerini eşitleyen y değerinin ne olduğunu hesaplayan yöntemi bilgisayara nasıl anlatabiliriz? Nasıl anlatabiliriz? Fikri olan var mı?
+
+112
+00:31:09,907 --> 00:31:11,287
+Ben söyleyeyim, anlatamayız.
+
+113
+00:31:12,147 --> 00:31:13,247
+Çünkü anlamıyor.
+
+114
+00:31:13,827 --> 00:31:15,627
+Dediğim gibi, elinde bir komut seti var.
+
+115
+00:31:15,807 --> 00:31:22,087
+Onları işte, topla, çıkar, belleğe yaz, bellekten oku gibi.
+
+116
+00:31:22,087 --> 00:31:24,747
+Böyle temel işlemleri biliyor.
+
+117
+00:31:25,167 --> 00:31:27,047
+Lojik karşılaştırmalar yapabiliyor.
+
+118
+00:31:27,587 --> 00:31:28,947
+Büyüktür, küçüktür falan gibi.
+
+119
+00:31:29,327 --> 00:31:54,008
+Ama bunun dışında sizin nasıl ki yumurta kırmayı adım adım anlatmanız gerekiyor. Bu şekilde bir tanım oluşturmanız gerek. Şimdi bu burada gördüğünüz algoritma Newton'ın kök alma algoritması. Yakınsama metodu ile aslında bizim bir kare kök hesabını, verilen bir sayının kare kökünü hesaplamamızı sağlıyorum. Adım adım bakalım.
+
+120
+00:31:54,612 --> 00:32:07,092
+Burada sıfırdan altıya kadar toplamda yedi adımdan oluştuğunu ve şurada da bir alt adım olduğunu görüyorsunuz. Gördüğünüz gibi belli bir başlangıcı var ve sonlu bir yerde duruyor.
+
+121
+00:32:07,663 --> 00:32:34,184
+algoritmanın en önemli özelliği doğal olarak sonlu olmasıdır. Sonsuza kadar sürmemesi gerekir. Şimdi yöntem şu. Önce birinci adımda x'i okuyoruz. Ne demek? Bu kullanıcıdan bir x değişkeninin değerini al. Mesela kaç olsun? 16. Ben x'i gittim. 16 olarak burada tanımladım.
+
+122
+00:32:35,380 --> 00:32:36,920
+Şurayı şöyle tanımlamış olalım.
+
+123
+00:32:37,420 --> 00:32:42,200
+Sonrasında algoritmanın ikinci adımı benden bir eşik değeri okumamı istiyor.
+
+124
+00:32:42,200 --> 00:32:46,240
+Ya da bunu tanımlamış durumda direktif olarak e değerini okumamı istiyor.
+
+125
+00:32:46,240 --> 00:32:55,800
+Mesela e değeri epsilon ya da eşik değeri 0.001 olsun diyelim.
+
+126
+00:32:55,800 --> 00:32:57,180
+Ne demiş olduk?
+
+127
+00:33:01,791 --> 00:33:28,591
+Bu kadar yaklaşsam benim için yeter. Benim için yeterli olacaktır. Bundan daha azını kabul edemem ama bu kadar yaklaştığında artık çalışmayı durdur demek için kullandığımız bir eşik değeri. Bu eşik değerini tamamen sıfır verdiğimizde sonlanmamak ya da sonsuza kadar çalışmak gibi özellikle irrasyonel sayılarla işin içine girdiğinde böyle bir durumla karşı karşıya kalabiliriz.
+
+128
+00:33:28,976 --> 00:33:48,876
+Bu nedenle sonlanabilmek için bir kesinlik, bir yakınlık ifadesine ihtiyaç duyuyoruz. Böyle bir eşikliğe de bu yüzden algoritmamızda tanımlanmış durumda. Bunu sabit olarak da tanımlayabilirdik ama ben burada kullanıcından alınmasını istemişim. Tamam. Alternatif. Üçüncü adımda
+
+129
+00:33:49,299 --> 00:34:14,400
+rastgele bir pozitif tam sayı oluşturuyoruz. Buna da R adını veriyoruz. Şimdi burada hızlı olsun, biraz da kolay olsun diye. Nedense böyle rastgele ilk sayımı, R rastgele sayısını 3 olarak bulmuşum. Tamam. Bu da aslında hazır bir fonksiyon. Yani bana bir rastgele sayı üret fonksiyonu. Onun için de aslında ayrı bir algoritma, ayrı bir matematiksel algoritma çalışarak bir tam sayı değerini ise geri döndürecek.
+
+130
+00:34:14,867 --> 00:34:32,367
+Önemli değil. Ben attım 3 diye tuttum. Yani rastgele 3 dedim. Şimdi dördüncü adımda şöyle bir komut var. Diyor ki algoritma bana, r çarpı r de eksi x değeri epsilondan büyük olduğu sürece
+
+131
+00:34:32,980 --> 00:34:48,180
+Burada mutlak değer olması lazım biliyorsunuz. Onu burada ifade etmedim. Sözde söylemiş olayım. Hani farkı pozitif olması lazım çünkü negatif de çıkabilir. Buradaki şeyi ne taraftan attığınıza göre değişir R değerini.
+
+132
+00:34:50,900 --> 00:35:00,659
+9 mesela ben burada 3 attığım için işte 9, 9-16'dan doğal olarak hani negatif bir sayı çıkacak ama onu hani Absolut değer olarak düşünebilirsiniz.
+
+133
+00:35:01,300 --> 00:35:10,960
+Burada hani o detaya çok fazla girmek ya da ortamı fazla karıştırmak istemedim. Neyse, Epsilon'dan, bu aradaki fark Epsilon'dan büyük olduğu sürece şuradaki işlemi yap diyoruz.
+
+134
+00:35:10,960 --> 00:35:15,460
+Tekrar tekrar yapmasını istiyoruz. Neymiş o işlem? R değerini
+
+135
+00:35:17,139 --> 00:35:21,460
+R ve x bölü r değerlerinin ortalaması ile güncel. Şimdi R
+
+136
+00:35:22,003 --> 00:35:47,443
+x bölü r aslında bir oran ve benim bir adım öteye yani böyle köke doğru yaklaşmamı sağlayan bir güncelleme. Nasıl yapacağım bunu da? R artı x bölü r değerini yani iki değeri iki sayı toplayacağım ikiye böleceğim. Yani ortalamasını almış olacağım. Bu iki değerin ortalaması yani şurada gördüğünüz hesap beni yeni tahmin değerim yani yeni
+
+137
+00:35:48,148 --> 00:35:59,788
+Kök adayı tahminim olarak yerini alacak. Ne zamana kadar ben bu işlemi yapmak istiyorum? Şuradaki fark Epsilon'dan küçük eşit olana kadar tekrar tekrar tekrar tekrar yapmak istiyorum.
+
+138
+00:36:00,179 --> 00:36:28,179
+Nerede duruyorum? Artık bu şart bozuldu. Demek ki buradan çıkacağım ve algoritmanın beşinci adımına geçeceğim. Beşinci adımda da re değerini ekrana yazdıracağım ya da kağıda yazdıracağım. Üreteceğim o değeri size sunacağım ve altıncı adımda da duracağım. Bitti. Artık ben başlangıcı belli. Çalışmak için gerekli değerleri belli. Her adımda yani daha doğrusu içinde sonuca ulaşmak için yapması gerek.
+
+139
+00:36:28,179 --> 00:36:39,179
+adımları tanımlı ve sonlu ifadeleri oluşturdum. Sıralı olarak gerçekleştirdim ve bir noktada da bittim. Durdum, çalışmayı bir durdurabildim.
+
+140
+00:36:39,179 --> 00:36:41,179
+İşte bu...
+
+141
+00:36:41,492 --> 00:37:03,512
+Örneğin, kare kök alma işleminin algoritmik tanımı ya da algoritmik ifadesi. Bu deklarasyonun imperative no-u-u-uç haline getirilmiş ya da buyruklar haline getirilmiş şekli olarak karşımızda duruyor. Şimdi örneği işletelim bir kere hızlıca. R'yi 3 seçmiştik. R kare nedir? Bu durumda 9.
+
+142
+00:37:04,596 --> 00:37:32,135
+9-16, işte 7 değeri çıkıyor. O zaman benim bu 7 değerini güncellemem lazım. 16 bölü 3'ün, 16 bölü 3 artı işte 7, pardon 9 bölü 2'den 4.17 değeri R'nin yerine yazılıyor. Ne yapıyorum? Aslında yaptığım şey bu oluşan hesapladığım değeri gidip şuradaki R gözüne yazmak. Artık R değeri 4.17.
+
+143
+00:37:32,980 --> 00:37:40,059
+4.17 ile 4.17'yi çarpıp x'den çıkartıyorum ve 17.36 değeri çıkıyor.
+
+144
+00:37:41,172 --> 00:38:06,472
+Aradaki fark ne oldu? 1.36'ya düştü. Hala yeterli değil. 1.36 bundan çok fazla. O zaman güncellemem gerekiyor. Nasıl güncelleyeceğim? Yine x bölü re'yi hesaplayacağım. x bölü re ile ortalamasını alacağım. Toplayıp ikiye böleceğim. Ve yeni değerim 4.0035. Alacağım bunu. R değeri olarak burada 4.1'de tekrar kullanacağım.
+
+145
+00:38:06,963 --> 00:38:34,963
+4.0035 çarpı 4.0035 16.02 yapıyor ve bu da yeteri kadar yine yakın değil. Buradaki çok daha fazla. Bir daha güncelleyeceğim ve 4.00002 değerine ulaşacağım. Şimdi 4.002 ile çarpıp 16'dan çıkarttığımda mesela ε'dan daha küçük bir değer aradaki fark benim için daha küçük bir değer olmuş olacak. O zaman ne yapacağım? Artık 4.003.
+
+146
+00:38:34,963 --> 00:39:00,604
+3.1'in içine giremem çünkü bu şart doğru değil, bunu çalıştırmamam lazım. Beşinci adımdan yoluma devam edeceğim. Ekrana R değerini yazdır. Ne yazdıracak ekrana? 4.000002. Bu değeri ekrana yazdıracak ve sonunda da çalışmasını tamamlayacak. Gördüğünüz gibi gerçek kök değil. Normalde 4 olması lazımdı değil mi? Fakat biz 4'e
+
+147
+00:39:00,947 --> 00:39:23,127
+İstediğimiz hassasiyetten daha fazla olacak şekilde yaklaşmış durumdayız. Bu kadarı bizim için yeterli diyoruz. Bunu daha da ufak yapabilirsiniz. O zaman buradaki döngü çok daha fazla, yani buradaki 4.1 çok daha fazla kere çalışacak. Sonucu ulaşmanız daha uzun sürecek. Ama böyle 4.000001 gibi bir şey bulacaksınız.
+
+148
+00:39:23,380 --> 00:39:51,380
+Bunun da bir limiti var. Yine bellek adresleme, bellek 8 bit, onaltı bit, otuz iki bit hatırlarsanız overflow demiştik. Bu gibi kavramlarla zaten bizim aslında bilgisayarda da erişebileceğimiz hassasiyetler belirli ve kısıtlı. Bu nedenle bu şekilde yaklaşarak, yakın sayarak bir kare kök işlemini adım adım çözebiliyoruz. Ne yapabilirsiniz? Bunu mesela şuradan kestiğinizi düşünün. Virgülden sonra dört rakam olacak.
+
+149
+00:39:51,380 --> 00:39:55,980
+şekilde 4.0'a erişmiş olursunuz. Yuvarlayabilirsiniz.
+
+150
+00:39:55,980 --> 00:39:58,300
+Evet.
+
+151
+00:39:58,300 --> 00:40:14,940
+Temizlik yapalım. Ne yaptık? Dediğim gibi bir deklarasyonu şu tanımı bilgisayarda koşturabilmek, çalıştırabilmek ve sonucunu alabilmek üzere
+
+152
+00:40:15,219 --> 00:40:34,019
+Tanımlı adımlardan oluşan bir akış haline getirdik. Başlangıcı belli, sonu belli. Nasıl çalıştığı adım adım tanımlanmış. O zaman ben buna bir algoritma adını verebilirim. Ki zaten bu da Newton'un kök alma algoritması olarak biliniyor.
+
+153
+00:40:35,411 --> 00:40:57,592
+Algoritmanın özelliklerine tekrar geri dönelim. Hızlıca geçmiştik. Burada bir daha slide'ın üzerinde de görmüş olalım. Anlaşılır olmak. Mutlaka algoritmanızın adımları, girişleri, çıktıları net olmalı ve bunların her biri tek bir anlam içermelidir. Yani her bakan, her okuyan buradan tek bir şey anlamalıdır.
+
+154
+00:40:58,099 --> 00:41:15,099
+Mesela geri geleyim. Şurada mesela bazı şeyleri farklı anlayabilirsiniz. Bunu ben mesela matematik bir ifadeyle hani şu şekilde yazsaydım, r değerini şu değer ile güncelle deseydim, burada herkes aynı şeyi anlardı. Ama burada
+
+155
+00:41:15,443 --> 00:41:39,124
+başka şeyler okuyup da başka şeyler anlayan ve yanlış bir operasyon yapan insanlar da olabilir. Bunu biraz hani Türkçe olsun diye yazdım ben. Dediğim gibi bunları matematik ifadelerle de burada barındırabilirdik. Evet, algoritmamızın girdilerinin olması lazım. Bu sıfır veya daha fazla olabilir. Bazı algoritmalar, işte mesela bir rastgele sayı üretme algoritması girdi almak zorunda değil.
+
+156
+00:41:39,476 --> 00:41:58,456
+Fakat genellikle girdilerimiz olur. Hani bu sıfır çok nadir durumlarda sıfır girdiğiyle çalışırız. Hani bir veya daha fazla iyi tanımlanmış girdilerimiz olması gerekir. İyi tanımlanmış ne demek? Mesela işte özellikle bu tip işlemlerde negatif sayı.
+
+157
+00:41:58,804 --> 00:42:25,464
+durumu mesela, hani onun kare kökünü nasıl alacağız, problemi işte, imajiner tarafı nasıl geçeceğiz, onlar tanımlı değil gibi tanım kümenizin düzgün iyi tanımlanmış olmaları önemli. Siz şunu söyleyebilirsiniz, yani ben bu algoritmada sadece pozitif tam sayılarla çalışıyorum. Negatiflerle çalışmıyorum, o yüzden negatifleri bana vermeyin, yani ben garanti etmem diyebilirsiniz. O yüzden iyi tanımlanmış dediğim aslında tam olarak bu.
+
+158
+00:42:25,824 --> 00:42:45,124
+Çıkış ise en azından bir çıktığınızın mutlaka olması lazım. Çıktığınız yoksa zaten yaptığınız için sonucu yok demektir. Bir anlamı yok demektir. O yüzden en az bir ya da birden fazla yine iyi tanımlanmış, ne olduklarını düzgün tanımladığınız çıktılara sahip olması beklenir bir algoritmanın.
+
+159
+00:42:46,124 --> 00:42:53,064
+Sonlandırılma, çok konuştuk. Mutlaka belirli bir adımdan sonra durabilmesi, sonlanabilmesi, çalışmasını tamamlayabilmesi lazım.
+
+160
+00:42:53,523 --> 00:43:21,523
+Yapılabilir olması lazım. Bu ne demek? Mevcut imkanlarla biz bu algoritmayı gerçekleyebiliyor olmalıyız. Örneğin öyle bir şey yaptınız ki sizin o işlemi gerçekleştirmek için böyle 80 tane işlemciye ihtiyacınız var ama sizin elinizde sadece iki işlemci var. Bunu yapamıyorsunuz. O zaman çözülebilir bir, işletilebilir bir algoritma değildir. Eldeki mevcut imkanlarla yapılabilir olması lazım. 16 GB RAM'iniz var ama siz öyle...
+
+161
+00:43:21,523 --> 00:43:46,403
+Böyle bir algoritma geliştirdiniz ki çalışmak için ihtiyaç duyduğu değişkenlerin tamamı işte ne bileyim 18 GB'a sığmıyor. Ne oldu? Ben belleğe zaten sığamıyorum. Yani elimde bundan daha fazla kaynak yok. O zaman ben bu algoritmayı çalıştıramam. Yani yapılabilir değil elimdeki imkanlarla. Ona uygun halde başka bir algoritmik çözüm getirmeniz gerekecektir.
+
+162
+00:43:47,764 --> 00:43:54,824
+Bağımsız olmak, algoritmamız, her zaman için algoritmamız, herhangi bir programlama ortamından
+
+163
+00:43:55,199 --> 00:44:23,139
+dilinden ve kodundan bağımsız olarak tanımlanmaları gerekir. Ne zaman ki biz bir algoritmayı alırız, bir programlama dilinde işte C olur, Java olur, Pascal olur, Python olur, Ruby olur, Z-Sharp olur, Go olur, hiç fark etmez bir programlama dilinde bunu oturup gerçeklediğinizde ya da ifadesini yazdığınızda biz buna program adını veririz. Yani artık işletilebilir, somut çıktı üretebilir, çalışan hali.
+
+164
+00:44:23,199 --> 00:44:40,779
+şekline gelir. Fakat algoritma, aslında dediğim gibi, bunların hepsinden bağımsız, teorik bir çözüm olmalıdır. Teorik olmalıdır diyoruz ama pratikte de uygulanabilir, yapılabilir olmasını sağlamanız yine sizin sorumluluğunuz. Peki.
+
+165
+00:44:41,652 --> 00:45:06,652
+Nasıl yapacağız? Algoritma tasarımını nasıl gerçekleştireceğiz? Bu işin yolu yordamı ya da genel olarak adımları nelerdir? Hemen buna bakalım. Polyo'ya göre bir problemi çözmenin dört tane adımı vardır. Birinci adım, zaten algoritmanın tanımında da sürekli problem, bir problem şeklinde söyledik. İlk adımda çözmeye çalıştığınız problemi
+
+166
+00:45:07,251 --> 00:45:32,012
+Düzgün, doğru şekilde anlamalısınız. Demek ki ilk iş problemi anlamak. Bunun içinde makul bir şekilde tanımını yapmak. Ne demek makul olmak? Anlaşılır, açıklanabilir bir şekilde tanımlamanız, probleminizi tanımlamanız, algoritma tasarımındaki ilk işiniz olmalı. Problemi tam olarak anladıktan sonra
+
+167
+00:45:32,724 --> 00:45:54,224
+Siz düşünerek, önceki deneyimlerinizden faydalanarak, benzer problemlere geliştirilen çözümleri düşünerek ya da onları değiştirerek ya da işin içine katarak bir çözüm planı ortaya koymalısınız. Burada aslında yaptığınız şey işte algoritmanızı tasarlamak. Yani çözüm yolunuzu geliştirmek, bir çözüm planı oluşturmak.
+
+168
+00:45:54,463 --> 00:46:11,583
+Bunu bir ya da birden fazla şekilde yapabilirsiniz. Şimdi ben size bir problem tanımlayacağım. Eminim çoğunuz okumuştur slide'ı zaten çoktan. Bu tanımladığımız problemi iki farklı yöntemle ya da sizin önerdiğiniz başka yöntemlerle çözüp bakacağız. Acaba düzgün çözebiliyor muyuz?
+
+169
+00:46:11,987 --> 00:46:38,947
+Üçüncüsü planı uygulamak. Bu işte algoritmanızı tasarladınız. Yani bir çözüm planı oluşturdunuz aslında Poly'e göre. Bunu uygulayacaksınız. Yani artık bunu verilen girdiler üzerinde, tanımla girdi kümeniz üzerinde çalıştırarak sonuçlarına bakacaksınız. Buna da işte algoritmayı test etmek adını verebiliriz aslında. Çalışıyor mu? Gerçekten çalıştırın, bakın. İşletin girdiler için. Mesela pozitif tam sayılar dedik ya.
+
+170
+00:46:39,987 --> 00:47:05,887
+sayıların üst-alt limitlerini de düşünerek, farklı değerler ile çalıştırarak bakalım algoritmanız doğru çalışıyor mu, düzgün bir şekilde, stabil bir şekilde çözüm üretiyor mu, çıktı üretiyor mu, buna bakın. Buna baktıktan sonra dördüncü adımda da bir değerlendirme yapmanız lazım. Sonucu çıkan, doğru çalışan algoritmanızın ya da çözüm planlarınızın sonuçlarını değerlendirmelisiniz. Yani benim çözümüm ne kadar iyi.
+
+171
+00:47:06,739 --> 00:47:19,759
+Beklediğimi karşılıyor mu? Beklentilerimi karşılıyor mu? Bana cevap verebiliyor mu istediklerimi? Bu hız olabilir, çalışma hızı olabilir. Harcadığı alan yani bellek miktarı olabilir.
+
+172
+00:47:20,532 --> 00:47:48,532
+Çok hızlı bir şekilde geliştirilmesi olabilir. Hani en basit haliyle yapın da, yani ben hızında mızında değilim, çok çabuk ürün çıkması lazım şeklinde bir şey olabilir. Gördüğünüz gibi amacınız birbirinden farklı olabilir ama bir şekilde bunu en iyilecek mi, iyileştirebiliyor muyuz? Yoksa benim çözüm planımdan hedeflediğim şeyi daha iyi yapan, sonucu daha iyi gerçekleştiren başka bir çözüm yolu var mı? Bunları araştırmak ve kıyaslamak tam olarak dördüncü.
+
+173
+00:47:48,532 --> 00:48:12,312
+Soyuncu adımı, yani soyuncu değerlendirmek aşamasını karşılıyor. Örneğimiz şu şekilde. Şimdi, tabii yine sınıfta değiliz ama participant listimiz var burada. Tabii A'dan Z'ye doğru gittiği için, şimdi ilk önce A'lardan başlayacağız. Diyelim A harfiyle başlayan 1, 2, 3, 4, 5, 6, 7 tane arkadaşımız var aramızda. [öğrenci]'le başlıyor.
+
+174
+00:48:12,851 --> 00:48:36,851
+[öğrenci] bitiyor. Siz de görebiliyorsunuz değil mi katılımcı listesini? Sanırım görüyorsunuz. Participants'a bastığınızda çıkıyor. Şimdi hani bu bizim şey olsun, sınıfımızdaki ön sıra olsun tamam mı? Buradaki en yaşlı öğrenciyi bulmak istiyorum. En yaşlı şey yani en önce doğmuş olan arkadaş kim? Onu bulmak istiyorum. Tabi burada problem...
+
+175
+00:48:37,235 --> 00:49:05,235
+hani en yaşlı öğrenciyi bulmak dedik. Tabi bazı koşulları var, ön sırada birilerinin oturması lazım. Şu anda fiziksel bir ön sıramız yok ama dediğim gibi A harfiyle başlayanlar bizim sanal ön sıramızı oluştursun. Bunlar olmalı ve elimizde 7 arkadaş var. Herkes gerçek doğum gününü söylemeli ya da yazmalı chatten. Aynı gün böyle hani işte ne bileyim 5 Kasım 2001'de doğanlar aynı yaşta. Böyle bir durum olduğunda ben hiç önemli değilim.
+
+176
+00:49:05,235 --> 00:49:26,955
+İster mesela diyelim [öğrenci] ile [öğrenci], biri D'li, biri T'li, biri de CH'li, aynı günde olmuş olsunlar. Ya [öğrenci]'i, [öğrenci]'ü söyleyeyim ya da [öğrenci]'i söyleyeyim. Hiç fark et. Birini bulsam benim için yeterli, ben sonuca eriştim olarak kendime başarılı sayıyorum. Nasıl yapabiliriz? Fikri olan var mı?
+
+177
+00:49:32,980 --> 00:49:33,679
+Yok mu?
+
+178
+00:49:39,411 --> 00:49:40,851
+Yok. Peki.
+
+179
+00:49:42,511 --> 00:49:43,231
+Hocam belki
+
+180
+00:49:43,231 --> 00:49:43,351
+Evet.
+
+181
+00:49:45,091 --> 00:49:49,351
+Herkes yanındakine sorup en azından yarısını temizleyebiliriz sınavını.
+
+182
+00:49:50,691 --> 00:49:58,311
+Yahu dur, önce bir basit çözelim. Herkes yanındakine sorsun deme hemen. Onu da tartışacağız zaten.
+
+183
+00:49:58,751 --> 00:50:02,651
+Şimdi, şöyle ben ilerleyeyim. Slide'da ilerletmiş olayım.
+
+184
+00:50:03,027 --> 00:50:30,567
+Sol baştan başla dedim. Bu hiç önemli değil. Bir yerden başlamam gerekiyor ya. İşte ben burada ilk arkadaştan mesela başlıyorum. [öğrenci]. [öğrenci] adın ne? Zaten burada gördüğüm için biraz saçma oldu. Yaşın ne? Tamam mı? Mesela dedi ki ben dedi 2000 yılında doğdum. Tamam mı? Buraya bunu yazdık. Şöyle [öğrenci] dedik. 2000 dedik.
+
+185
+00:50:31,027 --> 00:50:34,507
+Şöyle yapayım. Bunu not ettik. Sonra
+
+186
+00:50:34,931 --> 00:51:00,032
+Sırada öğrenci olduğu sürece şunları yap diyorum. Sırada kim var? Var mı öğrenci? Aa, var. [öğrenci] var. [öğrenci]'ye diyorum, yaşın kaç? O da dedi ki mesela aynı şey, daha şey bir şey söyledi, daha küçük bir yaş söyledi. 2001'liyim dedi. O zaman ben seni geçiyorum. Daha büyük değilsin buradaki şeyden, kayıttan. Şurada kayıt burada duruyor, not defterimde.
+
+187
+00:51:00,532 --> 00:51:24,211
+Bundan daha büyük değilsin dedim, onu geçtim. Sonra üçüncü öğrenci. Sırada öğrenci var mı? Var. Kim var? [öğrenci] var. [öğrenci]'e soruyorum. Sen kaç şeysin diyorum. Diyor ki mesela ben diyor 1999 doğumluyum. Haa diyorum o zaman ben hemen buraya bunu siliyorum. Sildim. [öğrenci] soyadını da yazalım. Kurt.
+
+188
+00:51:24,628 --> 00:51:31,348
+diyorum ve işte mesela 1999 bu hızlı olsun diye sadece yılları yazıyorum şuraya. Bunu kaydediyorum.
+
+189
+00:51:32,192 --> 00:52:00,071
+Devam ediyorum. İşte [öğrenci]'e soruyorum. [öğrenci]'e soruyorum. Gerekiyorsa güncelliyorum. [öğrenci]'e soruyorum. [öğrenci]'e soruyorum. Diyelim hiçbiri daha şey değil, daha yaşlı değil. Yani 99'dan önce doğan yok. Aziz'i de sordum. Sırada öğrenci kaldı mı? Kalmadı. Çünkü A'la başlayan başka arkadaş ya da ön sıradaki bütün öğrencilerimizi sorguluya çekmiş olduk. Ve elimizde ne var? Sadece bu kayıt.
+
+190
+00:52:00,192 --> 00:52:22,612
+Mevcut. İşte [öğrenci] şu tarihte doğmuştur. O zaman en yaşlı öğrenci, A ile başlayan harflerdeki en yaşlı öğrenci kendisidir diye çıktığı ürettim. Bu bir çözüm. Değil mi? Sorduk herkese yaşını. En yaşlı hangisiyse onun kaydının ekranda ya da işte tahtada yazılı kalmasını sağladık.
+
+191
+00:52:23,123 --> 00:52:49,744
+Başka bir çözüm ne olabilir? [öğrenci]'un söylediği gibi bir çözüm olabilir. Şöyle yapabiliriz. [öğrenci], [öğrenci], [öğrenci]. İkiniz birbirinizle bakın. Tamam mı? Şöyle, şurada olduğu gibi. Mesela diyelim ki [öğrenci] daha yaşlı. Şu arkadaşın üzerine çarpı çiziyorum. Yani burada [öğrenci] oldu. Onu almadım. Tamam.
+
+192
+00:52:50,175 --> 00:53:10,715
+Sonra [öğrenci] ile [öğrenci]'e sordum. Diyelim işte burada da zaten daha büyük çizilmiş ya gördüğünüz gibi. Şunu sildim. [öğrenci] bir sonraki rounda geçti. Ondan sonra şu iki arkadaşa baktım. Onlar da [öğrenci] ile [öğrenci].
+
+193
+00:53:11,251 --> 00:53:32,592
+[öğrenci]'i sildik, [öğrenci]'i aşağıya taşıdık. Bu daha yaşlıymış ikisi arasında. Ondan sonra şu son iki, bizde ne var? Sadece [öğrenci] kaldı. Önemli değil. Hadi şunu da boşverin. Böyle bir hiç ön sırada arkadaşımız yok. Hep iki iki soruyorduk. Bu tek kaldı ne yapacağız? Hiçbir şey yapmayacağız.
+
+194
+00:53:33,204 --> 00:53:45,544
+Bunu sorabileceğimiz kimse olmadığı için onu direkt olarak sen kendinden daha yaşlısın ya da sen mi yaşlısın, sen mi yaşlısın, sen yaşlısın diye aşağıya almış olacağız. Aslında hiçbir karşılaştırma bile yapmadan. Şimdi ne oldu?
+
+195
+00:53:46,099 --> 00:54:04,800
+Artık ben burada yedi arkadaşı sorgularken artık dört arkadaşı düşmüş oldum. Yani yediden dörde düşürdüm. Şimdi ne yapacağım? Burada kim kalmıştı? [öğrenci] kalmıştı. Burada da [öğrenci] kalmıştı. Mesela [öğrenci] daha büyük. O yüzden bunu almadım.
+
+196
+00:54:05,204 --> 00:54:26,204
+Ondan sonra işte burada da diyelim işte şu daha büyük onu aldım. Bir anda gördüğünüz gibi dört arkadaşı iki arkadaşı düşürmüş oldum. Sonrasında bu ikisine baktım. Demin [öğrenci] demişti ki hadi yine o olsun. [öğrenci] buraya taşımış oluyorum ve burada sadece
+
+197
+00:54:26,516 --> 00:54:48,016
+Birinci round, ikinci round, üçüncü round. Yani üç round sorgu yaparak buradaki işleri halletmiş oluyorum. Şimdi, burada şeyi karıştırmayalım tabii ki. Ben bir sorgu yaptım. Şöyle yazayım. Onda buradan kalem rengi nasıl değişiyor?
+
+198
+00:54:52,851 --> 00:55:12,671
+Şimdi bakın, bu iki arkadaşı sorguladığımda birinci sorguyu yaptım. Bu iki arkadaşı sorguladığımda ikinci. Bu iki arkadaşı üçüncü. Bu dördüncü. Tamam. Sonra burada beşinci sorguyu yapmış oldum şu ikisini. Şu ikisi arasında altıncı sorguyu. Şu ikisi arasında da yedinci sorguyu yapmış oldum.
+
+199
+00:55:12,927 --> 00:55:25,727
+Yani kafanız karışmasın. E hocam, ne değişti? Öbüründe de yedi kere, şöyle birinci çözüme gidelim. Bir, hani hepsine sormuştuk. Bir, iki, üç, dört, beş, altı, yedi tane sorgu yapmıştık. Şu, yok.
+
+200
+00:55:26,099 --> 00:55:51,559
+Dilelim onu da buradan. Yedi tane sorgu yapmıştık. E buraya baktığımızda burada da toplamda yedi tane sorgu yapıyoruz. Ne değişti diyebilirsiniz. Buradaki fark şu, şimdilik onu kabul edelim, tamam mı? Bunun detaylarına daha sonra geçeceğiz. Siz buradaki ilk dört sorguyu, yani birinci roundu paralel olarak aynı anda gerçekleştirebilirsiniz. Yani tam [öğrenci]'un söylediği gibi, herkes yanındakine sorsun.
+
+201
+00:55:52,275 --> 00:56:16,336
+Böylece sadece bir sorgu süresi kadar zamanda dört sorguyu birden yapmış olayım. Yani bu kadar işlemcim var benim. Tamam mı? Bu kadar işlem kapasitem var. Böyle bir kabulü yapın. O yüzden burada sadece bir zaman birimi. Şurada yine iki tane sorguyu, yani beşinci ve altıncı sorguyu aynı anda gerçekleştirebiliyorum. Bu da ikinci sorgu zaman dilimi. Bu niye böyle pik yapıyor bilmiyorum.
+
+202
+00:56:16,815 --> 00:56:40,095
+Anlamadım, böyle bir zıp diye bir şey gidip geliyor mouse'ta. Bu üçüncü navnda geçtiğinizde tek sorgu var zaten. Yani toplamda üç tane sorgu zamanında bu işi halledebiliyorum. Bu işi aslında şimdi bakalım nasıl değerlendirebiliriz, karşılaştırabiliriz bu iki çözüm yönteminin çalışma şekillerini hangisinin daha iyi olduğunu.
+
+203
+00:56:41,427 --> 00:57:02,887
+Biraz önce de söylediğim gibi, hangi çözüm daha iyidir konusunda, şunu tekrardan kırmızıya çevirelim, daha iyi olduğu konusunu belirlemek her zaman kolay değil. Sadece kolay uygulanabilir olmasını isteyebilirsiniz. Dediğim gibi çok hızlı kodlansın, çok acele ihtiyacın var diyebilirsiniz. Bu bir beklenti olabilir.
+
+204
+00:57:04,148 --> 00:57:26,408
+Sadece belirli bir girdi ya da ortam koşulunda çalışmasını bekleyebilirsiniz. Demin mesela ne dedim? Eş zamanlı çalışabilirler diye bir kabulümüz var dedim. Mesela siz onu istemiyorsunuz. Ben paralel çalışamam, tek işlemcim var diyorsunuz. O zaman zaten ikinci çözüm yöntemini uygulayamazsınız. Uygulasanız da bir şey değişmemiş olacak. Daha kolayı varken niye onu yapmış olayım?
+
+205
+00:57:26,408 --> 00:57:28,408
+Üçüncüsü
+
+206
+00:57:28,820 --> 00:57:41,619
+Daha hızlı olanı tercih edebilirsiniz. Kaldı ki burada işte mesela ikinci yöntem ne dedim? Sadece üç sorgu zamanında size sonucu bulabiliyor ama öbürü yedi öğrendiği için yedi sorgu zamanı çalışmak zorunda.
+
+207
+00:57:41,876 --> 00:57:50,336
+Yani biri çok daha hızlı bir şekilde cevap dönebiliyor. Ya da tam tersi bir şey olabilir. Özellikle böyle bir gömülü sistem geliştiriyorsunuzdur.
+
+208
+00:57:50,336 --> 00:58:00,176
+Belliğiniz çok kısıtlıdır. İşte ufak mikro işlemci kontrolü bilgisayarlarda çalışıyorsunuzdur. Bu gibi yerlerde de
+
+209
+00:58:00,480 --> 00:58:28,480
+Belleği mümkün olduğunca az harcayan, az değişken tutan, çok yer kaplamayan çözümleri tercih edebilirsiniz. Yani aman uzun çalışsın, ben biraz bekleyebilirim ama bellek çok sıkıntı, hani yer kaplamasın, az yer kaplasın yeter diyebilirsiniz. O yüzden hangi çözüm iyidir noktasındaki karşılaştırmada bir hedefiniz olması lazım. Bu hedefe göre daha iyidir söyleyebilirsiniz. Biri daha hızlı olabilir ama öbürü de daha hızlı olabilir.
+
+210
+00:58:28,480 --> 00:58:55,200
+bazı yer kaplayabilir. Bunları sıklıkla karşılaşırız bu durumlarla. Buradaki trade-off, hangisinden ne kadar ödün verelim, aslında sizin hangi algoritmayı seçeceğinizi tam olarak belirlediğiniz kriter oluyor. Peki, özetle, algoritma 1'e baktığımızda, algoritma 1'de yapmamız gereken toplam iş miktarı ne kadar? Ön sırada oturan öğrenci sayımızı kadar ya da A harfiyle başlayan arkadaşlarımızın sayısı kadar, yani 7.
+
+211
+00:58:55,568 --> 00:59:01,448
+7 tane arkadaşı karşılaştırır, içinden en büyüğü bulmaya çalışıyorsam 7 tane iş yapmam lazım.
+
+212
+00:59:01,972 --> 00:59:09,972
+7 birim zamanda çalışmam lazım. Eğer 14 öğrenciye çıkarsam, doğal olarak 14 birim zaman çalışmam lazım değil mi?
+
+213
+00:59:10,812 --> 00:59:27,492
+Algoritma 2'ye, yalnız buna karşın, çiftlerin sorgularını aynı anda yaptığımız için, dediğim gibi sıralı değil, aynı anda bir round'u döndürebildiğimizi düşündüğünüzde, o zaman yaptığımız işin zamanı, sorgulanan kişi sayısını kaç kere azalttığımızla orantılı.
+
+214
+00:59:27,956 --> 00:59:42,436
+Yani kaç round sormamız gerekiyor? Onunla orantılıdır. Bu da şöyle geri geleyim. Aslında burada 7 arkadaş ya da 8 arkadaş varken 3 kademede bu işi bitirebilmek demektir. İkiye bölerek gittiğimiz için.
+
+215
+00:59:42,800 --> 00:59:59,800
+İkiye bölerek gitmek demek, aslında ne demek? İki tabanındaki logaritmasını almak demek değil mi? Bu durumda her adımda yarıya düşüyoruz. O zaman öğrenci sayısı iki tabanındaki logaritmayla orantılıdır. Burada mesela yedi ya da sekiz arkadaş için iki üzeri...
+
+216
+01:00:00,000 --> 01:00:15,760
+üç dediğimizde üç rakamına, logaritma iki tabanında şey yaptığımızda, sadece üç birim iş yaptığımızda, üç birim zaman çalıştığımızda sonucumuzu elde edebiliriz demektir. Öğrenci sayısı iki katına çıktığında ne olacak?
+
+217
+01:00:16,340 --> 01:00:31,340
+Ne olacak? Hiçbir şey olmayacak. Sadece logaritmada bir fazla gitmiş olacaksınız. Yani aslında bir round fazla karşılaştırmış olacaksınız. Onaltı öğrenciye çıktığınızda burada onaltı iş yapıyor yaparken burada sadece dört iş yapacaksınız.
+
+218
+01:00:31,340 --> 01:00:42,340
+Sayı arttıkça tabii aradaki fark daha da beter açılacak. Makas daha da açılacak. Bakalım. Şimdi diyelim ki benim hızımla... Niye böyle oluyor? Çok enteresan.
+
+219
+01:00:43,059 --> 01:00:44,019
+Bunu çözmek lazım.
+
+220
+01:00:45,200 --> 01:00:46,820
+Şunu silelim.
+
+221
+01:00:47,360 --> 01:00:53,240
+Her karşılaştırmanın, yani işte sen kaç yaşındasın diye sorup da bir yere yazmamın maliyeti 5 saniye sürsün.
+
+222
+01:00:53,340 --> 01:00:54,980
+Tamam mı? Elimi alıyorum, yazıyorum.
+
+223
+01:00:55,160 --> 01:00:56,440
+Ya da mouse'u alıyorum, yazıyorum.
+
+224
+01:00:57,420 --> 01:01:01,039
+İlk algoritma doğrusal çalışıyor şeyle, girdiğiyle.
+
+225
+01:01:01,180 --> 01:01:02,840
+100 öğrenci varsa 500 saniye.
+
+226
+01:01:02,900 --> 01:01:03,720
+5 ile çarpıyorum.
+
+227
+01:01:04,320 --> 01:01:06,539
+200 öğrenci varsa 1000 saniye.
+
+228
+01:01:06,880 --> 01:01:08,940
+400 öğrenci varsa 2000 saniye.
+
+229
+01:01:09,364 --> 01:01:22,764
+Bir milyon öğrenci varsa beş milyon saniye. Yani aslında şöyle çizdiğinizde işte beş N şeklinde artan düz bir çizgi. Değil mi? Öğrenci sayısı arttıkça benim çalışma süremde doğrusal olarak artıyor.
+
+230
+01:01:23,564 --> 01:01:35,544
+İkinci ay şunlara da şey yapalım şöyle. Y. Bu da N diyelim şuraya. Daha güzel oldu değil mi? Böyle artıyor düz bir şekilde. Bu da düz çizgi. Böyle yamuk yemek olduğuna bakmayın. Linear.
+
+231
+01:01:35,956 --> 01:01:44,456
+İkinci algoritma ise ikiye böle böle gidiyordu farkındaysanız. O zaman 100 öğrenci için 5 log 100, yani yaklaşık 35 saniye.
+
+232
+01:01:44,456 --> 01:01:52,956
+200 öğrenciye çıktığınızda sadece 5 saniye daha fazla. 400'e çıktığınızda yine sadece 5 saniye, yaklaşık bunlar tabii yuvarladım.
+
+233
+01:01:52,956 --> 01:02:01,456
+1 milyon öğrenciye çıktığınızda sadece 100 saniye civarında tutuyor. Yani siz şimdi de şöyle artan böyle
+
+234
+01:02:01,748 --> 01:02:27,987
+Logoritmik artan bir karmaşaya sahip oluyorsunuz. Demek ki ben hızlı çalışsın istiyorsam, özellikle de öğrenci sayısı arttığında, yani yapmam gereken iş sayısı arttığında hızlı çalışsın istiyorsam o zaman derim ki bu iki algoritmik çözüm yaklaşımından ikinci yol benim için daha performanslıdır ya da daha iyidir der ve bunu seçerim.
+
+235
+01:02:27,987 --> 01:02:29,628
+İşte analiz tam olarak
+
+236
+01:02:29,748 --> 01:02:54,748
+Mola olacak. Zaten tam noktasında sordun. Şuraya geldik ve ikinci konu başlığımız. Algoritmaları ifade etmek konusuna başlamadan hemen önce bir on beş dakika ara vereyim. Ne oluyor? Üçü yirmi geçe devam ediyorum. Tamam. On beş yirmi de devam. Şuraya on beş yirmi de.
+
+237
+01:02:56,788 --> 01:02:57,907
+Devam ediyoruz.
+
+238
+01:02:57,907 --> 01:03:00,108
+Diye yazalım.
+
+239
+01:03:00,108 --> 01:03:01,148
+Görüşürüz.
+
+240
+01:17:24,435 --> 01:17:35,716
+Evet arkadaşlar, yirmi geçe devam ediyoruz. Ne yaptık ilk saatimizde? Algoritma nedir? Tanımladık. Tarihçesine şöyle bir göz attık.
+
+241
+01:17:36,435 --> 01:17:48,095
+Algoritmik problem çözümü ne demektir? Hangi adımlardan geçmemiz gerekir? Hangi adımda ne yapıyoruz? Neden yapıyoruz? Bunlardan bahsettik. Deklaratif ve imperatif ne oluş nedir?
+
+242
+01:17:48,724 --> 01:18:09,283
+Algoritma dönüşümü işte Imperativen Oğluc'un tanımıdır şeklinde ifadelerle tanımış olduk. Şimdi de algoritmaları acaba biz herkesin aynı şekilde anlamasını nasıl garanti edeceğiz? Bir başka deyişle algoritmalarımızı nasıl ifade edeceğiz? Bu kısma geçelim.
+
+243
+01:18:10,100 --> 01:18:37,120
+Hızlıca bahsetmiştik, etken ve buyuran cümlelerle düz yazı şeklinde biz bu algoritmalarımızı ifade edebiliriz. Ama burada sıkıntı işte dil, doğal dil nedeniyle her okuyanın aynı şeyi anlamasını garanti edemeyebiliriz. Bazı okuyanlar farklı anlamlar çıkarabilir, farklı yorumlayabilir, onu farklı şekilde gerçekleştirebilir. O zaman burada sıkıntı yaşayabiliriz. Ha, yemek tariflerinde falan bunu sıklıkla görürüz.
+
+244
+01:18:37,488 --> 01:18:51,728
+Bazen bazı ölçüleri ya da işlem sırasını yanlış yaptığımız, algılayamadığımız ya da tam açıklanmamış yerler kalabilir. Bunlar daha iyi tanımlanırsa daha düzgün yemekler oluşturulabiliyor.
+
+245
+01:18:53,168 --> 01:19:01,128
+Bunları ifade etmek için, algoritmaları ifade etmek için bir diğer yöntemimiz de sözde kod ya da pseudocode dediğimiz akışları tanımlamaktır.
+
+246
+01:19:01,568 --> 01:19:18,528
+Günümüzde pek çok kaynakta pek çok algoritmayı ifade ederken sıklıkla bu kullanılıyor. Yani bu kullanılmaz diye bir şey söz konusu değil. Baya da aslında yaygın olarak algoritmaları özellikle biraz da sözel olarak ve detaylardan kaçınarak ifade etmek için kullanabiliyoruz.
+
+247
+01:19:18,528 --> 01:19:26,768
+Ama üçüncü yöntem akış diyagramları gösterimi ya da akış diyagramlarını kullanarak algoritmayı ifade etmek.
+
+248
+01:19:27,152 --> 01:19:53,832
+En temiz akış, en temiz haliyle algoritmik akışımızı göstermek ya da ifade etmek olacaktır. Çünkü bu bir görsel dil. Görsel olarak bir diagram halinde anlattığımız için de evrensel semboller de kullandığımızdan dolayı bu akış diagramına bakan herkesin aynı şeyi anlaması ve aynı şekilde üretmesi buradaki çıktığı.
+
+249
+01:19:54,612 --> 01:19:58,252
+Pardon.
+
+250
+01:19:58,971 --> 01:20:03,612
+Çıktığımızı, yaptığımız işin çıktısının aynı şekilde olmasını garanti etmiş oluruz.
+
+251
+01:20:04,332 --> 01:20:09,012
+Evet, akış diyagramları temelde iki farklı eleman grubundan oluşuyor.
+
+252
+01:20:09,012 --> 01:20:11,992
+Bunun birincisine akış diyagramı elemanları adını veriyoruz.
+
+253
+01:20:12,092 --> 01:20:14,692
+Bir diğerine de bağlantılar adını veriyoruz.
+
+254
+01:20:15,352 --> 01:20:15,992
+İkincisi de bu.
+
+255
+01:20:16,412 --> 01:20:21,692
+Akış diyagramın elemanları şu şekilde geometrik şekiller kullanılarak yapılıyor.
+
+256
+01:20:22,260 --> 01:20:37,260
+Tamam, gördüğünüz gibi bunların hepsinin neler olduğunu, ne farkları var ya da niye böyleler, niye bu şekil seçilmiş bunların detaylarını aktarmaya çalışacağım. Bağlantılar dediğimizde şuralarda gördüğünüz oklar aslında.
+
+257
+01:20:37,408 --> 01:20:44,728
+Tabi bu oklar bazen karmaşık hale gelebiliyor. O zaman da takibi kolaylaştırmak için çeşitli yönlendiricilerden faydalanıyoruz. Bunlara da bakacağız.
+
+258
+01:20:45,288 --> 01:20:53,268
+Hızlıca başlayalım. Neler var akış diagramlarımızda? Temelde kullandığımız her şey buradaki bir slide'ın içinde görünüyor.
+
+259
+01:20:53,968 --> 01:21:00,847
+Mutlaka bir noktadan başlamamız lazım. Buna başlangıç noktası ifadesi adını veriyoruz. Şöyle üstü düz, altı düz.
+
+260
+01:21:01,555 --> 01:21:19,555
+kenarları yuvarlatılmış bir dörtgen şeklinde, parantez kenarlara sahip bir geometrik şekil ile bunu ifade ediyoruz. Keza bitirmek için de yani algoritmamızın sonlandığı çalışmasını tamamladığı noktayı da yine birebir aynı ifadeyle kullanıyoruz.
+
+261
+01:21:19,555 --> 01:21:23,555
+Bunu burada hani
+
+262
+01:21:24,148 --> 01:21:27,268
+Formal olarak üstü düz altı düz ifade edebiliriz ama
+
+263
+01:21:27,268 --> 01:21:32,747
+Genellikle işte ben mesela çizerken de şöyle hızlıca bir elips çizip
+
+264
+01:21:32,747 --> 01:21:35,528
+Ondan sonra içine
+
+265
+01:21:35,528 --> 01:21:37,847
+Faltalım
+
+266
+01:21:37,847 --> 01:21:43,568
+Neyse
+
+267
+01:21:43,568 --> 01:21:44,968
+Şuraya
+
+268
+01:21:44,968 --> 01:21:47,347
+Niye yazamıyoruz
+
+269
+01:21:48,819 --> 01:22:06,019
+Mesela start gibi bir ifade de yazabilirsiniz. Yani illa başla demenize gerek yok. Bunu İngilizce olarak da ifade edebilirsiniz. İlla böyle kenarları çok düzgün olacak diye bir şey de söz konusu değil. Böyle hafif elips gibi elle çizerken özellikle hafif böyle ufak farklılıklar oluşabilir.
+
+270
+01:22:06,644 --> 01:22:34,644
+Veri girişi, eğer kullanıcından bir bilgi almamız gerekiyorsa, örneğin bir değişken değerini okumamız gerekiyorsa, o zaman şu ifadeyi kullanıyoruz. Detaylarını geçeceğim. Çıktı üretmek ya da sonuç göstermek için şuradaki notasyonu kullanıyoruz. Her tür işlemimiz, aslında proseslerimiz, atamalarımız, aritmetik işlemlerimiz, yaptığımız her eylemi dikdörtgenler içinde yer alıyoruz. Bir karar mekanizması ve bir koşula göre şu...
+
+271
+01:22:34,644 --> 01:22:42,264
+bu taraftan devam et ya da bu taraftan devam et gibi yönlendirmeler, koşullu ifadeler varsa bu şekilde bir altıgen kullanıyoruz.
+
+272
+01:22:42,676 --> 01:23:09,615
+Koşullu döngülerimiz varsa, yine koşul olduğu için, burada gördüğümüz şeyi kullanıyoruz, altıgeni, içine yine döngüye girme, çalıştırma ya da döngünün devam etmesini garanti etme, yani sağlama koşulunu, kontrolü burada verip yukarıdan geldik. Koşula göre, koşul doğruysa, bunun içine gir, buradaki yapılan, yapılması gereken işlemleri gerçekleştir. Burada tek bir kutu olmak zorunda değil, pek çok şey olabilir.
+
+273
+01:23:10,676 --> 01:23:34,956
+devam edeceğiz ve döngünün bu adımın tamamlandığında, yaptığın işler bittiğinde başına gel, tekrar koşulu kontrol et, bu koşul yine doğruysa tekrar çalıştır, yine doğruysa tekrar çalıştır. Koşul yanlış olduğunda, yani artık dönme, dönmemem gerekiyor durumu oluştuğunda, döngünün içine girmemem gerekiyor durumu oluştuğunda da aşağıdan yoluna devam et şeklinde ifade ederiz.
+
+274
+01:23:35,507 --> 01:24:03,487
+Koşullu döngülerin bir özel hali aslında adımlı, adım sayısı belli olan döngülerdir. Burada da biz genel olarak şu notasyonu kullanıyoruz. Üç gözlü bir dikdörtgen, burada başlangıç, burada son koşul, yani nereden nereye kadar, şurada da artım, yani her adımda ne yapacağım? Burada hiçbir şey yapmıyorum. Sadece bir boş işaret, bunu bitirme işareti olarak ifade edeyim. Ne yapıyoruz? Biz burada işte mesela sıfırıncı, birinci, ikinci.
+
+275
+01:24:03,507 --> 01:24:21,567
+Üçüncü, dördüncü, beşinci, eninci kere dönüyoruz. Eninci kere döndükten sonra, sona eriştiğimiz için buradan çıkıp yolumuza devam ediyoruz. Şimdi bunu tabii görmek için çok erken. Bir iki haftası var. O yüzden şunu şöyle bir üstünü çizgiyle kapatmış olalım.
+
+276
+01:24:21,971 --> 01:24:40,572
+Şimdi bunlara biraz daha detaylı bakalım. Ne dedik? Başlama ve bitirme işaretlerimiz var dedik sembollerimiz. Okunmak için yani read etmek ya da inputları almak için sembollerimiz var. Çıktı üretmek için sembollerimiz var. Ki burada onu da hemen çıktı diye yazalım şuraya. Ya da yazma için.
+
+277
+01:24:45,235 --> 01:25:07,175
+Bulunsun. Bağlantılarımız var. Bağlantılarımızda okları gördük ama bir de çemberlerden faydalanabiliriz. Bundan da bahsedeceğim. Karmaşayı azaltmak adına kullanabiliyoruz yönlendiricileri. İfadelerimiz veya da işlemlerimiz var. Bunları dörtgenleri halinde hatırlayalım yapmıştık. İfade edeceğiz. Kararlarımız var.
+
+278
+01:25:08,564 --> 01:25:12,524
+Tekli ya da çoklu karar döngüleri olabilir, durumları olabilir.
+
+279
+01:25:12,944 --> 01:25:15,984
+Ve bir de tekrarlı işlemlerimiz, yani döngülerimiz var.
+
+280
+01:25:16,484 --> 01:25:23,924
+Bunlarda adım sayısı belli olabilir ya da belli bir koşul olduğu sürece, doğru olduğu sürece yapılması gerekenleri bloklayabiliriz.
+
+281
+01:25:24,043 --> 01:25:30,584
+Bir blok halinde ya da bloğu en azından bir kere yaptık, kontrolü en sonda gerçekleştirmek gibi
+
+282
+01:25:30,584 --> 01:25:35,644
+önce yap sonra kontrol et şeklindeki bir farklı döngü de oluşturabiliriz.
+
+283
+01:25:36,051 --> 01:25:52,631
+Evet, bu şeyden başlayalım. Başla ya da start. Ben genellikle start, stop yazarım. Başla, bitir de yazabilirsiniz. Hiç önemli değil. İkisi de doğru. Bakın burada elips halinde çizmişim. Ya da dediğim gibi üzeri düz, altı düz olarak da kenarları parantez şeklinde de bunu ifade edebilirsiniz.
+
+284
+01:25:54,131 --> 01:26:04,451
+Her algoritmanın mutlaka bir başlangıcı olmalıdır. Başlangıcı olmayan algoritma olmaz ve birden fazla başlangıcı olması da yanlıştır. Tek bir başlangıca sahip olmalıdır her algoritmanız.
+
+285
+01:26:05,091 --> 01:26:13,671
+Algoritmalarınızın mutlaka bir yerde sonlanması gerekir. Bunu da stop ya da bitir diye yazdığımız şuradaki sembolü gördüğümüz yer olduğunu anlarız.
+
+286
+01:26:14,411 --> 01:26:19,531
+Sonu yoksa zaten algoritma değildir. Bunu tekrar söylemiştik. İfade edelim bir daha.
+
+287
+01:26:20,435 --> 01:26:39,615
+Girdi ve çıktı olaylarına ve sembollerine biraz şimdi eğilelim. Neye dikkat etmemiz gerekiyor ve nasıl kullanmalıyız? Bunların detaylarını görelim. Girdi kullanıcından okuma, kullanıcından belli değişkenlerin değerinin tanımlanmasını isteme demektir.
+
+288
+01:26:39,967 --> 01:26:52,368
+Ve şöyle normal yine dikdörtgen ama sol üst köşesinde kesik var, çentik var. Bu şekildeki bir sembol ile verileri girdileri alırız.
+
+289
+01:26:52,787 --> 01:27:09,447
+Bazı kaynaklarda okuma sembolü olarak paralel kenarı da görebilirsiniz. Fakat biz bunu kullanmıyoruz. Bu da hani sembol olarak kabul görmüştür. Fakat biz buradaki sembolü kullanıyoruz. Bu size neyi anımsatıyor? Buradaki.
+
+290
+01:27:12,948 --> 01:27:14,168
+Geometrik şekil.
+
+291
+01:27:15,528 --> 01:27:16,048
+Sim kart.
+
+292
+01:27:17,708 --> 01:27:37,748
+Evet, dün de yine Yüzyüze dersimizde aynı cevabı aldım. Sim kart. Neden sim kart? SD kart diyen de oldu. Neden? Çünkü onların bir tarafında çantik var ters takmamanız için. Değil mi? Tek bir şekilde takılabilmesini sağlamak için bir tarafında çantik atılıyor. Ama o değil, başka bir şey. Şöyle tarihçemizi hatırlayalım.
+
+293
+01:27:40,819 --> 01:27:42,460
+hesaplamanın tarihçesi.
+
+294
+01:27:42,460 --> 01:27:48,220
+Hani böyle eski bilgisayarlarda veri neyle giriyorlardı?
+
+295
+01:27:48,220 --> 01:27:51,720
+Delikli kartları mı beni soruyor?
+
+296
+01:27:51,720 --> 01:27:54,220
+Aynen o. Evet, delikli kart arkadaşlar.
+
+297
+01:27:54,220 --> 01:27:57,619
+Aslına bakarsanız bu sembol delikli kartın kendisi.
+
+298
+01:27:58,036 --> 01:28:22,956
+delikli kartların da sol üst köşeleri böyle çentiktir. Neden çentiktir? İşte reader dediğimiz şeye, makineye, makinenin parçasına bunları ters koymayalım diye tek bir şekilde koyulabilsinler diye aynı SIM kartı ters takmayın mantığı sol üst köşesinde bir çentik vardır. Bu kadar. Yani aslında biz burada tarihe bir selam çakmış oluyoruz, böyle saygı göstermiş oluyoruz ve
+
+299
+01:28:23,539 --> 01:28:40,539
+İlk böyle daha ekran ya da işte klavye yokken çalışan hesaplama birimleri olan bilgisayarlar, merkezi bilgisayarlardaki veri girişi için kullanılan delikli kart, punch kartı biz burada algoritmalarımızda akış diyagramlarını çizerken de yine veri girişi için kullanıyoruz.
+
+300
+01:28:40,912 --> 01:29:05,392
+Peki, ne yapacağım ben bu sembolü nasıl kullanacağım? İçini arkadaşlar, şurada gördüğünüz gibi, mesela virgülle ayırarak, bir olabilir, birden fazla olabilir, değişken, hangi değerleri kullanıcıdan topluyorsanız, onları burada yazarsınız. Yani ben bu sembolü gördüğümde şunu anlamalıyım. Ben kullanıcıdan, büyük bir ihtimalle şurada start da burada duruyordur. Hemen onu da çizelim. Eksik olmasın.
+
+301
+01:29:06,036 --> 01:29:29,235
+Genellikle bir algoritma başladığında önce değerler okunur ve ilk değer atamaları gerçekleştirilir. Ondan sonra işlemler yapılmaya başlanır. Doğal akış genellikle bu şekildedir. Çünkü çalışmadan önce sizin ihtiyacınız olan bilgileri almanız gerekir. O yüzden biz çoğunlukla ilk adımda böyle bir veri girişi görürüz.
+
+302
+01:29:29,619 --> 01:29:49,679
+N değişkeninin okunmasını istemişim. Yani N değerini bana ver kullanıcı dedim. M değerini de bana ver dedim. Bunun yanında mesela daha henüz dizi kavramına geçmedik ama aynı türden olan bilgileri bir arada tutup da aynı değişken ismiyle sadece indisleriyle erişmek için kullandığımız veri yapılarına biz dizi adını veriyoruz.
+
+303
+01:29:49,999 --> 01:29:56,799
+Hızlıca şuraya bir tane çizeyim. Bakın mesela şu A dizisi. Genellikle dizileri büyük harfle, teki değişkenleri küçük harfle.
+
+304
+01:29:57,619 --> 01:30:24,039
+N ve M'i büyük yazmışız ama genellikle hani böyle bir notasyon kullanabilirsiniz. Şart değil bu arada. İşte burada dizinin gözleri gördüğünüz gibi bir, iki, üç, dört, beş tane gözü var. Biz genellikle bunların indislerini sıfırdan başlatırız. Şöyle yazalım. Ne oldu? Bu üç. Şöyle. Dört, dörde kadar gidiyor. Yani sıfırdan dörde kadar. Ben mesela A2 dediğimde
+
+305
+01:30:25,716 --> 01:30:34,496
+Aslında şu gözün içinde yazan değeri okumuş olacağım. Mesela ne bileyim burada 7 yazsın. Tamam. Şurada 2 olsun. Şurada 5 olsun.
+
+306
+01:30:34,895 --> 01:30:42,216
+Şurada 8 olsun, şurada 9 olsun, tamam böyle. Ne oldu? Tam sayılardan oluşan, 5 tane tam sayı tutuyorum.
+
+307
+01:30:42,216 --> 01:30:47,855
+Ama bunların hepsi aynı şekilde olduğu için ve de arka arkaya gelmelerini istediğim için bir A dizisinde tuttum.
+
+308
+01:30:47,855 --> 01:30:53,256
+5 tane gözü var. A2 dediğimde 0, 1, 2, işte 7 değerine erişmiş oluyorum.
+
+309
+01:30:53,256 --> 01:31:00,136
+Bir dizi okuyacaksanız bunu hızlıca şöyle gösterebilirsiniz. Burada olduğu gibi. AN, tamam?
+
+310
+01:31:00,212 --> 01:31:08,552
+Ne oldu? Ben en elemanlı bir A dizisinin bütün değerlerinin kullanıcından alınmasını söylemiş oldum burada, ifade etmiş oldum.
+
+311
+01:31:08,552 --> 01:31:14,552
+Tabii ki buradaki ENI, bu dizi okunmadan önce...
+
+312
+01:31:15,572 --> 01:31:43,452
+almanız gerekiyor. Yani ENI okumadan A, ENI tanımlayamazsınız. Algoritmalarınızda her zaman için buna dikkat edin. Tasarımlarınızı yaparken, gösterirken bir değişkeni tanımlamadan kullanamazsınız. Daha doğrusu şöyle, değerini atamadan kullanamazsınız desek daha doğru olur. Yoksa bütün değişkenlerinizi en başta tanımlamanız doğru olmayabilir. Kullanıldıkları ilk yerde de geçirebilirsiniz. Fakat ilk değer atamasının bir yerde yapılması gerekiyor.
+
+313
+01:31:43,572 --> 01:31:57,472
+Onu mutlaka göstermelisiniz. Bir hesap ile iktidar ataması yapıyorsanız sorun yok. Şöyle ki, mesela N'i ve M'i okudunuz ya, şurada bir yerde şimdi prosesleri dikdörtgenle çizdiğimizi göstermiştik. Mesela K eşittir.
+
+314
+01:31:58,355 --> 01:32:25,676
+N artı M şeklinde bir ifade gördünüz. Bu doğrudur. Neden? Çünkü N'yi okudum. Biliyorum. Onun bir değeri var. M'yi de okudum. O da bir değer alıyor. İki tane bildiğim değeri topluyorum. Oluşan değeri yeni bir değişkene atıyorum. Yani K isimli değişkene atıyorum. Bu okey. Yani oturup da burada bir yerlerde en başta K'yı tanımladım. Hani şurada K eşittir sıfır dememe gerek yok.
+
+315
+01:32:26,355 --> 01:32:32,595
+Çünkü ben burada zaten bildiklerimle oluşturuyorum. Bu tamam. Ama bilmiyorsam mutlaka önce bir değer ataması yapmalıyım.
+
+316
+01:32:34,115 --> 01:32:46,115
+Şundan bahsettik. Dediğim gibi böyle paralel kenarda kullanıcıdan veri girişi için kullanılan başka bir notasyon. Bu da biraz böyle şey klavyeye benzetenler var.
+
+317
+01:32:53,811 --> 01:32:55,811
+Böyle bir yapı.
+
+318
+01:32:55,811 --> 01:32:59,811
+Şunu da buradan temizleyelim.
+
+319
+01:32:59,811 --> 01:33:02,811
+Bunları da silelim.
+
+320
+01:33:02,811 --> 01:33:05,811
+Çıktı içinde biz
+
+321
+01:33:06,003 --> 01:33:33,903
+Şunu kullanıyoruz, alt tarafı dalgalı bir dikdörtgen. Bu alt tarafı dalgalı demek aslında bu bir kağıt demek. Yine burada tarihe bir selam göndermiş oluyoruz. Bilgisayarın monitörünün olmadığı ana bilgisayar zamanlarını düşündüğünüzde bütün çıktılar, yani girdiler delikli kartlarla okunuyor. Üretilen çıktılar da printer'a yazılıyor, kağıda yazılıyordu. İşte biz de burada çıktılarımızı.
+
+322
+01:33:34,003 --> 01:33:40,003
+kağıda basacak şekilde gösteriyoruz. Bazı kaynaklarda ya da işte yine
+
+323
+01:33:40,003 --> 01:33:49,483
+internetteki flowchartlarda görebileceğiniz şöyle bir şey var, sembol. Bu da özel olarak ekrana çıktı üretmek
+
+324
+01:33:49,483 --> 01:33:58,363
+anlamına geliyor. Bu niye böyle bir garip bir şey ki? Bu tarafı böyle, bu tarafı yuvarlak diyebilirsiniz. Bu da siz tabii pek hani
+
+325
+01:33:59,507 --> 01:34:03,587
+kullanmadınız ama eskiden tüplü monitörler, tüplü televizyonlar vardı.
+
+326
+01:34:03,587 --> 01:34:16,607
+Katotray tüplenen. O da şöyle, şöyle bir elektron tabancası. Şurada da fosfor kaplı, içinde delikleri olan bir şey, floresan bölge.
+
+327
+01:34:17,104 --> 01:34:35,624
+Ve şuradan işte bir tane katot tabancası, katot ışını yolluyor. Tamam mı? Bu bir matriz. Hani önden baktığınızda televizyon ekranı. Şöyle. Tamam mı? Şöyle arkaya doğru şöyle gidiyor yani anlayacağınız. Eski televizyonları hatırlar mısınız? Tüplü televizyon arkası böyle. Neden? Huni gibi gidiyor. Çünkü Huni şeklinde arkaya doğru.
+
+328
+01:34:36,020 --> 01:34:52,659
+Şimdi ben buradan katot ışığını yolluyorum. Bu böyle şey gibi tabanca gibi ta ta ta ta ta diye böyle bütün şeyi ekranı matris gibi tarıyor. Tabii çok hızlı şekilde taradığı için işte saniyede 25 kareyi en az tarayacak kadar bir hızla ateş ediyor sürekli olarak ekrana arkadan.
+
+329
+01:34:53,268 --> 01:35:15,028
+Üzerindeki o deliklerden fosforu şey yaparak ne derler, iyonize ederek burada görüntünün oluşmasını sağlıyor. En eski işte monitüplü, monitör, ekran görüntü oluşturma teknolojisi. Bu aslında şuna benziyor. Bakın bu ekran, şu da televizyonun arkası yani şu kısmı.
+
+330
+01:35:15,136 --> 01:35:43,136
+Tamam. Şurayı niye böyle biraz uzatmışlar? İçine bir şeyler yazıyoruz değil mi? Ne çıkartıyorsak. Mesela ben buraya işte X ve Y değişkenlerini çıktığı olarak ekrana yazdırmak istiyorum. Burada da doğal olarak bir şeyler yazacağım için biraz alan kalsın diye bunu böyle uzatmışlar. Bu da bizim çıktığımız. Ama biz bunu kullanmıyoruz. Hani şöyle üstlerine birer kırmızı şey çekmiş olalım. Biz kendi ekolümüzde özellikle tarihede saygı...
+
+331
+01:35:43,136 --> 01:35:48,256
+Bu iki simgeyi giriş ve çıkış için akış diyagramlarımızda kullanırız.
+
+332
+01:35:48,724 --> 01:36:16,724
+Bağlantılara, bileşenlerine gelelim. Oklarımız var. Okları her zaman iki elemanı birbirine bağlamak için kullanın ve yönlü oklar kullanın. Mutlaka yönü belli olsun okların. Bir de eğri büğrü değil, bunları bu şekilde değil, köşeli olarak çizin, düz çizin, şöyle L şeklinde falan çizin. Bu daha okunaklı, daha temiz çıktılar üretmenizi sağlar. Bir de çemberlerimiz var. Şimdi özellikle iç içe döngüler falan gibi ya da karmaşık kontroller gibi şeyler oluşturuyor.
+
+333
+01:36:16,724 --> 01:36:35,204
+sizin yeriniz kalmayabiliyor ve okların takibi çok zorlaşmaya ya da çok kaba bir hale gelmeye, dağınık bir hale gelmeye başlayabiliyor. Bu durumlarda siz okları şuraya gidiyorum, hani bir numaralı bağlantıya gidiyorum deyip buraya böyle verebilirsiniz.
+
+334
+01:36:35,680 --> 01:36:44,960
+Öbür tarafta da bir numaralı bağlantıdan yolunuza devam edebilirsiniz. Şuraya hemen bir tane örnek yapalım. Mesela şurada şöyle bir alanım olsun tamam mı? Bu benim kağıdım olsun.
+
+335
+01:36:44,960 --> 01:36:55,960
+Algoritmamı buraya çizeceğim. Buraya start'ı çizdim. Böyle yazdım. Ondan sonra okumu koydum. İşte bir tane değer okudum.
+
+336
+01:36:56,595 --> 01:37:19,995
+Mesela x diye bir değer okudum. Hay Allah yer kalmadı. Ne yapıyorum? Hemen şuraya şöyle bir 1 koyuyorum. Buradaki numaralandırmalara dikkat edelim. Sonraki sayfam şuradan devam ediyor olsun. Tamam mı? Ne yapacağım? Ben burada 1 ile başlayacağım. 1. Buradan ok. Mesela şöyle x çarpı...
+
+337
+01:37:20,176 --> 01:37:27,176
+x'i yani x kareyi ekranda yazdırmak istiyorum. Tamam. Böyle direkt yazdırdım ve
+
+338
+01:37:27,176 --> 01:37:37,024
+şurada çizginin olmadığını varsayın. Buradan da stop ettik. Tamam.
+
+339
+01:37:37,024 --> 01:37:58,043
+Böyle. Bu genellikle böyle iç içe döngüler, iç içe kontroller, böyle algoritmamız büyüdükçe, akışımız büyüdükçe takip edilmesi zorlaştığında kullandığımız bir adresleme. Yani ben buradan bire gidiyorum, bir nerede burada, buradan devam ediyormuşum şeklinde bu ifadeleri çizgi sayısını da azaltmak için çemberleri kullanırız.
+
+340
+01:37:59,699 --> 01:38:24,559
+Akış diyagramın önünde her türlü ifade, işlem, atama, aritmetik işlem ya da lojik işlem ne yapıyorsanız yaptığınız bütün operasyonlarınızı dikdörtgenler içinde yapmalısınız. Bir dikdörtgen içinde en az bir tane işleminiz olsun ama birden fazla da yapabilirsiniz. Mesela ben burada a eşittir a artı bir x eşittir a artı beş.
+
+341
+01:38:25,363 --> 01:38:41,483
+iki işlemi bir arada da yapabilirim. Üç tane de yapabilirim. Yer tasarrufu. Her bir işleme ayrı kutu ayrı ok çizseniz, gitgide kocaman bir akış diyagramına sahip olursunuz. Bunu engellemek için, birden fazla işlemede bir kutu içinde mantıksal bir blok halinde barındırabilirsiniz.
+
+342
+01:38:44,083 --> 01:39:08,583
+Kullanırken, özellikle işlemlerinizi gösterirken hiçbir şekilde bir programlama diline özel bir söz dizimi kullanmayın. Bağımsız tasarlamanız gerekiyor. En başta algoritmanın özelliklerinde de bağımsız olmasını söylemiştik hatırlarsınız. Dile özel bir operatör kullanmamanız gerekir. Dile özel bir değişken varsa yapısı kullanmamanız gerekir. Örneğin işte A eşittir, A artı bir doğrudur.
+
+343
+01:39:08,912 --> 01:39:27,952
+Ama gidip siz oraya A artı artı yazarsanız C'deki gibi bu kabul edilemez. Bu doğru değil. Bunu yapmayın. Sadece en basit herhangi bir dile bağımlı olmayan temel ifadeler ile temel aritmetik ve atama ifadeleri ile buradaki işlemlerinizi gösterin.
+
+344
+01:39:30,484 --> 01:39:56,484
+Evet, akış diyagramlarımızda koşula göre farklı davranışlar sergilememiz gerektiğinde kullandığımız bileşen karar mekanizması ya da diğer de işte if ifadelerimiz. Akış bir yerden geliyor, akış diyagramında ok geldi. Bu şekilde bir dallanma merkezi karar mekanizmasına gelir. Bunun içinde yazdığımız ifade
+
+345
+01:39:56,979 --> 01:40:15,919
+Tamamen bir lojik karşılaştırmadır. Daha doğrusu bir lojik operasyondur. Nihayetinde sonucunda lojik bir çıktı üretmesi gerekir. Bu ne demek? Sıfır ya da bir üreten bir tanım yapmanız gerekir. Tamam. Şimdi mesela A eşittir B. Eğer
+
+346
+01:40:16,404 --> 01:40:37,584
+Buna zaten if olduğu için direkt eğer diye okuyabilirsiniz. Eğer a ile b birbirine eşit ise diyelim ki a'nın değeri 3, b'nin değeri 8. Ne oldu? a eşit mi b'ye? Hayır. Hayırsa buradan ne çıktı? 0 çıktı ya da yanlış çıktı.
+
+347
+01:40:38,047 --> 01:40:47,167
+False tarafından devam edecektir. Eğer a eşittir 3, b eşittir 3 ise, o zaman a eşittir b
+
+348
+01:40:47,699 --> 01:41:15,699
+Lojik karşılaştırması eşitlik olduğundan dolayı doğru ya da bir sonucunu üretecektir. Doğru olduğu için de True Call çalışacaktır. Yani buraya geldiğinizde mantıksal ifadenizin sonucuna göre sıfır çıktıysa bu taraftan, bir çıktıysa bu taraftan yolunuza devam edersiniz. Bu ikisine kopyala yapıştır yaptığım için böyle hep A eşittir A artı 1 yazıyor ama hani dün mesela yine dersde biz hocam niye o zaman ikisinde de aynı işlemi yapıyorsunuz?
+
+349
+01:41:15,699 --> 01:41:36,939
+dedi. O yüzden şuraya A eşittir A artı iki yazdım. Hani farklı bir işlem yapmış olayım diye. Tamam. Aynı işlemi yapmak zorunda değilsiniz tabii ki. Burada herhangi bir işlem yapılıyor. Birden fazla işlem de yapılabilir. İçinde böyle döngüler, başka karar mekanizmaları da yer alabilir. Bunları sürekli iç içe kullanabilirsiniz. Hani bu kadar her zaman temiz ve basit olmak zorunda değil.
+
+350
+01:41:37,652 --> 01:41:57,252
+Dikkat etmemiz gereken şey, her zaman için doğru taraf ve yanlış tarafın True ve False kollarının hangisi olduğunu işaretlemelisiz. T ve F koyun, koymalısınız. Tamam. D, Y de koyulabilir ama biz hep T, F taraftarıyız. Lütfen True ve False tarafı bu şekilde gösterin.
+
+351
+01:42:00,564 --> 01:42:14,564
+Mümkün olduğunca bir akış diyagramında hani True tarafı True kolunu sağdan çıkartıyorsanız bütün karşılaştırmalarınızdaki doğru ifadeleri yani True kollarını hepsini sağdan çıkartmaya gayret edin. Yani
+
+352
+01:42:14,963 --> 01:42:30,604
+Kesin değil ama bazen yer darlığından yapamadığınız durumlar oluşabilir. Onun dışında mümkün olduğunca hep sağ taraf turuysa hep sağ taraf turu ya da hep sol taraf turuysa hep sol taraf turu olsun ve daha temiz bir okunaklı akış elde edersiniz.
+
+353
+01:42:32,283 --> 01:42:38,104
+False call'u olmak zorunda değildir isteğe bağlıdır. Yani ben rahatlıkla şu tarafa çizelim.
+
+354
+01:42:38,448 --> 01:43:00,648
+Bir karşılaştırma ifadesi. Tamam mı? İşte x küçük mü sıfırdan? Eğer doğruysa bir şeyler yap. Mesela bunun mutlak değerini al. Tamam mı? Ya da eksi bir ile çarp. Böylece mutlak değerini almış ol. Yanlışsa hiçbir şey yapma deyip
+
+355
+01:43:00,979 --> 01:43:27,159
+Buradan yoluma devam edebilirim. Yani bu böyle ok geldi, bu böyle ok geldi, bu ok da buradan böyle aşağı doğru devam etti. Bu olabilir. Ama bunun tersi mantıklı değildir. Ne demek istiyorum? Karşılaştırmanızı yaptınız. True taraf boş. False koluna işlem yazmışsınız. Şöyle.
+
+356
+01:43:28,692 --> 01:43:54,912
+Bu olmaması gereken bir ifade. Ne yapacağız peki? Böyle bir durum yapmak, tasarlamak zorunda kalıyorsanız, çok basit, siz şuradaki lojik ifadenin tersini alın. Yani x küçüktür 0 diye değil de mesela x büyük eşit 0 diye bakın. Değil mi? O zaman bu taraf otomatikman true olacaktır, bu taraf otomatikman false haline gelecektir. Böylece bu olmaması gereken durumun oluşmasının önüne geçersiniz.
+
+357
+01:43:56,148 --> 01:44:24,108
+Evet, karar mekanizmalarımız bu şekilde. Çok güçlü birleşenler bunlar. Zaten hani algoritma tasarlarken en sıklıkla kullanacağımız yapılar bu. İfadeler, karar ve dallanmalar, koşullu ifadeler, bir de döngüler. Şimdi gelelim döngülere. Eğer adım sayınız belliyse, yani dönüş sayınız, toplamda çalıştırmanızı beklediğiniz işlemlerin sayısı belliyse, o zaman biz buna bir for döngüsü adını.
+
+358
+01:44:24,148 --> 01:44:50,268
+veririz ve bu şekilde bir ifade ederiz. Şimdi yine literatürde kaynaklarda şunu görebilirsiniz. Bu klasik nedir bu? Karar mekanizması değil mi? Karar mekanizmasına geldi. İşte J eşittir birden N'e kadar birer birer artarak şeklinde bir ifade tanımı var. Ama bu da bu sefer de böyle bir karar mekanizmasının notasyonuna aykırı gibi oluyor. O yüzden biz şuradaki üç bölmeli dörtgeni kullanmayı tercih ediyoruz.
+
+359
+01:44:50,771 --> 01:45:12,731
+Döngün içine girdi. Döngü içinde yapılacak bütün eylemler burada. Tek olmak zorunda değil. Tekrar tekrar söylüyorum. Dönüyor ve döngünün başına geri geliyor. Döngü değişkeni bir arttırılıyor. Sonra bakıyor N'e ulaştı mı? Yani bitme şartı sağlandı mı sağlanmadı mı? Bitme şartı sağlanana kadar tekrar tekrar işte N tane adım burada dönüyor. Şimdi buraya bakalım.
+
+360
+01:45:13,332 --> 01:45:34,912
+Biz şuraya ilk koşulu, ilk atamayı yaparız. J atama bir diyebileceğiniz gibi, J eşittir bir de diyebilirsiniz. Sıkıntı yok, ikisinde okey. El alışkanlığı ben buraya atama işareti koymuşum. Altta da bitme, yani durma şartımız var. Döngünün tamamlanma şartını buraya yazıyoruz. J'nin N'ye eşit olması. J N'ye eşit olduğunda son adımı döneriz.
+
+361
+01:45:35,296 --> 01:45:59,816
+Bir arttırdığında J, N'den bir fazla değer alır. Bir fazla değer aldığında N'den büyük olduğu için şart bozulur ve aşağıdan devam ederiz. Aslında yine burada da son koşul, durma koşulunu her adımda kontrolü söz konusudur. Burası da artım, adım sayısıdır. Örneğin ben n eşittir 4 olsun ya da 5 olsun tamam mı? n eşittir 5 için.
+
+362
+01:46:00,275 --> 01:46:15,115
+Şöyle bir şey yapayım, şurada da atamasını yapmış olayım yukarıda. Yukarıdan geldik. Start, n eşittir 5, j eşittir 1'den 5'e kadar her adımda bir şey yapacağız. Tamam. Burada j'nin alacağı değerler ne olacaktır? Şuraya yazalım.
+
+363
+01:46:25,268 --> 01:46:51,448
+5'ten küçük, tekrar döngünün içine girdik, bir şeyler yaptık, bitti. Ondan sonra 1 arttı, 3 değerini aldı. 3 küçük mü 5'ten? Evet. Devam. Küçük eşit mi desek daha doğru, devam. Bu daha yaptı. 1 arttı, 4 değerini aldı. Çalıştı, döngüyü bir kere daha çalıştırdı. Sonra geldi. J 5 değerini aldı. 5, 5, okey, yaptı.
+
+364
+01:46:51,923 --> 01:47:17,944
+Bunu da işletti. Tamam mı? Ne oldu? Toplamda beş adım yürümüş olduk. İşi beşinci kere yaptık. Bu bloğu beşinci kere çalıştırdık. Sonra buradan devam ettik. J bir arttı. Altı. Altı beş. Aa ben beşi geçtim deyip buradan yoluna devam etti. Fakat J'nin değişkeninde, indis değişkeninde, buna da indeks ya da indis değişkeni, döngü değişkeni adını veriyoruz. Döngünün adımlarını saymamızı sağlıyor.
+
+365
+01:47:18,355 --> 01:47:31,355
+Bu 6 değerini alarak aslında devam edecek. Aşağıda bir yerde sorsanız 6 aslında değeri. Buna da dikkat edin. Değeri arttırdıktan sonra çıkıyoruz. Şart bozulu deyip çıkıyoruz.
+
+366
+01:47:31,355 --> 01:47:38,355
+Peki, ben buraya 1 değil de 2 yazsaydım ne olurdu? Yine 1'den 5'e kadar baktığımda. İlk değeri ne olacaktı? J'nin.
+
+367
+01:47:38,836 --> 01:48:03,275
+Şöyle tablo gibi yapalım. J'nin ilk değeri bir. Bir değerini aldı, çalıştı, geri geldi. İki arttı. Yani ikiye olmak yerine üç değerini aldı. Tamam mı? Bir ve üç oldu. Üç için çalıştı. Beşten küçük eşit. Burayı bir kere daha çalıştırdık. Geldik. Tabi J'nin burada kullanıyorsanız değeri üç olacak. İçeride. Çıktık. Sonra iki arttırdık. Beş oldu.
+
+368
+01:48:04,692 --> 01:48:19,252
+Beş, beşe eşit, yine çalıştı, birdi. Beş değerini alarak burada yapılacak işlemleri yaptık. Geri döndük ve buraya tekrar geldik. J'yi bir daha arttırdık, yedi değerini aldı. J yedi, aa yedi beşten büyük.
+
+369
+01:48:19,252 --> 01:48:29,172
+I ıh, çık diyoruz ve buradan yolumuza devam ediyoruz. J'yi aşağıda bir yerde sorsak yedi ile kalmış olacak. Adım sayısı dediğimiz şeydi, artım sayısı bu.
+
+370
+01:48:29,587 --> 01:48:49,587
+İlla pozitif olmak zorunda değil, negatif de olabilir. Örneğin ben şurada şöyle bir tane for döngüsü yazayım. J eşittir N'den 1'e kadar eksi 1. Tamam.
+
+371
+01:48:50,292 --> 01:49:03,435
+Ve şurada da yapılacak işlemler. Mesela J'yi yazdır gibi bir şey yaptığımızı düşünün. Buradan da yolumuza devam ediyoruz. Buradan gelmiştik. Ne oldu? Bu sefer J, N'den başlayacak. Yani 5, 4,
+
+372
+01:49:03,475 --> 01:49:20,475
+5 olacak, bir sonra 4, bir sonra 3, bir sonra 2, bir sonra 1, bir sonra 0 ama 0 birden küçük olduğu için buradan çıkmış olacağız. Yani 5, 4, 3, 2 ve 1 değerlerini alarak tam 5 kere bunu döndürmüş olacağız. Tamam?
+
+373
+01:49:20,475 --> 01:49:28,475
+Eee sıfırdan başlıyorsanız da n-1 kontrolü doğal olarak yapmanız gerekecek ya da küçüktür n kontrolüyle bu işi yapmanız gerekecek.
+
+374
+01:49:29,460 --> 01:49:35,100
+Burada şeyi yazarken akış diyagramını son kontrolü burada ifade ediyoruz.
+
+375
+01:49:37,240 --> 01:49:47,500
+Bir de koşullu döngülerimiz var. Yani forlara koşulsuz döngü diyebilirsiniz. Adım sayısı belli. Birden n'e ya da belli artımlarla gidecek şekilde döngüler.
+
+376
+01:49:47,988 --> 01:50:10,148
+Koşullu döngülerimiz de olabilir. Bunlara da bilinmeyen sayıda iterasyona sahip döngüler diyoruz. Şimdi algoritma buradan geldi. Tabii ki buradaki yine değer atamalarının bir şekilde yapılmış olması yukarıda lazım. Diyelim ki ben yine j eşittir, bir, n eşittir, daha kısa olsun, 3 atamasını yapmış olayım. Tamam mı?
+
+377
+01:50:12,051 --> 01:50:18,051
+Yukarıda bu j eşittir, bir ne eşittir, üç diye atadım. Geldim buraya, j küçüktür, n kontrolü var.
+
+378
+01:50:18,051 --> 01:50:23,051
+j n'den küçük mü? Evet küçük. Ne olacak? Bu buraya girecek. Girdi.
+
+379
+01:50:23,539 --> 01:50:47,359
+Ne işlemi yapmış? A eşittir A artı 1 geldi buraya. Tamam. Şimdi bir daha kontrol ediyor. J n'den küçük mü? 1 değişti mi? Değeri değişmedi değil mi? 1 ve 3. Küçük mü? Evet küçük. Bir daha girdi. Bir daha geldi. 1 küçüktür 3 girdi. 1 küçüktür 3 girdi. Girdi, girdi, girdi, girdi. Çıkamıyoruz farkında mısınız? Döngüden çıkamıyoruz. Neden çıkamıyoruz? Çünkü bu koşul hep doğru.
+
+380
+01:50:48,020 --> 01:51:10,480
+döngünün içinde şuradaki koşulu mutlaka değiştiren bir operasyonunuzun olması lazım. Atıyorum, j eşittir, j artı bir. Yani her adımda j'yi bir arttırmalıyım ki o zaman bir oldu, girdim, yaptım, bir gelmişti, üçten küçük, çalıştım. Bir arttırdım, iki oldu.
+
+381
+01:51:11,347 --> 01:51:30,788
+iki küçüktür üç şartı doğru bir daha girdi çalıştırdı ama j 3 oldu. Üç küçüktür üç hayır o zaman buradan yoluna devam et deyip çıkarız. İşte sonsuz döngü bu şekilde oluşur. Oluşturmamak için böyle koşullu döngülerinizin
+
+382
+01:51:31,507 --> 01:51:57,707
+Lojik karşılaştırmasının yani buradaki karşılaştırma ifadesinin döngü bloğunun içinde mutlaka modifiye olduğunu garanti etmelisiniz. Emin olmanız gerekir. Ve sonlanacak şekilde değişmesine emin olmanız gerekir. Mesela her adımda birer arttırmak, azaltmak olabilir. Koşula bağlı farklı artım sayıları olabilir. Olabilir. Hiç fark etmez. Ama burada mutlaka koşulu
+
+383
+01:51:58,159 --> 01:52:13,819
+bir şekilde güncellemeniz, en azından koşul değişkenlerini bir şekilde güncellemeniz gerekir. Bu döngüleri iç içe de kullanabilirsiniz. Hiç önemli değil. Örneğin, işte bir tane for döngüsü yaparsınız. Tamam mı? Bu da i eşittir olsun.
+
+384
+01:52:14,355 --> 01:52:37,556
+işte birden N'e kadar dönsün istiyorsunuz. Bunun içinde de mesela bir işte J değişkenini J eşittir atıyorum, İ diye atadınız ve burada da işte J ölü 2 eşittir 0 olduğu sürece yani her çift sayıda bir şeyler yap.
+
+385
+01:52:38,163 --> 01:52:42,963
+şeklinde bir ifadeyle bir while döngüsü de oluşturabilirsiniz.
+
+386
+01:52:44,703 --> 01:52:49,623
+Buradaki çizgileri düzgün çizmeniz gerektiğini söyledim. Ben şu anda mouse ile çalıştığım için bunlar çok düzgün olmuyor.
+
+387
+01:52:50,224 --> 01:52:52,844
+Kusura bakmayın. Tahtada bunları daha güzel çiziyoruz.
+
+388
+01:52:53,363 --> 01:52:57,264
+Bakın ne oldu? Ben bir for döngüsünün içine bir while döngüsü koymuş oldum.
+
+389
+01:52:57,344 --> 01:53:02,203
+Koyarım. Hiç önemli değil. Tabi bu j'yi de burada bir şekilde güncellemeniz gerekecek olabilir.
+
+390
+01:53:05,652 --> 01:53:33,091
+Neden i, j şeklinde değişken isimleri kullanıyoruz? Bunlar döngü indis değişkenleri, iteratörler. Bu yüzden hep i ile başlarlar genellikle. i bizim ilk değişkenimizdir döngülerde kullandığımız. Eğer iç içe döngü ya da iki döngümüz varsa ikinciye j deriz, üçüncüye k deriz, dördüncüye l deriz. Bu şekilde devam ederiz. m ve n genellikle eleman sayıları için kullanırız. İçi içe üç döngüden sonrası çok mantıklı değildir.
+
+391
+01:53:33,652 --> 01:53:59,152
+algoritma hızın çok karmaşık bir yapıda olmasına sebebiyet verir. Bu nedenle I, J, K ve L dördüncüsü daha yeterli, fazlasıyla yeterli olur. Başka bir yerde İ'yi tekrar kullanabilirsiniz tabii ki. Hani bunda bir sıkıntı yok döngü değişkenlerinizi. Aynı iç içe döngüler olmadığı sürece tekrar yararlanıp kullanabilirsiniz. Bunun iç içe döngüleri de söyledikten sonra hızlıca
+
+392
+01:53:59,507 --> 01:54:26,475
+sözde kodlardan bahsetmek istiyorum. Bunu aslında aktarmayacaktım ama bilginiz olsun diye ilave olarak söylüyorum. Mesela Dijkstra, Edger Dijkstra, yapısal programlama modelini öneren kişiye. Önerdiğinde, ilk bu önerimi yaptığında her bir algoritmayı sadece 3 tane yapı kullanarak ifade edebileceğimizi, yazabileceğimizi söylemiş ve bunu ispatlamış. Nedir bunlar? Dizilim, seçim ve döngü demiş bunlara. Aslında dizilim...
+
+393
+01:54:26,771 --> 01:54:54,051
+Sequence, yani bizim tık tık tık tık tık adım adım yazıyoruz ya, şunu topla, şunu çarp, bunu böl, bu küçük olanları şey yap falan gibi. Adımlı bir veya daha fazla ifadeye dizilim adını vermiş. Seçim ifadesi tam olarak bizim koşullu dallanma ifademiz. Koşula göre sıfır veya daha fazla alternatifi yürütür. Bir de döngü ifadesi, döngüde bir kod bloğun tekrar tekrar dönmesini sağlar.
+
+394
+01:54:54,399 --> 01:55:13,579
+Psodocode'lar genel olarak burada gördüğünüz şekildedir. Şöyle bir başlığımız kafa kısmı vardır. Bunun pre-condition ve post-condition bir de return value şeklindeki alanlarını tanımlayabilirsiniz. Bunları yazıyla tanımlarız. Sonrasında bir kafa tarafı bittikten sonra da gövde tarafı vardır.
+
+395
+01:55:14,000 --> 01:55:41,039
+Gövdede de bakın bir, içerlikli bir, daha da içerlikli bir şeklinde bir numaralandırma genellikle kullanılır. Bunlar sizin ifadelerinizin adımları. Birinci iş bu. Bir döngü başlatmak. Ne zamana kadar dönecekmişim? Dosyanın sonu gelene kadar. Dosyanın sonu olmadığı sürece döngü bloğunun içindeki yani bir içerlikli işleri yapacağım. Orada ne varmış? Aslında bu 1.1, 1.2.
+
+396
+01:55:41,587 --> 01:56:09,028
+Şu 1.2.1, tamam mı? Burada bir karar var, burada bir işlem var, hani ne demiştik ona? Dizilim demiştik. Dizilim var, seçim var, döngü var. İşte bu şekilde siz algoritmalarınızı pseudocode olarak da ifade edebilirsiniz. Çok üstünde durmayacağım dediğim gibi. Yine incelersiniz slide'dan, durdurup bakarsınız. Atamalar genellikle şu 2. ve eşittir ya da sola ok şeklinde.
+
+397
+01:56:09,492 --> 01:56:35,311
+Supesodocode'larda ifade edilir. Eşitlik kontrolleri için tek eşit kullanılır. Seçimler için işte if, şart, endif ya da if, doğru taraf, else, yanlış taraf, endif şeklinde bir ifade kullanılır. While, do, do while, repeat until. Bunlar işte koşulu önce kontrol et, koşul doğru olduğu sürece şuradaki ifadeleri çalıştır.
+
+398
+01:56:36,212 --> 01:56:44,532
+Şu bloğu başlat, ifadeleri çalıştır, koşul doğruysa tekrar bunu do'ya git, bloğun başına git, bunları tekrar çalıştır.
+
+399
+01:56:44,927 --> 01:57:10,567
+Repeat until, bu da aslında aynı şekilde bu ifade doğru olana kadar bunu çalıştır. Do while'la birbirine çok yakın. Birinde doğru, birinde yanlış diye düşünebilirsiniz ama ikisini de birbirini yerine kullanabilirsiniz. Misal C'de repeat until yok. Gerek yok çünkü. Do not while diyerekte bu işi çözebilirsiniz. Bu da for, adım sayısı belli olan döngülerimiz.
+
+400
+01:57:11,028 --> 01:57:16,608
+Burada basit bir örnek. Şöyle birkaç saniye tutayım. Üzerinde durmayacağım.
+
+401
+01:57:16,608 --> 01:57:18,108
+Evet.
+
+402
+01:57:18,612 --> 01:57:28,372
+Burada seçimden bahsederken şunu söyleyeyim. Seçim ifadesine ne dedik? Sıfır veya daha fazla alternatifi yürütür dedik.
+
+403
+01:57:28,372 --> 01:57:34,112
+Şimdi aslında orada da hemen şuradaki if'e geri dönmek istiyorum. Şuraya, bunu atladım Memin.
+
+404
+01:57:34,792 --> 01:57:45,612
+Yine kaynaklarda siz akış diyagramlarına baktığınızda karar ifadesi ya da if ifadesi için bir eşkenal dörtgen kullanıldığını görebilirsiniz.
+
+405
+01:57:46,612 --> 01:57:57,092
+Dediğim gibi kararları hep altıgenle göstermeyi tercih ediyoruz. Çünkü şurası yazılabilsin diye ortası açılmış, uzatılmış bir eşkenal dörtgen gibi düşünebilirsiniz.
+
+406
+01:57:57,752 --> 01:58:09,771
+Bir solda çıktısı var, bir sağda çıktısı var. Buralardan böyle çıktı olduğunu düşünmeyiz. Şöyle kendi içinde bir okmuş gibi, şunu da kendi içinde bir okmuş gibi sanki ifade etmek için bu sembolü kullanıyoruz.
+
+407
+01:58:09,771 --> 01:58:11,532
+Peki bu sembol niye kullanılıyor?
+
+408
+01:58:12,500 --> 01:58:20,500
+Ekstra bilgi olarak söylüyorum. Hani bundan yine şey yapmayın. Kafanız karışmasın, sorumlu değilsiniz. Yine eskiden bu...
+
+409
+01:58:21,427 --> 01:58:46,167
+Merkezi bilgisayarlarla hesaplama, özellikle bilimsel hesaplamaları yapılırken kullanılan Fortran isimli bir dil var. Çok revaçtaydı çünkü diğer dillerden daha fazla precision'la sahip gerçel sayı adresleyebiliyordu. O yüzden kullanılıyordu. Günümüzde bu törü artık 64 bit mimariyle birlikte çok anlamlı değil ama yine de zamanında kullanılıyordu.
+
+410
+01:58:46,528 --> 01:59:14,428
+iki değişken böyle iki adresi bir araya getirip hani sekiz bit yerine onaltı bit adres diyebildiği için aslında bir gücü vardı. Oradaki if mekanizması, FORTRAN'daki if mekanizmasının da karşılaştırmasının üç tane sonucu çıkıyordu. Şöyle ki, şimdi aslında şey tam olarak aritmetik fark gibi düşünebilirsiniz. Şimdi mesela A ve B değişkenlerine bakıyor. Mesela A ve B'den büyükse ya da buradaki işlemin sonucu trueysa hani
+
+411
+01:59:14,528 --> 01:59:17,728
+bir ya da şöyle virgül koyup
+
+412
+01:59:17,728 --> 01:59:21,168
+pozitif değerdir diye bu tarafa giderdi.
+
+413
+01:59:22,307 --> 01:59:25,548
+Buradaki fark negatifse mesela A3B5 ya
+
+414
+01:59:25,548 --> 01:59:30,428
+öyle bir şey varsa o zaman buradan negatif ya da küçüktür sıfır
+
+415
+01:59:30,428 --> 01:59:31,387
+deyip
+
+416
+01:59:31,731 --> 01:59:57,712
+false taraf dediğimiz hani bu tarafa ya da eksi tarafa giderdi. Buna eksi bir diyebilirsiniz ya da sadece eksi ya da sadece artı diyebilirsiniz. O zaman eşitlik durumu üçüncü bir çıkış. Üçüncü çıkış da buradan çıkardı işte. Şuradan da sıfır olma durumu. Yani tam eşit olma durumunda da buradaki çıkış çalışıp buradaki başka işlemleri yaptırabilirdiniz. Günümüzde bu kullanılmıyor artık. Hani if, then, else yani.
+
+417
+01:59:58,100 --> 02:00:11,300
+Koşul ya doğrudur ya yanlıştır şeklinde ikili dallanma kullanıyoruz. Bu eşkenal dörtgen de buradan kalma aslında. Hani artı çıkış, eksi çıkış, sıfır çıkışı şeklinde üç çıkışa ihtiyaç duyulduğu için. Bir de girdi var.
+
+418
+02:00:11,648 --> 02:00:33,908
+O zaman da öyle bir yapı önerilmiş, bu kullanılmış. Dediğim gibi hani bunu görürsünüz, bu çok kısık kullanılır. Tarihçesi de budur, kullanılma sebebi de budur. Ama günümüzde bu yok. Yani böyle sıfır çıksın olmadığı için biz yine kendi ekolümüzde bu notasyonu, anlattığım notasyonu, altıgeni kullanmayı tercih ediyoruz. Peki.
+
+419
+02:00:34,804 --> 02:00:41,243
+Bu tarafta geçtikten sonra artık örnek algoritmalarımıza bakmaya başlayabiliriz.
+
+420
+02:00:41,944 --> 02:00:52,703
+Akış diyagramlarının temel sembolleri, nasıl bağlanmaları gerektiği, içlerinin nasıl doldurulmaları gerektiği, nasıl birleştirmeleri gerektiğiyle ilgili temel bilgileri aktarmaya çalıştım.
+
+421
+02:00:53,083 --> 02:00:59,484
+Bundan sonrası dediğim gibi sadece çalışmak, örnek çözmek, farklı işlemleri gerçekleştirmek.
+
+422
+02:01:02,515 --> 02:01:27,515
+7 tane örnek koydum ama hepsini yetiştiremeyiz. Büyük bir ihtimalle 15 dakika sonra çünkü zamanımızı tamamıyla doldurmuş olacağız. Mesela birinciye bakalım. Verilen en adet sayının toplamını ve ortalamasını yazdırmak istiyoruz. Peki yapalım. Şöyle yapalım. Şuradan.
+
+423
+02:01:30,644 --> 02:01:57,612
+Bir dakika, şeyi arıyorum, Zoom'daki whiteboard'u arıyorum. Heh buldum. Şu. Geldi mi? Bu geldi de ben şey yapamadım. Şunları aşağıya indireyim. Pardon. Ano tater'ımızı da yukarı alalım. Evet.
+
+424
+02:01:59,604 --> 02:02:14,003
+Şimdi şöyle biraz ufaltayım daha rahat çalışalım. Tamam ne dedik? En tane eleman veriliyor.
+
+425
+02:02:14,224 --> 02:02:31,624
+Ve verilen en tane elemanın hem okunuyor diyelim tamam mı kullanıcıdan en tane değer okuyoruz ve bunların toplamını ve ortalama değerini yazdırmak istiyoruz. Şimdi ne yapacağız? Önce doğal olarak başlamamız lazım değil mi? Start'ımızı buraya ekliyoruz.
+
+426
+02:02:32,664 --> 02:02:41,624
+Başlamak bitirmenin yarısıdır derler. O zaman algoritmanın yarısı bitti. Çok güzel harika. Şimdi ne yapacağım? Önce ben
+
+427
+02:02:42,228 --> 02:02:45,328
+Bir, en değerini okumam lazım.
+
+428
+02:02:47,548 --> 02:02:54,768
+Kullanıcıdan kaç tane sayı istiyorsam, verecekse, öncelikle onun bir değerini almam lazım.
+
+429
+02:02:57,208 --> 02:03:00,888
+Şöyle yaparsak, daha yok saçma oldu.
+
+430
+02:03:01,588 --> 02:03:03,748
+Ben de ekranla boğuşuyorum bir yandan, kusura bakmayın.
+
+431
+02:03:03,868 --> 02:03:04,788
+Şimdi daha iyi oldu.
+
+432
+02:03:05,168 --> 02:03:06,768
+Tamam, en değerini okudum.
+
+433
+02:03:07,348 --> 02:03:08,408
+Peki şimdi ne yapacağım?
+
+434
+02:03:10,003 --> 02:03:11,143
+Fikri olan var mı?
+
+435
+02:03:15,699 --> 02:03:16,587
+Var mı?
+
+436
+02:03:23,572 --> 02:03:50,551
+Hatırlayalım. Toplam ve ortalama değerleri istiyorum. O zaman benim bir toplam değişkenine ihtiyacım var. Şöyle top diyelim. Buna bir ilk değer ataması yapalım sıfır diye. Çünkü ben bunu ileride kullanacağım. Bir de ortalama içinde ort diyelim şöyle. Tamam mı? Buna da sıfır diyelim. Benim o zaman iki tane değeri değişkeni burada tanımlamam ve ilk değerlerini atamam lazım. Şurada da oklar var. Çizmezsem hatırlatın. Tamam.
+
+437
+02:03:50,927 --> 02:04:12,867
+Şimdi n tane değer için demiştik. O zaman burada ben n tane değeri okumam lazım. Okudukça da toplam değerini arttırmam lazım diye düşünüyorum. Eleman sayısı belli. O zaman ben sınırları belli olan bir döngü kurarım. Değil mi? N sayısına göre alt alta kaç tane yazacağımı bilmediğim için bunu bir döngü içinde yaparım.
+
+438
+02:04:18,996 --> 02:04:26,896
+Birer birer olacak şekilde. Çok affedersiniz. İki dakika sonra hemen geliyorum.
+
+439
+02:05:19,315 --> 02:05:46,155
+Evet, affedersiniz. Tekrar devam ediyoruz. Şimdi ne dedik? O zaman adım sayımız belli olduğuna göre n tane sayı. Önce ne yapacağım? n tane sayıyı okuyacağım. Nasıl okuyorum? Hemen punch card sembolümü alıyorum. Değil mi? Ve sayıyı okuyorum. Sayıya da s diyelim mi? S diyelim. Tamam, s'yi okuduk. S'yi okuduktan sonra ne yapacağım? Toplamı arttırmam lazım. Toplam eşittir.
+
+440
+02:05:47,028 --> 02:05:55,108
+Bu atamayı gerçekleştirmem lazım. Toplam artı sayı.
+
+441
+02:05:58,452 --> 02:06:03,212
+Bu eylemi gerçekleştirdim. Burada ortalamayı güncellememe gerek var mı?
+
+442
+02:06:04,091 --> 02:06:10,811
+Ortalama nedir? Toplam değerinin n bölümüdür değil mi? O zaman döngünün dışında yapsam daha kolay olabilir. Burada toplamı oluşturayım önce.
+
+443
+02:06:11,851 --> 02:06:15,172
+Bunu şu şekilde bağladık.
+
+444
+02:06:15,572 --> 02:06:20,771
+Şurada okları koyduk. Tamam. Peki bu S tabii.
+
+445
+02:06:21,372 --> 02:06:23,052
+S 5 değil.
+
+446
+02:06:23,188 --> 02:06:48,748
+Sayıları okuduk. Şimdi ne yapacağız? Ortalamayı hesaplamam lazım. Ortalama değişkenini zaten sıfır diye tanımlamıştım. Burada tanımlamasam da olurdu aslında. Ama genellikle böyle garanti olsun diye tanımlamak daha iyidir. Sonrasında atladığımız ya da unuttuğumuz, ilk değer atamasında unuttuğumuz bir şey kalmasın diye. Ortalama değer nasıl hesaplanır? Toplam.
+
+447
+02:06:51,988 --> 02:06:55,528
+Bölü eleman sayısı olan n.
+
+448
+02:07:01,203 --> 02:07:17,923
+Bu dikdörtgen tabii. İdare edin. Sonra biraz yamuk oldu. Sonra toplamı ve ortalamayı yazdırmamı istiyordu. Toplam ve ortalama.
+
+449
+02:07:22,228 --> 02:07:31,228
+Pazartesi günü uygulama dersinde yine farklı örneklerle çözüp bir yolumuza devam edeceğiz. Ona da katılmanız yine tavsiye edilir.
+
+450
+02:07:31,228 --> 02:07:39,228
+Şuraya da stop deyip durabiliriz. Neden? Çünkü bizden beklenenleri yaptık. Başladık.
+
+451
+02:07:39,228 --> 02:07:46,228
+N tane sayının toplamını ve ortalamasını hesaplayacağımız için önce ENI kullanıcıdan aldık.
+
+452
+02:07:47,283 --> 02:08:00,343
+Toplam ve ortalama değişkenlerimizi sıfırladık. Sonra bir adım sayısı belli. Birden n'e kadar teker teker sayıyı okuduk toplama ekledik. N tane sayıyı okuyup toplama ekledik.
+
+453
+02:08:00,884 --> 02:08:20,564
+Şuraya da ok koyalım, daha havalı olsun. Ondan sonra döngümüz bitti. Ortalama değeri hesapladık. Toplam bölü N olarak. Sonrasında da ekrana toplam ve ortalama değerlerimizi yazdırdık. İşimiz bitti ve burada durduk. Peki, nasıl sizce? Oldu mu?
+
+454
+02:08:25,203 --> 02:08:26,043
+Nedersiniz?
+
+455
+02:08:30,292 --> 02:08:38,532
+fikri olan. Problemi anladık. Birinci adımı ilerlettik. Toplam ve ortalama istiyor en tane sayı için. Güzel.
+
+456
+02:08:39,332 --> 02:08:48,692
+Bir çözüm yolu ürettik. Bu şekilde bir akış diyagramı oluşturarak bir çözüm önerisi oluşturduk. Şimdi bu çözüm önerisini ne yapmamız lazımdı?
+
+457
+02:08:49,452 --> 02:08:54,652
+Bir test etmemiz lazımdı değil mi? Girdilerle test etmemiz lazımdı. Şimdi mesela n eşittir 3 olsun.
+
+458
+02:08:56,452 --> 02:08:57,052
+Tamam.
+
+459
+02:08:57,652 --> 02:09:20,891
+Toplam ve ortalama değerleri hesaplamaya bakalım. Genellikle şöyle değişkenlerinizi yazarsınız. Her adımda aldığı değerlere girersiniz. Şimdi i eşittir 1. Şuraya da i yazalım. Tamam mı? i eşittir 1. S'ye okudunuz. Diyelim s'ye ne dedi? 5. 2 girmiş olsun. Tamam mı? 2. Ortalama hala 0. i 2 değerini aldı.
+
+460
+02:09:21,395 --> 02:09:23,075
+En eşittir 3'tü ya.
+
+461
+02:09:24,155 --> 02:09:27,495
+2 girmişti. Şimdi de 3 girmiş olsun. 5 oldu.
+
+462
+02:09:28,235 --> 02:09:29,715
+Ondan sonra ortalama 0.
+
+463
+02:09:31,995 --> 02:09:34,795
+Başka 3. İyi eşittir. 3 oldu. 1 arttı.
+
+464
+02:09:35,395 --> 02:09:37,255
+Burada da ne girmiş olsun?
+
+465
+02:09:38,715 --> 02:09:40,215
+2 girmiş olsun.
+
+466
+02:09:41,095 --> 02:09:41,875
+Olsun mu? Olsun.
+
+467
+02:09:42,595 --> 02:09:42,835
+Tamam.
+
+468
+02:09:43,604 --> 02:10:00,000
+Neydi bu? 2, 5. 4 girmiş olsun. Burası 9 olmuş olsun. Tamam. 9. Ortalamamız hala sıfır. İ4 oldu. 4, 3'ten büyük olduğu için çıkmadık ve burada şu değerlerle kaldık. Yani toplam 9, ortalama sıfır.
+
+469
+02:10:00,000 --> 02:10:22,539
+kodur değeriyle kalmış olduk. Sonraki adıma geçtik. Ortalama eşittir. Toplam bölü EN. Yani toplam bölü 3. O zaman ortalamanın da değeri 3 oldu. Bu şekilde oluşturduk. Ekrana toplam ve ortalamayı yazdırıyoruz. Ne yazdıracağız? Toplam değeri ne? 9. Ortalama değerine 3. 9 ve 3 değerlerini ekranımıza yazdırmış olduk.
+
+470
+02:10:24,851 --> 02:10:45,851
+Atama kutucuğu değil, şurası güzel çizilmemiş. Şöyle tekrar şey yapayım. Çentik, okuma. Şu. Tamam. Yani şuradaki çentiği güzel çizememişiz. Ya şu, şunun aynısı.
+
+471
+02:10:46,163 --> 02:10:48,523
+Mouse ile bu kadar oldu kusura bakma.
+
+472
+02:10:49,523 --> 02:10:54,463
+Kalem olsa daha güzel çalışacağım. Ona da bir bakayım da bir çözüm geliştirmeye çalışıyorum ben de.
+
+473
+02:10:54,923 --> 02:10:56,823
+Tablet üzerinden yapma konusunda.
+
+474
+02:10:57,543 --> 02:10:59,783
+Peki, bu analiz çalıştı güzel.
+
+475
+02:11:01,643 --> 02:11:02,764
+Her şey yolunda mı sizce?
+
+476
+02:11:08,564 --> 02:11:10,104
+Şöyle olduğunda ne olacak?
+
+477
+02:11:14,676 --> 02:11:23,876
+N eşittir 0. Bakalım neler oluyor? N eşittir 0. Toplam ve ortalamayı da şöyle kısa yazayım. Tamam.
+
+478
+02:11:23,876 --> 02:11:35,676
+Toplam 0, ortalama 0 atamaları gerçekleşti. Ondan sonra i eşittir 1 den, i'yi de şurada yazıyorduk hatırlayalım. i eşittir 1.
+
+479
+02:11:36,500 --> 02:12:03,180
+1'den n'e kadar, yani 1'den 0'a kadar dönmeye çalışıyoruz. İlk d yarataması 1, n kaç? 0. Döngüye girecek miyiz? Hayır girmeyeceğiz. Çünkü 1 büyüktür 0. Zaten koşul bozuldu. Durma şartını geçmiş durumdayız. O yüzden şuradan aşağı doğru devam edeceğiz. Yani burayı, şunu da kırmızıyla, hiç girmemiş olacağız. N eşittir 0 olduğu için.
+
+480
+02:12:04,083 --> 02:12:12,684
+Tamam. N eşittir sıfır olduğundan dolayı döngünün gövdesi çalışmamış oldu. Ortalamayı hesaplayacağız. Ortalamayı hesaplayalım.
+
+481
+02:12:12,684 --> 02:12:25,483
+Pardon, şu renkli kalemi alacağız. Ortalama eşittir toplam bölü N. Toplam ne? Sıfır. N ne? Sıfır. Ortalama ne? Eyvah eyvah.
+
+482
+02:12:25,483 --> 02:12:30,283
+Sıfıra bölme. Hatası aldık. Doğru mu?
+
+483
+02:12:32,307 --> 02:12:35,188
+Ne yapacağız?
+
+484
+02:12:35,188 --> 02:12:38,547
+Çözüm önerisi?
+
+485
+02:12:38,547 --> 02:12:42,228
+Bakın, testini yaptığımızı anladınız mı?
+
+486
+02:12:42,228 --> 02:12:45,507
+If, güzel if.
+
+487
+02:12:45,507 --> 02:12:46,988
+Bizim
+
+488
+02:12:47,859 --> 02:13:10,039
+Burada gördüğümüz gibi hani tanımlı input kümemizdeki uç değerleri kontrol etmemiz gerekiyor demiştim. İşte mesela sıfır bizim için tam sayılarda bir uç değer. Sıfır değeri girdiğinde buradaki bölmeden dolayı patlıyor. O zaman ne yapacağız? Enin sıfır olup olmama durumunu kontrol etmemiz lazım. Bunu da aslında ilk başta şurada yapmalıyız. Eni okuduk ya.
+
+489
+02:13:10,368 --> 02:13:34,168
+Geni okuduktan sonra, şöyle yeşili alayım, alternatif çiziyorum tamam mı? Şuradan şöyle. Aslında [öğrenci]'in söylediği gibi, şurada bir şey yapmamız lazım. En büyüktür sıfır kontrolü tamam mı? Ve doğruysa şuraya girdi olarak işlememiz gerekiyor.
+
+490
+02:13:34,560 --> 02:14:01,560
+Yanlışsa, buradan çıkıp, şöyle hata gibi bir şey yazdırmamız gerekir. Şunu şöyle yapalım, hata diye. Ve bu da gelip, şuraya kadar birleşip, bundan sonra iften çıkması gerekir. Tamam. Yani, bunu da sarı bir bölge içine almaya çalışayım. Şurası,
+
+491
+02:14:04,243 --> 02:14:30,243
+Bu bölgeyi tamamen if'in true call'u olarak ve şu bölgeyi de if'in false call'u olarak oluşturmam gerekir. Böyle bir kontrolü de eklediğimde verilen n tane sayının toplanımını ve ortalamasını yazdırmış olurum. Peki başka bir örnek daha yapalım.
+
+492
+02:14:30,836 --> 02:14:32,836
+Şöyle
+
+493
+02:14:32,836 --> 02:14:33,836
+Heh
+
+494
+02:14:34,836 --> 02:14:37,836
+Altıncı örneği yapalım
+
+495
+02:14:38,836 --> 02:14:40,836
+Pardon
+
+496
+02:14:40,836 --> 02:14:43,836
+Bu nereden temizleniyor? Buradan tamam gitti
+
+497
+02:14:43,836 --> 02:14:47,836
+Aslında şuradan yeni açabiliyormuşuz. Neyse önemli değil
+
+498
+02:14:49,836 --> 02:14:52,836
+Böyle yapalım. Belki bir işe yarar. Tamam
+
+499
+02:14:52,836 --> 02:14:55,836
+Belki kayıtta kalıyordur diye onu silmemiş olayım
+
+500
+02:14:56,851 --> 02:15:01,252
+Şimdi okunan bir n değeri için soru şu şekilde.
+
+501
+02:15:01,252 --> 02:15:05,731
+Hemen kalemimi alayım.
+
+502
+02:15:05,731 --> 02:15:11,252
+Okunan bir n değeri için şunu hesaplamak istiyorum.
+
+503
+02:15:11,252 --> 02:15:16,212
+Şu fonksiyonun sonucunu hesaplayıp ekrana yazdırmak istiyorum.
+
+504
+02:15:16,212 --> 02:15:21,252
+fx eşittir toplam x eşittir.
+
+505
+02:15:22,195 --> 02:15:24,496
+Birden n'e kadar
+
+506
+02:15:26,555 --> 02:15:28,336
+Bir bölü
+
+507
+02:15:28,855 --> 02:15:29,615
+X kare
+
+508
+02:15:31,675 --> 02:15:33,456
+Matematik fonksiyon
+
+509
+02:15:33,975 --> 02:15:35,515
+Verilen n'leri için
+
+510
+02:15:35,756 --> 02:15:39,355
+Bunun oluşturulmasını hesabının yapılmasını
+
+511
+02:15:39,595 --> 02:15:40,876
+Talep ediyorum
+
+512
+02:15:41,135 --> 02:15:42,155
+Nasıl yapabiliriz?
+
+513
+02:15:42,675 --> 02:15:44,216
+Önce başlayacağız tabii ki
+
+514
+02:15:45,756 --> 02:15:46,256
+Start
+
+515
+02:15:48,055 --> 02:15:48,555
+Dedik
+
+516
+02:15:49,108 --> 02:16:03,387
+Ve başladık. İlk yapmamız gereken iş ne? Eni okumak değil mi? Şöyle kesikli çentikli diktörkenimizle en değerini okuduk. Sonra
+
+517
+02:16:04,243 --> 02:16:25,323
+Bir öncekine benzer şekilde. Ben ne kullanacağım? Burada x değişkenine ihtiyacım var. Çünkü böyle adım adım x üzerinde işlem yapmam. x kareyi hesaplamam gerekiyor. O zaman nereden başlıyor x matematik formülünde? Birden başlıyor değil mi? O zaman x eşittir bir diye bir atama yapmalıyım.
+
+518
+02:16:25,779 --> 02:16:36,099
+Bir de çıktım var. Buna y diyebiliriz ya da fx. F'ini kullanalım hadi tamam mı? İlk başta bunun da ilk değer atamasını sıfır olarak bırakalım.
+
+519
+02:16:37,427 --> 02:16:50,628
+Biraz büyük oldu burası ama idare edin. Normalde bunları böyle ip gibi aşağı doğru düzgün çizmek daha güzeldir. Tahtada bunlar daha güzel oluyor fakat burada işte mouse ile ve ekran ile bu kadar yapabildim kusura bakmayın.
+
+520
+02:16:50,628 --> 02:17:05,268
+Bunları düzgün bir şekilde alt alta ifade etmenizi bekliyorum. Bu şekilde böyle sola sola sola kaydırmamız sebebi sağ tarafta biraz alan kalsın diye aslında. O yüzden yine şöyle hafif sola doğru yanlayacağız burada yalpalayacağız.
+
+521
+02:17:05,427 --> 02:17:06,788
+Ve bir şey yapacağız.
+
+522
+02:17:06,788 --> 02:17:10,027
+Birden n'e kadar diyor değil mi arkadaşlar?
+
+523
+02:17:10,027 --> 02:17:12,087
+O zaman hadi şöyle çözelim.
+
+524
+02:17:12,087 --> 02:17:18,487
+X küçük eşit n olduğu sürece
+
+525
+02:17:18,487 --> 02:17:22,067
+bir wild döngüsü yapalım.
+
+526
+02:17:22,067 --> 02:17:26,167
+Ve buradaki işlemleri gerçekleştirelim.
+
+527
+02:17:26,167 --> 02:17:27,448
+İşlem ne?
+
+528
+02:17:27,448 --> 02:17:30,268
+Sigma ne işe yarıyordu? Toplamda değil mi? Hatırlayalım.
+
+529
+02:17:30,268 --> 02:17:32,308
+O zaman f eşittir.
+
+530
+02:17:33,108 --> 02:18:00,708
+f artı ne yapacak? Önceki değer artı her adımdaki x'i karesine alarak 1 bölü karesi x kareyi alarak buna eklemem lazım. 1 bölü parantez içinde yapalım x çarpı x Tamam çok güzel.
+
+531
+02:18:02,036 --> 02:18:03,316
+Sonra ne yapmalıyım?
+
+532
+02:18:08,244 --> 02:18:09,783
+Kim yazıyor ya da kim söylüyor?
+
+533
+02:18:12,724 --> 02:18:15,584
+X artı bir, n eksi bir'i mi eklemeliyiz?
+
+534
+02:18:15,864 --> 02:18:30,744
+n eksi bir'i eklememeliyiz çünkü n'e kadar gitmeliyiz zaten. O zaman ne demiştim hatırlayalım? Koşulu mutlaka döngünün içinde modifiye etmeliyim demiştim değil mi? Eğer etmezsem ne olur? X her zaman bir kalır.
+
+535
+02:18:31,120 --> 02:18:49,180
+Ve sürekli olarak f eşittir f artı 1, f eşittir f artı 1 olur. X artı artı demiyoruz. Neden? Çünkü dile bağımlı ifade kullanmıyoruz. Aman dikkat edin. X eşittir x artı 1 diyoruz. Evet.
+
+536
+02:18:49,935 --> 02:19:01,935
+Bakın iki işlemi bir kutucukta yaptım, yer kazanç olsun diye. Sonra ne yapacağız? Döngüden şöyle dönüp şartımıza geri geleceğiz.
+
+537
+02:19:02,420 --> 02:19:10,100
+Şartımıza geri geldik. Şimdi artık her adımda x'i bir arttırıyoruz. Neden? Çünkü burada bir sigma operatörünü gerçekleştirmeye çalışıyoruz.
+
+538
+02:19:10,100 --> 02:19:18,100
+x birden n'e kadar 1, 2, 3, 4, 5 diye değerler alması lazım. O zaman bu artımı şurada yapmamız gerekiyor.
+
+539
+02:19:18,100 --> 02:19:25,540
+Bunu yaptıktan sonra şöyle biraz daha sola geçip çıktığı
+
+540
+02:19:25,680 --> 02:19:45,680
+Yani f değerini yazdırıp, sonrasında da stop diyerek varış noktamıza ulaşıp durmamız gerekiyor. Bu sayede sonlu sayıda adıma sahip, yani sonuçta burada n tane adımda döneceğiz. Burayı n kere işletmiş olacağız.
+
+541
+02:19:52,064 --> 02:19:54,463
+Çıkış içinde bir tane daha fazla yapıyoruz ya.
+
+542
+02:19:54,463 --> 02:20:02,463
+Ve burada da işte n tane işlem, atama, çarpma, bölme ve sonunda bir yazdırma ve durma şeklinde.
+
+543
+02:20:02,783 --> 02:20:26,783
+sonlu sayıda adımdan oluşan başlangıç noktası bitiş noktası belli değişkenleri ya da kullandığımız bütün değerleri tanımlanmış atamaları yapılmış ve analizini yaptığınızda da sonlanabildiğini gördüğünüz bir yapı oluşturmuş olursunuz. N0 girilirse ne olur? Hiçbir şey olmaz burada değil mi? x1 ile başlar. 1 küçüktür 0. Yanlış.
+
+544
+02:20:27,540 --> 02:20:31,840
+O zaman gider f'i yazdırır. Ne yazdırır? 0 yazdırır. Olay bitti.
+
+545
+02:20:32,319 --> 02:20:36,139
+N eşittir 0 için f x eşittir 0 çıktısını üretmiş olabiliriz.
+
+546
+02:20:37,240 --> 02:20:43,200
+Burada teoride çalıştığımız için tam sayının limitleri bilmem nesine takılmıyoruz arkadaşlar gördüğünüz gibi.
+
+547
+02:20:43,200 --> 02:20:47,960
+Hani hocam o zaman ben n'i burada 10 milyar verdiğimde x kareyi nasıl hesaplayacağım?
+
+548
+02:20:48,180 --> 02:20:53,060
+İşte overflow olur falan. Onları burada düşünmüyoruz. Burası teorik çözümümüz.
+
+549
+02:20:53,424 --> 02:20:55,424
+Bunu başka türlü çözebilir miydik?
+
+550
+02:20:58,868 --> 02:20:59,888
+Bence çözerdik.
+
+551
+02:21:01,168 --> 02:21:02,448
+Şöyle çözerdik.
+
+552
+02:21:03,227 --> 02:21:04,247
+Şu bölge
+
+553
+02:21:06,028 --> 02:21:08,848
+ya da şöyle yapayım.
+
+554
+02:21:12,188 --> 02:21:14,988
+Şu bölge şöyle sarıya boyadığım bölge
+
+555
+02:21:15,247 --> 02:21:17,048
+benim döngüm değil mi?
+
+556
+02:21:17,308 --> 02:21:19,348
+Ben bu bölgeyi alternatif olarak
+
+557
+02:21:19,868 --> 02:21:21,388
+şuraya da bir sarı bölge yapalım.
+
+558
+02:21:23,448 --> 02:21:25,227
+Şu şekilde de yapabilirdim herhalde.
+
+559
+02:21:26,675 --> 02:21:32,675
+Bir, şuradan gel, aa pardon yanlış renk. Heh şuradan geldi.
+
+560
+02:21:32,675 --> 02:21:35,675
+Bir for döngüsü.
+
+561
+02:21:39,028 --> 02:21:43,227
+i eşit birden
+
+562
+02:21:44,368 --> 02:21:47,128
+şuraya da bir yazalım n'e kadar
+
+563
+02:21:48,128 --> 02:21:50,128
+ve her adımda
+
+564
+02:21:50,427 --> 02:21:53,427
+f eşittir f artı
+
+565
+02:21:54,628 --> 02:21:56,227
+bir bölü
+
+566
+02:21:58,227 --> 02:22:03,328
+x artı pardon hatta şuraya x eşittir diyelim
+
+567
+02:22:04,268 --> 02:22:05,100
+tamam
+
+568
+02:22:05,620 --> 02:22:08,860
+x çarpı x
+
+569
+02:22:08,860 --> 02:22:11,680
+dersek
+
+570
+02:22:17,108 --> 02:22:21,847
+Şunu da şöyle bitirirsek. Ne oldu?
+
+571
+02:22:21,847 --> 02:22:25,847
+Şuraya kadar da tekrar gideyim.
+
+572
+02:22:25,847 --> 02:22:28,667
+Bundan sonrasında yine f'i yazdırma kısmı var.
+
+573
+02:22:28,667 --> 02:22:33,308
+Ben x eşittir 1'den n'e kadar dönmesini söylüyorum.
+
+574
+02:22:33,308 --> 02:22:36,987
+Ve f eşittir f artı 1 bölü x çarpı x işlemini yapıyorum.
+
+575
+02:22:36,987 --> 02:22:40,268
+Benim burada artık x eşittir x artı 1 atamasına da ihtiyacım kalmadı.
+
+576
+02:22:40,788 --> 02:22:44,308
+Çünkü for döngüsü bunu benim için her adımda zaten arttıracak. Doğru mu?
+
+577
+02:22:45,012 --> 02:23:10,712
+Evet, bu sarı bölgeyi while ile yaptığımız koşullu döngüyü burada adım sayısı birden n'e belli olduğu için bir for döngüsüyle de yapabilirdim. Döngü değişkenini direkt olarak buradaki x değişkeni olarak kullanırdım ve şu aynı çözümü belki de biraz daha basit bir halde de gerçekleştirebilirdim. Karmaşıklıkları açısından düşündüğümüzde burada bir farklılık yok.
+
+578
+02:23:10,995 --> 02:23:31,455
+İkisi de denk. Burada bir işlem fazla yaptığımız için ama burada zaten kendi içinde o artımı yaptığı için bir kazanç ya da kayıp söz konusu değil. Bu kadar derin uç noktada bir düşünme ihtiyacımız yok. Peki, anladık mı? Bir soru var mı ya da sıkıntılı nokta?
+
+579
+02:23:36,788 --> 02:23:55,788
+Yok, tamam. Son bir örnek daha yapayım. Ondan sonra da bitirelim. Burada böyle üç tane de örnek ders içinde yapmış olalım. Pazartesi uygulamada diğer örneklerle devam edeceğiz zaten. Yine ortak olarak yapacağız üç grubu. Linkler paylaşılacak.
+
+580
+02:23:58,995 --> 02:24:09,315
+7. örnek slide'da, tabi tekrar aç kapa paylaşım yapmayacağım. Okunan iki sayının OBEB'ini bulmak istiyoruz. Yani OBEB
+
+581
+02:24:13,203 --> 02:24:17,203
+Ne diyelim? AB mi diyelim? XY mi diyelim? XY diyelim hadi.
+
+582
+02:24:17,203 --> 02:24:20,203
+OBEB x virgül y.
+
+583
+02:24:20,203 --> 02:24:24,299
+OBEB neydi? Bana kim tanımlar?
+
+584
+02:24:34,036 --> 02:24:39,595
+En büyük ortak bölen. Peki, nasıl bulabilirim ben iki sayının en büyük ortak bölenini?
+
+585
+02:24:46,067 --> 02:24:47,307
+yolunu bilen var mı?
+
+586
+02:24:52,564 --> 02:25:11,043
+Binlerce yıl önce Öplüt tarafından ortaya atılan, en büyük ortak bölen çarpanlarını ayırarak. Şimdi bize ortaokulda nasıl öğretmişlerdi hatırlayalım. İki sayıyı asal çarpanlarına ayır, değil mi? Böyle başlıyorduk. Ondan sonra ortak olmayanları şey yapıyorduk.
+
+587
+02:25:11,327 --> 02:25:37,727
+Siriyo muyduk, ne yapıyorduk, bir şeyler yapıyorduk. Ondan sonra da sonucu elde etmiş. Kalanların en büyüğü, ortak çarpanların en büyüğüdür şeklinde. Aralarında asal olmayanları falan bulup böyle bir şeyler yapıyorduk. Orada bu işlem algoritma olarak adım adım ifadeye, imperative ne oluca dönüştürmeye çok uygun değil aslına bakarsanız. Ama Ökled'in yöntemi şunu söylüyor.
+
+588
+02:25:38,548 --> 02:25:45,108
+Şu işlemi kalan sıfır olana kadar yapın x mod y
+
+589
+02:25:45,108 --> 02:25:47,268
+Tamam.
+
+590
+02:25:47,268 --> 02:26:05,668
+Yani obep xy eşittir obep x mod y şeklinde ve çıkan değeri de kaydırın. Yani xy ondan sonra da bu değer tamam mı? Şunu x yerine yani buraya yazın y'yi kaydırın.
+
+591
+02:26:05,876 --> 02:26:33,236
+Bir sonraki adımda y virgül pardon x mod y'ye bakın. Tamam. Ne oluyor böyle kaydıra kaydıra gittiğimiz için nihayetinde siz kalan sıfırı bulana kadar devam edeceksiniz. En sonunda şuradaki kalan y değeriniz yani bir önceki değeriniz sizin iki sayınızın verilen iki sayınızın obebini oluşturacak. Şimdi onu
+
+592
+02:26:33,631 --> 02:26:34,912
+Hızlıca söyledim.
+
+593
+02:26:35,431 --> 02:26:39,271
+Algoritmasını yapıp üzerinde de işlemini gerçekleştirerek
+
+594
+02:26:39,771 --> 02:26:40,551
+Bakalım
+
+595
+02:26:41,831 --> 02:26:42,592
+Nasıl
+
+596
+02:26:42,851 --> 02:26:43,871
+Tasarlayabiliriz
+
+597
+02:26:44,131 --> 02:26:44,631
+Görelim
+
+598
+02:26:44,891 --> 02:26:45,912
+Önce
+
+599
+02:26:46,431 --> 02:26:47,451
+Ne yapıyoruz?
+
+600
+02:26:48,991 --> 02:26:49,752
+Başlıyoruz
+
+601
+02:26:51,291 --> 02:26:52,311
+Start'ı unutmayın
+
+602
+02:26:53,351 --> 02:26:55,391
+Başta da yazabilirsiniz sorun değil
+
+603
+02:26:56,115 --> 02:27:02,115
+iki tane sayı lazım bana x ve y o zaman onları bir okuyayım değil mi?
+
+604
+02:27:05,203 --> 02:27:06,203
+Şöyle
+
+605
+02:27:10,131 --> 02:27:12,832
+Çentik, burası çentikli unutmayın.
+
+606
+02:27:13,832 --> 02:27:16,351
+Şöyle kalın, orayı yapmaya gayret edeyim.
+
+607
+02:27:16,992 --> 02:27:18,772
+X ve Y değerlerini okudum.
+
+608
+02:27:19,711 --> 02:27:20,432
+Şimdi ne yapacağım?
+
+609
+02:27:20,932 --> 02:27:27,452
+Benim bir X mod Y'den kalan değere ihtiyacım var ki onları kaydırarak kullanabileyim.
+
+610
+02:27:27,851 --> 02:27:29,871
+O zaman ona da kalan diyelim.
+
+611
+02:27:30,011 --> 02:27:31,912
+Kalan eşittir, K olsun şimdilik.
+
+612
+02:27:32,432 --> 02:27:35,631
+X mod Y.
+
+613
+02:27:37,203 --> 02:27:54,243
+Bu işlemi bir kere yapmam lazım. Ondan sonra nereye kadar bu işleme tekrar yapmam lazım dedim. Kalan sıfır olana kadar. Bu işleme tekrar tekrar yapacağım.
+
+614
+02:27:54,611 --> 02:28:00,511
+sayıları kaydıracağım. Yani y'yi x'e alacağım, kalanı y'ye alacağım. Ondan sonra tekrar x mod y yapacağım.
+
+615
+02:28:00,511 --> 02:28:16,171
+Neden kalan eşit değil 0 dedim? Bu şart doğru olduğu sürece döngünün içinde işlem yapmam lazım. Kalan 0 olduğunda ne olacak? Çıkacağım ve ekrana sonucumu yazdıracağım.
+
+616
+02:28:18,171 --> 02:28:21,451
+Sonra da işim bittiği için duracağım.
+
+617
+02:28:22,195 --> 02:28:23,515
+Bunu da buraya ekleyelim.
+
+618
+02:28:24,175 --> 02:28:28,096
+Bakın ne güzel, algoritmanın ortasında döngüsünü kurmadan stop noktasını bulduk.
+
+619
+02:28:28,175 --> 02:28:32,736
+Peki, kalan sıfır olana kadar ne yapmamı istiyoruz?
+
+620
+02:28:34,056 --> 02:28:34,896
+Önce ne dedim?
+
+621
+02:28:35,736 --> 02:28:38,515
+Buradaki ikinci sayıyı birinci sayıya taşıyın.
+
+622
+02:28:38,636 --> 02:28:43,775
+Yani x değişkenine y değişkeninin değerini atayın.
+
+623
+02:28:44,855 --> 02:28:48,775
+Bunu işte x eşittir y yerine şöyle yazdığımız...
+
+624
+02:28:49,424 --> 02:29:15,664
+Galip bir şeyler yapıyor ya. Allah Allah. Şuraya yazayım. X, Y şeklinde göstersem, Y'nin değerini X değişkenine ata demiş oluyorum aslında buradaki X eşittir Y diyerek. Y'ye ne atacağım peki? Bölümden kalanı atamam lazım. Kalan. Yani bunu da
+
+625
+02:29:16,051 --> 02:29:17,592
+y'nin değerini de
+
+626
+02:29:18,612 --> 02:29:21,172
+kalan değeriyle güncellemem lazım.
+
+627
+02:29:21,691 --> 02:29:23,211
+Sonrasında ne yapacağım?
+
+628
+02:29:23,211 --> 02:29:25,011
+Kalan ifadesini
+
+629
+02:29:25,272 --> 02:29:26,292
+buradaki k
+
+630
+02:29:26,292 --> 02:29:27,572
+döngü değişkeni ya
+
+631
+02:29:27,572 --> 02:29:32,172
+döngü değişkeni de güncellemem lazım. Nasıl yapacağım? Aynı yukarıdaki işlem.
+
+632
+02:29:32,432 --> 02:29:34,231
+Kalan eşittir
+
+633
+02:29:34,492 --> 02:29:35,511
+x
+
+634
+02:29:35,511 --> 02:29:36,272
+mod
+
+635
+02:29:37,292 --> 02:29:38,072
+y
+
+636
+02:29:38,832 --> 02:29:40,632
+Burada mod da yazabilirsiniz.
+
+637
+02:29:42,451 --> 02:29:44,451
+Şuraya onu yukarıya yazayım.
+
+638
+02:29:44,451 --> 02:29:48,451
+Yüzde operatörünü de kullanabilirsiniz.
+
+639
+02:29:48,451 --> 02:29:54,451
+Hani yüzde operatörü de bütün ortamlarda aslında mod alma operatörü olarak bilinir.
+
+640
+02:29:54,451 --> 02:30:01,451
+Hani bunu da yazabilirsiniz. Fakat ben yine de x mod y yazmanızı daha açık olduğu için tercih ederim.
+
+641
+02:30:03,451 --> 02:30:07,451
+Şöyle bunu da işlemlik tökkenimizin içine alalım.
+
+642
+02:30:10,644 --> 02:30:33,644
+Bakın K döngü değişkenini burada döngünün içinde değiştiriyorum. Sonra bunu yukarı doğru gidip buraya bağlıyorum. Bu aşağı doğru gitmişti. Bu yukarı doğru gitti. Tamam. Ekranı neyi yazdıracağım? Hangi değişkeni yazdırmalıyım?
+
+643
+02:30:39,891 --> 02:31:07,332
+Son buradaki oluşan kalan sıfır zaten. O yüzden K'yı yazdıramam. K'dan bir önceki nerede duruyor? Bir önceki değişken Y. Y'de duruyor. O zaman ben ekrana Y değişkeninin değerini çıktı olarak yazdırmalıyım. Geç oldu. O yüzden çok basit bir örnekle hemen işi test edelim. 36 ve 24.
+
+644
+02:31:09,012 --> 02:31:15,672
+Zaten bunların ortak bölenlerini hemen söyleyebilirsiniz gözle bile. Ama adım adım işletelim bakalım tamam mı?
+
+645
+02:31:15,672 --> 02:31:31,292
+X eşittir 20. Şuraya bir de K yazmam gerekiyor benim. Çünkü K'yı da hesaplıyorum. Evet, 36 ve 24. 36 mod 24 nedir? 12'dir değil mi? Yazdım.
+
+646
+02:31:31,636 --> 02:31:58,576
+Sonra aşağıya geldim, döngü kontrolüne bakıyorum. K eşit mi sıfıra? Hayır değil. 12 eşit değil sıfır. Yani doğru. O zaman döngünün içine girdim. Koşul doğru çünkü. X eşittir Y. Yaptığım şey aslında tam olarak Y değişkenin değerini X'e atamak. 24. İkinci adımda, ikinci işlemde Y eşittir K.
+
+647
+02:31:59,028 --> 02:32:03,628
+K'nın değerini y'ye taşımış olduğum, oniki.
+
+648
+02:32:03,628 --> 02:32:13,628
+Ve K eşittir x mod y, yirmi dört mod oniki. Ne çıktı? Sıfır, değil mi?
+
+649
+02:32:13,628 --> 02:32:22,067
+Döndüm, geldim. K eşit değil mi? Sıfır. Sıfır eşit değil sıfır. Doğru mu?
+
+650
+02:32:22,131 --> 02:32:36,992
+Değil, çünkü eşit. Aha, şart yanlış oldu. Yani bozuldu. O zaman buradan çıktım ve ekrana y değişkenini yazdır diyorum. Ekrana ne yazdıracağım? Bu benim ekranım olsun. Y değişkenin değeri kaç? 12.
+
+651
+02:32:38,835 --> 02:32:58,416
+Ekranın 12 değerini yazdırmış oldum. İşte böyle iki sayının şeyini, OBB'ini bu şekilde bulabilirsiniz. Öpledin algoritmasıdır. Adım adım döngüde bir döngüyle sürekli x mod y işlemini yapıp kalan, yani bir kaydırarak, bir kaydırarak ortak bölenlerin en büyüğünü.
+
+652
+02:33:00,531 --> 02:33:07,531
+gerçek bulma işlemini gerçekleştirebilirsiniz. Şimdi ben bu algoritmada ne demiş oldum aslında? Hani benim bildiğim
+
+653
+02:33:07,531 --> 02:33:28,531
+işte çarpanlarını ayır, işte onları al, bunları bırak, bize ortaokulda öğretilen mantık benim deklarasyonum. Ama ben bunu bilgisayara adım adım, başı belli, sonu belli, durma noktası belli ve her adımda yapacağı işlemlerin neler olduğu belli bir hale getirdim. Yani bir buyruk
+
+654
+02:33:28,531 --> 02:33:30,851
+bu haline getirdim. İşte buradaki
+
+655
+02:33:30,851 --> 02:33:33,092
+diagram ile de ya da
+
+656
+02:33:33,092 --> 02:33:36,131
+öncesinde çizdiğimiz bu diagramla
+
+657
+02:33:36,131 --> 02:33:40,451
+alternatifi ile birlikte ya da burada çizdiğimiz bu diagramla, akış diyagramıyla birlikte
+
+658
+02:33:41,075 --> 02:33:48,036
+Bir problemin çözümü için bir yol önermiş oluyorum. İşte bu yola da ben algoritma adını veriyorum.
+
+659
+02:33:48,036 --> 02:33:57,376
+Algoritmamı göstermek için de bir akış diyagramı kullanıyorum. Bu akış diyagramıyla da algoritmamı ifade etmiş oluyorum.
+
+660
+02:33:57,376 --> 02:34:08,435
+Üçüncü adım için şurada gördüğünüz testleri gerçekleştiriyorum. Algoritmamın doğruluğunu görüyorum. Eğer yanlışsa modifikasyon ya da tamamen değişiklik yapıyorum.
+
+661
+02:34:09,075 --> 02:34:20,236
+şurada yaptık. Şuradaki bölgeyi yeşil alana eklemek ve yeni bir kol yani yanlışsa da başka bir şey yap şeklinde bir davranış eklemek zorunda kaldım.
+
+662
+02:34:21,236 --> 02:34:49,076
+Tamam. Dördüncü adımda da performansını karşılaştırıyorum. İşte burada mesela ben toplamda aralarındaki çarpan sayısı kadar işlem yapmış olacağım. X mod Y sayesinde buradaki sıfıra erişeceğim kesin. O yüzden sonlanmam da garanti. Bu sayede hani bir bölümün kalanın sıfıra kadar gitmesi garanti. Bu sayede aslında
+
+663
+02:34:49,236 --> 02:35:12,076
+OBAP probleminin de yakınsadığını ve çözüme ulaştığını yani mutlaka şuradaki stopa erdiğini ispatlayabiliyorum. Performansımda analizini dördüncü aşamada yaptığımda eğer bu beni tatmin ediyorsa, benim isterlerimi yeterince iyi karşılıyorsa ben bu çözümü bir programlama dilinde gerçekleştirerek çözüm halinde uygulayabiliyorum.
+
+664
+02:35:12,691 --> 02:35:28,031
+Tamam. Sarat beşe gelmeye yaklaşmış durumda. Biraz uzattık ama algoritma yavaş yavaş sindire sindire anlatılması gereken bir konu. Ümit ediyorum. Algoritma nedir?
+
+665
+02:35:28,819 --> 02:35:56,639
+algoritmanın özellikleri nelerdir, neler algoritma olabilir, neler olamaz, algoritma nasıl ifade edilir, ifade ederken nelere dikkat etmeliyiz, hangi bileşenleri kullanıyoruz, bunları nasıl bir araya getiriyoruz ve problemi anlamak, çözüm getirmek, test etmek, analizini yapmak ne demek? Yani tasarım, test ve analiz burada biraz bu şekilde gider algoritma tasarımları. Bunları yapmak ne demektir şeklinde.
+
+666
+02:35:56,819 --> 02:36:09,119
+ki kavramlarımızı sindirmiş olalım. Bunlar üzerinde çalışın. Ben şimdi bu şeyi tekrardan, haftaya devam edeceğiz tabii bu arada.
+
+667
+02:36:10,700 --> 02:36:19,540
+Şuraya geri geleyim. Mesela biz neyi yaptık? Verilen Enten sayının toplamını ve ortalamasını yazdıran ay gürtmeyi çalıştık.
+
+668
+02:36:19,888 --> 02:36:26,968
+Şu altıncıyı yaptık, fx eşittir. Birden n'e 1 bölü x kare fonksiyonunun sonucunu hesaplayıp yazdırdık.
+
+669
+02:36:26,968 --> 02:36:35,008
+Verilen iki sayının x ve y sayılarının obebini bulduk. Şimdi mesela tüm bölenlerini yazdırmadık.
+
+670
+02:36:35,316 --> 02:36:50,736
+Toplama ve çıkarma ile çarpma bölme işlemi gerçeklemedik. Fibonacci sayılarını henüz daha yazdırmadık. Üç tane tam sayının ortanca olanını nasıl buluruz? Yine farklı çözüm yollarıyla bulacağız. Bunları yazdırmadık. Bunları da haftaya devam edeceğiz.
+
+671
+02:36:51,283 --> 02:37:15,023
+Bunun yanına yine dizi mantığı ve dizilerde algoritma, akış diyagramlarında dizileri nasıl kullanırız? Bunları da ilave ederek önümüzdeki haftayı tamamlamış olacağız. Bu iki hafta sonucunda biz artık bir problemin çözüm yolunu diyagram ile ifade etmeyi, akış diyagram ile ifade etmeyi tamamladıktan sonra da artık bunların gerçekleştirme tarafına doğru geçeceğiz.
+
+672
+02:37:15,636 --> 02:37:29,176
+Temel C kullanarak nasıl bunları gerçekliyoruz? İki haftada onlarla yolumuza devam edeceğiz. Tekrar dersin başında söylediğim duyuruyu sonunda bir daha söylemiş olayım.
+
+673
+02:37:29,843 --> 02:37:57,744
+Senatomuzun güncellediği karar gereği vize haftası bir hafta öne çekilmiş durumda. Dokuz yerine sekizinci haftada vize yapılacak. Bu durumda bizim ders planımız ve uygulama, laboratuvar ve ödev planımızda bir değişiklik yapmak zorunda kalacağız. Bu hafta bunları çalışıp size duyuracağız. O yüzden şu anda syllabus kendi kendine biraz değişime uğramak zorunda kaldı. Elimizde olmayan nedenlerden.
+
+674
+02:37:57,843 --> 02:38:01,423
+ya da uymamız gereken kurallardan ötürü.
+
+675
+02:38:01,423 --> 02:38:03,984
+Efendim?
+
+676
+02:38:09,716 --> 02:38:10,716
+Kapatalım.
+
+677
+02:38:10,716 --> 02:38:15,536
+Bir soru mu var? Soru varsa alayım.
+
+678
+02:38:15,536 --> 02:38:19,195
+Buyrun.
+
+679
+02:38:19,195 --> 02:38:23,036
+Buyurun.
+
+680
+02:38:23,036 --> 02:38:26,615
+Yok mu soru?
+
+681
+02:38:26,615 --> 02:38:35,316
+Duyamadım ama yazabilir misin?
+
+682
+02:38:37,940 --> 02:38:39,639
+Hocam ben ne duyamadım valla?
+
+683
+02:38:41,139 --> 02:38:42,200
+Neyi duyamadın?
+
+684
+02:38:50,291 --> 02:38:51,612
+Hocam, kimle konuşuyorsunuz?
+
+685
+02:38:52,752 --> 02:39:02,092
+Ben sınıfa genel olarak sorunuz var mı? Hani sorusu olan varsa söz alsın, sorsun diye bir duyuru yaptım da sanırım yok diye anlıyorum.
+
+686
+02:39:03,112 --> 02:39:04,311
+Yok hocam, olsun zaten.
+
+687
+02:39:05,092 --> 02:39:06,072
+Tamam, peki.
+
+688
+02:39:06,131 --> 02:39:07,272
+Hadi [öğrenci], hadi daha.
+
+689
+02:39:10,012 --> 02:39:10,572
+Tamam.
+
+690
+02:39:17,012 --> 02:39:36,032
+Tamam. Evet arkadaşlar, o zaman bu hafta dersimizin sonuna geldik. Haftaya Cuma günü, tabii pazartesi yine uygulama olacak, onu unutmayalım. Ona katılırsınız. Katılmanız faydalı. Çünkü orada da yine 4-5 farklı örnek akış diyagramı üzerinden problem çözeceğiz.
+
+691
+02:39:36,432 --> 02:39:43,512
+Yine araştırma görevsi arkadaşlarımız bunu devam ettirecekler. Katılmanız tercih sebebi her zaman tavsiye ediyoruz.
+
+692
+02:39:44,412 --> 02:39:48,972
+Kendinize iyi bakın. İyi hafta sonları şimdiden. Görüşmek üzere.

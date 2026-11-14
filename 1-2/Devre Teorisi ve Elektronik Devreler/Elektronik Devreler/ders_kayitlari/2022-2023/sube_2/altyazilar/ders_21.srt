@@ -1,0 +1,1143 @@
+1
+00:02:22,099 --> 00:02:43,139
+Merhaba arkadaşlar, hepinize iyi günler. Evet, vize yaptık geçen hafta. Umarım daha okuyamadık. Biz de doğal olarak çok yoğun bir ders süreci var. O yüzden henüz daha okuma fırsatı olmadı ama umarım hepinizin güzel geçmiştir. Zaten sorular zannetmiyorum ki zordu diyesiniz.
+
+2
+00:02:43,924 --> 00:02:54,264
+Sorular genelde kolay sormaya çalıştık. Zaten online, zaten hani o meşela örnek verecek olursak, sinyal çizme sorusu diyotla alakalı.
+
+3
+00:02:54,264 --> 00:03:00,884
+Onu yani umarım herkes kendi yapmıştır ama pek çok farklı platformlardan belki bunu analizini zaten yapmışsınızdır.
+
+4
+00:03:01,384 --> 00:03:06,264
+O yüzden online çok açıkçası tasvip etmediğim bir sınav sistemi benim de.
+
+5
+00:03:07,283 --> 00:03:24,763
+Nitekim yapılması gerekiyordu. Yaptık ve dediğimiz gibi aralığını zaten biraz düşük tutacağız. Yüzde yirmi diye düşünüyoruz. Ve projede labı ve ödevleri, işte yüzde altmışın geri kalan yüzde kırıklık kısmını onlardan oluşturmayı düşünüyoruz.
+
+6
+00:03:24,763 --> 00:03:33,704
+Evet, yani genelde çok zorlanmayacağınız bir sınavdır diye düşünüyorum. Henüz okuma fırsatımız olmadı ama okuyacağız yakında.
+
+7
+00:03:36,116 --> 00:03:43,936
+Evet, bu hafta arkadaşlar, şu ana kadar diyotu ve transistör değişikli transistörünü anlatmış bulunduk.
+
+8
+00:03:45,716 --> 00:03:59,936
+Yani istediğimiz konular ilk etapta tabii sensörler vesaire tanımlamalar dışında diyot devre elemanına, bu diyotun karakteristini ve aslında diyotun devreye bağlanmaktaki...
+
+9
+00:04:00,240 --> 00:04:14,240
+Yani nasıl bir aksiyon aldığını, sinyalde kırkıcı veyahut da kaydırıcı olarak nasıl bir anlam, genlik kaydırıcısı olarak nasıl bir anlam kattığını analiz etmiştik. Sonra BGT dediğimiz Bipolar Junction Transistor.
+
+10
+00:04:14,783 --> 00:04:18,084
+Dediğimiz, normal bildiğimiz transistör yapısına gelmiştik.
+
+11
+00:04:18,563 --> 00:04:23,504
+Ve bu transistörün çalışma, koefecent bölgeler arasındaki çalışma analizlerini gerçekleştirip,
+
+12
+00:04:24,043 --> 00:04:29,303
+işte üç farklı ortak base olursa, ortak emitter olursa veya ortak kolektör olursa ki,
+
+13
+00:04:29,303 --> 00:04:33,183
+soru çözümlerini yapmıştık vize öncesinde.
+
+14
+00:04:34,564 --> 00:04:38,543
+Bundan sonra bu önümüzdeki iki haftada işleyeceğimiz konular şunlar.
+
+15
+00:04:38,663 --> 00:04:40,764
+Birincisi, JPET'i işleyeceğiz.
+
+16
+00:04:42,196 --> 00:04:57,556
+Bu hafta bu şifreye giriş yapacağız. Sonrasında MOSFET'e, bu hafta yine MOSFET'e de giriş yapacağız. MOSFET'in iki tipi olacak zaten. T ve E, yani D ve E tipi MOSFET'lere geleceğiz. Bu hafta bu kısmı anlatacağız.
+
+17
+00:04:58,115 --> 00:05:08,836
+Haftaya, zaten üç haftamız kaldı herhalde, evet haftaya. Bunlarla aynı BGT'de yaptığımız gibi, işte üç farklı konflikasyon vardı, ortak, B, Y.
+
+18
+00:05:10,708 --> 00:05:37,148
+Ortak emiter, ortak kolektördü. Bunlarla alakalı sorular çözmüştük. Burada da yine bu hafta konu anlatımı olacak. Yani şu kısmı işleyeceğiz. Haftaya bu MOSFET ve JPEG'lerin ikisi için olan bu üç tane ortak, tabii orada base olmayacak, ortak gate olacak, ortak drain olacak.
+
+19
+00:05:39,732 --> 00:05:49,852
+Ve ortak. Sorsu belki yapmayabiliriz ama şu anlık böyle bir çizelim. Bunların diğer ramlarında soru çözümlerine bakacağız.
+
+20
+00:05:50,652 --> 00:06:02,012
+Ondan sonraki haftada bu BGT, Jifet ve MOSFET ile alakalı artık hani finaldan önceki son haftamız oluyor. Son haftasında da soru çözümlerine bakacağız.
+
+21
+00:06:02,899 --> 00:06:17,539
+Böyle bir akış izleyen önümüzde üç hafta var değil mi? Bugün 18'i, 25'i ve 1'i. Doğru. Birimin ikisi mi öyle bir şey? Böyle devam edeceğiz dersimize. Sonuçta konularımız yetişmiş olacak.
+
+22
+00:06:18,995 --> 00:06:46,456
+Evet, FET ve VGT ile alakalı yani FET'e girmek istediğimizde FET'in açılımı Field Effect Transistor demek. Yani bölgesel veya alan etkili transistör diye çeviriyorlar Türkçe'ye. VGT'de biliyorsunuz ki bipolar junction transistördü. Yani içerisinde iki tane bir N2 materyalinin aslında junctionından oluşan depreation'ın alakalı bir transistör yapısıydı. Aslında FET'te de aynı yapı var.
+
+23
+00:06:46,995 --> 00:06:56,335
+Ama burada bazı farklılıklar, bazı benzerlikler var. Birincisi, ikisi de FET'lerde, burada FET'i kastı, Jifet ve MOSFET'in ikisini de kastediyorum.
+
+24
+00:06:57,115 --> 00:07:08,435
+Hatta MOSFET'in daha advanced'ı var, biraz daha alanın daha geniş olan. Onu sadece konsept olarak bahsedeceğiz. Ama hepsi FET diye düşünün.
+
+25
+00:07:08,980 --> 00:07:26,040
+FET ve B-Shit arasındaki en büyük benzerlikler aslında amplifier olması kesimde. Yani yükselteç devresi olarak çalışıyor olması. Bu yükselteçten kastımız şu. Çok cüz'i bir base akımıyla hatırlarsınız. B-JT'lerde yani transistörlerde base akımımız mikroamperler seviyesindeydi.
+
+26
+00:07:27,187 --> 00:07:39,328
+Hatta bunun beta parametrisi 50-100 gibi bir parametreydi. Ve bu parametreyi de çarptığımızda I-C akımı, yani I-C-I-E akımı, o kolonu O ile yansıtabiliyordu.
+
+27
+00:07:39,328 --> 00:07:52,228
+Yani aslında 50 kat, 100 katlık bir ufak base akımı ile yüksek bir akımı kontrol ediyordu. Yani amplifier, bir yükselteş devresi olarak ikisi de kullanılıyordu.
+
+28
+00:07:54,355 --> 00:08:20,816
+Ortak özellikleri var. Yani anahtarlama elemanı olarak kullanıyoruz. Burada da yine aslında anahtarlamadan kastımız, yine transistörün iç yapısını bildiğimiz için, FED'den daha anlatmıyorum, transistörün iç yapısını bildiğimiz için orada sivişikler aslında base akımının tetiklenmesiyle oluşuyordu. Yani kolektör emitter arası akımı kontrol ediyorduk. O yüzden de anahtarlama elemanı olarak kullanabiliyorduk. Aynı şekilde FED'i de kullanabileceğiz.
+
+29
+00:08:21,971 --> 00:08:37,172
+Ve impadans matching dediğimiz aslında yine aynı şeyi getiriyoruz. Beyz akım niye o kadar ufak? Çünkü çok yüksek bir empedansı var. Ve çok yüksek bir empedans yani çok yüksek bir direnç göstermesi yüksek empedanslı devre olduğunu gösteriyor.
+
+30
+00:08:37,600 --> 00:08:56,319
+Bu FED'de de yeterli olacak. Yani aslında FED'de de biz bir şeyin kontrolünü yapacağız ve bu kontrol yapılacak olan kısım çok cüz'i düşük. Yani kontrol ettiğimiz değerlerden azından daha düşük bir değerlerle kontrol etmemizi sağlayacak bazı şeyleri.
+
+31
+00:08:57,240 --> 00:08:58,500
+Farklıklarına gelelim.
+
+32
+00:08:59,028 --> 00:09:15,288
+Birinci farklılık şu, bunu kesinlikle unutmayacağız. BJT'ler akım kontrollü devre elemanlarıydı. Yani IB akımı burada esnistir hatırlarsınız. Base akımı. Yani bu base akımına göre biz bir kontrolden bahsedebiliyorduk.
+
+33
+00:09:15,604 --> 00:09:27,604
+Ama FET'ler gerilim kontrolü devre elemanları. Yani biz FET'ler için kontrol mekanizmamız ve GS diyeceğimiz Gate Source arasındaki gerilim farkı oluşturacak.
+
+34
+00:09:28,604 --> 00:09:35,644
+En büyük farkı bu. Yani transistörler akım kontrolüdür, FET'ler gerilim kontrolüdür.
+
+35
+00:09:37,683 --> 00:10:00,000
+İkinci şey, zaten buradan çıkartılıyor bir tık. FED'lerin yüksek giriş empedansı varken BGT'ler yüksek kazanç sunuyor. İkisini de empedans matching soru kullanılması mümkün ama FED'lerin yüksek dirençli devrelerde, girişlerindeki empedansı...
+
+36
+00:10:00,000 --> 00:10:04,960
+Yüksek olmasından dolayı kullanılabilirken, VGT'ler yüksek kazan sunuyor.
+
+37
+00:10:05,079 --> 00:10:10,079
+Yani yüksek kazan sunmasındaki empedans aslında output'taki empedansı gösteriyor bu.
+
+38
+00:10:10,079 --> 00:10:19,720
+Çıkıştaki empedansı. İkinci farkı da bu. Bir sonraki farkı ise sıcaklıklarla alakalı bir değişim grafiği.
+
+39
+00:10:20,500 --> 00:10:31,940
+Normalde bizim, hatırlarsanız akım VJT'leri anlatırken, mesela bir tane de sensör bahsetmiştim ben. LM35 sıcaklık sensörü diye bir sensör vardı.
+
+40
+00:10:31,940 --> 00:10:40,620
+Ve bu transistör VJT tabanlı bir sensördü. Bu sensör sıcaklıkla alakalı bir akım kontrolü sağlıyor.
+
+41
+00:10:40,839 --> 00:10:47,940
+Yani Iğbe akımı sıcaklıklı değişmesinden dolayı biz akımı kontrol ediyoruz ve o kontrol edilen akımın büyüklüğüne göre...
+
+42
+00:10:48,500 --> 00:11:13,580
+Sıcaklık normalizasyonu gerçekleştiriliyor. Sıcaklık değeri ölçülüyor. Böyle bir entekle. Ama bu enteklenin bir dezavantajı var. Çok yüksek sıcaklarda çalışmıyor. Yani maksimum herhalde datış içinde 35-40 derece veya 45 derece gibi bir derece olması lazım. Çok yüksek sıcaklıklarda çalışmıyor. Nedeni de şu. Transüstörler arkadaşlar yani BJT transüstörler sıcaklıktan çok etkilenir.
+
+43
+00:11:14,004 --> 00:11:35,504
+Ve bozulmaya elverişli hale gelir sıcaklık. Yani sıcaklık o yapıları bozulmaya elverişli hale getirir. Çünkü bunun en büyük şey ise şu zaten. Şunu da biliyoruz. Rezistans dediğimiz direnç etkisi sıcaklıkla alakalı bir etki. Yani bir materyalin rezistif etkisi sıcaklıkla değişir.
+
+44
+00:11:35,988 --> 00:11:58,988
+Burada sıcaklıkta değişen direnç etkisinden dolayı akım da değişir. Bu nedenle iç yapısındaki materyaldeki değişim akımın kontrolsüzlüğe götürür. Böyle olduğu zaman da bilgisayar bozuntuya sokar. Yani sıcaklıktan daha etkili bir sıcaklıklar daha çok etkiliyor bilgisayar.
+
+45
+00:11:59,604 --> 00:12:12,944
+Ama FED'lerde bu durum, yani Integrated Circuit'larda kullanılmasına olanak sağlayacak şekilde, çünkü IC, yani Integrated Circuit'larda sıcaklık başa beda bir problem.
+
+46
+00:12:13,204 --> 00:12:19,784
+Yani mesela şu an CPU'ların içerisi diyoruz ya, üzerine kocaman bir fan taşıyoruz bilgisayarın CPU'suna.
+
+47
+00:12:20,371 --> 00:12:43,731
+İşte o fan aslında tek bir işleri var. O CPU'yu soğutmak. Kocaman, ufacık bir CPU işlemcisine kocaman bir fan. Hatta sıvı soğutmalar, bilmem ne soğutmalar. Bir ton yeni sistemler tasarlanıyor. Neyi? Daha iyi soğutabilmek için. Çünkü oradaki transistörler sıcaklıktan çok etkilenen transistörler. FET yapısı ise normalde o kadar soğuğa gerekmiyor.
+
+48
+00:12:44,019 --> 00:13:05,019
+Ama FET'in sıkıntısı dediğimiz gibi voltaj kontrolü olması. Ve voltajların şöyle bir sıkıntısı var. Statik enerjide çok etkileniyor. Bu da aslında dördüncü farkı oluşturuyor. Statik enerji dediğimizde mesela iki tane FET'i yan yana koydunuz. Tabii bu iki tane FET de olmaz ama orada bir...
+
+49
+00:13:05,235 --> 00:13:15,436
+Orada bir manyetik alan, manyetizm oluşuyor ve bu statik enerji oluşturuyor. Bu da yandaki FET'in birbiri içerisindeki o kontrolü sehteye uğratıyor esasında.
+
+50
+00:13:15,576 --> 00:13:28,836
+FET'i o yüzden genelde IC'lerde kullanırlar ama IC'ler çok böyle işte normal bildiğimiz CP gibi 2 milyar tane zınar süstörü bir ufacık yere sokmak gibi değil.
+
+51
+00:13:33,235 --> 00:13:53,235
+İntegreli Sörkütler'de FET'ler daha sıcaklıktan daha az etkilendikleri için FET'ler daha çok kullanılır. Ama tabii ki de çok çok sıkışık bir kılıf içerisinde FET'ler çok daha fazla statik enerjiden etkilenecekleri için genelde kullanılmaz.
+
+52
+00:13:56,148 --> 00:14:21,528
+Evet, burada dediğimiz gibi çeşitleri J-FET, Junction-FET demek. Yani aslında BGT'deki Junction'ın J'si. Burada da aynı anlamı verecek. MOSFET, Metal Oxid Semiconductor-FET demek. MOS kısmı oradan geliyor. Bunların detaylarının iç yapısına bakacağız zaten. D-MOSFET, Deflation MOSFET, E-MOSFET de Enhancement MOSFET, MOSFET anlamlarına gelecek.
+
+53
+00:14:25,683 --> 00:14:42,064
+JVT'nin iş yapısına bakalım. Yine aynı şekilde iki tipimiz var. N-channel ve P-channel. Aynı B-channel'in de, transatörde olduğu gibi. B-channel'in içerisinde hatırlarsanız böyle göstermiştik. Tek bir farkı yok. Tek bir farkımız şu.
+
+54
+00:14:42,543 --> 00:14:56,584
+Normalde burası base olduğu yerde gate oluyor. Drain ve source dediğimiz yerlerde collector ve emitter kısımlarını gösteriyor. Burada end channel yine aynı şekilde aradaki iki.
+
+55
+00:14:57,008 --> 00:15:18,368
+Terminal yani drain ve sorsu birbirine bağlayan kanala ve bu kanalın hangisi ağırlıklandırılmış bir doput katkılandırılmış materyal varsa, bu da mesela şu an elektronların yükü daha fazla olduğundan n-channel denmiş, proton veya pozitif yüklerin daha fazla olduğu için de pi materyalin olduğu kısımlar diyoruz.
+
+56
+00:15:18,368 --> 00:15:25,008
+Burada yine aynı şekilde bizim BGT'de anlattığımız gibi bir denge durumu var. Buradaki P'ler ile...
+
+57
+00:15:25,008 --> 00:15:45,067
+Bu kanal içerisindeki neylerin bir denge olduğu senaryoda burada oluşan bölgeye biz yine depression bölgesi diyeceğiz. Depression region diyoruz. Dengede duran bölge. Ve bütün anahtarlama yine transistörde olduğu gibi buradaki depression bölgesinin değişimine göre olacak.
+
+58
+00:15:51,668 --> 00:16:15,607
+Negatif yüklü olduğu, P-Channel'da ortadaki yani Drainage Source'un pozitif yüklü olduğunu söylüyoruz. P-Channel bir transistörde, bir jifette, gate'in negatif olması, yani elektronlarının daha yüksek olduğunu, N-Channel bir jifette, gate'in pozitif yüklerinin daha fazla olduğunu söyleyebiliriz.
+
+59
+00:16:18,899 --> 00:16:32,139
+Başka bu da başka. Omik kontak dediğimiz çok da önemli değil. Burada bir rezidif etkiye sahip, yüksek empedans dedik ya, bu empedans sağlayan bir omik materyal var. Çok da önemli değil.
+
+60
+00:16:34,707 --> 00:16:59,587
+Bunu metaforlaştırırsak, drain source ve base, gate uçlarını, aslında bir musluk, akan su musluğu örneğe verilebilir. Source kaynak zaten Türkçesi. Drain de sömürmek veya ne diyorlar, özümsemek mi oluyor, sömürmek mi oluyor? Böyle bir Türkçesi var. Yani suyun akıp gittiği yere de drain derler mesela, lavabolarda.
+
+61
+00:17:00,148 --> 00:17:26,108
+İşte MOSFET'te Source, kaynak diyebiliriz. İşte Gate dediğimiz kısım aslında bizim kontrolü sağlayacağımız. Aynı bir şifre transnörde IB akımı neyse burada da Gate'teki ama bu sefer akım değil gerilim bizi etkilendirecek. Ne yapacak bu gerilim Gate'teki? Source'tan drain arasındaki bu akıntının hızını, debisini değiştirecek ve miktarını tabii ki de.
+
+62
+00:17:31,155 --> 00:17:40,715
+Üç farklı operasyon modu var J-PET'in. Birincisi şu, Gate Source arasındaki potansiyel farkın 0 olduğu senaryo.
+
+63
+00:17:41,036 --> 00:17:51,795
+Gate Source arasındaki potansiyel farkın negatif olduğu senaryo ama bu negatif olduğu senaryo da olabilir.
+
+64
+00:17:51,996 --> 00:17:57,036
+Bu tamamen J-PET'in P-Type veya N-Type olduğuna göre değişecek.
+
+65
+00:17:59,220 --> 00:18:03,220
+2'ye 2 pozitif olacak. Oraya negatif bir...
+
+66
+00:18:03,231 --> 00:18:17,511
+Vermemiz lazım. P-Channel ise, bunları değineceğiz birazdan. Gate'in negatif olacak. O zaman burası sıfırdan büyük değerler için bir analiz yapacağız.
+
+67
+00:18:17,672 --> 00:18:23,711
+Yani bu tamamen şu ikinci kısım N-Channel mu P-Channel mu olduğuna göre değişkenlik gösterecek.
+
+68
+00:18:23,711 --> 00:18:28,411
+Ya sıfırdan ufak olması ya da sıfırdan büyük olması senaryolarını analiz edeceğiz.
+
+69
+00:18:28,991 --> 00:18:31,072
+Ve en sonunda da voltaj kontrolü.
+
+70
+00:18:31,231 --> 00:18:47,331
+Branche olarak kullanabiliyoruz. Ona da değineceğiz. Bu üç tane operasyona bakacağız nasıl yaptığımız. Birincisi şu. VGS yani Gate ile Source arasındaki potansiyel farkın sıfır olduğu senaryo.
+
+71
+00:18:49,044 --> 00:19:09,244
+Yani geyitte herhangi bir gerilim vermediğim senaryo. Çünkü sos zaten akıp gidecek ya, gerideye bağlı. Yani geyitte herhangi bir polarizasyon vermiyor. Ve buradaki pozitif yükler duruyor. Yani herhangi bir yere hareket etmiyor.
+
+72
+00:19:09,715 --> 00:19:18,335
+Öteki taraftan ise Drain Source arasına bir Reos dalı, yani ayarlı bir girilim kaynağı koyduğumuzu düşünelim.
+
+73
+00:19:19,443 --> 00:19:31,523
+Şimdi ben eğer ki drain ucuna artı yükleri, yani akımı böyle aktaracak şekilde artı potansiyel, artı ucuna bağlarsam buradaki gerilim kaynağını, ne yapması beklenir?
+
+74
+00:19:31,724 --> 00:19:39,604
+Buradaki elektronları, yani içerideki end channel'daki elektronların buradaki artı yüküne doğru hareket etmesi lazım.
+
+75
+00:19:39,604 --> 00:19:46,844
+E şunu söylemiştik biz, devrede mi söyledik hatırlamıyorum ama elektronların hareketinin ters yönü bir akım oluşur.
+
+76
+00:19:47,124 --> 00:19:58,124
+Genelde. Yani akımın oluşma yönü böyle. I-D akımı, I-S'ye böyle oluşuyor. Şurada çizmişiz. Neden? Çünkü aslında elektronlar buradaki pozitif yükle bağlanmaya çalışıyor.
+
+77
+00:19:59,504 --> 00:20:11,604
+Buradaki içerisindeki en çanırdaki elektronların bir süre sonra normalde bir şey bağlamadığımızdaki denge durumunda olan deflation region dengesiz duruma gelecek.
+
+78
+00:20:12,243 --> 00:20:27,763
+Ve dengesizlikten dolayı buradaki bölge, yani debdeşim bölgesi artacak. Ve arttığı için de buradaki ıd akımı da artacak. Çünkü buranın rezidans etkisi artıyor.
+
+79
+00:20:29,044 --> 00:20:36,763
+Tahti ne zamana kadar? Buradaki vd de öyle bir değere gelecek ki.
+
+80
+00:20:37,299 --> 00:20:42,419
+Bizim artık burada sızıntı akımı dediğimiz bir IDSS akımı geçecek.
+
+81
+00:20:44,219 --> 00:20:58,939
+Şöyle bir grafiğimiz var. Evet. Yani VDSI, Drain Source arasını, burada artık sızıntı olabilecek kadar, yani artık depression regionlar burun buruna gelmiş, artık sıkışmış.
+
+82
+00:20:59,476 --> 00:21:25,696
+Buradan geçecek olan bu akım çok güçlü bir akım olacak. Çünkü burası rezidif etkisi yüksek bir şey olacak. Gerilim artıyor, rezidans da daha fazla artıyor, ıd daha işte ona oranla artmış olacak. Böyle olunca bizim şu pitch off dediğimiz bir senaryo oluşuyor. Pitch off senaryosunda buradaki gerilime biz pitch gerilime diyoruz. Pinch gerilime veya işte.
+
+83
+00:21:26,644 --> 00:21:38,683
+Vp gerilimine eşit oluyor. Ve bu Vp gerilimi eşit olduğundaki I'de de, yani şuradan geçen akımada I'dss akımı diyoruz.
+
+84
+00:21:40,464 --> 00:21:47,944
+Tamam mı? Bu birinci analizimiz. Bunun grafiğini de çizelim. Normalde sıfır. Burası I'de grafiği.
+
+85
+00:21:49,715 --> 00:21:56,276
+Bu tarafta VDS, yani drain source arasındaki gerilimin artma, pozitif polarma bu fark ettiyseniz.
+
+86
+00:21:57,076 --> 00:22:07,516
+Ve burası da VGS'nin sıfır olduğu senaryo. Yani gate source arası sıfır, drain source arasına pozitif bir polarma veriyorum.
+
+87
+00:22:07,516 --> 00:22:12,816
+Yani drain'e artı, source'a negatif çünkü source'un zaten öteki ucu gene'de.
+
+88
+00:22:14,355 --> 00:22:17,056
+Öteki taraftan ID akımını gözlemliyorum.
+
+89
+00:22:17,460 --> 00:22:33,000
+Normalde VP'ye kadar, yani Pinch durumuna kadar bizim ID akımımız artıyor. Çünkü oradaki Depthation Region orayı sıkıyor. Rezistans etkisi gösteriyor. Ve böylelikle ID artmış oluyor.
+
+90
+00:22:33,000 --> 00:22:44,980
+ID'yi arttırdığımız zaman bir noktada artık Depthation Region bölgesi tamamına yakın kapanıyor. Yani sonsuz direnci doğru gidiyor.
+
+91
+00:22:45,971 --> 00:22:54,011
+Öyle olunca ıdss dediğimiz bir gerilime eşit oluyor. Daha doğrusu o anki değeri ıd değerine ıdss diyoruz.
+
+92
+00:22:55,471 --> 00:23:04,351
+ıdss saturation gerilimi demek ayrıca. Saturation noktasına geldiğini söyleyerek ıd ıdss'ye eşitliyoruz.
+
+93
+00:23:04,351 --> 00:23:12,611
+Pinch gerilimi boyutunda. Bundan sonra ben vds'yi arttırsam da artık kapanmayacağı için o ara.
+
+94
+00:23:13,008 --> 00:23:20,048
+Artık olabilecek maksimum pinçe kadar geldi. Kapanmayacağı için I'de'nin artımı söz konusu olmuyor.
+
+95
+00:23:22,148 --> 00:23:30,288
+Yani aslında biz tekrar edelim, VGS sıfırken, ki bu aslında VGS'yi sıfır almak demek bizim kontrolümüzde,
+
+96
+00:23:30,968 --> 00:23:37,268
+gerilimi sıfırlayarak VDS ile de başka bir gerilimle I'de akımını kontrol ettik.
+
+97
+00:23:38,568 --> 00:23:39,448
+Tamam.
+
+98
+00:23:42,067 --> 00:23:56,867
+Şu kısmı biz, bakayım onu çizmiş miydik? Çizmemiş ama şu kısmı omik. Yani omik region diyoruz. Şurada bahsetmişiz ama belki bir sonraki çizim de gelecek. Omik yani direncin rezidif etkinin arttığı bölge diyoruz.
+
+99
+00:24:01,011 --> 00:24:13,471
+Şimdi VGS'ye negatif bir polarma verirsek ama neydi? N-Channel 1 Jifet'te. Yani burayı sıfırlamazsak. İkinci durumu anlatıyorum. Hani üç durum vardır ya. İkinci durumda.
+
+100
+00:24:14,291 --> 00:24:36,691
+VGS'yi negatif bir polarma verilirse, negatif polarmayı şöyle anlayın. VGS'yi ben artı eksi olarak görürken, yani VG probları düşünün, işte o serskobun veya ölçü aletinin, GT artı S'ye eksi probunu bağladığımda negatif bir gelirim ölçtüğüm senaryoyu gösteriyorum. Tamam mı? Negatif gelirim.
+
+101
+00:24:38,324 --> 00:24:44,284
+İşte bu n-channel olduğu için gate'te p-type var değil mi? Artı yüklerin fazla olduğu senaryo var.
+
+102
+00:24:44,284 --> 00:24:58,564
+Şimdi, VDS'yi, şu an VDS'yi düşünmeyelim. Bu durumda bile, zaten bunu negatiflediğimde, buradaki pozitif yükler, buradaki negatif yükle beraber aslında tepkili işin rejini arttıracak.
+
+103
+00:24:59,412 --> 00:25:24,632
+Hiç burada VTS'yi düşünmesem bile, Drain Source arasındaki gerilimi düşünmesem bile bu kısma ben bir negatifleme, yani negatif bir kutuplaşmayla bir gerilim verdiğimde, VGS'yi negatif boyutta arttırdığımda diyelim, eksi bir, eksi iki, eksi üç, bu arttırma miktarına göre buradaki deflation razını yine arttıracağım. Çünkü dengeyi bozuyorum.
+
+104
+00:25:26,579 --> 00:25:38,200
+Veleki ben VDS'yi de artı olarak verdim. Yani buradaki nötrüler de bu yanına gidiyor. O zaman deminki örnekteki gibi burada daha hızlı bir IDSS'ye erişme söz konusu.
+
+105
+00:25:39,200 --> 00:25:47,279
+ID akımının IDSS dediğimiz pinch noktasına erişmesi daha hızlı olacak. Yani ben VGS'ye...
+
+106
+00:25:47,551 --> 00:25:59,971
+En çanık için Gate'teki polarizasyonun tersi bir gerilim verdiğimde, mesela burası P-type olsaydı, burası N olsaydı, o zaman ben buraya artı bir gerilim vermem lazımdı.
+
+107
+00:25:59,971 --> 00:26:10,551
+Şöyle, neden? Çünkü ben buradaki deple işinle aslında oynayarak ben buradaki gerilimin akımın şiddetini değiştirebiliyorum.
+
+108
+00:26:12,307 --> 00:26:29,907
+Yani burada mesela N-Channel'da P-Type olduğu için negatif vermişiz. P-Channel'da N olacağı için Gate'de o zaman pozitif verecek. O yüzden diyorum, ikinci hani Operation karakteristini analiz ederken, ikinci analizde bu channel'ın ne olduğu önemli.
+
+109
+00:26:36,435 --> 00:26:45,875
+Biz buraya artı eksi veriyoruz ya, burası sıfır. Şimdi bu n-channel için. P-channel'da ise eksi artı vermemiz lazım ki bu depresional açılsın.
+
+110
+00:26:47,816 --> 00:26:57,975
+M-T-T'yi anladıysak zaten sıkıntı yok. Yani bu grafik şu an n-channel için. P-channel için bunun şu tarafında oluşmasını beklerim bu grafiğinde.
+
+111
+00:26:57,975 --> 00:27:02,195
+Açtım. Pardon arkadaşlar.
+
+112
+00:27:05,203 --> 00:27:23,043
+Evet. VGS aslında körüklüyor. Neyi körüklüyor? Deplation region'ın daha hızlı bir şekilde pinch noktasına ulaşmasını körüklüyor. Peki bunu grafiğinde çizelim yine. Yine bu bir n-channel için çizilmiş.
+
+113
+00:27:23,508 --> 00:27:47,647
+Evet, o mikroregion bu kısmı belirtmişiz burada. Ne dedik? O şeyde, en çanılda VDS'yi pozitif bir değere getirirken bir noktadan sonra pinç olacak, artık kapanacak devreşim bölgesi, VGS sıvı için anlatıyorum tekrardan, kapanacak ve o noktayı VGS için o gerilime ben pinç gerilimi diyeceğim.
+
+114
+00:27:48,372 --> 00:27:53,292
+Ayrıca o gerilim de geçen akıma da öde ses edeceğim.
+
+115
+00:27:54,632 --> 00:27:55,491
+Demiştik.
+
+116
+00:27:57,172 --> 00:28:18,912
+Peki VGS'yi negatif, sonuçta N-Channel'ın Gate'i pozitif olacak ve Gate'i pozitif olan bir jifrede ben GS'yi negatif polarizasyonlamam lazım. Polarizasyonu negatif yaparsam yani eksi bir, eksi iki gibi gerilimler verirsem buradaki ID'nin IDSS'ye erişme seviyesi düşüyor.
+
+117
+00:28:20,276 --> 00:28:30,715
+Çünkü aslında körüklemiş oluyorum daha erkenden, ID, ID, SS yani daha düşük akımlarda o pinçe erişmiş oluyorum.
+
+118
+00:28:32,135 --> 00:28:41,096
+Ve burada VGS'yi negatiflere düşürmek benim için ID'nin, ID, SS'nin yani maksimum oluşabileceği noktayı düşürmüş oluyor.
+
+119
+00:28:42,096 --> 00:28:45,016
+Çünkü devreşini iki taraftan baskılamış oluyoruz.
+
+120
+00:28:47,667 --> 00:29:00,327
+Bir değerimiz daha var burada. VGS'yi öyle bir değere getireceğim ki, mesela burada eksi 4 volta getirmişiz. Artık I'd, I'd, S's'e eşit ve sıfır.
+
+121
+00:29:01,708 --> 00:29:09,827
+İşte bu durumda biz buna da pinch noktası diyoruz. Yani VGS'nin oradaki akımı sıfırladığı nokta.
+
+122
+00:29:10,291 --> 00:29:22,352
+Bu da bizim bir parametrimiz olabilir. Hedef sorularda şu, bu grafiği oluşturabilmek veya bu grafik üzerinden anlamlaştırılır. Soruları anlatacağız, sorularda gösterilmez.
+
+123
+00:29:24,564 --> 00:29:44,944
+Bakayım burada başka bahsedeceğimiz bir şey var mı? Bir breakdown durumu oluşabilir cihetlerde. O da şöyle. Mesela VTS dediğimiz, drain source arasında bir gerilim veriyoruz değil mi? Bu gerilimin boyutları gördüğünüz gibi yüksek. Yani VGS gibi ufak boyutlar değil. İşte bunu çok arttırırsak.
+
+124
+00:29:45,200 --> 00:29:56,940
+Yani işte 100 volt vesaire yaptırırsak, bunun karakteristiğinde normalde data şeklinde, verikator oldu, jifet'in, İngiliz jifet'in, VTS'nin alabileceği maksimum değerli yazar.
+
+125
+00:29:56,940 --> 00:30:05,280
+Eğer ki VTS max'tan daha büyük bir VTS biriyedirse, bu jifet zaten bozulacaktır, rektana gidecektir.
+
+126
+00:30:07,040 --> 00:30:08,360
+Ona dikkat etmek gerekiyor.
+
+127
+00:30:15,124 --> 00:30:18,084
+Evet, şuraya da omik region diyoruz demiştim.
+
+128
+00:30:20,644 --> 00:30:28,923
+Pinçova erişmeden önceki grafiğin bölgesine omik, Pinçova eriştikten sonra zaten buradaki saturation buradan geliyor.
+
+129
+00:30:29,084 --> 00:30:33,503
+Saturation bölgesine soktuğumda ıd ıdss'ye eşittir diyeceğim.
+
+130
+00:30:35,220 --> 00:31:02,720
+Formülü aslında, burada omik rejinin etkisi ya, bundaki direncin rezidif etkinin ne olacağını hesaplayabiliriz. O da şöyle, R0 dediğimiz bunun normaldeki iç direnciyle alakalı bir durum. Bunu tabii soruda vermesi lazım. O anki omik rejinin de ne kadarlık bir dirence tekabül geliyor bu orijinaldeki verilen direnç değeri?
+
+131
+00:31:03,220 --> 00:31:08,380
+Bunu aslında şu tablodaki VGS ve VP değerlerinden çıkartılabilir.
+
+132
+00:31:08,380 --> 00:31:14,380
+Mesela şurası VGS-1 için...
+
+133
+00:31:15,380 --> 00:31:29,860
+Eksi Vp'si de, şurası 4 herhalde, 4 olarak düşünelim. Yani eksi 1 bölü 4, 1 eksi 1 bölü 4'ten karesi şeklinde şu R10'u arttırılmış bir şekilde Rd'sini görebiliriz.
+
+134
+00:31:30,060 --> 00:31:39,220
+Çünkü 1 bölü şeklinde gelecek. Bu ters döndüğünde Vp daha büyük olduğundan R0'ı çarpacak ve omik region yani Rd artmış olacak.
+
+135
+00:31:39,796 --> 00:31:51,816
+RD'nin artması da zaten ID'nin artmasına neden olan omik rejyanı sokan parametre oluyor zaten. Yani neden ID'ye artıyor bu durum olduğunda? Aslında RD'nin artmasından dolayı.
+
+136
+00:31:55,347 --> 00:32:03,367
+P-Channel için analiz ettiğimizde dediğimiz gibi P-Channel ortasının P olma metalinden dolayı P-Channel diyoruz.
+
+137
+00:32:03,708 --> 00:32:05,963
+Ve bu elektronlar böyle bunu...
+
+138
+00:32:06,099 --> 00:32:26,599
+Sonuçta nötrleştiriyor. Ters tarafa elektron böyle hareket ediyorsa akım da tam öde yönü yani bu tarafa akım hareket edecek. Ve bizim için bu P-channel'ın içerisindeki eşitliği sağlayan bu işte geyitteki parametre, materyal ile eşitliği sağlayan depreşini bozmuş olacak.
+
+139
+00:32:26,599 --> 00:32:34,000
+Öteki taraftan hatta biz işte N-type yani normalde geyitte N-type bir materyal var P-channel olduğu için.
+
+140
+00:32:34,099 --> 00:32:40,039
+Buraya da normalde artılı bir artı VGS verdiğimizde bu depresiyonu daha da arttırıyoruz.
+
+141
+00:32:40,039 --> 00:32:47,679
+Ve bu ölelikle ID'nin IDSS'ye erişmesi daha hızlı bir şekilde oluyor. Daha düşük ID değerlerinde gerçekleşmiş oluyor.
+
+142
+00:32:49,319 --> 00:32:53,659
+Bunun da grafiğini çizersek, VDS burada eksi değerler gördüğümüz gibi.
+
+143
+00:32:54,579 --> 00:33:11,499
+VGS'ler burada artı, VDS'ler eksi ve bunun da işte şuralarda muhtemelen herhalde eksi 5 gibi değerlerde Pi çopu oluşmuş. 5,5 gibi değerlerde de herhalde VDS'si mevcut.
+
+144
+00:33:14,708 --> 00:33:23,807
+Burada da yine aynı kayıt da var. Bir breakdown'la sokabiliriz. Bozulmaya gidebilir. Eğer ki VDS'yi data şeklinden fazla verirsek.
+
+145
+00:33:27,731 --> 00:33:39,751
+Şu kısmı Voltage Control Resistor kısmı için bu direnç. Hani üçüncü operasyon da buydu. Yani gerilimle biz direnci nasıl değiştiriyoruz? Aslında bu formülün formülizasyonu değişiyor.
+
+146
+00:33:41,332 --> 00:33:59,692
+Dediğimiz gibi bu R0, most jifet'in içerisindeki iç direnç ve bu iç direnç aslında bizim drain source arasındaki şu direnci oynattırıyor. Neye göre? VGS ve VP'ye göre. Yani VP zaten Pitchoff gerilimi. Bu tanımlı. Her jifet için bellidir bu Pitchoff gerilimi.
+
+147
+00:34:09,331 --> 00:34:11,871
+Önce kontrol etmiş oluyoruz aslında.
+
+148
+00:34:15,795 --> 00:34:37,555
+En çenalın sembolü, normalde hep BGT'lerde de anlattık, ok ne tipi kanala bakacak şekilde olur. Yani okunucu böyleyse, bunun ne tipi bir kanal olduğunu söyleyeceğiz. Eğer P tipi bir kanalsa, bu okunucu ters yöne olacak diyoruz.
+
+149
+00:34:43,476 --> 00:34:55,976
+Evet, J-PET'in transfer karakteristiğinin en çok kullanacağımız formülü bu. Yani neyi gösteriyor bu formül? Aslında bizim bir tanımlı EDSS'imiz var. Data sheet karakteristiğinde belirlenmiş.
+
+150
+00:34:55,976 --> 00:35:09,275
+Ve elimizdeki verdiğimiz gate source arasındaki gerilime göre bunlar zaten şeyden elde edilen karakteristikler. Yani mesela VGS'yi 0 aldığımızda VDS 0 iken
+
+151
+00:35:09,876 --> 00:35:34,916
+Ne olacağını biliyoruz. Yani bu ikisi, şu ıdss ile vp değerleri bir katalogda var. Vgs'de o an işte devreye bağladığımızdaki gatesource arasındaki gerilim farkına göre ben bir ıd akımını hesaplıyorum. Yani burada şu ilişki gatesource arasındaki verdiğim gerilime göre ıd alma ilişkisi mevcut. Yani gerilim kontrolü.
+
+152
+00:35:35,311 --> 00:35:39,872
+Bir yapıya sokmuş oluyoruz. Yani normalde biz biliyorsunuz şeyde BGT'de.
+
+153
+00:35:40,659 --> 00:36:04,679
+IB akımı üzerinden beta IB ile çarpıyorduk. Bir beta parametremiz vardı. Ve bu beta parametresi üzerinden IB akımı ile çarptığımızda IC'yi ve oradan da E'yi yorumlayabiliyorduk. Burada da VGS üzerinden bir anlam var. Şimdi BGT'de biraz daha basitti bu. Çünkü betayı direkt çarptığında da bir anlam ihtiva ediyordu. Burada iki farklı parametre daha bakıyor.
+
+154
+00:36:08,659 --> 00:36:17,340
+O cihmetin nasıl olduğu bu IDSS ve VP değerlerinden elde ediliyor. O karakteristik yani bir beta gibi bir parametre değil bu.
+
+155
+00:36:22,164 --> 00:36:30,043
+Evet, mesela Jifet'in şöyle bir transfer körlüğü verilmiş olsun. Yani katılımda böyle bir şey var mesela.
+
+156
+00:36:30,043 --> 00:36:40,644
+Burada, biz hani formülümüz şurada hatırlarsanız, ıdss bir eksi vgs bölü vp dedik değil mi?
+
+157
+00:36:41,104 --> 00:36:45,264
+Şimdi burada ıdss'nin ne olduğu aslında gözüküyor mesela. 8.
+
+158
+00:36:46,516 --> 00:36:48,576
+1 eksi. İşte VGS'i
+
+159
+00:36:48,576 --> 00:36:50,276
+aradığımız bir değer olabilir. Veya
+
+160
+00:36:50,276 --> 00:36:52,076
+buradakileri de direkt deneyebilirsiniz.
+
+161
+00:36:52,276 --> 00:36:54,816
+Eksi 1 bölü. VP yaparsak
+
+162
+00:36:54,816 --> 00:36:56,036
+VPS neymiş?
+
+163
+00:36:57,215 --> 00:36:58,476
+VPS'i de herhalde
+
+164
+00:36:58,476 --> 00:37:00,755
+şurada yazıyor. Eksi 4'müş.
+
+165
+00:37:02,695 --> 00:37:04,496
+Bunu yaparsak zaten şunun
+
+166
+00:37:04,496 --> 00:37:06,516
+tekabülüne gelen şu değeri
+
+167
+00:37:07,027 --> 00:37:24,827
+Biz VGS-IDSS grafiğinde işaretleme usulüyle bunu çizebiliriz. Yani şunu demeye çalışıyoruz. Sağ taraf karakteristik körlü, sol taraf ise ID ile VGS arasındaki transfer eğrisi.
+
+168
+00:37:28,179 --> 00:37:47,639
+Şu maksimum 8'in olduğu senaryoda yani ı, d, s, s, 8 olduğunda zaten v, d, s'nin 0 olduğunu çıkartacağız. Yani şurada v, g, s veya şuradan anlatalım. Mesela burada v formülümüz buydu. V, g, s, 0 verirsek.
+
+169
+00:37:48,275 --> 00:38:02,915
+Sıfır koyduğumuzda ıd eşitir ıdss oluyor değil mi? Yani bizim bu tablomuzda soldaki tabloda vgs sıfırken ıd'nin değerini direkt buraya işaretlem usulüyle bulabiliriz.
+
+170
+00:38:03,572 --> 00:38:22,412
+İkinci adımda ise VGS-VP iken, yani şuraya VP, bu VP ve ÖDSS zaten dataşitlerinde var. VGS-VP iken burası birler gidecek, bir eksi bir sıfır kalacak ve burası aslında ÖD akımının sıfır olduğunu gösterecek. Bu da benim için...
+
+171
+00:38:22,612 --> 00:38:49,492
+Şuradaki noktayı çizmemi sağlıyor. O aradaki diğer noktaları birkaç farklı VGS için aslında deneme yanılmaya da buluyoruz. Bunun da bir kısa yolu var. O da şöyle. Eğer ki ben VGS'yi VP'nin yarısı alırsam, bu aslında IDSS'nin dörtte birini almış oluyor. Neden? Çünkü burası 1 bölü 2 veya VP bölü 2 yazalım mesela.
+
+172
+00:38:50,452 --> 00:39:14,652
+VGS yerine. Burada VP var. Ters çevirdiğimizde buradan bize IDSS'nin dörtte biri gelecek değil mi? Öyle olunca da aslında kısa kestirme yolları yani. Yani şunu diyorum. Dataşiple bir VGS, ya VP parametresi belli. İşte VP X değeri demiş. IDSS'de Y denmiş.
+
+173
+00:39:15,092 --> 00:39:21,971
+Bunun grafini çizeceğim vakit ilk başta ben ıd s veya ıd diyelim buraya.
+
+174
+00:39:23,491 --> 00:39:30,672
+Buraya da vgs diyoruz değil mi? Şimdi bu en maksimum alacağı şey zaten data şeklinde belirtilen y diyelim.
+
+175
+00:39:31,315 --> 00:39:47,535
+Bunun ötesine geçemiyor. Tahtaki cifet olduğu için. Tabi i type de geçebilecek ama biz bunu alacağız ilk etapta. VGS'nin de minimum inebileceğin, arttırabileceğin değer VPD. Bu da data sheet ile x diye biletilmiş mesela.
+
+176
+00:39:54,452 --> 00:40:12,791
+Şurası VGS eğilisi, şurası da ED eğilisi. Bu ikisi arasında nasıl hareket edeceğini esasında bizim bulup bu grafiği çizmemiz lazım. Çünkü bu bir transfer eğilisi. Yani nasıl bu transfer, bu jifetin nasıl çalıştığını gösterecek bize. Bu ikisi data-stikkatolumda var.
+
+177
+00:40:13,251 --> 00:40:20,731
+Ve şunu da biliyorum ben, EDSS'den, bu bir jifet olduğu için, EDSS'den daha fazla gidemeyecek yukarıya.
+
+178
+00:40:21,108 --> 00:40:44,188
+VP'den de VGS daha aşağı inemeyecek. İnmesi durumunda zaten sıfırda kilitlenecek. Yani ID akımı oluşmayacak. Tamam. Bu aradaki diğer değerler içinde bu formülü kullanarak yazabilirim. Ama bir kestirmeler var dediğim şey o aslında. Mesela VP bölü 2 değeri formülüze edersek burada.
+
+179
+00:40:55,891 --> 00:41:14,871
+Ters çevirdim. Vp'ler gitti. 1 bölü Vp'den Vp'ler gitti. 1 bölü 2. 2 kere 1 2. Eksi 1. 1 bölü 2. Ama bunun tabii bir de karesi var. Şuraya yazmamışız. Burası 1 bölü 4 gelecek yani. O da ıd eşittir. ıdss bölü 4 eşit oluyor.
+
+180
+00:41:23,219 --> 00:41:25,219
+Şurada x diyelim o zaman.
+
+181
+00:41:28,219 --> 00:41:31,219
+y bölü 4. De eşitliği var.
+
+182
+00:41:31,219 --> 00:41:37,219
+Veya bakalım 4 vp bölü 4'ünü alsak.
+
+183
+00:41:37,219 --> 00:41:45,219
+4 bölü vp, 1 bölü 4, 4 kere 1, 4, 3 bölü 4, 9 bölü 16.
+
+184
+00:41:45,219 --> 00:41:49,099
+Herhalde o da %33 yapacak ama.
+
+185
+00:41:49,427 --> 00:41:51,588
+Mesela öyle bir durum da olabilir.
+
+186
+00:41:53,467 --> 00:41:55,527
+Şöyle yapabiliriz.
+
+187
+00:41:57,427 --> 00:41:59,228
+Yani bir parametremiz daha var.
+
+188
+00:41:59,387 --> 00:42:01,288
+Vp bölü 3 diyeceğim.
+
+189
+00:42:01,507 --> 00:42:02,887
+Yani x bölü 3 diyeceğim.
+
+190
+00:42:04,168 --> 00:42:06,128
+Yerine koyarsam vp bölü 3'ü.
+
+191
+00:42:06,527 --> 00:42:09,947
+Buradaki ı, d, s, s, y bölü 2 çıkması gerekiyor.
+
+192
+00:42:11,067 --> 00:42:11,467
+Mesela.
+
+193
+00:42:12,268 --> 00:42:14,108
+Bakalım şu örnekten gidelim.
+
+194
+00:42:15,284 --> 00:42:26,244
+Bunu tam bölememişiz ama 4 bölü 3 yaparsak, evet oluyor, sağlıyor. Aynı 4'ü sağlayacaktır.
+
+195
+00:42:27,544 --> 00:42:29,864
+Şurası. Tabii tam 3'e bölünmediği için.
+
+196
+00:42:30,416 --> 00:42:42,056
+Çok da oturtamıyoruz ama böyle bazı kestirmeler var. Neticede bunlardan birkaç noktayı hormonize ettikten sonra, bulduktan sonra biz bunun körünü çizebiliyoruz.
+
+197
+00:42:42,436 --> 00:42:44,556
+Tabii ben çizemedim. Şurada olsun hiç.
+
+198
+00:42:46,616 --> 00:42:55,376
+Bu körü bize ileride zaten bu Jifet'in çalışma eğrisiyle alakalı ya çalışma prensipleri, karakteristleriyle alakalı bazı eşit noktalar sunacak.
+
+199
+00:42:57,715 --> 00:42:59,516
+Tamam mı? Anlaşıldı mı arkadaşlar?
+
+200
+00:43:03,668 --> 00:43:04,768
+Soru yok herhalde.
+
+201
+00:43:10,260 --> 00:43:21,019
+Bu tabii ki de işte VP ve VDS'nin durumu mesela VDS-15 iken ÖD-10 ölçülmüş. Bunlar hep karakteristik yerlerinde gözüküyor.
+
+202
+00:43:21,559 --> 00:43:31,579
+ÖD-SS'nin mini ve max'ı var 5 mA kadar. Bunlar karakteristik olarak normalde data şitlerinde ve katolaklarında mevcut.
+
+203
+00:43:33,139 --> 00:43:43,579
+Bu zaten şeyde de, Transistor VEGİT'i de anlattığımız gibi, işte yukarıdan bakıldığında çentikli kısım, buradaki işte şu çentiği tekabül ediyor.
+
+204
+00:43:44,079 --> 00:43:51,079
+Ve solda işte burası Drain oluyor. Burada biraz bir hata olabilir, hep bakacağım, unutuyorum.
+
+205
+00:43:51,399 --> 00:44:01,119
+Normalde hani ikinin gate, üçün source olması lazım ama bazı, işte bu entegreyi çok ezberi bilmiyorum ama
+
+206
+00:44:01,139 --> 00:44:20,879
+Ama bu verilmediği durumda, bu 1-2-3 numaralandırma verilmediyse genelde bir işte soldaki source da 2 olarak gözükür. Gate de 3 olarak ortadaki bacağı alırız. Ama bu verildiğinde tabii ki de bunu guidance olarak almamız mahpul. Hani hangi bacaklar neresi diye.
+
+207
+00:44:27,539 --> 00:44:30,619
+Bu da normalde P-Channel'ı gösteren bir diagram.
+
+208
+00:44:32,980 --> 00:45:00,420
+Jifetlerin de yanık olma durumu tabii ki mümkün. BGT'de olduğu gibi. Bunu nasıl yapıyoruz? Bunun iki tane yöntemi var. Biri Curve Tracker dediğimiz, aslında o transfer körbünü çıkarttığımızda bir anormallik varsa bu transistör çalışmadığını söyleyebiliriz. Bir diğer de direkt Jifetlerin testerları var. Jifet yani BGT gibi. Buradaki IDSS'ye göre çalışan.
+
+209
+00:45:00,980 --> 00:45:12,260
+Eğer katalogdaki IDSS'den farklı bir parametrik veriyorsa, bunda da sıkıntı olduğunu söylediğimiz bazı kontrol testlerimiz var.
+
+210
+00:45:13,760 --> 00:45:21,440
+MOSFET'lere bakalım. Şimdi Jifet'te demin anlattığımız. MOSFET'te iki tipten bahsedeceğiz. Deplation ve Enhancement modu.
+
+211
+00:45:22,260 --> 00:45:31,948
+E-type ve E-type'lar. Mosfet'in normal jivet'ten biraz farkı var tabii. Birinci farkı şu, yine bir channel var doğru ama...
+
+212
+00:45:32,244 --> 00:45:55,244
+Bu çenelin etrafında Deplation Region oluşturan şey aslında gate ile bu çeneli bağlayan bir bölge değil. Burada şu silsümoksit de herhalde. Yani bu metal yerden dolayı şuradaki P-substract metal yeri az az bunları yine Deplation Region'a sokuyor. İç yapısı bu çok da önemli değil. Ama neticede.
+
+213
+00:45:56,115 --> 00:46:11,395
+Gate'de bu Substrat ile alakalı, P-type ile alakalı materialin olduğunu, N dediğimiz hani Drain ve Source ile N-type'ın olduğunu ve bu Drain Source arasındaki Channel'dan dolayı isimlendirdiğimizi yine bahsedebiliriz.
+
+214
+00:46:11,395 --> 00:46:19,995
+Bu da bir N-Channel MOSFET ve N-Channel MOSFET'te Drain Source N oluyor, Gate P oluyor aynı şekilde.
+
+215
+00:46:20,724 --> 00:46:40,224
+Burada Substrate diye bir tane bacağımız daha var. Bu Substrate aslında P-Substrate dediğimiz, o P-Channel'ı besleyen bir uç. Yani çok da şeyleri önemli değil. Burada Monsfet'in normalde anlattığımız gibi, Jifet'li olduğu gibi çalışma prensibi yine aynı.
+
+216
+00:46:40,755 --> 00:46:51,515
+Ama bir avantajı var. İki tane tipi var dedik. Deplation Mode ve Enhance Mode'u var. Deplation Mode dediğimiz kısım, aynı demin anlattığımız gibi şu kısmı kastediyoruz.
+
+217
+00:46:51,515 --> 00:47:01,495
+Yani mesela örnek verecek olursak, burada VGS dediğimiz negatiflerde ID'nin düşümünü görmüşüz. Ki demin de öyle görmüştük.
+
+218
+00:47:08,755 --> 00:47:28,795
+Sağlayan şey neydi? Aslında N-Channel 1 MOSFET'ten bu oluşuyordu değil mi? Çünkü Gate'i pozitif olacak ve VGS'nin negatiflik de bunu düşürecekti. Yani aslında bu bir N-Channel MOSFET. Ve N-Channel MOSFET'in depreşim modu aslında aynısı. Bizim normal şifretten bir farkı yok.
+
+219
+00:47:35,059 --> 00:47:55,760
+Öniversitesi Bölü 4 oluyor, ona eşitleniyor. VGS 3, yani 1 bölü 3'ü olduğunda yaklaşık olarak Öniversitesi Bölü 2 demişiz ama çok da önemli değil. Bunu ezberlemeye de gerek yok. Formoyu biliyoruz zaten. Bu kısım Enhancement Modu, yani alt kısım aynı olmadığımız J-Pet.
+
+220
+00:47:56,275 --> 00:48:15,956
+Ama MOSFET'in bir avantajı şu, VGS'yi yani Gate Source arasını, yani Gate'i pozitif olsa bile, yani bir N-Channel MOSFET'ten bahsetsek bile, pozitif yaparsak Gate Source arasını, jibretle bu kısım çalışmıyor mesela, Enhance mode'a sokuyor.
+
+221
+00:48:15,956 --> 00:48:22,056
+Yani akımın çok daha hızlı bir seyrini göreceğiz. Artan, yükselen bir hızla.
+
+222
+00:48:22,804 --> 00:48:41,704
+Yani depreşin bölgesi normal jifet gibi çalışıyor. Jifetle çalışmayan enhancement modu, yani doğru polarizasyon yaptığımızda geç sorus arasını, enhancement moda sokuyoruz ve artı bir volt yaklaşık işte iki amper kadar, mesela bu da mini amper kadar destek vermiş.
+
+223
+00:48:41,704 --> 00:48:50,784
+Bir volt daha arttırırsan bu çok daha yukarıda destek verecek. Yani aslında o aradaki depreşin rejini daha da kısıyoruz ve omik rejini.
+
+224
+00:48:50,804 --> 00:48:59,324
+Yani direnç resistif etkiyi gösteren range'inden kurtarmış oluyoruz. Böyle bir avantaj var MOSFET.
+
+225
+00:49:00,284 --> 00:49:05,024
+Deplation bölgesindeki formülümüz yine aynı. Bu formülaya göre bu karakteristik körünün,
+
+226
+00:49:05,084 --> 00:49:11,644
+Deplation range'in bölgesini, yani Deplation modundaki bölgeyi çıkartabiliyoruz.
+
+227
+00:49:12,371 --> 00:49:35,811
+Burada da bahsettiğimiz gibi bu bir ençan aldı. VGS sıfırken IED, IED SS'ye eşit olacak. VGS ne zaman sıfırdan ufak olduğunda ki P-type'ı aslında tersine sönümlendiriyor. O zaman IED, IED SS'nin aşağısına doğru düşecek ve bir yerden sonra artık IED eşittir, sıfır olacak ki biz ona pinç yani.
+
+228
+00:49:37,076 --> 00:49:45,016
+Artık böyle deflation ve oraya sıkıştırdığı bölge diyeceğiz. Yani aynı şifretle. D-type kısmı.
+
+229
+00:49:45,016 --> 00:49:54,255
+Şey, deflation kısmı. Enhancement modunda ise yani D-type'ın Enhancement modunda VGS sıfırdan büyük olunca çalışıyor.
+
+230
+00:49:54,936 --> 00:49:59,755
+Tabii bu ençanal için konuşuyoruz. Ve çalıştığı noktada I-D akımı I-D sesi.
+
+231
+00:50:00,000 --> 00:50:07,059
+Geçtiği için de artık daha hızlı bir şekilde oradan akımın geçmesini sağlıyor.
+
+232
+00:50:09,684 --> 00:50:32,684
+P-Channel için konuşacaksak, deminkiler N-Channel'du. P-Channel, orta sıra işte Drain Stores arasındaki meteorolojimin P olduğu durumda. Yani Gate'in neye olacak? Ve Gate'in aslında negatif olduğu senaryolarda, pozitif olduğunda zaten o D-i sönümlendirecek. Ama negatif olduğu senaryolarda, yani N-i ters...
+
+233
+00:50:33,235 --> 00:50:41,395
+İtme kuvveti olduğu durumlarda da ıd'imizi arttıracak. Yani enhancement moda sokacak.
+
+234
+00:50:44,195 --> 00:50:55,015
+Sembolleri D-type için konuşuyor olursak, N-channel'ları zaten çınılın ortasını gösterdiği için oklar içe doğru iki şekilde de gösterebiliriz.
+
+235
+00:50:55,115 --> 00:50:58,935
+Bazıları bunu kullanmaz. Buna direkt rensos olarak bağlanır.
+
+236
+00:50:59,443 --> 00:51:05,043
+P-Channel'da da ok, dışarı yönelik olacak şekilde oluyor. Yani kanalı göstermiyor.
+
+237
+00:51:05,943 --> 00:51:14,543
+Buradaki işte I, D, D, P, V, G, S, D, bunların maksimum alabileceği değerleri yine data veri katalogundan öğrenebiliyoruz.
+
+238
+00:51:15,304 --> 00:51:21,943
+Evet, E-type MOSFET'lerin ne farkı var peki? Arada bir kanal yok. Yani bir kanal mimarası burada söz konusu değil.
+
+239
+00:51:22,516 --> 00:51:34,516
+Bu kanal mimarisi olmadığı için de, yani buradaki Subtract Metalleri direkt Gate'e bağlı ve Endo-Pet Range'in şeklinde isimlendiriliyor.
+
+240
+00:51:36,516 --> 00:51:44,516
+Buradanın farkı, yani E-type MOSFET'lerin farkı ise şu. Aslında yine bir Pitch gerilimi var.
+
+241
+00:51:44,516 --> 00:51:48,516
+Ama bu biz burada Pitch gerilimine Threshold gerilimi diyoruz.
+
+242
+00:51:48,927 --> 00:51:59,107
+Yani VGS arası, Gates Source arasındaki potansiyel farkın belli bir seviyenin üstünde olduğunda I-D akımı geçiyor.
+
+243
+00:52:00,367 --> 00:52:07,768
+Fark bu. Yani bir threshold var ve bu threshold'un altında herhangi bir I-D akımından bahsetmiyoruz.
+
+244
+00:52:07,768 --> 00:52:13,268
+E-Type MOSFET'te. Ne zamanki Gates Source arasındaki
+
+245
+00:52:14,099 --> 00:52:28,639
+Akım, gerilim farkı, o threshold'u geçtiğinde ID akımı akmaya başlıyor ve bu sonsuza kadar artık bu E-type MOSFET'in karakteristiğine, DATA SHIT kataloguna göre artıyor.
+
+246
+00:52:30,059 --> 00:52:37,719
+Tabii ki de VDS'nin de pozitif olması gerekiyor. Ne zaman? Burada işte normalde ne olduğu için artı.
+
+247
+00:52:38,643 --> 00:52:49,963
+Vermemiz lazım. Yani şimdi burada çenol olmadığı için E-type'a bir çenol söyleyemiyoruz. Şunu söyleyebiliriz. P-type bir MOSFET, E-type MOSFET veya N-type bir MOSFET diyebiliriz.
+
+248
+00:52:55,731 --> 00:53:06,012
+Tabi bunun formalizasyonu demin gösterdiğimiz formülden farklı. Yani Vp, ı, d, s, s eşittir. Pardon, ı, d eşittir.
+
+249
+00:53:08,132 --> 00:53:16,512
+ı, d, s, s, bir eksi v, g, s bölü v, p'nin karesi formülü i type için değil.
+
+250
+00:53:17,043 --> 00:53:37,743
+E-type'da bu kullanılmıyor. Çünkü burada bir threshold belirlenmemiş. Bu E-type için kullanılan bir formalizasyon değil. Bu E-type'ı, I-D grafiğini çizebilmemiz için VGS'ye bağlı olarak threshold'u geçtirme. Birinci kontrol bu. Eğer threshold'u geçmediyse, burası negatif.
+
+251
+00:53:38,096 --> 00:54:00,695
+Bir saygı gelse yani VT'nin altında bir VGS olduğunda bu çalışmayacak. Yani buradan I, D, K sönümlerlecek. Veyahut da şöyle düşünebiliriz. Negatifin karakökü normalde karmaşık bir sayıda gideceği için işleme dahil edilecek. Ama VGS threshold geçtiği noktada bizim için bir pozitif.
+
+252
+00:54:01,108 --> 00:54:14,888
+Karametre gelecek ve bunu K'yı da ki bu K aslında bir konstant, bir sabit ve bu sabiti de biz I, D'nin açık olduğu yani I, D'nin oluştuğu VT geriliminden çıkartıyoruz.
+
+253
+00:54:16,948 --> 00:54:28,508
+Bu K'yı buraya yazdığımızda buradaki I, D bizim için bunlar da yine K parametresi aslında spesifik bir point ve bunu biz data şıklardan öğreneceğiz K'yı.
+
+254
+00:54:31,347 --> 00:54:42,608
+Ve bu nihayetinde, o treşoflu geçtikten sonra hesapladığımız bu ID formalizasyonu da belli başlı değerlerle çizlediğimiz grafiği oluşturuyor.
+
+255
+00:54:44,755 --> 00:55:07,115
+Bu threshold'u nereden? Aynı şekilde pin çoklar bulacağız. Mesela şu an sağ taraftaki ID, VDS ve VGS olan 3 parametreye göre bir grafik. Demin anlattığımız gibi. VGS artı 8 volt, 4 volt böyle düşürmüşler mesela. Bir ID akımı oluşuyor. Ne zaman ID akımı oluşmaz ise, ki ID akımın oluşmadığı senaryo bizim için threshold.
+
+256
+00:55:07,731 --> 00:55:12,812
+O zaman bizim için VT'yi, threshold'u belirlediğimiz değeri bulmuş oluyoruz.
+
+257
+00:55:13,552 --> 00:55:22,552
+Burada 2 volt çıkmış. Mesela 2 volt VGS ile herhangi bir ıde oluşmamış. Öyle olunca da bizim için 2 volt'un threshold olduğunu çıkartıyoruz.
+
+258
+00:55:22,552 --> 00:55:31,332
+Bu 2 volt'un üstüne nasıl bir eğer çıkacağı da bu formülü de yerine koyarak bulacağımız bir değer olacak. Birkaç tane değer bularak grafiği çizeceğiz.
+
+259
+00:55:32,947 --> 00:55:56,608
+P-Channel E-Type'da, burada tabii bir channel yok ama bu Drain ve Source arasında P-Type'larından dolayı P-Channel diyebiliriz. P-Channel'da ise tam tersi olacak. VGS'nin negatif bir değerinde, çünkü burası N-Type, N-Type negatif bir bir gerilini bağlayacağız ki bir seviyeden sonra artık akım geçecek. İşte o negatif büyüklüğe göre.
+
+260
+00:55:57,076 --> 00:56:01,096
+O seviyeyi yine ÖD'nin 0 olduğu senaryodan çıkartacağız.
+
+261
+00:56:06,708 --> 00:56:28,548
+Normalde E-type ile D-type arasında sadece kesikli bir hat ayrımı var. E-type'larda kesikli, D-type'larda düz şeklinde kullanılıyordu. Yani Enhancement dediğimiz bu E-type mosfetlerde kesikli şekliydi. Ve oklar yine N-çınlılığı içeriye, P-çınlılığı dışarıya gösterecek şekilde.
+
+262
+00:56:33,940 --> 00:56:36,700
+Evet, burada Drain Source katalogları vesaire.
+
+263
+00:56:40,180 --> 00:56:45,500
+Evet, MOSFET'lerin tabii ki de işte dediğimiz birinci sıkıntısı şuydu, statik enerjilenme.
+
+264
+00:56:45,500 --> 00:56:49,500
+Bunun için genellikle statik olmayan ortamlarda işte...
+
+265
+00:56:50,387 --> 00:57:10,168
+İşlemler yapmak lazım. Hatta insanın statik elektriğinden dolayı bile ölçümlerin yanlış olduğu durumlar yaşanıyor. Onlar göz ardı edilebilir ama neticede gerilim kontrolü bir iş yaptığımız için ve gerilim çok hassas, statiklenmeye karşı çok hassas olduğu için ekstra önlemler almayı gerektiriyor.
+
+266
+00:57:11,795 --> 00:57:31,755
+VMOS, hani çok detaylı ne girmeyeceğiz? Vertical MOSFET diyorlıyoruz. Yani yüzey alanını biraz daha büyütüyor. Ve bu tarz büyüttüğümüzde işte Gate'i, bu Substrat Sources'ları iki tane, Drain'i de aşağıda olan bir yapısı var. Burada yine bir Depthation Region bölgü işler zaten bütün kuruluğunun üzerine.
+
+267
+00:57:32,320 --> 00:57:41,259
+Burada da yüksek akımları kontrol etkinlik için kullanılan bir yüzey alımının büyük olmasından dolayı yüksek akımları daha rahat kontrol edebilen bir yapıyı sunuyor.
+
+268
+00:57:43,420 --> 00:57:52,039
+CMOS, VMOS'un bir tık daha ilerisi. Zaten şu an CMOS mimarisinde RAM'ler var. RAM'ler CMOS mimarisinde yapılıyor.
+
+269
+00:57:53,159 --> 00:57:59,756
+Burada da birçok yatay yüzeysel MOSFET'in...
+
+270
+00:57:59,764 --> 00:58:27,764
+Bir arada kullanılmasıyla oluyor. Bir taraf N-Sanel, bir taraf P-Sanel mesela. Bunların ortaklaşa bir gate ucu olma durumu var. Ortaklaşa bir drain ucu olma durumu var. Ve ortaklaşa bir source ucu olma durumu var. Ve aslında tetiklerken ben hepsi yani CMOS'larda bir MOSFET'i tetiklemiyorum. Belki bin tane MOSFET'i tetiklemiş oluyorum. Ve buradaki V1 Geylemi, yani VGS arasındaki Geylemi farkına yapacağımız var.
+
+271
+00:58:27,764 --> 00:58:36,464
+Şuradaki VSS ile beraber ve buradaki geneliyde beraber aslında VGS'nin arasındaki potansiyel fark oluştuğunda bir mosfet için oluşmuyor.
+
+272
+00:58:36,844 --> 00:58:45,344
+Pek çok mosfet için oluşuyor. Öyle olunca da kontrolü pek çok mosfeti tek bir VI gerinimiyle sağlamış oluyoruz.
+
+273
+00:58:48,851 --> 00:58:56,811
+Evet arkadaşlar, özetçe üç tip MOSFET gördük. Biri J-PET'ti, bir diğeri MOSFET'ti.
+
+274
+00:58:58,811 --> 00:59:06,011
+Tabi bu şu an D-Type olanı, bir diğeri de MOSFET'in E-Type olanı.
+
+275
+00:59:07,611 --> 00:59:16,091
+J-PET'lerin genel formülü söyledik zaten. Mesela bu bir N-Channel J-PET ve N-Channel olduğu için de aslında
+
+276
+00:59:16,820 --> 00:59:30,480
+Gate dediğimiz kısmı pozitif. Öyle olunca negatif bir gerilenme. Yani VGS'nin negatif olma durumu söz konusu. VGS negatifleştiği sürece I, D, I, D şifreseden daha düşük bir akım geçmesi neden olacak.
+
+277
+00:59:31,320 --> 00:59:40,079
+Öteki taraftan MOSFET D-Type'de hem negatif hem pozitif değer alabilir ama bir N-Channel ise eğer negatif de I, D'yi düşürürken
+
+278
+00:59:40,480 --> 00:59:47,280
+Pozitif VGS değerlerinde, IDI dramatik bir şekilde çok yükseltebilir.
+
+279
+00:59:47,920 --> 00:59:55,400
+E-type MOSFET'te ise, formülümüz bir tık değişiyordu. Bir K parametresiyle threshold geriliminden bahsediyoruz.
+
+280
+00:59:55,640 --> 01:00:00,000
+Ne zaman o threshold VGS gerilimi, ki mesela burası bir en...
+
+281
+01:00:00,000 --> 01:00:22,900
+Ve en çanalı da pozitif olacak. Ve bunu ben VGS'yi pozitif verdiğimde belli bir CV'den sonra buranın iletime geçmesini söylüyorum esasında. Bir kısım threshold değerinden sonra. İşte bu threshold'dan sonra bu grafiği nasıl çizeceğini yukarıdaki formüllerden farklı bir formülle hesaplayacağız ve bu grafiğini çizmiş olacağız.
+
+282
+01:00:25,420 --> 01:00:27,019
+Sorumuz var mı arkadaşlar?
+
+283
+01:00:31,635 --> 01:00:35,536
+Anlaşıldı mı Jifet, MOSFET konusu?
+
+284
+01:00:41,844 --> 01:00:57,724
+Hiç ses yok arkadaşlar. Sorumuz yoksa dersi bitireceğim. Bir saatlik ders oldu. Haftaya sorularla yani bu mosfet diyagramlarının nasıl yapıldığına dair örnekler yapacağız.
+
+285
+01:00:57,724 --> 01:01:08,144
+Bağlantılarına inceleyeceğiz. Anlaşıldıysa dersi bitireceğim arkadaşlar. Sorumuz var mı yoksa?
+
+286
+01:01:10,324 --> 01:01:16,304
+Hepinize iyi dersler arkadaşlar. Hakkıda görüşmek üzere. İyi çalışmalar.

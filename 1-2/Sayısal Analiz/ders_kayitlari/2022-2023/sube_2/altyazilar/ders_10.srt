@@ -1,0 +1,1607 @@
+1
+00:00:51,188 --> 00:00:53,588
+Arkadaşlar merhabalar ses geliyor mu acaba?
+
+2
+00:01:01,844 --> 00:01:05,364
+duyuyor musunuz? Ses geliyor mu arkadaşlar?
+
+3
+00:01:12,884 --> 00:01:20,384
+Saat 13.10 geçe, 13.10'da başlayacağız. Ufak bir bölümde işim var. 10 dakika sonra görüşürüz.
+
+4
+00:15:19,124 --> 00:15:20,844
+Merhabalar arkadaşlar.
+
+5
+00:15:33,748 --> 00:15:39,188
+Bu haftaki konumuz regresyon. Ses geliyor, görüntü var. Sorun yok herhalde.
+
+6
+00:15:44,275 --> 00:16:11,675
+Şimdi interpolasyon konusundan hatırlarsanız, elimizde bir veri seti olacak. İşte buna x ve y ikilileri diyebiliriz. Eğer y eşittir fx fonksiyonu fx'e benzer bir durum varsa böyle bir verilerimiz var. Ne yapıyorduk? x'lerle y'ler arasındaki ilişkiyi bulmaya çalışıyorduk.
+
+7
+00:16:12,115 --> 00:16:38,115
+Tabi interpolasyondaki olan konu şuydu, şöyle noktalarımız varsa, bu noktaların tamamından geçen bir doğru veya eğri bir şey üretmeye çalışıyorduk. Daha sonra aradaki diğer noktaları tahmin ediyorduk. Bu bir tayin değildi, tahmindi. Dolayısıyla bu %100 gerçeği bulacağımız anlamına gelmiyor.
+
+8
+00:16:38,740 --> 00:16:58,539
+mevcut noktaların tamamen üzerinden geçecek olması, burada bu noktalar için, işte şuraya x1 noktası, şuraya x2 noktası, şuraya x3 noktası diyelim, bu noktalar için gerçek değerler ile tahmin edilen, bulunan değerler arasındaki farkı
+
+9
+00:16:58,836 --> 00:17:09,836
+Hata olarak epsilonlara bakarsak, mesela burada i eşittir, birden üçe kadar diyelim. Bu epsilon nedir arkadaşlar? E, i. Gerçek değerimiz burada, y, i diyelim.
+
+10
+00:17:09,836 --> 00:17:22,836
+Ürettiğimiz şu değerleri de, y şapka bir, işte y şapka iki, y şapka üç. Bu şapka hat olarak şeyde de kullanılıyor.
+
+11
+00:17:23,092 --> 00:17:26,852
+Yi üzerindeki farka bakarsak, bu toplamın sonucu ne olur?
+
+12
+00:17:34,355 --> 00:17:43,476
+Burada tahmin edilen, bulunan değerlerle gerçek değerler arasındaki partilerin toplamına baktığımız zaman nasıl bir sonuç elde ederiz?
+
+13
+00:17:53,907 --> 00:17:55,531
+Duyuyor muyuz arkadaşlar?
+
+14
+00:17:59,955 --> 00:18:13,755
+Bu bir interpolasyon ise ve bu doğru veya eğri bu noktalar üzerinden geçiyorsa ürettiğimiz şey, şuradaki değerlerle, buradaki değerler, üretilen değerler arasında bir farklılık olacak mı arkadaşlar?
+
+15
+00:18:24,627 --> 00:18:33,627
+Sesimin gelip gelmediği hakkında bir geri bildirimde bulunabilir misiniz? Sesimiz geliyor hocam. İkisi de aynı olacaktır. Sıfıra doğru. Yani sıfır olur.
+
+16
+00:18:33,627 --> 00:18:47,503
+Sıfır olacak. Teşekkür ederim [öğrenci] için. Çünkü bu zaten üretilen şey bu noktaların üzerinden geçecek şekilde üretiliyor. Bizim interpolasyon yöntemlerimize baktığımızda
+
+17
+00:18:47,503 --> 00:19:10,783
+Gregor Newton-Owson, diğer linear interpolasyon, quadratic interpolasyon, bütün yöntemlerimiz, en son gördüğümüz Lagrange interpolasyonu bu noktaların üzerinden geçecek şekilde üretiyor. Bu açıdan, hata açısından gayet güzel, orijinal verileri bozmuyor. Ama burada şöyle bir problem var. Veri sayımız çok olduğunda...
+
+18
+00:19:11,124 --> 00:19:15,324
+İş biraz bozuluyor. Yani şimdi birazdan örneklere geçince burada bakacağız.
+
+19
+00:19:15,324 --> 00:19:18,923
+Yani böyle bir sürü burada örnek olsa, işte sample olsa,
+
+20
+00:19:18,923 --> 00:19:24,724
+bu sampulların her birinin üzerinden geçecek böyle bir şey üretmek güçleşiyor.
+
+21
+00:19:24,724 --> 00:19:31,524
+Dolayısıyla bir de kullanacağımız tasarım modelleri, yani burada lineer interpolasyon yapamayız.
+
+22
+00:19:31,524 --> 00:19:33,724
+Kuvadratik interpolasyon yapamayız.
+
+23
+00:19:34,036 --> 00:19:43,036
+İşte bu durumda belli bir hata payıyla yani elimizde öyle noktalar olacak ki şöyle noktalarımız olsun diyelim.
+
+24
+00:19:45,036 --> 00:19:52,036
+Belli bir doğru veya eğrim üreteceğiz. Şimdi bu gerçek değer, bu gerçek değer yerine üretilecek değer şurası.
+
+25
+00:19:53,036 --> 00:19:57,036
+Yani gerçekten normalde bu burayı gösteriyordu ama bu artık burayı gösterecek.
+
+26
+00:19:57,036 --> 00:20:00,000
+İşte şurada bir şu kadarlık bir saplanan bahsediyoruz.
+
+27
+00:20:00,000 --> 00:20:19,079
+İşte şurada şu kadar sapma var. Bunların her birisine bir Epsilon, şuraya mesela Epsilon 1 diyelim, şuraya Epsilon 2 diyelim. Artık bu toplama baktığımızda i eşittir birden n'e kadar n tane noktam varsa Epsilon'ların, i'lerin toplamı hatta bunların toplamlarının mutlak değerlerine bakacağız.
+
+28
+00:20:19,327 --> 00:20:32,327
+Kesinlikle ama kesinlikle sıfırdan farklı bir değer bulacağız. İşte bu regresyon oluyor. Noktalar üzerinde geçmek zorunda değil. Bazı noktalar üzerinden geçebilir ama genel anlamda şey değil.
+
+29
+00:20:32,327 --> 00:20:43,980
+Enterpolasyon işte bu anlattığım şeyin burada hikayesi var, okuyabilirsiniz. Bir kere burada nokta sayısının biraz daha az olması istiyoruz. Mesela polinom üreteceksek
+
+30
+00:20:43,988 --> 00:20:48,668
+polinomun üstünden bir tane fazla sayıda nokta olursa polinom üretebiliyorduk.
+
+31
+00:20:48,668 --> 00:20:53,587
+Ama çok değerli olduğu durumlarda regresyonla uğraşmamız gerekiyor.
+
+32
+00:20:55,587 --> 00:21:03,587
+Regresyonun bir diğer şey, interpolasyonun bir diğer şekilde belli aralıklarla interpolasyon yapabiliyorduk.
+
+33
+00:21:04,319 --> 00:21:10,199
+Veri kümenizin işte belli bir kısmına bir enterpolasyon, başka bir kısmına başka bir enterpolasyon yapıyorsunuz.
+
+34
+00:21:10,199 --> 00:21:12,199
+Parçalı bir fonksiyon üretebilirsiniz.
+
+35
+00:21:12,199 --> 00:21:18,759
+Ama bu gerçek fonksiyonla enterpolasyon arasında çok farklı durumlar meydana gelebiliyor.
+
+36
+00:21:18,759 --> 00:21:22,239
+O açıdan bazı durumlarda regresyon daha iyi sonuçlar verebiliyor.
+
+37
+00:21:22,239 --> 00:21:28,799
+Bunun tam bir ölçüsü de yok. Regresyon mu iyidir, enterpolasyon mu iyidir dediğinizde tam bir ölçüsü yok.
+
+38
+00:21:29,044 --> 00:21:38,244
+Örneğin veri üretme yapacaksak, geçen hafta anlatmıştım, işte bir ses dosyasının daha kaliteli hale getirilmesi, görüntünün daha kaliteli hale getirilmesi durumlarında
+
+39
+00:21:38,244 --> 00:21:45,163
+interpolasyon yapıyoruz ve o interpolasyonu da parçalı bir şekilde yapıyoruz. Buna spline interpolasyonu diye ifade etmiştim.
+
+40
+00:21:45,163 --> 00:21:52,844
+Ne oluyor? Siz veri kümenizi işte bir aralıkta bir fonksiyona çeviriyorsunuz, başka bir aralıkta başka bir fonksiyona çeviriyorsunuz.
+
+41
+00:21:57,044 --> 00:22:08,544
+fonksiyonlar üretilmeye çalışıyor. Buradaki hatadan şurada bahsetmiş. Bu epsilyonların toplamının ne olması lazım? Peki sıfır olmayacaksa ne olması gerekir?
+
+42
+00:22:13,907 --> 00:22:37,228
+minimize edilmesi gerekir arkadaşlar. Şimdi türev konusundan hatırlarsanız, bir maksimum-minimum problemleri diye bir konu var. Bir fonksiyon verildiğinde, bu fonksiyonun türevini alıp sıfıra eşitlediğinizde, türevin sabit olduğu, değişmez olduğu noktalar nedir? İşte şöyle düz durağan noktalardır. Biz de burada elde edeceğimiz şeyi türevi alıp sıfıra eşitleyip,
+
+43
+00:22:37,523 --> 00:22:47,523
+Bazı parametreler tahmin etmeye çalışacağız. Ve bu parametrelerle maliyeti minimum, yani şu hatayı minimum hale getirecek çözümler üreteceğiz.
+
+44
+00:22:47,523 --> 00:22:51,023
+Buna da en küçük kareler yaklaşım diyoruz. Birazdan onlara gireceğiz.
+
+45
+00:22:51,023 --> 00:23:03,023
+Amacımız toplam hatanın, biraz önce yazdığım işte hata büyük epsilon ile gösterin. Büyük epsilon şudur arkadaşlar, i eşittir birden n'e kadar n tane nokta için toplam hatanın
+
+46
+00:23:03,251 --> 00:23:30,851
+maksimize edilmesi. Şimdi burada toplam hata aslında Epsilon'u şöyle tanımlayalım. Epsilon i dediğim şey, bir şeyin gerçek değeri var, yi diyelim. Bir de üretilmiş değer var, yi şakka i diyelim. Bu ikisinin şimdi hatalar pozitif olabilir, negatif olabilir. Buradan gelen sayısal tümüşler. Şimdi pozitifler, negatifler birbirini götürmesin diye ya bunu mutlak değere alacağız. Buna sum of absolute error diyoruz.
+
+47
+00:23:31,412 --> 00:23:44,612
+Some absolute error. Hataların mutlak değerlerini topluyoruz. Bu kullanılabilir ama bunun türevini almak birazcık zor çünkü hatayı bir de minimize edeceğiz. Bunun yerine
+
+48
+00:23:44,612 --> 00:23:55,811
+mean square error dediğimiz mean square error veya some square error
+
+49
+00:23:57,268 --> 00:24:22,124
+Square Error. Yani ikisinde de karesel hata var. Karesel hatadan kastımız da şu, gerçek değerden üretilen değeri çıkartıp, bunun karesini alıp, karesinin kare küpünü aldığınızda, sum of square error veya sum mean of square error dersek de, burada bunu bir bölü n ile n sayısına bölerseniz ortalama karesel hata gibi şeyler bulursunuz. Biz bu fonksiyonu
+
+50
+00:24:22,259 --> 00:24:47,940
+minimize eden bazı parametre alabileceğiz. Şimdi bu fonksiyonu minimize etmek ne demek? Elinizde x ve y değerleri size tablo halinde verebiliyor. Bakın şu sayısal bir değer. Ama şu bir eşitlik arkadaşlar. Mesela yi ne olabilir? a çarpı x i artı b şeklinde bir doğru olabilir. İşte biz bunu minimize eden a ve b değerlerini bularak regresyon modelimizi inşa edeceğiz.
+
+51
+00:24:48,372 --> 00:25:03,492
+Bu yaklaşımı arkadaşlar en küçük kareler yaklaşımı diyoruz. En küçük karelerden kastımız gerçek değerle Yi ile üretilmiş Yi arasındaki farkın karesini alıp bu kareleri topluyoruz.
+
+52
+00:25:03,728 --> 00:25:22,728
+Daha sonra da işte o karelerin toplamının kare kökünü alıp, yani şurada bahsettiğimiz şey aslında bir toplam sembolü var. Toplam sembolünün kare kökünü alıyoruz. Bunun üzerinden toplam karesel hatanın minimize edilmesine bakacağız. Burada çok kullanacağımız şey aslında türev. Ve bu türevde kısmi türevi kullanacağız.
+
+53
+00:25:23,028 --> 00:25:29,428
+Şu işaretçi kısmi türev operatörüdür. Geçmiş derslerde bir yerde kullanmıştık.
+
+54
+00:25:29,428 --> 00:25:35,827
+İşte örneğin y, x ve y'ye bağlı, veya şöyle diyelim, bir t fonksiyonumuz var, x ve y'ye göre değişiyor.
+
+55
+00:25:35,827 --> 00:25:47,428
+Siz bunun x'e göre kısmi türevini aldığınızda x'deki değişimi, ondan sonra y'ye göre x, y'ye diyelim, y'ye göre kısmi türev aldığınızda y'deki değişimi inceleyip,
+
+56
+00:25:47,663 --> 00:25:55,663
+farklı farklı eşitlikler elde edeceksiniz. Konularımız bunlar üzerine şekillenecek. Bakın, bir regresyon yaptığımızda bütün noktalardan geçmesi gerekmiyor.
+
+57
+00:25:55,663 --> 00:26:02,663
+Önemli olan şu hata artı şuradaki sıfır olan hata, şuradaki hata, buradaki hata, buradaki hataların...
+
+58
+00:26:03,731 --> 00:26:13,971
+İşte buna epsilon 1, epsilon 2, epsilon 3, epsilon 4, epsilon 5, böyle bir doğru çizelim ki bu hata minimum olsun. Sıfır olması çoğu zaman mümkün değil.
+
+59
+00:26:13,971 --> 00:26:21,612
+Burada başka ne doğrular çizilebilir? İşte şöyle bir doğru da çizebiliriz. Ama bu sefer ne oluyor? Hata daha da, mesela böyle bir doğru da çizebiliriz.
+
+60
+00:26:21,612 --> 00:26:30,291
+Veya bir eğri çizebiliriz. Amacımız ne çizeceksek en az hata ile bu noktaları temsil etmektir.
+
+61
+00:26:31,124 --> 00:26:40,483
+Bu bir değişkenli şeyler genellikle zamana göre değişen olaylarda kullanılır. Yani buradaki ikisi böyle t gibi, zaman gibi şey yaptığımızda kullanabiliriz.
+
+62
+00:26:40,483 --> 00:26:49,724
+Siz n tane ölçüm yaptınız, bir deney yaptınız. Bu n çok çok yüksek değerler olabilir. Yani üç beş tane sayısal değer değil de belki bin tane sayısal değer var.
+
+63
+00:26:49,724 --> 00:26:52,124
+İşte burada regresyon daha çok işe yarıyor.
+
+64
+00:26:52,288 --> 00:26:59,288
+Bu durum eğer doğrusal bir değişim gösterirse, burada bir doğru çizersiniz. Bu doğrunun belli bir hatası olur.
+
+65
+00:26:59,288 --> 00:27:06,288
+Peki, çizdiğimiz doğru, gerçek değerlerimiz var. Bunlara y dedik. Şuna da y şapka diyelim.
+
+66
+00:27:06,288 --> 00:27:13,288
+y şapkada böyle bir şey olacaktır arkadaşlar. O gerçek değerleri gösteren bir eşitlik.
+
+67
+00:27:13,288 --> 00:27:16,288
+Şimdi ben y'nin gerçek değerlerinden
+
+68
+00:27:17,364 --> 00:27:42,864
+Bunları çıkarttığında farkı minimize etmiş oluyorum. İşte buna distance diyelim. Bu distance'ı bütün sampullar için yazacak olursam, epsilon da diyebiliyoruz küçük e'yi, d'i'ler y'nin i'inci elemanının gerçek olanını ve burada x'in i'inci elemanının gerçek olanı elemanı üzerinden ürettiğim şu doğruyodun farkını alarak
+
+69
+00:27:42,928 --> 00:27:47,408
+Bir minimizasyon yapacağım. Şimdi burada minimize etmem için iki tane parametre var.
+
+70
+00:27:47,408 --> 00:28:03,568
+Nasıl ki türevi alıp sıfıra eşitliyorsak, işte şu ifadenin bir A'ya göre türevini, bir de ayrıca B'ye göre türevini alıp sıfıra eşitleyip, A ve B değerlerini bulmam gerekiyor ki, o en uygun, şurada bahsettiğimiz en uygun D'yi bulalım.
+
+71
+00:28:03,663 --> 00:28:25,063
+Çünkü, şey, doğruyu bulalım. Çünkü bu y eşittir ax artı b doğrusunda a dediğim şey aslında bu doğrunun eğimidir. B de x eşittir sıfır noktasındaki y'nin sayısal değeridir. O zaman biz bu a ve b'yi elimizdeki mevcut x ve y ikililerinden nasıl bulabiliriz ona bakacağız. Şimdi bunu
+
+72
+00:28:25,715 --> 00:28:32,475
+En küçük kareler yaklaşımıyla bulunabildiği gibi başka yaklaşımlar da var ama işin en temel mantığı en küçük kareler yaklaşımıdır.
+
+73
+00:28:32,475 --> 00:28:39,875
+Hatayı bir kere minimize etmek istiyorsak, ortalama karesel hata veya karesel hata dediğimiz şey en uygun fonksiyon.
+
+74
+00:28:39,875 --> 00:28:43,475
+Çünkü şu ifadenin türevi çok rahat alınabiliyor.
+
+75
+00:28:43,475 --> 00:28:47,155
+Şimdi her şeyin türevini alamıyoruz. Neden alınamaz her şeyin türevi?
+
+76
+00:28:47,155 --> 00:28:51,315
+Yani fonksiyonlar açısından bakılacak olursak...
+
+77
+00:28:51,700 --> 00:28:55,692
+Yani türevi alınamayan durumlar nelerdir?
+
+78
+00:29:00,692 --> 00:29:07,412
+Bir şeyin türevli olması için ne gerekli arkadaşlar? Türev konusunu, yani bu dersin konusu değil, diğer derslerde gördünüz. Buyurun.
+
+79
+00:29:08,435 --> 00:29:11,435
+Fonksiyonun sürekli olması gerekiyor.
+
+80
+00:29:11,435 --> 00:29:23,435
+Sürekli olursa zaten şey var, fonksiyonun değeriyle süreklilik şartı sağlıyorsa, limit varsa şey, yani bir kırılma noktası, kopma noktası gibi bir şey olmayacak, o zaman türev alabiliyorsun.
+
+81
+00:29:23,435 --> 00:29:31,435
+İşte bu biraz önceki mutlak değer fonksiyonuyla sum of absolute error yaptığımızda bu biraz sıkıntılı bir şey türev açısından.
+
+82
+00:29:31,435 --> 00:29:36,435
+Ama karesel bir şeyin türevini, şu ifadenin x'e göre türevini veya a'ya b'ye göre türevini...
+
+83
+00:29:36,435 --> 00:30:00,000
+Bu ifadenin a'ya göre türevi nedir? yi sabit. İkiyi başa indirirsiniz. Birazdan yapacağız. Sonra içerinin a'ya göre türevini alırsınız ve kendisini yazarsınız. Yani yi eksi a eksi b x i ifadenin aşağıya indirdik. İçerinin kendisi, bir de içerinin türevi. Şimdi a'ya göre...
+
+84
+00:30:00,000 --> 00:30:04,500
+türev aldığımızda burası eksi a'nın türevi eksi 1'dir. Dolayısıyla buraya eksi gelir.
+
+85
+00:30:04,500 --> 00:30:27,948
+Eksi b'ye göre türev alırsak ne olur? Eksi x i parantez ye eksi a eksi b x i olur. Bu türevleri alıp sıfıra eşitlediğimizde a ve b değerlerini bulabileceğimiz iki tane doğrusal denklem takımı karşımıza gelecek. Bu doğrusal denklem takımlarını da zaten ilk konularda gördük. Onu da çözersek
+
+86
+00:30:27,955 --> 00:30:43,076
+a b değerlerini bulmuş olacağız ve a artı b x formatında hani a'lar b'ler artık 3 artı 4 x gibi bir doğru üretmiş olacağız. Burada anlaşılmayan bir şey var mı?
+
+87
+00:30:46,836 --> 00:30:51,836
+Neden türevi alıp sıfıra eşitliyoruz? Çünkü bizim için hatanın minimize edilmesi lazım.
+
+88
+00:30:51,836 --> 00:30:58,836
+Hatanın minimizasyonu da neyle oluyor? Hatayı bir fonksiyon gibi yazdık. Çünkü bu bir fonksiyonudur ve x'e göre değişiyor.
+
+89
+00:30:58,836 --> 00:31:04,836
+O zaman ben bu fonksiyonun birinci dereceden türevini alıp sıfıra eşit dersem hatanın sıfıra...
+
+90
+00:31:04,864 --> 00:31:11,864
+yaklaşacağını varsayıyorum. Şimdi gelelim bu denklemleri nasıl çıkaracağından. Bu doğrusal
+
+91
+00:31:11,864 --> 00:31:19,864
+regresyon türetilmesi. Diğer yöntemler de buna çok çok benziyor. Şimdi bizim gerçek değerlerimiz bunlar.
+
+92
+00:31:19,864 --> 00:31:26,572
+Ürettiğimiz yani Y, İ şapka da A artı B, X, İ şeklinde.
+
+93
+00:31:26,708 --> 00:31:46,604
+Şimdi bu ikisinin farkının minimize edilmesi lazım. O zaman Yi'den Yi'yi, Y şapka i'yi çıkartırsam ne olacak? Yi-A-B-İ olacak. Bunların, bu hataların karelerini topluyorum bakın. Başka bir şey yapmıyorum. Sonra diyorum ki bu...
+
+94
+00:31:46,932 --> 00:31:55,932
+buna S dedik, sum, sum'dan geliyor. Bunun sum'ın A'ya göre değişimi, sum'ın B'ye göre değişimini ayrı ayrı kısmı türevlerini alıp 0'a eşitliyoruz.
+
+95
+00:31:55,932 --> 00:32:01,932
+Buranın kısmı türevini aldığımızda, biraz önce yaptık ama şurada detaylı yapalım, 2'yi başa indiriyoruz.
+
+96
+00:32:01,932 --> 00:32:06,932
+Burada olayım. İfadenin içeriğinin aynısını yazıyoruz.
+
+97
+00:32:06,932 --> 00:32:13,932
+A, işte Y, veya şöyle Y, İ eksi birinde yazayım da öbürlerinde yazayım. Y, İ eksi A eksi B, X, İ.
+
+98
+00:32:14,324 --> 00:32:19,824
+Bir de içerinin türevi yani a'ya göre türevini aldığınızda şimdi a'ya göre türev aldığında bu sabit.
+
+99
+00:32:19,824 --> 00:32:26,824
+a'ya göre türev aldığında bu eksi 1, a'ya göre türev aldığında bu da sabit, bu sıfır. Dolayısıyla eksi 1 çarpanı başarılı geldi.
+
+100
+00:32:26,824 --> 00:32:34,824
+Eksi 1 çarpanını içeriye dağıtırsak ne olacak? Artı a, artı bi, eksi yei'yi bulacağız.
+
+101
+00:32:34,824 --> 00:32:40,624
+Şimdi şu ifadeyi düzenlersek toplam sembolünü dağıtabiliriz. Toplam 2a
+
+102
+00:32:41,395 --> 00:32:49,836
+Toplam artı iki tane bxi, eksi toplam iki çarpı yi. Bakın burada nasıl bir şey var?
+
+103
+00:32:49,836 --> 00:32:58,556
+Bunu dışarıya attığımızda yani bu i eşittir birden n'e kadar şey dediğimizde iki dışarıya çıkacak.
+
+104
+00:32:58,556 --> 00:33:03,556
+Birden n'e kadar a'ların toplamı. Bu nedir? 2 çarpı a çarpı n'dir.
+
+105
+00:33:06,516 --> 00:33:14,816
+x, y'lerimiz bizim neler arkadaşlar? Verideki şeydeki verilerimiz x'lere karşı 3, 5, 8, 10 gibi sayılarımız var. Buradan da
+
+106
+00:33:15,316 --> 00:33:34,516
+Bunların çarpımları ya gelen b'ler yani b çarpı bir şey bir şey gelecek. Şurada da yi'lerin toplamı var. Yani bizim buradaki yi fıtınımızın toplamını alacağız. Bakın burada a artı eksi b eşittir c gibi yani burada bir sabit sayı diyelim c diyelim. Böyle bir şey gelecek. Bakın iki tane.
+
+107
+00:33:34,867 --> 00:33:45,367
+bilinmeyen bir tane denklem. Aynısı burada da geçerli. Burada bu sefer B'ye göre türev alıyoruz. B'ye göre türev aldığımızda elde ettiğimiz sonuç da bu. Bakın şurada da
+
+108
+00:33:45,367 --> 00:33:53,567
+a artı eksi b eşittir, buna c1 diyelim, burada da a artı eksi b eşittir c2 diyelim. Şöyle bir denklem buluyoruz.
+
+109
+00:33:53,811 --> 00:34:03,811
+Yani iki tane iki birimlerine denklemi çözdüğümüzde bulacağımız sonuç bizim A ve B değerlerinde olacak. Dolayısıyla ürettiğimiz minimum hatalı denklemi bulacağız.
+
+110
+00:34:03,811 --> 00:34:10,811
+Şimdi şu ifadeleri biraz düzeltelim denilmiş. Toplam sembolünü içeriye dağıttığımızda bir şurayı bulduk, bir de burayı bulduk.
+
+111
+00:34:10,811 --> 00:34:16,811
+Şimdi bu ifadelerde ne var? İşte şu toplam bir tane bir kere birden n'e kadar bu n çarpı a'dır.
+
+112
+00:34:17,811 --> 00:34:19,811
+Şu b dışarıya çıkar.
+
+113
+00:34:20,148 --> 00:34:40,148
+B çarpı birden n'e kadar x i'lerin toplamı. Bakın bu elimizde var. Şuradaki verilerden var. Şurada birden n'e kadar bu da y i'lerin toplamı. E bu da var elimizde. Tamam mı? Sonra şuraya baktığımızda a dışarıya çıkar x i'ler. x i'lerin toplamını a ile çarpıyoruz. E bu zaten biraz önce elimizde vardı.
+
+114
+00:34:48,724 --> 00:35:14,480
+Şimdi iki başa geldi, şuradaki olduğu gibi. İçerinin aynısını yazdık, yi eksi a eksi bi yazdık. Şuranın b'ye göre türevi eksi b, eksi b çarpı x i'dir. Şeye göre aldığımızda, pardon b'ye göre türevi aldığımızda x i gelecek, eksi x i gelecek. Eksi i içeriye dağıttığımızda bulacağımız şey, işte şuradaki ifade olacak.
+
+115
+00:35:14,480 --> 00:35:24,480
+Dolayısıyla xi'nin karesi buradan geliyor. Şurayı da açtığımızda, şu kısmı da açtığımızda, xi'lerle yi'lerin çarpımlarının toplandı. Bunlar da zaten elimizde var.
+
+116
+00:35:24,480 --> 00:35:31,179
+Bakın, şurası elimizde hazır, bu elimizde hazır, bu elimizde hazır. Sadece a ve b'leri bulmak kalıyor.
+
+117
+00:35:31,251 --> 00:35:35,751
+Yani şurada şunların zaten detaylarını vermiş, bu toplam çok şey değil.
+
+118
+00:35:35,751 --> 00:35:43,251
+Peki burada A ve B'leri bulmak demek ne demek? Aslında bu ifadeyi iki bilinmeyenle iki tane denkleme dönüştürmek demek.
+
+119
+00:35:43,251 --> 00:35:47,751
+Bakın genelde bu tarz şeyler matris formuna dönüştürülüyor arkadaşlar.
+
+120
+00:35:47,751 --> 00:35:55,183
+Şimdi iki tarafta da A, A var, B, B var. O zaman ben bunların önündeki kat sayıları şurada matrise aktarıyorum.
+
+121
+00:35:55,184 --> 00:36:04,184
+Bu katsayı nedir? A'nın önündeki katsayı. Şuradaki toplam x i'dir. Şurada aynı şekilde toplam x i var. Şurada toplam x i'nin karesi var.
+
+122
+00:36:04,184 --> 00:36:13,184
+Bilinmeyenlerimiz a ve b'ler burada. Şurada da toplam y i ve toplam x i var. Bu şekilde yazarak diğerlerini de çok rahat bulabileceğiz. Onun için bu şekilde indirgedik.
+
+123
+00:36:22,356 --> 00:36:32,356
+x şeklinde bir denklem bulacağız ve bu bizim regresyon formülümüz. Artık yeni tahmin edeceğimiz değerleri bunun üzerinden tahmin edebiliyoruz.
+
+124
+00:36:32,356 --> 00:36:43,356
+Şimdi örneğimize bakalım. Örnek bunu biraz daha güzel anlatıyor. Altı tane örneğimiz varmış. Diyor ki altı tane örnekten geçen doğrusal bir regresyon bulacağız.
+
+125
+00:36:43,356 --> 00:36:49,356
+Şimdi formülü yerine koyduğumuzda bize ne gerekiyor? n sayısı zaten burada altı tane bu var.
+
+126
+00:36:49,811 --> 00:37:06,692
+xi'lerin toplamı, xi'leri topladık, 30'muş. Onun için bu 30'u getirdik buraya yazdık. xi'lerin kareleri toplamı varmış. Bunların karelerini aldık her birini. Karelerini ayrı ayrı almak iyi olur. Bir sütun ekledik. 220 bunu da getirdik buraya yazdık. Şunlar bilinmeyenlerimiz.
+
+127
+00:37:07,380 --> 00:37:19,680
+Sonra yi'leri topladık, 66.1. xi'lerle yi'leri, yani şunları karşılıklı olarak çarpıp, bu çarpımların toplamını aldığımızda bu da 470.2 geliyormuş.
+
+128
+00:37:19,680 --> 00:37:33,180
+Şimdi bu ifadede, işte isterseniz determinantla, isterseniz başka iş, işte iki bilinmeyenle iki denklem çözerek artık nasıl yapıyorsanız, a ve b'yi bulduğunuzda a'nın sonucu şuymuş, b'nin sonucu da buymuş.
+
+129
+00:37:33,300 --> 00:37:47,300
+Bakın ne geliyor? Bizim denklemimiz, bulacağımız şey şöyle, 1.038.09 artı 1.99 yani bu y eşittir yaklaşık olarak 2x artı 1 gibi bir şey değil mi arkadaşlar?
+
+130
+00:37:47,300 --> 00:37:55,148
+Yani ben x'in iki katını alıyorum, 1 ekliyorum. İşte bunun iki katını aldım, 4, 1 ekledim, 5. Bakın burada bir hatam var.
+
+131
+00:37:55,219 --> 00:38:11,139
+İşte şurada bunun iki katını alıyorum, 6, 1 ekledim, 7. Aslında burada tam iki katı gibi görünüyor da, çünkü daha eksik verilerle bu şeyi yakarız. Daha böyle detaylı ise tam iki katı gidiyor yani. Bu aslında bir 2x gibi bir şey.
+
+132
+00:38:11,139 --> 00:38:21,059
+Ama bizim doğrusal regüresyonumuz ne yaptı? Yaklaşık olarak böyle bir sonuç burada. Eğer arada bu işleme tahammülü yoksa, şunları yerine koyduğumuzda böyle bir sonuç elde edeceğiz.
+
+133
+00:38:23,027 --> 00:38:27,107
+Burada anlaşılmayan bir şey var mı? Denklemin nasıl türetildiğini gördük.
+
+134
+00:38:28,947 --> 00:38:36,947
+Bir örneğimiz daha var, ona da bakalım. Nokta sayımızı artlıyoruz. Bakın, 1, 2, 2, 3, 3, 4 oluyormuş, 4, 5 oluyormuş.
+
+135
+00:38:37,139 --> 00:38:51,139
+Ne yapacağız? Aynı denklemde şu denklemi yerine yazdığımızda x, i'lerin toplamı, x, i'lerin karelerinin toplamı, y, i'lerin toplamı, x, i, i'lerin karşılıklı çarpımlarının toplamı yazdığımızda şu matrisler dolduruluyor.
+
+136
+00:38:51,139 --> 00:39:01,139
+a ve b değerlerimiz bakın böyle bir şey geliyormuş. Bu da y eşittir yaklaşık olarak 3x artı 1.5 diyebiliriz. Mesela 8 dediğimizde
+
+137
+00:39:01,391 --> 00:39:17,271
+Ne oluyor? 3 kere 8... Bir dakika, yanlış mı yaptık? Pardon, 8 dediğimizde 30. Bir de ekledik 30. Aslında bir dakika biz şurada şey... Arkadaşlar, uyarmıyorsunuz. Bakın. 2x artı 1. Ben x'lerin yerine şunu koyuyorum.
+
+138
+00:39:18,708 --> 00:39:31,108
+4'ü burada yerine koyarsak 2x4, 8 artı 1, 9. Bakın ne oldu? Zaten x ile y arasındaki ilişkiye bakacağız. i burada sadece indisi gösteriyor. Bir değişken değil.
+
+139
+00:39:31,108 --> 00:39:42,108
+Dolayısıyla bakın şurada birebir neredeyse sıfır hatayla bir regüresyon. Burada biraz daha az bir hatayla bir şey buluyoruz. Basit doğrusal regüresyon budur.
+
+140
+00:39:44,115 --> 00:40:03,615
+Şimdi mesela bu doğrusal regressyonda eğer sizden geçirilmesi istenen şey y eşittir sadece ax ise. Bu arada şunu şey yapalım. Bakın bir doğrunun eğimi nasıl bulunuyordu? İki noktası bilinen doğrunun deyimi. Y'deki değişime bakıyorsunuz.
+
+141
+00:40:04,980 --> 00:40:20,980
+y'deki değişim işte burası y2 noktası, şurası y1 noktası değil. y2-y1 bölü x2-x1. Burada da aynı durum soskonusu ama burada bir sürü doğru noktanız var. Şu denklemin şeyine, esasına bakıldığında bunun...
+
+142
+00:40:21,199 --> 00:40:48,599
+kovaryanslı bir istatistiksel çözümü de var. Orada baktığınızda y'lerin toplam değişimine bakılıyor. Yani bir sürü y'lerin toplam değişimine. Sonra x'lerin toplam değişimine oranlama yapıldığında benzer bir sonuç buluyorsunuz. Yani iki noktası bilinen doğru denkleminin daha genelleştirilmiş halinden de bu şey çıkıyor. Ama biz en küçük karelerle bunu anlatıyoruz ki çünkü İlazı'dan göreceğimiz diğer yöntemleri iyi bir temel oluştursun.
+
+143
+00:40:49,108 --> 00:40:59,108
+Devam edelim. Bu sefer burada istediğimiz şey sadece y eşittir ax doğrusuysa, yani y eşittir ax artı b'nin b'si yok.
+
+144
+00:40:59,108 --> 00:41:09,108
+O zaman ben ürettiğim bu y şapka diyelim hatta buna, sadece a'yı bulacağım. Sadece a'yı bulmak ne demek? O zaman bir tane kısmi türev alacağım demektir.
+
+145
+00:41:09,108 --> 00:41:12,812
+Bunu minimum yapabilmek için gerçek değerim var.
+
+146
+00:41:12,851 --> 00:41:37,731
+Bir de bu üreteceğim de sadece a'ya göre türev alırım. a'ya göre burada türev aldığımda ne olacak? İki başa gelecek. Sonra içeriğin aynısını yazacağım. Yani iki çarpı içeriğin aynısı yi eksi axi çarpı içerinin a'ya göre türevi eksi x i'dir değil mi arkadaşlar? Şimdi eksi içeriğe atalım, x i'yi de içeriğe atalım. yi çarpı veya şöyle diyelim.
+
+147
+00:41:38,356 --> 00:41:51,916
+axilerin karesi r-yi çarpı xiyi bulacağız. Yani şu ifade şuna geliyor. Bu gidecek sıfıra eşitlenecek. Şimdi bu ifadeyi sıfıra eşitlediğimizde neyi buluruz?
+
+148
+00:41:51,916 --> 00:42:01,596
+Tabii bir de toplam sembolü var. Toplam sembolü de şurada en başta. Şimdi 2'yi dışarıya atarsak, 2'yi şurada dışarıya atayım, 2 toplam
+
+149
+00:42:02,068 --> 00:42:09,568
+i eşittir 1'den n'e kadar, axi'nin karesi, eksi yi xi. Şu şekilde bir ifade.
+
+150
+00:42:09,568 --> 00:42:19,068
+Bunun toplamı da hatta şöyle açalım. axi'nin karesi, eksi toplam i eşittir 1'den n'e kadar.
+
+151
+00:42:19,251 --> 00:42:29,251
+x, i, y, i'dir. Bu eşittir 0. Bakın ifade çok daha yalın bir hale gelmiş oldu. Peki burada şunu karşıya atarsak ne olur?
+
+152
+00:42:29,251 --> 00:42:41,251
+i eşittir 1'den n'e kadar a x, i'nin karesi eşittir. i eşittir 1'den n'e kadar x, i, y, i. Bakın bu x, i'ler elimizde var, y, i'ler de elimizde var.
+
+153
+00:42:41,251 --> 00:42:46,251
+Burada sadece a'yı bulacağımız bir sonuç geliyor. Peki bu a'yı nasıl buluruz?
+
+154
+00:42:46,592 --> 00:42:55,592
+a'yı dışarıya atarsak iki a olur. Her iki tarafı da şu ifadeye bölersek ne olacak? Şu gidecek, i eşittir.
+
+155
+00:42:55,592 --> 00:43:06,592
+Birden n'e kadar x, i'lerin kareleri. Bakın şu ifadeyi buradan türetmiş olduk. Bir de bunu ikiye böldüğümüzde elde edeceğimiz şey doğrudan bu şey.
+
+156
+00:43:06,592 --> 00:43:13,592
+Hatta ikiye bölmeye de gerek yok. Karşı taraf sıfır olduğu için ikiyi doğrudan sadeleştiririz. Şu iki de gider. Doğrudan a ne oluyor?
+
+157
+00:43:14,228 --> 00:43:25,228
+y'deki değişimin, x, i çarpı y'nin aşağıdaki şeye, işte bakın şu, kovaryans dediğimiz bir şeydir. İstatistikler buna kovaryans diyoruz. Belki gördünüz veya göreceksiniz.
+
+158
+00:43:25,228 --> 00:43:32,228
+x, i'lerle y, i'lerin çarpılığının, x, i'lerin karelerine çarpılıyor. Aslında burada ne var?
+
+159
+00:43:32,288 --> 00:43:43,887
+y'deki değişimi, x'deki değişimi oranlama gibi bir durum var. Bu da bu da anekdot olarak söylemiş olalım. Şuradaki örneğimize bakalım. Bakın bu biraz daha kolay bir model. Çünkü sadece bunun
+
+160
+00:43:44,016 --> 00:43:50,016
+y eşittir ax doğrusu şeklinde bir şekilde üretilmesinden bahsediyoruz.
+
+161
+00:43:50,016 --> 00:43:56,016
+İşte 3'e 2.25'miş, 4'e 3'miş, 5'e 3.75'miş çıktılarımız buymuş.
+
+162
+00:43:56,016 --> 00:44:02,016
+Bize ne gerekiyor? x'ilerin kareleri lazım, bir de x'ilerle y'ilerin çarpımları lazım.
+
+163
+00:44:02,016 --> 00:44:07,016
+a dediğimiz şey nedir? x'ilerle y'ilerin çarpımlarının toplamı, yani 101.75.
+
+164
+00:44:07,016 --> 00:44:11,016
+Şu da x'ilerin karelerinin toplamı, şu da 135, 135.
+
+165
+00:44:12,016 --> 00:44:21,615
+y ne oluyor? 0.7537. Mesela şöyle bir size dataset ger verildi. İşte bir yerde bir tahmin yapmak istiyorsunuz.
+
+166
+00:44:21,615 --> 00:44:27,615
+İşte diyeceksiniz ki mesela 9 için nedir? Eğer yani yeterince zamanınız yoksa
+
+167
+00:44:28,403 --> 00:44:36,403
+x'ler ile y'leri çarpıp toplayıp şunu elde edersiniz. x'lerin karelerini çarpıp toplayıp bunu elde edersiniz. Bu ikisini oranladığınızda
+
+168
+00:44:36,403 --> 00:44:42,403
+yaklaşık olarak y eşittir ax doğrusunu tahmin edebilirsiniz. Yani şu a değerini verdiğinizde bu bir model olur.
+
+169
+00:44:42,403 --> 00:44:48,403
+Biraz daha böyle detaylı istiyorsanız, buna bir b ekleyeyim diyorsanız, biraz önceki formülü kullanmanız gerekiyor.
+
+170
+00:44:48,500 --> 00:44:57,500
+Bu tarz şeyler özellikle hakemlik yaptığınızda veya regresyonla tahmin yapmak istediğinizde ilerleyen zamanlarda mesleğimize karşınıza gelecek.
+
+171
+00:44:57,500 --> 00:45:04,500
+Evet, bu bir doğru bulmaydı. Şimdi bizim çok sevdiğimiz fonksiyonlardan polinomları peki nasıl bulacağız dersek?
+
+172
+00:45:04,500 --> 00:45:14,315
+Bu sefer bizim y şapkamız a artı b x i artı c x i'nin karesi şeklinde olacak.
+
+173
+00:45:14,324 --> 00:45:39,324
+Şimdi burada üçüncü bir terim de karşımıza gelmiyor. Ve minimize etmemiz gereken şey nedir arkadaşlar? Burada şu y şapka dediğimiz şeyle gerçek değerin, farkının, karelerinin, toplamının minimize edilmesi. O zaman biz a'ya göre kısmi türev, b'ye göre kısmi türev, c'ye göre kısmi türev alıp hepsini sıfıra eşitlememiz gerekiyor. Şu ifadenin a'ya göre kısmi türevi nedir? Şimdi iki başa gelir.
+
+174
+00:45:40,179 --> 00:45:43,099
+İki başa geldikten sonra içeriğinin aynısını yazarız.
+
+175
+00:45:45,099 --> 00:45:50,779
+Ve içeriğinin a'ya göre türevini alır. Şimdi içeriğinin a'ya göre türevini almak ne demek? Şurada bir tane bir demek.
+
+176
+00:45:50,779 --> 00:45:55,299
+Bunu bir ile çarpınca hiçbir şey fark etmiyor. Dolayısıyla ne oluyor? İçerisi aynen böyle kalıyor.
+
+177
+00:45:55,299 --> 00:46:01,420
+a artı b x i artı c x i'nin karesi eksi y i. Şu ifadeyi bu şekilde düzenledik.
+
+178
+00:46:01,420 --> 00:46:06,059
+İçeriğinin b'ye göre kısmı türevini almak ne demek? İki başa gelir.
+
+179
+00:46:06,288 --> 00:46:30,288
+İfadenin aynısını yazarız. Yani a artı b x i artı c x i'nin karesi. Buranın b'ye göre kısmi türevini hesaplayınca ne gelecek? x i gelecek. Dışarıya bir x i çarpanı ekliyoruz. Bir de iki başa geldiği için bu geliyor. Aslında ikilerin bir etkisi yok. İkiler toplam sembolünden dolayı dışarıya çıkacak önce.
+
+180
+00:46:30,304 --> 00:46:38,304
+Şuralara gelecek. Sonra her iki tarafı ikiye böldüğünüzde şurası 0 olduğu için etkisiz bir şey olacak. İkiler birazdan gidecekler.
+
+181
+00:46:38,304 --> 00:46:44,304
+İfadenin c'ye göre kısmı türevini aldığımızda bu sefer x, i'nin karesi çarpanını görüyoruz.
+
+182
+00:46:44,304 --> 00:46:56,300
+Bakın burada biraz önce şu matris formunu boşuna vermedim. Şu n sayısı x, i'ler, x, i'nin kareleri. Burada şimdi bir patern yakalayacağız.
+
+183
+00:46:57,715 --> 00:47:02,916
+Şu ifadeyi, şurayı matris formatına çevirmek için toplam sembolünü dağıtıyoruz.
+
+184
+00:47:02,916 --> 00:47:11,115
+Toplam sembolünü dağıtınca ne oluyor? Toplam a gelir. Toplam x i çarpı b gelir. Toplam x i'nin karesi çarpı c gelir.
+
+185
+00:47:11,115 --> 00:47:17,315
+Aynı zamanda toplam eksi y i gelir. Bunu da karşıya atarsak şöyle bir şey buluruz. İkiyi zaten yok ettik.
+
+186
+00:47:17,315 --> 00:47:21,900
+Eksili olan şu y i'lerin toplamını da karşıya gönderdik. Bu kadar.
+
+187
+00:47:21,972 --> 00:47:33,572
+Şimdi şuradan ne gelecek? Toplam x i çarpı a gelecek. Toplam x i'nin karesi çarpı b gelecek. Toplam x i'nin küpü çarpı c gelecek. Toplam eksi x i çarpı yi gelecek.
+
+188
+00:47:33,572 --> 00:47:39,072
+Bunu da karşıya atarsak böyle. Şurası da şu şekilde geldi. Burada anlaşılmayan bir şey var mı?
+
+189
+00:47:40,371 --> 00:47:51,371
+Gayet açık gidiyor şey olarak, adım adım gittiğinizde şurası böyle. Bilinmeyenleri bulmamız için bu ifadeleri matris formatına çevirirsek, çünkü matrisi çözmek daha kolay.
+
+190
+00:47:51,371 --> 00:48:04,371
+Bir kere burada ne var? Birden n'e kadar, a'yı buraya aldığımız için birden n'e kadar sayılar, yani burada bir var aslında. Burası, dolayısıyla bizim veri sayımız n. Sonra x, y'ler.
+
+191
+00:48:04,532 --> 00:48:27,931
+Sonra x i'lerin kareleri, sonra x i'lerin küpleri, sonra x i'lerin üzeri 4. Bakın üç bilinmeyenli bir şey varsa, dördüncü dereceden kuvvetine kadar topluyoruz. Onun bir üstündeki ve bir yanındaki ne oluyor? x i'nin küpü oluyor. Sonra bunun üstündekiler ve yandakiler işte bir şey, diagonal olarak karesi oluyor. Ve bu n sayısına kadar ilerliyor.
+
+192
+00:48:28,371 --> 00:48:35,371
+Daha sonra şurada baktığımızda toplam yi'ler, bunların x, i'ler çarpımları, daha sonra x, i'nin karesiyle çarpımları buluyor.
+
+193
+00:48:35,371 --> 00:48:41,371
+Burada bunları a, b ve c'yi bulduğunuzda polinom yaklaşımını bulmuş oluyorsunuz.
+
+194
+00:48:41,371 --> 00:48:48,371
+Şurada örneğimiz var, işte x ve y'lerimiz varmış. Burada ikinci dereceden bir şey bulalım demişiz.
+
+195
+00:48:48,371 --> 00:48:54,371
+Bakın örnek sayımız kaç tane? Beş tane. x'lerin karelerinin toplamı 24'müş.
+
+196
+00:48:54,931 --> 00:49:04,531
+Bunların karelerinin toplamı 138'miş, bunların küplerinin toplamı 888'miş, 4. dereceden şeylerin kuvvetlerinin toplamı da 61.114 neyse işte şu.
+
+197
+00:49:04,531 --> 00:49:18,931
+Sonra üç bilinmeyenimiz var, A, B, C dedik. Sonra işte y'lerin toplamı 123, x ile y'nin çarpımlarının toplamı 816, x'in karesi ile y'lerin çarpımlarının toplamı 5700.
+
+198
+00:49:22,003 --> 00:49:49,603
+a eksi 3 geliyormuş, b sıfır geliyormuş, c bir geliyormuş. Yani bu x kare eksi 3 fonksiyonumuz. Bakalım mesela, beşin karesi 25, eksi 3 22. Bakın birebir bu sıfır hatayla buluyor. 36'ya 3. Mesela biz burada dördü bulalım dediğimizde, dördü aslında tahmin yapıyoruz. Dördün karesi 16. Yani y eşittir, aslında f şapka x dememiz gerekiyor. Burada f şapka 4 dediğimizde...
+
+199
+00:49:50,003 --> 00:49:58,003
+Bu tahmini değer dördün karesi eksi üçten ne olacak? On üç olacak. Bu bir tahmin olarak yazacağız. Sorumuz var mı?
+
+200
+00:50:00,003 --> 00:50:17,003
+Gayet hani şık bir yöntem, en küçük kareler yöntemi. Şimdi bu dördüncü dereceden bir polinom da olabilir, beşinci dereceden polinom da olabilir. Şimdi bizim şu lap tüyü tekrar hatırlarsak. Polinom tamam.
+
+201
+00:50:17,652 --> 00:50:40,771
+Şimdi arc ile çok işimiz yok. Şimdi bizim logaritmayla da burada pek işimiz olmayacak. Üstel fonksiyonlarımız var arkadaşlar. Yani 2 üzeri x gibi, 3 üzeri x gibi. Bu tarz durumlarda farklı yani bazı verirler vardır ki işte 1'e 2 gelmiş, mesela 1 gelmiş, 2'ye 4 gelmiş, ne bileyim 3'e 9 gelmiş.
+
+202
+00:50:41,076 --> 00:51:04,716
+Hatta 1 artıralım, 4 artı 1, 1 artı 1, artı 1. Yani bu x kare 2 üzeri x, pardon ya öyle değil. Şöyle diyelim. 1'e, 2 üzeri x, 1'e 3 gelsin. 2 üzeri 2, 4, buna 5 gelsin. 2 üzeri 3, 6, 8, şuna 9 gelin. Yani 2 üzeri x artı 1'i...
+
+203
+00:51:04,980 --> 00:51:17,980
+modelleyen bir data olsun. Bunu bilmiyoruz da datalarımız buna yaklaşıyor. Şimdi eksponansiyel bir fonksiyonu, polinom fonksiyonları ile çok iyi temsil edemeyiz. Hata çok artar.
+
+204
+00:51:17,980 --> 00:51:24,980
+İşte bazı veri setleri vardır ki bunlarda, öncelikle bu işi hani neye benzediğini görmek için
+
+205
+00:51:25,684 --> 00:51:34,684
+Siz elinizde verilen x'lerle y'leri grafikle çizdirirsiniz. Bunun plot araçları var. Excel'de bile çizdirebilirsiniz.
+
+206
+00:51:34,684 --> 00:51:39,684
+Şimdi bu çizdirdiğinizde eğer eksponansiyel bir dağılım tabunu polinom yapmaya gerek yok.
+
+207
+00:51:39,684 --> 00:51:46,508
+Veya mesela çift bir fonksiyondur. Çift fonksiyon ne demek? İşte x kare gibi, x üzeri 4 gibi veya...
+
+208
+00:51:46,516 --> 00:52:04,516
+Kosinüs gibi fonksiyonlar. Eğer çift bir fonksiyonsa, çift fonksiyonlar genelde ne oluyordu? Şu eksene göre simetrik, yani y'ye göre simetrik oluyordu. O zaman tek fonksiyon yapmanı bir anlamı yok. Gereksizlere, hatalara gitmememiz gerekiyor. Eğer periyodik bir fonksiyonsa bunu sinüs-kosinüse benzetebiliriz.
+
+209
+00:52:04,692 --> 00:52:12,692
+Farklı farklı şekilde. Logaritmik bir dağılım varsa, mesela logaritma fonksiyonunun şeyine benziyorsun. Logaritma fonksiyonu şöyle falan bir şey de zannediyorum.
+
+210
+00:52:12,692 --> 00:52:19,092
+Eğer böyle bir şeyse logaritma fonksiyonuna benzetebiliriz. Eksponansiyel fonksiyonsa eksponansiyele benzetebiliriz.
+
+211
+00:52:19,092 --> 00:52:27,692
+En küçük kareler yönteminde neye benziyorsa buna uygun bir şey çizmeye çalışacağız. Şimdi burada birinci yaklaşımımız
+
+212
+00:52:28,340 --> 00:52:33,340
+Doğrusal olmayan fonksiyonlarımız şöyle bir şeyse. Bakın bu neye benziyor?
+
+213
+00:52:33,340 --> 00:52:42,340
+A çarpı, A'yı bilmiyoruz, bir kat sayı. E üzeri B çarpı x. Yani bu aslında üstel bir fonksiyon. Şu bizim E sayımız.
+
+214
+00:52:42,340 --> 00:52:54,340
+E sayısı işte doğal logaritmadan falan da geldiği için daha kolay bir şey. Eksponansiyel bir fonksiyon. Bir şu x'in önündeki B'yi bulsak, bir de şu A'yı bulsak çok rahat bulacağız.
+
+215
+00:52:56,019 --> 00:53:09,019
+Bir fonksiyon var elimizde, polinom fonksiyon bakımı ama önündeki katsayı ve şeyi bulmuyoruz. Bundan sonraki terimler işte b-1. terim, b-2. terim gerekiyor. Sadece bunu bulmak istiyoruz.
+
+216
+00:53:09,019 --> 00:53:20,556
+İşte bu tarz durumlarda biraz daha kolaylaştırıcı çözüm yapmak mümkün. Bulmamız gereken a'lar ve b'ler mesela bu durum. Şimdi bu iş için
+
+217
+00:53:21,396 --> 00:53:48,396
+Bunu lineerleştirerek çözüm yapıp lineerleştirme yoluyla şey yapacağız. Şimdi A çarpı B üzeri X'i nasıl lineerleştirme? Her iki tarafın, şunun üzerinden bir bakıyoruz önce, her iki tarafın E'ye logaritmasını alsam, yani Elen yapsam ne olur?
+
+218
+00:53:49,811 --> 00:54:16,203
+E tabanında veya şöyle diyelim direkt yazamıyoruz. Logaritma E tabanında A çarpı E üzeri Bx. Bu ne demektir arkadaşlar? Yani buna y dedik. Şimdi Bx'i başa aldığımda Bx'i başa aldığımda çünkü üst aşağıya gelebiliyor. B çarpı x başa geliyor. Logaritma
+
+219
+00:54:16,436 --> 00:54:32,236
+E tabanında E çarpı A var. Şu birazdan 1 olacak. Bir de burada Y var. Bu yaklaşımla ne yapacağız? Logaritmadan, eksponansiyel şeyden kurtulacağız. Şuradan devam edelim. Buranın logaritmasını aldım, buranın logaritmasını aldım.
+
+220
+00:54:32,788 --> 00:54:47,288
+Bir dakika, a çarpı b üzeri x. Ha, şu e'yi yazmamış arkadaşlar. Yani burada ben e üzerinden gittim de, burada e yerine böyle b üzeri x gibi başka bir sayı var. Yani bu sabit bir sayı. Yine eksponansiyel bir fonksiyon.
+
+221
+00:54:47,288 --> 00:54:56,788
+İki tarafında logaritmasını aldığında, buradan ne gelecek? İşte ln y'ye gelecek. Burada illaki doğal logaritma almak zorunda değil. İsterseniz logaritmayı üç tabanında alın.
+
+222
+00:54:56,815 --> 00:55:01,115
+Ama genellikle doğal logaritma gerçek hayata daha uygun diye alınan bir şey.
+
+223
+00:55:01,115 --> 00:55:07,215
+Buranın logaritmasını aldım, ln y. Şimdi şuranın logaritmasını alacağım. Logaritma a çarpı b üzeri x.
+
+224
+00:55:07,215 --> 00:55:16,215
+Şimdi logaritmada çarpma toplamaya dağıtılabiliyor toplama olarak. Logaritma ln a artı ln b üzeri x şeklinde.
+
+225
+00:55:16,215 --> 00:55:23,815
+İkisi de başa alabiliyorduk. Bakın şu ln a, ln küçük y, x çarpı ln b'yi arkadaşlar.
+
+226
+00:55:24,148 --> 00:55:48,148
+Elen küçük b'yi şu şekilde kabul ediyoruz. Bu diyoruz ki y olsun, büyük y, şu a olsun, şu x olsun. Yani ben verilen x ve y'lerden önce doğrusal regresyon yapıyorum. Büyük a'yı ve büyük b'yi buluyorum. Şimdi büyük a'yı ve büyük b'yi bulduktan sonra şimdi Elen...
+
+227
+00:55:48,980 --> 00:55:55,980
+y eşittir, gerçi zaten aradığımız şey elen y olacak. Büyük a eşittir elen a.
+
+228
+00:55:55,980 --> 00:56:12,980
+Elen a. Şimdi küçük a'yı bulmak demek ne demek? Her iki tarafın iki tabanında e inci kuvvetini alırsak ne olacak? Bu elenden kurtuluruz. Küçük a eşittir e üzeri a olur. Yani bulduğumuz büyük a'nın
+
+229
+00:56:13,588 --> 00:56:21,588
+e üzeri a'sını hesaplayacağız. Büyük a'dan e üzeri a hesaplayalım. Küçük a bulacak. Aynı şekilde şurada da
+
+230
+00:56:21,588 --> 00:56:29,588
+e üzeri büyük b'yi hesaplayalımıza küçük b'yi bulacağız. Doğrusal regula sonu denklemini zaten biraz önce vermiştik.
+
+231
+00:56:29,588 --> 00:56:33,588
+Dolayısıyla bu bize ne yapıyor? Eksponansiyel bir dağılım üretiyor.
+
+232
+00:56:34,036 --> 00:56:57,236
+Örneğimize bakalım. Herhalde teori tarafı anlaşıldı. Diyor ki bu verilerden şöyle bir regresyon yapın. Biz biliyoruz ki doğrusal regresyonun şeyi şu, formülü biraz önce bahsettiğimiz şey bu. Bunları yazdığımızda buradaki büyük A ve küçük büyük B değerlerimiz şuna karşıdaki. Şimdi küçük A neydi?
+
+233
+00:56:57,427 --> 00:57:22,627
+Küçük A'yı e üzeri büyük A, küçük B'yı e üzeri büyük B'ydi. Bunları e üzeri e inci şeylerine aldığımızda elde edeceğimiz şey bakın ne oluyor? İşte şu 5.20, şu da 3.2 imiş. Bakın 5.20, 3.2, 3 üzeri x şeklinde burayı ifade etmişiz. Tamam mı arkadaşlar?
+
+234
+00:57:25,652 --> 00:57:36,152
+Mesela burada denediğimizde, işte 4'ü deneyelim. 3 üzeri 4, 81, buna 5 eklediniz, 86. Bir dakika, 3 üzeri 4, 81 olmaz.
+
+235
+00:57:36,152 --> 00:57:41,152
+Yok, 3 üzeri 4, 81 oluyor. Bir dakika, bu niye böyle?
+
+236
+00:57:41,152 --> 00:57:50,152
+3.3 üzeri şey, şurada bir belki hatamız olabilir de. Bakayım bir hatamız var mı?
+
+237
+00:57:54,643 --> 00:57:57,043
+Üçün kalesinin üçün kalesinin 986.
+
+238
+00:57:57,268 --> 00:58:03,867
+Bunu 81 ile 5'i çarpınca 400 küsur, tabii ben 3.3 üzeri yani şey, şurayı toplama yapar gibi yaptım.
+
+239
+00:58:03,867 --> 00:58:12,028
+3 üzeri 4 desek 81, 81 ile 5 ile çarptık 400. Yani 3.3 üzeri 4 dediğimizde bu zaten 600'e yakın bir değer olacaktır.
+
+240
+00:58:12,028 --> 00:58:18,268
+Bakın birebir aynı değeri elde etmek zorunda değiliz. Bunu yerine koyup yazarsanız, 4 yazarsanız hata 0'dan farklı çıkabilir.
+
+241
+00:58:18,268 --> 00:58:25,268
+Şimdi burada regresyon yapıyoruz. Ama yaptığımız şey, önce Ler regresyon yaptım, büyük A'yı ve büyük B'yi buldum.
+
+242
+00:58:25,268 --> 00:58:49,268
+Aslında yaptığım şey şuradaki işlemlerdir. Yalnız dikkat edin, burada x'lerin toplamı, on dört y'lerin toplamı şey dedik ya, burada x'lerin karelerini alacağım. On dört zaten şey, pardon, x'lerin karelerinin toplamı elli dört, x'lerin toplamı on dört. Ama dikkat edin, şurada bana lazım olan şey, şuradaki değerler.
+
+243
+00:58:49,844 --> 00:59:15,820
+Yani doğrudan çünkü denklemde yaptığım, başta koyduğum kural bunların elenlerini almak üzerine olacaktı. Dolayısıyla şurada ilk bulduğumuz şey y'lerin önce elenlerini alıyorsunuz, şuranın elini aldınız, bunları topluyorsunuz, buraya yazıyorsunuz. Sonra x ile elen y'leri çarpıp bunları topluyorsunuz, onu da buraya yazıyorsunuz. Buna dikkat edelim. Çünkü bu eşitliğin ilk tarafında.
+
+244
+00:59:15,923 --> 00:59:21,604
+Buna göre kabul yaptık. Bu nantıkta anlaşılmayan bir şey var mı?
+
+245
+00:59:24,484 --> 00:59:30,484
+Bir ara verelim isterseniz. 10 dakika sonra geldiğimizde kalan kısımdan devam ederiz.
+
+246
+00:59:34,675 --> 00:59:36,675
+Saat 2'yi on geçe görüşmek üzere.
+
+247
+01:12:56,212 --> 01:12:58,212
+Evet arkadaşlar, ses geliyor mu?
+
+248
+01:13:07,764 --> 01:13:08,963
+duyuyor musunuz?
+
+249
+01:13:14,899 --> 01:13:42,340
+Üyüyor musunuz yoksa uyuyor musunuz? Şimdi, bu bahsettiğim şey a çarpı b üzeri x. Neydi de bakın burada da a çarpı x üzeri b. O zaman burada ne yapmak gerekiyor? Her iki tarafın yine logaritmasını alırsam, birinci tarafın logaritması ln y olur. Bir ikinci tarafın logaritması ln a çarpı ln x üzeri b. Bunu da toplama şeklinde yazarız.
+
+250
+01:13:43,028 --> 01:13:52,028
+x üzeri b şeklinde yazarız. Şu formata çeviriliyor. b'yi de başa alırsak, bakın ne oluyor? Denkten bu hale geldi.
+
+251
+01:13:52,028 --> 01:14:05,615
+Burada ln küçük ye'yi büyük ye, şu ln x çarpı b'yi büyük b çarpı x, şu ln küçük a'yı da büyük a şeklinde formatında yazıyorum.
+
+252
+01:14:05,615 --> 01:14:18,615
+O zaman biz verilen denklemde yine doğrusal regresyon yapacağız. Ama daha sonra doğrusal regresyonu küçük ağları, büyük ağları küçük ağlara çevireceğiz.
+
+253
+01:14:18,615 --> 01:14:25,228
+Burada büyük B doğrudan dikkat ederseniz bakın şurayı B çarpı ln x
+
+254
+01:14:26,003 --> 01:14:32,663
+şeklinde yazdığımızda B çarpı x olarak. Burası doğrudan büyük ve küçük eşit olacak.
+
+255
+01:14:32,663 --> 01:14:41,103
+a da elen a eşittir büyük a olduğu için a eşittir e üzeri büyük a şeklinde küçük a eşittir e üzeri büyük a şeklinde olacak.
+
+256
+01:14:41,103 --> 01:14:44,943
+Sadece şurada yapacağımız şey işin başında
+
+257
+01:14:45,152 --> 01:14:54,471
+Hani şuradaki ifadeyi doğrudan yazarken, x'lerin olduğu yere ln x'lerin toplamını yazacağız.
+
+258
+01:14:54,471 --> 01:15:05,471
+Aslında keşke şunu büyük b x artı büyük a şeklinde yazsaymışız. Şurayı şununla eşleştiriyorum, burayı bununla eşleştiriyorum. N sayımız
+
+259
+01:15:05,648 --> 01:15:15,648
+Şurada ne vardı? X'lerin toplamı vardı ama artık X'lerin toplamı yerine, X'lerin elenlerinin toplamı. Bunun elenlerini aldık. Bunların toplamı 2.78.
+
+260
+01:15:15,648 --> 01:15:30,648
+Sonra X'lerin karelerinin toplamı yerine, X'lerin elenlerinin karelerinin toplamı. Bu da işte bunların şuradan karelerini aldığımızda bunlar geliyor. Bu toplam değeri de burada. Bu mahzisi de olurdu. İki bilim yerimiz var A ve B.
+
+261
+01:15:31,796 --> 01:15:39,796
+Sonra y'lerin toplamı değil, bize y'lerin elenlerinin toplamı lazım. İşte yedi nokta küsur.
+
+262
+01:15:39,796 --> 01:15:46,796
+Sonra x'lerin elenleriyle y'lerin elenlerinin çarpımlarının toplamı o da şurada sekiz nokta küsur.
+
+263
+01:15:46,796 --> 01:15:48,796
+a ve b değerleri buradan.
+
+264
+01:15:48,819 --> 01:16:04,939
+İşte hesaplandığında bulunan değerler a şu geliyormuş, b de bu geliyormuş. Şimdi b zaten bu aynı zamanda küçük b'dir. Küçük a da e üzeri a'dır. İşte o da e üzeri 1.099 falan diyeceğiz.
+
+265
+01:16:15,743 --> 01:16:17,743
+fonksiyon buluyoruz.
+
+266
+01:16:21,183 --> 01:16:25,183
+Bakın eksponansiyel, aslında bu bir şey eksponansiyel değil, polinom.
+
+267
+01:16:25,183 --> 01:16:29,384
+Ama şey polinom da değil bu, çünkü bu şurası tam sayı değil.
+
+268
+01:16:29,384 --> 01:16:34,183
+Bir fx fonksiyonu yaklaşım olarak bulduk.
+
+269
+01:16:34,515 --> 01:16:59,115
+Bir tane daha bakalım. Bir şey var, a çarpı e üzeri bx eğrisinden geçirmek istiyorum. Bakın, e üzeri b çarpı x. Biz burada a ve b'yi bulacağız. Şimdi y eşittir a çarpı bx üzeri bx yazdığında, a çarpı e üzeri bx yazdığında, iki tarafın elini alırsak, burası elen y, şurası elen a, burası da elen e üzeri...
+
+270
+01:16:59,475 --> 01:17:14,475
+Elen e çarpı b üzeri pardon, elen e b üzeri x. Şöyle diyelim, elen söylemesi bazen zor oluyor. Şu b x başa gelir. Elen e de birdir. Ne oldu?
+
+271
+01:17:15,667 --> 01:17:31,067
+Şurası Elen-Y, burası Elen-A, burası Bx. Bunu doğrusal regresyon formunda yazarsak, yani burada Y'ler yerine Elen-Y'ler, burada büyük A yerine Elen-A, burada büyük Bx yerine küçük Bx olacak.
+
+272
+01:17:31,067 --> 01:17:43,467
+Doğrusal regresyon formülümüzde burası A'ya karşılık gelecek. Yani şurada büyük A eşittir Elen-A dediğimizde.
+
+273
+01:17:44,756 --> 01:17:52,996
+küçük A dediğim şey, E üzeri büyük A olacaktır. Yerine, denklemde yerine yazdığımızda, bize x'ler var, y'ler var.
+
+274
+01:17:52,996 --> 01:17:54,756
+Burada...
+
+275
+01:17:54,963 --> 01:18:00,363
+y'lerin elenini alıp toplamak gerekiyor. Sadece şurada x'lerin toplamı zaten 3 olarak var.
+
+276
+01:18:00,363 --> 01:18:05,363
+x'lerin karelerinin toplamı da işte 5 olarak var. Burası aynı. a ve b değerlerimiz var.
+
+277
+01:18:05,363 --> 01:18:12,363
+Sonra işte şu çarpan kısmı da işte burada y'lerin toplamı, y'lerin elenlerinin toplamı.
+
+278
+01:18:12,363 --> 01:18:16,363
+y'lerin elenleriyle x'lerin çarpımlarının toplamı.
+
+279
+01:18:16,576 --> 01:18:23,576
+Şu eşitlikten yerine gelecek. Buradan büyük A ve büyük B'yi bulduktan sonra büyük B, küçük B'ye eşittir.
+
+280
+01:18:23,576 --> 01:18:34,576
+Küçük A'da E üzeri büyük A olacağı için yerine yazdığımızda bakın ne oluyor? Şöyle bir eşitlik denklem buluyoruz.
+
+281
+01:18:34,576 --> 01:18:38,576
+Bundan sonra tahminlerinizi bunun üzerinden yürütebilirsiniz.
+
+282
+01:18:39,923 --> 01:18:51,523
+Evet, bakın bu üç yöntem hep genel bir yöntemdir. Birçok yerde karşınıza gelecek ilerleyen zamanda da beri madenciliği dersi falan kılırsanız.
+
+283
+01:18:51,523 --> 01:19:01,523
+Yaklaşım gayet basit. En küçük kareler yöntemini doğrusal enter regresyona uyarlıyoruz. Sonra kat sayılarımızı uyguladığımız yönteme göre değiştiriyoruz.
+
+284
+01:19:06,355 --> 01:19:17,075
+a üzeri x çarpı b formunda veya x üzeri a çarpı b formunda bir eşitlikle geçirin dersem,
+
+285
+01:19:17,075 --> 01:19:22,915
+ne yapıyorsunuz? Bunu doğrusal regresyona benzeterek, doğal logaritma, elen alarak,
+
+286
+01:19:22,915 --> 01:19:33,075
+bunu y büyük y eşittir, büyük a x artı b formuna çeviriyorsunuz. Anlaşılmayan bir şey var mı bu yaklaşımda?
+
+287
+01:19:40,916 --> 01:19:44,416
+Doğursal regresyonda orijinal x'leri kullanıyorduk.
+
+288
+01:19:45,556 --> 01:19:53,716
+Bu ürettiğimiz, dönüştürdüğümüz şeyde bunların elendilerini kullanıyoruz. Bunun için burada dikkat etmeniz gereken şey, bakın şu yaklaşımların her birinde,
+
+289
+01:19:54,115 --> 01:20:00,316
+neyin elini alacaksınız, neyin elini almayacaksınız, şu eşitliklerden çıkartmanız gerekiyor. Çünkü o matrise yazarken
+
+290
+01:20:01,011 --> 01:20:09,691
+Doğrudan x'lerin toplamı, y'lerin toplamı diye yazmıyoruz. Örnekleri dikkatle tekrardan incelerseniz üzerinden bir defa geçerseniz anlaşılmayan bir şey kalmaz.
+
+291
+01:20:09,691 --> 01:20:17,891
+Burada normal doğrusal regresyon eşitliğimiz böyle çıkıyordu. Ama biz burada ne yapıyoruz?
+
+292
+01:20:17,891 --> 01:20:26,931
+Bu durumda, şu durumdakinde y'lerin elendiri ile y'lerin elendirini x ile çarpıyoruz.
+
+293
+01:20:27,604 --> 01:20:38,004
+Veya burada bir başka yaklaşımımız var. Bu üç farklı durumu incelerseniz, tekrar üzerinden geçerseniz, herhalde bununla alakalı başka bir sorun olmaz. Çünkü gayet basit bir yaklaşım.
+
+294
+01:20:38,004 --> 01:20:51,804
+Şimdi, bir diğer yaklaşımımız arkadaşlar, bir veri dağılama. Eğer pirulik bir şey gösteriyorsa, işte bunu çizdirdiniz egzana falan. O zaman bunu sinüse veya kosinüse benzetebiliriz.
+
+295
+01:20:52,435 --> 01:21:14,155
+Yani bu bir sinüs gibi, kosünüs gibi bir şey olabilir gibisinden bir yaklaşımla bu işlem yapılıyor. Şimdi sinüs ve kosünüs denklemleri nasıl ifadelerdir? Bir sinüsün önünde bir kat sayı vardır. A1 diyelim buna. Sinüs çarpı. Şurada x'li bir şey vardır. x'in önünde de aslında işte buraya da b diyelim.
+
+296
+01:21:18,707 --> 01:21:41,188
+b1 çarpı x deriz. Hatta x1 denemdir. Sonra a2 çarpı sinüs b2 çarpı x gibi. Burada da bulunması gereken şeyler aslında şu a1'ler ve bunun önündeki kat sayılar olacak. Şimdi biz herhangi bir fonksiyonun veri dağılımını...
+
+297
+01:21:41,876 --> 01:21:50,036
+sinüslerciğisinden, sadece sinüslerciğisinden, sadece kosünüslerciğisinden yazabiliyoruz. Aslında bu Fourier analizinin bir temeli.
+
+298
+01:21:50,036 --> 01:21:58,036
+Temelde yaptığımız en genel denklem şu, bunun bir tane sabit olan bir terimi oluyor. Bu A0, bu sabit bir sayı.
+
+299
+01:21:58,036 --> 01:22:07,156
+Yani x yerine 0 verdiğiniz, elde edeceğiniz değer gibi. Sonra n tane kosünüs ve sinüsün toplamı gibi bir şey olacak.
+
+300
+01:22:07,283 --> 01:22:20,884
+Dikkat ederseniz, kosünüsün önünde AK diye, sinüsün önünde BK diye kat sayılar var. Bunları tespit edersek, eğer periyodik dağılan bir verimiz varsa, bunları sinüs ve kosünüslerin toplamı şeklinde yazabiliyorsunuz.
+
+301
+01:22:20,884 --> 01:22:33,884
+Tabi size terim sayısının falan verilmesi gerekiyor. İşte diyor ki üç tane terim içerecek şekilde yazacaksınız derse ve sadece kosünüsler olacak derse, bu birden üçe kadar yaklaşık bir şey yazabilirsiniz.
+
+302
+01:22:35,283 --> 01:22:58,683
+Şimdi burada hata hesaplamasında yine aynı en küçük kareleri kullanacağız. Türevini alıp sıfıra eşitlediğimizde, örneğin şu ifadenin, mesela bu kadar terim verirsin. Yani birinci kat sayılar var, ikiler yok. Şimdi burada bizim A0'ı bulmamız gerekiyor, A1'i bulmamız gerekiyor, B1'i bulmamız gerekiyor.
+
+303
+01:22:59,028 --> 01:23:22,628
+Önce birinci dereceden türev alacağız. Yani bunun bir türevini aldığımızda bir değer, yani şuradaki ifadelerin türevini aldığımızı düşünün. İşte y1- a0 artı a1 cos x1 artı d1 sin x1 şeklinde. Sonra bir daha türev alıyorsunuz. Bunlar yine bir matris formatında yazılıyor. Şurada gelecek.
+
+304
+01:23:22,931 --> 01:23:32,531
+matris formatından A1, A2, B1, B2 hangileri varsa bunları kaç bilinmeyenli denklem sistemi çözeceksiniz ona getiriyoruz.
+
+305
+01:23:32,531 --> 01:23:41,531
+Şimdi örneğin şurada genelleştirelim. Diyelim ki bizim bulacağımız şey işte şunlar A0, A1 ve B1. En genel formumuz bu.
+
+306
+01:23:41,531 --> 01:23:49,531
+Bulmamız gereken şey A0 yani biraz da özel halini, üç terimli halini istiyoruz. Bu ifadenin
+
+307
+01:23:50,131 --> 01:23:57,131
+A0'a göre türevi, A1'e göre türevi, B1'e göre türevini alıp hata fonksiyonunu işletirsen,
+
+308
+01:23:57,131 --> 01:24:02,131
+şimdi gerçek değerden ürettiğim değeri çıkarttığında hatayı buluyordum.
+
+309
+01:24:02,131 --> 01:24:08,131
+Şu ifadenin A0'a göre türevini alacağım, ondan sonra bunun A1'e göre türevini, B1'e göre türevini.
+
+310
+01:24:08,131 --> 01:24:10,859
+A0'a göre türevi almak ne demek?
+
+311
+01:24:10,931 --> 01:24:20,291
+Bu ifade çarpı, bu ifadenin kendisi yani a sıfıra göre türevgenle 1 erdeneceksiniz. İşte yine tabi bunda en küçük kareler var yani.
+
+312
+01:24:20,560 --> 01:24:47,560
+Aslında nedir burası? Yi-Y-Türev-İ diyelim. Bu Y-Türev-İ de neye eşit? Şurada yazalım. Bunun karesini alıyorsunuz. Y-Türev diyorum pardon, Y-Türev-İ A0 artı A1cos-X-İ artı B1-Sin-X-İ. Böyle bir formatta. Bu ifadenin A0'a göre türevini aldığınızda
+
+313
+01:24:47,828 --> 01:24:52,828
+İfadenin başının yukarıdaki ikiyi buraya getirdiniz, iki.
+
+314
+01:24:52,828 --> 01:25:01,828
+İçerinin aynısını yazdınız, bu da a0 artı a1 cos x i artı b1 sin x i işte bir de yi var gerçek değer.
+
+315
+01:25:01,828 --> 01:25:07,828
+Şimdi şunun türevini aldığında da o da bir gelecektir a0'a göre türevi. Dolayısıyla burası böyle bir şey oldu.
+
+316
+01:25:08,595 --> 01:25:16,595
+Sonra A1'e göre türevini alıyorsunuz. Şimdi burada A1'e göre türevi aldığımızda cosin üstü bir çarpan çarpan olarak gelecektir.
+
+317
+01:25:16,595 --> 01:25:22,595
+B1'e göre türevi aldığımızda da sin üstü bir çarpan gelecektir. Bakın içerisi hemen hemen aynı.
+
+318
+01:25:22,595 --> 01:25:28,595
+Bunu matris formatında yeniden yazmak için toplam sembollerini dağıtırsak,
+
+319
+01:25:35,699 --> 01:25:51,899
+Sonra işte şunları dağıtıyoruz. Bunun matris formunu aldığımızda n veri sayımız cos'ların toplamı, cos'ların kareleri, sinüsler, şuradakilerin hepsi yerine geliyor. Şurası bakın iyi arkadaşlar, şöyle yanlış olmasın.
+
+320
+01:25:52,112 --> 01:25:59,112
+işte A0'lar, A1'ler, B1'ler var toplam bulmamız gerekenler. Şunlara da değerlendiriyoruz. Burada her şeyi biliyoruz. Sadece şunları bilmiyoruz.
+
+321
+01:25:59,112 --> 01:26:11,112
+Matris'te yerine koyduğumuzda A0, A1 ve B1 değerlerini çok rahat bulabileceğiz. Eğer bunu biraz daha genişletelim dersek, hani bir terim daha, bir grup terim daha ekleyelim dersek,
+
+322
+01:26:16,847 --> 01:26:38,087
+A2'lere göre, B2'lere göre kısmı türevler alıp, 5 gidinmeyenli 5 tane denklem bulacağız. Bakın ne kadar korkunç oluyor. Şimdi burada çoğu şey aslında 0. Şimdi birden n'e kadar cost'ların toplama 0 gelecek. Niye? Bütün şeyleri topladığınızda, cost'ların x'leri topladığında sonucu 0'a gidiyor.
+
+323
+01:26:38,304 --> 01:26:44,463
+Ondan sonra sinüslerin toplamı 0. Bu matriz genellikle 0'lardan oluşan bir matriz haline geliyor.
+
+324
+01:26:44,463 --> 01:26:55,103
+Ve bulması çok daha kolay bir formata getiriyorsunuz. Daha sonra bu değerleri, bu 5 bilmeyenli 5 denklem çözümü yaklaşımıyla bulduğunuzda
+
+325
+01:26:55,103 --> 01:27:04,103
+bu değerler üretilmiş oluyor arkadaşlar. Şimdi şuna bakalım. Çoklu regresyon var.
+
+326
+01:27:05,619 --> 01:27:12,940
+Örneğin, size verilen değerler bir derece cinsinden verilmiş ve bu derece cinsinden verilen değerlerin karşılıklarını görüyoruz.
+
+327
+01:27:12,940 --> 01:27:19,780
+Diyor ki bu verilerden şöyle bir veri üretelim. O zaman bizim bunu ne yapmamız gerekiyor?
+
+328
+01:27:19,780 --> 01:27:27,780
+A0 ve A1'e göre kısmi türevler cinsinden yazmamız gerekiyor. Kısmi türevlere göre denklemi yazdığınızda şunu bulacaksınız.
+
+329
+01:27:28,083 --> 01:27:40,884
+n çarpı a0 artı a1 yani uzun uzun tekrar türev almak, bu ifadenin türevini alın, sıfıra işleyin, onun türevini alın, işte a0'a göre türev, a1'e göre türev alın, sıfıra işleyin, şuradaki denklem bulursunuz.
+
+330
+01:27:40,884 --> 01:27:49,484
+y'lerin toplamı bizde var, sinüs x'lerin toplamı var, sinüs kare x'lerin toplamı var, y çarpı sinüs x'lerin toplamı var.
+
+331
+01:27:49,484 --> 01:27:53,684
+Formül değerine koyduğumuzda a0 ve a1'i bu şekilde bulmuş oluyorsunuz.
+
+332
+01:27:54,163 --> 01:28:17,163
+Uzun uzun yapmıyorum. Sizden de herhangi bir şekilde hocam şurayı anlamadım diye bir geri bildirim gelmediği için herhalde anlaşılıyor diye biliyorum. Öyle düşünmek istiyorum. Yoksa anlamadığınız bir şey varsa lütfen uyarın, ona göre detaylandıralım. Sonra bu ifadeyi şurada yerine koyarsak, demek ki bu veri dağılımı şu şekilde regresyonla temsil edilebiliyormuş.
+
+333
+01:28:22,131 --> 01:28:33,131
+Bu işin anahtar kelimesi kısmi türev arkadaşlar. Hangi türden regresyon yapacaksanız, en küçük kareler yaklaşımıyla tabii bu işi yapıyorsak,
+
+334
+01:28:34,131 --> 01:28:41,631
+o yaklaşıma ait uydurmak istediğiniz denklemin parametreleri, işte bilinmeyenler, yani sinüs x sabit zaten.
+
+335
+01:28:42,131 --> 01:28:49,131
+Burada a0 ve a5'ye göre türev alıp, denklemleri çıkartmak gayet kolay. Bakın burada
+
+336
+01:28:49,492 --> 01:29:00,492
+Benzer bir şey, bu sefer cos'e göre. Burada da cos'e göre bu değerleri, denklemi şurada çıkarttı. Çıkarttıktan sonra bu dağıl şu şekilde gösteriliyormuş.
+
+337
+01:29:00,492 --> 01:29:05,492
+Değerleri yerine koyduğunuzda yaklaşık olarak aynı sonuçları bulabilirsiniz. Ondan sonra gidin mesela,
+
+338
+01:29:05,492 --> 01:29:16,492
+ne bileyim 50 derecenin karşılığı nedir deseniz, 1.6 eksi 2 çarpı cos, 50'nin sonucu neyse, onu işte cos trigonometri cetvelinden bakın.
+
+339
+01:29:16,851 --> 01:29:18,851
+yerine yazabiliyorsunuz.
+
+340
+01:29:20,851 --> 01:29:24,851
+Şimdi burada kullandığımız bütün durumlar
+
+341
+01:29:25,851 --> 01:29:30,851
+y eşittir fx fonksiyonu şeklinde aslında y şapka f şapka x
+
+342
+01:29:31,851 --> 01:29:37,851
+şeklinde doğrular veya eğriler üretmek üzerine kurulanmış bir durumda.
+
+343
+01:29:38,851 --> 01:29:41,851
+Dikkat ederseniz hep tek değişkenimiz var.
+
+344
+01:29:43,315 --> 01:29:49,435
+Çoklu regresyon olduğu durumda birden fazla değişken varsa buna da çoklu regresyon diyoruz.
+
+345
+01:29:49,435 --> 01:29:53,835
+Örneğin bir iki boyutlu, üç boyutlu bir şey oluşturacaksak.
+
+346
+01:29:53,835 --> 01:30:06,956
+Bunu Q, D ve S isminde iki tane değişkenimiz var. Yani Q öyle bir fonksiyon ki, F fonksiyonu şapka diyelim, D ve S'ye göre kontrol ediyor. İki boyutlu bir değişken.
+
+347
+01:30:07,988 --> 01:30:16,988
+Yine aynı mantıkla arkadaşlar, bu bir eksponansiyel dağılım gibi düşünürsek, her iki tarafın logaritmasını aldığınızda veya elenini de alabilirsiniz.
+
+348
+01:30:16,988 --> 01:30:28,988
+Bu elen, logaritma, işte logaritma olarak aldığımızda logaritma Q, buna Y dedik. Logaritma A0 çarpı. Çarpı olduğu için araya bir artı gelecek.
+
+349
+01:30:28,988 --> 01:30:34,828
+Bu işte A0'a belli bir sayı, işte A diyebiliriz.
+
+350
+01:30:34,899 --> 01:30:48,420
+Sonra a1 çarpı logaritma d, sonra a2 çarpı logaritma s diyebiliriz. Bakın şurası bir parça, bu bir değişken, şu bir başka değişken yani bu iki boyutlu bir değişken. Bunlara x1 ve x2 demişiz.
+
+351
+01:30:48,420 --> 01:30:57,539
+Yani logaritma d'yi x1 ile, logaritma s'yi de x2 ile göstereceğiz. Sonra bunların iki boyutlu bir...
+
+352
+01:30:58,484 --> 01:31:24,164
+doğrusal regresyon şeyini yazıyoruz, denklemini yazıyoruz. Bakın burada ikinci bir boyut geldi. Normal doğrusal regresyonda ne var? Tek boyutluydu, tek değişkeniydi. Burada iki değişken var. İkinci değişken olması çok bir şeyi fark ettirmiyor. Ne yapıyor? x2'nin önüne bir tane katsayı getiriyorsunuz. Şimdi bizim fonksiyonumuz buysa o zaman bulmamız gereken a0, a1 ve a2 değerlerimiz. Her yerin türevini alıp 0'a eşitliyoruz yine.
+
+353
+01:31:25,140 --> 01:31:31,800
+Şu ifadenin türevini alıp 0'a eşitlediğimizde, a0'a göre türevini alıp 0'a eşitlediğimizde ne olacak?
+
+354
+01:31:31,800 --> 01:31:38,940
+İşte birinden biri gelecek. a1'e göre türevini aldığımızda öbürüne x1 gelecek. a2 göre türevi aldığımızda da a2 gelecek.
+
+355
+01:31:38,940 --> 01:31:41,440
+Denklem aslında daha basit. Herhalde şuradaydı o.
+
+356
+01:31:41,440 --> 01:31:51,640
+Evet, a0'a göre ifadenin türevini aldığımızda yi eksi, yani bu gerçek değer, eksi şuradaki değer. Buranın işte iki başa geldi.
+
+357
+01:31:51,760 --> 01:31:57,260
+içeriği aynen yazdık. a0'a göre türev aldığımızda bu da 1'di. Aynen yazdığımızda şunu buluruz.
+
+358
+01:31:57,260 --> 01:32:11,060
+a1'e göre türev alalım. a1'e göre türev aldığımızda sadece burada x1'e göre, şuradaki birinci değişkenimize göre bir katsayı çarpanı iki tarafa geliyor.
+
+359
+01:32:11,060 --> 01:32:19,560
+Şuna göre türev aldığımızda burada da x2'ye göre. Bakın burada karem diye bir şey yok çünkü x1 bir başka değişken, x2 bir başka değişken. Aslında burada
+
+360
+01:32:19,699 --> 01:32:28,199
+iki boyutlu bir şey doğru düzlem üretiyoruz. Dümdüz bıçak gibi bir şey düşünün, öyle bir şey tahmin ediyoruz.
+
+361
+01:32:28,916 --> 01:32:44,916
+Bunları işte türevlerini sıfıra eşitlediğimizde A0, A1 ve A2'yi bulmanın yolu bakın şuradaki x1'in i'leri, x1'in i'leri, daha sonra x1'in kareleri, x2'ler falan da işte şu denklemler yani bunları yerine yazdığınızda bunları bulacaksınız.
+
+362
+01:32:44,916 --> 01:32:55,916
+Önlerindeki A0, A1 ve A2 kat sayıları buradan bilinmeyen olarak gelecek. Yani bu nasıl bir veri seti? D var, S var, iki boyu şey, bir de Q var.
+
+363
+01:32:56,032 --> 01:33:07,432
+Biz D'yi x1 ile, bunu x2 ile gösterdik ama başta ne yaptık? Logaritma aldık çünkü burada eksponansiyel bir dağılımdan bahsediyoruz.
+
+364
+01:33:09,432 --> 01:33:19,432
+Şimdi son örneğimiz. Kanal içindeki akışa ilişkin yapılan bir düzenekte boru içindeki akışkanın miktarı borunun çapı ve eğimiyle veriliyor.
+
+365
+01:33:19,432 --> 01:33:22,432
+Yani borudan akan bir miktar var, quantity.
+
+366
+01:33:22,771 --> 01:33:29,572
+Bu borunun çapı diameter ile eğim, slope dediğimiz iki tane değişken ile kontrol edilmiş. İki boyutlu bir sistem burası.
+
+367
+01:33:29,572 --> 01:33:39,572
+Buna göre diyor ki, A0, A1 ve A2 nedir? Şimdi çap, şu, eğim, bu, akan verinin miktarı da bu.
+
+368
+01:33:39,572 --> 01:33:47,500
+Şimdi bizim üreteceğimiz denklem buysa, bu ifadeyi doğrusal regresyon formuna dönüştürmemiz gerekiyor.
+
+369
+01:33:47,507 --> 01:33:53,007
+Her iki tarafın logaritmalarını aldığımızda şöyle bir doğursal regula falsi şeyi bulacağız.
+
+370
+01:33:53,007 --> 01:33:58,007
+Bunun biraz önce A0, A1 ve A2'nin nasıl bulacağını eşitlikte göstermiştik.
+
+371
+01:33:58,007 --> 01:34:10,007
+Şurada veri sayısı var. Şurada diğer elimizdeki verilerin, y'lerin toplam, logaritmalarının toplamı, d'lerin, logaritmalarının toplamı, s'lerin, logaritmalarının toplamı, hepsi burada var.
+
+372
+01:34:10,007 --> 01:34:15,007
+Burada yerine yazıyoruz. Yerine yazdıktan sonra A0, A1 ve A2'yi bulduğumuzda bakın.
+
+373
+01:34:15,636 --> 01:34:31,236
+Akan sıvının miktarının formülü şu eşitlikte ki gibiymiş. Ben D yerine ve S yerine yeni bir değer, burada olmayan bir değer yazarsam, akacak suyun miktarını tahmin edebiliyorum.
+
+374
+01:34:31,236 --> 01:34:41,236
+Tabi A1 ve A2'yi bulduğumda, bunların D ve S cinsinden karşılıklarını bulmam gerekiyor.
+
+375
+01:34:41,619 --> 01:34:57,219
+Şurada zaten söyledik, şu A1 şundakinden farklı bir şey. Bunların karşılıklarını yine tekrardan logaritma ve eksponansiyel işlem olarak hesapladığımızda elde edeceğimiz sonuç bu oluyormuş. Sorunuz var mı arkadaşlar?
+
+376
+01:35:02,612 --> 01:35:17,012
+Evet, bu konuyla alakalı anlaşılmayan bir şey olursa, gelecek hafta sınavımız var. Şimdi sınavın saati belli değil. Belli olmamasının sebebi, burada şey sorayım, nesneye dayalı programlama dersi alan var mı aranızda?
+
+377
+01:35:23,123 --> 01:35:47,123
+Yok herhalde. Şimdi o dersin hocalarıyla, o dersle bir aynı saat çakışıyor. Acaba o ders alanlar sınav yapacak mı diye bir endişemiz var. Onu bir giderelim. Ne olduğunu bir tespit edelim. Eğer onlar sınav yapmayacaklarsa, size bir sınav hakkında en geç cuma gününe kadar bilgi vereceğiz.
+
+378
+01:35:47,412 --> 01:35:54,731
+Sınav hakkında işte zaten bütün konular dahil, şu ana kadar gördüğüm konular dahil ve test olacak.
+
+379
+01:35:54,731 --> 01:36:03,012
+Birinci sınavda olduğu gibi online işte soru sayısı 20 veya 25 işte geri dönme şartı falan hemen hemen her şey aynı.
+
+380
+01:36:03,012 --> 01:36:07,891
+O konuda ayrıca bilgi veririz. Sınav saatiyle birlikte bu bilgileri de detaylarına aktarır olacağız.
+
+381
+01:36:07,891 --> 01:36:14,891
+Sadece şu an sınav saati konusunda bir belirsizlik var. Şimdi bizim konularımız bitti arkadaşlar.
+
+382
+01:36:15,220 --> 01:36:26,700
+Gelecek hafta sınav yapacağımız için sınav öncesinde belki regresyonla alakalı bir iki soru çözme imkanımız olursa soru çözeriz. Sınavın saatine göre, başlama saatine göre bu belki olabilir.
+
+383
+01:36:26,700 --> 01:36:37,140
+Ondan sonraki haftalarda iki hafta süremiz kalıyor zaten. Son 31'i olduğu hafta zaten son dersimiz. Bu iki haftada da proje kontrolleri yapacağız.
+
+384
+01:36:37,300 --> 01:36:48,899
+Proje kontrollerinde de ayın 23'ünde siz projeleri son yüklüyorsunuz. Size bir kontrol çizelgesi göndereceğim.
+
+385
+01:36:48,899 --> 01:37:00,899
+İşte diyeceğim ki [öğrenci] şu saatte seni kontrol edeceğiz. İşte şu hafta, şu saatte. Bu tamamen rastgele olarak bir kura mantığıyla yapacağım arkadaşlar.
+
+386
+01:37:00,899 --> 01:37:03,899
+Hani önce gönderen, önce gibisinden bir şey yok.
+
+387
+01:37:03,988 --> 01:37:16,388
+veya işte önce ben kontrol ettirsem veya benimki gece kalsa diye bir şey yok. Ödel 23'ünde son testim tarihinden itibaren bu işler bitiyor. Zaten online yıldıza yüklüyorsunuz.
+
+388
+01:37:16,388 --> 01:37:31,388
+Sonraki iki haftada size dağıtacağım çizelgeye göre ayın 24'ünde veya 31'inde kontrol yapıyoruz. Kontrol esnası için veya kontrol için ders linkinden değil size ayrıca link göndereceğim.
+
+389
+01:37:31,600 --> 01:37:36,100
+link üzerinden kontrol yapacağız. Sorunuz varsa alabilirim.
+
+390
+01:37:39,859 --> 01:38:06,059
+Sadece bana hızlıca, örneğin on tane yöntem size bir rapor paylaştık. O on tane yöntemden on tanesi çalışıyor mu onu kontrol edeceğiz. Üç tane yöntemi de veriler üzerinden hızlıca birebir kontrol yapıp geri kalanını ben kendim raporunuzdan ve kodunuzdan bakarak puanlamak yapacağım. Yani birebir kontrolde iki veya üç yöntem deneyeceğiz hızlıca. Gerisini ayıracak.
+
+391
+01:38:10,931 --> 01:38:35,531
+Örnek raporda metotları sadece parametre örnek bir soru ile açıklamış. Şimdi örnek rapor size birebir kopyalama örnek olsun diye değil. Raporun kapağı, içindekiler sayfası, yaptığınız, kodladığınız yöntemler, oraya dikkat alın. Ondan sonraki şeyler çok önemli değil. Yani genel kurallara uygun olduğu süre istediğiniz gibi yapabilirsiniz.
+
+392
+01:38:36,083 --> 01:38:39,844
+Ayrıca metotların çalıştığını, nasıl çalıştığını anlatmanıza gerek yok.
+
+393
+01:38:40,844 --> 01:38:48,684
+Ama mesela uç değerlerle test edin. Mesela örnek şu durum için çalışıyor. Mesela bonus yapacak olan arkadaşlar var.
+
+394
+01:38:48,684 --> 01:38:53,684
+O bonus yapacak olan arkadaşlar, işte logaritma çalışıyor da eksponansiyel çalışmıyor gibisinden
+
+395
+01:38:53,684 --> 01:38:57,483
+o tarz örnekleriniz zaporunuzda mutlaka ekran görüntüsü olarak olsun.
+
+396
+01:38:57,483 --> 01:39:03,483
+Bir de arkadaşlar, özellikle şunu alışın. Yani ben şöyle ekran görüntüsü görmek istemiyorum.
+
+397
+01:39:03,636 --> 01:39:28,636
+Arkadaşım mesela bir şey açayım. Komut sonuçta çalışan program burada görünüyor. Şu Comment-Romp dediğimiz şeyde görünüyor. Şöyle kocaman bir ekran görüntüsü geliyor bana. Bu kocaman ekran görüntüsü içerisinde şurada ufacık ufacık yazı var. Hiçbir şey anlaşılmıyor. Sizin yapmanız gereken şey, en basitinden Windows'da da var, başka işletim sistemlerinde de var. İlgili kısmı alıp,
+
+398
+01:39:29,011 --> 01:39:33,452
+Bulabildiğince fokuslanarak ekran görüntüsü yüklemeniz buna çok dikkat edin.
+
+399
+01:39:33,452 --> 01:39:37,692
+Hani bu olmazsa ve ben raporu anlayamazsam oradan puan kuruyorum söyleyin.
+
+400
+01:39:37,692 --> 01:39:41,692
+Tekrardan hani raporu yüklemeniz mümkün değil. Başka sorusu olan var mı?
+
+401
+01:39:50,323 --> 01:39:59,323
+Peki, şimdiden hepinize sınavda başarılar dilerim. Ayrıca dediğim gibi sınav saati ve sınavla alakalı bazı duyurular göndereceğiz.
+
+402
+01:39:59,323 --> 01:40:03,323
+Maili lütfen bekleyin. İyi günler arkadaşlar, hoşçakalın.

@@ -1,0 +1,2843 @@
+1
+00:04:48,084 --> 00:04:51,644
+Hoşgeldiniz arkadaşlar. Dönemin son haftası.
+
+2
+00:04:53,444 --> 00:04:59,163
+Kapanışı yapacağız bugün. String, matching ve pattern matching algoritmalarını konuşacağız.
+
+3
+00:05:01,363 --> 00:05:05,364
+Umarım sizlere bir şey katabilmişimdir ders boyunca.
+
+4
+00:05:06,444 --> 00:05:12,644
+Bir anket düzenlemiştim. Bu anketten bazı arkadaşlarınızı doldurmuş bilgiler geldi.
+
+5
+00:05:13,384 --> 00:05:15,463
+Onlara teşekkür ediyorum vakit ayırıp doldurdukları için.
+
+6
+00:05:16,084 --> 00:05:18,283
+Anketin linkini mail olarak göndermiştim.
+
+7
+00:05:19,923 --> 00:05:22,744
+Hepsini okudum şu ana kadar gelen yorumların.
+
+8
+00:05:24,804 --> 00:05:26,963
+Onlarla ilgili küçük bir geri dönüş yapayım.
+
+9
+00:05:28,024 --> 00:05:29,744
+Bazı haklı eleştiriler vardı.
+
+10
+00:05:30,584 --> 00:05:35,124
+Dersin başında cevap vermeyen arkadaşlarla çok vakit kaybettiğimiz yönünde.
+
+11
+00:05:37,043 --> 00:05:41,324
+Evet, herkesi derse katmaya çalıştım ama açıkçası düşündüğüm gibi olmadı.
+
+12
+00:05:41,939 --> 00:05:49,439
+Sonra da ben de bunun gereksiz bir çaba olduğunu dersi devam etmek isteyenlerle devam etmenin daha anlamlı olacağını düşünüyorum.
+
+13
+00:05:49,500 --> 00:05:53,819
+Ben de bu işten vazgeçtim ama tabii çok içime sinerek olmadı bu.
+
+14
+00:05:53,819 --> 00:06:03,519
+Çünkü 65 kişilik bir sınıfta sadece 10-15 kişiye dersi sürdürmeye çalışmak çok sağlıklı değil normalde.
+
+15
+00:06:04,220 --> 00:06:04,819
+Ama bir şekilde...
+
+16
+00:06:05,375 --> 00:06:10,335
+Online eğitim ve pandemi şartları gereği. Bunu böyle kabullendik ve yola devam ettik.
+
+17
+00:06:11,335 --> 00:06:16,395
+Onun dışında tabii sınavlarla ilgili bazı eleştiriler vardı.
+
+18
+00:06:17,755 --> 00:06:23,596
+Özellikle program yazdırmamız konusunda eleştiren arkadaşlar olmuş.
+
+19
+00:06:24,075 --> 00:06:27,035
+Program yazmanın zor olduğunu söyleyenler oldu.
+
+20
+00:06:27,035 --> 00:06:33,035
+Şimdi bu da enteresan. Tabii herkese kendi içinde hak veriyorum ama bir dönem algoritma...
+
+21
+00:06:33,396 --> 00:06:39,235
+Akış diagramı istediğimiz için niye program yazmıyoruz diye eleştirenler oluyordu. Şimdi de tam tersi oluyor.
+
+22
+00:06:41,276 --> 00:06:49,415
+Aslında bu dersin sağlıklı bir şekilde yorumlanması, akış diagramı çizerek olması gerekiyor.
+
+23
+00:06:50,175 --> 00:06:56,396
+Ama online şartlar ve şu andaki değerlendirme süreci düşünüldüğünde...
+
+24
+00:06:57,716 --> 00:07:04,196
+Sizlerin arasında haksızlık konuşturmamak adına mecburen kodlamaya döndük.
+
+25
+00:07:04,196 --> 00:07:08,196
+Çünkü öbür türlü çok suistimal eden arkadaşlar oluyor bunu.
+
+26
+00:07:08,875 --> 00:07:18,596
+Biz de mutlu değiliz ama yani bunu program yazdırarak çözme noktasına şu an için döndük.
+
+27
+00:07:18,975 --> 00:07:22,235
+Hani bir finalde ne olur bilmiyorum. Bir daha hocalarla konuşuruz.
+
+28
+00:07:22,675 --> 00:07:28,536
+Ama keşke akış diagramı üzerinden ilerleyebilsek. Daha sağlıklı olanı O.
+
+29
+00:07:30,255 --> 00:07:39,816
+Bunun dışında genel olarak ödev memnuniyeti yüksek düzeyde diyebilirim. Gelen yorumlardan anladığım O.
+
+30
+00:07:40,576 --> 00:07:43,675
+En azından belki biraz daha süreleri bazılarına uzun olup...
+
+31
+00:07:46,612 --> 00:07:53,612
+Daha fazla öğrenme sürecini uzatabilirdiğimiz şeklinde eleştirimin dışında pek bir eleştiri yoktu.
+
+32
+00:07:53,612 --> 00:08:05,612
+Bir arkadaşınız genel olarak memnun oldun ama derste bazı noktalara geri döneceğim deyip siz üzerine düşün deyip geri dönmediğimi söylemiş.
+
+33
+00:08:05,612 --> 00:08:09,612
+Birkaç tanesini hatırlıyorum ama hepsinde çoğunlukla böyle...
+
+34
+00:08:09,716 --> 00:08:16,175
+Yaptığımı zannetmiyordum. Eğer böyle bir şey yaptıysam, hepinizden özür dilerim, dikkatinden kaçmıştır.
+
+35
+00:08:16,836 --> 00:08:20,656
+Yoksa ya da başka bir konunun heyecanıyla o kısmı atlamışızdır.
+
+36
+00:08:21,596 --> 00:08:31,235
+Bununla ilgili merak ettiğiniz bir konu olursa, lütfen bana final öncesi ulaşın ve gerekiyorsa bir ex-session daha yaparız.
+
+37
+00:08:31,355 --> 00:08:36,796
+Ya da birebir size bu konuyla ilgili bağlantı yaparız. Eksiği tamamlarım.
+
+38
+00:08:37,268 --> 00:08:51,307
+O konudaki eleştirisi için de arkadaşınıza teşekkür ediyorum. Benim dikkatimden kaçmış. Bazen hakikaten çok hızlı ilerliyoruz. Konular üzerinde atlıyoruz bütün bilgileri bir şekilde verebilmek adına.
+
+39
+00:09:04,384 --> 00:09:14,324
+Bazı konular üzerinde durduğumuz o konuları bu kadar anlatmak yerine o konuyla ilgili daha çok örnek çözün diye bir eleştiri geldi.
+
+40
+00:09:15,144 --> 00:09:18,283
+Şimdi burada da bu bıçak sırtı bir durum çünkü...
+
+41
+00:09:18,548 --> 00:09:44,908
+Öyle yaptığımız zaman da konuyu tam anlayamadık. Konuyu çok üstün körü anlatıyorsunuz ya da çok yüksek seviyede anlatıyorsunuz. Biz konuyu tam anlayamadan siz birçok örnek çözüyorsunuz diye bir eleştiri var daha önceki yıllarda. O yüzden online eğitimi de düşünerek konuları özellikle azaltıp ve sizin bilgisayar başındaki konsantrasyon seviyesini de düşünüp
+
+42
+00:09:44,943 --> 00:09:51,443
+Mümkün olduğunca belli konulara odaklanıp onu daha iyi anlamanız yönünde bir politika nedenledik.
+
+43
+00:09:52,583 --> 00:09:56,683
+Bazılarınız daha çok talep ettiği için haklı olarak da onları mutlu etmemiş olabilir.
+
+44
+00:09:57,963 --> 00:10:03,144
+Tamamen pandemi koşulları ve online eğitim neticesinde belirlenmiş bir durum.
+
+45
+00:10:03,844 --> 00:10:09,483
+Derste olsaydık, bu yani fiziksel olarak sınıfta olsaydık biraz daha farklı olabilirdi.
+
+46
+00:10:12,179 --> 00:10:13,839
+Bunu da dile getirmiş olayım.
+
+47
+00:10:15,099 --> 00:10:19,419
+Onun dışında başka bir şey var mıydı diye düşünüyorum.
+
+48
+00:10:22,039 --> 00:10:23,460
+Şimdilik aklıma gelenler bunlar.
+
+49
+00:10:23,460 --> 00:10:28,119
+Dersin geri kalanını da çok bölmemek adına.
+
+50
+00:10:28,839 --> 00:10:30,220
+Kısaca cevap vermiş olayım.
+
+51
+00:10:31,179 --> 00:10:35,079
+En azından geri dönüşleriniz katkı sağladı.
+
+52
+00:10:35,240 --> 00:10:35,960
+Teşekkür ediyorum.
+
+53
+00:10:36,724 --> 00:10:40,844
+Ben de size bir parça da olsa kendi fikirlerimi aktarmış oldum.
+
+54
+00:10:42,724 --> 00:10:48,144
+Notlandırma konusunda da çok mutlu olmayan arkadaşlar var.
+
+55
+00:10:49,004 --> 00:10:51,124
+Hani daha farklı nasıl olabilirdi bilemiyorum.
+
+56
+00:10:51,284 --> 00:10:59,764
+Ben bu şartlarda olabildiğince pozitif değerlendirdim düşünüyorum ama tabii herkesi mutlu etmek pek mümkün değil.
+
+57
+00:11:03,764 --> 00:11:17,064
+Son olarak ben bu kısmı kapatmadan önce eklemek isteyen, yorum yapmak isteyen ya da final ile ilgili ya da dönem projesi ile ilgili soru sormak isteyen varsa o kısmı alayım sonra bugünkü konulara geçelim.
+
+58
+00:11:24,179 --> 00:11:25,799
+Herhangi bir soru sorun var mı?
+
+59
+00:11:27,599 --> 00:11:27,879
+Peki.
+
+60
+00:11:27,879 --> 00:11:32,599
+O zaman bir sonraki konumuza geçebiliriz.
+
+61
+00:11:32,779 --> 00:11:34,779
+Hemen ekran paylaşayım.
+
+62
+00:11:45,716 --> 00:11:53,016
+Evet, bugün aslında oldukça sık kullanılan bir konuyu birlikte ele alacağız.
+
+63
+00:11:53,756 --> 00:11:58,096
+String matching ya da pattern matching dediğimiz bir konu.
+
+64
+00:11:59,316 --> 00:12:05,096
+Bu konu aslında çok sık karşımıza çıkıyor bilgisayar bilimleri alanında.
+
+65
+00:12:07,923 --> 00:12:33,663
+Özellikle buradaki şu anda ekranda görmüş olduğunuz domainler, bioinformatik verimi adancılığı, dokümansınıflandırma, işte doküman image analysis ve işte biraz da öyle çıkan speech recognition konularında ve bu anlamda pattern search
+
+66
+00:12:34,048 --> 00:12:36,627
+Çok sıklıkla yaptığımız bir iş.
+
+67
+00:12:37,627 --> 00:12:46,067
+Bu noktada örneğin internet üzerinde ya da bir dokümanda search bar üzerinden bir arama yapıyorsunuz.
+
+68
+00:12:46,147 --> 00:12:49,107
+Bir kelimeden nerelerde olduğunu biliyorsunuz.
+
+69
+00:12:49,187 --> 00:12:52,147
+Bazen find'ın dışında find'ın replace de yapıyorsunuz.
+
+70
+00:12:52,147 --> 00:12:53,147
+Onun için...
+
+71
+00:12:54,323 --> 00:13:05,183
+Büyük metinler içerisinde aradığınız kelimeleri ne kadar hızlı bulabilirseniz kullanıcı memnuniyetinde o yüksek seviyede oluşturma şansınız var.
+
+72
+00:13:06,243 --> 00:13:17,243
+Sadece karakter aradığınızı düşünmeyin. İçerisinde rakam da arayabilirsiniz. Yani karakterler bütün hepsini kapsıyor. Yani sadece harf değil. Aynı zamanda rakamsal arama da yapabiliyorsunuz.
+
+73
+00:13:17,716 --> 00:13:34,756
+DNA dizilimini düşündüğünüz zaman, burada özellikle dizilimlerin uzun olduğunu düşündüğünüzde, o ilgili pattern'ın o dizilimde yer alıp almadığını buluyorsunuz ve bazı hastalık tespitlerini de bu şekilde yapabiliyorsunuz.
+
+74
+00:13:34,756 --> 00:13:40,336
+Ki aslında bakarsanız COVID testini de düşündüğünüzde.
+
+75
+00:13:40,687 --> 00:13:49,607
+Sizinden alınan örneklerde, semplolarda ilgili semptomun olup olmadığı kontrol ediyor.
+
+76
+00:13:49,687 --> 00:13:52,707
+Burada da bir pattern matching kabaca uygulanıyor diye düşünebilirsiniz.
+
+77
+00:13:52,707 --> 00:14:01,667
+Yani bunu biraz çok basit indirgedim ama genellikle bioinformatik alanında da bu pattern search kısmı çok sık yoğun olarak kullanılıyor.
+
+78
+00:14:07,700 --> 00:14:21,480
+çözüm olarak da adlandırıyoruz. Brute force çözüm dediğimiz ilk akla gelen en böyle basit çözümlerden bir tanesi olarak adlandıran brute force çözüm.
+
+79
+00:14:23,539 --> 00:14:44,819
+Çok time kompleksisi düşük olmuyor. O yüzden de daha sofistike çözümler düşünmemiz gerekiyor ama bazen brute force çözüm doğrudan implemente edilmesi çok kolay olan ve time kompleks tasından da dezavantajlı olmayan bir çözüm olabiliyor. O yüzden bunu bir deneyip daha sonra daha iyisi var mı diye bakmakta fayda var.
+
+80
+00:14:46,819 --> 00:14:48,819
+Şimdi pattern matching de...
+
+81
+00:14:49,427 --> 00:15:03,427
+Brute force çözümü nasıl olabilir? Buna bakacağız. Yani ilk akla gelen çözüm nedir? Ne yapıyoruz? Bunun bir dezavantajı var mı? Daha iyisi olabilir mi? Bunu değerlendireceğiz. Gördüğünüz gibi pattern matchingler için...
+
+82
+00:15:03,892 --> 00:15:13,112
+Aşağıda o application'lar sıralanmış. Parser'larda işte bir arama yaptığınızda span filter aynı mantıklı arıyor.
+
+83
+00:15:14,312 --> 00:15:17,872
+İşte work processor, web search engine, natural language processing.
+
+84
+00:15:18,332 --> 00:15:28,292
+Bütün bu ana başlıklar altında çok sık pattern arıyoruz, bulmaya çalışıyoruz, yolunla ilgili işler yapmaya çalışıyoruz.
+
+85
+00:15:28,292 --> 00:15:30,472
+Burada da bir tane pattern verilmiş.
+
+86
+00:15:30,899 --> 00:15:47,720
+Aradığımız kelime needle 6 karakterden oluşuyor. Bir de tekstimiz var 21 karakterden oluşuyor ki genelde ne yani arama yaptığımız metin aradığımız teksten kelimeden çok daha büyük oluyor.
+
+87
+00:15:49,299 --> 00:15:57,879
+Needle'ı bunun için de şu anda arıyoruz. Peki ilk akla gelen çözüm nedir diye size sorsam nasıl arayacağız?
+
+88
+00:16:00,820 --> 00:16:01,540
+Evet [öğrenci].
+
+89
+00:16:02,280 --> 00:16:09,700
+Bir şey olmadığı için, bir sıralama gibi bir durum olmadığı için baştan sona gitmemiz gerekiyor ve kontrol etmemiz gerekiyor.
+
+90
+00:16:10,480 --> 00:16:15,840
+Şimdi ilk arayacağımız yer, başlangıç İ ile başlayacağız, N'ye eşitliğe bakacağız.
+
+91
+00:16:16,440 --> 00:16:21,000
+Değil. Demek ki geri kalan patterndeki karakterleri kontrol etmemize gerek yok.
+
+92
+00:16:21,000 --> 00:16:27,000
+Sonra N'yi bir sağa kaydıracağız. Yani pattern'ı bir sağa kaydıracağız. Bu sefer N'ler eşleşecek.
+
+93
+00:16:28,052 --> 00:16:30,812
+O zaman n'ler eşleştiği için ikinci karakteri bakacağız.
+
+94
+00:16:30,892 --> 00:16:33,831
+E ile A'ya bakacağız. Eşleşmediği için orada stop edeceğiz.
+
+95
+00:16:34,512 --> 00:16:39,772
+Bu şekilde pattern'ı bir bir kaydıra kaydıra aslında sağ ilerleye olacağız.
+
+96
+00:16:39,772 --> 00:16:42,532
+Şimdi hemen biraz sonra bunun çözümünü göreceksiniz.
+
+97
+00:16:42,652 --> 00:16:45,772
+Burada bir problemdeki...
+
+98
+00:16:46,080 --> 00:16:49,080
+Bu değişkenleri ifade edelim.
+
+99
+00:16:49,500 --> 00:16:54,460
+İşte verilen text T olarak, pattern da P olarak ifade edildiğini varsayabilirsiniz.
+
+100
+00:16:55,420 --> 00:16:59,080
+Ve buradaki amacımız genelde bütün...
+
+101
+00:16:59,700 --> 00:17:02,480
+P'leri tekst içerisindeki bulmak.
+
+102
+00:17:03,080 --> 00:17:08,039
+İşte P'nin uzunluğu burada ne, T'nin uzunluğu ne olarak ifade edilmiş.
+
+103
+00:17:08,119 --> 00:17:11,280
+Tam tersi olabiliyor. Fark etmez. Bundan çok detay değil.
+
+104
+00:17:11,840 --> 00:17:18,280
+Tabii bunun içerisindeki kullandığımız alfabenin genişliği de önemli olacak.
+
+105
+00:17:18,920 --> 00:17:21,700
+İleride bunu göreceksiniz. Yani işte A'dan Z'ye...
+
+106
+00:17:22,451 --> 00:17:39,291
+Kullandığımız karakterler mi yoksa sıfırdan dokusa kullandığımız rakamlar mı? Buna bakacağız. İşte i'inci harfi P'nin vesaire gibi bazı sintaks kullanımlarımız var. Bunlar genelde kitaplarda bu çözümleri incelerken karşınıza çıkacak sintakslar.
+
+107
+00:17:50,067 --> 00:17:56,327
+karşılaştırdığımız karakterin metinde eşleşip eşleşmediğine bakıyoruz.
+
+108
+00:17:56,927 --> 00:18:01,527
+N, H ile eşleşmiyorsa kelimeyi bir sağa şift ediyoruz.
+
+109
+00:18:01,887 --> 00:18:04,188
+A ile eşleşmiyor, sağa şift ettik.
+
+110
+00:18:04,268 --> 00:18:06,067
+Y ile eşleşmiyor, sağa şift ettik.
+
+111
+00:18:06,688 --> 00:18:07,387
+Buraya geldik.
+
+112
+00:18:07,467 --> 00:18:09,127
+N ile N eşleşti birbirine.
+
+113
+00:18:09,127 --> 00:18:11,907
+O zaman ikinci karaktere bakıyoruz.
+
+114
+00:18:12,047 --> 00:18:13,748
+İkinci karakter de eşleşti.
+
+115
+00:18:14,259 --> 00:18:23,059
+Üçüncü karaktere bakıyoruz. Dördüncü karaktere bakıyoruz. Beşinci karaktere baktığımızda beşinci karakter eşleşmedi.
+
+116
+00:18:24,880 --> 00:18:30,599
+Aradığımız pattern'ın boyutuna counter ulaşmamışsa o zaman demek ki şunu söyleyebiliriz.
+
+117
+00:18:31,340 --> 00:18:37,420
+Bizim aradığımız pattern henüz bu metnin içinde bulunamadı.
+
+118
+00:18:37,907 --> 00:18:45,007
+Eğer buradaki S ve A'da L ve E olsaydı biraz sonra göreceğiniz gibi, şuradaki gibi, o zaman bulmuş olacaktık.
+
+119
+00:18:45,667 --> 00:18:51,447
+Burada ilk geçtiği yeri arıyor olabiliriz. O yüzden ilk geçtiği yerde çıkıyor olabiliriz.
+
+120
+00:18:51,847 --> 00:18:55,167
+Ya da hepsini arıyor olabiliriz. O zaman bütün metni dolaşmamız gerekiyor.
+
+121
+00:18:55,268 --> 00:18:59,907
+Nereye kadar gidiyorum? Bu noktada aslında...
+
+122
+00:19:00,192 --> 00:19:10,452
+Metnin boyutundan pattern'ın boyutunu çıkardığı noktaya kadar ilerlemem gerekiyor. Yani şu E'ye kadar bir şekilde gelmem gerekecek.
+
+123
+00:19:10,452 --> 00:19:22,251
+Onun öncesinde şuradaki N'de bir eşleşme yakalıyorum. E, E, D, D, E. Burada pattern'ı buluyorum. Ama buraya kadar gelirken aslında metin...
+
+124
+00:19:22,548 --> 00:19:34,688
+Kısa olduğu için çok fark etmediğimiz ama metin uzadıkça sağa sadece bir shift etmenin ne kadar maliyetli olduğunu ölçümlerle de görebileceğimiz bir durum var.
+
+125
+00:19:35,288 --> 00:19:47,528
+Yani biz brute force yaklaşımla bulamadık. O zaman bir sonraki pattern benim için bir adaydır. O zaman bunu kullanmayayım noktası.
+
+126
+00:19:48,051 --> 00:19:52,692
+açıkçası çok tercih edebileceğimiz bir arama şekli değil.
+
+127
+00:19:52,692 --> 00:19:59,351
+Sebebi bu noktada açıkçası çok fazla iş yükü oluşuyor.
+
+128
+00:20:06,228 --> 00:20:24,768
+Şimdi tabii şurada bir dizilim görüyorsunuz bioinformatikten. Bu noktada GCT paternini arıyoruz bu dizilimde. Ve bu dizilimde GCT aslında üç defa geçiyor.
+
+129
+00:20:25,683 --> 00:20:33,344
+Ve bu üç defa geçtiğini biz bulduğumuz zaman işimizi tamamlamış oluyoruz ve bütün tekstini de taramış oluyoruz.
+
+130
+00:20:33,804 --> 00:20:41,644
+Tabii bunun bize getirdiği, sağa doğru bir bir kaydırmanın getirdiği işte bu brute force yaklaşım yani en basit, en yalın metot,
+
+131
+00:20:42,284 --> 00:20:46,423
+karmaşıklık olarak worst case ile M çarpı N'i gerektiriyor.
+
+132
+00:20:53,683 --> 00:20:58,264
+siz bir sağa kaydırıp yeniden başlatıyorsunuz karşılaştırmayı.
+
+133
+00:20:58,384 --> 00:21:03,443
+Halbuki bu noktada A, G, C, G, C, T karşılaştırması yaptık.
+
+134
+00:21:05,304 --> 00:21:11,124
+Burada daha farklı bir algoritma ile G, C, T'yi biraz daha ileri atma şansımız söz konusu olabilir.
+
+135
+00:21:12,124 --> 00:21:15,344
+Şimdi yine benzer bir örnek var.
+
+136
+00:21:16,163 --> 00:21:19,744
+Burada A, B, A, C şeklinde başlayan bir metin.
+
+137
+00:21:20,364 --> 00:21:20,744
+Avra.
+
+138
+00:21:21,268 --> 00:21:30,688
+Pattern'ını arıyoruz ve her seferinde bu pattern'ı sağa doğru bir shift ederek eşleşme durumunda kontrollerimizi yapıyoruz.
+
+139
+00:21:32,367 --> 00:21:40,367
+Şimdi tabii burada 6. adımda bunu bulmuşuz. Bu noktada bir match işlemi gerçekleşmiş.
+
+140
+00:21:44,372 --> 00:21:53,532
+Buradaki gördüğünüz örnekte farkındaysanız çok fazla tekrar eden bir pattern'ın içinde ya da metnin içinde yapı yok.
+
+141
+00:21:54,172 --> 00:22:00,192
+Yani abra kelimesi burada aba şeklinde var bir de şurada abra şeklinde var.
+
+142
+00:22:00,751 --> 00:22:04,412
+Aynı şekilde abranın içinde de tekrar eden bir pattern yok.
+
+143
+00:22:05,251 --> 00:22:07,852
+Şimdi bu çok kötü bir durum değil.
+
+144
+00:22:08,372 --> 00:22:11,692
+Yani burada siz hızlı bir şekilde ilerleyebilirsiniz.
+
+145
+00:22:12,660 --> 00:22:35,280
+Nispeten. Ama böyle bir pattern verildiğinde, yani kendi içinde tekrar eden bir yapıya sahipse, metin ya da pattern, bu bize bazı sıkıntılar yaratıyor. Niye? Çünkü siz 4 tane A, 1 tane B pattern'ını bunun içinde aradığınızda sona kadar geliyorsunuz, son noktada fail ediyorsunuz.
+
+146
+00:22:35,731 --> 00:22:54,731
+Tekrar aşağı iniyorsunuz, bir kaydırdınız sağa, tekrar sona kadar geliyorsunuz. Yani aslında bu en kötü senaryo dediğimiz en çarpı enlik bir karşılaştırma demek bu işin yavaşlamasına sebebiyet veriyor. O yüzden tekrar eden patternler aslında...
+
+147
+00:22:56,079 --> 00:23:22,159
+Çok da sevdiğimiz case var değil. Biraz sonra önereceğimiz sofistike yaklaşımlar içerisinde de bunların bazı problemler yaratma olasılığını ve işi yavaşlattığını göreceksiniz. Bu işte bizim için aslında worst case olarak adlandırdığımız durum. Birbirine çok benzeyen, tekrar eden petruların kendi içerisinde yer alıyor olması.
+
+148
+00:23:23,443 --> 00:23:26,903
+Evet, şimdi buraya kadar sorusu olan var mı?
+
+149
+00:23:29,763 --> 00:23:40,783
+Yani brute force yaklaşımla ilgili herhangi bir şekilde ben hani şu noktayı anlamadım diyen bir kişi var mı?
+
+150
+00:23:44,980 --> 00:23:53,839
+Peki, devam edelim o zaman. Şimdi aslında literatür de 3-4 tane daha iyi.
+
+151
+00:23:54,324 --> 00:24:06,683
+Bu işi daha verimli çözen algoritma var. Bir tanesi Knut Pratt-Morris algoritması, bir tanesi Rabin-Karp algoritması, bir tanesi de Boyer-Moore algoritması.
+
+152
+00:24:07,163 --> 00:24:17,064
+Boyer-Moore algoritmasının bir başka versiyonu da Boyer-Moore horse bull ya da sadece horse bull diye geçen algoritma. Bu üç dört tane.
+
+153
+00:24:17,523 --> 00:24:30,683
+Yaklaşım temel olarak string search için kullanılan ve literatürde kabul görmüş, karmaşıklığı da bu işin oldukça azaltan yaklaşımlar.
+
+154
+00:24:31,043 --> 00:24:34,183
+Göreceksiniz oldukça akıllıca yaklaşımlar.
+
+155
+00:24:34,623 --> 00:24:38,803
+Şimdi biz aşağıyaş Boyer-Moor algoritmasına doğru geçelim.
+
+156
+00:24:39,283 --> 00:24:43,183
+Boyer-Moor algoritması ki ben şu anda slide üzerinden size anlatıyorum.
+
+157
+00:24:43,183 --> 00:24:45,523
+Daha sonra dersin ikinci bölümde bakacağız.
+
+158
+00:24:45,523 --> 00:24:56,183
+Vekt kaldığında tahta üzerinden de çizerek de bir kez daha üzerinden geçeceğim. Slides takalmasın sadece, biraz da uygulamasını yapalım diye.
+
+159
+00:24:56,803 --> 00:25:11,043
+Bu bahsettiğim 3-4 tane algoritma içerisinde aslında bir adım daha öne çıkıyor. Bu yüzden bu algoritmayı daha detaylı bir şekilde ders içerisinde inceliyor olacağız.
+
+160
+00:25:13,107 --> 00:25:37,747
+Şimdi Oyer-Moor algoritması aslında burada BruteForce Search'te karşılaştığımız, arama yaparken bir sağa kaydırdığımızda aslında hiçbir şekilde olma olasılığı olmayan case'leri yeniden kontrol ettiğimiz kısımları ortadan kaldırmak için.
+
+161
+00:25:38,112 --> 00:26:01,672
+tasarlanmış bir algoritma. Bir bir sağa kaydırırken bazen hakikaten bir sağa kaydırmaya hiç gerek yok. Bütün kelimeyi sağa şift ederek orada zaten eşleşme ihtimali olmayan bir kısmı eleme şansımız var. Boyarmur da bundan faydalanmak istiyor. Çok verimli bir yaklaşım da bu işi çözüyor.
+
+162
+00:26:02,175 --> 00:26:17,255
+Aslında pattern'ın boyutu arttıkça algoritmanın, Boyer-Moor algoritmasının yaklaşımından dolayı sonuca gitme hızı da artmış oluyor.
+
+163
+00:26:18,135 --> 00:26:22,735
+Boyer-Moor algoritmasının bir pre-processing kısmı var.
+
+164
+00:26:23,355 --> 00:26:25,415
+Pattern'ı pre-process ettiğiniz bir kısım var.
+
+165
+00:26:25,515 --> 00:26:28,575
+Yani doğrudan karşılaştırmayla başlamıyorsunuz.
+
+166
+00:26:28,912 --> 00:26:34,912
+Önce size verilmiş olan pattern'ı kısa bir ön işlemden geçiriyorsunuz.
+
+167
+00:26:35,792 --> 00:26:39,912
+Ama burada sadece pattern'ı kısa bir ön işlemden geçiriyorsunuz.
+
+168
+00:26:40,812 --> 00:26:43,912
+Uzun olan metni arama yaptığınız...
+
+169
+00:26:45,523 --> 00:27:10,411
+Kısmı analiz etmenize gerek yok. Çünkü zaten arama yaptığınız kısım çok uzun. Onu analiz etseniz efficient olmayacaktır. Sadece pattern'ı bir preprocessing adımından geçiriyorsunuz. Bir de biz brute force'da karşılaştırmayı soldan başlatıyoruz hep. Boyer [öğrenci] diyor ki ben...
+
+170
+00:27:10,675 --> 00:27:19,115
+Kelimenin ya da pattern'ın sonundan eşleştirmeye başlarım ve bu mantıkla ilerlerim diyor.
+
+171
+00:27:19,915 --> 00:27:22,655
+Hakikaten anlamlı olduğunu da göreceksiniz.
+
+172
+00:27:23,975 --> 00:27:33,515
+Sağdan sola doğru karşılaştırarak pattern'la bir eşleşme sağlanmadığını gerçekleştirerek bir karar vermeye çalışıyorum.
+
+173
+00:27:35,796 --> 00:27:50,576
+Şimdi Boyer-Moor algoritması aslında iki tane temel kaydırma stratejisi oluşturmuş durumda. Bir tanesi bad symbol shift, diğeri good suffix shift olarak adlandırılıyor.
+
+174
+00:27:51,316 --> 00:27:58,236
+Günün sonunda Boyer-Moor algoritması bu iki shift yaklaşımını kombinleyerek karar veriyor.
+
+175
+00:27:59,059 --> 00:28:14,719
+Tek versiyonu uygulayan algoritmaları varyantı da var. Yani sadece birini tercih eden de var. Birini tercih eden genelde bet simbolü tercih ediyor kaydırma stratejisi olarak. Goodsafix biraz daha karmaşık bir yapıya sahip.
+
+176
+00:28:14,719 --> 00:28:23,259
+Ama ikisi ortak bir şekilde analiz edildiğinde daha avantajlı olan shift.
+
+177
+00:28:23,763 --> 00:28:31,003
+önerisi değerlendiriliyor ve o kadar sağa kaydırılarak gereksiz karşılaştırma engellenmiş oluyor.
+
+178
+00:28:33,104 --> 00:28:42,624
+Tabii şimdi bu noktada ne kadar biz kelimemizi kaydıracağız, pattern'ı kaydıracağız peşindeyiz.
+
+179
+00:28:43,163 --> 00:28:48,263
+Aslında karşılaştırmada değişen bir şey yok. Yine harf harf.
+
+180
+00:28:48,528 --> 00:29:13,387
+pattern'ı, metin ile karşılaştırmanız gerekiyor. Burada yapacak hiçbir değişiklik yok. Ama kaydırırken bir bir sağa kaydırmaktansa daha fazla sağa kaydırabilir miyizi arıyor olacağız. Burada da bir tane case ile başlıyoruz. Örneğin yukarıdaki tekste arama yaparken needle kelimesi sağdan...
+
+181
+00:29:13,619 --> 00:29:21,599
+Harf harf metin ile karşılaştırıyor. E ile eşleşmiş, LL ile eşleşmiş, T de D ile eşleşmiş.
+
+182
+00:29:21,980 --> 00:29:30,079
+Şimdi sorum şu, burada artık eşleşme gerçekleşmediğini biliyoruz. Needle'ı kaç tane sağ kaydırmalıyım sizce?
+
+183
+00:29:39,155 --> 00:29:46,675
+Daha kesinlikle sağa kaydırdığımda yoluma o noktadan devam edebilirim diyebilirim.
+
+184
+00:29:54,067 --> 00:29:55,067
+Evet, parsı.
+
+185
+00:29:55,067 --> 00:30:04,067
+Hocam bence kesinlikle mismatche kadar saydırmamız gerekli şey yok. Bence kötü olabilir.
+
+186
+00:30:04,067 --> 00:30:17,067
+Çünkü şey mesela needle'i en en en needle düşünürsek needle ararken birinci en olmuyor, ikinci en olmuyor.
+
+187
+00:30:21,236 --> 00:30:22,355
+Söyle bir durum.
+
+188
+00:30:23,155 --> 00:30:29,895
+Peki, kaydırdığımızda neyin altına ya da bir sonrasına, bir öncesine gelmesi gerekiyor?
+
+189
+00:30:32,756 --> 00:30:33,956
+Onu bilmiyorum.
+
+190
+00:30:35,155 --> 00:30:42,655
+Peki, yorum yapmak isteyen, Needle'ın N'si kaydırma işleminden sonra nereye gelebilir sizce?
+
+191
+00:30:44,692 --> 00:30:52,491
+Hani gözle baktığınızda insan beyni buna karar verseydi neyi nereye koymayı tercih ederdi.
+
+192
+00:30:59,188 --> 00:31:02,028
+Sadece bir tahmin rica ediyorum sizlerden.
+
+193
+00:31:05,428 --> 00:31:09,448
+Son derken [öğrenci], E'nin altına mı, E'den sonrasına mı?
+
+194
+00:31:10,648 --> 00:31:11,848
+[öğrenci] chatten yazıyor.
+
+195
+00:31:13,848 --> 00:31:14,948
+E'den sonrasına.
+
+196
+00:31:15,788 --> 00:31:26,248
+Bakalım, burada, şimdi, needle'ı E'den sonrasına koymamış.
+
+197
+00:31:27,827 --> 00:31:52,488
+L'nin altına koymuş. Peki, bunu neden yapmış? Burada bir E ile eşleşme var diye yapmış. Aslında [öğrenci]'ın söylediği gibi bunu sonuna kadar götürmekte bir seçenek. Biraz sonra bu seçeneğin gerçekten bir karşılığı var mı yok mu bunu göreceğiz. Ama buradaki önemli olan mismatch karakteri pattern'ın içerisinde yok.
+
+198
+00:31:56,756 --> 00:32:03,016
+D ile uyuşmadığı nokta, mismatch karakteri T. Bakıyoruz, needle'ın içerisinde herhangi bir T yok.
+
+199
+00:32:05,016 --> 00:32:18,756
+T olmadığı için de bizim için artık T'den sonraki olan, yani needle'ın içinde herhangi bir T olmadığı için bu noktadan itibaren...
+
+200
+00:32:19,551 --> 00:32:24,371
+i'ni T'nin bir sonraki noktasına needle'ı shift etmek şu an için akıllıca gözüküyor.
+
+201
+00:32:24,371 --> 00:32:31,211
+O yüzden N'yi T'den bir sonraki noktaya taşıyorum ve needle'ı buraya yerleştiriyorum.
+
+202
+00:32:31,591 --> 00:32:36,351
+Bakalım birazdan daha farklı bir çözüm, daha akıllıca bir çözüm ortaya çıkacak.
+
+203
+00:32:36,431 --> 00:32:37,531
+Bu mu case 1'de yani?
+
+204
+00:32:38,675 --> 00:32:54,935
+Uyuşmayan karakter Petr'ın içerisinde var mı yok mu yok. Peki uyuşmayan karakter Petr'ın içerisinde olsaydı yani örneğin burada D, Nidenin N'siyle uyuşmuyor. Bu sefer nereye kaydırmak akıllıcı olurdu?
+
+205
+00:32:57,076 --> 00:32:58,175
+Needle'ı.
+
+206
+00:33:06,003 --> 00:33:10,503
+Evet, bu kısım daha kolay. Yani teknik olarak kaydıracağımız yer belli.
+
+207
+00:33:16,627 --> 00:33:36,007
+N'yi doğal olarak N'nin altına kaydıracaktık. Çünkü N ile denk gelecek ki herhangi bir şekilde şurada bir E olsaydı needle ile denk gelme olasılığı hala var olduğu için bizim eşleşmeyen karakterimiz
+
+208
+00:33:36,415 --> 00:33:48,595
+Pattern'ın içerisinde burada olduğu için Pattern'ın içerisinde nereye denk geliyorsa o kısmı bu n'nin altına getirecek şekilde shift etmemiz gerekiyor ki biz n'yi direkt n'nin altına aldık.
+
+209
+00:33:49,235 --> 00:33:52,935
+İlgili eşleşmeyen karakter Pattern'ın içerisinde olduğu için.
+
+210
+00:33:57,556 --> 00:34:04,776
+Peki şimdi gelelim bir başka case'e. Burada da şöyle bir durum var.
+
+211
+00:34:07,836 --> 00:34:15,456
+Mismatch karakterimiz E, E, D ile tutmuyor ama E needle'ın içerisinde bulunuyor.
+
+212
+00:34:16,496 --> 00:34:24,596
+Peki acaba biz needle'ı buradaki gibi mi pozisyonlandırmalıyız sizce?
+
+213
+00:34:30,164 --> 00:34:33,463
+Bu şekilde pozisyonlandırmamız doğru, uygun olur mu?
+
+214
+00:34:44,788 --> 00:34:51,288
+Needle'ı alttaki gibi pozisyonlandırdığımızda bir dezavantaj oluşuyor mu?
+
+215
+00:34:57,684 --> 00:35:09,623
+Baktığınızda bu noktada E'nin aslında needle'ın daha doğrusu pattern'ın geriye doğru, geriye yönelik olarak pozisyonlandırıldığını görüyorsunuz.
+
+216
+00:35:09,623 --> 00:35:20,144
+Bu noktada biz aslında ileri doğru ilerlemek istiyoruz. O yüzden buradaki needle'ın ileri doğru gitmesi gerekirken geriye doğru konumlandırılıyor olması.
+
+217
+00:35:24,211 --> 00:35:32,851
+Ve en sağdaki E'ye göre bunu konumlandırırsak buraya, şuradaki gibi, o zaman aslında doğru yapmış olmuyoruz.
+
+218
+00:35:33,112 --> 00:35:40,091
+Çünkü en sağdaki E'ye göre konumlandırdığımızda needle'ı önceki seçeneklerine taşımış oluyoruz.
+
+219
+00:35:40,171 --> 00:35:42,311
+Bu da bizim istediğimiz bir durum değil.
+
+220
+00:35:42,411 --> 00:35:48,051
+Biz sağa doğru şifre etmek isterken sola doğru yerleştirmiş oluyoruz.
+
+221
+00:35:52,211 --> 00:36:06,551
+Bize böyle bir durumun doğru olmayacağını söylerken aynı durumu bir kez daha incelediğimizde E uyuşmazlığında ilk E'ye göre konumlandırmadım.
+
+222
+00:36:07,431 --> 00:36:10,811
+D'den sonra gelen ilk E'ye göre konumlandırdım.
+
+223
+00:36:10,811 --> 00:36:12,331
+O zaman...
+
+224
+00:36:14,228 --> 00:36:26,228
+İ'mi bu E ile yani yukarıdaki E ile D'den sonra gelen sağ taraftaki ilk E ile eşitlenecek şekilde needle'ımı kaydırmış oldum. Bu da aslında...
+
+225
+00:36:27,380 --> 00:36:30,920
+Doğal olarak iki e eşleştiği için sadece bir tane kaymış oluyor.
+
+226
+00:36:31,000 --> 00:36:37,680
+Ama bu şartlarda hala bir olasılık olduğu için needle'ımı onun altına yerleştirmiş oldum.
+
+227
+00:36:38,220 --> 00:36:41,380
+Şimdi tabii bu noktada birkaç tane case'i konuştuk.
+
+228
+00:36:42,400 --> 00:36:50,600
+Yukarıdaki karşılaştırdığımız karakterin pattern içerisinde olması durumu ve olmaması durumu bizim için çok belirleyici oluyor.
+
+229
+00:36:51,440 --> 00:36:54,579
+Olmadığında sorun yok. Bütün pattern'ı kaydırabiliyorum.
+
+230
+00:36:54,963 --> 00:37:03,283
+olduğundaysa pattern'ı nerede varsa o karakter onunla elayen edecek şekilde kaydırmam gerekiyor.
+
+231
+00:37:03,283 --> 00:37:10,503
+Burada bir yaklaşım geliştireceğim. Şimdi bad symbol shift ne yapıyor? Gelin birlikte değerlendirelim.
+
+232
+00:37:12,724 --> 00:37:20,863
+Şimdi bir preprocessing tablosundan bahsetmiştim. Buna ihtiyaç duyacağımızdan bahsetmiştim.
+
+233
+00:37:21,215 --> 00:37:33,335
+preprocessing tablosunu konuşacağız. Sadece yukarıdaki kezlere benzer kezleri burada ele alalım. Yukarıda bir metin var. S0'dan S n-1'e kadar gidiyor.
+
+234
+00:37:33,335 --> 00:37:45,615
+Şu anda S, E, R ile karşılaştırıyoruz. Barber kelimesini. Barber'da patternımız. R ile eşleşmiş, E ile eşleşmiş, B, S ile eşleşmemiş. S patternda var mı? Yok.
+
+235
+00:37:46,804 --> 00:37:53,704
+C pattern'de yoksa o zaman ben bunu sağa doğru gönül rahatlığıyla shift edebilirim.
+
+236
+00:37:54,824 --> 00:37:56,083
+Ne kadar shift etmeliyim?
+
+237
+00:37:56,864 --> 00:38:14,204
+Şimdi bu noktada bet symbol shift bize C'nin sağa doğru ne kadar yani C ya da başka bir harfin preprocessing tablosundaki pozisyonuna göre ne kadar sağa doğru kayması gerektiği noktasında bize bir fikir söylüyor.
+
+238
+00:38:14,592 --> 00:38:23,971
+S bu pattern içerisinde olmadığı için S buradaki bloğa uzaklığı 6 birim uzaklığında.
+
+239
+00:38:24,552 --> 00:38:31,032
+Çünkü 6 tane karakter var. En sona olan uzaklığı S'nin 6 birim uzaklığında.
+
+240
+00:38:32,192 --> 00:38:36,072
+Bizim bulunduğumuz yer şu anda eşleşen karakter sayısı.
+
+241
+00:38:36,628 --> 00:38:47,507
+Yani burada K'ya denk geliyor şu formündeki. İki tane 6-2 yapıp bu pattern'ı biz 4 sağa shift ediyoruz.
+
+242
+00:38:48,168 --> 00:38:56,367
+S'den dolayı. Aynı bakış açısıyla aşağıda bu sefer eşleşmeyen karakter A.
+
+243
+00:38:56,367 --> 00:39:02,948
+A bu noktada pattern'ın içerisinde var mı? Evet bu noktada var.
+
+244
+00:39:04,851 --> 00:39:28,591
+Sona olan patterndeki son karakter olan uzaklığı nedir? 1, 2, 3, 4. O zaman T1A4, burada eşleşen kaç tane karakter var? 2 tane. 4-2. Bu sefer biz barber kelimesini sadece 2 tane sağa şift ederek karşılaştırmamıza devam ediyoruz.
+
+245
+00:39:31,860 --> 00:39:50,079
+Bad symbol yani eşleşmeyen karakter hangisi ve bu eşleşmeyen karakter pattern içerisinde sona ne kadar uzaklıkta bu bilgiyi kullanıyor. Böylece siz pattern'ı ne kadar sağa shift edeceğine karar vermiş oluyorsunuz.
+
+246
+00:39:51,480 --> 00:39:59,119
+Birazdan kaldığımız yerden devam edeceğiz. Saat 10.40 oldu. Bir 10 dakika ara verelim. Saat 10.50'de kaldığımız yerden devam edelim.
+
+247
+00:55:39,476 --> 00:55:41,675
+Evet arkadaşlar, kaldığımız yerden devam edelim.
+
+248
+00:55:43,456 --> 00:55:45,876
+Şimdi ekranı paylaşıyorum sizinle.
+
+249
+00:55:50,099 --> 00:55:52,420
+Bad Symbol Shift mantığını konuşuyorduk.
+
+250
+00:55:54,859 --> 00:56:11,300
+Karakterlerin son karaktere olan uzaklığını bir tablo olarak preproces ettikten sonra eşleşen ya da eşleşmeyen karakterlerin o tablodaki değerlerine bakacağız demiştik.
+
+251
+00:56:11,300 --> 00:56:17,460
+Şimdi bir tablo oluşturmak isteseydik pattern için, Barber pattern için.
+
+252
+00:56:18,036 --> 00:56:29,635
+Örneğin, E karakterinin son karakteri olan uzaklığı 1, B karakterinin son karakteri olan uzaklığı 2.
+
+253
+00:56:30,396 --> 00:56:37,276
+Diyeceksiniz ki bir tane daha B var, biz sona en yakın olan karakterin uzunluğunu kullanıyoruz.
+
+254
+00:56:37,276 --> 00:56:42,896
+O yüzden pre-proses tablomuzda B'nin ön işlemler sırasında
+
+255
+00:56:43,264 --> 00:56:47,084
+T1 değerinin 2 olduğuna karar veriyoruz.
+
+256
+00:56:47,084 --> 00:56:55,804
+R karakterine baktığınızda, R karakteri bu noktada 3 değerini alacak son karakterden başlamıyoruz.
+
+257
+00:56:56,844 --> 00:57:02,963
+Son karakterden bir önceki karakterden başlıyoruz ve R'nin 3 uzunluğunda olduğunu göreceksiniz.
+
+258
+00:57:03,124 --> 00:57:07,224
+A karakteri 4 uzunluğunda en son noktaya.
+
+259
+00:57:09,619 --> 00:57:19,680
+oluşturduktan sonra bir eşleşme durumuna bakıyoruz ve bad symbol shift değerinin kaç olması gerektiğine karar veriyoruz.
+
+260
+00:57:20,360 --> 00:57:31,920
+S, bütün alfabe içerisindeki bütün karakterlerin burada eşleşmeme durumu söz konusu olabileceği için uzaklığının önceden belirlenmesi gerekiyor.
+
+261
+00:57:35,764 --> 00:57:39,684
+Barber pattern'ın son karakterine olan uzaklığı aslında 6.
+
+262
+00:57:39,844 --> 00:57:43,063
+Çünkü string boyutu kadar bir uzaklık olması gerekiyor.
+
+263
+00:57:43,523 --> 00:57:48,983
+O pattern içerisinde S olmadığı için ya da X ya da K bu karakterlerin hiçbiri yok.
+
+264
+00:57:49,083 --> 00:57:50,384
+Hepsinin uzaklığı 6.
+
+265
+00:57:51,324 --> 00:57:57,563
+Öte yandan A'nın karşılaştığımızda B ile eşleşmeme durumunda sona olan uzaklığı 4.
+
+266
+00:57:58,284 --> 00:58:03,264
+Tabi burada formülde, bet simbolde bir eksi K değerimiz var.
+
+267
+00:58:03,764 --> 00:58:25,724
+O ana kadar olan match adet sayısı yani R, R ile eşleşmiş, K1 olmuş, E, E ile eşleşmiş, K2 olmuş. O yüzden K'nın değeri 2 oluyor. A'nın tablodaki değeri 4 olduğu için 4-2'den 2 değerini elde ediyoruz ve Barber pattern'ını sağa 2 shift ediyoruz.
+
+268
+00:58:30,324 --> 00:58:36,703
+Bu distance'ın 4-2'nin 2-2 olsaydı örnek veriyorum 0 çıkacaktı.
+
+269
+00:58:36,743 --> 00:58:43,324
+Ya da 2-3 olsaydı şuradaki bir karakter daha match etseydi o zaman eksi 1 çıkacaktı.
+
+270
+00:58:44,324 --> 00:58:49,324
+Doğal olarak 0 ya da eksi değerler çıktığında bizim pattern'ı...
+
+271
+00:58:50,324 --> 00:59:06,964
+Bulunduğu yerde bırakmak ya da geriye doğru shift etmek gibi bir opsiyonumuz olmadığına göre, bunun doğru bir işlem olmayacağına göre, bizim en kötü durumda, böyle sıfır ya da eksi değer çıkması durumunda, sağa doğru pattern'ı bir shift etmemiz gerekiyor.
+
+272
+00:59:07,731 --> 00:59:18,635
+Çünkü biliyorsunuz brute force'da da Petter'ın en kötü ihtimaliyle sağa doğru her seferinde bir shift ediyorduk. O yüzden de burada bir 1 değeri var. Yani çıkan değerin...
+
+273
+00:59:18,643 --> 00:59:25,243
+içerisinde eğer sıfır ve eksi değerler varsa bunun maksimumunu aldığınız zaman biri alıyorsunuz.
+
+274
+00:59:25,243 --> 00:59:38,203
+Onun dışında bir ya da birden daha büyük değerler çıktığında biri veya daha büyük değerleri maksimum elemanı olarak alıyorsunuz ve pattern'ın ne kadar sağa shift etmesi gerektiğini
+
+275
+00:59:38,643 --> 01:00:04,963
+belirliyorsunuz. Şimdi bu bad symbol shift yaklaşımıyım. Şimdi good suffix shift yaklaşımı nedir? Bir de ona bakalım. Şimdi burada bizim pattern'ımız A, B, C, B, A, B. Şimdi bu noktada yaptığımız şey bu pattern'ın içerisinde tekrar eden alt parçalar var mı? Buna bakıyoruz.
+
+276
+01:00:05,811 --> 01:00:08,231
+İlk tekrar edebilecek karakter B.
+
+277
+01:00:09,192 --> 01:00:15,731
+B kendisinden, kendisine en yakın hangi uzaklıkta tekrar ediyor?
+
+278
+01:00:16,231 --> 01:00:17,112
+1, 2.
+
+279
+01:00:17,891 --> 01:00:20,632
+Yani B bir daha 2 sonra geliyor.
+
+280
+01:00:20,731 --> 01:00:22,731
+O yüzden distance'ını 2 olarak belirliyoruz.
+
+281
+01:00:24,071 --> 01:00:26,612
+Daha sonra gelen B'nin bizim için bir anlamı yok.
+
+282
+01:00:26,612 --> 01:00:31,692
+O yüzden distance'ı en küçük olan değeri hesaplarken
+
+283
+01:00:32,115 --> 01:00:36,675
+İlk etapta good suffix'te tabloyu oluştururken buna göre oluşturuyoruz.
+
+284
+01:00:37,416 --> 01:00:45,376
+Sonra B paterni aradıktan sonra daha büyük bir patern var mı yok mu diye bakıyoruz.
+
+285
+01:00:45,456 --> 01:00:46,956
+Bir sefer AB paterni bakıyoruz.
+
+286
+01:00:47,516 --> 01:00:48,756
+AB paterni var mı?
+
+287
+01:00:49,716 --> 01:00:53,256
+Geriye doğru gidince burada AB paterni görüyorsunuz.
+
+288
+01:00:53,256 --> 01:00:55,052
+Bu patern...
+
+289
+01:00:55,123 --> 01:01:12,363
+Buradaki paternler ne kadar uzaklıkta? 1, 2, 3, 4 uzaklıkta. O zaman diyoruz ki biz eğer AB paterniyle karşılaşırsak bu şeyi, ne denir, paterni 4 sağa shift edeceğiz.
+
+290
+01:01:13,103 --> 01:01:22,523
+Şimdi gelelim örnek üzerinden ilerleyelim. Örneğin burada D, B, C, B, A, B verilmiş. D, B, C, B, A, B verildiğinde bakıyoruz.
+
+291
+01:01:23,443 --> 01:01:31,103
+B, B ile eşleşmiş, AA ile eşleşmiş, BB ile eşleşmiş, C, C ile eşleşmemiş.
+
+292
+01:01:32,063 --> 01:01:37,364
+Çünkü bu küçük C, bu büyük C. Case sensitive olduğunu düşündüğümüz için.
+
+293
+01:01:37,364 --> 01:01:49,103
+Bu noktada B, A, B paterni içerisinde herhangi bir şekilde bu C paterni, bu paterni içerisinde geçmediği için
+
+294
+01:01:49,472 --> 01:01:59,532
+Biz doğal olarak bütün paterni bu B metindeki en son karşılaştırılmış karakterin bir sonrasına shift ettik.
+
+295
+01:01:59,612 --> 01:02:03,712
+Çünkü küçük C paternin içerisinde yok.
+
+296
+01:02:04,872 --> 01:02:09,292
+Gelelim A, B, C, B, A, B kontrolüne.
+
+297
+01:02:09,292 --> 01:02:13,612
+Burada da bakıyoruz B, A, B uyumlu ama C.
+
+298
+01:02:14,516 --> 01:02:35,916
+Tutmamış. Bunun içerisinde var mı? Yok. O zaman dedik ki A, B, C, B, A, B tamamen sağa kayacak. Yani sonuçta biz içerisinde Good Suffix ile ilgili iş yaparken şu anda bad simbolden çıktık. O karakterden yoksa zaten bad simbolde olduğu gibi bütün patern'ı sağa shift ediyoruz.
+
+299
+01:02:37,115 --> 01:02:40,396
+Gelelim A, B, C, B, A, B'deki görüntüye.
+
+300
+01:02:41,364 --> 01:03:02,103
+Burada AB'ye bakmıştık. Sonra BAB'ye bakıyoruz. BAB artık pattern olarak burada bulunmadığı için geri kalanlara en uzak uzaklık olan dördü assign ediyoruz ve diyoruz ki bu pattern'ın içerisinde küçük tekrar eden pattern'lar
+
+301
+01:03:02,739 --> 01:03:09,139
+İlk başta 2 idi ama biz eğer AB pattern'ini yakalarsak 4 sağa shift edebiliriz.
+
+302
+01:03:09,219 --> 01:03:15,539
+Çünkü bu pattern'ı ancak 4 sağa shift ettiğimizde AB uyumluluğunu sağlama ihtimali var.
+
+303
+01:03:16,159 --> 01:03:18,300
+Böylece bu kararı vermiş oluyoruz.
+
+304
+01:03:19,099 --> 01:03:28,920
+Şimdi gelelim bu noktadaki esas Boyer-Moore algoritmasının bu bad simbol ve good suffix yaklaşımını kullanma noktasını.
+
+305
+01:03:29,396 --> 01:03:40,036
+Belirli ilk adımda verilmiş bir pattern var ve bu noktada biz öncelikle bad symbol shift table'ını oluşturuyoruz.
+
+306
+01:03:40,036 --> 01:03:56,556
+Bad symbol shift table'ını oluştururken, biraz önce yukarıda konuşmuştuk, tek tek bu pattern içinde bulunan harflerin, artı bulunmayan harflerin uzaklıklarını
+
+307
+01:03:56,943 --> 01:04:04,304
+Bir table'a yazıyoruz. A'dan Z'ye bir tablo oluşturuyoruz. A'nın uzaklığı nedir diye baktığımızda A'nın
+
+308
+01:04:04,755 --> 01:04:20,635
+Son karakteri uzaklığına bakıyoruz, 4. O zaman A'ya 4 atıyoruz. B'nin uzaklığı kaçtır diye baktığımızda, sondan başa doğru ilerlerken B'nin uzaklığının sona 2 olduğunu görüyoruz ve tabloya 2 değerini atıyoruz.
+
+309
+01:04:21,195 --> 01:04:32,496
+Sonra C diye bakıyoruz. C burada yok, o zaman C burada yoksa C'nin sona uzaklığı 6'dır diyoruz. Sonra D, D burada yok, sona uzaklığı 6'dır diyoruz.
+
+310
+01:04:32,755 --> 01:04:48,655
+E'ye geliyor. E'nin son uzaklığı ne diyoruz? 1'dir diyoruz. Ve bu şekilde bütün alfabedeki harflerin bu pattern gözetilerek bu pattern'ın sonuna olan uzaklığını bir tabloya yazıyoruz.
+
+311
+01:04:55,860 --> 01:05:07,039
+Bulunduğu yere gidip S'ye bakıyoruz. 6 olduğu için 6'yı yazıyoruz. A'ya bakıyoruz. A'nın sona uzaklığı 4 olduğu için de 4 yazıyoruz. Bu şekilde hesaplamamızı yapıyoruz.
+
+312
+01:05:07,839 --> 01:05:12,699
+Good suffix shift table'ı nasıl oluşturuyoruz? Ona böyle iki kez daha bakalım.
+
+313
+01:05:14,019 --> 01:05:14,559
+Şurada.
+
+314
+01:05:15,480 --> 01:05:17,819
+A, B, C, B, A, B paterni var.
+
+315
+01:05:18,867 --> 01:05:34,288
+Burada en küçükten başlıyoruz. B bu paternin içerisinde bir daha geçmiş mi? Evet, geçmiş. Uzaklığı nedir? 2. Sonra bu paternin içerisinde daha büyük bir tekrar var mı? AB. AB burada var.
+
+316
+01:05:34,739 --> 01:06:00,319
+AB'nin bu AB'ye olan uzaklığı ne kadar? A ile A arasındaki mesafe ya da B ile B arasındakine bakabilirsiniz. 4. O zaman diyoruz ki AB buradaki AB'ye 4 uzaklıkta. Sonra BAB'ye bakıyoruz ki bu daha uzun bir patern olsaydı, başında B olsaydı o zaman daha ya da aralarda başka karakterler olsaydı bu BAB paterni de bunun içerisinde olabilirdi. O zaman o paternin uzaklığını hesaplayacaktık.
+
+317
+01:06:02,068 --> 01:06:07,807
+Alt patternlerin bu pattern içerisinde geçip geçmediğini kontrol ediyoruz.
+
+318
+01:06:07,928 --> 01:06:15,588
+Geçiyorsa en son pattern'e olan uzaklığını hesaplıyoruz ve preprocessing adımını tamamlıyoruz.
+
+319
+01:06:17,988 --> 01:06:28,528
+Bundan sonra gelelim işin bad simbolle good suffix'in birlikte karar verildiği noktaya.
+
+320
+01:06:29,108 --> 01:06:31,288
+Şimdi, şunu biliyoruz.
+
+321
+01:06:32,788 --> 01:06:37,468
+Biz bu noktada D1 ve D2'yi hesaplamamız gerekiyor.
+
+322
+01:06:37,568 --> 01:06:41,968
+D1'i hesaplarken aşağıdaki şu formülden faydalanıyoruz.
+
+323
+01:06:42,628 --> 01:06:44,968
+Yukarıda bunu detaylı bir şekilde konuştuk.
+
+324
+01:06:46,347 --> 01:06:49,268
+BAT simbola göre ne kadar shift edeceğimizi belirliyoruz.
+
+325
+01:06:50,307 --> 01:06:56,228
+D2'yi de, şurada konuştuk, D2'de küçük bir paternin
+
+326
+01:06:57,492 --> 01:07:02,492
+Paternin kendi içerisinde tekrar edip etmediğine bakıyoruz. Ne kadar tekrar ettiğini buluyoruz.
+
+327
+01:07:03,711 --> 01:07:10,152
+Sonra diyoruz ki eğer k eşit sıfırsa d1'i kullan.
+
+328
+01:07:12,412 --> 01:07:19,852
+k büyük sıfırsa yani herhangi bir şekilde bütün bu noktada hatırlarsanız k'yı da tekrar hatırlatalım.
+
+329
+01:07:20,724 --> 01:07:45,644
+K bu noktada eşleşme noktasıydı. Eşleşme noktasında K burada 2 idi. Hiçbir eşleşme yoksa zaten D1'i kullanıyoruz. Eğer herhangi bir şekilde bir eşleşme varsa o zaman bunların içerisinden maksimum olanı kullanıyoruz. Bu bize neyi sağlıyor? Biz elimizdeki seçeneklere göre baktığımızda olasılıklar olarak
+
+330
+01:07:47,027 --> 01:07:59,927
+Shift ettiğimizde bir eşleşme sağlamayan iki tane değer var elimizde. Bunun en büyük olanını tercih ediyoruz çünkü en büyük olanı bizde bunun kesinlikle bu noktada eşleşmeyeceğini garanti ediyor.
+
+331
+01:07:59,927 --> 01:08:14,567
+O zaman en küçüğünü kaydırmak yerine biz daha fazla kaydırmayı doğal olarak tercih edeceğimiz için bu iki bad symbol ve good suffix'ten gelen değerden en büyüğünü tercih edip
+
+332
+01:08:14,708 --> 01:08:19,887
+Sağa doğru bu patternımızı shift etmeyi tercih ediyoruz.
+
+333
+01:08:21,907 --> 01:08:29,148
+Evet, şimdi genel olarak Boyer-Moor algoritması bu prensiple çalışıyor.
+
+334
+01:08:30,247 --> 01:08:33,347
+Buraya kadar sorusu olan var mı Boyer-Moor algoritması ile ilgili?
+
+335
+01:08:44,020 --> 01:08:44,320
+Peki.
+
+336
+01:08:47,320 --> 01:08:52,660
+Bir örnek üzerinden ilerlemek ister misiniz? Onu sorayım.
+
+337
+01:08:55,240 --> 01:09:00,720
+Yani yazarak başka bir örnek üzerinden birlikte yapalım mı?
+
+338
+01:09:03,840 --> 01:09:04,980
+Örüm iyi olur bence.
+
+339
+01:09:05,560 --> 01:09:05,840
+Tamam.
+
+340
+01:09:05,920 --> 01:09:06,400
+Bence de iyi olur.
+
+341
+01:09:07,340 --> 01:09:10,020
+Teşekkür ediyorum. Şimdi hemen...
+
+342
+01:09:11,220 --> 01:09:12,700
+Ekranımı paylaşacağım.
+
+343
+01:09:44,051 --> 01:09:46,191
+1.30 saniyenizi rica ediyorum.
+
+344
+01:10:21,587 --> 01:10:23,507
+Şu ansalarımı görebiliyorsunuzdur.
+
+345
+01:10:25,827 --> 01:10:30,667
+Şimdi ben hemen yazayım.
+
+346
+01:10:31,567 --> 01:10:34,387
+Önce arama yapacağımız metni yazayım.
+
+347
+01:10:49,108 --> 01:10:51,708
+Ve hemen arkasından da pattern'ımı yazacağım.
+
+348
+01:10:54,068 --> 01:10:56,208
+Pattern'ımı da diğer renkle yazıyorum.
+
+349
+01:11:03,507 --> 01:11:04,627
+Evet, pattern'ım da bu.
+
+350
+01:11:08,500 --> 01:11:21,360
+Şimdi, öncelikle, bad, symbol, shift için preprocessing.
+
+351
+01:11:24,884 --> 01:11:26,724
+table'ımı oluşturmam gerekiyor.
+
+352
+01:11:28,363 --> 01:11:32,264
+A, B, C, D şeklinde
+
+353
+01:11:32,264 --> 01:11:34,664
+devam ediyorum.
+
+354
+01:11:35,043 --> 01:11:35,863
+Bu da O olsun.
+
+355
+01:11:36,684 --> 01:11:37,884
+Bu şekilde alfabe
+
+356
+01:11:37,884 --> 01:11:41,923
+preprocessing adımı buydu bahsettiğim size.
+
+357
+01:11:42,503 --> 01:11:43,604
+Pattern'ı inceleyeceğiz.
+
+358
+01:11:46,304 --> 01:11:46,623
+Şimdi
+
+359
+01:11:46,623 --> 01:11:49,804
+bu noktada
+
+360
+01:11:51,923 --> 01:12:04,904
+Bizim A için değerimiz kaç olacak? B, C, M, O, Shift'te preprocess ettiğimizde. Bana kim söyler?
+
+361
+01:12:10,068 --> 01:12:10,667
+[öğrenci]?
+
+362
+01:12:11,427 --> 01:12:12,388
+Ürün 4 olacak.
+
+363
+01:12:14,388 --> 01:12:18,427
+Bir ufak detayı kaçırdın, bunu söylemiştim. 4 olmayacak.
+
+364
+01:12:20,247 --> 01:12:23,888
+Evet, ilk önce sondan şey A'yı görmedi.
+
+365
+01:12:24,888 --> 01:12:30,148
+O zaman 1 olacak. Çünkü sona 1 uzaklıkta, doğru mu?
+
+366
+01:12:30,948 --> 01:12:31,368
+Doğru.
+
+367
+01:12:31,988 --> 01:12:35,728
+Tamam. Peki, B'nin uzaklığını kim söylemek ister?
+
+368
+01:12:44,692 --> 01:12:47,511
+Arkadaşlar, bu ari son derste iki cümle kurun ya.
+
+369
+01:12:50,252 --> 01:12:52,412
+Hani bir şey söylemeyeyim söylemeyeyim diyorum ama.
+
+370
+01:12:58,100 --> 01:13:00,820
+B'nin sona uzaklığı nedir arkadaşlar?
+
+371
+01:13:02,060 --> 01:13:03,260
+Bad, symbol, shift değeri.
+
+372
+01:13:05,360 --> 01:13:06,280
+Hangi B'ye bakacağız?
+
+373
+01:13:09,220 --> 01:13:09,900
+[öğrenci]?
+
+374
+01:13:11,420 --> 01:13:12,640
+Hocam 2'dir.
+
+375
+01:13:13,400 --> 01:13:17,760
+Evet, neden öyle yapıyoruz? Son karaktere dikkate almıyoruz değil mi?
+
+376
+01:13:19,120 --> 01:13:19,760
+Evet.
+
+377
+01:13:20,520 --> 01:13:21,640
+Çünkü son karakter B.
+
+378
+01:13:22,260 --> 01:13:32,140
+0 demiyoruz. Son karakterden sonra ilk gelen, sona en yakın olan B'yi alıyoruz. Ona 2 diyoruz. C'nin değeri kaçtır [öğrenci]?
+
+379
+01:13:33,500 --> 01:13:44,100
+C'nin değeri de yok biliyorsun pattern'da. Yoksa en uzak. Pattern'ın boyutu kadardır. Yani 6.
+
+380
+01:13:44,692 --> 01:13:45,752
+Evet, ben de öyle.
+
+381
+01:13:46,332 --> 01:13:51,231
+D'nin değeri 6'dır. O'nun değerini sorayım, onu da söyle, teşekkür edeyim sana.
+
+382
+01:13:52,192 --> 01:13:52,711
+3 hocam.
+
+383
+01:13:53,012 --> 01:14:02,352
+3, çok teşekkür ederim. O'nun değeri de 3 arkadaşlar. Şimdi bad symbol shift'imizi oluşturduk. Gelelim Goods'a fix'e.
+
+384
+01:14:09,524 --> 01:14:13,024
+Preprocessing Table'ı oluşturalım.
+
+385
+01:14:15,543 --> 01:14:23,144
+K değerimiz, patternımız ve D2 değerimiz var.
+
+386
+01:14:24,043 --> 01:14:27,584
+Şimdi patternımız B, A, O, B, A, B.
+
+387
+01:14:28,724 --> 01:14:33,664
+K'mız 1 ise, K1 ise D2 değeri kaçtır?
+
+388
+01:14:37,524 --> 01:14:44,384
+B'ye bakıyorum demek. B ne kadar önce tekrar etmiş? Kaç karakter önce tekrar etmiş?
+
+389
+01:14:57,108 --> 01:15:12,448
+varsa? İki hocam. İki karakter önce tekrar etmiş. Peki, K'yı iki yaptım. Yani bu patern içerisinde iki karakterlik bir tekrar var mı diye bakacağım. Bu sefer AB var mı diye bakıyorum.
+
+390
+01:15:31,636 --> 01:15:33,396
+AB, [öğrenci] lütfen.
+
+391
+01:15:34,396 --> 01:15:35,796
+Yine 6 oldu buca.
+
+392
+01:15:36,396 --> 01:15:40,836
+Şimdi burada 6 olmuyor. Değişen şey ne? Çok ufak bir farklılık var.
+
+393
+01:15:42,016 --> 01:15:47,775
+AB'nin bir karşılığı var mı diye geriye doğru gidiyorum. Nerede eşleşecek?
+
+394
+01:15:49,796 --> 01:15:50,876
+En sonunda.
+
+395
+01:15:51,576 --> 01:15:57,615
+Evet, yani B, 1, 2, 3, 4, 5 geri kaydığı zaman eşleşecek değil mi?
+
+396
+01:15:59,988 --> 01:16:00,528
+Evet.
+
+397
+01:16:01,328 --> 01:16:05,568
+Yani A dışarıda kalacak, B diğer B'nin üstüne binmiş olacak.
+
+398
+01:16:05,568 --> 01:16:06,168
+Evet.
+
+399
+01:16:06,528 --> 01:16:09,248
+Eğer orada B olmasaydı dediğim gibi 6 olacaktı.
+
+400
+01:16:09,628 --> 01:16:13,548
+Ama B olduğu için buradaki uzaklığı 5 olacak.
+
+401
+01:16:13,728 --> 01:16:22,208
+A, B'yi şu şekilde gösterecek olursam, A, B'yi her tanesine bir bir kaydırırsam en son geldiği nokta bu olacak.
+
+402
+01:16:22,868 --> 01:16:26,908
+Doğal olarak B, 1, 2, 3, 4, 5 kaymış olacak.
+
+403
+01:16:28,148 --> 01:16:29,387
+Evet, benim o zaman.
+
+404
+01:16:29,468 --> 01:16:29,708
+Tamam.
+
+405
+01:16:30,368 --> 01:16:31,048
+Yok, önemli.
+
+406
+01:16:31,128 --> 01:16:32,087
+Birlikte yapıyoruz zaten.
+
+407
+01:16:32,827 --> 01:16:35,368
+B, A, sonra devam ediyoruz paternlere bakmaya.
+
+408
+01:16:36,247 --> 01:16:40,908
+Çünkü paternler biz gözle görüyoruz ama hepsini kontrol etmemiz gerekiyor.
+
+409
+01:16:41,448 --> 01:16:44,387
+Bu sefer B, A, B var mı paternle diye bakıyoruz.
+
+410
+01:16:44,387 --> 01:16:51,448
+B, A, B'yi de kaydırdığımız zaman yine en sondaki B'nin en baştaki B ile eşleşmesi için 5 adım geçmesi gerekiyor.
+
+411
+01:16:53,128 --> 01:16:54,087
+Aynı mantık.
+
+412
+01:16:55,891 --> 01:17:00,072
+Bu noktada bu dörtlüğü karşılaştırma için 5.
+
+413
+01:17:00,671 --> 01:17:07,891
+En sonda da AOBAB karşılaştırması yaptığımız zaman 5.
+
+414
+01:17:08,311 --> 01:17:14,351
+Yani bu noktada bizim karşımıza D2 değeri ne olarak çıkmış oldu?
+
+415
+01:17:15,951 --> 01:17:17,572
+5 olarak çıkmış oldu.
+
+416
+01:17:20,979 --> 01:17:27,439
+Şimdi bu noktadan başlayarak biz karşılaştırma işimizi yapmaya başlayacağız.
+
+417
+01:17:27,579 --> 01:17:29,679
+BES ile başlayan bir tekstimiz var.
+
+418
+01:17:30,179 --> 01:17:33,119
+B, A, O ile başlayan bir patternımız var.
+
+419
+01:17:33,599 --> 01:17:36,500
+Yerleştirdik. İlk karşılaştırmaya nereden başlayacağım?
+
+420
+01:17:37,199 --> 01:17:39,179
+Hangi harf ile başlayacağım? Kim söylemek ister?
+
+421
+01:17:59,028 --> 01:18:01,587
+Arkadaşlar, rüca etsem bir cevap alabilir miyim?
+
+422
+01:18:06,260 --> 01:18:12,840
+Şu anda patronumu Metin ile karşılaştırmaya başladım. İlk karşılaştıracağım harfler hangisi olacak?
+
+423
+01:18:38,739 --> 01:18:40,340
+Bir arkadaşımız cevap verebilir mi?
+
+424
+01:18:40,479 --> 01:18:40,859
+Rica ederim.
+
+425
+01:18:56,243 --> 01:18:56,823
+[öğrenci]?
+
+426
+01:18:57,603 --> 01:19:06,703
+Öğren emin değilim ama şeyden, BES, New'dan şey, K ve N'nin sonuna kadar.
+
+427
+01:19:07,703 --> 01:19:20,623
+Sevgili [öğrenci], benim sorduğum soru hiç bu kadar zor değil. Ben sadece şunu soruyorum. İlk patternla metini karşılaştırmaya başlayacağım ya, daha ne olduğunu bilmiyorum.
+
+428
+01:19:21,039 --> 01:19:25,860
+Görmedim. İlk hangi karakterler eşleşmiş olacak? Hangisini karşılaştıracağım?
+
+429
+01:19:28,319 --> 01:19:29,739
+Patroni şeyle mi?
+
+430
+01:19:29,739 --> 01:19:32,559
+Neyip bir esniyla da o var mı?
+
+431
+01:19:34,159 --> 01:19:38,559
+Boyer-Moor algoritması nereden başlar karşılaştırmaya demiştim?
+
+432
+01:19:39,180 --> 01:19:40,139
+Sondan başlı.
+
+433
+01:19:40,239 --> 01:19:42,380
+O zaman hangi karakterler karşılaştırılacak?
+
+434
+01:19:45,139 --> 01:19:46,979
+Yazıyor. Ekranda.
+
+435
+01:19:49,235 --> 01:19:52,715
+Alt alta gelen karakterler var değil mi?
+
+436
+01:19:53,675 --> 01:19:54,015
+Evet.
+
+437
+01:19:54,735 --> 01:19:57,315
+Hangi karakterler karşılaştıracak sonundan başladığında?
+
+438
+01:19:57,956 --> 01:20:00,315
+K ve boşluk.
+
+439
+01:20:01,075 --> 01:20:01,575
+K ve B.
+
+440
+01:20:02,036 --> 01:20:03,796
+Teşekkür ederim. K ve B.
+
+441
+01:20:05,135 --> 01:20:06,475
+K ve B eşit mi?
+
+442
+01:20:08,515 --> 01:20:09,155
+Değil.
+
+443
+01:20:09,536 --> 01:20:12,215
+Değil. O zaman demek ki bir daha karşılaştırmama gerek var mı?
+
+444
+01:20:13,895 --> 01:20:14,135
+Yok.
+
+445
+01:20:14,135 --> 01:20:16,575
+Ben şimdi burada bir boşluk.
+
+446
+01:20:17,492 --> 01:20:25,692
+Şu anda karşılaştırmama gerek olmadığı için bad symbol shift. Yani ben eşleşme bulamadığım için artık kaydırmam gerektiğini biliyorum.
+
+447
+01:20:26,072 --> 01:20:38,332
+Kaydırmak için de iki tane yaklaşımın sonuçlarına bakmam lazım. Bad symbol shift'in kullandığımdaki yaklaşımda, bu arada bunlardan birini kullanarak da bu algoritmayı implement edebilirsiniz.
+
+448
+01:20:38,332 --> 01:20:44,332
+İlla ikisini kullanmak zorunluluğu yok. Sadece bad symbol shift'i implemente etseydim,
+
+449
+01:20:45,716 --> 01:20:48,916
+Ne kadar kaydırmam gerekiyor? Nasıl hesaplayacaktım?
+
+450
+01:20:52,316 --> 01:20:58,056
+T1k eksi küçük k yazacaktım.
+
+451
+01:20:58,836 --> 01:21:00,556
+T1k'nın değeri kaçtır?
+
+452
+01:21:07,315 --> 01:21:10,876
+Yani K'nın Petr'le olan uzaklığı kaçtır?
+
+453
+01:21:22,260 --> 01:21:24,159
+Şansınızı deneyebilir misiniz rücağıtın?
+
+454
+01:21:29,652 --> 01:21:30,252
+[öğrenci].
+
+455
+01:21:31,252 --> 01:21:32,391
+6 değil mi hocam?
+
+456
+01:21:32,832 --> 01:21:37,752
+6. 6 yazdıktan sonra eksi küçük k kaçtır? Bir eşleşme var mı?
+
+457
+01:21:41,203 --> 01:21:44,243
+Herhangi bir eşleşme var mı? Pattern ile Metin içerisinde.
+
+458
+01:21:49,140 --> 01:21:50,460
+[öğrenci] sen söyleyebilirsin.
+
+459
+01:21:53,340 --> 01:21:55,180
+K ile B eşleşiyor mu [öğrenci]?
+
+460
+01:21:55,600 --> 01:21:56,180
+Hayır hocam.
+
+461
+01:21:56,579 --> 01:21:57,659
+O zaman K kaç olacak?
+
+462
+01:21:58,340 --> 01:21:58,659
+6.
+
+463
+01:21:59,620 --> 01:22:02,120
+Hayır hayır küçük K'yı söylüyorum ya büyük K'yı hallettik zaten.
+
+464
+01:22:04,420 --> 01:22:05,420
+Hayır küçük K.
+
+465
+01:22:06,079 --> 01:22:08,860
+Hani eşleşme sayısı olarak belirliyorduk ya küçük K'yı.
+
+466
+01:22:11,739 --> 01:22:13,319
+Eşleşmiyorsa küçük K kaçtır?
+
+467
+01:22:14,819 --> 01:22:15,739
+Bilmiyorum hocam.
+
+468
+01:22:16,627 --> 01:22:25,448
+Peki. Arkadaşlar, eşleşme sayısıdır k'nın değeri demiştik. K, B ile eşleşmediğine göre sayı ne olacak?
+
+469
+01:22:28,688 --> 01:22:29,367
+[öğrenci]?
+
+470
+01:22:29,927 --> 01:22:34,367
+Hocam yüksel çetten yazıyordu. Sifir demiş. Ben de sifir diyorum.
+
+471
+01:22:35,747 --> 01:22:42,327
+Çetten yazıyor. Bakalım. Bana düşmemişti. Şimdi sana söyleyince gördüm. Evet, sıfır olacak. [öğrenci] teşekkür ediyorum.
+
+472
+01:22:44,083 --> 01:22:58,283
+6 çıkarma 0 yaptığımızda değer kaç olacak? 6 olacak. O zaman D1'im benim. 6 olacak. Doğru mu? Peki D2 kaçtı?
+
+473
+01:23:05,203 --> 01:23:08,064
+D2 kaç arkadaşlar? Bulduk. Yazıyor.
+
+474
+01:23:09,503 --> 01:23:09,884
+Varsa?
+
+475
+01:23:10,384 --> 01:23:10,804
+5.
+
+476
+01:23:11,583 --> 01:23:13,144
+5 mi büyük, 6 mı büyük?
+
+477
+01:23:14,344 --> 01:23:14,963
+6.
+
+478
+01:23:16,263 --> 01:23:19,144
+Ya bana bu soruları sordurdunuz ya, alacağınız olsun.
+
+479
+01:23:21,183 --> 01:23:30,203
+O zaman demek ki 6 birim bu BAOBAB paternini kaydırmamız gerekiyor. O zaman da...
+
+480
+01:23:31,444 --> 01:23:39,704
+B, A, B, O, B, Pardon yanlış yazdım, şunu düzelteyim.
+
+481
+01:23:45,268 --> 01:23:50,068
+B A O B A B
+
+482
+01:23:50,068 --> 01:23:52,048
+Şu an bu noktadayız, doğru mu?
+
+483
+01:23:54,048 --> 01:23:55,347
+Şöyle çizgileri de çizeyim.
+
+484
+01:23:59,060 --> 01:24:05,120
+Evet, şimdi tekrar soruyorum. Burada eşleşen karakter var mı? Sayısı kaçtır?
+
+485
+01:24:12,083 --> 01:24:13,003
+Evet, varsa.
+
+486
+01:24:13,804 --> 01:24:19,523
+Hocam, sondan 1 ve A about kısmında eşleşen diye.
+
+487
+01:24:19,523 --> 01:24:25,703
+İki tane karakter eşleşiyor. O zaman küçük k değerim kaç olacak? 2 olacak.
+
+488
+01:24:26,823 --> 01:24:34,683
+D1 için T1 neye bakacağım? Şöyle yapalım. Eşittir.
+
+489
+01:24:35,220 --> 01:24:58,300
+T1, eşleşmeyen karakterim hangisi? Boşluk. Boşluğa bakacağım. Eksi diyeceğim. Boşluğun değeri kaç? 6. 6-2'den 4 gelecek elime. [öğrenci] teşekkür ederim verdiğim cevaplar için. 4 geldiğine göre elimden. Elimde şu anda bet simbol shift'ten 4 var.
+
+490
+01:24:59,820 --> 01:25:02,159
+Kud safix shift'ten kaç var arkadaşlar?
+
+491
+01:25:04,692 --> 01:25:28,252
+5 var. 5, 4'ten büyük. O zaman bu sefer 5 sağa kaydıracağım. Çünkü tam bir eşleşme sağlanamadı. 5 sağa kaydırdığım zaman nereye denk gelecek? En baştaki B buraya çünkü artık bir olasılık. Belki buradan başlayarak bir denk gelme olabilir diye B'yi buraya koyduk.
+
+492
+01:25:28,496 --> 01:25:37,376
+B, A, O, B, A, B. Bu noktaya geldim. Bu noktada, yukarıdan çiziyorum.
+
+493
+01:25:42,068 --> 01:26:02,087
+Burada eşleşen sadece bir tane karakter var. Küçük k değerim 1 olacak. Eşleşmeyen karakter hangisi? Boşluk. Değeri ne olacak? 6. 6-1'den 5 gelecek. Peki, burada d2 değerim kaçtır?
+
+494
+01:26:05,716 --> 01:26:21,775
+Buradaki D2 değerim 2'dir. Çünkü D2 paterninde B'ler var. Biraz önce AB vardı. AB olduğu için biraz önce değerimi ne olarak yaptık? 5 olarak yaptık.
+
+495
+01:26:22,136 --> 01:26:27,236
+Burada eşleşen karakter sadece B. Onun karşılığı tabloda kaç? 2.
+
+496
+01:26:28,307 --> 01:26:38,108
+İlk etapta bizim aslında eşleşme olmayan K ve B'nin olduğu örnekte hiç good suffix'e bakmamamız gerekiyordu çünkü eşleşme yok.
+
+497
+01:26:39,327 --> 01:26:40,987
+Bu noktalar dikkatten kaçmasın.
+
+498
+01:26:43,868 --> 01:26:48,895
+Burada good suffix'te B eşleştiği için D2 değeri...
+
+499
+01:26:48,895 --> 01:27:12,615
+Kutsafiksten 2 gelecek. D1 değeri 5, 5 daha büyük olduğu için 5 kaydıracağız. 5 kaydırdığımız zaman bizim yeni yerimiz BAB olacak. Bu noktada bütün yukarıdaki karakterler ile eşleşme yaptığımız zaman ki
+
+500
+01:27:13,011 --> 01:27:35,992
+Burada avantajını görüyorsunuz. B'yi atlamamanın, sağa doğru geçmemenin. B en başa geldi ve B'den sonraki tüm karakterler de eşleştiği için bizim buradaki algoritmamız tüm eşleşme koşullarını sağladığı için burada eğer hepsini bulmaya çalışmıyorsak sonlanacak. Eğer hepsini bulmaya çalışıyorsak karşılaştırmaya devam edecek.
+
+501
+01:27:38,484 --> 01:27:50,744
+Ve Boyer-Moore algoritması bu şekilde tek tek bütün karakterleri karşılaştırmaktansa atlaya atlaya hem de büyük mesafeler gide gide ilerlemiş oldu.
+
+502
+01:27:52,264 --> 01:27:56,024
+Bad Symbol Shift ve Good Sophix Shift ile ilgili sorusu olan var mı?
+
+503
+01:27:58,404 --> 01:28:03,624
+Ya da bu algoritmanın genel prensibiyle ilgili soru sormak isteyen var mı?
+
+504
+01:28:08,659 --> 01:28:19,859
+Peki. O zaman devam edebiliriz. Örneğimizi de yaptığımıza göre bu noktada slide'larımıza geri dönelim.
+
+505
+01:28:29,363 --> 01:28:43,183
+Boyar-Mur algoritmasını tamamladık. Şimdi Boyar-Mur Horsepool ya da sadece Horsepool şeklinde daha basit implemente edilebilecek bir yaklaşım konuşacağız.
+
+506
+01:28:45,323 --> 01:28:47,703
+Şimdi burada da keyzlerimiz var.
+
+507
+01:28:48,064 --> 01:28:59,884
+Bu case'lerimizi önce irdeleyeceğiz. Birçok noktadan shift stratejisi önceki shift stratejilerine benziyor. Ama bazı noktalarda farklılık olacak.
+
+508
+01:29:00,824 --> 01:29:10,064
+Burada case 1'de bizim karşılaştırdığımız patternla metin arasındaki karakterin...
+
+509
+01:29:10,931 --> 01:29:19,371
+uyuşmadığı bir örnek üzerinden gidiyoruz. Artı bu karakterde herhangi bir şekilde pattern içerisinde yok.
+
+510
+01:29:20,531 --> 01:29:30,832
+S, Barber içerisinde yer almadığı için daha önce Boyar Morda yaptığımız gibi tüm pattern'ı, pattern boyutu kadar sağ rahatlıkla, gönül rahatlığıyla shift ediyoruz.
+
+511
+01:29:30,832 --> 01:29:36,752
+Case 1 kolay. Çünkü herhangi bir şekilde S, eşleşmeyen karakter,
+
+512
+01:29:37,619 --> 01:29:45,619
+Bu pattern içerisinde yer almadığı için zaten herhangi bir tanesiyle denk getirmeye çalışmaya gerek yok. Doğrudan sağa shift ettik.
+
+513
+01:29:46,299 --> 01:29:55,399
+Peki, karakter C karakteri pattern içerisinde varsa ne yapacağız?
+
+514
+01:30:00,756 --> 01:30:03,076
+Ne yapıyor olabilir buradaki örnekte?
+
+515
+01:30:05,396 --> 01:30:12,996
+B, R ile uyuşmuyor ama Barber'ın içerisinde de B var. Ne yapmayı tercih etmiş?
+
+516
+01:30:20,819 --> 01:30:23,899
+Hem yazılı olarak yazıyor hem de görsel olarak görüyorsunuz.
+
+517
+01:30:25,020 --> 01:30:26,119
+Nereye kadar shift etmiş?
+
+518
+01:30:34,484 --> 01:30:38,904
+İlk eşleşene kadar kaydırmış, [öğrenci] chatten yazmış, teşekkür ederim [öğrenci].
+
+519
+01:30:38,904 --> 01:30:49,784
+Burada yaptığı şey B bizim patternımız içerisinde var. İlk gördüğü yer neredeyse oraya kadar shift etmiş.
+
+520
+01:30:50,084 --> 01:30:54,324
+Demiş ki belki bir olasılık burada bir eşleşme yakalanabilir.
+
+521
+01:31:01,971 --> 01:31:15,551
+Eşleşmeler sağlanmış ama tümü eşleşmediği için eşleşme gerçekleşmeyen noktadaki karakter ne ona bakıyoruz.
+
+522
+01:31:16,131 --> 01:31:23,211
+Buradaki eşleşmeyi bozan karakter M. M ladder'ın içinde var mı? Leader'ın içinde yok.
+
+523
+01:31:24,724 --> 01:31:34,503
+Olmadığı için de yine case 1'de olduğu gibi gönül rahatlığıyla biz bu pattern'ı pattern boyutu kadar sağ şift ediyoruz.
+
+524
+01:31:36,104 --> 01:31:42,144
+Yani ilk karakterin eşleşmemesiyle sonradanki karakterin eşleşmemesi arasında hiçbir fark yok.
+
+525
+01:31:42,984 --> 01:31:46,943
+Yeter ki eşleşmeyen karakter pattern içerisinde olmasın.
+
+526
+01:31:47,539 --> 01:31:55,059
+Aslında bu bizim istediğimiz durum. Çünkü böylece gönül rahatlığıyla pattern boyutu kadar yani en avantajlı şekilde kaydırabiliyoruz.
+
+527
+01:31:56,059 --> 01:31:58,279
+Gelelim son case'imize.
+
+528
+01:32:00,719 --> 01:32:03,779
+Bu case'de ne yapıyoruz?
+
+529
+01:32:05,920 --> 01:32:07,600
+Bir okuyalım case doğrulu.
+
+530
+01:32:24,884 --> 01:32:25,963
+Kim söylemek ister?
+
+531
+01:32:46,707 --> 01:32:48,207
+KZ2'den parsa?
+
+532
+01:32:49,827 --> 01:32:56,667
+Bence şeyden eşleşmeyen karakterden birisi için ilk eşleşene kadar.
+
+533
+01:32:58,207 --> 01:32:59,947
+Burada KZ2'ye çok benziyor.
+
+534
+01:33:01,287 --> 01:33:04,147
+Burada bir A ile E'nin eşleşmediğini buluyoruz.
+
+535
+01:33:05,867 --> 01:33:10,987
+A ile E eşleşmemiş olmasına rağmen, A da bunun içerisinde olmamasına rağmen,
+
+536
+01:33:13,971 --> 01:33:30,051
+Pattern'ı shift etmek yerine pattern boyutu kadar. Pattern'ın içerisinde eşleşen karakter olan R ilk gördüğümüz nokta neresiyse pattern'ı o noktaya kadar kaydırıyoruz.
+
+537
+01:33:30,051 --> 01:33:35,431
+R burada eşleşmiş. Yukarıda R var. Eşleşen bu R.
+
+538
+01:33:36,340 --> 01:33:50,280
+Burada herhangi bir şekilde pattern içerisinde var mı last karakterden sonra? Var, burada. Biz de reorder kelimesini o eşleşen karaktere kadar sağa doğru shift ettik.
+
+539
+01:33:50,280 --> 01:34:00,380
+İşte horsepool algoritması aslında biraz önceki bad shift ve good suffix karışık yöntemlerini kullanmadan
+
+540
+01:34:01,043 --> 01:34:15,144
+Doğrudan oluşturduğu basit bir yaklaşım ile özellikle küçük boyutlu alfabelerde çok daha basit bir şekilde kullanılabiliyor.
+
+541
+01:34:15,144 --> 01:34:25,996
+Gelelim buradaki mantığa. Buradaki mantıkta yine bir preprocessing gerekiyor. Yine harflerin...
+
+542
+01:34:27,123 --> 01:34:33,644
+Son karaktere olan uzaklığının hesabı gerekiyor. Bu table'ı oluşturuyoruz.
+
+543
+01:34:35,304 --> 01:34:40,623
+Ama karar verme mekanizması bir önceki yapıdan biraz daha farklı.
+
+544
+01:34:42,363 --> 01:34:50,283
+Bu noktada C eğer herhangi bir şekilde önceki pattern içerisindeki karakterlerde bulunmuyorsa,
+
+545
+01:34:55,091 --> 01:34:56,371
+Sağa kaydırıyoruz.
+
+546
+01:34:59,191 --> 01:35:04,191
+Eğer C burada şöyle diyelim.
+
+547
+01:35:05,191 --> 01:35:17,711
+Kaydırma noktasını belirlerken özellikle kaydıracağımız karakterin sonundaki karaktere olan uzaklığını kullanarak
+
+548
+01:35:18,079 --> 01:35:21,380
+Biz bu kaydırma işlemini gerçekleştiriyoruz.
+
+549
+01:35:21,380 --> 01:35:31,319
+The distance from the rightmost C among the first M-1 characters of the pattern to its last character.
+
+550
+01:35:32,051 --> 01:35:45,652
+Bu da bizim eşleşme durumumuzda. Yani sağ tarafta görmüş olduğunuz R'nin diğer R ile olan uzaklığını hesapladıktan sonra sağa doğru kaydırmamızı sağlıyor.
+
+551
+01:35:46,091 --> 01:35:52,011
+Şimdi gelin birlikte burada nasıl bir örnek var? Bunu tek tek yapalım.
+
+552
+01:35:52,011 --> 01:35:54,951
+Şimdi Barber kelimesi var.
+
+553
+01:35:55,539 --> 01:35:59,140
+Barber kelimesini yukarıdaki metnin altına koyduk.
+
+554
+01:35:59,239 --> 01:36:00,600
+A, R ile eşleşmemiş.
+
+555
+01:36:01,880 --> 01:36:08,320
+Peki, A, R ile eşleşmediği zaman yaptığımız şey nedir?
+
+556
+01:36:21,587 --> 01:36:41,547
+A, Barber'ın içinde var mı diye bakmak. Var. Ve ona olan uzaklığını bulmak, ki onun uzaklığını aslında şu noktada hesaplamış olduk. Ve bizim Barber kelimesini dört yana kaydırdık.
+
+557
+01:36:43,572 --> 01:37:02,171
+Barber kelimesini bu sefer yukarıdaki metinle bu şekilde eşleştirdik. RE ile eşleşmedi. Bu sefer ne yaptım? E'nin Barber'ın içinde olup olmadığına baktım. E Barber'ın içerisinde var mı? Var. Hangi pozisyonda? Bu pozisyonda.
+
+558
+01:37:03,332 --> 01:37:09,671
+Table'daki değeri kaç? Bir. O zaman dedim ki Barber'ı ben bir sağa kaydırayım.
+
+559
+01:37:10,707 --> 01:37:12,207
+Barber bu noktaya geldi.
+
+560
+01:37:14,667 --> 01:37:15,847
+Burada ne yapacağım?
+
+561
+01:37:20,115 --> 01:37:22,115
+R ile olsa
+
+562
+01:37:22,115 --> 01:37:28,415
+Burada alt direği bulamadığı için tamamen sağa kaydıracağız.
+
+563
+01:37:28,715 --> 01:37:30,775
+Evet, ona da yukarıdan devam etmiş oluyorum.
+
+564
+01:37:31,295 --> 01:37:33,475
+Tamamıyla boyutu kadar kaydırdım.
+
+565
+01:37:34,015 --> 01:37:36,935
+Bu sefer buradan barber kelimesinden devam ediyorum.
+
+566
+01:37:37,395 --> 01:38:03,076
+R ile B eşleşti mi? Eşleşmedi. Eşleşmediği için B var mı diye baktım. Var. B'nin değeri kaç? Tabloda 2. Çünkü şuradaki 2'nin sonu olan uzaklığı 2. B'yi sağa doğru kaydırdım. 2 tane. Bu sefer Barber buraya yerleşti. R eşleşti. Bu sefer A ile E eşleşmedi.
+
+567
+01:38:05,555 --> 01:38:17,915
+A ile E'ye eşleşmediği zaman A'nın bu noktadaki yerini kullanıp Barber'ı sağa doğru şiflettim, table'dan faydalanarak.
+
+568
+01:38:19,975 --> 01:38:26,295
+Barber'ı kontrol ettim. Barber'ı burada bulduğum için course pool algoritmasını da tamamlamış oldum.
+
+569
+01:38:28,115 --> 01:38:29,495
+Buraya kadar sursu olan var mı?
+
+570
+01:38:34,068 --> 01:38:42,968
+Peki, o zaman bir ara verelim. Saat 11.39, 11.55'te kaldığımız yerden devam edelim.
+
+571
+01:58:05,011 --> 01:58:19,031
+Evet arkadaşlar, dersin son bölümüne hoş geldiniz. Biraz önce Horsepool algoritmasını da konuştuk. Horsepool algoritmasını şuradan hemen share screen yapalım.
+
+572
+01:58:24,948 --> 01:58:50,268
+Örneğini de birlikte çözmüştük. Son olarak küçük püsoda kodlarına bir bakalım. Bu noktada ilgili bu preprocessing adamın yer aldığı, shift table'ın oluşturulduğu kısmı görüyorsunuz. Bu noktada her bir karakter için bir hesap yapılıyor.
+
+573
+01:58:50,739 --> 01:58:55,100
+Öncelikle tabii ki bir tane table oluşturuyorsunuz.
+
+574
+01:58:55,260 --> 01:59:03,159
+Ve bu table'da, table'a karakter, daha doğrusu pattern boyutunu vesaire diyorsunuz.
+
+575
+01:59:03,260 --> 01:59:12,579
+Sonra bu pattern boyutu üzerinden ilgili dönüşümleri gerçekleştirerek atamaları gerçekleştiriyorsunuz.
+
+576
+01:59:12,579 --> 01:59:13,579
+Bunun detayını çok...
+
+577
+01:59:13,807 --> 01:59:22,288
+konuşmaya gerek yok çünkü hiç soru gelmedi anlaşıldığını tahmin ediyorum ama merak eden olursa tabii ki soru gelirse cevap diyeceğim.
+
+578
+01:59:25,288 --> 01:59:37,547
+Şimdi bir önceki adım reprocessing adımını tarifliyor. Buradaki adım da algoritmanın kendisini küsada kod olarak gösteriyor.
+
+579
+01:59:42,899 --> 01:59:52,279
+metnin boyutudan küçük olduğumuz sürece iki while dönemüsüyle bir işi gerçekleştirmeye çalışıyoruz.
+
+580
+01:59:52,859 --> 02:00:02,839
+Ve tabii ki each while'da aslında sondan başa doğru eşleşen karakter var mı yok mu kontrolü yapıyoruz.
+
+581
+02:00:03,475 --> 02:00:14,695
+Eşleşen karakter varsa k'ya bir arttırıyoruz ve döngüden çıktığımızda k değeri pattern'ın boyutuna eşit mi diye bir kontrol yapıyoruz.
+
+582
+02:00:15,815 --> 02:00:21,695
+Eşit olup olmaması durumuna göre eğer eşitlik yoksa o zaman...
+
+583
+02:00:22,355 --> 02:00:39,595
+Yaptığımız en son iş oluşturduğumuz preprocessing tablosundaki değeri, ilgili gözdeki değeri alıp o noktada ne kadar shift edeceğimizi, in değerine assign ediyoruz.
+
+584
+02:00:40,095 --> 02:01:01,315
+İ değeri de bizim bir sonraki turda pattern'ımızın ilk karakterinin yerleşeceği noktayı söylüyor. Sonra da o karakter noktasından biz geriye dönük olarak nereye kadar geleceğimizi her turda while bölgüsüyle kontrol etmeye devam ediyoruz.
+
+585
+02:01:01,315 --> 02:01:05,735
+İ ne zaman en eksi birden küçük eşitlik sürecini bozuyor o zaman?
+
+586
+02:01:06,127 --> 02:01:20,707
+Bu noktada çıkış yapıyoruz. Öncesinde k m eşit olursa da return i eksi m artı bir değerini döndürerek aslında pattern'ı hangi noktada bulduğumuz link'sini geri elde etmiş oluyoruz.
+
+587
+02:01:21,927 --> 02:01:31,927
+Şimdi Boyer Moore, bad suffix, bad symbol daha doğrusu shift ve good suffix, shift algoritmalarını
+
+588
+02:01:32,948 --> 02:01:36,208
+Öteleme algoritmalarını kullanıyor demiştik.
+
+589
+02:01:37,888 --> 02:01:50,788
+Horse bulsa bu noktada aslında sadece karakterin, ilgili karakterin son noktaya olan uzaklık bilgisini kullanıyor.
+
+590
+02:01:50,788 --> 02:01:57,648
+Onun dışında herhangi bir ekstra bir işlem yapmıyor. Daha basit bir implementasyon.
+
+591
+02:01:58,068 --> 02:02:10,768
+Şimdi ikisinin karşılaştırmasına gelirsek, yani Boyer-Moore'un Horsepool ile karşılaştırmasına gelirsek, açıkçası kaynaklarda farklı ifadeler var. Biraz sonra bir grafik de göstereceğim.
+
+592
+02:02:10,768 --> 02:02:15,768
+Bazı kaynaklar aslında Boyer-Moore algoritmasının...
+
+593
+02:02:16,564 --> 02:02:26,104
+Horsepool'a göre daha verimli olduğunu ve büyük alfabelerde daha iyi sonuç ürettiğini belirtiyor.
+
+594
+02:02:26,684 --> 02:02:31,604
+Bu karşılaştırmayı yaptıktan sonra bir kez daha üzerinden konuşuruz bu noktayı.
+
+595
+02:02:33,064 --> 02:02:38,844
+Şimdi Rabin-Karp algoritmasından kısaca bahsedeceğim. Çok detayına girmeyeceğim.
+
+596
+02:02:39,744 --> 02:02:42,704
+Buradaki temel mantık hash.
+
+597
+02:02:43,220 --> 02:03:00,172
+Yaklaşımını kullanmak. Hash yaklaşımını şu ana kadar görmediniz ama kısaca bahsetmek gerekirse bir değeri belirli bir asal sayıya göre moduna alarak o ilgili değeri çıkan...
+
+598
+02:03:00,275 --> 02:03:27,195
+değer ile temsil etmek. Çünkü örneğin harflardan oluşan bir kelimede harflerin oluşturduğu değerleri toplayıp modülünü aldığınız zaman aynı değeri elde etmek çok olası değil. O yüzden mümkün olduğunca saklayacağımız bilgileri hash değeri üzerinden saklayarak onlara erişmeyi tercih ediyoruz. Bu anlamda.
+
+599
+02:03:28,404 --> 02:03:34,764
+Bir dahaki sene özellikle Algoritmalar izlersinde hash yapısını çok daha yakından göreceksiniz.
+
+600
+02:03:35,304 --> 02:03:43,184
+Ve hem şifrelemede hem de bilgiye erişimi hızlandırmada hash yapısından faydalandığımızı görüyor olacaksınız.
+
+601
+02:03:43,699 --> 02:03:55,520
+Bu noktada burada görmüş olduğunuz 2, 6, 5, 3, 5 değerleri 26535 olarak 997'ye göre moda alınıyor. 613 değeri üretiliyor.
+
+602
+02:03:56,199 --> 02:04:03,760
+Bu pattern'ın sahip olduğu harflerin değerlerini kullanarak bir değer elde ediyoruz.
+
+603
+02:04:09,971 --> 02:04:19,351
+pattern'a benzeyen, aynı değeri üretmiş olan, aynı hash fonksiyonuna sokulun, aynı değeri üretmiş olan başka bir kısım var mı?
+
+604
+02:04:20,971 --> 02:04:35,032
+314-15 ile başlıyoruz. Sonra 141-59 ile devam ediyoruz. Bu şekilde devam ederken görüyoruz ki 26.535 ki aynı olmak zorunda değil, başka.
+
+605
+02:04:35,604 --> 02:04:44,163
+değerlerde 613, 997'ye göre mod aldığınızda 613'ü elde etmenizi sağlayabilirsiniz.
+
+606
+02:04:44,163 --> 02:04:47,163
+26-535'i yakaladığımız noktada...
+
+607
+02:04:47,667 --> 02:04:56,927
+Tek tek pattern'ın karakterlerini kontrol ediyoruz. Çünkü kabaca bir eşleşme yakalandı. Detaya bakalım diyoruz.
+
+608
+02:04:57,347 --> 02:05:05,228
+Detayda da eğer gerçekten birebir aynı harf grubu bu değeri ürettiyse o zaman diyoruz ki burada biz bunu bulduk.
+
+609
+02:05:05,228 --> 02:05:15,228
+Bunu iyi kolaylaştırıyor. Tek tek harf kontrolü yapmaktansa tek bir sayının modülünü alarak modüler aritmetikte...
+
+610
+02:05:15,667 --> 02:05:21,007
+Ürettiğimiz değer, bizim pattern'ımız ve metin içerisindeki değer birbiriyle eşleşiyor buna bakıyoruz.
+
+611
+02:05:21,608 --> 02:05:26,667
+Eşleşmiyorsa bir sağa kaydırıyoruz ama sağa kaydırırken de tek tek bütün...
+
+612
+02:05:27,475 --> 02:05:50,475
+ilgili patternları gezsek de patternların içerisinde tek tek harf karşılaştırması yapmıyoruz. O yüzden de aslına bakarsanız pattern'ın boyutu büyüse de karşılaştırma oranımız artmamış oluyor. Bu da bize avantaj sağlıyor. Grup grup karşılaştırıyoruz. Eğer o grup komple...
+
+613
+02:05:50,676 --> 02:06:01,416
+Benzerlik oluşturmuyorsa zaten o grubun detay karşılaştırmasına hiç girmemiş oluyoruz. Böylece atlaya atlaya grupları ilerleme şansına sahip oluyoruz.
+
+614
+02:06:03,056 --> 02:06:13,436
+Robin Carp algoritmasının burada kısaca detayını veriyor. Slide. Burada bir hash değeri ürettiğimizden bahsediyoruz. Pattern'a ait.
+
+615
+02:06:17,171 --> 02:06:24,171
+Metin içerisindeki M karakterlik küçük parçalar içinde üretiyoruz ve bunlarla karşılaştırıyoruz.
+
+616
+02:06:24,291 --> 02:06:27,152
+Eşleşme sağlanırsa detayına bakıyoruz.
+
+617
+02:06:27,811 --> 02:06:32,951
+Çoğu noktada eşleşme sağlanmadığı için hızlı bir şekilde teksti tarayabiliyoruz.
+
+618
+02:06:33,031 --> 02:06:39,891
+Çünkü uzun bir patternda, pattern'ın büyük bir bölümü eşleştiği zaman tek tek sonuna kadar gitmeniz lazım.
+
+619
+02:06:44,307 --> 02:07:11,228
+O turda karşılaştırmış oluyorsunuz. Ama Robin Karp'ta siz o ilgili tüm kontrolleri yapmadan tek bir kontrolle bir karakter bile farklı olsa üretilecek değer farklı olacağı için boşu boşuna işte m-1, m-2 tane karakteri karşılaştırmak yerine sadece tek bir değer karşılaştırıyorsunuz ve bir karakter farklılığından doğacak.
+
+620
+02:07:11,764 --> 02:07:19,764
+farklı durumu da tespit etme şansına sahip olmuş oluyorsunuz. Böylece karakter karakter karşılaştırmıyorsunuz.
+
+621
+02:07:20,344 --> 02:07:25,744
+BruteForce yaklaşıma göre de çok daha avantajlı bir yaklaşım oluşuyor.
+
+622
+02:07:25,924 --> 02:07:30,904
+BruteForce yaklaşımı sadece hash value'ları eşit olursa uyguluyorsunuz.
+
+623
+02:07:31,424 --> 02:07:38,164
+Bakıyorsunuz bu pattern'ın arı birbirine benziyor. O zaman biz tek tek bakalım.
+
+624
+02:07:38,655 --> 02:07:53,655
+Gerçekten aynı karakterler mi yoksa tesadüfen çok da az bir alışık olsa başka bir karakter grubu aynı hash değerini üretmiş bunu anlamaya çalışıyorsunuz ve kararınızı veriyorsunuz.
+
+625
+02:07:56,355 --> 02:07:57,775
+Bu detaylara girmiyorum.
+
+626
+02:07:59,615 --> 02:08:00,875
+Karşılaştırmalar var.
+
+627
+02:08:02,255 --> 02:08:04,655
+Buradaki algoritmaların...
+
+628
+02:08:05,328 --> 02:08:10,848
+Yaklaşık olarak bize kostları konusunda bilgi veren karşılaştırmalar.
+
+629
+02:08:12,428 --> 02:08:16,968
+Buradan çok detaylı, daha detaylı olan şu kısmı tercih edeceğim.
+
+630
+02:08:18,408 --> 02:08:28,528
+Boyarmor'un avantajı özellikle çok özel bir case yoksa
+
+631
+02:08:28,912 --> 02:08:50,132
+Genel olarak n bölü m'lik bir artı sağlıyor olması. Yani diğerleri yaklaşık olarak n mertebesinden bir değer bize sunarken, m'in uzunluğuna bağlı olarak n büyüdükçe Boyar-Mur algoritmasının yani aradığınız paten boyutu büyüdükçe avantajı da artıyor.
+
+632
+02:08:50,612 --> 02:09:03,251
+Tabii ki worst case'ler, sınırlarını zorlayan case'ler bizim için bir dezavantaj. O tür ekstra bazen Boyer-Nur'un da çok büyük avantaj yaratamadığı durumlar oluşuyor.
+
+633
+02:09:05,684 --> 02:09:25,204
+Göreceğiniz gibi bu noktada Boyer Moore genel bir tekst arama işinde oldukça avantajlı bir yaklaşım sergiliyor ki Robin Carp'la karşılaştırdığınızda bu farkı daha da yakından görüyor olacaksınız.
+
+634
+02:09:26,724 --> 02:09:30,624
+O yüzden çok sıklıkla tercih edildiğini literatürde görebilirsiniz.
+
+635
+02:09:30,624 --> 02:09:32,424
+Şimdi gelelim son olarak.
+
+636
+02:09:32,884 --> 02:09:45,143
+Bunu bir grafik üzerinde göstermeye, algoritmaların yaklaşık olarak süre özelinde karşılaştırıldığındaki performanslarını göreceksiniz.
+
+637
+02:09:46,083 --> 02:09:57,863
+Brute force yaklaşım yani naif metot, yalın metot oldukça kötü bir performans sergiliyor ve pattern'ın boyutundan bağımsız bir şekilde çok uzun sürüyor.
+
+638
+02:10:00,000 --> 02:10:22,859
+Maurice Pratt yaklaşımı, onun detayını görmedik ama ortalarda bir başarı yani süre olarak ortaya koyuyor çalışma süresi olarak. Boyar Moore'a bakacak olursak performansının özellikle ilk çok küçük pattern algoritmalarda çok...
+
+639
+02:10:23,028 --> 02:10:32,488
+Büyük bir fark yaratmasa da ki, burada daha önce söylemiştim, horsepool küçük alfabelerde biraz daha iyi sonuç üretiyor diye.
+
+640
+02:10:33,608 --> 02:10:42,268
+Boyer Moore'un özellikle pattern büyüdükçe diğer algoritmaların nasıl önüne geçtiğini performans olarak burada görüyorsunuz.
+
+641
+02:10:42,268 --> 02:10:47,115
+Bu grafiğin tek literatürle ters düştüğü ya da...
+
+642
+02:10:47,283 --> 02:10:58,684
+Belli kaynaklarla ters düştüğü nokta Boyar Moore'un Horsepool'a göre biraz daha düşük performans sergilediğini burada görüyorsunuz.
+
+643
+02:10:58,684 --> 02:11:00,684
+Bazı kaynaklarsa...
+
+644
+02:11:00,948 --> 02:11:28,948
+Pattern büyüdükçe Boyarmur'un daha avantajlı olduğunu yazıyorlar. Belki şöyle yorumlayabiliriz. Hani buradaki pattern 20. karaktere baktığınızda, pattern'ın 20 olduğuna baktığınızda düşüş hızları Boyarmur'da biraz daha hala aşağıya doğru. Pattern biraz daha büyüdüğünde belki Horsepool'un da altına geçecek olabilir. Ama sonuçta Horsepool'da, Boyarmur'da
+
+645
+02:11:28,948 --> 02:11:53,628
+oldukça avantajlı algoritmalar, pattern uzadıkça. Böylece Stink Matching ile ilgili kısmı da tamamlanmış oluyoruz. Buraya kadar sorusu olan var mı? Good suffix, bad symbol shift nedir tam olarak anlaşıldı mı?
+
+646
+02:11:54,836 --> 02:11:58,395
+Bir soruyla karşılaşsanız yapabilir misiniz diye sorayım.
+
+647
+02:12:07,252 --> 02:12:25,351
+Peki, herhangi bir geri dönüş yok. Tamam. Şimdi o zaman dersin yavaş yavaş sonuna geliyoruz. Dönemin yavaş yavaş sonuna geliyoruz. Dönem ödevinizle ilgili, sınavla ilgili sorusu olan var mı?
+
+648
+02:12:27,351 --> 02:12:32,752
+Ya da herhangi bir yorum aktarmak isteyen herhangi bir konuda.
+
+649
+02:12:33,235 --> 02:12:34,956
+Dersle ilgili sorusu olan var mı?
+
+650
+02:12:45,043 --> 02:12:46,323
+Peki. Hocam.
+
+651
+02:12:48,104 --> 02:12:48,483
+Evet.
+
+652
+02:12:49,063 --> 02:12:50,684
+Projeyle ilgili bir şey sorabilir miyim?
+
+653
+02:12:50,823 --> 02:12:51,083
+Tabii.
+
+654
+02:12:53,083 --> 02:12:56,043
+Bu verdiğiniz dokümanda...
+
+655
+02:12:57,043 --> 02:12:58,423
+Açalım mı dokümanı?
+
+656
+02:12:59,144 --> 02:12:59,844
+Efendim?
+
+657
+02:13:00,264 --> 02:13:01,063
+Dokümanı açalım mı?
+
+658
+02:13:01,783 --> 02:13:04,003
+Benim şu an önümde de sizin var mı?
+
+659
+02:13:04,304 --> 02:13:05,304
+Tamam, açalım hemen.
+
+660
+02:13:06,443 --> 02:13:08,043
+Bu ekranı durdureyim.
+
+661
+02:13:09,764 --> 02:13:11,463
+Dokümanda bakalım.
+
+662
+02:13:15,475 --> 02:13:39,015
+Evet, şimdi paylaşıyorum. Görebiliyor musun? Evet. Tamam. Bu üçüncü ve beşinci madde bana aynı fonksiyon içinde yapabiliyorum da ben. Evet. Burada hani kontrol eden kişi açısından kolaylık olsun diye mi iki farklı şekilde yazdınız?
+
+663
+02:13:39,539 --> 02:13:43,439
+Hemen bakalım. Yani şimdi ezbere bir şey söylemeyeyim.
+
+664
+02:13:43,519 --> 02:13:48,840
+Üçüncü maddede sıkıştırılmış görüntüyü açması. Sıkıştırılmış görüntüyü açarak orijinal görüntüyü elde ediniz.
+
+665
+02:13:48,979 --> 02:13:54,680
+Bu işlemi yaparken önce sıkıştırılmış görüntünün uygun olup olmadığının kontrolü yapılmalıdır.
+
+666
+02:13:55,300 --> 02:13:58,880
+Bunun için dördüncü maddede verilen işlemlerin yapılması gereklidir.
+
+667
+02:13:59,079 --> 02:14:02,640
+Eğer bu kontroller başarılı olursa sıkıştırılmış görüntü açılmalıdır.
+
+668
+02:14:02,640 --> 02:14:04,880
+Şimdi sıkıştırılmış görüntüyü açmak demek.
+
+669
+02:14:05,279 --> 02:14:10,159
+Aslında uncompressed dosyayı oluşturmak demek. Doğru değil mi?
+
+670
+02:14:11,019 --> 02:14:11,239
+Evet.
+
+671
+02:14:12,039 --> 02:14:20,519
+Tamam. Şimdi burada görüntüyü yazma, bu dosya, PLGM dosya açıdığında herhangi bir görüntü görme açıdığında görüntülebilir olmalıdır diyoruz ya.
+
+672
+02:14:21,760 --> 02:14:23,579
+Buradaki fark benim yorumum.
+
+673
+02:14:23,935 --> 02:14:43,655
+Öyle söyleyeyim. Tabii ki bunu farklı değerlendiriyor olabilirsiniz. Bir tanesinde görüntünün bellek tarafında açılması ve görüntünün kendisiyle uygun, yani orijinaliyle herhangi bir sorunun olup olmadığını kontrol edilmesi 3. maddede.
+
+674
+02:14:44,135 --> 02:14:46,235
+Beşinci de ise sadece dosya yazma işlemi.
+
+675
+02:14:47,220 --> 02:14:57,079
+İşte sıkıştırılmış dosyadan, yani ben onu sıkıştırıyorum, sonra açarken aynı zamanda da pcm dosyasına yazabiliyorum.
+
+676
+02:14:58,039 --> 02:15:04,840
+Tamam, şimdi buraya bir ara adım konmuş, ara adımda da bunu belleğe almanız istendiği için ve bellekte bu kontrolün yapılması istenmiş.
+
+677
+02:15:07,280 --> 02:15:08,900
+Yani yapmamız gerekiyor mu?
+
+678
+02:15:08,900 --> 02:15:14,420
+Bu işlemi yaparken önce sıkıştırılmış görüntünün uygun olup olmadığının kontrolü yapılmalıdır deniyor.
+
+679
+02:15:14,676 --> 02:15:28,836
+Onun için ayrıca bir fonksiyonu da yazdım ben. Eğer onda bir hata çıkmıyorsa, hata çıktığı zaman exit şeyi koydum. O çıkmıyorsa hemen açmaya başlıyorum ve açarken de aynı zamanda pcm şeklinde yazabiliyorum dosyayı.
+
+680
+02:15:29,696 --> 02:15:37,536
+Yani şimdi çok böyle detaylı bir durum. Yani eğer bu şekilde yapıyorsanız ben size hayır olmaz diyemem.
+
+681
+02:15:38,068 --> 02:15:58,228
+Çünkü çok ince bir çizgi var. Ama buradaki tarife göre berlekte bu işin açılıp, kontrolünün yapılıp daha sonra bir dosyaya yazılması planlanmış. O yüzden burada özel olarak bir puan kırmak gibi bir niyetimiz yok böyle yapılırsa. Ama illa öyle yapacağım diyorsanız tabii ki yapabilirsiniz.
+
+682
+02:16:01,939 --> 02:16:14,779
+Çünkü bu işin doğrudan dosyadan açılıp belleğe alınma kısmı bir iş, kontrol yapıldıktan sonraki dosyaya yazma adımı ikinci bir iş. Birbirinden farklı işler var.
+
+683
+02:16:15,988 --> 02:16:19,448
+Aynen ne yaptığınız zaman aslında kod daha böyle efisent olabiliyor.
+
+684
+02:16:19,988 --> 02:16:26,087
+Hem bellekten tasarruf etmiş oluruz. Hem veri yapıları projesi olunca ben de öyle düşündüm.
+
+685
+02:16:26,167 --> 02:16:36,268
+Tamam o zaman çok iddialı bir ifade olduğu için ben eğer bunu böyle gerçekten farklı tasarruf edilecek bir yapı oluyorsa oraya not düşün rapora.
+
+686
+02:16:37,075 --> 02:17:02,695
+Böyle bir durum var diyeyim. Değerlendirilir. Bence hiçbir sakınca yok. Çünkü biz burada işleri zorlaştırmak için değil, hem kolay kontrolü olsun hem de modüler bir yapı olsun ki aradan bir yapı taşını çektiğinizde diğer kısmı da otomatik çalışabilsin diye böyle yapıyoruz. Sizin yaptığınız işte kontrol kısmını aradan çekerseniz yazma işi de aradan çekilmiş oluyor. Yanılmıyorum değil mi?
+
+687
+02:17:03,667 --> 02:17:08,087
+Hayır, şöyle, yazma fonksiyonu kontrol fonksiyonunun altında.
+
+688
+02:17:08,687 --> 02:17:09,547
+Yani ilk kontrol fonksiyonu...
+
+689
+02:17:09,547 --> 02:17:11,608
+Olur, fonksiyonu olduktan sonra bir önemi yok.
+
+690
+02:17:12,927 --> 02:17:14,227
+Yani onda bir sıkıntı yok.
+
+691
+02:17:15,007 --> 02:17:15,288
+Tamam.
+
+692
+02:17:16,128 --> 02:17:16,867
+Onda bir sıkıntı yok.
+
+693
+02:17:18,347 --> 02:17:22,527
+Yani kontrol fonksiyonunda bir hata çıkmazsa yazma işlemine başlıyor.
+
+694
+02:17:22,968 --> 02:17:24,907
+Yani hem de kompres artı yazma işlemine başlıyor.
+
+695
+02:17:24,907 --> 02:17:27,667
+Yani şöyle ifade edeyim, hani herkes...
+
+696
+02:17:27,904 --> 02:17:32,204
+Belirli bir mimari oluşturacak, birebir aynısı olmasını zaten beklemiyoruz.
+
+697
+02:17:32,884 --> 02:17:47,184
+Burası ile çok büyük bir fark oluşmuyorsa ve gerçekten yaptığınız mantıklıysa, öğrendiklerinizi destekliyorsa, ben her zaman bu konuda öğrencinin esnek olmasını ve kendi stilini yansıtması taraftarıyım.
+
+698
+02:17:50,548 --> 02:17:57,288
+Ben de şey olarak yorumlamıştım zaten. Değerlendiren kişiler daha rahat. Değerlendirebilsinler diye mi acaba?
+
+699
+02:17:57,347 --> 02:18:03,668
+Tabii tabii evet. Yani en büyük sebep genelde öyle oluyor. Çünkü sonuçta çok sayıda ödev değerlendiriliyor.
+
+700
+02:18:05,347 --> 02:18:14,387
+Bunda gözden kaçacak bir şey hani size olumsuz geri dönmesin. Mümkün olduğunca her şey açık ve net puanlanabilsin diye böyle yapıyoruz bazen.
+
+701
+02:18:16,275 --> 02:18:17,835
+Anladım hocam. Teşekkürler.
+
+702
+02:18:17,995 --> 02:18:18,495
+Rica ederim.
+
+703
+02:18:19,736 --> 02:18:21,275
+Evet. Başka sorusu olan?
+
+704
+02:18:29,363 --> 02:18:56,683
+Teşekkür ediyorum o zaman. Bütün sene derse katılan arkadaşlara özellikle. Çoğu kişi buradaki derse katılmıştı. Özellikle onlara başta ve tüm daha sonradan izleyen, takip eden arkadaşlara da teşekkür ediyorum. Umarım katkısı olmuştur dersin. Size final sınavlarınızda gönülden başarılar diliyorum.
+
+705
+02:18:57,203 --> 02:19:06,263
+Yaz tatilinde sağlıklı, güzel kafanızı dinleyebileceğiniz, daha rahat ettiğiniz bir yaz tatili diliyorum.
+
+706
+02:19:06,884 --> 02:19:16,083
+Bir dahaki senede bu sıkıntıların bittiği, fiziksel olarak okula döndüğünüz, üniversitenin tadını çıkardığınız, dersleri de daha keyifli dinlediğiniz bir zaman dilimi diliyorum.
+
+707
+02:19:16,500 --> 02:19:41,355
+Kendinize çok iyi bakın. Bir sorunuz olursa bana mailden yazabilirsiniz. Çarşamba günü laboratuvar saatinde dönem projenizle ilgilenebilirsiniz. Herhangi bir ders planlamadık. Dönem projenizi rahat rahat yetiştirmeniz herhangi bir sıkıntı olmasın diye. Ama yine de herhangi bir sorusu olan, bağlanmak isteyen, anlamadığım şey olan...
+
+708
+02:19:41,427 --> 02:19:47,687
+Böyle bir şey olursa lütfen bilimle irtibata geçsin. Ben ona vakit ayıracağım. Görüşmek üzere arkadaşlar. Hoşçakalın.
+
+709
+02:19:49,448 --> 02:19:52,407
+Teşekkürler hocam.
+
+710
+02:19:52,407 --> 02:19:52,927
+Görüşürüz.
+
+711
+02:19:53,007 --> 02:19:54,808
+Teşekkürler hocam.

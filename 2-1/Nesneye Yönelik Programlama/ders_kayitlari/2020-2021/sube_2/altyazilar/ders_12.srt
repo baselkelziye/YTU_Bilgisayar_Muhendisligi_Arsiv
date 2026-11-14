@@ -1,0 +1,4703 @@
+1
+00:00:06,323 --> 00:00:06,823
+Çık.
+
+2
+00:00:39,316 --> 00:00:40,816
+Bir şey vardı ama neyse dur bakalım.
+
+3
+00:00:53,427 --> 00:00:55,027
+İnternet listesinden başlayacağız.
+
+4
+00:00:55,927 --> 00:00:56,367
+Daha önce
+
+5
+00:00:56,367 --> 00:00:59,547
+1-2 dakika bekleyelim.
+
+6
+00:01:00,487 --> 00:01:01,687
+İzleyici sayımız artsın.
+
+7
+00:03:40,436 --> 00:03:40,896
+Arkadaşlar, çiz.
+
+8
+00:04:42,867 --> 00:04:48,648
+Peki arkadaşlar, çok az kişiyiz ama, tamam derken bir art bakalım.
+
+9
+00:04:49,228 --> 00:04:52,447
+Bir dakika, 18 değil miydik? 17 değil miydik? 16'dan 17.
+
+10
+00:04:52,447 --> 00:04:55,548
+18 değil miydik? Neyse.
+
+11
+00:04:57,687 --> 00:05:04,228
+Peki arkadaşlar, şimdi ben size başlarken öncelikle şunu söylemek istiyorum.
+
+12
+00:05:04,228 --> 00:05:08,507
+Şimdi geçen hafta bu şeyleri konuşurken,
+
+13
+00:05:11,379 --> 00:05:15,220
+Galeri sınıfıyla ilgili konuşurken,
+
+14
+00:05:15,699 --> 00:05:17,699
+bir şey söylemiştim, ne yazayım gösteremez ki.
+
+15
+00:05:18,839 --> 00:05:19,620
+Bakırız ona.
+
+16
+00:05:21,819 --> 00:05:26,980
+Şimdi bu remove card metodu üstünden tekrar bir konuşmak istiyorum sizinle.
+
+17
+00:05:29,879 --> 00:05:32,139
+Bu arada ekran sizi de açayım, açılsın.
+
+18
+00:05:56,627 --> 00:06:00,407
+Pekala. Hangi pakette yedik? 4 paketinde.
+
+19
+00:06:08,180 --> 00:06:09,939
+Şimdi de buradayız. Tamam.
+
+20
+00:06:12,939 --> 00:06:16,840
+Şimdi burada Removcar metodu üstünden tekrar geçmek istiyorum.
+
+21
+00:06:16,840 --> 00:06:23,840
+Şimdi burada arabayı silerken, aracı silerken, aracı...
+
+22
+00:06:24,180 --> 00:06:52,160
+Hangi indiste olduğunu bulmaya ihtiyacımız var. Çünkü diziyle çalışıyoruz. Arka planda diziyle çalıştığımız için bu gerekli. Daha sonra generic listler göreceğiz. Onlar da bu şekilde silecek nesneyi sadece listeye bunu sil demek yetiyor. Ama dizide bir elemanı silerken biliyorsunuz sileceğimiz elemanın sağındaki elemanları hep bir sola şifte etmek.
+
+23
+00:06:52,180 --> 00:07:12,279
+Ötelemek zorundayız. O yüzden hani illaki aracın nerede olduğunu bulmak zorundayız. Hangi gözden başladığını bulmak zorundayız. Peki buna yarayan aslında metotlarımız yok mu? Var. Search car metodu var hatta iki tane var. Acaba buna bir üçüncüyü eklemeli miyiz?
+
+24
+00:07:13,427 --> 00:07:32,388
+Hangi indisde olduğunu döndüren. Bunu eklememeyi seçtim. Çünkü bu çuklu sahiplik altyapısını dediğim gibi diziyle değil, listelerle de yapabiliriz. Başka bir yapıları ile de yapabiliriz. Onların hiçbirinde bu aracın kaçıncı araç olduğunu bulmamıza özellikle ihtiyaç yok.
+
+25
+00:07:33,204 --> 00:07:45,183
+Bu nedenle ben veri yapısına bağımlı olmadan veri yapısından bağımsız bir, onun etkisini hissettirmeyen bir arayüz vermek istedim.
+
+26
+00:07:45,463 --> 00:07:48,923
+Yani bu galeriyi sınıfı metodlarını ona göre yapmak istedim.
+
+27
+00:07:49,463 --> 00:07:52,183
+Ama hani pekala şu da yapılabiliniz.
+
+28
+00:07:52,560 --> 00:08:01,779
+Eğer search card'a true döndüren bir metoda ihtiyacım var mı? Veyahut da car döndüren metoda ihtiyacım var mı?
+
+29
+00:08:01,779 --> 00:08:20,340
+Şimdi belki bu search card'a boolean döndüren search versiyonuna ihtiyacım olmayabilir. Onun yerine bu ikincisini de kullanabilirim. Eğer araç yoksa null dönüyor. Bu durumda null kontrolü yaparaktan da bu işi halledebilirim. Bu nedenle isterseniz.
+
+30
+00:08:20,560 --> 00:08:30,560
+Böyle kalabilir, evet. Limon Card'ı da illaki dizi kullandığımızdan aracın, silinecek aracın dizinin kaçıncı gözde bulunduğunu bilmemize ihtiyacımız var. O nedenle belki...
+
+31
+00:08:31,283 --> 00:08:37,323
+Şu search car metodunu Boolean döndüreni int döndürene çevirebilirim. Dizide kaçıncı gözde olduğunu döndüren.
+
+32
+00:08:37,624 --> 00:08:43,823
+Tabii o zaman bu for each döngüsünü kullanamam. Klasik for döngüsünü kullanmam lazım. Kaçıncı gözde olduğunu bulabilmem için.
+
+33
+00:08:43,823 --> 00:08:53,743
+Ve ayrıca bir aracın kaçıncı gözde olduğunu herhangi bir normal kullanıcıya ne yararı var?
+
+34
+00:08:54,144 --> 00:08:59,243
+Veya bilmesi gerekiyor mu? Gerekmiyor. Bir aracın dizinin kaçıncı gözünde yer aldığı,
+
+35
+00:08:59,283 --> 00:09:13,524
+sadece ve sadece bu galeri sınıfını ilgilendirir ki onunla işte bazı işlemler yapacak, silecek, edecek falan. O yüzden şöyle bu public search car metodu yerine şöyle bir şey de yapabilirdim. Bu private olsa yeter.
+
+36
+00:09:16,024 --> 00:09:18,303
+Private int.
+
+37
+00:09:18,836 --> 00:09:24,796
+Search class. Ve burada şimdi nereden gideceğim? Plakadan gitmem gerekiyor. Pardon.
+
+38
+00:09:25,016 --> 00:09:31,915
+Ha evet. Limoncard'da bana aracın, silinecek aracın plakası verdiğine göre benim de plaka parametresine ihtiyacım var.
+
+39
+00:09:33,496 --> 00:09:38,936
+O zaman şöyle yapacağım. Ama şimdi burada başka şeyler de diyebilecek. Bakın.
+
+40
+00:09:40,532 --> 00:09:59,932
+Şimdi bir kere return sıfır deyip hatadan bir kurtulayım da ama daha hala hatadan kurtulamadım. Bakın diyor ki burada doğru düzgün bir override işlemi, özür dilerim overload işlemi yapamadım. Metod imzaları farklı gibi.
+
+41
+00:10:00,000 --> 00:10:16,139
+Ama bu metot imzaları karşılaştırılırken public, private görünürü kurarına ve dönüş tipine bakılmıyor. Metot imzasında metodun adına ve parametresine bakılıyor. O yüzden şöyle iki metot tanımlanması bana problem çıkartıyor.
+
+42
+00:10:21,908 --> 00:10:45,628
+Şu metot bana yine bir sorun çıkartıyor. Plakasını alamam. Ama acaba aracın kendisini alabilir miyim? Alabilirim. Fakat yine şu remove car metodunda plakadan silme ihtiyacımız olduğundan mecbur burada şu metot çok işimizi bozuyor.
+
+43
+00:10:48,947 --> 00:11:14,288
+Plakadan araba aramaya da ihtiyacım var bunun için daha önemli bir metot. Aracım kendisini değil de yerini mi döndüreyim? Hayır buna kesinlikle karşıyım. Çünkü plakadan araca erişmek istiyorum ihtiyacım o. Bu nedenle böyle bir durumlar var. Bütün bunları çözmek için yine en makul olan durum Süremi Vukar'da da tekrar bu aracın nerede olduğunu aramak zorundayız diyorum.
+
+44
+00:11:16,244 --> 00:11:43,124
+İki kere yapıyorum gerçi. Şu search gun metodular, şu limon karın içerisindeki yaptığımız iş birine benziyor. Kod aynı iş, aynı mantık. Aynı mantığı iki kere kodlamış gibi olduk ama mecbur bunu böyle yaptık. Bütün bu saydığımız sakıncalar dizi yerine linked list gibi veri yapıları kullandığımızda ileride ortadan kalkacak. O konuda da sizleri ayrıca bilgilendirmek istedim. Geçen hafta dersin sonlarına doğru herhalde fazla yorulmuştum.
+
+45
+00:11:44,244 --> 00:11:53,183
+Olur muydu falan bir şeyler zikretmiştim. Şimdi onu bir toparlayıp açığa çıkartalım istedim. Kalıltım konusuna girmeden önce.
+
+46
+00:11:54,764 --> 00:11:56,964
+Pekala. Şimdi...
+
+47
+00:11:57,812 --> 00:12:03,892
+48. yansım itibaren kalıtımla birlikte konularımıza başlıyoruz.
+
+48
+00:12:04,392 --> 00:12:06,872
+Şimdi işin pratik kısmını yine laboratuvarda gördünüz.
+
+49
+00:12:06,872 --> 00:12:11,892
+İşin teorik kısmını bir çift dikiş olarak sağlamlaştıracağız inşallah.
+
+50
+00:12:21,556 --> 00:12:22,855
+Evet, geldik.
+
+51
+00:12:23,496 --> 00:12:25,956
+Burada hala resimleri gösteremiyorum diyor.
+
+52
+00:12:26,036 --> 00:12:27,056
+Niye böyle bir şey yapıyorsa.
+
+53
+00:12:27,636 --> 00:12:28,476
+Kapatıp açalım bakalım.
+
+54
+00:12:37,491 --> 00:12:39,531
+Bütün resimlerimi göstereyim, ne kadar ilginç.
+
+55
+00:12:42,491 --> 00:12:43,011
+Bakalım.
+
+56
+00:12:44,971 --> 00:12:47,391
+Şu conflict'in verjin olmasına hemen dur bakalım.
+
+57
+00:12:47,811 --> 00:12:49,791
+Sonraki yansılarda bir şey değiştirmediğim için.
+
+58
+00:12:49,932 --> 00:12:50,811
+Ve buradan gidelim bakalım.
+
+59
+00:12:51,231 --> 00:12:53,811
+Dosya mı korreatta olduğu yoksa...
+
+60
+00:12:53,811 --> 00:12:54,591
+Baya geçtik.
+
+61
+00:13:01,748 --> 00:13:04,988
+Evet. İlk iki dosyada bir sıkıntı var.
+
+62
+00:13:05,928 --> 00:13:07,448
+Neyse. Onunla aktaralım.
+
+63
+00:13:07,528 --> 00:13:08,188
+Şimdi çözeceğiz.
+
+64
+00:13:13,172 --> 00:13:23,792
+Peki, şimdi kalıtım ilişkisi temelinde mevcut bir sınıftan yeni ve daha özelleşmiş sınıflar oluşturmanın yolu mekanizmasıdır.
+
+65
+00:13:24,872 --> 00:13:33,552
+Nasıl ki gerçek dünyada bir çocuk ebeveynlerinden genetik özelliklerini alıyor, kalıtımla kendisine geçiyor.
+
+66
+00:13:34,192 --> 00:13:38,092
+Benzer şey Nesliye Yönelik Programlamada da geçerli.
+
+67
+00:13:39,124 --> 00:13:46,324
+Burada genetik mirası, yani kalıtımı reddetmek mümkün değil.
+
+68
+00:13:47,423 --> 00:13:53,884
+Ben işte bu gözümü almıyorum diyemem. Babamdan almışım gözümü. Bu gözümü ben almıyorum diyemem.
+
+69
+00:13:54,403 --> 00:13:58,144
+Annemin gözü daha yeşil de. Keşke onkini aslayayım diye düşünebilirim belki.
+
+70
+00:13:58,504 --> 00:14:01,964
+Ama ben gözümü kalıtımla almıyorum diyemem. O şekilde birleşmiş.
+
+71
+00:14:02,824 --> 00:14:06,604
+Ama şunu yapabilirim. Çok istiyorsam takalım bir tane renkli renk.
+
+72
+00:14:07,475 --> 00:14:15,336
+O zaman göz rengimi override etmiş olurum. Yani yeniden tanımlamış olurum bir bakıma.
+
+73
+00:14:16,179 --> 00:14:23,019
+Bu nedenle bu inheritance relationship derken kalıtım ilişkisi şeklinde söylüyorum.
+
+74
+00:14:23,559 --> 00:14:26,919
+Miras alma demiyorum. Çünkü miras, reddi miras edebilirsiniz.
+
+75
+00:14:27,419 --> 00:14:29,679
+Ama reddi kalıtım diye bir şey yok.
+
+76
+00:14:30,460 --> 00:14:34,360
+Benzer şekilde alt sınıf, üç sınıftan ben şu üyeleri almıyorum diyemiyor.
+
+77
+00:14:34,919 --> 00:14:36,100
+Hepsini alıyor, meçhul.
+
+78
+00:14:37,000 --> 00:14:38,000
+Private dahil alıyor.
+
+79
+00:14:38,740 --> 00:14:41,519
+Fakat private üyelerine doğrudan erişemiyor.
+
+80
+00:14:42,355 --> 00:14:46,836
+O da ayrı bir mesele. Şimdi yeri geldiğince onun üstüne daha fazla konuşacağız.
+
+81
+00:14:47,816 --> 00:15:02,836
+Şimdi mevcut bir A sınıfından kalıtımla B sınıfı türettiğimizde kalıtım ilişkisini yeni sınıftan mevcut sınıfa doğru çiziyoruz ve içi boş ve kapalı bir ok ucu koyuyoruz.
+
+82
+00:15:03,316 --> 00:15:05,216
+Kalıtım bu şekilde gösteriliyor.
+
+83
+00:15:05,755 --> 00:15:10,216
+Tamam, mevcut sınıftan yeni bir sınıf türetiyoruz ama...
+
+84
+00:15:10,995 --> 00:15:17,636
+Bir sınıf kendisinden kalıtımla türetilen sınıfların neler olduğunu bilmez. Bilmemelidir de.
+
+85
+00:15:18,355 --> 00:15:28,396
+Yani istitüpte A'dan B'yi de başka bir sahiplik veya kullanma falan gibi bir ilişkiler tanımlarsanız yanlış bir şey yapmış olursunuz. Doğru bir şey yapmış olmazsınız.
+
+86
+00:15:30,707 --> 00:15:37,727
+Çünkü ayrıca yine bu okun yönü, bağımlılık yönüydü aynı zamanda.
+
+87
+00:15:37,727 --> 00:15:39,087
+Bir saniyesiz hatırlayayım.
+
+88
+00:15:40,388 --> 00:15:44,487
+Bu arada artık önce şu doğru terminolojiye de geçelim de o şekilde konuşalım.
+
+89
+00:15:45,528 --> 00:15:49,087
+A sınıfına parent class, B sınıfına child class diyebiliyoruz.
+
+90
+00:15:49,727 --> 00:15:52,987
+Ebeveyn sınıf, çocuk sınıf şeklinde Türkçe söylüyoruz.
+
+91
+00:15:53,707 --> 00:15:57,548
+A sınıfına super class, B sınıfına sub class diyebiliyoruz.
+
+92
+00:15:58,196 --> 00:16:01,395
+Üst sınıf, alt sınıf şeklinde.
+
+93
+00:16:03,216 --> 00:16:08,255
+Aslında hani süper direkt üst çevrinden süper denilir ama o da Türkçe bir kelime olmadığı için.
+
+94
+00:16:08,816 --> 00:16:14,135
+Ama sub, alt, onun zıttı da Türkçe üst. O yüzden üst sınıf alt sınıf şeklinde söylemeyi tercih ediyorum.
+
+95
+00:16:15,255 --> 00:16:19,576
+Veya A sınıfına base class, B sınıfına derived class da denilebiliyor.
+
+96
+00:16:21,115 --> 00:16:24,895
+Ben genelde super class, sub class İngilizce söylerken.
+
+97
+00:16:25,427 --> 00:16:29,168
+Üçte söylerken de üst sınıf ve alt sınıf şeklinde söylemeyi tercih ediyorum.
+
+98
+00:16:30,668 --> 00:16:32,187
+Evet, şunla konuşmuştuk.
+
+99
+00:16:32,187 --> 00:16:35,507
+Diyorduk ki, oku yönü B'den A'ya doğru.
+
+100
+00:16:36,187 --> 00:16:47,027
+Yani B A'dan türettirmiş olduğu için, B A'nın bütün metotlarını ve üye alanlarını ve üye metotlarını aldığı için B A'yı biliyor.
+
+101
+00:16:47,567 --> 00:16:50,668
+Ama A B'yi bilmiyor ve E'yi bilmemelidir de.
+
+102
+00:16:55,923 --> 00:16:59,683
+Evet, şunu söyledik, bunları söyledik.
+
+103
+00:17:00,103 --> 00:17:04,903
+Alt sınıf üst sınıftan gelen bir üyeyi almamayı seçemez.
+
+104
+00:17:05,364 --> 00:17:09,703
+Fakat üst sınıftan gelen metotların gövdesini değiştirebilir.
+
+105
+00:17:10,195 --> 00:17:26,195
+Bu işlemede overriding denilir. Az önce verdiğim lens örneği de olduğu gibi. Belki o kadar iyi bir örnek değildir lens örneği. Çünkü göz rengi insanın bir niteliğidir. Yani üye alanıdır. Bir metot olaraktan belki şöyle bir şey söyleyebilirim.
+
+106
+00:17:37,811 --> 00:17:59,632
+Babam oturduğu zaman hep kolunu şöyle atardı. Ben bu davranışı beğenmiyorum. Ben o korta oturduğu zaman hep böyle kolda miyana koyarım gibisinden bir korta oturma davranışının şeklini değiştirebiliyorum. Belki çok güzel olmasa da daha teknik açıdan doğru bir örnek oldu.
+
+107
+00:18:01,011 --> 00:18:09,491
+Bu işleme yani üst sınıftan kalıtımla gelen metotların gövdesini değiştirme işlemine overriding deniliyor.
+
+108
+00:18:10,259 --> 00:18:28,059
+Şimdi bunu Türkçe söylerken metot yeniden tanımlama şeklinde söylemeyi tercih ediyorum. Biraz uzun oluyor ama daha kısa olarak metodu ezmek filan desek, yani ezme benim karnım acık duruyor, meze gibi geliyor falan.
+
+109
+00:18:29,875 --> 00:18:40,275
+Hani ezme diyen de var ama esas yaptığımız şey override yani yeniden tanımlama. Burada daha güzel bir Türkçe kelime önerisi olan arkadaşım varsa lütfen buyursun.
+
+110
+00:18:42,255 --> 00:18:47,275
+Yalnız burada şöyle bir önemli kural da var. Final üye metotlardan...
+
+111
+00:18:47,327 --> 00:19:06,867
+Bahsetmeye çalışmıştık ama bahsedememiştik. Daha kanıtımı bilmiyorduk çünkü. Final üye alanlar bir kere tanımlanır ve tekrar değeri değiştirilemez olan üye alanlardı. Final metotlar ise alt sınıflarda gövdesi yeniden tanımlanamayacak olan metotları anlatmak için kullanılır.
+
+112
+00:19:06,867 --> 00:19:08,867
+Şimdi bir üst sınıf...
+
+113
+00:19:09,236 --> 00:19:17,236
+Kendisinden hangi alt sınıfların türettiğini bilmez ve bu da herhangi bir benden şöyle bir alt sınıf türetilemesin diye bir engel de koyamaz.
+
+114
+00:19:17,796 --> 00:19:21,675
+Koyabileceği tek engel, benim şu metodum çok önemli bir kritik metottur.
+
+115
+00:19:22,036 --> 00:19:25,396
+Alt sınıflarda bu değiştirilmemelidir engeli koyabilir sadece.
+
+116
+00:19:25,776 --> 00:19:29,896
+Ona da final şeklinde metodu işaretlerse bunu yapabilir.
+
+117
+00:19:30,316 --> 00:19:32,796
+Onun dışında başka bir kısıtlama söz konusu değildir.
+
+118
+00:19:34,132 --> 00:19:38,892
+Alt sınıf tabi ki yeni üye alanlar ve üye metotlar eklenebilir elbette.
+
+119
+00:19:39,812 --> 00:19:43,332
+Ve onun dışında bir alt sınıf başka sınıfların üst sınıfı olabilir.
+
+120
+00:19:43,932 --> 00:19:49,352
+Böylece şekilde gördüğünüz gibi bir ağaç yapısı veya bir hiyerarşi ortaya çıkmakta.
+
+121
+00:19:49,912 --> 00:19:52,152
+Kalıtım hiyerarşisi veya kalıtım ağaç denilir.
+
+122
+00:19:52,152 --> 00:19:58,452
+Örneğin mevcut bir personal sınıfından kalıtımda student, employee ve retired emekli sınıfları oluşturulmuş.
+
+123
+00:19:59,112 --> 00:20:00,000
+Bu üç sınıfa kardesini.
+
+124
+00:20:00,000 --> 00:20:12,400
+Kardeş sınıf şeklinde tanımlıyoruz kardeş sınıfla. Ortak atadan türetilmiş oldukları için. İngilizce derken daha çok sister class derler.
+
+125
+00:20:13,779 --> 00:20:23,619
+Employee sınıfı person'ın altı sınıfı olmakla birlikte, employee sınıfından da karıtımla director ve part-time employee sınıfları oluşturulabilir.
+
+126
+00:20:23,619 --> 00:20:30,259
+Bunun da employee'i hem bir altı sınıf olarak özellik taşımaktır, hem de üst sınıf olarak da özellik taşımaktır.
+
+127
+00:20:33,044 --> 00:20:38,564
+Şimdi önemli bir tavsiye, bu kırılma ağacını çok derin tutmayın arkadaşlar.
+
+128
+00:20:39,224 --> 00:20:46,184
+Aksi takdirde kırılgan üst sınıf problemi dediğiniz bir durumla ortaya karşılaşırsınız.
+
+129
+00:20:46,184 --> 00:20:53,604
+Şimdi üst sınıftan bütün üyeler alt sınıflara aktarladığı için eğer bu ağaç çok derinse,
+
+130
+00:20:54,451 --> 00:21:07,192
+Hiyerarşin kökündeki bir metodla bir değişiklik yaptığınızda bu değişikliğin alt sınıflara aktarılırken bu alt sınıfların kodunda bir hata bug açısından söylenir.
+
+131
+00:21:07,331 --> 00:21:12,211
+Derleme hatası değil tabii ki ama bir bug açığa çıkarma olasılığı yükselmekte.
+
+132
+00:21:13,811 --> 00:21:14,771
+Ağaçlıklar derin ise.
+
+133
+00:21:15,347 --> 00:21:31,307
+Genç play'in dalga dalga yan etkilerinin yayılma olasılığı da o kadar artmakta. O yüzden çok derin tutmamalıyız. Peki kaç derinlik diyelim? Bu kritik ve önemli bir soru. Çok da kolay yanıtlanabilecek bir soru değil aslında.
+
+134
+00:21:40,788 --> 00:22:02,548
+Bu kırgan üst sınıf problemini ciddi düzeylere taşıyor. O yüzden beşten yukarı çıkmayalım diyelim ki. En fazla beş diyelim ki. Altı, yedi düzey bir kalıtım ilişkisi kurarken görüyorsak kendimizi, o zaman acaba daha iyi bir tasarım yapamaz mıyız diye bir düşünmemiz lazım.
+
+135
+00:22:06,483 --> 00:22:22,403
+Şimdi kalıtma aynı zamanda özelleşme-genelleşme ilişkisi de deniliyor. Çünkü alt sınıf, üst sınıfın daha yetenekli, daha özelleşmiş, daha fazla üye içeren bir versiyonu olduğundan bu şekilde diyebiliriz.
+
+136
+00:22:22,403 --> 00:22:28,443
+Öte yandan üst sınıfta alt sınıfın daha genel bir versiyonudur. Daha az yetenekli.
+
+137
+00:22:28,816 --> 00:22:34,576
+Çünkü alt sınıfta yeni metotlar tanımlanmıştır, üst sınıfta bunlar yoktur.
+
+138
+00:22:36,056 --> 00:22:42,036
+Aynı şekilde bir de yerine geçebilirlik ilkesi den de bahsedebiliriz.
+
+139
+00:22:42,435 --> 00:22:47,175
+Şimdi madem alt sınıfta üst sınıfın bütün eğileri var ve hatta daha bile fazlası var,
+
+140
+00:22:47,796 --> 00:22:54,716
+o zaman üst sınıftan bir nesnenin beklendiği her bağlamda onun yanı alt sınıftan bir nesne de kullanılabiliriz.
+
+141
+00:22:56,180 --> 00:23:06,019
+Biraz da bu nedenle kalıtım ilişkisini iz-e ilişkisi de diyebiliyorlar. Bunu daha çok akademik kaynaklarda diyorlar ama görüleseniz şaşırmayın.
+
+142
+00:23:06,779 --> 00:23:13,399
+Açık şeye diyoruz. Mesela bizim bir araba sınıfımız var. Bizi bir yerden bir yere götürüyor. Tamam. İyi, çok güzel.
+
+143
+00:23:14,259 --> 00:23:22,619
+Fakat eğer gideceğimiz yer daha bayır ise o zaman bizim bir dört çıker bir araca ihtiyacımız var. Bir cip nesnesine ihtiyacımız var.
+
+144
+00:23:23,796 --> 00:23:34,455
+Amacımız bir yerden bir yere en hızlı şekilde gitmekse ve yollarda müsaitse, hız sınıfı da yoksa falan o zaman bir yarış adresine daha çok ihtiyacımız var demektir.
+
+145
+00:23:35,056 --> 00:23:42,576
+Veyahut da kalabalık belanı isek, tatile çıkıyorsak falan o zaman daha fazla yük taşımak için bir station wagon araca ihtiyacı mesela.
+
+146
+00:23:43,255 --> 00:23:49,056
+Şimdi her cip aynı zamanda bir araba değil midir? Evet. Her yarış otomobili aynı zamanda bir araba değil midir? Evet.
+
+147
+00:23:49,587 --> 00:23:53,447
+Yani bu alt sınıfların hepsi de aynı zamanda bir arabadır.
+
+148
+00:23:53,987 --> 00:23:55,247
+Ejib, Ize Kağ.
+
+149
+00:23:55,807 --> 00:23:57,487
+Estation, Weig'ın, Ize Kağ.
+
+150
+00:23:58,487 --> 00:23:59,727
+Okuduğumuzda böyle Ize.
+
+151
+00:24:00,175 --> 00:24:03,615
+O yüzden izle ilişkisi şeklinde de geçebiliyor.
+
+152
+00:24:04,055 --> 00:24:12,336
+Gece yazıcı sınıfından nokta buluşu, nazer ve mekve psikiyatmeni, sınıfları da türetilebilmekte.
+
+153
+00:24:13,175 --> 00:24:20,495
+Eğer bazı matbukslar basıyorsak, matbu, matbukslar genelde sürekli form şeklinde çok karşılaşılıyor.
+
+154
+00:24:20,755 --> 00:24:24,035
+O zaman öyle bir şey yaşayacaksak nokta buluşu yazıcıya ihtiyacımız var.
+
+155
+00:24:28,175 --> 00:24:34,775
+Sıkışıksa o zaman inkjet yazıcıya ihtiyacınız var gibi. Her inkjet yazıcı aynı zamanda bir yazıcıdır yani.
+
+156
+00:24:37,775 --> 00:24:41,175
+Şimdi, kalıtım güçlü bir ilişkidir ama...
+
+157
+00:24:41,587 --> 00:24:48,207
+sadece ve sadece en çok gerektiği zamanlarda kullanılması gereken bir ilişkidir.
+
+158
+00:24:48,207 --> 00:24:52,227
+Çünkü kalıtım gördüğünüz gibi biraz daha ağır siklet bir ilişki.
+
+159
+00:24:52,847 --> 00:25:03,327
+Şimdi sahiplik ilişkisinde veya parçabütün ilişkisinde aradaki ilişki, iki nesne arasındaki ilişki istediğimiz gibi başka nesnelerle aktarabiliriz.
+
+160
+00:25:03,687 --> 00:25:09,587
+Örneğin işte Oktay'ın Rover'ı vardı, Aziz'in Honda'sı vardı.
+
+161
+00:25:09,587 --> 00:25:15,007
+Ariz'in hondasını aldık, Octane'in organına verdik gibi mesela değişiklik işlettik. Bununla böyle şeylerle uğraştık.
+
+162
+00:25:15,567 --> 00:25:28,107
+Fakat kalıtımda örneğin bir üst sınıftan, Gull Button üst sınıfından bir Yellow Button sınıfı oluşturduğumuzda bu ilişki kodlama düzeyinde yapılmaktadır.
+
+163
+00:25:28,727 --> 00:25:32,567
+Kodun derleme aşamasında derlenmekte ve karar verilmektedir.
+
+164
+00:25:37,587 --> 00:25:51,527
+Bir işler değildir. Derleme aşamasında etkileri olan bir iştir. O yüzden kalıtım aslında sınıf düzeyinde bir ilişkidir. Diğer ilişkiler nesne düzeyindedir. Fakat kalıtım sınıf düzeyindedir. Bu yüzden daha ağır sıklet bir ilişkidir.
+
+165
+00:25:51,527 --> 00:26:03,367
+Ve bu nedenle sadece ve sadece gerçekten bu generalization, specialization ilişkisinin kullanılmasının en doğru olduğu zamanlarda kullanılmalıdır. Örnek veriyorum.
+
+166
+00:26:04,019 --> 00:26:31,900
+Şimdi siz oturdunuz, diyelim ki bir GUI düğmesi sınıfı hazırladınız. Çok güzel bir sınıfı hazırladınız. İşte bundan oluştuğunuz GUI düğmelerinin etiketi olabiliyor. Fareyi üstüne tıkladığınızda biraz içeri gömülüyor. Fareyi bıraktığınızda geri çıkıyor. Böyle basma efektiyle yaptınız. İşte tıklandığı zaman belirli bir metodu çalıştırmak şeklinde gerekli altyapıyı da koyduğunuz.
+
+167
+00:26:32,019 --> 00:26:36,119
+Çok güzel. Bunu kullanarak programınızı yazsınız, müşterinize gösteriniz.
+
+168
+00:26:36,119 --> 00:26:46,619
+Müşteri de dedi ki, yani bu böyle bütün düğmeler gri gri. Kardeşim, biz kurumsal bir firmayız. Bizim renklerimiz yeşil, kırmızı ve beyazdır.
+
+169
+00:26:48,440 --> 00:26:54,859
+Yeşil, kırmızı ve molduz. Biz kırmızı, sarı ve molduz. Bize bu renklerde düğmeler ver.
+
+170
+00:26:55,796 --> 00:27:08,716
+İyi peki, tamam diyoruz biz de. Müşteri daima haklıdır. Madem benim elimde GUI button sınıfım var, ondan kalıtımla red button, yellow button, purple button, blue button falan filan filan sınıflarımı oluşturayım.
+
+171
+00:27:09,907 --> 00:27:17,447
+Ama böyle bir şey yaparsam yanlış bir şey yapmış olurum. Çünkü bu renklerin sonu gelmeyecek. 16.7 milyon tane renk var.
+
+172
+00:27:18,447 --> 00:27:25,027
+Tabii o kadar olmaz ama en azından bir 256 renkli bir palet isteyebilirim işlelerimiz bizden.
+
+173
+00:27:25,947 --> 00:27:32,067
+Bir de üst güey düğmesinde 257 tane sınıfın mı kodlayacağız biz edeceğiz falan.
+
+174
+00:27:33,236 --> 00:27:38,096
+Doğru bir yaklaşım olmuyor. Bu da daha doğru bir modelleme. Sade olduğu gibi bir modelleme.
+
+175
+00:27:38,644 --> 00:27:46,003
+Düğmeyi ekrana çizeceğimiz zaman onun renginin ne olması gerekiyorsa o renk bir fırçayla düğme boyanız.
+
+176
+00:27:46,844 --> 00:28:06,283
+Nedenle bir VGB sınıfı oluştururuz. Biliyorsunuz 16.7 milyon rengin tümü kırmızı, yeşil ve mavi renklerin 0 ve 255 arasında değişen yoğunluğunun bir araya getirmesiyle anlayabileceğimiz bir renk uzayıdır.
+
+177
+00:28:06,644 --> 00:28:13,644
+Bu nedenle bu ürün girmesine renk türünden bir alan koyup, bir sahiptik ilişkisi koyup düğmeye renk atarız.
+
+178
+00:28:13,903 --> 00:28:24,943
+Ve düğmenin paint metodunda önce o renkte bir sistemden fırçalıp düğmenin rengini o renkte boyarız gibisinden bir modelleme ve kodlama en doğrusudur.
+
+179
+00:28:25,604 --> 00:28:29,124
+O yüzden kalıtımı yanlış kullanmamaya dikkat etmeliyiz arkadaşlar.
+
+180
+00:28:32,276 --> 00:28:36,396
+Evet, burada biraz onlardan bahsettim.
+
+181
+00:28:36,936 --> 00:28:42,436
+Kalıtım ilişkisi yerine bir arayüz ilişkisi de gerçeklenebilir.
+
+182
+00:28:42,796 --> 00:28:45,456
+Arayüzlerden biraz daha sonra bahsedeceğiz.
+
+183
+00:28:47,056 --> 00:28:50,036
+Arayüzlerin bazı farklılıkları...
+
+184
+00:28:50,163 --> 00:29:02,223
+Bazı yerlerde daha fazla yetenek, bazı yerlerde daha az yetenek var. Bu arayüzlerin sunduğu yeteneklere uygunsa modellememiz kalıtım yerini arayüzde tercih edebiliriz. Göreceğiz, konuşacağız arayüz konusunu.
+
+185
+00:29:04,147 --> 00:29:23,587
+Evet, onun dışında arkadaşlar, karşılaştığımız çeşitli modelleme problemlerini, düzgün, doğru ve esnek çözümler sunan tasarım kalıpları denilen bir konu vardır. Design patterns diye geçer.
+
+186
+00:29:23,587 --> 00:29:27,587
+Bu Nesli Önenim dersini tamamladıktan sonra...
+
+187
+00:29:28,115 --> 00:29:42,816
+Bu konuda uzmanlık sahibi olmasınızı yazılım alanında çalışacak bütün arkadaşlarıma öneririm. Daha sonra merak eden arkadaşlarıma olsa bu konu üstünde daha sonra ayrıca tartışacağız.
+
+188
+00:29:43,604 --> 00:29:51,743
+Kalıtımın doğru kullanımı tasarım kalıplarının önemli temellerinden birini oluşturuyor.
+
+189
+00:29:52,584 --> 00:30:00,000
+Ben lisans üstünde Nesnede Tasarım ve Modelleme dersinde bu kapsamda epey uzun bir hafta.
+
+190
+00:30:00,000 --> 00:30:16,220
+Bu hafta tasarım kalıpları anlatıyorum. Başka şeylerden de bahsediyor. Meraketli arkadaşlar, o noktaya bakabilirler. Bu tasarım kalıplarının ana kitabı olan Dörtlü Çetli diye geçen Gang of War klasik bir design patterns kitabı var. Onu kütüphaneye elektronik olarak abone.
+
+191
+00:30:16,915 --> 00:30:18,395
+Alıp okuyabilirsiniz.
+
+192
+00:30:23,975 --> 00:30:30,675
+Design patterns diye yazdığınızda, subject anlamda computer engineering dediğinizde yüzlerce kitap göreceksiniz.
+
+193
+00:30:30,915 --> 00:30:33,915
+Bu da o konunun önemine önemli bir işaret.
+
+194
+00:30:34,336 --> 00:30:35,975
+Neyse, o daha sonra.
+
+195
+00:30:36,475 --> 00:30:39,975
+Önce bu Nesne Yönelimi bütün yetenekleriyle bir tutun.
+
+196
+00:30:40,475 --> 00:30:41,796
+Örnekleri ve pratiğini yapın.
+
+197
+00:30:41,796 --> 00:30:44,796
+Ondan sonra yaz tatilinden itibaren...
+
+198
+00:30:44,915 --> 00:30:50,915
+İçin sınıf başından itibaren bu konulara isteyen arkadaşlar bakarsan çok iyi iş yapmış olurlar.
+
+199
+00:30:53,915 --> 00:31:00,076
+Evet, şimdi çok biçimlilik diye bir kavramımız var.
+
+200
+00:31:00,615 --> 00:31:05,596
+Bu, karıtımdaki bir override mekanizmasının bir sonucudur.
+
+201
+00:31:06,475 --> 00:31:07,255
+Konuşalım şimdi.
+
+202
+00:31:07,695 --> 00:31:18,355
+Dedik ya, kalıtımla geçen metodun gövdesi değiştirilebilirsiniz. Bu işlemede overriding deniyoruz dedik ve final metotlarında override edilemeyeceğini söylemiştik.
+
+203
+00:31:18,435 --> 00:31:19,115
+Onları bir hatırlayalım.
+
+204
+00:31:19,875 --> 00:31:27,556
+Aynı zamanda şunu da gördük. Alt sınıftan bir nesne, üst sınıftan bir nesnenin beklendiği herhangi bir bağlamda kullanılabilir de demiştik.
+
+205
+00:31:28,336 --> 00:31:33,435
+Örneğin şöyle bir kalıtım ilişkimiz olsun, personal sınıfımız olsun, introduce self metodu olsun.
+
+206
+00:31:34,420 --> 00:31:39,540
+Nasıl tanıtır kişi kendisini? Benim adım şudur der mesela. Başka bir şey de demez diyelim.
+
+207
+00:31:40,560 --> 00:31:45,380
+Bundan kalıtımla student, employee ve retired sınıflarını oluşturduk diyelim.
+
+208
+00:31:46,280 --> 00:31:48,620
+Ve bunların da introduysel metotları olacak.
+
+209
+00:31:49,400 --> 00:31:55,960
+Şimdi bir öğrenci kendisini tanıtacağız ama evet o da ismini söyler çünkü her öğrenci bir insandır.
+
+210
+00:31:55,960 --> 00:32:00,440
+Ama aynı zamanda şu okulda da şu okulda şu sınıfta öğrenciyim de der mesela.
+
+211
+00:32:00,915 --> 00:32:10,316
+Veya bir çalışan kendini tanıtırken ismini de söyler ve şu şirkette şu kadar yıldır şu pozisyonda falan çalışıyorum gibisinden bir bilgi içeriye dönülür.
+
+212
+00:32:11,076 --> 00:32:17,135
+Emekli kişi ise şu adım şu ve şu şirkette şu kadar yıldır çalıştıktan sonra emekli oldum der mesela.
+
+213
+00:32:18,387 --> 00:32:21,507
+Şimdi biz diyelim ki bir dizi oluşturduk.
+
+214
+00:32:21,687 --> 00:32:24,427
+İçinde yani person türünden bir dizi oluşturduk.
+
+215
+00:32:24,547 --> 00:32:25,847
+İçinde person nesneleri var.
+
+216
+00:32:25,927 --> 00:32:30,347
+Ama bu dizinin elemanlarından bazılarını student nesnesi de olabilir.
+
+217
+00:32:31,247 --> 00:32:34,227
+Çünkü person background her yere student nesnesi de koyabiliriz.
+
+218
+00:32:34,507 --> 00:32:36,727
+Veya employee de olabilir veya retired de olabilir.
+
+219
+00:32:37,187 --> 00:32:39,187
+Bunların herhangi bir karması olabilir.
+
+220
+00:32:40,211 --> 00:32:43,971
+En elemanlık dizide bu dört farklı sınıftan da nesneler yer alabilir.
+
+221
+00:32:44,511 --> 00:32:53,192
+Peki, biz bu dizinin elemanları üstünden dolaştığımızda ve hepsinin introduce self metotlarını çağırdığımızda acaba bu nesneler nasıl davranacak?
+
+222
+00:32:54,491 --> 00:32:58,471
+Dizinin türlü person olduğu için alt sınıflar da person gibi mi davranacak?
+
+223
+00:32:59,531 --> 00:33:06,531
+Yoksa en çok özelleşmiş halleri neyse, işte student ise student, employees, employee falan gibi mi davranacak?
+
+224
+00:33:07,284 --> 00:33:18,524
+Hangisi olur? İşin doğrusu ve birçok dilde gerçekleneni nesnelerin kendi özelleşmiş halleriyle davranmasıdır.
+
+225
+00:33:19,304 --> 00:33:25,804
+Yani az önce verdiğim örnekte, person student'dan bir dizide eğer student nesnesi yer alıyorsa o kendisini bir student olarak tanıtacaktır.
+
+226
+00:33:26,104 --> 00:33:29,203
+Buna çok biçimlilik deniliyor, polymorphism deniliyor.
+
+227
+00:33:31,988 --> 00:33:38,567
+Sadece ve sadece C Sharp'ta default olarak kapalı şekilde geliyor.
+
+228
+00:33:39,208 --> 00:33:44,307
+Onun dışında benim bilebildiğim nesneye dayalı dillerin hepsinde default olarak açık.
+
+229
+00:33:46,708 --> 00:33:53,607
+Yani Microsoft niye böyle bir daha doğrusu ya da Datnet tasarımcıları yok öyle demeyeyim.
+
+230
+00:33:53,687 --> 00:33:59,528
+C Sharp dilini tasarlayarak neden böyle bir şey yapmışlar, böyle bir karar yapmışlar ben anlayamıyorum.
+
+231
+00:34:00,084 --> 00:34:10,923
+Her neyse. Belki değişmiştir bile. Yani seçrafta, yani datlette kaç sürme çıktı. Belki seçrafta onu değiştirmişlerdi. Belki bilemiyorum ama en son öyleydi.
+
+232
+00:34:12,144 --> 00:34:22,923
+Durum bu. Ha bu arada eğer isterseniz bu polymorphism mekanizmasını kapatabilirsiniz de. Şöyle ki.
+
+233
+00:34:24,083 --> 00:34:30,304
+Örnek kodu yazarken göreceğiz veya siz de dün labda kalıtım yaptıysanız görmüş müydü belki.
+
+234
+00:34:31,583 --> 00:34:41,823
+Şimdi personal sınıfını kodladıktan sonra örneğin student sınıfını kodlarken introducealt metodunu yazdığınızda otomatik olarak Eclipse videsi başına add override diye bir satır ekliyor.
+
+235
+00:34:43,003 --> 00:34:49,583
+Add ile başlayan satırlara annotation denilir ve bu aslında derleyiciye bir işarettir.
+
+236
+00:34:50,420 --> 00:34:53,980
+Veya kimi durumda Java sanal makinesine bir işarettir.
+
+237
+00:34:54,440 --> 00:35:00,400
+Veya siz annotationları işleyerek çeşitli işlemler yapılmasını sağlayan kodlarda yazabilirsiniz.
+
+238
+00:35:00,400 --> 00:35:04,539
+Ve piyasada sahada böyle kodlarda var.
+
+239
+00:35:05,519 --> 00:35:08,019
+Ki bilim sınavları bunlardan bir tanesidir.
+
+240
+00:35:08,199 --> 00:35:10,980
+Ondan da bahsedeceğiz bir yerde en son haftalarda.
+
+241
+00:35:13,380 --> 00:35:16,400
+İşte add override yazıyorsa...
+
+242
+00:35:16,851 --> 00:35:21,572
+metodun başında polymorphism açıktır anlamına gelmektedir.
+
+243
+00:35:21,911 --> 00:35:25,131
+Zaten Java'da default mekanizma polymorphismin açık olması ama
+
+244
+00:35:25,131 --> 00:35:30,551
+eğer işte C Sharp'ta bu override edilmiş metodun başında add override yazılmazsa
+
+245
+00:35:30,551 --> 00:35:32,591
+o zaman polymorphism kapalı.
+
+246
+00:35:33,152 --> 00:35:37,211
+Yazılmışsa polymorphism açık şeklinde oluyor olay.
+
+247
+00:35:37,211 --> 00:35:42,431
+Ama Java'da add override biraz eklipsin kendi eklediği bir tek.
+
+248
+00:35:42,711 --> 00:35:44,851
+Bunu siz normalde eklemek zorunda değilsiniz.
+
+249
+00:35:44,851 --> 00:35:49,091
+Polimorphism default olarak açıktır.
+
+250
+00:35:49,811 --> 00:35:52,991
+Ve kapatılması için bir yöntem varsa da ben bilmiyorum.
+
+251
+00:35:52,991 --> 00:35:55,391
+Tamam bu.
+
+252
+00:35:58,031 --> 00:35:59,072
+Pekala.
+
+253
+00:36:01,300 --> 00:36:17,140
+Bu ne? Polimorphism dedik. Fakat yine de şöyle bir ihtiyacımız da olabilir. Introduce self örneğinden gidelim. Şimdi bir student kendini person gibi tanıtacak ve ek olarak hangi okuduğunu, hangi sınıfında okuduğunu söyleyeceğim.
+
+254
+00:36:17,140 --> 00:36:27,100
+Şimdi burada student introduce self metodunun içinde person'un introduce self metodunu da kullansak iyi olmaz mı?
+
+255
+00:36:27,476 --> 00:36:33,596
+Belki bu introdus saat biraz daha karışık. Yani daha uzun parasının 5-6 üye alanı var. Hepsini tek tek yazacak.
+
+256
+00:36:34,356 --> 00:36:51,796
+E şimdi ben de sırf tek bir tane şu okuluşu sınıfında öğrencisiyim. İki tane üye alanını eklemek için üst sınıfın bu 6 üye alanını getti metotlarını çalıştırdıktan sonra artı işte sınıfını artı okulunu yazsın şeklinde kod yazmak zorunda mıyım?
+
+257
+00:36:52,947 --> 00:37:10,707
+Zorunda değilim. Eğer istersen bu durumda, ben ne kadar bu Introduction Self metodunu alt sınıfta override etsem de, bu metodun override edilmemiş haline hala erişebilirim. Onu da kullanmak için, bunu da yapabilmek için Super diye bir işaretçimiz var.
+
+258
+00:37:11,347 --> 00:37:25,608
+Bu, this işaretçisinden sonra Java'daki ikinci özel bir işaretçidir. Super işaretçisi üzerinden, üst sınıfın, override bir metodun, override edilmemiş, üst sınıftaki override edilmemiş haline erişilebilmiyor.
+
+259
+00:37:26,127 --> 00:37:27,627
+Şimdi onun örneğini de göreceğiz.
+
+260
+00:37:30,087 --> 00:37:31,627
+Bunu yapmaya çalışırken göreceğiz.
+
+261
+00:37:32,987 --> 00:37:35,608
+Ancak kalıtım örneği de yapmış olacağız.
+
+262
+00:37:36,244 --> 00:37:39,064
+Şimdi bizim bir mevcut person sınıfımız var bildiğiniz gibi işte.
+
+263
+00:37:39,463 --> 00:37:40,423
+İsmi var, üye alan.
+
+264
+00:37:40,864 --> 00:37:43,364
+Ona alan constructor ve legate metodu var.
+
+265
+00:37:44,003 --> 00:37:46,503
+Bundan kalıtımla çalışan sınıfını türettik.
+
+266
+00:37:47,064 --> 00:37:49,124
+Çalışanın maaşı var ek olarak.
+
+267
+00:37:50,564 --> 00:37:59,124
+Çalışanın constructorında şimdi dikkat ederseniz person sınıfına set name metodu koymadım.
+
+268
+00:37:59,443 --> 00:38:01,023
+Bunu bilerek yapmadım.
+
+269
+00:38:01,344 --> 00:38:10,743
+Yani kanuni olarak insanlar bir mahkeme sürecinden sonra isimlerini değiştirebilselerdi, isimler değiştirmezdim ben şimdi.
+
+270
+00:38:10,823 --> 00:38:12,243
+Kasten koymadım, siz etmemiştim.
+
+271
+00:38:13,364 --> 00:38:16,364
+Peki bir çalışan aynı zamanda bir insan değil mi?
+
+272
+00:38:17,583 --> 00:38:19,423
+Onda bir adı olacak, adı olmalı.
+
+273
+00:38:19,423 --> 00:38:25,023
+Bu nedenle aynı zamanda çalışanın maaşı da var, maaşız çalışan da olmaz.
+
+274
+00:38:25,460 --> 00:38:30,539
+Bu nedenle, employee constructorında hem isim hem maaş bilgisi var.
+
+275
+00:38:33,059 --> 00:38:39,739
+Maaş için gettir metodu var ve tabii ki maaşın zam olabilir. Maaş için settir metodu var.
+
+276
+00:38:40,788 --> 00:39:06,948
+Employee sınıfından da kalıtımla Manager sınıfını türettim. Manager'ın da aylık maaşın ek olarak aylık bonusu olabiliyor. Bu sıfır da olabilir belki Junior Manager'dır ama daha sonra bonusu artacaktır mesela belki de. Bu nedenle şimdi Manager sınıfını da konstatörlerinde Manager da aynı zamanda bir insan. O yüzden isim ve Manager da aynı zamanda bir çalışan maaş bilgisini veriyorum.
+
+277
+00:39:07,827 --> 00:39:22,407
+Bonus bilgisini vermedim. Onun için setter metodu koydum. İsterseniz buraya iki constructor, birincisi bu, ikincisi name salary bonus 3'ünü birden alan, bunu da koyabileceğiniz gibi.
+
+278
+00:39:23,087 --> 00:39:33,988
+Şey yapabilirsiniz, name salary bonus 3 parametre tek constructor da tanımlı. Daha ilk başta bonusu yoksa bonus 3. parametre 0 verirsiniz, olur biter.
+
+279
+00:39:34,452 --> 00:39:40,912
+Yani bu üç seçenekte geçerli problem yok. Hadi ben aranıyı bu şekilde yaptım diyelim.
+
+280
+00:39:42,112 --> 00:39:47,052
+Ve bir de bu sınıfları test etmek için kampanyalya bir sınıf oluşturacağım.
+
+281
+00:39:47,292 --> 00:39:51,612
+Onun main metodunun içerisinde employee türünden bir dizi oluşturacağım.
+
+282
+00:39:52,052 --> 00:39:56,832
+İçerisine employee ve manager nesnelerini karışık olarak koyacağım.
+
+283
+00:40:00,000 --> 00:40:05,039
+Maaşla kendilerini tanıtmalarını sağlayacağım veyahut da isim ve maaşlarını elde edeceğim.
+
+284
+00:40:05,039 --> 00:40:13,079
+Bu arada yöneticinin aylık bonusu olduğu için yöneticinin maaşı eşittir aslında getseller metodu.
+
+285
+00:40:13,779 --> 00:40:18,319
+Bunun çalışan olarak maaşı artı yönetici olarak bonusunun toplamını geri döndürmelidir.
+
+286
+00:40:18,639 --> 00:40:19,639
+O da önemli bir araydı.
+
+287
+00:40:20,419 --> 00:40:22,579
+Şimdi bunu kodlamaya çalışalım sizinle birlikte.
+
+288
+00:40:25,972 --> 00:40:28,092
+Yaparak gidelim.
+
+289
+00:40:29,872 --> 00:40:32,932
+Şimdi burada denemelerde yapayım.
+
+290
+00:40:33,772 --> 00:40:36,652
+Hazır kodu var. Ben yenisini yapmak istiyorum.
+
+291
+00:40:38,772 --> 00:40:42,072
+Şimdi neredeyiz?
+
+292
+00:40:43,392 --> 00:40:45,332
+Altıncı haftadayız.
+
+293
+00:40:56,820 --> 00:40:58,400
+Bir person sunken uluştvalım.
+
+294
+00:40:59,239 --> 00:41:01,259
+Znaşı doma se nazı neştık.
+
+295
+00:41:06,099 --> 00:41:22,000
+Karşılaştırma, nice, yayınlanmış sen yapısından yaparsın. Ondan sonra içine ismi var. Ondan sonra constructor ve getim metodu var. Hemen şöyle hızlıca yapalım.
+
+296
+00:41:22,000 --> 00:41:28,339
+So, generate constructor using fields. Ok. Ondan sonra içine.
+
+297
+00:41:28,820 --> 00:41:31,579
+Şimdi şuna ihtiyacımız yok. Bundan sonra gideceğiz.
+
+298
+00:41:32,280 --> 00:41:36,019
+Ve bir de getter metodunu koyayım.
+
+299
+00:41:37,220 --> 00:41:39,139
+Sals, generate, getters, and setters.
+
+300
+00:41:41,820 --> 00:41:42,659
+Peki.
+
+301
+00:41:43,340 --> 00:41:44,780
+İşte hemen yaptık person'sını.
+
+302
+00:41:45,360 --> 00:41:47,179
+Şimdi employee oluşturalım bakalım.
+
+303
+00:41:55,347 --> 00:42:02,788
+Şimdi, henüz kalıtım ilişkisi yok. Kalıtım ilişkisini kurmak için kullanacağımız anahtar kelime extant.
+
+304
+00:42:03,307 --> 00:42:09,847
+Bilalada bunu seçmişler. Neyi extant ediyor? Kalıtımla türetiyor. Personal sınır. Peki, tamam. Yaptım.
+
+305
+00:42:10,768 --> 00:42:17,387
+Onun bir derdimi hatam var. Şunun için söylüyor. Bu birazdan aslında bahsedeceğim kuraldır.
+
+306
+00:42:20,724 --> 00:42:33,104
+Employee'nin tasarımında da baktığımda, her çalışan aynı zamanda bir insandır dediğim için ismi lazım. Bunu iş mantığı açısından düşünerekten söyledim.
+
+307
+00:42:41,844 --> 00:42:57,043
+Üst sınıfta default olmayan bir constructor varsa alt sınıfında mutlaka default olmayan bir constructor olmalı ve o constructor içerisinde ilk iş olarak üst sınıfın constructor metoduna erişilmelidir.
+
+308
+00:42:57,744 --> 00:43:05,563
+Bu dilin kuralıdır. Daha doğrusu Nesneye Yönelik'in bir kuralıdır. Bu nedenle hemen şimdi o constructor yazacağım.
+
+309
+00:43:05,563 --> 00:43:07,324
+Hemen önce bunun sararısı da vardı.
+
+310
+00:43:09,588 --> 00:43:30,548
+sanaryi yapıyorum. Ondan sonra cima, constructor'ımı oluşturuyorum. Public employee, işte string name, print, sanaryi, suppose name, sanaryi.
+
+311
+00:43:35,891 --> 00:43:45,091
+Şimdi, pardon, tuasının sarısı yok, tuasının sadece ney mi var.
+
+312
+00:43:45,091 --> 00:43:51,671
+Evet, şimdi ne yapmış oldum? Alt sınıfta üst sınıfın konstruktörünü açardım.
+
+313
+00:43:52,091 --> 00:44:00,151
+Şimdi, şöyle de söyleyeyim. Şimdi kişinin ismini atamak zorundayız.
+
+314
+00:44:00,480 --> 00:44:10,480
+Tam da ismini nasıl atayacağız? Şey metodu yok. Setter metodu yok. Ama constructor var. Constructor olduğunda...
+
+315
+00:44:11,476 --> 00:44:25,415
+İlk yaptığımız employee sınıfının constructöründe, person sınıfını yani üst sınıfın constructörünü çağırmak ve employee constructörüne gelen name bilgisini üst sınıfın constructörü üzerinden aktarmak, set etmek.
+
+316
+00:44:26,115 --> 00:44:33,695
+Yaptığımız bu. Ve bu ilk komut olmalıdır. Ondan sonra bu employee'nin diğer üyelerini set edebilirim.
+
+317
+00:44:38,324 --> 00:44:39,884
+Bu şekilde bir şey oldu.
+
+318
+00:44:40,423 --> 00:44:44,244
+Peki, set-to-methodu call-stead-on-person sınıfına olur muydu?
+
+319
+00:44:44,644 --> 00:44:45,463
+Yine olmazdı.
+
+320
+00:44:46,516 --> 00:45:04,516
+Bu bahsettiğim kural, üst sınıfın default constructor yoksa, alt sınıfta da mutlaka default olmayan bir constructor koymalı ve o üst sınıfın ilgili constructor veya constructorlarından birini çağırmalıyız ve bu ilk satır olarak yapılmalı.
+
+321
+00:45:04,516 --> 00:45:10,956
+Ben şimdi eğer şu 8. satırı kesip üste taşırsam yine derdeme hatası alıyorum.
+
+322
+00:45:14,516 --> 00:45:18,735
+İlk yapılması gereken şey üst sınıfın konstantının çağrılmasıdır.
+
+323
+00:45:19,155 --> 00:45:21,396
+Bunu aşağılara atamıyorsunuz.
+
+324
+00:45:21,596 --> 00:45:23,795
+İlk olarak bismillah bunu yapmalısınız arkadaşlar.
+
+325
+00:45:24,244 --> 00:45:33,364
+Çünkü öbür türlü aslında her constructor çağırması aslında bellekte yeni bir nesne oluşturulmasının anlamına gelmektedir.
+
+326
+00:45:33,724 --> 00:45:42,264
+Eğer önce salari atan, ondan sonra super'ın çalıştırılmasına izin verilseydi, verilmiyor ama verilseydi, salari boşa gidecekti.
+
+327
+00:45:42,463 --> 00:45:51,864
+Çünkü salari atanıktan sonra employee'nin person hali, bellekte alan oluşturulurken o salari kısmı da simit bilecekti.
+
+328
+00:45:52,371 --> 00:46:00,551
+O yüzden bu kuralın mantıksal olarak da geçerlilik nedeni budur. Bunun yapılması gerekmektedir.
+
+329
+00:46:02,251 --> 00:46:05,851
+Peki, devam edelim. Settler metodu koyalım.
+
+330
+00:46:10,643 --> 00:46:26,884
+Yani gettik metodu da gerekiyor. Evet. Get, set, set, set, tamam. Ya da buydu. Başka bir şey yoktu tasarımımızda. Evet. Get, set, set. Şimdi manager oluşturalım bakalım şimdi. Bundan da kalıtımlar.
+
+331
+00:46:32,755 --> 00:46:39,316
+Şimdi eğer isterseniz üst sınıfı şu alana da yazıp, person, abi dedim employee.
+
+332
+00:46:40,596 --> 00:46:41,416
+Şöyle kalmış.
+
+333
+00:46:43,115 --> 00:46:43,796
+Employee.
+
+334
+00:46:44,796 --> 00:46:52,916
+Ve diyebilirsiniz ki üst sınıftan gelen constructor da ekle diyebilirsiniz eğer isterseniz.
+
+335
+00:46:56,436 --> 00:47:00,736
+Okey diyor. Bakın o şekilde biraz işi bizim için halletti.
+
+336
+00:47:01,427 --> 00:47:17,627
+Manager'da Employee'den üretilmiştir. Manager'ın name ve salary alan konstruktöründe ilk iş olarak Employee'nin üst sınıfın name salary konstruktörünü çağırmıştır. Ondan sonra daha yapılacak şeyler olabilir. Yapmayı unutma diye bize de hatırlatıcı koymuştur.
+
+337
+00:47:17,627 --> 00:47:24,288
+Daha sonra hatırlatıcı siliyorum. Başka bir şeye ihtiyacım yok çünkü. Ama bunu sanırım eklemeyi unutmayalım.
+
+338
+00:47:30,036 --> 00:47:33,076
+Bonus için set of metodu koyalım.
+
+339
+00:47:43,443 --> 00:47:46,864
+Şimdi get maaş metodunu kodlamaya çalışalım.
+
+340
+00:47:48,324 --> 00:47:51,403
+Public int get salary.
+
+341
+00:47:54,344 --> 00:47:57,503
+Şimdi, acaba bunu nasıl kodlamadayım?
+
+342
+00:47:57,963 --> 00:48:01,063
+Normalde neydi? Bonus artı maaştı. Peki tamam.
+
+343
+00:48:02,903 --> 00:48:06,744
+Bonus artı maaşım nasıl ulaşacağım buna?
+
+344
+00:48:07,503 --> 00:48:08,224
+Salary desem.
+
+345
+00:48:09,172 --> 00:48:19,632
+Olmuyor. Bana diyor ki, işte bu iyi anını göremezsin kardeşim diyor. Her nefeler kalıtımla almış olsa da private olduğu için göremem. Nasıl çözebilirim?
+
+346
+00:48:21,092 --> 00:48:23,351
+Şey desen, geçseleri desen.
+
+347
+00:48:27,731 --> 00:48:37,872
+Şimdi, sanki hiç çözülmüş gibi ama burada arkadaşlar istemeden bir recursion özgünlenme yapmış olup bir sonsuz döngü ortaya çıkarttık.
+
+348
+00:48:37,992 --> 00:48:46,192
+Neden? Get salary metodu, bonus artı, yine get salary metodu. Yani kendi kendisinin get salary metodunu çağırıyor sürekli managers. Olmaz böyle.
+
+349
+00:48:46,652 --> 00:48:53,012
+Benim bu aşamada employee sınıfındaki get salary metoduna ulaşmak ihtiyacım var.
+
+350
+00:48:53,652 --> 00:49:09,892
+Ve manager da employee'nin bir alt sınıfı olduğu için onun ki bu override ediyorum şu an getsellerin metodunu ama override edilmemiş haline işte super.getselleri diyerekten erişebilirim. Böylelikle işi çözerim. İşin en doğrusu bu.
+
+351
+00:49:09,892 --> 00:49:16,752
+Ha bu işten şöyle bir workaround yapabilirim. Çok da doğru bir şey değil ama şimdi.
+
+352
+00:49:17,523 --> 00:49:22,683
+Bu salaryi private olarak tanımlı değil de protected olarak tanımlasan.
+
+353
+00:49:26,324 --> 00:49:44,324
+Protective üye alanlar arkadaşlar kalıtında diğer sınıflar için private, alt sınıflar için public gibi davranız. Protective'ın anlamı budur üye alanlarda. O zaman ben istersen şurada salari diyebilirim.
+
+354
+00:49:46,543 --> 00:49:50,543
+Bakın hiçbir değerleme hatası da yok, bir şey de yok. Yazdım gitti.
+
+355
+00:49:50,996 --> 00:50:03,916
+Güzelmiş değil mi? İyi peki tamam. Ama bu tek çözüm değil arkadaşlar. Yani protected bir alan kullanımı şart değil kesinlikle. O olmadan da yapabiliyoruz.
+
+356
+00:50:04,616 --> 00:50:17,476
+Olsun yine private. Bundan sonra zaman burada da super.getseller. Yani illaki protected mekanizmasına ihtiyacımız yok.
+
+357
+00:50:17,876 --> 00:50:27,516
+override edilmiş metodun edilmemiş haline erişme yöntemimiz var. Bu şekilde de işi kotarabiliyoruz.
+
+358
+00:50:29,016 --> 00:50:34,876
+Protected üzerinden de gidilebilirdi ama tercih ettiğimiz yol ve yöntem bu olacak arkadaşlar.
+
+359
+00:50:36,695 --> 00:50:41,376
+Evet, arkadan var bakalım. [öğrenci] buyurun, isterseniz ses açıp söyleyin.
+
+360
+00:50:42,132 --> 00:50:53,672
+Evet hocam, şeyi soracaktım. Peki burada mesela protected yapmamızın herhangi bir sıkıntı yaratma olasılığı var mı? Yoksa tercih her mi bu yöntemi, süper yöntemini tercih ediyoruz kullanırken?
+
+361
+00:50:54,511 --> 00:51:02,331
+Tercih ediyorum. Çünkü hani kalıtımın şu duasını hatırlayın. Kendisinden türetilen alt sınıflar üst sınıfı ilgilendirmez.
+
+362
+00:51:03,347 --> 00:51:08,967
+O sadece bir kökeni oluşturur. Ondan yeni alt sınıflar türetilir.
+
+363
+00:51:09,248 --> 00:51:19,467
+Şimdi protected mekanizması üst sınıfı kodlarken kendisinden türetilecek alt sınıfların çalışma mekanizmasını da bir miktar bilmeyi gerektirmekte.
+
+364
+00:51:19,467 --> 00:51:31,347
+Ben işte person'ın hatta iki alt sınıfı olacak, manager olacak. Orada bu üye alana erişilmesi gerekilebilir falan diye düşünüp de ben şu an...
+
+365
+00:51:31,347 --> 00:51:39,327
+Şimdiden o iyi alanı protected yapayım diye bir yola gitmek zorunda olmamayı tercih ediyorum diyorum.
+
+366
+00:51:40,148 --> 00:51:52,728
+Öte yandan her ne kadar diyelim ki gerçek bir yazılım projesinde bütün tasarımı aynı ekip birlikte yapıp bu ileride böyle bir ihtiyaç doğabileceğini de fark etse de bunun sonu yok.
+
+367
+00:51:53,028 --> 00:51:54,528
+Bütün iyi alanları protected mı yapalım?
+
+368
+00:51:54,911 --> 00:52:20,652
+Kalıtım oluş, kullanılacaksa da kullanılmayacaksa da. Yok, hayır. Tabii ki sadece gerekli üye alanları isterseniz bu şekilde protected yaparsınız. Ama tekrar diyorum ben tercih zevbi olarak üst sınıfların alt sınıflar hakkında bir şey bilme ihtiyacı olmamasını istiyoruz. Bu nedenle super üzerinden erişiyorum. Ama gerekiyorsa tabii ki protected mekanizmasını da kullanabilirsiniz.
+
+369
+00:52:21,215 --> 00:52:22,556
+Teşekkürler hocam. Sağ olun.
+
+370
+00:52:23,056 --> 00:52:25,836
+Evet. Başka soru var mı?
+
+371
+00:52:28,996 --> 00:52:35,695
+O zaman şu şey de yapalım. Kompaney sınıfını da yapalım hızlıca. Onu artık şey yapmak istiyorum. Kod üstünden göstermek istiyorum artık.
+
+372
+00:52:36,692 --> 00:52:55,011
+Bu mekanizmayı çünkü neden çıktı, nasıl çıktı, işte suçların önemi nedir, ne anlama gelmektedir. Hem üst sınıfın konstruktorna hem üst sınıfta metotların overwrite edilmemiş hallerine erişim için gereklidir filan şeklinde bunları söylemek için de.
+
+373
+00:52:55,011 --> 00:53:04,451
+Bir şey daha var. Bazen arkadaşların öyle bir hata yaptıklarını görebiliyorum tabii kağıt üstünde kodu yazarken. Şimdi biz şu manager sınıfın konstruktorna.
+
+374
+00:53:04,692 --> 00:53:11,211
+SuperDirect Name, Virgül Seler'i. Yani Employee sınıfının constructı bu iki parametri istediğinden biz de bu iki parametriyi verdik.
+
+375
+00:53:11,423 --> 00:53:39,423
+Bazen elle kodize arken arkadaşlar, super name ve super salary gibi iki ayrı super üst sınıf konstruktörünü çağırmaya çalışıyorlar. Bir kere birincisi, üst sınıfta böyle iki konstruktör yok. İki, olsaydı bile sadece name ve sadece salary alan konstruktörler bu şekilde yazmak yine bize devleme hatası verildi. O yüzden bu şekilde super'ı sadece bir kere kullanabiliyoruz ve ilk komut olarak kullanabiliyoruz.
+
+376
+00:53:39,423 --> 00:53:41,203
+kullanabiliyoruz constructor içerisinde.
+
+377
+00:53:41,844 --> 00:53:47,283
+Ve ayrıca şu mesela örneğin getselleri metodunu kullanırken, super nokta getselleri dedim,
+
+378
+00:53:48,003 --> 00:53:59,303
+super işaretçisini bu override edilmiş metotların edilmemiş hallerine ulaşmak için kullanırken sadece bu kalıtım yarışçısında bir adım üste gidebilirsiniz.
+
+379
+00:54:00,103 --> 00:54:05,663
+Eğer diyelim ki şeyin de personal sınıfının da diyelim ki getselleri metodu olsaydı,
+
+380
+00:54:06,224 --> 00:54:15,284
+Manager'dan iki üst düzeyde olan person sınıfın get salary metoduna super.super.get salary diye erişemezsiniz.
+
+381
+00:54:15,624 --> 00:54:16,164
+Öyle bir şey diyor.
+
+382
+00:54:16,164 --> 00:54:18,984
+Yani super.super da yazamıyorsunuz.
+
+383
+00:54:19,264 --> 00:54:22,104
+Super bir şey sonra super başka bir şey de yazamıyorsunuz.
+
+384
+00:54:22,404 --> 00:54:24,264
+Super bir kere kullanılıyor arkadaşlar.
+
+385
+00:54:24,544 --> 00:54:24,984
+Olay bu.
+
+386
+00:54:27,824 --> 00:54:29,284
+Evet, şimdi gelelim.
+
+387
+00:54:29,664 --> 00:54:31,304
+NLP 5 paketindeymiş company.
+
+388
+00:54:31,584 --> 00:54:32,484
+Onun üstünden yıkdelim.
+
+389
+00:54:34,387 --> 00:54:55,768
+Evet. Şimdi burada ne yapıyorum? Employee eğitimden staff dediği bir dizi oluşturdum. Üç elemanlık dizi. Tamam. Buna yazarlar ekleyeceğim. Şimdi ilk yazarımız managers olsun. Boss dedim adına.
+
+390
+00:54:56,403 --> 00:54:58,504
+Construct'ın çağırttı.
+
+391
+00:54:58,584 --> 00:55:01,344
+Cemal Nurhan'ın 8 bin lira maaşla işe başlıyor.
+
+392
+00:55:02,244 --> 00:55:04,963
+Yardım ona 2005 yılı sırada bonus veriyorum.
+
+393
+00:55:05,504 --> 00:55:09,584
+Ve Start dizisinin ilk elemanı olarak bu boss nesnesini atıyorum.
+
+394
+00:55:10,704 --> 00:55:15,403
+Daha sonra dizinin ikinci gözüne, birincisinin ikinci gözüne...
+
+395
+00:55:16,628 --> 00:55:34,887
+Bir çalışan oluşturup oluşturur oluşturmaz atıyorum. Çünkü nasıl olsa bu staff türünde. Yaşan Nuriye Hoca'ya yazdım. 7.500 lira maaşla başlıyor işe, yengeminde. Sonra 3. yazarlı olarak da Fatih Çıtlako yazdık. 7.000 lira maaşla işe başlıyor.
+
+396
+00:55:35,315 --> 00:55:48,275
+Ondan sonra işte bu çok biçimliliğin örneğini görmek üzere ve aynı zamanda bu işte super mekanizmaların dolu kullanabildik mi özellikle GetSeller'ı da filan bunu da görebilmek için test ediyoruz ya.
+
+397
+00:55:49,155 --> 00:56:02,435
+For each döngüsünü kullanmaktan bu Staff dizisinde dolaşmak üzere de employee ürününden author dediğim bir nesine tanımlıyorum geçin nesine ve ekrana bütün bunların isimlerini ve maaşlarını ekrana yazdırıyorum.
+
+398
+00:56:02,435 --> 00:56:03,315
+Bunu bir çalışalım.
+
+399
+00:56:03,315 --> 00:56:04,075
+İçerlerim şimdi bakalım.
+
+400
+00:56:10,228 --> 00:56:38,067
+Gördüğünüz gibi, managers, maaş altı bonus şeklinde 10.500 söyledi. Diğer iki yazar için de doğru maaşlarıyla söyledi ve dikkat ederseniz, polymorphism de devreye girmiş oldu burada. Her ne kadar manager nesnileri olsun, manager türünden tanınlanmışsı bu dizi, içerisinde bir manager olduğunda, bu şey olarak, employee olarak davranmadı, kendi en özelleşmiş hali olan manager şeklinde davrandı.
+
+401
+00:56:38,228 --> 00:56:41,907
+Evet. Solucionan akda simularma.
+
+402
+00:56:46,739 --> 00:56:54,619
+Yoksa şimdi bir 10 dakika aramızı verelim. Ondan sonra burada bir iki oynamayla bu örneksinden birazcık daha konuşacağız. Ondan sonra devam edeceğiz.
+
+403
+00:56:55,460 --> 00:57:01,599
+Şimdilik 10 dakika ara. Yani bu da demek oluyor ki 9.55 diyelim.
+
+404
+00:57:02,539 --> 00:57:06,559
+2 dakika yiyorum ama kusura bakmayın konularda zaten biraz geriyiz.
+
+405
+00:57:07,299 --> 00:57:10,139
+Diğer gruplara göre. Yani onlar araştırma yapıyorlar.
+
+406
+00:57:10,719 --> 00:57:12,299
+Bizi bekliyorlar biraz.
+
+407
+00:57:12,980 --> 00:57:13,199
+Evet.
+
+408
+00:57:13,880 --> 00:57:16,179
+Saat 15 geçine kadar ara arkadaşlar.
+
+409
+01:05:28,115 --> 01:05:33,056
+Evet arkadaşlar, ara vaktimiz doldu. Derse kaldığımız yerden devam edeceğim.
+
+410
+01:05:35,096 --> 01:05:41,336
+Şimdi burada bir iki şeyden bahsetmek istiyorum.
+
+411
+01:05:42,496 --> 01:05:54,956
+Şimdi mesela bu Staff dizisine Empowery nesnelerini Staff 1 ve Staff 2 için direkt Empowery nesnelerini oluştururuz oluşturmaz aktardık.
+
+412
+01:05:55,380 --> 01:05:58,900
+Benzer şeyi boss için yapamaz mıyız?
+
+413
+01:06:00,120 --> 01:06:03,880
+Yapabiliriz ama bir derdimiz var.
+
+414
+01:06:04,880 --> 01:06:11,700
+Şöyle ki, şimdi bu sınıf şımasından bir gidelim isterseniz.
+
+415
+01:06:13,080 --> 01:06:21,640
+Şimdi burada manager için nem ve salary konstruktörü olan konstruktörüm var.
+
+416
+01:06:22,016 --> 01:06:27,335
+Bunu kullanıyorken, şöyle bir şey yapamayacağım işte.
+
+417
+01:06:29,815 --> 01:06:37,275
+Şimdi, ne yapabilirim ancak bunun yerine? Şöyle yapabilirim. Derim ki, şunu da sileyim bu arada.
+
+418
+01:06:40,775 --> 01:06:46,195
+Bunu mesela benzer, şuradan kestim, şuraya koydum. Problem var mı? Yok.
+
+419
+01:06:48,724 --> 01:06:57,604
+İlk dizinin ilk elemanına manager'ı koydum. Fakat şimdi bu manager'ın bonusunu set etmem gerekiyor. Nasıl edeceğim?
+
+420
+01:07:16,179 --> 01:07:29,379
+Şimdi bu çok biçimlilik her ne kadar en özelleşmiş çok biçimlilik metodun ilgili bir metodun en özelleşmiş haline erişimi sağlıyor olmakla birlikte.
+
+421
+01:07:29,379 --> 01:07:43,219
+Şimdi aslında bu staff dizisi employee türünden tanımlandığında staff işaretçisi üzerinden sadece employee sınıfında tanımlanmış olan metotlara erişebiliyorum.
+
+422
+01:07:43,668 --> 01:07:50,228
+Bu nedenle manager'da tanımlanmış olan set bonus metoduna burada erişemiyorum.
+
+423
+01:07:50,228 --> 01:08:08,268
+Bu nedenle bu işi, yani tamam bir manager oluşturup diziye atarım ama diziye atadıktan sonra elimde ayrıca başka bir işaretçi yoksa şey edemem, alt sınıflardaki özelleşmiş metotlarını çağıramam.
+
+424
+01:08:09,108 --> 01:08:10,388
+Direkt çağıramam aslında.
+
+425
+01:08:10,896 --> 01:08:14,976
+İleriki haftalarda göreceğimiz typecasting diye bir konu var.
+
+426
+01:08:15,311 --> 01:08:17,891
+Onu kullanarak yapabilirim aslında.
+
+427
+01:08:18,611 --> 01:08:24,251
+Fakat typecasting'i çok tercih edilen bir işlem değil.
+
+428
+01:08:25,051 --> 01:08:27,631
+Onu zamanı geldiğinde konuşuyoruz.
+
+429
+01:08:27,631 --> 01:08:38,211
+Bu nedenle orada manager'ı start liste atmadan önce onun manager olan haline ihtiyacım var bonusunu set edebilmek için.
+
+430
+01:08:38,791 --> 01:08:40,011
+Ha şunu yapsaydık olurdu.
+
+431
+01:08:40,211 --> 01:08:41,951
+Bak, manager sınıfına.
+
+432
+01:08:42,515 --> 01:08:52,575
+İster constructor'ını, bütünden üçüncü parametreyi verseydik, istersek overloaded constructor tanımlasaydık. Yani bonusunu da alan.
+
+433
+01:08:56,020 --> 01:09:16,908
+Ondan sonra işte risk.bonus eşittir. Bonus yazıyorum. Böyle yapsaydık eğer o zaman buraya bonusunu da verirdim. Ondan sonra açıma şu olurdu. Şimdi çalıştırdığımda denemeler...
+
+434
+01:09:16,916 --> 01:09:22,876
+Bir dakika, pardon. Bu arada hangisini yapmış oldum? Hangisinde? Hangisini yapmış oldum?
+
+435
+01:09:23,296 --> 01:09:28,256
+Şimdi denemeler dedi. Haftada mı? Hangisinde? Bakın şöyle tutamadım.
+
+436
+01:09:28,816 --> 01:09:33,496
+Np kodlar dökün. Ha tamam peki. Bu da yapmışım. Buradaki konferini de yapmışım. Güzel.
+
+437
+01:09:34,095 --> 01:09:37,095
+Kopya da yapıştır yapmışımdı inşallah. O zaman. Yo.
+
+438
+01:09:39,380 --> 01:09:41,479
+Zaten document istedim.
+
+439
+01:09:42,319 --> 01:09:46,220
+Ha, denemeyi ondan bamsız yapmak istediğim için.
+
+440
+01:09:46,380 --> 01:09:46,760
+Tamam, pek.
+
+441
+01:09:47,280 --> 01:09:48,159
+Problem değil.
+
+442
+01:09:48,220 --> 01:09:49,140
+Şimdi böyle yaptım.
+
+443
+01:09:49,340 --> 01:09:50,140
+Bir problem yok.
+
+444
+01:09:50,579 --> 01:09:54,340
+Bu şekilde çalıştırdığım zaman, bu arada hangisinin yetikrar karıştırdım?
+
+445
+01:09:54,720 --> 01:09:55,100
+Denemeler.
+
+446
+01:09:55,300 --> 01:09:56,640
+Şuradaki kompanı.
+
+447
+01:09:58,239 --> 01:09:59,700
+Evet, şuradaki kompanı.
+
+448
+01:10:00,100 --> 01:10:01,200
+Şunu da çalıştırdığımda.
+
+449
+01:10:04,756 --> 01:10:10,756
+Gördüğünüz gibi yine bonus ile birlikte bunu yapabilmiş olduk.
+
+450
+01:10:12,756 --> 01:10:18,896
+Birincisi bu. İkincisi. Şimdi onu burada geçecekti değil mi?
+
+451
+01:10:22,896 --> 01:10:27,175
+SQL diagram çizme işini yaparız şimdi. Ondan sonra cima.
+
+452
+01:10:30,036 --> 01:10:33,015
+Peki, biraz bunu bir tekrarlarız.
+
+453
+01:10:35,315 --> 01:11:00,575
+Peki, bu da biraz daha sonra. Ama olsun çok da şey değil. Şimdi şu yansıya bir atlıyorum arkadaşlar. Java'da aslında bütün sizin tanımlayacağınız hangi sınıf olursa olsun hepsinin üst sınıfı olan bir sınıf var arkadaşlar. O sınıfın adı object sınıfı. Kendisi JavaLark paketinde yer almakta. Yani işte import etmediğiniz tek paket.
+
+454
+01:11:03,315 --> 01:11:11,075
+Olmadığını düşündüğünüz bir sınıf yazsanız bile aslında o sınıf X-Terms Object oluyor otomatik olarak.
+
+455
+01:11:12,435 --> 01:11:15,796
+Bu object sınıfının için ihtiyaç var. Şunun için ihtiyaç var.
+
+456
+01:11:16,355 --> 01:11:22,195
+Şimdi jahus sanal makinesi sizden bellek yönetimiyle ilgili birçok şeyi üzerinizden alıyor.
+
+457
+01:11:23,380 --> 01:11:36,159
+Yani alsa da almasa da nesnelerle ilgili birçok şey yapmak zorunda. İşte onların ne kadar birlikte alan gerektiriyorsa o kadar yer ayırmak zorunda, New ile ilklendirdiğinde vesaire vesaire.
+
+458
+01:11:36,159 --> 01:11:47,159
+Yani ya da işte nesnelerle ilgili sizin hangi sınıftan tanımlamış olursanız olun nesnelerle ilgili o nesnelerle ilgili birçok iş yapmak zorunda.
+
+459
+01:11:47,731 --> 01:12:07,772
+Bu işi yaparken de sizin o yazdığınız değişik sınıfların sınıf adı neymiş? Onun bilgisinden bağımsız olarak ortak olarak yapacağı bu işleri modellenebilmesi ve kodlanabilmesi için Java dilinin tasarımcıları böyle bir kozmik üst sınıf oluşturmuşlar.
+
+460
+01:12:07,772 --> 01:12:09,532
+Objekt sınıfı.
+
+461
+01:12:10,323 --> 01:12:21,043
+Ve siz de bu object sınıfının bazı birkaç metodunu override ederekten kendi amacınıza yönelik olarak kullanabilirsiniz.
+
+462
+01:12:21,843 --> 01:12:27,263
+Bunun içerisinden toString metodunu biz artık bundan sonra override etmeye başlayacağız.
+
+463
+01:12:27,263 --> 01:12:35,683
+Daha evvel yazdığımız sınıflara koyduğumuz introduce self metodu yerine artık toString metodu yazacağız.
+
+464
+01:12:36,275 --> 01:12:56,275
+Bu toString object sınıfında tanımlıdır. Bu bize şöyle ufak bir kolaylık sağlayacak. Bir nesnenin string versiyonunu, string halinde bilgilerini elde etmek istediğimizde Java sanal makinesi aslında bu nesnenin toString metodunu çağırmaktadır.
+
+465
+01:13:02,963 --> 01:13:12,703
+O nesnenin bellekte yer aldığı adresin bir hash fonksiyonundan geçirilerek elde edilen bir onaltılık düzenli bir sayıdır.
+
+466
+01:13:14,103 --> 01:13:24,683
+Ve bu da aslında iki nesnenin, herhangi iki nesnenin birbiriyle aynı nesne olup olmadığını kontrol etmenizde de kullanılabilir.
+
+467
+01:13:24,984 --> 01:13:30,523
+İki farklı nesne, aynı türden biliyorsunuz, iki farklı nesne birlikte farklı adreslerde yer alacağı için.
+
+468
+01:13:30,996 --> 01:13:41,056
+Bunların o to string metotlarının override edilmemiş halleri işte bu hash fonksiyonundan geçerekten birbirinden farklı sonuçlar üretecektir.
+
+469
+01:13:42,387 --> 01:13:51,427
+Keza aslında objectin toString'i de kendi içerisinde bu object sınıfının hashcode metodunu çağırmaktadır.
+
+470
+01:13:51,747 --> 01:13:57,028
+O yüzden siz işte toString'i override etseniz bile kendi yazdığınız bir sınıfta,
+
+471
+01:13:57,028 --> 01:14:05,108
+yine bu hash fonksiyonu ihtiyacınız varsa işte nesne.hashcode diyerekten o metodu çağırarak da yine buna erişebiliyorsunuz.
+
+472
+01:14:05,347 --> 01:14:06,448
+Bunları göstereyim şimdi.
+
+473
+01:14:09,028 --> 01:14:09,547
+Şurada.
+
+474
+01:14:11,380 --> 01:14:19,220
+Şimdi normalde işte bu o employee memploy'ı bunlarda to-setting metodu yok.
+
+475
+01:14:19,220 --> 01:14:21,920
+Yani daha doğrusu override edilmemiş hali.
+
+476
+01:14:22,979 --> 01:14:26,139
+Ne? Çağıralım. Ne çıktığını görelim.
+
+477
+01:14:30,868 --> 01:14:34,148
+Bakın gördüğünüz gibi, şunu da kapatayım bu arada.
+
+478
+01:14:34,948 --> 01:14:37,847
+Bu dizinin ilk elemanı bir manager nesnesi.
+
+479
+01:14:38,628 --> 01:14:40,988
+İkinci, üçüncü elemanları da employee nesneleri.
+
+480
+01:14:40,988 --> 01:14:45,988
+Ve bunların işte add deyip gene hexade sumal hash kodlarını görüyorsunuz.
+
+481
+01:14:46,068 --> 01:14:50,308
+Bunlar farklı farklı nesneler olduğu için farklı farklı hash kodlar alınıyor.
+
+482
+01:14:51,208 --> 01:14:54,228
+Hani en sonuna bir de şu boss'u da bir tekrar yazdıralım diyelim.
+
+483
+01:14:55,148 --> 01:14:58,108
+Ya da şey nasıl yapıyorduk? Boss demiştik.
+
+484
+01:14:58,707 --> 01:15:06,587
+şey, managers, boss eşittir deyip, şöyle yapmıştık.
+
+485
+01:15:08,567 --> 01:15:13,807
+Az sonra, aslında sadece şunu çağırıp, ondan sonra set bonus demiştik ama şimdi böyle kalsın.
+
+486
+01:15:16,987 --> 01:15:21,407
+Evet. Şimdi bütün bunu yazdıktan sonra da, boss'u yazdırayım.
+
+487
+01:15:22,407 --> 01:15:24,307
+Sesi out, işte boss.
+
+488
+01:15:25,716 --> 01:15:26,956
+Böyle çalıştırıyor.
+
+489
+01:15:30,644 --> 01:15:37,344
+Gördüğünüz gibi ilk nesne ile son nesne bunlar aynı nesneler. Hedge kodları aynı.
+
+490
+01:15:38,703 --> 01:15:46,504
+Peki, şimdi o zaman bu println'in yani override ettiğimiz halini görelim şimdi.
+
+491
+01:15:47,463 --> 01:15:53,283
+Person sınıfına da koyalım mı? Koyalım.
+
+492
+01:15:59,252 --> 01:16:06,532
+public string to string.
+
+493
+01:16:09,811 --> 01:16:10,731
+Return.
+
+494
+01:16:11,372 --> 01:16:13,152
+Şimdi bu bir aslında person nesnesi ya.
+
+495
+01:16:13,712 --> 01:16:15,172
+Şöyle bir yazdımlak istiyorum.
+
+496
+01:16:16,231 --> 01:16:17,572
+Person yazdımlak istiyorum.
+
+497
+01:16:18,311 --> 01:16:18,932
+Altı.
+
+498
+01:16:19,752 --> 01:16:20,272
+Evet, name.
+
+499
+01:16:22,672 --> 01:16:22,872
+Tamam.
+
+500
+01:16:23,391 --> 01:16:24,891
+Bir tane de boş kursu yaptı.
+
+501
+01:16:25,672 --> 01:16:26,472
+Bu böyle olsun.
+
+502
+01:16:27,604 --> 01:16:28,904
+Employee'ye gelelim.
+
+503
+01:16:32,884 --> 01:16:39,103
+Adını ve maaşını göndersin. Hatta işte şu, aşağıya employ da eklesin bu bir employ'ya.
+
+504
+01:16:43,956 --> 01:16:45,136
+Böyle yaptım.
+
+505
+01:16:46,756 --> 01:16:49,296
+Ve manager isimde.
+
+506
+01:16:50,816 --> 01:16:51,536
+Onu da koyalım.
+
+507
+01:16:54,056 --> 01:16:55,156
+Şimdi onu da koyarken.
+
+508
+01:16:56,083 --> 01:17:01,163
+Bu arada, şunu tekrar bakayım, nasıl yapmışım? Get name artı, get seller'ı, peki, tamam.
+
+509
+01:17:01,623 --> 01:17:08,923
+Şimdi, manager'ın to stringinde de, employee'nin to string olanına, ama erişemem, çünkü şöyle bir durum var.
+
+510
+01:17:08,923 --> 01:17:13,724
+Şimdi tuttuğum başına, şey koydum, employee diye bir şart koydurdum.
+
+511
+01:17:14,683 --> 01:17:22,583
+O yüzden ben manager'ın sadece, köşe pantesi için manager yazmasını istediğim için, şu an onun to stringine doğrudan ulaşamam.
+
+512
+01:17:24,083 --> 01:17:30,983
+Yani ulaşırım da mantıklı sonuç elde edilmez.
+
+513
+01:17:31,843 --> 01:17:36,663
+Public string to link.
+
+514
+01:17:39,163 --> 01:17:40,283
+Return.
+
+515
+01:17:41,023 --> 01:17:44,623
+Önce işte manager yazsın.
+
+516
+01:17:45,263 --> 01:17:47,384
+Ondan sonra eğer string geldi.
+
+517
+01:17:47,503 --> 01:17:49,623
+Sonra get name.
+
+518
+01:17:50,355 --> 01:18:11,995
+Ondan sonra bir tane de boşluk ve get salary'i yapsın. Döndürüz. Tamam, güzel. Şimdi company'ye geri döndüğümde, author yaz dediğimde, daha sonra da boss'u yaz dediğimde, az önce verdiğim format şeklinde şey çıktılar, alacağız.
+
+519
+01:18:14,420 --> 01:18:27,420
+Evet, bakın gördüğünüz gibi, manager Cananur Sargut 10.500, employee yaşandığı örgü 7.500, employee Fatih Çiftlak 7.000 ve manager Cananur Sargut 10.500 şeklinde beklediğim çıktığı aldım.
+
+520
+01:18:31,440 --> 01:18:38,200
+Eğer bu şey teklerini koymasaydım, sınıf adlarını koymasaydım, şöyle yapabilirdim.
+
+521
+01:18:43,604 --> 01:19:02,463
+GetName'in sonucunu döndürürsün. Employee ise mesela diyelim ki, şimdi super nokta to string, artı getselere döndürsün mesela. Bu durumda hatta şimdi manager'ın da
+
+522
+01:19:02,832 --> 01:19:19,092
+two-streeting method'u override etmeyebilirim bile. Çünkü aslında employee gibi aynı şekilde adını ve maaşını söyleyecek. Ama oradaki managerdaki getseleri employeedeki getseleri gibi çalışmayacak. Yine polymorphism devreye girecek. Şunu da kapatayım şimdi.
+
+523
+01:19:25,460 --> 01:19:26,940
+Kanıltımını alacak artık.
+
+524
+01:19:27,600 --> 01:19:28,639
+Yani beklediğim dağdan şu.
+
+525
+01:19:29,719 --> 01:19:30,860
+Çalıştalım bakalım şimdi.
+
+526
+01:19:36,564 --> 01:19:37,904
+Evet, gördüğünüz gibi.
+
+527
+01:19:38,684 --> 01:19:46,463
+Yönetici 10.500, iki yazar 7.500 ve yine tekrar yöneticiye yazdırmış olduk.
+
+528
+01:19:47,064 --> 01:19:48,344
+Bunun bu arkadaşlar.
+
+529
+01:19:49,443 --> 01:19:53,244
+Buraya kadar yaptığımız şeylerden sorusu olan var mı? Varsa buyurun lütfen.
+
+530
+01:20:13,716 --> 01:20:13,836
+Obrigado.
+
+531
+01:20:22,292 --> 01:20:25,292
+O zaman şimdi şöyle bir şey yapacağız.
+
+532
+01:20:27,292 --> 01:20:31,832
+Bu company sınıfının main metodunun sequence diagramını çizeceğiz.
+
+533
+01:20:33,272 --> 01:20:34,292
+Bunu da yapmak için...
+
+534
+01:20:43,252 --> 01:20:52,252
+Şimdi print anerli halinde mi kalsın, get name, get şeyde mi kalsın, get name, get sorryde kalsın, çünkü ders notumda yaptım.
+
+535
+01:20:52,652 --> 01:20:55,352
+Şemra O doğrultuda herhalde, evet, tamam.
+
+536
+01:21:03,060 --> 01:21:13,120
+Evet, şimdi main metodu, sequence diagramını çizeceğiz. Bunu yapabilmek için, bir tane sequence diagram çizeceğiz.
+
+537
+01:21:15,700 --> 01:21:29,120
+Şimdi, aslında main metodu, ama bu while to UMLN'in ucu boş ok çizilememesi nedeniyle şöyle yapmak zorundayım.
+
+538
+01:21:30,707 --> 01:21:35,948
+Mail metodu işte ARGS, ARGS'e bilmem neyi alıyor parametre olarak.
+
+539
+01:21:36,727 --> 01:21:46,207
+Bundan sonra şu da aslında işte alışkanlık olması açısından bir nokta üstü koyuyorum ve altını çiziyorum.
+
+540
+01:21:47,288 --> 01:21:50,887
+Mail metodu içerisinde. Şimdi bakalım neler yapıyormuşuz bu arada.
+
+541
+01:21:52,727 --> 01:21:57,667
+Şimdi şurası orada kalabilir ama neyse bir bakalım.
+
+542
+01:22:02,292 --> 01:22:02,792
+Pardon.
+
+543
+01:22:03,432 --> 01:22:03,811
+Ha dur.
+
+544
+01:22:03,992 --> 01:22:04,631
+Daimde şu.
+
+545
+01:22:04,672 --> 01:22:05,231
+Eclipse time.
+
+546
+01:22:05,432 --> 01:22:06,051
+Tamam.
+
+547
+01:22:06,852 --> 01:22:07,311
+Pekala.
+
+548
+01:22:07,551 --> 01:22:07,712
+Şimdi.
+
+549
+01:22:09,051 --> 01:22:10,372
+İlk işini yapıyoruz.
+
+550
+01:22:12,092 --> 01:22:12,332
+Şimdi.
+
+551
+01:22:13,412 --> 01:22:19,172
+Aslında construct çağırmaları, sequence diagramları çiziyoruz.
+
+552
+01:22:19,172 --> 01:22:28,872
+Fakat aslında şu 6. satırdaki staff dizisine oluşturulması aslında tam bir construct çağırımı değil.
+
+553
+01:22:29,216 --> 01:22:45,916
+Sadece üç çalışan içerebilecek bir diziye yer ayrılmış olunuyor. Bu nedenle aslında bunu göstermeyebiliriz ama göstermek istiyorsak da şu şekilde gösterebiliriz.
+
+554
+01:22:45,916 --> 01:22:50,336
+Adem nihayetinde Constructors çağırması gibi.
+
+555
+01:22:50,931 --> 01:22:52,931
+bir new kelimesi kullanılmış.
+
+556
+01:22:53,412 --> 01:23:03,191
+O zaman, ve ayrıca kaldı ki, şu oluşturduğumuz boss, employee neslinin falan filan filan, direkt şeye aktaracağız, bu diziye aktaracağız.
+
+557
+01:23:03,191 --> 01:23:09,291
+Bunu yapabilmek için, diyeceğim ki şuraya, işte bu ne?
+
+558
+01:23:10,171 --> 01:23:14,311
+Staff dizisi, türlü de employee.
+
+559
+01:23:15,712 --> 01:23:21,292
+Java gösteriminde isterseniz bu köşeli parantezini burada tutabileceğiniz gibi şurada da tutabilirsiniz.
+
+560
+01:23:22,391 --> 01:23:34,051
+Ama aslında bu employee'nden elemanlar içeren bir dizi olduğunu söylediğimiz için aslında şuraya yazsak daha doğru olacak gibime geliyor.
+
+561
+01:23:34,412 --> 01:23:35,672
+Fark etmez. Öyle de olur.
+
+562
+01:23:42,323 --> 01:23:45,403
+3 tanelik oluşturacağız.
+
+563
+01:23:48,203 --> 01:23:49,123
+Oluşturulmuş.
+
+564
+01:23:49,644 --> 01:23:51,224
+Bu şekilde gösterebilirim.
+
+565
+01:23:53,083 --> 01:23:54,943
+Bu da onun geri dönüş çizgisi.
+
+566
+01:23:56,083 --> 01:23:59,923
+Daha sonra boss adlı manager dediğim bir nesne oluşturulmuşum.
+
+567
+01:24:00,463 --> 01:24:00,823
+Koyalım.
+
+568
+01:24:01,743 --> 01:24:02,943
+Düşünüşü büyüteyim.
+
+569
+01:24:04,763 --> 01:24:08,724
+Şimdi yaparsam daha iyi scroll edebileceğim diye düşünüyorum.
+
+570
+01:24:09,811 --> 01:24:12,012
+Evet, en azından score devreye girdi.
+
+571
+01:24:12,672 --> 01:24:15,451
+Ha, bak, hepsi aferin de onu yapacağım. Neyse, çok da önemli değil.
+
+572
+01:24:17,852 --> 01:24:20,352
+BOS, managers.
+
+573
+01:24:21,412 --> 01:24:26,752
+Bunu, şimdi yalnız dikkat edin, main metodun içerisinde olacak bu.
+
+574
+01:24:26,752 --> 01:24:29,572
+Bu nedenle, yani şunu biraz şöyle çekelim.
+
+575
+01:24:31,772 --> 01:24:34,611
+Yine de gözükebilecek herhalde.
+
+576
+01:24:37,908 --> 01:24:43,667
+Şimdi oku şu main metodun içerisinden çizmem lazım. Tutup da şuradan değil.
+
+577
+01:24:44,387 --> 01:24:49,648
+Main metodun içerisinde. New Employee 3 dizisinin ilklendiğimizinden sonra yürütülen komut.
+
+578
+01:24:51,507 --> 01:24:56,768
+New işte. Neydi? Aslında şuradan kopyala yapıştırı yapabilirim.
+
+579
+01:24:56,768 --> 01:24:58,608
+Şöyle.
+
+580
+01:24:59,283 --> 01:25:10,764
+Bu da şey, bu arada yine ders notuyla da payverliği tutmak için, set-set bonuslusu metodunu da koyalım.
+
+581
+01:25:12,403 --> 01:25:17,363
+Şimdi oldu. O zaman şuradan şöyle kopyala.
+
+582
+01:25:19,523 --> 01:25:20,603
+Buraya yapıştırız.
+
+583
+01:25:21,923 --> 01:25:23,323
+Notları koymaya gerek yok.
+
+584
+01:25:26,739 --> 01:25:27,239
+Tamam.
+
+585
+01:25:28,079 --> 01:25:29,779
+Bus'u ilklendirdik.
+
+586
+01:25:30,319 --> 01:25:32,000
+Ve bonus'unu da atıyoruz.
+
+587
+01:25:45,300 --> 01:25:49,420
+Daha sonra Staff dizisine bu boss'u atamışız.
+
+588
+01:25:49,680 --> 01:25:51,079
+Şimdi bunu nasıl gösterebiliriz?
+
+589
+01:25:51,740 --> 01:25:53,480
+Şöyle bir yaratıcılığımızı kullanacağız.
+
+590
+01:25:54,480 --> 01:25:55,300
+Diyeceğim ki...
+
+591
+01:25:59,507 --> 01:26:16,688
+BOS'u bu diziye ekledim. Ama şimdi normalde bu yazım sanki bir metot çağrımı anlamını taşımaktadır. Ne bileyim, ne employee sınıfında ne herhangi bir array yapısında add BOS gibi bir şey yok. Böyle bir komut yok.
+
+592
+01:26:19,539 --> 01:26:22,779
+UML stereotip işaretleri arasına koymak istiyorum.
+
+593
+01:26:23,159 --> 01:26:33,340
+Stereotip'lere buradan erişemiyorum ama bir tane sınıf diagramı oluşturup, ondan sonra bir tane sınav, şu interfazleri göreceğiz işte,
+
+594
+01:26:37,460 --> 01:26:42,979
+İki karakteri kesip artık bu clipboard da şuraya koyabilirim onu şimdi.
+
+595
+01:26:43,599 --> 01:26:48,319
+Tabii bunu yaparken önce şuraya yapıştırayım, sonra şunu da kesip şuraya yapıştırayım.
+
+596
+01:26:50,439 --> 01:26:52,519
+Şöyle bir şey yaptım diyebilirim işte.
+
+597
+01:26:52,759 --> 01:27:00,239
+Bu boss nesnesini nereye okumucu diziye gidiyor, diziye ekledim şeklinde bir gösterim yapabilirim.
+
+598
+01:27:00,884 --> 01:27:10,744
+Peki, sonra şunu nasıl yapacağız? Onuncu satırı nasıl göstereceğiz? Yine bir constructor çağrımı var, onu göstermek zorundayız. Hemen yapalım.
+
+599
+01:27:11,244 --> 01:27:18,884
+Acaba şuraya bir tane şöyle bir şey koysam ama oraya ulaşamayacağım. Neyse, büyürteceğim artık hepsini yan yana çizemedim, kusura bakmayın.
+
+600
+01:27:22,043 --> 01:27:25,543
+Adı önemli değil ki, bir nesne işaretçisi bile yok.
+
+601
+01:27:26,644 --> 01:27:28,884
+Bir MPO, yine siniz. Tamam mı?
+
+602
+01:27:34,579 --> 01:27:35,220
+İşte New.
+
+603
+01:27:36,720 --> 01:27:39,479
+Sonra kod ödeneyim, biraz kopyalı yapıştırı yapayım.
+
+604
+01:27:40,819 --> 01:27:41,239
+Şöyle.
+
+605
+01:27:43,239 --> 01:27:43,859
+Tamam.
+
+606
+01:27:44,760 --> 01:27:50,699
+Bunu da ilklendirdikten sonra aslında ilklendiği ilklendirmez diziye atadık.
+
+607
+01:27:50,699 --> 01:27:55,500
+Onu da yine benzer şekilde şu boss'u atamayı yaptığım gibi.
+
+608
+01:27:56,212 --> 01:28:09,092
+Benzer şekilde. Ama bu sefer şey diyeceğim, addboss demeyeceğim de. Bu bir geçici nesne oldu aslında. Add, tmp falan diyebilirim mesela buraya. Nesne adım da yok.
+
+609
+01:28:09,555 --> 01:28:28,676
+Ya da isterseniz hatta, hani şu TMP desen, kızınız kızar mı? Yok, kızmam. Bu şöyle TMP ekonomi, employee de diyebilirsiniz belki, fark etmez. Ama şöyle diyebiliriz, yani geri dönen employee nesbesinin bu işte geçici doğasını göstermek için en iyisi şu geri dönüş okuna TMP yazmak mesela.
+
+610
+01:28:28,676 --> 01:28:31,055
+Ve et TMP dedim.
+
+611
+01:28:31,539 --> 01:28:54,600
+Bunu da ekledim. Şimdi bunu aslında iki kere yaptım ama her iki kere yaptığımda da ayrı ayrı parametreler verdiğimden burada döngü işaretinde yıldız kullanamayacağım. Bir tane daha employee oluşturdum diyeceğim. Şimdi buraya isterseniz ikinci bir employee yazmak daha doğru olacak. Hani yine şöyle de yapabilirdim belki.
+
+612
+01:28:55,539 --> 01:29:00,119
+Yine ilk employee'e de yine bir oluşturma şeyi çağırabilirdim.
+
+613
+01:29:01,400 --> 01:29:02,840
+Yani şuraya da yapıp yazabilirdim.
+
+614
+01:29:03,159 --> 01:29:05,699
+Ama tercihim yeni bir tane employee açmak.
+
+615
+01:29:09,363 --> 01:29:12,724
+Benzer şekilde onun oluşturulması.
+
+616
+01:29:23,155 --> 01:29:30,015
+Orada yine bir işte temporary bir nefsine işaretçisi olacak aslında diyelim.
+
+617
+01:29:31,336 --> 01:29:36,715
+Ve en güzel şekilde viziye o elemanı da ekleyelim.
+
+618
+01:29:41,395 --> 01:29:43,015
+Bütün bu yazıyı kopyalayayım.
+
+619
+01:29:44,455 --> 01:29:46,035
+Şunu yapıştırayım mesela.
+
+620
+01:29:47,255 --> 01:29:48,875
+Peki, şimdi bunları ekledik.
+
+621
+01:29:49,115 --> 01:29:49,295
+Güzel.
+
+622
+01:29:50,215 --> 01:29:51,875
+Daha sonra ne var kodda?
+
+623
+01:29:51,875 --> 01:29:53,195
+İşte bakın.
+
+624
+01:29:53,695 --> 01:30:03,695
+Şimdi for döngüsü içerisinde, staff dilsindeki her eleman için getName ve getSelleri metotları çağrılıyor.
+
+625
+01:30:04,035 --> 01:30:04,575
+Tamam, güzel.
+
+626
+01:30:05,075 --> 01:30:07,755
+O zaman diyeceğim ki artık şimdi.
+
+627
+01:30:08,467 --> 01:30:12,648
+Yine main metodundan, company-charsed main metodundan devam ediyorum.
+
+628
+01:30:13,787 --> 01:30:19,387
+Get name diyeceğim ama bu bir for döngüsü içinde olduğu için başına yıldız koyacağım.
+
+629
+01:30:19,667 --> 01:30:21,028
+Yıldız çokluk anlamındaydı.
+
+630
+01:30:21,387 --> 01:30:24,247
+Sequence diagramında da for anlamına gelmektedir.
+
+631
+01:30:27,068 --> 01:30:30,307
+Dizdeki tüm nesneler için get name metodunu çağırıyor oluyorum.
+
+632
+01:30:30,307 --> 01:30:34,488
+Ve yine hepsi için get salary metotlarını da çağırmış oluyorum.
+
+633
+01:30:37,043 --> 01:30:37,364
+Evet.
+
+634
+01:30:45,363 --> 01:31:04,483
+Evet, başka bir şey yapmış oluyor muyum? Başka bir şey yapmıyorum. Ondan sonra şey bitiyor. Daha doğrusu main metodu bitiyor. Main'in de geri dönüşünü şöyle göstereyim. I not connect as seçiyormuşum yani işleri tıklamışım. Böyle gösterebilirim.
+
+635
+01:31:06,100 --> 01:31:19,900
+Peki, arada herhalde hemen bu toz. Bir şey unutmadım galiba. Karşılaştırayım bakalım şimdi ders noktalarındakiyle. Şöyle yaparsam şimdi. Şöyle alasam.
+
+636
+01:31:22,300 --> 01:31:26,100
+Yani son şu employ'den iki tane var diyelim. Onu unutmayın.
+
+637
+01:31:28,595 --> 01:31:50,255
+Şimdi şunu karşılaştırmaya çalışalım. Main, evet, main oku geliyor. Ondan sonra New dedik, 3 elemanlık. Bakın, şurada şöyle bir farkım var. Ders notunda nesneye, işte bunun 3 elemanlık empliyon olduğunu gösterdiğim için okumun üstünde sadece New yazmışım. Bu da böyle gösterici. Buraya New empliyon 3 demişim. Çok fark etmez.
+
+638
+01:31:50,836 --> 01:32:17,695
+Ondan sonra ilk boss'u oluşturduğumu, ondan sonra set bonus metodumu, ondan sonra boss'u eklediğimi, ondan sonra yazı. Ha burada iki tane ayrı employee yerinde tek employee kullanmışım. Olabilir. Hani iki employee kullanmayı tercih ettim ama böyle de olabilir nihayetinde. Ben zaten şükürde evet iki tane employee oluşturdum eklediğimizi. Ondan sonra hepsi için getneyim ve getseleri metotları şeyce döngü içerisinde.
+
+639
+01:32:18,163 --> 01:32:21,264
+çalıştırılmış oldu. Tamam.
+
+640
+01:32:22,304 --> 01:32:22,864
+Bulaştık.
+
+641
+01:32:24,304 --> 01:32:27,384
+Onun dışında, şimdi şöyle de yapabiliriz bu arada.
+
+642
+01:32:30,384 --> 01:32:32,144
+Azıcık değiştireceğim.
+
+643
+01:32:32,659 --> 01:32:34,399
+Biraz daha şey arasın diye.
+
+644
+01:32:35,199 --> 01:32:43,699
+Şimdi ayrı ayrı get name, get salary yerine diyelim ki print şey, springleri çağırmış oldum diyelim ki.
+
+645
+01:32:43,979 --> 01:32:46,279
+Şimdi o şekilde yaptığımı göstereyim mesela.
+
+646
+01:32:48,179 --> 01:32:50,039
+Ne oldu şimdi işte.
+
+647
+01:32:51,339 --> 01:32:54,179
+Ama yok bu şekilde biraz daha anlamlı diyelim.
+
+648
+01:32:54,719 --> 01:32:55,499
+Ya fark etmez ya.
+
+649
+01:32:57,419 --> 01:32:59,199
+Fark etmez tutuşu halinde kalsın.
+
+650
+01:33:00,884 --> 01:33:06,144
+Şimdi bu sequence diagramlarda, başka uyar merkezmelerinde de aynı gösterim olabiliyor.
+
+651
+01:33:06,743 --> 01:33:13,943
+Şimdi hem get name hem get salary aynı for döngüsünün içerisinde aslında çağırılan metotlar.
+
+652
+01:33:13,943 --> 01:33:19,943
+Şimdi bu ikisinin aynı for döngüsünde çalıştırıldığını göstermek için şöyle bir şey yapabilirim.
+
+653
+01:33:20,963 --> 01:33:22,943
+Wild2ML bunu desteklemiyor maalesef.
+
+654
+01:33:26,292 --> 01:33:41,272
+Zoom'un annotatiyetlerini kullanarak yapacağım. Yoksa bu yaptığım işleri, bu sequence diagramı resim olarak kaydedip, ondan sonra başka bir resim editörüyle açıp, şu an çizerek yaptıklarımı resim editöründe yapabilirsiniz.
+
+655
+01:33:50,771 --> 01:33:53,771
+Şöyle.
+
+656
+01:33:57,619 --> 01:34:01,119
+Şöyle bir dikdörtgen çizim. Tamam mı? Dikdörtgenin düzgün olduğunu varsayın lütfen.
+
+657
+01:34:03,119 --> 01:34:12,239
+Şimdi bu alan ek bir dikdörtgen. Bu alan içerisinde geçen her şeyin bir ortak etiketini tanımlayabiliriz.
+
+658
+01:34:13,340 --> 01:34:18,500
+Onu da bir şekilde tek kulağı kesik dikdörtgen.
+
+659
+01:34:18,500 --> 01:34:22,000
+Buraya yıldız yazarsam eğer.
+
+660
+01:34:22,100 --> 01:34:29,500
+Yani şu get ne ve get ne'nin başındaki önek olarak geçen yıldızı buraya yazıp buralardan silebilirim.
+
+661
+01:34:29,600 --> 01:34:31,340
+Şimdi bunu silmiş olduğunu varsayın.
+
+662
+01:34:31,840 --> 01:34:33,860
+Şuradan silmiş olduğunu varsayın.
+
+663
+01:34:34,380 --> 01:34:35,280
+Böyle de yapabilirim.
+
+664
+01:34:35,764 --> 01:35:02,003
+Tek bir tane yıldız için bunu yapmak biraz Angarya gibi gelse de şey olduğunu düşünün. Bir karmaşık bir koşulu olan wire döngüsü olduğunu düşünün. Veyahut da karmaşık bir if koşuluna bağlı olarak bu metotların çağırıldığını düşünün. O zaman işte burada şöyle bir ek alan açıp hani her metodun başına o karmaşık if koşulunun köşeli parantezleri yazmaktansa şuraya bir kere yazmak da tercih edilebilir.
+
+665
+01:35:02,003 --> 01:35:03,764
+Bu da UMLN.
+
+666
+01:35:03,764 --> 01:35:06,644
+standartının seçeneklerinden biridir.
+
+667
+01:35:07,043 --> 01:35:10,884
+Vali CML desteklemiyor ama yapılabildiğini bilin istedim.
+
+668
+01:35:14,899 --> 01:35:17,479
+Şimdi bunu bir...
+
+669
+01:35:17,479 --> 01:35:19,919
+Ha, şuradan CV'de bir şekilde kaydediliyorsun değil mi?
+
+670
+01:35:20,259 --> 01:35:20,439
+Tamam.
+
+671
+01:35:21,159 --> 01:35:22,939
+Bu arada en keşfettim bunu.
+
+672
+01:35:23,299 --> 01:35:28,319
+Çizimi yaptıktan sonra ekran o anki haliyle bir resim olarak kaydedebiliyormuşsunuz.
+
+673
+01:35:28,699 --> 01:35:30,579
+Geçen tesadüfen fark ettim.
+
+674
+01:35:32,460 --> 01:35:34,000
+Peki, stop share dedim.
+
+675
+01:35:34,279 --> 01:35:34,679
+Olmadı.
+
+676
+01:35:34,859 --> 01:35:36,259
+Tekrar share screen diyelim.
+
+677
+01:35:37,879 --> 01:35:38,359
+Peki.
+
+678
+01:35:39,019 --> 01:35:39,939
+Şey bu, durum bu.
+
+679
+01:35:39,939 --> 01:35:41,299
+Bu da onu demek istiyordum.
+
+680
+01:35:41,519 --> 01:35:42,199
+Ders notunda.
+
+681
+01:35:43,091 --> 01:35:44,991
+Şimdi şunu birikiyim tekrar artık.
+
+682
+01:35:47,612 --> 01:35:58,831
+Her şeyi yapsaydım da eğer, kodu şu haliyle olsaydı eğer de, benimki, printenem üstümden gidilseydi, o zaman şunu da yapmak zorundaydım.
+
+683
+01:35:59,072 --> 01:36:01,751
+Biraz daha sequence diagram egzersizi olmuş olsun.
+
+684
+01:36:02,591 --> 01:36:04,811
+Şimdi şunu bir siliyorum.
+
+685
+01:36:06,192 --> 01:36:07,411
+Şimdi şunu silmeysem.
+
+686
+01:36:08,051 --> 01:36:11,311
+Ne diyorum? Print and an gönderiyorum. Tamam, peki.
+
+687
+01:36:12,371 --> 01:36:18,371
+For içerisinde. Print and an aslında kendi içerisinde toString'i çağırıyor biliyorsunuz.
+
+688
+01:36:19,731 --> 01:36:20,471
+ToString'i.
+
+689
+01:36:21,951 --> 01:36:27,251
+ToString'de metot için de metot çağrısını göstermeyi unutmayalım.
+
+690
+01:36:28,851 --> 01:36:31,311
+Menü employee için göstereyim.
+
+691
+01:36:32,311 --> 01:36:35,551
+ToString ve getSelleri metotlarının çağrı.
+
+692
+01:36:36,115 --> 01:36:38,416
+Evet, tamam. Şurada Super'ın kine çağırmıştım.
+
+693
+01:36:42,931 --> 01:36:48,992
+İşi basitleştirmek, sadeleştirmek açısından şunu getneyim demek istiyorum.
+
+694
+01:36:51,132 --> 01:36:51,332
+Evet.
+
+695
+01:36:52,311 --> 01:36:53,092
+Daha sonra açıma.
+
+696
+01:36:53,532 --> 01:36:57,832
+Kendi içerisinde kendi kendine getneyim ve getseleri metotlarını çağıracak.
+
+697
+01:36:58,311 --> 01:37:01,332
+Şöyle bir kendisinin içerisinde getneyim.
+
+698
+01:37:04,851 --> 01:37:09,371
+Ve yine kendisinin ihtiyacını da şurada çizmeliyim.
+
+699
+01:37:10,072 --> 01:37:10,751
+Yetiseleri.
+
+700
+01:37:14,515 --> 01:37:15,595
+Metodlarımı çağırıyor.
+
+701
+01:37:17,935 --> 01:37:21,835
+Bu şekilde söyleyebilirim, gösterebilirim.
+
+702
+01:37:22,935 --> 01:37:26,415
+Peki sorarsanız, hocam, super nokta deseydi onu nasıl gösterecektiniz?
+
+703
+01:37:26,915 --> 01:37:29,275
+Vallahi onu da yine bu şekilde göstermeyi tercih ederim.
+
+704
+01:37:29,275 --> 01:37:34,455
+Yani o kadar da didiklemeyelim diyorum.
+
+705
+01:37:36,500 --> 01:37:47,500
+Ama hani to string yapsaydık, to stringin içerisinde her bir employee'nin aslında kendi içerisinde get name ve get f'leri çağırdığını çizerdik.
+
+706
+01:37:47,619 --> 01:38:02,099
+Ama şu polymorphik davranışı burada özellikle sequence diagramında göstermek zorunda değiliz veya super erişimlerinden, constructor erişimlerinden veyahut da metodun override edilmemiş haline erişmek gibi konularda.
+
+707
+01:38:04,500 --> 01:38:11,419
+O biraz epey karmaşık olacak. Çünkü manager da biraz farklı çalışıyor. O employee de biraz farklı çalışıyor.
+
+708
+01:38:11,419 --> 01:38:18,460
+Üç kere dönüyor. Bu bir döngüsünde bosunki mi, get ney mi, get sarısı çağırılacağını gösterecektik falan.
+
+709
+01:38:18,739 --> 01:38:22,619
+Aşırı karmaşıklaştırıyor. Bence bu kadarı kesinlikle yeterlidir arkadaşlar.
+
+710
+01:38:26,119 --> 01:38:30,919
+Evet. Buraya kadar sorusu olan arkadaşım var mı? Varsa buyursunlar lütfen.
+
+711
+01:38:42,228 --> 01:38:43,428
+Yoksa devam edeceğiz.
+
+712
+01:38:52,275 --> 01:38:56,216
+Evet, şu 3 parametre olan constructor olayını tartıştık örnekte.
+
+713
+01:38:56,216 --> 01:38:57,435
+Yaparak söylemiştik.
+
+714
+01:39:01,136 --> 01:39:02,655
+Primord metod sunuyoruz.
+
+715
+01:39:03,796 --> 01:39:11,216
+Evet, şimdi normalde bu override mekanizması public metodlar için kullanılmaktadır ve anlam taşımaktadır.
+
+716
+01:39:11,988 --> 01:39:21,868
+Ama eğer isterseniz üst sınıfın private metotlarını da alt sınıfta override edebiliyorsunuz.
+
+717
+01:39:21,868 --> 01:39:38,188
+Fakat bu biraz tetrafilli bir iş. Çünkü tamam bunu yapabilirsiniz ama bu alt sınıfta override edilmiş private metot üzerinden üst sınıfta override edilmemiş haline ulaşamıyorsunuz arkadaşlar.
+
+718
+01:39:39,988 --> 01:39:59,988
+Private olarak kalıyor. Öbür türlü siz bir hickle yaklaşımıyla yaklaşıp mesela mevcut bir sınıfın private metoduna erişmek istiyorsunuz ama erişemiyorsunuz. O zaman dersiniz ki ben ondan kalıtımla kendi yeni sınıfımı oluştururum. O private metodun da gövdesini override ederim ve içerisinden...
+
+719
+01:40:00,000 --> 01:40:08,279
+Super diye üst sınıftaki o private metodunu çağırdım. Böylece bu engeli açmış olurum gibi düşünebilirsiniz.
+
+720
+01:40:08,279 --> 01:40:11,599
+Bu yönelik nefret çekmek için böyle bir durum söz konusu.
+
+721
+01:40:12,119 --> 01:40:17,879
+Private metotlar da nihayetinde alt sınıfa kalıtımla aktarılıyor ama alt sınıftan doğrudan ilişilemiyorlar.
+
+722
+01:40:18,339 --> 01:40:25,219
+Buna rağmen alt sınıfta o metodu override edebiliyorsunuz ama mesela görünüyörünü pabrikle çekmek yapamıyorsunuz.
+
+723
+01:40:25,319 --> 01:40:26,319
+Derleme hatası oluyor.
+
+724
+01:40:28,000 --> 01:40:35,219
+Metodun olarak edilmemiş haline doğrudan erişim, ona da izin verilmiyor. Çok da bir anlamı olmuyor nihayetinde günün sonunda.
+
+725
+01:40:35,899 --> 01:40:42,139
+Ve özetle bırakın private metoda private kalsın. Onları bence override etmeyi uğraşmak çok da mantıklı bir seçenek değil.
+
+726
+01:40:42,139 --> 01:40:46,799
+Dediğim gibi izin veriliyor ama çok kısıtlı bir izin bu. Yapma daha iyi.
+
+727
+01:40:47,087 --> 01:40:56,867
+Ve bir de son olarak final üye alan ve final üye metotlardan bahsettik ama bir sınıfı da final olarak işaretleyebilirsiniz.
+
+728
+01:40:57,307 --> 01:41:07,207
+Eğer bir sınıftan kalıtımla yeni sınıflar türetilmesini istemiyorsanız, bir sınıfın bir base class, super class olarak kullanılmasını istemiyorsanız o zaman başına final yazıyorsunuz.
+
+729
+01:41:07,547 --> 01:41:08,527
+Hemen yazalım görelim.
+
+730
+01:41:10,931 --> 01:41:16,931
+Ben şurada tutup da mesela person sınıfına...
+
+731
+01:41:20,404 --> 01:41:26,224
+Final class person dediğimde bakın kırmızı kırmızı derleme hatalarım çıkmaya başladı.
+
+732
+01:41:32,020 --> 01:41:33,400
+Evet, beş tane eros diyor.
+
+733
+01:41:34,020 --> 01:41:34,659
+İşte yani.
+
+734
+01:41:35,880 --> 01:41:37,320
+Olmuyor diyor yani.
+
+735
+01:41:37,980 --> 01:41:38,640
+Bir şey değil mi?
+
+736
+01:41:38,739 --> 01:41:40,220
+Bir dakika, bu arada şeye bakalım.
+
+737
+01:41:40,260 --> 01:41:41,940
+Employee bir bakalım filan.
+
+738
+01:41:42,420 --> 01:41:47,220
+Ha, bakın şurada diyor ki, esas dermatan bu, işte kök neden bu?
+
+739
+01:41:47,659 --> 01:41:55,779
+Employee sınıfı, final sınıf olan person'dan kalıtım ile yeni ad sınıfını oluşturamaz diyor işte.
+
+740
+01:41:57,020 --> 01:41:58,180
+Final'ın anlamı bu.
+
+741
+01:41:58,996 --> 01:42:03,256
+Sınıf düzeyindeki olan faydan alınan boşunlar diğer paketteki şeyleriydi.
+
+742
+01:42:03,735 --> 01:42:04,876
+Onlarla karışmasın.
+
+743
+01:42:05,036 --> 01:42:05,436
+İşte şu.
+
+744
+01:42:08,256 --> 01:42:09,036
+Sildim.
+
+745
+01:42:09,836 --> 01:42:10,976
+Her şey düzeldi.
+
+746
+01:42:11,195 --> 01:42:12,316
+Yani Eron'lar gitti.
+
+747
+01:42:13,996 --> 01:42:14,756
+Evet.
+
+748
+01:42:15,195 --> 01:42:16,136
+Bunu böyle konuştuk.
+
+749
+01:42:18,276 --> 01:42:19,976
+Bakalım başka bir şey var mı?
+
+750
+01:42:20,948 --> 01:42:26,847
+Başka bir şey yok. Tamam peki. Şimdi daha doğrusu o örnek üstünden başka bir şey yok.
+
+751
+01:42:27,627 --> 01:42:36,728
+Şimdi kalıtımın doğru kullanımının gerektiğini de söylemiştik. Bu düğme örneği biraz basitti.
+
+752
+01:42:37,268 --> 01:42:45,988
+Şimdi biraz daha karmaşık bir örnek üstünden kalıtımın nasıl doğru kurulması ve kullanılması gerektiğini de bir göstermek istiyorum size.
+
+753
+01:42:46,868 --> 01:42:50,168
+Şimdi diyelim ki bir sınavda soru çıktı.
+
+754
+01:42:51,168 --> 01:42:52,668
+Ona yönelik bir tasarım yapacağız.
+
+755
+01:42:53,208 --> 01:42:55,808
+Ama tabii ki illa sınava yönelik düşünmek demek istemiyorum.
+
+756
+01:42:56,068 --> 01:43:04,828
+Çünkü gerçek hayatta da bir yazılım geliştirme projesi içerisinde yer alacağınız zaman bu projeler doğal dilde yazılmış bir gereksinim belgesi halinde başlar.
+
+757
+01:43:04,828 --> 01:43:10,828
+O doğal dilde yazılmış gereksinim belgesi çeşitli yöntemlerle daha teknik bir altyapıya dönüştürürüz.
+
+758
+01:43:11,848 --> 01:43:14,608
+Yazılım mühendisliği dersinde seneye bütün bunları göreceksiniz.
+
+759
+01:43:14,868 --> 01:43:29,928
+Neyse, şimdi gereksinlerden bakalım. Bu gereksinlerden yola çıkarak bir tasarım oluşturmaya çalışalım. Diyor ki, işte hastanın isimlerini, TC, kemik numarası, doğum tarihi ve cep telefonu numarası saklanmalıdır. Bu bilgi doktorlar için de saklanmalıdır.
+
+760
+01:43:30,452 --> 01:43:43,612
+Deyince, şimdi bir yandan okuyup bir yandan modelleme yapıyorsak, o zaman diyebiliriz ki, işte tamam hastaların art kimlik numarası, durum tarihi, cep telefonu numarası tutulacak.
+
+761
+01:43:43,612 --> 01:43:45,612
+Hemen tutup bu...
+
+762
+01:43:46,292 --> 01:43:48,572
+Patient sınıfını kodlamaya başlayabiliriz.
+
+763
+01:43:48,752 --> 01:43:50,632
+Yani tasarlamaya başlayabiliriz diyeyim.
+
+764
+01:43:50,752 --> 01:43:54,292
+Bu arada bunu sıra ile VARC-MEL ile birlikte yapmak istiyorum.
+
+765
+01:43:54,832 --> 01:43:56,192
+Öyle daha anlamlı oluyor.
+
+766
+01:43:56,592 --> 01:43:58,372
+İşte burada bir tane sınıf diagramı.
+
+767
+01:43:58,852 --> 01:43:59,732
+Bunu böyle küçülteyim.
+
+768
+01:43:59,972 --> 01:44:00,092
+Tamam.
+
+769
+01:44:00,652 --> 01:44:01,212
+Ne dedik?
+
+770
+01:44:01,472 --> 01:44:03,232
+Patient peki ama bu interfazı da.
+
+771
+01:44:03,332 --> 01:44:04,652
+Onu kılasa çekelim.
+
+772
+01:44:07,792 --> 01:44:08,952
+Dedik tamam patient.
+
+773
+01:44:11,052 --> 01:44:12,672
+Hastalığın nesi olmalıdır diyor.
+
+774
+01:44:12,672 --> 01:44:13,152
+İşte.
+
+775
+01:44:13,747 --> 01:44:23,787
+name, ondan sonra tcid, vn, doğum tarihi ve cep telefonu numarası.
+
+776
+01:44:24,087 --> 01:44:26,247
+Şimdi cep telefonu numarası da string olarak tutalım.
+
+777
+01:44:26,407 --> 01:44:33,527
+Basit şey aslında onun için bir cep numarası sınıfı koymak daha doğru olabilirdi belki ama o da nihayetem string.
+
+778
+01:44:33,527 --> 01:44:36,188
+Number diyelim.
+
+779
+01:44:36,867 --> 01:44:38,007
+Bunlar string olsun.
+
+780
+01:44:39,028 --> 01:44:41,787
+Ondan sonra Cemal, doğum tarihi.
+
+781
+01:44:43,328 --> 01:44:51,028
+Şimdi Java Util paketinde dekliği bir sınıf var. Bu sınıfın kullanımını da göreceğiz önümüzdeki haftalarda.
+
+782
+01:44:51,787 --> 01:44:58,688
+Şu an sadece şu kadar bilelim. Hem tarih hem saati tutan bir sınıftır bu. O yüzden deklediğimiz zaman işi çözmüş oluyoruz.
+
+783
+01:45:00,051 --> 01:45:06,411
+Bu bilgiler tutulmalıdır diyor. Peki tamam, yaptık. Bu bilgiler doktorlar için de tutulmalıdır diyor.
+
+784
+01:45:06,671 --> 01:45:10,271
+He madem öyle, demek ki o zaman ben şöyle yapabilir miyim?
+
+785
+01:45:11,291 --> 01:45:15,331
+Bir tane de doktor sınıfını hemen oluşturuyorum.
+
+786
+01:45:17,111 --> 01:45:21,611
+Ondan sonucuma kalıtımla bunu patientten türetirim.
+
+787
+01:45:22,311 --> 01:45:24,711
+Güzel. Bir eksimi karşıladı mı? Karşıladı.
+
+788
+01:45:26,331 --> 01:45:27,051
+Fakat...
+
+789
+01:45:27,923 --> 01:45:28,684
+Daha sıra.
+
+790
+01:45:35,572 --> 01:45:38,172
+Gerekselimin dahası var. Ya niye buraya küçültüyor ya?
+
+791
+01:45:40,472 --> 01:45:46,372
+Peki. Ek olarak doktorların diploma numaraları da saklanması gerekmektedir.
+
+792
+01:45:46,592 --> 01:45:51,172
+Tamam güzel. Hiç problem yok. Onu da ekleriz doktora üye alan olaraktan.
+
+793
+01:45:52,552 --> 01:45:54,372
+Diploma numarası.
+
+794
+01:45:55,188 --> 01:45:57,207
+Neyse, o da string olsun.
+
+795
+01:45:58,207 --> 01:46:03,347
+Int belki olabilir ama belki sıfada başlayan bir şeyler varsa diye düşünüyorum.
+
+796
+01:46:03,707 --> 01:46:06,287
+String veya int neyse, fark etmez. Bakarız işte her neyse.
+
+797
+01:46:07,507 --> 01:46:08,707
+Ondan sonra ne diyor?
+
+798
+01:46:10,327 --> 01:46:15,507
+Bir hastaya uygulanan tedavilerin de kaydını tutmalıyız diyor.
+
+799
+01:46:16,087 --> 01:46:18,787
+Demek ki bir tedavi sınıfı olacak.
+
+800
+01:46:22,804 --> 01:46:41,404
+Ve hastaya uygulanan bütün tedavilerin de kaydı tutulmalıdır diyor. O zaman demek ki patient'tan treatment'a birey yıldız şoklu sahiplik koymamız gerekiyor. Bunu da yapabilmemiz için tabii ki bir dizi koymamız gerekiyor.
+
+801
+01:46:50,323 --> 01:47:10,064
+Bakın, bunu koyan koymaz ne oldu? Bu tedavi kaydı bilgileri doktor sınıfına da kalıtımla otomatik olarak aktarıldı. Doktor hasta değil ki. Doktor hasta olamaz. Aslında filik olarak hastalanabilir ama hastalandığı zaman bir doktor olarak gelip faaliyet gösteremez. Önce iyileşmesi gerekmektedir.
+
+802
+01:47:14,832 --> 01:47:31,112
+Patient'a özel olan bir üye alanın hiç anlama ve gereği yokken kalıtım ilişkisi yüzünden doktor sınıfına da aktarıldığını görmüş oluyoruz. Bu nedenle bu doğru bir tasarım olmadı. Daha doğru tasarım nedir?
+
+803
+01:47:31,539 --> 01:47:39,880
+Yine evet kalıtım kullanılabilir ama sağ taraftaki gibi bir modelleme çok daha doğru bir modelleme olacaktır.
+
+804
+01:47:39,880 --> 01:47:51,079
+Hem doktorda hem hastada ortak olan bilgileri kendi arasında sarmalamamız ve buradan bir sınıf oluşturmamız.
+
+805
+01:47:51,636 --> 01:47:55,975
+Hasta ve doktor sınıflarını da bu sınıftan türetmemiz en doğrusu olacaktır.
+
+806
+01:47:56,655 --> 01:48:01,355
+O bilgide bakıyordum. İsim, TC, kilimik numarası, cep telefonu, doğum tarihi.
+
+807
+01:48:01,355 --> 01:48:04,895
+Buna uygun bir isim olarak da person diyorum.
+
+808
+01:48:06,895 --> 01:48:17,355
+Her ne kadar burada gereksinimler belgesinde person diye bir isimden, varlıktan bahsetmiyorsa bile ben bunu kendim oluşturdum.
+
+809
+01:48:17,619 --> 01:48:27,699
+Ve işte doktor ile işte hasta, patient sınıflarını bu person sınıfından kalıtımla türetirim.
+
+810
+01:48:28,760 --> 01:48:37,699
+Ve sadece patient ile treatment arasında birey-yıldız ilişkisini, sarkı ilişkisini kuralım.
+
+811
+01:48:38,699 --> 01:48:42,420
+Daha doğru modelleme bu şekilde olacak ve olmalı.
+
+812
+01:48:42,868 --> 01:48:49,868
+Böylece işte kalıtımı kullanırken çok dikkatli olmanız gerektiğinin bir örneğini daha vermiş olduk.
+
+813
+01:48:51,288 --> 01:48:54,008
+Peki, şundan bahsetmiştik zaten.
+
+814
+01:48:54,148 --> 01:48:56,828
+To string ve kullanımdan falan bahsettik.
+
+815
+01:48:56,828 --> 01:49:04,828
+Şimdi buraya kadar konuştuğumuz noktalardan kalıtım, polymorphism, overriding,
+
+816
+01:49:05,363 --> 01:49:13,403
+Başka overloading filan. Bu ara kadar yaptığımız funnlardan soru sorun arkadaşların varsa lütfen buyursunlar. Rahat rahat konuşuruz.
+
+817
+01:49:34,515 --> 01:49:43,735
+Soru olmamasını şuna bağlıyorum. Laboratuvar ve uygulamada gördüğünüz bazı şeyleri ona bağlıyorum. İnşallah öyledir.
+
+818
+01:49:45,995 --> 01:49:56,215
+Tamam, pekala. O zaman 10 dakikayı hak ettik arkadaşlar. Saat 10.50 ile 11.00 arasına aramızı koyalım.
+
+819
+02:00:05,524 --> 02:00:08,064
+Evet arkadaşlar, ara vaktimizi doldurduk.
+
+820
+02:00:08,564 --> 02:00:10,923
+Dersde kaldığımız yerden devam edelim.
+
+821
+02:00:14,284 --> 02:00:14,484
+Evet.
+
+822
+02:00:16,604 --> 02:00:24,184
+Şimdi yine kalıtım ile ilgili bir iki konumuz daha var.
+
+823
+02:00:24,744 --> 02:00:26,404
+Oradan devam edelim.
+
+824
+02:00:27,184 --> 02:00:28,703
+Sonra da soyut sınıflar var.
+
+825
+02:00:29,043 --> 02:00:30,163
+Abstract classes.
+
+826
+02:00:31,104 --> 02:00:31,284
+Şimdi.
+
+827
+02:00:31,923 --> 02:00:52,343
+Bu kalıtımda özelleşme-genelleşme ilişkisi olduğundan bahsetmiştik. Kalıtım hiyerarşisinde aşağılara doğru ilerledikçe daha özelleşmiş sınıflar, kalıtım hiyerarşisinde yukarı çıkardıkça daha genişleşmiş, genelleşmiş sınıflar yer almaktadır.
+
+828
+02:00:52,343 --> 02:00:55,343
+Şimdi şöyle düşünün.
+
+829
+02:00:57,363 --> 02:01:09,644
+Hiyerarşit o kadar yukarı çıktık ki aslında artık bu bahsettiğimiz sınıflar aslında gerçek birer varlığa denk düşmek yerine bazı kavramlara denk düşüyor oldular.
+
+830
+02:01:10,543 --> 02:01:16,144
+Mesela bir önceki örneğimizde şu person sınıfın buna iyi bir örnekti.
+
+831
+02:01:16,528 --> 02:01:25,268
+Kalıttımın doğru kullanımı konusunda şurada yaptığımız tasarımda person sınıfı aslında soyut sınıflara güzel bir örnek teşkil edebiliriz.
+
+832
+02:01:26,028 --> 02:01:31,228
+Gereksinler belgesine baktığımızda hiçbir yerde öyle bir person göremiyoruz.
+
+833
+02:01:32,340 --> 02:01:38,579
+Patient görebiliyoruz, doctor görebiliyoruz, hasta yakını görebiliriz, nurse görebiliriz.
+
+834
+02:01:39,000 --> 02:01:46,859
+Yani böyle bir poliklinik bilgi sistemi içerisinde düşündüğümüz çeşitli farklı kişi türlerinden bahsedebiliriz.
+
+835
+02:01:46,960 --> 02:01:49,659
+Ama sadece bir person'dan bahsedemiyoruz.
+
+836
+02:01:50,099 --> 02:01:54,340
+Sarı çizmeni Mehmet Ağa kim bilmiyoruz, doktor mu, hasta mı kim bilmiyoruz.
+
+837
+02:01:55,279 --> 02:01:58,179
+Öyle bir varlık bizim tasarımımızda yok.
+
+838
+02:01:58,179 --> 02:02:00,179
+Daha doğrusu aslında tasarımımızda var ama...
+
+839
+02:02:00,340 --> 02:02:09,659
+Bu örnek olarak verdiğim bu personal sınıfında bir nesne oluşturmaya ve kullanmaya hiçbir şekilde ihtiyaçımız yok.
+
+840
+02:02:11,155 --> 02:02:17,535
+Bu da demek oluyor ki aslında person sınıfından bir nesne oluşturulmasına gerek yok.
+
+841
+02:02:17,535 --> 02:02:23,855
+Person sınıfı burada sadece alt sınıflarına bir temel oluşturmak için var.
+
+842
+02:02:24,435 --> 02:02:29,535
+Kendisinden nesneler oluşturulup kullanılması amacıyla yok bizim tasarımımızda.
+
+843
+02:02:30,615 --> 02:02:39,155
+Sadece ve sadece alt sınıflarına çeşitli üye alan ve üye metotların aktarılması, yani işte bir temel oluşturulması amacıyla var.
+
+844
+02:02:39,155 --> 02:02:46,475
+Böyle bir durum söz konusuysa o zaman biz bu person sınıfımızı abstract olarak işaretleriz.
+
+845
+02:02:47,015 --> 02:02:57,115
+Onun UML sınıf şamasında gösterimi stereotip işaretleri içerisinde abstract yazaraktan olur sınıf adının üstüne.
+
+846
+02:02:59,815 --> 02:03:01,835
+Şurada gördüğünüz üzere.
+
+847
+02:03:04,532 --> 02:03:07,412
+Soy sınıflardan nesne oluşturulamaz arkadaşlar.
+
+848
+02:03:08,467 --> 02:03:33,367
+Soyut olmayan sınıflara normal sınıf, yani ek bir etikete ihtiyaç yok aslında. Soyut demezsek bir sınıf normal bir sınıftır. Ama onlara isterseniz concrete class da denilebiliyor. Bunu Türkçe'ye çevirmeyi istemiyorum doğrusu. Concrete çimento yani. Çimento sınıf. Olmadı. Veyahut da sağlam sınıf. Diğerleri buluştum ki.
+
+849
+02:03:35,283 --> 02:03:36,804
+Normal sınıf diyorum.
+
+850
+02:03:38,644 --> 02:03:42,663
+Ama işte bazı sınıfları abstract olarak işaretleyebiliriz.
+
+851
+02:03:42,963 --> 02:03:52,663
+Bunun anlamı kendisinden nesne oluşturmak için değil, sadece kendisinden yeni art sınıflar türetilmesi için tasarımımızda yer alan bir sınıf olmasıdır.
+
+852
+02:03:54,224 --> 02:04:01,623
+Soyut sınıflara constructor kodlayabiliriz ama soyut sınıflardan nesne oluşturamayız arkadaşlar.
+
+853
+02:04:03,155 --> 02:04:09,275
+Soyut sınıflar normal üye alan ve üye metotlara sahip olabilir. Normal sınıflarda yapabildiğimiz gibi.
+
+854
+02:04:10,355 --> 02:04:20,395
+Fakat ek olarak isterseniz soyut bir sınıftaki istediğiniz metotları da soyut metot olarak işaretleyebilirsiniz.
+
+855
+02:04:21,255 --> 02:04:29,935
+Soyut metotların gövdesi yoktur arkadaşlar. Sadece metot imzası vardır. Metot imzasının başında abstract da geçer.
+
+856
+02:04:30,515 --> 02:04:33,255
+Aftrak kelimesi geçen metot imzasında.
+
+857
+02:04:33,735 --> 02:04:35,155
+Gövdesi tanımlı değildir.
+
+858
+02:04:35,496 --> 02:04:38,275
+Sadece nokta bir gülder metodun tanımını bitiririz kodla.
+
+859
+02:04:39,435 --> 02:04:41,955
+Gövdesi alt sınıflarda tanımlanırız.
+
+860
+02:04:42,576 --> 02:04:43,496
+Bunun da anlamı şudur.
+
+861
+02:04:44,235 --> 02:04:46,375
+Şimdi yapılacak bir iş var.
+
+862
+02:04:47,435 --> 02:04:51,475
+Ayrıntıları işte metot imzasında verildiği gibi metodun adı ve parametreleri.
+
+863
+02:04:51,475 --> 02:04:56,775
+Ama o işin nasıl yapılacağı alt sınıflarda farklılık gösteriyor.
+
+864
+02:04:58,228 --> 02:05:07,708
+Bu durumda bütün kardeş sınıflarda gövdesi farklı olacak bir metodu, FUYT üst sınıfta gövdesinin tanımlanmasına hiç gerek yoktur.
+
+865
+02:05:09,076 --> 02:05:14,315
+Böyle bir durum varsa o metodu abstract olarak işaretleyip iç gövdesini tanımlamıyoruz.
+
+866
+02:05:14,835 --> 02:05:18,775
+Bu gövdelerin tanımlanmasını somut alt sınıflarda yapıyoruz.
+
+867
+02:05:18,855 --> 02:05:21,775
+Ha ağzımdan çıktı bile. Tamam. Somut sınıf.
+
+868
+02:05:21,875 --> 02:05:24,555
+Ha tamam. Ondan sonra gelmeyin nedense.
+
+869
+02:05:25,235 --> 02:05:29,415
+Normal sınıfları somut sınıfta diyebiliriz ama işlediğimiz gibi bir şey demeye gerek yok.
+
+870
+02:05:30,536 --> 02:05:36,475
+Soyut bir sınıftaki, soyut bir üst sınıftaki, soyut bir metot, alt sınıfların hepsinde
+
+871
+02:05:36,884 --> 02:05:40,923
+Gövdesi konu tanımlanmalı ve artık abstract kelimesi silinmelidir.
+
+872
+02:05:42,263 --> 02:05:51,783
+Ama eğer bir soyut sınıfın alt sınıfı da soyut sınıf olacaksa o zaman onda hala abstract metot ya da metotlar kalabilir. Bunda bir sakınca yok.
+
+873
+02:05:52,148 --> 02:06:00,347
+Ama normal bir somut sınıfı kodluyorsak onun hiçbir metodu somut olarak, soyut olarak, abstrakt olarak tanımlamaz.
+
+874
+02:06:00,887 --> 02:06:06,408
+Eğer bir metodunu bile abstrakt olarak tanımlamak istiyorsak o zaman o sınıfın kendisini de abstrakt yapmalıyız.
+
+875
+02:06:07,568 --> 02:06:09,408
+Şey bu, o kural bu.
+
+876
+02:06:13,300 --> 02:06:16,159
+Ne için ihtiyacımız olduğunu söyledim az önce.
+
+877
+02:06:16,760 --> 02:06:19,060
+UML şemasında işte bu şekilde gösteriyor dedim.
+
+878
+02:06:19,060 --> 02:06:30,060
+Bazı standartlarda statik sınıfları hatta statik üye metotları ve hatta statik...
+
+879
+02:06:30,060 --> 02:06:31,760
+Ay kanka özür dilerim.
+
+880
+02:06:32,100 --> 02:06:33,400
+Niye statik abi? Abstract.
+
+881
+02:06:33,960 --> 02:06:41,060
+Abstract sınıfları ve abstract metotları UML sınıf şemalarında...
+
+882
+02:06:41,300 --> 02:06:44,560
+Italik olarak da yan ayatlık şekilde de gösterebiliyoruz.
+
+883
+02:06:45,340 --> 02:06:47,640
+Ama bunu tercih etmiyorum.
+
+884
+02:06:47,640 --> 02:06:56,720
+Çünkü hele elle çiziyorken zaten yazın berbat bir de onu italik yazmaya çalışmak iyice anlamsız.
+
+885
+02:06:58,131 --> 02:07:19,412
+Ayrıca kaldı ki daha net bir biçimde bunu ifade eden abstract stereotypy veyahut da metot abstractsı sonuna kıvırık parantez içerisinde abstract şeklinde gösteriyoruz. Birazdan çıkan sunumda. Böyle bir notasyon varken daha zor anlaşılır olan italik notasyonu kullanmaya hiç gerek yok diye düşünüyorum.
+
+886
+02:07:20,148 --> 02:07:36,348
+İşte bu stereotop karakterleri de UML'deki herhangi bir bileşen asıl anlamı dışında kullanıldığında bu yeni anlamının ne olduğunu ifade etmek üzere kullandığımız bir etikettir şeklinde söyleyebilirim.
+
+887
+02:07:36,628 --> 02:07:39,288
+Bir önceki derste işte et-tmp dediğimiz gibi.
+
+888
+02:07:42,708 --> 02:07:46,708
+Şimdi işte bir UML şemasında da görelim.
+
+889
+02:07:47,604 --> 02:07:54,503
+Şimdi biz bir yazıcı üreten firmayız diyelim ki ve çeşitli yazıcılar üretiyoruz.
+
+890
+02:07:55,503 --> 02:08:01,503
+Yazıcılar da aslında kendilerine gönderen bir belgeyi...
+
+891
+02:08:02,739 --> 02:08:16,699
+Tanımlamak için iki tane standarttan biri kullanılıyor. Birisi PS, Post Script, birisi de PCL, Page Control Language. Bu page denenin de kendi içerisinde 5, 6 falan gibi sürümleri var.
+
+892
+02:08:17,171 --> 02:08:23,291
+PostScript'in de versiyonları vardır herhalde ama orada geriye doğru uyumluluğu daha iyi kuruyorlar diye düşünüyorum.
+
+893
+02:08:24,491 --> 02:08:30,351
+PCL'de biraz daha kurulmuyor diye atılır. Neyse, çok önemli değil bu.
+
+894
+02:08:30,868 --> 02:08:50,088
+Şimdi artık bizim farklı yazıcı dillerine hitap eden yazıcılar iletiyoruz. Aslında bizim bir yazıcımız farklı yazıcı dillerini anlayabiliyor diyelim. Yazıcımızın içerisinde her ikisine yönelik donanım da var ve firmware var. Biz onu kodlayacağız, edeceğiz.
+
+895
+02:08:57,376 --> 02:09:14,456
+Fikslemek, sabitlemek istemiyoruz. Biz bu yazıcımız için hazırladığımız device driver kodlarında ortak tanımlayacağımız işlemler de olacak. Tarklı tanımlayacağımız işlemler de olacak.
+
+896
+02:09:14,815 --> 02:09:25,055
+Örneğin, bir işletim sistemindeki yazdırma biriktirici spoiler prosesinin eğer ilklendirilmemişse sürücü tarafından ilklendirilmesi gerekmektedir.
+
+897
+02:09:25,475 --> 02:09:30,715
+Bu için yazıcının belge bastırma yetenekleriyle ilgisi alakası yoktur.
+
+898
+02:09:31,955 --> 02:09:39,735
+Bu nedenle ister PCL için driver yazılımı yazalım, ister PS yazıcımız için driver yazılımı yazalım.
+
+899
+02:09:40,079 --> 02:09:43,859
+Bu Spill'ın initialization işlemini aynı şekilde kodlayacağız.
+
+900
+02:09:44,839 --> 02:09:51,019
+Fakat, belirli bir dökümanın yazdırılma metodunu çok farklı şekilde kodlamamız gerekiyor.
+
+901
+02:09:51,139 --> 02:09:53,639
+Çünkü BCD ve PS farklı standartta.
+
+902
+02:09:54,359 --> 02:09:59,959
+Bu durumda ben işte ortak yapılacak işleri soyut bir print driver sınıfında
+
+903
+02:10:00,500 --> 02:10:11,780
+Kodlarım normal metotlar olarak, somut metotlar olarak. Alt sınıflarda değişecek olan işi ise çok farklı olacak. Hiçbir ortak noktası yok.
+
+904
+02:10:12,243 --> 02:10:21,443
+O metodu işte üst sınıfta kodlamama gerek yok. Sadece imzasını yazalım ve o metodu soyut olarak işaretle.
+
+905
+02:10:22,043 --> 02:10:29,123
+UMLN sınıf şamasında bir metodu soyut olarak işaretliyorsak en sona kıvrık parantez içerisinde abstract yazıyoruz.
+
+906
+02:10:30,743 --> 02:10:35,443
+Niçin stereotak değil de kıvrık parantez kullanmayı seçmişler diye sormayın.
+
+907
+02:10:35,859 --> 02:10:57,340
+Bilmiyorum. Keşke orada da stüretler kullanmayı seçselerdi ama metot gövdesiyle karışıyor belki biraz çünkü. Ama siz artık biliyorsunuz ki burada bir 40 part class'ını abstract görürseniz bir metodun yanında onun metot gövdesiyle hiçbir alakası yoktur. O metot soyut bir metot olarak tanımlanmıştır anlamına gelmektedir arkadaşlar.
+
+908
+02:10:59,859 --> 02:11:15,399
+Neyse, dönelim şimdi o soyut mantığına. Yani bu print metodu alt sınıflarda o kadar farklı şekilde kodlanıyor ki hiçbir anlamı yok. Yani hiçbir ortak noktası yok. Bu yüzden üst sınıfta bu metodun gövdesinin tanımlanmasının anlamı yok.
+
+909
+02:11:24,212 --> 02:11:30,032
+Bu metodun sadece imzasını üst sınıfta soyut metot olarak tanımlıyoruz.
+
+910
+02:11:30,832 --> 02:11:39,052
+Bu da demek oluyor ki benim bir bilgisayarıma farklı türden, ister PCL6, ister PS, hiç fark etmez.
+
+911
+02:11:39,052 --> 02:11:44,252
+Her birinin farklı farklı versiyonlarını içeren farklı farklı driver'lar kurabilirim.
+
+912
+02:11:44,692 --> 02:12:08,692
+Ve onda hangi yazıcı açıkta göndermek istiyorsan hiçbir problem olmadan onun print metodunu çağıralım. Bu print metodu eğer işte çok biçimlilik gereğince o yazıcı bir ppcl6 driverına sahipse o şekilde yazdırılacak. Yok post script driverına sahipse o şekilde yazdırılacak gibi bir esnek ve eş biçimli kullanım yapabilirim.
+
+913
+02:12:09,779 --> 02:12:14,359
+O yüzden bu üst sınıfta, soyut üst sınıfta soyut metodu tanımladım.
+
+914
+02:12:15,759 --> 02:12:23,340
+Öbür türlü ben PCL-6 ve PS driver'larının bir aynı dizide kullanıp ya da aynı koleksiyonunda kullanıp hadi ad dökümanı yazdın diyemem.
+
+915
+02:12:23,340 --> 02:12:27,219
+Ne diyorsun kardeşim diyecek? Print driver sınıfında böyle bir metot yok.
+
+916
+02:12:27,759 --> 02:12:36,159
+Bir önceki ders de işte manager türünden olan, özür dilerim, employee türünden olan dizide manager metotlarına erişemediğimiz gibi.
+
+917
+02:12:37,171 --> 02:12:47,271
+Bu nedenle soyut sınıflar ve bunların soyut metotlarının kullanım amacı, yeri ve şekli bu şekildedir arkadaşlar.
+
+918
+02:12:50,387 --> 02:12:52,867
+Peki bunu kodda yazarken nasıl işaret edeceğiz?
+
+919
+02:12:53,247 --> 02:12:58,327
+Print driver sınıfımızı yazarken, görünürlükten hemen sonra abstract kuralını yazacağız.
+
+920
+02:12:58,707 --> 02:13:00,488
+Public, abstract, class, print driver.
+
+921
+02:13:01,228 --> 02:13:04,627
+İntspur'un metodunu normal kodlayacağız, nasıl kodlanması gerekiyorsa.
+
+922
+02:13:05,228 --> 02:13:13,927
+Print metodunu ise hemen public dedikten sonra abstract kelimesini koyup, metot imzasının geri kalanını yazıp, ondan sonra noktaya virgül koyup bırakıyor.
+
+923
+02:13:14,627 --> 02:13:16,967
+Kırk parantez aç, kapa yapmıyorum. Bu önemli.
+
+924
+02:13:16,967 --> 02:13:18,327
+Noktaya virgül koyup.
+
+925
+02:13:18,387 --> 02:13:19,087
+Kapatıyorum.
+
+926
+02:13:20,747 --> 02:13:24,528
+İşte PCL 6 driver'ını yazacakken de işte Extend Print Driver'ı diyorum.
+
+927
+02:13:24,608 --> 02:13:25,967
+Adı kalıtı ilişkisini kuruyorum.
+
+928
+02:13:25,967 --> 02:13:34,188
+Ve 3 sınıftaki bu soyut print metodunu alt sınıfta yeniden tanımlıyorum, override ediyorum.
+
+929
+02:13:34,768 --> 02:13:37,028
+Böylece ilgili kodu buraya yazıyorum.
+
+930
+02:13:37,827 --> 02:13:40,268
+PS için de benzer bir kod yazıyorum.
+
+931
+02:13:41,167 --> 02:13:41,547
+Durum bu.
+
+932
+02:13:43,956 --> 02:14:04,316
+Sonra örneklerini göreceğiz soycu sınıfların ama interfes kavramını da gördükten sonra bu işi yapmak istiyorum. Bir de hepsinden önce bir çokluk kavutum diye bir özellik var. Ondan bahsetmek istiyorum. Bu biraz da interfesleri girizgah da sağlıyor.
+
+933
+02:14:07,444 --> 02:14:11,784
+Acaba neden bir sınıfın sadece bir tane üst sınıfı olsun ki?
+
+934
+02:14:12,724 --> 02:14:16,064
+Bir sınıfın birden fazla üst sınıfı olamaz mı?
+
+935
+02:14:16,963 --> 02:14:23,104
+Bu nasıl işimize yarar? Nasıl dezavantajımıza gelir? Ondan konuşmak istiyorum.
+
+936
+02:14:24,304 --> 02:14:33,684
+Şimdi, eğer bir sınıfın birden fazla üst sınıfı olabilirse, dil bunu destekliyorsa, o zaman bu işe multiple inheritance deniliyor.
+
+937
+02:14:34,612 --> 02:14:36,931
+Neden böyle bir şeye ihtiyacımız olsun?
+
+938
+02:14:37,471 --> 02:14:41,072
+Benimki bir üniversite bilgi sistemini yazıyoruz.
+
+939
+02:14:41,072 --> 02:14:43,072
+Bu bilgi sistemimizde...
+
+940
+02:14:46,323 --> 02:15:13,823
+Normal bir bilgi sistemi yazıyoruz bir şirket için. Burada çeşitli çalışanlarımız var. Bir dakika aslında bunu employ demişim ama şeydi tamam. Bir üniversite bilgi sistemi hazırlıyoruz. Burada öğrencilerimiz var ve çalışanlarımız var. Tabii çalışanlarında belki alt sınıf olarak işte çeşitli akademik derece, araştırma göre, doktor öğretim, doçan, doktor, profesör vesaire vesaire.
+
+941
+02:15:14,323 --> 02:15:20,023
+Sonra idari personel, işte bölüm sekreteri, fakat sektörü, şunlar, bunlar filan filan art türeli olabilir.
+
+942
+02:15:20,203 --> 02:15:21,384
+Neyse şu anlamı karıştırmıyor.
+
+943
+02:15:21,823 --> 02:15:25,603
+Fakat bir employee sınıfımız var kodumuzda.
+
+944
+02:15:26,303 --> 02:15:27,683
+Student sınıfımız da var.
+
+945
+02:15:28,263 --> 02:15:30,503
+Sonra şöyle bir gereksinim çıktı ortaya.
+
+946
+02:15:30,503 --> 02:15:40,223
+Denirdi ki bazı öğrenciler de yarı zamanlı öğrenci olarak veya asistan öğrenci olarak saat ücretli olarak çalıştırılabilir.
+
+947
+02:15:40,948 --> 02:16:02,247
+Bunu da lütfen bilgi sistemine ekleyin denirdiği zaman hemen şöyle düşünemeliyiz. Nedir bu asistan öğrenci? Hem çalışandır hem öğrencidir. Öğrencinin de bazı yeteneklerini alacak, çalışanın da bazı yeteneklerini alacak. O zaman ben hem student hem de employee sınıflarından kalıtımla.
+
+948
+02:16:03,380 --> 02:16:08,479
+Yeni bir sınıf türetip bu gereksinimi karşılayabilirim diye düşünebilirsiniz.
+
+949
+02:16:09,079 --> 02:16:11,019
+Peki, diyelim ki yaptınız.
+
+950
+02:16:12,260 --> 02:16:22,420
+Ama aslında şu an mevcut olan student ve employee sınıflarında büyük olasılıklar işte bir person olacak şekilde bir üst sınıfta mevcut olacak.
+
+951
+02:16:23,100 --> 02:16:25,100
+Az önceki hasta doktor örneğinde yaptığımız gibi.
+
+952
+02:16:25,819 --> 02:16:29,199
+O zaman şama ne hale geldi? Şu hale geldi. Alttaki hale geldi.
+
+953
+02:16:30,003 --> 02:16:41,943
+Her bir sınıfın orta noktasını birleştirilsek, aradaki oklarla değil de çizgilerle, o zaman bir elmas şeklini aldı bu şekil.
+
+954
+02:16:42,283 --> 02:16:47,463
+Buna Diamond Inheritance'da deniliyor. Elmas şeklini aldığı için.
+
+955
+02:16:51,463 --> 02:16:55,963
+Problem şu, ilk bakışta mantıklı bir iş yaptık gibimize geliyor ama.
+
+956
+02:16:56,531 --> 02:17:13,271
+Şöyle bir şey olduğunu bahsediyorum. Bu en üst sınıfta, person sınıfında bir metot tanımlı diyelim ki. O metot hem student hem employee sınıflarında override edilmiş olsun. Yani gövdesi değiştirilmiş olsun. Peki.
+
+957
+02:17:21,780 --> 02:17:31,340
+Bu metot hangi ebeveynden alt sınıfa geçecek? Student'tan mı geçecek? Employee'den mi geçecek? Bu bir belirsizlik.
+
+958
+02:17:32,120 --> 02:17:42,420
+Ha bu belirsizliği çözmek için çeşitli kurallar konulabilir. Mesela denir ki, bir dil der ki çıkar. İlk başta kimden kılıtım alınmışsa onunki aktarılsın.
+
+959
+02:17:42,420 --> 02:17:49,220
+Şimdi yazarken diyeceğiz ki işte public class assistant student, extends, işte student ve employee diyelim ki diyeceğiz.
+
+960
+02:17:49,907 --> 02:17:54,367
+İlk önce kimden kalıtım alınmışsa onunki aktarılsın denilebilir.
+
+961
+02:17:55,047 --> 02:17:59,227
+En son kimden kalıtım alınmışsa onunki aktarılsın denilebilir.
+
+962
+02:17:59,907 --> 02:18:07,467
+Böyle bir durumda o metodun mutlaka alt sınıfta, en alt sınıfta olarak edilmesi gerekir şeklinde bir kural konulabilir.
+
+963
+02:18:08,167 --> 02:18:11,788
+Veya belki aklınıza gelebilecek başka kurallar da olabilir.
+
+964
+02:18:13,236 --> 02:18:25,796
+Fakat bu ortaya çıkan bir de kırılgan ısınıf problemini de bunun üstüne koyduğumuzda bu diamond inheritance çok çetrefilli durumlara yol açabilir.
+
+965
+02:18:26,695 --> 02:18:36,316
+Bu nedenle daha modern güncel nesne yönelik diller multiple inheritance'ı desteklememektedir.
+
+966
+02:18:36,636 --> 02:18:40,416
+Başka bir deyişle multiple inheritance'a izin vermemektedir.
+
+967
+02:18:42,963 --> 02:18:51,164
+Ayrıca bir de bütün bunun üstüne aslında kalıtımın diğer ilişkilerine göre daha ağır sıklet bir ilişki olduğunu da koyun.
+
+968
+02:18:52,043 --> 02:19:01,884
+Bütün bunları düşünerekten Java ve C-Shot dahil olmak üzere modern nesne yönelikli diller, multiple inheritance'ı desteklemiyor.
+
+969
+02:19:01,884 --> 02:19:08,811
+Onun yerine daha hafif sıklet bir ilişki olan interface implementation ilişkisini...
+
+970
+02:19:08,852 --> 02:19:36,092
+koyuyorlar. Daha eski nesli yönelik dillerden C++ multiple inheritance'ı destekliyor ve bu diamond inheritance problemi de mutlaka bu en alt sınıftaki metodun override edilmesi gerektiği şeklinde kural koyaraktan bu problemi çözüyor. Durum bu. Özetle multiple inheritance yapmıyoruz arkadaşlar.
+
+971
+02:19:37,172 --> 02:19:38,292
+Sebeplerini konuştuk.
+
+972
+02:19:40,211 --> 02:19:47,292
+Bunun yerine, interface kavramı girecek devreye ama daha sonra konuşacağız.
+
+973
+02:19:47,752 --> 02:19:52,952
+Öncelikle bu soyut sınıf mantığını bir oturtalım.
+
+974
+02:19:52,952 --> 02:19:57,652
+Örnek ile öyle şey edelim.
+
+975
+02:19:59,652 --> 02:20:03,952
+Şimdi, örnek sınıf işe yarımızı görüyorsunuz.
+
+976
+02:20:04,244 --> 02:20:08,304
+Daha önce problemden bahsedeyim. Ona yayın bir tasarım yapacağız sonra.
+
+977
+02:20:09,123 --> 02:20:19,504
+Şimdi bir anaokulunda çeşitli malzemeler olsun. Bu malzemeler oyuncak ve kıyafet olabilir. Başka malzemeler de düşünebilirsiniz.
+
+978
+02:20:20,943 --> 02:20:24,584
+Ve anaokulunda çocuklarımız olacaktı elbette. O da noktamız.
+
+979
+02:20:25,427 --> 02:20:51,207
+Şimdi bir çocuğa bir item verirken oyuncak veya kıyafet ona uygun olan item'ın verilmesi lazım. Bunun için de tabii her item'ın bir barkodu olacak, bir tanımı olacak vesaire ama aynı zamanda bir çocuğa uygun olup olmadığının da belirlenebilmesi gerekmektedir.
+
+980
+02:20:51,827 --> 02:21:03,667
+Bu da genelde yaş üzerinden yapılır. Bir oyuncakçadaki etiketlere baktığınızda o oyuncağın şu yaş ve üzeri şeklinde diye geçer.
+
+981
+02:21:05,268 --> 02:21:11,427
+Koş, Acil Sinanleyen ne var da şu an lütfen daha örnek açısından düşünelim.
+
+982
+02:21:14,707 --> 02:21:16,235
+Kıyafetlerde ise...
+
+983
+02:21:16,404 --> 02:21:23,004
+Bir minimum ay ile minimum maksimum ay arasında limit geçer.
+
+984
+02:21:23,884 --> 02:21:27,724
+İşte 8 ila 12 aylar için gibi.
+
+985
+02:21:29,923 --> 02:21:42,344
+Şimdi aslında birini yaş, birini ay cinsinden vermemin bir sebebi de birinin ortak, birinin çevrimi işlemlerini unutmamanızı söylemek içindi.
+
+986
+02:21:42,899 --> 02:21:54,099
+Yoksa aslında oyuncakta da, kimi oyuncakta şu kadar ay ve üstü diyebilir ama biraz daha yaş büyüdükçe artık şu yaş ve üstü şeklinde geçmektedir oyuncakla.
+
+987
+02:21:54,099 --> 02:22:05,299
+İşte üç yaş ve üstü, minik ütülebilecek parçalar yoksa gibi. Birçok kıyafette de, çünkü minik bebekler için ise ay cinsinden verilir şu aylar için.
+
+988
+02:22:07,092 --> 02:22:28,092
+Veyahut da daha büyük çocuk class da süsha sene ilçesinden verir. Ama şu durum fark etmiyor. Oyuncaklarda tek bir alt limit, kıyafetlerde ise bir yaş aralığı söz konusu. İster ayrıcılığından ister yılcılığından. Gerçek hayatta böyle de. Şu an biraz daha basitleştirerek örneği anlatalım, çözelim demek istiyorum.
+
+989
+02:22:28,755 --> 02:22:39,335
+Oyuncaklarda bir minimum limit var. Kıyafetlerde ise minimum ile maksimum arası var. Minimumdan daha küçük olmamalı, maksimumdan da daha büyük olmamalı çocuğun yaşı.
+
+990
+02:22:42,484 --> 02:23:06,283
+Bu nedenle arada bir işlem farklılığı var. Fakat bunların ortak noktası da çok. İşte barcode olması, tanımlı olması gibi. O zaman ben bu işin bu kısmını bir item sınıfı oluşturup, işte barcode description'i oraya koyup, item için constructor, barcode ve description için getter metodları koyarım. Toy ve clothing'i de itemden kalıtımla türetirim.
+
+991
+02:23:07,188 --> 02:23:23,567
+Sonra, acaba bir item'ın bir çocuğa uygun olup olmadığını da kodlayabilmek için. Bu arada item yani. Item dediğin ne? Oyuncak mı? Kıyafet mi? Ne yani? Defter mi? Kalem mi? Sadece item diyerek bu item ne?
+
+992
+02:23:24,115 --> 02:23:33,876
+Tek başına bir item geçerli bir nesne olmuyor bizim problem alanımızda. O yüzden item sincını da soyut olarak işaretlemem en doğrusu olacaktı.
+
+993
+02:23:34,595 --> 02:23:45,876
+Ve kaldı ki farklı itemların belirli bir çocuğa uygun olup olmadığının sınanması için, belirlenebilmesi için farklı item türlerinde yapılan farklı işlemler var.
+
+994
+02:23:48,384 --> 02:24:09,543
+Bu is suitable metodunu, keza bu ayetim hangi çocuk için uygun ya da uygun değil, o çocuğu da parametre olarak alacak ve bakacak. Eğer uygunsa true döndürecek, uygun değilse false döndürecek şeklinde yapıyorum. Ama işte bu işlemin uygun olup olmadığına karar verilmesi çok farklılaşabileceğinden bu metoddan soyut olarak kodlamak zorundayım.
+
+995
+02:24:10,579 --> 02:24:17,959
+Ben soyut sınıflara alerjim var, hiç soyut sınıf kullanmayacağım derseniz eğer, isterseniz.
+
+996
+02:24:17,959 --> 02:24:24,459
+O zaman bu istriyutu bir metoduna bir default bir metod gövdesi koyarsınız.
+
+997
+02:24:24,920 --> 02:24:28,959
+Örneğin sadece bir minimum yaş limiti varmış gibi bir belki gövde koyarsınız.
+
+998
+02:24:29,840 --> 02:24:34,399
+Ama şimdi o minimum yaş limitini nasıl aktaracaksınız bu metoda?
+
+999
+02:24:34,779 --> 02:24:36,439
+Parametre mi olarak aktaracaksınız?
+
+1000
+02:24:36,700 --> 02:24:38,579
+Peki, ama bunun iki parametre olanı da...
+
+1001
+02:24:40,084 --> 02:25:08,044
+Olsun. Peki, iki tane paramet koyalım. Birincisi minimumdur, ikincisi maksimumdur. Eğer bu bir toy olacaksa sadece ilk parametreye bakalım. Yani ikinci parametreye bakalım, üçüncüye hiç bakmam. Eğer clothingin içerisinde kodlarken iki parametreye de bakarım gibisinden kod yazmaya başladığınızda o zaman aslında bu varyasyonların bir kısmını bu item'a kodlayıp geri kalan kısmını
+
+1002
+02:25:08,084 --> 02:25:26,064
+Alt kısım sınıfları bırakmak, işi daha da fazla dağıtmak oluyor. Bu nedenle o da uygun olmuyor. Bu durumda en uygun modellemi bu şekilde karşımıza çıkıyor. Abstract sınıfların kullanımı ve abstract metot kullanımı en uygun çözüm olarak bu durumda karşımıza çıkıyor.
+
+1003
+02:25:26,484 --> 02:25:32,263
+Evet, çocuk sınıfımızda var. Adı ve yaşı. Yaşı da ay cinsinden olsun.
+
+1004
+02:25:33,443 --> 02:25:43,024
+Belli bir item, belli bir çocuk için uyuyor mu, uyuyor mu, uymuyor mu, uygun mu, değil mi? Onun metodu da kodlayacağız. Şimdi bu örneğimizi birlikte çözeceğiz.
+
+1005
+02:25:43,423 --> 02:25:49,524
+Tabii anaokulu sınıfımızda var. Anaokulu yaşa çocuk ekle, en yer büyük çocuğu bul filan gibi çeşitli metodlar eklenebilir.
+
+1006
+02:25:49,524 --> 02:25:54,024
+Bu birey-yıldız ilişki kısmını tekrar koddamayacağız. Yaptık onu.
+
+1007
+02:25:54,484 --> 02:25:58,583
+Biz bu soyut sınıf kısmına odaklanacağız.
+
+1008
+02:25:59,304 --> 02:26:07,243
+Yani bu problemin şu kısmına odaklanıyor olacağız.
+
+1009
+02:26:12,628 --> 02:26:34,988
+Bu arada bir final üye alanı nasıl gösteririz? Daha doğrusu şuraya yazdığım şekilde olacak arkadaşlar. Şuradaki gösterimden de belki anlaşılıyor ama doğrusu o değil. Doğrusunu bu olması gerekiyor. Düzeltmemişim henüz. Ama bu da yazılı olarak geçiyor. Onu öyle algılayın lütfen. Şimdi bunun kodlamasına geçelim.
+
+1010
+02:26:37,268 --> 02:26:43,168
+Yine şey üstünden yapalım isterseniz. Exit üstünden yapalım. Aynı kadar kodlar burada yazsa da.
+
+1011
+02:26:44,788 --> 02:27:01,788
+Şu şeyden bahsettik zaten yani. Bu arada başka bir şey daha. Bu istitif bir metodunu abstract yapmasaydık ne olurdu? İşte belirli bir metod gerçekleşmesini buraya yazsaydık, alt sınıflarda da gerekiyorsa değiştirseydik. Yani bir iş bir yerde yapılır. En uygun yerde yapılır.
+
+1012
+02:27:01,788 --> 02:27:12,768
+Ve değişik alt sınıflarda da bu işler çok çok farklı şekillerde olacağından bir varsayılan bir davranışı üst sınıfa kodlamak tercih edilen bir durum değil.
+
+1013
+02:27:12,788 --> 02:27:18,848
+Hangi paket? 06 paketinde.
+
+1014
+02:27:23,316 --> 02:27:23,916
+Şurada.
+
+1015
+02:27:29,940 --> 02:27:37,720
+Şahane basit bir sınıf. Bunda yapacak bir şey yok. Item'a bakalım. Evet.
+
+1016
+02:27:38,164 --> 02:27:48,763
+Şimdi soyut sınıfı olduğu için public'te hemen sonra abstract diyoruz. Public abstract class item. İşte string olarak barkodu var, tanımı var. İkisini alan constructor var. Barkodu için get-a-setter metodu var.
+
+1017
+02:27:50,364 --> 02:28:00,684
+Instruitable metodunu gördüğünüz gibi tanımlıyoruz. Public hemen ardından abstract diyoruz. Geriye boolean yani tuyla da false uygun mu değil mi göndereceğinden geri dönüştük bir boolean.
+
+1018
+02:28:06,164 --> 02:28:09,644
+item sınıfının içerisinde bir sahiplenme yok çocukla item arasında.
+
+1019
+02:28:09,844 --> 02:28:15,524
+Sadece uyumlulup olmadığının söylenmesi için bir metoda parametre olarak aktarılma ilişkisi var.
+
+1020
+02:28:15,524 --> 02:28:26,704
+O yüzden işte bu ders notlarında şemayı çizerken item ile çaytılar arasında kesikli çizgi ile ucu açık ok çizilmiş durumda.
+
+1021
+02:28:29,172 --> 02:28:34,332
+Öte yandan şunu bir araştırma olarak eklenin bu get type metodunu anlamı yok.
+
+1022
+02:28:39,551 --> 02:28:43,391
+Bir yerde de kullanmışım örnek olsun diye falan filan.
+
+1023
+02:28:50,324 --> 02:28:55,524
+Tamam, itemden bahsettik. Şimdi onun somut alt sınıflarına bakalım.
+
+1024
+02:28:56,324 --> 02:29:06,524
+Learning, clothing, public class, clothing, expense item. Bunun iki tane uyarına var. Minimum ay, maksimum ay sınırı. Constructive.
+
+1025
+02:29:06,524 --> 02:29:17,344
+Her iki uyarını da ilklendirecek ama öncesinde tabii ki üst sınıfın, soyut üst sınıfın Constructive'ını çağırıyor. Balkon ve tanım bilgilerini aktarmak için.
+
+1026
+02:29:17,780 --> 02:29:25,360
+Bu şart, yani şunu tekrar hatırlatalım, işte bir sınıf abstract bile olsa bir constructor kodlayabilirsiniz ona.
+
+1027
+02:29:26,260 --> 02:29:31,600
+Bu, o constructorı item nesnesi oluşturmak için kullanacağınız anlamına gelmez.
+
+1028
+02:29:32,640 --> 02:29:37,819
+Alt sınıflarından super ile erişmek için kodluyorsunuz anlamına gelir.
+
+1029
+02:29:38,640 --> 02:29:42,900
+Şimdi itemden nesne oluşturmaya çalışırız, derleme hatası alacağımızı görürüz.
+
+1030
+02:29:43,667 --> 02:29:59,347
+Stratul metodu parameter to a child alıyor. Ne yapıyor? Çocuğun yaşını alıyor, yaşını, ay cinsinden. Minimum limitten büyük eşitse ve maksimum limitten küçük eşitse o zaman bu onun için uygundur diyor, true döndürüyor, abstract, default döndürüyor.
+
+1031
+02:29:59,347 --> 02:30:09,347
+Metodun kendisi basit de, sınıfın kendisi basit de bu abstract olaylarını anlatmak için oluşturduğumuz bir örnek. Item'a da bakarsak.
+
+1032
+02:30:10,708 --> 02:30:12,948
+Onun da barcode description'ı var.
+
+1033
+02:30:13,548 --> 02:30:14,048
+Pardon, pardon.
+
+1034
+02:30:14,528 --> 02:30:17,348
+Toraya bakarsak.
+
+1035
+02:30:17,427 --> 02:30:19,087
+Onun da bir minimum yaş limiti var.
+
+1036
+02:30:19,468 --> 02:30:22,747
+O yüzden public class store, existence item, itemden atıyorum.
+
+1037
+02:30:23,567 --> 02:30:30,328
+Onun konstruktionında da barcode ve description'ı yine benzer şekilde üst sınıfa aktarıp minimum yaş limitini atıyorum.
+
+1038
+02:30:30,835 --> 02:30:51,475
+Ondan sonra istiyatörlük metodunda, çocuğun yaşını alıyorum ay cinsinden ama burada yıl cinsinden söz konusu olduğundan, o ayı 12'ye dönmem lazım. Bu 12'ye böldükten sonra çıkan sonuç minimum yaştan büyük yedi eşitse, o zaman eşiği geçmiş demektir, ulaşmışları geçmiş demektir. True'u döndürüyor, aksi taktirde false döndürüyor diyelim.
+
+1039
+02:30:52,211 --> 02:30:56,572
+Ve ondan sonra gelelim şu aslında deneme işlemleri için.
+
+1040
+02:30:57,572 --> 02:30:59,031
+Kindergarten sınıfına.
+
+1041
+02:30:59,371 --> 02:31:02,112
+Bunu bir araştırma olarak siz yapabilirsiniz aslında.
+
+1042
+02:31:02,112 --> 02:31:09,112
+Onun yerine şurada bir deneme olması için bir main Java oluşturalım.
+
+1043
+02:31:09,932 --> 02:31:10,971
+Onun üstünden gidelim.
+
+1044
+02:31:11,471 --> 02:31:15,051
+Ama önce ders notlarında atlamış olduğum bir şey olmasın.
+
+1045
+02:31:15,391 --> 02:31:16,092
+Onlara bakalım.
+
+1046
+02:31:20,468 --> 02:31:44,468
+Tamam, peki. Özel bir şey yok. Kindergarteni siz yapabilirsiniz eğer isterseniz diye dedik. Belki bize alıştırması gibisinden olabilir. Şimdi bu nedenle bakalım bakalım nasıl deneyebiliriz, ne yapabiliriz? İşte bir iki tane item oluşturalım. Tabii ki doğrudan item oluşturmayacağız da ya oyuncak oluşturacağız ya kıyafet oluşturacağız.
+
+1047
+02:31:46,804 --> 02:31:50,404
+Ondan sonra değişik yaşlardaki çocuklara vereceğiz bunları.
+
+1048
+02:31:51,123 --> 02:31:56,783
+Eğer gerçekten uygun olan çocuğa, uygun oyuncağı verebilmişsek tamam ne hala.
+
+1049
+02:31:57,584 --> 02:32:01,704
+Uygun olmayan oyuncağı da uygun olmayan çocuğa vermemeliyiz de.
+
+1050
+02:32:02,004 --> 02:32:04,644
+Aslında o türde de sınama yapmamız lazım.
+
+1051
+02:32:05,644 --> 02:32:07,824
+Bakalım. Neler yapmışız mesela?
+
+1052
+02:32:08,724 --> 02:32:11,144
+Şurada değişik bir gösterim var.
+
+1053
+02:32:11,584 --> 02:32:14,724
+Kafadan girmişiz, farklı gösterime.
+
+1054
+02:32:15,184 --> 02:32:18,763
+Item cinsinden, an item, bir item tanımlayacağım.
+
+1055
+02:32:19,084 --> 02:32:23,283
+Ama ilklendirip atama yaptığım şey bir oyuncak.
+
+1056
+02:32:23,923 --> 02:32:28,783
+Bir oyuncak nesnesini oluşturup doğrudan bir item işaretçisini atayabilirim.
+
+1057
+02:32:29,004 --> 02:32:30,504
+Neden? Kalıtım ilişkisi.
+
+1058
+02:32:31,219 --> 02:32:33,539
+Yerine geçebilirlik ilişkisi.
+
+1059
+02:32:34,319 --> 02:32:36,619
+Bu soyut sınıflarda da elbette yapılabilir.
+
+1060
+02:32:36,719 --> 02:32:39,219
+Soyut ve solut sınıflar arasında da yapılabilir elbette.
+
+1061
+02:32:39,399 --> 02:32:41,599
+Çünkü alt yapı kalıtım ilişkisi.
+
+1062
+02:32:42,259 --> 02:32:43,340
+Bir oyuncak oluşturdum.
+
+1063
+02:32:43,840 --> 02:32:44,719
+Oluşturur oluşturmaz.
+
+1064
+02:32:44,799 --> 02:32:45,959
+Sonra bir item olarak atadım.
+
+1065
+02:32:46,779 --> 02:32:49,959
+Ondan sonra ekrana item'in tanımını yaz demişim mesela.
+
+1066
+02:32:51,180 --> 02:32:52,739
+Ondan sonra bir tane çocuk oluşturdum.
+
+1067
+02:32:52,819 --> 02:32:53,319
+Adı Ahmet.
+
+1068
+02:32:53,899 --> 02:32:54,479
+Beş aylık.
+
+1069
+02:32:56,595 --> 02:33:08,876
+Ama bu Işın Kılıcının yaş sınırı 10. 10 yaş toy olduğu için oyuncak orada yaş cinsinden söylüyoruz. Age limit diyor çünkü.
+
+1070
+02:33:12,036 --> 02:33:23,195
+Peki, bir Lego oyuncağı var. Bu da 4 yaş için. Bu hala Ahmet için uygun değil. Ahmet 5 ama o 5 ay. Lego ise 4 yaş.
+
+1071
+02:33:24,244 --> 02:33:33,423
+Bir de mama önlüğü oluşturuyorum. O da Clotung. O da mama önlüğü 0 ile 24 ay arasındaki çocuklar için uygun.
+
+1072
+02:33:34,463 --> 02:33:41,144
+Şimdi eğer bu bilim çevrimini unutmuşsak, Legoy'a Ahmet için uygundur diyebiliriz ama dememeli.
+
+1073
+02:33:42,423 --> 02:33:51,443
+Işın kılıcını da zaten Ahmet için hiç uygun değil. Ama mama önlüğünü de uygun demeliyiz.
+
+1074
+02:33:52,788 --> 02:34:08,688
+Bu nedenle bakıyorum işte Lego'nun, Sv2 metonunu çağırıyorum, parametro olarak Ahmet'i veriyorum. Bunun false çıkması lazım. O yüzden bu true çıkıp da ifin içerisine girmişse deneme bir hatalı yazacak. Aksi taktörü de deneme bir tamam diyecek.
+
+1075
+02:34:09,628 --> 02:34:13,847
+Sonra bana önde yine Ahmet için uygun mu? Bunun uygun olmasını bekliyorum. Uygun olmalı.
+
+1076
+02:34:14,208 --> 02:34:21,648
+O zaman işlere girip deneme 2 tamam diyecek. Ama bir hata yapmışsan, else kutlarına girip deneme 2 hatalı diyecek.
+
+1077
+02:34:23,387 --> 02:34:31,668
+Bundan sonra örnek olsun diye Kindergarten'da oluşturup çeşitli çocuklar eklemişiz. Bunları laboratuvarlarda siz yaptınız hep arkadaşlar.
+
+1078
+02:34:32,288 --> 02:34:35,387
+Hiç şimdiye girmiyorum ben bu işlere. Zaten gerideyiz.
+
+1079
+02:34:39,763 --> 02:34:43,443
+Bu kadarını yapalım. Ondan sonra bir iki bir şey söylemek için açalım.
+
+1080
+02:34:50,067 --> 02:34:50,987
+Çalıştırayım.
+
+1081
+02:34:53,247 --> 02:34:54,308
+Evet, denemeli tamam.
+
+1082
+02:34:54,507 --> 02:34:55,108
+Denemeli tamam.
+
+1083
+02:34:56,827 --> 02:34:58,768
+Deneyemeli arttırabiliriz de işte.
+
+1084
+02:34:59,128 --> 02:35:02,547
+Yani şey, Legoyu ve önlüğü denedik.
+
+1085
+02:35:02,687 --> 02:35:05,887
+Ama item'ı da deneyebilir, ışın kılıcını da deneyebilirdik falan.
+
+1086
+02:35:08,147 --> 02:35:09,487
+Durumu bu arkadaşlar.
+
+1087
+02:35:10,347 --> 02:35:12,927
+Öte yandan şöyle ufak bir ipucu vermek istiyorum.
+
+1088
+02:35:13,427 --> 02:35:26,847
+Şimdi bakın bir durum bir şeyler yaptık. Eğer öyleyse tamam aksi taktirde hatalı, öyleyse tamam aksi taktirde hatalı gibisinden keşfetli komutlar eklemek durumunda kaldık sınamamızı yapabilmek için.
+
+1089
+02:35:27,628 --> 02:35:36,907
+Şimdi öte yanda belki de şimdi burada mesela deneme 2 hatalı diyor sadece. Diyelim ki bir hata oldu. Deneme 2 hatalı. Ama neden hatalı?
+
+1090
+02:35:37,363 --> 02:35:41,743
+Ne sonuç çıkması gerekiyordu da ne sonuçla karşılaştık?
+
+1091
+02:35:42,708 --> 02:35:57,087
+Belki de bu karşılaştırmanın yapılabilmesi için uzun uzun bazı çıktıkların gözle incelenip nerede yanlış yapıldığının değerlendirebilmesi gerekmektedir.
+
+1092
+02:35:57,388 --> 02:36:05,907
+Yani biraz daha karmaşık bir örnek olsaydı böyle bu yöntemle test etmeye çalışmak bizi biraz fazla yorulacaktı.
+
+1093
+02:36:06,291 --> 02:36:10,171
+Sınama ile ilgili hemen hemen her şeyi kendimiz kodlamak zorundaydı.
+
+1094
+02:36:10,611 --> 02:36:20,711
+Halbuki unit testing denilen birim sınaması yönteminde birim dediğimiz şey programlama derindeki temel bileşenin sınanması.
+
+1095
+02:36:20,711 --> 02:36:24,931
+Burada da sınıf düzeyinde sınamaktan bahsediyoruz.
+
+1096
+02:36:26,412 --> 02:36:29,871
+Bunu kolaylaştıran çeşitli gereçler vardır arkadaşlar.
+
+1097
+02:36:32,147 --> 02:36:36,567
+Bununla ilgili örnekleri dersin son haftalarında vereceğiz.
+
+1098
+02:36:37,127 --> 02:36:56,187
+Ve büyük olasılıkla size vereceğimiz proje ödevinde de ana tasarımı size vermekle birlikte siz yazacağınız olan, yazacağınız kodu doğru çalışıp çalışmadığını sınamak, test etmek için kendi bilim testlerinizi de yazıp proje ödevinizle birlikte onlara da teslim etmenizi isteyeceğiz.
+
+1099
+02:36:56,467 --> 02:37:00,147
+Büyük olasılıkla Mehmet Hoca'yla konuştum, o kere de Ahmet Hoca'yla da konuştum.
+
+1100
+02:37:00,147 --> 02:37:11,007
+O da büyük olasılıkta okey der. Proje eleminin ayrıntılarını da belirleyince içerisinde unit testing de olacak konusunu şimdiden çıtlatmak istiyorum size.
+
+1101
+02:37:12,020 --> 02:37:22,579
+Onun dışında buradaki diğer bütün her şey, işte yuvaya kaç çocuk ekleniyor, aynı çocuk bir daha eklenmemelidir, kapasitesi dolmuşsa ekleme yapılmamalıdır gibi işler.
+
+1102
+02:37:22,900 --> 02:37:28,740
+Ki keza bunların benzerini araba ve galeri örneğinde de yaptık, laboratuarlarda da yaptık.
+
+1103
+02:37:29,139 --> 02:37:34,619
+O yüzden bu kısmın kod açıklamasını anlatmak istemiyorum.
+
+1104
+02:37:34,619 --> 02:37:38,979
+Sürü başkama çalışan kullanırım ya da ders bitiriz belki.
+
+1105
+02:37:40,020 --> 02:37:49,700
+Önce sizlerin bu soyut sınıflar ve soyut metotlar, bunların tanımlanması, amacı vs. gibi konularda sorularınız varsa lütfen sorun.
+
+1106
+02:37:50,639 --> 02:37:53,020
+Epey vaktiniz var. Rahat rahat onları konuşalım.
+
+1107
+02:38:11,316 --> 02:38:14,656
+Soru düşünürken, ben şöyle bir ne var mı yok diye bakıyorum ondan sonra.
+
+1108
+02:38:15,396 --> 02:38:19,596
+İnterfes, dersin sonu gelmiş, yeni kavrama girmek istemem bu arada.
+
+1109
+02:38:22,716 --> 02:38:25,515
+Onu haftanın başında yaparız, sonraki haftanın.
+
+1110
+02:38:26,316 --> 02:38:29,476
+Ondan sonra onun da önlemi yapar, elimden gideriz.
+
+1111
+02:38:30,256 --> 02:38:35,855
+Ya da şu an, yoksa elimden anlatsam, bir out of order yapayım ya, boş ver.
+
+1112
+02:38:41,108 --> 02:38:42,747
+Peki, ilerlememize bakalım.
+
+1113
+02:38:43,028 --> 02:38:43,847
+Ne aşamadayız?
+
+1114
+02:38:45,108 --> 02:38:46,808
+Orad, Orad, bunun hepsini yaptık.
+
+1115
+02:38:46,808 --> 02:38:47,067
+Tamam.
+
+1116
+02:38:47,648 --> 02:38:52,688
+Şimdi, eh, önümüzdeki hafta biraz daha şanslısınız arkadaşlar.
+
+1117
+02:38:53,347 --> 02:38:59,227
+Şimdi hem bu konuların uygulamasını yaptınız, hem de bugün dersini yaptınız.
+
+1118
+02:38:59,668 --> 02:39:03,548
+Haftaki labda inşallah bunu size kifte dikiş olarak.
+
+1119
+02:39:04,048 --> 02:39:13,268
+Yardımcı olacak inşallah. Sonra da vize konuları gelecek. Önce soru varsa soy tıslatılar falan soru alalım arkadaşlar.
+
+1120
+02:39:19,700 --> 02:39:30,540
+Hocam, soyut sınıfları kullanmadan da her türlü işlemi gerçekleştirebiliriz değil mi? Yani anladığım kadarıyla bu soyut sınıflarının amacı birazcık daha netleştirmek bu kalıtım olayını.
+
+1121
+02:39:31,219 --> 02:39:53,939
+Evet, soy sınıfların bir amacı kalıtımda alt sınıflara bir temel oluşturmak. Yoksa bu işi gerçekten de şey olmadan da bu item afsak yapmadan da kodlayabilirdik. Ama şimdi farkını görelim. Şöyle göstereyim işte. Şimdi 6'yı 6B olarak bir kopyala yapayım.
+
+1122
+02:39:58,227 --> 02:40:24,247
+Soyut sınıfı yerine ne yapardık soyutluğu kaldırmak için? Onu bir konuşalım. Bir kere madem bu item, ha bu arada şunu da göstermeyi unutmuş olmayayım. Şuradaki main'de mesela diyelim ki item none eşitir new item. Şimdi item'ın constructörüne ne vermiştim? Barcode description. Tamam. Eksi de string.
+
+1123
+02:40:24,884 --> 02:40:30,463
+Bu birinci parametre, bu ikinci parametre.
+
+1124
+02:40:30,844 --> 02:40:36,203
+Bak, tabii dedim. Hayır kardeşim, böyle bir şey yapamazsın diyor. Soyut sınıftan nesne oluşturulamaz.
+
+1125
+02:40:36,623 --> 02:40:40,963
+Ama toy oluşturup, somut sınıftan bir nesne oluşturup soyut işaretiği aktarabiliyordum.
+
+1126
+02:40:40,963 --> 02:40:51,884
+Şimdi gelelim, şu işte şeyi soyut sınıftan kurtulmak istiyorsak, soyut bilmiyorsak ya da diyelim ki biliyorsak soyut sınıfı kullanmalıyız.
+
+1127
+02:40:52,884 --> 02:40:53,884
+Böyle bir şey yapabilirdik.
+
+1128
+02:40:54,344 --> 02:40:55,103
+Bu menu değil.
+
+1129
+02:40:56,523 --> 02:40:57,164
+Item.
+
+1130
+02:40:58,203 --> 02:41:01,004
+Şimdi tamam bu item abstract değil, normal sınıf.
+
+1131
+02:41:01,103 --> 02:41:01,203
+Peki.
+
+1132
+02:41:01,683 --> 02:41:07,763
+Abi şimdi o zaman bu is suitable metodunu bir şekilde ya kodlamamız gerekiyor, abstract kesmemiz gerekiyor, tamam.
+
+1133
+02:41:08,363 --> 02:41:11,144
+Buna bir kod yazmamız gerekiyor şimdi ya da gövde yazmamız gerekiyor.
+
+1134
+02:41:11,844 --> 02:41:13,484
+Belki şöyle yapıp bırakabilirdik.
+
+1135
+02:41:14,868 --> 02:41:25,148
+Ama bakın, bunun da bir return type'ı da var. Return type olmasaydı, void olsaydı bile, aç parentesi, kafa parentesi, böyle boş gövde bir metot tanımlamak doğru bir davranış değil.
+
+1136
+02:41:25,708 --> 02:41:38,727
+Kardeşim ne bu? Bir şey yapmayan bir metot. Ne işe yarıyor? Hiç. Eee? Yani sadece derleme hatasından kurtarıyor bizi. O zaman acaba biz tasarımımız doğru mu yaptık? Bu konuda bir işkirlenmemiz gerekmektedir.
+
+1137
+02:41:40,884 --> 02:41:44,724
+İyi, kanarlıyım, inatçı kurtulacağım bu aslaktan.
+
+1138
+02:41:46,024 --> 02:41:47,623
+Return, true dedim.
+
+1139
+02:41:48,263 --> 02:41:50,864
+Değerlemeden de kurtardım. Peki, çok güzel.
+
+1140
+02:41:51,963 --> 02:42:01,123
+Ama bu sefer, yani şu toyda ve clothingde bu distributable metotların kodlamayı kesinlikle unutmamalıyım.
+
+1141
+02:42:01,943 --> 02:42:02,884
+Kodlamazsam...
+
+1142
+02:42:03,028 --> 02:42:06,927
+True diyecek. Neyin şeyde, oyuncakta.
+
+1143
+02:42:07,268 --> 02:42:13,587
+Bir sürü YouTube'u kodlamazsam, çünkü üst sınıfta, bu item sınıfında bir gövde vermişim buna.
+
+1144
+02:42:14,167 --> 02:42:15,247
+Kafadan True'u döndürüyor.
+
+1145
+02:42:15,747 --> 02:42:18,708
+Burada 10 yaşındaki çocuk için olan uygun bir şeyi bile,
+
+1146
+02:42:18,988 --> 02:42:22,747
+bir sürü YouTube'u metodunu burada orada etmeyi unutursam, bana True'u döndürecek.
+
+1147
+02:42:23,188 --> 02:42:24,808
+Allah korusun çocuğa bir şey olacak.
+
+1148
+02:42:25,780 --> 02:42:34,520
+Bakın, ne kadar nerelere gidebiliyor, can ve mark haydına kadar bile gidebiliyor bir tasarım hatası diyelim ki. Unutmamalıyız.
+
+1149
+02:42:34,863 --> 02:42:58,263
+Bakın az önce afsak olan halinde o gövdeyi tanımlamazsak bize diyecek ki kardeşim ya bunu bu sınıfı da soyut yap, bu toyu da sınıf yap, böyle de bu toyu da toy sınıfını, oyuncak sınıfını da soyut yap, böyle de işte bir hatalı sonuçlar üretebilecek bir oyuncak nesnisi oluşturamazsın böylece.
+
+1150
+02:43:02,863 --> 02:43:03,703
+Doldu.
+
+1151
+02:43:04,523 --> 02:43:05,383
+Diyor bize.
+
+1152
+02:43:06,463 --> 02:43:09,804
+Ki barca derdeme hatalarının mealiyle.
+
+1153
+02:43:10,123 --> 02:43:10,763
+Böyle yaptık.
+
+1154
+02:43:10,903 --> 02:43:11,343
+Yine oldu.
+
+1155
+02:43:11,543 --> 02:43:12,223
+Bir problem yok.
+
+1156
+02:43:12,603 --> 02:43:15,283
+Meynmetun'u çağırdığımda yine çalışırız.
+
+1157
+02:43:15,383 --> 02:43:16,923
+Aynı sonuçla veririz.
+
+1158
+02:43:18,743 --> 02:43:19,963
+Derdeme hatam da yok.
+
+1159
+02:43:20,243 --> 02:43:21,523
+Ondan sonra cemaat.
+
+1160
+02:43:21,623 --> 02:43:22,503
+Denemelerde tamam.
+
+1161
+02:43:23,379 --> 02:43:49,719
+Olay bu. Biraz daha gerçek dünya probleminin kavramlarını ve ilişkilerini koda daha doğru biçimde yansıtmamıza yarayabilecek araçlar bunlar. Öyle söyleyeyim. Böylece örnek üstünden de ne var ne yok tartışmış olabilir. Teşekkür ederim soru için. Başka sorusu olan arkadaşım bir şey değil. Ne demek ki? Buyurun başka.
+
+1162
+02:44:10,227 --> 02:44:11,467
+Peki o zaman arkadaşlar.
+
+1163
+02:44:12,755 --> 02:44:40,335
+İki hafta sonra vizemiz var. Vizemiz programı duyurulacak ama vizeleri genelde dersin gün ve saatinde yapıyoruz bir terslik yoksa. Ha ama şimdi dersin iki gruba var. Bakın acaba çarşambaya mı konulacak, perşembeye mi konulacak bilmiyorum. O yüzden lütfen şeyleri, bölüm sayfasını takip edin sınav programı için. Duyurulan gün ve saatte yapacağız sınavı. Klasik kusur sınav olacak. Sınavda da sınav şeklimiz şu olacak.
+
+1164
+02:44:40,755 --> 02:44:55,395
+Aslında size büyük bir tasarım soruyor, sorduruyor olacağız. Bir tane UMLS sınıf çaması vereceğiz. Bu sınıf çamasında bazı gizli bilgiler de olabilir diyeceğiz. Bazı şeyleri özellikle yazmayabiliriz ama siz onların olması gerektiğini bilmelisiniz.
+
+1165
+02:45:08,755 --> 02:45:15,635
+Bazı sınıfların komple kodunu yazmanızı isteriz. Bazı sınıfların sadece belli bir metodunun kodunu yazmanızı isteriz.
+
+1166
+02:45:16,556 --> 02:45:20,895
+Ya da belli bir sınıfın, belli bir metodunun sequence diagramını çizin deriz.
+
+1167
+02:45:21,295 --> 02:45:25,675
+Veyahut da UMLN sınıfı, mesela ek olarak bir tane sequence diagram veririz.
+
+1168
+02:45:25,915 --> 02:45:30,255
+Şu sınıfın, şu metodun sequence diagramı budur. Kodlarken ona göre kodlayabiliriz.
+
+1169
+02:45:30,255 --> 02:45:36,755
+Bu şekilde bir sınav olacak artık. Zamanı gelince tekrar konuşuruz.
+
+1170
+02:45:36,755 --> 02:45:41,536
+Ama kafanızda herhangi bir sodu varsa buyurun sorun sizlere dinleyelim.
+
+1171
+02:45:54,131 --> 02:46:01,592
+Evet, pekala. Arkadaşlar, haftaya görüşmek üzere. Sağlıkla kalın, sağlıkla kalın. Şimdilik kalarsın artık.
+
+1172
+02:46:02,611 --> 02:46:04,871
+Allah kaydetmesin. Keşke yazı da kaydeseydim.
+
+1173
+02:46:06,851 --> 02:46:09,131
+Belki bu arada bir iki sıra daha geri ödüyorum ama...
+
+1174
+02:46:13,940 --> 02:46:15,739
+O zaman otomu kapanıyor arkadaşlar.
+
+1175
+02:46:16,699 --> 02:46:21,500
+Ah, sonu mu yoksa sadece iyi günler arkadaşlar. Teşekkür ederim.
+
+1176
+02:46:22,180 --> 02:46:22,760
+Görüşmek üzere.

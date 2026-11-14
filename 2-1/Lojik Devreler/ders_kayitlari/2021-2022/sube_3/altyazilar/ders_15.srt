@@ -1,0 +1,2511 @@
+1
+00:00:01,332 --> 00:00:02,552
+Yerdecik'ın altyazı.
+
+2
+00:02:08,500 --> 00:02:11,659
+Merhaba arkadaşlar. Sesim geliyor mu?
+
+3
+00:02:18,740 --> 00:02:25,620
+Sesim geliyor mu arkadaşlar? Sesimi açayım. Bir elinizi açabilirsiniz isterseniz mikroponunuzu.
+
+4
+00:02:34,003 --> 00:02:35,403
+Evet, tamamdır, geliyormuş.
+
+5
+00:02:42,900 --> 00:02:46,599
+[öğrenci] bir mikrofondan ses ver bakayım, sizlerin sesi geliyor mu?
+
+6
+00:02:47,099 --> 00:02:48,140
+Duyuyor musunuz hocam?
+
+7
+00:02:48,460 --> 00:02:50,219
+Tamamdır, hallolmuştur.
+
+8
+00:03:00,180 --> 00:03:18,000
+Şimdi birazcık bekleyelim arkadaşlar. Şöyle 3-4 dakika daha bekleyelim. Ondan sonra saat 2-3-4 gece gibi dersimize başlarız. Şu anda 7 kişi gelmiş durumda. Herhalde bağlantıyla alakalı bir sıkıntı olabilir. Birazcık bekleyeceğiz arkadaşlar.
+
+9
+00:07:47,507 --> 00:08:07,807
+Merhabalar arkadaşlar. Sesim geliyor zannedersem. Bir 4-5 dakika daha bekledik arkadaşlarımızı. Katılımda bir sorun var mıydı? Şu anda 12 kişi gözüküyor katılan dersi. Sisteme bağlanmakla alakalı bir sıkıntı yaşandı mı acaba?
+
+10
+00:08:11,860 --> 00:08:14,120
+Yok hocam, bir sıkıntı yaşanmadı.
+
+11
+00:08:14,720 --> 00:08:18,120
+Tamam, o zaman biz başlayalım dersimize arkadaşlar.
+
+12
+00:08:19,900 --> 00:08:26,100
+Şimdi, bu haftaki konumuz arkadaşlar, lojik fonksiyonların indirgenmesi konusu.
+
+13
+00:08:27,040 --> 00:08:31,280
+Bu konu kapsamında, 3 tane değişik yöntemden bahsedeceğiz.
+
+14
+00:08:31,280 --> 00:08:36,560
+İlki, görüşe dayalı indirgeme.
+
+15
+00:08:39,187 --> 00:08:43,727
+Öncelikle tabii şeyden de bahsetmek lazım. Lojik fonksiyonların indirgenmesi ne demek?
+
+16
+00:08:44,467 --> 00:08:55,908
+Biliyorsunuz biz lojik fonksiyonları yazarken şöyle, içerisinde değişkenleri, yani bizim binary değişkenlerimizden bahsetmiştik.
+
+17
+00:08:55,908 --> 00:09:01,288
+Bunlarla çeşitli fonksiyonlar yazmıştık. Bu şekilde.
+
+18
+00:09:04,275 --> 00:09:18,075
+Gibi fonksiyonlara, lojik fonksiyonlar demiştik. Bunlar A, B, C, D değişkenlerin alacağı sıfır ve bir hallerine göre çıkışı oluşturuyordu.
+
+19
+00:09:18,075 --> 00:09:26,175
+Tabii ki burada kaç tane değişik durum söz konusuydu? 2 üzeri N, N de buradaki toplam.
+
+20
+00:09:26,740 --> 00:09:30,940
+Değişken sayısı veya değişken bit sayısı diyebiliriz.
+
+21
+00:09:30,940 --> 00:09:38,820
+Tabi burada gördüğünüz gibi arkadaşlar, şu ifadelerin her birisi lojik kapılarla gerçekleştiriliyor.
+
+22
+00:09:39,379 --> 00:09:48,980
+Dolayısıyla biz aynı şu çıktıyı veren, daha düşük değişkenle ifade edebileceğimiz fonksiyonları oluşturabilirsek,
+
+23
+00:09:50,580 --> 00:10:00,000
+Çip maliyetleri, yani kapılardan tasarruf edebileceğiz. Kapıların her biri elektrikle beslendiği için...
+
+24
+00:10:00,000 --> 00:10:07,139
+sonuçta 5 volt da olsa ne kadar az kapı kullanırsak o kadar az güç tüketiminde bulunacağız.
+
+25
+00:10:07,819 --> 00:10:17,460
+Aynı zamanda bunlar biliyorsunuz sıcaklıkta yayıyorlar. Devre üzerindeki sıcaklık oluşumunu da bir nebze engelleyebileceğiz.
+
+26
+00:10:17,460 --> 00:10:26,200
+Bunların hepsi birbirine bağlı kavramlar. Dediğim gibi 3 tane yöntem göreceğiz bu kapsamda biz.
+
+27
+00:10:26,899 --> 00:10:32,960
+Birincisi görüşe dayalı, ikincisi Karnaugh diyagramları.
+
+28
+00:10:37,043 --> 00:10:42,124
+Karnaugh diyagramları veya Karnaugh haritaları deniyor arkadaşlar.
+
+29
+00:10:42,923 --> 00:10:45,104
+Üçüncüsü de Queen-Maklowski yöntemi.
+
+30
+00:10:46,004 --> 00:10:53,524
+Maklowski yöntemi olmak üzere toplam üç tane yöntem göreceğiz arkadaşlar.
+
+31
+00:10:54,663 --> 00:10:57,783
+Şimdi bunlardan ilkiyle başlayalım.
+
+32
+00:10:58,283 --> 00:10:59,783
+İlki görüşe dayalıydı.
+
+33
+00:11:00,903 --> 00:11:04,043
+Biliyorsunuz geçen hafta biz Hamza hocamız...
+
+34
+00:11:04,672 --> 00:11:19,932
+Sizlerle ders yapmıştı. Bu arada biz dersleri paylaşacağız dönem içerisinde. Bundan sonraki haftalarda, ilk hafta tabii bazı mazretler nedeniyle geçen hafta ben yapamadım.
+
+35
+00:11:20,384 --> 00:11:30,084
+Ama bu dönemin ikinci yarısına itibaren daha çok Hamza Hoca'nın gireceği, ilk kısımlarda benim gireceğim dersler olacak arkadaşlar.
+
+36
+00:11:30,524 --> 00:11:36,704
+Bir terslik olmazsa, bundan sonraki 4-5 ders daha beraberiz. Bu benim ikinci dersim olmuş oluyor.
+
+37
+00:11:37,484 --> 00:11:43,244
+Bundan sonraki toplam 6 dersi beraber yapacağız.
+
+38
+00:11:44,211 --> 00:11:51,412
+Geçen hafta hatırlarsanız neleri görmüştük? Teoremleri görmüştük. Ondan sonra aksiyonları görmüştük.
+
+39
+00:11:51,412 --> 00:12:09,192
+Görüşe dayalı demek biraz da bunlarla alakalı bir şey. Bildiğimiz teoremlerden yararlanarak genel olarak daha az değişkenli, hızlıca yapabileceğimiz işlemleri elle indirgeme manasına geliyor.
+
+40
+00:12:09,711 --> 00:12:12,172
+Bununla alakalı bir örnek vererek geçeceğim arkadaşlar.
+
+41
+00:12:12,211 --> 00:12:37,451
+Örneğin, 4 değişkenli bir fonksiyonumuz olsun. Örneğin bu A üstü, B, C üstü, artı AD, artı BCD olsun. Şöyle değil, NOT işlemini, üzerine apostrof gibi kullanabileceğimiz gibi arkadaşlar, şöyle üzerine çizik.
+
+42
+00:12:37,940 --> 00:12:51,920
+Yaparak da değil olarak kullanabiliriz arkadaşlar. Yani bir fonksiyonu değil olarak kullanmanın iki yöntemi var. Şu şekilde ikisi de o ifadenin naklı hali şeklinde düşünebiliriz.
+
+43
+00:12:52,820 --> 00:12:59,340
+Şimdi bunu bizim bildiğimiz teoremlerden yola çıkarak ne yapabiliriz arkadaşlar öncelikli olarak?
+
+44
+00:13:00,563 --> 00:13:06,303
+Burada önce bakın B, C üstü ifadesi var şurada.
+
+45
+00:13:06,644 --> 00:13:10,144
+Önce bir ortak parantezlere almaya bir çalışalım bakalım.
+
+46
+00:13:11,223 --> 00:13:22,903
+Şöyle yaparsak B, C üstü ortak parantezinde A üstü artı D üstü ifadesi olmuş oluyor.
+
+47
+00:13:23,803 --> 00:13:27,023
+Artı AD ifadesi olmuş oluyor.
+
+48
+00:13:27,023 --> 00:13:27,663
+Peki.
+
+49
+00:13:29,107 --> 00:13:31,107
+Bir adım sonra ne yapabiliriz?
+
+50
+00:13:32,028 --> 00:13:37,407
+A üstü artı D üstü hangi ifadenin demorgun açılmış halidir?
+
+51
+00:13:38,528 --> 00:13:41,947
+AD'nin değilim. Öyle değil mi?
+
+52
+00:13:42,988 --> 00:13:46,847
+A üstü D üstü ifadesi AD üstü ifadesine eşit.
+
+53
+00:13:46,847 --> 00:13:48,847
+Yani onu şöyle yazabiliriz.
+
+54
+00:13:52,371 --> 00:13:59,071
+AD'nin değili artı AD şeklinde yazabiliriz.
+
+55
+00:14:00,631 --> 00:14:06,211
+Peki, bir sonraki işlemimiz ne olabilir? Burada Demorgan'dan yararlandı.
+
+56
+00:14:06,912 --> 00:14:07,571
+Demorgan.
+
+57
+00:14:08,951 --> 00:14:12,571
+Bir de dağılma özelliğini hatırlayalım arkadaşlar.
+
+58
+00:14:13,268 --> 00:14:23,748
+Normalde şu şekilde baktığımızda toplama yani OR işleminin de dağılma özelliği vardı hatırlarsanız.
+
+59
+00:14:24,648 --> 00:14:31,427
+A artı B çarpı A artı C şeklinde biz bunları dağıtabiliyorduk.
+
+60
+00:14:31,427 --> 00:14:39,427
+Bizim buradaki, burada gördüğünüz gibi AD'yi, şuradaki AD'yi.
+
+61
+00:14:41,076 --> 00:14:48,375
+Şöyle dağıtırsak, burada iki tane ifade var bakın. Bir tanesi BC üstü, bir tanesi AD'nin değdiği şeklinde.
+
+62
+00:14:48,375 --> 00:15:00,696
+Bu şekilde gerçekleştirirsek, aynı şuradaki dağılma özelliğinden yararlanarak, dağılma özelliği, gerçekleştirelim bakalım.
+
+63
+00:15:01,475 --> 00:15:06,536
+AD artı BC üstü, bu birinci ifade oluyor.
+
+64
+00:15:07,668 --> 00:15:16,847
+Şunu gerçekleştik. Çarpı AD artı AD'nin üstü ifadesi olmuş oluyor.
+
+65
+00:15:17,908 --> 00:15:23,768
+Şimdi şuraya baktığımızda eğer şuradaki ifadesi sıfır verirse bu tam tersi bir verecek.
+
+66
+00:15:23,768 --> 00:15:29,908
+Bir verirse burası sıfır verecek. Dolayısıyla daima bu toplam bize neyi verecek arkadaşlar?
+
+67
+00:15:32,096 --> 00:15:37,316
+Biri verecek bize. Dolayısıyla bizim sonucumuz ne hale gelmiş oluyor arkadaşlar?
+
+68
+00:15:38,216 --> 00:15:43,896
+AD artı BC üstü haline gelmiş olacak. Yalın bir ifade edelim.
+
+69
+00:15:43,995 --> 00:15:55,316
+Bakın, şurada 3 girişli bir AND işlemi, 2 girişli bir AND işlemi, 3 girişli bir AND işlemi vardı.
+
+70
+00:15:56,036 --> 00:15:59,115
+Yani toplam 3 tane kapı kullanacaktık.
+
+71
+00:15:59,423 --> 00:16:12,184
+Tabi bunların haricinde, şunları da hesaba katmanız lazım. Şuradaki her bir NOT işlemi için aynı zamanda çık kullanmanız veya bir NOT kapısı kullanmanız gerekecek.
+
+72
+00:16:12,184 --> 00:16:21,064
+Oysa şuradaki ifadeye baktığımızda, şurada iki girişli bir, iki girişli bir PENT kapımız.
+
+73
+00:16:21,620 --> 00:16:40,620
+Tabi bir de şunların üçünün birleştirilmesiyle ne vardı? Üç girişli bir OR'da kullanılacaktı. Şurada bir iki girişli, bulduğumuz ifade indirgenmiş ifadesi iki girişli bir E. Ondan sonra C'nin değilini alacağımız bir işlem.
+
+74
+00:16:41,524 --> 00:16:54,244
+B girişini yapıp daha sonra şu ikisini beraberce AND diyeceğimiz iki girişli bir OR'la beraber devreyi tamamlamış olduk.
+
+75
+00:17:09,203 --> 00:17:34,483
+Devre elemanı yapmaktan daha pahalı. Bir de bunu da hesaba katarsak, bakın burada 3 tane AND kullanıyorduk, pardon 2 tane 3 girişli, 2 tane 3 girişli AND, 1 tane 2 girişli AND yapıp bir de 3 girişli bir OR kullanıyorduk.
+
+76
+00:17:35,604 --> 00:17:58,584
+Burada ise iki girişli, iki tane AND kapısı kullanıyoruz. Bir NOT kapısı kullanıyoruz. Tabi buradaki NOT'ları saymıyorum. Bir tane de iki girişli, bir tane iki girişli bir OR kapısı kullanıyoruz.
+
+77
+00:17:59,155 --> 00:18:06,995
+Bir tane NAT kapısı kullanıyoruz. Burada bakın bir, iki, üç, dört tane NAT işlemi yapmamız gerekiyor.
+
+78
+00:18:07,076 --> 00:18:13,015
+Bakın maliyet açısından oldukça avantajlı duruma geçmiş olduk.
+
+79
+00:18:14,036 --> 00:18:21,175
+Amacımız indirgeme deyince ifadenin en basit haliyle sonucu üretmesi.
+
+80
+00:18:23,059 --> 00:18:31,400
+ABCD için, ABCD 2 üzeri N'den 2 üzeri 4, 16 tane değişik ifadeyle oluşturdu.
+
+81
+00:18:31,400 --> 00:18:34,400
+Sonuçların sonuçlarla...
+
+82
+00:18:34,675 --> 00:18:55,235
+Şunun sonuçları şöyle yapalım. Birbirinin aynı çıkacaktır. İndirgenmiş ifadelerde indirgeme yaptığımızda fonksiyonun belirli girişler altında belli çıkışlar, aynı çıkışları elde etmemiz gerekiyor. Birbirinden kesinlikle farklılaşmıyorlar arkadaşlar.
+
+83
+00:18:57,299 --> 00:19:02,360
+Burada bir sorumuz var mı arkadaşlar? Bu konuyla alakalı bir sorumuz var mı?
+
+84
+00:19:05,940 --> 00:19:18,840
+Mesela, 3 girişli bir fx, y, z, hem de size şöyle, geçen hafta görmüş olduğunuz minterm ifadelerle de bir işlem yapalım.
+
+85
+00:19:19,019 --> 00:19:23,000
+Mesela böyle bir fonksiyon verdiler. Bu fonksiyonu açık açık nasıl yazarız arkadaşlar?
+
+86
+00:19:23,840 --> 00:19:26,380
+Minterm sıfı artı, bu değil mi?
+
+87
+00:19:27,092 --> 00:19:33,451
+çarpımların toplamı şeklindeki ifade M0'lar mintermler çarpımlar şeklinde ifade ediyoruz.
+
+88
+00:19:34,092 --> 00:19:48,831
+Minterm 0 artı minterm 4 demekti bu. Bunları yazacak olursak, XYZ her birinin üstü artı XYZ.
+
+89
+00:19:48,831 --> 00:19:52,291
+Şöyle üstleri şeklinde yazabiliyordum.
+
+90
+00:19:52,723 --> 00:19:55,344
+Burada ilk yapacağımız işlem nedir arkadaşlar?
+
+91
+00:19:56,344 --> 00:19:59,264
+Y üstü, Z üstü parantezini alma.
+
+92
+00:20:00,043 --> 00:20:08,223
+Burada da X üstü artı X kalır ki buradan da şurası kesinlikle bir üretecektir.
+
+93
+00:20:08,744 --> 00:20:15,563
+İfademiz en basit halinde Y üstü, Z üstü haline indirgenmiş oluyor arkadaşlar.
+
+94
+00:20:18,003 --> 00:20:31,763
+Görüşe dayalı da tabii ki bizim kalem kabiliyetimizin elimizdeki değerleri bildiğimiz teoremlerle ne kadar sadeleştirebildiğimizi görebilmemiz, yani görüşe dayalı derken onu kastediyor arkadaşlar.
+
+95
+00:20:33,003 --> 00:20:40,543
+Şimdiki başımız, burada sorunuz yoksa Karnaugh diyagramları veya Karnaugh neplerine geçeceğim.
+
+96
+00:20:41,683 --> 00:20:44,864
+Bu da bizim ikinci indirgeme yöntemimiz.
+
+97
+00:20:46,067 --> 00:20:56,427
+Karnaugh diyagramları veya Karnaugh haritaları şeklinde söyleyebiliriz.
+
+98
+00:20:57,288 --> 00:21:07,748
+Şimdi aslında ilk defa bu yöntem Veys tarafından 1952 yılında önerilmiş.
+
+99
+00:21:07,927 --> 00:21:12,427
+Daha sonra en son halinde 1953 yılında Karnaugh.
+
+100
+00:21:14,099 --> 00:21:26,500
+Formülize etmiş deyince. Burada temelde doğruluk tablosunun uzamsal bir madresin üzerine yatırılması söz konusu.
+
+101
+00:21:27,359 --> 00:21:35,919
+Örneğin, iki tane değişkenimiz var diyelim. X, Y, bir de bir fonksiyon çıkışı oluşturuyorlar bunlar diyelim.
+
+102
+00:21:35,919 --> 00:21:39,980
+0-0, 0-1, 1-0, 1-1 şeklinde.
+
+103
+00:21:40,596 --> 00:21:58,396
+Burası M0, M1, M2, M3 şeklinde. Bunları basitçe değişkenleri sırasıyla, şurasına X, şurasına Y diyelim, alabileceği değerlere göre bir matrisin üzerine yatırıyoruz.
+
+104
+00:21:58,695 --> 00:22:03,695
+0 ve 1 değeri alabilir X, Y de aynı şekilde 0 ve 1 değeri alabilir.
+
+105
+00:22:04,468 --> 00:22:23,068
+Sırasıyla X'in 0, Y'nin 0 olduğu yer M0'ı verecek. X'in 0, Y'nin 1 olduğu yer yani burası M1'i verecek. Aynı şekilde M2 ikisinin de 1 aldığı zaman şuradaki M3'ü yerleştiriyoruz.
+
+106
+00:22:23,068 --> 00:22:30,968
+Tabi değişken sayısı ne kadar büyük olursa bizim buradaki tablomuz da büyümeye başlıyor.
+
+107
+00:22:31,296 --> 00:22:41,476
+Örneğin, X, Y, Z değişkenimiz olsa, bizim X, Y, Z değişkenimizden arkadaşlar, kaç tane değişik çıktı oluşur?
+
+108
+00:22:42,135 --> 00:22:47,016
+Toplam 8 tane. 8 tane değer oluşur.
+
+109
+00:22:47,016 --> 00:22:55,516
+0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0 ve 1, 1, 1 şeklinde.
+
+110
+00:22:55,615 --> 00:22:57,336
+Dolayısıyla M0'dan.
+
+111
+00:22:58,099 --> 00:23:22,259
+M, 7'ye kadar toplam 8 tane değişken oluşuyor. Peki, bu durumda ne yapacağız? Burada 2 değiş, 4 tane durum varsa bir kare oluşuyordu. 2 çarpı 2. Fakat burada, X'i bir tarafa yazıp, şöyle, buradan iki türlü matris oluşturabiliriz. Bir tanesi şu şekilde olabilir.
+
+112
+00:23:23,412 --> 00:23:38,532
+Baktığımızda, bir tarafta tek değişken kalmak zorunda. X, Y, Z şeklinde. 0, 1. Diğer değişkenler ise, bakın 8 tane göz var. Sırasıyla buradaki gözler dolmuş olacak.
+
+113
+00:23:40,012 --> 00:23:47,231
+Şu tarafta ise, iki tane üst tarafta ise, yani sütunlarda ise, Y ve Z değişkenleri olmak zorunda.
+
+114
+00:23:47,700 --> 00:23:53,759
+Dolayısıyla X'e 0, 1 yazarken Y ve Z'nin alabileceği kaç tane değişik durum var? 4 tane durum.
+
+115
+00:23:53,759 --> 00:24:04,599
+İşte bu 4 tane değişik durum aslında her bir hususunu belirtiyor. 0, 0, 0, 1. Ondan sonra 1, 0 gelmesini bekleriz.
+
+116
+00:24:05,159 --> 00:24:13,840
+Ama öyle olmuyor arkadaşlar. Bizim Karnaugh haritalarında dikkat edeceğimiz bir hususta arka arkaya hücreleri
+
+117
+00:24:14,612 --> 00:24:19,032
+sütunları değerlerini verirken Heming Distance'ın
+
+118
+00:24:19,032 --> 00:24:25,652
+en fazla, en fazla bir olması lazım.
+
+119
+00:24:27,072 --> 00:24:29,871
+Ne demekti Heming Distance hatırlarsanız arkadaşlar?
+
+120
+00:24:31,052 --> 00:24:36,371
+A ve mesela 0, 0, 1, 0, 0, 0.
+
+121
+00:24:39,955 --> 00:24:53,155
+Bit dizisi arasındaki farklı bitlerin sayısı kadar. Örneğin burada 0-0'lar aynı, 0-0'lar aynı. 1 ve 0 birbirinden farklı. Bunun Heming Distance'ı 1 oluyor.
+
+122
+00:24:53,155 --> 00:25:03,355
+Mesela 1-0-1 olsaydı, bir de 0-1-1 olsaydı, bakıyoruz karşılaştırırken.
+
+123
+00:25:04,243 --> 00:25:17,344
+Şunlar aynı, şunlar ise birbirlerinden farklı. Dolayısıyla bunun Heming Distance'ı 2 olmuş oluyor. Yani birbirinden farklı dijit sayısı bize Heming Distance'ını veriyor.
+
+124
+00:25:18,423 --> 00:25:29,223
+Burada da arkadaşlar, bakın 0-0 ile 0-1 arasında, 0-0 ile 0-1 arasında Heming Distance'ı kaç? Heming Distance'ı 1. Sadece şunlar değişik.
+
+125
+00:25:29,779 --> 00:25:38,019
+Dolayısıyla bunları yazarken, dikkat edin şuraya, 0-1'den sonra, şayet 0-1'den sonra, 1-0 gelseydi,
+
+126
+00:25:38,400 --> 00:26:01,780
+Bakın, iki dijitle birbirinden farklı. Heming distance 2 olacaktır. Bunu önlemek için şuraya 1-1 koyuyoruz. Dolayısıyla 0-1 ile 1-1 arasındaki Heming distance kaç? Bunlar aynı. Bunlar farklı. Heming distance 1 olmuş oluyor. Daha sonra 1-0'ı yazıyoruz arkadaşlar.
+
+127
+00:26:04,243 --> 00:26:11,403
+Dolayısıyla burada yerleştirme yaparken örneğin X'in 0 olduğu satır şurası olmuş oluyor.
+
+128
+00:26:12,403 --> 00:26:15,703
+X'in 1 olmuş olduğu satır ise buraya yazılmış oluyor.
+
+129
+00:26:15,963 --> 00:26:22,723
+Dolayısıyla bunları sırasıyla delil edilirken örneğin 0, 0 için M0'ı yazabiliyoruz buraya.
+
+130
+00:26:23,604 --> 00:26:28,003
+Daha sonra 1 için M1'i yani X'in 0.
+
+131
+00:26:29,779 --> 00:26:53,199
+YZ'nin 0, 1 olduğu yer M1. Ondan sonra bir atlama gerçekleşiyor. 0, 1, 0. X'in 0 ve YZ'nin 1, 0 olduğu yer şurası M2. Daha sonra 0, 1, 1. M3 buraya geliyor. Dikkat edin. Burada M2.
+
+132
+00:26:54,228 --> 00:26:59,348
+Bir farklılık oluşturdu. Yani 0-1 giderken burada Heming Distance'dan dolayı buraya yazdık onu.
+
+133
+00:27:00,068 --> 00:27:10,028
+Aynı şekilde gidecek olursak burada M4, M5, M6 atlıyor. M6, M7.
+
+134
+00:27:10,628 --> 00:27:16,068
+Bakın M7'ye bakacak olursak X'in, Y'nin ve Z'nin bir olduğu kısım aslında.
+
+135
+00:27:17,508 --> 00:27:18,948
+Aynı şekilde.
+
+136
+00:27:19,796 --> 00:27:27,776
+Diyebilirsiniz ki, bu tabloyu illa böyle mi yapmak zorundayız? Hayır. Bu tabloyu farklı bir şekilde de yapabilirsiniz.
+
+137
+00:27:28,356 --> 00:27:41,796
+Örneğin, X ve Y'yi buraya yazıp, Z'yi buraya yazarsınız. Dolayısıyla, şuna Z01 verirsiniz. X'ye 00, 01, 10.
+
+138
+00:27:42,804 --> 00:27:52,124
+Pardon, 1, 1 ve 1, 0 şeklinde getirsiniz. Fakat bunları doğru yere yerleştirmeniz lazım. X'in 0, Y, Z'nin 0 olduğu yer neresi M0.
+
+139
+00:27:53,484 --> 00:28:06,984
+X'in 0, Y'nin 0 olduğu, Z'nin ise 1 olduğu yere M1 geliyor. Bu şekilde. X, Y'nin 0, 1 olduğu yer şu satır olmuş oluyor.
+
+140
+00:28:07,667 --> 00:28:30,667
+0 olduğu zaman M2, şurası M3. X, Y'nin bir 0 olduğu yerler M4 ve M5'i verecektir bize. Dolayısıyla burada bir atlama var bakın aynı şekilde. M4, M5. Daha sonra M6 ve M7'yi yerleştiriyoruz. Bu tamamıyla...
+
+141
+00:28:31,539 --> 00:28:37,639
+X, Y, Z'nin doğru değerleri arasında doğru çıktıların yerleştirilmesi gerekiyor.
+
+142
+00:28:38,639 --> 00:28:52,539
+Bir keza, eğer 4 girişli bir tablo, eğer fonksiyonumuz 4 girişli olsaydı, tabii ki şöyle X, Y, Z, W şeklinde olsaydı, X, Y'yi...
+
+143
+00:28:53,395 --> 00:29:01,515
+Ne yapacaktık arkadaşlar? Şöyle, X, Y'yi bir tarafa, Z, W'yu bir tarafa yazabilirdik.
+
+144
+00:29:02,076 --> 00:29:07,596
+Burada da aynı şekilde, bu sefer 4'e 4 bir matriz olmuş oluyor.
+
+145
+00:29:08,695 --> 00:29:11,955
+Bunun doğruluk tablosunu sırasıyla yerleştirmemiz gerekiyor.
+
+146
+00:29:11,955 --> 00:29:17,076
+Burada da aynı şekilde 0, 0, 0, 1, 1, 1, 0.
+
+147
+00:29:17,615 --> 00:29:20,655
+0, 0, 0, 1, 1, 1, 0.
+
+148
+00:29:21,236 --> 00:29:26,916
+Yani şuradaki şeylere, düzensizliğe bir dikkat etmemiz gerekir.
+
+149
+00:29:27,016 --> 00:29:30,976
+Peki, bu tabloyu illa böyle mi yapabiliriz? Hayır.
+
+150
+00:29:32,616 --> 00:29:36,636
+Normalde bunu istediğimiz gibi gerçekleştirebiliriz.
+
+151
+00:29:37,436 --> 00:29:41,796
+Bu sefer ZW'yu buraya yazıp, XE'yi de buraya yazabiliriz.
+
+152
+00:29:41,796 --> 00:29:45,856
+Tabi ne olacak? Buradaki gözlerdeki yerler değişmiş olacak.
+
+153
+00:29:47,155 --> 00:29:58,955
+Burada gözlerdeki yerler değişiyor. Ona göre doğru yere doğru çıktığı yerleştirmemiz gerekiyor. 0-1-1-1-1-0.
+
+154
+00:30:00,955 --> 00:30:09,235
+Evet, şimdi bunları, bu konu anlaşıldı mı? Karnomeplerin gerçekleştirmesi kısmı anlaşıldı mı?
+
+155
+00:30:09,235 --> 00:30:11,735
+[öğrenci], [öğrenci].
+
+156
+00:30:16,019 --> 00:30:20,680
+[öğrenci], mikrofonunu açabilirsin.
+
+157
+00:30:24,788 --> 00:30:25,888
+[öğrenci]
+
+158
+00:30:34,291 --> 00:30:37,551
+[öğrenci], mikrofonunu bir çalıştır.
+
+159
+00:30:43,220 --> 00:30:46,300
+Senin sesini alamadık gibi gözüküyor.
+
+160
+00:30:47,360 --> 00:30:48,019
+[öğrenci]?
+
+161
+00:30:52,500 --> 00:30:54,660
+Evet, [öğrenci], sesim gelmedi. [öğrenci].
+
+162
+00:30:55,319 --> 00:30:56,319
+Sesim geliyor mu hocam?
+
+163
+00:30:56,720 --> 00:30:57,299
+Geliyor, evet.
+
+164
+00:31:02,195 --> 00:31:04,875
+[öğrenci] geliyor. Konu anlaşıldı mı?
+
+165
+00:31:05,955 --> 00:31:13,975
+Evet hocam. Ama ben şey soracaktım hocam. Bu 0-1'den sonra hani 1-1 yazdık, bir 0'a sona yazdık ya.
+
+166
+00:31:14,475 --> 00:31:14,755
+Evet.
+
+167
+00:31:15,415 --> 00:31:20,295
+Onun hani devreyi oluştururken ki bir amacı mı var yoksa?
+
+168
+00:31:20,575 --> 00:31:21,155
+Yok hayır hayır.
+
+169
+00:31:21,779 --> 00:31:38,500
+Tabloda, tabloda birbirinin altı, yani Heming Distance'ları birbirinden, şimdi biraz sonra görmeye başlayacağız. O zaman anlayacaksınız nedenini. Komşuluk kavramıyla indirgemede yararlanacağımız için böyle bir yola gittik.
+
+170
+00:31:38,500 --> 00:31:49,000
+Şimdi bununla alakalı Karnaugh yöntemlerinde komşuluk kavramlarına girelim. Arkadaşlar, soruna cevap olacaktır bu.
+
+171
+00:31:49,748 --> 00:31:52,048
+Akınlaştıralım.
+
+172
+00:31:52,827 --> 00:31:52,928
+Evet.
+
+173
+00:31:54,248 --> 00:31:58,748
+Karnaugh diyagramlarında...
+
+174
+00:32:02,548 --> 00:32:04,167
+Komşuluk kavramı
+
+175
+00:32:07,827 --> 00:32:09,948
+Şimdiki başlığımız da bu arkadaşlar.
+
+176
+00:32:11,307 --> 00:32:17,847
+Şimdi doğruluk tablosundan şunların içerisini yerleştirmeyi biliyoruz artık.
+
+177
+00:32:18,420 --> 00:32:38,320
+Örneğin burada 1, 0, 1, 1, 0 değerleri olacak. Bunları doğru yerlere yerleştik. Örneğin 0, 0, 0, 0'da 1 değerimiz varsa bunu buraya yazdık. 0, 0, 0, 1 değerimiz varsa W'nun 1 aldığı yer neresi sadece? Burası. Oraya 0'ımızı yazdık gibi sırasıyla dolduruyoruz.
+
+178
+00:32:45,140 --> 00:32:52,900
+Bir komşuluk kavramı var. Onu şöyle yazabiliriz. Komşuluk kavramı diyelim burada.
+
+179
+00:32:57,556 --> 00:33:11,456
+Diyelim ki, en değişkenli bir fonksiyonda, en değişkenli bir fonksiyonda, yani şuradaki değişken sayımız olmuş oluyor.
+
+180
+00:33:31,124 --> 00:33:50,283
+Kısalıp terimin, kısalıp, N-K çarpanlı, bir tek terime dönüşürse, bir tek terime dönüşürse,
+
+181
+00:33:53,844 --> 00:34:07,723
+Bu, iki üzeri k tane terim, k'ıncı mertebeden komşudur deniyor arkadaşlar.
+
+182
+00:34:12,019 --> 00:34:28,420
+Şimdi bu bir komşuluktan başlayalım arkadaşlar. Teorem 1 diyelim. İki terimin birinci dereceden, birinci dereceden,
+
+183
+00:34:31,699 --> 00:34:35,859
+Birinci dereceden komşuluk kavramına bakalım.
+
+184
+00:34:37,859 --> 00:34:52,739
+Şimdi bunların matriz alanı üzerinde, şuraya alan diyelim, şurası alan isimlerası, alan üzerinde birbirine yakın, birbirine bir uzaklıktaki gözlerde olması gerekiyor.
+
+185
+00:34:52,739 --> 00:34:59,039
+Yani şimdi birazdan göstereceğim. Örneğin hep bu örnekleri dörde dört.
+
+186
+00:35:00,019 --> 00:35:16,079
+4, 2, 4 değişkenli matrisler üzerinde anlatalım. Şöyle örneğin A, B, C, D. Yani fonksiyonumuz 4 değişkenli. Yani enimiz 4 olsun.
+
+187
+00:35:27,347 --> 00:35:38,327
+K burada, K 1'i anlatıyoruz. Dolayısıyla 2 tane terim, 2 üzeri K 2 olmalı. Eğer biz K 1. dereceden komşuluğu anlatıyorsak.
+
+188
+00:35:38,988 --> 00:35:48,887
+2 tane terim birleşip, yani 2 tane yan yana göz birleşip, ne yapacak? N-K çarpanlı bir tek terime dönüşecek şurada.
+
+189
+00:35:54,356 --> 00:36:11,695
+3 terimli bir hale dönüşecek. Bakalım nasıl yapabiliriz bunu? Şöyle, normalde biz bunları fonksiyonun içerisinde yazmaya çalışsak, teker teker fonksiyon sadece buralarda bir verdiğini düşünün.
+
+190
+00:36:12,692 --> 00:36:20,891
+Ne yazmamız lazım şuralara? 00, 01, 11, 10, 00, 01, 11, 10.
+
+191
+00:36:20,891 --> 00:36:30,952
+Bir fonksiyonun içerisinde bunlar, eğer bir veriyorlarsa şayet, bunları sırasıyla nasıl yazabiliriz şuraları?
+
+192
+00:36:31,072 --> 00:36:32,012
+Önce şunu yazalım.
+
+193
+00:36:33,332 --> 00:36:38,572
+A üstü, B, bitmedi.
+
+194
+00:36:39,347 --> 00:37:05,347
+C üssü, D. Değil mi? Ancak artı ikincisini yazalım bu sefer. Onu da açık maviyle yazalım. Ne diyeceğiz orada? A üssü, B, bir de C, D şeklinde yazıyoruz. Şimdi,
+
+195
+00:37:06,483 --> 00:37:12,983
+Bu sadece fonksiyon, bu alanın üzerinde sanki bir fonksiyon sadece buralarda bir vermiş gibi düşünün.
+
+196
+00:37:13,224 --> 00:37:21,724
+Dolayısıyla bu fonksiyonu yazacak olsak, doğruluk tablosunun, minimum terimleri neydi arkadaşlar bu iki bir olan yerin ifadesi, bu şekilde yazacak.
+
+197
+00:37:22,203 --> 00:37:28,104
+Tabi bu fonksiyon da başka yerlerde de bir olabilir ama ben sadece bu ikisine odaklanmak istiyorum.
+
+198
+00:37:28,104 --> 00:37:30,987
+Bakacak olursak arkadaşlar bunu...
+
+199
+00:37:31,188 --> 00:37:53,648
+Normalde birbirine komşu şu gözleri yazarken ortak parantezi alabiliyoruz. Örneğin A üstü B, D parantezini alırsa burada C üstü artı C kalır. Burası ne olur? Bir sonuç A üstü B, D olmuş. Demek ki birbirine komşu birler, bakın.
+
+200
+00:37:54,963 --> 00:38:16,503
+4 eksi, 4 tane değişken var. Sonuçta indirgeme yaptığımda, şu ikisiyle uğraştığımı düşünün, şöyle çember alıp, ikisiyle uğraştığımda neyi elde etmiş oluyorum? Bakın, N-K, 3, buradaki terimlerin, her biliminin, termilerin 4 uzunlukluydu.
+
+201
+00:38:21,427 --> 00:38:34,228
+3 uzunluklu bir terime indirgeme yapmış oluyorum. Bakın, N-K 3. Yani burada indirgeme yapacağım yeni değişkenin adı olmuş oluyor.
+
+202
+00:38:35,268 --> 00:38:44,827
+Şimdi, baktığımda burada, peki bunu nasıl yazıyorum? A üstü B'de. Şu ikisi sadece 1 olsaydı A üstü B'de.
+
+203
+00:38:44,827 --> 00:38:48,387
+Veya bunu böyle uzun uzun yapmak yerine ne yapıyorum arkadaşlar?
+
+204
+00:38:48,927 --> 00:38:56,887
+Birbirine alan üzerinde komşu olan, bu komşuluk farklı şekillerde de olabilir. Onu da göstereceğim.
+
+205
+00:38:57,587 --> 00:39:06,988
+A üstü B'de dediğimde, bakın şöyle bir çembere aldım bunu. Daha doğrusu bir kutunun içerisine aldım.
+
+206
+00:39:07,988 --> 00:39:14,967
+Bu kutuda bakıyorum 0-1. Bu kutu için ortak mı? Ortak. Her iki biri de kapsıyor.
+
+207
+00:39:15,795 --> 00:39:41,735
+Peki, şöyle mesine bakarsam yukarıdan. Burada bu kutu için ortak olan değişken hangisi birler? Şu değişkeni, D değişkeni ikisinde de bir kalıyor. Örneğin bu kutu için buradan baktığımda A ve B değişkeni ikisi de sıfır ve bir kalıyor. Değişen hangisi arkadaşlar? Sıfır, C, burada C'ye sıfır almış, bir almış.
+
+208
+00:39:42,112 --> 00:39:59,351
+Ortaklaşa bakıyoruz ortak kutuya. Dolayısıyla C sıfır ve bir alıyorsa sadece ortak olanları yazıyoruz bunun için. Ne yazıyoruz o zaman? Sıfır gördüğümüz yerlere değil ne? A üstü. Bir gördüğümüz yerde şurada A üstü buradan geliyor, B buradan geliyor.
+
+209
+00:40:00,000 --> 00:40:14,460
+Bir de yukarıdan bakalım. Yukarıda da D değişmiyor. A üstü BD şeklinde. Bakın artık şu kutuyu ne yapabiliyoruz? A üstü BD şeklinde ifade edebiliyoruz. Bakın burada bulmuş olduğumuz değerle aynı.
+
+210
+00:40:16,559 --> 00:40:27,440
+Örneğin alan üzerinde demiştik ya, alan üzerindeki komşuluk, bir komşuluk kavramı nasıl olabilir? Kaç türlü varyasyonu? İlla yan yana mı olmak zorunda? Hayır.
+
+211
+00:40:28,211 --> 00:40:37,372
+Demin gösterdiğim gibi bir bir gibi bir kutu yapabileceğimiz gibi aynı şekilde bir bir şeklinde şöyle bir kutu da yapabiliriz örneğin.
+
+212
+00:40:38,252 --> 00:40:48,452
+Yani bir komşulukta mesela kaç tane hücre kaplayacağız? Şuraya bir yazarsak iki tane hücre kapsayacağız.
+
+213
+00:40:48,452 --> 00:40:55,452
+Ya bu kutuyu seçeceğiz ya öbür kutuyu seçeceğiz. Bir de bu Karnaugh.
+
+214
+00:40:55,536 --> 00:41:17,716
+Haritalarının bir özelliği daha var arkadaşlar. Bunlar, baktığımızda şöyle 0, 0, 0, 1, 1, 1, 1, 0. Tam sanki bir soba borusu gibi düşünün. Örneğin şurada 1, 1 olsa şunlar da birbiriyle komşu oluyorlar arkadaşlar.
+
+215
+00:41:19,059 --> 00:41:27,519
+Yani bunların sanki kenarları birbirine yapışıkmış gibi düşünebilirsiniz. Aynı soba borusu şeklinde. Kafanızda öyle bir tahir edin.
+
+216
+00:41:28,479 --> 00:41:37,079
+Veya tam tersine şöyle de yapabiliyorsunuz. Bir bir, şu şekilde de yapabiliyorsunuz arkadaşlar.
+
+217
+00:41:38,799 --> 00:41:44,960
+Yani bunun kenarları birbirine komşu. Şuradan geliyor, şuraya gidebiliyorsunuz. Bir geçiş var.
+
+218
+00:41:45,331 --> 00:41:50,692
+Aynı şekilde buradan buraya bir yapışıklık var gibi düşünüyorsunuz.
+
+219
+00:41:51,291 --> 00:41:52,771
+Örneğin bunların şeyini yapalım.
+
+220
+00:41:53,371 --> 00:41:54,851
+Siyahınkileri yapalım mesela.
+
+221
+00:41:55,471 --> 00:41:58,251
+Şu iki tane komşu oluşmuş oldu şuradan.
+
+222
+00:41:58,251 --> 00:42:04,811
+Bunu yazacak olursak ortak noktalarına A ve B değeri 0-0 alıyor.
+
+223
+00:42:05,311 --> 00:42:07,551
+A üstü, B üstü. Bitmedi.
+
+224
+00:42:08,371 --> 00:42:16,991
+C değeri 0, 1'e geçmiş. D değeri 0, 0 kalmış. Dolayısıyla D'de 0 kaldığı için D üstü yapacağız.
+
+225
+00:42:17,571 --> 00:42:20,811
+C'ler değiştiği için 0, 1'e onu hiç dikkate almıyoruz.
+
+226
+00:42:22,351 --> 00:42:26,231
+Peki şu mavi, siyan renkinde olan nasıl olacak?
+
+227
+00:42:26,791 --> 00:42:32,471
+Bunda ise 1-1 ortak. Dolayısıyla buranın C ve D yazacağız. Değişkenlerin sırası önemli.
+
+228
+00:42:33,492 --> 00:42:47,972
+Peki burada ne değişiyor arkadaşlar? A değişiyor bakın. Yani şuraya bakarken şöyle bakacaksınız. A değişiyor 0-1'de. Değişmeyen ne? B. B'de 1'miş. B, C, D şeklinde kısalıyormuş.
+
+229
+00:42:48,952 --> 00:42:58,832
+Aynı şekilde buraya bakacak olursak, şuradan bakacak olursak, bunda da C, D değişmiyor. Yani C üstü D.
+
+230
+00:42:59,284 --> 00:43:04,844
+Burada 0, 1 olduğu için C üstü olmuş olur, D aynen kalmış oluyor.
+
+231
+00:43:05,744 --> 00:43:10,384
+Peki, şuralarda bu kutucun şuralarına da bakmamız lazım.
+
+232
+00:43:10,864 --> 00:43:15,443
+O kutuyu ortak gören satır numaralarına, satır değerlerine bakıyoruz.
+
+233
+00:43:15,443 --> 00:43:23,764
+0, 0, 1, 0. Değişmeyen ne? B'nin 0 değeri. Dolayısıyla onun B üstü olarak yazıyoruz arkadaşlar.
+
+234
+00:43:25,780 --> 00:43:51,780
+Bu anlaşıldı mı arkadaşlar? Sonuçta biz böyle bir ifade yazdığımızda bakın bir sürü değer bulmuş olduk. Öyle değil mi? Peki şu yeşilin değeri neydi? Bakın eğer yeşili de yalnız bırakmak istemiyorsak şahit ne yapmamız lazım? Onu da aldık. Ne yapıyoruz? O da A üstü B'deydi. Bunların hepsi birleşip arkadaşlar.
+
+235
+00:43:52,947 --> 00:44:07,547
+Sadece tamamen şuralarda 1 olsaydı, bakın 1, 2, 3, 4, 5, 6, 7 tane 1 barındıran bir fonksiyon olsaydı, bunun indirgenmiş hali sırasıyla bu değerlerin yazımıydı.
+
+236
+00:44:07,547 --> 00:44:19,728
+A üstü, B üstü, D üstü, artı, A üstü, B'de, ondan sonra,
+
+237
+00:44:20,320 --> 00:44:29,800
+Artı, aşağıya geçiyorum, B, C, D, artı, B üstü, C üstü, D şeklinde.
+
+238
+00:44:30,400 --> 00:44:34,260
+Peki ben bunu geçen haftadan siz biliyorsunuz. Bakın bu indirgenmiş halde.
+
+239
+00:44:34,680 --> 00:44:40,500
+Öbür türlü yazsaydık ne olacaktı hatırlarsanız. Bir gördüğümüz yerlere fonksiyonunu şöyle yazsaydı.
+
+240
+00:44:41,120 --> 00:44:45,160
+Bir gördüğümüz yerlere mintermleri yazıyorduk hatırlarsanız. Örneğin şurası.
+
+241
+00:44:45,684 --> 00:45:05,104
+Ne diyecektik? A üsü, B üsü, C üsü, D üsü, artı. İkincisine geçecektik. Ne olacaktı orada da? A üsü, artı, A üsü, B üsü, C üsü, D şeklinde toplam 7 tane. 7 tane minterm.
+
+242
+00:45:06,068 --> 00:45:15,748
+Olacaktı. Onun yerine o 7 tane minterm'in yerine bakın 1, 2, 3, 4 tane değişkenli ben bu fonksiyonu indirgemiş oldum.
+
+243
+00:45:17,288 --> 00:45:28,328
+Bize böyle bir Karnaugh haritalarının görsel olarak bir fonksiyonu küçültme veya indirgeme şansı verdiğini görüyoruz arkadaşlar.
+
+244
+00:45:29,556 --> 00:45:39,616
+Şimdi bu bir komşuluk. Bir komşulukta arkadaşlar iki tane hücre arkadaşı olacak. Yani birbirine iki hücreyi yapıştırıyoruz.
+
+245
+00:45:40,736 --> 00:45:45,216
+Şimdi indirgeme yaparken farklı kurallar da var. Biraz sonra anlatacağım.
+
+246
+00:45:45,216 --> 00:45:54,676
+Şimdi onun dışında bu iki komşuluk. Birinci dereceden komşuluktu. Şöyle.
+
+247
+00:45:55,987 --> 00:46:01,087
+Birinci derecede komşulukta iki üzeri tane K tane bir terim birleşecekti.
+
+248
+00:46:01,627 --> 00:46:06,107
+K eşittir, komşuluk sayısı, komşuluk bir olunca ne olacak?
+
+249
+00:46:07,247 --> 00:46:14,407
+İki tane iki üzeri bir, iki tane hücre gibi bir komşu olacak.
+
+250
+00:46:14,767 --> 00:46:17,327
+Şimdi teorem ikiye geçelim.
+
+251
+00:46:19,327 --> 00:46:22,707
+Bu sefer ikinci dereceden komşuluk.
+
+252
+00:46:28,340 --> 00:46:37,380
+Bir önceki anlattığımda, bir önceki anlattığım konuyla alakalı olarak, şurada sorsa olan var mı arkadaşlar?
+
+253
+00:46:40,199 --> 00:46:41,139
+Sorsa olan?
+
+254
+00:46:41,219 --> 00:46:45,019
+Hocam, çapraz köşedeki değerler mesela 0, 0, 0, 0.
+
+255
+00:46:45,380 --> 00:46:46,480
+Evet, güzel bir soru sordun.
+
+256
+00:46:47,279 --> 00:46:50,159
+Hayır, çaprazlar olmuyor, sadece kenarlar oluyor.
+
+257
+00:46:50,643 --> 00:47:03,623
+Yani çapraz bir yerde olacak, biraz sonra anlatacağım onu. Ama şu olmuyor senin dediğin gibi. Bak, şurası ve şurası komşu kabul edilmiyor. Şöyle bir komşuluk yok yani.
+
+258
+00:47:04,923 --> 00:47:05,844
+Teşekkürler hocam.
+
+259
+00:47:05,844 --> 00:47:16,703
+Sadece kenarlarda, köşelerde komşuluk yok. Şimdi ikinci dereceden komşuluk demek, K'nın 2 olması demek.
+
+260
+00:47:17,876 --> 00:47:42,296
+Dolayısıyla ne demiştik? 2 üzeri K tane terim komşu olmalı. Yani göz sayısını veya hücre sayısını kadar komşu olmalı. Bu ne demek? K eşit 2 ise 4 tane hücre veya 4 tane terim komşu olması gerekiyor.
+
+261
+00:47:42,996 --> 00:48:08,056
+Dört tane terim, ikinci neden komşu olabilmesi için gerek ve yeter koşul, bunlara düşen alan üzerindeki yerin bir kare oluşturması, illa bir kare oluşturması gerekmiyor, kitapta yanlış bir ifade, sıra şeklinde olması veya bir kare şeklinde oluşturması gerekir.
+
+262
+00:48:08,056 --> 00:48:10,576
+Yani dört tane terim olacak.
+
+263
+00:48:11,443 --> 00:48:13,443
+Şöyle yapıyorum.
+
+264
+00:48:14,443 --> 00:48:16,443
+Şöyle yazalım.
+
+265
+00:48:16,443 --> 00:48:18,092
+A, B, C, D.
+
+266
+00:48:24,307 --> 00:48:36,967
+Ve şöyle olacak arkadaşlar, birbirine komşuluk kavramı nasıldı arkadaşlar? Birbirlerine değecekler. Yani bir, bir, bir, bir. Yani ben bunları şöyle bir komşuluk haline getirebilirim.
+
+267
+00:48:38,188 --> 00:48:43,768
+Veya birbirlerine değecekler, yani bir alan oluşturacaklar. Veya şöyle yapabilirim.
+
+268
+00:48:45,447 --> 00:48:46,648
+Veya şöyle yapabilirim.
+
+269
+00:48:48,083 --> 00:49:06,443
+Bir kare oluşturacak veya bir sıra şeklindeki hale getirebileceğiz. Bunları da arkadaşlar indirgersek şahit, mesela bu fonksiyon olsun, fonksiyonun işte bu çıkışları, A, B, C, D şeklinde fonksiyon çıktı vermiş, örneğin 00, 01.
+
+270
+00:49:06,443 --> 00:49:09,344
+00, 01.
+
+271
+00:49:10,291 --> 00:49:18,171
+Kaç değeri almış? Bir değeri almış. Sırasıyla bir, iki, üç, dört, beş, altı, yedi, sekiz tane bir varmış mesela buralarda.
+
+272
+00:49:19,611 --> 00:49:29,851
+Bunun Karnaugh haritasına dökülmüş hali bu. Bu fonksiyonu indirgeyecek olursam şahit, teker teker bunların her bir bir gördüğüm yere minterm, metrede yazabilirim.
+
+273
+00:49:30,531 --> 00:49:36,171
+Veya şöyle yapalım, öne şu maviden başlayalım. Genel şey şu.
+
+274
+00:49:36,724 --> 00:49:58,964
+Bunu bir alan kabul edeceksiniz. Bu alanı, alanda değişmeyen değerleri yazacaksınız. Örneğin, 0, 1 bu alan için, hepsi için, alandaki bütün hücreler için aynı. Öyle değil mi? Alan için aynı. Dolayısıyla ne diyeceğiz buraya? C üstü D. Bitti mi? Bitmedi. Buraya da bakacağız.
+
+275
+00:50:00,000 --> 00:50:15,100
+Olanı tarayan satırlara bakıyoruz ama satırların hepsi değişiyor. Dolayısıyla C üstü D şeklinde indirgenmiş oluyor. En başta ne demiştik arkadaşlar? O terimler N-K.
+
+276
+00:50:16,851 --> 00:50:44,011
+çarpanlı bir terim oluşturacak demiştik. N'imiz ne bizim? 4. K'ımız ne? 2. 4-2. 2 çarpanlı bir terim oluşturdu. Oluşturdu mu? Evet. Deminkinde 3 çarpanlı bir terim oluşturmuştu. Bakın tek komşulukta. Ama 2 komşulukta, yani komşuluk sayısı arttıkça, bakın ifade daha da basitleştirilmiş hale geliyor. Şimdi bu yeşili yapalım bakalım.
+
+277
+00:50:45,235 --> 00:51:00,856
+Şurayı bir alan kabul ediyoruz. Bu alanı, şöyle satırdan baktığımızda bu alanı gören 0-1 görüyor ve 1-1 görüyor. Değişmeyen değer hangisi? 1-1. Dolayısıyla onun B'si yazılacak.
+
+278
+00:51:02,295 --> 00:51:05,655
+Burada A değişiyor sıfırdan birer. Buradan bakalım.
+
+279
+00:51:06,420 --> 00:51:21,200
+Bu alanı gören satır değer, sütün değerlerini 1-0-1'dir. Değişmeyen hangisi? Bir değeri değişmiyor ikisinde de. Dolayısıyla o da C'ye denk geliyor. O da C değerine haline gelmiş oluyor.
+
+280
+00:51:21,900 --> 00:51:32,420
+Dolayısıyla benim böyle bir fonksiyonum olsa bu fonksiyonu en basit şekilde şöyle yazabiliyorum. C üstü de artı BC şeklini indirgemiş oluyorum.
+
+281
+00:51:33,076 --> 00:51:41,175
+Oysa bunların her birini 4 termini mintermlerle yazsaydım şuraya kadar indirebilmek için çok vakit harcamam gerekecekti.
+
+282
+00:51:42,476 --> 00:51:54,336
+Peki, 4 tane hücrenin komşu olabilmesi için başka hangi şeyleri, imkanlar var onlara bakacak olursak.
+
+283
+00:51:54,336 --> 00:51:56,096
+Şöyle.
+
+284
+00:51:57,235 --> 00:52:17,135
+Bir, demin arkadaşımızın sorduğu soru, yani köşegenlerde 1-1-1 olması durumda. Bunlar komşu kabul ediliyor. 2 dereceli komşular da kabul edilmiyor ama bu 4 tane cücrenin olduğu 2. dereceden komşuluklarda bu kabul ediliyor.
+
+285
+00:52:17,135 --> 00:52:21,755
+Bakalım, bunu indirgeyelim. Şurası 0-0.
+
+286
+00:52:22,175 --> 00:52:24,615
+Karnaugh onları renkli kalemine yapayım şöyle.
+
+287
+00:52:26,516 --> 00:52:35,436
+Şöyle A, B, C, D, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0.
+
+288
+00:52:36,115 --> 00:52:39,016
+Şimdi bu alan, alanımız neyse artık burası bizim.
+
+289
+00:52:39,835 --> 00:52:43,735
+Yani o birbirine değiyor kabul ettiğimiz şeyler bir alan oluşturuyor.
+
+290
+00:52:44,456 --> 00:52:46,635
+Bakın, önce satırdan bakalım.
+
+291
+00:52:47,088 --> 00:53:10,068
+Bu alanı gören bir sıfır sıfır yeri var. Bir de bir sıfır yeri var. Baktığımızda bu alanı gören soldan taradığımızda. Sıfır sıfır bir sıfır. Değişmeyen hangisi var arkadaşlar? Şu B üstü değeri. Yani B'nin sıfır olduğu değer. Dolayısıyla bunun ilk değeri B üstü olacak sıfır olduğundan.
+
+292
+00:53:10,452 --> 00:53:32,211
+Bu sefer yukarıdan bakalım mesela. Şuradan tarayarak bakalım. Şurası ve şurası. Alanları gören sütunlar. 0-0-1-0. Hangisi değişmiyor? D'ye denk düşen sıfırlar değişmiyor. O da D üstü olarak kalıyor arkadaşlar.
+
+293
+00:53:36,628 --> 00:54:01,347
+Değişkenimizi oluşturuyor aynı şekilde. Peki başka hangi türlü komşuluk yapıyoruz? Biliyorsunuz kenarlar komşuluk yeriydi. Şöyle baktığımızda bir bir, bir bir. Şuralarda aynı şekilde komşu sayılıyorlar arkadaşlar. Şuralarda aynı şekilde komşu sayılıyorlar. Bunu indirgeyecek. Alanımız mesela şurası.
+
+294
+00:54:02,643 --> 00:54:16,503
+Bunu birimiz söylesin bakalım. Bunu yapmak isteyen var mı? Bunu da siz söyleyin bakayım. Satırlarda ne olacak? Satırlarda bu alanı gören? Söz almak isteyen mikrofonunu açabilir.
+
+295
+00:54:17,383 --> 00:54:18,383
+Hocam B oldu.
+
+296
+00:54:18,383 --> 00:54:18,763
+Evet.
+
+297
+00:54:18,763 --> 00:54:25,023
+Evet. Bakın burada B. Sütunlardan bakın.
+
+298
+00:54:26,483 --> 00:54:27,223
+D üstü.
+
+299
+00:54:28,083 --> 00:54:54,903
+Değişsü, B, D üşsü haline gelmiş oluyor. Bir de bu şekilde bir. Burada arkadaşlar belki yine aklınıza gelebilir. Hani şöyle bir komşuluk oluyor mu? Hayırlı olmuyor arkadaşlar. Çaprazlamasına komşuluklar yok. Bir istisna edilmem olarak şu kenarların hepsinin bir olmasını bir şey olarak kabul ediyoruz. Yüzeysel bir komşuluk.
+
+300
+00:54:55,315 --> 00:55:00,496
+Var gibi kabul ediyoruz arkadaşlar. Yine diagonal komşuluk burada yok arkadaşlar.
+
+301
+00:55:02,275 --> 00:55:20,795
+Şimdi devam edelim. Bir de teorem 3. Bu sefer 3. dereceden komşuluk.
+
+302
+00:55:22,739 --> 00:55:31,899
+Yani K'nın 3 olduğu durumlarda. Bu durumda kaç tane hücrenin bir birliğiyle bir alan oluşturması, komşu olması gerekiyor?
+
+303
+00:55:31,899 --> 00:55:45,675
+2 üzeri K, 8 tane hücrenin, 8 tane terimin ne alması gerekiyor? Komşu olması gerekiyor. Bu durumda...
+
+304
+00:55:46,164 --> 00:56:00,864
+Bakalım ifademiz nasıl kısalacak? Örneğin 4 için 4-3 burada 1'e iniyor. Yani ifade 8 komşulukta artık bir tane değişkene inmiş oluyor arkadaşlar.
+
+305
+00:56:02,104 --> 00:56:07,344
+Mesela bununla alakalı bir örnek verebilir miyiz? Verelim. Şöyle.
+
+306
+00:56:11,123 --> 00:56:30,603
+Bakın, komşuluk miktarı arttıkça, yani o matriz üzerindeki alanın genişliği arttıkça bizim ifadeyi daha rahat, daha böyle indirgenmiş bir hale getirme şansımız oluyor.
+
+307
+00:56:35,251 --> 00:56:47,532
+Şurası 00, 01, 11, 10, 00, 01, 11, 10. Bakalım 8 komşuluğu nasıl yapabiliriz? En basiti şu arkadaşlar.
+
+308
+00:56:47,532 --> 00:56:59,192
+1, 1, 1, 1, 1, 1, 1, 1. En basiti bu. En basiti buysa şayet. Bunun alanı ne olacak? Şöyle etrafını çevreleyelim.
+
+309
+00:57:00,371 --> 00:57:06,092
+Satırlarına baktığımızda bu alanı gören, satırları gördüğümüzde ne olmuş oluyor arkadaşlar?
+
+310
+00:57:06,771 --> 00:57:13,211
+Hepsi değişiyor. A'da, B'de değişiyor, B'de değişiyor. Bunun için ortak olan kısım ne?
+
+311
+00:57:14,331 --> 00:57:24,331
+Yukarıdan baktığımızda 0, 1, 1, 1. Ortak olan hangisi? İkinci değer olan D'nin değeri.
+
+312
+00:57:24,331 --> 00:57:26,472
+Dolayısıyla bu sadece D'ye inmiş oluyor.
+
+313
+00:57:26,996 --> 00:57:30,855
+Düşünün siz bunların mintermine halinde uzun uzun yazacağınızı.
+
+314
+00:57:31,775 --> 00:57:34,056
+Dört temin, örneğin şunun için yazalım.
+
+315
+00:57:34,936 --> 00:57:36,036
+Ne diyecektik onun için?
+
+316
+00:57:36,635 --> 00:57:39,976
+A üstü, B üstü, C üstü, D.
+
+317
+00:57:40,275 --> 00:57:41,775
+Artı yanındakine geçelim.
+
+318
+00:57:42,615 --> 00:57:46,096
+A üstü, B üstü, C, D.
+
+319
+00:57:46,516 --> 00:57:48,576
+Devam edecektik. Böyle sekiz tane yazacak.
+
+320
+00:57:48,976 --> 00:57:51,695
+Onların en indirgenmiş hali bu.
+
+321
+00:57:52,036 --> 00:57:53,476
+D haline gelmiş oluyor.
+
+322
+00:57:53,972 --> 00:58:02,072
+Peki, başka 8 komşuluklar nasıl yapabiliriz? Başka nasıl yapabiliriz? Mesela şöyle yapabiliriz.
+
+323
+00:58:03,172 --> 00:58:16,452
+Burada da kenarların bir birliğiyle komşu olduğunu düşünecek olursak, 1, 1, 1, 1, 1, 1, 1, 1, 1. Şöyle bir alan oluşturabiliriz. Şöyle.
+
+324
+00:58:17,792 --> 00:58:20,932
+Bu durumda ne yazabiliriz arkadaşlar? 0, 0.
+
+325
+00:58:22,356 --> 00:58:43,456
+0, 1, 1, 1, 0, şöyle A, B, C, D diyelim. 0, 0, 0, 1, 1, 1, 0. Baktığımızda sütunlarda komşuluk yok. Sütunlarda değişiyor. C ve D değeri bu alana baktığımızda bu alana devamlı değişken değer gösteriyor.
+
+326
+00:58:43,456 --> 00:58:48,956
+Oysa satırlara baktığımızda bu alanı gören iki tane değer var. 0, 0, 0, 1.
+
+327
+00:58:49,364 --> 00:58:54,324
+Şu gördüğünüz B'nin sıfır olma durumu bütün alan boyunca devam ediyor.
+
+328
+00:58:54,703 --> 00:59:00,364
+Dolayısıyla bunun en indirgenmiş hali B üstü şeklinde yazabiliriz arkadaşlar.
+
+329
+00:59:02,364 --> 00:59:10,403
+Evet, bir de teorem 3. Örneğin teorem 3. Teorem 4, pardon.
+
+330
+00:59:11,903 --> 00:59:14,963
+16 terimin, yani
+
+331
+00:59:15,731 --> 00:59:22,491
+F, A, B, C, D. Bundan kaç tane terim oluşur arkadaşlar?
+
+332
+00:59:24,071 --> 00:59:35,632
+Baktığımızda A, B, C, D'nin doğruluk tablosunu yaptığımızda 0, 0, 0, 0'dan 1, 1, 1, 1'e kadar toplam 16 tane durum oluşur.
+
+333
+00:59:36,632 --> 00:59:41,591
+Bunların dördüncü dereceden komşu olabilmesi için arkadaşlar,
+
+334
+00:59:43,635 --> 00:59:51,635
+4. elejden komşu olabilmesi için ne gerekiyor? Bu Karnaugh map'te her tarafın 1 olması gerekiyor.
+
+335
+00:59:53,415 --> 01:00:06,056
+Her taraf 1 olursa şayet tamamıyla kaç tane? 250 K, K4 olursa 16 eder. Her tarafın 1 olması gerekiyor. Dolayısıyla bu fonksiyon aslında budur.
+
+336
+01:00:06,775 --> 01:00:09,255
+F daima 1 üreten bir fonksiyondur.
+
+337
+01:00:10,003 --> 01:00:11,543
+Diyebiliriz arkadaşlar.
+
+338
+01:00:15,827 --> 01:00:32,047
+Şimdilik mesela burada bir tane ifade verseler. Bu öğrendiğimiz bilgiler, komşuluk kavramları bunlardır.
+
+339
+01:00:32,987 --> 01:00:40,748
+Şimdi sizlere bir soru çözeceğim ama şu kısım anlaşıldı mı öncelikle olarak?
+
+340
+01:00:42,291 --> 01:00:43,731
+Şu kısım anlaşıldı mı?
+
+341
+01:00:46,891 --> 01:00:48,711
+Sorsa olan varmış şimdiye kadar.
+
+342
+01:00:51,951 --> 01:00:53,132
+Sorumuz şu.
+
+343
+01:00:54,231 --> 01:00:55,771
+Soru yoksa şahit.
+
+344
+01:00:55,911 --> 01:00:57,791
+A, B, C, D.
+
+345
+01:00:59,351 --> 01:01:02,112
+A üstü, B üstü, C üstü.
+
+346
+01:01:02,351 --> 01:01:02,951
+Artı.
+
+347
+01:01:04,811 --> 01:01:07,911
+B üstü, C.
+
+348
+01:01:08,659 --> 01:01:29,799
+D üstü artı A üstü B, C, D üstü artı A, Şurayı güzel yazalım, şöyle düzeltelim, AB, A üstü B, C, D üstü artı AB üstü C üstü.
+
+349
+01:01:30,996 --> 01:01:35,196
+Şimdi bize böyle bir fonksiyon versen, gelin bunu indirge indirsen.
+
+350
+01:01:35,416 --> 01:01:37,876
+İlk yapmamız gereken şey ne bizim arkadaşlar?
+
+351
+01:01:39,336 --> 01:01:43,056
+Bizim bunu öncelikli olarak bir Karnaugh'e geçirmemiz lazım.
+
+352
+01:01:43,336 --> 01:01:51,156
+Dolayısıyla ABCD değerlerinin karşılıklarını yazmamız lazım.
+
+353
+01:01:51,896 --> 01:01:57,176
+Bulmamız lazım ki bunu bir Karnaugh haritasına yerleştirebilelim.
+
+354
+01:01:58,324 --> 01:01:59,224
+Şöyle şekilde.
+
+355
+01:02:01,043 --> 01:02:07,064
+Örneğin, bu Karnaugh haritamızda, AB'yi şuraya yazalım, CD'yi buraya yazalım.
+
+356
+01:02:08,764 --> 01:02:11,523
+00, 01, 11, 10.
+
+357
+01:02:12,184 --> 01:02:15,903
+00, 01, 11, 10 şeklinde.
+
+358
+01:02:17,224 --> 01:02:19,023
+Peki, bunların içine ne yazacağız?
+
+359
+01:02:20,184 --> 01:02:22,304
+Bunların içine ne yazmamız gerekiyor arkadaşlar?
+
+360
+01:02:23,251 --> 01:02:48,652
+Değerlerini yazmamız lazım. Dolayısıyla 0, 0, 0'dan itibaren 1, 1, 1, 1'e kadar buradaki değerleri bulmamız lazım. Örneğin hepsine 0 verdiğimizde, bakın şuradaki ifadeden zaten 1 olacağını anlayabiliyoruz. Hepsini böyle çıkarmamıza gerek yok. 0, 0, 0, 1 ifadesine gelelim.
+
+361
+01:02:49,300 --> 01:03:10,300
+Bu ne verecek arkadaşlar? Bakın A, B, C burada 3'ü de 0 olduğu durumda bu daima ne yapıyor bize? 1 yaptırıyor. Öyle değil mi? Dolayısıyla burası da 1. 0010. 0010 ifadesini yapacak arkadaşlar.
+
+362
+01:03:16,532 --> 01:03:34,472
+Böyle sırasıyla bulma şansımız var. Baktığımızda 0010 ifadesini verecek. Bu da arkadaşlar yerine koyduğumuzda bu da bir ifadesini veriyormuş.
+
+363
+01:03:44,532 --> 01:03:47,172
+0 oldu.
+
+364
+01:03:48,771 --> 01:03:50,911
+Burada da 0 değeri veriyormuş.
+
+365
+01:03:52,152 --> 01:03:53,632
+Şöyle de yapılabilir arkadaşlar.
+
+366
+01:03:53,831 --> 01:03:56,371
+Bunu şöyle uzun uzun yazayım bir daha.
+
+367
+01:03:56,371 --> 01:04:10,251
+0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1.
+
+368
+01:04:12,052 --> 01:04:16,972
+Devam edeyim. Şu şekilde. 16 tane değer var.
+
+369
+01:04:39,123 --> 01:04:42,283
+Dolayısıyla bunların hepsini bulmamız gerekiyor arkadaşlar.
+
+370
+01:04:42,283 --> 01:04:50,323
+Fakat teker teker terimlerin üzerinden gideceksek mesela bir kolay yol olacaktır.
+
+371
+01:04:50,843 --> 01:05:02,283
+A, B üstü, C üstü ifadesinde D'nin ne olduğuna bakmaksızın hepsinin sıfır olduğu yerlere bir yazabiliriz.
+
+372
+01:05:03,143 --> 01:05:04,123
+Yani şurası.
+
+373
+01:05:05,204 --> 01:05:09,364
+Daha doğrusu C ve, şu şeyi sileyim.
+
+374
+01:05:13,396 --> 01:05:25,255
+C ve D. Bakın D değeri hiç yok orada. Dolayısıyla D'nin sıfır veya bir olmasının hiçbir önemi yok. Dolayısıyla burası bir olabilir sıfır ifadesi. Sıfır ve bir ifadesi.
+
+375
+01:05:27,856 --> 01:05:38,135
+D üstü, C, D üstü. Bakın burada A'nın ne olduğunu hiçbir önemi yok. B'nin yani sıfır, sıfır, bir, sıfır.
+
+376
+01:05:39,027 --> 01:05:47,847
+Yani 0, 1, 0'ı nerede görüyoruz? 0, 1, 0, 0, 1, 0. Bir burada görüyoruz. Bir de nerede görüyoruz? Bir de burada görüyoruz.
+
+377
+01:05:48,187 --> 01:05:56,367
+Demek ki bunların karşılığına da 1 yazabiliriz. Öyle değil mi? Orada A'nın ne olduğunun hiçbir önemi yok.
+
+378
+01:05:57,807 --> 01:06:03,547
+Daha sonra A üstü, B, C, D üstü. Yani 0, bu ifadeyi 1 yapan değer.
+
+379
+01:06:04,083 --> 01:06:23,603
+1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0. Burası da aynı şekilde 1'miş. Burada sadece bir yere. Sadece bunu 1 yapan bu değer var. Burayı 1 yapıyorsa şahit gerisine bakmamızın manası yok. Bir de ne var? A'nın 0, pardon A'nın 1.
+
+380
+01:06:27,059 --> 01:06:43,639
+A'nın 1, B'nin 0, Ç'nin 0 oldu. Yani 1, 0, 0 paternini arayacağız. 1, 0, 0'nın her ikisinde de 1 üretecek bu. Toplam kaç tane birimiz oldu? 1, 2, 3, 4, 5, 6, 7 tane birimiz oldu.
+
+381
+01:06:44,460 --> 01:06:51,639
+Diğerlerinin hepsi arkadaşlar 0 kabul ediyoruz. Çünkü değişken değerlerini...
+
+382
+01:06:52,724 --> 01:06:56,003
+O ifadeyi bir yapmıyor diye düşünebiliriz.
+
+383
+01:06:56,824 --> 01:07:00,184
+Peki bunu yerleştirecek olursak nasıl yerleştiriyoruz?
+
+384
+01:07:00,684 --> 01:07:05,364
+Sırasıyla diyoruz. 0, 0, 0'a bir gelmiş. 0, 0, 1'e bir gelmiş.
+
+385
+01:07:06,344 --> 01:07:14,784
+Ondan sonra 0, 0, 1, 1'e yani 0, 0, 1, 1'e pardon 0, 0, 1, 0'a gelmiş.
+
+386
+01:07:14,943 --> 01:07:16,163
+Yani şuraya yerleştiriyoruz.
+
+387
+01:07:16,916 --> 01:07:41,456
+Daha sonra 0, 1, 1, 0'a. 0, 1, 1, 0'a gelmiş. 0, 1, 1, 0. Burası. Daha sonra nerede var? 1, 0. Bakın burası A ve B'nin 1, 0 olduğu yerler. Yani şurada olacak. Şuraya 1, şuraya 1 ve de şuraya 1 gelmiş olacak. Evet, şimdiki adımımız bunları indirgemek.
+
+388
+01:07:42,452 --> 01:07:49,472
+Şimdi, indirgeme işlemi yaparken arkadaşlar, teker teker şöyle komşuluklar alabilirsiniz.
+
+389
+01:07:51,192 --> 01:07:53,792
+Şöyle bir komşuluk alabilirsiniz.
+
+390
+01:07:55,332 --> 01:08:08,152
+Ama, amaç daima en indirgenmiş ifadeyi bulabilmek ise şayet, alabileceğiniz en büyük komşulukla ifadeleri almaya çalışın.
+
+391
+01:08:08,152 --> 01:08:09,652
+Örneğin,
+
+392
+01:08:10,164 --> 01:08:36,623
+Ben burada şunu ikili almak yerine, hayır diyorum ki seni ve seni alacağım. Bütün birileri en büyük komşulukla kapsamaya çalışın. Mesela bunu böyle alabilirim, bir de böyle alabilirim. Bunun yerine arkadaşlar, olabildiğince sırasıyla birileri en büyüğünden kapsamaya çalışın. Bakın bu birileri kapsadığımda şöyle.
+
+393
+01:08:37,363 --> 01:08:53,183
+Şunların hepsi gitmiş oluyor. Kaç tane bakın, bunu kapsadım, bunu kapsadım, bunu sadece boşta şu bir kalmış oldu. O biri de en büyük komşulukla şöyle kapsar. Dolayısıyla ifadem şu olmuş oluyor arkadaşlar.
+
+394
+01:08:56,948 --> 01:09:01,448
+Açık maviden söyleyin. Açık maviden ne yazıyorum o zaman? Siz söyleyin.
+
+395
+01:09:03,688 --> 01:09:05,288
+Hem satır hem sütununa bakın.
+
+396
+01:09:07,068 --> 01:09:08,427
+Önce satırdan gidelim.
+
+397
+01:09:09,108 --> 01:09:12,427
+1-0-0-0'dan şuraya, şu alana bakıyorsunuz.
+
+398
+01:09:14,708 --> 01:09:16,128
+Evet, kim söylemek ister?
+
+399
+01:09:18,768 --> 01:09:22,148
+B üstü, D üstü. Doğru mu? Evet, D üstü.
+
+400
+01:09:22,996 --> 01:09:49,676
+B'sü, C'sü. Değil mi? B'sü, C'sü. Çünkü burada değişmeyen sıfırlar var. Peki açık mavi olanını söyleyin. Açık mavi. Sadece köşegenlerden kapanış. Açık mavi yazmıştım zaten hocam. Pardon. Şu an B'nin değil, D'nin değil. B'nin değil, D'nin değil. Değil mi? Evet. Bir de en son ne kaldı? Siyah kaldı.
+
+401
+01:09:50,420 --> 01:09:52,020
+Siyahı söyleyin bakalım.
+
+402
+01:09:54,899 --> 01:10:04,800
+A üstü var değil mi? Şuradan bakın A değişmiyor. Bir de ne değişmiyor? C ile D'nin diğeri de değişmiyor. Yani C, D üstü.
+
+403
+01:10:06,560 --> 01:10:15,800
+Gördünüz mü arkadaşlar? Bu şekilde yapıyoruz. Yani alabileceğimiz sırasıyla fonksiyonun üzerindeki bütün
+
+404
+01:10:16,212 --> 01:10:26,212
+fonksiyonun üzerindeki bütün değerleri, bir değerlerini kapsamamız lazım ve mümkün olan en büyük komşulukla.
+
+405
+01:10:26,212 --> 01:10:29,372
+Dolayısıyla biraz pratik düşünmeniz gerekiyor burada.
+
+406
+01:10:31,372 --> 01:10:36,051
+Veya bunun tersi olabilir mi? Burada yazdığınız ifadeleri hocam.
+
+407
+01:10:37,632 --> 01:10:42,391
+Hep mintermlerin çarpımı şeklinde, yani çarpımların toplamı şeklinde.
+
+408
+01:10:43,283 --> 01:11:09,243
+Tam tersine sıfırlardan yararlanamaz mıyız? Eğer ben bunu yanına sıfırları olacak şekilde çizersem şayet şöyle A, B, C, D. Bu sefer sıfırlı versiyonuna bakalım bunu. 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0.
+
+409
+01:11:10,420 --> 01:11:15,319
+Bu sefer sıfırlarımız nerede bizim? Onlara bakalım. Şu aralar sıfır değil mi?
+
+410
+01:11:18,319 --> 01:11:20,079
+Bunu da şöyle çizeyim.
+
+411
+01:11:23,731 --> 01:11:27,871
+Peki bu sıfırlarda da aynı mantık söz konusu arkadaşlar.
+
+412
+01:11:28,711 --> 01:11:33,511
+Alabileceğimiz en büyük komşulukla bütün sıfırları almaya çalışıyoruz.
+
+413
+01:11:34,511 --> 01:11:42,192
+Ne yapabiliriz önce? Şuradakini alırsak iki komşuluklu sıfırları bir temizlemiş oluruz.
+
+414
+01:11:43,351 --> 01:11:47,351
+İkinci adımımız ne olur? Aynı şekilde şurayı da temizlemiş oluruz.
+
+415
+01:11:48,020 --> 01:12:03,800
+Şu iki tane sıfır kaldı köşede. Onları da şöyle büyük komşuluk haline getirirsek, sırasıyla yazacak olursak, şu kırmızıyla yazdığımın şey ne? Değişmeyen alanı, C'de mi yazacağız? Yoksa tam tersi mantıkla marka edeceğiz.
+
+416
+01:12:11,315 --> 01:12:15,655
+Değilini yazacağız. Bir de işaretimiz çarpım şeklinde değil, toplam şeklinde olacak.
+
+417
+01:12:16,675 --> 01:12:22,595
+Ters mantığa geçmiş oluyoruz. Yeşil için siz söyleyin. Aynı mantıkla.
+
+418
+01:12:27,859 --> 01:12:29,100
+Kim söylemek ister?
+
+419
+01:12:32,787 --> 01:12:35,907
+Hocam, az önceki yaptığınız cehennin deli ve deliğin deli olması lazım.
+
+420
+01:12:38,447 --> 01:12:39,427
+Evet, öyle.
+
+421
+01:12:41,507 --> 01:12:44,227
+Yeşil için hocam, yeşil için. Kırmızı için değil.
+
+422
+01:12:45,427 --> 01:12:49,047
+Pardon, daha mı ona geç? Bunu diyorsun değil mi?
+
+423
+01:12:52,627 --> 01:12:53,707
+Evet hocam.
+
+424
+01:12:54,608 --> 01:13:02,127
+Şunun, evet bu da A'nın D'li artı B'nin D'li şekline gelmiş oluyor.
+
+425
+01:13:02,647 --> 01:13:04,028
+Peki şunun için ne diyeceğiz?
+
+426
+01:13:10,899 --> 01:13:32,399
+Kim söylemek ister? Bakın değişmeyen ne var? Bu var. B. Dolayısıyla B'nin değili. Yukarıdan bir daha bakıyorum şu alana. C değişmemiş. Artı C. Yani aynı fonksiyonu sıfırlarla ifade etmeye çalışsaydım arkadaşlar, şöyle yazmam gerekecekti.
+
+427
+01:13:38,963 --> 01:13:39,884
+çarpı
+
+428
+01:13:43,731 --> 01:13:51,352
+C üstü artı D üstü çarpı, bir de ne demem lazım?
+
+429
+01:13:53,352 --> 01:13:57,051
+D üstü artı C demem lazım.
+
+430
+01:13:57,852 --> 01:14:00,652
+Bakın bu iki fonksiyon da aynı sonuçları üretir.
+
+431
+01:14:00,652 --> 01:14:06,211
+Biri çarpımlar toplamı, çarpımlar toplamı, değil mi?
+
+432
+01:14:07,028 --> 01:14:15,667
+Burada çarpımlar toplamı şeklinde ifadeler var. Bir tanesi de toplamlar çarpımı.
+
+433
+01:14:15,667 --> 01:14:25,347
+Veya şöyle diyebiliriz. Çarpımlar toplamı. Onu şöyle yapalım. Bu şekilde ifade. Çarpım şeklindeki ifadelerin toplamı.
+
+434
+01:14:26,728 --> 01:14:33,807
+Veya alttaki ifade ise çarpımları neyin? Toplam şeklindeki.
+
+435
+01:14:35,859 --> 01:14:40,940
+Toplam şeklindeki ifadelerin çarpımı şeklinde değiştirebiliriz arkadaşlar.
+
+436
+01:14:42,960 --> 01:14:47,399
+Dediğim gibi, burada şeye dikkat etmek lazım.
+
+437
+01:14:48,000 --> 01:14:52,619
+Örneğin, bir tane örnek daha yapıp bir ara vereceğim arkadaşlar.
+
+438
+01:14:52,920 --> 01:14:55,139
+15 dakikalık örnek.
+
+439
+01:14:56,639 --> 01:15:01,219
+F, A, B, C, D dedim.
+
+440
+01:15:01,939 --> 01:15:23,159
+Şöyle bir örnek verelim. 0, 3, 4, 5, 6, 7, 13 ve 14. Dolayısıyla şöyle Karnaugh map'imiz 4 tane değişken mi olacak? Baktığımızda aslında biz buradaki şeylerden değerlanabiliriz değil mi?
+
+441
+01:15:23,615 --> 01:15:50,855
+İfadelerden de, mesela doğruluk tablosu yaptığımızda, A, B, C, D, F şeklinde doğruluk ifadesi yazdığımızda, aslında biz sırasıyla, pardon, sırasıyla şuradan sıfırın karşılığı olan ifaden, 15'in karşılığı olan ifadeye kadar, aslında buradaki değerleri yazmış oluyoruz.
+
+442
+01:15:51,764 --> 01:16:18,024
+Evet, onları yazıyorsak şayet. Dolayısıyla burası bizim 00, 01, 11, 10, 00, 01, 11, 10. Aslında sıfırıncı gözümüz, bakın şuraya yazılıyor. Birinci gözümüz buraya yazılıyor. Ama ikide şuraya atlıyoruz. 3, 4, 5, 6, 7, 8'de, bakın birbirinden dolayı bir daha atlıyoruz.
+
+443
+01:16:18,963 --> 01:16:29,183
+Bizim A, B, C, D'miz, bir sıfırımız, bir sıfırımız, şuralarda bir sıfırlı ifadeler, A ve B'nin olduğu yerler burası.
+
+444
+01:16:30,384 --> 01:16:43,003
+Burası 8. göz, 9. göz, 10. göz, 11. göz. Daha sonra 12. göz, 13. göz, 14, daha sonra 15. Bakın.
+
+445
+01:16:43,444 --> 01:17:09,504
+Şurası ne? Şu göz. Hepsinin bir olduğu göz burası. Bakın hepsinin bir olduğu göz burası. O şekilde de size bir kolay yapım göstermiş olalım. Ne diyor bu? 0, 3, 4, 5, 6, 7, 13 ve 14'te bir varmış. Yapalım. Bir. Şurası birmiş.
+
+446
+01:17:10,292 --> 01:17:35,811
+Şurası birmiş, şurası birmiş, 6 ve 7'de de varmış bir, bir de 13 ve 14'te. Ben bunu Karnaugh map ile indirgesem, şöyle mi yapmam lazım? Böyle bir tane alıp, daha sonra bunları birleştirebilirim böyle. Öyle değil mi? Açıkta bir kalmaması lazım.
+
+447
+01:17:36,275 --> 01:17:39,355
+Dolayısıyla ifadem ne olacak benim? F ifadem.
+
+448
+01:17:40,215 --> 01:17:44,535
+Şu, önce iki komşulukluğu yazayım.
+
+449
+01:17:45,315 --> 01:17:48,535
+Ne yazmam gerekiyor bu durumda arkadaşlar?
+
+450
+01:17:50,115 --> 01:17:57,835
+A üstü, A üstü, D artı, sırasıyla yazayım bunları.
+
+451
+01:18:04,467 --> 01:18:07,807
+Artı, şöyle biraz yana çekeyim.
+
+452
+01:18:10,288 --> 01:18:21,188
+B, C üssü D, artı A üssü C, D, artı B, C, D üssü.
+
+453
+01:18:22,087 --> 01:18:25,568
+Bakın, B, C, D üssü.
+
+454
+01:18:26,188 --> 01:18:28,127
+Fakat, burada bir gariplik var.
+
+455
+01:18:28,908 --> 01:18:31,427
+Kim bunun dikkatini çeker bu?
+
+456
+01:18:32,340 --> 01:18:34,440
+Bu dörtlüğü yazmamıza gerek yok hocam.
+
+457
+01:18:34,440 --> 01:18:47,740
+Evet, doğru söyledim. Yani ben zaten şu tek amacım ne demiştim? En büyük komşuluğu yazmak. Ben burada hemen şurayı gördüğüm gibi, şu kısmı gördüğüm gibi hemen yazmak istedim mesela bunu.
+
+458
+01:18:47,740 --> 01:18:54,640
+Ama diğer yapmış olduğum işlemler, yani şu bir komşuluklar.
+
+459
+01:18:55,347 --> 01:19:19,747
+Yapmak zorundayım bunları çünkü. Yaptığım zaman zaten şuradaki birilerinin hepsi kapsanmış oluyor siyahla çizmiş olduğum. Dolayısıyla benim şu ekstradan aldığım iki komşuluklu alana aslında gerek yok. Zaten benim tek komşuluklarla yaptığım şeyle ben onu kapsıyorum. Demek ki Karnaugh haritalarının etkin bir şekilde
+
+460
+01:19:20,243 --> 01:19:35,304
+Etkin bir şekilde indirgenmesi için iki şeye dikkat edeceğiz. Olabildiğince büyük komşuluğu alacağız. Ama bu her zaman geçerli bir kavram değil. Niye? Çünkü bunun gibi böyle bazen ekstrem durumlar oluyor.
+
+461
+01:19:35,963 --> 01:19:45,931
+Olabildiğince en büyük komşulukla kapsamaya çalışacağız tabii ki. Kenardaki, köşede kalmış şeyleri, birileri. Ama...
+
+462
+01:19:46,195 --> 01:19:55,715
+Baktık, bizim yapmak zorunda olduğumuz başka işlemlerle beraber bu büyük komşuluklu alanlar kapsanıyorsa onu işleme almayacağız arkadaşlar.
+
+463
+01:19:57,735 --> 01:20:07,475
+Şimdilik bir ara verelim arkadaşlar. Bu arayı verdikten sonra tekrar dersimize başlayacağız.
+
+464
+01:20:08,515 --> 01:20:11,916
+15.30'da dersimize başlıyoruz arkadaşlar. Anlaşacak mı?
+
+465
+01:20:14,644 --> 01:20:16,144
+Birazdan görüşmek üzere.
+
+466
+01:34:14,452 --> 01:34:16,152
+Tekrar merhabalar arkadaşlar.
+
+467
+01:34:21,300 --> 01:34:22,340
+Ses geliyor mu?
+
+468
+01:34:23,619 --> 01:34:24,179
+Evet hocam.
+
+469
+01:34:24,719 --> 01:34:25,399
+Tamamdır.
+
+470
+01:34:25,399 --> 01:34:33,380
+Şimdiki konumuz da arkadaşlar eksik bul işlevleri.
+
+471
+01:34:38,260 --> 01:34:56,659
+Şöyle düşünebilirsiniz. Size bir fonksiyon verdiler diyelim. Bir fonksiyonumuz var burada. A, B, C, D. Herhangi bir uzunlukta değişken sayısında. Siz bunların A, B, C ve D değişkenlerine göre çıktılarını buluyorsunuz.
+
+472
+01:35:02,832 --> 01:35:17,711
+Çeşitli outputlar oluşabiliyor. 1, 0 gibi. Ama bu fonksiyonunda diyebiliriz ki bazı çıktıların, örneğin 0, 1, 1, 1 çıksın, ne olduğu önemsiz.
+
+473
+01:35:17,711 --> 01:35:23,971
+1 de olsa, 0 da olsa, önemli olan fonksiyonun geri kısmındaki şu.
+
+474
+01:35:24,448 --> 01:35:39,948
+1, 0, 1, 0, 1. Bu bilgilerin yeşille çizmiş olduğum yerlerin olması önemli. Aradaki bazı değerlerin ne olduğu? 1'de olsa olur, 0'da olsa olur.
+
+475
+01:35:40,756 --> 01:36:01,056
+Önemli olan bizim istediğimiz çıktıyı değiştirmemesi durumları olabilir veya verilmemiş olabilir. Bir doğruluk tablosu verilip bunların ne olduğu çok önemli değil. Önemli olan belli bazı girdileri, belli bazı çıktıların oluşturulması da denilebilir.
+
+476
+01:36:01,844 --> 01:36:12,163
+Bununla alakalı bir örnek yapacağım arkadaşlar. Bunlar don't care durumları veya belirsizlik durumları olarak adlandırılıyor arkadaşlar.
+
+477
+01:36:13,364 --> 01:36:22,264
+Bu durumda fonksiyon şöyle veriliyor. Soruyla beraber verelim. Örneğin F, A, B, C, D diyelim.
+
+478
+01:36:22,264 --> 01:36:29,203
+Bu öyle bir fonksiyon gibi şeyler mintermler cinsinden verilse 3.
+
+479
+01:36:30,036 --> 01:36:35,175
+7, 11, 12 ve 15.
+
+480
+01:36:36,355 --> 01:36:45,255
+Artı bu fonksiyonda don't care durumları, yani çıkışın ne olduğunun önemsiz olduğu, 1 de olabilir, 0 de olabilir.
+
+481
+01:36:45,456 --> 01:36:52,215
+Durumlar olabileceği 0, 10, 13 ve 14 durumları oluşsun.
+
+482
+01:36:55,439 --> 01:37:05,139
+Yani Karnaugh diyagramımızı çizecek olursak, şu şekilde, A, B, C, D,
+
+483
+01:37:11,507 --> 01:37:13,288
+Şeklinde çizecek olursak.
+
+484
+01:37:14,068 --> 01:37:16,948
+Kesin olarak bildiğimiz değerleri önce bir yazalım.
+
+485
+01:37:17,608 --> 01:37:22,667
+Ne yazacağız? 3'ü. 3 neresiydi? 0, 1, 2, 3.
+
+486
+01:37:23,387 --> 01:37:29,328
+Burada 1 var. Ondan sonra 4, 5, 6, 7. Şurada 1, 1 var.
+
+487
+01:37:30,488 --> 01:37:34,387
+11 var. 8, 9, 10, 11.
+
+488
+01:37:36,387 --> 01:37:38,387
+Burada 11'imizde.
+
+489
+01:37:39,252 --> 01:38:05,152
+12'de bir bir var ve de 12, 13, 14, 15 burada bir bir var. Bunun dışında don't care durumları neredeymiş arkadaşlar? Don't care durumları da 0'da varmış bir tane. 0 veya 1 gelebilir buraya. Bunun dışında 10'da varmış. 13 ve 14'de varmış.
+
+490
+01:38:05,555 --> 01:38:28,235
+13 ve 14 de varmış. 13 ve 14 de var. Yani 13 ve 14 burası, 10 ise burası. Bu durumda nasıl davranacağız? Buradaki temel amaç şu arkadaşlar. Olabildiğince en büyük komşulukla ifadeyi en indirgenmiş haliyle yazabilecek şekle getirmeye çalışıyoruz.
+
+491
+01:38:32,787 --> 01:38:37,408
+İki komşuluklu hal var. Peki, başka ne yapabiliriz?
+
+492
+01:38:38,047 --> 01:38:55,988
+Eğer şu aradaki değerleri de bir diye düşünecek olursak, böylece ikinci bir dört komşuluğu da, şunu da silelim, ikinci bir ikinci dereceden komşuluğu da elde etmiş oluruz.
+
+493
+01:38:57,775 --> 01:39:06,615
+Sıfır kabul edebiliriz. Böylece bunları diğerleri gibi sıfır kabul ettiğimizde onları işleme almamıza gerek kalmaz.
+
+494
+01:39:07,496 --> 01:39:13,336
+Bu durumda yani biz fiilere istediğimiz değeri verip ne yapıyoruz?
+
+495
+01:39:14,395 --> 01:39:17,095
+Fonksiyonu en indirgenmiş hale getirmeye çalışıyoruz.
+
+496
+01:39:17,956 --> 01:39:24,676
+Buradaki yeşille çizdiğimiz alanın şeyi nedir? En indirgenmiş hali, indirgediğimiz hali.
+
+497
+01:39:25,203 --> 01:39:40,984
+A, B, şurada, şurası da C, D. Dolayısıyla fonksiyonumuz, yazacak olursak, A, B, artı C, D şeklinde indirgenmiş oluyor.
+
+498
+01:39:41,384 --> 01:39:46,083
+Dediğim gibi fiilere istediğimiz değeri veriyoruz. Buradaki amaç,
+
+499
+01:39:46,387 --> 01:39:55,268
+En büyük komşulukla diğer birileri de kapsayabileceğimiz en büyük alanı oluşturabilmek şeklinde arkadaşlar.
+
+500
+01:39:56,268 --> 01:39:58,047
+Bu anlaşıldı mı arkadaşlar?
+
+501
+01:40:02,836 --> 01:40:04,155
+Bu anlaşıldıysa.
+
+502
+01:40:04,155 --> 01:40:05,235
+Hocam bir şey söyleyebilir miyim?
+
+503
+01:40:05,536 --> 01:40:05,735
+Tabii.
+
+504
+01:40:06,516 --> 01:40:08,155
+Ben kaçırdım da burayı.
+
+505
+01:40:08,816 --> 01:40:10,476
+Yani istediğimiz değeri verebiliyoruz değil mi?
+
+506
+01:40:10,556 --> 01:40:12,216
+Yani sıfırda bir geldiği yerde.
+
+507
+01:40:12,576 --> 01:40:14,776
+İlere sıfır veya bir verebiliyoruz.
+
+508
+01:40:14,856 --> 01:40:16,836
+Burada şu ikisini...
+
+509
+01:40:16,916 --> 01:40:21,695
+Şu ikisine bir vermemizin nedeni şu yeşil alanı oluşturabilmek.
+
+510
+01:40:22,355 --> 01:40:28,695
+Diğer fiillere sıfır vermemizin nedeni ise onları tekrar bir komşulukla işin içine katmak.
+
+511
+01:40:28,756 --> 01:40:30,376
+Katarsanız ifade uzar.
+
+512
+01:40:30,815 --> 01:40:32,596
+Örneğin buraya bir verirsek şayet.
+
+513
+01:40:33,136 --> 01:40:36,336
+Şuradan şöyle bir komşuluk oluştursunuz.
+
+514
+01:40:36,456 --> 01:40:39,016
+Büyük bir komşuluk ama bu da ifadeye ne olarak eklenir?
+
+515
+01:40:39,216 --> 01:40:39,655
+Bakalım.
+
+516
+01:40:40,376 --> 01:40:42,516
+A, C şeklinde.
+
+517
+01:40:43,796 --> 01:41:09,216
+Eklenir. Onun yerine bunun yerine sıfır versek zaten bu eklemeye gerek kalmamış olacak. Yani fiiler ne verildiği önemi yok. Burası anlaşıldı mı? Evet hocam anladım. Tamamdır. Üçüncü yöntemimiz arkadaşlar Queen-McKulask yöntemi.
+
+518
+01:41:13,076 --> 01:41:13,836
+Şimdi bu
+
+519
+01:41:14,224 --> 01:41:30,163
+Daha önce anlattığım görüşe dayalı ve Karnaugh haritaları arkadaşlar, hani 3-4 değişkene kadar güzel yapılıyor ama 5 değişken, 6 değişken olduğu zaman gittikçe zorlanmaya başlayacağız, işlemler uzayacak.
+
+520
+01:41:30,724 --> 01:41:37,003
+Biraz daha algoritmik bir yaklaşım var bu konuda. Yani çok değişken sayısını da hesaba katan.
+
+521
+01:41:37,824 --> 01:41:41,304
+Onları gösteren bir örnekle devam ediyoruz.
+
+522
+01:41:42,224 --> 01:42:03,404
+üzerinden Queen-McLawsk yöntemini anlatacağım arkadaşlar. Örneğimiz şu şekilde olsun. F, A, B, C, D işlemi verilsin. Bazen şuraya bir yazarlar yani birilerin olduğu kısımlar şeklinde.
+
+523
+01:42:03,887 --> 01:42:11,807
+3, 7, 11, 12, 13, 14 ve 15 şeklinde.
+
+524
+01:42:12,828 --> 01:42:16,828
+Şimdi burada bir tablo yapmıyoruz.
+
+525
+01:42:17,128 --> 01:42:26,708
+İlk adımda biz mintermleri, şurada verilen mintermleri bir tabloda ikilik tabanda yazıyoruz.
+
+526
+01:42:27,068 --> 01:42:28,688
+Elimizde neler var? 3.
+
+527
+01:42:29,448 --> 01:42:31,427
+Yani şu önce başlığını yazalım.
+
+528
+01:42:32,275 --> 01:42:46,376
+Minterm, ikili tabağın karşılığı ve lojik bir sayısı.
+
+529
+01:42:48,716 --> 01:42:51,275
+Örneğin, hangi mintermlerimiz var?
+
+530
+01:42:51,996 --> 01:42:58,735
+3, 7, 11, 12, 13, 14 ve 15.
+
+531
+01:42:59,828 --> 01:43:03,348
+Bunların ikinci ikili tabandaki karşılıklarını yazıyoruz.
+
+532
+01:43:04,388 --> 01:43:25,248
+0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1 şeklinde.
+
+533
+01:43:27,444 --> 01:43:41,463
+Bunda kaç tane bir var? Lojik bir var. Bunda iki tane, bunda üç tane, bunda üç tane bir var, bunda iki tane bir var, bunda üç tane, bunda üç tane ve en son bunda dört tane bir var.
+
+534
+01:43:41,463 --> 01:43:52,684
+Şimdi burada ilk yaptığımız şey şu ikili olanları kendi arasında bir grupluyoruz. Daha sonra üçlü olanları.
+
+535
+01:43:52,944 --> 01:44:03,003
+Kendi arasında bir başka grup yapıp, 4 tane bir barındıranları ise kendi arasında bir grup yazarak alt alta yazıyoruz arkadaşlar.
+
+536
+01:44:04,923 --> 01:44:16,444
+Şimdi ilk adım diyelim buraya. İlk adım. Önce grupları bir yazalım. A, B, C, D olsun.
+
+537
+01:44:17,652 --> 01:44:32,712
+Önce ilk grubumuzu yazalım. 3 ve 12 grubu. 3 ve 12 gördüğünüz gibi iki tane bir barındırıyordu. Onların karşılıklarını yazıyoruz.
+
+538
+01:44:33,971 --> 01:44:42,551
+Örneğin 3 neydi? 0, 0, 1, 1. 12 neydi? 1, 1, 0, 0.
+
+539
+01:44:43,444 --> 01:44:56,564
+Karaya bir çizgi çiziyoruz. Bu ikili gruplu. Daha sonra üçlü gruplar. Üçlü grupta neler var? 7, 11, 13 ve 14. 7, 11, 13 ve 14.
+
+540
+01:44:56,564 --> 01:45:08,644
+7, 11, 13 ve 14.
+
+541
+01:45:09,971 --> 01:45:35,971
+En son hangisi kalıyor geriye? Geriye 15 kalıyor. Bu 15 neydi? 1, 1, 1, 1. Bunları da sırası ile izleyeyim. 0, 1, 1, 1. 1, 0, 1, 1. 1, 1, 0, 1. Ve 1, 1, 1, 0.
+
+542
+01:45:37,203 --> 01:45:40,923
+Bundan sonraki adım arkadaşlar şu şekilde ilerliyor.
+
+543
+01:45:42,483 --> 01:45:49,023
+Sırasıyla ikinci adıma geçiyorum. Bunları yazdıktan sonra ikinci adımdayım.
+
+544
+01:45:51,843 --> 01:45:54,763
+Burada sırasıyla şunları yapıyorum arkadaşlar.
+
+545
+01:45:55,723 --> 01:45:59,183
+Ardışıl grupları birbirleriyle karşılaştırarak ilerleyeceğim.
+
+546
+01:45:59,183 --> 01:46:00,683
+Önce yeşil ve...
+
+547
+01:46:00,724 --> 01:46:13,804
+Mavileri karşılaştırıyorum. Sırasıyla 3-7, 3-11, 3-13, 3-14'ü karşılaştıracağım. Şöyle yapıyorum. Önce ne demek istedim burada?
+
+548
+01:46:14,744 --> 01:46:25,184
+Pardon, şuraları erken çizmişim. Çünkü karşılaştırmalar farklı uzunlukta olabilir. İlk önce şunu yapıyorum.
+
+549
+01:46:26,739 --> 01:46:51,520
+Önce şunu da yazayım. A, B, C, D. Önce 3 ile 7'yi karşılaştırıyorum. 3 ile 7'ye baktığımda aynı olan yerleri ortaklaşa yazıyorum. Örneğin 0 ile 0'ı aynı. 0 var, 1 var. 0'ları yazdıktan sonra B'de bir değişim var.
+
+550
+01:46:52,340 --> 01:47:05,820
+3'te B0, 7'de B1. Ama C ve D ikisinde de 1, 1. Sabit olanları, değişmeyenleri yazdıktan sonra değişim varsa buraya bir alt çizgi koyuyorum.
+
+551
+01:47:07,760 --> 01:47:14,780
+Değişimin olduğu dijitleri işaretlemiş oluyor. Sonra 3, 7'yi yaptıktan sonra 3, 11'e geçiyorum.
+
+552
+01:47:14,780 --> 01:47:17,460
+3, 11'e geçiyorum.
+
+553
+01:47:18,292 --> 01:47:31,192
+Burada karşılaştırma yapayım. 3-11 ile. Bakın ilk dijit, A dijiti değişiyor. Ama onun dışındaki dijitler değişmiyor. 0-1-1 şeklinde kalıyor.
+
+554
+01:47:33,532 --> 01:47:44,332
+Ondan sonra burada dikkat edeceğimiz husus şu arkadaşlar. Mesela 3 ile 13'e geçtik diyelim.
+
+555
+01:47:44,787 --> 01:48:03,987
+3'te, 13'te kaç tane dijit değişiyor? Bakın 0, 0, 1, 1. 2'yi aşmış. Yani sadece bir tane değişim olması lazım. Yani ardışıl gruplar içerisinde sadece bir bit de değişim olması lazım. Mesela bu ikili de bu üçlüydü.
+
+556
+01:48:12,591 --> 01:48:38,971
+3 tane değişim var. Olmaz. Sadece 2 tek değişimleri ilk başta tek gruba koyuyorum şimdi. Sonra bakıyorum. 3, 14'e bakıyorum sonra. Bakıyorum. Orada da A ve B sıfır sıfırken 14'te bir bire dönmüş. Demek ki 2 değişim var. Yani benim çizmek istediğim sadece tek değişimim.
+
+557
+01:48:40,051 --> 01:48:59,211
+Alt çizgi olacak burada. Bunu sağlamadım. Sonra 12'ye geçiyoruz. 12 ile beraber bir alt grubu tanıyoruz. Yani yeşillerle bir alt grubu tanacağız ama yeşillerle kırmızı grubu yani 15'i taramayacağız. Çünkü her ikisinde de çok fazla değişim var.
+
+558
+01:49:05,492 --> 01:49:27,431
+7'yi ele aldığımızda, bakın nerede değişim var? 12 ile 7'yi aldığımızda bu da hata veriyor, öyle değil mi? Bunu da geri alıyoruz. Çünkü çok fazla bitte değişim var. 12 ile 11'i alıyoruz. 12 ile 11'i ele aldığımızda, 12 ile 11'de de çok fazla değişim var. Bakın 1.
+
+559
+01:49:28,083 --> 01:49:31,224
+1, orası tuttu ama 1, 1 de tuttu.
+
+560
+01:49:31,543 --> 01:49:36,484
+12 ile 13 arasında, pardon 12 ile 11 arasında 1, 1 tuttu.
+
+561
+01:49:36,684 --> 01:49:39,604
+1, 0'a döndü. 0, 1, 0, 1 şeklinde.
+
+562
+01:49:40,184 --> 01:49:44,404
+Demek ki birden fazla dijitte değişim var, onu da alamıyoruz.
+
+563
+01:49:45,304 --> 01:49:47,884
+Daha sonra 12 ile 13'e bakıyoruz.
+
+564
+01:49:49,003 --> 01:49:49,823
+12 ile 13.
+
+565
+01:49:50,452 --> 01:50:06,791
+1-1-0-0'dı, 1-1-0-1. Sadece son dijitte değişim var. 1-1-0 alt çizgi. 12 ile en son neyi karşılaştıracağız? 12 ile 14'ü karşılaştıracağız.
+
+566
+01:50:07,311 --> 01:50:16,331
+1-1'ler tutuyor, tamam. 0-0, 0 tutuyor. Bir yerde değişim var, bunu da alabilirim artık. 12 ile 14'ü de alabilirim.
+
+567
+01:50:16,916 --> 01:50:23,096
+Sadece değişimin olduğu dijit hangisi? C dijitti. Burası da sıfır.
+
+568
+01:50:24,676 --> 01:50:33,556
+Burada işlemimiz bitti. Tek değişim artık yani yeşil ve mavi grubu tamamlamış oldum arkadaşlar.
+
+569
+01:50:34,776 --> 01:50:44,196
+Sıra geldi mavi ile kırmızı grubu karşılaştırmaya. Dolayısıyla araya çizgiyi çiziyorum. Tek değişim olacak arkadaşlar.
+
+570
+01:50:46,612 --> 01:51:03,511
+Geldik. Önce neyi karşılaşıyoruz? 7 ile 15'i karşılaştırıyoruz. 7 ile 15'e baktığımızda sadece tek bir dijitte değişim var. 7 ile 15'i karşılaştırdığımda sadece ilk dijit değişmiş oluyor değil mi?
+
+571
+01:51:06,572 --> 01:51:10,792
+Çarşamba günü ne var? Öyüç açamdayım. Çarşamba alayım mı?
+
+572
+01:51:11,859 --> 01:51:17,560
+[öğrenci], dersi dinlersen güzel olur. [öğrenci], duyuyor musun beni?
+
+573
+01:51:17,560 --> 01:51:18,640
+Haber, haber, haber.
+
+574
+01:51:19,779 --> 01:51:22,520
+Ben de yanlıştırdım, sinirle göre sinir.
+
+575
+01:51:22,640 --> 01:51:23,020
+[öğrenci].
+
+576
+01:51:26,739 --> 01:51:39,079
+7-15, daha sonra 11-15'e bakalım. 11-15, burada da değişimler de 11 ile 15 ile baktığımızda sadece B dijitinde.
+
+577
+01:51:39,920 --> 01:51:51,720
+1-1-1 şeklinde. Ondan sonra 13 ile 15'e bakalım. 13 ile 15'e bakalım. Sadece C dijitinde bir değişim var.
+
+578
+01:51:53,235 --> 01:51:55,055
+14 ile 15'e bakıyorum.
+
+579
+01:51:57,175 --> 01:52:00,655
+Burada da sadece D dijitinde değişim var.
+
+580
+01:52:01,735 --> 01:52:07,015
+Artık bizim, bakın iteratif biçimde ilerleyebiliyorum burada.
+
+581
+01:52:07,795 --> 01:52:10,295
+Yani daha algoritmik bir biçimde ilerleyebiliyorum.
+
+582
+01:52:10,475 --> 01:52:18,315
+Artık iki tane grubum var, üç tane grubum yok da artık birinci grup burası, ikinci grup burası.
+
+583
+01:52:19,060 --> 01:52:21,079
+Hep böyle tek değişimlere bakıyorum.
+
+584
+01:52:22,000 --> 01:52:26,840
+Arka arka, alt çizgiler de bu sefer sıfırlar ve birler haricinde alt çizgilerle tutacak.
+
+585
+01:52:27,340 --> 01:52:29,619
+3-7 ile 7-15'i karşılaştırdım.
+
+586
+01:52:31,359 --> 01:52:32,640
+İkiden fazla değişim var.
+
+587
+01:52:33,159 --> 01:52:36,399
+3-7 ile 11-15'e bakıyorum.
+
+588
+01:52:37,239 --> 01:52:39,899
+Şu alt çizgi uyuştu, birler uyuştu.
+
+589
+01:52:40,020 --> 01:52:41,000
+Tamam onu alabilirim.
+
+590
+01:52:41,819 --> 01:52:44,460
+3-7
+
+591
+01:52:45,395 --> 01:53:10,416
+11, 15 grubuna. Şurası da 3. adım olsun. Burada da A, B, C, D diyelim. Evet, 3, 7, 11, 15'i aldım. Neler tutuyor orada? Şu alt çizgi tutuyor, 1'ler tutuyor ama en baştaki kısım
+
+592
+01:53:10,547 --> 01:53:18,728
+Yani, şu 1 ile şu 0 birbirini tutmadı. Dolayısıyla, şuraya da bir alt çizgi koymuş oluyorum.
+
+593
+01:53:19,347 --> 01:53:23,007
+Bir öncekinden, burada dikkat edeceğiniz, bir öncekinden gelen alt çizgiyi alıyorum.
+
+594
+01:53:24,748 --> 01:53:32,087
+Daha sonra ne var? 3, 7, 3, 7, 13, 15'e batıyorum. Çok fazla değişim var, almıyorum.
+
+595
+01:53:32,756 --> 01:53:40,736
+3, 7, 14, 15'e bakıyorum. Çok fazla değişim var. Almıyorum. Bu durumda 3, 11'e geçiyorum. Sıra burada.
+
+596
+01:53:42,216 --> 01:53:54,436
+3, 11 ile 7, 15'e bakıyorum. 3, 11, 7, 15. 3, 11, 7, 15. Bakıyorum.
+
+597
+01:53:55,380 --> 01:54:21,420
+İlk baştaki şey tutuyor, alt çizgi. 0 ve 1 tutmuyor ama bir birler tutuyor. Alt çizgi tutuyor. Daha sonra şu birler tutuyor. Ama 0 ve 1, B dijit tutmuyor. Oraya da bir underscore koyuyor. Diğer kısım tutuyor. Böyle böyle ilerleyerek arkadaşlar, 3-11 ile diğer 13-15 çok fazla değişim var.
+
+598
+01:54:21,775 --> 01:54:26,896
+3-11 ile 14-15 çok fazla değişim var, almıyorum.
+
+599
+01:54:27,896 --> 01:54:29,815
+Ve 12-13'e geçiyorum.
+
+600
+01:54:30,856 --> 01:54:36,996
+12-13'e geçtiğinde ise, 12-13 ile 7-15 çok fazla değişim var.
+
+601
+01:54:37,195 --> 01:54:43,056
+12-13 yani şurası ile 11-15'e bakıyorum, çok fazla değişim var.
+
+602
+01:54:44,056 --> 01:54:46,496
+12-13 ile 13-15'e bakıyorum.
+
+603
+01:54:47,604 --> 01:55:11,724
+Evet, birbirler tutuyor. Sıfır ve alt çizgi tutmadı. Pardon. 12, 13, 14, 15. Şu ön alttakine bakıyorum. Birbirler tuttu. Sıfırla şey tutmadı, bir tutmadı. C dedi ki underscore'lar tuttu. Onu yazıyorum mesela. 12, 13.
+
+604
+01:55:12,787 --> 01:55:30,007
+14, 15 ikilisine baktım. Neler tuttu burada arkadaşlar? 12, 13'te 1, 1, underscore tuttu. Uymayan hangisi? Şu ikisi uymuyordu.
+
+605
+01:55:40,783 --> 01:56:05,943
+Çok fazla değişim. 12, 14'te 11, 15'e baktım. Çok fazla değişim. 12, 14'te 13, 15'e baktım. Bakıyorum. 1, 1 tuttu. 1, 1 tuttu. Underskorlar tuttu. Yani demek ki burada 12, 14, 13, 15. Neler tutmuştu? 1, 1'ler tuttu. Underskorlar tuttu. Farklılık yapan ne var?
+
+606
+01:56:06,355 --> 01:56:27,115
+Şu 0 ile 1, oraya mısı bu? 12, 14 ile 14, 15'e baktım. Şu alt dijit tutmadı, bu 1'di, bu 0'dı, bu alt dijit tutmadı. Elimde bunlar kalmış oldu. Sonuçta neye gelmiş olduk? Biz değişim göstermeyen dijitlere bakıyoruz kendi içerisinde. Bakın, burada ne diyor ilk kısımda?
+
+607
+01:56:29,268 --> 01:56:39,068
+A ve B, F fonksiyonumuzu yazarken indirgenmiş şekilde kendi içerisine bakıyoruz. Bu neyi veriyor? Bana A, B'yi veriyor.
+
+608
+01:56:40,028 --> 01:56:49,007
+0 olsaydı şayet A, B üstü olacak. 1 0 olsaydı A, B üstü olacak. Şu ikisi de aynı. Tek kabul edebiliriz. Bu da bize C, D'yi veriyor.
+
+609
+01:56:49,948 --> 01:56:55,967
+Bu da aynı olan yerler, şeyleri dikkate almıyoruz. Underscore'ları dikkate almıyoruz arkadaşlar.
+
+610
+01:56:57,524 --> 01:57:24,604
+Bu da iteratif bir şekilde ilerliyor gördüğümüz gibi. Özellikle bunun programı yazılabilir. Gruplandırmalar, listeler şeklinde rahatlıkla gerçekleştirilebilir bir işlem. Ardışıl gruplar birbirlerine karşılaştık. Dolayısıyla N'in özellikle 4'ten büyük olan kısımlarında, N'in değişken sayısı 4'ün üstünde olan kısımlarda bu tercih edilebilir.
+
+611
+01:57:26,131 --> 01:57:35,431
+Quinn Maklowski'ydi. Kabaca bir örnek üzerinden anlatmış olduk. Anlaşıldı mı arkadaşlar bu da? Kitapta ayrıntılı bir şekilde de anlatıyor.
+
+612
+01:57:36,391 --> 01:57:49,051
+Hocam bu mesela 12-13, 13-15 mesela. Eğer biriler mesela sağlamış olsaydı değerler, 13'ten 2 tane de aynı olması sıkıntı olmuyor değil mi?
+
+613
+01:57:54,195 --> 01:57:58,756
+Tek kısma indirgenmiş ifadeleri aldığımızda onlara bakıyoruz.
+
+614
+01:58:04,307 --> 01:58:12,668
+Artık zaten neye inmiş olduk burada? Tek gruba indikten sonra bakıyoruz. Elimizde nasıl ifadeler kalmış?
+
+615
+01:58:13,028 --> 01:58:24,428
+Birbirine şu ifadelerden birini almak yeterli. Bunlardan da birini almak yeterli. Bunlardan bu şekilde çarpımlar toplamış şeklinde ifade edebiliyoruz.
+
+616
+01:58:25,148 --> 01:58:27,668
+Fonksiyonu indirgenmiş halini ifade edebiliyoruz.
+
+617
+01:58:29,395 --> 01:58:38,395
+Evet, 19 kişi katılmış, 30 kişiyiz arkadaşlar. Derslere katılım online de olsa önemli. Dersi ders zamanında izlemek.
+
+618
+01:58:38,963 --> 01:58:58,404
+Sorular sormak önemli arkadaşlar. Siz online grupsunuz. Fakat biliyorsunuz yüz yüze sınıflarda biraz daha sorular geliyor. Biraz daha aktif ilgilenebiliyoruz. Siz de bu ilgiyi kaybetmeyin, bu çalışmayı kaybetmeyin. Kitaplardan falan filan muhakkak kendinizi tamamlayın.
+
+619
+01:59:03,604 --> 01:59:09,984
+İyi bir şekilde yetiştirin ki üst üste konular biriktiğinde sizin için zor olabilir.
+
+620
+01:59:10,623 --> 01:59:12,404
+Derste katılmayanları kastediyorum.
+
+621
+01:59:13,123 --> 01:59:17,123
+Önümüzdeki hafta türetilmiş kapılarla temel lojik kapıların yapılması diyeceğiz.
+
+622
+01:59:17,623 --> 01:59:21,644
+Ve kombinezonsal devrelere giriş yapacağız arkadaşlar.
+
+623
+01:59:23,224 --> 01:59:24,604
+Sizlerin sorusu var mıydı?
+
+624
+01:59:29,235 --> 01:59:40,155
+Sizlerin sorusu yoksa şayet haftaya tekrar bir terslik olmasa benle beraber devam edeceksiniz arkadaşlar. Kendinize iyi bakın, hepinize iyi haftalar diliyorum arkadaşlar.
+
+625
+01:59:41,576 --> 01:59:42,175
+İyi günler hocam.
+
+626
+01:59:42,576 --> 01:59:43,855
+İyi günler, kolay gelsin.
+
+627
+01:59:43,935 --> 01:59:44,555
+İyi günler hocam.
+
+628
+01:59:45,175 --> 01:59:46,135
+Sağ olun, iyi günler.

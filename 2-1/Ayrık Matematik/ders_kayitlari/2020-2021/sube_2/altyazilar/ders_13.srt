@@ -1,0 +1,1275 @@
+1
+00:02:18,099 --> 00:02:19,120
+Günaydın arkadaşlar.
+
+2
+00:02:28,211 --> 00:02:30,211
+hemen slaytımızı bulayım.
+
+3
+00:03:57,364 --> 00:04:02,984
+Lojik devrelerde Millie ve Moore makinelerini gösterdiler mi arkadaşlar size?
+
+4
+00:04:05,984 --> 00:04:07,183
+Evet hocam.
+
+5
+00:04:08,264 --> 00:04:13,544
+Tamam, yani şey, flip-floplardan sonra onları gördüm, onlarla birlikte gördünüz yani.
+
+6
+00:04:14,544 --> 00:04:15,183
+Güzel.
+
+7
+00:04:30,259 --> 00:04:52,800
+Şimdi son durum makineleri, bugünkü bakacağımız konu kısa bir konu bizim için. Çünkü bu dersin yerine, yani bu konunun yerine gelecek dönem hesaplama kuramı diye bir ders alacaksınız. Buradakiler sadece onun bir başlıklarına tanıtmak gibi bir şey olur onun yanında.
+
+8
+00:04:59,699 --> 00:05:06,860
+Hesaplama kuramının nereden bizim mühredatımıza girdiğiyle alakalı birçok şey anlatılır.
+
+9
+00:05:07,639 --> 00:05:14,300
+Biz bilgisayar programı yaparken veya algoritma geliştirirken
+
+10
+00:05:16,600 --> 00:05:25,819
+en son işi yapacak makineyi bir modele göre belirliyoruz. Sonuçta bu bir gerçekleşecek bir makine üzerinde çalışacak.
+
+11
+00:05:27,860 --> 00:05:31,860
+Hesaplama kuramı işin daha çok bunun bu tarafıyla ilgili.
+
+12
+00:05:32,860 --> 00:05:39,860
+Örneğin sizin yazdığınız bir programdaki kodu derleyici nasıl tanıyacak?
+
+13
+00:05:40,860 --> 00:05:45,860
+Yani derleme aşaması değil, o derlerken işte for döngüsünde belli bir kural var.
+
+14
+00:05:46,860 --> 00:05:52,860
+Buradaki kuralın nasıl derleneceği, arkadaki optimizasyonlar nasıl yapılıyor?
+
+15
+00:05:53,588 --> 00:06:05,988
+Bununla alakalı, bunun öncesinde en basit makinelerden başlayıp, daha karmaşık kompleks makinelere doğru bir ders anlatılır. Hesaplama kuramı bunun için var.
+
+16
+00:06:06,788 --> 00:06:17,588
+Daha sonra bu dersin üzerine biçimsel diller veya derleyici tasarımı diye bir başka ders eklenir.
+
+17
+00:06:18,420 --> 00:06:22,420
+gerçek anlamlı bir derlecinin nasıl yapılacağına orada giriyorlar.
+
+18
+00:06:23,920 --> 00:06:29,819
+Biz birazcık bunun detaylarına bakacağız. Bizim şu an kullandığımız bir makine modeli,
+
+19
+00:06:30,920 --> 00:06:35,920
+yani kodunu yazıp derlediğimiz C kodu veya herhangi bir programlı modelinde,
+
+20
+00:06:36,420 --> 00:06:38,420
+RAM model diye geçiyor.
+
+21
+00:06:39,420 --> 00:06:40,420
+RAM model.
+
+22
+00:06:41,620 --> 00:06:45,720
+Nedir bu RAM model? Yani biz bir hafıza birimine
+
+23
+00:06:47,091 --> 00:06:48,091
+Kodlarımızı
+
+24
+00:06:48,091 --> 00:06:49,912
+Bir saniye.
+
+25
+00:06:49,912 --> 00:06:53,412
+Bir dakika arkadaşlar.
+
+26
+00:07:15,668 --> 00:07:25,028
+Program kodlarımızı bir hafıza birimine kopyalıyoruz. Bu hafıza biriminin özelliği rastgele erişilebilir olması.
+
+27
+00:07:26,388 --> 00:07:31,268
+Şimdi sıralı erişim yapılan hafıza birimleri var. Örneğin tape, kasetler vs.
+
+28
+00:07:31,947 --> 00:07:38,908
+Orada bir for döngüsü yazdınız. Bu for döngüsünün tabii binary karşılığı var da.
+
+29
+00:07:39,548 --> 00:07:40,908
+Bunun tanınması için
+
+30
+00:07:42,644 --> 00:08:07,563
+kullanılan makine modeli tek tek bütün karakter karakter ileri geri ileri geri böyle sararak kontrol edecekti. Ve bu performansı düşüren, performansı aşağıya çeken olumsuz bir şey. Ama biz RAM model sayesinde rastgele erişip birçok şeyi çok rahatlıkla yapabiliyoruz. Daha bu işin en temelleri bu konu kapsamında anlatılıyor.
+
+31
+00:08:09,684 --> 00:08:31,684
+Bunun günlük hayattaki karşılığına baktığımızda evet birçok yerde aslında bunu kullanıyoruz. İşte turnikeler. Basit bir cihaz olan bu turnikeler arasında aslında sonlu bir durum makinesi var. Turnike'nin genel olarak açık ve kapalı şeklinde iki durumu var arkadaşlar. Kapalı olduğu durumda...
+
+32
+00:08:33,043 --> 00:08:43,644
+jeton atabiliyorsunuz mesela. Açıkken jeton atamıyorsunuz. Atarsanız boşa gidiyor veya atarsanız ne oluyor? Bir tahliye kısmı var. O jeton dışarı çıkıyor.
+
+33
+00:08:45,223 --> 00:08:57,323
+Ve kapalıyken attığınız jeton durumun değişmesine sebep oluyor. Bakın açıkken jeton atarsanız bir şey tanımlamanız gerekiyor.
+
+34
+00:08:58,100 --> 00:09:25,519
+Kapalıyken atarsanız bir başka tanım yapmak gerekiyor. Mesela açıkken tanım yapmadığınız durumda işte buna deterministlik olmayan makineli deniyor. Kapalıyken tanımladığınız için zaten orada herhangi bir sorun yok. Durum değişimini görüyoruz. Bir eylem gerçekleştiğinde durumun değiştiğini görüyoruz. Ben bunu sınav sorusu olarak sormuştum yaz okulunda. Bilmiyorum yaz okulunda ayrıyı alıp tekrar alan var mı aranızda?
+
+35
+00:09:28,307 --> 00:09:31,387
+müsaadenizle bir dakika bulayım onu.
+
+36
+00:09:36,083 --> 00:09:39,083
+Bizim turnikeler genellikle iki durumlu.
+
+37
+00:09:40,483 --> 00:09:52,907
+Ama ben Barcelona'da dikkatimi çekmişti. Orada öyle yani kaç sene önce gittiğimde güzel bir turnike modeli vardı hemen onu.
+
+38
+00:09:56,500 --> 00:10:05,500
+metro. Hatta sınav sorusunu hazırladıktan sonra dedim keşke bunun bir fotoğrafı veya videosu olsa YouTube'dan araştırmıştım.
+
+39
+00:10:05,500 --> 00:10:11,500
+YouTube'da sağolsun birisi yıllar önce oranın videosunu kaydetmiş.
+
+40
+00:10:24,563 --> 00:10:25,563
+Size önce
+
+41
+00:10:29,427 --> 00:10:30,187
+okunum.
+
+42
+00:10:50,676 --> 00:11:08,916
+Dikkat edin arkadaşlar. Bakın adam bileti bıraktı. Kağıt bilet. Bizim bu Ankara'da falan da vardır. Turnike'nin ucundan, hani o bir giriş kısmı var. O turnike'nin oradan bileti bıraktı. Şöyle biraz daha.
+
+43
+00:11:11,316 --> 00:11:18,436
+Sonra bileti bıraktıktan sonra bakın bileti almayı bekliyor. Daha açılmıyor turnike. Alır almaz açılıyor.
+
+44
+00:11:19,283 --> 00:11:28,463
+bir durum değişiyor. Hemen geçtikten sonra. Yani biletini almadan, biletini vermiş olsa bile biletini almadan
+
+45
+00:11:28,463 --> 00:11:34,963
+Turnike kapısı durum değişimi olmuyor. Güzel bir şeydi aslında, iyi yapmışlar.
+
+46
+00:11:42,067 --> 00:12:01,867
+Aynı anda iki kişi geçmesin diye geçer geçmez hemen farklı bir mekanizmayla bir durum değişimi daha oluyor. Yani bu aslında üç durumlu bir şey. Bileti vereceksin, bileti alacaksın ve Turnike'den geçeceksin. Üçüncü durumda ancak başlangıç durumuna geri dönüyorsunuz.
+
+47
+00:12:05,203 --> 00:12:08,083
+Yani bunu farklı aşı şeylerde kullanıyoruz.
+
+48
+00:12:10,363 --> 00:12:17,803
+Turnike'nin mesela açıktan kapalıya, kapalıdan açığa geçmesi işlemi için mesela bir eylem tanımlanıyor.
+
+49
+00:12:18,063 --> 00:12:24,323
+İşte jeton açarak, jeton ekleyerek kapalı durumdan açık duruma geçiriyoruz.
+
+50
+00:12:25,363 --> 00:12:28,384
+Açık durumdan kapalı işte turnike'den geçerek geçiyor.
+
+51
+00:12:31,283 --> 00:12:37,423
+Her bir durumda yapılacak olan eylemler bizim için belli bir anlam ifade eden şeyler.
+
+52
+00:12:38,163 --> 00:12:45,403
+Yani bu lojikte gördüğünüz işte flip-flop şu durumdayken sıfır gelmesi, bir gelmesi gibi de düşünebilirsiniz.
+
+53
+00:12:45,563 --> 00:12:48,483
+Tabi o ikili seviye düşünüyor da burada bir sürü seviye olabilir.
+
+54
+00:12:49,483 --> 00:12:55,943
+Yani açık durumu grafın bir düğümü, kapalı durumu grafın bir diğer düğümü olarak kabul ettiğinizde
+
+55
+00:12:56,788 --> 00:13:02,788
+Bu düğümlerden çıkan kenarlar ve bu düğümlere gelen kenarlar çok çok farklı olabiliyor.
+
+56
+00:13:04,288 --> 00:13:12,788
+Bu geçiş yolundaki, yani bu geçiş işlemindeki etiketler de genellikle iki parçalı.
+
+57
+00:13:12,788 --> 00:13:23,788
+Bu ne demek? İlk parça yapılacak olayın, olayın kendisi, diğeri de olayın sonunda. Yani bir kapalı durumdayken, jeton eklediğimde, jeton ver bıraktığımda
+
+58
+00:13:24,467 --> 00:13:34,307
+açık durumuna geçiş yap. Çıkışta böyle bir şey olsun veya hem durum geçişini söylüyor hem de outputta olacak şeyi söylüyor bize.
+
+59
+00:13:36,227 --> 00:13:43,827
+Ve bu aslında iki türlüdür. Onun için meli ve mor makinelerini gördünüz mü diye sordum.
+
+60
+00:13:46,548 --> 00:13:51,028
+Bunların işte birazdan şunları göreceğiz. Karakter sembolü var.
+
+61
+00:13:51,155 --> 00:13:59,596
+Moore makinesinde, şu yaptığımız bir anlamda ona benziyor olabilir ama değil.
+
+62
+00:13:59,596 --> 00:14:04,155
+Aslında bizimki biraz önceki Moore gibi düşünebiliriz.
+
+63
+00:14:04,155 --> 00:14:07,755
+İşte bir durumdan belli bir duruma geçişler sağlanıyor.
+
+64
+00:14:07,755 --> 00:14:11,796
+Ve o durumun üzerinde bir olaylar tanımlıyoruz.
+
+65
+00:14:11,796 --> 00:14:13,716
+Mealy makinesinde.
+
+66
+00:14:13,716 --> 00:14:15,915
+Moore makinesinde yine...
+
+67
+00:14:17,172 --> 00:14:27,112
+geçişler arasında aynı şeyler sıfır mı gelecek, bir mi gelecek, o yine mail'deki gibi var. Ama içerisinde bir ekstra bilgi tanımlıyoruz.
+
+68
+00:14:28,812 --> 00:14:37,312
+Bunların detayları hem lojikte hem de hesaplama kuramında anlatılıyor. Çok fazla detaya girmeye gerek yok.
+
+69
+00:14:38,532 --> 00:14:42,252
+Hepsinin ortak özelliği sonlu sayıda duruma sahip olması.
+
+70
+00:14:45,587 --> 00:14:50,067
+Dil tanımada, konuşma tanımada da bunlar örnek olarak verilebiliyor.
+
+71
+00:14:50,067 --> 00:15:02,067
+Şimdi sonlu durum makinesinin altılısı dediğimiz, burada belli semboller kullanılmış da farklı kaynaklarda, farklı türlerde örnekler görebilirsiniz.
+
+72
+00:15:02,067 --> 00:15:10,067
+Giriş sembollerinin sonluk kümesi, yani ben makineye giriş olarak neler görebilirim?
+
+73
+00:15:10,611 --> 00:15:18,611
+ve buradan çıkış olarak, output olarak onların sonlu kümesi neler alabiliriz? Kaç tane sonlu durumumuz var?
+
+74
+00:15:18,611 --> 00:15:28,611
+Bu kaç tane sonlu durum? İşte biraz önceki şeyde gösterdiğiniz gibi giriş ve çıkış, yani açık ve kapalı gibi iki tane, üç tane bu da sonlu olacak.
+
+75
+00:15:34,644 --> 00:16:02,083
+inputlar ile yapacağım karteziyen çarpımda gelecek bir fonksiyon. Durum fonksiyonlarını f ile gösteriyor. Bir de bu inputlara karşı gelecek outputları gösteren çıkış fonksiyonları var. Bir de başlangıç durumunu hangi durumdan başlayacağız? t eşittir sıfır anda onu söylememiz gerekiyor. Aslında bir de burada kabul durumu vardır.
+
+76
+00:16:03,251 --> 00:16:08,371
+Kabul durumda şudur, özellikle biçimsel hesaplama kurumunda bunu göreceksiniz, kuramında göreceksiniz.
+
+77
+00:16:09,511 --> 00:16:19,271
+Bir durumdan bir duruma gideceğiz ama en son ulaşacağımız durum kabul durumuna geldiyse tekrar başlangıç durumuna geri döndürmek isteyebiliriz.
+
+78
+00:16:19,271 --> 00:16:24,552
+Onu da genellikle şöyle regular expressionlarda göreceğiz.
+
+79
+00:16:25,871 --> 00:16:29,072
+İşte ağa, yıldız.
+
+80
+00:16:29,844 --> 00:16:34,304
+B yıldız, C yıldız.
+
+81
+00:16:35,184 --> 00:16:40,344
+A'dan istediğim kadar, B'den istediğim kadar, C'den istediğim kadar bir string tanım.
+
+82
+00:16:40,344 --> 00:16:42,244
+Yani A, B, C kabul.
+
+83
+00:16:43,044 --> 00:16:44,804
+A, B, B, C kabul.
+
+84
+00:16:45,604 --> 00:16:47,624
+A, B, C, C kabul.
+
+85
+00:16:49,244 --> 00:16:50,784
+A, A, B, C, C kabul.
+
+86
+00:16:51,604 --> 00:16:52,204
+Veya şöyle,
+
+87
+00:16:54,204 --> 00:16:55,284
+A üzeri
+
+88
+00:16:55,312 --> 00:17:10,891
+K diyelim, B üzeri L, C üzeri M. Ve şöyle de bir kural koyalım. K küçüktür, R küçüktür, M. Bunu tanımlayan otomatı yazın dediğimde örneğin şu tanımlanır.
+
+89
+00:17:11,432 --> 00:17:20,791
+A, B, B, C, C, C. İlk hatta budur. Eğer bunları sıfırdan büyük alırsak, bunu da şöyle yapalım.
+
+90
+00:17:21,811 --> 00:17:24,611
+Bu bir olursa, bu iki olacak, bu üç olacak.
+
+91
+00:17:26,091 --> 00:17:27,831
+Yani şunu mesela tanımayacak.
+
+92
+00:17:27,991 --> 00:17:30,991
+A, A, B, B, C, C, C.
+
+93
+00:17:31,711 --> 00:17:32,891
+Bu kabul değil diyecek.
+
+94
+00:17:33,731 --> 00:17:41,291
+İşte bunların kabul edildiğini, yani istediğin duruma ulaştığını gösteren kabul durumu vardır.
+
+95
+00:17:41,291 --> 00:17:43,411
+Genellikle şöyle iç içe iki.
+
+96
+00:17:44,372 --> 00:17:59,992
+daire ile gösterilen graflarda, hani bir graf düğümün içerisinde iki tane daire varsa o kabul durumuna ulaşmışım demektir. Böyle bir şey var. Yani zor değil, ezberlenecek bir tarafı da yok. Zaten bu kullanıla kullanıla öğrenilecek bir şey.
+
+97
+00:17:59,992 --> 00:18:07,372
+Şimdi bir örnek. Input'umuzda A ve B bilgileri varmış. Yani giriş olarak A ve B'yi vereceğiz.
+
+98
+00:18:10,836 --> 00:18:19,536
+çıkış olarak veriyormuş. Yani şunlar sıfır veya birler olarak verilecekmiş. State'lerimizde sıfırıncı state ve birinci state var.
+
+99
+00:18:19,536 --> 00:18:32,336
+Geçiş fonksiyonu da ben bu ifadeyi şöyle grafla gösterebildiğim gibi tablo yöntemini de gösterebiliyorum. Zaten siz logic'te daha çok bu tabloyu kullanıyorsunuz.
+
+100
+00:18:36,211 --> 00:18:59,211
+Flip-flop'ların karno ile denklemlerini üretiyorsunuz. Burada da ona benzer bir mantık var aslında. Şimdi sigma 0 durumuna A bilgisi geldiğinde yine sigma 0'a gidecekmiş. Bunu görüyoruz. Ve bu A bilgisine karşı üretilecek sonuç 0'mış. Bakın F
+
+101
+00:18:59,667 --> 00:19:06,167
+Bir sonraki duruma geçiş fonksiyonunu belirtiyor. Bu da çıkış fonksiyonunu belirtiyor.
+
+102
+00:19:06,667 --> 00:19:14,667
+Sigma'ya, işte b'ye geldiğinde nereye gidecek? Sigma 1'e gidecek. Sigma sıfara b'ye geldiğinde sigma 1'e gidecek.
+
+103
+00:19:14,667 --> 00:19:20,667
+Ve çıkışın 1 olacağını söylüyor. Bunu buradan modelliyoruz. Aynı şey sigma 1 için geçerli.
+
+104
+00:19:20,667 --> 00:19:26,667
+Şimdi burada, bunu aslında deterministik makine diyebilir miyiz arkadaşlar?
+
+105
+00:19:27,731 --> 00:19:29,708
+Deterministik
+
+106
+00:19:33,428 --> 00:19:35,244
+Ne demek deterministik?
+
+107
+00:19:43,251 --> 00:19:48,932
+Bu arada siz onu düşünürken ben sınavı paylaşacaktım, onu unutmayayım.
+
+108
+00:19:56,531 --> 00:20:18,531
+tüm durumlar belli. Yani input olarak bir hamle yaptığımda, bu yaptığım hamleye karşılık hangi duruma geçeceğim, çıkışta ne göreceğim gibi şeyler belli. Yani belirsiz olmayan herhangi bir şey yok. Buna deterministik otomatada deniyor. Zaten
+
+109
+00:20:19,028 --> 00:20:28,148
+gelecek dönem göreceksiniz işte non-deterministic finite automata, deterministic finite automata denecek. Bunlardan
+
+110
+00:20:33,715 --> 00:20:35,715
+Ayrı ayrı inceleyeceksiniz.
+
+111
+00:20:37,215 --> 00:20:41,715
+Şimdi, evet, sınavı görüyor olabilmeniz lazım arkadaşlar.
+
+112
+00:20:44,715 --> 00:20:45,715
+Devam edelim.
+
+113
+00:20:48,415 --> 00:20:57,715
+Giriş değeri 1.0, 1.0, 1.1 iken, işte, Finite State Machine çıkış olarak ne üretir demiş. Şöyle bir Finite State Machine var.
+
+114
+00:20:58,015 --> 00:21:00,939
+Şimdi burada çıkışları istiyoruz.
+
+115
+00:21:01,844 --> 00:21:07,324
+S0 durumunda başladığımızda, 1 verdiğimizde çıkışta ne görecekmişiz arkadaşlar?
+
+116
+00:21:08,443 --> 00:21:10,983
+1 verdiğimizde çıkışta 0 görecekmişiz önce.
+
+117
+00:21:12,144 --> 00:21:14,443
+Ve nereye geldik? S3 durumuna geldik.
+
+118
+00:21:16,084 --> 00:21:24,644
+S3 durumunda 0 verdiğimizde, 0 vermek şuraya demek, çıkışta yine 0 görecekmişiz. S1 durumuna geliyormuşuz.
+
+119
+00:21:29,683 --> 00:21:33,223
+Çıkışta 1 görecekmişiz, S2 durumuna geliyormuşuz.
+
+120
+00:21:34,443 --> 00:21:40,903
+S2 durumunda 0 verdiğimizde çıkışta 0 görüyoruz, S3 durumuna geliyoruz.
+
+121
+00:21:42,324 --> 00:21:47,983
+1 verdiğimizde 0 görüyoruz, S0 durumuna geri geliyoruz.
+
+122
+00:21:49,043 --> 00:21:53,844
+1 verdiğimizde 0 görüyoruz ve S3 durumuna geliyoruz.
+
+123
+00:21:54,483 --> 00:21:57,563
+Şunlar outputumuz. Yanlış yapmamıştır.
+
+124
+00:21:58,844 --> 00:22:06,003
+Çıkışta 001, 0000. Durum geçişlerini de isteseydim, o zaman şöyle yazacaktık.
+
+125
+00:22:06,003 --> 00:22:08,304
+Başlangıçta 0 durumundayız.
+
+126
+00:22:08,304 --> 00:22:11,884
+1 verdiğimizde ne yaptık? S3'e geçtik.
+
+127
+00:22:11,884 --> 00:22:15,983
+0 verdiğimizde S3'den S1'e geçtik.
+
+128
+00:22:15,983 --> 00:22:20,344
+Tekrar 1 verdik, S2'ye geçtik.
+
+129
+00:22:21,491 --> 00:22:24,172
+0 verdiğimizde S3'e geri geldik.
+
+130
+00:22:25,211 --> 00:22:27,552
+1 verdiğimizde S0'a geri geldik.
+
+131
+00:22:28,451 --> 00:22:30,491
+1 verdiğimizde S3'e geri geldik.
+
+132
+00:22:31,491 --> 00:22:34,971
+Böyle bir durum geçişlerinin olduğunu söyleyebiliriz.
+
+133
+00:22:40,723 --> 00:22:46,403
+Böyle bir state diagramı olan bir şey neyi gerçekleştirmektedir demişler.
+
+134
+00:22:47,844 --> 00:22:54,403
+Şimdi aslında bu birazcık tahmin edilmesi gereken bir şey. Bunun için tablo yapmak gerekebilir.
+
+135
+00:22:55,423 --> 00:23:02,683
+Şimdi S0 durumundayız. Bunun bir F tarafı var. Bir de G tarafı var değil mi?
+
+136
+00:23:03,827 --> 00:23:10,987
+1 gelebilir, 0 gelebilir, 1 gelebilir, 0 gelebilir. Bunu analiz edeceğiz.
+
+137
+00:23:13,227 --> 00:23:24,467
+Bir de S1 durumu için, S2 durumu için bunları yazacağız. S0 durumuna 1 geldiğinde sonuçta 0 göreceğiz, S1 durumuna gidecekmişiz.
+
+138
+00:23:25,347 --> 00:23:30,227
+S0 verdiğimizde S0'a sonuçta yine 0 görüyormuşuz.
+
+139
+00:23:31,028 --> 00:23:33,248
+S2 durumuna gidiyormuşuz.
+
+140
+00:23:34,988 --> 00:23:35,807
+Bunlar hepsi birlikte.
+
+141
+00:23:36,147 --> 00:23:38,288
+S1 durumunda
+
+142
+00:23:38,288 --> 00:23:40,528
+1 geldiğinde
+
+143
+00:23:40,528 --> 00:23:42,067
+sonuç 1 oluyor.
+
+144
+00:23:42,988 --> 00:23:44,147
+Pardon, sonuç 1 oluyor.
+
+145
+00:23:47,147 --> 00:23:48,807
+1 geldiğinde
+
+146
+00:23:48,807 --> 00:23:50,667
+sonuç yine kendisine geliyor.
+
+147
+00:23:51,667 --> 00:23:53,468
+0 verdiğimizde
+
+148
+00:23:53,468 --> 00:23:55,748
+sonuç 1 oluyor.
+
+149
+00:23:57,347 --> 00:23:57,468
+Ve
+
+150
+00:23:58,740 --> 00:24:00,740
+Gideceği durum S2.
+
+151
+00:24:00,740 --> 00:24:10,740
+S2 durumunda 0 verdiğimizde, 1 verdiğimizde, sonuç 0 oluyormuş.
+
+152
+00:24:10,740 --> 00:24:16,740
+Gideceğimiz durum S, sonuç 0 oluyor. Gideceğimiz durum S1.
+
+153
+00:24:16,740 --> 00:24:24,715
+S2 durumunda 1 verdiğimizde, 0 verdiğimizde, sonuç 0.
+
+154
+00:24:25,268 --> 00:24:26,588
+Gideceği durum S2.
+
+155
+00:24:28,968 --> 00:24:32,248
+Şimdi, şöyle bir şey var aslında burada.
+
+156
+00:24:32,948 --> 00:24:35,468
+Başlangıç durumumuzu da burada dikkate alırsak.
+
+157
+00:24:37,868 --> 00:24:42,068
+İşte 0-1 verdiğimizde mesela, ilk başta 0-1 olsun.
+
+158
+00:24:42,668 --> 00:24:45,068
+Bunu 1 bit öteleme yapıyor.
+
+159
+00:24:46,888 --> 00:24:48,807
+Sağ bir kez shift ötelemesi yapıyor.
+
+160
+00:24:49,528 --> 00:24:50,888
+Bunu da şöyle düşünebiliriz.
+
+161
+00:24:52,180 --> 00:24:54,180
+Çıkıştaki bilgi
+
+162
+00:24:56,500 --> 00:25:10,180
+S0 durumundayken 0 oldu. Burada da 0. Yani şunu gördük. Sonra sağ öteleme yapınca işte bu bir birim 1 geliyor.
+
+163
+00:25:11,620 --> 00:25:19,148
+Çıkışta 1 görüyoruz. S1 durumunda 1 de gelse 0 da gelse. Sonra burada da
+
+164
+00:25:19,284 --> 00:25:37,764
+Şunu da 0'da görüyoruz. Bu durum geçişleri şu 0 1'i ne yapıyor? 0 0 yapıyor. Eğer başta 1 varsa, ilk başta ne olacak? 1 varsa önüne bir 0 gelecek tekrar 0 1'e getirecek. Bu şekilde bir öteleme yapan makine.
+
+165
+00:25:42,420 --> 00:25:50,259
+Evet, çıktı içeren sonlu durum makinelerine verilen en genel örnek iki sayı tabanında yani toplama işlemi yapan şeyler.
+
+166
+00:25:51,900 --> 00:26:01,259
+Toplama için kabul edilen çiftlerin giriş hükümesi 00, 01, 01, 01, 01. Çıkışta 0 ve 1 olacakmış.
+
+167
+00:26:02,420 --> 00:26:05,840
+X ve Y giriş değerlerine göre iki durumdan biri oluşur.
+
+168
+00:26:06,963 --> 00:26:12,283
+x ile y'nin değerinin toplanması, bir de eldeli dediğimiz x, y ve 1 değerinin toplanması.
+
+169
+00:26:14,104 --> 00:26:19,584
+Elimizdeki iki durumdan biri eldesiz ve eldeli durum. Yani s0 ve s1 durumlar olacak.
+
+170
+00:26:21,783 --> 00:26:29,003
+Bu başlangıç durumumuzda s0 ise seri toplama yapan sonlu durum makinemiz nasıl olacak demiş.
+
+171
+00:26:32,500 --> 00:26:43,000
+sıfır sıfır geldiğinde bakın girişte artık iki bitlik bir şey kullanıyoruz. Çıkışta göreceğimiz şey yine sıfır veya bir olacak.
+
+172
+00:26:43,000 --> 00:26:53,500
+Bir bir gelirse nedir? Bu iki şekilde toplanıyor arkadaşlar. Şurada bakayım başka bir örnek var mıydı?
+
+173
+00:27:08,884 --> 00:27:13,063
+Şöyle bir örnek biz yapalım.
+
+174
+00:27:21,140 --> 00:27:29,140
+Bir bilgisayar sistemine giriş yapabilmek için şart aşağıda verildiği gibidir demiş.
+
+175
+00:27:29,140 --> 00:27:35,140
+Login veya logon işlemi.
+
+176
+00:27:51,220 --> 00:27:54,720
+Demiş ki ilk durumda kullanıcı ID kontrol edilir.
+
+177
+00:27:56,220 --> 00:27:58,220
+Kullanıcı ID kontrol.
+
+178
+00:28:00,519 --> 00:28:05,420
+Girilen ID geçerse yeniden ID girişi yapılır. Geçerli ise şifre.
+
+179
+00:28:06,019 --> 00:28:07,720
+Yani valid
+
+180
+00:28:09,019 --> 00:28:10,420
+or invalid
+
+181
+00:28:11,019 --> 00:28:13,019
+ID durumu var.
+
+182
+00:28:14,720 --> 00:28:16,720
+Ondan sonra ikinci durumda
+
+183
+00:28:17,319 --> 00:28:18,819
+girilen şifre.
+
+184
+00:28:20,692 --> 00:28:39,652
+kontrolü. Şifre geçersiz ise ID girişi tekrarlanır. Geçerli ise komut işleme ortamına dönülür. Yani valid durumu var, invalid durumu var şifre için.
+
+185
+00:28:41,332 --> 00:28:48,291
+Sisteme girecek. Son durumda ise her komut yürütüldükten sonra tekrardan prompta dönülür.
+
+186
+00:28:48,339 --> 00:28:55,739
+DOS ekranı gibi düşünün bizim C kodlarını çalıştırdığımız comment line gibi düşünelim.
+
+187
+00:28:55,739 --> 00:29:07,139
+Şimdi geçerli ID'ye mesela ve şu durumları tanımlayacağız. Geçerli ID diyelim.
+
+188
+00:29:17,683 --> 00:29:20,844
+Parola için geçerli parola
+
+189
+00:29:24,500 --> 00:29:27,399
+Şöyle P yazalım. Bu da geçersiz parol olsun.
+
+190
+00:29:36,500 --> 00:29:39,960
+Sonra A durumu Enter User ID denilmiş.
+
+191
+00:29:46,291 --> 00:29:48,291
+ve Enter Password
+
+192
+00:29:52,660 --> 00:29:54,660
+Sonra prompt ekranı
+
+193
+00:29:58,003 --> 00:30:00,000
+Sonra x any input
+
+194
+00:30:03,028 --> 00:30:05,028
+Böyle bir şey, makine.
+
+195
+00:30:12,276 --> 00:30:14,836
+Tabii sisteme girince
+
+196
+00:30:18,836 --> 00:30:21,836
+S0 durumundayız. Örneğin ilk aşamada
+
+197
+00:30:28,147 --> 00:30:54,827
+User ID girilecek. User ID'nin girilmesi A işlemi. Eğer ben User ID'yi geçersiz girersem, yani invalid yaparsam tekrar yapacağım bu işi. Tekrar User ID girersem. Eğer doğru bir veri girersem, örneğin invalid bir durumda.
+
+198
+00:30:58,099 --> 00:31:22,639
+Enter Password komutunu da seçersem, yeni bir durum gelecek, S1 durum. Burada geçersiz bir parola girersem, şu geçersiz parola, şunu Q diyelim arkadaşlar da karıştırmayalım ya.
+
+199
+00:31:23,419 --> 00:31:25,279
+Sanki sen bura yokmuş gibi.
+
+200
+00:31:25,875 --> 00:31:28,036
+Değişik bir karakter kullanıyorum, anlamı yok.
+
+201
+00:31:30,915 --> 00:31:38,875
+Geçersiz bir parola girersem, S1 durumuna, S0 durumuna tekrar geri gireceğim. Çünkü tekrar ID'yi girmemi isteyecek.
+
+202
+00:31:40,375 --> 00:31:48,935
+Onun için Enter User ID şeyini de seçmek gerekiyor, operasyonunu seçmek gerekiyor. S1 ile S0 durumu arasındaki ilişki bu şekilde.
+
+203
+00:31:50,420 --> 00:31:54,380
+S1 durumunda diğer durum geçerli parola girdim.
+
+204
+00:31:58,163 --> 00:32:04,663
+Prompt ekranının açılmasını isteyeceğim işte. O da yeni bir durum ortaya çıkarıyor, S2 durumu.
+
+205
+00:32:05,364 --> 00:32:08,163
+Burada artık sisteme giriş yapabildim.
+
+206
+00:32:09,163 --> 00:32:21,463
+Sisteme giriş yaptığımdan sonra herhangi bir Prompt ekranında devam etmek istiyorum ve Prompt ekranında yapacağım her türlü operasyonu devam etmek istiyorum. Bakın, S2 durumunda
+
+207
+00:32:21,940 --> 00:32:35,140
+Aslında bu tam deterministlikte olmuyor. S2 durumunda, ne bileyim, gerçi başka gelecek olasılık yok bu durumda. Yani yapacak bir şey yok da. Bu şekilde bir diagram çiziliyor.
+
+208
+00:32:36,740 --> 00:32:44,500
+Aslında bu diagramlar bize neyi sağlar? Ya da işin algoritmasının çözümlemeyi, analiz etmeyi sağlıyor.
+
+209
+00:32:44,940 --> 00:32:49,539
+Lojikleri de zaten onun için kullanılıyor. Şimdi bir tane daha örnek bakalım.
+
+210
+00:32:49,683 --> 00:32:53,523
+Değişken isim verme kuraları aşağıdaki gibi olsun denmiş.
+
+211
+00:32:55,323 --> 00:32:58,003
+Bir, dört karakterli olacakmış.
+
+212
+00:33:01,003 --> 00:33:04,963
+İkincisi, ilk karakter hariç diğerleri rakamdan oluşacak.
+
+213
+00:33:07,763 --> 00:33:08,763
+Oluşabilir.
+
+214
+00:33:23,188 --> 00:33:25,908
+Karakter kümemiz şunlardır şındaysa
+
+215
+00:33:26,628 --> 00:33:28,188
+Geçersiz olacakmış
+
+216
+00:33:28,188 --> 00:33:30,108
+Büyük A'dan Z'ye
+
+217
+00:33:53,107 --> 00:33:55,587
+Arkadaşlar, ses almayı unuttuk.
+
+218
+00:33:57,647 --> 00:34:03,387
+Evet, başka da bir şey görünmüyor. Bir de karakter sayılacak denmiş. Yeni bir değer girmesi istenecektir.
+
+219
+00:34:03,387 --> 00:34:10,188
+Karakter sayısını da şu Sigma ile saklayacağız.
+
+220
+00:34:12,627 --> 00:34:18,268
+İlk başta S0 durumu var. Başlangıç durumu.
+
+221
+00:34:19,092 --> 00:34:24,612
+Burada karakterleri saymak için bir tane sayısını saklayan değişken diyelim.
+
+222
+00:34:32,148 --> 00:34:59,648
+kaçıncı karakterde olduğunu Sigma ile gösterebiliriz. Şimdi burada her şey olabilir ama 0-9 arası olmadı. Eğer 0-9 arasında bir şey girdiysem kendisine geri gelecek. Tekrar giriş yapmamızı isteyecek. Şöyle bir şey. Büyük A ile Z arasında veya küçük A ile küçük Z arasında bir şey gelirse yeni duruma geliyoruz. Espir durumuna.
+
+223
+00:35:00,788 --> 00:35:04,788
+Ve burada tekrar karakter kontrolü sayma işlemi yapıyoruz.
+
+224
+00:35:05,788 --> 00:35:12,188
+Buradan itibaren üç farklı giriş gelebilir.
+
+225
+00:35:13,188 --> 00:35:18,988
+Büyük A'dan büyük Z'ye, küçük A'dan küçük Z'ye, sıfırdan 9'a.
+
+226
+00:35:19,387 --> 00:35:20,587
+Yeni bir durum.
+
+227
+00:35:21,587 --> 00:35:27,788
+Bu durumda yine karakterleri saydığımızı düşünelim.
+
+228
+00:35:28,052 --> 00:35:36,352
+Aynısından bir tane daha olacak arkadaşlar. S3 durumu. Bir tane daha olacak bu durumdan. S4 durumu.
+
+229
+00:35:40,115 --> 00:35:49,596
+Niye mesela kendi üzerinde bunu çevirmiyoruz? O zaman ne olur? Sonsuz tane girilebilir. Yani dört karakterli şartını sağlamayız.
+
+230
+00:35:49,596 --> 00:35:58,275
+Yani şöyle bir şey yapsaydık hocam da işte A'dan Z'ye büyük A'dan büyük Z'ye deseydik o zaman olmazdı. O zaman dört karakter şeyini sağlayamayız.
+
+231
+00:35:59,315 --> 00:36:00,935
+A'dan Z'ye 0,9.
+
+232
+00:36:07,251 --> 00:36:08,692
+En son aşamada
+
+233
+00:36:08,692 --> 00:36:16,311
+Aslında bu iki daireyle de gösterilir. Bu da kabul durumudur, S4.
+
+234
+00:36:17,371 --> 00:36:25,431
+Buraya ulaştıysak, işlemin kabul edildiğini, yani bu ifadenin verilen şartları sağladığını gösteririz.
+
+235
+00:36:26,131 --> 00:36:32,751
+Örneğin 0, A, B, C sağlıyor mu diye mesela bunu kontrol etmek isterseniz.
+
+236
+00:36:33,268 --> 00:36:57,667
+0 verdiğinizde buraya geri dönüyor. Burada A geliyor ondan sonra. A geldiği için S1 durumuna geliyoruz. Sonra B vermişiz, S2 durumuna geldik. Sonra C vermişiz, S3 durumuna geldik. İfadenin sonuna geldiğimizde kabul durumuna gelmedik. Kabul durumuna gelmediğimiz için bu parola geçersizdir diyoruz. Tamam mı?
+
+237
+00:37:01,331 --> 00:37:08,492
+Yani bu sayma işi biraz şey, mantıksal olarak kaçıncı karakter olduğunu göstermek için bir değişken gibi düşün.
+
+238
+00:37:09,492 --> 00:37:14,631
+Yani bir program yazıyorsun, kaçıncıya gelmiş? Aslında gerek de yok.
+
+239
+00:37:15,652 --> 00:37:20,931
+Yani şu şey zaten deterministik olarak her şeyi belirtiyor. Ekstra bir değişken olarak kullanılmış.
+
+240
+00:37:23,431 --> 00:37:27,091
+Önemli olan işin sonunda kabul durumuna gelmek.
+
+241
+00:37:28,244 --> 00:37:29,524
+bakalım şurada
+
+242
+00:37:34,996 --> 00:37:36,235
+Bu yeni bir dergim.
+
+243
+00:37:38,235 --> 00:37:44,756
+Geçersiz karakterlerin, ha bir dakika, bir dakika şu, bir dakika, Sigma şunun için arkadaşlar ben unuttum.
+
+244
+00:37:45,976 --> 00:37:58,436
+Şimdi bunların dışında bir karakter girilirse, herhangi bir Sigma karakteri, sayısını demeyelim de burada Sigma, yani onu da yanlış yazmıştı soruya.
+
+245
+00:37:59,676 --> 00:38:01,056
+Geçersiz karakterler.
+
+246
+00:38:09,172 --> 00:38:23,412
+Mesela şöyle, A'ya girdik, B'ye girdik, diyez girdik, C'ye girdik arkadaşlar. Kontrol ettiğimizde S0 durumundayız. A geldiğinde S1'e geçiyoruz. Tamam. Küçük B'ye gelmiş, S2'ye geçiyoruz.
+
+247
+00:38:24,091 --> 00:38:34,831
+Diyez gelmiş, bunlardan herhangi birisi değil, tekrar S2'deyiz. Sonra C'ye gelmiş, S3'e geçtik. Sonunda kabul durumuna geldik mi gelmedik. O zaman bu kabul değil, bu da kabul değil.
+
+248
+00:38:35,668 --> 00:38:52,688
+Şöyle yapalım. A, 1, küçük A, D. A gelmiş S1'e geçtik. 1 gelmiş S2'ye geçtik. Küçük A gelmiş S3'e geçtik. Küçük D gelmiş S4'e geçtik. Ve sonunda kabul durumundayız. Bunu söylüyoruz.
+
+249
+00:38:55,188 --> 00:38:58,908
+O da olur ama zaten şimdi şöyle.
+
+250
+00:39:00,275 --> 00:39:17,956
+Sorus bize öyle bir şey söyleseydi, tekrar sıfırdan giriş yapılsın deseydi, ne yapacaktık? Buraya geri dönecektik. Ama girilen şifre doğru mu yanlış mı için tekrar başa döndürmeye gerek yok. Çünkü işin sonunda S4'e geliyorsan kabul edilecek.
+
+251
+00:39:21,492 --> 00:39:45,512
+Yani, çek edeceğimiz şey S4'de gelip gelmediğimiz, o da olur. Hani dediğimiz yanlış değil, doğru. Ama o biraz daha şey için kullanılır, hani, sıfır durumuna geri dönüp tekrardan parolanın girilmesi için kullanılan bir yöntem. O durumda da onu yapabiliriz. Bütün sigmalar S0'a gönderilir o durumda.
+
+252
+00:39:48,724 --> 00:39:50,724
+biraz daha slide'dan bakalım.
+
+253
+00:39:55,284 --> 00:40:02,884
+Mesela demiş ki gönderilen mesaj içerisinde arka arkaya tekrar eden üç tane bir varsa hata mesajı olarak dışarıya bir değeri versin.
+
+254
+00:40:04,184 --> 00:40:11,064
+Şimdi arka arkaya üç tane bir değeri olması ne demek? O zaman üç farklı durumu analiz edeceğim demektir.
+
+255
+00:40:11,963 --> 00:40:15,604
+Şimdi mesajın öncesindeki durumlar neyse ne?
+
+256
+00:40:22,036 --> 00:40:45,296
+Arkadan iki tane daha bir gelebilir. O zaman bunu bir kontrol edeyim. Yeni bir durum oluşturuyoruz S0 durumunda. Ama diyoruz ki çıkış hala bir şey çıkış hala sıfır. Yani yeni bir duruma geç ama çıkışta sıfır göster. Niye? Şu ana kadar bir tane bir geldi. Bundan sonra bir tane daha bir gelirse
+
+257
+00:40:46,356 --> 00:41:04,036
+Diyoruz ki, yeni bir şey var. Bir daha kontrol edelim. Çıkış hala sıfır. Yeni duruma geçti. Şimdi bir tane daha bir gelirse, üçüncü bir geldi. Üçüncü bir geldi. Çıkışı bir yapıyoruz. Ve kendi içerisinde geri döndürüz.
+
+258
+00:41:12,244 --> 00:41:23,724
+Yani bir, bir, bir geldiğinde, şöyle de bir geldiğinde, çıkışta ne olacak? İşte şurada çıkışta sıfır, burada çıkışta sıfır, burada çıkışta biri gördük, burada biri gördük, burada biri gördük.
+
+259
+00:41:24,064 --> 00:41:34,203
+Hatta bunu siz belki lojikte görmüşsünüzdür. Overlap olma durumuna bakarlar. Yani önceki üç durum kontrol edilir.
+
+260
+00:41:39,411 --> 00:41:48,671
+Şundaki üç durumda da bir yanacak. Ama bir defa biri olduktan sonra bu kendisini sıfırlar, yeni bir üçlü duruma geçmek ister.
+
+261
+00:41:49,451 --> 00:41:57,991
+Onun lojikli işte flip-floplarla devresi falan yapılır. Onun biraz da analizi farklı. Biz burada biraz da işin geneline bakıyoruz.
+
+262
+00:41:58,931 --> 00:42:04,571
+Farklı bir durum bilgi geliyor orada tabii ki. Sonuçta onlar bir bitlik kaydediciler olduğu için.
+
+263
+00:42:05,172 --> 00:42:16,331
+Diğer, her sıfır geldiğinde ne oluyor? Bütün sıfırlarda bu üç durumun tekrar kontrol edilmesi için her sıfırı S0 durumuna geri döndürüyoruz.
+
+264
+00:42:18,739 --> 00:42:26,799
+Yani iki tane bir geldi ama sıfır geldi. Tamam, hiç önemli değil. Önce iki tane bir problem değil diyoruz. Tekrar her şeyi baştan kontrol edeceğiz.
+
+265
+00:42:27,559 --> 00:42:39,659
+Böyle bir soru versek mesela, gerçi bugünkü sınavda zaten böyle verilmez de bir test sorusu olsa, bu makineye 01001110000 verdik.
+
+266
+00:42:39,659 --> 00:42:42,819
+İlk soru, çıkışta neler görülür sırayla?
+
+267
+00:42:43,443 --> 00:42:58,443
+Bu dizi boyunca veya durum değişimlerini yazın. S0-0 durumunda başlasın veya S1 durumunda başlasın. Buna göre çıkışı ve durum geçişlerini yazın desek öyle bir şey olabilirdi.
+
+268
+00:42:58,443 --> 00:43:09,443
+Evet, bu slide bu kadar arkadaşlar. Bunu Pan Hoca yayınlayacaktı ama şey olsa ben ders duvarına koyarım. Bakalım şurada bir örneğimiz var mı?
+
+269
+00:43:17,588 --> 00:43:19,128
+Bunu zaten yapmışız.
+
+270
+00:43:31,155 --> 00:43:33,876
+Yani burada başka örnek kalmış.
+
+271
+00:43:39,155 --> 00:43:53,155
+Evet, daha 45 dakika var. Geçeriz karakterizm. Tam onda bir şey yok. 45 dakika var. Sormak istediğiniz bir şey var mı arkadaşlar? İsterseniz çalışmanız için sistemi kapatabiliriz.
+
+272
+00:43:57,876 --> 00:44:12,036
+Merak ettiğiniz bir şey varsa sorabilirsiniz. Yoksa konu bu kadar. Başka da benim anlatacağım bir şey yok. İnşallah dönem boyunca faydalı olmuşuzdur.
+
+273
+00:44:14,536 --> 00:44:22,676
+Sınav süresi 75 dakika. Gördüğünüz soruya gelebiliyorsunuz. Sorularınız rastgele gelecek.
+
+274
+00:44:23,699 --> 00:44:31,419
+Yani bu konuda herkes kendi vicdanıyla baş başa. 25 soru yanlış doğruyu götürmüyor.
+
+275
+00:44:34,299 --> 00:44:47,379
+Sınav bitince ben size ders duvarına pdf olarak kaç puan aldığınızı, işte doğrularınız, yanlışlarınız duyuracağım.
+
+276
+00:44:49,811 --> 00:44:58,211
+O puan bilginizi USIS'e gireceğim. USIS'teki notunuzla puan bilginiz arasında bir fark varsa lütfen bana mail atın.
+
+277
+00:44:58,211 --> 00:45:05,411
+Hocam, yani PDF'teki notum 80 görünüyor. Siz 70 girmişsiniz, 90 girmişsiniz artık.
+
+278
+00:45:05,411 --> 00:45:11,411
+Yani hata yapmamaya çalışıyorum da 90 kişinin notunu girmek birazcık şey oluyor, karıştırıyoruz.
+
+279
+00:45:11,411 --> 00:45:16,411
+Sistem çünkü not girmek için çok uygun bir arayüze sahip değil.
+
+280
+00:45:19,827 --> 00:45:29,987
+Final sınavında da Finance Street Machine dahil olmak üzere bütün konulardan muhtemelen en fazla 5 soru olacak bir sınav olacaktır.
+
+281
+00:45:31,588 --> 00:45:44,168
+Yani biz ne gördük? Bu ders arkadaşlar daha çok veri yapıları, algoritma analizi, ondan sonra hesaplama kuramı gibi derslerin temelini oluşturuyor.
+
+282
+00:45:45,108 --> 00:45:51,348
+Mesela sizlerden yorum istedim. İyi ki de istemişim. Hatta bu dersten konuşmamız iyi oldu.
+
+283
+00:45:53,048 --> 00:45:58,348
+Bazı arkadaşlar, hocam hiç kod yazmadık falan demişler. Ben normalde benim olsam yazardım.
+
+284
+00:45:59,728 --> 00:46:07,348
+Yani bir Digicster algoritmasını kodlayalım falan derdik. Ama Banu Hoca bu konuda şey, yani...
+
+285
+00:46:07,860 --> 00:46:17,860
+Bu dersin gayesi bu değildir. Kod yazmak değildir. Bu işin biraz daha mantığını, arkasındaki mekanizmayı anlamaktır görüşünde.
+
+286
+00:46:18,620 --> 00:46:25,660
+Öyle olunca iki grupta ortak sınav yapıyor. Yetişmek adına mecburen böyle kağıt üzerinde daha çok iş yapmak gerekiyor.
+
+287
+00:46:28,820 --> 00:46:40,820
+Yani gördüğümüz graflar konusu, ağaçlar konusu, ondan sonra stack, queue, yapısal programlamada da kısmen değindiğimiz Linked Listler, ondan sonra Recursion konusu.
+
+288
+00:46:40,820 --> 00:46:54,508
+Bundan sonraki hayatınızda her yerde karşınıza çıkacak, meslek hayatınızda. Bunların mantığını yerinizde olsam, yani bunların algoritmalarını kodlarım kendim.
+
+289
+00:46:54,931 --> 00:47:07,931
+Bu kodlar size ileride nasıl fayda sağlar? Şimdiden şablonunu oluşturduğunuz kodlarınız ileride her türlü probleme uyarlayabileceğiniz bir kütüphaneniz olur. Ben yapmanızı tavsiye ederim.
+
+290
+00:47:09,211 --> 00:47:20,591
+Mesela Java'da birkaç Java'da kod yazabilirsiniz. Çünkü aynı şeyi ya Object Oriented'da ya da Structured Program'da göreceksiniz.
+
+291
+00:47:21,300 --> 00:47:44,540
+C'de yazabilirsiniz. Hem bu dil konusunda kendinizi geliştirirsiniz. Artık en uygun zamanı kendinizi belirleyebilirsiniz. Bu gelecek dönemlerinize bir yatırım fayda olur. Yani oradaki konuları öğrenmek adına. İşte recursive ile alakalı bazı algoritmalar var. Merge Sort ve Quick Sort. Ben ek ders yaparsam gelecek cumartesi günü Merge Sort'u kodlayacağız.
+
+292
+00:47:45,684 --> 00:47:51,004
+Güzel bir recursive uygulamasıdır. Aynı zamanda arkasında güzel bir mantık vardır. Ona bakarız.
+
+293
+00:47:52,564 --> 00:47:59,304
+Bu ders biraz daha dediğim gibi giriş mahiyetinde. Bana göre birinci sınıfın ikinci döneminde olması daha mantıklı.
+
+294
+00:47:59,464 --> 00:48:05,244
+Ama farklı sebeplerden dolayı, kredi sebeplerinden dolayı böyle yapılmış.
+
+295
+00:48:07,344 --> 00:48:11,584
+Diyeceklerim bunlar. İnşallah dediğim gibi faydalı olmuştur.
+
+296
+00:48:12,436 --> 00:48:16,436
+Sizin eklemek istediğiniz bir şey yoksa arkadaşlar dersi bitirebiliriz.
+
+297
+00:48:17,436 --> 00:48:30,596
+Saat 10.30'da şöyle bir şey yapalım mı? Gerek var mı? Zoom açayım, ilk 10-15 dakika bakalım der misin ama test sınavı olduğu için çok soru cevap yapmaya gerek yok.
+
+298
+00:48:31,296 --> 00:48:33,276
+Hani klasik olsa soruları açıklarız.
+
+299
+00:48:36,083 --> 00:48:42,663
+Hocayla da kaç defa kontrol ettik. Yani test sınavında sınavı olduğu için ben soruları çok açıklama gereği duymuyorum.
+
+300
+00:48:43,763 --> 00:48:46,603
+Çünkü cevaba giden sorular olabiliyor.
+
+301
+00:48:49,363 --> 00:48:52,263
+Ama illa ki hocam hani açalım dersek.
+
+302
+00:48:53,603 --> 00:48:55,023
+Ha, oradan yazabilirsiniz.
+
+303
+00:48:56,483 --> 00:49:02,243
+Bu dersin WhatsApp grubu varmış. Bir arkadaşınızla da konuştuk. Yani dün onun için şey yazdım.
+
+304
+00:49:03,027 --> 00:49:11,487
+Teknik bir sıkıntı olursa zaten ben çok müdahale edemedim de çok anlaşılmayan bir şey varsa Telegram'dan yazarsanız ben cevaplarım.
+
+305
+00:49:11,487 --> 00:49:19,327
+WhatsApp grubuna da yazma işi kapatılacak sınav süresi boyunca herhangi bir provokasyon olmasın diye.
+
+306
+00:49:19,327 --> 00:49:27,027
+Çünkü gruplarda kimlerin kayıt olduğu, kimlerin olduğu belli olmuyor.
+
+307
+00:49:27,380 --> 00:49:39,200
+İsimler, nickname'ler falan var. Ders dışarıdan birileri dahil olabiliyorlar farkında olmadan. O da size mağduriyet olmasın diye öyle bir kapatılma olacak. Telegram'dan yazabilirsiniz sorunuz olursa.
+
+308
+00:49:40,420 --> 00:49:53,000
+Yani e-mail, yıldız mailini de kullanabilirsiniz. Şimdi şu çok karşı yapılan bir şey. Artık bunu öğrenmiş olmanız lazım. Sayfaya da soru çözerken F5'e basmayın arkadaşlar.
+
+309
+00:49:54,516 --> 00:50:20,536
+Bir de şu yapılıyor. Genelde soru soruluyor. İşaretlediğiniz anda sisteme işaretiniz kaydediliyor. Test sınavında işaretlediğiniz sorunun cevabı kaydediliyor. Zaman bilgisiyle kaydediliyor. Sonra değiştirirseniz o değiştirdiğiniz üstüne geliyor, kaydediliyor. En son sınavı bitir dediğinizde hocam işte sınavı bitir dediğinde şöyle bir uyarı çıktı, böyle bir uyarı çıktı. Genel anlamda böyle bir sorun yaşamadık.
+
+310
+00:50:22,420 --> 00:50:39,420
+Klasik sınav olsa sınavı yüklerken sınavı gönder diye butona basıyorsunuz. Son anda bastığınızda yüklenmeyebiliyor. Son dakikaya bırakılma sorunu yaşıyoruz bazı arkadaşlarla. Ama test sınavında böyle bir şey yok. Yaptığınız her yanıt...
+
+311
+00:50:40,052 --> 00:51:01,932
+Sistema kaydediliyor. Hatta biz önceden görebiliyorduk yani öğrenci sınav süresinde 30. dakikada kaç puan almış. Cevaplarına göre sürekli online puan hesaplanıyordu. O işlem yükünü kaldırdılar daha sonra biraz daha yük harcıyor diye. Onun için sayfayı mümkün oldukça yani YF5 yapmayın.
+
+312
+00:51:03,092 --> 00:51:21,892
+İşte ileri geri butonlarına web browserda basmayın. Normal ileri yani çözerek sakin çözün diye süreyi 75 dakika verdik. Göreceksiniz yani 25 sorunun belki 10 tane sorusu birer dakikalık sürelerle geçiştirilecek çok rahat sorular.
+
+313
+00:51:27,764 --> 00:51:51,484
+Hiçbir soru o 4-5 dakikada çözülecek soru değil. Yani Banu Hoca o konuda fazlasıyla imser davrandı. Ben normalde diğer bölümlere verdiğim derslerde görülen soruya geri gerilemez uyguluyorum ama burada uygulamaya gerek duymadık. Kendi bölümümüzün öğrencileriyle tanışıyoruz, biliyoruz, ediyoruz.
+
+314
+00:51:52,403 --> 00:51:56,824
+O konuda herkes kendi vicdanıyla baş başa kalsın dedik. Yani kimseye bir şey diyemiyoruz.
+
+315
+00:51:59,023 --> 00:52:05,903
+Diyeceklerim bu kadar. Tekrar görüşmek üzere. Birçok olunuzla belki farklı derslere de helalleştik.
+
+316
+00:52:07,003 --> 00:52:13,223
+Ben dönem boyunca dinlediğiniz için teşekkür ederim. İnşallah faydalı olmuştur. Hakkınıza helal edin.
+
+317
+00:52:13,423 --> 00:52:17,663
+Varsa bir hakkınız benden yana helal olsun diyelim ve dersimizi bitirelim.
+
+318
+00:52:27,027 --> 00:52:28,027
+mücadeleler arkadaşlar.
+
+319
+00:52:34,739 --> 00:52:52,999
+Peki, ben teşekkür ederim. Kapatalım. Telegram üzerinden bir şey olursa sınav süresince ulaşabilirsiniz. Sizler de sağ olun. Hayatınızda, bundan sonraki eğitim hayatınızda, meslek hayatınızda ben ayrıca başarılar diliyorum. Kendinize iyi bakın. İyi hafta sonları.

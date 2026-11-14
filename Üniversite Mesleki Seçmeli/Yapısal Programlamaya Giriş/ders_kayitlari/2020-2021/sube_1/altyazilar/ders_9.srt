@@ -1,0 +1,435 @@
+1
+00:01:53,524 --> 00:01:55,524
+5 dakika bekleyelim [öğrenci].
+
+2
+00:01:57,123 --> 00:01:59,123
+Olur. Hoş geldin.
+
+3
+00:06:25,651 --> 00:06:27,596
+Selamlar arkadaşlar.
+
+4
+00:06:30,836 --> 00:06:33,915
+Nasılsınız? Kimseden ses yok.
+
+5
+00:06:35,056 --> 00:06:36,056
+Selam hocam.
+
+6
+00:06:38,516 --> 00:06:39,795
+İyi is hocam.
+
+7
+00:06:40,316 --> 00:06:42,615
+Bekleyin, her şimdilerde iyi.
+
+8
+00:06:45,556 --> 00:06:47,556
+Bugün ilk labomuzu yapacağız.
+
+9
+00:06:55,187 --> 00:07:02,187
+83 kişi olduk, çoğunluğumuz burada. Bence başlayabiliriz.
+
+10
+00:07:04,187 --> 00:07:06,187
+Paylaşayım mı soruyu?
+
+11
+00:07:09,555 --> 00:07:30,555
+Arkadaşlar, aynı laboratuvarda yani gerçek laboratuvarda yaptığınız gibi soruyu paylaşacağız sizinle ve size bir 45 dakika vereceğiz soruyu anlattıktan sonra bu 45 dakika içerisinde biz buradayız. Eğer sorularınız olursa bize sorabilirsiniz.
+
+12
+00:07:31,764 --> 00:07:49,264
+Ve şöyle anlatacağım. Linkleri chatten paylaşayım istersen. Bir dakika şöyle yapalım. Bende bir yeni versiyonu var. Ben onu chatten atayım da onu paylaşalım. Ekran işe gerek yok çünkü.
+
+13
+00:07:54,100 --> 00:07:58,100
+Ben istersen kapatıp atmanır.
+
+14
+00:08:07,860 --> 00:08:13,860
+Buradan direkt pdf'i paylaştığım için herkes linke de erişebilir.
+
+15
+00:08:34,388 --> 00:08:37,828
+Şimdi gene bunu paylaşayım, dursun ekran.
+
+16
+00:08:47,028 --> 00:08:50,347
+Arkadaşlar, sorumuz zor değil.
+
+17
+00:08:50,611 --> 00:08:59,611
+Sizden öncelikle kullanıcıdan bir dizi almanızı istiyoruz. Bu dizinin özelliği ise ardışık elemanlardan oluşması.
+
+18
+00:08:59,611 --> 00:09:08,611
+Ama kullanıcının bir tane elemanı eksik girdiğini varsayıyoruz veya eksik girmeye de bilir. Örneklere bakın lütfen.
+
+19
+00:09:18,611 --> 00:09:21,091
+sayısını unuttuğu için
+
+20
+00:09:21,091 --> 00:09:23,432
+bu sayıyı bulmanızı
+
+21
+00:09:23,432 --> 00:09:25,192
+istiyoruz. Aynı
+
+22
+00:09:25,192 --> 00:09:26,971
+şeyi negatif sayılarda da
+
+23
+00:09:26,971 --> 00:09:28,791
+gerçekleyebilirsiniz.
+
+24
+00:09:29,591 --> 00:09:31,271
+Ve örneğin son örnekte
+
+25
+00:09:31,271 --> 00:09:33,491
+olduğu gibi 10, 11, 12
+
+26
+00:09:33,491 --> 00:09:35,531
+yani diziler farklı boyutlarda
+
+27
+00:09:35,531 --> 00:09:37,391
+da olabilir bu kullanıcıya bağlı.
+
+28
+00:09:37,971 --> 00:09:39,171
+Herhangi bir kayıp
+
+29
+00:09:39,171 --> 00:09:40,552
+değer olmayabilir.
+
+30
+00:09:41,312 --> 00:09:43,091
+Ama burada asıl bu soruda
+
+31
+00:09:43,091 --> 00:09:45,231
+sizden istediğimiz bu soruyu nasıl
+
+32
+00:09:45,231 --> 00:09:46,531
+çözdüğünüz. Çünkü
+
+33
+00:09:46,611 --> 00:10:00,000
+Kullanıcı burada 10 tane değerde girmek isteyebilir, 100 tane de olabilir, 1000 tane de olabilir. Sizden burada istediğimiz şey, efektli bir, yani verimli bir çözüm üretebiliyor musunuz? Bunu görmek.
+
+34
+00:10:00,000 --> 00:10:24,200
+Yani tek tek bakmanızı aslında istemiyoruz. Buna göre bir puan alacaksınız. Yani sadece sonuca ulaşmak değil amacımız. Bunun için de size bir ipucu verdik. Bu ipucuya bağlı kalarak eğer programınızı geliştirirseniz tam puan alabileceksiniz. Sadece sonuca ulaşmanız önemli değil. Nasıl ulaştığınız da önemli dediğim gibi.
+
+35
+00:10:25,587 --> 00:10:32,587
+Birden fazla kayıp elemana bakmaya gerek yok. Sadece bir tane kayıp elemana bakmanız yeterli.
+
+36
+00:10:32,587 --> 00:10:46,587
+Ve kodunuzu yazdıktan sonra zipliyorsunuz veya rarlıyorsunuz. Aşağıda Google Form linki var. Bu linke yüklüyorsunuz ve ardından mailinizde size bir cevap maili gelecek.
+
+37
+00:10:46,587 --> 00:10:53,587
+Yüklediğinize dair cevabınızın bir kopyası olacak. Bu maili görmeden lütfen emin olmayın yüklediğinizde.
+
+38
+00:10:53,587 --> 00:10:56,907
+Bu mail gelene kadar sistemde kalın.
+
+39
+00:10:56,907 --> 00:11:00,747
+Laboratuvar süresi bittiği zaman dosya yüklemenize...
+
+40
+00:11:00,747 --> 00:11:04,867
+Tamamdır Fatih Hocam, teşekkürler.
+
+41
+00:11:04,867 --> 00:11:12,467
+Laboratuvar süresi bittikten sonra dosya yüklemenize izin vermemiş olacağız.
+
+42
+00:11:12,467 --> 00:11:18,827
+Bu yüzden bu süre boyunca bu cevap mailini aldığınızdan lütfen emin olun.
+
+43
+00:11:21,779 --> 00:11:42,336
+Süreniz 45 dakika. Ve şunu da rica edeceğim arkadaşlar. Okul mailinizi, zaten Google Form olduğu için Gmail'lerinizi kullanabilirsiniz. Okul maili diye bir şart yok ama lütfen dosyalarınızı numaranız.zip
+
+44
+00:11:42,336 --> 00:12:05,655
+Kod dosyalarınızı numaranız .c şeklinde ayarlayın arkadaşlar. Zaten bu form linkinde de belirtiliyor. Mailiniz çok önemli değil ama aslında eğer mailiniz crazy.sayı sayı etçilmeyse bu önemli. İsminizin açık olduğu mailinizi kullanın.
+
+45
+00:12:10,868 --> 00:12:28,868
+Başka soru var mı arkadaşlar? Bu arada şunu belirteyim, eğer genel sorularınız varsa lütfen sesli olarak sorabilirsiniz, chatten genel sorabilirsiniz ama diyelim ki soruyu çözüyorsunuz, zaten çok yardımcı olmayacağız tabii ki bu kısa bir sınav gibi olduğu için.
+
+46
+00:12:28,868 --> 00:12:37,612
+Ama eğer soruya özel bir sorunuz varsa lütfen herkese mesaj göndermek yerine özel olarak bize gönderin.
+
+47
+00:12:39,059 --> 00:12:44,059
+Arşiv dosyasak zip, rar şeklinde yüklemeniz gerekiyor. O şekilde alacak form.
+
+48
+00:12:47,059 --> 00:12:49,059
+Sevgi, bir telefonla bakabilir misin?
+
+49
+00:12:49,059 --> 00:12:50,059
+Çok teşekkür ederim.
+
+50
+00:13:02,131 --> 00:13:05,131
+Hocam, dosyayı tekrar paylaşma ihtimaliniz var mı acaba?
+
+51
+00:13:06,131 --> 00:13:09,131
+Linki direkt atayım arkadaşlar.
+
+52
+00:13:11,131 --> 00:13:13,131
+Yüklemeyi zip olarak mı yapacak?
+
+53
+00:13:13,131 --> 00:13:16,011
+Zip ve yarar yapabilirsiniz.
+
+54
+00:13:22,100 --> 00:13:26,100
+Girdiği dışarıdan mı alacağız, içeride sabit verildiğini mi kabul edeceğiz?
+
+55
+00:13:26,100 --> 00:13:29,100
+Sabit bir şey yok arkadaşlar, kullanıcıdan açtığınız girdiği.
+
+56
+00:13:32,500 --> 00:13:42,100
+Girmiş olduğunuz dizide sıralı olacak, sadece bir elemana eksik olacak. Yani ışık bir şekilde bir girdi, vermeyin.
+
+57
+00:13:42,100 --> 00:13:49,299
+Ardışıklığı tek fark olarak mı alacağız? Yoksa 1, 3, 5, 7 olarak düşünebilir miyiz? Yoksa 1, 2, 3, 4.
+
+58
+00:13:49,299 --> 00:13:53,299
+Yok arkadaşlar, sıralı tek tek. 1, 2, 3, 1er, 1er.
+
+59
+00:13:54,500 --> 00:13:57,700
+Bir de artan değil mi hocam? Azalan, ardışık değil, sadece artan.
+
+60
+00:14:00,244 --> 00:14:02,244
+Evet, artık.
+
+61
+00:14:02,244 --> 00:14:06,244
+Ben şu an şey...
+
+62
+00:14:06,244 --> 00:14:08,244
+Şöyle bir saniye...
+
+63
+00:14:09,244 --> 00:14:16,244
+Evet, her şeyi kullanıcıdan alacaksınız. Eleman sayısı da girdi olacak mı diye sorulmuş.
+
+64
+00:14:17,244 --> 00:14:24,244
+Bir şey, 45 dakika dedik de ama şey, dörtte bitiyor laboratuvar. O yüzden bir tam saat alabilir miyiz, netleştirmek adına?
+
+65
+00:14:25,331 --> 00:14:29,572
+Arkadaşlar, 14.50'de bitecek.
+
+66
+00:15:00,596 --> 00:15:01,275
+galiba.
+
+67
+00:15:05,011 --> 00:15:08,331
+Hocam, dosyayı isimlendirmeyi nasıl yapalım? Ben kaçırdım orayı da.
+
+68
+00:15:08,331 --> 00:15:12,331
+Arkadaşlar, numaranız, .rar, numaranız, .c.
+
+69
+00:15:12,791 --> 00:15:13,551
+Tamamdır.
+
+70
+00:15:16,051 --> 00:15:28,991
+Bu arada arkadaşlar, lütfen break, continue, go to, bu tür şeylerden, komutlardan kaçınalım. Bunları kullanmayalım. Global değer kullanmayalım.
+
+71
+00:16:39,251 --> 00:16:59,251
+Arkadaşlar, soru pdf'ini avesislerimizle paylaşıyoruz. Geç kalanlar oradan bakabilir. Biz bir süre burada duracağız ve eğer sorunuz olursa diye. Sonra oturumu kapatacağız. Siz 14.50'ye kadar devam edeceksiniz. 14.50'den sonra formun yanıt alımını kapatıyor olacağız.
+
+72
+00:17:47,124 --> 00:17:49,124
+Benim şu anda ekranım gözüküyor mu?
+
+73
+00:17:52,124 --> 00:17:53,124
+Evet hocam gözüküyor.
+
+74
+00:17:54,124 --> 00:17:57,124
+Sadece pdf mı görünüyor mu, bütün ekranı mı görünüyor?
+
+75
+00:18:00,124 --> 00:18:02,124
+Ekranı görüyoruz hocam tamamen.
+
+76
+00:18:04,124 --> 00:18:07,124
+Ben sesimi kapatmışım, konuşuyorum ama.
+
+77
+00:18:09,683 --> 00:18:15,283
+Ben şu abesi de hemen yükleyeyim, geç kalanlar oradan ödeve baksınlar.
+
+78
+00:19:27,443 --> 00:19:28,443
+Ben de paylaştım.
+
+79
+00:19:42,355 --> 00:19:44,355
+Hocam, bir sor sorabilir miyim?
+
+80
+00:19:44,355 --> 00:19:45,355
+Tabii.
+
+81
+00:19:45,355 --> 00:19:52,355
+Dizide sıralı olacaklar ya, sağdaki eleman her zaman daha mı büyük olacak? Yani tersine sıralanmış...
+
+82
+00:19:52,355 --> 00:19:55,355
+Yok, artan sırada olacak.
+
+83
+00:19:55,355 --> 00:19:56,203
+Tamamdır hocam.
+
+84
+00:20:14,420 --> 00:20:22,660
+Aves'i de paylaştım arkadaşlar. Sonradan katılan olursa, hani, gerçi buraya kapatacağız ama.
+
+85
+00:21:13,460 --> 00:21:15,460
+Hocam bir şey sorabilir miyim?
+
+86
+00:21:15,460 --> 00:21:16,460
+Hı hı.
+
+87
+00:21:16,460 --> 00:21:19,460
+Kullanıcıdan diziyi sırala aldığımız zaman varacaktık değil mi?
+
+88
+00:21:19,460 --> 00:21:20,460
+Evet, evet.
+
+89
+00:21:21,460 --> 00:21:22,460
+Tamam, teşekkürler.
+
+90
+00:21:26,195 --> 00:21:31,315
+Ama dizide unutulmayan eleman da olabilir. Yani onu bir şekilde kontrol etmeniz gerekiyor yine.
+
+91
+00:21:39,059 --> 00:21:41,559
+Tekrarlar mısınız dediğinizde acaba?
+
+92
+00:21:42,559 --> 00:21:48,559
+Diziyi sıralı aldığımızı varsayıyoruz ama dizide unutulmayan eleman da olabilir aynı üçüncü örnekteki gibi.
+
+93
+00:21:49,059 --> 00:21:50,923
+Anladım, tamam, teşekkürler.
+
+94
+00:22:52,019 --> 00:23:04,420
+Arkadaşlar, sorunuz varsa alalım çünkü birazdan yayını kapatacağız. Soru sorma hakkınızı da boşuna kaçırmayın. Eğer aklınızda bir soru varsa sorabilirsiniz.
+
+95
+00:23:05,619 --> 00:23:08,819
+Birden fazla kayıp sayı olabilir.
+
+96
+00:23:11,220 --> 00:23:14,259
+Hayır arkadaşlar, bir kayıp sayı.
+
+97
+00:23:14,259 --> 00:23:15,259
+Tamam.
+
+98
+00:23:15,259 --> 00:23:17,779
+Ya da hiç kayıp sayı yok, ikisinden biri.
+
+99
+00:24:15,412 --> 00:24:26,412
+Arkadaşlar, Google Form'a yükleyeceksiniz. Google Form hazırladık. Galiba sonradan katılanlar var. Lütfen paylaştığım Avasis'ten pdf okusunlar veya ekranda pdf de görebilirsiniz.
+
+100
+00:24:26,412 --> 00:24:36,971
+Altta bir Google Form linki var. 14.50'de bunu kapatacağız. 14.50'ye kadar yüklemeniz ve bir yüklediğinize dair cevap mail almanız lazım.
+
+101
+00:25:07,539 --> 00:25:17,539
+Bir de öğrenci numaramızı nereye yazalım? Kodun dosyasına mı yazıp, öyle mi gönderelim çünkü? Mikrofonunuz kapalı olacak.
+
+102
+00:25:17,539 --> 00:25:26,539
+Pardon, ismine yazın. Kodun direkt ismi numara.si, numara.rar şeklinde olacak.
+
+103
+00:25:26,539 --> 00:25:28,139
+Tamam, teşekkür ederim.
+
+104
+00:25:29,971 --> 00:25:36,971
+Zaten formda, bunun içinde şey var, dosya yükleme kısmında uyarı var bunun için nasıl yükleyeceğinize dair.
+
+105
+00:26:01,748 --> 00:26:04,148
+Hocam, rar yerine zip yüklesek olur mu?
+
+106
+00:26:06,148 --> 00:26:10,947
+Ben onu sınırlamadım formda, olacağını düşünüyorum. Yüklemeyi bir deneyin.
+
+107
+00:27:21,779 --> 00:27:36,779
+Arkadaşlar, oturumu kapatıyoruz. Lütfen PDF avesislerimizden ulaşın. Zaten linki de chat'e attım. Tek yapmanız gereken Google Form'a 14.50'ye kadar cevabınızı yüklemek.
+
+108
+00:27:45,748 --> 00:27:47,307
+Herkese kolay gelsin.
+
+109
+00:27:59,508 --> 00:28:01,508
+Hepinize başarılar arkadaşlar.

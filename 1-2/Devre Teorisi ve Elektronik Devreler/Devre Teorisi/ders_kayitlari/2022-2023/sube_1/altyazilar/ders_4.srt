@@ -1,0 +1,3575 @@
+1
+00:02:13,876 --> 00:02:15,015
+Arkadaşlar, merhaba.
+
+2
+00:02:22,931 --> 00:02:23,292
+Merhaba hocam.
+
+3
+00:02:23,691 --> 00:02:36,371
+Merhabalar. Google Classroom'dan da takip etmişsinizdir. Bu hafta yapacağımızı ilan ettiğimiz kısa sınavımız vardı. Onu önümüzdeki haftaya ertelemek durumunda kaldık. Bu hafta onu yapmayacağız. Bu hafta dersimize devam edeceğiz.
+
+4
+00:02:37,792 --> 00:02:49,792
+Bu haftanın konusu temel olarak önceki haftadan kalan bir konu vardı. Birazcık ondan bahsedeceğiz. Sonrasında da devre çözümleme ilişkin olarak çevre ve düğüm analizi konuları var.
+
+5
+00:02:50,175 --> 00:03:17,635
+Onlara bakıyor olacağız. Yine bu arada Lab 1 ile ilgili olarak sorular ilan edilmişti. Siz çözümlerinizi yaptınız. Online Yıldızı TR'den yüklediniz. Bugün yine Lab saatinde ilan edilecek arkadaşlar için bir sözlü sınavı olacak. Yaptığınız devre ile gerçekleştirdiğiniz çözümlemeyi anlatacağınız bir sözlü sınavı olacak Lab'ın.
+
+6
+00:03:18,068 --> 00:03:24,508
+Daha önce de söylediğimiz gibi burada az sayıda kişi ilan edilecek ama toplamda 9 tane deney var.
+
+7
+00:03:25,088 --> 00:03:31,048
+Dolayısıyla rastgele seçilmiş olan arkadaşların en az 2 kere bu sözlüğe girmesi durumlu söz konusu.
+
+8
+00:03:31,708 --> 00:03:38,548
+Bununla ilgili olarak da yine Google Classroom üzerinden asistan hocalarımız duyurlarını yapıyor olacaklar.
+
+9
+00:03:38,888 --> 00:03:40,328
+Siz de takip edersiniz.
+
+10
+00:03:41,048 --> 00:03:44,468
+Kaldığımız yerden devam etmek adına ben bir ekran paylaşımı açayım.
+
+11
+00:04:10,292 --> 00:04:19,531
+Geçen hafta kaldığımız noktada bu Y ve Delta ağları üzerinde devam ediyorduk.
+
+12
+00:04:20,172 --> 00:04:24,971
+Kısacık orayı bir hızlıca bahsedelim sonra diğer konumuza geçelim.
+
+13
+00:04:24,971 --> 00:04:28,792
+Bunu boyutunda şöyle ayarlayalım.
+
+14
+00:04:37,971 --> 00:04:40,291
+Gariplik oldu ama neyse birazcık küçültelim.
+
+15
+00:04:46,831 --> 00:04:50,591
+Buradaki çıkış noktamız temel olarak arkadaşlar hatırlayacak olursanız.
+
+16
+00:04:51,668 --> 00:05:06,067
+Eşdeğerlik kavramından bahsediyorduk. Eşdeğerlik kavramında elimizde iki tane direnç devresi yapısı var. Bu iki direnç devresi yapısının birbirine eşit olabilmesi için, eşdeğer olabilmesi için check etmemiz gereken, kontrol etmemiz gereken konular şunlar.
+
+17
+00:05:06,728 --> 00:05:16,008
+Örneğin, Y konfigürasyonunda ve delta konfigürasyonundaki bu iki devrenin birbirine eşdeğer olduğunu söyleyebilmemiz için
+
+18
+00:05:16,435 --> 00:05:36,355
+Örneğin, Y konfigürasyonundaki devrede, herhangi iki terminalden baktığımızda, diğer terminali boşta bıraktığımız senaryoda, gördüğümüz eşdeğer direncin, sağ taraftaki devrede de seçmiş olduğumuz aynı iki terminal üzerinden, içinden baktığımız eşdeğer direnci eşit olması gerekiyor.
+
+19
+00:05:36,915 --> 00:05:40,955
+Yani bizim burada, geçen hafta da yine söylemişti, kızıca yine tekrar edelim.
+
+20
+00:05:41,343 --> 00:05:44,303
+Rengimizi şöyle kırmızı gibi bir şey yapalım.
+
+21
+00:06:02,259 --> 00:06:27,899
+Örneğin, şu iki terminalden baktığımda, göreceğim eşdeğer direnç, bunlar X ve Y ise mesela, işte AB terminalleri ise, aynı AB terminalleri burada da var. Şuradan baktığım eşdeğer direnci eşit olması lazım. Üçüncü terminal boşta, üçüncü terminal boşta oluyor.
+
+22
+00:06:28,399 --> 00:06:37,279
+Bu durumda bu şekilde soldaki devre için bakmış olduğum eşdeğer direnç, R2 dirence boşta olduğu için bunun üzerinden herhangi bir akım akma durumu yok.
+
+23
+00:06:37,360 --> 00:06:42,139
+Bunu bir kaynağa bağladığımda. Dolayısıyla bu koparılmış gibi düşünebiliriz.
+
+24
+00:06:42,199 --> 00:06:51,279
+R1 artı R3 gibi bir senaryo olmuş oluyor bu tarafta. Yani birinci senaryo için baktığımızda bu tarafta R1 artı R3 gibi bir değer var.
+
+25
+00:06:52,660 --> 00:07:07,060
+R1 artı R3 gibi bir değer var. Bu tarafta ise, ikinci tarafta ise, RC ile RB birbirine seri oluyor. Bunlar RA ile paralel oluyor. Yani bunu da yazacak olursak, RA paralel oluyor.
+
+26
+00:07:08,060 --> 00:07:12,200
+Kime? RC artı RB'ye paralel olmuş oluyor.
+
+27
+00:07:12,672 --> 00:07:20,692
+Dolayısıyla bu birinci denklemimiz. İkinci denklemi nasıl elde ediyorduk? İkinci denklemi de bu sefer örneğin şu terminallerden bakalım.
+
+28
+00:07:21,552 --> 00:07:25,672
+Farklı bir renk olsun. Şu terminalden baktığımızda,
+
+29
+00:07:27,451 --> 00:07:27,692
+yine,
+
+30
+00:07:29,812 --> 00:07:31,532
+kalemde sıkıntı çıktı.
+
+31
+00:07:34,592 --> 00:07:36,992
+Yine şuradaki terminalden baktığımızda,
+
+32
+00:07:37,712 --> 00:07:39,352
+göreceğimiz eşdeğer direncin,
+
+33
+00:07:39,759 --> 00:07:44,079
+Şu terminalden baktığımız durumdaki eşdeğer direnci eşit olması lazım.
+
+34
+00:07:44,939 --> 00:07:55,179
+Burada da R2 artı R3 geldiğimiz vakit, R2 artı R3 değerinin N denk olması gerekiyor.
+
+35
+00:07:55,179 --> 00:08:03,179
+Yani eşit olması gerekiyor veyahut da N eşit olması lazım.
+
+36
+00:08:06,387 --> 00:08:26,387
+RA, RC Bunlar birbirine seri, RB'ye paralel. Yani parantez içerisine alsak, RB paraleldir. RC artı RA. RC artı RA diyeceğiz.
+
+37
+00:08:26,387 --> 00:08:32,508
+Son olarak da şu terminallerden baktığımızda, üst taraftaki terminallerden baktığımızda da,
+
+38
+00:08:32,511 --> 00:08:37,311
+Yani şu terminallerden baktığımızda, göreceğimiz eşdeğer direncin eşit olması lazım.
+
+39
+00:08:39,811 --> 00:08:43,711
+Bu senaryoda göreceğimiz eşdeğer direnç de R1 artı R2.
+
+40
+00:08:44,851 --> 00:08:46,371
+Onu da şuraya yazalım.
+
+41
+00:08:47,152 --> 00:08:50,591
+R1 artı R2 eşit olacak.
+
+42
+00:08:50,892 --> 00:08:52,271
+Ne veki kalıyor o tarafta?
+
+43
+00:08:53,395 --> 00:08:55,316
+RC paraleldir.
+
+44
+00:08:55,955 --> 00:08:57,135
+RA artı RB.
+
+45
+00:08:57,435 --> 00:09:02,995
+RA artı RB şeklinde bir eşitlik yakalamış oluyoruz.
+
+46
+00:09:03,096 --> 00:09:07,076
+Üç tane bilinmeyen, şey üç tane denklemimiz var aslında şu anşamada.
+
+47
+00:09:09,175 --> 00:09:11,475
+Şu bir ve ikileri sileyim şuradan.
+
+48
+00:09:19,443 --> 00:09:22,463
+Şimdi bu noktada bunu da eşitlik olarak yazalım.
+
+49
+00:09:23,303 --> 00:09:25,683
+Üç tane denklemimiz var. Biz neyi biliyoruz?
+
+50
+00:09:25,763 --> 00:09:29,443
+İşte Y konfigürasyondaki buradaki dirençlerin değerlerini biliyoruz.
+
+51
+00:09:29,923 --> 00:09:33,283
+Buna göre delta konfigürasyondaki ABC'yi hesaplamak istiyoruz.
+
+52
+00:09:33,283 --> 00:09:37,223
+Dolayısıyla 1, 2, 3'ü biliyoruz. Üç tane denklemimiz var. ABC'yi bulabilir.
+
+53
+00:09:37,323 --> 00:09:40,623
+Veya tersi de geçerli. Bunları hesaplamamız mümkün.
+
+54
+00:09:41,443 --> 00:09:46,243
+Burada elde ettiğimiz sonuç ise şu. Bu denklemi yürüttükten sonra elde ettiğimiz sonuç.
+
+55
+00:09:47,475 --> 00:09:48,395
+İnerletiyorum.
+
+56
+00:09:49,655 --> 00:09:55,395
+Eğer sağ taraftaki devre verilmişse, yani ABC verilmişse, 1-2-3'ü nasıl hesaplayacağımız burada var.
+
+57
+00:09:55,516 --> 00:10:04,875
+Yine eğer ki 1-2-3 verilmişse, yani sol taraftakiler verilmişse, sağ taraftakileri hesaplanmak için de kullanacağımız denklemler bunlar olarak karşımıza çıkıyor.
+
+58
+00:10:06,456 --> 00:10:12,655
+Bunun sonrasında bir de köprü devrelerine bakmıştık.
+
+59
+00:10:14,964 --> 00:10:30,884
+Hassas ölçüm için kullanılan bir mantıktı bu. Örneğin, bu devrenin görmüş olduğunuz uçlarına, şurada görmüş olduğunuz uçlarına bir besleme bağlanıyor. Direnç değerlerimiz var. Bu direnç değerlerimiz,
+
+60
+00:10:31,443 --> 00:10:38,923
+Temel olarak ortamdaki, yani ölçmek istediğimiz şey haricindeki ortam şartlarından eşit miktarda etkileniyorlar.
+
+61
+00:10:39,023 --> 00:10:43,803
+Yani ortam sıcaklığı değiştiğinde hepsi aynı miktarda direnç değerini değiştiriyor.
+
+62
+00:10:43,923 --> 00:10:49,283
+Veya ortamın ışıklandırılması veyahut da nemi değiştiğinde bunlardan etkileniyorsa,
+
+63
+00:10:49,903 --> 00:10:54,703
+neticede hassas bir ölçüm yapmak istediğinizde ortam şartları direnç değerlerini etkileyebilir.
+
+64
+00:10:55,303 --> 00:10:58,963
+Hepsi aynı şekilde etki ettiği için çapraz etkiler birbirini götürüyor.
+
+65
+00:10:59,475 --> 00:11:04,975
+Örneğin, mesela bizim ölçmek istediğimiz şey bir ağırlık olsun veya ışık şiddeti olsun.
+
+66
+00:11:05,496 --> 00:11:12,516
+Işık şiddetine ilişkin katkıyı da şöyle mesela, işte D direncine seri olarak kattığımızı düşünelim.
+
+67
+00:11:12,875 --> 00:11:19,635
+Yani bu durumda, R, D, R'ye eşit, R, D, R'ye eşit, hepsi R'ye eşit olsa,
+
+68
+00:11:21,524 --> 00:11:37,364
+Şurada bizim eklemiş olduğumuz ortamda ölçmek istediğimiz şeyle doğru orantılı bir şekilde direnci değişen eleman, bu kolda, şu kolda net olarak R artı delta R'lık bir katkı yapacak.
+
+69
+00:11:37,463 --> 00:11:46,543
+Bu katkıya göre de biz hassas bir şekilde ortam şartlarından etkilenmeden sadece değerini ölçmek istediğimiz şeyin karşılığını burada
+
+70
+00:11:47,028 --> 00:11:57,848
+Köprü gerilim değeri olarak ölçebiliyor olacağız. Bu köprü gerilim değerini de ölçerken izleyeceğimiz yol şu, yani buradaki değişimin, eklemiş olduğumuz direncin etkisinin,
+
+71
+00:11:58,307 --> 00:12:07,488
+RC'deki karşılığını ölçerken de şu, biraz sonra göstereceğim, denklemden hareket edeceğiz. Ama bu arada hep bir bilgi, arada bir bilgi.
+
+72
+00:12:14,419 --> 00:12:34,220
+Y çifti olarak düşünebiliriz veya bunları iki adet delta ortak bir direnç paylaşan ve ortak dirençlerin sonsuz olduğu, yani koparılmış olduğu bir senaryo olarak düşünebiliriz veya bir delta bir Y varyasyon olarak düşünebiliriz. Bunlara göre çözümlemelerimizi çeşitlendirebiliriz.
+
+73
+00:12:39,823 --> 00:12:54,723
+Ölçmek istediğimiz, değer ilişkin, direnci değişen bir elemanımız varsa, bu durumda onun etkisini aradaki VCD bölümünde görebiliyoruz. Değerlerimiz fix.
+
+74
+00:12:55,187 --> 00:13:04,967
+VT değerimiz fix olmak şartıyla, bu delta R dediğimiz değer bizim değerini ölçmek istediğimiz fiziki etkinin dirençte oluşturduğu değişim miktarı.
+
+75
+00:13:05,427 --> 00:13:20,207
+Öyleyse biz VCD'yi bu etki yokken ve varken ölçtüğümüzde, aradaki fark aslında net olarak bu eklenmiş olan ölçüm değeriyle bağlantılı bir şekilde karşımıza çıkmış oluyor.
+
+76
+00:13:20,207 --> 00:13:23,168
+Yani hassas bir tartı yapacaksak örneğin,
+
+77
+00:13:23,187 --> 00:13:33,627
+Bu köprü mantığını kullanmak anlamlı olacaktır diyebiliriz. Kabaca bu geçen haftadan kalan konuyu bu miktarda değinmemiz yeterli diye düşünüyorum.
+
+78
+00:13:36,347 --> 00:13:41,427
+Bu bir sonraki konumuza devam edeceğim. Bu bir sonraki konumuz önemli bir konu.
+
+79
+00:13:42,196 --> 00:13:58,736
+Şimdiye kadar görmüş olduğunuz konular arkadaşlar temelde aslında bir takım basit devreleri çözmek için bize ipuçları sunuyordu ama bu noktadan itibaren göreceğimiz yöntemler artık biraz daha karmaşık devreleri çözümleyebilmemiz için bize yardımcı olacaklar.
+
+80
+00:13:59,556 --> 00:14:07,296
+Bu noktada düğüm ve çevre analizi dediğimiz iki yöntemimiz var. Düğümden ne diyerek geçiyordu hatırlayacak olursanız.
+
+81
+00:14:08,019 --> 00:14:22,500
+Çevreler ise mesh veya çevrim olarak ifade ettiğimiz durumlara karşılık geliyor. Örneğin elimizde şöyle bir devre varsa, şöyle bir devre olsa, şeyi bırakmıyoruz.
+
+82
+00:14:32,596 --> 00:14:34,235
+Daha pratik olacak sanırım.
+
+83
+00:14:45,779 --> 00:14:55,019
+Örneğin elimizde böyle bir devre olsa, burada bir tane kaynağımız olsa, ondan sonra burada bir takım dirençlerimiz olsa,
+
+84
+00:14:58,964 --> 00:15:02,024
+değerlerini tanımlamamış olabiliriz ama.
+
+85
+00:15:07,379 --> 00:15:08,899
+Bir saniye arkadaşlar.
+
+86
+00:15:43,731 --> 00:15:45,331
+Merhaba arkadaşlar tekrardan.
+
+87
+00:15:45,971 --> 00:15:51,292
+Şimdi burada karşımıza çıkan bu devre topolojisi için örneğin,
+
+88
+00:15:51,292 --> 00:15:59,111
+not dediğimiz şeyler birden fazla elemanın ortak birleştiği düğümlere karşılık geliyordu hatırlayacak olursanız.
+
+89
+00:15:59,692 --> 00:16:04,751
+Dolayısıyla bu devreye baktığımızda işaret dediğim yerler birer düğüme karşılık gelecek.
+
+90
+00:16:11,923 --> 00:16:20,263
+Fertlediğim noktalar birer düğme karşılayacak. Fakat bu noktalarda düğümlerin sayısına baktığımızda 1, 2, 3, 4, 5, 6 tane düğüm var.
+
+91
+00:16:20,743 --> 00:16:30,143
+Düğümlerden bir tanesini referans için seçiyorduk ve seçtiğimiz referans temel olarak devredeki kaynaklardan bir tanesinin eksik ucu olabiliyordu.
+
+92
+00:16:30,143 --> 00:16:36,783
+Dolayısıyla bu şekilde bir seçim yaptığımızda aslında ben bu düğüm için 0 voltluk bir gerilim değeri belirlemiş oluyorum.
+
+93
+00:16:37,103 --> 00:16:39,163
+0 voltluk bir gerilim değeri belirlemiş oluyordum.
+
+94
+00:16:39,535 --> 00:16:49,455
+Çevre dediğimiz şeyler ise bir noktadan başlayıp bir noktadan başladıktan sonra, bunu yanlış şeyle mi çizdik acaba?
+
+95
+00:17:04,980 --> 00:17:10,920
+Bir noktadan başladıktan sonra, örneğin şöyle bir noktadan başlamış olalım.
+
+96
+00:17:11,460 --> 00:17:20,139
+Bu noktadan başladıktan sonra bir çevrim oluşturacak şekilde elemanlara geçip tekrar aynı noktaya geldiği bir şey, bir çevrim.
+
+97
+00:17:20,779 --> 00:17:27,980
+Buna göre burada yazabileceğimiz çevrimler, birinci çevrim burada gördüğünüz gibi, ikinci çevrim yine şu noktadan başlayıp,
+
+98
+00:17:29,779 --> 00:17:34,980
+Buraya ulaştığım çevrim ama burada bir tane de üçüncü çevrim var. O üçüncü çevrim için ne dersiniz?
+
+99
+00:17:38,420 --> 00:17:40,619
+Devreyi tamamen dolaşabiliriz hocam.
+
+100
+00:17:40,940 --> 00:17:46,380
+Evet, mesela bu noktadan başlayıp çok doğru bu şekilde geldiğimiz yapıda bir çevrim.
+
+101
+00:17:46,867 --> 00:17:52,807
+Dolayısıyla bizim burada çevrim adına 3 tane çevrim oluşturabiliyoruz.
+
+102
+00:17:52,847 --> 00:17:59,947
+Fakat yazabileceğimiz bu 3 çevrime ilişkin yazabileceğimiz denklemlerden sadece 2 tanesi minar olarak bağımsız oluyor.
+
+103
+00:18:00,327 --> 00:18:05,847
+Bu ne demek? 3. çevrimi aslında diğer ikisinin bir kombinasyonu olarak yazabiliyoruz anlamına geliyor.
+
+104
+00:18:06,336 --> 00:18:21,935
+Burada da bilmediğimiz, mesela çevre noktasında hareket ettiğimizde bilmediğimiz veya düğümler adımız iki tane değişken oluyor. İki tane çevre akımını arıyor olacağız. Bunlar bilinmiyor olacak. İki tanesini bilirse, üçüncüsü bunlarcısından yazılabilir olacak.
+
+105
+00:18:34,336 --> 00:18:40,375
+Her birisine ilişkin olarak gerilim değerlerini bilmiyoruz. Bildiğimiz ne var? Sadece şuranın sıfır olduğunu fiksedik referans olarak.
+
+106
+00:18:40,819 --> 00:18:58,039
+Dolayısıyla böyle bir devre ile karşılaştığımızda bilmediğimiz değerler, 1, 2, 3, 4, 5 tane bilmediğimiz değer var. Yani bunu yerine getirebilmek için 5 tane denklem yazmamız lazım. O denklemlerde temel olarak Kirchhoff'un akımlar kanunu çerçevesinde oluşturacağımız denklemler olacak.
+
+107
+00:19:08,819 --> 00:19:35,919
+Bu konuları için de biraz bölünleme şansımız var. Örneğin, az sayıda düğümle temsil edilebilen bir devre varsa, bunu çevre akımları cinsinden, çevre analizi açısından çözmek daha pratik bir sonuç veriyor. Daha az denklem var. Bu yandan öyle bir devreyle karşılaşırız ki, sadece iki tane düğümden oluşuyordur. Onu da şöyle çizelim. Paralel devre mantığına karşılık gelen senaryo olabilir o da. Mesela işte,
+
+108
+00:19:36,788 --> 00:19:46,567
+Birinci elemanımız burada, ikinci elemanımız burada, üçüncü elemanımız burada ve dördüncü elemanımız burada. Bu şekilde gidiyor olsun.
+
+109
+00:19:47,008 --> 00:19:56,688
+Buna baktığımızda en az birbirinden binar olarak bağımsız kaç tane çevremiz var?
+
+110
+00:20:00,000 --> 00:20:07,240
+Dördüncü çevre, dört tane çevre var. Dolayısıyla en az burada dört tane denklem, bir linear bağımsız denklem yazmak durumundayız.
+
+111
+00:20:07,720 --> 00:20:17,880
+Fakat nod analizi olarak bakacak olursak, burada görmüş olduğunuz şuradaki nodların hepsi aynı noda tekabül ediyor. Bir nod. Bir de şurada ikinci nodumuz var.
+
+112
+00:20:18,720 --> 00:20:28,000
+Ortak bir referans belirlenek adına, bunda grant dediğimiz zaman bir tane denklem yeterli olacak. Bir bilinmeyen bir denklem devreyi çözmemizi sağlayacak. O zaman bu devrede bir nod adı.
+
+113
+00:20:28,000 --> 00:20:39,220
+Bu devizini seçmeliyiz. Dolayısıyla karşılaşacağımız devrenin topolojisine göre bizim burada hangi yöntemi kullanmamız gerekiyor ile ilişkin bir şey söyleyebilmemiz gerekiyor arkadaşlar.
+
+114
+00:20:40,159 --> 00:20:44,180
+Onu söylemiş olalım. Tekrar slide'lara geri dönecek olursak.
+
+115
+00:20:45,971 --> 00:21:02,951
+Yine netice itibariyle burada göreceğimiz yaklaşımda bir yöntem olacak. Bu çeşitli yöntemleri görüyoruz aslında biz devre çözümlemesine ilişkin olarak. Bu da işte çevre ve düğüm analizinde yöntemleri öğreneceğimiz bir dersimiz olacak.
+
+116
+00:21:09,940 --> 00:21:28,099
+Mesela tekil çevreleri almaya çalıştığımızda, o çevrenin içerisine bir gerilim kaynağı giriyorsa, veya bir kaynak giriyorsa diyelim, kaynak girdiği vakit, o aslında o konuda belirli birinci olduğu için onunla ilişkili bir özel denklem yazamıyor olacağız. O zaman daha geniş bir çevreden bunu yazmaya çalışacağız.
+
+117
+00:21:28,099 --> 00:21:37,708
+Veyahut da node analizine baktığımızda da benzer bir durumla karşılaşacağız. Dolayısıyla klasik anlamda az önce gördüğümüz her...
+
+118
+00:21:37,844 --> 00:21:47,644
+Çevre için bir denklem yazabilirim veya her birim için bir denklem yazabilirimden ayrışan iki tane özel durumumuz var. Onları da el almaya çalışacağız dersimiz kapsamında.
+
+119
+00:21:48,463 --> 00:22:01,644
+Bunu yazabilmek adına artık az önceki açıklamada da sizin de fark edeceğiniz üzere bir adet denklem yerine karşılaşacağımız kalmış devrelere göre bir denklem sistemiyle karşılaşma ihtimalimiz var.
+
+120
+00:22:03,988 --> 00:22:19,227
+Buna göre de işte bu denklem sistemlerinin çözümlerini araştırdığımız senaryolarla ilgileniyor olacağız. Elimizde bir denklem sistemi varsa, bu denklem sisteminin ya bir tane çözümü vardır, ya çözümü yoktur ya da sonsuz tane çözümü vardır.
+
+121
+00:22:19,680 --> 00:22:30,460
+Bir tane sonsuz sayıda çözümü varsa bunun anlamı şu, kısıtlayıcı yeterli sayıda denklemimiz yok demektir. Biz öyle bir senaryoyla karşılaşmayacağız.
+
+122
+00:22:31,580 --> 00:22:47,680
+Çözümün olmadığı durumda da kısıtların birbirine çeliştiği bir senaryo veyahut da temel olarak da parametre sayısından, bilmem sayısından daha fazla denklemle karşılaştığımız, iner bağımsız olarak karşılaştığımız senaryolar, ekstra kısıtların olduğu senaryolar gibi ifade edebiliriz.
+
+123
+00:22:47,680 --> 00:22:59,260
+Tek çözümlü olduğu durumlarda, denklem sisteminin determinantının anlamlı bir sayı çıktığı ve denklem sayısıyla parametre sayısının uyumlu olduğu senaryolardan bahsedebiliriz.
+
+124
+00:22:59,640 --> 00:23:03,680
+Dolayısıyla bunları Miner Zabir ile ilgili hatırlamak adına şöyle bir...
+
+125
+00:23:04,723 --> 00:23:16,384
+Mantık oluşturalım. Örneğin iki denklem içeren bir sistemimiz var. X ve Y değerlerini tahmin etmeye çalışıyoruz. A1, A2, B1, B2 parametreleri biliniyor. C1 ve C2 değerleri de biliniyor.
+
+126
+00:23:16,844 --> 00:23:25,163
+Aslında bunlar bizim iki gözlü bir devre için mesh analizinde denklemler yazdığımızda şunlara tekabül edecek temel olarak.
+
+127
+00:23:25,644 --> 00:23:29,963
+Şurada görmüş olduğunuz C1 değeri bir kaynak değeri, C2 değeri bir kaynak değeri olacak.
+
+128
+00:23:29,963 --> 00:23:32,703
+A'lar, B'ler de farklı direnç değerler.
+
+129
+00:23:32,723 --> 00:23:41,884
+olarak karşımıza çıkacak. Yani fiziki olarak baktığımızda onlara karşılık geliyor. X'ler ve Y'ler ise buradaki akım değerleri olarak değerlendiriyoruz.
+
+130
+00:23:43,003 --> 00:23:52,203
+Notlara ilişkin görülüm değerleri veya ilgili çevreleri bağlı olarak karşılaşacağımız akım değerleri olabilir. Fiziki karşılıkları bunlar.
+
+131
+00:23:52,663 --> 00:23:57,144
+Demek ki biz böyle bir denklem sistemiyle karşılaştığımızda bu denklem sistemine ilişkin olarak
+
+132
+00:23:59,316 --> 00:24:05,576
+X ve Y değerlerini bulmaya çalışıyoruz.
+
+133
+00:24:09,683 --> 00:24:32,304
+Bunu bir denklem sistemi olarak oluşturmak istediğimizde, yerine koyarak bunu nasıl çözebiliriz dediğimizde, yerine koyarak çözebiliriz. Eğer iki tane denklem varsa yerine koymak mantıklı. Örneğin burada birinci denklemden x'i çekip, x'in diğer parametreler cinsinden karşılığını bulduğumuzda, pardon, yukarı çıkmamız lazım.
+
+134
+00:24:33,940 --> 00:24:43,579
+X'in Y ve diğer parametreler cinsinden karşılığını bildiğimizde, ikinci denklemde bunu yerine koyduğumuzda artık sadece Y ile bağlı bir denklem elde ediyoruz.
+
+135
+00:24:43,579 --> 00:25:01,940
+Dolayısıyla Y'yi çözmüş oluyoruz. Y'yi bulduktan sonra, A'yı, B'yi, C'yi bildiğimizi varsaymıştık. Y'yi bulduktan sonra bunu da yine herhangi bir denklemde veya şurada elde etmiş olduğumuz birinci denklemin yeniden yazılmış halinde elde ettiğimiz sonuçta yerine koyduğumuzda da X'i bilinen parametreler cinsinden elde ediyoruz.
+
+136
+00:25:01,940 --> 00:25:07,740
+Fakat bu yerine koyma mantığı daha büyük denklem sistemleri için çok anlamlı olmuyor.
+
+137
+00:25:09,107 --> 00:25:26,228
+Dolayısıyla bunun linear C1 mantığında matriz formatındaki ifadesine bakmamız gerekiyor. Az önce görmüş olduğumuz denklemin matriz formatına getirdiğimizde veya linear C1'sel bir denklem sistemi haline getirdiğimizde karşılaşacağımız sonuç bu.
+
+138
+00:25:26,228 --> 00:25:36,788
+Bu linear C1'den hatırlayacak olursanız arkadaşlar, bu arada yapılan işlem bir matriz ve vektörün çarpımı şeklinde gelmiş. Bu nasıl çalışıyordu? Birinci satırımız ile.
+
+139
+00:25:37,107 --> 00:25:42,528
+Eğer bu da bir matriz olsaydı birinci sütun diyecektik fakat tek sütunumuz var. İlgili sütunu çarpacağız.
+
+140
+00:25:42,968 --> 00:25:49,107
+Dolayısıyla bu çarpma işlemi sonucunda eşdeğerimiz de yine eşitliğin karşı tarafındaki birinci satırımız olacak.
+
+141
+00:25:49,107 --> 00:26:01,887
+O zaman bu matriz formatındaki yazılmış hali açacak olursak aslında A1 çarpı X artı B1 çarpı Y eşittir C1 olacak şeklinde bunu yazabiliriz.
+
+142
+00:26:09,491 --> 00:26:22,316
+Eşittir, C olarak yazabiliriz. Şurada bir F11'e basmam lazım. C1'miş pardon. C1 olarak yazabiliriz. Aynı şekilde bunu devam ettirdiğimizde de, işte birinci...
+
+143
+00:26:22,451 --> 00:26:33,011
+Satırı bitirdik. İkinci satır, yine bir tane stunumuz var eleman olarak. Bunların eşdeğeri de eşitliğin karşı tarafındaki ikinci satırımıza de tekabül edecek.
+
+144
+00:26:33,511 --> 00:26:47,111
+Sarı ile olan denklem belki çok görmeden, turuncu yapalım. Bu durumda da A2X artı B2Y diyeceğiz. Eşittir. C2 olarak karşımıza çıkacak.
+
+145
+00:26:47,111 --> 00:26:50,451
+Dolayısıyla bizim başta hareket edildiğimiz...
+
+146
+00:26:50,451 --> 00:27:14,851
+Sert ettiğimiz denklem sisteminin eşdeğerinin bu olduğunu görmüş oluyoruz. Asıl bizim yapmamız gereken de elimizde böyle bir denklem sistemi varken bunu şurada görmüş olduğunuz matriz formatına dönüştürebilmek. Burada nasıl dönüştürebiliriz? Tespit etmemiz gereken bilinmeyenler ne var? X ve Y var. Dolayısıyla X ve Y'yi aldık. Bunların karşı taraftaki eşitlikleri C1 ve C2 olarak mevcut.
+
+147
+00:27:18,867 --> 00:27:26,087
+Asıl önemli olan bu taraftaki bilinmeyenlerin kat sayısı olan maddesi düzgün yazabilmek.
+
+148
+00:27:26,167 --> 00:27:33,687
+Onu yazarken de işte bahsetmiş olduğumuz sağlama veya doğrulama mantığı çerçevesinde bunu gerçekleştirmek uygun olacak.
+
+149
+00:27:33,687 --> 00:27:40,447
+Yani denklem sisteminin bu hale karşılık geldiğinde mutlaka yazabiliyor olmamız gerekiyor arkadaşlar.
+
+150
+00:27:42,163 --> 00:27:54,743
+Şimdi bunu yazabildikten sonra bu tür denklem sistemlerin çözümüyle ilgili karşılaştığımız senaryoya bakacak olursak, burada öncelikli olarak bir determinant kavram var. Determinant kavramına bakmamız lazım.
+
+151
+00:27:57,143 --> 00:28:06,803
+Elimizdeki denklem sistemini birden fazla iki için çözebildik, yerine koymayı çözebildik ama üç ve daha sonrası için bunların pratik olan hali matriz formatına getirip,
+
+152
+00:28:07,087 --> 00:28:25,387
+Bu, Ninercivi üzerinden çözmek demiştik. İlk karşılaşacağımız teminlerden birisi Determinant, diğeri Determinant X, diğeri Determinant Y ile tanımladığımız değerler. Determinant aslında bizim buradaki değerlerimizi biraz daha formal bir hale toplu bir şekilde yazacak olursak bir A matrisimiz var.
+
+153
+00:28:34,355 --> 00:28:38,276
+Burada bunu yapamıyorum bir türlü. Şu tarafta yazıyorum.
+
+154
+00:28:40,056 --> 00:28:48,395
+Bir tane aslında biz şunu A1, B1, A2, B2 diye bir matriz oluşturduk.
+
+155
+00:28:49,115 --> 00:28:54,276
+Bunu X ve Y'lerle çarptık. Çıktı değerimizde işte C1 ve C2 oldu diye yazdık.
+
+156
+00:28:54,276 --> 00:28:56,915
+Aslında bizim burada yattığımız bir A matrizimiz var.
+
+157
+00:28:58,324 --> 00:29:08,904
+Bir A matrisimiz var. Bu A matrisini büyük X vektörüyle çarptık. X vektörü küçük X'e küçük Y'den oluşuyor. Çıktığımızda bir tane büyük C vektörümüz aslında bizim.
+
+158
+00:29:09,804 --> 00:29:19,104
+Büyük C vektörümüz. Dolayısıyla burada A dediğimiz matrisin determinantı bizim burada görmüş olduğumuz şu determinanta tekabül ediyor.
+
+159
+00:29:19,764 --> 00:29:22,204
+Determinant da işte hatırlayacağımız üzere
+
+160
+00:29:22,675 --> 00:29:28,355
+Verilen formülasyonla tanımlanabilir. A1 çarpı B2 eksi B1 çarpı A2 değeri.
+
+161
+00:29:29,816 --> 00:29:35,316
+Aslında bu biraz neyi andırıyor? Vektörel çarpmayı da hatırlatıyor size herhalde.
+
+162
+00:29:35,827 --> 00:29:51,268
+Dx dediğimiz değişken ise bu sefer x'e bağlı kat sayıları, yani x'in çarpını olan kat sayıları kaldırıp onun yerine eşitliğin karşı tarafındaki kat sayıları koyduğumuz haldeki matrisin determinantı.
+
+163
+00:29:51,788 --> 00:29:58,228
+Dx olarak ifade ediyoruz onu. Yine bu da bir vektoral çarpım formülünü hatırlatabilir tanım olarak.
+
+164
+00:30:00,000 --> 00:30:12,379
+A matrisimizde, büyük A matrisimizde, B'yi çarp B'nin kat sayıları olan küçük B1 ve küçük B2'nin yerine C1 ve C2'nin geldiği senaryodaki oluşan matrisin determinant olarak tanımlıyoruz.
+
+165
+00:30:12,500 --> 00:30:23,319
+Bu tanımlamaları yaptıktan sonra, matris formunda verilmiş olan D'lik bölü çövmek istediğimizde, X değişkeninin karşılığı Dx bölü D olduğunu söyleyebiliyoruz.
+
+166
+00:30:23,819 --> 00:30:27,180
+D'lik çözümün ise D'ye bölü D olduğunu söyleyebiliyoruz.
+
+167
+00:30:28,019 --> 00:30:43,179
+Dolayısıyla bu eğer iki değerli değil, üç değerli bir, üç tane denklemden oluşan bir sistem olmuş olsaydı da yine aynı mantığı oturttuk bunu genişletebilirdik. Daha fazla değişken için genişletmemiz mümkün olabilirdi.
+
+168
+00:30:43,599 --> 00:30:48,299
+Örneğin burada 3 değişkenli bir senaryo için bu örnek verilmiş durumda.
+
+169
+00:30:49,259 --> 00:30:57,799
+Burada da aslında bizim bilinmeyen yerimiz X, Y, Z yerimiz. Bunu açık bir formatta yazacak olursak aslında şöyle bir şeyle karşılaşıyoruz.
+
+170
+00:31:01,399 --> 00:31:02,619
+Şöyle diyelim.
+
+171
+00:31:03,559 --> 00:31:04,059
+A1
+
+172
+00:31:08,531 --> 00:31:27,692
+B1, C1 olacak. A2, B2, C2, A3, B3, C3. Bizim denklem sistemimizde bunlar var. Bunu X, Y, Z bilinmeyenlerimiz. Bunların karşılıkları da her bir denklemin karşılığı C1.
+
+173
+00:31:28,339 --> 00:31:37,479
+C2, C3 olarak karşımıza çıkıyor. Aslında bizim elimizdeki denklem, A1X, B1Y, C1Z, bunları B yapalım.
+
+174
+00:31:44,307 --> 00:31:54,407
+yapalım. A1x, B1y, C1z değeri, D1 eşit. Yine ikinci satırdaki kat sayılarla x, y, z çarpımızda D2 eşit gibi bir senaryo var.
+
+175
+00:31:54,847 --> 00:32:04,387
+Burada yine bunu toplu bir şekilde yazacak olursak, A diye bir matrisimiz var. Bu x isimli vektörümüzle çarpılıyor ve sonuçta D vektörümüz sonuç olarak elde ediliyor.
+
+176
+00:32:04,387 --> 00:32:11,487
+Burada A'nın determinantı ile ilgileniyor olacağız. Veyahut da A matrisinde
+
+177
+00:32:12,307 --> 00:32:25,067
+Mesela A matrisinde birinci sütun yerine çıktı değerlerimizi, D'leri koyduğumuzda elde ettiğimiz matrisin determinantı ise Dx olacak.
+
+178
+00:32:26,067 --> 00:32:28,847
+Dx dediğimiz şey şöyle bir şey olacak temel olarak.
+
+179
+00:32:32,500 --> 00:32:35,120
+Determinant olduğu için şöyle yapalım.
+
+180
+00:32:43,059 --> 00:32:48,019
+D1, D2, D3 değerimiz var.
+
+181
+00:32:48,579 --> 00:32:51,940
+B1, B2 ve B3 değerimiz duruyor.
+
+182
+00:32:52,720 --> 00:32:56,160
+C1, C2 ve C3 değerlerimiz de burada mevcut.
+
+183
+00:32:56,940 --> 00:32:59,759
+Dolayısıyla bunun determinantı, Dx dediğimiz şey bu.
+
+184
+00:33:00,160 --> 00:33:04,819
+Bununla birlikte D1 determinantını, DZ determinantını da yazabiliyor olacağız.
+
+185
+00:33:05,619 --> 00:33:10,460
+Bir de şunun adı D olmasın, karışacak çünkü ama neyse.
+
+186
+00:33:10,963 --> 00:33:17,703
+Bir de A matrisimizin determinantı. Onu da şöyle gösterelim. Bir de bunu hesaplayabiliyor olacağız.
+
+187
+00:33:19,024 --> 00:33:24,723
+Dolayısıyla buradan hareketle biz X dediğimiz değişkeni bulmak istiyorsak yapacağımız işlem şu olacak.
+
+188
+00:33:36,948 --> 00:33:56,328
+Oranlıyor olacağız. Bu ikisini birbirine oranlıyor olacağız. Benzer şekilde Y ve Z içinde benzer adımları izlenmemiz mümkün. Çözümlemeyi bu şekilde yapabiliyoruz. Peki, determinantı nasıl bulacağız burada? Determinantı da terimleri tekrarlayarak, sağ doğru tekrarlayarak oluşturmuş olduğumuz
+
+189
+00:33:57,076 --> 00:34:25,076
+Çarpım dizisi üzerinden tanımlayacağız, pratik olarak. Örneğin A1, A2, A3, B1, B2, B3, C1, C2, C3 matresimiz var. Bunun detaylı bir anı bulmak istiyorsak, birinci ve ikinci sütunu sırayla tekrarlıyoruz. Daha sonrasında soldan sağa doğru oluşturduğumuz köşegenleri kendi içinde çarpıyoruz. Bunlar toplam olarak etki ediyor. Bununla birlikte yine soldan sağa doğru üçlü oluşturduğumuz köşegen çarpıları,
+
+190
+00:34:25,076 --> 00:34:49,956
+Bunlar da ekstra olarak katkı ediyor. Dolayısıyla bunların net birleşkesi de ilgili matris elişkin determinantı tanımlıyor. Dolayısıyla biz burada DX bölüde, BZ bölüde, DZ bölüde determinantlar üzerinden çözümlememizi sağlayabiliyoruz. Bu tool'yu isterseniz hazır matematik programlama tool'ları üzerinden de kullanabilirsiniz. Örneğin okulun MATLAB üyeliği var.
+
+191
+00:34:50,452 --> 00:34:55,912
+Matlab programını indirip matematiksel programlama açısından ilgili araçları kullanabilirsiniz.
+
+192
+00:34:56,052 --> 00:35:01,152
+Veya açık kaynaklı olarak Octave isimli bir tool var. O tool matematik programlama aracı.
+
+193
+00:35:01,252 --> 00:35:06,452
+O araç üzerinde vermiş olduğunuz denklem sistemlerini çözümünü de yine gerçekleştirebilirsiniz.
+
+194
+00:35:06,612 --> 00:35:12,972
+Onu zaten pratik bir şekilde yapıyor. Ders içerisinde elde ettiğimiz denklemleri benzer şekilde çözmeye çalışırız.
+
+195
+00:35:13,940 --> 00:35:20,039
+Bu haliyle temel altyapı noktasında bahsetmek istediğimiz noktayı tamamlamış oluyoruz.
+
+196
+00:35:20,280 --> 00:35:24,780
+Şimdi, node analizi kısmına geçtiğimizde, node analizi aslında arka tarafta...
+
+197
+00:35:25,204 --> 00:35:37,744
+Her bir düğümün bir gerilim değeri olduğunu, bu gerilim değerinin referans aldığımız düğme, yani grant düğümüne göre tanımlı bir gerilim değeri olduğunu belirtiyor.
+
+198
+00:35:37,744 --> 00:35:50,904
+Ve buna göre her bir koldan akacak akımın düğümler arasındaki gerilim farkıyla iki düğüm arasında yer alan direnç değerinin oranıyla hesaplanabileceğini, yani bildiğimiz Ohm kanunu üzerinden hesaplanabileceğini söylüyor.
+
+199
+00:35:51,731 --> 00:36:09,672
+Bu noktada ek olarak bir noktayı daha hatırlayacak olursak, Kirchhoff'un akımlar kanunu ile bunu birleştirecek olursak, düğme giren ve çıkan akım toplamlarının sıfır olması gerektiği için bu ikisini birleştirdiğimizde devreye ait lineer bağımsız tüm denklemleri yazabilmiş olacağız.
+
+200
+00:36:11,155 --> 00:36:16,355
+Örnek vermek gerekirse, elimizde bu şekilde karmaşık bir devre olsun.
+
+201
+00:36:16,496 --> 00:36:18,715
+Node analiziyle biz bunu ele almak istiyoruz.
+
+202
+00:36:18,876 --> 00:36:23,675
+Yapacağımız ilk işlem, devredeki referans gerilimi belirlemek.
+
+203
+00:36:23,675 --> 00:36:33,855
+Devredeki referans gerilimi belirleyen verken, temel olarak devremizde bir kaynak varsa, o kaynağın negatif tarafını referans olarak belirlemek anlamlı.
+
+204
+00:36:34,579 --> 00:36:50,539
+Çünkü kaynak da buna göre gerilim değeri oluşturacağı için her bir gerilimdeki gerilim değeri bir ekleme çıkartma veya toplama çıkartma işleminden kurtulmuş oluruz. Dolayısıyla bir ilk yapacağımız iş.
+
+205
+00:36:51,411 --> 00:37:10,671
+Referans verilimi, neyi belirlemek? Artık bu düğümün sıfır olarak belirlemiş olduk. Bu yolda işaretlenmiş olduğumuz düğüm, verilmiş sıfır. Dolayısıyla örneğin de olabilir gerilim kaynağı varsa, bu gerilim kaynağının üst tarafında hemen beni işaret etmişti, o noktadaki bir gerilim verilme eşit. Bunu söyleyebiliriz.
+
+206
+00:37:12,275 --> 00:37:20,115
+İkinci izleyeceğimiz adım ise, devrimizdeki düğümlerin hepsini işaretlemek ve bunlara birer etiket atamak.
+
+207
+00:37:20,655 --> 00:37:32,315
+Bunu yaparken herhangi iki elemanın ortak düğümlerine birer etiket vererek düğüm gerilimlerimizi tanımlamış oluyoruz.
+
+208
+00:37:32,376 --> 00:37:35,795
+Burada bizim beş farklı düğümümüz tanımlanmış oldu.
+
+209
+00:37:37,043 --> 00:37:49,623
+Bir sonraki adımda da bu düğümler arasındaki referans akım yönlerini tanımlamak olacak. Burada akım referans yönlerini biz keyifli olarak denilebiliriz. Buna göre denklemlerimizi yazacağız.
+
+210
+00:37:50,047 --> 00:37:59,947
+Ama bir kere bunları fiksledikten sonra işlemler sonucunda elde ettiğimiz cebirsel sonuç, eksi artı neyse, o değeri ilgili akıma atacağız.
+
+211
+00:38:00,227 --> 00:38:05,967
+Şeyi tekrar yapmamıza gerek yok. Negatif çıktı, tekrar bu akımı ters döndürelim gibi bir şey yapmamıza gerek yok.
+
+212
+00:38:06,527 --> 00:38:12,147
+Zaten bütün denklemler bu yöndeki bir akım için hesaplanmış durumda olacaktı. Ona dikkat etmemiz gerekiyor.
+
+213
+00:38:13,396 --> 00:38:35,896
+Dolayısıyla 3D şartımı tekrar edecek olursak, referans düğüm tanımladık, oraya 0 gerilim değeri tanımlamış olduk. Daha sonra düğümlerimizi tanımladık, etiket verdik bunlara. Daha sonrasında da düğümler arasındaki akım referans yönlerimizi etiketleriyle birlikte tanımladık. Bundan sonra yapacağımız işlem arkadaşlar, bu Kirchhoff'un akımlar kanunu kullanarak denklemlerimizi yazmak.
+
+214
+00:38:36,403 --> 00:38:41,024
+Şimdi burada, geldin üzeri, bir olarak bunları yazmaya çalışalım.
+
+215
+00:38:44,024 --> 00:38:45,583
+Bir saniye.
+
+216
+00:39:07,827 --> 00:39:11,027
+Pardon, okulda olunca arada bölünüyor.
+
+217
+00:39:12,347 --> 00:39:20,367
+Şimdi düğüm gerilimlerimizi tanımladık ve artık her bir Kirchhoff'un akımlar kaldığını kullanarak denklemlerimizi yazmaya çalışacağız.
+
+218
+00:39:20,467 --> 00:39:24,407
+Aslında bu denklemler üzerinden bizim denklem setimiz oluşacak.
+
+219
+00:39:24,407 --> 00:39:28,407
+Şöyle ki, örneğin burada...
+
+220
+00:39:32,724 --> 00:39:42,483
+Şuradaki düğüm için bakacak olursak, buraya U7 giriyor, U1 çıkıyor. Dolayısıyla U7 ve U1 birbirine eşit. Yazacağımız ilk denklem bu.
+
+221
+00:39:43,104 --> 00:39:47,463
+İkinci denkleme bakacak olursak, U1, U2'ye eşit. İkinci denklemimiz bu.
+
+222
+00:39:48,304 --> 00:39:55,864
+Sonrasında yine bir referans gerilimimiz üzerinden geçen bir akım var. U6'nın da U7'ye eşit olduğunu söyleyebiliriz.
+
+223
+00:39:57,164 --> 00:40:00,000
+Burada tek koldan geçen ana kol akımını...
+
+224
+00:40:00,000 --> 00:40:15,700
+Dikkat alarak, 1, 2, 3, 4 tane akım değerinin birbirine eşitliğini bulmuş olduk. Yine V3 düğüm için bakacak olursak, U2 akımı giriyor, U3 ve U4 aynı düğümden çıkıyor. Dolayısıyla U2 eşittir, U3 artı U4 diyebiliriz.
+
+225
+00:40:16,519 --> 00:40:24,920
+Sonrasında ne diyeceğiz? U4, V4 düğümüne göre bakacak olursak, U4 giriyor, U5 çıkıyor, U4 ile U5 birbirine eşit.
+
+226
+00:40:25,364 --> 00:40:35,483
+Sonrasında da ne diyebiliriz? V5 düğümü için yazacak olursak, I3 artı I5, I6'ya eşit diyebiliriz. Biz de bu denklemimizi söyleyebiliriz.
+
+227
+00:40:35,583 --> 00:40:44,503
+Şimdi bu, Kirchhoff akımlar kanununa göre vermiş olduğumuz denklemler, bu denklemlerde bilinmeyen I'ların yerini artıp şu şekilde yazacağız.
+
+228
+00:40:44,503 --> 00:40:53,364
+Düğüm gerilimleri ve direnç değerleri cinsinden yazmaya çalışacağız. Örneğin, burada I1 dediğimiz akım değerimiz, I1 dediğimiz akım değerimiz,
+
+229
+00:40:53,364 --> 00:40:54,963
+Akım değerimizi yazmaya çalışalım.
+
+230
+00:40:56,323 --> 00:41:02,063
+I1 akımımız, V1 potansiyelinden, V2 potansiyeline doğru akan bir akım.
+
+231
+00:41:02,143 --> 00:41:10,723
+Dolayısıyla, V1-V2 bölü, R1 akımı, direnci cinsinden bunu ifade etmemiz mümkün.
+
+232
+00:41:10,723 --> 00:41:13,103
+Bunu bıraktıramadık gene.
+
+233
+00:41:18,099 --> 00:41:27,959
+Burada R1 direnci, N'ye eşit olacak, bu bizim B1 akımımıza eşit olacak. Dolayısıyla burada her bir akım boyarı için şeyleri yazabilir durumdayız.
+
+234
+00:41:28,059 --> 00:41:35,739
+Düğüm gerilimleri ve dirençler cinsinden akım değerlerini yazabiliriz. Bunu tüm akımlar için yapıyoruz.
+
+235
+00:41:41,907 --> 00:41:51,127
+Hangi potansiyelden hangi potansiyele doğru akıyorsa, başlangıç potansiyeli eksi varış potansiyeli diye bunu yazmamız lazım.
+
+236
+00:41:51,667 --> 00:41:58,567
+Varış eksi başlangıç değil, dikkat edin. Başlangıç eksi varış bölü direnç değeri olarak bunu yazmamız gerekiyor.
+
+237
+00:41:58,567 --> 00:42:07,507
+Önemli bir noktası bu. Bunu yazdıktan sonra, bu akım değerlerimizi yazdıktan sonra ve yerine koyduktan sonra,
+
+238
+00:42:07,699 --> 00:42:11,159
+Şunu yapabiliyor olacağız artık.
+
+239
+00:42:14,771 --> 00:42:31,591
+Dövremizde bir takım kaynaklar varsa bazı potansiyel değerleri doğrudan bellidir. Örneğin, V1 potansiyeli bizim için bir bilinmeyen olmasına rağmen, referans gerilim ile V1 arasında bir kaynağımız olduğu için V1'in V'ine eşit olduğunu söyleyebiliriz.
+
+240
+00:42:31,591 --> 00:42:42,351
+Dolayısıyla bir tane değişkenimizi bulmuş olduk. Bizim tespit etmeye çalıştığımız şeyler aslında V1, V2, V3, V4 ve V5 gerilim gerilimlerini bulmaya çalışıyoruz. Bunlardan bir tanesi,
+
+241
+00:42:42,771 --> 00:42:49,132
+Devre topolojisi itibariyle ve seçmiş olduğumuz referans gerilim itibariyle otomatikman bilinmiş oldu.
+
+242
+00:42:49,771 --> 00:42:55,471
+Veya bu denklem sistemi için basit bir denklemimizi sistemimize eklemiş olduk.
+
+243
+00:42:56,971 --> 00:43:02,192
+Daha sonrasında yapacağımız işlem bu denklem sistemini yerine koyup,
+
+244
+00:43:02,643 --> 00:43:18,463
+Düğüm gerilimlerini bulmak. Bizim denklemlerimiz neye bağlı olacak? Şurada gördüğünüz gibi V'lere bağlı olacak. V'lere bağlı şurada görmüş olduğumuz denklem sistemini yazdığımız zaman aslında bizim 5 bilinmeyenimiz 5 tane denklemimiz olacak.
+
+245
+00:43:18,463 --> 00:43:30,643
+Veya 5'ten daha fazla denklem de olabilir. Bir kısmı bunlardan lineer bağımlı. Fakat elimizde lineer bağımlı 5 tane denklem olacak. Onları çözdüğümüzde de V1, V2, V3 ve N4.
+
+246
+00:43:30,643 --> 00:43:33,083
+V3, V4, V5'i bulmuş oluyoruz.
+
+247
+00:43:33,683 --> 00:43:41,483
+Düğüm gerilimlerini bulduktan sonra yapacağımız işlemde, örneğin biz V1 ve V2'yi bulmuşsak artık I1 akımını bulmamız mümkün.
+
+248
+00:43:41,483 --> 00:43:50,283
+Çünkü V1-V2 bölü 9 kilo ohm bize I1 direncini verecekti. İzleyeceğimiz adımda buna tekabül edecekti.
+
+249
+00:43:50,576 --> 00:44:10,016
+Dolayısıyla bu mantık çerçevesinde, nod analizi çerçevesinde devre çözümü yapmak istiyorsak veya bize devre çözümünü nod analiziyle yapın denmişse, izleyeceğimiz yollar referans gerilim tanımlamak, bunu özellikle gerilim kaynağının eksi yönünde seçmek, daha sonrasında tüm düğümleri etiketlemek,
+
+250
+00:44:10,516 --> 00:44:29,316
+Daha sonrasında düğümler arasındaki akımları etiketlemek ve yönlerini vermek, referans yönlerini vermek. Daha sonrasında Kirchhoff akımlar kanunu çerçevesinde denklemlerimizi yazmak. Her bir akım değerini düğüm gerilimlerinin diferansına bağlı olarak tekrar Ohm kanun çerçevesinde düzenlemek.
+
+251
+00:44:29,715 --> 00:44:40,615
+Elimizdeki denklem sistemini düğüm gerilimleri cinsinden çözmek ve son olarak da tek artık bilmediğimiz veya hesaplanmadığımız değer her bir eleman üzerinden geçen akım,
+
+252
+00:44:41,056 --> 00:44:47,915
+onları da ilgili düğüm gerilimlerinin diferansı ve direnç değeri oranı olarak bulmak şeklinde ilerleyeceğimiz bir yol olmuş oluyor.
+
+253
+00:44:48,415 --> 00:44:55,195
+Mesela elimizde şöyle bir devre var ise, bunu belki böyle yapsam daha pratik olacak.
+
+254
+00:45:12,788 --> 00:45:24,407
+Örneğin elimizde böyle bir devre durumu var. Ne yaptık? İşte referans gerilimimizi belirledik, düğümlerimizi etiketledik, düğümler arasındaki akımların referans yörünlerini tanımladık ve bunları da etiketledik.
+
+255
+00:45:25,748 --> 00:45:35,447
+Şimdi bu denklemlerimizi yazmaya çalışalım. Burada ilk yazacağımız denklem V1'in, V1 gerilimimizin işte ne olduğu.
+
+256
+00:45:39,795 --> 00:45:47,456
+V1 gerilimimiz neye eşit olacak? 10 volta eşit olacak. Çünkü kaynağımız dolayısıyla bu şekilde tanımlı.
+
+257
+00:45:48,056 --> 00:45:50,175
+Onun haricinde başka ne diyebiliriz?
+
+258
+00:45:53,755 --> 00:46:00,396
+I7, I1, I2 ve I6 yerine hepsinin yerine I diyorum. Bunların hepsinin birbirine eşit olduğunu biliyoruz.
+
+259
+00:46:10,643 --> 00:46:15,783
+Buna göre denklemlerimizi oluşturmaya çalışalım. İlk denklemimiz şu olacak sanırım.
+
+260
+00:46:20,703 --> 00:46:24,243
+Neredeydi? Şurada, şu düğüm için yazalım.
+
+261
+00:46:25,063 --> 00:46:31,643
+I akımımız neye eşit? I akımımız I3 artı, I4'e eşit.
+
+262
+00:46:32,543 --> 00:46:34,643
+I'yı nasıl yazabiliriz? I dediğimiz şey...
+
+263
+00:46:35,411 --> 00:46:56,891
+V2-V3 bölü 2000, bu uya eşit. Yine V1-V2 bölü 9000, uya eşit, onu söyleyebiliriz. Ve de son olarak V5 bölü 7000, uya eşit diyebiliriz.
+
+264
+00:46:58,063 --> 00:47:03,803
+U'ya bağlı olarak pek çok düğümün geriliminin belirlendiğini görüyoruz.
+
+265
+00:47:04,303 --> 00:47:10,844
+Bir tane daha denklemimiz vardı. O da U4 ile U5'in de birbirine eşit olduğunu söyleyebiliriz.
+
+266
+00:47:10,903 --> 00:47:14,823
+Her ikisine de U4 diyelim şimdilik. Çünkü aynı kolda oldukları için.
+
+267
+00:47:16,364 --> 00:47:17,663
+Son olarak da şunu yazalım.
+
+268
+00:47:19,103 --> 00:47:20,903
+U3 artı U4
+
+269
+00:47:21,523 --> 00:47:46,104
+Eşittir yine U olacak. Şuradaki düğüm için. Bakın bu yine değişkenleri değiştirdiğimiz zaman, şu kola gelecek olan akım değerlerini birleştirdiğimiz zaman ve aynı notasyona getirdiğimizde, şurası için yazacağımız akım denklemiyle, şurası için yazacağımız akım denkleminin birbirinden bineer bağımlı olduğunu görmüş oluyoruz.
+
+270
+00:47:49,523 --> 00:47:54,344
+Burada U4 ve U olarak isimlendirmek bir denklemden bizi kurtarmış oldu bu noktada.
+
+271
+00:47:55,684 --> 00:48:03,923
+Buradan kurtarmış oldu. Şimdi elimizdeki U denklemini U3 ve U4'ü bulacağız. Onları bulmadık. Onları yazalım.
+
+272
+00:48:04,584 --> 00:48:10,903
+U3 değerimiz neye eşit? U3 değerine baktığımızda V3'den V5'e akan bir akım var.
+
+273
+00:48:16,532 --> 00:48:40,612
+5000'de. Son olarak da ne yazıyoruz? I4 yazmadık. I4 değerimizde V4'ü diskart edebiliriz. Yani şöyle yapabiliriz. V3'den V5'e 4K'dan akan bir akım da diyebiliriz. Veya V3'den V4'e 3K üzerinden akan akım da diyebiliriz. İkisi de aynı hesaba gelecek. Şöyle yazalım. I4 akımımızda.
+
+274
+00:48:41,108 --> 00:48:53,928
+V4 akımımızda V3-V4 bölü 3000 olarak yazabiliriz. Şimdi bunları toparladığımızda yerine koyacak olursak,
+
+275
+00:48:58,148 --> 00:49:06,088
+Kaç tane denklemimiz var bakalım? Şuradan bir denklem gelecek. Şuradan bir denklem gelecek.
+
+276
+00:49:07,923 --> 00:49:25,264
+2, 3, 4 tane denklemimiz gelecek. Bilinmeyenlerimiz neler? V1, V2, V3 ve V5. V4'u burada diskart mı ettik? V4'ü diskart etmemişiz ama diskart edebilirdik.
+
+277
+00:49:35,603 --> 00:50:00,000
+Nerede yazabiliriz? Eğer ki şurada, şu denklem için, şurada elde ettiğimiz denklemi alıp şu şekilde yazacak olursak, V3 düğümünden başlayıp V5'e 3 ve 1K'lık dirençler üzerinden akan akım diye tanımlayacak olursak, yani U4'ü V3-V5 bölü 4000 olarak tanımlayabiliriz.
+
+278
+00:50:00,000 --> 00:50:08,019
+Anladığımızda, bu şekle getirirsek, V1'i bilmiyoruz, V2, V3'ü bilmiyoruz, V5'i bilmiyoruz, 5 tane değer bilmiyoruz.
+
+279
+00:50:08,335 --> 00:50:17,536
+Karşı tarafta kullandığımız U3 ve U4'ü 3 ve 5 cinsinden yazmış durumdayız. Dolayısıyla 4 tane bilinmeyen, 4 tane denklem olarak bunu elde etmiş oluyoruz.
+
+280
+00:50:17,576 --> 00:50:27,235
+Hani aradaki indirgemeleri biz kendimiz yapmaya çalıştık. Ama bunu yapmasak da, her bir bilinmeyen için bunu yazmış olsak da aynı sonucu ulaşmamız mümkün.
+
+281
+00:50:27,235 --> 00:50:28,675
+Onu da şöyle görelim.
+
+282
+00:50:33,204 --> 00:50:42,384
+Buradaki V1, V2, V3, V4, V5 toplam 5 tane bilinme yama, 5 tane denklem oluşturmamız lazım. Şimdi onları teker teker oluşturmaya çalışalım.
+
+283
+00:50:46,744 --> 00:50:56,104
+Aradaki indirengemeleri kendimiz yapmayacak olursak, bir kere V1 için onu yazacağız. Birinci denklemimiz bu.
+
+284
+00:50:56,916 --> 00:51:20,836
+İkinci denklemimiz, V1-V2 bölü 9000 eşittir I1 diyeceğiz. Daha sonra V2-V3 bölü 2000 eşittir I2 diyeceğiz. Ondan sonra şunu dememiz lazım. I2 eşittir I3 artı I4 dememiz lazım.
+
+285
+00:51:21,460 --> 00:51:28,659
+Ondan sonra V3-V5 bölü 5000 eşittir I3 dememiz lazım.
+
+286
+00:51:29,759 --> 00:51:36,619
+Sonrasında V3-V4 bölü 3000 eşittir I4 dememiz lazım.
+
+287
+00:51:36,619 --> 00:51:44,759
+Yine V4-V5 bölü 1000 eşittir I5 dememiz lazım.
+
+288
+00:51:50,003 --> 00:51:57,744
+I3-6, I5, eşittir I6 denemiz lazım. Sonrasında da diğer kısıtları yazacağız. Ne onlar?
+
+289
+00:51:58,364 --> 00:52:11,403
+I7, pardon, I1 eşittir I7, O da eşittir I2, O da eşittir I3, O da eşittir I6 ve son olarak I4 eşittir I5 yazmamız lazım.
+
+290
+00:52:11,795 --> 00:52:19,495
+Bu durumda bizim bilmediklerimiz U'ları tam bilmiyoruz, ZR'ı tam bilmiyoruz. Bakalım kaç denklemimiz var burada?
+
+291
+00:52:37,427 --> 00:52:59,467
+Ekstradan denklemler de geliyor. 16 tane denklem var. 5 tane akımımız, gerilimimiz var. 7 tane akım, 5 tane, 12 tane denklem yapıyor. Fakat bizim koyabileceğimiz denklemler bunu aşabiliyor. Demek ki ekstra denklemler de burada ortaya çıkabilir. Biz bunlardan binar bağımsız olanları değerlendirmeye almalıyız.
+
+292
+00:53:05,204 --> 00:53:16,563
+düğüm denklemlerini elde etmemiz mümkün. Ama pratik olarak ilerleyeceksek, burada seri olan elemanlar üzerinde tek bir akım değeri olarak bunu yazarsak pratikleştirmiş oluruz.
+
+293
+00:53:17,284 --> 00:53:25,103
+Yine benzer şekilde ana kol akımı veya aynı kolda giden akımlar varsa bunları da ortak bir etiketle yazmak.
+
+294
+00:53:25,472 --> 00:53:40,492
+işlemlerimizi pratikleştirmiş olacak. Bunu bu her iki mantığı da gördük. Pratikleştirerek, yani indirgilerek yazdığımız senaryo veyahut da tüm değişkenleri içerecek şekilde yazdığımız senaryonun her ikisi de geçerli olduğunu görmüş olduk.
+
+295
+00:53:41,711 --> 00:53:45,992
+Buradaki denklemlerimizi yazmaya devam edecek olursak,
+
+296
+00:53:54,291 --> 00:54:11,032
+Bu örnekte, bu akım değerlerinden kurtulup, hepsini düğüm gerilimleri cinsinden yazdığımız bir senaryo. Dolayısıyla, V1'in ona eşit olduğunu yazdık. V2, V3'ü, V5'i, V5'i bilmiyoruz. Dört tane bilinmeyen var senaryosu üzerinden hareket ediyoruz.
+
+297
+00:54:11,032 --> 00:54:21,072
+Ve burada baktığımızda da, birinci denklem, ikinci denklem, burada da üç tane eşitlik var. Yani iki tane eşitlik olarak da bunu görebiliriz.
+
+298
+00:54:21,376 --> 00:54:40,155
+Bu üç tanenin herhangi ikisini seçtiğimiz bir durum için ekstra iki denklem daha elde edemiz. Dolayısıyla dört bilinmeyen dört denklem olarak burada sonucumuzu elde edebiliriz. Bunlara göre yapmış olduğumuz hesapta denklem sistemini çözdüğümüzde de ilgili gerilim değerlerine ulaşabiliyoruz.
+
+299
+00:54:40,659 --> 00:55:00,860
+Bu ilgili gerilim değerlerine ulaştıktan sonra yapacağımız adım da her bir akım değerini hesaplamak. Örneğin, bu ilgili akımını hesaplamak istiyorsak, V1-V2 değerimiz, o da 4.45 yapacak, bölü 9K üzerinden akım değerlerini hesaplamış olacağız. Bunun gibi tüm akım değerlerini de bulduktan sonra,
+
+300
+00:55:02,099 --> 00:55:11,419
+Burada her bir eleman üzerindeki gerilim düşünmelerini bulup, daha sonra bunları dirençlerle oranladığımızda da her bir eleman üzerindeki akım değerini bulmuş olacağız.
+
+301
+00:55:15,411 --> 00:55:28,972
+Örneğimiz buna dayanıyor. Bu yönteme ilişkin olarak sayısal örnekler üzerinde de kendimiz çözerek ilerleyeceğiz ama genel akışını vermek istedim öncelikli olarak. Nasıl ilerlememiz gerektiğine dair.
+
+302
+00:55:30,831 --> 00:55:40,891
+Yine bir özeti de burada mevcut. Bu örnekleri şimdi birlikte kendimiz çözeceğiz. Buraya kadar olanlarla ilgili söylemek istediğimiz bir şey var mı? Yani yöntemin uygulanmasıyla ilgili olarak.
+
+303
+00:55:41,331 --> 00:55:59,692
+Bilinmeyenleri sadece düğüm gerilimleri bırakacak şekilde düğüm geriliminde ne olduğunu tanımlayacak olursak, ilgili düğümün referans seçtiğimiz düğüme göre potansiyel farkı olarak tanımladığımızda iki tane düğüm arasındaki bağlı eleman üzerindeki akan akım, bağlı oldukları düğümlerin
+
+304
+00:56:00,340 --> 00:56:07,279
+Potansiyel farkına bağlı olarak aslında doğru orantılı şekilde oluşuyor. Yani Ohm kanununu uyguladığımız bir senaryo.
+
+305
+00:56:07,840 --> 00:56:11,460
+Node analizinde yazacağımız tüm düğüm denklemlerinin
+
+306
+00:56:11,807 --> 00:56:22,688
+Düğüm gerilimleri cinsinden dönüştürülmesi lazım. Daha sonrasında elde etmiş olduğumuz denklem sisteminde düğüm gerilimlerini çözecek şekilde ilerletilmesi gerekiyor.
+
+307
+00:56:22,788 --> 00:56:32,947
+Düğüm gerilimlerini çözdükten sonra, belirledikten sonra da her bir koldaki akımları, gerilim potansiyel farkı, bölü, direnç değeri olarak Ohm kanunundan bulmamız gerekiyor.
+
+308
+00:56:32,947 --> 00:56:35,547
+Yöntemi işleyişiyle ilgili sormak isteyeceğiniz bir şey var mı?
+
+309
+00:56:36,179 --> 00:56:42,079
+Eğer yoksa bir ara vereceğim. Aradan sonra da örnekleri kendimiz çöremeye çalışacağız. Var mı buraya kadar olanla ilgili soracağınız?
+
+310
+00:56:49,715 --> 00:56:50,675
+Yok sanırım.
+
+311
+00:56:50,876 --> 00:56:55,215
+Hocam, soruyla ilgili değil de sesiniz geçen haftaya göre biraz kötü düzeltmiş asıl var mı acaba?
+
+312
+00:56:56,096 --> 00:56:57,775
+Nasıl? Kesintili mi geliyor?
+
+313
+00:56:58,376 --> 00:57:00,255
+Parazitli gibi geliyor, biraz boğuk geliyor.
+
+314
+00:57:01,836 --> 00:57:04,755
+Kontrol edeyim, taktığım şeyi ters mi takmışım?
+
+315
+00:57:04,755 --> 00:57:09,755
+Bu doğru. Belki şuradaki şeyleri ters takmışım. O da doğru.
+
+316
+00:57:10,336 --> 00:57:14,476
+Tekrar bir kontrol edeyim, bir kabloları düzelteyim arada. Tamam mı?
+
+317
+00:57:14,815 --> 00:57:15,815
+Tamamdır hocam, teşekkür ederim.
+
+318
+00:57:15,996 --> 00:57:24,896
+Eğer devam ederse, ben düzeltmeye çalışayım, eğer devam ederse bilgisayar mikrofonuna geçeriz kulaklıktan değil de. Onu bir uyarırsınız tekrar olur mu?
+
+319
+00:57:24,896 --> 00:57:26,036
+Tamamdır hocam, teşekkür ederim.
+
+320
+00:57:26,295 --> 00:57:34,896
+Tamam, teşekkürler. Kaç geçeymiş bakayım? 12 geçe kaldığımız yerden devam edelim arkadaşlar. 2'ye 12 geçe.
+
+321
+01:07:28,211 --> 01:07:32,132
+Merhaba tekrar arkadaşlar. Sesle ilgili problem devam ediyor mu hala?
+
+322
+01:07:37,748 --> 01:07:38,768
+Evet hocam galiba.
+
+323
+01:07:40,268 --> 01:07:45,907
+Şu anda nasıl? Şimdi bilgisayarın mikrofonuna geçtim. Şu anda nasıl?
+
+324
+01:07:46,327 --> 01:07:47,467
+Daha iyi hocam şu anda.
+
+325
+01:07:48,128 --> 01:07:49,947
+Tamam peki o zaman buna devam edelim.
+
+326
+01:07:50,748 --> 01:07:52,688
+Hatta koptan falan bir problem oldu.
+
+327
+01:07:54,168 --> 01:08:00,048
+Şimdi node analiziyle ilgili örnek bir devremiz var. Onun üzerinden çözümleme yapmaya çalışacağız.
+
+328
+01:08:00,048 --> 01:08:03,367
+Şimdi onun için onu şöyle alıp diğer tarafa taşıyayım.
+
+329
+01:08:24,180 --> 01:08:43,500
+Devremiz bu şekilde. Bu devre için ilk yapacağımız işlem, hatırlayacağımız üzere bir referans diyelim denemek. Burada referans belirlemimizi şurada belirleyelim. Bu bizim için 0 voltluk referans diyelim. Bir sonraki yapacağımız devredeki düğümleri belirlemek.
+
+330
+01:08:44,860 --> 01:08:48,040
+Tırda bir V1 düğüm, burada bir V2 düğüm belirlenmiş.
+
+331
+01:08:48,532 --> 01:08:55,532
+Bunun haricinde bir tane daha düğüm var. O da şuradaki V3 ile isimlendireceğimiz düğüm olsun.
+
+332
+01:08:57,012 --> 01:09:03,092
+Bu V3'ü yazmanın aslında çok bir anlamı olmayacak ama neden olmadığını görmek lazım.
+
+333
+01:09:04,032 --> 01:09:05,992
+Sonrasında da buradaki akımları tanımlayalım.
+
+334
+01:09:05,992 --> 01:09:13,771
+Şimdi şu koldaki akım için ayrı bir etiket vermeyeyim. Zaten bu kolda bir akım kaynağı var. Bu koldaki akım değerini o belirleyecek.
+
+335
+01:09:14,579 --> 01:09:19,779
+Şu kol için bir belirsizlik var. O yüzden ben burada şu yönlü bir I1 akımı tanımayayım.
+
+336
+01:09:20,399 --> 01:09:24,539
+Yine bu kolda bir belirsizlik var. Bunu I2 diye bir akım tanımıyorum.
+
+337
+01:09:24,699 --> 01:09:27,719
+Son olarak şurada bir belirsizlik var. I3 de buna diyelim.
+
+338
+01:09:30,520 --> 01:09:35,299
+Son en sağdaki kolda da zaten bir başka akım kaynağı olduğu için oradaki değerimiz belli.
+
+339
+01:09:35,828 --> 01:09:45,368
+Şimdi V1 düğümü için direnç, kanatın toplamlarını yazalım. Ne diyeceğiz orada? İşte 2 giriyor, 2 amper giriyor, I1 ve I2 çıkıyor. 2 eşittir.
+
+340
+01:09:48,007 --> 01:09:50,128
+Ne diyeceğiz? Ne diyemiyorum.
+
+341
+01:09:53,708 --> 01:10:01,048
+I1 artı I2 değerimiz olacak. Birinci düğüm için, V1 düğüm için bunu yazdık.
+
+342
+01:10:01,939 --> 01:10:17,600
+V2 düğümü için yazalım. V2 düğümü için 4 amper giriyor, I2 giriyor, I3 çıkıyor. Dolayısıyla 4 artı I2, I2 eşittir, I3 dememiz lazım. Bunu da V2 için yazdık.
+
+343
+01:10:18,479 --> 01:10:29,219
+Şimdi başka yazacağımız bir şey yok zaten. Akımlarımız bunlar. Bir de şurası için yazabiliriz. Şuraya da bir mesela I4 desem.
+
+344
+01:10:29,876 --> 01:10:42,355
+I1, I4'e eşit olacak. Onu yazabilirim ama bizim asıl amacımız buradaki I1, I2 ve I3 akımlarını bunları şey cinsinden yazabilmek.
+
+345
+01:10:42,355 --> 01:10:46,216
+Ne cinsinden? İşte V1, V2, V3 cinsinden.
+
+346
+01:10:47,283 --> 01:11:06,463
+V3 cinsinden yazabilmek. Asıl amacımız bu. Dolayısıyla sadece bu iki düğüm üzerinden hareket etmemiz, bu iki denklem üzerinden hareket etmemiz yeterli. Hangi şartta? V3'ü, burada I1, I2, I3'ü düğüm gerilimleri cinsinden yazarken, burada V3'ü elimine edebiliyorsam bu iki denklem yeterli. Şimdi ona bakalım.
+
+347
+01:11:11,220 --> 01:11:26,900
+düğüm gerilimleri cinsinden yazmak. I3 akımına baktığımızda arkadaşlar, I3 akımı V2 potansiyelinden referansa gidiyor. Dolayısıyla toplam gerilim düşümünün V2-0 bölü 5 olmuş.
+
+348
+01:11:26,900 --> 01:11:33,520
+Bölü 5 diye bunu yazabiliriz. Bunu yazdık.
+
+349
+01:11:33,872 --> 01:11:51,112
+I2 için yazalım. I2 için ne diyeceğiz? Bu da V1'den V2'ye doğru atıyor. Verilen yönde hesaplayabilmek için V1-V2 V1-V2 bölü 15-10 diyeceğiz.
+
+350
+01:11:51,572 --> 01:12:00,252
+Şimdi asıl geldi. Şu V3'ü elimine edebiliyor muyuz, edemiyor muyuz? Onu görmek adına. I1 akımını yazmamız lazım. Normalde I1 akım için ne diyecektik?
+
+351
+01:12:01,235 --> 01:12:16,655
+Klasik anlamda yazacak olsak, V1-V3 diyecektik değil mi? V1-V3 bölü 7-10 yazacaktık ama bu sefer V3 ile denkleme girdi. O zaman bizim üçüncü bir denkleme daha ihtiyacımız oluyor bu senaryo için.
+
+352
+01:12:19,335 --> 01:12:27,595
+Üçüncü denklemimiz de şu olacak aslında, onu kullanıcı yok olsak, şuraya bir I4 akımı diyecek olsak, I4 akımı
+
+353
+01:12:28,079 --> 01:12:35,600
+V3 bölü 3'e eşit olacak ve aynı zamanda I1 eşittir I4 diye yazacağız. Bunları kullandığımızda
+
+354
+01:12:36,340 --> 01:12:40,460
+4 bilinmeyen 4 linal bağımsız denkleme indirgemiş olacağız.
+
+355
+01:12:40,940 --> 01:12:45,319
+Fakat şunu farklı bir şekilde de yazabiliriz. Şuradaki denklemini farklı bir şekilde yazabiliriz.
+
+356
+01:12:45,380 --> 01:12:52,979
+Bizim istediğimiz I1 akımı. I1 akımı, evet, V1-V3 bölü 7'ye eşit olmakla birlikte bu kolda akan akım,
+
+357
+01:12:52,979 --> 01:12:57,380
+aynı zamanda V1 potansiyelinin referansa göre olan farkının,
+
+358
+01:12:58,228 --> 01:13:15,648
+Toplam, bu koldaki toplam dirence de bölümüne ek. Yani biz I1'i şöyle de yazabiliriz. V1-0 bölü 10 Ohm olarak da yazabiliriz. Bu koldaki toplam direnç olarak da yazabiliriz.
+
+359
+01:13:15,648 --> 01:13:24,807
+Bu şekilde yazdığımızda V3'ü elimine etmiş oluyor. Dolayısıyla başta yazmış olduğumuz iki denklem yeterli hale gelmiş oluyor. Şu anda bu senaryo üzerinden gidelim.
+
+360
+01:13:25,235 --> 01:13:28,036
+Bunları yerine yazmaya çalışalım öncelikli olarak.
+
+361
+01:13:42,515 --> 01:13:54,995
+Yerine yazmaya çalışalım. 2 eşittir. I1 değerimiz neydi? I1'ye 1 nerede? I1 şurada. V1 bölü 10.
+
+362
+01:13:57,455 --> 01:14:09,175
+Artı I2 değerimiz ne? I2 değerinde şurada V1-V2 bölü 15 yapmışız. V1-V2 bölü 15 diye yazmışız. İkinci denklemimize gelelim.
+
+363
+01:14:09,520 --> 01:14:21,239
+4 artı, U2 dediğimiz V1-V2 bölü 15, eşittir U3, U3 akımımızda V2 bölü 5 imiş.
+
+364
+01:14:21,239 --> 01:14:24,780
+Şimdi bunları bir düzenleyerek yeniden yazmaya çalışalım bu iki renklerimizi.
+
+365
+01:14:27,020 --> 01:14:31,340
+İşte kaçta birleşecekler? 30 ile birleşecekler. 3, 2 diyelim.
+
+366
+01:14:32,280 --> 01:14:35,700
+Bunu düzenlediğimizde 30, 60 eşittir.
+
+367
+01:14:36,275 --> 01:14:57,315
+3V1 artı, pardon 3 mu? 3, evet. 3, 2V1 eksi 2V2 şeklinde getirmiş olduk. Bunları da birleştirecek olacak. 3 ile ve 12 ile, pardon 15 ile birleştireceğiz. Yine 60 oluyor.
+
+368
+01:14:59,435 --> 01:15:01,435
+60 eşittir.
+
+369
+01:15:02,323 --> 01:15:15,263
+60 artı V1-V2 eşittir 3V2 olarak yazabileceğimiz bir senaryo. Bunları bir adım daha toparlayacak olursak, 5V1, 6V2 hocam.
+
+370
+01:15:15,724 --> 01:15:19,743
+Hangisi? Nerede? Burası da.
+
+371
+01:15:20,263 --> 01:15:21,363
+Karşıya mı attınız direkt?
+
+372
+01:15:24,063 --> 01:15:26,103
+Birinci denklem mi, ikinci denklem mi?
+
+373
+01:15:26,203 --> 01:15:27,243
+İkinci denklem mi hocam?
+
+374
+01:15:27,243 --> 01:15:28,663
+V2 dediniz mi?
+
+375
+01:15:29,332 --> 01:15:35,872
+V2 dedim, V1-V2, karşı tarafta 3V2 olmuyor mu?
+
+376
+01:15:37,012 --> 01:15:39,692
+Tamam, 15 ile genişlettik, özür dilerim.
+
+377
+01:15:40,852 --> 01:15:49,072
+Birinci denklemiyinden düzenleyelim. Bir de matriz notasyonda olduğu haliyle yazalım.
+
+378
+01:15:49,587 --> 01:15:55,247
+V1 ve V2'de bir tarafta eşittir. Bir sabit şeklinde yapmaya çalışalım.
+
+379
+01:15:55,727 --> 01:16:00,688
+Bu durumda burası 5V1, eksi 2V2 eşittir. 60 olacak.
+
+380
+01:16:01,547 --> 01:16:10,367
+Diğer denklemimiz de, birinci denklemde yaşayacak olursak, V1.
+
+381
+01:16:11,252 --> 01:16:21,891
+eksi 4 ve 2 eşittir 60 olarak yine bunu yazabileceğiz. Bunu bir denklem sistemine oturttığımızda da 5'e 1, eksi 2'ye eksi 4,
+
+382
+01:16:31,315 --> 01:16:40,615
+V1, V2 eşittir, 60'a 60 şeklinde bunu yazabiliyor olacağız.
+
+383
+01:16:42,475 --> 01:16:48,695
+Şimdi bunu çözerken bahsetmiş olduğum bu hazır tool'lardan bir tanesi olan ben de nükse tarafındayım.
+
+384
+01:16:48,695 --> 01:16:52,275
+Octave tool'unu kullanabiliriz. Octave tool'a baktığımızda burada.
+
+385
+01:16:52,851 --> 01:16:57,271
+Bir takım maddisler tanımlayabiliriz, o maddisleri kullanabiliriz.
+
+386
+01:16:57,271 --> 01:17:03,271
+Şimdi birazcık daha kaydırmam lazım sanırım.
+
+387
+01:17:11,060 --> 01:17:19,980
+Şimdi bu bizim A maddesimiz. Şuradaki gördüğümüz A maddesi. Burada A maddesini tanımlayalım. A eşittir deyip köşeli parantel ile ilgili deniyorum.
+
+388
+01:17:20,760 --> 01:17:28,300
+5'e eksi 2. Bir sonraki satıra geçmek için nokta olur. 1'e eksi 4 desek. Bakın burada maddesimizin.
+
+389
+01:17:28,692 --> 01:17:41,512
+gerçek hali yazılmış oldu. Bir de bizim C diyeceğimiz bir vektörümüz var. C vektörümüz de neye eşit? 60 ve bir alt satırında 60. Yani ikiye birlik bir vektör olarak yazacağız.
+
+390
+01:17:41,512 --> 01:17:54,512
+Şimdi elimizdeki denkleme baktığımızda, matriz denklemine A çarpı X eşittir C diye bir denklemimiz var. Burada her iki tarafı A'nın inversüyle çarparsak,
+
+391
+01:17:56,212 --> 01:18:04,891
+A'nın inverse ile çarparsak, şurada birim matriz kalacak. Yani x eşittir, A'nın inverse'ü çarpı c şeklinde bunu ifade etmemiz mümkün.
+
+392
+01:18:04,992 --> 01:18:12,032
+Aynı işlemi oktak tarafında yapacak olursak, x eşittir'e geçiyorum.
+
+393
+01:18:15,923 --> 01:18:24,004
+çarpı C vektörü dediğimizde, bu değerleri elde ettik. Bu değerler doğru mu bilmiyorum, bir şeyler yapmakta edelim.
+
+394
+01:18:25,923 --> 01:18:30,344
+Küsuraksız mı çıkmış? İkisi de yerini çıkmış. Bir tane denklemimizde yanlış mı yaptık o zaman?
+
+395
+01:18:32,344 --> 01:18:34,884
+Bir tane denklemimizde yanlış yaptık olabiliriz.
+
+396
+01:18:50,963 --> 01:18:51,963
+İki deneyim.
+
+397
+01:18:54,963 --> 01:18:56,963
+Burada iki den genişletti.
+
+398
+01:18:58,963 --> 01:19:00,963
+İki den genişletti.
+
+399
+01:19:00,963 --> 01:19:02,963
+İki deneyim.
+
+400
+01:19:02,963 --> 01:19:04,963
+Yazarken ne yaptık?
+
+401
+01:19:04,963 --> 01:19:06,963
+5V1 dedik.
+
+402
+01:19:06,963 --> 01:19:08,963
+Eksi 2V2.
+
+403
+01:19:10,963 --> 01:19:11,963
+Başta aç.
+
+404
+01:19:11,963 --> 01:19:12,963
+Eksi 60 olacak herhalde.
+
+405
+01:19:15,956 --> 01:19:16,956
+Hangisi için?
+
+406
+01:19:17,376 --> 01:19:19,595
+Alttaki V1-4V2.
+
+407
+01:19:22,095 --> 01:19:27,496
+Karşı tarafa geçerken X olarak geçmesi lazım. Doğru, şurasının X olması lazım.
+
+408
+01:19:28,355 --> 01:19:32,476
+Tekrar renklerimizi de şu C'yi uncelleyelim, X'i altmış olarak.
+
+409
+01:19:33,396 --> 01:19:36,576
+Yine aynısını çalıştırdık. Tamam, evet. Teşekkür ediyorum uyarı için.
+
+410
+01:19:37,108 --> 01:19:50,408
+Bu şekilde bu tool'u kullanmak mümkün. Aynısını MATLAB'ta da yapabiliyoruz. Yani matris tanımlayıp matris çözümünü A'nın E'li ve O'yu çarpı C'ye şekilde de tanımlayabiliyoruz.
+
+411
+01:19:50,828 --> 01:20:00,000
+Dolayısıyla bu şekilde güncelleme yaptığımız zaman veya denklem sistemini bu matematiksel araçlar ile çözdüğümüzde elde ettiğimiz sonuç 2'ye...
+
+412
+01:20:00,000 --> 01:20:13,739
+İkiye birlik bir vektördü. İkiye birlik vektör niye tekabül ediyor? Bizim bilinmeyenimiz neydi? Ona bakalım. Bilinmeyenimiz V1 ve V2. Dolayısıyla ilk değerimiz V1, ikinci değerimiz de V2'ye karşılık gelmiş oluyor. Onu söyleyemiz.
+
+413
+01:20:17,363 --> 01:20:25,123
+Şimdi bu durumda yapacağımız bir sonraki işlemde bu aradaki akım değerlerini bulmak.
+
+414
+01:20:25,783 --> 01:20:33,003
+20 volt olarak bulduysak, örneğin bu koldaki akım değerimizi, şunu kapatmam gerekiyor sanırım.
+
+415
+01:20:35,403 --> 01:20:37,064
+Bir de şunu atmamız lazım.
+
+416
+01:20:52,659 --> 01:21:04,459
+Akım değerlerini bulmamız lazım. V1 ve V2 20'şer volt bulduğumuz için burada ana kol V1'den aşağı doğru tanımladığımız akım Ö1 akımıydı sanırım. Bu Ö1 akımımız bizim 2 amper olarak çıkmış olacak.
+
+417
+01:21:06,139 --> 01:21:14,459
+Bu üç akımımız 20 bölü 5, 4 amper olarak çıkmış olacak. V1 ile V2 arasındaki akan akımımız ise değer olarak ne olacak arkadaşlar?
+
+418
+01:21:16,243 --> 01:21:24,863
+İkisi de 20 volt olduğuna göre, 20-20, 0. Dolayısıyla burada 15 volt pilenç üzerinde herhangi bir rakım akmadığını söylüyor olacağız.
+
+419
+01:21:27,423 --> 01:21:31,243
+Enteresan, özel bir durum olarak karşımıza çıkan bir senaryo olmuş oluyor.
+
+420
+01:21:32,863 --> 01:21:36,243
+Burada çözümü yerine koyarak...
+
+421
+01:21:36,416 --> 01:21:37,755
+Efendim, bir daha alayım sorayım.
+
+422
+01:21:38,195 --> 01:21:41,556
+15 ohmluk dirençte kısa devre mi olmuş oluyor?
+
+423
+01:21:42,396 --> 01:21:53,435
+Yok, kısa devre olmuş olmuyor. Sanki açık devre gibi oluyor. Kısa devre diyebilir miyiz ona? Gerilimleri eşit olduğu için evet kısa devre diyebiliriz.
+
+424
+01:21:53,844 --> 01:21:56,064
+Kısa devre diyebiliriz. Daha doğru dediğim.
+
+425
+01:21:56,543 --> 01:22:03,904
+Yani eğer ki bir elemanın uçları arasındaki gerilimler eşitse, sanki onun yerine tel koymuşluk gibi etki yapıyor.
+
+426
+01:22:04,524 --> 01:22:11,104
+Dolayısıyla V1 ve V2 düğümü aynı gerilim seviyesine sahip olduğu için sanki bir telle değiştirmeyiz gibi düşünebiliriz.
+
+427
+01:22:11,144 --> 01:22:13,064
+O da kısa devre karşılık gelmiş oluyor.
+
+428
+01:22:16,212 --> 01:22:22,512
+Çözümü incelediğimizde, çözümü değerleri yerine koyarak yapabildiğimiz gibi matris formatında da yapabiliriz.
+
+429
+01:22:22,592 --> 01:22:27,932
+Bu matris formatındaki yaptığımız işlemi elle determinant hesabı üzerinden yapabiliriz.
+
+430
+01:22:28,192 --> 01:22:33,832
+Veya hazır matematik araçları üzerinden, matematik programlama araçları üzerinden de yürütebiliriz.
+
+431
+01:22:33,852 --> 01:22:36,592
+Size tavsiyem verilecek olan ödev ve laboratuvar.
+
+432
+01:22:36,992 --> 01:22:44,832
+sorularında işlemlerin doğruluğunu test etmek adına bu tür araçları kullanmanız faydanıza olacaktır.
+
+433
+01:22:46,231 --> 01:22:49,572
+Şimdi burada SuperNode isimli bir kavram var, onu geçeceğim.
+
+434
+01:22:50,003 --> 01:22:54,963
+Bu analizle ilgili özel bir durum. Ama kısaca şöyle söyleyelim.
+
+435
+01:22:55,543 --> 01:23:05,583
+Hani biz devre analizimizi not analizi üzerinden yaparken referans gerilim seçtiğimiz vakit bu referans gerilimi kaynaklardan birinin eksisi üzerinde seçiyorduk.
+
+436
+01:23:05,583 --> 01:23:17,583
+Eğer ki karşılaştığımız devrede kullanmış olduğumuz kaynaklardan özellikle gerilim kaynaklarından herhangi bir ucu referansla bağlantılı...
+
+437
+01:23:18,003 --> 01:23:43,543
+Bu özel bir durum oluşturuyor. Oluşan özel durum da şu, gerilim kaynağı, kendi uçları arasındaki gerilim farkını belirleyen bir eleman. O zaman bu VC düğümü ve VB düğümü diye tanımlamış olduğumuz düğüm üzerinden akan gerilimi belirlememiz mümkün değil. Buradan akan akımı aynı koldaki başka bir direnç değeri belirliyor. Dolayısıyla bu özel bir durum. Node analizi yaparken özel bir durum.
+
+438
+01:23:46,003 --> 01:23:53,724
+Az önce bahsettiğimiz standart yöntemle bunu ilerletmeye çalıştığımızda, linear bağımlı bir tane denklem yazmış oluyoruz.
+
+439
+01:23:53,763 --> 01:24:02,144
+Yani gereksiz bir denklem yazmış oluyoruz. O yüzden VC'yi elimine etmeye çalışıyoruz. Öyle söyleyeyim. VC'yi elimine etmeye çalıştığımız bir senaryo oluyor.
+
+440
+01:24:02,763 --> 01:24:11,263
+Şimdilik bu kadarcık bahsedeyim. Mesh analizini anlattıktan sonra Mesh'in de özel bir durum var. Onların özel durumlarını bilhane ele almaya çalışalım.
+
+441
+01:24:12,756 --> 01:24:17,136
+Mesh analizi dediğimiz senaryoda da mesh veyahut da çevre neye tekabül ediyor?
+
+442
+01:24:17,256 --> 01:24:26,556
+Çevre, bir başladığımız noktadan bütün gerekli miktarca elemanı dolaşıp tekrar başlanmış noktasına döndüğümüz çevrimleri ifade ediyor.
+
+443
+01:24:26,676 --> 01:24:33,476
+Bir çevrim boyunca tüm elemanlar üzerindeki gerilim düşümünün birçok gerilimler kanunlu çerçevelinde sıfır olması gerektiğini biliyoruz.
+
+444
+01:24:33,840 --> 01:24:42,399
+Bu özellikten faydalanarak ve de Ohm kanunu kullanarak karşılaştığımız devreye ilişkin denklem sistemini oluşturmamız mümkün.
+
+445
+01:24:43,139 --> 01:24:55,600
+Bunu yaparken temel olarak aslında izleyeceğimiz yol oluşturmuş olunan devrede ki temel doğrudan görmüş olduğumuz çevreleri kullanmak temel bir yaklaşım.
+
+446
+01:25:01,840 --> 01:25:26,200
+Akım kaynağı ile karşılaşıyorsak ve bu akım kaynağı birden fazla çevre tarafından paylaşılıyorsa yine birbiriyle linler bağımlı iki denklem yazmış oluyoruz. Yani ayırt edici bir denklem yazmamış oluyoruz. Bu durumda da denklemlerimizden bir tanesi ortak akım kaynağını içerecek şekilde bir tanesi de bu ortak akım kaynağını içermeyecek daha geniş bir çevre üzerinden alarak linler bağımsız denklem sistemimizi oluşturmamız mümkün oluyor.
+
+447
+01:25:26,752 --> 01:25:33,892
+Kabaca bahsetmek gerekirse yine aynı devre mantığını ele alalım. Buradaki yaklaşımımız şu olacak.
+
+448
+01:25:35,315 --> 01:25:43,216
+Normalde bir kol üzerinden akan akımı aslında düğüm gerilim cinsinden az önce tanımlamıştık.
+
+449
+01:25:43,216 --> 01:25:55,976
+Bu meş analizinde ise şöyle bir yaklaşım var. Her bir çevremiz için seçmiş olduğumuz, oluşturmuş olduğumuz her bir çevre üzerinde akan sanal bir çevre akımı olduğunu varsayacağız.
+
+450
+01:26:03,315 --> 01:26:07,996
+çevreli akımlarıyla birlikte net bir şekilde etkisi üzerinden
+
+451
+01:26:09,300 --> 01:26:36,300
+Orayı etkiliyor. Net etkisini, net toplamını, çevirsel toplamını bulmamız lazım. Örneğin bu mantığı şöyle ifade etmeye çalışayım. Görmüş olduğumuz devre iki adet bağımsız çevreden oluşuyor. Bu iki bağımsız çevre için ben çevre akımları yazmaya çalışsam, çevre akımları yaklaşımıyla analiz etmeye çalışsam, burada birinci çevrede I1 şeklinde bir akım dolaştığını varsaysam ve ikinci çevrede I2 şeklinde bir akım dolaştığını...
+
+452
+01:26:36,979 --> 01:26:38,519
+Ulaştığını varsaysam,
+
+453
+01:26:38,912 --> 01:26:59,652
+Bu durumda aslında R3 direnci üzerindeki net akımın yönlere dikkat edecek olursak, I1 verilen referans yönü doğrultusunda. Dolayısıyla buna pozitif etki edecek. I2 ise negatifinden giriyor. Verilen gerilim referansının negatifinden giriyor. Dolayısıyla eksi yönünü etki edecek.
+
+454
+01:27:06,912 --> 01:27:32,511
+R3 ile çarpılmış hali buradaki V3'ü seçmiş olduğum çevre yönünde belirlemiş olacak. Bununla birlikte, bu birinci çevre için bu şekilde yazarken, ikinci çevre için burada seçmiş olduğum gerilim referans yönünü değiştirebilirim. Özellikle hangi gerilim referans yönünde seçiyorsam o gerilim referans yönünde bir belirleme de yapmamız mümkün. Onu söyleyebiliriz.
+
+455
+01:27:32,948 --> 01:27:57,528
+Şimdi buradaki bu sanal çevre akımlarından hareket edecek olursak, şunu biliyoruz. Bu çevrede tek bir akım değerinin dolaşması pek olası değil değil mi? Hani tek kol olmuş olsa, tek kolu bir devre olmuş olsa, ana kolda bu akım tektir, benzerdir. Ama şurada birden fazla akım değerinin toplandığı bir senaryo var. Burada I birden farklı bir değer oluşacak. Zaten onu kullanmaya çalışıyoruz. Ona dikkat etmek gerekiyor.
+
+456
+01:27:57,935 --> 01:28:06,815
+seçmiş olduğumuz birinci çevre için Kirchhoff gerilimler kanunu yazacak olursak arkadaşlar, gerilim kaynağının eksisinden girmişiz.
+
+457
+01:28:07,815 --> 01:28:16,515
+Seçmiş olduğumuz referans yönlerini birinci çevre için seçmiş olduğumuz çevre yönünde olsun.
+
+458
+01:28:16,635 --> 01:28:22,015
+Yani hangi yönde dirence giriyorsa o yön, o elemanın artı referansı olsun şimdilik.
+
+459
+01:28:23,507 --> 01:28:39,747
+Bunu yaptığımızda artı V1, artı V2, bir de V3 gerilimimiz var. Artı V3, artı V6 sıfıra eşit. V3 gerilimini yazarken özel bir senaryo var. V3 gerilimi I1-I2 çarpı R3'e eşit olacak.
+
+460
+01:28:39,747 --> 01:28:51,507
+Ama bununla birlikte V1 gerilimini hesaplamak istediğimizde o sadece çevre akımı, burada sadece etkin, başka etkin olan bir çevre akımı yok. Dolayısıyla I1 çarpı R1 olarak.
+
+461
+01:28:51,507 --> 01:29:02,727
+karşımıza çıkacak. V2 potansiyeli de I1 çarpı R2 olarak karşımıza çıkacak. V6 için de I1 çarpı R6 değerini kullanacağız.
+
+462
+01:29:03,267 --> 01:29:12,727
+İkinci çevre için denklemine yardım etmek istediğimizde ise, burada şunu yapabiliriz. Belirlemiş olduğumuz gerilim referans yönlerini olduğu gibi kullanabiliriz.
+
+463
+01:29:12,727 --> 01:29:14,567
+Cebirsel olarak böyle bir sonuç çıkar.
+
+464
+01:29:14,975 --> 01:29:28,075
+Fakat bu denkleme, eşitliği karşı tarafa attığımızda ise şu olmuş oluyor. Aslında birinci çevre için vermiş olduğumuz gerilim referans yönleriyle ikinci çevre için vermiş olduğumuz gerilim referans yönlerini ayrı olarak da tutabiliriz.
+
+465
+01:29:28,075 --> 01:29:33,075
+Bu şu demek, ikinci çevreyi için kullanırken, ikinci çevreyi tanımlarken...
+
+466
+01:29:33,876 --> 01:29:48,235
+Ben burada bu sefer kırmızıyla mı olacağım? Kırmızı oldum. Kırmızıyla işaretlemiş oldum. Gerilim referans yönlerini kullanıyorum ki bu gerilim referans yönleri I2 ile aynı yönlü olacak. Artı, eksi, V3 seçebilirim mesela.
+
+467
+01:29:49,036 --> 01:29:59,615
+Yine benzer şekilde burada aynı yönlü olacak şekilde artı, eksi, V4 seçebilirim ve artı, eksi, V5 seçebilirim. V3'ü değiştirmekte sıkıntı yok.
+
+468
+01:30:00,000 --> 01:30:11,380
+V3'ü kırmızıyla yazmış olduğum yönde yazmak istediğimde, V3'ü kırmızıyla yazmak istersen, bu durumda bu yöndeki akım katkılarına bakalım.
+
+469
+01:30:11,659 --> 01:30:20,220
+I2 pozitif yönde katkı yapacak, I2-I1 negatif yönde katkı yapacak, çarpı R3 olarak yazmam gerekiyor.
+
+470
+01:30:20,640 --> 01:30:35,180
+Eğer ki ben mavi ile işaretlenmiş olan referans yönünü, burada artı B3 mavi ile işaretlenmiş olanı kullanıyorsa, bu durumda ise bu gerilim referans yönünde, U1 pozitif yönünü katkı yapıyor.
+
+471
+01:30:39,572 --> 01:31:03,252
+I1 pozitif yönlü katkı yapıyor fakat I2 negatif yönlü katkı yapıyor, R3'e eşit olacak. Dolayısıyla burada hangisini tercih edersek kullanabilir. Ama pratik olan şu, burada gerilim referans yönlerini tanımlamadan seçmiş olduğum çevre akımının yönüyle uyumlu olacak şekilde gerilimleri referansını değiştirmek.
+
+472
+01:31:03,828 --> 01:31:26,188
+Önce mavi ile olanı yazıp sonra kırmızı ile olanı yazmak, ikisi de aynı şey aslında baktığımızda. Çünkü birinci denklemde bu şekilde yazdığım hali kullanmak istersem, ikinci çevre için bunu yazarken gördüğünüz gibi eksi olarak geliyor. Dolayısıyla bir şey değişmiyor bu durumda, onu söylememiz gerekiyor.
+
+473
+01:31:27,608 --> 01:31:29,188
+Tekrar geri gelecek olursak.
+
+474
+01:31:30,323 --> 01:31:53,723
+İki tane çevremiz varsa aslında bizim bilinmeyenlerimiz iki tane çevre akımı. I1 ve I2'yi bilmiyoruz. İki tane denklem yazmamız lazım. İlimler bağımlısı iki denklem yazmamız lazım. Ama bizim şu andaki sadece gerilimlere bağlı bir denklemimiz var. Her bir eleman gerilimini çevre akımları ve dirençler cinsinden dönüştürüyoruz ve iki bilinmeyen iki denklemli hale gelmiş oluyoruz.
+
+475
+01:31:55,828 --> 01:32:20,768
+Bundan bahsetmiştik. Bir eleman üzerindeki gerilim düşümünü çevre akımlarının net toplamı ve direnç değerinin çarpımı ile bulabiliriz diye söylemiştik. Daha sonrasındaki her bir eleman üzerindeki gerilim düşümünü çevre akımları ve ilgili dirençler cinsinden yazdığımızda R'leri biliyoruz, I1 ve I2'yi bilmiyoruz ve denklemimiz yine sadece neredeydi?
+
+476
+01:32:22,707 --> 01:32:26,187
+Ö1 ve Ö2'yi bilmiyoruz. Onlar üzerinden çözümü gerçekleştiriyorum.
+
+477
+01:32:26,511 --> 01:32:39,931
+Şeyle karşılaştıracak olursak, not analiziyle, mesh analizini karşılaştıracak olursak, not analiziyle bunu çözmeye çalıştığımızda dört tane bağımsız düğüm üzerinden çözülmeye uğraşmıştık, hatırlayacak olursanız.
+
+478
+01:32:40,471 --> 01:32:45,071
+V1'den V4'e kadar olan düğümlerle uğraşmıştık. Dört tane denk devrimimiz vardı orada çünkü.
+
+479
+01:32:45,671 --> 01:32:52,191
+Fakat bu devreyi aynı zamanda mesh analiziyle ele aldığımızda ise sadece iki tane çevre olduğunu gördük.
+
+480
+01:32:52,191 --> 01:32:54,511
+Dolayısıyla birbirinden bağımsız iki tane çevre dengesi.
+
+481
+01:32:54,511 --> 01:33:10,611
+yazmanın yeterli olduğunu görmüş olduk. Dolayısıyla devreyi çözerken bu devrenin node analiziyle, mesh analiziyle mi daha pratik çözüleceğinin analizi yapılabilir veya size özellikle belirli bir yöntem belirtilmişse o yöntemle çözmeye çalışabilirsiniz.
+
+482
+01:33:12,051 --> 01:33:16,831
+Elimizde ilk devre örneğine, beşinci örnek neredeyse?
+
+483
+01:33:22,579 --> 01:33:34,000
+Bu yüzden şöyle ilerleyelim. Sayısal değerleri olan bu devreye ilişkin çözümümüzü ele alacak olursak,
+
+484
+01:33:35,604 --> 01:33:52,564
+İki tane çevremiz var. Buradaki çevre denklemlerini, bu maviyle işaretlenmiş olan gerilim referans yönlerini dikkate almadan, her bir çevreyi işaretlemiş olduğum, seçmiş olduğum her bir çevrenin yönüyle uyumlu gerilim referans yönleri alarak yapacağım.
+
+485
+01:33:53,044 --> 01:34:02,044
+Bu durumda yazacağım denklem sistemiyle, maviyle işaretlenmiş olan gerilim referans yönlerini dikkate alarak oluşturmuş olduğumuz denklem sistemini karşılaştırarak vermeye çalışalım.
+
+486
+01:34:02,484 --> 01:34:07,044
+Şimdi birinci şey için, birinci çevre için yazacağımız denklem şu olacak.
+
+487
+01:34:07,784 --> 01:34:10,924
+Eksi 12, I1 üzerinden gidiyoruz.
+
+488
+01:34:11,724 --> 01:34:23,664
+Artı V1, artı V2, artı V3, artı V6 eşittir sıfır.
+
+489
+01:34:23,664 --> 01:34:25,464
+Bunu genel olarak yazabiliriz zaten.
+
+490
+01:34:26,064 --> 01:34:29,164
+İkinci çevre için de yazacak olursak da,
+
+491
+01:34:33,779 --> 01:34:42,300
+Onu aslında direkt elemanlar cinsinden yazarsak daha pratik olacak. Şöyle ki, yine elemanlar cinsinden yazalım.
+
+492
+01:34:42,300 --> 01:34:57,060
+Pardon. Eksi 12 artı V1 artı V2 artı V3 artı V6 eşittir 0. İkincisinde ise bu sefer I1 yönündeki nedir onun adı?
+
+493
+01:34:58,195 --> 01:35:04,115
+Bir yönündeki referanslarla yazalım. Yani ben buraya şunu demiş oluyorum, kırmızıyla işaretleyelim.
+
+494
+01:35:04,755 --> 01:35:11,935
+Artı, eksi, bir, B3 demiş olacağım. Ondan sonra burada B4 ve B5 aynı yönlü. Şimdi onları yazmaya çalışalım.
+
+495
+01:35:13,075 --> 01:35:16,875
+Ne var orada? Artı, B3.
+
+496
+01:35:18,260 --> 01:35:23,320
+Artı B4, Artı B5 olacak, eşittir. Sıfır olarak bunu yazabileceğiz.
+
+497
+01:35:24,020 --> 01:35:27,760
+Hocam, 3'ü niye ters yörediniz onu anlamadım.
+
+498
+01:35:27,760 --> 01:35:37,260
+Şöyle yapmaya çalışıyoruz. Her seçmiş olduğumuz çevre akım yönüyle uygun referansta bir gerilim tanımlamaya çalışıyoruz.
+
+499
+01:35:37,587 --> 01:35:43,068
+Şimdi eğer ki mavi ile işaretlenmiş olan referans da yazmış olsaydık şunu dememiz gerekiyordu.
+
+500
+01:35:43,648 --> 01:35:44,627
+Onu da şuraya yazacağım.
+
+501
+01:35:45,248 --> 01:35:50,868
+Eksi V3 artı V4 artı V5 eşittir sıfır yazmamız lazım değil mi?
+
+502
+01:35:50,927 --> 01:35:52,568
+Mavi ile verilmiş referans yönleri için.
+
+503
+01:35:53,167 --> 01:35:59,967
+Kırmızı ile yazılmış referans yönündeki V3 gerilimine bakacak olursak bunun karşılığı şu oluyor.
+
+504
+01:35:59,967 --> 01:36:03,268
+İ2 kırmızı ile yapacak gibi.
+
+505
+01:36:04,511 --> 01:36:05,351
+Şöyle yapalım.
+
+506
+01:36:12,659 --> 01:36:21,239
+Eğer kırmızıyla işaretlemiş olduğum yöndeki gerilim referansını seçersen, bu V3 gerilimini şöyle yazmam lazım.
+
+507
+01:36:21,879 --> 01:36:30,779
+I2-I1 çarpı neymiş o? R3 diyelim şimdi. Bu şekilde yazmam lazım.
+
+508
+01:36:30,779 --> 01:36:35,539
+Fakat maviyle verilmiş referans yönünde yazarsam, bu sefer şöyle yazacağız.
+
+509
+01:36:35,920 --> 01:36:43,260
+Şimdi bu verilen referans yönünde I1 pozitif yönlü katkı yapıyor. I2 negatifinden geliyor ya, o zaman şu olması lazım.
+
+510
+01:36:43,956 --> 01:37:03,816
+I1-I2 çarpı R3. V3 buna eşit. Başında da bir eksi var. Eksiyle koyduğumuz vakit I2-I1 çarpı R3 oluyor. Dolayısıyla bu eksi çok kafamızı karıştırmasın diye bir pratik yol olarak ondan bahsetmek istiyorum.
+
+511
+01:37:11,956 --> 01:37:21,256
+Verilen çevre akımının yönünde seçersek, ekstradan bir negatif işlemiyle uğraşmamış olabilirdi. O noktada pratik olduğu için bunu söylemek istedim.
+
+512
+01:37:22,496 --> 01:37:29,756
+Dolayısıyla ikisi de aynı şeye tekabül ediyor. Eksi V3 olarak yazıp I1-I2 demek, başına da eksi geldiği vakit.
+
+513
+01:37:30,484 --> 01:37:34,904
+İki yönündeki gerilim referans yönünü seçmekle aynı şeyi oluşturmuş oluyor.
+
+514
+01:37:34,984 --> 01:37:40,064
+Veya denklemlere baktığımızda da bu denklemin karşıya atılmış hali gibi oluyor.
+
+515
+01:37:42,424 --> 01:37:48,144
+Birbirine eşit çıkıyorlar. Bunun pratikliği şu yönde, şöyle ifade edebilirim onu.
+
+516
+01:37:49,684 --> 01:37:53,884
+Bu şekilde hareket etmenin pratikliği. Örneğin buradaki referans yönlerini vermediğimizi düşünelim.
+
+517
+01:37:54,324 --> 01:37:56,424
+Yani bir ara adımdan kurtulmuş olacağız.
+
+518
+01:37:58,836 --> 01:38:00,475
+Bunları vermediğimizi düşünelim.
+
+519
+01:38:01,755 --> 01:38:07,355
+Bu durumda ben birinci çevre akımı için yazmak istediğimde şunu yazacağım.
+
+520
+01:38:08,515 --> 01:38:10,935
+Birinci işte kaynaktan giriyorum.
+
+521
+01:38:11,135 --> 01:38:11,855
+Eksi 12.
+
+522
+01:38:12,515 --> 01:38:22,515
+Şu elemandaki gerilim düşümünü verilen çevre akımı yönüyle orantılı olarak düşüneceğim için artı 4000 i1.
+
+523
+01:38:22,963 --> 01:38:27,123
+Artı, verilen çevre akımıyla aynı yönde düşüneceğim.
+
+524
+01:38:27,684 --> 01:38:38,603
+8000i1 artı, verilen çevre akımıyla aynı yönde olacak şekilde 5K'daki gerilim düşümünü tanımlıyorum.
+
+525
+01:38:38,804 --> 01:38:40,735
+O da 5000i1 artı, verilen çevre akımıyla aynı yönde olacak şekilde 5K'daki gerilim düşümünü tanımlıyorum.
+
+526
+01:38:40,735 --> 01:39:07,615
+I1 ile aynı yönün olduğu için I1-I2. Bu eleman üzerine net etki hem birinci çevre, sanal birinci çevre akımından hem de sanal ikinci çevre akımından var. Ama sanal birinci çevre akımının yönünde hareket ettiğim için bu yönü pozitif kabul ettim. I2 bunun tersinde çıktı. Dolayısıyla arasındaki fark, bir de ne var? I6 varmış. Artı 1000 I1 eşittir sıfır yazacağım.
+
+527
+01:39:08,000 --> 01:39:23,000
+Birinci yönünü dikkate alarak yazdığım denklem bu. İkincinin yönünü dikkate alarak yazdığım denklemde ise, bu ikinci yönü hep pozitif kabul ediyorsa, 6K'lık bir direnç üzerinden I2 geçiyor. Dolayısıyla 6000 I2 artı...
+
+528
+01:39:23,471 --> 01:39:43,751
+3K üzerinden geçiyor. 3000I2 artı verilen çevre akımı yönündeki 5K'deki düşümün verilen çevre akımı yönünde pozitif yönde bir gerilim düşümü olduğunu varsayacak olursak bu durumda da I2-I1 çünkü vermiş olduğumuz çevre akımı yönünde I2'nin katkısı pozitif olur.
+
+529
+01:39:43,751 --> 01:39:51,471
+I1 aşağı doğru, I2 yukarı doğru. Çevre akımını pozitif kabul edersem o anda renklemini yazdım çevre akımını pozitif kabul ederim.
+
+530
+01:39:51,471 --> 01:39:57,131
+İ2-I1 çarpı 5000 eşittir sıfır şeklinde yazabilirim.
+
+531
+01:39:57,652 --> 01:40:01,331
+Dolayısıyla bu şekilde yazmak biraz daha pratik olduğu için bunu söyledim ama
+
+532
+01:40:04,020 --> 01:40:11,260
+Burada nedir onun adı? Elemanlar üzerindeki fix bir gerilim referans yönü tanımlayıp onun üzerinden de hareket edilebilir.
+
+533
+01:40:11,900 --> 01:40:18,760
+Yalnız dediğim gibi ikinci çevre için tanımlamış olduğumuz birinci yön, birinci gerilim bir negatif değerle gelecek.
+
+534
+01:40:18,980 --> 01:40:22,760
+Dolayısıyla negatifin negatifi gibi bir senaryo var. Onu gözden kaçırmamak lazım.
+
+535
+01:40:23,220 --> 01:40:28,240
+Ama böyle yaparsanız, benim son anlattığım şekilde yaparsanız bunu doğrudan yazmak mümkün.
+
+536
+01:40:32,020 --> 01:40:52,680
+12.000, 17.000, 18.000 mi? 18.000 I1, I2'lerden kaç tane var? Eksi 5000 I2 eşittir 12 çıkıyor. 12'yi karşı tarafa attım. Aşağıdaki denklemimize baktığımız zaman, Eksi 5000 I1 var.
+
+537
+01:40:53,300 --> 01:41:04,920
+Eksi 5000 iyi bir. I2'lere baktığımızda 6000, 9000, 14000 oluyor. Artı 14000 I2. Çok fazla yazmışız.
+
+538
+01:41:11,060 --> 01:41:19,720
+Eşittir sıfır. Şimdi bunu getirip yine oktavda benzer mantıkla kurmaya çalışalım.
+
+539
+01:41:28,212 --> 01:41:51,132
+A denklemimiz 18.000, A eşittir. 18.000, eksi 5.000, eksi 5.000, 14.000'dir herhalde değil mi? A'mız bu. C vektörümüz neye eşit? C vektörümüz de 12'ye 0'a eşit.
+
+540
+01:41:51,699 --> 01:41:57,739
+Biz değişkenlerimizi bulmak istersek, A'nın inverse ile C'yi çarpacağız.
+
+541
+01:41:58,499 --> 01:41:59,979
+Elde ettiğimiz sonuç ne oluyor?
+
+542
+01:42:00,099 --> 01:42:01,919
+700 ne olacak?
+
+543
+01:42:03,079 --> 01:42:08,199
+4, 5, 6, 740 mikroamperle 264 mikroamper gibi bir şey çıkıyor.
+
+544
+01:42:09,059 --> 01:42:14,939
+740 mikroamperle 264 mikroamper gibi bir değer çıkıyor.
+
+545
+01:42:15,079 --> 01:42:17,759
+Şimdi burada elde ettiğimiz sonuçlarla bir karşılaştıralım.
+
+546
+01:42:19,891 --> 01:42:41,072
+740 ve 264 mikro amperler. Dolayısıyla bahsetmiş olduğumuz pratik yolu kullanmanız sizin için de daha hızlı sonuç elde etmenizi sağlar. Ama kafa karıştırıyorsa, kafa karıştıracak gibi oluyorsa, yöntemi şöyle adım adım tarif edelim.
+
+547
+01:42:41,536 --> 01:43:00,876
+Elimizde bir devre var. Her bir basit çevre için çevre akımı yönünü tanımlıyoruz. Ondan sonra devredeki tüm elemanlar için kaynaklar hariç, gerilim kaynağı hariç, tüm elemanlar için gerilim referans yönlerini tanımlıyoruz ve verilen gerilim referans yönündeki gerilim düşünlerini çevre akımları ve dirençler cinsinden yazmaya çalışıyoruz.
+
+548
+01:43:08,336 --> 01:43:13,555
+Denklemlerin birinde negatifin negatifi gibi bir senaryoyla karşılaşmanızı sebebiyet verebilir.
+
+549
+01:43:13,555 --> 01:43:17,315
+Eğer onunla ilgili problem oluşmayacaksa bunu kullanabilirsiniz.
+
+550
+01:43:17,916 --> 01:43:25,475
+Veyahut da dediğim gibi her bir çevrenin kendi yönündeki gerilim düşünlerini pozitif referansı yönlü olarak tanımlayıp,
+
+551
+01:43:25,576 --> 01:43:30,635
+yani her bir çevre denklemini kendi içindeki pozitif yönümünü ayrı ayrı tanımlayıp da kullanabilirsiniz.
+
+552
+01:43:30,796 --> 01:43:34,735
+Gördüğünüz gibi sonuç olarak ikisi de aynı noktaya varıyor diyebiliriz.
+
+553
+01:43:35,731 --> 01:43:39,731
+Manüel olarak çözmüş olduk. Analiz olarak da baktığımızda...
+
+554
+01:43:41,908 --> 01:44:07,587
+Benzer bir sonuç elde ediyoruz. Bundan sonra ne yapacağız? Bundan sonra bizim bilmediğimiz şey, çevre akımlarını bulduk. Çevre akımlarından sonra her bir eleman üzerindeki yerinin düşümünü bulmak. Bunun için eğer ortak bir çevrede olmayan eleman varsa, bu eleman üzerinden geçen akım sadece o çevre akımıyla ilişkili. Örneğin V1 elemanına baktığımızda, V1'li yeri için sadece I1 ile alakalı I1 çarpı 4K olarak bunu kullanacağız.
+
+555
+01:44:07,587 --> 01:44:09,908
+Veya aynı şey V2'yi düşünmek.
+
+556
+01:44:09,908 --> 01:44:28,247
+Fakat V3 için şunu söylememiz lazım. V3 gerilimini artık çevre akımlarıyla teker teker yönlendirmek yerine tek bir yön için verip, mesela I1 yönündeki gerilim düşümü diyebiliriz veya I2 yönündeki gerilim düşümü diyebiliriz.
+
+557
+01:44:28,667 --> 01:44:37,908
+Eğer I1 yönündeki net gerilim düşümüne bakacaksak I1-I2 net akımı çarpı 5K olarak bunu hesaplamamız lazım veyahut da referans yönünü ters çevireceğiz.
+
+558
+01:44:37,908 --> 01:44:43,087
+Eksekte, o zaman da U2-U1x5K olarak bunu vermemiz gerekiyor.
+
+559
+01:44:43,747 --> 01:44:51,908
+Dediğim gibi eğer kafa karışmayacaksa, ilgili çevre akımının yönündeki gerilim referans yönlerini tanımlamak daha pratik oluyor diyebilirim.
+
+560
+01:44:55,427 --> 01:44:58,127
+Örnekten sonra başka neyimiz var burada?
+
+561
+01:44:59,328 --> 01:45:03,228
+Burada bir doğrulama var. Bu ilk node analizinde de vardı. Odayı geçtim.
+
+562
+01:45:04,180 --> 01:45:23,820
+Buradaki mantık da şu, elde ettiğimiz ana kol akımını doğrulamak adına devredeki eşdeğer direnci bulup, bir kaynak bir eşdeğer direnç ikisinden oluşan bir devreymiş gibi çözüm yapıp, ana koldaki akımı test ettiğimiz bir senaryo. Bunun aynısını NOD analizinde de vardı. O yüzden onu geçtim.
+
+563
+01:45:27,636 --> 01:45:32,336
+Şimdi buna ilişkin kaç örneğimiz var? Evet, bir örneğimiz varmış. Bunlara bir bakalım.
+
+564
+01:45:34,176 --> 01:45:42,996
+Buradaki devremizde iki gözlü bir devre var. Bu devreyi ele alırken şunu yapabiliriz.
+
+565
+01:45:42,996 --> 01:45:52,256
+Sanırım az önce benim anlattığım yöntem çerçevesinde tanımlamış. Bakın burada I1 çevresi için denklemi yazarken
+
+566
+01:45:53,043 --> 01:45:59,403
+3 ohmluk direnç üzerindeki gerilim düşümünü I1-I2x3 şeklinde hesaplamış.
+
+567
+01:45:59,923 --> 01:46:08,863
+Fakat I2 için, ikinci çevre için denklememizi yazarken 3 ohmluk eleman üzerindeki gerilim düşümünü pozitif yönü burası, negatif yönü burası olacak şekilde.
+
+568
+01:46:08,863 --> 01:46:13,523
+Yani I2-I1 diye yazmış. Orayı karıştırmamanız çok önemli.
+
+569
+01:46:14,032 --> 01:46:25,311
+Yani hangi çevre yönünde denklem yazıyorsanız, o çevre yönündeki eleman gerilim düşümünü pozitif kabul ederseniz, işlemlerin daha pratik olmuş oluyor.
+
+570
+01:46:25,311 --> 01:46:29,751
+Şimdi bu elemanlar için, bu çevre de, bu devre için çözüm yapmaya çalışacak olursak,
+
+571
+01:46:30,420 --> 01:46:35,619
+Kaç tane çevre var? İki tane temel çevre var. I1 ve I2 çevre akımlarını tanımladık.
+
+572
+01:46:36,060 --> 01:46:42,159
+Ondan sonra birinci çevre için Kirchhoff yasalar kanunu yazacak olursak, eksisinden girecek bu I1 yönünde.
+
+573
+01:46:42,159 --> 01:46:53,779
+Eksi 42. Tek bir çevre akımı etkili burada. I1 çarpı 6. Burada 3 onluk benti ikisi de etkili. I1 eksi I2 çarpı 3 on eşittir 0.
+
+574
+01:46:53,920 --> 01:46:57,600
+Tekrar başladığım noktaya geri döndüm. İkinci çevre için yazarken,
+
+575
+01:46:58,068 --> 01:47:06,007
+Eksi 10, 3 onluk dirençte artısı burası, eksisi burası olacak şekilde işaret ederek de göstereyim.
+
+576
+01:47:06,947 --> 01:47:14,028
+Artısı burası, eksisi burası olacak şekilde seçtim. Dolayısıyla I2, Eksi I1 çarpı 3.
+
+577
+01:47:14,515 --> 01:47:33,456
+4 x I2 diyoruz. Eşittir 0 olarak denklemimizi elde ettik. Bunu düzenleyecek olursak ne var şimdi bakalım. 42 karşı tarafa atabiliriz. 6 I1, 3 I1, 9 I1, eksi 3 I2 eşittir 42 denklemini elde ederiz.
+
+578
+01:47:38,676 --> 01:47:52,356
+3I2, 4I2, 7I2 yapar. Eksi 3I1 artı 7I2 eşittir. Onu karşı tarafa attık. Eksi 10'u karşı tarafa attık. 10. Dolayısıyla elimizde bir denklem sistemi var. Bu denklem sistemi yine çözecek olursak,
+
+579
+01:47:52,356 --> 01:48:00,356
+yani ben şeye bastım sanırım. Denklem sistemi çözecek olursak yine oktav üzerinde,
+
+580
+01:48:06,707 --> 01:48:17,207
+9'a, eksi 3, bir alt satıra geçtim, eksi 3'e 7, C'yi de yazacak olursak, C'miz de 42'ye 10.
+
+581
+01:48:18,887 --> 01:48:25,927
+Şimdi bunun A'nın inverse ile C'ye çarptığında 6 ampere, 4 amperlik değerler elde etmiş olduk.
+
+582
+01:48:26,447 --> 01:48:31,107
+Örneğin I1 değerimiz 6 amper, I2 değerimiz 4 amper olarak elde edildi.
+
+583
+01:48:34,260 --> 01:48:38,539
+Akım ve gerilim değerlerini hesaplayalım.
+
+584
+01:48:39,260 --> 01:48:44,680
+6-10'luk direnç üzerindeki gerilim düşümünü şu yönlü olarak tanımlayacağım şimdi.
+
+585
+01:48:51,444 --> 01:49:01,644
+Artı, eksi diye tanımlayacağım. Buna etki eden I1 var. I1 bu yönle aynı. Dolayısıyla 36 voltluk bir gerilim düşünü burada söz konusu.
+
+586
+01:49:02,224 --> 01:49:09,384
+Benzer şekilde 4 onluk direnç üzerinde de yine çevre akımı yönünde ben bunu tanımlamak istiyorum. Bu yöndeki gerilim düşününe bakacağım.
+
+587
+01:49:09,904 --> 01:49:15,323
+Sadece I2 etkili. Dolayısıyla 16 voltluk bir gerilim düşünü söz konusu.
+
+588
+01:49:15,323 --> 01:49:19,323
+Burada 3 onluk direnç içinde şu yönünü tanımlayalım.
+
+589
+01:49:22,931 --> 01:49:28,291
+Artı eksi diye tanımlıyoruz. Bu yönde tanımladığımızda I1 pozitif, I2 negatif etki ediliyor.
+
+590
+01:49:28,811 --> 01:49:39,671
+Dolayısıyla 6-2, 6-4, 2 amper, 3 ile çarptığımızda burada da 6 voltluk bir gerilim düşümü olmuş olduğunu hesaplayabiliyoruz.
+
+591
+01:49:39,711 --> 01:49:44,071
+Verilen yönlerde bu şekilde bir gerilim düşümü olduğunu hesaplayabiliyoruz.
+
+592
+01:49:45,031 --> 01:49:48,131
+Bu örnekle ilgili sormak istediğimiz bir şey var mı arkadaşlar?
+
+593
+01:49:56,564 --> 01:49:57,764
+Yoksa devam edelim.
+
+594
+01:49:59,204 --> 01:50:02,984
+112 örneğimizde yine iki çevreli bir devre yapısı var.
+
+595
+01:50:03,636 --> 01:50:10,396
+I1 ve I2 çevrelerini tanımladık. Daha sonra birinci çevre ve ikinci çevre için denklemleri yazmaya çalışalım.
+
+596
+01:50:10,856 --> 01:50:15,096
+Birinci çevre için I1 akım yönünde kaynağın eksisinden giriyor.
+
+597
+01:50:15,176 --> 01:50:16,956
+Eksi 5 volt, eksi 5.
+
+598
+01:50:18,356 --> 01:50:22,916
+Çevre akımıyla aynı yönlü olarak gerilim referans yönlerini tanımlayacağımızı söylemiştik.
+
+599
+01:50:30,963 --> 01:50:36,543
+Ve kaynağın eksisinden geri giriyoruz. Eksi 2. Bu toplam başladığımız yere geldik. Eşitleri sıfır.
+
+600
+01:50:37,163 --> 01:50:43,503
+İkinci çevre için yazacak olursak kaynağın artısından girdi. Artı 2. I2 eksi I1 çarpı 2.
+
+601
+01:50:44,307 --> 01:51:07,688
+Sadece I2 ile ilgili 5 çarpı I2 kaynağın artısından girdi. Artı 1 eşittir 0 olarak ikinci denklemimizde yazdık. Bunları toparlayacak olursak 4, 2, 6 I1 yapıyor. Eksi 2 I2 var. Sabitlere bakacak olursak 7, karşı tarafta 7 değerimiz var. Burada I1'e bakalım. Eksi 2 I2, şundan dolayı eksi 2 I2 var.
+
+602
+01:51:08,079 --> 01:51:25,380
+2, 5, 7 tane I, pardon, eksi 2 I1'imiz var, 7 tane I2'miz var, 3 değeri var karşıya attığımızda, eksi 3, 2 bilinmeyen 2 denkten, çözüm elde ettiğimizde 1.13 ampere, eksi 0.10 antarlık değerler elde etmiş oluyoruz.
+
+603
+01:51:25,380 --> 01:51:36,039
+2 voltluk kaynağı arttaki güç değerine bakmamız istendiğinde V çarpı I hesabı yapacağız. Dolayısıyla I1-I2 değerini hesaplayacağız. I1-I2 değerimiz.
+
+604
+01:51:36,079 --> 01:51:52,039
+Neye tekabül edecek? 1.13-0.10. Dolayısıyla 1.23 gibi bir değer yapıyor küstüratıyla birlikte. Bu bizim yukarıdan aşağı doğru gelen akımımız, net akımımız.
+
+605
+01:51:52,039 --> 01:52:02,559
+Yani şöyle çizerek gösterelim. Şu yönlü net akımımız bizim. I1-I2 değerinde bulunuyor. O 1.23'e eşit.
+
+606
+01:52:02,880 --> 01:52:22,739
+Kaynağın eksisinden girdiği için, eksi 2 voltluk bir gerilim düşümünde, 1.23 amperlik bir akım değeri var. Dolayısıyla bunun gücü negatif. Eksi 2.47 wattlık bir değer olarak elde ediyoruz. Negatif olduğu için sisteme enerji verdiğini söyleyebiliriz. Bu örnekle ilgili sormak istediğiniz bir şey var mı arkadaşlar?
+
+607
+01:52:28,212 --> 01:52:42,231
+Yoksa bu iki temel yöntemi tanımlamış olduk. Şimdi bir ara vereceğim. Aradan sonra nod analizi ve çevre analizine ilişkin olarak iki özel durum olan süper nod ve süper mesh durumunu ele alıp onlara ilişkin örnek ve tanımlama yapmaya çalışacağız.
+
+608
+01:52:43,731 --> 01:52:47,391
+Saat 3'ü 10 geçe devam edelim arkadaşlar. Sorunuz yoksa.
+
+609
+01:52:48,511 --> 01:52:50,872
+Sorunuz yoksa saat 3'ü 10 geçe devam edelim.
+
+610
+01:52:57,300 --> 01:52:58,060
+Yok sanırım.
+
+611
+01:52:59,720 --> 01:53:01,539
+Hocam, ben bir soru sorabilir miyim?
+
+612
+01:53:01,960 --> 01:53:02,340
+Buyurun.
+
+613
+01:53:03,079 --> 01:53:04,579
+Slide'ı kapattınız mı?
+
+614
+01:53:05,739 --> 01:53:06,359
+Açayım.
+
+615
+01:53:06,460 --> 01:53:07,420
+Şu an gözükmüyor da.
+
+616
+01:53:08,199 --> 01:53:10,840
+25. slide'aydı yanlış hatırlamıyorsam.
+
+617
+01:53:12,239 --> 01:53:14,239
+Kafamı karıştıran bir yer vardı da.
+
+618
+01:53:15,020 --> 01:53:15,680
+25'e mi?
+
+619
+01:53:21,684 --> 01:53:30,963
+Hocam, burada amper kaynakları var, akım kaynakları var ya, mesela 2 amperin olduğu yere biz o kolda 2 amperlik bir akım var diyoruz.
+
+620
+01:53:31,583 --> 01:53:31,804
+Evet.
+
+621
+01:53:32,103 --> 01:53:41,203
+Normalde 2 kaynağı olunca süperci olduk mesela volt olunca. Atıyorum aynı yönlüyse bir 2'lik bir 4'lük var. Toplayıp 6 diyorduk, zıt yönlüyse çıkarıyorduk.
+
+622
+01:53:41,844 --> 01:53:46,344
+Burada akım kaynağı olunca burada devrenin diğer yerlerinden gelen akımlar olmuyor mu?
+
+623
+01:53:46,608 --> 01:53:50,587
+Mesela biz burayı direkt 2 amper olarak alıyoruz değerli şey yaparken.
+
+624
+01:53:51,547 --> 01:53:53,307
+Mesela yukarı doğru 2 amper gidiyor.
+
+625
+01:53:53,307 --> 01:53:58,307
+Şöyle düşünelim. Akım kaynağı devrede bulunduğu yere...
+
+626
+01:53:58,815 --> 01:54:13,576
+Üzerinde yazılı olan akım değerini sağlamakla mükellef. Onu sağlıyor, her halükarda sağlıyor. Nasıl sağlıyor? Diğer elemanların üzerinden geçen akımı etkileyerek, oradaki gerilim düşümlerini etkileyip, o kendi kolunda 2 amperi mutlaka sağlıyor.
+
+627
+01:54:13,695 --> 01:54:26,815
+Aynı şey gerilim kaynakları içinde geçerliydi. Gerilim kaynaklarında da şöyle, bir gerilim kaynağı bağlı olduğu iki düğüm arasındaki gerilim düşümünü kesin olarak kendisi belirliyor. Nasıl belirliyor bunu? Diğer elemanlar üzerinden geçen akımları etkileyici.
+
+628
+01:54:26,815 --> 01:54:35,195
+diyerek kendi kolu üzerindeki gerilim değerini fix olarak, üzerinde yazılı değer olarak verecek şekilde sağlıyordu.
+
+629
+01:54:35,600 --> 01:54:58,600
+Tersten bakacak olursak şu durum var. Bu akım kaynağının uçları arasındaki gerilim düşümünü kendisi belirleyemiyor. Bunu da devredeki diğer elemanlar belirliyor. Aynı şeyi gerilim kaynağı için bakacak olursak gerilim kaynağının uçlarından akan akımı da kendisi belirleyemiyor. Diğer elemanlar belirliyor. Bu şekilde ideal kaynak durumunu tanımladığımızda aslında sorun...
+
+630
+01:55:00,180 --> 01:55:08,060
+Cevaplanmış oluyor ama daha net bir şekilde açıklamamı istersen tekrar edebilirim veya sansörünü tekrar edebilirsem buna göre cevap vermeye çalışıyorum.
+
+631
+01:55:09,400 --> 01:55:19,800
+Yani hocam özet geçecek olursak, bunları denkleme yazarken o 2 amperin olduğu yerdeki akımı 2 amper olarak atıyorum 4'ün olduğu yerimize 4 olarak kabul edip yazacağız o şekilde değil mi?
+
+632
+01:55:20,060 --> 01:55:24,800
+Evet, çünkü o koldaki akım değerini bu kaynaklar kendisi ideal durum olduğu için onlar belirliyor.
+
+633
+01:55:25,971 --> 01:55:27,671
+Tamamdır hocam, teşekkür ederim.
+
+634
+01:55:30,311 --> 01:55:51,091
+Burada kapıyı karıştıran şu olabilir, diğer elemanlar var, diğer elemanlarda da akım değerleri var. Mesela 4 amperlik kaynağın akımı bunu bozmuyor mu, etkilemiyor mu? Etkilemiyor. 4 amperin etkisi diğer elemanlar üzerinde uygun şekilde öyle bir harcanıyor ki bu eleman üzerinden geçen akım sistemde 2 amper olarak fixlenebiliyor.
+
+635
+01:55:52,020 --> 01:56:07,480
+Zaten bizim aradığımız durum da o yani. Burada 2 amper geçerken, burada 4 amper geçerken, 2 ve 4 amper geçmesini sağlamak istiyorsak, diğer elemanların üzerindeki akımlar ne olmalı? Biz onu arıyoruz. Yani tersten düşündüğünde de soruyu öyle değerlendirebilirsin.
+
+636
+01:56:08,560 --> 01:56:10,020
+Tamamdır hocam, teşekkür ederim.
+
+637
+01:56:11,020 --> 01:56:12,480
+Başka soru var mı arkadaşlar?
+
+638
+01:56:18,068 --> 01:56:26,007
+Başka soru yoksa, Ongeçe kaldığımız yerden devam edeceğiz. Ongeçe dediğim gibi, süpernod ve süpermeş kavramını incelemeye çalışacağız.
+
+639
+02:07:52,659 --> 02:07:53,939
+Merhaba tekrar arkadaşlar.
+
+640
+02:07:55,679 --> 02:08:06,119
+Az önceki saatin sonunda bahsettiğimiz gibi, nod analizi ve çevre analizi için iki özel durum vardı, birer özel durum vardı, onlardan bahsetken.
+
+641
+02:08:06,759 --> 02:08:08,419
+Bincisi süper nod kavramı.
+
+642
+02:08:09,699 --> 02:08:19,039
+Örneğin, iş verilen devreyi inceleyelim, süper nod mantığı nerede karşınıza çıkıyor, onu bir anlamaya çalışalım, sonra da kural halinde ifade etmeye çalışalım.
+
+643
+02:08:19,667 --> 02:08:24,227
+Bu devremiz için bir tane referans düğüm belirlemişiz.
+
+644
+02:08:24,907 --> 02:08:26,247
+Node analizinde ne yapıyorduk?
+
+645
+02:08:27,067 --> 02:08:30,007
+İlk yapacağımız için bir tane referans düğüm belirlemek.
+
+646
+02:08:30,107 --> 02:08:33,927
+Referans düğümü de devrede bulunan kaynaklardan birisinin.
+
+647
+02:08:34,899 --> 02:08:50,659
+Negatif ucu olarak seçmek mantıklı demiştik. Dolayısıyla burayı referans olarak seçtik. Şimdi bu devre için ne var? Bir başka kaynağımız var ve başka gerilim kaynağımız, ikinci gerilim kaynağımız referanstan uzak bir durumda.
+
+648
+02:08:51,252 --> 02:09:19,252
+Buradaki sıkıntı nerede karşımıza çıkacak? Şimdi adım adım ilerlettiğimizde görelim. Birinci adım referans düğümü tanımladık. İkinci adım düğümlerimize etiket veriyorduk. Şurada bir düğümümüz var, VA düğümü. Şurada bir düğümümüz var, VB demişiz buraya. Bir de R1 direnciyle V2 kaynağının ortasında bir üçüncü düğümümüz var. VC isimli bir düğümümüz mevcut. Bunları tanımladık. Bundan sonra yapacağımız işlem her bir eleman üzerindeyiz.
+
+649
+02:09:19,252 --> 02:09:25,612
+Peki, bu akımları tanımlamak. Burada problem veya durum nasıl ortaya çıkıyor?
+
+650
+02:09:26,352 --> 02:09:35,092
+İşte örneğin, biz burada R1 direnci üzerinden geçen bir akımı tanımlayacaksak, aslında onu tanımlayabiliriz.
+
+651
+02:09:35,132 --> 02:09:42,712
+Çünkü VA-VC bölü R1, bu kolda bu yönde akan akımı bize verecek. Onu tanımlayabiliriz.
+
+652
+02:09:42,712 --> 02:09:46,232
+Peki, şu koldaki akımı nasıl tanımlayacağız? Buradaki akımı.
+
+653
+02:09:46,899 --> 02:10:10,899
+Bu da neye eşit? VC-VB böyle bir direnç yok. Dolayısıyla bu tek bir gerilim kaynağı olduğu için burada, bu eleman kendi üzerinden geçen akımı belirleyemiyor. Buradaki akım ne belirliyordu? Gerilim kaynağı. Az önce ders sonunda konuştuğumuz konu. Bu gerilim kaynağı üzerinden geçen akımı devredeki diğer elemanlar belirliyor. Dolayısıyla C ve B düğümleri arasındaki akan akımı...
+
+654
+02:10:11,028 --> 02:10:23,628
+Doğrudan yazamıyoruz. Buradan bakarak yazamıyoruz. O zaman ne yapacağız? Biz A, C ve B düğümleri arasındaki tek kol akımını aslında şu şekilde ifade ediyor olacağız.
+
+655
+02:10:24,047 --> 02:10:39,207
+VC gerilimimiz B'den V2 kadar fazla ve bu koldaki akımı VA-VC bölü R1 belirliyor dediğimizde hem akımı hem VC'yi hem de VB'yi birbirine bağlamış oluyoruz.
+
+656
+02:10:39,267 --> 02:10:43,847
+Süpernot davranı karşımıza bu ve benzeri durumlarda çıkıyor demek ki.
+
+657
+02:10:44,327 --> 02:10:47,747
+Kurallaştıracak olursak da şöyle bir kural ortaya koyuyoruz.
+
+658
+02:10:49,108 --> 02:11:06,608
+Eğer devremizde bir gerilim kaynağı varsa, bu gerilim kaynağının herhangi bir ucu, herhangi bir termineli referans düğüm ile bağlantılı değil ise bu bir süpernot karşımıza çıkartıyor.
+
+659
+02:11:07,588 --> 02:11:15,488
+Karşılaşacağımız süpernotlar sadece bağımsız gerilim kaynakları için değil, aynı zamanda bağımlı gerilim kaynakları için de geçerli.
+
+660
+02:11:15,807 --> 02:11:25,367
+Bu ikisinin ortak özelliğine, yani bağımsız ve bağımlı gerilim kaynaklarının özelliğine, bu elemanlar üzerinden geçen akımı kendileri belirleyemiyorlar.
+
+661
+02:11:25,467 --> 02:11:30,867
+Devredeki diğer elemanlar belirlediği için zaten bunlar süpermet olarak karşımıza çıkmış oluyor.
+
+662
+02:11:31,967 --> 02:11:37,947
+C ile B arasındaki akımı yazmaya çalıştığımızda da bir şey yazamıyoruz aslında, bir denklem yazamıyoruz diyebiliriz.
+
+663
+02:11:41,747 --> 02:11:51,447
+Denklemimizi yazacak olursak ilk söyleyeceğimiz şey VB ve VC düğümleri arasında sadece bir gerilim farkı var. Bunu denklemleştirebiliriz.
+
+664
+02:11:51,927 --> 02:12:00,027
+VC, VB'den ne kadar büyük? V2 kadar daha büyük. Dolayısıyla VB artı V2 eşittir VC diyebiliriz.
+
+665
+02:12:00,027 --> 02:12:07,947
+Bunun hangisi yüksek, hangisi düşük diye tanımlamaya çalıştığımızda biraz zorlanabiliriz. Onu şöyle yapalım.
+
+666
+02:12:08,500 --> 02:12:21,619
+Mesela VC düğümünün referans gerilimine göre olan farkını böyle tanımlayalım. Yine VB'yi de aynı referansa göre şöyle tanımlayalım.
+
+667
+02:12:21,619 --> 02:12:34,900
+Ve az önce çizeceğim şekilde bir şey dolaşalım. Nedir onları? Pet dolaşalım.
+
+668
+02:12:36,083 --> 02:12:47,344
+Negatif referanstan geliyorum, VB düğümüne giriyorum, V2'nin eksisinden geçiyorum, VC'nin artısından ve VC'nin eksisinden çıkıyorum. Böyle bir yol girmiş olalım.
+
+669
+02:12:47,663 --> 02:13:01,844
+Yani bu şu demek, ben buraya iki tane referans koydum ama bunların anlamı ne? Bunların anlamı şu, burası VC'nin artısı, burası VC'nin eksisi, burası VB'nin artısı, burası VB'nin eksisi.
+
+670
+02:13:01,944 --> 02:13:06,703
+Çünkü VB düğümümüz referansa göre tanımlı yer. Onu göstermiş olun yani burada.
+
+671
+02:13:06,931 --> 02:13:20,391
+Şimdi aynı yönü, aynı yol akışını tekrar çizelim. VB'nin eksisinden girdim, V2'nin eksisinden girdim, VC'nin artısından girdim, VC'nin eksisini de bitirdim.
+
+672
+02:13:20,471 --> 02:13:29,151
+VC'nin eksisiyle VB'nin eksisi aynı, ikisi de referans. Dolayısıyla ben burada bir kirchhoff gelilim kanunu yazsam, eksi VB.
+
+673
+02:13:29,716 --> 02:13:39,615
+Eksi V2, artı Vc eşittir sıfır. Bunu da düzenleyecek, yazacak olursam Vc eşittir, V2 artı Vb şeklinde yazabilirim.
+
+674
+02:13:40,136 --> 02:13:49,775
+Yani burada gerilim kaynağımızın yönüne göre kim daha küçük, eğer karıştırıyor olursak, bu şekilde bir mantık üzerinden hatırlamamız mümkün.
+
+675
+02:13:50,931 --> 02:14:00,532
+Dolayısıyla ilk yazacağımız denklem VB ve VC arasındaki ilişki V2 gerilim cinsinden yazma. İkincisi de şu.
+
+676
+02:14:02,431 --> 02:14:11,171
+Bir VA gerilimimiz aslında referansa göre V1 kadar yükseltilmiş durumda. Onu yazabiliriz. Yani VA eşittir V1 yazabiliriz.
+
+677
+02:14:12,692 --> 02:14:18,231
+Buradaki düğümlerimiz için akım denklemlerini yazacak olursak da şunu dememiz lazım.
+
+678
+02:14:18,739 --> 02:14:28,519
+V1 gerilimi, eksi VB gerilimi, bu yönlü akan akımımız, şu yönlü akan akımımız, yine VB eksi,
+
+679
+02:14:29,460 --> 02:14:57,460
+VB-0 bölü R3 şu yönlü akan akımımız. Yani çıkan bir akım. Dolayısıyla eksi işaretiyle belirtilmiş. Son olarak da burada bu yönlü akımı kullanıyoruz. Bu yönlü akımımız da neye eşit? V1-VC bölü R1'e eşit. Fakat VC'yi de şurada bulmuş olduğumuz denklemi yerine koyarak düzenliyoruz. Yani bu koldaki akımı da R1, V2 ve VB cinsiz.
+
+680
+02:14:57,460 --> 02:15:12,939
+Dönüştürmüş oluyoruz. Yazmış olduğumuz denklemde tek iki bilinmeyen iki denklemimiz var. Bilinmeyenlerimiz V1 ve V2. Bilinenlerimiz, pardon V1, V2 değil, yanlış yazdım.
+
+681
+02:15:16,519 --> 02:15:20,839
+Bilinmeyenlerimiz, bilinmeyenlerimiz burada VB'yi bilmiyoruz.
+
+682
+02:15:22,260 --> 02:15:29,260
+Tek bir denklemimiz var, V2'yi, R1'i biliyoruz. Dolayısıyla buradan VB'yi hesaplayabiliriz.
+
+683
+02:15:29,859 --> 02:15:39,800
+VB'yi hesapladıktan sonra da VC'yi hesaplamamız mümkün. VC'yi hesapladığımızda da R1 direnci üzerinden geçen akımı bulmamız mümkün olacak.
+
+684
+02:15:40,659 --> 02:15:47,760
+Normalde burada iki bilinmeyen iki denklem olması lazımdı. Ama süperpozisyon özelliğini kullanarak
+
+685
+02:15:48,180 --> 02:15:52,199
+Tek bilinmeyen liderinden çözümünü gerçeklemiş olduk.
+
+686
+02:15:53,100 --> 02:15:55,980
+Bunun işleyişiyle ilgili olarak nasıl yol alacağız?
+
+687
+02:15:57,100 --> 02:16:00,340
+Öncelikli olarak bir referans nodu belirlememiz lazım.
+
+688
+02:16:00,340 --> 02:16:04,460
+Örneğin referans nodunu şu aşağıki düğüm olarak belirleyelim.
+
+689
+02:16:04,980 --> 02:16:07,199
+Bu bir konsept örnek.
+
+690
+02:16:08,420 --> 02:16:09,539
+Bunu belirlemiş olduk.
+
+691
+02:16:09,619 --> 02:16:13,699
+Bunu belirlediğimizde bu durumda
+
+692
+02:16:13,779 --> 02:16:26,600
+4 voltluk kaynak referansla bağlantılı. Dolayısıyla oradan bir süpernot oluşmuyor. Fakat 8 voltluk kaynak referanstan uzakta. Dolayısıyla bu bir süpernot oluşturuyor.
+
+693
+02:16:31,699 --> 02:16:41,459
+Şu noktayı referans olarak seçmiş olsaydı, bu noktayı referans olarak seçmiş olsaydı, bu sefer 4 voltluk kaynağın olduğu civar bir süperman oluşturacaktı.
+
+694
+02:16:41,540 --> 02:16:52,760
+Yani bu koldan akan akımlı bu kaynak belirleyemediği için bununla ilişkili, bununla bağlantılı, seri bağlantılı olan düğüm ve dirençleri dikkate almamız gerekecekti.
+
+695
+02:16:53,760 --> 02:16:56,239
+İkinci senaryo olarak da onu söyleyebiliriz.
+
+696
+02:16:56,564 --> 02:17:12,164
+Burada özellikle dikkat edeceğimiz nokta, süpernot oluşturan kaynağın önü ve arkasındaki düğüm gerilimlerinin kaynak gerilimi cinsinden yazılması buradaki problemi temel olarak gideriyor aslında.
+
+697
+02:17:12,500 --> 02:17:30,680
+Bunu söyleyebiliriz. Dolayısıyla yazmamız gereken N düğüm için N denklem varken, denklemlerden bir tanesi, süpernot dolayısıyla süpernot olan kaynağın önü ve arkasındaki gerilim eşitliğinden gelmiş oluyor. Biz sadece N-1 adet düğüm denklemi çözmekle yükümlü kalıyoruz sonrasında.
+
+698
+02:17:31,599 --> 02:17:36,840
+Bir tane örneğimiz var, bu örnek üzerinden gidelim şimdi. Öncelikli olarak,
+
+699
+02:17:40,852 --> 02:17:47,752
+Öncelikli olarak verilen devrede bize bir referans nokta verilmiş. Şu orta düğüm referans olarak verilmiş.
+
+700
+02:17:48,292 --> 02:17:53,572
+Buna göre ilk yapacağımız işlem arkadaşlar buradaki süpernotları belirlemek.
+
+701
+02:17:54,852 --> 02:18:01,632
+Buradaki süpernotlardan birisi şu bizim bağımsız kaynağımızla ilişkili bir durum.
+
+702
+02:18:02,388 --> 02:18:08,208
+Pardon, bağımlı kaynağımızla ilişkili bir durum. Çünkü bağımlı kaynağımızın negatif ucu referansa doğrudan bağlı değil.
+
+703
+02:18:08,328 --> 02:18:15,628
+Ve yine bir başka kaynağımız var. Bu kaynağımızın da yine pozitif ucu referansa bağlı değil.
+
+704
+02:18:15,628 --> 02:18:24,628
+Dolayısıyla burada da bir süpernot durumu var. Yani bu kolda geçen akımı, bu kaynağın kendisi belirleyemediği senaryoların her birisinde bu durum söz konusu.
+
+705
+02:18:25,203 --> 02:18:38,403
+Veya burada bir basitleştirme de var. Bunu süpernot olarak almayıp doğrudan referansa göre burası eksi 12 voltadır da diyebiliriz. Bunu dediğimizde bu süpernot kavramının bir nevi kullanmış da oluyoruz aslında.
+
+706
+02:18:39,219 --> 02:18:59,219
+Asıl burada yapmamız gereken nokta şu. Öncelikli olarak bir sonraki adımımız referansı belirledik, süpernodu olabilecek yerleri belirledik. Bir sonraki adımımız buradaki düğümleri etiketlemek. İşte V1, V2, V3 ve V4 düğümlerimiz var. Referansın gerilim zaten sıfır. Dolayısıyla bizim burada...
+
+707
+02:19:00,340 --> 02:19:16,779
+4 tane düğüm denklemi yazmamız lazım. Bunlardan bir tanesi, az önce dediğim gibi referansa göre, A12V ve V1 olduğu için, V1 geriliminin doğrudan eksi 12V olduğunu söyleyebiliriz. Bir denklemi de buradan düşürebiliriz.
+
+708
+02:19:17,340 --> 02:19:25,840
+Bir denklemde şurada görmüş olduğunuz süper nottan dolayı düşecek. Dolayısıyla ayrı bağımsız 2 tane daha denkleme ihtiyacımız var.
+
+709
+02:19:28,340 --> 02:19:33,200
+V1'i hallettik, V1'in gerilimini bulduk. V2 düğümü için Kirchhoff akımlar kanununu yazalım.
+
+710
+02:19:33,747 --> 02:20:00,000
+Buraya giren akım 14 Amper var. Çıkan akımları da şöyle diyelim, V2-V1 bölü 0.5. Göstermiş olduğum yöndeki akım, çıkan bir akım. Yine V2-V3 bölü 2.10'da yine göstermiş olduğum yönde çıkan akım. Dolayısıyla V2 düğümü için denklemlerimiz yazmış olduk. V2-V1 bölü 0.5 artı V2-V3 bölü 2 akım değerli.
+
+711
+02:20:00,000 --> 02:20:01,959
+çıkan 14 Amper giren.
+
+712
+02:20:02,500 --> 02:20:03,899
+Şimdi V3 için yazacağız.
+
+713
+02:20:04,079 --> 02:20:15,399
+V3 için yazarken arkadaşlar, bakın burada 0.5 VX'lik bir tane, nedir onun adı, bağımlı akım kaynağımız var.
+
+714
+02:20:15,500 --> 02:20:16,340
+Bu giren yönde.
+
+715
+02:20:16,948 --> 02:20:25,968
+Çıkanları tanımlayalım. Çıkanlardan birisi V3-V2 bölü 2 amper olarak tanımlayabiliriz. V3'den V2'ye yönlü bir akım tanımlayabiliriz.
+
+716
+02:20:25,968 --> 02:20:36,007
+Yine V3'den V4'e doğru akan akıma bakacağız ama buradaki akan akımı bu eleman belirleyemiyor. V3'den V4'e doğru akan akımı kim belirliyor?
+
+717
+02:20:36,148 --> 02:20:42,648
+V4'den referansa doğru olan akım artı V4'den V1'e doğru akan akım belirliyor.
+
+718
+02:20:44,948 --> 02:20:49,808
+V4 arasındaki akal akımı yazabilmem için onun yerine şunu demem lazım.
+
+719
+02:20:50,887 --> 02:20:57,827
+V4-0 bölü 1 artı V4-V1 bölü 2.5 demem lazım.
+
+720
+02:20:58,451 --> 02:21:19,991
+Şu koldan, V3'den, V4'e doğru akan akımı, bu koldaki bağımlı kaynak belirleyemediği için, bu da bir sonraki adımda bir düğme bağlı ve ikiye ayrıldığı için aslında bu iki koldan kaçan akımlar, bu bizim V3 ile V4 arasındaki akımımızın toplamına eşit olacağı için, süper not kavramını bu çerçevede değerlendirmiş oluyoruz.
+
+721
+02:21:19,991 --> 02:21:25,051
+Şimdi denklemlerimizi yazdığımızda bağımlı kaynaklar dolayısıyla bilinmeyenler gelecek.
+
+722
+02:21:26,067 --> 02:21:30,247
+Onlar neler diye bakabiliriz.
+
+723
+02:21:30,608 --> 02:21:32,227
+Şimdi kaç tane bilinmeyenimiz var?
+
+724
+02:21:32,407 --> 02:21:39,567
+V1'i bilmiyoruz, V2'yi bilmiyoruz, V3'ü bilmiyoruz, V4'ü bilmiyoruz, bir de VX'i bilmiyoruz değil mi?
+
+725
+02:21:40,167 --> 02:21:41,227
+Bunları bilmiyoruz.
+
+726
+02:21:41,747 --> 02:21:43,667
+Fakat VX için ne diyebilirsiniz?
+
+727
+02:21:43,667 --> 02:21:44,587
+VX için.
+
+728
+02:21:47,707 --> 02:21:50,387
+VX verilen yönde ise.
+
+729
+02:21:51,924 --> 02:22:10,283
+V1'e Vx kadar bir şey eklediğimde V2 yapıyor. Dolayısıyla V2-V1 Vx'e eşit. Bir tane bilinmeyenlerden birini götürdük. Başka ne var mesela burada? V1'in 12 olduğunu biliyorduk. Onu da yerine yazsak. Geriye ne kalmış oldu? V2, V3 ve V4 kaldı.
+
+730
+02:22:10,708 --> 02:22:33,768
+V4 ile ilgili bir şey yapabilir miyiz? V4 nerede? V4 ile ilgili de şunu yapabiliriz. Bakın, V4 ile V3 arasındaki gerilim farkı şuradaki bağımlı kaynaktan geliyor. O zaman da şunu diyeceğiz. V3-V4 eşittir 0.2VY. V4'ten kurtulduk ama bu sefer VY geldi. VY'den nasıl kurtulacağız?
+
+731
+02:22:34,291 --> 02:22:52,432
+Vy'yi de şöyle yazacağız. V4-V1 şeklinde yazdığımızda da iki bilinmeyen iki denklem haline gelmiş olacağız. Yani bütün bilinmeyenleri indirgemiş olacağız. Bunlara karşılık denklem sistemimizi oluşturacak olursak bakalım neler var.
+
+732
+02:23:00,915 --> 02:23:01,975
+Neye eşit?
+
+733
+02:23:05,056 --> 02:23:07,415
+V3-V4 demiştik.
+
+734
+02:23:08,495 --> 02:23:10,475
+V4-V1'e bağlanmış.
+
+735
+02:23:11,315 --> 02:23:15,135
+V4-V1, evet, VY'yi yerine yazmış.
+
+736
+02:23:16,396 --> 02:23:17,736
+VY'yi yerine yazmış.
+
+737
+02:23:18,275 --> 02:23:21,056
+VX içinde V2-V1'i kullanmış.
+
+738
+02:23:21,556 --> 02:23:27,556
+Bunları yerine koyduğumuzda, V1'i de biliyoruz aslında ama yine de eklem olarak bırakmış olsak bile.
+
+739
+02:23:28,500 --> 02:23:48,799
+Birinci denklemimiz bu, ikinci denklem, üç ve dördüncü denkleminiz var. Dört tane bilinmeyenimiz var. V1, V2, V3, V4. Bu denklem sistemi çözmeye çalışırsak neyle karşılaşırız? Yine oktavda bunu çözmeye çalışalım. En azından not analiziyle bu denklemleri nasıl yazacağımızı gördük kabaca.
+
+740
+02:23:54,227 --> 02:24:10,967
+Elimizde böyle bir denklem sistemi var. Bunu nasıl çalıştıracağız? Aslında elimizdeki değer bir A maddesi, çarpı, bilinmeyen vektörü ve bir de çıkış değerimiz var. Onu şöyle ifade edelim.
+
+741
+02:24:17,876 --> 02:24:20,315
+0.5, böyle yapmamız lazım.
+
+742
+02:24:20,835 --> 02:24:24,596
+Eksi 0.5, V4 için katsayımız 0.
+
+743
+02:24:25,456 --> 02:24:41,995
+Bir sonraki satıra geçtik, 0.1, eksi 1, 0.5, 1.4, bir sonraki satıra geçtik, 1, V1'imiz 1, V2'miz 0, V3'miz 0, V4'miz 0.
+
+744
+02:24:45,843 --> 02:24:53,343
+V2'miz 0, V3'miz 1, V4'miz eksi 1.2 olmuş oluyor. Şimdi bu artışı kontrol edelim.
+
+745
+02:24:54,043 --> 02:25:05,043
+2, 0.1, 1, 0.2, 2.5, eksi 1, 0.0, eksi 0.5, 0.5, 0.5, 0.1, 0, 1.4, 0, eksi 1.2.
+
+746
+02:25:05,043 --> 02:25:07,163
+Tamam, şimdi C vektörümüzü yazalım.
+
+747
+02:25:08,147 --> 02:25:14,427
+C vektörümüz 14, bir sonraki satır 0, bir sonraki satır ekte 12, bir sonraki satır 0.
+
+748
+02:25:14,987 --> 02:25:21,087
+Yine aynı işlemi yapacağız. A'nın inversü ile C'yi çarptığımızda biz tek çözümü bulmak istiyoruz.
+
+749
+02:25:21,207 --> 02:25:22,887
+Erde etmiş olduğumuz değerlerde.
+
+750
+02:25:23,731 --> 02:25:35,912
+Bunlar olarak karşımıza çıkmış oluyor. Birinci satır V1'e ait, ikinci satır V2'e ait, üçüncü satır V3'e ait, dördüncü satır V4'e ait olarak karşımıza çıkıyor.
+
+751
+02:25:36,132 --> 02:25:42,292
+Çözümlememizi matematik aracılıkla yapmış olarak çıkan ilginç bir sonuç. V3 gerilimiz sıfır çıkmış.
+
+752
+02:25:42,412 --> 02:25:51,211
+Yani aslında şu düğümde referans düğüm olarak değer bulmuş buradaki çözümleme sonucunda.
+
+753
+02:25:52,275 --> 02:25:53,916
+Bunu söylemiş olabiliriz.
+
+754
+02:25:55,416 --> 02:25:59,635
+Onun haricinde bir de benzer bir durumu süpermeş için yapalım.
+
+755
+02:26:00,355 --> 02:26:01,595
+Tanımlamaya çalışalım.
+
+756
+02:26:05,155 --> 02:26:09,695
+Süpermeş durumunda durum nedir onun adı?
+
+757
+02:26:10,015 --> 02:26:12,335
+Sıkıntı nerede çıkıyor? Bir bakalım.
+
+758
+02:26:15,572 --> 02:26:35,331
+Sıkıntı nereden çıkıyor bakalım. Klasik anlamda bir devre gördük. Devrenin her iki çevresi tarafından ortaklaşa paylaşılan bir tane akım kaynağı var. Ben burada çevreleri ilk aklıma gelen basit çevreler üzerinden almaya çalışırsam neyle karşılaşırım bakalım.
+
+759
+02:26:35,331 --> 02:26:42,752
+Bu çevre için yazdığımızda aslında akım kaynağı dolayısıyla birinci çevre için yazdığım denklem şu olur.
+
+760
+02:26:44,691 --> 02:26:57,752
+I1-I2 eşittir Is olur. Çünkü Is bu koldaki akımı belirliyor. Diğerlerine bakmaksızın I1-I2 eşittir Is olur. İkinci çevre için denklemi yazdığımızda ne olacak?
+
+761
+02:26:58,331 --> 02:27:07,092
+I2-I1 eşittir eksi Is olur. Yani Nillerbağmsız iki tane denklem yazamıyorum. Hangi durumda yazamıyorum bunu?
+
+762
+02:27:07,667 --> 02:27:33,027
+Eğer iki çevre için ortak bir akım kaynağı varsa, yani iki çevrenin ortak olarak geçtiği bir kolda bir akım kaynağı varsa, o akım kaynağı o koldaki akımı belirleyecek zaten, kendisi belirleyecek. Böyle bir durum olduğunda ise, basit çevreler üzerinden ben denklem yazmaya çalıştığımda, çevre denklemleri yazdığımda, yazacağım denklem lineer bağımlı oluyor.
+
+763
+02:27:33,487 --> 02:27:46,207
+Ama buradan kurtulmanın bir kolay yolu var. Daha önceki derslerimizde de görmüştük. Biz burada sadece iki tane çevre yazmak durumunda değiliz. Daha fazla çevreler yazabiliriz, çizebiliriz, oluşturabiliriz, tanımlayabiliriz.
+
+764
+02:27:46,968 --> 02:27:55,567
+Ama bize gereken bu devreyi çözebilmek için iki tane lineer bağımsız çevre denkleme. İki tanesi yeter. Çünkü iki bilinmeyenimiz var.
+
+765
+02:27:56,691 --> 02:28:13,551
+O zaman şunu yapıyoruz, Liner bağımlı denklem sistemi oluşturan birinci ve ikinci çevreyi almak yerine, çevrelerden birini yine olduğu gibi bırakıyoruz ama ikincisini ortak akım kaynağını içermeyecek şekilde başka bir yol üzerinden tanımıyoruz.
+
+766
+02:28:13,551 --> 02:28:23,471
+Bunu bu şekilde yaptığımızda ise birbirinden Liner olarak bağımsız iki denklemimiz elde edilmiş oluyor arkadaşlar. Bunun üzerinden çözümlememizi yapıyoruz.
+
+767
+02:28:24,755 --> 02:28:29,255
+Dolayısıyla buradaki izleyeceğimiz yollarda şunlar olacak.
+
+768
+02:28:29,255 --> 02:28:38,795
+Biz yine temel gözler için çevre akımlarını I1, I2, I3'ü tanımlayacağız.
+
+769
+02:28:39,736 --> 02:28:51,155
+Burada Kirchhoff gelilimler kanunu yürüttüğümüz çevrimler ise, eğer ortak bir akım kaynağı varsa çevreler arasında,
+
+770
+02:28:51,827 --> 02:29:18,587
+Bu alt çevrimlerden birisini biraz daha dolambaçlı bir yoldan alacağım. Biraz daha dolambaçlı bir yoldan tanımlayabiliriz. Bunu yaparken iki farklı alternatifimiz de var. Şunu yapabiliriz. Örneğin Ö1, Ö2, Ö3'ü verilen şekilde tanımlayıp maviyle işaretlenmiş olan yol üzerindeki gerilim düşümlerinin toplamının sıfır olduğunu izlerken bu basit Ö1, Ö2, Ö3 üzerinden de bunu hesaplayabiliriz.
+
+771
+02:29:19,731 --> 02:29:32,132
+Burada Ü3'ü hiç kullanmayıp maviyle işaretlemiş olduğumuz yol boyunca giden üçüncün bir sanal çevre akımı olduğunu da kabul edip hareket edebiliriz. İkisi de aynı sonuca çıkacak.
+
+772
+02:29:33,108 --> 02:29:43,047
+Dolayısıyla, diner bağımsızlık oluşturan üçüncü bir denklemi bu senaryo 3 gözlü olduğu için mutlaka oluşturmamız gerekiyor.
+
+773
+02:29:44,247 --> 02:29:58,247
+Yolları veya çevrimleri uygun şekilde seçtikten sonra yine 3 tane diner bağımsız denklem yazıp, denklem sistemini çözdüğümüzde seçmiş olduğumuz çevre akımları hangileri ise onların nümerik değerlerini elde etmiş olacağız.
+
+774
+02:30:00,000 --> 02:30:03,840
+Bunu bir örnek üzerinden vermek gerekirse bir başka örneğimiz var mı?
+
+775
+02:30:04,559 --> 02:30:05,419
+Yokmuş ama.
+
+776
+02:30:07,040 --> 02:30:08,599
+Yön üzerinden ilerleyeceğiz.
+
+777
+02:30:09,719 --> 02:30:17,479
+Burada aklımıza ilk gelecek olan çevreler, işte gördüğünüz gibi I1, I2, I3 olabilir.
+
+778
+02:30:17,599 --> 02:30:19,279
+Burada verilen yönler de olabilir.
+
+779
+02:30:19,959 --> 02:30:21,959
+Biz bunları bu şekilde tanımlayabiliriz.
+
+780
+02:30:22,484 --> 02:30:31,564
+Gerilim düşünlerini alırken de, mesela ilk alacağımız gerilim düşünme için izleyeceğimiz kapalı yol şu olsun birisi için.
+
+781
+02:30:32,603 --> 02:30:39,744
+Bir diğeri için, bunu farklı bir renkte verelim. Bir diğeri için şu yönde olsun, aynı renk olduğunu.
+
+782
+02:30:41,876 --> 02:30:49,015
+Bir diğeri için şu kapalı çevrimi takip ediyor olalım ama sanal çevre akımlarının burada da etki ettiğini düşünerek,
+
+783
+02:30:49,576 --> 02:30:54,556
+üçüncüsü için ise şöyle bir kapalı çevrimi takip ettiğimizi varsayalım.
+
+784
+02:30:54,556 --> 02:31:06,216
+Mesela şu da olabilir. Ortak olan akım kaynağını içermeyen çevrimlerden birisi bu olabilir veya burada gördüğünüz gibi şu yol üzerinden.
+
+785
+02:31:07,443 --> 02:31:25,103
+Şu yol üzerinden de gitmiş olabiliriz. Dolayısıyla burada birden fazla bağımsız denklem yazmak mümkün. Ama hepsini bir sistem olarak baktığımızda bağımsız üç tane çıkması yeterli. Üç tane çıkacak zaten bağımsız. O üç taneyi bulmaya çalışıyoruz.
+
+786
+02:31:26,004 --> 02:31:29,044
+Şimdi burada birinci yaklaşımdan hareket ettiğimizi düşünelim.
+
+787
+02:31:29,644 --> 02:31:33,904
+Görmüş olduğumuz her basit çevre için bir çevre akımı tanımlayalım.
+
+788
+02:31:33,904 --> 02:31:51,144
+Fakat sanki dolaştığımız kapalı çevrimleri, birincisini şu, ikincisini şu, üçüncüsünün de şöyle bir şey olduğunu varsayarak, üç tane denklemimizi yazmaya çalışalım.
+
+789
+02:31:52,884 --> 02:31:58,744
+Burada Üru 1 ile işaret etmiş olduğumuz çevre için denklemimizi yazacak olursak,
+
+790
+02:31:59,684 --> 02:32:01,304
+Üru 1 için onu yazmamışım.
+
+791
+02:32:05,164 --> 02:32:07,024
+Meşlik için yazmış.
+
+792
+02:32:08,364 --> 02:32:11,083
+Meşlik için yazmamışım.
+
+793
+02:32:22,963 --> 02:32:34,664
+Onu da dolaştırarak almış. Şöyle bir tanı, emin olarak notayım. 7'sinden girdik, 1-10'dan geçtik, 3-10'dan geçtik, 1-10'dan geçtik, geri geldik.
+
+794
+02:32:34,664 --> 02:32:47,664
+Burada birinci denklem mavi ile işaretlenmiş olan çevrim için. İkinci denkleme bakacak olursak, 1-10'dan geçiyor, 2-10'dan geçiyor, 1-10'dan geçiyor.
+
+795
+02:32:49,620 --> 02:32:55,300
+Şurası için yapmış, tamam, şurası için yapmış. Bunu burası için yapmış.
+
+796
+02:33:01,780 --> 02:33:25,880
+Birinci denklem mavi ile işaretlenmiş olan, ikinci denklem I2 çevresi için yapılmış.
+
+797
+02:33:30,195 --> 02:33:39,995
+Eksi I1, Altı I2, Üç I3.
+
+798
+02:33:42,076 --> 02:33:43,916
+Bu uçunu düzenlemiş.
+
+799
+02:33:44,975 --> 02:33:50,015
+Bir de son olarak I2 ile I3 arasındaki farkı verdiğimiz bir de üçüncü denklemimiz olacak.
+
+800
+02:33:50,155 --> 02:33:52,216
+O da şurada. Tamam. Üç tane denklemimiz burada.
+
+801
+02:33:53,043 --> 02:33:58,024
+Şimdi birinci meş için, şurada mavi ile işaretlenmiş olan çevrim için bakalım.
+
+802
+02:33:59,524 --> 02:34:02,963
+Çevre akımlarımız verilen yönlerde mevcut olduğunu varsayalım.
+
+803
+02:34:03,504 --> 02:34:06,943
+Bu yolu takip ediyoruz. Kaynağın eksisinden girdik. Eksi yedi.
+
+804
+02:34:08,384 --> 02:34:16,184
+Devam ediyoruz. Bir RL dirençten geçtik. Verilen referans yönünde I1 artı yönde I2 eksi yönde katkı yönde ediyor.
+
+805
+02:34:16,283 --> 02:34:19,484
+Dolayısıyla I1 eksi I2 çarpı bir değerimiz var.
+
+806
+02:34:19,956 --> 02:34:44,396
+Yolu devam ettiriyoruz. 3 Ohm'luk dirençten geçiyorum. Dolayısıyla burada da verilen referans yönünde I3 pozitif katlı yapıyor, I2 negatif katlı yapıyor. I3-I2x3 diyorum. Daha sonra yolu takip ediyoruz. 1 Ohm'luk dirençten geçmişiz. I3 sadece burada etkili. Dolayısıyla I3x1 ve daha sonrasında da başladığımız yöne döndük. Dolayısıyla ilk denklemimiz bu.
+
+807
+02:34:44,847 --> 02:34:53,188
+İkinci denklemimiz için I2 çevresindeki denklemimizi yazacağız.
+
+808
+02:34:53,808 --> 02:35:00,007
+Burada 2 çarpı I2, 2 çarpı I2, verilen yönde devam ediyorum.
+
+809
+02:35:00,927 --> 02:35:09,587
+Akım yönünde 3 çarpı I2 pozitif katkı yapıyor, I3 negatif katkı yapıyor, I2 eksi I3 çarpı 3.
+
+810
+02:35:10,675 --> 02:35:25,695
+Bütün referans yönlerinin bu yönde olduğunu varsaydım şimdi. Yine bir onluk direnç üzerine I2 pozitif katkı yapıyor, I3 negatif katkı yapıyor, I2-I1 çarpı bir eşittir sıfır. Bunu düzenlediğimizde elde ettiğimiz denklem bu.
+
+811
+02:35:38,067 --> 02:35:55,288
+Eksi I3 eşittir 7 Amper olarak karşımıza çıkıyor. O da bu çevre akımı, bu koldaki akım kaynağı ve I3 çevre akımının etkileşiminin kaynak tarafından belirlenmesiyle 3. denklemimizde ortaya çıkmış oluyor. Bu 3 denklemi bir denklem sistemi olarak çözdüğümüzde
+
+812
+02:35:55,796 --> 02:36:03,256
+Ö1, Ö2 ve Ö3 için verilen değerleri elde etmiş oluyor. Bu noktada bir sonraki adımda yapacağımız işlem şu olacak.
+
+813
+02:36:03,936 --> 02:36:12,656
+Örneğin, biz 2 onluk direnç üzerindeki gerilim düşümünü bulmak istiyorsak, bunu nasıl bulacağız? 7 çarpı 2 ile bulabilir.
+
+814
+02:36:12,656 --> 02:36:14,656
+Çünkü bu koldaki gerilim düşümünü...
+
+815
+02:36:14,768 --> 02:36:26,507
+7 amperlik akım kaynağı. Bu şekilde bulacağız. Fakat şuradaki bir ohmluk direnç üzerindeki gerilim düşünü olmak istersek ne yapacağız? I1-I2 diyeceğiz.
+
+816
+02:36:26,507 --> 02:36:42,768
+O da 6,5 voltluk bir gerilim düşünü yapacak. Verilen yönünde 6,5'luk bir fark var. Şurada görmüş olduğunuz 3 amperlik direnç üzerindeki gerilim düşününe bakacak olursak, I3-I2 çarpı 3 olur.
+
+817
+02:36:42,768 --> 02:37:01,268
+Verilen yönlerde kullanmak istiyorsak, U2-2.5A olduğu için, buradaki verilen yöndeki gerilim düşümü, eksi 1.5V olarak karşımıza çıkmış olacak. Hesaplamış olduğumuz çevre akımları sebebiyle.
+
+818
+02:37:07,188 --> 02:37:28,768
+Şimdi görmüş olduğumuz bu yöntemlerin birbiriyle karşılaştırmasına ilişkin olarak elimizdeki devreyi, bir düzlemsel devreyi inceleyecek olursak, düzlemsel devre şu demek, devredeki elemanlar birbirleri üzerinden geçmek zorunda kalmaksızın bir düzleme çizilebiliyorsa bu bir düzlemsel devrede.
+
+819
+02:37:33,760 --> 02:37:45,979
+Baktığımızda 4 tane göz var, 5 tane not var. 1, 2, 3, 4 ve 5 tane düğümümüz var. 4 tane de gözümüz var.
+
+820
+02:37:45,979 --> 02:37:52,100
+Buna göre bu iki yaklaşımla aynı devreyi çözmek istesek hangisiyle çözmek daha anlamlı?
+
+821
+02:37:52,592 --> 02:37:58,812
+Çevre üzerinden hareket etmeye çalışsak, 4 tane denklem yazmamız yeterli.
+
+822
+02:37:58,812 --> 02:38:06,972
+Ama not üzerinden hareket etmeye çalışsak, bu durumda bir tanesini referans olarak seçtiğimde orada da 4 tane denklem kalmış olacak.
+
+823
+02:38:07,412 --> 02:38:13,172
+Yani bu durumda birbirleri arasında bir anlam farkı yok. Her ikisini de yapabiliriz, diyebiliriz.
+
+824
+02:38:13,523 --> 02:38:26,463
+Fakat daha farklı topolojilerle karşılaştığımızda kaç tane düğüm denklemi yazmamız gerekiyor veya kaç tane çevre denklemi yazmamız gerekiyor, onun analizini yaparak daha pratik olanını seçmemiz mümkün olabilir.
+
+825
+02:38:26,463 --> 02:38:32,903
+Burada planar düzlemsel ve düzlemsel olmayan değerlere bakacak olursak, örneğin ne demiştik?
+
+826
+02:38:35,028 --> 02:38:43,968
+Bağlantı yolları birbirlerinin üzerinden geçmek zorunda kalmaksızın bir topolojiye dönüşebilen yapılar varsa bunlar düzlemsel devrelerde.
+
+827
+02:38:44,567 --> 02:39:02,167
+Fakat herhangi bir şekilde bir düzlemde ifade edilemeyen, birbiriyle kesişmeyecek şekilde çizmeye çalıştığımız halde bir düzlemde ifade edilemeyen devreler varsa da bunlar düzlemsel olmayan devre olarak karşımıza çıkıyor diyebiliriz.
+
+828
+02:39:02,644 --> 02:39:12,364
+Az önceki örnek üzerinde bunu önce not analizi daha sonrasında da çevre denklemleri cinsinden yazmaya çalışsak.
+
+829
+02:39:13,504 --> 02:39:20,324
+Referans düğümümüzü belirledik. İlk yapacağım işlem buydu. Şuradaki düğüm için ekstradan bir tanım yapmaya gerek yok.
+
+830
+02:39:20,423 --> 02:39:27,243
+Çünkü referansı belirlediğimiz için buranın 100 volt olduğunu biliyoruz. Bu basitleştirmek adına kullanabileceğimiz bir yaklaşım.
+
+831
+02:39:27,796 --> 02:39:34,536
+Buna göre geri kalan düğümler V1, V2 ve V3 düğümleri. V1 için denklemimizi yazacak olursak,
+
+832
+02:39:34,847 --> 02:39:43,867
+V1'den dışarı yönlü gidecek tüm akımları yazıp bunun toplamının sıfır olmasını yazmak pratik bir yaklaşım.
+
+833
+02:39:43,867 --> 02:39:54,247
+Yani referans akım yönü tanımlamadan ve referans gerilim yönü tanımlamadan seçmiş olduğum düğümden dışarıya yönlü akacak tüm akımlar toplamını sıfır yapmak pratik bir yol.
+
+834
+02:39:54,667 --> 02:39:59,608
+Dolayısıyla V1-100 bölü 8, şöyle işaret edelim.
+
+835
+02:40:01,108 --> 02:40:13,808
+Bu yöndeki akımı verecek. V1-100 bölü 8. V1-0 bölü 4 şu yönlü akımı verecek. V1-V2 bölü 2 bu yönlü akım verecek. Hepsi çıkan yönlü toplamının sıfır olması lazım.
+
+836
+02:40:13,808 --> 02:40:20,288
+Bunu düzenlediğimizde elde ettiğimiz denklem şu denklem oluyor.
+
+837
+02:40:20,788 --> 02:40:30,468
+Bu sefer gelip V2 için yazalım. Fakat V2 için yazarken de dikkat edelim. Şu kolda V1 için denklemi yazarken akım yönünü şöyle kabul etmiştik.
+
+838
+02:40:30,927 --> 02:40:39,148
+Şimdi V2 için yazarken böyle olsun diyeceğiz. Sadece V2 için bu denklemi yazarken yalnız bunu böyle kabul ediyoruz.
+
+839
+02:40:39,448 --> 02:40:46,948
+Amacımız ne? V2'den dışarı yönlü giden tüm akımların toplamını sıfır olarak yazabilmek. Sadece V2 için yazıyorum.
+
+840
+02:40:47,572 --> 02:41:07,012
+Bu durumda V2'den çıkan tüm akımlar, V2-V1 bölü 2, şu yönlü akım, V2-0 bölü 3, şu yönlü akım, V2-V3 bölü 10, şu yönlü akım, bunlar çıkanlar, bunların toplamı neye eşit olacak? Giren akım var, 8 amper, ona eşit olacak.
+
+841
+02:41:07,487 --> 02:41:21,307
+Yani V2-V1 bölü 2 artı V2 bölü 3 artı V2-V3 bölü 10 eşittir 8 diye ikinci denklemimiz olacak. Onu düzenleyip yazdığımızda elde etkilerimiz düzenlenmiş denklem bu.
+
+842
+02:41:21,867 --> 02:41:27,487
+Son olarak V3 için yazalım. Yine V3'te de dışarı yönlü tüm akımların toplamını 0 olacak şekilde yazalım.
+
+843
+02:41:34,868 --> 02:41:40,688
+Artı 8 eşittir 0. Denklemi düzenlediğimizde elde edeceğimiz sonuç bu.
+
+844
+02:41:41,747 --> 02:41:49,808
+3 tane denklemimiz var. 3 tane V1, V2, V3 bilmeyenlerimiz var. Bunları çözdüğümüzde düğüm gerilimlerini elde ediyoruz.
+
+845
+02:41:50,308 --> 02:41:56,868
+Bize sorulan Ix akımı ise eğer, V1'i bulduk 25.89, V2'yi bulduk 20.53.
+
+846
+02:41:57,368 --> 02:42:02,747
+Ix akımı V1-V2 bölü 2, yerine koyduğumuzda 2.79 A.
+
+847
+02:42:02,868 --> 02:42:15,888
+Bunu not analizi çerçevesinde çözmüş oluyoruz. Aynı devreyi mesh analiziyle çözmeye çalışalım. Mesh analiziyle çözmeye çalışırken çevre akımlarımızı tanımladık.
+
+848
+02:42:16,224 --> 02:42:27,324
+Burada kontrol ediyoruz. Herhangi bir, iki çevre arasında ortak bir akım kaynağı var mı? Yani süperma blan mı diye baktık. Yok. Ondan sonra her çevre için denklemimizi yazalım.
+
+849
+02:42:27,884 --> 02:42:41,144
+Birinci çevre akımı yönünde bir çevre alırsam, çevrim alırsam, çevrim diyelim, kaynağın eksisinden girelim. Eksi 100 artı 8i artı 4 çarpı i1 eksikliği 2 eşittir 0.
+
+850
+02:42:42,388 --> 02:43:07,508
+İkinci çevre akımı yönünde bir çevrim alırsam, burada yazacağım denklemler, I2'nin yönünde 4 çarpı I2-I1, şu yönlü gerilim düşümünü verdi bana, artı I2 çarpı 2, bu yönlü gerilim düşümünü verdi, son olarak 3 çarpı I2-I3, şu yönlü gerilim düşümünü verdi, toplamı sıfır olacak.
+
+851
+02:43:08,435 --> 02:43:22,075
+Şimdi I3 için yazalım. I3 çevre akımı yönündeki çevrimi alırsam, 3 çarpı I3-I2 bu yöndeki gerilim düşümünü aldım.
+
+852
+02:43:23,396 --> 02:43:28,575
+10 çarpı I3-I4 bu yönlü gerilim düşümünü aldım.
+
+853
+02:43:28,575 --> 02:43:32,315
+Ve 5 çarpı I3 eşittir 0.
+
+854
+02:43:33,268 --> 02:43:58,747
+Son olarak bir denkleme daha ihtiyacım var. I1, I2, I3, I4 benim bilinmeyenlerim. Dördüncü denklemimiz ne? Burada I4 numaralı çevre akımımızı aslında bu çevrede yer alan 8 amperlik kaynak belirliyor zaten. Ona eşit. Fakat yönleri ters. Dolayısıyla I4 eşittir. Eksi 8 amper dediğimizde de dördüncü denklemimiz geliyor.
+
+855
+02:43:59,572 --> 02:44:10,292
+Bunları çözümlediğimiz zaman, 4 denklem, 4 bilinmeyen. Çözümlediğimizde, I2 çevre akımı Ix'e eşit, I2.79 olarak bulunmuş oluyor.
+
+856
+02:44:10,891 --> 02:44:22,572
+Aynı yöntemi bir de çevre analizi üzerinden de elde etmiş olduk. Dolayısıyla aynı devreyi hem çevre hem düğümle çözebiliriz.
+
+857
+02:44:22,572 --> 02:44:25,572
+Eğer bunlar arasında denklem sayılarında bir fark yoksa,
+
+858
+02:44:25,683 --> 02:44:52,984
+Seçim arasında bir anlam farkı yok. Aksi yönde düşünecek olursak da, eğer bir devreyi analiz ettik, baktık ki bu devrede göz sayısı 20 adet çıkıyor fakat düğüm sayısı 2 tane. Birisi de referans, hangi senaryoda olabilir? Her elemanın kaynağı paralel bağlandığı paralel devrede olabilir. O zaman burada nod analizi yapmak daha mantıklı.
+
+859
+02:44:53,427 --> 02:45:20,808
+Veya bakıyoruz bir çevre, bir eleman, bir devremiz var. Bütün elemanlar birbirine seri olarak bağlanmış. Her iki seri eleman arasında bir tane düğüm var. Buna işte baktığımız zaman düğüm denklem sayısı çok yüksek görünüyor. Oyleyse burada da mesh analizi üzerinden gitmek anlamlı. Dolayısıyla karşınıza çıkan devrenin düğüm sayısı, göz sayısına bakarak bu iki yöntemden hangisinin uygun olduğuna karar verebiliyor olacağız arkadaşlar.
+
+860
+02:45:21,780 --> 02:45:33,600
+Bu örneğimizi de anlattıktan sonra bu haftanın konusunu bitirmiş oluyorum. Önümüzdeki hafta doğrusallık, süperpozisyon, kaynak dönüşümü ve Norton Temel'in eşdeğerliği var.
+
+861
+02:45:34,260 --> 02:45:40,319
+Ve dersin son saatinde de kuyzimizi yapıyor olacağız.
+
+862
+02:45:40,979 --> 02:45:47,115
+Şimdi sınavı ertelemiş olmakla birlikte kuralı da erteledik. Dolayısıyla önümüzdeki haftanın...
+
+863
+02:45:47,252 --> 02:45:52,051
+Kısa sınavında o hafta işlediğimiz konularda dahil diye söyleyeceğim.
+
+864
+02:45:54,211 --> 02:45:57,452
+Buraya kadar olanla ilgili sormak istediğiniz bir konu var mı arkadaşlar?
+
+865
+02:46:04,691 --> 02:46:07,471
+Hocam sınav test olacak değil mi? Kısa sınav.
+
+866
+02:46:07,852 --> 02:46:12,752
+Çoktan seçmeli. Evet ama yapmış olduğunuz çözümlemeyi de yüklemenizi isteyeceğiz.
+
+867
+02:46:14,451 --> 02:46:22,451
+Yani şöyle test çıktı. Bazı şeyler doğrudan nedir onun adı? Okuyup işaretleyebileceğiniz sorular olacak.
+
+868
+02:46:22,451 --> 02:46:28,871
+Evet ama bazıları da çözüm yapmanız gerekiyor ve özellikle belirli bir yöntemle çözüm yapmanızı isteyeceğiz.
+
+869
+02:46:29,280 --> 02:46:44,899
+O sorular için çözümlerinizi bir kağıda, karalama şeklinde değil de düzgün bir şekilde yapmanızı isteyeceğiz. Sınav süresi bittikten sonra ek bir süre daha vereceğiz. O süre içerisinde de bu cevaplarınızı tarayıp göndermenizi isteyeceğiz.
+
+870
+02:46:48,691 --> 02:46:50,311
+Hocam chatte bir soru var ama.
+
+871
+02:46:51,091 --> 02:46:52,211
+Chatte onu bakalım.
+
+872
+02:46:59,572 --> 02:47:01,332
+30. slide'da
+
+873
+02:47:08,691 --> 02:47:24,611
+Şu en alttaki formül denkleme gelelim. Bu neydi? Süpernot örneğiydi. Bu süpernot örneğinde ne yapıyorduk? Referans düğümü belirlemiştik. Referans düğümü belirledikten sonra her bir düğüm için Kirchhoff akımlar kanunu yürütüyorduk.
+
+874
+02:47:24,791 --> 02:47:31,551
+Birinci düğüm için doğrudan bir referans üzerinden kaynakla bağlı olduğu için onun gelir değerini belirledik.
+
+875
+02:47:31,956 --> 02:47:43,336
+Daha sonrasında ise ikinci düğüm için yazacağız. İkinci düğüm için de az önce yaptığımız gibi düğümden çıkan tüm akımları toplamı 0 diye hareket edebiliriz ikinci denklem için.
+
+876
+02:47:43,916 --> 02:47:57,416
+V2-V1 bölü 0.5 artı eksi 14 artı V2-V3 bölü 2 eşittir 0 yazabilir. Yani 14'ü buraya aldım ben. Sol tarafı aldım eksi işaretiyle.
+
+877
+02:47:57,907 --> 02:48:05,847
+Üçüncü düğüm için yazmaya çalışırken, Üçüncü düğümden çıkan tüm akımların toplamını sıfır olacak şekilde denklemi yazacağız.
+
+878
+02:48:06,648 --> 02:48:14,108
+İlk yazacağımız şey V3-V2 bölü 2. O şu terime karşılık geliyor.
+
+879
+02:48:15,028 --> 02:48:24,768
+Eksi, bu ters yönlü olduğu için, Eksi 0.5Vx ve son olarak şu koldaki çıkan akımı yazmam lazım.
+
+880
+02:48:25,971 --> 02:48:52,851
+Şu iki terim onunla alakalı. Nasıl alakalı onu görelim şimdi. Ben V3 ile V4 arasındaki akımı bu kaynak sayesinde belirleyemiyorum. Çünkü neydi? Süpernodun zaten problemi oradaydı. Bağımlı veya bağımsız kaynağın olduğu bir kolda o koldaki akımı kaynağın kendisi belirleyemiyor. Diğer elemanlar belirliyor. Yani ben sadece şuna bakarak hiçbir şey söyleyemem akım noktasında. Ama şunu biliyorum.
+
+881
+02:48:53,971 --> 02:49:16,971
+V4'e doğru akan akım, V4 noktasına vardıktan sonra iki kola ayrılıp devam edecek. Yani ben V3-V4 arasındaki akımı V4'ten yukarıya doğru giden akımla V4'ten V1'e doğru giden akımın toplamı şeklinde yazabilirim. Süpernod olmasının getirdiği bir durum bu. Dolayısıyla V3-V4 arasındaki akım yerine
+
+882
+02:49:17,427 --> 02:49:31,567
+V4'ten V2'ye giden akım veya V4'ten referansa giden akım demek daha doğru olacak. O da ne? V4-0 bölü 1 artı V4-V1 bölü 2.5 şeklinde yazarak.
+
+883
+02:49:31,956 --> 02:49:47,716
+V3-V4 arasındaki akımı tanımlamış olduk. Bundan sonrasında yine bir karışık adım daha vardı. Orada da şunu yapmıştık. Vx'i V4-V1 olarak yazmıştık. Çünkü o gidip buradaki bağımlı akım kaynağının değerini belirliyordu.
+
+884
+02:49:59,956 --> 02:50:20,376
+belirleyen bir bağımlı gerilim kaynağıydı. Dolayısıyla V3 ve V4'ü denklemimizde yer vermek yerine V3 ve VY'ye yer veriyoruz. VY'yi de V4-V1 olarak yazıyorduk. Dolayısıyla bir terimi gidermiş oluyorduk. Ama temel olarak çetteki soruya bakacak olursak, son satırdaki denklemin,
+
+885
+02:50:26,708 --> 02:50:38,968
+Şu koldaki çıkan akım, şuradaki parametresi giren akım, bu yönlü giren akım, son iki parametresi de şu koldan çıkan akım.
+
+886
+02:50:39,428 --> 02:50:49,208
+Ama bu koldan çıkan akımı doğrudan bağımlı kaynakla belirleyemediğimiz için, bu koldan çıkan akım buraya gelip iki parçaya ayrılacağından dolayı bunların toplamı cinsinden yazıyor.
+
+887
+02:50:51,092 --> 02:50:56,592
+Sadece 3. satırdaki denklemle ilgili bakacak olursak bu şekilde açıklayabiliriz.
+
+888
+02:51:04,051 --> 02:51:23,731
+Bir başka soru var. Evet arkadaşlar, lap saatine sadece ilan edilen, lap saatine sadece ilan edilen, ismi ilan edilen arkadaşlar girecek. Onlar da hangi saat aralığında, hangi aralıklarda gireceğini sanırım asistan hocalarım ilan edecektir. Ona göre bakabilirsiniz.
+
+889
+02:51:29,459 --> 02:51:33,939
+İsimler Google Classroom'da ilan edilecek diyebiliyorum. Oradan bakarsınız.
+
+890
+02:51:37,971 --> 02:51:51,172
+Sınav test olacak, evet ama belirli bir takım sorular için çözümlerinizi tarayıp göndermenizi isteyeceğiz. Tarayıp gönderme işlemi sınav süresinden sonra yine bir saat içerisinde isteyeceğiz.
+
+891
+02:51:55,219 --> 02:51:56,839
+Başka bir sorunuz var mı acaba?
+
+892
+02:52:04,115 --> 02:52:12,695
+Başka bir soru yoksa arkadaşlar, sorulara geri dönülebiliyor muyum? Evet, sorulara geri dönülebiliyor. Bu sınav için geri dönülebilir şekilde.
+
+893
+02:52:26,100 --> 02:52:32,700
+Başka sorumuz yoksa arkadaşlar, ben katılımınız için teşekkür ediyorum. Haftaya tekrar görüşmek üzere, herkese iyi akşam.
+
+894
+02:52:35,960 --> 02:52:37,280
+Görüşmek üzere hocam.

@@ -1,0 +1,207 @@
+1
+00:00:44,692 --> 00:00:46,852
+Selamlar arkadaşlar, hoş geldiniz.
+
+2
+00:00:50,868 --> 00:00:54,987
+Sistemde görebiliyor musunuz sorunun yüklenmiş olduğunu?
+
+3
+00:00:56,508 --> 00:00:58,068
+Beş geçe açılacak size.
+
+4
+00:01:00,968 --> 00:01:01,807
+Tamamdır.
+
+5
+00:01:04,448 --> 00:01:06,268
+Ben bir bakayım ekranımda.
+
+6
+00:01:27,507 --> 00:01:37,828
+Çok uğraşması olmayan, tamamen dosyaya yazma ve okuma, Serialization, Deserialization ile ilerleyen bir soru sorduk.
+
+7
+00:01:38,887 --> 00:01:40,967
+Ben şimdi paylaşacağım ekranımı da.
+
+8
+00:01:44,247 --> 00:01:47,127
+Şöyle soru açılana kadar konuşalım üstünde.
+
+9
+00:02:04,052 --> 00:02:06,332
+Evet, şimdi sorumuzun mantığı şöyle.
+
+10
+00:02:08,692 --> 00:02:17,532
+Odalarımız var. Şu oda nesneleri. İlk kısım oda numarası. Diğeri de bu odanın gecelik fiyatı. Bir de müşterilerimiz var.
+
+11
+00:02:18,652 --> 00:02:27,659
+Bu müşterilerimiz, şurada müşterilerin kimlik numarası gibi bir şey düşünün. Öyle bir numaraları, isimleri. Kaç gün...
+
+12
+00:02:27,828 --> 00:02:34,807
+Kalıyorlar ve hangi odayı tutmuşlar? Hangi odada kalacaklar? Böyle bilgileriyle de müşteri nesnelerini oluşturuyoruz.
+
+13
+00:02:36,048 --> 00:02:44,048
+Açıklama pdf'i de sizinle soruyla beraber gelecek ama ben orada sanırım şu nesnelerin parametrelerinin neyi anlama geldiğini yazmamışım.
+
+14
+00:02:44,608 --> 00:02:49,888
+O yüzden tekrar onları açıklayayım.
+
+15
+00:02:51,539 --> 00:03:14,519
+[öğrenci] doğru bir noktaya değdi. Şimdi şöyle, onu da söyleyelim. Sunum olayında kesin bir şeye karar vermedik aslında. Ediris Hoca herhalde sunum yaptıracak. Ben daha netleştirmedim. Eğer sunum olursa ben size maile bildiririm zaten ki sunum takvımında biraz sıkıntılı oluyor.
+
+16
+00:03:14,519 --> 00:03:18,139
+Yani cumartesi ya pazar günü falan olur diye biraz açıkçası şeydeyim.
+
+17
+00:03:19,795 --> 00:03:45,255
+Sürünceme deyim, yok hayır siz benden bir mail gelmedikçe sunum şeyine hiç girmeyin. Eğer ben size dersem sunum var şunu doldurun o zaman şey yapacaksınız. Ben size mutlaka mail atarım yani sunum olursa. Siz öğrenci maillerinizi online sistemden gelen maillerinizi kontrol edersiniz. Sunum yaptırabilirim de yaptırmayabilirim hiç bir sürünceme deyim. Ona çok netleşmedi. Onu da bak söyleyecektim aklımdaydı. Hızlı hemen giriş yapınca unutmayın. İyi oldu hatırlattı.
+
+18
+00:03:47,252 --> 00:04:12,212
+Nerede kalmıştım? Şimdi şurada, onları söyleyeyim. Customer'da ilki kimlik numarası gibi bir şey. Diğeri ismi, şu sayılar kaç gün kalacak, odada kaç gün kalacak, onun bilgisi. Ve şuradaki kısımda R1, işte şu odada kalacakmış. Rum R1, bunda kalacağının bilgisi.
+
+19
+00:04:13,268 --> 00:04:19,567
+Oda bilgisi hangi odada kalıyor, kaç gün kalıyor, ismi ve kimlik numarası gibi bir şey.
+
+20
+00:04:19,648 --> 00:04:25,207
+Bunu bir kenara not edin. Dediğim gibi açıklama pdf'inde ben geç fark ettim. Yazmamışım.
+
+21
+00:04:27,248 --> 00:04:30,288
+Ama tamam edilebilir de belki bilemiyorum çıktılardan.
+
+22
+00:04:31,867 --> 00:04:35,768
+Şimdi bunları oluşturduktan sonra yapılacak işlem. Bunları bir listeye atmışız.
+
+23
+00:04:36,531 --> 00:04:54,751
+Örnek olsun ya mesela dördüncü kastımı rahatmadım listeye. Sadece 53 kastımı rahattım. Çünkü birazdan bunları, bu listeyi, oluşturduğumuz listeyi dosyaya kaydedeceğiz. Ondan sonra tekrar bu dosyadan işte customer info diye bir metot çalıştıracağız mesela.
+
+24
+00:04:54,751 --> 00:05:00,371
+İşte C4 çalıştığında output'unda böyle bir müşteri bulunamadığı yazacak. Mesela bunu yazmasını istiyoruz.
+
+25
+00:05:01,076 --> 00:05:27,256
+C3'ün customer infosunu göster dediğimde de şu output dosyasını zaten, output çıktığımız hemen şöyle. Mesela C4'ü göster dedim, öyle bir müşteri yok diyecek. Eğer varsa müşteri şu verilerini istiyoruz. İsmi bu. Hangi numaralı odada kalıyor? Kaç gün kalacak? Ve total cost. Yani ne kadar tutacak bu adamın ücreti? 7 gün kalıyor. Bu odanın geceliği kaç paraydı? Şurada.
+
+26
+00:05:28,115 --> 00:05:35,556
+Şunlar odaların numaraları, şunlar da gecelik ücretleri. Gün sayısıyla bunu çarpıp total ücretini hesaplıyoruz adamın.
+
+27
+00:05:37,076 --> 00:05:44,456
+Tabi burada bunu bir management class üzerinden yürüteceksiniz. Önce bir save bookings deyip şu listeyi bir kaydedeceğiz dosyaya.
+
+28
+00:05:44,536 --> 00:05:50,815
+Burada dediğimiz gibi o seyirleştirme işlemiyle kaydetmenizi istiyoruz. Daha sonrasında buradan bilgileri çekeceğiz.
+
+29
+00:05:51,827 --> 00:06:14,827
+Yani dosya okuyacağız, desteklize edeceğiz ve alacağız bilgilerini ekrana yazdıracağız. Daha sonra bir metodumuz daha var. O da şu. Booking'de yani yapılan da o da bir gün değişikliği. Yani şu müşteri, C3 müşterisi artık 10 gün kalacak. Yeni bir gün sayısı veriyoruz, atıyoruz. Bu şekilde değiştirdikten sonra
+
+30
+00:06:15,732 --> 00:06:31,632
+Tekrar bir bilgilerini yazdır dediğimizde, tabii şu değişikliği yaptığımızda dosyaya yazımı komple değiştirmiş oluyoruz. O dosyadaki o bilgiyi değiştirmiş oluyoruz. Daha sonrasında ben tekrar oradan bilgileri çek dediğimde adamın bilgilerine değişmiş olarak gelmesini istiyorum.
+
+31
+00:06:31,632 --> 00:06:43,032
+Mesela 3 numaralı Frank'in 7 gün kalıyordu başlangıçta. Sonra ben o metodu, change metodunu çalıştırınca 10 gün verdim parametresini. Artık adamın kalacağı odanın da geceyle işte 100.
+
+32
+00:06:44,148 --> 00:06:54,408
+Bin lira, dolar her neyse. O kadarmış. Artık yedi binden on bine çıktı şeklinde ekrana bastırıyoruz. Metotlarımız bu kadar.
+
+33
+00:06:55,987 --> 00:07:00,487
+Soru size açalım. Saat anıtı sekiz geçiyor. Herkes indirebiliyordur umarım.
+
+34
+00:07:10,228 --> 00:07:17,708
+Changebooking ile aynen dosyaya tekrardan bir yazma işlemi yapabilirsiniz. Basit düşünün. Dosyayı komple tekrar yazabilirsiniz.
+
+35
+00:07:19,827 --> 00:07:26,987
+Aynı dosyaya, yeni bir dosya yapmıyorsunuz. Yine aynı dosyaya yazdığımız verileri değiştiriyoruz.
+
+36
+00:09:03,731 --> 00:09:05,312
+Söyleyeyim hemen onları.
+
+37
+00:09:06,872 --> 00:09:09,392
+Burundaki parametrelerin anlamı oda numarası.
+
+38
+00:09:10,051 --> 00:09:10,372
+İlki.
+
+39
+00:09:11,031 --> 00:09:13,271
+Diğeri de odanın gecelik ücreti.
+
+40
+00:09:15,672 --> 00:09:20,271
+Customer'lardaki ilki kişinin kimlik numarası gibi bir numarası.
+
+41
+00:09:20,372 --> 00:09:21,572
+Ona özel bir numarası.
+
+42
+00:09:21,991 --> 00:09:22,771
+Diğeri ismi.
+
+43
+00:09:23,372 --> 00:09:24,912
+Şurası kaç gün kalacağı.
+
+44
+00:09:25,152 --> 00:09:26,531
+Bu da hangi odada kalacağı.
+
+45
+00:09:38,067 --> 00:09:45,248
+Rica ederim. Kolay gelsin. Ben yine 5-10 dakika buradayım. Siz bakın soruları, aklınıza takılanları sorarsınız.
+
+46
+00:13:51,347 --> 00:14:00,087
+Aynen çok teşekkür ederim. Konuşup duruyorum. Mikrofon kapalıymış. Customer'da ilk kısım kimlik numarası gibi bir şey.
+
+47
+00:14:01,487 --> 00:14:17,847
+Diğeri ismim. Şurası kaç gün kalacağı? Bu da hangi odada kalacağı? Şu odalardan, R1, R2, R3 odalarından hangisinde kalacağı? Şu gün sayısı. Şu kimlik numarası gibi bir şey. Onun çok bir fonksiyonelitesi olmayacak zaten soruda ama.
+
+48
+00:14:18,292 --> 00:14:19,352
+Yani da talımladık.
+
+49
+00:22:19,508 --> 00:22:27,508
+Başka soru yok herhalde. Ben size soruyla baş başa bırakayım. Sorumlamak isteyen sorabilir tabii.
+
+50
+00:22:29,988 --> 00:22:40,847
+Yavaştan kapatıyorum mitingi. Kolay gelsin size. Süreniz 35 geçe kadar olacak. Yüklemenizi en geç otu saate kadar yaparsınız.
+
+51
+00:22:42,003 --> 00:23:06,163
+Dediğim gibi bu proje sunumları için ben size mail atacağım. Eğer olacaksa mailimi görürsünüz. Havasistan'da duyururum zaten. Ona göre randıralarınızı veririm. Olursa da dediğim gibi cumartesi, pazar veya ikiye bölerek bir grup cumartesi bir kısmınız pazar günü olacak şekilde sunumları ayarlamayı düşünüyorum.
+
+52
+00:23:07,220 --> 00:23:23,299
+Ama olmayabilir, öyle de bir ihtimali var. Duruma göre bakacağım. Olursa dediğim gibi mailim gelecek. Zaten 10 dakikalık bir zaman aralığı veriyoruz herkese. O şekilde oluyor olduğu zaman sunumlar. Hepinize kolay gelsin arkadaşlar. Başarılar dilerim.

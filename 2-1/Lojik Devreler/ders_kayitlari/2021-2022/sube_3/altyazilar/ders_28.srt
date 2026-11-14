@@ -1,0 +1,2231 @@
+1
+00:12:04,947 --> 00:12:12,947
+Evet arkadaşlar, merhabalar. Bugün katılımcı sayımız gerçekten mükemmel. İki kişiyle ders yapacağız.
+
+2
+00:12:13,427 --> 00:12:14,168
+Merhabalar hocam.
+
+3
+00:12:14,687 --> 00:12:15,247
+Merhaba.
+
+4
+00:12:16,327 --> 00:12:17,388
+Merhaba hocam.
+
+5
+00:12:18,247 --> 00:12:18,707
+Merhaba.
+
+6
+00:12:20,627 --> 00:12:27,048
+Evet, yani dersi biz yapalım. Olmadı kayıptan izleyecek oranlar olabilir diye kayda alınıyor zaten.
+
+7
+00:12:27,048 --> 00:12:30,207
+Belki izleyelim arkadaşlar, olur sonradan.
+
+8
+00:12:32,052 --> 00:12:42,172
+Evet, bugün bu hafta arkadaşlar, zaten son haftamız, saklayıcılar, sayıcılar ve havza birimleri dediğimiz Remrom mimarilerine bakacağız.
+
+9
+00:12:42,655 --> 00:13:03,467
+Whiteboard üzerinden çizerek anlatmaya çalışıp anlatacağım. Çünkü hani bunun bir dokumentasyonunu bir PowerPoint'ine hazırlamadım özellikle. Bu haftaki dersler size şu anlamda fayda bulacak. Tabi sınavda çıkabilir. Hani sınavda çıkınacak diye bir şey yok zaten. Ama hani daha bir problematik bir...
+
+10
+00:13:03,572 --> 00:13:21,912
+İşte ne bileyim bir iterar anlamda sorulmuş sorunun devre, diyagramı vesaire tarzı değil. Daha bir böyle basic konseptlerle işte tanımlamalar şeklinde çıkabilir. Bu ders neye yarayacak peki? Hani esasında bu dersin, bu haftanın konusu niye ışık tutacak?
+
+11
+00:13:32,115 --> 00:13:40,296
+Burada vererek biz oraya hazırlık yapmayı hedefliyoruz. Çünkü orada memory blokları, flip-floplar, hani entegre anlamında kullanılacak.
+
+12
+00:13:40,475 --> 00:13:46,855
+Yani tutup da flip-flopun nasıl çalıştığı anlatılmayacak. Bir bit gösterimin, bir bitlik verinin nasıl tutulduğu anlatılmayacak.
+
+13
+00:13:47,015 --> 00:13:56,175
+Sadece flip-flopların bir araya gelerek işte bu haftaki anlattığımız kısımdan doğan hafıza birimlerine, blok hafıza hücrelerine vs. anlatılacak.
+
+14
+00:13:56,175 --> 00:14:00,115
+Yani onlar kullanılacak. Temelde nasıl oluştuğuna dair...
+
+15
+00:14:00,115 --> 00:14:12,196
+Arada bir bağlantı olması için lojik ile mikro işlemci birimlerinin arasındaki bu dönüşüm nasıl gerçekleşiyor bunu anlatmak üzere bu haftaki dersimizi yapacağız.
+
+16
+00:14:13,716 --> 00:14:18,096
+Dediğimiz gibi saklayıcı, sayıcı ve bellek elemanları olacak dersimizin konusu.
+
+17
+00:14:19,676 --> 00:14:27,196
+Saklayıcı, sayıcı ve bellek elemanı.
+
+18
+00:14:27,604 --> 00:14:41,604
+Üç tane ana başlıkta konuyu işleyeceğiz. Saklayıcı dediğimiz minvali aslında bizim durum diyagramlarında kullandığımız, şimdiye kadar da durumları tuttuğunu söylediğimiz yapılar. Yani flip-flop.
+
+19
+00:14:42,740 --> 00:14:54,940
+Floplar olacak. Burada saklayıcılar, en bittik bir saklayıcı ne demek olacak? En tane flip-flopun yan yana getirilmiş ve birleştirilmiş yapısı demek olacak.
+
+20
+00:14:55,659 --> 00:15:01,180
+Şimdi saklayıcıların da kendi içerisinde ana kullanılan metal dediği flip-flop, evet.
+
+21
+00:15:01,180 --> 00:15:09,819
+Ama bu saklayıcılar kendi içerisinde parallel in, parallel out, seri in, parallel out.
+
+22
+00:15:10,388 --> 00:15:25,248
+Parallel in, seri out, seri in, seri out tarzında dört tane modeli var. Bunlardan en çok bilgisayar mimarlarında kullanılan Parallel in, Parallel out da seri in, seri out'tur arkadaşlar. Bu aslında stream.
+
+23
+00:15:26,067 --> 00:15:53,288
+Akan bir verinin, spring olarak işlenerek, yani sırasal işlenerek, çıkışa aktarılmasını ifade edecek. Paralel out da aslında bizim şu ana kadar 4 bitlik bir flip-flop diyor, yani 4 bitlik bir saklayıcı dediğimiz yapıda, 4 tane flip-flop'un olduğu yapıda, paralel bir şekilde bit anlamında, MSB ve LSB'sinden tutup da çizeceğimiz diagramı söyleyecek. Bir tane örnek siledim hatta.
+
+24
+00:15:54,004 --> 00:15:56,663
+4 bitlik bir saklayıcı tasarlayalım.
+
+25
+00:15:58,604 --> 00:16:00,724
+Ve parallel-parallel out olsun.
+
+26
+00:16:02,163 --> 00:16:03,744
+Yani pipo mimarisinde olsun.
+
+27
+00:16:04,024 --> 00:16:05,984
+Şimdi ortak bir clock price'leri var.
+
+28
+00:16:22,676 --> 00:16:24,336
+CLK diyelim.
+
+29
+00:16:25,196 --> 00:16:31,516
+Şimdi girişlerimize biz, yani G diyelim, çıkışlarımıza Ç diyelim.
+
+30
+00:16:44,052 --> 00:16:50,292
+Şimdi burada 4 bitlik bir sayı var. Yani göstermek istediğimiz, saklamak istediğimiz değer var.
+
+31
+00:16:50,711 --> 00:16:55,692
+Aslında tek bir clock policy de hepsinin flip-flop'a aktarılması söz konusu.
+
+32
+00:16:55,692 --> 00:17:02,312
+Şimdi çıkışlarımızı da dediğimiz gibi C3, yani C ile gösterelim.
+
+33
+00:17:04,052 --> 00:17:08,299
+C2, C1 ve...
+
+34
+00:17:11,220 --> 00:17:20,380
+C0. Şimdi aslında bizim yaptığımız şey şu, 4 bitlik girişleri G0, G1, G2, G3 olan bir değerin
+
+35
+00:17:21,107 --> 00:17:29,687
+Flip-floplar vasıtasıyla Ç0, C1, C2, C3'e aktarılması ki biz bunu şöyle saklamayı söylüyorduk.
+
+36
+00:17:29,788 --> 00:17:41,927
+Clock paysi bir sonraki payse kadar bu güncelleme olmayacağı için, yani G3, G2, G1'deki değişim yansıtılmayacağı için aslında biz 4 bitlik veriyi saklamış oluyorduk.
+
+37
+00:17:42,607 --> 00:17:45,947
+Burada şimdi ne tip bir flip-flop kullanmak lazım?
+
+38
+00:17:46,612 --> 00:17:56,292
+Saklama işlemi için. Misal ben, 1, 0, 0, 1'i, işte, G3, G2, G1, G0 anlamında gönderdim.
+
+39
+00:17:56,812 --> 00:18:05,372
+Ve bir clock parsine bekledim. Ve Ç3, Ç2, Ç1 ve Ç0'a aktarılacak.
+
+40
+00:18:05,952 --> 00:18:11,672
+Ne tip bir flip-flop kullanırsam bu işlemi yapmış olurum, diye sorsak size.
+
+41
+00:18:14,836 --> 00:18:15,875
+D tipi mi hocam?
+
+42
+00:18:16,576 --> 00:18:19,675
+Evet, data tipi bir flip-flop kullanmamız lazım.
+
+43
+00:18:20,316 --> 00:18:31,256
+Amaç burada veri saklamak, yani saklayıcı olduğundan dolayı D tipi bir flip-flop ile 4 bitlik verinin flip-floplar üzerinden çıkışa,
+
+44
+00:18:31,875 --> 00:18:36,476
+bir sonraki kulağa kadar tutulmasını sağladığımız bir yapıyı oluşturmuş olduk.
+
+45
+00:18:36,476 --> 00:18:39,155
+Bu paralel out yapısı.
+
+46
+00:18:40,051 --> 00:19:02,711
+Şimdi bir de seri in, seri out'daki yapıyı inceleyelim. Aslında biz seri in, seri out dediğimiz yapılarda, belki şunu çizmedim ama şimdi kitaba bakınca gördüm, bazı register'larda, register'lar dediğimiz yapılarda aritematik ve toplama işlemi, lojik işlemler vesaire yapılmaz.
+
+47
+00:19:02,711 --> 00:19:06,971
+Çünkü burada bir işleme birim yok. Bunlar sadece saklayıcı. Ama,
+
+48
+00:19:07,731 --> 00:19:21,951
+Pratiklik olsun diye, şunları zıplatıyorum üstünden, bazı registerlardaki D tipi flip-floplarına sıfırla veya set diye tabir ettiğimiz pinler bağlanır.
+
+49
+00:19:23,271 --> 00:19:29,652
+Böyle olduğu zaman registerlar üzerinde aslında, dediğim gibi tekrardan, niye bu, gene geçmedi, ha?
+
+50
+00:19:30,991 --> 00:19:32,751
+Allah'ım, niye geçmedi bu?
+
+51
+00:19:37,332 --> 00:19:38,692
+Registeredler
+
+52
+00:19:43,796 --> 00:19:58,896
+Register'lar üzerinde 3 tane işlemden bahsedeceğiz. Ama bunlar şöyle bir CPU dediğimiz, central processing unit'in içerisinde bulunan aritmatik ve lojik alü birimiyle alakasız işlemler.
+
+53
+00:19:59,276 --> 00:20:05,816
+Sadece register'ların üzerinde yapabilecek işlemler diyorum. Yani ben veriyi yükledim, bu veriye bir şey yapabileceğim.
+
+54
+00:20:05,816 --> 00:20:09,195
+3 tane proses var. Bir tanesi sıfırlayabilirim.
+
+55
+00:20:09,332 --> 00:20:25,452
+Bir tanesi set edebilirim. Yani sete bir verdim. Misal mikro işlemciye bağlı bunu. Sete bir verdiğim anda hiç mikro işlemci buradaki verilerin ne olduğuna bakmadan registerlar kendi içerisinde bunu birleyebilir. Ve çıkışlarım bir, bir, bir, bir, bir üretebilir.
+
+56
+00:20:25,452 --> 00:20:35,211
+Yani saklayıcıların görevlerine bakarsak şöyle bir setleme yapabilir.
+
+57
+00:20:35,632 --> 00:20:51,052
+Resetleme yapabilir, o anki veriye ve veya öteleme yapabilir. Buna döndürme diye de not düşebiliriz. İkisi farklı şeyler ama resistor'ın mimarisinde bu ikisinden bir tanesini yapabilir.
+
+58
+00:20:51,971 --> 00:21:03,112
+Şimdi set-reset dediğim gibi paralelde de seride de ayrı bir pinden 1 veya 0 vererek kontrol edebileceğimiz, yani flip-flopların yapısından ötürü çıkışın 1 veya 0'lanması.
+
+59
+00:21:03,539 --> 00:21:22,639
+Bunun bir CPU ile alakası yok. O yüzden saklayıcının yapabildiği görevler arasında. Öteleme ve döndürme işlemleri içinde biz aslında seri in, seri out diye anlatacağımız ne oluyor? SISO mu oluyor? Evet.
+
+60
+00:21:22,639 --> 00:21:30,279
+SISO mikro işlemleri, SISO yapısındaki şeyler aslında bizim için öteleme devreleri olarak.
+
+61
+00:21:31,508 --> 00:21:49,407
+Veyahut da şunu da söyleyebiliriz. Hem SISO hem SIPO için bunlar öteleme işlemini de yapabilecek. Öteleme veya döndürme. Nasıl yapacak ona deneyelim. Bir tane seri in çizelim. Şurada bir flip-flopumuz var ve buradan bir çıkışımız var.
+
+62
+00:21:55,731 --> 00:21:57,731
+Seri-in, Parallel-out çiziyorum.
+
+63
+00:22:06,932 --> 00:22:13,932
+Bunlara gerek yok. Burada bir sıkıntı var. Niye Eraser otomatikman gelmiyor?
+
+64
+00:22:20,852 --> 00:22:28,731
+Seri in, seri auto çizdik. Burası seri inimiz. Şuradan da seri auto söyleyelim.
+
+65
+00:22:30,832 --> 00:22:33,152
+Ortak clock passlerimiz var zaten.
+
+66
+00:22:55,476 --> 00:23:19,296
+Burası msb, şurası lsb. Bu şu demek. Şimdi ben seri iğinden bit steam gönderiyorum. 4 bit. 1 gönderdim. Bu bir datatype'den ötekine geçti. Öteki clockpice'in de buna geçti. Öteki clockpice, 4 clock'dan sonra ilk clockta seri iğindeki ilk veri birinci, yani msb'yi oluşturacak en anlamlı bite geçti.
+
+67
+00:23:19,635 --> 00:23:27,815
+Sonra bu datatype ötekine ikinci klokta, üçüncü klokta ve dördüncü klokun akabinde ben şöyle bir bit stream gönderdiğimde,
+
+68
+00:23:29,096 --> 00:23:41,715
+veya şuraya da sıfır diyelim, böyle bir bit stream gönderdiğimde buradan dört klok sonra bir alacağım ve diğerleri, hani diğer çiftleri şuradan aşağı alırsak, yani şuradakilerin her birine şuraya Ç,
+
+69
+00:23:42,548 --> 00:23:49,988
+3 diyelim, şuraya Ç2 diyelim, şuraya Ç1 diyelim, şuraya Ç0 diyelim ve buradan da bir bit aşağı alalım şöyle.
+
+70
+00:23:54,836 --> 00:24:15,375
+Seri'nin paralel out oldu şu an. Eğer bu şeyleri almasak, direkt bu C3 üzerinden işlem yapsak, seri'nin seri out olacak. Ama şu an hani şöyle bir şey yapalım. Yani seri bir şekilde gönderilen bit stremi ben şu an şu aşamada paralel olarak aldım veyahut da seri olarak okumak isteseydim sırayla buradan okuduğum.
+
+71
+00:24:15,955 --> 00:24:35,215
+Ve öteki tarafta bit sistemi tekrar oluşturduğum bir yapı olacaktı. Burada öteleme nasıl oluyor peki? Öteleme şöyle oluyor. Misal biz bu biri sağa ötelemek istiyoruz. O zaman sağa öteleme kuralları eğer bunun yok olması üzerine ise bir sıfır verisi daha gönderiliyor.
+
+72
+00:24:36,855 --> 00:24:42,635
+Buradan seri iğinden girecek olan veri bunu aslında öteleyerek götürdüğü için öteleme oluyor.
+
+73
+00:24:43,859 --> 00:24:53,299
+Misal, ben bundan sonra bunu sola ötelemek istesem, yani 0, 0, 1, 0 elde etmek istesem, ne yapmam lazım sola ötelemek için?
+
+74
+00:24:54,879 --> 00:24:55,480
+Arkadaşlar,
+
+75
+00:25:01,683 --> 00:25:09,083
+Yani bu ilk verdiğim veriyi 00.01'den 00.10'a ötelemek için ne yapmam lazım?
+
+76
+00:25:14,548 --> 00:25:21,807
+7 kere, şey 4, kaç kere oluyor? 1, 2, 3, 3 kere sağ ötelersem bu hale getirmiş olur muyum?
+
+77
+00:25:22,728 --> 00:25:23,288
+Aynen hocam.
+
+78
+00:25:24,607 --> 00:25:32,427
+Bunun gibi öteleme işlemlerini yine flip-flop içerisinde seri in olan versiyonlarında yapabiliyoruz.
+
+79
+00:25:32,948 --> 00:25:46,648
+Tekrardan söylüyorum, bu işlemler aritmatik ve lojik işlem değil. Bunlar bit-design işlemleri ve bunlar flip-flopların veya saklayıcıların, flip-flopların birleşiminden oluşan saklayıcılarda bitirebileceğimiz işlemler.
+
+80
+00:25:48,908 --> 00:25:53,327
+Bunun da dört tane çeşidi var dedik, PIPO, SIPO, PISO ve SISO.
+
+81
+00:25:53,680 --> 00:26:02,280
+Genel olarak PIPO bilgisayar mimarlarında çok çok kullanılıyor. Öteleme işlemleri için SIPO veya SISO kullanılıyor dedik. Bunları da değindik.
+
+82
+00:26:02,400 --> 00:26:04,000
+Hocam bir şey sorabilir miyim? Evet.
+
+83
+00:26:04,760 --> 00:26:09,880
+Hocam bu dört tane flip-flop bir register'ın yapısını mı ima ediyor, onu mu gösteriyor?
+
+84
+00:26:09,880 --> 00:26:17,640
+Evet, evet. Dört bitlik bir register dedik misal. Aslında içerisinde dört tane flip-flop'un bulunduğu yapıyı söylüyor bize.
+
+85
+00:26:18,932 --> 00:26:23,771
+Bu alttaki C0'lar onların bir şeyi var mı? C0, C1, C2.
+
+86
+00:26:23,771 --> 00:26:32,711
+İşte bunlar da 4 bitlik register, yani mikro işlemcilerden misal biz 80-86'yı gösteriyoruz ve 80-86'yı anlatırken şunu diyoruz.
+
+87
+00:26:32,711 --> 00:26:46,731
+16 bitlik bir mikro işlemci diyoruz. Bunu dememizdeki kasıt mikro işlemcinin içerisindeki AX, BX, CX, DX diye nomine edilen, isimlendirilen registerların 16 bitlik olmasından dolayı.
+
+88
+00:26:46,932 --> 00:26:56,512
+Yani 16 tane sayıyı, yani 16 tane binary sayıyı yan yana getirip bir anlamlı veri şeklinde tutabildiğini söylüyoruz.
+
+89
+00:26:56,912 --> 00:27:01,872
+Bunu tutabilen ise aslında her bir register'ın içerisinde 16 tane flip-flop yapısı.
+
+90
+00:27:02,652 --> 00:27:07,932
+Ve bu girişler çıkışlar neyi gösteriyor dersen, AX'e bir veri atacağız.
+
+91
+00:27:07,932 --> 00:27:10,791
+Mesela burası bizim register'ımız, AX register'ımız.
+
+92
+00:27:11,692 --> 00:27:13,311
+Tabii 16 tane çizemem şu anda.
+
+93
+00:27:14,036 --> 00:27:16,836
+Şöyle bir şey olsun, gidiyor 16 tane var.
+
+94
+00:27:17,756 --> 00:27:19,635
+0'dan 15'e kadar gidiyor.
+
+95
+00:27:20,536 --> 00:27:24,476
+Ben buraya 0, 1, 1, 0 böyle bir değer yazdım.
+
+96
+00:27:24,836 --> 00:27:32,675
+Yazdım demem, aslında girişe verdim, kuluğa bastım, çıkışlardan şunları okuyorum demek.
+
+97
+00:27:32,675 --> 00:27:36,195
+Bir sonraki kulu payısına kadar bunları okuyacağım.
+
+98
+00:27:36,468 --> 00:27:43,588
+Buradaki clock tamam bir saate bağlanmış ama mikro işlemci içinisindeki register bir tick'e bağlanmış.
+
+99
+00:27:43,688 --> 00:27:49,028
+Mikro işlemci ona bir tick, read sinyali gönderdiğinde okuyacağı çıkış verileri bunlar.
+
+100
+00:27:49,248 --> 00:27:51,108
+C'ler bunları gösteriyor yani.
+
+101
+00:27:52,388 --> 00:27:53,988
+Yeni bir veri yazdım, write.
+
+102
+00:27:54,408 --> 00:27:57,988
+Write'ta G'ler o yeni yazacağım veriyi simgeliyor.
+
+103
+00:27:58,996 --> 00:28:04,556
+Bir clock price'i, mikroştan önce güncelledediğimde benim gördüğüm verilerde C'leri gösteriyor.
+
+104
+00:28:05,336 --> 00:28:10,195
+Yani aslında bir flip-flop'un içerisinde nasıl giriş çıkış varsa onlar yani.
+
+105
+00:28:12,236 --> 00:28:21,135
+Hocam bu alttaki seri in, seri out var ya, orada sıra sıra göreceğiz değil mi? İlk önce biri göreceğiz, sonra sıfırı göreceğiz, sonra sıfırı göreceğiz, sonra sıfırı göreceğiz, sonra sıfırı göreceğiz değil mi hocam?
+
+106
+00:28:25,011 --> 00:28:44,891
+İlk 4 cycle, yani 3 cycle hiçbir şey görmeyiz. Çünkü o arada daha veriler. 4. cycle'da LSB gelir ilk başta. Yani en anlamsız bit gelir. Sonra onun yanına bir tane veri yazılır. Sonra onun soluna bir tane veri yazılır. Yani ilk gelen veri LSB verisidir.
+
+107
+00:28:49,907 --> 00:29:11,647
+Öteki türlü şu veriyi, ilk başta 1'i gönderdik. Normalde göndereceğimiz sayı bu. 4 bitlik bir sayı. İlk başta 1'i gönderdik, sonra 0'ı gönderdik, sonra 0'ı, sonra 0'ı. Karşı tarafta da bunu ilk LSB'sini yazar, sonra 0'ı yazar, sonra 0'ı yazar, sonra 0'ı yazar, sonra fazla oldu. Silemiyorum, şurada 0 oldu.
+
+108
+00:29:16,756 --> 00:29:31,635
+Tek tek yazacağız ve orada oluşturduktan sonra anlamlı veri oluyor. Tabi o 3 cycle boyunca paket tamamlanmadığı için bizim için anlamsız. Hani o 3 cycle'ı, o 3 kulu'un dönmesi gerekiyor. Veriyi anlamlandırmak için.
+
+109
+00:29:35,892 --> 00:29:50,371
+Daha doğrusu söyleyeyim, seri iletişimde de bu kaydı bir gerçek, paralelde de bir gerçek. Paralel daha kısa sürede daha çok veriyi okumamızı ve yazmamızı sağlayan bir iletişim tekniği ama sıkıntısı şu, gürültüden etkilenme oranı yüksek.
+
+110
+00:29:51,152 --> 00:30:00,000
+Ve mimarisi de biraz maliyetli. Seri insiri outlar çok daha uzak mesafelere veri gönderebiliyoruz, gürültüden daha az etkileniyor.
+
+111
+00:30:00,000 --> 00:30:22,000
+Ama işte mimarileri de ucuz ama işte daha yavaş. Yani bir paketi bir taraftan ötek tarafa ulaştırdığımda bekleme sürem var. İletişimde de bu böyle. Bu flip-flop mimarilerinde de saklayıncı mimarilerinde de böyle. Zaten hani Sipo ile SISO'yu seri out veya seri paralel out mikro işlemciler.
+
+112
+00:30:22,420 --> 00:30:29,220
+Register'larında kullanmaz. Register'larında genelde pipolar, yani paralel in paralel outlar kullanılır.
+
+113
+00:30:31,955 --> 00:30:41,855
+Hocam, şunu şey yapmıştım da ben normalde, bu C0'lar, bu alttaki, bu SISO'daki yapıda, onlar da yine çıkış oluyor değil mi? Yoksa ilk önce 4 çıkış vermez yani burada.
+
+114
+00:30:42,475 --> 00:30:50,435
+Hayır, SIPO yapısıyla SISO'luyu beraber göstermeye çalıştım burada. Yani şunlar yoksa, sevgiyi de alamıyorum ki nasıl bir işse bu.
+
+115
+00:30:52,875 --> 00:30:58,855
+Şunlar yoksa, bu bir SISO yapısıdır. Seri in, seri out yapısıdır.
+
+116
+00:30:59,476 --> 00:31:03,516
+Ve buralardan C1-C0'u okuyamaz. Böyle bir yapı yok.
+
+117
+00:31:04,176 --> 00:31:12,115
+SISO'dan kastımız, kendi içerisinde flip-floplar saklıyor ama seri bir şekilde, out olduğu için seri bir şekilde alıyoruz.
+
+118
+00:31:13,855 --> 00:31:19,756
+Yani paralel almak istediğimizde her bir flip-floptan bunları çekersek SIPO yapısı olacak.
+
+119
+00:31:20,276 --> 00:31:21,736
+Seri in, paralel out olacak.
+
+120
+00:31:22,596 --> 00:31:23,615
+Tamam hocam, anladım şimdi.
+
+121
+00:31:25,216 --> 00:31:26,456
+İkisi farklı yapılar.
+
+122
+00:31:27,155 --> 00:31:43,895
+Peki, niye dört tane flip-flop? Hani bir tane flip-flopla seri, in, seri, out olmaz mı? Olur. Ama o zaman öteleme yapamaz. Burada öteleme fonksiyonunda çalışabilmesi için bir dört bitlik paketin içerisinde öteleme yapacaksak, dört tane flip-flopun kullanılması gerekiyor.
+
+123
+00:31:46,415 --> 00:31:49,875
+Şimdi saklayıcılarla alakalı, tutuyorum başka.
+
+124
+00:31:51,667 --> 00:32:11,947
+Bazı saklayıcılar vardır arkadaşlar. Bütün SISO, SIPO, PIPO ve PISO'yu bu yapıların hepsini içerisinde barındırabilir. Bunlara biz universal, evrensel saklayıcılar diyeceğiz. Çok kullanılmıyor. Sadece laf sen bilin yeter. Yani universal saklayıcılardan mevcut hepsinin iç içe bulunduğu.
+
+125
+00:32:15,796 --> 00:32:23,996
+Burada esas önemli olan, register'ların kaydedici veya saklayıcı diye yetişebildikleri zaten, bu mikro işlemcinin içerisinde de bulunan,
+
+126
+00:32:23,996 --> 00:32:31,395
+bir flip-flop yapısında olduğunu ve paralel giriş, paralel çıkış şeklinde çokça kullanıldığını,
+
+127
+00:32:32,372 --> 00:32:40,212
+Ve onlar için de kaç bitlikse bu saklayıcı, o kadar adet flip-flopun içeride bulunduğunu bileceğiz.
+
+128
+00:32:40,772 --> 00:32:45,552
+Neden, mesela 8 bitlik bir saklayıcı neden 8 tane flip-flop barındırıyor?
+
+129
+00:32:46,032 --> 00:32:55,832
+Çünkü ilk flip-flop dersinde biz demiştik, flip-floplar en temel, ki binary sayının en temeli 0 veya 1'dir.
+
+130
+00:32:57,940 --> 00:33:09,559
+Saklama birimleridir ve bir bitlik, tek bir bitlik değeri sıfır veya biri saklar. Öyle olunca sekiz bit, sekiz tane flip-flop'un yan yana kendisini söyleyecek bize.
+
+131
+00:33:13,059 --> 00:33:23,940
+Bakıyorum örnek var mı diye. Bu sağa öteleme ve sola öteleme tabirlerine bir bakalım. Normalde şöyle bir değerimiz olsun mesela.
+
+132
+00:33:24,435 --> 00:33:29,275
+Bunu sağa öte, bu kaçtı? Numenikli, şey, decimal karşılığı nedir bunun?
+
+133
+00:33:33,428 --> 00:33:43,768
+Dört değil mi? Bunu bir tane sağ ötelesem ben. Çok sinir bozuş mu? Niye böyle saçma silgiyi almıyor bu?
+
+134
+00:33:54,836 --> 00:33:56,576
+Bunu bir bit sağ öte desem.
+
+135
+00:34:03,251 --> 00:34:29,195
+Şu duruma gelecek. Değeri kaç oldu? 2 mi? 2. 1 bit daha sağa ötelesem? 1 oldu. Yani aslında 1 bit sağa öteleme işlemi sayıyı
+
+136
+00:34:30,195 --> 00:34:32,155
+2'ye bölmek demek.
+
+137
+00:34:34,015 --> 00:34:35,375
+2 bit ötelemeye gelelim.
+
+138
+00:34:36,595 --> 00:34:37,115
+Başka bir.
+
+139
+00:34:39,916 --> 00:34:44,735
+2 bit ötelemeye ama onun için bir 8'den başlatacağım daha net görelim diye.
+
+140
+00:34:51,795 --> 00:35:04,336
+Bu oldu, 2 bit. Bu, decimal karşılığı 8, bunun 2. Yani, 2 bit ötelemeden, 4'e bölmek olacak.
+
+141
+00:35:07,036 --> 00:35:14,336
+Yani, buradan şu kayda çıkıyor. 2 üzeri, AND, ki AND, burada öteleme miktarı.
+
+142
+00:35:24,563 --> 00:35:28,983
+2 üzeri en öteleme miktarının 2 üzeri kadar sayıya bölmek demek.
+
+143
+00:35:30,743 --> 00:35:32,184
+Sağ öteleme.
+
+144
+00:35:38,228 --> 00:35:41,668
+Mesela 16 bitlik bir sayıda şöyle bir değerim var.
+
+145
+00:35:45,268 --> 00:36:07,307
+Numerik değerini eder, 2 üzeri 7, şey 8 bittik bir sayıda, 2 üzeri 7, 128, 64 daha 196, 197, 5 mi uğraşıyor, 201 herhalde, yanlış mı hesaplanın? 201 olabilir, yanlış olmasın, 127, 64 daha 192 mi yapıyor?
+
+146
+00:36:11,188 --> 00:36:12,528
+192 yapıyor hocam, aynen.
+
+147
+00:36:13,364 --> 00:36:17,844
+Artı 64, artı 5. Yani 201 yapıyor mu?
+
+148
+00:36:19,403 --> 00:36:21,043
+Yapmıyor, 197 yapıyor.
+
+149
+00:36:21,463 --> 00:36:29,864
+Pardon, 197. Ben bunu bir sağ ötelesem ama bakın döndürme farklı, ona da değineceğiz bu öteleme.
+
+150
+00:36:29,864 --> 00:36:38,764
+Öteleme dediğimiz şeyin tanımı şu, ötelediğimizde, kaydırdığımızda soldan veya sağdan yeni değer 0 girilir.
+
+151
+00:36:39,539 --> 00:36:58,500
+Tamam mı? Yani sıfır gelir. Sıfır, bir, bir, sıfır. Sıfır, sıfır, bir, sıfır, şuradaki bir de düştü. Yok yani. Bunu hesaplayalım. 64 artı 32 artı 2 yapıyor herhalde. Ne yapar o da? 96 mı? 98 mi?
+
+152
+00:36:59,284 --> 00:37:15,804
+98 yapıyor. 197'nin ikisi böldüğümüzde 196'ya bölebiliriz. 197,5 yapıyor herhalde bu. Yanlış mı oldu? Doğru, doğru. Evet. Yani aslında 196'nin ikiye bölümünü bulduk.
+
+153
+00:37:16,463 --> 00:37:22,704
+Tam sayı, yani çift sayı anlamında. Ürgüllük, ondalık sayıları bölemiyoruz sonuçta.
+
+154
+00:37:23,315 --> 00:37:36,215
+Yani sağ öteleme, bizim için 1 bit, 2 bit ne, kaç ötelediysen, o kadar 2 üzeri N'e bölmek demek. 2 bit ötelediysek 4'e bölmek, 3 bit ötelediysek 8'e bölmek anlamına gelecek.
+
+155
+00:37:36,775 --> 00:37:45,315
+Aslında biz sağa sola öteleme işlemi deyip geçiyoruz ama mikro işlemci bunu kısa yoldan 2'ye bölme, kısa yoldan 4'e bölme için bu mentaliteyi kullanıyor.
+
+156
+00:37:45,315 --> 00:37:48,155
+Çünkü register'ın kendi yapısıyla yapılıyor bu.
+
+157
+00:37:49,972 --> 00:37:56,032
+Gidip de oradaki central alıyor biriminde yapılmıyor. O yüzden çok daha hızlı sonuç elde ediliyor.
+
+158
+00:37:57,552 --> 00:38:03,612
+Bu sağ öteleme. Şimdi bir de döndürme var. Döndürmeden kastığımız işi şurada düşmüştü ya.
+
+159
+00:38:04,752 --> 00:38:16,932
+Şuna bir bit sağa, sağa öteleme dedik. Bir de bir bit sağa döndürmeye bakalım.
+
+160
+00:38:20,500 --> 00:38:23,380
+Şuradaki değer buraya gelecek, yani başa gelecek.
+
+161
+00:38:25,199 --> 00:38:30,539
+1, 1, 1, 0, 0, 0, 0, 1, 0.
+
+162
+00:38:31,500 --> 00:38:34,260
+Şu an başa geldi, yani döndürme işlemi yaptı.
+
+163
+00:38:34,340 --> 00:38:36,559
+Ve bunun sonucu bambaşka bir şey çıktı.
+
+164
+00:38:36,559 --> 00:38:41,359
+Ne çıkar? 128 artı 64 artı 32 artı 2.
+
+165
+00:38:42,539 --> 00:38:45,679
+196, 198, 200.
+
+166
+00:38:46,483 --> 00:38:54,224
+28, 230 mu yapıyor sanki? Yani alakasız bir değer çıktı uzunlarımın kısası.
+
+167
+00:38:55,795 --> 00:39:08,695
+Döndürme ile öteleme arasındaki fark bu. Döndürme, bir veri kaybolmadan başa getirme, ötelemede bölme işlemi yapmak demek olacak. Peki sola öteleme veya döndürme, döndürmeyi bir daha anlatmayacağım.
+
+168
+00:39:08,695 --> 00:39:22,695
+Sola döndürme de işte bu taraftan buraya verinin geçmesi. Ama öteleme, sola öteleme de aslında bölme işleminin tersini yapacak, çarpmayı yapacak. Şuradan örnek verelim. Şu sayıyı.
+
+169
+00:39:23,123 --> 00:39:28,643
+Gerçi bu sayı artık maksimum ulaştığı için işimize yaramaz.
+
+170
+00:39:30,844 --> 00:39:40,344
+Mesela 0, 0, 0, 1. Bu 1. Sola öteledim. 2 bit sola öteledim. Değil mi? 4. 2 bit sola öteledim.
+
+171
+00:39:41,443 --> 00:39:44,123
+Hani çıktığını düşünen bitimiz olduğunu düşünelim.
+
+172
+00:39:46,420 --> 00:39:54,579
+16. Değil mi? Yani aslında 2 bit, 2 üzeri 2'den 4 katına çarpma işlemi yapıyoruz.
+
+173
+00:39:55,359 --> 00:39:57,000
+Sol ötelemeden.
+
+174
+00:39:58,519 --> 00:40:08,220
+Sağ ve sol ötelemeler, saklayıcı mimarların kendi iç yapısında yapılabildiği için çok hızlı işlemlerin yapılmasına onlak veriyor.
+
+175
+00:40:08,819 --> 00:40:11,739
+Saklayıcılar kendi içerisinde bunu gerçekleştirebiliyor.
+
+176
+00:40:16,500 --> 00:40:17,800
+Tamam mıyız arkadaşlar?
+
+177
+00:40:24,371 --> 00:40:27,912
+Whiteboard temizliği yok mu ya? Gerçi şunlar var.
+
+178
+00:40:32,083 --> 00:40:54,303
+Şimdi saklayıcıları böylelikle geçmiş olduk. Şimdi bir nevi sayıcılara bakalım. Sayıcılar dediğimiz yapılar da aslında kendi içerisinde nümerik bir değeri alıp bu nümerik değerden sıfıra doğru veya sıfırdan o hedefteki nümerik değere doğru sayan
+
+179
+00:40:55,123 --> 00:41:01,983
+Devreler, devre entegreler diye şey yapacağız. Bunda da aslında sayıcıları çeşitlendirirken bit sayılarına göre
+
+180
+00:41:06,132 --> 00:41:08,572
+Ne demek bu? İşte 4 bitlik sayıcı.
+
+181
+00:41:10,992 --> 00:41:28,832
+4 bitlik sayıcı 0, 0, 0, 0'dan 1, 1, 1, 1'e kadar kendi içerisinde bunu, bu sayma işlemini, clock pilesine veya dışarıdaki bir tetikleme sinyaline bağlı olarak yapan devre elemanı olacak.
+
+182
+00:41:29,891 --> 00:41:32,032
+Mesela 8 bitlik sayıcı desek.
+
+183
+00:41:34,643 --> 00:41:36,844
+Sıfırla kaç arasında sayım yapar?
+
+184
+00:41:40,283 --> 00:41:41,083
+255.
+
+185
+00:41:41,903 --> 00:41:44,344
+255 arasında sayım yapacak değil mi?
+
+186
+00:41:47,503 --> 00:41:48,543
+Gibi.
+
+187
+00:41:51,743 --> 00:41:54,923
+Başka bit sayılarına göre sayıcıları isimlendireceğiz.
+
+188
+00:41:55,363 --> 00:42:01,163
+Sayma sırasına göre de iki tarzı var. Sayma sırasına göre de bir özelliği var sayıcıların.
+
+189
+00:42:04,275 --> 00:42:10,235
+Yukarı, yukarı sayan, aşağı sayan.
+
+190
+00:42:14,228 --> 00:42:26,887
+Yukarı sayanlar sıfırdan 255'e kadar sayacak ve 255'den sonra, mesela 8 bittik sayıcılarda sıfırlanarak tekrar başa gelen, aşağı sayıcılarda 255'den geriye doğru giden sayma sırası yapan.
+
+191
+00:42:27,427 --> 00:42:33,768
+Çalışma moduna göre de bir özelliği var. Çalışma moduna göre de sayıcılar sınıflandırılıyor.
+
+192
+00:42:34,467 --> 00:42:40,847
+Bunlar da hem yukarı hem aşağı ikisini beraber çalıştırabilen iki modlu.
+
+193
+00:42:42,324 --> 00:42:45,623
+Veya ikisinden bir tanesi olan tek mod sayıcılar diye.
+
+194
+00:42:47,184 --> 00:42:54,384
+Başka durumların sayısına göre var. Yani durum sayıcıları diye tabir ettiğimiz.
+
+195
+00:42:55,884 --> 00:43:00,623
+Bunlar genelde modüle sayıcıları arkadaşlar. Ne demek bu?
+
+196
+00:43:01,003 --> 00:43:06,804
+Mesela mod 3'e göre sayım yapan bir sayıcı entegresinden bahsediyorsak örnek verelim.
+
+197
+00:43:07,347 --> 00:43:18,207
+Mod 3 desek, bunun sayacağı şey 0 ile 2'ye kadar değil mi? 3 de tekrardan 0'a gelmesi lazım. 0, 1, 2 sayacak sonra 0'a gelecek.
+
+198
+00:43:19,207 --> 00:43:26,148
+Yani durum sayıcıları bu şekilde çalışıyor. Bir de geçiş fonksiyonlarına göre sayıcıları sınıflandıracağız.
+
+199
+00:43:29,087 --> 00:43:32,407
+Burada da senkron, asenkron.
+
+200
+00:43:32,751 --> 00:43:55,811
+yapıları var. Ne demek bu? Senkron dediğimiz şey aslında bir sayıcı var. Buraya bir değer yüklüyoruz. İşte N-bit, işte ne bileyim 4-bitlik bir sayıcı. 0-0-0 ile başla dedik. Yani buraya 0-0-0 verildik. Bir kuluğa bağladık ve benim hesabıma göre yukarı sayıcı olsun.
+
+201
+00:43:57,876 --> 00:44:06,216
+Yani sıfır sıfır sıfır verdim. F-F-F-F'di. Yani 1-1-1-1'di. F'de şey olacak, bitecek artık.
+
+202
+00:44:08,036 --> 00:44:20,655
+Çıkışlarında da şöyle sayma tamam olan bir çıkışı var. Bir de o anki değeri okuyabileceğim, N diyebileceğim bir çıkış var.
+
+203
+00:44:21,360 --> 00:44:48,619
+Kulokla mesela sıfır sıfır sıfır yükledim, bir kulok sonra sıfır sıfır sıfır bir oldu. Daha sayma tamam olmadığı için buradan bir sinyal alamıyorum. Ama ne zaman işte ama şuradaki AND'en içerisindeki verini şu an hangi aşamada okuyabilirim yukarı sayıcılardan. Genelde mikro işlemcilerde arkadaşlar aşağı sayıma devreleri kullanılır ve yüklediğimiz değer işte örnek verelim binden geriye saysın devreler.
+
+204
+00:44:48,980 --> 00:44:58,340
+Yüklediğimiz değer 1000 olur ve her klockta 999, 998, 997 gibi geriye doğru sayan devreler kullanılır.
+
+205
+00:44:58,340 --> 00:45:06,340
+Ne zaman olay sıfıra geldi, yani artık bitti sayım, sayma tamamdan bir verisi gelir ve mikro işlemciyi tetikler.
+
+206
+00:45:06,819 --> 00:45:16,220
+Sayma bitti diye. Bu sayma tamamı şu amaçla da kullanabileceğiz. Başka bir sayıcı koydum.
+
+207
+00:45:17,268 --> 00:45:25,268
+Buraya yine bir değer yükledim, K bit olsun. Ve buradan da yine bir K değer buluyorum ve sayma tamam dedim.
+
+208
+00:45:26,967 --> 00:45:36,048
+Şimdi 4 bit iki sayıcı olduğunu düşünelim bunların. Ve yukarı sayma değil de hani ilk etapta aşağı sayma üzerinde örneklendirelim.
+
+209
+00:45:41,588 --> 00:45:42,908
+Aşağı sayıcı olsun.
+
+210
+00:45:45,908 --> 00:45:47,068
+Ve 4 bit.
+
+211
+00:45:48,608 --> 00:45:51,507
+Buradan da 4 biti okuyabiliyorum. Bu da 4 bit.
+
+212
+00:45:52,128 --> 00:45:55,268
+Bundan da 4 biti yine okuyabilirim. O anki sayım değeri neyse.
+
+213
+00:45:55,908 --> 00:46:02,668
+Şimdi bu yapıları ne için kullanıyoruz? Şu için. 4 bitin en fazla sayabileceği değer kaçtır?
+
+214
+00:46:08,019 --> 00:46:09,460
+0 ile 15 arasında hocam.
+
+215
+00:46:10,000 --> 00:46:20,920
+Aşağı sayıcı olduğu için de en fazla ben buna 15 değeri yükleyebilirim. Değil mi? Yani 1, 1, 1, 1 yükledim buraya. Doğru mu?
+
+216
+00:46:22,699 --> 00:46:23,279
+Evet hocam.
+
+217
+00:46:23,880 --> 00:46:29,359
+Bir clock pi'si sonra bu 1, 1, 1, 0'a düştü. Sonra bir tane daha yaptım.
+
+218
+00:46:29,844 --> 00:46:48,583
+Buna mı düşüyorum? Evet. Sonra bir tane daha. Şuna düştü. Sonra bu şekilde sayıyorum değil mi şu an? Bir dakika, şu şöyle olacak. Ya bu zoom'un şeyi çok zormuş. Keşke forepoint da açsaydık ya.
+
+219
+00:46:56,179 --> 00:47:11,539
+Bu böyle düşüyor. Neye kadar? 0, 0, 0, 0'a kadar düştü. Sonra sayma tamam geldi. Bir buna verdi. Çünkü artık bitti yukarıdaki. Sonra burada yüklediğim değeri saydırabiliyorum.
+
+220
+00:47:11,539 --> 00:47:23,960
+Buraya da mesela şöyle bir değer yükledim. Bu bittikten sonra, yani 16 stepten sonra bunu bir tetiklediği için bu neye düştü? 0, 1, 1, 1'e düştü.
+
+221
+00:47:24,851 --> 00:47:27,391
+Sonra her burası 16 stepti.
+
+222
+00:47:28,492 --> 00:47:32,811
+Bir 16 step sonra 0, 1, 0, 1'e düştü.
+
+223
+00:47:32,871 --> 00:47:33,851
+Pardon, yanlış oldu.
+
+224
+00:47:36,291 --> 00:47:37,471
+Sıfıra düştü.
+
+225
+00:47:37,992 --> 00:47:43,271
+Bir 16 step sonra 0, 1, 0, 1'e düştü.
+
+226
+00:47:43,791 --> 00:47:47,711
+Bir 16 step sonra 0, 1, 0, 0'a düştü gibi.
+
+227
+00:47:48,672 --> 00:47:52,692
+Yani amaç şu, bu arda arda bağlamı.
+
+228
+00:47:52,884 --> 00:48:00,983
+Kapasitesi yetmediği bir aşamada yeni bir sayıcıyı, önceki sayıcıyla korole bir şekilde kullanabiliriz.
+
+229
+00:48:01,983 --> 00:48:09,184
+Misal ben buraya bin yüklesem, buraya da bir, bir, bir, bir yüklemiştim zaten. Bu kaç sayım yapacak? Hesaplayabilir miyiz?
+
+230
+00:48:15,764 --> 00:48:17,024
+Mesela, bu evlenmeyişim.
+
+231
+00:48:27,251 --> 00:48:28,771
+Tam olarak anlayamadım hocam.
+
+232
+00:48:30,592 --> 00:48:33,351
+Şu an bu yapının nasıl çalıştığını anladık mı?
+
+233
+00:48:34,452 --> 00:48:35,412
+Onu anladım hocam.
+
+234
+00:48:37,292 --> 00:48:42,292
+Yukarıdaki sıfıra düştükçe sayma tamam pini aşağıdakinin kulağını tetikliyor.
+
+235
+00:48:43,332 --> 00:48:48,632
+Ve aşağıya ben input giriş olarak bin verdim, yukarıya bir, bir, bir, bir, bir verdim.
+
+236
+00:48:49,692 --> 00:48:52,072
+Buradaki, en sondaki şu sayma tamam.
+
+237
+00:48:54,132 --> 00:48:55,372
+Ne zaman bir olur?
+
+238
+00:49:01,076 --> 00:49:03,296
+16 çarpı 4.
+
+239
+00:49:04,735 --> 00:49:05,655
+4 mi?
+
+240
+00:49:06,336 --> 00:49:07,695
+Pardon, 8.
+
+241
+00:49:08,195 --> 00:49:11,695
+8. Yani ne yapıyor? 128 mi?
+
+242
+00:49:13,275 --> 00:49:13,556
+Değil mi?
+
+243
+00:49:14,716 --> 00:49:24,956
+128 sayım sonucunda burası bir olur. Ama 128 sayıma ben bir tek entegreyle yapamıyordum. Çünkü bunlar 4 bitlik sayıdı.
+
+244
+00:49:25,588 --> 00:49:32,208
+Anlaşıldı mı neden bu yapıda kullandığımız? Mikro işlemcide bu yapıda kullanacağımız bir örnek olacak.
+
+245
+00:49:33,523 --> 00:49:56,263
+Sayıcılar genelde, özetleyecek olursak, aşağı ve yukarı sayıcı olarak değişkenlik gösterir. Kaç bitlik sayıcı olduğuna göre değişkenlik gösterir ki en kritik parametre bu. Çünkü bunun kapasitesini aslında anlamamızı sağlıyor. Çalışma moduna göre değişkenlik gösterir. İşte bu yukarı ve aşağı ikisini beraber de destekleyen sayıcılar mevcut.
+
+246
+00:50:00,000 --> 00:50:07,480
+Modüle sayıcı olabilir, Mod 7'ye göre sayıcı denseydi buraya, biz 1-1-1-1 yazamazdık.
+
+247
+00:50:07,600 --> 00:50:13,680
+Yani Mod 7'nin alabileceği maksimum 0-1-1-1-1 ile başlatabilirdik, 6'ya düşsün çünkü.
+
+248
+00:50:13,900 --> 00:50:19,960
+Hatta 0-1-1-0 ile başlatabilirdik, bir klok sonra 5'e düşsün, 4'e düşsün diye gitsin.
+
+249
+00:50:22,320 --> 00:50:23,539
+Anlaşıldı mı sayıcılar?
+
+250
+00:50:24,980 --> 00:50:26,539
+Hocam bu şey...
+
+251
+00:50:27,188 --> 00:50:30,568
+Loop, sanki iç içi looplar böyle çalışıyor değil mi sanki hocam?
+
+252
+00:50:31,219 --> 00:50:36,199
+Kodlamadaki loop mantığı biraz, bu donanımsal bir işlem.
+
+253
+00:50:36,199 --> 00:50:59,179
+Ha şöyle, sen eğer kodda mikro işlemcinin içerisindeki değerleri bir bir azaltıyorsan, register'ların içerisindeki değerleri bir bir azaltıyorsan, sayıcı orada CX diye bir register'a, biz counting register diyeceğiz ona mikro işlemcilerde, ona bir değer atanacak ve o değer bitene kadar, o yani CX decrement olana kadar, sıfıra ulaşıya kadar o loop.
+
+254
+00:50:59,219 --> 00:51:10,219
+Dönecek. Böyle bir yapı kuruladıysan, evet, sayıcılarla yapılıyor. Ama yazılım taraflı, sadece yazılım tarafındaysa o başka bir şey. O donanımsal hiçbir sayıcılarla yapılıyor.
+
+255
+00:51:10,219 --> 00:51:12,879
+Assembly'den kastetmiştim hocam. Assembly'i kastetmiştim.
+
+256
+00:51:14,219 --> 00:51:16,219
+Assembly'deki...
+
+257
+00:51:17,492 --> 00:51:41,652
+Olabilir. Şu an tam yani olmaya da bilir. Net bir şey söylemeyeyim. Çünkü burada biraz daha dolanım var. SMD'de de makine kodunda yazılım değilse, yani mikro işlemcinin register'ları üzerindeki işlemleri değilse olabilir. Ama mikro işlemcinin, yani alü biriminin register'ları üzerinde bir işlemi ise bununla alakası olmayabilir. Ona tam bir şey söyleyemiyorum şu an.
+
+258
+00:51:45,300 --> 00:51:52,420
+Tamam, sayıcıların da genel mantığını herhalde anladık. Yani dediğim gibi genel olarak anlatıyoruz, çok detaya girmemeye çalışıyoruz.
+
+259
+00:51:52,420 --> 00:51:59,460
+Ama en azından işte 4 bittik sayıcı ne, 8 bittik sayıcı ne, maksimum alabilecek değerler ne, bunu bilmek lazım.
+
+260
+00:51:59,860 --> 00:52:08,460
+Bunlar dışında şurada durum sayıcılarında şöyle sayıcılar da var. Mesela BCD sayıcı. Ne demek olabilir BCD sayıcı?
+
+261
+00:52:09,920 --> 00:52:11,700
+Üç fazlasıydı hocam.
+
+262
+00:52:12,851 --> 00:52:35,351
+O grey kodu dediğin, şey, 3 fazlalık sayıcısının dediğin. O da var, tamam, 3 fazlalık sayıcı da var. Ama grey sayıcı da var, BCD sayıcı da var. Bunlar ne olabilir? Hatta şöyle bir tablo da yapabiliriz, güzel olur.
+
+263
+00:52:37,076 --> 00:52:40,576
+Bunlar özel durumlara göre üretilmiş sayıcılar.
+
+264
+00:52:41,416 --> 00:52:43,756
+Hemen şöyle bir tablo yapalım şuraya.
+
+265
+00:52:55,668 --> 00:52:58,467
+0, 1, 2, 3
+
+266
+00:53:16,947 --> 00:53:30,288
+Bu normal matematikteki sayım sistemi. Binary'sine bakalım. Yani normal ikili bir sayıcı sistemi tasarlarsak, 4 bitler üstleyebileceğimiz için, yani 4 bit bir şey tasarladım.
+
+267
+00:54:00,980 --> 00:54:03,219
+Binary sayıcı bu şekilde sayıcı.
+
+268
+00:54:03,939 --> 00:54:13,319
+İşte sıfırdan bir, bir, bir, bir'e kadar dört tane içerisindeki sayıcı mimarisi dört bitlik olduğu için sayıcı.
+
+269
+00:54:13,939 --> 00:54:16,039
+Şimdi bunun dışında şunlara bakalım.
+
+270
+00:54:16,039 --> 00:54:17,399
+Bicd sayıcı.
+
+271
+00:54:20,059 --> 00:54:25,659
+Bicd sayıcıyı biliyoruz ki biz sıfırdan, yani Bicd'deki kastımız nedir?
+
+272
+00:54:25,739 --> 00:54:28,579
+Sıfırdan dokuza kadar olan sayıları saymasıdır.
+
+273
+00:54:30,835 --> 00:54:32,155
+Bu şekilde gidecek.
+
+274
+00:54:44,788 --> 00:54:57,407
+7 oldu, 8 oldu, 9'u yaptık. Bundan sonra artık sayma yapmayan ve başa dönüp saymayı devam ettiren, eğer ki titiklendiyse.
+
+275
+00:54:58,268 --> 00:55:01,548
+PCD sayıcı bu. Gray kodu dediğimiz, gray sayıcı.
+
+276
+00:55:03,891 --> 00:55:14,011
+Seyiciye ne demiştik? Hem ink distance'dan bahsettiydik. Hani o haftalar belki size de bahsedilmiştir. Hem ink distance'ı bir olacak şekilde atması lazımdı.
+
+277
+00:55:14,195 --> 00:55:36,036
+Yani mesela ilk başta 0-0-0 ile başlayacak, sonra 0-0-1 olacak. Şimdi Heming Distance dediğimiz bitsel değişim demek. İki adet bitin değişmemesi lazım. Mesela burada BCD'ye bakarsak 0-0-0-1, 0-0-1-0 olmuş. Yani şuradaki 0-1 olmuş ve 1-0 olmuş. İki tane şey değişmiş.
+
+278
+00:55:37,907 --> 00:55:56,028
+Yani gri sayıcılar, grey kodu sayıcıları diyelim en temizi, her seferinde, her bir step sayımda bir adet bitin değişmesini sağlar. Yani biz bundan sonra şunu değiştirdiyse bu da değişmeden kalması lazım.
+
+279
+00:55:57,331 --> 00:56:20,172
+Yani 1'den 3'e giden yapılar. Sonrasında, hani bundan sonra, 3'den sonra yine 1 bit değişecek. Şimdi biz şuradaki 1'i 0'a çekebiliriz. Sonrasında yine 1 bit değişecek. Şuradaki bitleri sabit tuttum, şunu değiştirdim. Sonra tekrardan bizim 1 tane bitin değişmesi lazım. Gibi gibi.
+
+280
+00:56:20,884 --> 00:56:43,943
+Gerçi şöyle olacak, o iki bit mi değiş? Ha şöyle şöyle. Aynı, sıfırdan bir. Sonra tekrardan bizim bir adet bitimizin değişmesi lazım. Sonra tekrardan bir adet bir bitin değiştiği yapılar. Bunların hepsi zaten karşılık gelecek. Gray kodu sayıcı devresi de bu şekilde çalışıyor.
+
+281
+00:56:44,467 --> 00:57:09,188
+Başka, misal bir tane de şey yapalım, modüle 12 sayıcı dedik. Hani 12 modül, modu 12 sayıcılar olsun. Bu taraflar aynı, bir daha yazmıyorum sıfırdan 12'ye kadar. Şurası 12 mi? Ha şurası 12. Buraya kadar aynı. Bundan sonra sayma yapmayan devreler diyeceğiz modüle 12 için. Tabii bu da yok.
+
+282
+00:57:09,715 --> 00:57:14,016
+Bunun bir öncesi olacak 12 olduğu için. Şu mu oluyor? Evet.
+
+283
+00:57:16,056 --> 00:57:21,596
+Buraya kadar sayım yapan, sonrasında sıfır alıp tekrardan başlayan sayıcılar diyeceğiz.
+
+284
+00:57:23,135 --> 00:57:28,215
+3 fazlalık da dediğim gibi hani sıfır değil de onun için 3 fazlası olan 3'ten başlayacak.
+
+285
+00:57:28,675 --> 00:57:32,916
+En sonunda 1111'den sonra 012'yi göreceğimiz sayıcılar.
+
+286
+00:57:35,027 --> 00:57:39,628
+Bunlar özel sayıcı dediğimiz gibi, durum sayıcıları dediğimiz sayıcılar.
+
+287
+00:57:43,476 --> 00:58:00,955
+Peki, şurada kitapta şöyle bir soru var, bunu okumak istiyorum. İkili sayıcı ile BSD sayıcı arasında ne fark vardır? denmiş. Uygulamaya bağlı olarak hangisinin seçilmesi gerektiğine nasıl karar veririz?
+
+288
+00:58:03,096 --> 00:58:05,795
+Diye bir soru sorarsak, ne düşünürsünüz?
+
+289
+00:58:10,387 --> 00:58:11,967
+Arada nasıl bir fark var?
+
+290
+00:58:12,347 --> 00:58:15,728
+Hocam, bunu flip-flop olarak asıl kurgulayacağımızı mı soruyorsunuz?
+
+291
+00:58:16,668 --> 00:58:23,128
+Yani BSD ve binary sayıcıları kullanmak istediğimizde kullanımda nasıl bir farklılık oluşur?
+
+292
+00:58:24,407 --> 00:58:26,248
+Flip-flop falan sorduğum yok yani.
+
+293
+00:58:28,208 --> 00:58:29,387
+Hocam, bu...
+
+294
+00:58:34,547 --> 00:58:37,647
+Sanki şey hocam bu, BCD'de 9'a kadar sayıyor ya.
+
+295
+00:58:38,248 --> 00:58:38,467
+Evet.
+
+296
+00:58:39,547 --> 00:58:42,907
+Hani şey yani, adımı belli, 9'dan sonra gidemeyeceksin yani.
+
+297
+00:58:43,327 --> 00:58:45,587
+0 ile 16 arasında olamayacak.
+
+298
+00:58:45,708 --> 00:58:48,487
+Çünkü 0 ile 16 arasında gittiği vakit 16'ya kadar artacak.
+
+299
+00:58:49,027 --> 00:58:50,807
+Mesela binary olsa daha kolay olur.
+
+300
+00:58:50,907 --> 00:58:52,087
+0'dan 15'e kadar artıyor.
+
+301
+00:58:52,847 --> 00:58:55,307
+Ama BCD'de 0'dan 9'a kadar gidiyor yani.
+
+302
+00:58:56,507 --> 00:58:57,027
+Tamam.
+
+303
+00:58:57,780 --> 00:59:07,460
+Kolaydan kastın, acaba şu mu? Şöyle örnekten gidelim. Misal 99, yani 99'a kadar sayacağım ben. Sıfırdan 99'a gitsin diyorum.
+
+304
+00:59:08,680 --> 00:59:19,940
+Bir BCD olarak düşünürsem nedir? Binary olarak düşünürsem nedir? Dersek. Misal 99 BCD'de nedir? Burası kesim aybisayı.
+
+305
+00:59:24,244 --> 00:59:26,244
+Nasıl yapıyorduk BSD'ye çevirmeden?
+
+306
+00:59:30,963 --> 00:59:36,164
+Hocam, binary'de 99'u 120 şeyden çıkarırız.
+
+307
+00:59:37,164 --> 00:59:38,364
+127'den, pardon.
+
+308
+00:59:39,423 --> 00:59:42,804
+Binary'de mesela 127'den, pardon, 8'de yapacağız.
+
+309
+00:59:42,903 --> 00:59:45,403
+7'de yaparsak eğer mesela, 127'den çıkarırız.
+
+310
+00:59:45,764 --> 00:59:49,264
+O çıkan sonuçtan itibaren 127'ye kadar sayar mesela.
+
+311
+00:59:51,184 --> 00:59:51,804
+Nasıl yani?
+
+312
+00:59:52,659 --> 01:00:09,000
+Kaç yükleyeceğim ben değer? Misal, 99'un aşağı düşen bir devre tasarlamak istiyorum. Yani sayıcı da 99, 1 clock 98, 1 clock 97 diye gidiyor. Şimdi BSD sayıcıda ilk yükleyeceğim değer ne olacak? Binary'de ilk yükleyeceğim değer ne olacak?
+
+313
+01:00:14,579 --> 01:00:16,319
+Binary'de kaç yapıyor 99?
+
+314
+01:00:17,739 --> 01:00:23,380
+35'ten başlaması lazım hocam sanki. 35'ten başlarsa 127'ye kadar 99 adam ediyor.
+
+315
+01:00:23,779 --> 01:00:31,659
+Yok, sen yukarı sayıcı düşünüyorsun da ben şunu sordum. 99'dan aşağı sayacağız. 98, 97, 96 diye gidecek.
+
+316
+01:00:33,659 --> 01:00:37,500
+Yani benim şu sayıcıma, şurası girişti.
+
+317
+01:00:39,572 --> 01:00:53,952
+Şurası anlık değer okumaydı. Şurada sayıma tamamdı. Şuraya da ClockPy'sini veriyorduk. Bu gelişte vereceğim binary'de ne değeri olacak? 99'dan aşağı sayacağım.
+
+318
+01:00:57,619 --> 01:01:16,019
+Hocam, o zaman bu 99'u 2'nin katları şeklinde mi göstermemiz lazım? Mesela 2 üzeri 8, 2 üzeri 6, artı 2 üzeri 5, 64 artı 32, 96 yapıyor. Artı 2 üzeri 2, artı 2 üzeri 1.
+
+319
+01:01:16,920 --> 01:01:21,739
+Bana söylesene, Binary karşılığı ne 99'ın ya, onu soruyorum.
+
+320
+01:01:22,739 --> 01:01:24,539
+Binary karşılığını mı soruyorsunuz hocam?
+
+321
+01:01:24,947 --> 01:01:43,027
+Tamam. Sıfır, sıfır, bir, bir, sıfır, sıfır, bir, bir.
+
+322
+01:01:50,996 --> 01:01:52,195
+Sanki tutmadı ama.
+
+323
+01:01:57,331 --> 01:01:58,132
+Şu an 32.
+
+324
+01:02:01,972 --> 01:02:08,331
+Arkadaşlar, şu 99'u binary'ya çeviremedik mi ya? Yani en kötü şöyle yapacağız. Efendim?
+
+325
+01:02:08,972 --> 01:02:11,472
+0, 1, 1, 0, 0, 0, 1, 1.
+
+326
+01:02:12,452 --> 01:02:13,831
+0, 1, 1, 0.
+
+327
+01:02:14,452 --> 01:02:15,572
+0, 0, 1, 1.
+
+328
+01:02:16,512 --> 01:02:22,811
+Tamam, 3 yaptı. 64, 96, 99. Doğru mu? Doğru değil mi?
+
+329
+01:02:24,052 --> 01:02:28,811
+Şimdi, bu CV'yi de alamıyorum. Bu nasıl bir iştir ya?
+
+330
+01:02:31,092 --> 01:02:53,251
+Şimdi arkadaşlar, normalde binary bir sayıcı devresinde, ben, hadi şu sıfırı da atalım, şu değer bana yetiyor 99'u yükleyebilmek için. Yani 3, 4 daha 7 bit. 7 bitli bir sayıcı ile ben 99'dan geriye sayabilir miyim? Binary sayıcı da.
+
+331
+01:02:55,532 --> 01:02:56,452
+Sayabiliriz hocam.
+
+332
+01:02:57,268 --> 01:03:15,447
+Evet, ama öteki taraftan BCD'yi unuttunuz muhtemelen, çevirme nasıldı? Dijit dijit binary kodunu yazıyor. Şöyle bir şey olacak bizim BCD kodumuz. Şimdi BCD koduna baktığımızda 8 bitlik bir sayıcı gerektiriyor.
+
+333
+01:03:15,891 --> 01:03:23,771
+Hani gereksiz yere bazı bitlerin kullanılmamasından dolayı 8 bitlik bir sayıcıyla 99'u sayabiliyordur.
+
+334
+01:03:23,771 --> 01:03:35,771
+Ama öteki tarafta binary olarak bir sayıcı tasarlasaydı, yani binary bir sayıcı olsaydı bu, 7 bit ile daha efektif, daha az bit gereksinimi olan bir şekilde sayma işlemini bitirebilirdik.
+
+335
+01:03:36,551 --> 01:03:43,771
+Burada BSD ile ikili sayıcı arasındaki en büyük fark şu, ikili sayıcılar daha az bit ile...
+
+336
+01:03:43,891 --> 01:03:51,051
+Daha çok ifadeyi barındırdığından daha anlamlı sonuçlar veriyor. Daha efektif kullanıma sahip.
+
+337
+01:03:51,411 --> 01:04:04,711
+Ama öteki tarafta, BCD sayıcı sistemlerinde bazı bitler kullanılmadığı için, bazı steplerde 9'dan yukarısı olmadığı için sıkıntı, israfı oluyor burası biraz. Bitsel israf oluyor.
+
+338
+01:04:05,396 --> 01:04:22,215
+Ama bizin avantajı ne? Misal diyorsunuz ki 99'dan geriye sayalım. Direkt 99'u veriyoruz buraya. Hiç düşünmeden, çevirim yapmadan. Ama biraz önce misal biz 99'u binary karşılığına getirmeye uğraştık. Bir conversion var. Çünkü bu bir decimal format.
+
+339
+01:04:25,552 --> 01:04:45,672
+Sayıcı devresi tasarlayacaksınız ve diyeceksiniz ki, işte 72'den geriye saysın. Bunu BCD olarak düşünmek çok daha kolay. 72'yi, 7 ve 2'nin binary'sini verdiğimde BCD sayıcılara benimki sayma işlemine başlıyor. Ve 72'den sonra sıfırlıyor. Ama öteki tarafta binary'de 72'nin neye tekabül geldiğini bilmemiz lazım.
+
+340
+01:04:45,672 --> 01:04:48,672
+Yani 72'nin işte...
+
+341
+01:04:48,960 --> 01:05:09,300
+İki tarzlık yapmıştık ya, bir 64, yani 2 üzeri 6'dan 64 çıkarttığımda kalan ne oluyor? 8 mi? 8. Sonra 8'den 8, 2 üzeri 3 çıkarttım, 0. Yani bu 2 üzeri 3'te 6'da 2, 1 diğerleri 0 olacak gibi böyle bir conversion yapmam lazım.
+
+342
+01:05:09,748 --> 01:05:31,148
+Veyahut da 72, 2'ye böyle böyle, 36, böyle böyle bu kalan değerleri tersten yazacağım vs. Bir conversion devresi gerek. Desimal formattaki inputu binary'ye çevirebilmek için. Ama BCD'de direkt desimali binary tablosundan çekip de yapabileceğimiz bir değeri var.
+
+343
+01:05:33,012 --> 01:05:48,072
+Yani şunu demeye çalışıyorum, 99 bu ama 199 benim için binary'de başına sadece şu gerekirken, hiçbir hesaplama gerektirmeden, binary'de bunun hiçbir anlamı yok, 199'u tekrar convert etmemiz gerekiyor.
+
+344
+01:05:48,072 --> 01:05:55,272
+Çünkü birbirinden alakasız iki değer binary yapıda değil mi? Anlaşıldı mı?
+
+345
+01:05:58,963 --> 01:06:01,103
+Aradaki fark umarım anlaşılmıştır.
+
+346
+01:06:02,723 --> 01:06:04,963
+Çünkü bunu mikro işlemcilerde de göreceksiniz.
+
+347
+01:06:05,103 --> 01:06:07,304
+BCD, Binary arasındaki farkı.
+
+348
+01:06:11,092 --> 01:06:24,512
+Evet, bu sayıcılardı arkadaşlar. Bir ara verelim 10 dakika, sonra belleklere geçeceğiz. Saatim benim 3, tam 3, 3 çeyrek geçen devam ediyoruz.
+
+349
+01:19:15,667 --> 01:19:21,887
+Evet arkadaşlar, başlayalım. En son bunları bir temizleyelim.
+
+350
+01:19:27,252 --> 01:19:52,172
+Şimdi saklayıcılar, sayıcılar, bunlar mikro işlemcinin çevre birimleriyle irtibatta çokça kullanıldığımız tabirler olacak. Bir de tabii belleklerimiz var. Yani hafıza birimlerimiz. Hafıza birimleri diye bir başlık açılarsak, bunun altında bazı birimleri, yani çok detaylıca işlemeyeceğiz ama belirtmekte fayda var.
+
+351
+01:19:54,323 --> 01:20:10,163
+Ne demektir? Random Access Memory, ROM, Read Only Memory.
+
+352
+01:20:12,043 --> 01:20:15,523
+ROM'ların normalde Read Only isminden de belli.
+
+353
+01:20:15,523 --> 01:20:21,183
+Ve sadece okunması için yazılamaz havza birimleri.
+
+354
+01:20:21,652 --> 01:20:38,231
+Ama bunun sonradan prom gibi, proromlanabilir rom, eprom gibi, erasable yani silinebilir, proromlanabilir rom veya ekare prom gibi versiyonları çıktı.
+
+355
+01:20:38,804 --> 01:20:42,564
+Bunları böyle rahatsızdan bahsedeceğiz.
+
+356
+01:20:42,804 --> 01:20:51,004
+Ama önceliğinde hafıza birimleri hepsinin içerisinde bulunduğu bu birimlerin nasıl bir yapıda olduğunu anlatacağız.
+
+357
+01:20:51,824 --> 01:20:56,783
+Öncelikle hafıza birimlerinin her birinde bir hafıza hücresi bulunur arkadaşlar.
+
+358
+01:20:56,783 --> 01:21:06,244
+Ve bu hafıza hücresinin içerisinde bizim, tabii bir hafıza biriminde birden fazla hafıza hücresi yer alır.
+
+359
+01:21:06,836 --> 01:21:13,735
+Böyle arda arda gösteririz genelde. Bunların her biri hafıza ücresi.
+
+360
+01:21:19,636 --> 01:21:29,036
+Ve dış kılıfını koyduğumuzda, şöyle bir kılıf koyduğumuzda, bizim için bu hafıza birimi olacak.
+
+361
+01:21:29,275 --> 01:21:36,516
+REM, RO, EPROM, PROM bunların hepsinde hafıza hücrelerinden oluşan bir yapım mevcut.
+
+362
+01:21:37,136 --> 01:21:42,396
+Her bir hafıza hücresinin arkadaşlar, unique bir adresi vardır.
+
+363
+01:21:43,123 --> 01:21:56,103
+Mesela burada 0000 dediğimiz bir adres olsun. 001 başka bir adres. 010 başka bir adres. En sonunda 111 diye bir adresimiz olsun.
+
+364
+01:21:56,283 --> 01:22:03,163
+Yani aslında burada 8 tane hafıza hücresinin bulunduğu bir hafıza verimi çizdik.
+
+365
+01:22:03,796 --> 01:22:26,896
+Bu tabirleri özellikle vurguluyorum. Çünkü bu tabirler yapıyı anlamamız için önemli. Hafıza hücrelerinden oluşan hafıza birimini oluşturuyor. Kaç tane? 8 tane hafıza hücresi var. Adresleri 0-0-0'dan 1-1-1-1'e kadar giden bir hafıza biriminden bahsediyoruz.
+
+366
+01:22:30,100 --> 01:22:46,220
+Belli tanımlanmış bit kabul eder. Örnek vermek gerekirse, her bir hafıza ücresi 8 bitten oluşsun diyelim. Ne demek bu? 8 tane bitin bir hafıza ücresine konmasını söylüyoruz.
+
+367
+01:22:46,220 --> 01:22:56,780
+1, 2, 3, 4, 5, 6, 7 fazla oluyor. 1, 2, 3, 4, 5, 6, 7. Şunu da böleceğim artık biraz orantısız oldu ama.
+
+368
+01:22:57,747 --> 01:23:08,747
+Yani 8 bitin yan yana gelerek oluşturduğu bir sözcük, word'ü bir hafıza bloğuna, hafıza hücresine koyduk.
+
+369
+01:23:09,867 --> 01:23:17,927
+Bu şu demek ayrıca, bütün diğer hafıza hücrelerinde de aynı bitsel tasarım kabul edilmiş demek oluyor.
+
+370
+01:23:17,927 --> 01:23:21,387
+Yani ben aslında bir sayı yazdığımda,
+
+371
+01:23:22,547 --> 01:23:30,747
+Bir adrese bir şey yazdığımda bu 8 bitten oluşan bir şey olacak bizim için bu mimariden.
+
+372
+01:23:36,659 --> 01:23:38,319
+Sonuna kadar sinir bir şey.
+
+373
+01:23:44,275 --> 01:24:04,216
+Bu araları adreslemeye uğraşmayalım diye yazmadım. Ama amaç 8 bitten oluşan, her bir hafıza hücresi 8 bitten oluşan ve 8 tane de hafıza hücresinin bulunduğu bir hafıza birimi yaptı.
+
+374
+01:24:05,492 --> 01:24:12,211
+Bu gösterilirken şöyle yazacağız. 8 çarpı 8 bit diyeceğiz.
+
+375
+01:24:13,152 --> 01:24:18,811
+X8 benim için kaç adet satırda hafıza bloğu olduğunu gösterecek.
+
+376
+01:24:19,811 --> 01:24:23,551
+Hafıza bloğu adedi.
+
+377
+01:24:24,551 --> 01:24:30,551
+İkinci gösterim ise benim her bir hafıza bloğunda kaç...
+
+378
+01:24:30,551 --> 01:24:31,952
+Ne zamanı?
+
+379
+01:24:32,756 --> 01:24:52,195
+Kaç bitlik veri tutulduğu, veya sözcük diyelim buraya artık, olduğunu gösterir. Yani bu 8x8 bitlik bir hafıza buluyorsa aslında bu 64 bitlik bir hafıza birimi diyeceğiz.
+
+380
+01:24:52,659 --> 01:25:02,659
+Şimdi gelelim gündelik içeri. Mesela 1 GB diyoruz. Gerçi onu şimdi yazamayız da. Daha basit. 1 MB'lik hafıza biriminden bahsederim.
+
+381
+01:25:04,039 --> 01:25:16,359
+1 MB diyoruz. Şimdi eğer ki ben bu diagramda şöyle bir kabulüm varsa, her bir hafıza bloğum benim 16 bit olsun. Değil mi?
+
+382
+01:25:20,115 --> 01:25:43,376
+Yani şurası, D ile göstereyim, D sıfır, data sıfır, data bir, geliyor, geliyor, geliyor, geliyor, geliyor. En sonunda da D on beşim var. On altı bittik, her bir hafıza blom on altı bittik olsun. Kaç satırım vardır dersek? Yani adresleme sıfır sıfır.
+
+383
+01:25:52,692 --> 01:25:59,851
+Adreslemem 0, 0, 0'dan başlasa, tabii biraz daha 0 var muhtemelen, şimdi hesaplamadım da bilmiyorum.
+
+384
+01:26:00,811 --> 01:26:05,871
+En son hafıza bloğum adresi nedir derselik, nasıl hesaplarız?
+
+385
+01:26:12,979 --> 01:26:18,279
+Yani bizim çarpılı gösterimde, şu gösterimde sağ tarafım 16 bitmiş.
+
+386
+01:26:19,859 --> 01:26:21,059
+Sol tarafım ne olur?
+
+387
+01:26:30,644 --> 01:26:31,703
+Burada mıyız arkadaşlar?
+
+388
+01:26:37,140 --> 01:26:37,920
+Buradayız hocam.
+
+389
+01:26:40,120 --> 01:26:41,400
+Anladık mı soruyu?
+
+390
+01:26:45,300 --> 01:26:46,220
+Anladık hocam.
+
+391
+01:26:55,060 --> 01:27:12,380
+Cevap var mı? 8 çarpı 250 olabilir mi hocam? Ama şimdi şöyle, 8'den kastın, ne dedik biz? İkincisini, ya şunu mu diyorsun? Hocam anladım o zaman, 250 diyorum hocam, 250.
+
+392
+01:27:12,380 --> 01:27:19,340
+250 çarpı 16 bit. 16 bit diyor.
+
+393
+01:27:21,171 --> 01:27:23,791
+Hmm, başka cevap var mı?
+
+394
+01:27:31,380 --> 01:27:34,639
+Pardon hocam, 230 olması lazım sanki. Pardon, karıştırdım ben biraz.
+
+395
+01:27:35,779 --> 01:27:36,739
+250 mu?
+
+396
+01:27:41,460 --> 01:27:52,159
+Hocam, 1 kilobyte, 1024 byte ediyor. 1 megabyte de 1024. O zaman 270, 20 ediyor. Pardon, karıştırdım ben. 270, 20 olması lazım.
+
+397
+01:27:53,619 --> 01:28:08,979
+Diyen var. Başka? Zaten iki kişiyiz. O zaman şöyle anlatalım. Şimdi şöyle bir tabir var. 8 bit neye eşittir?
+
+398
+01:28:09,844 --> 01:28:35,064
+Bir byte'a. Değil mi? Şimdi ben aslında burada 8x8 bit demem. Buraya bir byte yazarsam şu kısma. Aslında bu benim için 8 byte demek olacak. Değil mi? Yani 64 bit 8 byte demek. Şimdi şuraya bakalım. Bir milyon byte'dan bahsedelim.
+
+399
+01:28:35,699 --> 01:28:53,799
+Ama 8 satır benim için 1 byte'tı. Ama buradaki örnekte 16 bitlik bir yapı var. Yani 2 byte var bir satırda. O zaman şunu şöyle yazamaz mıyım? 512 çarpı 2 byte. 1 megabyte'ı eder mi?
+
+400
+01:28:57,555 --> 01:28:58,675
+Verir mi bu bunu?
+
+401
+01:28:59,375 --> 01:29:00,795
+Bir kilobayt verir hocam.
+
+402
+01:29:02,815 --> 01:29:04,555
+Buraya K yazacağım bir de.
+
+403
+01:29:06,355 --> 01:29:07,195
+Şu an verir mi?
+
+404
+01:29:07,915 --> 01:29:08,615
+Verir hocam.
+
+405
+01:29:10,095 --> 01:29:17,575
+Yani 512K satır, her satırda iki bayt varsa benim için bir megabaytı oluşturuyor. Doğru mu?
+
+406
+01:29:18,956 --> 01:29:19,815
+Doğru hocam.
+
+407
+01:29:20,515 --> 01:29:25,295
+O zaman ben bunu çözümleyeceğim. Şimdi çözümlemeden kastımız da şu esasında.
+
+408
+01:29:26,515 --> 01:29:39,615
+Biz adresin sıfırdan başladığını biliyoruz ama kaça gideceğini bilmiyoruz. Kaça gideceğini, yani maksimum olması gereken ise 1-1-1-1 olması değil mi? Yani bütün adresinin 1-1 olması.
+
+409
+01:29:39,615 --> 01:29:50,636
+Şimdi 512K normalde benim için 1-1-24 tane, yani nasıl anlatalım? Şöyle anlatalım.
+
+410
+01:29:51,764 --> 01:30:17,203
+512K'ya yakın sevilmem için benim kaç tane bir vermem lazım? 2 üzeri 10, bir kilo demek değil mi? Yani 2 üzeri 9 tane bir vermem lazım. Doğru mu? Yani 2 üzeri 10 benim için bir K'yı gösteriyor. Pardon bu 512K'ymış. Şöyle edeceğiz o zaman. 2 üzeri 10, bir K'yı gösteriyor değil mi? Çarpı, burası bir K. Doğru mu?
+
+411
+01:30:18,260 --> 01:30:39,120
+512 çarpı 2 üzeri 10 yapmam lazım. 512 2 üzeri kaç? 2 üzeri 9. 9. Yani aslında 2 üzeri 19 diyoruz değil mi? Burası 2 üzeri 19 çıktı. Yani 2 üzeri 20 değil.
+
+412
+01:30:46,068 --> 01:31:11,888
+Bu entegre, yani bu yapının şeyi, kaç tane 1 olacakmış o zaman? 19 tane, tabii hepsini yapamayacağım şimdi. 8, 12, gidiyor. Yani burası adres dersek, adres 19 ile adres 0, burası da adres 0 ile adres 18 mi oluyor? Pardon, 18.
+
+413
+01:31:13,524 --> 01:31:25,064
+Size kadar giden bir adresleme blondan bahsedeceğim. Değil mi? Burası anlaşıldı mı? Evet anlaşıldı hocam. Tamam.
+
+414
+01:31:26,355 --> 01:31:33,476
+Yani bir özellikleyecek olursak, havza birimlerinde, havza bloklarında oluşan bir yapı mevcut.
+
+415
+01:31:33,716 --> 01:31:43,775
+Havza blokları da aslında kendi içerisinde bit barındıran ama kaç bit barındırdığı o havza blokunun özelliğinden anlaşılan bir mimarı.
+
+416
+01:31:44,235 --> 01:31:49,855
+Mesela 3 bitlik bir havza blok olsaydı bu, benim için 8 bitliği çarpı 3 olacaktı.
+
+417
+01:31:50,435 --> 01:31:51,716
+Yani 3 tane bitim var.
+
+418
+01:31:52,127 --> 01:32:16,368
+Derdim. Yani üç tane yan yana bitten bahsediyoruz. Genelde şu an işlemciler 32 bit, 64 bite kadar destekliyor. Şimdi burada bir adreslemeyi nasıl yapıyor sorusu var. Yani biz burada tamam adresleri yazdık. Buraya da işte 19 bit şeyin, evet 19 bitle adresleme yolumuz var.
+
+419
+01:32:18,484 --> 01:32:20,704
+Şöyle bir entegremci olsun şurada.
+
+420
+01:32:22,304 --> 01:32:23,904
+Şu yukarısı için konuşuyorum.
+
+421
+01:32:24,664 --> 01:32:26,543
+Buradan yedi tane bacak çıkıyor.
+
+422
+01:32:29,924 --> 01:32:32,604
+A0, A7.
+
+423
+01:32:33,344 --> 01:32:35,804
+Yani şu sekiz tanesine birden bağlıyorum.
+
+424
+01:32:42,452 --> 01:32:45,052
+A0 deneyelim de yanlış anlaşılır.
+
+425
+01:32:54,707 --> 01:32:55,747
+En sonundakini bağlı.
+
+426
+01:32:56,407 --> 01:33:05,827
+Şimdi, biz mikro işlemcide bir adresi enable etmek, oraya yazma veya okuma yapmamızı olanak sağlayacak.
+
+427
+01:33:05,827 --> 01:33:10,287
+Ve bu adreslemeyi biz decoder ile sağlayacağız.
+
+428
+01:33:11,155 --> 01:33:33,435
+Dekoderleri hatırlarsanız, 3x8'den bir örnek verir. Neydi aslında? Bizim burada 3 bit olarak 0, 0, 0 verdiğimde sadece buranın aktif olduğu ve gidip bu adresi enable ettiği için yazma veya okuma yapacaksak mikro işlemcide sadece buradan okuma, yani şurada read-write'larımız olsun misal, read.
+
+429
+01:33:34,707 --> 01:33:41,447
+Write sinyalleri var. Read yaptım, read sinyali gönderdim ve buradan da kablolar çıkıyor.
+
+430
+01:33:43,927 --> 01:33:52,688
+Data yolu. Bu da mikro işlemciye gidiyor. 8 bit olduğu için şöyle bağladığımı düşün hepsine.
+
+431
+01:33:53,688 --> 01:33:57,807
+Şimdi ilk başta adresle ben 00'ı seçtim.
+
+432
+01:33:58,323 --> 01:34:05,384
+Ve bu blok seçildi. Read sinyalinin görünenince buradaki veri data yolundan mikro işlemciye gitti.
+
+433
+01:34:08,283 --> 01:34:13,067
+Genel olarak communication iletişim bu şekilde yürüyor. Bir decoderle...
+
+434
+01:34:13,108 --> 01:34:33,368
+3 bit ile 8 gözü adreslememi sağlıyor. Burada da aynı şekilde 19 tane, şuradaki 19 tane girişle 2 üzeri 19, yani 512 bin tane satırı enable, disable ederek biliyorsunuz ki decoder her seferinde bir tane çıkışı enable ediyor.
+
+435
+01:34:33,988 --> 01:34:38,307
+Bir tane çıkışı enable ederek ben ilgili göze ulaşmış oluyorum.
+
+436
+01:34:39,283 --> 01:35:02,384
+Decoder'in hafıza birimlerinde kullanılması arkadaşlar, adresi çözümlemek için. Yani ulaşmak istediğimiz adresin daha az bit ile ki biz buna adres bas diyeceğiz, adres bas üzerinden göndererek o ilgili adrese ben yazma veya okuma işlemini gerçekleştirmemi sağlıyor.
+
+437
+01:35:03,384 --> 01:35:05,363
+Bu bant anlaşıldı mı?
+
+438
+01:35:08,884 --> 01:35:11,123
+Hocam, bir daha tekrar ederseniz güzel olur.
+
+439
+01:35:13,123 --> 01:35:14,943
+O zaman şöyle anlatalım.
+
+440
+01:35:15,644 --> 01:35:22,304
+Şimdi biz normalde hafıza bloklarımız var dedik ve her bir hafıza bloğunun bir unique adresi var.
+
+441
+01:35:22,304 --> 01:35:29,384
+Şimdi biz bu unique adresi mikro işlemci tarafından seçme yapıp,
+
+442
+01:35:29,811 --> 01:35:38,471
+Sonra hangi adrese bir şey yazacaksak veya hangi adresten bir veri okuyacaksak sadece o adresi enable etmemiz lazım.
+
+443
+01:35:39,771 --> 01:35:47,591
+Diğerlerine ulaşmamamız lazım. Çünkü aslında bu gözeneklerin arka planında hepsi birbirine bağlı bir kablo var.
+
+444
+01:35:48,912 --> 01:35:54,011
+Tamam mı? Yani seçtiğim pindeki veriyi okumam lazım, veri yoluna koymam lazım.
+
+445
+01:35:54,676 --> 01:36:00,016
+Diğer pinler, diğer gözeneklerdeki verilerin bu veri yoluna girmemesi lazım.
+
+446
+01:36:01,695 --> 01:36:08,036
+Yani bir kartezyen mantığıyla düşünebiliriz veya şöyle bir çizim yapayım daha net anlaşılacak.
+
+447
+01:36:14,100 --> 01:36:15,884
+Biraz uzun süreçin demesi ama...
+
+448
+01:36:38,484 --> 01:36:43,984
+Micro-HTMJ diyelim buna biz direkt. Şunu çizemedim, tam şöyle mikronun mevsim.
+
+449
+01:38:20,756 --> 01:38:21,756
+bir dörtlendirme şehrin.
+
+450
+01:38:47,731 --> 01:38:55,771
+Öncelikle sorun bu. Sorun şu. Bu kaç havza birimi, ne kadarlık bir havza birimi?
+
+451
+01:39:00,724 --> 01:39:01,984
+Bunlar flip-flop.
+
+452
+01:39:07,572 --> 01:39:12,971
+16 tane flip-flop kullanılmış, hafıza birimi ne kadarlık bir hafıza birimidir?
+
+453
+01:39:15,231 --> 01:39:16,712
+12 tane yok mu hocam?
+
+454
+01:39:17,692 --> 01:39:20,592
+Pardon 12'miş, yani 4'ü yazmamışız.
+
+455
+01:39:21,412 --> 01:39:25,072
+Tamam olur, 12 tane flip-flop kullanılmış, ne kadar bir hafıza birimi.
+
+456
+01:39:25,152 --> 01:39:32,532
+Böyle bir hafıza birimi yok zaten de hani göstermek için çok böyle sembolik bir hafıza birimi oluşturduğumuzu düşünelim.
+
+457
+01:39:32,992 --> 01:39:40,352
+Ne kadarlık bir hafıza verimidir? Yani kaç bitlik veya balitlik ne tutuyorsa işte ne kadar veriyi saklayabilir?
+
+458
+01:39:41,432 --> 01:39:42,932
+4 çarpı 3'lük duracak.
+
+459
+01:39:43,672 --> 01:39:46,131
+Evet, 12 bitlik bir hafıza verimi.
+
+460
+01:39:47,172 --> 01:39:50,432
+Neden? Çünkü biz hep şunu diyoruz, bir flip-flop, bir bit saklayabilir.
+
+461
+01:39:51,231 --> 01:39:58,231
+Şimdi aslında benim deminki, diagramda çizdiğim blok yapısında aslında benim şöyle bir yapım var.
+
+462
+01:39:59,231 --> 01:39:59,992
+4 mü satıldım?
+
+463
+01:40:02,292 --> 01:40:16,192
+Şöyle bir yapının iç yapısını çizdim ben. Burası 00, 01, 10, 11 adresleri bulunan ve 3 tane bit alan her bir bloğun bir yapısı var. İç yapısı da bu.
+
+464
+01:40:18,332 --> 01:40:28,792
+Şimdi iç yapısına baktığımızda burası mikro işlemci. Read-Write'sini bağlamadım ama şöyle bağlayalım. Her bir birime giriyor. Böyle düşünün yani.
+
+465
+01:40:36,564 --> 01:41:03,184
+Şimdi, ben şöyle bir veriyi yazdım buraya. Birinin oğlu göze. Şimdi ben bir okuma yapmak istediğimde mikro işlem bir şunu yapacağım. Bütün flip-floplara read sinyali gönderiyor. Ama nereden okuyacağını gönderebilmesi için, yani belirlemesi için benim için 0-1'den okuması lazım. Şuraya adres yolum var.
+
+466
+01:41:06,771 --> 01:41:09,092
+Buraya A0 ve A1 diyelim.
+
+467
+01:41:09,832 --> 01:41:11,512
+01 verisini gönderiyor.
+
+468
+01:41:11,992 --> 01:41:14,572
+Dekoder 01'den neyi seçecek?
+
+469
+01:41:16,192 --> 01:41:17,311
+Birinci satır değil mi?
+
+470
+01:41:17,572 --> 01:41:18,451
+Dekoderi biliyorsunuz.
+
+471
+01:41:18,492 --> 01:41:20,492
+Hatırlıyor muyuz dekoder nasıl çalışıyor?
+
+472
+01:41:21,112 --> 01:41:26,931
+Buraya ben A0, A1 dersem, buraya 01 verisi, gerçi ters oldu herhalde.
+
+473
+01:41:27,252 --> 01:41:29,512
+Şunu A1 diyelim o zaman, şunu A0 diyelim.
+
+474
+01:41:31,060 --> 01:41:52,720
+0, 1 verisi gönderdiğinde sadece burası aktif olacak, diğer taraflar çıktı üretmeyecek, değil mi? Sadece burası aktif olduğu için bu satır güzergahındaki 3 tane flip-flop'un verisi ortak veri yoluna aktarılır. Şurası veri yollarıydı. Bunlara da database diyelim.
+
+475
+01:41:54,800 --> 01:41:57,320
+D0, D1, D2 diyelim.
+
+476
+01:41:58,355 --> 01:42:10,775
+Yani D2'de, D1'de ve D0'da bu 3 tane flip-flop'un seçildiği satır olduğu için verisi veri yoluna geçecek ve veri yolu mikro işlemciye bu yeri gönderecek.
+
+477
+01:42:11,376 --> 01:42:23,956
+Ama veri'yi ben 0-1'i seçmesem başka bir yeri seçseydim, sadece o satır enable olacağı, diğer satırlar disable olacağı için sadece o satırın verileri benim veri yoluma geçecekti.
+
+478
+01:42:24,064 --> 01:42:37,423
+Bu ortak veri yolu. Bütün flip-flopların hücre bazında şurası misal D2'nin veri yolu, burası D1'in veri yolu, burası da D0'ın veri yolu.
+
+479
+01:42:38,244 --> 01:42:46,804
+Öyle olunca benim satırla, adres ile bunu indislemem, enable etmem lazım. Hangi isini çekmek istiyorsam.
+
+480
+01:42:48,484 --> 01:42:50,884
+Anlaşıldı mı adresleme kısmı?
+
+481
+01:42:52,051 --> 01:42:53,091
+Anlaşıldı hocam.
+
+482
+01:42:53,591 --> 01:42:58,511
+Tamam, adresi seçtikten sonra, şimdi adres yorum, mikro işlemcinin iki gücü vardır.
+
+483
+01:42:58,752 --> 01:43:12,112
+Bir, register boyutu, ki register boyutu, şu an bizim mikro işlemcimiz 3 bitlik bir register'a sahip ve 3 bitlik register olduğu için de hafıza birimi 3 bitlik.
+
+484
+01:43:12,771 --> 01:43:16,072
+Çünkü hepsini tek seferde bir register'a atayabileceğim.
+
+485
+01:43:17,140 --> 01:43:29,060
+80-86, 16 bitlik bir register. Ve 16 bitlik bir register, benim için, tabii o da bir exceptional durum var ama 8 bit içinde çalışır, 16 bit içinde çalışır.
+
+486
+01:43:29,060 --> 01:43:38,060
+Onu MicroEachem dersinde detaylıca göreceğiz. Ama registerları direkt yazabilmem için hafıza birimindeki her bir bloğun...
+
+487
+01:43:38,547 --> 01:43:47,728
+Kaç tane flip-flop içermesi? Register ile alakalı. Registerdaki sayı, bit sayısıyla alakalı. Bu veri yolunun genişliğini oluşturacak.
+
+488
+01:43:48,307 --> 01:43:54,768
+Mesela 16 bitlik bir register varsa 16 tane veri yolu vardır. Neden 16 tane veri yolu vardır?
+
+489
+01:43:55,268 --> 01:44:04,728
+Çünkü hafıza biriminde tek bir seferde 16 veriyi o rejistere yazayım diye. Tamam mı?
+
+490
+01:44:05,844 --> 01:44:06,844
+Veri yolu,
+
+491
+01:44:09,523 --> 01:44:10,203
+Hafıza,
+
+492
+01:44:12,283 --> 01:44:12,963
+Biriminin,
+
+493
+01:44:16,595 --> 01:44:27,515
+Blok içi tutabileceği maksimum genişliği belirtir.
+
+494
+01:44:31,220 --> 01:44:45,840
+16 bitlik bir veri yoluna sahip mikro işlemci, tek seferde seçtiği adresten 16 bitlik veriyi okuyabilir. Bu da 16 nafili flip-flop'un yan yana gelmesi demek. O hafıza biriminde.
+
+495
+01:44:46,868 --> 01:45:08,408
+Adres yolu ise bu hafıza biriminin kaç satır olacağını belirtir. Ve bu da bir mikro işlemcinin gücünü gösterir. 80-86 20 bit adres yoluna sahip. Yani 20 tane adres yolu var. E decoder 250 tane satırı intisleyebilirim ben diyor. Bu da bir güçtür.
+
+496
+01:45:12,404 --> 01:45:21,084
+Dörtler de herhalde, veya alt, kaçtı ya, pentium dörtler mi sanki?
+
+497
+01:45:22,864 --> 01:45:33,844
+Tam tabloyu hatırlamıyorum ama, 2 üzeri 21, 2 üzeri 22, 2 üzeri 30, 2 üzeri 30, 1 GB'lık, 1 milyar tane satırı indisleyebilir.
+
+498
+01:45:33,844 --> 01:45:39,784
+Yani 30 tane var, 2 üzeri 30'dan 1 milyar satırı enable edebiliyor demek oluyor.
+
+499
+01:45:40,692 --> 01:45:56,992
+Bizim örnekte misal, 2 bitlik bir adres yolu var bu mikro işlemcinin. Yani 4 satırı adres diyebiliyor. Ve ben yeni bir havıza birimi taktım buraya, misal 100 satır. Hiçbir önemi yok. Taktığım gözükmez mikro işlemci tarafından.
+
+500
+01:45:57,363 --> 01:46:22,123
+Hemen gelelim, bilindik, gündelik bir durum. Eskiden 32 bit işletim sistemleri vardı, sonra 64 bit çıktı. Neden 64 bit çıktı? Çünkü hafıza birimlerinin satır sayısı arttı ve 32 bit olan 4 GB ile limitlenmedi. Onun için 64 bit işletim sistemleri çıktı ki daha uzun, uzamış olan hafıza birimlerini indisleyebilirim.
+
+501
+01:46:23,028 --> 01:46:31,747
+Misal 32 bitki işletim sistemine sahip bir bilgisayara 16 GB yende taksanız, listeyebileceği yer sadece 4 GB'dir.
+
+502
+01:46:33,108 --> 01:46:38,948
+Diğer adreslerin önemi yok. Çünkü o onun kapasitesi dışında kalıyor.
+
+503
+01:46:40,148 --> 01:46:43,507
+Böyle düşünebiliriz yani. O biraz software mantığı var ama orada.
+
+504
+01:46:43,507 --> 01:46:47,436
+Yani hafıza biriminin satır sayısı...
+
+505
+01:46:47,444 --> 01:46:52,884
+Benim için adres, mikro işlemcinin adresleyebileceği adreslerimi edirtir.
+
+506
+01:46:54,084 --> 01:47:02,424
+Sutun sayısı ise, yani veri bit genişliği ise, blokların veri biti genişliği ise, benim için data bus genişliğini verir.
+
+507
+01:47:04,344 --> 01:47:05,084
+Anlaşıldı mı?
+
+508
+01:47:07,384 --> 01:47:08,564
+Anlaşıldı hocam.
+
+509
+01:47:10,384 --> 01:47:11,064
+Tamamdır.
+
+510
+01:47:11,904 --> 01:47:12,444
+O zaman...
+
+511
+01:47:14,228 --> 01:47:17,828
+Şimdi bakalım başka neyimiz var anlatılmak gereken.
+
+512
+01:47:26,707 --> 01:47:39,967
+REM, ROM, aralarındaki farklardan bahsedelim. REM dediğimiz şey ikiye ayrılıyor arkadaşlar kendi içerisinde. Bir statik mimaride tasarlananlar, bir de dinamik mimaride tasarlananlar.
+
+513
+01:47:40,527 --> 01:47:46,007
+Statik mimaride tasarlananlar, flip-flop, direkt flip-flop mimarisi oluyor.
+
+514
+01:47:46,579 --> 01:47:49,799
+Yani bir bitlik veriyi bir flip-flopta tasarlıyoruz.
+
+515
+01:47:50,059 --> 01:47:53,039
+Ve flip-flopun içerisinde de hatırlarsanız kapılar var.
+
+516
+01:47:53,039 --> 01:47:56,479
+Hatta anlatırken flip-flop nasıl bir bitlik veriyi tutuyor?
+
+517
+01:47:56,619 --> 01:48:06,699
+Aslında kapıların gecikmelerinin bir sonraki kapının input'u olması ve veriyi o arada sıkıştırması, döngü içerisinde almasıyla saplıyor demiştik.
+
+518
+01:48:07,179 --> 01:48:09,000
+Yani flip-flop mantığı var statikte.
+
+519
+01:48:09,519 --> 01:48:12,279
+Dinamikli ise arkadaşlar kondansatör.
+
+520
+01:48:13,268 --> 01:48:29,087
+Artı transistör mimarileri var. Zaten flip-flop da transistör mimarisi. Burada veriyi tamamen kondansatörü hatırlarsanız elektronik dersinden, gerçi siz elektronik bir dahaki dönem alacaksınız, pardon.
+
+521
+01:48:29,647 --> 01:48:34,327
+Kondansatör şöyle bir mimarinde, elektrik verdikçe şarj olan,
+
+522
+01:48:34,671 --> 01:48:41,531
+Elektriği kesince deşarza, yani üzerindeki yükü boşaltmaya eğilimli olan bir materyal devre elemanı.
+
+523
+01:48:41,991 --> 01:48:46,551
+Şimdi kondansatlara bir veri yüklemek aslında şarjı tutmak demek.
+
+524
+01:48:47,071 --> 01:48:49,091
+Veriyi silmekle deşarz etmek demek.
+
+525
+01:48:49,591 --> 01:48:54,251
+Yani burada bir elektriksel yüklenme eğilimine göre veri tutuluyor.
+
+526
+01:48:55,031 --> 01:48:58,951
+Ve daha yavaş bir işlem sürüyor bu veriyi tutmak.
+
+527
+01:48:59,051 --> 01:49:00,891
+Ama flip-floplar çok daha hızlı.
+
+528
+01:49:02,671 --> 01:49:23,011
+Statik RAM'ler dinamik RAM'lerden çok çok daha hızlıdır. Ama statik RAM'ler flip-flopların adeti çok fazla olması gerekiyor. Yani işte 8 bit için bir satırda 8 tane flip-flop kullanmak gerekiyor. Böyle bir mimariyi oluşturmak yüksek boyutlular için, 1 GB RAM için çok zor.
+
+529
+01:49:23,475 --> 01:49:38,495
+Bunun yerine kondansatör mimarlileri daha çok veriyi, daha minimal alanda, bölgede tutuyorlar. Bu yüzden daha maliyetleri düşük dinamik remlerin ama hızları daha yavaş statikten.
+
+530
+01:49:39,635 --> 01:49:45,695
+Statiğe en önemli örnek keş bellekler.
+
+531
+01:49:45,695 --> 01:49:48,355
+Niye böyle oluyor keş bellekler?
+
+532
+01:49:49,332 --> 01:50:02,712
+Cache bellekler mikro işlemcinin içerisinde yer alan, yani CPU'nun merkezi işlem biriminin içerisinde bulunan RAM'e gitmeden, yani bilhissarda biliyorsunuz RAM mimarisi dışında.
+
+533
+01:50:03,152 --> 01:50:11,832
+Belki kasayı açtınız, orada fanın yanında, sağında veya biraz daha uzağında hemen bir RAM mimarisi var.
+
+534
+01:50:12,372 --> 01:50:20,431
+Ama statik RAM'ler, yani cache bellekler direkt CPU'nun, aldığımız o işlemcinin içerisinde.
+
+535
+01:50:21,011 --> 01:50:47,032
+Öyle olunca cache bellekler daha az boyutlu oluyor. 8 MB, 32 MB falan oluyor cache bellekler. Çok daha hızlı. Mikro işlemci, yani işlem birimi ilk başta statiğe bakıyor. Statikte bulamazsa dinamiğe gider. Dinamik bildiğimiz main memory yapılarını içeriyor. Kondansiyon ve transistör tabanlı hafıza bilimleri. Şu an benim burada anlattığım tabii bir statik remb imarisi.
+
+536
+01:50:47,520 --> 01:50:56,080
+Mikro işlemci de çünkü birebir de bu ilişkili. Burada bulamadığı veriyi gidip dinamikte arıyor. Yani normal mail memori de arıyor diyeceğiz.
+
+537
+01:50:56,440 --> 01:51:05,920
+RAN-Dokları böyle. ROM mimarisi ise sinemez mimariler. Bunlar fabrikadan gömülü olarak gelen mimariler.
+
+538
+01:51:06,340 --> 01:51:13,380
+Yani işte içerisine bir veri geldiğinde işte REIT olabilir ama RIT sinyalinin bunları değiştiremeyeceği mimariler.
+
+539
+01:51:14,292 --> 01:51:37,591
+E-Prom, programlanabilen, bir kere, iki kere programlanabilen mimarlar, flash-romlar çıktı, yüksek seviyede programlanabilen mimarlar, BIOS'lar, şu an güncel BIOS'lar bu şekilde üretiliyor gibi versiyonları var. Burada önemli olan bu hafıza bloğu birimini iyi algılamış olmanız.
+
+540
+01:51:38,899 --> 01:51:43,039
+Bu çünkü mimari, mikro işlemcilerde çokça karşınıza çıkacak.
+
+541
+01:51:44,100 --> 01:51:51,819
+Havızanın nasıl, yani o bilimlerin, registerların içerisindeki verilerin nasıl tutulduğu bu şekilde anlatmış olduk.
+
+542
+01:51:54,279 --> 01:51:55,980
+Sorunuz var mı arkadaşlar?
+
+543
+01:52:03,220 --> 01:52:03,920
+Yok mu?
+
+544
+01:52:05,480 --> 01:52:06,540
+Yok hocam.
+
+545
+01:52:07,740 --> 01:52:08,740
+Anlaşıldı mı peki?
+
+546
+01:52:10,420 --> 01:52:11,020
+Evet hocam.
+
+547
+01:52:12,280 --> 01:52:12,540
+Tamam.
+
+548
+01:52:13,980 --> 01:52:21,860
+Anlaşıldıysa arkadaşlar, açıkçası başka da bu haftalık anlatacağımız bir şey yok.
+
+549
+01:52:22,780 --> 01:52:25,160
+Genel olarak bunlardan bahsedecektik.
+
+550
+01:52:28,040 --> 01:52:28,800
+Evet.
+
+551
+01:52:29,395 --> 01:52:51,975
+Genel olarak, bugün biliyorsunuz son dersimiz, yanlış bilmiyorsam, değil mi? Son ders olması lazım. Evet, haftaya finaller başlayacak. Sizin ortalamanız, yani grup 3 bu videoyu belki sonra izler, belki izlemez bilmiyorum ama arkadaşlarınız, ortalaması genel olarak bütün grup 1 ve grup 2 arasında en düşük ortalamaya sahip.
+
+552
+01:52:52,275 --> 01:52:59,976
+devamla alakalı bir sıkıntı olmaması aslında size belki kötü tepti. Yani çoğu kişi derse katılmadı, katılmıyor daha öyle.
+
+553
+01:53:01,996 --> 01:53:08,016
+Umarım finallerde daha sıkı çalışırsınız. Genel olarak bu videoyu sonradan izleyecekleri de söylüyorum.
+
+554
+01:53:09,176 --> 01:53:15,516
+Finallerde daha çok çalışmanız gerekiyor grup güç olarak. Lütfen biraz daha dikkat edelim.
+
+555
+01:53:16,051 --> 01:53:25,371
+Son dersimizde arkadaşlar, hepimize başarılar diliyorum. Final hangi gün olacağı daha belli değil. Final günü görüşmek dileğiyle diyorum.
+
+556
+01:53:26,811 --> 01:53:28,231
+Teşekkürler hocam, iyi günler.
+
+557
+01:53:28,591 --> 01:53:29,711
+Teşekkürler, iyi günler hocam.
+
+558
+01:53:29,871 --> 01:53:31,511
+İyi günler, iyi çalışmalar.

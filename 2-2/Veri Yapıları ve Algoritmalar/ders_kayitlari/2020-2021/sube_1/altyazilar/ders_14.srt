@@ -1,0 +1,1907 @@
+1
+00:00:28,980 --> 00:00:30,980
+Merhaba arkadaşlar.
+
+2
+00:00:30,980 --> 00:00:35,980
+Biliyorsunuz bugün ödev günümüz.
+
+3
+00:00:35,980 --> 00:00:38,980
+Bugün saat 1'de başlayacak.
+
+4
+00:00:38,980 --> 00:00:44,980
+Yarın akşam 12'ye kadar teslim edebileceğiniz bir ödev hazırladık.
+
+5
+00:00:44,980 --> 00:00:51,980
+Onu 1 saat 1'den itibaren görebilir olacaksınız.
+
+6
+00:00:51,980 --> 00:00:58,879
+Şimdi önce şeyle ilgili, quizle ilgili bir iki tane bugün bakar istemiştik çünkü.
+
+7
+00:00:59,779 --> 00:01:03,500
+En çok hata yapılan sorularla ilgili bir beş dakika açıklama yapacağım.
+
+8
+00:01:03,599 --> 00:01:05,660
+Arkasına ödevle ilgili açıklama yapacağım.
+
+9
+00:01:06,700 --> 00:01:15,439
+Şey olana kadar, en azından kişilerde toplanana kadar quizle ilgili olan kısmı bitiririm.
+
+10
+00:01:16,799 --> 00:01:18,399
+Ekranımı görüyor musunuz şu anda?
+
+11
+00:01:18,399 --> 00:01:21,699
+Evet hocam.
+
+12
+00:01:22,699 --> 00:01:23,939
+Tamam.
+
+13
+00:01:25,199 --> 00:01:32,739
+Şimdi quizde en çok hata yapılan sorulardan birisi iki casus problemiydi.
+
+14
+00:01:34,700 --> 00:01:45,859
+Orada işte stack kullanılarak, siteye push ve pop işlemleri yapılarak bir şifreli şey, tekst elde ediliyordu.
+
+15
+00:01:45,859 --> 00:01:52,059
+oradaki en çok hata pop sayısında kaç defa pop yapılacağıyla ilgiliydi.
+
+16
+00:01:53,059 --> 00:01:55,419
+Bunu da pek çok öğrenci yanlış yapmış.
+
+17
+00:01:56,359 --> 00:02:04,099
+Pop sayısı şöyle bastığımız kadar elemanı en sonunda pop etmeniz gerekir ki şifreyi oluşturun.
+
+18
+00:02:04,099 --> 00:02:09,359
+Bu yüzden orada 18 defa push etme işlemi oluyordu.
+
+19
+00:02:10,539 --> 00:02:15,700
+Aynı şekilde 18 defa da pop etme işlemi olması gerekiyor.
+
+20
+00:02:15,859 --> 00:02:24,959
+doğru cevabın öyle olması gerekiyordu o soruda. Soruları siz görebiliyorsunuz değil mi aslında hala?
+
+21
+00:02:28,500 --> 00:02:29,720
+Görebiliyor musunuz?
+
+22
+00:02:30,559 --> 00:02:31,500
+Bakalım bir...
+
+23
+00:02:31,500 --> 00:02:36,440
+Neyse ben yazayım buraya. Şöyle bir şeydi.
+
+24
+00:02:37,099 --> 00:02:44,339
+A, B, C, D, S, D, Vakit kaybetmemek için şey yapmadım da çünkü bu basit bir hata aslında.
+
+25
+00:02:45,119 --> 00:02:48,420
+O yüzden yazmaya gerek duymadım. Şöyle bir kod vardı.
+
+26
+00:02:48,420 --> 00:02:54,939
+K, 0, L, M, N, 3, O, P, R, S, 1.
+
+27
+00:02:54,939 --> 00:03:00,919
+Şimdi A'yı, B'yi, C'yi şöyle yapayım yetişmeyecek orası.
+
+28
+00:03:02,959 --> 00:03:07,939
+A, B, C, D, E'yi siteye yerleştirdiniz.
+
+29
+00:03:08,479 --> 00:03:12,939
+İki geldiğinde üstten iki tanesini stackten çıkartıyorsunuz.
+
+30
+00:03:13,959 --> 00:03:18,159
+Şu anda siteyiniz devam, yani çok uzun anlatmayacağım B, C şeklinde.
+
+31
+00:03:18,159 --> 00:03:27,819
+ondan sonra işte F'yi, G'yi, H'yi siteye yerleştirdiniz. Bir geldiğinde H'yi stackten çıkartıyorsunuz.
+
+32
+00:03:27,819 --> 00:03:39,160
+Şimdi çoğunluk şeyi hesaplamış. Bu kaç defa sayılar geldiğinde kaç defa stackten pop yaptığımızı hesaplamış.
+
+33
+00:03:39,159 --> 00:03:57,939
+ama orada aslında şey olması gerekiyordu. Normalde işte diyelim ki stackte en son ABC kaldıysa bunları da tekste eklemeniz gerekeceği için bunların da yani stackte en son kalanların da değil mi pop edilmesi gerekiyor.
+
+34
+00:03:57,939 --> 00:04:00,499
+Bunu çok az kişi fark etmiş.
+
+35
+00:04:01,919 --> 00:04:04,939
+Yani biz bunu aslında yanıltmaca olsun diye sormamıştık.
+
+36
+00:04:05,039 --> 00:04:15,359
+Doğal olarak bunun yapacağımızı düşünmüştük ama pek çok kişi bu hani işte sanıyorum şöyle yapmışlar.
+
+37
+00:04:15,359 --> 00:04:21,859
+2, 3, 6, 7 pop işlemine 7 defa pop yapılıyor gibi yazmışlar çoğunluk.
+
+38
+00:04:21,860 --> 00:04:30,379
+halbuki kalan stack de ne kaldıysa kodu oluşturmak için mecbursunuz onları da kop etmeniz gerekiyor.
+
+39
+00:04:31,180 --> 00:04:33,080
+Bu sorudaki genel hata buydu.
+
+40
+00:04:34,800 --> 00:04:36,619
+Sormak isteniniz bir şey var mı bununla ilgili?
+
+41
+00:04:41,235 --> 00:05:08,496
+devam ediyorum o zaman. Sorunuz olursa lütfen sorun. Bir doğru yanlış sorusu vardı. Orada çeşitli şeyleri, ışıkları yanlış yapanlar vardı. Yine bunda da tamamını doğru yapan kişi sayısı çok azdı. Şimdi onu söyleyeceğim cevaplarını. Mesela birincisi, derleyiciler bazı işlemler için ağaç yapısı kullanabilirler. Doğru mu, yanlış mı?
+
+42
+00:05:14,675 --> 00:05:22,275
+Evet, derleyiciler bazı işlemler için yığın yapısı kullanabilirler. Doğru mu, yanlış mı?
+
+43
+00:05:22,855 --> 00:05:23,255
+Doğru.
+
+44
+00:05:24,035 --> 00:05:29,556
+Bu da doğru, evet. Dosya sistemleri ikili ağaç yapısından faydalanır. Bu doğru mu?
+
+45
+00:05:30,975 --> 00:05:31,655
+Yanlış.
+
+46
+00:05:31,655 --> 00:05:43,275
+Evet, bu yanlış. Ağaç yapısı kullanıyorlar. Evet, fakat ikili ağaç değil. Double link listte yer alan herhangi bir elemanı silmek için silinecek elemanın adres bilgisi yeterlidir. Doğru mu?
+
+47
+00:05:44,675 --> 00:05:47,635
+Doğru.
+
+48
+00:05:47,635 --> 00:05:48,295
+Neden?
+
+49
+00:05:48,536 --> 00:05:58,635
+Çünkü bu double olduğu için zaten kendisinden öncekinin adresini de görebiliyorsunuz.
+
+50
+00:05:58,635 --> 00:06:03,016
+O yüzden öncesindeki adresi tutmamıza gerek yok.
+
+51
+00:06:03,155 --> 00:06:06,856
+Konuşmuştuk ya normalde double linkler istenin avantajı ne?
+
+52
+00:06:06,975 --> 00:06:11,995
+Kendisinden önceki onu point eden elemanın adresini de gösteriyor olması.
+
+53
+00:06:11,995 --> 00:06:37,976
+O yüzden silmek istediğiniz elemanın adresini biliyorsanız, o adrese gittiyseniz, o adreste zaten bir önceki elemanın adresini de görmeniz mümkün değil mi? O adrese gittiyseniz, orada ne var? Veri, önceki adres ve next adres var. Diyelim ki bin numaralı adres buraya geldiyseniz, öncesini bildiğiniz için silme işlemini gerçekleştirebilirsiniz. O yüzden doğru.
+
+54
+00:06:41,995 --> 00:06:44,616
+Bu kadardı sanıyorum.
+
+55
+00:06:47,396 --> 00:06:53,396
+En elemanlı bir dizinin n artı birinci gözüne yeni bir eleman eklenir.
+
+56
+00:06:53,436 --> 00:06:54,336
+Bir tane daha varmış.
+
+57
+00:06:54,495 --> 00:06:55,455
+Şimdi altta kalmış o.
+
+58
+00:06:55,455 --> 00:07:02,735
+Bu durumdaki dizi insertion sort ve bubble sort algoritmalarıyla en kötü durumda o en karmaşıklıkla sıralanır.
+
+59
+00:07:03,455 --> 00:07:08,635
+N artı birinci göze yani şöyle sıralı bir dizi var.
+
+60
+00:07:08,635 --> 00:07:12,415
+n artı birinci göze yeni bir eleman yerleştiriliyor.
+
+61
+00:07:13,415 --> 00:07:15,576
+Yani bunun sıralı olması gerekmiyor.
+
+62
+00:07:15,835 --> 00:07:18,155
+Birden sıralıymış gibi oldu.
+
+63
+00:07:19,235 --> 00:07:20,815
+8 olsun diyelim ki.
+
+64
+00:07:21,915 --> 00:07:24,635
+Bu durumda dizinin sıralı hale gelmesi
+
+65
+00:07:24,635 --> 00:07:30,276
+insertion sort ve bubble sort algoritmalarıyla en kötü durumda ON olur denmiş.
+
+66
+00:07:30,375 --> 00:07:31,375
+Doğru mu yanlış mı?
+
+67
+00:07:44,372 --> 00:07:46,171
+Insurgent Sort'da ne olur?
+
+68
+00:07:49,843 --> 00:08:15,343
+kaç kişi var şu anda? Yani insertion sort da ne olur arkadaşlar? Peki o zaman bunu size bırakıyorum. Bunun cevabını bulmaya çalışın. Yani bu basit bir soru çünkü buna cevap vermenizi beklerdim. Labirentte çıkışı arayan fare probleminin çözümü için en uygun veri yapısı burada da çok eksik vardı. Şimdi burada aslında zaten kullandığımız veri yapıları belli bugüne kadar.
+
+69
+00:08:15,343 --> 00:08:23,843
+linkli liste gördünüz, ondan sonra stack gördünüz, queue gördünüz, işte o sırada ağaç görmüş müydünüz hatırlamıyorum.
+
+70
+00:08:23,843 --> 00:08:43,143
+Belki bir de ağaç görmüştünüz. Yani yığın neden? Çünkü geri gidecek eğer yol tıkalıysa tıpkı stack mantığı yani bulunduğu noktadan 2-3 adım gerisine gidecek ve oradan tekrar yola devam etmeye çalışacak.
+
+71
+00:08:43,143 --> 00:08:49,743
+o yüzden stack kullanabilirdi. Şey diyenler vardı yani aslında o da doğru bir cevap.
+
+72
+00:08:50,783 --> 00:09:00,663
+Alt sınıf yani üst sınıflardan alanlardan. Graph diyenler vardı. Graph görmedik o yüzden biz yığın diye cevap vermenizi bekliyorduk.
+
+73
+00:09:00,663 --> 00:09:07,744
+Graph da şey açısından doğru yani labirenti graph gibi gösterebileceğiniz için o da doğru ona da puan verdik o yüzden.
+
+74
+00:09:07,744 --> 00:09:15,704
+başka rear artı bir modeli geçen derste söyledim zaten orada da çok hata vardı.
+
+75
+00:09:16,324 --> 00:09:18,364
+Soruları dikkatle okumaya çalışın.
+
+76
+00:09:19,244 --> 00:09:26,084
+Push ve pop işlemleri reverse elemanların sırasını ters çevirme de mümkün ise nasıl yapılır?
+
+77
+00:09:26,903 --> 00:09:29,903
+Kuyruk yapısı nasıl gerçeklenir deniyordu.
+
+78
+00:09:29,903 --> 00:09:39,463
+orada da en queue işlemi için ne yapmanız lazım?
+
+79
+00:09:39,463 --> 00:09:43,204
+Kuyruktan eleman çekmek istediğinizde.
+
+80
+00:09:48,820 --> 00:09:51,939
+Pardon, kuyruğa eleman yerleştirmek istediğinizde.
+
+81
+00:09:52,379 --> 00:09:55,959
+En-Q işlemi için şey yapabilirsiniz.
+
+82
+00:09:56,899 --> 00:09:59,679
+Kuyruğa eleman eklemek istediğinizde.
+
+83
+00:10:00,079 --> 00:10:02,179
+Şimdi isteğimiz şu vaziyette.
+
+84
+00:10:04,200 --> 00:10:07,599
+Kuyruğun başındaki kişi şeyde duruyor.
+
+85
+00:10:07,759 --> 00:10:09,279
+Bu da baş burası.
+
+86
+00:10:10,959 --> 00:10:13,199
+En-Q'da direkt push yapabilirsiniz.
+
+87
+00:10:13,639 --> 00:10:16,559
+Mesela yeni gelen elemanı buraya push ettiniz.
+
+88
+00:10:16,559 --> 00:10:33,000
+dq'da ise reverse edersiniz değil mi? Reverse ettiğinizde şu hale geldi 19, 7, 5, 3 haline geldi. Pop edersiniz, üsttekini pop edersiniz.
+
+89
+00:10:33,479 --> 00:10:45,919
+Arkasından tekrar kuyruğu ters çevirmek gerekeceği için bu şekilde reverse edebilirsiniz. Cevap bu şekilde reverse edebilirsiniz.
+
+90
+00:10:45,919 --> 00:10:58,919
+Yani kuyruğa eleman yerleştirirken siteyi olduğu gibi kullanıp sadece push edip kuyruktan eleman çekerken önce reverse edip elemanı çekip sonra tekrar reverse edebilirsiniz.
+
+91
+00:10:59,500 --> 00:11:01,699
+Şimdi bu bu şekildeydi.
+
+92
+00:11:02,119 --> 00:11:07,799
+Şimdi ödevde buraya kadar sormak istediğiniz bir şey yoksa ödevi anlatacağım şimdi.
+
+93
+00:11:07,979 --> 00:11:09,459
+Var mı sormak istediğiniz bir şey?
+
+94
+00:11:10,619 --> 00:11:13,799
+Hocam soru değil de sadece şey söylemek istiyorum.
+
+95
+00:11:13,799 --> 00:11:17,479
+Bunlar aslında sakin kafayla düşününce kolay sorular bence.
+
+96
+00:11:18,279 --> 00:11:18,459
+Evet.
+
+97
+00:11:18,459 --> 00:11:24,079
+Ama sınavda yani hızlı düşününce bazen bazıları çıkmadı benden mesela.
+
+98
+00:11:24,179 --> 00:11:25,139
+Sonradan düşününce buldum.
+
+99
+00:11:25,579 --> 00:11:29,339
+Örneğin bu son söylediğiniz şeyi gördüğümde aslında 10 saniyem kalmıştı.
+
+100
+00:11:29,559 --> 00:11:31,999
+Ama sonradan düşününce aslında çok kolaydı yani.
+
+101
+00:11:32,959 --> 00:11:33,839
+Evet haklısın.
+
+102
+00:11:34,219 --> 00:11:35,419
+Çok haklısın.
+
+103
+00:11:35,419 --> 00:11:37,119
+Şimdi oradaki konu şu aslında.
+
+104
+00:11:37,299 --> 00:11:39,019
+Yani bu zaten 5 puanlık bir quiz.
+
+105
+00:11:39,119 --> 00:11:42,259
+Çok büyük değeri olan, etkileyen bir şey değil.
+
+106
+00:11:42,259 --> 00:11:45,399
+Biz o süreyi hesaplarken aslında şöyle hesapladık.
+
+107
+00:11:45,559 --> 00:11:49,959
+Yani üstüne koya koya verdik ama bir de üzerine bir de iki dakika daha ekledik.
+
+108
+00:11:49,959 --> 00:12:04,019
+Yani bazıları zaten çok otomatik düşüneceğiniz şeyler ne bileyim işte sırasız dizide elemanı aramanın karmaşıklığının en işte binary şey sırında aramanın log n' olduğu vesaire.
+
+109
+00:12:04,180 --> 00:12:08,359
+Yani artık otomatiğe bağlayarak cevap vermemiz gereken sorular.
+
+110
+00:12:08,879 --> 00:12:09,899
+Bir onlar vardı.
+
+111
+00:12:10,019 --> 00:12:11,699
+Onlara birer dakika verdik.
+
+112
+00:12:11,699 --> 00:12:29,459
+yani en az süre bir dakika onu mesela on saniyede falan söylemeniz lazım zaten veya işte ne bileyim ağacı preorder gez dediğinde onlar da böyle artık böyle hepinizin bence otomatiğe bağlayarak çözmesi gereken sorular ve bir de senin söylediğin gibi düşünülmesi gereken sorular vardı.
+
+113
+00:12:29,459 --> 00:12:39,459
+Evet onlarda mutlaka haklısın şey olmuştur yani süreyi çok uzun kullanmak gerekmiştir.
+
+114
+00:12:39,459 --> 00:13:05,459
+Yani burada şey bu yani aslında genel olarak seçtiğimiz sorular çok ağır olmayan sorular olduğu için bizim beklentimiz aslında birazcık daha hani böyle aklına hemen gelebilecek sorular soralım ve hemen zaten cevap verebilsinler ve uzun uzun düşünecek sorular olmasın da ama çok doğal olarak tabii ki bir kere habersiz olmasının da etkisiyle
+
+115
+00:13:05,459 --> 00:13:14,260
+o anda konulara ne kadar daha sıcak olduğunla da ilgili olarak sıkıntı olabilmiştir.
+
+116
+00:13:15,359 --> 00:13:20,579
+Tabii yani o konuda haklısın ama süre aslında şey için yeterli bir süre.
+
+117
+00:13:20,579 --> 00:13:28,420
+Yani hani çok daha hakimken yeterli olabilecek bir süre diye hesapladık kendimizce.
+
+118
+00:13:28,419 --> 00:13:36,459
+doğru belki biraz yanındıysak da o da izafi olarak herkes için aynı durum oluşacağından çok büyük problem olmamıştır diye tahmin ediyorum.
+
+119
+00:13:37,159 --> 00:13:44,239
+Teşekkür ederim yorumun için var mı? Başka aklınıza takılan veya söylemek istediğiniz bir şey yoksa ödeve geçeceğim.
+
+120
+00:13:45,076 --> 00:14:06,756
+Ödevde bir directory'de bulunan make'dir, change'dir, remove'dir ve ne vardı bir de account komutlarını gerçekleştiren bir yapı tasarlamamızı istedik.
+
+121
+00:14:06,756 --> 00:14:12,875
+Ağaç veri yapısını kullanarak. Yani şöyle bir şey olacak. Root'ta olduğumuzu varsayacağız.
+
+122
+00:14:12,875 --> 00:14:28,515
+örneğin make'dir A dediğimiz zaman bir A direktrisi yaratacak. Make'dir B dediğimiz zaman bir B direktrisi yaratacak. Change'dir A dediğimiz zaman A'ya geçmiş olacaksınız.
+
+123
+00:14:28,515 --> 00:14:30,335
+Şimdi şurası sizin rootunuz.
+
+124
+00:14:31,615 --> 00:14:34,335
+Makedir A dediğiniz zaman A yarattınız.
+
+125
+00:14:34,495 --> 00:14:36,835
+B dediğiniz zaman B yarattınız.
+
+126
+00:14:37,395 --> 00:14:40,076
+Change'dir A dediğiniz zaman şimdi A'dasınız.
+
+127
+00:14:40,915 --> 00:14:48,535
+Örneğin buradayken Makedir AA dediğim zaman bu A'nın altında açılacak.
+
+128
+00:14:48,535 --> 00:14:59,535
+İşte ne bileyim make dir veya şöyle diyeyim sadece rahat takip edin diye isimleri böyle veriyorum.
+
+129
+00:14:59,535 --> 00:15:09,895
+A1 dediğiniz zaman, A2, A3 dediğiniz zaman bunlar hepsi A'nın altında açılacak.
+
+130
+00:15:10,475 --> 00:15:17,535
+Yukarı çıkmak istediğiniz zaman change dir dediğinizde şimdi tekrar root'un altındasınız.
+
+131
+00:15:17,535 --> 00:15:47,516
+buradasınız. Örneğin make the C dediğimizde şimdi burada bir şey açılacak. İşte remove the D dediğinizde B'yi remove edecek gibi böyle count dediğinizde de bulunduğunuz directory neresiyse şu anda biz root'tayız.
+
+132
+00:15:47,535 --> 00:16:10,796
+sayısını verecek. Yani burada iki diyecek. A ve C var. İki diyecek burada. Bu şekilde. Ondan sonra başka ne vardı? Bir dir var. Dir dediğiniz zaman da sadece bulunduğunuz
+
+133
+00:16:10,796 --> 00:16:20,275
+da Airektrinin alt seviyesini gösterecek. Yani A ve B diyecek. A'nın altını göstermeyecek. Bu seviyede sorular sorduk.
+
+134
+00:16:21,076 --> 00:16:28,396
+Yani sonuçta ağaç veri yapısı kullanarak şunu gerçekleştireceksiniz aslında. Bir ağacınız olacak.
+
+135
+00:16:29,236 --> 00:16:36,956
+Şimdi ben size bu şekilde binary olmayan bir ağacı nasıl oluşturacağınızı göstereceğim.
+
+136
+00:16:36,955 --> 00:16:44,555
+Şimdi burada aslında aynı yerde de gösterebilirim. Ne acaba göstereyim herhalde.
+
+137
+00:16:46,235 --> 00:16:50,315
+Şimdi burada bizim şöyle bir yapımız var.
+
+138
+00:16:50,695 --> 00:16:54,675
+Dediğimiz gibi bir tane rootumuz bir tane burada.
+
+139
+00:16:55,355 --> 00:17:01,115
+Ondan sonra ve bunun altında birden, ikiden fazla yani binary tree'ye alışıktınız siz.
+
+140
+00:17:01,115 --> 00:17:06,015
+İkiden fazla şey var, alt ağaç var.
+
+141
+00:17:06,375 --> 00:17:10,175
+Mesela ağanın altında da aynı şekilde ikiden fazla bilgi var.
+
+142
+00:17:10,295 --> 00:17:15,975
+Böyle bir şey olduğunda tabii ki bunu link liste yapısıyla gösterebiliriz.
+
+143
+00:17:15,975 --> 00:17:21,515
+Bunun için kullanılan yapının adı First Chart.
+
+144
+00:17:25,652 --> 00:17:50,912
+next sibling olarak ifade ediliyor. Burada söylenilen şey şu. Yani şunu yapıyorsunuz. Burası root ya. Root'un iki pointer'ı var. Birincisi sibling yani kardeşini gösteriyor. Öyle bir şey yok. Root tek zaten olmak zorunda. Null gösteriyor.
+
+145
+00:17:50,912 --> 00:18:16,692
+ikincisi de chart'larını gösteriyor. Chart'ları A, B ve C. Şimdi burada şunu şöyle yapıyorsunuz. Sadece ilk eklenen make it A dediğinizde ilk eklenen chart'ın adresini gösteriyorsunuz. Bu A, B ve C'yi A gösterecek. Bunlar A, B ve C siblingler.
+
+146
+00:18:16,691 --> 00:18:44,931
+C nalı gösteriyor. C kimseyi göstermiyor. Şimdi A için de aynı şekilde B'nin şu anda altı boş nal C'nin nal ondan sonra A için de aynı şekilde A'nın çaldığı A1, A1, A2 ve A3'ü gösteriyor.
+
+147
+00:18:44,931 --> 00:18:46,891
+A3 şu anda nalı gösteriyor.
+
+148
+00:18:47,451 --> 00:18:50,311
+Hepsinin çaytları şu an için nal.
+
+149
+00:18:52,811 --> 00:19:05,732
+Örneğin A3'ün altına A3-1 deseydik, mesela bu A3-1'i gösterecekti.
+
+150
+00:19:08,291 --> 00:19:09,211
+Mantık bu.
+
+151
+00:19:09,332 --> 00:19:13,171
+Peki bunu o zaman şey olarak nasıl sağlıyoruz?
+
+152
+00:19:14,931 --> 00:19:37,111
+yapı olarak nasıl sağlıyoruz? Şöyle bir düğüm tanımlıyoruz ağaç için. Örneğin işte o düğümün adı mesela işte direktorinizin adı diyelim ki bizim size verdiğimiz örnekte data struct diye bir direktor var mesela.
+
+153
+00:19:37,111 --> 00:20:00,131
+da direktinizin adı neyse o. Ve Structing node tipinde bir first child var. Sadece siz şeyi tutuyorsunuz. Yani daha doğrusu her düğüm, siz değil, sizinle ilgisi yok konunun. Her düğüm sadece first child'ı tutuyor.
+
+154
+00:20:00,131 --> 00:20:08,031
+Yani root sadece A'yı tutacak, diğer çaytlarını A gösterecek.
+
+155
+00:20:08,031 --> 00:20:14,691
+Yani root hem A'yı hem B'y hem C'yi çayt olarak göstermeyecek, sadece bir tanesini gösterecek.
+
+156
+00:20:19,124 --> 00:20:31,843
+her düğüm kendisinden sonra gelen kardeş düğümü gösterecek. Şimdi bakacak olursak şu şekilde aslında bir daha göstereyim burada.
+
+157
+00:20:38,099 --> 00:20:44,580
+bunu dediğinizde örneğin isim
+
+158
+00:21:03,796 --> 00:21:06,095
+şöyle bir yapınız var. Bu şu demek.
+
+159
+00:21:09,652 --> 00:21:11,251
+Burada root'umuz var.
+
+160
+00:21:14,751 --> 00:21:20,131
+Kısa yazacağım. Buraya sağamayacağım. Çünkü child ve sibling olarak yazacağım.
+
+161
+00:21:20,652 --> 00:21:25,832
+Şimdi root'un sibling'i yok. Null. Her zaman böyle. Root tepedeki tek düğümdür.
+
+162
+00:21:26,511 --> 00:21:34,431
+Şimdi şöyle demiştik ya root dedik, A dedik, işte B, C dedik.
+
+163
+00:21:34,431 --> 00:21:43,231
+Burası root'un child'ı A'yı gösteriyor.
+
+164
+00:21:46,671 --> 00:21:55,731
+Ondan sonra A'nın şöyle CS diye yazayım, sibling'i B'yi gösteriyor.
+
+165
+00:21:59,892 --> 00:22:20,812
+B'nin siblingi neden böyle? Çünkü önce A'yı make directory diyerek önce A'yı oluşturduk değil mi? Root'tayken sonra B'yi sonra C'yi yani gelenler geldikçe ucuca ekleniyorlar. C mesela çarpayım da şimdi C ile şeyi karıştırmayın.
+
+166
+00:22:24,211 --> 00:22:26,912
+C şu anda, pardon.
+
+167
+00:22:31,988 --> 00:22:49,988
+C'nin siblingi şu andan alı gösteriyor. İşte A'ya A1, A2, A3 eklediğinizde A'nın çaldığı
+
+168
+00:22:49,683 --> 00:22:51,683
+A1'in adresini gösteriyor.
+
+169
+00:22:55,700 --> 00:22:59,959
+A1'in siblingi A2'nin adresini gösteriyor.
+
+170
+00:23:02,660 --> 00:23:07,839
+A2'nin siblingi de A3'ün adresini gösteriyor.
+
+171
+00:23:08,419 --> 00:23:10,160
+Sormak istediğiniz bir şey var mı?
+
+172
+00:23:18,836 --> 00:23:30,836
+Mesela şu an için böyle bir yani şu ağacınız için şu ağaç için şeyiniz pointerlarınız ağacı gösteren linked list yapılır. Bu şekilde olmalı.
+
+173
+00:23:32,836 --> 00:23:34,836
+Soru varsa alayım.
+
+174
+00:23:35,836 --> 00:23:43,836
+Hocam bu az önce gösterdiniz de komutlar. Bunlar sadece bir fonksiyon çağrısı gibi mi kullanılacak? Konsol ile bir list var mı?
+
+175
+00:23:44,836 --> 00:23:45,836
+Nasıl yani?
+
+176
+00:23:45,836 --> 00:23:52,075
+Yani bu macktiri filan hani konsoldan yazmayacağız değil mi? Bu kodun içinde bir fonksiyon mu olacak bunlar?
+
+177
+00:23:53,115 --> 00:24:02,935
+Hayır canım bayağı yazacaksınız yani input olarak macktiri diyelim ki elif diyeceksiniz elif dairektrisini yaratacak başka türlü nasıl olur?
+
+178
+00:24:02,935 --> 00:24:16,415
+dışarıdan şey geldiğinde maketir yani dışarıdan input olarak maketir A geldiğinde siz işte A diye bir directory yaratma işi yapacaksınız.
+
+179
+00:24:16,415 --> 00:24:23,215
+Dışarıdan input olarak changetir A geldiğinde işte A directory'sine geçme işini yapacaksınız.
+
+180
+00:24:23,336 --> 00:24:25,556
+O directory'ye geçme işini yapacaksınız.
+
+181
+00:24:26,095 --> 00:24:30,895
+İşte ne bileyim remove directory B geldiğinde yani bu inputunuz mu size?
+
+182
+00:24:30,895 --> 00:24:32,735
+şu inputunuz.
+
+183
+00:24:33,095 --> 00:24:37,035
+Input ne geldiyse, ha tabii ki yani onları da fonksiyonda yazın.
+
+184
+00:24:37,035 --> 00:24:43,975
+Yani make-through dendiğinde yapılacak işi, remote dendiğinde yapılacak işi fonksiyonda yazın.
+
+185
+00:24:44,075 --> 00:24:50,735
+Yani onu kütle olarak tek bir programda yazmayın ama demek istediğim bunlar sizin inputunuz.
+
+186
+00:24:50,855 --> 00:24:52,535
+Dışarıdan aldığınız inputunuz.
+
+187
+00:24:53,795 --> 00:24:54,895
+Tamamdır hocam, sağ olun.
+
+188
+00:24:55,556 --> 00:24:57,696
+Var mı başka? Aklınıza tıkla.
+
+189
+00:24:57,696 --> 00:25:07,715
+yani sahte bir şey yapıyorsunuz siz işletim sisteminin file sisteminin minik bir parçasını yapıyorsunuz.
+
+190
+00:25:07,715 --> 00:25:19,216
+Yani çok şey bir şekilde küçük bir minicik bir parçası sadece 4 tane count dahil 4 tane komut var make'dır, change'dır, remove'dır.
+
+191
+00:25:19,215 --> 00:25:29,196
+var. Mesela şey dediğimizde, change-dur dediğimizde A'ya geldi. Burada dır dediğimizde A1, A2, A3'ü yazacak ekrana falan.
+
+192
+00:25:32,015 --> 00:25:33,255
+Var mı sorunun?
+
+193
+00:25:33,255 --> 00:25:40,716
+Hocam peki mesela remove-dur yani read-dur A dediğimizde A'nın bütün chart'ları ve chart'ları
+
+194
+00:25:40,715 --> 00:25:42,075
+Siblikleri hep sığınıyor mu?
+
+195
+00:25:42,915 --> 00:25:47,355
+Hayır onu şeyde verdik ödev sorusunda var o.
+
+196
+00:25:47,875 --> 00:25:51,895
+Sadece altı boş olan şeyleri silebilirsiniz.
+
+197
+00:25:52,075 --> 00:25:56,795
+Yani ödev sorusunda hangi hataları değerlendirmeniz gerektiğini söyledik.
+
+198
+00:25:56,795 --> 00:26:05,675
+Makedir için mesela Makedir yapmak istediğinizde aynı isimde mevcut bir directory varsa işlemi gerçekleştiremez.
+
+199
+00:26:05,675 --> 00:26:22,355
+Yani şey seviyede bir alt seviyede diyelim ki root'tasınız A, B, C zaten yaratılmış make dir A diyorsunuz öyle bir directory gerçekleştiremez ama mesela B'nin altında bir A açabilirsiniz burada bir sıkıntı yok.
+
+200
+00:26:22,355 --> 00:26:32,875
+Ondan sonra işte change-ter'da şey varsa alt directory'e geçmek istediniz.
+
+201
+00:26:32,875 --> 00:26:39,715
+Mesela root'tasınız change-ter F diyorsunuz. Burada hata mesajı vermeniz gerekiyor.
+
+202
+00:26:41,275 --> 00:26:47,235
+Ondan sonra veya yukarı çıkmak için şey kullanırsınız dedik ya change-ter.
+
+203
+00:26:47,235 --> 00:27:15,695
+mesela şu katmandaysanız changedir dediniz root'a çıktı bir daha şey yani changedir nokta nokta dediniz root'a çıktı bir daha changedir nokta nokta derseniz hata vermesi gerekiyor çünkü root'un üstü yok yani her komut için ikişer tane falan hata mesajı var remove directory dedi eğer remove etmek istediğiniz isimde bir directory yoksa altı doluysa
+
+204
+00:27:18,740 --> 00:27:23,299
+orada bir hata kalmış.
+
+205
+00:27:25,379 --> 00:27:27,299
+Dimo directory'de.
+
+206
+00:27:27,719 --> 00:27:30,839
+Üste çıkmak istenirse değil ki öyle bir şey yok aslında.
+
+207
+00:27:31,019 --> 00:27:31,679
+Hata var.
+
+208
+00:27:32,299 --> 00:27:39,459
+Dır da o anda bulunan directory'in sadece alt seviyesindeki directory'ler ekranda gösteriliyor.
+
+209
+00:27:40,660 --> 00:27:42,099
+Ondan sonra
+
+210
+00:27:42,099 --> 00:27:45,299
+başka
+
+211
+00:27:45,299 --> 00:27:59,339
+count'ta da sadece alt seviyedeki dairektir sayısını gösteriyor. Yani root'tayken sadece 3 yazacak. A, B, C'yi gösterdi. Var mı başka sormak istediğiniz aklınıza takılan?
+
+212
+00:28:00,799 --> 00:28:05,659
+Hocam mesela A'dayız. Root'a çıkmak istiyoruz değil mi hocam?
+
+213
+00:28:06,280 --> 00:28:06,539
+Evet.
+
+214
+00:28:06,899 --> 00:28:09,659
+Bunu change tırla yapıyoruz değil mi nokta noktayla?
+
+215
+00:28:09,659 --> 00:28:14,619
+Aynen. A'dasın root'a çıkmak istiyorsan change tır nokta nokta diyorsun yukarı çıkıyorsun.
+
+216
+00:28:15,299 --> 00:28:23,019
+Bunun için ekstra bir pointer tutup ondan önceki şeyi kaydetmeyeceğiz değil mi? Yani bunu bizim düşünmemiz lazım. Nasıl yapacağız?
+
+217
+00:28:23,019 --> 00:28:28,039
+Bunu sizin düşünmemiz lazım. Bunu sizin düşünmemiz lazım. Nasıl yapacağını.
+
+218
+00:28:30,859 --> 00:28:39,779
+Yani ekstra tutmak istersen tutarsın yani ona bir şey diyemem. Nerede bulunduğunu tutuyorsun ama öyle düşün.
+
+219
+00:28:39,780 --> 00:28:42,619
+oraya nereden geldiğini biliyorsun zaten.
+
+220
+00:28:42,780 --> 00:28:43,939
+Gel bilmen gerekli yani.
+
+221
+00:28:44,400 --> 00:28:47,059
+Peki başka var mı aklınıza soru?
+
+222
+00:28:48,500 --> 00:28:51,299
+Hocam biraz önce söylediniz herhalde ama tam anlayamadım.
+
+223
+00:28:51,439 --> 00:28:53,320
+Bunları sanal olarak bellekte yapacağız değil mi?
+
+224
+00:28:53,339 --> 00:28:55,119
+Fiziksel olarak hard disk'te yapmayacağız.
+
+225
+00:28:56,820 --> 00:29:01,059
+Tabii canım sanal yani öyle uydurup bir şey yapıyorsunuz.
+
+226
+00:29:01,059 --> 00:29:01,780
+Nedir?
+
+227
+00:29:02,439 --> 00:29:04,740
+Kendiniz make-ter yazıyorsunuz.
+
+228
+00:29:04,799 --> 00:29:06,059
+Kendiniz change-ter yazıyorsunuz.
+
+229
+00:29:06,059 --> 00:29:15,360
+komut ortamından birisi make dir A dediğinde yani A diye bir directory yaratmış gibi yapıyorsunuz aslında öyle bir şey yapmıyorsunuz
+
+230
+00:29:15,360 --> 00:29:25,359
+dır derseniz ekrana A yazıyor yani gerçekten disk üzerinde bir şey yapmıyorsunuz sanal bir şey yapıyorsunuz
+
+231
+00:29:25,359 --> 00:29:27,279
+anladım hocam sağ ol
+
+232
+00:29:27,279 --> 00:29:29,560
+rica ederim var mı başka sorunuz
+
+233
+00:29:29,560 --> 00:29:34,359
+hocam bahsettiğiniz eğlenceli dediğiniz ödev bu muydu
+
+234
+00:29:34,359 --> 00:29:37,279
+Evet çok eğlenceli bence
+
+235
+00:29:37,279 --> 00:29:40,499
+Bence de eğlenceli de o yüzden sormak istedim
+
+236
+00:29:40,499 --> 00:29:46,180
+Evet yani gözünüzde büyütecek bir şey yok ödevle ilgili
+
+237
+00:29:46,180 --> 00:29:52,019
+Yani kısa sürede bir saatte iki saatte gerçekten yapabilirsiniz
+
+238
+00:29:52,019 --> 00:29:56,299
+Çünkü tek yapacağınız şey linkli liste üzerinde ilerlemek
+
+239
+00:29:56,299 --> 00:30:02,039
+Ki siz bunu birinci haftadan beri veya neyse ikinci haftadan beri görüyorsunuz
+
+240
+00:30:02,040 --> 00:30:07,320
+bu tamamen ağaç yapısının linkli listeyle gerçekleştirmesidir.
+
+241
+00:30:07,460 --> 00:30:17,620
+Linkli liste üzerinde ekleme, silme ve bilgileri görme ilk haftadan beri bunları defalarca uygulamasını yaptık.
+
+242
+00:30:17,620 --> 00:30:23,620
+Bu kadar sadece size farklı bir...
+
+243
+00:30:23,647 --> 00:30:49,667
+konuyla geldi. Hep konuştuğumuz gibi, yani mezun olup hayata atıldığınız zaman kimse size bir diziyi büyükten küçüğe sıralayın demeyecek ama sıralama işlemiyle ilgili belki bir şey kullanacaksınız. Burada da ilk haftadan beri, yani az önceki arkadaş gerçekten umarım eğlenceli olduğu için söylemiştir ama kinayeli söylediyse de ödevle ilgili sizin içinizi rahatlatacak olan şey.
+
+244
+00:30:49,667 --> 00:30:58,527
+zaten siz sürekli linkli listede ekleme nasıl yapılır, silme nasıl yapılır, linkli listedeki elemanlar ekranda nasıl gösterilir?
+
+245
+00:30:58,867 --> 00:31:01,967
+Bunları gördünüz. Elinizde yazılmış hazır kodları da var.
+
+246
+00:31:02,967 --> 00:31:04,767
+Ve bunun ondan bir farkı yok.
+
+247
+00:31:05,027 --> 00:31:10,247
+Tamamen sizin de gördüğünüz gibi make'dir dediğiniz yeni eleman insert etmedir.
+
+248
+00:31:10,247 --> 00:31:15,387
+Change'dir dediğiniz sadece o linkli liste üzerinde ilerlemedir.
+
+249
+00:31:15,387 --> 00:31:20,507
+ondan sonra remove dediğimiz link listeden bir elemanı silmektir.
+
+250
+00:31:20,507 --> 00:31:22,007
+Hiçbir farkı yok.
+
+251
+00:31:22,207 --> 00:31:33,387
+Sadece yaptığımız şey hikayeyi farklı anlatarak bir uygulama alanında gerçekten nasıl kullanacağımızı görmenizi sağlamak.
+
+252
+00:31:33,907 --> 00:31:38,067
+O yüzden böyle hani konu hani make'tir bilmem ne dediler.
+
+253
+00:31:38,228 --> 00:31:43,567
+Vay bize işletim sistemi parçası yazdırdılar, file sistemi yazdırdılar falan alakası yok.
+
+254
+00:31:43,567 --> 00:31:48,847
+son derece basit bir linked liste ödevi bu. Sorunuz var mı?
+
+255
+00:31:51,548 --> 00:31:53,447
+Hocam son bir şey sorabilir miyim?
+
+256
+00:31:53,587 --> 00:31:54,487
+Tabii buyurun.
+
+257
+00:31:56,807 --> 00:32:01,927
+Change dir deyip yukarı çıkacağımızda, şimdi biz sadece first child tutuyoruz değil mi hocam?
+
+258
+00:32:02,787 --> 00:32:03,527
+Aynen evet.
+
+259
+00:32:04,228 --> 00:32:11,567
+Mesela C'deyken de change dir dediğimiz zaman yine root'a çıkması lazım o zaman değil mi?
+
+260
+00:32:11,567 --> 00:32:13,307
+Yani aynı şekilde olması lazım çünkü
+
+261
+00:32:13,307 --> 00:32:15,447
+C'deyken diye bir şey yok
+
+262
+00:32:15,447 --> 00:32:17,008
+Hayır C'de değilsin ki
+
+263
+00:32:17,008 --> 00:32:20,368
+C'deysen C'den aşağı inemezsin
+
+264
+00:32:20,368 --> 00:32:21,567
+C'nin aşağısı şey
+
+265
+00:32:21,567 --> 00:32:22,907
+Ancak şöyle olabilir
+
+266
+00:32:22,907 --> 00:32:24,707
+Sen şimdi root'tayken
+
+267
+00:32:24,707 --> 00:32:26,587
+Şöyle göstereyim
+
+268
+00:32:26,587 --> 00:32:28,368
+Root'tasın tamam mı?
+
+269
+00:32:28,807 --> 00:32:29,067
+Evet
+
+270
+00:32:29,067 --> 00:32:30,368
+Root'tasın
+
+271
+00:32:30,368 --> 00:32:34,787
+Change'dir nokta nokta dersen hata
+
+272
+00:32:34,787 --> 00:32:35,948
+Çünkü üstü yok
+
+273
+00:32:35,948 --> 00:32:37,728
+Aynen hocam
+
+274
+00:32:37,728 --> 00:32:39,368
+Change'dir A dedin
+
+275
+00:32:39,368 --> 00:32:49,427
+A'nın altındasın. Şimdi change'dir nokta nokta dersen nereye çıkacaksın?
+
+276
+00:32:50,627 --> 00:32:51,347
+Roota çıkacaksın.
+
+277
+00:32:51,347 --> 00:32:55,308
+Roota çıkacaksın. Yani rootta kalacaksın. Sanıyorum şunu söylüyorsun.
+
+278
+00:32:57,448 --> 00:33:01,987
+Change'dir B dersen, B'nin altındasın.
+
+279
+00:33:01,987 --> 00:33:04,088
+şey dersen
+
+280
+00:33:04,088 --> 00:33:08,228
+change the nokta nokta dersen
+
+281
+00:33:08,228 --> 00:33:10,327
+nereye çıkacaksın? Roota çıkacaksın.
+
+282
+00:33:10,907 --> 00:33:11,927
+Bunu diyorsun değil mi?
+
+283
+00:33:12,127 --> 00:33:13,247
+Evet evet bunu sormuştum.
+
+284
+00:33:13,448 --> 00:33:16,567
+Tamam doğru yani B'nin altındaysan eğer
+
+285
+00:33:16,567 --> 00:33:18,847
+change the nokta nokta dersen
+
+286
+00:33:18,847 --> 00:33:19,868
+Roota çıkacaksın.
+
+287
+00:33:19,868 --> 00:33:20,547
+Tamam.
+
+288
+00:33:21,047 --> 00:33:22,987
+Ama zaten tekrardan söyleyeceğim
+
+289
+00:33:22,987 --> 00:33:24,868
+o adres elimde olmalı çünkü
+
+290
+00:33:24,868 --> 00:33:27,228
+root'un altındayken
+
+291
+00:33:27,228 --> 00:33:29,747
+şeyi biliyorsun aslında
+
+292
+00:33:29,747 --> 00:33:33,747
+yani root'un neresi olduğunu zaten biliyorsun.
+
+293
+00:33:34,687 --> 00:33:35,367
+Tamam hocam.
+
+294
+00:33:35,947 --> 00:33:36,587
+Tamam mı?
+
+295
+00:33:36,587 --> 00:33:41,127
+Veya change to a dediğin zaman aslında bir üstün nerede olduğunu.
+
+296
+00:33:45,940 --> 00:33:47,420
+Hocam sesiniz gitti bir ama
+
+297
+00:33:47,420 --> 00:34:06,059
+Şey dedim, her şeyin pointer'ını tutmanız gerekmiyor. Yani bir üstü tutarak şey yapabilirsiniz, çözebilirsiniz. Yani changed ağdayken changed'ı deyip aşağıya indiğiniz zaman sadece ağının yerini bilmeniz yeterli.
+
+298
+00:34:06,460 --> 00:34:11,040
+Rout'u zaten tutuyorsunuz. Hiçbir şeyi kaybetmemek için route'u bilmek zorundasınız değil mi?
+
+299
+00:34:11,659 --> 00:34:12,599
+Evet hocam, tamam.
+
+300
+00:34:12,599 --> 00:34:16,999
+Tamam var mı başka sormak istediğiniz aklınızdaki soru?
+
+301
+00:34:17,379 --> 00:34:21,280
+Hocam sadece bir üst direktörüye çıkıyoruz değil mi? Backslash yazıp da en üst direktörüye çıkıyoruz.
+
+302
+00:34:21,280 --> 00:34:26,379
+Aynen öyle şeyler kesinlikle öyle şeyler yok. Şey falan da yok. Öyle bir şey asla istemiyoruz.
+
+303
+00:34:26,739 --> 00:34:33,599
+Hani changetir işte slash bilmem AB falan deyip de bulunduğunuz yerden çok alakasız bir yere zıplamanızı da istemiyoruz.
+
+304
+00:34:33,980 --> 00:34:37,179
+Burada her şey bir üst ve bir alt seviyesinde çözülüyor.
+
+305
+00:34:37,179 --> 00:34:51,399
+yani öyle uzaklara gitmek yok yani şey mümkündür ya bulunduğun yerdeyken tamamen en üste çıkmak vesaire mümkündür ya öyle bir şey yok burada sadece bir üste bir alta.
+
+306
+00:34:52,599 --> 00:34:53,699
+Var mı başka sorunuz?
+
+307
+00:34:58,771 --> 00:35:27,791
+aklınıza takılan bir şey var mı? Tekrardan söylüyorum, lütfen yapmaya çalışın. Çünkü çok faydası olur size. Hani çoklu ağaç üzerinde. Şimdi binary tree'de zaten çok kolay her şey. Binary tree'de search ediyorsunuz, bilmem ne vesaire. Bunu bir derste gördük zaten. Burada çoklu ağaç dediğimiz şey de aslında normal bir linked liste yapısının sizin için farklı bir şekilde kullanımı.
+
+308
+00:35:27,791 --> 00:35:33,851
+şimdiye kadar sadece bir sonraki elemanın adresini veya bir önceki elemanın adresini görüyorduk.
+
+309
+00:35:33,851 --> 00:35:40,711
+Şimdi burada chart seedling ile birazcık daha değişik bir kullanımını gördünüz.
+
+310
+00:35:40,871 --> 00:35:52,791
+Bu da ağacı bu şekilde yani şöyle bir kaç tane ağaçta her katmanda kaç tane düğüm olacağını bilmiyorsanız başka çaremiz yok.
+
+311
+00:35:52,871 --> 00:35:55,691
+Bunu pointerlarla bu şekilde göstermemiz gerekir.
+
+312
+00:35:55,691 --> 00:36:08,031
+Böylece bu yapıyı da kullanmış olacaksınız. Ödev size bunu sağlayacak. Bu da bence çok faydasını göreceksiniz. Kesinlikle dediğim gibi gözünüz korkmasın.
+
+313
+00:36:08,031 --> 00:36:20,031
+Yani make dir A dediğiniz ne? Make dir B-String. A dediğiniz şeyin adı B-String. Önce şeyi anlayacaksınız. Komutun ne olduğunu anlayacaksınız. Ona göre ilgili fonksiyonu çağıracaksınız.
+
+314
+00:36:20,031 --> 00:36:29,211
+İşte fonksiyonda da linked listeye insert, delete ne gerekiyorsa o işlemleri gerçekleştireceksiniz.
+
+315
+00:36:29,591 --> 00:36:31,531
+Var mı sormak istediğiniz başka bir şey?
+
+316
+00:36:33,631 --> 00:36:45,211
+Hata mesajları da genel olarak zaten yani hata mesaj derken hatalı bulunlar da genel olarak birbirinin aynı yani işte o isimde directory yoktur, öyledir falan gibi basit şeyler.
+
+317
+00:36:45,411 --> 00:36:47,531
+Varsa başka sorunuz cevap vereyim.
+
+318
+00:36:47,531 --> 00:36:56,931
+Hocam bir direct'in altında maksimum kaç tane direct'in olabilir gibi bir durum var mı yoksa
+
+319
+00:36:56,931 --> 00:37:03,431
+Yok linked list olduğu için sınır yok sınır memory allocation sınırı
+
+320
+00:37:03,431 --> 00:37:09,171
+Yani allocate edemezse olmaz yoksa çok güzel bir soru evet
+
+321
+00:37:09,171 --> 00:37:13,291
+Bu linked liste yapısı zaten o yüzden linked liste kullanıyorsun
+
+322
+00:37:13,292 --> 00:37:23,111
+Yani burada şurada C'den sonra sağa doğru böyle ilerleyebilirim ben. Ne zamana kadar? Memorilikasyonla sistem izin vermeyene kadar.
+
+323
+00:37:24,892 --> 00:37:26,111
+Tamam hocam teşekkür ederim.
+
+324
+00:37:26,611 --> 00:37:29,411
+Ben teşekkür ederim. Başka var mı aklımızda?
+
+325
+00:37:34,356 --> 00:37:49,975
+Hocam, mesela şimdi root'dayız, make-tir dediğimiz zaman root'un altına üretiyor ya, mesela A'nın altına bir şey, A'nın altında bir şey üretmek için ilk önce A'ya gidip sonra mı make-tir kullanmamız lazım?
+
+326
+00:37:49,975 --> 00:37:57,075
+Evet, kesinlikle öyle, kesinlikle. Yani burada çok sıkıntı yaşamayın istediğimiz için.
+
+327
+00:37:57,075 --> 00:38:07,455
+yapmak istediğiniz make the change the dinlenmeyi bulunduğunuz directory'nin altı için veya üstü için yani make the'ı zaten üst için kullanamazsın da
+
+328
+00:38:07,455 --> 00:38:15,615
+bütün işlemler sadece bir alt ve bir üst için yapılabilir. Yani uzaklarla ilgili hiçbir şey yapmıyorsunuz.
+
+329
+00:38:16,756 --> 00:38:17,795
+Tamam hocam sağ olun.
+
+330
+00:38:18,275 --> 00:38:20,115
+Ben teşekkür ederim. Var mı başka?
+
+331
+00:38:28,500 --> 00:38:53,000
+Peki, o zaman sorunuz yoksa burada bitirebiliriz. Bir de başlayacak süreniz. Dediğim gibi tekrar tekrar özellikle vurgulamak istiyorum. Yani konu böyle gözünüzü korkutmasın gerçekten link listede eleman eklemesini ve ekranda gösterme dışında bir şey yok.
+
+332
+00:38:53,000 --> 00:39:06,559
+Tabii ki doğal olarak yani biraz değişik gözüktüğünün farkındayım. Ona göre de hani biraz tabii ki tasarımla ilgili de düşünmeniz gerekiyor ama zaten bunu yapmanızı istiyoruz. Gelişmeniz için bu gerekli.
+
+333
+00:39:06,939 --> 00:39:20,799
+Yani aslında süreyi biz iki üç saatlik bir süre olarak hesapladık fakat özellikle hani şeyi plana katarak az önce bir arkadaşınız söyledi aslında süre olsaydı ben cevapları verirdim diye. O doğru bir şey.
+
+334
+00:39:20,799 --> 00:39:35,080
+ödevlerde o yüzden stres yaşamayın diye süreyi o yüzden o kadar uzun verdik. Yoksa gerçekten yani otursanız birkaç saatte bilemediniz yarım günde bitirebileceğiniz zorlukta bir öde.
+
+335
+00:39:35,080 --> 00:39:48,819
+Yani yapmaya çalışırsanız faydasını göreceğiniz ve sizin için katkı sağlayacağına inanıyorum. Başka sorunuz yoksa şey yapabiliriz, burada kesebiliriz. Var mı başka sorunuz?
+
+336
+00:39:48,819 --> 00:40:00,739
+Hocam bir önceki quiz için test sorularında klasik cevaplarda mesela boşluk doldurmanın bir tane boşluk yanlış olsa bütün puan gidiyor mu?
+
+337
+00:40:02,819 --> 00:40:11,040
+Normalde şey yok aslında bölerek veriyoruz. Bir tane bir tek şey de yapmadık çünkü zaten o elle çözülen bir soruydu.
+
+338
+00:40:11,040 --> 00:40:37,720
+nedir o? Romalı şey problemi hani başkan başkan yardımcısı. O çünkü kısa ve elle çözülen. Yoksa mesela doğru yanlışlarda eğer işte beş taneden ikisini bildiysem falan ona göre veriyoruz. Ama mesela o push top sorusu enkü dekü sorusunda da yani orada enkü'yu doğru yaptıysam beş puan dekü'yu doğru yaptıysam beş puan.
+
+339
+00:40:37,720 --> 00:40:44,899
+yani oralarda hani DQ'da sadece reverse yazdı puan vereyim diye bir şey olamaz çünkü öyle olmaz.
+
+340
+00:40:45,080 --> 00:40:49,059
+Hani o parçasının tamamını doğru yaptıysam 5 puan o şekilde.
+
+341
+00:40:49,559 --> 00:40:52,580
+Ya açıkçası hocam biraz ya ben kendi adımı konuşuyorum.
+
+342
+00:40:52,580 --> 00:40:54,699
+Biraz benim bu dersden gözüm korkuyor.
+
+343
+00:40:55,419 --> 00:40:58,800
+Çünkü hani zorluyorsunuz öğrencileri.
+
+344
+00:40:59,520 --> 00:41:02,540
+Uzaktan olduğu için böyle hani algoritma yazalım şey yapalım.
+
+345
+00:41:02,660 --> 00:41:07,339
+Ben mesela diğer üniversitelerin veri yapılır algoritmalar dersleriyle karşılaştırıyorum.
+
+346
+00:41:07,720 --> 00:41:15,720
+Yani hani bir test sorusu verip geçiyorlar direkt ama biz de öyle değil biz yani baya baya kendimiz baştan bir şeyler yazıyoruz.
+
+347
+00:41:16,211 --> 00:41:45,291
+Öyle olması gerekiyor. Çünkü şimdi nasılsa vaktimiz var. Bir iki dakika bununla ilgili ben size bilgi vereyim. Şimdi bizim bilgisayar mühendisliği bölümünden mezun olan öğrencilerimiz hatta mezun olmadan üçüncü sınıfta zaten hani biz yorulmayın desek de parten çalışmaya başlıyorlar. Son sınıfta da şeyi görmeden daha yani birinci dönemin sonunda hepsi yani hepsi demeyeyim de yani ikinci dönemin sonunda hepsi iyi yerlere yerleşmiş oluyor.
+
+348
+00:41:45,291 --> 00:41:59,211
+bunun sebebi iyi tasarım, algoritma tasarımı yapabilmeleri ve 3. ve 4. sınıfta yani projesini kendi başına yapan, projesinde bir şeyler öğrenen öğrenciler
+
+349
+00:41:59,211 --> 00:42:09,151
+şeyde de gerek piyasada gerek akademik hayatta yani bir kısmı üniversitede kalıyor çünkü master doktora yapıyor yurt dışında veya Türkiye'de çok başarılı oluyorlar.
+
+350
+00:42:09,151 --> 00:42:11,791
+yani sizlerin şeyden farkı o.
+
+351
+00:42:12,511 --> 00:42:14,631
+Pek çok diğer üniversiteden farkı o.
+
+352
+00:42:15,072 --> 00:42:18,171
+Ve staja gittiklerinde siz şimdi daha ikinci sınıfsınız.
+
+353
+00:42:19,051 --> 00:42:23,152
+Talihsizliğiniz de birinci sınıfın ortasında kapanma yaşamanız oldu.
+
+354
+00:42:24,031 --> 00:42:28,932
+Bizim öğrencilerimiz staja gittiklerinde de biz bu geri beslemeleri hep öğrencilerden bilmiyoruz.
+
+355
+00:42:28,932 --> 00:42:33,652
+Yani bizim kendi uydurduğumuz, kendi söylediğimiz şeyler değil bunlar.
+
+356
+00:42:34,211 --> 00:42:35,951
+Hep şey söylüyorlar öğrenciler.
+
+357
+00:42:35,951 --> 00:42:47,111
+yani işte ben verilemişi hemen yapabildim ama işte yani çok puan bizden daha yüksek olan üniversitelerden arkadaşları için bile onlar çok zorlanıyorlar vs.
+
+358
+00:42:47,111 --> 00:42:57,891
+Şimdi biliyorsunuz çok fazla bilgisayar mühendisliği var yani ve pek çoğunun onu da biliyorsunuzdur mezunları iş bulmakta çok güçlük çekiyor.
+
+359
+00:42:58,432 --> 00:43:01,031
+Yani bir fark yaratmanız için iyi olmamız lazım.
+
+360
+00:43:01,031 --> 00:43:17,231
+dolayısıyla bu seviye yıllardır böyle yani size özgü bir şey değil ve öğrencileriniz kaliteli de sizler iyi öğrencilersiniz hepiniz yüksek puanlarla gelmiş akıllı öğrencilersiniz çalışkan öğrencilersiniz başarılı oluyorlar.
+
+361
+00:43:17,231 --> 00:43:31,711
+Şimdi sizde biz yalnız şunu yaptık daha önce böyle quiz miyiz yoktu doğal olarak çünkü sınıf ortamında birbirimizi görerek öğrencinin yüzüne baktığımızda dersi anlayıp anlamadığını da görerek ders yapabiliyorduk.
+
+362
+00:43:31,711 --> 00:43:45,951
+Ama şimdi böyle bir şans yok yani şu anda mesela 42 kişi gözüküyor acaba hani belki bugün ödevle ilgili bir şey söylerim diye herkes açmış dinliyordur ama acaba normalde kaç kişi takip ediyor?
+
+363
+00:43:45,951 --> 00:43:50,251
+Yine öğrencilerden geri beslemesini aldık bu dönemde.
+
+364
+00:43:50,251 --> 00:43:56,571
+Ben kayıttan izlerim diyordum ama birinci dönemin sonunda bu tür bir geri besleme aldık.
+
+365
+00:43:57,111 --> 00:43:59,411
+Sonra birikince izleyemez oldum.
+
+366
+00:44:00,031 --> 00:44:03,191
+Şimdi o zaman bizim şeyi canlı tutmamız lazım.
+
+367
+00:44:03,351 --> 00:44:04,971
+Yani izleyemez olduğumun anlamı şu.
+
+368
+00:44:06,311 --> 00:44:08,611
+Yani haftalarca bakamadım ben o kayıtlara.
+
+369
+00:44:09,131 --> 00:44:10,651
+Nasıl sağlayacağız bunu?
+
+370
+00:44:10,771 --> 00:44:12,151
+Biz bu yüzden şey koyduk.
+
+371
+00:44:12,152 --> 00:44:26,872
+yani quiz işte ödevler böyle kısa sürede yapılacak. Normalde normal zamanda biz veri yapılarında da Aygutma analisinde de ödevleri işte en az bir haftalık en az iki haftalık falan veriyorduk.
+
+372
+00:44:26,872 --> 00:44:35,172
+Fakat sizin özel bir durumunuz var. Sizin bu dönemi şey atlatmamız gerekiyor. Yani hasarsız atlatmamız gerekiyor.
+
+373
+00:44:35,171 --> 00:44:46,051
+çünkü öyle bir tersiyerek denk geldi ki sizin için tam temel bilgileri bilgisayar mühendisliği için alacağınız yıl ikinci sınıf, ikinci sınıfta kapalısınız.
+
+374
+00:44:46,751 --> 00:44:54,991
+O yüzden yani evet farkındayım böyle yükleniyormuşuz gibi oluyor ama inanın öncelikle önceki yıllara göre biraz daha fazla yüklendik.
+
+375
+00:44:54,991 --> 00:45:01,011
+Sadece quiz koyduk. Bir de işte böyle ödev ilk iki ödev sadece 3 ve 4 uzun süre vereceğiz.
+
+376
+00:45:01,556 --> 00:45:28,835
+böyle kısa süreli yaptık ki hani kopmayın olaydan diye. Seni çok iyi anlıyorum ama yani gerçekten bu sizin iyiliğiniz için gerekli. Çünkü veri yapılarında mesela yeteri kadar iyi olamazsanız sonra 3'te ve 4'te çok zorlanırsınız. Yani bütün hani ona bağlı olan bütün derslerde çok zorlanırsınız. O yüzden şeyi unutmayın.
+
+377
+00:45:28,835 --> 00:45:58,675
+nasılsa izafi yani şey değil ya nedir eğri uydurularak notlar verildiği için yani 40 aldım da yani 40'da kalınmıyor zaten işte 50 aldım da neyse işte 43'de kaldım gibi bir şey yok eğri uydurulmuş olacak zaten birincisi bu ikincisi de kuisleri habersiz yaptık o yüzden onlardan tabii ki tam puan almanızı biz de beklemiyorduk.
+
+378
+00:45:58,835 --> 00:46:00,556
+o anda ne biliyorsam o çünkü.
+
+379
+00:46:01,736 --> 00:46:04,715
+Yani bunların hepsi bir araya geldiğinde çalışın.
+
+380
+00:46:04,815 --> 00:46:06,755
+Çalışırsanız başınıza bir şey gelmez.
+
+381
+00:46:06,916 --> 00:46:07,355
+Korkmayın.
+
+382
+00:46:07,535 --> 00:46:08,655
+Yani kopya da çekmeyin.
+
+383
+00:46:08,755 --> 00:46:12,875
+Çünkü gerçekten uzun vadede çok zarar görürsünüz kopya ile.
+
+384
+00:46:13,776 --> 00:46:19,695
+Biz quizlerde gördük yani kopyelerin çekildiği durumları falan gördük ama yapmayın bunu.
+
+385
+00:46:19,695 --> 00:46:28,215
+Çünkü yani piyasaya çıktığınızda veya işte akademik hayata devam edecekseniz orada iyi olabilmeniz için
+
+386
+00:46:28,215 --> 00:46:34,735
+biraz zorlanmanız gerekiyor. Bilmiyorum biraz içinizi rahatlatabildim mi ama sebep bu.
+
+387
+00:46:36,556 --> 00:46:49,935
+Anladım hocam yani tabii doğru söylüyorsunuz. Yani sadece benim hani sıkıntım şuydu hani quizlerden böyle birden düşük almaya başlayınca vize açısından gözüm korktu.
+
+388
+00:46:49,935 --> 00:46:53,435
+O yüzden kendimi açıklamak istedim yani.
+
+389
+00:46:53,435 --> 00:47:12,155
+Anladım korkma korkma. Yani çalışıyorsanız bir şey olmaz. Bir de şeyi görmüş olursunuz. Aslında biz quizi şunu için yapmak istedik. Yani birdenbire vizeye geldiğimizde siz de biz de biz de biz haftalardır bir sürü şey anlattık ama olmamışı görmeyelim.
+
+390
+00:47:12,155 --> 00:47:18,135
+hani genel olarak öğrenciler ne de takılıyor ne de sıkıntı var biz bunu kendimiz için görmek istedik.
+
+391
+00:47:18,675 --> 00:47:21,215
+Aynı şekilde siz de kendiniz için görün istedik.
+
+392
+00:47:21,555 --> 00:47:25,995
+Yoksa zaten biz habersiz olduğu için yani ondan tam puan alan da yok.
+
+393
+00:47:25,995 --> 00:47:32,055
+Yüksek alanlar var ama alınması da gerekmiyor habersiz bir şey çünkü ve toplamın 10 puanını edecek.
+
+394
+00:47:32,275 --> 00:47:34,915
+Yani ortalamamızın yani 100 üzerinden 10 puanını edecek.
+
+395
+00:47:35,035 --> 00:47:38,915
+O yüzden hani böyle çok ortalamayı sarsan bir şey de değil.
+
+396
+00:47:38,916 --> 00:47:43,335
+ortalamanızı birinci bize ve final etkileyecek sizin de bildiğiniz gibi.
+
+397
+00:47:43,916 --> 00:47:47,856
+Yani bence tarzı da anladınız nasıl oluyor ne bitiyor.
+
+398
+00:47:48,576 --> 00:47:54,455
+Bize de şey soracağız tam puanlamasını hesaplamadık ama daha soruları hazırlamadık.
+
+399
+00:47:54,455 --> 00:48:02,276
+Muhtemelen 60 puanlık veya işte en fazla 70 ama 70 asla geçmez puanlık klasik soru.
+
+400
+00:48:02,276 --> 00:48:10,876
+ve bir de böyle şeydeki gibi quiz 2'deki gibi işte boşluk doldurmadır vesairedir öyle sorular soracağız.
+
+401
+00:48:12,395 --> 00:48:19,216
+Yani buna yavaş yavaş hazırlandığınız zannediyorum hani quiz 1'de, quiz 2'de sorulan sorularla.
+
+402
+00:48:20,035 --> 00:48:22,695
+Stres olmayın, asla stres yapmayın.
+
+403
+00:48:23,255 --> 00:48:24,535
+Sakin sakin çalışın.
+
+404
+00:48:24,535 --> 00:48:30,695
+Çalışmada bak mesela bu ödevi yaparsanız ooo yani ben hani herkese onu tavsiye ederim.
+
+405
+00:48:30,695 --> 00:48:37,195
+Ben çalışırken de öğrenciliğimde sizin yerinizdeyken öğrenciyken
+
+406
+00:48:37,588 --> 00:49:06,227
+hep şey yapardım. Algoritmik derslerde soru çözerdim. Yani konu çözülerek çalışılmaz. O turunda mesela bu ödevi yaparken gerçekten çok şey öğrenirsiniz. Yani derste linked list, insert, delete'i dinledimle olmaz çünkü. Yani sizin kendinizin yapması gerekir. Aynı şekilde mesela ben sizin yerinizde olsam, hani quiz bir sorusunu zamanında sınavda çözemediysem oturur yazarım onu yavaş yavaş algoritmasına.
+
+407
+00:49:06,227 --> 00:49:11,387
+derslerde anlatılan şeylere bakmadan kendim kodunu yazarım falan.
+
+408
+00:49:11,387 --> 00:49:13,747
+O zaman çok çok iyi öğrenirsiniz.
+
+409
+00:49:14,007 --> 00:49:15,387
+Yani çalışırken öyle çalışın.
+
+410
+00:49:16,367 --> 00:49:18,167
+Hem kalıcı olur, hiç unutmazsınız.
+
+411
+00:49:18,327 --> 00:49:22,427
+Çünkü hata yapacaksınız kod yaparken, uğraşacaksınız falan.
+
+412
+00:49:23,308 --> 00:49:27,187
+Bence o şekilde yaparsanız yani çok iyi öğrenirsiniz.
+
+413
+00:49:28,047 --> 00:49:32,387
+Ve üstüne eklene eklene gittiği için de diğer derslerde de başarılı olursunuz.
+
+414
+00:49:32,387 --> 00:49:43,467
+olursunuz. Var mı? Hani bizi uyarmak için soracağınız şeyler varsa, yani onları da dinliyorum zaten ben. Varsa söylemek istemiyorum. Hala on dakikamız var size sorun açılması için.
+
+415
+00:49:45,247 --> 00:49:47,988
+Hocam ben şeyi söyledim. Buyurun.
+
+416
+00:49:48,988 --> 00:49:58,287
+Şey hocam, mesela soru gelince bilmediğiniz bir şey yapmak mesela beni kötü etkilemiyor. Hani bilmiyorsam zaten bilmiyorumdur yani.
+
+417
+00:49:58,287 --> 00:50:06,987
+beni üzen şey genelde bildiğim bir şeyi o anda hızdan dolayı yapamayıp sonradan bakıp aslında ben bunları biliyordum deyince kötü oluyor.
+
+418
+00:50:07,767 --> 00:50:08,047
+Çok haklısın.
+
+419
+00:50:08,047 --> 00:50:09,007
+O böyle moral bozuyor.
+
+420
+00:50:09,187 --> 00:50:10,448
+Moral bozuyor böyle şey oluyor.
+
+421
+00:50:10,527 --> 00:50:12,167
+Düşürüyor insanın şeyini yani.
+
+422
+00:50:12,707 --> 00:50:14,567
+Çok haklısın.
+
+423
+00:50:14,567 --> 00:50:19,567
+Biz aslında geçen sene ilk başta çok iyi süreler veriyorduk.
+
+424
+00:50:20,567 --> 00:50:27,847
+Fakat yani burada biraz yani hani söylemek istemiyorum ama öğrencileri suçlamak istiyorum.
+
+425
+00:50:27,847 --> 00:50:31,967
+çünkü ciddi bir sizin de gayet iyi bildiğiniz kopya ağı oldu.
+
+426
+00:50:32,607 --> 00:50:35,147
+Yani şeyleri yavaş yavaş koymak zorunda kaldık.
+
+427
+00:50:35,147 --> 00:50:39,247
+Önce işte okunan soruya geri dönemesin dedik.
+
+428
+00:50:39,327 --> 00:50:40,987
+Çünkü biz gözle de görüyorduk.
+
+429
+00:50:41,287 --> 00:50:43,167
+Şimdi öğrenci görüyorsun.
+
+430
+00:50:43,447 --> 00:50:45,787
+Eski sistemde şey vardı bundan öncekinde.
+
+431
+00:50:46,267 --> 00:50:48,427
+Öğrenci soru işaretlediğinde görüyorduk biz.
+
+432
+00:50:48,528 --> 00:50:50,827
+Yani birinci soru işaretledi, ikinci soru işaretledi.
+
+433
+00:50:51,367 --> 00:50:52,927
+Yirmi soruyu işaretlemiyor.
+
+434
+00:50:53,907 --> 00:50:56,907
+Son bir dakikada yirmi soruyu birden işaretliyor.
+
+435
+00:50:56,907 --> 00:51:25,627
+ve böyle gruplar var mesela 19 doğrusu olan bir grup var tamamının bir yanlışı var ve ortak yanlış hepsi aynı şey yanlış yapmış arkadaş gruplarını görüyorsun 17 doğrusu olan bir grup var aynen yani hepsi aynı üç yanlışı yapmış falan biz uyardık yani ilk sınavdan başlayarak uyardık bakın yapmayın işte kendiniz yapın bilmem ne aynı şekilde klasik sınavda da birebir aynı yapıyorlar yani öyle böyle değil
+
+436
+00:51:25,627 --> 00:51:29,047
+ve bir de şey diye itiraz falan ettiler.
+
+437
+00:51:29,207 --> 00:51:31,067
+Yani altından kalkamadık biz o işin.
+
+438
+00:51:31,427 --> 00:51:33,847
+Bire bir aynı yani inanın ki tamam aynı kodun.
+
+439
+00:51:34,267 --> 00:51:36,187
+İşte birlikte çalışmıştık diyor.
+
+440
+00:51:36,187 --> 00:51:37,827
+Yani değişken adım da mı aynı?
+
+441
+00:51:38,347 --> 00:51:39,667
+Yani böyle bir şey olabilir mi?
+
+442
+00:51:41,067 --> 00:51:43,107
+Aynı hatayla çalışıyor.
+
+443
+00:51:43,187 --> 00:51:43,887
+Tamam aynı.
+
+444
+00:51:45,207 --> 00:51:48,007
+Ondan sonra yani biz bunun altından kalkamadık.
+
+445
+00:51:48,088 --> 00:51:50,447
+Bu sefer şey öğrenciler şikayet etmeye başladı.
+
+446
+00:51:50,527 --> 00:51:51,187
+Siz bunları biliyorsunuz.
+
+447
+00:51:52,067 --> 00:51:54,767
+Kendi başına yapan öğrenciler şikayet etmeye başladı.
+
+448
+00:51:55,627 --> 00:51:59,347
+Yani biz kendimiz yapıyoruz, düşük alıyoruz, onlar yüksek alıyorlar diye.
+
+449
+00:52:01,127 --> 00:52:03,887
+Ve geçen dönem de aslında yani böyle şey oldu.
+
+450
+00:52:03,887 --> 00:52:09,207
+Şimdi öyle olunca hep beraber bütün hocalar kendimizce önlem almaya çalışıyoruz.
+
+451
+00:52:09,347 --> 00:52:15,887
+Yani öğrenciler aslında bizim başta sunduğumuz imkanları çok suistimal ettiler.
+
+452
+00:52:17,107 --> 00:52:19,507
+Ama bu bir deadlock yani.
+
+453
+00:52:19,947 --> 00:52:24,007
+Uzun süre versek kopyağa iyi çalışıyor, kısa süre versek bilmem ne.
+
+454
+00:52:24,007 --> 00:52:29,088
+yani o yüzden süreyi tam yapabileceğiniz kadar vermek durumunda kalıyoruz.
+
+455
+00:52:29,088 --> 00:52:34,007
+Yani işte üzerine iki dakikada ekledik hatta öyle otuz dakika, küt dakika veremiyoruz.
+
+456
+00:52:34,067 --> 00:52:35,168
+Eskiden olsa verirdik.
+
+457
+00:52:35,635 --> 00:52:41,635
+ben size şöyle söyleyeyim bizim Veri Yapıları ve Algoritmalarısı sınavlarımız ikişer saat olurdu.
+
+458
+00:52:42,175 --> 00:52:52,875
+Sınav aslında bir saat, bir saat on beş dakika da falan bitebilir ama hani çocuğun aklına bir şey gelir, onu da yapsın, rahat etsin, stres olmasın falan diye biz verirdik iki saati ne yapıyorsa yapsın sınıfta.
+
+459
+00:52:53,635 --> 00:52:59,835
+Ama burada şartlar şu anda bizim için çok öğrenciler tarafından zorlaştırıldı.
+
+460
+00:53:00,316 --> 00:53:03,375
+Var mı başka sormak istedik? O yüzden sen haklısın, sana hak veriyorum.
+
+461
+00:53:03,375 --> 00:53:09,435
+Hocam rapor istiyor musunuz? Raporun şekli, şemali
+
+462
+00:53:09,435 --> 00:53:12,435
+Yok yok onların hepsi var soruda göreceksiniz şimdi
+
+463
+00:53:12,435 --> 00:53:16,255
+Akış falan istemiyoruz bu soruda
+
+464
+00:53:16,255 --> 00:53:17,915
+Tamam mı?
+
+465
+00:53:18,735 --> 00:53:19,915
+Tamam teşekkürler
+
+466
+00:53:19,915 --> 00:53:25,795
+Ben teşekkür ederim o zaman 5 dakika kaldı ben kapatayım isterseniz başka aklınızda bir şey yoksa
+
+467
+00:53:25,795 --> 00:53:27,895
+Size başarılar diliyorum
+
+468
+00:53:27,895 --> 00:53:33,216
+Çok böyle altından kalkamadığınız bir şey olursa sorun lütfen çok kafanızı karıştıran
+
+469
+00:53:33,215 --> 00:53:43,655
+şeyle mailde sorabilirsiniz ama öyle çok da alakasız rastgele şeyler değil de lütfen gerçekten böyle anlaşılmayan bir şey varsa sorabilirsiniz.
+
+470
+00:53:44,955 --> 00:53:46,615
+Başarılar diliyorum hepimize.
+
+471
+00:53:47,176 --> 00:53:50,295
+Bize haftasında da önümüzdeki hafta kolaylıklar diliyorum.
+
+472
+00:53:50,435 --> 00:53:53,575
+İnşallah sınavlarınız çok güzel geçer.
+
+473
+00:53:53,675 --> 00:53:57,095
+Dediğim gibi stres yapmayın, heyecanlanmayın, sakin sakin yapın.
+
+474
+00:53:58,115 --> 00:54:00,135
+Şeyle başlarsanız o iş kötü gider.
+
+475
+00:54:00,255 --> 00:54:02,775
+Bunu da şey diye söylemiyorum, naf olsun diye söylemiyorum.
+
+476
+00:54:02,775 --> 00:54:31,255
+yani ay çok zor olacak ben bundan geçemem falan değil hazırlanın gelip rahatlıkla geçersiniz korkmayın yani bizim şey gibi bir niyetimiz yok 50 kişiyi bırakalım da seneye bu sınıf 50 kişi daha fazla olsun 50 tane öğrenci daha fazla olsun daha çok öğrenciyle uğraşalım falan gibi bir niyetimiz kesinlikle yok yani gayet şey geçebilecek herkes geçsin öyle bir zorlama sıkıştırma gibi bir niyetimiz yok.
+
+477
+00:54:31,255 --> 00:54:36,255
+Peki hadi bakalım size başarılar diliyorum kolay gelsin haftaya sınıflarda görüşürüz.

@@ -1,0 +1,2431 @@
+1
+00:01:48,628 --> 00:01:50,628
+Arkadaşlar, merhabalar.
+
+2
+00:01:52,628 --> 00:01:57,628
+Bir WhatsApp kurulunuz falan varsa şu linki diğer gruplara paylaşayım mısınız?
+
+3
+00:02:02,644 --> 00:02:03,644
+Teşekkürler [öğrenci].
+
+4
+00:06:22,708 --> 00:06:24,708
+Merhaba, Mustafa Hocam.
+
+5
+00:06:25,708 --> 00:06:26,708
+Merhaba, Hocam.
+
+6
+00:06:27,708 --> 00:06:35,708
+Şu an yetkisizde. Siz herhalde Fatih Hoca'yla da haberleştiniz. Ben linkleri paylaştırdım arkadaşlarla. Hem de gruptan paylaştım.
+
+7
+00:06:36,708 --> 00:06:38,708
+Tamamdır. İki grupta biliyor değil mi hocam?
+
+8
+00:06:39,708 --> 00:06:46,708
+Yani şu an Klasum'dan veri gitti. Diğer gruptan arkadaşlar var mı? Burada soralım bir.
+
+9
+00:06:50,036 --> 00:06:52,036
+Fatih Hoca'nın grubunu varmış.
+
+10
+00:06:52,036 --> 00:07:07,036
+Yani şu linki tekrar arkadaşlar sizler paylaşırsanız, Barbz'da farklı WhatsApp falan grubunuz sağ olsun biraz önce arkadaşlarımızdan [öğrenci] paylaştı ama tekrar farklı bir grup varsa oraya da gönderin.
+
+11
+00:07:07,036 --> 00:07:12,036
+Herkes buradan katılsın. Bu hafta iki grup tek bir linkten katılacak.
+
+12
+00:07:15,036 --> 00:07:17,036
+Hocam iyi dersler, görüşmek üzere.
+
+13
+00:07:17,524 --> 00:07:19,052
+Görüşürüz hocam.
+
+14
+00:07:23,348 --> 00:07:31,211
+Arkadaşlar, bir 5 dakika bekleyelim. Herkesin gelmesi için ondan sonra başlarız.
+
+15
+00:11:05,524 --> 00:11:08,524
+Evet arkadaşlar, istiyorsanız yavaş yavaş başlayalım.
+
+16
+00:11:17,875 --> 00:11:19,875
+Görüntü geliyor değil mi?
+
+17
+00:11:19,875 --> 00:11:21,875
+Evet hocam.
+
+18
+00:11:21,875 --> 00:11:22,875
+Geliyor.
+
+19
+00:11:22,875 --> 00:11:24,875
+Tamamdır.
+
+20
+00:11:24,875 --> 00:11:30,875
+Arkadaşlar, bu uygulamada ilk başta bir labüçün çözümüne bakacağız.
+
+21
+00:11:30,875 --> 00:11:38,827
+Burada ilk başta bir labüç sorusuna bakalım.
+
+22
+00:11:39,379 --> 00:11:57,779
+Bu soruda bir robotun oda temizlerken farklı odalara geçiş, hani başlangıçtan bitiş noktasına olan rotasını bulmanız istenmiş ve kaç tane rota olduğunu bulmanız istenmiş ve bunu recursive olarak yapmanız istenmiş.
+
+23
+00:11:57,779 --> 00:12:04,980
+Burada sizden bir matriz boyutu alınacaktır. Daha sonra matrizin elemanlarını almanız istenmiş.
+
+24
+00:12:05,216 --> 00:12:16,216
+Bu matrisin elemanını, bu matrisi yazdırmanız istenmiş ve robotun gideceği toplam yolu hesaplama işlemini yapmanız istenmiş.
+
+25
+00:12:16,216 --> 00:12:27,216
+En son olarak da gidilen yolların güzergahını yazdırma. Bir de burada tabii kaç tane rota olduğunu bulacaktınız.
+
+26
+00:12:27,216 --> 00:12:30,192
+00 noktasından başlayacak.
+
+27
+00:12:30,192 --> 00:12:54,192
+Sağ en alt köşeye gelince, n-1, n-1 noktasına gelince duracak. Burada oda değeri 0 ise girmeyecek. Eğer oda değeri 1 ise de girebilecek. Ama burada önemli bir nokta var. 1 olan bütün odalara girmesi gerekmiyor. Yani sadece 0-0 noktasından...
+
+28
+00:12:55,412 --> 00:13:03,412
+N-1, N-1 noktasına gidiş rotası ve kaç tane rota olduğunu bulması isteniyor.
+
+29
+00:13:03,412 --> 00:13:07,412
+Sıfır olan noktalarda atlaması isteniyor.
+
+30
+00:13:07,412 --> 00:13:09,932
+Soruyu anladınız mı?
+
+31
+00:13:15,316 --> 00:13:35,796
+Şimdi bunun çözümünü bir kontrol edelim. Burada bir tane matriks değişkenimiz olacak ve bunu yukarıda tanımladığımız bir değişkenle boyutlandırıyoruz. Daha sonra bizim bir pet değişkenimiz olacak.
+
+32
+00:13:40,820 --> 00:13:50,820
+elemanlarını aldık. Bunu ayrı bir fonksiyonla aldık. İki tane for içinde. Bu matrisin değerlerini alıyoruz.
+
+33
+00:13:50,820 --> 00:14:03,820
+Daha sonra bu matrisin boyutunu bulacağız. Yolu bulacağız. Şimdi yolu bulurken, bizim durma koşulumuz ne?
+
+34
+00:14:05,875 --> 00:14:23,875
+n-1 ve C'nin n-1 olması değil mi? Yani bizim sağ, alt, en uzak köşeye ulaşmamız. Eğer buraya ulaşırsa en son o noktayı da kabul edip, pet'e ekleyip, pet'i yazdırıyoruz.
+
+35
+00:14:34,419 --> 00:14:46,419
+Birinci, hani çift elemanlar satır numarasını, tek elemanlar sütun numarasını gösterecek şekilde yaptığımız için de, for da bir arttırmıyoruz da iki arttırarak ilerliyoruz.
+
+36
+00:14:49,908 --> 00:14:57,627
+Ve daha sonra return 1 diyoruz. Yani buradan bir tane yol var demek oluyor bu.
+
+37
+00:14:59,508 --> 00:15:11,908
+Daha sonra bizim bir tane geçiş koşulumuz var. Bu nedir? Eğer i büyük eşittir n'den ve c büyük eşittir n'den. Yani eğer biz şu anda
+
+38
+00:15:12,851 --> 00:15:27,851
+Matris'in tanımlamanan boyutlarının dışını kontrol ediyorsak, o zaman geç diyeceğiz. Bir tane daha koşulumuz var, bir de bu da bulunduğumuz noktanın sıfır olmaması.
+
+39
+00:15:27,851 --> 00:15:38,731
+Eğer bu koşulları sağlıyorsa, return sıfır yaptık. Ne demek? Yani geçerli bir yol yok.
+
+40
+00:15:40,115 --> 00:16:02,115
+Daha sonra, eğer bu koşulların dışındaysa, o zaman matrisin içindeyiz ve burası 1. O zaman burayı path array'ine ekle ve sonra sağ tarafa ve aşağı tarafa recursive olarak kontrol et.
+
+41
+00:16:07,860 --> 00:16:21,059
+Bütün ihtimaller zaten sadece sağ ve aşağıya gidebiliyor. Bütün ihtimalleri kontrol edecek ve eğer bizim koşullarımıza uygunsa, o zaman bunu pet'e ekleyecek.
+
+42
+00:16:24,059 --> 00:16:32,059
+Buradan bir geri dönüş değeri alıyoruz. Bu da, bu gittiğimiz yol sonuca ulaşıyor mu?
+
+43
+00:16:33,331 --> 00:16:58,331
+Eğer sonuca ulaşıyorsa, bir döndürüyorduk şurada hatırlıyorsanız. Sonuca ulaşıyorsa buradan bir döndüreceğiz. Buradan da bir döndürebiliriz. Doğal olarak sağdan ve aşağıdan gidişimizin ihtimallerini de en son geriye gönderiyoruz. Böylece en üste çağırdığımız fonksiyona...
+
+44
+00:16:59,059 --> 00:17:04,659
+Başlangıç noktasından bitiş noktasına kaç farklı yolda ulaşabileceğimizi iletiyoruz.
+
+45
+00:17:13,236 --> 00:17:16,736
+Ee, sorusu olan var mı?
+
+46
+00:17:30,195 --> 00:17:31,695
+Anladınız mı peki?
+
+47
+00:17:39,284 --> 00:17:45,284
+Hocam, burada recursive olmasını nasıl sağlıyorduk? Yani birbirini nerede çağırıyor iç içe?
+
+48
+00:17:45,284 --> 00:17:57,284
+Şurada çağırıyor işte. Yani sağ koşullara ve aşağı koşullara bakıyor ya, her adım atışında bu fonksiyonu yeniden çağırıyor. Böylece recursive oluyor.
+
+49
+00:17:58,284 --> 00:17:59,284
+Şurası.
+
+50
+00:17:59,284 --> 00:18:00,284
+Tamamdır.
+
+51
+00:18:01,284 --> 00:18:04,284
+Peki bu soruyu yapamayanlar var mı?
+
+52
+00:18:08,115 --> 00:18:10,115
+Ya da nerede takıldılar?
+
+53
+00:18:17,332 --> 00:18:27,731
+Hocam, ben yolu yazdırırken bir problem yaşamıştım. Yani yol sayısını bulabiliyordum ama yolu yazdıramıyordum. O değerleri tutamıyordum yani hangi karelerde bir olduğunu.
+
+54
+00:18:27,731 --> 00:18:31,932
+Hımm. Eee, bir dizi mi kullanmadın?
+
+55
+00:18:32,788 --> 00:18:46,188
+Aslında atıyordum şeyin üzerine yani onları da bir dizide tutuyordum ama dediğim gibi bir farklı değerler alıyordu. Belki türlerle alakalı bir sorun yaşamış olabilirim tekrar üzerine bakmam gerekiyor. Ben öyle bir sorun yaşamıştım yani.
+
+56
+00:18:46,188 --> 00:18:55,788
+Anladım. Ama mantığı oluşturdun. Yani şu recursive geliştiği tamam. Tamamdır. Başka birisi konuşuyordu.
+
+57
+00:18:55,788 --> 00:18:56,387
+Hocam.
+
+58
+00:18:57,491 --> 00:19:05,491
+Ben mesela birinci rotanın tam olarak hangi dizinin indeksinde yer aldığını, sonra ikinci rotanın nereye depolandığını pek anlayamadım.
+
+59
+00:19:06,491 --> 00:19:15,491
+Ha birden fazla. Şöyle, şimdi bu her adımda gidiyor ya recursive olarak, şu pet değişkeni.
+
+60
+00:19:15,491 --> 00:19:16,491
+Aynen.
+
+61
+00:19:16,491 --> 00:19:22,491
+Şimdi bu her adımda giderken her fonksiyon çağrışında kopyalanıyor.
+
+62
+00:19:22,491 --> 00:19:24,491
+Evet.
+
+63
+00:19:25,683 --> 00:19:26,683
+Eee...
+
+64
+00:19:29,144 --> 00:19:34,683
+Ya ben şeyi merak ediyorum, burada bu fonksiyon bir kere çalıştığında bize sadece bir tane rotayı göstermez mi?
+
+65
+00:19:36,144 --> 00:19:38,667
+Eee, şimdi bir saniye, ben de düşünüyorum.
+
+66
+00:19:43,635 --> 00:20:02,836
+Yok, şu yüzden olmaz. Çünkü şöyle düşün, üstüne yazdıracak ya hep, şimdi bak, özür dilerim. Şu pet değişkeni aslında kopyalanmıyor. Tamam mı? Çünkü bu teknik olarak array'in kendisini iletiyor. Değil mi?
+
+67
+00:20:02,836 --> 00:20:09,815
+Evet. Ama petlenk, ki biz bunu ij'yi atamak için kullanıyoruz, kopyalanıyor.
+
+68
+00:20:10,644 --> 00:20:21,923
+O yüzden, şimdi biz mesela şurada, nasıl diyelim, şöyle bir röbürentimiz olsun, şimdi, ya da şey, matrisimiz olsun, röbürent değil bu.
+
+69
+00:20:21,923 --> 00:20:37,923
+Şimdi biz buradayız ya, buraya giderken, pet renk ne? 1, değil mi? Şimdi petimiz de şurada tutulsun, 0 ve 1 olsun, tamam mı?
+
+70
+00:20:38,387 --> 00:20:45,387
+Şimdi buraya ne dedi? İşte sıfırda atıyorum bir şey olmasın. X'de de lefte gittik dedi. Tamam mı?
+
+71
+00:20:45,387 --> 00:20:46,387
+Aynen.
+
+72
+00:20:46,387 --> 00:20:53,387
+Şimdi bu noktada bir daha çağırıyor. Nereye çağırıyor? İşte sağ noktaya çağırıyor. Pet renk ne oldu?
+
+73
+00:20:54,387 --> 00:20:56,387
+2 oldu.
+
+74
+00:20:56,912 --> 00:21:24,012
+Nereye yazdı? Buraya yazdı, değil mi? Aynen. Daha sonra bunu tekrar çağırıyor, işte şuraya gidiyor, tekrar çağırıyor, şuraya gidiyor, tamam mı? İşte bu ne oluyor? Down, down oluyor. Tamam mı? Bir sıkıntı var mı? Yok. Şimdi bir tane rotayı buldu. Şimdi daha sonra burada return, return dedi, şuraya geldi tekrardan, tamam mı? Aynen. Buradan aşağıya gitti.
+
+75
+00:21:25,044 --> 00:21:27,044
+Pat's length ne?
+
+76
+00:21:28,044 --> 00:21:30,044
+2 oldu tekrardan.
+
+77
+00:21:30,044 --> 00:21:38,044
+2 oldu. O zaman Pat dizisine ne yazdı? Left yazmıştı. 2'ye ne yazdı şimdi? Down yazdı.
+
+78
+00:21:38,044 --> 00:21:42,044
+Şey sorabilir miyim? Dizi tek boyutluydu sanırım yanlış hatırlamıyorsam.
+
+79
+00:21:42,044 --> 00:21:43,044
+Evet, evet.
+
+80
+00:21:43,044 --> 00:21:45,044
+Üstüne yazmış olmadı mı şu an?
+
+81
+00:21:45,044 --> 00:21:49,996
+Aynen üstüne yazdı ama biz zaten şuraya gelince yazdırdık ya Pat'i.
+
+82
+00:21:50,451 --> 00:21:52,451
+Hayır, doğru doğru, evet, tamam.
+
+83
+00:21:52,451 --> 00:21:57,451
+Yani burada bir yazdırdı Pet'i, sonra tekrar başa gidip üzerine yazdı.
+
+84
+00:21:57,451 --> 00:21:59,451
+Haa, tamam, tamam.
+
+85
+00:21:59,451 --> 00:22:00,451
+Hı hı?
+
+86
+00:22:00,451 --> 00:22:02,451
+Anladım, çok sağolun.
+
+87
+00:22:06,900 --> 00:22:07,900
+Tamamdır.
+
+88
+00:22:07,900 --> 00:22:15,900
+Hocam, ben de şeyi soracaktım da. Biz şimdi hani, üstüne yazıyoruz ya her bir rotayı.
+
+89
+00:22:15,900 --> 00:22:16,900
+Evet.
+
+90
+00:22:16,900 --> 00:22:21,900
+Yani her bir rotayı ayrı ayrı bir dizide tutmak isteseydik mesela, onu nasıl yapardık?
+
+91
+00:22:21,900 --> 00:22:31,900
+Her bir rotayı ayrı bir dizide tutmak isteseydiniz. Şimdi bir kere bir R-Ray diziniz olacaktı sizin.
+
+92
+00:22:33,491 --> 00:22:40,892
+Gittiğiniz her adımı, aslında farklılaştığı noktada yeni diziye yazacaktınız.
+
+93
+00:22:40,892 --> 00:22:46,291
+Yani şimdi ilk adımda, yani şu anda tam emin değilim bu cevahtan bu arada.
+
+94
+00:22:46,291 --> 00:22:49,291
+Ama yani düşünüyorum, fikir üretmeye çalışıyorum.
+
+95
+00:22:49,291 --> 00:22:53,291
+Şimdi sizin bir, CtrR P dedik.
+
+96
+00:22:53,291 --> 00:22:56,291
+Şurada. CtrR.
+
+97
+00:22:56,291 --> 00:22:58,291
+Heh.
+
+98
+00:22:58,291 --> 00:23:01,291
+Şimdi sizin bir matrisiniz olsun.
+
+99
+00:23:02,996 --> 00:23:13,996
+Tamam mı? Şimdi bunun her biri farklı bir rota olacak şekilde. Kaç tane rota olduğunu bilmiyorsunuz. Bu arada bu iyi bir çözüm değil. Hani bunu baştan söyleyeyim.
+
+100
+00:23:13,996 --> 00:23:27,996
+Şimdi sizin ilk adımınız her birinde aynı olacak. Daha sonra siz burada diyelim sağa gittiniz ya, buraya sağa gittiğinizi ayrı tutacaksınız.
+
+101
+00:23:29,203 --> 00:23:34,483
+ve bir rota gidişinizi yazacaksınız. Yani şu ilk başta yazdığınızı buraya yazarsınız.
+
+102
+00:23:38,836 --> 00:24:02,496
+Ama bu yazdıklarınızı teknik olarak bir sonraki aşağıya, yani bir geri gittiğinizde, şimdi şuraya down dediniz ya, şuraya geri gittiğinizde, başka bir karar vereceğiniz zaman, gerçi burada verilmiyor, şuraya geri gittiğinizde diyelim, burada farklı bir karar vereceğiniz zaman aşağıya satıra ineceksiniz.
+
+103
+00:24:04,627 --> 00:24:14,627
+Burada da ne olacak? İşte buraya kadarki adımları kopyalayacaksınız. Sonra burada down diyeceksiniz buraya geçerken.
+
+104
+00:24:17,127 --> 00:24:18,067
+Anladım hocam.
+
+105
+00:24:19,027 --> 00:24:27,687
+Yani çok mantıklı olmuyor ama her birini farklı bir dizide tutmayı böyle yapıyorsunuz. Herhalde. Evet.
+
+106
+00:24:29,844 --> 00:24:39,844
+Daha iyi bir çözüm olabilir bu arada. Hani eğer daha bir çözüm olduğunu düşünüyorsanız konuşabiliriz. Ama benim aklıma gelen şu anki yöntem bu.
+
+107
+00:24:45,844 --> 00:24:47,844
+Başka sorusu olan var mı?
+
+108
+00:24:47,844 --> 00:24:53,844
+Hocam, ben ödevimi yaptığımda bu fonksiyon prototifi yazıyoruz ya.
+
+109
+00:24:53,844 --> 00:24:56,844
+Deklaration'dan mı bahsediyorsun?
+
+110
+00:24:56,844 --> 00:25:01,844
+Yok, şu an yapmadık ama main'den sonra fonksiyonları tanımlasaydık en üstte…
+
+111
+00:25:01,920 --> 00:25:05,920
+void fonksiyonun adı ve parametreleri şeklinde yazıyorduk ya bir daha.
+
+112
+00:25:05,920 --> 00:25:06,920
+Aynen.
+
+113
+00:25:06,920 --> 00:25:16,920
+Ben onu ödevde yazarken parametre yazmamışım ama çalışmasında bir sıkıntı yok. Bu bir sıkıntı oluşturuyor mu? Yani genel olarak yazdığımız gerekiyor da compiler mi düzeltiyor?
+
+114
+00:25:16,920 --> 00:25:21,920
+Ya şimdi şöyle, sen nasıl yazdın? Şöyle yaptın.
+
+115
+00:25:21,920 --> 00:25:26,920
+Parametre yok. Aynen, içi boş. Hiçbir sıkıntı yok ama çalışıyor.
+
+116
+00:25:28,596 --> 00:25:32,596
+Main'den önce mi fonksiyonlar, sonra mı? Sonra.
+
+117
+00:25:32,596 --> 00:25:39,596
+Ya burada normalde bir hata olması gerekiyor diye biliyorum. Hani farklı declaration'lar oldu diye ama...
+
+118
+00:25:39,596 --> 00:25:40,596
+Evet hocam.
+
+119
+00:25:40,596 --> 00:25:44,596
+Belki tamamen içinde boş olduğu için vermemiş olabilir.
+
+120
+00:25:44,596 --> 00:25:47,596
+Dev C++'ın özelliği galiba.
+
+121
+00:25:47,596 --> 00:25:50,596
+Dev C++ falan kullanmıyorum da.
+
+122
+00:25:50,596 --> 00:25:53,596
+He, farklı compiler kullanıyorsun. Tamam.
+
+123
+00:25:53,596 --> 00:25:55,596
+Yani Linux'taki C's direkt yani...
+
+124
+00:25:55,743 --> 00:25:57,743
+Direk CC'yi kullanıyorum.
+
+125
+00:25:57,743 --> 00:26:03,743
+Yani şimdi şöyle olduğu zaman yani çünkü bu hata veriyor normalde.
+
+126
+00:26:03,743 --> 00:26:05,743
+Hı.
+
+127
+00:26:05,743 --> 00:26:07,743
+Ama içi belki boş olduğu için olabilir.
+
+128
+00:26:07,743 --> 00:26:09,743
+Öğrençlik de o yüzden hata vermiyor galiba.
+
+129
+00:26:11,743 --> 00:26:12,743
+Aynen.
+
+130
+00:26:12,743 --> 00:26:16,743
+Yani içi boş olduğu için onu belki kabul ediyordur.
+
+131
+00:26:17,811 --> 00:26:22,411
+Ama o şey değil. Öyle yapmamaya çalış.
+
+132
+00:26:22,411 --> 00:26:31,612
+Tamam. Ben şimdi ödevi yaptıktan sonra çıkınca dedim bir sorayım. Çünkü çalışmasına çalışıyor. Ama kabul edilirim. Teşekkür ederim.
+
+133
+00:26:31,612 --> 00:26:37,211
+Şimdi orada şey var. Farklı bir compiler'da çalışıyorsanız arkadaşlar şöyle bir risk var.
+
+134
+00:26:37,279 --> 00:27:02,259
+Sizin compilerınızda çalışabilir çünkü bazı compilerlar baya izin veriyor bazı şeylere ama bazı compilerlar vermiyor. Bizim kullandığımız mesela çok bu konularda strict, kurallara uyması gerekiyor. Mesela şu int olayı, for'un içinde int tanımlanması olayı var. Bunu yapıyorlar.
+
+135
+00:27:02,799 --> 00:27:29,379
+Yani mesela bizimkisi vermiyor buna izin. Ama çoğu compiler, özellikle daha modern C compiler'ları veriyor. O yüzden farklı bir compiler'da çalışırken mutlaka ödevinizi teslim etmeden önce bir dev C++'da hatta bizim verdiğimiz bir compiler sürümü var. Orada bir çalıştırın.
+
+136
+00:27:29,940 --> 00:27:31,940
+Bakın bir hata alıyor musunuz?
+
+137
+00:27:33,940 --> 00:27:35,940
+Teşekkürler hocam.
+
+138
+00:27:39,955 --> 00:27:47,947
+Ben de öyle biliyorum. Ben de 4.9.2 diyebiliyorum ama tam emin olamadım.
+
+139
+00:27:52,435 --> 00:28:13,795
+Tamamdır, başkası mı? Benim de son bir sorum vardı. Tamamdır, sor. Hocam, bu fonksiyonları tanınırken, parametre olarak verdiğimiz bu integer matrisleri birbirinden farklı matrislerdi. Ben sadece bir matris vereceğim ve alttaki işlemlerde bu matriks adı altında işlem yapıyorum ama verdiğim matrisin üzerine yazılıyor. Bunlar birbirinden farklı.
+
+140
+00:28:15,988 --> 00:28:18,388
+Yani tam olarak ne demek istediğini anlamadım.
+
+141
+00:28:18,388 --> 00:28:22,548
+Yani sorduğum şey şu hocam, aynı matrisin üzerinde işlem yapmıyorum.
+
+142
+00:28:22,548 --> 00:28:28,988
+Şimdi hepsinde işte matriks parantez maks yazmışız ya.
+
+143
+00:28:28,988 --> 00:28:29,988
+Hı hı.
+
+144
+00:28:29,988 --> 00:28:42,388
+Buradakiler birbirinde hani ben o fonksiyon içerisinde parametre olarak yani main'de parametre olarak vereceğim fonksiyon şeyi, matrisi.
+
+145
+00:28:42,708 --> 00:28:48,708
+Yukarıda Matrix adıyla çağırıyorum. Ama bunlar birbirinden farklı. Aynı isimle yazmışız ya.
+
+146
+00:28:48,708 --> 00:29:02,708
+Evet, mesela şurada atıyorum Matrix 2 olsaydı ve ben bu Matrix 2'yi gönderseydim buraya, bunun içinde şuradaki Matrix mi erişilirdi, Matrix 2 mi erişilirdi diyorsun, değil mi?
+
+147
+00:29:02,708 --> 00:29:05,676
+Aynen, biraz o kafam karıştırdı ama 2 sanırım.
+
+148
+00:29:06,387 --> 00:29:31,567
+2'ye erişiliyor. Yani şimdi şöyle bir şey var, Variable Scope diye bir olay var. Sizin fonksiyonda eriştiğiniz değişkenlerle, main'de eriştiğiniz değişkenler aslında farklı. Yani isim olarak aynı olsalar da, fonksiyonda eriştiğiniz değişkenlerin scope'u, yani erişim alanı sadece şu fonksiyon alanı içinde olan değişkenler.
+
+149
+00:29:32,852 --> 00:29:40,352
+Yani o yüzden buradaki değişken isimleriyle buradaki değişken isimleri aynı olsa da aslında farklı değişkene erişebilirsiniz.
+
+150
+00:29:45,011 --> 00:29:46,011
+Anladım hocam.
+
+151
+00:29:46,011 --> 00:29:48,011
+Tamamdır.
+
+152
+00:29:50,011 --> 00:29:53,011
+Başka bir sorunuz yoksa arkadaşlar, devam ediyorum.
+
+153
+00:29:58,036 --> 00:30:06,036
+Şimdi arkadaşlar, bugün ağaç yapılarına bakacağız. Özellikle BST ağaç yapılarına bakacağız.
+
+154
+00:30:06,036 --> 00:30:18,036
+Şimdi ilk başta ağaç veri yapısı nedir? Bu aslında programlamada çok kullanılan bir yapı. Özellikle veri yapıları ve algoritma analizinin derslerini gördüğünüz zaman karşısında hep ağaçlar gelecek.
+
+155
+00:30:18,036 --> 00:30:24,036
+Bunun bazı sebepleri var, bunları da göreceğiz. Şimdi ilk başta ağaç nedir?
+
+156
+00:30:24,528 --> 00:30:51,648
+Arkadaşlar, ağaç, kökü olan, çocukları olan, içinde farklı nodlar bulunduran bir yapıdır. Bunun bazı özellikleri var. İşte bir kök noktası var. Bu kök noktası ağacın başlangıç noktasıdır. Bu noktalar, yani kök ve diğer ağaçta bulunan noktalar, kenarlarla birbirine bağlıdırlar.
+
+157
+00:30:52,788 --> 00:31:12,087
+Her bir nodun çocukları olabilir. Bu çocuklar genellikle iki tanedir. Ancak çok karmaşık ağaç yapılarında ikiden fazla olabilir. Ama siz şu anlık sadece ikili çocuklu ağaç yapılarını göreceksiniz.
+
+158
+00:31:12,087 --> 00:31:18,668
+Bu çocuklardan bir tanesine Left Child denilir.
+
+159
+00:31:19,092 --> 00:31:22,092
+Diğer eninde de right child denilir.
+
+160
+00:31:26,092 --> 00:31:35,092
+Bu çocuk ağaç yapısı ilerler ta ki çocuğu olmayan nodlara gelene kadar.
+
+161
+00:31:36,092 --> 00:31:39,092
+Çocuğu olmayan nodlara yaprak leaf node denir.
+
+162
+00:31:40,092 --> 00:31:42,092
+Mesela şunlar leaf node, şu da leaf node'dur.
+
+163
+00:31:43,092 --> 00:31:46,092
+Çünkü çocuğu yok, şu da leaf node'dur, çocuğu yok.
+
+164
+00:31:47,220 --> 00:32:05,900
+Tek çocuklu nodlar olabilir, şunun gibi. Aynı parent'a sahip, yani bu parent dediğimizde çocukların işte ebeveyni, zaten anlıyorsunuzdur. Aynı parent'a sahip çocuklara sibling denir.
+
+165
+00:32:13,748 --> 00:32:38,008
+Subtree oluşturur. Yani sizin şu Q nodunuz P rootlu bir ağacın elemanı iken, aynı zamanda Q'dan başlayan ve bu nodları alan bir subtree vardır. Bu subtree ana tree'nin altında kalan ama kendisi de aslında bir ağacı temsil eden yapıdır.
+
+166
+00:32:39,955 --> 00:33:04,776
+Ağaçların bir de height'ı vardır. Bu da kök noktasından en sondaki yaprak noktalarına ulaşırken attığı adım sayısıdır. Bu bütün not sayısı değildir. Bu işte P nodundan bir adım attık R'ye, işte bir adım attık C'ye, bu iki oldu.
+
+167
+00:33:06,067 --> 00:33:12,468
+M'ye 3 adım attık, I'ya da 4 adım attık ve height of the tree 4 oluyor.
+
+168
+00:33:18,451 --> 00:33:32,451
+Şimdi genel olarak ağaç yapısını anladınız mı? Yani bir tane kök noktası var. Her nodun çocukları olabilir. Bu çocuklar sol çocuk, sağ çocuk.
+
+169
+00:33:32,451 --> 00:33:42,240
+Çocuğu olan nodlar parent oluyor. Aynı parent'e sahip nodlar sibling oluyor. Eğer bir nodun...
+
+170
+00:33:42,240 --> 00:33:53,240
+Çocuğu yoksa, bunlar leaf node adını alıyor. Her node kendi çocuklarıyla birlikte bir subtree oluşturabiliyor.
+
+171
+00:33:53,240 --> 00:34:02,240
+Yani mesela, şu bir subtree ama şu bir subtree değil.
+
+172
+00:34:10,739 --> 00:34:16,715
+Tamam mıyız? Bu kısımda anlamadığımız bir yer var mı?
+
+173
+00:34:20,788 --> 00:34:24,387
+Hocam, subtree olması için en altta mı olması gerekiyor yani?
+
+174
+00:34:25,387 --> 00:34:37,128
+Yani, yani şeyi, çocuklarını kapsaması gerekiyor gibi düşün. Yani A'nın subtree olması için A'nın da çocuklarını kapsaması gerekiyor.
+
+175
+00:34:44,467 --> 00:34:48,467
+MH, yani şu bir subtree'dir.
+
+176
+00:34:50,967 --> 00:34:51,467
+Aynen.
+
+177
+00:34:51,967 --> 00:34:53,467
+MHI.
+
+178
+00:34:53,667 --> 00:34:54,467
+Bir subtree.
+
+179
+00:35:01,652 --> 00:35:20,652
+Bahsedebiliriz. Subtri'nin de kökü, yani şunun kökü Q oluyor, şunun kökü L oluyor. Ama genelde kök dediğimiz zaman ana kökten bahsedilir, yani P'den bahsedilir. Birisi kök derse genelde P'dir.
+
+180
+00:35:30,132 --> 00:35:37,132
+Şimdi bu ağaçlar neden var? Yani niye biz dizide saklamıyoruz da ağaç gibi bir yapı kullanıyoruz?
+
+181
+00:35:37,132 --> 00:35:52,132
+Çünkü arkadaşlar ağaçlarla özel metotlar oluşturabiliyoruz. Özel saklama tipleri oluşturabiliyoruz. Bunlardan bir tanesi binary search tree dediğimiz bir veri yapısı.
+
+182
+00:35:57,139 --> 00:36:23,699
+olduğu için iki tane çocuğu var demek oluyor. Ama bu bir search tree. Şimdi bu aramayı nasıl yapıyor? Bu aramayı yaparken aslında kendi oluşturulma mantığını kullanıyor. Bu sub-tree oluştururken kök sol çocuktan büyük ve sağ çocuktan küçük olmak zorunda.
+
+183
+00:36:26,291 --> 00:36:47,291
+Bu, bütün nodlar için geçerli. Yani siz, bu dizideki en küçük değere ulaşmak istiyorsanız, sol, sol ve sol yapmanız gerekiyor. Yani en sola doğru gitmeniz gerekiyor ki, ulaştığınız değer, en küçük değerdir bu ağaçtaki.
+
+184
+00:36:51,507 --> 00:37:02,507
+Burada da sağ sağ ve sağ yapıp en sağdaki elemana gideceksiniz. Siz Binary Search'ı görmüş müydünüz?
+
+185
+00:37:15,987 --> 00:37:17,987
+Görmüştük hocam.
+
+186
+00:37:17,987 --> 00:37:29,987
+Evet. Şimdi Binary Search'te ne mantığı vardı, neden daha iyiydi? Çünkü her adımda dizinin yarısına eriyordunuz değil mi? Yani yarısına bakmanız gerek kalmıyordu.
+
+187
+00:37:29,987 --> 00:37:34,667
+Şimdi bu Binary Search Tree'de de aslında aynı mantık var.
+
+188
+00:37:34,804 --> 00:37:47,804
+Ancak binary search'e karşı, yani bizim normalde kullandığımız dizilere karşı ne avantajı var? Şu avantajı var, biz bunu oluştururken diziyi sıralamamıza gerek yok.
+
+189
+00:37:47,804 --> 00:37:59,724
+Ne demek? Yani biz eğer bu binary search tree'yi iyi bir biçimde oluşturduysak, o zaman
+
+190
+00:38:00,211 --> 00:38:27,211
+Biz arama yaparken her arama adımında dizinin yarısını eriyoruz. Yani biz diyelim 35'i arıyoruz, 40'a geldik sorduk. 40, 35, 40'tan büyük mü? Değil. O zaman nereye gittik? Sola gittik, değil mi? Geldik, 30, 35, 30'dan büyük mü? Büyük. Nereye gittik? Sağa gittik. Her adımda...
+
+191
+00:38:28,436 --> 00:38:38,036
+Dizinin yarısını eremiş olduk ve aradığımızı bulduk. Binary Search Tree'nin avantajı bu.
+
+192
+00:38:41,619 --> 00:38:44,619
+Biner Search Tree'nin dezavantajı ne peki?
+
+193
+00:38:47,619 --> 00:38:52,619
+Oluştururken, bu ağaç dengeli olmayabilir.
+
+194
+00:38:54,619 --> 00:38:55,619
+Yani bu ağaç,
+
+195
+00:38:57,619 --> 00:38:58,619
+40,
+
+196
+00:39:00,619 --> 00:39:01,619
+30,
+
+197
+00:39:04,980 --> 00:39:08,980
+20 ve 10 diye gidebilir.
+
+198
+00:39:10,980 --> 00:39:15,980
+E ne oldu? Aslında bu sadece sıralı bir dizi oldu değil mi?
+
+199
+00:39:15,980 --> 00:39:20,980
+Yani bizim aramada bir kazancımız var mı bu noktada?
+
+200
+00:39:20,980 --> 00:39:22,980
+Yok.
+
+201
+00:39:23,980 --> 00:39:27,980
+Binary Search Tree'nin ve aslında bu bütün ağaçlar için geçerdi.
+
+202
+00:39:27,980 --> 00:39:32,972
+Ağaç oluştururken ağaç dengeli olmayabilir.
+
+203
+00:39:35,923 --> 00:39:44,564
+Doğal olarak bu ağacın aslında kötü oluşturulmasına neden oluyor olabilir.
+
+204
+00:39:44,564 --> 00:39:49,764
+Tabi bu bir edge case.
+
+205
+00:39:49,764 --> 00:40:01,043
+Yani sizin genellikle elinizde olan ağaçlar, yani rastgele oluştursanız bile böyle olmuyor genellikle.
+
+206
+00:40:01,780 --> 00:40:04,780
+Çünkü burada ağaca konma sırası da önemli.
+
+207
+00:40:07,956 --> 00:40:34,936
+Değil. Şimdi heap, heap'te şöyle bir şey var. Heap'te sağdaki eleman kökten büyük ya da küçük olacak diye bir şart yok. Değil mi? Yani heap'te burada 40 varsa ve sizin heap'iniz min heap ise ne demek bu? Bu elemanlar ne olacak?
+
+208
+00:40:42,195 --> 00:41:00,195
+Eğer min heap ise ve sizin kökünüzde 40 varsa bu elemanlar ne olacak? Büyük eşit olacak değil mi? Yani burası kaç olacak? İşte atıyorum 50 olacak. Burası kaç olacak? 47 olacak mesela.
+
+209
+00:41:10,387 --> 00:41:36,387
+Sağ taraf kökten büyük olacak. Şimdi siz min-heap'te arama yaparken min-heap bir işinize yarar mı? Ya da bir aradığınızda eleme yapabiliyor musunuz? Artık sağ tarafa bakmama gerek yok diyebiliyor musunuz? Diyemiyorsunuz ama...
+
+210
+00:41:36,755 --> 00:41:52,748
+Biner Search Tree'de bunu diyebiliyorsunuz. Biner Search Tree'de artık bir şey büyükse ağaçın diğer tarafına bakmanıza gerek yok. Aradaki fark bu.
+
+211
+00:42:01,907 --> 00:42:08,307
+Başka sorusu olan var mı? Biner Search Tree ile ilgili.
+
+212
+00:42:23,699 --> 00:42:33,000
+Hocam, binary heap ile search'un farkı ne? Hani neden ikisi de kullanılıyor? Heap'i görmedik de anlatır mısınız?
+
+213
+00:42:33,000 --> 00:42:48,971
+Ya, heap'te de şöyle bir şey var. Heap'te, min heap diye bir olay var. Ya da max heap. Kök, işte min heap ise kök, dizinin en küçük elemanı olacak.
+
+214
+00:42:51,059 --> 00:42:58,720
+Bundan sonra gelen değerler hep kökten daha büyük olmak zorunda. Aynen, min-heap'te.
+
+215
+00:42:59,920 --> 00:43:06,340
+Şimdi bunun kullanım, yani bunu oluştururken, mesela şeyi oluştururken, BST'yi oluştururken birazdan göreceksiniz.
+
+216
+00:43:07,460 --> 00:43:10,739
+Dizide her adım attığınızda diziyi bir kontrol etmenize gerek yok.
+
+217
+00:43:11,092 --> 00:43:21,092
+Yani şimdi diyelim 40 geldi ya burada, 30 geldi direkt buraya eklediniz, 50 geldi buraya eklediniz. Yani hani siz bir daha 40'ı değiştirme ihtimaliniz yok.
+
+218
+00:43:21,092 --> 00:43:38,092
+Ama min-heap'te işte buraya atıyorum 39 geldiği zaman 40'ı buradan alıp oynatıyorsunuz, 39'u buraya koyuyorsunuz. Hatta bunu böyle sağ çocuğa değil de sona ekliyorsunuz.
+
+219
+00:43:39,603 --> 00:44:01,103
+Min-Heap'in amacı, aslında dizideki, diyelim siz Min-Heap kullanıyorsanız, küçükten büyüğe doğru değerler alacaksınız. Tamam mı? Ama bu sıralama için belki size gereksiz gelebilir. Ama şey olarak düşünün bunu.
+
+220
+00:44:05,492 --> 00:44:15,492
+Siz mesela bir bankadasınız, bu genellikle hep verilen örnektir. Siz bir bankadasınız ve banka sizin numaralarınıza bir değer atıyor. Değil mi?
+
+221
+00:44:15,492 --> 00:44:27,307
+İşte çok değerli müşteriyseniz ya da işte TC kimlik numaranızı girdiyseniz vs. sizin daha erken girmenizi sağlıyor. Daha az değerli kişilerin de daha sonra girmesini sağlıyor.
+
+222
+00:44:27,635 --> 00:44:33,635
+O zaman bankada bir bilet çek ya da sıradaki kişi belirlendiğinde ne olacak?
+
+223
+00:44:33,635 --> 00:44:39,635
+En büyük değerli kişi girecek. En değerli numara girecek.
+
+224
+00:44:39,635 --> 00:44:45,635
+Hani en büyük numara değil de o bankanın sizin numaranızı atadığı değeri en büyük olan kişi girecek.
+
+225
+00:44:45,635 --> 00:44:52,635
+Bu yüzden bunu banka ne yapıyor? En değerli numarayı kökte tutuyor. Diyelim 339.
+
+226
+00:44:54,195 --> 00:45:04,195
+Ve daha sonra siz buradan bir tane değeri çektiğiniz zaman, en küçük değeri çekiyorsunuz, hedi çektiğiniz zaman.
+
+227
+00:45:04,195 --> 00:45:13,195
+Bunun diziyi sıralayıp baştan alması, yani neden diziyi sıralayıp da baştan almıyor?
+
+228
+00:45:13,195 --> 00:45:19,195
+Şimdi bunun iki nedeni var. Bir, diziye sonradan eleman eklendiğinde...
+
+229
+00:45:20,148 --> 00:45:47,208
+Sıralı dizide ne yapılması gerekiyor? Hep bir kaydırma işlemi yapılması gerekiyor değil mi? Şimdi heap'te böyle bir sıkıntı yok. Aslında ağaçlarda genellikle böyle bir sıkıntı yok. Çünkü heap'te zaten bir şey sırası da yok. Hani bu BST'de olduğu bir sıra da yok. Bu yüzden ne yapıyor? Sadece sonuna gelip ekliyor. Yani ekleme ve çıkarma işlemleri bu yüzden çok basit heap'te.
+
+230
+00:45:47,539 --> 00:46:03,099
+İkincisi de, diziyi aslında hiç sıralamıyor kendi içinde. Her adımda sadece en küçük değeri buluyor ve bunu başa koyuyor. Bu yüzden hiç diziyi sıralama işlemine sokmuyor.
+
+231
+00:46:07,059 --> 00:46:32,059
+HIP, yani HIP'lerin böyle bir özelliği var. Bu da çok kullanılır. Ama dediğim gibi BST'den bunlar farklı. Çünkü şey, BST belirli bir kurallara göre oluşturuluyor. Aslında HIP de belirli bir kurallara göre oluşturuyor. Yani burada çocukların…
+
+232
+00:46:32,467 --> 00:46:36,047
+Konumları daha net BST'de.
+
+233
+00:46:40,916 --> 00:46:56,916
+Bu işletim sistemlerinde de mesela kullanılıyor, aynı mantık. Yani işlemci hangi prosesin geçeceğini seçmek için hani bir değer belirliyor ya, bunu kendi içinde bir heap de tutup yapabiliyor, en değerliyi çekmek için.
+
+234
+00:47:02,867 --> 00:47:04,867
+Teşekkür ederim hocam.
+
+235
+00:47:07,568 --> 00:47:09,259
+Başka sorusu olan var mı?
+
+236
+00:47:26,164 --> 00:47:30,664
+Şimdi bunu nasıl gerçekleştirebiliriz? Buna bakalım.
+
+237
+00:47:35,731 --> 00:47:45,731
+Şimdi, bizim bir elimizde dizi olduğunu varsayalım. Bu diziyi rastgele sayılarla üretelim.
+
+238
+00:47:45,731 --> 00:47:55,731
+Şimdi ilk başta bizim BST'yi tutacağımız bir diziye ihtiyacımız var. Bunu farklı bir yapıyla da tutulabiliyor ama bunu daha sonra göreceksiniz.
+
+239
+00:47:55,731 --> 00:47:59,731
+Yani sanırım bu ders kapsamında görmüyorsunuz onu, bir dahaki sene göreceksiniz.
+
+240
+00:48:00,371 --> 00:48:08,371
+O yüzden biz şimdilik bunu bir dizide tutuyoruz. Şöyle aslında, ilk başta şundan bahsedelim.
+
+241
+00:48:08,371 --> 00:48:15,371
+Şimdi biz bunu böyle gördük ama bunu tabii programlarken böyle programlayamayız.
+
+242
+00:48:15,371 --> 00:48:19,371
+Doğal olarak bunun hepsini dizide tuttuğumuzu düşünün.
+
+243
+00:48:19,371 --> 00:48:24,371
+Bunun sağ çocuk, sol çocuk vesaire olayını nasıl yaparız sizce?
+
+244
+00:48:30,420 --> 00:48:34,420
+Yani diyelim kökü sıfırıncı elemanda tutuyoruz.
+
+245
+00:48:43,443 --> 00:48:48,684
+Şimdi şöyle yaparız. Sıfır tam ortası, aynen kök.
+
+246
+00:48:53,364 --> 00:49:06,864
+Şimdi burada, aslında şuna bakalım biraz. Bunu bir dizi olarak yazsak, sıralı biçimde. Nasıl olur? Yani bu birinci eleman oluyor, bu ikinci eleman oluyor.
+
+247
+00:49:11,188 --> 00:49:12,188
+30 olabilir.
+
+248
+00:49:13,188 --> 00:49:16,188
+Peki, 25 nerede oluyor o zaman?
+
+249
+00:49:25,139 --> 00:49:51,199
+35'te ondan sondan bir önceki. Ama bu ağaç büyüdükçe tabii daha karmaşıklaşır. Onun yerine şöyle yapalım. Şimdi bu birinci eleman olsun. 2. Sonra bu üçüncü eleman oluyor. Değil mi yani? Sadece sayıyoruz. 1, 2, 3, 4, 5, 6, 7. Şimdi siz şurada bir şey fark ettiniz mi?
+
+250
+00:49:52,532 --> 00:50:06,284
+Bu katman katman düşünürsek eğer, bu katmanda kaç eleman var? Bir tane değil mi? Bu katmanda kaç eleman var?
+
+251
+00:50:10,195 --> 00:50:20,876
+İki tane. Bu kaç katmanda kaç eleman var? Dört tane. Peki bizim bir tane daha katmanımız olsaydı kaç eleman olacaktı?
+
+252
+00:50:25,204 --> 00:50:26,204
+8 mi?
+
+253
+00:50:26,204 --> 00:50:51,204
+8 tane. Bu hep böyle gidiyor değil mi? Yani aslında 2'nin üzeri katlarla ilerliyor. Hep. Peki biz bunu diziye koymakta kullanabilir miyiz? Kullanabiliriz değil mi? Şimdi o zaman şöyle desek, bu 1 ise, bu 2 ise ve bu da 3 ise, biz buradan ikinci elemana gitmek için ne yaparız?
+
+254
+00:50:58,483 --> 00:51:25,483
+2 ile çarparız değil mi? Peki, o zaman şöyle sorayım. En soldaki eleman her zaman 2'nin katı olmayacak mı? Olacak değil mi? Yani şurası, şurada bir tane nod olsaydı burası 8 olacaktı. Şurada bir nod olsaydı burası 16 olacaktı. Bunun bir sonrası kaç olacaktı?
+
+255
+00:51:29,139 --> 00:51:34,420
+İki katının bir fazlası. Dokuz olacaktı değil mi? Şurası beş.
+
+256
+00:51:35,460 --> 00:51:40,739
+Peki, diğer tarafta hareket ederken bakalım. Şimdi burası ne?
+
+257
+00:51:41,940 --> 00:51:44,099
+İki artı bir.
+
+258
+00:51:46,339 --> 00:51:47,435
+Burası ne?
+
+259
+00:51:50,516 --> 00:52:18,476
+3'ün 2 katı. Burası ne? 3 çarpı 2 artı 1. Şimdi demek ki nasıl bir kural var burada? Eğer root 1 ise sol çocuğa giderken bunun 2 katını aldık. Sağ çocuğa giderken bunun 2 katı
+
+260
+00:52:19,827 --> 00:52:31,827
+Artı 1'i aldık. Değil mi? Yani aslında buradaki bütün değerleri bu tarzda kodlayabiliriz. Eğer biz 30'dan sola gitmek istiyorsak ne yapacağız?
+
+261
+00:52:36,820 --> 00:52:38,820
+İki katını alacağız direkt.
+
+262
+00:52:38,820 --> 00:53:04,556
+Aynen. İki çarpı iki diyeceğiz. Burası kaç olacak? İki çarpı ikinin artı biri olacak. Burası kaç olacak? Üçün iki katı. Burası da üçün iki katından bir fazlası olacak. Peki bu root birken?
+
+263
+00:53:04,820 --> 00:53:06,820
+Bizim diziler kaçtan başlıyor?
+
+264
+00:53:09,519 --> 00:53:10,519
+Sıfırdan.
+
+265
+00:53:10,519 --> 00:53:12,519
+Sıfırdan başlıyor.
+
+266
+00:53:12,519 --> 00:53:14,519
+Tamam, o zaman ne yapıyoruz?
+
+267
+00:53:15,519 --> 00:53:17,519
+Sol çocuğa gideceğiz.
+
+268
+00:53:18,519 --> 00:53:22,519
+Sol çocuğun elemanı nerede olacak o zaman?
+
+269
+00:53:24,820 --> 00:53:26,820
+İki katı artı bir mi?
+
+270
+00:53:27,315 --> 00:53:33,315
+2 katı artı 1 olacak değil mi? Çünkü eğer 2 katını alırsak neredeyiz? Sıfırdayız.
+
+271
+00:53:33,315 --> 00:53:40,139
+2 katı artı 1 dediği zaman kaç oldu burası? 1 oldu. Burası neresi oldu o zaman?
+
+272
+00:53:43,923 --> 00:53:47,923
+2 katı artı 2 ya da direkt 2 katı mı oldu?
+
+273
+00:53:47,923 --> 00:53:59,923
+2 katı olursa direkt yeniden sıfıra dönmedik mi? Burası neresi oldu? 2 katı artı 2 oldu. Yani 2.
+
+274
+00:53:59,923 --> 00:54:02,923
+Peki, burası neresi oldu?
+
+275
+00:54:09,204 --> 00:54:11,204
+2 kat artı 1
+
+276
+00:54:11,204 --> 00:54:16,204
+Aynen. 2 artı 1 oldu. 3
+
+277
+00:54:16,204 --> 00:54:17,836
+Burası neresi oldu?
+
+278
+00:54:21,972 --> 00:54:23,972
+2 katı artı 2.
+
+279
+00:54:23,972 --> 00:54:27,972
+2 artı 2, 4 oldu.
+
+280
+00:54:27,972 --> 00:54:45,972
+O zaman biz, bir dizi oluştururken, bir ağaç oluştururken, dizide bir elemandan sol çocuğa giderken hep ne yapıyoruz?
+
+281
+00:54:50,003 --> 00:54:55,324
+Artı, birinci elemana gidiyoruz. Sağ çocuğa giderken de
+
+282
+00:55:01,396 --> 00:55:06,396
+2 çarpı i artı 2 diyoruz.
+
+283
+00:55:08,396 --> 00:55:10,396
+Şimdi bunu anladınız mı arkadaşlar?
+
+284
+00:55:19,507 --> 00:55:45,667
+Tamamdır. Şimdi kodumuza geri dönelim. Şimdi biz bunu bir diziye aldık. Şimdi bizim şöyle bir hamle yapmamız gerekiyor. Bizim dizinin kullanılmayan noktalarını bulmamız gerekiyor. Şimdi burada sıfır oluyor değil mi? Burada tanımladığımız zaman bir şey belirtmediğimiz için burası sıfır oluyor.
+
+285
+00:55:47,188 --> 00:56:00,387
+Biz, ama sıfır random değer olarak gelebilir diye farz edelim. Ne yapmamız gerekiyor? Burayı gelmeyecek bir değere koymamız gerekiyor. Eksi bir diye kabul ettik. Sadece pozitif değerler girecek diye kabul ettik.
+
+286
+00:56:00,387 --> 00:56:13,387
+Şimdi burası for, i eşittir sıfır, i küçüktür 1024, i artı artı.
+
+287
+00:56:15,315 --> 00:56:21,315
+b, st, i, eşittir, eksi bir dedik.
+
+288
+00:56:22,315 --> 00:56:24,315
+Şimdi size soru.
+
+289
+00:56:25,315 --> 00:56:33,315
+Dizileri initialize etmeyi biliyorsunuz. Hani farklı bir değer atamayı. Nasıl yapıyorduk bunu? Eşittir.
+
+290
+00:56:33,315 --> 00:56:39,788
+İşte buraya bir, iki, üç diye yazınca bunu oraya atıyor değil mi?
+
+291
+00:56:40,980 --> 00:56:47,980
+Biz burada bir şey belirtmezsek, mesela şurada 0 dersek ne yapıyordu? Aslında hepsine 0 atıyordu mantık olarak.
+
+292
+00:56:49,980 --> 00:56:53,980
+Buraya niye eksi 1 demedik? Ya da buraya eksi 1 deyince ne oluyor?
+
+293
+00:57:01,684 --> 00:57:02,684
+Hatam veriyor.
+
+294
+00:57:07,668 --> 00:57:31,668
+İlki, eksi bir, geri kalanı sıfır oluyor. Buraya eksi bir, eksi bir dediğinizde de ilk ikisi eksi bir oluyor, daha sonrası sıfır oluyor. Bu da aklınızda bulunsun. Sınavlarda genelde böyle şeyler çıkar hep. O yüzden böyle initialize ettik. Şimdi daha sonra biz...
+
+295
+00:57:33,811 --> 00:57:42,311
+Random sayı kullanacağımız için ne yapıyoruz? Bir seed ekliyoruz. Bunu neden eklediğimizi biliyorsunuz.
+
+296
+00:57:56,916 --> 00:58:01,916
+Bildiğinizi farz ediyorum, bir şey yazmadınız ama. Biliyoruz hocam. Biliyoruz hocam. Tamam.
+
+297
+00:58:01,916 --> 00:58:08,916
+Hocam biraz ctrl'e yaklaşabilir misiniz? Kod biraz küçük duruyordu. Tamamdır. Bu nasıl? Şu an iyi.
+
+298
+00:58:08,916 --> 00:58:23,436
+Şimdi şurada bir tane max değeri belirliyoruz. Bunun daha yukarısı olmasın diye. Daha sonra burada diyoruz ki, şurada belirlediğimiz bir de int...
+
+299
+00:58:23,795 --> 00:58:36,795
+En değerimiz olsun. Bu da bizim aslında kaç tane değer koyacağımız ağaca. Tabii bu koyacağımız değerleri de tutan bir dizimiz olsun.
+
+300
+00:58:40,628 --> 00:58:46,628
+Bunun da işte 100 olsun. Gerçi 100 şimdilik çok fazla, onunla başlayalım.
+
+301
+00:58:48,628 --> 00:59:00,628
+Şimdi for, i eşittir 0, i küçüktür n, i art art dediğimizde, burada bizim rastgele bir sayı üretip,
+
+302
+00:59:10,228 --> 00:59:29,228
+Modulo max demiştik. Bu sayıları bst'ye atacağız. Şimdilik şöyle bir dizinin hiç eklenmemiş halini yazdıralım.
+
+303
+00:59:33,844 --> 00:59:35,084
+Şimdi...
+
+304
+00:59:39,251 --> 01:00:01,431
+BST'yi yazdıracağız. Peki nasıl yazdıracağız? Nasıl BST'ye koyacağız? Şimdi bunu koyarken ilk başta bizim şöyle bir bilgiye ihtiyacımız var. Biz BST'ye eleman koyarken neyi bilmemiz gerekiyor? Diyelim 40'ı koyduk ruta. 30 geldi.
+
+305
+01:00:03,284 --> 01:00:13,044
+30'u koymak için ne bilgisine ihtiyacımız var? 40 ile küçük mü, küçük mü? Aynen öyle.
+
+306
+01:00:13,044 --> 01:00:24,564
+Bundan sonra 25 geldi, ne bilgisine ihtiyacımız var? 40'a gelecek, büyük mü, küçük mü diye soracak. 30'a gelecek, büyük mü, küçük mü diye soracak.
+
+307
+01:00:29,300 --> 01:00:34,300
+Bu yolda giderken, x1 gördüğü yere bu değeri koyacak, değil mi?
+
+308
+01:00:34,840 --> 01:00:43,700
+Aslında biz ne yapıyoruz bu her adımda? Arama yapıyoruz, değil mi? Yani biz normal bir değer ararken de aslında bu işlemi yapıyoruz.
+
+309
+01:00:43,700 --> 01:00:54,840
+Sadece bir tanesinde x1 görünce diyoruz ki, buraya koy, diğerinde x1 görünce diyoruz ki, burası şey.
+
+310
+01:00:57,780 --> 01:01:22,980
+Bulunamadı. Şimdi o zaman ilk başta, bizim bir tane int, find, index diye bir fonksiyon ihtiyacımız var. Şimdi burada bu fonksiyon neyi alacak? int, bst dizisini alacak. Değil mi? Yani bir ağaçta arama yapacak.
+
+311
+01:01:24,532 --> 01:01:46,532
+Number olacak, bu da aradığımız şey olacak. Bir de bizim arama için farklı bir fonksiyon yazmamak için buraya bir tane de mod yazacağız. Bu mod eğer sıfırsa biz değer koymaya çalışıyoruz, eğer birse arama yapıyoruz. Şimdi biz niye böyle bir mod koyduk? Yani niye biz...
+
+312
+01:01:47,443 --> 01:01:55,443
+Eksi bir gördüğümüz yere gönderip de ana dizide BST-1 mi diye sormadık.
+
+313
+01:02:04,724 --> 01:02:06,724
+Bu ikisi arasında ne fark var?
+
+314
+01:02:10,452 --> 01:02:12,452
+Soruyu bir daha sorabilir misiniz hocam?
+
+315
+01:02:12,452 --> 01:02:28,452
+Şimdi biz arama yaptığımızı fark ettik değil mi? Yani bir eleman koyarken de arama yapıyoruz, bir sayıyı ararken de arama yapıyoruz. İkisinin de aslında aynı işlemi yapıyoruz ve bunu aynı fonksiyon içinde yapmak istiyoruz.
+
+316
+01:02:36,275 --> 01:02:41,259
+Bir yeni eleman mı koymaya çalışıyoruz, niye bakmamız gerekiyor?
+
+317
+01:02:50,324 --> 01:02:54,824
+Hocam, aslında eleman koyarken direkt nereye koyacağımızı biliyoruz. O yüzden olabilir mi?
+
+318
+01:02:54,824 --> 01:03:00,824
+Nereye koyacağımızı tam olarak bilmiyoruz. Hangi indeksi bulmayı arıyoruz ya.
+
+319
+01:03:00,824 --> 01:03:04,824
+Hımm. O zaman öyle olmadı.
+
+320
+01:03:06,824 --> 01:03:11,824
+Şöyle bir kopya vereyim. Aslında kopya olmuyor, direkt cevap oluyor bu ama...
+
+321
+01:03:11,824 --> 01:03:17,824
+Biz diyelim bu diziye tekrar 25'i eklemek istersek...
+
+322
+01:03:18,260 --> 01:03:43,300
+Ne olacak? 25 burada var. Değil mi? Şimdi biz burada eğer tekrar 25'i eklemek istediğimizde eğer arama yapıyorsak, 25'i bulup çıkacak. Değil mi? Yani aslında biz aynı değerleri görüyoruz. Yani 25 burada gerçi biraz kötü oldu. 30 diyelim burada.
+
+323
+01:03:44,628 --> 01:03:55,628
+30'u arıyorsak, 30'u görüp çıkacak arama yaparken. Ama biz eleman koyduğumuz zaman aslında bunu devam ettirmesini, eksi bir bulana kadar devam etmesini istiyoruz.
+
+324
+01:03:55,628 --> 01:04:04,628
+Bu yüzden buraya ayrıca bir değişken koyuyoruz ki hani ikisinin ne olduğunu kontrol edelim.
+
+325
+01:04:04,628 --> 01:04:11,468
+Şimdi burada bir tane de kontrol değişkenimiz olsun.
+
+326
+01:04:11,956 --> 01:04:17,355
+Bu da şimdilik 0 olsun. Bir tane de int i eşittir 0 diye bir değişkenimiz olsun.
+
+327
+01:04:18,355 --> 01:04:22,956
+Şimdi ağaçta biz gezinirken for mu kullanırız, wire mı kullanırız?
+
+328
+01:04:33,139 --> 01:04:37,139
+Hocam, eksi biri bulana kadar devam etmemiz gerektiği için while mı kullanacağız?
+
+329
+01:04:40,139 --> 01:04:56,139
+Tam olarak öyle değil. Aslında çıkış, bütün diziyi kontrol etmemiz gerekmiyor değil mi? Aslında belirli noktaları görünce çıkabiliyoruz. Bu yüzden while. Aslında sen de onu demek istedin sanırım yaklaşık olarak.
+
+330
+01:04:57,139 --> 01:04:59,139
+Evet hocam, while demiştim ben de.
+
+331
+01:05:03,668 --> 01:05:12,168
+Ctrl, 0 iken devam et diyelim. Şimdi burada bizim çıkış koşulumuz ne olacak?
+
+332
+01:05:17,588 --> 01:05:18,508
+Er,
+
+333
+01:05:22,452 --> 01:05:47,052
+BST, i, eşit eşitken, eksi bire. Yani eğer eksi birdeyse çıkacak. Nasıl çıkacak? Return, i diyerek. Yani biz eksi bir bulduk. Eksi biri bulduğumuz nokta da burası.
+
+334
+01:05:51,347 --> 01:05:53,347
+Eğer biz arama yapıyorsak...
+
+335
+01:05:58,003 --> 01:06:20,683
+Burada eğer mod eşit eşittir birken, yani arama yapıyorsak ve bst i eşit eşitse number, o zaman bulduğumuz yeri gönder dedik.
+
+336
+01:06:22,683 --> 01:06:23,683
+Şimdi...
+
+337
+01:06:28,659 --> 01:06:34,440
+Eğer buradan çıkıyorsa diyoruz ki if...
+
+338
+01:06:37,844 --> 01:06:56,844
+Number Büyüktür B, C, T, I Ne yapacağız? Eğer sayı şu anda bulunduğumuz notdan büyükse ne yapmamız gerekiyor?
+
+339
+01:07:02,900 --> 01:07:04,900
+Diyi 1 arttıracak mıyız?
+
+340
+01:07:04,900 --> 01:07:08,900
+Hayır, dizide aramıyoruz, ağaçta arıyoruz.
+
+341
+01:07:08,900 --> 01:07:10,900
+İki katı artı 1.
+
+342
+01:07:10,900 --> 01:07:14,900
+O zaman sol çocuğa gittik, sağ çocuğa gideceğiz.
+
+343
+01:07:14,900 --> 01:07:21,900
+Eğer aradığımız değer büyükse, iki katı artı 2 olacak.
+
+344
+01:07:21,900 --> 01:07:28,900
+Şimdi onu her seferinde böyle yazmak yerine farklı bir fonksiyonu tanımlayalım.
+
+345
+01:07:30,431 --> 01:07:45,551
+left diyelim, bu bir tane integer değer alsın ve bize return e çarpı 2 artı 1 desin sola doğru ilerlerken.
+
+346
+01:07:45,551 --> 01:07:56,431
+int move right diyelim, int e return
+
+347
+01:07:57,492 --> 01:08:07,492
+I çarpı 2 artı 2 desin. Değil mi? Bu sağa gideceğimiz zaman, indeksi iki katının artı ikisine eşitlesin, geri göndersin.
+
+348
+01:08:07,492 --> 01:08:12,492
+Sola döneceğimiz zaman da iki katının artı birini bize geri göndersin.
+
+349
+01:08:12,492 --> 01:08:22,252
+Şimdi eğer aradığımız sayı bulunduğumuz noktadan büyükse, ne yapacağız? I eşittir, move,
+
+350
+01:08:25,140 --> 01:08:27,140
+right diyeceğiz.
+
+351
+01:08:29,140 --> 01:08:30,140
+Eğer
+
+352
+01:08:33,140 --> 01:08:34,140
+değilse
+
+353
+01:08:34,140 --> 01:08:36,140
+değişiş eşittir
+
+354
+01:08:36,140 --> 01:08:37,140
+move
+
+355
+01:08:37,140 --> 01:08:40,108
+left diyeceğiz.
+
+356
+01:08:43,347 --> 01:08:45,347
+Ve bu nereye kadar devam edecek?
+
+357
+01:08:48,347 --> 01:08:58,347
+Eğer bst-1 olana kadar ya da modumuz eğer 1 ise aradığımız değere eşit oluncaya kadar devam edecek.
+
+358
+01:09:02,163 --> 01:09:08,163
+Tamam mıyız? Sorusu olan var mı?
+
+359
+01:09:08,163 --> 01:09:14,163
+Cam eşittir'i kontrol etmediğimiz için direk sola gitmesini mi şey yaptık? Eşitse sola koysun dedik değil mi?
+
+360
+01:09:14,163 --> 01:09:17,163
+Aynen, eşittirse sola koysun dedik.
+
+361
+01:09:17,163 --> 01:09:19,163
+Tamamdır.
+
+362
+01:09:23,859 --> 01:09:29,559
+Hocam, kontrol değişkeninde herhangi bir değişiklik yapmadığımız için sonsuza kadar dönmeyecek mi?
+
+363
+01:09:29,559 --> 01:09:44,199
+Aynen. Sonsuza kadar dönmeyecek. Çünkü zaten şurada bir return condition'ı koyduk ya, yani şu koşulu mutlaka sağladığı için kontrolden dönüyor ama [öğrenci] doğru söylüyor, kontrolü değiştirmiyoruz değil mi?
+
+364
+01:09:44,199 --> 01:09:48,019
+O yüzden aslında buna gerek yok. Biz eğer şöyle bir şey kullanırsak.
+
+365
+01:09:50,228 --> 01:09:52,228
+Bizim kodumuz hala çalışır.
+
+366
+01:09:57,108 --> 01:10:21,068
+Tamam mıdır? Tamamdır hocam. Şimdi, biz bunu nasıl yaptık? Burada iteratif olarak yaptık değil mi? Ama aslında bu biraz göze çirkin görünüyor. Yani garip görünüyor. Anlamsız biraz. Biz bunu bir de recursive olarak yapmaya çalışalım.
+
+367
+01:10:23,475 --> 01:10:26,835
+Zaten ağaçlarda da genelde recursive olarak gezilir.
+
+368
+01:10:28,915 --> 01:10:34,835
+Şimdi find index recursive dedik.
+
+369
+01:10:35,635 --> 01:10:42,835
+Yani çok farklı bir kodu olmayacak ama yine de daha şey olacak.
+
+370
+01:10:42,835 --> 01:10:47,876
+Yani mesela şuradaki while aslında çok istenilen bir şey değildir.
+
+371
+01:10:48,180 --> 01:10:53,380
+O yüzden daha recursive olarak yazıyoruz.
+
+372
+01:10:55,380 --> 01:11:08,579
+bst int i int number ve int mod.
+
+373
+01:11:09,380 --> 01:11:11,380
+Şimdi buraya bir de int i geldi.
+
+374
+01:11:11,380 --> 01:11:14,980
+Niye geldi? Çünkü her recursive'de artık
+
+375
+01:11:15,380 --> 01:11:17,380
+Nerede olduğumuzu bilmemiz gerekiyor.
+
+376
+01:11:17,380 --> 01:11:25,380
+Şimdi burada gene bizim şu koşulumuz geçerli. Bu koşulumuzu hiç değiştirmeden koyuyoruz.
+
+377
+01:11:30,355 --> 01:11:44,355
+Daha sonra, şu koşulumuz da aslında geçerdi. Yani eğer sayıdan büyükse sağa git, küçükse sola git kısmı da geçerdi.
+
+378
+01:11:56,435 --> 01:12:03,435
+İyi değişti artık, iyi. Number aynısı, modu da aynı olarak kalsın, dedik.
+
+379
+01:12:05,435 --> 01:12:10,435
+Böylece bunu da recursive olarak yapmış olduk bu işlemde.
+
+380
+01:12:15,923 --> 01:12:25,923
+Stag'de etkisi aynı mı? Yani stag dediğin tabi burada memory aslında. Memory'de etkisi aynı mı?
+
+381
+01:12:30,579 --> 01:12:35,532
+Recursive biraz daha kötü memori de, teknik olarak. Ama...
+
+382
+01:12:38,612 --> 01:12:49,011
+Aynen. Çok az kötü. Yani şuradaki şu değişkenler aslında burada hep kopyalanacak. Peki gönderirken bst kopyalanıyor mu?
+
+383
+01:12:51,011 --> 01:12:52,612
+Kopyalanmıyor hocam.
+
+384
+01:12:52,612 --> 01:13:02,011
+Kopyalanmıyor. Sadece pointer'ı kopyalanıyor. Yani sadece adres noktası kopyalanıyor. Yani yine şu integer'ın kopyalanmasıyla
+
+385
+01:13:02,112 --> 01:13:07,612
+Aynı, 1024 tane integer kopyalanmıyor burada. O yüzden biraz daha kötü.
+
+386
+01:13:14,804 --> 01:13:28,804
+Tamamdır. Şimdi biz bu indeksi bulduğumuza göre, aslında arama işlemini de burada gördük. Şimdi, nasıl bir BST yaratırız?
+
+387
+01:13:33,203 --> 01:13:37,203
+int, vst, diziyi aldık. Değil mi?
+
+388
+01:13:38,203 --> 01:13:44,203
+int, values, bunu da aldık.
+
+389
+01:13:46,203 --> 01:13:50,203
+Ve daha sonra bir de int, n aldık.
+
+390
+01:13:52,203 --> 01:13:53,203
+Daha sonra geldik.
+
+391
+01:13:54,203 --> 01:13:56,203
+Burada bir tane değişkenimiz olsun.
+
+392
+01:13:57,939 --> 01:14:06,939
+Şimdi burada biz values'daki bütün elemanları bst'ye atacağız. Şimdi burada bir döngü olacak, for mu olacak, while mu olacak?
+
+393
+01:14:23,188 --> 01:14:29,587
+For. Niye for? Çünkü values'daki bütün elemanları bst'ye atıyoruz.
+
+394
+01:14:29,587 --> 01:14:38,788
+Şimdi, buraya geldik. For. i eşittir, sıfır. i küçüktür, n. i artı artı.
+
+395
+01:14:38,788 --> 01:14:49,188
+Bütün elemanları gezerken, ilk başta ne yapacak? int, index eşittir. Nerede olduğunu bulacak değil mi?
+
+396
+01:14:49,652 --> 01:15:09,891
+find index.rec bst, i, number, tabi bu number ne? values, i, ve modumuz ne olacak? Sıfır olacak. Ekleme yapıyoruz.
+
+397
+01:15:17,460 --> 01:15:22,579
+Eşittir, values, i'yi koyacağız.
+
+398
+01:15:24,659 --> 01:15:29,380
+Şimdi bu kodumuz bize aslında bst'yi yaratıyor.
+
+399
+01:15:30,159 --> 01:15:36,680
+Şimdi bst'yi iki şekilde yazdırabiliriz. Bunlardan bir tanesi aslında şöyle hemen.
+
+400
+01:15:43,412 --> 01:15:50,772
+BST dedik. BST'yi gönderdik. Random numbers'ı oluşturmuştuk, bunu gönderdik.
+
+401
+01:15:50,772 --> 01:16:01,412
+0'ın en tane değerimiz var, bunu göndermiş olduk.
+
+402
+01:16:01,412 --> 01:16:06,412
+En tane değer için bunu şey yap. Daha sonra biz şöyle bir şey yapabiliriz aslında.
+
+403
+01:16:09,427 --> 01:16:23,427
+bst diyelim. For i eşittir 0, i küçüktür 1024, i artı artı iken printf.
+
+404
+01:16:23,427 --> 01:16:37,291
+%d dedik, burada i ve bst, i yazdırdık.
+
+405
+01:16:37,300 --> 01:16:43,300
+Burada sadece BST'nin 1024 tane değerini yazdırmış olacağız.
+
+406
+01:16:43,300 --> 01:16:51,300
+Şimdi, bulduğu rastgele değerler, şuraya da şöyle bir printf yazalım.
+
+407
+01:17:00,948 --> 01:17:14,948
+Şimdi bulunduğu rastgele değerler, şunlar, 86, 3, 55, 48, vesaire diye giden değerler.
+
+408
+01:17:14,948 --> 01:17:28,028
+Şimdi burada ne yaptı? 86'yı köke ekledi. Daha sonra 3 geldi. 3, 86'dan büyük mü, küçük mü? Küçük. Nereye ekledi? 2 katı, 0'ın 2 katı artı 1.
+
+409
+01:17:28,595 --> 01:17:32,755
+Biri ekledim. 55, 86'dan büyük mü, küçük mü?
+
+410
+01:17:35,456 --> 01:17:36,456
+Küçük.
+
+411
+01:17:39,195 --> 01:17:41,195
+Bu yanlış yapıyor. Bir saniye.
+
+412
+01:17:46,323 --> 01:17:48,323
+FindFix, std...
+
+413
+01:17:54,100 --> 01:18:04,100
+Bu tabi i'den başlamıyor. Sıfırdan başlıyor. Evet, evet, şimdi doğru oldu.
+
+414
+01:18:04,100 --> 01:18:16,100
+Şimdi, 72, sıfırıncı elemana koydu. 70 büyük mü, küçük mü? Küçük. 1'e koydu. 2 katı artı 1.
+
+415
+01:18:17,524 --> 01:18:22,844
+72'den büyük mü, küçük mü? Küçük. 70'den büyük mü, küçük mü? Küçük.
+
+416
+01:18:22,844 --> 01:18:29,644
+Birin iki katı 2, artı 1, 3. 3'te eksi 1 vardı, 4'ü buraya koydu.
+
+417
+01:18:29,644 --> 01:18:39,084
+1, küçük, 1'e geldi. Küçük, 4'e geldi. Küçük, kaç oldu? 2 kere 3, 6, bir daha, 7.
+
+418
+01:18:45,619 --> 01:19:10,079
+Büyük, 2 katı artı 2, 4.69, 72'den büyük mü? Küçük. 70'den küçük mü? Küçük. 2 katı artı 1, 3. 4'ten büyük mü? Büyük. 2 kere 3, 6. 2 daha, 8. Bunu böylece koymuş oldu.
+
+419
+01:19:12,148 --> 01:19:38,148
+Şimdi tabi burada şöyle bir sıkıntı var. Aslında ilk başta şunu diyelim. Bunları yazdırırken, 1024 tane değer yazdırıyoruz değil mi? Aslında bizim bunu yazdırmamız çok efektif değil. Yani bu çok karmaşık oluyor. Bu yüzden bunu yazdırmak için bazı yöntemler var. Bu yöntemlerden bir tanesi
+
+420
+01:19:38,452 --> 01:20:02,412
+Pre-order dediğimiz şöyle bir yazdırma tipi. Yazdırırken ilk başta köke geliyor, kökü yazdırıyor. Daha sonra çocukları gezecek. Sol çocuğa geliyor, kökü yazdırıyor. Sonra bunun çocuklarını gezmeye gidiyor. 25'e geliyor, bunu yazdırıyor.
+
+421
+01:20:03,252 --> 01:20:21,252
+Çocukları var mı? Yok. O zaman otuza geri geliyor. Sağdaki çocuğuna gidiyor. Bunu yazdırıyor. Bunun kökü yok. Geri gidiyor. Bunun daha fazla çocuğu olmadığı için bir daha geri geliyor. Ve buradan sağ çocuğa gidip bunu yazdırıyor. Yani yazdır.
+
+422
+01:20:26,068 --> 01:20:53,068
+Sol çocuk ve sağ çocuk tarzında yazdırıyor. Şimdi bunu yapması çok kolay. Hemen bunu yazalım. Void print bst dedik. int bst array olsun.
+
+423
+01:20:53,456 --> 01:20:57,956
+Bir tane de int, i'miz olsun. Bu da hangi çocukta olduğumuzu göstersin.
+
+424
+01:20:57,956 --> 01:21:13,456
+Burada çıkma koşulumuz ne? bs-t-i eğer eksi birse, yani eğer bu bs-t'nin içinde olmayan bir yere geldiysen, çık dedik.
+
+425
+01:21:13,456 --> 01:21:20,235
+Şimdi bizim yazdırma koşulumuz neydi? printf, ilk başta yazdır.
+
+426
+01:21:20,404 --> 01:21:46,784
+%d, bst, i. Daha sonra, print bst, bst, sol çocuk, move left i. Daha sonra da aynısının sağ çocuklu hali. Move right.
+
+427
+01:21:48,851 --> 01:22:04,532
+Şimdi biz böyle yaptırdığımız, yazdırdığımız zaman, print bst, bst, sıfırdan başlayıp yazdır. En sonunda da şuraya şöyle bir tane de satır at.
+
+428
+01:22:08,595 --> 01:22:30,495
+Şimdi burada okurken nasıl okuyacağız? 86, 47 hemen ondan küçüğü. 3, bu da 47'nin sol çocuğu. 45, 47'nin 3'ün sağ çocuğu. 37, 3'ün sağ, 45'in sol çocuğu. 52
+
+429
+01:22:31,060 --> 01:22:55,940
+Şimdi, 86'dan küçük mü? Küçük. 47'den büyükse demek ki, 47'nin sağ çocuğu. Bakalım, 47, 1, 2 katı, artı 2, 4, 52. 58, yine 86'dan küçük, 47'den büyük, 52'den büyük. 52'nin ne? Sağ çocuğu. 2 katı, artı 2.
+
+430
+01:22:56,979 --> 01:23:23,799
+90, 86'dan büyük, iki katının ikisi. Buna pre-order deniliyor. Diğer tiplerinde sadece yazdırma buradan, eğer sol çocuğa bakıp yazdırıyorsa buraya geliyor, buraya in order. Yani şöyle olursa in order oluyor, şöyle olursa post order oluyor.
+
+431
+01:23:28,819 --> 01:23:30,819
+Şimdi yazdırmayı da yaptık.
+
+432
+01:23:41,524 --> 01:23:47,764
+Şimdi evet, bu senin dediğin olay aslında bizim ilk başta bahsettiğimiz dengesiz olması.
+
+433
+01:23:47,764 --> 01:23:57,824
+Yani eğer bütün değerler bundan küçük gelecek şekilde olursa ne olur?
+
+434
+01:23:59,463 --> 01:24:07,564
+Bu eksponansiyel olarak artıyor değil mi? Yani burası sıfırsa burası bir oluyor, burası...
+
+435
+01:24:07,956 --> 01:24:19,956
+İki katının bir fazlası üç oluyor, burası iki katının bir fazlası yedi oluyor, on beş oluyor, işte burası otuz bir oluyor.
+
+436
+01:24:19,956 --> 01:24:30,956
+Yani eksponansiyel olarak artıyor. Yani burada çok kötü geldiği zaman on bir eleman sığmayabiliyor. Ya da artık kaçsa, 1024 on bir oluyor sanırım.
+
+437
+01:24:34,579 --> 01:24:55,460
+Bazı yolları var. Bunun bir yolu, bu biraz daha kolay bir yolu belki de. Hatta şeyi de göstereyim. Şunu 100, şunu da 100 olarak yaparsak, gördüğünüz gibi patlıyor. Yani ağaçta ulaşmaya çalışıyor ama 1024'e sığmıyor.
+
+438
+01:24:59,283 --> 01:25:08,283
+Şimdi bunun dengeli yapmanın yolu, aslında hip trillerinin oradaki avantajı neydi? Böyle bir sıkıntıları yoktu değil mi? Direkt sonlarını ekleyebiliyorsun.
+
+439
+01:25:08,283 --> 01:25:25,283
+Ama BST'nin böyle bir sıkıntısı var. Bunun dengeli yapmanın bir yolu, diziyi eğer sıralarsanız başında, dizi sıralı gelirse eğer, şurada, mesela atıyorum 20 olsaydı burada ne olacaktı?
+
+440
+01:25:27,699 --> 01:25:53,340
+10, işte atıyorum 30 ve 40 olacaktı değil mi? Çok daha düzenli oluyor. Şimdi bu düzensiz olmasına dengesiz ağaç deniliyor. Unbalanced tree. Dengeli ağaç yapmak için BST'leri bir yöntem, diziyi sıralayıp
+
+441
+01:25:53,747 --> 01:25:57,827
+Orta noktasından başlayarak ağaca eklemek.
+
+442
+01:26:01,652 --> 01:26:08,131
+Şimdi burada ikinci yöntem, yani başka bir yöntem daha var, ondan bahsetmeyeceğim. Onu belki siz merak edersiniz, araştırırsınız.
+
+443
+01:26:08,131 --> 01:26:15,332
+Ağacı oluşturduktan sonra dengesiz olduğu anda ağacı değiştirmek. Bu biraz daha karmaşık bir olay.
+
+444
+01:26:15,332 --> 01:26:26,131
+Şimdi biz, 100 elemanlı, sıralı bir dizimiz olsun. Bu dizimiz, şimdilik şunu kapatalım.
+
+445
+01:26:28,916 --> 01:26:32,916
+Şöyle bir tanımlı, sıralı bir dizimiz olsun.
+
+446
+01:26:39,380 --> 01:26:45,380
+Bu diziyi biz şurada ikinci bir fonksiyon tanımlayalım.
+
+447
+01:26:45,380 --> 01:26:47,380
+Create
+
+448
+01:26:51,636 --> 01:27:03,496
+balance bst diyelim. Ve buraya int bst daha sonra
+
+449
+01:27:07,315 --> 01:27:10,315
+int values
+
+450
+01:27:12,515 --> 01:27:29,315
+Daha sonra bir de int ne olacak? Start ve int end olacak. Şimdi bu start ve end bizim dizimizin başlangıç ve bitiş noktalarını belirtiyor.
+
+451
+01:27:29,971 --> 01:27:37,171
+Bu başlangıç ve, bakın ağacın demiyorum, dizinin başlangıç ve bitiş noktası, values'un başlangıç ve bitiş noktası.
+
+452
+01:27:37,171 --> 01:27:46,952
+Her seferinde biz bu başlangıç ve bitiş noktalarının ortasını alacağız ve bu ortasını ağaca ekleyeceğiz.
+
+453
+01:27:48,051 --> 01:27:50,872
+O zaman bizim durma koşulumuz nedir?
+
+454
+01:27:54,771 --> 01:28:10,771
+Artık büyükse end'den, yani start noktamız end noktamızdan büyükse, demek ki artık orta noktayı geçtik, yani şeyi geçtik, diziyi tamamladık, bakmamız gereken yerlere baktık demek oluyor, return yaptık.
+
+455
+01:28:21,716 --> 01:28:38,716
+Bölü 2 Başlangıç bitiriş noktasının ortası. Şimdi buradan index alıyoruz. Bu şurada yaptığımız işlem aslında. Ekleyeceğimiz yeri bulacağız ağaçta. Index eşittir.
+
+456
+01:28:49,011 --> 01:28:51,011
+neresi olduğunu bul.
+
+457
+01:28:51,011 --> 01:28:56,491
+Göndereceğimiz değer de values mid.
+
+458
+01:29:00,948 --> 01:29:10,948
+Tabii şurayı şöyle yapacağız. Burası da ne olacak? Sıfır olacak. Eleman ekliyoruz.
+
+459
+01:29:10,948 --> 01:29:26,948
+Şimdi biz burada index bulduktan sonra bst index eşittir. Values bir de ekledik buraya.
+
+460
+01:29:28,884 --> 01:29:46,884
+Daha sonra, şimdi bir taneyi ekledik, ne yapacağız? Orta tarafı eklediysek, dizinin şurasını ekledik. Sonraki hamlemiz ne olacak? Şurasını ve şurasını eklememiz gerekiyor, değil mi?
+
+461
+01:29:55,680 --> 01:30:20,748
+values'u gönderdik. Şimdi, sol tarafa giderken, başlangıç noktamız aynı kalacak ama, bitiş noktamız artık ne olacak? Mid, eksi bir olacak. Sağ tarafa giderken, bst, values,
+
+462
+01:30:22,868 --> 01:30:28,188
+Start noktamız artık mid artı bir oldu, end noktamız da değişmedi.
+
+463
+01:30:31,539 --> 01:30:35,640
+Evet, fonksiyonumuz bu kadar. Bunu anladınız mı arkadaşlar?
+
+464
+01:30:40,787 --> 01:30:44,787
+Niye böyle bir işlem yapmamız gerektiğini anladınız mı?
+
+465
+01:30:50,003 --> 01:31:00,003
+Daha sonra, burada yapılan işlemlerde orta noktasını koya koya gidersek, ağaç daha dengeli olacağını da anladınız.
+
+466
+01:31:05,395 --> 01:31:25,395
+Tamamdır. Şimdi ilk baştan şu sıralı yüz elemanlı diziyi deneyelim. Gördüğünüz gibi patlıyor. Zaten sıralı olduğu için direkt patlar. Buraya create.bst değil de...
+
+467
+01:31:29,203 --> 01:31:45,203
+Create Balance. Bst dedik. Random Numbers. Başlangıç noktamız 0, bitiş noktamız da n olacak.
+
+468
+01:31:49,395 --> 01:31:51,395
+Şimdi bakın gördüğünüz gibi oluşturdu.
+
+469
+01:32:10,739 --> 01:32:12,739
+Tamam mıdır arkadaşlar?
+
+470
+01:32:12,739 --> 01:32:19,739
+Burada hata vermedi ama benim değer denemelerde hata veriyordu. Aslında burası n-1 oluyor.
+
+471
+01:32:19,739 --> 01:32:25,739
+Int index değişkeni yazmışız ya for'un içine.
+
+472
+01:32:25,739 --> 01:32:28,739
+Şurada.
+
+473
+01:32:28,739 --> 01:32:34,739
+Her seferinde yeni index adında değişken mi tanımlıyor? Evet.
+
+474
+01:32:34,739 --> 01:32:37,547
+Şöyle.
+
+475
+01:32:38,195 --> 01:32:56,195
+Şimdi bu scope'larla ilgili tekrar, scope'un içinde her seferinde yeniden bir indeks tanımlıyor ve burada tanımladığınız indeks, mesela ben şuraya printf %d index dersem, tanınmaz.
+
+476
+01:32:58,579 --> 01:33:07,279
+Çünkü bunun skopu artık bunun içinde. Yani bunu şey gibi düşünün, buraya girdiği zaman sanki yeni bir alana giriyor.
+
+477
+01:33:10,579 --> 01:33:16,579
+Ve bu alandan çıktığında da bu alanın içinde tanımlanan değişkenleri görmüyor.
+
+478
+01:33:21,579 --> 01:33:27,579
+Evet, ama yani fonksiyon değil aslında. Burada değişken skopları daha farklı bir mantık.
+
+479
+01:33:27,579 --> 01:33:33,579
+Yani mesela, şimdi bunu göstermeyin belki siz şey olacak ama Grober değişkenler var.
+
+480
+01:33:34,579 --> 01:33:37,579
+Bunu sakın kullanmayın, bundan çok puan kırıyoruz.
+
+481
+01:33:38,452 --> 01:34:00,452
+Evet, burada mesela atıyorum, TMP10 dediniz ya, bunu her yerde kullanabiliyorsunuz. Çünkü bunun scope'u artık ne? Bütün program. Bakın, burada bütün program diyorum ya, aslında bu da bir önemli. Çünkü ben diyelim bunu...
+
+482
+01:34:01,043 --> 01:34:09,043
+Atıyorum, farklı bir C dosyasında tanımladım. Ve ben bu C dosyasını burada çağırdığımda da TMP'ye erişebiliyorum.
+
+483
+01:34:10,564 --> 01:34:15,404
+Bunu siz şu anda gördünüz mü bilmiyorum ama bir sonraki dönem kesinlikle göreceksiniz.
+
+484
+01:34:15,404 --> 01:34:24,844
+Bu scope'ların ne olduğunu vesaireyi. Bu int'i burada tanımlayınca, nerede orası? Şurada.
+
+485
+01:34:29,684 --> 01:34:33,684
+X-turn, aynen o tarzda bir şeyle erişiyorsunuz.
+
+486
+01:34:33,684 --> 01:34:43,684
+Int'i burada tanımlayınca, int'in, index'in scope'u sadece şu alan oluyor.
+
+487
+01:34:47,859 --> 01:34:52,859
+Üstüne de yazmıyor. Buradan çıkınca aslında bu siliniyor her şeyde.
+
+488
+01:34:54,859 --> 01:34:59,859
+Şu gibi zararı oluyor arkadaşlar. Şimdi siz normalde yazdığınız kodlarda aslında çok bir farkı olmuyor.
+
+489
+01:34:59,859 --> 01:35:07,859
+Ama ileride multi-thread programlar yazdığınızda şöyle bir sıkıntı oluyor.
+
+490
+01:35:07,859 --> 01:35:12,859
+Sizin bir thread'iniz bu değişkene erişip bu değişkeni değiştiriyor.
+
+491
+01:35:13,363 --> 01:35:18,163
+Ama başka bir thread'iniz yine bu değişkeni erişip bu değişkeni okuyor.
+
+492
+01:35:19,163 --> 01:35:25,363
+Eğer burada bir kontrol sağlamazsanız ki groballerde böyle bir kontrol sağlanmıyor,
+
+493
+01:35:26,363 --> 01:35:32,363
+o zaman sizin bir thread'inizin yaptığı değişiklik diğer thread'inizi etkiliyor.
+
+494
+01:35:33,363 --> 01:35:36,363
+Şimdi bu aslında multi-threading de çok önemli bir konu.
+
+495
+01:35:36,363 --> 01:35:39,863
+Yani çok girmeyeceğim ama sizin bir banka hesabınız var.
+
+496
+01:35:40,948 --> 01:35:51,948
+Eee, heap'te mi saklanıyor? Eee, heap'te saklanıyor olması gerekiyor. Öyle hatırlıyorum.
+
+497
+01:35:51,948 --> 01:36:07,948
+Şimdi sizin bir banka hesabınız var, bu bir banka hesabınızın şeyi yüz, tamam mı? Şimdi sizin bir thread'iniz geliyor, bu değeri okuyor ve bu değeri yüz on yapıyor.
+
+498
+01:36:09,203 --> 01:36:14,203
+Aynı thread'iniz de bu değeri okuyor. Hatta şöyle yapalım.
+
+499
+01:36:17,203 --> 01:36:23,203
+Bu değeri okuyor 100. Bu değerden bu değeri 100 ekleyecek tamam mı?
+
+500
+01:36:23,203 --> 01:36:26,203
+110 eklemeyi bekliyor.
+
+501
+01:36:26,203 --> 01:36:32,203
+Bu sırada bir başka thread'iniz bunu okuyor.
+
+502
+01:36:32,203 --> 01:36:36,203
+Burası 100 okuyor ya, 10 çıkartıyor.
+
+503
+01:36:36,787 --> 01:36:47,287
+90 oluyor, sonra bunu buraya eklemeden 90'ı buraya yazıyor, sonra bu thread'inizde gelip 110'u buraya yazıyor.
+
+504
+01:36:51,220 --> 01:37:01,220
+Aslında senin değeriniz, hani bu 10 akredi, bu 10 çıkardı, tekrar 100 kalması gerekirken 110 oluyor. Sıkıntıyı gördünüz mü?
+
+505
+01:37:03,220 --> 01:37:13,220
+Şimdi Grober değişkenlerde, bu multi-threading de asla kontrol edilemiyor. Yani kontrol edilmesi çok zor diyelim. Belki edilebilir çok uğraşırsanız.
+
+506
+01:37:13,844 --> 01:37:19,844
+O yüzden Grober değişken kullanmanızı istemiyoruz ki bu alışkanlık haline gelmesin sizde.
+
+507
+01:37:21,844 --> 01:37:25,515
+Bu yüzden Grober değişken kullanmanızı istemiyoruz.
+
+508
+01:37:30,100 --> 01:37:35,100
+Tekrar konumuza dönecek olursak, created balance tree'i de gördük.
+
+509
+01:37:37,100 --> 01:37:41,100
+Şimdi hızlıca bakalım başka bir şey yapmayacaktık. Aynen.
+
+510
+01:37:41,100 --> 01:37:45,100
+Şimdi, bunlar üzerinde bir tane de soru çözelim.
+
+511
+01:37:45,100 --> 01:37:55,100
+Şimdi, BST'de her nodun çocuklarının ortalaması, yani çocukları derken,
+
+512
+01:37:55,807 --> 01:38:03,307
+O subtree'nin, bütün çocuklarının, ondan sonra gelen nodların ortalaması kendisine eşit mi?
+
+513
+01:38:03,307 --> 01:38:17,807
+Ama bunu bütün subtree'lerde kontrol edeceğiz. Bu ne demek? 40 için bir kontrol yapacağız, sonra 30 için kontrol yapacağız, sonra bir de 50 için kontrol yapacağız.
+
+514
+01:38:19,807 --> 01:38:21,739
+Şimdi...
+
+515
+01:38:22,612 --> 01:38:29,612
+Bunu yapmaya başlayalım. Zaten çok bir vakitimiz kalmadı. Hızlıca bunun üzerinden geçelim.
+
+516
+01:38:31,612 --> 01:38:42,612
+Şimdi, burada bir int return sum diyelim. Bunu recursive olarak nasıl yaparız?
+
+517
+01:38:43,988 --> 01:39:02,308
+Aşağıdaki çocuklarını toplaya toplaya yukarıya gideriz. Her işlemde de aslında biz bu toplamların ortalaması kendisine eşit mi diye sorarsak aslında biz bunu bulmuş oluyoruz. Değil mi? Yani aşağıları toplayıp toplayıp yukarıya çıkacağız recursive'de.
+
+518
+01:39:11,667 --> 01:39:12,667
+Index dedik.
+
+519
+01:39:19,859 --> 01:39:21,859
+Sıfır derken...
+
+520
+01:39:21,859 --> 01:39:23,859
+Tamam.
+
+521
+01:39:23,859 --> 01:39:26,859
+Şimdi burada iki tane değişkenimiz olacak.
+
+522
+01:39:26,859 --> 01:39:29,859
+Left sum olacak.
+
+523
+01:39:29,859 --> 01:39:37,859
+Sol taraftaki ağacın toplamı, bir de sağ taraftaki ağacın toplamı olacak.
+
+524
+01:39:38,859 --> 01:39:40,859
+Burada durma koşulumuz ne?
+
+525
+01:39:40,859 --> 01:39:42,219
+Eğer...
+
+526
+01:39:45,395 --> 01:40:11,695
+BST, move left i, sıfırsa, eksi birse, ve BST, move right i, eşittir, eksi birse. Yani bu ne demek?
+
+527
+01:40:12,916 --> 01:40:24,916
+Eğer çocuğu yoksa, eğer bir leaf notsa, o zaman sadece kendi değerini döndür.
+
+528
+01:40:24,916 --> 01:40:35,916
+Şimdi, eğer, şimdi bizim şöyle bir durumumuz var, bizim sağ ya da sol çocuğumuz olmayabilir.
+
+529
+01:40:36,564 --> 01:40:40,564
+Yani bir tane çocuğumuz varsa, bunu bir kontrol etmemiz gerekiyor.
+
+530
+01:40:40,564 --> 01:40:58,564
+If, bst, move, left, i, i değil tabi bu, index kullandık şurada. O yüzden burada index kullanacağız.
+
+531
+01:41:04,467 --> 01:41:30,867
+Eşit değildir, eksi 1'e. Yani, eğer bizim solumuzda bir tane çocuk varsa, left sum eşittir, return sum bst move left index. Değil mi?
+
+532
+01:41:32,212 --> 01:41:32,972
+If-
+
+533
+01:41:36,020 --> 01:41:45,720
+Solda bir çocuğumuz yoksa, left sum eşittir 0 diyelim. Sonra bunun aynısını
+
+534
+01:41:52,787 --> 01:42:08,887
+Sol içinde yapalım. Move right dedik. Eğer right'da çocuğumuz varsa o zaman right sum buna eşit olsun. Eğer yoksa da right sum'ımız sıfır olsun.
+
+535
+01:42:19,731 --> 01:42:40,043
+if bst index eşittir left sum artı right sum bölü 2 ortalamasına eşitse printf
+
+536
+01:42:44,307 --> 01:42:55,108
+Index is average of its sub 3.
+
+537
+01:42:58,387 --> 01:43:09,387
+En sonunda da neyi döndüreceğiz? Return, aşağıların toplamını döndüreceğiz ya.
+
+538
+01:43:09,387 --> 01:43:20,387
+bst index artı left sum artı right sum.
+
+539
+01:43:24,340 --> 01:43:27,340
+Şimdi, bizim örnek bir ağacımız olsun.
+
+540
+01:43:29,340 --> 01:43:30,340
+Bu ağacımız,
+
+541
+01:43:34,340 --> 01:43:35,340
+şöyle olsun,
+
+542
+01:43:36,340 --> 01:43:38,340
+şurada 9,
+
+543
+01:43:41,340 --> 01:43:43,340
+şurada 6,
+
+544
+01:43:44,340 --> 01:43:46,340
+şurada 4,
+
+545
+01:43:47,340 --> 01:43:49,340
+şurada 8,
+
+546
+01:43:52,595 --> 01:44:00,595
+12, burada 10 ve burada da 14 olsun.
+
+547
+01:44:02,595 --> 01:44:05,595
+Şimdi ağacımız BST mi? Evet.
+
+548
+01:44:06,595 --> 01:44:14,595
+Şimdi bakıyoruz. 4, 8, 12, böl 2'ye 6. 6 bir şey midir?
+
+549
+01:44:15,923 --> 01:44:22,923
+Ortalaması mıdır? Aynen. 10-14, 24 bölü 2, 12 ortalaması mıdır? Aynen.
+
+550
+01:44:23,923 --> 01:44:27,923
+Şimdi 9'u kontrol ederken, nasıl kontrol ediyoruz 9'u?
+
+551
+01:44:35,220 --> 01:44:53,940
+6 artı 12 mi diyoruz? Yoksa, şurası 12, 6, 18, artı 24, 24, şey 24, 12, 36 mı diyoruz?
+
+552
+01:45:03,891 --> 01:45:14,691
+18 artı 36 diyoruz değil mi? Yani çünkü 9'un subtrisi neresi? Buranın tamamı.
+
+553
+01:45:16,791 --> 01:45:26,331
+Peki 18 artı 36 bölün kaç diyoruz? 1, 2, 3, 4, 5, 6.
+
+554
+01:45:29,331 --> 01:45:31,231
+Peki bu yazdığımız kod.
+
+555
+01:45:31,615 --> 01:45:40,415
+O zaman burada çalışır mı? Yani biz eğer şurada bir random numbers'ı şu olmasaydı da...
+
+556
+01:45:45,108 --> 01:45:53,507
+Şu, demin gösterdiğimiz ağaç olsaydı, burası da, yedi olsaydı en.
+
+557
+01:45:53,507 --> 01:45:58,507
+Ve biz, şunu çalıştırsaydık.
+
+558
+01:46:04,180 --> 01:46:06,180
+Sonucu bulur muydu?
+
+559
+01:46:23,636 --> 01:46:25,636
+Eş, yur, eş, nu kodla göreceğiz.
+
+560
+01:46:30,931 --> 01:46:39,931
+Bulmadı değil mi? 6 ve 12'yi buldu. Yani 6 zaten şey, indeksleri bulmadı burada, değerleri buldu da.
+
+561
+01:46:46,676 --> 01:46:50,076
+İndeks diyelim.
+
+562
+01:46:52,076 --> 01:46:54,076
+İndeks 1 ve İndeks 2.
+
+563
+01:46:55,676 --> 01:46:59,076
+İndeks 1 ve İndeks 2. 6 ve 12.
+
+564
+01:46:59,776 --> 01:47:03,876
+Sadece şunları buldu değil mi? 6 ve 12.
+
+565
+01:47:06,476 --> 01:47:10,876
+Bunun nedeni, biz şurada 2'ye böldük.
+
+566
+01:47:10,876 --> 01:47:12,476
+Ama aslında...
+
+567
+01:47:12,819 --> 01:47:19,819
+İkiye bölmememiz gerekiyor. Bizim aşağıdaki subtrinin count'unu bulmamız gerekiyor. Değil mi?
+
+568
+01:47:19,819 --> 01:47:36,819
+O zaman şöyle bir tane daha fonksiyon yazdık. int return count dedik. int bst ve int index.
+
+569
+01:47:41,108 --> 01:48:08,468
+Count'unu bul. Left count ve right count dedik. Çıkma koşulumuz yine şurayla aynı. Ama artık BST'nin kendi değerini döndürmüyoruz da bir döndürüyoruz. Daha sonra şu kısımlar da aslında aynı.
+
+570
+01:48:12,979 --> 01:48:19,479
+LeftCount bu noktada returnCount olacak.
+
+571
+01:48:20,479 --> 01:48:23,979
+LeftCount bu noktada 0 olacak.
+
+572
+01:48:25,979 --> 01:48:29,479
+MoveLeftIndex aynı.
+
+573
+01:48:29,479 --> 01:48:33,479
+Burası da rightCount olacak.
+
+574
+01:48:33,479 --> 01:48:37,963
+Burası da returnCount olacak.
+
+575
+01:48:38,260 --> 01:48:50,260
+Eğer yoksa 0 olacak. En sonunda da return left count artı right count artı 1 kendisi olacak.
+
+576
+01:48:50,260 --> 01:49:01,003
+Daha sonra buraya geliyoruz ve sol ağacı bulurken artık şuraya bir tane değişken tanımlıyoruz, count diye.
+
+577
+01:49:02,292 --> 01:49:08,692
+Sol ağacı tanımlar ki, sol ağacı gezerken count eşittir dedik.
+
+578
+01:49:08,692 --> 01:49:25,492
+Return count, bst, move left index, yani sol tarafın count'unu bul. Eğer sol tarafta yoksa,
+
+579
+01:49:26,260 --> 01:49:32,260
+Count to 0 ile başlat. Yani ilk başta left'e baktığımız için böyle oluyor.
+
+580
+01:49:33,260 --> 01:49:39,260
+Right tarafta da aynısını yapacağız ancak artık eşit değil, artı eşit diyeceğiz.
+
+581
+01:49:40,260 --> 01:49:49,228
+Return count bzt move right index dedik.
+
+582
+01:49:51,155 --> 01:49:55,155
+Ve eğer yoksa da count'a hiçbir ekleme çıkarma yapmayacağız.
+
+583
+01:49:55,155 --> 01:50:02,155
+Daha sonra burada da count'a böleceğiz artık.
+
+584
+01:50:02,155 --> 01:50:04,011
+Şurada da...
+
+585
+01:50:12,500 --> 01:50:14,500
+count'u da yazdıralım.
+
+586
+01:50:16,500 --> 01:50:18,500
+Bunu tekrar çalıştırdığımız zaman,
+
+587
+01:50:18,500 --> 01:50:22,283
+1, 2 ve 0.
+
+588
+01:50:29,876 --> 01:50:32,676
+İndeks noktasına bakarız derken
+
+589
+01:50:50,228 --> 01:50:54,228
+Bir sol taraf için çağırıyoruz, bir de sağ taraf için çağırıyoruz.
+
+590
+01:50:59,539 --> 01:51:21,039
+Sadece bir tanenin indeksine baksak. Olur herhalde. Çünkü zaten burada çocuklarını kontrol ediyoruz. O yüzden şuraya şöyle bir şey desek bakalım. Olması gerekiyor.
+
+591
+01:51:33,011 --> 01:51:33,771
+Hmm.
+
+592
+01:51:47,188 --> 01:51:49,188
+Ay yazdırıyor.
+
+593
+01:51:50,188 --> 01:51:51,188
+He.
+
+594
+01:51:52,188 --> 01:51:53,188
+Şurası.
+
+595
+01:52:01,971 --> 01:52:03,971
+Hay hata da vermiyor sıkıntı orada.
+
+596
+01:52:05,971 --> 01:52:06,956
+Count...
+
+597
+01:52:24,372 --> 01:52:26,372
+733
+
+598
+01:52:26,372 --> 01:52:29,372
+Hee, hiçbirini bulamıyor o yüzden.
+
+599
+01:52:29,372 --> 01:52:34,372
+Şunu, eksi bir yapacağız. Çünkü kendini saymasın diye. Tamam.
+
+600
+01:52:37,372 --> 01:52:40,372
+Evet. Oluyor.
+
+601
+01:52:40,372 --> 01:52:43,948
+Çok mantıklı. Tamamdır.
+
+602
+01:52:53,619 --> 01:52:55,119
+Sorusu olan var mı?
+
+603
+01:53:10,676 --> 01:53:13,676
+Tamamdır, sorunuz yoksa bugünlük bu kadar arkadaşlar.
+
+604
+01:53:16,176 --> 01:53:18,676
+Ahmet Hocam'ın ekleyeceği bir şey varsa...
+
+605
+01:53:28,115 --> 01:53:29,115
+Yok sanırım.
+
+606
+01:53:31,115 --> 01:53:41,115
+Kodu paylaşacak mıyız? Emin değilim, paylaşabilirim. Muhtemelen paylaşırım arkadaşlar. Eğer paylaşmazsam bir mail atarsınız.
+
+607
+01:53:52,404 --> 01:53:54,404
+Town'dur arkadaşlar.
+
+608
+01:53:56,404 --> 01:53:58,316
+Size de iyi günler.

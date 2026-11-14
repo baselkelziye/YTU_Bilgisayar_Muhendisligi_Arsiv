@@ -1,0 +1,1855 @@
+1
+00:00:30,899 --> 00:00:32,652
+Evet arkadaşlar, merhaba.
+
+2
+00:00:44,915 --> 00:01:08,915
+Geçen hafta kaldığımız yerden devam edeceğiz. Geçen hafta hatırlayacak olursanız, en son 8086'nın uç tanımlarını vermiştik. Daha sonrasında yardımcı devrelerden bahsetmiştik. Sonrasında da lab saatinde de Sercan Hoca'nız labın genel işleyişiyle ilgili genel bir takım açıklamalarda bulunmuştu. Bu haftada kaldığımız noktadan devam ediyor olacağız.
+
+3
+00:01:16,915 --> 00:01:34,756
+Birinci lab konusunu hatırlayacak olursanız, yardımcı interfazlerden, arayüzlerden ilki olan 8255 üzerine. Dolayısıyla bu hafta da lab konusunda yetişebilmek adına şöyle bir yol izleyeceğiz arkadaşlar. Saat 14.
+
+4
+00:01:41,524 --> 00:01:50,884
+Evet, labda notlandırma olacağını söylemiştim geçen hafta için. Bir tanıtım labı olmasına rağmen, ön lab olmasına rağmen katılım zorunluydu.
+
+5
+00:01:50,884 --> 00:01:59,764
+Dersi yeni aldığınız için sizi ondan muaf tutabiliriz ama mevcut durumda kayıtlı olan arkadaşlar için bu şekilde bir devamdan notlandırma vardı.
+
+6
+00:02:02,524 --> 00:02:03,764
+Bunu söylemiş olayım.
+
+7
+00:02:04,115 --> 00:02:14,115
+Şimdi bu haftada lab konularını yetiştirebilmek adına şu şekilde iki seans üzerinden derslerimizi yapıyor olacağız arkadaşlar.
+
+8
+00:02:14,115 --> 00:02:22,115
+İşte bir buçuk saat kadar bir dersimiz olacak. Bu ikinci slide konularını bitireceğiz. Daha sonra da 8255'in konusuna geçeceğiz.
+
+9
+00:02:22,115 --> 00:02:31,115
+Dolayısıyla ilk grup dersimizi mevcut Zoom videosu üzerinden yapacağız. İkinci ders grubumuz ise lab saati...
+
+10
+00:02:31,219 --> 00:02:35,659
+Canlı dersinden yapıyor olacağız. Tamam mı? Şimdiden bunları söyleyeyim.
+
+11
+00:02:38,719 --> 00:02:44,340
+Tabii açıklayabilirsiniz, atabilirsiniz. Mail üzerinden olursa hem de kalıcı olur, daha iyi olur.
+
+12
+00:02:45,579 --> 00:02:57,099
+İlk haftadan itibaren şöyle söylemiştim arkadaşlar. Özel bir takım durumlar varsa bunları baştan bildirirseniz yardımcı olmaya çalışırız.
+
+13
+00:02:57,843 --> 00:03:24,603
+Sizin faydalanabileceğiniz şekilde yardımcı olmaya çalışırız. Ama eğer ki bu son haftalara gelmişse artık ve gereklilikleri yerine getirememişsek, ödevlerdir, lablardır, şunlar falan yerine getirememişken, o noktada bir gerekçe ve bir özel durum açıklarsanız, o noktada bir şey yapamayabileceğimi söylemiştim. Dolayısıyla özel bir durumunuz varsa önceden bildirmeniz sizin de faydanıza olur.
+
+14
+00:03:25,491 --> 00:03:30,991
+Şimdi arkadaşlar konumuzla ilgili olarak başlayalım. Bu haftanın konusu ne?
+
+15
+00:03:30,991 --> 00:03:36,491
+Şimdi geldiğimiz nokta itibariyle biz artık şunu yapabiliyoruz.
+
+16
+00:03:36,491 --> 00:03:37,491
+82...
+
+17
+00:03:37,907 --> 00:04:03,548
+Pardon 82 demişim. 8086 mikroişlemcisi enerji verdiğimiz vakit çalışabilir hale, fonksiyon gösterebilir hale getirmiş durumdaydık. Yardımcı entegrelerimizi, ondan sonra saat darbesi üreteceğini, yollar için leçleme ve tutucu devrelerin hepsinin nasıl bağlandığını görmüştük. Bu noktadan itibaren yardımcı entegreleri
+
+18
+00:04:03,955 --> 00:04:13,195
+Interface'ler dediğimiz, arayüzler dediğimiz cihazlara doğru döndüreceğiz. Şimdi dersimiz kapsamında bu yardımcı devreleri hangi kapsamda göreceğiz?
+
+19
+00:04:13,460 --> 00:04:17,960
+1. Paralel veri alışverişi yapan programlanabilir hazır yardımcı devreler olarak.
+
+20
+00:04:17,960 --> 00:04:22,460
+2. Seri haberleşme yapan programlanabilir hazır yardımcı devreler olarak.
+
+21
+00:04:22,460 --> 00:04:27,960
+3. Zamanlayıcı ve sayıcı yardımcı programlanabilir entegreler olarak.
+
+22
+00:04:27,960 --> 00:04:32,259
+4. Dijital analog, analog, dijital çevirici yardımcı entegreler olarak.
+
+23
+00:04:32,259 --> 00:04:41,460
+5. Kesme kontrolcüsü olarak bunları göreceğiz. Bunlar genel olarak I.O. cihazları açısından bize bir fikir veriyor olacak.
+
+24
+00:04:41,459 --> 00:04:48,799
+Biz bunların nasıl kullanılacağını, hangi amaçlarla kullanılacağını, nerelerde kullanılacağını bu derslerimiz boyunca ortaya koymuş olacağız.
+
+25
+00:04:48,799 --> 00:04:54,459
+Daha sonrasında ise hafıza birimlerinin 8086 ile arayüzü nasıl olur bir de ona bakacağız.
+
+26
+00:04:54,459 --> 00:04:59,403
+Ve bu çerçevede bu dönemki dersimizi tamamlamış olacağız. Dersimiz bittiğinde...
+
+27
+00:05:00,019 --> 00:05:12,019
+Herhangi bir insan arayüzü sağlayabilmek için, interfej sağlayabilmek için giriş çıkış yönlü olarak kabaca bir tasarımı nasıl yapmalıyız bununla ilgili bir fikrimiz oluşmuş olacak ve bu tasarımı yapabilir noktada olacağız.
+
+28
+00:05:12,019 --> 00:05:19,620
+Bir hafıza birimini mikroişlemciye bağlamak noktasında gerekli ön bilgiye sahip olacağız ve bu tasarım yapabiliyor noktada olacağız.
+
+29
+00:05:19,620 --> 00:05:27,019
+Şimdi bunlarla ilgili olarak dediğim gibi önümüzdeki haftadan itibaren, yani bu haftada ikinci dersle birlikte de başlayacak bu.
+
+30
+00:05:27,091 --> 00:05:39,391
+Programlanabilir arayüzlere bakıyor olacağız. Ama programlanabilir arayüzlerin bir ön adımı var. Bu da custom bizim kendimizin geliştirmiş olduğu çevre birimlerini 8086 ile arayüze sokmak.
+
+31
+00:05:39,391 --> 00:05:43,591
+Dolayısıyla şu anda göreceğimiz konumuz arkadaşlar.
+
+32
+00:05:43,956 --> 00:05:53,956
+8086 mikroişlemcisi ile interfej edebileceğimiz, custom olarak bizim geliştirmiş olduğumuz arayüz cihazları nasıl tanımlanabilir onları göreceğiz.
+
+33
+00:05:53,956 --> 00:06:08,956
+İkinci olarak da bizim kullanabileceğimiz en basit giriş çıkış birimleri olan buton ve ledlerin nasıl kullanabileceğimizi, bu arayüzlerde bunların nasıl sürülebileceğini veyahut da sürmek demek, bağlanmak demek bunları görüyor olacağız.
+
+34
+00:06:11,956 --> 00:06:23,055
+İhtiyacımız var. Çevre birimi dediğimiz kavram neye karşılık geliyor? Bunu göreceğiz. İkinci olarak SML dersinde çokça değinmediğimiz giriş çıkış komutları var.
+
+35
+00:06:23,055 --> 00:06:33,055
+Input, Output komutları. Bunları detaylı bir şekilde görüyor olacağız. SML'yi şu anda mevcut durumda aynı dönemde alan arkadaşlar için, mikro ile aynı dönemde alan arkadaşlar için.
+
+36
+00:06:33,391 --> 00:06:41,112
+Bu zaten yeni bir bilgi ama geçen seneden SM'li almış arkadaşlar için de yeni bir bilgi olarak ortaya çıkacak bu başlık.
+
+37
+00:06:41,672 --> 00:06:53,672
+Daha sonra giriş çıkış haritalama yöntemlerinden bahsedeceğiz. Bu noktada 8086 için bu haritalama yöntemlerinden uçları anlatırken kabaca bahsetmiştik.
+
+38
+00:06:53,812 --> 00:06:56,711
+Tekrar üzerinde duracağız. Net bir şekilde oturmasını sağlayacağız.
+
+39
+00:06:57,363 --> 00:07:06,963
+Daha sonrasında da az önce söylemiş olduğum gibi basit arayüz devrelerini custom olarak bizim gerçeklemek isteyeceğimiz basit arayüz devrelerini biz nasıl gerçekleriz?
+
+40
+00:07:06,963 --> 00:07:16,323
+Onları göreceğiz. Yani LED ve buton arayüzlerini göreceğiz. Daha sonrasında da bunlar için adres çözümleme devrelerini nasıl oluşturabiliriz?
+
+41
+00:07:16,500 --> 00:07:28,500
+Tek bir devremiz var, tek bir yardımcı çevre birimimiz var. Bunun için adres çözümleme devresini nasıl oluşturabiliriz, adres çözümleme devresi ne işe yarayacak? Bunu da vererek konuyu açıklamaya çalışacağız.
+
+42
+00:07:28,500 --> 00:07:37,500
+Son olarak da çevre birimi kontrollerinden bahsediyor olacağız. Yani cihazdan bir değer okumak istediğimiz zaman, bir input cihazından değer okumak istediğimiz zaman,
+
+43
+00:07:37,500 --> 00:07:44,500
+burada bizim kullanmamız gereken assembly komut grubu nedir veya assembly yaklaşımı ne olacak, programlama yaklaşımı ne olacak?
+
+44
+00:07:44,500 --> 00:07:53,500
+Veyahut da bir çıkış işlemi gerçekleştirmek istediğimizde, output işlemi gerçekleştirmek istediğimizde, gerçeklememiz gereken assembly code bloğu neleri içermeli?
+
+45
+00:07:53,500 --> 00:08:01,699
+Bunlardan bahsederek bu custom I.O konusunu tamamlamış olacağız. Dediğim gibi bunu saat 3.30'a kadar bitirmeyi planlıyorum.
+
+46
+00:08:01,699 --> 00:08:10,199
+Daha sonrasında bir yarım saat ara vereceğiz. Sonrasında da lab saatinde, lab canlı dersinde de 8255 konusuna geçmiş olacağız arkadaşlar.
+
+47
+00:08:11,475 --> 00:08:20,975
+Şimdi kavram olarak gelelim. Çevre birimleri nedir? Çevre birimleri arkadaşlar peripheral device olarak geçiyor.
+
+48
+00:08:21,103 --> 00:08:33,104
+Bunlar temel olarak mikroişlemci açısından giriş veya çıkış işlemlerini yapabildiğimiz cihazlardır. Giriş ve çıkışı kime karşı yapıyor? Bunları dış dünyaya karşı yapıyor.
+
+49
+00:08:33,104 --> 00:08:40,703
+Yani bu mikroişlemci ile bir insan etkileşimde ise insanın anlayabileceği şekilde birtakım göstergeler bunu sağlıyor.
+
+50
+00:08:49,104 --> 00:08:59,104
+Tuşa bastığımıza karşılık olarak bunu anlamlandırmak istiyorsak bu durumda bu giriş çıkış birimlerine ihtiyacımız var. Bunu söyleyebiliriz.
+
+51
+00:09:02,104 --> 00:09:10,104
+Şu anda 68 kişi görünüyor. Bu devamla ilgili yavaş yavaş bir sıkıntı oluşmaya başladı arkadaşlar. Bu da gözümden kaçıyor değil.
+
+52
+00:09:16,115 --> 00:09:20,115
+Dönem başında bildirmeyen arkadaşların durumuna dönebilir, söyleyeyim baştan.
+
+53
+00:09:20,115 --> 00:09:30,115
+Devamla ilgili dikkat etmeyen arkadaşlar için herhangi bir faydasına olabilecek bir notlandırmayı düşünmüyorum açıkçası.
+
+54
+00:09:30,115 --> 00:09:41,067
+Devam zorunluluğu sizi orada bırakmamak adına belki aramıyoruz ama kritik bir noktada kalan arkadaşlar için de bu devam etmeyenler için.
+
+55
+00:09:41,299 --> 00:09:45,720
+Onların faydasına olabilecek bir şeyleri yapmayı da düşünmüyorum. Onu baştan söyleyeyim.
+
+56
+00:09:48,659 --> 00:09:54,860
+Mikroişlemcinin karşılaştığı çevre birimleri neler? Önce oradan başlayalım. Sadece giriş çıkış birimleri yok.
+
+57
+00:09:55,379 --> 00:09:59,720
+Hafıza birimleri de var. Dolayısıyla çevre birimlerini hafıza birimleriyle karşılaştırarak...
+
+58
+00:10:00,596 --> 00:10:25,435
+ele almamız lazım. Hafıza birimlerine baktığımız zaman bu hafıza birimlerinin kapasitelerinin oldukça büyük olduğunu görüyoruz. Örneğin, 64 kilobayt, 256 kilobayt boyutunda hafıza elemanları var. Bunlar, 1 megabaytlık hafıza uzayının yaklaşık işte dörtte birini veya tamamını doldurabilecek tek başına bir cihaz olarak ortaya çıkabiliyor. Ama giriş-çıkış birimlerine baktığımız zaman giriş-çıkış birimleri
+
+59
+00:10:25,844 --> 00:10:37,344
+Daha dar kapasiteye sahip, daha az alan kaplıyor. Örneğin, 8255, biraz sonra ikinci derste göreceğimiz, 8255 entegresi, hafıza uzayında sadece ve sadece 4 byte'lik bir alan kaplıyor.
+
+60
+00:10:37,344 --> 00:10:45,844
+Bu hafıza uzayında bir cihazın kapladığı alan, tamamıyla doğrudan doğruya cihazın adres ucu sayısıyla alakalı.
+
+61
+00:10:46,196 --> 00:10:55,015
+Örneğin şöyle söyleyelim, hafıza uzayında 256 kB'lik bir alan kaplayan memori birimi için kaç adet adres ucu vardır?
+
+62
+00:10:55,572 --> 00:11:08,692
+256K dediğimize göre 2 üzeri 8 çarpı 2 üzeri 10, 18 adet adres ucu var. Dolayısıyla 18 adres ucu olan bir cihaz, hafıza uzayında toplamda 256 kilobaytlık bir alan kaplıyor.
+
+63
+00:11:08,692 --> 00:11:19,491
+Diğer taraftan 8255'e baktığımızda, 8255 toplamda 2 adet adres ucuna sahip. Dolayısıyla hafıza uzayında 2 üzeri 2, 4 baytlık bir alan kaplıyor.
+
+64
+00:11:23,572 --> 00:11:31,572
+Her bir hafıza elemanı veyahut da çevre biriminin bir byte'lık kapasitede olduğunu, her bir gözünün bir byte kapasitede olduğunu söylemiştik.
+
+65
+00:11:31,572 --> 00:11:41,572
+Buradan yola çıkarak, 8255 için iki tane adres ucu toplamda 4 tane, 2 üzeri 2 eşittir 4, 4 tane hafıza gözüne karşılık gelir.
+
+66
+00:11:41,572 --> 00:11:48,299
+Her bir hafıza gözünde de bir byte veri saklayabildiğimizden dolayı da 4 byte'lık bir alan kapladığını söyleyebiliriz.
+
+67
+00:11:48,403 --> 00:11:57,084
+Dolayısıyla hafıza birimleriyle karşılaştırıldığı zaman çevre birimlerinin kaplamış olduğu alan çok daha dardır.
+
+68
+00:11:57,395 --> 00:12:01,995
+Ama tıpkı hafıza birimlerinde olduğu gibi bunların da belirli bir takım adresleri vardır.
+
+69
+00:12:01,995 --> 00:12:10,956
+Örneğin, bilgisayarınızda her bir cihazın hangi aralığa yerleştirilmiş olduğunu cihaz adresleriyle birlikte görebiliyorsunuz.
+
+70
+00:12:10,956 --> 00:12:18,635
+Örneğin donanım özelliklerine girdiğinizde bunlar belli ve örneğin anakart üreticisi tarafından da bu şekilde tanımlanıyor.
+
+71
+00:12:18,635 --> 00:12:24,995
+Ve bu tanımlar üzerinden bu cihazlara da işletim sistemi olsun, diğer programlar olsun erişmeye çalışıyor.
+
+72
+00:12:25,395 --> 00:12:29,696
+tanımlı aralıklar, adres değerleri aralığına bu cihazların yerleştirdiğini söyleyebiliriz.
+
+73
+00:12:30,696 --> 00:12:35,015
+Temel olarak bunu söylemiş olalım.
+
+74
+00:12:35,635 --> 00:12:55,635
+Şimdi çıkış birimi ve giriş birimi noktasında bunların mikroişlemci açısından tanımlı olduğunu söylemiştik. Hatırlayacak olursanız hem 8086 uçları hem de komutlar açısından incelediğimizde bunların hep mikroişlemci açısından tanımlanmış olduğunu söylemiştik.
+
+75
+00:13:03,635 --> 00:13:16,956
+Buraya erişebilmek için out komutunu kullanıyoruz. Bu out komutu da çıkış birimi de hep mikroişlemci açısından tanımlı. Yani mikroişlemcinin dış dünyaya veri çıkmasını sağlayan bir çevre birimi çıkış birimi olarak isimlendiriliyor.
+
+76
+00:13:16,956 --> 00:13:30,796
+Bu çıkış birimi olduğuna göre bu çıkış birimine veri yazabilmek için out komutunu kullanmam lazım. 8086'nın komut setinde olan out komutunu kullanmamız gerekiyor. Benzer bir şey giriş birimleri içinde tanımlanabilir.
+
+77
+00:13:31,635 --> 00:13:42,036
+Giriş birimi mikroişlemci açısından bir giriş birimi. Yani dış dünyadaki bir veriyi mikroişlemciye aktarabilecek yönde çalışan bir birimden bahsediyorsak bu giriş birimi olur.
+
+78
+00:13:42,036 --> 00:13:50,235
+Ve giriş birimi de veri aktarımı noktasında IN komutunu kullanıyor. Dolayısıyla IN komutu da mikroişlemci açısından tanımlı.
+
+79
+00:13:50,235 --> 00:13:57,036
+Mikroişlemciye doğru bir veri aktarımı için, mikroişlemci içerisine bir veri aktarımı için IN komutunu kullanıyoruz.
+
+80
+00:13:57,039 --> 00:14:11,800
+Burada referansımız hep mikroişlemcinin kendisi oluyor. Hem çevre biriminin tanımını hem de komutların tanımını mikroişlemci referansını alarak, mikroişlemci yönündeki referansı alarak yapmamız gerektiğini tekrar hatırlatmış olayım sizlere de.
+
+81
+00:14:12,403 --> 00:14:39,183
+Devam edelim. Şimdi hem daha önceden SMD dersi alanlar için hem de ilk defa bu dönem alanlar için yeni olan bir konu veyahut da SMD dersi konusunda çok üzerinde durulmayan bir konu. Giriş çıkış komutları ve bunların formatlarına bakıyoruz arkadaşlar. Şimdi topu topu in ve out işlemlerinde 4, 8, topu topu 8 farklı komut varyasyonu var.
+
+82
+00:14:39,731 --> 00:14:43,871
+Bunların 4'ü in komutuyla, 4'ü out komutuyla alakalı.
+
+83
+00:14:43,871 --> 00:14:54,871
+Burada vermiş olduğumuz P8 kısaltması, 8 bitlik bir port adresine karşılık geliyor. Demek ki şu anlama gelir.
+
+84
+00:14:55,028 --> 00:15:08,028
+Ben vermiş olduğum veya kullanmak istediğim port adresini 8 bite sığıyorsa doğrudan port adresini yazarak, P8 yerine port adresini yazarak verebilirim. Bu, bu anlama geliyor.
+
+85
+00:15:08,028 --> 00:15:20,844
+Dolayısıyla şuradaki kavram, şu P8'ler, bu P8'ler, şöyle birleştirmiş olalım. Bunlar,
+
+86
+00:15:21,971 --> 00:15:36,571
+Port adresi 8 bite sığarsa, doğrudan adres vererek, doğrudan adres vererek kullanabiliyoruz. Örneğin ne diyeceğiz?
+
+87
+00:15:48,820 --> 00:16:06,000
+Komutlarla doğrudan port adresini vererek bunu kullanabiliyoruz. Diğer taraftan eğer ki port adresimiz 8 bite sığmıyorsa, bu durumda şurada göstermiş olduğum gibi dx yazmacı üzerinden port adresi tanımlayabiliyoruz.
+
+88
+00:16:17,652 --> 00:16:23,652
+Port adresi, 8 bite sığmıyorsa.
+
+89
+00:16:27,827 --> 00:16:34,228
+Port adresi 8bite sığmıyorsa kesinlikle adresi dx üzerinden aktarmam gerekiyor.
+
+90
+00:16:34,228 --> 00:16:41,548
+E peki şu olabilir mi? Adres 8bite sığıyor olmasına rağmen ben bunu dx üzerinden verebilir miyim?
+
+91
+00:16:41,548 --> 00:16:49,668
+Yani önce dx'e move dx virgül 10h deyip in al dx çalıştırabilir miyim? Bu geçerli bir durum.
+
+92
+00:16:50,004 --> 00:17:18,003
+Fakat fark edeceğiniz üzere iki komutla gerçekleştirmek zorunda kaldım bu fonksiyonu. Dolayısıyla biraz daha dolan başlı ve uzun bir süre aldı mikroişlemci açısından. Şimdi baktığımızda bu tür in ve out komutları bizim sürekli olarak çalıştıracağımız komutlar. Dolayısıyla bunlarda da ne kadar etkin veyahut da hızlı bir kod bloğu sağlarsak bizim o kadar avantajımıza olacak. Dolayısıyla cevap nedir? Eğer ki port adresi 8 bite sığıyor...
+
+93
+00:17:18,003 --> 00:17:20,163
+olsa da ben bunu dx'den verebilir miyim?
+
+94
+00:17:20,343 --> 00:17:21,884
+Evet verebilirim. Ama
+
+95
+00:17:21,884 --> 00:17:24,144
+bir kötü yanı var. Daha uzun sürede
+
+96
+00:17:24,144 --> 00:17:26,323
+aynı fonksiyonu gerçekleştirmiş
+
+97
+00:17:26,323 --> 00:17:28,083
+oluyorum. Öyleyse tercih edeceğim
+
+98
+00:17:28,083 --> 00:17:29,384
+nedir? Adres
+
+99
+00:17:29,384 --> 00:17:32,083
+port adresi 8 bite sığıyorsa
+
+100
+00:17:32,083 --> 00:17:34,083
+doğrudan komut
+
+101
+00:17:34,083 --> 00:17:35,923
+içerisinde bunu gömmek. Eğer
+
+102
+00:17:35,923 --> 00:17:38,243
+8 bite sığmıyorsa dx üzerinden
+
+103
+00:17:38,243 --> 00:17:39,743
+port adresini göndermemiz
+
+104
+00:17:39,743 --> 00:17:41,884
+gerekiyor. Şimdi bu noktaya kadar
+
+105
+00:17:41,884 --> 00:17:44,003
+port adresi üzerine konuşmuş
+
+106
+00:17:44,003 --> 00:17:44,323
+olduk.
+
+107
+00:17:44,624 --> 00:17:51,624
+Peki bu noktada artık itibaren şununla konuşalım. Bakın komutlarımızı tekrar şöyle göz önüne alalım.
+
+108
+00:17:51,624 --> 00:17:58,624
+Verinin aktarılabileceği yazma.
+
+109
+00:17:58,847 --> 00:18:16,227
+Bir parametremiz adresli, ikinci parametremiz ise bu in ve out komutlarında ikinci parametremiz ise datanın nerede olacağıyla ilişkili komutlar. Bakın, ya al veyahut da ax kullanabiliyorum. Başka hiçbir alternatif yok. Demek ki mesela şu komut için ele alalım.
+
+110
+00:18:17,076 --> 00:18:34,676
+in al, p8 komutu için. Örneğinde şöyle verelim. in al, 10h. Mesela örneği de şu olsun. in al, 10h komutunu çalıştırmış olan. Bu ne demek? 10h numaralı.
+
+111
+00:18:34,799 --> 00:18:49,879
+Port adresinden değeri oku. Buradan okuyacağın değer 8 bitlik bir değer olacaktır. Ve bu 8 bitlik içeriği al, AL yazmacına aktar. Bunun arkasında, arka planda şu bilgi de var.
+
+112
+00:18:50,339 --> 00:19:01,019
+Bu bir çift adres olduğu için, çift adres bakın 10H çift bir sayıdır. Dolayısıyla aslında burada gerçekleşen işlemi biraz daha özetleyecek olursak şöyle bir durum var.
+
+113
+00:19:01,875 --> 00:19:19,375
+10H portundaki veriyi al. Öncelikli olarak veri yolunun düşük anlamlı kısmına bunu yaz. Daha sonra da bunu AL'ye aktar. Aslında gerçekleşen iletişim.
+
+114
+00:19:20,692 --> 00:19:39,812
+Bu, onhash portundaki veriyi oku, uçlarda 8 tane uç var burada. Buradaki veriyi oku, mikroişlemcinin data yolu üzerindeki düşük anlamlı byte'a yaz, daha sonra da bunu al yazmacına aktar. Buradaki in al, onhash komutunun çalışma mantığı bu şekilde.
+
+115
+00:19:42,548 --> 00:19:57,688
+Farklı bir adres kullansaydım ne olacaktı? Hemen örnek olarak bakalım. Onu da out komutu üzerinden görelim. Out 11h, al komutunu kullanmış olsaydık ne olacaktı? Burada da şöyle bir sonuç oluşacaktı arkadaşlar.
+
+116
+00:19:57,688 --> 00:20:06,128
+Al yazmacındaki 8 bitlik değer mikroişlemcinin adres yolunun yüksek anlamlı byte'ına çıkacaktı.
+
+117
+00:20:06,432 --> 00:20:18,432
+D8, D15 numaralı uçlarına çıkacaktı. Buradan da port 11H'a gidecekti. Niçin böyle? Bunun neden bu şekilde olduğunu belki...
+
+118
+00:20:19,667 --> 00:20:36,507
+Önümüzdeki adres çözümleme ile birlikte daha net bir şekilde anlatacağım. Yani bu haftanın konusu içerisinde de var. Ama şu anda bilmemiz gereken nokta şu. Eğer ki 8 bitlik bir veriyi tek adresten aktarıyorsam, arada veri yolunun yüksek anlamlı byte'ını kullanıyorum.
+
+119
+00:20:36,507 --> 00:20:47,667
+Ve bu durumda, bakın veri yolunun yüksek anlamlı byte'ı aktif olduğu için bizim bir tane kontrolücümüz vardı. Bus High Enable ucu, aktif 0 bir uçtu. Burada mikroişlemci 0 değeri.
+
+120
+00:20:47,667 --> 00:21:03,667
+Bu birimleri üretiyor. Gördünüz mü? Dolayısıyla, geri gelecek olursak, eğer tek bir adresten 8 bitlik bir işlem yapıyorsam, bu hem giriş çıkış için hem de hafıza işlemleri için geçerli. Kural ne?
+
+121
+00:21:03,988 --> 00:21:31,228
+Tek adresten 8 bitlik işlem yapıyorsam, mikroişlemci veri yolunun yüksek anlamlı byte'ını kullanır. Yani D8'den D15'e kadar olan uçlarını kullanır ve mikroişlemci aynı zamanda bus high enable ucunda 0 değerini üretir. Bu aktif 0 bir uç olduğu için yolun yüksek anlamlı kısmı aktif anlamında bunu anlayabiliriz. Böyle bir kullanım var. Tekrar bir geri dönmek istiyorum.
+
+122
+00:21:31,955 --> 00:21:40,155
+Eğer ki kullanmış olduğumuz komut 10,AL,10H olmuş olsaydı ne demiştik burada?
+
+123
+00:21:43,635 --> 00:21:59,236
+10H numaralı porttan veriyi almıştık. D0, D7 veri uçlarına bu mikroişlemci veriyi buraya okuyacaktı veya veriyi buradan bekleyecekti. Öyle söyleyin. Mikroişlemci veriyi bu uçlarda bekliyor.
+
+124
+00:21:59,236 --> 00:22:09,736
+OUT komutunda ise veriyi D8, D15 uçlarında oluşturuyor. IN ve OUT arasındaki farkı ifade etmek açısından. Daha sonra da bunu AL'ye aktarmıştım.
+
+125
+00:22:10,804 --> 00:22:18,804
+Tıpkı bus, high, enable, eşit sıfır yaptığı gibi bir kontrol ucunu da sıfır yapıyor. Bu kontrol ucu hangisiydi hatırlıyor muyuz?
+
+126
+00:22:18,804 --> 00:22:31,804
+O kontrol ucunun aslında mikroişlemcisi tanımlı bir uç değildi ama bus, low, enable isimli sanal bir uç olduğunu söylemiştik geçen hafta hatırlıyor musunuz? Bu uç hangisiydi?
+
+127
+00:22:31,804 --> 00:22:33,804
+A0 ucu, evet.
+
+128
+00:22:34,319 --> 00:23:00,480
+Dolayısıyla A0 ucunda da 0 değerini oluşturuyor. Bakın nasıl yaptı bunu? Adres zaten çift bir adres. A19'dan A0'a kadar biz 10H adresini yazdığımızda ne göreceğiz? A0 ucunun 0 olduğunu göreceğiz. Dolayısıyla mikroişlemci ikinci bir kontrol ucuna, bus, love, enable isiminde ikinci bir uca ihtiyaç duymuyor. Bunu A0'dan kullanıyor.
+
+129
+00:23:00,884 --> 00:23:21,083
+Öyleyse şu anda geldiğimiz noktada mikroişlemci gerek hafıza işlemleri gerek giriş çıkış işlemleri için olsun. Eğer ki 8 bitlik bir işlem yapıyorsa bu durumda bu 8 bitlik işlemin port adresi çift ise
+
+130
+00:23:21,455 --> 00:23:33,056
+Veri, veri yolunun düşük anlamlı byte'ından bekleniyor. Eğer out komutuysa da, bu durumda da veri, veri yolunun düşük anlamlı byte'ına konuluyor.
+
+131
+00:23:33,268 --> 00:23:45,268
+Eğer tek adres ise, port adresimiz tek adres ise, mikroişlemci giriş işlemlerinde veriyi D8-D15 isimli yüksek anlamlı veri yolu byte'ından bekliyor.
+
+132
+00:23:45,268 --> 00:23:54,188
+Eğer bu bir output işlemi ise de mikroişlemci veriyi veri yolunun yüksek anlamlı byte'ına koyuyor.
+
+133
+00:23:54,451 --> 00:24:04,532
+Bunun içinde kontrolüçlarımız 8 bitlik işlemlerde, bus high enable eşittir 0 durumunu tek adresten 8 bitlik işlemlerde sağlıyor.
+
+134
+00:24:05,812 --> 00:24:16,552
+Çift adreslerden 8 bitlik işlemleri ise bus low enable veyahut da bir başka deyişle A0 eşittir 0 ile dış dünyaya bildirmiş oluyor.
+
+135
+00:24:16,932 --> 00:24:19,912
+Şu ana kadar konuştuklarımız arkadaşlar.
+
+136
+00:24:20,192 --> 00:24:26,592
+8 bitlik in ve out komutlarıydı. Dediğim gibi bunu 8 bitlik hafıza işlemlerine de genişleteceğiz.
+
+137
+00:24:26,592 --> 00:24:39,912
+Ama bunu dönemin sonuna doğru hafıza konusu geldiğinde yapacağız. Bunlar bakın doğrudan port adresini vermiş olduğumuz fixed adres durumları için geçerli olmakla birlikte
+
+138
+00:24:39,912 --> 00:24:47,072
+8 bitlik variable adres durumları da için geçerli. Yani şu altını kırmızıyla çizmiş olduğum
+
+139
+00:24:48,051 --> 00:25:10,051
+Durumlar, 8 bitlik veri alışverişine ilişkin örneklerimiz. Bunlar eğer ki çift adresten olursa, mikroişlemci veriyi D0, D7 uçlarıyla ilgili olarak arıyor veya koyuyor. Tek adrese mikroişlemci veriyi D8, D15 uçlarında arıyor veya bu uçlara veriyi koyuyor. Eğer ki...
+
+140
+00:25:10,900 --> 00:25:30,260
+Belirli bir port adresinden 16 bitlik bir giriş çıkış yapmak istersem, bu ne demek? Örneğin, her bir hafıza gözü veya her bir adresin 8 bitlik olduğunu söylemiştik. Bu durumda mikroişlemci şöyle bir şey çalıştırmak isterse, komutu yazalım, mesela in komutu için.
+
+141
+00:25:30,640 --> 00:25:54,940
+in ax virgül 10h gibi bir komut çalıştırdığımızda arkadaşlar, bu arka planda şu anlama geliyor. Bu diyor ki, al ye 10h içerisindeki veriyi ata ama aynı zamanda ah'a da 11h içerisindeki veriyi ata.
+
+142
+00:25:55,344 --> 00:26:09,344
+Bu, bu anlama geliyor. Yani 10H adresinden itibaren başlayan, 10H adresinden itibaren başlayan iki tane hafıza veya giriş çıkış bölgesindeki veriyi AX'e aktar. Bu, bu anlama geliyor.
+
+143
+00:26:09,344 --> 00:26:20,140
+Yani bu ikisini de aynı anda gerçeklemek istiyor. Baktığımız zaman az önceki bilgiden hareketle ne diyebiliriz? Bakın, birinci kısım şu altını çizmiş olduğum, hemen çizmeye çalışayım.
+
+144
+00:26:20,500 --> 00:26:40,660
+Altını çizmiş olduğum birinci bölüm arkadaşlar, sanki çift adresten 8 bitlik bir işleme karşılık geliyor. İkinci kısım ise tek adresten 8 bitlik bir işleme karşılık geliyor. Bunların eş anlı olabilmesi için de mikroişlemci şunu sağlıyor. Bakın, aynı anda eş anlı olarak bus high enable'a 0 çıkıyor.
+
+145
+00:26:46,163 --> 00:26:54,924
+Aynı zamanda da bus.hy enable'a da 0 değeri oluşturuyor. İkisini eşanlı olarak yapıyor. Nasıl yapacak bunu? Şunu yanlış yazdım, pardon.
+
+146
+00:26:57,684 --> 00:27:09,324
+bus.hy enable'a da 0 değeri üretiyor. bus.hy enable'a da 0 değeri üretiyor. Nasıl yapıyor bunu? Bakın vermiş olduğumuz adres bir çift adres.
+
+147
+00:27:09,519 --> 00:27:20,519
+Bakın, çift adres. Dolayısıyla, bus, love, enable'ın A0'nın 0 olması garanti. Ama aynı zamanda işlem, çift adresten 16 bitlik bir işlem.
+
+148
+00:27:20,980 --> 00:27:36,460
+Çift adresen 16 bitlik bir sistem olduğu zaman mikroişlemci veriyi hem D0, D7'de hem D8, D15'de yani veri yolunun tamamından bekliyor. Bu durumda demek ki veri yolunun yüksek anlamlı kısmı da aktif, o zaman bus high enable'ı da aktif yapıyor.
+
+149
+00:27:36,460 --> 00:27:48,699
+Her iki kontrolücümüzde aktif olduğunda bu çevre birimlerinden veri hem yüksek anlamlı veri yoluna hem de düşük anlamlı veri yoluna aynı anda aktarılıyor. Dolayısıyla mikroişlemci
+
+150
+00:27:48,915 --> 00:28:15,215
+Önceden getirerek toparlıyorum şimdi. Tek adresten 8 bitlik işlemleri, çift adresten 8 bitlik işlemleri ve çift adresten 16 bitlik işlemleri bir okuma yazma saykılında gerçekleyebilecek kapasiteye sahip. Tamam mı? Bunun nasıl olduğunu adres çözümlemede daha net göreceğiz. Ama şurada ek bir bilgi olarak şunu da yazalım. Mikroişlemciye çalışma mantığından dolayı AL'ye aktardığı veri.
+
+151
+00:28:15,571 --> 00:28:29,091
+D0, D7 uçlarından gelirken, AH'a aktarılan veri ise, D8, D15 veri uçları üzerinden aktarılacak.
+
+152
+00:28:29,192 --> 00:28:39,412
+Yani mikroişlemci okuma işlemi yaparken, AL'ye D0, D7 uçlarındaki veriyi atıyor, AH'a da D8, D15'teki veriyi atıyor.
+
+153
+00:28:39,859 --> 00:28:49,859
+Out işlemi olmuş olsaydı ne olacaktı? AH'daki veriyi D8, D15'e yazacaktı. AL'deki değeri de D0, D17'ye yazacaktı.
+
+154
+00:28:49,859 --> 00:28:58,359
+Dolayısıyla tekrar edelim, önemli bir nokta. Mikroişlemcimiz, 8086 mikroişlemcisi, bir okuma-yazma çevriminde,
+
+155
+00:29:07,347 --> 00:29:31,768
+Bir işlemi çift adresten tek bir okuma yazma saykılında gerçekleyebiliyor. Dolayısıyla hani SM'li dilinde hatırlayacak olursanız, komutlarımızı çift adreslere hizalı yazmaya çalışıyorduk veya verimizi çift adreslere hizalı yazmaya çalışıyorduk. Onun arkasında yatan olay bu. Tek adresli olmuş olsa ne olacak? Ona bakalım şimdi. Tek adresli olmuş olsaydı ne oluyor?
+
+156
+00:29:32,339 --> 00:29:42,439
+Yani çalıştıracağımız komut şöyle bir şey olmuş olsaydı. in ax,11h gibi bir komut çalıştırmış olsaydık. Şimdi 10h ile 11h'in farkı ne?
+
+157
+00:29:45,639 --> 00:29:57,819
+in ax,10h dediğimde, şunu bir geri alalım tekrar 10h üzerinden inceleyelim. in al,10h dediğimde neydi? 10h ve 11h adreslerinden çalışıyorduk.
+
+158
+00:30:06,259 --> 00:30:10,019
+10 haşımız bu. 11 haşımız da
+
+159
+00:30:13,364 --> 00:30:34,364
+Bu adresler. Bakın, arada değişen sadece A0 değeri var. Dolayısıyla A0'ı ben adres çözümlemeye katmazsam, adres uzayımızın çift ve tek adreslerini ayırmak için kullanırsam ve A0 adres çözümlemede kullanmazsam, geriye kalan bitler aynı, değer olarak aynılar.
+
+160
+00:30:34,607 --> 00:30:46,607
+Dolayısıyla ben şu iki işaretlemiş olduğum adres uç değerlerini kullanarak aslında adres uzayının çift ve tek blokları için bir satıra karşılık bir işlem yapabiliyorum.
+
+161
+00:30:46,607 --> 00:31:01,355
+Öyleyse neyi hayal etmeliyiz? Mikroişlemcinin adres uzayının çift ve tek bloklar halinde bölündüğünü, burası mesela tek blok, tek adresler, burası da çift adresler diye ayıracak olsam
+
+162
+00:31:01,652 --> 00:31:17,332
+10H ve 11H adresleri burada tek bir satıra karşılık gelir. Bu iki değer içinde fark sadece A0'ın farklı olması. Dolayısıyla A0 1 olduğunda tek bloğu aktif yapıyor veya bus, high enable aktif olduğunda.
+
+163
+00:31:17,844 --> 00:31:26,564
+A0, 0 olduğunda da çift bloğu aktif yapıyor. Buradan çıkan veriler, örneğin şuradan çıkan veriyle buradan çıkan veri de nereye aktarılacak?
+
+164
+00:31:26,564 --> 00:31:35,923
+Mesela bu D0, D8 uçlarına aktarılacak. Buradan çıkan veri de, şunu yanlış yazdım, az öncekini yanlış yazdım, düzeltelim.
+
+165
+00:31:46,291 --> 00:31:59,851
+15 numaralı uçlara aktarılacak. Ve ben bu iki, yani bu aynı satırdaki iki sütunu aynı anda seçebiliyorsam, bu veriler aynı anda çıkmış olacak. Demek ki 10H olmasın, yani çift adres olmasının karşılığı bu.
+
+166
+00:31:59,851 --> 00:32:08,971
+Mikroişlemci karşısında 1 megabaytlık hafıza alanı görmek yerine 512K ve 512K çift ve tek adresler olmak üzere
+
+167
+00:32:09,167 --> 00:32:27,647
+512K çarpı 16'lık bir adres hafıza bloğu veya giriş çıkış uzayı görmek istiyor. Buradaki amaç çift ve tek blokları oluşturup bunları aynı anda seçebilmek. Peki şimdi gelelim tek adreste olsak neyle karşılaşacaktık? Bakalım tek adreste olduğumuzda neyle karşılaşıyoruz?
+
+168
+00:32:29,971 --> 00:32:37,971
+Yani yazacağımız komut in ax,11h olmuş olsaydı ne olacaktı? Bu durumda arkadaşlar, sizin de tahmin edeceğiniz üzere,
+
+169
+00:32:39,971 --> 00:32:45,971
+al ye 11h'ın içeriğini aktarmak isteyecek mikroişlemci,
+
+170
+00:32:47,971 --> 00:32:54,971
+a h'a da 12h içeriğini aktarmak isteyecek değil mi? Mantıkayan bunu yapması lazım.
+
+171
+00:32:55,700 --> 00:33:02,700
+Şimdi 11H ve 12H'ı incelediğimizde bunları binary olarak yazalım. 11H'ı yazalım.
+
+172
+00:33:05,700 --> 00:33:07,500
+Ve 12H yazalım.
+
+173
+00:33:13,523 --> 00:33:21,123
+Ve mikroişlemcinin görmek istediği hafıza uzayını çizerek şurada gösterelim. Nasıl bir şey görmek istiyordu?
+
+174
+00:33:21,123 --> 00:33:28,123
+Shift ve tek adresler olmak üzere iki blok olarak görmek istiyordu. Burası bizim tek adreslerimizin olduğu blok.
+
+175
+00:33:28,123 --> 00:33:36,323
+Yani 0, 1, 2, 3, 4, 5, 6 diye gidiyor adreslerimiz. Burada da çift adresleri görmek istiyoruz. Bu durumda...
+
+176
+00:33:37,652 --> 00:33:46,552
+11H adresi buraya karşılık gelirken 12H adresi bir üst satırda farklı bir satıra denk gelecek değil mi?
+
+177
+00:33:47,476 --> 00:34:14,916
+Böyle olduğu için arkadaşlar, mikroişlemci tek adresten 16 bitlik işlemleri bir okuma yazma clock cycle'ında gerçekleyemiyor. Bunun yerine ne yapıyor? Önce tek adresten 8 bitlik bir işlem yapıyor. Önce şunu yapıyor bir okuma yazma cycle'ında. İkinci okuma yazma cycle'ında da bunu yapıyor. Dolayısıyla iki okuma yazma cycle'ında tek adresten 16 bitlik okuma veya yazma işlemi gerçekleşebiliyor.
+
+178
+00:34:15,135 --> 00:34:35,895
+İşte assembly dilinde biz verilerimizi ve programlarımızı çift adrese hizalı olarak yazmaya çalışmamızın arkasında yatan sebep bu. Eğer çift adreslere hizalı bir şekilde bunu yapabilirsek, bu durumda vermiş olduğumuz komut bir okuma-yazma saykılığına gerçekleşebiliyor. Hiza bozulursa bu okuma-yazma saykıları iki sefere çıkıyor.
+
+179
+00:34:43,135 --> 00:34:53,036
+veri yollarımız 32 bitlik olduğu için çift ve tek bloklar değil, orada 4 blok var mesela. 80, 486'da ve 386 şöyle 4 tane bloğumuz var.
+
+180
+00:34:57,300 --> 00:35:10,300
+Tamam güzel hizalı çizemedim ama siz çizdiğimi varsayın. Vermiş olduğumuz herhangi bir adresden 32 bitlik bir işlem yapmak istediğimizde eğer ki bu adres 4'e tam bölünebilen bir adrese bu durumda
+
+181
+00:35:14,036 --> 00:35:40,295
+Burada okuduğumuz verinin AL, AH, ondan sonra EAX'in yüksek anlamlı, yani neticede EAX'e okuyacaksak, anlam sırasını doğru olarak vermiş olduğumuz bir satırdan verinin ilgili yazmacı, hangi yazmacıyla ilgili olduğu önemli değil, doğrudan doğruya ilgili yazmacı aktarılması sağlanabiliyor. Örneğin,
+
+182
+00:35:40,692 --> 00:35:50,692
+Şuradan çıkan veri, buradan çıkan veri, şuradan çıkan veri, bunlar, şuraya da yazalım, bu 486 için.
+
+183
+00:35:52,692 --> 00:36:05,692
+Hangi adres uçlarına gidecek? Örneğin şu, D0, D7 data uçlarına gidecek. Bu ikinci bloktan çıkan veriler D8, D15 uçlarına gidecek.
+
+184
+00:36:05,844 --> 00:36:15,744
+Üçüncü bloktan çıkan veri D16, D23 uçlarına gidecek. Son bloktan çıkan veri ise D24, D31 numaralı veri uçlarına gidecek.
+
+185
+00:36:15,744 --> 00:36:19,943
+Ve bir seferde hafızadan 32 bitlik veriyi okumuş olacağız.
+
+186
+00:36:31,231 --> 00:36:48,231
+512K çarpı 16'lık bir hafıza uzayı görmek isterse, 8486'da karşısında, 8486'da karşısında toplamda 32 tane adres ucu olduğuna göre toplamda 4 GB'lık bir alana karşılık gelir.
+
+187
+00:36:58,164 --> 00:37:13,463
+Hafıza uzayı görmek istiyor. Bu mikroişlemcinin tasarımı gereği hafıza uzayının veyahut da giriş çıkış uzayının nasıl oluşturulması gerektiğine ilişkin bir örnek oluşturmuş olsun bizim açımızdan.
+
+188
+00:37:13,463 --> 00:37:24,264
+Dolayısıyla tekrar konumuza geri dönecek olursak, bunları siliyorum. Konumuza geri dönecek olursak, in ve out komutları açısından incelediğimizde
+
+189
+00:37:24,532 --> 00:37:33,532
+in ve out komutları fixed adres veya variable adres olarak çalışabilir. Yani port adresi yazmaç üzerinden ki bu yazmaç dx yazmacı oluyor.
+
+190
+00:37:34,532 --> 00:37:44,532
+in veya out komutu için dx yazmacı üzerinden veya doğrudan 8 bitlik port adresi verilerek işaret edilebilir. Port adresi verilmiş, aktarılmış olabilir.
+
+191
+00:37:45,652 --> 00:37:57,751
+dx'i ne zaman kullanıyoruz? Port adresimiz 8 bite sığmadığı zaman. Eğer ki port adresimiz 8 bite sığıyorsa doğrudan komut içerisine bunu gömüyoruz. Birinci nokta bu. İkinci nokta.
+
+192
+00:37:58,708 --> 00:38:14,208
+Vermiş olduğumuz port adresinden 8 bitlik işlem de yapabiliriz, 16 bitlik işlem de yapabiliriz. Dolayısıyla, 8 bitlik yapmış olduğumuz işlemlerde verinin AL'de olması gerekiyor. AL'de saklanacak veya OUT işlemlerinde AL üzerinden aktarılacak.
+
+193
+00:38:16,907 --> 00:38:25,708
+Veyahut da vermiş olduğumuz port adresinden 16 bitlik işlem de yapabiliriz. Vermiş olduğumuz port adresi eğer çift adresse,
+
+194
+00:38:25,748 --> 00:38:31,748
+Bunu bir okuma saykılığında, bir okuma yazma saykılığında, 16 bitlik veri aktarımını bir kere de yapabiliriz.
+
+195
+00:38:31,748 --> 00:38:40,748
+Eğer vermiş olduğumuz port adresi bir tek adresse, bu durumda mikroişlemci tek adresten 8 bitlik bir işlem, bir saykıl bitti.
+
+196
+00:38:40,748 --> 00:38:47,748
+Daha sonra da çift adresten 8 bit bir işlem gerçekleyerek iki okuma yazma saykılığında gerçeklemiş oluyor.
+
+197
+00:38:48,079 --> 00:39:07,759
+Dolayısıyla vermiş olduğumuz port adresi ve bir sonraki port adresinden 8'er bit okuyarak oluşturmuş olduğu 16 bitlik veriyi AX yazmacına aktarabilmiş oluyoruz. Bu 8 varyasyonu arkadaşlar, in ve out komutları için bizim yapabileceğimiz, kullanabileceğimiz 8 varyasyonun hepsi burada belirtilmiş durumda.
+
+198
+00:39:08,244 --> 00:39:18,244
+kullanabileceğimiz komut uzayı bunlar. Şimdi bu noktaya kadar arkadaşlar sormak istedikleriniz var mı? Anlaşılmayan bir nokta var mı? Tekrar üzerinde durmaya çalışalım.
+
+199
+00:39:24,596 --> 00:39:34,596
+Şu ana kadar, yani neler vardı? Giriş birimi nedir? Hafıza birimi nedir? Bunlar arasındaki farklar.
+
+200
+00:39:34,596 --> 00:39:44,596
+Kullandığımız komutlar, in ve out komutları ve bunlara ilişkin assembly komutları, giriş çıkışa ilişkin assembly komutları ve bunların arkasında yatan mantık.
+
+201
+00:39:44,596 --> 00:39:48,427
+Şu ana kadar bunları anlattık. Bu noktaya kadar sormak istediğiniz var mı?
+
+202
+00:39:50,068 --> 00:39:53,748
+Anlaşılmayan bir nokta olabilir veya sormak istediğiniz bir nokta olabilir.
+
+203
+00:40:09,427 --> 00:40:35,827
+Şimdi örnek üzerinden gidelim. in ax virgül 11h yapınca, arada virgül var tabi. Şimdi bir kere bu tek adresten 16 bitlik bir işlem. Bu durumda port adresini doğrudan vermişiz. Doğrudan verdiğimiz için bu fixed addressing'e giriyor. Yani burada dx'i kullanmamıza gerek yok. Tamam mı? dx'i kullanmamıza gerek yok. Şöyle bir şey olacak yani buradaki cevap.
+
+204
+00:40:39,668 --> 00:40:42,407
+Şimdi öncelikli olarak şunu yapacak.
+
+205
+00:40:44,468 --> 00:40:48,548
+Şimdi ax yazmacı neden oluşuyor? Hemen yazıyorum şöyle.
+
+206
+00:40:50,347 --> 00:40:54,788
+Slide üzerinde yazarsam herkes görsün ve eşanlı olarak gösteremeye çalışayım.
+
+207
+00:40:56,928 --> 00:41:02,428
+In ax,11h dediğimiz zaman aslında ne yapacak bu?
+
+208
+00:41:02,827 --> 00:41:07,108
+Ax yazmacının içeriğine hangi değerleri atayacak?
+
+209
+00:41:07,764 --> 00:41:16,003
+11H'taki değeri ve 12H'taki değeri atacak. Bu ikisinden bir 16 bitlik değer üretecek değil mi?
+
+210
+00:41:16,003 --> 00:41:22,643
+Dolayısıyla, burada da Little Ending formatı vardı. Little Ending formatı olduğu için şunu anlıyoruz.
+
+211
+00:41:22,835 --> 00:41:31,715
+11H'daki veri ve 12H'daki veri ne olmuş olacak? Bu 16 bitlik verinin low significant byte'ını oluşturacak.
+
+212
+00:41:31,715 --> 00:41:40,615
+12H'daki değeri de most significant byte'ını oluşturacak. AX'in most significant byte'ı ne? AH değil mi?
+
+213
+00:41:49,967 --> 00:41:57,367
+11H içerisindeki değeri AL'ye atayacak, 12H içerisindeki değeri de AH'e atayacak.
+
+214
+00:41:57,367 --> 00:42:12,767
+Şimdi 11H'taki değeri AL'ye atarken bu bir tek adres olduğu için, arada hangi veri yolu üzerinden geçecek bu tek adres olduğu için, D8, D15 data uçlarından geçerek AL'ye aktarılacak.
+
+215
+00:42:13,012 --> 00:42:23,012
+mikroişlemci ne yapacak? D8, D15'teki değerleri okuyacak kendi içerisine. İçeride bir temporeri yazmacı var. Ondan sonra AL'ye aktaracak.
+
+216
+00:42:23,012 --> 00:42:36,012
+12H adresi bir çift adres olduğu için çift adresteki verilerde veriyolun düşk anlamlı kısmında aranıyordu. Dolayısıyla 12H içerisindeki değer veriyolunun D0, D7 uçlarına çıkacak.
+
+217
+00:42:36,367 --> 00:42:45,367
+Mikroişlemci buradan bekliyor veriyi. Bu uçları mikroişlemci örnekledikten sonra veriyi bir temporali yazma çıpta tuttu. Daha sonra da AH'a aktaracak.
+
+218
+00:42:45,367 --> 00:42:55,367
+Bunu ama iki clock cycle'da yapacak. Önce 11H ile ilgili işlemi yapacak, daha sonra 12H ile ilgili işlemi yapacak. İki adımda yapabilecek bunu.
+
+219
+00:43:04,211 --> 00:43:07,211
+Burada bir whiteboard diye bir şey mi vardı? Neredeydi o bakayım?
+
+220
+00:43:11,155 --> 00:43:24,715
+İlk paylaşırken çıkıyor herhalde. Eğer ki bizim komutumuz şu olmuş olsaydı, bu görünsün. Eğer ki komutumuz şu olmuş olsaydı, in, al, 10h olmuş olsaydı, pardon ax diyecektik.
+
+221
+00:43:24,715 --> 00:43:36,355
+Bu durumda ne bekliyoruz? ax'e 10h'dan itibaren yerleşik 16 biti aktarmak. Yani ax'in içeriğine şöyle aktarma yapacağız. Neyi aktaracağız?
+
+222
+00:43:37,139 --> 00:43:49,939
+10 hash ve virgül diyelim, 11 hash hafıza gözlerindeki veya port adreslerindeki değeri aktaracağız. Bu little ending formatında saklanacağı için yine şöyle yapalım.
+
+223
+00:43:54,867 --> 00:44:04,787
+10H'daki değer düşük anlamlı baytımız. AX'in düşük anlamlı baytı AL. Demek ki 10H'daki değer AL'ye aktarılacak. 11H'daki değer de AH'a aktarılacak.
+
+224
+00:44:05,235 --> 00:44:15,735
+Şimdi bunu bir seferde yapabiliyor. Çünkü az önce gösterdiğim mantıktan dolayı çift ve tek adres blokları olarak mikroişlemci, hafıza uzayını veya port uzayını, gir çıkış uzayını gördüğü için
+
+225
+00:44:15,735 --> 00:44:27,235
+hem bus high enable'ı hem de bus low enable'ı aynı anda sıfır yaparak hem çift bloktan hem de tek bloktan verinin veri yollarına aktarılmasını sağlayabilir. Bunu bir seferde yapabiliyor dolayısıyla.
+
+226
+00:44:27,411 --> 00:44:41,132
+10H değeri bir çift adres olduğu için mikroişlemci burada değeri D0, D7 uçlarından alarak AL'ye aktaracak. Burada da D8, D15 uçlarından alarak AH'e aktaracak.
+
+227
+00:44:41,132 --> 00:44:53,132
+Ve bunu bir clock cycle'da, bu işlem bir okuma yazma clock cycle'ında gerçekleşebiliyor. Buradaki işlem ise,
+
+228
+00:44:53,652 --> 00:45:02,472
+2 okuma-yazma clock cycle'ında gerçekleşebiliyor. Tamam. Temel olarak aralarındaki fark bu.
+
+229
+00:45:07,923 --> 00:45:13,323
+Şimdi bu benim de sınavlarda sormayı sevdiğim bir soru.
+
+230
+00:45:14,260 --> 00:45:36,760
+in al virgül dx. Bakın ne demiştik hatırlayacak olursanız SM'li diliyle ilgili olarak. Önce şimdi o yeni soruya geçmeden önce burası tamamdır herhalde diye düşünüyorum. Yani vermiş olduğumuz adres ve 16 bitlik yazmaç meselesiyle ilgili sıkıntı kalmadı diye varsayıyorum. Varsa yine sorabilirsiniz. Tekrar daha net bir şekilde anlatmaya çalışayım. Yani eksik kalmasın.
+
+231
+00:45:36,760 --> 00:45:41,260
+Şimdi şu soruya gelelim. in al virgül dx.
+
+232
+00:45:43,380 --> 00:45:47,380
+Bu neden hatalıdır diyoruz. Şunu düşünerek hatalıdır diyoruz.
+
+233
+00:45:49,380 --> 00:45:58,380
+Move, bl, ax komutunu çalıştırmak istediğimizde bu komut için arkadaşlar mikroişlemci tip hatası verir.
+
+234
+00:45:58,380 --> 00:46:08,380
+Çünkü burada ax yazmacın 16 bitlik bir değeri 8 bitlik bir register'a atmaya çalıştığımızdan dolayı burada, şunu üstünü çizelim.
+
+235
+00:46:10,260 --> 00:46:12,260
+Burada tip hatası verilir.
+
+236
+00:46:16,148 --> 00:46:30,468
+Fakat in al, dx komutu geçerli bir komut. Dediğim gibi sormayı da çok seviyorum. Bu komut doğru mu yanlış mı diye çalışır mı çalışmaz mı diye. Bu komut çalışır arkadaşlar. Bu komutta bakın dx dediğimiz şey.
+
+237
+00:46:30,931 --> 00:46:40,931
+Bir data değil, dx dediğimiz şey bir adres olarak fonksiyon gösteriyor. Bir port adresi. Yani, 16 bit ile ifade edebileceğim bir adrese gidiyorum.
+
+238
+00:46:40,931 --> 00:46:47,931
+O adres içerisindeki 8 bitlik, 1 byte'lık veriyi alıp al'e aktarıyorum. Buradaki dx'in görevi,
+
+239
+00:46:49,931 --> 00:46:52,931
+buradaki dx'in görevi,
+
+240
+00:46:54,931 --> 00:46:57,675
+veri tutmuyor bu, bu bir adres.
+
+241
+00:46:59,731 --> 00:47:05,231
+Dolayısıyla bu komutun çalışmasında bir sıkıntı yok. Tamam mı? Anlatabildim umarım.
+
+242
+00:47:10,900 --> 00:47:28,840
+Dediğim gibi bu soruyu sormayı seviyorum. Dikkat edin. Şimdi bir yarım saat daha süremiz var. Bu konuyu bitirmeye çalışacağım. Başka bir sorumuz var mı arkadaşlar? Bu konuyla ilgili. Yoksa bir sonraki saatlere geçeceğim.
+
+243
+00:47:33,811 --> 00:47:46,811
+Yavaş yavaş geçiyorum. Tekrar siz de dikkatinizi çeksin. 8086 mikroişlemcinin hafıza kapasitesi toplamda 1 megabaytlık bir alan. Çünkü 20 adet adres ucu var.
+
+244
+00:47:46,811 --> 00:47:58,811
+Ama mikroişlemci 8086, 16 adet adres ucuda olduğu için, yani bir seferde 16 bitlik veri de okumak isteyeceği için bu hafıza uzayını şöyle görmek istemiyor.
+
+245
+00:48:01,684 --> 00:48:17,684
+8 olarak bir M adet göz ve her birisi 8 bitlik değer olarak tek tek adreslenebilir alanlar olarak görmek istemiyor. Bunun yerine çarpı 16'lık, 16 bit, 16 bit adreslenebilir alanlar olarak görmek istiyor.
+
+246
+00:48:17,684 --> 00:48:29,388
+Toplamda 1 megabaytlık bir alan olduğu için bunu da 16 bite böldüğümüzde 512K çarpı 16'lık bir hafıza arayüzü olarak görmek istiyor. Aynı şeyi bu hafıza arayüzü için.
+
+247
+00:48:31,476 --> 00:48:55,116
+Aynı şeyi giriş çıkış uzayı içinde istiyor. Giriş çıkış uzayı içinde istiyor. Giriş çıkış uzayına baktığımızda arkadaşlar, mikroişlemcimizin giriş çıkış uzayı maksimum hangi kapasitededir? Geçen hafta bunu cevaplamıştık ve bu neden kaynaklı olarak bu kapasitededir? Söyleyebilir miyiz? Geçen hafta bunun üzerinde durmuştuk.
+
+248
+00:48:59,251 --> 00:49:08,052
+Şuraya açıklama yazayım ekranlara. Şurası kapasite, burası ise...
+
+249
+00:49:13,972 --> 00:49:15,972
+Bu resise uygun arayüz.
+
+250
+00:49:29,012 --> 00:49:48,012
+Şimdi bu [öğrenci]'in sorusuna cevaben, burada bakın 11H adresinden itibaren yerleşik 16 bitlik veriyi alacağım. Yani verim 11H'ta ve 12H'ta. Little End'in formatı var. Demek ki 11H'ta 16'lık verinin, 16 bitlik verinin düşük anlamlı byte'ı var.
+
+251
+00:49:55,092 --> 00:50:16,811
+D8, D8 ve D15 üzerinden AL'yı aktarıyor. Burası doğru. Benzer şekilde 12H'taki değeri de, bu da bizim 11H'tan itibaren yerleşik verimizin yüksek anlamlı baytıydı. AX'in de yüksek anlamlı bayti AH demek ki 12H içerisindeki değeri de alıp,
+
+252
+00:50:17,204 --> 00:50:34,384
+A, H'a aktaracak. Bunu da aktarırken adresimiz bir çift adres olduğu için, bunu iki adımda da yapıyoruz ya, bu sefer veri yolunun düşük anlamlı byte'ını kullanarak o yol üzerinden A, H'a aktaracağız. Dolayısıyla bu nokta birbiriyle tutarlı.
+
+253
+00:50:41,235 --> 00:50:51,235
+Komutlar program kod segmenti üzerinde ve RAM üzerinde yerleşik. Oradan okuyoruz. Sırası gelen komutu oradan alıyoruz. RAM üzerinden alıyoruz.
+
+254
+00:50:51,235 --> 00:50:53,235
+Şimdi geri dönelim.
+
+255
+00:50:54,228 --> 00:51:08,468
+Giriş çıkış uzayımızın kapasitesi ne demiştik? 64 kilobyte, doğru cevap [öğrenci]. Çünkü biz adres değeri olarak maksimum, ya işte iki alternatifimiz var, ya 8 bitlik bir immediate değer kullanacağız,
+
+256
+00:51:08,468 --> 00:51:16,748
+veyahut da DX yazmacı gibi 16 bitlik bir değer kullanacağız. Demek ki maksimum kullanabileceğim adres değeri giriş çıkış için.
+
+257
+00:51:17,043 --> 00:51:25,043
+2 üzeri 16, yani 64K yapıyor. Her bir gözümüzün de byte olduğunu varsayacak olursak, 64 kilobaytlık bir değere erişmiş oluyoruz.
+
+258
+00:51:25,043 --> 00:51:38,955
+Dolayısıyla mikroişlemci açısından giriş çıkış uzayımız kapasite olarak arkadaşlar, 64K çarpı 8, 64K çarpı 8, yani 64 kilobayt.
+
+259
+00:51:38,996 --> 00:51:51,996
+Ama buradaki uygun arayüz, mikroişlemci 16 bitlik veri de okumak isteyebileceği için, 32K çarpı 16 olarak artı demişim, çarpı 16 olarak mikroişlemci için sağlanmalı.
+
+260
+00:51:51,996 --> 00:52:00,996
+Sağlanmaktan kasıt nedir? Ben 64 kilobaytlık giriş çıkış uzayımı 32K ve 32K'lık iki tane alt bloktan oluşturacağım.
+
+261
+00:52:01,396 --> 00:52:13,576
+vermiş olduğum işleme, kontrol işlerine bakacağım. Bus high enable 0 ise tek adresleri aktif edeceğim. Bus low enable 0 ise çift adresleri aktif edeceğim.
+
+262
+00:52:13,576 --> 00:52:23,076
+Eğer çift adresten 16 bitlik bir işlem ise mikroişlemci hem bus high enable 0 yapıyor hem de bus low enable 0 yapıyor. Dolayısıyla iki blok da aktif.
+
+263
+00:52:26,639 --> 00:52:37,639
+Her iki bloğunda aynı satır aktif olacağı için bir seferde 16 bitlik veriyi veri yoluna aktarmış olacağım. Dolayısıyla burası böyle.
+
+264
+00:52:37,639 --> 00:52:46,639
+Şimdi bir sonraki konulara gidiyorum. Yine bunlarla ilgili sorunuz varsa sorabilirsiniz bu aşamada. Ben bir sonraki konuya devam ediyorum.
+
+265
+00:52:50,996 --> 00:52:54,576
+Bu az önce anlattıklarımızın yazılı halleri arkadaşlar.
+
+266
+00:52:54,576 --> 00:53:08,395
+Eğer ki vermiş olduğumuz port adresi 8 bite sığıyorsa bu fixed addressing olarak isimlendiriliyor ve komut içerisinde port adresini sağlamış oluyoruz.
+
+267
+00:53:08,532 --> 00:53:17,952
+Eğer ki port adresi 8 bite sığmıyorsa, bu durumda bunu, adres değerimizi 16 bite sığacak bir değerse, dx yazmacı üzerinden vermemiz lazım.
+
+268
+00:53:17,952 --> 00:53:34,552
+Dolayısıyla in al, dx veya in ax, dx veya out dx, al veya out dx, ax gibi bir komut kullanmak istiyorsam, bunların öncesinde dx'de uygun port adresini oluşturmam gerekiyor.
+
+269
+00:53:36,320 --> 00:53:45,320
+Son bir madde olarak da herhangi bir giriş çıkış adresinden çift, tek olabilir. 8 bitlik veya 16 bitlik işlem yapabiliyoruz.
+
+270
+00:53:45,320 --> 00:53:55,264
+Çift adresten 8 bitlik, tek adresten 8 bitlik ve çift adresten 16 bitlik işlemler bir okuma yazma saykılığında tamamlanabilirken,
+
+271
+00:53:55,264 --> 00:54:09,264
+Tek adresten 16 bitlik işlemler 2 okuma yazma saykılında gerçekleşebiliyor. Bunun da sebebi şuydu, vermiş olduğumuz tek adres hafıza uzayının bir satırındayken bir sonraki çift adres başka bir satırında.
+
+272
+00:54:09,264 --> 00:54:19,264
+Bundan dolayı 2 okuma yazma saykılında bu işlemi yapabiliyorduk. Tek adreslerden 16 bitlik işlemleri 2 okuma yazma saykılında gerçeklememiz gerekiyor.
+
+273
+00:54:19,264 --> 00:54:23,264
+Daha doğrusu mikroişlemci bunu otomatik olarak gerçekleştiriyor.
+
+274
+00:54:23,264 --> 00:54:43,684
+Şimdi bir başka konumuz, geçen haftalarda da bundan bahsetmiştik, üzerinde durmuştuk. Giriş-çıkış haritalama yöntemleri. Giriş-çıkış haritalama yöntemleri tamamıyla mikroişlemcinin fiziki bir ucu olan M-I-O ucunun adres çözümlemede kullanılıp kullanılmaması ile birlikte ortaya çıkan bir durum.
+
+275
+00:54:44,083 --> 00:54:56,683
+Eğer ki M.I.O ucunu ben adres çözümlemede kullanırsam, bu ne demek? Vermiş olduğum komut bir giriş çıkış komutu mu yoksa bir hafıza komutu mu? Bunu direkt M.I.O ucuna bakarak anlayabiliyorum.
+
+276
+00:54:56,683 --> 00:55:11,883
+Çünkü mikroişlemci yapmış olduğumuz işlem bir hafıza işlemi ise M.I.O ucunda bir değerini oluşturuyor. Eğer bu bir hafıza işlemi ise M.I.O ucunda sıfır değerini oluşturuyor. Bunu nasıl hatırlayacaktık? Söyleyeyim tekrar. Bakın ucun ismi M.I.O.
+
+277
+00:55:12,083 --> 00:55:30,903
+Bu uç etiketinde M ve IO üzerinde de bir çizgi var, bir bar var. Bu uç üzerindeki fonksiyoneliteyi şöyle anlayacağız. Eğer bu uçta ben memori işlemi gerçekliyorsam mikroişlemci burada bir değerini oluşturacak, aktif bir karşılığı.
+
+278
+00:55:30,992 --> 00:55:43,172
+Eğer I.O işlemleri yaparsam, aktif 0, 1, 3 gibi davranacak ve 0 değeri oluşacak. Bunu bu şekilde aklımızda tutabiliriz. Mikroişlemci M.I.O ucunda bir değerini oluşturmuşsa bu bir memory işlemidir.
+
+279
+00:55:43,172 --> 00:55:58,711
+Eğer mikroişlemci M.I.O ucunda 0 değerini oluşturmuşsa bu bir I.O işlemidir. Bu şekilde aklımızda tutabiliriz. Ve de M.I.O ucunu ben adres çözümlemede kullanırsam bu yöntem isolated I.O mapping yöntemi olarak isimlendiriliyor.
+
+280
+00:55:59,507 --> 00:56:13,268
+Eğer ki ben m.io ucunu adres çözümlemede kullanmazsam, bu durum memory mapped.io olarak karşımıza çıkıyor. Bu noktada şunu söyleyelim, bir memory işlemi, bir memory komutu söyleyebilir miyiz?
+
+281
+00:56:27,443 --> 00:56:33,043
+Out komutu kullanmışsa, M-I-O ucunda mikroişlemci 0 değerini oluşturacak.
+
+282
+00:56:34,043 --> 00:56:40,343
+Peki bunları şöyle bir daha ayırt edemeyeceğimiz bir durum var mı? M-I-O'ya bakmadan onu söyleyeyim.
+
+283
+00:56:50,324 --> 00:56:52,324
+100 haşı olmasın, 10 haş olsun.
+
+284
+00:56:58,771 --> 00:57:10,271
+Out komut olması lazım tabii aynı örneği sağlayabilmek adına. Bakın arkadaşlar, bu iki komutu kullandığımızda da adres uçlarına aynı değer çıkıyor.
+
+285
+00:57:10,271 --> 00:57:23,371
+10H değeri çıkıyor yaklaşık olarak. 10H değeri çıkıyor. 8 bitlik bir kısmıyla da ilgilendiğimiz için pardon 16 bitlik bir giriş çıkış uzayımızda olduğu için adres değerleri aynı değerlere sahip oluyor.
+
+286
+00:57:25,972 --> 00:57:50,692
+Sadece adres uçlarına bakarak bu bir I.O işlemi mi yoksa hafıza işlemi mi çıkartamıyorum, anlayamıyorum. Bunu anlayabilmek için sadece elimdeki tek yöntem M.I.O ucuna bakmak. Eğer M.I.O ucuna bakmadan çevre birimlerimi adreslersem bu memory mapped I.O oluyor. M.I.O ucuna bakarak adreslersem isolated I.O mapping oluyor. Bu ikisinin karşılığı ne?
+
+287
+00:57:51,284 --> 00:58:10,484
+Bu ikisinin karşılığı şu arkadaşlar, eğer ben memory mapped I.O kullanıyorsam, yani M.I.O'cunun adres çözümlemede kullanılmadığı durum, ben bu durumda move komutlarıyla birlikte I.O işlemleri de çalıştırabilirim. Move komutlarıyla I.O işlemleri yapabilirim, memory mapped I.O'da.
+
+288
+00:58:14,195 --> 00:58:20,195
+1 MB'lik hafıza uzayımla 64 KB'lik giriş çıkış uzayım ayrı ayrı kullanılabiliyor.
+
+289
+00:58:20,195 --> 00:58:22,195
+Memory map I.O'da ne var?
+
+290
+00:58:22,195 --> 00:58:30,195
+1 MB'lik toplam alanım var, bunun düşük anlamda 64 KB'ı I.O işlemlerine, gerek kalan kısmı ise memory işlemlerine ayrılabilir.
+
+291
+00:58:34,195 --> 00:58:39,195
+Eğer ki MOI ucunu adres çözümlemede kullanmazsam, adres çözümleme devrem daha basit olur.
+
+292
+00:58:39,539 --> 00:58:50,039
+EMAO ucunu adres çözümlemede kullanırsam biraz daha, bir adım daha, bir tık daha karmaşık bir adres çözümleme devrem olur gibi aralarındaki farklardan bahsedebiliriz.
+
+293
+00:58:50,039 --> 00:58:58,440
+Bunların görsel karşılığı da şu arkadaşlar, eğer ki ben EMAO ucunu adres çözümlemede kullanırsam isolated IO oluyordu.
+
+294
+00:58:58,440 --> 00:59:04,440
+Toplamda 1 MB'lik hafıza alanımla 64 KB'lik IO alanımı ayrı ayrı kullanabiliyorum.
+
+295
+00:59:04,692 --> 00:59:22,692
+Ama Memory Map I.O mantığındaysak yani M.I.O ucunu adres çözümlemede kullanmazsak bizim tek bir uzayımız var. Bu uzayın toplam kapasitesi 1 megabyte ve bunun düşük anlamlı 64 kilobyte'lik alanı içerisinde ben bir I.O bölgesi tanımlayacağım. Bu anlama geliyor.
+
+296
+00:59:22,692 --> 00:59:26,692
+Fiziki yani görsel olarak bunun tanımı da bu olmuş oluyor arkadaşlar.
+
+297
+00:59:27,411 --> 00:59:39,591
+Şimdi, isolated I.O tanımında nelerle karşılaşıyoruz? Hafıza uzayının tamamını hafıza birimleri için kullanıyoruz. Giriş çıkış uzayının tamamını giriş çıkış birimleri için kullanabiliyoruz.
+
+298
+00:59:39,591 --> 00:59:50,591
+Giriş çıkış birimleri için özel olarak tasarlanmış, hızlı bir şekilde çalışan in ve out komutları anlamlı bir şekilde sonuç üretebiliyor. Bunları kullanabiliyoruz.
+
+299
+00:59:53,331 --> 01:00:02,331
+Sadece giriş çıkış birimlerine ilişkin özel adres çözümleme devrelerini basit bir şekilde oluşturabilirim. Bir başka faydası da bu.
+
+300
+01:00:02,331 --> 01:00:13,163
+Memory mapped IO'da tek bir uzayım var. Bunun içerisinde hem hafıza hem de IO uzayı iç içe girmiş durumda. Böyle bir yapıda...
+
+301
+01:00:13,427 --> 01:00:23,028
+Memory ve giriş çıkış birimleri için iki ayrı komuta ihtiyacım yok. Sadece Move komutuyla birlikte hem giriş çıkış işlemleri hem de in-out işlemleri yapabilirim.
+
+302
+01:00:23,028 --> 01:00:35,327
+Tasarım olarak, 8086 bunu destekler diye söylemiyorum. Tasarım olarak sadece Move komutlarıyla giriş çıkış işlemleri ve hafıza işlemleri yapabilirim.
+
+303
+01:00:36,436 --> 01:00:44,596
+Hafıza işlemlerini ayıran fiziki uçlara gerek yok diyebiliriz.
+
+304
+01:00:44,596 --> 01:00:52,876
+Ve aynı zamanda, az önce söylediğim şeyin tekrarı birinci madde, MOV komutları giriş çıkış birimlerine de erişmekte kullanılabilir.
+
+305
+01:00:52,876 --> 01:01:02,876
+Bu noktada arkadaşlar, geçen hafta da bahsetmiş olduğumuz bu isolated I.O. ve memory mapped I.O. kavramını bitirmiş oluyoruz.
+
+306
+01:01:03,135 --> 01:01:08,135
+Bu noktadan itibaren basit giriş çıkış birimlerini incelemeye başlayacağız.
+
+307
+01:01:08,135 --> 01:01:12,135
+Bunlardan ilki arkadaşlar düğme birimi, düğme buton.
+
+308
+01:01:12,576 --> 01:01:32,576
+Bu butonlar fiziki olarak nasıl bir yapıda? Bunların iki tipi var. Bir tanesi momentary, bir tanesi de leçt olarak isimlendiriliyor. Momentary dediğimiz anlık. Yani ne gibi düşünebiliriz bunu? Kapı zili gibi düşünün. Bastığım süre boyunca basılı bıraktığım anda kendisi geri atıyor. Bunlar momentary switch olarak isimlendiriliyor.
+
+309
+01:01:38,771 --> 01:01:55,952
+Bastığımızda kapanıyor, ters yönde bastığımızda açılıyor. Hangi duruma basmışsak o durumunu koruyor. Biz burada herhangi birisiyle çalıştığımızı varsayabiliriz. Hangisiyle çalıştığımız, yapacağımız tasarımı belirliyor. Onu baştan söylemiş olayım.
+
+310
+01:01:57,268 --> 01:02:09,268
+Düğme arayüzü dediğimiz şey aslında arkadaşlar, basit bir giriş arayüzüdür. Düğme dediğimize göre, dış dünyadan bir veriyi mikroişlemciye doğru aktarma amacıyla böyle bir arayüzü oluşturuyoruz.
+
+311
+01:02:10,168 --> 01:02:22,307
+Burada düğmenin basıldığı durumda ve basılmadığı durumda, ucunda oluşturulmuş olan lojik seviyeler, ne tür tasarım ve kodlama yapacağımız açısından çok önem arz ediyor.
+
+312
+01:02:22,804 --> 01:02:37,804
+Bir de bu momentary switchlerin yapısı gereği yay var. Yani bastığımız süre boyunca basılı bıraktığımızda geri atıyor ya. İçerisinde yay var ve bu yay sebebiyle kontak gürültüsü dediğimiz bir durum oluşuyor. Yani ben fiziki olarak gerçekte ben...
+
+313
+01:02:38,771 --> 01:02:50,771
+Bastığımda bir kere bastığımı zannediyorum ama o süreç içerisinde bir dalgalanma oluyor ve sanki yüzlerce defa o düğme açılıp kapanmış gibi bir etki oluşturuyor kontak gürültüsünden dolayı.
+
+314
+01:02:50,771 --> 01:03:00,395
+Dolayısıyla yapmış olduğumuz tasarımın bu kontak gürültüsüne karşı gerekli önlemi yazılımsal veya donanımsal olarak içermesi gerekiyor.
+
+315
+01:03:00,820 --> 01:03:25,320
+Düğmelerimiz bir temel kural olarak, düğmelerimiz basıldığında ve basılmadığında uygun lojik seviyeler üretmeli. İkinci kuralımız da bu. Yani düğmeye bastığımda lojik bir değer üretiyor, düğmeyi bıraktığımda float bir değer veriyorsa, yani boşta kalıyorsa bu benim aradığım durum değil. Tamam mı? İkinci kuralımız da bu. Düğmeye bastığımda ve bıraktığımda anlamlı ve farklı lojik seviyeler üretilmesi lazım.
+
+316
+01:03:26,099 --> 01:03:30,099
+Bu iki kural çerçevesinde basit düğme arayüz tasarımımızı yapacağız.
+
+317
+01:03:30,099 --> 01:03:36,099
+Bakın arkadaşlar, burada size 6 farklı alternatif sunuyorum. Bunları inceleyelim şimdi.
+
+318
+01:03:36,099 --> 01:03:45,931
+Burada şu koyu noktayla görmüş olduğunuz kısımlar mikroişlemciye veyahut da ilgili interfeyse veya arayüze bağlayacağımız nokta.
+
+319
+01:03:45,940 --> 01:04:10,239
+Burada üçgen olarak görmüş olduğunuz yapılar besleme gerilimleri, yani 5 volt olarak düşünebilirsiniz. Şunlar da grantlarımız, bunlar da 0 voltlar arkadaşlar. Tamam mı? Bunlar da 0 voltlar. Buna göre birinci yapıyı inceleyelim. Temel olarak iki kuralımız var. Bunlardan bir tanesi kontak gürültüsü ile ilgili durum. Bunun donanımsal ve yazılımsal çözümleri olacak.
+
+320
+01:04:13,619 --> 01:04:23,619
+Dolayısıyla temel olarak bu şekilde aradığımız durum, düğmeye basıldığında ve bırakıldığında, şuradaki koyu uçlarda anlamlı lojik seviyelerin olup olmadığına bakmamız lazım.
+
+321
+01:04:23,619 --> 01:04:38,619
+Ve de düğmeye bastığımızda besleme gerilim ile ground'u kısa devre yapmayacak bir tasarımı bulmamız lazım. Tamam mı? İki temel kural bu slide için. Birincisi tekrar ediyorum.
+
+322
+01:04:39,188 --> 01:04:54,788
+düğmeye bastığımızda ve bıraktığımızda anlamlı ve farklı lojik seviyeler sağlanmalı. İkincisi de düğmeye bastığımızda veya bıraktığımızda besleme ile grant birbirine kısa devre olmamalı. Bu iki kural çerçevesinde şimdi bu tasarımları inceleyelim.
+
+323
+01:04:54,788 --> 01:05:00,788
+Birinci tasarımımız, şöyle işaretliyim hangisiyle ilgili baktığımızı görmek için bu.
+
+324
+01:05:01,076 --> 01:05:12,076
+Burada arkadaşlar, düğmeye bastığımızda ve bıraktığımızda anlamlı, lojik seviyeler şu, siyah koyu uçta sağlanır mı? Bu tasarımın bir sıkıntısı var mı? Ne dersiniz?
+
+325
+01:05:21,460 --> 01:05:31,960
+Yok mu? Neden? Bunları momentary switch olarak düşünelim. Veyahut da Latched Switch de düşünelim, hiç fark etmiyor.
+
+326
+01:05:31,960 --> 01:05:45,160
+Mesela düğmeye bastığım anda, mesela onu görelim. Düğmeye bastığımız anda, düğme bu yolu kapatacak değil mi? Bu uçta lojik olarak ne göreceğim ben?
+
+327
+01:05:47,923 --> 01:05:49,923
+Lojik 1 gördüm.
+
+328
+01:05:51,923 --> 01:05:54,923
+Düğmeyi bastığımda lojik 1 gördüm. Gayet güzel.
+
+329
+01:05:54,923 --> 01:05:56,923
+Düğmeyi bıraktığımda ne oluyor?
+
+330
+01:05:56,923 --> 01:06:00,923
+Düğmeyi bıraktığımda burada herhangi bir lojik seviye yok. Burası float oluyor.
+
+331
+01:06:00,923 --> 01:06:05,923
+Dolayısıyla, düğme basılı değilken buranın lojik 0 olması garanti değil.
+
+332
+01:06:05,923 --> 01:06:14,923
+Dolayısıyla bu yaklaşımdan dolayı düğme basıldığında ve bırakıldığında birbirinden farklı anlamlı lojik seviyeler oluşturma açısından bu tasarım
+
+333
+01:06:15,507 --> 01:06:22,407
+CORT diyor arkadaşlar. Aynı şey, şunun için de geçerli. Bakın buradaki problem ne?
+
+334
+01:06:22,407 --> 01:06:30,507
+Üstteki az önce çizdiğimizde neydi? Düğmeye bastığımda ilgili uçta LOJIK 1 oluşuyor, düğmeyi bıraktığımda FLOT.
+
+335
+01:06:30,507 --> 01:06:35,467
+Şimdi ikinci örnek için, şu işaretlemiş olduğumuz için, burada...
+
+336
+01:06:35,539 --> 01:06:46,039
+Düğmeye bastığımızda uçta logic 0 oluşuyor. Düğmeyi bıraktığımızda float. Bıraktığımızda anlamlı bir değer yok. Dolayısıyla bu da jortluyor.
+
+337
+01:06:48,539 --> 01:06:54,539
+Şimdi umut vadeden bir başka tasarıma geçiyoruz. Geçebilirsek geçtik.
+
+338
+01:06:57,539 --> 01:07:01,516
+Buna geçtik. Bununla ilgili ne dersiniz?
+
+339
+01:07:03,539 --> 01:07:07,039
+Düğme basılı değilken, evet yakaladık, bravo.
+
+340
+01:07:09,039 --> 01:07:11,039
+Hep sıfır üretmez aslında.
+
+341
+01:07:11,039 --> 01:07:15,539
+Düğme basılı değilken ilgilendiğimiz uç doğrudan lojik sıfıra bağlı.
+
+342
+01:07:15,539 --> 01:07:21,039
+Demek ki düğme basılı değilken lojik sıfır üretiyor ama düğme basıldığında ne yapıyor bakın arkadaşlar?
+
+343
+01:07:21,039 --> 01:07:27,039
+Düğme basıldığında 5 volt ile ground'ı birbirine kısa devre yapıyor ve kaynağı yakıyor.
+
+344
+01:07:27,315 --> 01:07:34,815
+Dolayısıyla bu da anlamlı bir tasarım değil. Ama baktığımızda düğme basılı değilken sıfır üretiyor, basıldığında kısa devre yapıyor.
+
+345
+01:07:34,815 --> 01:07:41,315
+Aynı şey şu alttaki tasarım için de geçerli. Buraya bakalım. Burada da...
+
+346
+01:07:42,771 --> 01:07:55,271
+Bunu da patlatmıştık. Şimdi dördüncü tasarım. Burada arkadaşlar düğmeye basılı değilken logic 1 var aradığımız uçta ama düğmeye basıldığında yani şöyle olduğunda bakın ne oluyor?
+
+347
+01:07:55,271 --> 01:08:09,951
+Yine 5 volt ve ground kısa devre oluyor. Bu da kaynağı yakar. Dolayısıyla bu da yanlış bir tasarım. Bunu da attık. Gelelim son iki duruma. Bunlar arkadaşlar bizim valid iki tane
+
+348
+01:08:10,516 --> 01:08:24,515
+Düğme interfeisimiz. Şu işaretlemiş olduğum durumu inceleyelim. Burada arkadaşlar, düğme basılı değil iken, şimdi tabii şöyle bir mantık da var, onu da söylemem lazım.
+
+349
+01:08:24,515 --> 01:08:31,404
+Biz buradaki ucu alıp, bir tane mikroişlemciye bağlayacağız. Evet, bu doğru.
+
+350
+01:08:35,572 --> 01:08:44,252
+Bir mikroişlemciye bağlayacağız ama mikroişlemcinin içeri doğru çok küçük bir akım değeri çektiğini varsayalım. Hatta çekmediğini varsayalım.
+
+351
+01:08:44,252 --> 01:08:52,811
+Dolayısıyla şuradaki oluşturulan gerilim değeri mikroişlemci tarafından düşürülmeyecek gibi varsayabiliriz. Tamam mı? Bu varsayım yapabiliriz.
+
+352
+01:08:52,811 --> 01:08:59,492
+Buna göre ilgilendiğimiz uçta düğme basılı değilken ne görürüz?
+
+353
+01:08:59,796 --> 01:09:08,976
+İlgilendiğimiz uçta düğme basılı değilken ne görürüz? Mikroişlemciye doğru akan bir akımı sıfır kabul ettik bu arada. Tekrar edeyim. Ne görürüz?
+
+354
+01:09:15,475 --> 01:09:19,475
+Düğme basılı olmadığı için devreyi sadece şu kadarlık bir kısım olarak ele alalım.
+
+355
+01:09:19,475 --> 01:09:24,716
+Ve buradan şu uç üzerinden herhangi bir akım akmadığını da varsayalım.
+
+356
+01:09:25,716 --> 01:09:31,315
+Bu durumda 0 volt, hiçbir akım akmadığı için burada herhangi bir gerilim değerine ihtiyacım yok.
+
+357
+01:09:31,935 --> 01:09:34,935
+Öyleyse bu uçta ben lojik 0 görürüm.
+
+358
+01:09:35,536 --> 01:09:41,675
+Demek ki bu örnekte düğme basılı değilken
+
+359
+01:09:47,123 --> 01:09:56,443
+Lojik 0 var. Peki, düğmeye bastığımızda ne oluyor? Ona bakalım. Düğmeye bastığımızda arkadaşlar kısa devre olur mu? Ne dersiniz?
+
+360
+01:10:01,395 --> 01:10:07,636
+Ortadaki örneklerde kısa devreden kaynak yanıyordu. Burada böyle bir durum var mı? Neden olmaz [öğrenci]?
+
+361
+01:10:20,212 --> 01:10:38,212
+Evet, daha teknik bir cevap olarak şöyle bir şey söyleyebiliriz. Şimdi ilgilendiğimiz uç doğrudan bakın neye bağlı? Doğrudan 5 volta bağlı. Dolayısıyla burada 5 volt göreceğiz. Bu kesin. Dolayısıyla o cevabı yazalım şuraya bir kere. Demek ki düğme basılıyken...
+
+362
+01:10:38,547 --> 01:10:49,547
+Logik 1 göreceğiz. Bu kesin garanti. Peki, orta sıradaki örneklerde olduğu gibi kısa devre olmayacak mı? Hayır olmayacak.
+
+363
+01:10:49,547 --> 01:11:03,547
+Örneğin burada biz şu anda düğme kapalı iken 5 volt değeri göreceğiz ama bu 5 voltun tamamı direnç üzerinde akım olarak harcanacağı için, yani burada aslında bu koldan aşağı doğru akacak akımı biz hesaplayabiliriz.
+
+364
+01:11:06,319 --> 01:11:18,319
+Değil mi? 5 volt bölü, 10K'lık bir direnç var. Öyleyse bizim burada elde edeceğimiz akım değerimiz ne oluyor? 100 mikroampere oluyor. Değil mi?
+
+365
+01:11:18,319 --> 01:11:31,915
+100 mikroampere oluyor. 100 mikroampere 10K'lık bir dirençten geçerse, bunu yanlış yazdım ya, kaç yapıyor? 5, yanlış yazdım.
+
+366
+01:11:46,996 --> 01:11:53,996
+2 mA'lık bir değer yapıyor. Bu 2 mA'lık, 2 mA de değil, 2 ile 10K'ya çarptığın zaman olmuyor yine.
+
+367
+01:11:56,596 --> 01:11:57,596
+Kaç olacak?
+
+368
+01:12:03,956 --> 01:12:04,779
+Evet.
+
+369
+01:12:08,884 --> 01:12:19,684
+0.5 mA olacak. 0.5 mA'lık bir değerimiz var ya, bu 0.5 mA'lık değeri 10K ile çarptığım zaman direnç üzerinde düşen gerilim 5V.
+
+370
+01:12:19,684 --> 01:12:28,884
+Demek ki 5V'lık gerilimin tamamı direnç üzerinden düşerek grand değerimizi sağlayacağız. Dolayısıyla bir sıkıntı yok. Herhangi bir kısa devre yok.
+
+371
+01:12:29,136 --> 01:12:37,136
+Bu tasarımın özelliği neymiş? Düğme basılı değilken bu uçta logic 0 okuyorum, düğme basılı iken logic 1 okuyorum.
+
+372
+01:12:37,136 --> 01:12:46,636
+Demek ki ben bu ucu kontrol edecek olursam, polink ile kontrol edecek olursam uç 1'e çıktı mı? Hayır. Tekrar oku uç 1'e çıktı mı? Sürekli kontrol ediyorum.
+
+373
+01:12:46,636 --> 01:12:52,636
+Uç 1'e çıktığında düğmeye basıldığını anlayacağım. Demek ki bu tasarımı bu şekilde değerlendirmeliyiz.
+
+374
+01:12:52,692 --> 01:13:00,692
+Aynı durum burası için de geçerli arkadaşlar. Burada düğmeye basılı değilken devremiz şu noktaya indirgenir.
+
+375
+01:13:00,692 --> 01:13:06,692
+Buna indirgendiği için ilgilendiğim uç zaten herhangi bir akım akmadığı için 5 volt akım akmadı.
+
+376
+01:13:06,692 --> 01:13:13,692
+Burada da 5 volt var. Demek ki bu uçta düğme basılı değilken lojik bir değerini göreceğim. Hemen yazalım onu.
+
+377
+01:13:20,595 --> 01:13:31,996
+Düğme basıldığı değilken, logic 1. Düğme basıldığında ne oluyor bakalım? Düğme basıldığında artık benim ilgilendiğim uç doğrudan ground'a bağlı. Dolayısıyla logic 0 göreceğim. Bu kesin.
+
+378
+01:13:31,996 --> 01:13:46,195
+Peki 5 volt direnç 0 volt. Bu da anlamlı. 5 voltun tamamı direnç üzerinde akım olarak harcanacak. Direnç üzerinde güç olarak harcanacak. Dolayısıyla herhangi bir kısa devre durumu oluşmayacak. Onu da yazalım.
+
+379
+01:13:46,612 --> 01:13:56,511
+Demek ki bu durumda da düğme basılıyken ilgilendiğimiz uçta arkadaşlar, lojik 0 değerini göreceğiz.
+
+380
+01:13:56,511 --> 01:14:01,811
+Demek ki bu mantıkta da ben düğmeye basıldığını nasıl anlayacağım polling mantığında tarama yapıyorsam.
+
+381
+01:14:01,811 --> 01:14:09,011
+Ucu oku, uç 0'a düştü mü? Hayır. Tekrar oku, uç 0'a düştü mü? Hayır. Oku oku oku, uç 0'a düştü mü? Evet.
+
+382
+01:14:09,011 --> 01:14:13,011
+Düğmeye basılmıştır. Bu şekilde bunu değerlendirmemiz gerekiyor.
+
+383
+01:14:13,332 --> 01:14:19,472
+Tamam mı? Bu basit düğme arayüzünü bu şekilde ifade etmiş olalım. Şimdi kontak gürültüsü meselesine gelelim.
+
+384
+01:14:19,472 --> 01:14:30,992
+Kontak gürültüsü arkadaşlar temelde siviçler içerisindeki bulunan yaylı yapı veyahut da metalik yapıların birbirine dokunup çekilmesi dolayısıyla oluşan bir gürültü.
+
+385
+01:14:31,452 --> 01:14:38,392
+Normalde biz düğmeye bastığımız zaman aslında bizim beklentimiz şöyle bir yapı aslında bakın.
+
+386
+01:14:38,771 --> 01:15:00,771
+Düğmeye bastığım anda, logic 0'a düşecek ve bu seviyede kalmasını bekliyorum. Olması gereken veya beklediğim bu. Gerçekte olan ise, şurada gördüğünüz gibi kontak gürültüsü. Bu kontak gürültüsünü aşabilmek için iki farklı yöntem var. Bunlardan bir tanesi yazılımsal bir yöntem, ikincisi ise donanımsal bir yöntem.
+
+387
+01:15:08,787 --> 01:15:28,387
+Seviyenin değiştiğini yakaladığımız ilk anda belirli bir süre boş bekliyoruz. Yani boş bir döngüde dönüyoruz. Daha sonra tekrar örnekleme alıyoruz. Her iki örneklemede de logic 0'ı görmüşsek tuşa basıldı diye değerlendiriyoruz.
+
+388
+01:15:37,555 --> 01:15:48,035
+Şuradaki sürenin ilk örneklemeden sonra ikinci örneklemeye kadar geçen sürenin düğmenin fiziki yapısını dikkate alarak yeterince uzun olması gerekiyor.
+
+389
+01:15:48,035 --> 01:15:53,675
+Demek ki kontak gürültüsünü yazılımla elimine edebilirim. Yapmam gereken yöntem şu.
+
+390
+01:15:53,675 --> 01:15:59,315
+İlk tuşa basıldığı anı yakaladığımda belirli bir süre boş döngüde bekliyorum.
+
+391
+01:15:59,315 --> 01:16:05,555
+Ucu tekrar kontrol ediyorum ve umut ediyorum ki kontak gürültüsünün bittiği bir ana denk gelmişimdir.
+
+392
+01:16:05,555 --> 01:16:14,315
+Tekrar ucu kontrol ettiğimde aradığım lojik seviye burada da sağlanmışsa tuşa bu zaman basılmıştır diyorum. Eğer bu şekilde yapmazsam
+
+393
+01:16:14,676 --> 01:16:33,876
+Çok hızlı şekilde ben bunu kontrol etmeye çalışırsam ne olur arkadaşlar bakın kontrol ettim tuşa basıldı kontrol ettim tuş bırakıldı basıldı bırakıldı basıldı bırakıldı basıldı bırakıldı basıldı gibi anlayabilirim. Halbuki tuşa bir kere basıyorum. Dolayısıyla kontak gürültüsünü elimine etmek bu açıdan önemli.
+
+394
+01:16:34,579 --> 01:16:56,260
+Donanımsal olarak bunu nasıl halledebiliriz? Donanımsal olarak bunu debounce switch dediğimiz bir yapı var. Onunla gerçekleyebiliriz. Aslında burada bir flip-flop yapısı gerçekleştiriyoruz. Bu flip-flop yapısı şunu sağlıyor. Tuş basılırken ve bırakılırken kontak gürültüleri oluşuyor. Ama bunları bir flip-flop yapısından geçirdiğimizde...
+
+395
+01:16:56,659 --> 01:17:09,659
+Çıktığımız, Q çıktığımız, temiz bir çıktı oluyor. Bu deban switch yapısı, eğer yüz yüze eğitim yapıyor olsaydık, kullanmış olduğumuz lojik deney setlerinde özel bir switch grubu olarak mevcut.
+
+396
+01:17:09,659 --> 01:17:15,659
+Orada görebilirdik ama şu an için bu şekilde tanımlamamız yeterli.
+
+397
+01:17:15,659 --> 01:17:23,659
+Şimdi ikinci bir arayüz grubuna geçiyoruz arkadaşlar. Bunlar LED'ler. LED dediğimiz yapılar
+
+398
+01:17:24,180 --> 01:17:32,180
+Şimdi düğmeler temel olarak neydi? Ben bir tuşa basıyorum ve mikroişlemcinin bastığım tuşa göre bir takım fonksiyonları yerine getirmesini bekliyorum.
+
+399
+01:17:32,180 --> 01:17:43,180
+Dolayısıyla tuşlar, düğmeler bir giriş birimiydi. LED'ler ise mikroişlemcinin belirli bir takım statüs veyahut da bildirimleri dış dünyaya aktarması için kullanacağımız ışık lambalar.
+
+400
+01:17:43,180 --> 01:17:50,060
+Yani ışık lambalar. Neticede bunlar diyot temelli bir elektronik eleman.
+
+401
+01:17:50,228 --> 01:18:01,427
+Bu eleman öyle bir eleman ki üzerinden belirli bir gerilim seviyesi ve belirli bir akım değeri geçirdiğimizde parlak ışık üretiyor. LED dediğimiz eleman, Light Emitting Diode yapısı.
+
+402
+01:18:03,547 --> 01:18:10,187
+Bu noktada tıpkı düğmelerde olduğu gibi LED'ler içinde uygun konfigürasyonları aramaya çalışacağız.
+
+403
+01:18:10,707 --> 01:18:13,268
+Bunun için yine iki tane temel kuralımız var.
+
+404
+01:18:13,471 --> 01:18:35,652
+Bunlardan bir tanesi arkadaşlar, ledler bir diyot olduğu için sadece uygun yönde kutuplandığında ışık üretebiliyor. Çok önemli bir nokta. Ledler sadece uygun yönde kutuplandığında ışık üretebiliyor. Ne demek bu? Örneğin şunu bir diyot biliyorsunuz diyotu gösterdik.
+
+405
+01:18:36,307 --> 01:18:44,108
+Diyot elemanı. Bu diyot elemanın üzerinde şu şekilde iki tane ok işareti koyduğumuzda da bu bunun bir LED olduğunu gösteriyor.
+
+406
+01:18:44,108 --> 01:18:54,307
+Bu LED için arkadaşlar anot ve katot uçları tanımlı. Şöyle diyelim. Burası anot ucu, burası katot ucu.
+
+407
+01:18:54,560 --> 01:19:18,560
+Anot ve katotu da şöyle aklımızda tutabilirsiniz. Artıdan anot, artı uç anot ucu led için. Dolayısıyla bir ledi veya diyodu, anot ve katot arasında pozitif bir gerilim farkı varsa ve bu gerilim farkıyla birlikte belirli bir seviyede akım değeri sağlayabiliyorsak, bu led en parlak ve en uzun ömürlü bir şekilde çalışıyor.
+
+408
+01:19:19,028 --> 01:19:33,028
+LED'lerin data sheet'ine baktığımızda şöyle bir şey var. Dayanabildikleri maksimum akımlar var. Bu maksimum akımı verdiğimizde uygun gerilim değeriyle birlikte uygun bir parlaklık, güzel bir parlaklık elde edebiliyoruz.
+
+409
+01:19:33,028 --> 01:19:43,028
+Maksimum akım değerinin üzerinde akım verirsek LED kısa ömürlü oluyor ve kısa zamanda yanabiliyor. Tamam mı? Bu iki kuralımız var yani. Birincisi...
+
+410
+01:19:44,467 --> 01:19:58,068
+Diyod olduğu için ledi uygun yönde kutuplamamız lazım. İkincisi ise maksimum akın değerini geçirmememiz lazım. Bu iki kural açısından şimdi bu tasarımlarımızı inceleyelim.
+
+411
+01:19:59,068 --> 01:20:07,867
+Birinci tasarımımızı işaretliyorum ve bununla ilgili yorumlarınızı bekliyorum. Birinci tasarımımız bu. Ne dersiniz bu led yanar mı?
+
+412
+01:20:12,115 --> 01:20:15,115
+Neden yanmaz? Yanması için ne yapmamız lazım?
+
+413
+01:20:16,115 --> 01:20:23,115
+Yine aynı kural geçerli. Koyu olarak işaretlemiş olduğumuz uç, mikroişlemci veya çevre birimlerine bağlı.
+
+414
+01:20:24,115 --> 01:20:33,115
+Bu çevre birimlerinden biz buraya out işlemi yapacağız ya, out işlemi yaptığımız için bu noktalarda biz lojik 0 veya lojik 1 değeri üretebiliriz.
+
+415
+01:20:34,003 --> 01:20:46,003
+0 volt veya 5 volt değerini üretebiliriz. Bu bize bağlı. İstediğimiz zaman bu değerleri üretebiliriz. Bu tasarımı yakabilmek için bu uca ne vermemiz lazım? Öyle bir şey söyleyelim o zaman.
+
+416
+01:20:46,003 --> 01:20:53,003
+Evet, bu led yanabilir arkadaşlar. Birincisi, yanar mı, yanmaz mı sorusunda ışık üretebilir.
+
+417
+01:20:53,460 --> 01:21:02,699
+Bunu siz de deneyebilirsiniz. Bir tane ledi alın, 9 voltluk bir pile veyahut da 3 voltluk bir kaynağa bağlayın. Hiçbir direnç koymadan.
+
+418
+01:21:02,699 --> 01:21:13,260
+Led ışık verir. Bu ışık verecektir. Anında takar takmaz, patlamaz, onu söyleyeyim. Veya bir seferde bozulmaz. Ama ömrü kısa olur.
+
+419
+01:21:13,260 --> 01:21:17,859
+Çünkü burada çok yüksek bir akım olacak. Yani ledin kendi bir iç direnci var.
+
+420
+01:21:18,131 --> 01:21:28,891
+Tellerin bir iç direnci var ama bunlar çok düşük seviyede. Dolayısıyla burada LED üzerinden, kendi destekleyebildiği akımdan çok daha fazla bir akım geçeceği için LED kısa ömürlü olur.
+
+421
+01:21:28,891 --> 01:21:36,371
+Ama LED'i yakabilmek için bu kontrol ucuna bizim 5 voltu sağlamamız lazım veya lojik bir değerini sağlamamız lazım.
+
+422
+01:21:36,371 --> 01:21:43,731
+Bu LED ancak ve ancak ilgili kontrol ucuna 5 volt verdiğimizde belirli bir süre yanabilir.
+
+423
+01:21:43,855 --> 01:21:57,771
+Tamam mı? Şimdi ikinci örneğe geçiyoruz. Sizden beklediğim bu şekilde bir analiz. LED yanar mı? Nasıl yanar? İkinci örneğimiz bu. Buna ne dersiniz? Bu nasıl yanar? Yanar mı?
+
+424
+01:22:04,148 --> 01:22:13,028
+Dediğim gibi, kural aynı. Şu koyu nokta üzerinde mikroişlemciden OUT komutuyla birlikte biz istersek LOJIK0, istersek LOJIK1 değeri üretebiliriz.
+
+425
+01:22:14,228 --> 01:22:20,228
+Bu D2 LED ile birlikte vermiş olduğumuz durumda ne yapacağız? Yanar mı? Nasıl yanar?
+
+426
+01:22:33,171 --> 01:22:35,631
+Hiçbir ihtimali yok mu bunun yanabilmesi için?
+
+427
+01:22:36,992 --> 01:22:39,192
+Logic 0'da yanar diyoruz. Bakalım.
+
+428
+01:22:40,152 --> 01:22:40,831
+Şimdi
+
+429
+01:22:42,572 --> 01:22:44,371
+Şuradan şeyi alayım.
+
+430
+01:22:47,764 --> 01:22:59,164
+Mikroişlemcimiz, 8086 mikroişlemcisi TTL lojiyi destekliyor. Dolayısıyla bunun uçlarında oluşturabileceğim değerler 0 volt veya 5 volt. Bunun haricinde bir değer oluşturamam.
+
+431
+01:22:59,164 --> 01:23:05,364
+Ve ayrıca bizim şurada üçgen olarak göstermiş olduğumuz besleme gerilimlerinin de 5 volt olduğunu biliyoruz.
+
+432
+01:23:07,364 --> 01:23:15,164
+Bu durumda, şimdi sizler bir takım gereksinimler saydınız ya, ben de kuralları bu şekilde belirttim. Bu durumda bu led yanar mı?
+
+433
+01:23:16,340 --> 01:23:25,340
+Bu durumda evet arkadaşlar, bu ledi yakmak mümkün değil. Benim buraya verebileceğim maksimum değer 5 volt değil mi? E zaten bu tarafta da 5 volt var.
+
+434
+01:23:25,340 --> 01:23:37,340
+Dolayısıyla ledin yanabilmesi için anot ve katot arasında pozitif bir gerilim farkı gerekiyordu. Dolayısıyla ben bu ledi ömrü billah yakamam. Bu led yanmaz.
+
+435
+01:23:37,340 --> 01:23:42,252
+Birincisi için yanar demiştik ama ömrü kısa olur demiştik. Şimdi gelelim.
+
+436
+01:23:42,644 --> 01:23:56,464
+Şuradaki örneğimize, onu işaretleyeyim. Bu örnek için ne dersiniz? Yine koyu noktada logic 5 volt veya logic 0 oluyor, üretebilirim.
+
+437
+01:23:58,524 --> 01:24:02,604
+O örnek var, o örnek dördüncü örneğimiz. Evet yanar.
+
+438
+01:24:11,283 --> 01:24:19,483
+İlgili uca Lojik 1 verdiğimizde, bu örnekte Lojik 1 verdiğimizde veya 5 volt verdiğimizde uygun direnci de hesapladığımızı varsayalım.
+
+439
+01:24:19,483 --> 01:24:30,283
+LED uzun ömürlü olarak yanar. Ama burada mikroişlemcinin bir eksiği var, onu söyleyelim. Mikroişlemcinin uçları...
+
+440
+01:24:30,771 --> 01:24:49,372
+Doğrudan bir devre elemanı sürmek istediğinde, bir sürü bacağı var ya, bu durumda doğrudan sürmek istediğinde çok yüksek akım değerlerine kadar çıkamıyor. Örneğin 100 mA civarlarında kalabiliyor. Dolayısıyla bu led biraz sönük yanar diyebiliriz. Bu uç doğrudan mikroişlemci veyahut da...
+
+441
+01:24:49,615 --> 01:24:59,615
+çevre birimine bağlı olacak ya, dolayısıyla bu çevre birimi veya mikroişlemci bu kadar yüksek akımı, ledi yakabilecek yüksek akımı desteklemeyebilir.
+
+442
+01:24:59,615 --> 01:25:09,115
+Bundan dolayı buradaki ledimiz yanar, uzun ömürlü olur ama biraz sönük yanma ihtimali var. Tamam mı? Bir sonraki örneğimize geçelim.
+
+443
+01:25:09,279 --> 01:25:37,279
+Bu örnekte. Bu örnek aslında az önce [öğrenci]'in söylemiş olduğu duruma örnek. LED olmamış olsaydı LED 2 ile aynı duruma karşılık gelecek sadece LED'i ters çevirmiştik. Bu LED arkadaşlar yanacaktır. Hatta 3 numaralı LED'den daha yüksek yanacaktır. Daha parlak yanacaktır. Çünkü mikroişlemcinin dış dünyaya akım verebilme kabiliyeti düşükken dış dünyadan akım çekebilme...
+
+444
+01:25:37,279 --> 01:25:57,239
+Bu noktasında herhangi bir sınır yok. Tabi belirli limitler arasında kalmak şartıyla. Dolayısıyla bu D5 ile belirtmiş olduğumuz ledimiz, ilgili ucumuza lojik sıfır vermek şartıyla uzun ömürlü ve parlak bir şekilde yanabilir. Aradaki fark ne bakın? 3 ile 5 arasındaki fark ne?
+
+445
+01:25:57,631 --> 01:26:11,111
+Üçte ucu mikroişlemci doğrudan sürmeye çalıştığı için, burada akım değerini o oluşturacağı için ve mikroişlemcinin uçlarında yüksek akım değer üretebilme kabiliyeti düşük olduğu için LED burada düşük yanacak, düşük parlaklıkta yanacak.
+
+446
+01:26:16,819 --> 01:26:35,099
+gelen bir beslemeyle led sürüleceği için ve akım yönü mikro işlemcinin içine doğru olacağı için 5 numaralı led ile vermiş olduğumuz örnek parlak bir şekilde uzun ömürlü bir şekilde direnç değerini uygun şekilde hesapladığımızı varsayarak yanacaktır.
+
+447
+01:26:35,099 --> 01:26:44,819
+Eğer ki biz mikro işlemciden doğrudan sürerek bir ledi yakmak istiyorsak o zaman gerçeklememiz gereken devre D4 ile vermiş olduğumuz devreye...
+
+448
+01:26:44,819 --> 01:26:45,819
+karşılık geliyor.
+
+449
+01:26:46,064 --> 01:27:04,064
+Burada mikroişlemciden gelen düşük akım değeriyle bir transistörü açıp kapatıp burada kaynak üzerinden LED'i yakmayı sağlayabiliriz. Örneğin biz transistörü aktif ettiğimiz zaman şuradaki yol kapatılacak ve 5 volt, diyot, direnç ve 0 volt şeklinde bir yol sağlanmış olacak.
+
+450
+01:27:14,064 --> 01:27:25,664
+Doğrudan mikroişlemciden sürerek uzun ömürlü bir şekilde yanacaktır. Burada LED'in yanabilmesi için, şu D3 örneği için gidelim. Burada mikroişlemcinin Logix bir değeri burada üretmesi lazım.
+
+451
+01:27:25,664 --> 01:27:40,963
+Bu D4 örneğimizde ise bir BJT transistör, MPN-BJT transistör olduğunu varsayacak olursak, burada bu LED'i yakabilmek için uçta hangi değerin oluşması lazım? Onu söyleyebilir misiniz?
+
+452
+01:27:42,260 --> 01:27:48,440
+D4 numaralı örnekte transistörümüz BJT transistör, MPN tipinde.
+
+453
+01:27:48,724 --> 01:27:55,524
+Burada LED'in yanabilmesi için mikroişlemcinin koyu işaretli uçta hangi lojik seviyeyi üretmesi lazım?
+
+454
+01:27:55,524 --> 01:28:05,923
+Evet, lojik bir seviyesini üretmesi lazım ki BJT transistörün bazıyla emitörü arasında pozitif bir gerilim farkı olduğunda transistör iletime geçer.
+
+455
+01:28:05,923 --> 01:28:16,724
+Transistörün iletime geçmesi şurada da kırmızıyla çizmiş olduğumuz yolu tamamlar. Bu durumda da 5 volt LED direnç ve grunt yolunu açmış olur.
+
+456
+01:28:16,724 --> 01:28:41,844
+Dolayısıyla burada da yakmak için Logic 1 vermek gerekiyor. Dolayısıyla bu iki örnekleri toparladığımızda arkadaşlar, uygun devre tasarımıyla, arayüz tasarımıyla ilgili kontrol ucunda Logic 1 üreterek yakabileceğim LED'ler varken, Logic 0 üreterek yakabileceğim LED'ler de var. Dolayısıyla devre şemasını anlayarak uygun kontrol komutlarını yazmam gerekiyor. Aynı şey düğmeler için de geçerliydi.
+
+457
+01:28:42,163 --> 01:28:48,163
+Düğme basıldığında, logic 0 bırakıldığında logic 1 veya tersi sağlanan tasarımlar mümkün.
+
+458
+01:28:48,163 --> 01:28:58,163
+Dolayısıyla devreye bakarak hangi kontrol işaretini beklediğimi tasarlamam, kodumu buna göre tasarlamam gerekiyor. Bu iki nokta bizim için önemli.
+
+459
+01:28:58,163 --> 01:29:02,163
+Bir sonrakine geçelim. Adres çözümleme konusu.
+
+460
+01:29:04,163 --> 01:29:08,163
+Kaç slide'ımız kalmış? Daha bunlara geçemedim. Hay Allah.
+
+461
+01:29:10,579 --> 01:29:34,119
+Şöyle yapalım arkadaşlar bu noktada. Saat 3.30 olmuş. Vermiş olduğumuz söz çerçevesinde de hareket etmek adına. Şimdi bir ara verelim. Saat 4'te tekrar kaldığımız yerden devam edelim. Fakat saat 4'teki dersimiz tekrar hatırlatayım. Lab canlı dersinden bağlanacağız. Tamam mı? Bu noktaya kadar sormak istediğiniz bir şey varsa onları sorabilirsiniz.
+
+462
+01:29:34,676 --> 01:29:40,436
+Yoksa yarım saat bir ara verelim, sonrasında da lap saatinde dersle devam edeceğiz.
+
+463
+01:29:52,275 --> 01:29:54,675
+Sormak istediğiniz bir şey varsa sorabilirsiniz.
+
+464
+01:30:05,203 --> 01:30:19,203
+Evet, dediğim gibi saat 4'te lab canlı ders bağlantısı üzerinden dersin kalan kısmını devam ediyor olacağız. Şimdi yarım saatlik bir ara vereceğiz. Tamam. Soru yok herhalde peki. Görüşmek üzere arkadaşlar.

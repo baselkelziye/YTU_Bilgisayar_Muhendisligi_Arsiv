@@ -1,0 +1,2367 @@
+1
+00:00:29,076 --> 00:00:34,835
+Evet, birazcık bekliyorum. Merhaba arkadaşlar. 2 dakika bekliyorum. Daha fazla kişi olsun diye.
+
+2
+00:01:19,572 --> 00:01:23,731
+Evet, başlıyorum ben şimdi. Bir kırk kişi plan olduk yanılmıyorsam.
+
+3
+00:01:27,091 --> 00:01:37,692
+Şimdi bugün şöyle yapacağız. Saat 1 ile 3 arasında ders yapacağız. Saat 3'te uygulama yapacağız.
+
+4
+00:01:37,692 --> 00:01:47,811
+Asistan arkadaşlardan Sevgi size şeyi anlatacak, ödev çözümünü anlatacak. O şekilde ilerleyeceğiz.
+
+5
+00:01:47,811 --> 00:01:50,219
+Peki şuradan şey yapalım bir tane.
+
+6
+00:01:57,203 --> 00:02:25,204
+Evet, şimdi geçen hafta hatırlarsanız böl ve yönet algoritmalardan bahsediyorduk. Bizim algoritma analizinde amacımız öncelikle zamanı sonra da yeri efektif kullanarak çözümler üretmek. Böl ve yönette bunun ne kadar başarılı bir şekilde yapılabileceğini QuickSort ve MergeSort ile özellikle gördük. Hele QuickSort'un yaklaşımına baktığımız zaman
+
+7
+00:02:25,204 --> 00:02:35,204
+her seferinde bir pilota göre diziyi iki parçaya bölerek gereksiz yere şeyin önüne geçildi.
+
+8
+00:02:37,587 --> 00:02:51,147
+Bir yere bakılmaktansa, sadece örneğindeki vottan küçükler için kendi içinde sıralama, büyükler için kendi içinde sıralama yaparak, bölerek işlem yapmanın, daha az işlem yapmanın avantajından faydalıdır.
+
+9
+00:02:51,147 --> 00:02:58,108
+Şimdi böl ve yönet gibi bir yaklaşım daha var, o da decrease and concure.
+
+10
+00:02:59,668 --> 00:03:05,587
+Azaltarak, evdeki bilgiyi azaltarak yönetmek üzerine kuruluyor.
+
+11
+00:03:05,587 --> 00:03:07,828
+Aklımıza gelen
+
+12
+00:03:08,788 --> 00:03:35,168
+Decrease and Conquer algoritma var mı? Bugüne kadar gördüğünüz algoritmalar içerisinde aslında bayağı sizin bildiğiniz Decrease and Conquer algoritma var. Yani burada yaptığımız işlem elimde bir problem var. O problemde azalta azalta elimdeki bilgiyi ilerliyorum. Mesela işe yaramayan bilgiyi atarak ilerleme desem aklınıza gelen bir şey var mı? Algoritma var mı?
+
+13
+00:03:38,931 --> 00:03:40,572
+Binary Search olabilir mi hocam?
+
+14
+00:03:41,431 --> 00:03:46,371
+Evet, kesinlikle. Binary Search aslında Deep Rezant Conquer bir algoritma. Orada ne yapıyorsunuz?
+
+15
+00:03:46,371 --> 00:03:56,371
+Örneğin aradığınız sayı dizinin en büyük ikinci elemanından küçükse bu...
+
+16
+00:03:56,819 --> 00:04:11,539
+İkinci elemandan büyük olanlarla ilgilenmenize hiç gerek yok. Çünkü en bölü ikiden küçük olan sıralı dizide diğer bütün elemanlardan da küçük olacak demekti. Bu mantığa göre de onları bir seferde rahatlıkla eleyebilirsiniz.
+
+17
+00:04:11,679 --> 00:04:22,579
+Diklizem konuklu dayaktığımız ya böyle işe yaramadığı için erediğiniz bilgiler olabileceği gibi ya da parça parça çözerek ilerlediğiniz durumlar.
+
+18
+00:04:24,180 --> 00:04:41,800
+Burada birkaç çeşidi var, decrease and control. Birincisi, decrease by a constant. Mesela, işte, insertion sort.
+
+19
+00:04:49,076 --> 00:04:51,076
+Topologic Sort.
+
+20
+00:04:55,187 --> 00:05:07,187
+Death First Search, Bread First Search, böyle yaklaşımlar. Buralarda mesela birer birer aslında şey yapıyorsunuz, elinizdekini azaltarak ilerliyorsunuz.
+
+21
+00:05:07,867 --> 00:05:13,487
+Mesela Insurge'un Soğut'u hatırlayın. Insurge'un Soğut'ta bizim yaptığımız şey neydi?
+
+22
+00:05:14,908 --> 00:05:23,187
+İşte şöyle bir sırasız diziniz varsa, işte önce biri yerleştiriyorum, bir buraya yerleşti, dikriz ettim. Artık bir de ilgilenmiyor.
+
+23
+00:05:23,187 --> 00:05:26,187
+İşte 3-2-4'e baktım. Sonra...
+
+24
+00:05:27,379 --> 00:05:51,560
+Çok da sıralamışım, şunu 8 yapayım bari. 3-8-4'e baktım, 8'i ellemedim, 4'e geldim, 4 ve 8'i yer değiştirdim ve sıralı diziye elde ettim. Burada ne yaptım? Her seferinde elimde işlediğim bilgi azaldı, decrease oldu. O yüzden insertion sort, decrease by a constant örnek olabilecek bir algoritma.
+
+25
+00:05:55,379 --> 00:06:05,800
+Geçen sene biz benim ders verdiğim sınıfta bunu detaylı olarak görmüştük ama genel olarak hatırlıyor musunuz topolojik sordu?
+
+26
+00:06:05,800 --> 00:06:10,079
+Arkadaşlar.
+
+27
+00:06:14,324 --> 00:06:14,964
+Evet, hayır.
+
+28
+00:06:14,964 --> 00:06:15,684
+Ben hatırlamıyorum.
+
+29
+00:06:17,524 --> 00:06:18,024
+Yok hocam.
+
+30
+00:06:18,864 --> 00:06:22,664
+Aaa, kalbimi kırdınız. Ben halbuki kısa geçecektim hatırlıyorsunuz diye.
+
+31
+00:06:23,444 --> 00:06:24,424
+Hatırlatayım size.
+
+32
+00:06:26,524 --> 00:06:29,324
+Önce grafiği çizeyim çünkü şey...
+
+33
+00:06:29,555 --> 00:06:38,735
+Hem konuşup hem çizerken, ders tahtada kolaydı da bu da küçük yerde sıkıntı oluyor sanıyorum. Hem konuşup hem çizerken çok daha zor oluyor.
+
+34
+00:06:39,335 --> 00:06:45,675
+Şimdi buradaki topolojik sorttaki konu şuydu. Mesela şöyle bir şey yapmak istiyorsunuz.
+
+35
+00:06:45,915 --> 00:06:53,995
+Jav skecinin için çok kullanılan bir yaklaşım bu. İşleri şey göre düzenliyorsunuz.
+
+36
+00:06:57,555 --> 00:07:09,295
+A işinin yapılması gerekiyor. Yani B bitecek, A ondan sonra başlayacak. Aynı şekilde D'nin de yapılabilmesi için hem A'nın hem C'nin bitmesi gerekiyor.
+
+37
+00:07:09,955 --> 00:07:19,255
+İşte E'nin yapılabilmesi için D ile C'nin bitmesi gerekiyor. F bağımsız. F'yi ne zaman isterseniz yapabilirsiniz.
+
+38
+00:07:22,740 --> 00:07:35,339
+Önce hangi işten başlayabilirsiniz? Bunlar böyle birbirlerine bağlı işler olduğuna göre. Önce hangi işten başlayabilirsiniz? Hangi işi yapabilirsiniz burada?
+
+39
+00:07:38,339 --> 00:07:39,280
+A değil mi?
+
+40
+00:07:41,043 --> 00:08:00,883
+Yok, şimdi işlerimiz şeyler. Yapılabilecek olan işler A, B, C, D, E, F. Bunlar hepsi ayrı işler. Bu graf sadece şeyi gösteriyor bize. Mesela B işini yapabilmek için A'ya bağlı. Yani önce A'nın bitmesi gerekiyor. Tamam mı?
+
+41
+00:08:01,603 --> 00:08:05,463
+D işini yapabilmeniz için benim kırmızı şeyimi görüyor musunuz noktayı?
+
+42
+00:08:06,743 --> 00:08:07,343
+Gözüküyor.
+
+43
+00:08:07,764 --> 00:08:18,584
+D'yi yapabilmeniz için önce A'nın bitmesi gerekiyor ve C'nin bitmesi gerekiyor. Onlar bitmeden D başlayamıyor. Tamam mı?
+
+44
+00:08:19,184 --> 00:08:23,584
+E'nin yapılabilmesi için D'nin ve C'nin bitmesi gerekiyor.
+
+45
+00:08:24,464 --> 00:08:30,264
+F bağımsız A'dan da önce yapılması gereken bir başka iş yok. İlk yapılabilecek bir iş.
+
+46
+00:08:30,264 --> 00:08:33,403
+O zaman ben şimdi önce size şunu sorayım.
+
+47
+00:08:35,059 --> 00:08:37,859
+İlk önce hangi işleri yapabilirsiniz?
+
+48
+00:08:42,964 --> 00:08:44,184
+F'yi yapabiliriz.
+
+49
+00:08:44,884 --> 00:08:46,684
+F'yi yaparız. Başka?
+
+50
+00:08:47,584 --> 00:08:48,724
+A'yı da yapabiliriz.
+
+51
+00:08:48,944 --> 00:08:52,084
+A'yı da yapabiliriz. Çünkü A'dan da önce birleşiyor.
+
+52
+00:08:52,524 --> 00:08:59,384
+Fakat sonrası için, o yüzden Dick Reyes Bayekans'ın tabii örnek bu aslında, adım adım ilerlemek zorundasınız.
+
+53
+00:08:59,384 --> 00:09:03,824
+Yani C'yi yapabilmeniz için önce B'nin bitmesi gerekiyor.
+
+54
+00:09:10,836 --> 00:09:38,115
+Yani yapılacak olan işlerin bitmesi gerekiyor bir işin yapılabilmesi için. Topolojik sort da şey gösteriyor size. Burada hangi düğünleri sırayla işleme koyabileceğinizi gösteriyor. Yani bu herhangi bir amaç için kullanabilirsiniz. Mesela diyelim ki ön şartlı derslerde bir öğrencinin diyelim ki şöyle bir şey olabilir.
+
+55
+00:09:38,836 --> 00:09:49,836
+Gördüğünüz gibi, biz böyle kilitler yapıyoruz. Diyelim ki, veri yapılarını alabilmesi için BBG'den geçmesi gerekiyor galiba, öyle hatırlıyorum.
+
+56
+00:09:49,836 --> 00:09:56,836
+Ama algoritma analizini alabilmesi için de veri yapılarından geçmesi gerekiyor. Değil mi? Böyle bir şey var aslında.
+
+57
+00:09:56,836 --> 00:10:02,836
+Böyle bir kilit vardı yanlış hatırlamıyorsam. Doğru mu değil mi arkadaşlar? Siz bilmiyor musunuz?
+
+58
+00:10:06,451 --> 00:10:08,292
+Yapısal program alacağım, BPG'lerin.
+
+59
+00:10:10,072 --> 00:10:14,731
+Ha öyle mi veri yapıları değil mi? Neyse onu biz bozmuşuz. Eskiden böyle bir yapı vardı.
+
+60
+00:10:15,152 --> 00:10:22,312
+Diyelim ki böyle. Şimdi sizin öncelikle veri yapılarını alabilmeniz için pixel bilgilerine girişten geçmeniz gerekiyor.
+
+61
+00:10:23,152 --> 00:10:31,172
+Algoritma analizini alabilmeniz için veri yapılarından geçmeniz gerekiyor ama algoritma analizini alabilmek için pixel bilgilerine girişten de geçmeniz gerekiyor.
+
+62
+00:10:31,172 --> 00:10:33,572
+Dolayısıyla mesela böyle bir durumda.
+
+63
+00:10:34,000 --> 00:10:40,359
+Bir dersi alabilme imkanınızı da görebilmek için.
+
+64
+00:10:40,620 --> 00:10:48,339
+Yine burada da topolojik sort kullanıp işlerin hangi sırayla yapılabileceğini görebilirsiniz.
+
+65
+00:10:48,479 --> 00:10:50,000
+Çünkü önü çok kalabalık.
+
+66
+00:10:50,120 --> 00:10:56,839
+Şimdi burada B kolay, B'nin önünde bir tane işlem var ama B'ye geldiğiniz zaman öncesini takip etmek zorundasınız.
+
+67
+00:10:56,959 --> 00:11:00,839
+A bitecek, B bitecek, C bitecek ki B'yi yapabilirsiniz.
+
+68
+00:11:00,839 --> 00:11:01,839
+Peki o zaman...
+
+69
+00:11:02,000 --> 00:11:04,959
+Bunun için nasıl bir şey yapabiliriz? Birlikte buna bakalım.
+
+70
+00:11:08,959 --> 00:11:15,539
+Şimdi geçen sene ben bunu uzun uzun anlattığım için, dur yapmam önce.
+
+71
+00:11:16,919 --> 00:11:23,659
+Şey yapacağım, hani geçen sene yavaş yavaş arkadaşlarla çözmüştük biz bu problemi.
+
+72
+00:11:29,779 --> 00:11:40,139
+Şimdi A, B, C, D, E, F benim düğümlerim. Bunun için, dur önce şöyle yapalım. Hepsini silmeseydim daha iyi olabilirdi belki.
+
+73
+00:11:40,139 --> 00:11:50,239
+A, B, C, D, E, F bir Adjustment List kuralım şöyle.
+
+74
+00:11:51,187 --> 00:11:55,028
+A, B, C, D, E, F
+
+75
+00:11:55,028 --> 00:11:56,128
+Şimdi ne oluyor?
+
+76
+00:11:56,908 --> 00:12:05,128
+A'nın bağlı oldukları B var, D var. Doğru mu?
+
+77
+00:12:05,908 --> 00:12:07,228
+A'nın bağlı oldukları.
+
+78
+00:12:08,028 --> 00:12:12,988
+B'nin bağlı oldukları C var.
+
+79
+00:12:15,067 --> 00:12:17,908
+C'nin bağlı olduğu
+
+80
+00:12:19,379 --> 00:12:29,323
+D var, E var, D'nin bağlı olduğu E var,
+
+81
+00:12:32,628 --> 00:12:34,868
+Kimseye bağlı değil.
+
+82
+00:12:36,508 --> 00:12:38,048
+Fazla mı yapmışım ben?
+
+83
+00:12:42,868 --> 00:12:56,588
+F ile kimseye bağlı değil. Şimdi ben hangi sırayla işlem yapabileceğime bakmalıyım. Bunu anlamak için de şöyle bir şey yapabilirim.
+
+84
+00:13:08,403 --> 00:13:11,524
+Bu çok eğlenceli bir şeydi aslında ben bunu çok sevindim.
+
+85
+00:13:15,059 --> 00:13:17,059
+Şimdi
+
+86
+00:13:24,371 --> 00:13:33,871
+Kendisinden önce, hepsinin kendisinden önce kaçer tane bağlantısı olduğunu şu dizide tutalım.
+
+87
+00:13:34,651 --> 00:13:40,871
+Tutalım bakalım. Şimdi onu da nasıl anlarız? Şöyle anlarız.
+
+88
+00:13:43,187 --> 00:13:52,108
+Sağ tarafa baktığınız zaman, yani şu tarafa baktığınız zaman, bağlantılara, şuraya baktığınız zaman, burada A var mı?
+
+89
+00:13:53,827 --> 00:13:57,048
+Ecznesi liste baktığınızda A var mı? Yok.
+
+90
+00:13:57,548 --> 00:14:04,587
+O zaman A'dan önce sıfır tane şey vardır demektir bu, bağlantı var demektir.
+
+91
+00:14:05,508 --> 00:14:08,587
+Sağ tarafta A olmadığına göre,
+
+92
+00:14:09,268 --> 00:14:20,268
+Sıfır tane bağlantı var demek ki. Bunu şöyle, ya böyle yaparsınız ya da ikinci yaklaşımı daha doğru bir yaklaşım. Bunu baştan sıfırlarsınız. Tamam mı?
+
+93
+00:14:20,687 --> 00:14:31,447
+A, B'ye bağlı. Demek ki B'den önce bir A varmış. A, D'ye bağlı. B'den önce bir A varmış. B, C'ye bağlı. C'den önce B var.
+
+94
+00:14:31,892 --> 00:14:54,432
+CD'ye bağlı, iki etti, CE'ye bağlı, bu halde şu anda şeyi bulmuş olduk. Nedir? Her düğümden önce olan düğümleri bulmuş olduk. Şimdi kendisinden önce düğüm olmayanlar, bu indigri,
+
+95
+00:14:55,379 --> 00:15:06,620
+Ereği olsun. Kendisinden önce düğüm olmayanlar nedir? İşe başlanabilecek düğümlerdir. Doğru mu? Buraya kadar bir soru var mı?
+
+96
+00:15:10,803 --> 00:15:12,803
+Takip ediyor musunuz arkadaşlar?
+
+97
+00:15:12,803 --> 00:15:15,803
+Evet hocam.
+
+98
+00:15:15,803 --> 00:15:17,803
+Tamam, şimdi daha.
+
+99
+00:15:17,803 --> 00:15:19,803
+İnan hocam.
+
+100
+00:15:20,211 --> 00:15:23,851
+Şey, pardon, D ve C, E'yi göstermesine rağmen E'ye bir yazdık.
+
+101
+00:15:23,851 --> 00:15:34,251
+Aa, pardon, evet, teşekkür ederim. C'yi yaptım da, şey de var, doğru, D ve E'yi gösteriyor, haklısını atladım, D ve E'yi gösteriyor, burası iki, teşekkür ederim.
+
+102
+00:15:34,791 --> 00:15:38,511
+Başka bir şey var mı bakayım? 0, 1, 1, 2, 2, tamam, yok, tamam, doğru.
+
+103
+00:15:38,851 --> 00:15:43,991
+Şeyi atladım, C, E'yi gösteriyor dedim, D'yi atlamışım, haklısın, D de E'yi gösteriyor, E2 oldu, harika.
+
+104
+00:15:44,991 --> 00:15:47,291
+Şimdi, peki şimdi benim ne yapmam lazım?
+
+105
+00:15:48,211 --> 00:16:00,812
+Sıfır olanları, şeyin indigrisi yani kendinden önce iş olmayanları başlatabilirim. Bunları alabilirim. Değil mi? A'yı alırım.
+
+106
+00:16:01,716 --> 00:16:14,196
+F'yi alırım. Ama şimdi A'yı alınca ne olacak? Şuraya bakarsam, A'nın bağlı olduğu B'nin ve D'nin öncesinde yapılması gereken işler bir azalacak. Değil mi?
+
+107
+00:16:14,636 --> 00:16:21,356
+A'yı yaparsam B'nin ve D'nin öncesindeki işler bir azalacak. Yani bunlar bir azalacak. Doğru mu?
+
+108
+00:16:22,475 --> 00:16:24,776
+Şimdi şunu şöyle temiz yazayım.
+
+109
+00:16:27,475 --> 00:16:28,596
+Temiz yazayım.
+
+110
+00:16:29,139 --> 00:16:32,139
+Çünkü nasıl yapıldığını gördünüz nasılsa
+
+111
+00:16:38,388 --> 00:16:53,948
+Şimdi A'dan önce kimse yok. B'den önce A var. C'den önce A var. B'den önce hem C var hem A var. E'den önce C ve D var. F'den önce kimse yok.
+
+112
+00:16:53,948 --> 00:17:06,068
+Şimdi bakın mesele bu şu anda. Kimle başlayabilirim işe? A'dan ve F ile başlayabilirim. Eşit bunlar. İkisinden birini seçebilirsiniz. Genelde sıraya bakılır. O yüzden A ve F diyebiliriz.
+
+113
+00:17:06,387 --> 00:17:34,387
+arkasından A'yı alınca A'nın bağlı olduğu B ve D biraz olacak, B de sıfır olacak. Bu böyle devam edecek. Şimdi her seferinde dönüp dönüp kontrol etmektense, yani şimdi şöyle bir elle yapayım, size göstereyim. Şunu, şöyle yazacağım diziyi buraya tekrardan. Üzerini sürekli karalarsam kafanız karışır. Şu bizim indigri dizimiz. Yani her düğümden önce kimler kakaç düğümler.
+
+114
+00:17:34,387 --> 00:17:46,268
+bitmesi gereken onu gördüğümüz dizi. Şimdi buna bakın arkadaşlar. Şimdi A'yı da ete aldım. A'yı alınca A'nın bağlı olduğu B ve D. B'yi biraz attım çünkü
+
+115
+00:17:47,188 --> 00:17:55,028
+A ile F'i çıkarttıysam, yani yaptıysam o işleri, B ile D'den önceki iş yapıldı demektir.
+
+116
+00:17:55,468 --> 00:18:00,108
+Şimdi A ile F yapılmıştı, karışmasın diye şunları sıfır işaretliyorum.
+
+117
+00:18:00,867 --> 00:18:06,347
+Bir sonraki sıfır B, bu bayağı bildiğimiz sıra olacak.
+
+118
+00:18:06,568 --> 00:18:09,068
+Yani A ve F bitecek ki B yapılsın.
+
+119
+00:18:09,068 --> 00:18:15,128
+Şimdi B'yi yapınca şeye bakıyorum, B'yi yaptım.
+
+120
+00:18:15,188 --> 00:18:41,928
+B'nin bağlı olduğu iş C var. O zaman C'yi biraz attım. C'yi biraz attım. C sıfır oldu. Bakıyorum sıfır olan kimler var? C var. C'yi buraya yazdım. C'yi alınca C'nin bağlı olduğu D ve E biraz aldı. İşte bir tur daha döndüm. Sıfır olan kimler var diye baktım. Yapılmamış bir sıfır olan kimler var diye baktım.
+
+121
+00:18:43,188 --> 00:19:00,508
+Burada D var, D'yi yaptım. D'yi yapınca E sıfır oldu. Yine döndüm. Yapılmamış bir sıfır olan kimler var diye baktım. E var. Ondan sonra E'yi de yaptım. Demek ki bu işlerin A, F, B, C, D, E sırasıyla yapılması gerekiyormuş.
+
+122
+00:19:00,528 --> 00:19:01,968
+Hocam ben bir şey sorabilir miyim?
+
+123
+00:19:02,307 --> 00:19:02,548
+Tabii.
+
+124
+00:19:03,188 --> 00:19:11,188
+Bunları azalta azalta gitmesek de mesela sırayla sıfır olanları yazsak, biri olanları iki olanları böyle arttıra arttıra yazsak daha az efekt...
+
+125
+00:19:11,188 --> 00:19:13,964
+Yanlış uygulamadık.
+
+126
+00:19:15,188 --> 00:19:20,148
+Efektif değil, yanlış olur. Çünkü bir olanlar, iki olanlar, yani burada bir sıra yok aslında.
+
+127
+00:19:20,148 --> 00:19:32,468
+Yani belki E'den önce, yani şöyle düşün, şöyle C'den önce bir tane var ama C'den önceki bir taneye sıra en son geliyor mesela.
+
+128
+00:19:32,827 --> 00:19:40,208
+Anlatabildim mi? Bundan önce bir tane olması demek ondan önceki işin hemen yapılacağı anlamına gelmiyor, değil mi?
+
+129
+00:19:41,364 --> 00:20:07,824
+Yani şöyle, şunu demek istiyorum. Şimdi bak şöyle bir durum olabilir. A var, B var, C var, D var. Mesela, şimdi C'nin durumuna bak. C'den önce bir tane gözüküyor aslında değil mi? Ama C'nin yapılabilmesi için önce A bitecek.
+
+130
+00:20:08,372 --> 00:20:18,312
+Arkasından D bitecek, birinci A yapılacak, ikinci D yapılacak, üçüncü B yapılacak, en son D'ye sıra gelecek.
+
+131
+00:20:18,312 --> 00:20:29,272
+Halbuki baktığın zaman C'den önce bir tane var aslında. Anlatabildim mi? O yüzden bunların bir iki olmasının hiçbir önemi yok aslında.
+
+132
+00:20:29,872 --> 00:20:30,752
+Anladım hocam.
+
+133
+00:20:34,832 --> 00:20:39,452
+Ne zaman sıfır olacakları kendinden önce yapılan işte efendim?
+
+134
+00:20:40,512 --> 00:20:42,552
+Burada F'nin en son yapılması gerekmiyor mu?
+
+135
+00:20:43,452 --> 00:20:51,772
+Hayır, F bağımsız olduğu için A'la eşit öncelikte çünkü bağımsız onu hemen yapabilirsiniz.
+
+136
+00:20:52,052 --> 00:20:57,052
+Yani niye? F'den önce iş yok ki bak. F'den önceki iş yok F'den önceki.
+
+137
+00:20:57,052 --> 00:20:59,372
+A ile başlarsak. İlk A ile başlarsak.
+
+138
+00:21:00,372 --> 00:21:02,112
+A ile başlarsak F en son bitmiyor mu?
+
+139
+00:21:03,028 --> 00:21:04,148
+Anlayamadın?
+
+140
+00:21:04,708 --> 00:21:07,868
+İlk olarak A ile başlarsa B en son bitmeyecek mi?
+
+141
+00:21:08,596 --> 00:21:36,596
+Hayır, kesinlikle öyle bir şey yok. Sizin şuna bakmanız gerekiyor, bak anlaşılmamış anladığım kadarıyla. Şuna bakmanız gerekiyor. Kimin öncesinde kimse yok, tamam mı? Burayı böyle dolaşıp şeyi, indikli dizisine, buna bakmanız gerekiyor. Çünkü burada bir şey yok. Yani B büyümü harf alarak A'dan sonra geliyor diye hemen yapılacak diye bir şey yok.
+
+142
+00:21:36,596 --> 00:21:54,695
+Şöyle bir şey yapayım, bak biraz değiştireyim. D'den B'ye olsun mesela. Böyle bir şey yapayım. D'den şöyle değiştireyim şurayı. Her şeyi değişecek şimdi.
+
+143
+00:22:00,084 --> 00:22:03,304
+D'den de B'ye olsun bir tane.
+
+144
+00:22:05,443 --> 00:22:06,084
+Şey, pardon.
+
+145
+00:22:06,744 --> 00:22:09,244
+D'den, B'ye var ve E'ye var değil mi? Evet.
+
+146
+00:22:10,423 --> 00:22:11,923
+B'ye var.
+
+147
+00:22:13,264 --> 00:22:14,144
+E'ye var.
+
+148
+00:22:14,943 --> 00:22:16,663
+Şu anda şöyle olsun.
+
+149
+00:22:17,144 --> 00:22:19,244
+Şimdi indigri'yi şimdi yazalım.
+
+150
+00:22:25,556 --> 00:22:27,403
+İndik ve yeşil yazalım.
+
+151
+00:22:30,420 --> 00:22:58,420
+Başlangıçta hepsi sıfır. Şimdi bakın, A, B'ye ve D'ye bağlı, B1 oldu, B1 oldu, B, C'ye bağlı, C1 oldu, C, D'ye bağlı, D2 oldu, C, E'ye bağlı, E1 oldu, D, B'ye bağlı, E2 oldu. Tamam mı? Şu anda durum bu. Şimdi ne olacak? Yani indikliği anlaşılırlık açısından aşağıya bir daha yazık.
+
+152
+00:22:58,420 --> 00:23:24,920
+A, B, C, D, E ve F olarak. A0, B2, C1, B2, E2, F0. Şimdi bakın tekrardan söylüyorum. Bir işi yapabilmeniz için öncesinde hiçbir işin yapılmaması gerekiyor. O yüzden şu anda bizim yapabileceğimiz iki iş A dizisi.
+
+153
+00:23:25,523 --> 00:23:48,583
+Search ediyorsunuz sıfır kim var diye. A ve F. A'yı ve F'yi yapabilirim. A'yı ve F'yi yapınca, A'yı yapınca B'nin öncesindeki bir iş yapıldı. Çünkü A, B'ye bağlı şuradan görüyorsunuz ve D'ye bağlı. O yüzden D'nin öncesindeki bir iş daha yapıldı.
+
+154
+00:23:51,796 --> 00:24:02,276
+Şimdi yalnız şey çıkardık, C nerede? Ha, kilit çıkardık. Bakın şimdi hiçbir işi yapamazsınız.
+
+155
+00:24:02,676 --> 00:24:09,756
+Çünkü evet, burada aslında şöyle bir kural vardı. Sana örnek göstereyim derken kuralı kendim boztum.
+
+156
+00:24:34,067 --> 00:24:35,567
+Ses gitti ben doğacağım.
+
+157
+00:24:52,884 --> 00:24:54,084
+Hocam sesiniz gelmiyor.
+
+158
+00:27:38,387 --> 00:27:44,387
+İnternette girse bizim kesin, bizim de yani, şeyin kapanması gerekmez mi ekran kapanması?
+
+159
+00:29:03,827 --> 00:29:09,528
+Hangi noktada koptunuz arkadaşlar? Daha doğrusu ben hangi noktada şey yaptım?
+
+160
+00:29:09,607 --> 00:29:12,888
+Kuralı unuttuğum dediğiniz anda hocam. Kural vardı, unuttuğum dediniz.
+
+161
+00:29:13,528 --> 00:29:14,008
+Efendim?
+
+162
+00:29:15,587 --> 00:29:20,008
+Sana göstererken kuralı ulamayı unuttuğum dediğiniz anda koktuğum.
+
+163
+00:29:20,008 --> 00:29:29,208
+Ooo! Peki. Şurayı şey yaparak, tamam peki.
+
+164
+00:29:31,827 --> 00:29:38,827
+Şey dedim, az önce kuralı söyleyeyim. Böyle bir şeyde scheduling yapabilmeniz için...
+
+165
+00:29:39,508 --> 00:29:41,127
+Hocam, ekran paylaşma yaptınız.
+
+166
+00:29:42,627 --> 00:29:46,028
+Paylaştım ya, paylaşmadım mı? Hay Allah'ım yarabbim.
+
+167
+00:29:46,968 --> 00:29:50,127
+Peki ben niye kopuyorum? Başka derslerde koptunuz oluyor mu?
+
+168
+00:29:54,708 --> 00:29:55,748
+Arkadaşlar.
+
+169
+00:29:55,788 --> 00:29:56,508
+Benim hiç olmadı.
+
+170
+00:29:57,728 --> 00:29:58,888
+Olmuyor pek hocam.
+
+171
+00:29:58,888 --> 00:30:00,000
+Benim...
+
+172
+00:30:00,000 --> 00:30:27,900
+Farklı derslerde birden oluyor. Herhalde bende bir sıkıntı var. Niye oluyor bilmiyorum. Bir tek algoritma analizleri değil, başka derslerde de başıma geldi. Bir noktada pat diye kopuyor. Yine ben şeyde anladım. Çünkü kayıt yapıyor aynı zamanda. Yani nasıl bir kopmaysa bu, ben zunda kalıyorum ama siz olmuyorsunuz benim olduğum yerde. Size soru sordum, kimseden ses çıkmadı. Olur mu bu kadar basit soruya falan derken bir baktım.
+
+173
+00:30:28,000 --> 00:30:46,000
+ortada kimse yok. Şimdi topolojik sortu yapabilmeniz için grafınızın şeyinin hiç olmaması lazım. İçinde Directed Cycle'nızın hiç olmaması lazım. Directed Cycle'ı olursa çünkü, yani şöyle bir şey olursa...
+
+174
+00:30:49,332 --> 00:31:17,152
+Mesela şöyle bir şey yapıyorsunuz. Hangi işten başlayacaksınız? Yani böyle bir şeyi yapabilmenize imkan yok. Herkes birbirine bağlı. Görüyor musunuz? Şöyle bir cycle'ınız varsa başlayabileceğiniz bir iş var mı? Yok. O onu bekliyor, o onu bekliyor. Az önce benim yaptığım durumda ben arkadaşımıza örnek göstermek için bir bağlantı yaptım. Şey vardı, şurada C ve D vardı.
+
+175
+00:31:17,332 --> 00:31:22,731
+Hatırlıyorsanız eğer, C ve D varken böyle bir bağlantı yaptın.
+
+176
+00:31:23,692 --> 00:31:30,731
+Bağlantı olduğunda hiçbir zaman o sorunları çözemezsiniz.
+
+177
+00:31:35,763 --> 00:31:58,824
+O noktada koptuysam şimdi devam ediyorum. Peki. Şimdi o zaman şeyden devam ediyorum size. Önce Cessin'si listi göstereceğim. Artık uzun uzun onu çizdim bir kere, çizmeyeceğim. A, B'ye bağlı, B'ye bağlı. O güzel böyle kutuplu çizmekten gerek yok, anlıyorsunuz nasılsa. B, C'ye bağlı.
+
+178
+00:32:02,355 --> 00:32:19,155
+C, E'ye bağlı, D, B'ye ve E'ye bağlı, E, bir de F vardı şurada, E kimseye bağlı değil, F de kimseye bağlı değil. Şey bu şekilde.
+
+179
+00:32:19,155 --> 00:32:28,296
+Şimdi ben dedim ki bir indigri şeyi yaparsak, dizisi yaparsak, bu dizi şeyi tutsun.
+
+180
+00:32:35,508 --> 00:32:39,607
+Herkesten önce kaç tane eleman olduğunu tutsun.
+
+181
+00:32:43,207 --> 00:32:45,867
+Onu anlamak için de şöyle ilerlersiniz.
+
+182
+00:32:46,028 --> 00:32:50,288
+A, B'ye bağlı. Demek ki kendisinden önce bir tane var.
+
+183
+00:32:50,927 --> 00:32:53,528
+Ve D'ye bağlı. D'den de önce bir tane var.
+
+184
+00:32:53,707 --> 00:32:57,008
+B, şunu sileyim şu kafanızı karıştırır mısın?
+
+185
+00:32:58,127 --> 00:32:59,887
+Kendime kolaylık olsun diye yaptım ama.
+
+186
+00:33:00,807 --> 00:33:02,028
+B, C'ye bağlı.
+
+187
+00:33:02,496 --> 00:33:11,676
+C, E'ye bağlı, D, B'ye ve E'ye bağlı, E ve F kimseye bağlı değil.
+
+188
+00:33:11,676 --> 00:33:14,416
+Şimdi o zaman benim elimde şöyle bir dizi oldu.
+
+189
+00:33:15,096 --> 00:33:27,656
+A, B, C, D, E ve F düğümleri için A'dan önce kimse yok, B'den önce 2 var, C'den önce 1 var, D'den önce 1 var, E'den önce 2 var.
+
+190
+00:33:28,180 --> 00:33:37,180
+F'den önce kimse yok diye. Şimdi çalışma prensibi şu, ben kabasını söyleyeceğim, bunu efektif nasıl yaparız diye size sormuştum.
+
+191
+00:33:37,180 --> 00:33:46,180
+Sıfır olanlarla başlıyoruz. Bu da A0, F0. A'yı ve F'yi yapabiliriz. Hemen başlayıp yapabiliriz.
+
+192
+00:33:46,180 --> 00:33:50,923
+Arkasından B var.
+
+193
+00:33:51,220 --> 00:34:13,220
+Pardon, A'yı yapınca B bir oldu, D de sıfır oldu. İkinci turda ulaşıyorum. Yani A'yı yapmam demek şu demek aslında. A biterse elimde şöyle bir graf oluyor. A kopuyor buradan yapıldığı için iş olarak. Şöyle bir grafınız oluyor. Tamam mı?
+
+194
+00:34:13,748 --> 00:34:36,028
+F de kopuk zaten. Şöyle bir grafınız oluyor. En azından B, C, D var. Hangisini önce yapacağınıza bakacaksınız. Gözle baktığınızda görüyorsunuz zaten. D'den önce kimse yok. D'yi yapabilirim. Gerçekten D sıfır olduğu için öncesi burada D'yi yapıyorum. Şimdi D'yi yapınca D'nin bağlı olduğu B ve E biraz alıyor. B sıfır oldu.
+
+195
+00:34:36,947 --> 00:35:00,087
+E'de 1 oldu. Şimdi gerçekten B'yi yapınca ne oldu? B şu bağlantı koptu, şu bağlantı da koptu ama C'den önce E var, E'yi yapamam. Şimdi kim 0 diye bakıyorum, B 0, B'yi yapıyorum. B'yi yapınca B kime bağlı, C'ye bağlı, C 0 oldu. Bakın B yapınca burası koptu bu sefer de.
+
+196
+00:35:01,300 --> 00:35:16,659
+Şimdi kimi yapacaksınız sıfır olan? Şimdi A yapıldı, F yapıldı, D yapıldı, B yapıldı, sıfır olan C var. C'yi yapacaksınız. C'yi yapınca bakın şu bağlantı da koptu.
+
+197
+00:35:17,396 --> 00:35:31,235
+dolaştınız kim sıfır diye E sıfır, E'yi yaptınız. Şimdi mesele bu. Mesela şu da doğru, F, A, D, B, C, E derseniz bu da doğru bir sıralama.
+
+198
+00:35:32,136 --> 00:35:41,136
+Burada önemli olan işlerin yapılabilme sırası. Şey ayrı bir konu. Bana hiç onu şimdi sorabilirsiniz, sormayın.
+
+199
+00:35:41,136 --> 00:35:45,396
+Yok işte biz buraya F, A yazdık, F ile A'nın uzunluğun farkı.
+
+200
+00:35:45,396 --> 00:36:10,876
+Aysa süre olarak işse mesela ne oluyor falan. Öyle değil. Yani bunlar paralel aynı anda yapılabildiği varsayılan şekilde olduğu için bir sıkıntı olmuyor. Peki. Şimdi benim size sorum şuydu. Dedim ki her seferinde bir tur dönüyoruz. Şimdi A'yı B'yi koydu. Bir tur daha döndü. Kim sıfır bu sefer? Çünkü A'yı koyunca işte B ve C.
+
+201
+00:36:11,376 --> 00:36:19,136
+Bir azaldı, kim sıfır oldu diye baktık. Ondan sonra işte D'ye koyunca kim sıfır oldu diye bir tur daha döndük.
+
+202
+00:36:19,216 --> 00:36:28,136
+Her seferinde böyle dönüp dönüp sıfır aramak yerine yapabileceğiniz daha eklif bir çözüm var mı? Ne yapabilirsiniz?
+
+203
+00:36:33,876 --> 00:36:39,276
+Hocam azalttıktan sonra sıfır aramak yerine azaltırken bir aramak belki olabilir. O geldi aklıma ama.
+
+204
+00:36:40,096 --> 00:36:44,496
+Bak dikkat et ama bir olması demek bir adım sonra sıfır olacağı anlamına gelmiyor.
+
+205
+00:36:45,836 --> 00:36:54,436
+Yani mesela ne bileyim C bir aslında ama C'nin bitebilmesi için A'nın bitmesi yetmiyor.
+
+206
+00:36:54,676 --> 00:36:58,256
+Bir de B'nin bitmesi gerekiyor çünkü C'den önce B var mesela.
+
+207
+00:36:58,804 --> 00:37:03,923
+Anlatabildim mi? O olmaz yani. Başta ne yapabilirsiniz?
+
+208
+00:37:03,923 --> 00:37:04,824
+Oraya koysa?
+
+209
+00:37:06,003 --> 00:37:08,484
+Priority Q tutabiliriz.
+
+210
+00:37:09,284 --> 00:37:25,443
+Peki. Priority Q değil ama normal Q tutabilirsiniz. Şöyle yapabiliriz arkadaşlar. Şurayı boşaltıyorum temiz olması açısından. Şimdi bir kuyruk yaparız.
+
+211
+00:37:30,835 --> 00:37:38,835
+Kuyruğa sıfır olan işleri koyarak işe başlarız. A'yı koyduk, P'yi koyduk.
+
+212
+00:37:40,835 --> 00:37:42,835
+Tamam mı?
+
+213
+00:37:44,835 --> 00:37:47,743
+A'yı koyduk, P'yi koyduk.
+
+214
+00:37:47,744 --> 00:37:58,744
+şey olunca A'yı kuyruktan çıkartıp A'nın bağlı olduklarını biraz azaltırız.
+
+215
+00:37:58,744 --> 00:38:07,307
+Biraz azalttık. Eğer 0 olduysa kuyruğa alırız. Çünkü artık o da yapılabilir.
+
+216
+00:38:07,380 --> 00:38:16,140
+B'yi alamam kuyruğa çünkü o hala bir ama D0 olduğuna göre o da kuyruğa girebilir, artık o da yapılabilir.
+
+217
+00:38:16,260 --> 00:38:31,039
+Şimdi A'yı yazdım, şimdi sıra geldi F'ye, F'yi kuyruktan çıkartıyorum, F'yi kuyruktan çıkarttım fakat F'nin bağlı olduğu kimse olmadığı için hiçbir işlem yapmıyorum, F'yi sadece kuyruktan çıkartıyorum.
+
+218
+00:38:31,039 --> 00:38:34,440
+Şimdi D'deyim, D'yi kuyruktan çıkarttım.
+
+219
+00:38:34,996 --> 00:38:56,836
+D'yi kuyruktan çıkarttığımda, D'nin bağlı olduğu B ve E var. B'yi biraz azalttım, sıfır. Demek ki B'yi de kuyruğa alabilirim. Bakın hiç kontrol etmiyorum kim sıfır kimdir diye. E'yi de biraz azalttım, E bir oldu. Şimdi B'de kuyrukta. D bitti, sıra B'de. B'yi kuyruktan çıkarttım.
+
+220
+00:38:58,864 --> 00:39:07,623
+B'yi kuyrukdan çıkarttım ve B'nin bağlı olduğu C'yi biraz attım, sıfır. Sıfır olduğu için o da kuyruğa girdi, C kuyruğa girdi.
+
+221
+00:39:07,623 --> 00:39:16,304
+Kuyruğun başında C var, C'yi kuyrukdan çıkarttım. C'yi kuyrukdan çıkartınca C'nin bağlı olduğu E'yi biraz attım.
+
+222
+00:39:16,304 --> 00:39:26,304
+E sıfır olduğu için o da kuyruğa aldım. Kuyruğun başında şu anda E var, E'yi kuyrukdan çıkarttım.
+
+223
+00:39:26,420 --> 00:39:37,859
+E'nin bağlı olduğu kimse yok, iş yapmayacağım. Kuyruk da boş. E çıkınca değil mi? E çıkınca kuyruk boş.
+
+224
+00:39:38,835 --> 00:39:59,975
+Bundan ötürü artık kimse kalmadığına göre işim bitti. Ne oldu? Kuyruk kullanarak her seferinde sıfır olanı kuyruğa ekledim, sıfır olanı kuyruğa ekledim. Bu sayede her seferinde bu diziyi durmadan kontrol etmem gerekmedi. Kimler sıfır oldu, kimler sıfır oldu diye. Kuyruğa ekledim.
+
+225
+00:40:00,000 --> 00:40:11,039
+Ve sırası geldikçe onlar da işleme girmiş oldular. Buraya kadar anlaşılmayan bir şey var mı? Sormak istediğiniz bir şey var mı? Anlaşıldı mı bu?
+
+226
+00:40:16,659 --> 00:40:20,979
+Orada mısınız diye baktım çünkü ses gelmiyor. Anlattığım anlaşıldı mı arkadaşlar?
+
+227
+00:40:20,979 --> 00:40:23,979
+Hocam, anlaşıldı.
+
+228
+00:40:23,979 --> 00:40:28,911
+Tamam, sor.
+
+229
+00:40:28,911 --> 00:40:52,891
+Şey soracaktım, şimdi biz burada önce sırasıyla bakıyoruz. Örneğin önce A'ya bakıyoruz. A'ya bağlı olduklarını bir azaltıyoruz. Sıfırsa da kuruluğa ekliyoruz ya. Orada şeyi de kontrol etmemiz gerekmiyor mu? Eğer ikisi de mesela C'de E'ye bağlı, D'de daha sonrasına E'ye bağlı olacak. Sıfır olmuş olacak ama E çoktan kuruluğa eklenmiş.
+
+230
+00:40:53,556 --> 00:41:01,476
+Tekrar tekrar kuyruğa ekleme durumu olmaz mı? Olmaz, hayır hayır. Tekrar tekrar kuyruğa ekleme durumu olmaz hiçbir zaman.
+
+231
+00:41:01,476 --> 00:41:12,815
+Neden olmaz? Çünkü sen işlem, bak bir kere daha gösteriyorum şurayı, işlem yaparken kuyruğa ekliyorsun, bir daha oraya uğramayacağım artık.
+
+232
+00:41:13,364 --> 00:41:24,064
+Çünkü ona bağlı olan kimse yok. Sıfırsa bir daha o düğme hiç uğramayacağım demektir. Bak şimdi şuraya hemen bir kere daha göstereceğim.
+
+233
+00:41:24,480 --> 00:41:40,180
+A sıfır, B iki, C bir değil mi? Yanlış yazarsam düzeltin. Bir, E iki, F sıfır. Bak şimdi, bir tur dönüyorsun sadece. Bir tur baktım, kuyruğa kimleri alayım dedim. A'yı aldın, Efe aldın, sıfır oldukları için.
+
+234
+00:41:40,740 --> 00:41:50,320
+Kuyruğun başında A var. A'yı çıkarttın, A'yı şeye yazdın, işte sıralı yapılacak işlerde ilk iş diye yazdın.
+
+235
+00:41:52,480 --> 00:42:00,640
+A'nın bağlı olduğu B'yi ve D'yi biraz alttın. Hemen bu anda D sıfır olduğu için D'yi kuyruğa ekledim.
+
+236
+00:42:00,640 --> 00:42:06,960
+B ile ilgili hiçbir iş yapmadım. Ama bak şimdi D'nin sıfır olması demek ne demek? Bir daha kimse D'ye uğramayacak demek.
+
+237
+00:42:06,960 --> 00:42:14,960
+Çünkü D'den önce başka iş kalmadı. Bak A'yı şöyle yaptın, şu bağlantıyı koparttın, şu bağlantıyı koparttın.
+
+238
+00:42:14,960 --> 00:42:20,079
+D'den önce başka iş kalmadı demek. Anlatabildim mi? Şimdi F'yi kuyruktan çıkardın.
+
+239
+00:42:20,340 --> 00:42:28,740
+F'yi buraya yazdım. F'nin bağlı olduğu kimse yok. D'de duracağım, korkmayın. D'yi koruktan çıkarttım.
+
+240
+00:42:29,043 --> 00:42:52,403
+D'yi kuyruktan çıkartmak demek ne demek? B'yi biraz azalttım demek. Hemen şu anda B0 mi? Burada yapıyorsun bu kontrolü. B0, hemen kuyruğa alıyorsun. E1, ona hiçbir şey yapmıyorsun. Çünkü ondan önce yapılması, bitmesi gereken bir iş var. Pardon, özür dilerim. Kuyruğa alıyorsun. İlk buraya yazdım. Çok özür dilerim. Buraya yazacağım. B. Tamam mı?
+
+241
+00:42:54,291 --> 00:43:12,811
+O zaman B burada. Şimdi kuyruğun başında B var. B'yi kuyruktan çıkardım, buraya aldım. B'nin bağlı olduğu C'yi sıfır yapar yapmaz C'yi de buraya yazdım. Çünkü C'den önce artık başta iş kalmadı.
+
+242
+00:43:13,396 --> 00:43:23,376
+Kuyruğun başında C var, C'yi aldım, C'nin bağlı olduğu E'yi biraz attım, sıfır, hemen onu da kuyruğa ekledim.
+
+243
+00:43:23,916 --> 00:43:32,896
+E sıfır oldu, kuyruğun başında E var, E'yi aldım, E'nin bağlı olduğu kimse yok, kuyrukta da kimse yok, o zaman işim bitti.
+
+244
+00:43:32,896 --> 00:43:39,976
+Kuyruk boşalana kadar, kuyruk boşalınca boş ise işlem biter. Tamam mı?
+
+245
+00:43:42,547 --> 00:43:43,627
+Soru var mı şimdi?
+
+246
+00:43:44,547 --> 00:43:45,507
+Teşekkür ederim hocam.
+
+247
+00:43:46,327 --> 00:43:47,748
+Ben teşekkür ederim.
+
+248
+00:43:49,527 --> 00:43:50,967
+Biraz şey gitti.
+
+249
+00:43:53,288 --> 00:44:00,708
+Ben aslında bunu geçen sene benim sınıf benden olanlar anlattım diye hatırlıyorum ben bunu.
+
+250
+00:44:00,827 --> 00:44:02,467
+Biz bunu sınavda sorduk çünkü.
+
+251
+00:44:04,107 --> 00:44:05,887
+Demek ki şey oldu bir noktada.
+
+252
+00:44:06,467 --> 00:44:09,467
+Ben veri yapıları almıştım hocam sizden ama hatırlamıyorum bunu yani.
+
+253
+00:44:10,260 --> 00:44:14,740
+Gerçekten sınavda sorduk. Biz size sınavda topolojik sort sorduk diye hatırlıyorum ben.
+
+254
+00:44:15,780 --> 00:44:18,400
+Hocam ben de sizden aldım ama ben de hatırlanıyorum.
+
+255
+00:44:18,500 --> 00:44:19,880
+Sence mi hatırlamıyorum? [öğrenci].
+
+256
+00:44:20,820 --> 00:44:21,780
+Ben sızıyorum hocam.
+
+257
+00:44:22,400 --> 00:44:23,960
+Sınavda yok bence böyle bir şey.
+
+258
+00:44:23,960 --> 00:44:26,019
+Hatırlıyoruz. Biri hatırladı mı?
+
+259
+00:44:26,440 --> 00:44:26,960
+Evet, evet.
+
+260
+00:44:27,507 --> 00:44:40,507
+İyi neyse. Yok oluyor böyle ya. Unutulması normal. Belki çok önem vermemişizdir anlatırken falan böyle çok önemli gibi gelmişti. Ama bu çok güzel bir şey. Aklınızda kalsın yani güzel bir algoritma.
+
+261
+00:44:40,887 --> 00:44:42,927
+Karmaşıklığı neydi hocam? Pardon.
+
+262
+00:44:43,047 --> 00:44:43,367
+Efendim?
+
+263
+00:44:43,887 --> 00:44:44,927
+Karmaşıklığı neydi acaba?
+
+264
+00:44:46,147 --> 00:44:51,007
+Bunun karmaşıklığı şeye bağlı. Nedir?
+
+265
+00:44:51,956 --> 00:45:17,855
+V, örneğinden açıklayalım. Vörtexlerin ise yani büyümlerin ise, e bu toplam yani kaç büyümün olduğu ve kaç ecin olduğu ise, bunun karmaşıklığı şeylerin karesi artı e nedir? Vörtexlerin, büyüm sayısının karesi artı e.
+
+266
+00:45:21,204 --> 00:45:26,884
+Bunun ben adım adım aslında şeyini yapayım mı size karmaşıklık hesabını bilmiyorum.
+
+267
+00:45:28,644 --> 00:45:34,004
+Şöyle yapayım mı? Karmaşıklık hesabını şimdi yapmıyorum çünkü çok yapabilirim aslında.
+
+268
+00:45:34,564 --> 00:45:36,004
+Yapayım mı, yapmıyorum mı?
+
+269
+00:45:36,564 --> 00:45:38,244
+Sormayacaksanız yapmıyorum.
+
+270
+00:45:40,764 --> 00:45:43,444
+Sormayacaksan mı? Aşk olsun ya.
+
+271
+00:45:45,972 --> 00:45:49,052
+Şu V kare şeyden geliyor, en azından onu söyleyeyim.
+
+272
+00:45:49,952 --> 00:45:55,331
+Şimdi birinci yaptığımız iş, yazın yani hiç fark etmez ne olacak ki?
+
+273
+00:45:56,211 --> 00:46:01,432
+İlk yaptığım iş çünkü madem zaten geçen seneden de hatırlamıyorsunuz.
+
+274
+00:46:05,204 --> 00:46:19,704
+İmbiglinin ne olduğunu hatırlıyorsunuz değil mi? Yani benden önce bana bağlı olan kaç dilim var? Şimdi bunu yapmanız için, indiglileri hesaplamanız için karmaşıklık Edge sayınız kadar.
+
+275
+00:46:19,704 --> 00:46:32,443
+Buradaki karmaşıklığınız Edge sayınız kadar. Ondan sonra şey olduğu sürece
+
+276
+00:46:33,460 --> 00:46:43,059
+işten görmemiş bütün büyümleriniz için yapmanız gereken işler. Aslında bu da defterinizde bulunmuş olsun.
+
+277
+00:46:51,347 --> 00:46:54,347
+Bu klasik yöntemde
+
+278
+00:46:58,260 --> 00:47:05,164
+Dur ben bunu klasikli, neyse peki. Önce öyle göstereyim.
+
+279
+00:47:09,492 --> 00:47:14,923
+Arkasından bir dizimizi azaltıyorsunuz.
+
+280
+00:47:28,436 --> 00:47:40,756
+Yani Edge kadar azaltma işlemi. Şimdi indikli gizlinizi şey yaptığınızda, oluşturduğunuzda Edge kadar yani ne kadar Edge'iniz varsa değil mi o kadar işlem yapıyorsunuz?
+
+281
+00:47:40,816 --> 00:47:47,436
+A, B'ye bağlı, B'yi bir arttır. A, D'ye bağlı, B'yi bir arttır. Yani Edge kadar işlem orada yaptınız.
+
+282
+00:47:48,436 --> 00:47:50,436
+Her seferinde...
+
+283
+00:47:50,831 --> 00:48:04,971
+Döne döne şeye bakıyorsunuz, en tane şey, B tane rönteksimiz, büyümünüz varsa, büyüm kalmayana kadar dönüp dönüp indigrisi sıfır olan büyüm arıyorsunuz. Onun karmaşıklığı V kare.
+
+284
+00:48:05,652 --> 00:48:16,652
+Ve ondan sonra gelip kendinden önce o düğme bağlı olan düğümlerin şeylerini, indiklisini biraz azaltıyorsunuz.
+
+285
+00:48:16,652 --> 00:48:26,652
+Ondan sonra bu düğümün indiklisini eksi bir yapıyorsunuz.
+
+286
+00:48:32,115 --> 00:48:50,115
+O zaman ne oluyor? Buradaki yaptığımız iş O, B kare artı O, E olmuş oluyor. Ama Q kullanırsanız, şu şeyi, ikinci adımı Q ile yaparsanız,
+
+287
+00:48:53,748 --> 00:49:15,248
+yaparsanız, o zaman şöyle bir şey yapıyorsunuz. Önce kuyruğu şeylerle dolduruyorsunuz. İndiklisi sıfır olanlarla dolduruyorsunuz. Kendinden önce hiçbir iş olmayan düğümlerle dolduruyorsunuz. Bunun karmaşıklığı nedir?
+
+288
+00:49:18,248 --> 00:49:19,708
+Bunun karmaşıklığı nedir?
+
+289
+00:49:21,076 --> 00:49:24,195
+Bir tur dönüp sıfır arayacaksınız. Karmaşıklık ne de?
+
+290
+00:49:27,699 --> 00:49:32,699
+Büyüye dizisinde bir tür dönüp sıfır arayacaksınız. Karnışıklık ne olabilir?
+
+291
+00:49:32,699 --> 00:49:33,699
+E'dir hocam.
+
+292
+00:49:33,699 --> 00:49:34,699
+E değil midir?
+
+293
+00:49:34,699 --> 00:49:36,699
+Harika, V'dir.
+
+294
+00:49:37,699 --> 00:49:44,652
+Önce bunu yaptık. Arkasından Q'da eleman kaldığı sürece
+
+295
+00:49:57,780 --> 00:50:02,780
+Ne yapacaksınız? Q'daki elemanı, Q başındaki elemanı çıkartacaksınız.
+
+296
+00:50:07,092 --> 00:50:16,092
+Q başındaki elemanı çıkartma, işte kuyrukta V kadar eleman olabileceği için OV olabilir karmaşıklığı.
+
+297
+00:50:17,092 --> 00:50:22,092
+Arkasından indigri dizinizi aynı mantıkla azaltacaksınız.
+
+298
+00:50:32,436 --> 00:50:43,876
+Bunu zaten görmüştük, bunun karmaşıklığı E'di. Bir de ne yapacaksınız? Indigris'i sıfır olanları kuyruğa ekleyeceksiniz.
+
+299
+00:50:56,500 --> 00:50:58,500
+Bunun karmaşıklığı ne?
+
+300
+00:51:00,500 --> 00:51:02,500
+Edge kadar olabilir en fazla.
+
+301
+00:51:02,500 --> 00:51:09,500
+Dolayısıyla Q ile yaparsanız karmaşıklık V artı E olur.
+
+302
+00:51:09,500 --> 00:51:12,500
+O da lineer olur.
+
+303
+00:51:12,500 --> 00:51:18,500
+Klasik yolda yaparsanız, yani esas hani klasik yolda
+
+304
+00:51:19,572 --> 00:51:31,572
+V²E oluyor. Neden? Çünkü orada bir şey var. Her seferinde dönüp dönüp sıfır arıyorsunuz. Şurada yaptığımız işlem o. Dönüp dönüp sıfır arıyorsunuz.
+
+305
+00:51:31,572 --> 00:51:41,387
+Ama şey yaparsanız, bu şekilde kuyruk kullanırsanız, onu yapmadığımız için sıfırlar Q'ya doğrudan...
+
+306
+00:51:41,844 --> 00:52:08,324
+eklendiği için, diziyi sürekli baştan sona taramanız gerekmediği için, lineal olmuş oluyor. Aslında sorduğum için teşekkür ederim. Ben onu anlatmayı düşünmemiştim. İyi oldu, o da güzel oldu. Peki, şimdi buraya kadar sormak istediğiniz bir şey var mı? Ara vereyim. 2-5 geçiye kadar ara veriyorum, olur mu? Arkadaşlar. Tamamdır.
+
+307
+00:52:08,724 --> 00:52:09,564
+Olur hocam.
+
+308
+01:08:02,579 --> 01:08:04,499
+Evet arkadaşlar, orada mısınız?
+
+309
+01:08:07,579 --> 01:08:08,819
+Buradasınız inşallah.
+
+310
+01:08:08,819 --> 01:08:08,979
+Evet.
+
+311
+01:08:10,979 --> 01:08:11,099
+Tamam.
+
+312
+01:08:14,059 --> 01:08:17,079
+Evet, en son şeyden bahsetmiştik.
+
+313
+01:08:17,739 --> 01:08:20,779
+Bu topolojik sorutun karmaşıklığından bahsetmiştik.
+
+314
+01:08:23,779 --> 01:08:24,260
+Ne?
+
+315
+01:08:25,539 --> 01:08:25,859
+Şey,
+
+316
+01:08:26,859 --> 01:08:28,939
+decrease,
+
+317
+01:08:29,876 --> 01:08:38,876
+Biz bayağı Constant oğlundan bahsetmiştik, topolojik sortun. Yazdım mı ben oraya? Aa, başı yok bunun.
+
+318
+01:08:38,876 --> 01:08:49,876
+Insertion sort da aynı mantıkla. Depth first search ile, breadth first search ile, oralarda ne oluyor? Depth first search ile bir düğümden başlıyorsunuz. Ondan sonra...
+
+319
+01:08:50,036 --> 01:08:53,896
+Sırasıyla diğer düğümlere geçerek en sona kadar ilerliyorsunuz falan.
+
+320
+01:08:54,076 --> 01:09:02,095
+Yani o mantıklar hep elinizdeki bilgiyi bir azaltarak kalanın üzerinde işlem yapmak üzerine kurulu.
+
+321
+01:09:02,296 --> 01:09:07,236
+Yani aslında normalde pek çok algoritma bu mantıkla çalışabiliyor.
+
+322
+01:09:08,456 --> 01:09:13,695
+İkinci türü decrease by a constant factor.
+
+323
+01:09:16,243 --> 01:09:28,363
+Şimdi öbürlerinde birer birer, ikişer ikişer falan neyse o şekilde bir azaltma varken, burada mesela binary search'te olan mantık bu.
+
+324
+01:09:32,851 --> 01:09:59,951
+Binary Search'taki constant faktörümüz bizim, ikiye böle böle ilerliyoruz problemi. Her seferinde bir yarısını eriyerek ilerliyoruz. Bu şekilde bir Dijkstra and Conquer yapıyorsanız, Dijkstra'ya constant faktör kapsamına girmiş oluyorsunuz. Orada mantık şu, enlik bir probleminiz var. Mesela Binary Search yaptığımızda.
+
+325
+01:10:00,275 --> 01:10:25,155
+Ondan sonra bunu ikiye böldünüz, bir kısmını attınız. Ne oldu? Birdenbire elinizde en bölü ikilik bir bilgi kaldı. Ondan sonra işte bu alt problemi çözdünüz. Ondan sonra da işte probleminiz çözülmüş oldu.
+
+326
+01:10:30,707 --> 01:10:45,807
+Burada yaptığımız şey aslında bizim, Binary Search'ta yaptığımız yarıya böyle böyle gitmek ama yine burada işte bilmem 3'e böldüm, 5'e böldüm, ihtiyacınız neyse o şekilde devam edebilirsiniz.
+
+327
+01:10:46,887 --> 01:10:54,768
+Şimdi Binary Search'u size artık geçen sene sanıyorum rekürsik vermişizdir diye tahmin ediyorum. Vermediysek onu da anlatacağım.
+
+328
+01:10:59,796 --> 01:11:01,796
+Onu gördük hocam. Gördük diye hatırlıyorum.
+
+329
+01:11:03,636 --> 01:11:05,436
+Gördük değil mi? Ben de öyle hatırlıyorum.
+
+330
+01:11:06,615 --> 01:11:11,636
+Ya kısacık anlatayım sonra notlarınız da bulunsun. Üzerinde çok durmadan anlatayım.
+
+331
+01:11:11,636 --> 01:11:23,636
+Şimdi ne olması gerekiyor? Şöyle bir A0'dan N-1'e kadar bir diziniz var başlangıçta.
+
+332
+01:11:27,283 --> 01:11:39,283
+Bir başlangıcı var. Initial olarak lobunuz 0, high'ınız n-1. İsterseniz...
+
+333
+01:11:39,859 --> 01:11:52,859
+Şunu şöyle vereyim. Çünkü her seferinde pointer aktartacağınız için C yaparsanız dizinin en elemanına birden erişmiyorsunuz aslında pointer aktarıyorsunuz kafa karışmasın.
+
+334
+01:11:52,859 --> 01:12:07,531
+Ve value var. Bu da aradığımız sayı. Şimdi ne yaparsınız? Eğer low high'dan büyükse bir kere eleman yok demektir. Döner gidersiniz.
+
+335
+01:12:07,539 --> 01:12:21,340
+Bitörneksi bir. Ondan sonra bu işte şey durumu, not found durumu. Bu arada püse de çiziyorum, o yüzden şey yok yani, hani,
+
+336
+01:12:34,003 --> 01:12:59,923
+bölü ikiye eşittir. Eğer A'nın midinci elemanı value'nuzdan büyükse, baktığınız elemandan value'dan büyükse, yani 3, 5, 7, 9, 11, 13 diye giderken, 15 diye giderken, eğer x'iniz 12 ise, yani yok 12 ise olmaz, x'iniz 5 ise,
+
+337
+01:13:02,452 --> 01:13:12,452
+9 büyük tür 5 şart sağlanıyorsa şuraya ineceksiniz. O zaman ne yaparsınız? Return dersiniz. Binary Search'ın...
+
+338
+01:13:17,684 --> 01:13:25,123
+Binary Search fonksiyonunuzu A dizisinde kimi değiştirerek?
+
+339
+01:13:25,344 --> 01:13:28,444
+Low eşit low, high'ı değiştirerek?
+
+340
+01:13:28,623 --> 01:13:29,024
+Yani niye?
+
+341
+01:13:29,164 --> 01:13:31,584
+Çünkü artık ayınız mid-1 olacak.
+
+342
+01:13:31,724 --> 01:13:33,283
+Şu aralığa bakacaksınız.
+
+343
+01:13:34,404 --> 01:13:35,203
+Çağırırsınız.
+
+344
+01:13:37,703 --> 01:13:38,584
+Eğer
+
+345
+01:13:46,836 --> 01:14:13,836
+şey ise, A'nın midincisi value'dan küçükse, yani sayı sağ tarafta kalıyorsa, o zaman binary search'u mid artı bir, high ve value için çağırırsınız.
+
+346
+01:14:14,515 --> 01:14:21,483
+Ne küçük, ne büyük ama eşitse o zaman...
+
+347
+01:14:25,140 --> 01:14:27,140
+mide geri döndürürsünüz.
+
+348
+01:14:29,140 --> 01:14:32,140
+Bu şekilde şey yapabilirsiniz.
+
+349
+01:14:38,484 --> 01:14:40,484
+algoritmalarını çözebilirsiniz.
+
+350
+01:14:40,484 --> 01:14:44,484
+Şimdi bu yarıya böle böle azaltıyor.
+
+351
+01:14:44,484 --> 01:14:49,484
+Yarıya böle böle azalttığı için de karmaşıklığı nasıl bunun?
+
+352
+01:14:49,484 --> 01:14:55,484
+tn eşittir, tn bölü 2 artı c.
+
+353
+01:14:55,484 --> 01:15:05,484
+Bu işte divide combine falan içerisinde yapacağımız sabit işler, c sabiti.
+
+354
+01:15:05,908 --> 01:15:18,908
+Ondan sonra TN bölü 2 dediğim şeyde ikiye bölerek bir sonraki işlemi ikiye bölerek devam ettireceksiniz.
+
+355
+01:15:25,300 --> 01:15:35,780
+Bunu çözdüğünüz zaman karmaşıklık ne çıkacak? İkiye böyle böyle gittiğimiz için karmaşıklığımız ne çıkar?
+
+356
+01:15:39,731 --> 01:15:40,572
+Orada mısınız?
+
+357
+01:15:42,092 --> 01:15:43,431
+Log, iki N hocam.
+
+358
+01:15:43,532 --> 01:15:46,551
+Log N olur.
+
+359
+01:15:47,231 --> 01:15:50,172
+Bunu Backwood Substitution ile yaparsanız da görsünüz.
+
+360
+01:15:50,332 --> 01:15:51,672
+Yapmama ihtiyacınız var mı?
+
+361
+01:15:51,731 --> 01:15:54,532
+Yaptığınız için bunları anlatmıyorum bir daha ama yapayım mı?
+
+362
+01:15:56,572 --> 01:15:57,912
+İhtiyacınız var mı arkadaşlar?
+
+363
+01:15:57,912 --> 01:15:58,731
+Gerek yok hocam.
+
+364
+01:15:59,604 --> 01:16:11,664
+Tamam, biliyorsunuz gayet şey, biliyorsunuz. Dolayısıyla binary search dedikliğiz By-Compure'un en çok kullanılan algoritmalarından birisi.
+
+365
+01:16:12,084 --> 01:16:13,384
+Hocam bir şey sorabilir miyim?
+
+366
+01:16:13,584 --> 01:16:14,264
+Buyurun tabii.
+
+367
+01:16:15,244 --> 01:16:19,463
+Hocam, fonksiyonu return etmek yerine fonksiyonu kendisini yazsak bir şey fark ediyor mu orada?
+
+368
+01:16:20,804 --> 01:16:23,524
+Yok, etmez. Binary search'u çağırabilirsin.
+
+369
+01:16:24,784 --> 01:16:25,564
+Teşekkürler hocam.
+
+370
+01:16:29,268 --> 01:16:46,188
+Peki. Yani çağırayım istiyorum. Öyle yazayım. Eğer kafa karışıyorsa şunu şöyle kaldırayım. Olur mu? Daha mı anlaşılır oluyor? Olmadı sanki hocam program açısından. Yani fonksiyonu dönüştürüyor.
+
+371
+01:16:46,612 --> 01:16:48,092
+Konuşların dönmesi gerekiyor.
+
+372
+01:16:48,612 --> 01:16:53,811
+Hayır, hayır, şey yapabilirsin, ikisini de yapabilirsin, return ettirmen gerekmiyor.
+
+373
+01:16:53,951 --> 01:17:00,752
+Kendisine çağıra çağıra da gidebilirsin. Neyse, orijinalini bozmayayım, dur şey yapayım.
+
+374
+01:17:01,172 --> 01:17:08,951
+Hocam, sonuna kadar gidip değeri bulduğunda, oradan return'ı return'ı en başa kadar getirmesi gerekmiyor mu değeri?
+
+375
+01:17:09,011 --> 01:17:10,612
+O yüzden return koymamız gerekmiyor mu?
+
+376
+01:17:16,435 --> 01:17:18,075
+Anlamadım sorunu, bir daha söyle.
+
+377
+01:17:18,775 --> 01:17:23,235
+Ya bulana kadar ilerliyoruz ya, şey böyle bir recursive şekilde.
+
+378
+01:17:23,495 --> 01:17:24,135
+Burada evet.
+
+379
+01:17:24,555 --> 01:17:26,855
+Bulduğumuz adında return diyoruz.
+
+380
+01:17:27,376 --> 01:17:30,175
+Sonra tekrar fonksiyonlar geriye doğru dönüyor.
+
+381
+01:17:30,296 --> 01:17:34,155
+Her geri döndüğünde de bunu tekrar return ed'e dönmesi gerekmiyor mu?
+
+382
+01:17:34,215 --> 01:17:35,555
+Yani fonksiyonlarda da return.
+
+383
+01:17:35,555 --> 01:17:37,835
+Yani aslında şöyle yapıyor.
+
+384
+01:17:38,296 --> 01:17:40,015
+SMC seviyesinde öyle yapıyor.
+
+385
+01:17:40,195 --> 01:17:42,515
+Yani binary search'u şöyle çağıra çağıra gidiyor.
+
+386
+01:17:43,252 --> 01:18:03,652
+şey bulduğunda, value'yu bulduğunda, ondan sonra şeyi nedir, yani value'nun yerini bulduğunda diyelim mesela, midi çünkü midi bulduğunda, midi döndüre döndüre her gittiği yerden geri dönüyor aslında yaptığı şey o.
+
+387
+01:18:04,275 --> 01:18:25,536
+Yani şey değil, mide buldu çat diye dışarı çıkmıyor. Şimdi çağıra çağıra gittiniz ya, bulduğu noktada durdu, artık çağırmadı, döndüre döndüre geri gidiyor. Şöyle döndüre döndüre geri gidiyor. Öyle yapmak zorunda, başka şansı yok zaten. Geri döndürerek şey yapıyor, yukarı dönüyor.
+
+388
+01:18:29,536 --> 01:18:29,675
+Peki...
+
+389
+01:18:31,091 --> 01:18:36,091
+Son olarak da şey var, variable size decrease var.
+
+390
+01:18:36,091 --> 01:18:44,091
+Varial size decrease dediğim şey de eğer azaltma miktarınız her zaman değişiyorsa
+
+391
+01:18:45,203 --> 01:19:08,943
+O zaman variable size de freeze oluyor. Buna da en güzel örnek, Great Scumon Division. Burada yaptığımız şey aslında her seferinde belirsiz miktarda bir bilgi ediyorsunuz. Bunun nasıl, en büyük ortak veren hesabının nasıl yapıldığını hatırlıyor musunuz? Mesela 80 ile 44'ü yaparken.
+
+392
+01:19:11,956 --> 01:19:37,315
+Bunu birinci sınıfta biz anlatırdık eskiden. Şöyle hatırlatayım size. Şöyle yapıyoruz aslında. Eğer B sıfıra eşitse ortak bölenimiz A'dır. En büyük ortak bölenimiz A'dır. Değilse B A mod B olarak rekürsif devam edersiniz.
+
+393
+01:19:38,131 --> 01:19:40,131
+O zaman örneğin...
+
+394
+01:19:43,667 --> 01:20:09,347
+80 ile 44'e bakıyorsanız, ne olacak? 44 buraya gelecek, 44. Buraya da 80 mod 44 gelecek. Ne yapıyor 80 mod 44? 36 ediyor. 36 gelecek. Devam ediyorum. B0 olana kadar devam etmek zorundasınız çünkü. Ondan sonra işte
+
+395
+01:20:11,444 --> 01:20:16,904
+Ne olacak? 36 buraya gelecek. 44 mod 36, 12.
+
+396
+01:20:20,904 --> 01:20:28,484
+Buraya gelecek. Devam ediyorum. 12 buraya gelecek. 36 mod 12. Buraya gelecek. 0.
+
+397
+01:20:29,244 --> 01:20:34,764
+Demek ki 12'ymiş en büyük ortak bölen. 80 ile 44'ün.
+
+398
+01:20:36,979 --> 01:20:40,139
+En büyük ortak bölene 12'ymiş.
+
+399
+01:20:41,139 --> 01:20:48,420
+Şimdi o zaman burada kaçar kaçar azaltacağımız belli değil. Yapacağımız işin ne kadar azalacağı belli değil.
+
+400
+01:20:48,420 --> 01:20:54,259
+O zaman mesela burada en büyük ortak bölene kullanabilirsiniz.
+
+401
+01:20:55,939 --> 01:20:59,699
+Burada sormak istediğiniz bir şey var mı aklınıza takılan?
+
+402
+01:21:00,435 --> 01:21:07,315
+Hocam, 44'ten 36, 36'ya 8 olacak. En büyük ortam, böl en 12 çıkmayacak.
+
+403
+01:21:09,796 --> 01:21:10,595
+Nasıl?
+
+404
+01:21:10,595 --> 01:21:21,395
+Yani 36, 8 olacak. Hani 44 ile 36 yazdık ya, 36, 44 mod 36, 8 kalacak orada.
+
+405
+01:21:21,395 --> 01:21:24,915
+Pardon, 12 değil o, 8 kalıyor. Ben kafadan onu 12 diye yaptım diyorsam.
+
+406
+01:21:24,915 --> 01:21:26,036
+Evet, 8 hocam.
+
+407
+01:21:26,228 --> 01:21:38,208
+Tamam, tamam, haklısın. 44 bölü 36, 1, 36, 14'den 6 çıktı, 8. Ben onu nasıl ters yaptım, Allah Allah. 6'dan 4 çıkarttım, 2 yazdım, oraya da 12 yazdım.
+
+408
+01:21:38,827 --> 01:21:46,608
+36, 8 oldu, haklısın. 8, en büyük ortak bölen 8 oldu. Tamam, tamam, şimdi oldu.
+
+409
+01:21:47,927 --> 01:21:49,968
+Peki, burada yaptığınız işlem...
+
+410
+01:21:49,968 --> 01:21:51,268
+Hocam 4 değil mi?
+
+411
+01:21:52,851 --> 01:22:00,231
+Devam edeceğiz hocam. Sekiz, bir de otuz altı mod sekizde dört kalıyor. Sekiz, dört devam edeceğiz.
+
+412
+01:22:01,371 --> 01:22:10,012
+Aaa tabii şey bitmedi ki. Tamam haklısınız. Doğru, doğru. Sekizi yazdım. Otuz altı mod sekizi devam ediyorum.
+
+413
+01:22:10,211 --> 01:22:16,791
+Tabii dört kere sekiz otuz iki, dört. Bir de doğrulasam kendimi harika olacak. Dört sıfır olacak.
+
+414
+01:22:20,127 --> 01:22:32,108
+Bir yerde hata yapınca arkası hatalı devam etti. Doğru söylüyorsunuz. Düzelttiğiniz için teşekkür ederim. 36 ve 8 için şey yaptım.
+
+415
+01:22:34,195 --> 01:22:59,956
+44 mod 36, 8 oldu. Şimdi 8'i buraya yazdım. Şu da 36 mod 4 oldu. 36 mod 4 de 4 oldu. 4'ü buraya yazdım. Artık 8 mod 4 dediğimiz zaman 0 oldu. Şu 8 mod 4. Dolayısıyla en büyük ortak bölen 4 oldu. Tamam, şimdi oldu. Zaten şey 11 çarpı 4.
+
+416
+01:23:01,300 --> 01:23:24,020
+Asal sayı olduğu için 11, oradan bir şey yapamıyorsunuz. En büyük ortak gören 4 oldu. Şimdi burada görmenizi istediğim şey, bakın ne oluyor, kaç adım gideceği, ne kadar azalacağı belli değil. Yani birer birer veya ikiye dole dole gibi değil. Değişken miktarda azaldığı zaman şey olmuş oluyor.
+
+417
+01:23:26,912 --> 01:23:45,952
+variable size dikriz olmuş oluyor. Hazırı yakmışken, onun da algoritmasını size vereyim. Diyelim ki A ve B gibi ki sayımız varsa, ne olacak? Eğer B sıfıra eşitse, A'yı döndüreceğiz. Değilse, çağırmaya devam edeceğiz.
+
+418
+01:23:45,952 --> 01:23:51,811
+Great-is-commodi ve B şeklinde çağırmaya devam edeceğiz. O kadar basit.
+
+419
+01:23:52,083 --> 01:23:54,884
+Buraya kadar sorumluluk istediğiniz bir şey var mı?
+
+420
+01:23:58,612 --> 01:24:05,612
+Peki. Şimdi o zaman aslında tam dersin ortasında da geçmek istemezdim ama...
+
+421
+01:24:06,036 --> 01:24:33,095
+Tam da dersin ortasına denk geldi. Bir de şey olmayacak, bu dersten sonra dersin başında söylediğim gibi LAV yapılacak. Bu verilen ödenin çözümüyle ilgili LAV yapılacak. Ondan ötürü yeni konuya geçeceğim. Yoksa uzun olsaydı daha güzel olacaktı ama yeni konuya geçeceğim. Bu konu gerçek dünyada en çok kullanılan.
+
+422
+01:24:33,844 --> 01:24:44,804
+ve çok da efektif olan bir konu. Bugün size Hashing algoritmalarını anlatacağım. Hashing üzerinde konuşacağız.
+
+423
+01:24:45,224 --> 01:24:58,863
+Şimdi şeyleri düşünecek olursak, Hashing bir arama algoritması fakat karmaşıklığı bir olan, yani karmaşıklığı eme bağlı
+
+424
+01:24:59,347 --> 01:25:13,167
+olmayan, eleman sayısı olan, n'e bağlı olmayan, sabit karmaşıklıkta bir algoritma, yani bu şu demek, işte 5 adım olur, 10 adım olur olabilir, yani illa 1 adım olacak diye bir şey yok.
+
+425
+01:25:13,648 --> 01:25:24,208
+Fakat şey değil, yani n'e bağlı, yok işte endogen, n kare falan gibi n'e bağlı olan bir karmaşıklığı yok demek. Efendim?
+
+426
+01:25:24,884 --> 01:25:31,104
+Hashing'den kastettiğiniz şey, veriye hashlemek değil mi? Orada nasıl O1 oluyor?
+
+427
+01:25:32,904 --> 01:25:45,844
+Bütün dersi dinlersen anlayacaksın. İlk dakikada daha böyle hash'ın nasıl yapıldığını anlamadan, tabii ki bunun nasıl O1 olabileceğini anlamanda mümkün değil. Zaten ben onu anlatacağım bugün.
+
+428
+01:25:46,184 --> 01:25:51,543
+Veriye erişirken hani O1 de niye hash'in'e O1 deyince garip oluyor.
+
+429
+01:25:52,307 --> 01:26:01,028
+Hiç garip değil bence. Yani karmaşıklığı o bir, hashhing, neslinin o bir, search'ünün o bir, insert'ünün o bir, delete'inin o bir yani. Nedir ki?
+
+430
+01:26:02,608 --> 01:26:03,667
+Tamam.
+
+431
+01:26:03,667 --> 01:26:18,188
+Tamam. O bir yani. Şimdi tabii dersi sonuna kadar dinlersen, gerçi bugün bitmesi pek mümkün gözükmüyor ama nasıl olduğunu anlayacaksın sen de. Şimdi bu bir search algoritması.
+
+432
+01:26:19,988 --> 01:26:37,448
+Bildiğimiz Search algoritmalarına baktığımız zaman şöyle bir şey var. Mesela eğer sequential search'u düşünürsek, yani sıralı olarak aramayı düşünürsek, orada yaptığımız şey, bizim sırasız bir dizimiz var.
+
+433
+01:26:37,688 --> 01:26:43,068
+Sırasız dizide bilinmeyen bir elemanı aradığınızda, worst case nedir bunun?
+
+434
+01:26:46,676 --> 01:26:47,515
+[öğrenci] hocam.
+
+435
+01:26:48,056 --> 01:26:48,896
+[öğrenci], tamam.
+
+436
+01:26:53,136 --> 01:26:57,115
+Binary search yapsak, Binary search de şimdi gördük daha.
+
+437
+01:26:58,195 --> 01:27:00,076
+Sıralı bir dizimiz var.
+
+438
+01:27:00,376 --> 01:27:03,396
+Sıralı olduğu zaman, worst case nedir?
+
+439
+01:27:05,296 --> 01:27:06,176
+Logendir.
+
+440
+01:27:09,615 --> 01:27:11,515
+Binary search tree var.
+
+441
+01:27:12,336 --> 01:27:14,216
+Binary search tree de worst case nedir?
+
+442
+01:27:19,220 --> 01:27:19,880
+O, N.
+
+443
+01:27:21,040 --> 01:27:24,960
+Evet, binary, özellikle çizmedim ki çizersem görürsünüz diye.
+
+444
+01:27:25,399 --> 01:27:31,819
+Şimdi binary search tree'de, balans bozulduysa, balans bozuk bir binary search tree'niz varsa,
+
+445
+01:27:32,380 --> 01:27:38,739
+yani eklemeler çıkarmalar sonunda, eğer balansı kolumadıysanız, o zaman ne olacak?
+
+446
+01:27:38,960 --> 01:27:41,500
+Worst case'i O, N olacak.
+
+447
+01:27:43,120 --> 01:27:44,620
+Şimdi bunların hepsi,
+
+448
+01:27:47,283 --> 01:27:58,203
+n'e bağlı olan şeyler, algoritmalar. Yani karmaşıklıklarına baktığımızda karmaşıklıkları n'e bağlı olan algoritmalar.
+
+449
+01:27:58,523 --> 01:28:06,543
+Şimdi şey olarak bakalım, az önce arkadaşımız sordu ya, yani siz neye n diyorsunuz, şey bir diyorsunuz diye.
+
+450
+01:28:06,543 --> 01:28:10,103
+Şöyle bakalım, searchlerine.
+
+451
+01:28:10,612 --> 01:28:22,192
+Insertlerine ve Deletelerine bakalım. Yani bir dizi var. Bu diziye bu yöntemlerle Search, Insert ve Delete yaptığımızda
+
+452
+01:28:51,252 --> 01:28:53,252
+Parmaşıklıklar ne oluyor ona bakalım.
+
+453
+01:28:53,252 --> 01:28:55,252
+Şöyle yapalım.
+
+454
+01:29:25,652 --> 01:29:28,652
+Bir de şey yapalım, verelim.
+
+455
+01:29:29,203 --> 01:29:47,043
+Şimdi, sequential search'te, search yaparken, worst case'de karmaşıklığınız, insert yaparken, sequential search'te eğer düz bir diziniz varsa, insert'un karmaşıklığı bir, yani en başa getirir, eklersiniz.
+
+456
+01:29:47,043 --> 01:29:56,363
+Eğer linked liste mantığında bir şeyiniz varsa, diziniz varsa, orada da duruma bağlı, yani en başa eklerseniz bir,
+
+457
+01:29:57,203 --> 01:29:59,203
+Sonu eklemeniz gerekiyorsa
+
+458
+01:29:59,203 --> 01:30:00,000
+En
+
+459
+01:30:00,000 --> 01:30:27,819
+diyebilirsiniz ama normalde düz bir diziden bahsediyorsak eğer, karmaşıklık bu da bir. Yani burada bir şey yok. Şeyde sequential search ile delete yaparken karmaşıklığınız en çünkü silmek istediğimiz yani sequential search ile silmek istediğimiz eleman dizinin en sonunda yer alabilir. O zaman onun karmaşıklığı.
+
+460
+01:30:28,000 --> 01:30:29,279
+O şekilde N.
+
+461
+01:30:30,139 --> 01:30:40,719
+Şeye baktığımızda, binary search'e baktığımızda, worst case'de log N insert ederken N eğer şey yapmazsanız tabii yani
+
+462
+01:30:40,719 --> 01:30:50,219
+efektif bir algoritma kullanmazsanız, sırada diziye şey yapıyorsanız, düzgüz bakarak yerleştiriyorsanız,
+
+463
+01:30:50,639 --> 01:30:53,979
+karmaşıklığı N, aynı şekilde delete'in karmaşıklığı da N.
+
+464
+01:30:53,979 --> 01:30:55,979
+Nereye insert ediyorsunuz?
+
+465
+01:30:56,000 --> 01:31:23,340
+yapabileceğinizi de binary search ile yaparım ve onu o şekilde yerleştiririm diyorsanız, o zaman bu gene gidebilir. Ama şeylere baktığımız zaman, yani hani algoritma kitaplarına baktığımız zaman bunun ayrı yapılmasını şey yapmıyorlar, değerlendirmiyorlar. Yani binary search'e insert edeceksen sırayla baka baka yerini bulmaya çalışıyorsun, gözüyle bakıyorlar. Binary search tree'de de, worst case'de,
+
+466
+01:31:24,000 --> 01:31:35,639
+Balans bozulmuş olacağı için N-N-N şeklinde gidiyor. Balans tree de eğer balans bir ağacınız varsa bu Logan şeklinde oluyor. Ama orada da
+
+467
+01:31:35,988 --> 01:31:56,308
+Balansı sürekli korumanız gerekir. Onu unutmamanız lazım. Yani bir tarafa yığılmayı korumanız gerekiyor. Bunların average case'leri hesapları üzerinde durmayacağım. Çünkü zaten bunları genelde gördük. Logan şeklinde average case'leri.
+
+468
+01:32:03,859 --> 01:32:16,840
+Pardon, şeyde de özür dilerim. Bu da Binary Search'un Average Case'i de bineer sayıldığı için bu da N bölü 2 olarak değerlendiriliyor.
+
+469
+01:32:17,760 --> 01:32:22,600
+Binary Search tiri de Average Case'de log N.
+
+470
+01:32:22,960 --> 01:32:33,040
+Logen, Logen, bunlar Average Case değerleri. Bu şekilde Balanced'da da Logen, Logen şeklinde değerlendiriliyor.
+
+471
+01:32:33,040 --> 01:32:49,440
+Şimdi biz burada yapabileceğimiz en iyi şeyin aslında Logen olduğunu görüyoruz. Yani elindeki dizi sıralı da olsa, işte bunu bir Binary Search Tree'de değerleştirmiş olsa sağlayabileceğim.
+
+472
+01:32:50,036 --> 01:32:58,036
+En iyi fayda, login olmuş oluyor. Acaba ben bunu daha iyi bir şekilde yapamaz mıyım?
+
+473
+01:32:58,036 --> 01:33:08,036
+Hashing bu mantık üzerine kurulmuş. Hashing'de mantık şu, diyelim ki, burada bir unique key üzerinden genelde hashleme yapılır.
+
+474
+01:33:08,036 --> 01:33:18,036
+Yani mesela, ne bileyim işte, diyelim ki benimle ilgili bir kaybım hash tablosunda saklayacaksak, diyelim ki killlik numara.
+
+475
+01:33:18,036 --> 01:33:43,115
+üzerinden saklamak mantıklıdır. Çünkü adı Elif Karsigil olan başka birisi de olabilir. Dolayısıyla iki tane Elif Karsigil olacaksa Unique 2 değil aslında Elif Karsigil veya işte ne bileyim sizin için iş yapılacaksa numaralarınızın kullanılması şey olabilir. Unique olarak yani tabloya yerleştirirken mantıklı olur.
+
+476
+01:33:43,155 --> 01:33:58,195
+Ama bu şart değil. Yani ne amaç için eş tablomuzu kullanacağımıza bağlı. Tabloda aynı değerler de olabilir. Yani birden fazla 3, 5, binmem 9 da olabilir. Bu tamamen uygulamamıza bağlı. Genelde uniktir.
+
+477
+01:34:10,387 --> 01:34:13,507
+Bunu biz bir hash fonksiyonundan geçiririz.
+
+478
+01:34:16,819 --> 01:34:20,139
+Ve bir index elde ederiz.
+
+479
+01:34:21,139 --> 01:34:23,479
+Ve bizim bir hash table'umuz vardır.
+
+480
+01:34:42,484 --> 01:34:47,924
+İndeks neyse, işte şey uzunluklu, M uzunluklu.
+
+481
+01:34:52,435 --> 01:35:01,275
+bir hash tablomuz vardır. İndeks neyse o göze elemanımızı yerleştiririz. Mesela hash function'undan geçti.
+
+482
+01:35:01,275 --> 01:35:20,395
+180 11 00 46. İndeksi 3 oldu. Üçüncü göze 180 11 00 46'yı yerleştiririz. Bu şu anlama geliyor. Bakın ben 180 11 46'yı ararken de
+
+483
+01:35:20,435 --> 01:35:24,355
+Aynı H fonksiyonundan geçireceğim.
+
+484
+01:35:25,735 --> 01:35:27,975
+3 elde edeceğim.
+
+485
+01:35:28,496 --> 01:35:30,675
+Ve 3. göze gidip baktığımda
+
+486
+01:35:31,412 --> 01:35:42,931
+Orada işte 181.0.46 ve bunu bir structure olarak düşünün. Burada devamı var işte adı, soyadı, dinlenmesi, şu suçu, her neyse o tür bilgiler bulunmakta.
+
+487
+01:35:42,931 --> 01:35:52,412
+Şimdi hash'ta bizim yaptığımız işlem bu aslında. Yani yaptığımız işlem bir hash fonksiyonu mu olacak?
+
+488
+01:35:52,952 --> 01:35:59,412
+Bu hash fonksiyonu sayesinde elimdeki bir key'i adres olarak kullanabilir hale geliyor.
+
+489
+01:35:59,412 --> 01:36:12,811
+O keyden bir adres üreteceğim, o adreste de elemanımı saklayacağım. O zaman ideal şartlarda, ama ideal olmayan şartlarda da öyle olduğunu göstereceğim size.
+
+490
+01:36:15,444 --> 01:36:39,963
+Bir elemanı yerleştirmek için yaptığım işin karmaşıklığı da o bir. Bakın insert ediyorsunuz bir elemanı yerleştirmenin, insert etmenin karmaşıklığı da o bir. Bu elemanı aramanın karmaşıklığı da o bir. Yani ben key'imi veriyorum, hash fonksiyonundan geçiyor ve bir sayı üretiyor karmaşıklığı.
+
+491
+01:36:43,444 --> 01:36:47,043
+aradığım sayı buluyorum. Şimdi bu ideal şartlar.
+
+492
+01:36:47,104 --> 01:36:53,124
+Peki, hash fonksiyonu nasıl olmalı? Nasıl bir hash fonksiyonu bulmalıyım?
+
+493
+01:36:53,364 --> 01:37:01,704
+Şimdi genelde şöyle bir batıl inanç vardı. Son derece karmaşık bir hash fonksiyonu olması gerektiğine inanılır.
+
+494
+01:37:01,704 --> 01:37:08,624
+İşte onu onunla çarpayım, bilmem paça böleyim, ondan sonra bilmem eninci dereceden kuvvetini alayım falan öyle bir şey yok.
+
+495
+01:37:14,355 --> 01:37:16,331
+fonksiyon olabilir.
+
+496
+01:37:16,724 --> 01:37:44,724
+Karnışık olmasına gerek yok. İkincisi, konsistent, yani tutarlı olmalı. Her zaman aynı key için aynı hash değeri üretilmeli. Yani 180-11046 için bugün 3 üretirken yarın 9 üretmemeli. Mutlaka aynı hash fonksiyonuyla üretilen değerler her zaman...
+
+497
+01:37:44,724 --> 01:38:10,524
+her zaman aynı olmalı. Şimdi temelde sağlaması gereken şeyler bunlar. H-fonsiyonunun sağlaması gereken şeyler onlar. Peki, şeyler neler? Bizim dikkat etmemiz gereken şeyler neler? Dikkat etmemiz gereken şeyler şunlar. Tablomun büyüklüğü ne olmalı? Benim en elemanım varsa,
+
+498
+01:38:14,195 --> 01:38:16,195
+Mesela bir eleyide
+
+499
+01:38:20,275 --> 01:38:22,275
+En tane elemanım var.
+
+500
+01:38:25,779 --> 01:38:27,779
+M'de table size'ım.
+
+501
+01:38:27,779 --> 01:38:37,612
+N'e göre, M'i nasıl belirlemelim? Yani 10 elemanım varsa, tablomun uzunluğun kaç olmalı?
+
+502
+01:38:42,868 --> 01:38:45,368
+Şimdi ana nokta bu arkadaşlar.
+
+503
+01:38:45,887 --> 01:38:55,108
+Burada bizim başarılı bir hash işlemi yapmamızı sağlayacak.
+
+504
+01:38:58,307 --> 01:39:00,288
+İki tane ana nokta var.
+
+505
+01:39:00,408 --> 01:39:02,488
+Birincisi tablomun uzunluğu ne olacak?
+
+506
+01:39:03,247 --> 01:39:03,868
+Üçüncüsü...
+
+507
+01:39:04,627 --> 01:39:14,327
+Çakışmayı nasıl çözeceğim? Şimdi şöyle düşünün, şöyle bir durum olduğunda ne yapacağım?
+
+508
+01:39:17,407 --> 01:39:29,247
+Diyelim ki 180, 11, 0 kaçtı o? 46, H fonksiyonundan geçti ve işte 3 üretti.
+
+509
+01:39:31,731 --> 01:39:36,551
+Şu benim tablom. Üçüncü geze 180-110-048'i yazdım.
+
+510
+01:39:37,291 --> 01:39:44,871
+180-110-097 da aynı iş fonksiyonundan geçti ve o da 3 üretti.
+
+511
+01:39:45,611 --> 01:39:52,311
+Ne olacak şimdi? Geldi 180-110-097, burası dolu. Ben bunu nereye yerleştireceğim?
+
+512
+01:39:53,363 --> 01:40:14,363
+Kolajun dediğimiz durum oluştu. Üst üste çakışma, pardon, dediğimiz durum oluştu. Şimdi bir hash işleminin başarılı olması iki tane şeye bağlıdır. Birincisi bu tablo büyüklüğünü nasıl seçiyorsunuz?
+
+513
+01:40:15,539 --> 01:40:37,279
+Yok, üçüne de bağlıymış. İkincisi, hash fonksiyonunuzu nasıl seçiyorsunuz? Üçüncüsü de, çakışma problemini nasıl çözüyorsunuz? Bu üçünü doğru planlarsanız, o zaman işte bahsettiğimiz şekilde O1 karmaşıklıkla Insert, Delete,
+
+514
+01:40:38,387 --> 01:40:48,228
+ve search işlemlerinin hepsini bir hash tablosu üzerinde, insert, delete, search işlemlerinin hepsini yapabilir hale gelirsiniz.
+
+515
+01:40:49,268 --> 01:40:54,887
+Şimdi peki bunları nasıl yapacağız? Bundan bahsedelim.
+
+516
+01:40:55,252 --> 01:41:02,552
+Şimdi, önce şeyden bahsedelim. Hash fonksiyonları neler oluyor? Ondan bahsedelim.
+
+517
+01:41:03,012 --> 01:41:05,292
+Şeyleri önümüzdeki haftaya bırakacağım.
+
+518
+01:41:07,992 --> 01:41:12,512
+Kolojim probleminin nasıl çözüldüğünü önümüzdeki haftaya bırakacağım.
+
+519
+01:41:12,512 --> 01:41:16,512
+Çünkü şeye yetişmez. Yani şu anda...
+
+520
+01:41:17,492 --> 01:41:26,152
+Epsil'den yetişmez, kfiki olmuş. Şimdi en temel aslında çok basit iki tane hash fonksiyonumuz var.
+
+521
+01:41:28,752 --> 01:41:32,931
+Birincisi division method ki bu en çok kullanılanın.
+
+522
+01:41:37,452 --> 01:41:39,592
+Hash fonksiyonunuz.
+
+523
+01:41:43,667 --> 01:41:50,380
+Şöyle ki, tablo uzunluğuna göre
+
+524
+01:41:53,811 --> 01:41:59,091
+Tablo sıfırdan M-1'e gidiyor.
+
+525
+01:42:06,068 --> 01:42:08,467
+Pardon, M-1 değil ya, bu nereden çıktı?
+
+526
+01:42:10,268 --> 01:42:18,908
+Bu şey, tablomuzun uzunluğu, sıfırdan M-1'e kadar giderken, 5 fonksiyonu bu kadar.
+
+527
+01:42:19,507 --> 01:42:25,668
+Yani şöyle söyleyeyim, mesela M eşittir 11 bir tablomuz olsun.
+
+528
+01:42:40,979 --> 01:42:43,519
+Yapamadım, 7 yapayım bari, sağamadım buraya.
+
+529
+01:42:46,699 --> 01:42:48,219
+Şöyle bir tablomuz olsun.
+
+530
+01:42:49,899 --> 01:42:51,519
+Diyelim ki...
+
+531
+01:42:52,467 --> 01:43:05,747
+Ki'iniz işte 25 geldi. O zaman H25 dediğimizde ne olacak? 25'in 7'ye göre modu 3 kere 7, 21, 4 olacak.
+
+532
+01:43:05,747 --> 01:43:14,747
+Dördüncü göze 25'i yerleştirdiniz. Mesela işte H...
+
+533
+01:43:17,876 --> 01:43:26,975
+Ne bileyim, iki dediğinizde ikinci göze şeyi yerleştirdiniz, ikiyi yerleştirdiniz.
+
+534
+01:43:26,975 --> 01:43:29,975
+İşte Heş...
+
+535
+01:43:30,387 --> 01:43:51,387
+7 dediğinizde, 7 mod 7'den ötürü 0, 0. göze 7'yi yerleştirdiniz. Şimdi bu problemsiz olursa, dediğim gibi çakışma durumunu daha sonra anlatacağım. Mesela şimdi 4 gelseydi, pi'niz 4 olsaydı ne olacaktı?
+
+536
+01:43:58,387 --> 01:44:07,387
+çözde yerleşmek isteyecekti ama burada 25 var. O zaman bizim bir şekilde bu çatışma problemini çözmemiz gerekecek.
+
+537
+01:44:07,387 --> 01:44:10,315
+Buraya kadar sonraki siz bir şey var mı?
+
+538
+01:44:15,796 --> 01:44:16,796
+Şey diyeceğim hocam.
+
+539
+01:44:17,976 --> 01:44:18,396
+Efendim?
+
+540
+01:44:19,115 --> 01:44:31,536
+Tabloyu seçerken, yani nasıl mesela kullandığımız hala hazırdaki H-Table'lar kendi kafasına göre H-Table'ın boyutunu mu seçiyor, table'ın?
+
+541
+01:44:32,212 --> 01:44:59,392
+Şimdi kullandığımız hash table diye bir şey yok. Java'da, Java'da kullandıklarınızı hiçbir şekilde karıştırmayın. Bu bir dizi. Bunu siz tanımlıyorsunuz. Yani ben şu anda size algoritmik olarak bir hash tablosunun nasıl tasarlanacağını anlatıyorum. Bunu şeyle karıştırmayın. Dillerin size sağladığı hash tablosu, hashing özellikleriyle karıştırmayın lütfen. Bu sıradan bir dizi.
+
+542
+01:45:00,212 --> 01:45:19,752
+Bey, tamam mı? Senin diyelim ki şöyle bir A dizin vardı. Bir A dizin vardı. 7, 2, 25, 9, bu 4 sayıdan oluşan bir A dizin vardı. Sen bu A dizindeki elemanları Dijkstra adlusuna yerleştiriyorsun.
+
+543
+01:45:20,224 --> 01:45:27,703
+ve hash tablosuna yerleştirdikten sonra artık bunlara doğrudan erişebilir hale geliyorsun.
+
+544
+01:45:28,304 --> 01:45:33,203
+Dolayısıyla hash tablosu dediğin şeyin A dizisinden bir farkı yok.
+
+545
+01:45:33,344 --> 01:45:41,144
+Bu da bir dizi. Adına ne dersen de, istersen [öğrenci]'da yani adına ne dediğinin istersen hashing de falan.
+
+546
+01:45:41,384 --> 01:45:45,983
+Yani ne istersen diyebilirsin. Bu sıradan bir dizi. Tamam mı?
+
+547
+01:45:46,644 --> 01:46:05,304
+Ve sen burada onun nasıl hesaplanacağını göstereceğim size. Bu tablonun size 4, n'in 4. Sen en uzunluklu bir tablo tanımlıyorsun. Yani ana bizim 4 uzunluklu, en uzunluklu bir tablo tanımlıyorsun.
+
+548
+01:46:12,307 --> 01:46:30,667
+hash tablonun uzunluğunun, ana dizinin uzunluğundan daha büyük olması gerekir değil mi? Hemen düşünmemiz gereken şey bu çünkü eğer aynı boyutta yaparsan çakışma ihtimalini arttırırsın. Ne kadar boş yer...
+
+549
+01:46:30,671 --> 01:46:38,112
+Çok olursa hash tablonda çakışma ihtimali o kadar düşük olur. Ama orada da hemen ikinci soru geliyor aklıma.
+
+550
+01:46:38,931 --> 01:46:46,511
+Bizim algoritma tasarlarken hem yer hem zaman kazanma kaygımız yok muydu? Yerimiz sonsuz değil.
+
+551
+01:46:46,992 --> 01:46:58,212
+O zaman tablo uzunluğunu n'e bağlı olarak ne belirlersek hem az yer kullanmış oluruz hem de arama yaparken
+
+552
+01:46:58,671 --> 01:47:13,212
+efektif bir şekilde N'e bağlı olmadan sabit işlemle arama, insert veya bleed yapabiliriz. Sorunun cevabı oldu mu?
+
+553
+01:47:15,712 --> 01:47:16,752
+Sayılır.
+
+554
+01:47:17,731 --> 01:47:19,551
+Sayılmayan kısmını söyle.
+
+555
+01:47:21,131 --> 01:47:24,952
+Siz devam edin, ben soru kalırsa bir daha sorarım.
+
+556
+01:47:26,228 --> 01:47:52,287
+Peki, şimdi Dilection metodu birinci kullanabileceğim yöntem. İkincisi de Multiplication metodu. Şu anda sadece şeyi öğreniyoruz. Yani en temel iki tane yöntem var. Bir tabloya herhangi bir değeri dönüştürüp yerleştirmek için. O da şu Multiplication metodunda da fonksiyon şu şekilde.
+
+557
+01:47:53,043 --> 01:47:56,503
+Verilen bir dönüştürülecek key için
+
+558
+01:47:56,503 --> 01:48:02,483
+M, bu da yine table size'ı
+
+559
+01:48:02,483 --> 01:48:04,163
+M çarpı
+
+560
+01:48:04,163 --> 01:48:08,363
+key çarpı A
+
+561
+01:48:08,363 --> 01:48:11,103
+mod 1
+
+562
+01:48:14,771 --> 01:48:37,771
+şeklinde. Bu böyle biraz daha değişik bir şey. A, kunt tarafından, şey, meşhur kunt var ya, onun tarafından şöyle bir sabit seçilmiş, en iyi değerim bu olduğunu ortaya koymuş. Mesela basit örnek olması açısından table size'ımız 10.000 olsaydı,
+
+563
+01:48:38,176 --> 01:48:43,176
+Key'nizde yani tabloyu yerleştirmek istediğiniz sayı...
+
+564
+01:48:51,667 --> 01:48:56,527
+1, 2, 3, 4, 5, 6 olsaydı onu şu şekilde yerleştiriyorsunuz.
+
+565
+01:49:03,091 --> 01:49:26,851
+10.000 x 1, 2, 3, 4, 5, 6 x 0, 61, 80, 33 mod 1, mod 1 şeyi verir, neyi verir mod 1 biliyor musunuz? Sizce? Tek ya da çift olmasın mı? O 2, mod 2. Mod 1 sizce neyi verir?
+
+566
+01:49:28,115 --> 01:49:31,716
+Şu sayının bire göre modunu alınca ne çıkar karşınıza?
+
+567
+01:49:34,336 --> 01:49:35,836
+Ondalık kısmı hocam.
+
+568
+01:49:36,436 --> 01:49:37,916
+Harika, kesinlikle öyle.
+
+569
+01:49:39,256 --> 01:49:43,115
+Çünkü bire göre modunu aldınız, bire böldüm, kalan nedir?
+
+570
+01:49:43,916 --> 01:49:47,216
+0-0, 41, 151'dir.
+
+571
+01:49:48,296 --> 01:49:51,115
+Bunu 10.000'le çarparsak...
+
+572
+01:49:57,971 --> 01:50:00,971
+ve alırsak
+
+573
+01:50:03,971 --> 01:50:06,372
+tam kısmını alırsak bu işaret
+
+574
+01:50:07,412 --> 01:50:10,172
+Şu tam kısmını gösteriyor.
+
+575
+01:50:10,912 --> 01:50:15,692
+Yani bu yapabileceğiniz en karmaşık cache fonksiyonu bu olabilir.
+
+576
+01:50:15,811 --> 01:50:18,152
+Zaten iki tane fonksiyon temelde kullanılıyor.
+
+577
+01:50:18,292 --> 01:50:22,632
+Başka fonksiyonlar da kullanabilirsiniz ama en temel kullanabileceğiniz,
+
+578
+01:50:22,632 --> 01:50:26,932
+çünkü karmaşık fonksiyonunun karmaşık olmasına gerek yok.
+
+579
+01:50:27,231 --> 01:50:33,492
+Önemli olan sizin tablonunuzun boyutunun ne olacağı ve division metodunda,
+
+580
+01:50:34,552 --> 01:50:35,391
+yani aslında hep öyle.
+
+581
+01:50:35,412 --> 01:50:43,132
+Tablo uzunluğunuzun ne olacağı bütün şeyi belirliyor. Çakışmayla ilgili sıkıntıları o belirliyor aslında.
+
+582
+01:50:43,712 --> 01:50:53,752
+O zaman burada yaptığınız şey, 1-2-3-4-5-6 diye bir sayınız vardı ve bunu tabloya yerleştirmek istiyorsunuz.
+
+583
+01:50:53,752 --> 01:51:03,132
+Bu sizin tablonuz. Şu 1-2-3-4-5-6'da yerleştirmek istediğiniz sayınız. Bu gidecek 41. göze.
+
+584
+01:51:03,412 --> 01:51:10,891
+Bu tablonun yani dizinin aslında 41. gözüne 1, 2, 3, 4, 5, 6 sayımız yerleşecek.
+
+585
+01:51:12,243 --> 01:51:23,103
+Ve böylece siz bunu aramak istediğinizde, zamanı gelip de bir sebeple aramak istediğinizde, 1-2-3-4-5-6'yı yine aynı hash fonksiyonundan geçireceksiniz.
+
+586
+01:51:23,563 --> 01:51:29,323
+O 41 üretecek, 41. gözle de 1-2-3-4-5-6 sayısına ulaşmış olacaksınız.
+
+587
+01:51:29,863 --> 01:51:35,603
+Şimdi burada tekrar söylüyorum, burada önemli olan çakışma problemini iyi çözmeniz.
+
+588
+01:51:40,243 --> 01:52:08,103
+Eninde, sonunda siz ne kadar şahane bir eş fonksiyonu kullanırsanız kullanın, başka bir sayıda aynı adres değerini üretecek. Yani birisi daha 41'i üretecek. Burada önemli olan o zaman ben bu 41 geldiğimde tekrardan 41. adreste dolu elimdeki elemanı nereye yerleştireceğim, nasıl yerleştireceğim bunları iyi belirlemem gerekiyor.
+
+589
+01:52:08,243 --> 01:52:18,203
+ki efektif bir hash tablon olsun. Buraya kadar sormak istediğimiz bir şey var mı? Anladınız mı anlattıklarımı?
+
+590
+01:52:18,203 --> 01:52:22,203
+Evet hocam.
+
+591
+01:52:22,836 --> 01:52:50,756
+Güzel. Dediğim gibi şey eğlenceli, tabloya yerleştirme vesaire kısımları eğlenceli nasıl yapılacağı önümüzdeki hafta buradan devam edeceğiz. Şimdi ben bu dersi kapatacağım. İkinci şeyi açacağım, o uygulama dersini açacağım. Oradan da Sevgi Hanım size şey yapacak. Şimdi ara vereceğim. Üçte başlıyor. Bir kısa zamanımız kaldı. Sevgi Hanım size şeyi anlatacak işte bu.
+
+592
+01:52:50,836 --> 01:53:00,896
+ödev verdiğimiz sorunun çözümünü anlatacak. Hepinize güzel bir gün diliyorum. Haftaya görüşmek üzere o zaman. İyi günler.

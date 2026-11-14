@@ -1,0 +1,1643 @@
+1
+00:03:37,524 --> 00:03:39,276
+Merhaba arkadaşlar, ses geliyor mu?
+
+2
+00:03:44,243 --> 00:04:01,484
+Geliyor hocam sesiniz. Tamam. Bir iki dakika bekleyelim. Bak, burada ayarlayayım. Sabah evde, öğleden sonra burada olduğum için bazı şeyleri ayarlamak gerekiyor.
+
+3
+00:04:35,987 --> 00:04:37,987
+[öğrenci] tamam, bakalım.
+
+4
+00:04:38,987 --> 00:04:41,987
+Ben de onu vurayım, burada bir tane vardı.
+
+5
+00:05:42,579 --> 00:06:04,779
+Bu hesap makinesi'ye başlayalım. Bendeki olan şuydu. Bunun bir alt modeli var. Bilgisayar hesaplamalar. Şuradan şey yapabilirsiniz işte. Bu markanın dışında aynı kodla farklı alternatifler de var da.
+
+6
+00:06:05,716 --> 00:06:11,115
+Bunun güzelliği şu, denklem takımlarını otomatik olarak çözdürebiliyorsunuz.
+
+7
+00:06:11,836 --> 00:06:17,516
+İşte üç tane üç bilinmeyenli denklem girerek veya dört bilinmeyenli denklem de çözüyor.
+
+8
+00:06:17,915 --> 00:06:20,915
+Beş veya altıyı çözmüyor olabilir, onu bilmiyorum.
+
+9
+00:06:21,316 --> 00:06:24,316
+Bunların kapasiteleri, bellekleri yeterli değil.
+
+10
+00:06:24,316 --> 00:06:26,115
+O işi yapıyor.
+
+11
+00:06:26,316 --> 00:06:30,115
+İşte türev, integral, trigonometri gibi işlemleri yapıyor.
+
+12
+00:06:30,740 --> 00:06:40,740
+Şu button olduğu yerde zoom yapabiliyor muyum? Şurada mod kısmına girildiğinde farklı şey var. Bunların data sheetine bakarak alın arkadaşlar.
+
+13
+00:06:40,740 --> 00:06:48,740
+Yani doğrudan sipariş vermeyin, bunların şeyleri vardır bakın. Fonksiyonel feature'ları demiş, neler yapıyor, neler yapamıyor.
+
+14
+00:06:48,740 --> 00:06:53,740
+Not-based on dışında herhalde şey alıyormuş.
+
+15
+00:06:54,420 --> 00:07:16,420
+scientific olarak istatistiksel fonksiyonlar varmış, hesaplama fonksiyonları varmış, bakın neleri disipli edip edemediğini şöyle biraz okursanız vardır. Bunu farklı bir şey olarak da bakabilirsiniz. Alternatif diyelim.
+
+16
+00:07:21,300 --> 00:07:36,500
+Burada sorulmuştu ayniden. Yani daha ekonomist olarak illaki bir şeyler vardır. Çünkü önceden piyasada bu tekeldi birazcık. Sonra farklı markalar da çıkmaya başladı.
+
+17
+00:07:36,500 --> 00:07:47,540
+Tabii neden alacağınız da önemli. Ne için sordun? Bu ders için sorduysam bence bu ders, bu dönem sadece final sınavında lazım olabilir.
+
+18
+00:07:48,435 --> 00:08:07,435
+Belki devre teorisi dersinde ihtiyarımız olabilir. Onun dışındaki derslerde, fizikte falan kullanıyor musunuz? Yani o dersleri de üniversite sınavları için. Üniversite hazırlık mı? Üniversitenin derslerin sınavları için.
+
+19
+00:08:11,475 --> 00:08:17,235
+Hah, yery iletken fizik, tamam. Üniversite sınavı deyince aklımıza doğrudan ÖSS'ye geliyor, tamam.
+
+20
+00:08:17,235 --> 00:08:31,475
+O zaman şöyle diyeyim, benim dediğime bağlı kalmanızı istemem. Diğer derslerin gereksinimlerine uygun bir makine seçmeniz en doğrusu. Belki kapsamlı bir şey gerekebilir.
+
+21
+00:08:31,827 --> 00:08:40,427
+Bizim sayısal analizde toplama, çıkarma, çarpma, bölme yeterli oluyor genel anlamda. Çünkü yaptığımız algoritmalar derste malumuz.
+
+22
+00:08:40,427 --> 00:08:47,827
+Onlardan ibaret. Bir şeyin integralini alacaksak almıyoruz. Daha basit yollarla almaya çalışıyoruz yaklaşım yöntemleri.
+
+23
+00:08:47,827 --> 00:08:55,427
+Ama diğer devre teorisi, bahsettiğimiz yer iletken fiziği gelecek dönemki...
+
+24
+00:08:55,539 --> 00:09:03,939
+Gelecek seneki elektronik devreler gibi derslerde belki biraz daha farklı fonksiyonlara ihtiyaç duyabilirsiniz.
+
+25
+00:09:03,939 --> 00:09:11,379
+Devre teorisinde şey vardı, bu Mesh Current Node Analizi falan var. Gördünüz mü onları?
+
+26
+00:09:11,379 --> 00:09:16,019
+Devrenin mesela akım denklemlerini çıkartıyorsunuz.
+
+27
+00:09:17,395 --> 00:09:25,275
+Şöyle devre çizmeye çalışayım. Burada kapasitör var, burada başka bir şey var. Bu buradan giriyor, bu buradan çıkıyor.
+
+28
+00:09:25,275 --> 00:09:35,275
+Karmaşık, hiç de sevmem bunları. Böyle bir sürü şeyler var. Şurada bir self koyalım. Böyle bir devre olur mu bilmiyorum da.
+
+29
+00:09:35,275 --> 00:09:43,195
+Şuradan geçen akımı, buradan geçen akımı, şuradaki akımı, şuradaki akımı denklem şeklinde yazıp, dört bilmeyeni dört tane denklem...
+
+30
+00:09:43,264 --> 00:09:48,544
+Sonra denklemleri bulup çözgüne gidiyorsunuz. Pardon bir saniye arkadaşlar.
+
+31
+00:10:21,460 --> 00:10:48,940
+arkadaşlar, Banhoca konuda, dersle alakalı konuda aradı da. İşte bu tarz gereksinimlere göre bir cihaz seçmeniz iyi olur. Bazen işte yanlış alınıyor. Yanlış alınınca hani iadesi de mümkün değilse, şu anda bunlar belli bir yani önceden 5-10 lira olan şeyler, şu an maalesef biraz önceki ürüne bakarsanız 300-400 lira olabilir. Boş boşuna yani masraf etmeyin derim.
+
+32
+00:10:49,940 --> 00:11:14,940
+Bakalım ne kadarmış mesela. Ben öğrenciyken işte temin etmiştim. O zamanlar 20 liraya bu şeyi almıştım bakın 400 küsürlerde. Şu tarz işte elektronik ticaret şirketlerinden de yani yerlerinden de ararsanız hesap makinesi. Burada fiyata göre sıralayın mesela.
+
+33
+00:11:15,923 --> 00:11:30,524
+O fiyata göre sıraladıklarınızın içerisindeki şu fonksiyon, FX ile başlayan fonksiyon şeylerine, özelliklerine bakarsanız, işte Parklut marka da koyan mesela şeydir, biraz daha böyle çakma tarzı diyebileceğimiz şeyler olabilir.
+
+34
+00:11:30,524 --> 00:11:38,963
+Parklut platformlardan da arayın, hemen ilk gördüğünüz ticaret sitesinden de aramayın ama şu sizin için önemli.
+
+35
+00:11:40,532 --> 00:11:45,292
+Biraz böyle uzun bir cevap oldu belki ama herhalde derdimi anlatabilmişimdir.
+
+36
+00:11:49,652 --> 00:11:51,652
+Başka sorunuz var mı?
+
+37
+00:11:53,652 --> 00:11:57,652
+Peki, dersimiz sonrasında sınavla alakalı hatırlatmalarım olacak.
+
+38
+00:11:58,652 --> 00:12:02,652
+Sınav programı bugün herhalde ilan edilmiş olabilir, bize geldi.
+
+39
+00:12:03,652 --> 00:12:05,652
+Siz duydun mu, gördünüz mü diğerlerden?
+
+40
+00:12:13,587 --> 00:12:34,587
+Şu an bakıyor musunuz? Haber yok. Muhtemelen şey, önce hocalar tarafına ilan edilmiştir. Tabii güncelleme yapılabilir. Onun için şimdilik ben bir şey söylemeyeyim. Neyse. Evet, sayısal integral'i konuşmuştuk. Trapez yönteminin çok basit bir yöntem olduğunu ifade ettik. Bu oradan.
+
+41
+00:12:34,868 --> 00:12:44,028
+verilen değerlere göre integral'i bir diziye yerleştiriyoruz. Bu dizide ne oluyor? Fonksiyonun görüntü değerleri oluyor. Daha sonra
+
+42
+00:12:44,028 --> 00:12:55,108
+dizinin ilk değeriyle son değerini bir katına alıyoruz. Aradaki bütün değerlerin iki katına alıyoruz. Daha sonra bunu da bütün değerlerin toplamını h bölü 2 ile
+
+43
+00:12:55,108 --> 00:12:58,868
+çarpıyoruz. Sonuç çıkıyordu. Örneğin falan yapmıştık.
+
+44
+00:12:58,868 --> 00:13:00,868
+Şimdi bu
+
+45
+00:13:01,652 --> 00:13:08,652
+Çok güzel sonuçlar veren basit bir yöntem. Bundan biraz daha karmaşık olan bir yöntemimiz var.
+
+46
+00:13:08,652 --> 00:13:10,652
+Bu niye böyle oldu?
+
+47
+00:13:10,652 --> 00:13:12,652
+Şuradan silelim.
+
+48
+00:13:16,083 --> 00:13:41,083
+Şimdi Simpson kuralı, bu 1 bölü 3 ve 3 bölü 8 diye gösteriliyor. Mantığını şöyle bir izah etmeye çalışayım arkadaşlar. Şöyle herhangi bir fonksiyonumuz olsun. Bu fonksiyonun a ile b aralığındaki integralini almak demek, yine alan hesabı yapmak demek. Bu işi yaparken şöyle bir doğru çizmek yerine
+
+49
+00:13:41,524 --> 00:14:04,460
+Acaba bu noktalardan geçecek bir eğri, ikinci dereceden bir eğri çizsek? Hatayı daha da azaltabilir miyiz demişler. İkinci dereceden eğriyi de şu şekilde bir polinom kabul edelim demişler. Böyle bir kabul yaptığında şu noktalardan geçecek belki. Tabi burada bir üçüncü nokta da olacak.
+
+50
+00:14:04,563 --> 00:14:17,563
+Bu bir ikinci dereceden fonksiyon. Şimdi ikinci dereceden fonksiyon, fonksiyonun kendisi, orijinal fonksiyonumuz ne olursa olsun, yaklaşım için kullanacağımız şey şöyle bir basit polinom. Bu integralı aldığımızda nedir?
+
+51
+00:14:17,563 --> 00:14:30,059
+a çarpı x küp bölü 3 artı b çarpı x kare bölü 2 artı c çarpı x. Bu formata dönüyor yani şuraya dönüyor.
+
+52
+00:14:30,515 --> 00:14:43,316
+Bunun yerinde sınırlarımızı yerine koyarsak, a ve b demişiz, a ve b'ye h ve eksi h dersek, işte bir eşit uzunluklu eşit bir şey diyelim.
+
+53
+00:14:44,076 --> 00:14:51,316
+Birinde h koyduk, öbüründe eksi h koyduk. Ne oluyor? Burada bazı terimler birbirine götürülecek. a çarpı h üç, üç.
+
+54
+00:14:51,956 --> 00:15:09,475
+Sonra A çarpı H küp bölü 3, artı B çarpı H kare bölü 2, artı C çarpı H, eksi şu H küpler, biraz önce olduğu gibi bir şey, eksi A çarpı H küp bölü 3, şu eksiyle şu eksiye şuraya artı yapacak.
+
+55
+00:15:09,475 --> 00:15:17,635
+Bu eksi H kare, şu eksi H kareyi götürecek. Buradan da bir tane artı C H gelecek. Yani ifade şuna dönecek.
+
+56
+00:15:18,131 --> 00:15:31,531
+Ve bu da en genel haliyle bizim H dediğimiz ifade H bölü 3 artı, şey çarpı, iki çarpı AH kare artı C'ye dönüyor. Şurada bir düzenleme yaptığımızda bunu biliyoruz.
+
+57
+00:15:31,531 --> 00:15:43,531
+Hocam bu AH, şey H nereden geldi? Şimdi biz bir A noktası ile B noktası arasını belli bir H de şeyine dönüştürüyoruz. Yaptığımız şey sadece bu.
+
+58
+00:15:43,531 --> 00:15:45,931
+İşte sıfırla bir arası dedik mesela.
+
+59
+00:15:46,323 --> 00:15:53,923
+Bu numan, işte şurayı 0 dersek, şurası 0.5 olursa, şurası 1 olursa, yani buradaki H değerlerini buna dönüştürmek mümkün.
+
+60
+00:15:53,923 --> 00:16:06,124
+A ve B'den de çıkar da, yani şurada değişkenleri yerine A ve B verdiğinizde daha karmaşık bir şey çıkıyor ama bunu H'a çevirdiğimizde, bir önceki örneklerde olduğu gibi daha basit bir denklem çıkıyor.
+
+61
+00:16:06,124 --> 00:16:11,724
+Bu yaklaşımın en basit hali. Tabi bu arada istersek şunu da yapabiliyoruz.
+
+62
+00:16:12,244 --> 00:16:39,324
+A ve B aralığında tek bir tane nokta bulmak yerine, yani tek bir tane eğri çizmek yerine, burayı mesela ikiye bölsek, A, B, C diyelim. Şu aradan bir eğri, bu aradan bir eğri çizip, o ikisini ayrı ayrı hesaplamak mümkün. İkiye değil de dörde bölebilirsiniz, daha farklı sayılara, aralıklara bölebilirsiniz. Ama aynı trapezda olduğu gibi bir formül çıkacak. Birazdan o formülü geleceğiz.
+
+63
+00:16:41,043 --> 00:16:58,244
+Denklemin kat sayılarını bilmediğimiz için burada şöyle bir ön işlemimiz var dikkat etmemiz gereken arkadaşlar. Şimdi A sayımız belli veya buna H-H dedik, B'de H oldu. Bizim şu A ve B'yi tespit etmemiz gerekiyor. Bunu nasıl yapacağız? Fonksiyon elimizde var zaten.
+
+64
+00:17:06,324 --> 00:17:18,324
+Şu y değerlerine karşılık gelen değerlerdir. Yani şurada a ve b değerlerini iki tane iki bilinme yerine denkleme dönüştürecek şekilde yerine koyma işlemi yapacağız. Yazalım.
+
+65
+00:17:18,324 --> 00:17:31,324
+İfadede eksi h koyduğumuzda, tabii üç tane denklem lazım çünkü burada a, b ve c'ye gerekiyor maalesef. İfadede eksi h koyduğumuzda a çarpı h kare eksi b çarpı h artı c.
+
+66
+00:17:31,731 --> 00:17:39,931
+Bu eksi h'ın fonksiyonundaki görüntüsü, buna y0 dedik. Bir de 0 koyarız. 0 ne yapıyordu? Doğrudan sabit terimi bulmayı sağlar.
+
+67
+00:17:39,931 --> 00:17:50,132
+x'in yerine 0 koysak, öyle değil mi? Doğrudan sabit terimi buluruz, o bize c'yi gösterir. Bir de h koyduğumuzda a çarpı h kare artı vh artı c.
+
+68
+00:17:50,132 --> 00:17:59,132
+Şimdi bu iki tarafı, ikisini taraf tarafı topladığımızda iki a h kare, şurada olduğu gibi, artı 2c geldi.
+
+69
+00:17:59,316 --> 00:18:06,916
+C'yi de zaten şurada bulmuştuk. Fonksiyonda F'in yerine 0 koyduğumuzda elde ettiğimiz şeydir.
+
+70
+00:18:06,916 --> 00:18:17,916
+Bunu da yerine koyduğumuzda A sayısını da bulamıyoruz. A sayısı ne oluyormuş? Y0, yani 0 koyduğumuzdaki değer,
+
+71
+00:18:17,916 --> 00:18:25,916
+eksi iki tane Y1 artı Y2. Şu A'yı yalnız bıraktığımızda elde edeceğim şey A değeri olacaktır.
+
+72
+00:18:26,003 --> 00:18:29,403
+Hasılı bizim bu toplam alan değerimiz
+
+73
+00:18:29,403 --> 00:18:36,803
+H bölü 3, y0-2y1 artı y2 artı 6y1 formunda.
+
+74
+00:18:36,803 --> 00:18:42,403
+Şurayı da toparlarsak H bölü 3, y0 artı 4y1 artı y2.
+
+75
+00:18:42,403 --> 00:18:45,203
+Bakın bu formata geliyor. Şimdi burada y0
+
+76
+00:18:45,203 --> 00:18:49,803
+çok basit bildiğimiz bir şey, integralin alt sınır değeri.
+
+77
+00:18:50,420 --> 00:18:56,620
+Y1 integralin tam sıfırdaki değeri, aslında tepe noktası gibi de düşünülebilir belki.
+
+78
+00:18:56,620 --> 00:19:00,420
+Y2 de H değeri, üst sınır değeri.
+
+79
+00:19:00,420 --> 00:19:07,420
+Üç tane nokta üzerinden şey yapıyoruz. Şuradaki 3 Simpson'ın 1 bölü 3'üne karşı.
+
+80
+00:19:07,420 --> 00:19:18,092
+Bunu biraz daha geliştirmek için, yani aynı diğer trapezi yönteminde olduğu gibi, şu alt sınırla üst sınır arasında
+
+81
+00:19:18,132 --> 00:19:44,492
+farklı farklı bölmelendirmeler yapabilir. İşte deriz ki bu arayı A noktasından B noktasına neye bölelim? 10 tane parçaya bölelim. O zaman şu aralara A artı H, A artı 2H, A artı işte 9H dediğimizde A ile B arasında 10 tane parçaya bölmüş olursunuz. Bu aralıktaki her bir alanı da S1, S2 tarzında alanlar dersek işte bu alanları ayrı ayrı toplayıp
+
+82
+00:19:45,683 --> 00:20:01,083
+Genel bir toplam formülü bulduğunda neyi buluyoruz? Bu daha az hata içeren, gerçeğe daha yakın bir alan değeri bulur. Şimdi S1'deki alana bakacak olursak, tabi burada kesikli çizgilerle ifade edilmiş değerler.
+
+83
+00:20:01,083 --> 00:20:05,683
+S1'deki alan y0 artı 4y1 artı y2.
+
+84
+00:20:06,483 --> 00:20:16,723
+Yani şu y0 dediğimiz şuradakinin görüntüsü fonksiyonda. Bu şu noktanın görüntüsü y1, y2 de bu noktanın görüntüsü oluyor.
+
+85
+00:20:16,723 --> 00:20:24,324
+Formülde biraz önceki formülde yerine koyduğumuzda ilkiyle sonuncunun bir katı ortadakinin dört katı.
+
+86
+00:20:24,324 --> 00:20:27,844
+Sonra y2 için yazalım hatta şöyle bir yazayım bir tane.
+
+87
+00:20:32,915 --> 00:20:57,315
+y2 artı y3 artı y4. Bakın 0, 1, 2, 2, 3, 4. y3 nasıl gidecek? Buradan y4 diye gideceğiz artık. Evet y4 artı 5y5 artı y6 bu şekilde gidiyor.
+
+88
+00:20:57,503 --> 00:21:08,503
+Yani y2n-2 artı 4y2n-1 artı y2n şeklinde. Peki şurayı şöyle toplarsak ne olur?
+
+89
+00:21:08,503 --> 00:21:20,503
+y0 bir tane, baştaki, sondaki bir tane. y0 artı y6. y1 kaç tane? 4 tane.
+
+90
+00:21:24,915 --> 00:21:30,915
+y2 kaç tane veya şey yakın şurada 5 olmaz ya şurası da 4 olacak.
+
+91
+00:21:32,915 --> 00:21:46,915
+4 y3 var artı 4 y5 var artı y2'leri yazalım iki tane y2 artı iki tane y4 var.
+
+92
+00:21:48,915 --> 00:21:52,364
+Şimdi baştaki ve sondakini hariç tuttuğumuzda arkadaşlar
+
+93
+00:21:52,531 --> 00:22:03,931
+1, 3, 5 dikkat ederseniz tek olanların hepsinin dört katını alıyoruz. Baştaki ve sondakiler hariç, mesela bunu bir sonrakinde yazarsak ne olur?
+
+94
+00:22:03,931 --> 00:22:14,652
+y6 artı 4y7 artı y8. Kaç tane parçaya veriyorsak ona göre değişecek. Bu sefer y6 iki tane oldu.
+
+95
+00:22:14,652 --> 00:22:20,251
+Sondakinden ve baştakinden hariç tüm çiftlerde iki katı gidiyor.
+
+96
+00:22:21,971 --> 00:22:47,291
+Mantığı görebildik mi? Bu toplamada ne yapacağız? Kaç buluşuyuş ile çarpacağız. Anlamadım diyen var mı burayı? Hocam bir daha bahsedebilir misiniz? Tamam. Şimdi, biraz önceki şu çözümümüz, herhangi bir fonksiyonun, şöyle bir fonksiyonun var.
+
+97
+00:22:47,988 --> 00:22:51,988
+A noktası ile B noktası arasındaki integral almak için
+
+98
+00:22:51,988 --> 00:22:56,988
+bir tane parabol uydurmaya dayanıyor. Şurada gösterdiğim için.
+
+99
+00:22:56,988 --> 00:23:01,988
+Bu bir parabolu uydurduğumda benim A, B ve C değerlerini bulursam
+
+100
+00:23:01,988 --> 00:23:05,988
+şu integral hesaplamam çok basit. Çünkü doğrudan x'i yerine koyacağım.
+
+101
+00:23:05,988 --> 00:23:08,988
+Sınırları da yerine koyduğumda çok rahat bulabileceğiz.
+
+102
+00:23:09,619 --> 00:23:21,900
+Şimdi A, B ve C değerlerini bulabilmek için integralin sınırlarına şu değerleri yazarsak, mesela bir A noktasına eksi H diyelim, B noktasına da artı H diyelim, genelde tam uç noktalar olacak.
+
+103
+00:23:21,900 --> 00:23:31,900
+Bunları yerine koyduğumuzda şu A ve C değerlerini bulabiliyoruz. A ve C değerleri ne geliyormuş? Yerine koyduğumuzda elde ettiğimiz toplam sonuç H bölüm 3.
+
+104
+00:23:32,339 --> 00:23:38,899
+y0-2y-4y1-4y2. Şu formülü biliyoruz. Buraya kadar anlamadığım bir şey var mı?
+
+105
+00:23:39,619 --> 00:23:40,619
+Yok hocam.
+
+106
+00:23:41,259 --> 00:23:47,259
+Şimdi bu tek bir tane AB aralığında tek bir parabol uydurmaya dayalı bir yöntem.
+
+107
+00:23:47,819 --> 00:23:55,579
+Şimdi bu şekilde değil de burada n tane aralığım olsa diyorum. Yani AB'yi aynı trapezda olduğu gibi
+
+108
+00:23:55,955 --> 00:24:00,955
+tek bir parabole yetinmiyoruz, daha fazla parabole yapalım. O zaman şunun yerine
+
+109
+00:24:00,955 --> 00:24:09,955
+şuradan bir parabole geçireceğiz, şuradan bir parabole, şuradan bir parabole, buradan bir parabole geçirecek şekilde yapalım diyoruz.
+
+110
+00:24:09,955 --> 00:24:17,955
+Her bir parabolu kendi içinde değerlendirdiğimde, bakın şu a noktası bunun sıfırı, yani y sıfırı.
+
+111
+00:24:18,740 --> 00:24:38,240
+Şurası tam ortada bir tane y1'i var. Yani fonksiyonun görüntüsü, öyleyse. Şurada da y2 var. Şimdi bu y2, şu birinci parabolun en uç noktası iken ikinci parabolun başlangıç noktası gibi oluyor. Alt sınırı gibi oluyor. Birinin üst sınırı, birinin alt sınırı. Öyle değil mi? Bunları...
+
+112
+00:24:39,955 --> 00:25:00,955
+Şöyle kesikli çizgilerle alt parçalara bölersek, bak şu bir noktamız, şurası B noktamız. Ben burayı dedim ki N tane parçaya böldüm. Yani H uzunluklu diğer noktalarımı ürettim. Şimdi bu noktaların her birinin fonksiyondaki değerini bulabilirim. Çünkü elimde fonksiyon ne kadar karmış olursa olsun onun sonucunu bulabilmek kolay.
+
+113
+00:25:07,635 --> 00:25:34,836
+Burada bir sorunumuz var mı? Berzah? Yok hocam. Tamam. İşte burada yapacağımız şey, şu aradaki polinomun alanıyla, şuradaki polinomun alanıyla, sonraki polinomun alanıyla hepsini toplamak. Formülde birinci polinomun alanını yazarsak, h bölü 3 artı, y 0'ın kendisi, y 1'in 4 katı, y 2'nin 2 katı. Biraz önceki formülden geliyor. Buna S1 dedik.
+
+114
+00:25:35,155 --> 00:25:56,275
+Şuraya. Aynı şeyi S2 için yaptığımda bunun y0 nesnesi artı y2 yani bunun ilk alt sınırı şey y2 üst sınırı y4 ortası da y3 olsun. y2 artı 4 y3 artı y5. Bir sonrakini yazarsak işte y4 artı 4 y5 artı y6 bu mantıkla gidiyor. Tamam mı?
+
+115
+00:25:57,076 --> 00:26:04,076
+Şimdi bunu şöyle toplarsak, mesela bizim fonksiyonumuz A'sı şurası olsun, B'si burası olsun, şu kısmı göz araylıyorum.
+
+116
+00:26:04,076 --> 00:26:12,076
+Birinci aralığın bu, ikinci aralığın bu, üçüncü aralığın bu. Bunların hepsini toplama integralinin sonucunu verecek. Bunları topladığımda neyi görüyorum?
+
+117
+00:26:12,076 --> 00:26:21,036
+Bir tane y0 var, bir tane y6 var. Yani başlangıç ve bitişler bir kat. Aradaki tekler...
+
+118
+00:26:22,516 --> 00:26:33,516
+y1 artı, y3 artı, y5 dört kat. Bunların dışındaki çiftler y2 artı, y4 de iki kat oluyor. Bu böyle devam eder gider.
+
+119
+00:26:33,516 --> 00:26:43,516
+Eğer ben bu aralığı genişletirsem şu y6 yerine belki y8 koyacağım, y6'yı şuraya dahil edeceğiz. Bu şekilde sonucu devam edeceğiz. Tamam mı şimdi?
+
+120
+00:26:43,516 --> 00:26:45,516
+Anladım hocam, teşekkür ederim.
+
+121
+00:26:46,675 --> 00:27:14,475
+Evet, bu ifadeyi bakın burada hani benim anlattığım şekilde toplamış. Demiş ki bu Simpson formülünde trapeze bağlı olarak benim üst sınırım xn olsun. Alt sınırında yani b üst sınır xn, a alt sınır. Ben bu arada n tane parçaya böleceksem n artı bir tane çizgi çekeceğim demek diyor değil mi? İşte şurada a'dan
+
+122
+00:27:14,836 --> 00:27:27,236
+B'ye, şuraya x0 desem, buraya xn desem, n artı bir, şu kadar n eksi bir tane çizgi çeksem, burayı n tane parçaya bölerim. Şu an işte beş tane parçaya bölerim.
+
+123
+00:27:27,236 --> 00:27:34,036
+Parça sayısı n olduğunda, her bir h değeri şu formülden çok rahat bulunabiliyor. Yani şurayı biliyoruz.
+
+124
+00:27:34,036 --> 00:27:41,836
+Her bir parçanın kendi içindeki alanında 0, 1, 2, 2, 3, 4, 3, 4, 5, 5, 6, 7 diye gidiyor.
+
+125
+00:27:42,067 --> 00:27:56,067
+Bunları en genel haliyle topladığımızda SN'in genel hali şu oluyor. Yani S1 artı, S2 artı, S3. Şurayı şu şekilde gösterdiğimizde. Baştaki duracak, sonundaki duracak bunların bir katını alacağız.
+
+126
+00:27:57,971 --> 00:28:08,471
+Sonra y1'in 4 katı, ondan sonra y3'in 4 katı, y5'in 5 katı, yani y2n-1'in 4 katını alacağız.
+
+127
+00:28:08,471 --> 00:28:19,971
+Aradaki diğer çiftler var zaten, y2'ler 2 tane, y4'ler 2 tane, y6'lar 2 tane, yani y2n-2 diyebiliriz buna da. Bunlar da 2 tane.
+
+128
+00:28:26,036 --> 00:28:52,036
+eşittir toplam SI, yani I diyelim, I eşittir sıfırdan, sonsuz sıfırdan N'e kadar diyelim. Burada H bölü 3, Y sıfır artı, Y sıfır sabit bakın aslında dışarıya çıkabilir. Y iki N de sabit artı.
+
+129
+00:28:53,523 --> 00:29:09,803
+Şu şeyler, 4Yİ'ler, pardon, Y2İ-1'lerin 4 katı artı 2Y2İ-2. Bunların da iki katı. Topluyoruz, topluyoruz.
+
+130
+00:29:09,803 --> 00:29:15,884
+Şimdi şunlar sabit olduğu için toplam sembolünün dışına çıkabilir. Bunlar çünkü şey, bir defa yazılacak şey.
+
+131
+00:29:15,884 --> 00:29:21,124
+En sonunda bulacağımız alan, özet olarak şu hale gelmiş oluyor.
+
+132
+00:29:21,907 --> 00:29:30,907
+Mesela bakalım, evet burada zaten bunu dediğimi dışarıya almış. x0'ı ve xn'i toplam sembolünün dışına alıyor.
+
+133
+00:29:31,907 --> 00:29:39,907
+K135 gidecek şekilde yani tek sayılar şeklinde gidiyorsa, burada x0 artı k çarpı h.
+
+134
+00:29:40,788 --> 00:29:58,788
+kadar. Yani ne demek bu? Hın değerine göre bir sonuç elde edeceğiz. Buradan da x1'ler, x3'ler, x5'ler falan gelecek. Bunların dört katı. Sonra 2-4 altınların da iki katını alacak şekilde bir formül ortaya çıkıyor.
+
+135
+00:29:58,788 --> 00:30:05,788
+Buna Simpson formülü, Simpson 1 bölü 3 formülü diyoruz. O 1 bölü 3'ün mantığı da şu.
+
+136
+00:30:08,147 --> 00:30:15,748
+Anlaşılmayan bir şey var mı? Geçen hafta dersin sonrasında bir arkadaşımız şey sormuştu,
+
+137
+00:30:15,748 --> 00:30:24,307
+Hocam işte alan negatif olduğunda ne yapacağız? Bakın burada ona benzer bir örnek var ama bunu Simpson'da bir bölüşle çözeceğiz.
+
+138
+00:30:24,307 --> 00:30:30,708
+X küp eğrisi bu. Eksi bir ile iki aralığını şu aralığı çözebilir demişiz.
+
+139
+00:30:31,539 --> 00:30:44,539
+Şimdi gerçek alan nereden alınır? Hep bir S1'den, bir de S2'den olacak. S1'deki alanımız, eksi 1'den 0'a kadar alan. Ama bu negatif olduğu için bunu eksiyle çarpıyoruz.
+
+140
+00:30:44,539 --> 00:30:56,539
+Burada da eni 4 alanında. Şimdi eni 4 almak ne demek? Üst sınırdan alt sınırı çıkardığında 0 eksi, eksi 1 bölü 4 dediğimizde
+
+141
+00:30:57,200 --> 00:31:24,600
+H'ımızı yani ne bulacağız? Burada 0.25 bulacağız. Zaman, eksi 0, eksi 1, eksi 0, 75, 0.5, eksi 0.25, 0 için bana değerlere ihtiyaçlar var. Bunlar ysx0, x1, x2, x3, x4, x5 diye bunları C'de bir dizi gibi kodladık. Tamam mı? Yani bir x dizim var. Bakın size kodu da neredeyse yazacak bir şey. Eksi 1.
+
+142
+00:31:25,044 --> 00:31:31,284
+eksi 0.75 böyle devam edip gidiyor, dörde kadar. Bir de buna göre y dizimi olacak.
+
+143
+00:31:31,284 --> 00:31:38,163
+Bu y dizisi nereden gelecek? Bunları fonksiyonda yerine koyacaksınız. Fonksiyonda yerine koyarsanız ilk küpün,
+
+144
+00:31:38,163 --> 00:31:51,923
+işte bir, sıfır nokta kök, iki, sıfır yüz yirmi beş, sıfır nokta bu, sıfır nokta bu. Şu y sıfır, y bir, y iki, y üç, y dört, başka da yok.
+
+145
+00:31:52,180 --> 00:32:15,180
+Genellikle bakın arkadaşlar n'i burada çift sayı seçiyoruz. Neden çift sayı seçiyoruz? Çünkü y sıfırımızın bir katı, en son eleman y işte 4n gibi yani şu formülde pardon 2n gibi olacağı için çift seçelim ki 2n'e ulaşalım. Bunun da bir katını alacağız.
+
+146
+00:32:16,147 --> 00:32:25,347
+Sonra aradaki teklerin dört katı, diğer çiftlerin iki katı şeklinde. Bu tabloyu da fonksiyonundan doldurduk yani şu değerleri de getirdik, diziye yazdık.
+
+147
+00:32:25,347 --> 00:32:39,547
+Yapacağımız şey h bölü üç, 0.25 bölü üç artı birincinin kendisi şuraya, sonuncunun kendisi buraya. Neydi çiftlerin iki katı? Çiftlerden burada bir tane var, buraya.
+
+148
+00:32:40,500 --> 00:32:53,899
+Teklerinde dört katı, teklerden de iki tane var, dört katı buraya. Burayı toplayıp hesapladığımızda bu alanın yaklaşık değeri 0.24. Şimdi x üzeri 4 bölü 4'tür değil mi oranın alanı?
+
+149
+00:33:05,491 --> 00:33:18,491
+eksi bir bölü dört gelecektir bu alan. Eksiyi de başındaki eksiyle çarparsam bir bölü dört. Normalde bakın şuranın alanı nümerik hesaplama yaptığımızda bir bölü dörtmüş yanlış bir şey yapmalıyız.
+
+150
+00:33:18,491 --> 00:33:31,243
+Burada da bulduğumuz değer 0.24 yani 0.25 yuvarladığımızda. Bakın gayet sonuca yaklaştık. Şimdi ne kaldı? İntegralin ikinci tarafı kaldı.
+
+151
+00:33:31,667 --> 00:33:57,867
+Aynı şekilde sıfırdan ikiye integralın ikinci tarafını hesaplıyoruz. Burada h değerimizi burada niye 0,5 bulduk? Çünkü h 2-0 bölü 4'ten 0,5 olacak. H'ı doğrudan bize vermiyor. Biz şunlara göre h değerini üretiyoruz. O zaman 0, 0,5, 1, 1,5, 2 için bir dizimiz olacak.
+
+152
+00:33:58,079 --> 00:34:18,079
+Bunların fonksiyondaki görüntüleri olacak. Birinci ile sonuncunun toplamı, sıfırıncının toplamı, birinci ile üçüncünün dört katı, ikincinin de iki katı. Bunları topladığınızda bakın burası dört oluyormuş. Burayı hesaplayalım.
+
+153
+00:34:18,079 --> 00:34:26,027
+x üzeri dört bölü dört, ikiden sıfıra kadar ne oldu? On altı bölü dörtten dört oldu. Zaten aynısını bulduk.
+
+154
+00:34:26,036 --> 00:34:33,036
+Burada yüzde yüz ekürisiyle bulduk. Buradaki alan dört, aşağıdaki alanda bir bölü dört'tü. Bunları topladığımızda
+
+155
+00:34:33,036 --> 00:34:40,036
+4.25 birimperaya bulabiliyoruz. Hakikaten de buna uğraşırsanız. Analitik çözüm yaparken ne yapıyorsunuz?
+
+156
+00:34:40,036 --> 00:34:48,036
+Böyle bir şeyin analitik çözümünü yaparken işte eksi birden ikiye kadar x küp.
+
+157
+00:34:48,884 --> 00:35:01,163
+Yani x üzeri 4 bölü 4 dediğimizde 2'den eksi 1'e kadar deyip, 16 bölü 4'den 4 eksi, bir de ne oldu? Şuradan 1 bölü 4 geldi.
+
+158
+00:35:01,163 --> 00:35:11,884
+Yalnız buradaki gelen eksi 1'deki değeri eksi ile çarpıp yine aynı sonucu buluyorduk ama burada biz daha döngülerle, toplama, çıkarma, çarpma bölme ile bu işi hesaplamış olduk.
+
+159
+00:35:11,884 --> 00:35:13,884
+İntegral hesabına bakın hiç girmedik.
+
+160
+00:35:14,579 --> 00:35:22,260
+Bazen böyle soru sorunca arkadaşlar özellikle sınavda integral hesabı yapıyorlar. Bakın burada Simpson kuralında integral hesabı yok.
+
+161
+00:35:22,260 --> 00:35:33,260
+Sadece gerçek sonuçta karşılaştırmak için yani mutlak hata yapmak için integral hesabı yaparız. O da basit bir fonksiyonsa yani x küpünün integralini almak basit.
+
+162
+00:35:33,260 --> 00:35:39,884
+Dikkat ederseniz bu x küpü biz ikinci derece fonksiyona uydurarak, indirgeyerek çözmeye çalıştık.
+
+163
+00:35:39,987 --> 00:35:43,747
+Daha karmaşık bir fonksiyon da olabilirdi. Onu da size bırakıyoruz.
+
+164
+00:35:43,747 --> 00:35:54,067
+Evet, şöyle bir şey var. x²-1 artı x artı 2'nin alanını şu aralıklarda hesaplayacakmışız.
+
+165
+00:35:54,067 --> 00:35:57,667
+Bakalım. Şimdi analitik çözümümüz.
+
+166
+00:35:57,667 --> 00:36:01,667
+x²-1'e bir alan bulacağız.
+
+167
+00:36:02,195 --> 00:36:09,115
+Bu x3 artı 2x kare eksi x eksi 2, buradan 0.41 bulunuyor analiz çözümden.
+
+168
+00:36:09,876 --> 00:36:14,996
+Peki buranın alanını eksi 2'den eksi 1'e kadarki alanı
+
+169
+00:36:17,556 --> 00:36:21,916
+bulmadan, yani bu işe gerek kalmadan bulalım dediğimizde
+
+170
+00:36:22,155 --> 00:36:29,076
+Şimdi trapez yöntemiyle önce yapalım demişiz. Eksi 2'den 1'e kadar bu işi yapacağız. Önce haşı buluruz.
+
+171
+00:36:29,684 --> 00:36:48,484
+H'ın değeri işte neydi? Sondaki bölge, eksi alttaki bölge. Şurası eksi bir olacak arkadaşlar ya. Şurada ufak bir hata anlatayım da hapisini miyim? Eğer doğrudan düzelttebilirsek. Evet buranın eksi bir olması lazım.
+
+172
+00:36:52,244 --> 00:36:54,244
+Çünkü şurada da eksi buluyoruz.
+
+173
+00:36:58,132 --> 00:37:01,731
+Yani şuradaki yaptığımız işlemi nerededir?
+
+174
+00:37:06,003 --> 00:37:28,203
+O x-extinin üzerinde kalan bölgenin alanı neresi? Şurası. Şuraya gerek yok. Dolayısıyla bize o bilgi yeterli. Şurada da eksi ikiden bire yaptığımız şey. Şimdi trapez de yapacağız. Eksi birden eksi ikiye dört tane parçamız olacaksa her bir aralığımız 0.25.
+
+175
+00:37:28,467 --> 00:37:46,867
+Şimdi eksi 2'den eksi 1'e 0.25 artı artı x vektörümüzü oluşturduk. Buna uyumlu olarak fonksiyonunda gittik değerleri yerine yazdık y vektörümüzü oluşturduk. Simpson kuralı nasıl yapıyordu? Sonucu neydi? h bölü 2 diyorduk. h'ı 2'ye böleceğiz.
+
+176
+00:37:54,579 --> 00:38:14,980
+Şuraya geri gelirsek. Birinciden bir tane, sonucudan bir tane, aradakilerden iki tane yapılıyorduk. Tabii h bölü 2 ile çarpıyorduk. Genel kural buydu. Zaten şurada, evet şuradaki söylediğimiz genel kural. Şunu burada uyguladığımızda...
+
+177
+00:38:18,387 --> 00:38:42,667
+Pardon, şuradayız. Birinci alanımız sıfır. Birinci değerimiz sıfır, sonuncu değerimiz sıfır. Bunların yarısı, artı. Aradaki ifadelerin iki katı. Bu iki katını, şuradakini h bölü iki ile çarpmak yerine doğrudan h ile çarpmışız. Yani hiçbir şey değişmiyor. Sonuçta topladığımızda şu değeri buluyoruz. Bakın bu trapezin
+
+178
+00:38:43,795 --> 00:38:57,115
+Mutlak hatası şu kadar oluyormuş. Gerçek değerimiz buydu. Elde ettiğimiz değerden. Gerçek şey, aradaki fark bu. Simpson'la aynısını çözelim demişiz. Bak burada da aynı şey var. Şunu da bir ilerleyeyim.
+
+179
+00:38:59,515 --> 00:39:03,515
+Bunu PDF olarak da güncelleyeyim arkadaşlar, size paylaşalım.
+
+180
+00:39:07,219 --> 00:39:18,619
+eksi birden eksi ikiye, bu sefer aralığımız yine 0.25 aralıkta. Fonksiyonundaki, tablodaki değerler zaten değişmedi. Hiçbir şey fark etmiyor.
+
+181
+00:39:18,619 --> 00:39:21,619
+Ne yapacağız? Birincinin kendisi...
+
+182
+00:39:22,452 --> 00:39:48,851
+Sonuncunun kendisi, teklerin dört katı, teklerde zaten 1 ve 3 var. Bunların dört katı, şunların dört katı, çiftin iki katı, dışarıda da H bölü 3. 0.41, 66. Bakın birisi 0.41'di. Şuradaki değerimiz. Niye böyle gidiyorsan, 0.41'di. Buradaki değerimiz daha da azaldı. Eğer bu n sayısını arttırırsanız,
+
+183
+00:39:49,556 --> 00:39:56,756
+ne bileyim sekiz gibi on gibi bir şey yaparsanız neredeyse sıfır hata ile konucu hesaplayabilirsiniz.
+
+184
+00:39:58,756 --> 00:40:00,756
+Burada bir sorumuz var mı buraya kadar?
+
+185
+00:40:09,940 --> 00:40:33,940
+Peki, devam edelim. Şimdi Simpson 3 bölü 8. O da şuradaki 8'den gelen bir şey. Bu biraz daha işi abartmış. Demiş ki herhangi bir AB aralığında böyle bir fonksiyon, ikinci dereceden bir fonksiyon bulmak yerine üçüncü dereceden bir polinom yazayım. Yani A x küp.
+
+186
+00:40:34,228 --> 00:40:53,228
+artı b x kare artı c x artı d şeklinde bir polinom üreteyim. Bunun integralini aldığımda a çarpı x üzeri 4 bölü 4, artı b çarpı x üzeri 2, bu 3 bölü 3, c çarpı x kare bölü 2, artı d çarpı x gibi bir şey olacak.
+
+187
+00:40:53,228 --> 00:41:00,228
+Bunun alanını hesaplamak da çok zor değil. Yani konsüsyonu bu şekilde indirgemek zor bir şey değil.
+
+188
+00:41:00,371 --> 00:41:10,032
+Aynı mantıkla ABC kat sayılarının nasıl tespit edileceğini bulabilirsiniz. Onlara tekrar ispatına girmiyorum. Bizim için formulü bilmek bile yeterli.
+
+189
+00:41:11,032 --> 00:41:19,911
+A'dan B'ye, fx, dx'i hesaplarken bu yaklaşık olarak şöyle bulunuyor. Şimdi B noktası son noktamız, A noktası ilk noktamız.
+
+190
+00:41:23,552 --> 00:41:35,351
+Yani A ile B aralığının A ile B noktasını üç eşit parçaya bölüyoruz iki tane şeyleri. Yani şurası H kadar uzaklıkta, bu da H kadar uzaklıkta, bu da H kadar uzaklıkta olacak şekilde.
+
+191
+00:41:35,351 --> 00:41:48,552
+Şu birinci alan, şey birinci fonksiyonun ilk sınırının görüntüsü. Sonra X1 dediğimiz buradan H kadar uzaklıktaki nokta. Bu nedir? A artı B eksi A bölü 3'tür.
+
+192
+00:41:49,427 --> 00:42:01,707
+Şurası da a artı iki çarpı b eksi a bölüştür. Yani a artı h, a artı iki h. Biraz önce h'ı zaten n eşittir, n'e bağlı olarak bulmuştuk hatırlarsanız.
+
+193
+00:42:02,987 --> 00:42:16,307
+Şimdi benim buradan niye üç parçaya böldüm? Şuradan çıkartmanız gerekiyor. Üç parçaya bölelim ki, a noktası var, b noktası var. Aradaki şu noktalardan da dört tane noktaya ihtiyacı var. Onun için üç parçaya bölüyoruz.
+
+194
+00:42:17,108 --> 00:42:26,268
+Aslında dört tane noktamız olur. Eğer bu dört noktamız olursa A, B, C'de doğrularının dört bilimlerini dört tane denklemden çözebiliriz. Mantığı bu.
+
+195
+00:42:26,268 --> 00:42:37,668
+Bunu aşı bulmak için ne yapacağız? B-A bölü, bu sefer dört parça, pardon üç parçaya böl diyeceğiz. Pardon dört parçaya böleceğiz. Ne üç parçası?
+
+196
+00:42:38,228 --> 00:42:48,228
+Bu birincisi ilk A değeri zaten, ikincisi bundan H kadar ötede A artı H, öbürü A artı 2H, öbürü de A artı 3H yani B olacak şekilde buluyoruz.
+
+197
+00:42:48,228 --> 00:43:04,228
+Burada da bulduğumuz sonuçta, fx1'in yani şu ilk elemanın 3 katı, ilk noktanın 3 katı, ikinci noktanın 3 katı, son nokta, bölü 8, 8 de arkadaşlar şu integral hesaplanmasından gelen
+
+198
+00:43:04,527 --> 00:43:14,007
+A, B, C, D değerlerinin bulunmasından gelen, biraz önce şurada bir ispat yapmıştık ya, o ispatı kendiniz de yapabilirsiniz. Şurada olduğu gibi, 8'de oradan geliyor.
+
+199
+00:43:14,007 --> 00:43:30,167
+Yani bunun renklemlerini ispat etmeye gerek yok. Tabi bu, A, B aralığında tek bir tane üçüncü dereceden polinom üretmekle bulunabilecek sonuç. Eğer A, B aralığını kendi içinde
+
+200
+00:43:30,867 --> 00:43:50,867
+Birden fazla polinom üretecek şekilde değerlendirirsek, işte şuradan şuraya kadar bir üçüncü derece polinom. Yani bu arayı dörde böleceğiz. Sonra bu arayı dörde böleceğiz. Bu arayı dörde böleceğiz. Dört tane parçalıkları derseniz o zaman biraz daha doğru sonuca yaklaşırsınız. Mantığı budur.
+
+201
+00:43:56,211 --> 00:44:17,772
+A'dan A ile B'nin yarısına kadar bir alan, A artı B bölü 2'den B'ye kadar bir alan hesabı yapacağız. O zaman şurada şeyler değişiyor. Yani bu formülde yeni A'mızın kendisi aynı, B'nin yerine A artı B bölü 2 koyuyorsunuz ve şuradan aynı sonuçları buluyorsunuz. Bir de
+
+202
+00:44:18,228 --> 00:44:25,228
+yeni A'nın yerine A artı B bölü 2 koyup, bunun yerine B koyduğunuzda
+
+203
+00:44:25,228 --> 00:44:31,228
+aynı şeyleri bulacaksınız ve iki tane alanın toplamını hesaplayacaksınız. Mantığı buradan gelecek.
+
+204
+00:44:31,228 --> 00:44:42,572
+Şu formülü bilmemiz bizim için yeterli. Son alanlar aslında ilk ile sonun kendisi, aradakilerin 3 katı, bir de bölü yani B eksi B bölü 8 var.
+
+205
+00:44:44,019 --> 00:45:09,460
+Bir de burada çarpım olarak şey, tabi bu bir tane parçaysa, iki parçaysa ne yapacağız? Şöyle yazalım. B dediğim şey a artı b bölü 2 eksi a bölü 8 birinci parça için. Burada fa var artı bir fa artı b bölü 2 var artı 3 çarpı
+
+206
+00:45:10,324 --> 00:45:29,923
+A'dan H kadar ötede, H'ı hesaplarsınız, A artı H, FA artı H, artı 3 çarpı F, A artı 2H kadar ötedeki var. Bu birinci alan. Aynısını bir de şunun içine uygularsanız ikinci alan, bunları toplarsanız gerçek sonuca gidersiniz. Örnek üzerinden bakalım.
+
+207
+00:45:35,987 --> 00:45:44,987
+şeyimiz şuymuş, bu arklı bir şey de hatırlarsanız, bizim buna benzer örneğimiz de vardı. Şimdi n eşittir 1 ve n eşittir 2 için yapacağız demişiz.
+
+208
+00:45:44,987 --> 00:45:53,987
+n eşittir 1 için yapmak demek ne demek? Bir tane üçüncü mertebeden, üçüncü dereceden polinom üretmek demek bu fonksiyon için.
+
+209
+00:45:53,987 --> 00:46:00,987
+Peki yazalım, yani yapacağımız şey aslında 0'dan 6'ya bir tane polinom varmış gibi düşüneceğiz ve yaklaşık alanı bulacağız.
+
+210
+00:46:03,123 --> 00:46:14,123
+6a dediğimiz şey 0. Burada f'in a'sını bulacağız. Peki a ile b arasını kaç parçaya böleceğiz?
+
+211
+00:46:14,123 --> 00:46:22,091
+Kolinomun kendisinden kaynaklı olarak 3 tane çizgi çizmemiz gerekiyor. Yani 6-0 bölü 3'ten.
+
+212
+00:46:22,260 --> 00:46:33,420
+iki. Bize ne lazım? Sıfır lazım. x'in sıfırdaki değeri, ikideki değeri, dörtteki değeri ve altıdaki değerleri gerekiyor. Bu şekilde üç tane parçaya bölmüş oluruz.
+
+213
+00:46:33,420 --> 00:46:42,060
+Bunların fonksiyonundaki değerlerini yerine yazıyoruz. Sıfır yazdığımızda bir bölü birden ne oluyor? Bir geliyor.
+
+214
+00:46:50,420 --> 00:46:52,420
+Evet, 1 bölüm 7.
+
+215
+00:46:52,420 --> 00:47:03,420
+4 yazdığımızda F1 bölü, işte 4'ün 4. kuvvetinin şeyi artık devamlı ve 6'nın 4. kuvveti gibi sayısal sonuçları bulacağız.
+
+216
+00:47:03,420 --> 00:47:15,851
+Yani F0, F2, F4 ve F6. Yalnız aradaki iki terimin 3 katı. Bir de bu B bölü A'yı 8'e böleceğiz. Şu 8'i şurada yazmasak da olur.
+
+217
+00:47:15,891 --> 00:47:36,291
+Buradaki gelen değerler, birisi 1 bölü 17'ymiş, onu zaten bulduk. Öbürü 1 bölü 257'ymiş, bunların 3 katı, öbürü de 1 bölü 1297'ymiş. Bunları toplayıp çıkarıp, çarpıp bölüp işlem yaptığımızda 0.8917 buluyoruz. Bu n eşittir bir işim.
+
+218
+00:47:37,396 --> 00:47:43,796
+Bu bir çözüm, bir çözüm, bunun hatasına bakarsınız, işte şu işlemin konucuna baktığınızda bir hata elde edersiniz.
+
+219
+00:47:43,796 --> 00:47:50,796
+Bir de en eşitleri iki için dediğimizde bunu sıfırdan üçe kadar, üçten altıya kadar çözmek demektir.
+
+220
+00:47:50,796 --> 00:47:55,996
+Sıfırdan üçe kadar çözerken, üçten sıfırı çıkarttınız.
+
+221
+00:47:56,096 --> 00:48:08,096
+Arada üç tane nokta olacağı için üçe böldüğünüz. Yani birer artırımda 0, 1, 2 ve 3 için değerler lazım. F0 lazım, F1 lazım, F2 lazım, F3 lazım.
+
+222
+00:48:08,096 --> 00:48:14,496
+Bunları bulup formülü de yerine koyduğumuzda, buradan 1.0082
+
+223
+00:48:14,655 --> 00:48:30,655
+Burada 3, 4, 5, 6 için aynı şeyleri yapıyoruz. Bakın hep dizilerle çözülecek sonuçlar. Sadece bir fonksiyon, evaluation diye bir yardımcı fonksiyonumuz olur. Bu dizilerle de elde ettiğiniz sonuçları alırsınız.
+
+224
+00:48:30,655 --> 00:48:37,655
+Şurada da bu sonucu elde ettik. Bu ikisini topladığında 1.0192. Önceki 0.80'de bulmuş, bu buymuş.
+
+225
+00:48:38,195 --> 00:48:44,755
+Bunun gerçek sonucunu aşağıda bir yerde çözmüşüz galiba. Aynısını mıydı acaba?
+
+226
+00:48:48,148 --> 00:48:51,748
+Evet, ama burada sınırlar mı değişik?
+
+227
+00:48:52,467 --> 00:49:00,188
+1 bölü 1 artı x, bu x kare, o x üzeri 4. Yani bunu da çözerseniz ona yakın bir şey, yani şu 3 bölü 8'in
+
+228
+00:49:00,467 --> 00:49:04,507
+en eşittir 2 için olan sonucu çok çok daha yakın bir sonuç olacaktır.
+
+229
+00:49:06,188 --> 00:49:08,788
+Buraya kadar bir sorumuz var mı arkadaşlar?
+
+230
+00:49:12,916 --> 00:49:25,516
+Şimdi ara vereceğim, aradan önce şunu göstereyim. Burada kullandığımız fonksiyonlar bir boyutlu fonksiyon. Yani x bağımsız değişkenimiz var. Bu da buna karşılık y eşittir fx fonksiyonumuz var.
+
+231
+00:49:25,516 --> 00:49:40,116
+Değişken x değiştikçe y'deki değişime bakarak bir şey yapıyoruz. Gerçek hayatta integral hesabı veya aritmetik hesaplarda her zaman bir değişken olmak zorunda değil. Yani iki boyutlu, üç boyutlu durumlar da olur.
+
+232
+00:49:41,043 --> 00:49:54,244
+İki boyutlu bir sistem düşündüğümde, mesela x ve y diyelim, iki boyutlu bir sistemin üçüncü boyutta görüntüsü olacaktır. Yani z eşittir, fx, y şeklinde bu kompisyon gösterilir.
+
+233
+00:49:54,244 --> 00:50:08,244
+Kalkulus dersinde bunları almışsınızdır bilinci dönem veya bu dönem belki alıyorsunuzdur. Şimdi bunun integralli almak demek, aynı bir dikdörtten integrali, yani düzlemsel bir alan hesabı yapmak gibi bir şeydir.
+
+234
+00:50:08,512 --> 00:50:17,512
+Doğrunun altında kalan var ama burada biraz da düzlemin altında kalan kalan var. Dolayısıyla burada çift katlı integraller sistemin istedik.
+
+235
+00:50:17,512 --> 00:50:30,512
+fx, y'nin integralini hem dx'de hem de dy'de alarak yata eksen ve düşe eksen boyunca entegrasyon yaparak da bu işte a, b, c, d gibi sınırları olacak.
+
+236
+00:50:30,835 --> 00:50:57,475
+Bu sınırlardan elde edilen sonuç o düzlemin altında kalan. Buna da iki katlı integralin sayısal çözümü diyoruz. İsterseniz buna 10 dakika ara verelim. Ben de yoruldum. Sabahtan beri bir ders yapıyoruz. Saat 2'de görüşelim. Bu arada da Banu Hoca'ya bir konuda ayayacağım. Ondan da bir bilgi alacağım. Ondan sonra dersimize devam ederiz. 2'de görüşürüz.
+
+237
+01:06:02,420 --> 01:06:04,076
+Evet arkadaşlar.
+
+238
+01:06:08,947 --> 01:06:11,947
+Birkaç slide'lık analiz kaldı, bunu da bitirelim.
+
+239
+01:06:13,447 --> 01:06:14,947
+Hocam, başlamadan bir şey sorabilir miyim?
+
+240
+01:06:14,947 --> 01:06:15,947
+Buyurun.
+
+241
+01:06:16,447 --> 01:06:19,447
+Kaç vize olacağı belli oldu mu? Ya da nasıl olacağı?
+
+242
+01:06:19,447 --> 01:06:25,947
+İki vize, bir proje, bir final. O zaten dönem başından belli, belli diye bildiğim kadarıyla. Bizim ilk slide'larımız da vardır.
+
+243
+01:06:26,947 --> 01:06:30,891
+Birinci vizemiz bayramdan sonra, ikinci vizemiz de...
+
+244
+01:06:31,315 --> 01:06:36,815
+Onu 13. hafta veya 12. hafta falan yapacağız. Bunu da ayrıca ilan edeceğiz.
+
+245
+01:06:36,815 --> 01:06:39,815
+İkinci vize de mi online olacak yoksa yüz vize mi olacak peki?
+
+246
+01:06:39,815 --> 01:06:41,315
+Online olmalı.
+
+247
+01:06:41,315 --> 01:06:48,315
+Tamamdır. Bir de hocam bu Simpson'da projede ikisinde mi yapalım? Yani kullanıcı mı seçsin hangisi olur?
+
+248
+01:06:48,315 --> 01:06:51,815
+Evet, yani şey veya doğrudan ikisinin sonucunu da göstertebilirsiniz.
+
+249
+01:06:51,815 --> 01:06:53,815
+Tamamdır, teşekkür ederim.
+
+250
+01:06:55,315 --> 01:06:59,179
+Şimdi iki katlı integral sayısal çözümlü.
+
+251
+01:06:59,315 --> 01:07:03,315
+Şimdi iki katlı integral olunca bir kere iki değişken olduğunu konuşmuştuk.
+
+252
+01:07:03,315 --> 01:07:13,315
+Burada örnek üzerinden anlatacağız. Aslında bir şekilde bunu tek katlı integrale indirgeyip, bu işin sonrasında da şey yapacağız.
+
+253
+01:07:13,315 --> 01:07:20,315
+Yani Simpson veya trapez hangisini kullanırsanız integral tablolarımız olacak. Yani bu aşırı doğru bir şey değil.
+
+254
+01:07:21,300 --> 01:07:28,100
+Şimdi birinci integralimiz, yani verilir integral şu şekildeymiş. x² artı y fonksiyonumuz var.
+
+255
+01:07:28,100 --> 01:07:38,900
+İçerideki integral x'den 2-3 köpe kadar ki bölgeyi alıyor. Bakın önce şu integrasyon hesaplanacak. Burada y'ye göre integral alınacak.
+
+256
+01:07:38,900 --> 01:07:44,500
+Ve y, x ile bağlantılı bir şey değil arkadaşlar. Düşünün yani bunun integralini aldığımızda
+
+257
+01:07:49,427 --> 01:08:02,027
+2 gelir, sınırlarında 2x³, yani y gördüğünüz yere bir 2x³, bir de x yazarsınız, o şekilde bulursunuz. Ondan sonraki çözümü de x'e bağlı olarak bulursunuz, öyle bir sonuç çıkar.
+
+258
+01:08:02,027 --> 01:08:08,228
+Burada nümerik yöntem kullanacağız. Önce diyoruz ki n eşittir 4 alalım.
+
+259
+01:08:16,307 --> 01:08:20,307
+şuraya Gx dx dedi. Çünkü burada bulacağımız sonuç nedir?
+
+260
+01:08:20,307 --> 01:08:24,708
+x'e bağlı bir ifadedir. Biraz önce çözmeye çalıştığım şey oydu.
+
+261
+01:08:24,708 --> 01:08:33,507
+3'ten 2'ye kadar en eşittir 4 dediğimizde 3 eksi 2 bölü 4'ten 0.25 artışlarla hesaplama yapacağız.
+
+262
+01:08:33,507 --> 01:08:40,907
+Şimdi bu integralin değerlerini yerine yazdığımızda x0 için G0 sonucunu
+
+263
+01:08:41,427 --> 01:08:51,028
+Yani iki için G0, x1 için G1 sonucunun, G2, G3 ve G4 sonuçlarının bu dokumlar Gx'e göre elde edilen sonuçlar.
+
+264
+01:08:51,028 --> 01:09:05,427
+Sonra şurada G0'ı bulalım diyoruz. G0'ı bulurken, x'in değerine 2 vereceğiz. 2'den kaça kadar? 2'nin küpüne kadar değil mi? Yani şurası.
+
+265
+01:09:06,131 --> 01:09:11,131
+2 verdiğimizde, 2'nin 2 üzeri 4. Aslında şurası 2 üzeri 4.
+
+266
+01:09:11,131 --> 01:09:18,131
+2'den 16'ya kadar x0'ın karesi artı y, d, y işlemini hesaplıyoruz.
+
+267
+01:09:18,131 --> 01:09:30,131
+Burada da bu integral hesaplarken 2'den 16'ya kadar 4 parçaya böleceksek, 16-2 bölü 4'ten 3,5 artışlarla bu işi yapacağız.
+
+268
+01:09:30,644 --> 01:09:38,204
+iki, beş nokta beş, dokuz, on iki buçuk, on altı. Bunların fonksiyonundaki görüntüsü de ne olacak?
+
+269
+01:09:38,204 --> 01:09:48,804
+İşte ikiyi yerine koyduğumuzda ikinin karesi dört, y'nin değeri sabit. Bir dakika, o da nasıldı bu?
+
+270
+01:09:56,692 --> 01:10:07,692
+Tabi x eşittir, x0 eşittir 2 için burada y0 değerimiz de 2'den 16'ya kadar, burada y0'ın yerine de 2 koyduğumuzda 2'nin karesi 4 artı 2 6.
+
+271
+01:10:07,692 --> 01:10:12,692
+2'den 6'yı nasıl bulduğumu anladınız mı? İlk başta belki karışık gelmiş olabilir.
+
+272
+01:10:12,692 --> 01:10:21,692
+Önce x0 için burayı çözüyoruz. x0 için çözdüğümüzde 2'den 16'ya kadar çözüm bulur, yapacağız.
+
+273
+01:10:24,243 --> 01:10:45,443
+4, 2'den dolayı, artı y, 4 artı 2, 4 artı 5.5, 4 artı 9, 4 artı 12.5. Yani içeriği ne bulduk? 6, 9.5, 13, 16.5, 20. Şimdi bunu isterseniz Simpson'la, isterseniz Trapez'le artık hangi yöntemle uygularsanız, bakın burada neyi uygulamış?
+
+274
+01:10:50,996 --> 01:10:59,435
+Ondan sonra dördüncünün şey teklerin dört katını almış, ikinci şey çiftinde iki katını almış. Bu hangi yöntem?
+
+275
+01:11:00,976 --> 01:11:01,996
+Simpson.
+
+276
+01:11:02,515 --> 01:11:04,056
+Simpson'ın hangisi?
+
+277
+01:11:04,815 --> 01:11:05,835
+1 bölü 3.
+
+278
+01:11:05,835 --> 01:11:07,376
+Simpson 1 bölü 3.
+
+279
+01:11:07,636 --> 01:11:14,556
+Şu aralık için bulacağımız değer sonucu buymuş, 182. Bu sadece G0.
+
+280
+01:11:15,220 --> 01:11:28,900
+için bulduğumuz sonuç yani x0'ı 2 verdiğimizde. Aynısını 2.25 için, şunun için yaptık, bir de 2.25 için yapacağız. Bakın aslında burada iç içe iki tane for döngüsü gibi var.
+
+281
+01:11:28,900 --> 01:11:41,620
+2.25 ile 22.78 arasını bulmamız gerekiyor. Bu iki nokta arasını da böldüğümüzde işte şu 5.13'luk artışlar gerekliyormuş.
+
+282
+01:11:41,747 --> 01:11:54,347
+Bunları formülde yerine koyduğumuzda 2.25'in karesi artı 2.25 de şunlar geliyor sonuç olarak. Bunları da yine Simpson bir bölüşle formülde yerine koyuyoruz. 360.417.
+
+283
+01:11:54,347 --> 01:12:06,347
+Aynısını x2 2.5 için 0.5 artışlarla bulacağız. Bu sefer 2.5'ten 31.25'e kadar konuşuyoruz.
+
+284
+01:12:06,612 --> 01:12:14,612
+Buradan elde ettiğimiz sonuçlar bakın 7.19 artışlar olacakmış ve buradan 665 birim bulunuyor.
+
+285
+01:12:14,612 --> 01:12:22,211
+2.75 için ve x eşittir 4, 3 için bu değerleri bulduğumuzda 3'den 54'e kadar bakın burada.
+
+286
+01:12:22,211 --> 01:12:31,612
+Dikkat ederseniz şu haç sürekli artıyor aralığı. Buradan da 1912 bulduk. Şimdi hepsini topladığımızda...
+
+287
+01:12:33,587 --> 01:12:54,887
+İşte biri şuydu, diğeri buydu. Bunların hepsini topladım buraya. Elde edilen sonuç 790'mış. Bakın, şu içlerinde ayrı ayrı Simpson'ı bulmadık, bir de elde ettiğimiz sonuçlara Simpson'ı buluyoruz. Çünkü şu DY'nin Simpson'ı, bir de burada DX'in Simpson'ı olacak. Dışarıdaki şeyi daha bulmadık.
+
+288
+01:13:00,819 --> 01:13:26,819
+Şu aradaki en sonunculuğun kendisini alıyoruz. O da ne 19.912. Nerededir o? Şunlar, evet. Sonra işte çift dereceli olanların iki katı, tek dereceli olanların dört katı dedik. Bunların hepsini topladığımızda, Y0'lar, Y1'ler, Y2'ler hepsi burada elde ettiğimiz sonuçlar.
+
+289
+01:13:27,283 --> 01:13:52,523
+Pardon, şurada yapacağız. 182.1912. Takıldı herhalde bu. Sonra aradaki teklerin dört katı, çiftlerin iki katı, işte bunda haş bölüşle çarptığında Simpson bir bölüşle 790.450 bölmüş. Bunu analitik çözümle yaparsak 790.55. Analitik çözümle hızlıca şöyle göstereyim. Biraz hızlı ama. Şimdi x küp bölü.
+
+290
+01:13:52,688 --> 01:14:07,688
+Şu içerideki integralin sonucu nedir? x kare y artı y kare bölü 2. Bunu 2x küp ve x sınırlarını yerine koyarak... Çünkü şu x sabit bir terim gibi arkadaşlar.
+
+291
+01:14:07,688 --> 01:14:19,688
+2x küp sınırını koyarsak ne olur? 2x küp bir x kare daha. 2x üzeri 6 mı oluyor? x üzeri 6 artı...
+
+292
+01:14:20,404 --> 01:14:28,844
+2x küpün karesi, 2'nin karesi 4, x küpün karesi, x üzeri 6, 4, x üzeri 6 oldu herhalde.
+
+293
+01:14:28,844 --> 01:14:33,444
+Hocam, x üzeri 5 olacaktı sanki ilk baştaki.
+
+294
+01:14:33,444 --> 01:14:40,404
+Bakalım. Şimdi y'nin yerine x üzeri...
+
+295
+01:14:40,404 --> 01:14:46,348
+Ah evet, oldu. x küp, x üzeri 5, 2 x üzeri 5 değil mi?
+
+296
+01:14:47,091 --> 01:14:48,091
+Evet hocam.
+
+297
+01:14:48,091 --> 01:15:13,867
+2'yi ben niyeyse x gibi görelim. Sonra 4 çarpı x türev atı, eksi dedik. Şuradan x küp geldi bu ifaden. Buradan da x'in karesi bölü 2 geldi. Bu sonuç bu. Bu sonucun neye göre integralını dize? dx'e göre. Bu 2 x üzeri 6 bölü 6 artı 4.
+
+298
+01:15:13,939 --> 01:15:39,139
+x üzeri 7 bölü 7 eksi x üzeri 4 bölü 4 eksi x küp bölü 3, şuradan da 6 gelecek. Yani bu ifadede 3 ve 2 sınırlarını yerine koyarsanız herhalde buradan bir şeyler doğru sonucu bulursunuz. Onu da artık size bırakalım. Yani aynı sonuç oraya da ulaşacaktır diye düşünüyorum.
+
+299
+01:15:39,539 --> 01:15:43,139
+Hata olursa ben haber verirsiniz. Uzunluğunu yazmıyorum şimdi.
+
+300
+01:15:44,500 --> 01:15:50,819
+Evet, bunu üç katlı düşündüğümüzde aslında iç içe üç tane por dönemiz var. Bu üçlü dörtlü böyle uzak gider.
+
+301
+01:15:51,539 --> 01:15:54,659
+Ama gerek yok bizim için mantığını öğrenelim, yeterli.
+
+302
+01:15:56,340 --> 01:15:57,699
+Sorumuz var mı arkadaşlar?
+
+303
+01:15:59,139 --> 01:16:04,739
+Ben bir şey sorabilir miyim hocam? Bu n sayısını çift seçmek iyi olur demiştik ya.
+
+304
+01:16:05,011 --> 01:16:07,171
+Zorunluluk mu yoksa tek de olabilir mi?
+
+305
+01:16:07,171 --> 01:16:09,171
+Şöyle, şimdi dur.
+
+306
+01:16:11,412 --> 01:16:13,492
+Mesela Simpson 1 bölü 3'e gelelim.
+
+307
+01:16:20,340 --> 01:16:28,140
+Buradaki n sayısından kastımız aslında kaç tane alan olacağı ile alakalı.
+
+308
+01:16:29,140 --> 01:16:33,940
+Yani şurada S1 olsun, S2 olsun, S3 olsun.
+
+309
+01:16:35,739 --> 01:16:38,340
+Şurada keselim mesela, S3 diyelim.
+
+310
+01:16:38,739 --> 01:16:46,340
+Şimdi n'i burada 3 almak demek, şu arayı 3 parçaya bölmek demek. Yani A noktasından beri. Burada sıkıntı yok.
+
+311
+01:16:46,836 --> 01:16:54,836
+Zaten şey kendi aralığında yine iki tane parçaya bölünüyor, alt bölümlere bölünüyor.
+
+312
+01:16:54,836 --> 01:17:00,836
+Shift alırsak aradaki bu haş hesaplamalarıyla böyle biraz daha virgülü sayılarla az ilgileniyor.
+
+313
+01:17:00,836 --> 01:17:06,836
+Onun dışında hani çok sıkıntısı olmaz. Yani sınırlar zaten belki üçe tam bölünüyordur.
+
+314
+01:17:07,444 --> 01:17:31,444
+Çok bir şey diyemem. Ama ben bu aralığı üç parçaya da bölebilirim. Genellikle gelenek yapılan işlemler, çift sayı almak üzerine bu şekilde bir şey söyleyebiliriz. Yani burada tek olacak, çift olacak diye kesin bir kaydı da yok aslında. Ama n ne olursa olsun, mesela Simpson 1 bölü 3 için,
+
+315
+01:17:31,988 --> 01:17:58,988
+Şunun kendisinin tek katı, en sonucunda tek katı alınmıyor. N'in değerine göre biz, işte iki N'e kadar bir genişletme yapmış oluyoruz. Tamam mı? Tamamdır hocam, sağ olun. Başka sorumuz var mı? Şimdi integral konusu bitti arkadaşlar. Normalde biz gelecek hafta sınav yapacağımız için, yani bunu burada alalım.
+
+316
+01:17:59,347 --> 01:18:03,347
+Ama gelecek hafta ders yapacağız, sınav yapmayacağız.
+
+317
+01:18:03,347 --> 01:18:11,347
+Şimdi bazı açıklamalar yapacağım, hem sınavla alakalı hem de genel şeyle alakalı. Ondan sonra dersi bitiririz.
+
+318
+01:18:11,347 --> 01:18:19,347
+İlk vizede nereye kadar sorunluyuz? Derste en son nereye kadar kaldıysak oraya kadar sorun sorarız.
+
+319
+01:18:19,347 --> 01:18:24,171
+Şimdi bizim gelecek hafta ki konumuz... Bir bakayım şöyle bir saniye...
+
+320
+01:18:25,460 --> 01:18:27,460
+Sonunda farklar olacaktı herhalde.
+
+321
+01:18:31,460 --> 01:18:33,460
+Hocam diğer grup farkı kapattı mı?
+
+322
+01:18:35,460 --> 01:18:39,460
+Onlar bizden biraz geri... Yok onlar bizden şu an ileridir haklı.
+
+323
+01:18:39,460 --> 01:18:42,460
+Geçen hafta geriydi sanki.
+
+324
+01:18:42,460 --> 01:18:46,460
+Yok onlar Simpson 1 bölü 3'e anlatmışlardı, biz anlatmamıştık.
+
+325
+01:18:46,460 --> 01:18:50,460
+Ben işte toplantıdaydım da, yani 3 aşağı 5 yukarı aynıyız.
+
+326
+01:18:50,836 --> 01:19:04,836
+Muhtemelen bunlarda belki bu integrali bitirip, yeni konuya geçecek mi bilmiyorum da ben girmeyeceğim çünkü detayları var bu konuda. Büyük parçalık olsun istemiyorum. Şu bir şey vardı, bir ders notum vardı.
+
+327
+01:19:21,908 --> 01:19:27,468
+Çok farkımız olmaz. Olsa bile yani engeve olan gruba göre bu işler yapılıyor.
+
+328
+01:19:27,468 --> 01:19:31,468
+Interpolasyon, regula falsi...
+
+329
+01:19:31,468 --> 01:19:38,268
+Sonlu farklara gelmişiz. Tamam, sonlu farkları da haftaya yapalım. Yani siz de yorgunsunuz, ben de yorgunum.
+
+330
+01:19:38,268 --> 01:19:40,347
+Araya şey girmesin.
+
+331
+01:19:40,347 --> 01:19:45,948
+[öğrenci]'nın sorusuna tekrar cevap vermiş olayım. Belki arada kayınmış gibi olduk.
+
+332
+01:19:46,676 --> 01:19:53,876
+Yani sınav haftasından önceki hafta nereye kadar geldiysek, normal şartlar altında oraya kadar sorumlu olursunuz.
+
+333
+01:19:53,876 --> 01:20:02,676
+Ama yani biz gelecek hafta sınavın şekli hakkında kararınızı vereceğiz. Test de yapabiliriz, klasik de yapabiliriz.
+
+334
+01:20:02,676 --> 01:20:10,676
+Test yapınca biraz daha soru sorma aralığımız malum geniş oluyor. Yani bütün konulardan soru sorabiliyoruz.
+
+335
+01:20:10,868 --> 01:20:35,347
+Klasik olunca ya bir tane integral, ya bir tane türev, işte bir tane lineer denklem takımı, bir tane lineer olmayan denklem çözümü gibi dört soru söyleyecek olsak her konudan birer tane çıkıyor. O konuların altındaki her yöntemlerinde bir tane soru sorulabiliyor. Ama test yaparsak nispeten daha basit sorular ama daha böyle farklı konuları ölçen sorular olabilir. Buna hocayla karar vereceğiz.
+
+336
+01:20:35,731 --> 01:20:45,731
+Ama siz normal şartlar altında bilmeniz gereken, yapmanız gereken, uymanız gereken şey, en son gördüğünüz yere doğru yere kadar çalışıyor oradan.
+
+337
+01:20:45,731 --> 01:20:50,731
+İlk konudaki hata kavramlarını böyle çok şey yapmayın, göz ardı etmeyin.
+
+338
+01:20:50,731 --> 01:20:56,731
+Çünkü biz bir şey sorarız, integral sorarız, deriz ki buradaki mutlak hata nedir veya göreceli, relatif hata nedir?
+
+339
+01:20:56,731 --> 01:21:01,731
+O tarz temel kavramları lütfen tekrar edin. İşte anlamlı basamak sayıları.
+
+340
+01:21:02,036 --> 01:21:14,036
+Bir günden sonra kaç tane basama koyacak, bunları tekrar ettiğimizde fayda var. Basit gibi görünemiyor ama o basit şeylerde detay vardır. Sorularda sorabiliyoruz. Onu söylemiş olalım.
+
+341
+01:21:14,036 --> 01:21:28,036
+Şimdi sabah Fatih Hoca ile görüşme imkanı yok olmadı da ben öğlen görüştüm. %95'iniz belki ilk defa online yıldız sistemini kullanıyorsunuz ders almak için.
+
+342
+01:21:28,372 --> 01:21:36,771
+Sınav için de ilk defa kullanacaksınız vizelerde. Bir sınav modülünü biriniz açabilir mi arkadaşlar? Ekran paylaşımı yapabilirsiniz.
+
+343
+01:21:36,771 --> 01:21:43,692
+Bir kendiniz online yıldız sayfasına bir girin, ben bir sizin arayüzünü bir göreyim, oradan bir şeye bakacağım.
+
+344
+01:21:43,692 --> 01:21:47,051
+Çünkü hocalardaki farklı, sizlerdeki farklı.
+
+345
+01:21:47,051 --> 01:21:55,372
+Fatih Hoca ile şu konu üzerinde konuştuk. Biz Fatih Hoca ile test sınavı yapacağız, yapısal programlamaya giriş dersinde.
+
+346
+01:21:56,051 --> 01:22:07,051
+Gelecek hafta derste... Ekranı vereyim mi hocam? Olur, ben ekran paylaşımı kapatayım. Gelecek hafta derste şöyle bir şey yapmayı düşünüyoruz.
+
+347
+01:22:07,051 --> 01:22:12,747
+Bir tane dummy sınav, bu dummy sınav örnek sorulardan oluşan şey değil.
+
+348
+01:22:13,108 --> 01:22:19,608
+İşte soru bir, ABC'de boş seçenekler, işte soru iki, böyle bir test sınavı tanımlayacağız sisteme.
+
+349
+01:22:19,608 --> 01:22:30,608
+Ve o tanımlanan sistemde siz, örneğin 30 dakika süreniz olacak, o süre boyunca sınavı çözmenizi, sistemi görmenizi isteyeceğiz.
+
+350
+01:22:30,608 --> 01:22:35,108
+Şimdi sistemde test sınavında şöyle şeyler var, hemen bakalım olur mu?
+
+351
+01:22:36,180 --> 01:22:58,180
+Mesela soruyu görüyorsunuz, gördüğünüz soruya geri dönme olasılığınız olmuyor. Böyle seçenekler. Ondan sonra sınavın sonuna geldiğinde submit diyorsunuz, sınavı tamamla diyorsunuz. Bazı arkadaşlar işaretliyor, işaretliyor, sınavı tamamlamayı unutuyor. Yani bu aksaklıklar olmasın diye gelecek hafta böyle bir demo ve dummy, boş bir sınav yapacağız.
+
+352
+01:22:58,644 --> 01:23:25,844
+Tabii şu an kaç kişi var? Sınıfın yarısı burada. Bunu kendi gruplarınızda duyurun. Ben Classroom'dan da yazacağım. O sınava mutlaka herkes girsin. Yani orayı bir test edin. Sağını sonunu karıştırın. Nasıl oluyormuş? Çünkü biz sizin arayüzünüzü tam bilmiyoruz. Ben şimdi size böyle kısaca izah edeceğim ama sağ olsun Berzah'ın açtı. Kendinizin test etmesi gerekiyor.
+
+353
+01:23:26,420 --> 01:23:36,420
+Diğer dersler için de mesela klasik sınav yapılacak olursa şunu yapmanız gerekiyor, onu da şimdiden söyleyelim. Mesela bu derste klasik de yapabiliriz.
+
+354
+01:23:36,420 --> 01:23:45,420
+Bir kere size sorular normal bir sınav kağıdı gelecek, siz beyaz bir kağıda çözümlerinizi düzgünce yazacaksınız.
+
+355
+01:23:45,420 --> 01:23:51,420
+Birinci sorunun çözümü, ikinci sorunun çözümü normal bir sınava giyiyor. Sonra bunun fotoğrafını...
+
+356
+01:23:52,148 --> 01:23:56,148
+Cep telefonlarında bazı uygulamalar var. Adopt Scan var.
+
+357
+01:23:56,148 --> 01:24:04,148
+Veya Office'in bu tarz uygulamalar var. Fotoğrafı çekiyorsunuz, otomatik olarak 4 tane sayfadan oluşan sizin sınav kağıdınız var.
+
+358
+01:24:04,148 --> 01:24:10,148
+Bunu otomatik olarak PDF'e dönüştürüyor. O PDF'i yüklüyorsunuz sisteme, online'ınıza.
+
+359
+01:24:10,148 --> 01:24:13,148
+Kesinlikle ama kesinlikle mail kabul edilmez.
+
+360
+01:24:13,148 --> 01:24:17,100
+Yani ben o konuda hiçbir şekilde sorumluluk kabul etmiyorum. Her şey size ait.
+
+361
+01:24:17,108 --> 01:24:23,427
+Dolayısıyla bunu tecrübe etmeniz adına tanımlayacağımız bu sınavlara lütfen şimdi girin bakın.
+
+362
+01:24:23,427 --> 01:24:28,188
+Yani bir tane dosya yükleyeceksin ama o dosyayı yükleyip işte zaman mesela önemli.
+
+363
+01:24:28,188 --> 01:24:34,028
+Bildiğim kadarıyla şöyle bir problem oluyor. Browser üzerinde bir saat gösteriyor sınava girdiğimizde.
+
+364
+01:24:34,028 --> 01:24:37,988
+O saat her zaman tazelenmiyor. Çünkü sayfayı F5 yapmanız lazım.
+
+365
+01:24:37,988 --> 01:24:42,228
+Sayfayı F5 yaptığımızda da bir önceki soru kaçabiliyor.
+
+366
+01:24:42,420 --> 01:25:05,020
+Çok fazla F5 yapmanızı da istemiyor. Bu tarz şeylere şimdiden bir bilirseniz sıkıntı değil. Bilmeden yapınca öğrenci de afallıyor tabii yani sınav endişesiyle bir anda neler yapacağını şaşırabiliyor. Bu tarz aksaklıklar olmasın istiyorum. Şimdi derslerime bir gelelim. Derslerin ekranına. Derzan duyuyor musun?
+
+367
+01:25:09,524 --> 01:25:25,524
+Sesim geliyor mu arkadaşlar? Görmüyor musun hocam şu anda benim ekranım? Şu an sadece senin şey geliyor, mouse'un sabit duruyor. Derslerim diye bir menü var ya solda. Evet, oradan nereye gireyim? Bizim dersimizde. Mouse'u oraya getir, sayısal alanınıza bir gir bakalım.
+
+368
+01:25:25,524 --> 01:25:33,484
+Mouse hareketi gelmiyor, sanki şey, ekran donmuş gibi. Bir daha durdurup bir daha başlatayım hocam.
+
+369
+01:25:37,235 --> 01:25:51,635
+Güzel değil mi hocam? Evet, şimdi ödevler sınavlar kısmı var. Burada bir size sınav tanımlayın. Bakın mesela dönem projesi tanımlanmış. Biz normalde ödeve sınava başla diye tıkladığında buraya bir tıklar mısın?
+
+370
+01:25:53,171 --> 01:26:17,171
+Aynen sınava da mesela demek ki buradan giriyorsunuz. Burada size sunulan ödev veya sınav klasik tarzda olduğu için sizin yapacağınız şey klasik sınavda aynen burada olduğu gibi çözeceksiniz. PDF olarak, Word falan değil. Sonucunu dosyanızı buraya yükleyeceksiniz. İşte seç diyorsun. Tabii şu an seçmene gerek yok. Masa üstünden ve neredeyse.
+
+371
+01:26:17,247 --> 01:26:27,847
+Doğru sınav dosyanını yükleyin. Mesela aynı işte bir gün aralıklarla sınavlar oluyor. Adınızı yazıyorsunuz. Bu sefer adınızın hangi sınav yazdığı belli değil.
+
+372
+01:26:27,847 --> 01:26:33,247
+Bir önceki günün sınavını gönderiyorsunuz. Bu sefer de mağdur olan siz olursunuz. Buna dikkat edin lütfen.
+
+373
+01:26:33,247 --> 01:26:39,247
+İşte ne bileyim yapısal programlama sınavı, sayısal analiz, devlet teorisi, fizik sınavı neyse.
+
+374
+01:26:39,380 --> 01:26:45,860
+Bunları güzelce pdf'e çevirin. Okunaklı olsun. Yani önce bir kontrol edin pdf'e.
+
+375
+01:26:45,860 --> 01:26:52,100
+Yani öyle fotoğraflar geliyor ki hiçbir şey okunmuyor. Yani ben onu okuyamadığım şey, ben de hiçbir hoca puan vermez.
+
+376
+01:26:52,100 --> 01:26:59,739
+Onun için şu uygulamaları telefonlarınıza şimdiden kurun. Adopt Scan'ın var, Office'in var, Office Lens galiba bunun adı.
+
+377
+01:26:59,739 --> 01:27:04,539
+Veya 365 olarak Free uygulamalar veya başka Play Store'larda...
+
+378
+01:27:04,819 --> 01:27:07,819
+App Store üzerinde uygulamalar bulabilirsiniz.
+
+379
+01:27:07,819 --> 01:27:16,819
+Ayrı ayrı fotoğraf çekip Word'un içine kopyalayıp PDF'e dönüştürmeye hiç gerek yok. O tarz uygulamalar kağıdın sınırlarını belirlediği için
+
+380
+01:27:16,819 --> 01:27:22,819
+aynı bu fotokopi makinesi gibi çok rahat iş görüyor. Onları kullanmanızı tavsiye ederim.
+
+381
+01:27:24,564 --> 01:27:33,684
+Eğer bu sınav test sınavı olsaydı, böyle bir ekran gelmeyecekti, işte o nasıl geleceğinde, haftaya, ders saatinde sizlere bir dummy sınavla tanımlayacağız.
+
+382
+01:27:33,684 --> 01:27:37,284
+Hocam biz devre dersinde sınava girmiştik.
+
+383
+01:27:37,284 --> 01:27:40,164
+Yani tecrübe, orada şey quiz falan mı yaptılar?
+
+384
+01:27:40,164 --> 01:27:41,684
+Kısa sınav yaptık aynen.
+
+385
+01:27:41,684 --> 01:27:42,804
+Test miydi o peki?
+
+386
+01:27:42,804 --> 01:27:46,484
+Testti, sonra çözümlerimizi de bir PDF halinde yükledik.
+
+387
+01:27:46,484 --> 01:27:50,084
+Tamam, mesela oraya bir girelim, devre teorisine.
+
+388
+01:27:50,644 --> 01:28:00,644
+En azından bizden önce birileri sizlere yaptırmış. Mesela burası galiba evet. Kısa sınav çoktan seçmeli, güzel.
+
+389
+01:28:00,644 --> 01:28:12,644
+Yani direkt girip çekebiliyorsunuz. Tamam, güzel. Yani burada da demek ki az çok tecrübeniz var. Biz yine de belki girmeyen vardır diye. Şimdi...
+
+390
+01:28:12,851 --> 01:28:22,051
+Sınavda, hangi sınavda bilmiyorum ama bizim sınavlarımızın bazılarında yani hocayla bunu işte hem bağımlı hocayla hem de parti hocayla dersine göre karar vereceğiz.
+
+391
+01:28:22,051 --> 01:28:28,051
+Soruya geri dönüş olsun veya olmasın o hocayla ikimiz arasındaki karar olacak.
+
+392
+01:28:28,051 --> 01:28:34,051
+Yani falanca hoca yapmış, bizim de öyle yapmamız gerekmiyor. Biz belki başka bir şey yapabiliriz.
+
+393
+01:28:34,051 --> 01:28:38,051
+Hocam PDF için yüklemek için ekstremiz olacak mı?
+
+394
+01:28:38,644 --> 01:28:54,844
+Yani o sınav süresine dahil edilir. Size sınav süresi kağıtta, soru kağıdında 70 dakika yazıyorsa, o 70 dakikanın içerisinde yükleme süresi de dahildir. Biz ona opsiyon olarak 3-5 dakika sistemde bir 5 dakika fazladan verebiliriz.
+
+395
+01:28:54,844 --> 01:29:02,244
+Ama onun dışında sistem tamamlandığında, ödev şeyi tamamlandığında yüklemek söz konusu değil arkadaşlar.
+
+396
+01:29:02,707 --> 01:29:25,707
+Yani ne yapın ne edin, zamanında eksik dahi olsa yükleyin. Sonra geciktin, şu oldu, şu oldu, yani mazeret kabul edilmiyor. Çünkü biz anlık olarak sınavı yükleme süresinde online yıldızda beklemek zorunda değiliz. Soruları ben başta mesela sizlere anlatacağım. O Zoom toplantısında aynı laboratuvarda olduğu gibi. Sonra sistem zaten açık, siz yükleyeceksiniz.
+
+397
+01:29:25,876 --> 01:29:32,115
+Sınav sonunda beni bulamazsınız. Süreyi de ertinlemem söz konusu değil veya başka bir hocayı da bulamazsınız.
+
+398
+01:29:32,115 --> 01:29:40,755
+Dolayısıyla sizin zamanında yüklemeniz lazım. Sonunda bana gelen mailleri kesinlikle ben dikkate almam. Çünkü yasa dışı, yani kural dışı iş yapmış oluyoruz.
+
+399
+01:29:40,755 --> 01:29:48,755
+Zamanında onun sıkıntısını çektik. Onun için sadece online yıldızdan kabul edeceğiz. Süreyi de uyumlu bir şekilde, makul bir şekilde ayarlayacağız.
+
+400
+01:29:49,492 --> 01:29:54,492
+Hocam, bahsettiğiniz Zoom toplantısını sıhhat süresine dahil etmezsiniz, değil mi?
+
+401
+01:29:54,492 --> 01:29:58,492
+Valla bu hafta laboratuvarda var mıydım, bilmiyorum.
+
+402
+01:30:02,387 --> 01:30:04,387
+Ses geliyor mu?
+
+403
+01:30:04,387 --> 01:30:05,387
+Evet hocam, vardım.
+
+404
+01:30:05,387 --> 01:30:16,387
+Bu hafta laboratuvarda varsam ben dahil etmedim. Yani sınavı, şey, laboratuvarı on dakika geç başlattım. Süreyi de ona uygun arkadaşlara bildirdim. Aynı şey orada da olur.
+
+405
+01:30:16,387 --> 01:30:27,387
+Yani biz o konuda üzerimize düşeni yaparız. Yeter ki siz de üzerinize düşeni tam olarak yapın. Sonra lüzumsuz yere ayrıcalıklar, mailler veya mazeretler olmasın.
+
+406
+01:30:27,444 --> 01:30:34,444
+Herkes görevini gerektiği gibi yerine getirsin. O konuda ben kendime kefiyim, tamam mı?
+
+407
+01:30:34,444 --> 01:30:40,444
+Tamamdır hocam, teşekkürler. Rica ederiz. Başka sorumlu bir chatten bir şey var.
+
+408
+01:30:40,444 --> 01:30:48,444
+Ha, soruyu cevapladık. Evet, şimdilik bu kadar arkadaşlar. Bugünlük dersimiz yeterli. Konumuzu da bitirdik.
+
+409
+01:30:48,444 --> 01:30:52,444
+Herhangi bir sorunuz yoksa, hepimize iyi günler diliyorum.
+
+410
+01:30:52,444 --> 01:30:54,444
+İyi günler hocam.
+
+411
+01:30:54,623 --> 01:30:55,864
+İyi günahroja.

@@ -1,0 +1,1259 @@
+1
+00:05:11,444 --> 00:05:13,164
+Merhaba arkadaşlar, sizin geliyor mu?
+
+2
+00:05:15,484 --> 00:05:16,524
+Geliyor hocam.
+
+3
+00:05:20,500 --> 00:05:22,560
+Bakılımı düzeltmem gerekiyor.
+
+4
+00:05:22,579 --> 00:05:23,519
+Geliyor hocam, sesiniz.
+
+5
+00:05:24,439 --> 00:05:24,879
+Geliyor mu?
+
+6
+00:05:25,980 --> 00:05:28,660
+Evet hocam, geliyor. Az önce bir gürültü vardı ama şu an iyi.
+
+7
+00:05:29,980 --> 00:05:31,740
+Tamam, peki. Teşekkürler.
+
+8
+00:05:33,620 --> 00:05:36,639
+Bugün sunumlara başlıyoruz. Daha önce belirttiğimiz gibi.
+
+9
+00:05:38,779 --> 00:05:41,740
+Yalnız ben şu anda listeyi açamadım.
+
+10
+00:05:43,800 --> 00:05:46,540
+Bugünkü sıralamada kim vardı ilk sırada?
+
+11
+00:05:48,660 --> 00:06:02,520
+[öğrenci] var hocam. [öğrenci] bugün mail attı, seminer dersini bırakmış, önümüzdeki dönem alacakmış. O yüzden ikinci sıradaki arkadaş kimdi?
+
+12
+00:06:05,100 --> 00:06:14,000
+[öğrenci] çalışır hocam. Burada mı? Şu an yok hocam burada. Üçüncü sıraya geçelim.
+
+13
+00:06:14,644 --> 00:06:39,843
+[öğrenci] geldi şimdi ama hocam. [öğrenci] sunum yapacak mısın? Yok hayır hocam. Dinlemek için. Tamam dinlemek için katıldım. Peki teşekkürler. Üçüncü sırada. Üçüncü sırada ben vardım hocam. [öğrenci] [öğrenci]. Evet. Ben yapabilirim. Hazırım hocam ben yapabilirim. Tamam başlayalım o zaman buyurun.
+
+14
+00:06:43,091 --> 00:06:46,891
+Ekran paylaşabiliyor musunuz? Bir kontrol edin lütfen.
+
+15
+00:06:47,672 --> 00:06:53,172
+Tamam hocam, kontrol ediyorum şu anda. Kamerada açayım mı hocam?
+
+16
+00:06:53,951 --> 00:06:56,611
+İyi olur. Evet, yüzünüzü görelim.
+
+17
+00:06:58,831 --> 00:07:03,572
+Ekran var hocam, o yüzden bazen şöyle sağ tarafa bakıyorum. O yüzden kusura bakmayın.
+
+18
+00:07:05,312 --> 00:07:06,971
+Geldi mi hocam şu an ekran?
+
+19
+00:07:06,971 --> 00:07:08,911
+Evet, görebiliyoruz.
+
+20
+00:07:09,620 --> 00:07:14,620
+Tamam, değişmem lazım sanırım. Şu an...
+
+21
+00:07:14,620 --> 00:07:16,660
+Tamam, güzel görünüyor.
+
+22
+00:07:17,280 --> 00:07:22,379
+Tamamdır hocam. Merhaba hocam, merhaba arkadaşlar. Başlıyorum hocam.
+
+23
+00:07:22,899 --> 00:07:28,439
+Buyurun, buyurun. Burayı söyleyeyim. 20 dakikada sunumu tamamlamanız gerekiyor.
+
+24
+00:07:29,172 --> 00:07:35,112
+Tamam hocam. [kişisel bilgi]
+
+25
+00:07:36,731 --> 00:07:42,711
+[öğrenci]. [kişisel bilgi]
+
+26
+00:07:46,731 --> 00:07:55,711
+Akışım şu şekilde. İlkin bir giriş yapacağım konuyla alakalı. Daha sonra literatürde bulduğum, araştırma yaptığım çalışmaların bazılarından bahsedeceğim.
+
+27
+00:07:57,076 --> 00:08:03,596
+Daha sonra bu araştırmalardan yola çıkarak kendi yapmış olduğum çalışmalar var. Bunlar hakkında bahsedeceğim.
+
+28
+00:08:04,196 --> 00:08:12,855
+Ve en son da bu yaptığım çalışmalarda ne elde ettim ve ilerleyen dönemlerde ne düşünüyorum, ne planlıyorum. Bunun hakkında bilgi vereceğim.
+
+29
+00:08:14,735 --> 00:08:38,276
+Hata parametri üzerleri aslında sinir ağları eğittiğimiz zaman ortaya çıkan bir şey. Sinir ağlarını eğitmek dediğimizde de aslında bizim elimizde çok boyutlu bir non-convex olan fonksiyon var. Ve bu fonksiyon üzerinde optimizasyon problemini çözmeyi amaçlıyoruz biz burada. Bu optimizasyon problemini çözerken de çeşitli algoritmalar kullanıyoruz. Bunların en yaygın olanları.
+
+30
+00:08:39,155 --> 00:08:49,995
+Gradient Descent, Stochastic Gradient Descent, Adam gibi algoritmalar. Bu hata parametre yüzeyini mesela örnek olarak ben bir tane...
+
+31
+00:08:50,355 --> 00:09:09,216
+Snapchat Ensemble yayınında vardı. Oradan bir görüntü koydum. Bu tabii ki bizim hata parametre vizelerimiz çok boyutlu. Normalde bunu şu anki dünyamızda göstermek oldukça zor. Ama bunun temsili olan iki boyutlu ve üç boyutlu olan hata parametre vizelerini gösterebiliyoruz.
+
+32
+00:09:09,216 --> 00:09:18,255
+Burada da örneğin şu mavi nokta benim bir başlangıç noktam. Yani parametrelerimin ilk başlangıç değerleriyle bulduğum bir nokta.
+
+33
+00:09:18,355 --> 00:09:20,355
+Ta parametri yüzeyinde ve ardından...
+
+34
+00:09:21,235 --> 00:09:47,515
+Bu modeli eğittikten sonra giderek benim bu lokal minimum noktaya erişmemi sağlıyor. Benim aslında yapay sinir anı eğitmekteki amacım bu lokal minimum noktalardan herhangi birine konverge etmek. Bu görüntüde de gördüğünüz gibi lokal minimum noktalar ve eğer point, saddle point dediğimiz eğer noktalarının sayısı benim parametre sayıma göre eksponansiyel bir şekilde artmakta.
+
+35
+00:09:49,235 --> 00:10:00,175
+Yüzeylerinin analizinin amacı da hem bu eğitim sürecini iyileştirmek hem optimizasyon algoritmaları daha iyi iyileştirilebilir mi?
+
+36
+00:10:02,067 --> 00:10:19,207
+Bu konuyla alakalı yapılmış olan çalışmalara geçtiğimiz zaman, literatürde benim incelediğim çalışmaların hemen hemen hepsinde I am Good Fellow'un ve arkadaşlarının yaptığı bu çalışmaya atıf verilmişti.
+
+37
+00:10:19,207 --> 00:10:29,207
+2014 yılında yapılmış olmasına rağmen halen daha yapı yayınlanan çalışmalarda bu konuya yine değiniliyor. O yüzden ben de ilk bu konuyla başlamak istedim.
+
+38
+00:10:30,067 --> 00:10:48,648
+I am good fellow ve arkadaşları aslında iki tane temel soruya cevap aramışlar bu hata parametre üzerlerini inceleyerek. Acaba yapay sinir ağlarını eğitirken ben yalnızca bir yerel minimum noktaya mı gidiyorum yoksa başka yerel minimum noktalara da girip çıkıyor muyum? Bununla alakalı bir çalışma.
+
+39
+00:10:49,172 --> 00:11:11,392
+Bu soruya bir cevap aranmış. Bir diğeri de bu modeller eğitilirken çeşitli eğer noktalarından geçiyor mu? Bu noktalara yaklaştıklarında hızlarında herhangi bir değişiklik oluyor mu? Bu iki soruya cevap aramışlar. Bunun için de çok basit aslında bir yöntem kullanmışlar. Linear PET Experiment diye bir yöntem kullanmışlar.
+
+40
+00:11:12,211 --> 00:11:22,251
+Burada da amaç aslında bilinen iki nokta arasındaki yolları linear interpolasyon yöntemiyle bulunabileceğini iddia etmişler.
+
+41
+00:11:22,412 --> 00:11:28,731
+Burada da şu şekilde bir fonksiyon var. Benim loss fonksiyonum J, Q değeri, Q benim parametrelerim.
+
+42
+00:11:28,731 --> 00:11:36,432
+Burada Q0 ve Q1'in alfanın 0-1 arasındaki değerler için değiştiğini görmekteyiz.
+
+43
+00:11:40,211 --> 00:11:53,632
+Başlangıç noktama bir değerini verdiğimde de bu en son konverç olan noktayı gösteriyor. Bu ikisi arasındaki değerleri ölçekli bir şekilde verdiğimde de bu iki nokta arasındaki yolu bulabiliyorum.
+
+44
+00:11:54,611 --> 00:12:19,111
+Bunun için yaptıkları deneysel çalışmalar var. Kendi yapmış oldukları Multiprediction Deep Boltzmann Match'in modelini MNIST üzerinde çalıştırarak bu hata parametri üzerlerini incelemişler. İncelemeler sonunda şurada 3 boyutlu olarak görünüyor. Burada başlangıç noktasından başlayıp daha sonra minimum noktaya gelene kadar izlenen yolu gösteriyor. Bu aslında bizim modelimizin izlediği yol.
+
+45
+00:12:22,611 --> 00:12:38,611
+Liner bir şekilde ortaya çıkan yolu gösteriyor. Burada şuradan da görünebiliyor bir anomali var. Burada farklı bir lokal minimum veya saddle point var. Normalde eğer aradığımız sonuçların cevabı evet olsaydı şurada görünen şey de...
+
+46
+00:12:39,379 --> 00:13:07,340
+Grafikte, 3 boyutlu olarak görülen grafikte bu anomaliye girmiş olacaktı. Ama bizim izlediğimiz, daha doğrusu çizdirdiğimiz yoldan görebileceğimiz gibi bu noktaya herhangi bir şekilde uğramadan yanından geçerek direkt minimum noktaya konverç ediyor. Yani bu aradıkları soruların cevabını aslında deneysel bir şekilde tabii ki hayır cevabını veriyorlar. Ardından bu yöntemle alakalı 2016 yılında bir çalışma yapılıyor.
+
+47
+00:13:07,379 --> 00:13:21,379
+Bu uygulanan yöntemin, acaba farklı optimizasyon algoritmalarıyla veya farklı başlangıç noktalarıyla başladığımız zaman nasıl bir sonuç elde edebiliyoruz?
+
+48
+00:13:21,460 --> 00:13:26,259
+Yine bu şekilde oluyor mu diye bir çalışma yapılmış.
+
+49
+00:13:26,259 --> 00:13:32,203
+Aynı zamanda bir diğer bu deneyde yapılansa, batch normalizasyonun bu...
+
+50
+00:13:32,659 --> 00:13:48,839
+Yerel minimum nokta arasındaki oluşan hata parametre yüzeyinin nasıl etkilediğini araştırmışlar. Bunun için de yaptıkları çalışmada Sifaron veri seti kullanılmış, Bide Amnist veri seti kullanılmış, VGG, LSTM ve NIN modeller üzerinde çalışmalar yapmışlar.
+
+51
+00:13:48,839 --> 00:14:00,420
+Burada çalışmaya ait bazı görseller mevcut. Burada aynı başlangıç noktasından ADAM SGD-RK2 ve ADAM-RK2 modelleriyle eğitilen.
+
+52
+00:14:00,659 --> 00:14:13,359
+Yerel minimum noktaları gösteriyorlar. Burada aslında aynı başlangıç noktasından farklı optimizasyon yöntemleriyle çalıştırılında farklı noktalara konverj ettiğini göstermeyi amaçlamışlar.
+
+53
+00:14:14,740 --> 00:14:28,320
+Grafikler de onlara ait. Bir diğer şey de farklı başlangıç noktalarından aynı optimizasyon yöntemini kullanarak konvor etmişler ve burada da farklı noktalar bulunabileceğini göstermişler.
+
+54
+00:14:28,320 --> 00:14:42,379
+Bir diğer deneylerinde ise bir modeli 5 normalizasyon kullanarak diğerini 5 normalizasyon kullanmayarak elde edilen iki tane model var. Bu hata parametri üzerlerini inceledikleri zaman
+
+55
+00:14:42,740 --> 00:14:49,480
+Beş normalizasyonla elde edilen modeller arasında günü modal sıçramalar olduğu görünüyor.
+
+56
+00:14:49,480 --> 00:14:59,879
+Ama beş normalizasyon olmayan modellerde ise bu şekilde değil de biraz daha tümsek bir yapı elde etmişler.
+
+57
+00:15:01,427 --> 00:15:15,248
+Bir diğer çalışmaya geçtiğim zaman burada artık 2018 yılında yapılmış bir çalışma bu. Bu noktalar arasında acaba bulunan yerel minimum noktalar arasında ben bir yol bulabilir miyim? Bununla alakalı bir çalışma yapmışlar.
+
+58
+00:15:29,427 --> 00:15:53,908
+Bu noktayla aynı doğruluk derecesinde birbirlerini birleştiren yollar bulabilir miyim? Bununla alakalı bir çalışma yapmışlar. Buna da mod connectivity deniyor aslında. Daha sonra bu bulunan noktalarla acaba ben snapshot ensemble yöntemindeki gibi bir ensemble model oluşturabilir miyim? Bununla alakalı bir çalışma buradaki çalışmada. Burada da temel amaç aslında şu.
+
+59
+00:15:54,899 --> 00:16:07,440
+Bu linear yol üzerindeki loss fonksiyonunu yine SGD Stochastic Gradient Discentrum'un yöntemini optimizasyon algoritmasını kullanarak aslında yeni yollar keşfetmişler.
+
+60
+00:16:07,860 --> 00:16:24,899
+Burada da yaptıkları, daha sonra bu yol üzerindeki noktalarla bulunan Ensemble yöntemine de Fast Geometry Ensemble yöntemi adı vermişler. Bununla alakalı bir çalışma da biz yaptık. Onunla alakalı da ilerleyen zamanlarda sunacağım.
+
+61
+00:16:33,587 --> 00:17:01,587
+İpok sayısını her iki model içinde eşit tutmuşlar. Buradaki görülen 1B, 2B, 3B aslında ipok sayısını gösteriyor. 1B, B aslında 150 ipo'a denk geliyor. 3 tane modeli kıyaslamışlar. Birisi normal, individual yani herhangi bir ensemble modeli olmayan bireysel bir model. Diğeri snapshot ensemble yöntemiyle bulunan bir model. Diğeri de kendi vadettikleri fast geometry ensemble yöntemi.
+
+62
+00:17:01,587 --> 00:17:22,688
+Burada yapılan deneylerde hem bireysellerde buradaki görülen çarpı işaretleri, maviler, snapshot ensembli, yeşiller, festi geometriyle bulunan bireysel modelleri, kareler ise bunların toplu bir şekilde ensembli şeklinde gösterilmesini, ensembli şeklinde olan noktaları temsil ediyor.
+
+63
+00:17:29,172 --> 00:17:32,971
+Fast Geometry Ensemble'ın daha başarılı olduğunu...
+
+64
+00:17:33,011 --> 00:17:59,755
+Bu örneğe bakalım.
+
+65
+00:17:59,827 --> 00:18:23,367
+Referans model dediğim model. Diğer noktalar ise buradaki hiper parametreleri değiştirerek örneğin batch size'ını 4000 yapmış. Diğer bütün her şey aynı. Sadece batch size 4000. Burada optimizasyon yöntemi değiştirmiş. Mesela burada veri çoğullama işlemini yapmaymış. Bu hiper parametreler değiştiğinde acaba ben yine bu yolları bulabilir miyim? Bununla alakalı bir çalışma yapılmış.
+
+66
+00:18:24,307 --> 00:18:46,248
+Buradaki ata parametre yüzeylerini yine Linear Pad Experiment yöntemi ve bu Mod Connectivity yöntemiyle yapılmış 20, 40, 60 ve 80 epoch'ta bulunan yolları bu şekilde görebiliyoruz. Yine bu yöntemin Mod Connectivity'nin esnek bir yapıya sahip olduğunu, farklı hiperparametreler içinde bunun kullanılabileceğini göstermişler.
+
+67
+00:18:52,307 --> 00:19:12,387
+Burada da aslında bu Mod Connectivity ve Linear Pet'in özeti şeklinde bir yayın bu da. Burada ilk başta I'm Goodfellow'un dediği yöntemi görebiliyoruz. Yönteme ait görseli görebiliyoruz. Her bir nokta farklı noktalara converge ediyor. Burada ise bu converge eden noktalar arasında yani Garipov tarafından yapılan çalışmada.
+
+68
+00:19:13,107 --> 00:19:29,407
+Yollar bulunabileceğini gösteriyor. Bir diğer çalışma, yani bu çalışmada yapılan yöntem ise bu yollardan ziyade hem bu yollara hem de bunlara aslında bir volüm bulunabileceğini, yani orada bir hacim olabileceğini söylüyor bu lokal minimum noktalar arasında.
+
+69
+00:19:29,407 --> 00:19:41,107
+Bunu da aslında mod connectivity yöntemiyle benzer bir şekilde yapıyor. Ben bu iki nokta arasında birden fazla yol bulabilirim diyorlar. Bu buldukları yollarda...
+
+70
+00:19:41,107 --> 00:19:48,847
+Q0, Q1 ve Q2. Bu Q0, Q1, Q2 modlarını birleştirip bir hacim elde edebilirim.
+
+71
+00:19:48,947 --> 00:19:53,447
+Ve bu hacimin içerisinden herhangi bir nokta aldığım zaman, neresinden alırsam olayım,
+
+72
+00:19:53,447 --> 00:20:00,000
+ben bu V0 ve V1 arasında aynı doğruluk derecesine sahip.
+
+73
+00:20:00,000 --> 00:20:25,119
+Bu bütün hepsini incelediğim zaman neler öğrendim? Sinir A modellerinde aynı noktadan başlansa bile farklı lokal minimum noktalar elde edilebildiğini, bu lokal minimum noktalar arasında yüksek yollar olabileceğini, hatta volümler olabileceğini ve özellikle incelediğim her çalışmada 5 normalizasyonun hata parametre yüzeyini nasıl etkilediğini araştırmışlar.
+
+74
+00:20:28,000 --> 00:20:48,740
+Bu çalışma var DNAsel olarak. Bunların birincisi lokal minimum noktalar arasında linear interpolation yani o linear experiment yöntemini kullanarak topluluk ensemble model oluşturabilir miyim? Bir diğeri ise lokal minimum noktasının ulaştığı noktanın topolojisini acaba Monte Carlo yöntemiyle ben keşfedebilir miyim? Bununla alakalı çalışmalarım var.
+
+75
+00:20:49,652 --> 00:21:17,552
+Burada da ben DenseNet 169, DenseNet 201 ve EfficientNet'i kullandım. Şu sol tarafta gördüğünüz turuncu noktalar benim aslında farklı başlangıç noktalarından başlanıp bulunmuş 5 tane farklı modelimi gösteriyor. Diğer maviler ise benim bu 5 farklı modelin aralarından seçtiğim noktaları temsil ediyor. Bunların bu şekilde göstermemin nedeni aynı nokta olmadığını göstermek için. Yani aynı noktalar değil bunların her biri farklı.
+
+76
+00:21:17,652 --> 00:21:19,012
+Bu noktalar olduğunu göstermek için.
+
+77
+00:21:19,955 --> 00:21:47,955
+Bu şekli çizdirdim. Ardından mesela buradan Q0 ve Q1 arasında ben bir lineer yol çizdiğim zaman şu mavi ile gösterdiğim bir 345 bunu 10 parçaya böldüm 9 noktayla. Buna ait loss grafiğini görebiliyorsunuz. Özellikle mesela şu 5 noktası tam bir ER noktası model arasında. Ardından bunları batch sayısı adil olacak bir şekilde.
+
+78
+00:21:47,955 --> 00:21:49,355
+Normalde bunu...
+
+79
+00:21:49,619 --> 00:22:16,759
+Beş tane modelim var. Elli tane. Elli ipok eğitiyorum hepsini toplamda. Bunları da onun onda biri kadar eğittim. Yani her biri aldığım noktayı. Mesela bunu on ipok ettiysem bunu bir ipokla eğittim. Normalde burası benim on ipok elde ettiğim bir nokta ama ben bu ara noktadan bir değer alıp bir ipok ettim dedi. Onunla aynı noktayı bulabildiğimi fark ettim. Ve bu her iki nokta arasında ikişer tane nokta seçip bunlarla bir ensembl model oluşturdu.
+
+80
+00:22:17,619 --> 00:22:29,619
+Burada DenseNet 169 ve 201'de yaptığım çalışmaları görebiliriz. Buradaki 1, 2, 3, 4, 5 dediğim benim orjinal modellerim. Bu 5. bu eğittiğim 10 tane ipo.
+
+81
+00:22:31,155 --> 00:22:59,155
+Adil olması açısından beşinciyi şu 1, 2, 3, 4'e dışarıdan veriyorum. Yani benim ara noktalarımı 1, 2, 3, 4'ten alıyorum. 10 kere eğitiyorum. 10 tane buraya ekleme yapmak gerektiği için beşinci modeli veriyorum bunlara. Bu sarı ise bu orijinal modellerle benim oluşturduğum bir Ensemble model. Kırmızıyla olan ise benim yeşillerle yani ara noktalarla oluşturduğum Ensemble model. Bunu çalıştırdığımız zaman yani gözlemlediğim zaman DenseNet 169'da bunun gayet...
+
+82
+00:22:59,155 --> 00:23:12,155
+Evet iyi oldu. Aslında Ensemble arasında çok farklı ama bireysel noktaların normal orijinal noktalardan daha iyi olduğunu ama diğer modellerde DenseNet 201 ve F-ShiftNet de aynı olmadığını gördüm.
+
+83
+00:23:12,500 --> 00:23:39,360
+Bu yüzden acaba yöntemi değiştirip burada iki tane ara nokta yerine bir tane tam saddle point'ten alsam acaba nasıl olur? Çünkü bunun nedeni de ensembl modellerde modeller arasındaki varyans değeri ne kadar farklı olursa başarım o kadar arttığı için buradan acaba saddle point'lerden aldığım zaman farklı şeyler elde edebilir miyim? Daha farklı modeller, farklı sorulara cevap veren modeller elde edebilir miyim? Bunun araştırmasını yaptım.
+
+84
+00:23:40,500 --> 00:23:48,000
+Bir soracağım burada. Grafikte eğitimden önce ara noktalar, eğitimden sonra ara noktalar diyor. Ne demek o?
+
+85
+00:23:48,468 --> 00:24:05,168
+Eğitimden önce hocam benim I am good fellow'un dediği linear pet experiment'ta yani bu iki nokta arasında ben linear bir pet çektiğim zaman şu şekilde bir grafik buluyorum. Yani burada herhangi bir eğitim yapmadığım zaman aslında bu iki nokta arasındaki şeyi aynı doğrulukla birleştiremiyorum.
+
+86
+00:24:06,607 --> 00:24:15,748
+Eğitimden sonra dediğim de mode connectivity yöntemindeki gibi bu iki nokta arasındaki linear yolun loss fonksiyonuna göre bir eğitim işlemi yapıyorum.
+
+87
+00:24:16,468 --> 00:24:27,147
+Bulabilmek için aynı doğrulukta. Bu eğitimden sonra dediğimde bu noktanın aslında yani bu bir noktasının eğitime ben bu bir noktasından başlıyorum ve eğitiyorum.
+
+88
+00:24:27,147 --> 00:24:35,508
+Eğittiğim zaman benim noktamın loss değeri buraya geliyor. Yani bir buçuktan 0.5'e geliyor.
+
+89
+00:24:36,756 --> 00:24:39,256
+İki için de benzer şekilde mi oluyor?
+
+90
+00:24:39,536 --> 00:24:59,836
+Hepsi için oluyor hocam, evet. Bu bir için buraya geliyor, iki buraya geliyor, üç buraya geliyor, dört buraya, beş buraya. Beş normalde, mesela burada diğerleri tam düzken, beşte biraz daha hafif çıkıntı var. Bunun nedeni de aslında bu noktanın daha zor eğitilir olması, saddle point olduğu için bu noktanın daha zor eğitilir olduğunu da gösteriyor aslında burada.
+
+91
+00:25:01,556 --> 00:25:27,036
+Ortada, tam ortadaki nokta olduğu için diyorsun. Evet hocam, tam eğer noktası olduğu için, yani şurada görünüyor zaten mesela bu eğerler var ya, yani bunun sağ tarafı, sol tarafı minimum ama bu tarafları daha yerel maksimum noktalar ve aslında şu anda da en çok çalışılan alanlardan biri de bu. Bu eğer noktalardan nasıl kaçınabilirim ile alakalı çalışmalar yapılıyor.
+
+92
+00:25:29,556 --> 00:25:47,256
+Buradan çıkması çok zor oluyor. Çünkü etrafı tam ortası minimum ama etrafı daha maksimum ve ilerleyebilecek. Yani benim o gradiyen yöntemimde güncelleyebilecek herhangi bir yeni jenerasyonum gelmiyor burada. Daha zor öğreniyor aslında.
+
+93
+00:25:48,355 --> 00:25:50,196
+Tamam. Teşekkürler.
+
+94
+00:25:52,788 --> 00:26:01,268
+Ardından dediğim gibi buradaki şeyi değiştirip, yöntemi değiştirip ben tam ortadan bir değer alsam nasıl olur dedim.
+
+95
+00:26:01,268 --> 00:26:08,908
+Ama burada da şöyle bir şey oluyor. Benim dört tane modelim var ve bunların her birinden bir tane aldığım zaman alabileceğim başka değer kalmıyor.
+
+96
+00:26:09,108 --> 00:26:14,248
+Bu yüzden de ikinci, en son bölümde bahsettiğim volüm olayını kullandım.
+
+97
+00:26:14,688 --> 00:26:20,728
+Yani ben bir iki tane model yerine üç tane modeli birleştirip acaba tam ortasındaki modeli alsam nasıl olur?
+
+98
+00:26:20,788 --> 00:26:34,788
+Burada da şu 1, 2, 3, 4, 5 yine de dediğim gibi az önceki olduğu gibi orijinal modellerim. Bunlar da benim aralardan aldığım 1, 2. 1, 2 dediğim 1 ile 2'nin arasından. 1, 3 dediğim 1 ile 3'ün. 1, 4, 1, 4. Burada da...
+
+99
+00:26:35,571 --> 00:27:02,491
+En sonunda da 1-2-3, 1-2-4, 1-3-4 ve 2-3-4 modellerinin arasından aldığım değerler mevcut. Bunlarla alakalı da yaptığım zaman bir çalışma. Yine çok fazla bir değişiklik olmadığını, hatta DenseNet 201 yönteminde orijinal modellerin ara noktalardan daha iyi olduğunu gördüm. Yaklaşık 1,5 aylık bir çalışmaydı bu. Bunun sonunda artık çalışmayı burada bıraktık. Dedik artık buradan şey olmuyor diye, gösteremiyoruz diye.
+
+100
+00:27:03,571 --> 00:27:20,891
+Ardından bir diğer çalışma şu şekildeydi. Burada da bizim geldiğimiz lokal minimum noktasının acaba etrafındaki topolojiyi biz bulabilir miyiz? Yani dağılımı keşfedebilir miyiz? Bununla alakalıydı.
+
+101
+00:27:22,291 --> 00:27:46,251
+Stokastik bir yöntem olan Monte Carlo yöntemini kullandık. Şurada Pisto kodunu görmek mümkün. Burada yaptığımız aslında temel şey benim geldiğim en son nokta var. Bu en son noktanın parametrelerini ben 0.001 ve 0.001 arasında rastgele değerler, gürültü değerleri vererek acaba buradaki şeyi bulabilir miyim?
+
+102
+00:27:50,291 --> 00:28:14,151
+Eski noktadan ya daha iyi olması lazım ya da arasında 0.001 bir fark olması lazım. Ve sabit bir doğruluk değerim var benim. O da 0.70. Bunu koymamızın nedeni de şu 0.001 öyle bir hale geliyor ki çalıştırdıktan sonra model artık daha kötüye gitmeye de başlayabiliyor. Daha kötü bir yolda izlemeye başlayabiliyor. O yüzden sabit bir değer de koyuyoruz burada.
+
+103
+00:28:17,715 --> 00:28:40,516
+En son bulduğum modeli, yeni model kabul edip buradan eklemeye devam ettiğimiz zaman dağılımı değil de sanki bir tarafa gidiyormuş gibi gördük. O yüzden bunun önüne nasıl geçebiliriz diye düşünürken bu verdiğimiz Monte Carlo yöntemiyle bir tane yol üzerinden değil de ben bunu dallandırırsam nasıl olur diye düşündük.
+
+104
+00:28:45,715 --> 00:29:02,875
+Bu lokal minimum noktadan, bu Monte Carlo yöntemiyle beş tane farklı yer buluyorum. Ardından bunların her biri için beş tane farklı. Daha sonra bu bulduklarımın her birinden beş tane farklı model bularak sanki bir ağaç yapısı dallanıyormuş gibi bir yapı kurduk burada.
+
+105
+00:29:02,875 --> 00:29:08,875
+Tabii ki bu bulduğum her nokta benim istediğim gibi olmuyor. Bunlar da aslında olması gereken çünkü topolojide...
+
+106
+00:29:09,875 --> 00:29:36,415
+Bazı yerlerde daha maksimum, bazı yerlerde daha yerel minimum noktalar var. Bunlar da zaten eleniyor otomatik olarak kendisi. Bunu örneğin bir çalışma yaptığımız zaman şurada görünebiliyor. Bu PCI yöntemiyle indirgeyip bu Lost Landscape'leri çizdirdiğimiz zaman gerçekten de artık bir grafiği yol üzerinde değil de daha dağınık, daha şey olduğunu gördük. Sanki topolojiye göre.
+
+107
+00:29:38,067 --> 00:30:00,000
+Bu noktaların yer aldığını gördük. Bunu daha da ilerlettik. Acaba aynı noktadan başlayıp iki tane farklı noktaya konverç olmuş nokta üzerinde çalıştırsak nasıl olur diye çalıştırdığımız zaman bunu TCNA ile boyut indirgeyip çizdirdiğimiz zaman şu şekilde bunun iki boyutta versiyonu da şu şekilde. Burada aslında artık tamamen...
+
+108
+00:30:00,180 --> 00:30:27,140
+Topolojiyi öğrenebildiğini gördük. Örneğin şuradaki kırmızı noktalar bir şeyi. Hatta şuradaki kırmızı benim geldiğim lokal minimum noktayı. Şuradaki maviler de diğer bir modeli ve şuradaki mavi de benim diğer lokal minimum noktamı gösteriyor. Bu siyahlar da benim. Bu Monte Carlo yöntemiyle yani tamamen herhangi bir eğitim, herhangi bir şey olmadan tamamen rastgele bir şekilde buldum ve bu lokal minimum noktayla aynı olan noktaları gösteriyor.
+
+109
+00:30:28,180 --> 00:30:44,559
+Bu şeyi bulabildikten sonra bütün hepsinde incelediğim çalışmaların mesela 5 normalizasyon yönteminin nasıl etkilediğini incelemişler. Ben de bununla alakalı bir çalışma yaptım. İki model var. Tek farkı sadece. Bunda 5 normalizasyon yok. Bu tarafta 5 normalizasyon var.
+
+110
+00:30:53,011 --> 00:30:57,891
+Şu benim kırmızı olan, yıldız bişiminde olanlar benim minimum noktam.
+
+111
+00:30:58,011 --> 00:31:04,491
+Ve bu minimum noktadan başlayıp 909 tane, 5 normalizasyon olmayan şeyde 909 tane nokta bulabildim.
+
+112
+00:31:05,151 --> 00:31:09,731
+Aynı şekilde hiçbir şeyi değiştirmeden bunu 5 normalizasyonlu yönteme uyguladığım zaman,
+
+113
+00:31:10,451 --> 00:31:13,711
+5 dallanma için 2 tane nokta bulabildim sadece.
+
+114
+00:31:13,711 --> 00:31:20,551
+Bunu giderek artırdım 10-20. Adım sayısını değiştirmedim. Çünkü eşit olması gerekiyordu.
+
+115
+00:31:21,011 --> 00:31:27,031
+En son 100 tane dallanma yapabildiğim zaman ancak 130 tane nokta bulabildim.
+
+116
+00:31:27,111 --> 00:31:34,151
+Onu da bu şekilde şuradan görebiliyoruz. Buradaki yeşil şeyler de benim bulduğum kaçıncı nokta olduğunu gösteriyor.
+
+117
+00:31:34,651 --> 00:31:43,491
+Burada şöyle bir çalışma yaptım daha sonra. Acaba bu bulduğum noktalar gerçekten bu lokal minimumun etrafında mı değil mi? Bununla alakalı bir çalışma yaptım.
+
+118
+00:31:43,991 --> 00:31:49,011
+Bunun için de ikisi de eşit olsun diye hem bundan hem bundan. Yani şurada bulduğum iki noktadan da.
+
+119
+00:31:49,011 --> 00:31:49,771
+Yüzer tane.
+
+120
+00:31:50,516 --> 00:32:18,516
+Nokta aldım. Şurası 5 normalizasyonsuz. Bu kırmızı olan benim lokal minimum noktam. Diğer maviler ise benim Monte Carlo yöntemiyle bulduğum gürültülü değerler. Ama bununla doğruluk değeri tamamen aynı. Bu kırmızı noktayla. Bu bulduğum diğer noktalarında. Bunlardan acaba I am Goodfellow'un dediği gibi lineer yol çizsem hepsine, bunların hepsine tek tek, ayrı ayrı lineer yol çizsem nasıl olur? Bunun topolojini...
+
+121
+00:32:18,516 --> 00:32:43,296
+Benim tam şeyini bulabilir miyim? Bununla aynı mı değil mi? Bu lokal minimumun etrafında mı değil mi? Bunu bulabilir miyim diye bir çalışma yaptım. Burada da çizdirdiğim zaman benim aslında ilk beklediğim ilk etapta bu kırmızının tam ortada olması ve bu mavilerin yanlarında şu yandaki siyahlar da benim lineer yollarım. Bu lineer yollarında bu kırmızıdan çıkıp siyahlara mavilere gitmesini amaçlıyordum.
+
+122
+00:32:46,516 --> 00:32:53,355
+Bu boyut sayısı 122.570 boyuttan iki boyuta indirgeyip bu çizimi yaptırıyorum. O yüzden...
+
+123
+00:32:53,523 --> 00:33:12,663
+Bu şekilde olabilir diye düşündüm ve bunu 3 boyutta çizdirsem acaba nasıl olur? Daha iyi görebilir miyim? Bunu inceledim. Bunu incelediğimde de gerçekten benim aslında bu Monte Carlo yöntemini daha da fazla çalıştırsam şu kırmızı noktada tam ortaya diğer mavilerin etrafında ve diğer yollarında bunu birleştirebileceğini gördüm.
+
+124
+00:33:12,663 --> 00:33:21,523
+Yani burada da bir topoloji analizi yapabiliyoruz. En dikkat çekici yöntem ise ilk başta da söylediğim gibi. Mesela 5 normalizasyonda daha kirli.
+
+125
+00:33:21,523 --> 00:33:33,423
+Eskin bir topoloji varken, şuradan da görünüyor daha dar ve daha keskin. 5 normal zülasyon kullanmadığım zaman buranın daha düz, daha düz bir yapıda olduğunu gördüm.
+
+126
+00:33:33,423 --> 00:33:42,423
+Bunu da daha iyi analiz edebilmek için bu her bir çizdiğim noktaya aradaki değerlerin loss değerlerini alıp,
+
+127
+00:33:42,836 --> 00:34:01,256
+İlk başta da gösterdiğim gibi ayar noktası vardı. Oradaki gibi bir çizim yaptırdım. Şuradaki her bir 10 tane de ben aslında şu mesela 240-250 arasında benim lokal minimumdan diğer bir bulduğum gürültülü yönteme çizdiğim binari yolun şeklini görebiliyorum.
+
+128
+00:34:01,256 --> 00:34:09,675
+Bunu incelediğim zaman 5 normalizasyon yönteminde bunun hep dalgalı olduğu mesela 240-250 arasında var.
+
+129
+00:34:10,835 --> 00:34:27,036
+Bu tamamen hemen hemen neredeyse böyle. Ama 5 normalizasyon olmayan yöntemi incelediğim zaman bunun bu şekilde değil de sanki hep yukarıdaki bir noktadan aşağıya veya aşağıdaki bir noktadan yukarıya iniyormuş gibi gördüm.
+
+130
+00:34:27,036 --> 00:34:38,835
+Daha önceki yaptığım çalışmalarda da ben optimizasyon yöntemlerini araştırırken çok boyutlu rastrigin fonksiyonu ve sifer fonksiyonu vardı. Bunlar üzerinde...
+
+131
+00:34:38,835 --> 00:34:51,415
+Bu şeklin aslında Rastrigin fonksiyonu gibi lokal minimum etrafının şu şekilde dalgalı dalgalı olduğunu ama 5 normalizasyon kullanmadığımda daha düz olduğunu gördüm.
+
+132
+00:34:52,563 --> 00:35:09,923
+Beş dallanmayla aslında ben burada 909 tane noktayı çok rahat bir şekilde bulabiliyorum. Çünkü hareket etmesi oldukça kolay. Ama beş dallanmayla buradaki dalgalı ortamda hareket etmek buna göre aynı adım sayısında, step size'da çok da mümkün olmadığını keşfettim aslında.
+
+133
+00:35:09,923 --> 00:35:20,563
+Orada da bir soru soracağım. Batch Normalization kullanmadığında daha fazla sample ile iş yapmış oluyorsun. Yani işlem karmaşıklığın daha çok olmuyor mu?
+
+134
+00:35:20,563 --> 00:35:39,743
+Normalde öyle oluyor hocam. Ama dediğim gibi yaptığımız deneysel çalışmalar sonucunu da bu şekilde elde ettik. Normalde dediğiniz doğru. Orada sample sayısı arttığı için farklı oluyor. Ama belki de bu da bir şey, kısıt.
+
+135
+00:35:40,112 --> 00:36:07,311
+Bu faktör daha doğrusu. Bu da bir faktör bu şeyin oluşmasında. Bir de şöyle bir şey de var tabii hocam. Dediğim gibi bunlar 122 bin boyutlardan ben 2 boyuta ve 3 boyuta indirgeyip çalışıyorum. Bunlar aslında tamamen böyledir, kesinlikle böyledir yerine empirik olarak kalıyor, deneysel olarak kalıyor. Zaten incelediğim diğer çalışmalarda da genelde bu şekildeydi. Empirik bir şekilde bunu bulabildik diye ifade ediyorlardı.
+
+136
+00:36:08,755 --> 00:36:16,596
+Ama sadece görüntülemek, yani visualization için boyuta indiriyorsun. Yoksa işlemlerin hepsini yüksek boyutta yapıyorum.
+
+137
+00:36:16,615 --> 00:36:34,036
+Tabii tabii. Diğer bütün işlemlerin hepsini yüksek boyutta yapıyorum. Aslında bu bulduğum benim en son şey hocam. Şurası. Hatta geçen hafta bunu yaptım. [kişisel bilgi] En son yaptığım şey, bunun üzerine çalışmalarımız halen daha devam ediyor zaten.
+
+138
+00:36:35,219 --> 00:36:38,380
+Bununla alakalı çalışmalar yapmaya devam ediyorum.
+
+139
+00:36:38,960 --> 00:36:41,479
+Evet, süreyi bayağı açtık galiba. Biraz hızlanalım.
+
+140
+00:36:41,840 --> 00:36:46,000
+Bu bitti hocam zaten. En son sonuç olarak neler öğrendiğim.
+
+141
+00:36:46,000 --> 00:36:54,759
+Yani aynı modelle farklı minimum noktalar erişebildiğini, bu ata parametri üzerlerinin topolojisinin 5 normalizasyon yöntemiyle değiştiğini,
+
+142
+00:36:55,259 --> 00:37:03,000
+Montekarlo ile bu lokal minimum topolojisinin keşfedebildiğimizi bu ilerleyen çalışmalar da...
+
+143
+00:37:03,219 --> 00:37:31,139
+Dediğim gibi bu yöntemle acaba farklı minimum noktalar arasında bir volüm bulabiliyor muyuz? Bunun üzerine çalışmalar yapacağım. Bu aslında benim bir temel çalışmamdı. İlerleyen zamanlarda da bu hata parametre yüzeylerinde lokal minimum noktalara daha hızlı gelebilecek optimizasyon yöntemleri geliştirilebilir mi? Bunlarla alakalı çalışmalar yapmayı planlıyorum. Dinlediğiniz için teşekkür ederim hocam. Sorularınız varsa alabilirim.
+
+144
+00:37:31,219 --> 00:37:37,539
+Biz teşekkür ederiz [öğrenci]. Güzel hazırlanmışsın. Evet arkadaşlar, sorunuz var mıdır?
+
+145
+00:37:45,300 --> 00:37:51,280
+Gördüğüm kadarıyla soru yok. Alkışlıyoruz. Ben hemen reaction'ımı koydum.
+
+146
+00:37:51,980 --> 00:37:53,000
+Teşekkürler hocam.
+
+147
+00:37:54,760 --> 00:38:00,539
+Bugün üç kişi mesunu mu yapacaktı? Nasıl bir planımız? Ben dediğim gibi ekranda açık değil.
+
+148
+00:38:01,079 --> 00:38:03,760
+Bir saniye hocam ben vereyim hemen size ekranı.
+
+149
+00:38:03,760 --> 00:38:07,160
+Bu hafta?
+
+150
+00:38:08,100 --> 00:38:10,720
+Benden sonra [öğrenci]'i götüver hocam.
+
+151
+00:38:11,380 --> 00:38:13,039
+Dört kişiymişiz aslında.
+
+152
+00:38:13,920 --> 00:38:18,340
+Aa, evet. [öğrenci] da var. [öğrenci] var bugün. Evet. [öğrenci] hazır mıyım?
+
+153
+00:38:18,739 --> 00:38:19,680
+Evet, evet hocam.
+
+154
+00:38:20,380 --> 00:38:25,760
+Tamam. O zaman benimle devam edebiliriz. Tekrar teşekkürler [öğrenci].
+
+155
+00:38:26,159 --> 00:38:27,779
+Rica ederim hocam. Ben paylaşım.
+
+156
+00:38:27,779 --> 00:38:28,220
+Teşekkür ederim.
+
+157
+00:38:33,492 --> 00:38:37,572
+Şöyle gözüküyor ekranım sanırım. Evet görebiliyoruz.
+
+158
+00:38:42,835 --> 00:38:48,355
+[kişisel bilgi]
+
+159
+00:38:48,355 --> 00:39:03,496
+Evet, evet hocam. [kişisel bilgi]
+
+160
+00:39:04,275 --> 00:39:06,975
+Çok güzel. Buyurun sizi dinliyoruz.
+
+161
+00:39:07,380 --> 00:39:28,740
+Teşekkür ederim. Ben şu anda pankreas kanseri üzerine bir single cell çalışması gerçekleştirdiğim için bu şekilde seçtim konumu. Fakat bu çalışmayı gerçekleştirmek için literatürde genel bir tarama yapmam gerekiyordu. O yüzden sadece pankreas kanseri olarak değil, çeşitli çalışmaları ele aldım taramamı yaparken.
+
+162
+00:39:29,240 --> 00:39:34,060
+Öncelikle makalelere geçmeden önce bir ön bilgi vermek istiyorum.
+
+163
+00:39:35,380 --> 00:39:50,340
+Bu konuların uzak olduğu konular bu biyoloji konuları. RNA sequencing dataset'lerinden bahsedeceğim. Bunlar şu şekilde bir dokuda yani bir örnek üzerindeki mRNA'ların yani transkriptlerin miktarına transkriptom deniliyor.
+
+164
+00:39:50,340 --> 00:39:58,480
+Ve RNA sequencing teknolojisi de gen seviyesinde bu transkriptomların miktarını kolayca belirleyen yeni bir teknoloji.
+
+165
+00:40:00,000 --> 00:40:18,900
+Fikoloji iki şekilde gerçekleştirilebiliyor. Single-Sight ve Bulk RNA Sequencing olarak. Single-Sight RNA Sequencing'ın balktan farkı ise hücre bazında, yani en küçük birim olarak hücreyi seçiyor ve tek tek hücreler üzerinde fiziksel analiz işlemi, transcriptome işlemi yapılıyor.
+
+166
+00:40:18,900 --> 00:40:27,900
+Fakat balkta ise örnek tabanlı fiziksel işlemler, laboratuvar işlemleri yapılıyor ve bu bütün hücrelerin ortalama bir...
+
+167
+00:40:28,000 --> 00:40:31,000
+Bir sekansa alınarak dataset üretiliyor.
+
+168
+00:40:31,572 --> 00:40:46,552
+Aslında single style analizleri 2014 yılından beri yaygınlaşan analizler fakat çok maliyetli ve ciddi laboratuvar yükü gerektirdiği için çok fazla gelişememiş, çok fazla uygulanamıyor.
+
+169
+00:40:48,852 --> 00:40:57,752
+Fakat bu çalışmalar çok önemli biyolojik ve tıp alanında. Çünkü tek hücre düzeyinde genci viyesin profillememizi sağlıyor.
+
+170
+00:40:59,572 --> 00:41:06,352
+Erken embriyonik gelişim sürecinde yeni tedavilerin veya hastalıkların önceden teşhis edilmesini sağlıyor.
+
+171
+00:41:06,892 --> 00:41:13,552
+Ve çeşitli hastalıklarda rol oynayan hücrelerin ortaya çıkarılmasını sağlıyor. Bu nedenle çok önemli çalışmalar aslında.
+
+172
+00:41:14,552 --> 00:41:21,812
+Bu çalışmalarda en önemli kısım ise şu. Örneklerden olunan hücreler, yani birçok hücre alınıyor bir örnekten.
+
+173
+00:41:21,812 --> 00:41:27,572
+Fakat çeşitli hücre grupları, popülasyonları mevcut. Örneğin bağışıklık hücreleri, tümörler.
+
+174
+00:41:27,572 --> 00:41:41,172
+Bu çalışmalarda da en önemli adım bu hücrelerin bu popülasyonlara aitliklerinin araştırılması. Yani o örneklerde hangi hücre popülasyonlarının olduğunu bulmak.
+
+175
+00:41:42,643 --> 00:41:56,943
+Bu dataset'lerin oluşturulması dediğim gibi laboratuvarlarda gerçekleştiriliyor ve en sonunda şurada RNA izolasyonundan sonra DNA sentezlenmesi sağlandıktan sonra bir gen dizilimi ortaya çıkıyor.
+
+176
+00:41:56,943 --> 00:42:10,643
+Ve sonucunda satırlarda genler, sunlarda da bütün örneklerin tek tek hücreleri yer alacak şekilde bir matriz elde ediliyor. Çok büyük bir matriz. Ve daha sonra bu hücrelerde bu az önce bahsettiğim popüler...
+
+177
+00:42:10,643 --> 00:42:12,143
+İstasyonlara göre ayırt ediliyor.
+
+178
+00:42:13,876 --> 00:42:25,316
+Çeşitli platformlar mevcut. En çok kullanılan platformlar sol tarafta gördükleriniz. Bunlar hem Python hem R dillerinde geliştirilebilen platformlar.
+
+179
+00:42:25,876 --> 00:42:35,236
+Fakat bunların workflowları birbirlerine çok benzer. Çok fazla analiz içeriyor. Biz de burada zaten bilgisayar mühendisleri olarak burada rol alıyoruz.
+
+180
+00:42:35,236 --> 00:42:41,876
+Az önce bahsettiğim gibi genler ve hücrelerden oluşan büyük bir matriz elde ediliyor. Yani 100 bine, 150 bine.
+
+181
+00:42:41,876 --> 00:43:09,876
+Bu, genlerin filtrelenmesi gibi feature selection adımla gerçekleştiriliyor. Daha sonra görselleştirme yapabilmek için dimension reduction işlemleri ve az önce bahsettiğim gibi popülelik.
+
+182
+00:43:09,876 --> 00:43:25,876
+Bu konuda popülasyonları ayırmak için clustering ve classification gibi çeşitli yöntemler mevcut. Bunlar yapıldıktan sonra, benzer gruplar bir araya alındıktan sonra, birbirinden ayrıldıktan sonra annotation adımına geçilmesi gerekiyor.
+
+183
+00:43:25,876 --> 00:43:37,876
+Yani burada diyelim ki böyle bir clustering yaparak bir harita elde ettik, bir map elde ettik. Peki bunlar hangi hücre gruplarına, hangi popülasyona ait olduğunu belirlemek için de bir anotasyon adımı var.
+
+184
+00:43:37,876 --> 00:44:03,336
+Bundan sonra da çalışmalar ne üzeri neyse veya hepsini de yapabilir. Çok geniş çaplı oluyor çünkü makaleler. Trajektör analizi yapabilir, pathway analizi yapmak için. Yani birbiriyle ilişkili genleri bulabilmek için veya belli bir hastalığı etkileyen marker genleri bulmak için çeşitli analizler yapılabilir. Bu şekilde bir workflow'a sahip.
+
+185
+00:44:05,876 --> 00:44:33,876
+Önolojik sırayla değil de daha genelden daha computational yani özele gidecek şekilde seçtim. Öncelikle laboratuvarlarla ve tıp doktorlarıyla beraber gerçekleştirdiğimiz çalışmalardan bahsedeceğim. Burada başta şunu söylemem gerekiyor. Biz tahmin edeceğiniz gibi bu makalelerde computational tarafa hakimiz. Fakat birçok açıklayamadığımız, bizim de o süreçte öğrendiğimiz şeyler oluyor.
+
+186
+00:44:33,876 --> 00:45:01,556
+Bu yüzden bu makalleleri anlamak çok zor. Her şeyi açıklayamıyorum bu makallarda. Bu ilk makalenin amacı pankreas kanserindeki primary tümör ve metastatik tümörleri profillemek. Metastatik tümör dediğimiz şey örneğin pankreasta bir tümör oluşuyor ve bu tümör farklı bir, diyelim ki akciğere veya karaciğere başka bir dokuya bulaşarak orada bir tümör oluşmasına sebep oluyor.
+
+187
+00:45:01,876 --> 00:45:11,356
+Bu metastatik biyopsilerin de profillemesine çalışmış bu makale. Az önce bahsettiğim gibi hücre tiplerini tanımlamaya odaklanmışlar.
+
+188
+00:45:11,956 --> 00:45:23,676
+Bunun için denetimsiz kümeleme analizi ve identification'ını yapamadıkları hücreler içinde yeni bir yöntem olan SuperCT isimli bir supervise yöntem kullanmışlar.
+
+189
+00:45:23,676 --> 00:45:35,676
+Daha sonra, az önce bahsettiğim gibi bulk datasetleri de mevcut. Bunlar ayrı makalelerde bulunmak zorunda değil. Tek bir single cell makalesinde bulk datasetleri analizleri de gerçekleştiriliyor.
+
+190
+00:45:39,956 --> 00:46:02,996
+Bu konuda genlerin sağ kalım analizi gerçekleştirilmiş ve sonuçta önemli olan hücre tipleri ve bunların önemli faktörleri ortaya çıkarılmış ve kanser hücrelerini aktive eden hücre grupları, EMT isimli hücre grubu ortaya çıkarılmış ve sağ kalım analizinde endotelial hücreleri dediğimiz bizim kan damarlarında bulunan hücrelerimiz onların önemi ortaya çıkmış.
+
+191
+00:46:07,956 --> 00:46:14,076
+ortadan dokular alınmış ve organizmamız insan bu fare de olabilirdi ve az önce dediğim gibi
+
+192
+00:46:14,076 --> 00:46:19,756
+aslında bu nispeten küçük bir data set 22.000'e 7800 hücreye sahip
+
+193
+00:46:20,563 --> 00:46:33,923
+Yöntemlerde dediğim gibi çok fazla yöntemler mevcut. Hepsini vermem çok zor fakat önemli olan kısımlarını vermeye çalışacağım. Ön işlemlerden geçiriliyor ve önemli olan kısım hücre tipi belirlenmesi.
+
+194
+00:46:33,923 --> 00:46:48,423
+Burada öncelikle şöyle, belirli örneğin kanser hücret gruplarını, popülasyonlarını ortaya çıkaran genler mevcut. Bunları marker genler diyoruz. Bu popülasyonları etkileyen genler.
+
+195
+00:46:48,563 --> 00:47:15,083
+Bunlar literatürde mevcutlar. Bunların kullanılmasıyla manuel bir hücre tipi belirlenmesi gerçekleştirilebiliyor. Bu makalede de önce manuel bir işlem yapılmış ve ardından da literatürde bulunmayan markagenler olabilir. Bu dataset yeni olduğu için yeni hücre grupları ortaya çıkabilir. Bunun için de 200 bin hücre ile eğittikleri bir Super City isimli yöntem kullanmışlar.
+
+196
+00:47:16,563 --> 00:47:18,663
+Yöntem de TSN gibi bir yöntem.
+
+197
+00:47:19,315 --> 00:47:22,815
+Onunla da MEP'lerin ortaya çıkarılması sağlanmış.
+
+198
+00:47:23,315 --> 00:47:27,315
+Ve sağ kalım korelasyon ve sağ kalım analizi.
+
+199
+00:47:27,315 --> 00:47:36,315
+Sağ kalım analizi hastalıkların seyrini incelemek için veya risk faktörlerini belirlemek için yapılan bir analiz.
+
+200
+00:47:36,315 --> 00:47:41,315
+Burada single cell analizleri sonucunda genler belirlenmiş.
+
+201
+00:47:41,315 --> 00:47:47,315
+Her hücre tipini belirledikten sonra ve bu genler arasında bir korelasyon analizi yapılıyor.
+
+202
+00:47:47,315 --> 00:48:06,755
+En yüksek korelasyona sahip olan genler kullanılarak, onların eksperasyon seviyeleri kullanılarak örneklerin sağ kalım analizleri yapılıyor. Örnekler bu gen seviyelerine göre şöyle görebilirsiniz. Kırmızı çizgi high ve mavi çizgi low olacak şekilde iki gruba ayrılıyor.
+
+203
+00:48:15,315 --> 00:48:19,535
+analizinde anlamlı bir sonuca ulaştığını söyleyebiliyorlar.
+
+204
+00:48:21,076 --> 00:48:48,435
+Bir diğer bu şekilde geniş çaplı makalelerden bir tanesi de bu ikinci makale. Burada ise tümör ve kontrol grupları seçilmiş. Yani pankreas tümör hücrelerinden ve normal hücreler kullanılarak gerçekleştirilen bir makale. Az önceki makalede kullanılan dataset'te 7000 tane hücre varken burada 57000 hücrelik bir dataset elde edilmiş laboratuvarda.
+
+205
+00:48:49,076 --> 00:48:51,076
+Bu da çok değerli bir dataset.
+
+206
+00:48:51,603 --> 00:49:09,943
+Burada diğer makaleden farklı olarak trajektör analizi yapılmış. Trajektör analizi birbiriyle ilgili olan genlerin ortaya çıkarılmasını sağlıyor. Bir pet ve bir yörünge bulunmasını sağlıyor. Bunun sonucunda da bağışıklık hücre tiplerine literatürde bulunmayan yeni marker genler tespit edilmiş.
+
+207
+00:49:09,943 --> 00:49:17,723
+Bu marker genlerin tespiti de yeni tedaviler önerilmesi için çok önemli bir sonuç ortaya çıkarmış oluyor.
+
+208
+00:49:19,603 --> 00:49:40,623
+Yine kalite kontrol gibi ön işlemler yapıldıktan sonra bir de şöyle bir yöntem var. Bütün hücre grupları belirlendikten sonra yeni marker genler bulunması için Differential Expression Gene Analizi dediğimiz bir istatistiksel analiz var. Bu analiz ile yeni marker genlerin bulunması sağlanmış bu makalede.
+
+209
+00:49:41,684 --> 00:50:00,000
+Yine diğer analizlerden örnek verecek olursam, bu bulunan marker genler ile hücre gruplarının hangilerinde, yani şöyle kırmızıya oldukça yüksek eksperişin seviyesine sahip demek. Bu şekilde marker genlerin hangi hücre gruplarında daha fazla eksperişin seviyesine sahip demek.
+
+210
+00:50:00,000 --> 00:50:03,480
+seviyesine sahip olduğunu göstermek için bir hit map yapılmış.
+
+211
+00:50:03,980 --> 00:50:09,179
+Aynı mesajı veren başka bir pilot örneği de violin pilotları.
+
+212
+00:50:09,820 --> 00:50:13,480
+Bu da çok yani aynı mesajı veriyor fakat farklı bir gösterimi.
+
+213
+00:50:13,480 --> 00:50:22,800
+Ve daha sonra bu trajektör analizi ve differential expression gene analizinden elde edilen sonuçlara göre K-regülatör genler.
+
+214
+00:50:22,940 --> 00:50:27,980
+Yani başka genleri etkileyen, başka genleri kontrol eden genleri.
+
+215
+00:50:28,000 --> 00:50:30,284
+Bu konuda örneklerle anlatacağız.
+
+216
+00:50:32,148 --> 00:50:42,708
+Şimdi daha çok metot paperlarına başlıyorum. Az önce zaten bu workflow'u göstermiştim. Daha ayrıntılı olarak bu adımlarda neler yapıldığından bahsetmeye çalışacağım.
+
+217
+00:50:42,708 --> 00:50:58,788
+Quality Control adımında düşük kaliteye sahip olan hücreleri ve genleri eliyoruz. Ki daha sonraki analizlerde yanlış sonuçlar elde etmemize neden olmasınlar. Bunlardan bir tanesi tabletler yani outlier dediğimiz hücreler. Bunlar tek bir hücreyi temsil etmiyorlar.
+
+218
+00:51:00,148 --> 00:51:06,388
+Birleşimini temsil ediyorlar aslında. Bu nedenle beklenmedik derecede yüksek bir eksperyasyon seviyesine sahipler.
+
+219
+00:51:07,059 --> 00:51:16,259
+Bu yüzden an şeklinde gördüğünüz gibi bir threshold belirleyerek çok yüksek expression seviyesine sahip olan hücreleri elemeye çalışıyoruz.
+
+220
+00:51:16,259 --> 00:51:27,619
+Aynı şekilde eğer çok az geni expression ediyorsa, çok az geninde bir ifadesi varsa bu hücrenin de yeterli değil şeklinde düşünerek o hücreleri de eliyoruz.
+
+221
+00:51:27,619 --> 00:51:32,899
+Gen elemesi ise mitokondrial ve ribosomal ifadeler, frekanslar var.
+
+222
+00:51:35,059 --> 00:51:45,939
+Bu genin biyolojik sinyali düşüktür, yani bizi yanıltabilir şeklinde bir varsayım mevcut. Bu genleri de elemiş oluyoruz.
+
+223
+00:51:46,271 --> 00:52:09,771
+Az önce çok üzerinde durduğumuz batch correction biz de kullanabiliyoruz. Bu ise şu şekilde, örneğin farklı datasetlerin birleştirilmesi veya örnekler eğer farklı zamanlarda farklı teknolojilerle elde edildiyse, bunlar birleştirildiği zaman batch correction'a ihtiyaç duyuyorlar. Bunun için de çeşitli zaten tool'lar mevcut literatürde.
+
+224
+00:52:11,284 --> 00:52:36,644
+Feature Selection adımında genler feature'lar olarak kullanılıyor ve burada az önceki makalede olduğu gibi bir korelasyon analiziyle elde edilebilir veya çeşitli metrikler kullanılıyor skorlar oluşturulması için ve en yüksek skora sahip olan genler üzerinde çalışmalar gerçekleştiriliyor çok büyük olduğu için veri setleri ve boyut indirgeme için de genellikle bildiğimiz yöntemler kullanılıyor.
+
+225
+00:52:36,644 --> 00:52:39,284
+Bunun için ayrı bir makalede daha ayrıntı.
+
+226
+00:52:39,284 --> 00:52:54,564
+Daha farklı bahsedeceğim. Downstream analizinde az önce bahsettiğim gibi kümeleme yöntemleri var. Fakat tabii daha farklı yöntemlerden de bahsedeceğim. Burada KMS ve KNN yöntemlerini örnek olarak verdim.
+
+227
+00:52:54,564 --> 00:53:07,284
+Ve Cluster Annotation'da literatürden yararlı alınabilir. Markergenlerden ve bunun için çeşitli veri tabanları da mevcut. Bu veri tabanlarına bağlı otomatik annotation tool'ları var. Bu tool'ların da kullanılması var.
+
+228
+00:53:07,284 --> 00:53:08,619
+Bu konuda tanınması mümkün.
+
+229
+00:53:10,036 --> 00:53:24,456
+Şimdi bu bahsedeceğim hücre tiplerini sınıflandırmada, yani hücre tipleri cell identification'a belirleme yapmak için 22 tane farklı yöntem karşılaştırılmış.
+
+230
+00:53:24,656 --> 00:53:30,556
+Metodolojik bir paper bu ve bunun için 27 tane farklı public dataset kullanılmış.
+
+231
+00:53:30,716 --> 00:53:36,696
+Farklı boyutta, farklı teknolojide, tür ve karmaşıklıkta, tür derken insan fare şeklinde farklı türlerde.
+
+232
+00:53:38,036 --> 00:53:45,916
+F-Score kullanılmış ve etiketlenemeyen hücre sayısına, oranına bakılmış ve computational time karşılaştırılmış.
+
+233
+00:53:46,396 --> 00:53:54,596
+Yöntemlerin duyarlılığı da özellik sayısı, hücre sayısı arttıkça nasıl değişiyor, karmaşık verisletlerinde nasıl tepki veriyor bu yöntemler, onlar incelenmiş.
+
+234
+00:53:54,596 --> 00:53:58,736
+Ve sonuç olarak SBM en iyi performans gösteren sınıflayıcı olmuş.
+
+235
+00:54:06,036 --> 00:54:29,036
+Bu örneğin, bu ZENG dataset'i yüksek karmaşıklığa sahip bir dataset ve az popülasyona sahip bir dataset. Bu yüzden bunda yöntemler düşük performans sergilemiş.
+
+236
+00:54:34,036 --> 00:54:43,296
+Yeterince farklı heterogeneity'ye, yani farklı popülasyona sahip olduğu için performansı yüksek olmuş yöntemlerin burada.
+
+237
+00:54:44,016 --> 00:54:50,736
+Bir de burada şunu inceleyebiliyoruz. Bu laboratuvarda elde edilen dataset'ler farklı teknolojilerle elde ediliyor.
+
+238
+00:54:50,736 --> 00:55:01,716
+En çok kullanılan TenX Genomics dediğimiz bir teknoloji. Bu teknolojiyle elde edilen dataset'lerin de daha kolay sınıflanabilir, daha kolay işlenilebilir olduğu.
+
+239
+00:55:02,036 --> 00:55:30,036
+Yöntemlerde çeşitli sınıflandırıcı veya farklı yaklaşımlı olan yöntemler var. Random Force kullanan var. Linear Discrimination Analysis kullanan, SVM, KNN kullanan yöntemler var. Bunlardan ön bilgi gerektirenler ve gerektirmeyenler olarak da burada bir bilgi verilmiş. Genellikle dataset'lere aynı işlemler uygulanarak bu sınıflandırıcıları...
+
+240
+00:55:30,036 --> 00:55:55,936
+Bu konuların etkileri araştırılmış. Bunlara bakıldığı zaman hem başarıya hem de etketlenemeyen hücre oranına dikkat etmişler. Şöyle maviye gittikçe başarı oranı düşüyor. Burada ise mavi etketlenmeyen oranının az olduğu anlamına geliyor. Cellblast bu hücrelerin benzerliklerine bakarak bir sınıflandırma yapan yöntem. Performansı düşük çıkmış. Burada da KNN performansı düşük.
+
+241
+00:55:58,036 --> 00:56:19,616
+Burada SVM'in farklı bir versiyonu ile single mapsel, single prediction şeklinde üç tane yönteminde başarısı yüksek çıkmış. Fakat iki tabloyu da incelediğimiz zaman SVM'in en iyi performansa sahip olduğu yöntem olarak görüldüğünü söyleyebiliriz.
+
+242
+00:56:23,284 --> 00:56:40,724
+Singular yöntemi en yavaş yöntem olarak. Ve Cell Blast'la az önce iyi bir yöntem varmamıştı. Yine Computational Performans'ı düşük olduğu görülmüş. Yine burada da SBM, Computational Time'ı diğer yöntemlere göre öne çıkan bir yöntem.
+
+243
+00:56:40,724 --> 00:56:51,024
+Burada yine az önce dediğim gibi feature sayısına göre, hücre sayısına göre arttıkça nasıl ilerlediğine dair çeşitli analizler gerçekleştirilmiş.
+
+244
+00:56:52,115 --> 00:57:20,115
+Bu makale aslında henüz yayınlanmamış. BioArchive'de yayınlanan bir makale. Fakat biz kendi çalışmamızda bu makaleyi çok beğendiğimiz için el almak istedim. Ben de burada anlatmak istedim. Burada ele alınan single file, az önce söylediğim gibi workflow'u bu makale de gerçekleştiriyor. Fakat diğer makalelerden farkı şu. Tümör makro environment dediğimiz, yani tümörün bulunduğu...
+
+245
+00:57:20,115 --> 00:57:40,043
+Tümörün bölgenin araştırılmasını yapmış artı olarak. Çünkü bu ortam bozuldukça tümörün daha çok büyümesi, farklılaşması, daha kötü hale gelmesine sebep oluyor. Bu nedenle de bu ortam üç farklı sınıfa ayrılmış ve bu ayrımın da...
+
+246
+00:57:40,179 --> 00:58:01,679
+Gerçekten pankreas kanserinin ilerlemesinde etkili olduğunu kanıtlamışlar. Bunun için 10 tane hastadan veri kullanılmış ve buna ek olarak public olarak TCGA veri seti var. Bu çok yaygın bir informatik çalışmalarında neredeyse her kanser türü için bir veri seti mevcut. Bunun üzerinde de gerçekleştirmişler çalışmalarını.
+
+247
+00:58:08,179 --> 00:58:32,260
+Bu bölgeyi 72'ye kadar düşürmüşler ve ardından elde ettikleri bu genlerle bir survival analizi gerçekleştirmişler. Burada ilk olarak yaptıkları survival analizi anlamlı çıkmamış. Genellikle 0.05'in altındaysa p-value'muz o zaman anlamlı bir farklılık vardır diyebiliyoruz. Burada anlamlı çıkmamış bu sap gruplara baktıkları zaman.
+
+248
+00:58:36,179 --> 00:58:48,220
+Sadece tek bir SAP gruba mı ait yoksa birden fazla SAP grub mu içeriyor şeklinde, heterojenetik var mı şeklinde baktıkları zaman bu ikisinin survival analizini yaptıklarında anlamlı olduklarını görmüşler.
+
+249
+00:58:48,340 --> 00:58:51,699
+Hem 10 hastanın verisinde hem de TCGA verisinde.
+
+250
+00:58:53,300 --> 00:59:15,800
+Bu yöntemde de örnekler, yani hastaların, daha doğrusu dokuların sınıflandırılması gerçekleştirilmiş. Pankreas kanseri 3 ayrı sınıfa ayrılmış. Klasik QMV, Extracrine şeklinde, doğru mu okuyorum bilemiyorum, şeklinde 3 farklı gruba alınmış. Burada önemli bir fark olarak dataset'e hücre kültürü kullanılmış.
+
+251
+00:59:21,300 --> 00:59:38,680
+Hücreleri anlamına geliyor. Hayvan veya beskilerden alınan hücreler uygun besle ortamında insan hücrelerine benzetiliyor. Buna da hücre kültürü deniliyor. Bu virüs eti üzerinde çalışılmış ve bu oluşturdukları 3-6
+
+252
+00:59:40,148 --> 00:59:59,768
+Sub-type'ların gerçekten pancreas kanseri için etkili olduğunu kanıtlamışlar ve buna ek olarak bu QM alt grubunun ise yüksek tümör derecesine neden olduğunu, en kötü sağ kalım analizlerinde en kötü sonuca ulaştığını, yani hastalar için tehlikeli bir durum olduğunu.
+
+253
+01:00:00,000 --> 01:00:20,159
+Yöntem olarak genellikle örnek yani hastaların sınıflandırılmasında Nearest Template Prediction algoritması kullanılmış. Bu algoritma sadece bu az önce bahsettiğim bir matrisi alıp ve o kansere ait olan signature genleri verdiğimiz zaman bir sınıflama gerçekleştiren.
+
+254
+01:00:20,947 --> 01:00:36,427
+Supervice bir yöntem. Alt tipler için yüksek değerli genler tespit edilmiş ve burada da onun bir heat mapi verilmiş. Örneğin klasik olan hücre tiplerde hücre büyümesini ve değişimini etkileyen genler fazla çıkmış.
+
+255
+01:00:48,947 --> 01:01:03,947
+Tümör hücrelerine ait olan genler daha fazla ortaya çıkmış. Ardından bu sap tipler için bir sağ kalım analizi yapıldığı zaman aralarındaki farkın anlamlı olduğu sonucuna varılmış.
+
+256
+01:01:03,947 --> 01:01:16,947
+Ve Cox Recognition Analizi de bağımsız değişkenlerin ilişkili olup olmadığını araştıran bir analiz. Bu sap gruplarla tümörün boyutu, tümörün derecesi, yani hangi seviyede olduğu bilgi...
+
+257
+01:01:16,947 --> 01:01:22,347
+İlişkili mi şeklinde bakıldığında ilişkili olmadığı sonucuna varılmış.
+
+258
+01:01:22,931 --> 01:01:44,371
+Ve Dimension Reduction, yani görselleştirme için yaptığımız işlemlerden hangi yöntemin daha iyi olduğu araştırıldığında bu popüler yöntemler kullanılmış. Sol tarafta listelediğim gibi TSN'nin farklı versiyonları ele alınmış. Bunlar genellikle TSN'nin runtime'ını azaltmak için geliştirilen yöntemler.
+
+259
+01:01:50,931 --> 01:01:56,692
+UMAP'in en iyi yöntem olarak öne çıktığı görülmüş.
+
+260
+01:01:57,471 --> 01:02:00,331
+Bunun için tabii farklı karşılaştırmalar yapıyorlar.
+
+261
+01:02:00,511 --> 01:02:07,651
+Önce hücre tipi haritalarına karşılaştırdıkları zaman UMAP ve TSN'in yöntemleri benzer haritalar oluşturmuş.
+
+262
+01:02:07,651 --> 01:02:18,791
+Yani başarılı haritalara ulaşabilmiş fakat bu haritaların sağ üstte gördüğünüz gibi yoğunluklarına ve dağılımlarına bakıldığı zaman incelendiğinde UMAP'in daha yoğun ve daha üniform.
+
+263
+01:02:18,931 --> 01:02:37,931
+Bir sonuca ulaştığını görebilmişler. Diğer karşılaştırmalarda computational timeler karşılaştırılmış. Örneğin TSN'nin runtime'unu düşürmek için yaptıkları diğer yöntemlerde daha iyi TSN'den mavi olan TSN.
+
+264
+01:02:40,016 --> 01:02:50,695
+Latent Exegregation mıydı? Siz düzeltin eğer yanlış söylüyorsam. O parametrenin pek işe yaramadığı sonucuna varmışlar.
+
+265
+01:02:50,695 --> 01:02:59,355
+Ve hücre popülasyonlarına ayırmada Random Forest kullanmışlar ve burada PCA'yin en başarısız yöntem olduğu sonucuna varmışlar.
+
+266
+01:02:59,456 --> 01:03:03,135
+Aslında ben buna şaşırdım çünkü genellikle kullanılan yöntem de PCA.
+
+267
+01:03:04,275 --> 01:03:10,675
+ve Yumep birlikte kullanılıyor. Ve K-Miz yöntemden kümelemek için kullanıldığında
+
+268
+01:03:10,931 --> 01:03:33,551
+Burada az önce bahsettiğim yoğunluklara bakıldığında onu ölçmek için Normalized Mutual Information diye bir metrik var. Bu metrik kümeler arasındaki ilişkiyi ortaya çıkarıyor ve ne kadar bilgi varsa, ne kadar yoğun sol küme bu Normalized Mutual Information'da yüksek değere sahip oluyor. Burada da GÜMEP daha başarılı görünmüş.
+
+269
+01:03:34,480 --> 01:03:47,840
+Burada şöyle en başta söylediğim gibi bug datasetlerinde hücre türlerini bilemiyoruz. Fakat bunun için şöyle bir yol var. Deconvolution uygulayabiliyoruz.
+
+270
+01:03:47,840 --> 01:04:02,460
+Ve bu şekilde tek tek hücreleri gruplayamasak da hücrelerin oranlarını bulabiliyoruz. Hücre gruplarının oranlarına ulaşabiliyoruz. Fakat bunun dezavantajı da şöyle çalışıyor aslında bu yöntem.
+
+271
+01:04:02,480 --> 01:04:09,480
+Bu yüzden referans olarak kullanıyor.
+
+272
+01:04:09,480 --> 01:04:17,480
+Bir de bulk matrisin, bulk data setini verdiğimiz zaman bize bu oranları veriyor sonuç olarak.
+
+273
+01:04:17,480 --> 01:04:22,480
+Fakat burada dezavantaj olarak her zaman bir single cell veri setine ihtiyacımız var.
+
+274
+01:04:22,480 --> 01:04:30,480
+Yine burada da var. Bu yüzden referans yetersizliği ve yeni bulunacak hücre grupları için pek avantajlı bir yöntem değil.
+
+275
+01:04:30,480 --> 01:04:47,660
+Çünkü zaten elde olanı kullanmış oluyoruz. Başka bir çalışma da Ensemble yaklaşımı kullanılmış bu D-Conversion yapmak için. Birden fazla referans veri seti kullanılarak D-Conversion gerçekleştirilmiş ve hücre tipi oranları ortaya çıkarılmış.
+
+276
+01:04:48,980 --> 01:05:04,019
+Son olarak, her çalışma bu kadar çok analiz içermiyor ve sadece bug verisetlerini kullanarak da çalışmalar gerçekleştirebiliyoruz. Onu göstermek için bir konferans yayınını aldım.
+
+277
+01:05:04,019 --> 01:05:16,480
+Bunda ise pankreas kanseri ile sigara kullanımı arasındaki ilişki aranmış. Yaptıkları şey, önce differential expression analizi ile marker genlerin belirlenmesi sağlanmış.
+
+278
+01:05:16,980 --> 01:05:25,619
+Ardından ortak marker genler ile bir network oluşturarak birbiriyle ilişkili olan genler bulunarak bunlara da HAP genler deniliyor.
+
+279
+01:05:25,619 --> 01:05:32,159
+Bu HAP genler belirlendikten sonra da ilaç tahmini, ilaç önerisinde bulunulmuş.
+
+280
+01:05:32,900 --> 01:05:36,019
+Şöyle yöntemlere daha ayrıntılı bakacak olursak.
+
+281
+01:05:36,724 --> 01:05:50,744
+Önce bu iki dataset'ten önemli olan marker genler tespit ediliyor. Bunların ortak genlerinden protein-protein interaction'ları, yani birbirleriyle ilişkili olan genlerin tespit edilmesi için bir network oluşturuluyor.
+
+282
+01:06:04,724 --> 01:06:09,824
+İlaçların önerilmesi, en çok ilişkili olan ilaçların önerilmesi sağlanmış.
+
+283
+01:06:11,744 --> 01:06:14,744
+Bu şekildeydi benim anlatımımda.
+
+284
+01:06:15,699 --> 01:06:24,639
+Teşekkür ediyoruz [öğrenci]. Çok güzel, baya detaylı bir araştırma yapmışsın. Cidden tez önerisine iyi bir hazırlık olmuş bence.
+
+285
+01:06:24,639 --> 01:06:26,559
+Çok teşekkür ederim hocam.
+
+286
+01:06:27,099 --> 01:06:35,860
+Bir de tavsiyem aslında size şu olacak. Biliyorsunuz Yıldız Teknik Üniversitesi'nde biyomühendislik diye bir program var.
+
+287
+01:06:43,699 --> 01:06:47,980
+Yapmanız çok iyi olur. Oradan da bir etkileşim olabilir diye düşünüyorum.
+
+288
+01:06:48,320 --> 01:07:15,719
+Evet, evet. Çok haklısınız hocam. Zaten elimizden geldiğince collaboration yapmak istiyoruz. Çünkü en başta anlattığımız gibi makaleler, verdiğim iki makalede olduğu gibi onlar çok değerli. Yani bir çalıştığımız laboratuvar var. Amerika'da beraber çalıştığımız Rush Üniversitesi'yle bir laboratuvar var. Bir de Zeynep Hocanın kendi üniversitesinde bulunan hocalarla ortak olarak çalışıyoruz.
+
+289
+01:07:16,320 --> 01:07:33,480
+Buradan, hem buradan şey, ben içerisinde değilim ama Zeynep Hoca, Çapa Üniversitesi'ne Şükrü Hocalar var. Siz konuştunuz mu hiç bilmiyorum ama. Onlar da tıp bölümündeler. Onlarla çalışıyorlar. Ben henüz fırsat bulamadım onlarla çalışmaktan. Ama Yıldız Teknik'te hiç yok.
+
+290
+01:07:34,132 --> 01:07:48,112
+Biyo mühendislikte de çünkü hakikaten çok güzel çalışmalar yapılıyor. Belki buradaki çalışmalar onların da ilgilerini çekebilir. Daha böyle işbirlikleri artabilir diye ümit ediyorum ben.
+
+291
+01:07:48,416 --> 01:07:50,536
+Evet, inşallah hocam. Çok isterim.
+
+292
+01:07:51,756 --> 01:07:58,816
+Teşekkür ediyoruz. Şimdi hemen seni de alkışlıyoruz güzel sunumun için.
+
+293
+01:07:59,316 --> 01:08:00,156
+Çok teşekkür ederim.
+
+294
+01:08:00,896 --> 01:08:06,896
+Bugün başka sunumu yapacak var mı? İkinci sırada sunumu yapacak arkadaşımız geldi mi acaba?
+
+295
+01:08:11,891 --> 01:08:14,331
+[öğrenci] burada mı hocam?
+
+296
+01:08:18,068 --> 01:08:20,388
+Evet, sunum yapmayı düşünüyor musunuz?
+
+297
+01:08:24,467 --> 01:08:29,547
+Doğmuş ay doğdu. Sessiz de. Sesimiz gelmiyor.
+
+298
+01:08:43,859 --> 01:09:09,439
+[öğrenci] mıydı? Tamam. Peki. O zaman bu haftalık bu kadar diyelim. Önümüzdeki hafta görüşmek üzere. Arkadaşlar, derste biraz geç başladık ama zaten iç içlilik bir sunum dinledik. Bir tarfma yaşanmadı. Önümüzdeki hafta saatleri de başladı.
+
+299
+01:09:11,636 --> 01:09:15,615
+Ben de belki biraz geç kaldım da sormuşum soruyu.
+
+300
+01:09:15,615 --> 01:09:16,935
+E size bir ne?
+
+301
+01:09:17,619 --> 01:09:32,859
+Ben raporumu ve sunumumu gönderdim ama raporda son anda bazı yazım hatalarımı vesaire fark etmiştim. Bir de bir tane daha makale okumak istiyordum. Onu yetiştirmemiştim.
+
+302
+01:09:33,600 --> 01:09:35,579
+Bu kadar yapabilirsiniz [öğrenci].
+
+303
+01:09:36,680 --> 01:09:39,059
+Size mail ile mi göndereyim sonra?
+
+304
+01:09:39,559 --> 01:09:40,199
+Tamam, oldu.
+
+305
+01:09:41,079 --> 01:09:42,719
+Tamam, oldu. Teşekkürler.
+
+306
+01:09:43,123 --> 01:09:50,103
+Rica ederim. Evet arkadaşlar, teşekkürler katılmanız için. Haftaya görüşmek üzere. Hoşçakalın.
+
+307
+01:09:52,363 --> 01:09:53,224
+İyi günler hocam.
+
+308
+01:09:53,823 --> 01:09:55,003
+Güle güle, iyi günler.
+
+309
+01:09:55,003 --> 01:09:56,083
+Hoşçakalın.
+
+310
+01:09:56,763 --> 01:09:58,283
+İyi günler arkadaşlar.
+
+311
+01:10:00,163 --> 01:10:01,083
+Hoşçakalın hocam.
+
+312
+01:10:01,683 --> 01:10:02,243
+Güle güle.
+
+313
+01:10:09,492 --> 01:10:15,112
+[öğrenci] sesin çok kesikli geliyor, anlayamadım.
+
+314
+01:10:29,460 --> 01:10:38,319
+Bunu göndermeniz şart değil. Aslında önemli olan raporunuz. Bunu zaten sun sırasında açacaksınız. Biz de göreceğiz.
+
+315
+01:10:49,108 --> 01:10:51,548
+Yürüz, Yürüz, Yürüz, Yürüz, Yürüz.

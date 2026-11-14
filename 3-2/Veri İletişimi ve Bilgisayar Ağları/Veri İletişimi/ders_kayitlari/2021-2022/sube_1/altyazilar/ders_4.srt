@@ -1,0 +1,3219 @@
+1
+00:04:54,548 --> 00:04:55,327
+Günaydın [öğrenci].
+
+2
+00:04:56,807 --> 00:04:57,668
+Günaydın hocam.
+
+3
+00:04:59,627 --> 00:05:04,627
+Biraz daha bekleyeceğiz. Geri kalan arkadaşlar da belki katılır diye.
+
+4
+00:05:05,827 --> 00:05:06,447
+Tamamdır.
+
+5
+00:05:06,687 --> 00:05:12,728
+Bir şey olursa soracağım falan, bir şey varsa da sor istersen. Başlarız birazdan da.
+
+6
+00:08:57,683 --> 00:09:05,943
+Hocam, işletim sistemleri dersinde ödevimiz mi olacak yoksa ikinci bir vize mi yapılacak, nasıl bir puanlama sistemi olur?
+
+7
+00:09:07,243 --> 00:09:19,283
+Valla benim normalde düşündüğüm ikinci bir vize yapmak ve fakat vizelerin nasıl yapılacağı, ikinci vizelerin nasıl yapılacağını ilgili daha bölümden bir net bilgi alamadım.
+
+8
+00:09:20,363 --> 00:09:21,703
+Duruma göre bakacağız.
+
+9
+00:09:23,083 --> 00:09:23,463
+Anladım.
+
+10
+00:09:23,855 --> 00:09:25,415
+[öğrenci] mi geçti?
+
+11
+00:09:26,515 --> 00:09:27,056
+İlk bize mi?
+
+12
+00:09:27,956 --> 00:09:29,875
+İlk bize 60 aldım.
+
+13
+00:09:30,316 --> 00:09:30,735
+İyi mi?
+
+14
+00:09:30,735 --> 00:09:35,115
+Çok iyi değil ama ortalamanın üstünde. O yüzden mutluyum yani.
+
+15
+00:09:35,576 --> 00:09:37,936
+Mutluyum. Allah bozmasın.
+
+16
+00:09:38,716 --> 00:09:39,415
+Teşekkürler.
+
+17
+00:10:42,644 --> 00:10:51,124
+Evet. Zannımca biz bugün böyle bayağı, bu teki baş başa bir ders yapacağız.
+
+18
+00:10:52,244 --> 00:10:56,964
+Ben de arkadaşlarıma sordum, aynı derste olduğumuz arkadaşları da görmediler.
+
+19
+00:10:58,364 --> 00:11:00,604
+O derece uyuyorlar yani.
+
+20
+00:11:02,604 --> 00:11:07,703
+Hadi bir iki üç dakika daha bekleyin, dokuzu on geçsin bu arada. Yani öyle başlayalım ben kötü.
+
+21
+00:11:12,244 --> 00:11:14,244
+Sen işlediğim sistemini hangi gruptan alıyorsun?
+
+22
+00:11:16,183 --> 00:11:21,443
+Birde girdiğimiz grup bir herhalde, onda alıyorum. Derse birde girdiğimiz grup.
+
+23
+00:11:21,764 --> 00:11:23,344
+Evet, evet, grup bir.
+
+24
+00:11:29,716 --> 00:11:32,495
+Notunu sistemden gördün zaten, bir sıkıntı yoktu.
+
+25
+00:11:33,096 --> 00:11:36,696
+Evet, istatistikte not ortalaması da vardı.
+
+26
+00:11:39,016 --> 00:11:40,316
+Ha, onları da gösteriyor.
+
+27
+00:11:41,776 --> 00:11:46,296
+Kaç kişi katıldı not ortalamasını falan hepsini görebiliyoruz.
+
+28
+00:11:47,395 --> 00:11:47,916
+Aynı iş.
+
+29
+00:12:01,812 --> 00:12:16,451
+Hocam, bir de böyle insanın aklında bir soru işareti oluşuyor bu tarz ayrıntı konular görünce. Mesela işletim sisteminde prosesler, trendler, veri iletişiminde bir sürü farklı teknik görüyoruz, CRC gibi mesela.
+
+30
+00:12:16,451 --> 00:12:26,951
+Bir yerden sonra şuna dönüyor, herkes de olduğu gibi, nerede kullanacağız bunları gibi sorular kafada. Sizin mesela nasıl tavsiyeleriniz var bu konuda?
+
+31
+00:12:27,764 --> 00:12:29,683
+Sizce neden bu kadar şey öğreniyoruz?
+
+32
+00:12:33,084 --> 00:12:36,064
+Birçok nedenden dolayı bunları öğreniyorsunuz aslında.
+
+33
+00:12:37,124 --> 00:12:41,004
+Öncelikle ilk ve temel nedeni bilgisayar mühendisi olacak olmanız.
+
+34
+00:12:41,324 --> 00:12:46,663
+Yani sıradan bir programcı, sıradan bir IT çalışanı vs. değilsiniz.
+
+35
+00:12:46,783 --> 00:12:47,824
+Bilgisayar mühendisisiniz.
+
+36
+00:12:48,564 --> 00:12:50,764
+Bunları anlatıyor olmamızın nedeni...
+
+37
+00:12:52,884 --> 00:12:59,824
+Bunları kullanarak bir şeyler yapmanız değil, bunlardan tasarlayabilecek hale gelmeniz.
+
+38
+00:13:02,004 --> 00:13:28,704
+Oradaki yanılgu, veri iletişiminde anlattığımız, bugün de mesela konuşacağız, nerede kullanıyoruz falan diyorsun ya, yöntümü vesaireyi, ya da nerede kullanacağız. Nerede kullanıldığını, mesela bugün 802 projesini konuşacağız, Aytropa'yı 802'yi. 802'yi konuştuğumuz zaman, her bir katmanın da ayrı ayrı kullanıldığını, her bir katmanın da demeyeyim, pardon, şeyinde.
+
+39
+00:13:29,683 --> 00:13:40,683
+Aslında onlar aynı katman farklı teknolojiler. 802, 3'te, 4'te, 5'te hepsinde kullanıldığını göreceksiniz. Yanlış anlamadıysam, LRC'yi de düşünüyorum.
+
+40
+00:13:40,683 --> 00:13:51,683
+Yani veri iletimiyle ilgili örneğin sürekendir. Öbür taraftan işletim sisteminde mesela process thread vs. konuşuyoruz.
+
+41
+00:13:57,268 --> 00:14:05,307
+Onları konuşup, yani çoğu zaman ilgili işletim sisteminde de işin nasıl döndüğünü ya da dönmesi gerektiğini de konuşuyoruz.
+
+42
+00:14:05,307 --> 00:14:15,807
+Ya da en azından siz bir şey tasarlamaya kalktığınız zaman orada hangi yaklaşımın size ne kazandıracağını, ne kaybettireceğini tartışıyoruz.
+
+43
+00:14:15,988 --> 00:14:18,988
+Yani dolayısıyla kalkıp kendi çözümünüzü...
+
+44
+00:14:19,283 --> 00:14:28,223
+sunmak ya da oluşturmak mümkün. Mesela o zaman sen birinci grupta oluyorsan bu hafta sizinle de konuşacağız.
+
+45
+00:14:30,196 --> 00:14:32,416
+En son semafor konuşmuştuk.
+
+46
+00:14:32,476 --> 00:14:35,736
+Semaforla ilgili çözebileceğiniz problemleri konuşacağız.
+
+47
+00:14:35,855 --> 00:14:38,696
+Sonrasında monitör yapısını konuşacağız.
+
+48
+00:14:39,316 --> 00:14:41,036
+Ondan sonra da şey konuşmaya başlıyoruz.
+
+49
+00:14:41,155 --> 00:14:42,516
+Scheduling konuşmaya başlıyoruz.
+
+50
+00:14:42,635 --> 00:14:44,355
+Şimdi scheduling yöntemlerini konuşacağız.
+
+51
+00:14:44,496 --> 00:14:47,516
+Hangisinin artısı, eksisi nedir, ne değildir bunları konuşacağız.
+
+52
+00:14:48,716 --> 00:14:50,536
+Yani şimdi onları nerede kullanıyorlar?
+
+53
+00:14:50,696 --> 00:14:54,875
+Onları şu an kullandığın Linux işletim sistemi de, Windows işletim sistemi de kullanıyor birebir.
+
+54
+00:14:56,211 --> 00:15:13,372
+Ne olacak? Sen mesela en basitinden o Linux işlediğim sistemini bir yere port edeceksen ya da orada kullanacaksan işin karakteristiğini analiz edip ona göre uygun scheduling algoritmasını seçme yoluna da gidebilirsin.
+
+55
+00:15:13,511 --> 00:15:18,611
+Ya da kendi ihtiyacına bağlı olarak kendi scheduling algoritmanı da oluşturabilirsin.
+
+56
+00:15:22,836 --> 00:15:42,836
+Mantığıyla bakarsanız oldukça sınırlı. Size anlatılan şeyi, nasıl diyeyim, teknolojiyi doğrudan kullanmak gibi bakarsanız olaya, yani kalkıp kendinizi sadece uygulama geliştiren bir adam olarak sınırlarsanız ya da...
+
+57
+00:15:44,179 --> 00:15:54,179
+nasıl diyeyim, sistem yöneticisi olarak sınırlarsanız ya da başka şekilde sınırlarsanız size bu anlatılanları kullanmanız...
+
+58
+00:15:54,707 --> 00:16:05,907
+Bu, hala mümkün ama çok sınırlı. Yani hala mümkün derken, en azından uygulamayı geliştirirken, altta nelerin döndüğünü bildiğiniz için ona uygun bir tasarım, bir yapı oluşturabilirsiniz.
+
+59
+00:16:06,028 --> 00:16:13,008
+Ya da bir şeyin neden yavaş, neden hızlı, neden daha efektif olduğunu bilip ona göre seçim yapıyor olabilirsiniz.
+
+60
+00:16:21,683 --> 00:16:32,124
+yerine, burada bahsedilen teknolojileri, yapıları kullanmak yerine, onları tasarlayan tarafta olursanız ki, amaç ve hedef o, bilgisayar mühendisliği, o demek.
+
+61
+00:16:33,063 --> 00:16:39,343
+Yani şey değil, yani işte size ne bileyim, programlama da size anlatılıyor.
+
+62
+00:16:41,144 --> 00:16:44,343
+S ile kodlayın, kodlayın, kodlayın, kodlayın diye değil.
+
+63
+00:16:46,868 --> 00:16:56,128
+Normal şartlarda en azından şunu yapıyor olmanız lazım. İşletim sistemi konuşuyoruz, network konuşuyoruz, vesaireyi konuşuyoruz.
+
+64
+00:16:56,288 --> 00:17:09,168
+Sİ'yi de anlatıyoruz. Sİ'de yazdığınız kodu bile aslında işletim sisteminde öğrendiğiniz, gördüğünüz, yapıyor ya da mantığa uygun şekilde ya da dikkat etmeniz gereken konuları düşünerek yapıyor olmanız lazım.
+
+65
+00:17:10,867 --> 00:17:19,447
+Olay sadece doğrudan anlatılığını kullanmak değil, onun nasıl tasarlandığını, neye dikkat edildiğini, kriterlerin ne olduğunu bilmek.
+
+66
+00:17:19,587 --> 00:17:22,548
+Buna göre yeri geldiğinde kendi tasarımınızı yapabilmek.
+
+67
+00:17:22,548 --> 00:17:27,567
+Yani bizim aslında bilgisayar mühendisi yetiştirirken hedefimiz bu.
+
+68
+00:17:34,067 --> 00:17:45,907
+Şu anda hala bölümün aktif düşüncesi, yapısı ya da şeyi mi nedir o? Yaklaşımı mı o tartışılır. Bölümün bir yaklaşımı var mı o bile tartışılır.
+
+69
+00:17:46,807 --> 00:17:56,627
+Yani ya da üniversitenin ya da fakültenin hani kağıt üzerinde çok şey yazılıyor da gerçekten neyin nasıl yürüdüğü tartışılır benim gözümden.
+
+70
+00:17:58,728 --> 00:18:00,807
+Dolayısıyla bilmiyorum.
+
+71
+00:18:02,259 --> 00:18:03,839
+Sonunda bağlayacağım yer orası.
+
+72
+00:18:07,731 --> 00:18:31,531
+Peki hocam, sonuçta bilgisayar mühendisliği çok fazla altta da olan bir bölüm. Hani her şey olabiliyor, bir insan buradan mezun olduktan sonra. Yani veri tabanı yöneticisi de olabilir, mobil programlama da yapabilir, oyun da yapabilir, işletim sistemi de yazabilir. Yani her gördüğümüz dersin kendine özel bir mesleği var neredeyse. Hani sizin mesela sektörde...
+
+73
+00:18:31,955 --> 00:18:42,315
+Ama şu ana kadar edindiğimiz bilgilerle mesela nelerde yoğunlaşmamızı beklersiniz bizden? Nerelerde açık var sizin gördüğünüz kadarıyla?
+
+74
+00:18:44,175 --> 00:18:58,315
+Nerelerde açık var derken ne anlamda açıktan bahsediyorsun? Yani şöyle kaba tabirle sorayım. Daha şey olsun. Hani hangi konuda çalışırsam en rahat işe girerim anlamında mı soruyorsun? Yoksa...
+
+75
+00:18:58,900 --> 00:19:03,680
+Yani araştırma konusu olarak mı açık var diye soruyorsun. Yani tam bunu anlamadım.
+
+76
+00:19:05,260 --> 00:19:13,720
+Genel olarak sektörde şu an ihtiyaç olan kısım neresi? Orayı galiba açık olan yeri soruyorum. Aynen. İlk söylediğiniz şey gibi.
+
+77
+00:19:14,780 --> 00:19:19,599
+Yani sektör her şeye aç ve açık. Öyle söyleyeyim.
+
+78
+00:19:19,599 --> 00:19:21,599
+Yani ama...
+
+79
+00:19:21,971 --> 00:19:30,652
+Kesinlikle ve kesinlikle en fazla açık olan şeyi soracak olursan, bence hala açık ara gömülü sistemler.
+
+80
+00:19:31,172 --> 00:19:37,172
+Çünkü bu ülkede bilgisayar mühendisliği bölümleri, bizimkini eskiden daha iyiydi.
+
+81
+00:19:39,211 --> 00:19:42,891
+Ama şu an o da baya kötü bir seviyeye geldi.
+
+82
+00:19:43,051 --> 00:19:47,172
+Çünkü o işle uğraşan, o işi yapan...
+
+83
+00:19:47,731 --> 00:20:09,132
+Teknolojik olarak piyasayla işbirliği olan biraz megalomanca olacak ama gerçeği bu maalesef. Bir ben kaldım, Gökhan Hoca vardı gitti, Ahmet Hoca vardı rahmetli oldu, Ayhan vardı ayrıldı.
+
+84
+00:20:10,003 --> 00:20:18,903
+Başka, Tarkan vardı, ayrıldı. Yani bu adamlar gerçek anlamda gümlü sistemlerde çalışıyordu, bir şeyler üretiyordu.
+
+85
+00:20:19,943 --> 00:20:30,683
+Ama şu an olanlardan, benim bildiğim kimse yok. Belki yeni gelen hoca arkadaşlardan vardır çalışan, emin değilim.
+
+86
+00:20:30,683 --> 00:20:36,603
+Yani onları şey yapmayayım, dışlamayayım ya da atlamayayım.
+
+87
+00:20:37,203 --> 00:20:48,103
+Ama onun dışında benim bildiğim bir ben kaldım. Zaten bu şeye de özel değil, bizim bölüme de özel değil, bizim bölüm uzunca bir süre bunu böyle korumuştu.
+
+88
+00:20:48,824 --> 00:20:59,203
+Fakat Boğaziçi'ne de gitseniz, İtio'ya da gitseniz, başka yere de gitseniz, bilgisayar mühendisi adamlar...
+
+89
+00:21:01,011 --> 00:21:26,271
+Donanım gösterdiğin zaman kaçacak delik arıyordu. Yani transistörle adam kovalayabilirsin. Öyle söyleyeyim. Basit bir testini yapmak istiyorsan da al bir PMP transistör eline. Donanım alabilimdeki adamlara sor bakalım tek tek. Bu nasıl çalışır? Bu hocam şu nasıl oluyor? Ya da işte süper pozisyon.
+
+90
+00:21:26,708 --> 00:21:33,788
+Çiz bir kağıda, git. Nedir bu diye sor. Bak bakalım cevap alabiliyor musun? Ya da mikro kontrolürle ilgili git bir şey sor.
+
+91
+00:21:34,388 --> 00:21:42,408
+[öğrenci] var gerçi bizde, pardon. [öğrenci] var. Doğru, onu atladım. [öğrenci] var. Hatta [öğrenci] da var.
+
+92
+00:21:43,608 --> 00:21:52,048
+Ama yani işte sınırlı, 40 kişi ilk bölümde topu topu 3 kişi kalmışız. [öğrenci] ile [öğrenci]'ı atladım ben. Şimdi jeton düştü.
+
+93
+00:21:52,511 --> 00:22:15,435
+Yani bu üç kişi dışında git sor bakalım kaç kişi cevap verecek. O yüzden de hem yetiştirmekte çok zor dönüyoruz. Çünkü kimse çalışmak istemiyor. O yüzden de çalışmak zor. Yani işin donanım kısmıyla da ilgileniyor, çalışıyor, öğreniyor olman lazım. Yazılım kısmıyla da ilgileniyor olman lazım. Elektronikçiler...
+
+94
+00:22:15,539 --> 00:22:20,920
+Bir şeyler yaptıklarını sanıyorlar ama gerçekten bir şeyler yaptıklarını sanıyorlar çoğu zaman.
+
+95
+00:22:21,099 --> 00:22:24,299
+Çünkü yazdıkları kodlar kabus gibi oluyor.
+
+96
+00:22:24,299 --> 00:22:29,739
+Yani kodlar, camplar, hoplar, zıplar böyle abudik bu bir şey oluyor.
+
+97
+00:22:30,159 --> 00:22:31,980
+Çok makul ya da mantıklı da olmuyor.
+
+98
+00:22:32,679 --> 00:22:41,679
+O yüzden de aslında bilgisayar mühendisliğinin bu noktada biraz değişmesi, evrilmesi lazım.
+
+99
+00:22:44,147 --> 00:23:02,047
+Şey olarak da, bu kadar az insan üretebildiğimiz, bu kadar az insan yetiştirebildiğimiz için de piyasada bu konuda çalışacak insana her daim ihtiyaç var. Bitmiyor. Zaten sayı çok az, kaynak çok az, o yüzden hiç bitmiyor.
+
+100
+00:23:02,047 --> 00:23:10,047
+Onun dışında güncel konu olarak bakacak olursan, o biraz sıkıntı.
+
+101
+00:23:10,836 --> 00:23:33,735
+Şöyle sıkıntı, şeyler, bazı konular gelip geçicidir. Ara ara popülerleşir, ara ara sönükleşir, unutulu gider. Şu an dönem veri dönemi, dolayısıyla veri analitiği üzerine çalışan herkes şu an çok değerli.
+
+102
+00:23:34,195 --> 00:23:39,195
+Uzunca bir müddet daha bu böyle gider ama bir yerde değişecektir.
+
+103
+00:23:41,675 --> 00:23:54,455
+Şey gibi düşünebilirsiniz bunu. Her çalışma konusunun popülerliği, sinizo-hidal bir dalga gibi düşünün. Bir tepe yapar, bir dip yapar, bir tepe yapar, bir dip yapar, öyle gider gelir.
+
+104
+00:23:56,276 --> 00:24:14,175
+Bir yerlerde de oturur belki rayına. Yapay zeka benzer şekilde öyle popüler ama yani bir insanın yapay zeka ile uğraşabilmesi için önce zekaya sahip olması lazım. Cehaletten arınmış olması lazım. Onu söyleyebilirim.
+
+105
+00:24:22,291 --> 00:24:31,172
+Kendisini yapay zeka uzmanı olarak tanıtanlara itibar etmeyin diye de bir SMS göndermeye başlaması lazım zannediyor.
+
+106
+00:24:31,251 --> 00:24:39,371
+Çünkü hazır kütüphaneleri bulan, gören, kullanmayı, iki fonksiyon çağırmayı bilen adam kendini yapay zeka uzmanı olarak tanıtıyor.
+
+107
+00:24:40,351 --> 00:24:46,612
+Dolayısıyla orada yapılacak çalışmalar ya da yapılacak işler önemli ama şey sınırında kalmaması lazım.
+
+108
+00:24:48,627 --> 00:25:01,987
+Bilginizin ya da kapasitenizin ya da deneyiminizin sadece bunları, bu uygulamaları kullanmak anlamında kalmıyor olması lazım. Yani aynı yapıyı, aynı çözümü.
+
+109
+00:25:04,243 --> 00:25:13,423
+A problemini uyguladım, çıkarttım, B problemini uyguladım, çıkarttım, C problemini uyguladım diye giderseniz aslında teknik olarak hiçbir şey yapmış sayılmazsınız.
+
+110
+00:25:13,723 --> 00:25:21,443
+Maalesef içinde bulunduğumuz dünya ve hayat koşulları bunu yapan adamların profesör olmasına bile imkan veriyor.
+
+111
+00:25:21,844 --> 00:25:29,643
+Saçma sapan bir şekilde. Yani adam kendi bölümümden vermeyeyim, farklı bir bölümden vermeyeyim sonra sıkıntı olmasın.
+
+112
+00:25:30,451 --> 00:25:36,672
+Gidin, kimya mühendisliğinde adam 4 sene doktora yaparken 26 tane yayın yapmış.
+
+113
+00:25:37,471 --> 00:25:40,791
+Teknik olarak mümkün değil, yılda 6 tane yayın demek.
+
+114
+00:25:41,811 --> 00:25:51,711
+Yani bizim çalışma alanımıza baksan, yani zaten bir yayını hazırlaman, çalışman, bir yere getirmen, göndermen vs.
+
+115
+00:25:53,172 --> 00:25:56,271
+kaliteli bir yerse 6 ayla bir yıl arası sürer.
+
+116
+00:25:56,819 --> 00:26:13,980
+Dandik bir yerse bugün gönderiyorsun, yarın kabul ediyorlar zaten. Bu da ayrı bir konu. Bu adımın yaptığı da kimyadaki her gün pazara çıkıp aynı kurutma tekniğini bugün bazelyaya yarın fasulye uyumlamak, elde ettiği sonuçları kağıda yazmak, sonra da yayınlamak.
+
+117
+00:26:20,372 --> 00:26:34,231
+Sıradan, önemsiz işler yapan adamların yükseldiğini ya da çok paralar aldığını da göreceksiniz ama sizin yaptığınız işte daha seçici ve kaliteli olmanız gerektiğini düşünüyorum.
+
+118
+00:26:34,352 --> 00:26:44,372
+En azından kendi mutluluğunuz, kendi şeyiniz için. Uzatmayayım. Şu an bence Türkiye içerisinde kalacaksanız...
+
+119
+00:26:47,380 --> 00:26:57,820
+Bir şeyle ilgili her zaman için çalışabilirsiniz. Gömül sistemlerle ilgili çalışabilirsiniz. Hızlı geri dönüş olur.
+
+120
+00:26:57,820 --> 00:27:03,820
+Bir şey yapabilirsiniz. Sistem yöneticiliği noktasında...
+
+121
+00:27:07,539 --> 00:27:21,539
+çalışabilirsiniz. Her zaman geri dönüş olur. Ama stresli, sinirli bir iştir. Yani 7-24 çalışılan bir iştir. O noktada yapmanız gereken daha çok...
+
+122
+00:27:25,556 --> 00:27:41,556
+Cloud sistemlerini şu an güncel olduğu için o sistemleri kurup yönetebilmektir. Yani kurup yönetebilmekten kazık şu aslında. Baktığınız zaman birçok sistemi aslında otoscriptlerle...
+
+123
+00:27:45,683 --> 00:27:46,003
+Pardon.
+
+124
+00:27:47,183 --> 00:27:54,263
+Otoscriptlerle kurabiliyorsunuz, bir şeyler yapabiliyorsunuz ama o kurulumlar çoğu zaman size şeyi sağlamaz.
+
+125
+00:27:54,963 --> 00:28:01,223
+İstediğiniz güven ya da yeterlilik seviyesini sağlamayabilir.
+
+126
+00:28:01,223 --> 00:28:05,223
+Dolayısıyla o sistemleri daha iyi...
+
+127
+00:28:06,259 --> 00:28:12,579
+yapılandırabilmek için, değiştirebilmek için yeterli deneyime sahip olmanız gerekir.
+
+128
+00:28:12,579 --> 00:28:17,299
+Bunlar üzerine çalışabilirsiniz. Ben doğrudan kendi çalışma alanlarım üzerinden gideyim.
+
+129
+00:28:17,980 --> 00:28:21,579
+Network ve security çok ciddi anlamda açıklar.
+
+130
+00:28:23,220 --> 00:28:32,119
+Yani network bilgisi ülkedeki birçok insanın, yani network uzmanı olduğunu söyleyen birçok insanın bilgisi oldukça sınırlı.
+
+131
+00:28:32,788 --> 00:28:50,688
+Yani hem cihaz anlamında, hem cihaz derken, yani o cihaz ve o cihaz üzerinde kullanan teknolojiler anlamında, protokoller anlamında, hem de TCP, IP anlamında, öyle söyleyeyim.
+
+132
+00:28:50,688 --> 00:28:58,688
+Yani IP isteğine hakim olmak da kolay bir iş değil, zor bir iş. Benzer şekilde yani...
+
+133
+00:28:59,188 --> 00:29:12,307
+Network'ten gideceksek, eğer biraz da programlama tarafımız varsa, Network Programming oldukça önemli bir konu. Yani ciddi anlamda size fayda sağlar.
+
+134
+00:29:15,048 --> 00:29:18,968
+Türkiye'de üzerine çokça çalışılan bir yapı değil.
+
+135
+00:29:21,907 --> 00:29:24,567
+Her köşe başında bununla ilgili bir firma bulamazsınız.
+
+136
+00:29:25,187 --> 00:29:28,467
+Fakat çalışan firmalar önemli firmalar.
+
+137
+00:29:28,587 --> 00:29:31,307
+Çalışan da az kişi olduğu için gene rakamlar yüksek.
+
+138
+00:29:32,227 --> 00:29:34,347
+Geri dönüşü iyi bir yapı.
+
+139
+00:29:35,947 --> 00:29:41,607
+Onun dışındaki her şey bence biraz sıkıntılı.
+
+140
+00:29:41,607 --> 00:29:44,227
+Mesela görüntü işlemi çok popülerdir.
+
+141
+00:29:44,527 --> 00:29:46,287
+Şey yapar insanlar.
+
+142
+00:29:47,731 --> 00:29:56,571
+Üzerine onu yaptık, bunu yaptık derler ama eline kütüphane alan görüntü işleme yaptığını iddia ettiği için işler biraz daha farklı ya da değişik yürür.
+
+143
+00:29:58,191 --> 00:30:07,131
+Özetle bunların her biri için aslında hem network ile ilgili bir şey yapacaksınız hem security konuşmadık galiba.
+
+144
+00:30:07,131 --> 00:30:11,211
+Yani security konusunda söyleyecek çok şeyim var.
+
+145
+00:30:11,892 --> 00:30:16,592
+Ama söyleyip de iç savaş çıkartmak istemiyorum.
+
+146
+00:30:23,232 --> 00:30:29,192
+Geçen seneye kadar Gökhan Hoca veriyordu bizimdeki security dersini.
+
+147
+00:30:30,872 --> 00:30:31,932
+Şu an başka biri veriyor.
+
+148
+00:30:32,435 --> 00:30:58,735
+Yani o dersin geçen seneki ve bu seneki notlarını karşılaştırın. Security'de ne halde olduğumuzu genel anlamda görün. Dolayısıyla bu eksikliğin ya da yetersizliğin giderilmesi, düzeltilmesi lazım. Bunun için de yetişmiş insan lazım. O yüzden onlara da, o konuya da bakabilirsiniz.
+
+149
+00:30:59,251 --> 00:31:14,431
+Security tek boyut değildir. Hani genelde security deyince genelde insanların aklına hep network security geliyor ama olay sadece network security değil. İşlediğim sisteminin güvenliği de var. Dosya sisteminin de güvenliği var.
+
+150
+00:31:17,171 --> 00:31:24,411
+Güvenlik birçok konuda olduğu gibi aslında fiziksel güvenlikle başlar. Dolayısıyla o işin fiziksel boyutu da var.
+
+151
+00:31:28,596 --> 00:31:55,536
+Bunlara bakıyor olmak kazandıracaktır. Bilmiyorum, daha başka bir şey şu an aklıma gelmedi zaten. Kaç dakikadır konuşuyorum bilmiyorum ama kafamda da konu dağıldı. Soru neydi diye doğru gidiyorum. Oradan oraya dallandım. Bilmiyorum sana şey oldu mu, faydası oldu mu? İstediğine yakın bir şey oldu mu? Evet hocam, genel bir sektörle ilgili yorumunuzu duymuş olduk. Teşekkür ederiz.
+
+152
+00:31:56,180 --> 00:32:09,079
+İyi. Şey gibi oldu sen de, sanki söyleşinde moderatörmüş gibi bunu duymuş olduk, iyi olduk falan diye.
+
+153
+00:32:10,180 --> 00:32:22,220
+Çok nadir yakalıyoruz da böyle hani ne bileyim sürekli dersle ilgili bir şeyler öğreniyoruz da farklı konularla ilgili yorumlarını da merak ediyor insanların, diğer hocaların vesaire. O yüzden.
+
+154
+00:32:23,604 --> 00:32:36,524
+Yani mutlaka ama yani şöyle bir şey var. Sormazsanız yani durup dururken hani işte veri iletişim dersine girip hadi bugün de sektörel problemlere değinelim diye.
+
+155
+00:32:37,556 --> 00:32:54,675
+Olmuyor. Çünkü size anlatmak için planladığımız, şey yaptığımız bir konu silsilesi var. Onları anlatmanın, yetiştirmenin derdindeyiz. Misal, bu dersin özelinde diğer grupta Furkan hocanız var.
+
+156
+00:32:55,220 --> 00:33:06,380
+Adam gerideydi, ne ara öne geçti bilmiyorum. Pıtır pıtır ilerliyor. Dolayısıyla ona yetişmek gibi bir derdim de var. İşte işletim sisteminde zaten kendimle yarışıyorum genelde ama biraz yavaş gidiyor.
+
+157
+00:33:08,500 --> 00:33:21,880
+Bu sene mesela şey, virtual memory, memory management'ı ve virtual memory'yi ne kadar görebileceğiz, yetişecek mi falan diye kafamda soru işareti olarak haftalardır.
+
+158
+00:33:22,355 --> 00:33:27,955
+Böyle yaparsam, böyle yaparsam, şuradan gidersem, böyle mi yapsam falan diye dönüp duruyor.
+
+159
+00:33:29,155 --> 00:33:30,375
+Öyle bir şekilde.
+
+160
+00:33:31,875 --> 00:33:32,195
+Neyse.
+
+161
+00:33:33,475 --> 00:33:37,455
+Şimdi, bu arada diğer arkadaşlar da geldi galiba değil mi?
+
+162
+00:33:38,076 --> 00:33:39,855
+Baş başa romantik bir ders olmuyor.
+
+163
+00:33:40,036 --> 00:33:40,975
+Diğerleri de burada.
+
+164
+00:33:41,587 --> 00:34:07,587
+Güzel. Bugün neyi konuşacağız? Yerel alan ağlarını konuşacağız aslında. Yerel alan ağlarını konuşurken aslında farklı teknolojilerden bahsedeceğiz. Yani Ethernet'ten bahsedeceğiz, TokenBus'tan bahsedeceğiz, TokenLink'den bahsedeceğiz. Sonra Wireless'tan bahsedeceğiz. Bunlardan bahsederken de aslında şey...
+
+165
+00:34:08,384 --> 00:34:13,163
+Hem burada çeşitli alanlarda kullanılan tekniklerden bahsedeceğiz.
+
+166
+00:34:13,163 --> 00:34:18,443
+Yani mesela Medium Access Control kısmına bakacağız.
+
+167
+00:34:19,144 --> 00:34:28,824
+Medium Access Control'ün farklı yapılar içerisinde nasıl gerçeklendiğini, hangi yöntemlerle gerçeklendiğine bakacağız.
+
+168
+00:34:29,423 --> 00:34:35,163
+Orada özellikle şey göreceksiniz, paylaşılan bir ortama erişmek için yapabileceğiniz...
+
+169
+00:34:35,572 --> 00:34:39,152
+uygulayabileceğiniz yöntemlerle bunu görüyor olacağız.
+
+170
+00:34:39,992 --> 00:34:41,572
+Vesaire, vesaire. 802
+
+171
+00:34:41,572 --> 00:34:46,572
+Bu slide yanlış ya.
+
+172
+00:34:50,572 --> 00:34:52,652
+802 11 değil, 802
+
+173
+00:34:53,684 --> 00:35:18,844
+Projesi olacak bu. Bu da 802.1, 802.2, 802.3, 802.4, 802.5 olacak. 802.11 başka bir şey. Burada bir şey olmuş. Ben bir gaza gelmişim. Şey mi otomatik toplamış, bağlamış bir şeyler yapmış bilmiyorum. Sağ olsun bazen Word ve Trevleri çok güzel ukalalıklar yapabiliyor.
+
+174
+00:35:20,436 --> 00:35:39,896
+802 projesi, ITROP'nin başlattığı bir proje. Projenin amacı ya da hedefi aslında baktığınızda farklı networklerin bir arada çalışabilmesini sağlamak.
+
+175
+00:35:41,735 --> 00:35:45,896
+Farklı networklerin bir arada çalışabilmesini sağlamaktan...
+
+176
+00:35:46,099 --> 00:36:05,039
+Kasıt da şu, şimdi alt tarafta fiziksel katmanda ne kullanıyorsunuz? Mesela Ethernet kullanıyorsunuz. Şu an yalnız şey, Ethernet deyince, birazdan detayını konuşacağız ama şeye refere etmeyin. Şu an günümüzde kullandığınız Ethernet'e refere etmeyin. O aslında fast Ethernet.
+
+177
+00:36:05,972 --> 00:36:24,731
+Ethernet'in de kendi içerisinde bir gelişimi, bir değişimi var. Bunun dışında o dönem içerisinde, yani Ethernet'in başladığı, başlatıldığı dönem içerisinde, Token Ring ve Token Bus da mevcut teknolojiler. Dolayısıyla birbirine rakip, o dönem için rakip teknolojiler.
+
+178
+00:36:25,715 --> 00:36:46,935
+Fakat aynı anda ortamda bulunan teknolojiler. Dolayısıyla birden fazla ve birbirinden farklı özellikle teknoloji bir arada bulunduğunda her zaman için ne ihtiyacı oluşuyor ya da ne açığı oluşuyor? Bunları bir arada kullandırma ihtiyacı oluşuyor.
+
+179
+00:36:48,820 --> 00:36:59,420
+802 projesi böyle başlamış. Yani bu farklı teknolojileri bir arada kullanabilir miyiz? Nasıl kullanabiliriz? Arada bir geçiş yapabilir miyiz?
+
+180
+00:36:59,420 --> 00:37:07,060
+Şimdi OSI referans modeline baktığınız zaman fiziksel katman var, sonra veri bağ var, sonra network katmanı var.
+
+181
+00:37:07,220 --> 00:37:13,960
+Aslında birçok anlamda geçişi zaten network katmanında sağlıyoruz.
+
+182
+00:37:14,675 --> 00:37:22,835
+IP'de A teknolojilerini konuşurken göreceksiniz, IP aslında her şeyi bir arada tutan kısım.
+
+183
+00:37:24,416 --> 00:37:31,015
+IP'nin öncesinde farklı teknolojileri doğrudan bir arada kullanmanızı sağlayacak bir yapı yok.
+
+184
+00:37:31,456 --> 00:37:41,635
+Var ama günümüzde aktif olarak kullanılan bir yapı yok. TCP, IP protokolünün içerisinde de, daha doğrusu referans modelinin içerisinde yok.
+
+185
+00:37:42,016 --> 00:37:44,195
+Öyle söyleyeyim. Daha düzgün olsun.
+
+186
+00:37:48,775 --> 00:37:57,900
+Bunun için de 802 referans modelinde şöyle bir şey yapılmış. Fiziksel katman aynen duruyor. Zaten fiziksel katman temel olarak...
+
+187
+00:37:57,940 --> 00:38:07,699
+göndermek istediğiniz sinyalin iletim ortamı üzerinden ne şekilde yollanacağının belirlendiği yer.
+
+188
+00:38:08,060 --> 00:38:11,560
+Hala da öyle. Ama veri boyanı ikiye bölmüşler.
+
+189
+00:38:11,560 --> 00:38:19,920
+Biri media access control, diğeri de logical link control.
+
+190
+00:38:25,108 --> 00:38:31,868
+Bir şey ne? Zaten adı üstünde medya iletişim ortamı, akses kontrolü, kim oraya nasıl erişsin?
+
+191
+00:38:31,868 --> 00:38:46,347
+Şimdi şeyi hatırlarsanız, yerel alan ağlarda bağlantının multipoint olduğunu, haberleşme ortamında şir bir yapıda olduğunu.
+
+192
+00:38:47,476 --> 00:38:55,636
+Konuşmuştuk. Dolayısıyla bir şekilde neye ihtiyacınız var, bu ortama kimin ne zaman erişiğinin belirlenmesine ihtiyacınız var.
+
+193
+00:38:58,963 --> 00:39:15,583
+Wide Area Network'ta bu iş biraz daha kolay çünkü bağlantı ne point to point? Dolayısıyla doğası gerekli point to point bir bağlantıda. İki uç var, bu iki uç arasında haberleşiyorsunuz. Herhangi bir T anında haberleşebilecek kişi sayısı sınırlı zaten.
+
+194
+00:39:16,211 --> 00:39:31,011
+Veri bağı, yani Data Link Layer ikiye bölünmüş durumda demiştik. Data Link Layer'ın üst tarafında da, yani burada şöyle Medium Access Control daha böyle fiziksel ortama erişimle ilgili olduğu için alt katman olarak gözüküyor.
+
+195
+00:39:39,891 --> 00:39:44,831
+Lojik seviyede hattım. Yani fiziksel olarak hattım değil de lojik olarak.
+
+196
+00:39:45,131 --> 00:39:58,131
+Yani sizin oluşturduğunuz çerçevelerin hatalı olup olmadığını, iki taraf arasındaki haberleşme, akış anlamında sorunsuz yürümesi vs. gibi işleri yerine getirmekte sorumlu.
+
+197
+00:39:58,131 --> 00:40:07,627
+İş bölümü yapılmış yani. Böyle yapıldığı zaman da aslında olay...
+
+198
+00:40:10,132 --> 00:40:18,632
+şeye çevriliyor, homojen bir yapıya çevriliyor. Şimdi burada 802 projesiyle beraber aslında
+
+199
+00:40:18,632 --> 00:40:36,632
+tokenboss için, tokenring için ve CSMACD, bunun detayını daha sonra göreceğiz. Aslında o dönem için şey, eternete denk düşüyor.
+
+200
+00:40:37,235 --> 00:40:53,395
+Carrier Sense Multiple Access mit Collusion Detection yapıları için hem fiziksel katmanda tanımlar var, hem medium access katmanında tanımlar var.
+
+201
+00:40:53,635 --> 00:40:59,935
+Ama gördüğünüz üzere Logical Link Control ortak bir katman halinde implement edilmiş durumda.
+
+202
+00:40:59,935 --> 00:41:03,875
+Yani bunun üzerine artık şeyi kurabiliyorsunuz.
+
+203
+00:41:05,139 --> 00:41:12,259
+ağlar arası haberleşmeyi, internet working'i oluşturabiliyorsunuz. 802'nin hedefi de bu zaten.
+
+204
+00:41:14,300 --> 00:41:19,000
+Fiziksel katmanında çok konuşacağımız bir şey yok aslında.
+
+205
+00:41:19,000 --> 00:41:29,099
+Demin de dediğim gibi, sinyalin aktarılmasıyla ilgili, yani karşı tarafta aslında nasıl bir sinyalleşme metodolojisi kullanıyorsanız,
+
+206
+00:41:30,835 --> 00:41:32,695
+örneksel bir
+
+207
+00:41:36,244 --> 00:41:57,583
+işareti mi kullanıyorsunuz? Örnekselse faz genliği ya da frekans üzerinden mi modülasyon yapacaksınız? Yoksa daha önce konuştuğumuz sayısal modülasyon tekniklerini mi kullanıyorsunuz? Ona bağlı olarak neyin neye karşılık geleceğini konuşulması ya da belirlenmesi daha doğrusu.
+
+208
+00:42:04,244 --> 00:42:15,604
+Her zaman için problemimiz var. Bunların her biri dağıtık sistemlerde. Zaman senkronizasyonu önemli bir problem. Çok kolay çözebileceğiniz de bir problem değil.
+
+209
+00:42:20,684 --> 00:42:27,764
+Dolayısıyla bununla ilgili olarak fiziksel katmanda eğer kullandığınız bir yapı varsa, yani ortak bir clock kullanmak dışında
+
+210
+00:42:30,420 --> 00:42:35,500
+Onun gerçekleştirilmesi fiziksel katmanın görev. Burada mesela Preamble'dan bahsedilmiş.
+
+211
+00:42:37,619 --> 00:42:42,699
+Bunun dışında tabii ki ortam üzerinden göndereceğiniz bilginin gönderilmesi ve alınması.
+
+212
+00:42:43,920 --> 00:42:53,420
+Medium Access Control aslında birkaç sorumlu.
+
+213
+00:42:58,416 --> 00:43:03,796
+Nasıl gerçekleştireceğinin belirlenmesinden sorumlu.
+
+214
+00:43:05,916 --> 00:43:10,896
+Tabii ki bunu farklı farklı şekillerde gerçekleştirebilirsiniz.
+
+215
+00:43:11,516 --> 00:43:15,676
+İlerleyen slide'larda konuşacağız. Mesela aload protokolünü konuşacağız.
+
+216
+00:43:16,096 --> 00:43:18,516
+İsten istediği zaman konuşsun gibi bir yapı o.
+
+217
+00:43:19,356 --> 00:43:24,276
+Bunu mesela bir tık iyileştirmek için slotted aloadan bahsedeceğiz.
+
+218
+00:43:25,715 --> 00:43:28,195
+Diyelim ki, şöyle.
+
+219
+00:43:29,523 --> 00:43:57,523
+Biraz egzecere ederek anlatayım, biraz değiştireberek anlatayım. Şu an ben konuşuyorum. Sizin de bir konuşma ihtiyacınız geldiği zaman benim konuşup konuşmadığıma bakmadan patatakütte lafa giriyorsunuz. Ne oluyor? Hani bir yerde şeyi fark ediyoruz. Hani diğer arkadaşlar için bu. İkimizin aynı anda konuştuğu an bir garbage oluyor. Çünkü bir collusion oluyor. Kim ne diyor, ne oluyor falan anlamıyorlar. Ama en azından hem konuşan arkadaşınız hem ben şeyi fark ediyoruz.
+
+220
+00:43:57,523 --> 00:44:21,663
+Ya anlaşılamıyor falan diyoruz. Duruyoruz. Sonra ya o ya ben tekrar başlıyoruz. Bu bir yaklaşım. Bu mesela Aloha'nın şey hali gibi düşünebilirsiniz. Gerçek hayattaki öyle benzetilmiş hali gibi düşünebilirsiniz. Bunun yerine biraz daha düzgün bir şeyler yapmak mümkün. Misal,
+
+221
+00:44:23,764 --> 00:44:31,184
+Ben konuşurken söze girmek istediğinizde neyi bekleyebilirsiniz? Benim arada bir durduğum anı bekleyebilirsiniz.
+
+222
+00:44:32,444 --> 00:44:40,064
+Mesela bunun gibiydi işte. Bu arada söze girebilirsiniz. Ne olacaktı bu durumda? En azından kolücün olmayacaktı.
+
+223
+00:44:40,064 --> 00:44:48,264
+Ama bu mesela neyi gerektirir? Bir an uyumluluk gerektirebilir.
+
+224
+00:44:48,788 --> 00:45:05,107
+Mesela bunu slotted alohadaki gibi yaparsanız, yani zamanı slotlara bölüp o slotlar üzerinden haberleşmeyi denerseniz, bu olabilir. Misal, intervehicle communication da da buradadır.
+
+225
+00:45:05,107 --> 00:45:14,547
+Saniye üzerinden senkronizasyon yapılır. Saniye üzerinden senkronizasyon da şey aslında GPS sinyali üzerinden her saniye başı.
+
+226
+00:45:14,804 --> 00:45:32,304
+Şey ilan edilir. Nedir o? Ortak kanaldan kimin daha sonra konuşmak istediğine dair bilgisi aktarılır. Ondan sonra kanallar arasında geçiş yapılıyor.
+
+227
+00:45:32,304 --> 00:45:41,344
+50 milisaniyede bir olması lazım. Yanlış olmasın öyle bir şeydir. 50 milisaniye olmalı sanki.
+
+228
+00:45:42,579 --> 00:45:45,719
+Dolayısıyla
+
+229
+00:45:45,719 --> 00:45:53,299
+bunu yapabilmek için bir senkronizasyon metoduna ihtiyacımız var. Bu hani mesela
+
+230
+00:45:53,299 --> 00:46:03,739
+intervical communication'da şey var dedim, neto GPS sinyali üzerinden sağlanıyor dedim. Belli açılardan okey. Ama onda bile aslında driftleriniz olacaktır.
+
+231
+00:46:05,780 --> 00:46:09,760
+Bunu bu şekilde sağlayabileceğiniz bir ortam yoksa alternatifimiz ne?
+
+232
+00:46:12,920 --> 00:46:16,320
+Haricen yapmak ya da lojik seviyesinde yapmak.
+
+233
+00:46:16,440 --> 00:46:18,720
+Yani haricen yanlış olabilir orada.
+
+234
+00:46:19,560 --> 00:46:22,780
+Neyin harici olduğuna göre değişir çünkü polisicisi ama...
+
+235
+00:46:22,963 --> 00:46:35,384
+ekstra lojik seviyesinde bunu yapmamız gerekebilir. Yani doğrudan bir sinyalle değil de mesajlaşmayla yapmamız gerekebilir. Dolayısıyla medium access control bundan da dolayı dolaylı yoluna sorumlu oluyor.
+
+236
+00:46:38,443 --> 00:46:39,743
+Baktığınız zaman
+
+237
+00:46:47,347 --> 00:46:52,907
+Adresleme işinden de aslında Medium Access MacLayer sorumlu.
+
+238
+00:46:53,507 --> 00:47:00,748
+Hani en basiti şey noktasını düşünebilirsiniz.
+
+239
+00:47:00,748 --> 00:47:05,647
+Şu an kullandığınız Ethernet yapısında bile ne yapmanız gerekiyor?
+
+240
+00:47:06,228 --> 00:47:09,347
+Bir ortama erişebilmek için adrese ihtiyacınız var.
+
+241
+00:47:09,507 --> 00:47:12,708
+Bir şeyiniz var.
+
+242
+00:47:13,396 --> 00:47:32,775
+MAC adresiniz var, Ethernet üzerindeki MAC adresiniz var. Frame oluşturup gönderdiğiniz zaman source adresinize orası yazılıyor. Fakat karşı tarafta göndereceğiniz yerin de adresini bilinmesi lazım. Adres bilinmiyorsa yapılması gereken ne?
+
+243
+00:47:42,003 --> 00:47:54,003
+hedefi bulmaya çalışmak vs. O da aslında MAC katmanının yapacağı işlerden biri. Dolayısıyla bunları da konuşuyoruz. Logical Link Kontrol'de...
+
+244
+00:47:57,523 --> 00:48:06,523
+Aslında baktığınızda, yani nedir o? Demin grafikte gördük. OSI'dan farklı olarak burada iki ayrı katmanı bölünmüş demiştik.
+
+245
+00:48:06,523 --> 00:48:10,523
+Logical Link Control aslında...
+
+246
+00:48:13,844 --> 00:48:32,139
+Bir şekilde bir abstraction sağlıyor bize. Yani şöyle düşünün, siz yerine getirmeniz gereken iş ne? Mesela hata kontrolü. Mesela şey, akış kontrolü.
+
+247
+00:48:32,179 --> 00:48:43,439
+Yani bir frame size gelmesiyle ilgili probleminiz yok. Frame doğrudan geldi. Fakat sizde onu işleyemeden bir frame daha geldi. İşleyemeden bir frame daha geldi.
+
+248
+00:48:44,192 --> 00:49:03,831
+Adam sizi boğuyor. Yani parzimsel ikiniz de 10 megabitle bağlısınız ya da 100 megabitle bağlısınız. Ancak ve lakin sizin tek yapmanız gereken şey ağdan gelen bilgiyi paketi alıp işlemek değil, başka işleriniz de var ve şu an işlemci gücünüz ya da bellek.
+
+249
+00:49:04,403 --> 00:49:14,724
+Kapatiteniz bunu karşılayacak durumda değil ya da daha da güzeli ne diye konuşmuştuk ilk böyle OSI referans modellini konuşurken.
+
+250
+00:49:15,724 --> 00:49:25,644
+Çoğu zaman aslında hat hızında çalışabilmek için data link layer doğrudan network interface kartının üzerinde implement edilir.
+
+251
+00:49:25,644 --> 00:49:31,596
+Karşı tarafınki öyle implement edilmiş ve hat hızında takır takır çalışıyor. Sizinki ise...
+
+252
+00:49:31,731 --> 00:49:45,092
+Öyle implement edilmemiş çoğu software olarak çalışıyor ve yavaş çalışıyor. Bu bile ne olabilir? Bir akış problemi yaratabilir. Bu akış problemini çözmek de Logical Link Kontrolü işi.
+
+253
+00:49:46,731 --> 00:49:57,332
+Ve fakat bunu yaparken aslında şöyle bir güzellik var. Bir de hardware abstraction sağlıyor belli açılardan. Neden? Alt taraftaki katmanları şey yaptınız.
+
+254
+00:49:58,931 --> 00:50:23,931
+oluşturduğunuz üst tarafta bu katmanların her birine karşılık gelecek olan ve aynı işi yapan fonksiyon ailesini oluşturabiliyorsunuz. Böylece ne oluyor? Siz hani flow kontrol ile ilgili bir X fonksiyonunu yerine getirmek istediğiniz zaman alt katmanda hangi teknoloji, hangi yapı varsa ona uygun fonksiyon çağrılıyor. Böylece
+
+255
+00:50:24,288 --> 00:50:26,728
+Ne şansınız oldu otomatikman?
+
+256
+00:50:28,168 --> 00:50:43,208
+Aynı katmanla, aynı Logical Link Kontrol ile birden fazla farklı Medium Access Kontrol katmanını çalıştırabilme, onları kullanabilme şansınız oldu.
+
+257
+00:50:44,487 --> 00:50:50,728
+Şimdi Logical Link Kontrol ile baktığımız zaman bu katmanda farklı şekillerde
+
+258
+00:50:51,860 --> 00:50:53,179
+servis verebilirsiniz.
+
+259
+00:50:54,000 --> 00:50:57,340
+Aslında hep şey üzerinden gidiyoruz.
+
+260
+00:50:57,420 --> 00:51:04,119
+Her katmanda benzer, nasıl diyeyim?
+
+261
+00:51:06,612 --> 00:51:14,152
+yapılar karşımıza çıkıyor. Ağ teknolojileri dersinde, network katmanında ve transport katmanında da konuşacağız.
+
+262
+00:51:14,252 --> 00:51:19,532
+Hep aynı şeyleri konuşacağız aslında. Çünkü verilen servis tipi benzer.
+
+263
+00:51:20,092 --> 00:51:25,672
+Bir, ne olabilir sizin veri aktarımınız? Connection-oriented ya da connection-less olabilir.
+
+264
+00:51:25,672 --> 00:51:33,692
+Mesela Logical Link Kontrolü, yani Data Link Layer üzerinde, siz servisinizi nasıl oluşturabilirsiniz?
+
+265
+00:51:34,612 --> 00:51:39,072
+Connection Oriented ya da Connectionless oluşturabilirsiniz temelde.
+
+266
+00:51:40,292 --> 00:51:46,672
+Burada hani Connectionless'ı çeşitlendirmenin de bir durumu var.
+
+267
+00:51:46,672 --> 00:51:49,672
+O da şu, ya hani...
+
+268
+00:51:52,467 --> 00:52:02,647
+Acknowledge mekanizmasını bu işin içerisine katarsınız ya da katmazsınız. Yani karşı taraf bir bilgiyi aldığı zaman aldığına dair geri bildirim yapıyorsa bu Acknowledge'dır.
+
+269
+00:52:02,931 --> 00:52:26,191
+Bir servistir. Siz connection-oriented olmasanız da bunu sağlayabilirsiniz. Dolayısıyla oluşturabileceğiniz servisler de bu anlamda üç çeşittir. Bir tanesi unacknowledged, yani alındığı bilgisinin geri gönderilmediği, connection'ın da olmadığı, bağlantının kurulmadığı bir datagram servisi şeklinde olabilir.
+
+270
+00:52:26,719 --> 00:52:45,099
+Connection Oriented bir servis oluşturabilirsiniz. Yani hem akış kontrolü hem verinin kontrolünün yapıldığı bir yapı oluşturabilirsiniz. Mantıklı mı ya da tercih edilir mi? Günümüzde tercih etmiyoruz.
+
+271
+00:52:49,460 --> 00:53:04,079
+Bu bizim günlük yaşantıda ya da genel anlamda tercih ettiğimiz ya da etmediğimiz şeyin her zaman doğru ya da en iyi olduğu anlamına gelmez. Bunu unutmayın.
+
+272
+00:53:04,079 --> 00:53:14,519
+Bunu nerede nasıl yaptığınızda, nasıl geliştirdiğinize bağlı olarak değişir.
+
+273
+00:53:20,179 --> 00:53:25,179
+Oluşturacağınız network ya da oluşturacağınız yapı ya da oluşturacağınız teknoloji.
+
+274
+00:53:27,539 --> 00:53:33,979
+Savunma sanayiyle ilgili bir teknoloji ise orada belki de unacknowledged connectionless service değil de
+
+275
+00:53:33,979 --> 00:53:40,039
+acknowledged connectionless service ya da connection oriented service kullanmayı tercih edebilirsiniz.
+
+276
+00:53:40,739 --> 00:53:43,899
+Data link layer'da bile olsa. Biz ne yapıyoruz şu an?
+
+277
+00:53:46,452 --> 00:54:03,851
+Çoğunlukla büyük ölçüde hayatımızda yaygın olarak kullandığımız bir IP gerçeği var. IP gerçeği de baktığınız zaman, internet'e bağlantımız çoğu zaman servis sağlayıcılar üzerinden dönüyor.
+
+278
+00:54:03,952 --> 00:54:11,291
+Servis sağlayıcılar üzerinden döndüğü için de servis sağlayıcı ne ister? Minimum efor, maksimum kazanç ister.
+
+279
+00:54:12,980 --> 00:54:25,840
+Dolayısıyla Ağ Teknolojileri dersinde de konuşacağız. Aslında Ağ cihazları genelde 3. seviyeye kadar implement edilir. Üstüne de çıkmaz.
+
+280
+00:54:29,043 --> 00:54:45,043
+Üçüncü ile dördüncü seviye arasındaki fark ne? Dördüncü seviyede biz ne yapıyoruz? Connection Oriented Service sağlarız. Çünkü ikinci ya da üçüncü seviyede bunu sağlamak istemiyoruz. Çünkü bunu üçüncü ya da üçüncü seviyede sağlamaya kalktığınız zaman size...
+
+281
+00:54:45,715 --> 00:54:53,356
+İletişim hizmeti veren adımın cihazlarını buna göre değiştirmesi, düzeltmesi, toparlaması lazım.
+
+282
+00:54:53,516 --> 00:54:56,155
+Bunların hepsini sağlamak eşittir. Ne nedir? Maliyet.
+
+283
+00:54:56,675 --> 00:55:01,556
+Yani düzeltmesi, toparlamasından kısıt da şu aslında. Böyle söyleyince çok kapalı cümleler oluyor.
+
+284
+00:55:04,356 --> 00:55:06,655
+Connection Oriented Service ne demek?
+
+285
+00:55:07,356 --> 00:55:10,556
+Bir cihazın üzerinden geçen her...
+
+286
+00:55:10,804 --> 00:55:33,263
+akış ile ilgili bilgi tutması demek. Bir problem anında bu bilginin tekrar recover edilmesi demek. Dolayısıyla sisteme getireceği bir yük var. Bu yük de eşittir bu oluşturan cihazlar için.
+
+287
+00:55:35,059 --> 00:55:39,259
+Ekstra memori, ekstra CPU kullanımı vs. demek.
+
+288
+00:55:39,779 --> 00:55:42,480
+Dolayısıyla kimse bu yükün altına girmek istemez.
+
+289
+00:55:42,679 --> 00:55:50,099
+Belli açılardan burada sağlayabileceğiniz güvenilirlik, güvenlik demiyorum, güvenilirlik diyorum,
+
+290
+00:55:51,699 --> 00:55:58,279
+mekanizmalarını üst katmanda sağlamak çoğu zaman daha az maliyetli ve tercih edilen yapı oluyor.
+
+291
+00:55:58,699 --> 00:56:02,359
+Ama çoğu zaman olmasa her zaman olacağı anlamına gelmiyor dediğim gibi.
+
+292
+00:56:02,751 --> 00:56:11,011
+Yapacağınız uygulamaya göre değişir. Yani bir denizaltıda bu işi yapıyorsunuz. Daha farklı bir yaklaşımına gidiyor olmanız gerekir.
+
+293
+00:56:20,179 --> 00:56:36,779
+Logical Link kontrol içerisinde veriyi aslında protokol data unit diye isimlendiriyoruz. Bu PDU içinde de dört tane temel alan var.
+
+294
+00:56:39,284 --> 00:56:57,104
+Bu dört alana baktığınız zaman haliyle iki tanesi adres. Biri destination adres, diğeri source adres. Bunun dışında ne var? Control field var ve information field var. Buradaki information field aslında doğrudan kullanıcı verisini ifade ediyor.
+
+295
+00:57:06,996 --> 00:57:23,056
+Kullanılan teknolojiye göre boyutu değişebilir. Birazdan konuşacağız. 802, 3'te farklı, 4'te farklı, 5'te farklı. Hatta protokolün kendi içerisinde bile boyutu farklı olabiliyor. Network'ün sayısına bağlı olarak değişiklik gösterebiliyor.
+
+296
+00:57:33,172 --> 00:57:47,192
+Protokolünü konuşmuştuk geçen hafta sizinle. HDLC'deki benzer durumları ayırt etmek için kullandığımız yapı. Yani HDLC'de iframe, s-frame, u-frame'i birbirinden ayırt ediyorduk.
+
+297
+00:57:47,192 --> 00:57:53,192
+Burada da benzer bir durum var. Yani o kontrol içerisinde kullandığımız...
+
+298
+00:57:54,612 --> 00:57:59,612
+Daha doğrusu aktardığımız verinin neyle ilgili olduğuna bakıyoruz ya da görüyoruz.
+
+299
+00:57:59,612 --> 00:58:15,072
+Şimdi 802.3 Ethernet aslında önce Robert Malt-Metcalphe diye biri tarafından Xerox'da ortaya atılıyor.
+
+300
+00:58:15,572 --> 00:58:30,572
+Zerox'un Alto diye sistemleri var. Böyle grafik arayüzü vesairesi olan sistemler. O grafik arayüzü olan sistemleri birbirine bağlayabilmek için oluşturuyorlar.
+
+301
+00:58:30,572 --> 00:58:39,791
+Aslında ilk oluşturulduğunda da ismi Alto Aloha Network. Alto Aloha Network olmasının nedeni de şu.
+
+302
+00:58:40,275 --> 00:59:04,095
+Aloha birazdan konuşacağız. Çok daha önce ortaya atılmış olan bir erişim yöntemi. Detayını da anlatırım. Ama Robert Metcalfe'nin doktora tezi, onun üzerine çalışmaları var. O yüzden de bu network'ı oluştururken Aloha'dan yararlanıyor önce.
+
+303
+00:59:09,427 --> 00:59:34,248
+Şeyden sonra, bu ilk 6 Aloha Network'ı oluşturduktan sonra Xerox'dan ayrılıyor. Sonra, Ahrigen, Intel Xerox ve Digital'la beraber, yani hepsini bir arada ikna edip, bir ortak yapı oluşturmaya şey yapıyor.
+
+304
+00:59:36,916 --> 00:59:42,656
+İkna ediyor, onları bir araya getirmeye çalışıyor. Başarılı da oluyor zaten.
+
+305
+00:59:45,256 --> 00:59:49,296
+Bunun sonucunda aslında Ethernet olarak bildiğimiz yapı ortaya atılıyor.
+
+306
+00:59:51,456 --> 00:59:59,996
+Ethernet diye isimlendirilmesinin nedeni aslında sadece Xerox 6'ya ait oldu.
+
+307
+01:00:00,000 --> 01:00:06,579
+Bu konularını düşündürmemek, her sistemde kullanılabileceğini göstermek vs.
+
+308
+01:00:07,379 --> 01:00:17,000
+Şimdi baktığınız zaman hızlıca, kabaca bilgi olsun diye şey yapıyorum, bunları paylaşıyorum.
+
+309
+01:00:17,659 --> 01:00:22,319
+Bir yerden sonra bunların hepsini akılda tutmak çok kolay ya da takip edilebilir değil.
+
+310
+01:00:27,155 --> 01:00:40,555
+Ethernet'in ilk ortaya atılma haline baktığınızda aslında kalın koaksiyel kablo kullanılıyor.
+
+311
+01:00:40,555 --> 01:00:50,955
+OnBase 5 diye geçen 10 megabit hıza ulaşabiliyorsunuz. Bu arada ilk ortaya atılan halinde hız 10 megabit vesaire değil yani.
+
+312
+01:00:51,264 --> 01:01:15,384
+6, Aloha, network, hız 2.8 mi? 2.38 mi? 2.83 mi? Yani iki başta garanti 8 ve 3 farklı yerlerde olabilir. Hatta yanlış bile olabilir ama iki küsur megabitlik bir hızı var. Sonra standart haline geldikçe 10 megabite kadar çıkıyor.
+
+313
+01:01:20,179 --> 01:01:25,939
+Bunun dışında sonrasında aslında şeyleri konuşurken üzerinden geçmiştik.
+
+314
+01:01:26,039 --> 01:01:27,859
+OnBase 2, Tim Kuaksiyel var.
+
+315
+01:01:27,979 --> 01:01:38,179
+Yani ilk kalın kablo, hani o timsah, timsah değil pardon, vampir, diş vesaire bunları konuşmuştuk.
+
+316
+01:01:38,759 --> 01:01:41,439
+Sonrasında OnBase T'ye geçiyoruz.
+
+317
+01:01:41,439 --> 01:01:43,139
+OnBase T.
+
+318
+01:01:44,500 --> 01:02:05,660
+Aslında CAD kabloların kullanılmaya başlanması. Bununla beraber bir taraftan da OnBaseF var. Fiber Optik'te kullandığımız hali. MultiMode ya da SingleMode Fiber ile beraber kullandığımız. Şu an günümüzde kullandıklarımız bambaşka. Onları da birazdan konuşuyor olacağız.
+
+319
+01:02:12,596 --> 01:02:38,896
+Katmanında, konuşamadım, MAC, alt katmanında zaman içerisinde değişiklikler göstermiş. Neden? Önce şeydeyiz çünkü, tek bas yapısında bir Ethernet var. Sonra o bas yapısını değiştirmek üzere aslında nasıl diyeyim, doğrudan değiştirmiyorsunuz hala bir bas ama
+
+320
+01:02:42,195 --> 01:02:52,675
+kablolamayı, replays edecek hub'lar ortaya çıkıyor. Bir adım sonra Switched Ethernet ortaya çıkıyor.
+
+321
+01:02:52,875 --> 01:03:00,195
+Aslında Switch ile yaptığımız şey ne? Herkesin birbirine bağlı olduğu bas yapısını aktif cihazla...
+
+322
+01:03:00,704 --> 01:03:21,084
+Bilgisayar arasındaki bağlantının her birini ayrı segmente çevirdiğiniz yapıya çevirmek, yani switchler üzerinden bu işi yapmak, switchle bilgisayar arasındaki bağlantıyı geri kalan bağlantılardan aslında koparmak, yani koparmak derken bağımsız hale getirmek, yoksa network anlamında hala bağlılardır.
+
+323
+01:03:21,084 --> 01:03:23,524
+Fakat basto projesi yüzünden.
+
+324
+01:03:24,884 --> 01:03:30,143
+Daha sonra olan ne? Festetanlık ortaya çıkıyor. Festetanlık nasıl ortaya çıkıyor?
+
+325
+01:03:31,463 --> 01:03:39,763
+Şey, neydi adamın adı? Robertson.
+
+326
+01:03:40,211 --> 01:04:04,352
+Yanlış hatırlamıyorum. Robertson'un kuramına göre her iş kendisine ayrılan süreyi dolduracak kadar genişler diye bir şey var, teoremi var. Bu da hani Ethernet içerisindeki veri hızına, veri aktarım hızına uyarlanıyor aslında. Şöyle ki 10 megabit ilk ortaya atıldığı zaman.
+
+327
+01:04:04,751 --> 01:04:11,312
+şey anlamında, günün ihtiyaçları anlamında efsane bir değer. Aynı şey gibi düşünün.
+
+328
+01:04:12,916 --> 01:04:26,216
+O dönemi yaşamadınız gerçi ama 56K modemden 4 megabit ya da 2 megabitlik ISD'ye geçmişsiniz gibi düşünün.
+
+329
+01:04:26,296 --> 01:04:31,036
+Bir anda normalde aktaracağınız birkaç yüz katı kadar kapasiteniz var.
+
+330
+01:04:31,036 --> 01:04:40,115
+Dolayısıyla ellere şenlik buldum ama tabii ki zaman içerisinde o veri bir şekilde o kapasitenin, veri aktarım ihtiyacı o kapasitenin üstüne çıkıyor.
+
+331
+01:04:40,916 --> 01:04:42,615
+şeyi toplanıyorlar.
+
+332
+01:04:46,056 --> 01:04:48,776
+Büyükler toplanıyor, ne yapacağız diye konuşuyor.
+
+333
+01:04:48,856 --> 01:04:52,135
+Yeniden bir standart, yeni bir yapım oluşturacağız diye.
+
+334
+01:04:53,096 --> 01:04:54,776
+Onun yerine şeye karar veriyorlar.
+
+335
+01:04:54,976 --> 01:04:56,736
+Işığı hızlandırmaya karar veriyorlar.
+
+336
+01:04:56,916 --> 01:05:04,516
+Hızlandırmaktan kasıt da Ethernet yapısını koruyup çalışma hızını arttırmak.
+
+337
+01:05:05,684 --> 01:05:07,464
+Böylece de Fast Ethernet çıkıyor.
+
+338
+01:05:08,024 --> 01:05:12,984
+Dolayısıyla bunların her birinde aslında yapı çeşitli şekillerde değişiyor.
+
+339
+01:05:13,104 --> 01:05:15,384
+Yani half-dublex'dan full-dublex'e geçiyor.
+
+340
+01:05:15,504 --> 01:05:17,144
+Full-dublex'ken hızı artıyor.
+
+341
+01:05:18,364 --> 01:05:22,124
+Ortam paylaşımlı iken aslında segmentlere bölünmüş hale geliyor.
+
+342
+01:05:22,644 --> 01:05:23,644
+Dolayısıyla da ne oluyor?
+
+343
+01:05:24,564 --> 01:05:27,944
+Hatta erişim şekli ve yapısı değişiyor.
+
+344
+01:05:28,044 --> 01:05:30,624
+Buna uygun olarak da protokoller değişiyor.
+
+345
+01:05:30,624 --> 01:05:31,864
+Ne var mesela?
+
+346
+01:05:33,684 --> 01:05:35,924
+bir tanesi Aloha.
+
+347
+01:05:41,364 --> 01:05:57,384
+Yani burada esinlendiğini göstermektedir falan filan diyoruz ama aslında adam zaten tezini aloha üzerine yaptığı için esinlendiği değil doğrudan şey yaptığı net.
+
+348
+01:05:58,203 --> 01:06:06,364
+Hawaii Üniversitesi'nde ortaya atılmış olan bir protokol aloha. O da şundan dolayı Hawaii'de ada cenneti.
+
+349
+01:06:06,867 --> 01:06:23,027
+Merkezde bir tane bilgisayar var. Diğer adalarda da, ana karada bir daha doğrusu bilgisayar var. Diğer adalarda terminaller var. Terminal dediğimiz de şey, böyle hani bir klavye, bir ekran şeklinde düşünün.
+
+350
+01:06:33,300 --> 01:06:50,280
+Karşılığında da ekranda çıktının gösterilmesi vs. lazım. Bunu yapabilmek için gerekli telefon network'ü adalarda yok. Sadece telsiz haberleşmesi var.
+
+351
+01:06:51,120 --> 01:06:57,200
+Hawaii Üniversitesi'nden Norman Abrams'ın da bir protokol ortaya atıyor.
+
+352
+01:06:57,715 --> 01:07:19,615
+Diyor ki, biz bunu telsizle yapalım. Doğrudan verisi olan olduğu zaman göndersin. Tıkır tıkır yürüsün bakalım nasıl oluyor. Eğer veri karşıya gittiyse, yani ana karadaki alıcıya gittiyse, ana karadaki alıcı tekrar geri göndersin. Böylece ben verinin gittiğini, doğru şekilde gittiğini bileyim.
+
+353
+01:07:20,115 --> 01:07:31,476
+Bu yapı içerisindeki problem şu, siz veri gönderirken başka veri gönderme ihtiyacı olan biri varsa ve tıkır tıkır gönderirse ne olacak?
+
+354
+01:07:31,736 --> 01:07:36,096
+Sizin veri paketinizle onun veri paketi çakışacak. Dolayısıyla Collusion.
+
+355
+01:07:36,692 --> 01:08:02,211
+O ise gitti. Bu yüzden de aslında aloha şey anlamında uygun, nedir o? Veri aktarım yoğunluğu düşük ağlar için uygun. Çünkü bu ne demek? Çıkışma ihtimaliniz az. Çıkışma ihtimaliniz az olduğu zaman veri aktarım hızınız ve kapasiteniz yüksek. Bir sıkıntı yok. Yani şöyle düşünün. 10 tane termiyeliniz var.
+
+356
+01:08:02,739 --> 01:08:20,680
+Her saniye bir tanesi gönderiyor. Yani her terminal 10 saniyede biri gönderiyor. O zaman büyük ihtimalle düzgün düzgün çalışırsınız. Ama öbür taraftan bu adamların her biri saniyede 5 paket göndermeye çalışıyorsa kolujun olma ihtimali çok daha yüksek.
+
+357
+01:08:33,363 --> 01:08:36,043
+Daha sonra Slot Allow'a ortaya tutuyor.
+
+358
+01:08:43,347 --> 01:09:03,807
+Kolojin olduğu zaman da yani bir bilgi gönderdiniz, karşı taraf aldı, size gönderiyordu. O sırada başka bir daha bilgi gönderdi. Ortalık karıştı. Size geri döndü, bilgisi gelmedi. Bunu tabii ki bir timer ile kontrol ediyorsunuz. Timer ile kontrol ettikten sonra da şey yapmanız gerekiyor.
+
+359
+01:09:05,524 --> 01:09:16,764
+Size bir şey gelmediğine karar verdiğiniz, yani bir collision olduğuna karar verdiğiniz zaman da belli bir süre bekleyip öyle tekrar gönderim yapmanız gerekiyor.
+
+360
+01:09:18,195 --> 01:09:34,695
+Şeyle, elde ettiğiniz verim, aloha ile elde ettiğiniz verim %18 civarı. Yani bent utilization %18 civarı. Bunu slotted aloha ile iki katına çıkartmışlar. %37'lere çıkartmışlar. Peki nasıl çıkartmışlar?
+
+361
+01:09:43,667 --> 01:10:00,000
+Zamanı slotlara bölmüşler. Bir bilgin varsa ve göndermek istiyorsan ama slotın ortasındaysan yani her saniyede yeni bir slot başlar diyorsak ve siz birinci saniyede bilginiz yoktu ama bir nokta ikinci saniyede bilginiz var göndermekte.
+
+362
+01:10:00,000 --> 01:10:15,779
+İkinci saniyeyi, saniye başını bekliyorsunuz. Böylece ne güzelliği var, Slotted Aloada? Herhangi bir anda iletime geçmediğiniz, oradan başlamadığınız için saniyenin başında hazır olan adam bilgisini gönderiyor.
+
+363
+01:10:16,459 --> 01:10:23,779
+Birden fazlası hazırsa gene kolajin olacak, gene başka şey olacak ama bir şekilde iletim başladıysa en azından...
+
+364
+01:10:25,076 --> 01:10:40,496
+Diğerleri, yani bu işi karıştırabilecek adam sayısı müdahale edebilecek ya da o ortam için yarışacak, konflikt edecek adam sayısı ne oluyor? Dimitlenmiş oluyor.
+
+365
+01:10:42,255 --> 01:10:51,255
+Dolayısıyla çakışmaların oluşma ihtimali azaldığı için artı bir ne var? Performans kazancı var.
+
+366
+01:11:05,043 --> 01:11:18,703
+Ancak ve lakin hala durumundayız, %37 durumundayız. %37 yeter bir meblağ, yeter bir kapasite değil. Bunu daha da arttırabilmek lazım.
+
+367
+01:11:31,796 --> 01:11:37,436
+Bunun için de Carrier Sense Multiple Access ortaya atılıyor.
+
+368
+01:11:38,296 --> 01:11:48,016
+Carrier Sense dediğimiz zaman aslında şu ana kadar baktığınızda Aloada'da, Slotted Aloada'da da şey görüyoruz.
+
+369
+01:11:48,016 --> 01:11:51,496
+Hani hattı dinlemek gibi bir özellik yok.
+
+370
+01:11:52,275 --> 01:12:08,755
+Yani sadece transmitter var gibi düşünün. Takır takır bilgiyi gönderiyorsunuz. Ama bunun yerine, Career Sense Multiple Access'de şunu yapmak gerekiyor.
+
+371
+01:12:09,415 --> 01:12:14,996
+Veriyi gönderecek birbiriniz varsa göndermeye başlamadan önce hattın boş olup olmadığını kontrol ediyorsunuz.
+
+372
+01:12:21,492 --> 01:12:26,391
+Hattın boş olmadığına karar verirsiniz. Yapmanız gereken şey ne? Beklemek.
+
+373
+01:12:29,432 --> 01:12:37,612
+Ne kadar bekleyeceğiniz, nasıl bekleyeceğiniz, ne yapacağınızla ilgili farklı algoritmalar var. Onları birazdan konuşacağız.
+
+374
+01:12:38,952 --> 01:12:46,231
+Hattı boş olduğuna karar veriyorsanız da bilgiyi gönderiyorsunuz. Ama burada tabii her zaman için ne problemi var?
+
+375
+01:12:48,627 --> 01:13:10,507
+Hani bir şey de olsa, bu wireless bir ortam da olsa, aloayı wireless üzerinden anlattık çünkü, wide bir ortam da olsa, sizin oluşturduğunuz hatta koyduğunuz sinyalin, kablonun bir ucundan diğerine giderken ya da işte havada ilerlerken nesi var, nasıl bir gecikmesi var?
+
+376
+01:13:19,060 --> 01:13:20,180
+Ne oldu? Uyudunuz mu çocuklar?
+
+377
+01:13:45,716 --> 01:13:58,896
+Bir Propagation Delay var. Yani siz transmit etmeye başladığınız an sizden belli bir uzaktaki istasyonlar aslında doğrudan sizin transmit etmeye başladığınızı algılayamaz.
+
+378
+01:13:58,976 --> 01:14:09,576
+Onu algılayabilmesi için hattın bir şeyi, Propagation Delay var. O sürenin geçmesi lazım. Dolayısıyla bu da ne demek?
+
+379
+01:14:12,435 --> 01:14:25,175
+birden fazla cihaz, biri transmit ediyor olsa dahi hattın boş olduğunu düşünebilir.
+
+380
+01:14:27,956 --> 01:14:30,235
+Dolayısıyla neye ihtiyacımız var?
+
+381
+01:14:34,100 --> 01:14:39,020
+Yine veri bozulmuş olabilir. Veri bozulduğu zaman da...
+
+382
+01:14:42,612 --> 01:14:59,011
+Ne olacaktır? İlettiğimiz bilgi karşı tarafa gitmemiş olacak. Daha doğrusu, garbage olarak gidecek. Karşı tarafta bize alındı bilgisi göndermeyecek. Bunun üzerinden de hata oluştuğunu, bir sıkıntı oluştuğunu anlıyor olacağız deyip bir araya giriyorum.
+
+383
+01:15:01,011 --> 01:15:07,711
+Çünkü uyuyorsunuz galiba toplu halde ya da başka bir şey var bilmiyorum. Kimseden cevap gelmediğine göre.
+
+384
+01:15:08,372 --> 01:15:11,811
+Bir 10 dakika araya girelim, ondan sonra devam edelim.
+
+385
+01:26:31,956 --> 01:26:42,636
+Kaldığımız yerden devam edelim. Şimdi, Career Sense Multiple Access dedik. Career Sense Multiple Access'i genel olarak konuştuk. Ne yapabiliriz?
+
+386
+01:26:44,076 --> 01:26:49,636
+Bir şekilde kolu ucunu düştükten sonra, yani gönderdiğimiz bilgi.
+
+387
+01:26:50,899 --> 01:26:57,179
+Karşı tarafa giderken ya da karşı taraftan alındı bilgisi geri dönarken bir kolajen oluştu ve bize bilgi gelmedi.
+
+388
+01:26:57,259 --> 01:26:59,279
+Bunu timer aracılığıyla fark ederiz dedik.
+
+389
+01:26:59,840 --> 01:27:01,599
+Fark ettikten sonra ne yapacağımız?
+
+390
+01:27:11,315 --> 01:27:22,416
+Ya da önce carrier sense yaptık, hattı dinledik, hattın meşgul olduğuna karar verdik, sonra ne yapacağız? Bu konuları konuşmamız lazım.
+
+391
+01:27:23,175 --> 01:27:30,556
+Şeyden başlayalım, ilk kısım, yani lojik olarak akış sırasına göre başlayalım.
+
+392
+01:27:31,255 --> 01:27:34,335
+Hattı dinlediniz, hattın dolu olduğuna karar verdiniz.
+
+393
+01:27:35,828 --> 01:27:53,688
+Hat dolu olduğuna karar verdikten sonra yapabileceğiniz şeyler aslında üç temel algoritma ile tanımlanmış durumda. Biri non-persistent, biri one-persistent, bir de p-persistent.
+
+394
+01:27:54,308 --> 01:27:58,732
+Aslında üçü de birbiriyle alakalı baktığımız zaman. Hatta hepsini belki...
+
+395
+01:27:59,412 --> 01:28:03,072
+P-persistent diye sınıflayabilirsiniz belli açılardan.
+
+396
+01:28:03,231 --> 01:28:16,092
+Fakat özel durum olduğu için P değerinin 0 ve 1 olması, birine non-persistent bir de one-persistent diye tariflenmiş.
+
+397
+01:28:20,872 --> 01:28:24,492
+Non-persistent'da yaptığımız şey şu, iletim ortamını dinliyoruz.
+
+398
+01:28:26,612 --> 01:28:46,832
+aktarıma geçiyoruz. Aksi halde, yani iletim ortamı meşgul ise, biraz bekleyip, sonrasında tekrar hattı kontrol ediyoruz.
+
+399
+01:28:54,452 --> 01:29:07,932
+Doğrudan şeyle, randomization ile belirleyeceğiniz bir süre. Dolayısıyla buradaki randomization ne olacaktır?
+
+400
+01:29:07,932 --> 01:29:11,932
+Farklı düğümler için farklı sonuçlar çıkartmasını böylece de...
+
+401
+01:29:13,235 --> 01:29:23,695
+Bekleyenlerin de kendi içerisinde dağılmasını hedefliyoruz. Bu dağılım sonucunda da aslında kolajin oluşma ihtimalinin azalmasını bekliyoruz.
+
+402
+01:29:24,615 --> 01:29:31,015
+Sonuç olarak büyük de hani hattaki kolajin miktar azalmasının ve performansının artmasını bekliyoruz.
+
+403
+01:29:36,243 --> 01:29:43,243
+gereğinden fazla olması durumunda neye sebep olacak? Kapasite kaybına sebep olacak.
+
+404
+01:29:43,243 --> 01:29:52,103
+Aynı zamanda şeye de dikkat edin. Burada yine ne kadar beklediğiniz, ne için beklediğiniz, neyle de doğru orantılı?
+
+405
+01:29:52,884 --> 01:30:00,000
+O hat üzerindeki trafik yoğunluğuyla da orantılı. Düşük bir trafikte yani...
+
+406
+01:30:00,000 --> 01:30:08,139
+Düğüm sayısı fazla olabilir ama trafik üretme sıklığı oldukça düşükse mesela ne olacaktır?
+
+407
+01:30:10,360 --> 01:30:15,800
+Siz aslında zaten kolonucun oluşmayacak bir yerde ekstra fazladan bekliyor olacaksınızdır.
+
+408
+01:30:16,399 --> 01:30:21,260
+Dolayısıyla buna alternatif olarak farklı şeyler de ortaya atılmış.
+
+409
+01:30:25,300 --> 01:30:33,780
+Bunlardan bir tanesi OnePersonal Sınıfı, CSMA. OnePersonal Sınıfı da yine aynı adımları takip ediyorsunuz.
+
+410
+01:30:33,780 --> 01:30:46,780
+Yani iletim ortamını dinliyorsunuz. Eğer müsaitse iletime geçiyorsunuz. Müsait değilse meşgul demektir. Meşgul ise hatta dinlemeye...
+
+411
+01:30:46,899 --> 01:30:53,319
+Devam ediyorsunuz. Belli bir süre random back-off yapmıyorsunuz. Hatta dinlemeye devam ediyorsunuz.
+
+412
+01:30:53,319 --> 01:30:58,319
+Hattın boşaldığını duyduğunuz anda iletime geçiyorsunuz.
+
+413
+01:31:00,459 --> 01:31:05,319
+Belli açılardan şey gelebilir.
+
+414
+01:31:07,659 --> 01:31:12,100
+Nedir o? Daha efektif gelebilir ama aslında
+
+415
+01:31:17,235 --> 01:31:22,916
+beraberinde birçok problemi ya da sorunu getiriyor. Şöyle ki, şunu unutmayın.
+
+416
+01:31:23,755 --> 01:31:32,916
+Hat şu an meşgul diyelim. Hatta dinleyen ve konuşmak isteyen, yani konuşmak istediği için dinlemeye başlamış olan birden fazla düğüm olabilir.
+
+417
+01:31:32,916 --> 01:31:37,296
+Bu düğümlerin her biri iletim kesilir kesilmez harekete geçmeye çalışacak.
+
+418
+01:31:37,396 --> 01:31:42,956
+Bu işiyle ne olacak? Kolucun kaçınmamız olacak.
+
+419
+01:31:43,412 --> 01:31:51,872
+Bununla ilgili zaten ilerleyen slaytlarda bir yerde bir grafimiz de olacak. Onun üzerinden daha detaylı konuşuruz.
+
+420
+01:31:53,512 --> 01:32:01,672
+Üçüncü varyasyonu ise kullanabileceğiniz algoritma P-Persistence Yemek. Buradaki P-Probability yani olasılıktan geliyor.
+
+421
+01:32:03,811 --> 01:32:05,644
+P değeri...
+
+422
+01:32:07,091 --> 01:32:15,912
+diğer algoritmalardaki gibi aslında şunu ifade ediyor. Ne yapıyorsunuz? İletişim ortamını dinliyorsunuz.
+
+423
+01:32:15,912 --> 01:32:28,811
+P olasılık ile iletime geçiyorsunuz. P-1 olasılık ile 1-P olasılık ile de iletimi biraz erteliyorsunuz. Yani biraz bekliyorsunuz.
+
+424
+01:32:30,963 --> 01:32:47,564
+İletim ortamı meşgul ise de devamlı dinliyorsunuz. Ne zamana kadar? Boşalıncaya kadar. Boşalınca da yaptığımız şey P olasılıkla iletişime geçmek ya da bir başka deyişle P-1 olasılıkla beklemek.
+
+425
+01:32:52,180 --> 01:33:03,300
+Buradaki P değerini nasıl içeceğiniz incelenmesi, üzerine çalışılması gereken konulardan bir tanesi.
+
+426
+01:33:03,300 --> 01:33:16,300
+Ama şunu unutmamak lazım. En tane istasyonunuz varsa, herhangi bir iletim hattı devam ederken, en tane istasyonunuz iletime geçmek isterse,
+
+427
+01:33:17,108 --> 01:33:38,787
+Bunların da her biri P olasılıkla iletişime geçmek isteyeceğine göre N çarpı P gibi bir olasılığımız olacak. N çarpı P'nin bir şekilde ne olması lazım? P ve 1-P'den çağrışımı yapsın. Bütün olasılıkların toplumun biri geçmemeli. Yani utilization'ı da arttırmamalı. Dolayısıyla P'yi buna göre seçiyor olmanız gerekiyor.
+
+428
+01:33:41,076 --> 01:33:45,076
+Bu seçimi yapmanızla ilgili...
+
+429
+01:33:46,955 --> 01:33:48,076
+Bir saniye, bir saniye...
+
+430
+01:33:48,675 --> 01:33:49,576
+Ha, şuradaymış.
+
+431
+01:33:50,175 --> 01:33:53,775
+Önce şunu anlatayım o zaman. İleri gideyim, sonra geri geleyim.
+
+432
+01:33:55,036 --> 01:34:00,076
+Baktığınız zaman, B değerinin nasıl seçilmesi gerektiğine bağlı olarak...
+
+433
+01:34:01,895 --> 01:34:06,375
+Şöyle bir grafik var. Araştırmalarda gördüğünüz, göreceğiniz.
+
+434
+01:34:08,212 --> 01:34:13,812
+Y ekseninde throughput'u, verimini görüyorsunuz.
+
+435
+01:34:14,572 --> 01:34:17,952
+Pure Aloha'nın durumu ortada.
+
+436
+01:34:18,512 --> 01:34:22,772
+Bunu slotted yaptığınız zaman ciddi bir şey var, dikkat edin.
+
+437
+01:34:23,292 --> 01:34:27,452
+İyileşme var, %35'ler demiştik işte, oraları görüyorsunuz.
+
+438
+01:34:28,472 --> 01:34:33,992
+Bunu One Persistent yaptığınız zaman, Slotted Aloha'ya göre daha iyi.
+
+439
+01:34:35,539 --> 01:35:03,059
+CSM'i zaten daha iyi. Bunu 0.5 persistent yaptığınız zaman daha da iyi. En iyi olduğu ya da en performanslı olduğu yer neresi? Bu arada non persistent CSM'ye de bakacak olursanız o kadar şey değil. Süper değil ama iyi bir yerde. 0.01 persistent CSM. Yani %1 ihtimalle veri göndermeye başlarsanız.
+
+440
+01:35:03,667 --> 01:35:08,408
+O zaman işler daha iyi gidiyor, aklın yükseldiği yaşanıyor, daha yüksek oluyor.
+
+441
+01:35:08,988 --> 01:35:19,167
+Dolayısıyla burada ilginç bir şekilde gerçek hayatta bizim her gün yaşadığımızın aksine, gördüğümüzün aksine nezaket kazanıyor.
+
+442
+01:35:20,087 --> 01:35:25,708
+Dolayısıyla ne kadar karşısına yer verirseniz, yol verirseniz o kadar efektif oluyor.
+
+443
+01:35:25,708 --> 01:35:27,708
+Şimdi...
+
+444
+01:35:30,963 --> 01:35:41,703
+CSMA teknolojisi, yani hattın iletime geçmeden önce dinlenmesi ve hattın meşgul olup olmadığının bilinmesi güzel.
+
+445
+01:35:41,984 --> 01:35:50,684
+Hani aloaya bak, aloaya kıyasladığımıza göre şeyi sallıyor. Zaten hattı bir iletim varsa çakışmayı ortadan kaldırıyor.
+
+446
+01:35:51,091 --> 01:36:00,492
+O an bir iletim olduğu için. Ve fakat o iletim bittikten sonra iletişime geçecek adamlar arasında hala ne ihtimali var?
+
+447
+01:36:01,871 --> 01:36:11,251
+Collusion ihtimali var. Sıkıntı da ne? Collusion olduğu an doğrudan anlamıyoruz. Ne zaman anlıyoruz? Bilgimiz karşıya gidiyor, geri geliyor.
+
+448
+01:36:11,251 --> 01:36:17,192
+Ondan sonra diyoruz ki, şey var, burada bir problem var.
+
+449
+01:36:17,971 --> 01:36:28,792
+Dolayısıyla bu probleme karşılık bizim yeniden lütransmışı yapmalıyız ve s.a. yapmalıyız. Yani aslında biz kolajını olduğu zaman değil, olduktan çok sonra fark ediyoruz.
+
+450
+01:36:30,792 --> 01:36:32,587
+Bunun için...
+
+451
+01:36:39,636 --> 01:36:57,276
+Geliştirilmiş bir başka teknoloji var. Bu teknoloji yazılımsal bir teknoloji değil, bu donanımsal bir teknoloji. O teknolojiyi de aslında doğrudan kullandığınız network interface kartın içerisinde gerçeklenmiş olan bir teknoloji.
+
+452
+01:37:03,520 --> 01:37:08,960
+CSM ile beraber kullandığında CSM CD diye geçiyor.
+
+453
+01:37:09,700 --> 01:37:15,000
+Bunu özellikle wired network üzerinde, yani kablolu bir aktörüm üzerinde şey yapmanız mümkün,
+
+454
+01:37:15,880 --> 01:37:22,400
+collision detection'ı tespit etmeniz mümkün ve fakat wireless ortamda bunu yapmanız mümkün değil.
+
+455
+01:37:23,220 --> 01:37:24,060
+Neden mümkün değil?
+
+456
+01:37:24,884 --> 01:37:46,244
+En azından şu an için bir anten tarafından transmit ediyorsunuz. O transmit ettiğiniz yerde hattı dinlemeye kalkarsınız. Transmit ederken hattı dinlemeye kalkarsınız. Sinyal o noktada çok güçlü olduğu için doğrudan zaten transmit ettiğinizi göreceksiniz. Collagen olsa bile fark etmeyeceksiniz.
+
+457
+01:37:46,996 --> 01:37:59,836
+O yüzden de wireless sistemlerde Collagen Detection değil, Collagen Avoidance, CSM-CA kullanıyoruz. Onu da yer geldiğinde zaten konuşuyor olacağız.
+
+458
+01:37:59,836 --> 01:38:02,836
+CSM-CD'de...
+
+459
+01:38:07,539 --> 01:38:14,819
+Baktığınız zaman, iletim ortamı boş ise, veri aktarımı yapacağız. Yani kanalı dinleyeceğiz.
+
+460
+01:38:17,319 --> 01:38:23,439
+Kanal kullanımda değilse, veriyi ileteceğiz. Kanal dinlemeye devam edeceğiz.
+
+461
+01:38:28,212 --> 01:38:44,132
+Herhangi bir sıkıntı yoksa, iletim tamamlanacak. Bir sıkıntı varsa, aslında Collagen Detection Devre'ye gittiysek, daha doğrusu Collagen Detection'ı detekt ettiysek, iletimi durduracağız.
+
+462
+01:38:45,587 --> 01:38:51,167
+İletimi durduktan sonra bu kısmı biraz opsiyonel, her zaman böyle olmak zorunda değil.
+
+463
+01:38:51,687 --> 01:38:56,747
+Ama hani diğerlerinin de bunu fark edebilmesi için bir cemin sinyali oluşturacaksınız.
+
+464
+01:38:58,067 --> 01:39:00,867
+Sonrasında ne yapıyor olacağız? Sonrasında da...
+
+465
+01:39:01,235 --> 01:39:13,975
+Bir çakışma olduğuna göre bu çakışmanın tekrarlanma ihtimali var. Yani herkes aynı adımları izlerse burada bir farklılık yaratmamız lazım. O farklılığı da Exponential Binary Backoff yapacağız.
+
+466
+01:39:15,115 --> 01:39:27,735
+Exponential olduğu için de ne olacak? Küçük değer farklılıklarında bile büyük farklar üreteceğiz. Dolayısıyla her bir nodun farklı sürelerde beklemesini sağlayacağız.
+
+467
+01:39:28,851 --> 01:39:34,551
+Ve tekrar kanalı dinlemeye ve iletimi yapmaya çalışacağız.
+
+468
+01:39:44,212 --> 01:39:50,832
+Bir dakika bunları konuştuk değil mi? Tabii grafiği de anlatmak için ileri gelmiştim. Pardon bir an yerimi karıştırdım.
+
+469
+01:39:51,712 --> 01:39:58,992
+Şakada oyalan edelim. Tamam. Evet, aynı da exponential backup'u da konuştuk. Bu slide'ı da konuşmuş olduk.
+
+470
+01:39:58,992 --> 01:40:10,072
+Şimdi 802.3'ün içerisinde yani Ethernet'in içerisinde baktığımızda şeyimiz var.
+
+471
+01:40:10,868 --> 01:40:27,268
+haliyle çerçevemiz var. Bu çerçevenin yapısı hala geçerliliğini koruyor, hala kullanılıyor.
+
+472
+01:40:31,188 --> 01:40:32,228
+Çok pardon arkadaşlar.
+
+473
+01:40:33,648 --> 01:40:34,387
+Bir şey oldu mu?
+
+474
+01:40:47,412 --> 01:40:50,412
+Baktığınız zaman bir preamble ile başlıyor.
+
+475
+01:40:53,312 --> 01:40:58,892
+Bu preamble'ın şeyi bir sıfır, bir sıfır, bir sıfır, bir sıfır şeklinde.
+
+476
+01:41:00,512 --> 01:41:07,812
+Bu preamble hem içerik anlamında bir sıfır, bir sıfır, bir sıfır diye gidiyor.
+
+477
+01:41:12,132 --> 01:41:13,752
+7 byte ile oluşuyor.
+
+478
+01:41:14,355 --> 01:41:30,835
+Dolayısıyla aslında dijital olarak baktığınızda da ne yaptı? Osillate eden bir şey, o anlamda da esnamalılık sağlanmak için yapıldığı net oradan aklınıza gelebilir.
+
+479
+01:41:31,855 --> 01:41:39,395
+Sonrasında Startoff Frame var. Yani bir bitelik bir başlangıç alanı mevcut.
+
+480
+01:41:40,532 --> 01:41:56,551
+Hedef alan ve kaynak alan var. Bu alanlar adres bilgisini, kullanılan adres bilgisinin boyutuna bağlı olarak değişebilir. 2 ile 6 byte arasında tanımlanmış.
+
+481
+01:41:57,612 --> 01:42:05,731
+Fakat biri 2 bytes ise diğeri de 2 byte, biri 6 bytes ise diğeri de 6 byte olması gibi formülü olması zorunda. Onu unutmayın.
+
+482
+01:42:07,380 --> 01:42:23,199
+Veri alanı değişken uzunlukta. Yani minimum 46, maksimum 1500 byte olması bekleniyor. Dolayısıyla değişken uzunlukta olduğu için bir de uzunluk alanı var, length alanı var. Sonda da bir CRC kısmı var.
+
+483
+01:42:33,300 --> 01:42:48,260
+1524 byte en uzun Ethernet çerçevesi, 1526 pardon, en uzun Ethernet çerçeve boyutu, yani 1500S'yi çıkarttığınızda.
+
+484
+01:42:51,140 --> 01:42:53,163
+Data unit...
+
+485
+01:42:53,203 --> 01:43:17,143
+En az 46 olması gerekiyor dedik. En az 46 olması gerekiyor dedik. Onun da nedeni aslında çerçevenin toplamda, şeye bakacak olursanız, diğer alanları da toplayacak olursanız, 64 byte olma ihtiyacı var.
+
+486
+01:43:18,260 --> 01:43:25,800
+64 byte'ı sağlayabilmek için veri alanında en az 46 byte olması gerekiyor.
+
+487
+01:43:25,960 --> 01:43:30,519
+Fakat sizin göndereceğiniz veri 46 byte'dan ne olabilir? Küçük de olabilir.
+
+488
+01:43:30,819 --> 01:43:38,260
+Bu durumda da ne yapıyorsunuz? Padding karakterleri var, onu kullanıyorsunuz.
+
+489
+01:43:39,640 --> 01:43:42,640
+Özel tanımlanmış olan karakterler.
+
+490
+01:43:43,252 --> 01:43:46,232
+Grafikten iki kere koymuşum, şey olmamış o.
+
+491
+01:43:48,572 --> 01:43:57,912
+Fiziksel katmanına, 802.3'ün fiziksel katmanına baktığınız zaman farklı versiyonlarını göreceksiniz.
+
+492
+01:43:57,912 --> 01:43:59,772
+Daha önce bir konuşmuştuk birazını.
+
+493
+01:44:01,632 --> 01:44:05,072
+Bu standart Ethernet'in tanımlı olan halleri.
+
+494
+01:44:06,676 --> 01:44:16,735
+Yani en başta ilk tanınan TIC Ethernet, Coax kablo üzerinden taşınan, TIN Coax'dan taşınan OnBase 2 vesaire şeklinde gidiyor.
+
+495
+01:44:17,416 --> 01:44:25,076
+Dikkat edin, OnBase 2'de de şey yapısı var, çift kablo var, UDP üzerinden FullDubbleX'e dönüyor.
+
+496
+01:44:25,076 --> 01:44:27,036
+Önce HalfDubbleX, sonra FullDubbleX.
+
+497
+01:44:30,384 --> 01:44:41,024
+Tekrar Switch'de ve FES'de baktığınız zaman çift kablo değil, dörtlü pair'lar yani sekiz kablo vesaireye geçeceğiz.
+
+498
+01:44:42,260 --> 01:44:48,539
+Sekment uzunluğu, şey olarak ifade edebiliriz, kapsama alanı gibi ifade edebiliriz.
+
+499
+01:44:48,640 --> 01:45:02,600
+Yani, on-beys-beş tipinde bir yapınız varsa, bunun üzerinden kurduysanız, kabloyla, 500 metreye en uzun döşeyebileceğiniz kablo, kesintisiz kablo miktarı.
+
+500
+01:45:02,600 --> 01:45:09,539
+İşte, tin-eternete geçtiyseniz bu 185 metreye düşüyor. 15-tiğe geçtiyseniz bu 100 metreye düşüyor.
+
+501
+01:45:10,176 --> 01:45:22,695
+100 metrenin altında, üstünde çalışıyor mu? O biraz aslında kablonun kalitesine, biraz ortama, biraz iletim için kullandığınız yapıya vesaireye göre değişiyor.
+
+502
+01:45:22,695 --> 01:45:34,895
+100 metre ciddi bir sınır. O yüzden hep standart size 100 diyorsa planınızı 90'a göre yapmakta fayda var, öyle söyleyeyim.
+
+503
+01:45:37,043 --> 01:45:56,404
+OnBroad36 diye gördüğünüz şey aslında Metro Ethernet, yani şey, Local Area'da değil de Wide Area'da kullandığımız Ethernet. Zaten şey olarak baktığınızda metro 1.6 km olarak görüyorsunuz.
+
+504
+01:45:56,404 --> 01:46:01,984
+OnBaseF de fiber üzerinden Ethernet aktarım için kullandığımız yapı.
+
+505
+01:46:02,676 --> 01:46:04,676
+Şimdi
+
+506
+01:46:09,844 --> 01:46:13,064
+Şu ana kadar konuştuğumuz Ethernet yapısı paylaşımla.
+
+507
+01:46:16,463 --> 01:46:23,444
+Paylaşımla olduğu için de, yani aynı hatta, bütün bilgisayarlar aynı hatta bağlı olduğu için de ne problemi var?
+
+508
+01:46:23,704 --> 01:46:30,564
+Devamlı bir collusion ihtimali ve congestion ihtimali, tıkanıklık ihtimali var.
+
+509
+01:46:36,724 --> 01:46:53,743
+İlgisayar Ağları, iğazlardan aktarım yapılar. Yani sizin baz topolojiniz 10 megabit destekliyorsa, 10 tane bilgisayar bağladıysanız, burada aslında ben kullanım oranınız kimin ne kadar kullandığına bağlı olarak değişir.
+
+510
+01:46:53,743 --> 01:47:02,503
+Ama aşağı yukarı bilgisayar başına 1 megabit gibi bir şey demek. Ortak alanı kullanıyorsunuz şimdi. Dolayısıyla bu bir sıkıntı.
+
+511
+01:47:05,043 --> 01:47:07,043
+Burda.
+
+512
+01:47:07,488 --> 01:47:16,028
+Alternatif olarak ortaya atılan, bu paylaşımı ortadan kaldırmak, kapasiteyi daha efektif olarak kullanmak adına switch mekanizması.
+
+513
+01:47:16,948 --> 01:47:21,047
+Switch mekanizması aslında zaten biliyorsunuz, şu an günlük hayatta görüyorsunuz da.
+
+514
+01:47:21,568 --> 01:47:26,827
+Tam olarak switch değil ama switch fonksiyonunu da size sağlıyor.
+
+515
+01:47:27,087 --> 01:47:32,467
+Neyiniz var? Evde bir ADSL routerınız var, bir fiber routerınız var ya da benzeri bir şey var.
+
+516
+01:47:35,488 --> 01:47:36,667
+Ethernet bağlantısı var.
+
+517
+01:47:38,188 --> 01:47:44,427
+Bu dört bağlantı üzerinden yapacağınız tüm bilgisayar bağlantıları kendi aralarında full database olarak
+
+518
+01:47:44,800 --> 01:48:04,300
+Konuşabilmesini sağlıyor. Güzelliklerden bir tanesine Switch, buradaki o anahtarlama mekanizması. Bu cihazları birbiriyle doğrudan, yani farklı portlarındaki cihazları birbiriyle konuşabilmeleri için doğrudan anahtarlıyor. Dolayısıyla Collusion domenini zaten küçülüyor.
+
+519
+01:48:12,800 --> 01:48:30,619
+uçtaki PC arasına sınırlanmış oluyor. Bundan yırtıyorsunuz. Paylaşımlı bir ortam durumu o anlamda yok. Artı şey durumu da var. Full double X bir bağlantı.
+
+520
+01:48:31,859 --> 01:48:39,460
+Yani bir hattı iletim için, göndermek için, bir hattı almak için kullanıyorsunuz.
+
+521
+01:48:39,500 --> 01:48:41,300
+Dolayısıyla birbirlerinden de izoleler.
+
+522
+01:48:43,000 --> 01:48:47,199
+Böylece Collusion şeyi ortadan kalkmış durumda.
+
+523
+01:48:47,199 --> 01:48:53,640
+Artık hani CSM, CD kullanmaya da gerek kalmamış durumda.
+
+524
+01:49:02,163 --> 01:49:17,363
+Ortaya adıtlanan teknoloji bu. Bunları da işte Switched Ethernet diyoruz. Bunun dışında daha sonrasında tanımlanmış olan başka şeyler de var. Onları da konuşuruz. Burada şeyi söylemek lazım.
+
+525
+01:49:17,363 --> 01:49:25,884
+Şimdi buradaki Switch'in nasıl çalışacağı önemli problemlerden bir tanesi.
+
+526
+01:49:27,572 --> 01:49:42,652
+Ne yapıyor olması lazım? Gelen, kendi üzerinden aktarılan Ethernet framelerini kontrol ediyor. Bunlar üzerinden çevresini tanıyor ve tanımlıyor olması lazım.
+
+527
+01:49:42,652 --> 01:49:53,471
+Yani aslında bir ne olabilir? Gelin ki 4 botluk bir switch'iniz var.
+
+528
+01:49:55,028 --> 01:50:07,528
+Birinci portun da bir cihaz var. Bu cihaza hem ikinci hem üçüncü hem de dördüncü portlardan gelen oradaki bilgisayarlar bu tarafa bilgi aktarmını çalışıyor.
+
+529
+01:50:08,212 --> 01:50:18,792
+Ne yapılması lazım? Farklı portlardan gelen çerçevelerin bufferlanıp bir Q yok olması, sonra da birinci porttan çıkartılması lazım. Switch'in yaptığı şeylerden bir tanesi bu.
+
+530
+01:50:35,859 --> 01:50:54,739
+İlk açılış anında hangi ucuna kim bağlı bilmiyor. Dolayısıyla, diyelim ki bir numaralı portundan bir hedef MAC adresine, farklı bir hedef MAC adresine bir çerçeve göndermek istendi.
+
+531
+01:50:54,739 --> 01:51:00,739
+Bunu diğer portör üzerinden broadcast etmeli. Hangisinden cevap alıyorsa...
+
+532
+01:51:01,971 --> 01:51:14,231
+Bu adresi de o ilgili port üzerine kaydediyor olması. Yani hangi adrese hangi port üzerinden erişeceği bilgisini de yönetiyor olması lazım.
+
+533
+01:51:16,071 --> 01:51:24,131
+Baktığınız zaman aslında anahtarlamalar eternette şöyle bir yapı var çoğu zaman.
+
+534
+01:51:27,572 --> 01:51:41,032
+Switch'lerini kullanarak kademeli bir yapı oluşturuyoruz. Mesela, 3 kademeli bir yapı oluşturabilirsiniz. Uç noktada akses Switch'ler vardır. Son kullanıcının bilgisayarına doğrudan bağlı.
+
+535
+01:51:47,028 --> 01:52:10,568
+Pardon. Bir üst noktada distribution switchleri vardır. Yani dağıtım switchleri vardır. Bu dağıtım switchleri alt taraftaki akses switchlerden gelen uplinklerin birleştirildiği, konsantre edildiği noktadır. Bunun bir üstünde ise omurga switchleriniz vardır. Böyle böyle uç noktadaki kapasiteyi en üst noktaya taşırsınız.
+
+536
+01:52:15,028 --> 01:52:29,448
+Şimdi üniversite üzerinden örnek veriyorum. Herhangi bir sınıfın ya da herhangi bir odanın bir yerinde bir Ethernet portu görüyorsunuz. O Ethernet portu aslında belli bir dağıtım noktasındaki duran bir uç nokta sivicine bağlı.
+
+537
+01:52:37,011 --> 01:52:50,211
+Downlink diyoruz. Bir de Uplink'i var. Yani üst tarafı bir üst katmandaki switch'e giden board var. Burada genelde switch'leri değerlendirirken bunun ratiosuna bakarız.
+
+538
+01:52:51,604 --> 01:52:58,384
+Farklı sayıda ve tipte bağlantı şekillerini destekler, switchler genellikle.
+
+539
+01:52:59,024 --> 01:53:07,144
+Mesela alt tarafta 24 port ve 48 port her biri 100 bin Ethernet destekli bir switch'iniz olabilir.
+
+540
+01:53:07,144 --> 01:53:13,644
+Diyelim ki 24 port ise 1 gigabit destekliyorsa 24 gigabit toplam alt kapasitesi.
+
+541
+01:53:13,744 --> 01:53:19,444
+Üst kapasitesi genelde aslında doğrudan dedike bir interfej olmaz.
+
+542
+01:53:19,604 --> 01:53:25,004
+Orada, interfresinin temel özelliğini içeren bir yuva olur.
+
+543
+01:53:25,904 --> 01:53:30,704
+O, Europa'da Gigabit Interface
+
+544
+01:53:30,880 --> 01:53:47,880
+konnektörü gibik yerleştirirsiniz. O gibik 10, işte 1 gigabit, 10 gigabit, 40 gigabit, 25 ve 50 de var. Ara standart. Biraz çakma bir standart ama 40 ya da 100 gigabitle çalışıyor olabilir. Mesela 100'lük çalışan bir kart takarsanız alt tarafınız...
+
+545
+01:53:48,351 --> 01:54:04,171
+48 üst tarafınız 100 olduğu için bir bottleneck oluşturmazsınız. Ration'uz rahattır. Ama oraya 10 gigabitlik bir kart takıyorsanız o zaman 10 bölü 24x1024 yani 1 bölü 2 oranındır.
+
+546
+01:54:04,771 --> 01:54:14,671
+Dolayısıyla aslında bu switchin alt portlarının tam kapasite çalışması durumunda illa ve illa ne olacaktır? Bir konca asım oluşacaktır.
+
+547
+01:54:16,819 --> 01:54:24,900
+Bunları da söylemiş olayı. Baktığınız zaman farklı standartlar da var. Ethernet olduğu yerde saymadı, değişti, gelişti.
+
+548
+01:54:27,600 --> 01:54:43,739
+802.3 olarak devam etti ama sonuna eklenen harflerle iş değişti. Mesela 803.3, U ve Y, Fast Ethernet oldu. Sonra Gigabit Ethernet, Z ve AB var. Sonrasında AE, AK vs. şeklinde giden
+
+549
+01:54:44,787 --> 01:54:57,487
+10 gigabit, 40 ve 100 gigabit var. 200, 400 vesaire de devam ediyor. Öbür taraftan da 802. Burada da bu yanlış.
+
+550
+01:54:58,996 --> 01:55:17,536
+Biri yazdırma mı değiştiriyor devamlı diye düşünüyorum. 802.11 ailesinden ABGNAC diye giden aslında 1 megabitten, hatta 11 megabitten diyelim, 11 megabitten 600 megabite kadar değişen ve gelişen standartlar var.
+
+551
+01:55:34,931 --> 01:55:51,471
+Yani 100 Base TX var, 100 Base T2 var, 100 Base T4 var. Bunların her birinin incik tincik bilgilerini bilmeniz vesaireniz gibi bir beklentim yok. En azından bir kulak aşinalığı olması adına söylüyorum ya da aktarıyorum.
+
+552
+01:55:54,411 --> 01:55:59,471
+Benzer şekilde Gigabit Ethernet'te ve şeyde de...
+
+553
+01:56:00,287 --> 01:56:10,527
+durum aynı. Nedir o? 10 Gigabit Ethernet'te de. Bunların hepsini takip edinmek çok mümkün değil.
+
+554
+01:56:10,527 --> 01:56:18,768
+40 ve 100'ün sadece şöyle bir şey var, anekdot olarak aktarabileceğim.
+
+555
+01:56:25,300 --> 01:56:43,300
+Her seferinde aslında Ethernet'in kapasitesi ya da kullanıcıların ihtiyacı arttığında ya da Ethernet'in kapasitesi o an için yetersiz hale geldiğinde çalışma grubu tekrar topluluyor ve...
+
+556
+01:56:44,528 --> 01:56:51,528
+Ne yapsak diye konuşuyor. Her konuşmanın sonucunda da aslında şu ortaya çıkıyor.
+
+557
+01:56:52,128 --> 01:56:55,807
+Teknolojiyi yeniden mi yaratacağız yoksa eskiye uyumlu mu olacağız?
+
+558
+01:56:55,807 --> 01:56:57,807
+Çoğu zaman da...
+
+559
+01:57:03,956 --> 01:57:10,255
+Eskiye uyumlu olmayı tercih ediyorlar. Bunun temel nedeni de yapılan yatırımın çöp olmasını istememesi kimsenin.
+
+560
+01:57:20,692 --> 01:57:35,292
+Dolayısıyla aslında her standart, yani Ethernet üzerinde devam eden her standart neredeyse 823 Ethernet makıyla uyumlu olmak ilkesini doğrudan içeriyor.
+
+561
+01:57:38,112 --> 01:57:47,192
+Bunun dışında da ağ mimarisinde ya da ağın yönetimiyle ilgili kullanılan yapılarda değişiklik gerektirmemek.
+
+562
+01:57:47,572 --> 01:58:06,931
+mevcut iletim ortamlarını doğrudan kullanabilmek, yani fiber ya da bakır bir kablolamanız varsa bunu kullanmaya devam edebilmek ya da bu teknolojiler üzerinde iletim yapmaya devam edebilmek olarak tanımlanıyor.
+
+563
+01:58:11,667 --> 01:58:16,447
+Aslında Ethernet'in point-to-point bağlantılarda kullanılması durumunda.
+
+564
+01:58:16,607 --> 01:58:25,207
+Şeyi konuşmaktık hatırlayın, telefon iletiminde, alıyoruz telefon hatları üzerinden sağlanan haberleşmede ne yapıyoruz?
+
+565
+01:58:32,435 --> 01:58:54,695
+Çektiğimiz kablolar bir santral ortasında konsantre ediliyor. O konsantrasyon üzerinden de aslında tek bir hatla, ki ona biz T1, T3 gibi bir hatlıyoruz kapatitesine bağlı olarak, o hat üzerinden Time Division Multiplexing yapılarak bir üst katmanı, oradan bir üst katmanı aktarılıyor.
+
+566
+01:58:58,963 --> 01:59:05,663
+Hani şeyi hatırlayın, Timedavir'in Multiplexing'in veri aktarımı için çok da uygun olmadığını vs. konuşmuştuk.
+
+567
+01:59:06,983 --> 01:59:14,583
+Farklı Multiplexing yapılarını konuşurken. O yüzden de Metro Ethernet uyarlaması yapılıyor.
+
+568
+01:59:14,583 --> 01:59:20,363
+Metro Ethernet'in çalışması biraz daha farklı. Doğrudan şey değil.
+
+569
+01:59:22,420 --> 01:59:33,560
+Metro Ethernet'i alıp da normal Ethernet'te kullanabileceğiniz bir yapı değil. Sadece erişim, framing ve benzer özellikleri Ethernet'e benzer.
+
+570
+01:59:33,935 --> 01:59:45,036
+Medium Access kontrolü tam olarak aynı şey değil. Ethernet ile ilgili sonradan ortaya çıkan standartlardan, yapılardan bir tanesi de Power Over Ethernet.
+
+571
+01:59:45,036 --> 01:59:51,036
+Power Over Ethernet'te yaptığımız şey şu, normalde şu an mevcutta kullandığımız Ethernet kaptörüleri,
+
+572
+01:59:57,036 --> 01:59:59,695
+4 tane twist belirden ibaret.
+
+573
+02:00:00,000 --> 02:00:09,600
+4 tane tv sitmeyi üzerinden herhangi bir cihazın elektrik ihtiyacını göndermek üzerine kurulu.
+
+574
+02:00:09,600 --> 02:00:16,600
+Bunun için genellikle Power Injector adı verilen ek bir donanım kullanılıyor.
+
+575
+02:00:16,680 --> 02:00:19,600
+Gerçi şu an üst kalite...
+
+576
+02:00:20,435 --> 02:00:29,355
+ya da üst segment diyeyim, Enterprise Switch'lerde, Ethernet portlarının doğrudan Power Over Ethernet desteği var.
+
+577
+02:00:29,355 --> 02:00:34,355
+Ama burada da şöyle bir sıkıntı var tabii ki, her şeyden...
+
+578
+02:00:35,796 --> 02:00:48,136
+Bu interfaceden bunu yapmaya kalktığınızda, mesela 48 portlu bir cihazın 48 portunda Power Over, Ethernet desteklemesi durumunda bu cihazın elektrik ihtiyacı fantastik boyutlara çıkabiliyor.
+
+579
+02:00:48,276 --> 02:00:58,876
+O yüzden genellikle mesela 48 ya da 24 portun belli bir miktarından, yani hepsi bu özelliğe sahip oluyor ama aynı anda kullanılabilir olanların sayısı genelde limitleniyor.
+
+580
+02:01:05,779 --> 02:01:07,519
+Şimdi konuşacağımız bir diğer şey bunun.
+
+581
+02:01:16,724 --> 02:01:31,063
+TokenBus, jetonlu yol. 802.3 eterneti, orijinal eterneti konuşurken farklı erişim şeylerini konuşmuştuk, hatırlayın.
+
+582
+02:01:33,063 --> 02:01:39,144
+Bu erişim durumları aslında özellikle kiti durum senaryolarında uzun beklemeleri neden olabilir.
+
+583
+02:01:42,612 --> 02:01:55,532
+Dolayısıyla da gerçek zamanlı uygulamalara doğrudan uygun değiller aslında. Gerçek zamanlı uygulama uygun olmamak nedir? Fikriniz var mı?
+
+584
+02:02:01,844 --> 02:02:07,003
+Şu anın şartları için daha uygun bir yöntem bulunabilir anlamında mı?
+
+585
+02:02:09,444 --> 02:02:13,264
+Gerçek zaman bilim için şu an mı diyorsun? Gerisi yalan.
+
+586
+02:02:14,783 --> 02:02:16,804
+Yok yani günümüz teknolojisi de demek istedim.
+
+587
+02:02:16,963 --> 02:02:20,623
+Anladım anladım. Onu anladım. Egzecere ediyorum zaten de.
+
+588
+02:02:20,963 --> 02:02:22,783
+Şimdi real time ne demek?
+
+589
+02:02:25,823 --> 02:02:27,024
+Gerçek zaman deme.
+
+590
+02:02:28,243 --> 02:02:37,523
+O efsane bir cevap oluyor çünkü. Fakat hiçbir şey şey olmuyor, aydınlatmıyor. Babamın gerçek zamanlı bilgisayarı var falan demek gibi bir şey neredeyse.
+
+591
+02:02:40,851 --> 02:03:07,911
+Gerçi bu kulaklar onu da duydu. Doktora yeterlilik sınavında. İnsan sıkışınca çok daha şeyler söyleyebiliyor. Bazen de sınav kıyatlarında görüyorum öyle fantastik şeyler ama neresi uzatmayayım. Gerçek zamanlı demek aslında zaman kıtısı kısıtı içerisinde işlerin gerçekleştirildiği yapılar. Yani.
+
+592
+02:03:08,979 --> 02:03:16,379
+Mesela, sizin MP3 player'ınız gerçek zamanlı çalışıyor.
+
+593
+02:03:18,999 --> 02:03:22,619
+Ne yapıyor olması lazım o MP3 player'ın?
+
+594
+02:03:23,699 --> 02:03:33,959
+Her bir şeyi, enkode edilmiş seç parçasını MP3 dosyası içerisindeki alması, açması, açılanın da çalınması lazım.
+
+595
+02:03:36,532 --> 02:03:41,332
+Bunu da bir sıra içerisinde yapması lazım. Belli bir zaman içerisinde yapması lazım.
+
+596
+02:03:41,332 --> 02:04:01,972
+Yani kodayınız 53 milisaniyelik ses parçalarını enkode ettiyse siz decode işlemine 53 milisaniye içerisinde yapıp tamamlayıp diğer frame'ı hazır etmelisiniz.
+
+597
+02:04:02,412 --> 02:04:03,792
+Edemediğiniz zaman ne olur?
+
+598
+02:04:04,564 --> 02:04:16,564
+Ses kalitesinde bozulma olur. Gırç, gırç falan gibi şeyler duyarsınız. Arada boşluklar ya da üst üste binmeler oluşur. Dolayısıyla...
+
+599
+02:04:17,427 --> 02:04:34,347
+Sıkıntı oluşur. Bu sıkıntı adam öldürmediği, sonu ölümcül olmadığı, en fazla sizin bu cihazı satıp ya da parçalayıp sinirinizden yerine yenisini almanızla sonuçlanacağı için buna aslında soft real time kriter diyebiliriz.
+
+600
+02:04:45,076 --> 02:05:02,195
+Saniyenin onda binde, yani 100 milisaniyede bir sık bırak sık bırak sık bırak işlemini yanlış yapsa tahminen bir trafik kazası neden olur. Dolayısıyla bunun olmaması için bunun deadline'ının firm deadline olması, sisteminde hard real time olması gerekir.
+
+601
+02:05:10,260 --> 02:05:15,300
+Yaptığınız işlemin deterministik olması ihtiyacı vardır.
+
+602
+02:05:16,899 --> 02:05:20,899
+Yani ben mesela buradan örnek vereceğim.
+
+603
+02:05:21,340 --> 02:05:22,760
+Bir frame göndermek istiyorum.
+
+604
+02:05:23,219 --> 02:05:32,699
+Benim frame'i gönderme sürem her zaman için birbirine çok yakın değerlerden oluşması gerekir.
+
+605
+02:05:32,819 --> 02:05:35,779
+Yani her zaman için aynı olsa muhteşem, süper.
+
+606
+02:05:36,975 --> 02:06:03,595
+Birinde 9 milisaniye, birinde 8 milisaniye, birinde 9,5 milisaniye, birinde 8,5 milisaniye oluyorsa bu kabul edilebilir olur. Ama birinde 1 milisaniye, birinde 10 milisaniye sürüyorsa bu kabul edilebilir olmaz. Çünkü kısıtı sağlayıp sağlayamadınız. Yapacağınız toplam işin mesela 100 milisaniye sürmesi gerekiyorsa bunu sağlayıp sağlayamayacağınız belirsiz hale gelir.
+
+607
+02:06:04,467 --> 02:06:07,867
+Real time'dan kasıt budur.
+
+608
+02:06:10,867 --> 02:06:14,147
+Aklınıza yattı mı ya da biraz zihin açıldı mı?
+
+609
+02:06:15,627 --> 02:06:27,667
+Dolayısıyla gecikmelerin bu kadar varyasyonlu olduğu kadar birbirinden farklı olabildiği bir yapı aslında gerçek zamanlı uygulamalara doğrudan uygun değil.
+
+610
+02:06:28,692 --> 02:06:36,711
+O yüzden de bundan şey yaparak, Nedro, phase alarak ne yapıyorlar?
+
+611
+02:06:38,451 --> 02:06:41,871
+802.4, token bus ortaya atılıyor.
+
+612
+02:06:43,951 --> 02:06:53,211
+802.4 aslında baya sofistike bir şey, Nedro, tasarım. Oldukça da karmaşık dolayısıyla.
+
+613
+02:06:54,963 --> 02:06:56,684
+Yani şey sıkıntısı var.
+
+614
+02:06:58,543 --> 02:07:06,644
+Sisteme dahil olan yani yeni bir PC, yeni bir sistem eklediğiniz, bilgisayar sistemi eklediniz.
+
+615
+02:07:06,644 --> 02:07:15,104
+Her eklenen cihazın 10 civarı yanlış hatırlamıyorsam farklı timer tutması gerekiyor.
+
+616
+02:07:15,884 --> 02:07:17,844
+24 çeşitli durum var.
+
+617
+02:07:18,292 --> 02:07:40,292
+Dolayısıyla aslında overhead'i çok fazla olan bir yapı. Zaten günümüzde de, şimdi demin senin söylediğine referans vereyim, günümüzde de aslında çok da fazla kullanımı yok. Oldukça sınırlı. En son şey içerisinde vardı, bizim bölümde...
+
+618
+02:07:41,076 --> 02:07:48,356
+İki sene öncesine kadar rektörün kapısını kırıp girdiği sistem odamızda aktif olarak çalışan bir mainframe'imiz vardı.
+
+619
+02:07:49,036 --> 02:07:56,996
+Bu mainframe'in içerisinde hardware management konsolda mainframe'in işlemcisi arasındaki haberleşme için kullanılan yapıda vardı bu.
+
+620
+02:07:57,796 --> 02:08:04,456
+Topunmaz yani hala spesifik olarak çeşitli yerlerde kullanılma durumu var.
+
+621
+02:08:04,847 --> 02:08:09,607
+Ama aktif olarak üzerine geliştirme yapılan bir sistem vesaire değil.
+
+622
+02:08:11,427 --> 02:08:13,587
+Yapı şunun üzerine kurulu.
+
+623
+02:08:14,447 --> 02:08:27,167
+Topolojik olarak bir bas ya da ağaç şeyinde olabilir alttaki network, fiziksel network ama üst tarafta lojik seviyede bir halkı oluşturuyorsunuz.
+
+624
+02:08:31,315 --> 02:08:42,576
+Bu halka içerisinde de herkesin bir ID'si var. Bu ID'ler içerisinde en yüksek ID değerine sahip olan iletime geçebiliyor.
+
+625
+02:08:42,576 --> 02:08:47,576
+Bu iletime geçme işlemi sırasında...
+
+626
+02:08:50,387 --> 02:09:15,248
+Aslında bir tokundan faydalanıyor. Dolayısıyla iletime geçen o büyük numaralı Bilgisayar, iletimi bitirdikten sonra token'ı komşusuna veriyor. Yani bir halk olduğunuz için ne olacak? Token ondan ona, ondan ona, ondan ona geçecek. Sonunda da başladığı yere, yani en yüksek ID'ye sahip olana aktarılacak.
+
+627
+02:09:21,460 --> 02:09:34,880
+Baktığınız zaman aslında o dönem için ilk ortaya atılan Ethernet ile yarışmış olan bir teknoloji.
+
+628
+02:09:34,880 --> 02:09:40,500
+Ve fakat günümüzde üstüne çok da konuk da devam edilmiş durumda değil.
+
+629
+02:09:43,347 --> 02:09:48,287
+Gelinen yapıda 100 megabit aktarım hızı vesaireyi destekliyordu.
+
+630
+02:09:48,768 --> 02:09:54,807
+Ama orijinali 10 megabit, hatta 1.5 ve 10 diye iki farklı versiyonu var hatırladığım kadarıyla.
+
+631
+02:09:58,167 --> 02:10:07,228
+Çerçeve yapısına bakacak olursak, 3 aşağı 5 yukarı aslında şeyle çok benzer.
+
+632
+02:10:14,260 --> 02:10:35,119
+Yine bir preamble var, sonra starting limiter var. Starting limiter olduğu gibi, frame'in sonunda bir de ending limiter var. Bunun dışında bir frame kontrol alanı vardı, bir byte'lık. Sonrasında da adresler var. Buradaki adresler yine 2 ile 6 byte arasında farklılık gösterebiliyor.
+
+633
+02:10:44,148 --> 02:10:48,908
+alan var. Data unit'e baktığınız zaman boyutu
+
+634
+02:10:48,908 --> 02:11:08,547
+8182 olması lazım. Niye kasıyorum? Şurada olması var. Bu da 802.3 Ethernet ile karşılaştırdığınız zaman neredeyse 5 kat.
+
+635
+02:11:09,908 --> 02:11:18,168
+Hatta 5 kattan fazla aslında, öbüründe 1500 en fazla. 5 katı 7500. Burada 8182 var. Bu fazlalık neden geliyor?
+
+636
+02:11:22,836 --> 02:11:25,296
+Ya da niye daha fazla olmasını tercih etmişler?
+
+637
+02:11:44,724 --> 02:11:48,663
+Peki, Ethernet'teki 64 byte minimum sınırı nereden geliyor?
+
+638
+02:12:07,283 --> 02:12:22,163
+İlginç bir şekilde ikisi de aynı şeyden geliyor aslında. Sadece farklı, yani aynı problemin farklı ele alınmasıyla alakalı bir sebep-sonuç ilişkisi içerisindeler.
+
+639
+02:12:22,323 --> 02:12:32,403
+Şimdi Ethernet'te 64 byte'dan kısa olamaz dedim çerçeve. 64 byte'dan kısa olursa ne olur çerçeve?
+
+640
+02:12:46,003 --> 02:13:12,564
+Ethernet yapısında nasıl bir durumumuz var? O paylaşılan bir hat var. Dolayısıyla bu paylaşılan hat üzerinde herhangi bir anda collajin oluşabilir. CD, Collajin Detection özelliği de var. Her şey çok güzel ama Collajin Detection çalışabilmesi için bile en azından çakışacak fremlerin belli bir uzunlukta olması lazım. 64 byte de oradan geliyor.
+
+641
+02:13:14,068 --> 02:13:22,708
+O kısıt oradan geliyor. 64 byte'ın altında olduğu zaman frameler, çakışmanın algılanması zor ya da mümkün değil.
+
+642
+02:13:22,868 --> 02:13:25,568
+Dolayısıyla sınır oradan geliyor.
+
+643
+02:13:26,208 --> 02:13:32,807
+Burada ise 802.4'teki çerçeve yapısının bu kadar büyük olması ise yine aynı şeyden geliyor.
+
+644
+02:13:33,507 --> 02:13:38,748
+Ama burada çakışmanın bulunması vesaireden falan değil. Dikkat edin, nasıl bir yapı var?
+
+645
+02:13:39,104 --> 02:14:00,104
+Bir token var, bir öncelik mekanizmasına bağlı olarak elden ele aktarılıyor. Yani en yüksek ID'ye sahip olan iletime geçiyor. Eğer geçip işi bittiyse token'ı yandakine veriyor. Zaten iletecek bir şey yoksa doğrudan yandakine veriyor. Bir sonrakine geçiyor. Dolayısıyla token aslında...
+
+646
+02:14:00,819 --> 02:14:10,500
+Şey gibi, ağız kralın asası gibi. Ağız hakimdeyse kral o. Taç kimdeyse kral o. Böyle bir yapı içerisinde ne sıkıntınız yok?
+
+647
+02:14:14,387 --> 02:14:28,688
+Çakışma derdiniz yok. Çakışma derdiniz olmadığı zaman da veriyi aktarırken daha büyükçe açılarak kullanabilirsiniz. Böylece çöpe gitme ihtimali olmayan daha büyük alanları kullanabilirsiniz.
+
+648
+02:14:30,007 --> 02:14:33,148
+Büyük olmasının nedeni buradan geliyor.
+
+649
+02:14:34,768 --> 02:14:37,688
+Bu token bastı. Bu token basın...
+
+650
+02:14:44,115 --> 02:14:53,636
+Yapısını da hatırlayın, aşağıda bas ya da ağaç yapısında bir network olabilir demiştik.
+
+651
+02:14:54,355 --> 02:14:59,155
+Bunu bir adım daha ileri götürüp token ring'e çeviriyorlar işi.
+
+652
+02:15:09,395 --> 02:15:23,395
+Halka topolojisini kuruyorsunuz. Yani bir bilgisayarın çıkışı, diğerinin girişi, diğerinin çıkışı, bir başkasının girişi şeklinde bir mekanizma var. Tam bir halkadan bahsediyoruz. Bu halka üzerinde de...
+
+653
+02:15:25,171 --> 02:15:36,711
+Genelde 3 byte büyüklüğünde, jeton adı verilen, genelde değil 3 byte büyüklüğünde, genelde standartı bu, 3 byte büyüklüğünde jeton adı verilen kontrol çerçevesi var. Bunu dolaştırıyoruz.
+
+654
+02:15:37,591 --> 02:15:46,971
+Teknik olarak baktığınız zaman bu jeton A içerisinde bütün bilgisayarların network interface katmanın sırayla girip çıkıyor olması gerekiyor.
+
+655
+02:15:52,051 --> 02:16:08,072
+Dirdiği Network Interface kartına bağlı olan bilgisayarın gönderilecek bir şeyi var ise ve o sırada karta gelen jeton boş ise, jetonun boş olup olmadığını jeton 3 byte uzunluğunda demiştik.
+
+656
+02:16:08,072 --> 02:16:19,032
+O 3 byte'lık token'ın üzerinde de Start Delimiter, End Delimiter ve Access Control kısmı var.
+
+657
+02:16:19,423 --> 02:16:32,224
+Akses kontrolü kısmı üzerinden fark ediyorsunuz. Yani o token birine rezerve edilmiş mi edilmemiş mi? Şu an başka bir şey için kullanılıyor mu? Kullanılmıyor mu? Hattı kullanabilir miyim? Kullanamaz mıyım? Bunu anlayabiliyor.
+
+658
+02:16:46,675 --> 02:17:01,935
+şey yapıyor, nedir o? Veri çerçevesini yolluyor. Yolladığınız veri çerçevesi topalaj halkı olduğu için ne olması lazım? Bütün halka içerisindeki cihazları, network, interface kartlarından aslında girip çıkıyor.
+
+659
+02:17:09,492 --> 02:17:22,172
+Dolayısıyla her istasyon çerçeve içerisindeki veriş adresine bakıp, varış adresine bakıp bu çerçevenin kendisi için olup olmadığına karar veriyor.
+
+660
+02:17:22,252 --> 02:17:26,292
+Eğer kendi üzerin kendi adresini taşıyorsa ne yapması lazım?
+
+661
+02:17:48,531 --> 02:18:09,011
+Bu frame'in bir kopyasını alıyor, kenara koyuyor. Sonrasında frame'in hatta devam etmesine izin veriyor. Sadece sondaki kontrol kısımlarını değiştiriyor. Ne için? Bu frame halka üzerinde devam edip nereye kadar gelecek? Kendisini hatta koyan adama kadar gelecek. O da sondaki kontrol bilgilerine bakıp neyi anlıyor?
+
+662
+02:18:11,316 --> 02:18:23,476
+üzerinde bu çerçevenin alıcısı tarafından kopyalanıp kopyalanmadığını, alınmadığını anlıyor ve buna bağlı olarak ne yapacağını beliriyor.
+
+663
+02:18:23,476 --> 02:18:24,476
+Şimdi
+
+664
+02:18:31,412 --> 02:18:41,512
+Burada başka bir şey mi var mı? Sanat şu var. Veri iletimine geçmek üzere ne yapıyor dedik? Hattaki jetonu alıp yerine veri çerçevesi koyuyor.
+
+665
+02:18:41,711 --> 02:18:52,252
+Aslında o veri çerçevesi içerisinde token'ın taşıdığı bazı alanlar var. Dolayısıyla aslında siz bir nevi ne yapıyorsunuz?
+
+666
+02:18:52,252 --> 02:18:59,252
+Token'un boyutunu değiştirmiş oluyorsunuz. Token'la veri çerçevesini değiştiriyorsunuz. Dolayısıyla buna token resizing...
+
+667
+02:18:59,379 --> 02:19:03,219
+Adı da bilgi, öyle bir bilgi de var. Çok mühimli tartışılır.
+
+668
+02:19:07,919 --> 02:19:19,019
+Şimdi halkı üzerinde her zaman tek bir jeton dolanmak zorunda değil. Daha fazla sayıda jeton da dolandırabilirsiniz.
+
+669
+02:19:20,159 --> 02:19:25,479
+Bunu yalnız hani ideal boyutunun neyi nasıl olacağına karar vermek için ne yapmamız lazım?
+
+670
+02:19:27,667 --> 02:19:38,128
+hat üzerine bırakacağımız jetonun aslında fiziksel uzunluğunun ne olduğunu biliyor olmamız lazım.
+
+671
+02:19:39,188 --> 02:19:47,747
+Şimdi oluşturduğumuz halka ağımız diyelim ki R Mbps hızında veri iletimi yapabiliyor.
+
+672
+02:19:49,268 --> 02:19:53,788
+Bu da ne demek? 1 bölü R kadar bir sürede biz ne yapıyoruz?
+
+673
+02:19:54,611 --> 02:20:01,051
+1 biti hatta çıkartıyoruz.
+
+674
+02:20:04,831 --> 02:20:11,131
+Ne var dedik, her zaman için konuşuyoruz, wireless de olsa, wireless de olsa, bir propagation delay var.
+
+675
+02:20:11,131 --> 02:20:14,191
+Yani propagation speed, SP diye gözükmüş.
+
+676
+02:20:14,871 --> 02:20:20,451
+Şehir cinsinden, saniyedeki mikrosaniyede metre cinsinden.
+
+677
+02:20:20,816 --> 02:20:36,816
+Bunu da zaten biliyor olmamız lazım. Şey anlamında, hattın karakteristiği anlamında. Dolayısıyla, çıkarma hızını biliyoruz. Propagations'e gidiyoruz. Dolayısıyla SP bölü R...
+
+678
+02:20:40,816 --> 02:20:42,816
+Şuradan gidiyoruz, öykü olursanız...
+
+679
+02:20:44,256 --> 02:20:44,976
+Nerede?
+
+680
+02:20:47,283 --> 02:20:56,203
+1 bölü R idi. 1 bölü R ile SP'yi çarparsanız, şu bir bit çıkartma hızı çarpı SP, o anlama geliyor.
+
+681
+02:20:58,023 --> 02:21:04,004
+Aslında her bitin halkı üzerinde ne kadar yer tutacağını gösteriyor.
+
+682
+02:21:04,004 --> 02:21:11,004
+Dolayısıyla L metre uzunluğunda bir halkı üzerinde aynı anda yer alabilecek bit sayısı da...
+
+683
+02:21:14,484 --> 02:21:19,443
+Buradan hesaplıyoruz. Yani bu bit uzunluğunu L'ye bölüyor olmanız lazım.
+
+684
+02:21:20,263 --> 02:21:24,043
+Baktığınız zaman, işte burada örnek bir hesap kitap da var.
+
+685
+02:21:24,943 --> 02:21:29,504
+Şey olarak kontrol edebilirsiniz. 1 megabitlik bir iletim hızınız var.
+
+686
+02:21:30,564 --> 02:21:35,623
+Propagation'ı mikrosaniyede 200 metre.
+
+687
+02:21:36,463 --> 02:21:41,703
+Şeyinizin de hat uzunluğu da 1 kilometre olursa, işte en fazla 5 bit olabiliyor token'ız.
+
+688
+02:21:43,092 --> 02:21:43,532
+gibi.
+
+689
+02:21:45,012 --> 02:21:52,211
+8025'in baktığınız zaman şöyle bir yapısı var.
+
+690
+02:21:52,432 --> 02:21:54,832
+Bir önceliklendirme sağlıyor.
+
+691
+02:21:55,572 --> 02:21:59,412
+Önceliklendirme ama sıkıntılı bir durum.
+
+692
+02:22:00,112 --> 02:22:01,872
+Neden dolayı sıkıntılı bir durum?
+
+693
+02:22:03,827 --> 02:22:17,827
+İşletim sistemlerinde de geri geldiğinde konuşuyoruz. Priority-based bir şeyler yaptığınız zaman aslında hep ne ihtimaliniz ya da durumunuz var? Herhangi bir T anında çok sayıda...
+
+694
+02:22:20,435 --> 02:22:30,435
+İstemci bir kaynağa erişmek istediğinde bir priority yokusu kurmuşsanız ve onun üzerinden gidiyorsanız düşük öncelikli olanların ne olma ihtimali var?
+
+695
+02:22:30,876 --> 02:22:35,955
+Kuruyup kalma ihtimali var. Yani starvation'a uğrama ihtimali var. Burada da aynı sıkıntı var.
+
+696
+02:22:35,955 --> 02:22:40,835
+Yani bir yerde öncelikle kayınması varsa herkesin ne dedik?
+
+697
+02:22:42,164 --> 02:22:52,784
+Bir ID'si var, o ID üzerinden de öncülükleniyor dedik. Böyle bir yapı içerisinde sadece öncelik mekanizmasının olması neye yol açacaktır?
+
+698
+02:22:59,379 --> 02:23:15,379
+Birilerinin hattı kullanımının gecikmesini, oldukça uzun süre ertelenmesi vesaire gibi durumlara yol açacaktır. Bunu da ortadan kaldırmak adına aslında bir de rezervasyon mekanizması var. Yani hattı kullanmaya başlamadan önce hattı rezerve edebiliyorsunuz.
+
+699
+02:23:22,995 --> 02:23:36,575
+Benzer şekilde hem priority'den dolayı hem de başka nedenlerle aslında hattın tek bir istasyon tarafından domine edilmesini engellemek adına bir zaman sınırlaması mekanizması da var.
+
+700
+02:23:42,451 --> 02:24:02,731
+Bir diğer şey de bu halka mekanizması içerisinde aslında ne yapıyoruz? Bir aktif token'ımız var. Bu token'ı iletime geçmek isteyen bir bilgisayar ne yapıyor? Kendisine kopyalıyor, onun yerine kendi çerçevesini koyuyor vs. Sonrasında bu çerçeveyi tekrar alıyor olması lazım.
+
+701
+02:24:06,896 --> 02:24:17,695
+Bu hattan token'ı almış olan istasyon kendi veri çerçevesini koydu ve sonra bir şekilde başına bir şey geldi. Kitlendirir, start etti, kapatıldı vs. Ortada yok.
+
+702
+02:24:18,695 --> 02:24:24,076
+Ne yapılması lazım? Hattın devamlılığının sağlanması lazım. Token'ın tekrar oluşturulması lazım.
+
+703
+02:24:25,683 --> 02:24:35,439
+Dokun üzerinde herhangi bir şekilde sonuçta bir haberleşme alanında priority vesaire olduğu için Collision'dan bir tür yi...
+
+704
+02:24:35,440 --> 02:24:46,360
+Off Collusion diyoruz. Fakat hani şey olabilir, gürültüye, dış gürültüye vesaireye maruz olabilir. Jeton da bir bozulma olmuş olabilir.
+
+705
+02:24:46,920 --> 02:24:56,540
+Bunların tamamının yönetilmesi lazım. Bu yönetilme işleri içinde bir monitor istasyon oluyor. Onun tarafından gerçekleştiriliyor.
+
+706
+02:25:01,043 --> 02:25:11,743
+İlk ortaya atıldığında erişilen hızlar 4 ve 16 Mbps ancak sonrasında 100 ve 1 Gbit'lik versiyonları da var.
+
+707
+02:25:13,492 --> 02:25:31,272
+Toplamda baktığınız zaman 3 farklı çerçeve yapısı var. Bunların bir tanesi veri, bir tanesi jeton, bir tanesi de abort. Demin token'ı konuşurken 3 byte demiştik. Biri start delimiter, biri end delimiter. Orada da access kontrolü kısmı var.
+
+708
+02:25:31,904 --> 02:25:43,603
+Şey detaylarına çok fazla girmeyeceğim. Bu akses kontroldeki hangi alanın neye set edildiği durumda ne olur vesaire kısmı çok fazla girmeyeceğim. Bunların ekstra detay olduğunu düşünüyorum.
+
+709
+02:25:45,564 --> 02:25:51,423
+Sonrasında konuşacağımız Fiber Distributed Data Interface, FDDI var.
+
+710
+02:25:59,283 --> 02:26:12,003
+Güzel bir standart, ilginç bir özelliği var. O fiberoptik bağlantılar kullanarak 100 Mbps hızında iletişime imkan sağlayan bir standart olarak ANSI ve IPTU tarafından ortaya atılıyor.
+
+711
+02:26:12,664 --> 02:26:24,664
+Aslında bunun bir modifiye edilmiş hali Copper Distributed Data Interface, yani bakır kablo üzerinden de aynı özellikleri sergileyen.
+
+712
+02:26:27,059 --> 02:26:40,700
+bir versiyonu da var. Burada da 802.4 ve 802.5 gibi yine bir token mekanizması var. Yani haberleşme yapabilmek için bu token'ı ele geçirmeniz gerekiyor.
+
+713
+02:26:44,819 --> 02:26:52,819
+Yine bir öncelik mekanizması var. Zamana duyarlı bilginiz varsa bunu şey yapmak için...
+
+714
+02:26:57,652 --> 02:27:02,152
+göndermek için öncelik hakkımız var. Aslında zamanı duyarlılardan kasıt.
+
+715
+02:27:16,628 --> 02:27:31,427
+FDDI network'una bağlı her istasyonun aslında hattı eşit sürelerde kullanılması gibi bir beklenti var. Bunun üzerine de aslında bir nevi time division multiplexing yapılıyor.
+
+716
+02:27:31,427 --> 02:27:35,427
+Üç ayrı şeyden...
+
+717
+02:27:37,556 --> 02:27:47,916
+yararlanıyor, timer'dan yararlanıyor. Bir tanesi sync allocation, bir tanesi target token rotation time, diğeri de absolute maximum time.
+
+718
+02:27:53,523 --> 02:28:07,703
+Sync Allocation, S-A değeri, aslında halkının kurulması sırasında belirlenen bir değer. Her istasyon için farklılık gösteriyor. Her istasyonun S-Frame yollamak için kullanılabileceği süreyi belirtiyor.
+
+719
+02:28:08,623 --> 02:28:17,383
+S-Frame aslında Synchronous Frame, zamana karşı duyarlı olan. Diğeri de Asynchronous Frame, A-Frame, iki çeşit frame var aslında.
+
+720
+02:28:23,219 --> 02:28:38,619
+oluşturduğunuz halka boyunca, yani burada da bir halkadan bahsediyoruz aslında, Ehtedia içerisinde de, bu halka boyunca bir jetonun iletilmesi için gereken ortalama zamanı söylüyor bize.
+
+721
+02:28:40,500 --> 02:28:46,279
+Bütün istasyonlar için aynı, çünkü halka herkes için aynı boyutta ve aynı yapıda.
+
+722
+02:28:47,667 --> 02:28:53,407
+Doğrudan halkın oluşturulması sırasında ortaya atılan, daha da ortaya atılan değil de belirlenen bir değer.
+
+723
+02:28:57,780 --> 02:29:08,500
+Bu süre aslında bizim token'ın halka içerisinde ne kadar sürede dolanmasını beklediğimizi gösteriyor.
+
+724
+02:29:08,640 --> 02:29:13,780
+Bu süre yani token'ın o halka içerisinde dolanması bu süreden daha düşük ya da daha fazla olabilir.
+
+725
+02:29:16,840 --> 02:29:21,940
+Buna bağlı olarak bizim de yapacağımız şeyler değişiyor.
+
+726
+02:29:24,308 --> 02:29:29,048
+Bunun dışında Absolut Maximum Time var demiştim. O da TRT'nin aslında iki katı.
+
+727
+02:29:34,772 --> 02:29:49,672
+Bu aslında nasıl diyeyim, her şeyin son noktası. En üst süre gibi düşünebilirsiniz. Gönderdiğiniz bir token bu süre sonra hala önünüzden geçmiyorsa ortalık karışmıştır, bir terslik vardır diye baktığınız zamanlama.
+
+728
+02:29:51,672 --> 02:29:59,371
+FTDI'da sinyalleşmede aslında ilginç bir sinyalleşme önü var. Bu öyle güzel bir şey, üzerine konuşmak lazım.
+
+729
+02:30:00,000 --> 02:30:12,639
+4B, 5B olarak bilinen bir kodlama tekniği kullanıldı. 4B, 5B dediğimiz zaman aslında 4 bitlik değerleri 5 bitli ifade ediyorsunuz.
+
+730
+02:30:12,639 --> 02:30:15,639
+Yani 4 bitli ifade edebileceğiniz değer sayısıyla...
+
+731
+02:30:19,347 --> 02:30:20,667
+2 üzeri 4
+
+732
+02:30:26,708 --> 02:30:29,208
+Biri 16 dedi mi, ben hayal mi gördüm?
+
+733
+02:30:30,268 --> 02:30:31,508
+16 dedim herhalde.
+
+734
+02:30:32,028 --> 02:30:33,028
+Dedim herhalde.
+
+735
+02:30:33,247 --> 02:30:34,188
+Peki geliyorsa dedim.
+
+736
+02:30:34,848 --> 02:30:41,848
+Ya çok kısık geldi böyle de o yüzden hani böyle hayal mi arkadan böyle cızız bir 16 falan dedim kendi kendime hayal mi kuruyorum?
+
+737
+02:30:41,968 --> 02:30:45,308
+Çocuklar hiç cevap vermiyor. Ben hani hayalli arkadaş mı kurdum kendime diye.
+
+738
+02:30:45,708 --> 02:30:48,568
+O yüzden böyle çok kısık gelince şey yapıyorum. 16 çok güzel.
+
+739
+02:30:49,568 --> 02:30:53,068
+Bunu 16 tane sembolü 2 üzeri 5.
+
+740
+02:30:53,556 --> 02:31:02,056
+Farklı, yani kaç tane? 32 tane sembolle ifade ediyorsun. Niye böyle bir şey yapıyoruz? Deli miyiz?
+
+741
+02:31:09,075 --> 02:31:15,455
+Şu an şey diyorsunuz tam ya, akıllı olduğumuzda söylenmez. Hele ben iyice dili sayılırım, kendi kendime konuşuyorum çoğu zaman.
+
+742
+02:31:21,907 --> 02:31:26,788
+Şimdi 4 bitle ifade edebileceğiniz bir şeyi niye 5 bitle ifade edersiniz?
+
+743
+02:31:33,012 --> 02:31:36,612
+Bir şekilde kontrol bitlerini de araya sıkıştırmak için mi hocam?
+
+744
+02:31:38,691 --> 02:31:39,492
+Güzel, bravo.
+
+745
+02:31:41,952 --> 02:31:43,851
+Slide'dan da destek almış olman güzel.
+
+746
+02:31:44,551 --> 02:31:45,272
+Teşekkür ederim.
+
+747
+02:31:47,112 --> 02:31:48,572
+Bir şey daha var aslında.
+
+748
+02:31:51,292 --> 02:31:52,811
+Bu hani bariz olanı.
+
+749
+02:31:52,811 --> 02:31:55,132
+Tamam yani şey ne yapıyorsun?
+
+750
+02:31:56,191 --> 02:31:57,811
+16 tane...
+
+751
+02:31:58,772 --> 02:32:07,891
+Farklı kod lazım sana. Onun yerine 32 tane kullanıyorsun. 16 tane de boşa çıkıyor. 16 taneye ne yapabilirsin? Kontrol karakteri yerleştirebilirsin. Çok güzel.
+
+752
+02:32:09,792 --> 02:32:15,112
+Peki, kontrol karakteri yerleştirmesen ne olur? Ne kazanırsın?
+
+753
+02:32:16,772 --> 02:32:20,312
+O zaman kontrol etmek için yeni bir frame mi yollamamız gerekir?
+
+754
+02:32:20,912 --> 02:32:25,512
+Hayır, hayır. Öyle demiyorum. Yani kontrol karakterini kullanma. Boş ver. Tamam mı?
+
+755
+02:32:26,036 --> 02:32:45,995
+Gene de 4 biti 5 bitle ifade et. Yani 16 tane sembolü, sen 4 bitle değil de 5 bitle ifade et. O zaman bu sana ne kazandırır? Sadece ekstra bir bit kullanmış olmanın verdiği ekstra ağırlığı mı olur yoksa bir kazancın olur mu burada? Ya da nasıl bir kazancın olur? Onu yorumlamanı bekliyorum şimdi.
+
+756
+02:32:48,147 --> 02:32:55,647
+Yapı gereği bir tane iyi cevap yetmiyor. Akabinde bir iyi cevap daha almak istiyorum. Akabinde bir tane daha almak istiyorum.
+
+757
+02:32:56,087 --> 02:33:02,268
+Yani ekstra biti kontrol olarak kullanmayacaksak da neden gerekli mi? Soru bu mu?
+
+758
+02:33:02,948 --> 02:33:14,067
+Hayır, neden gerekli değil. Gerekli mi de değil. Böyle bir şey yaparsan, yani kontrol biti için, kontrol ifadeleri için kullanmazsan.
+
+759
+02:33:14,067 --> 02:33:15,608
+Tamam mı?
+
+760
+02:33:15,987 --> 02:33:40,827
+16 tane durumun var diyelim. O 16 durumu ifade etmek için 5 bit kullanıyorsun. 32 bit kullanıyorsun. 32 kombinasyon kullanıyorsun. Bu sana ne art kazandırır ne kaybettirir onu soruyorum. Aslında ne kazandırır soruyorum da hani illa fazlalık ve yanlış olarak düşündüğünüz için kaybettirir kısmını da sormuş olayım.
+
+761
+02:33:45,012 --> 02:33:51,812
+Yani kaybettireceği kısım daha büyük bir veriyi yollayacağımız için süreden kaybettiririz ama kazancımızı anlayamadım.
+
+762
+02:33:51,812 --> 02:34:01,812
+Şimdi, peki. Şöyle söyleyeyim o zaman. Biraz şey düşünün, hatasal olarak düşünün. Şimdi elinde...
+
+763
+02:34:02,048 --> 02:34:26,868
+Diyelim ki 4 bitle ifade ediyorsun. 0, 0, 0, 0 var. Doğru mu? 4 tane 0. Bir bit bozuldu. Ne oldu? Diyelim ki 0, 0, 0, 1 oldu. Bu hata mıdır, değil midir vs. için ne yapman gerekiyor? Ekstra kontrol biti kullanman gerekiyor. Doğru mu? Biti değil de daha doğrusu bir kodu kullanman gerekiyor.
+
+764
+02:34:27,412 --> 02:34:37,231
+Peki, sen bunu 4 bitle ifade etmek yerine 5 bitle ifade etseydin, ne yapacaktın? Hamming distance falan konuşmuştuk ya.
+
+765
+02:34:39,511 --> 02:34:54,811
+Tabii şunu yapıyor olman lazım, 16 biti, pardon 16 ihtimali, 32 ihtimal arasına iyice yaymış olman lazım ki, bir hata olduğu zaman aslında doğrudan invalid.
+
+766
+02:34:55,280 --> 02:35:09,120
+Bir kod olsun, yani kullanmadığın bir koda dönsün. Normalde 32 ihtimal içerisinde ne var? 16 tane geçerli durum var, senin için tanımlı olan. 16 tane de olmaması gereken durum var. Doğru mu?
+
+767
+02:35:09,880 --> 02:35:10,280
+Evet.
+
+768
+02:35:11,180 --> 02:35:23,275
+Olur da bu 16 tane seninle ilgili durum içerisinde bir değişiklik olursa, bitlerden biri bozulduğunda, ihtimallerini öyle bir dağıt ki, diğer 16...
+
+769
+02:35:23,603 --> 02:35:30,683
+Koddan, kullanılmayan kodlardan birine dönsün. Böylece bir hata olduğunu anla. Bu işe de yarar aslında 4B, 5B.
+
+770
+02:35:32,063 --> 02:35:37,603
+Ama bu zaten kontrol klasına girmez mi hocam? Sonuçta bir error kontrolü yapmış oluyoruz o zaman.
+
+771
+02:35:38,304 --> 02:35:48,783
+Şöyle, burada kontrolden kastımız o değil ama. Buradaki kontrol, şu tabloda gördüğün ve senin cevap verirken söylediğin kontrol aslında hattın kontrolü.
+
+772
+02:35:50,384 --> 02:36:04,404
+Hattın idle olduğunu söylemek için, hattın iletişimin durdurulması için, işte hattı kapatmak için vs. için yaptığın kontroller. Yani verinin bütünlüğünün kontrolü değil. O başka bir şey.
+
+773
+02:36:11,252 --> 02:36:15,112
+şey için kullanıyorsun, hattın kontrolü, lojik kontrolü için kullanıyorsun.
+
+774
+02:36:15,752 --> 02:36:21,792
+Onun için kullanmazsan da, benim demin söylediğim şey, hata kontrolü için kullanabilirsin.
+
+775
+02:36:22,532 --> 02:36:29,092
+Yani 4 bitle ifade edebileceğin şeyi 5 bitle göndermek illa her zaman kötü durum değil.
+
+776
+02:36:29,811 --> 02:36:49,211
+Eğer düzgün şekilde ayarlamışsan, dağılımını yapmışsan ve oluşacak mesela bir bitlik hatalar doğrudan invalid şeylere denk gelecek şekilde ayarladıysan, dağılımını, hata kontrolü içinde kullanabilirsin. Sana öyle bir şey de getirebilir. Kaldı ki bu ikisini beraber de yapabilirsin.
+
+777
+02:36:50,351 --> 02:36:54,671
+Misal, çok daha primitif bir protokolün vardır.
+
+778
+02:36:55,572 --> 02:37:14,432
+Tamam mı? 4 biti, 5 bitle ifade edersin, 4 bitlik bilgiyi. 32 farklı değerin olur. Bunlardan işte 16'sı doğrudan senin datandır. Kalan 16'nın farzı mesela sadece ikisini kontrol için ya da 4'ünü kontrol için kullanıyorsundur.
+
+779
+02:37:14,772 --> 02:37:22,352
+Kalan durumlarda yine hata yakalamını, illegal wordlerin oluşması durumu yine hata yakalamını sağlayabilir.
+
+780
+02:37:22,892 --> 02:37:26,152
+Yani işe iki taraftan da bakıyor olabilirsin.
+
+781
+02:37:28,532 --> 02:37:38,512
+Şimdi FDDI'nin de çerçeve yapısına baktığınız zaman aslında şey var, nedir o? İki tane çerçeve yapısı var.
+
+782
+02:37:40,340 --> 02:37:53,579
+Veri çerçevesi, diğeri de jeton çerçevesi. Teknik olarak baktığımızda daha önceki çerçevelere aynen benzer. Token zaten aynı. Start Limiter, End Limiter, Access Control.
+
+783
+02:37:54,440 --> 02:38:06,520
+Veri çerçevesinde Start Limiter, FC var. Frame Control. Çerçevenin ekstra özelliklerini belirlemek için kullanılan kısım.
+
+784
+02:38:08,084 --> 02:38:22,284
+Sonrasında adresler var. Dikkat edin, burada da 6 şar byte'dan başlıyor doğrudan. Data kısmı var. Burada da 4500. Gene aslında baktığınız zaman, collusion'dan free olduğu için boyut olarak daha yüksek.
+
+785
+02:38:33,343 --> 02:38:42,503
+End of Delimiter, Ending Delimiter var. End of Delimiter ne? Ending Delimiter var. Bir de Frame Status var. Yani yollanan frame'in durumunun tutulduğu.
+
+786
+02:38:50,739 --> 02:38:57,680
+Şurada, şeye baktığımız zaman aslında FTDA içerisinde dört ayrı protokol var gibi gözüküyor.
+
+787
+02:38:57,799 --> 02:39:03,219
+FMD, Physical, MAC ve LLC şeklinde. FMD, Physical Medium Dependent.
+
+788
+02:39:05,971 --> 02:39:22,971
+diye geçen kısım. Yani alt tarafta şey de olabilir demiştik ya, FTDI'nin bir versiyonu da CDDI, yani kapır üzerinden de olabilir. Dolayısıyla o aslında fiziksel interfaysin içinde son noktada aslında iletimin neyle ne şekillen yapılacağıyla ilgili kısmı.
+
+789
+02:39:29,843 --> 02:39:30,843
+Bunun dışında
+
+790
+02:39:35,796 --> 02:39:37,756
+Ne var ekliğiyle söyleyeceğim.
+
+791
+02:39:41,756 --> 02:39:50,515
+Genelde yedekleme anlamında ya da sorunları tespit edebilme anlamında çift halka kullanılmıyor.
+
+792
+02:39:50,995 --> 02:40:00,000
+Yani bir halkadan veri aktarıyorsunuz, diğer halka üzerinden hataların iletimi ve halkanın düzeltimi.
+
+793
+02:40:00,000 --> 02:40:18,000
+sonrası tamamlanması için sinyalleşmeleri yapıyorsunuz. Hatta bağlantı, burada da aslında Network Interface kart yerine Media Interface Kapları ya da Controller diye geçen MIC diye kısaltılan yapılar kullanıyoruz.
+
+794
+02:40:27,987 --> 02:40:32,007
+5 çeşit cihaz olması lazım. Bir tanesi dual attached station.
+
+795
+02:40:34,067 --> 02:40:42,608
+Birden fazla, yani 2 tane mic kullanan kart. Maliyeti yüksek olduğu için her dakika bunlardan kullanmıyorlar aslında.
+
+796
+02:40:43,207 --> 02:40:49,808
+Single attached station'lar var. Genelde onu kullanıyoruz. Tek bir mic'e sahip olan kartlar.
+
+797
+02:40:50,288 --> 02:40:53,768
+Bunların yanında dual attachment concentrator'lar var.
+
+798
+02:40:54,420 --> 02:41:11,639
+DAC'lar aslında şöyle bir yapı gibi düşünebilirsiniz. Zirnevi, Switch gibi düşünebilirsiniz. Tek interpeze sahip olan cihazları bu cihaza bağlıyorsunuz. İki halkayı da bu cihaza bağlıyorsunuz. Böylece aralarında cross yapmasını sağlıyor.
+
+799
+02:41:12,628 --> 02:41:22,108
+bir şekilde sürekliliği sağlamak için bir şeydir. Bunun dışında, single attached concentrator gibi bir yapı da var.
+
+800
+02:41:22,108 --> 02:41:26,108
+Dual attached concentrator da aslında...
+
+801
+02:41:29,556 --> 02:41:41,376
+Her iki ağ bağlanmak için de çift interface var. Single attached concentrator da bir tarafta tek, bir tarafta çift bağlantı oluyor. Bir de null attached concentrator diye.
+
+802
+02:41:43,059 --> 02:41:57,139
+Doğrudan toplanma noktasını ifade eden cihazlar var. Bunları böyle anlatınca çok bir şey ifade etmemelidir ama grafik olarak baktığınızda 3 aşağı 5 kre böyle bir şeyden bahsediyoruz.
+
+803
+02:41:57,139 --> 02:42:07,279
+Şimdi FTDI'yi de bitirdik. Bundan sonra kablosuz ağları konuşacağız. Ama saat kaç? 11.38. Bugünlük bu kadar diyeyim.
+
+804
+02:42:08,084 --> 02:42:18,404
+Ondan kaldığımız yerden haftaya devam edelim. Hepinize iyi haftalar diyorum. Görüşmek üzere arkadaşlar.
+
+805
+02:42:18,744 --> 02:42:21,484
+Görüşürüz hocam. Hoşçakalın. İyi günler hocam. Görüşürüz.

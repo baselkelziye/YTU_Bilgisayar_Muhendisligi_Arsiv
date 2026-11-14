@@ -1,0 +1,1859 @@
+1
+00:06:01,139 --> 00:06:11,419
+Evet, tekrar merhaba, iyi günler arkadaşlar. Dersimize kaldığımız yerden geçen hafta yetiştiremediğimiz konularımızda devam ediyoruz. Üçüncü haftamızdayız.
+
+2
+00:06:12,219 --> 00:06:23,620
+Bugünkü derste dün aslında paylaştım. Normalde bugün paylaşmayı düşünüyordum ama dün akşam paylaştım. Dersin duvarında dönem projesiyle alakalı detayları aktardım.
+
+3
+00:06:24,148 --> 00:06:42,228
+Eminim incelemişsinizdir ya da okumuşsunuzdur. Bugün de dersin sonunda hızlıca üzerinden bir geçeriz ve böylece ekipleriniz ve proje planlarınız, yapacaklarınız modüllerinizle ilgili beklentileri bugünün sonuna kadar benimle paylaşırsınız diye düşünüyorum.
+
+4
+00:06:42,588 --> 00:06:44,388
+Bunların detaylarına dediğim gibi bakarız.
+
+5
+00:06:45,172 --> 00:07:09,932
+Geçen hafta biraz kategorizasyon yapmıştık hatırlarsanız. Bilgi sistemleri kaç türe ayrılır? Bunların arasında nasıl bir hizmet ya da alma verme girdi ya da çıktı sunma ilişkisi vardır? Neden bunlar böyle ayrılmıştır? Kim neye hizmet eder? Hangi tür bilgi sistemi genel olarak hangi özelliklere sahiptir?
+
+6
+00:07:10,336 --> 00:07:19,836
+Ya da nasıl, hangi özelliklere sahipse belirli bir türe kategorize edilir gibi detaylara baktık. Ondan sonra da bilgi sisteminin özellikle de...
+
+7
+00:07:20,115 --> 00:07:32,375
+Bütün geliştirme süreciyle birlikte düşündüğünüzde tarafları, paydaşları kimlerdir, rolleri nelerdir, ne yaparlar, neden yaparlar, aralarındaki bağıntılar nelerdir bunların üzerinden geçtik.
+
+8
+00:07:32,375 --> 00:07:47,716
+Ve sonrasında da bütün bunların, bütün bir bilgi sisteminin ortaya koyulmasının birdenbire olmayacağı, hadi oturalım kod yazalım da kodlayalım bitsin şeklinde yapılamayacağı, özellikle de karmaşık ve büyük problemlerin, sistem dediğimiz çözümlerin,
+
+9
+00:07:48,115 --> 00:07:55,495
+Uzun süreçler sonucunda tanımlı ve tutarlı süreçler sonucunda geliştirilmeleri gerektiğinden bahsetmeye başladık.
+
+10
+00:07:55,875 --> 00:07:58,995
+Ve buna da sistem geliştirme yaşam döngüsü adını vermiştik.
+
+11
+00:07:59,576 --> 00:08:06,295
+Hatırlarsanız şöyle bir problemi tanımlamak, yapılabilirliğine bakmak, sonrasında problemi anlamak.
+
+12
+00:08:06,639 --> 00:08:27,360
+Problemi nasıl çözeceğimizi ortaya koymak, problemi gerçekleştirmek, yani çalışan sistemi iyi inşa etmek ve sonrasında devreye alıp sistemi işler kılmak, bakımını yapmak, hayatı boyunca sürdürmek çalışmasını düzgün şekilde, isterlere karşılayacak şekilde çalışması için bakım sürecinin işletilmesini konuşmuştuk.
+
+13
+00:08:34,639 --> 00:08:40,240
+Kapsam ve planlamada yapılabilirlik yeti dününde olduğunu.
+
+14
+00:08:41,908 --> 00:08:55,687
+Gereksinim analizi, tasarım, gerçekleştirme, tabii ki testler, kurulum, dağıtım, devreye alma, operasyonda tutma ve bakım ile bunu sürdürme, sonra yeni gelen istekler, değişiklikler, güncellemeler ya da farklılaşmalar, belki hatalar.
+
+15
+00:08:56,307 --> 00:09:02,687
+Bunlarla beraber tekrar tekrar tekrar bu yaşam döngüsü sürdürülerek yoluna devam eder.
+
+16
+00:09:02,687 --> 00:09:08,687
+Peki şimdi biz buradaki süreci acaba hangi çeşit yollarla işletebiliriz?
+
+17
+00:09:09,908 --> 00:09:15,888
+kadar neler yapılmış ya da neler kullanılmış ve şu anda neler popüler ya da revaçta.
+
+18
+00:09:15,967 --> 00:09:17,548
+Bunlara hızlıca bir göz atalım.
+
+19
+00:09:17,628 --> 00:09:21,868
+Çok aşırı detaylarına girmeden bunları bir tanıyalım istiyoruz.
+
+20
+00:09:21,988 --> 00:09:25,768
+Dediğim gibi yazılım mühendisliği dersinde daha detaylı bir şekilde süreç modellerini
+
+21
+00:09:25,768 --> 00:09:32,207
+işleyeceksiniz ama biz en azından bu ders kapsamında klasik ya da geleneksel bilgi
+
+22
+00:09:32,207 --> 00:09:36,888
+sistemi geliştirme süreç modellerinden olan klasik süreç ya da waterfall şelale modelinin
+
+23
+00:09:37,908 --> 00:09:48,548
+duracağız ve bu şekilde sürecimizi işleteceğiz. Neler var? Tabii çok daha fazla isim de bulunabilir burada. Sadece belli başlı yaklaşımları özetlemeye çalıştım.
+
+24
+00:09:49,067 --> 00:09:59,608
+Waterfall, bir diğer alternatif model oluşturma. Sonrasında evrimsel süreçler popülerdi. Bir ara Unified Process özellikle
+
+25
+00:10:00,000 --> 00:10:18,019
+Yazılım dünyasının tamamen nesne yönik olması ya da tamamen nesne yönik dominasyonu altına girmesiyle birlikte orada önemli yol gösterici öğretiler doğurdu. Bunun üzerinden hızlıca geçeriz.
+
+26
+00:10:18,420 --> 00:10:27,940
+Sonrasında da aykırı programlama dediğimiz extreme programming yaklaşımları ortaya çıktı ve bunun da hemen sonrasından zaten bağlantılı olarak çevik.
+
+27
+00:10:28,000 --> 00:10:37,600
+süreçler günümüzde de hala kullanılan, en çok kullanılan, en yaygın olarak kullanılan süreç modelleri olarak karşımızda duruyorlar.
+
+28
+00:10:38,539 --> 00:10:47,379
+Şimdi biz ilk olarak waterfall ya da klasik süreç ya da şelale modeli dediğimiz bilgi sistemi geliştirme süreci nasıl işler buna bakalım.
+
+29
+00:10:47,779 --> 00:10:52,500
+Tabii ki bu waterfall modeli aslına bakarsanız sadece bilgisayar dünyasında yok.
+
+30
+00:10:54,388 --> 00:10:59,988
+Hatta doğduğu yerde bilişim teknolojileri değil, yani bizim alanımız değil, inşaattan çıkmış.
+
+31
+00:11:00,567 --> 00:11:12,848
+Sebebi de şu, bir adım bitmeden öbür adımın yapılamadığı, özellikle mühendislik çözümlerinde bu süreci yönetebilmek adına ortaya koyulmuş bir yaklaşım.
+
+32
+00:11:12,848 --> 00:11:19,008
+Neden inşaatta başlamış diye soracak olursanız, mesela bir bina yapacaksınız diyelim.
+
+33
+00:11:19,508 --> 00:11:22,388
+Bina yapmadan önce ortada hiçbir şey yokken bir zemin eti...
+
+34
+00:11:22,388 --> 00:11:50,388
+Tüdü yapmanız gerekir. Ondan sonra temel kazmanız gerekir. İşte temeli hazırlamanız gerekir. Ondan sonra etrafını geri doldurmanız gerekir. Sonra işte adım adım katları inşa etmeniz gerekir. Sonrasında da bütün tesis hatlarıyla birlikte elektriği, suyu, işte ne bileyim asansörü, kaplaması, dış cephesi, iç cephesi, tefrişatları, kapıları, pencereleri, aklınıza gelen bütün her şeyin yapılması, takılması, bunları nasıl oluşturur?
+
+35
+00:11:50,388 --> 00:12:18,388
+ne olacağının belirlenmesi. Gerekiyorsa işte binanın dayanıklılık ya da sarsıntı bilmem testlerinin yapılması, rüzgar testleri falan gibi belki göklenense ve sonrasında da devre yağma ve bakım. Bakım nedir? İşte hayatı boyunca cam kırılabilir, değiştirirsiniz. Betonda bir şey olabilir, orayı modifiye edebilirsiniz. Bir şeyler yanlış yapılmıştır, mesela tesisatta bir arıza vardır, orayı değiştirebilirsiniz gibi böyle inşaattan aslında gelen bir süreç. Peki biz bunu bir bilgi sistemine oluşturduk.
+
+36
+00:12:18,388 --> 00:12:34,928
+Nasıl kullanabiliriz? Aslına bakarsanız bir bilgi sistemini geliştirirken yapılması beklenen bütün aşamaların mantık olarak birbirini takip etmesi, biri bittiği zaman onun çıktılarıyla beslenerek diğer safhanın, diğer fazın başlaması beklenir.
+
+37
+00:12:34,928 --> 00:12:46,388
+O zaman ben bir bilgi sistemi geliştirirken ilk olarak gereksinim analizi, sonrasında tasarım, sonrasında gerçekleme, test ve bakım şeklinde bunu bitirerek...
+
+38
+00:12:46,388 --> 00:13:04,948
+Bunu bitirip, şunu aşamaya geçerek ilerlersem eğer bu süreci bir waterfall model ile ya da bir şelale modeli ile işletmiş olurum. Bunun tek bir böyle illa beş taneden oluşacak diye bir şeyi yok, kavramı yok. Genel olarak hani nelerin olabileceği zaten süreçteki adımlar.
+
+39
+00:13:05,971 --> 00:13:13,652
+Bunu daha da detaylandırabilirsiniz. Örneğin gereksinimlerin toplanması ya da ön inceleme, sonrasında fizibilite çalışması.
+
+40
+00:13:14,172 --> 00:13:20,811
+Ondan sonra burada tabii önce gereksinim toplanıp sonra fizibilite yapılmış. Bunu genellikle biz önce yapmayı tercih ederiz.
+
+41
+00:13:21,271 --> 00:13:27,311
+Tasarım, kodlama, test, devreye alma, bakım şeklinde bu basamak sayıları artabilir.
+
+42
+00:13:27,851 --> 00:13:31,731
+Neden waterfall? Şelaleden akan su gibi. Geri dönüş yok.
+
+43
+00:13:32,096 --> 00:13:50,415
+Bunu bitirdik, tamamen bitirdik, buraya geçtik. Bunu tamamen bitirdik, buraya geçtik şeklinde ilerlediği için ve süreçte böyle bir geri, aa biz burada bir şeyleri yaptık, hadi şuraya gidelim şeklinde bir geri dönüş tanımlı olmadığı için waterfall klasik şelalenin aktığı, suyun geri yukarı çıkamayacağı model olarak düşünülebilir.
+
+44
+00:13:50,868 --> 00:14:14,448
+Hemen aklınıza gelen, hocam biz bir sonraki süreçte aslında bazı şeyleri yanlış yaptığımızı fark edersek ne olur? Kötü olur. Bunun olmaması bekleniyor tabii ki waterfall modelde. Her bir kutucuğun, her bir süreç adımının çok düzgün bir şekilde işletilip sonuçlarının üretilmesi, hatasız bir şekilde üretilmesi aslına bakarsanız bu yaklaşımda esas.
+
+45
+00:14:18,868 --> 00:14:46,868
+Devlet mesela bir ihale açıyor. Diyor ki bilmem ne sistemi yapılacaktır ya da askeri bir proje. Gereksinimler çok katı bir şekilde tanımlanmış. Her şey çok belli. Yani işte bilmem ne ekranın üzerinde şu kadar buton olacaktır. Bilmem ne süresinin kayıt süresi ve işte veri tabanında şu kayıtların okunması 3 milisaniye, yazılması 8 milisaniye olacaktır. Orada şu tablo yapısı kullanılacaktır. Bilmem ne de şöyle olacaktır. Bu işlemler şu şekilde yapılacak.
+
+46
+00:14:46,868 --> 00:15:14,068
+Her şey harfi harfine tanımlı olan projeler, kontratlı projeler olabilir. Bu gibi durumlarda aslında waterfall çok uygundur kullanılması ve ayrıca fazların sonunda da kontrol mekanizmasının işletilebilmesini, hani mesela şuraya kadar evet doğru yapmışsınız, beklentileri karşıladınız, şuraya kadar işte bilmem kaç yüz bin doları alabilirsiniz diye hak edişlerin verilmesini falan da rahatlıkla takip edilmesini sağlar waterfall süreci.
+
+47
+00:15:15,572 --> 00:15:33,091
+Hani çok eski 70'lerden falan kalma ve artık demode olmuş gibi gözükse bile bazı projelerde hala en uygun süreç modeli olmaya devam edebilir waterfall model. O yüzden hemen bu modeli ne derler hani gömmüyoruz.
+
+48
+00:15:33,091 --> 00:15:42,851
+Onu da bir yaşama şansı veriyoruz ki hatta dediğim gibi temel süreç modeli olduğundan dolayı da ders kapsamında da buradan bu yoldan ilerlemeye devam ediyoruz.
+
+49
+00:15:43,347 --> 00:16:06,347
+Bunu biraz geliştirebiliriz. Nedir? İteratif waterfall. Aslında bu bir artımlı model. Daha artımlılara geçmemiş olsak bile waterfall hemen arkasından söylemek için iyileştirmeyi hemen ekleyebiliriz. Nedir? Eksiği neydi? Geri dönememekte değil mi? Burada şöyle bir şey yaptığımızı düşünün. Kutuların altında şey var, böyle şuralarda hani bir...
+
+50
+00:16:06,447 --> 00:16:16,268
+Ne diyorlar ona? Su pompası var. Hidrofor var. Tamam. Bu su pompası akan suyu geri basabiliyor.
+
+51
+00:16:16,655 --> 00:16:27,735
+Ben şurada bir şeylerin değişmesi gerektiğini ve bunun ta tasarıma kadar geri gitmesi gerektiğini biliyorsam, o pompa buradan suyu böyle buraya geri getirip buradan tekrar akmasını sağlayabiliyor.
+
+52
+00:16:28,216 --> 00:16:39,275
+Ne oldu? İteratif olarak, geri dönülebilir olarak, adımlara hiç böyle kesin geri dönülemez değil de, geri dönme imkanı sunan bir modelde iyileştirme sunulmuş.
+
+53
+00:16:39,635 --> 00:16:43,956
+Buna da iteratif ya da artım ya da waterfall şelale modeli adını veriyoruz.
+
+54
+00:16:44,436 --> 00:16:50,396
+Bunun dışında tabii model yine waterfall'dan türetilmiş bir prototip oluşturma yaklaşımı vardır.
+
+55
+00:16:50,855 --> 00:16:56,816
+Burada da olay şudur, siz tabii ki yine gereksinimleri analizini yaparsınız.
+
+56
+00:16:57,456 --> 00:17:01,056
+Ondan sonra bir prototip oluşturursunuz, bir taslak tasarım.
+
+57
+00:17:01,156 --> 00:17:03,056
+Bundan sonra onu bir modele dönüştürürsünüz.
+
+58
+00:17:03,504 --> 00:17:10,724
+Sonra bakarsınız ne kadar isteği karşılayabiliyor bu prototip ve bununla ilgili üretimi yaparsınız.
+
+59
+00:17:10,884 --> 00:17:21,483
+Ve bundan sonra tekrar tekrar tekrar prototipinizi geliştirirsiniz. Hani versiyon 0.1, 0.2 gibi düşünebilirsiniz.
+
+60
+00:17:31,503 --> 00:17:38,804
+Fonksiyoneti ekliye ekliye gereksinimlerin hepsinin üretilmesini sağlayıp sonunda bütün yazılımın ortaya çıkmasını sağlayabilirsiniz.
+
+61
+00:17:39,384 --> 00:17:44,943
+Bu şekildeki süreç modellerine de prototip oluşturma ya da model oluşturma adını veriyoruz.
+
+62
+00:17:45,083 --> 00:17:49,623
+Yani bir model ya da bir prototipten başlayıp onu son ürüne doğru evrilmesi.
+
+63
+00:17:50,903 --> 00:17:55,443
+Bunun dışında yine yazılım dünyasında evrimsel süreçler.
+
+64
+00:17:56,211 --> 00:18:07,200
+Zaman içinde popüler oldu. Çünkü gördük ki aslında yazılım ya da bir bilgi sistemi geliştirmek demek aslında...
+
+65
+00:18:07,200 --> 00:18:18,119
+Evrimsel olarak zaman içinde gereksinimlerin değişmesine göre doğal olarak değişmeyi gerektiren, yenilikler getirmeyi gerektiren bir akış ihtiyacından.
+
+66
+00:18:18,119 --> 00:18:35,079
+Bunun için de ilk olarak artımlı. Bunu gördük zaten. İteratif waterfall. Bu önerilmiş. Ondan sonra yine uzun yıllar çok popüler olmuştu. Spiral model. Spiral modelde de biraz daha işi mühendislik çözümüyle göstermeye çalışır.
+
+67
+00:18:35,200 --> 00:18:52,820
+Önce müşteri iletişimli fazı vardır. Şuradan başlıyoruz, içerideki çekirdekten. Ondan sonra burası prototip. Hatta şuradan başladık, kavram geliştirme, sonra yeni ürün geliştirme, ürün zenginleştirme, ürün bakım gibi düşünebilirsiniz.
+
+68
+00:18:52,820 --> 00:19:01,700
+Böyle yine evrimsel olarak bir çekirdek, bir prototip üretip bunu da üretirken bakın her aşamada aslında bir müşteri iletişimi.
+
+69
+00:19:02,144 --> 00:19:29,604
+Yani aslında konuşuyorsunuz iş analizi. Sonra bir planlama. Planlama dediğinizde işte aslında yine ne için nasıl yapacağınızın tasarımı, risk analizi yapmak. Burada işte spiral modelde ilave riskler de ön plandadır. Riskli olanları önce yapmaya çalışalım gibi. Böylece sonrasında daha büyük hatalara sebebiyet vermesin gibi bir yaklaşım burada göz önüne alınmış. Mühendislikle de bu tasarım gözden geçiriliyor.
+
+70
+00:19:30,144 --> 00:19:33,963
+Yapım değişim, inşa aşaması, implementation aşaması.
+
+71
+00:19:34,403 --> 00:19:37,384
+Sonrasında bir review var. Bakın burada bir değerlendirme yapılıyor.
+
+72
+00:19:37,384 --> 00:19:49,923
+Yani bu böyle olmuş, şu şöyle olmamış, şurası şöyle olmalıydı, şunlar eksik, şunlar fazla diye bir değerlendirme safhasından geçtikten sonra bir diğer iterasyona, bir diğer spiralet, bir dıştaki döngüye gidiliyor.
+
+73
+00:19:50,403 --> 00:19:58,144
+Böyle böyle böyle en sonunda nihai ürün ve ürünün devrede tutulması, bakımının yapılması gerektiğinde de yine iletişim yapması.
+
+74
+00:19:58,144 --> 00:20:11,724
+Yapılarak değişikliklerin üretilmesi ve değerlendirilmesi, geri besleme alınması şeklinde evrim ve artımlarla böyle üst üste katlanarak giden bir model, yazılım geliştirme modeli, spiral model.
+
+75
+00:20:13,063 --> 00:20:23,683
+Bunlardan sonra dediğim gibi özellikle neslinin yönelik yazılım geliştirmenin de artık tamamen yerleşmesi ve herkesin onu kullanmaya standart olarak başlamasıyla birlikte.
+
+76
+00:20:25,428 --> 00:20:30,568
+Rational firmasının özellikle de yine nesne yönelik analiz ve tasarım
+
+77
+00:20:31,092 --> 00:20:59,092
+yaklaşımlarını göz önüne alarak gerçekleştirdiği bir unified process tanımı var. Ne demek bu unified process? Yine aslında bir process yani süreç modeli ama tümleştirilmiş bir süreç modeli. Burada use case'ler yani kullanım senaryoları ön planda ve genel mimari yapıyı aslında merkeze alıyor ve yine önceki deneyimlerden yola çıkarak artımlı ve iteratif çalışmanın doğru olduğu ve daha düzgün sonuçlar ürettiği süreç.
+
+78
+00:20:59,092 --> 00:21:04,312
+ilerletirken daha başarılı çıktılar ürettiği bilindiğinden dolayı bunlar uygulamaya alınmış.
+
+79
+00:21:05,332 --> 00:21:09,592
+Baktığınızda şimdi şöyle bir matriz bizi karşılıyor.
+
+80
+00:21:09,752 --> 00:21:16,872
+Buradaki akış sol üst köşeden sağ alt köşeye doğru işlerin daha böyle zaman içinde arttığını görebiliyorsunuz.
+
+81
+00:21:16,932 --> 00:21:19,432
+Bunlar yoğunluk, iş yoğunluğu gibi düşünebilirsiniz.
+
+82
+00:21:20,092 --> 00:21:24,992
+Şimdi ne kadar çalışılıyor, kaç saat harcanıyor, kaç gün harcanıyor gibi.
+
+83
+00:21:25,423 --> 00:21:47,764
+Şimdi akıştaki 5 temel safa, gereksinimler, iş analizi, sistem analizi, tasarımı, gerçekleştirme ve test aşamaları bu fazlara bölünmüş durumda. Bu fazlar da aynı spiral modeldeki her bir dönüş gibi ya da iteratif waterfall'daki her bir tekrar şelalenin başına dönüp akıtmak gibi düşünebilirsiniz.
+
+84
+00:21:53,423 --> 00:22:08,663
+4 tane safha tanımlanmış durumda. Şimdi baktığımızda neyi görüyoruz? İlk başlarda gereksinim safhasının daha yoğun olarak çalışıldığı ve Inception, Elaboration'da bunların yoğun olduğunu görebiliyoruz.
+
+85
+00:22:08,663 --> 00:22:15,903
+Elaboration'da aynı zamanda artık analiz modeli de oluşturuluyor. Sonrasında Construction'a geçtiğinizde tasarım.
+
+86
+00:22:16,339 --> 00:22:42,539
+Ağırlıklanıyor ve gitgide tabii ki ağırlığı azalıyor. Bu süreç, Constraction tabii tekrar iterasyonlar halinde. Yani bir iterasyon, iki, üç, dört, dört iterasyon, belki daha fazla iterasyon olabilir. Bunlar da gitgide tasarımın yükü azalıyor ama gerçekleştirmenin yükü artıyor. Kodlama devreye bunların yapılması ve son olarak da testlerin yapılması.
+
+87
+00:22:44,339 --> 00:23:04,299
+Aslında devreye alma. Burada da birkaç iterasyon olabilir. Yani her bir satır bu safadaki, bu fazdaki birer iterasyonu gösteriyor diyebilirsiniz. Burada istediğiniz kadar iterasyon yapabilirsiniz. Ama bu iterasyonların sabit olması, sabit sürelerde yapılması tavsiye ediliyor.
+
+88
+00:23:04,299 --> 00:23:12,339
+Unified Process başlı başına böyle 5000 sayfa civarında bir kitabı var. Merak eden varsa istiyorsa şöyle bir inceleyebilirsiniz.
+
+89
+00:23:12,339 --> 00:23:40,220
+Ama tabii ki bu da artık 20 yıllık falan bir şey oldu, yaklaşım oldu zamanında ama bütün süreç modellerini, geçmiştekilerin en iyilerini bir araya getirerek böyle tümleştirilmiş, baştan sona bir matriz halinde iki boyutlu olarak hani problemi düşünüp şöyle yüklerin dağıtıldığı, dengeli bir şekilde azalan, artan şekillerde yükün dağıtıldığı bir süreç modeli önerisi.
+
+90
+00:23:41,587 --> 00:23:55,607
+Baktığımızda da işte yine her faza karşı gelenler, işte şöyle geri geleyim hani Inception, Elevation, Construction, Transition içinde de Workflow'da Requirement, Analysis, Design, Implementation ve Test var.
+
+91
+00:23:55,607 --> 00:24:09,587
+Buradaki fazlara baktığınızda işte aslında bir aşamada use case modelle yürüyorsunuz bu safhada. Sonrasında analiz modelini oluşturuyorsunuz, sonra tasarım modelini, sonra barındırma modelini yani gerçekten...
+
+92
+00:24:09,587 --> 00:24:15,708
+Fiziksel olarak nerede, nasıl duracaklar? Bunlar nasıl gerçeklenecek? Yazılımın mimarisi ne olacak?
+
+93
+00:24:15,708 --> 00:24:37,587
+Ve nasıl test edeceğiz? Bunun test modelinin ne olması lazım? Şeklinde her bir faza karşı da birer model üreten ve bunları kullanarak da aslında sürecin hep böyle model güdümlü ya da işte böyle diagramlarla, tasarımla ilerletilmesini ön plana çıkartan bir süreç.
+
+94
+00:24:37,587 --> 00:24:38,028
+Modyl'e.
+
+95
+00:24:38,836 --> 00:24:47,516
+Unified Process'in açtığı yol sonrasında tabii ki aykırı manifestonun duyurulmasına yol açtı.
+
+96
+00:24:47,516 --> 00:25:06,556
+Aykırı programlama, Extreme Programming'de eski alışkanlıkların artık terk edilmesi gerektiğini, yazılım geliştirirken, bir sistem geliştirirken, ortaya koyması, ekip olarak çalışırken, bir arada çalışırken çeşitli temel değerlerin gözetilmesi.
+
+97
+00:25:06,836 --> 00:25:12,716
+Ve bunların sayesinde de önerilen pratiklerin uygulanması tavsiye ediliyor.
+
+98
+00:25:13,115 --> 00:25:21,976
+Buradaki değerler şunlar, iletişim, yani takımdaki iletişim, basitlik, problemi küçük basit yenebilir, yutulabilir parçalara bölebilme,
+
+99
+00:25:22,496 --> 00:25:34,536
+geri besleme her zaman işte olmuş olmamış, şu doğru şu yanlış şeklinde hem müşteriyle hem de ekiple konuşup geri beslemeyi ilerletmek ve cesaret, hani cesur olun, korkmayın, girin.
+
+100
+00:25:34,836 --> 00:25:38,175
+Onu çözün şeklindeki dört tane temel değere dayanıyor.
+
+101
+00:25:39,976 --> 00:25:45,016
+Ve baktığınızda işte mesela müşteriyi de ekibin içine alın diyor.
+
+102
+00:25:47,508 --> 00:26:15,468
+Bilindik ya da en böyle farklılaşan önceki süreç modellerinden yaklaşımı. Ekip üyesi olarak müşteri çalışsın. Ne demek? Yani siz geliştirmeyi yaparken müşterinin temsilcisi ya da kendisi de orada olsun. Onu da işin içine katın diyor. Çok kısa aralıklarla yayın yapın yani versiyon çıkın diyor. Aslında yine iteratif çalışın, artımlı çalışın diyor. Tasarıma mümkün olunca basit tutun. Çok fazla doküman yüküyle uğraşmayın.
+
+103
+00:26:15,508 --> 00:26:29,168
+Herkes kodun ya da ürünün ortak mülkiyetine sahip olsun. Bunu o yazmıştı, bu modülü Ayşe yazmıştı, öbür modülü Veli yazmıştı gibi suçu başkasının üzerine atmayın. Bütün sorumluluk ortaktır diyor.
+
+104
+00:26:30,228 --> 00:26:56,827
+Pay programming öneriyor. Bu ne demek? İkili programlama yapın. Yani iki kişi oturun, tek bilgisayarda bir kod üretin diyor. Böylece iki beynin aslında normalde olacağından çok daha, bir beyin olacağından ya da iki ayrı beynin paralel çalışmasından çok daha verimli ve düzgün ürünler çıkaracağını tavsiye ediyor. Mutlaka test edin. Testi asla ihmal etmeyin diyor. Sürekli olarak devreyi alın, tümleştirin. Yani kodu böyle ayrılık tutmayın. Sürekli...
+
+105
+00:26:58,228 --> 00:27:04,428
+Hani şey nasıl söyleyeyim, TFS'te ya da GitHub'ta onu git de bir arada tutun diyor.
+
+106
+00:27:05,208 --> 00:27:10,668
+Ve sürekli tasarımı ilerletin ve sabit hızlarla çalışın.
+
+107
+00:27:10,668 --> 00:27:18,248
+Çok çalışmayın, mesela haftada 40 saat çalışın ama hep 40 saat çalışın şeklinde bir yaklaşımı var.
+
+108
+00:27:18,368 --> 00:27:20,544
+Bu sayede hani tamamen...
+
+109
+00:27:20,544 --> 00:27:26,704
+Geceli gündüzü çalışıp sonunda kafadan duman çıkan hale gelen bir ekip olmasını da istemiyor.
+
+110
+00:27:26,784 --> 00:27:29,544
+Aykırı programlama yaklaşımı ya da manifest tutsu.
+
+111
+00:27:29,903 --> 00:27:48,524
+Yine burada aslında Çevik Manifesto ile alakalı söylediğimiz şeyler tekrar üzerinden geçmeye gerek yok. Evet, bunların hepsinden bahsettik. Bunu bir inceleyin. Extreme Programming nedir? Agile Manifesto nedir? Bunları bir araştırın. En azından bu konu hakkında bir fikriniz olsun.
+
+112
+00:27:57,903 --> 00:28:04,964
+Temellerine dayanarak ama biraz daha farklı yönleriyle değişerek ilerliyor. Günümüzde mesela işte ecail.
+
+113
+00:28:05,715 --> 00:28:32,735
+Evet, çok popüler. Scrum çok popüler. Yine bir ECR metot olarak. Scrum'da da ekiplerin küçük olması, her gün bir mikro toplantıyla başlamaları, sonrasında daha büyük çevrim tamamlandığında daha geniş bir toplantının yapılması, değerlendirmenin yapılması, feedback mekanizmasının işletilmesi, görev dağılımlarının tablo şeklinde bir Scrum çarkı üzerinde yapılması.
+
+114
+00:28:33,715 --> 00:28:46,855
+Kimin hangi işi ne kadar ilerlettiğinin, hangi faza getirdiğinin, bu unified process'ten gelen faz ilerlemeleri nasıl ilerliyor, bunların böyle kağıtlarla ya da başka bilgisayar ortamında da olabilir bir şekilde ilerletilmesi.
+
+115
+00:28:48,576 --> 00:29:16,576
+Küçük çevrim ve büyük çevrim bir arada ama dikkat edilecek şeylerle birlikte çok aşırı dokümentasyon yapmadan ama mutlaka kullanım senaryolarına benzer şekilde user story dediğimiz gereksinim dokümanlarını da kullanarak sürecin işletilmesini ve yine sürekli sabit aralıklarla versiyon çıkılmasını ve yeni özellikler ekledikçe de ilerletilmesini, artımlı olarak ilerlenmesini tavsiye ediyoruz.
+
+116
+00:29:16,576 --> 00:29:28,475
+Yine bunun detaylarına çok fazla girmiyorum ama Scrum eminim ki pek çoğunuzun ilgisini çekmiş ve neymiş bu diye belki makalelerini kurcalamış olabilirsiniz, okumuş olabilirsiniz.
+
+117
+00:29:28,975 --> 00:29:34,635
+Yine bunu da tavsiye ederim, bunu da bir incelerseniz sizin açınızdan iyi olacaktır.
+
+118
+00:29:34,996 --> 00:29:57,836
+Bu şekilde geçen hafta yetiştiremediğimiz süreç modelleri nedir, ne adımları vardır, zaman içinde bunlar nasıl değişmiş, nasıl gelişmiş ve nasıl yaklaşımlar söylüyorlar, neler sunuyorlar, nasıl işletin bu süreci diye çeşitli tavsiyeler ya da yol yordam tanımları yapıyorlar. Bunlara baktık.
+
+119
+00:29:57,836 --> 00:29:59,836
+Şimdi artık...
+
+120
+00:30:00,000 --> 00:30:04,900
+Bu haftaki konumuza hemen geçebiliriz.
+
+121
+00:30:06,579 --> 00:30:09,440
+Şuradan yine slide'ımızı açalım.
+
+122
+00:30:24,500 --> 00:30:25,939
+Evet, nerede?
+
+123
+00:30:27,460 --> 00:30:29,199
+Uzun mu kaybettik?
+
+124
+00:30:34,324 --> 00:30:34,724
+Evet.
+
+125
+00:30:40,723 --> 00:30:41,983
+Evet, şimdi hazırız.
+
+126
+00:30:44,104 --> 00:30:48,683
+Geldik bu haftaki ve önümüzdeki hafta devam edeceğimiz konumuza.
+
+127
+00:30:49,503 --> 00:30:51,844
+Bu derste ön inceleme nedir?
+
+128
+00:30:52,024 --> 00:31:01,804
+Artık süreç modelindeki adımları her bir basamakta nelerin yapılması gerektiğine, ne çalışmaların yapılmasının detaylarına girmeye başlıyoruz.
+
+129
+00:31:01,943 --> 00:31:04,503
+Ve fizibilite çalışması yapılabilirlik etüdü nedir?
+
+130
+00:31:05,203 --> 00:31:27,804
+Buna giriş yapacağız ve dediğim gibi bu hafta büyük ihtimalle yetişilecek ama haftaya buna devam edip sonrasında da yine özellikle fizibilitenin en önemli adımlarından biri olan zaman fizibilitesinin canlı bir örneğiyle birlikte, bir durum vaka çalışmasıyla birlikte nelere dikkat etmemiz gerektiğini öğrenmeye çalışacağız.
+
+131
+00:31:29,619 --> 00:31:57,339
+Peki, ön incelemeden başlayalım. Ön inceleme, işte bu inception, unified processdeki ya da böyle size bir iş geldi, bir istek geldi, müşteri geldi ya da büyük bir holdingin aslında IT birimi olduğunuzu düşünün, bir iş biriminden, mesela bir pazarlama ekibinden ya da bir stok ekibinden size bir iş talebi.
+
+132
+00:31:57,619 --> 00:31:59,859
+Şöyle bir sisteme ihtiyacımız var diye bir talep geldi.
+
+133
+00:32:00,440 --> 00:32:05,619
+Şimdi ön inceleme aslında fizibilitenin de ilk ayağı, ilk adımı, ilk aşaması olarak düşünülebilir.
+
+134
+00:32:05,619 --> 00:32:18,619
+Burada tek bir soruyu aslında genel hatlarıyla kaba bir şekilde inceleyip analizini yapıp biz bu projeye...
+
+135
+00:32:18,740 --> 00:32:38,000
+Tamam mı diyoruz, devam mı diyoruz? Yani yok biz bunu yapamayız mı diyeceğiz, kabul etmeyeceğiz. Yoksa tamam biz bu işi yapıyoruz, biz bu sistemi geliştirebiliriz mi diyeceğiz. Ön inceleme ile bu sorunun cevabını ortaya koymaya çalışıyoruz. Tabii genel hatlarıyla. Detaylara çok aşırı girmeden onlara fizibilite gireceğiz.
+
+136
+00:32:46,544 --> 00:33:01,963
+Bir yeni sistem talebi var. Acaba gerçekten bu projeye ihtiyaç var mı? Yoksa boşuna bir hayal mi bu? Neden böyle bir istek var? Bu gerçek bir ihtiyaç mı diye bunu sorgulamak gerekir.
+
+137
+00:33:02,319 --> 00:33:18,259
+Sonrasında ben bunu gerçekleştirmem için ihtiyacım olan şeyler nelerdir? Buradaki şeyin karşılığı da aslında kaynaklar nelerdir? Bu genel olarak tabii ki zaman.
+
+138
+00:33:18,932 --> 00:33:32,552
+Ondan sonra iş gücü, insan gücü, bilgi gücü ya da bilgi birikimi ve fiziksel imkanlar ya da maddi imkanlar olarak düşünebilirsiniz.
+
+139
+00:33:32,732 --> 00:33:38,332
+Yani aklınıza gelen her türlü kaynak burada kabaca düşünülmesi gerekir.
+
+140
+00:33:38,332 --> 00:33:46,932
+Örneğin böyle bir istek geldi ki onun işletilmesi için sizin 4 tane ne bileyim işte GeForce bilmem kaç grafik kartını...
+
+141
+00:33:46,932 --> 00:34:14,271
+ihtiyacınız var. 2050 mi? Neyse modeller, Titanlar, Bitanlar. Ama ne oluyor mesela? Onlar tanesi işte ne kadar diyelim? 1000 dolar desek, yani orta halli bir şey olsun diyelim. 4000 dolar da ihtiyaç var. Sadece işte grafik işlemcilerin alınabilmesi için. 4000 dolar işte mesela bugün ne yapıyor? 32 bin lira ama sizin aslında sermayeniz 10 bin lira.
+
+142
+00:34:14,963 --> 00:34:37,683
+Şirketinizin sermayesi. Ne yapacaksınız? Doğal olarak bunu bu kaynağa karşılayamayacaksınız. O zaman aslında ben elimdeki kaynaklarla ya da mevcut imkanlarla ya da elde edebileceğim imkanlar dahilinde bu projenin gerçekleştirilmesi için gerekenleri sağlayamıyorum. O yüzden de ben bunu yapamam deyip burada direkt olarak projeyi reddedebiliriz.
+
+143
+00:34:42,963 --> 00:34:52,403
+Yazılım ihalesi yapıldığını düşünün. Bütün üniversiteler için bir bilgi sistemi alınacak mesela. Ders kayıt sistemi alınması planlanıyor.
+
+144
+00:34:53,203 --> 00:35:04,203
+Ve işte orada doğal olarak diyor ki, şu kadar proje yapmış olması gerekir. Şu kadar çalışanın, şu kadar ekibinin şöyle şöyle yetkinliğinin kanıtlanmış olması gerekir.
+
+145
+00:35:04,724 --> 00:35:10,963
+Belki de maddi olarak işte ne bileyim, 1 milyon dolar parayı teminat mektubu olarak yatırması gerekir.
+
+146
+00:35:10,963 --> 00:35:21,283
+Şimdi ben bunları yapamıyorsam birini ya da birkaçını doğal olarak bu projeye giremem. Hatta bu ihaleye katılamam. Bunun gibi düşünebilirsiniz ön incelemeyi. Yine süre.
+
+147
+00:35:21,907 --> 00:35:36,608
+En önemli kaynaklardan biri zaman kaynağı. Ne kadar süreye ihtiyaç var? Tabii ki bunu şu anda kestirmeyiz. Daha problem karşınıza geldi, ne oluyor falan gibi. Bir şey olamaz, çok detaylı incelemesi olamaz.
+
+148
+00:35:36,608 --> 00:35:49,367
+Ama mesela çok fazla sistemle entegre olması gereken bir sürü farklı işlem yapıp rapor üretmesi gereken bir işlemsel bilgi sistemi ihtiyacı doğdu.
+
+149
+00:35:49,907 --> 00:36:04,167
+Ve diyorlar ki işte bir ay sonra bize bunu verin. Zaten benim ekibim atıyorum 5 kişi. Ben şu anda zaten başka projeler de yürütüyorum. Başka süreçleri de işletiyorum süreç modellerini, başka yazılım projeleri.
+
+150
+00:36:06,036 --> 00:36:23,756
+Bir ayda düşünebilirsiniz. Doğal olarak bu da yapılamaz olarak düşünülebilir. Tahmini bütçe. Ne kadar gerçekten benim bu işi yapmam için para var mı, bütçe var mı, sermaye var mı ya da finans kaynağı bulabiliyor muyum?
+
+151
+00:36:23,756 --> 00:36:31,796
+Hani yatırımcı olur, kredi olur, bir şey olur, hibe olur. Bunlar bulunabiliyor mu? Bütçeyle alakalı problem var mı, yok mu? Buna bakılır.
+
+152
+00:36:34,036 --> 00:36:41,036
+Bu projeyi gerçekleştirmenin, bu bilgi sistemini ortaya koymanın faydaları nelerdir, zorlukları nelerdir?
+
+153
+00:36:41,275 --> 00:36:44,376
+Hep böyle dediğiniz gibi maliyet fayda analizine aslında bakıyoruz.
+
+154
+00:36:44,855 --> 00:36:51,195
+Ve elimizdekilerle ya da elde edebileceklerimizle biz bu işi yapabilir miyiz, yapamaz mıız? Bunun kararını veriyoruz.
+
+155
+00:36:51,655 --> 00:36:57,235
+Bu safhaya bir ön inceleme aşaması adı verilir.
+
+156
+00:36:57,940 --> 00:37:17,780
+Bu noktada, pardon, ön inceleme aşamasının sonucunda genellikle bir rapor hazırlanır. Bu rapora kapsam dökümanı denir. Bu yapılan işe de kapsam tanımlama adı verilebilir.
+
+157
+00:37:23,731 --> 00:37:36,332
+Şirketin ya da kurumun başka formatları olabileceği gibi bir kurum içinde bile başka birimler arasında farklı kapsam tanımlama dökümanlarının oluşturulması olabilir.
+
+158
+00:37:36,612 --> 00:37:45,231
+Yani bunun tek bir doğrusu yok. Ama genel olarak bir kapsam tanımlama dökümanının içinde şunlardan bahsedilir. Ürün ne? Yani bizden ne isteniyor?
+
+159
+00:37:45,748 --> 00:37:59,488
+Kalite tanımları, ne kadar iyi olmalı, performansla alakalı olabilir, kod kalitesiyle ilgili olabilir, birim zamanda destekleyeceği işlem miktarı ile ilgili olabilir.
+
+160
+00:37:59,648 --> 00:38:11,347
+Bu gibi farklı farklı kalite, mesela bir askeri yazılımsa, bilmem ne standında, NATO bilmem ne standartında bir şey olması beklenebilir. Bunların tanımları burada yazılır.
+
+161
+00:38:11,967 --> 00:38:13,648
+Zaman, ne kadar zaman?
+
+162
+00:38:13,748 --> 00:38:41,488
+Ne zaman veriliyor, ne genel kabaca detaylarına girmeden nasıl bir zaman planı olabilir, maliyet, nelere mal olur bu ya da ne kadar bütçe verilmiş bize, bunu nasıl dağıtabiliriz ve kaynaklar, hangi kaynakları kullanacağız, hangi ekipler, hangi çalışanlar, hangi sunucular, hangi geliştirme ortamları gibi düşünebilirsiniz. Bunlar ama detaylarına çok fazla girmeden genel haklarıyla sadece belirlenir burada.
+
+163
+00:38:41,748 --> 00:38:44,807
+Bunun bir diğer adı da Project Charter dokümanıdır.
+
+164
+00:38:45,507 --> 00:38:53,447
+Dokümanıdır tabii ki. Project Charter olarak da bunu bulabilirsiniz. Kabaca bir duyuru bu. Biz bu işi yapacağız.
+
+165
+00:38:54,099 --> 00:39:19,699
+Genel olarak bizden şöyle bir şey bekleniyor. Ana hatlarıyla ürün budur ya da çıktı budur. Şu şu kaliteleri şu şekilde karşılaması öngörülüyor. Şu kadar zamanda, şu kadar bütçeyle, şu kaynakları şöyle kullanarak bunu yapacağız diye bir niyet beyanı yapıyorsunuz aslında. Bu bir ön inceleme çıktısı, ön inceleme safhasının çıktısı olarak düşünülebilir.
+
+166
+00:39:22,099 --> 00:39:44,900
+Artık çalışmaya başlıyoruz. Yani aslında sürecin içine hoppala diye atlamış oluyoruz. Peki ne yapıyoruz burada? İlk adımımız hani waterfall'daki ya da bilgi sistemi geliştirme sürecindeki, temel süreçteki ilk adımda biz bir yapılabilirlik etütü gerçekleştirmek zorundayız ki bunun da adına fizibilite çalışması adını veriyoruz.
+
+167
+00:39:50,099 --> 00:39:59,279
+Projelerinde, ürün çıkaran bütün süreçlerde aslında en başta yapılması gereken bir çalışmadır, fizibilite çalışması.
+
+168
+00:40:00,000 --> 00:40:19,780
+Mesela ekonomik tarafı incelerken kullandığımız enstrümanların hiçbiri bize özel değil. Bunların hepsi işletme, ekonomi gibi diğer fakültenin, iktisat fakültesinin bölümlerinin aslında çalışma alanları ya da araştırma alanları olarak karşımıza çıkacak.
+
+169
+00:40:20,115 --> 00:40:40,195
+Tabii ben şu anda kampüsteyim. Siz evlerde ya da başka ortamlardasınız. O yüzden derste olsak, sınıfta olsak, şöyle okla, şuradaki iktisat fakültesi deyip adres gösterebilirdim ama maalesef burada tabii ki öyle bir şansımız pek olmadı.
+
+170
+00:40:42,195 --> 00:40:45,068
+Evet, fizibilite çalışmasının amacı...
+
+171
+00:40:45,268 --> 00:40:53,068
+Genel olarak bu proje yapılabilir mi? Bunu araştırmak. Kaynaklar ne kadar, neye ihtiyaç var? Bunları net bir şekilde ortaya koymak.
+
+172
+00:40:53,788 --> 00:41:03,568
+Ve aslına bakarsanız nasıl bir yoldan yürüyeceğimizin alternatifleriyle birlikte bulunması, ortaya koyulmasının temellerinin atılması ya da ilk adımlarının atılması olarak düşünebilirsiniz.
+
+173
+00:41:03,568 --> 00:41:13,268
+Ne çıkıyor fizibilitenin sonucunda? Aslında benim bir proje planım oluşmuş oluyor, iş zaman planım oluşmuş oluyor, iş kırılım yapımı oluşmuş oluyor.
+
+174
+00:41:13,268 --> 00:41:40,528
+Bütçeyle alakalı ve kaynak gereksinimlerimle alakalı olması gerekenlerin ne olduğu ile ilgili beyanatlar ortaya çıkmış oluyor. Demek ki aslında sonunda ben bir fizibilite dokümanı oluşturmak durumundayım. Alternatifleri de olduğu için genellikle biz burada bir tablolama ya da tablo ile karşılaştırmayı tercih ederiz. Bunu da zaten slide'ları ilerledikçe göreceğiz.
+
+175
+00:41:41,204 --> 00:41:44,300
+Peki, ben bir bilgi sistemi geliştirirken...
+
+176
+00:41:44,628 --> 00:42:04,168
+Nelerin yapılabilir ya da yapılamaz olduklarını etüt etmeliyim? Nelerin üzerinde çalışma? Hangi başlıklar üzerinde çalışmalar yapmalıyım? Sorusu doğuyor doğal olarak. Hemen o sorunun da cevabını burada verelim. Toplamda bizi ilgilendiren 6 çeşit fizibilite vardır. 6 tip diyelim fizibilite vardır.
+
+177
+00:42:04,168 --> 00:42:11,907
+Birinci fizibilitemiz temel doğal olarak işin içinde çok fazla bilişim olduğu için teknik fizibilite.
+
+178
+00:42:12,628 --> 00:42:16,248
+Teknik fizibiliteyi de yine tabii ki alt parçalara böleceğiz.
+
+179
+00:42:17,168 --> 00:42:23,148
+İkinci önemli fizibilite çalışmamız zaman fizibilitesi olacak.
+
+180
+00:42:23,648 --> 00:42:29,108
+Dediğim gibi haftaya bununla ilgili bir örnek de yapacağız.
+
+181
+00:42:30,483 --> 00:42:50,163
+Üçüncü fizibilite çeşidimiz sosyal fizibilitedir. Bu da aslında bilgi sisteminin tarafları ve özellikle kullanıcı tarafı, müşteri tarafıyla ilgili yapılabilir mi, olabilir mi, kabul görür mü? Hani bunun kabul görmesi için neler ne olmalıdır, nasıl olmalıdır tarttığımız ve araştırdığımız fizibilite.
+
+182
+00:42:50,639 --> 00:43:10,659
+Biz yapıyoruz ama bu müşteriye hitap etmeyebilir ya da onun beklentilerini karşılayacak ya da çalışma şekline uygun olacak bir şey olmayabilir. Bu nedenle bir kabul, ürün kabul edilir mi bu people, audience ya da her neyse bunun şeyi?
+
+183
+00:43:13,043 --> 00:43:19,963
+Yönetim karşısındaki taraf, ona uygun mudur aslında bakılması diyebiliriz kabaca.
+
+184
+00:43:20,423 --> 00:43:24,463
+Yönetim fizibilitesi de doğal olarak yönetim kademesiyle alakalı.
+
+185
+00:43:24,663 --> 00:43:32,083
+Yönetim bunu kabul edecek mi? Biz buna bu kadar para harcıyoruz, ne oluyor falan, bize ne fayda sağlayacak ki şeklindeki.
+
+186
+00:43:32,083 --> 00:43:36,503
+Mesela verimlilik artış konusundaki incelemelerin yapıldığı başlık.
+
+187
+00:43:37,223 --> 00:43:41,043
+Bir diğeri önemli ve hep yanlış yapılan özellikle.
+
+188
+00:43:41,043 --> 00:43:58,723
+Özellikle de burada biraz üzerine basa basa duracağım. Yasal fizibilite, yasal fizibilite nedir ve ne değildir şeklinde bir yaklaşım örnekleriyle sergileyip, yasal fizibilite de neler yapılır ya da ne yapılmalıdır bunlara bakacağız.
+
+189
+00:43:58,723 --> 00:44:08,523
+Ve son olarak ekonomik fizibilite, aslına bakarsanız her şey bir şekilde paraya endekslenebilir ya, her şeyin bir kat sayı ile çarparak parasal karşılığını bulabiliriz belki.
+
+190
+00:44:09,043 --> 00:44:35,803
+Bu durumda, tabii sosyalin bulamayabiliriz, kabul görür. Şu kadar para vereyim de al bu projeyi, kullan demek biraz saçma olur. Ekonomik fizibilite de ben ne kadar kaynak harcayacağım, her kaynağın bana maliyeti ne? Peki ben bu sistemle ne kazanacağım? Satış mı yapacağım, verimlilik mi arttıracağım? Bunun sonucunda ne zaman acaba ben gerçekten bu attığım taşın, bu ürküttüğüm kuşa değdiğini fark edeceğim ya da ne zaman kâra geçeceğim?
+
+191
+00:44:37,043 --> 00:44:46,703
+olabilirliklerinin incelendiği fizibilite olarak son altıncı başlık ya da altıncı tip olarak karşımıza çıkıyor.
+
+192
+00:44:49,023 --> 00:44:51,983
+Evet, şimdi adım adım ilerlemeye başlayalım.
+
+193
+00:44:52,123 --> 00:44:52,703
+İlk olarak...
+
+194
+00:44:53,523 --> 00:45:07,123
+Bir teknik fizibilite nedir? Bunun detaylarını görelim. Ne demek teknik? Teknik zaten adı üstünde teknik olanaklar. Teknik fizibilite de teknik olanakların belirlenmesidir.
+
+195
+00:45:07,284 --> 00:45:18,164
+Yani sistemle alakalı, geliştirilecek olan bilgi sistemiyle alakalı her türlü teknik olanağın yapılabilir, yapılamaz, nasıl şekilde yapılabilir olduğunun belirlenip ortaya koyulması.
+
+196
+00:45:18,164 --> 00:45:21,204
+Peki, neler vardır bunun içinde?
+
+197
+00:45:21,523 --> 00:45:26,543
+Biz bir teknik fizibilite yaparken genel olarak 3 tane başlığa bakarız.
+
+198
+00:45:27,324 --> 00:45:30,344
+Birinci başlığımız yazılım fizibilitesidir.
+
+199
+00:45:30,864 --> 00:45:32,824
+İkincisi donanım fizibilitesidir.
+
+200
+00:45:33,403 --> 00:45:38,983
+Üçüncüsü de iletişim yani aslında A, network fizibilitesidir diyebiliriz.
+
+201
+00:45:38,983 --> 00:45:46,744
+Şimdi burada yazılım fizibilitesinde şunları değerlendirmek gerekir.
+
+202
+00:45:47,543 --> 00:45:49,523
+İşletim sistemi ne olmalı?
+
+203
+00:45:49,523 --> 00:46:14,503
+Ya da ne olabilir? Örneğin, çok uç bir örnek olacak ama konteyner mimarisinde şöyle şöyle mikro servislerle çalışacak bir şey önerildiğini düşünelim. Tasarım önerilecek. Böyle bir beklenti var projede. Amaç bu, bu şekilde bir altyapı oluşturmak. O zaman ben mesela işletim sistemi olarak ne kullanayım? Windows kullanabilir miyim?
+
+204
+00:46:14,900 --> 00:46:23,960
+Evet, kullanabilirim ama bu bana neye mal olur? İşte bir lisans bedellerine mal olur. Bakım ve update'lerle ilgili problemlere mal olabilir.
+
+205
+00:46:25,331 --> 00:46:42,711
+Ya da işte bir konteyner ortamını dokerin burada çalışıp çalışmaması ya da stabil çalışmasıyla alakalı, genişletilebilir olması ile alakalı problemler olabilir. Bunun alternatifi ne olabilir? İşte Linux olabilir. Linux olunca ne kaybediyorum ne kazanıyorum? İşte mesela orada da yetkin eleman bulma zorluğu belki olabilir.
+
+206
+00:46:53,331 --> 00:47:05,491
+Başka bir BSD gibi belki bir işletim sistemi düşünülebilir gibi böyle alternatifler artılarıyla, eksileriyle, kazançlarıyla, zararlarıyla karşılaştırılır.
+
+207
+00:47:05,715 --> 00:47:33,495
+Aynı şeyi yazılım geliştirme ortamları için de yapabilirsiniz. Yani ben bunu mesela bir .NET ortamında yaparsam ya da .NET Visual Studio kullanırsam ne olur? Ya da bir IBM ürünü ailesi kullanırsam ne kazanırım ne kaybederim bu bana neye mal olur? Ya da open source'larla mı yürüsem, Eclipse falan mı kullansam? Ya da işte Java ile alakalı belli idleri mi kullansam? Ya da ortamlardan mı faydalansam, araçlardan mı faydalansam gibi.
+
+208
+00:47:33,715 --> 00:47:38,255
+Ben bunların hangisini biliyorum? Hangisi bana kaça mal olur? Eğitim gerekiyor mu?
+
+209
+00:47:38,675 --> 00:47:43,815
+Deneyimin var mı yok mu? Komünite desteği var mı? gibi.
+
+210
+00:47:43,815 --> 00:47:54,775
+Hani böyle pek çok ya da şuna şuna şuna bu projeyle alakalı olan şu işlemleri yapmama kolaylık sağlıyor mu? gibi yönleriyle yazılım geliştirme ortamlarını da karşılaştırmamız gerekir.
+
+211
+00:47:55,475 --> 00:48:02,515
+Olabilecek alternatifleri. Ha bu arada bütün alternatifleri değil ama bizim için adayları, en azından 2-3 adayın karşılaştırılması beklenir.
+
+212
+00:48:02,911 --> 00:48:09,851
+Aynısını veri tabanı yönetim sistemleri içinde yapabilirsiniz. Hangisini kullanırsak ne kazanıyoruz, ne kaybediyoruz, ne getiriyor, ne götürüyor.
+
+213
+00:48:10,547 --> 00:48:32,007
+Uygulama sunucuları için, sistem yazılımları için, destek yazılımları için, pek çok şey için bunları hani kullandığımız sistemimizde bir şekilde değeceğimiz ya da kullanmamız gereken her türlü yazılım çatısı altında adreslenebilecek teknik kaynağın alternatifleriyle birlikte değerlendirilip karşılaştırmasını yazılım fizibilitesi altında yaparız.
+
+214
+00:48:32,727 --> 00:48:37,087
+Bundan sonra donanım fizibilitesi, daha doğrusu eş zamanlı olarak donanım fizibilitesi de yaparız.
+
+215
+00:48:37,492 --> 00:48:48,791
+Donanım fizibilitesinde genellikle sizin öğrenci projelerinizde yaptığınız en büyük yanlış şu, bu sistemi geliştirmek için neye ihtiyacım var, onları bulmalıyım şeklinde bir yaklaşımınız var.
+
+216
+00:48:48,791 --> 00:49:04,811
+Yani ben bunu 8 GB RAM'i olan, Intel Core i7 işlemcisi olan bilmem ne laptop'un da yaparsam ne olur? Alternatif olarak da M1 işlemcili 16 GB RAM'li Macbook'ta yaparsam ne olur?
+
+217
+00:49:05,492 --> 00:49:22,452
+Bu şekilde karşılaştırmalar görüyoruz. Biri ne bileyim bin dolar, biri üç bin dolar ya da biri bilmem ne şu özelliklere sahip falan diye böyle bir karşılaştırma yapıp genellikle bırakıyorsunuz. Bu donanım fizibilitesi değildir. Sadece donanım fizibilitesinin küçük bir parçasıdır.
+
+218
+00:49:33,492 --> 00:49:44,972
+devreye alma, işletme ve bakım şeklinde sürecin sürekli sürdüğünü ve destek personeliyle birlikte de çalışır halde tutulduğunu biliyorsunuz.
+
+219
+00:49:45,052 --> 00:49:59,711
+O zaman ben bunu sadece geliştirmek için olan ihtiyaçları değil, aynı zamanda işletmek için, çalıştırmak için ve devrede tutmak için gereken bütün donanım ihtiyaçlarımı da burada karşılaştırmalıyım.
+
+220
+00:50:00,000 --> 00:50:20,200
+Yani işte bu bir dedicated bir sunucuda mı dursun? Yoksa benim için işte hostingten aldığım sanal sunucular şöyle şöyle paralelleştirilebilenler yeterli mi? Yoksa ben bunların üzerinde daha başka işte hypervisor mimarilerde falan sanallaştırılmış virtual machineler mi kullanacağım?
+
+221
+00:50:20,724 --> 00:50:32,504
+Hangisi daha iyi bir çözüm olur benim açımdan? Kısa ve orta vadede bu sistem ne kadar hizmet edecek? Ne kadar büyük bir hacim karşılayacak? Ne kadar büyük bir trafik bekliyor?
+
+222
+00:50:34,244 --> 00:50:48,504
+Bugün bin kullanıcıya hitap ediyor ama yarın belki on bin kullanıcıya, yüz bin kullanıcıya çıkacak. Bu genişleme olduğunda benim ihtiyaçlarım nasıl değişecek? Beş yıl sonraki planlarımın ne olması gerekir? Beş yıl sonra benim hangi sunucu...
+
+223
+00:50:48,724 --> 00:51:08,164
+Ya da ne gibi sistem kaynaklarına ihtiyacım olur? Bunlar büyüdüğü zaman, işler büyüdüğü, trafik arttığı zaman gibi kısa vadeli, orta vadeli büyüyecek ihtiyaçları da göz önüne alarak bütün işletme yaşam ömrünü de burada mutlaka bir incelemek ve alternatifleriyle karşılaştırıp değerlendirmek gerekir.
+
+224
+00:51:08,164 --> 00:51:16,704
+O yüzden genellikle belki de hani geçmiş dönemlerden falan da ya kanka versene şu senin bilmem bir proje raporunu oradan fizibiliteyi.
+
+225
+00:51:16,724 --> 00:51:22,539
+kopyalayıp yapıştırayım dediğimiz zamanlarda ne oluyor? Herkes...
+
+226
+00:51:22,643 --> 00:51:37,123
+Sistem donanım fizibilitesi, yaz oraya iki tane laptop, ondan sonra bir tane de işte tablet yaz, geç yürü git şeklinde bir ne yaptım fizibilite yaptım. Hayır hiçbir şey yapmadın, aslında sadece saçmaladın diyebiliriz.
+
+227
+00:51:37,123 --> 00:51:50,603
+Donanım fizibilitesinde bütün sistemin yaşam ömrünü de göz önüne alıp devrede tutma, işletme yani hizmet verme yaşam ömrü süresince olan ihtiyaçları, teknik donanımsal ihtiyaçları.
+
+228
+00:51:50,643 --> 00:52:18,483
+Bu şekilde göz önüne almanız gerekir. Bunun dışında mesela diyelim hani stok takibiyle ilgili bir şey yapacaksınız. Depoyla alakalı bir şeyler yapıyorsunuz diyelim. Hani bar kodla mı okuyacaksınız, lazerle mi okuyacaksınız yoksa böyle tabletin kamerasıyla mı okutacaksınız bir şeyleri. Hani bunları bile aslında değerlendirmeniz ve artısının eksisini burada ortaya koymanız. Hani ne getirip ne götürdüğünü bir tartmanız alternatifleriyle gerekiyor.
+
+229
+00:52:18,643 --> 00:52:27,643
+İletişim fizibilitesine geldiğimizde de aynı yazılım ve donanımda bahsettiğimiz konuların aslında burada da network karşılıkları var.
+
+230
+00:52:29,603 --> 00:52:37,463
+Yine sadece 100 megabit fiber internet bana yeter kodlama için bilmem ne için bunları.
+
+231
+00:52:38,164 --> 00:52:49,884
+Kullanmam yeterli oluyor demek değildir. Yine ben böyle bir sistemin geliştirme ihtiyaçlarıyla birlikte bin kullanıcıda şu kadar band genişliyorum ama on bin kullanıcıda şuna çıkacak.
+
+232
+00:52:51,264 --> 00:53:00,824
+Haberleşme ihtiyacı şu şekilde olması gerekir. Şöyle yedekli kalması lazım. İşte hani bir felaket durumunda ya da bir kesinti durumunda şu şekilde davranılması beklenir.
+
+233
+00:53:00,824 --> 00:53:05,403
+Onun için de buna ihtiyaç var. Şöyle bir yatırma ya da şöyle bir yedek hatta.
+
+234
+00:53:06,164 --> 00:53:24,684
+Dediğim, şu protokoller kullanılmalı, şu protokolü kullanırsak şöyle olur, bu protokolü kullanırsak böyle olur gibi, hani ne bileyim mesela dosya transferi yapacaksınız, direkt böyle FTP ile mi yollayalım yoksa başka bir kodlamayla mı yollayalım gibi bunların da alternatiflerinin değerlendirilmeleri gerekir.
+
+235
+00:53:24,684 --> 00:53:29,003
+Teknik fizibilitenin içinde iletişim fizibilitesi alt başlığında.
+
+236
+00:53:34,164 --> 00:53:45,824
+çalışma ve devrede tutma, yaşam ömrü boyunca gereken ihtiyaçları da alternatifleriyle birlikte karşılaştırarak değerlendirdiğimiz bir alandır teknik fizibilite.
+
+237
+00:53:47,443 --> 00:54:01,483
+Riskleri yine ön planda tutmakta fayda var. Riskler her zaman göz önünde tutulmalı. Yüksek risk demek bizim için tehlike demektir. O yüzden tercihlerde riski düşük olanlar tabii ki şey yapılır, tercih edilir.
+
+238
+00:54:01,864 --> 00:54:12,443
+Ve belli konularda yetersizliklerimizin olduğu görülüyorsa da bu fizibilite çalışması sırasında o yetersizliklerin de tamamlanması giderilmelerine gayret edilir.
+
+239
+00:54:13,300 --> 00:54:36,539
+Şimdi zaman fizibilitesini geçeceğim. Şunları da geçeceğim. Bunlara haftaya bakacağız. Ve sosyal fizibilite ile devam edelim yolumuza. Ama saat 55 olmuş. Bir 10 dakika ara verelim. Ben de çok konuşunca boğazım şey oluyor.
+
+240
+00:54:38,643 --> 00:54:48,863
+2-5 geçe, 5 geçe başladığımız gibi, 5 geçe devam edelim. 2-5 geçe, görüşmek üzere. Bir 10 dakika ara.
+
+241
+01:05:47,476 --> 01:05:53,376
+Evet arkadaşlar, beş geçe tekrar devam edelim. Sosyal fizibilite başlığımızla.
+
+242
+01:05:57,204 --> 01:06:25,204
+Sosyal fizibilite, aslında hani baş 6 tane fizibilite türünü söylerken çok özetli olsa anlattım. Hedef kitle, acaba bizim oluşturacağımız sistemi kabullenir mi, kabullenmez mi? Ya da kabullenirse, kabullenmeyecekse pardon, neler yapılabilir? Alternatifleri nelerdir? Nasıl bir mesela arayüz sahibi olması gerekir? Ya da nasıl bir etkileşim noktaları?
+
+243
+01:06:25,204 --> 01:06:41,384
+Ne gibi çıktılar üretmesi gerekir, ne gibi işlemleri yerine getirmesi gerekir gibi kullanıcıların kabullünün olup olmayacağını incelediğimiz fizibilite başlığı olarak karşımıza çıkıyor.
+
+244
+01:06:41,384 --> 01:06:46,044
+Burada tabii ki sistemden direkt olarak etkilenecek grupları incelememiz gerekiyor.
+
+245
+01:06:53,268 --> 01:07:00,748
+Son kullanıcıya yönelik bir şeyler yapıyorsanız ve potansiyelleri incelersiniz ama özellikle belirli bir müşteri için, yani bir iş birimi için.
+
+246
+01:07:01,556 --> 01:07:26,215
+Eğer çıktı üretiyorsanız o zaman gidip de hani stokla alakalı bir şey için gidip muhasebe departmanını falan incelemenize gerek olmaz. Direkt etkilenecek gruplar varsa bunları inceleyip bunları kontrol etmeniz, denetlemeniz gerekir. En önemli şey tabii ki önce istekleri karşılaması ve istekleri düzgün bir şekilde hani insanların kabul edebileceği, kullanabileceği şekilde karşılaması.
+
+247
+01:07:29,556 --> 01:07:42,956
+bilgi sistemi gerçekten bir şekilde yapılır ve devreye alınır. Ancak işletmenin mesela belli biriminde ya da belli bir yerinde o çok fazla kullanılmaz bir dirençle karşılaşır.
+
+248
+01:07:43,036 --> 01:07:52,215
+İnsanlar çok, yani kullanıcılar ya da çalışanlar her zaman böyle her şeyi direkt kabul etmeyebilirler. Yani bu sistem çok karışık.
+
+249
+01:07:52,724 --> 01:07:59,324
+Ben bunun ekranlarında kayboluyorum ya da şunu şunu işaretlemediğim için bir şeyler yanlış oluyor unutuyorum gibi.
+
+250
+01:07:59,963 --> 01:08:09,884
+Eğer şeyler duyuyorsanız, serzenişler duyuyorsanız, böyle geri beslemeler alıyorsanız o zaman sosyal fizibiliteyi düzgün olarak işlemediğiniz ortaya çıkar.
+
+251
+01:08:17,171 --> 01:08:37,071
+İsmiyle de görebilirsiniz. O olarak yazmışım, olarak da görebilirsiniz. Yani operasyonel fizibilite neymiş ya ben böyle bir şey öğrenmedim demeyin. Sosyal fizibilite başlığında incelediğimiz şey eşittir operasyonel fizibilite. Sistemin operation anlamında, işletim anlamında kabulüne yönelik yapılan.
+
+252
+01:08:37,439 --> 01:08:46,199
+Karşılaştırmalı incelemeler ve değerlendirmelere sosyal ya da operasyonel fizibilite adını veriyoruz.
+
+253
+01:08:47,091 --> 01:09:07,891
+Bir diğer başlığımız yönetim fizibilitesiydi. Bu da kullanıcıların değil de yönetim bunu kabul eder mi? Sistem yeni ürün ya da yeni çözüm yönetimi ne kadar etkiliyor, nasıl etkiliyor, hangi yönde etkiliyor? Parasal açıdan şunlara yol açıyor ama karlılık açısından da şunlara yol açıyor gibi.
+
+254
+01:09:15,091 --> 01:09:25,171
+Orta ve üst yönetim kadememiz geliştirdiğimiz sistemden ne kadar fayda sağlayacak? Bunların tartışıldığı başlığa da yönetim fizibilitesi adını veriyoruz.
+
+255
+01:09:25,171 --> 01:09:30,551
+Yani patronlar ya da müdürler bunu kabul eder mi etmez mi? Buna incelediğimiz başlık.
+
+256
+01:09:31,152 --> 01:09:43,091
+Eğer bir yönetim bilgi sistemi, karar destek sistemi ya da üst yönetim bilgi sistemi yapıyorsanız, yani böyle bir bilgi sistemi projesinde yer alıyorsanız, o zaman tabii ki yönetim...
+
+257
+01:09:43,091 --> 01:09:58,152
+Fizibilitesi çok önemli hale gelir. Buranın iyice incelenmesi, alternatifleriyle birlikte şu raporlar şöyle olur, şu dashboardlarla böyle olur gibi karşılaştırmalarının, analizlerinin düzgün yapılması beklenir.
+
+258
+01:09:58,152 --> 01:10:08,931
+Eğer MIS ya da AIS ya da DSS gibi bir bilgi sistemi gerçekleştiriyorsanız. Temel olarak da bu.
+
+259
+01:10:09,555 --> 01:10:14,795
+Peki, yasal fizibilite nedir? Şimdi ona bakalım.
+
+260
+01:10:16,692 --> 01:10:23,332
+Zamanı atladığımız için işte beşinci ama dördüncü şu anda incelediğimiz fizibilite çeşidi olarak karşımıza çıkıyor.
+
+261
+01:10:24,072 --> 01:10:33,252
+Yasal fizibilitede de yaptığımız şey temel olarak, şimdi burada da yaptığımız temel hatayı önce şey yapayım, söyleyeyim.
+
+262
+01:10:34,372 --> 01:10:42,051
+Genellikle yine önceki örneklerden yola çıkarak kopyalı yapıştır şeklinde eğer fizibilite raporu hazırlarsanız şu ifadeyi görüyoruz.
+
+263
+01:10:42,399 --> 01:10:52,939
+Bu yazılım ya da işte bu bilgi sistemi herhangi bir kanunu ya da yasayı çiğnememektedir, ihlal etmemektedir. Hayda!
+
+264
+01:10:53,652 --> 01:11:21,652
+Zaten onu yaptığında suç işlemiş oluyorsun merak etme. Yani hani bir kanuna ya da yasal işi bir şey yapıyorsan zaten orada zaten suç işliyorsun demektir. Ben bunu yapmıyorum. Vallahi billahi suçsuzum hocam ya da işte sayın müşteri. Biz yasalara çok saygılıyız. Tamamen devletimizin koyduğu kanunlar ya da uluslararası anlaşmalar neyse onlara uyuyoruz. Vallahi onların dışında bir şey yapmıyoruz derseniz bu yasal fizibilite yapmıyoruz.
+
+265
+01:11:21,652 --> 01:11:25,032
+Peki nedir yasal fizibilite yapmak?
+
+266
+01:11:25,032 --> 01:11:28,032
+Şöyle, şimdi bir...
+
+267
+01:11:29,140 --> 01:11:37,460
+Bazı alanlarda diyelim çeşitli kanunlar ve yönetmelikler tanımlanmış olabilir.
+
+268
+01:11:38,100 --> 01:11:49,040
+Sizin yaptığınız sistemin çalışma şeklinin kanunla tanımlı veya yönetmeliklerle belirlenmiş şekillere uygun olup olmadığını tartışmanız gerekebilir.
+
+269
+01:11:57,140 --> 01:12:12,700
+uygulaması yaptınız. Böyle bir bilgi sistemi öğrenciler arasında ders notlarının paylaşılmasını sağlayacak. Bilginin birleştikçe artarak çoğaldığını falan düşünen bir bilgi sistemi yaptınız diyelim.
+
+270
+01:12:13,500 --> 01:12:25,140
+Şimdi fakat burada mesela sizin temel olarak incelemeniz gereken aslında mesela ülkemiz genelinde hatta Avrupa Birliği'nde Amerika'da da var biliyorsunuz karşılıkları bazı kanunlar.
+
+271
+01:12:25,140 --> 01:12:53,140
+Kanunlar var. Örneğin, kişisel verilerin korunması kanunu var. Ve fikri sinayi mülkiyet hakları kanunu var. Yani ben bir emek sarf ederek bir ders notu oluşturmuşsam ve siz onu gidip de sağda solda böyle public bir şekilde indirilebilir, görülebilir şekilde gösteriyorsanız o zaman siz bir kere benim fikri hakkıma, emeğimle ortaya çıkan ürünümün hakkına tecavüz etmiş oluyorsunuz.
+
+272
+01:12:53,140 --> 01:13:05,140
+Bu aslında kanunla, yasayla koruma altında. Ya da benim rızam olmadan benim bilgimi kullanıyorsunuz ya da yayıyorsunuz ya da bunu işliyorsunuz. Bu da yine...
+
+273
+01:13:06,707 --> 01:13:22,768
+Yanlış bir şey olacaktır. Mesela, diyelim ki müşteri bilgileri içeren bir proje yapıyorsunuz, bir bilgi sistemi geliştiriyorsunuz. KVKK kanunu gereğince yapmanız gereken yükümlülükler var.
+
+274
+01:13:23,167 --> 01:13:43,147
+Mesela belli anlaşmaları imzalama, okudum, onaylıyorum şeklinde böyle kullanıcı sözleşmeleri var ya, onların olması, bunların işaretlenmesi, işaretlenmediği halde kullanıma izin verilmemesi ve yine kişisel verilerin kanunu gereğince mesela ben eğer talep edersen benim verilerimi silmek zorundasınız.
+
+275
+01:13:43,147 --> 01:13:51,167
+Böyle bir yeni bir gereksinimin, yeni bir işlevin, operasyonun sizin bilgi sisteminizde mutlaka olması lazım.
+
+276
+01:13:51,167 --> 01:14:04,247
+Nasıl gerektiği ihtiyacı. Eğer bu olmazsa karşılığında göreceğiniz yaptırımlar ya da alacağınız cezalar. Yine bunlar da aslında ekonomik tarafa da çıktı olarak ürün verebiliyor ya da sağlayabiliyor.
+
+277
+01:14:05,688 --> 01:14:17,608
+Ve ne oldu? İşte mesela ben KVKK kanunu yüzünden düşündüğüm, tasarladığım ya da yapmayı istediğim bilgi sisteminde değişiklikler yapmak zorunda kaldım.
+
+278
+01:14:18,195 --> 01:14:43,895
+Bilginin tutulması konusunda değişiklik yapmak zorunda kaldım. Belki bir şifreleme bilmem ne cihazı kullanmak zorunda kaldım. Ekstra gördüğünüz gibi teknik tarafa da bir fizibiliteye ekstra geldi. Maliyet tarafına da bir ekstra doğurdu. Geliştirme süresine de doğal olarak ilave getirdi. Ne oldu? Ben bu yasal fizibiliteyi yaparak, bunu inceleyerek, bunu böyle yaparsam ne olur, böyle yapmazsam ne olur şeklindeki incelemeyi yaparak
+
+279
+01:14:44,404 --> 01:14:50,444
+Bana gelen ilave yükleri ya da benim kurtulduğum yükleri ortaya koymuş ve tartmış oldum.
+
+280
+01:14:50,868 --> 01:14:56,248
+Özellikle KVKK çok bariz bir örnek olduğu için bunu söylüyorum.
+
+281
+01:14:57,028 --> 01:15:01,688
+İşte böyle kanunların getirdiği yükümlülükleri yerine getirmeniz gerekebilir.
+
+282
+01:15:02,208 --> 01:15:04,588
+Bunlar da size ek yükler getirebilir.
+
+283
+01:15:05,108 --> 01:15:07,088
+Yapmazsanız cezalar doğurabilir.
+
+284
+01:15:07,548 --> 01:15:18,408
+Bunlara uygun olup olmadığınızı ve gerektiyorsa neleri değiştirmeniz, ne kadar değiştirmeniz gerektiğini ancak burada alternatifleriyle birlikte bu başlık altında değerlendirmeniz uygun olacaktır.
+
+285
+01:15:19,060 --> 01:15:46,320
+Bunun dışında, örneğin bir yöntem kullanıyorsunuz, bir algoritma ya da bir çözüm. Bu belki mevcut patentlere patenti var ve doğal olarak siz şey yapacaksınız, patenti ihlal etmiş olacaksınız. Ya da biraz önce bahsettiğim fikri sinayi hakları, benim emeğimi, benim mesela müzik üretimimi, videomu, benden izinsiz bir şekilde kopyaladığınızı, dağıttığınızı düşünün. Benim haklarımı ihlal etmiş olacaksınız.
+
+286
+01:15:47,060 --> 01:16:15,060
+Bir hak ihlalleri var mı? Patent ihlalleri var mı? Benim kullandıklarımın içinde böyle lisans ödenmesi gereken özel izinle kullanabileceğim ya da özel bir lisansla kullanabileceğim şeyler var mı? İhtiyaçlar var mı? Bunları mutlaka analiz etmem gerekir. Yine bu lisanslar içinde ne oldu? Bir para ödemem, bir bedel ödemem gerekiyor. Bunu bir kere de mi ödeyeceğim? Hani bütün sistem için bir kere ölesem mi yetecek? Yoksa hakikaten...
+
+287
+01:16:15,060 --> 01:16:34,020
+Ben işlem başına şu kadar mı ödemeliyim? Yoksa abonelik gibi bir şey mi var? Aylık bilmem ne, yıllık bilmem ne, dolar mı ödeyeceğim? Bunlar bana ne getirecek, ne kadar yük getirecek? Yine bunları aslında yasal fizibilitenin içinde ölçüp biçip tartmamız gerekir.
+
+288
+01:16:34,612 --> 01:16:48,891
+Ya da bunun yerine şunu kullansam ne olur gibi. Şu lisansı almak yerine şu versiyonunu kullansam ya da şunu şöyle açık lisansını alsam, şunu şöyle değiştirsem gibi alternatifleri burada değerlendirmeniz gerekir.
+
+289
+01:16:56,851 --> 01:17:10,532
+Yaptığı anlaşmalar olabilir. Bu anlaşmaları ihlal edecek ya da buradaki anlaşma şartlarını bozacak, onlara uymayacak şekilde bir sistem üretmemeniz gerekir ya da bir ürün ortaya koymamanız gerekir.
+
+290
+01:17:10,532 --> 01:17:16,532
+Mevcut anlaşmalarınız varsa, atıyorum ne bileyim ben şey...
+
+291
+01:17:17,076 --> 01:17:43,476
+Daha temiz ve yeşil çevre bilmem ne anlaşmasını imzalamışızdır. O yüzden işte belirli bir bilmem kaç kilowattın üzerinde elektrik çeken sunucu belki kullanamıyoruzdur birim zamanda. Hani atıyorum şu anda onu. Ama böyle bir anlaşmayı ihlal eden bir yanımız var mı yok mu? Bunu bize neye mal oluyor? Bunları da yine yasal fizibilite başlığı altında incelememiz gerekiyor.
+
+292
+01:17:43,891 --> 01:17:50,891
+Umarım burası iyi anlaşılmıştır bu yasal fizibilite başlığı. Çünkü dediğim gibi...
+
+293
+01:17:51,252 --> 01:18:17,132
+Bir, donanım fizibilitesi tekniğin altında. İki, yasal fizibilite. Ben burada ne kadar anlatırsam anlatayım. Bir ay sonra nedense reset olup, hatta bundan sonraki dönemlerde yapacağınız başka ders projelerinde ya da bilgisayar projesi bitirme çalışması gibi süreçlerdeki fizibilite çalışmalarında da tekrar resetlenip hiçbir yasayı ihlal etmemektedir yaz geç.
+
+294
+01:18:19,252 --> 01:18:45,912
+Bir tane cep telefonu yaz geç şeklinde bir hale dönüyor. Lütfen siz böyle yapmayın. Gerçekten teknik fizibiliteyi ve yasal fizibiliteyi hak ettiği şekilde benim anlattığım çerçevede değerlendirip buna göre bir fizibilite çalışması yapılabilir yapılamaz, yapılırsa şuna mal olur gibi bir çalışma gerçekleştirin isterim.
+
+295
+01:18:46,192 --> 01:18:48,532
+Evet [öğrenci], el kaldırıyorsun gibi.
+
+296
+01:18:48,752 --> 01:19:01,131
+Hocam, donanım fizibilitesine örnek verebilir misiniz? Mesela bir yazılım tasarlıyorsak, bir yazılım geliştiriyorsak, bunun için bilgisayardan başka bir donanım benim aklıma pek gelmiyor da.
+
+297
+01:19:02,131 --> 01:19:13,152
+Şimdi şöyle, sen önümdeki laptopta bilgi sistemini geliştirdin. Tek kişilik dev kadrosun yaptın. Harika, muhteşem. Peki bu nerede çalışacak?
+
+298
+01:19:13,555 --> 01:19:14,796
+Nerede hizmet sunacak?
+
+299
+01:19:15,675 --> 01:19:19,235
+Akıllı telefonlarda da olabilir. Mesela bunu mu kastediyorsunuz?
+
+300
+01:19:19,235 --> 01:19:24,155
+Mesela. Onun dışında hiç mi sunucu ihtiyacı olmayacak? Hiç mi back-endin olmayacak senin?
+
+301
+01:19:24,735 --> 01:19:28,036
+Sunucu, evet o da olabilir.
+
+302
+01:19:28,636 --> 01:19:36,735
+Olacak. Ve sen bunu mesela, diyelim ki akıllı telefonlarda fotoğraf beğeni, Instagram gibi bir şey yaptın diyelim.
+
+303
+01:19:37,275 --> 01:19:40,456
+Senin o bir kere verileri bir yerde tutman gerekecek değil mi?
+
+304
+01:19:41,076 --> 01:19:42,935
+Evet, onun için sunucu.
+
+305
+01:19:43,355 --> 01:19:50,416
+Evet, büyük bir veri depolama ortamına ihtiyaç duyacaksın. Büyük bir ihtimalle de bir content delivery network kullanmak zorunda kalacaksın.
+
+306
+01:19:50,615 --> 01:19:58,735
+Çünkü dünyanın her yerinden her an binlerce, milyonlarca içerik gelecek, gidecek, istenecek ve yenileri kaydedilecek.
+
+307
+01:19:59,235 --> 01:20:02,916
+Bunun için belki bir büyük veri tabanına ihtiyaç duyacaksın dağıtık yapıda.
+
+308
+01:20:03,216 --> 01:20:27,656
+Ondan sonra bunun kontrolü için ayrı bir doğal olarak sistem yazılımına ihtiyaç duyacaksın. Hani içerik dağıtımının, load balancing'in yapılması için. Bununla birlikte işte bugün bin kullanıcı var. Onun için işte şöyle şöyle bir uygulama suyuncusu yeter. Şu özelliklerde olan ama yarın öbür gün bir milyon kullanıcı olacaksa, o kadar böyle genişleyeceksem.
+
+309
+01:20:27,984 --> 01:20:52,224
+Acaba ne olur? Benim ne kadar bir sunucu gereksinimine ihtiyacım, ne kadar bir artışa ihtiyacım olur? Bunu şöyle tasarlarsam ne olur ya da şöyle çözersem ne olur? Böyle çözersem ne olur? Parasını verip sunucuları ben alsam ne olur? Ya da Amazon'dan kiralasam ne olur? gibi karşılaştırmaları burada yapmanız gerekiyor.
+
+310
+01:20:52,627 --> 01:21:13,067
+Donanımda da dediğim gibi sadece geliştirme değil, bütün işletme ömrünü, verimli ömrünü diyelim 5 sene mi öngörüyorsunuz, 10 sene mi öngörüyorsunuz çalışma süresini. O kadar süre için bunun çalışır halde kalmasının için gerekli kaynakları da planlamanız gerekiyor burada.
+
+311
+01:21:18,579 --> 01:21:36,180
+Kaç sene oldu? Üç sene mi oldu? Üç sene önce falandı. Belki oynamışsınızdır. Çok popüler olmuştu. Sonra ne oldu? Ben bile unuttum. Haydi diye bir mobil uygulama vardı. Canlı böyle videolu yarışma yapıyorlardı. Hatırlar mısınız? Atıyorum akşam sekizde.
+
+312
+01:21:36,720 --> 01:21:38,180
+Evet hocam. Hadi idi.
+
+313
+01:21:38,180 --> 01:21:43,180
+Hadi miydi? Neyse işte. Sonra Türksel mi aldı? Öyle bir şey oldu.
+
+314
+01:21:45,104 --> 01:22:00,104
+Evet, bir ara çok popüler. Ne oldu? Şimdi onlar mesela hakikaten böyle mobilde video, canlı videonun streamingle aktarıldığı belli zamanlar, 3 dakika, 5 dakika, çok kısa gibi görünüyor. Neyse, toplam süresi.
+
+315
+01:22:00,943 --> 01:22:11,244
+Ve kullanıcıların da işte cevabını yazıp mı yolluyorduk, ne yapıyorduk, onu bir de unutmuşum şu anda. Şıklı bir şey mi seçiyorduk? Öyle bir şeydi. Tamam mı?
+
+316
+01:22:13,076 --> 01:22:39,515
+Ne oldu? İşte zaman içinde çok az kullanıcı ile başladı. Sistem çok güzel gidiyor. Ama bir süre sonra, özellikle de işte bu Türksel'in falan işin içine gelip de bir ara araba falan mı veriyorlardı öyle? Ya da haftada bir yüksek ödül veriyorlardı falan. Bir anda böyle milyon kişiye çıktı. Milyon kullanıcıya. Fakat böyle bir fizibilite çalışması düzgün olarak yapılmadığı için karşılaştırması.
+
+317
+01:22:40,051 --> 01:22:57,412
+Doğal olarak patladı. Kimse cevabını yazamadı. Gecikme oldu. Kimine video gitti, kimine gitmedi. Öyle oldu, böyle oldu. Network altyapısı. Ondan sonra donanım fizibilitesi. Bu çalışmalar, bu karşılaştırmalar, bu projeksiyonlar önemli.
+
+318
+01:22:58,231 --> 01:23:05,051
+Dediğimiz gibi, yoksa bizim bu ders kapsamında belki yapacağımız bilmem ne bilgi sisteminde çok fazla sizi etkilemeyecek ama...
+
+319
+01:23:05,199 --> 01:23:25,699
+Büyüyebilen sistemlerde, son kullanıcıya hizmet veren sistemler geliştiriyorsanız, o zaman bu ön inceleme ve fizibilite safhalarında alternatiflerin hakikaten çok detaylı ve dikkatli bir şekilde oturulup değerlendirilmeleri ileride başınızın ağrımasını engelleyecektir.
+
+320
+01:23:25,811 --> 01:23:35,787
+Sonrasında çünkü tasarımda ya da ilerleyen sürecin ilerleyen safhalarında bir hatayı görüp de düzeltmeye çalışırsanız,
+
+321
+01:23:35,956 --> 01:23:40,655
+Çok büyük bir geri dönüş yapıp çok fazla şeyi değiştirmek zorunda kalırsınız.
+
+322
+01:23:40,815 --> 01:23:49,095
+Hatta ne kadar başa yakın bir yerde öngörülebilir ve giderilebilirse o kadar da az sorun yaşarsınız doğal olarak.
+
+323
+01:23:49,095 --> 01:24:00,435
+Hani kar topuyken içindeki taşı almak var. Bir de böyle bu kadar çığ olmuşken ya da ne bileyim hani kardan adam olmuşken içindeki bir tane taşı arayıp bulmak var.
+
+324
+01:24:03,956 --> 01:24:17,855
+Fizibilite çalışmalarına önem vermek, özellikle de gerçek dünya uygulamaları yapıyorsanız, son kullanıcıya, yüksek hacimlere ya da yüksek trafiğe sahip uygulamalar yapıyorsanız önem kazanıyor.
+
+325
+01:24:17,855 --> 01:24:28,855
+Ama ben zaten şeyin içinde bilinen bir problemim var, onu çözecek basit bir işlem serbegi sistemi yapıyorsam, evet o kadar ağır fizibilite çalışmaları yapmama gerek kalmaz.
+
+326
+01:24:30,707 --> 01:24:47,667
+Bu arada, şimdi ben hani böyle teknik fizibilite, sosyal fizibilite, yönetim fizibilitesi, yasal fizibilite, zaman fizibilitesi, ekonomik fizibilite altı tane başlık sayıyorum ama aslında bütün bilgi sistemi projelerinde hepsinin yapılmasına gerek olmayabilir.
+
+327
+01:24:48,587 --> 01:24:49,047
+Dediğim gibi.
+
+328
+01:24:49,488 --> 01:25:07,907
+In-house bir şey yapıyorsunuzdur. Yasal fizibilite yapmazsınız ya da sosyal fizibilite yapmazsınız. Bunlar normal. Ya da ekonomik fizibilite yapmazsınız. Bunlar olabilir. Ama müşteriye yönelik, genele yönelik bir şeyler yapıyorsanız bazılarını, dördünü, beşini yapmak zorunda kalabilirsiniz.
+
+329
+01:25:10,707 --> 01:25:33,787
+Projeler, kontratlı işler falan yapıyorsanız sözleşmeli, o zaman bunları daha formal hale getirmek için bu çalışmaları yapmanız gerekebilir. Her zaman hepsi mutlaka yapılacak değil ama gereken durumda gerektiği kadarı mutlaka yapılacak diyebiliriz buradaki fizibilite başlıkları için. Dediğim gibi illa bütün projelerde yasal fizibilite yapılmaz.
+
+330
+01:25:34,323 --> 01:25:42,203
+İlla bütün projelerde, bütün bilgi sistemi geliştirme süreçlerinde sosyal fizibilite yapılmaz. Ama gerekiyorsa yapılır bunlar.
+
+331
+01:25:45,144 --> 01:25:52,804
+Tabii bu ders kapsamında biraz biraz hepsini çalışmanız için yapmanızı tavsiye ederim. Biraz sonra bahsedeceğimiz dönem projesinde.
+
+332
+01:25:54,703 --> 01:26:20,604
+Ne? Bunu yaşamanız, deneyim kazanmanız, elinizin alışması, tecrübe edinmeniz. Çünkü şey diyebilirsiniz rahatlıkla. Hocam bizim projede zaten ekonomik tarafı hiç düşünmedik. Çünkü bilmem ne bilmem ne uygulaması bu. Sosyal sorumluluk projesi bu diyebilirsiniz. Ama dememenizi tavsiye ediyorum. Onları da işletin ki nasıl yapıldığı konusunda bir el alışkanlığınız olsun.
+
+333
+01:26:21,216 --> 01:26:47,296
+Peki, şimdi geldik. Son başlığımız aslında fizibilitede ama dediğim gibi zaman fizibilitesini atladık. Onu tamamen haftaya bırakacağım. Ekonomik fizibilite. Bu da bütün fizibilitelerin bir şekilde çıktı sağladığı, dönüp dolaşıp, neydi telkinin dönüp dolaşıp gittiği kürkçü dükkanı gibi bir yer. Nihayetinde her şey işin ucu maliyet. Bütün sisteme ait maliyetler.
+
+334
+01:26:49,268 --> 01:26:56,047
+Göz önüne alınmalıdır. Başka fizibilitelerden doğan maliyetler de göz önüne alınmalıdır.
+
+335
+01:26:56,047 --> 01:27:01,047
+İşte donanım fizibilitesinden, sosyal fizibiliteden, yasal fizibiliteden.
+
+336
+01:27:01,395 --> 01:27:21,496
+Ya da zaman fizibilitesinden gibi buradan bütün gelen maliyetlerin hepsini oturup böyle masanın üzerine koyup göz önüne alıp bir maliyet fayda analizi yapmamız lazım. Yani fiyat performans karşılaştırması yapmamız lazım. Bunu yaptıktan sonra gerçekten bu iş yapılabilir mi?
+
+337
+01:27:22,131 --> 01:27:27,992
+Yapılabilirlik etütünün sonucu aslında biraz ekonomik fizibiliteye de direkt bağlı diyebiliriz.
+
+338
+01:27:28,351 --> 01:27:34,511
+Her ne kadar tekneye de direkt bağlıysa, zamana da direkt bağlıysa ekonomik fizibilite nihayetinde bir şekilde dediğim gibi,
+
+339
+01:27:34,992 --> 01:27:43,451
+diyelim ekip yetmiyor dediniz ama belki 10 kişi daha projeye ekleyerek o zaman planını yapılabilir hale getirebilirsiniz.
+
+340
+01:27:43,451 --> 01:27:49,112
+Ama doğal olarak ekonomik bir karşılığı olacak, 10 kişinin maaşı gelecek proje süresi boyunca mesela.
+
+341
+01:27:49,456 --> 01:28:13,036
+Ya da işte donanım konusunda şöyle şöyle şöyle sunucular kullanmanız gerekecek. Doğal olarak bu bir ekonomik yük getirecek. Bu yük işte gerçekten sizin beklediğiniz karlılığı nasıl değiştirecek pozitif negatif yönde bunları incelediğimiz yer. O yüzden de işin ucu ekonomik fizibiliteye bağlanıyor diyebiliriz.
+
+342
+01:28:13,939 --> 01:28:21,619
+Şimdi bu ekonomik fizibiliteyi değerlendirirken, dediğim gibi ekonomi, iktisat gibi bölümlerin çalışma alanlarından yararlanıyoruz.
+
+343
+01:28:22,239 --> 01:28:29,459
+Maliyet fayda analizi yaparken. Temel yaklaşım şu, yani ben bugün mesela bir birim yatırım yapıyorum.
+
+344
+01:28:30,059 --> 01:28:36,239
+Acaba bu yaptığım birim yatırım gelecekte kaç birim olacak? Bundan ne kadar fayda sağlayacağım?
+
+345
+01:28:36,659 --> 01:29:04,180
+Bunun için temelde 4 farklı değerlendirme yöntemi var. Birincisi bugünkü değer yöntemi. Bu gelecektekileri de işkonto edip bugüne uyarlamak. Hani şey gibi bugün dolar kaç para? 8 lira. Ama mesela 5 sene sonra düşünüyoruz ki dolar olacak 15 lira ya da 12 lira ya da şey davranalım dolar olacak 3 lira. O zaman hani 3 lirayı bugüne.
+
+346
+01:29:04,659 --> 01:29:09,579
+8 lira haline projekt ederek her şeyi, gelecekteki fiyatları bugüne çekiyoruz.
+
+347
+01:29:09,659 --> 01:29:15,199
+Ya da fiyatların artacağını düşünüyorsanız, gelecekteki 15 lirayı bugünkü 8 liraya projekt ediyorsunuz.
+
+348
+01:29:15,819 --> 01:29:19,520
+İç verim oranı, bunların da yine formüllerinden biraz bahsedeceğim.
+
+349
+01:29:19,520 --> 01:29:26,520
+Başa baş noktası, ben ne zaman...
+
+350
+01:29:26,771 --> 01:29:39,112
+Aktığım taşın ürküşe değdiği şeye, güne erişeceğim. Yani bugünden işte şey, 3 ay sonra mı? 5 sene sonra mı? Yoksa 3 gün sonra mı?
+
+351
+01:29:39,859 --> 01:29:56,159
+Ne zaman ben artık para kazanmaya başlayacağım? Bir de geri ödeme süresi, işte bu da bir yatırım yaptım, bu yatırımı ben ne zaman karşılayacağım? Yine bugünkü değer iç verim gibi onlar üçü birbirine oldukça benzeyen ekonomik fizibilite değerlendirme yöntemleri.
+
+352
+01:29:57,380 --> 01:30:00,000
+Dediğim gibi bugünkü değer yönteminde bütün...
+
+353
+01:30:00,000 --> 01:30:09,199
+Bütün nakit girişleri ve çıkışları bugünkü karşılıklarına indirgeniyor. Genellikle hep arttığı için indirgeniyor kelimesini kullanıyoruz.
+
+354
+01:30:11,460 --> 01:30:23,500
+Eğer ilerideki projeksiyonları bugüne çekerek baktığınızda nakit girişleri büyüktür, yatırım harcamaları çıkıyorsa o zaman biz bu projeyi yaparız. Neden? Kar var.
+
+355
+01:30:23,904 --> 01:30:37,743
+Eğer çıkmıyorsa biz daha çok harcıyoruz, daha az kazanıyoruz. O zaman ben bu projeyi yapmam, niye yapayım? Ya da başka türlü yapmalıyım, başka bir yoldan yapmalıyım şeklinde bir sonuç doğurabilir.
+
+356
+01:30:38,224 --> 01:30:46,404
+Bunun için işte iskonto oranı diye bir oran kullanılıyor. Çok detayına girmeyeceğim. Merak ediyorsanız inceleyin. Hani böyle sayısal olarak nasıl yapıldığıyla alakalı.
+
+357
+01:30:46,404 --> 01:30:51,904
+Web'te bir sürü örnek var, sayfalar var. Dediğim gibi ekonomi kitaplarında falan da bunlar var.
+
+358
+01:30:51,904 --> 01:31:19,904
+Farklı farklı yöntemleri de var çünkü bu iskonto oranının. Genellikle piyasadaki ağırlıklı sektörlerin uyguladığı faiz oranlarının ortalaması alınıyor. Bu şu şekilde Q yıl diyelim, iyi de iskonto oranı bugüne indirgemek istiyorsanız, Q sıfır yılı, Q N mesela beşinci yıl, tamam mı? Her yıl belirli bir oranda indirgeyerek, mesela her enflasyon gibi.
+
+359
+01:31:19,904 --> 01:31:44,684
+Her sene %10, %12, %15 ya da %3, %5 azaltarak her bir yıldaki nakit akış toplamını bugüne çekebiliyorsunuz. Bu şekilde gelecekteki paraları bugüne yansıtıp bugünkü değerleriyle karşılaştırıyorsunuz ki mantıklı olsun, şey gibi olmasın. Ben bugün 10 lira harcıyorum.
+
+360
+01:31:45,087 --> 01:32:11,427
+Ama işte iki sene sonra 20 lira kazanıyorum. Ooo ne oldu ben 10 lira kardayım gibi gözüküyor ya. Ama aslında iki sene sonraki 20 lira belki bugünün 8 lirası. Anlatabildim mi? Hani mesela dolar arttı falan. Aslında ben bunu indirge edeyim de bugüne 20 değil de 8 rakamını görüyorum. Yani ben neyi görmüş oluyorum? 10 lira harcadım 8 lira kazanacağım. Ya da kazanıyorum bugün yaksam.
+
+361
+01:32:11,859 --> 01:32:23,399
+O zaman ben niye yapayım bu işi? Zaten 2 lira zarar ediyorum diyerek bu yolun, yordamın düzgün olmadığını ortaya çıkartmış oluyor.
+
+362
+01:32:24,439 --> 01:32:31,679
+Başa baş noktasını daha şey, sadece hızlı söyledim, slide'da var. İki tane sonrasında gelecek merak etmeyin.
+
+363
+01:32:32,179 --> 01:32:38,419
+Mesela 1 liranın bugünkü değeri. Baktığımızda sabit bir iş kontrol oyuna baktığımızda %10 mesela azalttınız.
+
+364
+01:32:38,895 --> 01:32:49,075
+ne oluyor? İşte 99, 98, 97 kuruş, 96 kuruş gibi böyle yıllar geçtikçe azalıyor mesela.
+
+365
+01:32:49,075 --> 01:33:01,555
+%10 azaltırsanız, 100 kuruştan, 99 kuruşa, 98 kuruşa düşüyorsa böyle gitgide 9 yıl sonunda aslında 87 kuruş.
+
+366
+01:33:01,655 --> 01:33:04,755
+Yani bugünün 87 kuruşu oluyor o zamanki 1 lira.
+
+367
+01:33:06,003 --> 01:33:31,224
+Bugünkü alım gücüyle ancak 87 kuruşa sahip. Ya da işte 20-20 azaldığını düşündüğümüzde 84'e düşüyor. 30 azaldığını düşündüğümüzde 77'ye düşüyor. 40 azaldığının hani 4 kuruş değer kaybettiğini düşündüğümüzde yıllık %4, işte 70'e düşüyor. Yıllık %5 değer kaybettiğini düşündüğümüzde bakın 10 yıl, 9 yıl sonra 65 kuruş.
+
+368
+01:33:34,003 --> 01:33:57,463
+1 lira kazanmışım gibi 9 yıl sonra bir şey görebiliyorum ama bugünümüzdeki alım değeri aslında 65 kuruş. O yüzden ben burada 80 kuruş harcıyorsam ya da 80 lira diyelim 65 lira, 80 lira harcıyorsam yanlış bir şey yapıyorum. Ama ben bugün 30 lira harcayıp işte burada 65'leri görüyorsam o iyi kar var ben bu işi yapayım şeklinde bir çıkarım elde edebilirim.
+
+369
+01:33:58,420 --> 01:34:11,699
+İkinci yaklaşım iç verim oranı. İç verim oranı da paranın zaman değeri ve yaptığımız yatırımın ekonomik faydalı, ekonomik ömrünü dikkate alıyor.
+
+370
+01:34:11,699 --> 01:34:16,680
+Bu da şu demek, başka açıdan şöyle yaklaşıyor olaya.
+
+371
+01:34:18,163 --> 01:34:32,283
+Ben bir önceki tabloya geri gelecek olursak, 10 kuruş azalsa ne oluyor, 20 kuruş azalsa, 30 kuruş azalsa ne oluyor diye böyle farklı farklı analizler yaptık ya, 10 senede 65 kuruşa kadar düştüğünü aslında gördük, değişik oranlarla azaltırsak.
+
+372
+01:34:42,899 --> 01:35:05,279
+Hangi noktada eşitlerim? Yani oradaki iskonto oranı nedir? Bunu bulmamı sağlıyor. Diyelim ki bu iskonto oranı benim beklentimden az çıktı. O zaman mesela diyorum ki bu benim için şey değil, verimli bir yatırım değil. Ben daha yüksek çıktı pardon, daha düşük bekliyordum deyip vazgeçebilirim.
+
+373
+01:35:05,520 --> 01:35:15,200
+Ya da bu verim oranı benim için yeterlidir, bu iskonto oranını ben kendim için normal görüyorum deyip projeyi kabul edebilirim.
+
+374
+01:35:15,539 --> 01:35:29,659
+Yani dediğim gibi aslında şu tablodaki 10 kuruş mu, 20 kuruş mu, 30 kuruş mu azalır? Hangi azalmada nerede eşitlenir? Hangi iskonto oranı buna eşitler? Onu bulmaya sağlıyor.
+
+375
+01:35:29,659 --> 01:35:33,520
+Yine bunu da merak ediyorsanız formülasyonu.
+
+376
+01:35:33,520 --> 01:35:37,340
+Örnekler üzerinden internette görebilirsiniz.
+
+377
+01:35:38,300 --> 01:35:42,400
+Yatırımın ömür yılı işte T.
+
+378
+01:35:43,252 --> 01:35:48,952
+1'den toplam yıla kadar yani, işte 10 yıllık bir yatırım ömrü düşünüyorsunuz mesela.
+
+379
+01:35:49,312 --> 01:35:56,052
+X toplam maliyet, R bir yıldaki yani T yılındaki net getiri, D de iskonto oranı.
+
+380
+01:35:56,172 --> 01:36:00,812
+İşte buradaki D'yi bulmayı sağlayan formül bu şekilde ifade ediliyor.
+
+381
+01:36:01,612 --> 01:36:04,952
+İçler dışlar çarpımı yapar, siz oradaki şeyleri yaparsınız.
+
+382
+01:36:05,552 --> 01:36:06,292
+Dediğim gibi.
+
+383
+01:36:08,659 --> 01:36:31,359
+Matematik hesaplarını gerekirse yaparsınız. O teknik ekonomi detaylarına şu anda girmek istemiyorum. Bir diğer yöntem, üçüncü yöntem [öğrenci] senin başa baş noktası. Şimdi bu işletmeye geçtikten sonra, devreye aldıktan sonra aslında yine öyle bir nokta var ki toplam gelirler ve toplam giderler bir yerde eşitleniyor.
+
+384
+01:36:36,659 --> 01:36:57,340
+Bu konuları bulmaya çalışıyoruz. Yani biz harcamalarımızı, maliyetlerimizi ve kazançlarımızı aynı grafik üzerinde eğrilerle gösteriyoruz. İki eğrinin çakıştığı yer, aslında iki doğrunun desek daha doğrun, iki doğrunun çakıştığı yer bizim başa baş noktamızdır. Ve bu noktadan sonra kazancımız yükselmeye devam eder.
+
+385
+01:37:00,115 --> 01:37:04,056
+Düz, lineer çizgiler olabilir ama genellikle eğri de olabilirler.
+
+386
+01:37:04,056 --> 01:37:08,836
+Hani zaman içinde karlılığın nasıl değişeceğini, maliyetlerin nasıl değişeceğini modelleyerek.
+
+387
+01:37:10,452 --> 01:37:33,771
+Burada farklı eğriler de tabii ki uydurabilirsiniz. Şimdi mesela burada üretim hacmi, maliyet, hasılat. Burada da şeylerimiz var. Şurada kırmızıyla gördüğümüz düz bir çizgi var görüyorsunuz. Bu sabit maliyetler. Yani mesela ben mutlaka belli bir patent ya da lisans ücreti ödemem gerekiyor. İşte her ay 100 dolar atıyorum.
+
+388
+01:37:34,355 --> 01:37:52,135
+Belirli bir sunucu gideri, Amazon'a aylık 1000 dolar ödemem gerekiyor gibi, böyle sabit maliyetlerim varsa, bakım elemanlarım için onların maaşları aylık 50 bin lira ödemem gerekiyor gibi toplam, böyle sabit maliyetler burada yer alıyor.
+
+389
+01:37:54,996 --> 01:38:19,275
+Üretim maliyetlerimiz var. Hem geliştirme maliyetlerimiz hem başka geliştirmeleri ya da değişiklikleri yapma maliyetlerimiz. Bu da sıfırdan değil, sabitten başlayıp böyle ilerliyor. Dediğim gibi bu böyle lineer artabilir, azalarak artabilir, artarak çoğalabilir. O kötü bir şey tabii ki. Böyle çizeriz. Bir yana da toplam kazançlarımızı çizeriz. Sıfırdan başlar.
+
+390
+01:38:19,631 --> 01:38:24,871
+Böyle artar. Bunu zaman olarak da ya da üretim hacmi olarak da X80'ini alabilirsiniz.
+
+391
+01:38:25,711 --> 01:38:33,152
+Öyle bir nokta vardır ki işte bu hani giderler ve gelirler eğrileri bir noktada kesişir.
+
+392
+01:38:33,311 --> 01:38:37,612
+Bu nokta başa baş noktasıdır. Bu ne demek? Burada kafa kafaya geldik, tipe tip.
+
+393
+01:38:39,192 --> 01:38:43,451
+Harcadığımla kazandığım denkleşti. Bu noktadan sonra kar elde ediyorum.
+
+394
+01:38:43,451 --> 01:38:45,511
+Şurada gördüğünüz gibi kar artıyor falan.
+
+395
+01:38:45,908 --> 01:39:08,108
+Bu azalabilir tabii ki. Dediğim gibi eğerinin çeşidine göre bunlar değişebilir. Şimdi bu başa baş noktası acaba nerede? Ne kadar projenin başlangıcına sıfıra yakın ya da ne kadar uzak? Yani burada bir yıl mı bu, yoksa beş yıl mı, yoksa on yıl mı, yoksa üç ay mı? Bu başa baş noktası ne kadar sıfıra yakın olursa o kadar iyi tabii ki.
+
+396
+01:39:08,532 --> 01:39:32,851
+O kadar hızlı bir şekilde kar elde etmeye başlarız. Bu işte toplam alanın ne kadar olduğu ile, karlılığın ne kadar artacağını beklentinizle, sizin tabii projeden hani mali beklentileriniz nelerse buna göre değişecek karar kriterleri. Bu nokta bizim dediğim gibi şey, kafa kafaya gelme noktamız. O yüzden de buna kar zararın kafa kafaya gelme noktası diyelim.
+
+397
+01:39:34,003 --> 01:39:59,603
+Sol cepten veriyoruz, sağ cebe koyuyoruz, öyle düşünün. Tam böyle eşit oluyorlar o anı. Biz başa baş noktası adını veriyoruz. Bu sizin için tatminkar bir uzaklıktaysa o zaman dediğim gibi projeyi kabul edersiniz. Yok tatminkar olmaktan uzak bir yerdeyse, ya ben kardeşim ne yapayım 8 sene sonra kâra geçsem ne olur diyorsanız o zaman reddedersiniz. Bu şekilde çıktı, üretebilirsiniz.
+
+398
+01:40:00,819 --> 01:40:07,659
+Bir de geri ödeme süresi var. Bu da bir yatırım yapıyorsunuz ve yıllık yararlarınız var.
+
+399
+01:40:08,064 --> 01:40:16,384
+Yıllara bölüyorsunuz ve aslında ben ne kadar sürede yaptığım yatırımı geri kazanırım buna bakıyorsunuz.
+
+400
+01:40:16,384 --> 01:40:23,524
+Hani şunun başa baş noktasını yıllara dağıtılmış hali, pastanın böyle dilim dilim yapılmış hali gibi düşünün.
+
+401
+01:40:24,163 --> 01:40:30,884
+Bu yaptığınız yatırımlar kaç yılda kendini amorti eder? Bu sizin için yeterli mi, değil mi?
+
+402
+01:40:31,404 --> 01:40:34,384
+Buna bakarak, bunları değerlendirerek...
+
+403
+01:40:35,988 --> 01:41:01,128
+Bir değerlendirme yapabilirsiniz. Yine bunu da istiyorsanız internette bir araştırın. Çok fazla detayına girmek istemiyorum. Biz genellikle başa baş noktasını daha çok tercih ediyoruz ama hepsini kullanabilirsiniz. Hiç önemli değil dediğim gibi. Herhangi birini seçip size uygun olan şekliyle kullanabilirsiniz. Dediğim gibi bazen süre önemlidir. Çabuk kar elde etmek isteyebilirsiniz. Bazen çok kar elde etmek isteyebilirsiniz.
+
+404
+01:41:03,988 --> 01:41:13,488
+Yaymayı ve genelde daha çok kar elde etmeyi düşünebilirsiniz gibi farklı farklı değerlendirme, 4 farklı değerlendirme yöntemi genellikle kullanılır.
+
+405
+01:41:13,488 --> 01:41:17,588
+Şimdi bu saat 14.41 oldu.
+
+406
+01:41:18,248 --> 01:41:18,868
+Şöyle.
+
+407
+01:41:19,539 --> 01:41:44,720
+Şimdi ders konularını bırakıp biraz projeden 10 dakika, son 10 dakika bahsetmek istiyorum. Sonrasında ne kaldı? İşte biz bu fizibiliteleri yaptık da hani alternatifleri falan söyleyin dedik. Bunlar nasıl karşılaştırılacak? Nasıl değerlendirilecek? Nasıl bir sonuca vardırılacak? Yani hangisini nasıl seçmeliyiz? Buna bakacağız. Tabii bir de bundan önce zaman fizibilitesi nedir? Bu detaylara bakacağız.
+
+408
+01:41:45,184 --> 01:42:00,783
+Şimdi onları dediğim gibi haftaya bırakıyoruz ve buradan hemen dönem projisi tanımımıza geçiyoruz. Bunu dersin duvarında sizlerle paylaştım ama burada da bir sözlü olarak konuşalım istedim.
+
+409
+01:42:13,184 --> 01:42:25,003
+Bana bildirmeniz gerekiyor. Yanlış olmasın bir grup bildirdi. İki grup mu bildirdi? Ona bakacağım maillere. Olabilir. Hatta şöyle hızlıca hemen bir söyleyeyim.
+
+410
+01:42:29,003 --> 01:42:36,003
+[öğrenci] yollamış. Proje konusunu söylemişler.
+
+411
+01:42:36,115 --> 01:42:46,836
+Evet, modülleri yine isimlerini vermişler. Onları biraz daha detaylandırabilirim ben tabii ki. Evet, bir dakika, chat ekranını kaybettik.
+
+412
+01:42:49,716 --> 01:42:58,916
+Tamam, bir dağıtabilirsiniz. İsterseniz genişletin, genişletmezsiniz de. Zaten dediğim gibi ben biraz daha genişletebilirim.
+
+413
+01:42:59,916 --> 01:43:02,515
+Şunu, pardon, yanlış yerdeyiz.
+
+414
+01:43:02,868 --> 01:43:28,508
+Evet, tamam. PDF görünüyor değil mi şu anda? Görünüyor herhalde. Kim işin çerçeveli, okey, tamam. Şimdi siz kendinizin seçeceğiniz bir bilgi sistemi tasarlamanızı istiyoruz. Yani aslında bu süreci, bilgi sistemi geliştirme sürecini yaşamanızı, bir ekip olarak yaşamanızı istiyoruz. Bunun için de beşerli gruplar oluşturmanızı ve beraber çalışmanızı bekliyoruz.
+
+415
+01:43:28,884 --> 01:43:48,743
+İşte bugün gün sonuna kadar bana bildirirseniz iyi olur. Bildirmeyenlere ne olacak? Rastgele olarak atama yapılacak tabii ki. Bunları yarın ve öbür gün uygun zamanlarında değerlendireceğim ve atanan konular ve modüllerle birlikte Cuma günü inşallah bir sıkıntı olmazsa sizlere duyuracağım.
+
+416
+01:43:49,087 --> 01:43:52,027
+Hocam size mail mi atalım grupları ve modülleri?
+
+417
+01:43:52,307 --> 01:43:52,608
+Evet.
+
+418
+01:43:53,747 --> 01:43:56,827
+Mail adresinizi alabilir miyim chatten?
+
+419
+01:43:58,007 --> 01:44:00,228
+İlk ders vermiştim hatırlıyorsanız.
+
+420
+01:44:01,188 --> 01:44:01,867
+Orada...
+
+421
+01:44:01,867 --> 01:44:02,787
+Geçerim hocam.
+
+422
+01:44:03,387 --> 01:44:03,707
+Nasıl?
+
+423
+01:44:04,987 --> 01:44:07,067
+Not etmemişim sanırım, unuttum yani.
+
+424
+01:44:07,067 --> 01:44:12,567
+Nefret, dersin videosundan bir daha izleyebilirsin ama yazdım şuraya.
+
+425
+01:44:14,036 --> 01:44:16,036
+Evet, buraya mail atabilirsiniz.
+
+426
+01:44:18,315 --> 01:44:30,235
+Burada amacımız şu, bir bilgi sistemi geliştirme senaryosunda diyelim ya da bir yaşam parçasında, zamanında.
+
+427
+01:44:30,671 --> 01:44:53,692
+Olası rolleri paylaşmak, müşteri, müdür, proje yöneticisi, sistem analisti, tasarım, uygulama geliştirici gibi rolleri paylaşıp bunları bir şekilde işletmek, bu rolleri yürütmek. Burada rolleri bazen dönüşümlü olarak da yapabilirsiniz. Ya da ben analist olacağım bunları ben yapacağım diye birisi bunu üstlenebilir. Buna ekip karar verecek.
+
+428
+01:44:54,064 --> 01:45:02,684
+gerekli dökümanları ve grafikleri ya da diagramları diyelim hazırlamak ve çıktıları üretmek.
+
+429
+01:45:03,164 --> 01:45:05,804
+Sonunda da müşteriye bir sunum yapmak.
+
+430
+01:45:05,804 --> 01:45:09,544
+Yani biz böyle bir analiz yaptık, böyle bir tasarım, böyle bir gerçekleme.
+
+431
+01:45:09,944 --> 01:45:11,404
+Sonucunda da böyle bir ürün çıktı.
+
+432
+01:45:11,744 --> 01:45:15,604
+Bakalım isteklerinizi nasıl karşılıyor şeklinde bir sunumla da bunu müşteriye sunmak.
+
+433
+01:45:16,004 --> 01:45:22,064
+Böyle bir süreci hep birlikte her grubun değişik bir deneyimle yaşaması.
+
+434
+01:45:22,064 --> 01:45:34,684
+Senaryo şöyle genellikle, gerçek müşteri bulmak biraz daha zor oluyor ama öğrencilerden bir tanesi, ekibin birisi, müşterinin rolünü de üstlensin diyebiliriz.
+
+435
+01:45:35,055 --> 01:45:56,655
+Yoksa hani şey gibi müşteri ben bunu istiyorum dedi bitti. Ondan sonra da dönemin sonunda istediğim çok güzel olmuş elinize sağlık arkadaşlar deyip devam etmesin. Hani sürecin içinde bir şekilde müşteride dahil olsun ya da iki rolü olsun tavsiye ederim. İşte grubun geri kalanları da diğer rolleri paylaşır.
+
+436
+01:45:57,363 --> 01:46:13,363
+Ve gerekli diyalogları yapıp önümüzdeki haftalarda bilgi toplama yöntemleriyle, iş analiziyle ilgili detaylarla başlayacağız. Sistemin tanıma, spesifikasyonu ne olması lazım? Bunlar yapılacak, anlaşma yapılacak. Sonrasında da...
+
+437
+01:46:13,716 --> 01:46:29,716
+Sistem geliştirmesinin aşamaları belirlenecek ve bunlar analiz ve tasarımlar belgelenecek. Neler olur? Mesela toplantı raporlarınızın olması beklenir. Proje ekip yapınızın ve organizasyon şemanızın nasıl olduğunu...
+
+438
+01:46:30,304 --> 01:46:55,983
+Çıktı da, yani sunacağınız sonuç raporunda olması beklenir. Yine fizibilite raporunuzun olması, fizibilite raporunuzun içinde özellikle mesela iş zaman planınızın bir Gant diagramı ile gösterilmesi detaylarıyla beklenir. Sonrasında analiz ve tasarımla alakalı mesela veri akış diyagramlarınızın, yapı diyagramlarınızın, ER diyagramınızın olması beklenir. Bunların dokümentasyonların da tabii ki olması beklenir.
+
+439
+01:46:58,003 --> 01:47:20,983
+Bunları belgeledikten sonra doğal olarak bir de yazılımı geliştirmenizi bekliyoruz. Yani gerçekten çalışan bir ürün halinde getirmenizi bekliyoruz. O yüzden hiç önemli değil ne oldu? Hızlı yazılım geliştirme araçları dahi hepsini kullanabilirsiniz. Bunu kullanarak bir sistemi gerçeklemeniz, tasarladığınız, analizini yaptığınız ve tasarladığınız sistemi gerçekleştirmenizi bekliyoruz.
+
+440
+01:47:26,003 --> 01:47:32,863
+Moderna ne kadar uygun bir geliştirme oldu? Bunları görmek istiyoruz. Bunları değerlendirmenizi istiyoruz. Tamam.
+
+441
+01:47:33,555 --> 01:47:35,595
+Bunları değerlendireceksiniz.
+
+442
+01:47:36,795 --> 01:47:39,355
+Raporumuz tabii ki bir sonuç raporumuz olacak.
+
+443
+01:47:39,576 --> 01:47:43,175
+Bunun teslim tarihi 1 Haziran 13. hafta.
+
+444
+01:47:43,655 --> 01:47:47,615
+13. ve 14. haftalarda da aslında proje sunumlarımızı ekip olarak yapacağız.
+
+445
+01:47:47,615 --> 01:47:55,055
+Bu raporda dediğim gibi genel olarak, sadece bunlar değil ama genel çerçeve olması açısından şöyle bir outline verebiliriz.
+
+446
+01:47:55,355 --> 01:47:56,055
+Taslak çıktı.
+
+447
+01:47:56,755 --> 01:48:01,555
+Bir kere ön inceleme, fizibilite analizi başlığı altında, toplantı, raporları, ekip yapısı, organizasyon...
+
+448
+01:48:01,555 --> 01:48:10,275
+Fizibilite'de yine rapor, tablo, karşılaştırma matrisi falan olur ama mutlaka Gant diagramı detaylarıyla birlikte beklenir.
+
+449
+01:48:10,895 --> 01:48:15,996
+Sistem analizinde veri akış diyagramlarınızın, tasarımda yapı ve ER diyagramlarınızın olması beklenir.
+
+450
+01:48:16,835 --> 01:48:26,955
+Gerçekleştirme aşamasında fiziksel bir veri tabanı, illa veri tabanı olmak zorunda değil, XML de olabilir, dosya tabanlı da olabilir, hiç önemli değil ama bunun modelinin bir şekilde oluşturulması lazım.
+
+451
+01:48:27,595 --> 01:48:29,555
+Ve gerçekleştirme yapılacak kodlaması.
+
+452
+01:48:29,555 --> 01:48:52,455
+Testlerin yapılması, temel testlerin yapılması bahsedeceğiz ve müşteri değerlendirmesiyle de bu raporun sonlanması beklenir. Eğer nesneye yönelik bir analiz tasarımı yapacaksanız da o zaman ikinci ve üçüncü alanları şuradakilerle doğal olarak değiştirmeniz gerekir. Bunları da yine ilerleyen haftalarda birlikte zaten bakacağız.
+
+453
+01:48:53,235 --> 01:49:01,395
+Yine burada hepsinin üzerinden tek tek geçmeyeyim ama önceki dönemlerden böyle örnek projeler ve modülleri şuraya koydum.
+
+454
+01:49:01,796 --> 01:49:06,735
+Şey olsun diye, hani bir fikir versin diye neler yapılabilir, neler yapılmış.
+
+455
+01:49:07,256 --> 01:49:18,336
+Aynılarını vermeyin, vermemeye gayret edin. Mutlaka bunlara benzer şeyler, bu minimalde projeler yapıldı diye fikir oluşturması açısından sizlerle burada paylaştım.
+
+456
+01:49:18,336 --> 01:49:21,095
+Bayağı var gördüğünüz gibi 15-20 tane falan.
+
+457
+01:49:21,235 --> 01:49:34,416
+proje fikri var. Son dönemdekiler yok burada. Pardon, son senedekiler yok. Ondan önceki iki senenin projeleri burada mevcut. Son senekileri özellikle koymuyorum.
+
+458
+01:49:35,876 --> 01:49:46,395
+Seneye ne olacak? Bundan bir tanesi gidip geçen seneki buraya eklenecek falan gibi bir lag bırakıp, bir boşluk bırakıp buradan örnekleri paylaşmaya sizinle devam ediyorum.
+
+459
+01:49:46,555 --> 01:49:48,315
+Dersin duvarında bu doküman var.
+
+460
+01:49:49,235 --> 01:50:02,716
+İnceleyin ve bugünün sonuna kadar dediğim gibi bana şey yapın. Dört kişi olarak bildirirseniz evet bir kişiyi rastgele atayabiliriz. Ama yani mümkünse beşer kişi olmaya gayret edin derim.
+
+461
+01:50:04,855 --> 01:50:11,315
+Soru var mı başka? Dersle alakalı, bugünkü konularla alakalı ya da projeyle alakalı.
+
+462
+01:50:16,083 --> 01:50:16,804
+Bekleyim.
+
+463
+01:50:27,444 --> 01:50:36,444
+Yok olarak görüyorum. Güzel. Peki, o zaman bu haftalık dersimizin sonuna geldik. Dediğim gibi haftaya...
+
+464
+01:50:37,524 --> 01:51:03,984
+Zaman fizibilitesine odaklanacağız, örnek yapacağız, örnek bir çalışma yapacağız ve bununla birlikte fizibilite çalışmaları nasıl sonuçlandırılır, nasıl karşılaştırılır, nasıl değerlendirilir, bunun tablo olaması, matrisle karşılaştırılması nasıl yapılır, bunlara bakıp fizibilite adımını tamamen bitirmiş olacağız. Ondan sonraki haftada analiz modeline geçiyoruz.
+
+465
+01:51:05,747 --> 01:51:15,347
+Haftaya görüşmek üzere. Proje öncelerinizi dediğim gibi gruplarla ve konularla, modüllerle birlikte bekliyorum. Kolay gelsin, başarılar, iyi çalışmalar.

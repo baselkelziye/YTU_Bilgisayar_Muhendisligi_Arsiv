@@ -1,0 +1,2439 @@
+1
+00:00:17,460 --> 00:00:26,560
+Merhaba arkadaşlar, hoş geldiniz hepiniz. Arkadaşlarınız gelinceye kadar 1-2 dakika bekleyelim. Bu arada ben de size dosya yükleyeyim.
+
+2
+00:01:34,195 --> 00:01:34,756
+pardon
+
+3
+00:01:38,388 --> 00:01:52,707
+Dün transsandant fonksiyonların bazılarının size türevlerini vermiştim. Ters trigonometrik fonksiyonları tanımlayıp bunların türevlerini vermiştim. Öyle hatırlıyorum.
+
+4
+00:01:57,228 --> 00:02:00,508
+Bugün de kaldığımız yerden devam edelim.
+
+5
+00:02:08,915 --> 00:02:13,316
+Logaritma ve üstel fonksiyonlarla bugün devam edeceğiz.
+
+6
+00:02:13,975 --> 00:02:18,995
+Öncelikle sayımız ne kadar oldu? 53 oldu.
+
+7
+00:02:19,735 --> 00:02:22,256
+Bu aralar biraz sayımızda düşüş var.
+
+8
+00:02:23,175 --> 00:02:24,256
+Neden bilemiyorum.
+
+9
+00:02:25,955 --> 00:02:29,675
+Önce size doğal logaritma fonksiyonunu tanımlayacağım.
+
+10
+00:02:34,388 --> 00:02:40,427
+üstel fonksiyon dediğimiz üstel fonksiyon. Sonra da bunların genel hallerine bakacağız.
+
+11
+00:02:56,627 --> 00:03:15,327
+0'dan büyük, yani pozitif bir sayı olmak üzere doğal logaritma fonksiyonu dediğimiz ve lnx ile gösterdiğimiz bu fonksiyon bir integral olarak aslında tanımlanıyor ve şuna eşittir.
+
+12
+00:03:23,187 --> 00:03:25,367
+dt şeklinde tanımlanıyor.
+
+13
+00:03:27,487 --> 00:03:30,027
+x büyük sıfır zaten dedik.
+
+14
+00:03:32,127 --> 00:03:34,827
+Doğal logaritma fonksiyonu integralde tanımlanıyor.
+
+15
+00:03:34,967 --> 00:03:36,987
+Aslında şudur.
+
+16
+00:03:38,587 --> 00:03:41,527
+1 bölü t, şöyle bir fonksiyon.
+
+17
+00:03:43,907 --> 00:03:47,048
+Şurası 1 ise.
+
+18
+00:03:47,048 --> 00:03:48,927
+0, 1 aralığında.
+
+19
+00:03:50,003 --> 00:03:58,024
+1'den x'e kadar artık x ne olursa olsun şu eğri altındaki alanı belirtir bu bize.
+
+20
+00:03:58,243 --> 00:04:07,543
+1'den x'e kadar x diyelim şuradaki bir sayı ise bu eğrinin altındaki alanı verir aslında bu bize.
+
+21
+00:04:07,543 --> 00:04:09,103
+1 bölüm.
+
+22
+00:04:09,716 --> 00:04:18,816
+t şeklindeki bir fonksiyonun integraline doğal logaritma fonksiyonu ya da lnx fonksiyonu diyoruz.
+
+23
+00:04:20,956 --> 00:04:27,755
+Bunun tabanı tabii ki e'dir. Logaritma fonksiyonlarında bir taban olur biliyorsunuz.
+
+24
+00:04:28,156 --> 00:04:32,556
+e tabanını genellikle yazmayız. Tabanı e sayısıdır.
+
+25
+00:04:33,196 --> 00:04:35,336
+Bunu şöyle diyelim.
+
+26
+00:04:37,172 --> 00:04:43,272
+Doğal logaritmanın tanım kümesinde elen e eşit 1 olan sayı.
+
+27
+00:04:43,972 --> 00:04:46,752
+Eşitliğini sağlayan sayıya e sayısı diyoruz.
+
+28
+00:04:46,832 --> 00:04:48,572
+Doğal taban ya da buna diyoruz.
+
+29
+00:04:49,072 --> 00:04:56,152
+E sayısının da değeri yaklaşık olarak 2.7, 1, 8.
+
+30
+00:04:56,312 --> 00:04:58,951
+Aslında bu daha böyle devamı da vardı.
+
+31
+00:04:59,092 --> 00:05:02,232
+Hani yaklaşık olarak böyle bir sayıdır.
+
+32
+00:05:02,572 --> 00:05:04,152
+Buna eşit bir sayıdır.
+
+33
+00:05:04,819 --> 00:05:07,139
+doğal taban dediğimiz E sayısı.
+
+34
+00:05:14,259 --> 00:05:24,720
+Burada doğal logaritma fonksiyonunun cebirsel olarak özelliklerini vermeden önce size türevini de göstereyim.
+
+35
+00:05:33,812 --> 00:05:35,951
+Önce şunu söylemek istiyorum.
+
+36
+00:05:37,572 --> 00:05:43,091
+Logaritma fonksiyonu, logaritma biliyorsunuz ki sadece pozitif sayılar için tanımlıdır.
+
+37
+00:05:43,091 --> 00:05:47,512
+Zaten burada şu tanımı yaparken x büyük sıfır dedik.
+
+38
+00:05:47,792 --> 00:05:52,532
+Dolayısıyla logaritma fonksiyonunun tanım kümesi ne olacaktır?
+
+39
+00:05:57,300 --> 00:06:11,280
+0 sonsuz aralığı olacaktır değil mi? Pozitif rel sayılar olacak bunun tanım kümesinde. Görüntü kümesi ise tüm rel sayılar olacak.
+
+40
+00:06:14,228 --> 00:06:20,668
+0 ile 1 arasındaki sayıların logaritması negatif değer aldığı için
+
+41
+00:06:20,668 --> 00:06:25,588
+görüntü kümesi eksi sonsuz artı sonsuz aralı olacaktır.
+
+42
+00:06:28,211 --> 00:06:31,891
+Bir şey daha söylemek istiyorum burada. Bir şey daha açıklayalım.
+
+43
+00:06:32,271 --> 00:06:37,651
+Şurada integrali yazarken şuraya t yazdık. Hani x değil de t yazdık.
+
+44
+00:06:38,012 --> 00:06:44,391
+1 bölü t dt integrali aldık. Aslında 1 bölü x fonksiyonudur bu.
+
+45
+00:06:44,391 --> 00:06:51,991
+Ancak bunu belirli integral olarak yazıp şu sınıra da x değerini yazdığımız için
+
+46
+00:06:53,747 --> 00:06:59,668
+Bu integralin sonucu zaten sınırı yerine koyduğumuzda ln x fonksiyonu oluyor.
+
+47
+00:07:00,588 --> 00:07:10,088
+Hem sınırda hem de logaritmanın içerisinde, pardon logaritma diyorum, integralin içerisinde aynı değişkenin olmaması için
+
+48
+00:07:10,088 --> 00:07:17,708
+içerideki fonksiyonun değişkenini x değil de t olarak değiştirmişiz burada.
+
+49
+00:07:17,708 --> 00:07:18,568
+Tamam mı?
+
+50
+00:07:22,100 --> 00:07:25,960
+tanım kümesi dedik, görüntü kümesi dedik. Peki türevi nedir?
+
+51
+00:07:30,163 --> 00:07:35,184
+Elen x fonksiyonunun türevi de ne olacaktı? Şimdi tanımına bakın.
+
+52
+00:07:36,103 --> 00:07:39,923
+Fonksiyonun kendisi zaten integral olarak tanımlanmış.
+
+53
+00:07:40,543 --> 00:07:47,103
+Integral ile türev birbirinin tersi olan fonksiyonlardır.
+
+54
+00:07:47,223 --> 00:07:50,283
+Yani integral dediğim şey ters türevdir.
+
+55
+00:07:51,283 --> 00:07:55,103
+Dolayısıyla şunun türevini aldığımız zaman
+
+56
+00:08:03,795 --> 00:08:26,115
+Yani, gerçi henüz integral'i bilmiyorsunuz. Integral de verildikten sonra bu transandan fonksiyonlar normalde tanımlanıyor ama biz de araya sıkıştırmışlar. Şimdi integral'i bilmeden size integral ile tanımlanmış bir fonksiyonu tanıtmaya çalışıyorum ve zorlanıyorum burada.
+
+57
+00:08:28,692 --> 00:08:31,712
+Bunun değeri de 1 bölü x eşit olacak.
+
+58
+00:08:31,712 --> 00:08:41,711
+Şöyle görebilirsiniz, türev ve integral birbirinin ters fonksiyonlardır.
+
+59
+00:08:42,692 --> 00:08:47,312
+Dolayısıyla ters fonksiyonla fonksiyonun birleşkesi her zaman ne olur?
+
+60
+00:08:47,852 --> 00:08:49,612
+Buradaki değeri verir.
+
+61
+00:08:50,196 --> 00:09:08,196
+Yani özdeş fonksiyonu olacağı için bu 1 bölü t olarak yazmıyorum da bunu 1 bölü x olarak yazıyorum. Neden? Çünkü bunun sınırındaki şu x bunu x yapacak. Çok güzel bir açıklama olmadı. Bunu nasıl söyleyeyim?
+
+62
+00:09:10,772 --> 00:09:16,711
+integral hesabın temel teoreminden dolayı aslında şurası 1 bölü x oluyor.
+
+63
+00:09:17,292 --> 00:09:22,572
+Sınırda x olduğu için şurası 1 bölü t değil de 1 bölü x yazılıyor.
+
+64
+00:09:23,132 --> 00:09:27,971
+Bunu da yine integrali gördükten sonra anlayabileceksiniz.
+
+65
+00:09:27,971 --> 00:09:32,731
+Şimdi sadece o zaman şununla kafanızı karıştırmayayım ben.
+
+66
+00:09:33,139 --> 00:09:43,139
+sadece şunu söyleyeyim. Bunu ezberleyin o zaman. Yapacak bir şeyim yok şimdi. 1 bölü x'e eşit oluyor. Çünkü şunun...
+
+67
+00:09:49,268 --> 00:09:51,368
+şunun türevini aldığımda
+
+68
+00:09:56,788 --> 00:10:10,528
+Bunun türevini aldığında bunun türevinin 1 bölü x'e eşit olduğunu o integral hesabın temel teoremini verdikten sonra anlayabileceksiniz. Şu anda onu bilmiyorsunuz. O yüzden bunu şimdilik siliyorum.
+
+69
+00:10:13,248 --> 00:10:15,408
+Sadece şunu o zaman bilin.
+
+70
+00:10:17,812 --> 00:10:28,471
+ln x fonksiyonunun türevi 1 bölü x'e eşittir. Eğer şurada birleşke bir fonksiyon olursa, yani
+
+71
+00:10:33,172 --> 00:10:59,592
+u, x'in türevlenebilir bir fonksiyonu olmak üzere, u, x'in bir fonksiyonu olduğunda şöyle diyelim, elen u olursa, elen u'nun x'e göre türevini şöyle yazacağız, 1 bölü u çarpı du bölü dx olarak, bileşke fonksiyonlardaki o zincir kuralını kullanarak böyle yazıyoruz.
+
+72
+00:11:00,755 --> 00:11:03,556
+Yani şu oluyor.
+
+73
+00:11:06,895 --> 00:11:15,475
+Elen, x kare eksi, 3x'i, nesini alalım? Türevini alalım.
+
+74
+00:11:18,611 --> 00:11:35,831
+Bunun türevi neye eşit olacak? L'an x olsaydı eğer 1 bölü x yazacaktım. Oysa bu L'an fonksiyonuyla x kare eksi 3x'in bileşkesi olan bir fonksiyon. Bileşke fonksiyonu olduğu için bunun türevini nasıl alacağım? Zincir kuralıyla.
+
+75
+00:11:35,831 --> 00:11:44,831
+Şu parantez için bir u fonksiyonu gibi düşünürsem eğer L'an u'nun türevi ne olacak? 1 bölü u olacak.
+
+76
+00:11:46,451 --> 00:11:49,812
+u'da x kare eksi 3x olduğu için
+
+77
+00:11:50,995 --> 00:12:15,915
+1 bölü x kare eksi 3x çarpı parantez içinin türevi yani u'nun türevi ki o da nedir? 2x eksi 3'tür. Dolayısıyla bunun türevi ne oldu? 2x eksi 3 bölü x kare eksi 3x. Ya da şunu biz daha genel olarak nasıl biliyoruz? U'nun türevi bölü u olarak biliyoruz değil mi?
+
+78
+00:12:16,596 --> 00:12:19,556
+Bunun örneği de böyle yazabilirsiniz.
+
+79
+00:12:21,196 --> 00:12:27,475
+Doğal logaritma fonksiyonunun türevini bu şekilde alıyoruz.
+
+80
+00:12:27,615 --> 00:12:33,755
+Eğer bileşke fonksiyonu olursa da u'nun türevi bölü u şeklinde türevini yazıyoruz.
+
+81
+00:12:42,932 --> 00:12:46,871
+pardon, cebirsel özelliklerine bir göz atalım.
+
+82
+00:12:48,991 --> 00:12:54,412
+b ve x pozitif herhangi sayılar olsun.
+
+83
+00:12:55,991 --> 00:13:00,892
+Doğal logaritmanın şu özellikleri vardır.
+
+84
+00:13:02,892 --> 00:13:04,951
+Çarpım kuralı.
+
+85
+00:13:09,812 --> 00:13:11,572
+logaritma b
+
+86
+00:13:11,572 --> 00:13:16,812
+çarpı x
+
+87
+00:13:16,812 --> 00:13:21,532
+Burada parantez yazmasanız da olur.
+
+88
+00:13:26,259 --> 00:13:31,820
+lnb artı lnx olarak ayrılabiliyor.
+
+89
+00:13:32,300 --> 00:13:36,920
+Yani tabanları aynı olduğu için burada doğal logaritma.
+
+90
+00:13:37,720 --> 00:13:45,180
+lnb artı lnx şeklindeki iki logaritma fonksiyonu topladığınızda ne yapıyormuşsunuz?
+
+91
+00:13:45,240 --> 00:13:48,240
+Bu b ile x'i çarpıyormuşsunuz.
+
+92
+00:13:48,240 --> 00:13:50,080
+Bu çarpım kuralı.
+
+93
+00:13:50,600 --> 00:13:52,500
+İkincisi de bölüm kuralı.
+
+94
+00:13:56,436 --> 00:13:57,916
+Bunu da şöyle yazalım.
+
+95
+00:13:58,056 --> 00:13:59,756
+ln b bölü x.
+
+96
+00:13:59,856 --> 00:14:04,936
+Burada tabii ki biz bu iki değişkeni de sıfırdan farklı kabul ettik.
+
+97
+00:14:06,496 --> 00:14:07,736
+Pozitif kabul ettik.
+
+98
+00:14:07,736 --> 00:14:10,836
+b bölü x de şöyle yazıyoruz.
+
+99
+00:14:11,596 --> 00:14:15,696
+ln b eksi ln x olarak yazıyoruz.
+
+100
+00:14:22,707 --> 00:14:24,387
+çarpmaya göre ters
+
+101
+00:14:29,139 --> 00:14:30,979
+Elan 1 bölü x.
+
+102
+00:14:33,839 --> 00:14:35,619
+x üzeri eksi 1.
+
+103
+00:14:38,239 --> 00:14:42,359
+Ya da böyle x üzeri eksi 1 yazmayayım. Henüz şeyi yazmadım çünkü.
+
+104
+00:14:42,979 --> 00:14:45,659
+Eksi Elan x demektir bu da.
+
+105
+00:14:53,427 --> 00:14:55,988
+çarpma, bölme, çarpmaya göre ters.
+
+106
+00:14:56,768 --> 00:14:57,868
+Bir de kuvvet.
+
+107
+00:14:59,388 --> 00:15:02,848
+Aslında önce kuvvet kuralı verilseydi daha iyi olacaktı.
+
+108
+00:15:10,004 --> 00:15:18,504
+x üzeri R'nin logaritması da, doğal logaritması da, R çarpı ln x olarak yazılıyor.
+
+109
+00:15:18,903 --> 00:15:27,124
+Şunlar, kısacası doğal logaritmanın kuralları dediğimiz şeyler.
+
+110
+00:15:29,303 --> 00:15:32,803
+Bir tane kısa bir örnek sıkıştıralım.
+
+111
+00:15:34,283 --> 00:15:36,124
+Şurada hangisini yazalım?
+
+112
+00:15:38,868 --> 00:15:41,148
+Başka bir şey yazayım ben buraya.
+
+113
+00:15:59,091 --> 00:16:05,072
+Başka bir şey yazmayayım. 4 sinüs x var, bir de ne var? x artı 1, 2x.
+
+114
+00:16:08,916 --> 00:16:27,316
+x kare artı 1 eksi 3. Neye eşit olacaktır? Şu bölüm kuralı gereği bunu elen x artı 1 eksi elen 2x eksi 3 olarak yazabiliriz.
+
+115
+00:16:29,456 --> 00:16:33,076
+En çok karışıklık şurada yaşanıyor arkadaşlar.
+
+116
+00:16:33,076 --> 00:16:34,116
+Şimdi
+
+117
+00:16:36,980 --> 00:16:58,039
+x kare artı elen x, elen b çarpı x oluyor. Yani şöyle tersinden düşündüm. Genelde siz parantez içinde şöyle bir şey görünce mesela 3x artı x kare. Bunu ayıramıyorsunuz.
+
+118
+00:16:58,207 --> 00:17:01,927
+Siz böyle bir şey gördüğünüzde bazen şöyle yazıyorsunuz.
+
+119
+00:17:02,168 --> 00:17:05,827
+L'en 3x çarpı x kare gibi.
+
+120
+00:17:06,708 --> 00:17:09,627
+Böyle bir şey yok. Bunu parçalayamıyorsunuz. Tamam mı?
+
+121
+00:17:10,987 --> 00:17:13,768
+Toplam böyle olunca bu bambaşka bir şey.
+
+122
+00:17:15,059 --> 00:17:31,279
+Ancak böyle bir toplam varsa, yani şöyle ise L'en 3x artı L'en x kare varsa siz bunu L'en 3x çarpı x kare olarak yazabilirsiniz.
+
+123
+00:17:31,279 --> 00:17:35,980
+Yani L'en 3x küp olarak yazabilirsiniz.
+
+124
+00:17:42,675 --> 00:17:44,996
+Bu da ayrı bir örneğimiz olsun.
+
+125
+00:17:45,695 --> 00:17:52,895
+Sadece şey, bazen şu özellik biraz karıştırılabiliyor.
+
+126
+00:17:53,655 --> 00:17:56,715
+Uyarmak için onu gösterdim.
+
+127
+00:18:05,556 --> 00:18:07,056
+patatayı sileyim.
+
+128
+00:18:34,003 --> 00:18:41,304
+üstel fonksiyonlar diyelim ama bu aslında kitapta doğal üstel fonksiyon olarak geçiyor.
+
+129
+00:18:41,443 --> 00:18:46,503
+e üzeri x şeklindeki fonksiyon. Ben şundan emin olmak için bir daha bakayım da.
+
+130
+00:19:16,756 --> 00:19:22,816
+Evet, doğal üstel fonksiyon. Ama başlık olarak üstel fonksiyon olarak söylüyoruz.
+
+131
+00:19:26,196 --> 00:19:27,876
+Şöyle diyelim.
+
+132
+00:19:41,395 --> 00:20:02,955
+Biraz önce lnx fonksiyonunu aldık. lnx fonksiyonu nereden nereye tanımlıydı? Şöyle diyelim, f sıfır sonsuz aralığından şuraya tanımlı f x eşit lnx olarak tanımladık.
+
+133
+00:20:04,435 --> 00:20:11,615
+doğal logaritma fonksiyonunu demin sıfır sonsuz aralığından rel sayılara tanımlamıştık.
+
+134
+00:20:12,735 --> 00:20:17,295
+Lnx fonksiyonu bu aralıkta nedir? Süreklidir.
+
+135
+00:20:20,096 --> 00:20:23,835
+Ayrıca Lnx fonksiyonunun türevi nedir?
+
+136
+00:20:29,172 --> 00:20:31,072
+Bu da 1 bölü x'dir değil mi?
+
+137
+00:20:32,072 --> 00:20:37,932
+Sıfır sonsuz aralığındaki her x değeri için bu 1 bölü x değeri ne olur?
+
+138
+00:20:38,432 --> 00:20:40,112
+Sıfırdan büyük olur.
+
+139
+00:20:41,251 --> 00:20:45,012
+Dolayısıyla sıfırdan büyük olduğundan ne diyorduk?
+
+140
+00:20:45,291 --> 00:20:50,032
+Olduğu zaman türevi sıfırdan büyük ise artan fonksiyon diyorduk değil mi?
+
+141
+00:20:50,192 --> 00:20:51,072
+Daima artan.
+
+142
+00:20:51,827 --> 00:21:10,467
+Artan diyelim sadece. Artan fonksiyon diyorduk. Eğer fonksiyon artan ise de neydi? Tersi vardı. Dolayısıyla logaritma fonksiyonumuzda bu aralıkta artan bir fonksiyon olduğu için tersi vardır.
+
+143
+00:21:11,028 --> 00:21:20,327
+Logaritma fonksiyonunun tersini ln üzeri eksi bir x olarak yazıyoruz ve bunu şu şekilde de tanımlıyoruz.
+
+144
+00:21:22,407 --> 00:21:30,188
+Eksponansiyel x ya da e üzeri x fonksiyonu olarak tanımlıyoruz.
+
+145
+00:21:30,188 --> 00:21:30,967
+Tamam mı?
+
+146
+00:21:34,387 --> 00:21:40,987
+lnx fonksiyonunun tersidir. Dolayısıyla bunun tanım kümesi ne olacaktır?
+
+147
+00:21:41,627 --> 00:21:49,527
+e üzeri x'in tanım kümesi, lnx'in görüntü kümesi olacak. x'i sonsuz sonsuz olacak.
+
+148
+00:21:50,147 --> 00:21:56,207
+Görüntü kümesi de bunun tanım kümesi yani sıfır sonsuz aralığı olacak.
+
+149
+00:21:57,087 --> 00:22:01,067
+Şimdi tanım kümesine ve değer kümesine bakarsanız ne görüyorsunuz?
+
+150
+00:22:01,587 --> 00:22:10,728
+y eşit, e üzeri x fonksiyonu, her x sayısı için, yani tüm real sayılarda nedir? Tanımlıdır.
+
+151
+00:22:12,167 --> 00:22:17,988
+Ve daima pozitif değerler alır.
+
+152
+00:22:19,587 --> 00:22:23,708
+Sıfır değerini bile almaz. Bakın görüntü kümesi sıfırda açıktır.
+
+153
+00:22:23,708 --> 00:22:29,187
+Sıfır değeri de almaz. Sıfırdan küçük bir değer de almaz.
+
+154
+00:22:30,099 --> 00:22:39,099
+Yani negatif değer almaz. Dolayısıyla görüntü kümesi de sıfır sonsuz aralığı olacaktır.
+
+155
+00:22:46,132 --> 00:22:52,052
+fonksiyonuyla, yani lnx ve e üzeri x birbirinin tersi fonksiyonlar.
+
+156
+00:22:59,476 --> 00:23:10,216
+fonksiyonun birbirinin tersi olması için gerek ve yeter koşul aslında şuydu. Ben şurayı silebilir miyim? Bir açıklama yapayım burada size.
+
+157
+00:23:11,616 --> 00:23:24,016
+Diyelim evimizde bir f fonksiyonumuz var, bir de g fonksiyonumuz var. F ve g fonksiyonlarının birbirinin tersi olması için gerek ve yeter koşul f birleşke gx'in
+
+158
+00:23:26,708 --> 00:23:33,008
+ve g bileşki fx'in neye eşit olması? x'e eşit olmasıdır.
+
+159
+00:23:33,508 --> 00:23:40,708
+Dolayısıyla bu fonksiyonlar birbirinin tersi olduklarına göre şunu sağlayacaklardır.
+
+160
+00:23:40,708 --> 00:23:51,928
+Yani şöyle diyelim fx eşit lnx, gx de e üzeri x olursa f bileşki gx ne olacaktır?
+
+161
+00:23:54,483 --> 00:23:56,743
+e üzeri x olur değil mi?
+
+162
+00:23:57,604 --> 00:23:59,163
+Bu da neye eşit olur?
+
+163
+00:24:00,624 --> 00:24:01,703
+x'e eşit olur.
+
+164
+00:24:05,364 --> 00:24:09,523
+Demin size logaritma söyledik ama
+
+165
+00:24:09,523 --> 00:24:12,743
+e sayısını tanımlarken dedik ki
+
+166
+00:24:12,743 --> 00:24:16,283
+e eşit 1 olan sayıdır demiştik.
+
+167
+00:24:16,624 --> 00:24:17,423
+Dolayısıyla
+
+168
+00:24:17,423 --> 00:24:20,743
+e'nin 1 olduğunu bileceğiz.
+
+169
+00:24:22,740 --> 00:24:28,939
+Elan, e1 olacak ve logaritma özelliğinden bu neye eşit olacak? x'e eşit olacak.
+
+170
+00:24:28,939 --> 00:24:32,659
+Aynı şekilde g bileşge f'de
+
+171
+00:24:34,324 --> 00:24:42,844
+g nedir? e üzeri x. x yerine ne yazacağım? f'i yazacağım. e'len x. Bu da neye eşittir? yine x'e eşittir.
+
+172
+00:24:43,163 --> 00:24:57,644
+Gördüğünüz gibi logaritma fonksiyonuyla üstel fonksiyonun bileşkesi, hangi sırada alırsanız alın, logaritma bileşke üstel veya üstel bileşke logaritma neyi verecek bize? x'i verecek.
+
+173
+00:24:57,644 --> 00:25:01,644
+Tabii ki ben şunu her x için yazabilirim.
+
+174
+00:25:01,875 --> 00:25:20,575
+Şu, her x için. Şunu da önce elen x yazacağım için, logaritmada pozitif sayılarda tanımlı olduğu için, burada ne yazmalıyım? Burada x büyük sıfır için yazmalıyım.
+
+175
+00:25:47,092 --> 00:25:49,272
+Anladık herhalde. Şurayı sileyim.
+
+176
+00:25:59,892 --> 00:26:01,092
+bir saniye yanlı.
+
+177
+00:26:41,940 --> 00:26:45,940
+İngiltere, altı kuralı, tordak ve kuralı.
+
+178
+00:26:54,804 --> 00:26:55,364
+Pardon.
+
+179
+00:27:04,980 --> 00:27:11,020
+x fonksiyonunun onları yazdık zaten. Şöyle diyeyim, e üzeri x'in türevi.
+
+180
+00:27:15,892 --> 00:27:17,451
+Neye eşit olmalı?
+
+181
+00:27:21,460 --> 00:27:27,220
+yine e üzeri x eşit olacak. Bunu ters fonksiyon türevinden de görebilirsiniz.
+
+182
+00:27:29,259 --> 00:27:38,519
+y eşit e üzeri x ise çift gerektirecek neyi? x eşit ln y olmasını.
+
+183
+00:27:39,988 --> 00:27:49,607
+e üzeri x'in tersi logaritma idi, ln x idi. Dolayısıyla y eşit e üzeri x ise x eşit ln y olacak.
+
+184
+00:27:49,607 --> 00:27:55,028
+Şimdi burada kapalı olarak türev alırsak, x'in türevi neye eşit?
+
+185
+00:28:02,996 --> 00:28:23,016
+Bu olacak. x'in türevi 1. L'an y'nin türevi nedir? Burada kapalı türevi aldığım için zincir kuralını kullanacağım. Önce L'an y'nin y'ye göre türevini alacağım. Yani 1 bölü y çarpı y'nin x'e göre türevi. O da nedir?
+
+186
+00:28:24,956 --> 00:28:27,696
+d y bölü d x'tir.
+
+187
+00:28:29,428 --> 00:28:37,428
+dy bölü dx'i burada çekerseniz, dy bölü dx, d eşit olacak, y eşit olacak.
+
+188
+00:28:43,667 --> 00:28:49,787
+Dolayısıyla y denedir yine e üzeri x'dir.
+
+189
+00:28:54,675 --> 00:29:03,175
+İşte e üzeri x'in türevi yine ne oluyormuş? e üzeri x'i eşit oluyormuş.
+
+190
+00:29:05,776 --> 00:29:12,536
+Eğer burada birleşke şöyle bir şey olursa.
+
+191
+00:29:16,660 --> 00:29:25,279
+y eşit e üzeri u olursa, u da x'in türevlenebilir bir fonksiyonu olur.
+
+192
+00:29:26,200 --> 00:29:29,860
+Türevlenebilir bir fonksiyonu ise o zaman ne olacaktır?
+
+193
+00:29:30,460 --> 00:29:33,860
+y, x'in türevlenebilir fonksiyonu demek olacak.
+
+194
+00:29:34,340 --> 00:29:38,340
+Yani dy bölü dx bu durumda neye eşit olacak?
+
+195
+00:29:43,763 --> 00:29:48,144
+çarpı e üzeri u'ya eşit olacak.
+
+196
+00:30:00,084 --> 00:30:02,284
+e üzeri neymiş? sinüs x.
+
+197
+00:30:06,836 --> 00:30:13,296
+Bunun türevini hesaplayalım. x'e göre türevi neye eşit olacak?
+
+198
+00:30:14,836 --> 00:30:21,156
+Bileşge fonksiyonu. e üzeri u gibi düşünürsem u'nun türevi. Yani sinüs x'in türevi.
+
+199
+00:30:21,976 --> 00:30:25,796
+Kosinüs x çarpı üstel fonksiyonun kendisi.
+
+200
+00:30:35,059 --> 00:30:47,139
+Bunlarla ilgili sanırım anlaşılmayan bir şey yok. Burada yine bir teoremle doğal üstel fonksiyonun özelliklerini de yazalım.
+
+201
+00:31:09,683 --> 00:31:23,763
+hangi sayfa? 39. sayfadaki teoremi bakıyoruz şimdi. Doğal üstel fonksiyonun özellikleri. Şu özellikleri var. Ben şu şeylerini yazmayacağım.
+
+202
+00:31:29,332 --> 00:31:41,892
+e üzeri x1 çarpı e üzeri x2 eşit e üzeri x1 artı x2'dir.
+
+203
+00:31:44,152 --> 00:31:48,212
+İkinci olarak şunu yazabiliriz.
+
+204
+00:31:48,212 --> 00:31:55,492
+e üzeri eksi x bir bölü e üzeri x eşittir.
+
+205
+00:31:56,788 --> 00:31:59,708
+Üçüncü olarak şunu söyleyebiliriz.
+
+206
+00:32:00,107 --> 00:32:03,867
+e üzeri x1 bölüm e üzeri x2
+
+207
+00:32:03,867 --> 00:32:10,788
+e üzeri x1 eksi x2'ye eşit olacaktır.
+
+208
+00:32:10,788 --> 00:32:13,127
+Ve son olarak da
+
+209
+00:32:13,127 --> 00:32:18,407
+e üzeri x diyelim ya da x1
+
+210
+00:32:19,188 --> 00:32:26,628
+Bunun da re'inci kuvvetini alırsanız e üzeri rx1'i eşit olur.
+
+211
+00:32:27,028 --> 00:32:29,328
+Burada re bir rasyonel sayı.
+
+212
+00:32:31,428 --> 00:32:32,668
+Rasyonel bize.
+
+213
+00:32:47,284 --> 00:32:54,324
+doğal üstel fonksiyonu, yani eksponansiyel fonksiyonu özelliklerini yazdıktan sonra
+
+214
+00:32:54,324 --> 00:33:01,484
+a üzeri x genel üstel fonksiyonun tanımını yapalım.
+
+215
+00:33:03,304 --> 00:33:06,524
+O da aslında bundan farklı değil.
+
+216
+00:33:27,188 --> 00:33:44,248
+Heminkinde taban olarak e sayısını almıştık. Şimdi ise sıfırdan büyük yani a'yı pozitif bir sayı kabul edeceğiz. Sıfırdan ve birden farklı herhangi bir sayı olarak alabiliriz.
+
+217
+00:33:54,516 --> 00:33:55,915
+Aslında şey olabilir.
+
+218
+00:33:57,036 --> 00:34:07,576
+Pozitif herhangi bir A sayısı için ya da her pozitif A sayısı için
+
+219
+00:34:13,523 --> 00:34:16,003
+a'yı şöyle yazabilir miyim ben?
+
+220
+00:34:16,703 --> 00:34:24,163
+a eşit e üzeri elen a şeklinde yazarsam bu ne olacaktır?
+
+221
+00:34:25,588 --> 00:34:41,328
+yine a'ya eşit olacak değil mi? Çünkü e ve ln birbirinin tersi olan fonksiyonlar. Dolayısıyla ters fonksiyonlarda ne yapıyordu? Birleşkesi birin fonksiyonu veriyordu. Bu a'ya eşit olacaktır.
+
+222
+00:34:43,128 --> 00:34:49,908
+Böyle olduğu için a üzeri x'i de ben şu şekilde yazabilir miyim?
+
+223
+00:34:55,251 --> 00:35:18,231
+üzeri ln a üzeri x olarak yazabilirim değil mi? Böyle aldığında deminki doğal üstel fonksiyonun özelliklerini yazarken bunun e üzeri x çarpı ln a'ya eşit olacağını zaten görmüştük.
+
+224
+00:35:22,324 --> 00:35:23,463
+Dolayısıyla
+
+225
+00:35:25,396 --> 00:35:34,756
+Doğal üstel fonksiyonu, yani y eşit a üzeri x şeklinde aldığımız fonksiyonlar, bunlar genel üstel fonksiyonlar.
+
+226
+00:35:34,876 --> 00:35:38,615
+Burada tek koşulumuz a'nın sıfırdan büyük olmasıdır.
+
+227
+00:35:39,056 --> 00:35:43,256
+Böyle bir fonksiyonu ben şu şekilde tanımlayabiliyorum.
+
+228
+00:35:43,376 --> 00:35:48,416
+Bu şekilde tanımlamak onun türevini hesaplamamı falan çok kolaylaştıracak.
+
+229
+00:35:53,396 --> 00:35:59,496
+x üzeri x çarpı ln a şeklinde yazabilirim. Bu onun tanımı.
+
+230
+00:36:02,876 --> 00:36:09,615
+Öncelikle size bir teoremi verip daha sonra bu tanımdan yararlanarak türevi falan da hesaplayalım.
+
+231
+00:36:10,536 --> 00:36:16,155
+Öncelikle şu teoremi yazalım.
+
+232
+00:36:16,788 --> 00:36:21,128
+Limit olarak e sayısı neye eşittir?
+
+233
+00:36:23,327 --> 00:36:36,608
+Limit x sıfıra yaklaşırken 1 artı x üzeri 1 bölü x.
+
+234
+00:36:37,887 --> 00:36:41,668
+Bu limit değeri e sayısına eşittir.
+
+235
+00:36:45,715 --> 00:37:07,096
+Bunun ispatı kitapta limit tanımı kullanılarak yapılmış. Ancak ben o şekilde tanımı biraz karışık buluyorum. Size logaritmik türetmeyi gösterdikten sonra bunun ispatını zaten göreceksiniz. O zaman daha kolay anlayacaksınız.
+
+236
+00:37:11,059 --> 00:37:20,460
+x sıfıra yaklaşırken, 1 artı x üzeri 1 bölü x'in limitinin e'ye eşit olduğunu bilin yeterli.
+
+237
+00:37:22,039 --> 00:37:24,180
+Bunu yazdıktan sonra şimdi
+
+238
+00:37:30,195 --> 00:37:31,195
+ve belirli integral sıfırdan bire.
+
+239
+00:37:39,635 --> 00:37:44,056
+y eşit ax diyelim, bunun türevini alalım.
+
+240
+00:37:47,256 --> 00:37:50,456
+ax'i de ben, a üzeri x'i de nasıl tanımladım?
+
+241
+00:37:51,059 --> 00:37:55,880
+e üzeri x çarpı elen a olarak tanımlamıştım.
+
+242
+00:37:56,300 --> 00:38:01,759
+Dolayısıyla burada d bölü dx, a üzeri x.
+
+243
+00:38:02,099 --> 00:38:06,380
+a üzeri x fonksiyonunun türevi neye eşit olacak görelim.
+
+244
+00:38:06,800 --> 00:38:08,559
+Şunun türevini alarak yazalım.
+
+245
+00:38:16,596 --> 00:38:27,855
+Biraz önce e üzeri u'nun türevinin, u'nun türevi çarpı e üzeri u olduğunu görmüştük.
+
+246
+00:38:27,855 --> 00:38:30,956
+Şimdi aynı şeyi burada yapalım.
+
+247
+00:38:31,235 --> 00:38:43,175
+Şu x çarpı ln a'yı bir u fonksiyonu gibi göz önüne alırsanız, şuna u derseniz, e üzeri u'nun türevi ne olacak?
+
+248
+00:38:45,523 --> 00:39:01,064
+d bölü d x, x çarpı ln a'nın türevi, çarpı e üzeri x çarpı ln a olacak.
+
+249
+00:39:02,523 --> 00:39:07,224
+Şunun türevi de ne olacak? x'e göre türevi alıyorum. ln a bir sabittir.
+
+250
+00:39:07,604 --> 00:39:09,403
+Dolayısıyla ln a olur.
+
+251
+00:39:13,907 --> 00:39:16,087
+Önce şunu yazalım.
+
+252
+00:39:21,300 --> 00:39:24,160
+Şuradan ne gelecek? L'a gelecek.
+
+253
+00:39:26,720 --> 00:39:29,160
+e üzeri x çarpı L'a da nedir?
+
+254
+00:39:31,020 --> 00:39:32,300
+a üzeri x'dir.
+
+255
+00:39:32,680 --> 00:39:35,260
+Dolayısıyla bunun türevini
+
+256
+00:39:35,260 --> 00:39:42,060
+a üzeri x çarpı L'a şeklinde yazabiliriz.
+
+257
+00:40:08,563 --> 00:40:11,903
+Yine bunun genel olarak şöyle diyelim.
+
+258
+00:40:13,903 --> 00:40:15,563
+A büyük sıfır ve...
+
+259
+00:40:16,344 --> 00:40:17,703
+Hocam bir şey sorabilir miyim?
+
+260
+00:40:18,163 --> 00:40:18,443
+Tabii.
+
+261
+00:40:19,683 --> 00:40:22,823
+Elen x'in türevine 1 bölü x demiştik ya.
+
+262
+00:40:23,304 --> 00:40:24,063
+Evet canım.
+
+263
+00:40:24,603 --> 00:40:26,643
+Elen a neden sabit oluyor peki?
+
+264
+00:40:28,143 --> 00:40:31,363
+Orada x değişken değil çünkü a bir sabit.
+
+265
+00:40:32,463 --> 00:40:35,323
+A büyük sıfır herhangi bir sayı.
+
+266
+00:40:37,043 --> 00:40:37,884
+Hı hı, tamam.
+
+267
+00:40:38,344 --> 00:41:00,023
+Değişken olmadığı için, A sabit bir sayı olduğu için, Elen A bir sabittir. Elen x deseydin, x bir değişken olduğu için onun türevi mevcut olacaktı. Ama A bir sabit, 3 gibi bir, 5 gibi bir değeri var. Yani Elen 3 bir sabit değil midir? Bir sabittir. Bunun sayısal bir değeri var.
+
+268
+00:41:01,523 --> 00:41:02,503
+Anladım hocam, tamam.
+
+269
+00:41:10,452 --> 00:41:14,492
+Ne dedik? Yazdığımı da sildim. Şunu söyleyelim.
+
+270
+00:41:15,532 --> 00:41:26,192
+Eğer a pozitif bir sayı u'dan x'in türevlenebilir ya da diferansiyellenebilir diyelim.
+
+271
+00:41:26,192 --> 00:41:32,432
+Bir fonksiyonu ise bu durumda ne olacaktır?
+
+272
+00:41:35,059 --> 00:41:39,500
+u, x'in türevlenebilir bir fonksiyonu olacaktır.
+
+273
+00:42:01,748 --> 00:42:04,108
+Buradaki ne benzer olarak nasıl yazılır?
+
+274
+00:42:04,768 --> 00:42:15,368
+a üzeri u çarpı elen a çarpı du bölü dx olarak yazılır.
+
+275
+00:42:15,608 --> 00:42:16,967
+Ya da bunu şöyle yaparız.
+
+276
+00:42:17,088 --> 00:42:24,488
+u'nun türevi çarpı a üzeri u çarpı elen a olarak yazarız.
+
+277
+00:42:25,588 --> 00:42:38,528
+u olunca, hani bileşge fonksiyon, u'nun türevi çarpı, a üzeri x'in türevi yine a üzeri x çarpı elen a'ydı ya, u'nun türevi çarpı, şu da nedir?
+
+278
+00:42:38,648 --> 00:42:44,728
+a üzeri x'in türevine karşılık gelen, u'ya göre türevine karşılık gelen değeridir.
+
+279
+00:42:51,891 --> 00:42:57,391
+Dolayısıyla şu iki türevi unutmuyoruz.
+
+280
+00:42:59,531 --> 00:43:14,331
+a üzeri x'in türevi, a üzeri x çarpı ln a'ya eşit, a üzeri u'nun türevi ise u'nun türevi çarpı a üzeri u çarpı ln a'ya eşit diyoruz.
+
+281
+00:44:03,027 --> 00:44:07,188
+a üzeri kosinüs 1 bölü x şeklinde tanımlanmış olsun.
+
+282
+00:44:09,108 --> 00:44:13,527
+Burada a sıfırdan büyük bir sayı, onu belirtelim yalnız.
+
+283
+00:44:16,627 --> 00:44:19,228
+y üstü türevini hesaplayalım.
+
+284
+00:44:20,327 --> 00:44:21,688
+Türev neye eşit olacak?
+
+285
+00:44:21,987 --> 00:44:24,527
+a üzeri u gibi düşüneceğim burada.
+
+286
+00:44:24,527 --> 00:44:28,827
+u kosinüs 1 bölü x olsun.
+
+287
+00:44:29,715 --> 00:44:40,655
+a üzeri u dersen buraya ne olur? Türevi ya da şöyle yazayım daha iyi olur.
+
+288
+00:44:41,775 --> 00:44:52,415
+y eşit a üzeri u olur. Dolayısıyla y'nin türevi ne eşit olacak? u'nun türevi çarpı a üzeri u çarpı elen a'ya eşit olacak.
+
+289
+00:44:52,415 --> 00:44:57,175
+Şimdi gelelim u'nun türevine. u kosinüs 1 bölü x.
+
+290
+00:44:58,516 --> 00:45:01,136
+du bölü dx neye eşit olur?
+
+291
+00:45:03,355 --> 00:45:05,396
+Kosinüsün türevi, bu da yine birleşik.
+
+292
+00:45:05,516 --> 00:45:11,576
+Fonksiyon, kosinüsün türevi, eksi, sinüs, 1 bölü x'e eşittir.
+
+293
+00:45:11,775 --> 00:45:14,655
+Çarpı, 1 bölü x'in türevi de nedir?
+
+294
+00:45:15,036 --> 00:45:17,476
+Eksi 1 bölü x karedir.
+
+295
+00:45:18,195 --> 00:45:22,476
+Dolayısıyla, eksiler birbirini götürecek.
+
+296
+00:45:25,204 --> 00:45:46,684
+sinüs 1 bölü x olacak bunun türevi. O halde y üstü türevi neye eşit olur? 1 bölü x kare sinüs 1 bölü x a üzeri kosinüs 1 bölü x çarpı
+
+297
+00:45:47,476 --> 00:45:54,016
+Elen, A'ya eşit olacak. Orada yer kalmadı. Aşağıya yazdım.
+
+298
+00:46:24,596 --> 00:46:29,036
+x kare artı 1 ise y'nin türevi ne olur?
+
+299
+00:46:34,420 --> 00:46:46,560
+Bunun türevi ne olur? 2x çarpı a üzeri x kare artı 1 çarpı a şeklinde bir türevi olur.
+
+300
+00:47:00,947 --> 00:47:04,047
+sorunuz var mı? Anlayabiliyor musunuz?
+
+301
+00:47:11,507 --> 00:47:12,967
+Peki, ikinci soru geliyor.
+
+302
+00:47:14,287 --> 00:47:19,567
+Blok mu yapalım dersi yoksa ara verelim mi? Ara saati geldi çünkü.
+
+303
+00:47:30,036 --> 00:47:39,675
+ara verelim. Tamam. O zaman bir 10 dakika ara verelim. 10 dakika sonra tekrar başlayalım. Tamam mı?
+
+304
+00:48:41,460 --> 00:48:42,460
+Ters kutuldu.
+
+305
+00:48:42,460 --> 00:48:53,460
+Mali mi de eklamalda?
+
+306
+00:59:58,771 --> 01:00:01,691
+Evet arkadaşlar, hazırsanız başlayalım.
+
+307
+01:00:02,291 --> 01:00:08,611
+Son olarak bu üstel fonksiyonlarla ilgili alt tabanlı logaritmalar kaldı.
+
+308
+01:00:17,204 --> 01:00:22,044
+Biraz önce e tabanlı logaritmaları vermiştik.
+
+309
+01:00:22,164 --> 01:00:24,624
+Doğal üstel logaritma diyorduk.
+
+310
+01:00:25,004 --> 01:00:27,963
+Şimdi ise a tabanlı logaritmalara bakalım.
+
+311
+01:00:32,436 --> 01:00:55,532
+x kare artı 2x, f'
+
+312
+01:00:45,684 --> 01:00:55,284
+a birden farklı pozitif herhangi bir sayı.
+
+313
+01:01:01,148 --> 01:01:02,148
+x kare artı 2x, f'
+
+314
+01:00:59,987 --> 01:01:00,971
+ise
+
+315
+01:01:04,403 --> 01:01:09,843
+x kare artı 3x, f'nin x fonksiyonu nedir? Bire birdir değil mi?
+
+316
+01:01:14,867 --> 01:01:39,608
+a üzeri x fonksiyonu bire birdir. Ya da bunun türevini alırsanız, türevi ne olur? D bölü dx, a üzeri x, a üzeri x çarpı ln a olacak değil mi? Dolayısıyla a birden farklı pozitif bir sayı olduğu için şurası ne olacaktır?
+
+317
+01:01:42,036 --> 01:01:52,295
+birden farklı pozitif dediğinde ama birden küçük değerler için bu negatif de olabilir belki. Şöyle buradan değil de şuradan söylemem daha iyi olacak.
+
+318
+01:01:54,795 --> 01:02:04,135
+rx fonksiyonu birebirdir ve türevi de aslında sıfırdan farklıdır.
+
+319
+01:02:11,860 --> 01:02:13,960
+Ben şey verdim mi sizi?
+
+320
+01:02:17,588 --> 01:02:25,948
+A tabanlı logaritma, ha, a üzeri x fonksiyonu, ha, öbür özelliklerini yazmamışız, tamam.
+
+321
+01:02:27,748 --> 01:02:33,328
+Tamam, tamam, ben başka özellikleri de yazdım zannettim. Ona göre şey oldu.
+
+322
+01:02:34,996 --> 01:02:47,956
+Riser x fonksiyonu bire birdir. Aynı zamanda süreklidir. Aynı zamanda bunun türevi sıfırdan farklıdır. Yani türevlenebilir bir terse sahiptir dolayısıyla.
+
+323
+01:02:58,036 --> 01:02:59,795
+ters fonksiyonu vardır değil mi?
+
+324
+01:03:03,539 --> 01:03:07,200
+a üzeri x'in ters fonksiyonunu da
+
+325
+01:03:07,200 --> 01:03:12,059
+nasıl diyelim?
+
+326
+01:03:12,139 --> 01:03:20,500
+a üzeri x'in ters fonksiyonunu logaritma a tabanında x fonksiyonu olarak tanımlıyoruz.
+
+327
+01:03:36,052 --> 01:03:51,231
+A tabanlı logaritmamız bu. Herhangi sıfırdan farklı pozitif bir A sayısı için logaritma A tabanında x fonksiyonu, A üzeri x fonksiyonunun ters fonksiyonudur.
+
+328
+01:03:51,492 --> 01:04:00,391
+Dolayısıyla bunların grafikleri ne olacaktır? y eşit x doğrusuna göre simetrik olacaktır.
+
+329
+01:04:00,391 --> 01:04:02,692
+Şu y eşit x doğrusunu çizeyim önce.
+
+330
+01:04:06,452 --> 01:04:32,672
+Logaritma a tabanında x a'yı herhangi pozitif bir sayı aldık. Şöyle bir grafiği olacaktır. O zaman şurası a olur değil mi? Bunun tersi o da şöyle bir fonksiyon olacaktır. Burası da yine ne olur?
+
+331
+01:04:34,483 --> 01:04:35,284
+a olur.
+
+332
+01:04:36,684 --> 01:04:41,443
+Şurası logaritma a tabanında x'in grafiğidir.
+
+333
+01:04:41,584 --> 01:04:44,903
+Şu da a üzeri x'in grafiğidir.
+
+334
+01:04:46,104 --> 01:04:51,284
+x sıfır olduğunda
+
+335
+01:04:51,956 --> 01:05:10,616
+a ne olacak? a üzeri sıfır, ha bir olacak. Şurası bir noktası olacak. Bir noktasını da kesecek. Ben şuraya ne dedim? Burada da x a'ya eşit olduğunda şurası a'ya eşit olacak. Dolayısıyla bunu aslında şöyle yapsam.
+
+336
+01:05:15,572 --> 01:05:16,092
+Pardon.
+
+337
+01:05:17,832 --> 01:05:19,472
+Olmayacak. Şu 1 olacak.
+
+338
+01:05:19,932 --> 01:05:20,952
+Neden 1 olacak?
+
+339
+01:05:21,552 --> 01:05:24,952
+Çünkü 1'in logaritması neye eşittir?
+
+340
+01:05:25,332 --> 01:05:26,352
+Sıfıra eşittir.
+
+341
+01:05:26,672 --> 01:05:31,272
+Hangi tabanda olursa olsun, 1'in logaritması sıfıra eşittir.
+
+342
+01:05:31,372 --> 01:05:36,232
+Yani y'nin sıfır olması için x'in 1 olması gerekecek.
+
+343
+01:05:38,992 --> 01:05:41,052
+Neyse, onu sonra söyleyeyim.
+
+344
+01:05:42,387 --> 01:05:53,287
+Grafikleri şu şekilde, logaritma a tabanında x'in grafiği, şu da a üzeri x'in grafiği, y eşit x doğrusuna göre gördüğünüz gibi simetrik olan fonksiyonlardır.
+
+345
+01:05:53,287 --> 01:06:05,447
+Dolayısıyla eğer y eşit logaritma a tabanında x ise bu neyi gerektirecek?
+
+346
+01:06:08,980 --> 01:06:14,819
+a üzeri y olacak değil mi?
+
+347
+01:06:15,460 --> 01:06:19,199
+a üzeri y'ye eşit olmasını gerektirecek.
+
+348
+01:06:19,319 --> 01:06:25,759
+Ya da x eşit a üzeri y ise y eşit logaritma altı banında x'dir diyebileceğiz.
+
+349
+01:06:36,115 --> 01:06:57,635
+Dolayısıyla, a tabanındaki bir logaritma a üzeri x şeklindeki bir üstel fonksiyonun tersi olduğunda, üstel fonksiyonda her x için tanımlı ve görüntü kümesi sıfır sonsuz açık aralığı olduğundan logaritma a tabanında x'in tanım kümesi ne olacaktır?
+
+350
+01:07:03,059 --> 01:07:16,300
+a üzeri x'in görüntü kümesi yani sıfır sonsuz aralığı olacaktır. Logaritma a tabanında x'in görüntü kümesi de neye eşit olacaktır?
+
+351
+01:07:20,179 --> 01:07:28,059
+Bu da eksi sonsuz artı sonsuz aralığına eşit. Yani R'ye eşit olacaktır.
+
+352
+01:07:30,119 --> 01:07:36,420
+Sıfırla bir arası logaritma gördüğünüz gibi pozitif sayılar için tanımlıdır.
+
+353
+01:07:37,220 --> 01:07:42,800
+Ayrıca sıfırla bir arasındaki sayıların logaritmaları negatiftir.
+
+354
+01:07:46,164 --> 01:07:55,244
+Onu özellik olarak yazmış mıyım size? Bunun özelliklerini galiba yazmamışım ama birkaç şey söyleyelim isterseniz.
+
+355
+01:08:25,971 --> 01:08:42,652
+arasındaki sayıların logaritması negatiftir. Negatif değerler alır. Zaten şöyle bakın grafiği de çizerken şöyle bir grafiği vardı değil mi? Bu gittikçe buraya yaklaşıyor ama.
+
+356
+01:08:43,507 --> 01:08:54,627
+nereye doğru gidiyor? Eksi sonsuza limit olarak x sıfıra yaklaştığında x sıfıra yaklaşırken limit olarak logaritma x nereye gider?
+
+357
+01:08:58,387 --> 01:09:02,967
+x sıfıra tabii ki sağdan yaklaşabilir burada, soldan tanımı değil çünkü.
+
+358
+01:09:03,487 --> 01:09:10,387
+x sıfıra yaklaşırken logaritma A tabanında x'in limiti nereye gidecektir?
+
+359
+01:09:10,667 --> 01:09:13,667
+Gördüğünüz gibi eksi sonsuza yaklaşıyor.
+
+360
+01:09:15,287 --> 01:09:16,847
+Bunun limiti eksi sonsuz olur.
+
+361
+01:09:19,520 --> 01:09:27,659
+Dolayısıyla şurası 1'di. 0 ile 1 arasındaki sayıların logaritmaları negatiftir. Bunu da söylemiş olduk.
+
+362
+01:09:33,108 --> 01:09:49,007
+Yine a üzeri x ve logaritma a tabanında x fonksiyonları birbirinin tersi oldukları için bunların bileşkeleri bize neyi verecek? x'i verecektir.
+
+363
+01:10:00,000 --> 01:10:01,100
+0, 3'i.
+
+364
+01:10:02,239 --> 01:10:04,159
+Ya da logaritma
+
+365
+01:10:04,159 --> 01:10:07,920
+a tabanında x.
+
+366
+01:10:08,920 --> 01:10:10,520
+a üzeri x.
+
+367
+01:10:11,979 --> 01:10:14,139
+Bunun logaritması da
+
+368
+01:10:14,139 --> 01:10:15,739
+neye eşit olacaktır?
+
+369
+01:10:15,899 --> 01:10:18,159
+yine x'e eşit olacaktır.
+
+370
+01:10:18,559 --> 01:10:20,479
+Bu a üzeri x olduğu için
+
+371
+01:10:20,479 --> 01:10:22,319
+her x için geçerli.
+
+372
+01:10:45,300 --> 01:10:52,300
+O logaritmada yazdığımız bütün o kurallar vardı ya toplam, çarpım, bölüm,
+
+373
+01:10:53,140 --> 01:10:59,340
+Toplam değildi. Çarpım kuralı, bölüm kuralı, çarpmaya göre ters ve kuvvet kuralları.
+
+374
+01:10:59,819 --> 01:11:06,560
+Aynı şeyler herhangi A tabanlı bir logaritma içinde geçerlidir.
+
+375
+01:11:06,960 --> 01:11:11,540
+E'yi A yaptığınızda ya da A'yı E yaptığınızda hepsi aynı oluyor.
+
+376
+01:11:11,659 --> 01:11:13,840
+Dolayısıyla aynı kurallar geçerli.
+
+377
+01:11:13,840 --> 01:11:15,840
+Yani şunu söyleyebilirim.
+
+378
+01:11:16,500 --> 01:11:21,260
+Logaritma a tabanında x çarpı y diyelim.
+
+379
+01:11:23,220 --> 01:11:30,440
+Burada tabii ki x ve y'yi pozitif sayılar olarak göz önüne alıyorum.
+
+380
+01:11:33,539 --> 01:11:34,920
+Şöyle diyeyim.
+
+381
+01:11:37,619 --> 01:11:42,860
+A, x, y. Bunların üçü de nedir? Pozitif sayılar.
+
+382
+01:11:45,268 --> 01:11:55,067
+Logaritma A tabanında x çarpı y, logaritma A tabanında x artı, logaritma A tabanında y'ye eşittir.
+
+383
+01:11:56,648 --> 01:12:01,487
+Bölümleri, yani logaritma A tabanında x bölü y,
+
+384
+01:12:05,460 --> 01:12:12,340
+a tabanında x eksi, a tabanında y'ye eşittir.
+
+385
+01:12:18,676 --> 01:12:22,076
+Çarpmaya göre ters kuralı şöyle demiştik.
+
+386
+01:12:23,176 --> 01:12:27,695
+Logaritma a tabanında 1 bölü x.
+
+387
+01:12:28,695 --> 01:12:37,636
+Bunun logaritması eksi a tabanında logaritma x'i eşit oluyor.
+
+388
+01:12:48,404 --> 01:12:54,184
+A tabanında x üzeri R ya da x üzeri Y diyelim, Y'yi kullandık.
+
+389
+01:13:01,043 --> 01:13:03,243
+Bu da eşit olacaktır.
+
+390
+01:13:03,884 --> 01:13:08,823
+Logaritmada işlem yapmak için bu özellikleri bilmek yeterli olacaktır.
+
+391
+01:13:08,823 --> 01:13:20,823
+Ayrıca, logaritma a tabanında x'i e tabanında şu şekilde yazabiliriz.
+
+392
+01:13:22,163 --> 01:13:27,663
+Elen a bölü elen x olarak, tam tersini yazdım.
+
+393
+01:13:28,916 --> 01:13:34,935
+kafam gitti, yoruldum. Elen x bölü, elen a şeklinde yazabiliriz.
+
+394
+01:13:44,148 --> 01:13:53,788
+Dini de hemen alalım. Bu konuyu kapatalım. D bölü dx, logaritma a tabanında x değilim.
+
+395
+01:14:00,020 --> 01:14:09,680
+Logaritma a tabanında x'in türevi 1 bölü x çarpı 1 bölü elen a'dır.
+
+396
+01:14:12,260 --> 01:14:17,260
+Yine ters fonksiyonundan giderek şuna ulaşabilirsiniz.
+
+397
+01:14:21,492 --> 01:14:23,692
+y eşit logaritma
+
+398
+01:14:23,692 --> 01:14:27,432
+Ay pardon, hıçkırık tuttum.
+
+399
+01:14:30,292 --> 01:14:31,731
+Şöyle diyelim.
+
+400
+01:14:35,636 --> 01:14:37,956
+a tabanında x'e y diyelim.
+
+401
+01:14:38,596 --> 01:14:40,376
+Dolayısıyla bu ne olacaktır?
+
+402
+01:14:40,516 --> 01:14:43,816
+x eşit a üzeri y olacak değil mi?
+
+403
+01:14:45,156 --> 01:14:50,016
+Her iki tarafın x'e göre kapalı olarak türevini alırsanız
+
+404
+01:14:58,739 --> 01:15:08,379
+Fonksiyonların türevi 1 olacak. a üzeri y'nin türevi ne olur? y'nin türevi çarpı a üzeri y çarpı elen a olur.
+
+405
+01:15:08,979 --> 01:15:19,500
+Üstel fonksiyonların türevi. Burada y üstünü çektiğimizde y üstü eşit 1 bölü a üzeri y çarpı elen a olur.
+
+406
+01:15:24,756 --> 01:15:27,256
+Buradan da ne yazabilirim?
+
+407
+01:15:28,695 --> 01:15:31,156
+a üzeri y neye eşit?
+
+408
+01:15:32,195 --> 01:15:33,256
+x'e eşit.
+
+409
+01:15:33,515 --> 01:15:38,435
+1 bölü x çarpı 1 bölü elen a gelir.
+
+410
+01:15:39,355 --> 01:15:40,416
+Yani şuradaki gibi.
+
+411
+01:15:58,036 --> 01:16:15,855
+Birinci bir u fonksiyonu içinde miyelim de u x'in türevlenebilir bir fonksiyonu olmak üzere logaritma a tabanında u'nun türevi
+
+412
+01:16:21,203 --> 01:16:25,404
+ne olacaktır? Yine u'nun türevi
+
+413
+01:16:30,003 --> 01:16:31,307
+x kare artı 2x, f'
+
+414
+01:16:51,828 --> 01:16:57,828
+logaritmanın türevinden ne gelecekti?
+
+415
+01:17:05,456 --> 01:17:19,179
+x kare artı 2x, f'
+
+416
+01:17:01,971 --> 01:17:06,072
+1 bölü u çarpı 1 bölü elen a gelecek.
+
+417
+01:17:06,691 --> 01:17:09,851
+Dolayısıyla u'nun türevi
+
+418
+01:17:09,851 --> 01:17:18,791
+1 bölü u çarpı 1 bölü elen a şeklinde bunu yazabiliriz.
+
+419
+01:17:24,051 --> 01:17:32,191
+Logaritmanın da türevini verdikten sonra artık bu üstel ve logaritmik fonksiyonları da bitirmiş olduk.
+
+420
+01:17:36,627 --> 01:17:45,608
+türevlerini sadece iyi bilip, sadece türevlerini değil aslında fonksiyonun özelliklerini de bilmenizde fayda var.
+
+421
+01:17:47,028 --> 01:17:50,788
+Tanım kümelerini özellikle bilmekte fayda var.
+
+422
+01:17:51,127 --> 01:18:02,747
+Şimdi bunu da verdikten sonra notlarda devamı yok ama ben size logaritmik türevle devam edeceğim konuya.
+
+423
+01:18:04,115 --> 01:18:07,655
+Bunu tahtada açıklayarak yazalım.
+
+424
+01:18:31,444 --> 01:18:42,204
+Logaritmik türev de daha çok fonksiyon fonksiyonlarının türevlerini hesaplarken izlediğimiz bir yöntemdir.
+
+425
+01:18:43,084 --> 01:18:45,644
+Bunu ben size örnekle açıklayayım.
+
+426
+01:18:49,939 --> 01:18:51,500
+o var, bir de o var.
+
+427
+01:18:53,920 --> 01:18:57,340
+Neyse, buradaki örneği alarak ben size bunu açıklayayım.
+
+428
+01:19:04,148 --> 01:19:05,148
+Örneğimiz şu.
+
+429
+01:19:05,148 --> 01:19:07,907
+y şuna eşitmiş.
+
+430
+01:19:24,275 --> 01:19:26,636
+üzeri 1 bölü 2 galiba bu.
+
+431
+01:19:30,323 --> 01:19:45,283
+bölüm x eksi 1. Bu tabi x büyük 1. İse, b'ye bölü, b'ye x'i hesaplayayım. Aslında burada,
+
+432
+01:19:47,315 --> 01:19:58,195
+Normalde de bunun türevini hesaplayabilirsiniz. Logaritmik türev alınmadan da hesaplanabilir ama o belki işi biraz daha kolaylaştıracaktır.
+
+433
+01:19:58,855 --> 01:20:06,095
+Niye bu örnekle başlamış ki? Ben olsam fonksiyon fonksiyonlarının türeviyle başladım.
+
+434
+01:20:11,347 --> 01:20:18,087
+Bu çünkü her koşulda çarpım bölüm kuralı bile uygulayarak türevini alabileceğiniz bir fonksiyon.
+
+435
+01:20:18,087 --> 01:20:23,448
+Ama öyle fonksiyonlar var ki örneğin x üzeri x şeklindeki.
+
+436
+01:20:26,047 --> 01:20:29,967
+Ben öyle bir örnek vereyim ya. Bunu her şekilde yaparsınız.
+
+437
+01:20:30,868 --> 01:20:36,087
+Bunu da yaparız da örneğin y fonksiyonu.
+
+438
+01:20:42,420 --> 01:20:43,659
+x üzeri
+
+439
+01:20:47,475 --> 01:20:54,935
+x, basitle başlayalım. x üzeri x şeklinde bir fonksiyon olsun ya da bunun başka örneği var mı? Daha böyle.
+
+440
+01:21:00,083 --> 01:21:02,804
+Yok, bir tane örnekle bunu geçiştirmiş.
+
+441
+01:21:04,103 --> 01:21:05,823
+Peki, ben size şöyle açıklayayım.
+
+442
+01:21:07,023 --> 01:21:12,463
+y eşit x üzeri x ise y üstü türevi neye eşittir?
+
+443
+01:21:14,583 --> 01:21:16,243
+Buradan nasıl türevi alacağım?
+
+444
+01:21:16,763 --> 01:21:22,663
+Üstel fonksiyon, tabanı da bir fonksiyon, kuvveti de bir fonksiyon.
+
+445
+01:21:23,060 --> 01:21:33,880
+Yani a üzeri x şeklinde olsaydı onun rahatlıkla türevini alabilirdim ama x üzeri x şeklinde bir fonksiyon ya da bazen şuna gelebilir.
+
+446
+01:21:34,659 --> 01:21:39,960
+x üzeri sinüs x şeklinde bir fonksiyon da karşınıza gelebilir.
+
+447
+01:21:40,380 --> 01:21:44,140
+Tabanı da değişken, kuvveti de değişken.
+
+448
+01:21:47,283 --> 01:22:08,443
+türevlerini hesaplamak için kullandığımız yöntem logaritmik türev dediğimiz yöntemdir. Bunu nasıl uyguluyoruz? Bunu şöyle uyguluyoruz. Öncelikle şu verilen fonksiyonun her iki tarafının doğal logaritmasını alıyoruz.
+
+449
+01:22:15,380 --> 01:22:23,319
+Bu nedenle logaritma kuralları gereği bu x buraya çarpım olarak gelebiliyor değil mi?
+
+450
+01:22:27,412 --> 01:22:46,711
+Şimdi ben ne elde ettim? Elen y eşit x çarpı elen x yazmış oldum. Buradan da y'yi çekemeyeceğim için zaten çekmekle de uğraşmayacağım. Her iki tarafın x'e göre türevini alalım. Kapalı olarak türevini alalım.
+
+451
+01:22:59,380 --> 01:23:15,280
+y nedir? 1 bölü y'dir. Çarpı y'nin türevi. Çünkü burada ne var? y x'in bir fonksiyonu olarak düşünürsem, çarpı dy bölü dx yazmam gerekecek. Yazdım.
+
+452
+01:23:16,180 --> 01:23:31,920
+eşit x'e göre türev alıyorum ama çarpım şeklinde olduğu için çarpım türevi alacağım. x'in türevi 1 çarpı ln x artı x çarpı ln x'in türevi nedir? 1 bölüm x'tir. Dolayısıyla
+
+453
+01:23:35,956 --> 01:23:37,595
+Şuradan devam ediyorum.
+
+454
+01:23:40,456 --> 01:23:45,615
+1 bölü y çarpı dy bölü dx neye eşit oldu?
+
+455
+01:23:46,395 --> 01:23:48,855
+L'in x artı 1'e eşit oldu değil mi?
+
+456
+01:23:50,496 --> 01:23:56,835
+Buradan dy bölü dx'i çözersem aradığım türevi bulmuş olurum.
+
+457
+01:23:57,140 --> 01:23:59,840
+dy bölü dx neye eşit olacak?
+
+458
+01:24:00,620 --> 01:24:05,539
+y çarpı lnx artı 1'e eşit olacak.
+
+459
+01:24:07,979 --> 01:24:10,960
+Aradığım zaten dy bölü dx türeliydi.
+
+460
+01:24:10,960 --> 01:24:15,140
+O halde dy bölü dx, d'ye eşitmiş y.
+
+461
+01:24:15,840 --> 01:24:18,659
+y nedir? x üzeri x'tir.
+
+462
+01:24:22,452 --> 01:24:29,492
+İşte logaritmik türev dediğimiz türev yöntemiyle neyi bulduk?
+
+463
+01:24:30,131 --> 01:24:35,051
+dy bölü dx türevini yani y üstünü hesaplamış olduk.
+
+464
+01:24:42,355 --> 01:24:49,796
+isterseniz demin yazdığım ikinci fonksiyonu da şimdi çözelim. Anladınız mı bunu?
+
+465
+01:25:01,203 --> 01:25:04,263
+bir örnek daha yaparsak belki daha iyi anlarsınız.
+
+466
+01:25:15,764 --> 01:25:17,203
+örneğimiz de şu olsun.
+
+467
+01:25:20,595 --> 01:25:22,655
+x üzeri sinüs x olsun.
+
+468
+01:25:22,995 --> 01:25:24,315
+Demin bunu yazmıştık.
+
+469
+01:25:29,939 --> 01:25:31,439
+y'nin türevini bulalım.
+
+470
+01:25:33,180 --> 01:25:34,340
+Önce ne yapıyoruz?
+
+471
+01:25:34,879 --> 01:25:38,359
+Her iki tarafın doğal logaritmasını alıyoruz.
+
+472
+01:25:44,435 --> 01:25:54,036
+Yine logaritma özelliği geri, logaritma kuralları gereği ne olabilir? Sinüs buraya çarpım olarak geçebilir.
+
+473
+01:25:56,055 --> 01:25:59,855
+Demin yaptığım şeyi yapacağım. Kapalı olarak türev alacağım.
+
+474
+01:26:06,899 --> 01:26:09,500
+İki tarafın x'e göre türevini alırsak kapalı.
+
+475
+01:26:09,920 --> 01:26:18,500
+L'N'ye'nin türevi isterseniz y üstü bölü y yazın ya da 1 bölü y çarpı L'N'ye yazın.
+
+476
+01:26:21,908 --> 01:26:32,488
+sinüs x'in türevi, kosinüs x çarpı ln x artı sinüs x çarpı ln x'in türevi de nedir? 1 bölü x'tir.
+
+477
+01:26:32,488 --> 01:26:39,887
+İşte buradan y üstünü çektiğinizde, yani dy bölü dx neye eşit olacak?
+
+478
+01:26:49,011 --> 01:26:51,451
+sinüs x'i eşit olur.
+
+479
+01:26:51,871 --> 01:26:54,431
+y yerine de tekrar neyi yazacaksınız?
+
+480
+01:26:54,431 --> 01:26:57,332
+x üzeri sinüs x'i yazdığınızda
+
+481
+01:26:57,332 --> 01:26:59,912
+dy bölü dx türevi
+
+482
+01:27:11,444 --> 01:27:12,564
+eşit olur.
+
+483
+01:27:14,064 --> 01:27:14,944
+Anladınız mı?
+
+484
+01:27:16,203 --> 01:27:19,203
+Ben böyle ha bire soracağım sizi anladınız mı diye.
+
+485
+01:27:21,203 --> 01:27:25,104
+Çünkü bu logaritmik türev alma yöntemini
+
+486
+01:27:28,916 --> 01:27:50,556
+Limitte belirsiz şekiller vardır ya, üstel belirsizlikler, işte bir üzeri sonsuz gibi belirsizlikler, o tür belirsizliklerin, o tür belirsizlik içeren bir limiti çözerken logaritmik türevden yararlanacağız.
+
+487
+01:28:04,372 --> 01:28:05,811
+Sorunuz var mı?
+
+488
+01:28:12,564 --> 01:28:18,844
+sorunuz da yok. Bana öyle geliyor ki ya dinlemiyorsunuz ya da hiçbir şey anlamadınız.
+
+489
+01:28:27,796 --> 01:28:33,896
+[öğrenci] anlamış, [öğrenci] anlamış, [öğrenci] anlamış. Peki, çok güzel.
+
+490
+01:28:36,396 --> 01:28:37,115
+Tamam.
+
+491
+01:28:45,652 --> 01:29:11,811
+ilgili bir sürü örnek var da, şimdi örnek yazmayayım, ben bu logaritmik türevi de geçeyim. Kaç dakikamız kaldı? Bir 20 dakikamız kaldı yaklaşık ya da 15-20 dakika. Ben şu şeyleri de vereyim. Hiperbolik fonksiyonları da vereyim ve zaman kalırsa ters hiperbolikleri de onların türevlerini de verelim. Bu konuyu kapatmış olalım.
+
+492
+01:29:20,372 --> 01:29:44,772
+Çok haklısın [öğrenci]. Soru çözdükçe daha iyi olacak. Size birkaç tane yazayım. Kafamdan yazacağım. O yüzden sonucunu sormayın. Siz bakın, çalışın üzerinde. Sonra sonucu şu muydu, bu muydu diye bana gönderirsiniz ya da sorarsınız dersi. Yani çözüp bana gönderebilirsiniz de birkaç tane yazayım size.
+
+493
+01:30:11,091 --> 01:30:13,387
+x kare artı 2x, f'
+
+494
+01:30:17,448 --> 01:30:22,448
+Mali mi de eklamalda?
+
+495
+01:30:16,724 --> 01:30:20,963
+1 süpürelim veya 2 eşit
+
+496
+01:30:31,103 --> 01:30:32,103
+yüksüz türevi veya
+
+497
+01:30:29,171 --> 01:30:30,311
+tanjant fiyasa.
+
+498
+01:30:49,444 --> 01:30:50,731
+x kare artı 2x, f'
+
+499
+01:30:48,380 --> 01:30:50,731
+yüksüz türevi veya
+
+500
+01:30:47,572 --> 01:30:50,731
+x kare artı 2x, f'
+
+501
+01:30:55,171 --> 01:30:59,171
+Mali mi de eklamalda?
+
+502
+01:30:54,515 --> 01:31:10,255
+Ancak burada sinüsün tabii her değeri için yazamayacağı, negatif değerlerinin logaritması olamayacağı için onu sinüsü kaldıralım. Başka bir şey yazayım.
+
+503
+01:31:17,076 --> 01:31:19,076
+ayyemesimiz yazdım aşağıya.
+
+504
+01:31:34,131 --> 01:31:35,819
+x kare artı 2x, f'
+
+505
+01:31:40,916 --> 01:31:52,916
+Ya da hiperboliklere geçmeyeyim. Şu deminki kitaptaki örneğe bakalım. Kitaptaki örnek de nasıldı?
+
+506
+01:32:01,203 --> 01:32:02,564
+x kare artı bire.
+
+507
+01:32:21,140 --> 01:32:32,280
+hesapta da diyor ki çarpım, bölüm ve kuvvet içeren formüllerle verilmiş olan pozitif fonksiyonların türevlerini hesaplamak için kullandığımız yöntem diyor.
+
+508
+01:32:36,467 --> 01:32:50,268
+x büyük 1 olarak verilmiş. Tabi pozitif olmalı ki logaritması alınsın. Burada y üstü türevini logaritmik türetme yöntemiyle bulalım.
+
+509
+01:32:52,268 --> 01:32:56,907
+Öncelikle elen y. Neye eşit olacak? Elen y.
+
+510
+01:33:09,203 --> 01:33:12,644
+Logaritma özelliğinden biz bunu nasıl yazarız?
+
+511
+01:33:13,644 --> 01:33:15,483
+Bölüm ve çarpım var.
+
+512
+01:33:21,492 --> 01:33:34,072
+x kare artı 1 artı L'n x artı 3 üzeri 1 bölüm 2 eksi L'n x eksi 1 olarak yazabilirim değil mi?
+
+513
+01:33:41,235 --> 01:33:43,655
+Logaritma özelliğini kullandım şu anda.
+
+514
+01:33:44,195 --> 01:33:46,995
+Bunu yazdıktan sonra gerisi zaten ne olacak?
+
+515
+01:33:46,995 --> 01:33:48,995
+Hatta şunu düzelleyelim.
+
+516
+01:33:49,075 --> 01:33:50,835
+1 bölü 2 ile şuraya alalım.
+
+517
+01:33:54,387 --> 01:33:55,488
+Şöyle yazayım.
+
+518
+01:33:57,048 --> 01:33:59,128
+L'en y eşitliği olacak.
+
+519
+01:33:59,807 --> 01:34:02,868
+L'en x kare artı 1.
+
+520
+01:34:04,408 --> 01:34:12,608
+1 bölü 2, L'en x artı 3, eksi, L'en x eksi 1 olacak.
+
+521
+01:34:12,608 --> 01:34:19,408
+Şimdi buradan her iki tarafında kapalı olarak türevini alalım.
+
+522
+01:34:25,460 --> 01:34:28,319
+Alırsak, şuradan devam ediyorum.
+
+523
+01:34:31,479 --> 01:34:33,180
+Elan yeğenin türevi neydi?
+
+524
+01:34:34,180 --> 01:34:35,800
+y üstü bölü y.
+
+525
+01:34:39,699 --> 01:34:43,500
+x'e göre hepsi türetilecek. x'e göre türevini alırsak,
+
+526
+01:34:44,699 --> 01:34:46,879
+ellen x kare artı 1'in türevi nedir?
+
+527
+01:34:46,979 --> 01:34:49,659
+u'nun türevi bölü u olarak düşünürsek,
+
+528
+01:34:49,659 --> 01:34:56,319
+u'nun türevi 2x bölü x kare artı 1 olur.
+
+529
+01:34:57,076 --> 01:35:01,355
+Artı 1 bölü 2 sabit bir sayı olduğu için yazdım.
+
+530
+01:35:01,735 --> 01:35:04,315
+Yani x artı 3'ün türevi ne olacak?
+
+531
+01:35:04,956 --> 01:35:08,056
+1 bölü, çünkü x artı 1'in türevi 1'dir.
+
+532
+01:35:08,476 --> 01:35:10,796
+1 bölü x artı 3.
+
+533
+01:35:10,935 --> 01:35:12,255
+x artı 3'ün türevi 1.
+
+534
+01:35:12,855 --> 01:35:24,416
+Eksi, x eksi 1'in türevi yine 1 olduğu için 1 bölü x eksi 1 olarak karşımıza çıkıyor.
+
+535
+01:35:29,939 --> 01:35:36,079
+y üstü türevi ne olacak? Burada tabii payda eşitlemek belki gerekebilir.
+
+536
+01:35:50,963 --> 01:35:53,943
+1 bölü x kare artı 1 olacak.
+
+537
+01:35:57,492 --> 01:36:12,492
+y de neydi? Fonksiyonum kendisiydi. y'yi de yerine yazarız. Şuralarla hiç uğraşmayız. Fonksiyonum şuydu. y
+
+538
+01:36:20,948 --> 01:36:22,448
+x kare artı 1
+
+539
+01:36:31,475 --> 01:36:32,475
+çarpı
+
+540
+01:36:32,475 --> 01:36:35,135
+şu ifade.
+
+541
+01:37:06,260 --> 01:37:27,300
+İşte ye üstü türevini bulduk. Bu da kitaptaki örnekti. Onu da çözdük. Yani her zaman şey olması gerekmiyor. Üstel bir büyüklük olması gerekmiyor. Bunların da bazen türevlerini hesaplamak için daha kolay olabiliyor.
+
+542
+01:37:31,060 --> 01:37:35,560
+bölüm ve çarpım türevlerini bir arada kullanmak gerekecekti.
+
+543
+01:37:37,300 --> 01:37:45,620
+Yani, öbür türlü de yapılabilir. Hangisi daha kolay oldu bilmiyorum ama bu bence daha kolay bir çözüm yöntemi oldu.
+
+544
+01:37:48,307 --> 01:38:03,688
+Şimdi gelelim hiperbolik fonksiyonlara. Ne kadar zamanımız kaldıysa ben bu kalan sürede 10 dakika içerisinde hiperbolik fonksiyonların en azından sinüs hiperbolikle kosinüs hiperboliyi tanımlayabilirim.
+
+545
+01:38:13,460 --> 01:38:15,440
+yazıp yüklerim ama
+
+546
+01:38:15,440 --> 01:38:17,760
+yarına yetişmez.
+
+547
+01:38:18,000 --> 01:38:18,880
+Hipermonik.
+
+548
+01:38:32,340 --> 01:38:34,476
+x kare artı 2x, f'
+
+549
+01:38:39,155 --> 01:38:40,155
+hiperbolik
+
+550
+01:38:40,155 --> 01:38:43,655
+ya da hiperbolik
+
+551
+01:38:43,655 --> 01:38:47,095
+sinüs
+
+552
+01:38:53,115 --> 01:39:05,163
+x hiperbolik
+
+553
+01:38:52,659 --> 01:39:05,159
+x kare artı 2x, f'ninus, hiperbolik x. Bu şekilde gösteriliyor ve hiperbolik kosinüs.
+
+554
+01:39:10,271 --> 01:39:17,111
+x hiperbolik
+
+555
+01:39:08,819 --> 01:39:14,159
+Bunu da, cos, superbonus, x. Böyle gösteriyoruz.
+
+556
+01:39:14,159 --> 01:39:17,279
+Şu fonksiyonlar,
+
+557
+01:39:24,692 --> 01:39:34,652
+x fonksiyonları kullanılarak tanımlanıyor. Şu şekilde tanımlanır diyelim fonksiyonları. Önce ben size kosinüsü tanımlayayım.
+
+558
+01:39:35,612 --> 01:39:43,092
+Kosinüs hiperbolik x, e üzeri x artı e üzeri eksi x bölü 2.
+
+559
+01:39:43,092 --> 01:39:47,092
+Sinüs hiperbolik fonksiyonu da
+
+560
+01:39:50,036 --> 01:39:56,736
+e üzeri x, eksi e üzeri eksi x bölü, 2 şeklinde tanımlanıyor.
+
+561
+01:40:12,372 --> 01:40:14,032
+eleman R için
+
+562
+01:40:14,032 --> 01:40:15,792
+ayrıca
+
+563
+01:40:15,792 --> 01:40:17,292
+sinüs
+
+564
+01:40:17,292 --> 01:40:19,692
+pardon
+
+565
+01:40:19,692 --> 01:40:21,012
+kosinüs kare
+
+566
+01:40:21,012 --> 01:40:24,672
+hiperbolik
+
+567
+01:40:24,672 --> 01:40:26,351
+T diyelim
+
+568
+01:40:26,351 --> 01:40:27,872
+eksi
+
+569
+01:40:27,872 --> 01:40:29,512
+sinüs
+
+570
+01:40:33,844 --> 01:40:41,943
+kosinüs hiperbolik kalete, sinüs hiperbolik kalete, şunların farkı 1'e eşittir.
+
+571
+01:40:49,203 --> 01:40:49,703
+iş.
+
+572
+01:40:59,731 --> 01:41:21,891
+arasında şeylere benziyor. Sinüs ve kosinüs fonksiyonlarına benziyor. Arada çok az farklar var tabii ki. Kosinüs hiperbolik ve sinüs hiperbolik tanımlarını unutmuyorsunuz. İkisi de e üzeri x ve e üzeri x x fonksiyonları kullanılarak şu şekilde
+
+573
+01:41:22,547 --> 01:41:39,407
+tanımlanıyor. Bu kosinüs ve sinüs hiperboli tanımıdır. Bunlardan yararlanarak tanjant hiperbolik, kotanjant hiperbolik, sekant ve kosekant hiperbolik fonksiyonlarını da yazabiliriz.
+
+574
+01:41:39,407 --> 01:41:49,347
+Ayrıca şu kosinüs kare hiperbolik t eksi sinüs kare hiperbolik t olması bize şunu söylüyor.
+
+575
+01:41:56,148 --> 01:41:57,067
+eleman
+
+576
+01:42:00,627 --> 01:42:22,287
+türev sayısı için kosinüs hiperbolik t ve sinüs hiperbolik t. Bu değerler x kare eksi y kare eşit bir hiperbolünün üzerinde bulunur. Yani şu noktalar
+
+577
+01:42:24,115 --> 01:42:29,956
+x kare eksi y kare eşit bir hiperbolünün üzerinde bulunurlar.
+
+578
+01:42:32,036 --> 01:42:36,376
+Bu yüzden bunlara hiperbolik fonksiyonlar diyoruz.
+
+579
+01:42:36,695 --> 01:42:37,195
+Tamam mı?
+
+580
+01:42:37,956 --> 01:42:45,275
+Çünkü kosinüs hiperbolik, sinüs hiperbolik değerleri x kare eksi y kare eşit bir.
+
+581
+01:42:46,771 --> 01:42:49,471
+hiperbolünün üzerindedirler.
+
+582
+01:42:49,992 --> 01:42:52,912
+Dolayısıyla şunları da söyleyebiliriz aslında.
+
+583
+01:42:52,912 --> 01:42:55,912
+Kosinüs hiperbolik sıfır.
+
+584
+01:42:59,572 --> 01:43:01,012
+1'e eşittir.
+
+585
+01:43:02,791 --> 01:43:07,672
+Sinüs hiperbolik 0 ise 0'a eşittir.
+
+586
+01:43:13,300 --> 01:43:15,460
+Şuradan hemen kontrol edebilirsiniz.
+
+587
+01:43:16,500 --> 01:43:18,119
+x yerine sıfır alın.
+
+588
+01:43:18,559 --> 01:43:24,059
+e üzeri sıfır bir, e üzeri eksi sıfır, yani yine e üzeri sıfır bir olacak.
+
+589
+01:43:24,579 --> 01:43:26,420
+2 bölü 2, bir olacak.
+
+590
+01:43:26,619 --> 01:43:29,979
+Kosinüs hiperbolik sıfırın ne olduğunu görebiliyoruz?
+
+591
+01:43:30,059 --> 01:43:31,440
+Bir olduğunu görebiliyoruz.
+
+592
+01:43:31,440 --> 01:43:40,960
+Şuradan da bir eksi bir sıfır olacağı için sinüs hiperbolik sıfırın da sıfıra eşit olduğunu kolaylıkla görebiliyoruz aslında.
+
+593
+01:44:07,347 --> 01:44:15,128
+Sinüs hiperbolik ayrıca çift fonksiyondur. Sinüs hiperbolik de tek fonksiyondur. Bunların grafikleri de şöyle aslında.
+
+594
+01:44:16,087 --> 01:44:28,927
+Sinüs hiperbolik şöyle düşünün. Sinüs hiperbolik x diyelim. Bunu nasıl tanımladık? e üzeri x, eksi e üzeri x, eksi e üzeri x bölü 2 olarak tanımladık.
+
+595
+01:44:39,956 --> 01:44:44,996
+biraz çok güzel çizemedim ama
+
+596
+01:44:51,796 --> 01:44:53,036
+bir grafiyı sahne.
+
+597
+01:45:11,604 --> 01:45:13,984
+Böyle bir grafiği var sinüs hiperbolik.
+
+598
+01:45:16,144 --> 01:45:33,444
+Kosinüs hiperbolik ise bunların toplamları olduğu için eksisi de artısı da aynı değerleri alacağından şöyle açık bir şekilde çizelim.
+
+599
+01:45:33,444 --> 01:45:36,543
+Bu da ne kadar kötü çizdim.
+
+600
+01:45:42,899 --> 01:45:51,719
+bu da kosünosiperbonik x'in grafiği oluyor.
+
+601
+01:45:57,719 --> 01:46:10,720
+kare artı 2x, f'
+
+602
+01:45:57,427 --> 01:46:05,407
+yöndeki açı toplam formülleri, fark formülleri aslında sinüs ve kosinüstekilere benziyor. Onları da yazıp yükleyeceğim.
+
+603
+01:46:06,907 --> 01:46:16,327
+Türevlerini de önümüzdeki hafta şöyle bir 10-15 dakika bakarız, bitiririz bu konuyu. Şimdilik sizi daha fazla yormayayım.
+
+604
+01:46:17,907 --> 01:46:24,988
+Ben de yoruldum zaten. Bugün burada bitirelim, haftaya devam ederiz.
+
+605
+01:46:25,939 --> 01:46:34,800
+Size bunlarla ilgili sorular da koyacağım. Bunlarla ilgili derken, hiperbolikler değil de daha çok, neyi anlattık bugün?
+
+606
+01:46:37,800 --> 01:46:43,319
+Üstel logaritmik fonksiyonlarının türevlerini falan verip, logaritmik türevi aslında gösterdim.
+
+607
+01:46:43,319 --> 01:46:50,619
+En önemli şey oydu, logaritmik türevle ilgili sorular koyarım size.
+
+608
+01:46:52,372 --> 01:46:58,612
+Hepsini de zaten tekrar etmiş olursunuz onların.
+
+609
+01:46:59,592 --> 01:47:04,912
+Sorusu olan varsa kalıp sorabilir, sorunuz yoksa bitirelim.
+
+610
+01:47:06,612 --> 01:47:08,771
+Hepinize iyi günler diliyorum.

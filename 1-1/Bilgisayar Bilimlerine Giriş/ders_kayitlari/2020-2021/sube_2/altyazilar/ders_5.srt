@@ -1,0 +1,3155 @@
+1
+00:04:28,372 --> 00:04:30,372
+Evet, günaydın arkadaşlar.
+
+2
+00:04:30,372 --> 00:04:32,372
+Şimdi geçen hafta sizinle
+
+3
+00:04:32,372 --> 00:04:35,372
+en son şey noktasında kalmıştık
+
+4
+00:04:35,372 --> 00:04:38,372
+sayı sistemleri noktasında kalmıştık
+
+5
+00:04:38,372 --> 00:04:40,372
+sayı sistemlerini konuşmuştuk
+
+6
+00:04:40,372 --> 00:04:43,372
+sayı sistemleri arasındaki dönüşümlerden bahsetmiştik
+
+7
+00:04:45,372 --> 00:04:47,372
+Şimdi bugün kaldığımız yerden devam edeceğiz
+
+8
+00:04:48,276 --> 00:04:59,276
+Bu arada şunu da baştan bir söylemekte fayda görüyorum. Tersin başlangıç saati 9, hani teknik aksaklık, alışma vesaire diye genelde ben bir 5-10 dakika bekliyordum.
+
+9
+00:04:59,276 --> 00:05:05,276
+Ama zaten sistem sizin önceden bağlanmanıza izin veriyor. Siz de önceden burada olabiliyorsunuz benim gibi.
+
+10
+00:05:05,276 --> 00:05:13,004
+Oysa 9 dedim mi başlayacağız bundan sonra. Çok fazla geciktirmenin ya da bekletmenin bir hâlim yok. Sonra alışkanlık haline gelecek anladığım kadarıyla çünkü.
+
+11
+00:05:13,267 --> 00:05:27,827
+Evet, bunu da aradan çıkarttıktan sonra başlayalım. Şimdi operatörler konusunda şundan dolayı özellikle konuşuyor olacağız. Toplama, çıkartma, çarpma, bölme ve mod gibi işlemleri zaten biliyor olmanız lazım.
+
+12
+00:05:29,108 --> 00:05:50,867
+Ancak ve lakin bunların, bu işlemlerin tamamının hangi işaretlerle nasıl, nerede, ne şekilde ifade edildiğini konuşuyor olacağız ki, algoritma oluşturduğumuz zaman, o algoritmaya ait akışları çizmeye başladığımız zaman, hepimizin anladığı net ve temiz bir dil olsun.
+
+13
+00:05:51,764 --> 00:05:55,364
+Ortada uçuşan tuhaf semboller, işaretler olmasın.
+
+14
+00:05:55,364 --> 00:06:07,364
+Şimdi, aritmetik operatörler noktasında toplama, çıkartma, çarpma ve bölme noktasında herhangi bir sıkıntınız olmaması lazım.
+
+15
+00:06:07,364 --> 00:06:11,163
+Modunda ne olduğunu zaten biliyorsunuz diye tahmin ediyorum.
+
+16
+00:06:11,163 --> 00:06:12,163
+Ne yapıyoruz?
+
+17
+00:06:12,963 --> 00:06:19,564
+Bir sayının başka bir sayıya göre modunu aldığımız zaman, misal 7'nin 2'ye göre modu nedir?
+
+18
+00:06:25,363 --> 00:06:52,363
+Şimdi bir, tamam bravo. Nasıl buluyoruz? Basit bir hesap. Yedi'yi ikiye bölüyoruz. Tam bölünebil... Pardon. Tam bölünmeyeceği için kalan kısmına bakıyoruz. Ve bizi bir sonucuna götürüyor bu durumda. Şimdi bu toplamanın yanında gördüğünüz artı işareti, çıkartmanın yanında gördüğünüz eksi işareti, çarpmanın yanında gördüğünüz...
+
+19
+00:06:52,851 --> 00:06:55,411
+yıldız işareti, bölmenin yanında gördüğünüzde
+
+20
+00:06:56,692 --> 00:07:00,791
+bölü işareti, modun yanında da sadece mod olarak yazıldığını görüyorsunuz.
+
+21
+00:07:01,051 --> 00:07:03,351
+Dolayısıyla bir akış içerisinde
+
+22
+00:07:03,611 --> 00:07:05,911
+bu işlemlerden herhangi birini yapacaksanız
+
+23
+00:07:06,931 --> 00:07:07,951
+bu
+
+24
+00:07:08,211 --> 00:07:10,771
+operatörleri, bu işaretleri kullanıyor olmanızı
+
+25
+00:07:11,031 --> 00:07:12,812
+bekliyorum, aklınızda olsun.
+
+26
+00:07:13,851 --> 00:07:16,411
+Operatörlere baktığımız zaman
+
+27
+00:07:16,704 --> 00:07:42,563
+Yani sadece aritmetik operatörler yok, ilişkisel operatörler de var. İlişkiden kastımız ya da şeyimiz ne, hedeflediğimiz ne? İki operant arasındaki durumu netleştirebilmek. Yani birinin diğerinden büyük olması, küçük olması, büyük eşit olması, küçük eşit olması, eşit olması ya da eşit olmaması.
+
+28
+00:07:44,339 --> 00:07:53,339
+Baktığımız durumlar bunlar. Şimdi burada büyüktür ve küçüktür işaretiyle ilgili bir sıkıntı olacağını sanmıyorum. Asıl problem zaten şeyde başlıyor. Büyük eşit ve küçük eşit.
+
+29
+00:07:54,339 --> 00:08:06,339
+Şimdi normal şartlarda büyük eşiti matematikte nasıl ifade ediyorsunuz? Büyük işaretinin alttaki o yamuk kısmının altını onunla paralel bir düz çizgi çekiyorsunuz.
+
+30
+00:08:07,732 --> 00:08:25,732
+Benzer şekilde küçük yeşil içinde aynı şeyi yapıyorsunuz. Yani o ok başı gibi olan işaretin alt tarafına kendisiyle paralel bir doğru dağ çiziyorsunuz. Şimdi klavyenizi uzun uzun incelerseniz öyle bir işaret olmadığını görürsünüz.
+
+31
+00:08:34,740 --> 00:08:54,240
+Dolayısıyla onun yerine ne yapıyoruz? Büyük eşit için önce büyük sonra eşiti, küçük eşit için de önce küçük işaretini sonra eşit işaretini kullanıyoruz. Bunları beraber kullandığımız zaman biri büyük eşit yeri de küçük eşite denk gelmiş oluyor. Şimdi burada sıkça yapılan bir hata var.
+
+32
+00:08:55,124 --> 00:09:09,923
+Dikkat edin, aslında konuştuğumuz gibi yazıyoruz. Yani önce büyük işareti, sonra eşit işareti. Önce küçük işareti, sonra eşit işareti. Ancak ve lakin küçük eşit işareti sol tarafa bir ok.
+
+33
+00:09:10,964 --> 00:09:18,964
+izlenimi verir. Sanki sol tarafı gösteren bir okmuş gibi gelir. Dolayısıyla bazı arkadaşlar kaptırıp büyük eşiti de
+
+34
+00:09:18,964 --> 00:09:24,964
+eşit büyük şeklinde yazıyor. Öyle bir yazım yok, öyle bir gösterim de yok. Dolayısıyla lütfen buna dikkat edin.
+
+35
+00:09:25,964 --> 00:09:27,964
+Eşitlik için
+
+36
+00:09:29,964 --> 00:09:35,536
+Standart eşit işaretini kullanıyoruz. Eşit değil için dikkat edin. Eşit işaretinin üzerine bir
+
+37
+00:09:35,535 --> 00:09:45,775
+Çizgi çekilmiş durumda, hafif eğimli bir çizgi çekilmiş durumda. Böylece bu operatörün eşit olmama koşulunu aradığını biliyoruz ya da anlıyoruz.
+
+38
+00:09:52,596 --> 00:10:00,596
+Klavyede aslında şöyle, sembol listeleri arasında var. Yani şeye geldiğimiz zaman daha net göreceksin.
+
+39
+00:10:00,596 --> 00:10:15,371
+Bütün ASCII tablosuna ya da UTF-8 tablosuna geldiğimiz zaman onun olduğunu göreceksin, öyle söyleyeyim. Ancak ve lakin biz burada böyle kullanacağız.
+
+40
+00:10:16,947 --> 00:10:22,387
+Zaten programlamaya geçtiğiniz zaman da başka bir operatör olarak kullanacağız. Şimdi mantıksal operatörler
+
+41
+00:10:24,488 --> 00:10:30,467
+Şimdi mantık dersi aldınız mı ya da ne kadarınız aldı emin değilim ama
+
+42
+00:10:31,907 --> 00:10:35,947
+Teknik olarak baktığımız zaman üç tane mantıksal operatörümüz var temel.
+
+43
+00:10:36,367 --> 00:10:43,367
+Bir tanesi end operatörü yani ve operatörü, diğeri veya operatörü or yani, diğeri de
+
+44
+00:10:45,331 --> 00:10:53,011
+ters operatörü yani not diye geçiyor, negation diye bahsediyoruz. Şimdi
+
+45
+00:10:54,552 --> 00:10:55,312
+ve
+
+46
+00:10:56,591 --> 00:10:59,932
+iki koşulu birbirine bağlayan
+
+47
+00:11:00,692 --> 00:11:04,531
+bir operatör. İki koşulu birbirine bağlamaktan kastımız ne?
+
+48
+00:11:09,940 --> 00:11:34,500
+Mesela bir sayının hem 5'ten küçük hem de eksi 1'den büyük olmasını beraber arıyorsanız, yani eksi 1 ile 5 arasında olmasını arıyorsanız, o zaman ne diyorsunuz? x eksi 1'den büyük ve x 5'ten küçük. Bu iki şartı beraber sağladığı zaman
+
+49
+00:11:34,740 --> 00:11:56,740
+Bu işin sonu olumlu bitiyor. Yani olumludan kasıtlaşıyor. Mesela x 6 ise, eksi birden küçük, evet bir şartı sağlıyor ama beşten, pardon eksi birden büyük bir şartı sağlıyor ama beşten küçük değil. Dolayısıyla ikinci şartı sağlamıyor. Dolayısıyla iki koşulu birden yerine getirmediği için bu iş olumsuz sonuçlanıyor.
+
+50
+00:12:01,631 --> 00:12:10,192
+Yani VYA operatörü ise iki şarttan ya da daha fazla şarttan birinin sağlanmasının yeterli olduğu durumlar için kullanıyoruz. Yani
+
+51
+00:12:10,192 --> 00:12:25,431
+Deminki şartı biraz değiştirelim ya da aynen kullanalım. Eksi birden küçük ya da beşten büyük olsun. Bu sefer biraz değiştirelim. Yani o aralık dışında kalan yerleri arıyor olalım.
+
+52
+00:12:25,875 --> 00:12:39,076
+vay ile birleştirdiğimiz için bunu x6 olduğunda 5'ten büyük olduğu için şartlardan birini sağlamış olacak. Dolayısıyla toplama baktığınız zaman o iş olumlu pozitif bitiyor olacak.
+
+53
+00:12:39,076 --> 00:12:48,915
+Mantıksal negation'da aradığınız koşulun tersine bakıyor olmak.
+
+54
+00:12:52,052 --> 00:13:06,052
+Biraz daha sonra örnekler üzerinden konuşurken daha kafanıza yatacak ya da aklınıza yatacağını düşünüyorum. O yüzden devam edelim. Şimdi bunun dışında neyimiz var?
+
+55
+00:13:09,587 --> 00:13:11,587
+Bit bazında işlemlerimiz var.
+
+56
+00:13:13,587 --> 00:13:16,587
+İkilikSAY sistemini konuşurken anlatmıştım.
+
+57
+00:13:17,587 --> 00:13:22,587
+İkilikSAY sisteminde her bazamak için ne diyorduk? Bir bit olduğunu söylüyorduk.
+
+58
+00:13:22,587 --> 00:13:31,587
+Bitwise operator dediğimiz zaman bu bitlerin üzerinde işlem yapan operatörlerden, bunların üzerinde işlem gerçekleştirilen operatörlerden bahsediyoruz.
+
+59
+00:13:31,587 --> 00:13:35,587
+Burada şimdi kafanızı karıştıracak şeylerden bir tanesi burada da AND ve OR.
+
+60
+00:13:37,076 --> 00:13:49,076
+operatörleri var. Bunun dışında bir de ExclusiveOr var. Onun ne olduğuna birazdan geleceğiz, daha detaylı konuşacağız. Yine Shift ve Rotate gibi
+
+61
+00:13:49,076 --> 00:13:56,043
+operatörleri de konuşuyor olacağız. Şimdi End ile başlayalım.
+
+62
+00:14:01,779 --> 00:14:14,139
+Herhangi iki sayını bitwise end operatörüyle işleme soktuğunuz zaman ne oluyor? O sayıların, o iki sayının
+
+63
+00:14:15,412 --> 00:14:21,111
+Tek tek bütün basamakları ENT işlemine tabi tutuluyor, karşılıklı olarak denk gelenleri. Yani
+
+64
+00:14:21,111 --> 00:14:31,511
+1 basamağı, 2 basamağı, 4, 8, 16, 32, 64 ve 128 basamağı tek tek ENT işlemine tabi tutuluyor. ENT işlemi nasıl çalışıyor peki?
+
+65
+00:14:32,563 --> 00:14:45,603
+Aslında mantıksal AND'in çalışmasına benzer bir durum var. Şimdi mantıksal AND'de ne yapıyorduk? İki tane şartı bir araya getiriyoruz. Bu iki şartın sağlandığı zaman şart sağlanmış oluyor.
+
+66
+00:14:46,743 --> 00:14:59,603
+Bunun dışındaki tüm durumlar için yani iki şarttan herhangi birini sağlamadığınızda ya da her iki şartı da sağlamadığınızda sonuç olumsuz oluyor. Aslında sağdaki tabloya baktığınız zaman da benzer bir durum görüyorsunuz.
+
+67
+00:15:00,467 --> 00:15:07,628
+Yani A değeri 0, B değeri 0 ise yani şartlar sağlanmamışsa gibi düşünün, sonuç 0 oluyor.
+
+68
+00:15:07,628 --> 00:15:16,668
+A ya da B'den biri 1, diğeri 0 ise sonuç gene 0 oluyor çünkü şartlardan biri sağlanmış biri sağlanmamış gibi düşünüyorsunuz.
+
+69
+00:15:16,668 --> 00:15:21,467
+Her iki şartla sağlanmışsa yani her ikisi de 1 ise sonuç 1 oluyor.
+
+70
+00:15:28,371 --> 00:15:30,371
+end işlemine sokarsak ne olur?
+
+71
+00:15:33,683 --> 00:15:57,923
+Şimdi adım adım gidelim. Sağ baştan başlayarak gidelim. Sağ taraf aslında baktığımız zaman ne? Least significant bit. LSB diye görürsünüz. Yani değeri en düşük olan bit. En soldaki ise yazarken sola doğru basamakların büyüdüğünü biliyorsunuz. Most significant bit. MSB diye görürsünüz.
+
+72
+00:16:01,395 --> 00:16:03,395
+Şimdi
+
+73
+00:16:05,635 --> 00:16:07,635
+Ne olacak? Sağdan başlıyoruz.
+
+74
+00:16:08,155 --> 00:16:11,755
+Sıfırla bir entlediğimiz zaman sonuç sıfır.
+
+75
+00:16:11,755 --> 00:16:14,755
+Sıfırla sıfır entlediğimiz zaman sonuç sıfır.
+
+76
+00:16:14,755 --> 00:16:17,955
+Birle bir entlediğimiz zaman sonuç bir.
+
+77
+00:16:17,955 --> 00:16:20,955
+Birle bir entlendiği zaman sonuç bir.
+
+78
+00:16:21,235 --> 00:16:25,836
+Bundan sonrası için geri kalan içinde aslında sonucun sıfır olacağını görüyorsunuz.
+
+79
+00:16:25,836 --> 00:16:28,635
+Dolayısıyla beklediğimiz sonuç ne?
+
+80
+00:16:40,532 --> 00:16:42,828
+Şimdi, o robotları
+
+81
+00:16:46,035 --> 00:16:47,155
+Benzer şekilde
+
+82
+00:16:52,916 --> 00:17:14,496
+A ve B şartlar olarak düşünün. İkisi de sıfır olduğu zaman sıfır ama ikisinden biri bir olduğu yani şartlardan herhangi biri sağlandığı zaman sonuç ne bir ya da iki şart birden sağlandığında gene sonuç bir olacak. Yani temel olarak gene mantıksal veya işlemi OR operatörüne
+
+83
+00:17:15,059 --> 00:17:29,259
+Benzer bir işlem. Sadece bunu bitwise olarak gerçekleştiriyoruz. Yani sayıya ait bitler üzerinde gerçekleştiriyoruz. Bu durumda bu örnekte verilen işlemin sonucunun ne olduğunu söyleyecek olan var mı?
+
+84
+00:17:34,612 --> 00:17:36,612
+Sağdan başlayayım hocam, soldan mı?
+
+85
+00:17:37,332 --> 00:17:38,372
+Sağdan başla.
+
+86
+00:17:39,271 --> 00:17:44,112
+1, 0, 1, 1, 1, 1, 0, 0.
+
+87
+00:17:44,692 --> 00:17:50,012
+Tamam. Peki, bana desimal karşılığını söyleyebilecek misin?
+
+88
+00:17:52,892 --> 00:17:54,311
+Ne karşılığını hocam?
+
+89
+00:17:54,692 --> 00:17:57,632
+Desimal, yani onluk sayı sisteminde bu sayı kaçtır?
+
+90
+00:17:58,492 --> 00:18:01,711
+He, toplam mı? O zaman 73 olacak hocam.
+
+91
+00:18:02,228 --> 00:18:07,528
+73, emin misin? Son kararım bu. Bu arada kim yapıyor?
+
+92
+00:18:07,528 --> 00:18:08,528
+Aa yok yok yok.
+
+93
+00:18:08,528 --> 00:18:11,528
+Ekranda göremediğim için şey oluyor.
+
+94
+00:18:11,528 --> 00:18:14,028
+Hocam 61 olacak pardon.
+
+95
+00:18:14,028 --> 00:18:15,528
+İsim neydi?
+
+96
+00:18:15,528 --> 00:18:17,528
+[öğrenci].
+
+97
+00:18:17,528 --> 00:18:18,528
+Tamam inan.
+
+98
+00:18:18,528 --> 00:18:22,528
+Şimdi bunu şundan dolayı sordum.
+
+99
+00:18:23,476 --> 00:18:45,956
+Öncelikle teşekkürler uzun uzun işlemi anlattığım için bu da önemli. Ama burada özellikle de bu sayı basamak basamak yazıldığı için çok hızlı bir şekilde aslında sayının 61 olduğunu tak diye söyleyebiliyor olmanız lazım. Şöyle ki şimdi A'yı ve B'yi alt alta yazıp baktığınız zaman ne görüyorsunuz?
+
+100
+00:18:46,708 --> 00:18:51,528
+B'de A'ya göre farklı olan tek şey en sağdaki 1, doğru mu?
+
+101
+00:18:53,608 --> 00:18:58,887
+Dolayısıyla bu iki sayıyı orladığım zaman değer değiştirecek olan tek bit de o.
+
+102
+00:18:59,847 --> 00:19:05,588
+Dolayısıyla A zaten 60'tı, son biti de değişecek ve bir daha gelecek, sonuç 61.
+
+103
+00:19:07,728 --> 00:19:09,847
+Bunu size şundan dolayı anlatıyorum.
+
+104
+00:19:10,988 --> 00:19:11,568
+Özellikle
+
+105
+00:19:12,372 --> 00:19:18,172
+Bilgisayar mühendisliği kapsamında ikili sistemde, egzadesimal sistemde birçok sayı ile uğraşacaksınız.
+
+106
+00:19:18,312 --> 00:19:19,412
+Uğraşmanız gerekecek.
+
+107
+00:19:20,211 --> 00:19:21,152
+Anlamanız gerekecek.
+
+108
+00:19:21,392 --> 00:19:28,372
+Hele ki gümlü sistemlerle çalışmaya karar verirseniz, mesela bu işi böyle...
+
+109
+00:19:29,663 --> 00:19:56,463
+nasıl diyeyim hani refleksif şekilde yapabiliyor hale gelmeniz gerekecek. Dolayısıyla bunlar önemli. Kendi kendinize bu konuda lütfen çalışın. Yani rastgele iki sayı yazın, onu hexadecimal çevirin, oradan ikilik sayı sistemine çevirin, orada ikilik sayı sisteminde işlem yapın, sonra tekrar tutun başka bir sayılık sisteme çevirin, ondan sonra orada bir işlem yapın, böyle devam edin.
+
+110
+00:19:57,395 --> 00:19:59,395
+Biraz protein olsun bu konuda.
+
+111
+00:20:03,124 --> 00:20:06,644
+Bir de konuşmadığınız durumlarda mikrofonunuzu kapalı tutun lütfen.
+
+112
+00:20:11,380 --> 00:20:14,460
+Peki, işin beni sözünüze, sözünüze, buradayım.
+
+113
+00:20:14,460 --> 00:20:15,420
+Nasılsınız?
+
+114
+00:20:32,852 --> 00:20:35,612
+Evet.
+
+115
+00:20:35,612 --> 00:20:40,032
+Şimdi nerede kaldık?
+
+116
+00:20:47,827 --> 00:20:52,327
+Bir sonraki konuşacağımız şey
+
+117
+00:20:52,327 --> 00:20:54,028
+XOR operatörü.
+
+118
+00:20:54,028 --> 00:20:55,327
+XOR aslında
+
+119
+00:20:57,028 --> 00:20:58,427
+Şöyle çalışıyor.
+
+120
+00:20:59,927 --> 00:21:10,627
+İki değerin, karşılıklı iki değerin, buradaki A ve B değerlerin aynı olması durumunda 0, farklı olması durumunda 1 üretiyor.
+
+121
+00:21:10,627 --> 00:21:12,228
+Bunu aslında şöyle de
+
+122
+00:21:12,827 --> 00:21:14,028
+görebilirsiniz.
+
+123
+00:21:15,155 --> 00:21:34,155
+Bir şekilde bir sayısının çift olmasına tamamlıyor gibi düşünebilirsiniz. Yani eğer A ya da B'den biri 1 ise birilerinin çift olması için bir 1'e daha ihtiyaç var. İkisi de 1 ise 1'e ihtiyaç yok, 0. İkisi de 0 ise 1'e ihtiyaç yok, 0 gibi de düşünebilirsiniz.
+
+124
+00:21:39,988 --> 00:22:00,628
+Yani tabiki diğer operatörlerde önemli ama Igzor mesela bilgisayar haberleşmesindeki birçok şeyin temelinde vardır. Şifrelemenin temelinde vardır. Simetrik şifrelemelerde Igzor operatörü kullanılır. Bunun dışında bilgisayar ağlarında siz aktif olarak her daim
+
+125
+00:22:00,756 --> 00:22:02,756
+Aslında kullanıyorsunuz ya da
+
+126
+00:22:03,756 --> 00:22:07,756
+Farkında olmadan sizin yerinize kullanılıyor. Dolayısıyla önemli bir operatör.
+
+127
+00:22:07,756 --> 00:22:09,756
+Bilinmesi gereken bir operatör.
+
+128
+00:22:09,756 --> 00:22:11,756
+Şimdi bu mantıkla baktığımız zaman
+
+129
+00:22:12,756 --> 00:22:17,756
+A, X, or B'nin sonucunun ne olacağını söyleyecek olan arkadaşınız var mı?
+
+130
+00:22:26,900 --> 00:22:35,400
+Böyle buraya çat diye yazmaktan bahsetmiyorum. Demin [öğrenci]'ın yaptığı gibi adım adım anlatıyor olmaktan bahsediyorum.
+
+131
+00:22:35,400 --> 00:22:37,900
+Söyleyebilir miyim hocam?
+
+132
+00:22:37,900 --> 00:22:45,900
+Tabii isim neydi? Dediğim gibi ben şu an herkesi aynı anda göremediğim için yani tek ekranda [öğrenci]'m mı?
+
+133
+00:22:45,900 --> 00:22:46,900
+Evet.
+
+134
+00:22:47,155 --> 00:22:56,756
+Tamam, yani şöyle, şundan dolayı bir tarafta chat'i açık tutuyorum, bir şey yazarsanız göreyim diye. Bir taraftan katılımcıları da açık tutarsam, ben slide'ı görmüyorum.
+
+135
+00:22:56,756 --> 00:23:07,955
+Dolayısıyla ara ara açıp kapatmam gerekiyor. O yüzden de kendinizi tanıtırsanız konuşmadan önce sevinirim. Evet, dinliyorum.
+
+136
+00:23:08,307 --> 00:23:13,927
+Hocam, farklı olanları bir alacağımızı düşünerekten söylüyorum.
+
+137
+00:23:14,488 --> 00:23:14,748
+Tamam.
+
+138
+00:23:15,567 --> 00:23:17,288
+Sol taraftan başlayacağım.
+
+139
+00:23:17,847 --> 00:23:18,768
+Sağdan başlayacağım.
+
+140
+00:23:18,847 --> 00:23:31,008
+Sağdan başlayacağım. Sağ tarafta sıfır bir farklı bir alacağız. Sonra aynı geliyor üç tane. Onlar sıfır olacak. Sonra yine iki tane farklı var. Onları da bir diyeceğiz.
+
+141
+00:23:31,008 --> 00:23:34,927
+Yani sayı şey olacak. Bir bir.
+
+142
+00:23:35,667 --> 00:23:39,027
+1-1-0-0-0-1 olacak.
+
+143
+00:23:39,947 --> 00:23:41,327
+1-1 değil.
+
+144
+00:23:42,587 --> 00:23:43,487
+0-0-1
+
+145
+00:23:43,487 --> 00:23:46,307
+1-1-0-0-0-1 olacak.
+
+146
+00:23:46,827 --> 00:23:48,307
+Tamam işlem doğru ama bakın.
+
+147
+00:23:49,307 --> 00:23:53,527
+Bu da sıkça karşılaşılan sıkıntılardan bir tanesi.
+
+148
+00:23:54,427 --> 00:23:58,447
+İşlemi bildiği halde bunu yaparken hata yapma durumu.
+
+149
+00:23:58,880 --> 00:24:00,620
+Heyecan yapacağınız bir şey yok.
+
+150
+00:24:00,620 --> 00:24:02,480
+Stres yapacağınız bir şey yok.
+
+151
+00:24:02,480 --> 00:24:03,980
+Bu hani
+
+152
+00:24:03,980 --> 00:24:10,340
+Şu an çok daha başındasınız tabi işin ama
+
+153
+00:24:10,340 --> 00:24:13,880
+Hayatınız boyunca böyle gidecek.
+
+154
+00:24:13,880 --> 00:24:14,940
+Hani şu an belki
+
+155
+00:24:16,884 --> 00:24:43,884
+Başladığınız üniversitenin ilk bölümünün, ilk dersinin ilk söz alma noktasındasınız. Dolayısıyla heyecanlısınız, okey. Daha sonrasında başka heyecanlarınız da olacak bu üniversite hayatı boyunca. Baya terleyeceksiniz de. Ancak ve lakin hani büyük ihtimalle hayatınızın büyük bir bölümü bu ve benzeri streslerle geçecek. Yani mesela sistem yöneticisi olursanız
+
+156
+00:24:44,596 --> 00:24:49,596
+sistem upgrade'i yaparken ya da sistemde bir problem olduğunda stres altında olacaksınız.
+
+157
+00:24:49,596 --> 00:25:00,596
+İşte, diğerlerde yazılım geliştirirseniz, o yazılım sırasında, geliştirme sırasında çıkan bug'lardan vesaireden dolayı stres altında olacaksınız.
+
+158
+00:25:00,596 --> 00:25:05,596
+Security ile ilgili bir şeyler yapıyor olacaksanız zaten her daim stres altında olacaksınız.
+
+159
+00:25:05,596 --> 00:25:09,596
+Dolayısıyla, işiniz bu.
+
+160
+00:25:10,548 --> 00:25:14,788
+Böyle bir strese sıkıntıyı her daim her yerde her şekilde yaşayabilirsiniz.
+
+161
+00:25:15,847 --> 00:25:19,288
+Bunu yönetmenin bir yoluna bakın lütfen.
+
+162
+00:25:20,567 --> 00:25:24,228
+Bunu bilecek, bulacak olan sizlersiniz.
+
+163
+00:25:24,748 --> 00:25:26,127
+Kimse sizin yerinize bunu bulamaz.
+
+164
+00:25:26,288 --> 00:25:28,167
+Yani sizi sizden daha iyi tanıyan gibi bir şey yok.
+
+165
+00:25:28,607 --> 00:25:30,447
+Sadece bazı şeylerin farkında olmayabilirsiniz.
+
+166
+00:25:31,768 --> 00:25:33,607
+Bunu da şundan dolayı söylüyorum.
+
+167
+00:25:34,836 --> 00:26:00,395
+Sınavda da benzer stresler yapacaksınız. Yani soruyu yetiştireyim, bilmem ne olsun, o olsun, bu olsun, doğru mu? Bunlar altında doğru bildiğinizi yanlış yaparsanız hani zararı size olur. Dolayısıyla buna ufak ufak şey yapın. Bakının nasıl çözülebilir, nasıl üzerinden gelebiliriz, nasıl şey yapabiliriz. En hani şeyi brute force.
+
+168
+00:26:00,884 --> 00:26:25,423
+Diyeceğimiz kaba güçle çözme yöntemi bunun üzerine gitmektir. Hani ha tamam, hocayla konuşurken bir şeyleri, hay heyecanlanıyorum, birbirine giriyor, o zaman birkaç kere daha konuşayım dersiniz. İşte ne bileyim sınavda problem oluyorsa, sınavla ilgili benzer şekilde o zaman birkaç tane daha ekstra sınava gideyim, alışayım bu işe dersiniz. Bazen işe yarar, bazen yaramaz. Dolayısıyla kendi yönteminizi de siz buluyor olacaksınız.
+
+169
+00:26:27,955 --> 00:26:29,955
+Şimdi
+
+170
+00:26:31,316 --> 00:26:32,816
+Shift işlemi
+
+171
+00:26:35,115 --> 00:26:37,675
+Shift işleminde yaptığımız şey
+
+172
+00:26:37,935 --> 00:26:42,036
+Sağa ya da sola doğru yani shift işlemini söylediğimiz zaman
+
+173
+00:26:43,316 --> 00:26:47,675
+Şeyi de belirtiyor olmamız lazım. Bunun yönünü de belirtiyor olmamız lazım.
+
+174
+00:26:51,923 --> 00:27:17,923
+Aslında sayının bitlerini ne yapıyoruz? Belirttiğimiz yerine doğru kaydırıyoruz. Kaydırırken de nereden başlıyoruz? İşlemi ne tarafa doğru yapıyorsak o taraftan başlıyoruz. Mesela sola doğru shift edeceksek, bu meşhur A sayımız vardı 60 değerine sahip 00111100. Şimdi bu sayıyı iki kere
+
+175
+00:27:18,804 --> 00:27:23,044
+Sola doğru Shift ettiğimizde ne oluyor? Olana bir bakalım.
+
+176
+00:27:27,044 --> 00:27:29,044
+Baştaki iki tane sıfır
+
+177
+00:27:31,084 --> 00:27:33,404
+gidiyor, sona iki tane sıfır geliyor.
+
+178
+00:27:33,875 --> 00:27:44,275
+Bu nasıl gerçekleştiriliyor? Soldan başlayarak ne yapıyoruz? Sayıları, daha doğrusu bitleri bir basamak sola doğru atıyoruz birinci shift işlemi için.
+
+179
+00:27:44,275 --> 00:27:55,875
+Dolayısıyla en soldaki sıfırı bir basamak attığımız zaman zaten sekiz basamaklı bir sayıysa dokuzuncu basamak olmadığı için bu sıfır nereye gidiyor? Uzay boşluğuna gidiyor.
+
+180
+00:27:55,875 --> 00:27:59,723
+Dolayısıyla sayımızın ilk basamağı yine sıfır oluyor.
+
+181
+00:28:00,051 --> 00:28:03,371
+yandaki sıfırı kaydırdığımız için. Bir adım sonra
+
+182
+00:28:04,411 --> 00:28:06,451
+soldan üçüncü basamaktaki biri
+
+183
+00:28:07,731 --> 00:28:10,811
+bir basamak sola kaydırıyoruz. Yani yeni sayımız
+
+184
+00:28:11,051 --> 00:28:12,851
+birinci shift'in sonunda ne oluyor?
+
+185
+00:28:13,371 --> 00:28:16,171
+0, 1, 1, 1, 1, 1, 0, 0
+
+186
+00:28:18,231 --> 00:28:20,011
+haline geliyor.
+
+187
+00:28:20,531 --> 00:28:21,551
+Son basamak
+
+188
+00:28:22,571 --> 00:28:24,631
+sola shift edildikten sonra
+
+189
+00:28:24,948 --> 00:28:51,948
+Sağdaki basamağa konulacak herhangi bir değer yok. Çünkü o en least significant bit, yani en düşük değerli bit. O zaman ne oluyor? O uzay boşluğundan bir tane sıfır alıyoruz. Bu illa demin uzay boşluğuna gönderdiğimiz sıfır olmak zorunda değil. Uzay boşluğuna bir gönderdiğiniz zaman sağ taraftan biri almıyorsunuz. Gene sıfır alıyorsunuz. Bu birinci adım sonunda, birinci shift işlemi sonunda elde ettiğimiz değer.
+
+190
+00:28:52,372 --> 00:29:15,532
+Bu işi bir kere daha tekrarladığımız zaman ne olacak? En soldaki sıfır uzay boşluğuna gidiyor. Diğer birilerin hepsi birer basamak kaymış oluyor. Diğer basamakları da birer basamak kaydırıyoruz. Sonuçta sayı bir, bir, bir, bir, dört tane de sıfır. Dört tane bir, dört tane sıfır şekline geliyor.
+
+191
+00:29:21,683 --> 00:29:31,043
+Şimdi bu işlemi sola doğru yaptık. Sayımızın değeri 60'dı. İlk kez yaptığımız zaman oluşan
+
+192
+00:29:34,516 --> 00:29:36,516
+Bu sayının değeri ne?
+
+193
+00:29:37,516 --> 00:29:42,516
+0, 1, 1, 1, 1, 1, 0, 0, 0'ın değeri nedir arkadaşlar?
+
+194
+00:29:49,875 --> 00:29:58,195
+Okey. Bir adım sonra oluşan 1110000'ın değeri nedir?
+
+195
+00:30:04,756 --> 00:30:06,756
+eee
+
+196
+00:30:06,756 --> 00:30:11,756
+iki yüz kırk diyenler doğru, yüz seksen diyen arkadaş biraz yanıldı.
+
+197
+00:30:11,756 --> 00:30:14,756
+eee
+
+198
+00:30:14,756 --> 00:30:16,756
+şimdi
+
+199
+00:30:16,756 --> 00:30:18,756
+bu durumda
+
+200
+00:30:18,756 --> 00:30:33,327
+eee
+
+201
+00:30:19,731 --> 00:30:34,932
+Şunu çözebiliyor olmuş olmanız lazım. Bir kere sola doğru shift ettik. 60 olan sayı 120 oldu. İkinci sola shift yaptığımız zaman 240 oldu. Yani aslında sola doğru shift etmek bizim için bir taraftan da ne? 2 ile çarpmak.
+
+202
+00:30:38,163 --> 00:30:48,963
+Ne yapıyorsunuz çünkü? Bütün bitlerin değerlerini bir basamak sola alıyorsunuz. Dolayısıyla birler basamağındaki sayı ikiler, ikiler basamağındaki sayı dörtler basamağına geçiyor.
+
+203
+00:30:50,163 --> 00:31:00,963
+Dolayısıyla elde ettiğiniz sayı bir önceki sayının iki katı oluyor. Şimdi bu işi sağa doğru yaptığınız zaman ne olacak?
+
+204
+00:31:02,644 --> 00:31:06,043
+Özellikle de üç kere sağa doğru yaptığınız zaman ne olacak?
+
+205
+00:31:06,043 --> 00:31:08,043
+Ona bakalım.
+
+206
+00:31:11,476 --> 00:31:32,476
+Şimdi sağa doğru giderken de aynı şeyi yapıyoruz. Sadece yönünü değiştiriyoruz. İlk adımda ne yapacağız? En sağdaki sıfır uzay boşluğuna gidecek. Yanındaki sıfır geliyor olacak. Sonra...
+
+207
+00:31:33,940 --> 00:31:42,500
+Birin yerini kaydıracağız. Dörtler basamağından iki basamağına, sekiz basamağından dört basamağına, onaltıdan sekize, otuz ikiden onaltıya.
+
+208
+00:31:44,019 --> 00:31:51,380
+Sonraki iki sıfırın değeri de sağa doğru kayacak. En sola tekrar bir tane sıfır yittireceğiz.
+
+209
+00:31:59,988 --> 00:32:06,988
+Şimdi, birinci adımın sonunda bu oldu. Bir adım daha ilerlettiğimiz zaman
+
+210
+00:32:11,700 --> 00:32:13,700
+Acele etme [öğrenci], bekle.
+
+211
+00:32:15,700 --> 00:32:19,700
+Bir adım daha ilerlettiğimiz zaman ne olacak sayı? Ona bakalım.
+
+212
+00:32:23,316 --> 00:32:34,316
+Bir basamak sonra gene en sağdaki sıfır uzay boşluğuna gidecek. Sonraki dört tane bir, birer basamak birer bir kaymış olacak. Dolayısıyla
+
+213
+00:32:34,316 --> 00:32:46,316
+elde edeceğimiz sayı ne olacak? Dört tane sıfır, dört tane bir. Dolayısıyla on beş olacak.
+
+214
+00:32:48,211 --> 00:32:51,731
+Şimdi bu işlemi bir kere daha yaptığımız zaman sağa doğru
+
+215
+00:32:52,731 --> 00:32:54,331
+Ne olmasını bekliyoruz?
+
+216
+00:32:56,932 --> 00:32:57,932
+Birler
+
+217
+00:32:58,651 --> 00:33:01,371
+En sağdaki bir uzay boşluğuna gitti.
+
+218
+00:33:01,611 --> 00:33:04,731
+Dolayısıyla ondan önceki üç tane
+
+219
+00:33:06,131 --> 00:33:09,131
+Arkadaşlar chat ekranını bu şekilde
+
+220
+00:33:09,731 --> 00:33:12,731
+Kirletmeyin. Şu an oraya ben bir şeyler yazıyorum.
+
+221
+00:33:14,771 --> 00:33:23,112
+Açıklayarak yazıyorum, anlatarak yazıyorum. Aralarını boşuna aynı şeyleri tekrar tekrar yazarak dolduruyorsunuz şu an.
+
+222
+00:33:23,112 --> 00:33:25,751
+Ve takibi zorlaştırıyorsunuz. Yapmayın.
+
+223
+00:33:28,152 --> 00:33:37,531
+Özellikle cevaplamanızı istediğim zaman, biliyorum arada soru cümlesi kuruyorum ama özellikle cevaplamanızı istediğim zaman zaten evet hani biri cevaplayacak var mı vesaire diye belirtiyorum.
+
+224
+00:33:38,031 --> 00:33:40,872
+Şu an özellikle bir şeyler yazarken arasını böyle doldurmayın lütfen.
+
+225
+00:33:51,539 --> 00:34:13,539
+Şimdi sağ tarafta dört tane birimiz var takip eden. Bu birilerin en sağdaki uzay boşluğuna gidecek. Diğer biriler de birer bit sağa doğru kaymış olacak. Öndeki dört tane sıfır da yine birer bit sağa doğru kayacak ve en başa tekrar bir sıfır gelecek. Yani elde edeceğimiz sayı bu. Yani o da yediye denilmiş.
+
+226
+00:34:19,572 --> 00:34:29,811
+Sola doğru Shift işlemi ikiyle çarpma, sağa doğru Shift işlemi ise ikiye bölme anlamına geliyor. Ama bu bölme işlemi tam sayı bölme.
+
+227
+00:34:32,596 --> 00:34:56,795
+Yani eğer deminki örnekte olduğu gibi hani 60 ile başladığınız zaman böldüğünüz 30, bir daha böldüğünüz 15, 15'i ikiye böldüğünüz zaman 7,5 ama gördüğünüz değer 7,5 değil zaten olamaz da. Neden olamaz? Çünkü burada tam sayılar var sadece. Bizim bitlerimiz arasında buçuk değer ifade edebilecek bir şey şu an için yok. İleride olacak nasıl olacağını konuşacağız.
+
+228
+00:35:02,835 --> 00:35:03,835
+Peki.
+
+229
+00:35:06,555 --> 00:35:10,956
+Şimdi uzay boşluğu benim uydurduğum bir şey. Uzay boşluğu deyince
+
+230
+00:35:15,076 --> 00:35:22,916
+şey yapmayın. Teknik bir terim değil. O olayı böyle biraz daha şey haline getirdiğimiz durum. Ancak ve lakin
+
+231
+00:35:26,635 --> 00:35:29,916
+hep sıfır alınır. Bir vesaire almazsın.
+
+232
+00:35:31,860 --> 00:35:59,860
+O uzay boşluğu diyoruz çünkü orada aslında bağlı olduğu herhangi bir nokta yok, bir şey yok. Dolayısıyla hani işlemin dışına çıkıyorsun. Yani tanımlı bir sınırın dışına çıkıyorsun. Dolayısıyla oraya bir dediğin zaman zaten ne yapmış olursun? Gayipten sayı uydurmuş olursun. Dolayısıyla o yüzden hep sıfır üzerinden yürür bu iş normal olarak. Dolayısıyla da uzay boşluğu dediğimiz o yere sadece sıfır gider, sadece sıfır gelir. Çünkü zaten sıfır bizim için bir şey.
+
+233
+00:35:59,860 --> 00:36:21,860
+bir şey ifade etmiyor, boşluk dolduruyor gibi düşünün. Dört kere kaydırsak nasıl olurdu diye sormuş [öğrenci]. Şöyle, o zaman [öğrenci] rica edeceğim. Yaz bakalım nasıl olacağını. Nasıl olmasını bekliyordun. Üç kere yaptık bu işlemi. Dördüncüsünü de sen yap bakalım.
+
+234
+00:36:29,396 --> 00:36:40,676
+Evet, hala da diyorum 15-7.5 olamaz demiştim. Hala da diyorum. Hala da arkasındayım. Zaten 7 oldu farkındaysan.
+
+235
+00:36:46,708 --> 00:36:48,708
+Bunu bir kere daha kaydır bakalım.
+
+236
+00:36:53,396 --> 00:36:55,396
+Tamam, ne oldu yani?
+
+237
+00:36:55,396 --> 00:36:58,396
+Desimal olarak söyleyecek olursak.
+
+238
+00:36:58,396 --> 00:37:01,396
+Tamam, okey.
+
+239
+00:37:01,396 --> 00:37:03,396
+Doğru.
+
+240
+00:37:07,923 --> 00:37:10,743
+Anlaştık mı? Her şey yolunda mı?
+
+241
+00:37:16,884 --> 00:37:24,884
+Tamam peki, sıkıntı yok. Yani sizin kafanıza yatsın da gerisi önemli değil. Şimdi ara ara görebileceğiniz işlemlerden bir tanesi
+
+242
+00:37:27,884 --> 00:37:32,780
+Yani hocam ikiye bölünmüyorsa sayıyı biraz atlıyor. Ne olur mu?
+
+243
+00:37:37,012 --> 00:37:37,932
+Öğ...
+
+244
+00:37:44,532 --> 00:37:58,431
+Şimdi bitfaiz işlemler üzerinde iş yaparken derdiniz bu olmamalı. Öyle söyleyeyim. Yani işi böyle ondalık sayı sisteminde düşünüp ikilik sayı sisteminde sonuç üretmeye çalışıyor olmamanız lazım.
+
+245
+00:37:59,532 --> 00:38:06,632
+Dolayısıyla yani matematiksel olarak evet doğru ama hani mantık olarak ya da yöntem olarak çok yanlış.
+
+246
+00:38:07,731 --> 00:38:12,231
+İkilik sayı sisteminde düşünmeyi öğrenmeniz lazım. Bu işin doğrusu bu.
+
+247
+00:38:12,628 --> 00:38:37,908
+Hani öbür türlü hep şey kafasında kalırsınız. Özellikle mesela İngilizce konuşurken yaşadığınız sıkıntılarla aynı şekilde kalırsınız. Adam size İngilizce bir soru sorar. Siz bunu Türkçe'ye çevirmeye çalışırsınız. Türkçe cevap üretirsiniz. Ondan sonra o cevabı İngilizce'ye çevirmeye çalışırsınız. Bu şekilde
+
+248
+00:38:39,795 --> 00:39:04,416
+yaparsanız hem geriden gelirseniz hem de büyük ihtimalle hata yaparsınız. Ama siz de İngilizce düşünmeye başladığınız zaman, o refleksi kazandığınız zaman İngilizce soruya direkt İngilizce cevap verirsiniz. Şimdi bir dakika [öğrenci] sormuş. Aynı A sayısını 3 kere sola shift etsek? Şimdi dikkat edin.
+
+249
+00:39:05,364 --> 00:39:23,864
+Sayıları konuşurken nasıl gösterdim? Sekiz bitlik sayılar olduğunu söyledim. Sayılar onaltı bit demedim. Sayılar senin şu an gösterdiğin gibi on iki bit demedim. Sayılar sekiz bit dedim. Dolayısıyla sekiz bit sınırını koyduysam dokuzuncu bit yoktur.
+
+250
+00:39:25,460 --> 00:39:53,139
+Dolayısıyla en soldaki yani aslında baktığınız zaman bit sayıları da sıfırdan başlar. 0, 1, 2, 3, 4, 5, 6, 7. 7. biti bir daha sola shift etmeye kalktığım zaman uzay boşluğu yani gidiyor. Dolayısıyla bunu üç kere shift ettiğin zaman aynen öyle 1, 1, 1, 0, 0, 0, 0.
+
+251
+00:39:54,739 --> 00:40:18,739
+sıfır olacak. Yani fazla mı söyledim, eksik mi söyledim, emin olamadım söylerken. Ama senin yazdığın doğru. Bir, bir, bir, sıfır. Dört tane sıfır. Olması gereken kısım bu. Şimdi konuşacağımız bir diğer operatör, Rotator Operatörü. Bunu aslında uzun önce bir süre bu operatörü pek görmeyeceksiniz. Nerede göreceksiniz bu operatörü? SMBİL'de göreceksiniz.
+
+252
+00:40:23,476 --> 00:40:24,936
+Shift işleminde ne yapıyoruz?
+
+253
+00:40:25,876 --> 00:40:29,815
+En sağdaki, yani sağa doğru shift ediyorsak, en sağdaki biti uzay boşluğu diyoruz.
+
+254
+00:40:29,855 --> 00:40:33,936
+Sonra bütün bitleri sağdan sola doğru bir adım sağa kaydırıyoruz.
+
+255
+00:40:34,195 --> 00:40:41,496
+En soldaki bite de gene uzay boşluğundan, o meşhur uzay boşluğundan bir sayı yerleştiriyoruz.
+
+256
+00:40:41,496 --> 00:40:49,496
+Şimdi bu işi böyle yapmak yerine uzay boşluğunda gönderdiğiniz en sağdan biti alıp solda
+
+257
+00:40:49,907 --> 00:41:15,907
+yerine en anlamlı bite koyma şeklinde yaparsanız, biz bu işe rotate diyoruz. Dikkat edin grafiğe. Ne yapılmış? 0,1, 0,1, 0,1, 0,1, 0,1, 0,1 diye giden, bu sefer onaltı bitlik bir sayı var. Bu onaltı bitlik sayı üzerinde bir rotate işlemi yapılmış sağa doğru. En sağdaki bir değeri, en başa gelmiş.
+
+258
+00:41:18,516 --> 00:41:25,016
+Böyle yaptığınız zaman bunu da Rotate diyoruz. Bu Rotate'i sağa ya da sola doğru yapabilirsiniz.
+
+259
+00:41:25,016 --> 00:41:33,016
+Herhangi bir sıkıntısı yok vs. yok. Şu an için çok fazla kullanacağımız bir işlem değil, bir operatör değil.
+
+260
+00:41:33,016 --> 00:41:43,980
+Daha çok özellikle SM1'i de bolca kullanacaksınız. Orada daha kullanılması bir operatör. Şu an için kulak dolgunluğunuzun olması yeterli.
+
+261
+00:41:45,012 --> 00:41:47,012
+Şimdi, eee
+
+262
+00:41:49,012 --> 00:41:51,012
+Temellerden bahsediyoruz. Dolayısıyla, eee
+
+263
+00:41:51,012 --> 00:41:55,012
+Bu konuları da konuşmamız lazım. Bazı şeyleri kafanızda
+
+264
+00:41:55,012 --> 00:41:59,012
+Aydınlatacaktır diye tahmin ediyorum. Nedir o?
+
+265
+00:41:59,012 --> 00:42:06,012
+Şimdi bilgisayarda sayı sistemi olarak ikilik sayı sistemi kullanıyoruz. Yani her şey sadece sıfır ve birlerle ifade ediliyor.
+
+266
+00:42:06,012 --> 00:42:08,012
+Dolayısıyla eee
+
+267
+00:42:08,012 --> 00:42:08,876
+eee
+
+268
+00:42:11,059 --> 00:42:17,460
+Burada tam sayıları, kesinli sayıları, harfleri, karakterleri, resimleri, videoları nasıl ifade ediyoruz?
+
+269
+00:42:17,460 --> 00:42:21,539
+Yani nasıl oluyor da 01 ile ben şu an sizle
+
+270
+00:42:22,579 --> 00:42:30,019
+Zoom üzerinden konuşurken ekranda da bu yazıları, karakterleri, grafikleri görüyorsunuz.
+
+271
+00:42:30,579 --> 00:42:31,699
+Aslında
+
+272
+00:42:35,059 --> 00:42:37,699
+Bu işin temelinde
+
+273
+00:42:38,132 --> 00:42:43,412
+şeye bakıyor olmamız lazım. Neden ikilik sayı sistemini kullanıyoruz?
+
+274
+00:42:44,692 --> 00:42:50,732
+Şimdi daha önce historiyle ilgili yani tarihle ilgili konuşurken şey söylemiştim.
+
+275
+00:42:50,732 --> 00:42:55,772
+Farklı bilgisayar sistemlerinin farklı sayı sistemlerini kullandığını. Mesela PDP'nin
+
+276
+00:42:58,483 --> 00:43:06,483
+Optal sayı sistemi kullandığını, ilk bilgisayarlarda özellikle mekanik olanlarda onluk sayı sisteminin kullanıldığını
+
+277
+00:43:06,483 --> 00:43:14,483
+vs. söylemiştim. Baktığınız zaman misal ENIAC en basitinden onluk sayı sistemini kullanıyordu.
+
+278
+00:43:14,483 --> 00:43:20,483
+Biz niye ikilik sayı sistemini kullanıyoruz peki? Fikri olan var mı?
+
+279
+00:43:22,963 --> 00:43:26,683
+Aslında çok da fikre gerek yok. Bir kısmı slide'da yazıyor ama
+
+280
+00:43:30,996 --> 00:43:51,996
+gene de varsa açıklamak isteyen duymak isterim diye sormuştum. Şimdi bakın, onluk sayı sistemi kullandığınız zaman neye ihtiyacınız var? Bir basamağınız on farklı değer ifade edilir. Doğru mu? Şimdi bilgisayar sistemi dediğimiz sistemler neyle çalışıyor? Elektrik sinyalleriyle çalışıyor.
+
+281
+00:43:56,275 --> 00:44:12,275
+O grafikte şeyi görüyorsunuz, 0 volt, 0.5 volt, 2.8 volt, 3.0 volt diye bir şeyler işaretlenmiş. Sonra da yukarısında da 0, 1, 0 şeklinde sinyaller var. Şimdi neyi bekliyoruz biz?
+
+282
+00:44:16,275 --> 00:44:17,771
+Eğer ben
+
+283
+00:44:18,164 --> 00:44:25,403
+Elektrik sinyali olarak sıfır ifade etmek istiyorsam, oluşturduğum sinyalin sıfır seviyesinde olmasını bekliyorum.
+
+284
+00:44:25,403 --> 00:44:39,164
+Biri ifade etmesini istiyorsam, o kullandığım gerilim aralığı neyse, mesela 5V ise 5V, 3.3V ise 3.3V, 1.8V ise 1.8V da bir işaret görmeyi bekliyorum.
+
+285
+00:44:46,387 --> 00:45:07,987
+Jilet gibi çizilmiş şekilde olmaz. Nasıl olur? Burada aşağıda gördüğünüz gibi olur. Yani, mesela sıfır için kullandığımız sinyalde böyle parazitler görebilirsiniz. Neden görürsünüz? Çünkü elektromanyetik etkiden dolayı görürsünüz. Yani etrafta devamlı aktif olan, hareket halinde olan bir elektrik.
+
+286
+00:45:08,692 --> 00:45:35,851
+sinyalleri grubu var. Bu sinyallerin de diğer birbirlerine ve diğer bütün sinyallere karşı bir etkisi var. Dolayısıyla burada bir parazitlenme görürsünüz her zaman için. Artı bu elektrik sinyalini transmit ettiğiniz yolların durumu, şekli, yanından başka bir yol geçip geçmemesi vesairesi de hepsi bunların birer parametredir. Dolayısıyla ne yapıyor olmanız lazım?
+
+287
+00:45:37,043 --> 00:46:04,463
+Bu şekilde gördüğünüz gibi yani sıfırı tamamen mutlak sıfırda değil, 0.5 ile 0 arasında kabul edilmiş. Biri de 3.3 volt ile 2.8 volt arasında kabul edilmiş. Bu aralıklardaki değerler için ben yani 2.8 volttan büyük herhangi bir sinyal için bunu 1 kabul edebiliyorum. 0.5 den daha küçük herhangi bir sinyal için bunu ne kabul edebiliyorum? 0 kabul edebiliyorum. Kendime güvenli alanlar oluşturulmuş.
+
+288
+00:46:06,003 --> 00:46:31,003
+Şimdi, eee bunu eğer onluk bir sayı sistemi için yapmaya kalkarsanız ne olması gerekecek? Sıfırla 3.3 volt arasında on tane böyle band çekiyor olmanız, aralık oluşturuyor olmanız lazım. Bu durumda oluşacak aralıkların şeyi ne olabilir en fazla?
+
+289
+00:46:31,635 --> 00:46:56,635
+0.3V olabilir. Buradaki emniyet için ayırdığımız banttan bile daha küçük. Dolayısıyla, onluk sayı sistemi kullanmaya kalktığınız zaman, ne sıkıntısı var? Aynı gerilim bandında bir şekilde hataya daha açıksınız. Neden? En basiti bir...
+
+290
+00:46:56,692 --> 00:47:23,652
+Tanımlayabildiğiniz bant aralıkları daha düşük. İki, mesela siz altıyı ifade etmeye çalıştınız ama bu biraz daha düşük oldu. O zaman beş olacak. Biraz daha yüksek oldu. O zaman yedi olacak. Dolayısıyla iki taraftan da hataya açık. Burada sıfır ifade etmeye çalıştığınızda bir, bir ifade etmeye çalıştığınızda sıfır olabilir en fazla. Hani alabileceği başka bir değer yok.
+
+291
+00:47:24,543 --> 00:47:31,703
+Buna alternatif ne yapabilirsiniz? Gerilim aralığını yükseltebilirsiniz. Yani niye 3.3 voltla yapıyoruz?
+
+292
+00:47:31,703 --> 00:47:41,543
+Şeyle 12 voltla yapalım. Her bir değer aralığına 1 volt şey ayıralım. Aralarına da 0.2 volt bant çekelim.
+
+293
+00:47:41,543 --> 00:47:47,543
+İşte daha güvenilir olsun dediniz. Okey. Ama o zaman da şunu unutmayın. Şimdi ne yapıyorsunuz?
+
+294
+00:47:48,179 --> 00:48:09,179
+Buradaki grafiğe bakarsanız, solda sıfırla başlıyorsunuz sinyalde, sonra bire çıkıyorsunuz. Sonra birde bir süre kalıyorsunuz, sıfıra iniyorsunuz. Bir süre birde kalmanız lazım ki, o sinyalin bir olduğu, bir pik olmadığı, bir parazit olmadığı anlaşılsın. Dolayısıyla sıfırda da birde de belli bir süre zaman geçiriyor olmalı.
+
+295
+00:48:11,891 --> 00:48:33,811
+Sıfırdan bire geçme süresi, birden sıfıra geçme süresi sabit. Tak tak geçeceksiniz. Şimdi onluk sayı sisteminde şey arasındaki geçişi nasıl yapacaksınız? Sıfırdan on ikiye geçişle on birden on ikiye geçiş aynı sürede olmayacak. Dolayısıyla hep ne yapacaksınız? Senkronizasyonunuzda bir kayma olacak. Bir diğer şey.
+
+296
+00:48:36,788 --> 00:48:40,288
+12 voltluk bir aralık belirlediniz, işler güvenli olsun diye.
+
+297
+00:48:41,288 --> 00:48:47,927
+Sıfırdan 12 volta çıkma hızıyla sıfırdan 3 volta ya da 1.8 volta çıkma hızı aynı olamaz. Doğru mu?
+
+298
+00:48:49,687 --> 00:48:54,307
+Dolayısıyla gerilim aralarınız büyüdükçe aslında çalışma hızınız düşer.
+
+299
+00:48:56,527 --> 00:49:02,367
+Dolayısıyla aslında bizim ikilik sayı sistemi kullanıyor olmamızın nedenlerinden biri de budur.
+
+300
+00:49:04,275 --> 00:49:26,251
+İkilik sayı sisteminde elektrik tabanlı sistemlerde baktığınızda aslında bu iş böyle 12 voltlar seviyesinde başlar. Sonra 5'e, sonra 3.3'e, sonra 1.8'e, şu anda da daha da aşağılara doğru inme durumunda. 1.2 voltlara inme durumunda. Neden? Çünkü artık çok daha hassas, çok daha...
+
+301
+00:49:26,900 --> 00:49:33,019
+Kararlı materyallerle çalışıyoruz ve ona göre cihazları üretiyoruz.
+
+302
+00:49:33,559 --> 00:49:37,099
+Ve işte hızlanmayı sağlayan şeylerden bir tanesi de bu aslında.
+
+303
+00:49:38,400 --> 00:49:40,260
+Bu yüzden de İngilizce Sistemi kullanıyoruz.
+
+304
+00:49:42,516 --> 00:50:07,516
+yürültülere, parazitlere vesaire, bu demin anlattığım aralıklardan vesaireden dolayı daha dayanıklı, daha hızlı çalışmamıza imkan sağlıyor. Daha basit olduğu için ikili sayı sistemini kullanıyoruz. Bunu aklınızın lütfen bir kenarına kazıyın. Şimdi, bir diğer şey. Ne demiştik?
+
+305
+00:50:08,467 --> 00:50:14,467
+Her şey ikilik sayı sistemi, sıfır birlerden ibaret. Peki biz mesela harfleri nasıl ifade ediyoruz?
+
+306
+00:50:14,467 --> 00:50:30,467
+Mesela kesirli sayıları nasıl ifade ediyoruz? Aslında bunun için bizim bir eşleme yapıyor olmamız lazım. Yani sadece sıfır birlerden oluşan değerler var elimizde.
+
+307
+00:50:32,563 --> 00:50:46,083
+Bunlarla alfabeyi ifade etmek istiyorsanız, A, B, C, D, E, V vs. ifade etmek istiyorsanız, Memori'de ya da Storage'da ya da herhangi bir noktada yazabileceğiniz tek şey 0-1'ler değerinden değerler.
+
+308
+00:50:48,903 --> 00:50:59,083
+Dolayısıyla bu 0-1'lerin farklı koşullar altında neye denk geldiğini belirlemek gerekiyor. Bunun için de çeşitli standartlar, çeşitli...
+
+309
+00:51:00,148 --> 00:51:22,539
+eşleşme yapıları var. Misal, karakterlerin ifadesi için en bilinenlerden bir tanesi ASCII karakter seti var. Onun dışında daha çok şu an yaygın olarak bildiğiniz UTF Unicode Transformation format var. Aradaki temel fark şu, ASCII aslında
+
+310
+00:51:24,532 --> 00:51:40,532
+Sekiz bitlik bir yapı. İçerisinde bizim, sadece bizim değil, başka dillerde de kullanılan birçok özel karakter yok. Örneğin, şey yok. Dolayısıyla karakterleri ifade ederken…
+
+311
+00:51:41,043 --> 00:52:05,543
+Özellikle eski sistemlerde Türkçe karakterlerinin kullanılmasında sorun yaşanmasının vesaire nedeni bu. Ama şu an günümüzde kullanılan iki byte'lık çok daha fazla sembolü ifade edebildiğimiz kapsayan bir UTF formatı kullanıyoruz. UTF 8'i kullanıyoruz. Dolayısıyla bu karakter karmaşasını yaşamıyoruz.
+
+312
+00:52:35,347 --> 00:52:38,647
+Şimdi ASCII tablosuna baktığımız zaman, en başta
+
+313
+00:52:38,647 --> 00:52:43,387
+şey göreceksiniz, sıfırdan başlayarak
+
+314
+00:52:43,387 --> 00:52:57,112
+eee
+
+315
+00:52:49,108 --> 00:52:51,108
+256'ye kadar giden
+
+316
+00:52:52,108 --> 00:52:54,108
+değerler göreceksiniz. Burada sadece
+
+317
+00:52:54,608 --> 00:52:55,608
+bir kısmı var.
+
+318
+00:53:01,003 --> 00:53:10,027
+eee
+
+319
+00:53:00,179 --> 00:53:09,899
+Bunun içerisinde neler var? İşte büyük ve küçük harfler. Baktığınız zaman nereden başlıyor? 65 büyük ağ, 90...
+
+320
+00:53:11,440 --> 00:53:13,440
+eee
+
+321
+00:53:10,963 --> 00:53:32,463
+97 olması lazım, 97 de küçük A. Oradan başlayarak alfabetik olarak gidiyor. Ama alfabe tabi bu Amerikan standardı olduğu için İngiliz alfabesindeki harfleri kapsıyor. Dolayısıyla bizim ya da Almanca'da ya da Finca'da olan bazı karakterler ya da başka semboller bu liste içerisinde göremediğiniz şeyler.
+
+322
+00:53:32,927 --> 00:53:54,927
+Bunun dışında noktalama işaretlerini kapsıyor, sayıları kapsıyor. Yani karakter olarak yazılan, harf olarak yazılan sıfırı da kapsıyor. Sıfırın değeri mesela 48, 9'un değeri de 57 haliyle. İki nokta üstte noktalı virgülü büyük küçük vesaire işaretini de görebiliyorsunuz.
+
+323
+00:53:55,891 --> 00:54:06,635
+Bunun dışında ilk baş tarafa bakacak olursanız, sıfırdan başlayan ve şeye kadar 30...
+
+324
+00:54:06,708 --> 00:54:34,708
+1'e kadar giden kısımda aslında daha çok kontrol karakterlerini görürsünüz. Özellikle veri haberleşmesinde kullanılan yani o zaman için seri port üzerinden yapılan haberleşme için kullanılan ki oradaki yapılan haberleşme text tabanlı yani binary değil de text tabanlı bir haberleşme. Dolayısıyla burada kontrol karakterlerini görürsünüz. Start of heading, start of text, end of text, end of transmission vesaire gibi 1, 2, 3 diye.
+
+325
+00:54:34,708 --> 00:54:39,327
+ya da işte şey gibi
+
+326
+00:54:43,891 --> 00:54:56,291
+Acknowledgement ya da End of Transmission Block, idle, break vs. gibi kontrol karakterlerini görürsünüz. Kontrol amaçlı kullanılmış olan karakterleri görürsünüz.
+
+327
+00:54:59,764 --> 00:55:01,764
+Şimdi, eee
+
+328
+00:55:03,164 --> 00:55:04,764
+Burada bir ara verelim.
+
+329
+00:55:05,764 --> 00:55:08,764
+Eee, on dakika ara verelim ama.
+
+330
+00:55:09,464 --> 00:55:12,764
+Saat, eee benim saatim dokuz elliyi gösteriyor.
+
+331
+00:55:13,164 --> 00:55:14,764
+Onda başlayalım.
+
+332
+00:55:18,579 --> 00:55:22,059
+Görüşmek üzere arkadaşlar. Ondan tekrar başlıyoruz.
+
+333
+01:08:13,012 --> 01:08:14,012
+Evet arkadaşlar.
+
+334
+01:08:23,123 --> 01:08:27,123
+Kaldığımız yerden devam ediyoruz. Kusura bakmayın bir meyburi telefon
+
+335
+01:08:28,884 --> 01:08:29,884
+trafiği oluştu.
+
+336
+01:08:32,203 --> 01:08:33,203
+Şimdi
+
+337
+01:08:36,203 --> 01:08:40,083
+İkilik sih sistemi ile farklı bilgilerin nasıl
+
+338
+01:08:41,443 --> 01:08:44,603
+temsil edileceği, nasıl paylaşılabileceğini konuşuyorduk.
+
+339
+01:08:44,963 --> 01:08:45,683
+Şimdi burada
+
+340
+01:08:46,836 --> 01:08:59,435
+Konuşmamız gereken şeylerden bir tanesi. Hep şu ana kadar tam sayıları konuştuk. Negatif sayıları ve ondalıklı sayıları yani kesirli sayıları nasıl ifade edeceğimizle konuşmamız lazım.
+
+341
+01:08:59,435 --> 01:09:13,996
+Şimdi aslında negatif sayıları ifade etmenin iki farklı yolu var. Yani ikilik sayı sisteminde negatif sayıları ifade etmenin
+
+342
+01:09:14,547 --> 01:09:21,907
+iki farklı yolu var. Bunun bir tanesi bire göre komplement alımı, diğeri ise ikiye göre komplement alımı şeklinde.
+
+343
+01:09:22,907 --> 01:09:26,347
+Bire göre komplement alımında sistem
+
+344
+01:09:27,948 --> 01:09:34,507
+şöyle çalışıyor. En yüksek anlamlı yani most significant biti yani baktığınız an sayı sekiz bitse
+
+345
+01:09:36,188 --> 01:09:39,948
+en soldaki yedinci biti, onaltı bitse
+
+346
+01:09:40,692 --> 01:09:47,692
+En soldaki 15. biti, unutmayın bitlerin sayıları sıfırdan başlıyor, sıfırıncı bit, birinci bit vesaire diye.
+
+347
+01:09:47,692 --> 01:10:01,692
+Aynı zamanda sayının işaretini gösterecek şekilde anlamlandırmak. Yani eğer en soldaki sayı
+
+348
+01:10:02,836 --> 01:10:11,836
+0 ise sayının geri kalanı aslında pozitif bir değeri ifade ediyor. En baştaki değer 1 ise negatif bir sayıyı ifade ediyor.
+
+349
+01:10:11,836 --> 01:10:13,548
+Dolayısıyla
+
+350
+01:10:17,395 --> 01:10:30,395
+Onbir sayısına örnek olursak, decimal onbiri örnek olursak, burada verilen örneğe bakın, sıfır sıfır sıfır sıfır sıfır, bir sıfır bir bir şeklinde yazılıyor. Neden? Sekiz, iki ve birden oluşuyor on bir. Bunun
+
+351
+01:10:30,395 --> 01:10:44,139
+eksi bir olarak yazılması için bire göre komplementte ne yapmanız gerekiyor? Bütün sayıları birleri sıfır sıfırları bir olacak şekilde dönüştürmeniz gerekiyor.
+
+352
+01:10:45,524 --> 01:10:53,524
+o zaman da eksi 11'in karşılığı ikilik sayı sisteminde 1111100 şeklinde ifade ediliyor.
+
+353
+01:10:53,524 --> 01:10:56,524
+Ancak ve lakin
+
+354
+01:10:56,524 --> 01:11:05,524
+bire göre komplement sisteminde şöyle bir sıkıntı var.
+
+355
+01:11:05,524 --> 01:11:11,524
+Sıfır sayısı için iki farklı değeriniz var.
+
+356
+01:11:15,859 --> 01:11:43,399
+Dolayısıyla bu yüzden de tutarlı değil aslında. Bir exception oluşturuyor. Bunun yerine o yüzden yani bire göre komplement yerine ikiye göre komplement alıyoruz. İkiye göre komplement aldığımız zaman aslında yaptığımız şey sayıya bir eklemek. Yani önce bire göre komplementini alıyoruz. Sonra da sayıya bir ekliyoruz. Günümüzde de kullandığımız sistem ikiye göre komplement alma.
+
+357
+01:11:46,420 --> 01:11:49,739
+Şimdi işaretli sayıları konuştuk.
+
+358
+01:11:51,020 --> 01:11:54,100
+Konuşmamız gereken şeylerden bir tanesi de kesirli sayılar.
+
+359
+01:11:55,380 --> 01:11:57,180
+Kesirli sayıları ifade etmenin
+
+360
+01:11:58,460 --> 01:12:01,020
+farklı yolları ve şekilleri var.
+
+361
+01:12:01,520 --> 01:12:03,579
+Ama biz standart görünen
+
+362
+01:12:06,140 --> 01:12:07,159
+şey yapacağız
+
+363
+01:12:08,180 --> 01:12:09,460
+konuşuyor olacağız.
+
+364
+01:12:09,460 --> 01:12:10,731
+IEEE'nin
+
+365
+01:12:12,595 --> 01:12:22,915
+Yani Uluslararası Elektrik ve Elektronik Mühendisleri Birliğinin diyelim ki ITREP'nin standartlarını her yerde ve her şekilde karşınıza çıkar görürsünüz.
+
+366
+01:12:22,915 --> 01:12:33,595
+Floating Point yani kayan nokta sayılarla ilgili bir standart var. O standart der ki
+
+367
+01:12:35,891 --> 01:12:41,891
+Ben 32 bit ya da 64 bitlik bir
+
+368
+01:12:49,844 --> 01:12:50,844
+alanı
+
+369
+01:12:50,844 --> 01:13:03,844
+kesilli sayıyı ifade etmek için üç parçaya böleceğim. Bu parçalardan birincisi işaret kısmı olacak ki en solda olacak. İkincisi eksponent kısmı olacak ki
+
+370
+01:13:03,844 --> 01:13:15,756
+sayının tam kısmını ifade edecek. Son kısmı mantisa ise sayının kesilli olan kısmını ifade edecek.
+
+371
+01:13:15,828 --> 01:13:17,828
+Baktığınız zaman
+
+372
+01:13:17,828 --> 01:13:23,828
+Signbit'e 0 olduğu zaman pozitif bir sayı, 1 olduğu zaman negatif bir sayı
+
+373
+01:13:23,828 --> 01:13:30,732
+gösteriyor olmalı. Mantisa
+
+374
+01:13:34,963 --> 01:13:51,644
+Kısmı olayın kesirli kısmı. Yani aslında şöyle bakacak olursanız. Aha bir dakika. Şurada başlayıp devam eden mantıcanın başından devam eden her bir basamak aslında bir böyle.
+
+375
+01:13:51,796 --> 01:14:11,416
+iki iki bir bölü dört bir bölü sekiz bir bölü on altı bir bölü otuz iki yani nasıl hesaplıyoruz gördüğünüz üzere iki üzeri eksi bir iki üzeri eksi iki iki üzeri eksi dört iki üzeri eksi sekiz şeklinde gidiyor.
+
+376
+01:14:18,515 --> 01:14:28,515
+Üst kısmında ise tam kısmı ifade ediyoruz aslında. Bunun bir örneği de olması lazımdı ama neyse yok galiba onu daha sonra göstereyim.
+
+377
+01:14:28,515 --> 01:14:38,515
+Şimdi şu ana kadar sizinle hep 8 bit, 16 bit, 32 bit vesaire gibi ifadeler üzerinden konuştuk. Aslında şöyle bakıyor olmamız lazım.
+
+378
+01:14:39,796 --> 01:14:43,636
+Bilgisayar sistemlerine baktığınızda önce bitler var, hatta 8 bit var.
+
+379
+01:14:43,636 --> 01:15:00,275
+8 bit bir araya geldiği zaman biz buna ne diyoruz? Byte diyoruz. Bu 8 biti yazarken dikkat edin, genelde ben nasıl yazıyorum okunabilir olması için 4 bitlik parçalar halinde yazıyorum. Bu 4 bitlik parçaları aslında nibble deniyor.
+
+380
+01:15:01,427 --> 01:15:28,427
+Onların da bir ismi var. İki byte'in birleşmesi ile oluşan kısım aslında bir word olarak ifade edilir. Yani onaltı bite biz bir word deriz. Otuz iki bite ise long word deniyor. Altmış dört bit için ise very long word ifadesini kullanıyoruz. Yani bir word dediğim zaman aslında sizin otomatikman onaltı biti anlıyor olmanız. İşte bir byte dediğim zaman
+
+381
+01:15:29,555 --> 01:15:36,555
+8 biti anlıyor olmanız, Nebul'ın 4 bit olduğunu çözüyor olmanız lazım.
+
+382
+01:15:36,555 --> 01:15:39,555
+Şimdi,
+
+383
+01:15:39,555 --> 01:15:42,555
+bir saniye.
+
+384
+01:15:42,555 --> 01:15:54,555
+Bu kısımları konuşurken, bir taraftan da aslında fiziksel olarak memorinin nasıl organize olduğunu, nasıl yerleştirildiğini
+
+385
+01:15:55,764 --> 01:16:23,051
+Ne yapıyor olmamız lazım? Biliyor olmamız lazım. Şimdi, memori organizasyonu sekizin katı şeklinde olur. Yani, şundan bahsediyorum. Sekiz bitlik alanlarınız var memori'de. Her birine byte diyoruz. Ama, işte bilgisayar sisteminin
+
+386
+01:16:23,060 --> 01:16:46,340
+mimarisinin kaç bit olduğuna bağlı olarak sizin adresleme şeklinizde değişir. Mesela sekiz bitlik bir mimarideyseniz adresleriniz 0, 1, 2, 3, 4, 5, 6 vs. diye gider. Çünkü her adresde bir byte gösteriyorsunuzdur. Onaltı bitlik bir mimarideyseniz her adresinize
+
+387
+01:16:47,060 --> 01:17:09,560
+Karşılık ne olacak? 2 byte'lık bir alan gözükecek. Dolayısıyla 0 2 4 6 8 diye gidecektir adresleriniz. 32 bitlik bir mimarideyseniz her adresiniz aslında 4 byte'lık bir alan işaret edecektir. Dolayısıyla adresleriniz 0 4 8 12 diye gider.
+
+388
+01:17:09,747 --> 01:17:25,108
+Bir mimarinin kaç bitlik olduğu aslında o mimarinin native olarak yani doğal olarak bütün işlemlerinde kaç bit üzerinde çalışabildiği ile alakalıdır.
+
+389
+01:17:25,108 --> 01:17:34,147
+O yüzden memoriye erişirken adresinizi buna göre belirlersiniz, buna göre erişirsiniz. Bunun üzerinden formüle edilir her şey yani.
+
+390
+01:17:44,404 --> 01:17:47,804
+Burada bilmemiz gereken şeylerden bir tanesi de şu.
+
+391
+01:17:53,203 --> 01:17:55,203
+farklı bilgisayar sistemlerinde
+
+392
+01:17:57,203 --> 01:17:59,203
+bu bellek organizasyonuna
+
+393
+01:17:59,203 --> 01:18:03,203
+erişim anlamında farklılıklar görebilirsiniz. Örneğin
+
+394
+01:18:09,203 --> 01:18:11,203
+bir byte'dan daha büyük verinin
+
+395
+01:18:11,203 --> 01:18:13,203
+belleğe yazılırken
+
+396
+01:18:13,203 --> 01:18:16,203
+parçalarının nasıl yerleştirileceği
+
+397
+01:18:16,203 --> 01:18:18,203
+bu kriterlerden bir tanesidir.
+
+398
+01:18:18,815 --> 01:18:25,815
+Bir yöntem Little Ending yöntemidir, bir yöntem Big Ending yöntemidir. Little Ending'de ne yapıyorsunuz?
+
+399
+01:18:25,815 --> 01:18:36,815
+En düşük anlamlı değerden başlayarak, şimdi yukarıdaki örneğe bakın.
+
+400
+01:18:37,171 --> 01:19:04,143
+0x, yani onaltılık sayısında bir şey ifade ediyoruz. Çift 0, 01, 02, 03, 04, 05, 06, 07 diye giden bir değer grubu var. Kolay takip edilebilsin diye. Bunları adreslere A adresinden başlayarak yerleştirmeye kalktığınızda, little ending'de ne yapıyorsunuz? A adresine 07'yi yani en düşük anlamlıyı yerleştiriyorsunuz. Artan adreslerde de, yani adresiniz arttıkça daha yüksek anlamlı olan bilgiyi yerleştiriyorsunuz.
+
+401
+01:19:04,144 --> 01:19:24,144
+Big Indian'da ise en düşük adrese en yüksek anlamlı byte'i yerleştirip öyle devam ediyorsunuz. Bu da organizasyonun önemli bir kısmı. Bu nerede işinize yarayacak? Şöyle, şu an bizim kullandığımız Intel mimarisinde makinelerde Little Indian kullanılıyor. Ancak ve lakin...
+
+402
+01:19:29,011 --> 01:19:36,412
+Risk mimarisindeki PowerPC'lerde Big Endian kullanılıyor. Dolayısıyla
+
+403
+01:19:38,131 --> 01:19:40,252
+Evet, o en düşük anlamlı.
+
+404
+01:19:41,492 --> 01:19:43,492
+0.7 en düşük anlamlı.
+
+405
+01:19:45,252 --> 01:19:52,412
+Sayıya bakın, nasıl yazılmış? 0x, 0, 0, 01, 0, 02, 03, 04, 05, 06, 07.
+
+406
+01:19:52,412 --> 01:19:55,851
+Dolayısıyla 0.7 en düşük anlamlı kısım.
+
+407
+01:19:59,475 --> 01:20:04,275
+Görüşmelerine, farklı sayı sistemlerinde farklı
+
+408
+01:20:04,275 --> 01:20:15,715
+1 byte'dan daha uzun sayıların ya da değerlerin diyelim, organizasyonu ile ilgili farklı yaklaşımlar var.
+
+409
+01:20:15,715 --> 01:20:27,235
+Dolayısıyla, bunu dengelemek için en basiti bilgisayar ağları ile ilgili konuşurken şundan bahsedeceğiz. Networking organizasyonu ne?
+
+410
+01:20:27,380 --> 01:20:43,000
+Bir bilgiyi gönderirken bir byte'dan daha uzunsa ne yapıyor olmanız gerekecek? Önce network'ün layout'una uygun şekilde konvert edeceksiniz. Network'tan alırken de kendi sisteminize uygun şekilde konvert edeceksiniz. Her şeyin düzgün çalışabilmesi için.
+
+411
+01:20:55,252 --> 01:20:56,300
+İkilik
+
+412
+01:20:59,572 --> 01:21:00,572
+Şimdi
+
+413
+01:21:06,003 --> 01:21:15,304
+O temellerle ilgili kısmını bitirdik. Bundan sonra konuşacağımız konu aslında biraz daha algoritma ve akış diyagramları olacak.
+
+414
+01:21:20,443 --> 01:21:25,604
+Algoritma dediğiniz zaman hani geçmişine dönüp bakacak olursanız aslında bunlar sadece
+
+415
+01:21:27,744 --> 01:21:29,744
+Nasıl diyeyim
+
+416
+01:21:29,971 --> 01:21:55,471
+Size şey yapacak olan, ipucu verecek olan bazı bilgiler, hani dönüp aramakta, bunları okumakta değerlendirmekte serbestsiniz. Ben bunun detayına çok fazla girmeyeceğim. Ama harazmiye kadar gittiğini biliyor olmanızda fayda var bence. Şimdi algoritma dediğimiz şey nedir?
+
+417
+01:21:56,979 --> 01:21:59,340
+Ya da günlük hayatta algoritmaya benzeyen
+
+418
+01:21:59,340 --> 01:22:00,939
+Ne görüyorsunuz?
+
+419
+01:22:03,939 --> 01:22:04,459
+Şimdi
+
+420
+01:22:10,739 --> 01:22:21,899
+Temel olarak baktığınızda, algoritma, bir işi başarmak için adım adım yapmanız gereken şeyleri tarif eden yapı.
+
+421
+01:22:21,899 --> 01:22:22,899
+Tamam mı?
+
+422
+01:22:22,899 --> 01:22:28,899
+Bunun günlük hayattaki en çok benzeyen ya da özdeşleşen şey,
+
+423
+01:22:28,899 --> 01:22:29,899
+yani,
+
+424
+01:22:29,899 --> 01:22:37,899
+aa bu bir algoritma diyebileceğiniz ve tahminen bir şekilde bildiğiniz şey,
+
+425
+01:22:38,644 --> 01:22:39,924
+Yemek tarifidir.
+
+426
+01:22:40,684 --> 01:22:44,284
+Ne yaparsınız? Bir yemeğin tarifine bakacağınız zaman size önce
+
+427
+01:22:44,819 --> 01:23:07,619
+Hangi malzemeleri kullanacağınızı, ne kadar kullanacağınızı söyler. Sonra da işte şunu yapın, sonra bunu yapın, bunu yapın. Şu kıvama gelene kadar yapın, şu kadar tane koyun, bu kadar gram ekleyin, karıştırın, onu yapın, bunu yapın şeklinde tarifler her şeyi. Aslında yemek tarifleri de bu anlamda baktığınızda bir algoritmaya en güzel örneklerden biridir.
+
+428
+01:23:13,908 --> 01:23:15,448
+baktığınız zaman
+
+429
+01:23:18,963 --> 01:23:38,923
+Özellikle bir problem için her zaman şey olması gerekmiyor. Yazılım geliştirme anlamında olması gerekmiyor ama çok nasıl diyeyim yaygın olarak, en yaygın olarak kullandığımız yer orası. Anvesinden yazılım geliştirmede ne yapıyoruz?
+
+430
+01:23:43,572 --> 01:23:47,652
+Bilgisayarın gerçekleştirebileceği işlemleri
+
+431
+01:23:47,652 --> 01:23:55,172
+Tasarladığımız ve bir araya getirdiğimiz yer aslında algoritma.
+
+432
+01:23:55,172 --> 01:23:58,131
+Programcı dediğimiz adamın işi ne?
+
+433
+01:23:58,131 --> 01:24:06,711
+Aslında ortaya atılmış olan ya da ortada duran probleme uygun
+
+434
+01:24:07,136 --> 01:24:13,016
+çözümü bilgisayarın anlayabileceği şekilde ifade etmek ve yerine getirmek.
+
+435
+01:24:14,056 --> 01:24:17,376
+Dolayısıyla bu algoritmanın
+
+436
+01:24:18,136 --> 01:24:19,176
+adımlarını
+
+437
+01:24:19,416 --> 01:24:20,456
+uygun
+
+438
+01:24:20,695 --> 01:24:25,816
+artık hangi programlama diler vesaire kullanılıyorsa onu uygun şekilde gerçekleştiriyor olmak.
+
+439
+01:24:26,076 --> 01:24:27,615
+Dikkat edin burada şunu söylüyorum.
+
+440
+01:24:27,807 --> 01:24:47,807
+Bir algoritmanız var, hangi programlama dilindeyse onu uygun şekilde gerçekliyorsunuz. Dolayısıyla algoritma dediğimiz şeyin bir program dili spesifik durumu yok. Genel bir şeyden bahsediyoruz. Bunu bilgisayarın anlayacağı yapıya çevirmekten bahsediyoruz.
+
+441
+01:24:55,188 --> 01:25:00,188
+Size şunu soruyor olacaktım ki aslında bu şartlar üzerinde de bir deneyebiliriz.
+
+442
+01:25:00,188 --> 01:25:05,188
+Sağda gördüğünüz şey ne? Bir toplama işlemi.
+
+443
+01:25:05,188 --> 01:25:10,188
+Dolayısıyla biri bu işlemin nasıl yapılacağını bana tarif edebilir mi?
+
+444
+01:25:10,188 --> 01:25:18,956
+Gerçekten cevap bekliyorum şu an o yüzden sordum. Dolayısıyla yazmanızı değil ama mikrofon açıp konuşmanızı bekliyorum. Onu da söyleyeyim.
+
+445
+01:25:23,283 --> 01:25:25,283
+Yandaki işlemi yapın hocam?
+
+446
+01:25:25,283 --> 01:25:26,283
+Evet.
+
+447
+01:25:26,283 --> 01:25:38,283
+Yanındaki işlemi yapmana değil, yandaki işlemin nasıl yapıldığını tarif etmeni bekliyorum. Bu arada isim neydi? Bir de sesin çok az geliyor bana, diğerlerine de mi az geliyor bilmiyorum. İnan sen misin?
+
+448
+01:25:38,283 --> 01:25:43,283
+Evet evet hocam, mikrofonla dolayıdır hocam. Mikrofonu çıkardım şu anda.
+
+449
+01:25:43,283 --> 01:25:44,283
+Tamam.
+
+450
+01:25:44,283 --> 01:25:49,283
+Biller basamağını topla. Eğer 10'dan küçük bir sayı çıkıyorsa yaz.
+
+451
+01:25:49,663 --> 01:25:53,023
+Eğer ondan büyük bir sayı çıkıyorsa, birler basamağını yaz.
+
+452
+01:25:55,543 --> 01:25:58,503
+Biri onlar basamağına ekle.
+
+453
+01:26:00,324 --> 01:26:01,663
+Ondan sonra...
+
+454
+01:26:03,123 --> 01:26:07,923
+Hocam çünkü iki tane sayı olduğu için zaten toplamları yirmiden büyük olmayacak.
+
+455
+01:26:08,824 --> 01:26:10,123
+Hani o yüzden bir dedi.
+
+456
+01:26:11,224 --> 01:26:14,663
+Eğer bir tane daha eklenmiş olsaydı, bu sefer...
+
+457
+01:26:15,828 --> 01:26:41,828
+yirmiye kadar olanı söylerdim. Ama iki tane olduğu için on dedim şimdilik. O yüzden bir yazıyoruz. Daha sonra onlar basamağındakileri topla ve eğer eldemiz varsa eldeyi de ekle. Eğer ondan büyük bir sayı çıkıyorsa biri yüzler basamağını at, eğer ondan küçük bir sayı çıkıyorsa rekmen yaz. Hani bu şekilde gidecek diğerleri de.
+
+458
+01:26:42,804 --> 01:27:00,804
+Hani sırayla sırayla sırayla aynı şekilde devam edecek hani yüzler basamağı için, binler basamağı için aynı şeyler geçerli olacak. Fakat sadece birler basamağından farkı şu olacak. Birler basamağından tek farkı diğerlerinde elde olayı da olduğu için orada elde de ekleyeceğiz aynı şekilde.
+
+459
+01:27:00,804 --> 01:27:03,804
+Tamam. En soldaki basamakta ne olacak?
+
+460
+01:27:05,804 --> 01:27:06,804
+Elde varsa.
+
+461
+01:27:06,804 --> 01:27:07,372
+Direkmen...
+
+462
+01:27:07,444 --> 01:27:19,043
+Ha, en son basamakta, orayı da atladım, en son basamakta, direktmen yazıyoruz. Elde falan yazmayacağız, direktmen yazacağız. Eğer onunla fark etmiyor ne olur, direktmen yazacağız.
+
+463
+01:27:19,043 --> 01:27:32,324
+Tamam, teşekkürler. Şimdi gördüğünüz üzere, hani çok basit bir problem. Her gün yaptığınız bir problem. Şu an hadi toplayın desem hepinizin yapabileceği bir problem. Ancak ve lakin tarif ederken bile
+
+464
+01:27:32,787 --> 01:27:35,268
+Ne yapıyoruz? Sıkıntı yaşayabiliyoruz.
+
+465
+01:27:38,507 --> 01:27:39,347
+Dolayısıyla
+
+466
+01:27:39,347 --> 01:27:43,867
+üzerinde çalışmamız gereken bir şey bu.
+
+467
+01:27:44,387 --> 01:27:49,067
+Kendinizi ifade etme noktasında da çalışmanız gereken bir şey ama
+
+468
+01:27:49,067 --> 01:27:54,667
+tarifimizin uygun olduğunu bulmak anlamında da çalışmamız gereken bir şey.
+
+469
+01:27:54,667 --> 01:27:59,067
+Yani bir tarif ortaya attığınız zaman bu tarifi deneyip
+
+470
+01:28:00,115 --> 01:28:10,115
+Bu işe uygun olup olmadığını, ekstra sıkıntı, exception vesaire oluşup oluşmadığını kontrol ediyor olmanız lazım.
+
+471
+01:28:10,115 --> 01:28:20,115
+İnan tarif ederken genel olarak fena bir tarif yapmadı ama şimdi bakın sağdaki toplama işlemi dediğim için sadece iki sayının toplamına.
+
+472
+01:28:20,756 --> 01:28:47,396
+Örnekleyerek konuştu. Dolayısıyla üç sayı ya da beş sayının toplamı ile ilgili ne olacağı orada bir soru işareti. En soldaki sayının toplamı ile ilgili kısmı atladı. Dolayısıyla bunların hepsi aslında probleme oluşturduğunuz yani inanın yaptığı şey bir algoritma geliştirmekti. Bu toplama işlemi için bir tarif oluşturduğu için bir algoritma geliştirdi. Ama o algoritmada atladığı uç nokta
+
+473
+01:28:47,859 --> 01:28:52,859
+Son basamak aslında bir uç nokta problemi. Bunu atlamış olduk.
+
+474
+01:28:52,859 --> 01:28:59,859
+Diğer taraftan yaptığı algoritma biraz spesifik oldu. Neden? Sadece iki sayının toplamında çalışıyor çünkü.
+
+475
+01:28:59,859 --> 01:29:05,859
+Üç ya da beş sayı toplamaya kalktığınız zaman bu şekilde çalışmayacak, sıkıntı olacak.
+
+476
+01:29:05,859 --> 01:29:13,859
+Çünkü eldelerde sadece bir olduğunu kabul etti. Sadece iki sayı olduğunu düşünüyorum. Dolayısıyla bizim
+
+477
+01:29:14,579 --> 01:29:41,579
+Buralarda bakarken şuna dikkat ediyor olmamız lazım. Bir, soruna çözüm üretirken ne kadar anlaşılır bir tarif yaptık? Bir, bu tarifin farklı durumlarda özellikle uç noktalarda, deminki uç nokta en soldaki basamağın toplamıydı, çalışıp çalışmadığı, durumu özel mi olduğu yoksa genel bir...
+
+478
+01:29:42,484 --> 01:29:48,364
+çözüm mü oldu? Bunlar algoritma geliştirirken genel olarak dikkat etmeniz gereken noktalar.
+
+479
+01:29:50,164 --> 01:30:00,144
+Şimdi deyinmeden edemeyeceğim. Normal şartlarda takılmayacağım bir şey ama [öğrenci] sağdan sola mod ona göre eklemeye devam et gibi bir şey yazmış.
+
+480
+01:30:00,144 --> 01:30:01,684
+Şimdi
+
+481
+01:30:02,963 --> 01:30:22,084
+Arkadaşlarınız bir şey tarif ederken böyle girmeyin. Bu bir. İki. Yani bitsin. Fikriniz varsa siz de ifade edin, siz de anlatın. Mikrofonunuzu açarak ya da net bir şekilde başı, sonu ve bütünlüğü olan bir şekilde bir şeyler yazın. Böyle karambol yazılar yazmayın.
+
+482
+01:30:29,747 --> 01:30:56,367
+ciddi anlamda kötü bir iş yapıyorsun demektir. Bunun da nedenini ve detayını daha sonra konuşuyor olacağız. Onu da aklınızın bir kenarına yazın. Yani yaptığınız işin zorluğuyla bu işi yapmak için kullandığınız metodun karmaşıklığı arasında bir orantı olması lazım. Çok basit bir işi, çok ters bir yoldan yapmıyor olmanız lazım. Yani genelde bunu
+
+483
+01:30:58,131 --> 01:31:07,131
+Sağ eline sol kulağını tutmaya çalışmak şeklinde gösterirler. Kamera açık olsaydı ben de size öyle gösterecektim.
+
+484
+01:31:07,131 --> 01:31:08,131
+Şimdi
+
+485
+01:31:09,684 --> 01:31:17,284
+Daha önce de söylemiştim, algoritma sadece bilgisayar mühendisliğine has bir şey değil. Her yerde bir algoritma yapısı görürsünüz.
+
+486
+01:31:17,284 --> 01:31:24,684
+Algoritmayı ifade etmek için de akış kullandığımız şeylerden biri. Akışı da birçok yerde, birçok şekilde göreceksiniz zaten.
+
+487
+01:31:32,180 --> 01:31:33,079
+Şimdi buradaki
+
+488
+01:31:33,079 --> 01:31:36,739
+temel problem şu.
+
+489
+01:31:37,399 --> 01:31:39,899
+Bir yemek tarifi yazdığımız zaman
+
+490
+01:31:39,899 --> 01:32:01,783
+eee
+
+491
+01:31:41,908 --> 01:32:09,908
+Dediğim gibi güzel bir algoritma örneğidir. Aslında takip edebileceğiniz bir şeydir. Anne tarifleri hariç, kulak memesi kıvamı, göz kararı vesaire gibi böyle şey, belirsiz ifadeler vardır anne tariflerinde ama bir yemek kitabını açıp bakarsanız neredeyse kaç tur bunu kavurmanız gerektiğine kadar her şey yazar. Dolayısıyla bizim beklentimiz de bu netlikte ve şeyde olacak, açıklıkta olacak. Çünkü bilgisayar.
+
+492
+01:32:09,908 --> 01:32:31,188
+iiii seyar sistemine bir şeyler yaptırmaya çalışıyoruz. Dolayısıyla bu işlerin tam olarak nasıl yapılacağını net bir şekilde ortaya koyabiliyor olmamız lazım. Bu hassasiyette ya da bu temizlikte şey yapıyor olmamız lazım, ilerliyor olmamız lazım. Şimdi, haa, en basitim, mesela şu an sınıfta kaç kişiyiz?
+
+493
+01:32:32,627 --> 01:32:45,068
+69 kişiyiz. 69 kişi arasında en yaşlıyı ya da en genci bulmaya kalksak nasıl yaparız bu işi?
+
+494
+01:32:47,188 --> 01:32:52,988
+Fikri olan var mı? Yani fiziksel olarak sınıflı olsaydık diye düşünün.
+
+495
+01:32:58,068 --> 01:33:16,988
+Hocam, herkes doğum tarihini yazardı ilk başta. Daha sonra yıl sıralaması yapardık. Eğer yılı en düşük olanı, en düşük olanlar arasında bu sefer aya bakardık. Ay da en düşük olan. Daha sonra güne bakardık bu şekilde.
+
+496
+01:33:18,068 --> 01:33:22,028
+Bunu [öğrenci] söyledi. [öğrenci]'le [öğrenci]'le bir şeyler diyecek mi?
+
+497
+01:33:22,771 --> 01:33:46,712
+Hocam ben yani şöyle düşünüyorum, direkt yaş olarak düşünün. Örneğin ilk bir kişi yaşını söylediğinde onu hem maksimum hem de minimum olarak kabul ederim. Sonra bir kişi daha yaşını söylediğinde, onunla karşılaştırdığında ondan büyükse maksimum yeni kişi sayısı yaparım. Diğeri küçükse minimumu yeni sayı, yeni yaş yaparım.
+
+498
+01:33:47,667 --> 01:34:04,908
+Sonra öyle öyle her bir kişiye eklediğinle karşılaştırma yaptığında, yani hep bir büyük say gelirse maksimumla, yeni maksimumu o yeni gelen say yaparım. Küçük say gelirse minimumu o yeni gelen say yaparım. Öyle en son maksimum en büyük olur, minimum da en küçük olur.
+
+499
+01:34:05,427 --> 01:34:13,087
+Okey. [öğrenci], senin tükkün. İndi alalım. İkincisi mantıklıydı hocam, daha bir şey ekleyemem. Nasıl? İkincisi mantıklıydı yani, daha bir şey ekleyemem.
+
+500
+01:34:14,836 --> 01:34:17,636
+Valla şöyle söyleyeyim, hepsi birbirinden kötüydü diyeceğim.
+
+501
+01:34:17,636 --> 01:34:18,636
+Hocam.
+
+502
+01:34:18,636 --> 01:34:19,636
+Efendim.
+
+503
+01:34:19,636 --> 01:34:21,636
+Ben [öğrenci], bir de ben söyleyelim.
+
+504
+01:34:21,636 --> 01:34:22,636
+Söyle.
+
+505
+01:34:22,636 --> 01:34:27,036
+İlk önce derim ki, 60 yaşından büyükler kaldırsın.
+
+506
+01:34:27,036 --> 01:34:29,836
+60 yaşından büyükler varsa görmüş olurum.
+
+507
+01:34:29,836 --> 01:34:31,836
+Yoksa zaten 50'ye geçerim.
+
+508
+01:34:31,836 --> 01:34:36,235
+50'yi sorduktan sonra çıkanlar arasında 55'e göre fiyaslarım.
+
+509
+01:34:36,235 --> 01:34:39,235
+55'den küçük veya büyük. Ona göre bulurum.
+
+510
+01:34:40,036 --> 01:34:41,435
+Ona göre bulursun.
+
+511
+01:34:42,260 --> 01:34:42,760
+Peki.
+
+512
+01:34:43,600 --> 01:34:45,420
+Ben bir fikir verebilir miyim hocam?
+
+513
+01:34:46,780 --> 01:34:48,220
+Yok, artık vermeyin bence.
+
+514
+01:34:49,280 --> 01:34:51,040
+Ya da dur, içinde kalmasın sen de söyle.
+
+515
+01:34:51,240 --> 01:34:54,120
+Şey gibi olmasın, hani senin ağzına lafı tıkıyormuşum gibi olmasın.
+
+516
+01:34:54,220 --> 01:34:54,820
+Söyle sen de.
+
+517
+01:34:56,760 --> 01:35:03,160
+Ben de işlemlerini yaparken herkesin ilk başta kaç gün boyunca yaşadığını hesaplamasını isterim.
+
+518
+01:35:03,720 --> 01:35:06,100
+Sonrasında gün sayısına göre sıralarım.
+
+519
+01:35:08,100 --> 01:35:08,320
+Ooo.
+
+520
+01:35:09,619 --> 01:35:10,619
+Tamam.
+
+521
+01:35:11,859 --> 01:35:14,619
+Sıralarım, nasıl sıralarım belli değil.
+
+522
+01:35:14,619 --> 01:35:20,619
+Tamam. Şimdi bakın hepinizin tarifiyle ilgili sıkıntılar var.
+
+523
+01:35:20,619 --> 01:35:21,619
+Bir.
+
+524
+01:35:21,619 --> 01:35:23,619
+En sondan başlayayım.
+
+525
+01:35:24,404 --> 01:35:47,444
+Sıralarım. Ama ben sana zaten hani bu işi nasıl yapacağımızı şey yap diyorum, açık açık tarif et diyorum. Sen bir yere es geçiyorsun. Nasıl geçiyorsun? Sıralarım diyerek es geçiyorsun. Sıralama işlemini nasıl yapıyoruz? Bilgisayarın şey gibi bir yöntemi yok, bir durumu yok. Hadi bunu sırala diyeceğin bir tarafı yok. Hani nasıl yapıyorsun onu?
+
+526
+01:35:47,967 --> 01:36:10,967
+Eğer bir programlama dilindeysen, bir kütüphane kullanıyorsan, o kütüphanedeki sıralama fonksiyonuyla sıralıyorsun. Ama ben senden hani şu an şeyi istiyorum. Sınıfta böyle bir durum yapacağız. En büyüğü ya da en küçüğü bulacağız. Hangisi olduğu fark etmez dedim. Arkadaşlardan biri zaten ikisini birden bulmaya kalktı. Yani olayı bambaşka bir boyuta taşıdı.
+
+527
+01:36:13,844 --> 01:36:40,923
+Dolayısıyla şu ana kadar duyduğum şeylerin çoğunda aslında şunu görüyorum. Belki öne çıkmak için, belki daha iyisini yapmak için bir atılım, bir şey var. Ama şunu da söyledim. Bakın, her şeyden önce soruya odaklanmanız lazım. Bir sınıfta olsaydık, dedim. Yani şu an fiziksel olarak sınıfta olsaydık, dedim. En yaşlı ya da en genci nasıl bulurdu?
+
+528
+01:36:41,747 --> 01:36:50,747
+En yaşlı üzerinden gidecek olursak, bunun için aramanıza gerek yok. Tahtaya bakmanız yeter. Orada duruyorum zaten tahminen. Tamam mı?
+
+529
+01:36:50,747 --> 01:37:03,747
+Dolayısıyla bazen hani şeye önyargıyla yaklaşmamak lazım soruya. Öğrenciler arasında en yaşlısı demedim. Ya da öğrenciler arasında en genci demedim.
+
+530
+01:37:05,108 --> 01:37:23,347
+Bunu hani trik olarak gördünüz diyelim, kenara koyalım. O zaman en azından şunu beklerim. Ben V A ile bağladım. Ya yaşlıyı arıyoruz ya genci arıyoruz. Hangisini arıyoruz net bir sorup ondan sonra da
+
+531
+01:37:24,340 --> 01:37:40,340
+Onun için bir çözüm üretmeniz, yani ikisini birden yapmaya çalışmamanızı bekler. Çünkü aslında derdimiz hangisi olduğunu ben net bir şekilde söylemedim, size bıraktım. Siz olayı bir seviyede karmaşık hale getirdiniz. Sonra bunu tarif ederken...
+
+532
+01:37:41,171 --> 01:37:57,171
+Olayı gitgide karmaşıklaştıranlar oldu. Yani, nasıl diyeyim, herkes kendi kaç gün yaşadığını hesaplasın, ondan sonra biz bunları karşılaştıralım. O da ayrı bir sıkıntı.
+
+533
+01:38:08,787 --> 01:38:11,047
+Yıl, ay gün demiştim hocam benimki.
+
+534
+01:38:12,667 --> 01:38:24,427
+Olabilir. Ama hani burada nasıl diyeyim, biri galiba sadece yıl bazında baktı. Yani yaşlara baktı. O ayrı bir sıkıntı.
+
+535
+01:38:26,587 --> 01:38:36,087
+Yani en yaşlıyı bulman gerektiği zaman güne kadar gitmeniz lazım. Ama sadece yıl seviyesinde kalıyorsanız
+
+536
+01:38:36,724 --> 01:38:44,224
+gerçek anlamda doğru sonucu bulamayabilirsiniz. Dolayısıyla bunlar hani şey olarak nedir o?
+
+537
+01:38:45,427 --> 01:39:05,427
+bir probleme yaklaşımınızla ilgili düzeltmeniz gereken şeyler genel olarak. Bu arada hani bu cevapları üreten arkadaşlara teşekkür ediyorum. Çünkü bunlar hani aslında hepinizin bir şekilde aklından geçen ya da düşündüğü şeyler ama söylemediği şeyler. Dolayısıyla hepinizin aklından benzer şeyler geçiyor. Gayet de normal. Bunları
+
+538
+01:39:09,043 --> 01:39:34,763
+Bu konuştuğumuz şeyleri de kapsayacak ya da şey yapacak şekilde, içerecek şekilde düzeltiyor, üzerine çalışıyor, farklı açılardan bakabiliyor olmanız lazım. Şimdi bu işi yapmanın şeyi, nedir o? Yolu ne olabilir?
+
+539
+01:39:35,412 --> 01:39:40,992
+Bakalım ne yazmışız? Alternatif. Neler kütletmişiz? Çok pardon.
+
+540
+01:39:44,152 --> 01:39:52,252
+Şimdi ilk noktada bir oda dolusu insandan bahsediyoruz ve yaşlısını, en yaşlısını bulmaktan bahsediyoruz.
+
+541
+01:39:55,472 --> 01:39:58,312
+Kimsenin yalan söylemeyeceğini kabul ediyor olmamız lazım.
+
+542
+01:40:00,000 --> 01:40:23,059
+bakınca yaşını bilmiyoruz. Dolayısıyla herkes kendi beyan edecek. Her şeyin doğru olduğunu kabul ediyoruz. Aynı günde doğan iki insan, yani çözünürlüğümüz gün seviyesinde olacak. Saate vesaire inmeyeceğiz. Dolayısıyla aynı günde doğan iki kişi aynı yaşta kabul edilecek. Dolayısıyla da en yaşlı
+
+543
+01:40:27,796 --> 01:40:28,796
+En yaşlı
+
+544
+01:40:28,796 --> 01:40:35,855
+kişilerden birden fazla varsa eğer birini buluyor olmamız yeterli. Şimdi
+
+545
+01:40:35,855 --> 01:40:43,756
+inan bekle istersen yaklaşımınla ilgili bu algoritmaları konuştuğumuz zaman görürsün.
+
+546
+01:40:49,747 --> 01:41:13,867
+Şimdi bunun için iki farklı şeyle başlayalım. Ne yapabiliriz? Unutmayın, sınıfta olsaydık şartı da var. Yani şu an online'da değiliz. Sınıftayız gibi düşünün. Ne yapabilirsiniz? Birincisi, bir kağıt dolaştırırsınız.
+
+547
+01:41:14,963 --> 01:41:38,904
+Sıradan başlarsınız sağdan ya da sol uçtan. Burada hani şey olarak tahtaya dizilme vesaire gibi bir şeylerden bahsedilmiş ama onlara gerek yok aslında. Sınıfın bir ucundan bir kağıt verirsiniz. En baştaki aslında birinin algoritmasındaki tarife uyuyor. Hani en yaşlı ve en geç olarak aynı kişiyi seçiyordu.
+
+548
+01:41:39,891 --> 01:42:04,331
+Onun gibi ama sadece en yaşlı olarak bu kişi ismini yazar. Bir sonraki kişiyi uzatır. Bir sonraki kişi eğer bu kişiden daha gençse hiçbir şey yapmayacaktır. Daha yaşlıysa o ismin üstünü karalayıp kendininkini yazıp devam edecektir. Bu şekilde elden ele giderseniz ne olur? En yaşlı kişiyi bulursunuz. Kaç adında bulursunuz?
+
+549
+01:42:05,203 --> 01:42:09,963
+Sınıfta kaç kişi varsa o kadar adımda bulursunuz. Çünkü herkesin elinden geçiyor olması lazım bu kağıdı.
+
+550
+01:42:12,043 --> 01:42:19,543
+Şimdi, bunun yerine ne yapabilirsiniz? Sınıf düzeninde oturuyor olsaydık aslında, şunu yapıyor olabilirdik.
+
+551
+01:42:23,028 --> 01:42:43,028
+İdeal durumda her sırada işte iki üç kişi bir arada oturuyorsunuz. Tek adımda herkes kendi sırasının en ilk adımda daha doğrusu en gencini ya da en yaşlısını, yaşlıya adım pardon, en yaşlısını bilirler. Sonra önündeki sırayla
+
+552
+01:42:43,536 --> 01:43:10,536
+Kendisi arasında en yaşlı olanı belirler. Bir adım sonra ayakta kalan yaşlılar arasında en yaşlıyı belirleriz. Böylece aslında bir nevi ikiye böle böle böle ne yaparız? Sınıftaki en yaşlı adımı gayet hızlı bir şekilde buluruz. Şimdi ilk adım aslında ilk tarif ettiğimiz algoritma
+
+553
+01:43:12,851 --> 01:43:14,851
+Yaptığımız şey ne?
+
+554
+01:43:14,851 --> 01:43:22,091
+Sequential bir işlem. Yani herkesin elinden tek tek o şey geçiyor.
+
+555
+01:43:22,091 --> 01:43:26,851
+Nedir o? Kağıt geçiyor. O işleme tabiri tutuyoruz.
+
+556
+01:43:26,851 --> 01:43:29,851
+Ve her adımda bir kişiyle yürüyoruz.
+
+557
+01:43:29,851 --> 01:43:31,851
+O yüzden sequential.
+
+558
+01:43:31,851 --> 01:43:34,731
+İkinci algoritma da ise
+
+559
+01:43:35,796 --> 01:43:43,796
+Ne yapıyoruz? Aslında işlemleri biraz daha paralelleştiriyoruz. Biraz daha hızlandırıyoruz. Nasıl hızlandırıyoruz?
+
+560
+01:43:43,796 --> 01:43:56,796
+Bağımsız olarak farklı insanların aynı anda bazı soruları çözmesini sağlıyoruz. Misal...
+
+561
+01:43:57,423 --> 01:44:18,423
+Birinci sıradaki üç kişi kendi arasında en yaşlının kim olduğunu bulurken, diğer bir sırada da başka iki ya da dört kişi ya da üç kişi kendi arasında en yaşlının kim olduğunu buluyor. Bu bize ne sağlıyor? Hani eğer her sırada iki kişi olduğunu kabul edersek aslında logaritmik bir şekilde
+
+562
+01:44:20,083 --> 01:44:43,083
+hızlanmamızı sağlıyor. Yani 100 kişilik bir sınıfta bu tip bir aramayı yaparken sequential olarak giderseniz 100 adımda sonucu bulacaksınız. Çünkü son adıma kadar kontrolleri yapmanız lazım. Ama öbür tarafta şeye baktığınız zaman
+
+563
+01:44:45,844 --> 01:45:05,292
+İkinci algoritmaya baktığınız zaman, ikilik tabana göre baktığınızda 100 dediğimiz şey 128 olsa 7 adımda aşağı yukarı an yaşlıyı buluyor olacaksınız. Şimdi eee...
+
+564
+01:45:09,876 --> 01:45:31,659
+Bu niye önemli? Bu şundan dolayı önemli. Bu işlemleri ne sıklıkta ne hızda ve ne kadar az yapıp yapmadığınız algoritmanızın yani ürettiğiniz çözümün karmaşıklığını verecek. Karmaşıklıktan aslında birkaç şey anlıyor olmanız lazım. Bir tanesi işlem karmaşıklığı. Dolayısıyla süre...
+
+565
+01:45:32,467 --> 01:45:41,467
+diye tekabül edecek bu. Yani eğer işlem karmaşıklığınız yüksekse, birim zamanda daha çok işlem yapmanız lazım. Dolayısıyla birim zamandaki işlem
+
+566
+01:45:41,467 --> 01:45:51,467
+değil aslında o, yanlış ifade ettim. Daha çok işlem yapmanız lazım. İşlem hızınız belli. Dolayısıyla süreniz daha fazla olacak. Diğer karmaşıklık ise
+
+567
+01:45:54,868 --> 01:46:15,868
+Boyut karmaşıklığı, yani bu işlemi çözmek için ne kadarlık bir alana ihtiyacınız oldu, ne kadar yere ihtiyacınız oldu. Biz genelde şu an için karmaşıklık dediğimiz zaman işlem karmaşıklığını ifade ediyor olacağız. Dolayısıyla bu iki algoritmaya baktığınız zaman şey...
+
+568
+01:46:17,363 --> 01:46:41,563
+Birinci algoritma, yani sequential algoritma, eğer sınıfta n kişi varsa, n yani n kadar insan varsa, karmaşıklık n seviyesinde olacak. Ama ikinci algoritma da logöltme 2 tabanında n olacak. Yani çok daha log n olacak. Dolayısıyla çok daha hızlı bir çözüm olarak karşımıza çıkacak.
+
+569
+01:46:45,811 --> 01:47:09,452
+Bu şu an çok fazla detayına gireceğimiz bir şey değil. Sadece bir kulak dolgunluğu olması adına konuştuğumuz bir şey ama algoritmalarınızın karmaşıklığını şey yapacağız. Her geliştirdiğimiz, konuştuğumuz algoritma ile ilgili bir karmaşıklık hesabı ya da durum tespiti yapıyor olacağız. Bunları yaparken normal şartlarda
+
+570
+01:47:10,931 --> 01:47:13,051
+algoritma analizi dersinde göreceksiniz.
+
+571
+01:47:13,051 --> 01:47:17,451
+Ve pardon, veri yapıları ve algoritmalar dersinde göreceksiniz.
+
+572
+01:47:17,451 --> 01:47:19,571
+Farklı notasyonlar var.
+
+573
+01:47:19,571 --> 01:47:23,091
+Big O notasyonu var, Small O notasyonu var vs.
+
+574
+01:47:23,091 --> 01:47:27,891
+Bu notasyonlarla da gerçek anlamda algoritmanın analizini yapıyor olacaksınız.
+
+575
+01:47:27,891 --> 01:47:33,571
+Bu şu anın konusu değil, dediğim gibi bir kulak dolgunluğu olması adına.
+
+576
+01:47:35,091 --> 01:48:00,431
+bahsettiğim şeyler. Genel şey olarak nedir o? Genel kültür olarak biliyor olmanız, yaptığınız şeyin karmaşıklığının ne seviyelerde ne mertebelerde olabildiğini fark ediyor olmanız lazım. O yüzden hani bir başlangıç, bir yıkışı zaman zaman algoritmalarımızı ortaya koydukça, çizdikçe karmaşıklıkları ile ilgili de konuşuyor olacağız.
+
+577
+01:48:03,155 --> 01:48:28,036
+Şimdi, bilgisayar sistemlerine baktığınız zaman çok sıkça karşılaşacağınız birkaç tane problem var. Bunlardan bir tanesi, bir verinin aranması. Yani elinizde bir grup veri olacak. Misal, deminki örnekle neydi? Birilerinin yaşı, en gencini bulmak bir arama problemi. En yaşlısını bulmak bir arama problemi.
+
+578
+01:48:39,380 --> 01:49:04,300
+şeyin elinizde olan mesela İstanbul'un işte iki bin yirmi için sıcaklık değerleri arasında medyan değerini bulmak bir arama problemi. Biraz daha farklı bir arama problemi ama bir arama problemi. Dolayısıyla bu aramalar için çokça göreceğiniz
+
+579
+01:49:04,404 --> 01:49:09,024
+Birkaç tane yöntem var. Bir tanesi demin konuştuğumuz sequential search, diğeri de binary search.
+
+580
+01:49:12,404 --> 01:49:17,464
+Binary search teknik olarak baktığınızda çok daha hızlı ama her zaman kullanamıyorsunuz. Neden?
+
+581
+01:49:18,084 --> 01:49:21,664
+Çünkü demin söylediğim gibi veri yapıları ve algoritmalar dersi alacaksınız.
+
+582
+01:49:22,304 --> 01:49:25,404
+Verinin nasıl tutulduğuyla ilgili...
+
+583
+01:49:26,100 --> 01:49:50,500
+şeylerden bir tanesi, daha doğrusu verinin nasıl tutulduğuna bağlı olarak üzerinde kullanabileceğiniz yöntemler değişecek. Misal, binary soruşu herhangi bir yerde kullanabilmek için aslında o veri yapısının bir şekilde sıralandırılmış olması ya da paralelleştirilebilir olması gibi şartlar arıyor olacaksınız. Her zaman her algoritmayı her yerde kullanamayabilirsiniz.
+
+584
+01:49:53,140 --> 01:49:54,140
+Şimdi,
+
+585
+01:49:55,539 --> 01:50:00,740
+Demin üzerine konuştuğumuz sequential bir arama yaptığınızda, sequential search yaptığınızda
+
+586
+01:50:01,860 --> 01:50:03,460
+yapacağınız şey ne?
+
+587
+01:50:03,460 --> 01:50:06,100
+Elinizdeki liste içerisindeki tüm
+
+588
+01:50:06,868 --> 01:50:21,268
+elemanları tek tek kontrol etmek. Yani birinci elemandan başladınız, dediniz ki bu en büyük ya da en küçük. Sonra bir sonraki elemanla bunu kontrol edeceksiniz. Bir sonraki eleman daha büyükse ve büyüğü arıyorsanız, yeni en büyük bu dediniz.
+
+589
+01:50:21,680 --> 01:50:42,680
+Devam ettiniz. Üçüncü elemana geçeceksiniz. Kontrol edeceksiniz. Üç küçük. O zaman hala en büyük eleman iki deyip devam edeceksiniz. Dörde geldiniz. Dört en büyüğünüzden daha büyük. O zaman yeni en büyük dördüncü eleman deyip devam edeceksiniz. Bunu ne kadar süreli yapmanız lazım? Son adama kadar yapmanız lazım. Yani...
+
+590
+01:50:48,851 --> 01:51:05,851
+Eğer en büyüğü arıyorsanız bu şekilde son adıma kadar yapmanız lazım. Aradığınız şey sadece böyle büyük, küçük vesaire değil de şey gibi bir şey ise mesela ismi cihan alanı bulmak gibi bir şey ise
+
+591
+01:51:07,220 --> 01:51:32,659
+Ya da daha spesifik olsun, birden fazla cihan olabilir vesaire düşünürsek, verilen bir TC kimlik numarası kaydını bulmak ise ne yapıyor olacaksınız? Listenin birinci elemanından başlayacaksınız. Listede bu TC kimlik numarasına ait birini bulana kadar veya listenin sonuna kadar bu işi yapıyor olmanız lazım.
+
+592
+01:51:33,076 --> 01:51:57,695
+Neden veya ile bağlıyoruz? Bir, ne olabilir? Liste, ne bileyim, suçlular listesidir. Sabıka kaydı olanlar listesidir. Ve benim TC kimlik numaram orada yoktur. Bu durumda o listede bunun olmadığını bilebilmek için ne yapıyor olmanız lazım? En kötü durum senaryosu aslında, worst case dediğimiz şey. En baştan başlayıp en sona kadar bütün listeye bakıyor olmanız lazım.
+
+593
+01:52:01,395 --> 01:52:11,795
+ne olacaktır? Başlayacaksınız birinci elemandan. Fardimsel beş yüzüncü elemanda benim TC kimlik numarama denk geleceksiniz. Dolayısıyla benim o listede olduğumu bileceksiniz.
+
+594
+01:52:11,795 --> 01:52:24,115
+Ve çıkacaksınız. Devam etmenize gerek yok. Dolayısıyla aslında mesela karmaşıklılıktan bahsederken bunu da göreceksiniz. En kötü durum worst case, average case.
+
+595
+01:52:24,979 --> 01:52:33,300
+ve genel karmaşıklık olarak farklı şekillerde ifade edildiğini göreceksiniz. Şimdi Binary Search'te
+
+596
+01:52:33,300 --> 01:52:45,380
+güzel olan ne? Binary Search'ı her zaman kullanamıyorsunuz demiştim. Hala da geçerli bu bilgi. Ne zaman kullanabiliyorsunuz?
+
+597
+01:52:45,380 --> 01:52:51,380
+Sıralı bir veri yapısı üzerine kullanabiliyorsunuz. Sıralı olduğu zaman bu size nasıl bir avantaj sağlıyor?
+
+598
+01:52:52,340 --> 01:52:56,560
+eee
+
+599
+01:52:56,560 --> 01:52:59,039
+farzı misal, elinizde bir telefon rehberi var.
+
+600
+01:52:59,640 --> 01:53:00,819
+500 binde kayıt var.
+
+601
+01:53:00,819 --> 01:53:02,819
+eee
+
+602
+01:53:02,819 --> 01:53:04,220
+siz de şeyi arıyorsunuz.
+
+603
+01:53:04,220 --> 01:53:04,779
+ismi
+
+604
+01:53:04,779 --> 01:53:07,479
+[öğrenci] olan birini arıyorsunuz.
+
+605
+01:53:09,619 --> 01:53:11,159
+aramaya nereden başlayacaksınız?
+
+606
+01:53:11,159 --> 01:53:21,668
+eee
+
+607
+01:53:11,636 --> 01:53:23,996
+bir fihrist olduğu için, bir rehber olduğu için normalde A harfinden başlıyor olmasını, bir müddet sonra B harfinde, bir müddet sonra C harfinde, en son da Z harfinde geçip bitiyor olmasını bekleriz. Dolayısıyla M için
+
+608
+01:53:23,996 --> 01:53:27,656
+normal şartlarda ortadan bir yerden
+
+609
+01:53:27,656 --> 01:53:30,576
+bakmaya başlasınız ve ortada
+
+610
+01:53:30,576 --> 01:53:32,576
+işte şeyi görseniz
+
+611
+01:53:34,612 --> 01:53:44,212
+Var mı? Misal, O'yu, O harfini görseniz şunu bileceksiniz. Demek ki M'ler ilk yarı içerisinde bir yerde. Dolayısıyla onun ortasına bakabilirsiniz bir adım sonra.
+
+612
+01:53:44,212 --> 01:53:52,212
+Sonrasında bir ileri, bir geri, bir aşağı, bir yukarı bu şekilde böle böle gideceksiniz ve neyi bulacaksınız?
+
+613
+01:53:52,212 --> 01:53:59,372
+Aslında her seferinde arama domeninizin, arama alanınızın yarısını
+
+614
+01:53:59,475 --> 01:54:04,756
+arama dışı bırakacaksınız. Yani ilk şeyde beş yüz bin kayda bakacaktınız.
+
+615
+01:54:04,912 --> 01:54:10,612
+İlk noktada bir şeye karar verdiniz, sağda ya da soluna yani daha düşük ya da daha yüksek olduğuna karar verdiniz.
+
+616
+01:54:10,612 --> 01:54:15,572
+Bir 250.000'den tak diye kurtuldunuz. Bir adım sonra bunun yarısından daha kurtulacaksınız.
+
+617
+01:54:16,091 --> 01:54:25,832
+Yani aslında baktığınız zaman iki adımda ne yaptınız? Önce bir 250.000, sonra 125.000, toplamda 375.000 kayıttan tak tak kurtuldunuz.
+
+618
+01:54:26,072 --> 01:54:28,891
+Binary Search'ın güzelliği ya da şeyi bu.
+
+619
+01:54:32,083 --> 01:54:32,923
+Olayı bu.
+
+620
+01:54:35,863 --> 01:54:38,363
+Buradaki analizler aynen devam.
+
+621
+01:54:40,143 --> 01:54:45,143
+Şimdi biraz daha sayısal ve şey bir örnek üzerinden gidelim.
+
+622
+01:54:49,140 --> 01:54:51,140
+Karakök hesaplamayı biliyor musunuz?
+
+623
+01:54:52,000 --> 01:54:55,140
+Karakök'ün ne olduğunu biliyorsunuz diye tahmin ediyorum.
+
+624
+01:54:56,140 --> 01:54:57,640
+Bir sayının karakök'ünü
+
+625
+01:55:04,148 --> 01:55:11,148
+Yani 64'ün kara kökününün 8 olduğunu, 4'ün kara kökününün 2 olduğunu biliyorsunuz.
+
+626
+01:55:11,148 --> 01:55:15,148
+Kara kök hesaplamayı direkt kendi kendinize yapabiliyorsunuz.
+
+627
+01:55:15,148 --> 01:55:25,148
+Ama kara kök hesaplamak için Newton'un orta aya attığı iteratif bir yöntem var.
+
+628
+01:55:25,524 --> 01:55:46,164
+Her hesaplamada ne yapıyorsunuz? Bir önceki sonuçta elde ettiğimiz değer üzerinden devam edip, adım adım bir yere varmaya çalışıyorsunuz. Bu adım adım bir yere varma noktasında da şunu kontrol ediyorsunuz. Bir önceki hesaplamamda, birinci adımda yaptığım hesaplamada
+
+629
+01:55:46,420 --> 01:56:08,699
+elde ettiğim sonuç ile şu an yaptığım hesaplamada elde ettiğim sonuç arasındaki fark nedir? Benim için belli bir Epsilon değerinden küçük müdür? Şimdi sağdaki örneğe bakacak olursanız, 1024'ün kara kökünü bulmak için adımlar tariflenmiş orada.
+
+630
+01:56:09,203 --> 01:56:28,703
+Aslında formül şurada, new approximation eşittir, alt approximation artı n bölü alt approximation bölü 2. Şimdi buradaki paranteze ve bölülerin yerlerine dikkat edin lütfen. Eski değerinizi alıyorsunuz, n'i yani hesaplamak, karı kökünü hesaplamak istediğiniz değeri
+
+631
+01:56:29,779 --> 01:56:54,979
+Eski bir önceki adımda elde ettiğiniz sonuca bölüyorsunuz, eski sonuçla topluyorsunuz, bunu da ikiye bölüyorsunuz, yeni tahmininiz oluyor. Dolayısıyla ilk tahmin başlangıç yeri bir. 1024'ün tahminlenmesi sırasında nasıl başlıyorsunuz o zaman? 1 artı 1024 bölü 1, ne etti? 1025 bölü 2, yani 512,5.
+
+632
+01:56:55,604 --> 01:56:57,284
+Yeni tahmininiz.
+
+633
+01:56:57,284 --> 01:56:58,924
+512.5
+
+634
+01:56:58,924 --> 01:57:01,324
+Ne yapacaksınız?
+
+635
+01:57:01,684 --> 01:57:05,804
+512.5 artı 1024 bölü 512.5
+
+636
+01:57:06,420 --> 01:57:30,380
+Bu ikisini toplayacaksınız, sonra ikiye böleceksiniz. Yeni tahmininiz ne oldu? 257.249.243 vs. diye gidiyor. Bir sonraki adımda bu 257 küsurlu sayıyı old approximation tarafına yazacaksınız. Sonra 1024 bölü bu değer diyeceksiniz. Bu ikisini toplayıp ikiye böleceksiniz. Yeni değeriniz, 130'u bulacaksınız.
+
+637
+01:57:30,868 --> 01:57:53,868
+Sonra 69 küsüre, sonra 42 küsüre, sonra 33 küsüre, sonra 32.021'e, sonra 32.000000716 vs. sonra 32.08'e, en son olarak da 32'ye geleceksiniz. Şimdi 32'de duracağınızı nasıl biliyorsunuz? Şöyle biliyorsunuz.
+
+638
+01:57:54,931 --> 01:58:01,152
+Her iterasyonda, her elde ettiğiniz yeni değerde eski değerler aranızdaki farka bakıyorsunuz.
+
+639
+01:58:01,152 --> 01:58:07,292
+250, 512 ile 1 arasındaki fark zaten 511 mertebesinde, çok büyük.
+
+640
+01:58:07,811 --> 01:58:11,152
+İşte 257 ile 512 arasındaki fark...
+
+641
+01:58:12,372 --> 01:58:33,292
+gene 255 mertebesinde bir şey. 130 ile 257 arasında gene oldukça büyük bir rakam var. Bizim burada ne yapıyor olmamız lazım? İstediğimiz hassasiyete bağlı olarak Epsilon değerini mümkün olduğu kadar küçük kitle olmanız lazım. Eğer Epsilon değeriniz 0.01 ise sizin için karakök değeri 32.
+
+642
+01:58:37,747 --> 01:58:59,927
+0, 0, 0, 0, 0, 0, 7, 1, 6, 4, 8, 1 gibi bir yerlerde kalacaktı. Ama ε değeri 0.0 yani 10 üzeri eksi 12 gibi bir şey ise o zaman 32'yi tam olarak bulacaktınız. Adımlar bundan ibaret.
+
+643
+01:59:13,268 --> 01:59:29,608
+Baktığınız zaman algoritmik yaklaşımına aslında işlemleri yaparken ikiye bölmeyle gittiği için, daha hızlı converge ettiği için logaritma en mertebesinde bir karmaşıklığı var.
+
+644
+01:59:31,188 --> 01:59:34,708
+Buraya kadar bir sorunuz, bir sıkıntınız var mı? Kafanıza takılan bir şey var mı?
+
+645
+01:59:44,404 --> 02:00:00,000
+Şimdi şöyle, ben o örnekte şöyle yaklaştım olaya. TC kimlik numaranıza baktığınız zaman aslında numara diyoruz ama bir taraftan da karakterlerle ifade ediyoruz. Yani aslında biz TC kimlik numaramızı...
+
+646
+02:00:00,000 --> 02:00:25,000
+şey olarak söylemiyoruz. İşte üç milyar, bilmem kaç bin, bilmem kaç milyon vesaire vesaire diye söylemiyoruz. Ama ismi doğal olarak numara olduğu için ben de onları nümerik değerler olarak kabul ettim ve öyle şey yaptım. Nedir o? Değerlendirdim. Normal şartlarda gerçek hayatta TC kimlik numarasının karşılaştırılması zaten oranın bir karakter dizisi olarak.
+
+647
+02:00:26,228 --> 02:00:50,228
+belirtilmesi şeklinde oluyor. Dolayısıyla karakter dizilerini karşılaştırırken de başından başlayıp tek tek karşılaştırıyorsunuz. Eğer bir yerlerde bir fark varsa zaten orası olmadığını biliyorsunuz. Ve bunun üzerinden giriyor. Yani gerçek hayat uygulaması o ama ben gerçek hayat gibi değil, onların gerçek anlamda numara olması durumunu düşünerek örneği verdim. Şimdi...
+
+648
+02:00:53,171 --> 02:01:08,171
+Ne yapıyor olmamız lazım? Problemlerimiz için algoritmalar çözümleri üretiyor olmamız lazım ve bu çözümleri de ifade ediyor olmamız lazım. Nasıl ifade edeceğiz? En temel ifade şeklimiz özellikle bu ders kapsamında akış diyagramları olacak.
+
+649
+02:01:08,916 --> 02:01:22,916
+Döğüs ile akış diyagramlarının nasıl çalıştığını konuşuyor olacağız. Hangi elemanlar var, nasıl bağlantılar yapılıyor vs. Elemanlar dediğimiz en temel elemanlardan başlayacağız. Start-Stop gibi, yani başlangıcı ve bitişi gösterecek.
+
+650
+02:01:22,916 --> 02:01:36,652
+Eğer bilgi okumamız gerekiyorsa kullanıcıdan ya da herhangi bir yerden bunları gösteren input alanlarımız olacak. Bütün komponentleri birbirine bağlamamızı sağlayan konnektörler olacak.
+
+651
+02:01:38,899 --> 02:01:44,899
+İfadelerimizi gösterdiğimiz alanlar olacak. Yani işlemleri, ifadeleri gösterdiğimiz yerler olacak.
+
+652
+02:01:46,899 --> 02:01:54,899
+Akışa baktığımız an ya da algoritmaya baktığımız zaman hep bir karar halinde olacağız. Yani x ondan büyük mü?
+
+653
+02:01:54,899 --> 02:01:56,899
+İşte ya da
+
+654
+02:01:58,452 --> 02:02:15,452
+Bunu daha tekrarlı bir şekilde bakıyor ya da kontrol ediyor oluyor. En basit, deminki algoritmaya bakacak olursanız Newton'un iterasyonuna. Her seferinde ne yapıyor olmamız lazım? Yeni bulduğumuz değer ile eski bulduğumuz değer arasındaki fark epsilon değerinden küçük mü değil mi?
+
+655
+02:02:15,503 --> 02:02:31,503
+Dolayısıyla bir döngü içerisinde devamlı kontrol, devamlı karar veriyor olacağız. Bu döngüyü işte belirli bir sayıda yapıyor olabiliriz, belirli bir şarta bağlı olabiliriz. Bunları konuşuyor olacağız. Şimdi en temel komponent akış diyagramı içerisinde nedir?
+
+656
+02:02:33,503 --> 02:02:40,904
+Tabii ki her akışın bir başlangıcı ve bir bitişi olmak zorunda. Dolayısıyla başlangıç start, bitiş de stop.
+
+657
+02:02:41,492 --> 02:02:43,492
+Baktığınız zaman böyle
+
+658
+02:02:45,731 --> 02:02:46,851
+eliptik bir
+
+659
+02:02:48,291 --> 02:02:53,091
+şekil çiziyorsunuz Start için. İçerisine de Start yazıyorsunuz. Alttan da bir ok ve çıkıyorsunuz.
+
+660
+02:02:53,492 --> 02:02:55,091
+Bir sonraki oku
+
+661
+02:02:55,492 --> 02:02:57,492
+oku takip eden bir sonraki sembolün ne olacağı?
+
+662
+02:02:57,891 --> 02:03:01,891
+Size ve akışa kalmış. Eğer dışarıdan bilgi almanız bir bilgi
+
+663
+02:03:03,891 --> 02:03:31,891
+üzerinde çalışmanız gerekiyorsa tahminen bir input olacaktır. Yok hani direkt işlem yaparak başlayacağınız bir durumsa ki pek mümkün ya da olası değil aslında. Çünkü işlem yapabilmek için bilgiye ihtiyacınız var. Dolayısıyla initialize etmediğiniz değerler üzerinde yani iltlendirmediğiniz değerler üzerinde işlem yapmanız da mümkün değil. Her akışın bir de stopu yani bittiği yer olması lazım. Bu önemli bir konu. Şöyle ki birçok...
+
+664
+02:03:31,891 --> 02:03:45,011
+Arkadaşınız da ilk başlarda şunu çokça görüyoruz. Akış bir noktadan başlıyor ama beş farklı noktada bitiyor. Öyle bir akış yok. Her akış tek bir noktada tek bir şekilde bitiyor olması bekleniyor.
+
+665
+02:03:54,036 --> 02:04:20,996
+Start dersen sonunda Stop olması lazım. Ama Start dersen en sonuna End diyemezsin. Dolayısıyla aynı şey değil. Begin dersen sonuna End dersin. Dolayısıyla Start varsa sonunda Stop olması gerekir. Uyumlu olması adına. Tamam. Begin'in sonu End'tir. Start'ın sonu Stop'tur.
+
+666
+02:04:21,376 --> 02:04:25,775
+Dolayısıyla başlangıcımız Start olduğuna göre sonunda Stop olması beklenir.
+
+667
+02:04:29,775 --> 02:04:39,695
+Ne demek? Şimdi input için çizeceğiniz şekil bir dikdörtgen ama sol kenarı kesik olan bir dikdörtgen. Dikkat edin.
+
+668
+02:04:39,695 --> 02:04:47,695
+Sol üst kenar kesik. Bu neye benziyor? Bu aslında tarihle ilgili konuşurken gördüğümüz
+
+669
+02:04:47,988 --> 02:05:04,988
+Punch kartlara benziyor. O kartların da daha sonra kullanılan Paper halinin kenarı da benzer şekilde kesikti. Yoksa bu bir bilgi alışı olduğunu ifade etmek için kullandığımız bir yapı.
+
+670
+02:05:05,332 --> 02:05:17,771
+Buraya dışarıdan size verilmesini beklediğiniz kullanıcı olabilir, dışarıdan bir dosyadan okuyor olabilirsiniz ya da başka bir yerden alıyor olabilirsiniz bu bilgiyi. Bilgileri yazıyorsunuz. Mesela
+
+671
+02:05:18,579 --> 02:05:43,579
+Deminki algoritmaya bakalım. Bir N sayısının kara kökünü hesaplayacaksınız. Dolayısıyla N sayısı sizin için bilinmez. Bunu size birinin veriyor olması lazım. Bir kullanıcı input olabilir. Bir dosyadan okuyor olabilirsiniz. Ya da başka bir yerden başka bir programın çıktısı olarak alıyor olabilirsiniz. Her yerden olabilirsiniz. Dolayısıyla o zaman o akışla ilgili bir çizim yapıyorsanız orada ne yapacaksınız? Input box'ın içerisine N yazıyor olacaksınız.
+
+672
+02:05:44,916 --> 02:05:48,916
+Tek bir şey yazmak zorunda değilsiniz. Dışarıdan birden fazla değer okuyor olabilirsiniz.
+
+673
+02:05:48,916 --> 02:05:55,916
+N, yanında M, sonra X, sonra Y, sonra Z vesaire gibi şeyleri okuyor olabilirsiniz.
+
+674
+02:05:55,916 --> 02:06:01,916
+Bunun dışında tek bir değer deyip birbirine bağlı değerler okuyor olabilirsiniz. Yani bir dizi okuyor olabilirsiniz.
+
+675
+02:06:01,916 --> 02:06:08,916
+Dizi okuduğunuz zaman da şunu yapıyor olmanız lazım.
+
+676
+02:06:09,492 --> 02:06:24,692
+Bir dizinin nesi olması lazım? Öncelikle kaç elemana sahip olduğunu biliyor olmanız lazım. Dolayısıyla eleman sayısını okumanız lazım. Bu sağ tarafta gördüğünüz örnekte AN diyebilirdik. Dikkat edin, önce N değerini okuyorsunuz.
+
+677
+02:06:25,971 --> 02:06:53,971
+Yani bu dizinin eleman sayısını okuyorsunuz. Sonra diziyi okuduğunuzu belirtmek için A parantez içerisinde, bunlar normal parantez işaretleri N yazıyorsunuz. N elemanlı A dizisini okuduğunuzu gösteriyorsunuz. Aslında bunun bu bir şekilde biraz kısaltma hali. Normal şartlarda bunu bir for döngüsü içerisinde her adımda A'nın bir elemanını okuyacak şekilde belirtiyor olmanız lazım. Ancak hani işleri kolaylaştırmak...
+
+678
+02:06:53,971 --> 02:07:20,971
+hızlandırmakta bu şekilde de belirtebilirsiniz. O yüzden burada gösteriyoruz. Şimdi, eee dikkat edin, ilk startta da, stopta da, daha sonra inputta da ne var? Etrafında hep oklar var. Bu oklar aslında işlemlerinizin gidiş yönlerini belirtiyor. Eee bakınız, bu input boxına
+
+679
+02:07:21,395 --> 02:07:48,275
+üstten giriş yapıyorsunuz. Yani bu işlemden önceki işlem bunun üstünde olması lazım. O üstten aşağı doğru gidiyor olmanız lazım. Bu işlem bittiği zaman da altından çıkıp çıkış yapıp devam ediyorsunuz. Bu çizgileri çizerken ya tamamen düz çiziyor olmalısınız ya da bu yukarıdaki örnekte gördüğünüz gibi keskin hatlarla net bir şekilde ifade ediyor olmanız lazım. Böyle virajlı dağ yolu gibi seyler çizerek
+
+680
+02:07:49,555 --> 02:08:08,155
+oklarla bu işi yapmıyor olmanız lazım. Bir diğer nokta, şimdi akış çizmeye başlayınca başınıza çokça gelecek ama bunu zaman içerisinde biraz daha kontrol altına alabilirsiniz, biraz daha toparlayabilirsiniz. Genelde akış çizmeye kağıdın sol üst tarafından başlayıp sonra kendinizi oraya hapsedersiniz.
+
+681
+02:08:10,612 --> 02:08:12,291
+O yüzden de hani
+
+682
+02:08:12,291 --> 02:08:17,291
+kağıt bir yerlerde size yetmez. Sağ tarafı ya da sol tarafı.
+
+683
+02:08:18,091 --> 02:08:22,112
+Ne yapıyor olmanız lazım? O şeylerden kurtuluyor, atlıyor
+
+684
+02:08:22,112 --> 02:08:26,511
+olmanız lazım. Onun için de eğer kağıdın yetmediği bir yerdeyseniz,
+
+685
+02:08:26,671 --> 02:08:30,051
+çizginin gidemediği bir yerdeyseniz ya da başka bir sayfaya geçecekseniz
+
+686
+02:08:30,051 --> 02:08:33,291
+bunu dairelerle yapıyorsunuz. Yani
+
+687
+02:08:34,515 --> 02:09:00,496
+Okunuzu ucuna bir daire çiziyorsunuz, onun içerisinde bir sayı yazıyorsunuz. O yolun devam etmesini istediğiniz yer nereyse oraya yeni bir daire çizip, o daireden bir ok çıkartıp oku gitmesi gerektiği yere bağlıyorsunuz. Yani bu daireleri birer kara delik gibi düşünün. Bir taraftan diğer tarafa transportasyonunuzu sağlıyor. Yalnız burada dikkat etmeniz gereken bir iki tane kural var. Bir.
+
+688
+02:09:01,043 --> 02:09:19,443
+Bir akışın içerisinde böyle beş tane on tane yuvarlak olması o akışın okunabilirliğini düşürür. Bunlar her an kullanacağınız şeyler değil, ihtiyaç anında kullanacağınız şeyler ve mümkün olduğu kadar az ihtiyacınız olması gereken şeyler.
+
+689
+02:09:25,460 --> 02:09:28,899
+Bir zararı mı var derken, şimdi
+
+690
+02:09:29,587 --> 02:09:53,188
+İki tane şekil arasında oku yamuk yumuk çiziyor olmanızın sizin için bir zararı yok ama bir akış içerisinde bunları böyle çizerseniz, ne nereye gitmiş, nereden geçmiş, nasıl olmuş, anlaşılırlık ya da okunabilirlik anlamında ciddi anlamda sıkıntı. Bu ders kapsamında soruyorsan, zaten öyle bir şey çizmeniz mümkün değil. Çizerseniz ben de üstünü çiziyorum, sıfır veriyorum, devam ediyorum.
+
+691
+02:09:56,595 --> 02:10:10,876
+Dalgalı bir ok çizebilen kişi düz de çizebilir diye tahmin ediyorum. Okunabilirlik önemli olduğuna, kendimiz ifade etmek önemli olduğuna göre kurala uygun şekilde davranıyor olmanız gerekiyor. Benim beklentim de bu.
+
+692
+02:10:12,404 --> 02:10:26,400
+Önemli şeylerden bir tanesi, karşı tarafa biz akışı ya da algoritmayı niye oluşturuyoruz? Karşı tarafa bir problemin çözünü anlatabilmek için oluşturuyoruz. Sizin oluşturduğunuz şeyi anlamak için
+
+693
+02:10:26,399 --> 02:10:52,759
+hani önce başka bir dil öğrenmek ya da burada ne yazıldığını anlamak, ne yapıldığını anlamak gerekiyorsa zaten iş baştan patlamış demektir. Dolayısıyla burada tariflenen kurallara harfiyen uyuyor olmanızı bekliyorum. Bir diğer parçası akışın işlem kutuları. Yani burada ifadeleri belirtiyorsunuz.
+
+694
+02:10:52,847 --> 02:11:12,555
+neleri belirtiyorsunuz? Mesela toplama işlemini yapacaksınız. Neyle neyi toplayıp nereye atacağınızı belirtiyorsunuz. Örneğin, a değerini, a değişkeninde sakladığınız değeri bir arttırmak istiyorsanız bunu kutuya açıyorsunuz, o kutuya a eşittir a artı bir deyip devam ediyorsunuz.
+
+695
+02:11:13,460 --> 02:11:35,939
+Dikkat edin, işlem kutularına da üstten girilip alttan çıkılıyor. Sağdan girip soldan çıkmıyoruz, soldan girip alttan çıkmıyoruz. Alttan girip sağdan ya da soldan aynı anda çıkmıyoruz. Sadece buradaki önemli olan şey, üstten giriyoruz, alttan çıkıyoruz. Akışın sürekliliği ve takibi için. Şimdi bir diğer nokta bununla ilgili.
+
+696
+02:11:36,399 --> 02:12:01,399
+Burada yazdığınız ifadelerde programlama dili spesifik takılmıyor olmanız lazım. Ne yapıyor olmanız bekleniyor? Genel ifadeleri, yani bu dersin başında konuştuğumuz operatörleri, aritmetik, lojik ve bitwise operatörleri kullanarak bu akışı ifade ediyor olmanız lazım. Herhangi bir programlama diliğinde spesifik bir şeyler yapmıyor olmanız lazım.
+
+697
+02:12:04,948 --> 02:12:29,707
+Konuşacağımız komponentlerden biri, bir tanesi de karar alma noktasıydı. Karar alma noktalarıydı. Bunlardan en çok kullanacağınız, en bilineni IF. IF aslında bir şartı kontrol ettiğiniz yer. Sağdaki örneğe bakacak olursanız, nasıl çizildiğine, yukarıdan bir ok geliyor.
+
+698
+02:12:33,844 --> 02:12:59,943
+Bir altıgen var, dikkat edin. Alt ve üst kenarı uzun, diğer kenarları daha kısa. Alt ve üst kenarının uzun olmasının nedeni içeriye bir ifade yazıyor olmamız. O ifadeye yeter miktar yer açıyor olmamız. Bir if statement yazdığınız zaman, yani bir koşul yazdığınız zaman bu koşulun sağlanması ya da sağlanmaması durum var. Yani true olması ya da false olması durum var.
+
+699
+02:13:01,460 --> 02:13:19,460
+Dolayısıyla bu yanlarda iki tane çıkış var. Bu yanlardaki çıkışlardan bir tanesi bu şartın sağlanmasını, true olmasını, bir tanesi de sağlanmamasını ifade ediyor. Ancak hangisinin hangisini ifade ettiğini nasıl bileceğiz? Sizin o çıkışın üstüne...
+
+700
+02:13:20,467 --> 02:13:41,927
+True ve False olarak bunu ifade etmenizle bileceğiz. Yani burada sağ tarafı True, sol tarafı False yazalım. Siz bunu tam ters de yazabilirsiniz. Yani solda True, sağda False da olabilir. Ama bir şekilde bu ibaretin olması lazım. Aksi takdirde hangisi için neyi kabul etmemizi bilemeyeceğimiz için işin gidişatı sarpa sarar.
+
+701
+02:13:42,847 --> 02:13:44,387
+Bir diğer nokta şimdi
+
+702
+02:13:45,268 --> 02:13:59,467
+Akışınız içerisinde birden fazla farklı noktada if statement kullanabilirsiniz. Bu durumda da eğer trular sağdaysa hep sağda, soldaysa hep solda olması lazım. Yani kendi içerisinde tutarlı olması lazım.
+
+703
+02:14:00,688 --> 02:14:11,387
+Dikkat etmeniz gereken bir şey daha var. Şimdi yukarıdan okla giriyoruz. Şartın sağlanmaması yani false durumu için soldan devam ediyoruz. Orada bir işlem yapıyoruz. İşlem kutucuğundan çıkıyoruz.
+
+704
+02:14:11,828 --> 02:14:32,588
+Şartın sağlanması durumunda sağdan çıkıyoruz, bir işlem kutucuğuna giriyoruz, o işlem kutucuğundan çıkıyoruz ve bu çıkan oklar bir noktada birleşiyor. Her zaman için şunu unutmayın, ifin herhangi bir if koşunun iki kolu bir noktada birleşmek zorundadır. Normal akışa devam edebilmek için.
+
+705
+02:14:33,300 --> 02:14:55,060
+Birbirinden bağımsız dallanıp budaklanan kollar çizemezsiniz. O kollar illa bir noktada birleşiyor olması lazım. Birleştikten sonra da akışınıza oradan devam edeceğinizi gösteriyor olmanız lazım. Şimdi bu sağdaki örnekle ilgili tuhaf bir şey daha var. O da şu, o da gözünüze gözünüze batsın diye yapılmış bir şey zaten.
+
+706
+02:14:55,520 --> 02:15:04,039
+Şart sağlanıyorsa, yani true ise ne yapıyoruz? A eşittir A artı bir diyoruz. Şart sağlanmıyorsa ne yapıyoruz? Yine A eşittir A artı bir yapıyoruz.
+
+707
+02:15:05,199 --> 02:15:11,039
+Sağlansa da sağlanmasa da aynı şeyi yapıyorsak bu şarta gerek yoktur. Tamam mı? Temel mantık hatası.
+
+708
+02:15:12,840 --> 02:15:17,560
+Dolayısıyla buna da dikkat ediyor olmanız lazım. Bir şey daha var.
+
+709
+02:15:19,220 --> 02:15:42,440
+Genel prensip, genel yaklaşım, hatta bazı programlama dillerinde şart şudur. Bir koşul doğru olduğunda yapılacak işlem olması gerekir. Aksi kabul edilemez. Yani şunu yapamazsınız. A eşittir, B ise hiçbir şey yapma. Değilse şunu yap.
+
+710
+02:15:44,287 --> 02:16:07,287
+Programlama dillerinin günümüzde çoğu buna izin verir ama bir kısmı vermez. Nedenlerden bir tanesi bu. Bir diğeri, bu işi böyle yaparsanız kodunuzun okunabilirliğini ya da anlaşılabilirliğini ciddi anlamda bozarsınız. Şartınızı yanlış oluşturmuşsunuz demektir bir kere. O zaman eşitliğe değil eşit olmama durumuna bakar.
+
+711
+02:16:07,663 --> 02:16:19,783
+Yapacağınız işi de True call'ında halledersiniz. Doğru oluşturulma şekli, doğru yapılma şekli budur. Buna uyuyor olmanız lazım.
+
+712
+02:16:22,868 --> 02:16:45,048
+Tam tersi işleri sadece eğer hedefiniz kod obfuscation ise yani yazdığınız kodun anlaşılabilirliğini bitirmek, başkasının o kodu çalmasını, çırpmasını, değiştirmesini engellemek vs. yaparsınız. Ama hani o da bilinçli yazacağınız ya da yapacağınız bir şey değil. Obfuscator vs. üzerinden yaparsınız. Dolayısıyla bu konuya da ayrıca lütfen dikkat ediyor olun.
+
+713
+02:16:47,283 --> 02:16:53,144
+Şimdi konuşacağımız şeylerden bir tanesi de döngüler. Döngülere baktığınız zaman
+
+714
+02:16:53,144 --> 02:17:07,083
+ikiden fazla koşulumuz varsa nasıl yapacağız hocam? Dedin [öğrenci] ama imkanın varsa mikrofonu açık tarifler misin? Yani koşulun iç iç olmasından mı bahsediyoruz?
+
+715
+02:17:07,644 --> 02:17:13,144
+Ard arda olmasından mı bahsediyoruz? Yoksa şeyden mi bahsediyoruz? Yani if içerisindeki koşulların
+
+716
+02:17:13,620 --> 02:17:15,920
+İkiden fazla olmasından bahsediyoruz.
+
+717
+02:17:17,200 --> 02:17:19,260
+Hocam, mesela hani
+
+718
+02:17:20,020 --> 02:17:23,100
+algoritma olarak kullandığımız bu Else if yapısı
+
+719
+02:17:23,340 --> 02:17:26,680
+var ya, bunu akışa nasıl dökebiliriz? Onu söylemek istemiştim.
+
+720
+02:17:27,440 --> 02:17:32,300
+Else if yapısı? Ha yani tamam. Sonuçta nested bir if'ten bahsediyorsun o zaman.
+
+721
+02:17:32,300 --> 02:17:33,840
+Evet.
+
+722
+02:17:34,708 --> 02:18:01,308
+sorduğun şey o. Çünkü koşul deyince şunu, ah pardon, şunu anladım hani A eşittir B'nin yanına bir koşul daha koymaktan mı bahsediyoruz yoksa şeyden mi bahsediyoruz? Bunun, bu ifin içerisine bir alt koşul yerleştirmekten mi bahsediyoruz? Evet, aynen öyle hocam. Şimdi bunun alt koşul yerleştirmek kolay bir sıkıntı yok. Hani A eşittir B'ye baktın, bu eğer diyelim ki false ise
+
+723
+02:18:02,355 --> 02:18:11,355
+Burada ok ile devam ediyoruz. A eşittir A artı bir yazdınız. Soldaki kısım var. Onu yazmayacağız tahminen. Onun yerine buraya bir iftaha çizeceksiniz.
+
+724
+02:18:11,603 --> 02:18:29,603
+Bu if'i çizdiğiniz zaman da if'in false olması ya da true olmasına bağlı olarak işlemler yapacaksınız. Bittiği zaman bu iki kol birleşecek. Bu iki kolun birleştiği yerden çıkan okunuzla ilk yukarıdaki if'in true'sunun işlemlerinin sonucunda gelen ok bir daha birleşecek.
+
+725
+02:18:30,708 --> 02:18:45,708
+Yani iç içe iflerde de ne yapıyoruz? Önceki içteki ifin kollarını birleştiriyoruz. Sonra bu kolların birleştiği uçla dıştaki ifin kollarını birleştiriyoruz. Şimdi as if vesaireye girdiğin zaman
+
+726
+02:18:46,291 --> 02:19:10,691
+O şu, ben burada iki tane koşul kontrol edeceğim, onu da şöyle kontrol edeceğim diye akışlı tarifliyorsun. Onu hangi programlama dilinde yazacaksan, orada yazarken şeyini yapmak, senaryosunu hazırlamak, yani böyle olsa daha iyi ya da efektif olacağına karar vermek zaten o programlama diline geçtiğin zaman olacak bir şey. Burada öyle bir kaygımız ya da derdimiz yok zaten.
+
+727
+02:19:12,391 --> 02:19:13,631
+Anladım hocam, çok teşekkür ederim.
+
+728
+02:19:14,031 --> 02:19:16,551
+Şimdi
+
+729
+02:19:16,551 --> 02:19:20,791
+konuşacağımız komponentlerden bir tanesi döngüler.
+
+730
+02:19:21,691 --> 02:19:26,391
+For döngüsüyle başlayacağız. Neden? Çünkü daha basit, daha temiz, daha sıkıntısız.
+
+731
+02:19:26,912 --> 02:19:28,491
+Neden öyle? Şundan dolayı.
+
+732
+02:19:29,151 --> 02:19:30,951
+Bu döngü içerisinde, bu
+
+733
+02:19:30,951 --> 02:19:34,191
+iteratif yapı içerisinde kaç adım
+
+734
+02:19:34,191 --> 02:19:35,932
+ilerleyeceğimizi biliyoruz. Yani
+
+735
+02:19:35,932 --> 02:19:37,371
+misal
+
+736
+02:19:39,092 --> 02:19:42,532
+On tane elemanı olan bir dizimiz var. Bu dizinin en düşük
+
+737
+02:19:43,252 --> 02:19:50,372
+eee değere sahip elemanını bulacağız. Ne yapacağız? Sequential olarak bakacağız. Yani sıralı bir şekilde bakacağız diye karar verdik.
+
+738
+02:19:51,172 --> 02:19:53,012
+Birinci elemandan başlayacağız.
+
+739
+02:19:53,412 --> 02:19:58,692
+Gideceğiz. Ya da aslında bunda şey sıkıntısı var. Erken çıkma ihtimali var. Pardon değiştiriyorum.
+
+740
+02:19:59,092 --> 02:20:02,932
+Eee on elemanlı bir dizimiz var. Bu on elemanın ortalamasını bulacağız.
+
+741
+02:20:03,667 --> 02:20:19,788
+Ne yapıyor olmamız lazım? On elemanın tamamını toplaya toplaya gideceğiz. Sonra da ene böleceğiz. Dolayısıyla bütün dizinin elemanlarını geziyor olmamız lazım. O zaman bunun için for döngüsü kullanabiliriz. Çünkü kaç adım ilerleyeceğimizi biliyoruz.
+
+742
+02:20:29,683 --> 02:20:41,583
+Üst sol kısımda ne yazılmış? J. Sonra bir ok işareti var. Bir yazılmış. Bu şu demek, bu döngüye başlanıldığı zaman J değişkenine bir değerini atayacaksın.
+
+743
+02:20:45,243 --> 02:20:55,583
+Sonrasında sağ tarafta iki tane dik çizgiyle ayrılmış, soldan iki tane dik çizgiyle ayrılmış bir yer var ve orada da bir yazıyor. Bu bir neyi ifade ediyor?
+
+744
+02:20:56,371 --> 02:21:06,211
+Bu döngüde her adımda J değerinin bir birim arttırılacağını söylüyor.
+
+745
+02:21:06,791 --> 02:21:14,671
+Son kısımdaki N, alt kısımdaki N ise J için son değerin ne olacağını belirtiyor.
+
+746
+02:21:16,051 --> 02:21:19,151
+Yani döngüye başladığımızda J bir olacak.
+
+747
+02:21:20,180 --> 02:21:45,580
+Sonra A'yı A artı bir ile toplayacağız. Devam edeceğiz. Tekrar for döngüsüne döneceğiz. Bu döngünün yerine döndüğümüzde J'nin değeri ne olacak? 2. 2 N'den küçük mü? Küçük. Devam. A'yı bir daha arttıracağız. Bir daha arttıracağız. Bir daha arttıracağız. En son J N'e eşit olacak. Bu işlemi bir daha yapacağız.
+
+748
+02:21:48,595 --> 02:21:57,595
+Bir sonraki artımda J ne olacak? N'den bir fazla olacak. O zaman artık bu döngüden çıkıyor olacağız. N kere bu işlemi yapacağız ve çıkacağız.
+
+749
+02:22:01,595 --> 02:22:11,595
+Şimdi koşula göre iteratif işlemler ya da tekrar eden işlemler yapıyorsak o zaman while döngüsü kullanıyoruz.
+
+750
+02:22:12,211 --> 02:22:22,851
+ne yapıyoruz Wild döngüsünde? Bu ife benzer ama dikkat edin, ifin uçlarından, sağından ve solundan normalde oklar çıkar. Wild ise alt kenardan
+
+751
+02:22:24,084 --> 02:22:50,484
+bir ok çıkıyor, o okla işlemleri yapıp dönüp sağ taraftaki üst kenara tekrar giriş yapıyorsunuz. Burada bunun bir wild döngüsü olduğunu bize gösteriyor. Wild döngüsüne yukarıdan giriyorsunuz, bu döngüdeki işlemleri yapıyorsunuz, yine alttan çıkıyorsunuz. Derdimiz ne? Burada mesela J'nin N'den küçük olması. Unutmamanız gereken bir nokta var.
+
+752
+02:22:51,283 --> 02:23:18,423
+J, N'den bu durumda küçük olduğu sürece bu döngü çalışacak. Ama J'nin ya da N'nin durumunu değiştiren bir şeyler yapıyor olmanız lazım bu döngü içerisinde. Aksi takdirde bu döngü içerisinde buradaki gibi bir senaryo varsa, yani devamlı olarak A eşittir A artı biri hesaplıyorsanız ve dönüyorsanız bu döngüden çıkamazsınız. J'nin ya da N'nin değerlerini değiştiren bir şey de olması lazım ki buradaki koşulun değişme şansı olsun.
+
+753
+02:23:22,548 --> 02:23:27,087
+Şimdi bunlar akış diyagramı içerisindeki temel komponentlerimiz.
+
+754
+02:23:30,348 --> 02:23:44,468
+Bunlarla ilgili çalışmaya önümüzdeki haftadan itibaren başlıyor olacağız. Yani basit problemler üzerinde çizim yaparak neyin ne olduğunu, nasıl olduğunu, nasıl olabileceğini üretiyor olacağız.
+
+755
+02:23:46,036 --> 02:24:06,036
+Bunun dışında, şu an için değil ama kulak dolgunluğu olması adına gene konuşuyoruz. Özellikle programlama diline başladıktan sonra yani CD bir şeyler yapmaya başladıktan sonra buna tekrar geri dönebiliriz. Ortaya attığınız algoritmaları ifade edebilmek, anlatabilmek için kullanacağınız bir yöntem de pseudocodlar.
+
+756
+02:24:06,708 --> 02:24:21,708
+Türkçesi biraz tuhaf, o yüzden hiç oraya girmiyorum. Ama hani sonuçta programlama dillerinde kullandığımız temel kavramların bir kısmını kullanarak ya da biraz değiştirerek problem...
+
+757
+02:24:23,123 --> 02:24:51,123
+çözümünün nasıl olması gerektiğini ifade ettiğimiz yapılar. Nasıl olabilir? Çok net bir standardı yok. Yani işte IEEE'nin bilmem ne standardı, şöyledir, bu böyledir falan diyebileceğim bir durum yok. Farklı yerlerde farklı farklı kullanımlar görürsünüz. Bir kısmı alışkanlıkla aslında satırların numaralandırılmasından oluşur. Ki belli açılardan iyidir. Böylece hani akışınızın bir yerinde bir hata varsa hangi satırda ne olduğunu, neyin nasıl değişmesi gerekiyor.
+
+758
+02:24:51,123 --> 02:24:54,504
+bilirsiniz. Bazılarında yoktur bu.
+
+759
+02:24:55,843 --> 02:24:56,383
+Kimisi
+
+760
+02:24:56,383 --> 02:24:59,103
+farklı programlama delillerinden
+
+761
+02:24:59,103 --> 02:25:00,923
+etkilenir ve ona benzer
+
+762
+02:25:00,923 --> 02:25:03,103
+komutlar kullanır. Kimisi
+
+763
+02:25:03,103 --> 02:25:04,703
+tamamen bağımsız şeylerden
+
+764
+02:25:04,703 --> 02:25:07,203
+feyiz alır. Dolayısıyla
+
+765
+02:25:07,203 --> 02:25:09,223
+pseudocode ile ilgili bir arama
+
+766
+02:25:09,223 --> 02:25:11,183
+yaptığınız zaman bambaşka şeyler
+
+767
+02:25:11,183 --> 02:25:12,583
+görüyor olabilirsiniz.
+
+768
+02:25:13,459 --> 02:25:23,059
+Şaşırmayın. Şu anki temel konumuz zaten bu değil. Şu anki temel konumuz akışlar olacak. Akışlar konusunda da daha önce söylemiştim ilk derslerde.
+
+769
+02:25:23,059 --> 02:25:41,059
+Şey görebilirsiniz, burada size anlattığım şekillerin farklı yerlerde farklı şekilde çizildiğini görebilirsiniz. Özellikle mesela elektrik mühendisliğinde, makine mühendisliğinde, inşaatta hepsi farklı semboller ve farklı kullanımlar kullanabilir.
+
+770
+02:25:41,459 --> 02:26:05,459
+Ancak ve lakin bizim için temel olan benim size burada gösterdiğim yapıdır. Dolayısıyla buna uygun işler yapıyor olmanızı bekliyorum. Bunları çözüyor olmanızı bekliyorum. Aksi kullanımlar sıkıntıdır. Buradaki standartı takip ediyor olmanız gerekir. Şimdi bunları da konuştuktan sonra...
+
+771
+02:26:16,404 --> 02:26:19,123
+Bakayım saati, devam edelim diye.
+
+772
+02:26:22,004 --> 02:26:24,004
+Bugünlük burada keseceğim.
+
+773
+02:26:24,724 --> 02:26:25,924
+Biraz daha
+
+774
+02:26:26,484 --> 02:26:30,324
+yapacağımız şey var ama burada kesmek yeterli olacaktır.
+
+775
+02:26:30,324 --> 02:26:31,603
+Hem size
+
+776
+02:26:31,603 --> 02:26:35,364
+bir S olsun hem şey olsun. Şimdi önümüzdeki hafta
+
+777
+02:26:35,364 --> 02:26:38,004
+pazartesi günü laboratuvar yapmayacağız.
+
+778
+02:26:38,004 --> 02:26:42,164
+Ama sonraki hafta başlıyoruz laboratuvarı. Bu arada siz sormadan ben söyleyeyim.
+
+779
+02:26:42,804 --> 02:27:00,804
+Laboratuvarla ilgili bazı hazırlıklar yapmanız gerekecek. O hazırlıkların ne olduğunu ben size doküment hale getireceğim ve önümüzdeki hafta paylaşıyor olacağım. Bir sonraki haftada zaten laboratuvar yapacağız. Bu noktada...
+
+780
+02:27:01,556 --> 02:27:14,916
+Şimdiden şey uyarısı yapayım. Laboratuvar uygulaması sırasında bir bilgisayarınızın olması gerekiyor. Bilgisayarınızın işletim sistemi ne olduğunun çok bir önemi yok. Linux, Windows vs. hepsi
+
+781
+02:27:15,507 --> 02:27:36,028
+Uygun. Sizden bazı yazılımlar indirip önceden kurmanızı istiyor olacağım. Çünkü o sırada laboratuvar sırasında bunları indirmeniz, kurmanız sıkıntı olabilir. Ya da en kötü ihtimalle daha önceden indirmenizi isteyeceğim. Kurulumlar o kadar büyük sıkıntı değil ama indirmeler sıkıntı. Çünkü hepsinin boyutu birbirinden büyük olacak.
+
+782
+02:27:43,507 --> 02:28:03,507
+işletim sistemi invajinin ne olduğu vesaireyi de size göndereceğim dokümanda belirtiyor olacağım. Lütfen bunlara dikkat edin, uyun. Bu noktada bir sıkıntısı olan, bir ihtiyacı olan, bir şey olan varsa bana mail üzerinden ulaşabilir. Onun dışında
+
+783
+02:28:08,819 --> 02:28:20,259
+Bir şey yok, tamam düşündüm, onu anlatmaya gerek yok burada özel bir durum. Sizin bir sorunuz varsa bugün konuştuklarımızla ilgili ya da başka bir şeyle ilgili onu alayım, ondan sonra da dersi bitirelim.
+
+784
+02:28:31,731 --> 02:28:54,952
+Ha, ders dokümanlarını. Evet, deneyecektim değil. Zaten deniyorum onları mütemadiyen ama şu an hala sistemde öyle bir yükleme seçeneği yok. Onları da tahminen önümüzdeki hafta, yani bu hafta yarın da bir bakalım, yarın da bir şeyler çözülmezse onları bir şekilde ya AVS ya başka bir yere koyup oradan sizinle paylaşacağım.
+
+785
+02:29:16,628 --> 02:29:17,628
+Anlıyorum ki o zaman
+
+786
+02:29:18,628 --> 02:29:20,628
+Başka soru yok.
+
+787
+02:29:20,628 --> 02:29:22,628
+O zaman hepinize iyi günler arkadaşlar.
+
+788
+02:29:24,628 --> 02:29:26,628
+Haftaya Perşembe görüşmek üzere.
+
+789
+02:29:26,628 --> 02:29:30,628
+Dediğim gibi laboratuvar haftaya pazartesi yok. Ondan sonraki hafta başlayacağız.

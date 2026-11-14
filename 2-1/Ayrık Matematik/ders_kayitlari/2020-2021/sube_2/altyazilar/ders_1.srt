@@ -1,0 +1,3375 @@
+1
+00:03:18,867 --> 00:03:20,108
+Arkadaşlar, günaydın.
+
+2
+00:03:31,795 --> 00:03:33,795
+Bir iki dakika da bekleyelim, başlarız.
+
+3
+00:05:47,315 --> 00:05:48,875
+Evet, hepiniz de merhabalar.
+
+4
+00:05:52,052 --> 00:06:02,052
+Sağlıklı, başarılı, iyi bir dönem bir dönem arkadaşlar. Ayrık Matematik dersimizi bu dönem birlikte üreteceğiz.
+
+5
+00:06:04,052 --> 00:06:06,052
+Şu ekranımda ayarlayayım hemen.
+
+6
+00:06:47,411 --> 00:06:51,012
+Bu da size şu an ekranın görünmüş olması lazım.
+
+7
+00:07:17,747 --> 00:07:32,747
+Bu dersin notlarını Bani hocamızın AESI sayfasından indirebilirsiniz. Hoca yükledi. Bu haftayı ve gelecek haftayı yükledi diyebiliyorum.
+
+8
+00:07:32,747 --> 00:07:38,731
+Önce aranızda beni tanımayan var mıdır diye bir kamera açayım.
+
+9
+00:07:41,043 --> 00:07:45,843
+Daha önce görüşmüş olabiliriz, görüşmüş olabiliriz. İsterseniz siz de açabilirsiniz.
+
+10
+00:07:46,423 --> 00:07:50,003
+Zorunlu değil. Birazdan zaten kapatacağım dersimize geçeceğiz.
+
+11
+00:07:50,264 --> 00:07:55,644
+İsmim Ahmet Eldir. Bilgisayar öğrencisinde öğretim görüntüsü olarak çalışıyorum.
+
+12
+00:07:56,144 --> 00:08:02,043
+Bu dönem şey var mı? Üç dersine birden girdiğim arkadaş var mı önümüzde?
+
+13
+00:08:02,543 --> 00:08:07,163
+Yapısal programıma ve sinyaller sistemler.
+
+14
+00:08:10,483 --> 00:08:20,723
+kişi varmış. Siz biraz üç ders sonra şanssız mı oluyor artık, bilmiyorum. Neyse.
+
+15
+00:08:20,723 --> 00:08:30,723
+Banu hocayla eş zamanlı olarak yürütüyoruz. Aynı sınavlar olacak. Birazdan dersin içeriği
+
+16
+00:08:30,723 --> 00:08:35,043
+değerlendirmesine yönelik bazı bilgiler vereceğim arkadaşlar.
+
+17
+00:08:35,764 --> 00:08:50,484
+Bugün dersimizin bir tanıtım kısmı, bir de giriş konusu var. O konuyu çalışacağız. Sizin bu dersten beklentileriniz nelerdir onları öğrenmek istiyorum. Ondan sonra dersimizi bitiririz.
+
+18
+00:08:53,303 --> 00:08:59,344
+Yaz okulunda bu dersi alıp tekrar alan var mı aramızda? Yaz okulunda ben verdim.
+
+19
+00:09:03,700 --> 00:09:08,200
+Geçen sayısı bayağı fazla ediyor bu konuda. 4-5 kişiyi bırakmıştım.
+
+20
+00:09:16,755 --> 00:09:19,755
+Karmaşıklık hesaplama konusunda hakim olmak için.
+
+21
+00:09:19,755 --> 00:09:26,755
+Algoritma karmaşıklığı, yani burada bir başlıyoruz daha sonra veri yapıları ve algoritma analizi dersi bunların şeyidir.
+
+22
+00:09:26,755 --> 00:09:34,755
+Konuları içerir. Hatta hesaplamak kuramı dersi de bununla alakalı.
+
+23
+00:09:34,755 --> 00:09:41,451
+Başka dersten beklentisi veya dersle alakalı görüşü olan kimler var?
+
+24
+00:09:41,940 --> 00:09:44,940
+Ses korda ne tema arkadaşlar, en sorun yok.
+
+25
+00:09:55,892 --> 00:09:59,412
+Atılım sayımız biraz az. Başka bir ders mi var acaba bu saatte?
+
+26
+00:10:03,155 --> 00:10:13,475
+Dersle alakalı düşüncesi olan alttan alan var mı? İkinci defa alan. Alttan alan deneyelim. Belki yükseltmek için alanlar vardır.
+
+27
+00:10:28,724 --> 00:10:31,724
+Pekala, çok bir tepki yok.
+
+28
+00:10:32,864 --> 00:10:50,424
+Şimdi arkadaşlar, bilgisayar bilimleriyle alakalı teorik altyapının ve bilgisayar bilimlerinde önümüzdeki dönemlerde, hatta bu dönem anlatılan bazı derslerin tanıtımı bu derste yapılıyor aslında.
+
+29
+00:10:50,824 --> 00:10:53,384
+Birazcık onlara giriş konuları işleniyor.
+
+30
+00:10:54,548 --> 00:11:00,947
+Bu dersin geçmişi bayağı eski. Öncelerden soyut matematik, daha sonra ayrı matematik diye anlatılan bir ders.
+
+31
+00:11:02,028 --> 00:11:07,947
+Bilgisayar bilimleri ve bilgisayar mühendisliği elektronik mühendisinden, elektrik mühendisinden ayrıldıktan sonra
+
+32
+00:11:07,947 --> 00:11:18,207
+günlük matematik bilgimizin, yani normal pure matematik denen oradaki matematiğin buraya adapte edilmesi, bir de
+
+33
+00:11:19,923 --> 00:11:46,524
+Kullandığımız bazı şeylerden, bazı matematiksel yöntemlerden algoritma ile ilişki kurulmasını sağlayan bir ders. Çok eski bir geçmiş olduğu için bu dersin içinden dersler küredi zamanla. İşte bu dersin konularından bir tanesi işte lojik devreler, ondan sonra hesaplama kuramı, daha sonra olasılık istatistik ayrı bir ders olarak zaten okutuluyor bizde de çoğu yerlerde. Sonra
+
+34
+00:11:48,179 --> 00:11:58,679
+içerisinden tüleyen algoritma dersi ve yapıları dersi, o ayrı bir alan. Yine hesaplama teorisi, hesaplama kuramı ayrı bir ders.
+
+35
+00:11:58,679 --> 00:12:06,359
+Biz burada hepsine, bu derslerin hepsine bir giriş yapacağız. Az bir programlama bilginiz var, kabul ediyoruz.
+
+36
+00:12:06,359 --> 00:12:15,899
+Yani SİDE bir şeyler yazdınız, kodladınız geçen dönemlerde. Burada o kodlama bilgisiyle, birazcık matematik bilgisiyle
+
+37
+00:12:16,115 --> 00:12:21,675
+Bunları birleştirip biraz daha algoritma bilgimizi ileriye taşımayı hedefliyoruz.
+
+38
+00:12:21,675 --> 00:12:28,796
+Şimdi konularımıza şöyle baktığımızda bugün giriş konusu ve mantık konusunun ilk başlarına bakacağız arkadaşlar.
+
+39
+00:12:28,796 --> 00:12:35,515
+Sonra mantık konusuyla doğrudan ilişkili olan bulcevur ve kombinasyon devreler aslına bakacağız.
+
+40
+00:12:36,340 --> 00:12:44,879
+Burada bu bulce bir kuralları dersin planında en sonunda görülüyordu. Ben bunun devamına almanın doğru olacağını, Banu Hoca ile konuştuk.
+
+41
+00:12:45,680 --> 00:12:52,480
+İki konu birbiriyle ilintili, bir de zaten lojik devrelerde bu konuyu görüyorsunuz. Çok geçe bırakmanın bir anlamı yok.
+
+42
+00:12:52,480 --> 00:13:00,180
+Yani hem ikisi aynı anda birbirini tamamlar diye bu dersin konusunu hemen ikinci çiftin sonunda işleyeceğiz.
+
+43
+00:13:01,360 --> 00:13:02,220
+Sonra...
+
+44
+00:13:03,316 --> 00:13:30,220
+Şimdi birazcık matematiksel tarafına bakacağız. Genel bir matematik revizyonu, yani sizin lisede gördüğünüz şeyler bir kısmı, bir kısmı üniversitenin birinci sınavında gördüğünüz matematik dersleri. Sonra sayı teorisiyle alakalı kısımlara bakacağız. Yine bu matematikle alakalı şeyler. Sonra algoritma, algoritma karmaşıklığı, asintotik gösteririm gibi konulara bakacağız.
+
+45
+00:13:30,388 --> 00:13:32,388
+Biraz daha algoritmaya giriyoruz orada.
+
+46
+00:13:33,888 --> 00:13:45,388
+Daha sonra bazı veri yapılarından bahsedeceğiz. Bu veri yapıları işte graf veri yapısı, ağaç veri yapısı ve bunlara bağlı olan kromatik polinomlar işin içine girecek.
+
+47
+00:13:45,388 --> 00:13:54,283
+Şu sekizinci ve dokuzuncu çaptarın yeri de değişebilir. Onu da bir konuşacağız tekrar hocayla. Sonra otomatik gramer ve dil.
+
+48
+00:13:54,707 --> 00:14:03,207
+Finite State Machine dediğimiz sonlu durum makineleri gibi konulara bakacağız. Genel olarak işeğimiz bu şekilde.
+
+49
+00:14:03,207 --> 00:14:20,007
+Şimdi bu dersin yıl içi %60, yıl sonu %40 rektörlük tarafından belirlenen bir değerlendirme kriteri var. Fakat bu kriterlerin sınavla mı, ödevli mi yapılacağına dair henüz bir şey gelmedi. Normalde biz
+
+50
+00:14:20,788 --> 00:14:33,228
+Bahan Hocam'a yanlış hatırlamıyorsam iki vize, bir final veya bir vize, bir final artı arada bazı ödevler, küçük ödevler, ders dışı ödevler veya ders dışı ödevler şeklinde bir planlama yaptık.
+
+51
+00:14:34,548 --> 00:14:45,228
+Sınavlar klasik sınav olacak diye düşündük ama bu dediğim şey rektörlükten derler ki sınavları az az tutun, daha çok işte ödev proje tarzı.
+
+52
+00:14:46,196 --> 00:14:54,875
+daha etkileşimli bir şey olsun, ölçmeyi artırsın, ölçmeyi daha hassas hale getirsin diye bir karar gelirse, burada bir değişkenlik olabilir.
+
+53
+00:14:54,875 --> 00:15:08,395
+Onun için şu %60-40 oranı dışında, bir de dönem sonu notumuzun 40'ı üzeri olması durumunda, burada kesin bir bilgi yok, onu biz 1-2 hafta içerisinde sizlere tekrar duyuracağız.
+
+54
+00:15:09,779 --> 00:15:18,279
+Şimdi bu dersle alakalı bizim ana ders kitabımız Helen Rosen'un Descript Mathematics and Its Applications kitabı.
+
+55
+00:15:19,379 --> 00:15:22,579
+Kitabın elektronik halini çok rahat bulabilirsiniz.
+
+56
+00:15:22,579 --> 00:15:29,579
+Bazı derslerimizde bu kitabın konularından doğrudan kitap üzerinden de işleyeceğiz.
+
+57
+00:15:29,579 --> 00:15:33,379
+Bazı işte matematiksel kısımlar onların oradan örneklerine bakacağız.
+
+58
+00:15:35,059 --> 00:15:53,059
+Kitabın içerisinde olasılık istatistikle alakalı kısımlar var. Bizim bazı derslerimizde anlatılan, bu derste anlatmaya gerek duymadığımız bazı kısımlar var. Oraları anlatmıyoruz ve siz oradan sorunlu değilsiniz. Ama bu slide'ların çoğu o kitaba uygun olarak hazırlandı.
+
+59
+00:15:54,772 --> 00:16:03,252
+Bir yandan ders tekrar yaparken, konuları öğrenmeye çalışırken o kitaptan faydalanabilirsiniz. Elektronik hali sizin için yeterli olur.
+
+60
+00:16:04,772 --> 00:16:16,132
+Bir diğer kaynak, işte MIT'nin okum dersi var, işte bu Matematik ve Computer Science diye. Bu dersin farklı isimlerini görebilirsiniz.
+
+61
+00:16:16,772 --> 00:16:20,612
+Türkçe olarak söylediğim zaman İngilizcelerini çevirmeye çalışalım.
+
+62
+00:16:20,947 --> 00:16:29,267
+Ayrık işlemsel yapılar, Discrete Computational Structures diye böyle bir ders. Zannediyorum Boğaziçi'nde ismi böyleydi.
+
+63
+00:16:29,267 --> 00:16:34,867
+Ayrık yapılar, Discrete Structures diye isim verilebilir.
+
+64
+00:16:34,867 --> 00:16:42,787
+İşte Mathematics for Computer Science, Discrete Mathematics for Computer Science gibi farklı isimler var.
+
+65
+00:16:43,220 --> 00:16:49,220
+Ama içeriğine baktığınızda bizim konularımızın %80-90 benzer olduğunu görürsünüz.
+
+66
+00:16:49,220 --> 00:16:57,220
+Bu konuda sormak istediğiniz bir şey dersin işleyi hakkında sormak istediğiniz bir şey var mı arkadaşlar?
+
+67
+00:17:06,451 --> 00:17:10,451
+Dediğim gibi, slide'lar şu an Banu Hoca AWS sayfasında yükledi.
+
+68
+00:17:12,451 --> 00:17:23,451
+Herhalde hafta hafta yükleriz. Daha bazı şeyleri, yani ilerideki slide'ların bazıları güncelleniyor. Onların değişikliklerini yapıyoruz.
+
+69
+00:17:24,451 --> 00:17:28,451
+Ama ders saati gelmeden önce mutlaka yüklenmiş olur.
+
+70
+00:17:32,435 --> 00:17:39,596
+Evet, o zaman bir şey yoksa ben ayrık matematik nedir? Bu konuda bir giriş yapalım dersin tanıtma olsun.
+
+71
+00:17:44,276 --> 00:17:56,635
+Ayrık matematik veya sonlu matematik. Matematiğin ayrık yapılarıyla ilgilenen ve sürekli içermeyen konularını kapsayan bir matematik de olur. Şimdi sinyaller sistemler konusunda da anlatıyoruz.
+
+72
+00:17:57,355 --> 00:18:08,436
+Bir ayrık veri vardır, ayrık sinyal vardır, kontinuit sinyal. Bir de diskrit sinyal vardır.
+
+73
+00:18:12,211 --> 00:18:13,211
+Mesela
+
+74
+00:18:15,012 --> 00:18:17,012
+bir sinyal çizmeye çalışalım.
+
+75
+00:18:19,932 --> 00:18:21,052
+Şöyle bir
+
+76
+00:18:21,572 --> 00:18:22,572
+sinyal olsun.
+
+77
+00:18:25,532 --> 00:18:26,532
+Ve bu
+
+78
+00:18:27,932 --> 00:18:30,491
+zamana bağlı değişen bir fonksiyon olsun.
+
+79
+00:18:31,572 --> 00:18:37,851
+Şimdi bu sinyal arkadaşlar, zamanın her anında bir karşılığı olan sürekli bir sinyaldir.
+
+80
+00:18:39,827 --> 00:18:40,827
+kontinist.
+
+81
+00:18:44,435 --> 00:18:54,675
+Eğer ben bu sinyal üzerinde belli aralıklarla bir örnekleme yaparsam, zaman açısından bir sınırlama getirirsem,
+
+82
+00:18:57,635 --> 00:19:04,675
+işte bunun karşılığı çizebilecek miyiz? Bunu şöyle çizmeye çalışalım. Bunun karşılığı burası.
+
+83
+00:19:07,556 --> 00:19:09,875
+Bunun karşılığı burası şeklinde.
+
+84
+00:19:14,036 --> 00:19:23,756
+Bunu ne hale getiriyorum? Aylık hale getiriyorum. Yani bütün zamanları içermiyor, belli bir sayıda zaman bilgisini içeriyor.
+
+85
+00:19:23,756 --> 00:19:41,956
+Hatta buna diğer dersimizde de demiştik, continuous bir sinyal x, t ile ifade edilirse, bunu diskret hale getirdiğimizde x, n ile ifade edeceğiz.
+
+86
+00:19:43,316 --> 00:19:54,316
+Şurası sonsuz, burası sonsuz değil, sonlu. Neye göre sonlu? Sizin bilgisayarınızın kapasitesine göre sonlu.
+
+87
+00:19:55,316 --> 00:20:06,316
+Şunun her bir elemanı yine sonsuz. Yani x'in iyinci elemanı için gerçek dünyadaki değerini %100 bulamayabilirsiniz.
+
+88
+00:20:10,740 --> 00:20:36,740
+Şurada karşılık gelen değeri. Eğer elinizdeki fonksiyon doğru bir fonksiyonsa örneğin XT ne olsun? 2x sinuz T olsun. O zaman bulunabilir. Ama bir ölçüm sonucu veya bir devrenin karakteristiğini üzerinde işlem yapıyorsanız o andaki gelmek değerini %100 bulamayabilirsiniz.
+
+89
+00:20:37,779 --> 00:20:50,259
+Ama Diskret sistemde belli bir kabul yapılır. Bu yapılan kabule göre şuradaki değer en yakın, en uygun değere bir yuvarlama yoluyla atama yapılır.
+
+90
+00:20:50,259 --> 00:21:01,699
+Bu değere ve o zaman x'in iyinci değerini ne olarak kaydettiyseniz o olarak kullanabilirsiniz.
+
+91
+00:21:05,491 --> 00:21:15,692
+in nature, doğadadır. Bu işlem in computers, yani bir bellek de bilgisayarda saklanan bir şeydir arkadaşlar.
+
+92
+00:21:17,891 --> 00:21:24,491
+Doğadaki bir işareti, bir sistemi, bir fonksiyonu incelerken sürekli matematik konularından faydalanıyoruz.
+
+93
+00:21:25,391 --> 00:21:32,692
+Bilgisayar üzerinde bu işi yaparken ayrı matematik konuları ayrıca bize yardımcı oluyor. İşte bu şeyin türevini alacaksınız.
+
+94
+00:21:33,364 --> 00:21:54,364
+Sizin üstün türevini nasıl aldığını biliyorsunuz, alabilirsiniz. Ama elinizde böyle bir veri varsa, bu veriden dolayı siz bir fonksiyon önce üretirsiniz, o fonksiyonun türevini alabilirsiniz veya geçen dönem gördüğünüz sayısal analiz teknikleriyle, ayrı matematik teknikleriyle türev alma işlemi yapabilirsiniz.
+
+95
+00:22:00,243 --> 00:22:04,683
+Buradaki matematikten kastımız arkadaşlar, şurası sürekli matematik.
+
+96
+00:22:05,203 --> 00:22:09,443
+Sürekli nesnellerle ilgilenir. Ayrık matematik, ayrık nesnelere ilgilenir.
+
+97
+00:22:09,943 --> 00:22:13,243
+Ayrık nesnelere verilecek örnekler, örneğin tam sayılar.
+
+98
+00:22:15,243 --> 00:22:19,643
+Bir bilgisayar programı tarafından yüktüren işlem adımları, yani algoritma.
+
+99
+00:22:20,143 --> 00:22:27,043
+Bir harita üzerinde A noktasından B noktasına gitmek için farklı yolların tespiti. Bunlar ayrık matematiğin örnekleri.
+
+100
+00:22:28,500 --> 00:22:34,659
+Ve bu dersimiz bilgisayar bilimlerindeki birçok ders için gerekli olan altyapıyı vermeyi sağlayacak.
+
+101
+00:22:34,659 --> 00:22:37,500
+Dediğim gibi, bunun geçmişi biraz eski bir ders.
+
+102
+00:22:37,500 --> 00:22:44,500
+O nedenle, ya işte bazı derslerde aynısını görecek misiniz? Yani buradaki konuların aynısını ve detaylısını göreceksiniz.
+
+103
+00:22:44,500 --> 00:22:47,500
+Örneğin, bazı problem türlerinden bahsedelim.
+
+104
+00:22:47,500 --> 00:22:50,400
+Belli bir kurala göre, işte...
+
+105
+00:22:50,400 --> 00:23:04,640
+büyük harfle başlasın, küçük harfle bitsin veya işte rakam içersin, özel sembol içersin. Kaç farklı yolla şifre seçilebilir, şifre oluşturulabilir? Bu ne problem arkadaşlar sizce? Yani matematik olarak düşünürseniz.
+
+106
+00:23:08,084 --> 00:23:11,024
+Aslında seçilebilir demek burada biraz yanlış olmuş da.
+
+107
+00:23:18,836 --> 00:23:29,516
+Permütasyon. Neyle permütasyon yapacağız? Permütasyon iki değişkenli bir şey. Burada değişkenlerimiz ne olacak?
+
+108
+00:23:38,996 --> 00:23:50,996
+Evet, karakter kümesi yani bir tane şey, diğeri de hane sayısı. Yani sayılar değil [öğrenci], yani bir karakter kümemiz var elimizde, öbürü de hane sayımız olacak.
+
+109
+00:23:50,996 --> 00:23:59,996
+Onun o kadarlı permütasyonu, permütasyonu ne yapıyoruz? Oradan o kadar eleman seçiyoruz, işte örneğin 100 tane karakter karakterimiz olsun.
+
+110
+00:24:04,788 --> 00:24:14,688
+Eğer 100 uzunluklu bir şifre oluşturacaksak o zaman o faktöriyeldir. 100'ün 100'lü permütasyonu biliyorsunuz faktöriyeldir.
+
+111
+00:24:14,688 --> 00:24:28,487
+Ama 100 karakterden n tanesi yani n küçüktür eşittir 100 diyelim olmak üzere kaç farklı şifre oluşturur derse bunun permütasyon problemi oluyor.
+
+112
+00:24:28,487 --> 00:24:30,487
+Evet, güzel.
+
+113
+00:24:30,544 --> 00:24:47,044
+Kaç tane geçerli internet adresi olabilir? Şimdi örneğin IP protokolümüz var. IP protokolü dörtlü sayılardan oluşuyor. İşte 192, 168, 10.0 gibi. Bunlarla kaç farklı internet adresi bulunabilir?
+
+114
+00:24:47,044 --> 00:24:50,544
+Bir piyangoyu kazanma olasılığımız kaçtır?
+
+115
+00:24:51,412 --> 00:24:59,172
+Bir ağdaki iki bilgisayar arasında bağlantı var mı? Şimdi siz Google'a bağlanamıyorsunuz, bağlanabiliyor musunuz? Hep ping atıyorsunuz, belki kullandınız.
+
+116
+00:24:59,172 --> 00:25:10,612
+Bu bağlantının gerçekleşmesi sırasında bir arkada paket yönlendirme işlemi var. O paket yönlenirken iki nokta arasında bağlantı var mı? Aynı şeyi gibi düşünün.
+
+117
+00:25:10,612 --> 00:25:18,132
+İki il arasında, iki seçilen bir il veya ne bileyim ülke diyelim. Bu nokta arasında bağlantı var mı yok mu?
+
+118
+00:25:18,932 --> 00:25:31,532
+İstenmeyen e-postaları nasıl tanımlarız? Yani spam detection dediğimiz bir konu. Size mail geliyor, bazı mailler spam kutumda düşüyor. Acaba neye göre bu işlem yapılıyor?
+
+119
+00:25:32,411 --> 00:25:39,012
+İşte bazı sözcük tabanlı teknikler var, içerik tabanlı teknikler var. Burada onlar mesela bu örneğe verilebilir.
+
+120
+00:25:41,172 --> 00:26:04,211
+Bir mesajı nasıl şifreyebiliriz? Yani güvenlik adını nasıl şifreleme yapılabiliriz? Bu burada anlatılacak konu. Kriptoloji mesela bu dersten türeyen ayrı bir kavramdır. İki tam sayıyı toplayan bir devre nasıl kurulabilir? Bir ulaşım sistemi kullanarak iki şehir arasındaki en kısa yol nasıl bulunur? Bir yerden bir yere gideceksiniz, en kısa yolu ayı bırakırsınız.
+
+121
+00:26:06,804 --> 00:26:21,084
+Mesela bir grup şehirden 100 tane şehir var. Her birini bir defa ziyaret edeceğiz ve başlangıç noktamıza geri geleceğiz. En kısır olu buradan nasıl olacak? Örneğin şöyle bir şey diyelim.
+
+122
+00:26:23,824 --> 00:26:32,304
+A şehri, B şehri, C ve D şehri olsun. Şu bir yoldur.
+
+123
+00:26:32,852 --> 00:26:56,852
+A, B, C, D ve A. Bunların topolojisini bilmem lazım. Ne demek topoloji? A burada, B burada, C burada, T burada. Yani buradan buraya yol var mı? Buradan buraya yol var mı? Şöyle bir şey var mı? Böyle bir topoloji aradaki bağlantı yollarını da bilmem gerekiyor. Ama...
+
+124
+00:26:57,811 --> 00:27:20,311
+A'dan başlayıp A'ya bu şekilde gidebilirim. Ondan sonra A'dan başlayıp, tabi topolojiyi bilmek kaydıyla, C, B, D, A böyle bir şey yapabilirim. A, C, D, B, A böyle bir şey yapabilirim. Yani şuraya A'dan başlayıp A'dan bitecek şekilde kaç farklı durum gelebilir? Altı farklı durum gelebilir değil mi arkadaşlar?
+
+125
+00:27:21,236 --> 00:27:28,435
+Bu 6 farklı durumu yazacaksınız. Bunların her birinin maliyetine bakacaksınız. İşte bu 6 birin mali, bu 10 birin mali.
+
+126
+00:27:28,435 --> 00:27:33,236
+En az maliyetli olan sizin için hangisi ise onu seçersiniz.
+
+127
+00:27:33,236 --> 00:27:38,435
+Eğer tabii böyle şehir sayısı küçükse bu problem nispeten çözümü kolay.
+
+128
+00:27:38,435 --> 00:27:43,435
+Ama çok fazla bir şey varsa o zaman çözüm zorlaşıyor.
+
+129
+00:27:43,435 --> 00:27:45,435
+Biz bu problemi ben...
+
+130
+00:27:45,875 --> 00:27:52,596
+Bu dersi aldığım sene bir proje yapmıştı. Türkiye haritası için ve herhangi bir harita için. 81 il var.
+
+131
+00:27:52,596 --> 00:27:58,596
+Acaba 81 ili en kısa yoldan nasıl bir rota çizerek gezebilirim?
+
+132
+00:27:58,596 --> 00:28:05,075
+Ve benim ilk makalem o zamanlar bunun üzerine çıktı. Bu ders aslında aydınlığı bir ders.
+
+133
+00:28:06,067 --> 00:28:14,747
+Isparta Üniversitesi'nin dergisinde yayınlandı. Oradaki 81 il için 20.000 kilometre miydi? Yanlış söylemeyeyim arkadaşlar da.
+
+134
+00:28:14,747 --> 00:28:21,747
+Böyle bir kilometre buluyorduk. Biz yapay zeka algoritmalarla, genetik algoritma, karınca, kronos algoritması ile bunu yapmıştık.
+
+135
+00:28:21,747 --> 00:28:33,347
+Normalde 81 il için şu şekilde brute force bir çözüm, kaba kuvvet çözümü pek mantıklı değil.
+
+136
+00:28:33,619 --> 00:28:39,619
+Çünkü arada düşünün, yani bir il seçtiniz, işte İstanbul, İstanbul'dan başlayacağız, İstanbul'a geri döneceğiz.
+
+137
+00:28:39,619 --> 00:28:45,619
+Ne var? Şurada 80 tane il var. Kaç farklı durum çıkar? 80 faktöriyel.
+
+138
+00:28:45,619 --> 00:28:58,619
+80 faktöriyel farklı durumu hesaplayıp, onların en küçüğünü bulmak, en küçüğünü bulmak problem değil de 80 faktöriyel farklı durumu hesaplamak bilgisayar için çok mümkün bir şey değil şu anki bilgisayarlar için.
+
+139
+00:28:59,619 --> 00:29:00,619
+Tamam.
+
+140
+00:29:02,099 --> 00:29:07,319
+Evet, bilgisayarın mantık yürütebilmesi için cümleleri nasıl temsil edebiliriz demiş.
+
+141
+00:29:11,028 --> 00:29:24,748
+Yok, bir harita, TSP haritaları diye bir veri yapıksı var. Travelling Salesman problem diye. Haritayı yüklüyorsunuz, yani onun içerisinde onu coğrafi bilgi sistemlerinde uğraşanlar kullanıyor bu haritaları.
+
+142
+00:29:24,748 --> 00:29:35,988
+Yani kendine ait bir veri yapısı var. İller arasındaki bağlantıları var, yok, ondan sonra ne kadar kilometre var, onları onlar tutuyor. Biz sadece o veriyi okuduk.
+
+143
+00:29:36,307 --> 00:29:44,988
+Herhangi bir harita da olabilir. Avrupa'da bir ülke veya Avrupa haritası. Daha sonra nokta seçmiştik. Sonra bize rota belirliyor.
+
+144
+00:29:48,852 --> 00:29:57,092
+Evet. Sonsuz sayıda asal sayı olduğunu nasıl kanıtlayabilir? Bakın ispatla alakalı bir şey var.
+
+145
+00:29:57,092 --> 00:30:05,092
+Bir tam sayı listesi tam sayıların artan sırada olması için nasıl sıralımabilir? Yani bir sıralama problemi.
+
+146
+00:30:05,092 --> 00:30:10,292
+Böyle bir sıralama yapmak için kaç adım gerekir? Buyurun.
+
+147
+00:30:10,644 --> 00:30:25,423
+Peki o bulduğunuz rotanın nasıl en kısa rota olduğunu anladınız? Çünkü algoritma belki yanlış çalışıyor olabilir. 80 faktöryer bir olasılık var. Nasıl emin olabildiniz?
+
+148
+00:30:26,624 --> 00:30:30,144
+Şimdi en kısa diye söyledin mi bilmiyorum. Söylediysen belki yanlış olmuştur.
+
+149
+00:30:31,092 --> 00:30:39,092
+Biz 2-3 algoritmayı orada kıyasladık. O kıyaslamalardan elde edilen en kısa sonuç Karınca Kolomis algoritması ile bu.
+
+150
+00:30:39,092 --> 00:30:52,012
+Tabi bu sonucu diğer tekniklerle veya diğer elde edilen sonuçlarla karşılaştırdık o zaman. Yani kilometre açısından baktığımızda.
+
+151
+00:30:53,076 --> 00:31:00,076
+Onun daha kısa olduğunu, bizim önerdiğimizin daha kısa olduğunu literatürkteki çalışmalarla şey yaptık, kontrol ettik.
+
+152
+00:31:00,076 --> 00:31:06,076
+Hani exact solution burada mümkün değil, tam çizge. Tamam mı?
+
+153
+00:31:06,076 --> 00:31:07,076
+Tamam canım, teşekkür ederim.
+
+154
+00:31:07,076 --> 00:31:13,076
+Genç programını elektrikçiler kullanıyor da ben hiç kullanmadım. O bir programlama dili gibi.
+
+155
+00:31:13,076 --> 00:31:20,076
+Bu optimizasyon, yani bizim bulduğumuz sonuç kesin mutlak sonuç değil arkadaşlar. Optimal solution. Buna ilerleyen zamanlarda geleceğiz.
+
+156
+00:31:20,692 --> 00:31:44,692
+Exact solution dediğimiz, yani 81 farklı durumun incelenip en küçüğünün bulunmasıdır. O permütasyonun en küçük maliyeti olanın bulunmasıdır. Optimal solution ise nedir? O solucuna en yakın, makul kabul edilebilir bir soruştur. Örneğin 81 farklı faktoryel durumu, 80 faktoryel durumu...
+
+157
+00:31:45,172 --> 00:31:53,172
+İnceleyip hesaplamak imkansızsa ne yaparsınız? E bari ona en yakın daha iyi bir çözüm bulana kadar oluruz.
+
+158
+00:31:53,172 --> 00:31:58,172
+Şimdi mesela aşı arıyoruz değil mi? Yani Covid aşısı bulunmaya çalışıyor.
+
+159
+00:31:58,172 --> 00:32:07,172
+Herkesten farklı bir görüş çıkıyor. ExactOution dediğimiz şey tamamen virüsünün ihba edecek bir şeyin bulunması lazım.
+
+160
+00:32:07,172 --> 00:32:11,019
+Ama biri başka bir şey buluyor, biri başka bir şey buluyor. Sonra ne yapıyorlar?
+
+161
+00:32:12,852 --> 00:32:14,852
+Fayda zarar analizi yapılıyor.
+
+162
+00:32:14,852 --> 00:32:24,852
+Maliyet analizi yapılıyor. Yani ben bu aşıyı yaparsam, işte kaça üretiyorum, ondan sonra ne kadar insan hayatına faydalı olacak, ne kadar zararlı olacak. Yani o analizler yapılıyor.
+
+163
+00:32:24,852 --> 00:32:32,852
+Orada da mesela egzersiz oluşum yoktur. Optimal oluşum bulunduğunda, kabul edilebilir kriterlere ulaşıldığında yoktur.
+
+164
+00:32:32,852 --> 00:32:37,852
+Peki bu GEMS programıyla ne kadar kilometre aldığını hatırlıyor musun [öğrenci]?
+
+165
+00:32:50,740 --> 00:33:05,140
+Anladım. Küçük Avrupa şehirlerinde basit oluyor. Örneğin 5-6 şehir falan da Türkiye gibi olunca. Ben 20 bin diye hatırlıyorum. Belki detayı 20-25 bin, onu tam bilmiyor. O civarlarda da bir şey.
+
+166
+00:33:09,011 --> 00:33:10,011
+Anladım.
+
+167
+00:33:12,011 --> 00:33:13,011
+Pekala.
+
+168
+00:33:14,011 --> 00:33:20,011
+Sonra bir sıralama algoritmasının bir listeyi her zaman doğru sıralamadır. Yani elimizde bir liste var.
+
+169
+00:33:20,011 --> 00:33:25,011
+Acaba bu liste sıralı bir liste mi, sıralı bir liste mi? Onun kontrolü.
+
+170
+00:33:28,011 --> 00:33:30,011
+Şimdi bu dersin amacına baktığımızda,
+
+171
+00:33:31,011 --> 00:33:34,011
+bir problemi, gerçek dünya problemini sezerken,
+
+172
+00:33:35,827 --> 00:33:44,307
+Matematiksel akıl yürütme, yani ispatlarla, matematiksel argümanlarla bir problem çözme, becerisi kazandırmaya çalışıyoruz.
+
+173
+00:33:45,048 --> 00:33:50,347
+Yani bir yöntem önerdiniz, onun ispat üzerinde durabilirsiniz. İspat yöntemlerini anlatacağız.
+
+174
+00:33:51,607 --> 00:33:57,767
+Sonra kombinatoryal analiz dediğimiz farklı türdeki nesnelerin sayılmasıyla alakalı şeyler.
+
+175
+00:34:02,932 --> 00:34:12,652
+Örneğin kümeler, permütasyon, bağıntılar yani ilişkiler, grafikler, ağaçlar, son durum makineleri burada öğrenilecek.
+
+176
+00:34:12,652 --> 00:34:27,771
+Algoritmik düşünme, bir problemin birden fazla çözüm yolu olabilir. Bu algoritmalardan acaba hangisi daha verimlidir, hangi yönteme göre daha verilir buna bakacağız.
+
+177
+00:34:28,244 --> 00:34:32,923
+Algoik ve analizi ayrı bir ders de burada onun girişlerine bakacağız.
+
+178
+00:34:35,284 --> 00:34:39,124
+Sonra uygulamalar ve modelleme. Özellikle modelleme arkadaşlar,
+
+179
+00:34:40,003 --> 00:34:47,804
+bilinen bir problemi, çözülmesi istenen bir problemi bildiğiniz elimizde var olan yapılarını nasıl modelleyebiliriz?
+
+180
+00:34:48,164 --> 00:34:50,963
+Örneğin haritalardan bahsettik biraz önce.
+
+181
+00:34:51,411 --> 00:34:57,171
+Haritalarda biz nasıl şöyle aradaki yolları göstermek için bunu kullandıysak,
+
+182
+00:34:57,171 --> 00:35:05,291
+işte bir kimyada bir elementin yapısına baktığınızda hidrojen H2O,
+
+183
+00:35:05,291 --> 00:35:09,251
+şöyle bir şeydi herhalde,
+
+184
+00:35:09,251 --> 00:35:17,091
+şurada bir şey var, hatta buradaki aşıya 104.5 derece diyorlardı, öğrettiler demem, ne dersin, niye öğrendiysek bilmiyorum.
+
+185
+00:35:18,099 --> 00:35:25,939
+Bu bir mesela molekülün yapısıyla alakalı bir şey. Bu molekülün yapısından yola çıkarak benzerlik analizleri,
+
+186
+00:35:25,939 --> 00:35:33,859
+faya farklı analizler yapılıyor. Kimyacılar, biyologlar bunları yapıyor. Hani burada da yaptığımız şey aslında bir graftır.
+
+187
+00:35:33,859 --> 00:35:37,139
+Şu da bir graftır. Sadece problemin türü değişiyor.
+
+188
+00:35:44,436 --> 00:35:49,436
+Ve aslında Ayrık Matematik için en güzel benim söyleyileceğim şey
+
+189
+00:35:52,724 --> 00:35:53,724
+Evet.
+
+190
+00:35:55,724 --> 00:35:56,724
+Var.
+
+191
+00:35:58,724 --> 00:36:03,724
+En güzel söyleyecek şey bir geçiş. Yani bir gateway ders arkadaşlar.
+
+192
+00:36:05,724 --> 00:36:07,724
+Bunu keşke böyle bir kaydeseydik.
+
+193
+00:36:07,724 --> 00:36:10,724
+Gateway diye yazıyor da orucada oradan Türkçe'ye çevirmiş.
+
+194
+00:36:11,724 --> 00:36:16,724
+Ne demek geçiş dersi? Şu ana kadar bazı ilk ötüp programlama bilgimiz var.
+
+195
+00:36:16,724 --> 00:36:19,724
+İşte liseden oradan buradan matematik biliyoruz, mantık biliyoruz.
+
+196
+00:36:20,500 --> 00:36:27,939
+Artık buradaki bilgilerimizi bilgisayarda nasıl organize edip kullanabiliriz? Bunu hedefliyoruz.
+
+197
+00:36:27,939 --> 00:36:44,500
+Bilgisayar bilimi açısından baktığımızda bilgisayar mimarisi, veri yapıları algoritma, programlama dilleri, derleyici, tasarlayıcı, derleyici, yorumlayıcı, bilgisayar güvenliği, veri tabanı, yapay zeka, bunların hepsi aslında ayrık matematikte ilimkili şeyler.
+
+198
+00:36:44,788 --> 00:36:51,347
+Yani bir kriptografi, kriptoloji dersinin içeriğine baktığınızda ayrık matematik, %90'ını göreceksiniz.
+
+199
+00:36:51,347 --> 00:37:00,948
+Sonra mantıkta, matematikte kullandığımız şu, graf teorisi, oyun teorisi, A-optimizasyon sayılar, soyutçe bir kombinatörik konular var.
+
+200
+00:37:00,948 --> 00:37:10,788
+Ve diğer disiplinler, işte felsefedeki bari kavramlar, ekonomi, dil bilim veya görüntü işleme, ses işleme bazı...
+
+201
+00:37:10,996 --> 00:37:16,676
+Günlük hayatı ilişkisindiren konular. Bunlar arasında bir bağ kuruyor, bunlar arasında bir geçiş sağlıyor bu dersimiz.
+
+202
+00:37:17,676 --> 00:37:28,676
+Birazdan örneklere bakacağız. Şimdi şurada benim dersini aldığım hocamdan rica ederek eklediğim bazı slide'lar var, onları açıklayayım.
+
+203
+00:37:29,155 --> 00:37:37,867
+Ayrık matematik veya ayrık işlemser yapılar olası durumları sonlu olacak, sonlu durumda. Problemin çözümüyle ulaşan bir matematik.
+
+204
+00:37:39,219 --> 00:37:43,919
+Yani olası saydığımızda durumlarını, sonun sayıda bir durum olacak.
+
+205
+00:37:44,119 --> 00:37:48,039
+Ve genel olarak 3 kategoriye ayırabiliriz.
+
+206
+00:37:48,239 --> 00:37:49,259
+Bu bir yorum tabii ki.
+
+207
+00:37:49,419 --> 00:37:51,219
+Yani daha fazla kategoriye de ayırılabilir.
+
+208
+00:37:53,019 --> 00:37:57,699
+Bazı durumlarda problemin çözümünün varlık olmadığı açık değildir.
+
+209
+00:37:57,799 --> 00:38:00,539
+Bu bir varlık ve rüzleme problemi olarak karşımıza çıkıyor.
+
+210
+00:38:00,619 --> 00:38:02,519
+Böyle bir problem var, bunun çözümü var.
+
+211
+00:38:03,699 --> 00:38:04,219
+Varsa...
+
+212
+00:38:05,460 --> 00:38:32,460
+Nasıl bir çözüm üretilebilir? Ondan sonra ona bakıyoruz. Çözümün varlığı biliniyor ancak bunların kaç tane olduğunu bilmiyoruz. Bir sayma problemi, counting problem veya n tane çözüm arasından en uygun çözüm yani optimizasyon problemi çözümü, problemi ayrık matematiğin kapsamına giriyor. Genel olarak öyle bir şey söyleyeyim. Şimdi doğal bir örneklere bakalım.
+
+213
+00:38:33,748 --> 00:38:36,148
+Şimdi şu soruyu okuyayım.
+
+214
+00:38:41,076 --> 00:38:42,615
+şey, şu da ki.
+
+215
+00:38:52,884 --> 00:38:58,484
+Hemen derse girmiş gibi oluyoruz dersin konularını ama bu sadece tanıtımla alakalı şey.
+
+216
+00:38:59,203 --> 00:39:04,484
+4 evli çift her pazar akşamı falan diye öyle baya karmaşık bir soru.
+
+217
+00:39:22,164 --> 00:39:29,164
+İlk sorumuzda ne var? Bir texture var mıdır? Yani böyle bir şey oluşturulabilir mi? Bir varlık belirleme problemi.
+
+218
+00:39:31,164 --> 00:39:36,164
+Yani bu el sıkışma problemi, handshake probleminin bir farklı uygulaması.
+
+219
+00:39:37,164 --> 00:39:43,164
+Sonra bakalım 6 kişilik bir yatırım kulübü her yıl başkan ve sayman pozisyonunu dönerli olarak değiştirmek istiyorlar.
+
+220
+00:39:43,164 --> 00:39:46,164
+Aynı insanların aynı pozisyonlara gelmesi için kaç yıl gereklidir?
+
+221
+00:39:47,155 --> 00:39:50,076
+Bu da bir problem, no, bir silo problemu değil.
+
+222
+00:39:53,876 --> 00:40:05,556
+Sonra bir iş yerinde üç çalışan Ali Ahmet'le şu kadar saat ücreti alıyorlarmış. Patronun bu insanların ayrıca üç ayrı işi varmış.
+
+223
+00:40:05,556 --> 00:40:12,676
+Tabloda her bir insanın bu işlere ne kadar kredi yapacağı gösteriliyor. Patron için ne önemli? Maliyet önemli.
+
+224
+00:40:12,676 --> 00:40:19,876
+En az ödeme yapacak şekilde hangi işi hangisine vereyim ki en uzun durumu elde edeyim. Mesela bunun bir algoritması var.
+
+225
+00:40:20,275 --> 00:40:22,275
+Macar algoritması diyorlar.
+
+226
+00:40:30,643 --> 00:40:37,243
+Daha sonra ilerleyen zamanlarda Matematik'e o optimizasyon algoritmasını anlatırım. Hangi işi hangisi atayalım.
+
+227
+00:40:39,344 --> 00:40:46,123
+Bu da bir optimizasyon programı. Sonra bakalım arkadaşlar. Planlama problemi gibi bir şey var.
+
+228
+00:40:46,123 --> 00:40:48,863
+Önce şunu niye kalmış?
+
+229
+00:40:52,052 --> 00:41:03,052
+Örneğin, bayram ündürü için sekiz sayfalık ilan gönderecek. Bu ilanın bayramına en az on gün önce postalanması gerekiyor. Ancak birçok işin yapılması, özellikle bazı kararının alması gerekiyor.
+
+230
+00:41:03,052 --> 00:41:11,052
+Tüm bu işlerin yapımı için zamana ihtiyaç var. Bunun için sadece otuz gün olduğunu kabul edelim. Her bir işin ne kadar süreceğini tablo olarak üniversite.
+
+231
+00:41:11,052 --> 00:41:18,476
+Örneğin, bu işler bu kadar sürede bitiyormuş ve topladığımız zaman otuz yedi gün. Fakat bizim otuz günlük
+
+232
+00:41:18,900 --> 00:41:28,340
+Ne var? Kısıtımız var. Pekala. Acaba soru şu, bu problemi daha kısa sürede çözebilir miyiz? Nasıl çözeriz?
+
+233
+00:41:29,539 --> 00:41:35,699
+Eş zamanlı olarak işlemin tamamlanması. Yani aynı anda dört tane işi yapabiliyorsan ne oluyor?
+
+234
+00:41:35,699 --> 00:41:39,699
+İşte en uzun, işte şu dördünü aynı anda yaptığımızı kabul edelim.
+
+235
+00:41:40,083 --> 00:41:50,083
+ne olur? 4 birim sürede bitiririz. Toplamda ne oluyor? İşte 4, 8, 11, 11 iken 4'e düşürüyoruz. Yani 7 oradan gidiyor mesela. Gibi.
+
+236
+00:41:50,083 --> 00:42:05,083
+Bir de pipeline mantığıyla yani bir iş bitecek ondan sonra bu işlem yapılacak. Bora hattı mantığıyla bu işi yaparsak hem eş zamanlılık hem bora hattı ne yapıyor? Bize iş kısa türü çözmemizi sağlayacak. Örneğin.
+
+237
+00:42:09,012 --> 00:42:15,731
+Bilgiyi graf olarak göstermek daha mantıklı olacak. Her bir işi bir graf ile ve bir harfle gösterelim arkadaşlar.
+
+238
+00:42:15,731 --> 00:42:25,412
+A'dan Z'ye sıraladık. A'dan Z'ye doğru sıraladık. İşte şu şekilde bir graf işlemi. Ve bu graf üzerinde bir analiz yapıyoruz.
+
+239
+00:42:25,412 --> 00:42:32,140
+Tabii bunu uzman görüşüyle yapacağız. İşte mal seçimi ve mal seçimi işte kısım...
+
+240
+00:42:32,884 --> 00:42:42,604
+müdürlüğünde, satın alma müdürlüğünde bu A ve B işleri aynı zamanda yapılabilir mi? Eğer yapılabilirse uzman tarafından bunu öğreniyoruz. Bu ikisini aynı başlatıyor.
+
+241
+00:42:43,244 --> 00:42:50,864
+C işlemi aynı zamanda AB ile yapılabilir mi? Yani bir ön koşul durumuna bakacağız. Sizin ders ön koşulunuz gibi düşünebilirsiniz.
+
+242
+00:42:51,623 --> 00:42:55,864
+C'yi yapabilmek için AB gerekliymiş. O zaman diyoruz ki A ve B eş zamanlı yapılabilir.
+
+243
+00:42:56,403 --> 00:43:08,804
+C eş zamanlı yapılamaz, C onlara bağımlıdır. Şu şekilde bir yapı oluşturuyoruz. Bütün işlemleri böyle bir öncelikli graf yapısına durdurduğumuzda ne olacak? Şunu elde edeceğiz.
+
+244
+00:43:08,804 --> 00:43:19,003
+Bundan sonra üzerinde ne yapabiliriz? Maliyet analizi yapabiliriz. O da şurada. Diyoruz ki burada okların sağdan sola doğru olduğunu göreceğiz.
+
+245
+00:43:20,052 --> 00:43:26,672
+Okları ayrıca çizmeye gerek yok demiş. Ayrıca her düğünün küçük bir daireyle gözlep içine o işin gerektiği süreyi yazacağız.
+
+246
+00:43:28,612 --> 00:43:36,612
+İşte A3 işlemi için 3 birim, bunun için 2 birim, bunun için 2 birim ama bu işin bitmesi için toplamda ne kadar lazım?
+
+247
+00:43:37,152 --> 00:43:44,211
+Kendisinden önce işte 3 birim sürede A bitecek ki kendisi de 2 birim, 5 birim sürede C işlemi bitmiş olsun.
+
+248
+00:43:44,596 --> 00:43:54,016
+Sonra G'ye baktığımızda G'nin kendisi 3 birimmiş, 5'e 3 ekleriz 8 olur. D'nin kendisi 4 birimmiş, 9 olur. E'nin kendisi 3 birimmiş, 8 olur.
+
+249
+00:43:54,596 --> 00:44:02,675
+Bu 8'den yola çıkarak 9 birimde bu işlem bitiyordu, 8 birimde bu işlem bitiyordu. O zaman 9'u bekleyeceğiz bunun bitmesini.
+
+250
+00:44:03,316 --> 00:44:11,695
+Kendisi de 2 birimdi, 11 birimde bu bitecek. 8'e 1 ekledik 9, 11'e 5 ekledik 16.
+
+251
+00:44:12,255 --> 00:44:27,255
+16'ya 2 ekledik, 18. 18'e 2 ekledik, 18'e 10 ekledik, 28. 28 sürede, 28 günde ne olabiliyor? Bu problem çözülebiliyor.
+
+252
+00:44:27,255 --> 00:44:35,255
+Tamam mı? Şimdi önemli olan şey bu arkadaşlar. Bunu analiz edebilmek, tabi uzman dönüşüyle yapılıyor bu işler.
+
+253
+00:44:38,835 --> 00:45:06,571
+Şimdi mesela proje yapılıyor. Büyük projeleri düşünün. Şu günde açılış yapacağız deniyor. Fakat o açılış yapılmadan önce deniyor ki işte şu nokta, işte şu gün, üç ay, altı gün sonra projenin çok önemli bir parçası bitiyor. İşte yüzde kırklık en zor parçası bitiyor. Ondan sonrası kolay gibi şeyler duyarsınız. İşte bu da bu tarz işlemlerde
+
+254
+00:45:07,923 --> 00:45:19,684
+Program Evaluation and Review Technique, PERT diagramı denilen teknikler, yöntemlerle yapılıyor. Bakın bu bir graftır, ayrı bir yapıdır. Aslında biz bunu dersimizde matriz olarak göstereceğiz arkadaşlar.
+
+255
+00:45:20,764 --> 00:45:29,084
+Şimdi işin tamamlandığı yoldan geriye doğru giderken, geriye doğru gidiş yapacağız ve buradan kalitik yolu bulacağız arkadaşlar.
+
+256
+00:45:29,940 --> 00:45:35,840
+Şimdi bu iş burada tamamlanıyor. Bunun tamamlanması için neyin tamamlanması lazım? J'nin tamamlanması lazım.
+
+257
+00:45:36,620 --> 00:45:42,500
+J'nin tamamlanması için öncelikle neyin tamamlanması lazım? I'nın tamamlanması lazım.
+
+258
+00:45:42,500 --> 00:45:51,740
+Çünkü H zaten tamamlanmış oluyor. Neyi bekliyor J? I'yı bekliyor değil mi? I'nın tamamlanması için T lazım.
+
+259
+00:45:54,036 --> 00:46:02,215
+E çoktan bitmiştir. D'nin tamam olmasını bekliyoruz. D için C'yi tamamlayacağız. C için de A'yı tamamlayacağız.
+
+260
+00:46:02,215 --> 00:46:08,715
+Bu geriye doğru gittiğimiz yol işte kritik yolu söylüyoruz arkadaşlar. Tamam.
+
+261
+00:46:08,715 --> 00:46:16,715
+Kullanışlı bir şey. Tabi bunu programlamayla yapmak daha güzel. İşte bunun tool'ları var. İşleri giriyorsunuz.
+
+262
+00:46:17,427 --> 00:46:24,867
+Bu yaptığınız, girdiğiniz işlerden kritik yol ortaya çıkıyor. Hatta Gantt Diagramı diye bir şey var. Bunu sistem analizilerinde anlatacaklar.
+
+263
+00:46:24,867 --> 00:46:31,307
+Hangi iş, ne zaman başlayacak, ne zaman bitecek, ne kadar sürecek, hangi iş, hangi işle aynı anda yürütülebilir?
+
+264
+00:46:31,307 --> 00:46:40,747
+Onun analizi de yapılıyor. Bu da ona benzer bir tekliktir ama burada kritik yol, maliyet analizi gibi ekstra analizler mümkün.
+
+265
+00:46:45,300 --> 00:46:48,180
+Evet, bu problem herhalde anlaşılmıştır.
+
+266
+00:46:58,739 --> 00:47:22,739
+Evet, Türk Hava Yolları pazartesi sabahları Ankara'dan 7 ayrı ülkeye uçuşu varmış. TH'ye 7 ayrı pilotun uçmak istedikleri şehirlere göre tahripe yapmak istiyor. Pilotların isteklerine göre aşağıdaki liste hazırlanıyor. Diyor ki Libya, şunlar falan filan, gitmek isteyen isteklerine göre ben buraya gitmek istiyorum, ben buraya gitmek istiyorum.
+
+267
+00:47:22,996 --> 00:47:44,996
+Bu listeye göre görevlendirme mümkünse tüm pilotların isteklerine izin verilecek, mümkün değilse mümkün olduğunca çok eşleşme yapılacak. Yani buna uygun bir yapı oluşturdu. İşte Libya'ya P2 gidiyor, başka P3 gidiyor, P6 gidebiliyor mu gidiyor. Tabi hiç boşta kalmalı olmaması lazım. Bu listeyi...
+
+268
+00:47:45,427 --> 00:47:56,628
+Buna ne diyeceğiz? Bir parti grafı, çift taraflı, iki taraflı graf diyeceğiz arkadaşlar. Bir yanda gidilecek yerler, lokasyonlar var, bir yanda da pilotlar var.
+
+269
+00:47:57,447 --> 00:48:05,907
+Pilotların birbirine gitmesi söz konusu olmaz, illerin birbirine gitmesi bağlantısı söz konusu olmaz. Bağlantı da aynı bu taraftakilerle bu taraftakiler arasında olacaktır.
+
+270
+00:48:06,847 --> 00:48:10,327
+Bu şekilde bir parti graf da bu da çözülebiliyor.
+
+271
+00:48:12,851 --> 00:48:27,331
+Eşleşme işlemini doğrudan, demiş ki başlayalım. Her uçuşa bir pilotu eşlemesi için tüm olası yollar listeleyebiliriz ve olası her yol için karşına görevlendirmenin pilotların isteğine uygunluğunu sayabiliriz.
+
+272
+00:48:27,331 --> 00:48:35,411
+Örnek olarak bir alanı işaretleyelim falan demiş. Buraya bakarsınız, bu bir örnek problemi olduğu için uzun uzun okumaya da gerek yok zaten okursunuz.
+
+273
+00:48:35,699 --> 00:48:48,019
+Biz bunları, bu derste arkadaşlar, işte şu bir farklı grafı nedir? Bununla neler yapılır? Sonra bu graf nedir? Bununla neler yapılır? Hep bunları dersimizde inceleyeceğiz.
+
+274
+00:48:50,099 --> 00:48:59,539
+Buradaki bu derse ilişkin kaynaklar, işte şunlar zaten ikisi aynı kişinin kitabı, farklı versiyonları, işte şu da hocamızın ders notu.
+
+275
+00:49:00,784 --> 00:49:24,963
+Derse giriş olması bakımından bu örneklerin faydalı olacağını düşünüyorum. Ders hakkında size bir fikir verecektir. İşin içinde algoritma var, matematik var. Şimdi soracaksınız işin içinde kodlama var mı? Kodlama da var aslında arkadaşlar. Ama hani biz bu derste daha çok kodlamanın dışında işin algoritmik tarafını, analiz tarafını ve tasarım tarafını inceleyeceğiz.
+
+276
+00:49:25,492 --> 00:49:32,492
+Yeri geldiğinde analiz yapacağız, yeri geldiğinde tasarım yapacağız problem çözmek için. Bu şekilde dersimizi sürdüreceğiz.
+
+277
+00:49:32,492 --> 00:49:41,492
+Sormak istediğiniz bir şey yoksa bir ara verelim. Tam 50 geçiyor. Saat başına kadar bir ara verelim.
+
+278
+00:49:41,492 --> 00:49:46,492
+Geldiğimizde birinci konumuzdan, ilk konumuzdan devam ederiz.
+
+279
+00:49:51,603 --> 00:49:54,783
+Görüntü aktarımında ses aktarımında herhalde bir problem yoktur.
+
+280
+00:50:01,012 --> 00:50:05,412
+Tamam. Saat 10'da görüşmek üzere arkadaşlar.
+
+281
+01:03:34,003 --> 01:03:34,723
+Evet arkadaşlar.
+
+282
+01:03:38,291 --> 01:03:40,132
+Şimdi bu slide'ımız tamam.
+
+283
+01:03:50,003 --> 01:03:52,563
+İlk konumuz mantık konusuna.
+
+284
+01:04:09,396 --> 01:04:20,436
+Bu şekilde gösteriyorum. Bazen işaretleme yapmam, direkt diğer uygulamaya geçmem gerekiyor. Slide görünümü biraz rahatsız ediyor.
+
+285
+01:04:23,987 --> 01:04:25,675
+Aşır, zayıldırsın, güver.
+
+286
+01:04:39,027 --> 01:04:41,327
+Deneyelim bakalım eğer bunu kullanabilirsek.
+
+287
+01:04:53,844 --> 01:04:57,284
+Ben sizin yazdıklarınızı açınca sizin yazdıklarınızı göremiyorum.
+
+288
+01:05:01,139 --> 01:05:12,539
+Şimdi arkadaşlar, mantık konusu doğru çıkarımlar elde etme çalışması olarak ifade edilir.
+
+289
+01:05:12,899 --> 01:05:17,099
+Bunu matematikte ve bilgisayar bilimlerinde kullanımlarını konuşacağız.
+
+290
+01:05:19,443 --> 01:05:29,844
+Matematikte, tabi mantık konusu günlük hayatta zaten hayatın bir parçası ama biz ruh mühendis olarak matematikte ve bilgisayar bilimlerinde nasıl kullanılırsız?
+
+291
+01:05:29,844 --> 01:05:39,043
+Teoremleri ispat ederken mantığı matematikte kullanıyoruz arkadaşlar. İşte bir teorem ortaya atıyorsunuz.
+
+292
+01:05:46,003 --> 01:05:48,003
+Mantık kuralları ile yapılıyor.
+
+293
+01:05:49,203 --> 01:05:54,003
+Veya bir şey ortaya attınız, varlığını ispat edebilirsiniz, bir şeyin varlığını.
+
+294
+01:05:54,003 --> 01:05:56,003
+Onu mantık kuralları ile yapıyoruz.
+
+295
+01:05:56,003 --> 01:05:59,003
+Bir şeyin yokluğu ispat edilmez arkadaşlar.
+
+296
+01:06:01,003 --> 01:06:06,003
+Var olmadığı ispat edilene kadar yok kabul edilir, ispat değildir.
+
+297
+01:06:07,003 --> 01:06:12,003
+Ama varlığına dair bir delil gösterirsiniz, o zaman yok olmadığı ortaya çıkar.
+
+298
+01:06:13,396 --> 01:06:21,596
+Bunun maksiz olarak bir teorem vardı. Hatta bilmiyorum belki bunu Fatih Hoca derste anlatmıştır. Yanlış hatırlamıyorsam şöyleydi.
+
+299
+01:06:21,596 --> 01:06:38,396
+A üzeri 4 artı B üzeri 4 artı C üzeri 4 eşittir D üzeri 4. Böyle bir ABCD dörtlüsü. Şunu tam hatırlayamayabilirim. Yani bunun tam böyle olmadığını şu an bilmiyorum.
+
+300
+01:06:38,931 --> 01:06:47,931
+Böyle bir ABCD dörtlüsünün varlığı yakın zamana kadar bilgisayar sistemleri gelişene kadar böyle bir şey yoktur.
+
+301
+01:06:47,931 --> 01:06:50,931
+Yok kabul edildi tabii, yok denmedi.
+
+302
+01:06:50,931 --> 01:06:57,931
+Ama yok olmadığı varlığı ispat edilince yok olmadığı da ne oldu? Anlaşılmış oldu.
+
+303
+01:06:58,931 --> 01:07:04,931
+Bilgisayar bilimlerinde de birçok konuda kullanıyoruz arkadaşlar.
+
+304
+01:07:06,739 --> 01:07:21,019
+Beklenen bir sonuç üretiliyor mu? Veya bir mantıksal ifade nasıl yazılıyor? Özellikle if'in içerisindeki, for'un içerisindeki conditional statement'lar dediğimiz ifadeler. Bu dersin konunun kapsamı altında.
+
+305
+01:07:31,443 --> 01:07:38,443
+Sonucu doğru veya yanlış olan ifadelere önerme proposition diyoruz.
+
+306
+01:07:40,543 --> 01:07:44,443
+Sonucu doğru olacak veya yanlış olacak ve bir hüküm içerecek.
+
+307
+01:07:44,764 --> 01:07:48,083
+İşte bugün yağmur yağıyor, bugün yağmur yağmıyor, yanlış.
+
+308
+01:07:48,364 --> 01:07:50,784
+Dün yağmur yağdı, evet yağdı, doğru gibi.
+
+309
+01:07:52,503 --> 01:07:57,543
+Yarın yağmur yağarsa bu bir önerme, şu an için koşullu bir önerme gibi oluyor.
+
+310
+01:07:58,516 --> 01:08:15,196
+Bunları bu ifadelerle göstereceğiz. Doğru veya yanlış olacak. Örnek olarak, Cüneyt bir programcıdır. İşte böyle bir kişi var. Bu kişinin programcı olup olmadığına dair bir delil varsa, bunun doğru veya yanlış olduğunu söyleyeceğiz.
+
+311
+01:08:15,196 --> 01:08:19,596
+Doğru olduğunu söylerken genelde ben biri kullanacağım, yanlış yazdık.
+
+312
+01:08:21,427 --> 01:08:29,427
+Yanlış olduğunu söylerken sıfır kullanacağım. Bunları doğruluk tablolarında genelde birden fazla önermeyi yazarken,
+
+313
+01:08:29,427 --> 01:08:39,427
+önerme 1, önerme 2, önerme 3 diyelim, şöyle tablolar oluşturacağız. Bu tablolar oluştururken doğru, doğru, doğru diye yazar. Ben bunu pek kullanmıyorum.
+
+314
+01:08:39,427 --> 01:08:49,215
+Çünkü lojik devirlerde sıfır, sıfır, sıfır, işte 1, 1, 1, 1 tarzı şeyler kullanacağız. Onun için siz true'nun bir false'un sıfır olduğuna şimdiden
+
+315
+01:08:49,216 --> 01:08:57,515
+alışın. Keşke bir geçişi olsaydım. Bunun herhangi bir doğruluk veya yanlışlık içeren bir ifadesi yok arkadaşlar. Onun için bu bir önerme olmuyor.
+
+316
+01:08:59,556 --> 01:09:08,095
+Önermeleri kullanırken değişkenlerden yer aralıyor. Genelde matematikçiler veya mantıkçılar PQ, RST kullanır ama bunlar bir kabundur.
+
+317
+01:09:08,736 --> 01:09:14,836
+Biz bazı işlemlerimizde diyeceğiz işte A1, A2, A3, AN.
+
+318
+01:09:15,604 --> 01:09:24,604
+Veya işte X, Y, Z, T de kullanabiliriz. Özellikle lojik devirler kısmında şunlar A1, A2, A3'ler çok daha fazla işimize yarıyor.
+
+319
+01:09:26,703 --> 01:09:36,604
+Şimdi bu önermeleri kullanırken, değişkenleri kullanırken tek bir önerme ile mantıksal bir ifade yazmak genelde pek mümkün olmuyor.
+
+320
+01:09:36,604 --> 01:09:42,604
+Yani günümüzde kullandığımız ifadeler, problemleri çözmek için kullandığımız ifadeler.
+
+321
+01:09:42,931 --> 01:09:48,171
+önermelerin birleşiminden ortaya çıkıyor. Bu birleşimin de belli bir sistematiğe göre olması lazım.
+
+322
+01:09:48,871 --> 01:09:57,231
+İşte iki önermenin bir arada aynı anda doğru olması durumunda ancak o kabul edilen AND bağlıcı,
+
+323
+01:09:58,371 --> 01:10:08,951
+inclusive OR dediğimiz ikisinden birisi veya ikisinin olması durumu, ikisinden sadece birisi dediğimiz şu EXOR durumu,
+
+324
+01:10:10,644 --> 01:10:24,644
+Negation dediğimiz sembol ile şöyle gösteriyor. Bir ifadenin tam tersi. Bunu şöyle de görebiliriz arkadaşlar. Düz çizgi ile de görebiliriz veya tırnakla da görebiliriz.
+
+325
+01:10:24,644 --> 01:10:35,564
+Bu hatta birazdan vardır muhtemelen. Bir ağ önermesinin değili şöyle tilde ile yazılabilir, böyle yazılabilir veya böyle yazılabilir.
+
+326
+01:10:36,340 --> 01:10:38,960
+imah, implication yani if
+
+327
+01:10:38,960 --> 01:10:49,640
+eğer böyleyse denen bir şeydir. Sembolü budur. Double implication, shift yönlü olan bir şeydir. Bu da şu.
+
+328
+01:10:52,500 --> 01:11:01,060
+Bu da if and only if dediğimiz şey. Genelde bunu iki f ile gösteriyoruz.
+
+329
+01:11:02,547 --> 01:11:11,747
+sadece ve sadece denir. Bu da bu şekilde iki yönlü bir lifttir. Şu XOR'un sembolü şurada
+
+330
+01:11:11,747 --> 01:11:19,207
+artı olarak da gösterilir. Genelde bilgisayarcılar olarak biz bunu kullanıyoruz. Diğerlerini zaten
+
+331
+01:11:19,207 --> 01:11:29,007
+ANDOR'u sembol olarak biz de kullanıyoruz. Bunlar ne için? Arkadaşlar birden fazla önermeyi
+
+332
+01:11:29,363 --> 01:11:39,363
+belli bir kurala uygun güneş kaydı göstermek için. Evet, şimdi AND bağlacı nedir? Ona bakalım. AND, conjunction.
+
+333
+01:11:39,363 --> 01:11:43,363
+Aslında conjunction ve intersection diyeceğiz buna.
+
+334
+01:11:49,011 --> 01:11:51,011
+Niye interseksiyon ve kesişim var?
+
+335
+01:11:52,131 --> 01:11:58,691
+Şimdi elektrik devresi gibi düşünürsek, bir elektrik devresinde şöyle anahtarlar olsun.
+
+336
+01:12:02,003 --> 01:12:03,283
+Burada bir üreteç.
+
+337
+01:12:04,824 --> 01:12:06,363
+Şurada da bir lamba.
+
+338
+01:12:08,923 --> 01:12:15,564
+Bu lambanın, devreden akımın tamamen geçmesi lambanın yanması için olması gereken şart nedir?
+
+339
+01:12:15,564 --> 01:12:17,363
+Bunun da
+
+340
+01:12:19,164 --> 01:12:21,963
+iletir durumda, kapalı durumda olması gerekir değil mi?
+
+341
+01:12:22,744 --> 01:12:25,304
+Şartın durumu böyle olunca
+
+342
+01:12:25,587 --> 01:12:29,887
+Bu iki şartın da gerçekleşmesi durumunu AND bağlıcıyla ifade ediyoruz.
+
+343
+01:12:31,368 --> 01:12:46,708
+Ve bu iki şart, işte buna P dersek, P önermesi, buna Q dersek, P açıktır, Q açıktır dediğimizde, iki önerme de ancak doğru olursa, P ve Q. Bu doğru ise demektir arkadaşlar.
+
+344
+01:12:48,340 --> 01:12:58,000
+Hızlıca biz doğruluk tablosunu şurada çizelim sonra görürüz. P olacak, Q olacak. Bir de bu P ve Q'nun sonucu olacak.
+
+345
+01:12:59,100 --> 01:13:06,659
+Şimdi P ve Q'nun her biri birer başlı başına kendileri önerme. Bu önermelerin kaç farklı durumu oldu arkadaşlar?
+
+346
+01:13:14,868 --> 01:13:29,448
+4. Bu bir permütasyondur. Niye 4? P'nin kendi başına iki durum var. Q'nun kendi başına bu iki durum var. Bu ikisinin sıralaması bizim için önemli mi? Önemli. Dolayısıyla bir permütasyon problemi çözüyoruz burada aslında.
+
+347
+01:13:29,448 --> 01:13:40,448
+Aslında bir ikiye iki olduğu için tam bir faktöriyel durumu. Şurası iki farklı durum alabilir, burası iki farklı durum alabilir. Tam faktöriyel olmuyor gerçi, permütasyon oluyor.
+
+348
+01:13:40,863 --> 01:13:45,863
+Burası iki farklı durum, burası iki farklı durum oluyor. Dolayısıyla buradan dört farklı durum geliyor.
+
+349
+01:13:45,863 --> 01:13:54,863
+Yani durumlar birbirini doğrudan ne oluyor? Etkilemeyecek. Birbirinin birlikte kullanımlarına bakacağız. Dolayısıyla doğruluk tablosu oluşturulurken
+
+350
+01:13:54,863 --> 01:14:04,863
+kaç farklı değişkeniniz varsa onun alt küme sayısı kadar yani iki üzeri en kadar bir doğruluk tablosu olacak. Genelde biz
+
+351
+01:14:05,268 --> 01:14:14,568
+2, 3, en fazla 4. Yani 5 değişkenliği pek bu dersimizde kullanmıyoruz. Bunlar mantıksal devrelerde de böyle karşımıza çıkacak arkadaşlar.
+
+352
+01:14:15,208 --> 01:14:22,448
+Şimdi biz bunu yaparken bütün olasılıkları yazacağız ve bu olasılıklara karşılık gelen değerleri burada yazacağız.
+
+353
+01:14:23,108 --> 01:14:24,268
+Yazdığımız zaman...
+
+354
+01:14:24,404 --> 01:14:34,543
+P'nin değeri 0'a 0 olabilir, 0'a 1 olabilir, 1'e 0 olabilir, 1'e 1 olabilir. True, false yazmıyorum. 0 ve 1'ler gidmişsin daha iyi.
+
+355
+01:14:35,104 --> 01:14:44,404
+Şimdi şu devre özelinde düşünecek olursak P ve Q'nun çalışması için P açık demek. Yani şey kapalı, P açık anahtar, Q açık anahtar.
+
+356
+01:14:44,404 --> 01:14:50,348
+Yani 0 durumunda, 1 durumunda da kapalı olduğunu görelim. Devreden akım geçmesi için yalnızca şu durumda
+
+357
+01:14:50,996 --> 01:15:08,595
+akım geçer ve lamba yanar. Diğer durumlarda hiçbir şekilde akım geçmeyecektir. Genel olarak böyle bir tablo, doğruluk tablosu var. Bunu True-False olarak yaptığınızda bunun tam tersinden yani bu yukarıdan aşağı, öbürü aşağıdan yukarıya yazılmış. Bu şekilde doğruluk tablosunu görebiliyoruz.
+
+358
+01:15:09,524 --> 01:15:26,304
+Yani bunu en kısa yoldan, yani şu ana kadar belki çok fazla ilgilenmediniz ama AND bağlacı nedir? Eğer iki seçenek varsa iki durumda ikisinin de doğru olması, geri diğer durumlar ne olacak? Yanlış olacak. Eğer beş tane değişkenimiz varsa beşi de doğru olacak.
+
+359
+01:15:29,363 --> 01:15:30,084
+Örneğin
+
+360
+01:15:30,547 --> 01:15:48,487
+Kaplan vahşi bir hayvandır. Doğru mudur? Doğrudur. Balina bir sürüngendir. Doğru mudur? Yanlıştır. Dolayısıyla bu ikisinin P ve Q sonucu ne olacaktır? Sıfır yani yanlış olarak söylenecektir. Anlaşıldı mı?
+
+361
+01:15:54,003 --> 01:16:06,003
+Devam edelim. Or, bu şartlardan en az bir tanesinin doğru olması gerektiği durumunda kullanılan bir bağlaç.
+
+362
+01:16:06,003 --> 01:16:15,532
+Bunu da yine elektrik devresi ile gösterecek olursak, bunu bir paralel elektrik anahtar devresi şeklinde yapalım.
+
+363
+01:16:19,507 --> 01:16:24,108
+Tabii iki özelinde örnek veriyoruz da iki sadece en basit olduğunu söylemek için.
+
+364
+01:16:25,387 --> 01:16:26,427
+PQ
+
+365
+01:16:29,227 --> 01:16:34,747
+İyi ben bu grafik tablete PowerPoint ile alıştım. Burada da bazı şeyler yapabilmek güzel.
+
+366
+01:16:35,627 --> 01:16:41,147
+Yaz boyunca mouse ile yazıyordum da şimdi bu şey bayağı iyi oldu.
+
+367
+01:16:45,811 --> 01:17:11,072
+Şimdi arkadaşlar, bunun çalışması içinde ne olacak? En az bir tanesinin bir olması gerekecek. En az bir tanesinin bir olduğu şu üç durumda sonuç bir, diğer durumda sonuç sıfır olacaktır. Tamam, bunu bu şekilde kafanızda sistematiğini oluşturursanız çok fazla tablo ezberlenecek bir durum yok. İki tanesi sıfırsa sonuç sıfır, diğer durumda sonuç bir.
+
+368
+01:17:13,779 --> 01:17:24,979
+Yine burada biraz öncekin şeklinde tablo yazılmış. Ben size böyle bir tablo verirsem hani şu şekilde true false'larla yazmanıza gerek yok. Oradan 0 ve 1'lerle yazmanız doğru.
+
+369
+01:17:29,939 --> 01:17:35,939
+PVQ'nun her ikisi de yanlış olduğu durumda. Yanlış, diğer durumlarda sonuç doğru oluyor.
+
+370
+01:17:35,939 --> 01:17:45,939
+Cüneyt'tir programcıdır. Eğer Cüneyt kişisi böyleyse doğru. Zeynep avukattır. Bu da doğruysa doğru veya yanlış da olabilir. Artık hangisi ise.
+
+371
+01:17:45,939 --> 01:17:52,939
+Biz 0-0 durumu için değil de biri 1-1-1-0 olsun. O zaman doğru olacak veya...
+
+372
+01:17:53,619 --> 01:17:58,899
+hangisi yani toplamları bunların bir olursa midir, sonuç doğrudur diyebiliriz.
+
+373
+01:18:00,159 --> 01:18:04,020
+Şimdi or bağlacının şöyle bir özelliği var.
+
+374
+01:18:06,760 --> 01:18:08,739
+1 artı 1.
+
+375
+01:18:09,840 --> 01:18:12,180
+Tabii şurada şunu söylemeyi unuttum arkadaşlar.
+
+376
+01:18:12,379 --> 01:18:13,239
+Oraya bir geri gelelim.
+
+377
+01:18:14,239 --> 01:18:17,199
+Burada bir P'yi
+
+378
+01:18:21,939 --> 01:18:37,340
+sıfırla end yapmak ne demek? Biz bunu denklemde arkadaşlar, yani eşitlik yazarken özellikle lojik devrelerde şartma olarak da göstereceğiz. İkisi aynı şey demektir. Bunun sonucu nedir?
+
+379
+01:18:43,252 --> 01:18:47,112
+P ve 0, 0'dır. Çünkü doğrudan bir tane değişken 0 geliyor.
+
+380
+01:18:49,512 --> 01:18:54,731
+P ile P'nin durumu nedir?
+
+381
+01:18:59,155 --> 01:19:11,576
+P'dir. Neden? Bu sıfırsa bu da sıfır olacak, bu birse bu bir olacak. Sıfırken sıfır verecek, birken bir bölü. Yani P'ye göre değişiyor. Peki şuna bakalım. P ile P'nin değili nedir?
+
+382
+01:19:15,988 --> 01:19:17,048
+Güzel, sıfırdır.
+
+383
+01:19:18,608 --> 01:19:20,128
+P ile bir nedir arkadaşlar?
+
+384
+01:19:24,404 --> 01:19:31,844
+P ile bir de P'ye bağlı olarak P. Bunlar basit şeyler olduğu için ben geçtim ama şuradan devam edelim. Burada başka
+
+385
+01:19:34,484 --> 01:19:39,364
+P'nin değiliyle bir desek o zaman da P'nin değili olur.
+
+386
+01:19:46,804 --> 01:19:54,484
+Şimdi burada da or bağlacında da arkadaşlar 1 artı 1 eşittir 1 ve 1 şu şekilde gösteriyoruz.
+
+387
+01:19:57,184 --> 01:20:05,504
+Bir P ile şunun sonucu ne olacaktır arkadaşlar? 1 olacaktır doğrudan değil mi? Çünkü bir tanesi en azından 1.
+
+388
+01:20:06,824 --> 01:20:09,703
+P ile P dediğimizde sonuç ne olur?
+
+389
+01:20:13,300 --> 01:20:17,280
+0 ise 0'dır, 1 ise 1'dir. Bu da E olacaktır.
+
+390
+01:20:18,840 --> 01:20:20,800
+E ile E'nin değil de nedir?
+
+391
+01:20:24,467 --> 01:20:31,807
+Bu kesin 1'dir, evet. Başka ne var? P ile 0 nedir arkadaşlar? Onu yazdık mı yazmadık?
+
+392
+01:20:33,247 --> 01:20:42,347
+P ile 0'da 0'dır. Bu tarz yorumları herhangi bir şekilde ezbere gerek kalmadan yapabilir olmamız gerekiyor.
+
+393
+01:20:46,420 --> 01:20:47,319
+Burayı geçiyorum.
+
+394
+01:20:49,800 --> 01:20:50,399
+Şu mu?
+
+395
+01:20:51,159 --> 01:20:54,440
+Ya evet arkadaşlar ben normalde sıfırları şu şekilde yaparım.
+
+396
+01:20:54,540 --> 01:20:56,760
+O ile karışmasın diye. P ile sıfır.
+
+397
+01:20:57,960 --> 01:20:59,140
+Pardon bu P olacak evet.
+
+398
+01:21:02,380 --> 01:21:02,960
+Doğru bu P.
+
+399
+01:21:04,700 --> 01:21:09,360
+Sıfırları da bazen şöyle yapıyorum acaba onu sordum diye ama orada P dedik yanlış gelsin.
+
+400
+01:21:12,020 --> 01:21:15,020
+Aynı şeyi p'nin değili veya
+
+401
+01:21:17,260 --> 01:21:25,020
+p içinde yapabiliriz. İşte p'nin değili veya bir. Bunlar da benzer sonuçları verir.
+
+402
+01:21:27,620 --> 01:21:30,020
+Şimdi XOR dediğimiz şey
+
+403
+01:21:32,620 --> 01:21:34,620
+Şöyle bir şey yapalım.
+
+404
+01:21:36,700 --> 01:21:38,668
+AND arkadaşlar
+
+405
+01:21:39,572 --> 01:21:41,971
+bizim V'ye karşılık geliyor.
+
+406
+01:21:43,852 --> 01:21:46,932
+Kümelerdeki kesişime karşılık geliyor.
+
+407
+01:21:48,811 --> 01:21:50,631
+OR dediğimiz şey veya
+
+408
+01:21:50,631 --> 01:21:54,932
+kümelerdeki birleşime karşılık geliyor.
+
+409
+01:21:56,391 --> 01:21:57,771
+Bir de XOR var.
+
+410
+01:21:58,231 --> 01:22:00,672
+Bunun Türkçe karşılığı nedir biliyor musunuz?
+
+411
+01:22:10,195 --> 01:22:11,195
+Doğru.
+
+412
+01:22:13,195 --> 01:22:14,195
+Ya da
+
+413
+01:22:16,195 --> 01:22:17,195
+Dağası ayrı.
+
+414
+01:22:18,195 --> 01:22:19,195
+Ya da
+
+415
+01:22:19,195 --> 01:22:20,195
+Yani
+
+416
+01:22:20,195 --> 01:22:22,195
+Kümelerdeki karşılığı
+
+417
+01:22:23,195 --> 01:22:25,195
+simetrik fark.
+
+418
+01:22:25,195 --> 01:22:29,195
+Ya o açık olacak ya olacak. İkisi aynı anda olmayacak.
+
+419
+01:22:29,195 --> 01:22:31,195
+Dolayısıyla buna bir
+
+420
+01:22:31,195 --> 01:22:35,195
+Exort önemli bir şey arkadaşlar. Kriptolojide çok kullanılır.
+
+421
+01:22:35,195 --> 01:22:37,195
+P, Q,
+
+422
+01:22:38,163 --> 01:22:41,283
+P-Q dersek
+
+423
+01:22:41,283 --> 01:22:43,743
+0-0-0-1
+
+424
+01:22:43,743 --> 01:22:45,423
+1-0-1-1
+
+425
+01:22:45,423 --> 01:22:49,563
+Şurayı çizgiyi çekemedim.
+
+426
+01:22:50,684 --> 01:22:52,563
+0-0'da ve 1-1'de
+
+427
+01:22:52,563 --> 01:22:54,804
+bunlar 0 oluyor.
+
+428
+01:22:54,943 --> 01:22:56,243
+Girişler aynıysa
+
+429
+01:22:56,243 --> 01:22:59,563
+çıkış 0. Girişler farklıysa
+
+430
+01:22:59,563 --> 01:23:01,043
+çıkış 1 olacak.
+
+431
+01:23:01,492 --> 01:23:07,252
+Yani ya Ali ya Mehmet dediğinde Ali tek başına veya Mehmet tek başına olacak.
+
+432
+01:23:07,252 --> 01:23:12,452
+Bu şekilde yazacağız. Şimdi bunun bazı özelliklerine geleceğim. Bir de doğruluk tablosunu görelim.
+
+433
+01:23:12,452 --> 01:23:19,092
+Buradaki tabloyu. İşte bunu bu şekilde de şuradaki olduğu gibi yazar diyoruz.
+
+434
+01:23:19,092 --> 01:23:26,452
+H doğru ve Q yanlış ise veya yani bu sözler olarak ifade.
+
+435
+01:23:29,332 --> 01:23:38,912
+Şimdi ne Cüneyt programcıdır ne Zeynep avukattır demiş. Yani ikisi de yanlış bir önermeyse o zaman bu sonuç yanlış oluyor.
+
+436
+01:23:40,832 --> 01:23:54,592
+İlk sorun devrede gösterilmesi şöyle. Nasıl bir anahtar vardı? Üçlü anahtar oluyordu onda galiba. Şöyle bir şey miydi ya?
+
+437
+01:23:57,140 --> 01:23:59,140
+Biri böyle çalışıyordu.
+
+438
+01:24:00,340 --> 01:24:02,739
+Dur bak onu ben bir geçen yerde
+
+439
+01:24:04,979 --> 01:24:06,700
+Şöyle bir bakalım.
+
+440
+01:24:13,716 --> 01:24:14,736
+doğrudan
+
+441
+01:24:19,923 --> 01:24:22,484
+Şuradan yazın diye geçen öyle bir şey bulmuştum.
+
+442
+01:24:40,243 --> 01:24:42,644
+Şimdi şöyle bir dakika geri geleceğiz.
+
+443
+01:24:46,355 --> 01:24:46,995
+Şurada
+
+444
+01:25:01,652 --> 01:25:09,512
+Soğuz piylar, Soğuz piylar, Soğuz piylar, Şülajna.
+
+445
+01:25:18,676 --> 01:25:19,836
+Buradan geliyor.
+
+446
+01:25:20,916 --> 01:25:25,436
+Şimdi bu Switch 1'in bir noktası, sıfır noktası. Tamam mı? S1 diyelim.
+
+447
+01:25:26,796 --> 01:25:27,556
+Sonra
+
+448
+01:25:29,476 --> 01:25:30,275
+Buradan
+
+449
+01:25:30,956 --> 01:25:33,916
+Şuraya şöyle bir hat, buradan buraya böyle bir hat.
+
+450
+01:25:34,916 --> 01:25:37,476
+Bu da Switch 2, S2 diyelim.
+
+451
+01:25:39,115 --> 01:25:43,676
+Switch 2'nin bir noktası, Switch 2'nin sıfır noktası. Tamam mı?
+
+452
+01:25:44,212 --> 01:25:50,212
+Yani ben bunu ya böyle yapacağım, ya böyle yapacağım. İşte bunu da ya buraya yazacağız ya böyle yazacağız.
+
+453
+01:25:50,212 --> 01:26:08,212
+Sonra ampulü kaynağa ekle. Tamam mı? Şu 1 olursa, bu 0 olursa, bu şekilde veya işte bu 0 iken öbürü 1 iken. Bakalım gelen fotoğraflar nasılmış?
+
+454
+01:26:10,212 --> 01:26:11,980
+Arkadaşlar...
+
+455
+01:26:20,724 --> 01:26:21,724
+özellikle ya.
+
+456
+01:26:28,340 --> 01:26:29,340
+Bu günah, bu günah.
+
+457
+01:26:29,340 --> 01:26:31,060
+Bu günah.
+
+458
+01:26:41,971 --> 01:26:48,371
+Bunun bir anahtar sistemi vardı hatta şeyde elektrikçiler kullanırlar, govian anahtar diye.
+
+459
+01:26:55,188 --> 01:27:08,188
+Yanlış grubu nasıl dinliyorsunuz? Bizim grubun eksikliği bana biraz bugün şüpheli geldi. Çünkü geçenlerdeki ders tek grup açıldığı için tek bir link gelmiş olabilir.
+
+460
+01:27:09,587 --> 01:27:15,948
+Ama işte o grup birdeyim sanıyorsun da oraya nasıl katıldım ben onu anlamadım. Sonuçta online giriliyor.
+
+461
+01:27:21,619 --> 01:27:26,340
+Grup 2 arkadaşlar. Yani onu Vano Hocaya da söyleyelim. Tamam, problem değil.
+
+462
+01:27:31,859 --> 01:27:34,859
+Tamam, onu ben bir bilgi işleme ileteyim şimdi.
+
+463
+01:27:37,159 --> 01:27:44,859
+Tabii gruplar bölündüğü için zaten dönem, pazartesi günü sizin grubunuz benim sistemimde görünmüyordu.
+
+464
+01:27:46,559 --> 01:27:49,859
+Demek ki sizin tarafınızda da bir çözüm üretmek gerekiyor.
+
+465
+01:27:52,595 --> 01:28:03,095
+Şöyle yapabilirsiniz, hani şimdilik bence ses çıkarmayın, bence ikisi de dursun. Yani benden dinlediğinizi isterseniz gülüp bile Bahane Hoca'dan dinleyin. Sonuçta bir profesörden de derslikle ilişkiler olursanız.
+
+466
+01:28:07,955 --> 01:28:17,175
+Eksor bu şekilde, temel doğruluk tablosu. Yani girişlerin aynı olması durumunda sonuç sıfır, girişler farklıysa sonuç bir olacak.
+
+467
+01:28:17,971 --> 01:28:26,971
+Bunu bileceğiz. Şimdi burada farklı olarak şöyle bazı şeyler yapalım.
+
+468
+01:28:30,387 --> 01:28:44,387
+Şimdi Exor'u OR ve AND kullanarak, Exor kullanmadan yazmak istediğimizde nasıl yapalım? Tabi burada bir de NAT'ı bilmek gerekiyor arkadaşlar. NAT nedir? İşte şu.
+
+469
+01:28:45,847 --> 01:28:53,887
+P'nin sıfırsa birini, birse sıfırını veriyor. Hani bunu birazdan tekrar göreceğiz. Şimdi mesela P, Exor, Q'yu.
+
+470
+01:28:57,492 --> 01:29:22,632
+Şuradan yazalım arkadaşlar. Şu durumda sıfır olduğu için bunları dikkate almıyoruz. Nedir? P ve Q'nun değilinin olduğu durum veya artı, bunu da alta yazalım, P'nin değili ve Q'nun olduğu durum.
+
+471
+01:29:23,859 --> 01:29:32,059
+Ne oluyor? Bunun and, or ve not çizinden yazılımını gösteriyor. Bunu bilmek bazı yerlerde avantaj sağlar. Tamam mı?
+
+472
+01:29:33,340 --> 01:29:39,859
+Örneğin nerede avantaj sağlar? C'de, C programlama dilinde veya herhangi bir programlama dilinde
+
+473
+01:29:39,859 --> 01:29:44,340
+XOR işlemi operatörü yok. Bildiğim kadarıyla C'de var.
+
+474
+01:29:44,340 --> 01:29:50,859
+E yok olmadığı için ne yapacaksınız? Bu tarz bir şeyle yazacaksınız. Tamam mı?
+
+475
+01:29:51,060 --> 01:30:00,079
+Yani en önemli bize, yani dilleri tabii şey yapmak lazım, hani şu an hatırlamıyorum, hani olmadığını kabul edelim.
+
+476
+01:30:00,220 --> 01:30:08,680
+Side, hatta dedim ki var ama ben size soru sordum yapısal programlamada. Bu soruyu EXOR Operatörü kullanmadan yapın dedik.
+
+477
+01:30:09,600 --> 01:30:12,840
+O zaman ne yapacaksınız? Böyle bir şey olacak tamam mı arkadaşlar?
+
+478
+01:30:14,920 --> 01:30:15,692
+Operatörlerin...
+
+479
+01:30:15,956 --> 01:30:20,816
+kullanımı, birbiri cinsinden yazılımı bizim bu dersimiz kapsamında çok önemli bir şey.
+
+480
+01:30:24,435 --> 01:30:30,435
+Başka birkaç özelliğine daha gelelim. Şurayı biraz temizleyeceğim tabii.
+
+481
+01:31:08,180 --> 01:31:10,020
+Şunu tekrar kısaca yazıvereyim.
+
+482
+01:31:12,159 --> 01:31:18,540
+R'nin değili ve Q veya H ve Q'nun değili.
+
+483
+01:31:18,540 --> 01:31:20,120
+Peki arkadaşlar.
+
+484
+01:31:22,680 --> 01:31:23,120
+Şu.
+
+485
+01:31:27,091 --> 01:31:28,091
+Eşit midir?
+
+486
+01:31:31,412 --> 01:31:32,132
+Una?
+
+487
+01:31:35,636 --> 01:31:36,476
+Doğru mudur?
+
+488
+01:31:38,036 --> 01:31:38,316
+Evet.
+
+489
+01:31:39,355 --> 01:31:43,136
+Çünkü şu ifadeye baktığınızda sadece şunların yerleri değişecek.
+
+490
+01:31:43,216 --> 01:31:45,236
+Şu eşitlikle bu eşitlik yer değişecek.
+
+491
+01:31:47,496 --> 01:31:52,576
+V'a bağlacında ve V bağlacında değişme özelliği vardır.
+
+492
+01:31:52,695 --> 01:31:56,536
+Bunu biraz önce belki söylemedik ama mantıksal olarak çıkabilir.
+
+493
+01:31:56,536 --> 01:31:58,236
+0, V, 1.
+
+494
+01:31:58,703 --> 01:32:04,703
+sıfır veya bir aynı zamanda bir veya sıfıra eşittir. Aynısı bunun sıfır ve bir.
+
+495
+01:32:06,863 --> 01:32:16,703
+Bu mesela bu doğru. Sonra P ile P'nin değiline bakalım. Bu neye eşittir arkadaşlar?
+
+496
+01:32:25,171 --> 01:32:25,631
+Olur mu?
+
+497
+01:32:28,391 --> 01:32:38,031
+Aynıysa sıfır olacak, farklıysa bir olacak. Yani bu sıfırsa bu bir, bu birse bu sıfır. Dolayısıyla farklılık olacağı için ne olacak? Burası bir olacak arkadaşlar.
+
+498
+01:32:42,611 --> 01:32:49,131
+Sonra bunun tam tersine baktığımızda P ile P ne olur? O zaman P ile P sıfır olmak zorunda.
+
+499
+01:32:50,791 --> 01:32:51,572
+Şunlar önemli.
+
+500
+01:32:54,452 --> 01:32:57,012
+Kriptolojide bunlar çok kullanılır.
+
+501
+01:33:00,012 --> 01:33:01,172
+P ile 1
+
+502
+01:33:05,427 --> 01:33:16,627
+P'nin de iyidir arkadaşlar. Neden? Sıfırsa, sıfırla yaparsanız bir çıkar. Sıfırken biri eldenersiniz. Bir verirseniz sıfır eldenersiniz. Bu devirme işlemi, inversion işlemidir.
+
+503
+01:33:18,227 --> 01:33:30,507
+Şöyle söyleyeyim, bir anahtar üretirsiniz kriptolojide. Bu ürettiğiniz anahtar örneğin şu olsun. 1, 1, 1, 0, 0, 0. Bunun değerini almak için
+
+504
+01:33:31,572 --> 01:33:43,211
+Bunu 1, 1, 1, 1, 1, 1 ile XOR yaparsanız, XOR işlemine tabi tutarsanız, bu 1 olacak, bu 1 olacak, bu 1 olacak, bunlar 0, 0 olacak.
+
+505
+01:33:43,931 --> 01:33:46,912
+Değil, hızlı bir şekilde değini alabiliyorsunuz.
+
+506
+01:33:47,592 --> 01:33:48,152
+XOR ile.
+
+507
+01:33:49,412 --> 01:33:51,631
+Peki, şuna baktığımızda nedir arkadaşlar?
+
+508
+01:33:53,692 --> 01:33:54,412
+Bu da ne olacak?
+
+509
+01:33:55,451 --> 01:33:58,891
+P ise 0, P'nin kendisi olacak.
+
+510
+01:33:59,507 --> 01:34:09,007
+Buna da ne diyoruz? Şuna inverse diyoruz. Buna da mirror diyoruz. Aynalama.
+
+511
+01:34:13,652 --> 01:34:20,051
+İki tane sembolü olduğunu söyledik. Ya bunu kullanacağız ama biz bilgisayar bilimciler genellikle şunu kullanıyoruz.
+
+512
+01:34:22,872 --> 01:34:24,152
+Sorumuz var mı burada?
+
+513
+01:34:29,012 --> 01:34:31,252
+Ters işlemi negatif.
+
+514
+01:34:34,772 --> 01:34:40,952
+Verilen bir önermenin doğruysa yanlışını, yanlışsa doğrusunu almak demek.
+
+515
+01:34:42,612 --> 01:34:45,971
+Bugün günlerden cumadır bir önerme.
+
+516
+01:34:47,051 --> 01:34:50,471
+Bugün cumadır.
+
+517
+01:34:51,692 --> 01:34:59,352
+Bunun değeri bugün cuma değildir şeklinde yazacağız.
+
+518
+01:35:00,412 --> 01:35:02,512
+Verilen bir önermenin tam tersini verecek.
+
+519
+01:35:05,252 --> 01:35:06,512
+Aynen şu.
+
+520
+01:35:08,756 --> 01:35:22,115
+Birden fazla önermenin birleştirilmesi. Örneğin, ne oluyor? P ise, tabii şunlar şöyle yukarıya doğru bitmiş işaret gibi değil de şunun gibi yazılması lazım.
+
+521
+01:35:22,115 --> 01:35:35,076
+P veya Q parantez içinde yapılacak, ondan sonra ona R gerçekleşecek. P veya Q enter. P'nin değili, Q'nin değili, bunların V'aları gibi.
+
+522
+01:35:38,100 --> 01:36:05,479
+Örneğin, böyle bir ifade varsa elimizde. Dedik ki size şunun doğruluk tablosunu doldurun. Bunu lojik devrelerde de yapacaksınız arkadaşlar. Başladınız mı? Lojik devrelere bugün müydü? Öğleden sonra mı? Bilmiyorum hangi gün? Orada da bu ders, bu konular karşınıza gelecek. Tabii biz muhtemelen onlardan önce bu konuyu size bitirip bu lojik kapılarda birazcık onlara bilgiçlik taslayabilirsiniz.
+
+523
+01:36:06,579 --> 01:36:13,059
+Çünkü biz iki haftada bu konuyu bitireceğiz. Onlar da üçüncü haftanın sonunda ancak şeye geçerler, o konulara geçerler.
+
+524
+01:36:14,020 --> 01:36:19,380
+Şimdi P, Q ve R üç farklı değişkenimiz varsa iki üzeri üç, sekiz farklı durumumuz olacak arkadaşlar.
+
+525
+01:36:20,139 --> 01:36:23,579
+Bakın burada true ile başlamış. Sıfır olsa doğru gitmiş.
+
+526
+01:36:24,380 --> 01:36:30,139
+Şimdi bu doğruluk tablosu oluştururken şöyle de bir şey söyleyeyim.
+
+527
+01:36:33,203 --> 01:36:45,603
+P ve Q hatta R olsun. Bunu hızlıca nasıl doldururuz? Şimdi arkadaşlar burası iki üzeri sıfırlar, iki üzeri birler, iki üzeri ikiler basamağı gibi düşünün.
+
+528
+01:36:45,603 --> 01:36:54,103
+Buradaki şey iki üzeri sıfır bir demek bir sıfır olur bir olur, bir sıfır olur bir bir olur, bir bir olur, bir sıfır olur bir bir olur, böyle devam eder gider.
+
+529
+01:36:54,547 --> 01:37:12,467
+Bunlar iki defa sıfır olur. Tabii sıfırdan başlıyoruz çünkü en baştan. İki defa sıfır, iki defa bir. İki defa sıfır, iki defa bir. Yani bizim matematikteki onluk sisteme çevirsek burada sıfır, burada bir, burada iki diye böyle gider. Şurada baktığımızda dörder dörder değişir.
+
+530
+01:37:16,627 --> 01:37:24,627
+Eğer üçüncü basamak, bir basamak daha olsaydı o zaman ne olacaktı? İki yüzer üç, sekizer sekizer değişecekti. Bu mantıklı tabloyu hızlıca oluştursunuz.
+
+531
+01:37:24,627 --> 01:37:33,627
+Yani ezberlemeye hiçbir şekilde gerek yok. Veya işte bu sıfırdı, bu sıfırın binary karşılığı neydi? İşte bu birdi, birin binary karşılığı neydi? Ona çevireyim, öyle yazayım, hiç gerek yok.
+
+532
+01:37:33,627 --> 01:37:39,627
+İşte buralar birer birer, buralar ikişer ikişer, buralar dörder dörder değişiyor. Bunu bilmemizin için yeterli.
+
+533
+01:37:39,627 --> 01:37:44,299
+Şimdi buna baktığımızda önce parantez içerisini hesaplayacağız.
+
+534
+01:37:45,011 --> 01:37:53,011
+Sonra bu parantez içerisinde şurada bir ent yapacağız, re yapacağız. Şimdi hiç parantez içini hesaplamadan önce bu entten dolayı
+
+535
+01:37:53,011 --> 01:38:03,511
+re'nin sıfır olduğu bütün durumlar doğrudan sıfırdır. Bunu biliyorum. Çünkü ent bağlacı. Ne oluyor? Bir yanda sıfırsa doğrudan öbür tarafı sıfır hale getiriyor.
+
+536
+01:38:06,271 --> 01:38:10,431
+Tamam. Sonra geldik. P ve Q'nun
+
+537
+01:38:10,963 --> 01:38:37,344
+içeriğini sıfır yapan durumlara bakacağım. Diğer durumlar zaten şeydir. İçeriğinin de burası bir, o zaman true. Zaten buna hiç bakmıyorum bile artık. Burası bir, bu da true. Buna da bakmıyorum. Burası bir, bu da true. Sadece burası sıfır, bu da olsun. Genelde doğruluk tablolarında doğru üzerinden işlem yapılacağı için true'ların olduğu yerlere biriler yazılır.
+
+538
+01:38:39,859 --> 01:38:47,539
+diğerleri ne yapılar arkadaşlar? Sıfır kabul edilir. Bir şey yazılmadı. Ama bir de burada don't care durumu vardır. Hani bizim bu örneğimizde don't care yok da.
+
+539
+01:38:48,439 --> 01:38:59,380
+Onu lojikçiler size daha çok anlatacaklar. Biz burada sadece bir gösterip geçeriz. Varsa yani doğrular bir olarak kabul ediliyor. Diğer durumlar sıfır olarak gösteriliyor.
+
+540
+01:39:01,380 --> 01:39:03,159
+Burada bir problem var mı arkadaşlar?
+
+541
+01:39:05,319 --> 01:39:06,720
+Bu şekilde bir
+
+542
+01:39:07,699 --> 01:39:20,899
+önermeler cümlesini, sonucunu görebiliyoruz. Şimdi şartlı önermeler ve mantıksal denklik kavramına gelelim. Şartlı önerme nedir?
+
+543
+01:39:22,300 --> 01:39:34,380
+Eğer şu şöyleyse, arkadaşlar o mesajlarınızı sonra yazın olur mu? Ben şu an sizi ders adına chat ekranı takip ediyorum. Benim dikkatim dağılıyor.
+
+544
+01:39:35,604 --> 01:39:57,384
+Şartlı önerme, eğer istabra, P önermesi gerçekleşmişse ve Q ona bağlı olarak gerçekleşecekse bunu gösteren bir şey. Buna şimdilik if diyoruz burada. P ise Q şeklinde gösteriliyor. Eğer seçilirsem işte şunu yapacağım gibi. Eğer bugün şuysa yarın bu gibi.
+
+545
+01:40:00,000 --> 01:40:21,960
+Burada görmek biraz şey, böyle daha klasik bir örnek. İşte Cüneyt programlıdır, Zeynep avukattır. Eğer Cüneyt programlıysa Zeynep avukattır ifadesi. Yani bu önerme, şuradaki önermeye bağlı olarak doğrudur. Şimdi [öğrenci] programlıymış, evet o zaman burası bir. [öğrenci] avukat mıymış, evet o zaman burası da bir. Bunun sonucunun bir olduğunu söylüyoruz. Şimdi bunun doğrudur tablosuna bakalım.
+
+546
+01:40:23,220 --> 01:40:32,699
+Burada şudur arkadaşlar, bilmemiz gereken genelde bu şöyle karıştırılır. Hani şöyle ezberleyin derler. 1-0 ise sonuç 0'dır. Geri bütün durumlar
+
+547
+01:40:32,880 --> 01:40:59,692
+Nedir? 1'dir derler. Tamam, bu doğru. Ezberlemek adına, doğruluk tablosunu aklımıza getirmek adına doğru. Zaten bu iki tane değişkenli bir şey. Bunda üç değişken, dört değişken olmuyor. Bir sağında, bir solunda oluyor. Sağındaki ifade bir entli bir şey olabilir. O ayrı mevzu. İşte p ent, küll gibi bir şey yazabilirsin. Ama bunun sağında bir operatör, solunda bir operatör olacak. Sağda bir operatör, solda bir operatör olacak. Bu böyle. Ama bunu kısaca ezberlemek için, yani şu...
+
+548
+01:41:00,020 --> 01:41:27,560
+Makul bir yaklaşım, tamam kabul edebilirim. Fakat bunun anlamı nedir? Şimdi arkadaşlar, bir öncül var ve bu öncüle bağlı gerçekleşecek olan bir diğer koşulu var ve bir de bunların birlikte sonucu var. Örnek olarak, üniversite sınavını kazanırsam, işte ne bileyim falanca veya ne bileyim, seçimi kazanırsam şuraya park yapacağım. Tamam. Seçimi kazandım.
+
+549
+01:41:28,467 --> 01:41:39,188
+Farkı da yaptım. O zaman doğru bir şey oldu. Yani vaadimi yerine getirdim. Bu doğrudur. Ön koşullar yerine geldi. Sonuç doğru oluyor.
+
+550
+01:41:40,327 --> 01:41:44,528
+Seçimi kazandım ama dediğimi yapmadım. O zaman bakın sonuç yanlış oluyor.
+
+551
+01:41:46,327 --> 01:41:55,827
+Kazanmadığım halde yapmadım, kazanmadım ve yapmadım. Dolayısıyla hani şart yerine gelmedi. Sonuç da gerçekleşmedi. Bu da doğru bir şey oluyor.
+
+552
+01:41:56,192 --> 01:42:05,192
+Kazanmamalara rağmen yaptım, hayırı çok seviyorum, o zaman ne oluyor? Sonuç içinde doğru oluyor.
+
+553
+01:42:05,192 --> 01:42:12,192
+Tamam mı? Bu 1-0'ın 0 olma durumu şu durum tamam doğru ama bunun mantığı budur.
+
+554
+01:42:12,192 --> 01:42:20,192
+Bu şart yerine gelse geldi, öbür şart da yerine geldiyse ikisi birbirinin aynısı ise doğru.
+
+555
+01:42:20,884 --> 01:42:26,084
+Ama şu şart yerine gelmeden bu şart yerine geliyorsa o zaman yine sonuç doğru.
+
+556
+01:42:27,344 --> 01:42:33,584
+Sadece şu şart yerine geldiğinde ikinci şart gerçekleşmemişse yanlışsa sonucumuz yanlış olur.
+
+557
+01:42:37,779 --> 01:42:39,039
+Bakalım bununla alakalı.
+
+558
+01:42:40,759 --> 01:42:46,019
+Bu PQ şartlı önermesinde şuna ne diyoruz arkadaşlar?
+
+559
+01:42:47,219 --> 01:42:48,319
+Hipotez diyoruz.
+
+560
+01:42:50,299 --> 01:42:52,479
+Şuna da sonuç diyoruz arkadaşlar.
+
+561
+01:42:56,564 --> 01:43:08,384
+P only if q bu ifadeyle gerçek ifade ediliyor. Antecedent, consequent, conclusion gibi eş anlamlı cümleler söyleyebiliriz.
+
+562
+01:43:12,595 --> 01:43:18,595
+Tabi burada iki kavram var. Gereklilik şartı, yeterlilik şartı.
+
+563
+01:43:18,676 --> 01:43:28,275
+Şimdi gerekli şart sonuç tarafından ifade edilen şey, yeterli şart hipotez tarafından ifade edilen şart.
+
+564
+01:43:28,275 --> 01:43:40,036
+Örneğin Cüneyt programcıdır ifadesinde Cüneyt'in programcı olması gerekli.
+
+565
+01:43:41,332 --> 01:44:06,731
+koşulunu alıyoruz. Pardon. Gerekli koşul ne oluyor? Zeynep'in avukat olması. Yeterli koşul Cüneyt'in programcı olması. Mantıksal denkliğe geçmeden önce şurada bazı ise bağlacına ilişkin şeyler yapalım. P ise Q.
+
+566
+01:44:08,532 --> 01:44:10,072
+Acaba eşit midir?
+
+567
+01:44:10,692 --> 01:44:11,652
+Q iste P'ye.
+
+568
+01:44:17,524 --> 01:44:38,824
+değildir. Çünkü doğruluk tablosu arkadaşlar, baktığımızda bir öncekinde simetrik bir doğruluk tablosu yok. Bu durumda bu doğruyken bunun tam tersini de yanlışa götürüyor. Dolayısıyla eşit olmuyor. Yani şu şartlardan dolayı problem yok. Şurada sağlıyoruz, burada sağlıyoruz, işte şunu da sağlanıyor ama işi neresi bozuyor? Burası bozuyor.
+
+569
+01:44:42,899 --> 01:44:54,600
+tek tabloda ne yaparsınız? QVSP'yi de hesaplayabiliriz. İşte burası 1'dir. Burası ne oluyor? QVSP'de burası 1 oluyor. Burası 0 oluyor, burası 1 oluyor.
+
+570
+01:44:54,600 --> 01:45:08,899
+Oysa da zaten şu ifade eğer buradaki şey buradaki ile birbirine aynıysa o zaman diyeceğiz ki zaten logical. Logically equivalent.
+
+571
+01:45:11,828 --> 01:45:36,128
+mantıksal olarak eşdeğer diyeceğiz. Zaten bu sonuç buna eşit olmadığı için şu an mantıksal eşdeğerlikten söz edemeyiz. Dolayısıyla bizim şurada yazdığımız şu şey ne olur? Yanlış olur yani eşit olmaz. Gelelim P ise Q'yu acaba ise bağlacı kullanmadan nasıl yazabiliriz?
+
+572
+01:45:37,939 --> 01:45:40,760
+Şimdi şöyle tabloyu tekrar çiziyorum.
+
+573
+01:45:44,500 --> 01:45:47,819
+00, 01, 11, 10.
+
+574
+01:45:48,859 --> 01:45:51,420
+Şimdi burada 1'di, burada
+
+575
+01:45:53,199 --> 01:45:54,479
+Niye 1 1'i yardım?
+
+576
+01:45:55,260 --> 01:45:56,779
+Karnın haritasına gitti.
+
+577
+01:46:00,884 --> 01:46:24,003
+Şurada 1'di, burada 1, burada 0, burada 1. Doğru mu arkadaşlar? 1, 0 olduğu durumda 0. Şimdi buradan baktığımda bunun AND, OR ve NAT. Temel bizim kapılarımız nedir arkadaşlar? AND kapısı. Yani AND bağlacı, OR bağlacı ve NAT bağlacı. Bu üçüncüsünden yazmak istediğimde diyorum ki,
+
+578
+01:46:29,011 --> 01:46:40,011
+durumunda sonuç hep 1 oluyor. O zaman p pek önemli değil gibi. Ama sadece p 1 iken ve q 0 iken sonuç 0 oluyor. O zaman ben
+
+579
+01:46:40,011 --> 01:46:50,011
+p'nin 1 ve q'nun 0 olma durumunu yok etmem lazım. O zaman neyi bu yok etmem lazım? p'nin 1 olma durumunu yok etmem lazım. Diyorum ki p'nin 1 olma
+
+580
+01:46:55,188 --> 01:47:19,728
+veya yaparsam, şimdi ne demek bu? Hemen lojik eküvalentine bakalım. Şimdi p'nin değilini alacağım. Önce nedir? p'nin değili 1 veya q. 1 veya q. 0 veya q. 0 veya q. Şu duruma mı geldi? Bunun sonucuna bakalım.
+
+581
+01:47:21,395 --> 01:47:38,655
+1 veya 0, 1. 1 veya 1, 1. 0 veya 0, 0. 0 veya 1, 1. Bakın ne oldu? Şurası buranın aynısı oldu. Dolayısıyla bunun lojik ekvalent ifadesi şu şekilde ortaya çıkmış oldu. Bunu bilmek lazım arkadaşlar.
+
+582
+01:47:49,140 --> 01:48:02,760
+Değili veya gerekli şart eklenerek, birleştirilerek bu şekilde yapıyoruz. Daha kısa yoldan söylemek gerekirse, P'nin Değilini alıyorsunuz veya Q'yu alıyorsunuz.
+
+583
+01:48:04,079 --> 01:48:16,539
+Bazı diğer özelliklere bakalım. P ise P. Sonucu nedir arkadaşlar? Denkli ifadesi kullanılıyor çünkü doğrudan eşitlikten bahsedeyiniz mantıkla.
+
+584
+01:48:16,927 --> 01:48:19,807
+Denkli ifade, yine sonucu eşittik gibi düşünebiliriz.
+
+585
+01:48:20,627 --> 01:48:21,948
+PISP nedir arkadaşlar?
+
+586
+01:48:27,028 --> 01:48:50,347
+1'dir. Neden? Yani bunu nasıl çözebiliriz? Bakın şununla çözebiliriz. P ise ne yapacağız? O zaman bunun değini alacağız. İkinci ifadede de ikinciyi yazacağız. İkisi de P. Bu zaten neye eşit oluyordu? P veya P? 1'e eşit oluyor. Doğrudan bunu söyleyebiliriz. Veya buradan bakacak olursak ne vardır? Tek bir değişken vardır. 1 ve 1.
+
+587
+01:48:51,636 --> 01:49:13,816
+p1, p'nin kendisi yine 1. O zaman ne oluyor? Şey çıkıyor. Veya 0 ve 0. Yani p'ye 0 olacak ya 1 olacak. Buradan baktığımda 0, 0 ve 1, 1 durumlar zaten 1 olduğunu söylüyor. Şuna bakalım arkadaşlar. P ise p'nin değine.
+
+588
+01:49:24,243 --> 01:49:24,844
+Nedir bu?
+
+589
+01:49:27,844 --> 01:49:30,604
+Evet. P'nin değildir arkadaşlar.
+
+590
+01:49:32,224 --> 01:49:35,724
+Şuradan yapabiliriz. P'nin değili veya P'nin değili.
+
+591
+01:49:39,604 --> 01:49:47,083
+Şimdi sıfırsa bu da sıfır, birse bu da bir. İkisi de aynı. O zaman ne olacak? P'nin değil olacak zaten.
+
+592
+01:49:48,123 --> 01:49:51,523
+Aynı şey gibi. V'ye bağlı. Kendisi gibi.
+
+593
+01:49:52,644 --> 01:49:57,203
+P'nin birle olan durumu nedir arkadaşlar?
+
+594
+01:49:59,083 --> 01:50:00,804
+Bu çok hızlıca söylenir.
+
+595
+01:50:02,523 --> 01:50:03,483
+Doğrudan birdir. Neden?
+
+596
+01:50:04,423 --> 01:50:04,743
+Çünkü
+
+597
+01:50:06,355 --> 01:50:12,155
+Şurası iki durumda da bir ise doğrudan şey oluyor. Affedersiniz arkadaşlar.
+
+598
+01:51:30,739 --> 01:51:32,520
+Evet, devam edelim.
+
+599
+01:51:35,239 --> 01:51:41,520
+Sonuç 1 olduğu her durumda zaten doğrudan ne oluyor? Sonuç 1 oluyor. Bunu burada söyleyebiliriz.
+
+600
+01:51:42,260 --> 01:51:48,039
+Peki şuna ne dersiniz? P'nin sıfırı olan sonucuna.
+
+601
+01:51:59,796 --> 01:52:25,355
+Evet, p'nin değili. Güzel. Nasıl bulacağız? Bir kere şu, çuğunun sıfır olduğu durumlara bakarsak, şu iki duruma, sıfırken bir olmuş, birken sıfır olmuş. Buradan çıkarabiliriz. Dolayısıyla nedir bu? Tam tersidir, p'nin tam tersidir diyebiliriz. Veya, veya üzerinden, şu ifade üzerinden söylersek.
+
+602
+01:52:25,747 --> 01:52:33,747
+p'nin d'li veya sıfır. O zaman nedir bunun sonucu? V'ya üzerinden baktığımızda biraz önce de konuştuk.
+
+603
+01:52:33,747 --> 01:52:41,747
+p birse sonuç bir oluyor. p birse d'li sıfır oluyor. Sonuç sıfır olacak.
+
+604
+01:52:41,747 --> 01:52:49,611
+sıfırsa p'nin kendisi bir olacak. Sonuç bir olacak. Doğrudan p'nin d'li diyebiliyoruz. Bakın bunu da
+
+605
+01:52:49,619 --> 01:52:56,619
+Ezberlenecekse bence şu ezberlenebilir ama buna da ezbere gerek yok bir şekilde şu tablodan çıkar.
+
+606
+01:52:56,619 --> 01:53:01,619
+Evet, bu if ifadesi bu şekilde. Şunu tekrar edeyim.
+
+607
+01:53:06,260 --> 01:53:26,480
+Şu 1S0 durumu, bu işin kolay yolu ezberlemek adına ama bu şart yerine gelince, bu şartın yerine gelmesi veya bu şartın doğrudan yerine gelmesi, şartın yerine gelmeyip yine şartın yerine gelmemesi bizim doğru sonuçlarımız.
+
+608
+01:53:26,600 --> 01:53:29,940
+Tutarlılığı gösteriyor, istenen beklenen sonuçla ulaştığımızı gösteriyor.
+
+609
+01:53:30,452 --> 01:53:36,332
+Diğer durumlarda ne yapıyoruz? Diğer durumda tek bir durum var. Sonucumuz 0 buluyoruz.
+
+610
+01:53:37,652 --> 01:53:42,192
+Şimdi biraz daha ilerleyelim. Ondan sonra dersi bitireceğim arkadaşlar.
+
+611
+01:53:45,351 --> 01:53:49,271
+Mantıksal denklik. Biraz önce söyledik. Logical Equivalence.
+
+612
+01:53:51,112 --> 01:53:52,311
+Doğruluk tablosunda
+
+613
+01:53:52,979 --> 01:54:04,859
+değerleri aynı olan iki önerme için aralarında mantıksal denklik vardır. Yani bir önerme verdiniz, işte entler, orlar bir şeyler var, bir denklem yürüyüşü. Bir tarafta da bir başka önerme verdiniz.
+
+614
+01:54:05,000 --> 01:54:13,699
+Tabii aynı değişkenlerden olması şartıyla. Yani birinde PQ var, öbüründe de PQV var. Yani şeyler, benzer değişkenler üzerinden bakıyoruz.
+
+615
+01:54:14,500 --> 01:54:19,279
+Eğer doğruluk tablosunun sonucu, yani şu tablo,
+
+616
+01:54:19,988 --> 01:54:27,868
+Şu ilgili kısımlar birbirine birebir eşitse o zaman mantıksal denklik vardır diyeceğiz arkadaşlar.
+
+617
+01:54:28,788 --> 01:54:34,428
+Baktığımız zaman PQ var. PYSQ var. Bakın biz burada hani bunun şeyini yazmışız.
+
+618
+01:54:35,028 --> 01:54:39,268
+PQ'nun sonucunu burada biliyorum. PQ'nun tanımından yola çıkarak buldum.
+
+619
+01:54:39,848 --> 01:54:45,068
+Şunu da işte NAT ve VI'yi kullanarak buldum. Bu ikisine baktığımızda ne geliyor?
+
+620
+01:54:45,068 --> 01:54:47,628
+Sonucun birbiriyle birebir aynı olduğunu görüyoruz.
+
+621
+01:54:47,988 --> 01:54:50,708
+ve mantıksal denklik vardır diyoruz.
+
+622
+01:54:52,948 --> 01:54:58,968
+Burada bizim yer değiştirme ile alakalı
+
+623
+01:54:58,968 --> 01:55:09,988
+Şimdi buna geçmeden önce burada bazı eksikler vardı. Onu ben yazarak söyleyeyim.
+
+624
+01:55:11,568 --> 01:55:13,428
+Şimdi P ise Q
+
+625
+01:55:15,315 --> 01:55:40,876
+ifadesi için üç farklı durum var arkadaşlar. Birincisi, yer değiştirme. Slide'da yoktur diye önce elle yazayım, varsa zaten tekrar etmiş olur, üstünden geçeriz. Diğeri, arkadaşlar, yer değiştirmeden değillerini alma, diğeri de hem yer değiştirip hem de değillerini alma. Şimdi şuna, Converse diyoruz.
+
+626
+01:55:45,140 --> 01:55:55,820
+Buna inverse diyoruz. Buna da counter positive diyoruz.
+
+627
+01:55:59,572 --> 01:56:13,572
+Şu karşıt oluyor, karşıt anlamlısı. Bu tersi oluyor. Şu da karşıt tersi. Türkçesi biraz şeyle kontra pozitif.
+
+628
+01:56:15,251 --> 01:56:24,652
+Bir örnek yapalım. Bu örneği yaptıktan sonra buranın ekran görüntüsünü isterseniz alın, snapshot'ını. Sonra ben burayı sileceğim, ondan sonra devam edelim.
+
+629
+01:56:26,836 --> 01:56:27,436
+Bugün,
+
+630
+01:56:27,436 --> 01:56:31,695
+Cumartesi ise
+
+631
+01:56:31,695 --> 01:56:33,436
+Yarın
+
+632
+01:56:33,436 --> 01:56:35,655
+Pazar
+
+633
+01:56:39,380 --> 01:56:46,019
+Şimdi burada P ifadesi bugün cumartesi, şu da yarın pazardır.
+
+634
+01:56:48,099 --> 01:56:54,259
+Bunun konverzine, inverse'ine ve kontrapozitifine bakalım.
+
+635
+01:56:54,579 --> 01:56:59,460
+Tabi bunu P ise Q cinsinden yazmak şey yani. Bu nedir? P ise Q.
+
+636
+01:57:00,199 --> 01:57:05,840
+Bunların ifadelerin karşılıkları da burada. Biz burada cümle yani sözel olarak.
+
+637
+01:57:06,804 --> 01:57:07,924
+yazmak istiyoruz.
+
+638
+01:57:11,404 --> 01:57:13,424
+Yazdığımız zaman ne diyeceğiz?
+
+639
+01:57:14,704 --> 01:57:16,984
+Şuradan yola çıkarak Conversion'a bakalım.
+
+640
+01:57:18,264 --> 01:57:20,204
+Ne deriz buraya? Ne söylersiniz?
+
+641
+01:57:30,612 --> 01:57:49,112
+Evet, şuna baktığım zaman, yarın, pazar ise, bugün, cumartesi. QSP ama ben zaten QSP'yi yukarıda verdik ya, doğrudan sözel karşılığını istiyoruz.
+
+642
+01:57:50,051 --> 01:57:54,091
+Universe'a baktığımız zaman arkadaşlar, şuradaki tanımdan bakarak ne diyeceğiz?
+
+643
+01:57:57,108 --> 01:57:59,108
+Cumartesi değilse
+
+644
+01:58:02,996 --> 01:58:03,836
+yarın
+
+645
+01:58:03,836 --> 01:58:07,076
+Hazar değildir.
+
+646
+01:58:09,956 --> 01:58:13,155
+Gördüğüm yani şunun karşılığı, birebir sözler karşılığı bu.
+
+647
+01:58:13,695 --> 01:58:14,716
+Şuna baktığımız zaman
+
+648
+01:58:14,716 --> 01:58:16,556
+yarın
+
+649
+01:58:16,556 --> 01:58:20,395
+Hazar değilse
+
+650
+01:58:20,395 --> 01:58:23,395
+bugün
+
+651
+01:58:23,395 --> 01:58:26,775
+Cumartesi değil.
+
+652
+01:58:28,979 --> 01:58:33,939
+Hepsi de doğru mu? Yarın, Pazar ise bugün, Cumartesi. Evet. Bugün, Cumartesi ise evet.
+
+653
+01:58:35,039 --> 01:58:42,759
+Bu şekilde bir ifade verilirse size ve bunun kontrapozitifini sözer olarak ifade edin derseniz, böyle yapabilirsiniz.
+
+654
+01:58:42,899 --> 01:58:45,099
+Tekrar görüntüsünü alın, sonra burayı silelim.
+
+655
+01:58:53,171 --> 01:58:54,171
+Aldım mı?
+
+656
+01:58:55,171 --> 01:58:56,171
+Bir kişinin alması yeterli.
+
+657
+01:59:01,844 --> 01:59:04,748
+Yok, mantıksal denklikten bahsetmiyorum burada.
+
+658
+01:59:08,115 --> 01:59:15,115
+Yani kendi aranızda bir grubunuz, isterseniz bu chat ekranına atabilirsiniz veya zaten herkes almayı biliyordur.
+
+659
+01:59:16,615 --> 01:59:19,115
+Dersin kaydı otomatik yapılıyor arkadaşlar.
+
+660
+01:59:22,115 --> 01:59:29,115
+Şimdi bu logikal, ekivalent mevzusu değil. Kim söylemişti? Bir dakika bir daha şu chat kısmına bakayım.
+
+661
+01:59:31,115 --> 01:59:32,076
+[öğrenci].
+
+662
+01:59:32,212 --> 01:59:41,812
+Bu, ifadelerin birbirine dönüştürmesi, yani değinin alınması, bir hissel ifade, tersinin veya karşı tersinin alınması gibi düşünüyorum.
+
+663
+01:59:53,043 --> 01:59:55,043
+Akserun, Asimla olan, Aşın.
+
+664
+02:00:00,000 --> 02:00:03,840
+Anlamsal olarak aynı çıkıyor da, tabii şeyleri aynı çıkmaz.
+
+665
+02:00:05,180 --> 02:00:08,880
+Lojik ifade olarak denemek lazım. Yazalım onları istersen.
+
+666
+02:00:22,068 --> 02:00:49,068
+Yani P ise Q. Ondan sonra ne geliyordu? 1, 1, 0, 1 geliyor değil mi? 1, 0 oldu durumda. Öbürü neydi? P'nin D'ydi, Q'nun D'ydi. Şimdi 0, 0'da 1'e 1 gelecek, 1 gelecek. 0, 1'de
+
+667
+02:00:50,323 --> 02:00:53,083
+1'e 0 gelecek.
+
+668
+02:00:54,083 --> 02:01:00,563
+Mesela 1'e 0, 1'e 0 geliyor, 0 gelir. Bak mesela burası şey, ondan sonra diğerleri 1 gelir.
+
+669
+02:01:00,823 --> 02:01:04,403
+Şu ikisi aynı çıkmadığı için lojikli ekvivalent diyemiyoruz.
+
+670
+02:01:05,163 --> 02:01:07,163
+Ama aslında
+
+671
+02:01:10,043 --> 02:01:16,443
+dediğim gibi, sözel olarak öyle bir şey var ama mantıksal şeyde bu operatörler dizisinde bakmımıza öyle çıkmıyor.
+
+672
+02:01:20,467 --> 02:01:29,188
+Size zaten eğer dersek ki bu ifadenin mantıksal eküvalentini bulun, doğruluk tablosu bence bunlar.
+
+673
+02:01:36,243 --> 02:01:36,963
+Şimdi bakalım.
+
+674
+02:01:40,435 --> 02:01:46,496
+Bakın bu iki arasında mantıksal denklik mevcut değildir demiş zaten. Bu şekilde çıktığını söylemiş.
+
+675
+02:01:46,496 --> 02:01:50,215
+Sözel olarak bunları bilmeniz önemli arkadaşlar.
+
+676
+02:01:50,215 --> 02:01:59,215
+Counter pozitife de evet devrik biz ne demişiz? Karşı tersi demişiz ama devrik diye de yazabilirsiniz karşısına. Öyle bir not alabilirsiniz.
+
+677
+02:01:59,215 --> 02:02:05,215
+Şuraya ben de not alayım. Bundan sonra lazım olursa diye.
+
+678
+02:02:08,756 --> 02:02:23,256
+Ne oluyor? İki tarafın da şeyi. Şimdi biz bunu daha çok ispatla kullanacağız arkadaşlar. Bu ise ve isenin kontrpozitifini ispatla kullanacağız. O zaman yeni gelince buraya tekrar bir hatırlatma yapacağız.
+
+679
+02:02:25,396 --> 02:02:33,456
+Şimdi ara vermeyelim. 15 dakika daha bir şeyimiz var arkadaşlar. Devam edelim isterseniz. Ondan sonra tamamen bitiririz. Olur mu? Olur mudur?
+
+680
+02:02:45,844 --> 02:02:48,764
+sıkıntısı olan varsa zaten evinizdesiniz.
+
+681
+02:02:50,444 --> 02:02:51,644
+Çay almaya gidebilirsiniz.
+
+682
+02:02:51,944 --> 02:02:57,764
+Şimdi bir de tabii burada bizim söylemediğimiz diğer inverse işlemi vardı. Onu da yazdık.
+
+683
+02:02:58,724 --> 02:03:01,864
+P'nin değili inverse. Ne dedik?
+
+684
+02:03:04,864 --> 02:03:11,644
+P'nin değili ise şu şekilde tek taraflı okla da gösterilir ve illa çift olması gerekmiyor arkadaşlar.
+
+685
+02:03:12,504 --> 02:03:13,064
+Onun değili.
+
+686
+02:03:14,612 --> 02:03:24,372
+Şimdi bir diğer şey çift yönlü önerme. If and on değil, sadece ve sadece böyleyse. Şimdi şuradaki eksikliği gidermek için kullanılıyor.
+
+687
+02:03:24,372 --> 02:03:35,412
+Yani şu bir çelişkiymiş gibi. Yani seçilemedim ama vaadimi yerine getirdim. Onun için bir. Diyor ki yok.
+
+688
+02:03:36,500 --> 02:03:43,539
+Ancak ve ancak seçilirsen sonuç doğru olacak, seçilemezsen sonuç doğru olacak. Diğer durumlar bizim ifade alakalı etmiyor.
+
+689
+02:03:44,619 --> 02:03:45,819
+Burada bunu söylüyor.
+
+690
+02:03:47,979 --> 02:03:54,219
+Yine bakın, Exor'un tersi gibi düşünebilirsiniz. Exor'da girişler aynıysa sonuç 0'dı.
+
+691
+02:03:55,219 --> 02:04:01,939
+Girişler farklıysa sonuç 1'di. Burada da girişler aynıysa sonuç 1. Girişler farklıysa sonuç 0 oluyor.
+
+692
+02:04:02,899 --> 02:04:16,239
+Şimdi şuna baktığım zaman bu nedir arkadaşlar? P ise Q'nun ve Q ise P'nin birleştirilmiş halidir. Tamam mı? İki taraflı şeyin birleştirilmiş halidir.
+
+693
+02:04:16,239 --> 02:04:28,819
+Şimdi bunu uzunca yazmak istersek, and or kullanmadan hadi yazalım. Neydi? Birincinin değili V'a. V'a idi değil mi? V miydi V'a mıydı? V'a idi.
+
+694
+02:04:29,300 --> 02:04:44,140
+birincinin değili ikinci. Bu şuradan gelecek. Kesişim birincinin değili veya ikinci. AND, OR ve NAT'larla bunu bu şekilde yazabiliyoruz.
+
+695
+02:04:44,819 --> 02:04:55,659
+Buna bir kendiniz deneyin. Üçüncü bir sütun ekleyin. Şuraya bunu getirin. Ne yapacaksınız bunu çözerken? Önce şu parantez içini. Parantez içinden önce işlem önceliği burada ne var? Önce NAT'ı.
+
+696
+02:04:56,083 --> 02:05:03,403
+Yani P burada true ise false olacak. False veya true. False veya true nedir? True'dur.
+
+697
+02:05:03,403 --> 02:05:10,483
+Ondan sonra burada ne var? Q'nun değili. Q true'ymuş. Bu false. False veya true. Bu da true olacak.
+
+698
+02:05:10,483 --> 02:05:14,483
+True ve true, true olacak. Yeteceksiniz. Bu şekilde true yazacaksınız. Bu şekilde.
+
+699
+02:05:14,483 --> 02:05:23,363
+XOR'un tersi tam tersi diyemeydi. Yani şimdi şöyle demek lazım. XOR neydi?
+
+700
+02:05:24,916 --> 02:05:35,916
+A'nın değil, pardon A demeyelim, P'nin değil veya VQ,
+
+701
+02:05:39,891 --> 02:05:40,891
+Veya
+
+702
+02:05:40,891 --> 02:05:41,891
+P
+
+703
+02:05:41,891 --> 02:05:43,891
+V
+
+704
+02:05:43,891 --> 02:05:45,891
+Q'nun değeri. Şöyleydi değil mi?
+
+705
+02:05:45,891 --> 02:05:46,891
+İlk soru için.
+
+706
+02:05:46,891 --> 02:05:49,891
+Şimdi bunun tersini almak demek
+
+707
+02:05:49,891 --> 02:05:52,891
+Demorgan'a göre biraz Demorgan'ı anlatmadım ama
+
+708
+02:05:52,891 --> 02:05:53,891
+P
+
+709
+02:05:53,891 --> 02:05:54,891
+Veya
+
+710
+02:05:56,891 --> 02:05:58,891
+Q'nun değeri.
+
+711
+02:05:58,891 --> 02:06:00,891
+Şöyle olacak.
+
+712
+02:06:02,891 --> 02:06:03,851
+V
+
+713
+02:06:06,707 --> 02:06:10,567
+P'nin değili veya Q.
+
+714
+02:06:13,147 --> 02:06:15,447
+Bir dakika, şuradan. Evet, aslında oluyor.
+
+715
+02:06:16,267 --> 02:06:21,267
+P'nin değili veya Q ve P ve Q'nun değili.
+
+716
+02:06:21,807 --> 02:06:22,747
+Yani olabiliyor.
+
+717
+02:06:23,107 --> 02:06:25,407
+Tabii bir de bunu dediğim gibi şey yapmak lazım.
+
+718
+02:06:29,460 --> 02:06:36,340
+Doğruluk tablosunda tersini şunu da bunun yanında geç aynı oluyor arkadaşlar.
+
+719
+02:06:39,340 --> 02:06:49,340
+Ama burada önemli olan şey ancak ve ancak seçilirsem yaparım, seçilmezsem yapmam. Yani bu iki şey de doğru.
+
+720
+02:06:54,163 --> 02:07:03,844
+Ne demiş? Bunun lojik ekvalent olduğunu, şuradan dolayı bunların aynı olduğunu söylemiş. İşte buna siz egzor'un değilinde ekleyip bir alıştırma yapabilirsiniz.
+
+721
+02:07:03,844 --> 02:07:17,264
+Şimdi totoloji ve tutarlılık. Eğer doğruluk tablosunda önermelerin her bir durumun için sonuç doğru geliyorsa arkadaşlar buna totoloji diyoruz.
+
+722
+02:07:18,036 --> 02:07:24,415
+Yani P yazdınız, Q yazdınız, R yazdınız, T yazdınız. Kaç farklı durum var? 16 farklı durum var değil mi?
+
+723
+02:07:25,495 --> 02:07:34,715
+Bu 16 farklı durumun 16'sı da 1 ise bu totoloji oluyor.
+
+724
+02:07:37,755 --> 02:07:42,195
+Örneğin şu, P ise P veya Q.
+
+725
+02:07:43,195 --> 02:07:43,895
+Şimdi bakalım.
+
+726
+02:07:45,203 --> 02:07:57,703
+P var, Q var. Bunun totoloji olup olmadığını kanıtlayın dersek, tablo yapacaksınız. 0, 0, 0, 1, 1, 0, 1, 1.
+
+727
+02:07:58,503 --> 02:08:09,203
+Şimdi, önce P veya Q'ya bakalım biz. Şurada da P veya Q'ya bir yer açalım. P veya Q bu 0'dır, bu 1'dir, bu 1'dir, bu 1'dir. Doğru mu?
+
+728
+02:08:12,819 --> 02:08:32,819
+P ise sıfıra sıfır neydi? Sıfır ise sıfır, bir oluyordu. Sıfır ise bir, bir oluyordu. Bir ise bir, yine bir oluyordu. Bir ise bir, zaten bir oluyordu. Bütün sonuçlar bir olduğu için buraya totoloji diyoruz. Anlaşıldı mı? Yani...
+
+729
+02:08:33,332 --> 02:08:40,952
+100 tane değişkeniz var. 200'leri 100 farklı durum vardır. Eğer bunların hepsi sonucunun biri doğru olursa o zaman doğru kabul edeceğiz.
+
+730
+02:08:43,052 --> 02:08:50,212
+Çelişki contradiction da eğer bütün sonuçlar 0 ise bunun tam tersi, false ise buna contradiction diyoruz.
+
+731
+02:08:50,872 --> 02:08:52,392
+P ve P'nin değili.
+
+732
+02:08:53,652 --> 02:08:53,912
+Yani
+
+733
+02:08:54,420 --> 02:09:04,760
+Cüneyt programcıdır ve aynı zamanda Cüneyt programcı değildir. Dediğini düşünün ya bu bir çelişki olur. Bir şey hem doğru hem yanlış olmaz. Ya doğrudur ya yanlıştır.
+
+734
+02:09:05,900 --> 02:09:18,220
+Nasıl söylüyoruz? Bunu söylüyoruz. Bu önermeleri arkadaşlar birbiri cinsinden yazarken, tabii şuradaki ifade ise bağlacı değil arkadaşlar. Bu şöyle desek daha doğru olur. Bunu düzeltirsiniz.
+
+735
+02:09:18,220 --> 02:09:21,480
+İse bağlacıymış gibi bazen algılanabiliyor.
+
+736
+02:09:22,452 --> 02:09:25,732
+Ne olur arkadaşlar? İçerideki ifadelerin değili ve
+
+737
+02:09:25,732 --> 02:09:28,432
+AND ise OR
+
+738
+02:09:28,432 --> 02:09:30,512
+OR ise
+
+739
+02:09:30,512 --> 02:09:32,952
+AND'e dönüşüyor.
+
+740
+02:09:34,152 --> 02:09:34,892
+Bunu bileceğiz.
+
+741
+02:09:35,972 --> 02:09:36,232
+P
+
+742
+02:09:36,232 --> 02:09:38,252
+N'ye dönüşecek?
+
+743
+02:09:39,372 --> 02:09:40,632
+P'nin değiline dönüşecek.
+
+744
+02:09:41,912 --> 02:09:46,572
+Bunu başka şeylerde bir dönüşüm kuralı yok demorlarla. Yani lise bağlacı
+
+745
+02:09:47,055 --> 02:09:55,455
+Başka bir şeye dönüşmüyor. Ancak ise bağlacını P'nin değili veya Q cinsinden yazacaksın. Ondan sonra onun şeyini alacağız.
+
+746
+02:09:56,155 --> 02:10:03,375
+Buna baktığımız zaman şu şekilde de yazabiliriz demiştik. P ise Q. Lojikte daha çok bunu kullanacağız. Bu nedir?
+
+747
+02:10:03,996 --> 02:10:08,715
+P'nin değili V. V'ye dönüşecek. Q'nun değili olduğu ekranı.
+
+748
+02:10:10,452 --> 02:10:19,332
+p ve q neye eşit olacak? p'nin değili veya q'nun değili olacak. Parantezleri yine ekleyebiliriz.
+
+749
+02:10:24,020 --> 02:10:25,940
+Açık mı? Sıkıntı yok herhalde.
+
+750
+02:10:30,003 --> 02:10:33,844
+Şimdi nicelikler, Quantifier, bir bakalım kaç slide'ımız kalmış.
+
+751
+02:10:37,747 --> 02:10:39,207
+Çıkar diyelim, saklamayalım.
+
+752
+02:10:42,771 --> 02:10:43,771
+Buradan itibaren
+
+753
+02:10:43,771 --> 02:10:46,431
+nicelikler falan var.
+
+754
+02:10:50,996 --> 02:10:54,716
+Sonra ispatlara geliyoruz. Bu önermeler kısmında kalalım.
+
+755
+02:10:57,016 --> 02:10:58,636
+Yani kaçıncı slide?
+
+756
+02:11:16,595 --> 02:11:40,416
+22. slide. Tamam, buradan devam ederiz. Şimdi şurada bir sorulara bakalım. Örnek sorular vardı. Bunlardan birazcık çalışalım, ondan sonra bitireceğim. Şimdi diyor ki, her önermenin negatifini yazınız. Bugün işte perşembedir. Bunun değil nedir arkadaşlar?
+
+757
+02:11:41,332 --> 02:11:46,652
+Bugün ya pazartesi, ya salı, ya çarşamba, ya cumaya, cumartesi, ya pazardır.
+
+758
+02:11:48,552 --> 02:11:56,692
+2 artı 1 eşittir, 3'tür. Bunun değilini alırsak, 2 artı 1 ya küçüktür 3'ten ya da büyüktür 3'ten.
+
+759
+02:11:58,512 --> 02:12:06,012
+Illinois'a rüzgar yok. Illinois'a rüzgarlıdır.
+
+760
+02:12:07,699 --> 02:12:16,939
+The Summer in Campain in Hot and Muggy, sıcak ve Muggy dediği şey nemli mi galiba?
+
+761
+02:12:16,939 --> 02:12:29,699
+Burada da soğuk veya dry demiş. Tam tersi olarak. Şöyle bakalım. Aşağıdaki önermelere bakarak.
+
+762
+02:12:31,956 --> 02:12:38,855
+Bunların lojik bağlantılarını yazın, lojik ifadelerini yazın. Yani şu cümlenin lojik denkliğini yazacağız.
+
+763
+02:12:40,416 --> 02:12:51,235
+Finalden A notu aldın, her örneği yaptın ve dersten A puanı aldın diyoruz.
+
+764
+02:12:52,315 --> 02:12:57,855
+Şimdi bunu kullanarak şu cümleyi, dersten A almışız.
+
+765
+02:13:00,979 --> 02:13:15,179
+her egzersizi yapmamışız. Şimdi dersten A almamız A. Aynı zamanda her egzersizi yapmamamız Q'nun değili. Bu ikisini birleştiriyoruz. Bu şekilde yazıyoruz.
+
+766
+02:13:16,800 --> 02:13:23,279
+Finalden A aldık. Her egzersizi yaptık ve dersten de A aldık. O da bu şekilde yazılıyor.
+
+767
+02:13:25,319 --> 02:13:26,359
+Devam edelim.
+
+768
+02:13:31,155 --> 02:13:54,855
+Eğer sınavdan, dersten A notu almak istiyorsak, finalden A almamız yeterli. Şimdi yeterli, nesilse gerekli pardon. O zaman diyeceğiz ki arkadaşlar, A almamız R idi şeyden. Bu finalden A almamız da P idi. P ise R diyoruz.
+
+769
+02:13:58,771 --> 02:14:13,692
+Finalden A aldık. Fakat egzersizi yapmadık. Ama yine de ne oldu? Dersten A aldık. Finalden A aldık. Egzersizi tam yapmadık. İşte dersten A aldık. Bu şekilde.
+
+770
+02:14:17,524 --> 02:14:31,964
+A almak, finalden A almak ve kitaptaki egzersizleri yapmak yeterlidir. Ne için? Dersten A almak için.
+
+771
+02:14:32,684 --> 02:14:40,644
+Finalden A aldık, kitaptaki egzersizleri yaptık, bu ikisini birlikte. Ne oldu? A almak için yeterlidir.
+
+772
+02:14:42,836 --> 02:15:02,315
+You will get A. Bu dersten A alacaksınız. Ancak ne durumda? Sadece ve sadece diyor ki, kitaptaki her egzersizi yapmakla veya finalden A almakla mümkündür.
+
+773
+02:15:03,115 --> 02:15:09,935
+Şimdi veya dediği için ve sadece ve sadece dediği için burada çift yönde koşul kullanacağımızı anlıyoruz.
+
+774
+02:15:10,676 --> 02:15:22,055
+veya dediği için de burada koşulun bir tarafı veya içerecek, o içerecek. Bunu da bu şekilde yazıyoruz. Size böyle sorular sınavlar da gelebilir.
+
+775
+02:15:26,931 --> 02:15:51,931
+Şimdi her önermeyi t ise q cinsinden yazın demiş. Joy, Matematik, Discret Matematik dersini geçecek eğer çok çalışırsa. Eğer çok çalışırsa, bu basit bir dip koloz aslında, Joy geçecektir sadece restate ediyoruz.
+
+776
+02:15:52,916 --> 02:15:59,175
+Yeterli condition for Katrina to take the algorithm course is that she passed the discrete matematik.
+
+777
+02:16:00,635 --> 02:16:08,095
+Geçmesinin koşulu neymiş? Algorithma dersini alması için geçmesi koşulu neymiş?
+
+778
+02:16:09,555 --> 02:16:17,275
+Şeyi geçmek, discrete'i geçmek. Eğer Katrina passed the discrete matematik ise she will take the algorithm course.
+
+779
+02:16:20,180 --> 02:16:29,460
+Aşağıdakilerin Converse'ünü alın demiş. Converse neydi arkadaşlar? Tam yer değiştirecekti. Yani yukarıda yaptığımıza bir benziyor aslında.
+
+780
+02:16:30,779 --> 02:16:36,180
+Joy passed the discrete mathematics exam then he studied hard. Ne diyeceğiz?
+
+781
+02:16:38,020 --> 02:16:43,680
+She studied hard and so Joy passed the discrete exam.
+
+782
+02:16:47,123 --> 02:16:54,683
+Şimdi P, Q ve R için P'nin true olduğunu, Q'nun false olduğunu, R'nin bilmediğini söylemiş.
+
+783
+02:16:55,683 --> 02:16:59,403
+Şimdi aşağıdakilerin her birinin sonucunu istiyor.
+
+784
+02:17:02,772 --> 02:17:03,972
+Şöyle yapalım.
+
+785
+02:17:13,556 --> 02:17:16,916
+Eee hocamın sesi duyduğunuz mu?
+
+786
+02:17:18,596 --> 02:17:20,076
+Şey koymuş.
+
+787
+02:17:29,459 --> 02:17:31,139
+Ses geliyor mu arkadaşlar size?
+
+788
+02:17:32,579 --> 02:17:36,180
+Hoca animasyon koymuş böyle, alkış sesleri falan geliyor slide'da.
+
+789
+02:17:36,939 --> 02:17:37,500
+Tamam.
+
+790
+02:17:39,659 --> 02:17:43,819
+İşte şey, her bir şeyde animasyon koymuş. Şimdi arkadaşlar,
+
+791
+02:17:45,259 --> 02:17:46,860
+şundan şeyi alalım.
+
+792
+02:17:49,259 --> 02:17:52,180
+Bunu da yapalım herhalde başka bir şey kalmıyor.
+
+793
+02:17:52,899 --> 02:17:54,180
+P trueymuş.
+
+794
+02:17:58,995 --> 02:18:05,995
+Bu soru slide'ını, soru slide'ını hocayla duyururuz. Diğerleri hocanın sayfasında var bu 3 slide.
+
+795
+02:18:05,995 --> 02:18:08,995
+Soru slide'ını belki koymamıştır, onu da koyarız.
+
+796
+02:18:08,995 --> 02:18:15,995
+Q'nun false olduğunu, R'nin X yani true da olabilir, false da olabilir.
+
+797
+02:18:15,995 --> 02:18:20,995
+Şimdi P ve R, P veya R pardon R diyorum.
+
+798
+02:18:20,995 --> 02:18:25,643
+P veya R, P true olduğu için sonuçta oradan true'dur. Bu doğru.
+
+799
+02:18:26,611 --> 02:18:29,891
+Q ise R, şimdi Q'nun false olduğunu biliyoruz.
+
+800
+02:18:31,831 --> 02:18:37,051
+Q false ise, şu doğruluk tablosunu gözün önünüze getirin.
+
+801
+02:18:37,752 --> 02:18:41,851
+İlk ifade sıfırı olması sonucu ne yapıyordu? Oradan true yapıyordu.
+
+802
+02:18:42,711 --> 02:18:46,471
+İkinci ne olursa olsun. Çünkü neydi? Ancak bir sıfır da sıfır oluyordu.
+
+803
+02:18:47,031 --> 02:18:53,891
+Dolayısıyla diğerleri bir olduğu için, bu false da olsa, false olduğu için şunun bir önemi yok.
+
+804
+02:18:55,796 --> 02:19:18,756
+P ve R. Şimdi P ve R. Burası nedir arkadaşlar? P true. R true ise sonuç true olur. R false ise sonuç false olur. O zaman burası R'dir arkadaşlar değil mi? R ve R çift yönlü R. Bu ne olacak? Girişler aynı olduğu için sonuç true olacak.
+
+805
+02:19:23,731 --> 02:19:36,691
+Q'nun değeri false, R'nin değerine bakalım. Şimdi false ile sıfırı işlem yaparsak false buluruz.
+
+806
+02:19:38,131 --> 02:19:45,412
+Biri işlem yaparsak, yani doğruyu işlem yaparsak true buluruz. O zaman burası da neye eşit arkadaşlar? R'ye eşit değil mi?
+
+807
+02:19:46,072 --> 02:19:50,551
+Yine R ve R true buluyoruz. Anlaşıldı mı?
+
+808
+02:20:10,291 --> 02:20:15,612
+Birkaç tane daha bir şeye bakalım. Represant tügemini söylemezsen bunu. Şimdi diyor ki,
+
+809
+02:20:20,724 --> 02:20:26,724
+if 4, küçük 2 ise 7, küçük 10'dur. Bunu doğrudan p ise q yapabiliriz.
+
+810
+02:20:26,724 --> 02:20:39,724
+7, küçük 10, if and and if 4, küçük 2 and 6 is not best and 6. Yani ne oluyor? if and on if ve if deni şurada söylemiş oluyor. Diğer yerine yazarsınız.
+
+811
+02:20:40,724 --> 02:20:43,724
+Aşağıdakileri kullanarak formül edin demiş.
+
+812
+02:20:44,564 --> 02:20:51,844
+Bugün pazartesi ise yağmur yağıyor. Bugün pazartesi P. Yağmur yağıyor. Çünkü P ise Q.
+
+813
+02:20:54,804 --> 02:21:06,484
+It is not case'e durum değildir ki Today is Monday. Yani P or It is raining. If and only it is hot. If and only if şuradan R gelecek.
+
+814
+02:21:07,316 --> 02:21:19,036
+Monday ve Reining durumu şey olacak veya olacak ama diyecek ki bunun case böyle değildir. Bunun başına bir not getireceğiz. Bu şekilde bunu da yazacağız.
+
+815
+02:21:20,456 --> 02:21:29,076
+Şimdi bu ifade bir totoloji midir? Şimdi kaç değişkenim var? İki değişkenim var arkadaşlar. P var, Q var. O zaman P ve Q'nun tüm durumlarını burada yazıyoruz.
+
+816
+02:21:35,316 --> 02:21:46,716
+Bu ifadeyi yazdıktan sonra şurada bana ne lazım? P'nin değili lazım. Şuradan P ise Q lazım. Yani bunu tek seferde de yazabilirim ama burada detaylı yazdık.
+
+817
+02:21:46,716 --> 02:21:58,988
+Daha sonra buradan yola çıkarak P'nin değili ve P ise Q'yu yazdık. Daha sonra Q'nun değili yazdık. Daha sonra bunu birleştirdik. Yani en son iki ifade birleşecek. Buraya ortaya gidecek.
+
+818
+02:21:59,572 --> 02:22:06,531
+Ne oluyor? P'nin değilleri, true'ları, false false'ları, true'u yapıyoruz. P'yi ise Q ne oluyor? Şuraya getiriyoruz.
+
+819
+02:22:07,331 --> 02:22:16,871
+P'nin değili ve P'yi ise Q. Şu ikisinin endini alıyoruz. İşte false false, false true, false true, false false false true, true true, true true, bunlar true'dur.
+
+820
+02:22:17,211 --> 02:22:22,131
+Sonra Q'nun değilini aldık. Q'nun değilini burada aldığımızda false true, false true geldi.
+
+821
+02:22:27,059 --> 02:22:32,340
+Ne yapıyoruz? Şu birinci ifade ile şu ikinci ifade arasındaki ise bağlayacağına bakacağız.
+
+822
+02:22:32,540 --> 02:22:43,059
+0-0'da 0, 0-0'da 1, 0-1'de 1, 1-0'da sadece 0 oluyordu, 1-1'de 1 oluyordu.
+
+823
+02:22:43,880 --> 02:22:45,899
+Deyip bitiriyoruz. Bu bir totoloji midir?
+
+824
+02:22:46,920 --> 02:22:51,399
+Totoloji değildir. Çünkü sadece şurada 0 olması totoloji şartını bozuyor.
+
+825
+02:23:01,108 --> 02:23:06,608
+Evet, tam da yerine gelmişiz. Burada da 6. slide'dan devam edeceğiz. Şöyle not alalım.
+
+826
+02:23:09,780 --> 02:23:11,724
+Ayrı, kiri, münki, hava.
+
+827
+02:23:15,156 --> 02:23:21,816
+Evet, sormak istediğiniz bir şey var mı arkadaşlar dersle alakalı? Yeni gelen arkadaşlar için hızlıca tekrar edeyim.
+
+828
+02:23:22,515 --> 02:23:27,216
+Svite'da Bağım Hoca'nın sayfasında var. Önümüzdeki 2-3 haftanın slide'ı var.
+
+829
+02:23:28,276 --> 02:23:35,316
+Logik devreler dahil. Oradan indirebilirsiniz. Şu soru slide'ını da hocaya söylerim, yükleriz.
+
+830
+02:23:36,476 --> 02:23:40,716
+Onun haricinde bizde yapılacak duyuruları takip etmeniz yeterli.
+
+831
+02:23:41,940 --> 02:23:57,880
+Varsı da merak ettiğiniz bir şey, hemen alalım. Ha bu arada arkadaşlar, iletişim için, evet, Kaynak Kitap Frozen, iletişim için şu verdiğim e-mail adresine göndereceğiniz sorular konusunda sizden bazı istirahatım olacak.
+
+832
+02:23:59,200 --> 02:24:01,380
+Bir dakika, niye kapattık ekran paylaşımını?
+
+833
+02:24:04,380 --> 02:24:06,380
+Bu dönem benim dersimi alan...
+
+834
+02:24:07,316 --> 02:24:20,916
+Öğrenci sayısı yaklaşık 700 farklı farklı derslerden. Herkesten bir yarım mail gelse, ayda 300 küsur mail eder. Buna benim yetişmem çoklu. Başka idari işlerimiz de var.
+
+835
+02:24:20,916 --> 02:24:33,316
+Ders ile alakalı, sizi veya arkadaşlarınızı bilgilendirecek sorularınız olabilir. Genel olur veya burada dersin konusuyla alakalı olabilir. Değerlendirmesi de işleyişle alakalı olabilir.
+
+836
+02:24:33,456 --> 02:25:00,435
+O sorularınızı mümkün mertebe lütfen burada derste sorun. Mail atarsanız, hani hocam benim şöyle bir sıkıntım var, ona cevap yazarız. Sadece şahsınızla alakalı. Ama o attığınız maillerde de eğer bütün sınıfı bilgilendirecek bir şeyse lütfen burada sorun. Bazen mail gelir, ben onun bütün sınıf tarafından bilinmesini istersem, size şahsız sizin özel bir durumunuz değilse, ne yaparım onu burada açıklarım.
+
+837
+02:25:00,755 --> 02:25:19,475
+Açıklamazsan bana, hocam şöyle bir soru sormuştum, mail adresinde bunu cevaplar mısınız diye, burada unuttuysam hatırlatın. Ama mümkün mertebe o mail trafiğini arkadaşlar, burada soru sorarak şu chat ekranına yazarsanız veya mikrofonunuzda da ifade edebilirsiniz. Burada hallederim.
+
+838
+02:25:20,084 --> 02:25:31,484
+Şu e-mail adresini kullanırsanız daha rahat ulaşırsınız. Diğer başka gmail adresini falan varsa oradan geri dönmeyebilirim. Onun için bunu kullanmanız sizin adınıza daha iyi olur.
+
+839
+02:25:32,224 --> 02:25:41,724
+Google Group vesaire açmayacağım. Bir duyuru olursa USIS üzerinden mail adreslerinizde, yıldız maillerinizde mail gelir. Oradan takip edersiniz.
+
+840
+02:25:43,283 --> 02:25:44,783
+Benim anlatacaklarım bugünlük bu kadar.
+
+841
+02:25:46,324 --> 02:25:56,324
+Eğer söyleyecek bir şey yoksa, bir de bu dersin grubuna ben hocaya da söyleyeyim, bu gruba katılmaları gerekiyor. Çünkü yoklama burada alınıyor arkadaşlar.
+
+842
+02:25:56,324 --> 02:26:13,324
+Buraya girmiş olmaları gerekiyor arkadaşlarım. Onu da kendilerimle ifade ederseniz, şu an ben yine mesaj yazarım bu sistem ama demek ki öyle bir sistemde hala açık var. Onu da halletmek gerekiyor. Yani gerek diğerleri bildireyim onu.
+
+843
+02:26:14,388 --> 02:26:19,308
+Hepinize iyi günler, başarılı bir dönem dilerim. Sağlıklı günler dilerim arkadaşlar. Kendinize iyi bakın.
+
+844
+02:26:30,644 --> 02:26:32,460
+Hoşçakalın, İngiltere Güneşliğe.
