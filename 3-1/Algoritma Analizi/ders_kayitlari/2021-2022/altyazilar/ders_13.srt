@@ -1,0 +1,1231 @@
+1
+00:00:02,676 --> 00:00:05,936
+Tamam, şimdood.
+
+2
+00:00:10,291 --> 00:00:12,172
+Ama açgıbeye bağlanırsa
+
+3
+00:00:20,211 --> 00:00:22,611
+Ne kadar iç boyucu bir şey şu ya.
+
+4
+00:00:37,363 --> 00:00:38,363
+Spence.
+
+5
+00:00:38,363 --> 00:00:42,363
+Şu anda oldu amaç, seni görmüyorum.
+
+6
+00:02:24,819 --> 00:02:51,379
+Arkadaşlar, herkese merhaba. Bir problem nedeniyle böyle bir gecikmeli başlıyoruz derse. Şöyle bir durum oldu, sizlerle paylaşayım. Normalde, şu anda bir saniye, katılım da şöyle verelim. Normalde sabahleyin Elif Hoca size mail göndermişti. Ders saat 3'te başlayacaktı. Ben de sizi bekliyordum. Ama kimse bağlanmadı.
+
+7
+00:02:51,872 --> 00:03:06,032
+Ben de açıkçası neden kimsenin bağlandığını önce anlayamadım. Sonra bir arkadaşınızı telefonla aradım. Mailin gidip gitmediğini kontrol ettim. Mailin ulaştığını öğrendim. Sonra hala kimse bağlanmadı.
+
+8
+00:03:06,032 --> 00:03:16,992
+Anlam veremedim. Düşünürken aklıma geldi. Normalde ders Elif Hoca'nın üzerine tanımlı. Session'ı o açıyor ve ben sonra bağlanıyorum.
+
+9
+00:03:17,216 --> 00:03:23,675
+Session açarken grup 1'in sessioni açılmış, grup 3'ün açılması gerekirken bir yanlışlık olmuş.
+
+10
+00:03:25,136 --> 00:03:29,855
+Ben de bunu keşfettiğimde tabii yani hiç aklıma gelmeyecek bir durum.
+
+11
+00:03:30,795 --> 00:03:35,735
+O yüzden Elif Hoca da hani size aktarmama rica etti.
+
+12
+00:03:36,036 --> 00:03:38,776
+Bu aksilikten dolayı maalesef geç başlıyoruz.
+
+13
+00:03:39,376 --> 00:03:40,855
+Anlayışınız için de teşekkür ederim.
+
+14
+00:03:40,855 --> 00:03:42,596
+En azından.
+
+15
+00:03:43,039 --> 00:03:49,699
+Hiç kimsenin gelmediğini zannettiğimiz bir durumda aslında sizin burada olduğunuzu görmek sevindirici.
+
+16
+00:03:50,219 --> 00:03:56,860
+Şimdi zaten planlandığı gibi içeriğimizi 3-5 arasında tamamlıyor olacağız.
+
+17
+00:03:57,000 --> 00:03:59,240
+O konuda endişeniz olmasın, bir kayıp olmayacak.
+
+18
+00:03:59,860 --> 00:04:02,379
+Bu haftaki konumuz dinamik programlama.
+
+19
+00:04:02,819 --> 00:04:05,839
+Ama onun öncesinde geçtiğimiz hafta biliyorsunuz sınav vardı.
+
+20
+00:04:05,839 --> 00:04:07,839
+Bugün 100-100 eğitimde de...
+
+21
+00:04:08,692 --> 00:04:34,912
+karşılıklı konuştuk. Sizlerin aktarmak istediği bir durum varsa lütfen hemen alabilirim, bana aktarabilirsiniz. İkincisi, eğer sanırım bir WhatsApp grubunuz varmış, oradan dersin başladığına dair bilgiyi arkadaşlarınızla paylaşırsanız, sevinirim. Bir yorum yapmak isteyen, sınavla ilgili bir görüş belirtmek isteyen arkadaşımız var mı?
+
+22
+00:04:42,324 --> 00:04:43,684
+Peki, o zaman
+
+23
+00:04:43,684 --> 00:04:45,844
+terse başlayalım.
+
+24
+00:04:50,067 --> 00:04:51,127
+İkran karnış, yo.
+
+25
+00:05:07,156 --> 00:05:12,156
+Dersin işlenişliği ile ilgili herhangi bir talebiniz, isteğiniz var mıdır? Onu da sormuş olayım.
+
+26
+00:05:16,084 --> 00:05:17,704
+Thank you, [öğrenci].
+
+27
+00:05:53,684 --> 00:05:55,684
+Hocam merhaba, ben bir şey sorabilir miyim?
+
+28
+00:05:56,564 --> 00:06:01,144
+Nihayet biri bir şey sormak istedi. Valla çok mutlu oldum. Kim konuşuyor?
+
+29
+00:06:02,224 --> 00:06:02,984
+Nurettin hocam.
+
+30
+00:06:04,004 --> 00:06:05,903
+[öğrenci], dinliyorum, sor lütfen.
+
+31
+00:06:06,464 --> 00:06:10,004
+Projeyle ilgili bir şey soracaktım da, BB7'de aynı sorunu yaşamıştım ben.
+
+32
+00:06:10,504 --> 00:06:17,124
+Projeyi dönem bittikten sonra sunmamızı istemiştiniz. Bu derste de aynı iş olabilir mi? Yoksa dönem içinde biter mi?
+
+33
+00:06:17,779 --> 00:06:33,551
+Final haftasını, muhtemelen ilk hafta olacak şekilde sunumun ihtimal dahilinde, ikinci haftasına kalacağını zannetmiyorum ama final haftaları her zaman için ödev sunmak için bir ihtimal oluyor. O yüzden hani ben sana şu anda buradan...
+
+34
+00:06:33,552 --> 00:06:40,032
+kesinlikle dönem içinde olur diyemiyorum. Tahminim en kötü finalin ilk haftası sunumlarınızı yapmış olursunuz.
+
+35
+00:06:40,432 --> 00:06:48,352
+Evet hocam, dönem içinde derken kastettiğim final haftasını da kastetiyordum. Çünkü hatırlıyorsanız BBG'de 19 geliştirilerde.
+
+36
+00:06:49,692 --> 00:06:52,632
+Projeyi finaller bittikten bir hafta sonu sunmuştuk.
+
+37
+00:06:53,812 --> 00:06:56,632
+Ben hiç onu hatırlamıyorum.
+
+38
+00:06:58,228 --> 00:07:02,648
+Bunu bir daha kontrol edeceğim. Çünkü bir hafta sonra sunamayız, notların girilmesi gerekiyor.
+
+39
+00:07:02,668 --> 00:07:06,528
+Bir hafta sonra değil, o yani finaller bittikten sonra yapmıştık, finaller zamanında.
+
+40
+00:07:07,028 --> 00:07:12,748
+Şöyle olabilir, iki haftaysa finaller, örnek veriyorum, ikinci haftanın cuma günü sunmuş olabilirsiniz.
+
+41
+00:07:12,908 --> 00:07:17,187
+Yani BBG'nin finalini yaptıktan sonra sunmuş olabilirsiniz.
+
+42
+00:07:17,843 --> 00:07:21,744
+Ama final haftaları içindedir. Çünkü başka türlü mümkün değil, yapamayız.
+
+43
+00:07:22,124 --> 00:07:24,863
+Evet hocam, onu söylüyordum. Bebeliden, finalinden sonra yapmıştım.
+
+44
+00:07:24,903 --> 00:07:28,243
+Onu soruyorsan, algoritmalarının hangi güne geleceğini bilmiyorum.
+
+45
+00:07:28,803 --> 00:07:32,223
+Ama finalin birinci ya da ikinci haftası kesinlikle sunumlarınızı yapmış olursunuz.
+
+46
+00:07:32,943 --> 00:07:33,884
+Çok teşekkürler.
+
+47
+00:07:34,443 --> 00:07:34,923
+Rica ederim.
+
+48
+00:07:36,803 --> 00:07:40,123
+Evet, hemen zaten kalabalıklık bir kişiyi kaybetmişiz bile.
+
+49
+00:07:41,519 --> 00:07:43,519
+Bir anda sayı azaldı.
+
+50
+00:07:43,519 --> 00:07:47,467
+Şimdi ben ekranımı size aktarayım.
+
+51
+00:07:52,244 --> 00:07:54,284
+görebiliyorsunuzdur diye tahmin ediyorum.
+
+52
+00:07:56,964 --> 00:08:00,204
+Bu hafta dinamik programlama konusunu işleyeceğiz.
+
+53
+00:08:00,824 --> 00:08:05,644
+Aslında dinamik programlamanın programming kısmı planning olarak aktarılıyor literatürde.
+
+54
+00:08:07,704 --> 00:08:13,724
+1950 yılında Robert Bellman tarafından ortaya atılan bir yaklaşım.
+
+55
+00:08:14,132 --> 00:08:34,072
+Temel prensip, alt problemlerin çözümlerini ana problemin çözümü için kullanarak bir sonuca ulaşmak. Daha çok optimizasyon problemleri için kullanılan bir teknik. Zaman zaman kombinatörik problemler için de karşımıza çıkıyor.
+
+56
+00:08:40,019 --> 00:08:44,940
+Time Complexity'yi azaltmak için kullanılan yöntemlerden bir tanesi.
+
+57
+00:08:46,000 --> 00:08:52,539
+Berlek yönetimi açısından, berlek karmaşıklığı açısından biraz daha bonkör bir yaklaşım.
+
+58
+00:08:53,059 --> 00:08:59,920
+Yani burada berlekten faydalanıyorsunuz ve berleğin gücünden, alt problemlerin çözümü saklama yeteneğinden faydalanıyorsunuz.
+
+59
+00:09:01,620 --> 00:09:10,279
+ve rekürans bağımsızı kurduğunuz problemlerde problemi rekürsif olarak çözmek yerine
+
+60
+00:09:10,279 --> 00:09:15,819
+alt problemlerin sonuçlarını elde edip o sonuçlar üzerinden ana problemin sonucuna ulaşmak.
+
+61
+00:09:16,299 --> 00:09:21,659
+Tabii şu kavram var, Principle of Optimality diye. Bu kavramda şunu söylüyor,
+
+62
+00:09:22,399 --> 00:09:28,000
+bir problemin optimal sonucuna ulaşmak için o problemin alt problemlerinin optimal sonuçlarını.
+
+63
+00:09:28,416 --> 00:09:43,816
+elde etmek ve kullanmak önemli. Bu yüzden biz her zaman bu tür çözümlerde alt problemlerin optimal sonuçlarını elde etmeyi, oradan da ana problemin optimal sonucuna ulaşmayı planlıyoruz.
+
+64
+00:09:46,131 --> 00:09:57,771
+Bu dinamik programlama yaklaşımını nasıl kullanabiliriz de bir örnek olması açısından Fibonacci sayılarını ilk olarak ele almak gerekir.
+
+65
+00:10:00,275 --> 00:10:08,415
+kendinden önceki iki sayının toplamını kullanarak elde ettiğimiz sayı grubuna fibonacci sayıları diyoruz.
+
+66
+00:10:08,935 --> 00:10:18,495
+Bu noktada sıfırı bir ile topladığınızda bir, biri bir ile topladığınızda iki, iki, üç ile topladığınızda beşi elde ediyor gibi ilerliyorsunuz.
+
+67
+00:10:18,535 --> 00:10:21,415
+Rekürans mantısını kurduğunuzda fn eşittir.
+
+68
+00:10:21,855 --> 00:10:27,775
+fn-1 artı, fn-2 denklemini elde ediyorsunuz.
+
+69
+00:10:28,148 --> 00:10:38,968
+sağ tarafta görmüş olduğunuz, özellikle bu Fibonacci'yi 5 sayısını hesaplarken, Fib 5, Fib 3 ve Fib 4'ü çağırıyor.
+
+70
+00:10:39,648 --> 00:10:45,148
+Fib 3, Fib 1 ve Fib 2'yi çağırıyor. Fib 4'te Fib 2, Fib 3'ü çağırıyor. Buradaki kritik nokta...
+
+71
+00:10:46,964 --> 00:10:54,944
+Recurans bağıntısını kullanarak recursive çözümümüz aslında bazı işlemleri fazladan tekrar tekrar yapıyor.
+
+72
+00:10:55,384 --> 00:11:01,284
+Bu nedenle her recursive yaklaşım aslında çok da verimli olmayabiliyor.
+
+73
+00:11:02,004 --> 00:11:05,884
+Buradaki recursive bağıntısını recursive yaklaşımı kullanmadan
+
+74
+00:11:06,303 --> 00:11:15,903
+Önceki problemin sonucunu saklayarak kullanmanın bize sağladığı avantajı ortaya koymak.
+
+75
+00:11:15,903 --> 00:11:20,223
+Alt taraftaki, bak ben şöyle göstereyim.
+
+76
+00:11:20,223 --> 00:11:26,703
+Burada görmüş olduğunuz 0 ve 1'in ilk problemimiz bu.
+
+77
+00:11:26,899 --> 00:11:48,899
+ikinci sayıyı elde etmek istiyoruz. Önceki iki tane değeri topluyoruz. Bir değerini elde ediyoruz. Sonra bir sonraki problemimiz üçü hesaplamak, üçüncü Fibonacci sayısını hesaplamak. Onun için de önceki iki tane bizim için hesaplanmış değeri kullanıyoruz. Bir, bir topluyoruz, iki. Dördün Fibonacci dört sayısını elde etmek için de
+
+78
+00:11:50,336 --> 00:12:09,536
+fibonacci 3 ve fibonacci 2 sayısını kullanıyoruz. Yani aslında, önceki problemlerin sonuçlarını kullanarak bir sonraki problemi çözüyoruz. Günün sonunda da 8. fibonacci sayısını elde etmek istiyorsak, o zaman 21 elde etmek için 7. fibonacci sayısını ve 6. fibonacci sayısını kullanmış oluyoruz.
+
+79
+00:12:09,812 --> 00:12:25,812
+Bu yaklaşımı biraz sonra başka problemlerde de kullanacağız. Bizim için önemli olan burada kendinden önceki alt problemlerin sonucunu bir yerde saklamak ve bu sonucu kullanarak ana problemin çözümünü elde etmemek.
+
+80
+00:12:26,532 --> 00:12:28,912
+Buraya kadar sorusu olan var mı? Kuybanatçı sayılır mı?
+
+81
+00:12:34,868 --> 00:12:59,128
+Elinizde bir bozuk para topluluğu olsun. Bu bozuk para topluluğunun içerisinden en yüksek değeri size verecek olan paraların seçilmesi isteniyor. Ama bir constraint var. Optimizasyon problemlerinde genelde bir constraint olur. Kısıt olmadan bir optimizasyon.
+
+82
+00:12:59,504 --> 00:13:24,484
+Aslında probleminden de pek bahsetmemiz mümkün olmaz. Buradaki constraint de seçmiş olduğunuz paranın yanındaki parayı seçemiyorsunuz. Yani iki tane komşu olan parayı alma şansınız yok. Mutlaka arada bir boşluk bırakmanız gerekiyor. Constraint'imiz bu. Ve sizin bu constraint'i uygun olarak toplayabileceğiniz en yüksek.
+
+83
+00:13:24,847 --> 00:13:31,168
+paraların değerinin ne olacağını ve paraların hangisinin olduğunu hesaplanması gerekiyor.
+
+84
+00:13:33,388 --> 00:13:50,087
+Tablaya baktığınızda göreceksiniz. İlk etapta bir beş değeri var. Bu birinci paranın değeri. Sonra bir, sonra on, sonra altı ve sonra da iki değeri var. Bunlar sırayla elinizdeki bozuk paraların değerini ifade ediyor.
+
+85
+00:13:50,740 --> 00:13:57,240
+ve bu noktada bizim hangi kombinasyonu kullanmamız gerektiğine bakmamız lazım.
+
+86
+00:13:57,320 --> 00:14:00,580
+Örneğin 5'i elimize aldığımız zaman 1'i alamıyoruz.
+
+87
+00:14:03,519 --> 00:14:06,860
+Ama 1'i aldığımız zaman da 5'i alamıyoruz.
+
+88
+00:14:07,019 --> 00:14:09,519
+Şimdi ilk etapta elimizdeki değer 0.
+
+89
+00:14:10,279 --> 00:14:12,919
+5'i aldığımızda elimizdeki değer 5 olacak.
+
+90
+00:14:13,060 --> 00:14:17,419
+5'i almasaydınız, kendinden bir sonrakini alsaydınız elimizdeki değer 1 olacaktır.
+
+91
+00:14:17,600 --> 00:14:23,600
+O zaman 5 birden büyük olduğu için 5'i alıyorsunuz ve değer olarak buraya koyuyorsunuz.
+
+92
+00:14:23,600 --> 00:14:32,600
+Birden sonra 2 var ve 5'ten sonra 2'ye aldığınızdaki değer 7 olarak buraya işleniyor.
+
+93
+00:14:32,600 --> 00:14:38,600
+Sonra 10 değeri geliyor. Eğer siz 2'yi almasaydınız 10'u alabilecektiniz.
+
+94
+00:14:38,600 --> 00:14:43,600
+Ama eğer 10'u alıyorsanız 2'yi alamayacaksınız.
+
+95
+00:14:44,244 --> 00:15:08,244
+O zaman bakıyorsunuz, eğer 10'u almazsanız elinizdeki değer nedir? 5 ve 2'den dolayı 7. Eğer 10'u alırsanız, 2'yi alamıyorsunuz, 10 ile 5'i topluyorsunuz. O zaman elinizdeki değer 15 oluyor. Doğal olarak da siz 10'u alıyorsunuz ve 5'i alıyorsunuz. Burada artık 10 ve 5'i aldığınız bir isten dolayı elinizdeki şu 4 bozuk para...
+
+96
+00:15:09,556 --> 00:15:25,836
+değerinden 15'i ED denileceğinizi hesaplıyorsunuz. Problem bitmiyor. Yanında 6 var. 6'yı alsaydınız, 10'u alamayacaktınız. Ondan önceki değer kaçtı? 7'ydi. 7 ile 6'yı topluyorsunuz. 13 değeri var elinizde.
+
+97
+00:15:26,740 --> 00:15:37,740
+Ama siz 10'a aldığınız zaman 15 değerini elde etmiştiniz. O zaman 10'a almayı tercih ediyorsunuz, 6'yı bırakıyorsunuz, 15 değerini bir sonraki adıma taşıyorsunuz.
+
+98
+00:15:38,484 --> 00:15:45,984
+Bir sonraki adımda da 6'ya almadığımız için 2'ye alma potansiyelimiz var ve başka bir aday yok. O zaman 2'ye alıyorsunuz.
+
+99
+00:15:45,984 --> 00:15:55,984
+Toplamda bu grupta 2 tane yan yana gelmeyecek şekilde coin seçtiğinizde 17 değerine erişebileceğimizi hesaplamış oluyorsunuz.
+
+100
+00:15:55,984 --> 00:16:02,984
+Peki bunun rekürans bağımsını kursaydık nasıl bir durumla karşılaşacaktık? Ona da bakalım.
+
+101
+00:16:04,467 --> 00:16:13,467
+Her zaman için elinizde ilk değer olarak sıfır değeri var. Çünkü elinizde bir para yok. O yüzden şu gördüğünüz ilk değeri sıfır değerine atıyoruz.
+
+102
+00:16:13,467 --> 00:16:27,467
+F1'de de sizin daha ilk paramızı aldığınızda da başka bir alternatif olmadığınız için mutlaka C1 değeri olacak. O yüzden 5'i alıp buradaki F'in olduğu kısmı yerleştiriyoruz.
+
+103
+00:16:27,467 --> 00:16:31,467
+Bundan sonra bir tane seçeneğimiz var.
+
+104
+00:16:31,731 --> 00:16:48,771
+Ya oradaki değeri ve ondan önceki elde ettiğimiz iki değeri toplayıp alacağız ya da o coini almamayı tercih edeceğiz, ondan önceki aldığımız değeri kullanmayı tercih edeceğiz.
+
+105
+00:16:48,771 --> 00:16:55,491
+Burada, buradaki fn fonksiyonuyla yazıyoruz. Diyoruz ki oradaki coini al.
+
+106
+00:16:56,052 --> 00:17:15,891
+Ondan öncekini alma, ondan öncekine kadar olanları temsil eden, iki önceki değeri al. Ya da o değeri, o coin'i almıyorsan, ondan önceki, oraya kadar olan değerleri temsil eden bir önceki kısmı al. O da nedir? Mesela biraz önce neydi? Burada.
+
+107
+00:17:16,819 --> 00:17:29,420
+İşte 5 vardı elimizde, 1 vardı, 1 ve 0'ı topladık, 1 ediyor. Ama fn-1'de 5 vardı, 5 daha büyük olduğu için fn-1'i algoritmaları tercih ettik ve buraya aktardık.
+
+108
+00:17:31,240 --> 00:17:33,860
+Örneklere bakacak olursak f2 nasıl hesaplanıyor?
+
+109
+00:17:37,759 --> 00:17:41,759
+ve virgül 5 deniyor, içlerinden en büyük olan 5 olduğu için alıyordur.
+
+110
+00:17:41,759 --> 00:17:48,259
+f3'ü hesaplarken, bu sefer 5 artı 2'yi alıyoruz 7, bir önceki değer 5'ti.
+
+111
+00:17:49,259 --> 00:17:56,259
+Ve bakıyoruz, şurada görmüş olduğunuz 2 ile 5'i topladık, şu 5 ile karşılaştırdık ve 7 değerini aldık.
+
+112
+00:17:56,259 --> 00:18:04,759
+Sonra elimizde 10 var, burada 5 var, 10 ile 5'i topladık 15, elimizde eten eksi 1 ile 7 var.
+
+113
+00:18:05,715 --> 00:18:09,395
+15'lerinden daha büyük olduğu için buraya 15'lerini yazdık.
+
+114
+00:18:09,395 --> 00:18:15,395
+Sonra elimizde 6 var, 2 önceki o ana kadar hesaplanmış en iyi değer 7.
+
+115
+00:18:16,195 --> 00:18:17,875
+Toplamı 13 etti.
+
+116
+00:18:17,875 --> 00:18:21,715
+Ama elimizde fn-de de 15 olduğu için 15'i almayı terbiye.
+
+117
+00:18:21,715 --> 00:18:25,875
+Son olarak da 2 artı 15 buraya yazdık.
+
+118
+00:18:26,064 --> 00:18:33,824
+15 değeri buraya koyduk. 17, 15'den daha büyük olduğu için 17 değerini elde etmiş olduk.
+
+119
+00:18:33,824 --> 00:18:43,264
+Buradaki time complexity gördüğünüz gibi BigTetaN, space complexity de aynı şekilde BigTetaN.
+
+120
+00:18:43,264 --> 00:18:53,504
+Bunu biz eğer brute force yaklaşımına yapsaydık, 2 üzeri n'lik bir durumla karşılaşacaktık. Onu da yazalım buraya.
+
+121
+00:18:53,811 --> 00:19:07,331
+root cause, yaklaşım, kullansaydık, yaklaşık olarak, iki üzeri N'lik bir karmaşıklık olacaktı ki, N sayısı büyüdüğünde bunu yönetmek çok zor olacaktı.
+
+122
+00:19:07,331 --> 00:19:16,192
+Ama burada mutlaka bir space complexity artımı söz konusu, bunu da vurgulamış olalım.
+
+123
+00:19:16,652 --> 00:19:20,731
+Buraya kadar coin row problemiyle ilgili bir sorusu olan var.
+
+124
+00:19:29,140 --> 00:19:31,140
+Okey. Doğru, ne?
+
+125
+00:19:34,644 --> 00:19:41,324
+Tabi NEPSEC problemine geçeceğiz ama NEPSEC problemine geçmeden önce şunu konuşmakta fayda var.
+
+126
+00:19:41,943 --> 00:19:46,563
+Biz hangi elemanları aldığımızı nasıl belirleyebiliriz?
+
+127
+00:19:46,784 --> 00:19:57,423
+Şimdi biz öncelikle neyi bulduk? Öncelikle değeri bulduk, 17 olduğunu hesapladık ama bu hesabı yaparken hangi değerleri aldığımızı hesaplamayız.
+
+128
+00:19:57,584 --> 00:19:59,503
+Bunu hesaplamanın yollarından bir tanesi.
+
+129
+00:20:00,000 --> 00:20:09,200
+Bakıyorsunuz elinizde 17 var, bir önceki değerle aynı değil. Bir önceki değerle aynı değilse o zaman mutlaka bu item'ı almışsınız demektir.
+
+130
+00:20:09,200 --> 00:20:20,240
+C6'yı hemen not düşüyorsunuz ve C6'yı şuraya almış olarak işaretliyorsunuz. Sonra geriye doğru
+
+131
+00:20:20,692 --> 00:20:31,012
+Bir öncekini alamayacağınız için iki önceki değere bakıyorsunuz, on beş. On beşten bir önceki değer yedi, aynı mı? Değil. Aynı olmadığı için o zaman bunu da almışsınız.
+
+132
+00:20:31,503 --> 00:20:39,644
+C4'ü yazıyorsunuz, virgül diyorsunuz. Yine C3'ü alamayacağınız için yan yana olanları C2'ye atıyorsunuz.
+
+133
+00:20:40,043 --> 00:20:46,124
+C2 ile C1 aynı olduğu için o zaman diyorsunuz ki ben demek ki C2'yi almamışım.
+
+134
+00:20:46,203 --> 00:20:58,144
+Çünkü C1 ile C2'nin değeri aynı. O zaman C1'i almışım diyorsunuz ve bu şekilde 3 tane coin'i alarak 17 değerini hesapladığınızı
+
+135
+00:20:58,480 --> 00:21:00,159
+görmüş oluyorsunuz.
+
+136
+00:21:01,240 --> 00:21:03,099
+Buraya kadar sorusu olan var mı?
+
+137
+00:21:08,084 --> 00:21:12,584
+Peki. Şimdi gelelim website problemine.
+
+138
+00:21:16,435 --> 00:21:34,715
+Napsik problemi aslında bir hırsızın bir eve girdiğinde çuvalının alabileceği ağırlık dahilinde en değerli, en yüksek parasal değere sahip olan eşyaları seçme problemidir.
+
+139
+00:21:34,715 --> 00:21:40,215
+Bu problem brute force yaklaşımı çözüldüğünde yaklaşık 2N-1'liktir.
+
+140
+00:21:42,804 --> 00:21:44,423
+Karmaşık Dağ sahiptir.
+
+141
+00:21:45,524 --> 00:21:49,804
+Buradaki maksimal etmek istediğimiz aslında değer...
+
+142
+00:21:58,003 --> 00:22:02,083
+V-i, Value Maximize-et'ini tutuyoruz.
+
+143
+00:22:03,083 --> 00:22:04,363
+Kıftımız nedir?
+
+144
+00:22:05,363 --> 00:22:07,723
+Çuvalın ağırlık alabileceği kapasite.
+
+145
+00:22:09,003 --> 00:22:18,123
+Şimdi siz buraya baktığınızda ilk etapta hızlıca göz gezdirdiğinizde beş tane item var. Erbin'in ağırlığı ve ederleri var.
+
+146
+00:22:18,387 --> 00:22:34,687
+Doğal olarak bütün kombinasyonlara baktığımızda buradaki değerler de çok rahat ayrıştırılabilir olduğu için tek bir itemi alarak kilo sınırlarında kalıp 90 lira değerinde bir item ile o evden ayrılma ihtimaliniz olduğunu görüyorsunuz.
+
+147
+00:22:35,187 --> 00:22:44,387
+Ama bu item sayısı büyüdükçe karmaşıklık artacağı için brute force yaklaşımı çok rahat uygulanabilir yaklaşım olmaktan çıkıyor.
+
+148
+00:22:45,940 --> 00:23:10,740
+Bu noktada bir başka örnek grubu üzerinden çalışacak olursak biraz daha ayrıca zor. Biraz önce CoinRoll probleminde tek bir boyutlu alan kullanmıştık. Orada sadece bizim için coinlerin kendisi önemliydi. Hangi coin olduğunu önemliydi. Burada iki tane parametremiz var. Bir tanesi
+
+149
+00:23:11,412 --> 00:23:28,412
+değer, pardon bir tanesi item'ın kendisi coinlerde olduğu gibi, diğeri de item'ın ağırlığı. Bu ikisinin arasındaki ilişkiye göre value'nun alınıp alınmayacağı noktasında bir karar var.
+
+150
+00:23:29,748 --> 00:23:48,248
+Bu iki tane parametre olduğu için tek boyutlu bir dizi bizim işimizi çözmüyor. Burada iki boyutlu bir yapı oluşturuyoruz ve satırlarda item var, sütunlarda da ağırlıklar olacak şekilde bir kurgu yapıyoruz.
+
+151
+00:23:56,528 --> 00:24:06,008
+item olmadığı için, onun da değerleri sıfır olarak buraya işlenmiş oluyor, sütunlarda ve satırlarda.
+
+152
+00:24:07,348 --> 00:24:13,788
+Şimdi, bizim normalde iki tane case'imiz var. Ya o item'i alacağız ya da o item'i almayacağız.
+
+153
+00:24:13,788 --> 00:24:18,788
+O item'i almama sebebimiz, bizim Constrain'imizi...
+
+154
+00:24:19,571 --> 00:24:41,932
+sağlamıyor olmasıdır. Ya item'ın kendisi çuvalın alabileceği kapasiteden daha ağırdır ya da daha önce aldığınız item'lara bu item'a eklediğinizde çuvalın kapasitesini aşıyorsunuzdur. Bu yüzden ya item'ı almayı ya da item'ı almamayı tercih ediyor olacağız. Şimdi buradaki matrisi incelersek
+
+155
+00:24:42,291 --> 00:24:53,031
+Item 1 ve kilo 1 kısıtımızda uygun bir değer var mı diye bakarsak, item 1'in kilosu 2 olduğu için doğal olarak onu alamıyoruz ve 0 yazıyoruz.
+
+156
+00:24:53,844 --> 00:25:10,703
+Item 1 alabiliyoruz. 2 kiloluk sınırımız var. O zaman item 1'i alabiliyoruz. Buraya 12'lerini yazıyoruz. 3 kiloluk sınırımız var. Başka bir item alamadığımız için buraya yine 3 kiloda olsa sınırımız 12 yazıyoruz. 4 kiloda olsa 12, 5 kiloda olsa 12 yazıyoruz.
+
+157
+00:25:11,524 --> 00:25:16,364
+İkinci item'a geçtiğimizde artık hem 2 hem de birinci item'i alma ihtimalimiz var.
+
+158
+00:25:17,140 --> 00:25:42,920
+0 kiloyu dikkate almıyoruz. 1 kilo almaya çalıştığımızda, biraz önce 1. ayetimi alamıyorduk ama 2. ayetin 1 kilo dahilinde olduğu için değerimiz 10 oluyor. Devam ediyoruz. 2 kiloluk bir hakkımız var. 2 kiloluk hakkımıza baktığınızda, 12'nin daha yukarıda olduğu için ve 2 artı 1'de 3 kiloda bizim
+
+159
+00:25:44,319 --> 00:25:51,319
+Buradaki sınırımız akısından iki kilo geçtiği için biz burayı 12 değerde kullanabiliyoruz ve ilk aytını alabileceğini söylüyoruz.
+
+160
+00:25:51,779 --> 00:25:55,339
+Sonra 3 kiloluk sınıra ulaştığımızda artık kilo sınırımız arttı.
+
+161
+00:25:56,119 --> 00:25:58,479
+Her ikisi de burayı sağladığı için 2 artı 1.
+
+162
+00:25:59,539 --> 00:26:02,399
+İki aytını da alabileceğinizi düşünüp buraya 22 alıyoruz.
+
+163
+00:26:02,900 --> 00:26:14,620
+4 kiloya, 5 kiloya sınırına çıktığımız zaman ise artık 2 aytemi tamamen kullandığım için değerimiz en fazla 22 olabilir şeklinde bir hesaplama yapmış oluyoruz.
+
+164
+00:26:15,279 --> 00:26:18,600
+Şimdi artık aytemi 3'ü de alabiliyoruz. 0 kiloda 0.
+
+165
+00:26:19,380 --> 00:26:23,360
+1 kiloluk sınırda sadece 1'i ikinci aytemi alabildiğimiz için değer 10.
+
+166
+00:26:30,304 --> 00:26:52,624
+ilk item alabildiğin için 12. 3 kiloluk sunları da ya bu item alacağız, değeri 20, 3 kilo olduğu için, ya da bir önceki değer olan 2, pardon şuradaki 22, bir önceki değer olan 12 ile 10'un toplamı 22, 20'den büyük olduğu için onu alacağız.
+
+167
+00:26:52,624 --> 00:26:56,864
+Doğal olarak 22, 20'den büyük olduğu için onu alıyoruz ve diyoruz ki biz,
+
+168
+00:26:57,248 --> 00:27:05,408
+3 kilo içinde 1 ve 2. item almayı tercih ettik. Çünkü 3. item almak bize 20 lira kazandırıyor.
+
+169
+00:27:05,408 --> 00:27:11,807
+Ama ilk 2 item'ın sınırda kaldığı için aldığımız zaman 22 kazanabiliyoruz. Buraya 22 yazıyoruz.
+
+170
+00:27:11,807 --> 00:27:17,248
+Keza aynı şekilde 4 kilo sınırına çıktığımızda...
+
+171
+00:27:17,652 --> 00:27:25,652
+Burada 20'ye 10 ekliyoruz ve yukarıdan 22 geliyor ama bu item aldığımız zaman 30'a çıktığımız için
+
+172
+00:27:25,652 --> 00:27:32,971
+burada 30 değerini saklamayı tercih ediyoruz. 5 kiloya çıktığımızda bu sefer 20'yi de 12'ye alıyoruz.
+
+173
+00:27:33,451 --> 00:27:38,372
+Direkt topladığımızda Office 2 değeri 22'den büyük olduğu için Office 2'yi yazıyoruz.
+
+174
+00:27:39,332 --> 00:27:41,492
+Devam edelim. 4. item de işin içine girdi.
+
+175
+00:27:44,756 --> 00:28:01,996
+kiloluk hakkımız var. Yine item birden gelen 10 değerini kullandık. 2 kiloluk hakkımız var. 2 kiloya kadar alınabilecek en iyi değer item'ın kendisi olduğu için, 15 olduğu için, 12'den büyük olduğu için. 15'i koyduk. Sonra 3 kiloluk item.
+
+176
+00:28:02,384 --> 00:28:15,464
+hakkımıza geldiğimizde, bakıyoruz elimizde 22 var. Ama 22'den daha büyük bir değer bu item aldığımızda 15'i, 10'a eklediğimizde, 25 olduğu için 25'i buraya koydum.
+
+177
+00:28:16,424 --> 00:28:21,064
+4000'lik değere geldiğimiz zamansa, burada 30 vardı.
+
+178
+00:28:21,971 --> 00:28:31,971
+3 ve 1'den dolayı 30 sağlamıştık. 15'i eşit edebilecek olan 12, 15 artı 12 27, 30'dan büyük olmadığı için 30'u yük arnaşlar taşıdık.
+
+179
+00:28:31,971 --> 00:28:43,723
+Son olarak da 4. item'i aldığımızda 5 kuleyi elde edebilmek için elimizde 22 vardı. Buna eşit edebilecek olan.
+
+180
+00:28:43,988 --> 00:28:51,428
+12 artı 10'dan gelen, şuradaki 22, onun üzerine 15 koyduğumuzda da 37 değerini elde ediyoruz.
+
+181
+00:28:51,428 --> 00:28:55,228
+32'den büyük olduğu için 37'yi buraya yerleştirmiş oluyoruz.
+
+182
+00:28:55,228 --> 00:29:06,347
+Buradaki önemli nokta şu, biz bu matrisi oluşturduktan sonra alabileceğimiz en yüksek değerin constraintleri de...
+
+183
+00:29:06,579 --> 00:29:26,000
+gözeterek oluşturacağımız matrisde, matrisin en alt kısmında yer aldığını görüyoruz. Çünkü bütün kiloları ve bütün ayetimleri işin içine katarak her adımda optimal değeri alıp bir sonraki tura geçiş işlemi yapıp 30'u değeri elde ettiğini görüyoruz. Peki.
+
+184
+00:29:27,923 --> 00:29:35,923
+Case 2 item'ı almama durumuydu. Item'ı almıyorsak, aslında önceden gelen değeri kullanıyoruz demektir.
+
+185
+00:29:35,923 --> 00:29:46,923
+O yüzden mesela burada ikinci item'ı almıyorsak, o zaman biz birinci item'dan gelen değeri kullanıyoruz ve onu aşağıya taşıyoruz.
+
+186
+00:29:46,923 --> 00:29:50,923
+Bu da bize, bizim RecurensBand'ımızı oluştururken...
+
+187
+00:29:51,667 --> 00:29:55,567
+P'nin iki parametreler oluştuğunu biliyoruz, item ile weight.
+
+188
+00:29:56,907 --> 00:30:08,667
+Alacağımız değerin item'ı almadığımızda bir önceki değeri kendisine atamak olduğunu, P, I-1, W olduğunu daha tıkla söyleyebiliyoruz.
+
+189
+00:30:10,207 --> 00:30:13,207
+Item'ı alacaksak iş biraz daha karışık hale geliyor.
+
+190
+00:30:14,207 --> 00:30:18,407
+Item'ı alacaksak mutlaka alacağımız item'ın values'unu ekliyoruz.
+
+191
+00:30:19,476 --> 00:30:40,556
+Artı, bu item'ı aldığımızda, kilo hakkımızın belli bir kısmını bu item'dan dolayı kaybettiğimiz için, V'den çıkartıp, şuradaki item'in kilosunu kopan kilodan çıkartıp, örneğin 37, 4 item'ini aldık, kilosu 2 idi.
+
+192
+00:30:42,867 --> 00:30:55,228
+5'ten 2'yi çıkarttığımızda 3'e geldik. Yani bu itemi çıkarttığımızda aslında bir önceki turdan 22 değerini aldığımızı görüyoruz.
+
+193
+00:30:55,548 --> 00:31:04,927
+22 buradan geliyor, artı 15 de buradan geliyor. 22 artı 15, 37 değerini elde etmiş oluyoruz.
+
+194
+00:31:10,867 --> 00:31:32,788
+item'ı ağlamak. Peki, şimdi o zaman bizim formülümüz nasıl oluşacak? İlk etapta sıfırıncı satırı ve sıfırıncı sütunu sıfır değerlerine doldurduk. Sonra, eğer almaya çalıştığımız item çuvalın ağırlığından daha büyükse,
+
+195
+00:31:33,299 --> 00:31:45,659
+O zaman biz o item'i almayacağız demektir. O item'i almayacaksak da bir önceki en iyi değer olan bir önceki satıra aynı kiloya dönüp o değeri almayı tercih ediyoruz.
+
+196
+00:31:46,659 --> 00:31:54,720
+Eğer aldığımız item kilo sınırını aşmıyorsa o zaman iki seçeneğimiz oluyor.
+
+197
+00:31:58,740 --> 00:32:03,779
+onun kilosunu çıkartıp bir önceki turdaki değeri alıp itemle birlikte toplayacağız.
+
+198
+00:32:05,539 --> 00:32:16,460
+Ya da o item'ı almayacağız, bir önceki kombinasyon daha iyi olduğu için bir önceki satırdaki aynı kilodaki ağırlığı olacağız.
+
+199
+00:32:16,960 --> 00:32:23,399
+Yani bu iki kontrolü, bu iki değeri de elde edip içlerinden en büyük değeri almamız akıllıca olalım.
+
+200
+00:32:23,399 --> 00:32:24,619
+Nasıl burada?
+
+201
+00:32:25,268 --> 00:32:34,907
+22'ye 15 ekleyip 37 değerini elde ettik ve 32'den daha büyük olduğunu gördük ve 37'yi almayı tercih ettik.
+
+202
+00:32:35,347 --> 00:32:38,248
+Bütün işlemlerimizde de bu mantığı kullanacağız.
+
+203
+00:32:38,707 --> 00:32:43,427
+Eğer Mepsek çuvalının ağırlığını açmıyorsak.
+
+204
+00:32:44,548 --> 00:32:47,107
+Temel hesaplanma prensibi bu şekilde.
+
+205
+00:32:49,827 --> 00:32:51,028
+Buraya kadar.
+
+206
+00:32:51,407 --> 00:32:53,147
+sorusu olan var mı?
+
+207
+00:32:59,859 --> 00:33:07,179
+Peki, değeri nasıl hesapladığımızı gösterdik ama yine bu turda şunu konuşmadık.
+
+208
+00:33:08,279 --> 00:33:12,579
+Biz hangi itemleri almayı tercih ettik bunları işaretledim.
+
+209
+00:33:13,519 --> 00:33:16,959
+Şimdi bunu bulmanın yolu bu tablo bize verildiği zaman aslında çok zor değil.
+
+210
+00:33:17,919 --> 00:33:22,339
+Önce o tablonun en alt köşesinde yer alan elemanına başlıyoruz.
+
+211
+00:33:23,000 --> 00:33:24,019
+Diyelim ki değer 37.
+
+212
+00:33:24,559 --> 00:33:25,859
+Üstteki değer ile...
+
+213
+00:33:26,324 --> 00:33:33,504
+Aynı değilse bu item alınmış demektir. Üstteki değerle aynı ise bu item alınmamış demektir.
+
+214
+00:33:34,224 --> 00:33:37,364
+Burada baktığımızda aynı olmadığı için değer bu item alınmış.
+
+215
+00:33:38,224 --> 00:33:41,604
+Dördüncü item alındığına göre dördüncü itemin ağırlığı kaçtı?
+
+216
+00:33:43,184 --> 00:33:44,184
+2 kiloydu.
+
+217
+00:33:45,804 --> 00:33:52,244
+Biz 5 kilodayız. 5 kilodan 2 çıkardığında bir öncelik satıra baktığımızda 22'ye geliyoruz.
+
+218
+00:33:54,099 --> 00:34:04,500
+Şuradan şöyle bir yolculuk yapmış oluyoruz buraya. Item 4'ü aldık. Artık 22'deyiz.
+
+219
+00:34:05,700 --> 00:34:11,500
+22 ile bir üstteki değere bakıyoruz. 22 aynı. O zaman item 3 alınmamış demektir.
+
+220
+00:34:16,275 --> 00:34:20,175
+22 ile 12'ye bakıyorum, aynı değil. O zaman item 2 alınmış.
+
+221
+00:34:23,699 --> 00:34:46,619
+Item 2 alındığına göre, item 2'nin ağırlığına bakıyorum, 1. Hangi kilodayım? 3. 3'den 1 çıkarttım, 2. Bir önceki, 2 kilodaki en iyi değer bir önceki siktirde kaç? 12. 12'ye geri dönüyorum, 12 kendisinden üstteki değerdan farklı mı diye bakıyorum. Evet, farklı. O zaman item 1.
+
+222
+00:34:47,284 --> 00:35:07,904
+alınmıştır diyorum. Zaten sıfırıncı ve values'u sıfır olan değere geldiğim zaman da işim bitmiş oluyor. Böylece adım adım geriye doğru giderek hangi item'ın alındığını da ekrana yazdığına şansına sahip oluyorum. Bu kısımla ilgili sorusu olan var mı?
+
+223
+00:35:14,003 --> 00:35:14,503
+Thank you.
+
+224
+00:35:20,019 --> 00:35:40,715
+Şöyle yapalım. Bu örneği aslında normalde paylaşmamıştım yüz yüze derste. Sizin için vaktinizde müsait olduğu için kısaca üzerinden geçelim. Burada bir...
+
+225
+00:35:42,996 --> 00:35:59,996
+alan var. Bu alan griplere ayrılmış durumda. Bir robot bu gripler üzerinden yukarı aşağı sağa giderek paraları toplama hedefiyle ilerliyor.
+
+226
+00:35:59,996 --> 00:36:06,996
+Bu noktada hangi rotadan ilerlerse en fazla parayı toplayacağı.
+
+227
+00:36:07,635 --> 00:36:17,796
+Aslında bizim optimizasyon problemimiz. Bununla indiremiyoruz. Giriş noktası yukarıdan olacak şekilde düşünülebilirsiniz.
+
+228
+00:36:17,796 --> 00:36:21,235
+Burada aynı mantıkla ilerliyoruz.
+
+229
+00:36:22,900 --> 00:36:42,019
+değerleri sıfır olarak veriyoruz. Ama burada beşinci sütunda bir bir değeri olduğu için bir değerini buraya yazıyoruz. Herhangi bir başka bir değer olmadığı için de buraya bir değerini aslında ilerletmiş oluyoruz. İkinci satıra geliyoruz. İkinci satırda sıfır ve bir var.
+
+230
+00:36:42,579 --> 00:37:09,739
+0 ve 1 değerleri, yani burada hiç coin olmadığı için 0, hemen yanında burada bir coin olduğu için 1 değerini alıyor. Sonra bir adım daha ilerliyoruz. Şuraya geliyoruz. Burada bir coin yok, buradan 1 geldi. Buraya geldiğimizde artık bu noktada elimizde daha önceden 1 vardı, bir tane daha 1 geldi, 2 değerini alıyoruz. Sonra buraya geliyoruz.
+
+231
+00:37:10,096 --> 00:37:21,096
+Bu noktaya bakıyoruz. Burada yukarıdan gelen bir 1 değeri var, soldan gelen 2 değeri var. O zaman 2 değerini alıyoruz. En büyük olanı hal noktaya.
+
+232
+00:37:22,096 --> 00:37:30,096
+Yine yukarıdan 1 geliyor, soldan 2 geldiği için buraya da 2 değerini koyuyoruz. Aşağı iniyoruz. Burada 0, burada.
+
+233
+00:37:35,795 --> 00:38:02,216
+Tekrar devam ediyoruz. Buraya geliyoruz. Soldan biri geliyor, sağdan biri geliyor, bir değeri. Buraya geliyoruz, şuradaki kısma. Burada soldan bir geliyor, yukarıdan iki geliyor. Burada da bir tane eleman var. O zaman yukarıdaki değer daha büyük olduğu için biz üç değerini buraya yazıyoruz. Sonra buradan üç geliyor, buradan iki geliyor. Doğal olarak üç daha büyük olduğu için buraya taşıyoruz.
+
+234
+00:38:02,900 --> 00:38:20,500
+Buradan iki geliyor, buradan üç geliyor. Bir de burada yani şurada gördüğünüz coin var. Büyük olanla topluyoruz ve buraya geliyoruz. Yani siz şuraya kadar robotunuzu getirecek olsaydınız, dört tane coin toplayarak gelebilirdiniz. Nasıl olacaktı?
+
+235
+00:38:20,639 --> 00:38:26,139
+Şöyle gelecektiniz ya da böyle gelecektiniz. Sonra böyle, sonra böyle, sonra böyle, sonra böyle.
+
+236
+00:38:26,139 --> 00:38:30,940
+Dört tane coin'i toplayıp aşağıdaki kapıya kadar ulaşma şansınız olacaktı.
+
+237
+00:38:30,940 --> 00:38:34,940
+Biz daha buradan sıfır geldi, buradan bir geldi, bir yü aldık.
+
+238
+00:38:34,940 --> 00:38:40,940
+Buradan bir bir geldi, burada da bir coin var, topladık iki etti.
+
+239
+00:38:40,940 --> 00:38:45,440
+Buradan iki geldi, buradan üç geldi. Coin olmadığı için üçü taşıdık buraya.
+
+240
+00:38:45,907 --> 00:38:49,228
+Yine buradan 3-3 geldi, 3'ü buraya koyduk.
+
+241
+00:38:51,148 --> 00:38:57,507
+Buradan 3 geldi, buradan 4 geldi. 4 büyük olduğu için, burada da bir koyun olduğu için burası 5 oldu.
+
+242
+00:38:57,887 --> 00:39:03,688
+Günün sonunda buraya ulaştığında 5 değerini elde etmiş olacaksınız.
+
+243
+00:39:03,688 --> 00:39:07,688
+Yani bir robot en iyi ihtimalle bu...
+
+244
+00:39:08,623 --> 00:39:16,623
+tahta üzerine hareket ettiğinde, 5 tane coini toplamış bir şekilde rotayla buradan çıkma şansına sahip.
+
+245
+00:39:16,623 --> 00:39:26,623
+Bu da biraz önceki problemler gibi dinamik programlamayla, o geldiğiniz noktaya kadar olan en iyi rotanın ne olduğunu hesaplayarak
+
+246
+00:39:26,623 --> 00:39:31,623
+sonuca ulaşabileceğiniz bir problem olarak karşımıza çıkıyor.
+
+247
+00:39:31,623 --> 00:39:33,623
+Buraya kadar sorusu olan var mı?
+
+248
+00:39:35,315 --> 00:39:43,315
+Hocam, bu problemde eğer coin değerleri bir değil de farklı farklı değerler olsaydı yine aynı algoritmayı uygulamamız gerekir.
+
+249
+00:39:43,315 --> 00:39:45,315
+Güzel soru.
+
+250
+00:39:45,315 --> 00:39:47,315
+Yoksa farklı mı uygulamamız gerekir?
+
+251
+00:39:47,315 --> 00:39:53,315
+Yani şunu hemen gözülterek yazalım şuraya. Teşekkür ediyorum soru için.
+
+252
+00:39:55,315 --> 00:40:01,315
+Şuradaki coin'imiz diyelim ki...
+
+253
+00:40:01,364 --> 00:40:08,563
+üç birim olsaydı, buradaki coin'imiz bir birim, buradaki coin'imiz iki birim olsaydı.
+
+254
+00:40:09,864 --> 00:40:13,043
+O zaman bir şey değişir miydi diye soruyor arkadaşımız.
+
+255
+00:40:13,623 --> 00:40:18,483
+Yorum yapmak isteyen var mı? Öncelikle onu sorayım. Yani bir fikir yürütmek isteyen.
+
+256
+00:40:22,643 --> 00:40:27,083
+Peki yok. [öğrenci] senin fikrini alayım önce, ondan sonra ben de kendim düşünceleri söyleyeyim.
+
+257
+00:40:29,703 --> 00:40:33,643
+Açıkçası sanki bir yerden bir fire verecekmiş gibi hissediyorum ama...
+
+258
+00:40:34,303 --> 00:40:36,803
+Yani fireden kastettiği nedir? Yanlış hesap yaptıracak mı?
+
+259
+00:40:37,183 --> 00:40:37,543
+Evet.
+
+260
+00:40:38,783 --> 00:40:40,643
+Ama tam olarak sanki...
+
+261
+00:40:42,036 --> 00:40:48,975
+Yani şimdi eğer aşağısında kendisinden daha büyük bir değer olursa diyeceğim o da saçma oldu.
+
+262
+00:40:49,536 --> 00:40:52,135
+Açıkçası hani mantık aynı gibi geliyor.
+
+263
+00:40:52,135 --> 00:40:53,135
+Hani yine...
+
+264
+00:40:55,255 --> 00:40:58,135
+Soldan, yukarıdan, gerçlerden bir...
+
+265
+00:40:59,355 --> 00:41:06,892
+Buraya gelene kadar mesela şuraya gelene kadar diyelim ki şuradaki 3, şuradaki 2 ile...
+
+266
+00:41:07,092 --> 00:41:28,032
+Buraya, buradan 3 getirdim, şuraya kadar. Buradan 0 geldi, buradan 0 geldi, 0 geldi, 0. Burası 3 geldi, burası 0 geldi, burası 1 geldi. 3'ü buraya taşıdığın zaman burası kaç olacak? 5 olacak değil mi? 5 ile 1'e baktığın zaman 5 olacağı için artık buraya 5 gelecek.
+
+267
+00:41:33,331 --> 00:41:35,831
+Yani sen her halde şurayı bypass etmiş oluyorsun zaten.
+
+268
+00:41:37,331 --> 00:41:39,591
+Oraya kadar olan NP-tun'un yeri almış oluyorsun.
+
+269
+00:41:41,451 --> 00:41:43,771
+O zaman bir sıkıntı olmuyor sanırım.
+
+270
+00:41:44,271 --> 00:41:45,152
+Bir sıkıntı olmuyor.
+
+271
+00:41:45,471 --> 00:41:47,051
+Ama şuna bakmak lazım.
+
+272
+00:41:47,051 --> 00:41:50,172
+Şu anda bunun için sadece fikir yürütüyorum.
+
+273
+00:41:50,811 --> 00:41:51,811
+Örnek veriyorum.
+
+274
+00:41:52,291 --> 00:41:54,051
+Ağırlıklar değiştiğinde...
+
+275
+00:41:54,483 --> 00:42:07,063
+önceki hangi yollardan geçildiğini hesaplamak için hangi coin'in alındığını, biraz önceki Napsack probleminde uyguladığımız gibi kilo çıkartırkenki mantığı bütmek gerekebilir.
+
+276
+00:42:08,523 --> 00:42:16,463
+Bunu bir değerlendirmek lazım. Ama genel olarak mantığın çok değişmeden ufak rötüşlerle uygulanabileceğini söyleyebiliriz.
+
+277
+00:42:17,224 --> 00:42:18,244
+Teşekkür ederim.
+
+278
+00:42:18,708 --> 00:42:20,988
+Ben teşekkür ederim. Soru için güzel bir soruydun.
+
+279
+00:42:21,548 --> 00:42:22,508
+Evet, şimdi...
+
+280
+00:42:23,155 --> 00:42:34,755
+Son kısma geliyoruz. Bugün artık ara vermeyeceğim çünkü zaten ane soru da gelmediği için ve konularımız da 3 aşağı 5 yukarı hatta bir tane fazla örnekleri ilerlediğimiz için tamamlanmış olacak.
+
+281
+00:42:35,315 --> 00:42:41,215
+Son kısım bir dahaki haftaya giriş olarak yapacağımız Edit Distance problemi.
+
+282
+00:42:41,215 --> 00:42:51,096
+Bu Levenstein algoritmasıyla çözülen iki kelimenin birbirine olan uzaklığını bulmayı hedefleyen.
+
+283
+00:42:51,155 --> 00:43:17,956
+bir aslında problem. Burada daha çok siz bir yazım hatası yaptığınızda, autocorrect özelliğine bu yazım hatasının giderilmesinde kullanılan algoritmalardan birini sizle paylaşıyor olacağım. Mesela Sunny yazdığınızda, doğru yazdığınızda herhangi bir sorun yok ama bir tane harfi yanlış yazdığınızda bu iki kelime arasındaki distance aslında bir.
+
+284
+00:43:18,547 --> 00:43:29,667
+Yine burada harflerden birini unutup, Sunny'yi birleşik yazıp arada N olmadan yazarsanız, şu boşluk olarak gösteriyorum ama aslında burada boşluk yok gibi kabul edeyim. Sadece N'yi sığdım.
+
+285
+00:43:30,527 --> 00:43:39,207
+Ya da bir tane fazla harf eklemek. Aslında üç tane case'imiz var. Ya harf değişecek, ya bir harfi unutacağız ya da bir tane fazladan harf ekleyeceğiz.
+
+286
+00:43:40,427 --> 00:43:43,207
+Amaç şu, burada...
+
+287
+00:43:43,347 --> 00:44:02,347
+Sizin yazmak istediğiniz, hatalı yazdığınız kelimeye en yakın sözlükte yer alan doğru kelime nedir? Bu önerileri kullanıcıya vermek aslında temel prens. O yüzden sizin kelimenize uzaklık olarak en yakın olan kelimeleri kullanıcıya önermek. Bunun için de...
+
+288
+00:44:02,643 --> 00:44:07,243
+sözlükteki kelimelerle sizin yazdığınız kelime arasındaki mesafenin hesaplanması isteniyor.
+
+289
+00:44:07,884 --> 00:44:09,823
+Burada çok açık bir şekilde mesafe bir.
+
+290
+00:44:10,303 --> 00:44:12,223
+Yine burada çok açık bir şekilde mesafe bir.
+
+291
+00:44:12,323 --> 00:44:15,103
+Aynı şekilde burada açık bir şekilde mesafe bir.
+
+292
+00:44:15,103 --> 00:44:20,103
+Ama işin rengi tabii kelimeler birazcık daha karmaşıklaşınca ve...
+
+293
+00:44:21,396 --> 00:44:24,715
+ortaya atılan kombinasyonlar atınca değişiyor.
+
+294
+00:44:26,215 --> 00:44:31,336
+İşte buradaki gibi çeşitli harflerin eşleşmesi, eşleşmemesi, eklenmiş harflerin durumu.
+
+295
+00:44:31,856 --> 00:44:35,416
+Bunlar hesaba katılarak iki kelime arasındaki distance hesaplanıyor.
+
+296
+00:44:35,416 --> 00:44:46,556
+Ve olası yakınlattaki harf kelimeler size listeleniyor eğer bir word.
+
+297
+00:44:46,992 --> 00:44:51,992
+uygulamasındaysanız ve yazdığınız kelime hata alınsa düzeltilmesini istemiyorsanız.
+
+298
+00:44:51,992 --> 00:44:53,992
+Şimdi bu...
+
+299
+00:44:54,804 --> 00:45:18,804
+Dinamik programlamaya nasıl çözülür? Her iki kelimeyi biri sütunlara, biri satırlara gelecek şekilde pozisyonlandırırsanız, burada birbirleriyle olan eşit durumuna bakıyorsunuz. Aynı olması durumunda bir işlem uyguluyorsunuz. İşte o kartın değişik olması durumunda bir ceza puanı uyguluyorsunuz ve bu şekilde algoritmaların çalışma prensibini aslında hayata geçiriyorsunuz.
+
+300
+00:45:21,076 --> 00:45:30,356
+Bu konuyu bu hafta devam ettirmeyeceğim, diğer grupla da eşit seviyede olmanız için. Önümüzdeki hafta Edit Distance'ı anlatacağız.
+
+301
+00:45:32,456 --> 00:45:39,356
+Arkasından Longest Common Subsequence problemini, özellikle bioinformatikte kullanılan...
+
+302
+00:45:40,340 --> 00:46:02,340
+Arka arkaya gelen patternların ne kadar uzun bir süre benzer olduğunu bulma problemi. Bu da çok gerçek hayatta kullanılmamak tabii. Bunlarla bir sahnedeceğiz. Her ikisi de benzer mantıkla, dinamik programlamayla çözülüyor. Hemen aynı şekilde dersin...
+
+303
+00:46:03,956 --> 00:46:15,635
+Arkasından da, yani konuları bitirdiğiniz zaman da, geçtiğimiz hafta yapmış olduğumuz sınav sorularını, çözümlerini sizlerle paylaşıyor olacağım önümüzdeki hafta.
+
+304
+00:46:16,796 --> 00:46:18,356
+Sorusu olan var mıdır?
+
+305
+00:46:25,460 --> 00:46:46,079
+Peki, öncelikle bu günkü yaşanan aksaklık adına özür diliyorum. Elif Hoca maalesef yanlış grubu aktif hale getirmiş. Ben de o grupta sizlerin bağlanmasını bekledim. Kimse gelmeyince birden aklıma öyle bir şey olabileceği geldi ve hocaya sorduğumda grup bir.
+
+306
+00:46:46,867 --> 00:47:14,167
+açık olduğunu, grup için açık olmadığını söyledi. Doğal olarak siz de o tarafta beklemiş oldunuz. Neyse ki en azından bu durumu fark ettik ve gecikmeni de olsa derse bağlanıp konularımız da zaten bu kadardı. Belirtilen süre içerisinde tamamlamış olduk. Beklettiğiniz için üzgünüz, anlayışınız için çok teşekkür ediyoruz. Size iyi haftalar diliyorum, sağlıklı günler diliyorum. Görüşmek üzere arkadaşlar.
+
+307
+00:47:15,572 --> 00:47:16,612
+Görüşmek üzere hocam.
+
+308
+00:47:17,272 --> 00:47:17,752
+Günler.

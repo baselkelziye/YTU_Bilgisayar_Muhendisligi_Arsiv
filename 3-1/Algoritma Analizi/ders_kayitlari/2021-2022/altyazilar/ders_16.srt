@@ -1,0 +1,1395 @@
+1
+00:01:12,403 --> 00:01:22,983
+Merhaba arkadaşlar. Dersi Amaç Hoca yapacak. Şimdi Amaç, ben seni host yaptım. Ben ayrılıyorum.
+
+2
+00:01:23,403 --> 00:01:25,683
+Bekliyorum herkesin bağlanmasını.
+
+3
+00:01:25,823 --> 00:01:28,823
+Tamam. Hepinize iyi dersler diliyorum. Kolay gelsin.
+
+4
+00:01:28,983 --> 00:01:30,063
+Teşekkürler hocam. Sağ olun.
+
+5
+00:08:00,148 --> 00:08:12,008
+Hoşgeldiniz arkadaşlar. Dönemin son iki haftasına giriyoruz. Şimdiden yeni yanınız kutlu olsun. Umarım sağlıklı, huzurlu, mutlu bir sene olur hepiniz için.
+
+6
+00:08:14,468 --> 00:08:27,548
+Bu hafta topolojik sort ve backtracking yaklaşımlarını, problemlerini birlikte değerlendireceğiz. Sorularınız olursa anlatım sırasında.
+
+7
+00:08:28,084 --> 00:08:34,984
+söz isteyerek ya da chat üzerinden yazabilirsiniz. Umarım sizin için faydalı bir ders olur.
+
+8
+00:08:36,484 --> 00:08:45,504
+Dönem projenizi bugün itibariyle yayınladık. Teslim tarihi 9 Ocak gece yarısı olacak şekilde belirledik.
+
+9
+00:08:47,043 --> 00:08:52,163
+Hash algoritmalarını içeren bir cache yapısı oluşturacaksınız.
+
+10
+00:08:52,624 --> 00:09:04,624
+Online Yıldız Ektere üzerinden ulaşabilirsiniz, böyle projenize. Bir sorunuz olursa, bize yazıp bilgi alabilirsiniz. Onun ötesinde...
+
+11
+00:09:05,524 --> 00:09:11,923
+Son 1-2 saat içerisinde geçtiğimiz ödevde, ödevin süresine uzatılmasını isteyen arkadaşlarımız oldu.
+
+12
+00:09:12,563 --> 00:09:21,024
+Bu noktada özellikle böyle bir durum oluştuğunda lütfen bize birkaç gün önceden yazmanız.
+
+13
+00:09:21,440 --> 00:09:30,120
+gerekir ve herkese eşit sürede bu kararı açıklayacaksak da belli bir süre önce haber vermemiz gerekiyor.
+
+14
+00:09:30,720 --> 00:09:35,880
+Ama bu size verdiğimiz dönem projesi ödevi çok vaktinizi alacak bir ödev değil.
+
+15
+00:09:35,880 --> 00:09:39,620
+Bir ya da iki günde toparlayabileceğiniz bir ödev.
+
+16
+00:09:40,759 --> 00:09:47,240
+Biz sınavlarınıza yani finallerinize geçmeden önce de açıkçası tamamlamanızın sizin içinizden daha uygun olacağını düşünüyoruz.
+
+17
+00:09:47,668 --> 00:09:55,707
+Önümüzdeki haftada ders olacağı için, önümüzdeki haftaya kadar da sorunuz olursa yine mail yoluyla ya da derste aktarabilirsiniz.
+
+18
+00:09:56,548 --> 00:10:04,168
+Şimdi yavaş yavaş ben ekran paylaşımına geçeyim. Ondan sonra da konularımıza başlayalım.
+
+19
+00:10:33,844 --> 00:10:36,544
+Şu an ekranı paylaştım, görebildiğinizi tahmin ediyorum.
+
+20
+00:10:37,524 --> 00:10:40,944
+Bu hafta topolojik sort problemini birlikte ele alacağız.
+
+21
+00:10:45,268 --> 00:10:58,847
+Burada, Topological Sort'ta özellikle birbirlerine bağlılığı olan, birbirleriyle ön koşulu olan problemlerin çözülmesini hedefliyoruz.
+
+22
+00:10:59,388 --> 00:11:04,508
+Bunlardan bir tanesi, ders seçerken bazı derslerin ön koşulunun olma durumu.
+
+23
+00:11:05,128 --> 00:11:08,927
+Bir başka buna benzer problem, bir yazılım yükleyeceğiniz zaman.
+
+24
+00:11:09,491 --> 00:11:16,871
+O yazılımın dependency'si varsa önce onları yüklemeniz gerekiyor. Ondan sonra o yazılımı kurmanız bekleniyor sizden.
+
+25
+00:11:17,491 --> 00:11:32,371
+Bu tür ön koşulu olan durumları birbirleriyle ilişkisini kurarak hangi adımları izleyeceğinizi kullanmamız için kullanmamız bir yaklaşım topolojik sort problemi.
+
+26
+00:11:34,868 --> 00:11:47,588
+Biz iki tane yaklaşım kullanıyoruz. Bir tanesi DFS, bir diğer ise Dcrizen, Compure yaklaşımı.
+
+27
+00:11:53,043 --> 00:12:08,803
+Pardon. Şimdi ikisi de literatürde sıklıkla kullanılıyor. Örnek vermek gerekirse bir tane problem ele alalım. Konsolsun, bu arada kreve küzükleri olsun.
+
+28
+00:12:12,851 --> 00:12:28,851
+Örneğin, bir dersimiz var, C1, onu, herhangi bir ön koşulu yok. Bir tane dersimiz var, C2, bunun herhangi bir ön koşulu yok. C3 dersi var, C1 ve C2 ön koşulu. C4 dersi var, örneğin, C4'ünde...
+
+29
+00:12:29,491 --> 00:12:35,251
+C3 koşulu olsun, bir de C5 dersi olsun, onun da C4 ve C3 koşulu olsun.
+
+30
+00:12:35,991 --> 00:12:48,591
+Şimdi bu tür problemleri çözmek için birçok problemler olduğu gibi bizim burada bize verilen komponentlerin arasındaki ilişkiyi graf yardımıyla temsil etmemiz gerekiyor.
+
+31
+00:12:49,531 --> 00:12:54,152
+Burada C1 bir düğün olarak bizim problemimizde yer alıyor.
+
+32
+00:12:54,836 --> 00:13:01,076
+herhangi bir ön koşulu olmadığı için bunu buraya yerleştiriyoruz. C2 yerleştiriyoruz onun da herhangi bir ön koşulu.
+
+33
+00:13:01,076 --> 00:13:13,155
+C3'ü yerleştirdiğimizde bunun bir ön koşulu var. Doğal olarak C1 ve C2 arasında bir ilişki, daha doğrusu C1-C3 ve C2-C3 arasında bir ilişki kurulması gerekiyor.
+
+34
+00:13:13,675 --> 00:13:19,915
+Yine C4'ü ekliyorum, onun da bir ön koşulu var. C3 ile bir ilişki kurulması gerekiyor son olarak da.
+
+35
+00:13:20,563 --> 00:13:28,223
+C5'i ekleyerek aslında bu problemde yer alacak düğün noktalarını belirlemişler. Şimdi geldi kenar noktalardan.
+
+36
+00:13:29,303 --> 00:13:41,624
+Burada directed bir ilişkiden bahsediyoruz. Andirected bir ilişkiden bahsetmiyoruz. Yani bir düğümün diğer bir düğme bağlılığı var. O olmadan ilerlemiyor.
+
+37
+00:13:47,923 --> 00:14:07,923
+düğme doğru gösteriyoruz. C3, C1'e ve C2'ye bağlı. C4, C3'e bağlı. C5, C4'e bağlı. C3'te, daha doğrusu C5'te C3'e bağlı. Hem C4'e bağlı hem C3'e bağlı.
+
+38
+00:14:07,923 --> 00:14:14,923
+Buradan da gördüğünüz gibi bir directed graf oluşuyor.
+
+39
+00:14:16,884 --> 00:14:23,824
+Peki, böyle bir grafın çözülmesini istiyoruz. Bunun çözülmesini istediğimiz nedir?
+
+40
+00:14:24,663 --> 00:14:32,804
+Hangi sıra ile bu dersleri alırsak, herhangi bir sıkıntı yaşamadan ders programını başarıyla tamamlayabiliriz.
+
+41
+00:14:33,344 --> 00:14:40,624
+Önce C5'i alma şansımız yok. C4'ü, C3'ü alma şansımız yok. Çünkü bunların hepsinin birer bağlı olduğu ön koşul ders var.
+
+42
+00:14:41,104 --> 00:14:43,903
+O yüzden ya C1 ya C2'yi alarak başlamamız gerekiyor.
+
+43
+00:14:44,467 --> 00:14:49,548
+Bu noktada C1'den başlamak da C2'den başlamak da bir seçenek.
+
+44
+00:14:49,548 --> 00:14:57,387
+O yüzden topolojik sol problemlerinde tek bir çözüm değil, birden fazla çözüm mevcut olabilir problem içerisinde.
+
+45
+00:14:57,387 --> 00:15:03,028
+Peki, bu problemin çözümsüz olma durumu var mıdır diye ben size sorayım.
+
+46
+00:15:03,028 --> 00:15:09,427
+Bu topolojik sol probleminin çözümsüz olma durumu var mıdır?
+
+47
+00:15:09,427 --> 00:15:11,427
+Yoksa bütün...
+
+48
+00:15:11,440 --> 00:15:15,440
+durumlar için mutlaka bir çözüm üretilebilir mi?
+
+49
+00:15:27,475 --> 00:15:30,415
+Herhangi bir cevabı olan arkadaşımız var mıdır?
+
+50
+00:15:39,028 --> 00:15:55,468
+Evet, her dersin ön koşulu varsa, bir cevap geldi. Evet, her dersin ön koşulu varsa, neredeyse doğru bir cevap ama bunu şöyle ifade etmek daha uygun olacaktır.
+
+51
+00:15:55,468 --> 00:16:06,408
+Burada bir asayklik graf görüyorsunuz. Yani bir saykl olmayan graf görüyorsunuz. Yan taraftaki C3'in C4'ı.
+
+52
+00:16:07,827 --> 00:16:33,908
+C4'ün C5'ı, C5'in de C3'e bağlılığı olsaydı ders olarak, burada bir cycle'dan bahsedelim. Eğer herhangi bir şekilde ön koşullardan dolayı oluşturduğumuz grafta bir cycle oluşuyorsa, o bahsettiğimiz problemin çözümü yoktur. Çünkü C4, C3'e bağlı.
+
+53
+00:16:34,451 --> 00:16:58,451
+C5, C4'e bağlı, C3 de C5'e bağlı. Burada bir deadlock oluşuyor. Mutlaka, asitlik bir graf yapısı oluşması gerekiyor topolojik sort problemini çözebilmemiz için. Şimdi burada iki temel yaklaşım var. Biri depth for sort ile çözüldü. Biri de Dijkstra and Control.
+
+54
+00:16:59,604 --> 00:17:04,124
+Back-for-search ile çözmek istediğimiz zaman aslında,
+
+55
+00:17:04,124 --> 00:17:06,124
+tenalde
+
+56
+00:17:08,124 --> 00:17:10,923
+bir tane sitemiz var, hatırlarsanız,
+
+57
+00:17:10,923 --> 00:17:17,084
+siteye ilgili derslerini graf algoritmalar yerleştirmeye başlıyoruz.
+
+58
+00:17:17,084 --> 00:17:26,524
+Örneğin C2, sonra C2, sonra C3 diye yerleştirmeye çalışırsak,
+
+59
+00:17:26,640 --> 00:17:28,236
+Doğru mu yapmışsınız?
+
+60
+00:17:33,556 --> 00:17:34,436
+Hayır hocam.
+
+61
+00:17:35,336 --> 00:17:36,856
+Nasıl bir yöntem yürürülmemiz gerekiyor?
+
+62
+00:17:37,276 --> 00:17:40,175
+C1'den C3'e, yani C2'ye eklenmeyecek.
+
+63
+00:17:40,776 --> 00:17:46,675
+Evet, teşekkür ediyorum. Bizim burada depth-for-source mantığında bağlantıları kullanmamız gerekiyor.
+
+64
+00:17:46,675 --> 00:17:53,115
+C1'den sonra C3 var, C3'den sonra C4 var, C4'den sonra C5 var.
+
+65
+00:17:53,556 --> 00:18:11,755
+C5'e bu 4 tane push işlemi yaptıktan sonra ulaştığınızda artık C5'ten gidebileceğiniz bir başka düğüm, ziyaret edilmemiş bir başka düğüm olmadığı için Depth-Source'taki pop adımına uygulayız.
+
+66
+00:18:11,755 --> 00:18:17,755
+C5'i buraya çıkartıyoruz. C5'i çıkarttıktan sonra...
+
+67
+00:18:18,932 --> 00:18:29,452
+C4'e geri dönüyoruz. Bakıyoruz, C4 herhangi bir başka ziyaret edilmemiş gibi yine bağlı mı değil. Onu da pop yapıyoruz. Sonra C3'ü çıkartıyoruz.
+
+68
+00:18:34,771 --> 00:18:37,491
+C3'ü çıkarttıktan sonra elimizde C1 kalıyor.
+
+69
+00:18:38,072 --> 00:18:42,652
+C1 kaldığında C1 çıkartacağız yoksa C2'yi üzerine ekleyecek miyiz?
+
+70
+00:18:47,604 --> 00:18:48,724
+C1, iki kaçak.
+
+71
+00:18:49,663 --> 00:18:50,884
+C1 çıkacak.
+
+72
+00:18:52,963 --> 00:18:58,903
+Çünkü herhangi bir şekilde kendisine bağlı olmayan başka bir elemanı.
+
+73
+00:18:59,063 --> 00:18:59,744
+C1 çıkacak.
+
+74
+00:18:59,824 --> 00:19:01,023
+Daha sonra stek boş alacak.
+
+75
+00:19:02,124 --> 00:19:03,264
+C1'i de buraya koyduk.
+
+76
+00:19:04,403 --> 00:19:07,884
+Sonra ziyaret edilmemiş olan C2'yi ekleyeceğiz.
+
+77
+00:19:08,224 --> 00:19:13,344
+Koş olarak başka bir düğün kalmadı için de tekrar kop edeceğiz.
+
+78
+00:19:14,675 --> 00:19:23,076
+Şimdi sıralamaya baktığınız zaman zaten aslında cevabın kendilerinden ortaya çıktığını görüyorsunuz.
+
+79
+00:19:24,275 --> 00:19:28,516
+Buna pop-off ortaya geliyorum.
+
+80
+00:19:30,715 --> 00:19:41,375
+Pop etme işleminin tersi yönde elde ettiğiniz düğün değerlerini ekrana yazdığınızda aslında
+
+81
+00:19:41,971 --> 00:19:49,971
+Topolojik sortu tamamlamış oluyorsunuz ve hangi dersleri hangi sırayla almanız gerektiğini de ortaya koymuş oluyorsunuz.
+
+82
+00:19:49,971 --> 00:19:55,971
+C2, C1, C3, C4, C5.
+
+83
+00:19:55,971 --> 00:20:07,971
+Bu şekilde öğrenciye alabileceği derslerin ön koşul problemi yaşanmadan hangi sırada olması gerektiğini de...
+
+84
+00:20:08,084 --> 00:20:18,584
+çözerek sunmuş oluyorsun. Bu, Network Service Çatışı'yla yapmış olduğumuz bir çözüm oldu. Şimdi gelelim Decrease and Conqueror'a.
+
+85
+00:20:18,584 --> 00:20:34,508
+Şimdi burada geçtiğimiz seneden çözümler var. Bunları da aynı yerde tutuyorum. Decrease and Conqueror'da nasıl bir yaklaşım sergilemeliyiz?
+
+86
+00:20:36,051 --> 00:21:00,939
+Hatırlarsanız Binary Search'te siz problemin her adımda yarısını ediyordunuz. Eğer tahmin etmek, bulmak istediğiniz rakamdan baktığınız rakam küçükse sağ tarafa, büyükse sol tarafa giderek dizinin yarısının artık bir hedef olmadığını, geri kalan yarısını aramamız gerektiğini...
+
+87
+00:21:01,268 --> 00:21:14,108
+belirtmiş oluyordur. Buna decrease and compute yaklaşımdır. Yani her adımda elimizdeki inputun belli oranda azaltılarak çözüme gidilmesi yaklaşımdır.
+
+88
+00:21:14,108 --> 00:21:18,108
+Tabi divide and compute'dan farkı, divide and compute'da
+
+89
+00:21:18,548 --> 00:21:23,748
+böldüğünüz kısımlarla ilgili her iki tarafla ilgili bir ikiye veriyorsanız iş yapıyordunuz.
+
+90
+00:21:24,288 --> 00:21:31,407
+Decrease and Compure'da artık azalttığınız, gözden çıkardığınız, işimize yaramayacak kısımlarla ilgili bir iş yapmıyorsunuz.
+
+91
+00:21:31,407 --> 00:21:43,688
+Peki, bu doğrultuda biz biraz önceki C1, C2 grafımızı tekrar çizecek olursak,
+
+92
+00:21:49,683 --> 00:21:53,003
+Bu grafta decrease and concture yaklaşımı nasıl üldürebiliriz?
+
+93
+00:21:53,003 --> 00:21:54,043
+Kim soru ne istedim?
+
+94
+00:22:00,339 --> 00:22:03,619
+Hocam bence teker teker çıkartabilirim.
+
+95
+00:22:04,460 --> 00:22:10,239
+Peki, teker teker azaltma yaklaşımını kullanırsak hangi noktadan başlamak?
+
+96
+00:22:11,519 --> 00:22:13,460
+Ok gelmeyen kısım.
+
+97
+00:22:14,279 --> 00:22:16,599
+Yani ön koşulu olmayan ders değil mi?
+
+98
+00:22:16,799 --> 00:22:17,339
+Aynen hocam.
+
+99
+00:22:18,179 --> 00:22:25,379
+Evet, graf açısından değerlendirirsek okun girmediği düğümden aday noktalar başlamak için.
+
+100
+00:22:26,099 --> 00:22:31,859
+problem açısından değerlendirirsek de ön koşulu olmayan dersler olarak adlandırabiliriz.
+
+101
+00:22:31,859 --> 00:22:38,859
+Peki burada hemen yapalım. C1'den başlayalım. C1'i silin.
+
+102
+00:22:38,859 --> 00:22:44,579
+Elimde bu graf kaldı. Hemen C1'i not ettim.
+
+103
+00:22:44,579 --> 00:22:51,460
+Sonra ok gelmeyen, yani ön koşulu olmayan dersin C2.
+
+104
+00:22:53,299 --> 00:22:54,420
+C2 yazdım.
+
+105
+00:22:57,700 --> 00:23:04,220
+Elimde bu graf kaldı. Bu grafta ok girmeyen düğüm olarak C3 var.
+
+106
+00:23:05,340 --> 00:23:06,940
+C3'ü ele düğümde,
+
+107
+00:23:08,940 --> 00:23:14,860
+elimde C4 ve C5 kaldı. Ok girmeyen graf C4 kaldığı için,
+
+108
+00:23:17,500 --> 00:23:20,019
+onu da sırasından,
+
+109
+00:23:20,660 --> 00:23:27,660
+En sonunda C5 kalınca bu şekilde elemanlara hangi sırayla ulaşacağına karar verdim.
+
+110
+00:23:27,660 --> 00:23:33,660
+Tabi biraz önce iki seçeneğimiz vardı başlangıçta. C2 ile de başlayabildim.
+
+111
+00:23:33,660 --> 00:23:46,380
+C1, C3, C4, C5 üzerinden de ilerleyebilirdim. Her ikisi de olası bir topolojik sortu uygun şekilde dizilmiş.
+
+112
+00:23:46,387 --> 00:24:00,747
+ders programı, ikisini de elde edebilirim. Bazı problemlerde bütün seçenekler istenebilir, bazı problemlerde de tek bir sonuç ortaya koymanız yeterli olacaktır.
+
+113
+00:24:00,747 --> 00:24:12,607
+Peki ben bunu yaparken bir matriz verildiğinde, decrease and conclude'a her adımda elediğim düğümden sonra ne yapmamı uygun olur?
+
+114
+00:24:16,500 --> 00:24:18,900
+with adjacency matrix periodinde.
+
+115
+00:24:25,236 --> 00:24:35,556
+Bu matrisim var. Bütün ilişkiler bu matris üzerinde saklanıyor. Bir düğüm elediğim zaman o matris de ne yapmam gerekiyor?
+
+116
+00:24:38,036 --> 00:24:42,516
+O düğümün bağlı olduğu bütün hepsini eksi bir yapabiliriz.
+
+117
+00:24:43,236 --> 00:24:44,236
+Evet, o düğümün...
+
+118
+00:24:45,107 --> 00:25:11,587
+hepsini, eksi bir yapabiliriz, sıfır yapabiliriz. Mutlaka bağlantının koparıldığını gösterecek bir işaret koymamız gerekir. Böylece bütün o düğümün bağlı olduğu, bağlantılar koptuğunda, geriye kalan düğümlerden hangisinin aday seçilebilecek düğüm olduğu ortaya çıkacak. Bir sonraki türlü de bunu değerlendireceğiz. Bu şekilde söyleyebiliriz.
+
+119
+00:25:12,084 --> 00:25:19,403
+Depth First Search yaklaşımı ile bu problemi çözmeye çalıştığımızda karmaşıklık nedir diye sorarsam.
+
+120
+00:25:25,619 --> 00:25:27,059
+vormalanlarına.
+
+121
+00:25:32,084 --> 00:25:33,084
+Hemen geri döneyim.
+
+122
+00:25:34,483 --> 00:25:36,884
+Az önce buralı Depth of Search'ta çözmüştük.
+
+123
+00:25:40,084 --> 00:25:50,084
+Pop sırası ile elde ettiğimiz elemanların tersten yazdırıldığında aslında sonucu elde etmiştik.
+
+124
+00:25:50,084 --> 00:25:55,884
+Buradaki karmaşıklık nedir Topolojik Sort yaptığımızdaki DFS ile?
+
+125
+00:26:01,364 --> 00:26:13,183
+İki tane elimizdeki inputa bağlı olarak karmaşıklık ortaya çıkacaktır. Bir tanesi adjacency matriz farkısı, karmaşıklık DFS'de olduğu gibi
+
+126
+00:26:13,364 --> 00:26:29,604
+Big-Teta V karedir ve düğümü temsil ediyor. Bir diğer seçenek elimizde adjacency list olabilir. O zaman da Big-Teta V artı E yani vertex artı edge, düğüm ve kenar sayılarının toplamı olacaktır.
+
+127
+00:26:29,604 --> 00:26:37,364
+Decrease and compute için ise hesabı siz yapabilirsiniz matris ve e.
+
+128
+00:26:37,971 --> 00:26:44,211
+Eccasisi listelerimiz ise aralarında bir fark var mı? Bunu değerlendirmenizi rica ediyorum.
+
+129
+00:26:45,272 --> 00:26:48,192
+Ve topolojik sort genel olarak bu şekilde çalışıyor.
+
+130
+00:26:48,832 --> 00:26:51,971
+Directive bir graf yapısı oluşturmanız bekleniyor.
+
+131
+00:26:52,852 --> 00:26:55,932
+Grafın asayklik olması problemin çözülebilir.
+
+132
+00:26:56,971 --> 00:27:00,392
+Sayklik olması ise problemin çözülemez olduğunu bize söylüyor.
+
+133
+00:27:00,392 --> 00:27:03,672
+Eğer directed asayklik bir grafımız varsa,
+
+134
+00:27:04,180 --> 00:27:22,420
+Bu graf üzerinde iki farklı yaklaşım uyguladığınızda size hangi sıra ile topolojiyi inceleyip düğünleri seçmeniz gerektirdiğini bu iki yaklaşım ortaya koymuş oluyor.
+
+135
+00:27:23,860 --> 00:27:25,299
+Evet, başka soru sola.
+
+136
+00:27:26,836 --> 00:27:36,796
+Hocam, bu ön koşullarda C1 ve C2, ikisi de C3'ün ön koşulu değil değil mi? İkisinin aynı anda olmasına gerek yok. Sadece biri olsa yeter şeklinde.
+
+137
+00:27:37,635 --> 00:27:43,855
+Burada ikisi de aynı anda derken C3'ü alabilmeniz için C1 ve C2'yi tamamlamış olmanız gerekiyor.
+
+138
+00:27:45,011 --> 00:27:48,271
+Sadece C1'i tamamlasak alamıyor muyuz C3?
+
+139
+00:27:48,271 --> 00:27:49,112
+Alamıyorsunuz, hayır.
+
+140
+00:27:50,192 --> 00:27:59,211
+Yani mesela bir yazılım yükleyeceksiniz, o yazılımdan önce 5 tane daha yazılım yüklemeniz gerekiyor ya özellikle işletim sistemi seviyesinde bu gerçekleşir.
+
+141
+00:27:59,796 --> 00:28:06,516
+Sizden önce ya da mesela mobil programlamada Android programlama yapacaksınız.
+
+142
+00:28:06,596 --> 00:28:10,036
+Dependency'ler vardır. Android Studio üzerinde yazılım yükleneceksiniz.
+
+143
+00:28:10,136 --> 00:28:13,456
+Önce o yazılımların yüklenmesi gerekir. Bunlar birden fazla olabilir.
+
+144
+00:28:13,576 --> 00:28:18,136
+Burada da senin de söylediğim gibi iki koşulunda tamamlanmış olması gerekir.
+
+145
+00:28:18,796 --> 00:28:20,716
+Çünkü C3'e giren iki tane ok var.
+
+146
+00:28:22,579 --> 00:28:24,180
+Anladım hocam, teşekkür ederim.
+
+147
+00:28:24,640 --> 00:28:30,740
+Rica ederim. Aynı şey C5 için de geçerli. C5 için de iki tane ok var.
+
+148
+00:28:31,299 --> 00:28:47,240
+Buradan mesela bir matriz list verildiğinde çok rahat bir şekilde siz bir dersin kaç koşulu olduğunu bilgisini ekrama yazdırabilirsiniz ya da bütün derslerin kaç koşulu olduğunu, en fazla hangi dersin koşulu olduğu bilgileri çok rahat bir şekilde hesaplayabilirsiniz.
+
+149
+00:28:48,339 --> 00:28:50,419
+O zaman devam edelim, başka bir soru yoksa.
+
+150
+00:28:52,199 --> 00:28:53,359
+Gelelim backtracking'e.
+
+151
+00:28:55,659 --> 00:29:04,799
+Backtracking yaklaşımı aslında birçok problemde çok işimize yarıyor, biraz sonra göreceksiniz.
+
+152
+00:29:05,799 --> 00:29:14,519
+Burada Web Persearch algoritmasının pruning, yani budama yaklaşımıyla kullanılması söz konusu.
+
+153
+00:29:15,028 --> 00:29:27,487
+Burada bir labirant olduğunu düşünürseniz, fare başlangıç noktasında, şu noktada, her adımda yeni bir lokasyona geçiyor.
+
+154
+00:29:28,007 --> 00:29:32,847
+Ve bu lokasyonda başka bir yol var mı diye bakıyor. Şu noktaya geldiğinde iki tane yol var.
+
+155
+00:29:33,627 --> 00:29:42,327
+Amacı kapıya ulaşmak, çıkışa ulaşmak. Önce bu yolu tercih ettiyse, buraya gidiyor, buraya geliyor.
+
+156
+00:29:42,784 --> 00:30:08,044
+Buradan, sol tarafa tercih ettiğinde, bir duvarla karşılaşıyor, doğal olarak geri dönüyor. Sonra, burada bir seçeneği daha olduğu için, buraya, buradan da buraya gidiyor, burada da bir duvarla karşılaşınca, önce buraya, sonra buraya, burada da seçenek olmadığı için buraya kadar geri dönüyor. Sonra sağ tarafa gittiğinde aslında doğru, çıkış noktası doğru ilerlemiş oluyor.
+
+157
+00:30:10,451 --> 00:30:36,312
+maze probleminin, yani labirent probleminin çözüm şekli. Biraz sonra göreceğiniz problemlerde, duvar aslında sizin konstrayentlerinizin sağlanmadığı nokta, yani budamayı yapacağınız nokta da belirecek. Normalde duvar size labirente veriliyor ama bundan sonra göreceğiniz problemlerde,
+
+158
+00:30:37,268 --> 00:30:47,768
+O constraint'in sağlanmadığı noktadan itibaren geri kalan seçeneklerin artık seçenekler olmaktan çıktığı kısımlardan itibaren budama yapmamız gerekecek.
+
+159
+00:30:48,367 --> 00:30:56,407
+Sanal duvarımızı da orası oluşturacak ve ondan sonraki giden ekstra yollar varsa ağaç içerisinde o yollara bakmamıza gerek kalmayacak.
+
+160
+00:30:56,407 --> 00:31:01,407
+Bu sayede de DPS ile ağacın en son noktasına kadar giderken,
+
+161
+00:31:02,771 --> 00:31:22,211
+Belirli noktalardan itibaren çözümün oluşma ihtimali ortadan kalktığı için ağacın o noktasından daha ileri gitmemeyi seçeceksiniz ve kendi dolarınızı oluşturup o noktadan sonraki seçenekleri kontrol etmeyeceksiniz. Bu da size önemli bir kontrol ve karşılaştırma avantajı sağlayacak.
+
+162
+00:31:22,675 --> 00:31:27,436
+Normalde biz bütün seçenekleri exhaustive source ile değerlendiriyoruz.
+
+163
+00:31:28,036 --> 00:31:39,816
+Ama buradaki amacımız bütün olasılıkları değerlendirmek yerine belirli noktalardan sonra çözüm olma ihtimali ortadan kalkan seçenekleri artık elemek.
+
+164
+00:31:39,816 --> 00:31:46,516
+Bunun için de bir state space tree oluşturulumuz, durum ağacı oluşturulmamız gerekiyor.
+
+165
+00:31:46,900 --> 00:32:02,300
+Ve bu noktada ağacın içerisinde bize umut vaat eden noktalardan ileri bakmamız, umut vaat etmeyen yani çözüm ihtimali ortadan kalkan noktaların peşinden de gitmememiz gerektiğini bilerek bir çözüm oluşturmamız gerekecek.
+
+166
+00:32:05,652 --> 00:32:18,971
+İlk problemimiz bir küme içerisindeki sayıları kullanarak bize verilen bir değeri o sayılarla elde edemediğimizi ortaya koymak.
+
+167
+00:32:19,532 --> 00:32:28,432
+Burada ilk örneğe baktığınızda elimizde 5 adet rakam var ve biz 9 değerini elde etmek istiyoruz.
+
+168
+00:32:28,432 --> 00:32:32,992
+Ve bunları elde edebileceğimiz kombinasyonlar var mı diye bakıyoruz.
+
+169
+00:32:33,491 --> 00:32:42,771
+Bu kombinasyonlara baktığımızda görüyoruz ki 1, 2, 6 ve 1 ve 8 ile iki farklı şekilde 9 değerini elde edebildiğimizi görüyoruz.
+
+170
+00:32:42,891 --> 00:32:51,491
+Amacımız da ya en az bir sonuç bulmak ya da birden fazla sonuç varsa bütün sonuçları elde etmek.
+
+171
+00:32:51,491 --> 00:32:55,491
+Şimdi buradaki...
+
+172
+00:32:56,915 --> 00:33:16,555
+problemi exhaustive search ile çözmek isteseydik ya da bir başka deyişler, brute force ilk aklımıza gelen yöntemle bütün olasılıkları denerdik. Bütün olasılıkları denildiğimiz zaman burada alt bütün kümeleri denememiz lazım. Tek tek bütün sayıları, çiftli kombinasyonlarını,
+
+173
+00:33:18,784 --> 00:33:34,404
+üçlü kombinasyonlarını, dörtlü kombinasyonları gibi. Bu da toplamda iki üzeri beş eksi bir tane kontrol yapmamız lazım. Beşi de n yaparsak yani genelleştirilsek iki üzeri n eksi bir olacaktır.
+
+174
+00:33:35,059 --> 00:33:44,620
+N5 olduğunda sorun yok, 31 prez denemekte. N10 olduğunda 1000 tane deneme gerekiyor. N100 olduğunda korkunç bir sayıya ulaşıyoruz.
+
+175
+00:33:45,200 --> 00:33:57,819
+Buradaki amacımız, belirli bir değerden sonra artık 9'u elde etme şansımız kalmadıysa, onun peşinden gitmemek. Böylece kontrol sayımızı da azaltmak.
+
+176
+00:34:01,779 --> 00:34:11,079
+Bu karışık verilen sayılarla bu elemeyi yapmak çok kolay olmayacaktır. O yüzden önce bu sayıların sort edilmesi gerekir.
+
+177
+00:34:11,720 --> 00:34:21,739
+Yani küçükten büyüye sıralayarak bunu ele almak daha kolay olacak. Çünkü 1-2-5 topladıktan sonra 7-8'i elde ettiniz.
+
+178
+00:34:26,559 --> 00:34:29,239
+9'u elde edebilir mi sorusunun cevabı? Hayırdır.
+
+179
+00:34:29,659 --> 00:34:34,559
+9'un ötesine geçen bütün toplamaların artık peşinden gitmenize gerek yoktur.
+
+180
+00:34:35,420 --> 00:34:47,720
+Buradaki temel konstruentimiz bize verilen değerdir ve o değeri geçen bir durumda diğer kombinasyonlara hesaplarımızın bir anlamı yoktur.
+
+181
+00:34:48,800 --> 00:34:53,000
+Bu nedenle de ilk etapta verilen sayılar küçükten büyüğe sıralıyor.
+
+182
+00:34:53,652 --> 00:35:02,692
+Örneğe baktığınız zaman, karar ağacımızı oluştururken, durum ağacımızı, şunu yaptığımızı göreceksiniz.
+
+183
+00:35:03,711 --> 00:35:16,692
+Bir başlangıç noktamız var, toplam değer 0. Bu başlangıcı eğer 3 değerini alırsak, artık yeni örnekle çalışıyorum, 3, 5, 6, 7 var ve 15 değerini elde etmeye çalışıyoruz.
+
+184
+00:35:20,563 --> 00:35:27,983
+Bu değeri elde etmek için 3'ü kullanırsam nereye varırım, 3'ü kullanmazsam nereye varıp nereden devam edebilirim.
+
+185
+00:35:27,983 --> 00:35:33,783
+Sola gidenler, o değeri kullanırsam sağa gidenler de o değeri kullanmazsam seçeneği.
+
+186
+00:35:33,783 --> 00:35:35,783
+Sıfırla başladım.
+
+187
+00:35:45,780 --> 00:35:48,780
+Evet.
+
+188
+00:35:48,780 --> 00:35:51,780
+3'ü kullandığımızda 3 değerini elde ediyorum.
+
+189
+00:35:51,780 --> 00:35:56,780
+Sonra 5'i kullandığımızda 8 değerini, 8'i 6 eklediğimde 14 değerini elde ediyorum.
+
+190
+00:35:56,780 --> 00:36:10,780
+Artık 14'e 7 eklediğimde 15'i geçtiğim için, eğer 7'den sonra bir 8, 12, 13 olsaydı artık onların bu sonucu ulaştırma ihtimali olmadığını bildiğim için.
+
+191
+00:36:11,119 --> 00:36:27,219
+A'cı o noktadan itibaren devam ettirmiyorum. Yine 6'yı almasaydım, 7'yi eklediğimde 15 değerini elde ediyorum ve şunu biliyorum ki, ben 3'ü alırsam, 5'i alırsam ve 7'yi alırsam 15 değerini elde edebileceğim.
+
+192
+00:36:30,547 --> 00:36:46,987
+sonuca ulaşmadığını, bu şekilde bütün ağacı tarayarak hangi noktadan sonra durmam gerektiğini ya da hangi sonucun benim için gerçekten o değer sağladığını bu ağacı oluşturarak elde etmiş oluyorum.
+
+193
+00:36:47,847 --> 00:36:55,367
+Buraya kadar sözsüz olan var mı? Çünkü bir sonraki probleme geçeceğim. StateSpaceTree'yi kullanarak backtracking'in gayretmesinden.
+
+194
+00:36:56,371 --> 00:36:59,051
+nasıl çözdüğümüzü anlatıyor olacağım.
+
+195
+00:37:03,731 --> 00:37:05,331
+Peki, devam ediyorum.
+
+196
+00:37:07,551 --> 00:37:12,471
+Gelelim, backtracking yaklaşımını kullanılacağımız bir başka önemli probleme.
+
+197
+00:37:13,011 --> 00:37:15,431
+N-Queen problemi olarak geçiyor literatürde.
+
+198
+00:37:16,351 --> 00:37:23,011
+Burada N tane veziri birbirlerine almayacak şekilde satranç tahtası üzerine konumlandırma problemi.
+
+199
+00:37:23,791 --> 00:37:29,692
+Orjinali 8 vezir ile satranç tahtası 8'e 8 olduğu için.
+
+200
+00:37:30,132 --> 00:37:56,132
+oluşturulan bir problem. Bunu zaten birebir için uygulayamıyoruz. İkiye iki için çözüm yok. Yine üçe üç içinde bir çözüm yok. Çünkü hangi konuma koyarsanız koyun, vezirler, üç vezir koyduğunuzda üçe üçlük tahtaya mutlaka bir birliğini alacak pozisyonda olurlar. Ama dörde dörtten itibaren her bir tahta boyutu için
+
+201
+00:37:56,628 --> 00:38:04,847
+N tane, yani 4-4 için, 4-5 için 5 tane veziri birbirine avlayacak şekilde konumlandırabilirsiniz.
+
+202
+00:38:05,988 --> 00:38:23,548
+Biz bu problemi BruteForce'da çözmeye kalksaydık, 64 tane göze 8 veziri farklı kombinasyonlarla yerleştirecek olsaydık, 64'ün 8'li kombinasyonundan 4 milyar deneme yapmamız gerekirdi.
+
+203
+00:38:24,083 --> 00:38:27,243
+Doğru seçeneklerin hepsini ellerde dinlemek için.
+
+204
+00:38:28,923 --> 00:38:44,783
+Öte yandan, bir kabul yapıp, her satırda sekiz adet, daha doğrusu her satıra bir vezir yerleştirebileceğimiz, yerleştirmemiz gerektiğini kabul edip,
+
+205
+00:38:45,300 --> 00:38:53,940
+Bu koşula göre bir seçim yaptırdık. O zaman 16 milyon adet, 8 üzeri 8 tane deneme yapmamız gerekiyor.
+
+206
+00:38:55,140 --> 00:38:59,100
+Ve tabii ki satırlara tek tek yerleşmesi gerektiğini biliyoruz.
+
+207
+00:38:59,500 --> 00:39:04,480
+Sütunlara da tek tek yerleşmesi gerektiğini bilgisini kullanarak bu işi yaptığımızda,
+
+208
+00:39:04,480 --> 00:39:08,480
+8 taktöre yerlik bir, yani 40 bin...
+
+209
+00:39:08,596 --> 00:39:26,596
+Bir tane deneme yapmamız gerekecekti. Bu da oldukça fazlaydı. Bunun yerine backtracking yaklaşımıyla yani belirli bir noktadan sonra çözüm olmadığı ve o ağacın budamasını gerektiği fikrini kullanarak hareket ettik.
+
+210
+00:39:26,596 --> 00:39:36,460
+Sadece 2057 adımda 8x8'lik bir tahtada 8 queen'i nasıl birbirlerine alınman yerleştirilmesi problemi çözmek için
+
+211
+00:39:36,467 --> 00:39:45,268
+2057 adım yeterli olacaktı bizim için. Peki bunu nasıl gerçekleştiriyoruz? Hemen bakalım.
+
+212
+00:39:46,887 --> 00:39:59,907
+İlk başlangıçta tahta bomboş, sonra ilk birinci göze queen 1'i yerleştiriyoruz. Dörde dörtlük bir tahta üzerine çalışıyoruz. Dört tane queen 1'i yerleştireceğiz.
+
+213
+00:40:00,436 --> 00:40:15,576
+4'e 4'e yerleştirdiğimizde, paro, 4x4'lük bir matrise, sıfırıncı göze, sıfıra sıfıra yerleştirdiğimizde, queen'in, birinci satırda, hemen arkadan gelen, 1'e 0'a, 1'e 1'e yerleştiremeyeceğimizi biliyoruz.
+
+214
+00:40:16,096 --> 00:40:19,256
+O yüzden ondan sonra gelen kombinasyonu notum olarak elemiyor zaten.
+
+215
+00:40:20,336 --> 00:40:27,436
+Ama 1'e 2 noktasına, 0, 1, 2'ye denk geliyor. Yani şurasını göstereyim.
+
+216
+00:40:31,123 --> 00:40:37,603
+Şu noktaya yerleştirme olasılığımız var. Çünkü birbirlerini almıyorlar. Bu iki mezar.
+
+217
+00:40:39,384 --> 00:40:44,863
+Buraya yerleştirdiğimiz haktırda bir sonraki satıra nerelere yerleştirebiliriz diye bakıyoruz.
+
+218
+00:40:45,384 --> 00:40:52,643
+Buraya yerleştiremeyiz üstteki engelde. Buraya yerleştiremeyiz çaprazdaki engelde. Buraya yerleştiremeyiz yan ön üstünde.
+
+219
+00:40:53,088 --> 00:41:07,847
+Vezir ağır buraya da yerleştirmeyiz, yine çantamız da oluyor. Demek ki artık bu noktadan sonra üçüncü ve dördüncü satır için herhangi bir vezir yerleştirme işlemi ihtimali yok. Burada da ağacı buduyoruz ve geri kalan ağacın seçeneklerine bakmıyoruz.
+
+220
+00:41:19,699 --> 00:41:46,699
+Üçüncü satıra nereye yerleştirebileceğiz diye bakıyoruz. Buraya yerleştirebileceğimizi sadece görüyoruz. Diğerlerinin bir olasılık olmadığını biliyoruz, onlarla elendi. Dördüncü satıra baktığımızda artık dördüncü satırda da ilk üç tanesinden sonra herhangi bir vezirin dördüncü satıra yerleştirebileceğini görmüş oluyoruz ve geri kalanları da hiçbir şekilde kontrol etmemize gerek kalmıyor. Demek ki ağacın bu tarafında, sol tarafında herhangi bir...
+
+221
+00:41:46,931 --> 00:41:59,931
+olasılık kalmadı. O zaman buradan geri dönüyoruz ve kök noktasından şimdi bir rezil yerleştirerek yan tarafa ilerleyeceğiz.
+
+222
+00:41:59,931 --> 00:42:09,931
+Tabii şunu söylemekte fayda var. Her zaman ağaçta ikili ağaç olmak zorunda değilim.
+
+223
+00:42:11,827 --> 00:42:18,427
+ikinciye yerleştirdikten sonra üçüncüye yerleştirebiliyoruz. Bu olasılık da var. Doğal olarak dördüncü olasılık da var.
+
+224
+00:42:23,572 --> 00:42:25,572
+Bu kuyruğunu buraya yerleştirebiliyoruz.
+
+225
+00:42:25,572 --> 00:42:27,972
+Bir sonuç buluyorsanız geri kalanına bakmamanız,
+
+226
+00:42:27,972 --> 00:42:31,172
+siz de var, biz de iki sonuçlar istenebilirsiniz.
+
+227
+00:42:31,172 --> 00:42:37,572
+Biz şimdi ikincideyiz. İkinciyi de birinci satırın, ilk satırın ikinci gözüne yerleştirdik.
+
+228
+00:42:37,572 --> 00:42:46,572
+Ve buraya yerleştirebilir miyiz? Hayır. Buraya hayır. Buraya hayır. O zaman geriye bir tek şofası kalıyor.
+
+229
+00:42:46,572 --> 00:42:50,572
+Buraya yerleştirdiğimiz zaman, üçüncü satırda,
+
+230
+00:42:51,027 --> 00:42:57,027
+B'ye yerleştirebiliyoruz. Bu üç vezir de şu anda birbirini alamayacak pozisyonuna yerleşmiş oluyoruz.
+
+231
+00:42:57,027 --> 00:43:09,027
+Son seçeneğimizi de dördüncü sütuna yerleştirdik. Aslında bu dört vezirin birbirini almayacak şekilde konumlandığını görebiliyoruz.
+
+232
+00:43:09,027 --> 00:43:18,027
+Başka bir seçenek var mıdır? Bakmak gerekir. Dördü dördü de belki olmayabilir. Ama beşe beşte, altıya altıda...
+
+233
+00:43:18,612 --> 00:43:34,552
+BD7'de birden fazla konumlandırma şansınız olabilir. Bu seçenekleri de bulmak için geriye kalan ağaç ihtimallerine bakıp, ağacı budayarak seçenek kalmayana kadar devam etmemiz sizden beklenir.
+
+234
+00:43:35,539 --> 00:43:48,340
+Buraya kadar backtracking, yaklaşımının DFS-Vit-Truing ile yapıldığını anlattığımız bu yaklaşımın anlaşılmayan bir kısmı var mı? Soru sormak ister misiniz?
+
+235
+00:43:53,460 --> 00:44:02,819
+Hocam, bu N-Queen problemi çok spesifik bir problem mi yoksa başka bir yerlere de genellenebiliyor mu, uygulanabiliyor mu bu çözüm ya da bu tarz çözüm?
+
+236
+00:44:02,819 --> 00:44:06,819
+Bu state-space yaklaşımı...
+
+237
+00:44:07,155 --> 00:44:27,576
+her yere uygulanabiliyor. Burada kullandığımız da state-space yaklaşımla, aynı zamanda state-space triye alıştırdıkken kullandığımız depth-post-search with cronin yaklaşımı. Yani aslında DFS cronin başka şeylere uygulanabiliyor mu diye sorsan, evet bu yaklaşım biraz önceki subset probleminde olduğu gibi.
+
+238
+00:44:28,179 --> 00:44:40,079
+birçok yere uygulaman bir yaklaşım. Özellikle bütün alt kümelerin değerlendirilmesi gerektiği ve belirli bir constraint'in olduğu problemlerin hepsine uygulamanabiliyor.
+
+239
+00:44:40,079 --> 00:44:52,043
+Ama en kuyum problemi tabii ki spesifik bir problem. Burada bir challenge ortaya atılmış ve bu challenge'da birbirini...
+
+240
+00:44:52,179 --> 00:45:07,819
+diyebilme ihtimali olan vezirlerin, sekiz tane vezirin tahtaya acaba konabilir mi, konamaz mı sorusundan yola çıkılmış bir problem. Bu da temsili olarak BFS Promis yaklaşımında çok sık anlatımında kullanılan bir problem.
+
+241
+00:45:12,467 --> 00:45:13,668
+Yeterli mi cevap?
+
+242
+00:45:15,088 --> 00:45:16,347
+Evet hocam, teşekkür ederim.
+
+243
+00:45:17,347 --> 00:45:21,568
+Burada tekrar tekrar kullanacağımız ve birçok problemde kullanacağımız yaklaşım,
+
+244
+00:45:21,728 --> 00:45:23,608
+Back-to-Search Bit-Proning yaklaşımı.
+
+245
+00:45:23,788 --> 00:45:25,608
+Bunun da adı backtracking.
+
+246
+00:45:25,887 --> 00:45:32,387
+Yani bir çözüm görmediğinizde bir önceki noktaya dönüp,
+
+247
+00:45:32,947 --> 00:45:47,067
+Başka bir nokta varsa onun peşinden giderek çözüm görmediğiniz noktaya kadar ilerlemek ve o seçeneklerin sonunda gerçekten sizin istediğiniz sonuç var mı yok mu bunu elde etmeye çalışmak.
+
+248
+00:45:47,067 --> 00:45:54,107
+Şimdi gelelim biz tahta üzerinde bu.
+
+249
+00:45:54,579 --> 00:46:02,019
+Vezirlerin baktığımızda birbirlerini alıp almadığını görebiliyoruz ama analitik olarak ne yapmamız gerekiyor onu konuşmak.
+
+250
+00:46:02,019 --> 00:46:09,220
+Vezirler yatayda ve ikeyde birbirlerini alabiliyorlar. Bunu biliyoruz zaten. Ama bir de çaprazda alabiliyorlar.
+
+251
+00:46:09,220 --> 00:46:14,980
+Çaprazı nasıl hesaplarınıza bakıyoruz? 0'a 0, 1'e 1, 2'ye 2.
+
+252
+00:46:16,180 --> 00:46:19,780
+Burada bunların birbirlerinden...
+
+253
+00:46:19,840 --> 00:46:23,720
+satır üstünlerinin çıkartılığına, değerlerinin eşit olmalarına bakıyoruz.
+
+254
+00:46:24,340 --> 00:46:32,240
+Aynı yaklaşımı burada kurguladığımızda bu sefer aralarındaki farkın eşit ama değerlerinin ters yönde olduğunu görüyoruz.
+
+255
+00:46:32,659 --> 00:46:45,840
+O zaman bir mutlak değer koyuyoruz ve eğer iki vezirin ya da bir vezirin diğer vezirle kolonlarının farkının, satırlarının farkının
+
+256
+00:46:46,516 --> 00:46:52,196
+mutlak değerleri birbirine eşitse, o zaman bu vezirlerin birbirlerine alabileceğini tespit ediyoruz.
+
+257
+00:46:52,716 --> 00:46:58,016
+Ve eğer böyle bir durum varsa da, o veziri oraya yerleştirmememiz gerektiğini bulmuş oluyoruz.
+
+258
+00:46:58,536 --> 00:47:00,736
+Kulun etme koşulumuz sağlanmış oluyor.
+
+259
+00:47:01,676 --> 00:47:05,636
+Peki, biraz önce burada matrisleri tuttuk.
+
+260
+00:47:06,276 --> 00:47:07,296
+Her bir adımda.
+
+261
+00:47:08,056 --> 00:47:12,976
+Yani, 4'e 4'e 8'e 8'e bu kadarlık bilgiyi tuttuk.
+
+262
+00:47:13,280 --> 00:47:15,280
+Onun yerine hangi bilgiyi tutabiliriz?
+
+263
+00:47:20,659 --> 00:47:29,659
+Biz komple şunu tutmak yerine her düğün noktasında hangi düğünü tutarsak mantıklı olur.
+
+264
+00:47:31,659 --> 00:47:40,659
+Hocam zaten sadece tek sütün kullandığım için hepsini sütün numarasını alsak yeter. Her satır için.
+
+265
+00:47:40,659 --> 00:47:42,607
+İlk aslında tabi siz burada...
+
+266
+00:47:42,608 --> 00:47:58,608
+Yani gördüğünüz için belki ya da ilk aklınıza da bir gelmiş olabilir. Bunu söylediniz ama ilk aklınıza gelecek şey koordinatlarını tutmak olur. Satır ve üstün değerlerini sadece. Satır ve üstün değerlerini tutmak da şöyledir. Mesela elimizde...
+
+267
+00:48:03,827 --> 00:48:08,988
+Q buraya yerleşmiş, Q 2 buraya yerleşmiş, Q 2 buraya, Q 3 de buraya yerleşmiş.
+
+268
+00:48:08,988 --> 00:48:10,268
+O anı, 0-0.
+
+269
+00:48:15,860 --> 00:48:18,659
+Bu şekilde X ve Y konulakları var diyelim.
+
+270
+00:48:19,860 --> 00:48:33,260
+Buraya geldiğimizde 1'e 3 geldiğinde, baktınız, birbirlerini alıyorum diye aralarını tutmadığı için, bir sonraki Q3'ü yerleştirdiniz. Q3'ü geri kalanlarla karşılaştırmak zorundayız.
+
+271
+00:48:33,659 --> 00:48:39,460
+Q3 elimizdeki 0,1, 2'ye 1 değeri.
+
+272
+00:48:40,460 --> 00:48:41,659
+Herhangi bir şekilde...
+
+273
+00:48:41,940 --> 00:48:51,019
+aralarındaki farka baktığınızda kolonların farkıyla, satırların farkı, birbiriyle eşit olan bir tane değer var mıdır?
+
+274
+00:48:52,099 --> 00:48:56,000
+Olmadığı için bunun da buraya yerleştirilebildiğini söylüyoruz.
+
+275
+00:48:56,079 --> 00:49:03,940
+Bunu Q3'ü buraya yerleştirirseniz, Q3'ü buraya yerleştirdiğiniz zaman o zaman 2'ye 2 noktası olacağı için
+
+276
+00:49:03,940 --> 00:49:07,139
+Q3, deniz silelim.
+
+277
+00:49:11,443 --> 00:49:30,443
+O zaman baktığınızda, burada biraz önce kurduğumuz şu kuralı, şurada görmüş olduğunuz kuralı, y-alate ettiği için, bu ikiye ikiye yerleştirmenin kuralı bozduğunu söyleyip, bunun yapılmaması gerekmiyor ve buradan sonuçta kıyılmabilmesi gerektiğini söyleyebilmemiz lazım.
+
+278
+00:49:30,443 --> 00:49:35,443
+Gelelim, x ve y koordinatlarının semirden tutulmasına gerek var mı? Hayır.
+
+279
+00:49:35,936 --> 00:49:42,936
+Çünkü biz zaten satır bilgisini burada gördüğünüz gibi indislerde tutabiliyoruz.
+
+280
+00:49:42,936 --> 00:49:49,936
+Sadece tek bir dizi tutarak buradaki gibi bir matriz tutmamıza gerek yok.
+
+281
+00:49:49,936 --> 00:49:54,936
+Buradaki matrizi hiç tutmamıza gerek yok. Bu zaten çok anlamsız. Bu biraz daha efektif.
+
+282
+00:49:54,936 --> 00:50:00,936
+Ama Space Complex açısından sadece bir dizi tutarak ve o dizide ilgili...
+
+283
+00:50:01,715 --> 00:50:09,715
+Satırdaki vezirin sütun bilgisini saklayarak rahatlıkla hesaplama işini gerçekleştirebiliriz.
+
+284
+00:50:09,715 --> 00:50:18,715
+Bu sayede hangi noktalara bildirilerini almadan yerleştirileceklerini de bulmuş oluruz.
+
+285
+00:50:18,715 --> 00:50:20,715
+Buraya kadar sorusu olan var mı?
+
+286
+00:50:26,739 --> 00:50:27,692
+Thank you.
+
+287
+00:50:33,556 --> 00:51:00,916
+Bu kısmı geçebiliriz. Burada çok önemli bir şey yok. Şimdi gelelim Branch Unbound problemine. Backtracking'de ki fark ettiyseniz temel prensip Depth-first Search'u kullanıp, pull'un ederek belli bir noktadan sonrasını herhangi bir şekilde elemek amacımız.
+
+288
+00:51:01,844 --> 00:51:19,223
+Branch and Found probleminde ise biraz daha farklı olarak problem olası bir sonuca ulaşmaktan çok olası bir optimizasyon problemini çözmek ve belirli koşullar altında maksimizasyon veya minimizasyon yapmak.
+
+289
+00:51:24,115 --> 00:51:50,996
+verimli olacak sonuçlar arasında en optimum sonucu üretmek. Bunun için çok basit bir yaklaşım var. Bu yaklaşımda Branch and Bound'daki elimizdeki işlere çalışabilecek kişilerin ne kadarlık bir maniyetle çalışabileceğini burada ortaya koymak.
+
+290
+00:51:51,380 --> 00:52:10,940
+Şimdi örneğin ABCD kişisi var. ABCD kişisi içerisinde biz bize en az maliyeti oluşturacak işlerin atamasını yapmak istiyoruz. Her kişinin dört farklı işi yapabilmek için bir kostu var.
+
+291
+00:52:11,443 --> 00:52:20,183
+ve her işe de bir kişiyi esane edeceğiz. Bunlar arasındaki en az maliyeti oluşturabilecek eşleşmenin peşindeyiz.
+
+292
+00:52:20,963 --> 00:52:30,383
+Şimdi burada baktığınızda eğer bir constraint olmasaydı bizim en iyi ihtimalle
+
+293
+00:52:31,635 --> 00:52:43,256
+En düşük costumuz 10 olacaktır. Niye? Her satırdaki en küçük değeri seçersen, 2, 3, 1, 4 değerini seçersen, onu elde edeceğim.
+
+294
+00:52:43,796 --> 00:52:58,016
+10'dan daha düşük bir ihtimal söz konusu değil. Demek ki benim bundan sonraki adımda hedefimin 10'a en yakın olan değeri elde etmek olması gerekiyor.
+
+295
+00:52:58,420 --> 00:53:13,920
+Peki, burada nasıl ilerleyebilirim? Burada tek tek her bir elemanı seçtiğimde geri kalan seçenekler arasından en olası hangi seçenekleri alabilirim? Bunlara bakmam lazım.
+
+296
+00:53:14,720 --> 00:53:22,420
+Çünkü bir kişiyi diğer işe atadığımda artık aynı işi başka bir kişiye veremiyorum. Örnek vermek gerekirse…
+
+297
+00:53:23,347 --> 00:53:45,447
+İlk adımda benim lower bound'u onken, yani hiçbir atama yapmıyorken, en iyi ihtimalle on olabilecekken, daha konstantiklerini kullanmadan, A kişisinin birinci işi atanması durumunda, yani 9 değerine verilmesi durumunda, geri kalanlar arasından en iyi olasılığı bulma ihtimalim nedir, ona bakıyorum.
+
+298
+00:53:46,367 --> 00:53:49,507
+9, artık o satırı eledim, sütunu eledim.
+
+299
+00:53:49,903 --> 00:53:55,623
+Geri kalanlar arası içerisinde 9, 3, 1, 4 toplam 17 olabiliyor.
+
+300
+00:53:57,143 --> 00:54:05,903
+A'ya 2'yi verirsem, geri kalanlar arasındaki en iyi seçenek 10, 2, 3, 1, 4 topluyorum.
+
+301
+00:54:05,903 --> 00:54:10,903
+A'ya 3. işi verirsem, geriye kalanlar A'ya 7'yi verdim.
+
+302
+00:54:10,903 --> 00:54:13,903
+İçinde 7'nin altındakileri alamıyorum.
+
+303
+00:54:13,903 --> 00:54:16,844
+Ama onun üstteki alamıyorum.
+
+304
+00:54:16,947 --> 00:54:27,747
+İkinci kişi için 4, üçüncü kişi için 5, dördüncü kişi için de 4 değer olduğu çıkıyor ve en iyi 20 değerine elde ediyoruz.
+
+305
+00:54:28,167 --> 00:54:38,787
+Son olarak A kısına dördüncü kişi verirsem 8 değerindeki, o zaman benim için 8 sütunumun dışındaki değerlerde
+
+306
+00:54:39,315 --> 00:54:45,675
+B için 3, C için 1 ve D için de 6 seçeneği çıkıyor.
+
+307
+00:54:45,675 --> 00:54:58,875
+E o değerini elde ettiğim için Lower Bound olarak ben bunların içerisinden A1, 2, 3, 4 içerisinden A2'yi tercih ediyorum.
+
+308
+00:54:58,875 --> 00:55:03,755
+Çünkü zaten Lower Bound'ı orada yakaladığımda bunların arasındaki en düşük olan bu.
+
+309
+00:55:04,179 --> 00:55:12,179
+Branch and Bound problemini bu şekilde State Space Trim'i genişleterek çözmeye devam ediyorum.
+
+310
+00:55:13,179 --> 00:55:21,179
+Ben buna bir giriş yaptım. Bu hafta da, derste de buna bir giriş yaptık. Geri kalan kısmını önümüzdeki hafta anlatacağım.
+
+311
+00:55:21,179 --> 00:55:27,179
+Branch and Bound yaklaşımına siz de bakarsınız önümüzdeki haftaya kadar.
+
+312
+00:55:27,615 --> 00:55:33,675
+Burada anlattıklarımı yeniden baştan ele alıp bu problemi daha detaylı bir şekilde sizlerle paylaşacağım.
+
+313
+00:55:34,135 --> 00:55:36,915
+Arkasında NP problem nedir?
+
+314
+00:55:37,775 --> 00:55:41,875
+P problem, NP-complete, NP-hard problem ne demektir?
+
+315
+00:55:42,315 --> 00:55:44,975
+Bunları anlatıp dönemi tamamlayacağız.
+
+316
+00:55:45,996 --> 00:55:47,955
+Bu hafta anlatacağımız konular bu kadar.
+
+317
+00:55:48,855 --> 00:55:54,556
+Bunlara ek olarak size söyleyebileceğim backtracking konusunda
+
+318
+00:55:55,072 --> 00:55:57,992
+ele alabileceğimiz hamiltane problemi var.
+
+319
+00:55:58,872 --> 00:56:02,872
+hamiltane problemi var.
+
+320
+00:56:06,099 --> 00:56:09,640
+Buna bakabilirsiniz. Katkı sağlayacaklar size.
+
+321
+00:56:10,480 --> 00:56:12,559
+Onun dışında sorunuz vardır diye soruyorum.
+
+322
+00:56:18,036 --> 00:56:44,596
+bir foto gördük. Diprisen, Confure. Arkasından Web-per-search. [öğrenci], bir sorusu var, birazdan anlatacağım. Topolojik sortu da Diprisen, Confure ve Web-per-search yaklaşımı gördük. Backtracking'de en konum problemini anlattık. Web-per-search ve toning kullanımı dedik. Subsex, some problemini anlattık.
+
+323
+00:56:44,947 --> 00:56:47,947
+dijkstra, bount'a da bitiriş yapmış olduk.
+
+324
+00:56:48,447 --> 00:56:54,447
+Evet, [öğrenci] input sorusuna cevap verildim. Sonra double hash'in yaparken neden link liste kullanıyoruz?
+
+325
+00:56:54,648 --> 00:56:59,447
+Ayrıca bilgi zaten hash tablosuna tutulmuyor. [öğrenci] bilgi hash tablosuna tutulmuyor.
+
+326
+00:56:59,648 --> 00:57:05,148
+Bilginin link liste de tutulduğunu dökümanın içerisinde biraz daha dikkatli okursan yazıyoruz.
+
+327
+00:57:06,248 --> 00:57:09,148
+Bu bir LRO hash modelidir.
+
+328
+00:57:09,364 --> 00:57:12,684
+Bu keş modeli, bu mantığı kullanarak çalışır.
+
+329
+00:57:12,684 --> 00:57:14,684
+Keş de siz...
+
+330
+00:57:14,835 --> 00:57:42,695
+kaçıncı noktada olduğunu saklarsınız. Arkasından da kaçıncı noktada olduğunu bulduktan sonra ilgili link listenin hangi sıklıkla erişildiğine bağlı olarak elemanlarına erişim. İşte en sık erişilen eleman peşte yer alan elemandır. İlk gözde yer alır, ikinci sıklıkla erişilen eleman, ikinci gözde, üçüncü sıklıkla erişilen üçüncü gözde yer alır.
+
+331
+00:57:42,835 --> 00:57:51,175
+Belli bir noktadan sonra keşfendi olduğu için de o sondaki eleman silinir, yeni gelen eleman ilk göze eklenir.
+
+332
+00:57:53,335 --> 00:57:58,055
+Şekil üzerinde neyi göstermemi istiyorsun? Sesini açarsan daha net bir şekilde konuşabiliriz.
+
+333
+00:58:09,940 --> 00:58:17,560
+Mikrofon yok, en telefon, lücayla ve bu sköntüvası, tabiki, var hemen, stasen sana, idevi açı.
+
+334
+00:58:21,204 --> 00:58:28,704
+Ödevi paylaştığım zaman, belki doküman üzerinde daha net bir şekilde konuşabiliriz.
+
+335
+00:58:34,164 --> 00:58:35,904
+Şu an görebildiğini zannediyorum.
+
+336
+00:58:40,115 --> 00:58:58,115
+Burada cache üzerinde kişilerin kimlik, no, absoyat, doğum tarihi ve abes bilgisayarın saklandığını söylüyoruz. Bir kişinin bilgisayarın cache üzerinde olup olmadığını, cache'te saklanıp saklanmadığını, arama yapmak yerine linkli liste üzerinde cache tablosuna tutuyoruz.
+
+337
+00:58:58,115 --> 00:59:06,115
+Ve kimlik, no, linkli liste ve kaçıncı sırada olduğu bilgisini tutuyoruz. Her seferinde linkli listede kıyaslama yapmak yerine
+
+338
+00:59:06,387 --> 00:59:16,788
+kişi kaçıncı sırada ise, linkli listede, beşinci sırada ise ilk dört elemanı hızlıca okuyup, beşinci elemanı hiçbir karşılaştırma yapmadan ekrana yazdırıyoruz.
+
+339
+00:59:17,407 --> 00:59:22,248
+Kimlik nova bilgisi tabii ki hash tablosunda varsa bunu yapıyoruz.
+
+340
+00:59:22,947 --> 00:59:31,268
+Hash tablosunda yoksa, hash'teki eleman sayısı enden az ise, yeni elemanı linkli listenin başına ve hash tablosuna ekliyoruz.
+
+341
+00:59:31,268 --> 00:59:33,587
+Yani yeni eleman geldiğinde en başa ekleniyor.
+
+342
+00:59:34,228 --> 00:59:55,427
+Recent bilgi olduğu için en başta duruyor. Cache dolu ise LinkedIn listenin en sonundaki elemanını siliyoruz ve yeni gelen elemanı ilgili kısımda LinkedIn listenin başına ekleyip hash tablosuna ekliyoruz. Temel prensip bu. Ama başka bir soru varsa cevap olaya çalışayım.
+
+343
+01:00:00,851 --> 01:00:03,731
+Yani bu bir LRU-Cash modeli.
+
+344
+01:00:11,827 --> 01:00:13,288
+Başka bir sorun var mı [öğrenci]?
+
+345
+01:00:20,244 --> 01:00:24,764
+Peki, ben teşekkür ederim sana bu soru için. Başka bir soru soru olan arkadaşlağın mıdır?
+
+346
+01:00:28,532 --> 01:00:30,532
+dönem projesi ile ilgili.
+
+347
+01:00:32,532 --> 01:00:35,532
+Ya da dersle ilgili bir aktarmak istediğiniz bilgi vardır.
+
+348
+01:00:38,032 --> 01:00:43,532
+Peki, o zaman teşekkür ediyorum vakit ayırdığınız, derse katıldığınız için. Hepinize iyi haftalar,
+
+349
+01:00:43,532 --> 01:00:48,532
+sağlıklı seneler, güzel bir sene diliyorum. Kendinize iyi bakın. Görüşmek dileğiyle. Hoşçakalın.

@@ -1,0 +1,1635 @@
+1
+00:00:17,460 --> 00:00:18,539
+Merhaba arkadaşlar.
+
+2
+00:05:19,187 --> 00:05:26,327
+Amaç hocayı host yaptım, ben ayrılıyorum, size iyi dersler diliyorum. Kolay gelsin.
+
+3
+00:05:28,327 --> 00:05:38,168
+Evet arkadaşlar, hoş geldiniz. Bir iki dakika daha bekleyelim. Şu an gördüğüm kadarıyla sekiz kişi var. Eğer kimse gelmesse hemen başlıyor olacağız.
+
+4
+00:07:53,363 --> 00:08:15,123
+Hoşgeldiniz arkadaşlar tekrar. Bu hafta dinamik programlamanın geri kalan iki önemli konusunu birlikte ele alacağız. Bir tanesi edit distance problemi, Levenstein algoritmasıyla çözülüyor. Bir diğeri de longest common, subsequent problemi. İsterseniz hemen başlayalım, ben ekranı paylaşayım.
+
+5
+00:08:27,187 --> 00:08:27,979
+Çel
+
+6
+00:08:37,748 --> 00:08:39,028
+Görebiliyor musunuz?
+
+7
+00:08:42,707 --> 00:08:43,647
+Evet, gözüküyor.
+
+8
+00:08:44,687 --> 00:08:46,107
+Peki [öğrenci], teşekkür ediyorum.
+
+9
+00:08:46,947 --> 00:08:51,947
+Şimdi bir chatten, tamam, teşekkür ederim hocam.
+
+10
+00:08:53,408 --> 00:09:00,587
+Sorunuz olursa beni durdurursunuz, anlamadığınız bir yer olursa ben yine tempolu bir şekilde ders aktarıyor olacağım size.
+
+11
+00:09:02,419 --> 00:09:05,819
+Dediğim gibi herhangi bir sorunuz olduğunda lütfen beni durdurun.
+
+12
+00:09:05,819 --> 00:09:11,819
+Şimdi Edit Distance aslında bir metrik, bu probleme de ismini vermiş bir metrik.
+
+13
+00:09:11,819 --> 00:09:17,819
+İki string arasındaki farkı ölçmek için kullandığımız bir mesafe.
+
+14
+00:09:17,819 --> 00:09:24,819
+Levenstein Distance olarak da geçiyor. Levenstein tarafından 1950'li yıllarda çözülmüş bir.
+
+15
+00:09:24,975 --> 00:09:32,915
+Bu iki stringin birbirine olan mesafesini aslında birçok problemde kullanıyoruz.
+
+16
+00:09:33,056 --> 00:09:39,855
+Özellikle spellchecker olarak bu yazdığınız kelimelerin yanlış olması durumunda,
+
+17
+00:09:39,975 --> 00:09:43,316
+alternatiflerinin, doğru alternatiflerinin neler olması gerektiği konusunda,
+
+18
+00:09:43,995 --> 00:09:48,296
+iki dokümanın birbirinden alıntı yapıp yapmadığını anlamak konusunda,
+
+19
+00:09:49,155 --> 00:09:51,216
+Optic Character Recognition.
+
+20
+00:09:51,668 --> 00:10:11,288
+sistemlerinde tanıma yapıldıktan sonra bir hata olup olmadığını tespit etme varsa, bu hatanın düzeltildiğinde aslında olması gerekenin ne olması gerektiğini ortaya koymak için kullanılan önemli bir algoritma.
+
+21
+00:10:11,696 --> 00:10:36,836
+Burada üç tane case vermişiz. Bir tanesinde bir harf yanlış yazmış birinci case. İkinci case'de bir tane harf unutulmuş, üçüncü case'de bir tane harf eklenmiş fazlada. Tabii görece birinci string'e göre konuşuyorum. Bunlar iki string'in birbirleriyle olan mesafesini etkileyebilecek temel değişiklikler.
+
+22
+00:10:37,268 --> 00:10:44,008
+Bir tanesinde aslında birebir harf diğer stringte de yer alıyoruz. Mesela S'ler, U'lar.
+
+23
+00:10:44,768 --> 00:10:50,048
+İkincisinde gelişebilecek senaryolardan bir harf değişmiş olabiliyor.
+
+24
+00:10:50,228 --> 00:10:53,927
+Burada örneğinde o Ni'de, Malatya örneğinde olduğu bir birinci örnekte.
+
+25
+00:10:54,687 --> 00:10:56,268
+Üçüncüsünde bir harf...
+
+26
+00:10:56,724 --> 00:11:01,324
+Çıkartılmış olabiliyor Sunny'nin tek N ile yazıldığı örnekte.
+
+27
+00:11:02,164 --> 00:11:04,644
+Sonuncusunda da bir harf eklenmiş olabiliyor.
+
+28
+00:11:04,804 --> 00:11:07,903
+İki yeğenin olduğu Sunny örneğinde olduğu gibi.
+
+29
+00:11:08,364 --> 00:11:09,644
+Demek ki case'lerimiz bunlar.
+
+30
+00:11:11,624 --> 00:11:16,364
+Şimdi bunu aslında rekürsif olarak çözebiliyorsunuz.
+
+31
+00:11:16,724 --> 00:11:28,364
+Ama recursive olarak çözmek aslında çok da ucuz bir yöntem değil. Hem function, call, overhead'ınız var hem de bazı işlemleri tekrar yapmanız gerekiyor.
+
+32
+00:11:28,364 --> 00:11:38,604
+Bu yüzden dinamik programlama birçok rekürans bağımsız oluşturulan recursive çözülecek problemde olduğu gibi burada da imdadımıza yetişiyor.
+
+33
+00:11:39,044 --> 00:11:42,364
+O yüzden şunu rahatlıkla söyleyebiliriz. Dinamik programlama...
+
+34
+00:11:43,731 --> 00:11:57,211
+çok büyük oranda rekürsif çözülebilen problemleri çözmek için bize destek oluyor. Ama her rekürsif problemi de dinamik programlamayla çözebileceğimizi söyleyemeyiz.
+
+35
+00:12:00,467 --> 00:12:12,508
+mümkünse alt problemlerin optimum çözümleri, üst problemin optimum çözümleri bulmak için kullanılabiliyorsa, o zaman space kompleksinden beraber edip,
+
+36
+00:12:12,947 --> 00:12:16,067
+dinamik programlama yaklaşımını kullanabiliyoruz.
+
+37
+00:12:16,668 --> 00:12:28,447
+Burada maths ve arts kelimelerinin distance'ına baktığınızda, iki farklı şekilde ele aldığınızda, ikisinde de distance'ın üçü çıktığını görüyorsunuz.
+
+38
+00:12:28,447 --> 00:12:36,447
+Bu da şu demek, iki kelimenin farklı burada belirttiğimiz case'ler dolayısıyla,
+
+39
+00:12:37,364 --> 00:13:04,483
+distance'ları aynı olabilir. Örneğin Mates kelimesindeki M harfi insert edilmiştir arts'a göre. A'lar aynıdır, copy olarak geçer. RT değişmiştir, change olarak geçer. HT değişmiştir, change olarak geçer. S'ler aynıdır. Bu şekilde aşağısına Mates'in yerleştirdiğinizde arts kelimesine totalde 3 değişiklik yapıldığı gözükmektedir.
+
+40
+00:13:05,364 --> 00:13:22,723
+Arkadaşlar, artısın başında boşluk bırakmak yerine, artıs kelimesinin T ile S arasına bir boşluk koyup, H'nin eklendiğini varsayarsanız, M, A ve A, R'nin değiştiğini bir de, işte burada bahsetmiş olduğumuz,
+
+41
+00:13:25,620 --> 00:13:42,120
+h harfindetlerini çözüyoruz, yine distance 3 çıkacaktır. Bu doğrultuda bizim için en küçük distance kaç ise onu alacağımız için iki distance de aynı olduğundan biz 3 de yerine alıyoruz. Peki bu problemi nasıl dinamik programlamayla çözeceğiz? Şimdi birazcık ona bakalım.
+
+42
+00:13:43,759 --> 00:13:45,039
+4 case'den bahsettik.
+
+43
+00:13:45,268 --> 00:13:51,268
+Birinci case kopyalama, yani harfin birebir aynı olmalı. X, Y ile G, J birbirine eşitlemek.
+
+44
+00:13:51,728 --> 00:13:56,408
+Bu arada şimdi söyleyelim, string 1 ile string 2 aynı boyutta olmak zorunda değil.
+
+45
+00:13:58,788 --> 00:14:02,268
+Öte yandan, aralarındaki farkın...
+
+46
+00:14:03,028 --> 00:14:19,108
+En büyük olma durumu aslında uzun kelimeyle doğru orantılı. En uzun kelimeye bağlı olarak diğer stringle mesafe en uzun kelimenin boyu kadar olabiliyor. Bu kısım da dikkate değer bir kısım.
+
+47
+00:14:25,011 --> 00:14:41,051
+küçük farklardan biri boyut farklı ise kelimeler arasında, bir kelime diğerinin içerisinde yer alabileceği için, büyük olanın boyutunu küçük olanın boyutundan çıkararak oluşabilecek en az mesafeyi de böyle bir durumda hesaplamış oluyorsunuz.
+
+48
+00:14:41,051 --> 00:14:43,971
+Şimdi tekrar kezlerimize dönecek olursak,
+
+49
+00:14:44,563 --> 00:15:05,563
+Eğer harfler aynı ise zaten bir cost yok demektir, bir distance, uzaklık yok demektir. O zaman herhangi bir cost değeri kullanmıyoruz. Eğer bir kelimenin harfinde bir değişiklik oluyorsa o zaman bir cost var demektir. Bu cost genel olarak bir olarak hesaba katılır. Bir de...
+
+50
+00:15:07,155 --> 00:15:24,155
+alignment yani hizalama yaparak harfleri bir sağa bir sola kaydırarak aslında araya fazladan bir harfin girmiş olmasından kaynaklı maliyet hesabı yapmak için de insert ve delete'ten faydalanıyoruz.
+
+51
+00:15:24,155 --> 00:15:35,155
+Max ile arts da H harfi insert edilmiş, tam tersi aşağıdaki örnekte de birinci string'e göre baktığımız için T harfi.
+
+52
+00:15:35,155 --> 00:15:45,115
+birinci stringten çıkarılmış olarak düşünürseniz, yine buradaki distance'a cost olarak bir katkıda bulunduğunu görüyorsunuz.
+
+53
+00:15:45,175 --> 00:15:50,435
+Yani toplamda 3 case var, bu 3 case de cost'ta bir katkıda bulunuyor.
+
+54
+00:15:50,515 --> 00:15:53,535
+Peki, biz bunu hesaplarken ne yapacağız?
+
+55
+00:15:54,259 --> 00:15:59,099
+Elimizde iki tane aslında string var ve iki parametre var olarak da düşünebilirsiniz.
+
+56
+00:15:59,259 --> 00:16:11,559
+Bu stringleri biz matris üzerinde, kolon ve satır üzerinde konumlandırıyoruz ve mesafelerine ilk harflerden itibaren bakmaya başlıyoruz.
+
+57
+00:16:15,508 --> 00:16:37,508
+Kelimeden bir harf yoksa mesafe bir olacaktır. Çünkü birinci adımda mesafeler hiç harf yokken sıfırdır. Bir başlangıç noktası belirlemeniz gerekiyor ve siz de buraya sıfırdan başlıyorsunuz. O yüzden köşe gene, ilk köşe gene matrisin sol üstündeki sıfır yazıyoruz. Sonra A harfi geliyor. A harfinin...
+
+58
+00:16:38,163 --> 00:16:42,484
+Diğer stringte hiç eğer bir harf yoksa uzaklığı birdir.
+
+59
+00:16:42,984 --> 00:16:47,564
+R harfi geldiğinde ikidir, T harfi geldiğinde üç, S harfi geldiğinde dörttür.
+
+60
+00:16:47,964 --> 00:16:55,844
+Çünkü bir stringte hiç harf yok, diğer stringte de o stringin boyutu kadar bir mesafe oluşacak demektir.
+
+61
+00:16:56,663 --> 00:16:59,043
+Peki sonra devam edelim, M harfi gelsin.
+
+62
+00:16:59,604 --> 00:17:03,124
+Doğal olarak bu sefer arts kelimesinde hiç.
+
+63
+00:17:03,604 --> 00:17:13,264
+harf verilmediğini düşünelim. O zaman da aşağıya doğru gittiğinizde uzaklığın kelimenin boyu ile doğru orantılı olarak değiştiğini göreceksiniz.
+
+64
+00:17:13,784 --> 00:17:28,184
+Gelelim birebir harfler geldiğinde. Yani elimizde sadece o stringin M ve A harfi olsaydı, ikisi birbirinden farklı olduğu için doğal olarak aradaki mesafenin de bir olduğunu hesaplayacaktık.
+
+65
+00:17:30,932 --> 00:17:33,012
+Şimdi, devam ediyoruz.
+
+66
+00:17:35,532 --> 00:17:38,032
+A'nın yanına R geldi.
+
+67
+00:17:38,972 --> 00:17:40,291
+R de M ile aynı değil.
+
+68
+00:17:40,672 --> 00:17:41,771
+Mesafe 2 oldu.
+
+69
+00:17:41,972 --> 00:17:45,152
+Çünkü bir tarafta string M, diğer tarafta AR.
+
+70
+00:17:45,412 --> 00:17:49,652
+Doğal olarak uzun olan string kadar bir distance oluştu.
+
+71
+00:17:49,751 --> 00:17:50,872
+Çünkü hiçbir eşleşme yok.
+
+72
+00:17:51,231 --> 00:17:52,932
+Sonra T geldi, sonra S geldi.
+
+73
+00:17:55,188 --> 00:18:05,708
+art kelimesiyle olan uzunluğu dört olarak ifade edilmiş oldu bu noktada. Şurayı şöyle gösterecek olursak, tam şurada dört gösterilmiş oldu.
+
+74
+00:18:07,568 --> 00:18:16,388
+Daha sonra devam ediyorum. Bu sefer M, A geldi. Elimizde A var. A, A ile eşleşti.
+
+75
+00:18:16,703 --> 00:18:26,043
+O zaman bizim yaptığımız şey eşleşme varsa, köşegendeki değeri alıp aşağıya taşımak. Burada bir vardı, biri buraya taşıdık.
+
+76
+00:18:26,563 --> 00:18:35,983
+MA'nın A harfine olan uzaklığı bir oldu. MA'nın AR'ye uzaklığı iki oldu, ART'ye üç oldu, ARTS'ye dört oldu.
+
+77
+00:18:36,603 --> 00:18:43,403
+Gelelim T'ye. T'nin A'ya olan uzaklığı herhangi bir eşleşme olmadığı için
+
+78
+00:18:43,827 --> 00:18:52,147
+TA ile eşleşmediği için içlerindeki en küçük değeri alıp üzerine bir cost ekledik. En küçük değer de 1.
+
+79
+00:18:53,127 --> 00:19:01,688
+1'in üzerine 1 ekledik, 2 oldu. 2'in üzerine 1 ekledik. 3 oldu, 3'in üzerine 1 ekledik. 4 oldu. Bunların arasından en küçük değer bu olduğu için bunu aşağıya taşıdık.
+
+80
+00:19:07,955 --> 00:19:20,395
+Eğer sadece olsaydığımız uzaklığı M, A, T'nin iki birim olacaktı. Çünkü A'lar eşleşiyor olacaktı. M ve T'ler insert edilmiş olacaktı. Ve iki birim olacaktı. T'yi R ile kontrol ettik.
+
+81
+00:19:20,884 --> 00:19:36,364
+eşleşmediği, en küçük yine üzerine bir ekledik, iki oldu. TT ile eşleştiği için doğrudan köşe yine aşağıya doğru taşımış olduk. Şimdi gelelim bu keyzleri nasıl aslında anlamlandırdığımıza.
+
+82
+00:19:36,364 --> 00:19:43,564
+Şurada daha iyi göreceksiniz. Birinci keyzimizde copy var demiştik. Copy olduğu için.
+
+83
+00:19:44,051 --> 00:20:00,000
+Bizim için önemli olan bir önceki, daha bu harf katılmadan önceki durum neydi ona bakmak. O durumu da bulunduğumuz noktanın bir önceki köşesinde tutuyoruz. Oradaki değeri doğrudan aktarıyoruz.
+
+84
+00:20:00,000 --> 00:20:24,420
+arıyoruz. Onun dışında 3 case de aynı costa sahip. Yani değişiklik olsa da, insert olsa da, delete olsa da bir cost hesabı gerekiyor ve bu cost da bir olarak ekleniyor. Ama hepsinin temsil ettiği kısım farklı. Köşegenden aşağıya doğru iniyorsanız bir değişiklik olmuş demektir. Birdenbire iniyorsanız. Yukarıdan aşağıya iniyorsanız bir insert olmuş demektir.
+
+85
+00:20:25,011 --> 00:20:35,592
+sütunda soldan sağa ilerliyorsanız bir delete olmuş demektir. Bu üç case'i değerlendirip içlerindeki en küçük değeri alıyoruz.
+
+86
+00:20:35,851 --> 00:20:43,627
+Rekürans pahandısını da şu şekilde göstereceğim şimdi. Eğer bir eşitlik söz konusuysa...
+
+87
+00:20:52,180 --> 00:20:54,380
+içlerinden minimum olan
+
+88
+00:21:06,420 --> 00:21:29,420
+Bu değişiklik doğrudan bir harf değişikliği olabilir ya da bir harfin insert edilmesi olabilir ya da aradan bir harfin çıkartılması olabilir. Bunların içerisinden hangisi benim için en küçükse ben yola onunla devam etmeyi seçiyorum. O yüzden de formülümü oluştururken...
+
+89
+00:21:30,420 --> 00:21:35,920
+Bu üç kostü hesaplayıp onun minimumu alacak şekilde oluşturuyorum.
+
+90
+00:21:36,980 --> 00:21:44,639
+Yine bir başka örnek üzerinden birlikte bu Honda ve Hyundai kelimesinin distance'ını inceleyelim.
+
+91
+00:21:44,720 --> 00:21:50,099
+İlk kitapta baktığınızda distance'ın çok da küçük olacağını düşünmezsiniz.
+
+92
+00:21:50,240 --> 00:21:55,420
+Honda ve Hyundai kelimelerinin aslında birbirinden farklı olmasını bekleriz.
+
+93
+00:21:55,900 --> 00:21:56,860
+Hakikaten öyle mi?
+
+94
+00:21:56,860 --> 00:22:01,860
+Sonuca baktığımız zaman aslında aralarında sadece 3 birimlik bir...
+
+95
+00:22:02,451 --> 00:22:08,632
+mesafe olduğunu görmüş oluyoruz. Nasıl olduğunu biraz daha yakından bakalım. Ben şunu biraz daha büyüteyim.
+
+96
+00:22:13,748 --> 00:22:16,907
+İlk başta herhangi harf yokken mesafe sıfır.
+
+97
+00:22:17,427 --> 00:22:23,688
+H ile H harfi eşleştiği için doğrudan köşegendeki sıfır değerini aşağıya taşıyoruz.
+
+98
+00:22:24,648 --> 00:22:29,728
+Sonrasında H ile Y'ye bakıyoruz. Eşleşmedi.
+
+99
+00:22:30,488 --> 00:22:32,907
+Sıfırın üzerine bir koyuyoruz.
+
+100
+00:22:32,907 --> 00:22:33,888
+Bu arada...
+
+101
+00:22:33,887 --> 00:23:01,268
+Tabi hiç eşleşmeyenleri doğrudan arttırarak yazdım. 0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, 3, 4, 5 diye. Bu zaten default ilk adımda yapılması gereken iş. Sonra H, Y ile eşleşmeyince 2'nin üzerine 1 koydum 3, 1'in üzerine şurada 1 koydum 2, 0'ın üzerine 1 koydum 1. Yani H ile H, Y iki stringi bir araya geldiğinde aralarındaki mesafe aslında 1.
+
+102
+00:23:01,728 --> 00:23:29,248
+Çünkü Y insert edilmiş oraya. Ya da diğer taraftan bakarsanız diğer H'den bir şey delete edilmiş gibi duruyor. O yüzden burası en küçük olan bir değerini aldım. Sonra H ile U'ya baktım. 1, 2, 3'e 1 eklediğimde en küçük değeri yine buradan gelen değer aldım. Bu şekilde devam ettiğimde burayı 1, 2, 3, 4, 5, 6 olarak doldurdum. Sonra O'ya geldim. O, H ile eşit mi? Değil.
+
+103
+00:23:29,599 --> 00:23:51,899
+Eşit olmadığı için elimde 0, 1, 2 var. Onlara 1 eklediğimde en küçük değer 1 olduğu için 1'i aldım. Sonra O ile Y'yi karşılaştırdım. O ile Y'yi karşılaştırdım da eşit değil. 0'a 1 ekledim. 1 değeri geldi. 1'e 1 ekledim. Yine 1'e 1 ekledim. 2 değeri geldi. O yüzden 1 değerini buraya taşıdım.
+
+104
+00:23:56,976 --> 00:24:01,816
+O minimumlardan hangisini seçiyorsam onları ok işaretiyle belirtiyorum.
+
+105
+00:24:03,220 --> 00:24:11,119
+Sonra O, U ile eşit mi değil, buradan 2 geldi, O, N ile eşit değil, sonuna kadar 6'ya kadar gittim.
+
+106
+00:24:11,500 --> 00:24:26,480
+Sonra N geldi, N, H ile eşit değil, 1 geldi, 1 artı 1'den 2 geldi, 1 artı 1'den 2 geldi, sonra N geldi, bu noktada N eşit olduğu için N ile şuradaki yukarıdaki eşit 2'yi aşağıya taşıdım.
+
+107
+00:24:27,240 --> 00:24:29,000
+Sonra 3, 4, 5 diye devam etti.
+
+108
+00:24:29,820 --> 00:24:30,280
+Gelelim.
+
+109
+00:24:31,316 --> 00:24:39,036
+D'ye, D de aynı şekilde burada, buradaki üçlü değerin en küçüğünü alacağı şekilde ilerledi.
+
+110
+00:24:39,556 --> 00:24:44,756
+Buraya geldiğinde D, D ile eşit olduğu için köşek elmedeki değer aşağıya taşıdı, iki olarak taşıdı.
+
+111
+00:24:45,907 --> 00:25:13,807
+2, 3, 4 tamam. Sonra A geldi. A yine en küçük değerleri aşağıya taşıdı. Sonra burada bir eşleşme oldu A ile. Köşe kan değerini eşleşme olduğu için, kosk sıfır olduğu için aşağıya taşıdım. 2, 2, 3, 4 benim buradaki son değerlerim. A ile eşleşmediği için her birine bir ekledim. En küçük değer olan 3'ü elde etmiş oldu. Şimdi Hyundai ve Honda kelimeleri aslında birbirine 3 uzak.
+
+112
+00:25:13,907 --> 00:25:40,687
+her ne kadar çok aynı kelimeler olmasında. Ama baktığınızda O ile Y'nin yerinin değiştiğini, buraya da ki U'nun Honda kelimesinden çıkartıldığını, I'nın da buraya bir şekilde insert edildiğini ya da yine çıkartıldığını kabul edebilirsiniz. Hangi taraftan baktığınıza bağlı olarak değişir. Aslında burada insert değil, delete olması gerekiyor iki taraftan da bakınca.
+
+113
+00:25:41,203 --> 00:25:49,183
+Yine Hyundai ve Honda kelimelerini ele aldığınız zaman yine tam tersi bir şekilde iki tarafında plate olması gerekiyor.
+
+114
+00:25:49,923 --> 00:26:04,844
+Bu noktada biz kelimeleri birbirleriyle parça parça ilk arttan itibaren kıyaslayarak eşitlik olması ve olmaması durumuna göre distanslarını hesapladık.
+
+115
+00:26:05,135 --> 00:26:15,036
+Bu distance'da aslında kelimeler büyüdükçe hesaplanması biraz daha karmaşık, space kompleksisi biraz daha artan bir hal alıyor.
+
+116
+00:26:15,036 --> 00:26:30,455
+Peki bu durumda kelimelerin çok büyüdüğü, stringlerin çok uzadığı karşılaştırma yapacağınız zaman nasıl bir taktik uygulayabilirsiniz bu işi biraz daha optimize etmek için? Onu sorayım.
+
+117
+00:26:39,443 --> 00:26:48,644
+Yani mesela 20 harfli, 30 harfli, 40 harfli kelimeler ya da stringler karşılaştıracaksınız. Ne yaparsınız?
+
+118
+00:26:52,723 --> 00:26:57,763
+işi biraz daha basite indirgemek için ve kompleksliği azaltmak için.
+
+119
+00:27:00,980 --> 00:27:02,559
+Bir fikir yürütmek isteyen var mı?
+
+120
+00:27:04,940 --> 00:27:08,839
+Hocam ben aklıma bir şey geldi de ama uzun sürecek.
+
+121
+00:27:10,920 --> 00:27:13,079
+Dinleyeyim ya uzun süremesi anlatım mı uzun?
+
+122
+00:27:13,900 --> 00:27:18,180
+Yok anlatım uzun değil yani şey time kompleksisi uzun sürecek.
+
+123
+00:27:19,099 --> 00:27:23,140
+Ama biz istiyoruz ki time kompleksisi de biraz azalsın.
+
+124
+00:27:23,923 --> 00:27:31,983
+Yani ben ilk harfle onun ilk harfinin eşleştiği yeri bulurum. Sonra ikinciyle ikincinin öyle devam ederim diye düşünmüştüm.
+
+125
+00:27:32,543 --> 00:27:38,363
+Tamam, peki. Bu bir yaklaşımdır. Ama aslında benim vurgulamak istediğim nokta şuydu. Teşekkür ediyorum hocam.
+
+126
+00:27:40,183 --> 00:27:49,363
+Siz kelimeler büyüdükçe aslında belirli bir yerden sonra mesafenin özellikle...
+
+127
+00:27:50,132 --> 00:27:54,751
+Köşegenin üst kısmında ve alt kısmında aşağılara ve yukarılara doğru arttığını görüyorsunuz.
+
+128
+00:27:54,811 --> 00:27:59,031
+Buralarda 4-5-6, buralarda 5-4 noktasına geldiğini görüyorsunuz.
+
+129
+00:27:59,111 --> 00:28:02,991
+Bu yapı skereyi kelimenin sonuna gittikçe artacaktır.
+
+130
+00:28:03,412 --> 00:28:07,231
+Sizin kalmanız gereken bant aslında köşegenin etrafı.
+
+131
+00:28:07,571 --> 00:28:10,011
+Şu iki, hatta bir çizgi çekelim şuradan.
+
+132
+00:28:11,951 --> 00:28:13,192
+Şöyle çekecek olursak.
+
+133
+00:28:14,451 --> 00:28:18,031
+şu iki banttaki kısımla ilgilenmeniz en akıllıcası olacaktır.
+
+134
+00:28:18,471 --> 00:28:26,831
+Neden böyle? Siz eğer bir kelime, spell checker, işte spell checker'daki bir kelimeyi bulmak istiyorsanız,
+
+135
+00:28:27,251 --> 00:28:30,331
+yazdığınız kelime, yanlış kelime, en yakın kelimeleri bulmak istiyorsanız,
+
+136
+00:28:30,831 --> 00:28:33,892
+belli bir mesafenin ötesindeki kelimelerle ilgilenmezsiniz.
+
+137
+00:28:33,892 --> 00:28:34,892
+Yani...
+
+138
+00:28:35,796 --> 00:28:41,036
+4, 5, 6 uzaklıklık kelimeler zaten sizin hedef kelimeleriniz değildir.
+
+139
+00:28:41,416 --> 00:28:43,696
+O yüzden bir threshold belirleyin.
+
+140
+00:28:44,076 --> 00:28:53,356
+O threshold'un üzerine çıktığınız noktadan itibaren devam etmemeyi tercih ederseniz, örneğin buradaki threshold 2 olsun.
+
+141
+00:28:53,875 --> 00:29:00,395
+2'den büyük kısımlar 3, 4, 5, 6, 7 olacağı için bu kısımla artık ilgilenmemeyi tercih edebilirsiniz.
+
+142
+00:29:01,115 --> 00:29:11,135
+Böylece karşılaştırma yapacağınız ve hesaplama yapacağınız seçenek sayısını oldukça azaltmış ve sadece bu banttaki işleri gerçekleştirmiş olursunuz.
+
+143
+00:29:11,135 --> 00:29:20,976
+Bu da size önemli bir avantaj sağlar. Yani 2 distance ile ilgileniyor olabilirsiniz, 3 distance ile ilgileniyor olabilirsiniz ama 6, 7 distance ile ilgilenmiyorsunuzdur muhtemelen.
+
+144
+00:29:21,392 --> 00:29:35,532
+Bu nedenle bir thresholding uygulayıp belki space kompleksinde bir azaltma söz konusu değil ama time kompleksinde önemli bir kazanç sağlama potansiyeliniz var diye sorularınız var diye sorayım.
+
+145
+00:29:43,380 --> 00:29:48,280
+Peki, herhangi bir sorunuz yok. Şöyle yapalım.
+
+146
+00:29:54,451 --> 00:29:57,451
+Pardon, çok ilham etti.
+
+147
+00:30:05,268 --> 00:30:16,488
+Evet, şimdi tabii bu Edit Distance konusunu bitirmeden önce Longest Common Subsecure'sa geçeceğiz ama şunu söylemekte fayda var.
+
+148
+00:30:17,228 --> 00:30:23,188
+Edit Distance problemi aslında spell checker'larda kullanılıyor dedik.
+
+149
+00:30:24,788 --> 00:30:30,208
+Kopya, dökümanlar, alıntılar noktasında kullanılıyor dedik.
+
+150
+00:30:30,827 --> 00:30:32,148
+OCR, karakter.
+
+151
+00:30:32,720 --> 00:30:35,720
+tespitinde yapılan hataları gidermek için kullanılıyor dedik.
+
+152
+00:30:35,840 --> 00:30:40,200
+Double kit, double kit detection için kullanılıyor diyebiliriz.
+
+153
+00:30:40,740 --> 00:30:42,059
+Bunlar önemli noktalar.
+
+154
+00:30:42,720 --> 00:30:46,059
+Bizim için bir optimizasyon problemi.
+
+155
+00:30:46,708 --> 00:30:55,208
+distance'ı minimize etmeye çalışıyoruz. İki string arasındaki minimum distance nedir? Bunu hesaplamaya çalışıyoruz.
+
+156
+00:30:55,208 --> 00:31:04,468
+Öte yandan, longest common subsecure problemine geçtiğimiz zaman ise, tam tersi bir amaçla yol almaya başlayacağız.
+
+157
+00:31:05,028 --> 00:31:14,208
+O da, iki verilen, özellikle string arasındaki tekrar eden,
+
+158
+00:31:15,155 --> 00:31:32,155
+birbirleriye örtüşen paten namleler, bunları bulmayı amaçlıyoruz. Yani bir maximization problemi haline dönecek. Biraz önceki minimization problemi. Daha çok bioinformatik alanında gen dizilimlerine kullanılan bu yaklaşım, yazılım...
+
+159
+00:31:32,468 --> 00:31:43,947
+mühendisliğinde de özellikle yazılımların birbirleriyle ne kadar örtüştüğü noktasında kullanılan bir başka yaklaşım.
+
+160
+00:31:44,647 --> 00:31:50,947
+Buradaki örneğe bakacak olursanız, ATCTGAT verilmiş bir string var.
+
+161
+00:31:53,460 --> 00:32:05,539
+A verilmiş bir başka sekvens var. Şimdi baktığınızda burada bir önceki problemden farklı olarak şunu rahatlıkla söyleyebiliriz.
+
+162
+00:32:05,539 --> 00:32:17,839
+Burada aralara girmiş olan başka harfler örüntüyü bozmuyor. Bu ne demek?
+
+163
+00:32:18,355 --> 00:32:22,995
+Örneğin X ile Y arasında baktığınızda T, C, T, A uyumu var.
+
+164
+00:32:24,536 --> 00:32:25,855
+T, C, T, A.
+
+165
+00:32:26,395 --> 00:32:31,596
+X'te T var önce, sonra C, sonra T, sonra G'yi atlıyorsunuz, sonra A var.
+
+166
+00:32:31,995 --> 00:32:33,276
+Aynı şey Y içinde geçerli.
+
+167
+00:32:33,855 --> 00:32:39,935
+T var, G'yi atlıyorsunuz, C var, A girmiş araya, yine T var, yine A var.
+
+168
+00:32:46,387 --> 00:33:05,728
+kesintisiz bir şekilde olmasını gerektirmiyor. Eğer bu problem Longest Common Substring problemi olsaydı, o zaman aralardaki bu giren bilgiler işi bozacak ve biz bunları örtüşen örgütü olarak adlandırmayacaktık.
+
+169
+00:33:05,728 --> 00:33:11,631
+Ama burada önemli olan, araya bir şey giyirse de bu sekansın...
+
+170
+00:33:11,632 --> 00:33:17,572
+aynı şekilde devam ettiği bir paten olursa bu patenleri bulmak olacak hedefimiz.
+
+171
+00:33:19,291 --> 00:33:29,031
+Tabii böyle bir problemde iki string arasında tek bir subsequence aynı boyutta olmak zorunda değil.
+
+172
+00:33:29,940 --> 00:33:52,940
+birden fazla subsequence aynı boyutta olabilir. Burada gördüğünüz gibi aynı stringleri incelediğinizde bu sefer tgat'nin de bir alternatif olabildiğini görüyorsunuz. O yüzden ikisi de aynı boyutta olduğu için longest common subsequence'in boyutu 4 ama ortaya çıkan subsequence'in...
+
+173
+00:33:53,619 --> 00:34:07,799
+sayısı ise iki olarak karşımıza çıkıyor. Biri TCTA, biri de TGAT olarak. Bizim amacımız da verilen iki stringteki bu örüntü sekansını yakalamak olacak.
+
+174
+00:34:07,799 --> 00:34:10,039
+Gelelim.
+
+175
+00:34:12,532 --> 00:34:25,391
+Bir başka örneğe, kosalak kelimesine bakın. Burada farklı farklı sub-sequence'lar var. Örneğin, call da bir sub-sequence, call da bir sub-sequence, call da bir sub-sequence.
+
+176
+00:34:25,391 --> 00:34:30,391
+Yani sub-sequence'dan kastettiğimiz şey, bu...
+
+177
+00:34:30,996 --> 00:34:41,735
+string içerisinde aradaki bazı harfler çıkartılarak, atlanarak elde edilebilecek sekansların hepsine vermiş olduğumuz isim.
+
+178
+00:34:42,576 --> 00:34:44,756
+Peki problemi nasıl formunuza edeceğiz?
+
+179
+00:34:45,576 --> 00:34:53,976
+Şimdi burada gördüğünüz gibi x ve y stringlerinin boyutları yine m ve n.
+
+180
+00:34:55,219 --> 00:35:03,899
+Örnek vermek gerekirse B, A, C, D, B, B, D, C, B, bizim iki tane stringimiz olsun.
+
+181
+00:35:05,420 --> 00:35:17,000
+Ve bu stringleri kullanılarak, dinamik programlarından da faydalanarak, bizim için örtüşen en uzun örüntüyü, sekansı bulmak istiyoruz.
+
+182
+00:35:17,619 --> 00:35:21,979
+Nasıl hareket etmemiz gerekiyor, bir ona yakından bakalım.
+
+183
+00:35:22,384 --> 00:35:34,884
+Fikri olan var mı? Mesela burada matris üzerinde bazı sayılar var. Nasıl bir yaklaşım da elde edilmiş olabilir?
+
+184
+00:35:42,356 --> 00:36:05,696
+Mesela B harfi var. B harfini B, D, C, B'nin B'siyle eşleştiriyoruz. Eşleşmiş. Eşleştiği için doğal olarak 1 yazdık. Sonra B harfi D ile eşleşmiş mi? Hayır. C ile eşleşmiş mi? Hayır. Ama B harfi bir kez daha B ile eşleşmiş. Neden 2 yazmıyoruz da 1 yazıyoruz oya?
+
+185
+00:36:10,228 --> 00:36:17,448
+Çünkü önceden B'yi almış oluyoruz. O B sadece birinci üstündeki B ile karşılaştırılıyor.
+
+186
+00:36:18,128 --> 00:36:33,288
+Evet, teşekkür ediyorum [öğrenci]. Şimdi B harfi ve B, D, C, B stringi birbirleriyle sekansları ölçüşüyor mu, ne kadar bir ölçümesi var diye baktığınızda zaten tek bir harf olduğu için
+
+187
+00:36:34,099 --> 00:36:41,460
+5 tane de B olsun diğer stringte, 1 tane örtüşme olasılığı var. O yüzden 1 olarak hesaplanıyor.
+
+188
+00:36:41,980 --> 00:36:49,380
+Şimdi daha yakından bakacak olursak, bir öncekisinde Edit Distance'da köşegeni 0 ile başlatmıştık.
+
+189
+00:36:49,500 --> 00:36:56,940
+Diğer değerleri ilerledikçe 1 arttırmıştık. Burada hem satırı hem de sütunu 0'larla dolduruyoruz.
+
+190
+00:36:56,940 --> 00:37:01,659
+Çünkü eğer bir harf yok ise başlangıç noktasında,
+
+191
+00:37:02,195 --> 00:37:19,935
+Örtüşme olasılığı da yoktur. Örtüşme ihtimali yoksa da örtüşmenin değeri sıfır olarak yazılacaktır. O yüzden satır ve süsünleri sıfırlıyoruz. Sonra bakıyoruz. Örtüşme varsa mutlaka bize katkısı olacağı için bir cost değeri bir olarak işin içine katıyoruz.
+
+192
+00:37:20,851 --> 00:37:39,692
+Devam ettiğimizde BA'da A'ya baktığımızda AB ile eşleşmiyor. AD ile eşleşmiyor, yine 1. Sonra BAC'ye geliyor. BAC'nin C'sini aldığımızda C ile eşleştiği noktada 2 eşleşme olduğu için, önceden 1, C'ler de eşleştiği için değerin üzerine 1 ekliyoruz.
+
+193
+00:37:43,315 --> 00:37:51,795
+3 değeri oluyor. Çünkü 2 tane bunu sağlayan sekans var. Biri BCB, diğeri de Bursa, Diyarbakır, Bursa.
+
+194
+00:37:52,375 --> 00:37:55,935
+Peki, biz bunu nasıl formülize ediyoruz? Şimdi ona bakalım.
+
+195
+00:37:58,795 --> 00:38:08,415
+Aslında teknik olarak 3 tane operasyon var. Bu 3 tane operasyonun ismi AD, skip X ve skip Y.
+
+196
+00:38:09,268 --> 00:38:17,788
+et yani eşleşme varsa o harfi common, subsecureusun içerisine ekle anlamında kullanılıyor.
+
+197
+00:38:18,448 --> 00:38:24,168
+Eğer eşleşme yoksa o harfi x'de ya da y'de atla anlamına geliyor.
+
+198
+00:38:25,087 --> 00:38:34,427
+Biz eşleşmeleri bulmak için farkındaysanız aslında akıldan yaparken önce b'ler eşleştikten sonra devam ediyoruz.
+
+199
+00:38:34,427 --> 00:38:35,427
+A'yı alıyoruz.
+
+200
+00:38:35,987 --> 00:38:47,347
+diğer bütün D, C, B'yi geziyoruz. Hepsini atlaya atlaya gidiyoruz. Hiçbir eşleşme yok. Sonra C'yi alıyoruz B, A, C, D, B'den. C'yi aldıktan sonra aslında
+
+201
+00:38:47,856 --> 00:39:08,155
+B'den sonra D'yi skip ediyoruz. Sonra bakıyoruz ki C eşleşmiş. Eşleştiği zaman onun değerini bir arttırıyoruz. Yani hem X stringinde hem de Y stringinde eşleşme olmadığında atlayarak gideceğimiz iki olasılık var. Bu iki olasılık da eşleşme olmamın durumunda gerçekleşiyor.
+
+202
+00:39:08,500 --> 00:39:17,260
+Peki, biz bu iki tane eşleşme olmama durumunu aslında nasıl değerlendiriyoruz? Bir ona bakalım önce.
+
+203
+00:39:21,907 --> 00:39:25,988
+İyi ve yani satır ve sütunları sıfırlamıştık bunu yaptık zaten.
+
+204
+00:39:28,387 --> 00:39:30,867
+Burada da görüyorsunuz bunu.
+
+205
+00:39:39,155 --> 00:39:49,255
+Eşleşme durumu varsa, x'in y, j'ye eşitse, o zaman köşegendeki değer en iyi değer olduğu için onun üzerine artı bir ekliyoruz.
+
+206
+00:39:50,735 --> 00:39:59,235
+Keyzlerimizden biri, eğer eşleşme durumu varsa bu bize katkı sağlayan değeri toplama eklemek.
+
+207
+00:39:59,235 --> 00:40:03,235
+Eğer eşleşme yoksa,
+
+208
+00:40:03,668 --> 00:40:12,668
+Geriye iki seçenek kalıyor. Ya x'den atlayarak o noktaya gelmişsinizdir, x stringinde bir harfe atlamışsınızdır ya da y stringinde bir harfe atlamışsınızdır.
+
+209
+00:40:13,208 --> 00:40:23,668
+x stringinde atlamak için atladıysanız yukarıdan geliyorsunuzdur, y stringinde bir tane harf atladıysanız o zaman soldan geliyorsunuz demektir.
+
+210
+00:40:24,368 --> 00:40:25,168
+Bu ne demek?
+
+211
+00:40:27,887 --> 00:40:29,387
+Şurada geri dönelim.
+
+212
+00:40:38,612 --> 00:40:43,032
+matris üzerinden yeniden ilerleyelim.
+
+213
+00:40:44,212 --> 00:40:47,132
+Şimdi, B, B ile eşleştiği için,
+
+214
+00:40:48,072 --> 00:40:50,532
+diagonaldeki değere 1 ekledim ve buraya taşıdım.
+
+215
+00:40:51,512 --> 00:40:55,252
+Yani aslında, şunu yapmış oldum.
+
+216
+00:40:56,931 --> 00:40:58,912
+Bir ok işareti yapayım.
+
+217
+00:41:00,192 --> 00:41:01,192
+Buradan gelmiş oldum.
+
+218
+00:41:02,912 --> 00:41:05,552
+Sonra, B, D ile eşleşmediği için,
+
+219
+00:41:06,099 --> 00:41:25,399
+0 ve 1 değerleri var elinde. 1 değeri 0'dan büyük olduğu için, şurada görmüş olduğunuz şu 1 değeri, şuradaki 0'dan büyük olduğu için onu buraya taşıdım. Dedim ki, o zaman ben buradaki D değerini skip ediyorum.
+
+220
+00:41:27,027 --> 00:41:33,747
+Bir başka deyişle B'nin burada bulunmayan bir harfi var. Onunla eşleşmeni için buraya taşıyorum.
+
+221
+00:41:34,608 --> 00:41:42,807
+Sonra C'ye baktım. Yine bir eşleşme söz konusu değil. Yukarıdan sıfır geliyor. Soldan bir geliyor. Biri taşıdım.
+
+222
+00:41:43,387 --> 00:41:53,068
+B ile eşleşme durumu var. Bu sefer eşleşme olduğu için ben köşe gene bir ekledim ve bunun değerini buraya bir olarak yazdım.
+
+223
+00:41:53,780 --> 00:42:14,560
+Devam edelim, aşağılara inelim biraz. B, A, C'deyim. C üzerinde ilerliyorum. B ile eşleşmiyor. Eşleşmediği için sol ve yukarıdaki değere baktım. En büyük değer hangisisi onu aşağıya taşıdım. Yine keza buraya geldiğinde C, D ile eşleşmediği için 1, 1, ikisi de aynı olduğu için bir değerini taşıdım.
+
+224
+00:42:15,092 --> 00:42:21,672
+C'ler eşleştiği için soldan şu köşeden gelen değere bir ekledim ve aşağıya taşıdım.
+
+225
+00:42:22,172 --> 00:42:36,652
+Bu şekilde gelen kezim eşleşiyorsa köşe gene bir ekleyerek, eşleşmiyorsa yukarıdan ya da soldan gelen değer hangisi büyükse onu alıp işleme koyarak
+
+226
+00:42:37,748 --> 00:42:42,648
+Bu iki string arasındaki en uzun subsecuansi bulmuş oldum.
+
+227
+00:42:43,028 --> 00:42:46,007
+Peki bu subsecuansi takip etmenin yolu nedir?
+
+228
+00:42:46,528 --> 00:42:48,068
+Burada gördüğünüz oklardır.
+
+229
+00:42:48,708 --> 00:42:57,547
+Hangi taraftan geliyorsanız o oku sizin ilgili noktada işaretlemeniz lazım.
+
+230
+00:42:58,195 --> 00:43:05,675
+Burada bir matriz oldu ve üzerinde biz kağıt üzerinde eşit işaretlediğimiz için rahatlıkla anlaşılıyor.
+
+231
+00:43:05,755 --> 00:43:07,695
+Ama bilgisayarda ne yapabiliriz?
+
+232
+00:43:08,115 --> 00:43:18,675
+Bir başka matriz tanımlayıp hangi gözden geldiysek o gözü işaretleyip aslında şurada elde ettiğimiz birden fazla keysi.
+
+233
+00:43:19,347 --> 00:43:32,727
+takip edebilmek için sona ulaştığımızda bu okları burada işaretlediğimiz gibi ilgili değerleri de ikinci bir matriste işaretlerin şansına sahip olabiliriz.
+
+234
+00:43:33,867 --> 00:43:46,787
+Burada şu kısımdaki algoritmaya baktığınızda i0'dan farklı olduğu sürece, i0'dan farklı olduğu sürece yaptığınız şey şu.
+
+235
+00:43:47,443 --> 00:43:52,644
+B, J matrisine bakıyorsunuz. Bu size bahsetmiş olduğum ikinci matristen bahsediyorum.
+
+236
+00:43:53,043 --> 00:43:57,804
+ARCASE ADD ise o case'i alıyorsunuz.
+
+237
+00:43:57,903 --> 00:44:04,744
+ADD olduğu için ilgili harfi alıp Longest Common Subsecure's yeni string'inize ekliyorsunuz.
+
+238
+00:44:05,123 --> 00:44:08,503
+Ve her iki tarafta da birer azaltım yapıyorsunuz.
+
+239
+00:44:08,503 --> 00:44:13,003
+Çünkü başlangıç noktanız şuradan olacak şekilde yani matrisin.
+
+240
+00:44:13,311 --> 00:44:21,952
+en alt gözünden başlayacak şekilde olması gerekiyor. Çünkü oradan siz aslında sonuca ulaştınız. Bir önceki haftada da bunu konuşmuştuk.
+
+241
+00:44:22,492 --> 00:44:28,012
+Napsack probleminde de hangi ürünlerin alındığını bulmak için köşeden başlıyorduk.
+
+242
+00:44:29,452 --> 00:44:37,932
+Eğer Case Skip X ise, yani X üzerine atladıysanız yukarı çıkıyorsunuz, Y'ye azaltıyorsunuz, J'ye dokunmuyorsunuz.
+
+243
+00:44:38,324 --> 00:44:45,484
+Eğer Y üzerinde bir atlama yaptıysanız, sola doğru gidiyorsunuz, J'yi bir azaltıyorsunuz.
+
+244
+00:44:45,824 --> 00:45:03,624
+Bu sayede burada görmüş olduğunuz matrisde olduğu gibi hangi kez geldiyse ilgili Longest-Cumseq'in oluşturan değerleri alma şansına ve günün sonunda da bu sekansı kullanıcıya gösterme şansına sahip oluyorsunuz.
+
+245
+00:45:06,324 --> 00:45:13,944
+Skip Kaya 2 gibi değerler verip bu işi biraz daha kodlama noktasında kolaylaştırma şansına sahipsiniz.
+
+246
+00:45:14,464 --> 00:45:18,324
+Bu da yine bioinformatik alanında çok sıklıkla kullanılan bir problem.
+
+247
+00:45:18,584 --> 00:45:28,324
+Özellikle günümüzde örnek vermek gerekirse COVID varyantlarının tespit edilmesinde varyantın tipinin sizdeki...
+
+248
+00:45:30,132 --> 00:45:57,272
+ortaya çıkan dizilimle uyuşup uyuşmadığını anlamak için bu tür bir kontrol yapılıyor ve eşleşme belirli bir treş olduğunu üzerinde sağlamırsa size bulaşan virüsün hangi varyant olduğunun da tespiti bu şekilde yapılmış oluyor. Temel biyolojik daha detayları vardır ama yaklaşımı bu şekilde not edebiliriz. Buraya kadar sorusu olan var mı?
+
+249
+00:45:59,987 --> 00:46:01,307
+Sesim geliyor muydu hocam?
+
+250
+00:46:03,268 --> 00:46:04,387
+[öğrenci] duyamadım.
+
+251
+00:46:05,447 --> 00:46:06,528
+Sesim geliyor muydu hocam?
+
+252
+00:46:07,048 --> 00:46:07,268
+Geldi.
+
+253
+00:46:08,387 --> 00:46:23,007
+Bu iki string atlama metodu maksimum üzerinden ilerlemekte. Bunun dışında da ilerleme metodu var mıydı acaba?
+
+254
+00:46:24,820 --> 00:46:44,080
+Şimdi bir eşleşme olması durumu var. Eşleşme olursa zaten o bizim için istenilen bir durumdur. Bir de eşleşme durum var. Aslında iki keyiz var. Ama eşleşmeme durumu olduğunda ya string, birinci string üzerinde atlayarak ilerlemişizdir.
+
+255
+00:46:44,596 --> 00:47:01,596
+İkinci string üzerinde atlayarak ilerlemişizdir. Bir daha göstermek gerekirse, bu ilk string üzerine B'ler eşleşti. B'ler eşleştikten sonra A geldi. Yerin üzerinde atlayatlayı gittiğinizde herhangi bir eşleşme yok. Ama A'yı skip edip...
+
+256
+00:47:02,195 --> 00:47:06,076
+D'yi de skip ettiğinizde C'lerin eşleştiğini görüyorsunuz.
+
+257
+00:47:06,596 --> 00:47:14,895
+İşte bu iki keyzin değerlendirilmesi bize eşleşme olmaması durumunda sonucu nasıl elde edeceğimizi söylüyor.
+
+258
+00:47:15,015 --> 00:47:16,375
+Bunun dışında herhangi bir keyz yok.
+
+259
+00:47:21,043 --> 00:47:33,523
+Aşağıda maksimum iki de bu eşleşme maksinde maksimum değerler üzerinden bir karşılaştırma yapıları. Ben yanlış görmeye düşünüyorum.
+
+260
+00:47:33,523 --> 00:47:38,643
+Pardon bir saniye. Çok fazla kaydı.
+
+261
+00:47:53,300 --> 00:47:54,500
+Ağış aç gelmeyelim.
+
+262
+00:48:07,668 --> 00:48:11,268
+Şöyle ilerleyeyim, belki daha rahat oraya geleceğim.
+
+263
+00:48:15,027 --> 00:48:19,587
+biraz mouse'a karışıklarsak o yüzden okla ilerliyorum.
+
+264
+00:48:35,251 --> 00:49:00,172
+Evet, şimdi gelmek üzereyim [öğrenci], senin söylediğin yere. Burada 3 case var. Bir tanesi eşleşme durumunun, diğeri eşleşmeme olmasında durumun. Eşleşmeme olduğunda ya yukarıdan gelmişsindir, x'i skip etmişsindir ya da y'yi skip etmişsindir, soldan gelmişsindir. Bunlardan hangisi daha yüksek değer sana taşıyorsa sen onu almayı tercih ediyorsun. Durum bu.
+
+265
+00:49:01,972 --> 00:49:07,972
+Ben sordum da yüksek değer taşımada durumunda başka bir karşılaştırma metodu var mı diye soracağım.
+
+266
+00:49:08,772 --> 00:49:12,132
+Yüksek değer taşımada başka bir karşılaştırma var mı?
+
+267
+00:49:12,532 --> 00:49:14,472
+Dışında, yüksek değer dışında.
+
+268
+00:49:17,532 --> 00:49:19,132
+Başka bir karşılaştırma yok, hayır.
+
+269
+00:49:19,932 --> 00:49:20,492
+Yok mu, tamam.
+
+270
+00:49:21,012 --> 00:49:21,432
+Yok yok.
+
+271
+00:49:21,552 --> 00:49:22,012
+Teşekkür ederim.
+
+272
+00:49:22,672 --> 00:49:23,152
+Rica ederim.
+
+273
+00:49:23,992 --> 00:49:26,152
+Çünkü bizim için önemli olan...
+
+274
+00:49:26,996 --> 00:49:35,235
+Bir önceki küçük substring'den gelen substring'den hangisi daha yüksekse, ben onun peşinden gitmeyi tercih ediyorum.
+
+275
+00:49:35,235 --> 00:49:41,956
+Çünkü maksimize etmeye çalışıyorum. Alt problemin maksimumu benim için üst problemin de maksimumu elde etmemi sağlıyor.
+
+276
+00:49:41,956 --> 00:49:45,635
+Peki, başka soru soru soru var mı?
+
+277
+00:49:48,052 --> 00:49:58,491
+Önceki örnekte şey yapmıştık, yani en kısa mesafeyi bulmuştuk. Onda da yolu belirlemek için yine ikinci bir matriz mi tutuyoruz buradaki gibi?
+
+278
+00:50:00,311 --> 00:50:03,311
+Şimdi şöyle, hemen oraya da geri gelelim.
+
+279
+00:50:06,835 --> 00:50:15,475
+Burada matriz tutmadan da oluşan değerler üzerinden hesaplama yaparak aslında geriye doğru gidebilirsiniz.
+
+280
+00:50:15,475 --> 00:50:22,475
+Çünkü burada baktığınızda 3 değerini elde ettiğiniz noktada en küçük değeri hangi...
+
+281
+00:50:23,219 --> 00:50:50,219
+değerden elde ettiğinizi toplama çıkarma yaparak elde edebilirsiniz. Üçten bir çıkardığınızda iki değerini hangisini elde ediyorsanız önce köşegeni kontrol edersiniz. Köşegenden gelmediyseniz o zaman üçlü kontrol yaparsınız. Mesela burada baktığınızda 3-3'e eşit burada. 3-2 var, 3-4 var. Şimdi A'lar
+
+282
+00:50:50,708 --> 00:51:04,447
+A ile I birbirine eşit mi? Değil. O zaman köşegenden gelmiş olma ihtimalimiz ortadan kalktı. O zaman bu üç tane sınır arasındaki minimum değer hangisiyse oradan gelmişsiniz demektir. Ona göre işlem yapıyorsunuz. Yani mutlaka matras tutmanız gerekmiyor.
+
+283
+00:51:05,867 --> 00:51:07,028
+Anladım. Teşekkür ederim.
+
+284
+00:51:07,548 --> 00:51:07,988
+Rica ederim.
+
+285
+00:51:11,108 --> 00:51:17,728
+Evet, o zaman bir ara verelim. 15.52 saat 16'ya kadar. 16'da görüşmek üzere arkadaşlar.
+
+286
+00:58:36,596 --> 00:59:03,155
+Evet arkadaşlar, yeniden merhaba. Şimdi sizlerle iki hafta önce yapmış olduğumuz sınavın sorularını konuşacağız. Bugünkü konularımız Edit Distance, Levenstein Aydaş'ın, Longest Garing Subsequence konularını tamamladık. Sorularımız oldu birkaç tane, onlara cevap verdik. Sınav okuma süreciniz devam ediyor. Bilaksin olmazsa önümüzdeki haftaya kadar.
+
+287
+00:59:03,615 --> 00:59:25,975
+açıklamış olacağımızı tahmin ediyorum. Bir başka konu, bugün akşam ya da yarın gün içerisinde ödevimizi vermiş olacağız, ikinci ödevimizi. Önümüzdeki haftada yine bir değişiklik olmazsa, çarşamba günü üniversitede kontrol ediliyor olacak. Şimdi ben ekranı paylaşayım sizinle.
+
+288
+00:59:30,867 --> 00:59:35,748
+Şu an görevinden izah ediyorum. Sınav sorularının olduğu dökümanı paylaşıyorum.
+
+289
+00:59:36,708 --> 00:59:44,228
+Sorulardan bir tanesi, 4N²-7N artı 1 olarak hesaplanan bir algoritma için aşağıdaki hangi gösteri kullanılamaz demiştik.
+
+290
+00:59:45,088 --> 00:59:50,407
+O N³ kullanılabilir N²'den daha büyük olduğu için, upper bound.
+
+291
+00:59:51,327 --> 00:59:54,428
+Big Theta N², N² ile aynı.
+
+292
+00:59:56,211 --> 00:59:59,351
+Karmaşıklığa sahip olduğu için Big-Theta olarak ifade edilebilir.
+
+293
+01:00:00,031 --> 01:00:06,891
+Yine küçük eşit kavramından Big-O, n², n² ile 4, n² ile aynı büyüme derecesine sahip.
+
+294
+01:00:08,051 --> 01:00:17,811
+Big-Omega-N de lower bound olarak n²'nin altına yer aldığı için aslında bütün gösterimler kullanılabilir olacaktır sorunun cevabı.
+
+295
+01:00:18,611 --> 01:00:19,031
+Gelelim.
+
+296
+01:00:19,635 --> 01:00:21,536
+bir dizide bir elemanın yerinin bulunmasına.
+
+297
+01:00:22,016 --> 01:00:30,815
+Sırasız biz dizide karmaşıklık OAN, sıralı bir dizide Bindem Search kullanarak Logan karmaşıklıkla elemanın yerini bulabilirsiniz.
+
+298
+01:00:31,715 --> 01:00:37,387
+Sıralı linkli listede yine bütün diziyi...
+
+299
+01:00:37,588 --> 01:00:44,208
+adım adım gezmeniz gerektiği için ve tek tek atlayarak gitmeniz gerektiği için O an karmaşıklık.
+
+300
+01:00:44,648 --> 01:00:52,628
+H-Tablosunda ise en kötü durum karmaşıklığı O1 olarak cevaplanmalıydı.
+
+301
+01:00:54,347 --> 01:01:03,708
+Çakışma probleminin linear programming ile çözüldüğü bir H-Tablosunda boş gözler, boş olma seyredine bağlı olarak empty veya tradit olarak saklanıyor.
+
+302
+01:01:04,467 --> 01:01:21,367
+Birinci argüman, iyinci adres, iyadres, deleted, iyartı bir empty ise adres, iyadresi empty olarak işaretlenir. Evet, hiçbir sakınca yok. Bu ifade doğru. Çünkü zaten kendisinden sonra gelen adres empty.
+
+303
+01:01:22,107 --> 01:01:28,467
+İkinci şıkka baktığınızda, iyadresi deleted ve iyartı bir adresine doğru adrese yerleşmiş bir eleman var.
+
+304
+01:01:31,188 --> 01:01:44,628
+Eğer empty olarak işaretlerseniz, o elemanın ulaşma şansını ortadan kaldırıyorsunuz. Bu da istediğimiz bir durum değil. O yüzden bu kezdeki bleed to empty olarak işaretleriniz yanlış olacaktır. Cevap 1 doğru 2 yanlış olacaktır.
+
+305
+01:01:46,248 --> 01:01:49,907
+Gelelim fonksiyonlarla ilgili soruya.
+
+306
+01:01:53,108 --> 01:01:54,968
+Chatten bir şey yazıldı bakalım.
+
+307
+01:01:58,099 --> 01:02:06,220
+[öğrenci], okuldaki kontrolün hangi sınıfta yapılacağını şu an bilmiyorum. Başlama görevlisi arkadaşlarımız bununla ilgili açıklama yapacaklardır.
+
+308
+01:02:08,480 --> 01:02:13,840
+Gelelim 6. sorudaki fn ve gn fonksiyonunu ifade edecek şekilde.
+
+309
+01:02:14,460 --> 01:02:22,360
+Birinci fonksiyon, ikinci fonksiyon ile ifade etmek istediğimizde, iki birden küçük olduğu için Big Omega'yı kullanıyoruz.
+
+310
+01:02:23,559 --> 01:02:24,099
+İkinci...
+
+311
+01:02:24,831 --> 01:02:36,231
+satırdakine bakışa kalırsak, 2 üzeri n artı 1, 2 üzeri n, 2 çarpı 2 üzeri n olduğu için ikisi de aynı büyüme derecesine sahip.
+
+312
+01:02:36,231 --> 01:02:42,632
+Ve o yüzden Big Theta kullanabiliyoruz burada n'ın doğrunu yazınız dediği için.
+
+313
+01:02:42,632 --> 01:02:46,632
+Biri 1, diğeri 2 artı sin n.
+
+314
+01:02:46,996 --> 01:02:55,536
+sinüs fonksiyonu en fazla bir değerini alabildiği için, sabit bir değer çıkacağı için, ikisi de sabit bir değer, n cinsinden bir değere bağlı değil.
+
+315
+01:02:55,536 --> 01:03:00,235
+O zaman yine eşit büyüme derecelerine sahip olacaklar, Big-Teta olacak.
+
+316
+01:03:00,916 --> 01:03:05,856
+Log-n, Log-n², n²'nin ikisini dışarı aldığınızda iki çarpı Log-n olacaktır.
+
+317
+01:03:06,556 --> 01:03:10,715
+Yine büyüme dereceleri aynı olduğu için Big-Teta ile ifade edilmeleri gerekiyordu.
+
+318
+01:03:11,295 --> 01:03:11,775
+Son olarak,
+
+319
+01:03:12,211 --> 01:03:37,708
+n! n
+
+320
+01:03:37,940 --> 01:03:40,779
+Küçükten büyüye sıralamak için QuickSort kullanımı isteniyor.
+
+321
+01:03:41,259 --> 01:03:45,980
+Piyo seçimi için Median of Tree yaklaşımı kullanıldığı söylenmiş.
+
+322
+01:03:45,980 --> 01:03:54,920
+Median of Tree'yi hatırlarsanız dizinin ilk gözü, son gözü ve orta gözündeki elemanlarının medyanını almak şeklindeydi.
+
+323
+01:03:55,559 --> 01:03:59,980
+4-7-9 değerleri alındığında...
+
+324
+01:04:01,172 --> 01:04:10,612
+Medyan 7 olacaktı, pivot 7. 7'nin sol tarafına küçükler, sağ tarafına büyükler gelecek şekilde ilk tur tamamlandırdı.
+
+325
+01:04:10,612 --> 01:04:17,432
+Dizi 4, 3, 1, 2, 6, 5, 7, 8, 9 haline alması gerekiyordu.
+
+326
+01:04:19,791 --> 01:04:26,731
+1 bölü 3 n küp artı 100 n kare karmaşıklar sahip bir algoritmalar çalışma süresi n eleman için T'ymiş.
+
+327
+01:04:28,275 --> 01:04:33,155
+t bölü 512 sürede tamamlanması için eleman sayısının azalması gerekiyor.
+
+328
+01:04:33,715 --> 01:04:38,895
+Yaklaşık diye sorduğu için algoritmaların karmaşıklığı n küp ile ifade ediliyor.
+
+329
+01:04:40,055 --> 01:04:50,095
+512 t bölü yani normal sürenin 512'de birine düştüyse o zaman eleman sayısı da 8'de birine düşmüş demektir.
+
+330
+01:04:50,355 --> 01:04:51,755
+n bölü 8 olacaktı.
+
+331
+01:04:53,364 --> 01:05:04,364
+Sırasız bir dizide brute force yaklaşımlı elemanların benzersiz olup olmamını bulmak için tek tek tüm elemanları kendisinden sonraki elemanlara benzeyip benzemediğini aynı olup olmamını kontrol etmek gerekiyor.
+
+332
+01:05:04,443 --> 01:05:08,563
+Bu da iki kişi iki dönü demek. O, N kare karmaşıklığıyla yapılıyor.
+
+333
+01:05:09,443 --> 01:05:20,304
+Öte yandan siz bu sıralıksız diziyi sıralayıp eğer tek tek yanındaki eleman aynı mı değil mi diye bakarsanız
+
+334
+01:05:20,788 --> 01:05:35,108
+O zaman sıralama işinin enlogan karmaşıklıkları yapıldığı, kontrolün de dizinin elemanlarının yan yana olanların kontrolü düştüğünde, onun da n olduğu düşünüldüğünde enlogan artı n olacaktı.
+
+335
+01:05:35,568 --> 01:05:41,528
+O da karmaşıklık olarak on enlogan olması, o enlogan olması gerekiyordu.
+
+336
+01:05:41,528 --> 01:05:44,228
+Tabii ekstra özel bir durum var.
+
+337
+01:05:46,612 --> 01:06:07,271
+Onu belirtip yazanlar da tam puan aldılar. Bu karmaşıklık O, N'e kadar indirgenebilir. Ama onu yapmak için ilgili elemanların dizinin hangi gözündeyse o göze gidip ilgili elemanın değeri, 5 ise 5. göze gidip o değerinin değiştirilmesi gerekiyordu.
+
+338
+01:06:09,235 --> 01:06:15,295
+Bütün dizi sıfırken gelen elemanlar sıfır olduğu sürece değiştirilirse yüniklik bozulmaz.
+
+339
+01:06:15,416 --> 01:06:24,235
+Ama beşinci göze gidilip sıfır bir yapıldığında, sıfır mı diye kontrol edildiğinde yine bir beş geldiğinde değer bir olduğu için...
+
+340
+01:06:25,556 --> 01:06:52,556
+sıfıra eşit olmayacağı için unik olmadığı anlaşılabilir. Bu yaklaşım, yani bir counter dizisinin kullanılması yaklaşımı OL karmaşıklıkta bir benzersiz Lik kontrolü yapıldığında bizim işimize yarayacaktır ve karmaşıklığı OL'a indirecektir. Bu da alternatif bir yaklaşım olarak karşınıza çıkabilir ama Enlogen diyenlerin tam puan aldığını söyleyebilirim.
+
+341
+01:06:53,364 --> 01:07:03,443
+Son olarak da bir sınıflandırma probleminde tüm öz niteliklerin en başarılı sonucu veren, tüm öz nitelikler arasından en başarılı sonucu veren öz nitelik grubu aranıyor.
+
+342
+01:07:04,364 --> 01:07:08,943
+D tane öz nitelik var. Exhaustive search yapacağız. Yani bütün olasılıkları değerlendireceğiz.
+
+343
+01:07:09,643 --> 01:07:20,103
+Doğal olarak D tane varsa, 2 üzeri D tane de alt küme vardır. Bütün kombinasyonlar irdevelendiğinde aslında 2 üzeri D eksi 1 olur.
+
+344
+01:07:20,576 --> 01:07:24,576
+Karmaşıklık 2 üzeri D olarak aktarılması gerekiyordu.
+
+345
+01:07:26,315 --> 01:07:27,996
+Buraya kadar sorusu olan var mı?
+
+346
+01:07:33,172 --> 01:07:33,632
+Peki.
+
+347
+01:07:36,351 --> 01:07:41,311
+Bir mağazanın sütuğunda bulunan malların kodları ve miktarları, malın kod bilgisine göre,
+
+348
+01:07:41,871 --> 01:07:45,612
+çakışma problemi linear probing ile çözüldü. En uzun bir hashtag tutuluyor.
+
+349
+01:07:46,211 --> 01:07:50,471
+Sütuğa mal giriş ve çıkış yapılmak istenen de giriş bilgisayarak malın kodu ve işlem miktarı,
+
+350
+01:07:51,592 --> 01:07:54,612
+mal geldiyse miktar pozitif, mal çıktığı ise negatif veriliyor.
+
+351
+01:07:55,692 --> 01:08:00,012
+Örnek bir kod verilmiş ve nasıl işleneceği söylenmiş.
+
+352
+01:08:00,367 --> 01:08:06,447
+Kodu verilen mal hash tablosunda yoksa, işlem miktarı pozitifse ise bu kodların hash tablosuna ekliyoruz.
+
+353
+01:08:07,387 --> 01:08:08,547
+Negatifse uyarı veriyoruz.
+
+354
+01:08:09,367 --> 01:08:12,847
+Eğer hash tablosunda varsa, pozitifse bu miktarda ve yönet ekliyoruz.
+
+355
+01:08:12,847 --> 01:08:17,967
+Negatifse bu miktarda ve yönet çıkarttığınızda eğer stoktaki miktar yeterliyse işlem yapıyoruz.
+
+356
+01:08:18,407 --> 01:08:21,247
+Değilse uyarı verip işlemi yapmıyoruz.
+
+357
+01:08:21,728 --> 01:08:22,807
+Bunlar keyzlerimizde.
+
+358
+01:08:24,500 --> 01:08:28,859
+Derste gördüğünüz Linear Probing algoritmasının birebir aynısı.
+
+359
+01:08:29,559 --> 01:08:41,299
+Yapmanız gereken şey, bir while döntüsünde gelen hash fonksiyonu hesabını yapıp, null görene kadar değeri bir arttırarak kontrol yapmak.
+
+360
+01:08:51,539 --> 01:09:18,920
+Size verilen miktar pozitifse üzerine eklemek, miktar eğer size verilen miktar negatifse miktardan çıkartıp sıfırın altına düşüyorum düşmüyorum diye bakmak, düşüyorsa işlemi yapmamak, mesaj vermek, eğer düşmüyorsa ilgili stok 10 ise, eksi 9 geldiyse 10'dan eksi 9'u çıkartıp 1 olarak güncellemek gerekiyordu.
+
+361
+01:09:19,444 --> 01:09:31,744
+Bunun dışında da eğer ürün herhangi bir şekilde yoksa ürünü insert etmeniz gerekiyordu. İlk gördüğünüz empty lokasyonuna.
+
+362
+01:09:31,744 --> 01:09:45,744
+Eğer tabii ki ne zaman insert ediyorsunuz pozitifse sayı, eğer verilen ürün miktarı negatifse o zaman insert işlemi yapmıyorsunuz kullanıcıya.
+
+363
+01:09:46,260 --> 01:10:13,720
+hata mesajı veriyorsunuz, uyarı veriyorsunuz. Aslında oldukça kolay bir soruydu. Ama henüz bu sorulara bakmadığım için size bir yorum yapamayacağım. Gelelim en zor olduğu düşündüğünden soruya. Evet, birazcık görece zor bir soruydu. Elemanlarının sırada olmadığı bilinen en elemanlı bir dizinin medyanını. Diziyi tam sıralamadan.
+
+364
+01:10:14,228 --> 01:10:39,487
+Quick-Sault algoritmasına benzer bir yaklaşımla, bulanı algoritmaya ait ana programı ve bu işlem için kullanılan fonksiyonların kodunu yazınız demişiz. Elinizde 1, 5, 2, 3, 4 var. 3'ü bulmak istiyorsunuz dizinin medyanı olarak. İşte alttaki dizi var. 9'u bulmanız, pardon 8'i bulmanız gerekiyor medyanı olarak. Ne yapacaktınız? Partition algoritması birebir aynı.
+
+365
+01:10:40,180 --> 01:10:44,159
+Tabii çeşitli farklı partition algoritmaları var, çok önemli değil.
+
+366
+01:10:45,079 --> 01:10:51,760
+Diyelim ki siz işte buradaki örnekte en sağdaki elemanı aldınız, dördünü aldınız.
+
+367
+01:10:52,479 --> 01:10:54,760
+Dördü göre bir konumlama yapmak istiyorsunuz.
+
+368
+01:10:54,760 --> 01:10:56,760
+Tüm elemanları dörtten...
+
+369
+01:10:59,539 --> 01:11:24,779
+Küçük mü, büyük mü diye kontrol ediyorsunuz. Küçükler, solda, büyükler, sağda olacak şekilde konumlandıracaksınız. Bunları sayıyorsunuz. Eğer eleman dörtten küçükse sayıyorsunuz ve sayımınızın sonunda elde ettiğiniz değer, şurada partition'dan dönen değer yani biton i
+
+370
+01:11:26,836 --> 01:11:46,095
+dizinin eleman sayısının yarısı ise, şurada görmüş olduğunuz kontrolü yapıyorsunuz, o zaman zaten medyanı bulmuşsunuz demektir. Bu kadar basit. Yani tek yaptığınız şey, elemanları tek tek seçtiğiniz pivot elemanından küçük mü büyük mü diye kontrol ediyorsunuz.
+
+371
+01:11:46,452 --> 01:12:03,711
+Eğer sizin, tabii ki dizinin başından sonuna kadar bir kontrol yapıyorsunuz, sizin elemanlarınızın yarısı seçtiğiniz pivot elemanından küçük ya da büyükse, zaten pivot elemanınız sizin dizinizin medyanı demektir.
+
+372
+01:12:04,391 --> 01:12:05,291
+Burada işiniz bitiyor.
+
+373
+01:12:07,291 --> 01:12:12,452
+Eğer değilse, bulduğunuz değeri,
+
+374
+01:12:13,652 --> 01:12:19,992
+büyük ve küçük olmasına göre dizinin hangi tarafından işleme devam edeceğinize karar veriyorsunuz.
+
+375
+01:12:20,412 --> 01:12:23,872
+Normalde QuickSort'ta dizinin iki tarafından da işleme devam ediyorduk.
+
+376
+01:12:24,452 --> 01:12:34,452
+QuickSort algoritmasında, yani bu yaklaşımda medyanı bulma işindeyse, yaptığımız şey büyük olan tarafta aramaya devam etmek.
+
+377
+01:12:35,283 --> 01:12:53,283
+Büyük olan tarafa bakıyorsunuz. Büyük olan taraf da geriye kalan elemanların çok olduğu tarafta. Yine bir pivot seçiyorsunuz. Bu pivot elemanınızda daha büyük mü, küçük mü, kaç tane eleman var sayıyorsunuz. Saydığınız eleman...
+
+378
+01:12:54,036 --> 01:13:04,036
+sayısı sizin gönderdiğiniz dizinin elementinin sayısının yarısına eşitse o zaman medyayı bulduğunuzu söylüyorsunuz.
+
+379
+01:13:04,036 --> 01:13:07,036
+Cobb bu kadar olacaktı.
+
+380
+01:13:07,184 --> 01:13:15,103
+yapmanız gereken en önemli kısım, aslında şuradaki kısmı yazmaktı, partition bile o kadar kritik değildi aslında.
+
+381
+01:13:15,863 --> 01:13:24,043
+Kendi kendini çağıran ve sadece çağırınca her iki tarafta devam etmeyen, yani divide on concure değil,
+
+382
+01:13:24,564 --> 01:13:32,984
+decrease on concure mountı ile ilerleyen bir tasarım yapmaktı. Bunu güzel yapan arkadaşlar var.
+
+383
+01:13:33,492 --> 01:13:41,832
+Ama tabii herkes tam olarak soruda başarılı olamamış. Ama genel mantığının bu şekilde olması gerekiyordu.
+
+384
+01:13:42,512 --> 01:13:44,131
+Sorusu olan var mıdır buraya kadar?
+
+385
+01:13:45,692 --> 01:13:47,492
+Merhaba hocam, benim sorum olacaktı.
+
+386
+01:13:48,431 --> 01:13:48,992
+Merakasya.
+
+387
+01:13:50,112 --> 01:13:53,092
+Test kısmına geri dönebilir misiniz acaba hocam?
+
+388
+01:13:53,692 --> 01:13:53,912
+Tabii.
+
+389
+01:13:58,131 --> 01:13:58,611
+Evet.
+
+390
+01:14:00,652 --> 01:14:04,791
+Biraz daha aşağıdaki bir soru da, en logen, aynen.
+
+391
+01:14:05,191 --> 01:14:06,351
+Dokuzuncu soru da hocam.
+
+392
+01:14:08,051 --> 01:14:16,111
+Elif Hoca sınıfta bunun yedek bir dizi kullanılarak o en karmaşıklığına düşürülebileceğini söylemişti.
+
+393
+01:14:16,251 --> 01:14:19,131
+Siz de az önce aynı şeyi tekrarladınız.
+
+394
+01:14:19,652 --> 01:14:22,131
+Bu cevabı verenlere puan verilmeyecek mi hocam?
+
+395
+01:14:22,739 --> 01:14:25,619
+Bu cevabı verenlerin açıklamasını yapması gerekiyor.
+
+396
+01:14:26,020 --> 01:14:31,940
+Çünkü normalde bu cevabı neye dayanarak vermeden vermiş olan arkadaşlarımız var.
+
+397
+01:14:32,420 --> 01:14:33,899
+Onların puanı biraz daha düşük olacak.
+
+398
+01:14:35,219 --> 01:14:36,719
+Anladım hocam, teşekkür ederim.
+
+399
+01:14:37,000 --> 01:14:39,399
+[öğrenci], şöyle söyleyeyim, soru 4 puan ya.
+
+400
+01:14:40,119 --> 01:14:40,420
+Evet.
+
+401
+01:14:41,139 --> 01:14:43,840
+Sorunun 2 puanını üst kısımdan alıyorsunuz.
+
+402
+01:14:44,380 --> 01:14:44,699
+Evet.
+
+403
+01:14:45,760 --> 01:14:47,079
+Alt kısmı 2 puan kalıyor.
+
+404
+01:14:48,243 --> 01:14:56,043
+O iki puandan da iki tam puan alabilmeniz için ON dediyseniz onu yedek dizi kullanarak yaptığınızı belirtmeniz gerekiyor.
+
+405
+01:14:57,403 --> 01:14:59,064
+Anladım hocam, teşekkür ederim.
+
+406
+01:14:59,183 --> 01:15:00,843
+Belirtmediyseniz bir puan alıyorsunuz.
+
+407
+01:15:01,703 --> 01:15:03,783
+Peki hocam, teşekkür ederim.
+
+408
+01:15:04,043 --> 01:15:06,644
+Rica ederim. Başka sorusu olan var mı?
+
+409
+01:15:14,804 --> 01:15:29,283
+Peki, başka sorunuz yoksa teşekkür ediyorum derse katıldığınız için. Önümüzdeki haftadan itibaren iki hafta Elif Hoca ile birlikte olacaksınız. Derse katkınız için teşekkür ediyorum. Hepinize sağlıklı günler diliyorum arkadaşlar. Görüşmek dileğiyle.
