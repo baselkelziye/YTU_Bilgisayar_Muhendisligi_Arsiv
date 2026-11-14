@@ -1,0 +1,1795 @@
+1
+00:00:13,428 --> 00:00:18,428
+Bakalım bakalım acaba yapabildik mi bir şeyler.
+
+2
+00:00:25,492 --> 00:00:29,152
+Bu şakalarına ne yapalım? Deniyoruz, öğreniyoruz işte.
+
+3
+00:00:29,972 --> 00:00:32,112
+Günaydın hocam. Sesim geliyor mu?
+
+4
+00:00:32,792 --> 00:00:35,892
+Merhaba [öğrenci], geliyor. Sesim geliyor herhalde. Nasılsın?
+
+5
+00:00:36,032 --> 00:00:37,392
+Hocam, iyi misinizsınız?
+
+6
+00:00:37,972 --> 00:00:39,432
+Teşekkür ederim. Buyur.
+
+7
+00:00:39,992 --> 00:00:43,012
+Ben bir şey soracaktım da. Benim normalde geçen hafta bugündü sunumun.
+
+8
+00:00:43,539 --> 00:00:47,780
+[kişisel bilgi] Sonra size de mail attım.
+
+9
+00:00:48,200 --> 00:00:57,579
+Evet. Ben de yanıp dönemedim kusura bakma. Sen daha sonra yapabilirsin elbet. Bakalım bugünkü katılımcı sayısına bakalım. Ondan sonra ona göre karar verelim. Olur mu?
+
+10
+00:00:58,799 --> 00:01:08,519
+Şu an yanımda bilgisayarım da yok. Ben bilgisayarımı okudum unuttum bugün. Yani daha doğrusu dün unuttum. Bugün tekrar gideceğim. Bu ders bir daha bitmez gideceğim. Ben bilgisayarımı alacağım.
+
+11
+00:01:09,359 --> 00:01:11,539
+Toplantı da var yani mecbur zaten toplantı.
+
+12
+00:01:11,540 --> 00:01:33,000
+Ama benim yolum uzak. O yüzden okula gidip de ders okuldan başlatamazsın. Ben en erken onda yetişebiliyorum okula. Şartlarımın geriye. Öyle olunca şimdi bugün tabletten deniyorum. Bakalım ne olacak ne bitecek. Kimsenin de notunu alsan bir kağıda kaybolur edem. Ben onu bilgisayarın başında ilgili egzer dosyasına not almam lazım.
+
+13
+00:01:39,540 --> 00:01:53,220
+Sunumlarda çok uzamazsa, istersen bugün sen de sunabilirsin. Son olarak alırım seni. Yoksa ben sana şey diyeceğim artık, daha sonraki haftaya mı boş günlerimiz var, ona göre söyleyeceğim.
+
+14
+00:01:53,840 --> 00:01:55,280
+Tamamdır, ben bekleyeyim o zaman hocam.
+
+15
+00:01:55,280 --> 00:01:58,900
+Tamam, ahmetiniz. Biraz beklersen iyi olursun.
+
+16
+00:02:01,280 --> 00:02:02,300
+Bir notunu alayım.
+
+17
+00:02:03,100 --> 00:02:05,400
+Şimdi, saati dokuz ettik.
+
+18
+00:02:07,763 --> 00:02:23,423
+Evet. Şimdi katılımcılara bakıyorum ve katılımcılardan listelik sıraya bakaraktan eşleştirmeye çalışıyorum. Şimdi [öğrenci], [öğrenci], [öğrenci]. Hazır mısınız?
+
+19
+00:02:23,983 --> 00:02:25,443
+Hazırım hocam. Bir saniye hemen geliyor.
+
+20
+00:02:26,323 --> 00:02:26,603
+Tamam.
+
+21
+00:02:26,783 --> 00:02:27,463
+Sesim gelebilir miyim?
+
+22
+00:02:28,084 --> 00:02:28,783
+Geliyor, geliyor.
+
+23
+00:02:33,747 --> 00:02:35,527
+Saatıda hızlanayalım.
+
+24
+00:02:42,355 --> 00:02:48,395
+Tamam. Eğer band genişliği sorunlu olursa kapatılsın. Kamerinin kapatılsın. Olmazsa.
+
+25
+00:02:48,395 --> 00:02:54,055
+Şu anda fiskat yok gibi. Yok. Ekranda paylaşmak istiyorum. Tamam.
+
+26
+00:02:59,475 --> 00:02:59,876
+Tamam.
+
+27
+00:03:11,987 --> 00:03:21,587
+Merhaba arkadaşlar, ben Hüphir Başoğlu. Bugünkü anlatacağım konu RTX ve GLSS teknolojisinin oyun üniversitesi.
+
+28
+00:03:21,587 --> 00:03:32,587
+En başta RTX nedir? RTX teknolojisi 2018'de hayatımıza geldi.
+
+29
+00:03:32,587 --> 00:03:37,587
+Kendileri bunun 10 yıllık bir çalışma sonucu olduğunu söylüyor.
+
+30
+00:03:38,259 --> 00:03:54,539
+Arttics yani ray tracing olan, bu teknik konuştu Türkçesi de ışın izleme. Yani ışın izlemeler anlayacağımız şu, normalde bu ışıklar, gölge rendeme oyunlarda giren birilerle bize görülür.
+
+31
+00:03:54,539 --> 00:04:02,139
+Yani o artık şeye kalıyor, o oyun motorunun hesaplamalarını kalıyor. Ama ray tracing öyle değil, kesinlikle ray tracing.
+
+32
+00:04:02,548 --> 00:04:24,548
+Işığı bir cism olarak adlanıyor. Potomysal gibi cism olarak adlanıyor. Işığın çıktığı yerden nereye sekerse artık yolluğumu takip ediyor. Bu sayede çok daha gerçekçi görüntüler ve böyle endiven ışıklandımlar görebiliyoruz. Bu teknoloji aslında...
+
+33
+00:04:25,300 --> 00:04:38,800
+Yani 2018'e gelin, Ray Tracing daha önceden de o film teknolojisi, film endüstrisinde kullanılırdı. Ancak oyun endüstrisine gelmesi Nvidia'nın 2018'de yaptığı bu RTX kartlarla altyazılır.
+
+34
+00:04:39,800 --> 00:04:51,300
+En büyük örneği, ben o zaman çok küçük sevmiştim, Minecraft. Minecraft illa ki dönüşsünüzdür. Yani bu tarz gözüken kütbeye doğmuşlar, piksel boyun.
+
+35
+00:04:51,795 --> 00:04:56,316
+Çok görsel olarak bir iddiası yok. Ancak RTX teknolojisi de geldi.
+
+36
+00:04:56,316 --> 00:05:00,316
+RTX'nin çiftliğinde Minecraft'a gelmişler gerçekten muazzam bir yükseldi.
+
+37
+00:05:00,316 --> 00:05:03,076
+RTX'ın önceden gölgenli var, beşik anlığı herhalde.
+
+38
+00:05:03,875 --> 00:05:14,235
+Ama şöyle bir sıkıntı var. Normalde 90 FPS'de bu oyun, RTX kafalarla açınca çok yüksek bir süreç söz konusu.
+
+39
+00:05:14,235 --> 00:05:19,596
+Birinde şefkese düşüyor. Burada Nvidia bunu fark edilmiş ve DLSS.
+
+40
+00:05:19,795 --> 00:05:33,836
+Teknolojisini üretmiş diyeyim. Öyle bir çözüm olmuş. Büyük performans sorunlar çok ruhazla yoruyor çünkü gerçekten.
+
+41
+00:05:37,524 --> 00:05:54,124
+DLSS kapalı ile 20 şefesti. DLSS açıldığında herhangi bir görsel kayıt yaşamadan çok yüksek bir performans kazancı sağlamamıyor. Peki bu nasıl oluyor?
+
+42
+00:06:05,620 --> 00:06:09,379
+Yapay zeka yani, bir derin öğrenme anlayırtması aslında.
+
+43
+00:06:11,220 --> 00:06:23,699
+Aslında bu önceden de vardı ancak bu RTX kartları çıktı. DLS 8.0'da çıkıyor ve bu gerçekten teknolojiyle çok yüksek bir noktaya taşıdığı gerçekten bir standart haline girdi.
+
+44
+00:06:23,699 --> 00:06:32,019
+Çünkü RTX açıya dönüştü performans sorunu neredeyse o zaman kaldıran bir teknoloji. RTX açı masabere gerçekten çok iyi bir teknoloji.
+
+45
+00:06:33,267 --> 00:06:50,267
+Genel çalışma mantıklı ise şöyle, ekran kartı render yapmak yerine bazı pikselleri boş bırakıyor ve yapay zeka o boş pikselleri dolduruyor kendisi. Böylece büyük bir performans kazanışı sağlanıyor.
+
+46
+00:06:50,267 --> 00:06:54,267
+Mesela burada Dents Sandik'ten bir örnek vereyim.
+
+47
+00:06:54,267 --> 00:06:56,267
+Yani, şurada bir saniye bakalım.
+
+48
+00:06:59,732 --> 00:07:13,932
+DLS'in kareli modunda, normalde kapalı iken, ArtX 2.60 kartında 4K'da 30 FPS alıyor. Ancak 68 FPS çıkıyor.
+
+49
+00:07:13,932 --> 00:07:21,232
+Artışı abi, görebileceğiniz gibi hiç yürültü kalbi yok. Hatta şurada daha iyi bile gözüküyor.
+
+50
+00:07:21,232 --> 00:07:22,532
+Evet, katılıyorum.
+
+51
+00:07:22,532 --> 00:07:25,232
+Daha iyi bile gözüküyor yani. Gerçekten bu tanesi.
+
+52
+00:07:25,396 --> 00:07:45,396
+Çok iyi faydaları var. Biraz daha ayrıntıya girmek istiyorum gelişsin. Çalışma mantığında. Şöyle ki, sadece RTX kartlarda var bu teknoloji ve bu içindeki tensor çekirdekleri, tensorlar kükür var.
+
+53
+00:07:52,723 --> 00:08:19,723
+Tabiki diğer esizmadan da geldi. Ama açıyorum. Herhangi modda çalıştırdık ve o modda çalıştıktan sonra ekran kartının artık onun kendisi normalde 1080p'de rendirebilecekken, bu çözünürlükte rendirebilecekken, bir anda düşük bir çözünürlükte rendirebilecek. Bu ekran kartı için performans. Ama normalde biz o çözünürlükte görsel bir kayıp olacak. Çok büyük bir görsel kayıp olacak.
+
+54
+00:08:20,244 --> 00:08:30,244
+Bunları çarpıp, bu ikisini çarpıp çıkardığımızda 747600 adet boş piksel kalıyor. Bu boş pikseli doldurmak ise DLF'sin görevi.
+
+55
+00:08:30,244 --> 00:08:43,244
+Dediğim gibi bu sayı DLF'sin performans moduna göre değişiyor ama genellikle neredeyse hiçbir görsel kayıp yaşamadan çok güzel performans kazançları sağlanabiliyor.
+
+56
+00:08:45,235 --> 00:08:55,475
+Burada da Arctic's'in iç yapısı dediğim, bir tane soru çekerekleri var. Şurada Raytracing, bu Işın ve Zene Teknikler'in yaşandığı çekerekler var.
+
+57
+00:08:55,475 --> 00:09:02,596
+Burada da normal, kart adı olan, işte, Prender, Shader tarzı işlemler yapılıyor.
+
+58
+00:09:05,076 --> 00:09:32,115
+Normalde bu slide yazarken, burası yoktu ancak RTX 407 kartlarla tanıtıldı. Geçmek istemedim çünkü. Normalde öncelikle anlattığım DLSS2 iken, genelde DLSS3 teknolojisini bize tanıttı. Bu çok daha farklı bir olay. Şöyle ki normalde DLSS2'yi anlattığım gibi piksel dolduruyor. DLSS ise direkt kendisi bir kareyi dolduruyor.
+
+59
+00:09:32,500 --> 00:09:43,779
+Yani normalde atıyorum işte saniyede altmış kare ise, alıyoruz da böyle, ekran kartı sürekli altmış kare altmış kare saniyede render ediyor.
+
+60
+00:09:43,779 --> 00:09:50,019
+Diğerli S3 geliyor ve diyor ki, sen rahat ol, birazını ben, bu kareleri birazını ben doldurayım.
+
+61
+00:09:50,019 --> 00:09:57,099
+Ve direkt kendisi harik. O karelerin belli bir kısmını kendisi dolduruyor.
+
+62
+00:09:57,099 --> 00:10:00,000
+Ve buradaki performans çok çok.
+
+63
+00:10:00,000 --> 00:10:02,000
+çok daha fazla yani
+
+64
+00:10:02,000 --> 00:10:03,899
+Cyberpunk oyundaki
+
+65
+00:10:03,899 --> 00:10:05,059
+bir sunnsızlık çıkamadı.
+
+66
+00:10:05,580 --> 00:10:07,879
+Patlamıştı. Performans durumu yaşamıştı.
+
+67
+00:10:08,399 --> 00:10:09,399
+Burada bile
+
+68
+00:10:09,399 --> 00:10:11,320
+RTX
+
+69
+00:10:11,320 --> 00:10:13,399
+kapalı, SSD kapalı.
+
+70
+00:10:13,960 --> 00:10:14,679
+22 FPS.
+
+71
+00:10:16,360 --> 00:10:17,320
+Bir anda RTX
+
+72
+00:10:17,320 --> 00:10:18,779
+daha çok komisyonel bir SSD
+
+73
+00:10:18,779 --> 00:10:20,679
+katkısıydı.
+
+74
+00:10:21,779 --> 00:10:29,779
+5 katına çıkıyor performans. Çok büyük.
+
+75
+00:10:29,779 --> 00:10:38,779
+Aynı şekilde yine geçen ara çıkan collective requirement onunda da inanılmaz bir performans katkısı var ki
+
+76
+00:10:38,779 --> 00:10:44,779
+Burada DLS kafalı, burada açık olmasına rağmen böyle bir performans kazancı var.
+
+77
+00:10:48,659 --> 00:10:55,779
+İlerideki derde şu an gerçekten Yanktaş'ı büyük bir direk büyük haline geldiğini düşünüyorum.
+
+78
+00:10:56,779 --> 00:11:02,539
+Bir de RTX teknolojisinin oyun geliştirme açısından ona bakmak istiyorum.
+
+79
+00:11:02,539 --> 00:11:08,420
+Şimdi burada RTX kafalı ve açık olan bir oyun görüyorsunuz. İsmini Bright Nehru'ya, Infinite.
+
+80
+00:11:09,340 --> 00:11:13,700
+Bu oyunu koymamın sebebi şu bir kere çok ilginç diyor. İkincisi bu oyunu tek bir kişi yaptı.
+
+81
+00:11:15,220 --> 00:11:27,220
+Şimdi nasıl olabiliyor? Tek kişi yaptığı bu olayla nasıl bu kadar iyi gözükebiliyor? Yine RTX sayesinde. Çünkü RTX teknolojisini entekretme konuları kolay. Gerçekten kolay.
+
+82
+00:11:27,220 --> 00:11:38,187
+En iyi de bu konuda iliştiricilere büyük destek sağlıyor. Çünkü herhangi bir, zaten dediğim gibi render hesaplama gerektiren bir şey yok. RTX açıyor ve...
+
+83
+00:11:38,580 --> 00:11:44,580
+Yani fotoğraf gidiyor, çarpıyor bir yere geliyor. O artık geliştiricin umudunu değil.
+
+84
+00:11:44,580 --> 00:11:50,580
+Ve bu kadar kolay implement edilmesi, dünyanın da bu kadar iyi gözükmesi gerçekten oyun geliştirme açısından da...
+
+85
+00:11:50,580 --> 00:12:00,580
+...ileride ArtX teknolojisinin gerekti bir standart haline geleceğini düşünüyorum zaten.
+
+86
+00:12:01,580 --> 00:12:05,580
+Tek kişi yaptı bunu ve ona çok iyi gözüküyor yani.
+
+87
+00:12:07,187 --> 00:12:09,567
+Benim ana çakarım var. Teşekkür ederim.
+
+88
+00:12:10,168 --> 00:12:14,927
+Tamam. Bir saniye lütfen.
+
+89
+00:12:17,927 --> 00:12:30,048
+Evet, önce soru varsa, oyun ve oyun dolanımlarıyla ilgilenen arkadaşlarını konuşmak, sormak etmek istikleri bir işler varsa lütfen bir buyursunlar. Yoksa bir iki ben konuşurum.
+
+90
+00:12:30,803 --> 00:12:35,043
+Biraz [öğrenci]'la konuşuruz. Sen hemen sesini kapatma [öğrenci]. Büyük bir şeyle konuşuruz.
+
+91
+00:12:35,103 --> 00:12:35,504
+Tamam hocam.
+
+92
+00:12:36,884 --> 00:13:04,543
+Peki, şimdi soracak olan yok galiba. Ben şey sorayım mesela. Evet, Cyberpunk'taki patlama vardı. Ben kendim uzun zamandır masa üstünde böyle a a a diye tabir ettiğimiz oyunları oynamadığım için zaman hem de bütçe sıkıntıları denildiğini öncelikle geçiyor tabii ki bana da harcaykeniz. Ama sosyal medyadan takip ediyordum.
+
+93
+00:13:04,884 --> 00:13:31,604
+Bu konuda bir durum gerçekten çok daha ciddi. İlk defa PlayStation'da olan bir oyun kaldırıldı. Çok büyük sorunlar için ilk defa kaldırıldı ve gerçekten sizin bir proje kadını, oyun adınız Büyük Zedenedir.
+
+94
+00:13:32,211 --> 00:13:53,211
+PC'de eğer çok yüksek donanımız varsa sıkıntı olmuyordu. Ama o da herkese olan bir şey değil. Mesela Steam Anket sonuçlarına göre en çok kullanılan kart 1062. Ben de de GTX 1060 var. 6 GB.
+
+95
+00:13:53,211 --> 00:13:59,980
+Ona rağmen ben oyunu hiç güzel bir şekilde oynayamadım açıkçası. Küçük ayarlarda 30-40 FPS arası gibi.
+
+96
+00:14:00,563 --> 00:14:10,723
+Normalde ki 1060'dır, ben çoğu oyun çok rahat 60x10 oynadım ama o oyun gerçekten çok sıkıntılıydı. Arkadaşım da mesela 2060 var.
+
+97
+00:14:10,723 --> 00:14:18,563
+DLS'e saçmadan olmuyor. 60x10 alamıyorum. Genel olarak konsoloda da büyük sıkıntılar açıdı.
+
+98
+00:14:18,563 --> 00:14:26,379
+Ama bilgisayar taktıklarında da çok iyi bir zorlamız yoksa aşırı rahat oynayamıyordunuz yani.
+
+99
+00:14:28,307 --> 00:14:41,568
+Peki. O roman galiba şöyle bir durum yok. Acaba Cyberpunk, DLSS'yi bekliyordular ondan sonracı mı? Ama yazılım projelerinde hep söylenir, uzuyor, ediyordular. Böyle bir şey değil.
+
+100
+00:14:41,568 --> 00:14:54,968
+Bilgisayar Mühendisliği, Birlikte çıktılar zaten ki sadece o sorun değil ki. Oyun da fazla fazla vardı oyunda. Oyun da kafayı yürüdü. Bir kere bana şey olmuştu. Oyun FPS modunda oynanıyor.
+
+101
+00:14:55,700 --> 00:15:01,700
+Aracı geldiğinde TPS'de oluyor. Araçtan çektim tekrar TPS'de kaldık.
+
+102
+00:15:02,700 --> 00:15:09,700
+Bir anda arabalar zıplıyor, bir şeyler oluyor. Dediğim gibi kaplamalar yüklenmiyor.
+
+103
+00:15:10,700 --> 00:15:15,700
+Böyle bir yerde klişe dönem ki bölümde geçemiyorsunuz. Bölüm yüklenmiyor. O tarz bir sürü sorun vardı yani.
+
+104
+00:15:15,700 --> 00:15:21,700
+Onların çoğunu uzattılar aslında bayağı ama onlar neredeyse kolay olmadı tabii ki. Yıllarca update ettiler.
+
+105
+00:15:22,388 --> 00:15:23,927
+Peki, tamam. Sen falan soru hala durayım.
+
+106
+00:15:25,368 --> 00:15:28,388
+Bir de şimdi o zaman şey sorayım. Şimdi...
+
+107
+00:15:30,676 --> 00:15:50,495
+Ekran kartlarındaki özellikle küçük, hafif sıklet ama çok sayıda paralel çalışabilecek işlemcilerin özellikle çözmekte iyi olduğu problemlerin olduğu ve bu nedenle Nvidia'nın hem mühendisleri ve akademisyenleri bu konularda apelar sunduğunu hatırlıyorum.
+
+108
+00:15:50,495 --> 00:15:56,255
+Ben kendim kusura denemedim ama şimdi işin içerisine şey de girmiş.
+
+109
+00:15:58,676 --> 00:16:16,716
+Makine öğrenmesi ve orada direkt TensorFlow teknolojisini bir destekleyen hale gelmiş. Bu konuda yani bu kartların makine öğrenmesi, yapay zeka konusundaki oyun alanı dışındaki uygulamalarına hiç denk geldiniz mi?
+
+110
+00:16:20,436 --> 00:16:24,495
+Tam olarak değil. Yani işte DRS sayesinde, antik sayesinde.
+
+111
+00:16:25,011 --> 00:16:37,011
+Yapay zekalı şöyle gelişmeler oldu diye bir şey görmedim. Ama genel olarak kartlar çok güçlü olduğu için ki bir ara projem var şu an benim de görüntü işlemeyle ilgili bir projem var.
+
+112
+00:16:37,011 --> 00:16:44,011
+Yani o kartı kullandığımız zaman, arkadaşımın kartını kullandığımız zaman gerçekten çok büyük bir şey.
+
+113
+00:16:44,048 --> 00:16:58,048
+Performans, kazanca çok, işlemlerimiz çok daha hızlı duruyor. Ama onun dışında böyle DLSS çok aşırı, yani DLSS aktif ettiğin yolunu falan görmedim açıkçası. Öyle daha öyle ayetlenen bir kazancı var mı bilmiyorum.
+
+114
+00:16:58,836 --> 00:17:13,296
+Olabilir diye düşünüyorum. Neyse, peki. O zaman aklınızda olsun. Bitirme projesinde eğer bir makine öğrenmesi, tekneyi falan varsa, orada TensorFlow kullanan bir sistemde acaba o optimasyon açma etme bir araştırırsanız belki.
+
+115
+00:17:13,296 --> 00:17:26,735
+Ama kesin bu şu anki projenizde değişik farklı kartlar ve başarımı işte bu performans sonuçlar kısmında mutlaka ekleyin. Güzel olur.
+
+116
+00:17:26,836 --> 00:17:28,735
+Tamam hocam, teşekkür ederim.
+
+117
+00:17:29,416 --> 00:17:32,375
+Tamam, pekala. Ben de teşekkür ederim.
+
+118
+00:17:32,375 --> 00:17:34,375
+Şimdi...
+
+119
+00:17:39,412 --> 00:18:04,392
+Evet, [öğrenci]'e bir not şey edeyim. Evet, arkadaşlar geldi. Bir sürü yani toplantıya yetişmek için çok uzatmak istemiyorum. O yüzden [öğrenci] eğer ben sana hani bugün yarın mesaj atmazsam sen ve bana tekrar mesaj atıp hatırla. Olur mu lütfen? Seni bir sonraki değişik bir haftada yani dersim gününde veya uygun bir pazartesi gününe şey deriz, yerleştiririz.
+
+120
+00:18:05,299 --> 00:18:12,319
+Şimdi [öğrenci], hoş geldin. Seni ilk anda görmeyince atlamıştık. Müsaitsen paylaşımı aç.
+
+121
+00:18:12,319 --> 00:18:14,659
+Bir saniye hemen paylaşıyorum.
+
+122
+00:18:17,139 --> 00:18:19,259
+[öğrenci]'de bu arada paylaşımı kapatırsan.
+
+123
+00:18:21,011 --> 00:18:38,231
+Normalde PC'de birden fazla kullanıcının paylaşmanın izin ver ayarı vardı ama ben şimdi burada tablette nerede bulabilirim onu çok bilemiyorum. O yüzden tamam pekala. Evet [öğrenci]. Şu an ekranın tam mı? Geliyor mu yani?
+
+124
+00:18:42,579 --> 00:18:48,399
+Adım [öğrenci]. Bugün konu olarak sizlere gelişen teknolojiyle artan gürültü kirliliğini anlatacağım.
+
+125
+00:18:49,019 --> 00:18:52,339
+[öğrenci] bakmadan önce. Önce [öğrenci] mi kullanıyorsun, [öğrenci] mi?
+
+126
+00:18:52,419 --> 00:18:54,559
+Fark etmez hocam. İkisiyle de tabi ediyorsunuz.
+
+127
+00:18:54,699 --> 00:19:03,859
+Peki, sevgili [öğrenci]. Sen şimdi sol taraftaki yansı görünümün daha küçültü, sağ taraftaki yansı görünümün daha büyük olsun. Daha iyi takip edilir.
+
+128
+00:19:04,419 --> 00:19:08,579
+Sonra tabii sunum moduna geçersen, tam ekran olacaksa...
+
+129
+00:19:09,259 --> 00:19:10,559
+O an sunum modundayım ama.
+
+130
+00:19:10,579 --> 00:19:13,919
+Ben sonu modunda göremiyorum. Öyle bir şey oldu.
+
+131
+00:19:14,179 --> 00:19:15,259
+Deneyeyim ben hemen tekrar.
+
+132
+00:19:19,827 --> 00:19:20,908
+Şu an yapabildin mi?
+
+133
+00:19:21,428 --> 00:19:37,528
+Sen sunum modun... Ha, oldu. Şimdi oldu. Şimdi oldu. Bir geri gitmen gerekir herhalde. Şu an gelişen teknolojiyle artan gürültü kirliliğinden bahsedeceğim.
+
+134
+00:19:38,307 --> 00:19:47,648
+Konuma geçmeden önce bu konuyu nasıl seçtiğimi anlatayım. Yani biraz farklı bir hikayesi var. Tam bu sunum seçme haftasındayken konu belirlemeye çalışıyordum.
+
+135
+00:19:47,827 --> 00:19:53,548
+Çok fazla seçenek olduğu için, sınırsız hatta seçenek olduğu için birazcık kafam karışıktı açıkçası.
+
+136
+00:19:54,228 --> 00:19:59,607
+Tam o dönemde de kulaklığım bozuldu. Okula gidip gelirken yaklaşık bir saat gibi bir süreç yolda geçiriyorum.
+
+137
+00:20:00,000 --> 00:20:03,819
+Ve çok fazla sesten başımın ağrımaya başladığını fark ettim.
+
+138
+00:20:03,819 --> 00:20:09,299
+Beni çok rahatsız eden bir ses vardı. Araba trafiği, metro, yol çalışması, inşaat.
+
+139
+00:20:09,680 --> 00:20:15,680
+Ve bu durumun birazcık incelemek istedim açıkçası. Ve bunu da son konum olarak seçmeye karar verdim.
+
+140
+00:20:17,428 --> 00:20:22,668
+Teknolojinin gelişmesiyle gürültü kirliliği oranında da gerçekten ciddi bir artış görülmüştür.
+
+141
+00:20:22,668 --> 00:20:30,948
+Gerek makinelerin daha fazla kullanılması, gerek evimizde bile birçok alet eskiye göre daha fazla ses çıkartan ve teknolojik aletler.
+
+142
+00:20:31,768 --> 00:20:35,868
+Önce konuma geçmeden önce gürültü kirliliğini tanımlamak istiyorum.
+
+143
+00:20:36,348 --> 00:20:39,588
+Gürültü kirliliği veya ses kirliliği de diyebiliriz buna.
+
+144
+00:20:39,948 --> 00:20:45,428
+İnsan hayvan yaşını olumsuz etkileyen, dengesini bozan her türlü makine...
+
+145
+00:20:45,428 --> 00:21:12,068
+Hayvan ve herhangi bir kaynaktan çıkan ses oluşumudur. Bir diğer tanımla ise gürültü, insan ve diğer tüm canlıların günlük yaşamına ve sağlığına zararlı olan ses tonları olarak ifade edebiliriz. Ama bu ses tonları normalde bizi rahatsız etmeyen tonlarda çok fazladır tabii. Burada bahsettiğimiz, tanımda bahsettiğimiz ses tonu artık gerçekten kulağa tabiri caizse işkence gibi gelen ve yüksek desiverdeki ses tonları.
+
+146
+00:21:13,779 --> 00:21:41,779
+Peki teknoloji nasıl gürültü kirliliğine sebep oluyor? Biraz da bundan bahsedeyim. Öncelikle 1760'lı yıllarda sanayi devrimizi zaten hepimiz mutlaka duymuşuzdur. İngiltere'de başlayan ve yavaş yavaş Avrupa, Amerika ve bütün dünyaya yayılan sanayi devrini makineleşmeyi çok fazla arttırmıştır. Her yerde makine kullanmaya başladık. Hala günümüzde bu artış gerçekten ciddi oranla devam ediyor. Birkaç örnek de verebiliriz bu sürekli ses çıkartan haber.
+
+147
+00:21:41,779 --> 00:21:55,500
+Haberleşme, Ulaşım ve Üretim Araştırma. Telefon, televizyon, işte motorla çalışan araba, gemi, uçak, tren. Bu günlük hayatımızda sürekli karşılaştığımız teknolojik ve aynı zamanda gürültü çıkartan aletlerden bazıları sadece.
+
+148
+00:21:56,627 --> 00:22:24,087
+Şimdi tam olarak tabii ki de insanların kafasında bir şey canlanmıyor. Ben burada o yüzden birazcık sayısal bir değer vermek istedim. Yani evet araba ses çıkartıyor ama ne kadar? Açıkçası ilk baktığınız zaman çok anlaşılır olmayabiliyor. O yüzden birkaç örnek belirttim burada. Alçak sesli bir radyo televizyon yaklaşık 40 desibel kadar ses çıkartıyor. Ağır sanayi bölgelerinde bulunuyorsanız eğer 100 desibele kadar ortalama yani ses duyabilirsiniz.
+
+149
+00:22:24,627 --> 00:22:43,627
+Bu iki vereceğim örnek biraz ilginç. Bir jet motoru ortalama 120 desibel gürültü yaratırken bir gök gürültüsü 110 desibel gürültü ses yaratıyor. Bu durumda teknolojinin, yani burada sadece bir jet motoru olarak düşünmek lazım. Çevremizdeki bütün sesleri...
+
+150
+00:22:44,627 --> 00:22:52,807
+Ele aldığımız zaman gerçekten, bundan 10 bin sene öncesine kadar gerçekten çok yüksek bir gürültü kirliliğine sahibiz.
+
+151
+00:22:56,723 --> 00:23:24,384
+En büyük teknolojik kirliliği örneklerinden bir de şüphesiz olarak kesinlikle araba trafiğidir. Yani İstanbul'da yaşıyoruz hepimiz ve gerçekten çok yoğun bir trafik söz konusu. Günün her saat altta. Birkaç araba örneği de verdim burada. Saatte 32 km hızla giden bir aracın yaklaşık olarak çıkarttığı ses 50 desibelken, saatte 64 km hızla giden bir aracın yaklaşık 58 desibel gürültü yarattığını biliyoruz.
+
+152
+00:23:24,723 --> 00:23:29,023
+Ve hani trafiğe baktığınız zaman yüzlerce, binlerce araç görüyoruz.
+
+153
+00:23:29,023 --> 00:23:32,763
+Ve bu kesinlikle bence insanda şey bir etki yaratıyor.
+
+154
+00:23:34,163 --> 00:23:36,323
+Gününün biraz kötü geçmesini.
+
+155
+00:23:36,644 --> 00:23:39,144
+Yani psikolojik olarak insanı yoran bir durum kesinlikle.
+
+156
+00:23:39,223 --> 00:23:41,203
+Çok fazla sese maruz kalmak gün içinde.
+
+157
+00:23:41,644 --> 00:23:44,043
+Bu da bütün gününüzü hatta bütün hayatımızı etkiliyor.
+
+158
+00:23:46,099 --> 00:23:53,619
+Günümüze kadar ilmelenerek gelişen bir teknolojiye paralel olarak da ilmelenerek gelişen bir gürültü kirliliği mevcut.
+
+159
+00:23:54,179 --> 00:23:58,599
+Teknoloji geliştikçe bu sorun katlanarak evet artıyor ama bu şekilde devam mı edecek?
+
+160
+00:23:58,599 --> 00:24:01,719
+Yani hep böyle daha fazla mı gürültüye maruz kalacağız?
+
+161
+00:24:02,059 --> 00:24:06,499
+Tabii ki de hayır. Artık gürültü kirliliğinin gerçekten bir sorun olarak görülmeye başlandı.
+
+162
+00:24:06,939 --> 00:24:14,099
+Ve insanlar teknolojik hayaletleri üretirken işte daha az ses çıkartan süpürge, ne bileyim sessiz çalışan...
+
+163
+00:24:14,099 --> 00:24:35,099
+Bu tarz ses diyalıtımına çok daha fazla önem verilmeye başlandı. Ki gerçekten önemli bir konu olduğunu düşünüyorum. Evlerimizde de tabii ki bu durumu sadece üreticiden bekleyemezsin. Çünkü adam buna daha fazla bir maliyet ayırıyor. Ve tüketici bu konuda bilinçlenmezse eğer üretici bu konunun çok fazla üzerine gitmez muhtemelen diye düşünüyorum. O yüzden...
+
+164
+00:24:36,756 --> 00:24:47,456
+Yapmamız gereken bence ilk olarak tüketici insanları bu konuda bilinçlendirmek ve bu konuya daha fazla özen göstermesini sağlamak diyebilirim.
+
+165
+00:24:47,955 --> 00:25:14,195
+Kısaca şöyle bir özet zaten belirttim burada. Teknoloji çok büyük oranda gürültü kirliliğinin sebebi evet ve önemli sağlık sorunları da yaratabiliyor bu gürültü kirlilikleri. Azaltılması için insanların daha bilinçli tüketici haline getirilmesi gerekli. Teknoloji gelişmek zorunda. Bunu hepimiz biliyoruz ki bilgisayar mühendisliği öğrencisiyiz, teknolojinin içindeyiz. Ama yine de teknoloji yanında bu kadar gürültü kirliliğini insanlara getirmemeli diye düşünüyorum.
+
+166
+00:25:15,347 --> 00:25:35,367
+Ses yalıtımı ürünlerde daha çok aranan bir özellik haline getirilmesi gerekir. Ki o bulunsa da daha da üst seviyelere çıkartılması için bir çalışmalar olması gerektiğini düşünüyorum. Bu sadece kişisel sağlığımız için de değil. Yani çevreye verdiğimiz rahatsızlık sonuç olarak kulaklıkla müzik dinlediğiniz zaman ister istemez dışarıya bu sesi verir. Ve yanınızda oturan biri bu sesten rahatsız olabilir.
+
+167
+00:25:36,980 --> 00:25:41,159
+Ki bu da önemlidir yani. Gürültü kirliliğinin önemlisi bir çevre sorunu olarak görülüyor.
+
+168
+00:25:41,159 --> 00:25:47,240
+Yani bence yanlış, evet böyle direkt sizi etkileyen bir etkisi yok.
+
+169
+00:25:47,740 --> 00:25:51,480
+Yani suları kirletmek kadar göze batan bir kirlilik değil.
+
+170
+00:25:52,480 --> 00:25:55,159
+Ama insanın psikolojik olarak...
+
+171
+00:25:56,147 --> 00:26:17,567
+İnsanı psikolojik olarak gerçekten etkilediğini düşünüyorum. Çok fazla gürültüye maruz kaldığım bir günde baş ağrısı, halsizlik, yorgunluk ve mutsuzluk yaşadığımı kendim biliririm mutlaka birçoğumuz bu durumda kalmıştır. Önemli bir konu olduğunu düşündüğüm için bahsetmek istedim. Dinlediğiniz için teşekkür ederim. Kaynakçı bir de bulunuyor.
+
+172
+00:26:17,567 --> 00:26:23,467
+Evet, peki. Ben de teşekkür ederim. Şimdi, neredeyiz? Tamam, peki.
+
+173
+00:26:25,779 --> 00:26:32,819
+Konuşmak isteyen, onu sormak isteyen fikir beyan etmek isteyen arkadaşın varsa bir önce buyursun. Yoksa benim soracağım bir iki bir şey olacak elbette.
+
+174
+00:26:41,299 --> 00:26:47,039
+Önce geçmiş olsun. Şu an herkes astarı öksürüyor. Son derece normal bir şey.
+
+175
+00:26:48,596 --> 00:27:03,296
+Ben de ufak bir alerjik altyapım olduğu için bu gibi konularda hassas olabiliyorum. Ben de çağrıyı şunda buldum. Cebimde sürekli naneli şeker taşıyorum. Reklam vermiş olips taşıyorum falan böyle.
+
+176
+00:27:04,215 --> 00:27:16,496
+Hatta bazen belki dikkat etmişsinizdir. Ders anlatırken de falan ağzımı atmak zorunda kalabiliyorum. O yüzden bazen konuşmamda duraklamalar falan olabiliyor ama o olmasa devam edemeyeceğim. Öyle durumlar oluyor.
+
+177
+00:27:16,596 --> 00:27:19,235
+Ben de çantamda bulunduruyorum hocam o hepsi.
+
+178
+00:27:20,496 --> 00:27:26,215
+Peki, şimdi [öğrenci] bana şu jet sesinin, disibredinin olduğu yansıya bir açar mısın?
+
+179
+00:27:26,316 --> 00:27:29,135
+Tabii hocam. Bir saniye.
+
+180
+00:27:30,036 --> 00:27:30,556
+Evet.
+
+181
+00:27:33,491 --> 00:27:50,211
+Peki, şimdi ağır sanayi 100 desiber, jet motoru 120 desiber, gök göltüsü 110 desiber. Peki, şimdi 100 ile 110 diyelim. Ağır sanayinin 100 desiberi ile gök göltüsünün 110 desiberi arasında %10 mu fark var acaba?
+
+182
+00:27:51,508 --> 00:28:05,827
+Şöyle hocam, zaten bu yapılan ortalama ölçümler olduğu için birazcık da, yani evet ağır sanayi ortamının tam ortasında bulunduğunuz ve çevrenizde bir sürü bu şeyde çalışan makine olduğu zaman muhtemelen daha yoğun bir sese maruz kalırsınız.
+
+183
+00:28:05,827 --> 00:28:19,508
+Ama bu genel ortalama bir ölçüm yapılmış. Yani bu konu hakkında da gerçekten çok fazla örnekle bulmak mümkün değil internette. Bulabildiğim örneklerden bazıları bunlar da ama tahmin ettiğim kadarıyla ağır sanayi yerleri dediğini alamıyorum.
+
+184
+00:28:19,508 --> 00:28:28,307
+Banda çok bir sürü makinenin kullanıldığını değil de birkaç ör makinenin kullanıldığı bir yorum yapılıyor. Ama evet aralarındaki fark %10.
+
+185
+00:28:28,980 --> 00:28:46,840
+Şimdi o tam %10 olmayabilir. Onu bir bakmak lazım. Bildiğim kadarıyla logaritmik bir ölçü. Yani üstel olarak artan bir ölçü. O yüzden 100 ile 110 arasında sadece %10 fark değil de bize verdiği rahatsızlık açısından çok çok daha fazla rahatsızlık olabilir.
+
+186
+00:28:46,840 --> 00:28:56,980
+Bir ona baktınız mı diye merak ettim. Bir ona bakın tamam mı? Mesela depremlerde kullanılan bu Richter ölçü.
+
+187
+00:28:56,980 --> 00:29:17,259
+Şey de logaritmik bir ölçek. Yani örneğin, Allah korusun ama 6.0 ile 6.1 şiddetindeki deprem arasında arada sadece işte nokta bir fark yok. Logaritmik olduğu için aradaki fark çok daha yıkıcı veya çok daha hissedilir olabiliyor mesela. Bir ona bakın. Madem bu araştırmaya başladınız. Onu diyeyim.
+
+188
+00:29:24,980 --> 00:29:49,940
+Ne bileyim, gürültü problemi olur mu filan dedim. Şahsen çok olmadı. Ama bazen yani çok sabah erken saatinde diyelim normal trafik gürültüsünün çok olmadığı ve genel olarak sesin az olduğu bir zamanda bazen bir uçak motorunun kalkmaya, uçak motorunun herhalde uçak pistten kalkarken olacak o hızlanma sesinin artışını bazen duyabiliyorum. Çok ember. Öyle söyleyeyim.
+
+189
+00:29:50,480 --> 00:29:52,820
+Peki, tamam. Teşekkür ederim. Elinize sağlık.
+
+190
+00:29:53,160 --> 00:29:54,500
+Ben teşekkür ederim.
+
+191
+00:29:55,440 --> 00:29:58,580
+Peki, şimdi [öğrenci], [öğrenci]. Müsait misiniz?
+
+192
+00:30:05,044 --> 00:30:05,964
+Katılışlar.
+
+193
+00:30:08,444 --> 00:30:13,184
+Tamam. O zaman buyurun. Ekranımızı paylaşın. Başlayın.
+
+194
+00:30:33,940 --> 00:30:34,880
+Geliyor mu ekran?
+
+195
+00:30:35,720 --> 00:30:36,420
+Geldi, buyur.
+
+196
+00:30:37,180 --> 00:30:42,220
+Günaydın arkadaşlar. Bugün Akgü'ye nükleer santraller hakkında bir sunum yapacağım.
+
+197
+00:30:43,140 --> 00:30:47,960
+Ama bu konuya geçmeden önce genel olarak bir nükleer santraller hakkında bilgi vereceğim.
+
+198
+00:30:49,760 --> 00:30:57,000
+Nükleer santraller, nükleer yakıtların kullanılıp elektrik enerjisine çevrildiği tesislerdir.
+
+199
+00:31:00,019 --> 00:31:08,699
+İki tank yani 600 ton petrolle üretilebilecek enerjiye eşit miktarda enerji verir. Bu yüzden verimli olarak gösterilir.
+
+200
+00:31:08,699 --> 00:31:15,139
+Tabii bunun bazı negatif yönleri de var. Onlar bir sonraki sınavı da yapacağız.
+
+201
+00:31:16,339 --> 00:31:22,639
+Nükleer santralarda radyoktif maddeler kullanıldığından dolayı birçok güvenlik protokolünü de içinde barındırıyor bu işlemler.
+
+202
+00:31:24,359 --> 00:31:27,479
+Burada nükleer santral fotoğrafı görüyoruz.
+
+203
+00:31:29,268 --> 00:31:53,567
+Şimdi nükleer enerjiyi savunanların tarafına bakalım. Nükleer enerjinin karbon salınımını azalttığını ve çevre için faydalı olduğunu düşünüyorlar. Bir de daha önce dediğim gibi yakıt açısından da bir verimliliği var. Futil yakıtları kullanmaya mecbur kalmıyoruz. Nükleer enerji karşılıkları ise bunun çevreye olan zararlarına dikkat çekiyor.
+
+204
+00:31:54,675 --> 00:32:08,196
+Herkesin aklında olan çarnızları kazaları örnek vererek. Bir de tabii ki işin daha da ciddi tehlike boyutları var. Çünkü nükleer santrali sahip bir ülke nükleer silahı kullanabilir.
+
+205
+00:32:10,655 --> 00:32:19,016
+Nükleer enerji santrali deyince hemen akla güvenlik konusu geliyor. Bu santraller ne kadar güvenli? Bu konu çok tartışmalı.
+
+206
+00:32:19,539 --> 00:32:35,119
+Kaza genel olarak 10 yılda bir falan yaklaşık olarak gerçekleşiyor. Dünya ölçeğinde büyük kaza. Olduğunda çok ciddi oluyor ama genel olarak olmuyor tabii. Çok denetimleri var bunun.
+
+207
+00:32:47,220 --> 00:32:57,839
+Bunun yapılmasına karar veriliyor. Tabii ki bizde o kadar gelişmiş bir teknoloji olmadığı için bu teknolojide ve hakim bir ülke olan Rusya'yla iş birliği yapmak durumunda kalıyoruz.
+
+208
+00:32:58,319 --> 00:33:08,099
+Siyasi ve politik nedenlerden dolayı. Ama o aralar bir duraklama oluyor. En son 2010 tarihinde Rusya'yla bir anlaşma imzalıyoruz.
+
+209
+00:33:08,099 --> 00:33:10,599
+Akbiyonuk Ergüt Santrali'nin yapılması için.
+
+210
+00:33:12,051 --> 00:33:35,731
+Yine bir 8 senelik duraklama oluyor inşaatın başlaması için. 2018 tarihinde birinci güç üniversitinin temel atması düzenleniyor. Bizim ülkemize yapılacak olan bu Mükner Gürsantrali Projesi, Rus tasarımı 4 tane modern reaktöre sahip toplam 4800 MW güç kabasiteli ve tamamlandığı zaman da ülkenin %10 enerji ihtiyacını karşılaması bekleniyor.
+
+211
+00:33:37,971 --> 00:33:40,372
+Mersin'deki inşaat sanatörlüğü fotoğrafı.
+
+212
+00:33:42,072 --> 00:33:44,832
+Şimdi Akkü nükleer güç santralinin kontrolü kimde?
+
+213
+00:33:45,711 --> 00:33:47,592
+Maalesef Rusya'da bunun kontrolü.
+
+214
+00:33:48,492 --> 00:33:53,152
+Ama 20 yılın sonunda %51'i onlarda kalacak. Kontrolü bize geçecek.
+
+215
+00:33:54,492 --> 00:33:56,012
+Akkü neye göre seçildi?
+
+216
+00:33:56,792 --> 00:34:01,512
+Şimdi nükleer santrallerin yeri belirlenirken yakın olması çok önem taşıyor.
+
+217
+00:34:01,512 --> 00:34:04,352
+Çünkü reaktörler deniz suyunu alıp soğuyor.
+
+218
+00:34:05,203 --> 00:34:29,943
+O yüzden de Türkiye'de Mersin ili seçildi. Santral ne zaman açılacak? Dört reaktöründen ilki, Cumhuriyet'in 100. yılının özel bir yıl olması nedeniyle o zaman açılacak. Ona yetiştirilmeye çalışıyor. Şu anda son aşamaya geleni de inşaatlan. Diğer reaktörler ise birer yıl arayla açılacak. Tam kapasiteye 2026'da ulaşacak. Ne kadar elektrik üretecek?
+
+219
+00:34:30,452 --> 00:34:57,032
+Dediğim gibi 4 reaktörü var. Her biri 1-200 MW. Ama bir tanesi kendi ihtiyacı için kullanılıyor. Yani 3600 MW elektrik verecek. Bu Türkiye'nin elektrik ihtiyacını ne kadar karşılayacak? Planlanan %10. Ama açıldığı zaman %7.7'sini karşılayacak. Ve zaman geçtikçe de bu oran düşecek. Çünkü Türkiye'nin elektrik ihtiyacı devamlattığı için.
+
+220
+00:34:58,228 --> 00:35:19,828
+Elektrik ücretlerinde bir azalma görecek miyiz peki bundan dolayı? Rusya'yla yaptığımız anlaşma dolar üzerinden. Bu yüzden bir tavan ve taban fiyat aralığı var. O yüzden de dolara bağlı olduğu için son kullanıcıya ulaştığında bir ucuzluk olması zor gözüküyor.
+
+221
+00:35:25,684 --> 00:35:43,244
+Halkı açık olarak duyurulmadı tam. Ama Rusya'nın almayacağını biliyoruz. Türkiye'de kalacak. Türkiye bunu ne yapar? Büyük ihtimal toroslarda depolar. Çevreciler bu konu hakkında bir sürü elem yaptı. Bunu da slide'ıma taşımak istedim.
+
+222
+00:35:51,956 --> 00:36:04,816
+Bu nükleer enerjinin istihdam yarattığı sözlerine de şey diyor, bu istihdam geçici inşaat olduğu için, inşaat tutuktan sonra bu kadar işçi işsiz kalacak sonuç olarak diye bir görüş sunuyor.
+
+223
+00:36:06,176 --> 00:36:13,816
+Bir de bu suyu ısıtıp denize verdiği için bir deniz yanları açısından da bakan bir taraf var.
+
+224
+00:36:14,324 --> 00:36:33,784
+Bunun çevreye ve balıkların ölümüne neden olacağını düşünüyor. Mersin'in yükseltaşlık platform sözcüsü. Bir de Mersin seçildi ama oranın deprem riski olduğu da söyleniyor. Bu da tartışmalar arasında. Bunlar da kaynakçım.
+
+225
+00:36:36,484 --> 00:36:37,963
+Beni dinlediğiniz için teşekkür ederim.
+
+226
+00:36:38,324 --> 00:36:54,644
+Evet, teşekkürler. [öğrenci] çok verimli kullandı, tam 6 dakikada. Soru soran arkadaşım varsa, tartışmak isteyen arkadaşım varsa birkaç kelime lütfen bir buyursun. Çünkü bu müsait bir konu. Yoksa ben ilaki bir şeyler söyleyeceğim yine.
+
+227
+00:36:57,204 --> 00:37:06,504
+Peki. Şimdi şey sorayım öncelikle. Birkaç not aldım ama belki hepsini konuşmayalım da birkaç tanesini konuşalım.
+
+228
+00:37:08,307 --> 00:37:26,507
+Siz şahsen veya bu sunumu hazırlarken yaptığınız araştırmalarda bu özellikle deniz yaşamına verilecek zarar konusunda ve deprem riski konusunda nelerle karşılaştınız veya nelerle düşünüyorsunuz?
+
+229
+00:37:36,307 --> 00:37:47,088
+Orman yangınlarının fazlalığı falan geldi. Bir ekstradan acaba bir yangın riski de olabilir mi? Bu riskler konusunda ne okudunuz, ne düşünüyorsunuz? Biraz anlatır mısınız?
+
+230
+00:37:47,088 --> 00:37:55,947
+Bu olaya bakış biraz politik diye düşünüyorum ben. İnsan neyi tutuyorsa ona göre savlar üretiyor bu konuda. Ama...
+
+231
+00:37:56,211 --> 00:38:11,412
+Bu denize vereceği zararlar bu kesin bilimsel bir gerçek. Çünkü deniz suyunu ısıtıyor. Mutlaka bir etkileri olacak bunun. Deprem açısından ise Türkiye zaten riskli bir bölge ama Mersin'in o kadar da riskli olacağını düşünmüyorum ben.
+
+232
+00:38:14,547 --> 00:38:33,307
+Peki. Peki şey sorayım. Şimdi mesela Japonya'da da gerçi kötü örnek yok. Fukushima, Santral'e ama deniz kıyısında ve deprem kısmını eledik diyelim. Deniz kıyısında. Acaba orası denize zarar vermiyor muydu? Deniz yaşamına zarar vermiyor muydu?
+
+233
+00:38:33,307 --> 00:38:42,427
+Ya da yoksa Japon'la dikkatli bir çevre değerlendirme raporu hazırlayıp düşünüp zaten orada acaba biyoçeşitlik az varsın buraya.
+
+234
+00:38:42,547 --> 00:38:44,767
+Olsun mu dediler acaba falan? Ne düşünüyorsun?
+
+235
+00:38:44,767 --> 00:38:55,267
+Tam orada da bu çevre değerlendirme raporu dediniz güzel bir nokta. Bizim chat raporu hakkında bir sürü hukuksal davalar da sürüyor tam olmadığı hakkında.
+
+236
+00:38:55,267 --> 00:39:09,167
+Yani adamların da Japon olduğu düşünülürse büyük ihtimalle bizden daha ciddi önlemlerle gerçekleştirebiliyor. Bir de Akdeniz biliyorsunuz biraz daha küçük bir şey. Japonlar ona okyanusa yarıyordur. Etkileri daha yayılıyordur.
+
+237
+00:39:09,523 --> 00:39:11,523
+Bize daha ciddi etkiler olur.
+
+238
+00:39:11,583 --> 00:39:37,463
+Evet, evet. Hele ki Akdeniz'de endemik türler de olabilir. Endemik de kastettiğim sadece o belirli bir bölgedeki şartlara özel yaşama endemik deniz. Örneğin yağmur olmanlarındaki çeşitli yaratıklar veya Avustralya'daki koalalar falan gibi. Peki, bir şey daha söyleyeyim. Nükleer atıkların yönetimi konusunda bir şeyler okudunuz mu, karşılaştınız mı ya da araştırdınız mı?
+
+239
+00:39:37,463 --> 00:39:37,943
+Evet.
+
+240
+00:39:38,739 --> 00:40:00,000
+Bu konuyu ben ara sıra görünce de YouTube'dan bazı videolar izliyorum. Gelişmiş ülkeler artık bunu depolamak yerine tekrar kullanma yoluna gidiyorlar. Biraz daha maliyetli bir yöntem. Ama çevre açısından daha güvenli tabii. Ama kullanamadıklarını da mesela üçüncü taraf ülkelerde yer altı depolarında depolarında depolarında.
+
+241
+00:40:00,000 --> 00:40:18,720
+Bunun için hatta kremet sığına denen yerler de yapılıyor mesela. Bunun hakkında etik tartışmalar da var mesela. Bundan yüz binlerce yıl sonraki insanlara bir nükleer müze bırakıyoruz. Bunun hakkında mesela şeyler de tartışılıyor. Bunun girişine nasıl işaretler koyalım ki insanlar bunun için bir ton açmasın diye tartışmalar falan sürüyor.
+
+242
+00:40:19,640 --> 00:40:19,860
+Evet.
+
+243
+00:40:20,040 --> 00:40:26,620
+Yani genelde insandan uzak bir yer altında depolama düşüncesi sürüyor en güvenli yöntem olarak.
+
+244
+00:40:27,315 --> 00:40:47,536
+Tamam. Peki. Evet. Gerçekten aşırılaşım. Ben de bazen YouTube'da popüler videolar, kanallar falan içerisinde böyle konuları izliyorum, bakıyorum. Ondan sonra açığıma. Bir tane bir Alman profesör hocanın bir ismini yolluyorum. Çete.
+
+245
+00:40:47,967 --> 00:41:15,947
+Sabine Horstentfelder, kendisi bir teorik fizikçiydi yanılmıyorsa. Böyle konularda enteresan, aydınlatıcı, çok güzel anlatımları oluyor. Mesela gerek bu nükleer atlıklarla ilgili, gerek yenilenebilir enerjiyle ilgili, genel santrallerin güvenliğiyle ilgili falan enteresan şeyler anlatıyor. Ben de oralardan bir popüler kültür birikimisi.
+
+246
+00:41:15,967 --> 00:41:22,628
+Daha da aslında tartışsak tartışırdık ama peki son olarak şunu sorayım.
+
+247
+00:41:22,628 --> 00:41:31,028
+Şimdi nükleer santralerde şu an nükleer enerji etmek için kullandığımız teknoloji fişin parçalanma.
+
+248
+00:41:31,168 --> 00:41:38,467
+Yani büyük bir atom çekirdeğinin küçük parçacıkları ayrılarak bozulmasından kaynaklanan bir enerji türü.
+
+249
+00:41:38,867 --> 00:41:43,967
+Bir de bunun tam tersi olarak çok sıcak ortamlarda güneşin çekirdeğindeki yani güneşin...
+
+250
+00:41:43,967 --> 00:41:55,407
+Füzyon'un Türkler tepkimesi de birleşme, fusion şeklinde. Füzyon diye Türkçeleştiriyoruz. Teknolojisi var. Hiç füzyon teknolojisine baktınız mı? Denk geldiniz mi?
+
+251
+00:41:55,568 --> 00:42:02,947
+Evet. Hocam onu da dediğim gibi YouTube'daki bazı... Özellikle Çin'de bu teknoloji üzerinde çok çalıştık.
+
+252
+00:42:04,028 --> 00:42:04,668
+Evet.
+
+253
+00:42:04,668 --> 00:42:10,688
+Bir de tüm dünya ülkelerinin ortak olarak çalıştığı. Mansa'da bir merkez var galiba bu füzyon üzerine.
+
+254
+00:42:11,119 --> 00:42:20,960
+Ama detaylı teknik bilgim yok tabii. Ama farklı bir teknoloji olarak çok önemli bir yere sahip. Şu an çok yaygın olmasa da ilerideki geleceğin teknolojileri arasında yer aldı.
+
+255
+00:42:21,215 --> 00:42:39,695
+Evet, kesinlikle. Yani şu aşamada, yani şöyle söyleyeyim, birleşme tepkimesini yürütebilmek, ortaya çıkartabilmek için gerekli sıcaklık, basınç veya manyetik ortamı elde etmek çok fazla enerjiye mağaz oluyor.
+
+256
+00:42:39,695 --> 00:42:47,695
+O yüzden örneğin sisteme bütün olarak baktığınızda buna 10 birim enerji giriş veriyorsunuz, 8 birim enerji çıkıyor.
+
+257
+00:42:49,215 --> 00:43:10,135
+Enerji üretemiyorsunuz aslında. Enerji kaybediyorsunuz. Bu tip vektörlerde şu kadar kazanç oldu falan diyorlar ama o sadece sistemin küçük bir en çekirdekteki güç üreten parçasına bakıyorlar. Genellikle diğer soğutma, manyetizma, şu bu şeylerine baktığınızda şu an hala bu enerji üretme yöntemi değil.
+
+258
+00:43:10,135 --> 00:43:17,215
+Ama bundan 50 yıl sonra mesela 100 yıl sonra bu teknoloji fizik hali uygulamayacak.
+
+259
+00:43:17,215 --> 00:43:45,155
+Bu nükleer enerjinin güvenlik sorunu çok büyük oranda ortadan kalkacak. Çünkü şu anki teknoloji parçalanma bir kere kontrolsüz şekilde başladı mı parçalışıklar sürekli parçalanmaya devam ediyor. En büyük problem de bundan kaynaklanıyor aslında. Fakat birleşme tepkimesi ısıyı veyahut da manyetizma bir kaza alıp da azalırsa kendiliğinden sönümlenen bir teknoloji.
+
+260
+00:43:45,215 --> 00:44:05,215
+O yüzden ne atık üretiyor, ne kontrolsüz tepkimi hissedip oluyor falan. Olursa vallahi petro enerjisinden de bağımlılığımız azalır, gider. Dünya bambaşka bir yer haline gelebilir belki. Hayırlısı bakalım. Biz görmez biz ama neyse.
+
+261
+00:44:05,972 --> 00:44:25,432
+Peki, evet teşekkür ederim. Daha fazla konuşuruz ama bunun üstüne biraz da konuşmak isteyelim. Daha sık aslamında sürdürülebilir kalkınmadan da bahsediyoruz ve doğal kaynakların sınırı yenilenemeyen kaynakların dikkatli kullanımı konusundan da bahsettiğimiz için buna bir özellikle değinmek istedim.
+
+262
+00:44:25,432 --> 00:44:33,312
+Bir tek alternatif olarak söylemek istediğim nükleer enerjiye alternatif olarak güneş ve rüzgar enerjisi.
+
+263
+00:44:33,972 --> 00:44:57,192
+Bunlar çok önemli ve ülkemiz de bu konuda doğal bir avantaja sahip. Fakat bu yenilenebilir enerjideki en büyük sorun, o enerjinin oluşur oluşmaz kullanma gerekliliği. Yani rüzgar estiği zaman veyahut da güneş enerjisinden olan enerjiyi ya hemen şebekeye vermeniz gerekiyor ama şebeke her zaman o kadar yüksek güç talip etmeyebiliyor.
+
+264
+00:45:01,972 --> 00:45:18,812
+Bu nedenle yenilenebilir enerji şu an çok ciddi bir alternatif olarak gözükmüyor.
+
+265
+00:45:18,812 --> 00:45:23,711
+Tabii ki kullanılması lazım. Oranın mümkün olduğu kadar arttırılabilmesi lazım.
+
+266
+00:45:24,032 --> 00:45:29,452
+Ama gerek mesela bu işin en kaynaklarının verimli olduğu.
+
+267
+00:45:29,907 --> 00:45:42,648
+Ülke biz değilizdir herhalde ama o biz bile olsak, yeniden biz tek olarak bu kaynaklardan enerji ihtiyacımızı karşılayamayacağız gibi gözüküyor. Bu konularda merak eden arkadaşlarım araştırmalar yapabilirler.
+
+268
+00:45:43,668 --> 00:45:55,347
+Yani hobi olaraktan olabilir. Peki, teşekkür ederim. Şimdi sırada [öğrenci] var. Hazırsanız buyurun ekran paylaşımınızı açın.
+
+269
+00:45:55,807 --> 00:45:57,887
+Merhaba hocam, hemen paylaşıyorum.
+
+270
+00:46:05,619 --> 00:46:08,219
+Gözüküyor mu şu anda tam ekran olarak?
+
+271
+00:46:08,219 --> 00:46:10,219
+Geldi sunum modunda ve geldi.
+
+272
+00:46:10,800 --> 00:46:16,639
+Tamamdır, başlıyorum. Ben [öğrenci]. Merhaba arkadaşlar, günaydın öncelikle hepinize.
+
+273
+00:46:16,860 --> 00:46:23,219
+Bugün mobil uygulamayı yayınlamak istenen arkadaşlarımız varsa eğer Google Play'deki uygulamaları için...
+
+274
+00:46:23,360 --> 00:46:46,380
+ESO nedir? App Store Optimization ve nasıl yapılır? Kısaca bundan bahsedeceğim. Bir giriş seviyesinde bilgilendirme olacak. Hemen başlayayım. Önce ESO'nun tanımını yapacağım. Daha sonra işte keywordler nedir? Nasıl önceliklendirilir? Nasıl kullanılır? Bunlardan bahsedeceğim. Bu şekilde devam edeceğim. Uygulamamızın nasıl daha fazla indirme alabileceğini konuşacağız.
+
+275
+00:46:47,188 --> 00:47:05,548
+Bu şekilde bitireceğim. App Store Optimization kısaca nedir? Uygulamamızın stordaki, marketteki görünürlüğünü arttırarak daha fazla indirme almasını sağlamaktır. İndirme bizim için çok önemli. Daha fazla insana ulaşmamız için.
+
+276
+00:47:06,291 --> 00:47:33,711
+Burada Advanced App Store Optimization kitabındaki açıklamasını da bulabilirsiniz. Daha sonra slide paylaşılırsa eğer. Bir mobil uygulama kullanıcısının yaşam döngüsünü beş farklı aşamada sınıflandırabiliriz. Önce kullanıcıyı edineriz, sonra kullanıcımızı aktifleştirmek isteriz. Tekrar ve tekrar uygulamamızı kullanmasını isteriz. Başkalarına tavsiye etmesini isteriz ve son aşamada bize gelir getirmesini sağlamasını isteriz.
+
+277
+00:47:34,291 --> 00:47:54,172
+Arar olarak tanımlayabiliriz, kısaltabiliriz. Bu şekilde bir sınıflandırmamız var. Bizim için önemli olan acquisition yani kullanıcıyı edinmek kısmı. ESO bununla ilgileniyor. Grafiksel gösterimde farklı şekillerde bulabilirsiniz. Sektörlere göre değişim gösterebiliyor.
+
+278
+00:47:55,188 --> 00:48:18,907
+Dediğim gibi biz Ekoz için edinmeyle ilgileniyoruz. Sağ alt kısımda ESO'yu görebilirsiniz. Edinme sadece bundan ibaret değil. Reklam vererek de indirme elde edebiliriz. Fakat bunun bize bir maliyeti var. ESO organik indirmeyi elde edildiği için bizden para çıkmıyor. Ücretsiz bir şekilde indirmeyi elde ediyoruz. Ve bu özellikle bireysel geliştiriciler için çok önemli.
+
+279
+00:48:20,307 --> 00:48:42,327
+Organik indirme dediğim gibi kullanıcının doğrudan marketten kendisinin aratma yaparak indirme almasını sağlaması. Mesela reklam verdiğimiz zaman zaten en üstte reklam kısmında uygulamamız listeleniyor. Fakat dediğim gibi bizden para çıkıyor. Organik indirmede doğal olarak bizim kendimiz üst sırada listelenmeyi hedefliyoruz.
+
+280
+00:48:42,804 --> 00:48:56,324
+Bu şekilde indirme almak istiyoruz. Burada bir gösterim var. İşte arama çubuğuna yazdığımız zaman, arattığımız zaman, gelen uygulamalar arasında seçip indirdiğimiz zaman kendimiz bu organik indirme oluyor.
+
+281
+00:48:56,943 --> 00:49:00,784
+Arattığımız kelimeyle keyword diyoruz. Anahtar kelimemiz.
+
+282
+00:49:02,003 --> 00:49:22,244
+Bu anahtar kelimelerde, hedeflediğimiz anahtar kelimelerde ilk üç sırada çıkmamız çok önemli. Çünkü indirmelerin çok büyük kısmını bu ilk üç sıradaki uygulama alıyor. Bunun için hedefimiz ilk üç uygulama arasında çıkmak. Amacımız bu.
+
+283
+00:49:24,211 --> 00:49:52,192
+Bunun için bütün keywordleri hedefleyemeyiz. Bütün anahtar kemelerde listelenmemiz gibi bir şey söz konusu değil. Hangi keywordlerde listelenmek istiyorsak bunun önce bir araştırmasını yapmamız gerekiyor. Nasıl bir araştırma yapacağız? Bütün olasılıkları listeleyeceğiz. Hangi anahtar kemelerde listelenebiliriz? Bunun bir araştırmasını yapacağız. Bu anahtar kemelerle uygulamamız ne kadar alakalı? Bunun için bir puan.
+
+284
+00:49:52,211 --> 00:50:01,452
+Bu çok önemli. Alakasız kelimelerde listelenmek, unutul sonuçlara neden olabilir. Bu anahtar kelime yeterli hacme sahip mi?
+
+285
+00:50:02,516 --> 00:50:28,815
+Yeterince aratılıyor mu? Bu da çok önemli. Aratılmayan bir anahtar kemeler listelenmemizin bir anlamı yok. Ve bu anahtar kemelerde üst sıraya çıkmamız ne kadar zor? Rekabet edeceğimiz uygulamalar ne kadar büyük? Bunun bilgisi önemli. Bu bilgileri biz nasıl elde edebiliriz? Kendimiz ulaşabilmemiz çok zor. Bunun için ESO tool'larını kullanıyoruz. Burada bazı ESO tool'larını ben listeledim.
+
+286
+00:50:30,516 --> 00:50:46,355
+Bu file action'ı görebilirsiniz. Tabii bunlar ücretli yazılımlar. Ücretsiz olarak kullanabileceğimiz app figures var. GitHub Student Developer Pack ile bir yıl ücretsiz bunu kullanabiliyoruz. Bunun da bilgisini burada vermiş olayım. Ben de kullanıyorum şahsen.
+
+287
+00:50:47,123 --> 00:51:08,463
+Mesela bu sitede bir anahtar kelimeyi arattığım zaman değerli. Bunun visibility skorunu burada görebiliyorum ve zorluk derecesini buradan elde edebiliyorum. Bu iki önemli bilgiyi buradan elde ediyorum. Ama uygulanma ne kadar alakalı olduğu kısmı bunu kendim belirliyorum.
+
+288
+00:51:09,876 --> 00:51:19,476
+Keyword'leri açtırırken, keyword'lerimiz uzunluk durumuna göre, içerdiği kelime ve bilgiye göre short tail, long tail olarak sınıflandırabiliyoruz.
+
+289
+00:51:20,135 --> 00:51:26,796
+Long tail keyword'lerimiz daha az arama hacimine sahip, çünkü kelimeyi uzatıyoruz, daha fazla kelime ekliyoruz.
+
+290
+00:51:27,476 --> 00:51:36,096
+Daha az arama hacimine sahip ama daha fazla ayrıntı içerdiği için daha düşük zorluğa sahip, daha kolay bir şekilde üst sıralara çıkabiliriz.
+
+291
+00:51:37,876 --> 00:52:00,155
+Dönüşüm oranları daha fazla. Burada bir örnek verdim. Mesela bir günlük anahtar kelimesini düşünelim. Günlük olarak arattığımızı ve şifreli günlük olarak arattığımızı düşünelim. Şifreli günlük daha uzun ve daha ayrıntı içerdiği için long tail. Ama daha az arama hacmesi sahip. Neden? Günlük hem şifreli hem şifresizleri de kapsıyor.
+
+292
+00:52:00,788 --> 00:52:11,268
+Daha fazla aratmaya sarp. Ama şifreli olarak günlük uygulaması indirmek isteyen birisi şifreli günlük yazarak indirdiği zaman indirme ihtimali de daha fazla.
+
+293
+00:52:12,340 --> 00:52:31,152
+Dönüşüm oranı daha fazla. Daha sonra bir sürü keyword'ümüzü yazmıştık. Skorlarını da yazdık kenarlarına. Arama hacmi ve zorluk derecelerini. Şimdi artık önceliklendirmemiz gerekiyor. En önce hangi anahtar kelimeleri hedeflememiz gerekiyor. Bunun için de bir...
+
+294
+00:52:31,152 --> 00:52:39,972
+Karşılaştırma yapmamız lazım. Karşılaştırmayı nasıl yapıyoruz? Alakası yüksek, hacmi yüksek, zorluğu düşükleri hedefleyeceğiz.
+
+295
+00:52:40,628 --> 00:52:45,307
+Bunun için de Search Term Value olarak bir formül uygulayabiliriz.
+
+296
+00:52:45,788 --> 00:52:55,108
+İşte volume skorumuzla alaka düzeyini çarpıp zorluk derecesine bölersek çok basit bir şekilde bir formül ortaya çıkarabiliriz.
+
+297
+00:52:55,108 --> 00:53:01,008
+Daha sonra bunu büyükten küçüğe doğru sıraladığımızda en üsttekiler hedeflememiz gereken anahtar kelimeler oluyor.
+
+298
+00:53:01,827 --> 00:53:06,408
+Peki bu keywordleri nerede kullanacağız? Google hangi alandır indeksleniyor? Hemen bunlara bakalım.
+
+299
+00:53:08,628 --> 00:53:28,268
+Kısa ve uzun açıklaması var. Bu kısımlar indeksleniyor. Bizim geliştirici hesabımızın adı package name'imiz ve kullanıcı yorumlarımız da indeksleniyor. Fakat bu kısım daha sonraki aşama. Öncelikle bizim başlık ve kısa ve uzun açıklama kısmına odaklanmamız lazım giriş seviyesinde.
+
+300
+00:53:28,916 --> 00:53:56,236
+Burada Advanced App Store Optimization kitabında hangi alanların indekslendiği bilgisini de görebilirsiniz. App Store ve Google Play farklı olarak sınıflandırmış. Farklı alanlar indekseniyor. Bu da bir mağaza girişi. Burada uygulama adını, kısa ve uzun açıklama kısmını görebilirsiniz. Buralara yazıyoruz. Uygulama adımız 30 karakterle sınırlı. Kısa açıklamamız 80 karakter. Uzun açıklamamız da 4000 karakterle sınırlı. Çok uzun bir alan.
+
+301
+00:53:56,916 --> 00:54:10,336
+Verimli bir şekilde kullanabiliyoruz. Ama daha önemli kısım uygulama başlığımız ve kısa açıklamamız. Daha az alan harcadığımız için daha kısıtlı olduğu için daha verimli kullanmamız gerekiyor.
+
+302
+00:54:10,336 --> 00:54:17,675
+Bunun için en önemli keywordlerimizi title ve short description'da kullanmaya çalışıyoruz.
+
+303
+00:54:18,963 --> 00:54:32,784
+Long Description'da her keyword'ü 3 veya 5 aralığında kullanmamız gerekiyor. İlk paragraflar daha fazla indeksleniyor. Önemli keyword'lerimizi burada kullanırsak daha iyi olur.
+
+304
+00:54:34,164 --> 00:54:47,144
+Cümlemiz ve paragraflarımız anlamlı olmalı. Yani keywordleri arka arkaya sıralayarak kullanırsak bunu Google algoritması fark edebilir ve daha olumsuz sonuçları olabilir. Yükselmek yerine alçalabiliriz.
+
+305
+00:54:48,019 --> 00:55:11,679
+Dediğim gibi bu bir algoritma kontrolü diyor bunu. Bunun için bu açıklamalarımızı başlamamızı yazarken algoritmaya da uygun şekilde yazmamız lazım. Aslında bu kısımlar insanların okuyacağı kısımlar olarak nitelendiriliyor. Fakat bizi değerlendiren makine, makinenin değerlendirdiği şekilde yazarsak bizim için daha uygun olur. Bunun için Cloud Language API var.
+
+306
+00:55:12,307 --> 00:55:27,307
+Google'ın kendi hepsi. Buradan metinlerimizi yazarak Google'ın hangi kelimeleri önce değerlendirdiği bilgisini burada görebiliyoruz. Bu da bir değerlendirmacı olarak kullanılabilecek bir şey.
+
+307
+00:55:28,596 --> 00:55:41,556
+E-SR'ın ilk aşamasını yaptığımızı düşünelim. Keyword'lerde artık üst sıraya çıktığımızı düşünelim. İlk aşamayı tamamladık. Şimdi indirme almamız gerekiyor. Nasıl indirme alacağız? Kullanıcı arattı.
+
+308
+00:55:42,195 --> 00:55:53,096
+Uygulamaları gördü. Uygulamamız ilk üçte çıkıyor diyelim. Bizi diğer uygulamalardan ayırt edecek bir şey olması lazım. Bu kısımda uygulamamızın logosu en önemli faktör.
+
+309
+00:55:53,096 --> 00:56:10,195
+Burada sol tarafta görüyorsunuz uygulamalar listelenmiş. En çok insanın dikkatini ne çekiyor? Tabii ki uygulamanın ikonu çekiyor öncelikle. Daha sonra uygulamanın alt kısımda bir yıldız puanı var. Bu da önemli. Düşük yıldız puanlı uygulamaların indirilmesi.
+
+310
+00:56:10,195 --> 00:56:32,775
+Burada gördüğünüz gibi hepsi dört buçuğun üzerinde neredeyse. Uygulama boyutu da bir başka önemli faktör tabii ki. Dediğim gibi uygulama puanı da önemli bir faktör. Dört puan altındaysa uygulamanız indirme miktarı çok daha fazla düşüyor. Dört puan üstü önemli. Daha da önemlisi dört buçuk puan üstü olmak.
+
+311
+00:56:34,099 --> 00:56:41,980
+Puan çok önemli bir faktör dediğim gibi. Onun için uygulamamızı da doğru zamanlarda kullanacağını yıldız ve yorum istememiz gerekiyor.
+
+312
+00:56:44,211 --> 00:57:05,192
+Daha fazla puanımızın olması için. Bu aşamada da kullanacağının dikkatini güzel bir logo ile çektik. Artık uygulamamızın sayfasına yönlendiriyoruz. Bu aşamada uygulamamızı indirecek mi, indirmeyecek mi buna karar verecek. Bu sayfada da en önemli faktör ekran görüntülerimiz. Şöyle gösterelim.
+
+313
+00:57:05,599 --> 00:57:23,000
+Ekran görüntülerimiz artık uygulamamıza tıkladı. Bu aşamada yükleyip yüklemeyeceğine kar verecek. İlk üç ekran görüntümüz ekranda gözüküyor baştan. Kullanıcının kaydırmadığını varsayarsak. Bunun için ilk üç ekran görüntüsünde vermek istediğiniz mesajı vermemiz gerekiyor.
+
+314
+00:57:23,000 --> 00:57:24,380
+Burada.
+
+315
+00:57:25,652 --> 00:57:42,731
+Burada da kullanıcı çok kararsız kalırsa uygulamamızın yorumlarına bakacak. Bu aşamada da fazla uygulama yorumu olursa iyi etkisi olacak ve puanımız da yüksekse, olumlu yorumlar varsa kullanıcı indirmek isteyecektir.
+
+316
+00:57:42,731 --> 00:57:53,652
+Bunun için çevremizden bu konuda yardım istersek, uygulamayı ilk yayınladığımız zamanlarda arkadaşlarımızdan, ailemizden uygulamamıza yorum ve yıldız vermesini istersek...
+
+317
+00:57:53,652 --> 00:58:14,311
+Çok olumlu bir katkısı olacaktır. Dönüşümünü de arttıracaktır. Bazı önemli bilgiler vereyim ESO ile alakalı. Ne kadar fazla çeviriye eklersek o kadar fazla keywordde indekslenme ihtimalimiz artar. Her dil farklı keyword listesine hitap eder.
+
+318
+00:58:15,027 --> 00:58:40,987
+Farklı insanlara daha fazla keywordde indirme almamızı sağlayabilir. Her dili ESO çalışması yapmamız gerekir. Tabii maliyeti var ama önemli. Ücretsiz çeviri tool'larını kullanabiliriz. Önceliğimizi gelirin en fazla olduğu ülkeler, dönüşümün en fazla olduğu ülkelere verirsek iyi olur. Bunlar Amerika, Japonya ve Almanya bu tarz ülkeler, Avrupa ülkeleri.
+
+319
+00:58:42,708 --> 00:59:08,608
+ESO bir süreç, hemen yaptığım olduğu gibi bir şey değil. Belli bir süre beklememiz, sonuçlarını görmemiz ve duruma göre itere etmemiz gerekiyor. Bu ne kadar bir süre olabilir? Bir ay olabilir, iki ay olabilir, bir buçuk ay olabilir. Sekiz hafta ideal ama indekslenmesi için. Bu noktada sabır önemli. Hemen acele etmemiz gerek.
+
+320
+00:59:09,168 --> 00:59:35,987
+Acele etmememiz gerekiyor. Bu aşamada bir başka önemli faktör uygulamaya güncelleme göndermek. Store'a güncelleme göndermek. Store'a güncelleme gönderdikçe algoritma bizim uygulamamızın aktif olduğunu anlıyor. Yani ölü bir uygulama olmadığını düşünüyor ve daha fazla indekslenme ihtimalimiz artıyor. Bu da başka bir önemli faktör.
+
+321
+00:59:36,820 --> 00:59:50,820
+Neden bu konuyu seçtim? Bilgisayar Mühendisliği okuduğumuz için arkadaşlarımızın mobil uygulama geliştirme yapabileceklerini düşündüm. Yayınlayabileceklerini düşündüm. Bu aşamada yardımcı olabileceğini düşündüm bu konunun onlara.
+
+322
+00:59:52,260 --> 00:59:58,980
+Neden sadece Google Play? Çünkü sadece bu markette benim tecrübem var. App Store'da henüz tecrübem yok.
+
+323
+01:00:00,083 --> 01:00:04,983
+Bu kısmı seçtim. Dinediğiniz için teşekkür ederim. Umarım faydalı olmuştur.
+
+324
+01:00:06,163 --> 01:00:10,063
+Evet, teşekkürler. Şimdi [öğrenci] beni güzel duyabiliyor musun?
+
+325
+01:00:10,803 --> 01:00:11,683
+Evet, duyabiliyorum.
+
+326
+01:00:12,179 --> 01:00:25,599
+Tamam, peki. Şey yaptım da, cihaz değiştirdim. Eğer bir yansı, eko falan herhangi bir problem varsa diye onu bir teyit etmek istedim. Artık görüntüsüz ama sadece sesle katılıyorum.
+
+327
+01:00:25,599 --> 01:00:27,639
+Şu an sesiniz geliyor hocam anlaşılır bir şekilde.
+
+328
+01:00:28,359 --> 01:00:29,479
+Tamam, peki. İyi, güzel.
+
+329
+01:00:29,840 --> 01:00:37,460
+Teşekkür ederim. Eline sağlık. Şimdi kalan birkaç sunum için soruyu yapmayacağım. Sadece dinleyeceğim ve not alacağım.
+
+330
+01:00:38,080 --> 01:00:40,600
+O yüzden sıradaki arkadaşımdan...
+
+331
+01:00:40,600 --> 01:00:41,540
+Ailesi tutturuyorum.
+
+332
+01:00:42,440 --> 01:00:43,540
+Tamam, lütfen.
+
+333
+01:00:44,460 --> 01:00:44,840
+Teşekkür ederim.
+
+334
+01:00:44,840 --> 01:00:45,380
+Bakış hazır mısın?
+
+335
+01:00:45,960 --> 01:00:47,300
+Evet, hazırım. Sizin geliyor mu?
+
+336
+01:00:48,180 --> 01:00:50,700
+Geliyor. Gayet iyi alabiliyorum. Hadi başla bakalım.
+
+337
+01:00:55,059 --> 01:00:57,079
+Ekran gözüküyor mu şu anda? Fül ekran.
+
+338
+01:00:58,219 --> 01:00:58,739
+Geldi.
+
+339
+01:00:59,339 --> 01:01:06,279
+Tamam. Merhaba, ben Bakış. Sunumun konusu tatlı telice. Şecerin, tüketinin ve sağlığımıza olan zararlı.
+
+340
+01:01:07,668 --> 01:01:29,868
+Şecer'in tarihi. Şecer ilkce Hindistan'da Şecer Kamışı'ndan elde edildi. O zamanlarda insanlar ekmek ve bal, ekmek ve yemeklerini tatlandırmak ihtiyacına bal ilerideci deriyorlardı ama aynı zamanda her şeye yetecek kadar bal bulamayacaklarını fark ediyorlar ve yeni bir Şecer kaynağı arınmaya çıkıyorlar. Bu süresi karşılarına çıkan Şecer Kamışı insanlık ve ekonomi tarihinde.
+
+341
+01:01:30,483 --> 01:01:39,967
+Önemli gelişmelerin başlangıcı oldu. Hindistan'da doğan Şeker Kamşı daha sonra İran'a getirildi ve böylelikle Batı'ya taşınmış oldu. Daha sonra...
+
+342
+01:01:39,967 --> 01:02:00,267
+Araplar İslamiyet döneminde İran'ı aldıklarında buradaki şeker sanayi ile tanıtıyorlar ve bunu geliştiriyorlar. Ve böylece şeker Avrupa'ya taşımış oluyor. Ve Avrupa şeker ticaretiyle çok büyük bir yol aldı. İspanyol ve Portekizler daha sonra 15. yüzyılda Güney Amerika'da özellikle Rezilya'da şeker kamışları üretmeye başladılar.
+
+343
+01:02:01,627 --> 01:02:03,607
+Şecerin sağlığımıza etkiliyor.
+
+344
+01:02:04,608 --> 01:02:24,548
+Günümüzde tükettiğimiz besinlerin neredeyse hepsi şeker içeriyor. Örneğin meyveler, sebzeler. Ama meyve sebzelerde bulunan şeker sağlığımız için hiçbir tehdit oluşturmuyor. Aksine onlarda şeker insan hücrelerinin enerji kaynağı ve bu şekerin yüksek miktarda alınma kronik ve kalp hastalıklarının diabeti yakalanma riskini azaltıyor.
+
+345
+01:02:25,396 --> 01:02:47,735
+Asıl sorunlar ilave şeker çettiğimizde ortaya çıkıyor. İlave şeker gıdaların daha lezzetli olması ve rafan ürünün uzamasını sağlıyor. Renkli içeceklerde, tatlandırıcılarda, fırın ürünlerinde, pastalarda, fast foodlarda, alkol ürünlerinde ilave şeker bulunuyor. İlave şeker tansiyon hastalıklarına, kalp krizi, sağlıklı çıyo alımına neden oluyor.
+
+346
+01:02:50,643 --> 01:03:07,744
+Peki ne kadar ilave şeker tişebiliriz? Uzmanlar cürlük aldığımız kalorinin maksimum %10'unu ilave şekerden alabileceğimizi söylüyorlar. Mesela eğer cürlük 2000 kalori alıyorsak bunun %10'u yani 200 kalorisini ilave şekerden alabiliriz. Bu ise 50 gram ilave şeker demektir.
+
+347
+01:03:08,179 --> 01:03:18,639
+Araştırmalar gösteriyor ki cümlülük kalorisinin %17-20.000'ini ilave şekerden alan insanların kalp hastalıklarına yakalanma riski %38 daha çoktur.
+
+348
+01:03:19,519 --> 01:03:22,159
+Peçi şekerden niye vazgeçemiyoruz?
+
+349
+01:03:23,200 --> 01:03:29,500
+Şecerli bir yiyecek üşettiğimiz zaman dildeşit at reseptörleri beynimizin farklı bölcelerine sinyaller gönderiyor.
+
+350
+01:03:30,079 --> 01:03:31,760
+Bu bölcelerden biri de beyniz vardır.
+
+351
+01:03:32,596 --> 01:04:00,456
+Beyin zararının farklı bölceleri, farklı tatları yönetiyor. Örneğin acı, tuzlu, lezzetli ve tatlı. Burada sinyal beynin ödül mekanizmasını aktifleştiriyor ve ödül mekanizması beynin birkaç farklı bölgesi arasındaki karışık ağ sistemidir. Teşvik edicilik özelliği vardır. Yani yeniden yapmak istiyoruz. Böylelikle yeniden şeker tüketmek istiyoruz ve bu döncü böylelikle devam ediyor. Çok fazla ödül mekanizmasının aktifleştirilmesi kontrol kaybına.
+
+352
+01:04:00,596 --> 01:04:03,676
+Tekrar tekrar istemeye ve şeçer toleransını artmasına sebep oluyor.
+
+353
+01:04:05,676 --> 01:04:07,416
+Şeçer mutluluk mudur?
+
+354
+01:04:08,115 --> 01:04:11,615
+Bazen yorgun olduğumuzda, kendimizi iyi hissetmediğimizde,
+
+355
+01:04:11,836 --> 01:04:14,196
+şecerli yiyecekler çiçekliyoruz ve mutlu oluyoruz.
+
+356
+01:04:14,296 --> 01:04:17,556
+Bununla da şekerin mutluluk getirdiğine inanıyoruz ama durum böyle değil.
+
+357
+01:04:18,135 --> 01:04:23,076
+Şeker çiçek ettiğimizde beyne dopamin sinyaller gönderiyoruz ve bu bize geçici bir mutluluk veriyor.
+
+358
+01:04:23,076 --> 01:04:28,416
+Yani sabah uyandığımızda yine kendimizi iyi hissetmiyoruz ve yine şeker çiçekliyoruz.
+
+359
+01:04:28,476 --> 01:04:32,296
+Ve bir yerden sonra tolerans attığından dolayı daha çok şeker çiçekme oluyoruz.
+
+360
+01:04:32,615 --> 01:04:36,016
+Bu da bağımlılığa dönüşüyor. Yani şeker bağımlılık yaratıyor.
+
+361
+01:04:36,115 --> 01:05:03,416
+Keç seçeri nasıl bırakmalıyız? Keçeri kestiğimizde ilk zamanlarda düşük ruh hali, uyku bozukluğu ve başarılarına sebep olabiliyor. Bunu yavaş yavaş azaltmayı deneyebiliriz. Ve seçerin yerine öğün aralarında meyve, sebze çekimi yapabiliriz. Bir de işlenmiş ve paşetlenmiş gıdalardan uzak durabiliriz. Örneğin keç çapma, öğünün sos almak yerine evde kendimizi yapmayı deneyebiliriz.
+
+362
+01:05:04,403 --> 01:05:06,644
+Bu kadar da denediğiniz için teşekkürler.
+
+363
+01:05:07,059 --> 01:05:33,119
+Teşekkür ederim. Önemli bir konu. Aslında üstünde bir oturup elfesine soru cevap yapmak isterdim ondan sonra. Ama bugünlük şartlar biraz farklı. O nedenle elinize sağlık. Evet gerçekten bir bağımlılık. Ondan sonra ve bağımlılıkla baş etmeyi yolda kontrolü yavaş yavaş şekilde azaltmak, alternatifleri kullanmak. Ama işte çok kolay olmuyor bu bağımlılıklarla.
+
+364
+01:05:33,119 --> 01:05:34,500
+Evet zor olmuyor.
+
+365
+01:05:35,059 --> 01:05:43,940
+Ben dahil. Allah'a izleyen nasip etsin diyorum. Teşekkür ederim. Şimdi sıradaki arkadaşım [öğrenci] vardı. Müsait misiniz?
+
+366
+01:05:44,720 --> 01:05:46,440
+Evet hocam. Sesim geliyor mu?
+
+367
+01:05:46,440 --> 01:05:49,860
+Tamam. Geliyor geliyor. Ben [öğrenci]'i duyuyorum. Buyurun başlayın.
+
+368
+01:05:50,099 --> 01:05:51,660
+Görüntümü açmama gerek var mı?
+
+369
+01:05:52,460 --> 01:05:57,059
+Yok hayır. Görüntü açmaya kesinlikle gerek yok. Kanbans genişliğini verimli kullanırız. Başka.
+
+370
+01:05:57,059 --> 01:05:57,740
+Tamam.
+
+371
+01:06:01,588 --> 01:06:03,268
+Şu an gözüküyor mu?
+
+372
+01:06:04,008 --> 01:06:07,168
+Geldi. Bir de sunum moduna geçeyim bakalım. Onu görebilecek mi?
+
+373
+01:06:08,428 --> 01:06:10,668
+Oldu mu hocam? Sunum modu.
+
+374
+01:06:12,208 --> 01:06:18,208
+Olmadı. İsterseniz bir tam ekran paylaşın. Bir daha deneyince olmazsa bu moddan anlatırsınız.
+
+375
+01:06:18,748 --> 01:06:19,488
+Şimdi oldu.
+
+376
+01:06:20,048 --> 01:06:20,768
+Oldu. Şimdi oldu.
+
+377
+01:06:21,327 --> 01:06:23,128
+Şu an ben sunum moduna değilim ama.
+
+378
+01:06:23,635 --> 01:06:30,796
+Benim görüntü biraz gecikmelik geliyor galiba. Geçin sunum moduna oluyor. Yani ben biraz gecikme ne de olsa görebildim.
+
+379
+01:06:30,916 --> 01:06:33,376
+Şu an ilerliyor mu?
+
+380
+01:06:34,456 --> 01:06:38,115
+Bakalım. Geçin bir sonraki yansıya. Ben şu an ekliyorum.
+
+381
+01:06:38,135 --> 01:06:40,175
+Geçiyorum ama sanırım olmadı.
+
+382
+01:06:41,396 --> 01:06:44,016
+Geldi. Tamam. İyi geliyor. Böyle devam edebilirsiniz.
+
+383
+01:06:44,476 --> 01:06:45,036
+Tamam.
+
+384
+01:06:45,940 --> 01:06:55,059
+Bugün Stockholm sendromundan bahsedeceğim. Anlatacağım şeyler, Stockholm sendromu ne olduğu, hangi durumlarda yaşandığı, birkaç tane örnek vereceğim.
+
+385
+01:06:56,059 --> 01:07:01,519
+Peki neden olduğundan, açıklamalarından bahsedeceğim. Ekstra olarak da Lima sendromundan bahsedeceğim.
+
+386
+01:07:02,620 --> 01:07:07,120
+İlk ne olduğunu tanım olarak anlatmadan önce olayla başlamak istiyorum.
+
+387
+01:07:07,780 --> 01:07:12,180
+İsveç'te bir bankada bir soygun gerçekleşiyor ve soyguncular dört kişiyi rehin alıyor.
+
+388
+01:07:12,623 --> 01:07:24,743
+Bu rehin alma süreci bir hafta boyunca sürüyor. Polisler müdahale edemiyor. Bir haftanın sonunda polisler müdahale edecekken rehin alınan kişiler soyguncuların önüne atlayıp kendilerini siper ediyorlar.
+
+389
+01:07:25,427 --> 01:07:41,867
+Vurmalarını istemediklerini söylüyorlar. Bu olay aslında ilk isminden de gelen İsveç'te gerçekleştiği için Stockholm Sendromu oluyor. Röportaj yaptıklarında neden önüne atladıklarını sorduklarında, şurada belirttiğim diyalog gerçekleşiyor.
+
+390
+01:07:42,327 --> 01:07:48,407
+Soyguncu beni öldürmeyeceğini sadece bacandan varacağını söyledi. Ne kadar nazik bir olduğunu düşündüm şeklinde bir açıklama yapıyor.
+
+391
+01:07:49,108 --> 01:07:58,728
+Stockholm sendromu bu şekilde rehinenin kendisini rehin alan kişiyle duygusal bir bağ kurması. Bu aşk olabilir, sempati olabilir, empati olabilir. Bu sendroma veriliyor.
+
+392
+01:08:00,083 --> 01:08:24,843
+Peki bu sendrom hangi durumlarda yaşanıyor? Mağdurun bir tehdit hissetmesi gerekiyor hayatta kalacağına dair veya onu reğne alan kişiden bir kibarlık veya bir nezaket görmesi de yeterli olabilir. Veya mağdurun kurtarımı umudunun olmaması gerekiyor, kaçamayacağını kabullenmesi gerekiyor. Uzaylı bir durumda olacağı için bu sendroma daha yatkın oluyor. Bu arada hocam ekran kayıyor mu, geçiyor mu?
+
+393
+01:08:25,804 --> 01:08:27,224
+Tamam, iyi, devam edelim.
+
+394
+01:08:27,667 --> 01:08:37,787
+Bu sendromlu için iki örnek vereceğim. İlk örnek Patty Hearst. Patty bir örgüt tarafından kaçırılıp dolaba hapsediliyor.
+
+395
+01:08:37,787 --> 01:08:44,368
+Ve bu dolapta tek iyi davranışı dolabın alıcık aralanıp nefes almasını sağlamak oluyor.
+
+396
+01:08:44,783 --> 01:09:01,884
+Fakat Petty ilerleyen zamanlarda bir suçüstü yakınıyor. Bir banka soygununda silahın başındaki kişi oluyor. Onu sorduklarında bu grubun onu özgür hissettirdiğini, o iki hafta boyunca dolapta kaldığı için mutlu olduğunu söylüyor ve o suç ekibinin başına geçmiş oluyor.
+
+397
+01:09:02,996 --> 01:09:21,076
+İkinci örneğimiz J.C. J.C. bu çift tarafından kaçırılıyor ve 18 yıl boyunca hapsediliyor. Ona cinsel tacizler uygulanıyor. İki kere hamile kalıyor. Ama kaçma fırsatı olmasına rağmen kaçmıyor. Hatta bu çifte olan bağlılığını çok iyi bir şekilde ifade ediyor.
+
+398
+01:09:22,644 --> 01:09:33,504
+Peki bu örneklerle beraber bu sendrom neden olabilir? Bir sürü açıklaması var. Net bir açıklaması yok. Ama ben üç tanesine yer verdim. Bir tanesi bilgisayar uyumsuzluk teorisi.
+
+399
+01:09:34,228 --> 01:09:51,948
+Ben kaçırma örneği üzerinden vereceğim. Mesela bir kişi kaçırıldığında bilir ki kurtulamayacağını düşünüyorsa uzun süre mutsuz kalacaktır. Ama eğer kaçırdığı kişiye karşı iyi duygular beslerse bu kaçırılma süreci onun için iyi olabilir. Bu yüzden de uzun süre mutsuz kalma durumunda bir nevi kaçmış olur.
+
+400
+01:10:00,000 --> 01:10:16,779
+Bir durum gerçekleşirse, kaçırıldığı ortamda onu lider olarak görür ve ona uyum sağlama, onu takip etme duygular uyanabilir. Bu direkt grup dinamiğinden gerçekleşir. Yani bir sosyal beceri aslında. Onu kaçırdığı kişiyi lider olarak görürse ona uyum sağlamak isteyecektir.
+
+401
+01:10:17,971 --> 01:10:37,792
+Üçüncü açıklamamız psikodinamik açıklama. Eğer saldırgan kişi mağdur kişiyle bir diyaloğa geçerse, geçmişinden anlatabilir veya kendisinin mağdur olduğu anıyı anlatırsa, mağdur onu eş kurban olarak görebilir ve dayanışmayı arttırmak için ona acıya da bilir, ona destek de sağlamak isteyebilir. Bu yüzden iyi duygularda besleyebilir.
+
+402
+01:10:39,028 --> 01:11:00,648
+Ekstra olarak Lima Sendromu bu sendromun ileri seviyesi hatta zıttı bile denilebilir. Eğer tutsak kendisini kaçıran kişiden hoşlanırsa veya bir bağ beslerse bu Stockholm Sendromu oluyor. Bunun ekstrasında kaçıran kişi de eğer kaçırdığı kişiye bir şeyler hissederse, bir bağ kurarsa bu da Lima Sendromu oluyor.
+
+403
+01:11:07,028 --> 01:11:14,728
+Bir aşk hissediyor. Kaçıran kişi de kaçırdığı kişiye bir aşk hissediyor. En iyi şekilde anlatan film bu olduğu için bunu koymak istedim.
+
+404
+01:11:14,728 --> 01:11:24,427
+Bu Stockholm sendromunun çok benzer bir sendrom olduğu için koymak istedim ekstra bir şey. Kaynakçam bitti aslında.
+
+405
+01:11:27,252 --> 01:11:39,252
+Peki, evinize sağlık [öğrenci] Hanım. Çok fazla soru çay yapamayacağım. Before Vendetta'yı ben de seyredip, ayrıntıda hasıl vermiyorum.
+
+406
+01:11:39,252 --> 01:11:55,252
+Fakat evet, doğru. Ayrıntıda örnek veren filmi de olmasın yani. Çünkü nihayetinde zor bir süreç. Ama ben bir o gözle bakmamıştım hiç. Ama doğru, haklısınız.
+
+407
+01:11:55,252 --> 01:11:56,091
+Çok teşekkür ederim.
+
+408
+01:11:56,091 --> 01:12:00,011
+Bir sendromu unutuyor aslında. Onları yaşadık sendrom.
+
+409
+01:12:01,192 --> 01:12:08,112
+Evet. İstanfik, elinize sağlık. Ekran paylaşımını kapatabilirsiniz. [öğrenci] Hanım, müsaitseniz buyurun başlayın.
+
+410
+01:12:08,771 --> 01:12:11,952
+Başlıyorum hocam. Sesim geliyor değil mi?
+
+411
+01:12:12,811 --> 01:12:15,412
+Yankılı olarak geliyor ama okulda mısınız?
+
+412
+01:12:16,891 --> 01:12:21,572
+Yurttayım da. Bulunduğum o da biraz boş o yüzden. Çok sıkıntı mı?
+
+413
+01:12:22,100 --> 01:12:26,420
+Yok, yapacak bir şey yok. Aşırız sıkıntı değil. Buyurun, başlayın.
+
+414
+01:12:27,500 --> 01:12:28,720
+Ekranım geldi mi?
+
+415
+01:12:29,480 --> 01:12:30,020
+Geldi.
+
+416
+01:12:31,700 --> 01:12:33,220
+Sunum moduna aldım.
+
+417
+01:12:34,100 --> 01:12:35,540
+Alalım. Başlayalım.
+
+418
+01:12:37,040 --> 01:12:46,560
+Benim konum deniz yerleri. Öncelikle ben [öğrenci]. [kişisel bilgi] Ben konu olarak deniz yerlerini seçtim.
+
+419
+01:12:48,243 --> 01:13:12,923
+Deniz siyarı genel olarak sosisi, hıyara ve patlıcana benzerler. Zaten buna denli deniz siyarı ya da deniz patlıcanı olarak adlandırılıyorlar. Derisi dikenli sınıfındalar. Vücutlarında yüksek oranda protein varınlıyorlar. Şu fotoğrafta da gördüğünüz gibi ince uzun yapıya sahipler. Üst kısım ağız, alt kısım anüs olarak yer alıyor.
+
+420
+01:13:14,420 --> 01:13:30,220
+Tüp ayaklara sahipler. Bu nedenle yavaş hareket ediyorlar. Deniz seyirinin yaklaşık bin beşi stürü var. Bunlardan bazıları tüp ayağa sahip değiller. Tüp ayağa sahip olmayanlar denizin dibinde o şekilde konumlanmış şekilde yaşamlarını sürdürmekteler.
+
+421
+01:13:32,279 --> 01:13:35,199
+Deniz seyirleri kendilerini yenileme özelliğine sahipler.
+
+422
+01:13:36,212 --> 01:13:54,872
+Aynı zamanda yumurtayarak örüyorlar. Erkek ve dişlerin şekli birbirine oldukça benziyor. Hatta bazıları çift cinsiyetli. Plankton ve çamurdaki organik maddelerle besleniyorlar. Çeşitli renkleri bulunmakta. Aynı zamanda saydam olanları da bulunmakta.
+
+423
+01:13:55,539 --> 01:14:13,220
+Bahsettiğim gibi deniz siyanın 1500 farklı türü var. Birçok türü büyük miktarlarda torku tortu tüketerek yaşamlarını devam ettirmekte. Bu tükettikleri tortular sayesinde otobur canlıları için daha uygun gıdalar üretmiş oluyorlar.
+
+424
+01:14:23,539 --> 01:14:48,640
+İçindeki tüm suyu püskürterek çakıl taşı kadar küçülebiliyor. Benim de en ilgimi çeken, en garip gelen özelliklerinden birisi sıvıya dönüşebilmeleri. Deniz siyarlarının her yanında yakalama kollajeni adlı bir yapı bulunuyor. Bu sayede bazı türleri kendilerini sıvıya dönüştürebiliyor. Bunu yapma nedenleri de daha çok küçük çaklaklardan geçebilme, hayatta kalma.
+
+425
+01:14:49,235 --> 01:14:55,996
+İçgüdüsü bir tehditle karşılaştığında ve sıvayla döndükten sonra tekrar eski hallerine dönebiliyorlar.
+
+426
+01:14:57,652 --> 01:15:17,332
+Deniz siyerleri aynı zamanda denizlerin çöpçüsü ve denizlerin akciğer olarak adlandırılıyor. Bunun nedeni ise deniz siyerleri kililiği yiyerek beslenmekte. Bir tane deniz siyeri günde 350 gram, yılda 120 ile 150 ton kumu ağır metalden temizlemekte.
+
+427
+01:15:18,739 --> 01:15:25,939
+Bunu yaparak oksijen sağlamış oluyor deniz siyerleri. Bu yüzden de dediğim gibi denizlerin akciğer olarak adlandırılıyor.
+
+428
+01:15:28,779 --> 01:15:37,319
+Deniz siyerleri denizin tabanını santim santim tarayarak havalandırılıyor. Bu yüzden ekosistemin güçlendirmesi için oldukça önemliler.
+
+429
+01:15:38,036 --> 01:15:42,315
+Ama maalesef uzak doğum mutfağında oldukça tüketilen bir canlı.
+
+430
+01:15:43,496 --> 01:15:46,836
+Az önce de bahsettiğim gibi projese bakımından oldukça zengin.
+
+431
+01:15:47,355 --> 01:15:52,896
+Bu yüzden Güney Doğu Asya ve Avustralya sahil kesimde yaşayan insanlar deniz seyirlerini oldukça tüketmekte.
+
+432
+01:15:52,896 --> 01:15:56,315
+O tarafta yaşayan insanlar genelde deniz suyunda pişiriyor.
+
+433
+01:15:56,855 --> 01:16:04,416
+Ama başka yerlerde tüketildiğinde tatlı suda kaynatılarak tüketiliyor ve bunun çorbası yapılıyor bu şekilde.
+
+434
+01:16:05,488 --> 01:16:13,908
+Ayrıca Pasifik bölgesindeki birçok ülke için yıllardır geleneksel ve ticari olarak kullanılıyor bu canlılar.
+
+435
+01:16:14,467 --> 01:16:18,328
+Türkiye'de ise 1996 yılında balıkçılığı başladı.
+
+436
+01:16:18,668 --> 01:16:30,068
+Bunun nedeni de yüksek ticari değeri, bazı deniz siyerlerin türü kilosu 25 dolar olmasına rağmen bazının sadece tanesi 150 dolar.
+
+437
+01:16:33,488 --> 01:16:39,068
+Bu denizlerinin balıkçılığı mevcut. Ondan dolayı Türkiye'de de balıkçılığı oldukça yaygın.
+
+438
+01:16:41,887 --> 01:16:47,423
+Öncelikle denizlerinin balıkçılığı oldukça arttıktan sonra...
+
+439
+01:16:47,423 --> 01:17:07,764
+Avcılığı arttıktan sonra ilk önce bir yasak getirildi. Komple yasaklandıktan sonra yasak avlanmanın oldukça arttığı görüldü. Ondan dolayı şöyle bir önlem alındı. Kasım ayından Nisan ayına kadar belli miktarda avcılığı serbest hale geldi. Ve bu avcılığı yakmak için de bakanlıktan izin almak gerekiyor.
+
+440
+01:17:09,764 --> 01:17:12,043
+Denizlerde çevre kirliliği malum.
+
+441
+01:17:12,384 --> 01:17:34,484
+Maalesef ki onları hor kullanıyoruz. Zaten benim de bu konuyu seçme sebebi buydu. Benim de deniz siyarlarını öğrenme anım Marmara Denizi'deki müstaj olayından sonra oldu. Deniz siyarları maalesef ülkemizde sadece Ege Denizi'nde bulunuyor. Hatta belki Ege Denizi'ne müstaj görüştmemesinin sebebi olarak deniz siyarlarını gösterebiliriz.
+
+442
+01:17:36,948 --> 01:17:49,948
+Ama Marmara Denizi'de dediğim gibi maalesef deniz hiyarı yok. Ama Ege Denizi'ndeki de sayıları oldukça azalmakta. Örneğin 2014 yılında deniz hiyarı ihracatından...
+
+443
+01:17:50,416 --> 01:18:15,536
+Altı yüz bin dolar elde ederken, iki bin on alt yılında, iki bin on alt yılın sadece ilk on bir ayında yedi milyon dolar gelir elde ettik. Ve bu giderek arttırmakta. Ve dediğim gibi önceden çok önemsenmiyordu. Hatta TÜİK iki bin on dört yılından sonra bu ihracat verilerini sunmaya başladı. Öncesine dair elimize bir veri bile yok. Benim konum bu şekildeydi. Dinlediğiniz için teşekkür ederim.
+
+444
+01:18:16,307 --> 01:18:38,427
+Ben de teşekkür ederim. İlginç bir konu. Ben deniz yaralarından sıra dışı canlılarla ilgili bir şeyler söylerken biraz haberdar olmuştum. Gerçekten ilgimi çekti. Az daha vakit geçti. Söyleyince bazı şeyleri hatırladım. Birçok şeyleri yeni öğrendim. Gerçekten ilginç bir şey. Şimdi bu boyutları da anlattınız. Teşekkür ederim. Ben bir şey ederim.
+
+445
+01:18:39,764 --> 01:19:00,944
+Ama şimdi böyle olan bir süre şartlarda hayatta kalabilen canlılara ekstremofil diyorlar. Mesela mightlar var. Ondan sonra bunlar çok enteresan. Ya şey, ondan da daha şey. Tardigrat mı ne öyle bir hayvan var. Minicik hayvancık. Onu hiç duydunuz mu?
+
+446
+01:19:01,619 --> 01:19:03,459
+Yok, duymadım maalesef.
+
+447
+01:19:03,819 --> 01:19:12,899
+Tamam, peki. Bu konuda meraklıysanız ekstromofil ve tardigrad diye bir arayın bakalım. Eğlenceli şeylere ulaşabilirsiniz diye düşünüyorum.
+
+448
+01:19:13,599 --> 01:19:14,499
+Çok teşekkür ederim.
+
+449
+01:19:15,159 --> 01:19:24,879
+Elinize sağlık, teşekkür ederim. O zaman bugünkü dersi burada bitiriyoruz. Anlatan ve ilişki şeyler paylaşan bütün arkadaşlarına teşekkür ederim. Tekrar görüşmek üzere.
