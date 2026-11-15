@@ -15,6 +15,7 @@
 | 22 | Güz | Erdal Gül | [sube_22/](sube_22/) |
 | 24 | Güz | Serpil Uslu | [sube_24/](sube_24/) |
 | 25 | Güz | Fatma Çeliker | [sube_25/](sube_25/) |
+| 26 | Güz | Yusuf Zeren | [sube_26/](sube_26/) |
 | 36 | Güz | — | [sube_36/](sube_36/) |
 | 53 | Güz | Elif Demir | [sube_53/](sube_53/) |
 | 55 | Güz | Sebahat Ebru Daş | [sube_55/](sube_55/) |
