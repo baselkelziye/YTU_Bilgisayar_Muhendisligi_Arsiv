@@ -1,0 +1,2163 @@
+1
+00:00:12,564 --> 00:00:35,823
+Günaydın arkadaşlar. Nasılsınız? İyi misiniz? Geçen hafta çok fazla konuşamadık. Sınavınız nasıl geçti? Sınavdan beklediğiniz notları alabildiniz mi? Tabii sizinle daha yeni tanıştık. Bir de aksilikler girdi geçen hafta. Dersimizin bir kısmını yapamadık. Söylemek istediğiniz bir şey var mı?
+
+2
+00:00:40,564 --> 00:00:53,564
+Evet, şimdi kaldığımız yerden dersimize devam ediyoruz arkadaşlar. Lütfen anlamadığınız yerlerde sorunuz. Derse katılırsanız daha...
+
+3
+00:00:54,612 --> 00:00:56,852
+Daha verimli geçeceğine inanıyorum.
+
+4
+00:00:57,832 --> 00:00:59,952
+Şimdi ben ekran paylaşımı yapacağım.
+
+5
+00:01:00,371 --> 00:01:04,871
+Ve bundan sonraki konular çok fazla sınavda çıkacağına inanıyorum.
+
+6
+00:01:05,032 --> 00:01:12,632
+Final sınavında işte yönlü türev, maksimum, minimum, t düzen denkleme, yüzeylere göre vs.
+
+7
+00:01:13,212 --> 00:01:14,632
+Daha sonra da integraller.
+
+8
+00:01:15,132 --> 00:01:17,472
+Şimdi ben sizinle ekran paylaşımı yapayım.
+
+9
+00:01:26,451 --> 00:01:30,071
+Ekranı görüyorsunuz herhalde arkadaşlar. Görüyorsunuz değil mi?
+
+10
+00:01:30,871 --> 00:01:35,751
+Şimdi düzende yönlü türevi başlamıştık. Hatta geçen hafta biraz bahsetmiştik.
+
+11
+00:01:35,751 --> 00:01:50,751
+Bu kısımın daha teorik kısmı olduğunu ve daha kolay ispatlayabileceğimiz, yani gösterebileceğimiz yönlü türevden bununla da yapılabilir ama daha kısa bir şekilde yönlü türevi gösterebileceğiz.
+
+12
+00:01:51,111 --> 00:01:53,131
+Şimdi yönlü türevin yorumu arkadaşlar.
+
+13
+00:01:54,451 --> 00:02:09,211
+Şöyle kısaca söyleyeyim. Yüzeyde, yüzey üzerinde bir nokta var. Buna P noktası dedik. P noktası. Bunun X0, Y0 noktasına göre, yani şu P0, şimdi şurası.
+
+14
+00:02:10,003 --> 00:02:38,003
+P, X0, Y0, Z0 noktası. Şurası ise P0 arkadaşlar. P0 noktası. P ve P0 noktalarından geçen, işte bir U vektörü var. U vektörüne paralel şekilde giden bir düzlemle şöyle kestiğimiz zaman, bu P noktasından geçen eğrinin t doğrusunu veriyor arkadaşlar. C eğrisinin t etinin eğimi.
+
+15
+00:02:38,003 --> 00:02:59,163
+eğimini veriyor daha doğrusu. Bunu daha sonra ilk önce isterseniz yönlü türevi hatırlayalım. Ondan sonra yine konuşuruz. Yani F'in U yönündeki değişim oranı ya da P, D, Ç'nin, T, T'nin eğimini veriyor arkadaşlar. Şurada yani şu düzlemin kestiği, şu düzlem,
+
+16
+00:02:59,572 --> 00:03:10,012
+şöyle bir düzleminiz var. Şurada bir yüzeyiniz var. Bu düzlemle yüzey bir eğri boyunca kesişiyor. Şurada P noktasında, şurası P olsun.
+
+17
+00:03:10,012 --> 00:03:27,572
+İşte bu eğrinin eğimini veriyor arkadaşlar. Bizim yönlü türevimiz, U yönündeki türevimiz, F'in U yönündeki türevi bir C eğrisinin T etinin eğimini veriyor.
+
+18
+00:03:27,572 --> 00:03:54,971
+verir arkadaşlar. Şimdi gelelim size daha fazla sınavda çıkacak kısımlara. Yani tabii hepsi önemli. Şimdi arkadaşlar, yönlü türevi bulmak için şöyle söyleyeyim. İlk önce F'in gradyan vektörünü hesaplayacaksınız. F'in gradyan vektörü demek arkadaşlar şu demek. Şöyle göstereyim. F'in gradyan vektörü demek.
+
+19
+00:03:56,211 --> 00:04:08,852
+şöyle, f eğer iki değişkenliyse arkadaşlar, fx'ye'nin gradiyan vektörü demek, gradiyan f demek, bunun değişkenlerine göre türevlerini almak demek. f'in x'e göre türevi,
+
+20
+00:04:09,651 --> 00:04:30,552
+i, sonra f'in y'yi göre türevi, j arkadaşlar. Gradiyan vektör bu. 3 değişkenli de ise x, y, z, bunda ise f fonksiyonunun, mesela bunu da g diyelim, g fonksiyonunun gradiyan vektörü demek, ne olacak? Kaç değişkeni var arkadaşlar? 3 değişkeni.
+
+21
+00:04:31,315 --> 00:04:53,595
+şöyle, 1, 2, 3, g'nin x'e göre türevi, i, g'nin y'ye göre türevi, j, ve g'nin z'ye göre türevi, k'dır. 3 değişkenli. Biz buna gradyan vektör diyoruz arkadaşlar. Bu bize yönlü türevi hesaplamamıza yardımcı olacak.
+
+22
+00:04:58,579 --> 00:05:21,800
+2 boyutta, bu da 3 boyutta. Her şey aynı. Yani ne yapıyoruz arkadaşlar? Buradaki değişkenlerine göre türevleri, ama bu ne oluyor? Gradyan G, bir vektör değil mi arkadaşlar? I, J, K var. Aynı şekilde bakın, gradyan F, 2 boyutta, I, J şeklinde gösterebiliriz. Şimdi arkadaşlar,
+
+23
+00:05:22,579 --> 00:05:44,339
+yönlü türev neydi arkadaşlar? Şöyle söyleyeyim. Yönlü türev bir fonksiyonun yönlü türev, şöyle gösterelim. Şimdi arkadaşlar, elimizde bir f fonksiyonu var. fx'ye olsun. İki değişken, yani iki boyuttayız. fx'ye fonksiyonunun bir mesela p0 noktasındaki türevi.
+
+24
+00:05:44,339 --> 00:05:47,660
+Tamam mı? Türevi dersek?
+
+25
+00:05:48,115 --> 00:05:51,136
+sadece türevini alırız. Ama türevi demeyelim.
+
+26
+00:05:51,656 --> 00:05:52,536
+Türevi demeyelim.
+
+27
+00:05:53,016 --> 00:05:53,636
+Diyelim ki,
+
+28
+00:05:54,295 --> 00:05:55,935
+P0 noktasındaki
+
+29
+00:05:55,935 --> 00:05:58,756
+U vektörü
+
+30
+00:05:58,756 --> 00:06:01,636
+ama yalnız bir şey unuttuk.
+
+31
+00:06:02,196 --> 00:06:04,875
+Burada hemen bakın, farklı renkleri yazıyorum.
+
+32
+00:06:05,355 --> 00:06:07,016
+Birim vektörü yönündeki
+
+33
+00:06:07,016 --> 00:06:08,375
+türevi.
+
+34
+00:06:09,656 --> 00:06:10,636
+Tamam mı arkadaşlar?
+
+35
+00:06:11,156 --> 00:06:27,896
+U birim vektörü yönündeki türevi. Yani F fonksiyonunun türevini alacaksınız. Ama nasıl alacaksınız? Bir birim vektörü yönündeki türevini alacağız. Evet, sesim geliyor değil mi arkadaşlar? Chatten de yazabilirsiniz.
+
+36
+00:06:33,875 --> 00:06:42,896
+Tamam, teşekkürler [öğrenci], teşekkürler [öğrenci]. Şimdi arkadaşlar, demek ki biz türev alacağız. F fonksiyonunun türevini alacağız.
+
+37
+00:06:42,896 --> 00:06:57,276
+F fonksiyonunun türevini alacağız. Ama nasıl? Bir F fonksiyonunun U vektörü, U birim vektörü. Bakın ben bunu farklı renklerle gösteriyorum. U birim vektörü yönündeki türevi yazıyorum.
+
+38
+00:06:57,615 --> 00:06:59,615
+Türevi D ile göstereceğiz.
+
+39
+00:07:00,135 --> 00:07:02,456
+Neyin türevi? F fonksiyonunun türevi.
+
+40
+00:07:02,456 --> 00:07:06,716
+Nerede? Bir vektör boyunca veya vektör yönünde.
+
+41
+00:07:07,195 --> 00:07:19,975
+Bir U birim vektörü boyunca ya da şöyle denir U birim vektörü yönünde türev.
+
+42
+00:07:20,156 --> 00:07:21,075
+Tamam mı arkadaşlar?
+
+43
+00:07:21,695 --> 00:07:23,475
+Bir P sıfır noktasında.
+
+44
+00:07:24,723 --> 00:07:30,683
+Yani bir noktada, bakın P0 noktasında, şimdi bu ne demek?
+
+45
+00:07:31,956 --> 00:07:44,055
+şöyle diyeceğiz. P0 noktasında F fonksiyonunun U birim vektörü yönündeki türevi. Bu şekilde. En kolay sorular bence bu sorular.
+
+46
+00:07:44,375 --> 00:07:53,855
+Şimdi bakın nasıl göstereceğiz. Ben türevi arıyorum. D derivatif bildiğimiz türev. D F fonksiyonunun türevi U vektörü boyunca.
+
+47
+00:07:53,855 --> 00:07:58,336
+Yalnız U ne olmak zorunda? Birim olmak zorunda. Tamam mı?
+
+48
+00:07:58,516 --> 00:08:21,196
+Birim olmak zorunda. Diyorum ki, nerede? P0 noktasında. Bu kadar. Şimdi yazıyorum. Peki bu neye eşit? Arkadaşlar, bu şuna eşit. Gradiyan F. Tamam mı? Hangi noktada? P0 noktasındaki gradiyan değeri çarpı U birim vektörü.
+
+49
+00:08:21,651 --> 00:08:47,751
+Noktasal çarpım. Bakın arkadaşlar, bu bir vektör. Gradiyan f'ler bir vektör. Şurada gördük. Vektör, yani bu bir vektör. Bir vektör ile bir vektörü çarpıyoruz. Sonuçta bir skaler elde edeceğiz. Demek ki ne diyeceğiz? Bir f vektörün, f fonksiyonunun türevi. P0 noktasında u birim vektörü boyunca.
+
+50
+00:08:48,724 --> 00:08:58,924
+türevini biz bu şekilde gösteriyoruz. Şimdi arkadaşlar, gelin beraber bir örnek yapalım.
+
+51
+00:09:00,804 --> 00:09:04,784
+Ve konuyu daha iyi kavrayalım. Ben ikinci örneği ilk önce yapacağım.
+
+52
+00:09:06,144 --> 00:09:12,284
+O daha şey, işlemleri daha kısa. Şimdi arkadaşlar, bakın en kolay örnek.
+
+53
+00:09:12,284 --> 00:09:15,364
+Diyelim ki şöyle, örneğin
+
+54
+00:09:16,916 --> 00:09:42,155
+fx'ye eşittir, 2x'ye eksi 3y², fonksiyonunun, bakın fonksiyonunun, dedi ki, 5'e 5 noktasında, noktasında, ne dedi, v vektörü, bakın hatta bunu farklı renkle yazacağım, v vektörü şöyle olsun,
+
+55
+00:09:42,484 --> 00:09:53,403
+4i artı 3i vektörü doğrultusundaki türevi.
+
+56
+00:09:54,864 --> 00:09:55,844
+Nedir?
+
+57
+00:09:56,244 --> 00:09:58,464
+Şimdi 1. Ne diyorsunuz arkadaşlar?
+
+58
+00:10:00,204 --> 00:10:02,403
+Ne istemiş? Türevi istemiş.
+
+59
+00:10:02,744 --> 00:10:04,224
+Neyin? F fonksiyonunu.
+
+60
+00:10:04,424 --> 00:10:05,624
+Ama başka şeyler var.
+
+61
+00:10:05,744 --> 00:10:07,783
+Şu noktadaki, şu noktadaki.
+
+62
+00:10:07,783 --> 00:10:09,084
+Ama ne diyor?
+
+63
+00:10:09,683 --> 00:10:19,283
+vektör doğrultusunda, şu vektör doğrultusunda, demek ki yönlü türev bu. Tamam mı arkadaşlar? Şimdi yönlü türevi yazalım. Türevi.
+
+64
+00:10:20,624 --> 00:10:34,323
+Hangi fonksiyonun türevi? F'in. Hangi noktada? Şuna A noktası diyelim. A noktası. Tamam mı? Yani 5'e 5 noktasındaki ya da 5'e 5 diyelim. 5'e 5 noktasındaki türevi.
+
+65
+00:10:34,932 --> 00:10:47,772
+Peki buraya ne yazıyorduk arkadaşlar? Vektörü. Vektör, buraya V yazamazsınız. Niye yazamazsınız? Evet, bir fikri olan var mı arkadaşlar? Buraya V yazamam.
+
+66
+00:10:48,692 --> 00:10:57,432
+Niye yazamam? Şimdi bu çok önemli. Bakın, şöyle gidelim. Ne olması lazım? Bir fikri olan var mı? Bir bakalım.
+
+67
+00:10:57,936 --> 00:11:25,936
+birim vektör. Teşekkürler [öğrenci]. Şimdi o zaman diyorum ki, birim vektör olmalı. Teşekkürler. Kesinlikle V birim olmalı. Şimdi bakıyorum. V birim mi? Sorularda arkadaşlar bu çok önemli. V4i artı 3i birim mi? Birim mi bakalım. Şimdi birim olması için V'nin uzunluğuna bakacaksınız. İki boyuttasınız. İki tane değişkeni var. Neydi uzun?
+
+68
+00:11:25,936 --> 00:11:45,956
+uzunluğunun 1 olması lazım. Şimdi 4'ün karesi, artı 3'ün karesi, ne geldi? 5. 1 değil, 5. Dolayısıyla birim değil. Birim değilse bir vektör, onu birimleştireceksiniz. Nasıl yapıyoruz? Yani v vektörü boyunca bir birim vektörü alıyoruz. Tamam mı arkadaşlar?
+
+69
+00:11:51,892 --> 00:11:59,892
+v vektörü bu. Biz bunun boyunda başka bir birim vektörü alacağız. Tamam mı arkadaşlar? Ona ne diyelim? u vektörü diyelim.
+
+70
+00:12:00,392 --> 00:12:06,851
+u vektörünü, şimdi v vektörünü nasıl birimleştiriyorsunuz arkadaşlar? Hatırlıyor musunuz?
+
+71
+00:12:07,731 --> 00:12:11,432
+Hatırlayan var mı? v vektörü nasıl birim hale getirilir?
+
+72
+00:12:18,899 --> 00:12:37,220
+Evet, teşekkür ederim [öğrenci]. Şimdi o zaman diyorum ki V'yi şöyle kendi uzunluğuna böleceksiniz. Yani size verilen vektör yönlü türev soruluyorsa ilk önce buna birim mi diye bakacaksınız. Birim değilse birimleştireceksiniz.
+
+73
+00:12:38,399 --> 00:12:45,399
+3'yi bölü kaç olacak arkadaşlar? 5. Değil mi? Şimdi o zaman şöyle oldu.
+
+74
+00:12:46,836 --> 00:13:13,735
+bakın şöyle farklı bir renkli yazalım. u vektörü 4 bölü 5 i, 3 bölü 5 j. ister böyle yazarsınız ya da nasıl yazarsınız? bunu nasıl da yazabiliriz vektörü? iki boyuttasınız. i ve j var. 4 bölü 5, 3 bölü 5 şeklinde de kısaca gösterebiliriz. tamam mı arkadaşlar? şimdi gidiyorum o zaman diyorum ki şöyle
+
+75
+00:13:14,707 --> 00:13:28,648
+Artık u vektörü boyunca, değil mi? Artık bakın v vektörü değil, bunun yerine ne aldık? u vektörü boyunca f fonksiyonunun 5'e 5 noktasındaki yönlü türevi.
+
+76
+00:13:28,967 --> 00:13:32,888
+Şöyle yapacaksınız, diyeceksiniz ki şöyle yapıyoruz.
+
+77
+00:13:33,235 --> 00:13:42,796
+f'in gradyantının neredeki değeri? 5'e 5 noktasındaki değeri, çarpı, noktasal çarpı, u vektörü.
+
+78
+00:13:42,796 --> 00:13:59,796
+Tamam mı arkadaşlar? Bu bize işte, f'in, f'nin, 5'e 5 noktasındaki, u vektörü yönündeki, bakın ben üşenmeden yazıyorum, u vektörü yönündeki,
+
+79
+00:14:00,207 --> 00:14:01,307
+türevini veriyor.
+
+80
+00:14:01,748 --> 00:14:29,128
+türev. Biz buna ne diyoruz? Yönlü türev. Ya da doğrultusundaki türevi. Tamam mı arkadaşlar? Şimdi, gradyan F'i bulmalıyız. Gradyan F. Şimdi bakın arkadaşlar, bulalım beraber. Bunu biliyoruz. U vektörü ne? Bulduk. Şu değil mi? Ya şunu yazarsınız ya da şunu. Aynı değil mi? U vektörü belli. Birim vektörümüz belli. Gradyan F. Bakın arkadaşlar.
+
+81
+00:14:29,748 --> 00:14:36,568
+fxy eşittir, 2xy-3y²
+
+82
+00:14:36,568 --> 00:14:38,388
+Şimdi diyorsunuz ki, 1
+
+83
+00:14:38,703 --> 00:14:45,104
+Gradyan F demek, kaç tane değişkeni var? 1, 2. 2 boyuttayız.
+
+84
+00:14:45,104 --> 00:14:52,364
+2 boyuttayız. O zaman gradyan F demek ne demek? Buradaki değişkenlerine göre kısmi türevi alacak.
+
+85
+00:14:52,884 --> 00:15:00,083
+F'in X'e göre, birinci değişkenine göre kısmi türevi, I, F'in Y'e göre türevi, J.
+
+86
+00:15:00,624 --> 00:15:05,484
+Şimdi F'in X'e göre türevi. F'in X'e göre türevini bulalım.
+
+87
+00:15:05,792 --> 00:15:21,572
+f'in x'e göre türevini bulurken ne yapıyorsunuz arkadaşlar? Daha önce Sultan Hoca ile bunu gördünüz. y'yi kapatıyorsunuz veya burada kaç tane değişken varsa onları kapatıyorsunuz. Sadece x'lere göre türevi alıyorsunuz.
+
+88
+00:15:23,408 --> 00:15:32,847
+x'e göre türevi, yani 2 sabit, y sabit, sadece x'e göre türevi alıyorsunuz. Yani y'de 3, 5 gibi bir sayı gibi düşünüyorsunuz.
+
+89
+00:15:33,187 --> 00:15:46,307
+2 x, y'nin türevi, x'in türevi x'e göre 1'dir. Geriye 2 y kalır. 2 y. E burası 3 sabit, y de sabit x'e göre türev alırken, dolayısıyla o da ne olur? 0 olur.
+
+90
+00:15:51,408 --> 00:16:08,427
+F'in y'ye göre türevini alırken, arkadaşlar ne yapıyorsunuz? Bu sefer arkadaşlar, ne yapıyoruz? Bu sefer de arkadaşlar, F'in y'ye göre türevini alırken, y'ye göre türev alacağız, x'ler sabit bir seriymiş gibi düşüneceğiz.
+
+91
+00:16:08,788 --> 00:16:35,468
+Şimdi o zaman şöyle düşünüyoruz. Hatta böyle birazcık daha. 2 sabit, x sabit. Sadece y'ye göre türevi alıyorum. Y'nin türevi y'ye göre 1. O zaman burada ne kaldı? 2 ve x. 2x geldi. Sonra geldik buraya. 3 sabit. y karenin y'ye göre türevi nedir? 2y'dir. Bir de 3 var başında. 6y'dir. Tamam mı arkadaşlar?
+
+92
+00:16:35,956 --> 00:16:39,115
+şimdi dedik ki o zaman şöyle diyoruz.
+
+93
+00:16:39,635 --> 00:16:57,375
+f'in x'e göre türevi 2'ye, f'in y'ye göre türevi 2x-6. O zaman diyoruz ki, o zaman gradyan f nedir? f'in x'e göre türevi 2y, iyi, bakın yazıyorum, f'in y'ye göre türevi 2x-6y, j'dir.
+
+94
+00:16:57,375 --> 00:17:07,635
+Şimdi diyorum ki, bize ne lazım? Yazdık. 5'e 5 noktasındaki değeri lazımmış. Gradyan f'in 5'e 5 noktasındaki değeri.
+
+95
+00:17:07,635 --> 00:17:33,796
+X'i 5, Y'si 5. X gördüğümüz yere 5 yazıyorum. Yazalım. Y gördüğümüz yere 5. 2Y'den 10İ gelir. Artı, burası ne olur arkadaşlar? 2 çarpı 5, 10. Eksi 6 kere 5, 30. J olur. Buradan ne geldi arkadaşlar? 10İ eksi 20Ş'tir.
+
+96
+00:17:34,579 --> 00:17:54,459
+Tamam mı arkadaşlar? O zaman bakın hepsini bulduk. Ne dedik? F fonksiyonunun 5'e 5 noktasındaki şu birim değildi, birim vektörü boyunca türevi. O zaman ne olacak? Bakın yazıyorum. F fonksiyonunun
+
+97
+00:17:56,660 --> 00:18:02,900
+u birim vektörü boyunca 5'e 5 noktasındaki türevi neydi?
+
+98
+00:18:03,540 --> 00:18:09,259
+Gradiyan f'in 5'e 5 noktasındaki değeri çarpı u
+
+99
+00:18:10,708 --> 00:18:33,028
+Bulduk. Gradyan f'in 5'e 5 noktasındaki değeri bu. 10i ya da bunu nasıl yazarsınız? Şöyle 10'a eksi 20 şeklinde de yazabilirsiniz. Hangisini kullanırsanız? 10i eksi 20 j'i, değil mi arkadaşlar? Şurada şunu sildik. Şunu silelim.
+
+100
+00:18:36,468 --> 00:19:03,347
+U birim vektörü, U birim vektörü kaçtı arkadaşlar? 4 bölü 5'i 3 bölü 5'tir. Şimdi yazıyorum bakın, 4 bölü 5'e 3 bölü 5'tir. Tamam mı arkadaşlar? Şimdi ne geldi? 4 bölü 5'e 3 bölü 5'tir. Şimdi o zaman bakın, 10 i,
+
+101
+00:19:04,468 --> 00:19:30,148
+eksi 20j, hatta bunu da şöyle yazalım, 4 bölü 5i, artı 3 bölü 5i, değil mi? Böyleydi. Ya bu ya bu, fark etmez. Ne yapıyorduk arkadaşlar? Bunların ne çarpımı? Noktasal çarpım. Noktasal çarpım da nedir arkadaşlar? İlk elemanlar, yani iyiliği elemanlar, iyiliği elemanlar birbiriyle çarpılır.
+
+102
+00:19:30,579 --> 00:19:40,859
+artı, sonra jili elemanlar, k'da olsaydı, k'lı elemanlar da birbiriyle çarpılırdı. Eksi 20 çarpı 3 bölü 5'tir.
+
+103
+00:19:41,699 --> 00:19:47,879
+Buradan ne gelir arkadaşlar? Şunlar gider, 8, şununla şu gider,
+
+104
+00:19:48,288 --> 00:20:15,608
+kaç kaldı? Eksi 12. Buradan eksi 4 gelir. Anladınız mı bunu arkadaşlar? Ya da şunları şöyle yazabilirsiniz. 10'a eksi 20 çarpı 4 bölü 5'e 3 bölü 5. İşte ilk elemanı ilk elemanla, ikinci elemanı ikinci elemanla çarparsınız. Noktasal çarpımda. Evet, var mı bana sormak istediğiniz bu kısmı anladınız mı? Var mı arkadaşlar?
+
+105
+00:20:16,500 --> 00:20:30,500
+Evet, yine sessizsiniz. Sizinle daha yeni tanışıyoruz arkadaşlar. Derse katılırsanız çok sevinirim arkadaşlar. Anlamadığınız bir yer olursa söylerseniz çok sevinirim. Evet, şimdi...
+
+106
+00:20:30,963 --> 00:20:47,324
+Bakın arkadaşlar, yönlü türevi biraz anladık değil mi? Şimdi yavaş yavaş böyle anlamaya çalışıyoruz. Şöyle bir şey söyleyeyim, bunun üzerinde çok şey durmayacağım. Önemli olan size sorulduğu zaman neyin nerede kullanacağınızı bilmek.
+
+107
+00:20:47,324 --> 00:20:57,243
+Şimdi arkadaşlar, bunda yönlü türevde arkadaşlar, yönlü türev ne? Şunu şuraya yazayım ilk önce anlamanız için. Yönlü türev ne arkadaşlar?
+
+108
+00:20:58,324 --> 00:21:13,684
+f fonksiyonunun bir u vektörü boyunca türevi. Değil mi arkadaşlar? Buna yönlü türev diyoruz. f'in türevini alıyoruz ama bir vektör boyunca alıyoruz. Buna da ne dedik? Gradiyen f çarpı ne dedik arkadaşlar? u dedik.
+
+109
+00:21:14,548 --> 00:21:28,827
+Şöyle, değil mi arkadaşlar? Şimdi arkadaşlar, bu bizi bir yere götürüyor. Şöyle, 2 vektörün çarpımı, mesela şu u vektörü olsun, şu da gradyan f vektörü olsun, aralarındaki açı da tete olsun.
+
+110
+00:21:29,587 --> 00:21:41,528
+Hatırlayın, vektörler konusundan, kosünüs tete nedir? 2 vektörün çarpımı, gradyan f çarpı u diyelim, bölü bunların uzunluğuna bölümüdür.
+
+111
+00:21:42,675 --> 00:21:50,415
+Hatırlayın arkadaşlar. Şimdi burada arkadaşlar, şöyle düzenlerseniz, gradiyan f çarpı u neye eşittir?
+
+112
+00:21:50,795 --> 00:22:02,235
+Kosünüs teta çarpı, gradiyan f'in uzunluğu, u'nun uzunluğu. Değil mi? Böyledir. Ya da vektörlerin büyüklüğü diyelim şunların, u'nun büyüklüğü, gradiyan f'in büyüklüğü.
+
+113
+00:22:02,235 --> 00:22:09,535
+He demek ki diyorum ki ben, ya aslında diyorum, şununla şunun çarpımı şuna eşitmiş.
+
+114
+00:22:10,228 --> 00:22:15,928
+Kosünüs teta, gradyan f'in uzunluğu, o'nun uzunluğudur.
+
+115
+00:22:16,588 --> 00:22:17,568
+Tamam mı arkadaşlar?
+
+116
+00:22:18,308 --> 00:22:21,328
+Şimdi, burada arkadaşlar şöyle bir şey var.
+
+117
+00:22:21,948 --> 00:22:24,808
+Kosünüs teta, kaç ile kaç arasında değer alır?
+
+118
+00:22:25,068 --> 00:22:25,848
+Biliyor musunuz?
+
+119
+00:22:26,208 --> 00:22:27,328
+En fazla kaç olur?
+
+120
+00:22:28,768 --> 00:22:29,448
+En fazla.
+
+121
+00:22:30,268 --> 00:22:31,988
+Söyleyebilecek olan birisi var mı?
+
+122
+00:22:32,568 --> 00:22:32,828
+Evet.
+
+123
+00:22:33,907 --> 00:22:47,347
+Merak ediyorum, kosünüs açısının en büyük değeri kaçtır? Yani en fazla kaç olur? Herkesin bildiği bir şey. Yani kosünüs teta kaç ile kaç arasında değer alır? Evet.
+
+124
+00:22:50,048 --> 00:22:53,927
+Evet, kimse yok mu arkadaşlar? 1 ile eksi 1 arasında.
+
+125
+00:22:55,412 --> 00:23:03,292
+1 ile eksi 1 arasında değer alırsa, o zaman demek ki bunun en büyük değeri 1 olur, en küçük değeri eksi 1 olur.
+
+126
+00:23:03,672 --> 00:23:10,632
+Şimdi buna göre yorumlanırsa arkadaşlar şöyle, şimdi kosünüs tetanın değeri 1 olduğu zaman,
+
+127
+00:23:11,432 --> 00:23:14,312
+teta açısı 0 olduğu zamandır.
+
+128
+00:23:14,312 --> 00:23:17,312
+Ve burada şöyle diyebiliriz,
+
+129
+00:23:19,380 --> 00:23:32,580
+f fonksiyonu en hızlı şekilde artar. Tamam mı arkadaşlar? Yani en büyük değerini aldığı yerde en hızlı şekilde artar ve en büyük yönlü türev değerine ulaşır.
+
+130
+00:23:33,860 --> 00:23:41,779
+u ile delta f, pardon gradyan f aynı yöndedir ve f en çok şöyle diyelim.
+
+131
+00:23:43,988 --> 00:24:06,968
+en çok P'deki gradiyent F vektörü yönünde artar. Tamam mı arkadaşlar? Bu bize yani F, gradiyent F yönünde en fazla artar. Bunu bilmelisiniz. Gradiyent F yönünde en fazla artar. Tamam mı arkadaşlar? Türevi de budur. Yönündeki türevi de budur.
+
+132
+00:24:07,284 --> 00:24:24,284
+en fazla da aynı şekilde f fonksiyonu da en fazla eksi gradiyan f yönünde azalır. Bunu nereden buluyoruz? Kosünüs, teta'nın 1 ile eksi 1 arasındaki değerler almasından buluyoruz.
+
+133
+00:24:35,284 --> 00:24:59,163
+F'teki sıfır değişim yönüdür arkadaşlar. Şöyle gösterebiliriz. Bununla ilgili örneklerden ne anlatmak istediğini anlamaya çalışalım arkadaşlar. Size bir şey söyleyeceğim. Burada bir tane daha soru var. Şurada. Biraz önceki gibi ben bir tanesini yaptım. Bu size ödev arkadaşlar.
+
+134
+00:25:02,228 --> 00:25:11,528
+Tamam mı? Yani f fonksiyonunun 2 sıfır noktasındaki, pardon bunu yaptık. Bu değil, ödev. Bir tane daha olması lazım.
+
+135
+00:25:15,604 --> 00:25:33,884
+E üzerili olması lazım. Bir tane daha soru var arkadaşlar. Şu anda onu bulamıyorum. O da size ödev. Şu olması lazım. Evet bu. Evet bu soru. Bu ödev. Ben alttaki soruyu yaptım. O da sizlere ödev.
+
+136
+00:25:33,884 --> 00:25:41,104
+Şimdi arkadaşlar gelin bu soruyu anlamaya çalışalım. Hangi yönde artar? En çok arttığı yön.
+
+137
+00:25:41,503 --> 00:25:59,203
+Tamam mı arkadaşlar? En çok azaldığı yön ve sıfır değişim yönleri. Şimdi bunları tek tek görelim arkadaşlar. Sıfır değişim yönleri nelerdir? Bunu bileceksiniz. Bir tane daha farklı soru şekli var. Onu da biraz sonra göstereceğim.
+
+138
+00:26:04,084 --> 00:26:15,204
+Hangi yöndeydi? Gradiyan F yönündeydi. En çok azaldığı da, en çok arttığı gradiyan F'ti. En çok azaldığı da, eksi gradiyan F'ti.
+
+139
+00:26:15,584 --> 00:26:29,544
+Şimdi o zaman demek ki, artan, azalan, en çok arttığı, en çok azaldığı, sıfır değişim yönü de arkadaşlar, neydi? Sıfırı gördüğünüz zaman, gradiyan F'ye dik.
+
+140
+00:26:29,935 --> 00:26:43,855
+olan yönlerdir. Tamam mı arkadaşlar? Gradiyen f yönünde, şurası, bu da eksi gradiyen f yönünde. Şimdi gelin bunu çözelim. Demek ki neler isteniyor? Şimdi o zaman şöyle diyorum.
+
+141
+00:26:44,215 --> 00:26:49,875
+Fonksiyonum ne? Şimdi örneğin, örneğin fonksiyonum şu.
+
+142
+00:26:50,900 --> 00:27:02,560
+x kare bölü 2, y kare bölü 2. Şimdi hangi noktada A şıkkı? Birebir noktasında ne diyor? En çok artan.
+
+143
+00:27:02,560 --> 00:27:10,600
+En çok artan. Ne dedik arkadaşlar? En çok artan yön. Hangisidir? Gradyan F yönüdür.
+
+144
+00:27:11,160 --> 00:27:14,420
+Şimdi o zaman en çok artan.
+
+145
+00:27:16,304 --> 00:27:26,784
+ya da en hızlı ya da şöyle diyelim, en hızlı gradiyan F yönünde artar.
+
+146
+00:27:28,596 --> 00:27:52,176
+artar. Tamam mı arkadaşlar? O zaman neyi bulacağız? Gradyan f'i bulacağız. Bulalım. Gradyan f nedir? Kaç değişkeni var? 2. 2 boyuttayız. 3 boyutta olsaydık 3 değişkeni olurdu. Ona göre 3 tane kısmi türevi alacaktık. Nedir? f'in x'e göre türevi, i ve f'in y'ye göre türevi,
+
+147
+00:27:53,299 --> 00:27:55,419
+j'dir. Şimdi yazalım.
+
+148
+00:27:55,879 --> 00:27:57,139
+f'in x'e göre türevi.
+
+149
+00:27:57,939 --> 00:28:02,000
+x'e göre türevi alırken, y'leri sabitmiş gibi düşüneceğiz.
+
+150
+00:28:02,480 --> 00:28:09,099
+Alalım. x karenin türevi 2x bölü 2'den, 2x bölü 2'den ne gelir?
+
+151
+00:28:09,759 --> 00:28:12,700
+x gelir. Bunun türevi, y'nin türevi sıfır olur.
+
+152
+00:28:13,172 --> 00:28:21,152
+aynı şekilde arkadaşlar, f'in y'ye göre türevi, f'in y'ye göre türevini de alırken, bu sefer ne olacak arkadaşlar?
+
+153
+00:28:21,152 --> 00:28:23,432
+şöyle
+
+154
+00:28:23,432 --> 00:28:26,028
+y yazalım
+
+155
+00:28:26,355 --> 00:28:32,115
+f'in y'ye göre türevini de alırken arkadaşlar, bu sefer de x'den sabitmiş gibi düşüreceğiz.
+
+156
+00:28:32,576 --> 00:28:43,415
+f'in y'ye göre türevini alırken, 2 sabit, x sabit, y kare bölü 2'nin türevi, yani y karenin türevi 2y bölü 2'den, ne geldi? y.
+
+157
+00:28:43,915 --> 00:28:45,675
+Şimdi gradyant f'i bulduk.
+
+158
+00:28:46,336 --> 00:28:48,435
+Gradyant f neymiş arkadaşlar?
+
+159
+00:28:48,635 --> 00:28:50,316
+f'in x'e göre türevi x.
+
+160
+00:28:50,932 --> 00:29:12,051
+f'in y'ye göre türevi y, j'dir. Tamam mı arkadaşlar? Şimdi diyorum ki arkadaşlar, x, i, artı, y eşi. Hangi noktada? Hangi noktada bize sormuş? Birebir noktasında. O zaman, birebir noktasında, gradyan f'in değeri, bu genel.
+
+161
+00:29:12,915 --> 00:29:19,596
+Birebir noktasında x gördüğümüz yere 1, y gördüğümüz yere 1 veriyoruz.
+
+162
+00:29:20,096 --> 00:29:24,395
+1 çarpı i, i, 1 çarpı j, j'dir.
+
+163
+00:29:24,395 --> 00:29:33,815
+Demek ki en hızlı arttığı yön, yani bu yönde, gradyan f yönünde ne yapacak arkadaşlar?
+
+164
+00:29:34,695 --> 00:29:36,555
+En hızlı artar.
+
+165
+00:29:37,619 --> 00:29:51,799
+Bu yönde. Bir şey daha söyleyeceğim. Peki yönü nedir dersi? Mesela biz diyoruz ya, F fonksiyonunun şu yöndeki. Ama hep yönlerin ne olması lazım arkadaşlar? Birim olması lazım.
+
+166
+00:29:52,460 --> 00:30:00,000
+Yönünü şöyle diyeceksiniz. Eğer yönü diyorsa mutlaka birimleştirmeniz lazım. Yani gradyan F yönü...
+
+167
+00:30:00,000 --> 00:30:21,200
+yönünde, yönü, bilim hale getireceksiniz. Bunun bilim hali nedir arkadaşlar? Şunun, gradyan F'in bilim hali. Mesela gradyan F'e A vektörü diyelim. Bu I artıcı değil mi arkadaşlar? Bunun uzunluğu nedir arkadaşlar? Bunun uzunluğunu söyleyebilir misiniz bana?
+
+168
+00:30:21,907 --> 00:30:44,447
+i'nin kat sayısı 1, yani bu aslında 1'e 1'dir değil mi? Buradan 1'in karesi, 1'in karesi, kök 2'dir. Bunu nasıl bilimleştirirsiniz? U vektörü dersi, A vektörü bölü, A'nın uzunluğudur. Ne olur arkadaşlar buradan? A vektörü, i artı j,
+
+169
+00:30:46,099 --> 00:31:08,319
+I bölü kök 2 olur. Bu da nedir? I bölü kök 2 artı J bölü kök 2'dir. Tamam mı arkadaşlar? İşte yani ya da şöyle diyoruz. Gradiyan F'i, gradiyan F'in uzunluğuna bölerek I bölü kök 2 artı J bölü kök 2'yi bulduk.
+
+170
+00:31:08,564 --> 00:31:28,604
+Yani yönler yönü. Bir şeyin yönündeyse, o yönün birim olması lazım. Birim olmalı diyoruz. Birim olmalı. O zaman buna u vektörü dedim. Yönü nedir? İ bölü 1 bölü kök 2 i artı 1 bölü kök 2 j'dir.
+
+171
+00:31:30,484 --> 00:31:33,984
+Tamam mı arkadaşlar? Var mı bir sorunuz bana burada?
+
+172
+00:31:34,548 --> 00:31:38,207
+şimdi şöyle diyelim bakın en çok hangi yönde?
+
+173
+00:31:38,771 --> 00:32:06,692
+Artar 1. Hangi yönde artar arkadaşlar? En çok gradiyan F yönünde artar. Onu da bulduk. Şu. Gradiyan F yönü şu. İ artı J yönünde artar en çok. Peki yönü derse, yönü derse bunu bilimleştirdik. Tamam mı arkadaşlar? Yani gradiyan F ile U aynı yöndedir. Bu gradiyan F vektörü bu da bilimleştirilmiş halidir. U vektörü.
+
+174
+00:32:06,771 --> 00:32:29,851
+Tamam mı arkadaşlar? Şimdi aynı yöndedir. İkincisi hangi yönde azalır? En fazla hangi yönde azalır? O da eksi gradyan f yönündedir. Tamam mı arkadaşlar? O zaman gradyan f'i bulduk. Kaçtı gradyan f'i? Birebir noktasındaki değeri i artı j idi.
+
+175
+00:32:30,352 --> 00:32:35,312
+O zaman, eksi gradyan f de ne olur? Eksi i, eksi j.
+
+176
+00:32:36,051 --> 00:33:04,031
+O zaman ne diyeceğiz arkadaşlar? Hangi yönde azalır? Eksi gradyant f yönünde azalır. Yani bu yönde azalır. Yani eksi i, eksi j yönünde azalır. Peki yönü nedir arkadaşlar? Yönü derse yine bu eksi gradyant f mesela bu yönü olsun. Eksi gradyant f yönü bu yöndeki bir birim vektörü olacaksınız. Buna da u vektörü dersek bu da eksi u olacak. Yani aynısının.
+
+177
+00:33:04,051 --> 00:33:15,211
+eksilisi olacak, yukarıdakinin işlemler. Yani şunu bilimleştireceksiniz. Yönünde, gradyan F'in, F'nin, bilimleştirilmişini alacaksınız.
+
+178
+00:33:15,971 --> 00:33:30,611
+Bilimleştireceksiniz. Bilimleştirecek. Tamam mı arkadaşlar? O da buna gelir. Evet. Şimdi sınavlarda en çok çıkan kısımlardan birisi, bunlar da çıkıyor. 1, 2, şimdi
+
+179
+00:33:31,135 --> 00:33:45,135
+Birebirdeki sıfır değişim oranı, sıfır değişim dediği zaman arkadaşlar, her zaman için sıfır değişimler arkadaşlar, gradyan F'ye dik olan yönlerdir.
+
+180
+00:33:45,135 --> 00:33:50,475
+Tamam mı arkadaşlar? Gradyan F'ye dik olan yönler, şöyle göstereyim.
+
+181
+00:33:51,596 --> 00:33:58,695
+Gradyan F, birebirde, üçüncü şık, şöyle diyelim.
+
+182
+00:33:59,988 --> 00:34:20,507
+birebir noktasında sıfır değişim yönü. Bu arkadaşlar, nedir arkadaşlar? Her zaman için gradyant f'ye dik olan yönler. Bu önemli.
+
+183
+00:34:21,108 --> 00:34:46,628
+Bakın kaç yıldız koyalım buraya? Çok yıldız koyalım. Dik olan yönler deyince şöyle, çok yıldız koyuyoruz arkadaşlar şöyle. Dikkat etmeniz lazım. Şimdi arkadaşlar, gradyan f'nin, gradyan f'nin birebirdeki değeri neydi arkadaşlar? i artı j. Buna dik olan yönler. i artı j'ye dik.
+
+184
+00:34:47,956 --> 00:35:15,136
+Bir vektöre dikini nasıl bulursunuz? Buna A vektörü dersek, A vektörü i artı j olsun. Tamam mı? A'ya dik vektörü nasıl bulursunuz? A'ya dik vektör, evet. A'ya dik vektör, kimse bilmiyor mu arkadaşlar? A'ya dik vektör nedir? A ile B olsun. A ile B'nin çarpımında ne olmalı arkadaşlar? Evet, bir kişi bile yok mu?
+
+185
+00:35:16,307 --> 00:35:37,228
+a ile b'nin çarpıma 0 olmalı. Dikse, dik vektör b olsun. O zaman, şöyle deriz, a çarpı b 0 olmalıdır. Şimdi a çarpı b eşittir 0 olmalı diyoruz. Şimdi a çarpı b eşittir 0 ise, ne olacak arkadaşlar?
+
+186
+00:35:43,059 --> 00:35:55,639
+B'nin bileşenlerine ne diyelim arkadaşlar? B'nin bileşenlerine B vektörü X'e Y olsun. Ne olacak? X'e Y'nin çarpımı 0 olacak. Çarpalım arkadaşlar.
+
+187
+00:35:57,460 --> 00:36:09,880
+Birinci bileşeni birinci bileşenle, ikinci bileşeni ikinci bileşenle çarpmalıyız. X artı Y eşittir 0 olmalı. Bu 1. İkincisi B birim olmalı.
+
+188
+00:36:10,675 --> 00:36:34,876
+birim olmalı. Tamam mı arkadaşlar? B birim olmalı. O zaman buradan da arkadaşlar x kare artı y kare eşittir bir gelir. Tamam mı? Şimdi o zaman x eşittir eksiye. Şimdi burada koyarsanız x yerine eksiye. 2y kare eşittir bir olur. y eşittir artı eksi bir bölü kök 2 olur.
+
+189
+00:36:35,380 --> 00:36:45,139
+x de onun eksilisi. Yani x'i, mesela y eşittir 1 bölü kök 2 ise, x ne olur? Eksi 1 bölü kök 2 olur.
+
+190
+00:36:46,259 --> 00:36:55,340
+Eğer x, y eşittir, eksi 1 bölü kök 2 ise, x ne olur? Artı 1 bölü kök 2 olur.
+
+191
+00:36:56,119 --> 00:37:02,539
+Tamam mı arkadaşlar? O zaman ne dersiniz? Bizim aldığımız b vektörü nedir?
+
+192
+00:37:02,943 --> 00:37:25,603
+1 bölü kök 2'ye, eksi 1 bölü kök 2, ya da B vektörü nasıl olur? B vektörü, eksi 1 bölü kök 2'ye, 1 bölü kök 2 olur. Var mı bana sormak istediğiniz bir şey burada? Burada çok, notlarda çok şey değil arkadaşlar.
+
+193
+00:37:26,260 --> 00:37:36,700
+çok açık yazmamışım. Şurada bir de şey olması lazım. a kare artı b kare eşittir bir olmalı. Oradan bulunabilir.
+
+194
+00:37:38,560 --> 00:37:41,080
+Evet, var mı buraya kadar bir sorunuz bana?
+
+195
+00:37:42,880 --> 00:37:44,360
+Evet, şimdi gelelim.
+
+196
+00:37:45,235 --> 00:38:09,735
+en önemli noktaya. Şimdi arkadaşlar, bir, size ne sorulabilir? Bir fonksiyonun bir vektör boyunca türevi sorulabilir. Ya da arkadaşlar, şu sorulabilir. Bir F fonksiyonunun, yani şöyle, iki değişkenli de arkadaşlar, gradyant F'ler, şöyle söyleyeyim, gradyant F'ler, T'lere diktir. Tamam mı? Bu önemli.
+
+197
+00:38:10,192 --> 00:38:34,251
+Bu öğrenci mantığıyla yazdığım bir şey. T etlere dikti. Yani gradyan F, Fx'ye arkadaşlar, Fx'ye bir seviye eğrisi, bir eğrinin, şöyle bir eğrinin, gradyan F neyine dik olabilir? Şu noktada, bir P noktasında, şöyle göstereyim arkadaşlar.
+
+198
+00:38:36,811 --> 00:38:37,572
+Şöyle.
+
+199
+00:38:38,867 --> 00:38:45,867
+şimdi bir efiksiyon var. Tamam mı arkadaşlar? Bu bir eğri.
+
+200
+00:38:45,867 --> 00:38:51,820
+bir eğri mesela bir nokta
+
+201
+00:38:56,083 --> 00:39:16,583
+P noktası. Tamam mı arkadaşlar? P noktasındaki değeri. Şimdi, gradyan F deyince, bu P noktasında diktir. Neye diktir? Gradyan F'ler T'lere dik. Tamam mı? T'lere dik. Şimdi o zaman bu nedir? Burada bir T doğrusu var.
+
+202
+00:39:22,164 --> 00:39:27,404
+işte bu teğet doğrusuna diktir. hangi noktada? P noktasında.
+
+203
+00:39:28,820 --> 00:39:32,800
+Yani bu, gradyan f'in t noktasındaki değer.
+
+204
+00:39:33,400 --> 00:39:44,180
+Yani size bir noktada, iki değişkenli p noktasında verilirse, siz bir eğrinin t doğrusuna dik olduğunu biliyorsunuz.
+
+205
+00:39:44,180 --> 00:39:48,180
+Mesela, diziler ki, p noktasının p0 noktasında.
+
+206
+00:39:48,640 --> 00:39:53,380
+Gradyan f'in p0 noktasındaki değeri nedir? Bu fx'ye için.
+
+207
+00:39:53,940 --> 00:40:09,099
+Şimdi ne olur arkadaşlar? Tam şu noktada, tamam mı? Gradiyan F diktir. Niye? Bu T doğrusuna diktir. Eğrinin T doğrusuna diktir.
+
+208
+00:40:09,659 --> 00:40:16,519
+Evet, bunun için şimdi bu iki boyutlu da böyle. Üç boyutlu da ise bu iki boyutta.
+
+209
+00:40:17,599 --> 00:40:18,539
+İki boyutta.
+
+210
+00:40:20,659 --> 00:40:26,559
+2 boyutta gradyan f eğrenin t doğrusuna dik.
+
+211
+00:40:29,280 --> 00:40:33,059
+3 boyutta ise 3 boyutta yüzey.
+
+212
+00:40:34,159 --> 00:40:39,500
+3 boyutta bakın şöyle bu bir yüzey yine dik.
+
+213
+00:40:39,760 --> 00:40:42,119
+Mesela p noktasında gradyan f.
+
+214
+00:40:43,987 --> 00:40:52,827
+bu neye dik arkadaşlar? t'lere dik olduğuna göre, bu da arkadaşlar 3 boyutta t'ye düz demedik.
+
+215
+00:40:57,396 --> 00:41:16,416
+Anlaşıldı mı arkadaşlar? Evet. Kimse var mı arkadaşlar? Çok sessizsiniz yine. Anlaşıldı mı? Şimdi demek ki gradyan F'ler 2 boyutta 1 eğrinin T'et doğrusuna dik, 3 boyutta T'et düz demedik. Tamam mı arkadaşlar?
+
+216
+00:41:16,416 --> 00:41:23,556
+Hocam, buradayız. Çete yazılıyor da siz görmüyorsunuz sanırım. Allah Allah. Bir dakika, bir bakayım.
+
+217
+00:41:24,916 --> 00:41:41,256
+Şimdi chat bazen, tamam, teşekkür ederim, evet ben görmüyorum, bazen şöyle oluyor, chat'teki yazılanları göremiyorum, buradan chat diyorum ama şimdi geldi, bazen geliyor, tamamdır.
+
+218
+00:41:41,844 --> 00:42:08,704
+Evet, şimdi buraya kadar anladınız umuyorum anladınız. Demek ki gradyat F size bir eğrinin, iki boyutta ise eğrinin t doğrusuna dik, üç boyutta ise yüzeyin t düzlemine dik. Tamam mı? Bu çok önemli. Şöyle kaç yıldız koyalım? Şöyle çok yıldız koyalım. Bu çok önemli. T düzleme dik. Gradyatlar normaller demek.
+
+219
+00:42:09,844 --> 00:42:31,224
+Atomatik dilinde t-etlere dik olanlara normal deriz. Tamam mı arkadaşlar? Normal vektörü demek ki. Mesela bu doğruya normal. Mesela bakın bu t-et doğrusu, şurası, bu doğruya normal. Hatta farklı bir renkte göstereyim. Bakın bu normal. Normali deriz.
+
+220
+00:42:31,572 --> 00:42:41,731
+eğriyedik. 3 boyutta da ne yedik arkadaşlar? Düzleme diktir. Şimdi gelelim devam edelim. Şimdi örnek çözelim. Bakın arkadaşlar.
+
+221
+00:42:42,867 --> 00:43:04,567
+diyor ki, bir tane elips verilmiş. Hatta elipsi biz, şöyle burada göstermişim, yeniden çizmeyeyim. Şu elipsimiz. Tamam mı arkadaşlar? Şu da denkleme. Demiş ki, bu elipsin, elipsin hangi noktada? Eksi 2'ye 1 noktasında. Bakın arkadaşlar, eksi 2'ye 1 noktası da şu nokta.
+
+222
+00:43:05,108 --> 00:43:15,108
+noktasında t olan doğru için denklem yazımız. Soruyu anladık mı? Bir elips var. Şimdi şöyle bakın bir elipsimiz var.
+
+223
+00:43:16,115 --> 00:43:36,815
+örnek, x kare bölü 4 artı y kare eşittir 2. Elipsi var, şöyle bakın, kabataslak çiziyorum, çizimi var. Diyor ki, eksi 2'ye 1 noktasında, eksi 2'ye 1 noktasında, ne olan? T'yet olan doğruyu bulunuz.
+
+224
+00:43:37,619 --> 00:43:57,960
+Tamam mı? Şimdi ne yapıyoruz arkadaşlar? Şöyle diyoruz. Eksi 2'ye 1 noktası. Bunu çizmenize gerek yok böyle. Eksi 2'ye 1 noktası da şurasıymış. Yani biz çizdiğimiz için yerini gösterelim. Eksi 2'ye 1. Biz bunu çizmeden yapsaydık şöyle derdik. Bir tane şöyle, pardon.
+
+225
+00:43:59,155 --> 00:44:17,935
+Şöyle, şöyle bir tane elipsim var. Şurası da şey olsun, temsili nokta. Hangi nokta? Eksi 2'ye 1 noktası. Diyor ki, bu noktadaki t-et olan doğruyu bulunuz. İşte t-et bu. Şurası. T-et doğrusu bu.
+
+226
+00:44:18,483 --> 00:44:42,664
+Evet, doğrusu. Ben ne biliyorum? Bana başka bir şey vermemiş. Bir. Eğer bu eğri ise, bakın bu eğri değil mi? Fx'ye dersem, nasıl diyeceğim? Hepsini bir tarafa geçirin arkadaşlar. Ya da seviye eğrisi diye düşünün. Yani Fx'ye eşittir 2 şeklinde yazabilirsiniz. Yani bu ne olur? x kare bölü 4 artı y kare eşittir 2.
+
+227
+00:44:43,956 --> 00:45:05,635
+Buraya fx'ye yazarsınız, eşittir 2. Yani şöyle yazıyorduk ya, fx'ye eşittir c diyorduk. İşte buradaki 2. Ya da hepsini bir yere geçirirsiniz, eşittir 0 dersiniz, yani oradaki 2 yine her halükarda gidecek. Tamam mı arkadaşlar? Önemli olan x ve y değişkenlerine bağlı olan kısmı.
+
+228
+00:45:11,956 --> 00:45:13,516
+Ne dedik? T doğruya.
+
+229
+00:45:13,956 --> 00:45:14,855
+T doğruya.
+
+230
+00:45:17,016 --> 00:45:18,516
+Gradyantlar ne arkadaşlar?
+
+231
+00:45:18,775 --> 00:45:20,036
+Hep aklınıza bu gelecek.
+
+232
+00:45:20,416 --> 00:45:42,096
+Gradyan F hangi noktada? Size sorulan noktada. Burası eksi 2'ye 1. Biz gradyan F'in eksi 2'ye 1 noktasındaki değerini alıyoruz. Tamam mı arkadaşlar? Hep bunu düşüneceksiniz. Size bir eğri verdi ya da yüzey verdi. Onun gradyantini aldığınız zaman t'ye diki bulursunuz. Her zaman için.
+
+233
+00:45:42,096 --> 00:45:48,056
+Şimdi gradyan F. Kaç boyuttayız? 2 boyuttayız Fx'ye. O zaman ne olacak?
+
+234
+00:45:48,416 --> 00:45:53,815
+f'in x'e göre türevi i, f'in y'ye göre türevi j'dir.
+
+235
+00:45:54,155 --> 00:45:58,556
+Şimdi o zaman f'in x'e göre türevi bulalım.
+
+236
+00:45:58,916 --> 00:46:00,516
+f'in x'e göre türevi nedir?
+
+237
+00:46:00,916 --> 00:46:04,036
+Şöyle diyelim, fx'ye ne aldık?
+
+238
+00:46:04,476 --> 00:46:07,436
+x kare bölü 4 artı y kare.
+
+239
+00:46:07,735 --> 00:46:08,576
+Tamam mı arkadaşlar?
+
+240
+00:46:09,056 --> 00:46:12,815
+Eksi 2'yi alsanız, sıfıra da eşitleseniz, sonuç değişmez.
+
+241
+00:46:12,936 --> 00:46:14,615
+Tamam mı? Biz böyle aldık.
+
+242
+00:46:14,996 --> 00:46:42,836
+Şimdi burada f'in x'e göre türevi nedir arkadaşlar? y'leri sabit tut. y'leri sabit tuttunuz. f'in x'e göre türevi 2x bölü 4'ten x bölü 2. f'in y'ye göre türevi bu sefer x'leri sabit tut y'ye göre türeva. Burası 0, y karenin türevi 2y. Şimdi diyorum ki demek ki bu x bölü 2y artı 2y j.
+
+243
+00:46:42,996 --> 00:46:49,036
+Şimdi buradan arkadaşlar, ne olur arkadaşlar, bize hangi noktadaki t-et'ini istiyor?
+
+244
+00:46:49,175 --> 00:46:51,336
+T-et doğrusunu hangi noktada?
+
+245
+00:46:51,876 --> 00:46:57,155
+2'ye 1 noktasındaki bakın, 2'ye 1 noktasındaki t-et doğrusunu istiyor.
+
+246
+00:46:57,276 --> 00:46:58,016
+Yazıyorum bakın.
+
+247
+00:46:59,967 --> 00:47:24,367
+eksi 2'ye bir noktasındaki değer. Alalım. X gördüğümüz yere, hatta şuraya yazalım. Gradiyan f'in eksi 2'ye bir noktasındaki değeri. X gördüğümüz yere eksi 2 yazdım. Eksi 2 bölü 2'den, eksi i artı ye gördüğüm yere bir yazdım. 2 j oldu. Tamam mı arkadaşlar? Eksi i artı 2 j oldu.
+
+248
+00:47:24,916 --> 00:47:52,036
+Şimdi bulduk artık. Bakın, eğri bu. 1. Sonra ne yaptık arkadaşlar? Şu nokta. Eksi 2'ye 1. Şuradaki t doğru denklemini istiyor. T doğru. Tamam mı? Şimdi biz neyi bulduk? Gradyan f'i bulduk. Gradyan f. Bu kaç? Eksi 2'ye 1 noktasında. Tam şu noktadaki. Bakın tam bu noktadaki değil. Kaç arkadaşlar? Eksi 1'i 2. Şu.
+
+249
+00:47:52,480 --> 00:48:20,480
+Ya da eksiği artı ikiciği şeklinde yazarsınız. Şurada dik. Önemli olan kısım bu. Peki, t doğruyu nasıl yazacaksınız? Doğru denklemini yazarsınız. Ama doğru denklemini yazmak için hep biz doğru şu ya, d doğrusu, hep buna bir paralel vektör alıyorduk. Şöyle. Mesela v vektörü. Ama bu sefer paralel değil de doğruya dik vektör biliyoruz. Şöyle yapıyoruz.
+
+250
+00:48:20,480 --> 00:48:34,260
+Bir tane temsili nokta alıyorsunuz. X'ye olsun. Doğruyu yazacaksınız ya. Nasıl yazacağız? Şu vektörünüz şu olur. Bu vektör nedir arkadaşlar? Şöyle. Başlangıcı x'i 2'ye 1.
+
+251
+00:48:34,739 --> 00:48:39,179
+Şurası x'e y. Ne olur arkadaşlar? Şuna a vektörü derseniz.
+
+252
+00:48:39,599 --> 00:48:46,279
+a vektörü nedir arkadaşlar? Son noktası x-2'den x artı 2.
+
+253
+00:48:46,839 --> 00:48:54,139
+Bunun da ilk noktası y, pardon son noktası y, ilk noktası y-1'dir.
+
+254
+00:48:54,139 --> 00:49:02,739
+Bu a vektörüyle, buna a vektörü derseniz, a vektörüyle gradyan f vektörünün çarpımı ne olur arkadaşlar?
+
+255
+00:49:02,739 --> 00:49:21,959
+Arkadaşlar, dik olduğu için. Evet, birisi söyleyebilir mi? Evet. Var mı cevap? Bakalım, chat çalışacak mı? Sıfır. Teşekkürler [öğrenci], teşekkürler [öğrenci]. O zaman bunların çarpımı sıfır olacak. Ben buradan yazabilirim.
+
+256
+00:49:21,959 --> 00:49:29,619
+Diyorum ki, A vektörün x hariti 2, y eksi 1, çarpı, gradyan f vektörü. Eksi 1'e 2.
+
+257
+00:49:30,708 --> 00:49:39,728
+ne oldu arkadaşlar? Çarpalım. Ne gelir? Eksi 1'e, eksi 1 çarpı ilk bileşen ile ilk bileşen.
+
+258
+00:49:40,851 --> 00:49:50,851
+artı ikinci bileşen ve ikinci bileşen y-1 ne oldu? Eşittir ne olmalı? 0 oldu. E düzenleyelim.
+
+259
+00:49:50,851 --> 00:50:07,692
+eksi x eksi 2 artı 2y eksi 2 eşittir 0. Buradan ne geldi arkadaşlar? 2y eksi x eşittir 4 gelir. Yanlış mı yazdım? Eksi x eksi 2, 2y eksi 2.
+
+260
+00:50:08,543 --> 00:50:27,864
+Evet, eksi x, benim notlarımda şu son kısım yanlış yazmışım. Şöyle göstereyim. Şuraya kadar doğru, eksi x artı iki ye eşittir dört, şurası eksi dört olacak. Tamam mı arkadaşlar?
+
+261
+00:50:28,563 --> 00:50:34,643
+Var mı buraya kadar? Bunu formülize de edebilirsiniz. Böyle formül olarak da ezberleyebilirsiniz.
+
+262
+00:50:34,864 --> 00:50:44,804
+T doğru denklemi için x0, y0 noktasında bir eğrinin gradyanti diktir. T doğru denklemini de bu verir diye söyleyebiliriz.
+
+263
+00:50:44,804 --> 00:50:46,704
+Evet arkadaşlar.
+
+264
+00:50:47,572 --> 00:51:15,572
+Bir sorunuz var mı şu ana kadar? Buraya kadar anladınız mı? Önemli olan bu kısımdı. Şimdi daha gelişmiş. Yani 2, 3, 3 boyutluya geçeceğiz. Ama daha kolay. Teşekkürler [öğrenci], [öğrenci] cevap verdiğiniz için. Şimdi o zaman şöyle yapalım. Bir ara verelim arkadaşlar. Ara verelim isterseniz. 10 geçe başlayalım mı? 15 dakika ara. İyi mi?
+
+265
+00:51:15,572 --> 00:51:27,771
+Sizin için fazla mıdır? Yoksa 10 dakika mı verelim? Var mı? 15 dakika verelim bence. Bir ara verelim. Sonra kaldığımız yerden devam edelim. Olur mu arkadaşlar?
+
+266
+00:51:29,411 --> 00:51:40,991
+Evet, yine bir sessizlik var. [öğrenci] yazdı. Tamam. Saat 10 geçe, 10'a 10 geçe görüşmek üzere. Şimdilik hoşçakalın arkadaşlar.
+
+267
+01:09:23,859 --> 01:09:33,939
+Arkadaşlar, merhabalar. Dersimize kaldığımız yerden devam ediyoruz. Şöyle yine ekran paylaşımı yapıyorum.
+
+268
+01:09:36,340 --> 01:09:38,600
+Ekran paylaşımı yapıyorum.
+
+269
+01:09:39,315 --> 01:09:59,315
+Evet, şimdi arkadaşlar, yönlü türevi başladık. Yönlü türev nedir? Aklımızda böyle bir şey oluştu değil mi? Bir fonksiyonun bir vektör boyunca türevi. Sonra gradyantlere geçtik. Gradyant demek bir fonksiyonun değişkenlerine göre kısmi türevlerin alınması demek. Arkadaşlar, burada...
+
+270
+01:10:00,000 --> 01:10:09,719
+İki fonksiyonun aynı türevdeki gibi, gradyantlarının ayrı ayrı toplamının gradyanti, ayrı ayrı gradyantlarının toplamını eşit.
+
+271
+01:10:09,819 --> 01:10:12,960
+Aynı bu türev gibi de düşünebilirsiniz, ona çok benziyor.
+
+272
+01:10:13,600 --> 01:10:20,779
+İşte farkı, iki fonksiyonun farkının gradyanti, ayrı ayrı gradyantlarının farklarına eşit.
+
+273
+01:10:20,779 --> 01:10:22,500
+İşte şu sabit.
+
+274
+01:10:22,931 --> 01:10:42,412
+k bir sabit, k bir real sayı olmak üzere bir sabit. Mesela ne yapıyorduk? Bir türevde olduğu gibi k dışarıya çıkar, gradiyant f'in, yani k f'in gradiyanti k dışarıya çıkar, gradiyant f'in, k çarpı gradiyant f olur.
+
+275
+01:10:50,931 --> 01:11:18,891
+f çarpı g'nin gradyant bölü g'nin karesi. Aynı türevde olduğu gibi. Burada arkadaşlar mesela en kolayına bir gradyant f verildi. F fonksiyonu, g fonksiyonu var. Bunların gradyantları verildi arkadaşlar. Bulduk yani. Şimdi bakın topladığınız zaman x artı 2'ye olur. Bunun gradyanti ayrı ayrı toplamlarının gradyantini eşittir.
+
+276
+01:11:18,931 --> 01:11:29,631
+Bunları yapmıyorum. Bunlar temel. Ama sizler yaparsanız daha çok eliniz alışır, daha kolay işlem yapabilirsiniz arkadaşlar.
+
+277
+01:11:31,211 --> 01:11:39,011
+Şimdi gelelim 3 değişkenli fonksiyonlara. Arkadaşlar, her şey aynı.
+
+278
+01:11:40,659 --> 01:11:45,600
+Her şey sadece 2 değişken yerine 3 değişken geliyor burada arkadaşlar.
+
+279
+01:11:46,180 --> 01:11:52,399
+İşte bir türevlenebilir bir fx, yz, 3 değişkenli bir fonksiyon var.
+
+280
+01:11:52,899 --> 01:11:59,880
+Bunun şu vektör boyunca türevini bulacağız.
+
+281
+01:11:59,880 --> 01:12:02,500
+Yine aynı şekilde ne diyeceğiz?
+
+282
+01:12:07,520 --> 01:12:23,739
+Birim vektörü boyunca türevi. Ne olacak? Gradyant f fonksiyonu, gradiyant çarpı u'dur. Peki, gradiyant f, gradiyant f nedir arkadaşlar? Bakın, 1, 2, 3 tane değişkeni var.
+
+283
+01:12:23,739 --> 01:12:34,220
+f'in x'e göre türevi, i, f'in y'ye göre türevi, j, f'in z'e göre türevi, k. Ya da nasıl yazarsınız? fx.
+
+284
+01:12:34,528 --> 01:12:51,788
+Fy, Fz şeklinde gösterirsiniz. İşte bununla, yani Fx, Fy, Fz ile neyin çarpımı arkadaşlar? U1, U2, U3'ün çarpımı. U1, U2, U3'ün çarpımıdır.
+
+285
+01:12:51,788 --> 01:13:01,648
+Tabi biz genelde belirli bir noktadaki, gradyante, pardon, yönlü türeve bakıyoruz. Şimdi iki değişkenli için,
+
+286
+01:13:02,515 --> 01:13:10,555
+Geçerli olan bütün kurallar, 3 değişkenli fonksiyonlar içinde geçerlidir.
+
+287
+01:13:11,255 --> 01:13:13,335
+Yani yalnız şuna dikkat edin.
+
+288
+01:13:13,456 --> 01:13:17,376
+Mesela dedi ki, 3 boyutlu uzayda, uzayda dedi.
+
+289
+01:13:17,835 --> 01:13:18,796
+Tamam mı arkadaşlar?
+
+290
+01:13:19,115 --> 01:13:20,895
+Şimdi bakın, dikkat.
+
+291
+01:13:23,055 --> 01:13:27,136
+3 boyutlu uzayda, f, x, y, z.
+
+292
+01:13:28,515 --> 01:13:29,296
+Şöyle olsun.
+
+293
+01:13:30,323 --> 01:13:55,903
+x kare artı y kare olsun. Yalnız bu kaç boyutlu uzayda? 3 boyutlu. 3 boyutlu uzayda grad x, y, z. O zaman gradyant f nedir? 2x'i, x'e göre türev, sonra y'ye göre türev, 2y, j. Sonra ne arkadaşlar? Fikri olan var mı? Bitti mi?
+
+294
+01:13:56,404 --> 01:14:13,084
+K var mı normalde? Şöyle, 0 K'dır. Çünkü X, Y, Z ise, 3 boyutluysa, tamam mı? 3 boyutluysa, mesela şöyle, şunu sileyim, buna dikkat edin.
+
+295
+01:14:13,844 --> 01:14:22,304
+Burası f fonksiyonu x kare artı y kare verildi ama 3 boyutlu dediyse orası j de var ama j'si sıfırdır.
+
+296
+01:14:22,743 --> 01:14:24,523
+Buna dikkat ediyorsunuz arkadaşlar.
+
+297
+01:14:25,523 --> 01:14:27,783
+Şimdi mesela bir tane yapalım soru.
+
+298
+01:14:28,404 --> 01:14:38,743
+Mesela fonksiyon verilmiş fx, yz fonksiyonunun p sıfır noktasında şu yöndeki türevini buluruz.
+
+299
+01:14:38,743 --> 01:14:40,804
+Gelin beraber bulalım arkadaşlar.
+
+300
+01:14:41,908 --> 01:14:42,588
+Şöyle
+
+301
+01:14:47,636 --> 01:14:50,736
+şimdi arkadaşlar, pardon, örneğin
+
+302
+01:14:50,736 --> 01:14:53,695
+pardon
+
+303
+01:15:03,667 --> 01:15:25,627
+Şimdi arkadaşlar, fx, yz, ne olur arkadaşlar? Şöyle verilmiş, x küp, eksi, x, y kare, eksi z, nin, p sıfır, p sıfır noktası nasıl verilmiş? 1, 1, 0.
+
+304
+01:15:32,467 --> 01:15:46,507
+2i, eksi 3i, artı 6k, yönündeki türevini bulunuz.
+
+305
+01:15:46,807 --> 01:15:49,368
+Bulalım arkadaşlar, türevini bulunuz.
+
+306
+01:15:49,868 --> 01:15:51,028
+Şimdi beraber bulalım.
+
+307
+01:15:51,507 --> 01:15:53,188
+1. Öğrenciyim.
+
+308
+01:15:53,608 --> 01:15:58,387
+Tabi şu anda yönlü türevi gördüğünüz için bunun yönlü türevi olduğunu biliyorsunuz ama
+
+309
+01:15:58,387 --> 01:16:01,047
+1. F fonksiyonunun türevini istemiş.
+
+310
+01:16:01,627 --> 01:16:04,407
+1. Nerede? P0 noktasında.
+
+311
+01:16:05,147 --> 01:16:06,127
+Ama ne verilmiş?
+
+312
+01:16:06,707 --> 01:16:07,707
+Bakın şöyle.
+
+313
+01:16:08,747 --> 01:16:09,528
+Şu yöndeki.
+
+314
+01:16:10,587 --> 01:16:12,227
+Tamam mı? O zaman diyorum ki
+
+315
+01:16:12,227 --> 01:16:13,688
+1. Türev.
+
+316
+01:16:14,707 --> 01:16:22,147
+B, F'in türevi. Hangi noktada? P0 noktasında. Buraya ne yazmalıyım? Birim vektör.
+
+317
+01:16:23,367 --> 01:16:32,727
+Birim vektör. Şimdi gidiyorum. V vektörü birim midir? Birim midir arkadaşlar? V vektörü birim midir arkadaşlar?
+
+318
+01:16:34,167 --> 01:16:41,807
+Birim olması için uzunluğunun kaç olması lazım? Bir olması lazım. Bakalım birim midir? Bir cevap verecek olan var mı?
+
+319
+01:16:42,207 --> 01:16:53,247
+Ne yapıyorduk? Birleşenleri 2'nin karesi, eksi 3'ün karesi, altının karesi. Bakalım bir kişi cevap verdi.
+
+320
+01:16:54,163 --> 01:17:16,884
+Evet, gözükmüyor tabii. Bazen chat gözüküyor, bazen gözükmüyor. Evet, [öğrenci] değildir. Teşekkürler [öğrenci]. 6'nın karesi. Arkadaşlar, bunu aldığınız zaman 36, 9, 4, 49, ne yapar? 7. Birim değildir. Demek ki ben buraya V vektörünü yazamam. Şuraya, şuraya.
+
+321
+01:17:17,427 --> 01:17:27,587
+V vektörünü yazamam. Buraya birim vektör yazacağım. O zaman ne yapacağız? Birimleştireceğiz. U vektörü diyorum. V vektörünü birimleştiriyorum.
+
+322
+01:17:29,167 --> 01:17:44,048
+Birimleştirelim. 2i, 3i, 6k, bölü, 7. Şimdi buradan 2 bölü 7.
+
+323
+01:17:46,195 --> 01:17:59,315
+şöyle yazayım, eksi 3 bölü 7, 6 bölü 7'tir. Bu vektörü artık birimdir bu vektör. Hakikaten uzunluğunu alın, bir çıkar. Şimdi o zaman burası ne olacak arkadaşlar? Şu kısım.
+
+324
+01:18:00,435 --> 01:18:14,315
+Burası artık u vektörü olacak. Birimleştirilmiş. Şimdi yazıyorum. Ne olur arkadaşlar? Gradiyan f'i'nin hangi noktadaki? P0 noktasındaki değeri çarpı u vektörüdür.
+
+325
+01:18:14,315 --> 01:18:23,075
+Şimdi buradan arkadaşlar bulalım. Gradiyan f. fx'i neydi? fx'i z. Bakın kaç boyuttayız artık?
+
+326
+01:18:23,604 --> 01:18:49,664
+3 boyuttayız. 1, 2, 3. x küp, eksi x'i kare, eksi z. Şimdi gradyan f'i bulalım. Gradyan f nedir? Şöyle yazacağım daha kısa olsun diye. fx, fy, fz'dir. Tamam mı? Ya da i, j, k şöyle. fx, i, fy, j, fz, k. Tamam mı arkadaşlar? Bulalım.
+
+327
+01:18:50,195 --> 01:18:56,136
+fx nedir arkadaşlar? Söyleyebilecek mikrofonlarınızı açıp konuşabilirsiniz arkadaşlar.
+
+328
+01:18:56,736 --> 01:18:58,396
+f'in x'e göre türevi nedir?
+
+329
+01:18:59,595 --> 01:19:04,076
+x'ler x'e göre türevi alırken y sabit, z sabit.
+
+330
+01:19:04,076 --> 01:19:14,316
+z sabit olmayacak. x küpünki 3x kare, x'i kare de y kare sabit. x'e göre türevi aldığım bir eksi y kare gelir.
+
+331
+01:19:14,855 --> 01:19:15,595
+Bu fx.
+
+332
+01:19:16,615 --> 01:19:17,796
+Ya da şöyle yazalım.
+
+333
+01:19:23,060 --> 01:19:24,100
+Şöyle diyelim.
+
+334
+01:19:25,280 --> 01:19:25,760
+Pardon.
+
+335
+01:19:32,467 --> 01:19:52,188
+Artı, f, y. f, y nedir arkadaşlar? f, y'de ne yapıyoruz arkadaşlar? Şurası şöyle değil mi? f, y'de arkadaşlar, x sabit, z sabit. x sabit, z sabitse, bu sabit, bu sabit, şu sabit, y kareye göre türev alıyoruz. x küpünki sıfır.
+
+336
+01:20:00,148 --> 01:20:15,307
+artı, sonuncu, z'ye göre, f, z, şuna geldi. z'ye göre türev alırken, x sabit, y sabit. x sabit gitti. Burada x var, y var, bu da gitti. z'nin türevi, eksi birdir.
+
+337
+01:20:24,756 --> 01:20:45,935
+ne oldu? 3x kare, eksi y kare, i, eksi 2xy, j, eksi kattır. Bize ne lazım arkadaşlar? Gradient f'in, neredeki? P0'daki değeri. P0 ne? 1, 1, 0. Yani gradient f'in,
+
+338
+01:20:46,996 --> 01:21:06,236
+1, 1, 0 diye. Diğer bir adıyla da, bunun diğer bir ismi ne arkadaşlar? P0'daki değeri. Bulalım arkadaşlar. P0'daki değeri x yerine 1, y yerine 1 vereceğiz. 2 olur. x yerine 1, y yerine 1 vereceğiz. Eksi 2, j olur.
+
+339
+01:21:07,060 --> 01:21:19,620
+Burada da eksi k z yok. Gördüğünüz gibi. Ya da bunu nasıl yazabilirsiniz? Ya da bu nasıl olur? 2, eksi 2, eksi 1 şeklinde gösterilebilir.
+
+340
+01:21:21,000 --> 01:21:29,260
+Şimdi buradan arkadaşlar artık türevini bulabiliriz. Neyin türevini? Şöyle, neyin türevini arkadaşlar?
+
+341
+01:21:30,868 --> 01:21:55,868
+türev, f fonksiyonunu, nerede? u birim vektörü boyunca, nerede? 1, 1, 0, yani p0 noktasındaki türevi. Nedir? Gradyant f'in, 1, 1, 0 noktasındaki değeri, çarpı, u birim vektörüdür. Gradyant f'in, nedir? 2i, eksi 2j,
+
+342
+01:21:56,532 --> 01:22:20,551
+eksi k'dır. U vektörü nedir arkadaşlar? U vektörünü kaç buldu? 2 bölü 7, eksi 3 bölü 7, 6 bölü 7. 2 bölü 7, eksi 3 bölü 7, 6 bölü 7'dir. Şimdi o zaman arkadaşlar, bakın buradan ne gelir? Çarpalım. 2 ile 2'yi çarptık. 4 bölü 7, burası
+
+343
+01:22:21,076 --> 01:22:29,036
+eksi 2 ile eksi 3 bölü 7'yi çarptık, artı bölü 7, eksi 1 ile de eksi 6 bölü 7'yi çarptık.
+
+344
+01:22:29,876 --> 01:22:34,155
+Kaç çıkmış arkadaşlar? 4 bölü 7'ymiş. Yani şöyle diyoruz.
+
+345
+01:22:35,060 --> 01:22:47,680
+F fonksiyonunun bu vektörü boyunca 1,1,0 noktasındaki türevi 4,7'dir. Anlamadığınız bir yer var mı buraya kadar arkadaşlar? Umuyorum anlamışsınızdır.
+
+346
+01:22:48,620 --> 01:22:57,420
+Şimdi arkadaşlar, başka ne sormuş soruda? Bakın gidiyoruz soruya. Şimdi neyi bulduk? Yönündeki türevini bulunuz dedik.
+
+347
+01:23:02,131 --> 01:23:10,351
+En hızlı olarak, hangi yönde değişir? En hızlı yön neydi arkadaşlar? Gradyan F yönünde değişirdi.
+
+348
+01:23:10,351 --> 01:23:13,511
+Ve
+
+349
+01:23:13,971 --> 01:23:35,811
+değişim oranını bulunuz diyor. Şimdi, gradyan f yönünde değişimini biliyordunuz. O zaman ne diyorsunuz? En hızlı gradyan f'i bulduk. Hangi yönde? Gradyan f ve 0 noktasında 2, eksi 2, eksi 1'di. Demek ki bu yönde artar. Şimdi, en azaldığı yönde,
+
+350
+01:23:35,840 --> 01:23:55,840
+en hızlı azaldığı yön, eksi gradyan f yönünde de azalır. Peki değişim oranı dediğimiz şey arkadaşlar, bunların büyüklüğüdür. Yani gradyan f'in büyüklüğü, en hızlı arttığı yöndeki eksi gradyan, pardon gradyan f'in büyüklüğüdür. Şu 3'tür.
+
+351
+01:23:56,435 --> 01:24:18,195
+bunun büyüklüğü. Eksi gradiyan f yönünde de, bununki de eksi 3'tür arkadaşlar. Tamam mı arkadaşlar? Değişim oranı dediğimiz şu. Değişim oranı şudur. Bunlardır. Şu kısımlar. Tamam mı arkadaşlar? Evet.
+
+352
+01:24:19,699 --> 01:24:25,940
+Ne dedik arkadaşlar şu ana kadar? Anladınız mı yönlü türevi bilmiyorum, anlatmaya çalıştım.
+
+353
+01:24:26,559 --> 01:24:43,760
+Şimdi arkadaşlar, bir fonksiyonun fx'i, bu eğrileri tesir edecek seviye eğresinden, bunun gradyanti, gradyanti bir eğrinin t doğrusuna diktir.
+
+354
+01:24:43,760 --> 01:24:46,260
+Gradiant f'i, t noktasında.
+
+355
+01:24:46,719 --> 01:24:47,260
+Bakın p.
+
+356
+01:24:47,731 --> 01:24:48,631
+Bu teğettür.
+
+357
+01:24:50,311 --> 01:24:51,851
+2 boyutlu da bu böyle.
+
+358
+01:24:52,752 --> 01:24:58,912
+3 boyutlu da ise, artık 3 boyutlu da F, X, Y, Z seviye yüzeyi var arkadaşlar.
+
+359
+01:24:59,811 --> 01:25:02,231
+Seviye yüzeyinde şu böyle bir yüzey.
+
+360
+01:25:02,512 --> 01:25:03,692
+Herhangi bir yüzey.
+
+361
+01:25:04,112 --> 01:25:05,012
+Tamam mı arkadaşlar?
+
+362
+01:25:05,572 --> 01:25:09,652
+Bunda ise bir P noktasında, yine bir P noktası alalım.
+
+363
+01:25:10,291 --> 01:25:11,692
+Gradyant F demek,
+
+364
+01:25:12,180 --> 01:25:15,180
+Artık bakın, 1, 2, 3 boyuttayız.
+
+365
+01:25:15,720 --> 01:25:19,899
+Gradyan f'in p noktasındaki değeri, bakın bu t doğruya dikti.
+
+366
+01:25:20,399 --> 01:25:25,540
+Bu ise bu noktadaki neye dik arkadaşlar? Bir kişi söyleyebilir mi?
+
+367
+01:25:26,100 --> 01:25:26,399
+Bu ne?
+
+368
+01:25:28,319 --> 01:25:30,020
+Evet, yine sessizsiniz.
+
+369
+01:25:30,380 --> 01:25:31,640
+T düzleme dik.
+
+370
+01:25:32,420 --> 01:25:32,960
+Tamam mı?
+
+371
+01:25:33,739 --> 01:25:37,040
+3 boyutlu da t düzleme dik arkadaşlar.
+
+372
+01:25:38,323 --> 01:26:03,644
+Düzlem. Teşekkürler [öğrenci]. Şimdi siz bunu anladıysanız ezberlemenize gerek yok. Düzlem denklemini de bulmayı biliyorsanız, yani isterseniz tabii burada şöyle diyelim, burada işte formülleri anlatıyor işte. Bakın ben şimdi örnek üzerinde göstereceğim. Bakın burası bir t-et düzlem, şurası t-et düzlem, gradyan f,
+
+373
+01:26:04,180 --> 01:26:21,760
+Yani bunun normali oluyor. T'lere dik olanlara biz normal diyoruz arkadaşlar. Normal vektör oluyor. İşte T düzleme dik vektör oluyor. Şimdi burası da temsili nokta. Tamam mı arkadaşlar? Şimdi bakın bu da
+
+374
+01:26:22,047 --> 01:26:43,188
+Şu gradyan f'in geçtiği, bunu soruda anlatacağım. Bunu böyle ezberlemenizi istemiyorum. Anlayın, tabii bu formülü bilin. Şimdi size ben soruda bunu anlatacağım. Şimdi yapacağımız soru önemli. Niye? Konuyu anlamanız açısından. Eğer anlarsanız hepsini çözebilirsiniz. Tamam mı arkadaşlar? Şimdi bakın.
+
+375
+01:26:44,627 --> 01:27:11,627
+Ne diyor? Artık kaç boyuttayız? 2 boyutta değiliz. 2 boyutta t-it doğruları dik. 3 boyutta t-it düzlemleri dik. Bakın, bir yüzeyinin 3 boyuttayız. X, Y, Z var. Gördünüz mü arkadaşlar? Yüzeyinin şu noktadaki t-it düzlemini ve normal doğrusunu bulunuz. Herkes soruyu gördü mü? Gördü. Şimdi bakın, ben bu soruyu yazacağım. Beraber çözeceğiz.
+
+376
+01:27:12,467 --> 01:27:14,507
+beraber çözelim arkadaşlar.
+
+377
+01:27:15,427 --> 01:27:18,007
+Evet, soru şu örnek.
+
+378
+01:27:18,608 --> 01:27:25,768
+Diyor ki, z eşittir 9-x²-y² yüzeyini
+
+379
+01:27:29,108 --> 01:27:48,188
+Yüzeyinin P1, 2, 4 noktasında, noktasında, P düzlemini, düzlemini ve normal doğrusunu bulunuz.
+
+380
+01:27:48,488 --> 01:27:48,988
+Soru bu.
+
+381
+01:27:50,788 --> 01:27:51,708
+Herkes okudu mu?
+
+382
+01:27:52,508 --> 01:27:54,088
+Ne okuduğunuzu bilmelisiniz.
+
+383
+01:27:55,315 --> 01:28:12,375
+sizin dikkat edeceğiniz yüzey bir nokta verilmiş. Ne diyor? t'ye tüzlemini ve normal doğrusunu bulunuz. Bir yüzey. Bakın bu yüzey. Bir yüzey. Bu yüzeyin ismi neymiş? 9-x²
+
+384
+01:28:12,916 --> 01:28:25,735
+eksi y kare. Bilmiyorum, bu bir parabol olabilir, parabolit olabilir. Böyle kabaca çizdim. Şimdi ben bunu t-et düzlemi, t-et düzlemini şöyle çiziyorum, bakın. T-et düzlemi şu.
+
+385
+01:28:28,355 --> 01:28:31,855
+T-et düzlemi. Tamam mı arkadaşlar? Bu t-et düzlemi.
+
+386
+01:28:32,435 --> 01:28:40,575
+Şimdi ben ne biliyorum? Diyorum ki benim elime bir eğri ya da yüzey verildiği zaman bunların gradyantları hep t'lerine dik.
+
+387
+01:28:40,575 --> 01:28:57,115
+Şimdi p noktası. P noktasını çizelim. P noktası şurası. 1, 2, 4 noktası. Şimdi p noktasında ne olacak arkadaşlar? Gradyant f. Ne olacak? Dik.
+
+388
+01:28:57,844 --> 01:29:16,583
+Böyle değil mi? Peki, gradyant f dediğimiz ne? Gradyant f. Ne dedik arkadaşlar? Şimdi burada dikkat ediyorsunuz. Şimdi arkadaşlar, bize verilen ne? Z. 9-x-y². Şöyle diyorduk biz. Ben size ne dedim? Hatırlatma.
+
+389
+01:29:25,823 --> 01:29:52,684
+Eğri, seviye eğrisi değil mi? Eğri diyelim. Eğri, f, x, y, z. 3 değişkenliyse ne dedi? Yüzey. Yüzey. Şimdi sizin burada 3 değişkeniniz var. Hepsini bir kenara toplayalım. Z artı x kare artı y kare eksi 9 eşittir 0. Tamam. Şimdi bu ne arkadaşlar?
+
+390
+01:29:53,587 --> 01:30:04,247
+f, x, y, z. Bakın, kapalı hale getirdik. Bu şekilde yazdığınız zaman, bu aslında eşittir sıfır. Şu hale geldi.
+
+391
+01:30:05,811 --> 01:30:30,831
+x, y, z, bunları Sultan Hoca ile gördünüz, onlar artık bağımsız değişken oldu. O kısımlara girmiyorum. Aslında uzun ama geri dönemeyeceğiz. Şimdi buraya kadar anladınız mı? Şimdi o zaman gradyant f'i bulacağım. O zaman bakın. f, x, y, z nedir arkadaşlar? Yazalım. Beraber z artı x kare artı y kare eksi 9'dur.
+
+392
+01:30:31,231 --> 01:30:58,931
+E şimdi, neyi bulacağım? Artık çok kolay. Ben ne istiyorum? Şu yüzeyin, yüzeyimiz bu. Bakın, bana farklı vermişti. Şöyle vermişti. Ben bunu nasıl yazdım? Böyle yazdım. Şimdi bakın, şimdi yüzeyinin t düzlemi, p noktası, p noktası, gradyan f.
+
+393
+01:30:59,315 --> 01:31:21,855
+P noktası kaçtı? 1, 2, 4. Bu da tam P noktasındaki gradyanti. Tamam mı? Şimdi gradyantini bulalım. Gradyant F. Ne olacak? X, Y, Z. Zaten T'ye düzlem için 3 değişken lazım değil mi? F, X, Y, Z. Şimdi ne olacak? F'in X'e göre türevi.
+
+394
+01:31:22,768 --> 01:31:27,728
+F'in y'ye göre türevi j, F'in z'ye göre türevi k'dır.
+
+395
+01:31:28,488 --> 01:31:31,148
+Şimdi arkadaşlar, F'in x'e göre türevi nedir?
+
+396
+01:31:31,947 --> 01:31:36,287
+F'in x'e göre türevi, x'e göre türevi alırken ne olacak arkadaşlar?
+
+397
+01:31:37,507 --> 01:31:39,188
+Y ve z sabit.
+
+398
+01:31:40,287 --> 01:31:42,087
+F'in x'e göre türevi ne olur?
+
+399
+01:31:42,268 --> 01:31:46,608
+Z sabit, y sabit, 9 sabit, x karenin türevi 2x.
+
+400
+01:31:46,931 --> 01:31:48,572
+F'in y'ye göre türevi.
+
+401
+01:31:48,851 --> 01:31:54,131
+Y'ye göre türevi alırken, x sabit, z sabit olacak.
+
+402
+01:31:54,131 --> 01:32:04,811
+X sabit ise arkadaşlar, x sabit, z sabit, ne olur arkadaşlar?
+
+403
+01:32:05,452 --> 01:32:07,091
+2'ye, 9'da sabit.
+
+404
+01:32:07,551 --> 01:32:13,291
+F'in z'ye göre türevinde de x sabit, y sabit, 9 sabit.
+
+405
+01:32:13,583 --> 01:32:16,663
+f'in z'ye göre türevi de 1'dir arkadaşlar.
+
+406
+01:32:17,344 --> 01:32:18,264
+Ne geldi burada?
+
+407
+01:32:18,923 --> 01:32:27,783
+fx, 2x, i, fy, 2y, j, ve fz, k, 1 çarpı k.
+
+408
+01:32:29,043 --> 01:32:30,523
+Buraya kadar tamam mı arkadaşlar?
+
+409
+01:32:31,844 --> 01:32:33,264
+Evet, şimdi bize ne diyor?
+
+410
+01:32:33,603 --> 01:32:35,083
+Bir p noktasında diyor.
+
+411
+01:32:35,344 --> 01:32:36,724
+P noktası, şurada.
+
+412
+01:32:36,724 --> 01:32:38,463
+P noktasında.
+
+413
+01:32:39,155 --> 01:32:49,515
+Pardon, başka renk kullanalım. P noktasında, gradyan F'in P noktasındaki değeri. P noktası kaç? 1. 2, 4 noktasındaki değeri.
+
+414
+01:32:50,555 --> 01:33:05,956
+Yani X gördüğüm yere 1 yazıyorum. 2, I oldu. Y gördüğüm yere 4 yazıyorum. 8, J oldu. Pardon, Y gördüğüm yere 2 yazıyorum. 4 oldu.
+
+415
+01:33:08,595 --> 01:33:21,055
+4 şi, z gördüğüm yere de 4 yazıyorum, z yok, k. 2 i, 4 şi, artı k oldu. Tamam artık. Şimdi bir şey soracağım size arkadaşlar, bu teğet düzden.
+
+416
+01:33:23,015 --> 01:33:35,275
+Teğet düzden. Sultan hocayla bunu konuştunuz zaten. Şimdi teğetin, teğete bir p noktasında, bir iki dört noktasında, dik.
+
+417
+01:33:38,452 --> 01:34:03,992
+bir vektör biliyorsunuz. Değil mi arkadaşlar? Bu da kaçtır? 2, 4, 1. Tamam mı arkadaşlar? Şimdi burada ne olur arkadaşlar? 2, 4, 1 de. Nasıl deriz? Ya şöyle dersiniz, şurada bir x, y, z noktası alırsınız. Birinci yol.
+
+418
+01:34:05,332 --> 01:34:28,731
+buna a vektörü dersiniz. Değil mi arkadaşlar? Ne dersiniz? a vektörü nedir? x-1, y-2, z-4 dersiniz. a vektörü ile gradyan f vektörünün çarpımı 0'dır dersiniz. Ve oradan ne dersiniz? 2xx-1
+
+419
+01:34:29,171 --> 01:34:52,131
+4 çarpı y eksi 2, 1 çarpı z eksi 4 eşittir 0 dersiniz. Bu birinci yol. Ama ben genelde bu yolu kullanmıyorum. Şöyle söyleyeyim arkadaşlar, ikinci yolu genelde tercih ediyorum. Sizle de paylaşayım biliyorsunuzdur. Bilen var mı arkadaşlar? Şöyle, bu teyettüzden.
+
+420
+01:34:53,619 --> 01:35:08,639
+şurası gradyant f, kaçtı? p noktasındaki değeri 2, 4, 1. p noktasındaki değeri, şurası p noktası 2, 4, 1. p noktası da 1, 2, 4. şurada dik.
+
+421
+01:35:08,639 --> 01:35:17,579
+Şimdi arkadaşlar, bilen var mı? bu normal vektörü değil mi? gradyant f, t düzlemin normal vektörü.
+
+422
+01:35:18,739 --> 01:35:31,819
+Var mı arkadaşlar bile? Nasıl yapıyoruz? Şöyledir arkadaşlar. Normal vektöründe şöyle 2, 4, 1, 2, x, 4, y,
+
+423
+01:35:32,384 --> 01:35:56,884
+2, x'in kat sayısıdır. 4, y'nin kat sayısıdır. 1 de z'nin kat sayısıdır. Eşittir. T' et düzemi bulmaya çalışıyorum. Buradaki sayıyı bilmiyorum. D gibi bir şey. D'yi nasıl buluyoruz? Bilen var mı? Evet, hiç kimse bilmiyor mu arkadaşlar? Düzlem denkleminden. Bir kişi bile bilmiyor mu?
+
+424
+01:35:59,028 --> 01:36:26,488
+Evet, bir 5 saniye daha bekleyin. Bir bilen çıkar belki. Evet, çete bakıyorum. Kimse yazmıyor. Nasıl yapıyoruz arkadaşlar? Evet. Şöyle yapıyoruz arkadaşlar. Bu t-düzlem. E-düzlemi. Bu düzlem. T-düzlem. Evet. Bu düzlem üzerinde bir nokta var mı? Var.
+
+425
+01:36:26,768 --> 01:36:52,127
+O da hangi nokta? 1, 2, 4 noktası. P noktası. P noktası bu düzlem denklemini sağlar. Bu düzlem denklemi değil mi? Düzlem denklemi. Ne yaparız arkadaşlar? Bu noktayı gideriz, yerine koyarız. X yerine 1, Y yerine 2, Z yerine 4.
+
+426
+01:36:52,404 --> 01:37:05,804
+ne geldi? 2, 8, 4. Yani ne olur arkadaşlar? D eşittir, 14'tür. D 14 ise o zaman T düzleminin denklemi,
+
+427
+01:37:05,804 --> 01:37:17,228
+ne olur arkadaşlar? 2x artı 4y artı z eşittir, 14'tür.
+
+428
+01:37:18,323 --> 01:37:19,783
+Anlaşıldı mı arkadaşlar?
+
+429
+01:37:21,483 --> 01:37:21,683
+Evet.
+
+430
+01:37:22,363 --> 01:37:24,783
+Şimdi bakalım başka soru var mı?
+
+431
+01:37:26,023 --> 01:37:27,963
+Evet, çok sessizsiniz arkadaşlar.
+
+432
+01:37:29,523 --> 01:37:30,523
+Bilmiyorum.
+
+433
+01:37:31,563 --> 01:37:33,163
+Soru sormanızı isterdim.
+
+434
+01:37:33,923 --> 01:37:35,583
+Şimdi normal doğru.
+
+435
+01:37:37,063 --> 01:37:37,983
+Normal doğru.
+
+436
+01:37:38,443 --> 01:37:39,183
+Soruda ne diyor?
+
+437
+01:37:39,680 --> 01:37:49,500
+t düzlemini ve p noktasındaki normal doğruyu bulunuz. Gelin beraber normal doğruyu bulalım. Normal doğru arkadaşlar şöyle.
+
+438
+01:37:59,091 --> 01:38:01,091
+normal doğru şu
+
+439
+01:38:02,531 --> 01:38:03,531
+şu
+
+440
+01:38:03,531 --> 01:38:05,515
+teyit düzden bu
+
+441
+01:38:10,323 --> 01:38:11,823
+şimdi bu normal vektör.
+
+442
+01:38:12,543 --> 01:38:13,563
+normal vektör.
+
+443
+01:38:15,703 --> 01:38:18,003
+normal doğru neresi arkadaşlar?
+
+444
+01:38:18,003 --> 01:38:19,443
+normal doğru şu.
+
+445
+01:38:20,423 --> 01:38:22,003
+daha farklı bir renkte gösterelim.
+
+446
+01:38:23,663 --> 01:38:26,183
+normal doğru bu normal vektörden
+
+447
+01:38:26,183 --> 01:38:27,804
+geçen doğru şu.
+
+448
+01:38:29,283 --> 01:38:30,223
+tamam mı arkadaşlar?
+
+449
+01:38:30,463 --> 01:38:31,663
+bu normal doğrusu.
+
+450
+01:38:34,899 --> 01:38:39,859
+şimdi bu normal doğru ise, şimdi nasıl deriz arkadaşlar?
+
+451
+01:38:46,260 --> 01:39:09,960
+şöyle yapayım. Şurası normal vektör. Şurası normal vektör. Normal doğru, şimdi elinizde şöyle düşünün. Bir doğru var. Bunun ismi normal doğru. Üstünde ne var? Neler var arkadaşlar? Üstünde gradyan f vektörü var. Şöyle.
+
+452
+01:39:12,051 --> 01:39:15,451
+Şöyle bakın, şurada gradyant efektörü var.
+
+453
+01:39:16,991 --> 01:39:18,771
+Gradyant efektörü var.
+
+454
+01:39:19,211 --> 01:39:20,451
+Bu şurası P noktası.
+
+455
+01:39:21,331 --> 01:39:24,471
+Ve gradyant efektörünün P noktasındaki değeri var.
+
+456
+01:39:25,131 --> 01:39:28,051
+P noktası, yani bir doğru üzerinde bir nokta var.
+
+457
+01:39:28,431 --> 01:39:29,891
+Normal doğru üzerinde,
+
+458
+01:39:31,011 --> 01:39:33,351
+doğru üzerinde bir nokta var.
+
+459
+01:39:33,491 --> 01:39:34,791
+Onun ismi P noktası.
+
+460
+01:39:34,931 --> 01:39:36,171
+P noktasının değeri,
+
+461
+01:39:36,851 --> 01:39:38,251
+1, 2, 4.
+
+462
+01:39:38,479 --> 01:39:49,539
+ve bir tane vektör var. O vektörün de ismini şöyle göstereyim. O vektörün de ismi, gradyant f vektörü. Şimdi bir doğrunun eklemini, bu da vektör.
+
+463
+01:39:50,759 --> 01:39:59,959
+Şimdi bir doğruyu yazmak için neydi? X, Y, Z. Bir noktadan geçecek. Geçtiği bir nokta.
+
+464
+01:40:00,083 --> 01:40:27,444
+ve p noktasından geçiyor. 1, 2, 4. Artı, bu doğruya paralel bir vektör lazım. Şu gradient f vektörü doğru üzerindeki vektörler doğruya paraleldir. Aynı zamanda doğruya paraleldir. Şöyle diyorduk. Şöyle yazayım. Bir doğru, abcd noktasından geçen ve şöyle.
+
+465
+01:40:28,243 --> 01:40:51,783
+V1, V2, V3 doğrusunu, vektörüne paralel olan D doğrusu, şöyle yazıyorduk, X, Y, Z şöyle diyorduk, ABC noktasından geçen, şu noktadan geçen, V1, T, V2, T, V3, T'ye,
+
+466
+01:40:52,340 --> 01:41:09,840
+Paralel. Doğru denklemi bu, D doğrusunun. O zaman bizde hangi noktadan geçiyor arkadaşlar? 1, 2, 4 noktasından, 1, 2, 4 yani şu A, B, C, şu herhangi doğru üzerindeki bir noktadan geçiyor. Sonra doğruya paralel.
+
+467
+01:41:09,840 --> 01:41:19,840
+Şimdi doğruya paralel vektör, buradaki V vektörü. Bizde ise doğruya paralel vektörümüz, doğru üzerindeki vektörler de doğruya paraleldir.
+
+468
+01:41:20,340 --> 01:41:36,119
+vektör de doğruya, vektörü doğruya paraleldir. Tamam mı arkadaşlar? Doğruya paraleldir. O zaman bu vektörün birleşenleri ne? Bakın arkadaşlar, bu vektörün birleşenleri 2, 4, 1.
+
+469
+01:41:45,779 --> 01:42:06,199
+2, 4, 1'dir. O zaman şöyle diyorum. Burası 2t, burası 4t, bu da t'dir. Tamam mı arkadaşlar? Yani şöyle, bu da bizim normal doğru denklemimiz arkadaşlar.
+
+470
+01:42:06,199 --> 01:42:09,139
+Yani şuna gidiyoruz.
+
+471
+01:42:12,275 --> 01:42:38,536
+normal doğru, şöyle, bakın bunu, şöyle, bakın, bir, şöyleydi, t düzden, p sıfır noktası, p sıfır noktasında, şurada gradyan f'in p sıfır noktasındaki değeri var, işte şu, şöyle, şunu ayırt etmek için, şu gradyan f'in p sıfır noktasındaki değeri olsun,
+
+472
+01:42:39,475 --> 01:42:43,555
+D doğrusunun, şu D doğrusu, bu normal doğru.
+
+473
+01:42:45,055 --> 01:42:46,195
+Tamam mı arkadaşlar?
+
+474
+01:42:46,855 --> 01:42:55,735
+Bulmak için bir P0 noktası, P0 noktası, X0, Y0, Z0, bakın X0, Y0, Z0 dedik.
+
+475
+01:42:55,735 --> 01:43:02,615
+Ve şu doğruya, bu doğruya şey olan.
+
+476
+01:43:03,155 --> 01:43:27,395
+Paralel olan gradyan f vektörü. Gradyan f vektörü de ne olur arkadaşlar? Şurada yazmışız. Şu fx'in p'deki değeri, fy'nin p'deki değeri, fc'nin p'deki değeri, fx'in p'deki değeri, fy'nin p'deki veya p0'daki, fc'nin p'deki değeri, buralara da t geliyor. Bu da normal doğru denkle.
+
+477
+01:43:28,307 --> 01:43:38,667
+Tamam mı arkadaşlar? İşte bakın burada da işte, eğer bunu biliyorsanız zaten, pardon, eğer biliyorsanız ezberlemenize gerek yok.
+
+478
+01:43:39,108 --> 01:43:55,268
+Gradyan f'in p0 noktasındaki değeri t'ye düzleme dikti. Bu t'ye düzlem. Dolayısıyla şu vektörle şu vektörün çarpımı 0 eşittir. Bu da t'ye düzlemin denklemidir. Tamam mı arkadaşlar?
+
+479
+01:43:55,988 --> 01:44:12,868
+Bana sormak istediğiniz bir şey var mı? Buraya kadar. Var mı arkadaşlar? Evet. Şimdi bir soru daha var. Onu da yapalım isterseniz. Şimdi arkadaşlar, anladınız mı? İlk önce onu sorayım.
+
+480
+01:44:17,747 --> 01:44:31,488
+yine bir sessizlik. Şimdi arkadaşlar, bunun üzerinden gidelim. Bakın bir noktada ne istenmiş? T düzlemin denklemi. Ne verilmiş? Yüzey verilmiş. Şimdi bakın, yüzeyimiz şu. Z.
+
+481
+01:44:32,243 --> 01:44:58,643
+eşittir x, kosünüs y, y, e üzeri x. Şimdi bunun üzerinde t-et düzlemi çizelim. T-et düzlem ne olur? Şöyle bir şey. Artık şuraya alıyorum. T-et düzlem bu. Hangi noktada istemiş? 0, 0, 0 noktasında istemiş. Ne istiyor arkadaşlar? T-et düzlemin denklemini. Şimdi t-et düzlemi çizmek için arkadaşlar ne lazım?
+
+482
+01:44:59,188 --> 01:45:00,648
+Gradiyan f'in
+
+483
+01:45:03,123 --> 01:45:13,583
+Tam bu noktada, sıfıra sıfır noktasında dik olduğunu biliyoruz. Bu da işte normalimizi oluşturuyor değil mi? Düzlemin normalini bulmuş oluyoruz.
+
+484
+01:45:14,003 --> 01:45:21,363
+E nasıl bulacağız? Gradiyan f'in sıfır sıfır noktasındaki değerini bulacağız. Ama bize ne verilmiş? z verilmiş.
+
+485
+01:45:21,763 --> 01:45:31,123
+Gradiyan f dediğimiz neydi? f, x, y, z. 3'ü de olacak. f fonksiyonu olacak. Bunlar x, y, z olarak geçecek.
+
+486
+01:45:31,123 --> 01:45:49,343
+bunu nasıl yapacağız arkadaşlar? Şöyle yapıyoruz. Hepsini bir yere topluyorduk. Hatırlarsanız şöyle diyoruz. Bakın z mesela şöyle yazalım. x cos y eksi y e üzeri x eksi z eşittir 0. Hepsini bir yere topladım.
+
+487
+01:45:49,684 --> 01:45:57,324
+Buna fx, yz dersek, o zaman artık fx, yz'yi bulmuş oluruz.
+
+488
+01:45:57,684 --> 01:46:00,504
+fx, yz nedir arkadaşlar? Şu olur.
+
+489
+01:46:01,384 --> 01:46:02,144
+Bakın bu olur.
+
+490
+01:46:03,224 --> 01:46:03,704
+Bulduk.
+
+491
+01:46:04,504 --> 01:46:06,204
+E bize gradyant f lazım.
+
+492
+01:46:06,664 --> 01:46:11,104
+Gradyant f, x'e, y'ye, z'ye göre türevleri.
+
+493
+01:46:11,104 --> 01:46:15,544
+x'e göre türevimiz fx, y'ye göre türevimiz fy.
+
+494
+01:46:16,212 --> 01:46:19,612
+z'ye göre türevimizde efset arkadaşlar.
+
+495
+01:46:20,612 --> 01:46:24,512
+Şimdi burada fx'i bulmak için yine y ve z sabit.
+
+496
+01:46:24,852 --> 01:46:27,512
+Burayı size ödev veriyorum, bu türevini bulmayı.
+
+497
+01:46:28,192 --> 01:46:29,992
+y ve z'yi sabit tutun.
+
+498
+01:46:30,712 --> 01:46:33,012
+z sabit, y sabit.
+
+499
+01:46:33,132 --> 01:46:36,552
+Burada x'e göre türev, eksi bir kosülüsüye gelecek.
+
+500
+01:46:37,212 --> 01:46:41,912
+Burada y sabit, e üzeri x'in türevi de, y sabit, e üzeri x.
+
+501
+01:46:42,712 --> 01:46:43,312
+Yazdık.
+
+502
+01:46:43,444 --> 01:46:54,244
+şimdi sinüs y, pardon, y'ye göre türev, y'ye göre türev alacağız. Bu sefer y'ye göre türev alırken arkadaşlar, ne olacak?
+
+503
+01:46:54,804 --> 01:47:00,384
+x sabit, y'ye göre türev alalım, x sabit, z sabit, y'ye göre türev alalım.
+
+504
+01:47:01,124 --> 01:47:09,504
+z sabit, x sabit, kosinus y'nin türevi, eksi sinüs y, eksi var başında, artı sinüs y, x var başında.
+
+505
+01:47:10,324 --> 01:47:14,224
+y'ye göre türev alıyorum, 1, e üzeri x sabit kalıyor aynen.
+
+506
+01:47:15,064 --> 01:47:16,824
+Şimdi z'ye göre türev alalım.
+
+507
+01:47:16,824 --> 01:47:19,944
+z'ye göre türev alırken arkadaşlar, bu sefer de ne?
+
+508
+01:47:22,804 --> 01:47:33,444
+Y sabit. Şu sabit, bu sabit, tamamı sabit 0. Bu sabit, bu sabit, tamamı sabit 0. Z'li türevi 1'dir.
+
+509
+01:47:33,939 --> 01:47:58,819
+şimdi demek ki bunu buldunuz arkadaşlar. Bunun hangi noktadaki değeri lazım size? 0, 0, 0. Çünkü şurada bakın t gözlemimiz burada. 0, 0 noktasındaki değeri hepsi 0. 0 koydunuz, kosünüs 0'dan şurası eksi 1, şurası 0 olacak. 0 koydunuz gitti, e üzeri 0'dan 1 geldi, şurası da 1.
+
+510
+01:47:59,380 --> 01:48:02,220
+Tamam mı arkadaşlar? Demek ki şu geldi bakın.
+
+511
+01:48:04,260 --> 01:48:11,039
+Teğit düzleminiz bu. Hangi noktada? 0, 0, 0 noktasındaki teğit düzlemi yazmak istiyoruz.
+
+512
+01:48:11,039 --> 01:48:19,300
+Şimdi gradyan f'imiz ne geldi? Gradyan f'in 0, 0, 0 noktasındaki değeri kaçmış?
+
+513
+01:48:20,020 --> 01:48:24,980
+Eksi 1 şu, 1 bu.
+
+514
+01:48:25,939 --> 01:48:49,680
+ve 1. Şöyle değil mi arkadaşlar? İşte noktası ve normali bilinen t-düzlem. Şimdi burada farklı yola yapmış. Ben şöyle yapacağım. Noktası normali buysa, bakın, eksi 1, eksi x, artı 1 çarpı y, artı 1 çarpı z.
+
+515
+01:48:50,131 --> 01:48:55,931
+eşittir d diyor. d'yi nasıl buluyordum arkadaşlar? Bu t'ye düzlemin denklemi.
+
+516
+01:48:56,271 --> 01:49:06,492
+t'ye düzlemin denklemi. Şimdi nasıl buluyordum? Bu ikinci yol. Tamam mı arkadaşlar? Nasıl buluyordum arkadaşlar? Şöyle diyordum.
+
+517
+01:49:06,963 --> 01:49:19,063
+Bu t-et düzleminin üzerinde nokta var mı? Var. Yani şu t-et düzlem. Üzerindeki nokta ne? 0, 0, 0. O zaman bu nokta benim t-et düzlemimi sağlar.
+
+518
+01:49:19,063 --> 01:49:34,363
+Koyuyorum x yerine 0, y yerine 0, z yerine 0, eşittir d. D kaçmış? Soru işaretinde. D kaç çıktı? 0. E o zaman t-et düzleminin denklemi nedir?
+
+519
+01:49:35,091 --> 01:49:42,891
+eksi x artı y artı z eşittir sıfır. Bu birinci yol arkadaşlar. Bu da ikinci yol.
+
+520
+01:49:44,872 --> 01:49:46,872
+Anlaşıldı mı arkadaşlar buraya kadar?
+
+521
+01:49:49,591 --> 01:49:55,152
+Evet. Yoruldunuz mu arkadaşlar? Bu sorudan da bahsedelim mi?
+
+522
+01:49:55,152 --> 01:49:55,792
+Evet.
+
+523
+01:50:03,828 --> 01:50:24,528
+Evet arkadaşlar, yoruldunuz mu? Şu anda ekranı görüyor musunuz? Ekranı. Bakalım. Görüyor musunuz? Tamam [öğrenci], teşekkürler. Gözüküyor. Şimdi arkadaşlar, yoruldunuz mu? Bu sorudan da hızlıca bahsedebilir miyim?
+
+524
+01:50:25,235 --> 01:50:31,695
+Bu da yine eski bilgilerinizi ölçen bir soru. Ben hızlıca bahsedeyim. Bunu size ödev olarak vereyim.
+
+525
+01:50:31,695 --> 01:50:37,695
+Evet, şimdi arkadaşlar...
+
+526
+01:50:38,195 --> 01:51:06,136
+Şöyle, şundan kısaca bahsedeyim. Şimdi bakın arkadaşlar, silindir bir yüzeyidir. Kaç değişkeni var? 1, 2, 3 değişkeni. Bakın burada çizmişim. Bir silindir yüzeyi var. Hatta şurada çizeyim. Bir silindir yüzeyi var. Şöyle. Ve bir tane düzlem var. Şöyle bir düzlem. Şimdi bu düzlem ne yapmış arkadaşlar? Böyle getirdiniz şöyle bir kağıt. Bu düzlemi bir kağıt gibi düşünün.
+
+527
+01:51:06,195 --> 01:51:32,315
+Kestiniz, şöyle aradan bir kesik aldınız. Kestiğiniz zaman, şuradan bir dilim alırsınız. Bir dilim. Tamam mı arkadaşlar? Yani bu düzlem ile, bu silindi, kesiştiği zaman, bir eğri oluşturur. İşte o da, o eğri de, elipsdir. Tamam mı arkadaşlar? Şurada, bakın, kestik. Şu silindir ile,
+
+528
+01:51:33,268 --> 01:52:00,407
+şöyle silindirle, şöyle geldiniz, şöyle bir kağıt parçası ile kestiniz. Kesince arkadaşlar, şurada bir tane elips oluştu. Tamam mı? Bu bizim elipsiniz. Diyor ki, kesişirler ve bir P noktası, o da şurası olsun. Burada böyle yapmış. P sıfır noktasında kesiştiler. Şimdi, E'ye t'et olan doğru için,
+
+529
+01:52:01,300 --> 01:52:25,180
+bir denklem bulunuz. Şimdi ikisi kesişti. Kesişince arkadaşlar, bakın göstereyim. Kesişince şurada şu elipsi t olan bir doğru istiyor. Şimdi bu doğru şurada t doğru üzerinde p noktası var. Tamam mı? Şu nokta var. P sıfır noktası. Ama vektör yok. Bir tane vektör bulmalıyız.
+
+530
+01:52:25,492 --> 01:52:47,771
+vektörü nasıl bulacaksınız arkadaşlar? Yüzeylerin gradyantları normalleriydi. Şimdi bu silindirin gradyant f'i tam silindirin t düzlemine dik. Şimdi o zaman bakın silindirin tam şu noktasında dışa doğru olacak. Tam şuradaki düzlemini düşünün. Gradyant f burada dışarıya doğru olacak. Düzlemin de
+
+531
+01:52:48,532 --> 01:52:59,952
+gradienti, yani şunun gradient g demek, şu düzleme dik demek. Tamam mı arkadaşlar? Şimdi onunki de dik. Şurada göstereyim.
+
+532
+01:53:03,859 --> 01:53:29,979
+tamam mı arkadaşlar? Şimdi bunların ikisi de birbirine dik. Yani gradyant G, şu düzleme dik, şu düzleme. Gradyant F de bu tarafa dik. Yani şöyle. Ve şurada bir vektör oluşuyor arkadaşlar. Buna N vektörü mü demişim, ne demişim, bir şey dememişim. N vektörü hem gradyant G'ye diktir, hem de N vektörü
+
+533
+01:53:30,068 --> 01:53:42,648
+Gradyant f'i diktir. Tamam mı arkadaşlar? Bu kadar söyleyeyim. İkisine dik ise, yine bu geçmiş bilgilerinizden, bunların vektörel çarpımına eşittir arkadaşlar.
+
+534
+01:53:43,220 --> 01:53:52,300
+ve burada vektörel çarpımda bunların iki vektörün determinantlarının hesabıdır.
+
+535
+01:53:52,820 --> 01:53:54,180
+Buradan bulunabilir.
+
+536
+01:53:54,720 --> 01:54:02,980
+Evet, bundan sonrası bir bakın arkadaşlar yapamazsanız bir dahaki ders şekli daha büyük çizip sizlere anlatabilirim.
+
+537
+01:54:02,980 --> 01:54:03,820
+Evet.
+
+538
+01:54:04,819 --> 01:54:27,599
+Burada, yani bu işlemlere girmek istemiyorum. Burada bırakalım mı arkadaşlar? Bana sormak istediğiniz bir şey var mı? Buraya kadar anlamadığınız bir şey var mı? Yok. Tamam arkadaşlar, şöyle yapalım. Bu soru size ödev olsun. Bir bakın, şekli çizin.
+
+539
+01:54:28,083 --> 01:54:45,823
+Sadece burada gradyant F ve gradyant G'yi görebilmeniz lazım. Onlar da hani T düzlemleri dik, orada normal düzlem, iki düzlemin kesişimi gibi düşünüp, normal düzlem sorusuna indirgenerek yapılabilir.
+
+540
+01:54:45,823 --> 01:54:56,083
+İlk önce siz bakın, anlamazsanız ben size bunu anlatırım arkadaşlar. Evet, yaklaşık hesap ve maksimum minimum'a geliyoruz. Bunlar önemli.
+
+541
+01:54:56,083 --> 01:55:22,843
+önemli konular arkadaşlar. Yarın bunlardan devam edeceğiz. Bana sormak istediğiniz bir şey var mıdır? Dersi bitireceğim arkadaşlar. Tamam. O zaman yarın görüşmek dileğiyle şimdilik hoşçakalın diyorum. Tamam mı arkadaşlar? Görüşürüz [öğrenci]. Kendinize iyi bakın. Rica ederim [öğrenci]. İyi günler [öğrenci]. Herkese iyi günler arkadaşlar.
