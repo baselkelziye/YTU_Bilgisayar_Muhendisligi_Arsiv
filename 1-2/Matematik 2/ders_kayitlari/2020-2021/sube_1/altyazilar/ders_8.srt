@@ -1,0 +1,2415 @@
+1
+00:01:50,834 --> 00:01:51,575
+Başlıyoruz.
+
+2
+00:01:55,891 --> 00:01:58,370
+Şu 30. soruya kadar beni yapmıştık.
+
+3
+00:02:02,483 --> 00:02:03,582
+Şu soruyu da yaptık.
+
+4
+00:02:13,491 --> 00:02:15,531
+Devam ediyoruz. Şimdi bu sorudayız.
+
+5
+00:02:19,316 --> 00:02:21,634
+Seri tekrarında kuvvet serisine kadar geldik.
+
+6
+00:02:23,276 --> 00:02:23,436
+Evet.
+
+7
+00:02:24,336 --> 00:02:24,836
+Bakalım.
+
+8
+00:02:26,716 --> 00:02:27,716
+İkiden sonsuza.
+
+9
+00:02:31,699 --> 00:02:32,758
+O zaman yapalım.
+
+10
+00:02:34,318 --> 00:02:35,758
+Öyle hatırlıyorsan doğrudur.
+
+11
+00:02:37,859 --> 00:02:39,579
+30'da yapalım o zaman. Doğrudur.
+
+12
+00:02:40,118 --> 00:02:40,299
+Peki.
+
+13
+00:02:41,378 --> 00:02:42,158
+Doğru. Olabilir.
+
+14
+00:02:44,699 --> 00:02:45,258
+Şunu
+
+15
+00:02:45,258 --> 00:02:49,598
+yaptık bu alternat seriydi. Bunları çözdük. Değil mi?
+
+16
+00:02:50,758 --> 00:02:52,438
+Şartla yakın zaten. Peki. 30'u yapalım.
+
+17
+00:02:54,419 --> 00:02:56,579
+Sıfırdan sonsuza bir kuvvet serisi var.
+
+18
+00:02:56,979 --> 00:03:00,459
+Mutlak şartlı yakınsak, ıraksak olduğu x değerlerini buluruz.
+
+19
+00:03:03,019 --> 00:03:10,060
+Peki, oran, oranı yazmış tamam mı? Yani şunu yazmış.
+
+20
+00:03:10,919 --> 00:03:15,000
+Biliyorsun iki yol var. Bir, eninci kuvvetten kök alıyoruz değil mi? Şöyle.
+
+21
+00:03:17,000 --> 00:03:21,538
+Ya, bu eninci kuvvetten kök.
+
+22
+00:03:24,276 --> 00:03:29,936
+Bunu alıyoruz, tamam mı? Bunun limitinden gidiyoruz. Ya da, aynı artı bir bölüm.
+
+23
+00:03:36,276 --> 00:03:57,195
+Şundan gidiyoruz. Ya bunun limitine ya bunun limitine gidiyoruz. Ama biz burada, bu daha, yani biraz daha kolay oluyor. Tamam mı? Bununla yaptık. Şundan. Bunun limitinin küçük bir olması biliyorsun yakınsaklık. Mutlak yakınsaklık aralığı. Bu nedir? Mutlak yakınsaklık aralığı.
+
+24
+00:03:59,316 --> 00:04:03,695
+Uç noktalarda şartlı veya mutlak olabilir veya raksak olabilir.
+
+25
+00:04:06,354 --> 00:04:19,855
+Mutlak değerin birden büyük olduğu yerlerde de nedir? Mutlak değerin birden büyük demek, birden büyük ve eksi birden küçük olduğu yerlerde yraksak oluyor.
+
+26
+00:04:19,855 --> 00:04:23,915
+Dedik, bir tekrar daha yaptık, fazla makyaj çıkartacağız.
+
+27
+00:04:32,148 --> 00:04:45,447
+Bu, en yeni, en artı bir koyuyorum. Sonra, bölmek demek, ters çarpmak demek. Şunları şöyle sadeleştirirsem, değil mi, şunlar ne kalır? Şu olur, değil mi, mutlak değer?
+
+28
+00:04:46,927 --> 00:04:57,387
+Aslında burada mutlak değer vardır ama, o sif olduğu için mutlak değeri kaldırabiliriz, onu söyleyeyim, hatırlatayım. Tamam mı? Yani, iki parça ayrı. Şöyle bir kural var. Mutlak değer.
+
+29
+00:04:59,028 --> 00:05:02,028
+Demek mutlak değer A çarpı mutlak değer B demektir.
+
+30
+00:05:03,728 --> 00:05:07,788
+Burada X'i ayrı aldık, bundan ayrı aldık ama bundan mutlak değer aldık.
+
+31
+00:05:07,987 --> 00:05:09,127
+Eğer A pozitifse nedir?
+
+32
+00:05:10,708 --> 00:05:14,927
+Eminsek mutlak değer A'yı da mutlak değersiz yazabiliriz değil mi?
+
+33
+00:05:15,648 --> 00:05:17,728
+A pozitifse böyle yazabiliriz.
+
+34
+00:05:19,007 --> 00:05:21,408
+Ve yaptığımızda söyleyelim liseyi hatırlatarak.
+
+35
+00:05:23,603 --> 00:05:32,524
+Takıldığınızı söyleyin arkadaşlar. Bakın baştan başladık serilerle, dizilerle gidiyoruz. En son Taylor Maclaurin'le de bitireceğiz.
+
+36
+00:05:36,062 --> 00:05:48,644
+Peki. Şuraya baktık. Burası sayı zaten x. Burada da 2 üzeri n parantezini aldım. Şurada 2 üzeri n parantezini aldım. 2 üzeri nler gitti.
+
+37
+00:05:50,163 --> 00:05:58,624
+3 bölü sonsuz 0, 3 bölü sonsuz 0. Bunlar gitti. Mutlak değer x bölü 2, küçük 1 kaldı.
+
+38
+00:05:59,264 --> 00:06:03,062
+Peki. Buradan da x 2 ile artı 2 arasında çıktı.
+
+39
+00:06:05,802 --> 00:06:07,463
+Evet, devam ediyoruz.
+
+40
+00:06:08,584 --> 00:06:13,603
+Mutlak değer, bunun yarı çapını, hatta herhalde bu soru dün yapmıştık da bir daha çözüyorum.
+
+41
+00:06:13,702 --> 00:06:16,144
+Bir bayan arkadaş sormuştu ya, bunun yarı çapı nedir diye.
+
+42
+00:06:17,043 --> 00:06:28,084
+Hatırladınız mı? Tamam. Önemli değil. Bir kere daha fazla çözmenin bir zararı yok. Evet, buradan şunu yazdık değil mi? Meyi yazdık.
+
+43
+00:06:32,947 --> 00:06:58,286
+2. Yarı çap nedir biliyor musun? Yarı çap. Şu x'in kat sayısı olan 1 var ya ama bu eksi 1 de olabilir. Onun için mutlak değer 1 yazıyorum. Şu sayı da yukarıya yazıyorum. Bu bize mutlak yarı çapı veriyor değil mi? Yakınsaklık yarı çapı veriyor. Yakınsaklık yarı çapı. Merkezi nedir bunun?
+
+44
+00:07:00,850 --> 00:07:10,391
+Nedir merkezi? Merkezde sıfırdır. Yarı çapta ikidir. Bunları bilelim.
+
+45
+00:07:15,091 --> 00:07:25,391
+Haftaya yeni konuya devam ediyorum. Kutupsal parametrik. Sonra işte devam edecek, gidecek. Evet.
+
+46
+00:07:28,110 --> 00:07:32,091
+Bu da mutlak yakınsaklık yarayacak. Burası mutlak yakınsaklık.
+
+47
+00:07:34,151 --> 00:07:38,971
+Iraksaklık da şudur. Bunu net biliyoruz yani. Bunun ıraksak olduğunu net biliyoruz.
+
+48
+00:07:43,314 --> 00:07:44,915
+bıraksak bu ikisi.
+
+49
+00:07:46,334 --> 00:07:49,675
+Fakat bizim araştırmamız gereken uç noktalar.
+
+50
+00:07:49,834 --> 00:07:53,254
+Yani x eşittir 2, x eşittir eksik.
+
+51
+00:07:54,394 --> 00:07:59,175
+Buralarda ne çıkar karşımıza? Mutlak yakınsak, şartlı yakınsak veya bıraksak olabilir.
+
+52
+00:07:59,334 --> 00:08:00,855
+Neyse 2'yi koyduk.
+
+53
+00:08:02,995 --> 00:08:05,975
+Şunada yerine koyduk bunu. Şurada yazdık, yerine yazdık.
+
+54
+00:08:07,134 --> 00:08:07,675
+Bu kaldı.
+
+55
+00:08:09,214 --> 00:08:10,774
+2 üzeri en parantezini aldım.
+
+56
+00:08:12,564 --> 00:08:27,543
+Sıfırdan farklı çıktı. Bu genel terim biliyorsunuz. I, N'in limiti değil mi? I, N'in limiti sıfırdan farklı çıktığına göre bıraksak. Tamam, burasını rahatlıkla bulduk. Neyi de bulduk? N'ci terim testiyle bulduk. Peki.
+
+57
+00:08:29,264 --> 00:08:38,583
+Devam edelim. Eksi 2'ye bakalım. Eksi 2 koydum orada tekrar. Bu oldu. Bu alternatif seridir.
+
+58
+00:08:39,923 --> 00:08:51,743
+Alternatif seri olduğu için, bak şurada, şunu, tamam mı yani pozitif olan kısmın mutlak yakınsak, pardon bu anı, pardon, vazgeçtim.
+
+59
+00:08:52,543 --> 00:08:53,743
+Eksi 2'de şu seri çıktı.
+
+60
+00:08:56,202 --> 00:09:02,982
+Şunun limiti 0 olmadığı için, hani 3 tane koşul vardı ya, alternatif seri testi vardı biliyorsunuz, alternatif seri testi.
+
+61
+00:09:03,682 --> 00:09:05,604
+Buna Lippis testi de diyoruz, tamam mı?
+
+62
+00:09:16,052 --> 00:09:17,892
+Bu testte de diyor. Bu teste göre.
+
+63
+00:09:21,460 --> 00:09:48,740
+Evet, de Blu-Lacris testleri görebiliyoruz. Bakıyoruz, 3. maddesi olan şeyden yakalandı, yani diğer ikisini ispatlamaya gerek yok. Olumsuz olan şey, limiti 0 çıkmadı. O zaman hiç incelemeye gerek yok. Kesinlikle olarak saktır. Tamam mı? Yani 3 testten, yani alternatif seriden ilk elemede 3 şık deniyoruz ya, o andan sonra azalan olması falan. O andan sonra.
+
+64
+00:09:49,364 --> 00:10:15,384
+Pozitif olması, azalan olması ve neydi en son? Limitinin sıfır ama limit sıfır çıkmıyor maalesef. O zaman ıraksaktır. O zaman sonuçta nedir? Uç noktalarda da ıraksaktır. Yani şartlı mutlak yakınsak olduğu burası, şartlı yakınsak yok. Bunun harici olan şurası da ıraksak oluyor dedik. Bir daha çözmüş olduk. Peki, devam edelim.
+
+65
+00:10:20,082 --> 00:10:29,783
+31. soruya geldik. Mesela bunun merkezi nedir biliyor musunuz? Bunun merkezi x eşittir, 3 kare 2'dir.
+
+66
+00:10:34,034 --> 00:10:37,254
+Merkezi, c noktası dediğimiz değer bu.
+
+67
+00:10:39,134 --> 00:10:45,715
+Aynı şekilde, an artıları bölü, ak artıları bölü ak, ne derseniz artık, tamam mı?
+
+68
+00:10:45,875 --> 00:10:47,754
+Bunu yazdık, sadeleştirdik.
+
+69
+00:10:48,634 --> 00:10:50,715
+Şunlar böyle sadeleşti, şu kaldı.
+
+70
+00:10:52,254 --> 00:10:53,115
+Şurası kaldı.
+
+71
+00:10:54,735 --> 00:10:58,434
+Bunu da iki parçaya ayırırsak mesela, limitleri ayrı ayrı yapabiliriz.
+
+72
+00:10:58,434 --> 00:11:00,056
+Hem bunun limiti hem bunun limiti diye.
+
+73
+00:11:01,076 --> 00:11:24,995
+Düşünebiliriz. Yani şunu, bunun başına koyabiliriz. Çarpmanın limit neydi? Limitlerin çarpımı eşittir. Burası sonsuz bölü sonsuzdan bir çıkar. Bu da yine bir çıkar. Neden? Kapital aldık. Bir bölü kaldı. Yani oradan da uzatmayalım. Mac bile artık girmeyelim o kadar. Bu da bir çıkar. Şu kalır o zaman. Bir çıktı. Bakın bu bir çıktı. Bu da bir çıktı.
+
+74
+00:11:25,556 --> 00:11:31,655
+Yarı çap nedir yakınsaklık yarı çapı? Bana söyleyebilir misiniz? R kaçtır burada?
+
+75
+00:11:33,655 --> 00:11:34,355
+1 bölü 2.
+
+76
+00:11:34,816 --> 00:11:35,796
+1 bölü 2'dir.
+
+77
+00:11:38,275 --> 00:11:41,696
+1 bölü eksi 2'dir. Yakınsaklık yarı çapı.
+
+78
+00:11:42,436 --> 00:11:44,176
+Şu x'in kat sayısını aldık.
+
+79
+00:11:44,416 --> 00:11:47,596
+Şimdi şu var biliyorsunuz. 3 eksi 2 x demek mutlak değerde.
+
+80
+00:11:50,255 --> 00:11:52,355
+Mutlak değerde yer değişebilirdi ya.
+
+81
+00:11:52,820 --> 00:11:54,519
+2x-3 demektir değil mi?
+
+82
+00:11:59,059 --> 00:12:05,179
+Böyle de yazabilirsiniz. Neyse, 1 bölü 2'dir yarı çap. Yarı çap 1 bölü 2 dedik. Tamam.
+
+83
+00:12:06,379 --> 00:12:07,440
+Bunları da söyledik.
+
+84
+00:12:10,240 --> 00:12:16,720
+Niye bunların üzerine çok fazla duruyorum? Yarı çap merkez. Test sınavı olduğu için, şıklarda her bilgiyi bilmemiz gerekir.
+
+85
+00:12:17,480 --> 00:12:20,100
+Peki, mutlak yakınsaklık aralığı ne oldu çocuklar?
+
+86
+00:12:21,298 --> 00:12:25,778
+Bu değerin birden küçük olduğu değerler, yani 1 ile 2 arası mutlak yakınsak.
+
+87
+00:12:35,250 --> 00:12:38,730
+Buradan mutlak yakınsak.
+
+88
+00:13:00,403 --> 00:13:10,464
+Mutlak yakınsak, siliyorum. Peki, birden küçük ve ikiden büyük olan yerlerde ıraksak, eşit olduğu değerler ne olur? Bakalım.
+
+89
+00:13:11,344 --> 00:13:14,004
+1 koyduk, şurada x'e 1 koyduk, bu çıktı.
+
+90
+00:13:17,268 --> 00:13:35,807
+[öğrenci] k'nın k'dan küçük olduğundan dolayı, bunun yerine bir bölü k kareyi deneyeceğim. Daha çok küçüğüyle deniyorum tabii, k kütle denemiyorum. Daha garanti olsun diye k kareyle deniyorum. Evet, devam ediyoruz. Burada bir bölü k kare dedik.
+
+91
+00:13:42,292 --> 00:13:59,812
+Bu seri yakınsaktır, P serisi. Limit oran testini yaptık, sıfır çıktı. Demek ki bu seri yakınsaksa yakınsak, gerçekten yakınsak olduğu için de burada yakınsak çıktı. Demek ki, evet, burası yakınsak çıktı. Devam ediyoruz.
+
+92
+00:13:59,812 --> 00:14:03,631
+İki, x'iştir, neyi aldık? Bir de ikiye aldık.
+
+93
+00:14:10,226 --> 00:14:12,106
+Bu seri yakınsak çıktı.
+
+94
+00:14:15,767 --> 00:14:17,886
+Serisi de yakınsaktı.
+
+95
+00:14:18,126 --> 00:14:18,787
+Devam ediyoruz.
+
+96
+00:14:23,508 --> 00:14:31,368
+Demek ki, burada, eksi 2 de ne oldu? Alternatif seri oldu. Alternatif seri oldu.
+
+97
+00:14:34,168 --> 00:14:48,988
+Pozitif olana baktık. Bu seri, hem pozitif hem azalan, ispatlanabilir. Hem de limiti sıfır. O zaman ne diyeceğim? Şuna bakacağım. Biraz çok gittik.
+
+98
+00:14:52,307 --> 00:14:54,467
+Bu serinde yakınsak olduğunu bildiğime göre,
+
+99
+00:14:58,034 --> 00:15:16,534
+Bu seri de yakınsak da, bu seri yakınsaksak mutlak yakınsak, uzatmaya gerek yok. Yani şu seri zaten, yani alternatif serinin pozitifi olan şu seri yakınsaksak, bu seri mutlak yakınsaktır, dedik. Şartlı yakınsak olduğu yer, yok. Burada da mutlak yakınsak, burada da mutlak yakınsak.
+
+100
+00:15:17,534 --> 00:15:24,315
+Dıraksak olduğu yerde, birden küçük, ikiden büyük. Veya, birine iki kapalı araları çıkartıyoruz.
+
+101
+00:15:26,259 --> 00:15:26,919
+Bu da tamam.
+
+102
+00:15:32,115 --> 00:15:40,254
+Geldik. Evet, biraz dün arkadaşımız sormuştu böyle, tamam mı? Seri uygulamalarında, şimdi Taylor Maclaur'a geçiyoruz arkadaşlar.
+
+103
+00:15:41,894 --> 00:15:49,274
+O soru arkadaşınız da şey olsun, dikkat dinlesin, son saniyede sormuştu ama dün 30'tan sonra çözmüştük.
+
+104
+00:15:50,394 --> 00:15:53,554
+Artık kafamızda yer kalmadığını düşündüğümüz için bugüne bıraktık.
+
+105
+00:15:54,335 --> 00:15:57,995
+Evet, bu şimdi ezbere bildiğimiz bir geometrik seri, değil mi?
+
+106
+00:15:58,548 --> 00:16:00,748
+Toplamını da biliyorsun.
+
+107
+00:16:02,488 --> 00:16:03,628
+Bunu soruyor.
+
+108
+00:16:04,508 --> 00:16:07,368
+İşte hani dedi ya, türev integral ile yapabilir miyiz dedi.
+
+109
+00:16:08,248 --> 00:16:11,028
+Seri toplamları, çarpımları için yapacak bir şey yok.
+
+110
+00:16:11,128 --> 00:16:13,927
+Seriyi toplarsan, 2 seriyi toplarsın yani.
+
+111
+00:16:14,128 --> 00:16:15,586
+Bir şey yok, 2 seriyi toplarsın.
+
+112
+00:16:16,648 --> 00:16:17,748
+Normal toplama.
+
+113
+00:16:19,187 --> 00:16:21,888
+Birinin genel terimi else, diğeri de en kare ise toplarsın.
+
+114
+00:16:21,888 --> 00:16:24,607
+En kare olur. Çıkartırsa, en kare olur.
+
+115
+00:16:24,927 --> 00:16:48,586
+Bunu çarparsın da, orada bir uygulamaya bir şey yok. Onu zaten soru çözerken onları uyguluyoruz. Ama türev integrali var diye anlatmamız, geçalım. Bak, bunu biliyoruz. Geldik buraya. Şimdi, bu seriden hareket ederek. Şurası K-2, K-3.
+
+116
+00:16:55,538 --> 00:16:56,698
+K artı 2, K artı 1.
+
+117
+00:17:02,067 --> 00:17:03,947
+Ama bu zor soru tabi, dikkat edemeyeceğiz.
+
+118
+00:17:04,968 --> 00:17:09,008
+Bu, şunun üzerinde, eğer x seri k artı 2 varsa,
+
+119
+00:17:12,788 --> 00:17:17,626
+k artı 2 çarpanı, bunun türevinden gelir. Tamam mı? Yani, bunun türevinden gelir.
+
+120
+00:17:19,426 --> 00:17:21,946
+k artı 1 de, x'leri k artı 1'in türevinden gelir.
+
+121
+00:17:24,446 --> 00:17:30,007
+Bakalım, tabii size bir yol göstermeden, tabii size sonra sormayacağım. Onun için burada gösteriyorum.
+
+122
+00:17:31,987 --> 00:17:37,027
+Şimdi, x'leri k artı 2 yaparsak, türevi k artı 2 çarpına gelir.
+
+123
+00:17:39,124 --> 00:17:43,263
+Beraber düşünelim. Bunu bazı arkadaşların anlamadığına inanıyorum tabii.
+
+124
+00:17:45,324 --> 00:17:46,203
+Biraz dikkat etsin.
+
+125
+00:17:46,604 --> 00:17:49,284
+Aa diyeceksin. Tamam mı? Bu yükselik A artıdır.
+
+126
+00:17:52,304 --> 00:17:53,864
+Şuradaki olayı diyorum ben.
+
+127
+00:17:54,042 --> 00:17:56,364
+Sonradan şunu çarpanlara yazacaksınız.
+
+128
+00:17:56,522 --> 00:17:58,844
+Tamam mı? Yani bunu çarpanlara ayırmadan.
+
+129
+00:17:59,564 --> 00:18:00,982
+Bunun da bir daha türevini aldınız.
+
+130
+00:18:01,344 --> 00:18:01,723
+Ne çıktı?
+
+131
+00:18:12,180 --> 00:18:21,680
+Bu da, x'ları k. Bak, şu türev demek ki, şuradan hareket edeceğim. Yani, başlangıç noktam bu olacak.
+
+132
+00:18:23,220 --> 00:18:27,319
+Peki. O zaman, x'ları k artı 2'yi oluşturalım.
+
+133
+00:18:35,476 --> 00:18:40,476
+İpseri k artı 2, x kale ile çarptık şu iki tarafı, çarptık.
+
+134
+00:18:41,816 --> 00:18:45,556
+Oluştu değil mi? Çarpabiliyoruz biliyorsun bu hepsi seriyi. İşte çarpma da değil.
+
+135
+00:18:45,695 --> 00:18:49,476
+Şimdi x kale ile çarpabiliriz. Çarptık. Bu tarafı da çarptık.
+
+136
+00:18:50,996 --> 00:18:54,976
+Şurası değişmiyordu biliyorsunuz. x kale ile çarpmayla bunu yakınsaklıklı bir yer çarpı değişmedi.
+
+137
+00:18:54,976 --> 00:18:59,895
+Yani şunu söylemiştik. Toplarken, çıkartırken veya çarparken yakınsaklıklarımız.
+
+138
+00:19:00,155 --> 00:19:02,195
+Ama hal serilerde değişmiyor.
+
+139
+00:19:02,900 --> 00:19:11,400
+Evet, aynı yakınsaklık yarı çarpındaki, yani aynı yakınsaklık çarpındaki seriler çarpılabilir, toplanabilir, çıkartılabilir.
+
+140
+00:19:11,640 --> 00:19:14,578
+İşte burada yüklüyoruz, burada çarptık x kare ile. Tamam.
+
+141
+00:19:16,038 --> 00:19:21,440
+Türevini aldık çocuklar. Anlamadığınızda yazın oraya, ben yine bakayım geri çetlerine. Anlamadığınız bir nokta varsa.
+
+142
+00:19:23,900 --> 00:19:28,960
+Evet, tamam. Türev aldım, üstüyle çarptım, üzerini bir azalttım. Buranın da türevini aldım.
+
+143
+00:19:32,660 --> 00:19:46,200
+Burası 2x, 1-x, çarpı 1-x, yani şöyle olmuş, hızlı çarpı, şöyle bir alalım, 2x, 1-x,
+
+144
+00:19:50,163 --> 00:20:15,824
+eksi, eksi de aşağıdan geldi, eksi bir, x kare. Ne oldu burası? 2x, eksi x kare kaldı değil mi? Bunu sadeleştirirsem bu doğru yani. Şunun hepsini yaparsam, 2x, eksi x kare kaldı. Peki.
+
+145
+00:20:17,940 --> 00:20:31,380
+Doğruymuş, baktım kontrol ettim, yanlışlık olur diye. Türevini almış, direkt yazmış, tamam. Şu değişmez. Bir daha türev alacağım. Çünkü neden? K artı 1, K artı 2.
+
+146
+00:20:41,394 --> 00:20:51,076
+Bir daha türev aldık, şu çıktı. Bunun türev, bu ne ya? Şurada. Bu kadar sadeleşmiş mi bu ya?
+
+147
+00:20:51,375 --> 00:20:56,654
+Hocam orası 1-x'in küpü olmayacak mı? Ben ders başlamadan önce çözmüştüm de.
+
+148
+00:20:56,654 --> 00:21:08,134
+Tamam, bir bakım yardım olabilir. Olabilir. Tökent arası ama yani. Bir saniye. 2x-x karenin türevi, 2-2x.
+
+149
+00:21:10,163 --> 00:21:10,804
+Bir bakalım.
+
+150
+00:21:12,324 --> 00:21:13,123
+Emin olalım da.
+
+151
+00:21:14,923 --> 00:21:17,002
+Çünkü bu da bölümün gönderdiği notlar.
+
+152
+00:21:17,163 --> 00:21:18,144
+Yanlışlık olabilir.
+
+153
+00:21:18,144 --> 00:21:18,844
+Yanlışlıkla.
+
+154
+00:21:19,063 --> 00:21:23,344
+2 çarpı 1 eksi x
+
+155
+00:21:23,344 --> 00:21:28,163
+2 x eksi x kare
+
+156
+00:21:34,036 --> 00:21:35,615
+Paydan'ın dördüncü kuvveti.
+
+157
+00:21:38,674 --> 00:21:41,955
+Bakalım, evet, bir hata var gibi düşünün. Şimdi burada
+
+158
+00:21:41,955 --> 00:21:45,395
+iki parantezini aldım, bir eksi, yani şurası iki,
+
+159
+00:21:47,435 --> 00:21:48,796
+bir eksi x'i küpü,
+
+160
+00:21:51,394 --> 00:21:52,215
+eksi iki,
+
+161
+00:21:54,855 --> 00:21:55,756
+bir eksi x,
+
+162
+00:21:57,375 --> 00:21:58,596
+x parantezinde,
+
+163
+00:22:01,268 --> 00:22:02,268
+KSX.
+
+164
+00:22:07,412 --> 00:22:15,871
+1 eksi x'in dördüncü kuvveti. Siz de herkes takip etsin arkadaşlar. Birer tanesi gitti değil mi? Parantezi aldık. Bu 3 oldu.
+
+165
+00:22:17,371 --> 00:22:27,730
+Çıkanı bir daha yazalım. 2 eksi 4 x artı 2 x kare.
+
+166
+00:22:34,228 --> 00:22:36,428
+eksi, 4,
+
+167
+00:22:37,647 --> 00:22:38,548
+artı 2x.
+
+168
+00:22:43,604 --> 00:22:45,223
+Bu da 2x kare,
+
+169
+00:22:48,144 --> 00:22:49,044
+eksi 2x,
+
+170
+00:22:52,722 --> 00:22:55,442
+Eksi 2. Bir saniye.
+
+171
+00:23:23,346 --> 00:23:38,048
+Evet, şimdi burada, eksi 4, artı 2x, şurası 2x kare, eksi 2x, eksi 2, evet burası keşke x eksi 1'in karesi olsaydı, değil mi?
+
+172
+00:23:39,788 --> 00:23:45,346
+2 par olsaydı, olabilirdi. Herhalde bunu...
+
+173
+00:23:46,163 --> 00:23:54,884
+Ya biz mi işlem hatası yapıyoruz? Bak yok tekrar. Eğer burası x eksi birin karesi olsa, o sonuçta doğru olmuyor. Ben bir daha kontrol edeyim.
+
+174
+00:23:57,023 --> 00:24:08,064
+Hocam ben bir program aracıyla hesaplattım. İki bölü x eksi birin küpü hocam buldu. Ya da bir eksi ikisinin küpü. Bir eksi ikisinin küpü pardon.
+
+175
+00:24:14,194 --> 00:24:30,134
+Yaptık peki. Ben bir daha kontrol etmek istiyorum. Herhalde şurayı 4 gördük. Çünkü burası çarpanlar ayrılmaz arkadaşlar. İki parantezini alırsak x-1'in karesi olmaz. Ama bunu eğer şurada x-4x olsaydı, o soruş doğru çıkıyordu. Burası x-4x olsaydı.
+
+176
+00:24:32,634 --> 00:24:38,634
+Evet anladım. Yok buna bir şey demiyorum. Zaten öyle yani. Tamam yukarıda ne kaldı?
+
+177
+00:24:41,940 --> 00:24:45,118
+Şurası gitmedi ki, nasıl olacak? Bir dakika, bakalım.
+
+178
+00:24:47,000 --> 00:24:58,118
+Bölümün türevi değil mi? 2-2x çarpı 1-x'in karesi, eksi 2 çarpı 1-x, ha bir de eksi 1 var. Şurası artı olacak, özür dilerim.
+
+179
+00:24:59,818 --> 00:25:04,078
+Değil mi? Çünkü içinden eksi 1 de geliyor, onu görmedim. Tamam.
+
+180
+00:25:05,106 --> 00:25:09,846
+Buradan dolayı biraz daha değişmeler olacak arkadaşlar. Bir daha bakalım. Şurası artı olacak.
+
+181
+00:25:11,787 --> 00:25:15,906
+Peki, artı olduğuna göre, 1 eksi x'in kareleri gitti.
+
+182
+00:25:18,487 --> 00:25:24,207
+2 eksi 4 x artı 2 x kare artı 4.
+
+183
+00:25:28,434 --> 00:25:30,634
+eksi 2x çıktı.
+
+184
+00:25:38,163 --> 00:25:42,523
+Buradan, aşağısı duruyor zaten, 1-x-x-x-x-x. Buradan ne kaldı?
+
+185
+00:25:45,423 --> 00:25:46,384
+2x kare,
+
+186
+00:25:48,784 --> 00:25:49,223
+eksi,
+
+187
+00:25:54,804 --> 00:25:59,682
+Şurada bir x daha mı var? Bu x'i mi çarpmadı mı acaba? Bir dakika.
+
+188
+00:26:04,914 --> 00:26:08,634
+Hayır hocam, bu x değildi. Bu çarpma işlemi.
+
+189
+00:26:12,434 --> 00:26:14,315
+2 çarptı, 2 x.
+
+190
+00:26:25,556 --> 00:26:40,434
+Şuradan, 2x'in türevi, 2-2x çarpı 1-x'in karesi, eksi, 1-x, çarpı eksi ve bu artı olacak, 2x-x kare. Burası doğru.
+
+191
+00:26:45,460 --> 00:26:46,700
+Ve bir daha temiz yapalım.
+
+192
+00:27:00,050 --> 00:27:10,250
+Evet, şimdi burası da, şunlar bir tanesi gitti, değil mi? Pardon, şuradan türev alıyoruz, değil mi?
+
+193
+00:27:16,852 --> 00:27:18,172
+Şuradan türev alıyoruz.
+
+194
+00:27:20,092 --> 00:27:21,211
+Bunun paydası vardı.
+
+195
+00:27:21,832 --> 00:27:23,291
+Bu da 1-x'in 4. kuvveti.
+
+196
+00:27:23,372 --> 00:27:23,551
+Tamam.
+
+197
+00:27:25,832 --> 00:27:26,531
+Bu kare olacak.
+
+198
+00:27:30,612 --> 00:27:34,291
+Bu da, peki bir taneyi sadeleştirdik.
+
+199
+00:27:35,852 --> 00:27:38,451
+3 oldu. Ve son defa yapıyorum arkadaşlar.
+
+200
+00:27:40,132 --> 00:27:53,352
+2, acele edin mi? 2-2x, 1-x, artı 4x, eksi 2x kare.
+
+201
+00:27:57,010 --> 00:27:59,490
+1 eksi x'in, küpü.
+
+202
+00:28:02,290 --> 00:28:02,851
+Burada,
+
+203
+00:28:05,550 --> 00:28:07,391
+2 1 eksi x'in karesi var.
+
+204
+00:28:10,290 --> 00:28:11,611
+Artı 4 x,
+
+205
+00:28:13,510 --> 00:28:14,830
+eksi 2 x kare var.
+
+206
+00:28:16,490 --> 00:28:18,711
+2 eksi 4 x,
+
+207
+00:28:20,510 --> 00:28:22,830
+artı 2 x kare.
+
+208
+00:28:27,346 --> 00:28:35,548
+Artı 4x, eksi 2x kare, bu 2x kareler,
+
+209
+00:28:51,188 --> 00:28:51,728
+Nice'o.
+
+210
+00:28:55,762 --> 00:28:56,303
+Dörtler
+
+211
+00:29:01,140 --> 00:29:04,579
+4x, valla. Neyse bunu...
+
+212
+00:29:04,579 --> 00:29:06,480
+Hocam 4x'e gitmiyor mu? 4x.
+
+213
+00:29:08,039 --> 00:29:08,700
+Ya bir dakika.
+
+214
+00:29:10,380 --> 00:29:14,119
+Sonda yazdığınız 4, 4x olacak galiba. 4x, 8, 2x kare.
+
+215
+00:29:17,039 --> 00:29:22,700
+Ya bunların hepsi gidip de bir şey x kalmıyor mu ya? Burada 2 kalmıyor mu? Yok.
+
+216
+00:29:23,319 --> 00:29:24,160
+2 kalıyor hocam.
+
+217
+00:29:24,579 --> 00:29:25,559
+Sadece 2 kalıyor hocam.
+
+218
+00:29:26,002 --> 00:29:48,104
+İki kalıyor. Aşağısında 1 eksi x'in küpü mü? Tamam. Ben bakarım bir daha arkadaşlar. Tamam mı şimdi? Bir daha normal şeyle çözerim. Peki. Devam ediyorum. 1 eksi x'in küpü. Hayır, orada eğer tesadüme 1 eksi x'in karesi olursa ondan da gider. Bu sonuç doğru olur diye düşündüm. Bakarım. Çözerim. Peki. Devam ediyorum.
+
+219
+00:29:51,923 --> 00:29:56,123
+Peki, 1-x'in küpü oldu. Tamam, devam edelim. Bakalım ona göre ne oluyor?
+
+220
+00:29:59,542 --> 00:30:05,144
+Sonucu değiştirir mi diye bakalım. Peki, sonra soru neydi?
+
+221
+00:30:08,202 --> 00:30:10,384
+K artı 3, bir de x küple çarpmam lazım.
+
+222
+00:30:13,042 --> 00:30:17,323
+x küple çarptım, bu çıktı. Tamam, burası diyelim. Değil mi? Şurası.
+
+223
+00:30:17,844 --> 00:30:22,844
+Bak tekrar söylüyorum, buraya bir kontrol etmem lazım. O zaman burası 1-x'in küpürü oluyor değil mi?
+
+224
+00:30:23,923 --> 00:30:25,943
+Evet. Sizin dediğinize geldim.
+
+225
+00:30:27,183 --> 00:30:33,644
+Evet. Peki. Ama ona bir kontrol etmek lazım tabii tekrar. Evet bu çıktı. Cevap bu.
+
+226
+00:30:35,544 --> 00:30:42,023
+Sorun değil. Yani 1-x ise 1-x, küpür ise küpür. Tamam mı yani? Oradaki sadeleştirmeyi değişmiyor. Sonuçta fark eden bir şey yok.
+
+227
+00:30:42,606 --> 00:30:45,707
+O zaman böyle oluyor. Peki başka bir soru var? Devam edelim.
+
+228
+00:30:46,186 --> 00:30:49,547
+Hocam biraz soruya döner misiniz? Hiçbir şey soracağım da.
+
+229
+00:30:49,987 --> 00:30:50,207
+Sor.
+
+230
+00:30:51,086 --> 00:30:56,926
+En son ne yazıyor? Bu yakınsaklık aralığı, bunu nasıl bulacağız?
+
+231
+00:30:57,707 --> 00:31:01,106
+İşte o direkt değişmiyor ki. Bir şey yapmadım ki seriyle ilgili.
+
+232
+00:31:01,846 --> 00:31:07,707
+Ben şunu söyledim ya, çarpmalarda yakınsaklık aralığını değiştirmiyor.
+
+233
+00:31:08,211 --> 00:31:14,192
+İki tane, mesela diyelim ki yakınsaklık aralığı aynı olan serileri çarpıyoruz, topluyoruz, çıkartıyoruz.
+
+234
+00:31:15,372 --> 00:31:28,770
+Dolayısıyla, burada zaten şunu alırken, şu var ya hani, pardon, bunu zaten böyle almadık mı yakınsaklık aralığı?
+
+235
+00:31:31,132 --> 00:31:31,451
+Evet.
+
+236
+00:31:31,852 --> 00:31:33,951
+O değişmez ki, değişecek bir şey yapmadık mı?
+
+237
+00:31:34,432 --> 00:31:35,632
+Evet, tamam, teşekkür ederim.
+
+238
+00:31:35,988 --> 00:32:03,186
+Değişecek bir şey yapmadık. Hep x kaldı. X'leri k, x'leri k. Sayıdan dolayı, yani şundan dolayı bir şey değişmez ki. Anlatabiliyor muyum? Dolayısıyla değişmez. Dolayısıyla yakınsaklık aralığı aynı kaldı. Ama burası 3 olacak herhalde. Tamam burası 3. Ben yazayım ama tekrar söylüyorum. Yine de ben her zaman için çözmek tarafları bir daha çözmek lazım. Buysa bu neyse artık. Tamam mı? Yani sadeleştirme de buraya baktık.
+
+239
+00:32:04,050 --> 00:32:08,851
+Kuvvet serisinin yakınsaklık fonksiyon, yani bunun toplamını soruyor ve yakınsaklık aranlığı.
+
+240
+00:32:10,692 --> 00:32:19,951
+Yaptık, bunu şeyle yapmış bak, geometrik seriyle de yapmış, tamam mı? Geometrik seriyi, seslensizlikle oran testiyle de yapabiliriz, tamam mı?
+
+241
+00:32:20,310 --> 00:32:27,250
+Yani bu bir geometrik seri olduğu için bunu direkt toplamını yazabilir. Anlatabiliyor muyum? Burada yakınsaklık şey gibi bulmamıza gerek yok, tamam mı?
+
+242
+00:32:27,250 --> 00:32:29,711
+Bu bir geometrik seridir. Neden?
+
+243
+00:32:30,612 --> 00:32:57,192
+Birden başlıyor. Burayı da n-1 yaptık. Toplam formülü uygulayabiliriz. A dediğimiz şudur. R dediğimiz budur. Yakınsaklık aralığı, eksi 3 ve 3 arasında. Bunun mesela yakınsaklık çapı kaçtır? Kaçtır? 3'tür değil mi? Şurada. Çünkü neden? 1 bölü, 1 bölü 3 değil mi?
+
+244
+00:32:59,730 --> 00:33:04,211
+3'tür yani yakınsaklık, yakınsaklık, merkezi nedir? Eksi 2 bölü 3'tür, onları söyleyelim.
+
+245
+00:33:05,010 --> 00:33:05,290
+Peki.
+
+246
+00:33:14,932 --> 00:33:22,271
+Uygulama sorular buradan atabilir misiniz? Uygulama sorusu ne demek? Uygulama sorular zaten Avesiz sayfamda var, atmışım zaten.
+
+247
+00:33:23,092 --> 00:33:26,711
+Avesiz'e girdiğiniz zaman bu soruları alabiliyorsun, orada var, tamam mı?
+
+248
+00:33:28,152 --> 00:33:35,872
+Oradan, internetten indirebiliyorsun. Anladın mı? [öğrenci]. Uygulama sorularını attık.
+
+249
+00:33:51,508 --> 00:34:16,947
+Buna baktık, evet yaptık, yakınsaklık aralığı, bu toplamda seri toplam formu, geometrik seri. Buna baktık, toplamını ve yakınsaklık aralığına bulmuş. Burada da dikkat edin, n-3'te bir türev olayı var, farkında mısın? Bak, bunda bunu çarpılmış. Şuradan hareket ediyorum. Bu verildi, bunu bir ezbere biliyoruz. Bunu x küple çarp. Çarp, sonra da türev alacağız. Önce x küple çarptık.
+
+250
+00:34:17,427 --> 00:34:32,427
+İki tarafı da çarptık. Yani burayı da çarptık, burayı da çarptık. Tamam mı? X kütle. Sonra türev aldık. Bölümün türevi. Bu çıktı. Sonra türevi aldıktan sonra...
+
+251
+00:34:32,659 --> 00:34:34,059
+x'e n artı 2 ya.
+
+252
+00:34:34,298 --> 00:34:36,440
+n artı 3 olması için de x ile çarptım tekrar.
+
+253
+00:34:36,699 --> 00:34:37,639
+Bunu tam benzettim.
+
+254
+00:34:38,059 --> 00:34:39,920
+Yani buralarda bak n artı 3 çarpan.
+
+255
+00:34:40,018 --> 00:34:42,619
+Demin yaptığımız gibi n artı 2, n artı 2, en zorlarını yapıyorum.
+
+256
+00:34:42,719 --> 00:34:43,219
+n artı 2.
+
+257
+00:34:43,579 --> 00:34:44,818
+Orada iki tane türen var.
+
+258
+00:34:44,920 --> 00:34:46,440
+Bu soruları alacaksınız tekrar.
+
+259
+00:34:47,259 --> 00:34:48,518
+Anlayana kadar çözeceksiniz.
+
+260
+00:34:48,619 --> 00:34:49,920
+x ile çarptım, bu çıktı.
+
+261
+00:34:50,039 --> 00:34:51,099
+Burası değişmez çünkü.
+
+262
+00:34:51,699 --> 00:35:01,278
+Burayı değiştirecek bir olay yok yani. Bunların çarpılmasından bunu değiştirecek bir olay yok. Onun için yakınsaklık aralığı değişmez.
+
+263
+00:35:05,204 --> 00:35:16,784
+Bitti cevap, bu kadar. Türev bu. Bakalım. Integral de karşımıza çıkarsa ki, burada çıkacak integral. Sorularınızın hepsinin cevabını buluyorsunuz.
+
+264
+00:35:16,922 --> 00:35:26,043
+Devam edelim, 35. Bu verilmiş. Dikkat edin, bunu ezbere biliyorsunuz. Sonra da verilmiş ama verilmeyebilir. Bunu siz ezbere de bileceksiniz.
+
+265
+00:35:26,043 --> 00:35:28,204
+Onda suyu gibi fazla güvenmeye bunu ezbere deyip.
+
+266
+00:35:28,596 --> 00:35:34,114
+Bunun temsil eden kuvvet serisini ve yakınsaklık aralığını bulunuyoruz diyor. Şimdi önce başlayalım.
+
+267
+00:35:36,655 --> 00:35:43,416
+Evet, art tanjantın türevi 1 bölü 1 artı x kare. Bunu biliyoruz. Demek ki diyoruz. Demek ki şok.
+
+268
+00:35:45,036 --> 00:35:55,416
+Ben, bunun türevi bu. Bunu hissediyoruz. Art tanjantın türevi. Mesela logaritma x olsaydı, logaritma x olsaydı 1 bölü x türevi mesela.
+
+269
+00:35:56,884 --> 00:35:57,364
+Evet.
+
+270
+00:35:59,224 --> 00:36:03,422
+Mesela 1 bölü x'i de, bak bu da aklıma geldi.
+
+271
+00:36:06,083 --> 00:36:09,364
+Bunu da şöyle yazabilirsiniz, biliyor musunuz?
+
+272
+00:36:13,139 --> 00:36:25,278
+Tamam mı? Bakın. Yani bir bölü x'i seriye açarken, anlatabiliyor muyum? Şunu kullanmak için, bak bu da çok önemli bir şeydir. Tamam mı? 1 eksi eksi. Oldu mu? Pardon. Olmadı.
+
+273
+00:36:27,880 --> 00:36:34,539
+1 eksi, 1 eksi x değil mi? Ya da. Şimdi oldu.
+
+274
+00:36:35,027 --> 00:36:44,487
+1-1-x yazarak, bak bak biliyor musun? 1-x için, 1 bölü x için, 1 bölü 1-1-x derdiği zaman bu 1 bölü x demektir.
+
+275
+00:36:44,567 --> 00:36:48,728
+Buraya 1-x koyarak onu da seriye açarsınız. O zaman şeyi değiştiremem.
+
+276
+00:36:49,786 --> 00:36:53,646
+Mesela 1 bölü x'in serisini burada yerine korsan ne olur biliyor musunuz?
+
+277
+00:37:02,708 --> 00:37:03,867
+üzeri k.
+
+278
+00:37:05,268 --> 00:37:06,608
+Buradan da, tamam mı?
+
+279
+00:37:07,367 --> 00:37:10,007
+1-x mutlak değer ne olacak?
+
+280
+00:37:11,288 --> 00:37:13,228
+Yakınsaklık aralığı değiştir ama dikkat et.
+
+281
+00:37:14,288 --> 00:37:16,367
+x yerine 1-x geldi burada.
+
+282
+00:37:16,867 --> 00:37:19,568
+Bakın bu çok, iyi ki aklıma geldi bak.
+
+283
+00:37:19,668 --> 00:37:22,668
+1 bölü x'i seriye açarken, çünkü elen x'i sorsaydı burada.
+
+284
+00:37:23,411 --> 00:37:50,731
+Hani yine integre gidecek çünkü lnx, integral de bulunur. Ama türevinden başlayıp integre geri dönüştür. Bir daha anlatayım, türevinden başlayalım. O zaman 1 bölü x'i, bak şöyle aklınıza gelmez, 1 bölü 1 eksi, 1 eksi. Bir bölü x demektir. Buradan da yakınsaklık aralığını da bu şekilde yaparsınız. Şeyi değişti dikkat ederseniz o x, 1 eksi x olduğu için yakınsaklık aralığı, bunun yakınsaklık aralığı olmadı. Ne oldu burada? Burada da.
+
+285
+00:37:51,088 --> 00:38:02,007
+Eksi 1 ile, pardon, 0 ile 2 arasında mı çıkar bu? Bakalım.
+
+286
+00:38:03,728 --> 00:38:05,248
+Eksi 2 koyduk buraya.
+
+287
+00:38:07,027 --> 00:38:09,068
+Evet, 0 ile 2 arasında çıkardım.
+
+288
+00:38:11,708 --> 00:38:14,467
+Bu da aklıma geldi. Soru için de soru geldi aklıma.
+
+289
+00:38:14,748 --> 00:38:16,148
+Tamam mı? Bak bu çok önemli bilgi.
+
+290
+00:38:17,012 --> 00:38:19,072
+Söyleyelim, silelim şimdi tekrar.
+
+291
+00:38:23,092 --> 00:38:45,172
+Evet, şimdi gelelim bu soruya. Arktanjant geldi, logaritma geldi. Aklımıza ne gelecek? Burada hem türev ve integral var. Neymiş? Bakın, size uyarıyorum. Böyle bir seri açtığınız zaman integral ve türev var. Dün arkadaşınızın sorduğu da integral türevleri uygulamaktı değil mi? İşte uyguluyoruz. Buna baktık.
+
+292
+00:38:47,123 --> 00:38:53,862
+1 bölü 1 eksi x, k eşittir sıfırdan sonsuza, x üzeri k, mutlak değer x, küçük bir işte geldik.
+
+293
+00:38:53,943 --> 00:38:58,003
+Ark tanjant x'e gelmek için, ark tanjantın türevinden hareket ediyoruz.
+
+294
+00:38:58,963 --> 00:39:03,603
+Ondan sonra şuna benzetmek için, ne yapıyoruz? 1 eksi eksi x kare yazıyoruz.
+
+295
+00:39:04,262 --> 00:39:09,742
+İlla ki, yani, şunu şöyle yapmaya çalışıyoruz. 1 eksi fx şeklinde getirmeye çalışıyoruz. Tamam mı?
+
+296
+00:39:09,983 --> 00:39:10,103
+2.
+
+297
+00:39:11,411 --> 00:39:19,670
+Burada da x yerine ne koyalım? fx koyalım. Bunların keoremlerini verdik. Şimdi bunu biliyorsunuz arkadaşlar. fx'in kayıncı kuvveti olsun. Bu böyle mantık.
+
+298
+00:39:21,990 --> 00:39:33,490
+Peki, devam ettik. Şunu geldik, x yerine eksi x kare koyduk. Bunu yaptık. Güzel. 1 arka x kare. Çok güzel. İyi.
+
+299
+00:39:36,692 --> 00:39:47,391
+Burada, eksi x kare mutlak değer küçük bir olması demektir. Demek ne demek? Mutlak değer x kare birdir. Yani yine bu çıkar. Mutlak değer x küçük eşit bir olur. Tamam.
+
+300
+00:39:49,152 --> 00:39:57,331
+İntegral aldık şimdi. Alıyoruz integrale. Artı tanca arkamız. Artı c'yi bu tarafa koyduk, oraya koyduk. Önemli değil. Artı tanca antı x artı c.
+
+301
+00:39:58,532 --> 00:40:03,152
+Bir bölüm bir artı x karenin integrali. Artı tanca antı x artı c. Bunun integrali nedir?
+
+302
+00:40:05,460 --> 00:40:20,172
+2k artı 1. Fakat enteresan bir şey söylüyorum. Burada bunun 1 olması 0'dan değil miydi bu? 2k koyduk. Bu aslında...
+
+303
+00:40:23,987 --> 00:40:33,086
+Bazen böyle 0-1'ler oluyor, böyle yanlış yazılmış gibi değil. Sonsuza kadar gittiği için bir terimin farklı olması seriyi değiştirmiyor.
+
+304
+00:40:33,086 --> 00:40:45,047
+Onun için 0 aslında. Çünkü integralde bu sınırlar değişmez. Türevde olsaydı 1 olurdu. Biz yukarıda yaparken ona uyuduk mu türev alırken? Bir saniye.
+
+305
+00:40:48,027 --> 00:40:49,907
+Burada türev aldık değil mi?
+
+306
+00:40:53,652 --> 00:40:56,291
+Bunun aslında 1 olması lazım. Bak şimdi aklıma geldi.
+
+307
+00:40:59,291 --> 00:41:10,791
+Sıfır olduğu zaman da değişmediği hakkında teorem var ama, yani şu şekilde yaptığımız zaman türevde ama normalde 1 oldu, bir türev daha alırsak tamam mı?
+
+308
+00:41:10,891 --> 00:41:14,891
+Buralarda certmeler ondan sonra bir türev daha alırsak eğer.
+
+309
+00:41:17,268 --> 00:41:20,188
+Onlara dikkat edelim. Yani buralara bir daha bakmak lazım.
+
+310
+00:41:20,467 --> 00:41:24,306
+Hocam sıfırdan başlamayacak mı ama türev alsak da?
+
+311
+00:41:25,648 --> 00:41:29,268
+Şimdi türev aldığımız zaman serinin türevlerinde...
+
+312
+00:41:29,867 --> 00:41:34,427
+Hocam şu n sıfırdan başlıyor x n artı 3. x üzeri n artı 3.
+
+313
+00:41:34,728 --> 00:41:34,947
+Evet.
+
+314
+00:41:34,987 --> 00:41:41,327
+Bunda bir sabit bir terim olmadığı için, mesela bunun x üzeri n artı 3'ün ilk terimi x küp değil mi?
+
+315
+00:41:41,867 --> 00:41:42,148
+Evet.
+
+316
+00:41:42,739 --> 00:41:48,960
+Bu mesela altta en yerine 0 koyalım. Bunun da ilk trim 3x kare oluyor. Yani bunun türevi oluyor.
+
+317
+00:41:49,340 --> 00:41:54,039
+Fark etmiyor. Evet, x kareten dolayı fark etmiyor. Bu soruyu özgü olarak fark etmiyor ama fark edebilir.
+
+318
+00:41:54,920 --> 00:42:03,679
+Yani normalde bunu şey olarak mesela türev alırken konu anlatmıştık ya. Her türev alışta bir şundan kaynaklanıyor söyleyeyim.
+
+319
+00:42:04,539 --> 00:42:10,000
+Bak şunu söylemek istiyorum. Seriyi açtık diyelim değil mi? A0.
+
+320
+00:42:12,402 --> 00:42:13,643
+Mesela biz seri açtık.
+
+321
+00:42:18,036 --> 00:42:44,675
+Bir türev aldığımız zaman, bu A0, 0 olduğu için A1. O zaman, yani kaçtan başlıyor? 1'den başlar. Bir türev daha alsak, bu da gider. 2'den başlar. Yani böyle bir kural var zaten türevi anlattıkken. Ama bu soruda dediğim gibi, iştikten dolayı sonuç değişmediği için, tamam mı? Bir sorun yok. Ama bunu alıp, yani ayarlama yapıp, tamam mı? Bunu ben tabii şey yapıp,
+
+322
+00:42:45,523 --> 00:42:59,163
+Tamam, bu soru üzerinde değişmiyor ama, bir de kuralımız var. İntegralde değişmiyor. Bak, integralde ne kadar integral alırsak, anlayın hep sıfırdan başlıyor. Ama türevde bir türev alırsak 1000 oluyor. Bir daha türev alırsak 2 oluyor. Öyle bir kural var.
+
+323
+00:43:00,402 --> 00:43:01,802
+Sabit olursa yani, değil mi?
+
+324
+00:43:02,003 --> 00:43:02,483
+Sabit.
+
+325
+00:43:02,583 --> 00:43:10,083
+Sabit olursa tabii. Mesela A1, X'e n artı 3 olduğu için, X'e kütten başladığı için 2-3 türevde böyle değişmiyor. Doğru söylüyorsun.
+
+326
+00:43:10,675 --> 00:43:37,755
+hep x kaldığı için değişmiyor. Anlatabiliyor muyum? x sıfır kalıyorsun, hiç değişmiyor. Ama tekrar söylüyorum, bu sorunu, bu sorunu tekrar, ben dersten, yani bütçen sonra bu soruyu alıp, kendim bir şey yapacağım, en yerine işte normalde 1 konacak. Yani bu, doğrusu bu 1 olacak. Bir türev daha alırsa 2 olacak. Yani anlatabiliyor muyum? Bak.
+
+327
+00:43:38,291 --> 00:43:55,751
+Ama 1 olması lazım. 1'e göre yazarsak, yine bunu yazarız. Fark etmez. Buralar fazla değişmeyebilir. Anlatabiliyor muyum? Devam edelim. n eşittir, birden başlıyor. Ama bu soru da değişmediği için bu soruya dokunmuyorum. Geçiyoruz buraya.
+
+328
+00:43:55,751 --> 00:43:58,311
+Hocam bir şey sorabilir miyim? Buyurun.
+
+329
+00:44:01,844 --> 00:44:08,284
+X, X kare küçüktür, mutlak değer içinde X, X kare küçüktür, 1'dir, 1 yaptık ya.
+
+330
+00:44:08,724 --> 00:44:10,063
+Evet, o da X, X kare.
+
+331
+00:44:10,063 --> 00:44:12,023
+Bu yanlış bir tanım olmaz mı peki hocam?
+
+332
+00:44:12,523 --> 00:44:16,103
+Çünkü X kare içinden negatif bir sayı çıkamaz.
+
+333
+00:44:16,103 --> 00:44:18,684
+Biz real sayılarda işlem yaptığımız için.
+
+334
+00:44:20,164 --> 00:44:23,284
+Burası 0 ile X'i 1 arasında olması gerekmez mi?
+
+335
+00:44:23,503 --> 00:44:24,143
+Bir şey söyleyeyim.
+
+336
+00:44:24,244 --> 00:44:25,364
+Yani 0 ile 1 arasında.
+
+337
+00:44:25,443 --> 00:44:26,204
+Anladım, hatırlıyorum.
+
+338
+00:44:27,003 --> 00:44:28,103
+Bu doğru mu?
+
+339
+00:44:29,331 --> 00:44:30,090
+Evet, Hücum.
+
+340
+00:44:34,356 --> 00:44:35,356
+Bu doğru mu?
+
+341
+00:44:37,635 --> 00:44:38,476
+Evet.
+
+342
+00:44:45,235 --> 00:44:45,994
+Bu doğru mu?
+
+343
+00:44:48,815 --> 00:44:49,695
+Evet hocam.
+
+344
+00:44:50,114 --> 00:44:50,474
+Tamam.
+
+345
+00:44:51,576 --> 00:44:52,954
+Yok, zaten oraya bir şey demiyorum.
+
+346
+00:44:53,434 --> 00:44:55,775
+X'i bir olabilir, fark etmez ki.
+
+347
+00:44:56,434 --> 00:44:58,954
+X kare zaten, bunun için eksi olduğu zaman.
+
+348
+00:44:59,494 --> 00:45:06,114
+Hayır hocam, aralık, eğer mutlak değeri açtığımız zaman, aralık, yani sıfır ile eksi bir arasında olması gerekmez mi?
+
+349
+00:45:06,315 --> 00:45:09,195
+Yani bir aralama çünkü bu, eğer mutlak değeri kaldırırsa.
+
+350
+00:45:09,875 --> 00:45:12,494
+Ama biz mutlak değeri kaldırıp burada şey yapabiliyoruz.
+
+351
+00:45:13,492 --> 00:45:17,072
+Aşağıda mesela x küçük bir delik.
+
+352
+00:45:17,391 --> 00:45:18,731
+X'e de eksi bir koyamaz mı?
+
+353
+00:45:20,231 --> 00:45:23,652
+Koyabiliriz hocam. Şimdi yukarıdakini de mutlak geri kaldıralım hocam.
+
+354
+00:45:24,552 --> 00:45:26,472
+Hangisiniz? Bunun cevabı değil mi?
+
+355
+00:45:26,992 --> 00:45:27,911
+Eksi x kare için.
+
+356
+00:45:29,210 --> 00:45:31,391
+Mutlak değer. Şimdi normalde bu şu.
+
+357
+00:45:33,271 --> 00:45:34,331
+Eksi x kare.
+
+358
+00:45:34,831 --> 00:45:35,632
+Evet hocam.
+
+359
+00:45:36,692 --> 00:45:43,032
+Ama burası sıfırdan büyük olması gerekmez mi? Çünkü x kare, sıfırdan küçük olması gerekir. Pardon, x olduğu için başında.
+
+360
+00:45:45,032 --> 00:45:48,172
+Burası x iken bu mutlak değer x olmuyor mu?
+
+361
+00:45:49,490 --> 00:45:50,032
+Evet hocam.
+
+362
+00:45:50,471 --> 00:45:56,811
+Tamam, burası eksi x kare iken de burası eksi x kare bu olmuyor mu? Anlamadım.
+
+363
+00:45:57,632 --> 00:45:58,971
+Yok hocam, orada sıkıntı yok.
+
+364
+00:45:58,971 --> 00:46:00,552
+Şimdi bu şeyi açalım mı?
+
+365
+00:46:01,552 --> 00:46:02,471
+Soru bu o.
+
+366
+00:46:02,927 --> 00:46:04,748
+Tutmak değer eksi x kare küçük bir.
+
+367
+00:46:05,407 --> 00:46:09,467
+Tamam hocam, açalım onu. Eksi bir ile bir arasında olacak değil mi?
+
+368
+00:46:09,827 --> 00:46:10,128
+Evet.
+
+369
+00:46:10,867 --> 00:46:19,208
+Ama hocam x kare sıfırdan büyük olacak. Yani sıfır ile eksi bir arasında olması lazım. Başında eksi olduğu için.
+
+370
+00:46:20,927 --> 00:46:23,387
+Sıfırdan bir büyük değer alamaz bu eksi x kare dediğimiz.
+
+371
+00:46:24,728 --> 00:46:25,788
+Sıfırdan büyük değer?
+
+372
+00:46:26,327 --> 00:46:26,748
+Alamaz.
+
+373
+00:46:28,980 --> 00:46:36,480
+Şimdi hocam, x kare her zaman pozitif çıktığı için, eksileri de çarptığımız için, her zaman negatif olması gerekmiyor mu? Onu diyor arkadaş.
+
+374
+00:46:41,396 --> 00:46:44,076
+Şimdi ben şuraya gelmek istiyorum. Şimdi bak.
+
+375
+00:46:45,476 --> 00:46:47,476
+Eksi x kare üzeri k değil mi?
+
+376
+00:46:49,775 --> 00:46:50,255
+Seri.
+
+377
+00:46:52,076 --> 00:46:54,496
+Şuradaki seri eksi x kare üzeri k değil mi?
+
+378
+00:46:54,496 --> 00:46:55,016
+Evet hocam.
+
+379
+00:46:55,516 --> 00:47:01,715
+Peki, şunun mutlak değeri küçük bir değil mi?
+
+380
+00:47:02,715 --> 00:47:03,335
+Evet hocam.
+
+381
+00:47:04,576 --> 00:47:08,275
+Tamam, ben bunu eksiği kaldırırım. Mutlak değer x küçük bir değil mi?
+
+382
+00:47:09,492 --> 00:47:09,972
+Evet.
+
+383
+00:47:12,371 --> 00:47:17,532
+Tamam. Bu da mutlak değer dışarı x kare küçüktür 1'dir değil mi? Doğru mu?
+
+384
+00:47:19,472 --> 00:47:21,371
+Çünkü pozitif çıkar dışarıya. Çıktı mı?
+
+385
+00:47:22,472 --> 00:47:25,192
+Kare kökü alırsam mutlak değer x küçük 1 değil mi?
+
+386
+00:47:28,211 --> 00:47:30,771
+Ama hocam işte burada bir sıkıntı oluyor.
+
+387
+00:47:32,452 --> 00:47:34,411
+Hangi satırda sıkıntı yaptın şurada?
+
+388
+00:47:34,632 --> 00:47:36,112
+x kareden x'e geçerken önce.
+
+389
+00:47:36,596 --> 00:47:46,596
+Niye geçelim? İşte normal bir denklem. x kare küçük birse, ben iki tarafa mutlak değerini alabilirim, şey kare kökünü alabilirim.
+
+390
+00:47:48,295 --> 00:47:55,695
+Ve burası da, tamam mı? Kare kök bir, x kare mutlak değeri x diye çıkar, burası da bir çıkar.
+
+391
+00:47:56,695 --> 00:47:58,715
+Ben anlayamadım yani siz dediniz.
+
+392
+00:47:59,715 --> 00:48:02,596
+x kare içinden çıkarttığımız zaman hani...
+
+393
+00:48:02,976 --> 00:48:22,735
+X kare, real sayılarda, eksi bir, yani eksi bir değer alamaz değil mi? Kare dediğimiz. Kare eksi bir alamaz, kompleks sayı değil ki o. Evet hocam, işte eksi bir alamayacağı için, ama biz burada çevirdiğimiz zaman, mutlak değer x küçüktür, bir olduğu için, x burada eksi bir değer de alacak. Gerçek.
+
+394
+00:48:26,255 --> 00:48:28,016
+Zaten öyle tanımlamışız.
+
+395
+00:48:32,275 --> 00:48:33,655
+Tamam canım, ben anladım. Tamam.
+
+396
+00:48:35,516 --> 00:48:47,114
+Yani burada, yani yaptığımız matematiksel şey olarak, bu dışarı x kare diye çıkıyor. Kare kökü alınca mutlak değer x oluyor. Mutlak değer x'te de x'i bir artı bir diye yazılıyor. Devam edelim.
+
+397
+00:48:49,916 --> 00:48:52,476
+Sen şunu mu söylüyorsun? Şöyle mi yazmakla alınıyorsun?
+
+398
+00:48:55,114 --> 00:48:55,976
+Evet, şu an.
+
+399
+00:49:00,114 --> 00:49:07,096
+X-0.1 alamaz mı diyorsun?
+
+400
+00:49:11,572 --> 00:49:14,411
+X'e de x0.1 alamadın, alabilirsin diyor.
+
+401
+00:49:17,652 --> 00:49:26,652
+x0.1 alırsak, x0.1'in karesi, artı, anlatabiliyor muyum? Olabilir, bir eksi sayı.
+
+402
+00:49:27,231 --> 00:49:30,811
+Kayıncı kuvveti olur, o alternatif seri olduğu için artı eksi gider yani.
+
+403
+00:49:31,271 --> 00:49:32,811
+Alternatif seri olduğu için artı eksi gider.
+
+404
+00:49:33,632 --> 00:49:35,652
+Neyse ben anlayamadım, olabiliriz.
+
+405
+00:49:35,931 --> 00:49:38,192
+Anlatabiliyor muyum yani, eksi değerini alamazsın.
+
+406
+00:49:38,835 --> 00:49:40,516
+Eksi 0.5 alabilir.
+
+407
+00:49:42,135 --> 00:49:44,956
+Eksi 0.5'in karesi birden küçüktür.
+
+408
+00:49:45,135 --> 00:49:45,295
+Değil mi?
+
+409
+00:49:46,755 --> 00:49:47,755
+Neyse bakarız.
+
+410
+00:49:48,335 --> 00:49:50,114
+Sen yine bana mail atarsın tamam mı?
+
+411
+00:49:50,195 --> 00:49:53,114
+Yaptığın şeyini bana mail adresinden bir at.
+
+412
+00:49:53,215 --> 00:49:53,956
+Bakarız tamam mı?
+
+413
+00:49:55,335 --> 00:49:56,235
+Devam ediyorum.
+
+414
+00:50:13,684 --> 00:50:20,003
+Mutlak değerin içi eksi olabilir, onu demek istiyorum. Ben bir yanlış diyorum. Mutlak değerin içi eksi olabilir ama dışarı at diye çıkar.
+
+415
+00:50:25,139 --> 00:50:42,179
+Devam ettik. Bu arada bir ara veriyoruz, 10 dakika. Evet, ikide devam edeceğiz arkadaşlar. İkide devam edelim, şu kalan sorularımızı bitirelim. Yine siz şey varsa oraya yazın. Evet. Peki, devam ediyorum. Evet, bir ara verdim.
+
+416
+01:02:47,531 --> 01:03:12,832
+Tekrar başlıyoruz. Arktanjant x'deyiz. Bunu yapmıştık ama bir daha bakalım. Arktanjant x gördüğümüz zaman 1 bölü 1 artı x kareden başlayın arkadaşlar. Hiç düşünmeden tamam mı? Sonra bunu 1 eksi eksi x kare ve buna benzeterek serisini yazın. Sonra şunun eksi x karenin kayıncı kuvvetidir bu biliyorsunuz.
+
+417
+01:03:19,372 --> 01:03:23,332
+Dolayısıyla, mutlak değer eksi x karenin küçüklüğü olması verilir.
+
+418
+01:03:25,832 --> 01:03:29,532
+Buradan, mutlak değer eksi x kare, mutlak değer eksi kareye eşit.
+
+419
+01:03:29,692 --> 01:03:33,152
+10 x kare diye dışarı çıkar.
+
+420
+01:03:33,512 --> 01:03:34,632
+Buna gelir. Peki.
+
+421
+01:03:35,892 --> 01:03:40,711
+Sonra, integral alırsak, artı tangent x artı c bu çıkar.
+
+422
+01:03:43,563 --> 01:03:52,803
+Devam ediyoruz. Burası sıfır diye düşünelim bir an bakan diye. Rahatsızlık ediyoruz. Çünkü normalde bunun integralde değişmemesi lazım, tücelde değişmesi lazım. Böyle yapsak ne olur? Bakalım.
+
+423
+01:03:54,383 --> 01:03:54,923
+Sonuçta
+
+424
+01:03:58,603 --> 01:04:10,423
+Evet, bu 0 diye kalsın. Hazırdan herkene yanlış yazılmış oradır. 0 yaptık. Tamam. Sonra, x yerine x bölü 2 koyalım şimdi. Çünkü art tanjant x bölü 2 diyor.
+
+425
+01:04:12,204 --> 01:04:22,803
+Integral türevi de gördük. Peki. Bu aralıkta bir değer seçebiliriz diyor. 0 seçebiliriz yakınsak olduğu değer. 0 seçtiğimiz zaman bu 0 olur.
+
+426
+01:04:23,404 --> 01:04:27,704
+Burası da 0 olur, c de 0 olur. O da okey. Tamam.
+
+427
+01:04:29,344 --> 01:04:32,444
+Ve, arktanjant x bölü 2 buna eşit çıkar.
+
+428
+01:04:33,524 --> 01:04:37,464
+Şimdi bak dikkat et, x'in şeyi değişti, bakın fark etmektedir. Şuna bakarsanız, değil mi?
+
+429
+01:04:38,464 --> 01:04:39,444
+Yani şöyle oldu.
+
+430
+01:04:41,284 --> 01:04:43,744
+Altanjant x bölü 2, eksi.
+
+431
+01:04:48,555 --> 01:04:51,036
+Bu, şuradaki serisi, şurası x bölü 2.
+
+432
+01:04:54,827 --> 01:04:59,327
+Bu k artı 1 olduğu için, buna dokun, bu k artı 1, yani 2k artı 1 olduğu için bunu yazdık.
+
+433
+01:05:00,548 --> 01:05:16,508
+Ve şunun aslında, x'e 2k artı 1, yani şu, x bölü 2'nin 2k artı 1'in kuvvetinden, x bölü 2 mutlak değer 1'den küçük olacak, yakınsaklık yarı çapı değişti, şuradaki sayı değiştiği için.
+
+434
+01:05:17,508 --> 01:05:20,487
+Evet, buradan eksi 2 ile artı 2 arasında oldu.
+
+435
+01:05:22,860 --> 01:05:26,360
+Yani böyle de şunu da yazabilir, eksikliği artı 2 arasında olur.
+
+436
+01:05:31,659 --> 01:05:41,760
+Burduk testi. Anlamadığım bir şey varsa sorabiliriz. X'e niye çarptık tabii? Çünkü soruda X çarpı vardı. Bir de X'e çarptık. Evet, serinin değerini değiştirmiyor.
+
+437
+01:05:43,200 --> 01:05:56,260
+Buna baktık, Maclaurin serisini yazınız diyor. Elde ettiğiniz seriden yer alınarak bunu hesaplayınız. Maclaurin serisini yazmak istiyoruz. Önce E-Zen X. İster tek tek bulun, isterse bunu pratik yazın.
+
+438
+01:05:58,476 --> 01:06:00,476
+Sonra x'e eksi x koyduk.
+
+439
+01:06:00,995 --> 01:06:01,596
+Bunu bulduk.
+
+440
+01:06:02,775 --> 01:06:03,696
+X'e çarptık.
+
+441
+01:06:04,296 --> 01:06:04,895
+Bunu bulduk.
+
+442
+01:06:06,456 --> 01:06:11,976
+Sonra bulduğumuz seride, şu iki olması için belli ki x'e ne koyacağım?
+
+443
+01:06:12,056 --> 01:06:13,356
+Bir yazacağım. Yazdım.
+
+444
+01:06:15,414 --> 01:06:16,515
+Bu serinleşti nedir?
+
+445
+01:06:17,135 --> 01:06:17,476
+Budur.
+
+446
+01:06:18,356 --> 01:06:20,836
+Bir çarptı, en üzeri eksi 2'den bir bölüye kare oldu.
+
+447
+01:06:21,076 --> 01:06:21,235
+Bitti.
+
+448
+01:06:21,995 --> 01:06:22,755
+Bu kadar.
+
+449
+01:06:24,460 --> 01:06:31,360
+Sinus hiperbolik 2x ve gx eşittir, kosinus hiperbolik 2x fonksiyonunun maksı dönensellerini yazınız.
+
+450
+01:06:32,700 --> 01:06:35,779
+Tabii, sinus hiperbolik 2x'in açılımı budur.
+
+451
+01:06:38,539 --> 01:06:40,980
+Biz matbili gördüğümüze göre bunu biliyor kabul ediyoruz.
+
+452
+01:06:41,220 --> 01:06:42,400
+Tamam mı? Sinus hiperbolikte.
+
+453
+01:06:43,120 --> 01:06:45,740
+Kosinus hiperbolikte şurası artı oluyordu biliyorsunuz.
+
+454
+01:06:45,740 --> 01:06:46,180
+Tamam mı?
+
+455
+01:06:47,440 --> 01:06:49,420
+Peki, evzel 2x'i açtım.
+
+456
+01:06:52,011 --> 01:06:54,311
+Sonra e üzeri eksi 2 eksi açtım.
+
+457
+01:06:55,571 --> 01:06:57,771
+Ve geldim, bunları birbirinden çıkarttım.
+
+458
+01:06:57,911 --> 01:07:00,631
+Bak işte, bunlar da serilerin çıkartılması, bak buralarda var.
+
+459
+01:07:01,131 --> 01:07:03,191
+Çarp deseydi, bunları çarpabilirdim de.
+
+460
+01:07:03,391 --> 01:07:04,831
+Sonuç yok. Devam ettik.
+
+461
+01:07:06,211 --> 01:07:08,791
+Bunun yerine bunu, bunun yerine bunu koyup, 1 bölü 2 de var.
+
+462
+01:07:09,511 --> 01:07:10,691
+Seri bu olarak, bu ne oldu?
+
+463
+01:07:10,751 --> 01:07:12,691
+Yazdık. Bu nedir? 1 eksi, eksi 1 üzeri.
+
+464
+01:07:12,891 --> 01:07:16,711
+Yani, ne diyormuş bakalım, oradan bir irdeleme yapacak.
+
+465
+01:07:20,139 --> 01:07:34,639
+Evet, burada dikkat ederseniz, en yerine 1 korsanız 2 çıkar, 2 korsanız 0 çıkar. Yani çift sayı korsanız 0 çıkar, tek sayı korsanız ne çıkar? 2 çıkar. Böyle bir irdeleme yapmak lazım.
+
+466
+01:07:35,639 --> 01:07:46,019
+Evet, sinis hiperboliki 2x buna eşitmiş. Kosinis hiperboliki 2x de artı yazarak onu da bu şekilde toplayabiliriz. Bunlara bakarsınız.
+
+467
+01:07:48,812 --> 01:07:55,652
+Evet. Burada yerlerine koyuyoruz. Orada da çift olunca iki, tekrar sıfır çıkıyor.
+
+468
+01:07:58,352 --> 01:08:03,352
+Peki. Üçüncü mertebe Taylor polinomunun yazınız.
+
+469
+01:08:04,052 --> 01:08:06,412
+Hocam, 36. soruya tekrar bakabilir miyiz?
+
+470
+01:08:06,912 --> 01:08:12,672
+Evet.
+
+471
+01:08:15,404 --> 01:08:22,182
+Hocam, burada e üzeri x, eniştir sıfırdan sonsuza şeklinde başlaması gerekmiyor mu? Eniştir birden başlatmış ya.
+
+472
+01:08:25,707 --> 01:08:45,407
+Şimdi en eşittir sıfır, en eşittir sıfırdan başlayacak, doğru söylüyorsun. Sıfır yoksa tutmaz, tabii tabii. Ben diyorum ya, sıfır birlerde, yazılımlarda dikkat et, dikkatsizlik yapmışlar. Biz konuyu takip ediyoruz. Benim anlattığım şekilde ezberlerseniz iyi olur. Bak burada bir olursa buna eşit çıkmaz.
+
+473
+01:08:45,846 --> 01:08:48,346
+Sıfır olacak, sen dikkatli görmüşsün, tamam mı?
+
+474
+01:08:48,606 --> 01:08:50,288
+Sonucu da değiştiriyor herhalde hocam bu.
+
+475
+01:08:50,407 --> 01:08:51,548
+Tabii sonucu da değiştiriyor.
+
+476
+01:08:52,048 --> 01:08:54,728
+Yani ben buna, şurası doğru olunca geçtim.
+
+477
+01:08:54,947 --> 01:08:58,228
+Bir de çok kullandığımız bir seri olduğu için ev üzeri, tamam mı?
+
+478
+01:08:58,268 --> 01:08:59,728
+Buraya dikkat etmedim, haklısın.
+
+479
+01:08:59,827 --> 01:09:00,867
+Kesinlikle sıfır olacak.
+
+480
+01:09:01,048 --> 01:09:02,407
+Bu da sıfır olacak, tamam mı?
+
+481
+01:09:03,307 --> 01:09:04,587
+Doğru söylüyorsun, teşekkür ederim.
+
+482
+01:09:04,707 --> 01:09:06,528
+Yani seriler sıfırdan başlıyor.
+
+483
+01:09:06,627 --> 01:09:09,988
+Seri çünkü bir tane eleman farklı olunca toplamı da, değil mi?
+
+484
+01:09:10,443 --> 01:09:14,543
+toplamda bir eksik çıkacak yani, serinin toplamda.
+
+485
+01:09:15,262 --> 01:09:15,462
+Peki.
+
+486
+01:09:17,003 --> 01:09:18,262
+Tamam değil mi? Sonra cevap oldu.
+
+487
+01:09:18,682 --> 01:09:19,563
+Bunlar evet. Genelde...
+
+488
+01:09:19,563 --> 01:09:20,682
+Oldu hocam, teşekkür ederim.
+
+489
+01:09:21,182 --> 01:09:23,644
+Bakın, tekrar söylüyorum. Ben size doğrusunu söyleyeyim.
+
+490
+01:09:24,163 --> 01:09:27,743
+Türev alırken, her türev almada en sayısı 1'i artıyor arkadaşlar.
+
+491
+01:09:27,983 --> 01:09:31,904
+Birinci türevde en birden başlıyor. İkinci türevde ikiden başlıyor.
+
+492
+01:09:32,003 --> 01:09:34,863
+Bu şekilde yapacaksınız. Ona göre düzelteniz. Önemli değil.
+
+493
+01:09:35,114 --> 01:09:39,596
+O integralde değişmiyor. İntegralde sıfırsa hep sıfır kalıyor. Diyelim.
+
+494
+01:09:40,635 --> 01:09:42,675
+Gerse devam edenler anlamış olsunlar.
+
+495
+01:09:43,175 --> 01:09:44,414
+Şimdi geldik buraya.
+
+496
+01:09:45,275 --> 01:09:48,056
+Tanjant x fonksiyonu. Türev aldık tabii.
+
+497
+01:09:48,454 --> 01:09:50,675
+Türev alıyoruz. Tanjant sekant kare x.
+
+498
+01:09:51,375 --> 01:09:52,816
+Sonra bunun türevini alıyoruz.
+
+499
+01:09:53,135 --> 01:09:55,855
+2 sekant x çarpı, sekant x tanjant x.
+
+500
+01:09:56,576 --> 01:09:58,875
+İşte 3 türev alıyoruz ve burada değerleri koyuyoruz.
+
+501
+01:09:58,875 --> 01:10:01,476
+1, 2, 4, 16.
+
+502
+01:10:03,114 --> 01:10:07,796
+1, 2, 2'nin karesi, 2 üzeri 4. Bakalım.
+
+503
+01:10:09,414 --> 01:10:11,994
+Buradan nasıl bir genel kural çıkmış?
+
+504
+01:10:16,524 --> 01:10:23,344
+Bakıyoruz, burada yazmış, 5'li dereceden polinom mu demiş, kaç demiş, 3'e, 3'te kesmiş zaten, burada genel şeyi yazmana gerek yok.
+
+505
+01:10:24,003 --> 01:10:37,104
+Ne diyor, 3'ün derecede Taylor polinomu demek, 1, pi böl 4 korsak, tancant 45, 1'dir. Bunları bulmuş, şurada yerine koymuş, tancant 3'e kadar almışlar.
+
+506
+01:10:42,091 --> 01:10:51,711
+Maclaurin deseydi de, şunlar sıfır olacak. X eşittir sıfır da Taylor diyebilir. Bir yerde Maclaurin'dir, tamam mı? Bitti, bu kadar.
+
+507
+01:10:54,692 --> 01:11:03,811
+Evet, Taci Antics'in Maclaurin serisi de bu şekilde gidiyormuş. Yani onu daha önce bulmuştuk, bir daha hatırlatmış. Bu seri.
+
+508
+01:11:05,192 --> 01:11:08,891
+Polinom dediği zaman bir yerde kesiyoruz. Buna bakalım, bak bu da enteresan bir soru.
+
+509
+01:11:11,467 --> 01:11:16,048
+0'dan x'e giderken 1 eksi, e üzeri, eksi, t kare, bölü, t kare, dt.
+
+510
+01:11:16,988 --> 01:11:20,567
+Fonksiyonun, Maclaurin açılımının genel terimini buluruz diyor.
+
+511
+01:11:20,707 --> 01:11:23,467
+Tamam, bakın, bu bir fonksiyon.
+
+512
+01:11:23,567 --> 01:11:26,528
+Niye? İntegre aldığınız zaman x'e ait bir şey çıkar.
+
+513
+01:11:27,768 --> 01:11:31,207
+Değil mi? Belirli integral olduğu için x'e ait bir şey çıkar diyor.
+
+514
+01:11:31,567 --> 01:11:34,367
+Evet, ne yapacakmışız? Şöyle.
+
+515
+01:11:35,606 --> 01:11:36,887
+E üzeri x'i biliyoruz.
+
+516
+01:11:38,284 --> 01:11:46,083
+x yerine eksi t kare koyduk, yazdık. Birden bunu çıkarttık, bölü t kare yaptık, devam edelim.
+
+517
+01:11:49,404 --> 01:11:56,784
+Peki, bunu yazdık. Bu kaldı böyle, gitti. Bir dakika, burada giderken biriler gitti.
+
+518
+01:11:59,262 --> 01:12:05,543
+Ha, t kareye de bölünce tamam, hızlı yapmış yani. Önce bunu çıkartmış, sonun kalanı t kareye bölmüş, bunu bulmuş. Tamam.
+
+519
+01:12:06,604 --> 01:12:18,563
+Sonra da 0'dan x'e kadar integre etmiş. Birinin integralı t, t kareli integralı t küt bölü 3 vs. Sonra da 0'dan x'e kadar üst sınır alt sınır koymuş.
+
+520
+01:12:19,342 --> 01:12:25,342
+Önce x'e ait bir seri çıkmış. Alt sınırdan 0 gelmiş. Şöyle bir seri çıkmış. Güzel.
+
+521
+01:12:27,583 --> 01:12:32,024
+Tamam, bitmiş olalım. Bunu soruyorlar. Bunun da genel terimi bulunabiliyormuş.
+
+522
+01:12:32,971 --> 01:12:45,091
+Bak, 3, 5, tek sayı gidiyor, 2 en artıdır. Birden öteleyerek faktör yerleri de var. İkisin üzerinde tek sayı. Tamam. Bunu yazabiliriz, zorluk yok. Şuna bakalım.
+
+523
+01:12:48,971 --> 01:12:57,211
+Şimdi konularda arktanjantlar var ya, o arktanjantlar da, arktanjant x'in serisini kullanıyoruz limitle falan, o yani.
+
+524
+01:12:57,432 --> 01:13:04,990
+Yaptık ya, arktanjant x'te ne yapıyorduk? Kulvet serisini alıp, bir bölü bir arka x kareden integral olarak buluyorduk.
+
+525
+01:13:04,990 --> 01:13:09,932
+Dedik, ders programı içerisinde her şeyin tekrarını yaptık.
+
+526
+01:13:10,827 --> 01:13:24,628
+Şimdi bunları çözdükten sonra, baktıktan sonra tekrar anlayamadığınız, buna göre sorularınızı yapın. Anlayamadığınızı uygulamadan sonra gönderebilirsiniz.
+
+527
+01:13:25,846 --> 01:13:32,867
+Bura baktık, e üzeri x'i biliyoruz, ezbere x ile çaldık. Tangent x'i de yukarıda bulmuştuk, yerine koydum.
+
+528
+01:13:33,587 --> 01:13:35,927
+Tekrar tangent x'i yazdık, şunları da yazdık.
+
+529
+01:13:38,123 --> 01:13:58,923
+Ben birkaç terim kalsın, diğerini yazmıyorum. Diyemiyor musun? Sıfır olduğu için sıfıra gidiyor zaten. Yani onları artı nokta nokta diyebiliriz. Burada da öyle. En yüksek x kare var. x kare parantezini aldık. x kareler gitti. x yerine de sıfır korsak bir bölü çıkar. Dimitini bu şekilde hesaplayacağız. Devam ediyoruz.
+
+530
+01:14:00,331 --> 01:14:12,412
+e üzeri x eksi, e üzeri eksi x olduğuna göre, bunun limitini soruyor. Tamam, yani bunu burada yerine koyacaksınız. 0,0,0 limiti var. Ama hopliterle yapmayacağız tabii. Serilerle yapacağız.
+
+531
+01:14:13,251 --> 01:14:16,912
+e üzeri x'in yerine bunu koyacağız. e üzeri eksi x'in yerine de bunu koyacağız.
+
+532
+01:14:19,570 --> 01:14:27,150
+Bakalım, bundan bunu çıkarttık. Bu kaldı. x'e de böldük. Şu x'ler yine sadeleşti.
+
+533
+01:14:27,576 --> 01:14:28,695
+X'ler gitti.
+
+534
+01:14:29,855 --> 01:14:31,695
+X yerine 0 koyduk.
+
+535
+01:14:31,775 --> 01:14:32,316
+2 çıktı.
+
+536
+01:14:33,395 --> 01:14:33,576
+Evet.
+
+537
+01:14:34,515 --> 01:14:36,676
+Şimdi, bu testler bitti.
+
+538
+01:14:36,836 --> 01:14:40,635
+Ben, kendi bir uygulamalarıma bakayım.
+
+539
+01:14:40,796 --> 01:14:42,875
+Orada bir tane daha enteresan soru vardı.
+
+540
+01:14:42,994 --> 01:14:45,176
+Onu bulursam, bir getireyim bir dakika.
+
+541
+01:14:47,576 --> 01:14:48,655
+Bir bakalım.
+
+542
+01:14:50,895 --> 01:14:52,855
+Çok enteresan şeyler burada mıydı?
+
+543
+01:14:52,914 --> 01:14:53,975
+Bir dakika bakmak istiyorum.
+
+544
+01:14:56,203 --> 01:14:57,762
+Evet, bu şeylerdi.
+
+545
+01:15:02,378 --> 01:15:13,859
+Bunları daha sonra finale doğru filanda yine bunlardan çözeriz. Bakın, burada mıydı, burada yok. Bir dakika. Benim aradığım başka bir şey var, Bento [öğrenci]. Buna bakalım.
+
+546
+01:15:21,324 --> 01:15:25,084
+Bunu görüyorsunuz değil mi? Taylor ve Maclaurin seriler diye.
+
+547
+01:15:28,024 --> 01:15:29,283
+Görüyorsunuz değil mi bilgisayarda?
+
+548
+01:15:30,484 --> 01:15:31,123
+Görüyoruz hocam.
+
+549
+01:15:31,543 --> 01:15:35,283
+Şimdi burada vardı galiba bir soru, çok değişik bir soru vardı.
+
+550
+01:15:36,003 --> 01:15:37,824
+İnceledim de farklı bir soru olsun diye.
+
+551
+01:15:38,344 --> 01:15:39,984
+Şöyle bir hızlıca inceleyelim bunu da bari.
+
+552
+01:15:40,104 --> 01:15:40,904
+Ayrı bir notu bu.
+
+553
+01:15:43,163 --> 01:15:45,203
+Evet, şöyle bir göz geldi.
+
+554
+01:15:45,203 --> 01:15:46,364
+O assisti var mı hocam bu?
+
+555
+01:15:47,884 --> 01:15:48,864
+Bu mu? Yok.
+
+556
+01:15:49,355 --> 01:16:07,875
+Korun sonra. Bakalım. Bilmi görmeye koyalım. Bir bakarız. Yoksa sonra şey yapalım. Şuna bir bakmak istiyorum. Taylor, Maclaurin serisini başka bir anlatın. Bakıyorum. Evet. Mesela bir Taylor serisinin açılım formülü şudur. Şöyle hızlı bir özet yapalım madem açtık.
+
+557
+01:16:12,106 --> 01:16:16,468
+Taylor serisinin açılımı bu. Maclaurin serisine 0 koyuyoruz.
+
+558
+01:16:21,420 --> 01:16:30,619
+Hayır, bu başka bir tekrar. Onun için bu avest size koymuyorum. Tamam mı? Buradan çünkü aynı şeyle de benzer anlatımın belki farklı tarafı varsa.
+
+559
+01:16:30,720 --> 01:16:45,600
+E üzeri x'in seri akçinin mi bu? Kosinus x'in bu. Yazdık. Ha, şunun için açtım. Evet, şu değişik bir soru olduğu için şunu da çözelim. Dersimizi bitirelim. Onun için açtım ben.
+
+560
+01:16:46,443 --> 01:17:01,343
+Kük kök 12, 1.2'nin ikinci mertebe Taylor polinomu kullanarak yaklaşık değerini bulunduğunuz diyor. Çünkü her tür yaptık da bir de yaklaşık hesaplar kullanılmalı. Ne yapacakmışız biliyor musunuz? Bakın bunu da yapalım, içim rahat olsun.
+
+561
+01:17:02,423 --> 01:17:12,962
+Bundan sonra çözeceğimiz hep birbirinin paralel şeyi olur. Bir de bunu aveste koymama gerek yok. Yani zaten iki kere aynı konuyu koymaya gerek yok. Şu soru için dikkat etmişti, orada yoktu.
+
+562
+01:17:13,578 --> 01:17:19,979
+Bakın ne yapıyoruz? Bu fonksiyonun ikinci derece Taylor polinomu, ikinci derece Taylor polinomu şurada kesiyoruz.
+
+563
+01:17:20,578 --> 01:17:24,260
+Taylor formülü yukarıda var ya, şunun, bak yukarıya gelelim.
+
+564
+01:17:26,418 --> 01:17:28,559
+Taylor neredeydi? Bir dakika.
+
+565
+01:17:30,700 --> 01:17:34,619
+Bu Macdoran mesela, ikinci derece Macdoran deseydi burada kesecekti.
+
+566
+01:17:36,899 --> 01:17:39,319
+Taylor dediği zaman nerede keseceğiz?
+
+567
+01:17:41,420 --> 01:17:44,180
+Bir dakika. Bir aşağı geçelim.
+
+568
+01:17:47,200 --> 01:17:50,319
+Burada. Bu sıfır olunca A mı bu?
+
+569
+01:17:52,420 --> 01:17:55,480
+Sıfır olunca, Maclaurin, A olunca da Taylor.
+
+570
+01:17:56,019 --> 01:17:59,878
+Burada keseceğiz. Burada üçüncü türev de keselim diyor. Tamam mı? Bunu bir hatırlatmış olayım.
+
+571
+01:18:00,440 --> 01:18:03,180
+Seri sonuna kadar yazın demiyor. Yaklaşık hesapla yaparken.
+
+572
+01:18:04,519 --> 01:18:06,000
+Evet, bu sorumla tekrar gelelim.
+
+573
+01:18:08,331 --> 01:18:32,490
+Evet, bakalım. İkinci mertebe Taylor polinomini kullanarak yaklaşık değerini bulunduz. Küpçek x, a yerine 1 koyduk, türevini aldık, yine 1 koyduk. İkinci mertebe ikinci türevde bitiriyoruz. İkinci türevini aldık, bir daha 1 koyduk. 1, 1 bölü 3, eksi 2 bölü 9. Fonksiyonun yaklaşık değeri bu polinomun aldığı değeri eşittir diyoruz. Tamam mı?
+
+574
+01:18:33,228 --> 01:18:37,828
+Bir fonksiyon seçtik tabii, kükkük 1.2, yani kükkük x diye seçtik.
+
+575
+01:18:39,347 --> 01:18:45,488
+x eşittir 1 noktasına neden? 1.2 olduğu için bu civarda seçtik tamam mı?
+
+576
+01:18:45,648 --> 01:18:49,488
+2.1 olsaydı x eşittir 2 civarında seçerdik.
+
+577
+01:18:50,648 --> 01:18:53,648
+Buradan serideki kat sayıları yazdım.
+
+578
+01:18:53,648 --> 01:18:55,648
+Şimdi 1.2 koyunca...
+
+579
+01:18:56,043 --> 01:19:03,444
+Taylor polinomu yardımıyla, yaklaşık olarak hesaplıyoruz. Bu da bulunsun. Tamam mı? Bu da bulunsun.
+
+580
+01:19:04,064 --> 01:19:10,864
+Bunu korum internette sorun değil, tamam mı? Şu anda şu soruyu anlayıp, diğerleri tekrar oluyor.
+
+581
+01:19:11,543 --> 01:19:16,623
+Sık kullanılan Maclaurin serileri. Orada yazıyor, varsın da orada. Aynı nokta var zaten.
+
+582
+01:19:17,484 --> 01:19:21,524
+Farklı bir şey yok. Bu L1 artı x, artı tanjant x var.
+
+583
+01:19:23,884 --> 01:19:39,384
+Burada eksi x kare, bugün gördük zaten, eksi x'i bilince, eksi x kare bölü 3 koyuyoruz. Burada da bir sorun yok. Sinüs kare x var zaten, çözdük. Yaptık, aynı soru var. Çünkü notlar birbirine çok benzer tabii. Bazı farklılıklar vardır diye baktık.
+
+584
+01:19:40,743 --> 01:19:46,644
+Maclaurin serisinin genel terimi, eksi x'i açtık, eksi x'i tekrar koyduk. Bu da tamam.
+
+585
+01:19:48,875 --> 01:19:55,676
+Bu da bugün yaptı değil mi? Macdoran serisinin genel terimini buldunuz. Bugün çözdüğümüz, biraz önce çözdüğümüz sorunlarımız.
+
+586
+01:19:57,016 --> 01:20:01,016
+Farklı var mı? Burada belirsizlik var, sinir siksik koyuyoruz. Bu da gerek yok.
+
+587
+01:20:02,635 --> 01:20:10,736
+Evet. Bunları yazdık. Bunları da yerine koyduk. Yapmışız bu sorularınızı. Bir tane farklı gördüm, onun için yaptım.
+
+588
+01:20:10,736 --> 01:20:12,096
+Peki arkadaşlar.
+
+589
+01:20:12,748 --> 01:20:39,788
+Siz sorunuz var mı başka? Yok. Uygulamamızı yaptık bol bol tamam mı? Bundan sonra ne kadar çözsem benzerini çözeceğim artık. Yani çok güzel bir uygulama oldu. Çok farklı her türlü sorulardan çözmeye çalıştık. Anlatanım siz yine geçmiş sınav sorularına bakarsanız bunlardan bazıları karşımda çıkabilir. Peki. Sorunuz yoksa dersi bitiriyorum arkadaşlar.
+
+590
+01:20:40,779 --> 01:20:41,939
+Hadi hoşçakalın.
+
+591
+01:20:43,260 --> 01:20:44,260
+Haftaya görüşürüz.
+
+592
+01:20:44,959 --> 01:20:47,059
+Neydi? Hazırlık yapmak isteyenler için söylüyorum.
+
+593
+01:20:47,798 --> 01:20:50,359
+Parametrik denklemler, kutupsal koordinatlar.
+
+594
+01:20:53,479 --> 01:20:53,739
+Evet.
+
+595
+01:20:55,699 --> 01:20:58,460
+Dün arkadaşınız söylemişti, onu da tekrarlamış oldum.
+
+596
+01:20:58,460 --> 01:21:03,078
+Yani türev, integral, tamam mı? Yaklaşık hesap falan.
+
+597
+01:21:03,658 --> 01:21:04,658
+Art tajantlar.
+
+598
+01:21:05,291 --> 01:21:11,192
+Serilerin toplamı, çıkartılması bölümü yaptık işte. Bunu uyguluyoruz tabii. Onları uygulamak için anlattık tabii.
+
+599
+01:21:12,051 --> 01:21:24,070
+Evet. Peki. Siz yine bugün takıldığınız bir şey varsa, özellikle o hani mutlak değer x, o arkadaşları rica ediyorum, mutlak değer x küçük bir kez, hani x kareden, sıfırdan bire kadar dedi.
+
+600
+01:21:24,570 --> 01:21:31,310
+Onu bir daha şöyle emin bir şekilde varsa, bana haftaya tekrar derste müdahale etsin, bir daha tartışalım. Tamam mı?
+
+601
+01:21:31,756 --> 01:21:34,775
+Ben, yani eksi bir artı bir diye gördüm.
+
+602
+01:21:35,576 --> 01:21:37,536
+Beni ikna ederse tekrar sınıfta.
+
+603
+01:21:38,536 --> 01:21:38,695
+Evet.
+
+604
+01:21:41,695 --> 01:21:42,256
+Peki.
