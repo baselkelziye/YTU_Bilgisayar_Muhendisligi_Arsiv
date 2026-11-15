@@ -1,0 +1,1767 @@
+1
+00:00:54,771 --> 00:01:00,091
+İyi günler arkadaşlar. Sesimi duyuyor musunuz acaba?
+
+2
+00:01:57,780 --> 00:02:05,900
+Evet, bugün dersimize başlamadan evvel söz alıp konuşmak isteyen arkadaşımız var mı? Ya da soru sormak isteyen arkadaşımız?
+
+3
+00:02:09,972 --> 00:02:13,612
+Yoksa kaldığımız yerden dersimize devam edeceğiz.
+
+4
+00:02:18,900 --> 00:02:33,319
+Peki, şimdi dersimize kaldığımız yerden devam edelim. Geçen dersimizde bir vektör uzayının tabanından bahsetmiştik, boyutundan bahsetmiştik. Bu tanımları kısaca hatırlayarak dersimize devam edeceğiz.
+
+5
+00:02:35,819 --> 00:02:40,100
+Bir vektör uzayının tabanını şu şekilde tanımlamıştık arkadaşlar.
+
+6
+00:02:42,063 --> 00:02:48,524
+Bir vektör uzayı var elimizde, B gibi. Bir de T'de onun bir alt kümesi olsun demiştik.
+
+7
+00:02:49,243 --> 00:02:58,063
+Eğer T, B'nin lineer bağımsız alt kümesi ise, bunu geçen dersimizde lineer bağımsızlığı söylemiştik.
+
+8
+00:03:05,044 --> 00:03:30,124
+Alt vektör uzayı V'ye eşitse, yani V vektör uzayı T ile üretiliyorsa ya da geriliyorsa, bu iki şart sağlanıyorsa T'ye ne diyoruz? V'nin tabanı ya da bazı diyoruz. Bu taban bazla ilgili örnekler yapmıştık. Mesela genel olarak R üzeri N. R üzeri N'de bu aldığımız T kümesi bir tabandır. Bu iki şartın sağlandığı kolaylıkla görülür.
+
+9
+00:03:30,644 --> 00:03:39,564
+Biz buna standart taban diyoruz. Mesela R kübün standart tabanı nedir o zaman? Şu olacak değil mi? R kübün standart tabanı da şu.
+
+10
+00:03:50,195 --> 00:03:58,396
+Bu rekübün standart tabanı. Mesela benzer şekilde burada diğer örnekteki verilen küme de rekübün bir tabanıdır.
+
+11
+00:04:00,495 --> 00:04:08,036
+Yine matrislerden örnek vermiştik. Bunları geçen derste yaptığımız için geçiyorum.
+
+12
+00:04:09,315 --> 00:04:10,995
+Tabanla ilgili poinom.
+
+13
+00:04:11,376 --> 00:04:25,656
+Mesela V P2 ise, derecesi 2 ya da daha düşük olan bütün polinomların vektör uzayı ise, buradaki T'nin bu P2 için bir tavan olduğunu göstermiştik geçen dersimizde.
+
+14
+00:04:26,936 --> 00:04:36,436
+Benzer şekilde yine bu örneğimizde verilen T'nin reküp uzayı için tavan olup olmadığını araştırın diye bir sorumuz vardı.
+
+15
+00:04:37,172 --> 00:04:41,492
+Burada bir taban oluşturmadığını söylüyoruz.
+
+16
+00:04:42,752 --> 00:04:45,372
+Neden taban değil?
+
+17
+00:04:47,412 --> 00:05:02,512
+Bu verilen vektörler, verilen bu üç vektör, bunlara V1, V2, V3 dersek, lineer bağımsız olmadığı için, lineer bağımsız, yani şu eşitlik, eşitlik C1, C2, C3'ün 3'ü birden 0 olduğu zaman,
+
+18
+00:05:03,156 --> 00:05:27,275
+Sadece veya sadece bu durumda çözülebiliyorsa, eşitlik mevcutsa, o zaman lineer bağımsız diyoruz ama burada üçü birden sıfır olmadan da çözümler var. Sonsuz tane çözüm durumu var. Dolayısıyla lineer bağımsız olmadığından bu üç vektör, bu üç vektörden oluşan tek ümesi reküp için bir taban olamaz dedik.
+
+19
+00:05:32,084 --> 00:05:44,264
+V vektör uzayında, V'nin herhangi bir tabanındaki vektörlerin sayısına V'nin boyutu denir ve bu şekilde gösterilir demiştik.
+
+20
+00:05:44,264 --> 00:05:55,264
+Tabii bundan önce de şunu söyledik, hangi tabanını alırsak alalım V vektör uzayının hepsinde aynı sayıda vektör vardır.
+
+21
+00:05:59,348 --> 00:06:17,827
+boyut söylemek için herhangi bir tabandaki vektör sayısını söylememiz yeterli. Daha önceki taban sorularındaki örneklerimize bakarak vektör uzaylarının boyutlarından bahsedebiliriz.
+
+22
+00:06:24,339 --> 00:06:41,159
+Mesela şu örneğimizde, t bir taban, t bir taban, o zaman boyut, t iki nedir? Üçtür diyeceğiz değil mi? Tabandaki eleman sayılsa, herhangi bir tabandaki eleman sayılsa.
+
+23
+00:06:51,375 --> 00:07:17,295
+izi sıfıra eşit olan matrislerden oluşan alt uzay. Bu T onun için bir taban olduğunu gösterdik. O zaman burada boyut W nedir? Tabandaki eleman sayısı 3'dür değil mi? Tabii R kübün boyutu, R kübün herhangi bir tabanında 3 tane eleman olduğu için 3'tür değil mi?
+
+24
+00:07:17,779 --> 00:07:34,759
+R üzeri n'in boyutu, boyut R üzeri n, o da nedir? n'dir. Bu şekilde tabandan sonra tabandaki eleman sayısının boyut olduğunu söyleriz.
+
+25
+00:07:36,723 --> 00:07:50,704
+Şimdi bir teoremimiz var. Buna bakalım. V en boyutlu bir vektör uzayı olsun. Yani tabanında n tane eleman var. Aşağıdakiler sağlanır. Bakın, V'nin en boyutlu vektör uzayını biliyoruz.
+
+26
+00:08:01,875 --> 00:08:15,235
+V'nin bir alt kümesi, n tane elemandan oluşan. Dineer bağımsız ise, o zaman bu T'nin gerdiği uzay V'ye eşittir. Ve T, V'nin bir tabanıdır.
+
+27
+00:08:16,216 --> 00:08:23,875
+Bakın, biz V'nin en boyutlu uzay olduğunu biliyoruz. Tabanında n eleman olduğunu biliyoruz. Sonrasında...
+
+28
+00:08:24,627 --> 00:08:34,667
+N tane elemandan oluşan bir T alt kümesinin V'nin alt kümesinin lineer bağımsız olduğunu biliyorsak hemen taban olduğunu söyleriz.
+
+29
+00:08:34,867 --> 00:08:40,667
+Eğer o lineer bağımsızsa o vektör uzayını da geriyor demektir.
+
+30
+00:08:42,387 --> 00:08:48,687
+Benzer şekilde yine V en boyutlu bir vektör uzayı iken
+
+31
+00:08:49,460 --> 00:09:09,300
+Bir T, N tane elemandan oluşan, N tane elemandan oluşan bir T, alt kümesi, V vektör uzayını geriyorsa, o zaman hemen şunu söyleyebiliriz, T aynı zamanda lineer bağımsızdır, dolayısıyla V'nin tabanıdır.
+
+32
+00:09:15,827 --> 00:09:32,028
+Elinize en boyutlu bir vektör uzayı varsa, orada en tane elemandan oluşan lineer bağımsız alt küme aynı zamanda uzayı gelip dolayısıyla tabandır deriz.
+
+33
+00:09:33,028 --> 00:09:35,887
+En tane elemandan oluşan alt küme uzayı geliyorsa,
+
+34
+00:09:36,563 --> 00:09:44,903
+Yine hemen taban deriz. Uzayı geriyordur. O geriyorsa lineer bağımsızlık aynı zamanda tabandır deriz.
+
+35
+00:09:45,543 --> 00:10:02,403
+Demek ki en boyutlu bektör uzayda en tane elemandan oluşan alt kümenin, o biraz önce bahsettiğimiz taban şartlarından iki tane vardı ya, birisi lineer bağımsızlık ve diğeri de uzayı germe şartları.
+
+36
+00:10:02,868 --> 00:10:15,327
+En boyutlu vektör uzayında, yani V vektör uzayının boyutunu biliyorsak, ense o da, en tane elemandan oluşan alt kümenin lineer bağımsızlık olması yeterli taban olması için.
+
+37
+00:10:15,428 --> 00:10:24,928
+Ya da en tane elemandan oluşan alt kümenin uzaya gelmesi yeterli taban olmak için. Yani sadece bir tane şartın sağlanması yeterli.
+
+38
+00:10:25,812 --> 00:10:30,912
+En boyutlu vektör uzayında, en tane elemandan oluşan alt küme için.
+
+39
+00:10:32,672 --> 00:10:38,471
+Bir örneğimiz var, buna bakalım. R küpte üç tane vektörümüz var, bakın, A, B, C dedik.
+
+40
+00:10:40,512 --> 00:10:47,412
+Ve bu A, B, C'den oluşan T kümesini bir düşünelim. T'nin, R küpün bir tabanı olduğunu gösteriniz.
+
+41
+00:10:48,752 --> 00:10:50,971
+Biz, R küpün boyutunun üç olduğunu biliyoruz.
+
+42
+00:10:52,563 --> 00:11:16,883
+t'de de üç tane vektör var. O zaman biraz önceki söylediğimiz teoreme göre t'nin taban olduğunu göstermek için bu üç vektörün lineer bağımsız olduğunu göstermek yeterlidir. Bakın üç tane vektörü aldım. Eşit sıfır dedim lineer toplama. Sonra yerlerine yazdım ABC'yi. Sonra böyle bir homojen lineer denklem sistemi çıktı.
+
+43
+00:11:17,360 --> 00:11:25,280
+Bu denklem sistemini çözdüğünüz zaman tek çözüm sıfır çözümü K1, K2, K3 eşit sıfır olarak buluruz arkadaşlar.
+
+44
+00:11:27,860 --> 00:11:43,000
+Dolayısıyla bu T kümesi lineer bağımsızdır. R küp üç boyutlu olduğu için T lineer bağımsız alt kümede de üç tane eleman olduğu için otomatikman T'ye biz R küpün bir tabanıdır deriz.
+
+45
+00:11:44,052 --> 00:12:02,572
+Tabi burada T'nin sadece lineer bağımsızlığına baktık. İsterseniz lineer bağımsızlığa bakmadan bu T kümesinin R küpü gerdiğini de görerek taban olduğunu da söyleyebilirdiniz. Yani ilk olarak gerdiğine bakıp geriyorsa hemen taban diyebilirdik.
+
+46
+00:12:03,692 --> 00:12:08,851
+Bir başka örneğimiz arkadaşlar, yine uzayımız R küp, üç tane vektör aldık.
+
+47
+00:12:09,940 --> 00:12:34,720
+bu üç vektörden oluşan t kümesi, bu t kümesinin re küpün tabanı olduğunu gösterilir. Şimdi re küpün boyutunun üç olduğunu biliyoruz biz. Boyutunun üç olduğunu biliyoruz. T'de de üç tane vektör var. O zaman t'nin tabanı olduğunu göstermek için ya t'nin lineer bağımsız olduğunu göstermemiz lazım ya da t'nin ve
+
+48
+00:12:35,316 --> 00:12:46,776
+Yani R küpü gerdiğini göstermemiz lazım. Bu örneğimizde de T'nin R küpü gezdirdiğini, yani V vektör uzayını gerdiğini göstererek çözümlüyoruz.
+
+49
+00:12:49,936 --> 00:12:54,776
+Gerdiğini göstermek için V'den alınan herhangi bir U vektörü,
+
+50
+00:12:55,988 --> 00:13:07,128
+Yani R küpten alınan herhangi bir U vektörünün, bu T'deki bulunan U1, U2, U3 vektörlerinin bir lineer kombinezonu olarak yazılabilmesi gerekir.
+
+51
+00:13:07,128 --> 00:13:23,568
+Yani şöyle yazılabilmesi gerekir. Eğer böyle yazılabiliyorsa, bizler riskine R küpün her elemanı T'deki U1, U2, U3'ün bir lineer toplamı şeklinde yazılıyor. O halde T kümesi R küpü gerer.
+
+52
+00:13:23,967 --> 00:13:48,207
+deriz. Demek ki şu, şu şekilde yazılabilmeye bakacağız. Yani bunu sağlayan K1, K2, K3 değerleri var mı? Değer sayıları var mı? Bunu araştıracağız. Burada U1, U2, U3 vektörlerinin yerini, değerini yazarsak, K1, K2, K3'ü bilinmeyen, kabul eden, 3 bilinmeyenin 3 tane denklem karşımıza çıkar.
+
+53
+00:13:48,851 --> 00:14:16,111
+Bu lineer denklem sisteminin çözümü, yani K1, K2, K3 bulabiliyorsak, ne deriz? T, R küpü geliyor deriz. Bu sistemi çözdüğünüz zaman, K1'i böyle, K2'yi böyle, K3'ü böyle bulabiliyorsunuz. Dolayısıyla U1, U2, U3 vektörleri B'yi gerer. Yani T kümesi B vektör uzayını gerer.
+
+54
+00:14:17,524 --> 00:14:21,283
+Dolayısıyla, T, V'nin bir tabanıdır deriz.
+
+55
+00:14:24,980 --> 00:14:34,980
+Aslında bu şuradaki fazladan, bu fazladan, rekbibin zaten boyutunun 3 olduğunu biliyoruz.
+
+56
+00:14:36,840 --> 00:14:43,680
+Onu bilerek zaten sadece germenin yeterli olabileceğini söylemiş olduk.
+
+57
+00:14:45,720 --> 00:14:49,220
+Şimdi bir başka teoremimiz var arkadaşlar.
+
+58
+00:14:50,280 --> 00:14:52,019
+Ve en boyutlu bir vektör uzayı
+
+59
+00:14:52,628 --> 00:15:16,408
+t'de, v'nin bir tabanı olsun. O zaman, v'nin her v vektörü bu şekilde yazılabilir değil mi? Taban olduğu için, t, v'nin her vektörü tabandaki vektörlerin bir diren toplanma şeklinde yazılabilir. Bu teorem ne diyor? Bu biçimde tek türlü yazılabilir. Tek türlü yazılabilir.
+
+60
+00:15:17,172 --> 00:15:38,812
+Bunun ispatını şu şekilde yapabiliriz. Zaten yazılabildiğini biliyoruz. Taban tanımından biliyoruz. Bu yazılışın tekniğini görelim şimdi. V'yi, V'yi, V1, V2, nokta, nokta, V'nin lineer toplamı şeklinde hem böyle hem de böyle yazalım. İki farklı şekilde yazıldığını kabul ederek buradaki C'lerin D'lerle eşit olduğunu görelim.
+
+61
+00:15:39,251 --> 00:15:46,651
+Bu iki eşitlikten bunları taraf tarafa çıkartırsak, birinciden ikinciyi çıkartırsak, şunu elde ederiz arkadaşlar.
+
+62
+00:15:49,091 --> 00:15:58,271
+Bakın, bir tane real sayı V1 ile çarpmışız. Real sayı V2 ile çarpmışız. Real sayı VN ile çarpmışız. Sıfır olmuş.
+
+63
+00:15:58,271 --> 00:16:06,331
+Bu V1, V2, VN taban. Dolayısıyla lineer bağımsız oldukları için V1, V2, VN.
+
+64
+00:16:07,124 --> 00:16:31,524
+vektörleri, bir başka de işte t kümesi, t alt kümesi lineer bağımsız olduğundan ne olacak bu sabitler? Hep sıfıra eşit olacak değil mi? Sıfıra eşit olmak zorunda lineer bağımsız olduğundan. Hep sıfıra eşit olursa c1, d1'e eşit olacak, c2, d2'ye eşit olacak. Bu şekilde ci'ler d'lere eşit olur.
+
+65
+00:16:32,148 --> 00:16:36,648
+Demek ki tek türlü bu yazılış, tek türlü deriz.
+
+66
+00:16:41,779 --> 00:16:46,500
+Şimdi biraz koordinatlardan ve geçiş matrislerinden bahsedelim.
+
+67
+00:16:47,120 --> 00:16:54,420
+Burada V vektör uzayı en boyutlu bir vektör uzayı olsun.
+
+68
+00:16:55,920 --> 00:16:59,080
+Dolayısıyla her tabanında en tane vektör olduğunu biliyoruz.
+
+69
+00:16:59,860 --> 00:17:13,139
+Burada tabanları incelerken tabanlardaki vektörlerin sırasını önemsememiştik şu ana kadar. Bu kısımda, bu işleyeceğimiz kısımda vektörlerin sırasına da önem vererek bazı kavramlardan bahsedeceğiz.
+
+70
+00:17:14,039 --> 00:17:23,480
+Tabandaki vektörlerin sırasını önemsersek vektör uzayının sıralı tabanlarından söz edebiliriz.
+
+71
+00:17:27,188 --> 00:17:51,008
+V'nin sıralı tabanı ise, burada V1, V2, Vn'nin bir sıralanışı var değil mi? Birinci vektör, ikinci vektör, nokta nokta, eninci vektör gibi düşünüyoruz. Burada bakın, T2 ile V1 ile V2'nin yerini değiştirmişiz. Bu da artık V'nin başka bir sıralı tabanıdır.
+
+72
+00:17:51,508 --> 00:17:57,688
+Yani vektörün tabandaki sırasını değiştirince başka bir sıralı tabanı elde ediyoruz.
+
+73
+00:17:57,807 --> 00:18:00,987
+Aslında T1 ile T2 de V'nin birer tabanı.
+
+74
+00:18:01,188 --> 00:18:11,768
+Ama sıralı taban kavramını devreye soktuğumuzda sıralı taban olarak ikisi birbirinden farklı sıralı tabandırlar.
+
+75
+00:18:13,288 --> 00:18:15,447
+Şimdi bir tanımımız var arkadaşlar.
+
+76
+00:18:16,435 --> 00:18:30,195
+ve en boyutlu bir vektör uzayı olarak veriliyor bize. T'de, T'de şu şekilde V1, V2, Vn vektörlerinden oluşmuş. V'nin, V'nin nesi olsun? Bir sıralı tabanı olsun.
+
+77
+00:18:31,795 --> 00:18:40,935
+Dolayısıyla, biraz önceki teoremden, hani tabandaki vektörlerin,
+
+78
+00:18:41,344 --> 00:18:44,403
+cinsinden tek türlü yazılır demiştik ya.
+
+79
+00:18:45,324 --> 00:18:52,204
+İşte o biraz önceki teoremden, V'nin her V vektörü,
+
+80
+00:18:52,524 --> 00:19:05,384
+V'nin her V vektörü, tek türlü olarak, bu T tabanındaki V1, V2, Vn'nin bir lineer toplamı şeklinde böyle ifade edilir.
+
+81
+00:19:06,384 --> 00:19:07,544
+Bu şekilde ifade edilir.
+
+82
+00:19:10,451 --> 00:19:23,371
+Ayrıca şunu söylüyoruz, V vektörünün T sıralı tabanına göre koordinat vektörü şöyle gösterilecek.
+
+83
+00:19:26,692 --> 00:19:31,231
+V'nin T sıralı tabanına göre koordinat vektörü.
+
+84
+00:19:31,231 --> 00:19:32,771
+Bu neymiş?
+
+85
+00:19:37,587 --> 00:19:48,048
+kat sayılardan oluşan, yani c1, c2, nokta, nokta, cn'den oluşan bir vektör oluyor.
+
+86
+00:19:48,048 --> 00:19:58,048
+Bir kez daha söylüyorum. V vektörünün t sıralı tabanına göre koordinat vektörü,
+
+87
+00:20:05,748 --> 00:20:13,347
+Buradaki C1, C2.cn kas tayılarından oluşan vektör.
+
+88
+00:20:14,548 --> 00:20:17,488
+B'nin T tabanına göre koordinat vektörü.
+
+89
+00:20:19,988 --> 00:20:32,427
+Ayrıca buradaki C1.cn'ye, yani B'nin T sıralı tabanına göre koordinat vektörün bileşenlerine,
+
+90
+00:20:33,491 --> 00:20:39,331
+Ne diyormuşuz? V vektörünün t tabanına göre koordinatları diyoruz.
+
+91
+00:20:41,571 --> 00:20:48,331
+Tamam mı? Bu koordinat vektöründeki o elemanlara, c1, c2 nokta nokta cn'ye ne diyormuşuz?
+
+92
+00:20:49,151 --> 00:20:53,091
+V vektörünün t tabanına göre koordinatları diyoruz.
+
+93
+00:20:53,091 --> 00:20:54,091
+Örneğin.
+
+94
+00:21:00,435 --> 00:21:05,776
+Şimdi, R küp uzayını düşünelim, V vektör uzayı olarak R küp uzayını düşünelim.
+
+95
+00:21:06,435 --> 00:21:13,375
+Ve U1, U2 böyle olmak üzere, şu sıralı tabanını, T sıralı tabanını ele alalım.
+
+96
+00:21:14,036 --> 00:21:16,375
+Bu T'nin bir taban olduğunu görebilirsiniz.
+
+97
+00:21:17,096 --> 00:21:23,195
+T'yi bu şekilde, U1, U2, U3 olarak, sıralı taban olarak düşünüyorum.
+
+98
+00:21:27,988 --> 00:21:32,867
+U, rekümün, yani V'nin bir elemanı.
+
+99
+00:21:34,988 --> 00:21:38,988
+Biz burada, şu içerideki U olacak.
+
+100
+00:21:42,728 --> 00:21:49,367
+U'nun, bu verilen U'nun, T sıralı tabanına göre koordinat vektörünü hesaplayalım.
+
+101
+00:21:50,708 --> 00:21:51,728
+Ne yapacağız U'yu?
+
+102
+00:21:51,728 --> 00:21:52,728
+U'yu biz.
+
+103
+00:21:53,748 --> 00:21:58,268
+Bu t'deki u1, u2, u3'ün lineer toplamı şeklinde yazacağız.
+
+104
+00:21:59,548 --> 00:22:05,448
+İşte böyle yazdıktan sonra şu k1, k2, k3 kat sayılarını bulacağız.
+
+105
+00:22:06,288 --> 00:22:16,368
+Bu kat sayılardan oluşan vektör, u'nun t tabanına göre koordinat vektörü olur.
+
+106
+00:22:18,368 --> 00:22:19,588
+Tamam mı arkadaşlar?
+
+107
+00:22:22,612 --> 00:22:50,132
+Bu sabitleri bulacağız. Şimdi yazalım yerine U'nun, U1'in, U2'nin, U3'ün değerlerini yerine yazalım. U da buydu. Buradan üç binin melini, üç tane denklem oluşur. Bu sistemi çözerseniz K1'i böyle, K2'yi böyle, K3'ü de böyle bulursunuz. O zaman, o zaman, B'nin T tabanına göre, sıralı tabanına göre koordinat, hep B diyoruz. Buraya yazdığımız için U, düzeltelim bunları.
+
+108
+00:22:51,188 --> 00:23:04,928
+U'nun T tabanına göre koordinat vektörü, bu da neydi? K1, K2, K3'tü. Neye eşit olacak? 1, eksi 1, 1'e eşit olacak.
+
+109
+00:23:05,548 --> 00:23:12,587
+Bu şekilde bir vektörün verilen sıralı tabana göre koordinat vektörünü bulabiliyoruz.
+
+110
+00:23:16,276 --> 00:23:37,016
+Şimdi, bir V vektörü düşünelim, en boyutlu olsun bu vektör uzayı, V vektör uzayı, en boyutlu bir vektör uzayı olsun, onun iki tane sıralı tabanı düşünelim. Birine S diyoruz, S sıralı bir taban, diğerine de T diyorum arkadaşlar. T de başka bir sıralı taban, tamam mı?
+
+111
+00:23:44,948 --> 00:24:11,608
+Her bir vektörü, t sıralandığı tabandaki vektörler neler? V'iler. Bu V'leri, V'lerin, mesela V1'in, mesela V2'nin, bunların her birinin S sıralı tabanına göre koordinat vektörlerini hesaplıyorum. Mesela V'inin S sıralı tabanına göre koordinat vektörü bu olsun. Tamam mı arkadaşlar? Biraz önce gördük.
+
+112
+00:24:12,211 --> 00:24:22,112
+Bir vektörün bir tabana göre, sıralı tabana göre koordinat vektörünü biraz önce gördük.
+
+113
+00:24:24,792 --> 00:24:38,652
+İşte her bir Vİ için elde ettiğimiz bu koordinat vektörlerini sutun kabul eden, mesela bu V1 için.
+
+114
+00:24:39,796 --> 00:24:43,756
+B1'in S tabanına göre koordinat vektörü.
+
+115
+00:24:43,756 --> 00:24:46,596
+Şu.
+
+116
+00:24:50,579 --> 00:25:06,379
+V2'nin S tabanına göre koordinat vektörü. Bu şekilde devam ederek, en son bu da VE'nin S tabanına göre koordinat vektörü.
+
+117
+00:25:06,379 --> 00:25:11,379
+İşte bunları sütun kabul eden matrisi elde ediyoruz arkadaşlar.
+
+118
+00:25:17,011 --> 00:25:31,011
+S sıralı tabanına göre koordinat vektörlerini sütun kabul eden bu matrise, biz T tabanından S tabanına geçiş matrisi deriz ve bu şekilde gösteririz.
+
+119
+00:25:32,851 --> 00:25:38,851
+Bakın altta T var, T tabanından S tabanına geçiş dediğimiz için altta T var, üstte S var.
+
+120
+00:25:43,028 --> 00:25:56,807
+Mesela s ve t tabanları verildiği zaman biz t'den s'ye geçiş matrisini tanımladık. Benzer şekilde s tabanından t tabanına geçiş matrisi de tanımlanır. O zaman da ne yapacağız?
+
+121
+00:25:57,367 --> 00:26:08,248
+S'nin vektörlerini t'nin t tabanına göre koordinat vektörlerini bularak işlem yapacağız. Bakın burada bir örneğimiz var.
+
+122
+00:26:08,915 --> 00:26:27,675
+R, 3 boyutlu R küp uzayını düşünelim, 3 boyutlu R küp uzayını. Orada iki tane sıralı taban B1 ve B2 vermişiz. Biz B1 sıralı tabanından B2 sıralı tabanına geçiş matrisini bulacağız önce. Tamam mı? Bu sorumuzla.
+
+123
+00:26:28,275 --> 00:26:36,355
+Sonrasında da ne yapacakmışız? Bir tane vektör var, V vektörü. Bunu B2 sıralı tabanına göre koordinat vektörünü bulacağız.
+
+124
+00:26:42,003 --> 00:27:04,543
+Peki, şimdi biz B1'den B2'ye geçiş maddesini bulacağımız için ne yapacağım? B1'deki vektörleri, B1'deki vektörler de şunlar. Buna mesela S1, S2, S3 diyelim. Tamam mı?
+
+125
+00:27:07,508 --> 00:27:27,428
+B2'deki de, buna da T1, T2, T3 diyelim. B1'den B2'ye geçiş matrisini bulacağım için, mesela alacağım S1'i, ne yapacağım? Şunların lineer toplamı şeklinde yazacağım önce, değil mi?
+
+126
+00:27:35,251 --> 00:27:36,092
+Bakın yazın.
+
+127
+00:27:40,307 --> 00:28:01,728
+S1'in B2 tabanına göre koordinat vektörünü bulmak için, şu en son altını çizdiğim ifade de neleri bulmam lazım arkadaşlar? A1, A2, A3'ü bulmam lazım. Sonra S2'nin B2 tabanına göre koordinat vektörlerini bulmam lazım. Onu da şu eşittikten bulacağım. B1, B2, B3 diye.
+
+128
+00:28:07,220 --> 00:28:10,880
+B2 tabanına göre koordinat vektörünü bulacağım.
+
+129
+00:28:13,140 --> 00:28:19,060
+Bunu da şu eşitlikten C1, C2, C3 olarak bulacağım arkadaşlar.
+
+130
+00:28:20,540 --> 00:28:33,120
+Şimdi burada birinci denklemde, birinci denklemde bakın, birinci denklemde yerine yazarsak T1, T2, T3'ü, T1, T2, T3.
+
+131
+00:28:33,587 --> 00:28:57,307
+Şu değerler, T1 bu, T2 bu, T3 bu. Bunları yerine yazarsak, bu ifadeyi buluruz. Tabi S1 de ne? S1 de şu. Şu S1. Buradan, buradan bu denklem sistemi elde edeceğiz. Tabi çözdüğümüz zaman zaten burada hemen gözüküyor değil mi?
+
+132
+00:28:57,743 --> 00:29:04,523
+A1 çarpı 0, A2 çarpı 1, A3 çarpı 0, o zaman A2 ne olur? 1 olacak hemen.
+
+133
+00:29:06,183 --> 00:29:15,683
+A2 1, A3 ne? Şuradan baktığınız zaman bunlar 0 olduğu için A1 0, A2 1, A3 0 olarak bulunur.
+
+134
+00:29:15,783 --> 00:29:20,144
+Bu şekilde S1'in B2 tabanına göre koordinat vektörünü buluruz arkadaşlar.
+
+135
+00:29:21,107 --> 00:29:44,047
+Benzer şekilde S2'nin B2 tabanına göre, B3 tabanına göre bulduktan sonra, işte bunları şöyle sütun kabul eden matris artık bizim M matrisi B1 tabanından B2 tabanına geçiş matrisi arkadaşlar. Böyle buluyoruz.
+
+136
+00:29:44,047 --> 00:29:47,047
+Ya da şöyle bir yol izliyoruz.
+
+137
+00:29:47,955 --> 00:30:13,175
+Daha pratik. Şuradaki, şuna yıldız diyeyim. Bu yıldızdaki denklemleri şöyle yazdıktan sonra, bunlardan, bunlardan, bu denklemlerin her biri, üç bilinmeyen, üç denklemden oluşacak. Değil mi? İki tane lineer denklem sistemi olacak. Şu matrisi oluşturuyorum arkadaşlar. Bakın.
+
+138
+00:30:13,619 --> 00:30:37,359
+T1, T2, T3, sonra dayanık S1, S2, S3'ü yazıyorum. Bakın yerlerine yazdım. T1, T2, T3 değerlerine yazdım. Sonra S1, S2, S3'ü yerlerine yazdım. Sonra ne yaptım biliyor musunuz? Şu birinci kısımda standart tabanı elde ettik.
+
+139
+00:30:38,067 --> 00:30:49,927
+Zaten şunu yapıyoruz, satırca indirgenmiş eşelon forma, bakın satırca indirgenmiş eşelon formu, şu birinci kısımda satırca indirgenmiş eşelon form hep bu tiptir. Değil mi?
+
+140
+00:30:50,607 --> 00:31:00,327
+Sıfırdan farklı ilk eleman bir, birin bulunduğu sütundaki diğer elemanlar sıfır. Sıfırdan farklı ilk eleman bir, birin bulunduğu sütundaki diğer elemanlar sıfır.
+
+141
+00:31:04,660 --> 00:31:16,380
+düzenlediğimiz matrisin birinci kısımda neyi elde ediyorum ben? Satırca indirgenmiş eşelon formülü elde ediyorum.
+
+142
+00:31:20,819 --> 00:31:42,719
+Aslında bu tabii sadece birinci kısım değil de, bütün matrisin de satırca indirgenmiş formudur. Şöyle de söyleyebiliriz, yani bu oluşturduğumuz şu matris var ya, bunu satırca indirgenmiş eşelon forma getiriyoruz.
+
+143
+00:31:42,719 --> 00:31:48,399
+O zaman şurada neyi elde edeceğiz?
+
+144
+00:31:49,011 --> 00:32:06,011
+prim matris elde edeceğiz doğal olarak. İşte şuradaki kısım, yani şu kısım bize neyi verecek? B1 tabanından B2 tabanına geçiş matrisini verecek. Böyle de bulabiliriz. Ya da tek tek B1'in...
+
+145
+00:32:06,579 --> 00:32:15,059
+B1'deki vektörlerin B2 tabanına göre koordinat vektörlerini bularak, onları sütun kabul eden matrisi oluşturarak da bulabiliriz.
+
+146
+00:32:15,599 --> 00:32:25,139
+Şimdi B şıkkına gelelim. Sorunun B şıkkında da bir vektör vardı. Bu B vektörünün B2 sıralı tabanına göre koordinat vektörünü bulun.
+
+147
+00:32:25,759 --> 00:32:32,539
+Bu B2'yi nasıl yazacağız? B2 aslında B2 tabanına göre dediğine göre şöyle.
+
+148
+00:32:33,039 --> 00:32:56,519
+A1, T1, artı A2, T2, artı A3, T3 olarak yazacağız. Buradan, B2'nin, B2 tabanına göre koordinat vektörü, A1, A2, A3 olarak bulunur. Böyle söylemiştik.
+
+149
+00:33:00,019 --> 00:33:27,279
+Mesela burada örnek de yapmıştık bununla ilgili. Örnek de yapmıştık. Bu şekilde bulacağız. Ama burada geçiş matrisini kullanarak daha kolay da bulabileceğiz. İşte bu ilk şeyimiz normal yolla bulma. Böyle bulabiliriz normal yolla. Bir de bunu geçiş matrisiyle bulacağız. Onu da şu teoremle söylüyoruz arkadaşlar önce. Teoremi verelim.
+
+150
+00:33:27,663 --> 00:33:46,083
+ve en boyutlu bir vektör uzayı, s ile t, v'nin iki sıralı tabanı olsunlar. Bir v vektörünün, s tabanına göre koordinat vektörü, bakın, t'den s'ye geçiş matrisi, sonra v'nin t tabanına göre koordinat vektörüdür.
+
+151
+00:33:47,183 --> 00:33:54,963
+Biraz önceki örnekte, biz v'nin, v'nin, b2 tabanına göre koordinat vektörünü bulmuştuk, şu.
+
+152
+00:33:56,531 --> 00:34:02,391
+Bu teoremi kullanarak şimdi bulalım. Yani şu ifadeyi kullanarak bulalım.
+
+153
+00:34:03,371 --> 00:34:03,711
+Tamam mı?
+
+154
+00:34:05,011 --> 00:34:13,911
+Burada ne gerekiyor bize? Şu gerekiyor. Bunu zaten A şıkkından bulmuştuk. Değil mi? İşte şu matris.
+
+155
+00:34:14,911 --> 00:34:22,211
+Bir de ne gerekiyor arkadaşlar? Burada şu. V'nin B1 tabanına göre koordinat vektörü.
+
+156
+00:34:22,708 --> 00:34:38,268
+V'nin B2 tabanına göre koordinat vektörünü şu şekilde bulduğunuz zaman artık V'nin B2 tabanına göre koordinat vektörünü bu teorem yardımıyla matris çarpı V'nin B1 tabana göre koordinat vektörü.
+
+157
+00:34:38,807 --> 00:34:44,967
+A şıkkında bulduğumuz dönüşüm matrisi, bu da şimdi bulduğumuz V'nin B1 tabana göre koordinat vektörü.
+
+158
+00:34:50,003 --> 00:34:53,683
+3 gibi bulmuş oluyoruz. Bakın 2, 1, 3. Tamam mı?
+
+159
+00:34:54,483 --> 00:35:05,543
+Tabii burada şu soru gelebilir aklınıza. Ben bu matrisle çarparak bulurken, ben zaten B1 tabanına göre koordinat vektörünü de araştırıyorum.
+
+160
+00:35:06,063 --> 00:35:13,603
+Onun için zaman kaybedeceğime direkt olarak B2 tabanına göre koordinat vektörünü bulayım da diyebilirsiniz.
+
+161
+00:35:14,260 --> 00:35:38,600
+Doğru da dersiniz. Ama bazen olur ki ne? Elinizden matris mevcuttur. Aynı zamanda o vektörün B1 tabanına göre koordinat vektörü de mevcuttur. Mesela B1 tabanı standart tabansa hemen standart tabanına bakarak hemen koordinat vektörünü hemen yazabilirsiniz. Bir de elinizde böyle A şıkkı gibi dönüşüm maddesi varsa hemen ikisini çarpıp
+
+162
+00:35:38,771 --> 00:35:46,412
+B2 tabanına göre koordinat vektörünü bulmak size daha cazip gelebilir, zaman açısından daha uygun gelebilir.
+
+163
+00:35:48,251 --> 00:36:04,931
+Şimdi bir başka teoremin şu şekilde, yine en boyutlu bir vektör uzayı S ve T'de B'nin iki sıralı tabanı olsunlar.
+
+164
+00:36:05,344 --> 00:36:18,583
+T'den S'ye geçiş matrisi bu idi. Bu matrisin tersi, yani inversi, mevcuttur diyoruz. Bakın, T'den S'ye geçiş matrisinin inversi de neye eşitmiş arkadaşlar?
+
+165
+00:36:20,224 --> 00:36:31,463
+S'den T'ye geçiş matrisidir. Tamam mı? S'den T'ye geçiş matrisidir. Bunu biraz önce verilen örnekte görelim. Biraz önceki verilen örnekte, bakın bu matris.
+
+166
+00:36:32,148 --> 00:36:38,048
+B1 tabanından B2 tabanına geçiş matrisi. Onu bulmuşuz biz.
+
+167
+00:36:40,128 --> 00:36:44,908
+Şimdi bu söylediğimiz ifadeyi orada gözlemleyelim.
+
+168
+00:36:44,908 --> 00:36:45,868
+Tamam mı?
+
+169
+00:36:48,188 --> 00:36:48,908
+Şunu...
+
+170
+00:36:49,168 --> 00:37:00,367
+hesaplayalım. B2'den B1'e geçiş matrisini hesaplayalım. Burada biz B1'den B2'ye geçişi bulmuşuz. Şimdi B2'den B1'e geçiş matrisini bulacağız. Bunların birbirinin tersi olduğunu göreceğiz.
+
+171
+00:37:00,367 --> 00:37:12,367
+Aynı yolla, bakın bunları oluşturup, şu pratik yolla düzenlediğimiz zaman bunu satırca indirgenmiş eşelon forma zaten...
+
+172
+00:37:13,331 --> 00:37:32,331
+getirirsek, satırca indirgen bir şeşon formuna, şu bize neyi verecek arkadaşlar? B2'den B1'e geçiş maddesi, tamam mı? İşte bununla, bununla, bu maddesi çarpacağız. Tamam mı? Bu maddesi çarparsanız,
+
+173
+00:37:32,916 --> 00:37:45,795
+Birim matrise eşit olduğunu görebilirsiniz. Siz sonra bunları alıp yazın. Dolayısıyla B1'den B2'ye geçiş maddesinin tersi, B2'den B1'e geçiş maddesidir deriz.
+
+174
+00:37:51,699 --> 00:38:12,239
+Evet, konu olarak bu bölümde bu kadar konumuz. Şimdi bu bölümle ilgili bazı örnekler yaparak dersin geri kalan kısımda bu şekilde değerlendireceğiz. Yine yazdığımız bazı örnekleri sizin düşünmeniz için bir süre verebiliriz. Sonra birlikte yapacağız.
+
+175
+00:38:15,476 --> 00:38:24,076
+Şöyle bir sorumuz var. İkinci mertebeden tüm ters simetrik matrislerin kümesi ne olsun diyoruz? W olsun diyoruz.
+
+176
+00:38:28,115 --> 00:38:51,996
+B'deki tüm 2x2 matrislerin vektör uzayı olan M2x2'nin, şimdi W'daki tüm 2x2 matrislerin vektör uzayı, vektör uzayının M2x2'nin alt uzayı olup olmadığını göstereceğiz.
+
+177
+00:38:55,635 --> 00:39:14,596
+Kısacası şunu göstereceğiz. Yani, V'nin, W'nun, bu W neymiş? Tüm ters simetrik matrislerin kümesi.
+
+178
+00:39:17,096 --> 00:39:18,596
+Ters simetrik...
+
+179
+00:39:19,891 --> 00:39:24,851
+Matris ne ediyorduk? Transpozesi eksilisine eşitse.
+
+180
+00:39:28,711 --> 00:39:33,891
+Mesela şu köşegene göre simetrik olan elemanlar birbirinin zıt işaretlisi olacaktı.
+
+181
+00:39:36,651 --> 00:39:40,891
+Mesela burada A varsa burada eksi A olacaktı.
+
+182
+00:39:41,811 --> 00:39:43,788
+Bir de ters simetrik matrisle...
+
+183
+00:39:44,083 --> 00:39:52,324
+transpozesi eksilisyen için şu köşegen üzerindeki elemanlar ne olacaktı? Sıfır eşit olmak zorunda olacaktı.
+
+184
+00:39:53,324 --> 00:40:03,463
+İşte W dediğimiz bu M2 çarpı 2'deki yani 2 çarpı 2 matrislerin içinde ters simetrik olan bütün matrislerin kümesi.
+
+185
+00:40:03,463 --> 00:40:07,563
+İşte bu küme. Tamam mı?
+
+186
+00:40:12,659 --> 00:40:26,379
+Biz bunun, bu W kümesinin M2 çarpı 2, bunun vektör uzayını olduğunu biliyoruz biz.
+
+187
+00:40:32,403 --> 00:40:33,284
+Alt uzaya.
+
+188
+00:40:36,144 --> 00:40:39,003
+Olup olmadığını araştırın diyoruz. Tamam mı?
+
+189
+00:40:40,164 --> 00:40:53,724
+Bütün ters simetrik matrislerden oluşan W kümesinin, bu W kümesi M2 çarpı 2'nin nesidir? Bir alt kümesidir. Boş kümeden farklı bir alt kümesidir.
+
+190
+00:40:56,275 --> 00:41:03,615
+Bu W'nun M2 çarpı 2'nin bir alt uzay olduğunu gösteriniz diye bir sorumuz var.
+
+191
+00:41:06,596 --> 00:41:11,115
+Şimdi geçen haftaki dersimizde biz alt uzayı söylemiştik değil mi?
+
+192
+00:41:13,036 --> 00:41:19,875
+Alt uzay olma için kriterler vermiştik. Mesela iki tane şartlı kriterimiz vardı. O neydi?
+
+193
+00:41:23,188 --> 00:41:50,048
+eleman W için, şuna bakmak gerekiyordu, A artı B eleman W mu? Değil mi? Sonra her A eleman W ile her C eleman R sayısı için C çarpı A eleman W mu? Bu ikisine baktığımız zaman, eğer bu iki şah sağlanıyorsa, buna iyi,
+
+194
+00:41:50,835 --> 00:42:01,115
+Şuna ikiyi dersek, ne deriz? Bu iki şarj sağlanıyorsa, W, M2 çarpı ikinin bir alt uzayıdır deriz.
+
+195
+00:42:02,575 --> 00:42:12,115
+Bakalım, bakın iki tane eleman aldım, W'dan. Mesela bir tanesini böyle aldım, sıfır birinci köşegen, diğer köşegen...
+
+196
+00:42:12,639 --> 00:42:38,940
+üzerindeki elemanlar da birbirinin zıt işaretlisi. Bir başka W'dan B gibi bir maddesi aldım. O da böyle aldım. Bir de K skaleri aldım. Birinci şarta bakıyoruz. Bunların toplamını aldım. Toplamı da bakın. Şuradaki eleman birbirinin zıt işaretlisi. Esas köşegen üzerindeki elemanlar da sıfır. C ile skaler çarpıma bakarsak bakın.
+
+197
+00:42:39,668 --> 00:42:56,068
+Birbirinin zıt işaretçisi, esas köşegen üzerindeki elemanlar sıfır. Dolayısıyla hem A'nın artı B, hem de C çarpı A, W'nun bir elemanıdır. Dolayısıyla W, M2 çarpı 2'nin bir alt uzayıdır deriz.
+
+198
+00:43:04,692 --> 00:43:16,112
+Şimdi de şöyle bir sorumuz var. W bu sefer bütün simetrik matrislerden oluşan, yani bütün simetrik matrislerin kümesi W.
+
+199
+00:43:19,412 --> 00:43:29,112
+Yalnız burada Mn çarpı n alıyoruz V vektör uzay olarak. Bu ne demek? Eninci mertebeden kare matrislerin kümesi D.
+
+200
+00:43:30,228 --> 00:43:37,188
+Bir başka deyişte n çarpı n mertebesinden bütün matrislerin kümesine v dedik. Bu v bir vektör uzayıdır.
+
+201
+00:43:38,808 --> 00:43:48,648
+İşte w da bu v'deki yani bütün n. mertebeden simetrik olan matrislerin kümesi w.
+
+202
+00:43:52,192 --> 00:44:03,551
+V'deki toplama ve skalerle çarpma işlemlerine göre bir alt uzayı olduğunu gösteriniz. Sorumuz böyle. Herhalde anlaşıldı soru. Evet, düşünün bakalım.
+
+203
+00:45:28,500 --> 00:45:29,460
+Yapan var mı?
+
+204
+00:45:40,755 --> 00:45:52,855
+Birine soralım bakalım. [öğrenci], [öğrenci], [öğrenci] biçim isimli öğrenci arkadaş. Ne düşünüyorsun bu soruda [öğrenci]?
+
+205
+00:46:02,963 --> 00:46:08,103
+[öğrenci]. Bir düşüncen var mı [öğrenci]?
+
+206
+00:46:19,251 --> 00:46:23,651
+[öğrenci]. Burada mı? Sınıfta mı [öğrenci]?
+
+207
+00:46:30,099 --> 00:46:33,680
+Yoksa siz benim sesimi duymuyor musunuz geçen haftaki gibi?
+
+208
+00:46:43,219 --> 00:46:44,639
+Evet, başka birine.
+
+209
+00:46:47,500 --> 00:46:51,619
+[öğrenci].
+
+210
+00:46:52,579 --> 00:46:54,159
+Burada mısın [öğrenci]? Ses ver.
+
+211
+00:46:56,719 --> 00:46:58,779
+Ya da yaz buradayım de.
+
+212
+00:47:02,000 --> 00:47:07,759
+Yani sen sistemi açmışsın ama başında mısın sen [öğrenci]?
+
+213
+00:47:10,931 --> 00:47:32,311
+Allah Allah. Kaç kişi söyledik? Millet yok. Geziyorlar halde. Evet [öğrenci], sana simetrik matris ne demek onu sorsak ne dersin? Simetrik matris ne? Şimdi her şeyden önce simetrik matrisi bilmek gerekir değil mi?
+
+214
+00:47:40,307 --> 00:47:45,867
+[öğrenci]'ya soralım. [öğrenci], [öğrenci], [öğrenci]'ya. Simetrik matris ne demek [öğrenci]?
+
+215
+00:48:02,195 --> 00:48:27,096
+Şimdi simetrik matris neydi arkadaşlar? Bir kare matris olacaktı. Transpozesi kendisine eşit olan matrise. Eğer biraz önce gördük, transpozesi kendisinin eksilisine eşitse ona ters simetrik matris diyoruz. Eğer transpoze kendisine eşitse ne diyoruz? Simetrik matris diyoruz. Bu sorumuzda W bütün simetrik matrislerden oluşan bir küme.
+
+216
+00:48:29,172 --> 00:48:54,771
+Tamam mı? En inci mertebeden tüm simetrik matrislerden oluşan küme. Bu M, N çarpı N, yani N çarpı N mertebesinden bütün kare matrislerin uzayı, V uzayının bir alt kümesi. Biz bunun alt uzay olduğunu göstereceğiz. Biraz önceki gibi iki tane şartımız var. İki tane W'dan matris alacağız. Yani iki tane simetrik matris seçeceğiz. Bunların toplanmı da mı simetrik mi ona bakacağız.
+
+217
+00:48:56,628 --> 00:49:07,028
+Bir simetrik matris alacağız. Bir C gibi skalerle çarpımı da simetrik mi? Yani hem toplam hem skalerle çarpım W'nun elemanı oluyor mu ona bakacağız.
+
+218
+00:49:08,628 --> 00:49:17,628
+Şimdi bakalım, bakın A simetrik matris alalım. İki tane eleman alalım W'dan. İki tane simetrik matris aldık değil mi?
+
+219
+00:49:21,108 --> 00:49:44,768
+Bir de B üzeri T'ye eşit ve iki tane simetrik matris aldım. Bunların toplamına bakacağım. Simetrik mi? İşte toplam bu. Toplamın transpozesine bakıyorum. Transpozenin özelliklerinden bunu böyle yazarız. Bakın A'nın transpozesi artı B'nin transpozesi. A'nın transpozesi yerine A'yı, B'nin transpozesi yerine B yazarsak, A artı B'nin transpozesi ne olmuş oldu? Kendisi de işle olmuş oldu.
+
+220
+00:49:45,780 --> 00:49:53,480
+C ile A skalerinin çarpına bakarsak transpozeye, yine transpozenin özelliklerinden bu C çarpı A'nın transpozesidir.
+
+221
+00:49:53,580 --> 00:50:02,220
+A'nın transpozesine yine A yazarsak C çarpı A oldu. C çarpı A'nın transpozesi yine kendisine C çarpı A'ya eşit oldu.
+
+222
+00:50:03,180 --> 00:50:10,700
+Dolayısıyla hem A artı B hem de C A, kimin elemanı olmuş oldu? W'nun elemanı olmuş oldu.
+
+223
+00:50:13,427 --> 00:50:18,067
+B'nin, yani M2 çarpı 2'nin bir alt uzayıdır deriz.
+
+224
+00:50:21,652 --> 00:50:23,872
+Peki şimdi şu soruya bakalım hızlıca.
+
+225
+00:50:26,352 --> 00:50:31,792
+Burada W kümesi bu. Bu R kübün nesidir? Bir alt kümesidir.
+
+226
+00:50:34,992 --> 00:50:40,852
+W'nun, B'nin bir alt uzayı olduğunu gösteriniz diye sorumuz var.
+
+227
+00:50:42,732 --> 00:50:43,872
+Evet, bunu hızlıca yapın.
+
+228
+00:51:01,268 --> 00:51:15,547
+Şimdi deminki gibi yapılabilir değil mi? W'dan iki tane eleman alacaksınız. Her U ve eleman W için şunu göstermek gerekir. U artı V W'nun elemanı mı?
+
+229
+00:51:16,108 --> 00:51:22,927
+Tabii W'daki elemanların özellikleri nasıl arkadaşlar? Şu ikinci eleman bir kere sıfır olacak.
+
+230
+00:51:24,724 --> 00:51:42,364
+Birinci eleman 2A şeklinde olacak. Alttaki de eksi 3A. Yani bunlar birbirleriyle ilgili. Birisi 2A, en alttaki bileşen de eksi 3A olacak. Böyle elemanlar. İki tane böyle elemanlar toplamına bakacağız.
+
+231
+00:51:53,012 --> 00:52:11,132
+real sayı için şuna bakacağız. K çarpı U, eleman W. Bu bizim iki şartlı alt uzayı olduğunu gösterme kriterimiz. Bir de şöyle bir kriterimiz vardı hatırlarsanız.
+
+232
+00:52:20,211 --> 00:52:35,092
+Her KT eleman, real sayılar için, tek bir şartla, şuna bakarak, isterseniz buraya vektör işareti de koyabilirsiniz.
+
+233
+00:52:35,871 --> 00:52:45,491
+Buna bakarak da, söyleyebiliriz. Bu tek şartla. Yani bu iki şartı birleştirerek, böyle tek şart halinde de bunu gösterebiliyoruz.
+
+234
+00:52:46,068 --> 00:53:03,928
+Bakın, bunun çözümüne bakacak olursak, iki tane skaler seçmişim real sayılardan, biri W'dan iki tane vektör, bakın, vektörler 2s, x3s, 2t, x3t, iki tane vektör aldım W'dan, iki tane de skaler aldım.
+
+235
+00:53:12,851 --> 00:53:18,751
+Evet, skalerlerimiz burada K ile L.
+
+236
+00:53:19,311 --> 00:53:25,692
+K ile L. Şimdi bu S ile T ile L sayıları bu vektörlerin içinde kullandık.
+
+237
+00:53:25,771 --> 00:53:28,092
+Bir de iki tane skaler almamız lazım.
+
+238
+00:53:28,771 --> 00:53:33,472
+İşte K ile L skaleri U ile V vektörleri için şu toplama bakmamız lazım.
+
+239
+00:53:34,132 --> 00:53:35,592
+Bakıyoruz, bakıyoruz.
+
+240
+00:53:36,391 --> 00:53:37,791
+U'nun yerine yazdım.
+
+241
+00:53:38,483 --> 00:54:02,323
+V'nin yerine yazdım. Sonra bu toplama işlemini yapıp düzenlersem, bakın nasıl bir eleman çıkıyor. Ortadaki eleman sıfır, Ks artı Lt'nin iki katı var. Burada da Ks artı Lt'nin eksi üç katı var. Bu nasıl bir eleman? W'nun elemanları tipinden bir eleman. Dolayısıyla W,
+
+242
+00:54:02,931 --> 00:54:06,531
+rekümün nesidir? Bir alt vektör uzayıdır.
+
+243
+00:54:10,612 --> 00:54:31,811
+Şöyle bir sorunumuz var. Bunu düşünün arkadaşlar. R küp uzayının bir alt kümesi S olarak veriliyor. Üç tane elemanı var. Bir V vektörünün S ile gerilen uzayda olduğunu gösterilmiş.
+
+244
+00:54:33,427 --> 00:54:39,788
+Bir V vektörünün S ile gerilen uzayda olduğunu gösteriniz.
+
+245
+00:54:42,327 --> 00:54:46,647
+S ile gerilen uzay nasıl elemanlardan oluşur arkadaşlar?
+
+246
+00:54:47,347 --> 00:55:00,688
+Şöyle, şuna mesela V1, şuna V2, şuna da V3 dersek, S ile gerilen uzaylar şu lineer toplamlardan oluşacak değil mi?
+
+247
+00:55:01,300 --> 00:55:22,980
+K1, K2, K3 skaler olmak üzere, şu şekildeki lineer toplamlarından oluşacak. Demek ki, şu V vektörünü, böyle yazabilmemiz lazım. Yani V'yi şu şekilde yazabilmemiz lazım. K1, V1, K2, V2.
+
+248
+00:55:23,507 --> 00:55:40,667
+K3, V3 şeklinde yazabilmemiz lazım. Yani şöyle K1, K2, K3 değerleri, real sayıları bulabilmemiz lazım. Bulabiliyorsak, bulabiliyorsak, V vektörü S ile gerilen uzaydadır deriz.
+
+249
+00:55:40,667 --> 00:55:42,707
+Bakın.
+
+250
+00:55:43,219 --> 00:55:59,199
+K1, K2 almamışız da burada. C1, C2, C3 almışız. Tamam mı? İşte V vektörümüz de burada. C1 ile C2'yi, C3'ü bulabilmemiz lazım. Buradan elde ettiğiniz inerdenklem sistemini çözdüğünüz zaman, bakın C1, C2, C3 değerlerini bulabiliyorsunuz.
+
+251
+00:55:59,503 --> 00:56:14,443
+Dolayısıyla, V ve bu S'deki vektörlerin bir lineer kombinası olmalıdır. Dolayısıyla, S ile gerilen ya da S ile üretilen uzayın elemanıdır deriz.
+
+252
+00:56:29,588 --> 00:56:38,708
+Burada birazcık şöyle şu üçgen parantezi de buraya koymamıza yarar var. Tamam mı?
+
+253
+00:56:52,179 --> 00:56:53,920
+Yani bu küme oldu.
+
+254
+00:56:53,920 --> 00:56:55,139
+Bu küme oldu.
+
+255
+00:56:57,739 --> 00:56:59,019
+Şöyle diyelim.
+
+256
+00:57:00,000 --> 00:57:12,779
+Şu üç tane elemandan oluşan, yani bunlara mesela V1, V2, V3 dersek, S kümesi dediğimiz V1, V2, V3.
+
+257
+00:57:12,779 --> 00:57:14,420
+Tabii.
+
+258
+00:57:14,911 --> 00:57:23,011
+S ile gerilen uzay dediğimiz zaman, bu S kümesi tarafından gerilen uzayın, R kübe eşit olduğunu gösteriniz diyoruz.
+
+259
+00:57:23,231 --> 00:57:37,851
+O zaman neyi göstermemiz lazım arkadaşlar? R kübün herhangi bir elemanının, bu üç vektörün bir lineer toplanma şeklinde yazılabildiğini göstermemiz gerekir.
+
+260
+00:57:42,547 --> 00:57:52,287
+V'yi böyle aldığımız zaman bu V'nin, X, Y, Z'nin bu S'nin elemanları cinsinden yazılabildiğini göstermemiz lazım.
+
+261
+00:57:52,407 --> 00:57:58,487
+Yani şunun, şu yazılışta C1, C2, C3 değerlerini bulabilmemiz gerekir.
+
+262
+00:57:59,847 --> 00:58:09,367
+Buradan elde ettiğimiz lineer denklem sistemini çözecek olursak, işte lineer denklem sistemini elde ettikten sonra artırılmış kat sayılar maddesini bakın böyle yazdık.
+
+263
+00:58:09,715 --> 00:58:14,955
+Sonra bunu çözmeye gittik. Satırcıya indirgenmiş eşelon formülüne geldiğimiz zaman bunu bulduk.
+
+264
+00:58:15,415 --> 00:58:20,556
+Buradan da C1 hemen şuna eşit, C2 buna, C3 buna eşit olarak buluruz.
+
+265
+00:58:21,275 --> 00:58:24,435
+Dolayısıyla C1, C2, C3 değerleri bulabiliyoruz.
+
+266
+00:58:24,435 --> 00:58:34,315
+Dolayısıyla rekübün her elemanını bu S'nin vektörleri cinsinden yazabildiğimiz için S'deki 3 vektörün
+
+267
+00:58:34,963 --> 00:58:41,144
+lineer kombinaz olarak yazılabildiği için ne deriz? S, R kübü, görer deriz.
+
+268
+00:58:43,804 --> 00:58:55,784
+Burada da verilen uzayın, yine buraya şöyle koymamızda yarar var, R kübe eşit olmadığını, yani R kübün bu uzay tarafından,
+
+269
+00:58:56,340 --> 00:59:14,500
+gerilenmediğini gösterin diyoruz. Burada da ne yapacağız? R küpün herhangi bir elemanının bu iç vektörün lineer toplamı şeklinde yazılamayacağını, yani yazılamayan en az bir tane R küpün elemanı bulunabildiğini bir daha söylüyorum.
+
+270
+00:59:23,007 --> 00:59:29,987
+Gösterirsek, bu senin ürettiği uzay, R kübe eşit olmadığını söylemiş oluruz.
+
+271
+00:59:32,087 --> 00:59:42,227
+Şimdi bakınız, R kübin keyfi bir elemanı böyle aldık. C1, C2, C3 skalerler için şunu oluşturdum.
+
+272
+00:59:48,692 --> 01:00:14,112
+Ne bulmam lazım? C1, C2, C3 değerlerini bulabilmem lazım. Bulursam, C1, C2, C3 değerlerini, deriz ki ne? Reküp'ün her elemanı yazılabiliyor deriz. Bulamıyorsak, yani C1, C2, C3 çözümünü bulamıyorsak, ki burada bakın bulamayacağız, artırılmış kat sayılara baktığımız zaman, şuranın rangıyla hepsinin rangı birbirinden farklı olabilir.
+
+273
+01:00:15,059 --> 01:00:32,899
+Şuranın rangı her zaman 2. Şuranın rangı, hepsinin rangı da şu değerin sıfırdan farklı olduğu durumda rank 3 olacak. O zaman şunu diyebiliriz. Bu değer sıfır ise sistemin çözümü var.
+
+274
+01:00:33,523 --> 01:00:57,903
+Aksi halde sistemin çözümü olmaz. Yani bunu sıfırdan farklı yapacak şekilde değer çok seçersiniz. Mesela Z'yi bir alın, Y'yi bir alın, X'i de bir alın. Ne olur burası? Eksi bir olur şurası. Değil mi? Sıfır olmaz. Böyle aldığınız zaman, tamam mı? Yani R kübün, R kübün,
+
+275
+01:00:58,387 --> 01:01:09,547
+ve elemanı olarak şunu alırsak, bir, bir, biri, bu eleman, S'nin şu üç vektörünün lineer kombinasyonu olarak yazılamaz.
+
+276
+01:01:10,667 --> 01:01:21,387
+Dolayısıyla, S kümesi R küpü germez. S'nin ürettiği uzay R küpe eşit olmaz, diyoruz arkadaşlar.
+
+277
+01:01:26,804 --> 01:01:48,964
+Benzer bir soru. Bu sefer vektör uzayımız P2 vektör uzayı. Yani derecesi 2 ya da daha düşük olan polinomların kümesiydi P2 vektör uzayı. Biz bu P2 vektör uzayının bir alt kümesini alıyorum.
+
+278
+01:01:48,964 --> 01:01:51,404
+Tamam mı? Alt kümesini alıyorum.
+
+279
+01:01:52,019 --> 01:02:13,440
+3 tane elemandan oluşan alt kümeyi alıyorum. Bu S, P2 uzayını gerer mi? Yani P2'den aldığımız her vektör, bir başka de işte her polinom, bu 3 tane polinomun lineer kombinasyonu olarak yazılabilir mi? Değil mi? Soru ona indirgenmiş oluyor.
+
+280
+01:02:15,987 --> 01:02:20,668
+Herhangi bir vektör, ikinci dereceden bir poinom olarak aldık.
+
+281
+01:02:22,088 --> 01:02:41,668
+Şunu göstermek için, S'deki şu vektörlerin, bu keyfi olan, P2'nin keyfi olarak aldığımız AX kare artı BX artı C'nin, bu S'deki 3 vektörün,
+
+282
+01:02:42,771 --> 01:02:58,091
+Lineer kombinasyon olarak yazılabildiğini bulmamız lazım. Yani şu C1, C2, C3 değerlerini bulabilmemiz gerekir. Var olması gerekir. Tamam mı?
+
+283
+01:02:59,211 --> 01:03:09,971
+Şimdi bu eşitliği düzenleyerek şuna getirebiliriz. Burada iki polinomun eşitliği var arkadaşlar. Bakın, x kareli terimlerin
+
+284
+01:03:11,795 --> 01:03:35,615
+Kast sayılarını eşitleriz, işte eşitledik. X'li terimlerin kast sayılarını eşitleriz. Sonra da sabit terimleri eşitlediğimiz zaman, 3 bilinmeyenli 3 denklem elde ederiz. Değil mi? C1, C2, C3 bilinmeyenler. 3 tane denklem. Bu lineer denklem sistemini artırılmış kast sayılar matrisiyle çözmek istersek,
+
+285
+01:03:39,795 --> 01:03:45,916
+Satırca indirgenmiş eş olan forma getirdiğimiz zaman, ranklar birbirine eşit, tek çözüm var.
+
+286
+01:03:47,655 --> 01:03:55,835
+Şuradan C1'i böyle buluruz, C2'yi böyle buluruz, C3'ü de böyle buluruz.
+
+287
+01:03:56,476 --> 01:04:02,076
+Dolayısıyla S kümesi P2'yi gerer.
+
+288
+01:04:07,123 --> 01:04:14,403
+Şimdi biz daha önceki örneklerimizden P2'nin boyunun 3 olduğunu biliyoruz.
+
+289
+01:04:16,224 --> 01:04:25,364
+Hatta P2'nin standart tabanı olarak da 1x, x kareyi alabilirsiniz standart tabanı olarak da.
+
+290
+01:04:26,183 --> 01:04:31,083
+Boyut P2, P2'nin tabanında herhangi bir tabanında 3 tane eleman var.
+
+291
+01:04:33,652 --> 01:04:49,172
+Şimdi biz bu soruya bakarak, bakın S'nin P2 vektör uzayını gerdiğini söyledik ya, biraz derslerin başlarına doğru gidersek, P2'nin 3 boyutlu vektör uzayı olduğunu biliyoruz.
+
+292
+01:04:49,751 --> 01:04:57,632
+Bu gelen küme de 3 tane elemana sahip. Dolayısıyla bu soruda sorulmamış ama biz fazladan şunu da söyleyebiliriz.
+
+293
+01:04:59,347 --> 01:05:17,867
+P2'nin P2'yi gerdiğini gösterdiğimiz bu S kümesi aynı zamanda P2'nin tabanıdır da deriz değil mi? Tabanıdır da deriz. P2 3 boyutlu vektör uzay olduğunu biliyoruz. 3 tane elemandan oluşan S kümesi P2'yi geriyor.
+
+294
+01:05:18,320 --> 01:05:29,360
+O aynı zamanda tabanıdır. Dolayısıyla, pardon, aynı zamanda bu sevkimesi lineer bağımsızdır. Dolayısıyla P2'nin tabanıdır da diyebiliriz.
+
+295
+01:05:36,563 --> 01:05:49,583
+Mesela bu soruda S'yi verip P2'yi gerer mi A şıkkı, B şıkkında da S P2'nin tabanı mıdır deselerdi, bu şekilde cevap verecektik arkadaşlar.
+
+296
+01:05:52,003 --> 01:06:00,723
+Reküp uzayında verilen bu üç tane vektör var bakın, U, V, W. Bu vektörlerin lineer bağımsız olması için gerek ve yeter şartın
+
+297
+01:06:01,268 --> 01:06:08,408
+Bu vektörleri satır kabul eden determinantın sıfırdan farklı olduğunu gösterin diye bir sorumuz var.
+
+298
+01:06:10,248 --> 01:06:19,208
+Burada, burada, bu üç tane vektör, U ve W vektörlerinin lineer bağımsız olması için gerek ve yeterli koşul dedi ya,
+
+299
+01:06:20,248 --> 01:06:25,688
+K1, K2, K3 skalerlerinin için şu eşitlik, K1, K2, K3'ün,
+
+300
+01:06:26,356 --> 01:06:33,256
+sıfıra eşit olmasıyla mümkünse, sadece bununla mümkünse bu üç vektör lineer bağımsızdır deriz.
+
+301
+01:06:35,216 --> 01:06:41,996
+İşte U ve W'nun yerlerine değerlerini yazarak şu lineer denklem sistemini elde ediyoruz.
+
+302
+01:06:42,276 --> 01:06:44,376
+Bu homojen lineer denklem sistemi.
+
+303
+01:06:45,796 --> 01:06:49,976
+Bu denklem sisteminin sadece sıfır çözümünün olmasını istiyoruz değil mi?
+
+304
+01:06:49,976 --> 01:06:51,776
+Sadece sıfır çözümünün olması.
+
+305
+01:06:52,371 --> 01:07:13,551
+Yani verilen üç vektörün lineer bağımsız olmasını istiyoruz. Bu da bu elde ettiğimiz lineer denklem sisteminin sadece sıfır çözümü olmasıyla mümkün. O zaman bunun sadece sıfır çözümü olabilmesi için olması lazım. Kaslayılar maddesinin determinantı sıfırdan farklı olması lazım.
+
+306
+01:07:14,164 --> 01:07:30,644
+Homojen lineer denklem sisteminde böyle söylemiştik. Kas taylar matrisinin determinantı sıfırdan farklı olacaktı. Eğer sıfır olursa ne diyorduk? Homojen lineer denklem sisteminde sıfır çözümünün dışında da çözümler var. Sonsuz çözüm durumuydu.
+
+307
+01:07:31,084 --> 01:07:37,548
+Bildiğiniz gibi homojen lineer denklem sistemlerinin hep çözümü var. Ya tek çözüm sıfır çözümüdür ya da...
+
+308
+01:07:37,907 --> 01:07:56,608
+Sonsuz çözümüdür. Biz burada lineer bağımsız olması için gerek ve yeter koşulu aradığımız için burada ne olacak? Tek çözüm sıfır çözümü olma durumunu inceleyeceğiz. O da bu verilen lineer denklem sisteminin kat sayılan matrisin determinantının sıfırdan farklı olmasıyla mümkündür.
+
+309
+01:08:01,844 --> 01:08:08,804
+Evet, şu soruya bir bakalım. Vekül uzayında üç tane vektör vermişiz. Bunların lineer bağımlı olup olmadığını araştırın diye soruyoruz.
+
+310
+01:08:49,971 --> 01:08:53,332
+Bu soru zor bir soru değil. Neye bakmamız lazım arkadaşlar?
+
+311
+01:08:55,751 --> 01:09:03,572
+K1 çarpı A artı K2 çarpı B artı K3 çarpı C.
+
+312
+01:09:07,188 --> 01:09:09,108
+eşit sıfır diyeceğiz.
+
+313
+01:09:10,268 --> 01:09:16,808
+Buradan K1 eşit, K2 eşit, K3 eşit sıfır.
+
+314
+01:09:16,927 --> 01:09:17,608
+Buna bakacağız.
+
+315
+01:09:17,708 --> 01:09:28,708
+Eğer bunların üçü sıfıra eşitse, sadece bu eşitlik, şu eşitlik, bu üç skalerin sıfırla eşit olması ile mümkünse, lineer bağımsız diyeceğiz.
+
+316
+01:09:32,916 --> 01:09:44,816
+ve K1, K2, K3'ten en az biri sıfırdan farklı olacak şekilde skalerler bulabiliyorsak da, o zaman da ne diyoruz? Neğer bağımlı diyoruz.
+
+317
+01:09:47,316 --> 01:10:00,396
+Burada, burada, tabii şunu da buradan, şu ifadeden,
+
+318
+01:10:00,851 --> 01:10:03,752
+Bir lineer denklem sistemi karşımıza çıkacak değil mi?
+
+319
+01:10:07,711 --> 01:10:13,092
+K1, K2, K3'e bağlı. Nedir o denklem sistemi de?
+
+320
+01:10:13,092 --> 01:10:25,512
+K1 artı sıfır çarpı K2 artı eksi beş K3.
+
+321
+01:10:27,475 --> 01:10:50,755
+2K1 artı, eksi pardon, K2 artı, K3, eşit sıfır, eşit sıfır. Sonra, ne yazacağız?
+
+322
+01:10:56,340 --> 01:11:14,239
+Artı 2K2, artı 0 çarpı K3. Eşit 0. Buradan K1, K2, K3'e bakacağız. Bunu tabii biraz önceki örnekle de gördük.
+
+323
+01:11:27,796 --> 01:11:33,836
+Bu lineer denklem sisteminin, kat sayılar maddesinin determinantına bakacağız.
+
+324
+01:11:33,836 --> 01:11:35,836
+Tabi burada...
+
+325
+01:11:42,131 --> 01:12:04,271
+Şurada, şurada, şuna da bakılabilirdi elbette. Şuradan, şuradan ne elde ederiz? K1, U1, K2, V1, evet. Şimdi buradan lineer denklem sistemine geçtiğimiz zaman,
+
+326
+01:12:08,564 --> 01:12:33,584
+Bunun determinantı, buradaki kaç sayılar matrisini, determinantı alacak olursak, V1, W1, değil mi? U2, V2, W2, U3, V3, W3. Tamam mı? Şimdi bununla bunun farkı ne?
+
+327
+01:12:35,028 --> 01:12:59,048
+Şunun transposesi burada, değil mi? Bu determinantlarda, transposenin determinantıyla matrisin determinantı birbirine eşitti biliyorsunuz. Dolayısıyla buna bakmakla buna bakmak aynı şey. Bu örnekte, biraz önceki örnekte bizim alışık olduğumuz gibi şuna bakılmamış da buna bakılmış olsun.
+
+328
+01:13:01,695 --> 01:13:14,775
+Her bir vektörü sutun olarak alarak elde ettiğimiz determinat değil mi? O'yu sutun olarak almışız. V'yi sutun olarak almışız. W'yu sutun olarak almışız.
+
+329
+01:13:30,260 --> 01:13:42,224
+Pardon, U'yu satır olarak almışız. V'yi satır, W satır. Ama bizim çalıştığımız kısımda U sütun...
+
+330
+01:13:42,224 --> 01:14:07,944
+V sütun, alışık olduğumuz şekilde yaptığımız durumlarda W sütun. Fark etmez. U ve W vektörlerinin koordinatlarını satır olarak da alabilirsiniz. Determinanta bakarsınız. Ya da sütun olarak alarak bakarsınız. Bu örneğimizde zaten onu söylüyoruz. Bu sorumuzda da bakın satır olarak almışız.
+
+331
+01:14:09,203 --> 01:14:26,404
+A, B, C vektörünün koordinatlarını ve ranga bakmışız. Rank A, 3 olarak çıkmış. Dolayısıyla verilen bu 3 vektör lineer bağımsızdır deriz. İsterseniz biraz önceki örnekteki gibi de yapılabilir.
+
+332
+01:14:29,555 --> 01:14:36,955
+Hatırlarsanız, vektörler verildiği zaman, n tane, m tane bir teorem ispatlamıştık sizinle.
+
+333
+01:14:36,955 --> 01:14:49,075
+Oradaki lineer bağımsız vektör sayısı, bu verilen ABC vektörlerini satır kabul eden matrisin,
+
+334
+01:14:51,188 --> 01:14:57,048
+Rangı ile hatta şöyle hızlıca o kısma bakacak olursa onu hatırlatayım size.
+
+335
+01:15:05,460 --> 01:15:27,079
+Şurada bakın, M tane vektör var. Bu M tane vektörün her birini satır kabul eden şu A maddesine bakarsak, tamam mı? Bu maddesin rangı R ise, biz bu verilen vektörlerden R tanesinin lineer bağımsız olduğunu söyleriz.
+
+336
+01:15:27,079 --> 01:15:28,139
+Tamam mı?
+
+337
+01:15:29,500 --> 01:15:30,159
+Eğer
+
+338
+01:15:30,644 --> 01:15:52,244
+M ise, M tanesi lineer bağımsız deriz. R ise, R tanesi lineer bağımsız diyoruz. Eğer R, M'den küçükse, R tanesi lineer bağımsız ya, geriye ne kaldı? Mx, R tane kaldı. Biz R tane lineer bağımsızlık seçince geriye, Mx, R tane kaldı.
+
+339
+01:15:58,771 --> 01:16:06,051
+Seçtiğimiz R tane lineer bağımsızlık, lineer kombinez olarak yazabiliriz.
+
+340
+01:16:07,572 --> 01:16:19,012
+Ayrıca, şu varsa, en eşit M ise verilen M vektörün lineer bağımsız olması için gerek ve yeter koşul, determinantın sıfırdan farklı olmasıdır.
+
+341
+01:16:20,231 --> 01:16:20,971
+Tamam mı?
+
+342
+01:16:21,363 --> 01:16:42,943
+Biz bunu geçen dersimizde vermiştik, bununla ilgili örnekler de yapmıştık, hatırlayacaksanız. Mesela lineer bağımsız vektör seçip geriye kalanları bunların cinsinden yazmayı söylemiştik. Şu 3'ü ile ilgili hemen şurada bir örneğimiz vardı. 3'ü ile ilgili, şuradaki determinant örneği tamamen 3'ü ile ilgili bir örnek.
+
+343
+01:16:51,796 --> 01:17:14,636
+Şu örnek, değil mi? Bu örnek, üç ile ilgili bir örnek. Şimdi burada da, şurada da, diner bağımlı olup olmadıklarını araştırın dedik ya, o teoremdeki matrisi oluşturdum ben. Matrisi, bunun rangı.
+
+344
+01:17:16,340 --> 01:17:22,300
+Bize lineer bağımsız vektör sayısını verecek. Bunun rangı 3 olduğu için 3'ü de lineer bağımsızdır diyebilirsiniz.
+
+345
+01:17:22,900 --> 01:17:27,140
+Ya da şöyle de yapabilirsiniz alışık olduğunuz biçimde.
+
+346
+01:17:27,140 --> 01:17:36,199
+Değil mi? Buradan K1, K2, K3'ü bularak 3'ünün de 0'a eşit olmak zorunda olduğunu göstererek de yapabilirsiniz bunu.
+
+347
+01:17:38,720 --> 01:17:39,400
+Pekala.
+
+348
+01:17:41,939 --> 01:17:51,260
+Şurada da bir önceki örnekte determinant A'nın sıfırdan farklı olduğunu görerek, Ra'nın rank A'nın 3 olduğu bulunur.
+
+349
+01:17:51,699 --> 01:17:54,439
+Şu bir önceki örnek dediğimizde şu örnekti.
+
+350
+01:17:56,199 --> 01:17:57,079
+Pekala.
+
+351
+01:17:58,599 --> 01:17:59,880
+Şöyle bir sorumuz var.
+
+352
+01:18:06,484 --> 01:18:32,564
+R3 uzayında, 3 tane vektör veriliyor bize. Bu vektörlerin lineer bağımlı olması için K ne olmalıdır? Burada K bilinmeyeli var, bakın şurada. Bu K ne olsun ki? Bu verilen 3 vektör lineer bağımlı olsun. Sonra ikinci şıkta da, bu bulduğumuz K değeri için, bu vektörler arasındaki bağıntıyı yazınız diyoruz.
+
+353
+01:18:33,492 --> 01:18:50,811
+Bu üç vektörün lineer bağımlı olması için, lineer bağımlı olması için şu A maddesi var ya, A maddesi, demin de bahsettiğimiz satırları A, B, C vektörleri olan bu A maddesinin rangı, R ne olması lazım?
+
+354
+01:18:52,012 --> 01:18:56,192
+Üç vektör lineer bağımlı olması için bu rankın üçten küçük olması lazım değil mi?
+
+355
+01:18:57,192 --> 01:18:58,872
+Rangın üçten küçük olması lazım.
+
+356
+01:18:59,412 --> 01:19:10,712
+İşte bunu düzenlediğimiz zaman, rankla ilgili bir şeyler söyleyebilecek hale getirdiğimiz zaman, bu A matrisini, bakın burada rankla ilgili bir şey söyleyebiliyoruz.
+
+357
+01:19:11,712 --> 01:19:26,412
+Şurasının rangı 2, burası da K'nın değerine göre değişir. Değil mi? Biz bu 3 vektörün diğer bağımlı olmasını istiyoruz. O zaman rangın 2 olmasını istiyoruz. Daha doğrusu 3'ten küçük olmasını istiyoruz ama...
+
+358
+01:19:26,608 --> 01:19:31,688
+En küçük 3'den 2 olur. 2'den daha küçük olması mümkün değil. Gördüğünüz gibi şuradan.
+
+359
+01:19:33,348 --> 01:19:40,288
+O zaman R'nin 2 olması için ne olması lazım? Şu K artı 3'ün 0 olması gerekir.
+
+360
+01:19:41,188 --> 01:19:53,048
+O zaman K eksi 3 olmalı. Eğer K eksi 3 olursa bu 3 vektör lineer bağımlı olmuş olur.
+
+361
+01:19:53,716 --> 01:20:16,476
+Tamam mı? Eğer k artı 3 sıfırdan farklı olsa, sıfırdan farklı olsa, burası sıfırdan farklı olsa, ne olacak? Burayı da bir yaparsınız. Rank ne olur? 3 olur. 3 vektörün 3'ü de lineer bağımsız olur. Ama biz 3'ünün lineer bağımlı olmasını istiyoruz. O zaman bu k artı 3 sıfır olmalı, k eksi 3 olmalı diyoruz.
+
+362
+01:20:16,916 --> 01:20:32,916
+İkiyi de, K yerine ne yazacağım ben? Eksi üç yazacağım. Şurada, eksi üç yazacağız. Tamam mı? Buna göre, vektörlerin arasındaki bağıntıyı yazınız.
+
+363
+01:20:43,123 --> 01:20:56,224
+C eşit sıfır bağıntısında bu K'ların hepsi birden sıfır olmadan, hepsi birden sıfır olmak zorunda olmadan bu eşitlik sağlanacak değil mi? Lineer bağımsız olduğu için. İşte bu eşitliği bulacağız.
+
+364
+01:20:57,744 --> 01:21:10,043
+Bakın burada yazdık bu ifadeyi. A'nın değerini yazdım, B'nin yerine yazdım, C'nin değerini yazdım, sıfıra eşitledim. Buradan bir homojen lineer denklem sistemi çıkar.
+
+365
+01:21:10,484 --> 01:21:22,323
+Bunu da çözersek, çözersek, mesela üç tane bilinmeyen var, birisi keyfi seçilecek çözümü yaptığımız zaman.
+
+366
+01:21:22,323 --> 01:21:37,384
+Mesela K3'ü keyfi seçerek, K3'ü keyfi seçersek şurada, burada aslında K1 eşit 3, K3, K2 eşit eksi 2, K3.
+
+367
+01:21:37,844 --> 01:21:49,123
+K1 ile K2, K3'e bağlı çıkıyor. Burada da K3'e de mesela bir değerini verirsek, K1 bu olur, K2 bu olur. O zaman ABC arasındaki bağıntıyı bulmuş oluruz.
+
+368
+01:21:54,931 --> 01:22:03,331
+R3 uzayında 4 tane vektör verilmiş. Bu vektörler arasındaki bir bağıntıyı yazınız diyor.
+
+369
+01:22:04,571 --> 01:22:12,591
+Şimdi tabii R3 uzayının boyutu 3. Maksimum lineer bağımsız vektör sayısı nedir arkadaşlar?
+
+370
+01:22:12,791 --> 01:22:17,231
+3'tür. Burada 4 tane vektör verildiğine göre bu 4 vektör lineer bağımlı olacak.
+
+371
+01:22:17,231 --> 01:22:22,511
+İşte bu lineer bağımlı olmasından dolayı bunlar arasındaki bağıntıyı yazacağız.
+
+372
+01:22:24,180 --> 01:22:38,540
+Ayrıca bu vektörler arasında minimum sayıda lineer bağımsız vektör seçerek geriye kalan vektörleri bu seçtiğimiz lineer bağımsız vektörleri lineer kombinazon olarak ifade ediniz deniyor.
+
+373
+01:22:43,636 --> 01:23:06,856
+En fazla üç tanesi lineer bağımsız olur değil mi? En fazla üç tanesi lineer bağımsız olur. Belki iki tanesi olacak ama dördün birden lineer bağımsız olamaz. Bunun şimdi çözümüne bakalım. Bu A maddesini oluşturduk bakın. Burada gördüğünüz gibi, gördüğünüz gibi rank kaç arkadaşlar? Rank 2.
+
+374
+01:23:06,856 --> 01:23:08,796
+Rank 2.
+
+375
+01:23:09,300 --> 01:23:24,200
+O zaman verilen dört vektörden iki tanesini lineer bağımsız olarak seçebilirim. Tamam mı? İki tanesi lineer bağımsız olarak seçebilirim.
+
+376
+01:23:25,400 --> 01:23:35,440
+Şimdi şu iki tanesini alırsak, U ile V'yi, şurayı, sonuca baktığımız zaman bakın burada iki çıkıyor rank. O zaman bu ikisini
+
+377
+01:23:38,003 --> 01:23:57,184
+U ile V'yi lineer bağımsız olarak seçebilirim. Başka seçemez miydik? Seçerdik. Mesela şu ikisini düşünürdük. Bu ikisinden de şu kısma bakarsanız, buranın determinantı nedir?
+
+378
+01:24:00,684 --> 01:24:05,364
+Eksi ikidir. Sıfırdan farklı. Dolayısıyla bu ikisi de lineer bağımsız olur.
+
+379
+01:24:06,612 --> 01:24:19,552
+Tamam mı? U ile V de lineer bağımsız olarak alabilirsiniz. S ile T'yi. Eğer U ile V'yi lineer bağımsız olarak seçersek, biz S ile T'yi U ve V cinsinden yazacağız.
+
+380
+01:24:20,692 --> 01:24:32,292
+Eğer bir arkadaşımız S ile T'yi lineer bağımsız seçseydi, geriye kalan neler olacaktı? U ile V. O zaman U ile V'yi S ile T'nin cinsinden yazacak idik.
+
+381
+01:24:33,876 --> 01:24:44,896
+İlk başta dediğim gibi U ile V'yi lineer bağımsız olarak seçiyoruz. O zaman S ve T vektörleri U ve V vektörlerinin diğer kombinez olarak yazılabilir.
+
+382
+01:24:44,996 --> 01:24:49,836
+Şimdi onu söyleyeceğiz. Onun sonucunda da bu dört vektör arasındaki bağımsızlık bulmuş olacağız.
+
+383
+01:24:49,836 --> 01:24:59,695
+Bakın bunu yazıyorum. Bütün vektörlerle. Sonra yerlerine yazarak vektörlerin.
+
+384
+01:25:01,108 --> 01:25:15,807
+Bir homojen lineer denklem sistemi karşımıza çıkıyor. Bu homojen lineer denklem sistemini çözdüğümüz zaman, çözdüğümüz zaman, zaten burada sonsuz çözüm durumu olacak elbette, değil mi?
+
+385
+01:25:17,387 --> 01:25:25,588
+En son buna geldikten sonra tekrar denklemlere dönüştürdüğümüz zaman, bu denklemi elde ederiz. Buradan da, tabii burada,
+
+386
+01:25:38,355 --> 01:25:42,135
+4 tane bilinmeyen var.
+
+387
+01:25:43,035 --> 01:25:47,935
+Buradan da rank 2 çıktığına göre, 2 tanesini keyfi seçeceğiz.
+
+388
+01:25:48,215 --> 01:25:49,515
+2 tanesini keyfi seçeceğiz.
+
+389
+01:25:50,175 --> 01:25:53,735
+Yani K1, K2, K3, K4'ten 2 tanesi keyfi olacak.
+
+390
+01:25:54,415 --> 01:26:01,755
+Şuradan, şu iki denkleme bakarsanız arkadaşlar, hemen K1 ile K2'yi, hemen K3 ve K4 cinsinden yazabiliyorsunuz zaten.
+
+391
+01:26:01,755 --> 01:26:02,751
+O zaman...
+
+392
+01:26:02,752 --> 01:26:25,812
+K3'de K4'ü keyfi olarak almak bize avantaj sağlayabilir. K3'de K4'ü keyfi olarak seçiyorum. Mesela K3'e de bir değer vererek, K4'e de bir değer vererek, K1'i K3 ve K4 cinsinden yazıldığı için hemen K1'i de buldum, K2'yi de buldum.
+
+393
+01:26:28,148 --> 01:26:55,568
+Böyle bir bağıntıyı yazarım bunların arasında. Tamam mı? Bakın bu dört vektör arasındaki bağıntıyı bu şekilde yazabiliriz. Bir de burada, bakın sadece bu sorulmuyor, bu vektör arasında bir bağıntıyı yazınız diyor, sonra bu vektör arasında maksimum sayıda lineer bağımsız vektör seçerek biz seçtik, U ile V bunlar. Geriye kalan mesela S, S'yi U ile V cinsinden yazacağım ayrıca.
+
+394
+01:26:56,212 --> 01:27:07,992
+t'yi u ile v cinsinden yazacağım. Biz şu ana kadar bu dört vektör arasında bir bantı yazdık. Şimdi s ile t'yi u ve v cinsinden yazalım.
+
+395
+01:27:08,292 --> 01:27:21,391
+s vektörünü u ve v vektörlerinin lineer kombinozu olarak ifade etmek için bir ve ikideki sistemlerden k dördü mesela sıfır alırsanız, değil mi? k dördü sıfır alırsanız.
+
+396
+01:27:23,572 --> 01:27:49,052
+Bir ve iki sistemleri dediğim şu. K4'ü sıfır olarak alırsam, değil mi? K4'ü sıfır seçersem, şurada K4'ü, K4 neyin önündeydi? Son vektör olan, işte, K4, T'nin önündeydi. K4'ü sıfır olarak seçersem, şuradaki K3, K4'ten,
+
+397
+01:27:49,408 --> 01:28:08,128
+t'nin önündeki sıfır olur, değil mi? O zaman s'yi u ve v cinsinden yazarım. K3'ü sıfır alarak da, bu sefer de t'yi u ve v elektörler cinsinden yazabilirsiniz.
+
+398
+01:28:12,819 --> 01:28:16,460
+Şimdi bir başka sorumuz var. Şöyle.
+
+399
+01:28:18,359 --> 01:28:25,680
+Ve P2. Dereceleri 2 ya da daha düşük olan poinomların oluşturduğu vektör uzayı.
+
+400
+01:28:26,420 --> 01:28:30,319
+Ve vektör uzayı olarak bunu alıyoruz.
+
+401
+01:28:30,840 --> 01:28:33,000
+Burada sıralı bir taban olarak şunu seçiyorum bakalım.
+
+402
+01:28:34,640 --> 01:28:37,300
+1, x-1, x².
+
+403
+01:28:39,380 --> 01:28:59,600
+Px, Px, bir poinom, B sıralı tabanına göre koordinat vektörü önünü bulunuz diyor. Tamam mı? Yani Vb ile göstermiştik, bunu bugünkü dersin başlarında söylemiştik. Bir de V vektör uzayının boyutu nedir diye soruyoruz. Tamam mı?
+
+404
+01:29:08,307 --> 01:29:15,288
+Bu verilen vektörü, bu sıralı tabanın cinsinden yazmak istiyorum. C1, C2, C3'ü bulacağız. Tamam mı?
+
+405
+01:29:17,488 --> 01:29:21,007
+Burayı düzenlediğiniz zaman, burayı düzenlediğiniz zaman ne olur?
+
+406
+01:29:22,807 --> 01:29:27,507
+X kareli terimin, burada X kareli terimin kat sayısı ne? C3.
+
+407
+01:29:28,387 --> 01:29:31,448
+C3 ne olacaktır hemen? Eksi 2 yeşil olacaktır.
+
+408
+01:29:33,068 --> 01:29:35,427
+X'li terimin kat sayısı ne arkadaşlar?
+
+409
+01:29:36,627 --> 01:30:03,547
+C2. C2 ikiye eşit olacaktır. Sabit terime gelince, C1 var, değil mi? C1 var. Sonra bir de ne var? Eksi C2. Bu neye eşit olacak? Üç. Biz C2'yi zaten iki olarak bulduk. C1 eksi iki eşit üç. O zaman C1 ne olur? Beş olarak bulur. İşte bu şekilde bulduğumuz zaman.
+
+410
+01:30:03,952 --> 01:30:19,632
+Bunları, bunlarla elde ettiğimiz şu sutun maddesi ya da vektörü, V'nin B tabanına göre koordinat vektörü olur. Bu şekilde koordinat vektörünü bulmuş olduk. Tamam mı?
+
+411
+01:30:26,676 --> 01:30:39,855
+Bu taban olarak da verilmiş B. Tabandaki eleman sayısı vektör uzayının boyutudur. Hemen ne deriz? Üçtür deriz.
+
+412
+01:30:45,427 --> 01:31:01,467
+Bir başka soru sorumuz şu şekilde. W, M2x2, bu bütün 2x2 kare matrislerin oluşturduğu uzay.
+
+413
+01:31:03,247 --> 01:31:07,827
+İşte M2x2 vektör uzayındaki bütün simetrik matrislerin alt uzayı olsun.
+
+414
+01:31:12,979 --> 01:31:25,359
+Aslında bu sorunun bir kısmını daha önceki örneklerde yaptık galiba. W neymiş? 2x2 mertebesinden bütün simetrik matrislerin alt uzayı. Tamam mı?
+
+415
+01:31:26,199 --> 01:31:38,739
+Bir S kümesi veriliyor. Bu S'nin B için bir taban olduğunu gösterin diyoruz.
+
+416
+01:31:40,979 --> 01:31:48,079
+S kümesindeki elemanlara bakarsak, bakın bu simetrik matrisidir değil mi? Transpozesi kendisine eşit.
+
+417
+01:31:49,380 --> 01:32:04,460
+Transpozesi kendisine eşit, transpozesi kendisine eşit. Dolayısıyla S, W'nun nesidir? W'sunun alt kümesidir.
+
+418
+01:32:08,212 --> 01:32:12,312
+Kümenin alt uzay olduğunu, önceki kısımlarda göstermiştik bu.
+
+419
+01:32:14,812 --> 01:32:19,532
+M2 çarpı 2'nin, alt uzayı.
+
+420
+01:32:20,792 --> 01:32:22,612
+Tamam mı? Bunu daha önceden gösterdik.
+
+421
+01:32:23,372 --> 01:32:25,632
+Bu W'nun bir alt kümesi veriliyor bize.
+
+422
+01:32:26,692 --> 01:32:28,092
+S şeklinde.
+
+423
+01:32:28,952 --> 01:32:33,552
+Bu S'nin W için bir taban olduğunu gösterin deniyor sorunun birinci kısmında.
+
+424
+01:32:34,072 --> 01:32:35,772
+İkinci kısımda da,
+
+425
+01:32:37,011 --> 01:33:04,491
+V vektörü, bu, matrisin S'ye göre koordinat vektörünü bulunuz, diye soruyoruz. Bu da bir simetrik matristir, bakın. Bu da W'nun elemanıdır. Bunun transpozesi de yine kendisine eşit olduğu için. Bu verilen V'de W'nun elemanı, yani simetrik matris.
+
+426
+01:33:05,524 --> 01:33:20,104
+Biz sorunun ikinci kısımda bu V'nin, bu S'ye göre, taban olduğunu gösterdikten sonra bu S'ye göre koordinat vektörünü bulunuz diyoruz.
+
+427
+01:33:21,284 --> 01:33:29,224
+Sonra da bu W vektör uzayının boyutu nedir diye soruyoruz.
+
+428
+01:33:29,524 --> 01:33:32,083
+Şimdi bunlara tek tek cevap verelim arkadaşlar.
+
+429
+01:33:36,115 --> 01:33:52,036
+Şimdi, biraz önceki, bugünkü dersimizde de gördük. Bu S kümesinin, şu kümenin B'yi gerdiğini gördük. Daha önceki örneklerimizde.
+
+430
+01:33:55,859 --> 01:34:03,879
+Dolayısıyla, S'deki matrisler, aynı zamanda lineer bağımsızdır. Kolaylıkla görebilirsiniz burada.
+
+431
+01:34:22,036 --> 01:34:37,655
+Bakın, buradan denklemleri yazacak olursak, denklemleri yazacak, bunların yerine ne yazacağım? Şöyle hemen, bir sıfır sıfır sıfır. Bunun yerine, bir sıfır.
+
+432
+01:34:42,515 --> 01:35:09,175
+Ne olacak arkadaşlar? K1, 0, buradan hemen K1 ne olur? Eşit 0. K2'ye geçersek, şu ikinci, şuradaki bileşenlere bakacak olursak, K2 de 0 olur. Şuradaki bileşenlerden de K3 eşit 0 olur. Dolayısıyla verilen 3 tane vektör,
+
+433
+01:35:14,547 --> 01:35:30,627
+Bu üç vektör lineer bağımsız. Daha önceden de bu S kümesinin W gerdeni gösterdik. S kümesi lineer bağımsız olur. Bu S kümesi ne olmuş olur arkadaşlar? Taban olmuş olur W için.
+
+434
+01:35:37,395 --> 01:35:40,155
+S'nin W için taban olduğunu gösterdik.
+
+435
+01:35:41,735 --> 01:35:45,775
+Şimdi bunun S'ye göre koordinat vektörünü bulun diyoruz.
+
+436
+01:35:46,575 --> 01:35:47,875
+O zaman ne yapacağım ben bunu?
+
+437
+01:35:48,335 --> 01:35:58,295
+Bunu, bu vektörü, V'yi, bu V1, V2, V3'ün lineer toplamı şeklinde yazacağım.
+
+438
+01:36:05,108 --> 01:36:29,728
+Bu kaslayıları da görebilirsiniz. Kaslayıların böyle olması gerektiğini de hemen görebilirsiniz. Dolayısıyla, bu v vektörünün, bu v vektörünün, s tabanına göre koordinat vektörü ne olmuş olacak? Eksi dört, iki, bir olarak buluruz. Tamam mı?
+
+439
+01:36:30,804 --> 01:36:44,304
+W vektör uzayının boyutu nedir diyoruz. S'nin taban olduğunu gösterdik. S'de kaç tane eleman var? 1, 2, 3. Dolayısıyla W'nun boyutu 3'tür deriz.
+
+440
+01:36:50,163 --> 01:37:16,823
+Evet, bugün burada bırakabiliriz. Sorunuz var mı? Bana sorunuz varsa sorabilirsiniz. Haftaya son dersimizi yapacağız. Son dersimizde özdeğer, özvektörler konularını göreceğiz. Haftaya bütün konuları bitirmiş oluruz.
+
+441
+01:37:17,908 --> 01:37:28,488
+Peki, herhalde yok. O zaman sizlere iyi günler diliyorum arkadaşlar. Dersiniz varsa iyi dersler. Hoşçakalın. Haftaya görüşmek üzere.
+
+442
+01:37:29,408 --> 01:37:30,208
+Görüşürüz hocam.
