@@ -4,6 +4,7 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
+| 1 | Bahar | — | [sube_1/](sube_1/) |
 | 13 | Bahar | — | [sube_13/](sube_13/) |
 | 15 | Bahar | — | [sube_15/](sube_15/) |
 | 16 | Bahar | — | [sube_16/](sube_16/) |

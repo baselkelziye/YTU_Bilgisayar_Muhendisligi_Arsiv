@@ -1,0 +1,3095 @@
+1
+00:03:24,596 --> 00:03:48,235
+Başlayalım. Katılmaz ama olsun. Bugünkü konumuz vektörler ve uzay geometrisi. Dün kutupsal parametre uygulamalarıyla bitti artık. Onları elveda dedik. Şimdi vektörler, uzay geometrisi doğru düzden falan yürüyeceğiz. Haftaya da buna devam edeceğiz.
+
+2
+00:03:52,084 --> 00:04:04,224
+Peki, vektör, tabii çok anlatmamak lazım vektörü, çünkü vektörü her ders anlatıyor, fizik dahil, değil mi? Vektörlerden bahsediyor. Bir de farklılık var, denene önem vereceğiz, onu da düşünüyorum.
+
+3
+00:04:06,463 --> 00:04:17,184
+Yönlendirilmiş bir doğru parçası, değil mi? Vektör. Bir yönü var. Bunun başlangıç noktası var, bitiş noktası var, bir yönü var, bir de şey var tabii.
+
+4
+00:04:19,956 --> 00:04:28,136
+Magnitüt dediğimiz şey, bir de şiddeti var. Onu da böyle gösteriyoruz.
+
+5
+00:04:32,884 --> 00:04:35,064
+Başlangıç bitim yönü var, yönü var.
+
+6
+00:04:35,843 --> 00:04:40,484
+Burada yön diyor mu yani doğrultu şöyle alsın anıyor musun?
+
+7
+00:04:40,624 --> 00:04:42,424
+Ben kendime özgü anlatayım.
+
+8
+00:04:44,824 --> 00:04:45,424
+Şimdi...
+
+9
+00:04:52,755 --> 00:04:53,875
+x'ye diyelim.
+
+10
+00:04:54,875 --> 00:04:56,315
+Şu vektörden bahsederim.
+
+11
+00:04:58,395 --> 00:04:58,735
+Bunun
+
+12
+00:05:02,100 --> 00:05:03,379
+Başlangıç noktası.
+
+13
+00:05:05,620 --> 00:05:06,720
+Bu bitiş noktası.
+
+14
+00:05:14,708 --> 00:05:18,988
+Yönü, yönü nedir?
+
+15
+00:05:21,928 --> 00:05:22,768
+A'dan B'ye.
+
+16
+00:05:26,355 --> 00:05:46,555
+Adam Bey'e. Bir bunun mutlak değeri, yani değeri, uzunluğu dediğimiz şey. Bu böyle gösteriyor. Magnit de deniyor. Modül de deniyor. Mutlak değer de. Ama mutlak değer anlamı da uzunluk anlamında. Bir de doğrultu var.
+
+17
+00:05:47,923 --> 00:05:59,663
+X'ye doğrultusu. Yani bu X'den Y'den Y'den Y'den Y'den Y'den değil. Şu doğrultudan bahsediyoruz. Doğrultu şöyle. Yön böyle. Bu vektörün özellikleri.
+
+18
+00:06:01,783 --> 00:06:06,264
+Dediğim gibi bu baş kısımlarını hızlı geçiyoruz. Notlarımız var.
+
+19
+00:06:14,548 --> 00:06:20,807
+Sizden tavsiyem, konular çok birikmeden, bir de yeni serilerle ilgili yeni bir uygulama koydum.
+
+20
+00:06:21,187 --> 00:06:22,128
+Exon diye yazıyor.
+
+21
+00:06:22,807 --> 00:06:27,168
+Ondan bakarsanız, orada da serifizilerle ilgili çıkmış sınav soruları var.
+
+22
+00:06:28,288 --> 00:06:30,307
+Yapamadıklarınızı bana mail de gönderirsiniz.
+
+23
+00:06:31,908 --> 00:06:35,947
+Evet, kutupsal parametriklerle ilgili yaptık.
+
+24
+00:06:36,148 --> 00:06:37,427
+Şimdi geldik vektörlere.
+
+25
+00:06:39,427 --> 00:06:41,548
+Evet, uzayda...
+
+26
+00:06:44,244 --> 00:06:48,224
+Şöyle, üçü birbirine diktir, değil mi? Yani uzayda şöyle.
+
+27
+00:06:50,184 --> 00:06:58,224
+X, Y, Z eksenleri ve bunlar katlı z. Katlı z den diklemektir.
+
+28
+00:07:00,403 --> 00:07:00,964
+Evet, şöyle.
+
+29
+00:07:03,344 --> 00:07:07,524
+X yönündeki vektör, bilim vektörün İ diyoruz. İ.
+
+30
+00:07:10,708 --> 00:07:12,688
+Y yönüne J diyoruz.
+
+31
+00:07:16,211 --> 00:07:23,432
+Z yönü de K diyoruz. Bunlar birim vektörü olduğu için bunlar nedir? Her birinin boyu 1'dir.
+
+32
+00:07:25,672 --> 00:07:28,792
+Bir birimdir. Yani o da eşitçi.
+
+33
+00:07:30,491 --> 00:07:33,072
+Kartelize baz vektörler denir buna.
+
+34
+00:07:35,412 --> 00:07:39,391
+Bunların özelliği birbirlerine diktir.
+
+35
+00:07:40,572 --> 00:07:43,532
+Hem boyları 1'dir, hem
+
+36
+00:07:45,139 --> 00:07:47,720
+Böyle, J, K'ya diktir.
+
+37
+00:07:52,339 --> 00:08:10,600
+Kaya diktir. Bunlar, 3 erli birbirlerine diktir. Peki. Bunlar kartezen baz vektörü ve uzaydaki bir cismin hareketini de bunlar cinsinden gösteririz. Mesela diyelim ki.
+
+38
+00:08:14,132 --> 00:08:20,091
+OP vektörü, mesela uzayda diyelim bir cisim var, bir uydu var, bir şey var.
+
+39
+00:08:22,032 --> 00:08:26,632
+Yer vektörü şuysa, yer vektörü de R ile gösteriliyor.
+
+40
+00:08:29,272 --> 00:08:35,752
+X, Y, Y, Y, bu da cismin konumunu gösteriyor.
+
+41
+00:08:38,951 --> 00:08:39,711
+Mesela,
+
+42
+00:08:42,580 --> 00:08:44,120
+Şuraya kadar x aldık.
+
+43
+00:08:45,180 --> 00:08:46,400
+Burası y oldu.
+
+44
+00:08:46,700 --> 00:08:47,900
+Kes işte.
+
+45
+00:08:50,120 --> 00:08:50,980
+Yukarıda
+
+46
+00:08:50,980 --> 00:08:53,940
+z oldu.
+
+47
+00:08:53,940 --> 00:08:54,940
+İşte.
+
+48
+00:08:55,900 --> 00:08:57,819
+Yani op vektörü de
+
+49
+00:08:57,819 --> 00:09:00,580
+yer vektörü.
+
+50
+00:09:01,420 --> 00:09:02,840
+Evet, yer vektörü.
+
+51
+00:09:15,860 --> 00:09:19,639
+Herkesle oluyor mu bu ortaya? Görüntünün sonradan gelmesi.
+
+52
+00:09:25,268 --> 00:09:26,347
+Niye öyle oldu bugün?
+
+53
+00:10:09,556 --> 00:10:11,196
+Bir daha deneyelim bakalım.
+
+54
+00:10:20,211 --> 00:10:22,187
+Neden olduğunu bilemiyorum.
+
+55
+00:10:32,755 --> 00:10:33,336
+Bu konum.
+
+56
+00:10:40,916 --> 00:10:42,956
+Şu anda sayfayı görüyorsunuz değil mi?
+
+57
+00:10:46,416 --> 00:10:48,196
+Yazdığım zaman mı geç geliyor bilmiyorum.
+
+58
+00:10:48,396 --> 00:10:49,416
+Neden böyle bir olay var?
+
+59
+00:10:49,456 --> 00:10:50,615
+Verdiğiniz hiç olmazdı da.
+
+60
+00:10:54,196 --> 00:10:54,655
+Evet.
+
+61
+00:10:59,860 --> 00:11:03,039
+Evet, şu anda bir sorun varsa yine yazdım ben chatten bakacağım.
+
+62
+00:11:04,220 --> 00:11:08,580
+Şimdi, vektörleri anladık, bunu fizikten, kimyadan biliyoruz.
+
+63
+00:11:08,580 --> 00:11:19,539
+Bu şekilde uzayda, tamam mı? Yani X, O, Y, Z, Excel sisteminde bunları gösterebiliriz.
+
+64
+00:11:27,028 --> 00:11:31,648
+J vektörü 0, 1, 0, yani bu şekilde, tamam mı?
+
+65
+00:11:32,168 --> 00:11:37,668
+I vektörünü bu şekilde gösteririz, J vektörünü bu şekilde. Ama 2'yi derse, şöyle oluyor.
+
+66
+00:11:40,827 --> 00:11:45,788
+2'yi vektörü bunun iki katı oluyor. 2'yi, bunun iki katı. Eksi olsa geriye doğru.
+
+67
+00:11:47,067 --> 00:11:51,067
+Mesela, eksi 2'yi. Boyu 1 ama yönü ters.
+
+68
+00:11:52,980 --> 00:11:56,600
+Evet, bir soru yaşıyorsanız yazın da arkadaşlar, ben düzeltmeye çalışayım.
+
+69
+00:11:59,440 --> 00:12:00,100
+Peki.
+
+70
+00:12:01,460 --> 00:12:10,940
+Evet, uzayda bir KTZ koordinat sistemleriyle sırasıyla orijinal, noktalarında olan, oklarla temsil edilen 3 standart baz vektörüdür.
+
+71
+00:12:11,060 --> 00:12:12,720
+İJK olarak tanımlandı. Tamam.
+
+72
+00:12:13,104 --> 00:12:20,704
+3 boyutta uzaylık yer hangi bir vektör? Baz vektörleri bir linear kombinasyonu. Linear kombinasyonu ne demek biliyor musun? Toplaması demek.
+
+73
+00:12:20,704 --> 00:12:31,604
+Yani bu şekilde mesela bu bir vektörü gösterirken, biraz önce göstermiştim, r vektörü, yer vektörü x, i,
+
+74
+00:12:35,700 --> 00:12:36,660
+Yenşir
+
+75
+00:12:40,755 --> 00:12:43,596
+Bir sorun varsa, yazarsanız ben oradan anlayabiliyorum.
+
+76
+00:12:43,775 --> 00:12:44,556
+Tamam mı? Evet, bu.
+
+77
+00:12:45,515 --> 00:12:48,995
+İşte lineer kombinasyon, yani lineer toplama şeklinde böyle.
+
+78
+00:12:49,135 --> 00:12:51,955
+Lineer birinci dereceden, lineer kombinasyon nedir diye.
+
+79
+00:12:52,395 --> 00:12:56,096
+İşte lineer birinci dereceden toplamları şeklinde gösterilmiş.
+
+80
+00:12:56,675 --> 00:12:58,455
+Mesela R vektörü biz nasıl gösteririz?
+
+81
+00:12:58,816 --> 00:13:00,015
+R vektörü bu.
+
+82
+00:13:01,355 --> 00:13:02,695
+Şu vektör düz olacak tabii.
+
+83
+00:13:04,015 --> 00:13:05,395
+Bunun da bir x'i var.
+
+84
+00:13:06,495 --> 00:13:07,275
+Bir y'si var.
+
+85
+00:13:07,635 --> 00:13:08,375
+Bir d'si var.
+
+86
+00:13:09,524 --> 00:13:11,764
+Onu çizmek için de şöyle çıkıyoruz.
+
+87
+00:13:12,764 --> 00:13:15,463
+Bu da yer vektörü oluyor.
+
+88
+00:13:16,324 --> 00:13:21,943
+3 standart baz vektörü yüzünden bu şekilde lineer kombinasyon, lineer toplam şeklinde yazılır diyoruz.
+
+89
+00:13:21,943 --> 00:13:22,223
+Peki.
+
+90
+00:13:24,963 --> 00:13:34,364
+Evet, uzayda baz vektörler, baz vektörler x yönlü y vektörü, y yönlü j vektörü ve z yönlü k.
+
+91
+00:13:35,028 --> 00:13:44,408
+baz vektörü, bilim vektörü gösteriyor. 3 boyutlu uzaydaki herhangi bir vektör, baz vektörü bilirel kombinasyonu olarak ifade edilebilir diyor. Peki devam edelim.
+
+92
+00:13:48,887 --> 00:13:56,687
+3 boyut, tamam ifade edilir, toplam olarak ifade edilir. Örneğin diyor, x, y, d noktasının yel vektörü, bunu anlattım zaten.
+
+93
+00:13:56,687 --> 00:14:00,988
+Bunu anlattım. Bu şekilde x, y, y, y.
+
+94
+00:14:01,524 --> 00:14:06,463
+Bir şey söylemek istiyorum. Mesela İngilizce kitaplara baktığınız zaman şu işareti koymuyorlar arkadaşlar.
+
+95
+00:14:08,864 --> 00:14:16,504
+Mesela şu vektör işaretini koymuyorlar. Mesela vektörü yazalım. Onlar ama kitaplı siyah, koyu şeyde yazıyorlar.
+
+96
+00:14:16,703 --> 00:14:26,364
+Mesela şu i yazarken normal bir i değil. Bold yani böyle daha koyu yazıyorlar. Oradan biz onun vektörü olduğundan diyoruz. Vektör işareti koymuyorlar.
+
+97
+00:14:27,347 --> 00:14:36,347
+Niye bunu seçmişler? Onu da anlamıyorum. Yazımda kolay olsun diye düşürmüş olabilirler. Öyle bir şey uydurmuşlar. Yoksa biz vektör yapacağız.
+
+98
+00:14:37,347 --> 00:14:48,347
+Diğer vektör bu şekilde ve uzunluğu da, modülü de, tamam mı? Vektörün uzunluğu da, kare kök x kare artı y kare artı z kare.
+
+99
+00:14:48,347 --> 00:14:54,347
+Bu toplam yani kare kökün içinde x kare artı y kare artı z kare. Bu da bu vektörün modülü.
+
+100
+00:14:54,707 --> 00:15:21,168
+Peki. İki noktadan geçen, üç boyutlu uzayda iki nokta, P1'den P2'ye olan vektörü yazmak istiyorsak, ne yapacağız biliyor musunuz? Buradan bunu çıkartacağız. Buradan bunu çıkartacağız. Buradan bunu çıkartacağız. Böylece, ne elde edeceğiz? Ben devam ediyorum, sorun yok diye düşünüyorum. Varsa yazın, sorun var diyeyim. Ben ne yapacağımı?
+
+101
+00:15:22,004 --> 00:15:27,124
+Bakalım, chat mesajı yok. Demek ki sorun yok.
+
+102
+00:15:30,323 --> 00:15:30,923
+Peki.
+
+103
+00:15:33,524 --> 00:15:35,283
+Tamam, şu an yoksa sorun tamam.
+
+104
+00:15:36,063 --> 00:15:39,024
+Demek ki 3 boyutlu uzayda vektörü böyle yazıyor.
+
+105
+00:15:39,124 --> 00:15:40,283
+Bak dikkat edin, bak tek tek.
+
+106
+00:15:40,683 --> 00:15:41,803
+Yavaş yavaş anlatıyorum.
+
+107
+00:15:42,083 --> 00:15:45,463
+Birim vektörü, şey, modülüme bahsettik.
+
+108
+00:15:45,644 --> 00:15:46,624
+Bu yer vektörü.
+
+109
+00:15:47,543 --> 00:15:47,903
+Yani.
+
+110
+00:15:48,467 --> 00:16:00,067
+Şöyle yazılıyor. Bunu da yazılışını anlatayım isterseniz. Burası orjunya çocuklar. Bu da orjunya. Bakın. Bu detayı da göstereyim. 0, 0, 0.
+
+111
+00:16:03,387 --> 00:16:14,527
+O, P vektörüne, O'dan başlayan vektörlere yer vektörü dönüyor. O, P vektörü de. Evet, tamam mı? Bu da şöyle. X eksi 0.
+
+112
+00:16:17,139 --> 00:16:22,080
+y-0, bitim noktasından başlangıç noktasını çıkartıyorum, z-0.
+
+113
+00:16:23,500 --> 00:16:28,019
+Evet, yani x, y, z.
+
+114
+00:16:30,699 --> 00:16:33,679
+Evet, bu şekilde yazıyoruz. Bunun bir eşiti var.
+
+115
+00:16:34,679 --> 00:16:42,299
+x, i, artı, arkadaşlar her dersin başı önemlidir, tüm detayları burada anlatıyorum.
+
+116
+00:16:42,379 --> 00:16:43,679
+y, j, artı, z, k.
+
+117
+00:16:44,724 --> 00:17:05,284
+Biz vektör sorularında, iyika baz vektörleri cinsinden birim, baz vektörleri cinsinden de verebiliriz. Böyle de verebiliriz. İkisinin arasındaki fark, tamam mı? Dikkat edin. Bir vektör yazıyoruz. X, Y, Z demişiz. Bu aynı zamanda budur. Bu aynı zamanda R'dir.
+
+118
+00:17:07,403 --> 00:17:08,483
+Evet, R'dir.
+
+119
+00:17:09,523 --> 00:17:17,583
+Anlatabiliyor muyum? Eğer orijine birleştiren vektörden bahsediyorsak, yer vektörü, yani uzaydaki konumudur, yeridir.
+
+120
+00:17:18,963 --> 00:17:23,923
+Bu, i, j, k ile yazıyoruz ya da böyle yazıyoruz. Ya da başka bir şekilde yazıyoruz.
+
+121
+00:17:25,143 --> 00:17:35,123
+X, Y, Z. Böyle de yazıyoruz. Bu üçü aynı şeyi gösteriyor çocuklar.
+
+122
+00:17:37,172 --> 00:17:48,972
+Bu, bu, bu bir vektörün yazılışıdır. Şöyle de yazılıyor, böyle de yazılıyor, böyle de yazılıyor. Yuvarlak parantel içinde de yazılıyor. Bu bir vektör gösteriyor.
+
+123
+00:17:50,692 --> 00:17:54,552
+Şununla karıştırılmasın. Bir vektör yazıyoruz diyelim. AB vektörü.
+
+124
+00:17:58,451 --> 00:18:01,052
+AB vektörü nedir? İşte yazdık değil mi normal?
+
+125
+00:18:02,152 --> 00:18:06,951
+İşte bu koordinatları çıkartarak x2-x'dir, iki noktayı çıkartarak bunu yazdık.
+
+126
+00:18:08,592 --> 00:18:09,871
+y2-y1
+
+127
+00:18:14,259 --> 00:18:16,259
+Z2-Z1.
+
+128
+00:18:18,259 --> 00:18:20,259
+Bu AB vektörü.
+
+129
+00:18:20,259 --> 00:18:26,259
+Ama bir de, mesela dikkat edin, bunu vektör diye görmeyin çocuklar.
+
+130
+00:18:27,259 --> 00:18:34,259
+Bakın, burada üzerinde bir vektör işareti yok, tamam mı? Bu bir noktadır. Bu noktayla, bunu karıştırmayın. Yani şu ikisini karıştırmayın.
+
+131
+00:18:35,259 --> 00:18:39,147
+Şu başlangıç kısmına da bakın, tamam mı? Böyle verildiğin zaman...
+
+132
+00:18:39,635 --> 00:18:59,755
+Bir de burada eşit konulur, tamam mı? Yani burada eşit konulur, burada eşit konulmaz, direkt parantez aç. Şöyle yazmayız yani, AB aç parantez demeyiz. Anlatabiliyor muyum? İlla bu arada bir eşit vardır yani. Dolayısıyla bu bir nokta gösterir, bu vektör değildir.
+
+133
+00:19:02,420 --> 00:19:08,079
+Tüm detayları ortaya koyalım matematik açısından. Matematikçi açısından anlatıyorum.
+
+134
+00:19:11,859 --> 00:19:13,000
+Taylor, bir tek tek.
+
+135
+00:19:32,307 --> 00:19:57,067
+Peki, bu şekilde V vektörünü de yazdık, güzel. Bu şekilde yazdık, bu şekilde yazdık, tamam mı? Veya buna, şu da olabilir dedik ya da böyle yuvarlak parantör içinde yazabilirsiniz, tamam mı? Yani bunu buraya, bunu buraya, şunu da buraya yazabilirsiniz. Üç dönü de mektörü gösteriyoruz, dedik. Evet.
+
+136
+00:20:00,019 --> 00:20:00,799
+devam ediyorum.
+
+137
+00:20:05,748 --> 00:20:10,028
+Vektörün uzunluğu, normu, bazı kelimeler kullanıyoruz, norm.
+
+138
+00:20:13,971 --> 00:20:14,751
+Modül
+
+139
+00:20:20,211 --> 00:20:28,291
+Bu da şöyle, vektör şuydu ya, her bir bileşenin, kalelerin, toplamının kare kültü oluyor. Peki, bu da tamam.
+
+140
+00:20:30,432 --> 00:20:36,632
+Vektörde cevirsel işlemlere bakalım şimdi. İyi, baştan yüzüne attık yani, binanın temelini attık şu an.
+
+141
+00:20:37,892 --> 00:20:40,892
+Vektörün ne olduğunu, nasıl gösterildiğini görürsünüz. Devam ediyorum.
+
+142
+00:20:42,632 --> 00:20:47,271
+Bir, u vektörü verilmiş, v vektörü verilmiş. Alfa da bir skaler sayıyım.
+
+143
+00:20:48,019 --> 00:21:01,299
+Toplarken diyor, U'nun kat sayısıyla U'yu, J ile J'yi, K ile K'yı çıkartırken de öyle, U'yla U'yu çıkartacaksınız, J ile J'yi, K ile K'yı çıkartırken de, vektörler, bin baz vektörlerle yazacaksınız.
+
+144
+00:21:01,299 --> 00:21:06,500
+Tamam, alfayla çalıştığınız zaman da her bir bileşinin başına alfa gelecek, tamam.
+
+145
+00:21:07,299 --> 00:21:11,199
+İki vektör paralelse çocukla, biri birbirinin katıdır.
+
+146
+00:21:12,460 --> 00:21:13,719
+Yani şunu söylemek istiyorum.
+
+147
+00:21:15,635 --> 00:21:17,016
+A vektörü,
+
+148
+00:21:18,556 --> 00:21:20,175
+B vektörüne parlense,
+
+149
+00:21:22,576 --> 00:21:23,655
+A eşittir,
+
+150
+00:21:24,936 --> 00:21:25,735
+KB'dir.
+
+151
+00:21:30,804 --> 00:21:40,704
+Evet, KB'dir. Yani bir katıdır. Tamam mı? Bu iki mektir. K- ise ters yönderdir. Bu böyleyken, diğeri böyle olabilir.
+
+152
+00:21:42,524 --> 00:21:48,184
+A eşittir, B de olabilir. Çakışıktır zaten. Çakışık olan her şey zaten birbirine paralel demektir.
+
+153
+00:21:52,115 --> 00:21:52,695
+Peki.
+
+154
+00:21:56,692 --> 00:22:22,372
+Yazdık, alfa katıldır dedik, tamam güzel, anlıyorsunuz. Bir sorun varsa zaten söylerse. Birin vektör demek. Uzunluğu 1 olan bir vektördür. Yani i birin vektördür, mesela bunun uzunluğu 1'dir. Neden? i'nin uzunluğu, normu, modülü nedir? Kare kök. 1 artı 1'in karesi artı 0'ın karesi artı 0'ın karesi.
+
+155
+00:22:22,996 --> 00:22:27,436
+Bir çıkar. Diğerlerini yapmaya gerek yok. Bunları yapacağız, standart bilim vektörler.
+
+156
+00:22:27,436 --> 00:22:28,556
+Tamam mı? Peki.
+
+157
+00:22:29,635 --> 00:22:32,076
+Bunu da anladınız. Sınıfta anlamayan yok.
+
+158
+00:22:32,796 --> 00:22:33,756
+Devam ediyorum.
+
+159
+00:22:37,236 --> 00:22:41,036
+Her vektör, standart birim vektörlerin bir linear birleşimi olarak ifade edilir.
+
+160
+00:22:42,036 --> 00:22:48,336
+Evet, yani bunların iyici kanı, standart linear birleşim toplam demektir değil mi?
+
+161
+00:22:48,736 --> 00:22:51,655
+Yani AX artı B'ye artı C'ye linear ifade ediyorduk ya.
+
+162
+00:22:52,356 --> 00:22:53,236
+Öyle değil mi?
+
+163
+00:22:54,536 --> 00:22:56,635
+Bu denklemleri linear denklem demiyor muyduk?
+
+164
+00:22:58,256 --> 00:23:02,016
+Linear cebiret böyle birinci dereceden ifadelerden incelenmiyor muydu?
+
+165
+00:23:02,016 --> 00:23:02,756
+Evet, mesela bu.
+
+166
+00:23:02,996 --> 00:23:03,496
+Burada da.
+
+167
+00:23:03,839 --> 00:23:08,839
+A x artı b'ye bir lineer kombinasyon demektir, toplam demektir, c de.
+
+168
+00:23:09,919 --> 00:23:11,779
+Mesela bu da bir lineer ifadedir.
+
+169
+00:23:12,419 --> 00:23:15,299
+Peki lineer ne değildir dersek mesela,
+
+170
+00:23:16,179 --> 00:23:17,859
+A x kare lineer değildir.
+
+171
+00:23:20,276 --> 00:23:34,655
+Veya x, y çarpımı olan lineer değildir. y kare lineer değildir. x çarpı z lineer değildir. Lineer x, y, z. Yani burada da i, j, k birbirleriyle toplam olarak yakın.
+
+172
+00:23:34,655 --> 00:23:43,496
+Mesela 2, 3, j, 4, k gibi. Evet, böyle bir lineer toplam olarak yazılıyormuş. Tamam, i, j, k'nın lineer toplam olarak yazılıyormuş. Tamam.
+
+173
+00:23:45,652 --> 00:23:50,912
+Her vektörün kendi doğrultuluğu ve yönünde birim vektörü vardır. Zıt yönü de vardır tabii.
+
+174
+00:23:53,192 --> 00:24:04,652
+İki tane birim vektörü vardır. Birisi, yani şunu yazabiliriz. Aslında artı eksi. Eksilisi zıt yönlü birim vektörüdür. Uzunluğu birdir ama zıt yönlüdür.
+
+175
+00:24:05,432 --> 00:24:12,152
+O ile zıt yönlüdür. Artılısı da nedir? Artılısı da aynı yönlü birim vektördür. Bunu da bildik.
+
+176
+00:24:13,428 --> 00:24:14,628
+Güzel, bu da tamam.
+
+177
+00:24:17,328 --> 00:24:23,468
+Bakıyorum, Taylor çarpım, nokta çarpım şu şekilde hesaplanıyor.
+
+178
+00:24:24,648 --> 00:24:27,048
+Söyleyeyim, iki vektör var.
+
+179
+00:24:28,148 --> 00:24:38,268
+Bunun skaler çarpımı, i ile i'nin skaler çarpımı, şöyle söyleyeyim, i ile i'nin skaler çarpımı,
+
+180
+00:24:40,564 --> 00:25:07,724
+Şu formülten, bak tekrar söylüyorum, bir skader çarpıda bu, i modül, uzunluk, i modül, çarpı, kosinüs, açı kaç derecedir? Sıfır derecedir değil mi? Aynı vektörün kendisiyle yaptığı açı nedir? Sıfır derecedir. Burası bir olduğu için. Modüllerde bir olduğuna göre değil mi? Demek ki ne diyoruz? Merhaba.
+
+181
+00:25:08,115 --> 00:25:13,236
+i çarpı i, neye eşit? 1'e.
+
+182
+00:25:14,056 --> 00:25:19,276
+i çarpı j nedir dersek, onu da bakalım.
+
+183
+00:25:19,596 --> 00:25:25,676
+i çarpı j de, şurada kosinus 90 yazarsak, 0 çıkar.
+
+184
+00:25:25,936 --> 00:25:31,375
+Buradan da dik olanların, aralandı yani 2 vektör birbirine dikse, bu i bu j ise atıyorum.
+
+185
+00:25:32,307 --> 00:25:43,207
+Aralık açı 90'sa, skaler çarpımdan 0 olduğunu görürüz. Bunu da söyledik. Skaler çarpım formülü de söyledik. Nokta çarpım deniyor.
+
+186
+00:25:49,395 --> 00:25:56,395
+Bu şekilde tamam mı? Bakın ne yaptık? İkisini dağıttık. Peki bunu biraz dağıtmayı gösterelim.
+
+187
+00:25:59,395 --> 00:26:09,395
+Şuna bakın. Mesela, bu ikisini çarptığım zaman, şimdi, Scaler çarptığım, bak, i ile i nedir?
+
+188
+00:26:10,516 --> 00:26:21,696
+1'dir, değil mi? Yani 1, hani skala çarpım 1'dir. Ne yaptı? Bu çıktı, değil mi? Peki, i ile j ne oldu? Dik olduğu için 0. İ ile k ne oldu? 0, değil mi? Bak bunlar 0 çıktı.
+
+189
+00:26:22,676 --> 00:26:35,816
+Demek ki, dik olduğu zaman 0 çıkıyor. Bundan bu 0 çıktı. Bununla bunu çarptım, dağıtarak 1 çıktı. Bu 1 çıktı. Bu da 0 çıktı.
+
+190
+00:26:38,483 --> 00:26:50,163
+Bu k'ya geldiğimiz zaman da, bu 0 çıktı, bu da 0 çıktı, bu 1 çıktı. İşte bu, onun için elde edildi. Tamam mı? İlk oranlar 0 olduğu için.
+
+191
+00:26:50,163 --> 00:27:04,644
+Skader çarpımı öyle tanımlanmış arkadaşlar. Evet. Sonuçta 2 vektörü skader çarpılı birleşenlerin de aynı aynı çarpı ile ilgili u1 ve1, u2 ve3 ve3. Uzatmayalım. 2 vektör arasındaki açı da,
+
+192
+00:27:05,491 --> 00:27:07,831
+Bu formüle bulunuyor.
+
+193
+00:27:09,471 --> 00:27:09,951
+Tamam mı?
+
+194
+00:27:11,571 --> 00:27:13,731
+Bu formülden bulabiliyoruz.
+
+195
+00:27:13,811 --> 00:27:21,111
+Zaten dedik ki, iki vektörün skaler çarpımı, modündar çarpımı çarpımı, kosinus theta formülünden bulunuyor.
+
+196
+00:27:21,692 --> 00:27:24,892
+Kosinus theta'yı yanınızda kırsak, nedir kosinus theta?
+
+197
+00:27:27,031 --> 00:27:29,351
+Kosinus theta eşittir.
+
+198
+00:27:30,211 --> 00:27:31,511
+U çarpı ve
+
+199
+00:27:34,708 --> 00:27:58,327
+Bölü, U modül, B modül. Bunları bilmemiz gerekiyor. B modül. Uzunluk yani. Peki. Bu şekilde. Peki. Bu da buna da peki dedik. Soru da yok. Demek ki anlaşılıyor ders. Bakalım yine çetez bakayım. Yok. Peki. Devam edelim.
+
+200
+00:28:04,435 --> 00:28:13,535
+Eğer açı 90 derece ise, tamam, tabii ki, Taylor çarpımı 0'dır. Onu daha önce söylediğim, i ile j'nin çarpımı, j ile k'nın çarpımı 0'dır. Diye, 90 derece.
+
+201
+00:28:15,455 --> 00:28:15,795
+Peki.
+
+202
+00:28:17,895 --> 00:28:19,675
+Taylor çarpımın özelliklerine gelelim.
+
+203
+00:28:23,731 --> 00:28:28,852
+U, V ve W birer vektör, alfada bir skaler olsun diyor, şu özellikler varmış.
+
+204
+00:28:29,571 --> 00:28:35,571
+Skaler çarpımında değişme özelliği varmış. Distribütör, yani dağılma özelliği var.
+
+205
+00:28:35,571 --> 00:28:41,831
+U, V, V, V, U'ya eşit. Burada ne var? Dağılma özelliği var.
+
+206
+00:28:42,771 --> 00:28:56,551
+U ile V'yi çarpıyoruz, artı, U ile W'yu çarpıyoruz, vektörü çarpıyoruz. Alfa ile çarparken de böyle bir özellik var. Alfa, bunun yanına da gelebilir, buraya da gelebilir. Başka da şunu yazabiliriz, o da eşittir. İki tane var, tamam, başlayalım.
+
+207
+00:28:57,991 --> 00:29:06,091
+Ve sıfır vektörle, skaler çarpımı, sıfır vektör, sıfır vektör şu.
+
+208
+00:29:11,251 --> 00:29:12,251
+Suföl E
+
+209
+00:29:16,660 --> 00:29:17,619
+0, c,
+
+210
+00:29:18,660 --> 00:29:21,559
+0, k.
+
+211
+00:29:22,599 --> 00:29:23,180
+Evet, bu,
+
+212
+00:29:24,920 --> 00:29:27,460
+0 vektör, tamam mı? Bu 0 vektörü.
+
+213
+00:29:29,460 --> 00:29:32,740
+Ama, mesela diyelim ki, bir a vektörü var diyelim.
+
+214
+00:29:35,180 --> 00:29:35,940
+O da i,
+
+215
+00:29:37,220 --> 00:29:37,720
+eksi,
+
+216
+00:29:37,960 --> 00:29:40,099
+eksi, k olsun.
+
+217
+00:29:41,920 --> 00:29:43,299
+0 vektörle,
+
+218
+00:29:44,051 --> 00:29:45,891
+A vektörü çarparsak
+
+219
+00:29:49,587 --> 00:30:12,208
+Bu 0 ile bir 0, 0, 0, sonuç 0 çıkar. Ama buradaki 0 vektör değildir. Nedir bir? Skalerdir. Niye skalerdir? Önemli bir şey arkadaşlar. İki tane vektör skaler ise, bu sonuç bir sayıdır yani. Sayı çıkan sonuç. Skalerdir. Skalerdir. Çünkü iki türlü büyüklük var.
+
+220
+00:30:12,559 --> 00:30:20,659
+Bir skaler büyüklük var, bir de vektörer büyüklükler var. Skaler büyüklük sayıları yön falan gösteremez. Vektörer büyüklük yön gösterir.
+
+221
+00:30:22,439 --> 00:30:36,239
+Ben burada niye uğraşıyorum? Burada sıfıra vektör koyamayız. Çünkü skaler çarpımı yapılmış. Bu sıfırla bu sıfır aynı değil. Şu ikisi aynı değil. Burada bir vektör var. Bunun üç bileşeni var fakat üç bileşeninin her biri.
+
+222
+00:30:36,607 --> 00:30:43,747
+Kas sayısı sıfır ama buradaki sayısı normal sıfır vektör değil. Bunları söyleyelim, sınavda bir hata yapmayın.
+
+223
+00:30:46,467 --> 00:30:55,687
+En küçük detaylara daha çok önem veriyoruz. Test sınavı olması, yani çok yüksek ihtimal tabii. Onun için en küçük detaylara önem veriyoruz.
+
+224
+00:31:00,372 --> 00:31:27,592
+Hataya sürükleyebilirler. Skaler çarpımı sonuç vektör çıkmaz. Skaler çarpımı sonucu skaler. Skaler demek vektör değil, sayı demek. Evet, burada onun için bak, bu 4 nolu maddeyi, 4 nolu maddeyle niye 0 yazmış üzerine vektör koymamışlar. Çünkü skaler çarpımı buradaki 0, buradaki 0 vektör değil. Onu anlat bakalım. Bir geçelim. Evet, aynı vektörü çarpıyoruz. Niye bunu eşit?
+
+225
+00:31:28,211 --> 00:31:36,211
+Şunun için, onu da söyleyelim, bu niye öyle? Şurası. Çarpımı söylüyorum.
+
+226
+00:31:36,211 --> 00:31:40,211
+Yani u ile u'nun çarpımı u modül.
+
+227
+00:31:40,211 --> 00:31:55,211
+u modül, kosünün 0 çünkü, iki vektör arasındaki açı 0'dur çünkü aynı vektörde. Burası 1 ettiğine göre, burası da u modül kare oluyor.
+
+228
+00:32:00,339 --> 00:32:11,019
+Buradan U ile B'nin, Scaler çarpımının modülü, yani bunun uzunluğunun, şundan küçükmüş, her bir, eşit de olabilirdir.
+
+229
+00:32:11,960 --> 00:32:18,119
+İki vektör var, biz bunları Scaler çarptık ve o değere baktık. Uzunluğuna baktık, mutlak değerine baktık.
+
+230
+00:32:19,559 --> 00:32:24,720
+Burası mutlak değer tabii, yani bu Scaler olduğu için, bu modülü olmaz, mutlak değerdir bu.
+
+231
+00:32:25,519 --> 00:32:26,880
+Bu da U'nun.
+
+232
+00:32:27,731 --> 00:32:54,112
+modül ile benim uzunluğum çarpımından küçük olur veya eşit olur diyor. Küçük, yani büyük olmaz. En fazla eşit olabilir. Eğer dikse de, skaler çarpımdan sıfırdır diyor. Tamam, gerek yok. Geçelim. Vektörüz düşümleri, bu önemli. Zor. Vektörüzü bu hem önemli hem zor.
+
+233
+00:32:56,948 --> 00:33:04,188
+Bunu daha dikkat edelim. Şimdi bir vektörün, bir vektör üzerinden iz düşümünden bahsediyoruz. Şimdi u vektörü pq vektörü.
+
+234
+00:33:04,948 --> 00:33:10,628
+Sıfırdan farklı, v vektörü de tsl vektörü. Burası yani yatay vektörü.
+
+235
+00:33:10,628 --> 00:33:16,428
+İz düşümü, q'den pansaya dolusuna dik bir çizgi çizilmesiyle elde edilir iz düşüm.
+
+236
+00:33:17,148 --> 00:33:22,988
+Şuradan bahsediyor yani, şu. Dikindik, şurası ne dedik? R dedik değil mi? R dedik.
+
+237
+00:33:23,380 --> 00:33:26,700
+Bu vektörün, bunun üzerindeki izdüşümü PR'dir.
+
+238
+00:33:27,480 --> 00:33:28,380
+Yani,
+
+239
+00:33:30,300 --> 00:33:33,100
+projektif artık Türkçe'ye girmiş.
+
+240
+00:33:33,100 --> 00:33:35,660
+Yani, biz eskiden şey yazardık,
+
+241
+00:33:35,660 --> 00:33:38,740
+izdüşüm, yani projektif, izdüşüm demek.
+
+242
+00:33:38,740 --> 00:33:39,740
+İst,
+
+243
+00:33:41,300 --> 00:33:42,140
+bu ve
+
+244
+00:33:43,100 --> 00:33:43,860
+u.
+
+245
+00:33:44,120 --> 00:33:46,160
+Ben yine böyle yazmaya devam ediyorum.
+
+246
+00:33:46,420 --> 00:33:49,420
+Tamam mı? İzdüşüm. Yani, o ve üzerinde izdüşüm.
+
+247
+00:33:50,900 --> 00:33:55,400
+O da, yani şu vektörü yazmak istiyoruz arkadaşlar.
+
+248
+00:33:56,920 --> 00:34:01,800
+Bu vektör üzerindeki izlişimini, bunun, şu vektör üzerindeki izlişimini yazmak istiyoruz.
+
+249
+00:34:03,400 --> 00:34:04,700
+Nasıl yapıyoruz?
+
+250
+00:34:05,360 --> 00:34:07,760
+Kosünüs teta, bakın kosünüs teta nedir?
+
+251
+00:34:08,860 --> 00:34:10,640
+Kosünüs teta nedir?
+
+252
+00:34:11,760 --> 00:34:13,579
+V bölü, U'dur değil mi?
+
+253
+00:34:13,579 --> 00:34:18,699
+V bölü, bakın kosünüs teta, komşu dik.
+
+254
+00:34:19,827 --> 00:34:20,667
+Şöyle söyleyeyim.
+
+255
+00:34:24,167 --> 00:34:25,127
+Pardon.
+
+256
+00:34:26,268 --> 00:34:28,768
+U çarpı kosünüsü, şöyle söyleyeyim bir dakika.
+
+257
+00:34:31,167 --> 00:34:32,907
+Şunu tam nasıl oluşturalım?
+
+258
+00:34:33,007 --> 00:34:37,327
+Şimdi kosünüsü tekrar, şöyle bir formül vardı ya, şunu söyleyeceğim.
+
+259
+00:34:39,108 --> 00:34:40,427
+Biraz yukarıda anlatmıştık.
+
+260
+00:34:40,988 --> 00:34:42,127
+U çarpı ve
+
+261
+00:34:42,127 --> 00:34:45,967
+bölü modül.
+
+262
+00:34:49,972 --> 00:35:13,311
+Bakın. Şimdi bunları işler dışarı çarpımı yaptığımız zaman, B'yi burada bırakırsak şu çıkar, tamam mı? U modülü çarpı, kosin üst teta, şu, U uzunluk, uzunluğu kosin üst teta'ya çarparsak, şuradaki iz düşümü verir, tamam mı? Yani şuradaki, PR'nin iz düşümünü verir, uzunluğunu verir, onu demek istiyor.
+
+263
+00:35:13,972 --> 00:35:24,092
+Nasıl oluyor? Şuradaki pr'nin izdüşümüne, tamam mı? pr. Şöyle söyleyeyim. Kosinus teta, ben kendi bildiğimi göre alayım. Kosinus teta eşittir.
+
+264
+00:35:25,612 --> 00:35:33,972
+pr vektörü, işte bu izdüşüm vektörü aslında, pr vektörü. Bölü u vektörü. Tamam mı? Kosinus teta bu.
+
+265
+00:35:35,452 --> 00:35:39,231
+Bu da u'nun uzunluğu oluyor tabii. Dikkat edin.
+
+266
+00:35:41,684 --> 00:35:56,444
+pr vektörü, pr vektörü nedir? u, iştadaşa çarpımı yaparsan bu çıkar, tamam mı? Bu vektörü. Anlatabiliyor muyum? Bu vektörden bahsediyoruz.
+
+267
+00:35:57,644 --> 00:36:05,123
+Yani cos theta eşittir, şuradaki iz düşümüdür, yani şu uzunluğu bulduk, tamam. Buradaki iz düşümünü bulduk, tamam.
+
+268
+00:36:08,275 --> 00:36:09,735
+PR modül değil.
+
+269
+00:36:10,855 --> 00:36:14,155
+PR uzunluk bu kosinist eteği verdi. Yani PR
+
+270
+00:36:14,155 --> 00:36:15,355
+şurası
+
+271
+00:36:15,815 --> 00:36:16,748
+P
+
+272
+00:36:19,827 --> 00:36:25,648
+Evet, iz düşünün uzunduğu. O da u çarpı v bölü v'dir. Şunu da katarsak.
+
+273
+00:36:37,780 --> 00:36:46,780
+Ben detayları anlatmaya çalışıyorum. Burada, kosünistin bu olduğuna göre, bu nasıl yapılmış? Anlatılıyor mu? Buradan, şurada o modül var, burada görülüyor.
+
+274
+00:36:46,780 --> 00:36:55,780
+U vektörünün en yöndeki skaler birleşenini bu şekilde verilmiş. Eğer size sorarlarsa, U vektörünün, bak ben şimdi size soruyorlar,
+
+275
+00:36:59,443 --> 00:37:23,344
+Nedir o? Yani u cosθ'yı soruyorlar. Şuradaki scalar bileşen nedir? u cosθ'da nedir? Anlatabiliyor muyum? u cosθ'da şu daha önceki scalar çarpım formülünden buna eşit. u v çarpı, bunun böyle olduğunu daha önce anlattık. 2 vektör arasındaki açıdan da. Evet, bunu ezberledik. Bu bir. İkincisi şunu ezberledik.
+
+276
+00:37:24,179 --> 00:37:27,840
+Yani bu birbirine bağlantılı ama şunu direk ezberleyebilirsiniz.
+
+277
+00:37:29,059 --> 00:37:48,000
+Eğer iz düşünün, bak bu skaler bileşenli, şu buradaki skaler bileşenli ama oradaki vektörü sorduğu zaman da skaler bileşenli, bak dikkat edelim, skaler bileşenli bu ya, yani şu skaler bileşenli, o da u çarpı v bölü v modül kare çarpı v.
+
+278
+00:37:49,000 --> 00:37:49,699
+Çünkü
+
+279
+00:37:50,675 --> 00:38:15,555
+Burası bir skaler sayı. Ama yön neresi olması lazım? Burası olması lazım. V yönü olması lazım. Yani şunun yönü olması lazım. O nereden gelmiş? Hadi o detaylara da bakalım. Birkaç aşamada yapılmış. Ne yapmışım? Diyorum ki, en önemli yönelik atıl lazım. Burası, şu V'nin,
+
+280
+00:38:21,204 --> 00:38:23,663
+O vektörünün V yönündeki izdüşüm bileşeni bu.
+
+281
+00:38:24,864 --> 00:38:28,423
+Bir de şu yönü gösteren birim vektör nedir?
+
+282
+00:38:29,304 --> 00:38:29,684
+Budur.
+
+283
+00:38:30,384 --> 00:38:33,463
+Bu da uzunluğu 1 olan, bunun anlamı nedir?
+
+284
+00:38:33,543 --> 00:38:35,083
+Bu bir birim vektördür yani.
+
+285
+00:38:35,344 --> 00:38:37,024
+Birim vektördür, yönit vektör.
+
+286
+00:38:38,064 --> 00:38:38,844
+Uzunluğu 1'dir.
+
+287
+00:38:39,344 --> 00:38:42,244
+Bu bileşen de çarparsak izdüşüm vektörünü verir.
+
+288
+00:38:42,244 --> 00:38:46,244
+Yani, şuradaki izdüşümü...
+
+289
+00:38:46,643 --> 00:38:51,323
+Yönü gösteren yön vektörü nedir? Birim vektörü.
+
+290
+00:38:51,323 --> 00:38:55,083
+Orada bir sadeleştirme yapmış. Burada da bırakabilirsiniz.
+
+291
+00:38:55,083 --> 00:39:00,203
+Şuradan şunu koymuş. Orada da bunu koymuş.
+
+292
+00:39:02,523 --> 00:39:09,683
+Evet, bu şekilde yazıyoruz. Şu ikisini, bakın, bilmenizi tavsiye ederim.
+
+293
+00:39:09,940 --> 00:39:16,940
+Eğer bazen u ile v'nin yeri değişir, v'nin u üzerinde olduğu zaman dikkat edin. Bunu ezberlerken de ona dikkat edin. Bakın.
+
+294
+00:39:16,940 --> 00:39:31,436
+Her zaman için iz düşürdüğünüz vektör aşağıda oluyor. Bak, biliyor musun? V'yi u üzerinde iz düşürseydik ne olurdu? Burası u olurdu. Burası yani diğerleri değişir de. Yani anlamamız gerekir. Direkt ezberlerken de mantıklı ezberlememiz gerekir.
+
+295
+00:39:32,500 --> 00:39:38,420
+Hangi vektörün hangi vektöründen de yüz üç mü diyorsa buna dikkat etmek lazım. Bu çok önemliydi. Sonra çözeceğiz. Merak etme yüz üç mü dedi.
+
+296
+00:39:39,220 --> 00:39:46,739
+Vektörel çarpım, skaler çarpım, revzeren de geçerlidir fakat vektörel çarpım, reküt de geçerlidir.
+
+297
+00:39:49,480 --> 00:40:00,000
+Vektörel çarpım, bu anlattığımız vektörel çarpım, skaler çarpım her boyutta geçerlidir fakat uzayda, fakat vektörel çarpım reküt de geçerlidir.
+
+298
+00:40:00,000 --> 00:40:10,079
+4 boyutlu uzayda, 5 boyutlu uzayda vektörer çarpım yoktur. Vektörer çarpım da şudur arkadaşlar. Ben şöyle bir anlatayım kendimi özgü.
+
+299
+00:40:10,079 --> 00:40:12,844
+Diyelim ki...
+
+300
+00:40:17,588 --> 00:40:18,588
+A vektörü bu.
+
+301
+00:40:24,052 --> 00:40:25,072
+Burada B vektörü.
+
+302
+00:40:29,619 --> 00:40:33,840
+Şimdi, A, böyle de gösteriyor.
+
+303
+00:40:37,427 --> 00:40:52,927
+Böyle de gösteriliyor. İkisini de bilelim. Ters, şöyle şeklinde gösteriliyor. Bu vektörel çarpım değil. Vektörel çarpım, şimdi şöyle, bunun nerede olduğunu bulmak istiyorsanız, bir insan düşüneceksiniz.
+
+304
+00:40:56,755 --> 00:40:58,096
+Bu sağ kolu
+
+305
+00:41:01,492 --> 00:41:04,072
+Bu da ayakları olsun, tamam mı? Ayakları.
+
+306
+00:41:05,192 --> 00:41:07,372
+Sağ kolu, ilk vektör.
+
+307
+00:41:08,332 --> 00:41:09,792
+İlk vektör sağ kolu.
+
+308
+00:41:10,692 --> 00:41:13,612
+Sol kolu da sağ kol.
+
+309
+00:41:17,396 --> 00:41:19,796
+Sen buradasın tabii, tabii şuradasın.
+
+310
+00:41:20,356 --> 00:41:22,176
+Yani bu, şurada içine de buradasın.
+
+311
+00:41:22,655 --> 00:41:24,856
+Bu sağ kolun, bu sol kolun, teta açısı.
+
+312
+00:41:27,235 --> 00:41:30,976
+Baş izan bu tarafta değil mi? Demek ki şu yöne oluyor.
+
+313
+00:41:33,296 --> 00:41:35,195
+Şu yön vektörel çarpım yönü oluyor.
+
+314
+00:41:35,496 --> 00:41:40,155
+Yani A, vektörel çarpım B, bu yöndür.
+
+315
+00:41:40,155 --> 00:41:44,844
+Eğer sen yeri değiştirirsen vektörleri, yani...
+
+316
+00:41:45,012 --> 00:41:53,032
+A burası olsa, pardon, B burası olsa, A burası olsa.
+
+317
+00:41:57,043 --> 00:42:06,764
+B çarpı, A çarpı B'den bahsediysek. Vektöre çarpı. Hangi vektördür? Yalnız elimizi vücudumuza dik tuttuk, onu söyleyeyim.
+
+318
+00:42:08,623 --> 00:42:21,123
+Yani siz şöyle, şimdi ayaktasınız, ellerinizi vücudunuza dik tutun. İlk vektör sağ kolunuz olsun, ikinci vektör sol kolunuz olsun, dik tuttunuz. Kafayız ağrısı size neyi verir?
+
+319
+00:42:21,811 --> 00:42:45,952
+vektöral çarpım. Bakın, A çarpı B. Şimdi bu sağ kolun, bu sol kolun. Bu pozisyona geçmen için başının aşağıda olması lazım. Şöyle durmam lazım. Ayaklar yukarıda olması lazım. Ama tabii bu sağ kol, bu sol kol. O zaman ne demektir şu? Buraya doğru gidecektir o zaman.
+
+320
+00:42:48,115 --> 00:43:14,255
+Kolunu bükme yok çünkü, o zaman aşağı doğru olacaktır. Bunu ben kendim tekrar söylüyorum. İlk çarptığım vektör sağ kolunda olursa da vücuduna tek olsun, ikinci vektör de sol kolunda olsun, tamam mı? Baş hizası vektörel çarpımı veriyor. Peki geçelim, burada çok fazla detayla boğulduk. Peki geçiyorum.
+
+321
+00:43:17,972 --> 00:43:18,732
+Bakalım.
+
+322
+00:43:21,172 --> 00:43:22,492
+Evet, ne diyor bakalım?
+
+323
+00:43:24,612 --> 00:43:27,292
+Tamam, vektörel çarpımın sonucunda vektör çıkıyor.
+
+324
+00:43:27,352 --> 00:43:30,832
+Vektörel çarpım, vektörel çarpım, bir değeri yoldur diyor.
+
+325
+00:43:30,972 --> 00:43:31,612
+Peki, baktık mı?
+
+326
+00:43:32,072 --> 00:43:33,992
+U vektörü, V vektörü.
+
+327
+00:43:34,232 --> 00:43:38,772
+Sen burada duruyorsun, U çarpı V deyince baş izan yukarı doğru oluyor.
+
+328
+00:43:39,252 --> 00:43:40,672
+O zaman iki vektör de dik oluyor.
+
+329
+00:43:40,792 --> 00:43:42,532
+Dik, muhakkak dik olmak zorunda.
+
+330
+00:43:43,347 --> 00:44:08,347
+Sen duran vektörsün diyelim, sen şu vektör vektörel çarpımda. Sağ kolun bu, sağ kolun, sol kol. Bu şekilde durduğun zaman o vektörü bulabilirsin. O vektör, yanki vektörde dik oluyor. Bunun özellikleri var tabii. Vektörel çarpım buluyorsun şunu mesela, bu şekilde buluyorsun. Ne bileyim, bu vektörlerin şu...
+
+331
+00:44:09,172 --> 00:44:29,992
+Enteresan bir şey söyleyeyim. Şunun uzunluğu da, yani L uzunluğu da, şuranın da alanla eşittir. Bu da enteresan bir şey. Yani uzunluk eşittir, alan. Bu uzunluğu bulabilirsin. Çünkü modül bulmayı biliyorsun. Bunun modülü de buradaki parler kenarının alanıymış. Ona da geleceğiz.
+
+332
+00:44:31,668 --> 00:44:34,507
+Evet, vektörler çarpımlık üzerine duralım, devam ettik.
+
+333
+00:44:34,987 --> 00:44:38,208
+U ve V vektörleri paralel değillerse bir düzlem belirlerler.
+
+334
+00:44:38,208 --> 00:44:41,527
+Bu iki vektör paralel değillerse bir düzlem. İki vektör.
+
+335
+00:44:42,447 --> 00:44:48,447
+Eğer paralel vektörlerse asla vektörler çarpımları sıfırdır yani.
+
+336
+00:44:49,407 --> 00:44:52,107
+İkisine de dik bir vektör oluşturmazlar.
+
+337
+00:44:52,527 --> 00:44:55,947
+U çarpı V vektörü düzlemeyede dolayısıyla vektörlerle diktir.
+
+338
+00:44:56,628 --> 00:45:05,307
+Düzlem belirlerler. Burada mesela bu iki vektör birbirine paralel değiller, düzlem belirlerler.
+
+339
+00:45:05,307 --> 00:45:10,508
+Geçtik, iki vektör dedikler, onları söyledim zaten. Bir saniye, pardon, şurada.
+
+340
+00:45:11,948 --> 00:45:15,908
+Buraya bakın, şunu ispatlamaya çalışıyorum, paralel kenarın alanda.
+
+341
+00:45:15,908 --> 00:45:18,628
+İspat diyor, sinüs teta eşittir diyor.
+
+342
+00:45:21,108 --> 00:45:27,108
+Buradan alan, değil mi? Palenkinan alan neydi? Taban çarpı yükseklik. Değil miydi? Taban çarpı yükseklik.
+
+343
+00:45:27,608 --> 00:45:30,108
+Burada bunu da yerine yazdığımız zaman gördünüz.
+
+344
+00:45:31,108 --> 00:45:40,108
+Bunun şu vektörün, evet, buranın alanı u çarpı v, u uzunluk, v uzunluk için üstü tam.
+
+345
+00:45:40,608 --> 00:45:45,108
+Bunun mutlak değeri de, tamam mı? Şunun uzunluğu da buydu. Bu buna eşittir diyor.
+
+346
+00:45:47,284 --> 00:45:49,284
+Bu önemli bir özellik.
+
+347
+00:45:49,923 --> 00:45:53,284
+Yani, şu eşitliği ispatlamışlar.
+
+348
+00:45:54,484 --> 00:45:57,284
+Bu vektörel çarpımın uzanlığı da neyidir?
+
+349
+00:45:57,284 --> 00:46:00,284
+Parcalar kenarına alanı. Bazıları üçgen soruyorlar, o zaman yarısıdır.
+
+350
+00:46:00,284 --> 00:46:09,284
+Yani bunun bölü ikisi de, şuradaki üçgenin alanı da eşittir. Yani bunları kafamızda artık onu bileceğiz.
+
+351
+00:46:10,284 --> 00:46:14,284
+Peki, devam ediyoruz. Ne, u ve v vektörel dik olan?
+
+352
+00:46:14,900 --> 00:46:20,860
+Normal vektör demek, her ikisine bile dik alan bilim vektörü olmak üzere diyor. Böyle yazılıyormuş çocuklar.
+
+353
+00:46:23,960 --> 00:46:34,000
+Nasıl yazılıyormuş? Vektörel çarpımı, u modül, v modül, sinistre çarpı, o yönü yazıyormuşuz. Bitti. Normal vektör, yani her ikisine dik vektör.
+
+354
+00:46:40,916 --> 00:46:57,536
+Theta sıfır olursa, veya pi olursa diyor, o zaman diyor, vektörer çarpımda sıfırdır, diyor. İki vektör paralelse yani. İki vektör paralelse, vektörer çarpımda sıfır vektördür. Bu sıfır vektördür. Normal sıfır değildir. Peki.
+
+355
+00:47:00,536 --> 00:47:01,876
+Peki, geçtik.
+
+356
+00:47:04,376 --> 00:47:05,876
+Vektörer çarpım özellikleri.
+
+357
+00:47:06,420 --> 00:47:16,579
+u ve v birer vektör ise, r ise de skaler ise diyor, bakın şöyle, bir skaler, şu iki vektör, skalerleri şu şekilde başa yazabiliriz diyor.
+
+358
+00:47:17,219 --> 00:47:20,739
+İki, bakın değişme özelliği yokmuş, dikkat ediyoruz edin buraya.
+
+359
+00:47:21,340 --> 00:47:27,980
+u, u, skaler çarpımında var ama vektörler çarpımında değişme özelliği yok. Yani yer değiştiği zaman vektörde işaret değiştiriyor.
+
+360
+00:47:29,364 --> 00:47:49,664
+0 çarpı u vektörü, u çarpı 0 vektörü eşit. Burada dağılma özelliği var. Şu vektörer çarpımı böyle de gösterebilirim, unutmayın. Yani şu ikisi de gösterebilir vektör çarpımı. Hem x olarak hem de ters m olarak. Bu şekilde de dağılma özelliği yapıyormuşuz. Bu şekilde tersler dağılma özelliği de var.
+
+361
+00:47:57,715 --> 00:48:05,135
+vektörel çarpımıyla u çarpı 0 ise diyor, u çarpı v diktik koşulundan u'ya diktir diyor.
+
+362
+00:48:06,335 --> 00:48:09,135
+Burada da öyle, tamam mı? Yani bu şekilde bu buna diktir.
+
+363
+00:48:09,215 --> 00:48:13,515
+Eğer böyle bir şey varsa diyor, u ile v'nin oluşturduğu vektörel...
+
+364
+00:48:13,811 --> 00:48:19,771
+Çarpma oluşan vektör V'ye diktir. Tabii, skaler çarpımda diktik koşulu vardır biliyorsunuz.
+
+365
+00:48:19,771 --> 00:48:20,652
+Hocam bir şey sorabilir miyim?
+
+366
+00:48:20,832 --> 00:48:21,132
+Buyurun.
+
+367
+00:48:21,711 --> 00:48:27,512
+Hocam, vektörel çarpım olduğu için U veya V'nin arasındaki açının da 180 derece olma ihtimali yok mu burada?
+
+368
+00:48:28,731 --> 00:48:35,072
+Var. U ile V'nin arasındaki olabilir. O zaman bir şey, vektörel çarpım sıfır oluyor.
+
+369
+00:48:36,148 --> 00:48:38,888
+Ondan dolayı da sonuç sıfır çıkıyor değil mi? Öyle olur mu yani?
+
+370
+00:48:39,168 --> 00:48:41,808
+Olur tabii, sıfır çıkar. Vektör çarpımı olmasın.
+
+371
+00:48:42,528 --> 00:48:46,048
+Anlatabiliyor muyum? Şimdi iki vektör birbirine paralelse vektör çarpımı.
+
+372
+00:48:46,748 --> 00:48:49,448
+Zıt yönlü de olsun. Zıt yönlü demektir vektörler.
+
+373
+00:48:49,928 --> 00:48:52,248
+Tamam mı? Ha sıfır, ha 180 derece.
+
+374
+00:48:52,808 --> 00:48:54,868
+Dolayısıyla vektör çarpımları sıfır olur.
+
+375
+00:48:55,728 --> 00:48:56,168
+Tamam mı?
+
+376
+00:48:56,548 --> 00:48:57,328
+Tamam hocam, anladım.
+
+377
+00:48:57,907 --> 00:49:08,027
+Burada, u ve sağ el kuralı ile belirledim, üçlüğü oluşturdu. Sağ el dedim, ben sağ el'i şey anlattım, yani sağ el işte benim anlattığım gibi baş hizası oluyor, onu anlatmaya çalışıyorum.
+
+378
+00:49:09,467 --> 00:49:17,708
+Sağ el, ilk vektör sağ elimiz, ikinci vektör son elimiz olmak üzere, baş hizası bize vektör çarpımı veriyor ve dik oluyor her iki sede.
+
+379
+00:49:17,827 --> 00:49:22,188
+Bakın, şuna bakın, bu özellikleri problem konularında yapacağız.
+
+380
+00:49:24,027 --> 00:49:24,648
+Mesela bakın.
+
+381
+00:49:25,139 --> 00:49:36,219
+Evet, u ile v'nin vektörer çarpımının uzunluğu da u modülü, v modülü çarpıcı. Bu da çok kullanacağımız bir formül şu.
+
+382
+00:49:38,039 --> 00:49:52,299
+Determinant formülüyle, evet, iki vektörün determinant özelliği, yani determinant ile hesaplayacağız tabii, yoksa uzun uzun yapmayacağız.
+
+383
+00:49:54,132 --> 00:49:56,132
+Şunu anlatmaya çalışıyorum.
+
+384
+00:49:57,132 --> 00:50:02,132
+Şimdi burada pratik vermiş ama buraya gelene kadar biraz neden olduğunu da söylemek lazım. Bu nereden çıkıyor?
+
+385
+00:50:02,132 --> 00:50:12,132
+Yani 2 vektörü vektörel çarparken diyor, i, j, k, birinci vektörü yazdım, ikinci vektörü yazdım. Determinat nasıl hesaplanıyordu? i yazıyordunuz değil mi?
+
+386
+00:50:12,132 --> 00:50:22,124
+Bu satır sütü siliyordunuz. İkiye ikilik determinant kalıyor, i koyuyorsun. Sonra j yazarken bir de eksi geliyor, satrançlıktan vardı yani. Artı, eksi, artı değil.
+
+387
+00:50:22,963 --> 00:50:30,403
+Siyaha gel, eksi oluyor. Sonra bu g'nin bu muzlatıçını kapatıyorsunuz. 2'ye 3'lik determinat kalıyor. Bu vektör açar mı?
+
+388
+00:50:30,403 --> 00:50:35,443
+Bu nereden çıkıyor derseniz, hadi onu duralım, ondan sonra aralım. Bir dakika.
+
+389
+00:50:35,443 --> 00:50:39,443
+Şu nereden çıktığını anlatmak istiyorum arkadaşlar.
+
+390
+00:50:39,443 --> 00:50:47,443
+Biraz ezbere olmasın, bu nokta böyle direk vermiş. Bu nereden, niye determinat değişti? Öbür tahtaya geçeyim, orada anlatayım.
+
+391
+00:50:49,972 --> 00:50:52,472
+Şimdi bakın, A vektörü
+
+392
+00:50:56,340 --> 00:50:59,020
+Bileşen formunda yazayım. A1, A2, A3.
+
+393
+00:51:05,556 --> 00:51:06,195
+vektörü de
+
+394
+00:51:06,195 --> 00:51:10,296
+B1, B2, B3.
+
+395
+00:51:12,115 --> 00:51:13,996
+Determinata nereden gidiyor? Onu anlatayım.
+
+396
+00:51:26,612 --> 00:51:51,292
+A1'i dinleyelim bakalım. Bu detenemiyatı nasıl çıkartacağım? B2J artı B3K. Pardon ne? B3'i ya. A'dan B'ye geçtik. Allah Allah. A2J. A3K.
+
+397
+00:51:53,748 --> 00:51:55,168
+Burada vektörel çarpım var.
+
+398
+00:51:56,807 --> 00:51:57,668
+B1'i
+
+399
+00:52:01,268 --> 00:52:02,188
+PXG
+
+400
+00:52:06,164 --> 00:52:07,004
+Ve o çikar.
+
+401
+00:52:07,903 --> 00:52:08,144
+Tamam.
+
+402
+00:52:11,827 --> 00:52:21,027
+Şimdi, i ile i'nin sıfır olduğunu biliyoruz değil mi? i ile i vektörü sıfır vektörü. Onu söyledik ya, aynı sıfır derdi. Demin arkadaşımız sordu. Sıfır vektörü yani.
+
+403
+00:52:22,807 --> 00:52:35,247
+i ile j'ye bakalım. Bakın, i ile j'yi gösteriyorum. Şu i, bu j. Buraya bir adam koyduk. Sağ kolu bu.
+
+404
+00:52:37,268 --> 00:52:55,387
+O zaman i'de bir şeyin vektörer çarpımı ne yöndedir? Yukarı yöndedir, değil mi? Adam burada. Sağ kolunu böyle açmış, bize doğru bakıyor, sol tarafında j var. O zaman k çıkar. İşte vektörer çarpımdan orayı k'nın nereden geldiğini yazıyoruz. 0 nereden geldi? Aynı vektörlerin vektörer çarpımı 0'dur.
+
+405
+00:53:08,884 --> 00:53:10,063
+İK'ya baktık.
+
+406
+00:53:11,403 --> 00:53:16,683
+Sağ kolunu İK'ye koy.
+
+407
+00:53:20,148 --> 00:53:23,988
+Sol kalını sağ buraya koydun.
+
+408
+00:53:32,052 --> 00:53:34,572
+İyi, değil mi? Şöyle koydum sağ kolunu.
+
+409
+00:53:36,532 --> 00:53:37,372
+Son kolunu.
+
+410
+00:53:41,556 --> 00:53:42,135
+Kayakoydu.
+
+411
+00:53:48,371 --> 00:54:15,211
+Adamın böyle durması lazım değil mi? Adamın başının burada olması lazım. Yani ne olacak o zaman? Eksi J. A1, B3, J olacak. J'nin ters yönünde olacak. Baş bu tarafta oluyor. Börtülüp adamı öyle koyamayız. Kollu kırması lazım.
+
+412
+00:54:15,699 --> 00:54:28,539
+Geldik. A2, B1, J'i, eksi, k. Artık orayı hepsinde tek tek söylemek istemiyorum. Eksi, A2, B1,
+
+413
+00:54:34,771 --> 00:54:43,791
+Neyse, J ile J sıfır yaptı. Yani şu, kısaca, I, J, K determinantının açılmış hali oluyor.
+
+414
+00:54:45,532 --> 00:54:52,052
+A1, A2, A3, bunu yazmıyorum uzun uzun altı, tamam mı? Çok zaman harcıyoruz.
+
+415
+00:54:53,652 --> 00:54:55,831
+Evet, bu şekilde oluyor. Yani buradan çıkıyor.
+
+416
+00:54:57,411 --> 00:55:01,411
+Peki, sildik. Geçelim yine kendi tahtamıza.
+
+417
+00:55:02,739 --> 00:55:03,940
+Hocam ara verecek miyiz?
+
+418
+00:55:04,139 --> 00:55:12,460
+Evet hocam, şurası çok, bir iki satır kaldı, yeni konuya geçeceğim çünkü. Vektörleri bir toparlayayım diyorum, son sayfası, ara vereceğim.
+
+419
+00:55:17,139 --> 00:55:17,639
+Şimdi
+
+420
+00:55:23,284 --> 00:55:32,164
+Bu detaylıların nereden çıktığını gördük. Karışık çarpım. Karışık çarpımda da hem Scaler çarpım var hem vektörel çarpım var.
+
+421
+00:55:32,284 --> 00:55:47,003
+Tabii ki, burayı vektörel çarpımla buluruz. Mesela diyelim ki, başka bir Z vektörü çıktı. Burası vektör çıktı. Scaler çarpım. Bunun sonucu ne çıkacak? Scaler çıkacak değil mi? Scaler.
+
+422
+00:55:47,539 --> 00:55:56,420
+Bu kesin. Çünkü ikisi, ikisi, skader çarpma, skader. Vektör çarpma, vektör çıkıyor ama, evet, direkt ki burada, burası direkt çocuklar.
+
+423
+00:55:59,987 --> 00:56:13,247
+Şöyle üçe üçlük bunu diyor, önce vektörel çarpımı yapıp sonra da skala çarpımı yapmak yerine diyor, aynı sırada yazın diyor, uyu buraya koyun, b'yi buraya koyun birleşenlere, w'yu buraya koyun, karma çarpım dediği şeyi hesaplarsınız diyor.
+
+424
+00:56:13,247 --> 00:56:26,087
+Tamam mı? Evet. Bu aynı zamanda, bir de üç vektör var. Bir, u vektörü, b vektörü, k, pardon, a vektörü,
+
+425
+00:56:26,128 --> 00:56:28,228
+B vektörü, bu da C vektörü olsun.
+
+426
+00:56:29,948 --> 00:56:32,708
+Burada bir paralel yüz oluşur arkadaşlar, tamam mı?
+
+427
+00:56:34,468 --> 00:56:37,288
+Prizma yani, ama 8 prizma, dik dolardır, tamam mı?
+
+428
+00:56:37,348 --> 00:56:45,728
+İşte bu, yani A, karma çarpım bize, sıraya da, tamam mı? Sıraya dikkat edeceğiz.
+
+429
+00:56:45,868 --> 00:56:51,128
+Bu, eksi de çıkabiliyor arkadaşlar. 3 boyut olduğu için birisi eksi çıkabilir yani. Bu hacme veriyor.
+
+430
+00:56:51,472 --> 00:56:56,072
+Yani paralel yüzün hacmi deniyor. Şuna eşitliği söylemiş olduk. Devam ediyorum.
+
+431
+00:56:59,432 --> 00:57:05,232
+Paralel yüz yani prizmanla, evet devam ediyorum. Şuradaki son bakalım. Bir saniye. Özellikleri söyleyecek.
+
+432
+00:57:05,232 --> 00:57:13,572
+Çünkü uygulama olmadığı için. Evet, karışıkça altın özellikleri. Şöyle. Şimdi bakın, bir koşu var. W koşuyu bitiriyor.
+
+433
+00:57:17,043 --> 00:57:19,043
+Hepsi bir kaydı, bakın ne oldu?
+
+434
+00:57:21,043 --> 00:57:28,283
+Bir saniye, W başı, koşuyu tamamladı, başa geçti, U ve V bir kaydı.
+
+435
+00:57:29,043 --> 00:57:37,243
+Sonra V koşuyu tamamladı, başa geçti, onlar bir öteleme yaptılar. Böyle bir özelliği var.
+
+436
+00:57:50,068 --> 00:57:57,068
+Şu iki vektör yer değiştiği için işaret değişmiş değil mi? İki tane şu vektör, vektörün çarpında yer değişince işaret değişiyor biliyorsunuz.
+
+437
+00:57:58,068 --> 00:58:09,068
+Eğer diyor, bu üç vektörün karma çarpımı sıfırsa diyor, yani bunlar prizmi oluşturmazlar, yani paralel yüz oluşturmazlar, onun için haçmı da sıfırdır diyor.
+
+438
+00:58:11,188 --> 00:58:21,387
+Aynı düzlemde çünkü bunlar. Ancak aynı düzlemde olursa karma çarpımı sıfır olur. Aynı düzlemde olan bir şey de cisim oluşturmaz diyor. Bunu da ispatını burada yapıyor.
+
+439
+00:58:23,867 --> 00:58:29,748
+Evet, burada aşı hesaplamış mı? İspatları biz tabii. Burada sadece bilgi merak açısından veriyor.
+
+440
+00:58:30,447 --> 00:58:37,108
+Aşı a'yı bu şekilde yazıyoruz. Buna bakarsınız. Buradan da hacim aş çarpı a'dır.
+
+441
+00:58:38,516 --> 00:58:56,516
+Dik yüksekliği alıyoruz. Eğik prizmalar, hacmi böyledir arkadaşlar. İzlişim h çarpı a'dır. Taban alanı çarpı yüksekliktir. Eğik de olsa. Onun için şurada bir şey yapıyoruz. Bektörer çarpımdan buluyoruz. Bu da bize neyi veriyor? Yani...
+
+442
+00:58:56,884 --> 00:59:07,803
+İşte bu değer, karma çarpı. Zaten sayı olduğu için mutlak değeri de, bu da bize hacim veriyor. Diyor ki, eksi alırsanız, mutlak değerini alın diyor.
+
+443
+00:59:08,803 --> 00:59:19,943
+Eksi çıkabilir çünkü, işte biz artı takı hacmi. Evet, UW vektörünü oluşturmuş proje yüzünün hacmi buna eşittir. Karma çarpı, bunun mutlak değerini alın diyor.
+
+444
+00:59:20,255 --> 00:59:26,395
+Şimdi arkadaşlar bitirdik. Yeni konuya başlayacağım ve 10 dakika izin. 10 dakika sonra görüşürüz.
+
+445
+01:12:54,195 --> 01:13:06,195
+Evet, yeni konuya başlıyoruz. Uzayda doğrular ve düzlemler, çünkü bunlar şeyle ilgili, skanel çarpım vektörel çarpımla ilgili olduğu için artık bu konuya geçebiliriz.
+
+446
+01:13:14,676 --> 01:13:18,296
+Tamamen vektör bilgisiyle bunların vektörleri yazıyoruz.
+
+447
+01:13:19,716 --> 01:13:22,896
+Bakalım, uzayda doğrular ve doğru parçalar.
+
+448
+01:13:24,516 --> 01:13:28,596
+Doğru parçası değil de doğrunun bir parçasını denklemlemek istiyor.
+
+449
+01:13:29,796 --> 01:13:35,096
+Bakalım, şimdi uzayı çizdik.
+
+450
+01:13:37,096 --> 01:13:39,576
+Bir OP vektörü, yer vektörü, R vektörü.
+
+451
+01:13:41,011 --> 01:13:44,652
+Bizim amacımız şu doğru gün denklemini yazmak. Doğru nerede?
+
+452
+01:13:48,435 --> 01:13:49,315
+Doğru burada.
+
+453
+01:13:52,195 --> 01:13:54,716
+Şu doğrunun denklemini yazmak istiyoruz.
+
+454
+01:13:56,695 --> 01:13:59,956
+Şimdi, yani şöyle bir doğrunun denklemini yazıyoruz.
+
+455
+01:14:00,136 --> 01:14:02,216
+P noktası genel bir nokta.
+
+456
+01:14:02,395 --> 01:14:02,655
+Yani,
+
+457
+01:14:05,175 --> 01:14:06,775
+X, Y, Z.
+
+458
+01:14:07,695 --> 01:14:09,216
+Genel, değişken bir nokta.
+
+459
+01:14:10,015 --> 01:14:11,876
+Bir de üzerinde bir nokta bilmemiz lazım.
+
+460
+01:14:12,015 --> 01:14:13,376
+O doğrunun denklemini yazmak için.
+
+461
+01:14:16,307 --> 01:14:42,587
+Evet, bunu da bilmemiz lazım. Bu da x0, y0, z0. Peki. Şimdi bu doğru, şöyle bir daha büyüttük. Burası origin. Bu OP yer vektörü değil mi? Şer vektörü. Biliyoruz.
+
+462
+01:14:44,307 --> 01:14:49,307
+Bu da P0 noktasının yer vektörü. Yani R0 vektörü.
+
+463
+01:14:52,488 --> 01:15:03,068
+Bu da doğrultunun yönü. Yani doğrunun yönü. Doğrultman deniyor buna. Doğrultmanı. Bu doğru V yönünde gidiyor.
+
+464
+01:15:05,568 --> 01:15:07,247
+V yönünde gidiyor.
+
+465
+01:15:09,247 --> 01:15:11,307
+Şimdi R vektörü, biliyorsunuz bir vektörü,
+
+466
+01:15:12,115 --> 01:15:14,015
+Şöyle de yazabiliriz. Nasıl yazarız?
+
+467
+01:15:15,735 --> 01:15:16,935
+R0 artı
+
+468
+01:15:16,935 --> 01:15:22,496
+Bu doğru yer vektörün. R0 artı
+
+469
+01:15:22,496 --> 01:15:24,376
+Ne yazabiliriz?
+
+470
+01:15:34,100 --> 01:15:42,500
+Bunun yerine, Tv şeklinde yazabiliriz yani. T katlı şeklinde yazabiliriz. İşte size bir doğru denklemi yazdım, vektörel denklemi.
+
+471
+01:15:43,420 --> 01:15:53,239
+Çünkü vektörlerde şöyle bir olay vardı. Mesela buradan buraya gitmek demek, buradan buraya, buradan buraya gitmek demektir.
+
+472
+01:15:53,319 --> 01:15:58,960
+İki vektör birbirine eşittir. Başlangıç bitir noktaları aynı olan bütün vektörler hangi yoldan indirseniz gidin.
+
+473
+01:15:59,380 --> 01:16:05,020
+birbirine eşittir. Diyelim, şu şekli anlamanız için ben bunları anlattım. Geçiyorum, buradan yazacağım.
+
+474
+01:16:07,420 --> 01:16:10,059
+Oradan biz doğru denklemi yazıyoruz. Doğru nerede?
+
+475
+01:16:11,420 --> 01:16:14,920
+V yönde giden bir doğru var. Peki, ne diyor bakalım?
+
+476
+01:16:15,680 --> 01:16:19,159
+R0, şu P0 noktasının yer vektörü,
+
+477
+01:16:19,159 --> 01:16:22,639
+B vektörü, doğrunun
+
+478
+01:16:23,891 --> 01:16:35,152
+yönünü gösteriyor bu, tamam mı? Yani, V vektörü, doğrunun doğrultmanı diyoruz biz. Doğrunun yönünü gösteren vektör diyoruz.
+
+479
+01:16:35,752 --> 01:16:43,412
+Bu durumda diyor, P0'dan geçen ve V'ye parla olan tek bir doğru vardır diyor. O da V eşittir.
+
+480
+01:16:44,931 --> 01:16:48,332
+Eğer diyor, bu da diyor, bu doğru üzerindeyse diyor, bak şimdi geçelim.
+
+481
+01:16:49,747 --> 01:16:56,967
+Bu R de doğru üzerindeyse başka bir plan noktasının yeri vektörü o zaman R-R0.
+
+482
+01:16:57,608 --> 01:17:00,567
+Yani demin yazdığımda buraya atarak yanmış.
+
+483
+01:17:00,567 --> 01:17:02,368
+Yani ben demin ne yazmıştım?
+
+484
+01:17:03,868 --> 01:17:04,667
+R eşittir.
+
+485
+01:17:06,467 --> 01:17:10,688
+R0 artı TV demedim mi? T katdır çünkü değil mi?
+
+486
+01:17:11,667 --> 01:17:13,467
+Bir kat olduğu zaman paralel vektörleri.
+
+487
+01:17:14,260 --> 01:17:21,000
+Bunu bu tarafa koyarak yanlış. Buna Doğru'nun vektörör denklemi diyeceğiz. T'de her reya sayı alabilir. Bu bir skaler.
+
+488
+01:17:22,980 --> 01:17:23,280
+Peki.
+
+489
+01:17:25,620 --> 01:17:29,159
+Doğru'ya yavaş yavaş giriş yapıyoruz. Doğru ve düzlemleri de bir halledelim.
+
+490
+01:17:37,876 --> 01:17:45,155
+Programda zaten bu 6. haftada gereken bir konu. Biz bu arada uygulamalarımızda çok fazla yapmış olduk. O şansımız var.
+
+491
+01:17:46,996 --> 01:17:47,275
+Peki.
+
+492
+01:17:49,816 --> 01:17:53,515
+Per sıfırdan geçemem ve yapaylı olan doğrun vektöral vektörü bu şekildeymiş.
+
+493
+01:17:53,916 --> 01:17:55,655
+Tamam, bunu aktaracağım güzel.
+
+494
+01:17:56,435 --> 01:18:08,036
+R vektörü x'i artı y, j artı z, k, r0, x0, y artı y, 0, j artı z, k, v de doğrunun yönünü gösteren vektör.
+
+495
+01:18:08,175 --> 01:18:19,895
+A'yı artı b, j artı c, k ise, buradan yerlerine yazdığımız zaman, tamam şu eşitlikte yerlerine yazdığımız zaman, bu nereden geldiğini söyleyeyim.
+
+496
+01:18:19,895 --> 01:18:23,235
+R vektörün birleşenlerine göre yazın. x, y, z.
+
+497
+01:18:26,612 --> 01:18:27,492
+Eşittir.
+
+498
+01:18:29,652 --> 01:18:37,531
+X0, Y0, Z0, vektörü artı
+
+499
+01:18:41,203 --> 01:18:47,363
+t çarpı yön vektörü a, b, c.
+
+500
+01:18:47,983 --> 01:18:53,343
+İşte, iki vektör eşit olacağına göre bu vektörün toplanması ne demektir?
+
+501
+01:18:53,523 --> 01:18:56,144
+Her bir bileşenini toplarız. Bunu özellikle de söyledik.
+
+502
+01:18:56,263 --> 01:19:02,804
+x0 artı a artı y0 nedir? Bak, y0 nedir? Bak, x nedir? x0 artı a artı y nedir?
+
+503
+01:19:03,064 --> 01:19:05,863
+y0 artı b, z nedir? z0 artı c.
+
+504
+01:19:05,863 --> 01:19:06,963
+Evet, bu da.
+
+505
+01:19:10,163 --> 01:19:29,423
+parametrik denklemleri oluyor. Doğru mu? Parametrik denklemleri oluyor. Bir de karunik denklemi var. Şöyle, bunu hatta liseden filan, hani iki boyutlusunu biliyordur ya, x-0, bir dakika.
+
+506
+01:19:33,427 --> 01:19:35,927
+Ok, yalnız bırakacağım ya. Bölge A.
+
+507
+01:19:38,207 --> 01:19:40,528
+Y, X, Y, 0. Bölge B.
+
+508
+01:19:44,212 --> 01:19:46,412
+z-z0 bölü
+
+509
+01:19:46,412 --> 01:19:49,492
+c
+
+510
+01:19:49,492 --> 01:19:51,772
+bu değişiktir
+
+511
+01:19:51,772 --> 01:19:53,872
+t
+
+512
+01:19:53,872 --> 01:19:55,012
+buyurun
+
+513
+01:19:55,012 --> 01:19:56,712
+bu da
+
+514
+01:19:56,712 --> 01:20:02,332
+yani şu şekilde yazdığımız karnik denklemde diyoruz
+
+515
+01:20:02,332 --> 01:20:05,292
+t geçince parametrik denklem alıyoruz
+
+516
+01:20:05,292 --> 01:20:06,631
+evet
+
+517
+01:20:06,631 --> 01:20:08,992
+bu da bir doğrunun
+
+518
+01:20:08,992 --> 01:20:09,852
+denklemi
+
+519
+01:20:11,028 --> 01:20:16,427
+Vektörer denklemini yazdığında böyle yazacağız. Paramatrik denklemini yazdığında böyle yazacağız.
+
+520
+01:20:16,427 --> 01:20:25,628
+Yani karanlık denklemini, genel denklemini de şu şekilde yazacağız. Bunu uygulamalarda zaten hatırlayacağız.
+
+521
+01:20:25,628 --> 01:20:33,228
+Peki. Demek ki ne çıkıyor ortaya? Sonuç şu çıkıyor.
+
+522
+01:20:37,235 --> 01:20:49,136
+Diyoruz ki, bir noktadan geçen ve bir yöne paylaşılan, Taylor'un parametrik denklemi bu şekildedir. Genel denklemini de yazmasını orantılı olarak da gördük, değil mi?
+
+523
+01:20:51,136 --> 01:20:58,816
+Peki, yer vektörü bu şekilde gösteriyor. V vektörü, Taylor'un yön vektörü dedi. Doğrultman da diyorlar, doğrultman.
+
+524
+01:21:00,595 --> 01:21:12,275
+t parametresi değerler alır tabii burada. Burası değişebilir tabii. Sinüs t olursa ona göre değerler alır tabii. İki doğru arasında, iki doğru parayel ise yön vektörleri de paraleldir tabii ki.
+
+525
+01:21:15,755 --> 01:21:22,956
+Peki, devam ediyoruz. Bu doğru, bir doğru denklemi için gerekenler.
+
+526
+01:21:23,315 --> 01:21:28,695
+Bir doğru denklem içinde gerekiyormuş, bir doğru üzerinde bir nokta gerekiyormuş, bir de bir yön denklem.
+
+527
+01:21:28,775 --> 01:21:35,615
+Yani şimdi bir doğru denklem bulmak istiyorsak, üzerindeki bir noktayı bilmemiz lazım, bir de yönünü bilmemiz lazım.
+
+528
+01:21:36,775 --> 01:21:46,576
+Ben şöyle söyleyeyim, bir doğru denklemini bul diyorlarsa, doğrunun nüfus kağıdı, kimliği, yön vektörüdür. Unutmayın.
+
+529
+01:21:47,764 --> 01:21:52,764
+Doğru üzerinde de taşır zaten. Doğruya baktığınız zaman yön vektörünü görürsünüz.
+
+530
+01:21:52,764 --> 01:21:55,764
+Bir de üzerinde bir nokta vermek lazım.
+
+531
+01:21:55,764 --> 01:22:00,764
+Demek ki iki şeyi verdiğimiz zaman biz doğru denklemini yazarız.
+
+532
+01:22:00,764 --> 01:22:03,764
+İki şeyi verdiğimiz zaman yazarız.
+
+533
+01:22:04,764 --> 01:22:11,764
+Buradan işte x'i bu şekilde parametrik olarak yazarız ya da orantılı şekilde geçeceğiz.
+
+534
+01:22:11,764 --> 01:22:13,764
+Hadi o zaman örnek çözelim.
+
+535
+01:22:14,707 --> 01:22:22,027
+Eksi 2, 0, 4'ten geçen V eşit 2, 4 eşit 2, 2 k vektörüne paralel doğru parametrik denklem veriliyor.
+
+536
+01:22:23,127 --> 01:22:27,108
+Bu biliyorsunuz P0 noktası değil mi? Burası nedir? P0 noktasıydı.
+
+537
+01:22:28,587 --> 01:22:31,147
+Burası da yön vektörü değil mi? ABC.
+
+538
+01:22:32,967 --> 01:22:34,707
+ABC yön vektörü.
+
+539
+01:22:35,247 --> 01:22:37,268
+İkisi verildiğine göre yazabiliriz.
+
+540
+01:22:37,268 --> 01:22:40,287
+İşte formülümüz varmış. X eşitlik 0 artı at.
+
+541
+01:22:40,819 --> 01:22:48,959
+Bu x0, y0, z0. Buradan da bu da abc. T, t'ye bağlı olarak yazarız. İşte parametrik denklemlerini yazdık.
+
+542
+01:22:50,340 --> 01:22:55,759
+Peki nokta bu, vektör bu. Yani cevap bu. Parametrik denklemler. Peki genel denklem mi yazdık?
+
+543
+01:23:09,427 --> 01:23:13,987
+z eksi 4 bölü
+
+544
+01:23:13,987 --> 01:23:17,368
+eksi 2
+
+545
+01:23:17,368 --> 01:23:20,807
+diye de yazabiliriz. O da eşitliği yine t'dir zaten. Tamam mı?
+
+546
+01:23:20,807 --> 01:23:25,407
+Parametri katlıyorsa t'yi de buraya yazarız. Bu da genel denklemidir.
+
+547
+01:23:25,708 --> 01:23:27,148
+Bitti. Bu kadar.
+
+548
+01:23:27,827 --> 01:23:30,368
+Demek ki biz buradan vektörlerin
+
+549
+01:23:30,368 --> 01:23:34,368
+paralellik özelliğini kullanarak orantılı şekilde yazdık.
+
+550
+01:23:36,435 --> 01:23:42,195
+Peki, bakalım sizin bir sorunuz, üst takıldığınız bir şeyler var mı? Bakın, ondan sonra ders devam edeceğim.
+
+551
+01:23:46,579 --> 01:23:50,360
+Örneğe geçtik.
+
+552
+01:23:54,387 --> 01:24:21,148
+İki nokta verilmiş, doğrunun renk temini bulmuş. İki nokta verdiğine göre yön vektörünü, diyor ki, bak sana diyor, sen bende ne istiyordun? Bir nokta, al sana iki nokta diyor. Bir noktayı bulduk. Tamam yani hangisini kullansan, kullanmıyor. Bir de yön. Ben sana yöne diyor, böyle vermedim A, B, C için. Biraz uğraş yani. Doğrultuyu sen bul diyor. Nasıl bulurum doğrultuyu? PQ vektörünü bulurum. PQ vektörü nedir?
+
+553
+01:24:22,131 --> 01:24:23,131
+Bu şekilde.
+
+554
+01:24:24,371 --> 01:24:26,371
+Bu ne? Bu 4. Bir saniye.
+
+555
+01:24:26,371 --> 01:24:28,731
+Birden eksi 3'ü çıkarttı 4.
+
+556
+01:24:28,731 --> 01:24:31,051
+Eksi birden 2'yi çıkarttı eksi 3.
+
+557
+01:24:31,051 --> 01:24:32,731
+4'ten eksi 3'ü çıkarttı yedi.
+
+558
+01:24:32,731 --> 01:24:34,091
+İşte yön vektörünü böyle bulduk.
+
+559
+01:24:34,091 --> 01:24:36,252
+Yani azır vermemiş, biraz uğraştı.
+
+560
+01:24:36,252 --> 01:24:39,011
+Yani şunu sen bir vektör kur diyor değil mi?
+
+561
+01:24:39,011 --> 01:24:40,492
+Buradan buraya ekleyen yönü bul diyor.
+
+562
+01:24:40,492 --> 01:24:42,332
+Bu nokta da belli bir yerine koyduk.
+
+563
+01:24:42,332 --> 01:24:43,531
+Kıslatmaya gerek yok abi.
+
+564
+01:24:43,531 --> 01:24:45,531
+Bir tek onu susalım soruya.
+
+565
+01:24:46,971 --> 01:24:47,884
+Peki.
+
+566
+01:24:47,891 --> 01:24:52,891
+Eğer Dorun'un parametrik teklifi verilmişse, t'nin kas sayıları bilse yön vektörü. t'nin kas sayıları bilse. t'nin kas sayıları bilse.
+
+567
+01:24:52,891 --> 01:24:55,891
+Şöyle bir denklem verebilir mi? Tersten sonra sorayım.
+
+568
+01:24:56,891 --> 01:24:58,891
+Mesela şöyle.
+
+569
+01:25:01,891 --> 01:25:04,891
+Yön vektörünün de 4, eksi 3, 7'dir hemen gözüküyor.
+
+570
+01:25:04,891 --> 01:25:13,891
+Peki üzerinde bir nokta bul dediler. Tersten sonra t'ye 0 koy, eksi 3, 2, eksi 3. t'ye 1 koy, başka bir nokta. t'ye 2 koy, başka bir nokta.
+
+571
+01:25:13,891 --> 01:25:15,692
+İçinin kadar nokta bulabilirsin.
+
+572
+01:25:17,779 --> 01:25:29,319
+Peki, eğer doğrunun parametrik denklemi verilirse, t kısa, iki noktayı birleştiren doğru parçası diyecek, demek ki doğru parçası dediğine göre, bu şekilde değil de t'ye bir sınır gelecek demektir.
+
+573
+01:25:29,319 --> 01:25:37,739
+Yani t, şuradan şuraya diye bir sınır gelecek yani. Anlatabiliyor muyum? A'dan B'ye diye bir sınır gelecek demek. Parça diyor çünkü.
+
+574
+01:25:38,219 --> 01:25:43,039
+Peki, onu anladık. Doğru denklemi yazıp, bir tek sınır koyacağız demektir. İyi.
+
+575
+01:25:44,724 --> 01:25:54,304
+Peki, iki noktayı bilirsen doğru parçalarını para belirtelim, bir noktaya geçen doğru parçalarını tamam ettik. Yani üsttek gibi yaparız diyor, üç noktalar içinde de t'yi buluruz, biter diyor.
+
+576
+01:25:55,144 --> 01:26:00,284
+Üsttekini yaparız, bir de üç noktalardan t'nin değiştiği yeri buluruz diyor. Tek fark oldu. Hadi buraya bakalım.
+
+577
+01:26:01,084 --> 01:26:06,904
+Önce pq'yu bulduk değil mi? pq vektörü neydi? Oradan bir üstteki soru yani. Doğru parçasına geçiyoruz.
+
+578
+01:26:07,804 --> 01:26:12,164
+Bunu yazdık. Peki. Şimdi diyor ki,
+
+579
+01:26:12,448 --> 01:26:39,608
+Bu vektör, şimdi diyor, şu noktayı koyarak t'yi bulun diyor. Başlangıcı burası değil ya, eksi 3, 2, eksi 3'ü koyarak t kaçmış sıfır. Bir de diyor, bitim noktasını koyun diyor, orada bir çıkıyor. O zaman ne diyoruz? Doğru parçası dediğimiz zaman, şuraya çocuklar, ne geliyor? Buraya bir kısıt geliyor. Yani t'nin değişimi geliyor. O kadar, başka bir şey yok.
+
+580
+01:26:40,212 --> 01:26:48,212
+Doğrular geçmiş olsun dedik. Doğrular, düzlemler, kökler yapıyorlar. Düzlemleri geçer, uzayda düzlemler.
+
+581
+01:26:49,212 --> 01:27:01,996
+Baktık, şimdi doğrunun nüfus kağıdı nedir? Yönü değil mi? Yönü. Bir de üzerinde bir nokta, ikisini bir dikip doğru cepte doğru yazabiliriz. Peki düzlem de öyle değil. Düzlemde ise...
+
+582
+01:27:03,155 --> 01:27:29,695
+Bir düzlem renklemi diyorsa, düzlemin yönünü veren bir vektör bulamayız. Tamam mı? Yani bunu bulmak mümkün değil. Neyi bulabiliriz? Dik olan. Onun da nüfus kağıdı normalidir. Yani düzleme çağırıyoruz yolda. Diyoruz ki nüfus kağıdını gösterir misin? Ha buyurun normalim bu diyor. Yani bana dik bir vektör şu diyor. O kadar. Bir de üzerindeki noktayı bilirsek bitti. Değil mi? Yeter mi? Düzlem yazmak için yeter mi? Peki. Onda, doğruda.
+
+583
+01:27:30,387 --> 01:27:49,587
+Aynı yönü veren vektörü bilmek zorundayız. Düzlemde, dik bir normal vektörü bilmek zorundayız. Bu ikisini bir de üzerinde bir nokta verirse olay bitmiştir zaten. İstediğimiz şekilde denklemlerini yazarız. Dikkat dinlerseniz çok zevkli ve anlaşılır bir konu. Peki.
+
+584
+01:27:52,435 --> 01:27:59,975
+Devam edelim. Evet, baktık işte gördünüz değil mi? Düzlemin üzerinde P0 noktası verilmiş. Bir de üzerinde bir P genel nokta alıyoruz.
+
+585
+01:28:00,895 --> 01:28:17,655
+Peki burada bir şey dikkatimizi çeksin. P0, P, vektörü düzlemin içinde bir doğru değil mi? Doğru mu? Düzlemin içinde doğru. Peki, normal, normal,
+
+586
+01:28:18,047 --> 01:28:27,127
+Düzleme dik mi doğru? Normal P düzlemine dik midir? Diktir. Bu düzlemin böyle parçası da yazar. Diktir.
+
+587
+01:28:28,167 --> 01:28:33,987
+Şöyle bir kural var, çocuklar. Eğer bir şey bir düzleme dikse, düzlemin içindeki her doğruya diktir.
+
+588
+01:28:33,987 --> 01:28:41,608
+Veya dik durumdadır. Yani bu düzlemin normalıysa, buna da dik durumda olması gerekir.
+
+589
+01:28:45,908 --> 01:28:48,667
+Normal vektöre nedir? Diktir.
+
+590
+01:28:50,648 --> 01:28:52,468
+Peki dikse ne olur?
+
+591
+01:28:53,288 --> 01:28:56,148
+Diklik koşulu vardır. Vektörleri gördük bugün. Tamam mı?
+
+592
+01:28:56,148 --> 01:29:00,948
+Güzelce gördük artık. Yani çarpı normal eşittir.
+
+593
+01:29:01,448 --> 01:29:05,608
+Sıfır. Bu da düzlemin vektörel denklemi.
+
+594
+01:29:06,488 --> 01:29:09,847
+Bu şekilde yazarsak düzlemin vektörel denklemi oluyor.
+
+595
+01:29:10,771 --> 01:29:23,031
+Yani, çünkü ikisi dik olduğuna göre, skaler çarpımı 0'dır, dedik. İşte düzlemin, şeyini yazdık, vektörer vektörer denklemini yazdık, çarpımcada iyi çıkacak zaten.
+
+596
+01:29:24,551 --> 01:29:26,412
+Burada var zaten çözümünde, artık anlattım.
+
+597
+01:29:29,252 --> 01:29:29,891
+Bakalım.
+
+598
+01:29:31,731 --> 01:29:36,631
+Evet, yani bu normal çarpı P0, P eşittir, 0'dır diyoruz. Peki.
+
+599
+01:29:37,332 --> 01:29:45,332
+P0P buna dikse, normal, oradan vektöral vektörü açalım.
+
+600
+01:29:45,332 --> 01:29:57,332
+P0P ne demekti? Bir vektör kurarken x-x0, y-y0, zx-z0 vektör. Normal vektör neydi? Burada büyük A, büyük B, büyük C'leri kullanalım. Hani karışmasın, doğrudaki A, B, C'lerden.
+
+601
+01:29:57,332 --> 01:30:04,332
+Çünkü bunlar düzlemin yönünü göstermiyor. Düzlemin dik olduğu, lüfus kağıdı çünkü normal. Tamam mı? A, B, C.
+
+602
+01:30:04,916 --> 01:30:11,056
+Neyse, skaler çarpım neydi? Birinciyle birinciyi çarparız, artı ikinciyle ikinciyi çarparız, artı üçüncüye üçüncüye çarparız.
+
+603
+01:30:11,235 --> 01:30:12,615
+Güzel, eşit sıfır olacak.
+
+604
+01:30:14,235 --> 01:30:18,416
+Sadeleştirdik, şurası bir skaler olduğu için D dersek, işte bu bize bir düzlem denklemi veriyor.
+
+605
+01:30:19,536 --> 01:30:23,195
+Peki, biz düzlem denklemi nasıl çizeriz diye bir şey aklına gelirse.
+
+606
+01:30:23,476 --> 01:30:25,355
+Şöyle, bu düzlemi nasıl çizeriz?
+
+607
+01:30:26,456 --> 01:30:29,775
+İkişer ikişer sıfır veririz. Mesela Y'ye Z'e sıfır veririz.
+
+608
+01:30:30,335 --> 01:30:30,996
+İkisi nedir?
+
+609
+01:30:31,988 --> 01:30:35,108
+eksi de böyle a değil mi? x
+
+610
+01:30:37,148 --> 01:30:40,068
+bu da eksi gözükmesin ya, şöyle yapalım da
+
+611
+01:30:40,388 --> 01:30:42,228
+almak isterim mesela a x
+
+612
+01:30:42,788 --> 01:30:44,228
+artı b y
+
+613
+01:30:46,068 --> 01:30:48,228
+c z artı e diyelim
+
+614
+01:30:52,500 --> 01:30:53,659
+Yok, tamam, pardon.
+
+615
+01:30:56,539 --> 01:30:58,659
+Y'ye zeta 0'ları isek D bölü A, doğru.
+
+616
+01:31:01,180 --> 01:31:03,219
+X D bölü A, şurası D bölü A.
+
+617
+01:31:06,868 --> 01:31:09,468
+x'e z'e 0 verirsem, y'e t bölüme.
+
+618
+01:31:14,452 --> 01:31:18,851
+x'e y'e sıfır bölünsem, 2'ye 2'şer'i sıfır bölüyorum, serde t bölücü yap.
+
+619
+01:31:22,163 --> 01:31:36,463
+İşte şu bir düzlem. Üçgen bu kadar değil, düzlem parçası değil. Bu sonsuza gidiyor yani. Şöyle bir üçgen baraka var gibi düşünün. Çadır var, burası dik.
+
+620
+01:31:36,463 --> 01:31:48,243
+Öyle bir şey düşünün. Bu çadır böyle sonsuza doğru giden bir düzlemden bahsediyoruz. Eksini kestiği noktalar verilmiştir. Hem de böyle çizeceğiz arkadaşlar.
+
+621
+01:31:52,180 --> 01:31:53,520
+Peki, bunu da anlattık.
+
+622
+01:31:55,260 --> 01:32:02,180
+Bir düzlem denklemi için bir nokta ile normal vektör gerekiyormuş. Tamamdır, biz kağıt normal vektör, bir de bir nokta gerekiyor.
+
+623
+01:32:02,280 --> 01:32:03,159
+Peki, geçelim sonra.
+
+624
+01:32:04,920 --> 01:32:11,440
+Eksi 3, 0, 7 noktasına geçelim. Normal, bu olan düzlemin denklemini buluruz. Bulalım.
+
+625
+01:32:17,268 --> 01:32:35,747
+Tabi bu dersimizi bur buru bitirelim çünkü, dün bir eksiklik oldu da onu tamamlamak istiyorum, onun için biraz bugün. Evet, yani şu şeyi bitirmek istiyorum buradaki konuyu.
+
+626
+01:32:36,435 --> 01:32:39,496
+konumuzu bitirmek lazım. Düzenli gitmek istiyorum.
+
+627
+01:32:39,496 --> 01:32:43,876
+f0-307 noktasından geçen, yani normali bu olan düzenli denklem.
+
+628
+01:32:43,876 --> 01:32:48,376
+Ve hepsi var. Nüfus kağıdı da var. Üzerindeki nokta da var.
+
+629
+01:32:48,376 --> 01:32:58,095
+Bu böyle, tamam. O zaman, işte eğer şey deseydi mesela, vektörer denklem deseydi, şurada bırakırdık.
+
+630
+01:32:58,095 --> 01:33:02,296
+Şöyle bırakırdık vektörer denklem.
+
+631
+01:33:02,296 --> 01:33:04,036
+5
+
+632
+01:33:05,908 --> 01:33:06,268
+2,
+
+633
+01:33:07,968 --> 01:33:08,948
+eksi 1,
+
+634
+01:33:10,388 --> 01:33:12,028
+Skler çarpım, eksi 3,
+
+635
+01:33:13,228 --> 01:33:13,708
+0,
+
+636
+01:33:15,008 --> 01:33:15,408
+7.
+
+637
+01:33:16,088 --> 01:33:16,608
+Tabi bu,
+
+638
+01:33:18,448 --> 01:33:19,708
+P0 noktası ya,
+
+639
+01:33:20,628 --> 01:33:22,028
+P0 vektörünü yazardık,
+
+640
+01:33:22,028 --> 01:33:23,328
+P0 vektörüne.
+
+641
+01:33:24,848 --> 01:33:29,668
+Bu şekilde, bu da normal vektör olurdu. Böyle bırakırdık, bunu normal olarak yazmış olurduk.
+
+642
+01:33:29,748 --> 01:33:30,968
+Evet, 0 eşit.
+
+643
+01:33:31,572 --> 01:33:34,931
+Peki burada, bunu, skater çarpmışız.
+
+644
+01:33:36,752 --> 01:33:37,172
+Pardon.
+
+645
+01:33:39,692 --> 01:33:40,992
+5 olmaz ki.
+
+646
+01:33:42,292 --> 01:33:42,532
+Yok.
+
+647
+01:33:44,112 --> 01:33:44,572
+Bir dakika.
+
+648
+01:33:45,372 --> 01:33:45,792
+Pardon.
+
+649
+01:33:46,252 --> 01:33:46,712
+Normal.
+
+650
+01:33:46,891 --> 01:33:47,351
+5 eksi.
+
+651
+01:33:47,512 --> 01:33:48,532
+Şurası yanlış oldu.
+
+652
+01:33:49,152 --> 01:33:50,152
+Burası x0 olmayacak.
+
+653
+01:33:50,231 --> 01:33:51,132
+P0p olacak.
+
+654
+01:33:51,372 --> 01:33:51,971
+Şimdi gördüm.
+
+655
+01:33:52,132 --> 01:33:53,372
+P0p vektörü.
+
+656
+01:33:53,471 --> 01:33:53,931
+Şükür düz.
+
+657
+01:33:54,832 --> 01:33:57,092
+P0 değil de P0p vektörü.
+
+658
+01:33:57,908 --> 01:33:59,908
+O zaman burası ne olacak?
+
+659
+01:34:00,708 --> 01:34:02,708
+x artı 3 olacak.
+
+660
+01:34:04,708 --> 01:34:07,708
+y eksi sıfır olacak.
+
+661
+01:34:07,708 --> 01:34:09,708
+Aşağıda var yani siliyor.
+
+662
+01:34:11,507 --> 01:34:13,708
+Evet. Burada çözmüş zaten.
+
+663
+01:34:14,708 --> 01:34:17,708
+Evet. Bu skater çarpımı yapacağız.
+
+664
+01:34:18,708 --> 01:34:21,708
+Çıkan şu denklem de düzlem denklemdir.
+
+665
+01:34:22,996 --> 01:34:47,216
+Bu noktadan geçen düzlem diyor ki, şimdi baktık 3 tane nokta var. Yani bize diyoruz ya, düzlem yazarken bir nokta değil, sana al sana 3 tane nokta diyor. Peki, normali nasıl yapacağız? Şimdi bak, bir düzlemin üzerinde, dikkat dinleyelim arkadaşlar, 3 tane nokta verilmiş. A, B, C. Bize ne lazımdı? Bir nokta. Tamam, hangisini alırsanız alır.
+
+666
+01:34:47,572 --> 01:34:52,652
+Vahvah kullanın. A'yı da alırsınız, B'yi de C'yi de. O tamam. Yani şuradaki B0 almak kolay.
+
+667
+01:34:53,712 --> 01:34:58,192
+B0 hangisini seçersem seçeyim diye. Bu düzleme dik bir düzlem bulmak istiyoruz.
+
+668
+01:34:58,332 --> 01:35:03,572
+Diyorum ki, arkadaşlar diyorum, siz vektörer çarpımı bilmiyor musunuz? Biliyorsunuz.
+
+669
+01:35:04,811 --> 01:35:08,412
+E tamam, AB ile AC'yi vektörer çarparsam neyi bulurum?
+
+670
+01:35:10,231 --> 01:35:11,212
+Neyi bulurum?
+
+671
+01:35:12,532 --> 01:35:14,132
+Tabii ki normali bulurum.
+
+672
+01:35:15,188 --> 01:35:34,188
+Ben neyi arıyorum? Kimliğini kaybetmiştir. Onu normal ile bulduk. Vektör A çarpıysa, bu ne yapacağım? Vektör A çarpmayı da biliyorum. Bitti. Onu da çarpalım. Vektör A çarpımı neyle hesaplıyoruz? Detenminaf da hesaplıyoruz. Uzun gerek yok.
+
+673
+01:35:42,195 --> 01:35:58,615
+Satıra göre açtım. Değil mi? Mesela i'nin bulunduğu satır sütünü sirdim. 0, artı 3, 3 çıktı. Sonra artı ve eksil bir de şeyimiz var. Satranç tatlısından biliyorsunuz. Determinant açıak işareti var. Sonuçta bunu buldu. Tamam.
+
+674
+01:36:02,387 --> 01:36:05,768
+Düzlemi normalde bulduk, yerlerine koyduk, böyle anlatıyoruz.
+
+675
+01:36:06,768 --> 01:36:11,967
+Buraya baktık, soru birden karıştırdı.
+
+676
+01:36:11,967 --> 01:36:12,688
+Ney lan?
+
+677
+01:36:14,068 --> 01:36:16,327
+Ha, bak doğruyu da katmışlar.
+
+678
+01:36:16,608 --> 01:36:20,188
+Burada bak bir şey söyleyeyim size, çok faydası olacağını düşünüyorum.
+
+679
+01:36:20,887 --> 01:36:25,867
+Şekli, soruyu anlamak için, tasarı bir şekil çizelim.
+
+680
+01:36:26,787 --> 01:36:28,207
+Şimdi bir doğru var diyeyim.
+
+681
+01:36:32,212 --> 01:36:35,572
+Biz bir düzen arıyoruz. Bu doğrudan geçiyor mu? Bakın bir şey söyleyeceğim.
+
+682
+01:36:39,028 --> 01:36:43,028
+Noktasından geçer, ha bu doğruya dikmiş. Güzel.
+
+683
+01:36:45,028 --> 01:36:56,028
+O zaman aklıma şu geldi, bu doğrunun doğrultmanı, aynı zamanda düzlemin normalidir. Bunu gördük, gördük, görmedik, yapamayız.
+
+684
+01:36:56,028 --> 01:36:58,028
+Öyle değil mi bak, dikti mi bu?
+
+685
+01:37:00,028 --> 01:37:04,028
+Bir de düzlemin üzerinde bir nokta vermiş, x noktası vermiş.
+
+686
+01:37:05,652 --> 01:37:12,332
+Tamam, bir nokta vermiş. Ben çizince gördüm. Bak, doğru dermiş geçmiş. Değil mi? Doğru. Dik yani burası.
+
+687
+01:37:13,192 --> 01:37:23,032
+Değil mi? Dik olduğuna göre, buna gelirim diyorum ki, doğru. Bana normalde bana verman lazım. O da veriyor. Normalim diyor.
+
+688
+01:37:23,032 --> 01:37:32,932
+T'nin kat sayıları. Şey, pardon. Normal değil. Gönlü ver diyor. Gönlü şu. Bir, iki, sıfır.
+
+689
+01:37:33,427 --> 01:37:58,027
+Gözünüz keskinse görürsünüz değil mi? Yani kaç sayıları? 1, 2, 0. Tamam. Bu da belli. Başka bir şey kalmadı ki zaten. Yani normali 1, 2, 0. Buradan yalnız şu 1, 2 ve 0 de olmadığı için bunu aldık. Ondan sonra da ne yaptık? Normal çarpı, skaner çarpı, bu x demiş hadi xp diyelim.
+
+690
+01:37:59,859 --> 01:38:17,879
+5'i 0'dan bulmuş, bulacağız x, b. Peki, b neydi her zaman? P, yer vektörü x, y, z. Çözmüş, ben bir daha anlayamazsınız diye tekrar kendim anlatmaya çalışıyorum. İşte buyurun. Ama şekil çizin, bakın size hocalık olarak yaptığım iyilik.
+
+691
+01:38:18,355 --> 01:38:23,555
+Böyle doğru düzlemlerde şekil çizerek anlamaya çalışır. Çizmeden ezbere yapamazsın.
+
+692
+01:38:23,695 --> 01:38:29,115
+Buyurun. Mesela doğru buna dikmiş. O zaman doğrunun yönü bunun normali oluyor. Ortak kullanıyorlar.
+
+693
+01:38:29,115 --> 01:38:38,036
+Yani bu diyor ki al benim kimliğimi kullan diyor. Kullanıyorlar. Bunun yönünü gösteriyor. Bunun da dik olduğu yönünü gösteriyor. Peki. Başka?
+
+694
+01:38:39,916 --> 01:38:42,115
+Buradan geçen ve buradan geçen...
+
+695
+01:38:46,804 --> 01:38:49,524
+Noktadan geçen doğruya dik düzden bulmuş.
+
+696
+01:38:50,043 --> 01:38:59,264
+Peki. Buradan geçiyor. Bu noktalardan geçen doğruya, geçen doğruya dik olacak.
+
+697
+01:38:59,384 --> 01:39:04,984
+Yani bu doğrunun eğimini bulduk ya, yönünü bulduk ya, nedir bu?
+
+698
+01:39:05,284 --> 01:39:08,963
+Tamam, bunu normal diye kullanıyorsun. Üstteki soruyu yerine koyuyorsun.
+
+699
+01:39:09,144 --> 01:39:11,944
+Peki. Payrol ve kesişen doğrular ve düzdenler. Bakalım.
+
+700
+01:39:14,579 --> 01:39:18,680
+Bakalım, paralel kesişen ve doğrular ve düzlemler.
+
+701
+01:39:21,039 --> 01:39:23,420
+Düzlemler ne zaman paraleldir, ne zaman kesişiyor?
+
+702
+01:39:24,199 --> 01:39:27,340
+Normal vektörleri paralel olan iki düzlem paralelmiş.
+
+703
+01:39:27,480 --> 01:39:30,020
+İki tane, ikisinin de normali.
+
+704
+01:39:30,940 --> 01:39:36,680
+İki düzlem var, iki düzlem normalleri nüfus kağıtları çıkartıyorlar, birbirlerine paralel.
+
+705
+01:39:36,779 --> 01:39:37,619
+O zaman, değil mi?
+
+706
+01:39:38,619 --> 01:39:39,840
+Düzlemler de paralel olur.
+
+707
+01:39:41,460 --> 01:39:54,780
+Paralel olmayan iki düzlem bir doğruda kesişir. Evet, iki düzlem paralel değilse bir doğruda kesişir. Bir düzlem bu, bir düzlem buysa bir doğru boyunca ne yapar? Delta doğrusu boyunca ne yapar? Kesişir.
+
+708
+01:39:56,920 --> 01:40:06,020
+Peki, bunu da anladık. İki düzlem arasındaki açı normalde arasındaki açıya eşittir. Evet, iki düzlem arasındaki açı buluyorsak tamam mı?
+
+709
+01:40:06,387 --> 01:40:09,527
+İki düzlemin arasındaki açı, yani iki düzlem var.
+
+710
+01:40:13,043 --> 01:40:15,844
+Tamam, bu ikisinin arasındaki açı, şu açıdan bahsediyoruz.
+
+711
+01:40:16,983 --> 01:40:17,724
+Alfa açısı.
+
+712
+01:40:18,523 --> 01:40:21,563
+Bunun, evet şu açı da alfadır arkadaşlar.
+
+713
+01:40:21,743 --> 01:40:23,304
+Normaller arasındaki açı da alfadır.
+
+714
+01:40:24,323 --> 01:40:24,543
+Peki.
+
+715
+01:40:26,684 --> 01:40:29,943
+O da onun formülü de, şöyle arasındaki kosünüs formülü de.
+
+716
+01:40:30,703 --> 01:40:31,923
+Neydi kosünüs formülü?
+
+717
+01:40:32,756 --> 01:40:43,796
+Kosinist etas, Scader çarpında görmüştük bugün, n1 çarpı n2, n1 modül bülü n2, o da bu. Bir düzlemli normali, n diye doğru yön vektörü v olsun.
+
+718
+01:40:43,796 --> 01:40:56,716
+Bunu ben şöyle ezberlemek yerine, şimdi mesela bir doğru var, paralel bir düzlem var, bir doğru var,
+
+719
+01:40:57,300 --> 01:41:02,760
+Dik düzlem var. Bakın, şöyle demek ki, bunlar da bir de dik olsun. Nasıl var? Şöyle güzel olmadı mı?
+
+720
+01:41:04,340 --> 01:41:20,460
+Mesela, bir düzlem var. Dik doğru var. Dikkat edin bakın. Şimdi bu doğru, bu düzlem. Bunun yönü bu ve doğrultmanı. Bunun normali bu.
+
+721
+01:41:25,876 --> 01:41:34,076
+Düzleme paralelse, bunun yönüyle, bunun normali dik olur. Dikdik koşulu uygularsınız. Yok burada, dikkat edin.
+
+722
+01:41:35,636 --> 01:41:45,076
+Doğru düzleme dikse, düzlemin normaliyle, doğrunun yönü de paralel olur. Paralellik koşulu uygularsınız.
+
+723
+01:41:45,416 --> 01:41:50,716
+Bunları şekil çizerek anlayabilirsiniz. Ama yine bakalım, burada Knoto yazmış böyle, bunları okuyalım.
+
+724
+01:41:56,083 --> 01:42:07,183
+Evet, bakın. Bir düzlem doğru, evet. Bir düzlem normali buysa diyor, bunlar birbirine paylaşsa doğru düzleme diktir. Ters olduğunu demin göstermiştim. Dikse de düzlem paylaştırıyor. Evet, bakalım.
+
+725
+01:42:09,423 --> 01:42:17,063
+Bir düzlem verilmiş, bir de doğru verilmiş, tamam mı? Bu şekilde parametrik olarak, evet. Vektör olarak bu şekilde verilmiş.
+
+726
+01:42:17,844 --> 01:42:42,144
+Paralel midir diyor. Paralel olması için bunun normaliyle bunun şeyinin dik olmasına alın. Bunun normal nedir? 1-2-5 bunun yönü nedir? Eksi 1, 2, 1. Bakarak anladık dikkat ederseniz. Tamam burada biraz dikkat ederseniz. O zaman dik dik koşumuna bakacağım. Evet ne çıkmış? 0. Evet doğru. O zaman bunlar birbirine dik olduğuna göre bunlarla birbirine paraleldir diyoruz.
+
+727
+01:42:44,756 --> 01:42:50,796
+İki doğrunun kesişimi, nokta iki düzlemin kesişimi, doğru bir doğru ile bir düzlemin kesişimi, noktadır.
+
+728
+01:42:50,876 --> 01:42:56,435
+Tabii canım, elinizde bir kağıt alıp bir de kurşun kalemi alırsanız, değil mi? Bunu görürsünüz.
+
+729
+01:42:57,376 --> 01:43:01,036
+Kesişim doğruları dediğimiz doğru var. Böyle çok sık soruyorlar.
+
+730
+01:43:02,256 --> 01:43:03,235
+Kesişim doğruları şu.
+
+731
+01:43:07,028 --> 01:43:13,568
+Mesela iki düzlem böyle yan yana verdiğimiz zaman, ikisini aynı anda verdiğimiz zaman mesela şöyle verdik.
+
+732
+01:43:15,408 --> 01:43:21,268
+Yani şu şekilde verdik değil mi bakın. Evet bu şekilde verdik. İki tane düzlemi bu şekilde verdik.
+
+733
+01:43:23,068 --> 01:43:28,128
+İkisini aynı anda verdiğimiz zaman bu neyi gösteriyor biliyor musun? Bir düzlem bu olsun.
+
+734
+01:43:30,163 --> 01:43:34,603
+Şunun da eklemini gösteriyor arkadaşlar. Delta doğrusunu bu şekilde gösterebiliyorlar.
+
+735
+01:43:34,683 --> 01:43:36,223
+Veya bunu alt alta yazıyorlar.
+
+736
+01:43:36,803 --> 01:43:41,383
+Yani iki düzleme aynı anda vermesi ne demek? Kesiştiği doğruyu gösteriyor arkadaşlar.
+
+737
+01:43:41,383 --> 01:43:48,503
+Bu ikisi aynı anda kesiştiği zaman bir doğru gösteriyor.
+
+738
+01:43:48,643 --> 01:43:51,503
+Bu kesişim doğrular diyoruz. Unutmayalım.
+
+739
+01:43:53,683 --> 01:43:56,763
+Bu ikisini aynı anda parantez içinde verirse bu bir doğru gösteriyor.
+
+740
+01:43:56,847 --> 01:44:03,047
+İki düzlem çekip, böyle bir yüzsün. Peki, böyle düzlemin hareket sorusu, parametrik denklerinden yazdım diyor. Tamam, devam edelim.
+
+741
+01:44:04,227 --> 01:44:12,367
+O zaman, bak burada anlatmış iki düzlemin, aynı şekilde, normallerini buluyoruz. Normalleri nedir diyelim?
+
+742
+01:44:13,887 --> 01:44:21,507
+İşte birinin normali bu diyelim, birinin normali buysa, bir tane düzlemin normali bu.
+
+743
+01:44:21,507 --> 01:44:24,507
+Bir tanesi de buysa,
+
+744
+01:44:25,076 --> 01:44:36,216
+Bunları vektörer çarparsa ne çıkıyor biliyor musunuz? Doğrunun doğrultmanı çıkıyor. Çünkü bu yönü gösteriyor. İkisine de dik olan yönü gösteriyor. Bu tarafta olsa fark etmez.
+
+745
+01:44:36,996 --> 01:44:48,876
+Demek ki ne yapıyoruz? Vektörer çarpıyı yapıp doğrunun normalini buluyoruz. Bir de üzerindeki noktayı buluyoruz. Onu da keyifli olarak bulabiliriz. Mesela şu ikisinin kesiştiği noktayı bulmak istiyorsak.
+
+746
+01:44:49,199 --> 01:44:56,399
+Şunu söyleyeyim. Vektörü bulduk. Doğrufman vektörü. Tamam. Kesişen düzenlere göre. Peki. O noktayı nasıl buluruz biliyor musunuz? Şöyle.
+
+747
+01:44:57,560 --> 01:45:12,019
+Mesela z'yi sıfır alırsınız. Keyfi. İki bilim yönde eklemi çözersiniz. İşte diyelim ki bir, bir, sıfır diye bir nokta çıktı. İşte üzerindeki noktadır. Onu bulmak böyle. Bir tanesini sıfır alıp diğerinde iki bilim yönde eklem olarak çözersiniz.
+
+748
+01:45:13,519 --> 01:45:15,019
+Peki buradaki soruya bakalım.
+
+749
+01:45:16,148 --> 01:45:19,248
+Evet, az kaldı arkadaşlar. Birkaç dakikada rica edelim.
+
+750
+01:45:20,168 --> 01:45:25,088
+Evet. İki tane verilen düzlemlerin ara kesip doğrusu değildi. İkisi aynı anda verilen ara kesip doğrusu.
+
+751
+01:45:25,188 --> 01:45:33,387
+Hemen bunun normali bakarak 3-2-1. Bu da 1-1-2. Determinattan o doğrunun doğrultmanını bulduk.
+
+752
+01:45:33,548 --> 01:45:35,728
+Ah, bence. Güzel. Bideyim üzerindeki nokta.
+
+753
+01:45:37,668 --> 01:45:43,208
+Kolay olsun diye x'i 1 almamış da 0 almış. Şey, 0 almamış da 1 almış. Buradan da düzlem çıksın diye.
+
+754
+01:45:43,604 --> 01:46:01,604
+Herkes bütün sınıf farklı bulabilir tabii. Ondan sonra eksilirdi. Burada da 2-3 çıkar. Ara kesip doğru üzerinde bir nokta çıktı. O zaman, burada da Dorne'un parametrik denklerinin yerine konusu vardı. Yani x0 artı at y0 artı bt.
+
+755
+01:46:03,743 --> 01:46:10,304
+Baktık, kesişim doğrusuna paralel olan bu bir vektör. Tamam, yaptık.
+
+756
+01:46:12,212 --> 01:46:17,612
+Bu, evet, düzenlerin kesim doğrusunda parallel olan vektör ve bu doğrun parametri de iklimleri bulunduğu.
+
+757
+01:46:17,612 --> 01:46:27,232
+Peki, bu, bakıyoruz. Demin ki gibi, bunun normalini aldık, bunun normalini aldık. Burada bulduğumuz doğrunun doğrultmanı oldu. Peki.
+
+758
+01:46:28,952 --> 01:46:37,312
+Devam, devam ettik. Pariyel olduğuna göre bunun tam bir katı olur. Tamam, fark ediniz. Şimdi bir de, üzerinde bir nokta alıyorum. Z, yerine 0 koydum.
+
+759
+01:46:38,163 --> 01:46:40,083
+İşte bulduk. Cevap bu.
+
+760
+01:46:42,104 --> 01:46:46,923
+Buraya baktık. Diyor ki, bir doğru verdim diyor. Bir de düzlemle kesici noktayı buluruz.
+
+761
+01:46:46,923 --> 01:46:51,144
+Bu kolay. X yerine, yerine, Z yerine koyduğunuz zaman T çıkar.
+
+762
+01:46:51,644 --> 01:46:52,844
+Tamam mı? Yani kesiştirirsiniz.
+
+763
+01:46:54,163 --> 01:46:57,264
+Ne çıktı? T çıktı. Yani T değerini buldunuz.
+
+764
+01:46:57,844 --> 01:47:01,463
+Bu T değerine göre, eksi bir de yerine korsanız kesici noktayı al.
+
+765
+01:47:01,855 --> 01:47:06,315
+Basit yani. Bir düzen var, bir de doğru var. Kestiği noktayı buluyoruz.
+
+766
+01:47:06,855 --> 01:47:12,975
+Bir kesiştirirsiniz. X, Y, Z'yi düzlemde yerine koyup, T'yi de yerine koyduğunuz zaman bu noktayı bulursunuz.
+
+767
+01:47:14,136 --> 01:47:18,796
+Çocuklar, evet. Güzel, böyle doyurucu bir ders yaptık.
+
+768
+01:47:20,176 --> 01:47:24,475
+Devam edeceğiz. Vektör fonksiyonları falan devam edeceğiz.
+
+769
+01:47:24,475 --> 01:47:25,235
+Evet.
+
+770
+01:47:25,684 --> 01:47:34,963
+Tabii bunların da yine uygulaması daha sonra yapacağız. Derken şeye doğru gidiyoruz artık. Çok değişkenli fonksiyon, kısmi türeve doğru gidiyoruz.
+
+771
+01:47:35,583 --> 01:47:47,663
+Evet. Altıncı haftayı bitirdik. Programda da altıncı haftadayız zaten. Sorun yok. Peki sorunuz var mı? Hadi Allah'a emanet olun.
+
+772
+01:47:49,304 --> 01:47:52,283
+Dersimizi yaptık çocuklar.
+
+773
+01:47:53,140 --> 01:48:03,240
+Bu programımız, enfes şekilde yürüyor, uygulaması da bol bol. Evet, siz de çalışın, bu dersi kurtarın. 5 saatlik ders çünkü.
+
+774
+01:48:04,500 --> 01:48:05,400
+Peki, kapatıyorum.
