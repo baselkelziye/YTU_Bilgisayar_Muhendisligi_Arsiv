@@ -1,0 +1,2767 @@
+1
+00:00:11,380 --> 00:00:12,660
+Merhaba arkadaşlar.
+
+2
+00:00:14,660 --> 00:00:16,219
+Sesim geliyor mu?
+
+3
+00:00:20,468 --> 00:00:37,147
+geliyor. Teşekkür ederim. Dersimize kaldığımız yerden devam edeceğiz. Bugün belirsizlikleri işleyeceğiz. Sonra da maksimum minimuma geçeceğiz arkadaşlar. Şöyle ekran paylaşımı yapacağım sizinle şimdi.
+
+4
+00:00:52,404 --> 00:00:55,784
+Evet. PDF gözüküyor mu acaba arkadaşlar?
+
+5
+00:00:58,664 --> 00:00:59,864
+Gözüküyor hocam.
+
+6
+00:01:00,144 --> 00:01:01,764
+Tamam, teşekkür ederim.
+
+7
+00:01:02,683 --> 00:01:04,224
+Şimdi belirsizlikler.
+
+8
+00:01:06,124 --> 00:01:09,424
+Belirsizliklerden ilki 0,0 belirsizliğiydi.
+
+9
+00:01:09,683 --> 00:01:11,344
+Bundan bahsetmiştik arkadaşlar.
+
+10
+00:01:11,764 --> 00:01:14,204
+Şimdi ben sırasıyla hepsini anlatacağım.
+
+11
+00:01:14,844 --> 00:01:16,144
+Dün biraz bahsettik.
+
+12
+00:01:16,144 --> 00:01:17,884
+Eğer yukarısı 0.
+
+13
+00:01:18,804 --> 00:01:39,843
+x yerine a koyduk. Yukarısı 0, aşağısı 0sız. Yani 0 bölü 0 belirsizliği varsa 0 bölü 0 belirlesi belirsizliği. Yukarının türevini bölü aşağının türevi şeklinde yazıp yapıyorduk. Hatta şu örneği yaptım. Burada kaldık. Şimdi beraber yapalım.
+
+14
+00:01:44,659 --> 00:01:47,960
+ekran paylaşımı yapacağım.
+
+15
+00:01:53,876 --> 00:02:02,356
+Evet, tahta gözüküyor değil mi arkadaşlar? Evet. Tamam. Teşekkürler. Şimdi arkadaşlar bir örnekle başlayalım. Örneğin,
+
+16
+00:02:03,635 --> 00:02:05,036
+Örneğin, limit
+
+17
+00:02:12,596 --> 00:02:29,596
+x sıfıra giderken, karakök içinde, 1 artı x, eksi 1, bölü x diyelim. Bunun limitini hesaplayınız. Soru işareti der mi? Ben bir daha yazmıyorum. Bunu sileyim.
+
+18
+00:02:33,075 --> 00:02:55,716
+şöyle diyoruz. x yerine 0 koyduk. Yukarısı 1-1'den 0. Aşağısı 0 var. 0 bölü 0 belirsizliği. Diyoruz ki 0 bölü 0 belirsizliği varsa, hatta şu eşitliği şuraya çekelim. Limit x0'a giderken şöyle yapıyoruz. Yukarıdaki ifadenin türevi bir kereliğini yazayım.
+
+19
+00:02:56,276 --> 00:03:23,075
+bölü aşağıdaki ifadenin türevi. Bu şekilde türevi alacağız. Şimdi ne olur? Limit x sıfıra giderken 1 artı x'in türevi nedir? 1 artı x'in 1 bölü 2. kuvvetinin türevi. Nasıl alıyorsunuz arkadaşlar? Kök değil mi bu? Şu ifade. Karakök içinde 1 artı x bu demek. Nedir arkadaşlar? 1 bölü 2 başa düştü.
+
+20
+00:03:23,487 --> 00:03:46,987
+1 artı x, 1 bölü 2 eksi 1'den, eksi 1 bölü 2 oldu. Çarpı, içinin türevinden 1 geldi. Yani, şöyle gelir. Şöyle, 1 bölü 2, şu aşağıya geçirebiliriz. 1 artı x'in, 1 bölü 2. kuvveti, yukarıda 1 var. Demek ki, payın türevi şöyle.
+
+21
+00:03:47,731 --> 00:03:58,951
+1 bölü 2, kare kök içinde 1 artı x'dir. 1 artı x'in 1 bölü 2. kuvveti demek bu demek. x'in türevi nedir? 1'dir.
+
+22
+00:03:59,671 --> 00:04:10,811
+Şimdi bu haliyle, isterseniz hemen koyabilirsiniz, x yerine 0 koyalım. Yukarısı ne olur? 1 bölü 2 olur. Aşağısı 1 olur.
+
+23
+00:04:11,316 --> 00:04:15,915
+Bu da 1 bölü 2 eşittir. Anlaşıldı mı arkadaşlar bu?
+
+24
+00:04:16,975 --> 00:04:17,596
+Evet hocam.
+
+25
+00:04:17,596 --> 00:04:19,375
+Tamam, sıkıntı yok.
+
+26
+00:04:19,975 --> 00:04:20,795
+Şimdi arkadaşlar.
+
+27
+00:04:21,555 --> 00:04:24,375
+Hocam, sınavla ilgili bilgi verecektiniz bugün.
+
+28
+00:04:24,375 --> 00:04:49,375
+Sınav, arkadaşlar, büyük bir ihtimalle test olacak. Sınav tarihini yaklaşık olarak biliyorum ama resmi olarak açıklanmadığı için sınav tarihini paylaşamıyorum. Çünkü değişiklik olabilir. Resmi olarak açıklanınca duyurular kısmında yayınlanır ve ben de size söylerim budur diye. Sizler de kendiniz bütün sınav tarihlerini...
+
+29
+00:04:49,555 --> 00:05:04,716
+test dersleri duyurular kısmından, matematik bölümünden görebilirsiniz. Şimdi kaç soru olacağını bilmiyorum. Büyük bir ihtimalle dediğim gibi test olacak ve bu belirsizlikler de sınavda olacak. Maksimum, minimuma kadar olacak.
+
+30
+00:05:06,395 --> 00:05:17,555
+Ve yine bir değişiklik olmazsa yayınlandıktan sonra resmi olarak yine o zaman da konuşuruz. Bugün belirsizlikleri bitireceğiz. Bu sınava dahil bir...
+
+31
+00:05:17,555 --> 00:05:24,995
+bir konu. Daha sonra maksimum, minimumu biraz işleyeceğiz. Ve ben haftaya şöyle yapmayı düşünüyorum.
+
+32
+00:05:25,651 --> 00:05:37,331
+yaz okulunda test usulü olmuş. Ben yaz okulunda ders almadım ama bugün diğer dersimde bir öğrenci, hocam 20 soru sordular dediler. Bilmiyorum.
+
+33
+00:05:37,891 --> 00:05:51,931
+Yaz okulunda çıkan soruları veya onlara benzer nasıl sorular sorulmuş, onları da haftaya bu uygulamayı yaptıktan ve sizler de anladıktan sonra haftaya bunun üzerinde de konuşmaya karar verdim.
+
+34
+00:05:51,931 --> 00:05:53,651
+Yani ya haftaya yine bir uygulamayı...
+
+35
+00:05:53,651 --> 00:06:21,571
+uygulama yaparız. Sizde yani ne zaman olur? Belki 2 hafta sonra sınav olur. 8. 9. haftada bilmiyorum. Sınavlar olabilir. Ama resmi olarak çok yakın bir zamanda açıklanır. Hepimiz beraber öğreniriz. Böyle özetleyebilirim. Ama haftaya birazcık çıkan sorular üzerinden konuşursak, ya testte bu tarz sorular soruluyormuş. Zaten birçok soru çözmüş olacağız o zamana kadar.
+
+36
+00:06:21,651 --> 00:06:29,831
+Bunları kavradıktan sonra hepsini yapabilirsiniz. Evet, şimdilik sınav hakkında söyleyeceğim bunlar. Sorusu olan bunlar.
+
+37
+00:06:33,843 --> 00:06:37,843
+Evet, sorusu olan yok. Tamam. Devam edelim mi?
+
+38
+00:06:38,564 --> 00:06:39,243
+Kaldığımız yer.
+
+39
+00:06:39,243 --> 00:06:40,303
+Edelim hocam.
+
+40
+00:06:40,303 --> 00:06:49,103
+Yani benim diyeceklerim bu kadar. Haftaya sınav soruları üzerinden de ve size birçok soru getireceğim.
+
+41
+00:06:49,456 --> 00:07:16,516
+paylaşacağım. Onlar üzerinden de daha bol konuşuruz. Ama önemli olan konuyu iyi kavramanız. Ben zannediyorum ki şu yaptıklarımızdan en zor soruları çözerek konuyu da epey bir kavradığınızı inanıyorum. Haftaya da dediğim gibi hem bu haftanın konularını bitirmiş olacağız. Haftaya da yine bir gün uygulama yaparak ya da iki gün bilemiyorum veya yayarız birkaç haftaya.
+
+42
+00:07:17,456 --> 00:07:26,635
+bu zaman uygulama yaparız. Hem tekrar etmiş oluruz, hem konuları anlamış oluruz, hem bol bol örnek çözmüş oluruz diye düşünüyorum.
+
+43
+00:07:27,636 --> 00:07:37,855
+Evet, benim söyleyeceklerim sınav için ama resmi bir açıklama yapılmadığı sürece sınav tarihi hakkında bir şey söyleyemiyorum diyebilirim.
+
+44
+00:07:37,855 --> 00:07:46,855
+Ama bir hafta içinde de ben sınav tarihinin açıklanacağını düşünüyorum arkadaşlar. Tamam mı? Belki de haftaya belli olur.
+
+45
+00:07:47,699 --> 00:07:51,159
+Evet, şimdi diyor ki bunun limitini hesaplayınız.
+
+46
+00:07:51,719 --> 00:07:56,259
+Şimdi x yerine sıfır koyduğunuz zaman yukarısı sıfır, aşağısı sıfır.
+
+47
+00:07:56,379 --> 00:07:58,899
+Sıfır bölü sıfır belirsizliği şöyle yapıyoruz.
+
+48
+00:08:00,539 --> 00:08:06,620
+Payın türevi x eksi sinüs x'in türevi ne olur arkadaşlar?
+
+49
+00:08:07,479 --> 00:08:09,539
+1 eksi kusunüs x olur.
+
+50
+00:08:09,979 --> 00:08:13,659
+Paydanın türevi x kübün türevi 3x karedir.
+
+51
+00:08:15,247 --> 00:08:18,187
+yine x yerine 0 koyalım.
+
+52
+00:08:19,220 --> 00:08:47,220
+1-kotünüs sıfırdan 1 gelir. 1-1'den sıfır. Aşağısı da 3x0'dan sıfır gelecek. Yine 0 bölü 0 belirsizliği var. Buradan neyi öğreniyoruz? Lopital kuralında, yani türev bir kere alabilirsin, iki kere üst üste 0 bölü 0 belirsizliği geldiği zaman üst üste, yani o belirsizlikten kurtarana kadar türev alabilirsiniz arkadaşlar. Şöyle göstereyim.
+
+53
+00:08:47,220 --> 00:09:14,700
+deneyim. 0'a giderken burası ne olur? Türevi 1'in türevi 0, kosinüs x'in türevi, eksisinüs bir de eksi var başında. Aşağısı ne oldu? 6x geldi. Peki burada ne? x gördüğümüz yere 0 yazdık. 0 bölü 0 belirsizdir. Türevi alalım ya da hemen yazabiliriz bunu. Değil mi arkadaşlar? Sinüs x bölü x, x0'a giderken 1'dir. Bunu da kullanabilirsiniz ya da şöyle yaparsınız.
+
+54
+00:09:15,379 --> 00:09:18,420
+Yine bakın, belirsizlik, yine türev alabilirsiniz.
+
+55
+00:09:19,039 --> 00:09:23,720
+Türev alalım, sinüs x'inki, kosinüs x, 6x'inki 6'dır.
+
+56
+00:09:23,720 --> 00:09:26,940
+Burada x gördüğümüz yere
+
+57
+00:09:27,604 --> 00:09:35,764
+0 yazalım. Ne çıktı? Kosinüs 0, 1 bölü 6 olur. Evet, sesim geliyor mu? Evet. Geliyor. Evet hocam.
+
+58
+00:09:35,784 --> 00:09:55,604
+Bu bunu arkadaşlar. Yani kaç kare aldık? O belirsizlik ama işlem hatası yapmayacaksınız. İşlem hatası yapıp yanlışlıkla 0 bölü 0 bulmuşsanız o zaman yanlış gidiyorsunuz. Doğru yaptınız. 0 bölü 0 belirsizliği geldi. 2 kere, 3 kere, 4 kere o belirsizlikten kurtarmak.
+
+59
+00:09:55,604 --> 00:10:10,244
+kaç kere gerekiyorsa o kadar yapabilirsiniz. Mesela bu soruda şurası 1'dir. Bu yöntemle de devam edebilirdiniz. Şurası 6. Hiç bunu yapmadan 1 bölü 6'da diyebilirdiniz.
+
+60
+00:10:12,980 --> 00:10:30,700
+Şimdi başka bir soru. Bakın demek ki 1. 0 bölü 0 belirsizliğinde üst üste birkaç kere birden fazla L'Hospital kuralını uygulayabiliyoruz. Bir de bakın arkadaşlar dikkatinizi çektiğimiz soruda. Şimdi bunun limitine bakacağız.
+
+61
+00:10:30,700 --> 00:10:40,960
+0'a giderken sağ türev, sol türevde de L'Hospital'ı uygulayabilirsiniz. Şöyle diyelim. Yine bakın x yerine 0 yaz.
+
+62
+00:10:40,980 --> 00:10:48,120
+yazdık. Böyle yapıyoruz. x yerine 0 yazdık, yukarısı 0, aşağısı 0. Bu neydi yukarıdaki işaret?
+
+63
+00:10:48,280 --> 00:10:58,320
+Bize 0'a ne taraftan yaklaştığımızı veya bir fonksiyon yazacaksak 0'ın sağından dolayı gittiğimizi, bu artıyı bu şekilde düşünecektik.
+
+64
+00:10:58,980 --> 00:11:07,560
+Limit x0'a giderken L'Hospital'ı uyguladık. Ne oldu? Sinüs x'inki, kosinüs x, aşağısı 2x.
+
+65
+00:11:08,371 --> 00:11:15,911
+şimdi ne oluyor arkadaşlar? Burada bakın şöyle yazacağım. Limit x sıfıra sağdan giderken 1 bölü x
+
+66
+00:11:17,203 --> 00:11:18,223
+sonsuz.
+
+67
+00:11:19,383 --> 00:11:20,543
+Dikkat ediyoruz.
+
+68
+00:11:21,023 --> 00:11:22,803
+1 bölü sonsuz sıfırdı.
+
+69
+00:11:22,943 --> 00:11:24,963
+1 bölü eksi sonsuz sıfırdı.
+
+70
+00:11:24,963 --> 00:11:29,183
+Ama 1 bölü sıfır sağdan gidersek artı sonsuz.
+
+71
+00:11:29,543 --> 00:11:32,483
+1 bölü sıfır soldan gidersek eksi sonsuz.
+
+72
+00:11:32,903 --> 00:11:34,563
+Bunu hiçbir zaman unutmayacağız.
+
+73
+00:11:35,103 --> 00:11:37,603
+Bakın 1 bölü x tek başına bıraktık.
+
+74
+00:11:38,003 --> 00:11:41,263
+Şimdi x gördüğümüz yere sıfır yazıyoruz.
+
+75
+00:11:41,763 --> 00:11:43,383
+Kosinüs sıfır, 1.
+
+76
+00:11:43,923 --> 00:11:44,783
+Aşağısı 2.
+
+77
+00:11:45,203 --> 00:12:11,403
+bir sayı. Burası ise bir bölü x gördüğümüz yere sıfır yazdık. Bir bölü sıfır. Ama ne taraftan gittik? Artı. Değil mi? Sağdan gittik. O zaman bakın şu. Sağdan gidersek artı sonsuz. Sonsuzla bir sayı çarptık. Şöyle değil mi? Pozitif bir sayı çarptık. O zaman yine pozitif artı sonsuz olur. Sonucu. Anlaşıldı mı arkadaşlar?
+
+78
+00:12:12,019 --> 00:12:12,739
+Efendim?
+
+79
+00:12:13,679 --> 00:12:16,379
+Bu soruyu hiç L'Hospital kullanmadan çözemez miydik?
+
+80
+00:12:17,099 --> 00:12:18,879
+Çözebilirdik. Şöyle yapardık.
+
+81
+00:12:18,999 --> 00:12:20,819
+Yani şeydeki o x'i bölsek.
+
+82
+00:12:21,419 --> 00:12:26,999
+Aynen öyle. Ben öyle yapardım bu soruyu. Ama L'Hospital'le de yapılabiliyor. Şöyle değil mi? İsmin ne?
+
+83
+00:12:28,059 --> 00:12:28,859
+[öğrenci] hocam.
+
+84
+00:12:29,139 --> 00:12:31,579
+[öğrenci]. Teşekkür ederim. Buna ne derdin?
+
+85
+00:12:32,596 --> 00:12:33,875
+1 derdim oraya.
+
+86
+00:12:34,256 --> 00:12:40,676
+Burası ne derdin? 1 bölü 0 sağdan gittin, artı sonsuz derdin, sonucu artı sonsuz derdin.
+
+87
+00:12:41,587 --> 00:12:43,767
+Doğru. Teşekkür ederim.
+
+88
+00:12:43,827 --> 00:12:44,007
+Tamam.
+
+89
+00:12:44,307 --> 00:12:45,667
+Anlaşıldı mı arkadaşlar?
+
+90
+00:12:46,627 --> 00:12:53,747
+Yani normalde hani yazılı sınav olsa mesela L'Hospital kullanmayınız deseydi bu yöntemle yapacaktınız.
+
+91
+00:12:53,747 --> 00:13:01,147
+Ama şimdi testse ister bu yöntemle yapın ister bu yöntemle. İkisiyle de olabilir.
+
+92
+00:13:02,187 --> 00:13:02,347
+Evet.
+
+93
+00:13:02,868 --> 00:13:15,148
+Daha çözeyim mi? Birkaç örnek daha var. Bir de şunu yapayım isterseniz. Daha kalıcı olması için. Limit x sıfıra soldan giderken mesela sinüs x bölü x kare.
+
+94
+00:13:16,211 --> 00:13:43,312
+yine bakın sinüs x gördüğüm yere 0 yazdı. Yukarısı 0, sinüs 0'dan dolayı 0, aşağısı da 0. Şimdi şöyle diyoruz, limit x 0'a giderken sinüs x'in türevi kosinüs x, x karenin türevi 2x. Yine aynısı geldi bakın. Şöyle ayrı ayrı yazayım. 1 bölü x, kosinüs x bölü x.
+
+95
+00:13:44,275 --> 00:13:45,395
+Ne dersiniz?
+
+96
+00:13:46,196 --> 00:13:49,196
+Şurası 2.
+
+97
+00:13:51,875 --> 00:13:54,895
+Şimdi x gördüğüm yere 0 yazdım.
+
+98
+00:13:55,115 --> 00:13:57,175
+Kosinüs 0, 1, aşağısı 2.
+
+99
+00:13:58,076 --> 00:14:01,755
+1 bölü, bu da 1 bölü 0'a soldan gidiyoruz değil mi?
+
+100
+00:14:02,135 --> 00:14:03,935
+O zaman bu ne? Eksi sonsuz.
+
+101
+00:14:04,076 --> 00:14:07,355
+Çarpı 1 bölü 2. Ne çıkar? Eksi sonsuz.
+
+102
+00:14:07,764 --> 00:14:14,884
+Ya da biraz önce arkadaşınızın dediği gibi, sıfıra soldan giderken sinüs x bölü x kare.
+
+103
+00:14:15,384 --> 00:14:17,984
+Bunu nasıl yazarsınız? Şöyle yazarsınız.
+
+104
+00:14:19,183 --> 00:14:20,524
+x bölü x
+
+105
+00:14:21,039 --> 00:14:23,120
+dersiniz ki burası 1'dir.
+
+106
+00:14:23,579 --> 00:14:25,980
+Soldan gidiyoruz. Bu da eksi sonsuzdur.
+
+107
+00:14:26,539 --> 00:14:30,439
+Eksi sonsuz çarpı 1'den, eksi sonsuz çıkar.
+
+108
+00:14:30,439 --> 00:14:34,639
+Yani bir limiti bulmanın birden fazla yöntemi vardır.
+
+109
+00:14:34,879 --> 00:14:36,960
+Ama hepsinde aynı sonuç çıkar.
+
+110
+00:14:37,399 --> 00:14:39,019
+Buraya kadar tamam mı arkadaşlar?
+
+111
+00:14:40,340 --> 00:14:51,820
+Evet, anlaşıldığını düşünüyorum. Şu soruyu çözmeyeceğim. Bakın burada da 2 kere 1, 0 bölü 0 belirsizliği çıkıyor. Bir türev alıyorsunuz. Sonra
+
+112
+00:14:52,368 --> 00:15:16,588
+aldık türevi, yine 0 bölü 0 belirsizliği çıkıyor. Aldınız türevi, yine 0 bölü 0 belirsizliği çıkıyor. Yani şurada önemli olan paydanın 0'dan farklı olduğunu görebilmek, onlardan kurtulana kadar, yani 0 bölü 0 belirsizliğinden kurtulana kadar türevi alıyoruz, L'Hospital uyguluyoruz.
+
+113
+00:15:16,588 --> 00:15:18,528
+Hocam bir çözseydik onu ya.
+
+114
+00:15:19,059 --> 00:15:21,499
+Bunu mu çözelim mi? Tamam çözelim.
+
+115
+00:15:22,099 --> 00:15:24,039
+Tamam beraber çözelim.
+
+116
+00:15:25,059 --> 00:15:28,399
+Çünkü öyle anlatınca gözüm korktu hocam biraz da.
+
+117
+00:15:28,439 --> 00:15:36,019
+Yok hayır hiç. Yani şu ana kadar yaptığımız sorular çok korkulacak sorular mı? Değil değil mi?
+
+118
+00:15:36,319 --> 00:15:37,339
+Yok değil hocam.
+
+119
+00:15:37,879 --> 00:15:40,279
+Evet bakın şimdi yazınca göreceksiniz.
+
+120
+00:15:41,875 --> 00:16:02,036
+Mesela limit, aynı soruyu yazıyorum. 2 tane sinüs x, eksi sinüs 2x, bölüm, 2e üzeri x, eksi 2, eksi 2x, eksi x kare. Ne yapıyoruz arkadaşlar? Şöyle yapıyoruz. x gördüğümüz yere 0 verdik.
+
+121
+00:16:02,196 --> 00:16:06,876
+2x sinüs sıfır sıfır, sıfır, eksi sinüs sıfır sıfır, yukarısı sıfır.
+
+122
+00:16:07,576 --> 00:16:19,016
+Aşağısı 2x e üzeri sıfır, 2x e üzeri sıfır, 1'dir 2, eksi 2, 2x sıfır sıfır, sıfır, eksi sıfır.
+
+123
+00:16:19,556 --> 00:16:23,436
+2-2'den de sıfır, sıfır bölü sıfır belirsizliği geldi.
+
+124
+00:16:24,156 --> 00:16:25,696
+x yerine sıfır verdik.
+
+125
+00:16:26,048 --> 00:16:29,188
+Ve bunu bulduk. O zaman diyoruz ki Laputel uygulayalım.
+
+126
+00:16:29,188 --> 00:16:35,128
+Uygulayalım. x sıfıra giderken. Yukarının şu ifadenin türevini alalım.
+
+127
+00:16:35,427 --> 00:16:39,848
+Alalım. 2 sinüs x'in türevi nedir? 2 kosinüs x'dir.
+
+128
+00:16:40,088 --> 00:16:42,948
+Eksi. Sinüs 2x'in türevi nedir?
+
+129
+00:16:44,668 --> 00:16:49,368
+Sinüs'ün türevi kosinüs 2x çarpı içine türevi...
+
+130
+00:16:49,368 --> 00:16:49,868
+2 kosinüs.
+
+131
+00:16:50,548 --> 00:16:52,968
+Evet. 2 kosinüs 2x.
+
+132
+00:16:53,408 --> 00:17:04,188
+bitti. Bölüm. Şimdi payın, paydanın türevini alalım. İki tane e üzeri x'in türevi nedir? E üzeri x'dir. Bunun türevini aldık.
+
+133
+00:17:04,188 --> 00:17:14,168
+x 2'nin türevi nedir? Sıfırdır. x 2x'in türevi nedir? X 2'dir. x x karenin türevi nedir? X 2x'dir.
+
+134
+00:17:15,220 --> 00:17:31,519
+yazdık. Diyoruz ki x gördüğümüz yere 0 yazalım. Yazarsanız bakın 2 tane kosinüs 0, 1'dir 2. 2 tane kosinüs 0 yine, 1'dir 2. 2-2'den 0. Aşağısı.
+
+135
+00:17:32,019 --> 00:17:47,880
+2 tane e üzeri sıfır, e üzeri sıfır, 1, 2, eksi 2, 2 çarpı sıfır, sıfırdır. Burası da 2 eksi 2'den sıfır. Yine sıfır bölü sıfır belirsizliği geldi. Ne diyeceğiz? Yine türevi alıyoruz.
+
+136
+00:17:49,340 --> 00:17:54,259
+Alalım, pay kısmındaki, yani bu ifadenin türevini alıyorsunuz.
+
+137
+00:17:54,548 --> 00:18:01,228
+2 cos x, nedir? cos'ün türevi? eksi sinüstür. 2 eksi sinüs x oldu.
+
+138
+00:18:02,127 --> 00:18:10,288
+eksi, cos 2x'in türevi, eksi sinüs 2x'tir. Bir de 2 gelecek içinden. Şuradaki eksi gidecek.
+
+139
+00:18:10,708 --> 00:18:17,667
+2 vardı. Bir de 2 daha geldi. 4 oldu. 4 tane sinüs 2 işte oldu.
+
+140
+00:18:18,324 --> 00:18:22,404
+Hocam, başındaki kaç sayı olan 2'nin yok olması gerekmiyor mu?
+
+141
+00:18:23,184 --> 00:18:23,984
+x türevini alır.
+
+142
+00:18:24,464 --> 00:18:26,164
+Yok, eksi 2 vardı.
+
+143
+00:18:26,784 --> 00:18:28,544
+Kosinüs 2x'in türevi nedir?
+
+144
+00:18:29,224 --> 00:18:34,304
+Eksi sinüs x çarpı 2.
+
+145
+00:18:34,764 --> 00:18:36,344
+2 çarpı 2, 4 oldu.
+
+146
+00:18:37,064 --> 00:18:38,744
+Tamam mı? Buraya kadar arkadaşlar.
+
+147
+00:18:38,744 --> 00:18:40,224
+Bölü.
+
+148
+00:18:41,236 --> 00:19:05,716
+2 e üzeri x'in türev ne? e üzeri x. 2 e üzeri x. 2'nin türev ne? 0. Eksi 2 x'in türev ne? Eksi 2. Bunu da böyle yazdık. Şimdi bakıyoruz. x gördüğüm yere 0 koy. Koyalım. Eksi 2 sinüs 0'dan 0 gelir. Artı.
+
+149
+00:19:06,144 --> 00:19:32,284
+4 sinüs sıfırdan sıfır, yukarısı sıfır. Aşağısı 2, e üzeri sıfır, birdir 2, eksi 2, aşağısı da sıfır. Yine ne geldi arkadaşlar? Sıfır bölü sıfır belirsizliği geldi. O zaman bir daha türevi alıyoruz. Limit x sıfıra giderken pay kısmının türevi şöyle alalım.
+
+150
+00:19:33,076 --> 00:20:00,276
+sinüs x'in türevi nedir? Kosinüs x. Eksi 2 tane sinüs x'in türevi kosinüs x. Artı sinüs x'in türevi nedir? 2 çarpı kosinüs 2x'tir. Bir de 4 far başında 8 çarpı kosinüs 2x oldu. Bölüğü paydanın türevi. 2 e üzeri x. e üzeri x'in türevi e üzeri x'tir.
+
+151
+00:20:00,852 --> 00:20:03,771
+2'nin türevi, eksi 2'nin türevi sıfırdır.
+
+152
+00:20:04,372 --> 00:20:09,372
+Şimdi diyoruz ki, x gördüğün yere sıfır yaz.
+
+153
+00:20:09,771 --> 00:20:12,771
+Yazalım. x gördüğümüz yere sıfır yazdık.
+
+154
+00:20:12,892 --> 00:20:24,812
+Eksi 2 çarpı kosinüs sıfır bir, artı 8 çarpı kosinüs sıfır bir, çarpı bir, bölü 2 çarpı e üzeri sıfır, e üzeri sıfır bir, iki.
+
+155
+00:20:24,812 --> 00:20:28,211
+Ne çıktı? 6 bölü 2.
+
+156
+00:20:28,915 --> 00:20:30,695
+Yani 3'dür.
+
+157
+00:20:32,276 --> 00:20:34,096
+Evet, anlaşıldı mı arkadaşlar?
+
+158
+00:20:36,216 --> 00:20:37,576
+Evet, var mı bir sorun?
+
+159
+00:20:37,716 --> 00:20:38,195
+Evet hocam.
+
+160
+00:20:38,635 --> 00:20:39,216
+Yok değil mi?
+
+161
+00:20:40,256 --> 00:20:45,016
+Şimdi gelelim bakın şimdi ikinci belirsizliğimize.
+
+162
+00:20:45,915 --> 00:20:49,756
+Şimdi her tabii ki herlimiz 0 bölü 0 çıkmıyor.
+
+163
+00:20:50,208 --> 00:21:18,208
+yerine koydunuz x a'ya giderken f a değeri sonsuz, g a değeri sonsuz çıktı. Yani sonsuz bölü sonsuz belirsizliği geliyor. Yani başında artı eksiler olabilir. Artı sonsuz bölü, eksi sonsuz, eksi sonsuz bölü, artı sonsuz. Fark etmez. Sonsuz bölü sonsuz belirsizliği geliyorsa, şimdi bakın bunu konuşalım. Bu da aynı sıfır bölü sıfır belirsizliği gibi. Yani sonsuz bölü sonsuz belirsizliği.
+
+164
+00:21:18,208 --> 00:21:39,268
+pardon 0,1,0 belirsizliğinde nasıl yapıyoruz? Payın türevi bölü, paydanın türevi. Bunda da aynı şekilde yapacaksınız. Örnek üzerinde göstereyim. Örneğin, limit x sonsuza giderken, L'in x bölü 2 kök x.
+
+165
+00:21:40,147 --> 00:21:59,127
+Şimdi burada bakıyoruz arkadaşlar. x yerine sonsuz verelim. Elen sonsuz bakın şöyleydi. Elenin grafiği şuydu. Elenler sonsuza giderken y değerleri de sonsuza gider. Elen sonsuz, sonsuz. Tamam mı arkadaşlar? Elen sonsuz, sonsuz.
+
+166
+00:21:59,471 --> 00:22:07,491
+Aşağısı 2x sonsuz üzeri 1 bölü 2. Yani sonsuzun bir katı da yine sonsuzdur. Tamam mı arkadaşlar?
+
+167
+00:22:08,051 --> 00:22:16,731
+2x sonsuz da sonsuzdur. Dolayısıyla şöyle diyebiliriz. Yukarısı sonsuz, aşağısı sonsuz.
+
+168
+00:22:17,056 --> 00:22:44,195
+sonsuz bölü sonsuz belirsizliği var. Burada da yine aynı sıfır bölü sıfır belirsizliğinde olduğu gibi şöyle yapacaksınız. Limit x sonsuza giderken lnx'in türevi nedir? 1 bölü x'dir. Bölü 2 kök x'in türevi nedir arkadaşlar? 2 kök x'in türevi 1 bölü 2 kök x'dir. Şimdi buradan ne olur? Şunlar gider.
+
+169
+00:22:44,884 --> 00:22:48,764
+Limit x sonsuza giderken ne gelir?
+
+170
+00:22:49,484 --> 00:22:51,163
+Kök x bölü x gelir.
+
+171
+00:22:51,624 --> 00:22:53,304
+Şunlar da sadeleşir.
+
+172
+00:22:53,943 --> 00:22:57,824
+Limit x sonsuza giderken bir bölü kök x olur.
+
+173
+00:22:58,864 --> 00:23:01,644
+Buradan arkadaşlar koyalım yerine.
+
+174
+00:23:01,644 --> 00:23:03,723
+x gördüğümüz yere
+
+175
+00:23:04,692 --> 00:23:31,692
+sonsuz koyalım. 1 bölü. Sonsuzun 1 bölü 2. kuvveti yine sonsuzdur. 1 bölü sonsuz da sıfırdır. Sonuç ne çıkar? Sıfır çıkar. Bunu anladınız mı arkadaşlar? Sesim geliyor mu? Ben internet... Evet. Tamam. Var mı bir sıkıntı soruda? Yok değil mi? Yok. Şimdi şöyle bir şey söyleyeceğim. Yine aynı...
+
+176
+00:23:32,468 --> 00:23:39,188
+0 bölü 0 belirsizliğinde olduğu gibi bunda da arkadaşlar mesela şöyle söyleyeyim.
+
+177
+00:23:40,008 --> 00:23:43,008
+Sağdan ve soldan limitlerde de kullanılabilir.
+
+178
+00:23:43,208 --> 00:23:46,468
+Mesela pi bölü 2'ye soldan yaklaşılsın.
+
+179
+00:23:47,228 --> 00:23:54,048
+Sekant x bölü 1 artı tanjant x limitini hesaplayınız dedi.
+
+180
+00:23:55,668 --> 00:23:58,888
+Sinüs ve kosinüs, sekant ve tanjant burada.
+
+181
+00:24:00,596 --> 00:24:20,736
+diyorum ki x gördüğüm yere pi bölü 2 yazalım. Yazalım. Secant x ne demekti? 1 bölü cos x demekti. O zaman 1 bölü secant pi bölü 2 kaçtır? 1 bölü cos p bölü 2'dir. Cos p bölü 2 nedir? 0'dır. 1 bölü 0.
+
+182
+00:24:21,523 --> 00:24:45,923
+değil mi? 0'a nereden yaklaşıyor? Solda. O zaman nedir? Eksi sonsuzdur. Burası eksi sonsuz. Tamam. Peki burası ne? 1 artı tanjant pi bölü 2. Tanjant pi bölü 2, sin pi bölü 2, bölü cos pi bölü 2. Burası 1'e aşağısı 0. Yine soldan gitmiş. Eksi sonsuz.
+
+183
+00:24:46,451 --> 00:25:10,271
+x sonsuza bir ekledim. Yani x sonsuza bir sayı eklerseniz sonucunu değiştirmez. Şurası x sonsuzlu. x sonsuz bölü x sonsuz. Yani x sonsuz bölü x sonsuz belirsizliği geliyor. Değil mi arkadaşlar? Eksiler gider. Dedim, başında x artı olabilir. Onlar sorun değil. Yine hepsi için aynı şey geçerli.
+
+184
+00:25:10,675 --> 00:25:14,315
+Sonsuz bölü sonsuz belirsizliği var. Nasıl yapıyoruz?
+
+185
+00:25:15,555 --> 00:25:22,955
+Pi bölü 2 sonsuza giderken paydaki ifadenin türevi, sekant x'in türevi nedir?
+
+186
+00:25:23,515 --> 00:25:26,075
+Sekant x çarpı tanjant x.
+
+187
+00:25:26,235 --> 00:25:33,515
+Teşekkür ederim. Bölü 1 artı tanjant x'in türevi, 1'in türevi sıfır, tanjantınki.
+
+188
+00:25:34,003 --> 00:25:35,483
+sekant kare x.
+
+189
+00:25:35,663 --> 00:25:45,743
+Teşekkür ederim. Sekant kare x ya da 1 artı tanjant kare x'tir. Ama burada bunu kullanmak daha güzel gibi duruyor. Şunlar sadeleşir.
+
+190
+00:25:46,291 --> 00:25:53,912
+limit xp bölü 2'ye soldan giderken, tanjant x bölü, secant x gelir.
+
+191
+00:25:54,531 --> 00:26:01,151
+Şimdi bakıyorum, sanki böyle sinüslü kosinüslü yazarsak daha güzel sadeleşir diye düşünüyorum.
+
+192
+00:26:01,151 --> 00:26:03,451
+Şöyle yapıyorum, limit
+
+193
+00:26:04,256 --> 00:26:31,776
+x p bölü 2'ye soldan giderken, tanjant x nedir? Sinüs x bölü kosinüs x bölü, sekant x dedi, 1 bölü kosinüs x. Bakın, şununla şu düzenlediğiniz zaman gider, limit x p bölü 2'ye soldan giderken, ne kaldı? Sinüs x kaldı. Neydi kural? x gördüğün yere p bölü 2 yaz. Bu da ne olur?
+
+194
+00:26:32,175 --> 00:26:35,655
+sinüs pi bölü 2, yani 1'dir.
+
+195
+00:26:37,195 --> 00:26:38,175
+Tamam mı arkadaşlar?
+
+196
+00:26:39,935 --> 00:26:43,336
+Son bir örnek daha var. Onu da yapayım bu konuyla alakalı.
+
+197
+00:26:43,455 --> 00:26:45,135
+Sorusu olan var mı bu noktada?
+
+198
+00:26:46,175 --> 00:26:46,695
+Yok değil mi?
+
+199
+00:26:48,935 --> 00:26:49,395
+Yok hocam.
+
+200
+00:26:49,395 --> 00:26:53,355
+Ben yeni katıldım da teknik aksaklıktan dolayı.
+
+201
+00:26:53,915 --> 00:26:56,076
+Sınavla ilgili bilgi verdiniz mi siz başta?
+
+202
+00:26:56,455 --> 00:26:58,995
+Evet, sınavla ilgili bilgi verdim.
+
+203
+00:26:59,667 --> 00:27:27,607
+Şöyle diyeyim, arkadaşlarını daha çok bilgilendirip, sınav tarihi belli değil ama yakın bir tarihte olur. 2-3 hafta içinde olabilme ihtimali var. Bu size açıklanır. Ama şunu söyleyeyim, sınav bu belirsizlikler de dahil maksimum minimum konusuna kadar olacak. Ne kadar soru sorulacağı belli değil ama bugünkü diğer derslerindeki öğrencilerin söylediğine göre yaz okulunda 20 soru sorulmuş.
+
+204
+00:27:27,667 --> 00:27:53,387
+Fakat o da haftaya belli olur. Ben size soruları ayarlayabilirsem, soruları çözeceğiz beraber ve teste uygun sorular çözmeye çalışacağız arkadaşlar. Sizlerle bunları paylaşacağım. Şu anda sınava göre bu son dahil olan konu, maksimum, minimuma kadar da sınav soruları.
+
+205
+00:27:55,667 --> 00:28:19,567
+onlar belli değil. Onlar hiçbir zaman belli olmuyor. Yaklaşık olarak yani şöyle mesela bir sınavda 100 dakika oluyor, bir sınavda 120 dakika oluyor, bir sınavda 110 dakika oluyor. O sınavdaki soruların zorluğuna ya da kolaylığına göre sınav süresi değişiklik gösterebiliyor arkadaşlar. Sınav süresi hakkında da bunu söyleyebilirim. Evet.
+
+206
+00:28:20,867 --> 00:28:22,867
+Teşekkür ederim hocam. Rica ederim.
+
+207
+00:28:23,412 --> 00:28:41,892
+şöyle diyelim, örneğin, limit x sonsuza giderken, e üzeri x bölü x kare. x gördüğümüz yere sonsuz yazıyoruz. Ne olacak? e üzeri sonsuz. e üzeri sonsuz neydi? sonsuzdu. Değil mi?
+
+208
+00:28:42,387 --> 00:28:50,167
+e üzeri eksi sonsuz neydi? Böyle yazıyorduk. 1 bölü e üzeri sonsuz, bu da 1 bölü sonsuz, bunu da sıfır şeklinde gösteriyorduk.
+
+209
+00:28:50,687 --> 00:28:58,147
+Şimdi, tabi bunların başında limit var aslında, limit e üzeri sonsuz. Ama onları yazmıyorum anlatırken. Tahta zaten küçük.
+
+210
+00:29:03,220 --> 00:29:29,740
+yine sonsuz, yani sonsuz çarpı sonsuz, sonsuzdur. Ne çıktı? Sonsuz bölü sonsuz belirsiz diye çıktı. Şimdi buradan limit x sonsuza giderken, e üzeri x'in türevi, paydaki ifadenin türevini alıyoruz, e üzeri x'tir. Bölü x karenin türevi 2x'tir. Şimdi buna göre x gördüğümüz yere sonsuz yazalım.
+
+211
+00:29:30,163 --> 00:29:52,483
+ne olur? e üzeri sonsuz olur. O da sonsuzdur. 2x sonsuz, sonsuzdur. Yine ne geldi? Sonsuz bölü, sonsuz belirsizliği geldi. O zaman yine ne yapıyoruz? Bir tane daha türev alıyoruz. Alalım. e üzeri x'in türevi e üzeri x'dir. Bölü 2x'in türevi 2'dir.
+
+212
+00:29:53,556 --> 00:30:16,356
+x gördüğümüz yere sonsuz yazılı. e üzeri sonsuz, sonsuz, bölü 2. Sonsuzu bir sayıyla çarpıp bölmek sonsuzluğunu değiştirmez. Sadece eksi bir sayıyla çarparsak eksi gelir kat sayısına. Bunu biliyorsunuz. Sonsuz bölü 2 sonsuz olur. Yani sonsuz çarpı 1 bölü 2 gibi düşünebilirsiniz.
+
+213
+00:30:17,619 --> 00:30:19,639
+Var mı bir sıkıntı burada?
+
+214
+00:30:19,680 --> 00:30:23,740
+Hocam, şeyi soracaktım. Normalde bölüm türevinin kuralı yok muydu?
+
+215
+00:30:23,740 --> 00:30:27,740
+Evet, ama bu lopital. Bunu da öyle uygulamıyorsunuz.
+
+216
+00:30:28,099 --> 00:30:34,859
+Payın türevi, e üzeri x'in türevi, bölüm paydanın türevi şeklinde uyguluyorsunuz.
+
+217
+00:30:35,316 --> 00:30:35,816
+Tamam mı?
+
+218
+00:30:35,816 --> 00:30:37,855
+Burada otellerde direkt türevi alsak sıkıntı olmuyor.
+
+219
+00:30:37,855 --> 00:30:39,176
+Evet, sadece öyle.
+
+220
+00:30:39,536 --> 00:30:41,496
+Bölüm türevi yapmıyorsun, bu bir kural.
+
+221
+00:30:42,076 --> 00:30:46,236
+Mesela burada payın türevi, paydanın türevini aldık.
+
+222
+00:30:46,636 --> 00:30:47,096
+Tamam mı?
+
+223
+00:30:47,256 --> 00:30:49,156
+Tabii buralara yazdım ama yanlış oldu.
+
+224
+00:30:49,696 --> 00:30:51,355
+Bölüm türevi uygulamıyorsunuz.
+
+225
+00:30:51,716 --> 00:30:54,716
+Payı ve paydayı kendi içinde normal türev alıyorsun.
+
+226
+00:30:55,976 --> 00:30:56,396
+Tamam mı?
+
+227
+00:30:56,396 --> 00:30:57,296
+Tamam hocam, teşekkür ederim.
+
+228
+00:30:57,656 --> 00:30:58,376
+Rica ederim.
+
+229
+00:30:58,376 --> 00:31:01,696
+Şimdi gelelim.
+
+230
+00:31:02,483 --> 00:31:20,943
+Tabii ki direkt 0 bölü 0 ve sonsuz bölü sonsuz olmuyor arkadaşlar genelde. Birinci belirsizliğimiz 0 bölü 0'dı. İkinci belirsizliğimiz sonsuz bölü sonsuzdur. Yani 0'ı 0'a bölmek bir belirsizliktir. Sonsuzu sonsuza bölmek bir belirsizlik.
+
+231
+00:31:23,703 --> 00:31:27,943
+Üçüncü belirsizliğimiz 0 çarpı sonsuz belirsizliği.
+
+232
+00:31:29,683 --> 00:31:33,044
+Şimdi ya da sonsuz çarpı sıfır fark etmez.
+
+233
+00:31:33,604 --> 00:31:37,683
+Sıfır çarpı sonsuz belirsizliğinde arkadaşlar şöyle yapıyorsunuz.
+
+234
+00:31:39,344 --> 00:31:41,163
+Bit bölü sonsuz neydi arkadaşlar?
+
+235
+00:31:42,744 --> 00:31:43,344
+Sıfır.
+
+236
+00:31:43,892 --> 00:31:50,132
+1 bölü 0 neydi? Sağdan yaklaşırsan artı sonsuz, soldan yaklaşırsan eksi sonsuz.
+
+237
+00:31:50,552 --> 00:31:52,751
+Şöyle düşünüyorsunuz arkadaşlar.
+
+238
+00:31:53,672 --> 00:31:58,271
+Ya buradaki ifadeyi pardon ya bunu paydaya indireceksiniz.
+
+239
+00:31:58,271 --> 00:31:59,932
+Şöyle örnekte göstereyim.
+
+240
+00:32:00,951 --> 00:32:02,572
+Yani şuna çevireceksiniz.
+
+241
+00:32:02,692 --> 00:32:09,612
+Bu ifadeyi ya sonsuz bölü sonsuz şeklinde yazacaksınız ya da 0 bölü 0 şeklinde yazacaksınız.
+
+242
+00:32:10,355 --> 00:32:16,316
+Ve sonra bu kuralları uygulayacaksınız. İkisinin kuralı da aynı. Payın türevi, bölü paydanın türevi.
+
+243
+00:32:16,316 --> 00:32:27,036
+Şimdi o zaman şöyle örnekte göstereyim. Mesela limit x sonsuza giderken x çarpı sinüs 1 bölü x soruldum.
+
+244
+00:32:27,956 --> 00:32:31,456
+Şimdi diyorum ki x yerine 0 koyalım.
+
+245
+00:32:31,827 --> 00:32:55,627
+koyduk. Şimdi koyduğunuz bakın ne oldu? x, pardon sıfır diyorum. x yerine sonsuz koyalım. Sonsuz çarpı sinüs bir bölü sonsuz. Bir bölü sonsuz kaç? Sıfır. Sinüs sıfır kaç? Sıfır. Yani sonuç ne geldi? Sonsuz çarpı sıfır belirsizliği. Şöyle sonsuz çarpı sıfır belirsizliği geldi.
+
+246
+00:32:56,403 --> 00:33:08,263
+E şimdi diyorum ki, birini paydaya geçireceksiniz. Şunlardan şöyle farklı. Ya x'i ya da sinüs 1 bölü x'i paydaya geçireceksiniz.
+
+247
+00:33:08,263 --> 00:33:17,523
+Şimdi burada arkadaşlar önemli olan, yalın olan, kolay yazılabilecek olanı paydaya geçirmek. Şimdi bakın.
+
+248
+00:33:17,887 --> 00:33:40,847
+Ben yazayım. x sonsuza giderken ya böyle yazacaksınız. Bakın sinüs 1 bölü x aynen duracak. x faydaya nasıl geçer? 1 bölü x olarak geçer. Ya da şöyle yazacaksınız. Şimdi birini seçeceğiz. x yukarıda kovalsın. Aşağıya bunu geçirelim. Hangisine faydada yazmak kolay?
+
+249
+00:33:42,483 --> 00:33:43,364
+Hangisini?
+
+250
+00:33:43,903 --> 00:33:44,683
+1 bölü x.
+
+251
+00:33:45,084 --> 00:33:46,723
+Bunu yazmak daha kolay.
+
+252
+00:33:46,844 --> 00:33:48,644
+Çünkü bu daha karışık bir işlem.
+
+253
+00:33:50,443 --> 00:33:51,403
+Bu çok karışık.
+
+254
+00:33:51,723 --> 00:33:53,523
+O yüzden bunu seçmiyoruz.
+
+255
+00:33:54,243 --> 00:33:55,683
+Kolay olanı seçiyoruz.
+
+256
+00:33:56,084 --> 00:33:56,803
+Seçtik mi?
+
+257
+00:33:57,324 --> 00:33:57,923
+Seçtik.
+
+258
+00:33:57,923 --> 00:34:01,523
+Şimdi dedik ki burası 1 bölü x olsun.
+
+259
+00:34:02,703 --> 00:34:03,463
+Aynı şey oldu.
+
+260
+00:34:03,564 --> 00:34:03,903
+Bakın.
+
+261
+00:34:04,660 --> 00:34:15,500
+Yani yeniden düzenledik, böyle yazdık. Hiçbir şey değişmedi. Yine bunu yukarı yazarsak, 1 bölü x aynı zamanda x çarpı sinüs 1 bölü x şeklinde yazılabiliyor.
+
+262
+00:34:15,500 --> 00:34:28,260
+Şimdi x gördüğüm yere sonsuz yazalım. Yazdık. Bakın sinüs 1 bölü sonsuz yukarısı, sinüs burası 0 olur, o da sinüs 0'dan 0, yukarısı 0.
+
+263
+00:34:29,204 --> 00:34:52,204
+bölü aşağısı 1 bölü sonsuz değil mi? 1 bölü x'den bu kaç? 0'dı, 0 oldu. Yani böyle yazdığınız zaman, bakın arkadaşlar, böyle yazdık, şöyleydi, bakın, sonsuz çarpı 0 belirsizliği vardı. Ama şimdi artık nasıl oldu? 0 bölü 0 belirsizliği oldu.
+
+264
+00:34:52,788 --> 00:34:55,768
+Böyle yazabilirsek, türevini alırız.
+
+265
+00:34:55,967 --> 00:35:00,027
+Artık payın türevi, sinüsün türevi nedir?
+
+266
+00:35:00,547 --> 00:35:04,127
+Kosinüs 1 bölü x, çarpı içinin türevi.
+
+267
+00:35:04,228 --> 00:35:05,947
+1 bölü x'in türevi nedir?
+
+268
+00:35:07,007 --> 00:35:09,807
+Eksi 1 bölü x karedir.
+
+269
+00:35:09,807 --> 00:35:12,807
+Çarpı, şöyle, çarpı.
+
+270
+00:35:13,396 --> 00:35:25,996
+karışmasın diye şöyle, x'i 1 bölü x kare, bölü faydanın türevi, şu ifadenin türevi, 1 bölü x'in türevi nedir? x'i 1 bölü x karedir.
+
+271
+00:35:27,356 --> 00:35:31,976
+Gerçi buna da gerek yok. Arkadaşlar, buradan yapabilirsiniz.
+
+272
+00:35:32,980 --> 00:35:39,579
+Şunlar gider. Gerçi bundan yaptık artık. Limit x sonsuza giderken kosinüs 1 bölü.
+
+273
+00:35:39,679 --> 00:35:41,279
+Ben de onu merak ediyordum hocam yani.
+
+274
+00:35:41,460 --> 00:35:46,440
+Evet. Burası 1 bölü sonsuz. Kosinüs 0, 1'dir. Ama buraya gerek yok arkadaşlar.
+
+275
+00:35:46,460 --> 00:35:48,919
+Direkt sinüslü yerden yapabilirdik değil mi?
+
+276
+00:35:49,099 --> 00:35:52,259
+Evet. Şöyle silelim. Çok uzattı çünkü bu.
+
+277
+00:35:53,043 --> 00:35:55,163
+1 bölü x ile t derseniz.
+
+278
+00:35:55,663 --> 00:35:59,983
+Sin t bölü t bir de bağlantısı da çıkmıyor mu direkt?
+
+279
+00:36:00,204 --> 00:36:19,304
+T diyelim. O zaman ne olur arkadaşlar? Limit sin t bölü t. x sonsuza giderken t ne olur? 1 bölü sonsuza 0 olur. t sıfıra gider. 1 çıkar. Değil mi? Evet.
+
+280
+00:36:20,596 --> 00:36:22,296
+Anlaşıldı mı buraya kadar?
+
+281
+00:36:23,876 --> 00:36:31,715
+Şimdi bir tane daha yapalım. Bununla ilgili şöyle bir tane daha yapalım.
+
+282
+00:36:31,715 --> 00:36:41,436
+Limit x sıfıra sağdan giderken kare kök x ln x. Limitini hesaplayınız dediler.
+
+283
+00:36:42,099 --> 00:37:04,700
+şimdi bakın, x yerine sıfır verdik. x gördüğün yere sıfır koy. Kök sıfır ne olur? Sıfır olur. Elen sıfır nedir? Bakın şöyle. Elen sonsuz. Sonsuzdur. Elen sıfır. Sıfırı nereden gidebilirsiniz? Sağdan. Ve nereye gider? Şöyle bakın.
+
+284
+00:37:05,172 --> 00:37:06,411
+Aşağıya doğru.
+
+285
+00:37:07,011 --> 00:37:08,132
+Eksi sonsuz.
+
+286
+00:37:08,771 --> 00:37:14,672
+Evet, eksi sonsuz. Bakın zaten öyle vermiş. Demek ki soruyu öyle vermesinin bir sebebi var.
+
+287
+00:37:15,971 --> 00:37:23,991
+Şimdi o zaman ne çıktı? 0 çarpı eksi sonsuz. Yani eksi atalım. 0 çarpı sonsuz belirsizdi.
+
+288
+00:37:23,991 --> 00:37:32,031
+Bu anlaşıldı mı? Evet. O zaman diyoruz ki bu 0 çarpı sonsuz belirsizdi dedik.
+
+289
+00:37:32,500 --> 00:37:39,279
+Ne yapıyoruz? Diyoruz ki bunu ya sonsuz bölü sonsuz, önemli olan ya da sıfır bölü sıfır.
+
+290
+00:37:39,519 --> 00:37:44,899
+Değil mi? İkisinden biri şeklinde yazacağız. Yazıyorum, ben öğrenciyim, düşünüyorum.
+
+291
+00:37:45,559 --> 00:37:49,299
+Kolayı aşağıya indireceğim, karışık olan yukarıda kalacak.
+
+292
+00:37:50,019 --> 00:37:52,839
+L'nx mi karışıktır? 1 mi? Kök x mi?
+
+293
+00:37:54,659 --> 00:37:55,899
+Hangisi arkadaşlar?
+
+294
+00:37:57,019 --> 00:37:58,519
+L'nx daha karışık.
+
+295
+00:37:59,251 --> 00:38:16,871
+lnx karışıktır. Çünkü bu bir fonksiyon. Bir bölü lnx'in türevini almak kolay mı belki? Belki burada daha kolay olabilir. Ama genelde kök x, x kare, x'li ifadeler bizim için daha kolaydır. Ama tabii bu kişiden kişiye de değişir. Onu da söyleyeyim.
+
+296
+00:38:17,391 --> 00:38:21,471
+lnx, ben bunu aşağıya indirdim. Böyle.
+
+297
+00:38:22,260 --> 00:38:50,260
+hiçbir şey değişmedi. Ama ne oldu? Bakın, L'en sıfır, eksi sonsuzdu. Bakın, bu da 1 bölü sıfır. Nereden gidiyor? Sıfıra sağdan. Bu da artı sonsuz. Neye döndü? Sonsuz bölü sonsuz belirsizliğine döndü. O zaman şöyle diyorum. x gördüğüm yere sıfır yazdım. Sonsuz bölü sonsuz belirsizliği elde etti. O zaman ne yapıyorum? Payım ve paydanın türevi...
+
+298
+00:38:50,260 --> 00:38:54,100
+alıyorum. L'nx'in türevi 1 bölü x'dir.
+
+299
+00:38:54,420 --> 00:38:58,980
+Dedim. Şimdi 1 bölü kök x'in türevi. Şurada hesaplayalım beraber.
+
+300
+00:38:59,720 --> 00:39:04,580
+Bu nedir? x üzeri eksi 1 bölü 2'nin türevidir aslında değil mi?
+
+301
+00:39:04,788 --> 00:39:05,788
+Nasıl alıyoruz?
+
+302
+00:39:06,188 --> 00:39:11,288
+Eksi 1 bölü 2 başa düştü, üzeri biraz aldı, eksi 3 bölü 2 oldu.
+
+303
+00:39:11,427 --> 00:39:14,708
+İçinin türevi x'in türevi 1'dir.
+
+304
+00:39:15,208 --> 00:39:19,367
+Yani eksi 1 bölü 2, x üzeri eksi 3 bölü 2.
+
+305
+00:39:19,788 --> 00:39:24,587
+Ya da eksi 1 bölü 2 çarpı 1 bölü x üzeri 3 bölü 2.
+
+306
+00:39:25,047 --> 00:39:25,728
+Yani şöyle.
+
+307
+00:39:26,728 --> 00:39:28,007
+Ben şöyle yazardım.
+
+308
+00:39:29,427 --> 00:39:30,288
+Böyle yazardım.
+
+309
+00:39:31,572 --> 00:39:33,572
+Buraya kadar tamam mı arkadaşlar?
+
+310
+00:39:34,692 --> 00:39:35,352
+Tamam değil mi?
+
+311
+00:39:35,712 --> 00:39:40,072
+O zaman diyorum ki, paydanın türevi ise şöyle geliyor.
+
+312
+00:39:40,232 --> 00:39:46,932
+Eksi 1 bölü 2 çarpı x üzeri 3 bölü 2.
+
+313
+00:39:47,232 --> 00:39:48,072
+Böyle yazdım.
+
+314
+00:39:49,032 --> 00:39:51,552
+Düzenlersek arkadaşlar, şöyle gelir.
+
+315
+00:39:53,331 --> 00:39:59,571
+Limit x sıfıra sağdan giderken, bakın bunlar aşağıdakiler yukarı çıkacak.
+
+316
+00:39:59,751 --> 00:40:04,211
+x'i iki tane x üzeri 3 bölü 2. Bu da aşağıya ince şöyle olacak.
+
+317
+00:40:05,171 --> 00:40:07,911
+Şimdi o zaman burada sadeleşir şununla şu.
+
+318
+00:40:08,731 --> 00:40:13,891
+Ne kalır? Limit x sıfıra sağdan giderken x'i iki x üzeri 1 bölü 2.
+
+319
+00:40:13,891 --> 00:40:16,891
+Yani bu da şu demektir. Limit...
+
+320
+00:40:17,108 --> 00:40:30,048
+x sıfıra sağdan giderken, eksi 2 kök x demektir. E bu nedir? x gördüğün yere sıfır yaz. Yazalım. Eksi 2 çarpı sıfırdan sıfırdır.
+
+321
+00:40:32,288 --> 00:40:42,128
+Evet, anlaşıldı mı arkadaşlar? Aklınıza takılan bir yer var mı? Hocam ben buraya anlamadım dediğiniz yok değil mi?
+
+322
+00:40:42,867 --> 00:40:50,927
+Şimdi bakın bir tane daha var. Bunu size ödev vereyim mi arkadaşlar? Bunu kendiniz bir deneyin isterseniz. Yoksa yapayım mı?
+
+323
+00:40:52,787 --> 00:40:54,207
+Bence deneyebiliriz hocam.
+
+324
+00:40:55,107 --> 00:40:58,767
+Deneyelim mi? Tamam. Bunu da deneyelim. Sonra ara verelim.
+
+325
+00:40:59,367 --> 00:41:00,947
+Yok biz kendimiz deneyebiliriz.
+
+326
+00:41:00,947 --> 00:41:05,327
+Biz kendimiz. Tamam. Tamamdır. O zaman bu size ödev arkadaşlar.
+
+327
+00:41:06,227 --> 00:41:08,748
+Şimdi arkadaşlar...
+
+328
+00:41:09,108 --> 00:41:15,748
+sonsuz eksi, sonsuz belirsizliğini. Biraz anlatayım öyle mi ara versek yoksa ara verelim mi?
+
+329
+00:41:17,348 --> 00:41:17,548
+Evet.
+
+330
+00:41:18,668 --> 00:41:20,368
+Hocam ben de verelim öyle.
+
+331
+00:41:20,628 --> 00:41:20,908
+Tamam.
+
+332
+00:41:21,068 --> 00:41:21,788
+Devam edelim.
+
+333
+00:41:22,208 --> 00:41:39,788
+Tamam, o zaman ara verelim arkadaşlar. 15 dakika ara veriyoruz. Yani saat 2 gibi dersimize başlayalım. Olur mu arkadaşlar? Birisi 2 vize, 1 final diye mi sormuş? Onun için bir açıklama yapılmadı ama bence 2 vize olabilir arkadaşlar.
+
+334
+00:41:40,820 --> 00:42:03,500
+Tamam mı? Yani şu anda bir açıklama yok. Ama benim kendi fikrim büyük bir ihtimalle 2 vize 1 final olabilir. O da belli değil. Yani çünkü 1. vize haftasında sınav oluyor. Gerçi o da belki 1 haftaya belli olur. Onu da şu anda onun için de tam bir şey söyleyemeyeceğim. Evet.
+
+335
+00:42:05,500 --> 00:42:08,239
+Evet, birisi bir şey soruyordu.
+
+336
+00:42:09,811 --> 00:42:11,372
+gerek kalmadı galiba.
+
+337
+00:42:12,172 --> 00:42:16,372
+Tamam mı arkadaşlar? O zaman saat 2'de görüşmek üzere.
+
+338
+00:42:18,192 --> 00:42:18,552
+Evet.
+
+339
+00:42:19,771 --> 00:42:20,652
+Sesim geliyor mu?
+
+340
+00:42:22,271 --> 00:42:22,731
+Geliyor.
+
+341
+00:42:22,731 --> 00:42:23,512
+Geliyor hocam.
+
+342
+00:42:23,512 --> 00:42:26,572
+Tamam o zaman 2'de görüşürüz arkadaşlar.
+
+343
+00:42:29,192 --> 00:42:29,972
+Hoşçakalın.
+
+344
+00:59:47,059 --> 00:59:50,179
+Merhaba arkadaşlar. Kaldığımız yerden devam ediyoruz.
+
+345
+00:59:50,179 --> 00:59:52,500
+Şöyle.
+
+346
+00:59:56,755 --> 00:59:58,695
+Evet, sesim geliyor değil mi arkadaşlar?
+
+347
+00:59:59,496 --> 01:00:07,456
+Evet, şimdi sonsuz bölü sonsuz, sıfır bölü sıfır ve sıfır çarpı sonsuz belirsizliklerini gördük.
+
+348
+01:00:07,456 --> 01:00:11,255
+Şimdi sırada sonsuz eksi sonsuz belirsizliği arkadaşlar.
+
+349
+01:00:11,916 --> 01:00:13,615
+Bunu yine bir örnekle görelim.
+
+350
+01:00:21,204 --> 01:00:27,564
+mi Evet bakalım ekran paylaşımı niye olmuyor Evet
+
+351
+01:00:31,284 --> 01:00:33,924
+şöyle diyelim, ben de açayım buradan.
+
+352
+01:00:34,784 --> 01:00:37,244
+sonsuz eksi, sonsuz belirsizliği.
+
+353
+01:00:37,244 --> 01:00:41,024
+bu belirsizlikler arkadaşlar, örnekle göstereceğim.
+
+354
+01:00:41,944 --> 01:00:51,644
+limit x sıfıra giderken sağda 1 bölü sinüs x eksi 1 bölü x sorulmuş.
+
+355
+01:00:51,984 --> 01:00:53,224
+şimdi yapalım beraber.
+
+356
+01:00:54,164 --> 01:00:57,104
+şimdi x gördüğümüz yere sıfır yazıyoruz.
+
+357
+01:00:57,604 --> 01:00:58,124
+yazalım.
+
+358
+01:00:59,251 --> 01:01:24,132
+1 bölü sinüs 0, eksi 1 bölü 0. Bu nedir? 1 bölü 0, eksi 1 bölü 0. 1 bölü 0, sağdan gidiyorsak artı sonsuz, soldan gidiyorsak eksi sonsuz. Nereden gidiyor? Artıdan gidiyor. Yani sağdan gidiyor. Bu sonsuz, bu da sonsuz. Yani sonsuz eksi sonsuz belirsizliği var. Şimdi böyle yazdık.
+
+359
+01:01:25,204 --> 01:01:38,284
+bu kısım anlaşıldı değil mi arkadaşlar? Şimdi o zaman burası sonsuz eksi sonsuz belirsizliği. Şimdi sonsuz eksi sonsuz belirsizliklerinde arkadaşlar şöyle söyleyeyim.
+
+360
+01:01:38,579 --> 01:01:52,599
+mutlaka bir rasyonel ifade vardır. Ve onu yapınca hemen belirsizlik şeklinde, yani rasyonel ifadede faydalarını eşitleyip, yeniden düzenleyince farklı olur.
+
+361
+01:01:53,139 --> 01:02:04,179
+Şimdi bakın, bunun altına x, bunun altına sinüs x de genişleterek fayda eşitlersek, şurası eksi gibi durmuş.
+
+362
+01:02:04,820 --> 01:02:29,380
+şurası artı. Ne olur? sinüs x, eksi x bölü, pardon, yanlış oldu. x eksi sinüs x, x çarpı sinüs x oldu. Şimdi bakalım. x yerine 0 verelim.
+
+363
+01:02:29,844 --> 01:02:55,564
+0-sinüs 0, 0'dır. 0 çarpı sinüs 0, 0'dır. Çünkü sinüs 0'da 0'dır. Ne geldi artık? 0 bölü 0 belirsizliği oldu. 0 bölü 0 belirsizliği olunca artık ne kullanabiliriz? L'Hospital kullanabiliriz. Limit x0'a sağdan giderken payı türevi x-sinüs x'in türevi x'in türevi 1.
+
+364
+01:02:56,179 --> 01:03:05,960
+şöyle, sinüs x'in türevi, kosinüs x, bölüm paydanın türevi, x'in türevi 1 çarpı sinüs x, çünkü çarpımın türevi var paydada.
+
+365
+01:03:06,739 --> 01:03:10,699
+x çarpı sinüs x'in türevi de kosinüs x'tir.
+
+366
+01:03:10,699 --> 01:03:16,739
+Şimdi burada arkadaşlar, yine x gördüğümüz yere 0 yazıyoruz. Yazalım.
+
+367
+01:03:17,139 --> 01:03:36,440
+1-kosinüs 0, 1'dir, 0 oldu. Sinüs 0, 0. Şurada da bir 0 var, 0. 0 bölü 0 belirsizliği var. Şimdi 0 bölü 0 belirsizliği varsa yine türev alıyoruz. Payın türevi bölü paydanın türevi. Limit x 0'a sağdan giderken
+
+368
+01:03:36,815 --> 01:03:43,275
+Payın türevi, birin türevi sıfır, kosinüsün türevi eksi sinüs, bir de eksi var, artı sinüs.
+
+369
+01:03:43,835 --> 01:03:46,556
+Paydanın türevi sinüs, x'in türevi kosinüs x.
+
+370
+01:03:47,096 --> 01:03:52,675
+Şurada çarpım türevi var. Birincinin türevi x çarpı kosinüs x'in türevini alacağız.
+
+371
+01:03:53,115 --> 01:04:00,675
+Birincinin türevi 1 çarpı kosinüs x artı birinci çarpı ikincinin türevi.
+
+372
+01:04:01,715 --> 01:04:27,595
+cos x'in türevi, eksi sin x şöyle olacak. Evet, şimdi x gördüğümüz yere 0 yazalım. Ne olur yukarısı 0. Sin x 0, 0. Aşağısı bu 1. Şurası cos 0, 1, eksi 0. 0 bölü 2'den arkadaşlar 0 gelir. Evet, anlaşıldı mı arkadaşlar?
+
+373
+01:04:29,684 --> 01:04:31,444
+Evet, sesim geliyor mu?
+
+374
+01:04:32,024 --> 01:04:32,324
+Geliyor hocam.
+
+375
+01:04:32,324 --> 01:04:33,304
+Sesim çalışıyor.
+
+376
+01:04:33,304 --> 01:04:33,964
+Geliyor hocam.
+
+377
+01:04:34,364 --> 01:04:34,904
+Tamam.
+
+378
+01:04:35,684 --> 01:04:36,584
+Anlaşıldı mı bu?
+
+379
+01:04:36,704 --> 01:04:40,080
+Yani sonsuz eksi, sonsuz gelirsizliğinde...
+
+380
+01:04:40,079 --> 01:04:51,500
+tek bir yöntem var. Böyle rasyonel ifadeler geliyor ve paydalarını eşitliyorsunuz. O ya 0 bölü 0 belirsizliğine dönüşüyor. Onu kolaylıkla görebilirsiniz.
+
+381
+01:04:52,279 --> 01:05:01,159
+Sonsuz çarpı 0 belirsizliğinde ya 0 bölü 0 yapıyorsunuz ya da sonsuz bölü sonsuz yapıyorsunuz. Gelelim bunlara.
+
+382
+01:05:02,847 --> 01:05:30,327
+üstel belirsizliklerimiz. Şimdi bunların hepsinin çözümü aynı. Şöyle söyleyeyim. Üstel bir fonksiyonun, şöyle yine ekran paylaşımı yapayım. Mesela türevini alırken, üstte değişken olduğu zaman ne yapıyorduk arkadaşlar? El elini alıyorduk. El elini alıyorduk. Şimdi aynı limitte de belirsizlik çıktığı zaman yine aynısını.
+
+383
+01:05:31,059 --> 01:05:57,259
+ezberlemenizi istemiyorum. Şimdi bir şey yazacağım. Bunu takip ederseniz daha iyi anlarsınız. Şimdi mesela diyelim ki limit ln fx fonksiyonunun x mesela 5'e giderken 7 olsun limiti. Tamam mı? Kafamdan yazdım. Şöyle yaparsınız. Bu ln limitin dışına çıkar.
+
+384
+01:05:58,420 --> 01:06:25,600
+Limit x 5'e giderken fx kaçmış? 7'miş. Böyle de yazarsınız. Şimdi şöyle bir şey vardı. Elen a eşittir 5 ise, mesela 3 ise a neydi? a'yı yalnız bırakırsak e üzeri 3. Görebilir musunuz? Hatırladık mı? Şimdi mesela buna a diye.
+
+385
+01:06:27,188 --> 01:06:47,068
+elen a eşittir 7 ise a nedir? e üzeri 7'dir. Peki a ne? Şöyle, limit x peşe giderken fx eşittir e üzeri 7'dir. Yani şu var. 1
+
+386
+01:06:48,052 --> 01:07:01,652
+fx fonksiyonunun e üzeri 7, bakın lnx'ininki hali 7 iken ln'li fonksiyon, yani bir fx fonksiyonunun ln'ini alırsanız bir sonuç buldunuz, dediniz ki 7.
+
+387
+01:07:02,872 --> 01:07:07,092
+O zaman bunun ln'siz hali e üzeri o sayıdır.
+
+388
+01:07:08,172 --> 01:07:08,752
+Yani şu.
+
+389
+01:07:09,364 --> 01:07:35,324
+Bir fonksiyonun x a'ya giderken, mesela şöyle diyeyim, elen fx eşittir, sonucu b olsun. Tamam mı? Herhangi bir a'ya giderken, o zaman elensiz hali, bakın burada elen vardı, e üzeri b'dir. Tamam mı arkadaşlar?
+
+390
+01:07:36,340 --> 01:07:38,059
+Buraya kadar var mı bir soru?
+
+391
+01:07:38,800 --> 01:07:45,660
+Yani L'L fx'in limiti b ise fx'in limiti e üzeri b'dir.
+
+392
+01:07:47,660 --> 01:07:48,160
+Bu kadar.
+
+393
+01:07:48,900 --> 01:07:53,620
+Hocam normalde biz fonksiyonlar çıkartıp, pardon limitin içinden çıkartabiliyor muyuz L'eni böyle?
+
+394
+01:07:53,900 --> 01:07:56,240
+L'eni evet, böyle çıkartabiliyoruz.
+
+395
+01:07:56,240 --> 01:07:58,360
+Efendim, limit kuralları.
+
+396
+01:07:59,200 --> 01:08:00,240
+Tamam mı?
+
+397
+01:08:02,380 --> 01:08:02,880
+Şimdi
+
+398
+01:08:03,795 --> 01:08:06,995
+Şimdi buna göre bakın soru çözeceğiz.
+
+399
+01:08:06,995 --> 01:08:11,835
+Şimdi bu çok önemli. Bununla ilgili sayısız soru çıktı.
+
+400
+01:08:12,655 --> 01:08:15,555
+1 üzeri sonsuz çıkarsa bu 1 belirsizdir.
+
+401
+01:08:16,595 --> 01:08:22,415
+0 üzeri 0 bir belirsizliktir ve sonsuz üzeri 0 belirsizdir.
+
+402
+01:08:23,675 --> 01:08:26,355
+Tamam. Üster belirsizlikler ise bu kadar.
+
+403
+01:08:27,215 --> 01:08:29,255
+Bunların dışında 1 belirsizlik,
+
+404
+01:08:29,600 --> 01:08:51,820
+yok. Tamam mı arkadaşlar? Şimdi mesela örneğin bir örnekte görelim. Örneğin limit x sonsuza giderken x üzeri 1 bölü x dedik. Şimdi ne olur? x yerine sonsuz yazdık. Sonsuz, 1 bölü sonsuz.
+
+405
+01:08:52,404 --> 01:09:04,444
+1 bölü sonsuz kaçtır? 0. Ne çıktı? Sonsuz üzeri 0 belirsizliği çıktı. Ne diyeceksiniz? Sonsuz üzeri 0 belirsizliği var.
+
+406
+01:09:06,944 --> 01:09:16,104
+Şimdi şöyle yapıyoruz. Diyoruz ki, üstel belirsizlik, şurada yukarıda da belirsizlik var ya, ondan kurtarmak için aynı
+
+407
+01:09:16,692 --> 01:09:21,112
+Türevini alırken de, üstte değişken var, türevini alamıyordum. Ne yapıyordum?
+
+408
+01:09:21,551 --> 01:09:22,131
+Elini alıyorum.
+
+409
+01:09:22,711 --> 01:09:24,451
+Şimdi bakın, elini alıyorum.
+
+410
+01:09:26,371 --> 01:09:29,492
+Hiç ezbere yazmayacağım. Sadece elini alıyorum.
+
+411
+01:09:30,371 --> 01:09:35,092
+Şimdi artık ben hangi fonksiyonun limitini arıyorum? Bunun.
+
+412
+01:09:35,923 --> 01:09:44,644
+Şimdi o zaman ne oldu bakın? Limit x sonsuza giderken üstteki ifade nereye düştü? Aşağıya. Şöyle oldu.
+
+413
+01:09:45,824 --> 01:09:49,623
+Bakın üstelikten kurtuldum. Kurtulduk mu? Kurtulduk.
+
+414
+01:09:49,923 --> 01:09:54,064
+Şimdi bakıyorum artık ben bunu bir çözeyim diyorum. Çözelim.
+
+415
+01:09:54,844 --> 01:09:59,164
+1 bölü sonsuz. Şimdi x gördüğüm yere sonsuz yazıyorum.
+
+416
+01:10:00,000 --> 01:10:24,159
+1 bölü sonsuz 0 çarpı, elen sonsuz, sonsuz. 0 çarpı sonsuz belirsizliği var. Bu çok çıkıyor. Birini ters çevirmek lazım değil mi arkadaşlar? Burada arkadaşlar bakın çok güzel bir şey var ve çok sorularda aynısı geliyor. Şöyle yazsam, bu çarpım durumunda ya, şöyle yazsam, pardon.
+
+417
+01:10:24,916 --> 01:10:31,755
+Şöyle, bakın, bir kalemi oynattık sadece, şöyle yazdık. Aynı şey midir?
+
+418
+01:10:33,195 --> 01:10:33,515
+Evet.
+
+419
+01:10:33,536 --> 01:10:38,416
+1 bölü 2 çarpı L'nx, L'nx bölü L'nx, pardon, L'nx bölü x'ti.
+
+420
+01:10:38,416 --> 01:10:42,855
+Şimdi bakın, x gördüğüm yere sonsuz yazıyorum.
+
+421
+01:10:43,655 --> 01:10:50,576
+L'n sonsuz nedir? Sonsuz bölü. X nedir? X yerine sonsuz yazdım. Sonsuz.
+
+422
+01:10:51,220 --> 01:10:55,700
+Ne oldu arkadaşlar? Sonsuz bölü sonsuz belirsizliği oldu.
+
+423
+01:10:56,420 --> 01:11:03,780
+Şimdi o zaman diyorum ki sonsuz bölü sonsuz belirsizliği ya da sıfır bölü sıfır belirsizliği varsa ben ne yapabiliyorum?
+
+424
+01:11:04,220 --> 01:11:10,260
+Payın türevi 1 bölü x, L'Hospital uyguluyorum. Paydanın türevi x'in türevi 1.
+
+425
+01:11:12,399 --> 01:11:15,140
+Evet, şimdi o zaman eni çıktı.
+
+426
+01:11:15,891 --> 01:11:42,511
+Limit x sonsuza giderken 1 bölü x çıktı. Şimdi diyorum ki x gördüğüm yere sonsuz yazalım. 1 bölü sonsuz nedir? Sıfırdır. Tamam mı arkadaşlar buraya kadar? Şimdi bakın şuraya yazacağım sonucu. Şöyle yazayım. Limit x sonsuza giderken 1 bölü x'dir. O da sıfırdır. Burayı sileceğim. Buraya kadar tamam mı arkadaşlar?
+
+427
+01:11:43,347 --> 01:12:09,608
+Şimdi bakın, peki bu neyin cevabı? Şöyle bakın, limit x sonsuza giderken, elen x üzeri 1 bölü x eşittir sıfır ise, şöyle diyoruz, şöyle, o zaman elensiz halini yazmalıyız. Bakın burada elen var. Limit x sonsuza giderken,
+
+428
+01:12:10,228 --> 01:12:18,488
+x üzeri 1 bölü x, o zaman e üzeri bu sayı 0, o zaman 1'dir.
+
+429
+01:12:20,827 --> 01:12:22,068
+Anlaşıldı mı arkadaşlar?
+
+430
+01:12:22,788 --> 01:12:24,228
+Bize sorulan şuydu.
+
+431
+01:12:25,368 --> 01:12:26,068
+Şu ifade.
+
+432
+01:12:28,208 --> 01:12:29,927
+Var mı bir sorun burada?
+
+433
+01:12:30,351 --> 01:12:31,912
+Hocam, bir şey sorabilir miyim?
+
+434
+01:12:32,332 --> 01:12:32,971
+Tabii ki.
+
+435
+01:12:33,171 --> 01:12:38,591
+Şeyi kaçırdım, limit x derken sonsuza 1 bölü x bölü 1 kısmını kaçırdım da ben tekrar edebilir miyiz acaba?
+
+436
+01:12:39,051 --> 01:12:46,851
+Şimdi burası o kadar önemli bir özellik ki, şimdi bakın burayı çarptı, çarpı 1 bölü x çarpı, L'n x diye yazarsak,
+
+437
+01:12:47,351 --> 01:12:55,671
+1 bölü x, 1 bölü sonsuzdan 0 gelir, şu gelir, L'n sonsuz, sonsuzdur.
+
+438
+01:12:56,115 --> 01:13:20,996
+Yani bunu limit elen sonsuz da ben direkt böyle yazıyorum anlamanız için. Elen sonsuz sonsuz, sıfır çarpı sonsuz. Ya bunu sonsuz bölü sonsuz ya da sıfır bölü sıfır belirsizliği şeklinde yazıyorduk. Birini ters çeviriyorduk. Ama burada arkadaşlar zaten şu elen x'i böyle yazsa çarpmak demek çarptım elen x bölü x yazdım.
+
+439
+01:13:21,427 --> 01:13:45,807
+Şöyle hemen altına yazdım. Şimdi bakın, elen sonsuz, sonsuz yerine yazdım. Şurası. x de aşağıda sonsuz. Yani böyle çarpı yazmakla, şuradaki çarpı yazmakla şöyle yazınca farklı oluyor. Sonsuz bölü sonsuz oluyor. Ondan sonra L'Hospital uyguladım. Payın türevi bölüp haydanın türevini yaptım.
+
+440
+01:13:46,228 --> 01:13:47,688
+Anlaşıldı mı arkadaşlar?
+
+441
+01:13:48,488 --> 01:13:49,407
+Anladım hocam, sağ olun.
+
+442
+01:13:49,827 --> 01:13:50,068
+Tamam.
+
+443
+01:13:50,608 --> 01:13:53,128
+Şimdi mesela bir soru daha çözelim.
+
+444
+01:13:56,048 --> 01:14:02,507
+Tabii mesela notlarda daha böyle detaylı yazdım.
+
+445
+01:14:03,667 --> 01:14:09,768
+Limit x sıfıra sağdan giderken 1 artı x üzeri 1 bölü x.
+
+446
+01:14:10,707 --> 01:14:31,867
+Bu neydi? Cevabı E idi. Bu özel bir limitti. Şimdi biz bunu normal yolda yapıyoruz. x yerine 0 verelim. Ne olur? 1 artı 0'dan 1 üzeri 1 bölü 0 sağdan giderken neydi? Artı sonsuz. 1 üzeri sonsuz belirsizliği var. Belirsizliği.
+
+447
+01:14:35,188 --> 01:14:43,847
+Tabii ben bunları böyle yazıyorum ama normalde başlarında hepsinde limit diyor. Limit 1 bölü 0 artı sağdan giderken artı sonsuz.
+
+448
+01:14:45,268 --> 01:14:57,427
+Şimdi o zaman diyorum ki üstel belirsizlik var. Bakın üstel belirsizlik var. Dolayısıyla ben bunu hesaplayamıyorum. Neyi hesaplarım bunun yerine? Şöyle yaparım.
+
+449
+01:15:02,836 --> 01:15:27,796
+Şimdi bunu yazacağım. 1 artı x üzeri 1 bölü x. Bununla bu aynı. Ama ben neyi hesaplıyorum aslında? Elenli halini. O farklı bir fonksiyonu hesaplıyorum aslında. Elenli alınca bu ifade nereye düşüyor? Başa düşüyor bakın. Limit x sıfıra sağdan giderken 1 bölü x elen.
+
+450
+01:15:28,756 --> 01:15:30,456
+1 artı x oldu.
+
+451
+01:15:31,456 --> 01:15:31,675
+Değil mi?
+
+452
+01:15:33,036 --> 01:15:34,376
+Hatta, evet.
+
+453
+01:15:35,056 --> 01:15:43,036
+Şimdi buradan, koyalım yerine, 1 bölü sıfıra sağdan giderken, artı sonsuz.
+
+454
+01:15:43,036 --> 01:15:50,136
+Çarpı, elen 1 artı sıfır, elen 1 artı sıfır, elen 1'dir, o da sıfır.
+
+455
+01:15:50,515 --> 01:15:51,355
+Yani ne çıktı?
+
+456
+01:15:52,175 --> 01:15:52,836
+Sonsuz.
+
+457
+01:15:53,332 --> 01:16:20,292
+çarpı 0. Bakın biraz önceki gibi aynı. Sonsuz çarpı 0 çıktı. Ya sıfır bölü sıfır belirsizliğini ya da sonsuz bölü sonsuz belirsizliğini. Hemen diyorum ki Elen yanında bir ifade var. Bunu çarpım olarak altına yazayım diyorum. Limit x sıfıra sağdan giderken şöyle yapıyorum bakın Elen 1 artı x bölü x şeklinde yazalım.
+
+458
+01:16:21,235 --> 01:16:26,376
+Şimdi buradan ne oluyor arkadaşlar? Artık bakın x yerine 0 verelim.
+
+459
+01:16:27,056 --> 01:16:33,956
+Verdik, yukarısı 0 verdik, elen 1 0, 0 verdik 0. 0 bölü 0 belirsizliği oldu.
+
+460
+01:16:33,956 --> 01:16:38,355
+Ne diyorum? L'Hospital uygulayabilirim. Uygulayalım arkadaşlar.
+
+461
+01:16:40,532 --> 01:17:06,012
+Elen 1 artı x'in türevi şöyle ne diyeceğiz? İçinin türevi 1 bölü kendisi 1 artı x, x'in türevi de 1. Düzenleyelim. Şurada limit x sıfıra giderken ne oldu? 1 bölü 1 artı x oldu. x gördüğümüz yere 0 yazdık. 1 bölü 1 artı 0'dan 1 gelir arkadaşlar.
+
+462
+01:17:08,180 --> 01:17:32,600
+buraya kadar tamam değil mi? Burada şöyle diyoruz. Ama biz neyi bulduk? Şöyle. Limit x sıfıra giderken bakın. Elen var. Şöyle buraya. 1 artı x üzeri 1 bölü x 1 ise aslında bizim aradığımız neydi? Şu kısmıydı. Elensiz hali.
+
+463
+01:17:33,072 --> 01:17:44,092
+ise şöyle diyelim, limit x0'a giderken bakın 1 artı x üzeri 1 bölü x ne olacak arkadaşlar?
+
+464
+01:17:45,692 --> 01:17:50,252
+Şunun e üzeri biri değil mi arkadaşlar?
+
+465
+01:17:51,652 --> 01:17:53,912
+Evet, var mı bir sorunuz bununla ilgili?
+
+466
+01:17:55,592 --> 01:17:56,992
+Yok galiba, anladınız.
+
+467
+01:17:59,731 --> 01:18:00,931
+sesim geliyor mu?
+
+468
+01:18:01,412 --> 01:18:01,771
+Evet hocam.
+
+469
+01:18:01,771 --> 01:18:02,752
+Geliyor hocam.
+
+470
+01:18:02,752 --> 01:18:02,951
+Tamam.
+
+471
+01:18:03,811 --> 01:18:05,811
+Şimdi burada arkadaşlar bakın.
+
+472
+01:18:06,692 --> 01:18:08,351
+Ben bunu yaptım, bunu yaptım.
+
+473
+01:18:08,791 --> 01:18:10,291
+Şunu size ödev vereyim mi?
+
+474
+01:18:11,811 --> 01:18:13,332
+Bir yapmaya çalışsanız.
+
+475
+01:18:13,332 --> 01:18:15,431
+Olur hocam.
+
+476
+01:18:15,652 --> 01:18:18,951
+Notlar paylaşıldı mı hocam?
+
+477
+01:18:19,692 --> 01:18:21,152
+Yok, yarın paylaşacağım.
+
+478
+01:18:21,252 --> 01:18:21,871
+Olur mu arkadaş?
+
+479
+01:18:22,111 --> 01:18:22,631
+Tamam hocam.
+
+480
+01:18:23,155 --> 01:18:26,996
+Evet, ve böylece belirsizlikleri bitirmiş oluyoruz.
+
+481
+01:18:27,435 --> 01:18:41,735
+Demek ki şöyle, bir şu belirsizliğimiz var, üstel belirsizliklerimiz, bir sonsuz eksi sonsuz belirsizliğimiz var, bir sonsuz çarpı sıfır belirsizliğimiz ve sonsuz bölü sonsuz ve sıfır belirsizliğimiz.
+
+482
+01:18:42,216 --> 01:18:48,675
+L'Hospital kuralı ne demek? Üstün türevi bölü, altın türevi böyle alıyoruz değil mi arkadaşlar?
+
+483
+01:18:49,587 --> 01:19:00,587
+ve bunu da sonsuz bölü sonsuz ve sıfır bölü sıfır belirsizliklerinde yapıyoruz. Onun için de diğerlerinde düzenlemeler yapıyoruz. Ona ulaşıyoruz. Öyle özetleyebilirim.
+
+484
+01:19:01,467 --> 01:19:10,007
+Evet, şimdi gelelim ekstremum değerlere. Ekstremum değerler arkadaşlar maksimum minimum değerler demek.
+
+485
+01:19:11,315 --> 01:19:36,576
+minimum değer, ekstremum değerler. Şimdi arkadaşlar, ben size bunları okumayacağım. Size anlatacağım. Anlattığım zaman bunların hepsini anlayacağınızı düşünüyorum. Çünkü çok yazılı ifade var ama 1-5-10 dakika içinde hepsini rahatlıkla anlayabileceğinizi düşünüyorum. Şöyle, şimdi bir fonksiyonun maksimum değeri demek ne demek?
+
+486
+01:19:37,235 --> 01:20:00,935
+Mesela şöyle göstereyim. Çok karışık düşünmenize gerek yok. Mesela x'ye koordinat sisteminde şöyle bir fonksiyon düşünün. Şurası 2 olsun, burası 6 olsun, buranın değeri 15 olsun, buranın değeri de 7 olsun. Bu da f fonksiyonu olsun.
+
+487
+01:20:01,835 --> 01:20:04,615
+Şimdi bunun maksimum değeri nedir?
+
+488
+01:20:05,492 --> 01:20:08,172
+maksimum değer 15
+
+489
+01:20:08,172 --> 01:20:18,552
+15. Bakın, max f'x'in maksimum değeri 15. Peki maksimum noktası?
+
+490
+01:20:19,552 --> 01:20:22,772
+Maksimum noktası 6.
+
+491
+01:20:22,772 --> 01:20:23,152
+6 mu?
+
+492
+01:20:23,652 --> 01:20:24,112
+Evet.
+
+493
+01:20:25,112 --> 01:20:28,391
+f'x'in maksimum noktası?
+
+494
+01:20:29,716 --> 01:20:56,015
+6. Demek ki nokta ile değer farklı şey. Yani şu noktada, şöyle okuruz değil mi? f fonksiyonu 6 noktasında en büyük değerini alır. Doğru mu arkadaşlar? Peki, f fonksiyonu 2 noktasında en küçük değerini alır. Doğru mu arkadaşlar? O zaman ne deriz? fx'in minimum noktası neresidir?
+
+495
+01:20:57,811 --> 01:21:01,291
+x kare artı 2. Peki minimum değeri nedir?
+
+496
+01:21:03,872 --> 01:21:04,891
+Evet, 7.
+
+497
+01:21:05,891 --> 01:21:08,771
+Buraya kadar anladınız mı? Ve şöyle dersiniz değil mi?
+
+498
+01:21:09,291 --> 01:21:14,932
+f2 eşittir 7. Yani minimum değeri 7.
+
+499
+01:21:15,752 --> 01:21:21,592
+Şöyle, minimum noktası, yani 2 noktasında minimum değerini alır.
+
+500
+01:21:22,612 --> 01:21:26,731
+6 noktasında maksimum değerini alır.
+
+501
+01:21:27,352 --> 01:21:29,012
+Buraya kadar tamam mı arkadaşlar?
+
+502
+01:21:29,912 --> 01:21:35,032
+Maksimum değer ve minimum değer, maksimum nokta, minimum nokta bu demek.
+
+503
+01:21:35,551 --> 01:21:37,891
+Şimdi bir şey daha söyleyeceğim.
+
+504
+01:21:38,391 --> 01:21:41,452
+Şimdi bir fonksiyonun maksimum noktası demek ne demek?
+
+505
+01:21:42,592 --> 01:21:45,032
+O noktada alıyor mesela şöyle yapalım.
+
+506
+01:21:46,152 --> 01:21:49,032
+Şurası 2 olsun, şurası da 5 olsun.
+
+507
+01:21:49,587 --> 01:22:11,967
+şurası da 4 olsun. Şu değeri kaç olsun? 12 olsun. Bu değeri 3 olsun. Şu da 6 olsun. Tamam mı arkadaşlar? Şimdi baktığınız zaman fx fonksiyonu bu. Şimdi bunun maksimum 4 noktasında maksimum değerini alır değil mi?
+
+508
+01:22:13,076 --> 01:22:15,835
+Değil mi arkadaşlar? Benimle aynı düşünce demiştiniz.
+
+509
+01:22:16,095 --> 01:22:16,935
+Evet.
+
+510
+01:22:17,355 --> 01:22:25,115
+Bu zaman f fonksiyonunun maksimum noktası 4'tür. Aldığı en büyük değerde maksimum değeri de kaç dersiniz?
+
+511
+01:22:26,056 --> 01:22:27,175
+12.
+
+512
+01:22:27,855 --> 01:22:30,255
+Tamam. Şimdi o zaman şöyle diyoruz.
+
+513
+01:22:30,835 --> 01:22:33,456
+Bir fonksiyonun maksimum noktası ne demek?
+
+514
+01:22:34,015 --> 01:22:49,135
+O noktada öyle büyük değerler alıyor ki hiçbir değer ondan yüksek değil. Şimdi bakınız fx demek x değer. Mesela şu demek değil mi? f4 demek ne demek? f4 12.
+
+515
+01:22:49,435 --> 01:22:56,135
+Şimdi demek ki bir fonksiyonu şöyle yazarsam fx küçük eşit fc.
+
+516
+01:22:57,876 --> 01:22:59,355
+Bu ne demek arkadaşlar?
+
+517
+01:23:00,155 --> 01:23:10,716
+Öyle bir c noktasında, öyle bir c noktasında bir değeri var ki, bütün fx değerlerinden neymiş? fc büyük değil mi?
+
+518
+01:23:12,095 --> 01:23:13,435
+Okuyabiliyor musunuz bunu?
+
+519
+01:23:13,636 --> 01:23:16,896
+Bu ne demek? fc büyük eşit fx.
+
+520
+01:23:16,896 --> 01:23:19,716
+Yani şöyle bakın bunu göstereyim burada.
+
+521
+01:23:21,136 --> 01:23:23,876
+Mesela burası c olsun.
+
+522
+01:23:25,587 --> 01:23:36,227
+c burası fc. Öyle bir fc noktası var ki diyor, bütün fx değerlerinden büyük. O zaman bu maksimum nokta.
+
+523
+01:23:37,524 --> 01:24:02,844
+Tamam mı arkadaşlar? Ve buna biz mutlak maksimum. Bu maksimumu geçen mesela şöyle olsa. Göstereyim mi? Burası bir maksimum, burası bir maksimum, şurası bir maksimum. Kaç tane maksimum nokta var? Birisi burası 2 olsun, burası 5 olsun, şurası da 7 olsun.
+
+524
+01:24:03,572 --> 01:24:23,572
+Söyler misiniz arkadaşlar? Mesela burası c1, burası c2 noktası olsun, burası da c3. Şimdi şu aralıkta bu maksimum nokta, bu aralıkta bu maksimum nokta, bu aralıkta da bu maksimum nokta. Kaç tane maksimum noktası var?
+
+525
+01:24:24,180 --> 01:24:51,140
+3 tane. 3 tane. Kaç? Maksimum değerleri kaç? 2, 5, 7. İşte bu maksimumların en büyüğüne mutlak maksimum denir. O zaman mesela burada en büyüğü hangisi? Şu nokta. Burası mutlak maksimum. Tamam mı arkadaşlar? Şimdi buna baktığımız zaman burada kaç tane maksimum var? İlk örneği şu birinci örneği.
+
+526
+01:24:51,140 --> 01:24:51,560
+Bir tane.
+
+527
+01:24:52,051 --> 01:25:18,951
+bir tane, bu maksimum noktadır, maksimumdur. Bunlara yerel maksimum diyoruz. Yerel maksimum. Bu da yerel maksimum. Bu da yerel maksimum ama aynı zamanda bütün maksimumların en büyüğü olduğu için mutlak maksimum deniliyor. Burası yerel maksimumdur. Ama aynı zamanda bu nedir? Mutlak maksimumdur. Çünkü bir tane var ve o en büyüğü zaten. Başka yok.
+
+528
+01:25:19,956 --> 01:25:24,416
+Anlaşıldı mı arkadaşlar? Şu ana kadar anlattıklarım.
+
+529
+01:25:25,236 --> 01:25:27,836
+E şimdi bir minimum var. Minimum var.
+
+530
+01:25:28,175 --> 01:25:30,416
+Şimdi bakın minimumda da aynı şey geçerli.
+
+531
+01:25:30,916 --> 01:25:33,336
+Şimdi ben böyle yazdım. Şöyle bir şey yaptım.
+
+532
+01:25:34,736 --> 01:25:39,376
+Şöyle burası 2 olsun, burası 1 olsun, burası 5 olsun.
+
+533
+01:25:40,095 --> 01:25:43,836
+Şurası 7 olsun, şuralarda herhangi değerler olsun.
+
+534
+01:25:43,836 --> 01:25:45,836
+Şimdi bu fonksiyonu.
+
+535
+01:25:46,292 --> 01:25:50,092
+En küçük değeri nerede alınıyor arkadaşlar? Hangi noktada?
+
+536
+01:25:50,192 --> 01:25:50,432
+2'de.
+
+537
+01:25:50,952 --> 01:25:52,492
+2'de. Ne diyeceksiniz?
+
+538
+01:25:52,971 --> 01:25:59,952
+2 noktası, fx fonksiyonunun, fx'i nedir?
+
+539
+01:26:00,952 --> 01:26:03,311
+Minimum noktasıdır.
+
+540
+01:26:04,231 --> 01:26:06,211
+Peki, minimum değeri nedir?
+
+541
+01:26:06,852 --> 01:26:07,551
+Minimum değeri.
+
+542
+01:26:08,020 --> 01:26:22,000
+yedidir. Şöyle değil mi? Ya da f2 deriz. f2 ya da 7, fx'in minimum değeridir. Şimdi aynı şekilde bakın şöyle olsun.
+
+543
+01:26:25,876 --> 01:26:49,756
+Şöyle diyelim. Şurası c1 noktası olsun. Şurası c2. Şimdi baktığınız zaman şu bölgedeki en küçük değer hangisidir? c1'dir. Değil mi? Yani burası bir minimum noktadır. Yerel minimum. Şurası da şu bölgedeki en küçük değerde burası da yerel minimumdur.
+
+544
+01:26:50,079 --> 01:26:55,680
+Ama bunların içinde en küçüğü hangisidir derseniz, hangisidir?
+
+545
+01:26:55,979 --> 01:26:56,659
+f'ce 1.
+
+546
+01:26:57,260 --> 01:27:03,279
+Evet. O zaman deriz ki bu aynı zamanda nedir? Mutlak, minimumdur.
+
+547
+01:27:04,720 --> 01:27:10,640
+Anlaşıldı mı? Ama buraya baktığımız zaman tek bir tane minimumluk var. Bu yerel minimumdur.
+
+548
+01:27:11,220 --> 01:27:17,920
+Aynı zamanda soruda mutlak da sorulursa aynı zamanda nedir? Mutlak minimumdur.
+
+549
+01:27:18,260 --> 01:27:26,860
+Yani minimumların en küçüğü ne mutlak minimum denir. Maksimumların en büyüğüne de mutlak maksimum denir.
+
+550
+01:27:27,680 --> 01:27:29,160
+Anlatabildim mi arkadaşlar?
+
+551
+01:27:30,280 --> 01:27:30,900
+Evet hocam.
+
+552
+01:27:30,900 --> 01:27:35,960
+Şimdi ona göre ben o zaman genel yazacak olsam nasıl derim?
+
+553
+01:27:38,484 --> 01:27:41,864
+değerim var ki mesela şuraya c diyeceğim.
+
+554
+01:27:42,484 --> 01:27:43,864
+Mesela c dedim.
+
+555
+01:27:45,404 --> 01:27:51,364
+Bütün c değerlerden, fx'in bütün değerlerinden ne kalsın? Küçük kalsın.
+
+556
+01:27:52,404 --> 01:27:52,644
+Değil mi?
+
+557
+01:27:53,324 --> 01:27:55,604
+Benim öyle bir c noktası var ki
+
+558
+01:27:56,000 --> 01:28:22,340
+x'in yerine ne koyarsan koy, bunlardan küçük ya da eşit kalıyor. Yani şu nokta değil mi? Bu nokta fc, burası şöyle değil mi? Küçük eşit fx. Yani şunu diyorum, fx'in bütün değerlerinden küçük kalıyor ya da eşit. O zaman bu nedir? Minimumdur. Değil mi arkadaşlar? Ve mutlak minimumdur. Bütün fx'lerden küçük kaldığı için, yani şunu gösterir.
+
+559
+01:28:22,671 --> 01:28:25,971
+mutlak minimumdur. Buraya kadar anladınız mı?
+
+560
+01:28:27,371 --> 01:28:28,291
+Anladınız hocam?
+
+561
+01:28:28,511 --> 01:28:28,952
+Evet hocam.
+
+562
+01:28:29,460 --> 01:28:52,699
+Yani bunu anladıysanız, şimdi hiç karıştırmanıza gerek yok. Bakın okuyalım. Ama bunu anlamazsanız bunlar size çok karışık gelir. Bakın diyor ki benim bir fc değerim var. Değil mi? fc büyük eşit fx. Bütün x'lerden büyük, en büyük değeri alıyor. O zaman bu nedir? Mutlak maksimumdur.
+
+563
+01:28:57,460 --> 01:29:24,539
+x kare de mutlak maksimum noktasıdır. Bitti. Benim bir f'cem var. Bütün f'x'lerden küçük kalıyor. O zaman bu nedir? Bu c noktası benim mutlak minimum noktamdır. Değeri de mutlak minimum değerdir. Anlaşıldı mı arkadaşlar? Bakın bunu böyle okuduk. Bunu ezberlemenize gerek yok. Kendiniz bunu yazabilirsiniz.
+
+564
+01:29:25,811 --> 01:29:37,891
+Tamam. Şimdi bakın örnekte bunu gösterelim. İlk örneğimiz en kolay ve zevkli konularından birisidir. Maksimum minimum. Şöyle bakın şimdi.
+
+565
+01:29:44,372 --> 01:29:45,552
+gelmedi değil mi?
+
+566
+01:29:47,392 --> 01:29:48,352
+şöyle diyelim.
+
+567
+01:30:39,220 --> 01:30:41,320
+Arkadaşlar, internet geldi mi?
+
+568
+01:30:43,460 --> 01:30:45,500
+Geldi hocam.
+
+569
+01:30:46,160 --> 01:30:50,580
+Bu son kısımları dinlediniz mi? Şunları anlattım tanımına.
+
+570
+01:30:50,600 --> 01:30:53,020
+Hocam, en son ekran bağlıyordunuz gitti.
+
+571
+01:30:53,580 --> 01:31:02,720
+Tamam, iyi. Şimdi o zaman arkadaşlar, örneği beraber yapalım. Bir daha yeniden tableti aktaracağım.
+
+572
+01:31:05,779 --> 01:31:07,880
+Geldi mi? Geldi değil mi?
+
+573
+01:31:08,600 --> 01:31:09,180
+Gelmedi.
+
+574
+01:31:09,560 --> 01:31:10,079
+Hayır hocam.
+
+575
+01:31:10,380 --> 01:31:12,579
+Şimdi bakın mesela örnek.
+
+576
+01:31:13,039 --> 01:31:13,900
+Hocam gelmedi.
+
+577
+01:31:14,400 --> 01:31:15,500
+Gelmedi mi? Pardon.
+
+578
+01:31:15,800 --> 01:31:16,880
+Ben açmadım çünkü.
+
+579
+01:31:17,380 --> 01:31:17,860
+Bir dakika.
+
+580
+01:31:19,320 --> 01:31:19,640
+Evet.
+
+581
+01:31:20,000 --> 01:31:21,100
+Şöyle paylaşalım.
+
+582
+01:31:21,199 --> 01:31:22,239
+Bir dakika arkadaşlar.
+
+583
+01:31:27,956 --> 01:31:28,456
+Şimdi
+
+584
+01:31:28,456 --> 01:31:33,296
+Geliyor herhalde.
+
+585
+01:31:33,936 --> 01:31:35,136
+Gel.
+
+586
+01:31:36,136 --> 01:31:39,356
+Geldi mi?
+
+587
+01:31:39,576 --> 01:31:40,136
+Evet.
+
+588
+01:31:40,816 --> 01:31:42,216
+Şimdi arkadaşlar bakın.
+
+589
+01:31:42,856 --> 01:31:45,516
+Örneğin y eşittir x kare fonksiyonu.
+
+590
+01:31:46,196 --> 01:31:48,876
+y eşittir x kare fonksiyonunu alalım.
+
+591
+01:31:49,756 --> 01:31:51,156
+Tanım aralığı şöyle olsun.
+
+592
+01:31:51,156 --> 01:31:52,216
+Tanım kümesi
+
+593
+01:31:52,979 --> 01:32:17,079
+tanım kümesi, desin ki, eksi sonsuzla artı sonsuz olsun. Şimdi bunun maksimum minimumuna bakalım. Ne olur arkadaşlar? Şöyle olur değil mi? y eşittir x kare. Şöyle değil mi? Bu nereye kadar gidiyor? Böyle sonsuza kadar kolları gidiyor. Doğru mu arkadaşlar? Şurası da sıfır. Peki burada maksimum nokta var mı? Minimum nokta?
+
+594
+01:32:17,747 --> 01:32:20,907
+Bir yerde minimum dibi değeri var mı? En küçük değeri?
+
+595
+01:32:21,087 --> 01:32:21,387
+Var.
+
+596
+01:32:21,927 --> 01:32:22,747
+Var neresi?
+
+597
+01:32:23,187 --> 01:32:23,787
+Sıfır.
+
+598
+01:32:24,687 --> 01:32:32,187
+Değil mi? Bir tane var. Böyle birkaç tane de olabilir de şöyle atıyorum. Ama bir tane var değil mi? O zaman ne dersiniz?
+
+599
+01:32:32,887 --> 01:32:39,307
+x eşittir sıfır noktası, şöyle yazalım. x eşittir sıfır noktasında nedir arkadaşlar?
+
+600
+01:32:44,595 --> 01:32:58,695
+minimum noktadır. Aynı zamanda mutlak noktası mıdır? Başka? Evet. Mutlak minimumdur değil mi? Mutlak minimum desek yeterli. Maksimum noktası var mı?
+
+601
+01:32:59,923 --> 01:33:01,403
+Yok.
+
+602
+01:33:01,844 --> 01:33:08,903
+Demek ki illa maksimum noktası da olacak bir şey yok. Değil mi arkadaşlar?
+
+603
+01:33:09,604 --> 01:33:18,863
+x eşittir sıfır noktasında ne dedik? Mutlak minimum noktadır. Peki değeri nedir? Mutlak minimum değeri. f sıfır kaçtır?
+
+604
+01:33:19,583 --> 01:33:26,783
+x'i sıfırken y'si sıfırdır. Mutlak minimum değeri de mutlak minimum değeri de
+
+605
+01:33:27,347 --> 01:33:50,948
+kaçtır? 0'dır. Şurada hesapladık. Şimdi mesela y eşittir x kare yine. Tanım kümesi bu sefer 0'ı 2 olsun. 0'ı 2 olsun. Şimdi bakın arkadaşlar 0'ı 2 olsun. Burası 0'dan başlayacak 2'ye kadar gidecek. Evet burası da 4 olur değil mi? x'e y.
+
+606
+01:33:52,148 --> 01:34:05,108
+Böyle değil mi arkadaşlar? Şimdi bunun maksimum ve mutlak minimumu nedir diye sorsam. Ne derseniz? En küçük değeri kaç dağılıyor? Kesinlikle en küçük bir değeri var mıdır?
+
+607
+01:34:06,467 --> 01:34:16,948
+Var sıfır. Evet x eşittir sıfır mutlak minimum nokta. Peki mutlak minimum değeri kaçtır?
+
+608
+01:34:17,524 --> 01:34:20,204
+Mutlak minimum değer kaçtır?
+
+609
+01:34:21,044 --> 01:34:21,384
+4.
+
+610
+01:34:21,384 --> 01:34:25,024
+3'e karşı gelen, şurası bakın, 0'a karşı gelen 0.
+
+611
+01:34:25,764 --> 01:34:29,264
+Yani şu 0, şu 0'dır. Değil mi?
+
+612
+01:34:29,964 --> 01:34:35,264
+Peki, mutlak maksimum var mı? En büyük değeri, fonksiyonu?
+
+613
+01:34:36,244 --> 01:34:36,484
+Evet.
+
+614
+01:34:36,944 --> 01:34:37,344
+Var.
+
+615
+01:34:37,624 --> 01:34:40,124
+Var. Kaçtır? x eşittir?
+
+616
+01:34:40,724 --> 01:35:03,444
+2x noktasında mutlak nedir? Maksimum noktadır dedik. Peki değeri kaçtır mutlak maksimum değeri? Şöyle yapıyoruz değil mi? F2, F4. Yani 4 mutlak maksimum değerdir.
+
+617
+01:35:04,724 --> 01:35:31,604
+Buna tamam mı arkadaşlar? Bir tane daha örnek yapalım. Şimdi mesela şöyle olsa. Şöyle üst tarafı sileceğim. Şöyle deseydi, y eşittir x kare, tanım kümesi kaç olsun? 0'a 2. Açık aralık. Şimdi çiziyorum bakın. 0'a 2. Şöyle ama şurası açık.
+
+618
+01:35:32,851 --> 01:35:58,972
+Şurası 0'da yok değeri. Şurası 2. 2'de değeri var. Kaç? 4. Şimdi bana söyler misiniz? En büyük değeri var mı bunun? En büyük değeri var. Kaç? 4'tür. Değeri aldığı nokta da 2'dir. O zaman ne dersiniz? x eşittir. 2 noktası mutlak.
+
+619
+01:35:59,507 --> 01:36:10,307
+maksimum nokta, değeri de mutlak, maksimum değeri de kaçtır? 4.
+
+620
+01:36:12,527 --> 01:36:24,327
+En küçük değeri var mı? Bakın burada sıfıra geliyorsunuz ama açık aralık. Sonsuza kadar sıfıra gidene kadar bir sürü sayı var. Var mı en küçük değeri?
+
+621
+01:36:24,720 --> 01:36:25,900
+Tanımı değil hocam.
+
+622
+01:36:26,240 --> 01:36:36,560
+Evet, o yüzden şöyle diyoruz. Mutlak, minimum yoktur. Noktası da yoktur, değeri de yoktur. Anladınız mı?
+
+623
+01:36:37,500 --> 01:36:46,520
+Ve son olarak mesela y eşittir, şu aşağıya yazacağım, x kare olsun, tanım kümesi açık aralık olsun. 0 ile 2.
+
+624
+01:36:46,520 --> 01:36:51,940
+E o zaman bunun grafiği nasıl olacak? Şöyle değil mi? Şöyle.
+
+625
+01:36:52,756 --> 01:37:14,256
+0'da açık, 2'de açık. En büyük değeri kaçtır desem? 4'e doğru gidiyor ama sonsuza kadar değerler alır. 4'e kadar gidene kadar o arada bir sürü değer var. Değil mi arkadaşlar? Minimum değeri var mı? O da yok.
+
+626
+01:37:20,916 --> 01:37:22,695
+mutlak minimum yok.
+
+627
+01:37:23,515 --> 01:37:24,456
+minimum yok.
+
+628
+01:37:25,215 --> 01:37:32,975
+Biz mutlak ve mutlak maksimum ve minimuma kısaca ekstremum diyoruz arkadaşlar.
+
+629
+01:37:33,835 --> 01:37:34,916
+Ekstremum deriz.
+
+630
+01:37:34,916 --> 01:37:36,115
+İkisine birden.
+
+631
+01:37:36,456 --> 01:37:38,135
+O zaman şöyle de diyebilirim.
+
+632
+01:37:39,115 --> 01:37:42,935
+Ekstremum noktaları yoktur da diyebilirsiniz.
+
+633
+01:37:43,255 --> 01:37:44,695
+Ya da böyle yazabilirsiniz.
+
+634
+01:37:45,576 --> 01:37:46,895
+Anladınız mı buraya kadar?
+
+635
+01:37:47,731 --> 01:37:49,292
+ve süreç.
+
+636
+01:37:49,363 --> 01:38:17,363
+Şimdi bunu böyle anlarsanız, bütün bakın şurada demişim, bir fonksiyonun maksimum minimum değerlerine ekstremum değerleri, noktalarına da ekstremum noktaları denir. Bunu böyle ezberler, yani anlarsanız hiç zorlanmazsınız. Ve şunu diyor, bakın, sürekli bir fonksiyon, bir fonksiyon sürekli ise tanımlı mesela A noktası, B noktası, mutlaka bir tane en küçük...
+
+637
+01:38:17,363 --> 01:38:22,483
+değeri şöyle mesela burası en büyük değeri M'dir. Büyük M'dir.
+
+638
+01:38:22,836 --> 01:38:50,836
+Bir de en küçük değeri olur. Çünkü hiçbir aralıkta boşluk yok ya. Mesela bakın, buralarda bir noktada süreksiz ise, tabii burada grafikler yok. Şurada sıfırda sıfır noktası açık olduğu için şey yapmıyor, sıfırda aşağıda minimumu yok. Burada da ikisinde de açık. Hem minimumu yok hem maksimumu. Ama kapalı bir aralıkta sürekli ise her nokta olacak.
+
+639
+01:38:50,836 --> 01:39:05,056
+c için değeri bir tane en küçük olacak, bir tane de en büyük değeri olacak. Onu söylüyor. Tamam mı arkadaşlar? Buraya kadar. Şimdi bakın biraz önce benim size anlattığım şey. Bakın şurası maksimum.
+
+640
+01:39:05,587 --> 01:39:26,567
+Burası da maksimum. Yani şu bölgedeki en büyük değer budur. Bölge bölge bakıyoruz. Bu bölgedeki en büyük değer budur. Ama bunların içinde bu yerel maksimumdur. Bu da yerel maksimumdur. Ama bunların içindeki en büyüğüne biz aynı zamanda mutlak maksimum diyoruz.
+
+641
+01:39:32,500 --> 01:40:00,000
+burada şöyle burası minimumdur. Şurası minimumdur. Burası minimumdur. Burası minimumdur. Bu minimumların en küçüğü şurasıdır. Buna mutlak minimum deriz. Tamam mı arkadaşlar? İşte bir bölgedeki en büyüğe yerel maksimum, en küçüğe de yerel minimum diyoruz. Mesela şu bölgede
+
+642
+01:40:00,000 --> 01:40:20,220
+baktığım zaman şu bölgede, şuradakinden daha büyük bir değer yok şunda. O da bunu söylüyor işte. Bakın, bir c'deki bir noktadaki bir değerimiz var ki, hiçbiri, pardon, hepsi fx'ten küçük. O zaman bu minimumdur.
+
+643
+01:40:28,000 --> 01:40:46,000
+x'lerden büyük, bu da maksimum noktadır. Buraya kadar anladınız mı? Burayı biraz hızlı anlattım ama grafik üzerinde anlattığım için daha doğrusu anlatmak istemedim. Ama anlamadıysanız anlatabilirim. Evet, şimdi...
+
+644
+01:40:47,091 --> 01:40:56,952
+Kritik noktalar, peki her zaman böyle ben grafiği çizdim, grafikte hemen üstüne işaretledim ve kritik noktaları bulduk.
+
+645
+01:40:56,952 --> 01:41:07,731
+Kısaca bundan bahsedeyim. Pardon, üstünde yazılıydı. Fakat her zaman yazılı olmayacak. Siz kendiniz noktaları belirleyeceksiniz.
+
+646
+01:41:15,091 --> 01:41:24,851
+fonksiyonun türevini sıfır yapan ve tanımsız yapan noktalara kritik noktalar diyoruz. Tamam mı arkadaşlar?
+
+647
+01:41:25,391 --> 01:41:31,192
+Bir fonksiyonun türevini sıfır ve tanımsız yapan noktalara kritik noktalar denir.
+
+648
+01:41:35,283 --> 01:42:02,783
+ekstremum noktalar bir fonksiyonun neresinde vardır? Yani bir maksimum ve minimum noktalar nerededir? Şöyle bunu şöyle ezberlemeyelim. Bundan da bahsedeyim. Dersimizi bitirelim. Böyle okuyarak çok fazla verimli olmuyor. Evet şöyle arkadaşlar. Evet ekran geldi mi? Söyleyebilir misiniz? Şimdi arkadaşlar.
+
+649
+01:42:03,347 --> 01:42:14,827
+biraz önceki okurken bile daha zor oluyor. Şöyle söyleyeyim arkadaşlar. Bir fonksiyonu maksimum minimum noktaları nerededir diye sorarsanız
+
+650
+01:42:15,572 --> 01:42:21,511
+sadece 3 nokta maksimum minimum, her nokta maksimum minimum olmak zorunda mı? Değil.
+
+651
+01:42:21,511 --> 01:42:24,412
+aday noktalar ve maksimum noktalar şöyle.
+
+652
+01:42:24,412 --> 01:42:33,131
+maksimum minimum noktalar, bir fonksiyonun türevinin 0 olduğu noktalar, 1 maksimum minimum nokta olabilir.
+
+653
+01:42:33,131 --> 01:42:37,931
+türevinin tanımsız olduğu noktalar, tanımsız olduğu noktalar,
+
+654
+01:42:38,387 --> 01:42:45,547
+Mesela türevinin sıfır olduğu noktalarda şekil şöyle mesela, şöyle, burada sıfırdır. Ya da şöyledir, bakın.
+
+655
+01:42:46,748 --> 01:42:57,007
+Türevinin tanımsız olduğu nokta mesela şöyledir, şurasıdır. Tamam mı arkadaşlar? Ya da şöyle mesela, şöyle, şöyle bir şekil atıyorum.
+
+656
+01:43:03,475 --> 01:43:12,955
+uç noktaları. Uç noktalar ne demek arkadaşlar? Onlar da şunlar noktalar. Mesela fonksiyon şurada başlıyor, şurada bitiyor.
+
+657
+01:43:13,716 --> 01:43:32,916
+a noktasında başladı, b noktasında bitti. Uç noktalar, a, b aralı. O zaman bakın birisi ne oldu? Minimum nokta oldu, birisi maksimum nokta oldu. Demek ki bakın f üst x'in türevinin sıfır olduğu noktalar bu şekildekinler.
+
+658
+01:43:33,492 --> 01:43:56,812
+Tanımsız olduğu noktalar şu şekildekiler. Bakın bu en maksimum noktadır. Bu da bu şekle göre minimum noktadır. Ya da uç noktalar şununla şudur. Tamam mı arkadaşlar? Burası anlaşıldı mı? Demek ki maksimum minimum için maksimum minimum noktalar ancak bu noktalar olabilir.
+
+659
+01:43:58,068 --> 01:44:21,388
+Peki, şunu da söyleyelim. Kritik nokta neydi? Kritik nokta, şimdi bir fonksiyon verecek. Bunlar işte aday. Yani şöyle bir fonksiyonun türevini alacaksınız. Türevini aldınız. Ya eşittir, f üstü x eşittir sıfır ya da f üstü x tanımsız.
+
+660
+01:44:22,163 --> 01:44:48,043
+tanımsız. Bu iki nokta aday nokta işte kritik noktalar. Biz bunları kritik nokta diyoruz. İşte bunlardan biz maksimum minimum olup olmadığını araştıracağız. Tamam mı arkadaşlar? Evet. Efin bunları söyledik. Bir tane örnek yapayım bitireyim. Yapayım mı arkadaşlar örnek? Yoksa kalsın mı?
+
+661
+01:44:48,948 --> 01:44:50,988
+yorulduysanız bırakacağım.
+
+662
+01:44:52,467 --> 01:44:53,108
+Yapalım mı?
+
+663
+01:44:53,828 --> 01:44:55,868
+Bir tane örnek.
+
+664
+01:44:56,448 --> 01:44:57,807
+Bir tane yapalım hocam.
+
+665
+01:44:58,488 --> 01:45:00,467
+Sadece kritik noktalarını bulayım.
+
+666
+01:45:01,228 --> 01:45:04,488
+Yapalım ama şöyle, kritik nokta bulalım.
+
+667
+01:45:04,807 --> 01:45:05,688
+Tamam mı arkadaşlar?
+
+668
+01:45:06,288 --> 01:45:06,847
+Kritik bu.
+
+669
+01:45:06,847 --> 01:45:08,088
+Aklımdan yazıyorum.
+
+670
+01:45:08,288 --> 01:45:14,448
+Örneğin, fx fonksiyonu x küp eksi 4x olsun.
+
+671
+01:45:15,155 --> 01:45:17,956
+fonksiyonunun kritik noktaları nedir?
+
+672
+01:45:19,576 --> 01:45:21,235
+Kritik noktaları nedir?
+
+673
+01:45:22,336 --> 01:45:26,155
+Şimdi buradan aslında biz maksimum minimumuna geçeceğiz.
+
+674
+01:45:26,155 --> 01:45:27,155
+Şöyle olur değil mi?
+
+675
+01:45:27,615 --> 01:45:29,175
+f üstü x nedir?
+
+676
+01:45:29,815 --> 01:45:33,256
+3x kare, şunu 6x yapalım.
+
+677
+01:45:34,076 --> 01:45:35,456
+Eksi 6 olur.
+
+678
+01:45:36,456 --> 01:45:37,256
+Değil mi arkadaşlar?
+
+679
+01:45:38,456 --> 01:45:39,536
+Hatta 12 olur.
+
+680
+01:45:39,615 --> 01:45:41,315
+Neyse artık eşittir 0.
+
+681
+01:45:41,887 --> 01:46:00,587
+Pardon, bu çıktı. f üstü x'i sıfır yapan noktalar kritik noktaydı. Bakalım. 3x kare eksi 6 eşittir 0, x kare eşittir 3, pardon 2, x eşittir artı eksi kök 2. İki tane kritik noktası varmış. Birisi kök 2.
+
+682
+01:46:01,108 --> 01:46:27,327
+bir de x'i kök 2. Bir de neydi? f üstü x'i tanımsız yapan nokta varsa. Var mı tanımsız yapan? Bu çıktı. Burada tanımsızlık yok. O yüzden sadece kritik noktalarımız bu iki noktadır. Anladınız mı arkadaşlar? Mesela şöyle olsaydı bir tane daha son olarak. Örneğin f x eşitti kök x.
+
+683
+01:46:28,627 --> 01:46:50,307
+fonksiyonun kritik noktalarını bulunuz. Kritik noktalar. Ne olurdu? f üstü x, türevi 1 bölü 2 kök x olurdu. Şimdi bunu sıfır yapan değer var mı? Sıfır yapan değer yok. Peki tanımsız olduğu nokta var mı? f üstü x'in tanımsız olduğu nokta.
+
+684
+01:46:54,688 --> 01:47:06,188
+x eşittir sıfır için tanımsız. O zaman kritik nokta x eşittir sıfır için tanımsız. Ne diyeceksiniz? Bu bir kritik noktadır.
+
+685
+01:47:07,768 --> 01:47:14,060
+Evet. Ve burada bırakıyorum arkadaşlar. Haftaya...
+
+686
+01:47:14,068 --> 01:47:28,188
+Bunu bitireceğiz. Zaten çok az bir kısım kaldı. Ama sorulara geçeceğiz. Ama mantığını anlamanız önemliydi. Mutlak maksimum, mutlak minimum ne demek? Burada bitiriyorum arkadaşlar. Sorunuz var mı bana?
+
+687
+01:47:28,720 --> 01:47:31,079
+Hocam bunu bugün yükleme şansınız var mı?
+
+688
+01:47:31,659 --> 01:47:42,300
+Bugün yükleyemeyeceğim çünkü bazı eksiklikler var. Ben sisteme bunun tamamını yazıp yüklüyorum arkadaşlar. Yarın yükleyebilirim ancak olur mu?
+
+689
+01:47:42,939 --> 01:47:43,519
+Tamamdır.
+
+690
+01:47:43,920 --> 01:47:48,960
+Evet, başka sorusu olan var mı? Anladınız değil mi arkadaşlar?
+
+691
+01:47:50,836 --> 01:48:13,316
+Anladığınızı umuyorum. Anladığı sesini anladık olarak kabul ediyorum. Kendinize iyi bakın. Haftaya görüşürüz. Haftaya soru da getireceğim size arkadaşlar. Soru da paylaşacağım. Sınıfta olmadığımız için getiremeyeceğim maalesef. Kendinize iyi bakın. İyi bir hafta diliyorum hepiniz için. İyi günler arkadaşlar.
+
+692
+01:48:13,856 --> 01:48:14,456
+İyi günler hocam.
