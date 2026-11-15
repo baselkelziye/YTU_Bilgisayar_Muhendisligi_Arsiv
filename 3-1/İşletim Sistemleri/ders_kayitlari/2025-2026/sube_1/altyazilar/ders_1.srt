@@ -1,0 +1,2227 @@
+1
+00:03:33,812 --> 00:03:35,872
+Arkadaşlar merhaba, ses geliyor mu buraya?
+
+2
+00:04:33,492 --> 00:04:38,372
+Online oturumda herhalde bilimsel hazırlıktan bazı arkadaşlar var.
+
+3
+00:04:39,212 --> 00:04:40,412
+Duyuyor musunuz arkadaşlar bizi?
+
+4
+00:05:06,132 --> 00:05:24,711
+Evet. Dersimize başlayabiliriz. Şimdi sınavdan önceki hafta Virtual Memory Management konusuna giriş yapmıştık. Bugün bu konuyu tamamlayacağız ve son konumuz olacak.
+
+5
+00:05:32,884 --> 00:05:43,024
+İkisi bir arada düşünülmesi gereken bir şey. Memory Management daha çok donanım üzerineydi. Burada da bunun işletim sistemi tarafındaki karşılığına bakacağız.
+
+6
+00:05:45,724 --> 00:05:58,424
+Şimdi, başından beri söylediğim şey özellikle işlemci kullanımını, donanım kullanımını maksimize etmek için yaptığımız bir şey var. Multi Programming seviyesini arttırmak.
+
+7
+00:05:58,867 --> 00:06:21,528
+Fakat multi-programming yaparken bir programın tamamına proses haline geldiğinde belli eğitim demek belli sıkıntılara neden oluyor. En azından yer problemi oluyordu. Bu yer problemi paging yapısıyla veya fragmentation yapısıyla farklı şekillerde kısmen çözülebildi ama halen çözülebilmiş değil şu ana kadar gördüğümüz kısımda.
+
+8
+00:06:26,771 --> 00:06:32,171
+Programları, process haline geldiklerinde eşit uzunluklu parçalara bölelim.
+
+9
+00:06:33,211 --> 00:06:38,192
+Belleyi de frame adı altındaki eşit uzunluklu parçalara bölelim.
+
+10
+00:06:38,192 --> 00:06:48,072
+Ve bu şekildedir hem internal fragmentation, external fragmentation olmasın, hem de internal fragmentation olabilince azaltalım.
+
+11
+00:06:48,751 --> 00:06:52,031
+Degree of Malt programı 2'de yüksek tutalım. Hedefimiz buydu.
+
+12
+00:06:53,875 --> 00:06:59,075
+Şimdi virtual memory, yani belleğin sanallaştırılması konusu ise bize şunu söylüyor.
+
+13
+00:07:00,435 --> 00:07:15,935
+Filiksel bellek yönetiminden farklı olarak tamamen mantıksal bir bellek yönetimi yapmak ve kullanıcının, programcının belleği nasıl idare edeceğini düşünmesine gerek bırakmayan bir durum.
+
+14
+00:07:16,435 --> 00:07:22,435
+İstediğiniz uzunlukta program yazabiliyorsunuz. İstediğiniz karmaşıklıkta program yazabiliyorsunuz.
+
+15
+00:07:22,795 --> 00:07:30,935
+Dolayısıyla bir program ana bellekte fiziksel olarak bulunabileceği halden çok çok daha büyük miktarlarda gerçekleştirilebiliyor.
+
+16
+00:07:31,775 --> 00:07:39,375
+Ama programın sadece ihtiyaç duyulan parçaları page adı altında bellekte bulunuyor.
+
+17
+00:07:43,028 --> 00:07:48,187
+İlgili pejeler ana belleğe getiriliyor. Yaklaşımımız bu olacak. Buna da biz demand paging demiştik.
+
+18
+00:07:48,968 --> 00:07:51,268
+Bu şunu sağlar.
+
+19
+00:07:52,148 --> 00:07:56,768
+Belleyinizde örneğin bin tane page'e kadar yer ayırabiliyorsunuz.
+
+20
+00:07:56,768 --> 00:08:06,148
+Ama sizin mevcut proseslerinizin örneğin yüz tane proses olsun ihtiyaç duyduğu page sayısı on bin.
+
+21
+00:08:06,708 --> 00:08:31,628
+10.000'lik yer ayıramayacağınız için mecburen klasik paging yaparsak, pure paging yaparsak belli prosesleri bellekte bulunduramamak ve swap out yapmak gerekiyor demektir. Bu degree of multi-programming'i düşüren bir şey. Onun yerine her bir prosese ihtiyacı kadar veya belli bir ölçüde, bunu da birazdan konuşacağız, belli sayıda frame tahsisi etmek.
+
+22
+00:08:32,115 --> 00:08:37,615
+Ve bir pageleri bu frame'lere atamak gerekiyor. Birazdan görsel olarak da gelecek.
+
+23
+00:08:37,615 --> 00:08:47,115
+Eğer bir page o anda fiziksel olarak bellekte bulunamıyorsa, o page'in referansını ana belleğe disk üzerinden getirmek gerekiyor.
+
+24
+00:08:47,115 --> 00:08:49,115
+İşte buna da virtual memory management diyoruz.
+
+25
+00:08:49,812 --> 00:09:01,231
+Virtual address space'imiz, sanal adresleme mantığımız burada fiziksel adrese göre, adresleme işlemlerine göre çok çok daha büyük kapasitelere ulaşabiliyor.
+
+26
+00:09:02,012 --> 00:09:05,951
+Bu da degree of multi-programming'i arttırabilmek demektir.
+
+27
+00:09:06,771 --> 00:09:12,592
+Tabi bunu demand paging veya demand segmentation ile yapabiliyoruz. Biz burada daha çok demand paging üzerinde duracağız.
+
+28
+00:09:13,748 --> 00:09:28,948
+Yine Memory Management ünitesi aynı şeyleri yapacak. Her bir prosesin her bir page için adres hesaplaması, adres kontrolü yapacak ve üretilen program counter tarafından üretilen adreslere erişim sağlamayı gerçekleştirecek.
+
+29
+00:09:28,948 --> 00:09:39,608
+Ama her proses için belli page'ler üzerinde bu işlemler yapılacak. Dolayısıyla işlemci tarafında çok bir şey değiştirmiyoruz. Daha çok bellek yönetimini işletim sistemi sayesinde.
+
+30
+00:09:40,052 --> 00:10:05,392
+Daha etkin hale getiriyoruz. Örneğin sizin sanal belleğiniz, yani yazdığınız bir program, proses haline geldiğinde V kadar, hatta buradakine göre V artı bir kadar, page'e sahip olacak durumda olsun. Ama fiziksel bellekte size şu an gördüğünüz gibi, altı taneye kadar bir frame tahsisi yapılsın.
+
+31
+00:10:06,004 --> 00:10:20,683
+6 tane page'iniz var, 6 tane de frame'iniz var, şu an bellekte dolayısıyla. Ama geri kalan, V artı birden geriye kalanlar, hard disk üzerinde özel bir okuma yazma bölgesinde, yani hırlığa düşürülebilir bir bölgede saklanıyor.
+
+32
+00:10:21,564 --> 00:10:27,764
+Gerektiğinde, page'ler hard disk'ten fiziksel belliğe getirmiyor. Bunları geçen hafta konuştuk.
+
+33
+00:10:31,923 --> 00:10:37,563
+Stack bölgesi, heap bölgesi, pod bölgesi ve data bölgesi olarak yine çok farklı bir şey olmayacak.
+
+34
+00:10:38,323 --> 00:10:41,923
+Yine burayı kullanacağız ama her biri kendi içinde anlamlı page'lere bölünecek.
+
+35
+00:10:43,343 --> 00:10:47,743
+Bir de burada shared library dediğimiz bir olay var.
+
+36
+00:10:48,023 --> 00:10:54,423
+Özellikle fork gibi veya diğer interprocess communication mekanizmalarında kullandığımız bir şey.
+
+37
+00:10:57,268 --> 00:11:04,768
+C'de yazdığınız bir sürü program var ve bu C'nin içerisindeki bazı kütüphaneler o birçok program tarafından ortak bir şekilde kullanılıyor.
+
+38
+00:11:05,768 --> 00:11:14,028
+Bu programlar çalıştırılır hale geldiklerinde ortak pütüphaneler ortak püphaneler ortak püphaneler yerleştiriliyorlar.
+
+39
+00:11:14,548 --> 00:11:20,567
+Dolayısıyla bu püphaneler tekrar tekrar bellekle de saklanmıyor. Bu da bir avantaj diyelim.
+
+40
+00:11:22,259 --> 00:11:37,240
+Talebimiz olduğunda, bir isteğimiz olduğunda, herhangi bir page'e ihtiyacımız olduğunda, bunun da belleğe getirilmesi ve gerektiğinde bazı page'lerin boşaltılması, bellekten çıkartılması, demand page'ik dediğimiz bir şey.
+
+41
+00:11:37,899 --> 00:11:44,599
+Burada bir önceki konuda bahsettiğimiz swapping mekanizmasının aynısı olan bir durum söz konusu değil.
+
+42
+00:11:45,200 --> 00:11:49,259
+Orada bir prosesi tamamen swap out veya swap in yapıyorduk.
+
+43
+00:11:49,683 --> 00:11:57,003
+Bu tamamen bazı pagelerin swap out yapılıp bazı pagelerin swap in yapılması durumudur.
+
+44
+00:11:59,844 --> 00:12:14,323
+Olay da şu şekilde, eğer sizin program kantorunuz veya işlemciniz bir adres üretti ve bu adres hali hazırda ana bellekte, filiksel bellekte olmayan bir page'e denk geliyor.
+
+45
+00:12:14,964 --> 00:12:17,684
+Dolayısıyla bu page'i bulamayacaksınız.
+
+46
+00:12:18,764 --> 00:12:26,744
+Tabi referans ettiğiniz page burada, klasik paging yaklaşımında hiç böyle bir page'iniz yoksa bu bir abort durumudur.
+
+47
+00:12:27,403 --> 00:12:32,704
+Örneğin sizin programınız 100 tane page'den oluşuyor, 101. page'i talep edemezsiniz.
+
+48
+00:12:32,984 --> 00:12:36,104
+Böyle bir şey zaten programınızın doğasında olmayan bir şey.
+
+49
+00:12:36,104 --> 00:12:37,104
+Ama...
+
+50
+00:12:37,663 --> 00:12:45,864
+100 tane page'den örneğin 85. page'e ihtiyacınız var. Bu bellekte duruyorsa sıkıntı yok. Bu adrese erişim sağlarsınız.
+
+51
+00:12:45,864 --> 00:12:54,564
+Bellekte durmuyorsa, işte in-made-it referans dediğimiz in-made-it durum varsa o zaman bu page'in belleğe getirilmesi söz konusu olacak.
+
+52
+00:12:54,564 --> 00:12:57,564
+Buna da swapping işlemi diyoruz.
+
+53
+00:12:58,323 --> 00:13:07,823
+Tabii, swapping'in olabildiğince az çalışması bizim hedeflediğimiz bir şey. Effective Access Timed'an daha önce bahsetmiştik geçen derste de.
+
+54
+00:13:08,323 --> 00:13:14,323
+Ne kadar az swap yaparsak o kadar aslında bu adrese erişim süreniz o kadar kısalacaktır.
+
+55
+00:13:15,323 --> 00:13:21,824
+Bu, pagerlerle ilgilenen swapper'ın adına da pager ismi veriliyor.
+
+56
+00:13:22,196 --> 00:13:29,656
+Lazy Swapper'da, o page'e ihtiyaç duyulmadıkça, swap yapmama işlemi demek.
+
+57
+00:13:30,496 --> 00:13:36,036
+Şimdi bazı kavramlar var, bunları konuştuk en son derste, onun için buraları hızlı geçiyorum.
+
+58
+00:13:36,176 --> 00:13:40,056
+En basit kavramlarından bir tanesi, valid invalid bit.
+
+59
+00:13:40,216 --> 00:13:44,576
+Bu daha sonra bize tekrar lazım olacak, şeyin sonuna doğru, chapter'ın sonuna doğru.
+
+60
+00:13:44,676 --> 00:13:46,836
+Buna bir de birazdan 4 bit ekleyeceğiz.
+
+61
+00:13:47,836 --> 00:13:48,556
+Eğer...
+
+62
+00:13:49,011 --> 00:14:01,731
+Her bir proses için bir page tablosu tutuyorsak ve bu page'in hali hazırda memori içerisinde var olup olmadığını taklamak istiyorsak bu V'lik, invelit, bitten yararlı mı olur?
+
+63
+00:14:01,731 --> 00:14:07,731
+V ise, yani buna örneğin bir diyebiliriz, şuna da sıfır diyebiliriz.
+
+64
+00:14:11,731 --> 00:14:15,083
+Birine bir, birine sıfır diyelim. O anda...
+
+65
+00:14:15,508 --> 00:14:21,088
+İlgili sayfamız için bir frame ataması yapılmışsa bu valid oluyor.
+
+66
+00:14:21,828 --> 00:14:26,908
+Ama ilgili sayfamız sanal bellekte saklanıyorsa, fiziksel bellekte değilse bu da invalid oluyor.
+
+67
+00:14:29,187 --> 00:14:37,328
+Örneğin bir logic monore olarak bir programın A'dan H'a kadar toplam 8 tane page içerdiğini burada görüyoruz.
+
+68
+00:14:37,328 --> 00:14:41,008
+Ama fiziksel bellekten 3 tane frame atanmış.
+
+69
+00:14:43,508 --> 00:14:51,288
+Sanal bellekte duruyor. Burada sıfırıncı page için dördüncü frame atandığını görüyoruz ve bu beylik durumda.
+
+70
+00:14:51,827 --> 00:14:56,967
+İşte iki için altı atanmış, beş için dokuz atanmış. Page tablımız bu şekilde duracak.
+
+71
+00:14:57,868 --> 00:15:05,268
+Eğer ki biz mesela bu page'lerin her birinin uzunluğuna beş yüz diyelim, sınavda da buna benzer bir şey vardı hatırlarsınız.
+
+72
+00:15:10,703 --> 00:15:35,144
+Adrese erişmek istiyorsunuz. Ne olacak? 0, 500 arası, 501, 1000 arası. Şuradaki adres aralığını düşünün. Burada ulaşmak istediğiniz adres, dördüncü page. Burada invalid durumunda olduğu için bir page fault hatası, page'in bulunamadığı hatası meydana gelecek. Sonra bu page'in, e ile ilgili page'in,
+
+73
+00:15:35,700 --> 00:15:47,620
+Ana belleğe getirilmek üzere bir işletim sisteminden yer isteyeceğiz, frame isteyeceğiz. Eğer frame verebiliyorsa ne ala, frame veremiyorsa mevcut frame'lerden bazılarını çıkartmamız gerek.
+
+74
+00:15:48,260 --> 00:15:59,020
+Burada da acaba çıkarırken, prosesin frame'lerinden birini mi çıkaralım yoksa başka proseslerin frame'lerinden birini mi çıkaralım diye bir basit bir soru aklımıza gelebilir.
+
+75
+00:15:59,680 --> 00:16:02,280
+Öyle değil mi? Yani bize frame lazım, boşluğunda frame yok.
+
+76
+00:16:02,676 --> 00:16:10,995
+Ne olacak? Ya kernel'dan alacaksın ki kernel, yani o konuda kendisine bir ortak kabul etmeyecektir ve frame veremeyecektir büyük ihtimalle.
+
+77
+00:16:10,995 --> 00:16:19,316
+Diğer proseslerin, didiksel bellek alanlarından bir şey vermeye çalışılabilir veya kendi prosesimizden verilebilir.
+
+78
+00:16:19,316 --> 00:16:26,196
+Dolayısıyla burada da ne olacak? Kendi prosesimizden alacaksak ya A'yı, ya C'yı, ya da F'yi çıkartmak zorunda kalacağız.
+
+79
+00:16:26,196 --> 00:16:29,395
+Bu çıkartacağımız şey de kurban, victim diyoruz.
+
+80
+00:16:29,556 --> 00:16:30,976
+Ona da geleceğiz birazdan.
+
+81
+00:16:31,596 --> 00:16:33,636
+Page fault'u burada söylemiş olduk.
+
+82
+00:16:34,296 --> 00:16:37,536
+Biraz önce bahsettiğimiz aşamalı şey şurada görüyoruz.
+
+83
+00:16:37,916 --> 00:16:51,436
+Tabi burada bir adrese ulaşmak istediğimizde, ana belliğe ulaşmak istediğimizde, örneğin bir frame varsa, ulaşmaya çalıştığımız yerde doğruna ana bellekte varsa sıkıntı yok dedik.
+
+84
+00:16:52,016 --> 00:16:54,556
+Ama ana bellekte yoksa ne yapacağız? Bunu getireceğiz, getireceğiz.
+
+85
+00:16:57,375 --> 00:17:02,415
+Page tablomuzdaki invalid biti ile karşılaşıyoruz.
+
+86
+00:17:03,055 --> 00:17:06,096
+Invalid biti ile karşılaştığımız için Page Replacement yapacağız.
+
+87
+00:17:06,855 --> 00:17:13,895
+Bu Page Replacement yaptıktan sonra tekrar valid durumuna geçiyoruz ve instruction'ı burada tekrar başlatıyoruz.
+
+88
+00:17:14,135 --> 00:17:22,415
+Şimdi bu instruction'ın tekrar başlaması yerine göre çok sıkıntısız bir şey ama yerine göre sıkıntılı bir şey.
+
+89
+00:17:23,380 --> 00:17:28,880
+Bununla alakalı bir kitabımızda da bir örnek var. Onu detaylı olarak size göstereceğim arkadaşlar.
+
+90
+00:17:29,880 --> 00:17:32,579
+Yerine göre sıkıntıdan bahsettiğimiz şey ne olabilir?
+
+91
+00:17:33,440 --> 00:17:39,500
+Örneğin mu, ax virgül, 1, 2, 3, 4 diye bir tane komutumuz var.
+
+92
+00:17:40,140 --> 00:17:42,760
+Ve bu kabul edelim ki 500. komut olsun.
+
+93
+00:17:43,940 --> 00:17:45,180
+500. komut.
+
+94
+00:17:45,715 --> 00:17:51,895
+Herhangi bir page'de duruyla sonuçta bunun bir frame'de olması lazım. Kabul edelim ki frame'imiz yok.
+
+95
+00:17:52,996 --> 00:17:57,435
+Program counter 500 adresini gösterdiğinde biz o frame'i bulamıyorsak ne olacak?
+
+96
+00:17:57,536 --> 00:18:01,655
+Ana belliğe tekrardan o frame'in yer açılıp gelmesi lazım.
+
+97
+00:18:02,496 --> 00:18:06,255
+Program counter tekrar bize 500 adresini gösterecek. Tekrar o adrese ulaşacağız.
+
+98
+00:18:07,596 --> 00:18:11,536
+Ama burada olay biraz daha karmaşık olsa, örneğin move.
+
+99
+00:18:12,339 --> 00:18:16,539
+A, B, C gibi bir şey. Hatta muğdemeyelim de A diyelim.
+
+100
+00:18:17,559 --> 00:18:18,400
+F diyelim, pardon.
+
+101
+00:18:21,259 --> 00:18:24,839
+A ile B'deki değeri al, C'ye ekle gibi bir komutumuz olsun.
+
+102
+00:18:25,639 --> 00:18:30,980
+Şimdi bu komutu getirecek, A'yı getirecek, B'yi getirecek, ikisini toplayacak sonra C'ye de geri yazacak.
+
+103
+00:18:31,719 --> 00:18:35,659
+Şimdi komutu getirmek bir adım, A'yı getirmek bir diğer adım, ikinci adım.
+
+104
+00:18:36,115 --> 00:18:42,755
+B'yi getirmek, üçüncü adım, C'ye de geri yazmak, toplayıp geri yazmak, dördüncü hatta beş adımlı bir süreçten bahsediyoruz.
+
+105
+00:18:42,956 --> 00:18:46,496
+Bir komut kendi başına pek beş tane işlem yapabiliyor.
+
+106
+00:18:47,016 --> 00:18:51,275
+Şimdi siz bu beş adımlı işlemin ilk dört adımlı herhangi bir page fault olmadan yaparsanız,
+
+107
+00:18:51,895 --> 00:18:55,456
+ama beşinci adıma geldiğinizde bir page fault oluşursa ne olacak?
+
+108
+00:18:56,215 --> 00:19:00,255
+Bunun restart edilmesi bayağı maliyetli bir şey. Her şeyi tekrardan baştan yapmanız gerekiyor.
+
+109
+00:19:00,775 --> 00:19:03,135
+İşte buna da birazdan kitabımızdaki örnekten bakacağız.
+
+110
+00:19:03,667 --> 00:19:06,327
+Buradaki az bahsettiğimiz şey biraz önce konuştuğumuz.
+
+111
+00:19:07,127 --> 00:19:08,447
+Semaphore gösterimi.
+
+112
+00:19:09,248 --> 00:19:10,788
+Bir yere referans ediyoruz.
+
+113
+00:19:11,047 --> 00:19:13,327
+Eğer bu inveil ise bir trap oluşuyor.
+
+114
+00:19:13,507 --> 00:19:15,027
+Bu trap oluşması ne demek?
+
+115
+00:19:15,827 --> 00:19:17,647
+Yani öyle bir şey bellek de yok.
+
+116
+00:19:18,487 --> 00:19:20,467
+Bakın burada abort durumundan bahsetmiyoruz.
+
+117
+00:19:20,607 --> 00:19:23,967
+Abort durumuysa o hiç olmayan bir yere ulaşmak demek.
+
+118
+00:19:24,447 --> 00:19:26,907
+Program counter yanlış bir adres göster demektir.
+
+119
+00:19:27,367 --> 00:19:29,987
+O doğrudan programın kapatılmasıyla bile sonlanabilir.
+
+120
+00:19:31,635 --> 00:19:36,435
+Programımızın içerisinde var olan bir adresimiz var ama o şu an ana bellekte değil.
+
+121
+00:19:36,435 --> 00:19:42,435
+Trap oluşuyor. Trap oluştuktan sonra işletim sistemi bir tane boş frame buluyor, boş frame getiriyor.
+
+122
+00:19:42,435 --> 00:19:46,036
+Buradaki invalid, valid yapıyor ve instruction tekrardan başlatıyor.
+
+123
+00:19:48,036 --> 00:19:58,435
+Şimdi, burada extreme bir case olarak, processleri, en kötü durum analizi şeklinde düşünebiliriz.
+
+124
+00:19:58,708 --> 00:20:14,088
+Bütün prosesleri herhangi bir page'i olmayacak şekilde başlattık. O zaman ne olacaktır? İlk instruction çalıştırıldığında bir page hatası, sonra ikinci de tekrar bir page hatası, sonra bu page hataları biraz artacak, artacak ve daha sonra azalacak.
+
+125
+00:20:14,088 --> 00:20:20,508
+Buna pure demand page'i diyoruz. Başlangıçta hiçbir prosese ne vermemek? Frame vermemek.
+
+126
+00:20:20,864 --> 00:20:46,543
+İhtiyaç oldukça çağıracağız. Prosesler running duruma falan gelmedi daha. Sadece açıldı ama sanal bellekte bekliyor. Ne zaman ki işletim sistemi, işlemci o prosesi alıp işlemek üzere bir komut veya bir adres üretecek, işte o üretilen adrese sonuçta bellekte yer verilmesi lazım. O zaman bir page fault, ardından o page fault'un giderilmesi gibi durumlar söz konusu.
+
+127
+00:20:47,316 --> 00:21:06,456
+Bu tabi pür diment paging çok fazla tercih edilen bir şey değil. Onun yerine, proseslere belli miktarda yer atanması söz konusu. Bu miktarın büyüklüğü, hangi prosesle ne kadar frame atayalım proses başladığında, o da birazdan konuşacağımız şeyler olacak.
+
+128
+00:21:09,436 --> 00:21:12,895
+Instruction'ın restart edilmesi, biraz önce bahsettiğimiz şeyin aynısı.
+
+129
+00:21:13,428 --> 00:21:35,428
+Demand Paging'in performansına baktığımızda en kötü durumda olacak şey, burada yine biraz önce söylediğim şeyin daha detaylısı var. İşletim sistemine bir trap oluşturuyorsunuz. İşletim sistemi trap oluşturulduğunda mevcut o komut çalıştırılamayacaktır. Belki o anda işletim sistemi işlemciyi başka bir prosesi tahsis etmek isteyecek veya bir...
+
+130
+00:21:35,892 --> 00:21:43,692
+Bellek'te yer değiştirme yapacak. Mevcut registerların, process'in kaydedilmesi, yani şuradaki işlem.
+
+131
+00:21:43,692 --> 00:21:51,692
+Burada oluşturulan trap'in nasıl bir trap olduğu ve bu bir page fault ile nasıl bir page fault olduğuna karar verilmesi.
+
+132
+00:21:51,692 --> 00:22:01,292
+Bu karara göre bellek'ten ilgili page'in alınıp bir frame'e aktarılması, okuma yazma işlemlerinin yapılması gibi. Bakın burada.
+
+133
+00:22:01,428 --> 00:22:05,848
+Yaklaşık 12-13 tane adım daha devam eden bir şey var. Bu da bizim neyimizi etkiliyor arkadaşlar?
+
+134
+00:22:06,668 --> 00:22:16,008
+Çalıştırmak istediğimiz bir komut var ama bu komut bellekle değilse bizim normalde memori akses için geçen derste konuştuğumuz bir şeyimiz vardı.
+
+135
+00:22:16,827 --> 00:22:20,148
+Belliğe erişebildik veya erişemedik bununla alakalı şeyimiz vardı.
+
+136
+00:22:25,715 --> 00:22:38,295
+Sanal bellekten ana belleğe getirilmesi, yani frame olarak getirilmesi, bunu yaparken de bir başka page'in sanal belleğe tekrar yedeklenmesi için ekstra süreler gerekiyor.
+
+137
+00:22:39,015 --> 00:22:50,095
+Tabii bu en kötü durum. Neden en kötü durum? Page istiyoruz, o page'e yer yok, page'in ana bellekte durumu yok, resident değil.
+
+138
+00:22:50,644 --> 00:22:55,044
+O page'i getirmek istiyoruz ama getirmek istediğimiz yer de yok. O zaman birini çıkartacağız.
+
+139
+00:22:55,764 --> 00:23:02,484
+Çıkartmak istediğimiz page, eğer üzerinde bir değişiklik yapıldıysa geri yazılması lazım.
+
+140
+00:23:02,784 --> 00:23:06,224
+Hem geri yazmak için hem de geri getirmek için, diğer page'i geri getirmek için,
+
+141
+00:23:06,903 --> 00:23:10,844
+web page out ve web page in gibi sürelerin de buraya eklenmesi gerekiyor.
+
+142
+00:23:10,944 --> 00:23:14,144
+Page fault hatasına göre tabii bu değişecektir.
+
+143
+00:23:15,476 --> 00:23:24,096
+Memory'e erişim süremizin 200 nanosaniye olduğu durumda ve page fault servis süresinin 8 milisaniye olduğu duruma bakıyoruz.
+
+144
+00:23:24,696 --> 00:23:30,776
+Bakın, birisi nanosaniye, öbürü milisaniye. Ne öyleyse bin katlı bir süremiz var.
+
+145
+00:23:41,044 --> 00:23:49,984
+Bellekten getirip bir frame'e yazmak, mevcut frame'deki bir page'i de tekrardan ana belleği yazmak için, virtual belleği yazmak için gerekli bir süre olacak.
+
+146
+00:23:50,104 --> 00:23:56,544
+İki katı bir şey olacak ve bu kırk kata kadar bir yavaşlama size sağlıyor.
+
+147
+00:23:57,384 --> 00:24:06,424
+Tabii kırk kata kadar yavaşlama şu, eğer bin tane page talep ediyorsan ve bu bin taneden bir tanesi, yani binde bir oranında şu p değeri
+
+148
+00:24:06,932 --> 00:24:15,111
+gerçekleşiyorsa, aslında küçük bir değer gibi görünüyor ama o binde birlik oran sizi kırk kata kadar yavaşlatmak istiyor.
+
+149
+00:24:15,111 --> 00:24:28,611
+Eğer performans degradation'ını yani bozulmasını yüzde ondan aşağıya tutarsanız, bunun olması için kırk kat değil de yüzde onun altında bir değere düşürmek istiyorsanız,
+
+150
+00:24:33,203 --> 00:24:41,644
+Ancak page fault hatası olursa bu kabul edilebilir bir access time olacak şekilde hesaplar yapılmış.
+
+151
+00:24:43,344 --> 00:24:48,663
+Bununla alakalı bazı optimizasyonlar söz konusu. Şimdi onlara geleceğiz.
+
+152
+00:24:49,624 --> 00:24:55,683
+Mesela mobil sistemlerde bunun olmayacağını, sürekli belleğe okuma yazmanın uygun olmadığını konuşmuştuk.
+
+153
+00:24:56,943 --> 00:24:59,864
+Şimdi gelelim bunlardan bir tanesine copy on write.
+
+154
+00:25:00,531 --> 00:25:21,531
+Az önce söylediğim şeyi tekrar, formülü tekrar düşünün. Bir page'i istiyoruz, o page bellekte yok. Ve bellekten, belleğe getireceğiz ama bellekte yer de yok. O zaman bir tane frame'i çıkartacağız. Şimdi şunu düşünelim. Bu çıkartacağımız frame eğer ki...
+
+155
+00:25:22,132 --> 00:25:33,071
+Ortak bir şeyse, işte parallel chart ilişkisiyle oluşturulmuş bir şeyse, ortak bir şeyse, bunu tekrar tekrar götürüp yazmaya gerek yok.
+
+156
+00:25:33,912 --> 00:25:40,491
+Üzerine tekrardan bunu yazabiliyoruz. Bir de değiştirilmemişse, değiştirilmemiş, yani birazdan modifiye bit gelecek.
+
+157
+00:25:41,271 --> 00:25:45,771
+Hala hazırda ana bellekte bir frame'de bir yerimiz var, bir page'imiz var.
+
+158
+00:25:46,228 --> 00:25:56,067
+Bunun üzerinde herhangi bir değişiklik yapmamışız. Özellikle okuma amaçlı kullanmışız. Bu kullandığımız şey değiştirmemese tekrardan yazmaya gerek yok sanal belli.
+
+159
+00:25:56,067 --> 00:26:03,788
+O zaman yazma süresini, burada, iki şey süresini pardon, şuraya geleceğiz.
+
+160
+00:26:05,567 --> 00:26:10,827
+Swap page out süresini devreden çıkarttık. Bu ciddi bir kazanç sağlar.
+
+161
+00:26:13,683 --> 00:26:21,764
+Burada işte process 1 ve process 2 birbiri arasında page A, page B ve page C'yi ortak şekilde kullanıyorlar.
+
+162
+00:26:23,084 --> 00:26:31,483
+Ama bunlardan herhangi bir tanesi page'ler üzerinde şu an ilk başta ikisinin de read hakkı olduğunu düşünün.
+
+163
+00:26:31,963 --> 00:26:36,663
+Ama daha sonra bunlardan herhangi bir tanesi bir tane page'i değiştirmek istiyor. Örneğin C'yi.
+
+164
+00:26:36,663 --> 00:26:38,324
+O zaman A ve B.
+
+165
+00:26:39,412 --> 00:26:43,551
+Tabi yerimiz olduğu için burada ne yapacağız? Kopyasını alabiliyoruz. Buna copy on write diyoruz.
+
+166
+00:26:44,211 --> 00:26:49,632
+İhtiyacımız olan diğer page A ve page B'nin tekrardan kopyalamasına burada gerek olmuyor. Bu bir iyileştirme.
+
+167
+00:26:51,031 --> 00:27:04,632
+Free frame olmadığı durumda peki? Yani bu kadar işlem yapıyoruz ama boş frame'imiz yoksa, o zaman bizim birkaç tane, en azından bir tane frame'imizi boşaltıp başkasına almamız gerekecek.
+
+168
+00:27:06,163 --> 00:27:22,884
+Bunu yapmadan önce de o frame'in daha önce değiştirilmediğini, modifiye edilmediğini kontrol edip, eğer modifiye edilmediyse diske tekrar yazdım. Modifiye edildiyse, değiştirildiyse tekrardan diske yazalım diye bir şey bakıyoruz.
+
+169
+00:27:25,403 --> 00:27:33,483
+Burada da bundan bahsediliyor arkadaşlar. Örneğin şu an işletim sistemimiz 0 ve 1 nolu frame'leri işgal ediyor. Kernel'ımız burada.
+
+170
+00:27:34,579 --> 00:27:49,859
+Diğer, işte ABDE, HM, JM gibi bazı, işte iki tane proses var. İki tane prosesin belli page'leri fiziksel bellek üzerinde duruyor. Ama bütün page'leri fiziksel bellekte değil.
+
+171
+00:28:01,844 --> 00:28:29,324
+Hangi şey aktarmış? 4. Bu aslında burada valid durumda. Hani erişilebilir. O zaman gidecek, buradan buna erişecek. Ama örneğin burada buna karşılık, örneğin şunu istesek, bunu istediğimizde örneğin, önce istenilen şey şey olsun, user1'in load m'sini, işte birinci pejinden bir adresi hedefliyoruz. O bellekte, onu doğrudan eriştik.
+
+172
+00:28:29,779 --> 00:28:45,519
+Sonra User 2'nin birinci page'inden bir yere erişmeye çalıştığımızda bu invaded durumda. Inverted durumda olduğu için, zebellekte de boş yer olmadığı için ne yapacağız? Bir tanesini dışarıya atacağız. Buna bir page replacement ihtiyacı konusu diyoruz.
+
+173
+00:28:46,299 --> 00:28:54,359
+Bunu da söyledim. Yani genel işleyiş burada. Page varsa sıkıntı yok.
+
+174
+00:28:55,059 --> 00:29:11,500
+Yani page için, page hali hazırda bellekte ise sıkıntı yok. Özetleyelim tekrardan. Bellekte değilse git, eğer boş yer varsa o boş yere getir. Boş yer yoksa bir tanesini kurban seç, tekrardan onları yerleştir. Şurada olduğu gibi.
+
+175
+00:29:12,500 --> 00:29:22,920
+Şimdi burada page replacement aslında bir anlamda frame replacement yapıyoruz. Bazı algoritmalar,
+
+176
+00:29:23,508 --> 00:29:48,907
+tasarlanmış. Bu algoritmaların başarımını etkileyen bir metrik ortaya koyacak olursak, işte process scheduling veya diğer algoritmaların bir sonuçta metriği vardır. Burada da bizim metriğimiz, page replacement algoritmalarımız ne kadar az, page fault hatası oluştursa bizim için o kadar başarılıdır diyoruz.
+
+177
+00:29:51,412 --> 00:29:56,332
+Frame Allocation algoritması olarak da aslında isimleniliyor.
+
+178
+00:29:57,592 --> 00:30:03,172
+Pardon, Frame Allocation algoritmaları, birazdan da gelecek ama şimdiden söyleyelim.
+
+179
+00:30:04,392 --> 00:30:09,672
+Elimizde N tane proses var ve M kadar page'imiz var.
+
+180
+00:30:10,971 --> 00:30:16,491
+Bu kadar page'i proseslere nasıl atayalım? Frame Allocation buna kararlıyız.
+
+181
+00:30:17,364 --> 00:30:22,044
+Normalde bunu eşit yapabiliriz. Her prosesle eşit davranabilir.
+
+182
+00:30:22,044 --> 00:30:29,244
+Veya işte priority-based bir şey yapılabilir. Bu sayısını ifade ediyor. Bu sayıyı belirledikten sonra
+
+183
+00:30:29,244 --> 00:30:36,324
+eğer ki siz Page Replacement'ı prosesin kendi frame'leri arasında gerçekleştirecekseniz
+
+184
+00:30:36,324 --> 00:30:40,604
+bu kolay. Hani beş tane frame atadınız.
+
+185
+00:30:40,852 --> 00:31:00,172
+Elimizde de 10 çeşit page'iniz var. O zaman ne olacak? Bu 10 tane page bir şekilde zamana göre, zaman akışına göre ya ana bellekte ya da virtual bellekte saklanacak. Arada bir page fault hatası olacak mı bu işlemi yaparken? Elbette olacak. Neye göre olacak? İhtiyaca göre olacak.
+
+186
+00:31:07,988 --> 00:31:32,927
+0.1.2.3.7.ye kadar page'lerine ihtiyaç duyulmuş. Bakın burada 0'dan 7'ye kadar varsa 5.page, 6.page yer almamış. Almak zorunda değil. Belki o hiç ihtiyaç duyulmayacak bir şey olabilir.
+
+187
+00:31:33,556 --> 00:31:40,276
+Bir program yazıldığında hiç bu ihtiyaç duygu bile program bölgesi veya pejeler nerede olabilir? Ne ile alakalı?
+
+188
+00:31:40,276 --> 00:31:42,276
+Ne?
+
+189
+00:31:44,836 --> 00:31:46,675
+Ne için kullanıyor mesela?
+
+190
+00:31:52,996 --> 00:31:58,516
+Kabaca şöyle söyleyelim. Biz bir program yazarken her zaman işte baştan aşağıya...
+
+191
+00:31:58,804 --> 00:32:20,544
+Her şey yolunda gidecekmiş gibi kod yazmayız. Yerine göre hatadan, exception'dan kaçınmak veya exception'i handle etmek için try-catch yazarsın, if'ler yazarsın, şartlar yazarsın ve belli kod bloklarıyla istisnai durumlarda oluşacak bazı program parçacıkları yapılır.
+
+192
+00:32:20,948 --> 00:32:29,468
+Örneğin program beklenmedik bir şekilde kapatılırsa şu ana kadar açılı dosyalar kapansın, bellekler iade edilsin diye kod partiler yazılır.
+
+193
+00:32:29,588 --> 00:32:31,848
+Etekli bir fonksiyonu mesela bunu sağlıyor.
+
+194
+00:32:32,548 --> 00:32:39,928
+Şimdi bu fonksiyonun çalışması normal diğer kodların çalışması kadar sürekli olacak veya çok yoğunlukla olacak bir şey değil.
+
+195
+00:32:40,068 --> 00:32:41,768
+Ancak istisnaya durmuyor, yüzde bir.
+
+196
+00:32:42,387 --> 00:32:49,288
+Böyle bir program çalıştırdınız ki şurada belki o tarz bir program parçasının hiçbir zaman ihtiyaç duyulmamış.
+
+197
+00:32:50,008 --> 00:32:58,087
+Her zaman size elbette page olarak yani sanal olarak programınızın uzunluğu kadar bir yer atanacak.
+
+198
+00:32:58,208 --> 00:33:01,827
+Onda sıkıntı yok ama bunun hepsini her zaman kullanacağınız anlamına gelmiyor.
+
+199
+00:33:01,927 --> 00:33:03,748
+Ki burada bunun basit bir örneğini görüyoruz.
+
+200
+00:33:04,084 --> 00:33:11,584
+Önce 7. page'deki bir adrese ihtiyaç duyduğumuz. Sonra 0'a, sonra 1'e, sonra 2'ye. Ve bu şekilde devam ediyor referans string gibi.
+
+201
+00:33:12,084 --> 00:33:29,584
+Referans string üzerinden şuna bakıyoruz. Normal şartlarda bir prosese ne kadar fazla page verirsek, frame verirsek atarsak, olabilecek page fault hatası bir derece iyileşiyor. Bir yere kadar iyileşiyor. Örneğin,
+
+202
+00:33:29,711 --> 00:33:35,312
+Her prosese bir frame verdiğimizde yaklaşık 12-13'lük bir deneysel sonuç elde edilmiş.
+
+203
+00:33:35,852 --> 00:33:41,211
+Bu ne demek? Sizin bir tane bellekte yeriniz var fiziksel olarak.
+
+204
+00:33:41,872 --> 00:33:44,751
+7'ye ihtiyaç duyuyorsunuz. 7 şu an bellekte mi? Değil.
+
+205
+00:33:45,751 --> 00:33:48,511
+Bir page fault atası. 7'yi getirdiniz.
+
+206
+00:33:49,451 --> 00:33:54,672
+Sonra 0'a ihtiyaç duydunuz. 0 bellekte mi? Değil. İkinci page fault atası.
+
+207
+00:33:55,039 --> 00:34:03,539
+7'yi çıkarttınız, 0'ı getirdiniz, 1'e ihtiyaç duyduğunuz, 1 bellekle mi değil, 3. page fault hatası. Bu bu şekilde devam edip gidiyor.
+
+208
+00:34:04,059 --> 00:34:14,199
+Page fault hatası ne zaman olur? Üst üste 2 defa bu durumda, hani 1 tane frame'imiz olduğunda, 2 tane page'i, aynı page'i ihtiyaç duyarsa, ancak o zaman olmayacak.
+
+209
+00:34:14,640 --> 00:34:17,760
+Ama buradaki durumda sürekli bir page fault hatası ile karşılaşacağız.
+
+210
+00:34:19,159 --> 00:34:20,300
+Peki bunu 2 yaparsak?
+
+211
+00:34:20,820 --> 00:34:46,820
+PageFault hatası ne olur? Bayağı iner. Tabii yarı yarıya kadar yarıya inmeyecektir belki ama ne olacak? Biraz öncekinden çok çok daha fazla olacak. Mesela burada 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22 defa page isteğimi de olmuş. Eğer ben bir tane frame koyarsam PageFault'um 22 defa olacak. Ama 2 yaparsam
+
+212
+00:34:46,996 --> 00:35:02,996
+Yani 11'e kadar inebilir. 11 olacak diye bir şey yok. Çünkü 7, 0'ı koyuyorsun. Sonra 1, 2'yi koyuyorsun. Sonra 2'den sonra öyle bir şey var ki mesela 0, 3'ü koydun. Şurada 0'a tekrar ihtiyacı var. Halbuki içeride çok sıkıntı olmayacak.
+
+213
+00:35:03,956 --> 00:35:13,416
+Bu bize bunu söylüyor. Biraz frame sayısını arttırdıkça bu page fault hatası az olacak. Ama bir yerde de sabit olacak.
+
+214
+00:35:13,907 --> 00:35:39,387
+Mesela 5 tane page'imiz olsun. En iyi durumdan bahsedelim burada. İşte 0, 1, 3, 4, 5 ve referans stringimiz şöyle olsun. 0, 7, 3, 4, 6, 4, 7, 0, 3, 6, 5, 0, 4, 5. Şimdi burada kaç çeşit page'e ihtiyaç duymuş? Biz 0'a, 7'ye, 3'e, 4'e ve 6'ya.
+
+215
+00:35:39,731 --> 00:35:47,731
+Yani 6. çeşit bir page'e ihtiyaç duymamış. Dolayısıyla 0'da bir page hatası ilk başta boş olduğu için gelecek.
+
+216
+00:35:47,731 --> 00:35:59,731
+7'de gelecek, 3'de gelecek. Yani 0 geldi, 7 geldi, 3 geldi, 4 geldi, 6 geldi diyelim. Şunlarda da gelecek. Bakın bu page fault hatası yerden sonra ne oluyor? Draw anlaşıyor.
+
+217
+00:35:59,731 --> 00:36:04,715
+Dolayısıyla bizim frame sayımızı ne kadar arttırırsak arttıralım.
+
+218
+00:36:04,884 --> 00:36:25,423
+İlk başta bütün process pageleri bellekte değilse, en azından şuradaki şeyin sayısı ve bize verilen frame'in miktarı adedince buna bakaraktan bir yere kadar azalacaktır. Sıfır olmayacaktır. Çünkü başlangıçta en azından page fault hatası almamız söz konusu.
+
+219
+00:36:26,387 --> 00:36:40,087
+Şimdi algoritma açısından bakmıyoruz. PIPO en eski kullanılan frame'leri kurban olarak seçerim. O frame'i boşaltırım ve oraya ilgili page'i aktarırım. Eğer bir page hatası alırsam mantığıyla çalışıyor.
+
+220
+00:36:40,247 --> 00:36:50,887
+Şimdi kabul edelim ki bize 3 tane frame verilmiş. Bu 3 tane frame için ilk başta 7'ye ihtiyaç duyuluyorsa 7 bellekte değil 5 fault var mı? Var.
+
+221
+00:36:51,411 --> 00:36:55,271
+İşte burada bir page fault hatası oldu. Mavi ile gösterenler page fault hatası.
+
+222
+00:36:56,152 --> 00:37:03,431
+Sıfır için aynı durum söz konusu, bir için aynı durum söz konusu, iki için yine page fault hatası oldu.
+
+223
+00:37:03,591 --> 00:37:06,791
+İşte asıl burada page replacement devreye giriyor.
+
+224
+00:37:07,371 --> 00:37:14,091
+Hocam bellekte daha bir sürü dolu yer var. Niye bunlar arasında page replacement yapıyoruz diyebilirsiniz.
+
+225
+00:37:14,091 --> 00:37:17,612
+Şu an lokal bir page replacement'dan bahsediyoruz.
+
+226
+00:37:17,940 --> 00:37:35,300
+Bir proses kendisine tahsis edildiği frame kadar ancak belleten yer kullanabilir. Daha fazlasını kullanma hakkına sahip değil. Dolayısıyla burada üç tane atandıysa bu üçün dışında bir yere ihtiyacı bir yere erişemiyor. Dolayısıyla iki geldiğinde ne olacak? Birini çıkartacağız.
+
+227
+00:37:40,672 --> 00:37:57,112
+Kullanılmayan kim var? Şimdi bir çok yakın kullanılmış, sıfır çok yakın, yedi daha geride. O zaman yedi'yi çıkartıyoruz. Sonra sıfıra ihtiyaç duyduğunda herhangi bir page fault atası olmuyor. Sonra üçe ihtiyaç duyduğunda page fault atası yeniden oluyor. Sıfırı yeni kullanmıştık.
+
+228
+00:37:58,420 --> 00:38:08,340
+2'yi biraz daha geride kullandık. 1'i en geç kullandık. Yani 2, 3 ve 1'den en geride olan 1 olduğu için 1'i çıkarttık.
+
+229
+00:38:11,340 --> 00:38:25,340
+Hayır, burada... Pardon. Evet, geriye doğru baktığımızda... Evet, şimdi şurada 3 geldi. Tamam, doğru diyorsun. Geriye doğru baktığımızda FIFO 3 gelen alınacağı için...
+
+230
+00:38:25,503 --> 00:38:48,503
+Bunu doğru dökülttük. Bakın bir page fault hatası daha oldu. Bu şekilde devam edip gidiyor. Ve bu toplamda 15 tane page fault hatası buradaki şey üzerinde gerçekleştirmiş. Mesela bu değer, page'lere erişim değeri şöyle bir şey olduğunda değişebilir. Şimdi biraz önceki...
+
+231
+00:38:48,916 --> 00:38:59,996
+Şeye baktığımızda, şuradaki page number of frame'i arttırdığında da, page fault'un da belli bir oranda azalacağını ama bu azalışın dikkat ederseniz burada temiz bir halini görüyoruz.
+
+232
+00:39:00,636 --> 00:39:09,236
+Page number of frame arttığında, page fault da belirgin bir şekilde ve düzgün bir şekilde böyle dalgalanmadan azalıyor.
+
+233
+00:39:12,820 --> 00:39:20,940
+Beledi anomalisi dediğimiz, şurada görüntülen bir şey, frame'leri arttırdığınızda belli bir yerde artış, belli bir yerde azalış oluyor.
+
+234
+00:39:21,400 --> 00:39:28,700
+Çünkü şuradan geriye doğru baktığınızda siz en son kullanıladığı ilk gelenleri dikkat alıyorsunuz.
+
+235
+00:39:28,700 --> 00:39:31,180
+Yani bu 7 ilk gelmiş, sonra 0 ilk gelmiş.
+
+236
+00:39:32,700 --> 00:39:39,740
+Dolayısıyla geçmişe bakarak geleceğe yönelik karar vermede çok isabetli şeyler olmuyor ve böyle bir anomali meydana gelmiş.
+
+237
+00:39:40,403 --> 00:40:04,224
+Bir de hangi prosesin, burada PIPO mantığını kullanacağız dedik, yani bir aklına kuyruk gibi bir şey var. Nasıl saklanacağı, kimin çıkartılması gerektiği için. Ayrıca bir donanımsal desteğe ihtiyaç var veya bir ekstra veri yapısına ihtiyaç var. Bu algoritma hem böyle bir anomaliye takılıyor, hem page fault hatası fazla, hem de ekstra bir desteğe ihtiyaç duyuyor.
+
+238
+00:40:08,500 --> 00:40:28,500
+Tabi diğer algoritmaları karşılaştırmak için kullandığımız bir algoritma. Başarım açısından. Gelecekte en son ihtiyaç duyulacak veya en geç ihtiyaç duyulacak frame'i boşaltayım veya page'i çıkartayım. O frame boş kalsın. Dolayısıyla ona baya bir ihtiyacım olmayacak. Bu benim...
+
+239
+00:40:29,204 --> 00:40:36,924
+Şimdi daha iyi bir algoritma diye düşündüğümüz bir şey. Bu düşünen algoritma diğer algoritmaları kıyaslamak için kullanılan bir yaklaşım.
+
+240
+00:40:37,524 --> 00:40:46,744
+Ve 7, page fault atası oluşturdu, 0 oluşturdu, 1 oluşturdu. Şimdi 2 getirmek istediğimizde. Burada geleceğe yönelik bakıyoruz.
+
+241
+00:40:47,844 --> 00:40:56,084
+7, 0 ve 1'den en geç ihtiyaç duyulacak gelecekte kim var? 7 var. 0'a hemen bakın ihtiyaç duyuyoruz.
+
+242
+00:40:57,012 --> 00:41:18,552
+Ondan sonra 1'e, ondan sonra şurada ihtiyaç duyuyoruz. Ama 7'ye epeyce ihtiyacımız yok. O zaman 7'yi çıkartıyoruz. Diğerleri de aynı şekilde gidiyor. Bakın burada aynı string üzerinde 9 tane page fault hatasına kadar bir durum olabiliyormuş bu string üzerinde.
+
+243
+00:41:20,436 --> 00:41:38,836
+Tabii bunu gerçekleştirmek mümkün olmadığı için buna yakın olan, hani geçmiş geleceğin birazcık habercisidir mantığımdan yola çıkarak, son zamanlarda işte en yakın kullanılanı yok edeyim mantığıyla çalışan bir şey.
+
+244
+00:41:39,396 --> 00:41:43,696
+Tabii bunun için de ekstra donanım ihtiyacı olacak.
+
+245
+00:41:44,192 --> 00:42:09,192
+7 geldi, 0 geldi, 1 geldi. Bunlar page fault datası. Şimdi 2'yi getirdiğimizde birisiyle yer değiştireceğiz. Bunlar arasında en az recent olarak, least recent olarak kullanılan 7. Yani 7, 0 ve 1 içerisinden en ilk safalarda kullanılan diyelim 7'yi çıkartıyoruz. Sonra 0'da sıkıntı yok. 3 geldiğinde...
+
+246
+00:42:10,164 --> 00:42:35,704
+2-0 ve 1'den, yani 3 geldiğinde şu 2-0 ve 1'den hangisi en geç kullanılmış? 0 hemen burada, 2 burada, 1 biraz daha geç. Bakın biraz önce PIPO'da tam başa gidiyorduk. Burada aslında şuradan geriye doğru gidiyoruz, kremlere. Ve buradan 1'i çıkartıyoruz. Bu şekilde gidiyor. 12 page fault atası oluyormuş. Biraz önceki PIPO 15'ti, optimal 9'du.
+
+247
+00:42:36,467 --> 00:42:52,907
+Peki, bunu nasıl implement edebiliriz? Yani, process'in page'leri arasında ihtiyaç duyulan tamam 3 var da, bunlar arasında hali hazırda 2.0 ve 1'den, şunlardan least recent news'in olanı nasıl bulabiliriz?
+
+248
+00:42:52,907 --> 00:43:00,047
+Şimdi burada counter implementation ile stack implementation dediğimiz, ikisi de donanım ihtiyacı gerektiren.
+
+249
+00:43:00,692 --> 00:43:20,132
+bir şeye ihtiyaç var, bir yapıya. Counter. Her page için bir counter değeri tutuyorsunuz. Bu page'lere referans verildiğinde counter değerini arttırıyorsunuz. Ve bu sayede en az değeri çıkartabiliyorsunuz.
+
+250
+00:43:23,603 --> 00:43:47,324
+İlk ihtiyaç duyulan siteyin en altında oluyor. Sonra ihtiyaç duyulan üstüne geliyor. Dolayısıyla siteyin tepesinde olan şey en yakın kullanılanlar. Siteyin altında olanlar en dipte olanlar da diyecek. Fakat bunu siteyin en altındaki elemanı çıkartacağız ya, yani victim olarak seçeceğiz, onu çıkartıp o siteyi güncellemek birazcık maliyetli bir şey.
+
+251
+00:43:47,956 --> 00:44:12,195
+Çünkü siteğin altından bir elemanı çıkartmak çok yaptığımız bir şey değil. Genelde siteğin tepesine ekleriz, tepesinden çıkartırız. Çok kullanıldığı durumlar olmamış. Burada LRO ve Optimum algoritmalar, stack algoritması, stack ile beraber kullanıldığında beladip anomalisine takılmamışlar. Örneğin burada stack uygulamasını görüyoruz. Bakın şuraya kadar.
+
+252
+00:44:12,947 --> 00:44:31,208
+Stay'in durumu A'dan önce, burada baktığımızda en geç 4'ü kullanmışız. Sonra 7'yi kullanmışız. İlk safhalarda sonra 0, sonra 1'i kullanmışız. Ondan sonra 2 var.
+
+253
+00:44:31,208 --> 00:44:37,208
+Şimdi biz buradan buraya geçiş, A durumundan B durumuna geçiş yapmak istediğimizde,
+
+254
+00:44:38,032 --> 00:44:46,632
+Ne olacak? Bir tanesini de çıkartacaksak, stay'in durumu ne hale geliyor? Bu şekilde geliyor. Böyle değiştirip değiştirip devam ediyoruz.
+
+255
+00:44:46,632 --> 00:44:54,732
+İşte bu stay'in update edilmesi, yani bakın 7 ne oldu? 2'den 7'ye geçtik. Stay'in tekrardan güncellenmesi tutmamız.
+
+256
+00:44:54,812 --> 00:45:04,512
+Yani biz biliyoruz ki, stack'te push yapılır, pop yapılır. E bu da tepeden olur. Ama şu an ne oldu? Stack üzerinde 7'ye aldık, buraya getirdik. 2, 1.
+
+257
+00:45:04,980 --> 00:45:22,940
+0, 4, yani onlar aşağıya kaydılar. Baya baya sitekten 7'yi görene kadar eleman çekiyorsun. Onları bir yerde yedekliyorsun. 7'yi gördükten sonra çektiğin elemanları tersten siteye tekrar ekliyorsun. 7'yi de getirip tepeye koyuyorsun. Bu karmaşıklığı çözecek bir sisteme, bir donanıma ihtiyaç var.
+
+258
+00:45:24,320 --> 00:45:27,760
+Şimdi LRO üzerinde biraz iyileştirmek için.
+
+259
+00:45:28,755 --> 00:45:46,095
+Hardware desteği gerekiyor dedik ve bu bir yavaşlık gerekiyor. Bu yavaşlığı çözmek için referans biti ve ikinci şans algoritması diye bazı iyileştirmeler, hatta bunun üzerine intensive LRO algoritması diye birazcık iyileştirmeler yapılmış. Bunlardan referans bitine bakalım.
+
+260
+00:45:47,695 --> 00:45:54,895
+Her page için başlangıçta bir bit referans biti asoşi ediliyor ve sıfır olarak set ediliyor.
+
+261
+00:45:55,476 --> 00:46:01,876
+Eğer bir page set edildiyse, referans edildiyse, o page'e bir ihtiyaç duyduysan, onu bir yapıyoruz.
+
+262
+00:46:02,976 --> 00:46:15,096
+Ve daha sonra page replacement yaparken, referans biti bir olanlardan değil de sıfır olanlardan bir tanesini seçerek l-ru yapıyoruz.
+
+263
+00:46:15,096 --> 00:46:16,655
+Yine l-ru var.
+
+264
+00:46:17,204 --> 00:46:31,584
+Ama o hala referans verildiyse onlardan sıfır olanlara bakıyoruz. Fakat burada da sırayı kaçırmaz söz konusu. Hani sırayı bilemiyoruz hangi sıra da olduğu.
+
+265
+00:46:32,423 --> 00:46:40,403
+Second Child Chance Algoritması da şuna bakılıyor. Genellikle bu FIFO'yla sağlanan bir şey. Clock Replacement da deniyor.
+
+266
+00:46:42,931 --> 00:46:54,871
+Replace edilecek page, reference biti 0 ise doğrudan onu yer değiştirebiliriz. Bir tane page'imiz var, yer değiştireceğiz. Referans biti 0 ise doğrudan yer değiştireceğiz.
+
+267
+00:46:55,431 --> 00:47:09,651
+Referans biti 1 ise, diyoruz ki bu yakın zamanda refer edilmiş, buna bir şans daha verelim. Bunun bir sonrakisinde referans biti 0 olan bir başka page varsa ona geçelim ama bunu da 0 yapalım.
+
+268
+00:47:10,003 --> 00:47:21,224
+Çünkü bu sefer açlıkla meydana gelebilir. Dolayısıyla referans biti 1 olana bir sefere mahsus dokunmuyoruz. Bir sonrakinde tekrar dokunabiliriz diye de referans bitini ne yapıyoruz? Tekrar 0 yapabiliyoruz.
+
+269
+00:47:22,123 --> 00:47:36,264
+Şurada örneğini görebiliriz. Örneğin ben turban olarak bunu seçtim. Bunun referans biti 1. Buna dokunmayacağım. Buna dokunmadığım gibi ne yapacağım?
+
+270
+00:47:37,235 --> 00:47:46,175
+Bundan sonra referans biti 0 olanlardan bir tanesini değiştireceğim. Ama bunun referans bitinde ne yapacağım? 0 yapacağım.
+
+271
+00:47:46,175 --> 00:47:54,275
+Çünkü bunu dairesel bölük olarak buna dokunamam, buna dokunamam, buna dokunabilirim, buna dokunamam, buna dokunamam, şunlara dokunabilirim.
+
+272
+00:47:54,695 --> 00:48:03,035
+Ama ben bunu kurban olarak seçtiysen artık bu 1 değil 0 olacak. Belki şunlardan bir tanesiyle o seferlik yer değiştirmek yapılıyor.
+
+273
+00:48:04,083 --> 00:48:28,083
+Bir diğeri de geliştirilmiş ikinci şans algoritması. Hatırlarsanız biraz önce ModifyAbit'den bahsettik. Bu ModifyAbit ne yapıyordu? O prosese ait, herhangi bir prosese ait, bellek üzerindeki frame'inde bir değişiklik yapıldıysa o modifiye dil haline getiriliyordu. Tekrar çünkü...
+
+274
+00:48:28,447 --> 00:48:33,788
+sanal belleğe hard disk üzerine geri yazmamız gerekir. Değişiklik yapılmadıysa çok problem değil.
+
+275
+00:48:34,467 --> 00:48:44,527
+Burada referans edilmiş mi ve o process, o frame üzerinde bir değişiklik yapılmış mı? İki tane bilgi tutuluyor. Bunlar zaten var olan bilgiler.
+
+276
+00:48:45,407 --> 00:48:52,447
+Şimdi diyor ki, sıfır sıfır olduğu durum, yani ikili şeklinde veriyi tutuyoruz. Önce referans, sonra modifiye biti.
+
+277
+00:48:53,715 --> 00:49:00,715
+Ne diyor yakın zamanda kullanıldı ne de modifiye edildi.
+
+278
+00:49:01,635 --> 00:49:07,115
+Yani tam replace edilmesi için, kurban olarak seçilmesi için uygun bir pre-vost.
+
+279
+00:49:07,996 --> 00:49:11,016
+Yani oraya hiç dokunulmamış yakın zamanda.
+
+280
+00:49:11,416 --> 00:49:12,796
+Hiç de orası değiştirilmemiş.
+
+281
+00:49:14,096 --> 00:49:17,796
+Yakın zamanda dokunulmamış, yani herhangi bir şekilde referans edilmemiş.
+
+282
+00:49:18,796 --> 00:49:20,016
+Fakat modifiye edilmiş.
+
+283
+00:49:20,416 --> 00:49:44,416
+Şimdi bu yapılabilir ama modifiye edildiği için ne olması lazım? Eğer onu değiştirirsem, kart diske geri yazmam gerekiyor. Effective Access Time'da o swap out süresinin dahil edilmesi modifiye unutun. Şuna göre biraz daha kötü bir şey. Ama yine kötünün iyisi diyebiliriz. Yani şu iyinin en iyisi veya iyinin kötüsü diyelim buna. Yakın zamanda...
+
+284
+00:49:45,427 --> 00:50:06,411
+Erişim yapıldı fakat değiştirilme yapılmadı. Fakat buraya yakın zamanda erişim yapıldıysak bu page üzerinde tekrardan erişim yapılma ihtimali var. Çünkü LRAO bize bunu söylüyor. Yakın zamanda erişilenlere, least recently olanlara olanlarımız alt. Least recently olmayan hani...
+
+285
+00:50:06,771 --> 00:50:14,391
+Recent olanlara da ne yap? Dokunma. O zaman bu çok dokunulması gerekmeyen, yakın zamanda kullanılacak olan bir şey.
+
+286
+00:50:15,171 --> 00:50:19,511
+Birebir olduğu durumda da hem değiştirildi hem de yakın zamanda erişim sağlandı.
+
+287
+00:50:20,071 --> 00:50:28,131
+O zaman bunu dokunursan bayağı bir başına iş atılır. Yani gereksiz süre olur diye bu en az tercih edilmesi gereken bir şey.
+
+288
+00:50:31,031 --> 00:50:33,511
+Şimdi de counting algoritmaları var.
+
+289
+00:50:34,516 --> 00:50:36,295
+Çok yaygın kullanılmayan şeyler.
+
+290
+00:50:39,435 --> 00:50:49,255
+İşte yakın zamanda ne kadar kullanılmış ve kullanılmamış, ne kadar kullanılıyor, ne kadar seyrek kullanılıyor.
+
+291
+00:50:49,855 --> 00:50:51,315
+Bununla alakalı bilgiler tutuyor.
+
+292
+00:50:51,435 --> 00:50:54,976
+Fakat bu bilgileri tutmak için de bir donanım veya bir veri yapılarına ihtiyaç var.
+
+293
+00:50:55,155 --> 00:50:57,675
+Hani maliyetli bir şey olduğu için çok fazla tercih edilmemiş.
+
+294
+00:50:58,775 --> 00:51:01,895
+Bazısına göre diyor ki az kullanılanı alayım.
+
+295
+00:51:02,931 --> 00:51:11,171
+kurban olarak seçeyim. Bazı yaklaşımlar çok kullanılan alayım. Bununla alakalı kitabımızda detaylı şeyler bakabilirsiniz. Açıklamalar var.
+
+296
+00:51:12,531 --> 00:51:18,031
+Şimdi page buffering algoritmaları şu frame'e kadar gelelim ve ara verelim.
+
+297
+00:51:19,871 --> 00:51:29,331
+Şimdi buraya kadar free frame'leri olmadığını, hep boşta frame yok, proses için.
+
+298
+00:51:30,164 --> 00:51:34,244
+Boşta frame olmadığı için mutlaka page replacement yapacağız.
+
+299
+00:51:35,224 --> 00:51:42,844
+Ama bellek üzerinde baktığımızda proseslerin ihtiyacı olan frame'in dışında boş yerler var.
+
+300
+00:51:43,024 --> 00:51:44,204
+Ama o prosesi atanmamış.
+
+301
+00:51:45,604 --> 00:51:49,204
+O zaman ortak bir havuz tutuluyor free frame'ler için.
+
+302
+00:51:50,604 --> 00:51:56,464
+Ve bu birden fazla prosesin kullanımına müsait olacak şekilde oluşturulan bir yapılanma.
+
+303
+00:51:57,715 --> 00:52:10,315
+Eğer bu prosese kendine atadığımız framelerden yer bulamıyorsak fakat havurda yerimiz varsa o zaman havurdan yer aktarıyoruz.
+
+304
+00:52:10,515 --> 00:52:14,815
+Dolayısıyla bu aktarım sayesinde patch fault atalarımız azalıyor.
+
+305
+00:52:16,675 --> 00:52:19,775
+Tabi burada da ne olmasa lazım? Free framelerini...
+
+306
+00:52:19,775 --> 00:52:33,915
+izlenmesi ve yönetilmesi, işte bu pool'un, havuzun yönetilmesi söz konusu. Yani bu page fault hatasını azaltalım derken işletim sistemine bakın. Ayrı bir yük getiren bir yapı. Kullanılabilir, kullanılmaz ayrı şeyler.
+
+307
+00:52:37,556 --> 00:52:54,195
+Bu tarz uygulamalarda işte tool yaklaşımı özellikle uygulamanın hangi pagelere ihtiyaç duyacağını, geleceğe yönelik bilgilerin sağlandığı bazı algoritmalarda bunları kullanmak mümkün.
+
+308
+00:52:54,931 --> 00:53:02,531
+Özellikle database'de bahsedilmiş. Çünkü database işlemleri sürekli okumanın, yazmanın yapıldığı, buffer işlemlerinin zaten yapıldığı bir şey.
+
+309
+00:53:02,971 --> 00:53:13,072
+Buffer zaten yapılıyorsa, yazma, okuma sürekli gerçekleştirilecek. Bunu bu tarz uygulamalarda görebiliyoruz.
+
+310
+00:53:14,331 --> 00:53:19,871
+Zaten doğrudan diske erişimimiz olacak. Bir de bunu page to placement amacıyla kullanabiliriz.
+
+311
+00:53:22,547 --> 00:53:25,627
+Şimdi burada bir ara verelim.
+
+312
+00:53:26,987 --> 00:53:28,107
+51.5 geçiyor.
+
+313
+00:53:28,867 --> 00:53:30,667
+5 geçeye kadar bir ara verelim arkadaşlar.
+
+314
+00:53:30,867 --> 00:53:32,667
+Geldiğimizde kalan kısımdan devam edeceğiz.
+
+315
+00:53:32,767 --> 00:53:34,207
+Yaklaşık 30 sayfamız daha var.
+
+316
+00:53:36,287 --> 00:53:38,007
+Saat 10.05 geçe görüşürüz.
+
+317
+01:06:43,956 --> 01:06:45,196
+Evet, devam edelim.
+
+318
+01:06:46,896 --> 01:06:54,816
+Şu ana kadar konuştuğumuz şey, bir prosese atanmış olan framelerin üzerinde page'leri replace etmek.
+
+319
+01:06:56,396 --> 01:07:02,816
+Yani 3 tane, 5 tane, 10 tane frame atanmışsa, bunu nasıl replace edebiliriz?
+
+320
+01:07:02,936 --> 01:07:05,376
+Bununla alakalı yaklaşımlardan bahsediyoruz.
+
+321
+01:07:05,376 --> 01:07:08,876
+Peki, şimdi frame acaba nasıl atanabilir?
+
+322
+01:07:09,796 --> 01:07:11,115
+Bir kere, eğer...
+
+323
+01:07:11,476 --> 01:07:19,956
+Proses için ihtiyacının en az minimumu kadar bir frame aktarmak söz konusu. Bu bir olmayacağı da kesin olamaz da.
+
+324
+01:07:21,715 --> 01:07:31,715
+Örneğin IBM 370 için SSMove instruction'ını çalıştırabilmek için 6 page gerekiyormuş.
+
+325
+01:07:32,835 --> 01:07:37,635
+Bu instruction'un kendisi 6 byte ve 2 tane
+
+326
+01:07:38,260 --> 01:07:42,180
+page'i kapsayacak şekilde bir yapıdaymış.
+
+327
+01:07:43,320 --> 01:07:46,720
+İşte nereden nereye işlem yapacağıyla alakalı.
+
+328
+01:07:47,480 --> 01:07:50,020
+Hatta bununla alakalı kitabımızı bir açayım bir saniye.
+
+329
+01:09:01,076 --> 01:09:05,115
+Burada ABC ile alakalı bir örnek gibi bir Mu komutu vardı da.
+
+330
+01:09:11,956 --> 01:09:13,996
+Neyse, birazdan gelir yapacağız.
+
+331
+01:09:15,836 --> 01:09:24,416
+Tabii, sistem içinde sağlanacak şeyler işletim sistemi içinde bir frame tahsiye yapmak gerekiyor.
+
+332
+01:09:24,515 --> 01:09:27,376
+İşletim sistemini burada ayrı tutuyoruz.
+
+333
+01:09:27,595 --> 01:09:34,235
+İşletim sisteminin ihtiyacı olan maksimumu belki vermek gerekiyor ama diğer prosesler için olay biraz farklı.
+
+334
+01:09:34,235 --> 01:09:37,235
+Burada iki farklı yaklaşım...
+
+335
+01:09:37,908 --> 01:09:41,908
+Söylenebilir veya bunların farklı varyasyonları söylenebilir.
+
+336
+01:09:43,128 --> 01:09:57,408
+Birinci yaklaşımımız, her prosese sabit uzunluklu allocation yapalım veya prioritiesine göre değişen şekilde allocation yapalım veya farklı varyasyon.
+
+337
+01:09:58,028 --> 01:10:00,000
+Sabit uzunluklu da ne olur?
+
+338
+01:10:00,000 --> 01:10:11,039
+Eğer ki n tane prosesiniz varsa, m kadar da frame'iniz varsa boşta, bunları oranla veriyorsunuz. Equal allocation dediğimiz bir şey.
+
+339
+01:10:12,220 --> 01:10:19,319
+Pek görünüşte adil görünmesine rağmen eşitliker zaman hani adili anlamına gelmiyor.
+
+340
+01:10:20,780 --> 01:10:23,940
+Starvation'a kilitlenmeye neden olacaktır allocation.
+
+341
+01:10:28,467 --> 01:10:33,547
+Görünüşte mantıklı ama uygulamada bir sürü sıkıntılara neden olacaktır.
+
+342
+01:10:34,188 --> 01:10:37,028
+Onun yerine proportional allocation uygulanabilir.
+
+343
+01:10:38,067 --> 01:10:45,747
+Her prosesin sahip olduğu uzunluğa göre veya sahip olduğu maksimum page sayısına göre
+
+344
+01:10:45,747 --> 01:10:51,567
+degree of multi-programmingi de dinamik bir şekilde yönetebilmek için ne yapıyoruz?
+
+345
+01:10:51,567 --> 01:10:54,108
+Toplam boş frame'lerimiz var.
+
+346
+01:10:55,028 --> 01:11:00,628
+Her bir prosesin size var ve bütün proseslerin size büyük sayıyla gösteriliyor.
+
+347
+01:11:00,628 --> 01:11:03,628
+Allocation yapacağımız şeyi burada oranlıyoruz.
+
+348
+01:11:03,628 --> 01:11:19,828
+Örneğin 64 tane boş frame'im varsa, S1 10'luk yer istiyor. S2 127'lik yer istiyor. Toplam 137'lik yere ihtiyacım var ama o kadar yerim yok. 64 kadar yerimiz var.
+
+349
+01:11:20,307 --> 01:11:27,708
+Burada 62 olarak yazmış ama 64 olması lazım arkadaşlar. Kitapta düzgün haliyle yazıyor. Muhtemelen şunlardan.
+
+350
+01:11:30,167 --> 01:11:39,788
+Belki olabilir de OSY'de iki birim çok mantıklı değil. Hani işletim sistemine iki tane verip diğerlerine on tane vermek yetersiz olabilir.
+
+351
+01:11:40,528 --> 01:11:45,007
+Yani şey, olayın özünü anladınız. Şuradaki M diyeyimle toplam S'ye.
+
+352
+01:11:45,524 --> 01:11:51,764
+ve m'yi oranlayarak, yani şu formüle göre bakılırsa zaten buranın yanlış olduğu anlaşılıyor.
+
+353
+01:11:52,344 --> 01:11:55,744
+Ya şurası 64 olmayacak, 62 olacak ya da bunlar 64 olacak.
+
+354
+01:11:55,904 --> 01:11:57,164
+Yani olayın mantığı bu.
+
+355
+01:11:57,703 --> 01:12:00,824
+Ekstra nevi üzerinde ekşi yoruma gerek yok.
+
+356
+01:12:01,364 --> 01:12:06,584
+Bu şekilde yaklaşık olarak verilmesi gereken frame sayıları ayarlanabiliyor.
+
+357
+01:12:06,584 --> 01:12:12,123
+Bir de allocation yaparken priority'ye bakmak.
+
+358
+01:12:12,724 --> 01:12:19,184
+Yüksek önceliğe sahip olan proseslere daha fazla sayıda frame tavsiye yapmak.
+
+359
+01:12:20,023 --> 01:12:30,943
+Eğer bir proses page falta tavsiye üretiyorsa, öncelikle onun kendine ait frameleri üzerinden bir page replacement yapıyoruz.
+
+360
+01:12:30,943 --> 01:12:35,503
+Önce bir allocation, aslında proportion allocation yaptık.
+
+361
+01:12:40,724 --> 01:12:47,384
+Çok yetersiz olduğu kanısına varılıyorsa, kendisinden daha az priority'ye sahip olan
+
+362
+01:12:47,384 --> 01:12:53,584
+proseslerin, frame'lerinden bazılarını alıp buna page stealing deniyor aslında.
+
+363
+01:12:54,404 --> 01:12:59,064
+Pardon, frame stealing, frame çalmak diye ifade edilmiş kitabımızda da var.
+
+364
+01:13:00,344 --> 01:13:07,844
+Daha düşük prosesli, daha düşük öncelikli proseslerin frame'lerini kullanmak mümkün olabiliyor.
+
+365
+01:13:09,427 --> 01:13:21,307
+Şimdi bu söz konusu olunca, acaba page replacement'ı da global mi düşünelim, lokal mi düşünelim diye bir fikir ortaya atılmış.
+
+366
+01:13:22,268 --> 01:13:35,667
+Process, bir replacement frame seçecek. Bunu yaparken kendisine ait olan değil, bütün proseslere ait olan frame'lerden hatta önceliklerine bakarak frame seçebiliyor.
+
+367
+01:13:36,756 --> 01:14:03,016
+Yani bir prosesin bir başka prosesden frame alması, ödünç almak diyebiliriz buna belki olayı. Fakat bunun birazdan bir yan etkisini göreceğiz. Tamam güzel bir şey gibi görünebilir ama bir proses frame alıyorsa onun geri iade edilmesi, replace edilmesi, gerekirse diske yazılması gibi ekstra maliyetleri olacak.
+
+368
+01:14:04,916 --> 01:14:08,396
+throughput açısından mantıklı olabilir.
+
+369
+01:14:09,636 --> 01:14:14,756
+Degree of multiple programming'i arttırabilirsiniz. İşlemciyi daha yoğun kullanabilirsiniz.
+
+370
+01:14:15,216 --> 01:14:16,476
+Verimliliği arttırabilirsiniz.
+
+371
+01:14:17,496 --> 01:14:20,695
+Execution time açısından bir değişim söz konusu.
+
+372
+01:14:21,956 --> 01:14:28,676
+Lokal replacement'ta da sadece kendisine ait olan, işte başta 10 tane atadıysak o 10 tane arasından
+
+373
+01:14:29,140 --> 01:14:31,140
+Framelerini kullanacak.
+
+374
+01:14:31,140 --> 01:14:44,739
+Yani on birinci çeşit, on çeşit Page'i varsa, bu on tane Frame ona yeter. Ama on birinci varsa Page Replace Prooflar meydana gelecek. Page Replace Prooflar meydana geldiği için bu bir gecikmele neden olabilecek.
+
+375
+01:14:44,739 --> 01:14:53,940
+Memory'i daha az verimsiz kullanmaya neden olabilir fakat proseslerin performansı açısından...
+
+376
+01:14:54,228 --> 01:15:14,568
+Daha tutarlı bir görüntü sağlıyor. Özellikle şu, execution time açısından değişkenlik göstermesi nedir? Siz bir prosesin üstünlüğünüz, önceliğiniz daha fazla diye frame'ini alıyorsunuz. Onun execution time'ı ne oluyor? Ona zarar veriyor. Ona zarar vermesi ileride size de zarar verebilir.
+
+377
+01:15:15,315 --> 01:15:29,435
+Çünkü memory utilization kötüleşmeye başladığında bir müddet sonra CPU utilization kötüleşecek. Bunlar birbirini tetikleyecek şeyler. Onun için farklı durumlar söz konusu olabiliyor.
+
+378
+01:15:29,435 --> 01:15:41,655
+Bir de non-uniform memory access konumuz vardı. Hatırlarsınız bunu daha önce çoklu işlemcilerde, SMP sistemlerde falan konuşmuştuk. Eğer ki sistemde birden fazla belli işlemci varsa,
+
+379
+01:15:42,260 --> 01:16:05,860
+Bu birden fazla işlemci, farklı işlemci belleklerle meşgul ise ne yapıyorduk? Her işlemcinin üzerinde çalışacağı bellek bölgelerini kendilerine göre gruplama yapıyorduk. Bu biraz daha bellek yönetimini kolaylaştırıyor demiştik. Özellikle buna Solaris'te el grup dediğimiz bir çözüm üretilmiş.
+
+380
+01:16:06,676 --> 01:16:10,836
+Yokta hani bir sürü bellek var, bir sürü işlemci var. Bunu yönetebilmek kolay değil.
+
+381
+01:16:12,496 --> 01:16:16,115
+Şimdi geldik. Multi-programming istiyoruz.
+
+382
+01:16:17,176 --> 01:16:22,216
+Belleği demand paging ile yöneteceğiz. Frame'leri alıyoruz. Gerekirse replace ediyoruz.
+
+383
+01:16:22,216 --> 01:16:31,216
+Fakat burada yani ele aldığımız veya kullandığımız stratejilerden kaynaklı olarak
+
+384
+01:16:31,551 --> 01:16:38,572
+Özellikle global replacement durumunu da düşünürsek, bir yan etki gibi bir şey, bir sıkıntı gibi bir şey olacak.
+
+385
+01:16:39,971 --> 01:16:49,551
+Prosesin yeterince page'i yok, aslında frame yok ve page fault hatası oldukça artmaya başladı.
+
+386
+01:16:54,804 --> 01:17:00,523
+Kendinden daha düşük öncelikli diğer proseslerin frame'lerine saldırmaya başladığını düşünün arkadaşlar.
+
+387
+01:17:01,743 --> 01:17:02,564
+O zaman ne oluyor?
+
+388
+01:17:03,844 --> 01:17:08,144
+Geçici olarak proses bir frame'i elde etti.
+
+389
+01:17:09,123 --> 01:17:11,743
+Kendi işini yapmaya çalışır. Diğer prosesler bundan etkiliyor.
+
+390
+01:17:12,703 --> 01:17:18,163
+Ve sistem diyor ki, şu an bellek yönetilemez duruma geldi.
+
+391
+01:17:19,324 --> 01:17:22,463
+Yönetilemez duruma memory twoset için aslında kötüleşmeye başladı.
+
+392
+01:17:23,699 --> 01:17:27,939
+Memory utilization kötüleşince CPU utilization de kötüleşecek.
+
+393
+01:17:29,680 --> 01:17:38,079
+Sürekli bir replacement ile uğraşıyoruz. Buna zaten thrashing diyoruz. Yani page in, page out, page in, page out dediğimiz bir işlem gerçekleşiyor.
+
+394
+01:17:39,319 --> 01:17:45,059
+Çünkü kendinden düşük olan bir prosesin frameini alacak. O frame'i boşaltmak için ne yapıyorsun? Page out yapıyorsun.
+
+395
+01:17:45,739 --> 01:17:51,019
+Kendi frame'ine, kendine ait bir frame almak için page in yapıyorsun. Bu sürekli böyle devam ediyor.
+
+396
+01:17:51,636 --> 01:18:01,296
+Ve işletim sistemi diyor ki, bellek yeterince kullanılmıyor. O zaman ben belleyi kullanacak proseslerin sayısını arttırayım.
+
+397
+01:18:02,236 --> 01:18:05,636
+Ve degree of multi programming arttırmak için...
+
+398
+01:18:05,844 --> 01:18:11,904
+Bazı prosesleri çıkartıyor, yeni prosesler ekliyor ve bu şekilde bellek yönetimi bir kısır döngüye giriyor.
+
+399
+01:18:12,004 --> 01:18:18,884
+Buna paging ve page out'un sürekli sistemi meşgul etmesine, CPU utilization'ın düşmesine crashing diyoruz.
+
+400
+01:18:18,943 --> 01:18:23,123
+Bununla alakalı kitabımızda güzel birkaç örnek var. Okumanızı tavsiye ederim.
+
+401
+01:18:23,764 --> 01:18:28,884
+Bakın, degree of multi-program 2'de CPU utilization açısından şöyle bir grafik var.
+
+402
+01:18:31,699 --> 01:18:43,440
+The degree of multi-programming'in artması, bakın şuralara kadar artınca doğrusala yakın bir şekilde CPU-tursu değişimde güzel bir şekilde artıyor.
+
+403
+01:18:44,399 --> 01:18:52,579
+Fakat bu artışın sonrasında şurada başlayan şu bölge, hatta şuraya kadar kısım, bir felaketin haberlisi gibi.
+
+404
+01:18:52,579 --> 01:18:58,680
+Bu başka sistemlerde de var. İşte nüfus artışı diyebilirsiniz.
+
+405
+01:18:59,347 --> 01:19:21,507
+Herhangi bir işte MTA'nın altının borsa, şu bu. Hani artış var ama artış giderek yavaşlayan bir şeyde. Hani bir durağınlaşma gelecek ve bu durağınlaşma sonrasında ciddi bir çöküş meydana gelebilir. Şu an mesela borsacılar falan bunu çok konuşuyorlar. Veya işte altın, gümüş gibi o tarz şeylerde.
+
+406
+01:19:21,887 --> 01:19:28,627
+İşte bu degree of mouth programını arttırdınız, arttırdınız, arttırdınız, limitasyonu CPU hiç kullanılamaz hale geliyor.
+
+407
+01:19:29,547 --> 01:19:32,467
+Ve öyle bir şey oluyor ki sistem tamamen kilitleniyor.
+
+408
+01:19:32,707 --> 01:19:38,268
+Ve burada tamamen bir deadlock olduğu durumu görüyoruz ve CPU tutunluğu bir anda düşüyoruz.
+
+409
+01:19:38,907 --> 01:19:41,167
+Az önce bahsettiğimiz nedenlerden dolayı.
+
+410
+01:19:41,268 --> 01:19:44,147
+İşte buna da thrashing'in etkisi diyoruz.
+
+411
+01:19:46,836 --> 01:19:53,216
+Özellikle bu, locality olarak seçtiğimizde, global bir locality model seçtiysek, karşılaşacağımız durum.
+
+412
+01:19:55,076 --> 01:19:59,076
+Prosesler sürekli, bir diğer prosesten frame çalacak.
+
+413
+01:20:00,155 --> 01:20:03,636
+Hatta burada localitelerin overlap olması söz konusu.
+
+414
+01:20:03,876 --> 01:20:07,896
+Şöyle düşünelim, kitapta bununla alakalı çok detaylı bir şey de var da.
+
+415
+01:20:08,576 --> 01:20:11,336
+Örneğin, diğerinden bir yere block veri transferi yapıyorsunuz.
+
+416
+01:20:12,500 --> 01:20:24,500
+Onun için belli frame'ler kullandınız. Fakat sizin frame'inizi, bir page'inize yer bulamadığınız için frame'iniz yok. Bu işlem yarıda kaldı.
+
+417
+01:20:24,500 --> 01:20:35,500
+Ama bu block-vary transferini yaparken de transfer edeceğiniz bölgeler kendi arasında overlap yaşıyorlar. Çakışıyorlar. E ne oldu?
+
+418
+01:20:36,243 --> 01:20:40,804
+Yani düşünün dizinin birinci elemanıyla yüzüncü eleman arasında taşıma yapacaksınız.
+
+419
+01:20:41,683 --> 01:20:48,304
+Ama yeni dizinin birinci elemanı eski dizinin sekseninci elemanından başlasın.
+
+420
+01:20:48,463 --> 01:20:51,523
+Biri seksene atadınız, ikiyi seksene atadınız.
+
+421
+01:20:52,003 --> 01:20:58,823
+Şimdi bu iş yarıda kaldığında eski seksen, eski seksen bazı yerler ne oldu?
+
+422
+01:20:59,823 --> 01:21:00,683
+Çöp oldu.
+
+423
+01:21:00,683 --> 01:21:02,683
+Şimdi bu olmasın diye mesela bunların...
+
+424
+01:21:03,796 --> 01:21:13,516
+Register'lar üzerinde geçici olarak saklanmasını saklayabilen donanım destekleri var. Demand paging ve thrashing burada kullandı. Bu tarz durumlar meydana geliyor.
+
+425
+01:21:15,036 --> 01:21:26,456
+Şimdi burada lokality açısından bazı çözümler önerilmiş. Hangi page veya şey frame sayısını nasıl ayarlayalım dediğim şey. Ve şu görülüyor.
+
+426
+01:21:28,979 --> 01:21:46,179
+Page numberlar ile memori adresleri üzerinde bir analiz yapıldığında, bir grafiğe bakıldığında, bir page'i biz işaret ediyorsak, ondan sonra işaret edeceğimiz page'ler genellikle o page'in etrafındaki page'ler. Yani bir page'ler arasında bir ilişki var.
+
+427
+01:21:46,836 --> 01:21:48,956
+Aynı bir cümlenin ögeleri gibi düşünün.
+
+428
+01:21:49,095 --> 01:21:50,515
+İşte gelen bir kelimeniz var.
+
+429
+01:21:50,636 --> 01:21:54,015
+Bu kelimenin önündeki, sonundaki anlamlı bir bütün olacak.
+
+430
+01:21:54,155 --> 01:21:56,316
+Burada da pejler arasında bir ilişki görülüyor.
+
+431
+01:21:56,316 --> 01:22:07,836
+O zaman diyorlar ki, biz pejleri, frame'lere aktarırken, böyle birer birer düşünmenin de bir çalışma seti, working set olarak aktarırız.
+
+432
+01:22:08,796 --> 01:22:12,675
+Ve belli aralıklarla bu working seti güncelleyelim.
+
+433
+01:22:16,692 --> 01:22:37,731
+Buradaki üçgen işareti, delta dediğimiz işaret, bir working set window. Bu bir sabit uzunluklu sayı, bir çiftlememdir. Örneğin, bin tane instruction içerecek kadar bir aralık verin diyorsunuz. Ve bu bin tane instruction, örneğin beş tane frame kapsayacak büyüklükte olsun.
+
+434
+01:22:38,355 --> 01:22:54,355
+Çok büyük seçmek, çok küçük seçmek bakın burada şeyleri var. Çok küçük seçerseniz, lokaliteyi kaybedersiniz. Çok büyük seçerseniz lokalite tamamen yok aslında şey olur, tamamen globalite olur. Ölçümü seçmek gerekiyor.
+
+435
+01:22:54,355 --> 01:23:04,355
+Ve bu D dediğimiz şey sizin M'den büyük olması demek Trushing'e. M'liydi biraz önce formülümüzde vardı.
+
+436
+01:23:04,752 --> 01:23:25,332
+Toplam müsait olan şey sayımız, frame sayımız. Eğer Değir, M'den çok büyük seçersek, Thrashing'e yol açabiliriz. Uygun bir değer seçmek gerekiyor. İşletim sistemleri buna göre seçim yapıyorlar. Örneğin, T1 zamanına gelene kadar Working Set'imiz,
+
+437
+01:23:26,163 --> 01:23:32,523
+Hani aslında dersin başında FICO'ya anlatırken söylediğim şeyin birazcık benderi ama lokal olanı düşünün.
+
+438
+01:23:33,064 --> 01:23:39,984
+Şimdi normalde bu proses 1, 2, 3, 4, 5, 6, 7 page'lerine ihtiyaç duyacak.
+
+439
+01:23:40,403 --> 01:23:41,644
+Referans stringimiz bu şekilde.
+
+440
+01:23:42,403 --> 01:23:49,263
+Fakat T1 zamanına gelene kadar 3 ile 4 ile işi yok.
+
+441
+01:23:49,443 --> 01:23:52,863
+1 var, 2 var, 5 var, 6 var, 7 var.
+
+442
+01:23:53,652 --> 01:24:06,652
+Dolayısıyla, T1'e kadar siz 1, 2, 5, 6, 7'yi sürekli kullandığınız için bunları sürekli referans edeceği şekilde bir frame istiyorsunuz. Size 5 tane frame tavsiye ederim.
+
+443
+01:24:06,652 --> 01:24:16,652
+Daha sonra bir dinamik olarak değiştiriyor. Working Set'imiz değişiyor. Tabi o aradaki geçişlerden olacak bir farklılık olacak. Şurayı geçelim.
+
+444
+01:24:17,811 --> 01:24:33,791
+Şurada bir şey vardı. İşte working setin belli zaman aralıklarında page faultumuz bazı durumlarda sabit kalacaktır. İşte vali dediğimiz valiyi yapacak. Bazı durumlarda pick yapacak. İşte o tam geçiş zamanları olacaktır. Ve bu bizim page fault frekans dediğimiz.
+
+445
+01:24:35,155 --> 01:24:43,155
+Bir page'e erişmeye çalışıyoruz. Working setimiz stabil hale geldiyse page faultlarımız azalacak. Dolayısıyla page fault frekansımız azalacak.
+
+446
+01:24:43,155 --> 01:24:53,155
+Ne zamanki working setimiz değişmeye başladı, o zaman işte belki frame'lerimizin sayısı değişecek. Frame'lerimizin sayısı değişince page fault oranlarımız artacak gibi.
+
+447
+01:24:53,811 --> 01:25:08,551
+Böyle bir şey olacak. Bu page fault frekans değerini belli bir aralıkta tutmak, ne aşırı arttırmak, ne de aşırı azaltmak istemeden belli bir aralıkta tutmanın yolu. Working set stratejisi. Şurada gördüğünüz gibi.
+
+448
+01:25:10,163 --> 01:25:17,863
+Şimdi bellekle memory method file var. Bu bir sonraki detayıyla alakalı. Çok üzerinde durmamıza gerek yok ama şöyle bir düşünün.
+
+449
+01:25:18,144 --> 01:25:26,644
+Biz dosyadan okuma yaptığımızda sonuçta onu dosyaya okumak ne demek? Partisten ana belleğe getirmek demek. Yani bir okuma yazma, read write yapıyoruz.
+
+450
+01:25:27,344 --> 01:25:35,064
+Zaten bu bir page'in frame olarak aktarılması da bir okuma yazma işi. İki defa bu işi yapmamak yerine.
+
+451
+01:25:35,471 --> 01:25:59,344
+Bazı durumlarda dosyaları doğrudan memoriye map ediyorlar. Doğrudan hani bir şey sanal bellek, virtual memory management yapılmıyor. Doğrudan artist üzerinden disk okumayla işlem yapılıyor. Bir sonraki bana o düşün çok detayına girmeye gerek yok buranın. Yani disk file'ınız aslında size yine elbette bir burada şey var ama sanal belleğinizi...
+
+452
+01:25:59,344 --> 01:26:07,824
+Doğrudan disk file üzerinden yönetiyor. Her aynı sanal bellek management doğrudan pür şekilde kullanılmıyor diyebiliriz.
+
+453
+01:26:09,603 --> 01:26:17,884
+Ortak paylaşılan dosyalar varsa ki bu olabilir. Bir program, öbür programla inter-process communication yapacaktır. Belki shared memory yapacaktır.
+
+454
+01:26:18,404 --> 01:26:21,804
+Bu tarz şeylerde memory mapping file çok daha faydalı olabiliyor.
+
+455
+01:26:22,287 --> 01:26:49,287
+Burada da binapi üzerindeki shared memory yaklaşımına falan bakmış. Bunu geçelim. Şimdi kernel'ın nasıl allocation yapılacağı kısmına geldik. Şu ana kadar bazı kısımlar, işte ne kadar frame aktaracağız, frame'ler üzerinde nasıl replacement yapacağız normal user prosesler içinde. Burada kernel memori'ın allocation'ı biraz daha farklı.
+
+456
+01:26:49,728 --> 01:27:08,807
+Bir kere Free Memory Full'dan aktarım yapılıyor ve kernel değişken boyutlarda bellek ihtiyacı olacağı için veya böyle olduğundan şey istiyor, bellek request'in de isteğinde bulunuyor.
+
+457
+01:27:09,395 --> 01:27:29,395
+Ve bunların contiguous olduğuna şart gerekli oluyor. Örneğin device üzerinde input output yapacaksınız. Bir veri okuyorsunuz. O verinin sürekli mekansal sürekli içermesi lazım. Bellek alokasının da bunun için olması lazım. Bunlardan bir tanesi body sistem.
+
+458
+01:27:36,180 --> 01:27:43,760
+Süreklilik ardından bir kere segmentler veya parçalar ayarlanabilir.
+
+459
+01:27:44,620 --> 01:27:46,400
+Ve bu ikinin katları şeklinde oluyor.
+
+460
+01:27:47,560 --> 01:27:58,060
+Eğer siz ikinin herhangi bir katıyla, ikinin kuvvetleriyle diyelim, bir şey elde edebiliyorsanız, işte dört birimlik bir yer elde edebiliyorsanız sıkıntı yok.
+
+461
+01:27:58,399 --> 01:28:12,279
+Yetmiyorsa bu 8'e yükseltiliyor, 16'luğa yükseltiliyor ve bu şekilde artan bir yapıda bunlara chunk deniyor ve uygun chunk size'ına ulaşana kadar kernel'un bu isteği yerine getiriliyor.
+
+462
+01:28:12,279 --> 01:28:22,359
+Ve bu chunklar örneğin, bakılmak veya tap dalma şeklinde düşünebilirsiniz. 256'lık kb'lık chunkımız var.
+
+463
+01:28:22,579 --> 01:28:26,439
+Kernel 21 kilobyte istedi. Yani olması gerekenden çok çok az.
+
+464
+01:28:27,139 --> 01:28:37,779
+E ne olması lazım? Bunu 256'lı, 128'li left ve right olarak, onları da 64'lı left ve right olarak, sonra onu da 32'li left ve right olarak kullanılıyor.
+
+465
+01:28:38,639 --> 01:28:43,859
+Bir takım, bakın internal fragmentation söz konusu burada. Hani öyle bir parçalanma söz konusu.
+
+466
+01:28:44,659 --> 01:28:47,787
+Eğer bu işlem bittiyse de koalestik dediğimiz...
+
+467
+01:28:47,796 --> 01:28:52,716
+Yani ihtiyaç olmayan boş kalan kısımları da tekrardan birleştiriliyor.
+
+468
+01:28:53,756 --> 01:28:58,655
+Rizavaklı rezavantajı fragmentation, özellikle internal fragmentation dediğimiz durum.
+
+469
+01:28:59,876 --> 01:29:09,676
+Şimdi bu olmasın diye özellikle internal fragmentation'ı azaltmak için alternatif bir strateji yine kernel tarafında
+
+470
+01:29:10,484 --> 01:29:17,964
+Fiziksel olarak sürekli ifade eden page'leri bir veya daha fazla şekilde olacak şekilde slab dediğimiz allocation.
+
+471
+01:29:18,204 --> 01:29:28,964
+Slap, hani fayans anlamında falan kullanılır da, burada özellikle belli bir boyut var. O boyutun miktarınca yer ayrılıyor.
+
+472
+01:29:29,164 --> 01:29:37,844
+1.7 kilobayt mıydı, öyle bir şeydi galiba. Ve bu ilgili kısım bir cache memory ile allocation yapılıyor. Cache memory onun ilgili kısımlarını gösteriyor.
+
+473
+01:29:38,260 --> 01:29:46,260
+Ve buradaki cache memoriyle obje ismini veriyoruz. Aslında bu kernel modüllerinin karşılığı var. Obje diye isimler.
+
+474
+01:29:46,260 --> 01:30:00,000
+Cache memori üretildiğinde, oluşturulduğunda o kısım ilk başta free objelerle oluşturuyor. Daha sonra oraya ihtiyacımız olan kernel'ın ihtiyaç duyduğu objeleri oraya yutluyoruz.
+
+475
+01:30:00,000 --> 01:30:07,059
+işimiz bittiğinde bırakıyoruz. Şöyle bir yapısı var. Örneğin kernel objelerimiz 3 kilobaytlık objelerden oluşuyor.
+
+476
+01:30:07,699 --> 01:30:15,379
+Gidiyorsunuz burada hani ikinin katları şeklinde değil de bellekten 3 kilobayte yetecek kadar yerler tutuyorsunuz ve bunu cache memory ile ilişkilendiriyorsunuz.
+
+477
+01:30:16,139 --> 01:30:22,159
+Fiziksel süreklilik var mı? Var. Her biri kendi içinde 3 kilobaytta 3 kilobaytlık bellekte slab olarak tutuluyor.
+
+478
+01:30:22,159 --> 01:30:26,979
+Bakın burası ana bellek kısmı. Aşağıda 7 kilobaytlık demiş.
+
+479
+01:30:27,764 --> 01:30:44,923
+Bunu Linux'te 1.7 KB'lık yaklaşık olarak şeylerle bir structure'la, sonuçta structure'ların boyutu sabittir ve 1.7 KB muhtemelen içinde ufak bir belki boş alan kalıyordur ama bu yapılarla sağlamışlar Linux sisteminde sabit uzunluklu olsun diye.
+
+480
+01:30:46,444 --> 01:30:53,164
+Slap'ler tamamen kullanılmış, tamamen boş veya kısmen kullanılmış şekilde üç farklı slate'e.
+
+481
+01:30:53,583 --> 01:31:19,844
+atanmış. Bir request oluştuğunda slab allocator şunu yapıyor. Kısmen free olan slableri, partial slabdeki boş yapıları kullanacak. Eğer yoksa boş bir slab oluşturacak ve üretilecek. Eğer o da yoksa tamamen yeni bir tane structure'dan 1.7 kilobyte uygun bir yer oluşturuyormuş.
+
+482
+01:31:21,716 --> 01:31:32,516
+Sonra Linux 2.2'de biraz daha bunun adı slab olan şey, slope veya slope dediğimiz, hani kelimenin artık anlamı yok, farklı varyasyonları, modifikasyonları diyebiliriz.
+
+483
+01:31:33,456 --> 01:31:40,976
+Free paging, önden sayfalama diye bir şeyimiz var. Bu da inceleyebilirsiniz. Çok önemli bir şey değil.
+
+484
+01:31:41,756 --> 01:31:43,116
+Şimdi diğer meseleler.
+
+485
+01:31:45,011 --> 01:31:54,751
+Şimdi işletim sistemi tasarımı açısından veya programcı tasarımı açısından farklı konular var. Küçük bir konu, burayı da anlatıp bitireceğim.
+
+486
+01:31:55,771 --> 01:32:11,971
+Bir kere işletim sistemi dizayn edicisi şunu bilmek, şunu bilebilir. Yani benim yapacağım şey bütün işlemcilere uyum sağlayacak, bütün modellere uyum sağlayacak diye bir karar vermesi gerekiyor. Bu da kolay bir şey değil.
+
+487
+01:32:12,724 --> 01:32:39,144
+Page size açısından baktığımızda fragmentation yapacağız. Bu bir problem. Page tablosunun uzunluğu, hatırlayın, page tablosunu arttırırsak tabloyu indexlemek için çok fazla bit gerekiyordu. Azaltırsak daha az page tutuyordu. Böyle şeyler vardı. Bunun resolution'ı, IEO dediğimiz işlemlerin overhead'i, yani sürekli input output yapıyoruz. Yani swap yaparsak input output artıyor, aldılıyor.
+
+488
+01:32:39,731 --> 01:32:52,031
+Bunu düşebilirsiniz. Page fault'un olabilecek durumları. TLB, buradan ne olacak? TLB'yi hatırlarsanız hızlı bir şekilde işlem buluyordu ama TLB'nin de size ve efektifliği önemli.
+
+489
+01:32:52,031 --> 01:33:03,511
+İkinin katlarının değişimi ve bunun gibi üzerinde duracak bir şey var. Mesela TLB ile alakalı TLB rich.
+
+490
+01:33:04,340 --> 01:33:20,539
+Bu oluşturulan TLB ne kadarlık bir alanı kapsayabilir, ne kadarlık bir alana hükmedebilir bunu bize söylüyor. Bu bir önemli şey. Örneğin her bir TLB'nin sayısı, yani TLB'de kaç tane entry bulunabilir?
+
+491
+01:33:21,043 --> 01:33:27,864
+çarpı her entryde kaç tane page'e, ne kadarlık page'i saklayabiliyor.
+
+492
+01:33:28,283 --> 01:33:32,564
+Bu TLB'nin domenini veya hükmedeceği alan gibi düşünebilirsiniz.
+
+493
+01:33:33,304 --> 01:33:36,463
+Bunun karar verilmesi, buna karar verilmesi lazım.
+
+494
+01:33:36,604 --> 01:33:38,163
+İşte page size arttırabilirsiniz.
+
+495
+01:33:38,923 --> 01:33:42,684
+Veya işte farklı seviyede page'lere imkan sağlayabilirsiniz.
+
+496
+01:33:43,824 --> 01:33:45,283
+Bir diğer şey program yapısı.
+
+497
+01:33:45,283 --> 01:33:48,939
+Şimdi bu şeyde hani...
+
+498
+01:33:49,076 --> 01:34:00,195
+Kabul edelim ki şu iki kod da aynı şeyi yapıyor değil mi? Yukarıdaki ile aşağıdaki kod aynı şeyi. Data diye bir tane yüzde nite girdi, yüzde nite girdi kalanımız var. İki de aynı şeyi yapıyor.
+
+499
+01:34:03,195 --> 01:34:11,195
+Peki, page fault açısından baktığımızda, şimdi C'de düşünelim. Bir matriz önce...
+
+500
+01:34:12,020 --> 01:34:23,619
+Satırlar, yani birinci satırı var, sonra ikinci satırı var. Siz bu kodda ne yapıyorsunuz? Önce birinci satır sütunu sıfırlıyorsunuz, sonra ikinci sütunu sıfırlıyorsunuz.
+
+501
+01:34:24,159 --> 01:34:32,119
+Yani siz maddesin üzerinde, örneğin bir 100 adresindesin, ondan sonra bir sonraki sefer ne oluyor? 500 adresine gidiyorsunuz.
+
+502
+01:34:32,119 --> 01:34:39,320
+Sonra 1000 adresine gidiyorsunuz. Yani 100'den 104'e, 10'dan 108'e yatay yatay gitmiyorsunuz, aşağıya aşağıya dönüyorsunuz.
+
+503
+01:34:39,828 --> 01:34:47,128
+Bu görüntü olarak aşağıya doğru gitmeniz farklı bir page'e geçmek demek. Farklı bir page'e geçmek demek. Page fault hatasının artması demek.
+
+504
+01:34:47,448 --> 01:34:54,728
+Bu demek frame değişimi demek. Gibi gibi. Yani şöyle bir kodu, şeyi sıfırlamak. Genelde biz bunu kullanıyoruz da.
+
+505
+01:34:55,268 --> 01:35:01,368
+Şöyle bir yanlış kodu yazmak bile bu kadar performansı kötüleştirebiliyormuş. Yapılan deneylerde.
+
+506
+01:35:02,288 --> 01:35:03,628
+Bir diğer şey.
+
+507
+01:35:05,171 --> 01:35:08,612
+Bunu daha önce konuşmuştuk ama bu bir çözüm gibi düşünelim.
+
+508
+01:35:11,731 --> 01:35:14,891
+Tabi bunu ilk geçen konuda, swap konusunda konuştuk.
+
+509
+01:35:15,551 --> 01:35:19,431
+Bir prosesi swap out yapmak, prosesin tamamını swap out yapmaktır.
+
+510
+01:35:19,872 --> 01:35:21,171
+Page out'tan bahsetmiyorum.
+
+511
+01:35:21,716 --> 01:35:31,716
+Kabul edin ki, process page swap out yapıldığında şöyle bir sıkıntı vardı. Bir kere kötü bir şeydi. Prosesi tamamen durduruyorsunuz. Hadi durdurmaya geçelim.
+
+512
+01:35:31,716 --> 01:35:43,716
+Proses input output'a başladı ve prosesi page out'a yaptınız. Şimdi bu input output'un geri dönüşü olacak ve geri döndüğünde o proses yerinde yok.
+
+513
+01:35:44,467 --> 01:35:48,307
+Dolayısıyla örneğin input yapıyorsunuz, bir kaynaktan veri okuyorsunuz.
+
+514
+01:35:48,768 --> 01:35:51,268
+Onu belleğe yazmanız gerekiyor ama o yerinde yok.
+
+515
+01:35:51,787 --> 01:35:54,087
+Bu tarz bir input output sıkıntıya neden oluyor.
+
+516
+01:35:54,247 --> 01:35:54,688
+Nerede?
+
+517
+01:35:55,427 --> 01:35:58,167
+Process'in swap out yapılmasında tamamen.
+
+518
+01:35:58,648 --> 01:36:00,908
+Aynısı page out için de geçerli.
+
+519
+01:36:00,988 --> 01:36:07,148
+Bir page out yapıyorsunuz ama o page input output işlemiyle alakalıysa aynı durum burada da söz konusu.
+
+520
+01:36:07,148 --> 01:36:09,068
+İşte bu olmasın diye.
+
+521
+01:36:09,503 --> 01:36:36,984
+input output interlockları gerçekleştirilir, sağlanmış. Buna kesinlikle input output yapıyorsa dokunulmasın. Bunu engelleyen bir yapı. Sonra işletim sisteminden birkaç tane örnekler var. Bakın, working setlerle çalıştığından bahsediyor şeyin, Windows'un. Ki bunu şeyde, task manager'da görebiliyorsunuz. Açabilirsek.
+
+522
+01:36:49,171 --> 01:36:53,691
+Şurada bunun detaylarıyla alakalı bir şey, resource monitor müydü acaba?
+
+523
+01:36:54,811 --> 01:36:59,851
+Kaç tane working seti var, bellek üzerinde nasıl bir şey gerçekleşiyor, her bir uygulama için.
+
+524
+01:37:00,511 --> 01:37:09,371
+Bakın, working setinin kaç kilobayt olduğu, ne kadar yer ayrıldığı, işte her birine, önceliklerine göre farklı bir working set var.
+
+525
+01:37:09,471 --> 01:37:11,551
+Bunların detaylarını falan da incelenebiliyor.
+
+526
+01:37:13,651 --> 01:37:15,931
+Bakarsınız işte bu benzeri şeyde de var.
+
+527
+01:37:16,756 --> 01:37:25,936
+Ne derler? Diğer uygulamalarda da işletim sistemlerinde de var. Yani paging placement illa ki olacak ama working set uygulanarak yapılan bir şey.
+
+528
+01:37:27,176 --> 01:37:34,356
+Söyler listede farklı şekillerde priority paging yaklaşımı falan kullanılmış diyebiliriz. Sorumuz var mı?
+
+529
+01:37:35,256 --> 01:37:37,676
+Şimdi ben birkaç bir şey açıklayacağım. Saatimiz kaç?
+
+530
+01:37:40,155 --> 01:37:44,096
+Evet, bu konu dokuzuncu şeptir arkadaşlar.
+
+531
+01:37:45,140 --> 01:37:51,000
+Final sınavına kadar, final sınavının dahil olduğu son konumuz.
+
+532
+01:37:51,780 --> 01:37:54,920
+10. ve sonraki chapterlar, disk management ile alakalı.
+
+533
+01:37:55,020 --> 01:37:58,620
+Onunla alakalı dosya düzenleme diye bir dersimiz var ayrıca.
+
+534
+01:37:58,740 --> 01:38:00,740
+Açılınca isteyenler o dersi alabilirler.
+
+535
+01:38:03,300 --> 01:38:06,520
+İşin finalde sorulacak kısmı bu konu dahil.
+
+536
+01:38:06,660 --> 01:38:10,660
+Artı uygulamalar, artı retek dahil olacak şekilde.
+
+537
+01:38:12,180 --> 01:38:20,780
+Online'dan bir soru var mı arkadaşlar? Önce online'a cevap verelim. Ondan sonra başka soru varsa genel cevaplayalım. Kayıda da geçsin.
+
+538
+01:38:22,720 --> 01:38:33,600
+Haftaya dersimiz yok. Haftaya sınav kağıdını görmek isteyenler olursa saat birden ikiye kadar benim ofisime gelebilirler.
+
+539
+01:38:34,195 --> 01:38:58,015
+Bunun dışında, mazeret sınavı kabul edilen, birinci mazeret sınavı kabul edilen arkadaşların listesi bana geldi. İkincinin henüz gelmedi. Onlar da gelince toplu bir şekilde mail göndereceğim. Ama mazeret sınavımız haftaya saat 3 ila 5 aralığında olacak. Bunu da söyleyeyim. Size ayrıca mail göndereceğim. Sınavı kabul edilen arkadaşlara. O maili takip edersiniz.
+
+540
+01:38:58,015 --> 01:38:59,595
+Sınavı kabul edilen arkadaşlara.
+
+541
+01:38:59,887 --> 01:39:03,467
+Bütün konular dahil olur. Belki klasik yapabilirsin. Evet.
+
+542
+01:39:04,007 --> 01:39:05,728
+Sınav formatı aynı mı hocam? Finalin.
+
+543
+01:39:05,887 --> 01:39:06,568
+Klasik olabilir.
+
+544
+01:39:08,907 --> 01:39:10,307
+Finali üzerinde değil mi?
+
+545
+01:39:11,027 --> 01:39:16,307
+Hayır. Mazeret sınavı için klasik olabilirdi. Final sınavında test yapacağız.
+
+546
+01:39:18,807 --> 01:39:19,807
+Bütünleme dahil.
+
+547
+01:39:22,087 --> 01:39:27,407
+Finalde bütünlemede klasik değil. Test arkadaşlar. Sadece olursa mazeret olur.
+
+548
+01:39:27,636 --> 01:39:29,556
+Neçoktan çok seçmeli değil mi hocam?
+
+549
+01:39:30,556 --> 01:39:31,396
+Bir farklılık yok.
+
+550
+01:39:38,484 --> 01:39:38,964
+Evet.
+
+551
+01:39:43,304 --> 01:39:52,124
+Yani şöyle bazı seçeneklerin şeyine baktım. Sınavla alakalı hani gerekli değerlendirmeyi belki yaparız da.
+
+552
+01:39:53,184 --> 01:39:56,564
+Merge and şey, compare and merge diye bir seçenek vardı hatırlarsınız.
+
+553
+01:39:58,884 --> 01:40:05,244
+Seçeneklerde sınavın sorularından birinde vardı. Yani compare and merge diye bir şey anlattık mı biz?
+
+554
+01:40:06,420 --> 01:40:32,680
+Herhalde hiçbiriniz adını... Yani 96 kişi onu seçmiş, düşünün yani neredeyse yüzde 50. Bu birazcık sizin de özelleştiri yapmanız gereken bir şey. Dolayısıyla biz sistemimizi yıllardır bu şekilde kullanıyoruz. Üniversite sisteminin 40 olması bizi çok ilgilendirmiyor. Belki soru sayısını azaltabiliriz ama hani sistemde herhangi bir fark yok. Özellikle derse olan katılım ilgi malumunuz. Yani oransal olarak.
+
+555
+01:40:33,171 --> 01:40:41,011
+İyi yapanlar var, kötü yapanlar var. Yıllardır böyle. Bunun için bizim sistemimizde bir değişiklik yapmamız gerektiren bir şey olmaz.
+
+556
+01:40:42,692 --> 01:40:44,251
+Online'de bu soru var mı arkadaşlar?
+
+557
+01:40:48,243 --> 01:40:54,523
+Peki, hafta edilir mi dersiniz yok? Şimdiden sınavlarınızda, finalinizde başarılar dilerim.
