@@ -1,36 +1,8 @@
-# Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları
+# Araştırma Yöntemleri ve Bilimsel Etik 2021-2022 Ders Kayıtları
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+2021-2022 eğitim öğretim yılında bu dersin birden çok şube ya da dönem kaydı vardır. Her birinin altyazıları ve notları kendi klasöründedir.
 
-### 📋 Genel Bilgiler
-* **Ders:** Araştırma Yöntemleri ve Bilimsel Etik (BLM5004)
-* **Hoca:** Z. Cihan Taysi
-* **Dönem:** Bahar
-* **Akademik Yıl:** 2021-2022
-* **Şube:** BLM5004 - 2
-
-Bu dizin, ilgili ders kayıtlarının altyazılarını (.srt) içermektedir. Notlar henüz yazılmamıştır.
-
-## 📚 Ders Kayıtları Dizini
-
-Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir). Notu olmayan dersler "—" ile gösterilmiştir.
-
-| Ders No | Tarih | Altyazı |
-| :---: | :---: | :---: |
-| **Ders 2** | 10 Mart 2022 Perşembe | [SRT](altyazilar/ders_2.srt) |
-| **Ders 3** | 17 Mart 2022 Perşembe | [SRT](altyazilar/ders_3.srt) |
-| **Ders 4** | 24 Mart 2022 Perşembe | [SRT](altyazilar/ders_4.srt) |
-| **Ders 5** | 31 Mart 2022 Perşembe | [SRT](altyazilar/ders_5.srt) |
-| **Ders 6** | 7 Nisan 2022 Perşembe | [SRT](altyazilar/ders_6.srt) |
-| **Ders 7** | 14 Nisan 2022 Perşembe | [SRT](altyazilar/ders_7.srt) |
-| **Ders 9** | 28 Nisan 2022 Perşembe | [SRT](altyazilar/ders_9.srt) |
-| **Ders 10** | 5 Mayıs 2022 Perşembe | [SRT](altyazilar/ders_10.srt) |
-| **Ders 11** | 12 Mayıs 2022 Perşembe | [SRT](altyazilar/ders_11.srt) |
-| **Ders 12** | 26 Mayıs 2022 Perşembe | [SRT](altyazilar/ders_12.srt) |
-| **Ders 13** | 2 Haziran 2022 Perşembe | [SRT](altyazilar/ders_13.srt) |
-
-> [!NOTE]
-> 1 numaralı ders kaydı kayıt arşivinde bulunmamaktadır.
-> 8 numaralı ders kaydı kayıt arşivinde bulunmamaktadır.
-
-Ders tarihleri ve eksik kayıtların ayrıntısı için `altyazilar/README.md` dosyasına bakın.
+| Şube | Dönem | Hoca | Klasör |
+| :---: | :---: | :--- | :--- |
+| 1 | Bahar | Z. Cihan Taysi | [sube_1/](sube_1/) |
+| 2 | Bahar | Z. Cihan Taysi | [sube_2/](sube_2/) |
