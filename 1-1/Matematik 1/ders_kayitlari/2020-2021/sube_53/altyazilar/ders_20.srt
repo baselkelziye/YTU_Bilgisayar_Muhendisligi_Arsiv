@@ -1,0 +1,2943 @@
+1
+00:08:39,731 --> 00:08:45,572
+Hi everyone. Let's start with these examples. Today we will have exercises parts.
+
+2
+00:08:47,812 --> 00:08:51,891
+So let's see this question and try to solve it.
+
+3
+00:09:07,668 --> 00:09:11,408
+What do you think? How can we get the function f?
+
+4
+00:09:15,827 --> 00:09:16,387
+okey.
+
+5
+00:09:19,387 --> 00:09:20,268
+How did you get it?
+
+6
+00:09:26,163 --> 00:09:28,163
+Yes, you're right. Well done.
+
+7
+00:09:40,916 --> 00:09:41,636
+I think so.
+
+8
+00:09:44,596 --> 00:09:45,475
+First to get the derivative.
+
+9
+00:09:52,403 --> 00:09:54,403
+because the function is in the integration.
+
+10
+00:09:58,484 --> 00:09:59,344
+Anyone else?
+
+11
+00:10:29,971 --> 00:10:31,531
+Ok, well done. Anyone else?
+
+12
+00:10:33,371 --> 00:10:36,072
+And the correct answer is yes. You are right. 3 over 4.
+
+13
+00:10:40,403 --> 00:10:46,724
+What about others? Of course, once you see the function is in the integration, of course, you need the derivative.
+
+14
+00:10:48,004 --> 00:10:54,244
+But you can have the derivative of an integrated function, that means in the integration,
+
+15
+00:10:55,124 --> 00:10:59,764
+by using the Leibniz rule. We know what to do yesterday, we have learned it.
+
+16
+00:11:02,563 --> 00:11:08,083
+Apply the Leibniz rule and then try to evaluate f1.
+
+17
+00:11:22,964 --> 00:11:26,564
+The others? What about you?
+
+18
+00:11:38,964 --> 00:12:06,964
+3-4
+
+19
+00:12:00,148 --> 00:12:02,148
+Evet, doğru.
+
+20
+00:12:10,355 --> 00:12:11,355
+ok.
+
+21
+00:12:21,268 --> 00:12:23,268
+Şöyleyebiliriz.
+
+22
+00:12:23,268 --> 00:12:27,268
+Bakın, bu derivataçı var.
+
+23
+00:12:27,268 --> 00:12:35,268
+Bu, bu derivataçı var.
+
+24
+00:12:35,268 --> 00:12:51,268
+İlk olarak, bu derivataçı var.
+
+25
+00:12:51,268 --> 00:12:53,268
+Bu derivataçı var.
+
+26
+00:12:53,268 --> 00:12:55,268
+Fx², 2x'ı equal 2.
+
+27
+00:12:55,268 --> 00:12:57,268
+Derivataçı var.
+
+28
+00:12:57,268 --> 00:13:02,268
+2x², 3x²,
+
+29
+00:13:02,268 --> 00:13:05,268
+plus, sin x²,
+
+30
+00:13:05,268 --> 00:13:06,268
+minus 1.
+
+31
+00:13:06,268 --> 00:13:09,268
+Of course, 2x, cos x², minus 1.
+
+32
+00:13:09,268 --> 00:13:11,268
+So, we got fx².
+
+33
+00:13:11,268 --> 00:13:15,268
+We can change x² with x.
+
+34
+00:13:15,268 --> 00:13:17,268
+Yes, we can do.
+
+35
+00:13:17,268 --> 00:13:22,268
+So, fx becomes minus 1 over 2 times the square root 3 plus x,
+
+36
+00:13:22,268 --> 00:13:24,268
+plus, cos x minus 1.
+
+37
+00:13:24,268 --> 00:13:26,268
+And then substitute x is 1.
+
+38
+00:13:26,268 --> 00:13:28,268
+And then get 3 over 4.
+
+39
+00:13:28,268 --> 00:13:33,268
+Because it is, this is 2 minus 1 over 4 plus 1.
+
+40
+00:13:33,268 --> 00:13:35,268
+So, 3 over 2.
+
+41
+00:13:35,268 --> 00:14:02,268
+So, let's go.
+
+42
+00:13:48,436 --> 00:13:49,316
+is it okay?
+
+43
+00:13:56,148 --> 00:13:57,128
+Okay.
+
+44
+00:14:00,788 --> 00:14:02,947
+So, let's continue with the second exercise.
+
+45
+00:14:04,788 --> 00:14:08,228
+It says, let f be a continuous and differentiable function.
+
+46
+00:14:08,327 --> 00:14:11,187
+Okay, if f0 is 0, then evaluate the following limit.
+
+47
+00:14:13,048 --> 00:14:16,427
+Now, don't forget, Leibniz' rule is very, very, very important.
+
+48
+00:14:16,608 --> 00:14:20,288
+And you can use it while having evaluation of a limit than the L'Hospital rule, maybe.
+
+49
+00:14:20,748 --> 00:14:22,388
+That's why it is very important.
+
+50
+00:14:23,967 --> 00:14:26,447
+You will need it, I think, in exam.
+
+51
+00:14:27,048 --> 00:14:27,847
+So, be careful.
+
+52
+00:14:28,067 --> 00:14:29,748
+Especially like these questions.
+
+53
+00:14:29,748 --> 00:14:34,648
+Once we have the derivative of a function in the integration.
+
+54
+00:14:35,008 --> 00:14:38,087
+For any topic, it can be for maximum minimum problem,
+
+55
+00:14:39,488 --> 00:14:42,408
+L'Hospital rule, evaluating limit.
+
+56
+00:14:44,408 --> 00:14:48,528
+Or for an equation, try to find a function or at a point its value.
+
+57
+00:14:49,288 --> 00:14:53,967
+At any area, you can just need Leibniz' rule.
+
+58
+00:14:54,087 --> 00:14:55,807
+That's why, please, don't forget.
+
+59
+00:14:56,707 --> 00:14:58,347
+Always remember Leibniz' rule.
+
+60
+00:15:04,403 --> 00:15:06,004
+x is going to 0 here.
+
+61
+00:15:10,740 --> 00:15:17,940
+x'ı 0, f'
+
+62
+00:16:47,508 --> 00:16:49,748
+Yes, what you get? Let me look.
+
+63
+00:16:55,427 --> 00:16:55,988
+No, not.
+
+64
+00:16:59,908 --> 00:17:02,708
+No, it's not 1. It's not 0.
+
+65
+00:17:05,188 --> 00:17:10,867
+Yes, it's infinite times 0. Yes, we can think. So you have to do something.
+
+66
+00:17:51,347 --> 00:18:02,447
+Once you substitute x0 limit, sin 0, 0 to 0, a function in the integration becomes 0, 0 times infinity.
+
+67
+00:18:03,827 --> 00:18:08,228
+So what to do? Remember these limits? What to do?
+
+68
+00:18:11,447 --> 00:18:13,008
+Yes, you're right, [öğrenci].
+
+69
+00:18:19,604 --> 00:18:21,604
+Ama bu ne negatif, bu pozitif.
+
+70
+00:18:33,107 --> 00:18:33,587
+Maybe.
+
+71
+00:18:39,284 --> 00:18:40,464
+Okey, velden.
+
+72
+00:18:45,203 --> 00:18:46,203
+let's see
+
+73
+00:18:49,779 --> 00:18:52,460
+Here, infinity times zero.
+
+74
+00:18:53,700 --> 00:18:56,039
+No problem if we have an integral or not.
+
+75
+00:18:56,539 --> 00:18:59,799
+The expression in that limit, infinity times zero.
+
+76
+00:18:59,940 --> 00:19:00,599
+So what to do?
+
+77
+00:19:01,379 --> 00:19:04,379
+Of course, to make it zero over zero or infinity over infinity.
+
+78
+00:19:05,319 --> 00:19:08,019
+This is already the one over one minus cosine x.
+
+79
+00:19:08,180 --> 00:19:11,519
+So write it in the denominator and make it zero over zero.
+
+80
+00:19:11,700 --> 00:19:13,460
+And then apply L'Hopital rule, of course.
+
+81
+00:19:14,119 --> 00:19:16,359
+And as you see, while applying L'Hopital rule,
+
+82
+00:19:16,700 --> 00:19:18,759
+we need to get the derivative of an integration
+
+83
+00:19:18,759 --> 00:19:20,579
+by using the Leibniz rule.
+
+84
+00:19:21,240 --> 00:19:22,599
+That's why it's a nice question.
+
+85
+00:19:23,619 --> 00:19:26,220
+So apply the L'Hopital rule and get the derivative
+
+86
+00:19:26,220 --> 00:19:27,519
+of this integration.
+
+87
+00:19:28,259 --> 00:19:30,460
+Rule size that substitute upper limit.
+
+88
+00:19:31,299 --> 00:19:34,859
+F sine x times the derivative of sine x, cosine x.
+
+89
+00:19:35,500 --> 00:19:37,099
+For zero, we will have zero.
+
+90
+00:19:37,680 --> 00:19:39,559
+Derivative is zero because that's all.
+
+91
+00:19:39,720 --> 00:19:42,940
+Over one minus cosine x, the derivative is sine x.
+
+92
+00:19:43,839 --> 00:19:44,859
+Apply x is zero.
+
+93
+00:19:44,859 --> 00:19:48,019
+F sine x.
+
+94
+00:19:48,579 --> 00:19:49,440
+Sine x is zero.
+
+95
+00:19:49,519 --> 00:19:50,399
+F zero is zero.
+
+96
+00:19:50,519 --> 00:19:51,599
+It is given in the question.
+
+97
+00:19:52,200 --> 00:19:53,960
+Zero times one over zero.
+
+98
+00:19:54,259 --> 00:19:55,079
+Zero over zero.
+
+99
+00:19:55,420 --> 00:19:57,240
+Again, we can apply the L'Hopital rule.
+
+100
+00:19:58,079 --> 00:20:00,220
+Get the derivatives again of this multiplication.
+
+101
+00:20:00,220 --> 00:20:04,980
+F prime sine x times the derivative of sine x, cosine x,
+
+102
+00:20:05,039 --> 00:20:06,859
+times cosine x, cosine square.
+
+103
+00:20:08,480 --> 00:20:11,500
+Plus, F sine x times the derivative of cosine x,
+
+104
+00:20:11,619 --> 00:20:12,680
+minus sine x,
+
+105
+00:20:13,200 --> 00:20:15,980
+over sine x as derivative of cosine x.
+
+106
+00:20:15,980 --> 00:20:18,200
+Now substitute x is zero.
+
+107
+00:20:18,519 --> 00:20:20,559
+Do we still have an indeterminate form or not?
+
+108
+00:20:20,680 --> 00:20:21,139
+Let's see.
+
+109
+00:20:22,240 --> 00:20:23,299
+Sine zero is zero.
+
+110
+00:20:23,379 --> 00:20:25,000
+F prime of zero times one,
+
+111
+00:20:25,259 --> 00:20:27,779
+minus F zero was zero.
+
+112
+00:20:28,000 --> 00:20:28,920
+Zero times zero,
+
+113
+00:20:29,500 --> 00:20:30,359
+over one.
+
+114
+00:20:30,579 --> 00:20:32,720
+F prime of zero times one over one.
+
+115
+00:20:33,079 --> 00:20:35,639
+So F prime of zero is the result.
+
+116
+00:20:35,920 --> 00:20:37,059
+So it's a nice, I think,
+
+117
+00:20:37,400 --> 00:20:38,539
+it can be a test question.
+
+118
+00:20:38,720 --> 00:20:39,559
+I think it's so proper.
+
+119
+00:20:40,460 --> 00:20:41,240
+A nice question.
+
+120
+00:20:41,240 --> 00:20:43,839
+Not so hard, easy.
+
+121
+00:20:44,980 --> 00:20:46,180
+But you have to do
+
+122
+00:20:46,180 --> 00:20:48,339
+what you need.
+
+123
+00:20:48,759 --> 00:20:49,539
+You have to guess.
+
+124
+00:20:53,019 --> 00:20:54,139
+For integration,
+
+125
+00:20:55,519 --> 00:20:57,579
+L'Hopital get the derivatives one by one.
+
+126
+00:20:57,900 --> 00:20:59,900
+We need to get derivative of the integration.
+
+127
+00:21:00,519 --> 00:21:02,319
+How can we get the derivative of integration?
+
+128
+00:21:02,519 --> 00:21:04,059
+By using the Leibniz rule.
+
+129
+00:21:04,519 --> 00:21:05,880
+Leibniz rule says that
+
+130
+00:21:05,880 --> 00:21:09,299
+apply the upper limit to the function substitute,
+
+131
+00:21:09,299 --> 00:21:12,059
+F sine x and multiply with the derivative of it.
+
+132
+00:21:12,519 --> 00:21:14,779
+Cosine x minus lower limit.
+
+133
+00:21:15,259 --> 00:21:16,539
+F zero times zero,
+
+134
+00:21:16,660 --> 00:21:17,240
+it must be,
+
+135
+00:21:17,480 --> 00:21:19,079
+because zero has the derivative,
+
+136
+00:21:19,680 --> 00:21:20,059
+zero.
+
+137
+00:21:20,200 --> 00:21:21,139
+For any constant,
+
+138
+00:21:21,400 --> 00:21:22,440
+it becomes zero.
+
+139
+00:21:22,599 --> 00:21:23,599
+So no need to write.
+
+140
+00:21:24,039 --> 00:21:25,579
+Over sine x.
+
+141
+00:21:26,119 --> 00:21:26,920
+Are you okay now?
+
+142
+00:21:34,228 --> 00:21:35,428
+Okay, anyone else?
+
+143
+00:21:37,648 --> 00:21:39,208
+Any problem or any question?
+
+144
+00:21:53,203 --> 00:21:53,563
+ok.
+
+145
+00:21:59,763 --> 00:22:04,123
+So, let's continue with the next question.
+
+146
+00:22:10,387 --> 00:22:17,427
+Show that the integral 0 to 1 x cubed minus 3x plus 2 dx is 3 over 4 by using Riemann sum.
+
+147
+00:22:54,228 --> 00:23:02,548
+Have you solved the questions that I gave you yesterday about Riemann sump examples? Have you solved them?
+
+148
+00:23:04,788 --> 00:23:09,587
+Now I just remembered them. I forgot them. Okay.
+
+149
+00:23:13,619 --> 00:23:14,919
+Well done. Anyone else?
+
+150
+00:23:50,451 --> 00:23:50,811
+ok.
+
+151
+00:23:56,723 --> 00:23:58,263
+Okay, thank you, all of you.
+
+152
+00:24:22,387 --> 00:24:26,407
+Today, I will upload the solutions of them also, don't worry.
+
+153
+00:24:28,687 --> 00:24:32,028
+If we have enough time, we can look at them together.
+
+154
+00:26:54,516 --> 00:26:54,836
+really?
+
+155
+00:27:05,428 --> 00:27:09,588
+Now you will see the solution and maybe you can see your problem.
+
+156
+00:27:11,188 --> 00:28:19,656
+Anyone else?
+
+157
+00:28:39,700 --> 00:28:42,420
+8x3, it must be 3x4.
+
+158
+00:29:09,619 --> 00:29:15,859
+Okay, so let's see the solution. This time is enough. Look.
+
+159
+00:29:17,859 --> 00:29:27,859
+Here, as you see, right endpoint is chosen. No problem, right or left. It is not defined. Any Riemann sum you can do.
+
+160
+00:29:31,251 --> 00:29:33,251
+ve 3rd time aynı zamanda.
+
+161
+00:29:33,251 --> 00:29:37,251
+Ok, maybe I am mistaken, but I think no.
+
+162
+00:29:37,251 --> 00:29:39,251
+This is correct.
+
+163
+00:29:39,251 --> 00:29:40,251
+Look.
+
+164
+00:29:43,347 --> 00:29:49,927
+Fci delta xi, ci is a plus i times b minus a over n, right hand point.
+
+165
+00:29:50,567 --> 00:29:54,488
+And delta xi is b minus a over n, as usual.
+
+166
+00:29:55,347 --> 00:29:58,667
+And the interval is 0 to 1, so a is 0, b is 1.
+
+167
+00:30:01,687 --> 00:30:05,768
+So F0 plus i times 1 over n times 1 over n.
+
+168
+00:30:05,867 --> 00:30:06,788
+Okay, it's easy.
+
+169
+00:30:08,248 --> 00:30:09,488
+What about the function?
+
+170
+00:30:09,728 --> 00:30:10,887
+Function is complicated.
+
+171
+00:30:11,067 --> 00:30:12,788
+X cubed minus 3x plus 2.
+
+172
+00:30:12,788 --> 00:30:19,307
+So F i over n, i cubed over n cubed minus 3i over n plus 2 times 1 over n.
+
+173
+00:30:20,167 --> 00:30:21,587
+And multiply with 1 over n.
+
+174
+00:30:21,768 --> 00:30:27,187
+So i cubed over n to 4 minus 3 over n squared i plus 1 over n times 2.
+
+175
+00:30:27,548 --> 00:30:30,187
+Now some formalizations you need to use.
+
+176
+00:30:31,607 --> 00:30:33,347
+Find some formalizations.
+
+177
+00:30:34,427 --> 00:30:37,967
+For i cubed, 1 over n to 4 is the coefficient.
+
+178
+00:30:38,288 --> 00:30:42,008
+i cubed, the formula n squared, n plus 1 over n squared over 4.
+
+179
+00:30:42,008 --> 00:30:47,127
+And minus 3 over n squared times i, n plus 1 over 2.
+
+180
+00:30:48,528 --> 00:30:53,307
+n plus 1 over n times 2 becomes 2n.
+
+181
+00:30:53,307 --> 00:30:54,488
+Okay.
+
+182
+00:30:55,827 --> 00:30:57,488
+So at the end, the limit of them.
+
+183
+00:30:58,347 --> 00:31:02,708
+Look, in the first expression, n to 4, 4n to 4, so 1 over 4.
+
+184
+00:31:02,967 --> 00:31:03,288
+Okay.
+
+185
+00:31:03,708 --> 00:31:05,528
+And the second one, let me look.
+
+186
+00:31:06,008 --> 00:31:08,268
+Minus 3n squared over 2n squared.
+
+187
+00:31:08,387 --> 00:31:09,827
+That means minus 3 over 2.
+
+188
+00:31:09,827 --> 00:31:12,827
+Plus 2n squared.
+
+189
+00:31:12,827 --> 00:31:13,827
+Plus 2.
+
+190
+00:31:13,827 --> 00:31:14,887
+It's 2 already, so plus 2.
+
+191
+00:31:15,788 --> 00:31:17,187
+And results 3 over 4.
+
+192
+00:31:17,187 --> 00:31:44,187
+Minus 3.
+
+193
+00:31:23,028 --> 00:31:25,867
+Now, are you okay? Is there any problem here?
+
+194
+00:31:46,195 --> 00:31:47,955
+[öğrenci], have you seen your problem?
+
+195
+00:31:54,708 --> 00:31:55,208
+ok.
+
+196
+00:32:00,500 --> 00:32:03,299
+çok güzel. Eğer bu sorun hakkında değil mi?
+
+197
+00:32:07,539 --> 00:32:17,319
+Sometimes if we repeat the same solution and have no time between them, sometimes we make the same mistake, I think.
+
+198
+00:32:18,200 --> 00:32:21,119
+Sometimes it's nice to have some time.
+
+199
+00:32:22,940 --> 00:32:23,319
+Okay.
+
+200
+00:32:26,500 --> 00:32:33,259
+Ah, okay. In the third time you are correct. Okay. Now I understand. Okay.
+
+201
+00:32:37,491 --> 00:32:39,692
+I can repeat the fourth part, of course.
+
+202
+00:32:41,031 --> 00:32:42,912
+This one, this step.
+
+203
+00:32:43,971 --> 00:32:44,831
+You mean, [öğrenci]?
+
+204
+00:32:45,451 --> 00:32:46,152
+Fourth part?
+
+205
+00:32:47,811 --> 00:32:48,771
+Fourth step.
+
+206
+00:32:49,791 --> 00:32:50,152
+Okay.
+
+207
+00:32:50,831 --> 00:32:51,172
+Look.
+
+208
+00:32:52,711 --> 00:32:54,872
+Some formalizations we are using.
+
+209
+00:32:55,951 --> 00:32:57,591
+1 over n to 4 is the coefficient.
+
+210
+00:32:58,872 --> 00:33:00,331
+I, indexes are important.
+
+211
+00:33:00,331 --> 00:33:03,372
+I cube, think that I is 1 to n.
+
+212
+00:33:03,451 --> 00:33:05,531
+I cube has a formula I have given you.
+
+213
+00:33:05,531 --> 00:33:09,971
+n squared, n plus 1 over 4 is the related formula.
+
+214
+00:33:10,591 --> 00:33:12,971
+Minus 3 over n squared times I.
+
+215
+00:33:13,531 --> 00:33:14,471
+I is n.
+
+216
+00:33:14,611 --> 00:33:15,771
+n plus 1 over 2.
+
+217
+00:33:16,672 --> 00:33:18,731
+This is 2 over n.
+
+218
+00:33:19,192 --> 00:33:22,091
+2 over n again a constant, so n times 2 over n.
+
+219
+00:33:22,491 --> 00:33:25,451
+Because n numbers of same number is repeated and summed.
+
+220
+00:33:25,771 --> 00:33:28,231
+That's why it is 2.
+
+221
+00:33:29,551 --> 00:33:30,871
+And then get the limits.
+
+222
+00:33:31,031 --> 00:33:31,991
+One by one limits.
+
+223
+00:33:31,991 --> 00:33:36,912
+Here in the numerator, n to 4 over 4 n to 4.
+
+224
+00:33:37,251 --> 00:33:38,172
+So 1 over 4.
+
+225
+00:33:38,811 --> 00:33:41,491
+Minus 3 n squared over 2 n squared.
+
+226
+00:33:42,031 --> 00:33:43,491
+Minus 3 over 2 limits.
+
+227
+00:33:44,231 --> 00:33:45,172
+n is going to infinity.
+
+228
+00:33:45,531 --> 00:33:47,451
+And 2 n over n.
+
+229
+00:33:47,692 --> 00:33:48,432
+2 of course.
+
+230
+00:33:48,432 --> 00:34:10,052
+So 3 over 4.
+
+231
+00:34:14,643 --> 00:34:17,123
+Ve bu kadar daha
+
+232
+00:34:23,219 --> 00:34:44,099
+Normalde Riemann's sums bu n'e de n'e
+
+233
+00:34:47,956 --> 00:34:59,635
+Okay, so let's continue. It says, it's a nice question again, second order derivative of f at the value, at the point 1.
+
+234
+00:35:01,236 --> 00:35:12,276
+1 to x, 2 to 2t to 2, 2t dt, for x is greater than q to 1. Look, it's very hard to read it.
+
+235
+00:35:23,476 --> 00:35:30,476
+ve bu Leibniz'in
+
+236
+00:36:29,748 --> 00:36:32,068
+Maybe. Anyone else?
+
+237
+00:36:41,652 --> 00:36:47,367
+ok.
+
+238
+00:37:28,436 --> 00:37:31,216
+Evet, 2 ln2 plus 2.
+
+239
+00:37:32,436 --> 00:37:34,816
+That means 2 times ln2 plus 1.
+
+240
+00:37:36,056 --> 00:37:37,276
+How did you get 2?
+
+241
+00:37:37,756 --> 00:37:38,536
+Not only 2.
+
+242
+00:37:47,059 --> 00:37:48,500
+2ln, 2 plus 2.
+
+243
+00:37:55,123 --> 00:37:56,123
+let's see
+
+244
+00:38:00,500 --> 00:38:10,519
+Derivative, according to the formula, upper limit 2x2x times 1 minus 0 for 1.
+
+245
+00:38:11,019 --> 00:38:14,139
+Okay, so f' of x is 2x2x times 1.
+
+246
+00:38:14,840 --> 00:38:19,679
+So, of course, once we have such a function, logarithmic differentiation is easier.
+
+247
+00:38:20,239 --> 00:38:26,539
+So, first to get the logarithm of both of them and then get the derivative.
+
+248
+00:38:26,539 --> 00:38:30,619
+So ln f' is x times ln 2x.
+
+249
+00:38:31,719 --> 00:38:34,559
+Derivative with respect to x on both sides.
+
+250
+00:38:35,000 --> 00:38:39,960
+ln derivative over the function itself is multiplication.
+
+251
+00:38:41,000 --> 00:38:46,619
+Derivative of x is 1, 1 times ln 2x plus x times the derivative of ln 2x, 2 over 2x.
+
+252
+00:38:47,559 --> 00:38:51,199
+So, second order derivative is equal to multiply with f'
+
+253
+00:38:51,199 --> 00:38:57,099
+f' times ln 2x plus 1.
+
+254
+00:38:58,099 --> 00:39:01,280
+f' is 2x2x.
+
+255
+00:39:02,179 --> 00:39:06,920
+Okay, so at the point 1, it is 2 times ln 2 plus 1.
+
+256
+00:39:09,019 --> 00:39:11,059
+Haven't you done it in this way?
+
+257
+00:39:12,019 --> 00:39:13,659
+How did it get to, I just wonder.
+
+258
+00:39:13,659 --> 00:39:37,420
+Okay.
+
+259
+00:39:19,155 --> 00:39:20,476
+Okay, no problem.
+
+260
+00:39:23,755 --> 00:39:24,815
+Now, is it okay?
+
+261
+00:39:28,403 --> 00:39:28,903
+ok.
+
+262
+00:39:39,476 --> 00:39:40,476
+not at all.
+
+263
+00:39:49,780 --> 00:39:54,300
+So, if you are okay, let's continue the next exercise.
+
+264
+00:39:57,080 --> 00:40:01,140
+Limit of 1 over x squared times the integration you see here.
+
+265
+00:40:01,500 --> 00:40:03,860
+And see what happens at the point 0.
+
+266
+00:40:09,588 --> 00:40:12,848
+Bu tür questions I think so proper for the exam.
+
+267
+00:40:14,548 --> 00:40:16,928
+Using the leptis rule, rapital rule.
+
+268
+00:40:18,948 --> 00:40:20,327
+It's so nice I think.
+
+269
+00:40:36,371 --> 00:40:37,611
+Please do it, I'm waiting.
+
+270
+00:43:09,876 --> 00:43:11,876
+Okay, let me look.
+
+271
+00:43:19,155 --> 00:43:21,355
+2x, only 2x.
+
+272
+00:43:31,251 --> 00:43:38,851
+Some of you get 2², 2², no, it's 2 only.
+
+273
+00:43:55,347 --> 00:43:57,347
+ok, ok, ok.
+
+274
+00:44:04,596 --> 00:44:05,155
+Okay.
+
+275
+00:44:06,856 --> 00:44:07,956
+So let's see.
+
+276
+00:44:08,856 --> 00:44:09,556
+It's enough.
+
+277
+00:44:12,056 --> 00:44:14,615
+Once you see such a limit, always remember
+
+278
+00:44:14,615 --> 00:44:17,655
+an indeterminate form and L'Bitall rule that you need
+
+279
+00:44:17,655 --> 00:44:21,695
+and also the Leibniz rule, probably, in my opinion.
+
+280
+00:44:22,476 --> 00:44:25,916
+And here 1 over x squared, when x is going to 0, infinity.
+
+281
+00:44:26,456 --> 00:44:28,576
+And 0 to 0, 0.
+
+282
+00:44:29,715 --> 00:44:30,795
+Infinite times 0.
+
+283
+00:44:30,795 --> 00:44:33,635
+Of course, you will just make it 0 over 0 or infinity over infinity.
+
+284
+00:44:33,635 --> 00:44:38,096
+Once you put x squared here, 0 over 0 you will get.
+
+285
+00:44:38,235 --> 00:44:41,795
+And then now it is proper for applying the Leibniz rule.
+
+286
+00:44:44,215 --> 00:44:47,795
+So for getting derivative of disintegration,
+
+287
+00:44:47,916 --> 00:44:49,315
+Leibniz formula you need.
+
+288
+00:44:51,155 --> 00:44:52,815
+Upper limit is x squared.
+
+289
+00:44:53,135 --> 00:44:57,655
+Substitute to function e to x squared minus 1 over 1 minus 2 e to
+
+290
+00:44:57,655 --> 00:45:05,916
+1 minus n square root 2 minus e to x squared times 2x minus 0
+
+291
+00:45:05,916 --> 00:45:07,896
+because the derivative of it is 0.
+
+292
+00:45:08,516 --> 00:45:10,476
+Over x squared is 2x.
+
+293
+00:45:11,295 --> 00:45:12,476
+2x are cancelled.
+
+294
+00:45:12,735 --> 00:45:13,295
+Let me look.
+
+295
+00:45:14,615 --> 00:45:16,175
+Do we need, again, the L'Bitall rule?
+
+296
+00:45:17,175 --> 00:45:22,476
+e to x squared over 1 minus n square root 2 minus e to x squared.
+
+297
+00:45:22,476 --> 00:45:26,755
+Just multiply and divide with the conjugate of the denominator.
+
+298
+00:45:28,835 --> 00:45:34,456
+And then see, it is 1 plus in the square root 2 minus e to x squared.
+
+299
+00:45:34,695 --> 00:45:35,695
+This is going to 0.
+
+300
+00:45:36,536 --> 00:45:38,456
+So e to 0 is 1.
+
+301
+00:45:38,536 --> 00:45:39,615
+2 minus 1 is 1.
+
+302
+00:45:39,715 --> 00:45:42,416
+1 plus 1 is 2, as you see.
+
+303
+00:45:42,416 --> 00:45:46,496
+Are you okay?
+
+304
+00:46:29,300 --> 00:46:32,100
+Okay, so what about the next question?
+
+305
+00:46:33,300 --> 00:46:39,780
+It says 0 to cosine x, f t dt is arctangent x. So what's the f at the point 1 over the square root 2?
+
+306
+00:46:41,940 --> 00:46:43,780
+It's easy, let's evaluate.
+
+307
+00:48:39,123 --> 00:48:41,123
+Evet, we use the labnits.
+
+308
+00:48:42,563 --> 00:48:43,563
+Of course.
+
+309
+00:48:52,980 --> 00:48:58,079
+Evet, biraz daha çok komplik edilmiş. Teşekkürler, Ala. Evet, doğru.
+
+310
+00:49:31,668 --> 00:49:34,307
+Anyone who gets a similar result?
+
+311
+00:49:49,492 --> 00:49:50,492
+ok?
+
+312
+00:49:56,052 --> 00:49:59,052
+let's see. Look.
+
+313
+00:50:02,804 --> 00:50:08,684
+If we need, that's why we need to derivate, using the Leibniz rule.
+
+314
+00:50:09,864 --> 00:50:13,724
+And both sides, let's get the derivative with respect to x.
+
+315
+00:50:14,104 --> 00:50:22,463
+Upper limit is cos x, so f cos x times the derivative of cos x minus sin x minus f0 times 0, 0.
+
+316
+00:50:23,244 --> 00:50:25,824
+Arctangent x, 1 over 1 plus x squared.
+
+317
+00:50:26,963 --> 00:50:31,543
+So f cos x is minus 1 over 1 plus x squared times sin x.
+
+318
+00:50:31,543 --> 00:50:36,423
+It's okay. What about f1 over square root 2?
+
+319
+00:50:36,943 --> 00:50:41,023
+How can we get f1 over square root 2 for x's pi over 4?
+
+320
+00:50:43,003 --> 00:50:47,664
+And like you said, [öğrenci] and [öğrenci], you're right.
+
+321
+00:50:50,164 --> 00:50:53,724
+For applying x's pi over 4, you get this result.
+
+322
+00:50:53,724 --> 00:50:57,584
+Minus 16 square root 2 over pi squared plus 16.
+
+323
+00:50:58,624 --> 00:51:00,483
+Thank you. And well done.
+
+324
+00:51:16,916 --> 00:51:17,736
+Any question?
+
+325
+00:51:21,588 --> 00:51:23,788
+Are you okay with it? I think you are.
+
+326
+00:51:29,523 --> 00:51:30,023
+ok.
+
+327
+00:51:35,827 --> 00:51:37,188
+Let's see the next question.
+
+328
+00:51:39,108 --> 00:51:45,907
+Again, it's a nice question. Look, for extreme points also, you can need the Leibniz rule. It's so nice.
+
+329
+00:51:47,507 --> 00:51:55,347
+As I said in the beginning of the course, at any topic like max, mean limit evaluations or the
+
+330
+00:51:55,347 --> 00:52:00,067
+finding the values of some functions at the point, you can need the Leibniz rule once you have a
+
+331
+00:52:00,067 --> 00:52:02,628
+function in the integration and need to derivate it.
+
+332
+00:52:06,132 --> 00:52:08,892
+ekstrem points, 4 ekstrem points, what to do?
+
+333
+00:52:10,811 --> 00:52:12,412
+Specify the critical points.
+
+334
+00:52:12,992 --> 00:52:15,172
+How can we specify the critical points?
+
+335
+00:52:30,324 --> 00:52:33,644
+Evet, ilk derivette ve bir derivette yapabilirsiniz.
+
+336
+00:52:33,644 --> 00:52:35,644
+Yani bir derivette yapabilirsiniz.
+
+337
+00:52:42,068 --> 00:52:44,328
+0 and, is it minus 1?
+
+338
+00:52:46,648 --> 00:52:47,648
+Are you sure?
+
+339
+00:52:55,092 --> 00:52:56,331
+Evet, 0 ve 1.
+
+340
+00:52:58,392 --> 00:53:00,512
+Which one is maximum, which one is minimum?
+
+341
+00:53:00,872 --> 00:53:03,032
+Or are they both maximum or both minimum?
+
+342
+00:53:06,612 --> 00:53:07,112
+ok.
+
+343
+00:53:09,251 --> 00:53:13,972
+Tell me the local minimum and local maximum. Ok, no problem.
+
+344
+00:53:23,635 --> 00:53:24,936
+Yes, you're right, [öğrenci].
+
+345
+00:53:27,875 --> 00:53:30,596
+Did you see it from the sign table of f' ?
+
+346
+00:53:35,123 --> 00:53:36,123
+Okay, well done.
+
+347
+00:53:54,835 --> 00:53:56,835
+Şimdi bakalım.
+
+348
+00:53:56,835 --> 00:54:04,835
+Bakın, bu konuda var.
+
+349
+00:54:04,835 --> 00:54:22,835
+Bu konuda var.
+
+350
+00:54:22,835 --> 00:54:26,835
+Fx is the capital F is x minus x square over 1 plus x to 4.
+
+351
+00:54:26,835 --> 00:54:28,835
+Okay.
+
+352
+00:54:28,835 --> 00:54:30,835
+F prime.
+
+353
+00:54:30,835 --> 00:54:32,835
+So make it equal to 0.
+
+354
+00:54:32,835 --> 00:54:34,835
+How can it be 0 or undefined?
+
+355
+00:54:34,835 --> 00:54:36,835
+Or x is 0.
+
+356
+00:54:36,835 --> 00:54:38,835
+Roots of this rational function.
+
+357
+00:54:38,835 --> 00:54:40,835
+0 and 1.
+
+358
+00:54:40,835 --> 00:54:42,835
+And the denominator cannot be 0.
+
+359
+00:54:42,835 --> 00:54:46,835
+So look out for the sign table easier way.
+
+360
+00:54:46,835 --> 00:54:48,835
+As we did before.
+
+361
+00:54:48,835 --> 00:54:50,835
+So 0 and 1 are the roots.
+
+362
+00:54:50,835 --> 00:54:52,835
+Look.
+
+363
+00:54:52,835 --> 00:54:54,835
+Negative, positive, negative.
+
+364
+00:54:54,835 --> 00:54:56,835
+That means.
+
+365
+00:54:56,835 --> 00:54:58,835
+Negative imparable to 0.
+
+366
+00:54:58,835 --> 00:55:00,835
+Function is decreasing.
+
+367
+00:55:00,835 --> 00:55:02,835
+Up to 0.
+
+368
+00:55:02,835 --> 00:55:04,835
+After 0 it starts to increase.
+
+369
+00:55:04,835 --> 00:55:06,835
+Means it is a local minimum.
+
+370
+00:55:06,835 --> 00:55:08,835
+And for 1.
+
+371
+00:55:08,835 --> 00:55:10,835
+0 to 1.
+
+372
+00:55:10,835 --> 00:55:12,835
+The function is increasing.
+
+373
+00:55:12,835 --> 00:55:14,835
+But after 1.
+
+374
+00:55:14,835 --> 00:55:15,835
+It starts to decrease.
+
+375
+00:55:15,835 --> 00:55:17,835
+That means it is a local maximum.
+
+376
+00:55:17,835 --> 00:55:18,835
+That's all.
+
+377
+00:55:18,835 --> 00:55:20,835
+For classification.
+
+378
+00:55:20,835 --> 00:55:22,835
+Sign table is so useful.
+
+379
+00:55:22,835 --> 00:55:23,835
+Is so useful.
+
+380
+00:55:23,835 --> 00:55:50,835
+For.
+
+381
+00:55:41,460 --> 00:55:41,860
+ok.
+
+382
+00:55:45,460 --> 00:56:09,960
+It's easy. If you have any question, please write me. And then continue. Again, a similar question for Leibniz rule. F'1 is asked. But here, be careful, here f' t is included in the integration.
+
+383
+00:57:24,148 --> 00:57:25,528
+Evet, you're right, this one.
+
+384
+00:57:35,219 --> 00:57:36,419
+Evet, doğru.
+
+385
+00:57:36,419 --> 00:57:37,419
+Anyone?
+
+386
+00:57:44,244 --> 00:57:46,244
+Evet, evet, doğru.
+
+387
+00:57:54,132 --> 00:57:54,751
+ok.
+
+388
+00:58:07,284 --> 00:58:08,503
+Okay, you're right.
+
+389
+00:58:17,300 --> 00:58:19,860
+So let's see the solution. We are all okay. Thank you.
+
+390
+00:58:22,019 --> 00:58:28,900
+Only the problem is here, 1 over x times the integration, that means two functions of x to derivate, one by one.
+
+391
+00:58:29,460 --> 00:58:37,380
+So first is the derivative of 1 over x minus 1 over x squared times the integration plus 1 over x times the derivative of it.
+
+392
+00:58:38,580 --> 00:58:46,980
+Again, apply the upper limit 2x minus f' times 1 minus 0. Derivative of 1 is 0. So we get this.
+
+393
+00:58:48,180 --> 00:59:00,660
+And we need only one f' of 1 substitute minus 1 times 1 to 1 becomes 0. So this part, first part is 0. Plus 1 times 2 minus f' of 1.
+
+394
+00:59:02,900 --> 00:59:11,700
+So f' of 1 is equal to 2 minus f' of 1. So f' of 1 is 1. Like you said. Thank you.
+
+395
+00:59:34,771 --> 00:59:35,711
+Next question.
+
+396
+00:59:39,155 --> 00:59:48,056
+Evaluate the average value of f on the interval minus 1 to 1 and find the number c, which satisfies the mean value theorem for definite integrals.
+
+397
+00:59:49,476 --> 00:59:58,456
+Yesterday we learned that how can we evaluate the average value of a function on an interval within integration?
+
+398
+00:59:58,835 --> 01:00:02,956
+We just integrate the function on that interval and divide with the length of the interval.
+
+399
+01:00:09,155 --> 01:00:12,436
+We just integrate the average value of the interval at least at one point.
+
+400
+01:00:13,576 --> 01:00:20,115
+So let's find that point, that number c, where it has the average value.
+
+401
+01:00:20,675 --> 01:00:28,556
+First evaluate the average value and then specify at which point it gets the average value on the interval minus 1 and 1.
+
+402
+01:00:53,556 --> 01:00:56,235
+What does it mean? x is 0 by 1?
+
+403
+01:00:58,096 --> 01:01:02,735
+Ah, you get, you mean that the average value is 1 and it gets it at 0.0.
+
+404
+01:01:03,876 --> 01:01:04,356
+Am I right?
+
+405
+01:01:06,876 --> 01:01:08,215
+Okay, yes, you're right.
+
+406
+01:01:09,516 --> 01:01:09,996
+Well done.
+
+407
+01:01:11,135 --> 01:01:12,056
+Anyone else?
+
+408
+01:01:24,884 --> 01:01:26,884
+Evet, evet, doğru.
+
+409
+01:01:29,884 --> 01:01:30,884
+Ve süreklik,
+
+410
+01:01:30,884 --> 01:01:31,884
+ve süreklik,
+
+411
+01:01:31,884 --> 01:01:34,884
+at 0.
+
+412
+01:01:49,748 --> 01:01:50,248
+anyone?
+
+413
+01:02:02,387 --> 01:02:07,887
+if we have x is 1 over 2, it results 2. But average value is 1.
+
+414
+01:02:12,244 --> 01:02:13,704
+[öğrenci], ok.
+
+415
+01:02:19,764 --> 01:02:20,764
+ok?
+
+416
+01:02:44,724 --> 01:02:48,264
+ok, and c is 0.
+
+417
+01:02:55,572 --> 01:02:58,251
+Ok, so let's see the solution. It was an easy question.
+
+418
+01:02:59,332 --> 01:03:05,092
+We know the average value is integration of the function on a specific interval
+
+419
+01:03:05,092 --> 01:03:08,612
+because we are asked to have the average value of that function on this interval.
+
+420
+01:03:09,692 --> 01:03:12,332
+So here the interval is minus 1 to 1.
+
+421
+01:03:13,832 --> 01:03:19,271
+So first we need to integrate our function on that specific interval minus 1 to 1
+
+422
+01:03:19,271 --> 01:03:23,692
+and then divide with the length of the interval.
+
+423
+01:03:23,692 --> 01:03:25,672
+The length of the interval is 2.
+
+424
+01:03:26,211 --> 01:03:28,132
+So 1 over 2 times integration.
+
+425
+01:03:29,132 --> 01:03:30,532
+Integration is easier.
+
+426
+01:03:30,912 --> 01:03:33,751
+X squared plus X minus 1 to 1.
+
+427
+01:03:33,892 --> 01:03:36,231
+So result is 1.
+
+428
+01:03:37,311 --> 01:03:41,332
+And then mean value theorem for definite integrals says that
+
+429
+01:03:41,332 --> 01:03:47,052
+our function has the average value at least one point in this interval.
+
+430
+01:03:47,052 --> 01:03:57,932
+So FC is 1 at a specific C at once or any other point also we may have.
+
+431
+01:03:58,352 --> 01:04:04,092
+But in some point C on that interval it gets the value average value which is 1.
+
+432
+01:04:04,771 --> 01:04:28,672
+So C is 0 yes here.
+
+433
+01:04:14,771 --> 01:04:29,751
+What about this question? It says, show that the mean value theorem for definite integral can be applied to the function f, c plus d cosine x on minus pi to pi, and find average f.
+
+434
+01:04:37,811 --> 01:04:44,911
+For mean value theorem, just remember, yes, we may have no, yes, you're right, we may have a break after this question.
+
+435
+01:04:46,011 --> 01:04:53,031
+Just remember, for mean value theorem, for definite integrals, which conditions we need.
+
+436
+01:05:25,043 --> 01:05:30,203
+Evet, you're right [öğrenci]. Average value is C.
+
+437
+01:05:45,012 --> 01:05:49,692
+Also, how can we show that the mean value theorem can be applied to this function? What do you think?
+
+438
+01:06:03,347 --> 01:06:06,027
+Bu konuları, min ve litera?
+
+439
+01:06:22,804 --> 01:06:50,403
+No, you're right. Of course, the formula and integration. But it says also, how can we apply, how can we, how can we be sure that about mean value theorem holds for this function? How can we apply this theorem to this function? I'm asking all of you, conditions we need? Just remember the conditions of role and mean value.
+
+440
+01:06:50,403 --> 01:06:55,023
+is the minimum for definite integrals. And which condition we need?
+
+441
+01:07:03,923 --> 01:07:05,244
+Of course, the continuity.
+
+442
+01:07:05,963 --> 01:07:07,483
+Continuity on the given interval.
+
+443
+01:07:07,884 --> 01:07:08,043
+Okay.
+
+444
+01:07:09,344 --> 01:07:10,003
+As usual.
+
+445
+01:07:10,423 --> 01:07:11,003
+Yes, you are at.
+
+446
+01:07:11,083 --> 01:07:11,563
+Continuity.
+
+447
+01:07:12,804 --> 01:07:15,324
+Let's see the solution and then have a break.
+
+448
+01:07:16,563 --> 01:07:18,684
+F is C plus D cosine X.
+
+449
+01:07:18,804 --> 01:07:20,724
+It is continuous on minus pi to pi.
+
+450
+01:07:20,864 --> 01:07:22,744
+Yes, cosine X is continuous.
+
+451
+01:07:23,583 --> 01:07:25,264
+C and D are real numbers.
+
+452
+01:07:25,264 --> 01:07:26,204
+So no problem.
+
+453
+01:07:26,324 --> 01:07:27,623
+It's continuous on that interval.
+
+454
+01:07:27,804 --> 01:07:30,864
+So we can apply mean value theorem and say that.
+
+455
+01:07:30,864 --> 01:07:34,224
+Mean value theorem says that the function.
+
+456
+01:07:34,483 --> 01:07:36,304
+When it is continuous on a given interval.
+
+457
+01:07:36,804 --> 01:07:38,543
+It gets the average value.
+
+458
+01:07:39,264 --> 01:07:41,523
+At least at one point on that interval.
+
+459
+01:07:42,143 --> 01:07:43,923
+So we are sure that at one point.
+
+460
+01:07:44,043 --> 01:07:45,483
+It gets the average value.
+
+461
+01:07:45,623 --> 01:07:47,684
+We are asked to have the average value of it only.
+
+462
+01:07:48,543 --> 01:07:50,324
+C and.
+
+463
+01:07:52,824 --> 01:07:54,403
+A is minus pi.
+
+464
+01:07:54,523 --> 01:07:55,184
+B is pi.
+
+465
+01:07:55,764 --> 01:07:59,023
+So the length of the interval is 2 pi.
+
+466
+01:07:59,023 --> 01:08:02,043
+Integration is minus pi to pi.
+
+467
+01:08:02,324 --> 01:08:02,603
+F.
+
+468
+01:08:03,043 --> 01:08:04,264
+Divided with 2 pi.
+
+469
+01:08:06,443 --> 01:08:08,943
+Integration of C plus D cosine X.
+
+470
+01:08:09,043 --> 01:08:11,744
+With respect to CX plus D times sine X.
+
+471
+01:08:11,864 --> 01:08:12,123
+Clearly.
+
+472
+01:08:12,344 --> 01:08:13,403
+Minus pi to pi.
+
+473
+01:08:14,103 --> 01:08:14,384
+Okay.
+
+474
+01:08:14,463 --> 01:08:15,764
+1 over 2 pi times.
+
+475
+01:08:16,423 --> 01:08:17,724
+First substitute pi.
+
+476
+01:08:18,543 --> 01:08:21,104
+C pi plus D sine pi.
+
+477
+01:08:21,663 --> 01:08:24,203
+Sine pi and minus sine pi are zero.
+
+478
+01:08:24,203 --> 01:08:26,283
+So on the CX we have.
+
+479
+01:08:26,863 --> 01:08:28,043
+C times pi.
+
+480
+01:08:28,283 --> 01:08:30,764
+Minus minus times C times pi.
+
+481
+01:08:30,984 --> 01:08:31,083
+So.
+
+482
+01:08:31,984 --> 01:08:33,344
+C pi plus C pi.
+
+483
+01:08:33,484 --> 01:08:34,224
+2 C pi.
+
+484
+01:08:34,384 --> 01:08:35,703
+Divided with 2 pi.
+
+485
+01:08:36,184 --> 01:08:38,743
+It results C is the average value of the function.
+
+486
+01:08:39,243 --> 01:08:41,203
+C plus D cosine X on the interval.
+
+487
+01:08:41,363 --> 01:08:42,323
+Minus pi to pi.
+
+488
+01:08:45,144 --> 01:08:47,724
+You can easily specify at which point.
+
+489
+01:08:48,524 --> 01:08:49,963
+It gets this value.
+
+490
+01:08:50,564 --> 01:08:52,644
+But it's not asked in the question.
+
+491
+01:08:52,863 --> 01:08:53,304
+No problem.
+
+492
+01:09:01,332 --> 01:09:02,452
+are you okay?
+
+493
+01:09:13,011 --> 01:09:14,011
+Any question?
+
+494
+01:09:20,724 --> 01:09:25,844
+If you are okay, let's have a break for 10 minutes is enough I think. And then continue.
+
+495
+01:09:39,060 --> 01:09:40,060
+ve süreklik.
+
+496
+01:22:57,779 --> 01:22:59,279
+Hi again, shall we continue?
+
+497
+01:23:09,876 --> 01:23:11,556
+Evet, mizze, we can continue.
+
+498
+01:23:12,036 --> 01:23:13,195
+Okay, thank you.
+
+499
+01:23:14,136 --> 01:23:15,855
+So, let's see the next question.
+
+500
+01:23:20,979 --> 01:23:26,759
+It says, this equation holds for a continuous function f, x plus f.
+
+501
+01:23:27,279 --> 01:23:29,539
+That means what kind of function is it?
+
+502
+01:23:30,919 --> 01:23:31,879
+Nice question.
+
+503
+01:23:39,060 --> 01:23:39,560
+yüze.
+
+504
+01:25:04,180 --> 01:25:04,940
+O, tıkat.
+
+505
+01:25:08,692 --> 01:25:09,131
+No.
+
+506
+01:25:21,460 --> 01:25:25,180
+1 plus x square over 2 plus x square.
+
+507
+01:25:27,180 --> 01:25:28,180
+It must be.
+
+508
+01:26:01,203 --> 01:26:13,063
+x kare artı 2x, f'
+
+509
+01:26:06,036 --> 01:26:20,176
+Let's see. So, solution. Deravate both sides, of course. In order to express this, we need to get rid of these integrations, of course, by having the derivative and using the Leibniz rule.
+
+510
+01:26:20,176 --> 01:26:41,456
+And substitute x, fx times 1 minus 0. Okay. Right-hand side, 1 plus f0, 0 minus fx over 1 plus x squared. I think you have forgotten about this negativity. You may have the problem. Maybe.
+
+511
+01:26:47,828 --> 01:26:48,348
+Okay.
+
+512
+01:26:49,528 --> 01:26:52,708
+Because it is upper limit, this is lower limit.
+
+513
+01:26:53,148 --> 01:26:55,307
+Upper limit minus lower limit, it must be.
+
+514
+01:26:56,128 --> 01:26:59,088
+F0 plus, F0 over 1 times 0 minus,
+
+515
+01:26:59,788 --> 01:27:02,468
+Fx over 1 plus x squared times 1.
+
+516
+01:27:03,848 --> 01:27:07,288
+So you will just leave Fx alone.
+
+517
+01:27:07,428 --> 01:27:07,868
+That's all.
+
+518
+01:27:32,787 --> 01:27:45,707
+What about the next question? It says, suppose that f be a function whose first and second order derivatives exist and satisfied equation written.
+
+519
+01:27:45,707 --> 01:27:51,547
+It says, so evaluate second order derivative of f at the point zero.
+
+520
+01:28:03,507 --> 01:28:11,827
+2x, you will have the derivative with respect to x. And at the end, x is 0. I'm waiting.
+
+521
+01:30:58,484 --> 01:31:02,004
+Who did it? Yes, well done. It's 6.
+
+522
+01:31:26,676 --> 01:31:27,556
+anyone else?
+
+523
+01:31:41,011 --> 01:31:42,091
+Evet, belirli.
+
+524
+01:31:44,231 --> 01:31:44,951
+It's 6.
+
+525
+01:31:46,091 --> 01:31:46,591
+Anyone?
+
+526
+01:31:47,192 --> 01:31:47,971
+Shall we look?
+
+527
+01:31:59,315 --> 01:32:03,416
+ok.
+
+528
+01:32:03,615 --> 01:32:04,916
+let's do the solution now.
+
+529
+01:32:08,372 --> 01:32:10,172
+First order derivative.
+
+530
+01:32:13,052 --> 01:32:13,392
+Look.
+
+531
+01:32:14,532 --> 01:32:16,792
+3x²-1, 6x plus.
+
+532
+01:32:17,652 --> 01:32:20,132
+Multiplication of two different functions.
+
+533
+01:32:20,392 --> 01:32:20,432
+Okay.
+
+534
+01:32:21,012 --> 01:32:23,252
+Here minus 2 times disintegration.
+
+535
+01:32:23,252 --> 01:32:26,132
+And 2 minus 2x times.
+
+536
+01:32:26,832 --> 01:32:27,572
+Apply x.
+
+537
+01:32:27,652 --> 01:32:29,292
+X² times fx times.
+
+538
+01:32:29,412 --> 01:32:30,672
+1 minus 0 plus.
+
+539
+01:32:30,992 --> 01:32:33,652
+2 times integration plus 2x times.
+
+540
+01:32:34,532 --> 01:32:38,012
+Minus x minus x² times fx.
+
+541
+01:32:38,012 --> 01:32:38,712
+It must be.
+
+542
+01:32:40,392 --> 01:32:40,771
+Okay.
+
+543
+01:32:41,572 --> 01:32:45,112
+So you get f' of x is this equation.
+
+544
+01:32:46,072 --> 01:32:47,612
+And these terms are cancelled.
+
+545
+01:32:48,292 --> 01:32:48,552
+Yes.
+
+546
+01:32:48,692 --> 01:32:49,572
+1 minus x.
+
+547
+01:32:49,572 --> 01:32:51,752
+So second order derivative.
+
+548
+01:32:53,052 --> 01:32:58,172
+6 minus 2 times x² fx minus 2x minus x² times fx.
+
+549
+01:32:59,252 --> 01:33:00,912
+These terms are cancelled.
+
+550
+01:33:01,252 --> 01:33:02,851
+So apply 0.
+
+551
+01:33:03,092 --> 01:33:04,032
+You will get 6.
+
+552
+01:33:04,252 --> 01:33:05,012
+Like you said.
+
+553
+01:33:05,172 --> 01:33:05,652
+Thank you.
+
+554
+01:33:37,555 --> 01:33:46,755
+So let's continue. It says find the absolute and the local extrem points of y x times the square root 4 minus x square.
+
+555
+01:36:15,315 --> 01:36:17,315
+yes
+
+556
+01:36:26,260 --> 01:36:30,900
+square root 2x, minus 2 and 2 also we have.
+
+557
+01:36:39,539 --> 01:36:40,539
+Evet, doğru.
+
+558
+01:36:42,039 --> 01:36:50,779
+x kare artı 2x, f'
+
+559
+01:36:49,716 --> 01:36:53,436
+in fact, absolutely. Also, we can say, but locally, we can talk.
+
+560
+01:36:57,268 --> 01:37:01,448
+ve 2-2'n'in-2'r'in-2'in-
+
+561
+01:37:15,220 --> 01:37:15,720
+anyone?
+
+562
+01:37:30,868 --> 01:37:31,228
+ok.
+
+563
+01:37:41,460 --> 01:37:42,460
+Okay.
+
+564
+01:37:44,819 --> 01:37:45,819
+Let's see.
+
+565
+01:37:46,619 --> 01:37:47,619
+Look.
+
+566
+01:37:49,859 --> 01:37:57,819
+Firstly, we need to specify the domain set. Maybe we can have endpoints because, and as you see, we have two endpoints.
+
+567
+01:37:57,819 --> 01:38:03,699
+Just remember, even though the endpoints are not critical points, they can be an extra endpoint.
+
+568
+01:38:03,699 --> 01:38:07,140
+So you have to consider if you have endpoints in the domain set.
+
+569
+01:38:07,140 --> 01:38:13,140
+And then specify the critical points, which makes the derivative undefined or zero.
+
+570
+01:38:14,939 --> 01:38:20,899
+This is the first derivative, y' , 4 minus 2x², 4 minus x².
+
+571
+01:38:20,899 --> 01:38:28,300
+So you get minus plus 2 and also minus plus square root 2, four critical points.
+
+572
+01:38:34,612 --> 01:38:37,471
+I'm sorry, it is not here.
+
+573
+01:38:38,252 --> 01:38:40,492
+I've forgotten to make the solution.
+
+574
+01:38:41,292 --> 01:38:42,532
+I will correct, don't worry.
+
+575
+01:38:43,112 --> 01:38:46,551
+So I want to tell you, according to sign table,
+
+576
+01:38:46,652 --> 01:38:50,192
+you will see that sign table of y prime between minus 2 and 2
+
+577
+01:38:50,192 --> 01:38:53,172
+and also square root 2 plus square root 2.
+
+578
+01:38:53,532 --> 01:38:57,912
+You will see that between minus 2 and minus square root 2,
+
+579
+01:38:58,091 --> 01:39:01,712
+the function is y prime is negative, so the function is decreasing.
+
+580
+01:39:01,712 --> 01:39:06,212
+After minus square root 2, it is increasing, so it's a local maximum.
+
+581
+01:39:06,992 --> 01:39:09,712
+And also on the right-hand side of minus 2,
+
+582
+01:39:10,332 --> 01:39:12,731
+the function is decreasing, so it's a local maximum.
+
+583
+01:39:13,212 --> 01:39:16,072
+On the left-hand side of minus 2, the function is not defined.
+
+584
+01:39:16,652 --> 01:39:19,971
+And between minus square root 2 and square root 2,
+
+585
+01:39:20,231 --> 01:39:21,752
+the function is increasing.
+
+586
+01:39:22,091 --> 01:39:24,652
+After square root 2, the function starts to decrease,
+
+587
+01:39:24,811 --> 01:39:26,992
+means square root 2 is a local maximum.
+
+588
+01:39:27,792 --> 01:39:30,912
+And 2 is the right-hand point, so on the left-hand side of 2,
+
+589
+01:39:30,912 --> 01:39:34,231
+the function is decreasing, that's why it is a local minimum.
+
+590
+01:39:34,231 --> 01:39:36,032
+So, if you want to see that sign table of minus 2,
+
+591
+01:39:36,032 --> 01:39:38,292
+the function is decreasing, that's why it is a local minimum.
+
+592
+01:39:38,292 --> 01:39:40,032
+So, if you want to see that sign table of minus 2,
+
+593
+01:39:40,032 --> 01:39:42,231
+the function is decreasing, that's why it is a local minimum.
+
+594
+01:39:42,231 --> 01:39:44,032
+So, if you want to see that sign table of minus 2,
+
+595
+01:39:44,032 --> 01:39:46,292
+the function is decreasing, that's why it is a local minimum.
+
+596
+01:39:46,292 --> 01:39:48,292
+So, if you want to see that sign table of minus 2,
+
+597
+01:39:48,292 --> 01:39:50,292
+the function is decreasing, that's why it is a local minimum.
+
+598
+01:39:50,292 --> 01:39:52,292
+So, if you want to see that sign table of minus 2,
+
+599
+01:39:52,292 --> 01:39:54,292
+the function is decreasing, that's why it is a local minimum.
+
+600
+01:39:54,292 --> 01:39:56,292
+So, if you want to see that sign table of minus 2,
+
+601
+01:39:56,292 --> 01:39:58,292
+the function is decreasing, that's why it is a local minimum.
+
+602
+01:40:00,275 --> 01:40:11,036
+Are you okay? Do you understand me? I forgot to write the other slide. I am sorry. I will correct it.
+
+603
+01:40:25,011 --> 01:40:37,612
+So let's continue. We are okay. Let's see the next question. It says find absolute or local extra points of f x squared times and square root 4 minus x.
+
+604
+01:40:50,003 --> 01:40:51,003
+Yes.
+
+605
+01:40:59,315 --> 01:41:01,315
+but not only 0 and 5.
+
+606
+01:41:08,819 --> 01:41:10,259
+ve diğerlerle ilgili.
+
+607
+01:42:11,155 --> 01:42:11,956
+Anyone else?
+
+608
+01:42:25,492 --> 01:42:27,532
+Evet, 4x, yes, you're right.
+
+609
+01:42:40,500 --> 01:42:44,500
+Evet, bir şey.
+
+610
+01:42:44,500 --> 01:43:08,500
+Öncelikle, bir şey.
+
+611
+01:43:08,500 --> 01:43:10,500
+Evet.
+
+612
+01:43:10,500 --> 01:45:06,500
+Öncelikle, bir şey.
+
+613
+01:44:54,515 --> 01:45:00,675
+Okay. Do you understand me? The solution? Tell me.
+
+614
+01:45:08,340 --> 01:45:08,840
+ok?
+
+615
+01:45:25,235 --> 01:45:30,115
+So, the next question is, graph of a function.
+
+616
+01:45:54,644 --> 01:45:56,423
+Have we done it before? I couldn't remember.
+
+617
+01:46:16,404 --> 01:46:19,144
+Oblique cannot be one, [öğrenci].
+
+618
+01:46:23,155 --> 01:46:35,876
+oblique asymptote exist once we have power of denominator is 1 less than the numerator.
+
+619
+01:46:37,475 --> 01:46:44,916
+Okay, 1 is a, no problem, 1 is a asymptote, but what kind of asymptote?
+
+620
+01:46:52,435 --> 01:46:55,215
+Horizontal, yes, you're right. Horizontal.
+
+621
+01:47:01,811 --> 01:47:07,912
+Evet, vertical is minus 3 and 3, and horizontal is 1, and no oblique asymptote we have.
+
+622
+01:47:09,851 --> 01:47:11,211
+Specified domain set.
+
+623
+01:47:14,332 --> 01:47:15,631
+What's the domain set?
+
+624
+01:47:24,851 --> 01:47:30,731
+Yes, you are right. Except 3n minus 3. Yes, you are right.
+
+625
+01:47:33,851 --> 01:47:39,851
+Okay. Domain set is okay. Asymptotes are okay. What about the critical points?
+
+626
+01:47:40,811 --> 01:47:46,211
+That is f' and also second order derivative of f and inflection points and concavity.
+
+627
+01:47:49,939 --> 01:47:54,979
+Ve bu, atıraların aşamda,
+
+628
+01:47:54,979 --> 01:48:00,419
+ve bu, atıraların aşamda,
+
+629
+01:48:00,419 --> 01:48:01,939
+ve bu, atıraların aşamda.
+
+630
+01:48:03,699 --> 01:48:04,979
+Bu, atıraların aşamda,
+
+631
+01:48:04,979 --> 01:48:06,819
+ve bu, atıraların aşamda,
+
+632
+01:48:06,819 --> 01:48:08,819
+ve bu, atıraların aşamda.
+
+633
+01:49:12,148 --> 01:49:14,328
+Okay, critical is only zero, you're right.
+
+634
+01:49:16,427 --> 01:49:19,807
+What about the second order derivative? Do we have inflection point?
+
+635
+01:50:13,619 --> 01:50:19,939
+3x-3 are not included in the domain stats, so they cannot be the inflection point or critical point.
+
+636
+01:50:35,636 --> 01:50:36,776
+Evet, bu.
+
+637
+01:50:39,176 --> 01:50:47,536
+If we have finished these concepts, let's get the sign table and try to sketch the region.
+
+638
+01:52:32,948 --> 01:52:33,948
+Let me look.
+
+639
+01:52:42,676 --> 01:52:47,176
+Evet, evet, 0'ı da maksimum.
+
+640
+01:54:02,931 --> 01:54:04,131
+Have you sketched?
+
+641
+01:54:13,939 --> 01:54:15,939
+or do you want to see the solution?
+
+642
+01:54:29,108 --> 01:54:31,507
+[öğrenci], mesli.
+
+643
+01:54:36,051 --> 01:54:37,331
+Domain set is okay.
+
+644
+01:54:38,471 --> 01:54:41,152
+And x and 3 and minus the vertical asymptotes,
+
+645
+01:54:41,291 --> 01:54:43,511
+which makes the denominator because going to zero.
+
+646
+01:54:44,031 --> 01:54:45,971
+That's why you have to just look.
+
+647
+01:54:46,112 --> 01:54:47,251
+Don't forget this is important.
+
+648
+01:54:47,431 --> 01:54:49,931
+Right and left and side limits of 3 and minus 3.
+
+649
+01:54:50,711 --> 01:54:52,251
+And as you see, they are different.
+
+650
+01:54:53,072 --> 01:54:55,091
+Ways 1 is horizontal asymptote.
+
+651
+01:54:55,971 --> 01:54:57,751
+First order derivative is this.
+
+652
+01:54:57,931 --> 01:54:58,991
+Root is zero.
+
+653
+01:54:59,591 --> 01:55:00,931
+X is minus plus 3.
+
+654
+01:55:00,931 --> 01:55:07,731
+Minus plus 3 is not critical points,
+
+655
+01:55:07,851 --> 01:55:10,231
+but also they are the roots, but double roots.
+
+656
+01:55:10,711 --> 01:55:11,211
+Be careful.
+
+657
+01:55:12,171 --> 01:55:13,431
+In the second order derivative,
+
+658
+01:55:14,871 --> 01:55:15,971
+no roots.
+
+659
+01:55:16,131 --> 01:55:17,431
+We have only minus plus 3.
+
+660
+01:55:17,531 --> 01:55:18,791
+They are not in the domain set,
+
+661
+01:55:18,891 --> 01:55:20,891
+so it cannot be an inflection point.
+
+662
+01:55:21,991 --> 01:55:22,871
+So sine table.
+
+663
+01:55:23,511 --> 01:55:25,692
+F prime minus 3, 3 and 0.
+
+664
+01:55:26,411 --> 01:55:28,371
+In second order derivative minus 3 and 3.
+
+665
+01:55:28,371 --> 01:55:29,531
+They are not defined.
+
+666
+01:55:29,751 --> 01:55:29,971
+Okay.
+
+667
+01:55:29,971 --> 01:55:33,692
+Negative because here the sign is not changed
+
+668
+01:55:33,692 --> 01:55:35,131
+because they are double roots.
+
+669
+01:55:35,771 --> 01:55:40,031
+But here, third root, I'm sorry, third power.
+
+670
+01:55:41,531 --> 01:55:43,652
+We will have the change of the function.
+
+671
+01:55:44,051 --> 01:55:46,831
+So f is negative infinity to minus 3.
+
+672
+01:55:46,931 --> 01:55:50,351
+Also on the left hand side of minus 3,
+
+673
+01:55:50,551 --> 01:55:52,091
+positive infinity on the other side,
+
+674
+01:55:52,271 --> 01:55:53,831
+negative, negative and positive.
+
+675
+01:55:55,511 --> 01:55:57,211
+Negative infinity to minus 3.
+
+676
+01:55:57,211 --> 01:56:00,051
+derivative is positive,
+
+677
+01:56:00,051 --> 01:56:01,351
+so the function is increasing.
+
+678
+01:56:02,351 --> 01:56:04,591
+And the second order derivative is positive,
+
+679
+01:56:04,851 --> 01:56:05,591
+so concave up.
+
+680
+01:56:06,971 --> 01:56:08,471
+Increasing and concave up.
+
+681
+01:56:10,971 --> 01:56:12,311
+In minus 3 to 0,
+
+682
+01:56:12,831 --> 01:56:14,112
+function is increasing,
+
+683
+01:56:14,291 --> 01:56:15,231
+but concave down.
+
+684
+01:56:15,931 --> 01:56:16,731
+So this.
+
+685
+01:56:16,731 --> 01:56:18,471
+0 to 3,
+
+686
+01:56:18,471 --> 01:56:21,391
+the function is decreasing and concave down.
+
+687
+01:56:21,891 --> 01:56:22,711
+So this.
+
+688
+01:56:24,251 --> 01:56:25,631
+After 3 to infinity,
+
+689
+01:56:26,171 --> 01:56:26,791
+increasing,
+
+690
+01:56:27,011 --> 01:56:27,951
+but concave down,
+
+691
+01:56:28,291 --> 01:56:28,871
+concave up,
+
+692
+01:56:29,751 --> 01:56:31,271
+decreasing and concave up.
+
+693
+01:56:31,671 --> 01:56:32,291
+So this.
+
+694
+01:56:33,591 --> 01:56:33,951
+Look.
+
+695
+01:56:33,951 --> 01:56:37,011
+at negative infinity.
+
+696
+01:56:37,152 --> 01:56:39,131
+When x is going to negative infinity,
+
+697
+01:56:39,331 --> 01:56:40,491
+the function is going to 1.
+
+698
+01:56:40,791 --> 01:56:41,491
+So at 1.
+
+699
+01:56:41,851 --> 01:56:43,652
+It's going to negative infinity to 1.
+
+700
+01:56:44,811 --> 01:56:46,671
+Increasing and concave up to,
+
+701
+01:56:47,072 --> 01:56:48,991
+on the left hand side of minus 3,
+
+702
+01:56:49,051 --> 01:56:50,192
+going to positive infinity.
+
+703
+01:56:50,951 --> 01:56:51,371
+Okay.
+
+704
+01:56:51,591 --> 01:56:52,211
+Positive infinity.
+
+705
+01:56:53,011 --> 01:56:55,211
+What about on the right hand side of minus 3?
+
+706
+01:56:55,211 --> 01:56:57,671
+It's coming from negative infinity to 0.
+
+707
+01:56:58,112 --> 01:57:00,031
+Negative infinity to 0.
+
+708
+01:57:01,091 --> 01:57:01,612
+Increasing,
+
+709
+01:57:01,751 --> 01:57:02,652
+but concave down.
+
+710
+01:57:02,652 --> 01:57:05,591
+Between 0 and 3.
+
+711
+01:57:06,192 --> 01:57:07,131
+At 0,
+
+712
+01:57:07,211 --> 01:57:07,531
+0.
+
+713
+01:57:07,751 --> 01:57:08,291
+At 3.
+
+714
+01:57:08,551 --> 01:57:09,891
+It's going to negative infinity.
+
+715
+01:57:10,331 --> 01:57:11,831
+Decreasing and concave down.
+
+716
+01:57:14,331 --> 01:57:16,011
+After 3 to infinity.
+
+717
+01:57:16,631 --> 01:57:17,991
+Function is decreasing,
+
+718
+01:57:18,192 --> 01:57:19,051
+but concave up.
+
+719
+01:57:19,971 --> 01:57:21,591
+And on the right hand side,
+
+720
+01:57:21,791 --> 01:57:23,931
+3 is coming from positive infinity.
+
+721
+01:57:24,572 --> 01:57:25,051
+Decreasing,
+
+722
+01:57:25,192 --> 01:57:25,831
+concave up,
+
+723
+01:57:25,931 --> 01:57:26,771
+and going to,
+
+724
+01:57:27,131 --> 01:57:27,791
+at infinity,
+
+725
+01:57:27,871 --> 01:57:28,791
+it's going to 1.
+
+726
+01:57:29,192 --> 01:57:30,152
+So this part.
+
+727
+01:57:33,716 --> 01:57:35,916
+Is it okay? Do you understand it?
+
+728
+01:57:38,856 --> 01:57:40,496
+Is your graph correct?
+
+729
+01:57:50,003 --> 01:57:56,243
+Well done. Well done. So nice.
+
+730
+01:58:00,115 --> 01:58:03,115
+I thank you for your concentration.
+
+731
+01:58:09,140 --> 01:58:16,440
+Anyone else? Any questions? Up to now? Unfortunately, the time is over.
+
+732
+01:58:22,355 --> 01:58:30,355
+ve neşte bir şey, yöntemiz ve neşte bir şey, yöntemiz ve neşte bir şey.
+
+733
+01:58:30,355 --> 01:58:38,355
+Ve neşte bir şey, yöntemiz ve neşte bir şey.
+
+734
+01:58:44,180 --> 01:58:45,880
+I thank you for your participation.
+
+735
+01:58:48,880 --> 01:58:50,140
+Thank you so much.
+
+736
+01:58:50,920 --> 01:58:51,420
+See you.

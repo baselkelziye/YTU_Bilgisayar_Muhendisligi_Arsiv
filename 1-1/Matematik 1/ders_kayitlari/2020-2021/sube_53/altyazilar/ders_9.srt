@@ -1,0 +1,5307 @@
+1
+00:00:07,219 --> 00:00:09,320
+Arkadaşlar, merhaba. Sesim geliyor mu?
+
+2
+00:00:21,940 --> 00:00:23,940
+Arkadaşlar, merhaba sesim geliyor mu?
+
+3
+00:00:34,484 --> 00:00:38,564
+Tamam. Geç kaldığım için çok özür diliyorum öncelikle.
+
+4
+00:00:43,091 --> 00:00:44,432
+Hemen sunumu açıyorum.
+
+5
+00:01:20,628 --> 00:01:25,847
+Sizin sesleriniz hiç gelmiyor yalnız. Konuşanlık var mı? Ses verin.
+
+6
+00:01:27,268 --> 00:01:28,927
+Merhaba hocam.
+
+7
+00:01:29,328 --> 00:01:33,128
+Merhabalar. Çok özür diliyorum tekrar. Geç kaldığım için bir aksinlik oldu.
+
+8
+00:01:34,168 --> 00:01:37,567
+Ve şunu söylemem gerekiyor. Dersinizi biraz erken bitirmem gerekecek bugün.
+
+9
+00:01:37,668 --> 00:01:42,128
+Benim dışımda gelişen bir olay nedeniyle. O yüzden şöyle yapalım.
+
+10
+00:01:42,487 --> 00:01:47,188
+Biraz da geç başladık ama telafi edeceğim. Az ara verelim. Yoğun işleyelim.
+
+11
+00:01:47,188 --> 00:01:50,408
+Bugün biraz erken bitirelim. Sadece bugünlük böyle bir durum olacak. Olur mu?
+
+12
+00:01:51,628 --> 00:01:53,108
+Olur hocam. Hiç sıkıntı yok.
+
+13
+00:01:53,548 --> 00:01:55,168
+Teşekkür ederim anlayışınız için.
+
+14
+00:01:58,995 --> 00:02:03,215
+Bugün 5. sınıflar okula başladığı için bizde işler tamamen karıştı.
+
+15
+00:02:16,180 --> 00:02:16,980
+En son
+
+16
+00:02:16,980 --> 00:02:21,580
+Line ve üzerine kalmıştık.
+
+17
+00:02:21,580 --> 00:02:23,080
+Evet, burada kalmıştık.
+
+18
+00:02:28,532 --> 00:02:45,332
+We were lastly at linearization and differentials. Do you have any question about the previous topic, high-order derivatives and implicit differentiation? Any problem up to now? If you want, I can make a short summary about it.
+
+19
+00:02:47,332 --> 00:02:49,332
+If you can, you can write me.
+
+20
+00:02:54,036 --> 00:02:56,036
+Evet, bu ne?
+
+21
+00:02:56,036 --> 00:02:58,036
+Evet, şimdi, bu ne?
+
+22
+00:02:58,036 --> 00:03:01,036
+Bir de aynı parlayışı var.
+
+23
+00:03:01,036 --> 00:03:04,036
+Şimdi, neden bu ne?
+
+24
+00:03:04,036 --> 00:03:20,036
+Bir de aynı parlayışı var.
+
+25
+00:03:20,036 --> 00:05:50,036
+Bu, bu
+
+26
+00:05:50,036 --> 00:06:09,956
+F' of a must exist. F' at the point a must exist. That's why the formula says that approximating function, linear form of it, linearization of the original function f is at the point a, not the general one, at a point, at a specific point, we are having the linearizations of the functions.
+
+27
+00:06:09,956 --> 00:06:15,836
+Having the formula at axis f a plus f prime of a times x minus a.
+
+28
+00:06:17,456 --> 00:06:28,896
+You will see such a similar formula in the differential also. A differential is using another method, but the formulas are so similar because the main idea is similar.
+
+29
+00:06:29,636 --> 00:06:38,636
+That's why you will see in the examples, they have the same approximation, same method of approximation with same errors.
+
+30
+00:06:38,635 --> 00:06:41,855
+We will just evaluate some values of the points.
+
+31
+00:06:42,956 --> 00:06:46,135
+So, this formula you will need, you have to memorize.
+
+32
+00:06:46,316 --> 00:06:50,156
+Lx is f a plus f prime of a times x minus a.
+
+33
+00:06:50,436 --> 00:06:51,635
+x minus a is the...
+
+34
+00:06:52,915 --> 00:07:00,615
+is this specific point. x is the point which we are needing to get the approximate value generally in the question.
+
+35
+00:07:02,195 --> 00:07:11,255
+Approximation means here f is approximately L. That means f is just going to closer to L because they are not the same.
+
+36
+00:07:11,755 --> 00:07:18,915
+Because f is non-linear, L is the linear form of the function f. That's why they are just approximating each other.
+
+37
+00:07:18,915 --> 00:07:25,956
+they are not equal, never. And this L is the standard linear approximation.
+
+38
+00:07:27,956 --> 00:07:34,755
+And the point x is a is the center of the approximation that you need to choose before starting linearization.
+
+39
+00:07:37,716 --> 00:07:42,836
+Look, you will understand why do we need to get such a formula here.
+
+40
+00:07:42,836 --> 00:07:44,836
+think that y is the point x is the point x is the point x.
+
+41
+00:07:44,836 --> 00:07:47,795
+think that y is f x has a this graph.
+
+42
+00:07:47,795 --> 00:07:52,596
+it is continuous and think that differentiable at the point a.
+
+43
+00:07:52,596 --> 00:07:53,795
+this is the point a.
+
+44
+00:07:53,795 --> 00:08:03,396
+look, the tangent line, if you if you sketch the tangent line of the graph of y at the point a will be this.
+
+45
+00:08:06,675 --> 00:08:10,196
+look, the tangent line is in fact the linear form of it.
+
+46
+00:08:13,875 --> 00:08:17,735
+Why do we need to have such a formula? Look, y minus fa.
+
+47
+00:08:19,055 --> 00:08:21,975
+Because the tangent of it is derivative of it.
+
+48
+00:08:22,815 --> 00:08:26,835
+y minus fa is equal to f prime of a times x minus a.
+
+49
+00:08:27,555 --> 00:08:29,036
+Why we have such a formula?
+
+50
+00:08:29,215 --> 00:08:34,735
+This is the formula of a tangent line equation, which has derivative slope.
+
+51
+00:08:34,836 --> 00:08:37,995
+I'm sorry, slope is f prime of a and the point a fa.
+
+52
+00:08:38,196 --> 00:08:42,456
+This is just a standard writing a linear equation.
+
+53
+00:08:42,456 --> 00:08:45,375
+I'm sorry, line equation.
+
+54
+00:08:46,435 --> 00:08:52,775
+We know the derivative of that function at that point is the slope of the tangent line at that point.
+
+55
+00:08:53,216 --> 00:08:58,415
+So the point is a fa y minus y zero m times x minus x zero.
+
+56
+00:08:58,495 --> 00:08:59,535
+Just remember the formula.
+
+57
+00:08:59,635 --> 00:09:08,415
+So this is y minus fa because the point is a and fa is equal to this is m the slope of the tangent line,
+
+58
+00:09:08,415 --> 00:09:13,995
+which is the derivative of the function at that point times x minus a will be the tangent line equation.
+
+59
+00:09:14,675 --> 00:09:22,235
+Look, why is when you put fa to other side, you will get why is fa plus f prime of a x minus a,
+
+60
+00:09:22,336 --> 00:09:24,556
+which is the tangent line equation.
+
+61
+00:09:24,556 --> 00:09:34,096
+In fact, that means the linear form of the any function, which is differentiable at a specific point will be the tangent line equation.
+
+62
+00:09:34,836 --> 00:09:37,096
+Linearization is the tangent line equation always.
+
+63
+00:09:38,975 --> 00:09:43,556
+Look, they are so different, but getting closer at a specific point.
+
+64
+00:09:43,556 --> 00:09:44,875
+point.
+
+65
+00:09:45,475 --> 00:09:46,355
+This is the graph.
+
+66
+00:09:47,015 --> 00:09:48,915
+And this is the graph is not linear.
+
+67
+00:09:48,995 --> 00:09:51,056
+As you see, nonlinear function, it must be.
+
+68
+00:09:51,275 --> 00:09:52,635
+If it is linear, no problem.
+
+69
+00:09:53,015 --> 00:09:56,556
+We don't need to get the linearization, but it is a nonlinear curve.
+
+70
+00:09:56,556 --> 00:10:02,415
+It is curve, not the line, but linearization makes it a tangent line.
+
+71
+00:10:02,816 --> 00:10:04,375
+That means at the end, the line it makes.
+
+72
+00:10:05,155 --> 00:10:06,796
+Now, do you understand the main idea?
+
+73
+00:10:06,795 --> 00:10:28,796
+Now, do you understand the line?
+
+74
+00:10:18,740 --> 00:10:22,740
+Okay. Well done, all of you. So, see.
+
+75
+00:10:24,200 --> 00:10:25,399
+See an example.
+
+76
+00:10:26,899 --> 00:10:30,340
+It says, find the linearization of f at a point.
+
+77
+00:10:30,659 --> 00:10:35,519
+This is a very basic and easy example in order to make you understand what's the general form of it.
+
+78
+00:10:36,100 --> 00:10:41,659
+We know the formulas L'x is equal to f'a plus f'ax minus a.
+
+79
+00:10:42,340 --> 00:10:45,180
+What is f in the square root 1 plus x?
+
+80
+00:10:45,180 --> 00:10:48,519
+What is a? It's the point 0, as you see.
+
+81
+00:10:48,740 --> 00:10:50,940
+At the point 0, just linearize it, it says.
+
+82
+00:10:51,680 --> 00:10:54,139
+So, in order to write this equation, what do you need?
+
+83
+00:10:54,279 --> 00:10:56,159
+f'a, f'a you need.
+
+84
+00:10:57,360 --> 00:10:59,639
+f'a is f'0, which is 1.
+
+85
+00:11:00,379 --> 00:11:07,940
+f'x, derivative of it, 1 over 2 times 1 squared, 1 plus x is the derivative of it.
+
+86
+00:11:08,279 --> 00:11:10,299
+It is differentiable at 0, no problem.
+
+87
+00:11:10,700 --> 00:11:13,039
+Put 0 here and 1 over 2 you will get.
+
+88
+00:11:13,039 --> 00:11:15,799
+So, just substitute the formula.
+
+89
+00:11:15,799 --> 00:11:23,259
+So, just substitute the formula and x is the 1 f'a plus 1 over 2 f' of 0 times x minus a, x minus 0.
+
+90
+00:11:23,340 --> 00:11:25,220
+That means 1 plus x over 2.
+
+91
+00:11:25,460 --> 00:11:26,100
+Now, look.
+
+92
+00:11:26,940 --> 00:11:27,680
+Are they same?
+
+93
+00:11:27,799 --> 00:11:28,840
+Of course, they are not.
+
+94
+00:11:28,840 --> 00:11:43,980
+but they are not.
+
+95
+00:11:43,980 --> 00:12:06,120
+They are not.
+
+96
+00:12:06,163 --> 00:12:09,764
+If you are okay, it's easy.
+
+97
+00:12:13,908 --> 00:12:22,548
+continue with the next example. Okay. If you have any question, please write me directly. Okay.
+
+98
+00:12:25,827 --> 00:12:33,508
+Now look up this question and write me the linearization of the, I'm sorry, huh? In the squared one plus x at x is three.
+
+99
+00:12:35,427 --> 00:12:37,427
+Write me.
+
+100
+00:13:18,995 --> 00:13:26,915
+Okay. 2 plus 1 over 4 times x minus 3. Okay. Yes, you're right. Okay.
+
+101
+00:13:29,915 --> 00:13:35,035
+Okay. Thank you all of you. Thanks. Okay.
+
+102
+00:13:36,875 --> 00:13:38,716
+Let's look. It was an easy example.
+
+103
+00:13:38,716 --> 00:13:44,295
+But these easy examples make you understand and remember the formula.
+
+104
+00:13:44,436 --> 00:13:48,035
+That's why they are so useful. They are easy but useful.
+
+105
+00:13:48,035 --> 00:13:53,795
+Yes. Like you said, the function is same. 1 over 2 times in square root 1 plus x is the derivative of it.
+
+106
+00:13:54,435 --> 00:13:58,515
+f prime of 3 you need and f3 you need. f prime of 3, 1 over 4.
+
+107
+00:13:58,915 --> 00:14:01,716
+f3 is 2. Substitute to the formula.
+
+108
+00:14:02,475 --> 00:14:06,375
+Lx 2 plus 1 over 4 times x minus 3.
+
+109
+00:14:06,475 --> 00:14:13,836
+That means 5 over 4 plus x over 4 is approximately in the square root 1 plus x at the point 2.
+
+110
+00:14:13,836 --> 00:14:21,436
+Now I want you to compare this solution with the previous one.
+
+111
+00:14:21,436 --> 00:14:25,355
+They are so different. The original function is the same.
+
+112
+00:14:25,355 --> 00:14:31,755
+At the point, this function is approximately 1 plus x over 2.
+
+113
+00:14:31,755 --> 00:14:37,655
+But the same function is approximately 5 over 4 plus x over 4 at the point 3.
+
+114
+00:14:38,395 --> 00:14:44,816
+That means they are so different. Point by point, you have to just consider the approximations.
+
+115
+00:14:45,316 --> 00:14:46,255
+Now do you understand?
+
+116
+00:14:48,076 --> 00:14:51,135
+In the previous one at the 0, it was so different.
+
+117
+00:14:51,355 --> 00:14:53,175
+At 3, it was so different again.
+
+118
+00:14:53,275 --> 00:14:57,015
+That means point by point, we have to just consider the approximations.
+
+119
+00:14:57,015 --> 00:14:58,076
+Okay.
+
+120
+00:14:58,855 --> 00:15:01,035
+So it's a nice example for you.
+
+121
+00:15:01,235 --> 00:15:03,076
+I'm happy to hear from you.
+
+122
+00:15:03,135 --> 00:15:03,415
+Yes.
+
+123
+00:15:03,535 --> 00:15:03,895
+Okay.
+
+124
+00:15:04,435 --> 00:15:05,235
+So continue.
+
+125
+00:15:06,975 --> 00:15:10,716
+Now, in this topic, the standard question is this.
+
+126
+00:15:11,035 --> 00:15:12,115
+Similar questions.
+
+127
+00:15:13,216 --> 00:15:19,216
+You will be given a value and the approximate value of it is asked.
+
+128
+00:15:19,216 --> 00:15:25,535
+Normally, without using a calculator, you cannot evaluate it.
+
+129
+00:15:27,195 --> 00:15:35,415
+1.00125 minus 3 times 1.00123 over 2 plus 2 is not an easy calculation.
+
+130
+00:15:36,195 --> 00:15:38,535
+And it says approximately evaluate it.
+
+131
+00:15:38,935 --> 00:15:41,456
+And it says by using linearization.
+
+132
+00:15:41,836 --> 00:15:45,195
+You can do it with linearization or differential.
+
+133
+00:15:45,615 --> 00:15:47,675
+Two possible ways you have.
+
+134
+00:15:47,675 --> 00:15:53,096
+And if the method is not set in the question, you can use any of them you want.
+
+135
+00:15:53,336 --> 00:15:53,975
+No problem.
+
+136
+00:15:54,056 --> 00:15:56,855
+Because at the end, you will get the same approximate value.
+
+137
+00:15:58,036 --> 00:15:58,475
+Here.
+
+138
+00:15:59,096 --> 00:16:04,336
+Now, we will use it to get this approximation.
+
+139
+00:16:04,975 --> 00:16:06,175
+Linearization we will use.
+
+140
+00:16:06,735 --> 00:16:08,076
+But let's first think.
+
+141
+00:16:08,935 --> 00:16:11,495
+How can we use linearization in such a question?
+
+142
+00:16:11,716 --> 00:16:12,415
+What does it mean?
+
+143
+00:16:13,415 --> 00:16:14,696
+We have no function.
+
+144
+00:16:14,855 --> 00:16:15,475
+No points.
+
+145
+00:16:15,475 --> 00:16:17,556
+Only value is asked.
+
+146
+00:16:19,515 --> 00:16:43,895
+Do you have any idea?
+
+147
+00:16:25,748 --> 00:16:27,588
+mhm, belirli.
+
+148
+00:16:29,348 --> 00:16:34,648
+yes, not x, yes, you're right, as x, yes, you're completely right.
+
+149
+00:16:35,468 --> 00:16:37,388
+and do it like as we always do.
+
+150
+00:16:37,388 --> 00:16:38,768
+okay, what about the function?
+
+151
+00:16:41,508 --> 00:16:43,668
+you are so clever students, I think, thank you.
+
+152
+00:16:44,927 --> 00:16:46,927
+what about the function, which function you will use?
+
+153
+00:16:46,927 --> 00:16:49,488
+because linearization, a point and a function.
+
+154
+00:16:51,468 --> 00:16:53,328
+which point and which function?
+
+155
+00:16:53,328 --> 00:16:56,448
+yes, you're right, [öğrenci].
+
+156
+00:16:57,108 --> 00:16:59,748
+it is at the point one, I think so.
+
+157
+00:17:00,348 --> 00:17:04,307
+and the original value will be 1.001, like you said.
+
+158
+00:17:05,028 --> 00:17:06,148
+what about the function?
+
+159
+00:17:10,740 --> 00:17:23,799
+Yes, yes, you're completely right. Yes, [öğrenci], of course. We need such a function which makes this value at 0.1.001. Okay. Yes, you're completely right. Well done, all of you.
+
+160
+00:17:25,519 --> 00:17:36,700
+And then, yes, that means you mean that you need to choose the function x25 minus 3 times x23 over 2 plus 2. Okay, this is our function.
+
+161
+00:17:36,700 --> 00:17:43,519
+But you see, this is not a linear function. Using linearization, that means we will linearize this function.
+
+162
+00:17:44,660 --> 00:17:47,360
+At which point we will linearize it?
+
+163
+00:17:52,788 --> 00:18:01,708
+Evet, [öğrenci], you're right. Because at the point 1 is so closer to 1.001. Yes, you're completely right, all of you. Thank you.
+
+164
+00:18:02,668 --> 00:18:20,387
+We need to choose the function, the proper function we just defined. And then point we need to choose and that point must be the specific point and as much as possible near to that point 1.001, which is 1, of course, you're right.
+
+165
+00:18:20,387 --> 00:18:34,147
+We just get the function and specify the point and then let's linearize it and then get the linear form of the function that you choose and then put the value 1.001 and get the approximate value of this expression.
+
+166
+00:18:34,807 --> 00:18:35,768
+I'm waiting for you.
+
+167
+00:18:58,003 --> 00:19:17,003
+Um, let me look. I don't know. Yes. 0.0005. Yes. Yes. Yes, you're right. Yes. Anyone else?
+
+168
+00:19:21,619 --> 00:19:23,619
+mhm, ok, well done.
+
+169
+00:19:25,039 --> 00:19:25,519
+ok
+
+170
+00:19:29,428 --> 00:19:33,408
+Okay, well done all of you. Thank you so much for your participation.
+
+171
+00:19:35,808 --> 00:19:36,408
+Okay.
+
+172
+00:19:39,528 --> 00:19:41,948
+I'm just reading your answer. Thank you so much.
+
+173
+00:19:42,628 --> 00:19:46,788
+And so let's see the solution together. It was easy.
+
+174
+00:19:48,668 --> 00:19:52,948
+But before I'm trying to make you understand, you directly gave me the answer.
+
+175
+00:19:52,948 --> 00:19:59,068
+That's so, which makes you, which makes me so happy. Thank you. Really.
+
+176
+00:19:59,428 --> 00:20:08,788
+You're so good students. I think. Thank you so much. And I'm very happy to hear from you.
+
+177
+00:20:10,348 --> 00:20:18,128
+F is, like you said, x to 5 minus 3 times x to 3 over 2 plus 2. Choose the point 1. Okay. Like you said.
+
+178
+00:20:18,448 --> 00:20:26,288
+And you see this is the function and the differentiable function at the point 1. Yes, no problem.
+
+179
+00:20:26,288 --> 00:20:36,208
+The derivative of it, 5x to 4 minus 9 over 2 x to 1 over 2. And the value of it at point 1 is 1 over 2. And also we need f1.
+
+180
+00:20:36,768 --> 00:20:37,248
+Fa.
+
+181
+00:20:37,248 --> 00:20:49,328
+Which is 0. Okay. So the relating formula of the linearization of the function is f1 plus f prime of 1 times x minus 1.
+
+182
+00:20:49,968 --> 00:20:59,408
+F1 is 0. 0 plus f prime of 1 is 1 over 2 times x minus 1. That means 1 over 2 times x minus 1 is the linear form of the function.
+
+183
+00:20:59,408 --> 00:21:16,588
+Linear form of this function, but at the point 1. Okay. So, before making an approximation, again, I want to say you need to just choose a so closer point in order to make good approximation, of course.
+
+184
+00:21:16,588 --> 00:21:29,328
+For example, if 1.001. For this point, if you choose 0 or 2, you will again find an approximate value, but it would be so much including error.
+
+185
+00:21:30,108 --> 00:21:41,928
+The distance will be so far, I think. But if you choose the closer point, you will just get a good approximation that you are expected to have.
+
+186
+00:21:41,928 --> 00:21:52,908
+Okay. So, making the linearization of that function closer to that point as much as possible is the best one.
+
+187
+00:21:53,568 --> 00:22:04,828
+Choosing 1 in this function is best. Okay. Because if you choose 1, this is a nice approximation. It is so closer to the real value because. Okay.
+
+188
+00:22:04,828 --> 00:22:19,728
+I mean that choosing the proper function and the proper and the closer point is so important for making a good approximation in these questions because you will be a little bit much more mistaken. Okay.
+
+189
+00:22:19,728 --> 00:22:31,968
+That means F is this. A is 1. Normally, the real value is F1.001, isn't it?
+
+190
+00:22:31,968 --> 00:22:51,008
+This expression is equal to F1.001. It is approximately L1.001 because F is approximately L. L is the linear form of L. L is the easy form of F. That's why it is an approximation.
+
+191
+00:22:51,008 --> 00:23:08,008
+And normally, you are expected to have of the real value of F1.001. But you are asked to have the linearization of it and the approximation of it. That's why you evaluate this function.
+
+192
+00:23:08,008 --> 00:23:20,688
+You evaluate this value at L, not in F. That's why it's an approximation. And it is approximately 0.0005. Do you understand the main idea? All of you, I want to ask.
+
+193
+00:23:21,008 --> 00:23:26,048
+If you have any question or any problem with it, please ask me.
+
+194
+00:23:55,763 --> 00:24:06,403
+Are you okay all of you? Tell me if you have any questions. Okay. Okay. So let's continue with another question.
+
+195
+00:24:07,283 --> 00:24:15,043
+In this topic, lots of examples there, but they are so similar. Because the important step is to find the
+
+196
+00:24:15,043 --> 00:24:24,323
+a proper function and specify the proper point, the closer point. That's okay. The rest of it is easy
+
+197
+00:24:24,323 --> 00:24:32,803
+because, for example, in the square root 4 plus 36. Again, you are asked to evaluate it approximately,
+
+198
+00:24:33,603 --> 00:24:35,523
+of course, by using linearization.
+
+199
+00:24:43,124 --> 00:24:48,124
+[öğrenci]'ın nefesini seçiyorsun?
+
+200
+00:24:58,836 --> 00:25:04,875
+First, you need to specify the function and then consider the point.
+
+201
+00:25:04,875 --> 00:25:10,836
+Ha! Yes. Once you choose the function as in square root x,
+
+202
+00:25:15,028 --> 00:25:27,087
+So, normally x will be 4.36. Now think, just think in the function x, which point is closer to it?
+
+203
+00:25:31,092 --> 00:25:32,352
+Evet, 4.
+
+204
+00:25:33,052 --> 00:25:37,692
+Of course, that means you need to choose x is 4, not 2.
+
+205
+00:25:38,392 --> 00:25:42,711
+Once you choose x is 2 in the square root 2, you will get, okay?
+
+206
+00:25:45,012 --> 00:25:50,272
+The value, which point you just make it in a function, this is important.
+
+207
+00:25:51,592 --> 00:25:56,892
+4.36 in the square root 4.
+
+208
+00:25:56,892 --> 00:26:01,752
+That means the real value is 2, but this is the result of the function, that means.
+
+209
+00:26:02,272 --> 00:26:05,032
+And the point that you need to use is 4.
+
+210
+00:26:05,772 --> 00:26:07,892
+Okay, the closest one is 4.
+
+211
+00:26:10,092 --> 00:26:11,092
+Let me talk.
+
+212
+00:26:16,980 --> 00:26:19,980
+2.09.
+
+213
+00:26:23,279 --> 00:26:23,779
+No.
+
+214
+00:26:25,680 --> 00:26:26,680
+Yes, you're right.
+
+215
+00:26:34,867 --> 00:26:47,887
+Now, choose the function square root x, and then specify the point for 4, and then linearize it, and then in a linear form, just put 4.36.
+
+216
+00:26:50,367 --> 00:26:51,487
+Yes, probably.
+
+217
+00:27:10,579 --> 00:27:16,359
+Oh, yes, you're right. Yes. Yes, you're right. Yes, okay.
+
+218
+00:27:26,036 --> 00:27:27,036
+Evet, you're right.
+
+219
+00:27:29,036 --> 00:27:29,996
+Anyone else?
+
+220
+00:27:42,036 --> 00:27:44,096
+Okay, well done, all of you.
+
+221
+00:27:52,500 --> 00:27:54,500
+Let's see the solution together.
+
+222
+00:28:00,627 --> 00:28:30,627
+Füncünün x'e de 4'
+
+223
+00:28:30,627 --> 00:29:00,627
+No problem, we have. We can linearize it at the point 4'e de 4'e
+
+224
+00:29:00,627 --> 00:29:20,837
+This function is getting very closer to this square root of x at the point. That means just around 4'e de 4
+
+225
+00:29:24,723 --> 00:29:29,243
+Çünkü, we need to evaluate the approximate value of 4.36.
+
+226
+00:29:29,923 --> 00:29:34,303
+How can we evaluate the approximate value of n-squared 4.36?
+
+227
+00:29:35,263 --> 00:29:42,683
+Normally, we need to evaluate n-squared 4.36, but we just use the linear form of the square root x function.
+
+228
+00:29:42,683 --> 00:29:55,124
+And the square root x function is just getting very closer to the L. L, which is 2 plus 1 or 4 times x minus 4.
+
+229
+00:29:55,583 --> 00:30:05,783
+So, if we are around 4, because we did this linearization around the point 4, so around 4, these two functions are so closer.
+
+230
+00:30:05,783 --> 00:30:18,344
+That's why, if we can evaluate the square root x function, we can evaluate this value in the L function, that means the linear form of it.
+
+231
+00:30:19,043 --> 00:30:21,443
+But, this will be just an approximation.
+
+232
+00:30:22,223 --> 00:30:23,403
+Now, do you understand it?
+
+233
+00:30:23,903 --> 00:30:30,644
+That's why we replace 4.36 in, not f, in L. We just make it, evaluate.
+
+234
+00:30:32,644 --> 00:30:33,003
+Okay.
+
+235
+00:30:37,172 --> 00:30:45,471
+ve bu konuları, bu konuları, çünkü L'Hospital, f'
+
+236
+00:30:45,471 --> 00:30:48,172
+4.36, bu konuları, f' 4.36, bu konuları, en L'Hospital.
+
+237
+00:30:48,172 --> 00:30:50,971
+So, they are approximately same.
+
+238
+00:30:50,971 --> 00:31:00,672
+Look, look at the value 2.09, ve bu konuları, 2.086, et cetera.
+
+239
+00:31:00,672 --> 00:31:05,672
+As you see, they are so close, because we are on a closer point at 4.
+
+240
+00:31:05,672 --> 00:31:15,372
+If we made this linearization at a more far point, for example, at 5 or 3, it would be so different.
+
+241
+00:31:15,372 --> 00:31:18,072
+It would be so far to the real value.
+
+242
+00:31:18,072 --> 00:31:18,971
+Do you understand me?
+
+243
+00:31:18,971 --> 00:31:26,872
+The linearization must be done, and the differentials must be done at closer point as much as possible.
+
+244
+00:31:26,872 --> 00:31:33,072
+Because we need to get the, like the graph of f and the tangent line.
+
+245
+00:31:33,072 --> 00:31:37,771
+at a point they are so close, at a specific point they are so close.
+
+246
+00:31:37,771 --> 00:31:41,771
+At a specific point they are so close.
+
+247
+00:32:02,708 --> 00:32:03,067
+ok.
+
+248
+00:32:06,867 --> 00:32:12,647
+Now, if you don't have any question, please do it this question and it is so easy.
+
+249
+00:33:02,259 --> 00:33:03,259
+çok güzel.
+
+250
+00:33:06,675 --> 00:33:08,675
+Evet.
+
+251
+00:33:14,067 --> 00:33:18,567
+No, I think you did the linearization of what?
+
+252
+00:33:18,988 --> 00:33:23,807
+It is 10 plus 2 times x minus 1.
+
+253
+00:33:27,268 --> 00:33:29,127
+Look, read the question correctly.
+
+254
+00:33:29,427 --> 00:33:30,988
+Linearization of f is this.
+
+255
+00:33:31,067 --> 00:33:33,788
+This is linear form of it at the point 1.
+
+256
+00:33:34,087 --> 00:33:35,528
+Just write the formula, okay?
+
+257
+00:33:36,948 --> 00:33:40,468
+And in the formula you will see these lines.
+
+258
+00:33:40,468 --> 00:33:42,667
+Okay, okay.
+
+259
+00:33:43,288 --> 00:33:43,788
+Well done.
+
+260
+00:33:45,067 --> 00:33:46,107
+Let's see together.
+
+261
+00:33:48,887 --> 00:33:50,728
+Yes, like you said, that's 12.
+
+262
+00:33:51,347 --> 00:33:52,127
+Yes, you're right.
+
+263
+00:33:53,288 --> 00:33:56,147
+The question says that the linearization of a function,
+
+264
+00:33:56,788 --> 00:33:58,407
+this function we don't know, f.
+
+265
+00:33:58,827 --> 00:33:59,587
+f is not given.
+
+266
+00:34:00,268 --> 00:34:02,208
+The linearization of f is given,
+
+267
+00:34:02,387 --> 00:34:06,567
+which is y2x plus 8 at the point 1.
+
+268
+00:34:06,567 --> 00:34:13,728
+Okay, just write the formula of the linear form at the point 1.
+
+269
+00:34:13,728 --> 00:34:19,867
+f1 plus f prime of 1 x minus 1 is equal to 2x plus 8.
+
+270
+00:34:19,867 --> 00:34:29,047
+And so here what to do to get f1 plus f prime of 1 is asked because you need to just substitute for x is 2.
+
+271
+00:34:29,047 --> 00:34:34,047
+Once you put 4x is 2, you will get f1 plus f prime of 1 times 1.
+
+272
+00:34:34,507 --> 00:34:36,387
+That's the value we're trying to get.
+
+273
+00:34:36,467 --> 00:34:38,547
+f1 is plus f prime of 1.
+
+274
+00:34:38,547 --> 00:34:42,807
+And on the right-hand side, if you put 4x is 2, you will get 12.
+
+275
+00:34:42,807 --> 00:34:45,867
+Like you said, well done all of you.
+
+276
+00:34:45,867 --> 00:35:11,947
+Thank you.
+
+277
+00:35:02,452 --> 00:35:03,332
+Any question?
+
+278
+00:35:14,708 --> 00:35:15,827
+Do you understand it?
+
+279
+00:35:18,628 --> 00:35:21,907
+Or anyone who has any problem with it?
+
+280
+00:35:24,548 --> 00:35:24,867
+Okay.
+
+281
+00:35:26,788 --> 00:35:32,548
+Okay, so please write me if you have any problem. I can repeat it for you, okay?
+
+282
+00:35:37,235 --> 00:35:38,235
+So, continue.
+
+283
+00:35:41,300 --> 00:35:43,300
+I would add cosine 91.
+
+284
+00:35:45,380 --> 00:35:46,260
+Approximately.
+
+285
+00:36:27,027 --> 00:36:30,027
+Evet, no, let's see it all.
+
+286
+00:36:31,527 --> 00:36:32,027
+Hmm.
+
+287
+00:36:35,572 --> 00:36:36,132
+No.
+
+288
+00:36:41,076 --> 00:36:43,635
+Which function you need? First write me.
+
+289
+00:36:50,260 --> 00:36:53,180
+Evet, [öğrenci], doğru. Evet, evet.
+
+290
+00:36:53,180 --> 00:36:55,180
+Evet, evet.
+
+291
+00:37:02,804 --> 00:37:32,804
+Bu, yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda yukarıda y
+
+292
+00:37:32,804 --> 00:37:34,804
+Ziradion
+
+293
+00:37:42,260 --> 00:37:44,140
+No, x-19.
+
+294
+00:37:45,340 --> 00:37:47,340
+Yes, x-19.
+
+295
+00:37:52,371 --> 00:37:53,511
+Let's look together.
+
+296
+00:37:59,668 --> 00:38:03,628
+Evet. x-90.
+
+297
+00:38:08,052 --> 00:38:09,211
+Ah, yes, you're right.
+
+298
+00:38:10,751 --> 00:38:11,552
+Ah, yes.
+
+299
+00:38:11,872 --> 00:38:15,092
+I've forgotten this result.
+
+300
+00:38:15,211 --> 00:38:15,672
+I'm sorry.
+
+301
+00:38:15,812 --> 00:38:17,052
+Yes, minus 1 is okay.
+
+302
+00:38:17,271 --> 00:38:18,072
+I'm so sorry.
+
+303
+00:38:19,072 --> 00:38:20,872
+I just remember mistakenly.
+
+304
+00:38:20,932 --> 00:38:21,352
+I'm sorry.
+
+305
+00:38:21,852 --> 00:38:22,092
+Yes.
+
+306
+00:38:24,032 --> 00:38:26,012
+Because of the derivative is minus 1.
+
+307
+00:38:26,092 --> 00:38:26,832
+Yes, you're right.
+
+308
+00:38:27,592 --> 00:38:27,832
+Yes.
+
+309
+00:38:28,072 --> 00:38:28,892
+Yes, yes.
+
+310
+00:38:29,452 --> 00:38:29,632
+Yes.
+
+311
+00:38:30,392 --> 00:38:33,211
+And let's see the solution.
+
+312
+00:38:33,452 --> 00:38:34,572
+Function is cosine x.
+
+313
+00:38:34,572 --> 00:38:35,332
+Okay, we know.
+
+314
+00:38:35,751 --> 00:38:37,572
+And the closer point is 90.
+
+315
+00:38:37,572 --> 00:38:39,012
+That means pi over 2.
+
+316
+00:38:39,452 --> 00:38:39,652
+Okay.
+
+317
+00:38:40,271 --> 00:38:44,872
+So the linear form of this cosine x is not a linear function.
+
+318
+00:38:45,652 --> 00:38:48,012
+It's the trigonometric function cosine x.
+
+319
+00:38:48,271 --> 00:38:53,952
+Linearize it at pi over 2 and get an approximate value of it at 91.
+
+320
+00:38:55,692 --> 00:38:58,512
+And x is at pi over 2.
+
+321
+00:38:58,572 --> 00:39:03,251
+f pi over 2 plus f prime pi over 2 times x minus pi over 2.
+
+322
+00:39:04,092 --> 00:39:05,492
+f pi over 2 is 0.
+
+323
+00:39:05,492 --> 00:39:05,892
+We know.
+
+324
+00:39:05,892 --> 00:39:08,332
+Cosine x is 0 at pi over 2.
+
+325
+00:39:08,452 --> 00:39:08,812
+Derivative.
+
+326
+00:39:09,532 --> 00:39:11,552
+Derivative of it is minus sine x.
+
+327
+00:39:11,812 --> 00:39:15,312
+And at the point pi over 2 is minus 1.
+
+328
+00:39:15,912 --> 00:39:18,172
+Minus sine pi over 2 is minus 1.
+
+329
+00:39:18,332 --> 00:39:20,572
+So linear form of this.
+
+330
+00:39:20,572 --> 00:39:24,012
+And x is minus 1 times x minus pi over 2.
+
+331
+00:39:24,012 --> 00:39:26,352
+That means pi over 2 minus x.
+
+332
+00:39:26,672 --> 00:39:26,932
+Okay.
+
+333
+00:39:28,572 --> 00:39:34,452
+So we know f is approximately l or l is approximately f.
+
+334
+00:39:34,452 --> 00:39:40,012
+So evaluate cosine 91 and not in f in l approximately.
+
+335
+00:39:40,372 --> 00:39:43,912
+So cosine 91 is approximately l 91.
+
+336
+00:39:43,912 --> 00:39:44,312
+Okay.
+
+337
+00:39:44,312 --> 00:39:46,352
+And what is l 91?
+
+338
+00:39:46,552 --> 00:39:49,592
+It says that pi over 2 minus x whatever you have.
+
+339
+00:39:50,852 --> 00:39:51,952
+Pi over 2 is 90.
+
+340
+00:39:52,132 --> 00:39:53,012
+Minus 91.
+
+341
+00:39:53,731 --> 00:39:55,692
+This is the radian form of it.
+
+342
+00:39:55,932 --> 00:39:58,472
+Minus pi over 180.
+
+343
+00:39:58,472 --> 00:39:59,132
+Minus pi over 2 is 90.
+
+344
+00:39:59,132 --> 00:39:59,152
+Okay.
+
+345
+00:39:59,152 --> 00:40:17,032
+Minus pi over 2 is 90.
+
+346
+00:40:16,532 --> 00:40:24,012
+Hocam, biz bunun cevabını yazarken x1 olarak yazmamız mı daha doğru olur? x180 olarak yazmamız mı daha doğru olur?
+
+347
+00:40:24,832 --> 00:40:39,132
+I think pi over 180 because if you say 1, here 1 is not a, it's an angle, not any constant.
+
+348
+00:40:39,132 --> 00:40:46,812
+That's why you have to just specify this is the 90 minus 91, but they are angles.
+
+349
+00:40:47,472 --> 00:40:52,472
+So you need to specify this is an angle, one angle, minus one for example.
+
+350
+00:40:52,952 --> 00:40:59,771
+So it is in radian form, minus pi over 180, I think the most proper form of it.
+
+351
+00:41:02,552 --> 00:41:03,132
+Okay?
+
+352
+00:41:04,032 --> 00:41:04,912
+Okay, fine.
+
+353
+00:41:12,596 --> 00:41:13,596
+anyone?
+
+354
+00:41:36,788 --> 00:41:52,268
+I want to continue. If you don't have any question about linearization and the approximations, now let's continue with differentials. This is important to understand. And in differentials...
+
+355
+00:41:57,108 --> 00:41:59,508
+Firstly, let's see what's the differential.
+
+356
+00:42:04,179 --> 00:42:15,940
+It is so close to derivative. Derivative and differential are so, um, how can I say, parallel meanings.
+
+357
+00:42:17,539 --> 00:42:23,379
+Let's see the definition. Let y be a differentiable function and
+
+358
+00:42:27,923 --> 00:42:29,923
+Differential dx,
+
+359
+00:42:31,923 --> 00:42:33,923
+Differential of the independent variable
+
+360
+00:42:34,923 --> 00:42:36,923
+is an independent variable.
+
+361
+00:42:37,923 --> 00:42:38,923
+Differential dy
+
+362
+00:42:39,923 --> 00:42:40,923
+is
+
+363
+00:42:41,923 --> 00:42:42,923
+f' dx.
+
+364
+00:42:45,923 --> 00:42:46,923
+This is like
+
+365
+00:42:48,923 --> 00:42:50,923
+measuring a change of a function.
+
+366
+00:42:51,923 --> 00:42:52,923
+Think that
+
+367
+00:42:53,923 --> 00:42:56,923
+again always think derivative is the
+
+368
+00:42:56,923 --> 00:42:59,923
+rate of change of a function. Differential is so similar.
+
+369
+00:43:00,923 --> 00:43:02,923
+Differential is in fact
+
+370
+00:43:03,923 --> 00:43:04,923
+like having
+
+371
+00:43:05,923 --> 00:43:06,923
+the change.
+
+372
+00:43:07,923 --> 00:43:08,923
+What change we have as a function
+
+373
+00:43:09,923 --> 00:43:11,923
+once we change the independent variable in it?
+
+374
+00:43:12,923 --> 00:43:14,923
+Okay, this is I think the main question it must be.
+
+375
+00:43:15,923 --> 00:43:17,923
+Think that we change the function x.
+
+376
+00:43:18,923 --> 00:43:21,923
+x is the independent variable and y is the function of it.
+
+377
+00:43:22,923 --> 00:43:24,923
+Okay, once we change the function x
+
+378
+00:43:24,923 --> 00:43:25,923
+and x
+
+379
+00:43:26,923 --> 00:43:28,923
+think that we give an increment
+
+380
+00:43:29,923 --> 00:43:31,923
+it was x and make it x plus delta x.
+
+381
+00:43:31,923 --> 00:43:33,923
+Okay, the increment is delta x.
+
+382
+00:43:34,923 --> 00:43:37,923
+You just change the independent variable x to x plus delta x.
+
+383
+00:43:38,923 --> 00:43:39,923
+So what's the change of x?
+
+384
+00:43:40,923 --> 00:43:41,923
+Delta x.
+
+385
+00:43:42,923 --> 00:43:49,923
+Okay, so the x is, that means the differential of x, that means the change of x is delta x.
+
+386
+00:43:49,923 --> 00:43:50,923
+and delta x.
+
+387
+00:43:50,923 --> 00:43:52,923
+But what about the function y?
+
+388
+00:43:52,923 --> 00:43:54,923
+Once you change the
+
+389
+00:43:55,923 --> 00:44:01,923
+independent variable x to x plus delta x, what happens to the function?
+
+390
+00:44:02,923 --> 00:44:03,923
+What's the change of the differential?
+
+391
+00:44:04,923 --> 00:44:07,923
+That means what's the change of the function dy?
+
+392
+00:44:08,923 --> 00:44:10,923
+dy is measured as f prime of x dx.
+
+393
+00:44:10,923 --> 00:44:11,923
+Now look.
+
+394
+00:44:12,923 --> 00:44:20,923
+That means I mean that the differential of independent variables are directly dx dy, whatever it is.
+
+395
+00:44:20,923 --> 00:44:25,923
+But if it is a function, it is related with the independent variable which is belonging.
+
+396
+00:44:26,923 --> 00:44:27,923
+Okay.
+
+397
+00:44:27,923 --> 00:44:29,923
+Look at the figure here.
+
+398
+00:44:29,923 --> 00:44:33,923
+Think that this is the graph of y, graph of f.
+
+399
+00:44:34,923 --> 00:44:37,923
+Think it is the tangent line at a function a.
+
+400
+00:44:38,923 --> 00:44:42,923
+And give the increment to a as delta x.
+
+401
+00:44:43,923 --> 00:44:44,923
+Delta x dx.
+
+402
+00:44:44,923 --> 00:44:52,923
+That means the change of independent variables are always equal to the differentials of them.
+
+403
+00:44:53,923 --> 00:45:01,923
+But if you are talking about the function, differential of a function, it is related with the differential of the independent variable in it.
+
+404
+00:45:02,923 --> 00:45:05,923
+So look what we have.
+
+405
+00:45:05,923 --> 00:45:07,923
+Look at this figure.
+
+406
+00:45:07,923 --> 00:45:08,923
+This is delta x.
+
+407
+00:45:08,923 --> 00:45:09,923
+This distance.
+
+408
+00:45:09,923 --> 00:45:13,923
+This is the increment of x at the point a.
+
+409
+00:45:14,923 --> 00:45:17,923
+So it was a, a plus delta x or dx.
+
+410
+00:45:18,923 --> 00:45:19,923
+Okay.
+
+411
+00:45:19,923 --> 00:45:20,923
+What about the function?
+
+412
+00:45:21,923 --> 00:45:27,923
+The function, it was f a becomes a f a plus delta x.
+
+413
+00:45:28,923 --> 00:45:30,923
+So this distance is delta y.
+
+414
+00:45:30,923 --> 00:45:34,923
+That means the change of the function f a plus dx minus delta x.
+
+415
+00:45:35,923 --> 00:45:36,923
+Is it?
+
+416
+00:45:36,923 --> 00:45:37,923
+Yes.
+
+417
+00:45:37,923 --> 00:45:45,923
+Once we make it a to a plus delta x, the function was becoming f a to f a plus delta x.
+
+418
+00:45:45,923 --> 00:45:48,923
+This is the change of the function delta y.
+
+419
+00:45:49,923 --> 00:45:55,923
+But it says dy is the differential is f prime of x dx.
+
+420
+00:45:56,923 --> 00:45:57,923
+Why we have such a formula?
+
+421
+00:45:57,923 --> 00:45:58,923
+Just think.
+
+422
+00:45:59,923 --> 00:46:00,923
+Just remember derivative formula.
+
+423
+00:46:00,923 --> 00:46:10,923
+Derivative was the change of the function divided with the change of the independent variable when the increment is going to zero limit form of it.
+
+424
+00:46:11,923 --> 00:46:18,923
+Delta y over delta x is the main structure of the derivative of any single variable function.
+
+425
+00:46:18,923 --> 00:46:44,923
+Any ordinary derivative.
+
+426
+00:46:22,260 --> 00:46:52,260
+Bu, bu
+
+427
+00:46:52,260 --> 00:47:07,240
+bu, bu
+
+428
+00:47:12,052 --> 00:47:16,552
+Maybe you are having some difficulty about understanding what I'm trying to talk.
+
+429
+00:47:23,635 --> 00:47:24,456
+What you say?
+
+430
+00:47:35,380 --> 00:47:38,720
+Do you understand it up to now? Tell me. Do you?
+
+431
+00:47:39,539 --> 00:47:39,900
+Okay.
+
+432
+00:47:42,240 --> 00:47:42,700
+Hmm.
+
+433
+00:47:44,360 --> 00:47:44,840
+Yes.
+
+434
+00:47:49,811 --> 00:48:04,971
+Roughly think that derivative of a function is the limit of the rate of a change of a function.
+
+435
+00:48:05,511 --> 00:48:05,991
+Isn't it?
+
+436
+00:48:06,411 --> 00:48:10,011
+Rate of change of a function is delta y over delta x.
+
+437
+00:48:10,471 --> 00:48:10,911
+Is it okay?
+
+438
+00:48:11,152 --> 00:48:12,531
+Delta y over delta x.
+
+439
+00:48:13,351 --> 00:48:14,911
+Delta y is the change of the function.
+
+440
+00:48:15,431 --> 00:48:17,011
+Delta x is the change of the variable.
+
+441
+00:48:17,011 --> 00:48:26,771
+This rate, this quotient, this division, limit form of this division makes it derivative of the function.
+
+442
+00:48:27,391 --> 00:48:35,211
+But these divisions part by part, dividing differentials of them.
+
+443
+00:48:35,271 --> 00:48:38,251
+But the differential is the limit of the change of them.
+
+444
+00:48:38,672 --> 00:48:38,751
+Okay.
+
+445
+00:48:39,711 --> 00:48:43,291
+Because, how can I make you understand?
+
+446
+00:48:43,291 --> 00:48:47,672
+Think that your function is f is x square.
+
+447
+00:48:50,351 --> 00:48:53,251
+Think that x square and your point is one.
+
+448
+00:48:53,971 --> 00:48:55,391
+Yes, of course, I can do it.
+
+449
+00:48:55,572 --> 00:48:59,451
+First, listen to me and then make it in explanation in Turkish.
+
+450
+00:49:00,291 --> 00:49:01,951
+Think that your function is x square.
+
+451
+00:49:02,371 --> 00:49:03,911
+It's the curve, not the line.
+
+452
+00:49:03,911 --> 00:49:04,211
+Okay.
+
+453
+00:49:04,371 --> 00:49:07,711
+Because normally, we're working on curves, not the lines.
+
+454
+00:49:07,811 --> 00:49:09,451
+Lines are so few.
+
+455
+00:49:10,112 --> 00:49:10,371
+Okay.
+
+456
+00:49:10,951 --> 00:49:14,011
+And think that we have a point at x is one.
+
+457
+00:49:14,391 --> 00:49:17,391
+Just make the point one, two, for example, three.
+
+458
+00:49:18,271 --> 00:49:19,172
+One, two, three.
+
+459
+00:49:19,931 --> 00:49:22,172
+At one, the function is one.
+
+460
+00:49:22,652 --> 00:49:24,551
+At three, the function becomes nine.
+
+461
+00:49:24,551 --> 00:49:26,612
+Can you say that directly?
+
+462
+00:49:27,271 --> 00:49:29,731
+The function becomes one, two, nine.
+
+463
+00:49:29,831 --> 00:49:31,451
+It is not so simple.
+
+464
+00:49:33,031 --> 00:49:45,331
+That means the change of the function, the differential of the function in one making the increment going to zero makes it differential.
+
+465
+00:49:45,331 --> 00:49:50,211
+And this quotient of these differentials make it derivative.
+
+466
+00:49:51,911 --> 00:49:53,152
+Look up this figure.
+
+467
+00:49:54,011 --> 00:49:56,652
+This is f prime of x dx.
+
+468
+00:49:57,871 --> 00:50:00,172
+But this distance is delta y.
+
+469
+00:50:00,291 --> 00:50:02,891
+As you see, they are not so, they are not the same.
+
+470
+00:50:03,851 --> 00:50:07,011
+But we will just think that they are approximately the same.
+
+471
+00:50:07,551 --> 00:50:11,731
+In that case, we will have the approximate value of a differential.
+
+472
+00:50:11,731 --> 00:50:15,231
+Look.
+
+473
+00:50:20,275 --> 00:50:21,875
+Delta y is delta f.
+
+474
+00:50:23,355 --> 00:50:25,915
+f a plus delta x minus f a.
+
+475
+00:50:26,415 --> 00:50:28,076
+So df is f' dx.
+
+476
+00:50:28,695 --> 00:50:30,315
+When delta x is going to 0,
+
+477
+00:50:31,076 --> 00:50:34,556
+delta f will be approximately the differential of it.
+
+478
+00:50:35,615 --> 00:50:38,755
+Because the corresponding change in the tangent line
+
+479
+00:50:38,755 --> 00:50:40,235
+when delta x is going to 0,
+
+480
+00:50:40,895 --> 00:50:44,855
+we know that delta y is delta f.
+
+481
+00:50:45,915 --> 00:50:48,536
+It is approximately the differential of it.
+
+482
+00:50:48,536 --> 00:50:54,015
+And delta f was f a plus delta x minus f a.
+
+483
+00:50:54,175 --> 00:50:55,815
+That means the change of the function.
+
+484
+00:50:56,036 --> 00:50:58,536
+It is approximately differential of it.
+
+485
+00:50:58,655 --> 00:51:00,375
+Differential is f' of a dx.
+
+486
+00:51:01,135 --> 00:51:03,596
+So put f a to the other side.
+
+487
+00:51:04,056 --> 00:51:09,295
+Look, f a plus delta x is approximately f a plus f' of a dx.
+
+488
+00:51:09,935 --> 00:51:11,076
+Remember this formula,
+
+489
+00:51:11,076 --> 00:51:13,215
+this is the linear form of linearization
+
+490
+00:51:13,215 --> 00:51:15,275
+of the function at the point x0.
+
+491
+00:51:15,275 --> 00:51:18,835
+So that's what I'm trying to say
+
+492
+00:51:18,835 --> 00:51:20,515
+from the beginning of this topic.
+
+493
+00:51:21,275 --> 00:51:23,576
+Linearization and the differentials are so similar
+
+494
+00:51:23,576 --> 00:51:26,195
+because they are using the same formulas,
+
+495
+00:51:26,375 --> 00:51:27,635
+but with different methods.
+
+496
+00:51:28,096 --> 00:51:29,795
+They are same in the main idea
+
+497
+00:51:29,795 --> 00:51:31,915
+and the same way of approximation,
+
+498
+00:51:32,215 --> 00:51:34,576
+standard base approximation they have.
+
+499
+00:51:34,576 --> 00:51:38,135
+So it says geometrically the differential of dy
+
+500
+00:51:38,135 --> 00:51:40,775
+is the change of linearization of f,
+
+501
+00:51:41,536 --> 00:51:43,115
+l as delta a,
+
+502
+00:51:43,455 --> 00:51:47,255
+when x is a changes to as delta x.
+
+503
+00:51:47,255 --> 00:51:54,655
+Şimdi arkadaşlar şöyle çok kısa bir şekilde
+
+504
+00:51:54,655 --> 00:51:57,235
+Türkçe'de açıklayacağım az önce anlattıklarımı.
+
+505
+00:51:59,275 --> 00:52:01,155
+Türevi her zaman şunu deriz ya,
+
+506
+00:52:01,835 --> 00:52:03,295
+fonksiyondaki değişim oranı.
+
+507
+00:52:03,875 --> 00:52:04,495
+Fonksiyondaki değişim oranı.
+
+508
+00:52:04,495 --> 00:52:06,375
+Kabaca, tabi bu çok kabaca bir tabirdir.
+
+509
+00:52:06,455 --> 00:52:07,695
+Fonksiyondaki değişim oranı.
+
+510
+00:52:09,295 --> 00:52:11,155
+İşte nedir değişimin?
+
+511
+00:52:11,355 --> 00:52:12,515
+Orandan bahsediyorum.
+
+512
+00:52:12,615 --> 00:52:14,795
+Oran dediğimiz delta y'nin delta x oranı.
+
+513
+00:52:14,795 --> 00:52:16,076
+Değişim oranı.
+
+514
+00:52:16,455 --> 00:52:17,775
+Nereden değişim kaynaklanıyor?
+
+515
+00:52:18,395 --> 00:52:19,955
+Bağımsız değişikliği bir artım veriyoruz.
+
+516
+00:52:20,056 --> 00:52:20,995
+Increment dediğim o.
+
+517
+00:52:21,115 --> 00:52:22,175
+Artım veriyorsunuz.
+
+518
+00:52:22,596 --> 00:52:24,775
+X'i x artı delta x'e götürüyorsunuz.
+
+519
+00:52:24,855 --> 00:52:25,655
+Fonksiyon ne oluyor?
+
+520
+00:52:26,115 --> 00:52:28,215
+fx'den fx artı delta x oluyor.
+
+521
+00:52:28,755 --> 00:52:30,235
+Peki fonksiyondaki değişim oranı
+
+522
+00:52:30,235 --> 00:52:31,955
+gerçekten iki nokta arasındaki uzaklığı
+
+523
+00:52:31,955 --> 00:52:33,375
+hesaplamak kadar basit midir?
+
+524
+00:52:34,056 --> 00:52:34,695
+Tabi ki hayır.
+
+525
+00:52:35,155 --> 00:52:36,435
+Eğer bu bir doğru değilse,
+
+526
+00:52:36,995 --> 00:52:39,056
+eğer doğruysa evet iki nokta arasındaki uzaklık.
+
+527
+00:52:39,155 --> 00:52:40,435
+Peki eğriyse ne olacak?
+
+528
+00:52:41,195 --> 00:52:43,335
+Eğri üzerinde iki nokta arasındaki uzaklığı
+
+529
+00:52:43,335 --> 00:52:44,775
+ikisini farkında olarak bulabilir miyiz?
+
+530
+00:52:44,795 --> 00:52:46,695
+Bence bulamazsınız.
+
+531
+00:52:46,815 --> 00:52:47,695
+Bu gerçek değer olmaz.
+
+532
+00:52:47,855 --> 00:52:48,895
+Sadece bir yaklaşım olur.
+
+533
+00:52:49,576 --> 00:52:50,755
+İşte dersin başından beri
+
+534
+00:52:50,755 --> 00:52:52,315
+yapmaya çalıştığımız yaklaşım bu.
+
+535
+00:52:52,915 --> 00:52:54,795
+Eğriyi doğruya yaklaştırıyoruz.
+
+536
+00:52:54,915 --> 00:52:56,056
+Belli bir nokta civarında.
+
+537
+00:52:56,536 --> 00:52:57,735
+Onlar birbirine çok yakın çünkü.
+
+538
+00:52:57,835 --> 00:52:58,815
+Bir nokta civarında
+
+539
+00:52:58,815 --> 00:53:01,076
+eğriye çizilen teğet
+
+540
+00:53:01,076 --> 00:53:03,556
+aslında eğrin üzerinde
+
+541
+00:53:03,556 --> 00:53:05,855
+hesaplamaya çalıştığımız iki nokta arasındaki uzaklığa
+
+542
+00:53:05,855 --> 00:53:07,875
+bizim bir yaklaşımını veriyor sadece.
+
+543
+00:53:09,235 --> 00:53:10,076
+Anladık mı birazcık?
+
+544
+00:53:10,076 --> 00:53:13,135
+Yani şu demek.
+
+545
+00:53:13,135 --> 00:53:14,275
+Türev neden var?
+
+546
+00:53:14,375 --> 00:53:15,635
+Diferansiyel neden var?
+
+547
+00:53:15,635 --> 00:53:18,536
+Normalde bir fonksiyonun değişkenini,
+
+548
+00:53:18,536 --> 00:53:20,235
+bağımsız değişkenini
+
+549
+00:53:20,235 --> 00:53:23,355
+bir noktadan başka bir noktaya götürdüğünüzde
+
+550
+00:53:23,355 --> 00:53:27,115
+bunun sonucunda oluşan fonksiyondaki değişimi hesaplamak için
+
+551
+00:53:27,115 --> 00:53:28,835
+nasıl oluyor?
+
+552
+00:53:28,835 --> 00:53:30,735
+Türev aslında
+
+553
+00:53:30,735 --> 00:53:32,995
+bir değişim oranı.
+
+554
+00:53:34,455 --> 00:53:35,536
+Fonksiyonun değişimin
+
+555
+00:53:35,536 --> 00:53:37,895
+bağımsız değişkendeki değişimi oranı.
+
+556
+00:53:38,295 --> 00:53:38,875
+Ama ne zaman?
+
+557
+00:53:39,635 --> 00:53:41,295
+Değişimin sıfıra gittiği zaman.
+
+558
+00:53:43,056 --> 00:53:45,715
+Kabaca biz delta y'nin delta x oranı dersek
+
+559
+00:53:45,715 --> 00:53:49,915
+bu bir doğru üzerindeki iki nokta arasındaki uzaklığı bulmak gibi olur.
+
+560
+00:53:50,415 --> 00:53:52,335
+Bu bize gerçek değişim oranını vermez.
+
+561
+00:53:52,775 --> 00:53:54,096
+Bunun gerçek değişim oranı
+
+562
+00:53:54,096 --> 00:53:57,155
+bağımsız değişkendeki değişimin
+
+563
+00:53:57,155 --> 00:54:00,415
+o delta x'in yani increment'ın verdiğimiz artımın
+
+564
+00:54:00,415 --> 00:54:02,635
+sıfıra giderkenki limit halinde
+
+565
+00:54:02,635 --> 00:54:04,655
+ancak onlar birbirlerine çok yaklaşırlar.
+
+566
+00:54:05,275 --> 00:54:06,115
+O yüzden türev
+
+567
+00:54:06,115 --> 00:54:07,775
+bir değişim oranıdır ama
+
+568
+00:54:07,775 --> 00:54:09,556
+kabaca bir tavirle değişim oranıdır.
+
+569
+00:54:09,955 --> 00:54:12,096
+Aslında artımın sıfıra gittiği zamanki
+
+570
+00:54:12,096 --> 00:54:13,975
+değişim oranıdır.
+
+571
+00:54:13,975 --> 00:54:16,875
+ve bu diferansiyel olarak düşünürsek işte
+
+572
+00:54:16,875 --> 00:54:19,576
+bir bağımsız değişkeni değiştirdiğimizde
+
+573
+00:54:19,576 --> 00:54:21,576
+bir şey
+
+574
+00:54:20,851 --> 00:54:28,291
+Zaten bağımsız ne kadar değişiyorsa o kadar değişir ama bir fonksiyonu değiştirmek bağımsız değişkenin nasıl bağlı olduğuna bağlıdır.
+
+575
+00:54:28,351 --> 00:54:29,731
+O yüzden işin içine türev girer.
+
+576
+00:54:30,291 --> 00:54:31,311
+Şunu söylemek istedim.
+
+577
+00:54:31,851 --> 00:54:33,291
+X kare fonksiyonunu düşünün.
+
+578
+00:54:33,811 --> 00:54:36,331
+Bir de bir nokta bir noktasında bir değerini alır.
+
+579
+00:54:36,751 --> 00:54:38,531
+İşte üç noktasında dokuz değerini alır.
+
+580
+00:54:38,612 --> 00:54:42,231
+Peki bu fonksiyondaki değişim sizce sekiz birim midir sadece?
+
+581
+00:54:42,431 --> 00:54:43,632
+Birden dokuza gitmek midir?
+
+582
+00:54:43,751 --> 00:54:45,011
+Doğru üzerinde mi gidiyoruz?
+
+583
+00:54:45,511 --> 00:54:46,771
+Hayır eğri üzerinde gidiyoruz.
+
+584
+00:54:46,771 --> 00:54:53,311
+O yüzden fonksiyonun değişimi aslında iki nokta arasındaki uzaklık almak gibi olamaz artık.
+
+585
+00:54:54,991 --> 00:54:57,911
+O yüzden burada işte işin içine bakın şu giriyor.
+
+586
+00:54:58,531 --> 00:55:01,931
+F'in türevi o noktadaki türevi çarpı x'deki değişim.
+
+587
+00:55:02,652 --> 00:55:08,731
+Eğer bir bağımsız değişkenden bahsediyorsak bağımsız değişkenine artım verirseniz değişimi o kadar olacaktır.
+
+588
+00:55:08,811 --> 00:55:10,091
+Çünkü bağımsızdır.
+
+589
+00:55:10,211 --> 00:55:11,571
+Başka bir değişkene bağlı değildir.
+
+590
+00:55:11,571 --> 00:55:21,931
+Ama bu fonksiyondaki değişim bağımsız değişkeninin değişme oranına çarpı ona göre türevine bağlıdır.
+
+591
+00:55:22,051 --> 00:55:27,591
+Çünkü fonksiyonun o bağımsız değişkenine hangi ilişkiyle bağlı olduğu önemlidir.
+
+592
+00:55:28,051 --> 00:55:29,891
+Lineer ise problem yok zaten.
+
+593
+00:55:30,311 --> 00:55:34,091
+Oradaki değişim oranı çok basit bir şekilde gözde görürüz.
+
+594
+00:55:34,211 --> 00:55:38,071
+Ama eğri ise işin içine türev girecektir.
+
+595
+00:55:38,071 --> 00:55:41,172
+Biraz anladık mı?
+
+596
+00:55:44,172 --> 00:55:44,931
+Bakıyorum.
+
+597
+00:55:48,563 --> 00:55:53,364
+Evet yani şöyle o zaman şu tabloya bakalım.
+
+598
+00:55:55,483 --> 00:55:57,103
+Şimdi şurayı dikkatli takip edin.
+
+599
+00:55:57,243 --> 00:55:59,324
+Bu normalde orijinal eğrimiz bu.
+
+600
+00:56:00,423 --> 00:56:01,543
+Dinerizasyonla ne yaptık?
+
+601
+00:56:02,243 --> 00:56:04,423
+Aslında bu eğri vardı ama biz bu doğruyu kullandık.
+
+602
+00:56:04,423 --> 00:56:09,423
+Çünkü bu eğri bu doğruya belli bir nokta civarında bakın şu A noktasında çok yakınlar farkındaysanız.
+
+603
+00:56:10,103 --> 00:56:11,283
+A civarında yakınlar ama.
+
+604
+00:56:11,844 --> 00:56:13,824
+Herhangi bir A artı delta x'e çok yakın değiller.
+
+605
+00:56:14,324 --> 00:56:15,683
+O yüzden yakın noktayı seçiyoruz.
+
+606
+00:56:15,683 --> 00:56:20,963
+Bu A noktasında bu eğriye bu tanjant doğrusu t doğru çok yakın.
+
+607
+00:56:21,423 --> 00:56:28,963
+O yüzden biz yaklaşım yaparken yaklaşık hesapta bu eğri yerine bu doğruyu kullanıyoruz.
+
+608
+00:56:29,283 --> 00:56:31,423
+O yüzden L'de hesaplıyoruz değerleri.
+
+609
+00:56:32,243 --> 00:56:34,023
+Çünkü bu ikisi birbirine çok yakın A'da.
+
+610
+00:56:34,163 --> 00:56:35,824
+Gerçek değer eğri üzerindeki değer.
+
+611
+00:56:36,384 --> 00:56:44,503
+Ama tanjant doğrusu da bu eğriye bu noktada çok yakın olduğu için o yüzden yakın nokta seçiyoruz.
+
+612
+00:56:45,683 --> 00:56:46,783
+Bu bir yaklaşım oluyor.
+
+613
+00:56:47,123 --> 00:56:51,463
+Bu noktayı hesaplamak istediğim noktayı eğride değil doğru üzerinde daha kolay hesaplıyorum.
+
+614
+00:56:51,623 --> 00:56:52,403
+Çünkü doğru çünkü.
+
+615
+00:56:53,143 --> 00:56:55,523
+O yüzden yaklaşık hesapta bunu kullanıyoruz.
+
+616
+00:56:56,663 --> 00:56:58,003
+Diferansiyel de aslında bu.
+
+617
+00:56:58,063 --> 00:57:00,243
+Diyor ki bir noktadan başka bir noktaya gidiyorum.
+
+618
+00:57:00,384 --> 00:57:01,963
+O zaman fonksiyondaki değişimi nasıl ölçebilirim?
+
+619
+00:57:03,443 --> 00:57:05,063
+Fonksiyondaki değişimi diferansiyeli.
+
+620
+00:57:05,063 --> 00:57:07,563
+Tamam mı?
+
+621
+00:57:07,563 --> 00:57:08,103
+Öyle düşünün.
+
+622
+00:57:08,384 --> 00:57:10,223
+Diferansiyeli ama nasıl hesaplayabilirim?
+
+623
+00:57:12,623 --> 00:57:13,763
+Şöyle düşünün.
+
+624
+00:57:14,523 --> 00:57:15,844
+Bu noktadan bu noktaya gittim.
+
+625
+00:57:15,943 --> 00:57:17,623
+Fonksiyonda bu noktadan bu noktaya gitti.
+
+626
+00:57:18,503 --> 00:57:21,683
+Beğamsız değişkendeki değişim delta x kadar veya dx kadar.
+
+627
+00:57:22,304 --> 00:57:24,403
+Fonksiyondaki değişim bakın şu delta y kadar.
+
+628
+00:57:24,403 --> 00:57:27,223
+F artı delta x eksi f a.
+
+629
+00:57:28,384 --> 00:57:30,143
+Şimdi türev neydi?
+
+630
+00:57:30,983 --> 00:57:32,023
+Diferansiyellerin oranı.
+
+631
+00:57:33,364 --> 00:57:35,223
+Bunların diferansiyeli yani değişimin oranı.
+
+632
+00:57:35,683 --> 00:57:38,543
+Ama bu değişim işte neden limit?
+
+633
+00:57:38,543 --> 00:57:41,844
+Çünkü bu değişim iki nokta arasındaki fark gibi olmak zorunda değil de bunun.
+
+634
+00:57:42,324 --> 00:57:46,203
+Artımı sıfıra götürecek kadar limit alırsanız gerçek değeri olur bu.
+
+635
+00:57:47,344 --> 00:57:50,143
+Yani siz normal iki nokta arasındaki farkı aldım.
+
+636
+00:57:50,563 --> 00:57:52,443
+Fonksiyonda değerleri arasındaki farkı alayım.
+
+637
+00:57:52,503 --> 00:57:53,324
+Birbirlerine böleyim.
+
+638
+00:57:53,403 --> 00:57:54,804
+Bu da bunun türevidir diyemezsiniz.
+
+639
+00:57:55,324 --> 00:57:56,884
+Değişim oranı bu olmaz her zaman.
+
+640
+00:57:57,043 --> 00:57:59,263
+Çünkü eğri üzerinde çalışıyoruz.
+
+641
+00:58:00,043 --> 00:58:00,483
+Tamam mı?
+
+642
+00:58:00,943 --> 00:58:06,703
+Artımı sıfıra gönderecek şekilde fonksiyonun farkını, değişkenin farkını bölerseniz
+
+643
+00:58:06,703 --> 00:58:09,183
+fonksiyondaki değişimi o zaman görürsünüz.
+
+644
+00:58:09,304 --> 00:58:10,583
+Değişim oranı asıl bu olur.
+
+645
+00:58:11,043 --> 00:58:14,663
+Yani dy bölü dx dediğimiz bir neden bu notasyonu kullanıyoruz türevde?
+
+646
+00:58:15,163 --> 00:58:18,223
+Bakın bu yeni diferansiyelin x'in diferansiyeline böldük.
+
+647
+00:58:18,643 --> 00:58:21,304
+Bu iki diferansiyellerin oranı bize türevi verecektir.
+
+648
+00:58:21,304 --> 00:58:25,884
+O yüzden dy'nin değişimi f üst x dx'dir her zaman.
+
+649
+00:58:27,123 --> 00:58:27,683
+Anladık mı?
+
+650
+00:58:28,324 --> 00:58:32,963
+Bunu anlamanız inanın size matematik hayatında diğer insanlardan çok farklı kalacaktır.
+
+651
+00:58:33,324 --> 00:58:35,304
+Şu an herhangi bir matematik öğrencisinde bile
+
+652
+00:58:35,304 --> 00:58:38,384
+türev ile diferansiyeli arasındaki farkı sorduğumda zorlanabilir.
+
+653
+00:58:38,844 --> 00:58:40,183
+Bunu anlamak kolay değildir.
+
+654
+00:58:40,583 --> 00:58:42,623
+Ve siz bunu anlarsınız ben çok mutlu olacağım.
+
+655
+00:58:43,824 --> 00:58:45,243
+Bu yüzden bu açıklamayı Türkçe yapıyorum.
+
+656
+00:58:45,344 --> 00:58:46,683
+Normalde ben bu kadar detaya girmem.
+
+657
+00:58:47,763 --> 00:58:51,763
+Ama siz bu detayı anlayabilecek kapasitede öğrenciler olduğunuzu görüyorum.
+
+658
+00:58:53,003 --> 00:58:55,123
+Bence biraz bir şeyler anlamaya başladınız.
+
+659
+00:58:55,844 --> 00:58:58,003
+Türev ve diferansiyeli arasındaki fark nedir?
+
+660
+00:58:58,703 --> 00:59:01,583
+Gibi bir ayrımı anladığınız anda bence çok öndesinizdir.
+
+661
+00:59:01,583 --> 00:59:04,443
+Tekrar söylüyorum.
+
+662
+00:59:05,123 --> 00:59:07,023
+Türev bu diferansiyellerin oranıdır.
+
+663
+00:59:07,023 --> 00:59:10,483
+O yüzden biz türeve değişim oranı deriz.
+
+664
+00:59:10,844 --> 00:59:14,963
+Ama değişim demek iki nokta arasındaki uzaklığı hesaplamakla olmaz.
+
+665
+00:59:15,783 --> 00:59:18,103
+Artımı sıfıra göndererek limit alarak olur ancak.
+
+666
+00:59:18,304 --> 00:59:21,963
+Delta y dediğiniz fonksiyondaki değişim delta x değişkendeki değişim.
+
+667
+00:59:22,103 --> 00:59:23,243
+Yani artım.
+
+668
+00:59:25,183 --> 00:59:26,483
+Bu bize türevi verir.
+
+669
+00:59:26,583 --> 00:59:28,203
+Bu diferansiyellerin oranıdır.
+
+670
+00:59:28,203 --> 00:59:29,683
+Neden öyle? Gelin görelim.
+
+671
+00:59:30,503 --> 00:59:31,963
+Bu fonksiyondaki değişim.
+
+672
+00:59:32,703 --> 00:59:34,043
+Bu değişkendeki değişim.
+
+673
+00:59:36,844 --> 00:59:39,623
+Bakın burası t-tin eğimi türevdi değil mi?
+
+674
+00:59:39,884 --> 00:59:41,243
+Bu t-tin eğimi türev.
+
+675
+00:59:41,943 --> 00:59:43,183
+Bu t-tin eğimi ne diyor bana?
+
+676
+00:59:43,943 --> 00:59:45,203
+Türev diyor ki...
+
+677
+00:59:45,139 --> 00:59:49,119
+F üstü A delta x yani şu uzaklığın bu uzaklığa bölümü.
+
+678
+00:59:49,699 --> 00:59:53,179
+Ben bu uzaklığın bu uzaklığa bölümü olduğunu işte F üstü A olduğunu biliyorum.
+
+679
+00:59:54,099 --> 00:59:57,199
+O yüzden bu oran bana bunu veriyor.
+
+680
+00:59:57,339 --> 00:59:58,599
+Delta y bölü delta x.
+
+681
+00:59:58,599 --> 01:00:03,079
+O yüzden y'nin diferansiyeli F üstü x delta x herhangi bir noktada.
+
+682
+01:00:04,539 --> 01:00:09,219
+Şimdi delta y yani y'deki değişim bu olsun istiyorum.
+
+683
+01:00:09,739 --> 01:00:12,420
+Aslında bu y'deki değişim fonksiyon.
+
+684
+01:00:12,420 --> 01:00:18,940
+Çünkü bu noktadan bu noktaya götürünce delta L yani lineer formdaki lineerizasyon yaptığım fonksiyon.
+
+685
+01:00:19,359 --> 01:00:21,339
+Yani lineer fonksiyondaki değişim aslında.
+
+686
+01:00:21,500 --> 01:00:22,920
+O yüzden delta L dedik buraya.
+
+687
+01:00:23,559 --> 01:00:24,079
+Bu değişim.
+
+688
+01:00:24,719 --> 01:00:28,719
+Delta L yani y'nin diferansiyeli şey değil.
+
+689
+01:00:29,319 --> 01:00:31,400
+İşte F artı delta x eks de F A değil.
+
+690
+01:00:31,480 --> 01:00:32,920
+Bunun değişimi sadece bu olamaz.
+
+691
+01:00:33,139 --> 01:00:35,239
+O yüzden lineer formdaki değişim.
+
+692
+01:00:35,679 --> 01:00:38,179
+L artı delta x'den L'ye çıkartırsam.
+
+693
+01:00:38,759 --> 01:00:39,619
+L neydi?
+
+694
+01:00:39,679 --> 01:00:40,519
+Bunun formülünü biliyorum.
+
+695
+01:00:40,599 --> 01:00:41,480
+İşte bunu uyguluyorum.
+
+696
+01:00:42,420 --> 01:00:43,980
+O yüzden bakın burada ne kalıyor?
+
+697
+01:00:44,039 --> 01:00:46,039
+F üstü A delta x kalıyor.
+
+698
+01:00:46,139 --> 01:00:46,859
+D x kalıyor.
+
+699
+01:00:48,379 --> 01:00:52,219
+Yani delta y F'deki değişim.
+
+700
+01:00:53,440 --> 01:00:56,539
+Bu düşünürsen diferansiyel buna yaklaşıyor.
+
+701
+01:00:58,079 --> 01:01:00,579
+Yani delta F yaklaşık olarak diferansiyel.
+
+702
+01:01:00,639 --> 01:01:02,619
+Yani fonksiyondaki değişim.
+
+703
+01:01:02,859 --> 01:01:03,859
+İkisi arasındaki fark.
+
+704
+01:01:03,859 --> 01:01:09,699
+Aslında lineer formdaki ikisi arasındaki fark fonksiyonun diferansiyeline yaklaşır.
+
+705
+01:01:09,699 --> 01:01:11,259
+Hep şuradan yola çıkacaksınız.
+
+706
+01:01:11,259 --> 01:01:13,259
+Formülü ezberlemenizi istemem.
+
+707
+01:01:13,880 --> 01:01:17,500
+Diyeceksiniz ki fonksiyondaki değişim yaklaşık olarak onun diferansiyelidir.
+
+708
+01:01:18,319 --> 01:01:25,759
+Daha doğrusu fonksiyonun diferansiyeli kabaca hesaplanan fonksiyondaki farkı yaklaşır sadece.
+
+709
+01:01:25,759 --> 01:01:27,319
+O da y'deki değişim.
+
+710
+01:01:27,319 --> 01:01:31,619
+Yani fonksiyonun lineer halindeki, linearizasyonundaki değişim.
+
+711
+01:01:31,980 --> 01:01:34,319
+Her seferinde otop linearizasyonunu hesaplamayacaksınız.
+
+712
+01:01:34,400 --> 01:01:35,539
+O yüzden şunu yapacaksınız.
+
+713
+01:01:35,539 --> 01:01:40,219
+Df diferansiyeline yaklaşıyorsa o zaman şunu söylerim.
+
+714
+01:01:41,199 --> 01:01:44,579
+F'teki değişim F A artı delta x eksi F A idi.
+
+715
+01:01:44,679 --> 01:01:46,699
+Bu yaklaşık olarak diferansiyel formu.
+
+716
+01:01:47,259 --> 01:01:50,539
+Demek ki F A artı delta x yaklaşık olarak.
+
+717
+01:01:50,719 --> 01:01:56,179
+Bakın fonksiyona değişimine bir artım verdiğinde değişkenine fonksiyon nasıl değişiyor?
+
+718
+01:01:56,179 --> 01:01:58,839
+F A artı F üstü A delta x kadar değişiyor.
+
+719
+01:01:59,980 --> 01:02:03,019
+Yani F A'dan F artı delta x de geçti.
+
+720
+01:02:03,019 --> 01:02:05,980
+Bitti o zaman bu değişim benim değişimimdir diyemezsiniz.
+
+721
+01:02:06,739 --> 01:02:07,679
+Bakın nasıl değişiyor.
+
+722
+01:02:08,199 --> 01:02:12,899
+Fonksiyonun yeni değeri yaklaşık olarak F A artı F üstü A delta x.
+
+723
+01:02:13,019 --> 01:02:16,119
+Yani fonksiyonun değişim miktarı buradaki diferansiyelidir.
+
+724
+01:02:16,119 --> 01:02:31,259
+Bu yüzden bir noktadan bir noktaya giderken fonksiyondaki değişimi ilk nokta plus artı diferansiyeli deyip diferansiyel yöntemle, diferansiyel yaklaşımla yaklaşık hesap hesaplayacağız.
+
+725
+01:02:31,259 --> 01:02:33,859
+Umarım anladık birazcık.
+
+726
+01:02:36,299 --> 01:02:36,920
+Tamam mıyız?
+
+727
+01:02:39,719 --> 01:02:42,000
+Örnekler üzerine biraz daha iyi anlayacaksınız.
+
+728
+01:02:42,199 --> 01:02:44,079
+En azından uygulamasını anlayacaksınız.
+
+729
+01:02:44,500 --> 01:02:48,099
+Temelini çok çok derinden anlamanızı beklemiyorum şu anda.
+
+730
+01:02:48,199 --> 01:02:48,659
+Çok normal.
+
+731
+01:02:48,659 --> 01:03:12,119
+Tamam.
+
+732
+01:02:56,148 --> 01:03:00,827
+Bu da, bu da aynı zamanda, bu da aynı zamanda,
+
+733
+01:03:00,827 --> 01:03:02,827
+ve aynı zamanda, aynı zamanda, aynı zamanda,
+
+734
+01:03:02,827 --> 01:03:04,827
+aynı zamanda, aynı zamanda, aynı zamanda,
+
+735
+01:03:04,827 --> 01:03:07,228
+çünkü, aynı zamanda, aynı zamanda,
+
+736
+01:03:07,228 --> 01:03:09,068
+aynı zamanda, aynı zamanda, aynı zamanda,
+
+737
+01:03:09,068 --> 01:03:11,068
+aynı zamanda, aynı zamanda, aynı zamanda, aynı zamanda,
+
+738
+01:03:11,068 --> 01:03:14,748
+that means the change of the linearization of the function,
+
+739
+01:03:14,748 --> 01:03:16,088
+linearization form,
+
+740
+01:03:16,088 --> 01:03:18,748
+is approximately the differential of the function.
+
+741
+01:03:18,748 --> 01:03:21,688
+That's why we use this, this formula.
+
+742
+01:03:26,387 --> 01:03:31,188
+Ok, let's see the exercises.
+
+743
+01:03:33,507 --> 01:03:38,467
+Here you see, for example, if you have the function dcosx,
+
+744
+01:03:38,467 --> 01:03:44,627
+that means the differential of cosx derivative of it, f' dx,
+
+745
+01:03:44,627 --> 01:03:47,748
+derivative of it minus sinx times dx.
+
+746
+01:03:48,307 --> 01:03:52,228
+That means change of the function is directly related
+
+747
+01:03:52,228 --> 01:03:54,547
+with the change of the independent variable in it.
+
+748
+01:03:54,547 --> 01:03:59,107
+This function is a function of independent variable x.
+
+749
+01:03:59,107 --> 01:04:04,708
+So the change of cosx is directly related with the change of x.
+
+750
+01:04:04,708 --> 01:04:07,027
+That's why we multiply with dx.
+
+751
+01:04:07,027 --> 01:04:13,347
+Ok, for example tangent 2x, 2 seconds squared x dx, the differential of it.
+
+752
+01:04:14,387 --> 01:04:19,347
+For example, this function y x to 5 plus 5 x to 4 minus 2x.
+
+753
+01:04:19,347 --> 01:04:35,907
+The differential of it is derivative of it 5 times x to 4 plus 20x cubed minus 2 times dx.
+
+754
+01:04:31,956 --> 01:04:32,876
+Are you okay?
+
+755
+01:04:38,900 --> 01:04:39,900
+ok.
+
+756
+01:04:43,092 --> 01:04:51,852
+Now we will solve the same question with also a differential, while using the differential approximate value of it, using the differential.
+
+757
+01:04:53,072 --> 01:05:05,811
+We did this question with the linearization. We just choose the function and the point, linearize it, and then apply the point 1.001 and get the approximate value of this expression.
+
+758
+01:05:05,811 --> 01:05:12,952
+Now we will do the same approximation, same value we will get, by using the differential of the function.
+
+759
+01:05:13,412 --> 01:05:20,652
+Again, you need to choose the function, specify the closer point, but use the differential formula.
+
+760
+01:05:23,092 --> 01:05:31,512
+Differential formula says that f a plus delta x is approximately f a plus f' adx.
+
+761
+01:05:32,072 --> 01:05:33,932
+Always you need to apply this formula.
+
+762
+01:05:46,708 --> 01:05:50,148
+For this question, let's see together and then you will do it.
+
+763
+01:05:52,228 --> 01:05:57,988
+We choose the function f we know, we did it before, x to 5 minus 3 times x to 3 over 2 plus 2.
+
+764
+01:05:58,867 --> 01:06:06,228
+And of course, again, the closer point is 1. Okay. And evaluate dy.
+
+765
+01:06:09,940 --> 01:06:22,079
+because you were at the point x and go to x0. And so change of f approximately dy, that means delta y.
+
+766
+01:06:22,079 --> 01:06:36,700
+This is delta y, this is delta x. And x was 1. It's going to 1 plus 001. So the change of x dx is 1.001 minus 1.
+
+767
+01:06:36,700 --> 01:06:44,059
+It is the change of x is the increment 0.001. Okay. This is delta x evaluated.
+
+768
+01:06:44,059 --> 01:06:47,840
+dy is f' of 1 dx.
+
+769
+01:06:53,876 --> 01:06:54,596
+son.
+
+770
+01:07:03,443 --> 01:07:19,443
+f'1 is evaluated 1 over 2. And this is the change of function at the same time. 1.001 minus f1 is this value approximately.
+
+771
+01:07:23,092 --> 01:07:36,372
+So, it is f1.001, f' dx. It is 1 over 2 times 0.001, which is the same value we did with the linearization.
+
+772
+01:07:50,452 --> 01:07:51,172
+Are you okay?
+
+773
+01:08:16,340 --> 01:08:17,340
+Any question?
+
+774
+01:08:25,939 --> 01:08:31,219
+Okay, shall we have a short break? Okay, and then continue.
+
+775
+01:08:37,492 --> 01:08:39,112
+I think it's better to have a break.
+
+776
+01:08:42,452 --> 01:08:44,412
+For 10 minutes, I'm so sorry.
+
+777
+01:08:44,652 --> 01:08:44,891
+Okay.
+
+778
+01:08:45,832 --> 01:08:46,952
+Thank you so much.
+
+779
+01:08:51,604 --> 01:08:52,724
+Okay, so see you.
+
+780
+01:22:22,707 --> 01:22:26,387
+Hi everyone. Are you here? Shall we continue?
+
+781
+01:22:28,547 --> 01:22:31,827
+Yes, teacher, we are here. Okay, thank you so much.
+
+782
+01:22:34,067 --> 01:22:39,347
+So let's continue with the next question. I think in this exercise you will understand better
+
+783
+01:22:39,347 --> 01:22:48,387
+the differential and the usage of differential in approximate calculus. Let's see. How did you do it?
+
+784
+01:22:48,387 --> 01:22:53,187
+Well done. Next look at the back.
+
+785
+01:22:57,268 --> 01:23:02,868
+Vardan, it is in the square root 23.
+
+786
+01:23:05,387 --> 01:23:07,387
+Approximate calculus here we need.
+
+787
+01:23:08,967 --> 01:23:12,007
+But linearization also you can use here,
+
+788
+01:23:12,087 --> 01:23:13,627
+but we will do it with differential.
+
+789
+01:23:14,288 --> 01:23:16,167
+Let's see how can we do the differential.
+
+790
+01:23:17,087 --> 01:23:21,627
+We generally start with delta f is approximately df.
+
+791
+01:23:23,707 --> 01:23:25,868
+If I were you, I would do this.
+
+792
+01:23:25,868 --> 01:23:30,608
+I was at 25 because the function is square root x.
+
+793
+01:23:30,728 --> 01:23:32,228
+The closer point is 25.
+
+794
+01:23:32,368 --> 01:23:32,927
+It is clear.
+
+795
+01:23:33,148 --> 01:23:34,528
+I think we are okay about this.
+
+796
+01:23:35,068 --> 01:23:37,328
+You can linearize this function at that point
+
+797
+01:23:37,328 --> 01:23:42,988
+and get the approximate rule or by using differential just right.
+
+798
+01:23:43,507 --> 01:23:45,467
+The point that you choose is 25.
+
+799
+01:23:45,948 --> 01:23:49,547
+25 to 23, sometimes the increments can be negative.
+
+800
+01:23:50,408 --> 01:23:51,728
+Okay, it's possible.
+
+801
+01:23:51,728 --> 01:23:55,467
+25 to 23, it was at 25.
+
+802
+01:23:55,887 --> 01:23:57,007
+We are going to 23.
+
+803
+01:23:57,007 --> 01:23:59,188
+So the delta x is minus 2.
+
+804
+01:23:59,627 --> 01:24:01,667
+The difference between these two points,
+
+805
+01:24:01,828 --> 01:24:04,387
+that means the increment of x is minus 2.
+
+806
+01:24:05,228 --> 01:24:06,927
+What about the increment of f?
+
+807
+01:24:07,728 --> 01:24:11,528
+This change of f is approximately the differential of it.
+
+808
+01:24:11,967 --> 01:24:12,108
+Okay.
+
+809
+01:24:13,268 --> 01:24:16,068
+This is the main idea because in differential calculus,
+
+810
+01:24:16,547 --> 01:24:20,127
+change of the function is approximately the differential of it.
+
+811
+01:24:20,127 --> 01:24:22,467
+What's the change of function?
+
+812
+01:24:23,068 --> 01:24:27,988
+F 23 minus f 25.
+
+813
+01:24:28,207 --> 01:24:33,387
+Yes, because it was f 25 and it's going to f 23.
+
+814
+01:24:34,127 --> 01:24:37,967
+So that this difference, this subtraction is delta f.
+
+815
+01:24:39,167 --> 01:24:41,087
+Approximately, what we have?
+
+816
+01:24:41,488 --> 01:24:43,288
+df, the differential.
+
+817
+01:24:43,707 --> 01:24:47,167
+Differential of the function f is f prime of x dx.
+
+818
+01:24:47,167 --> 01:24:51,547
+And at which point we are at 25, don't forget,
+
+819
+01:24:52,307 --> 01:24:54,768
+f prime of 25 times delta x.
+
+820
+01:24:55,148 --> 01:24:57,667
+Delta x, in fact, dx.
+
+821
+01:24:58,288 --> 01:25:04,247
+dx is equal to delta x because the change of the independent variables
+
+822
+01:25:04,247 --> 01:25:08,047
+are directly equal to the differentials of them
+
+823
+01:25:08,047 --> 01:25:09,768
+because they are free independent.
+
+824
+01:25:10,108 --> 01:25:10,247
+Okay.
+
+825
+01:25:10,427 --> 01:25:12,068
+They are not belonging to another variable.
+
+826
+01:25:12,068 --> 01:25:18,028
+That's why the change of the independent variable is directly equal to the differentials of them.
+
+827
+01:25:19,307 --> 01:25:24,788
+So, f prime of 25 times differential of x, which is minus 2.
+
+828
+01:25:25,247 --> 01:25:25,467
+Be careful.
+
+829
+01:25:26,488 --> 01:25:27,868
+So, look.
+
+830
+01:25:28,087 --> 01:25:32,707
+f 23 that we are approximately trying to evaluate,
+
+831
+01:25:33,288 --> 01:25:34,467
+minus f 25.
+
+832
+01:25:34,467 --> 01:25:36,788
+f 25 is 5.
+
+833
+01:25:36,788 --> 01:25:38,967
+In the square of 25 is 5.
+
+834
+01:25:39,108 --> 01:25:40,887
+So, put it on the right-hand side.
+
+835
+01:25:41,408 --> 01:25:52,507
+So, f 23 is approximately 5 plus f prime of 25 times 23 minus 25.
+
+836
+01:25:52,728 --> 01:25:55,887
+It is like the same formula with the linearization.
+
+837
+01:25:55,887 --> 01:26:01,387
+f 23 is approximately f 25 will be on the right-hand side.
+
+838
+01:26:01,387 --> 01:26:02,427
+It was 5.
+
+839
+01:26:02,587 --> 01:26:06,228
+5 plus f prime 25 was 1 over 10.
+
+840
+01:26:07,568 --> 01:26:07,868
+Okay.
+
+841
+01:26:10,068 --> 01:26:12,667
+Times delta x is minus 2.
+
+842
+01:26:12,927 --> 01:26:15,847
+So, it is approximately 4.8.
+
+843
+01:26:16,908 --> 01:26:18,247
+Now, do you understand it?
+
+844
+01:26:18,268 --> 01:26:19,307
+It's so easy, I think.
+
+845
+01:26:19,307 --> 01:26:24,707
+And this way of solution is, I think, better from the previous one.
+
+846
+01:26:27,608 --> 01:26:28,908
+Always start with it.
+
+847
+01:26:29,087 --> 01:26:31,448
+That means you don't need to memorize any formula.
+
+848
+01:26:31,568 --> 01:26:32,028
+Just write.
+
+849
+01:26:32,927 --> 01:26:34,908
+And delta f is approximately df.
+
+850
+01:26:35,007 --> 01:26:36,028
+Just remember df.
+
+851
+01:26:36,108 --> 01:26:37,587
+df is f prime of x dx.
+
+852
+01:26:37,788 --> 01:26:38,228
+That's all.
+
+853
+01:26:39,167 --> 01:26:43,307
+But, of course, these calculations must be done according to this increment.
+
+854
+01:26:43,988 --> 01:26:47,247
+I was at 25 and I'm going to 23.
+
+855
+01:26:47,247 --> 01:26:49,247
+So, delta x is minus 2.
+
+856
+01:26:49,307 --> 01:26:50,108
+Change of f.
+
+857
+01:26:50,507 --> 01:26:52,368
+f 23 minus f 25.
+
+858
+01:26:52,916 --> 01:27:01,136
+and approximately, differential of it at the point 25. So f' 25 times delta x, the increment of x.
+
+859
+01:27:01,836 --> 01:27:07,615
+You need to substitute. Are you okay? Do you understand it?
+
+860
+01:27:11,572 --> 01:27:13,731
+I think this explanation is better.
+
+861
+01:27:14,391 --> 01:27:14,971
+Yes, okay.
+
+862
+01:27:16,532 --> 01:27:18,231
+Always follow this method, okay.
+
+863
+01:27:21,051 --> 01:27:23,851
+You will have no problem without evaluation.
+
+864
+01:27:25,992 --> 01:27:29,551
+So later we will have lots of exercises again,
+
+865
+01:27:29,712 --> 01:27:32,612
+but you can do the same exercises
+
+866
+01:27:32,612 --> 01:27:34,652
+that we did on the linearization part
+
+867
+01:27:34,652 --> 01:27:36,391
+by using the differential.
+
+868
+01:27:37,051 --> 01:27:38,311
+Do it on your own
+
+869
+01:27:38,311 --> 01:27:41,672
+and try to get the same values of the questions
+
+870
+01:27:41,672 --> 01:27:43,471
+that we did on the linearization part.
+
+871
+01:27:43,612 --> 01:27:47,492
+Okay, do the same questions with the differentials also.
+
+872
+01:27:47,612 --> 01:27:49,112
+You will get same results.
+
+873
+01:27:50,132 --> 01:27:52,492
+As exercised, please do it on your own.
+
+874
+01:27:53,551 --> 01:27:56,592
+And I want to continue with increasing and decreasing function,
+
+875
+01:27:56,851 --> 01:27:59,532
+which is the last concept of the derivative topic,
+
+876
+01:28:00,172 --> 01:28:02,452
+high order derivatives, implicit differentiation,
+
+877
+01:28:03,311 --> 01:28:04,712
+linearization and differentials,
+
+878
+01:28:04,912 --> 01:28:06,771
+and increasing and decreasing functions.
+
+879
+01:28:06,771 --> 01:28:10,372
+because to talk about increasing and decreasing functions,
+
+880
+01:28:10,492 --> 01:28:11,271
+we need the derivative.
+
+881
+01:28:11,872 --> 01:28:15,752
+That's why, again, it's an application of derivative-like linearization
+
+882
+01:28:15,752 --> 01:28:16,612
+and differentials.
+
+883
+01:28:16,832 --> 01:28:18,592
+That means approximate calculus.
+
+884
+01:28:19,452 --> 01:28:19,592
+Okay.
+
+885
+01:28:19,891 --> 01:28:23,771
+That means derivatives are used also for approximate calculus
+
+886
+01:28:23,771 --> 01:28:27,351
+and also the functions of being increasing and decreasing.
+
+887
+01:28:29,231 --> 01:28:31,592
+Let's see and read the explanations.
+
+888
+01:28:31,592 --> 01:28:38,471
+It says let the function f be continuous on a closed interval a, b
+
+889
+01:28:38,471 --> 01:28:40,612
+and have the derivative on the open interval.
+
+890
+01:28:40,771 --> 01:28:41,332
+No problem.
+
+891
+01:28:42,092 --> 01:28:44,452
+If the derivative of it is positive,
+
+892
+01:28:44,811 --> 01:28:45,672
+this is important.
+
+893
+01:28:46,092 --> 01:28:48,931
+If f prime is positive for this interval,
+
+894
+01:28:49,412 --> 01:28:52,351
+then f is increasing on this interval.
+
+895
+01:28:53,311 --> 01:28:56,292
+That means endpoints are not included for the derivative.
+
+896
+01:28:56,492 --> 01:28:57,032
+No problem.
+
+897
+01:28:57,032 --> 01:28:59,051
+Similarly,
+
+898
+01:29:00,051 --> 01:29:01,492
+if f prime is negative,
+
+899
+01:29:01,632 --> 01:29:03,112
+that means if the derivative is negative,
+
+900
+01:29:03,252 --> 01:29:05,332
+that means the function is decreasing.
+
+901
+01:29:05,891 --> 01:29:07,511
+It is so useful,
+
+902
+01:29:08,072 --> 01:29:11,011
+especially once we are graphing the functions
+
+903
+01:29:11,011 --> 01:29:13,292
+on the Cartesian planes,
+
+904
+01:29:13,672 --> 01:29:15,311
+we will just try to search.
+
+905
+01:29:15,311 --> 01:29:19,572
+Is it increasing or decreasing?
+
+906
+01:29:19,731 --> 01:29:21,471
+How can we understand to sketch it?
+
+907
+01:29:21,692 --> 01:29:23,192
+It is very important to understand.
+
+908
+01:29:23,652 --> 01:29:25,912
+That's why we will use the derivatives of the functions
+
+909
+01:29:25,912 --> 01:29:28,712
+to talk about increasing and decreasing functions
+
+910
+01:29:28,712 --> 01:29:30,372
+by using the derivative.
+
+911
+01:29:32,032 --> 01:29:35,072
+And if a function is increasing or decreasing,
+
+912
+01:29:35,332 --> 01:29:37,811
+that means it is a monotonic function.
+
+913
+01:29:37,912 --> 01:29:41,351
+If one of them is happen for a function,
+
+914
+01:29:41,351 --> 01:29:43,672
+that function is monotonic.
+
+915
+01:29:45,311 --> 01:29:47,072
+But not always a function
+
+916
+01:29:47,072 --> 01:29:49,192
+need to be increasing or decreasing.
+
+917
+01:29:49,391 --> 01:29:51,011
+Sometimes none of them.
+
+918
+01:29:51,152 --> 01:29:51,252
+Okay.
+
+919
+01:29:52,952 --> 01:29:54,471
+Because sometimes the derivative,
+
+920
+01:29:55,271 --> 01:29:56,952
+interval by interval,
+
+921
+01:29:57,172 --> 01:29:58,372
+they can be different signs.
+
+922
+01:29:58,652 --> 01:30:00,192
+So we can talk about
+
+923
+01:30:00,192 --> 01:30:05,551
+the intervals where the function is increasing
+
+924
+01:30:05,551 --> 01:30:08,872
+or the intervals where the function is decreasing.
+
+925
+01:30:08,872 --> 01:30:10,212
+We can talk about,
+
+926
+01:30:10,332 --> 01:30:13,112
+okay, not the general meaning it has.
+
+927
+01:30:17,619 --> 01:30:19,619
+Bu, bu function...
+
+928
+01:30:21,619 --> 01:33:18,619
+...
+
+929
+01:33:35,283 --> 01:33:42,003
+We will use these information for sketching a graph of the functions.
+
+930
+01:33:42,003 --> 01:33:42,223
+Okay.
+
+931
+01:33:46,771 --> 01:34:02,992
+Okay. So if you don't have any question about these topics, this part will be completed. And I will continue. Yes, I will continue with the new presentation. Wait a minute.
+
+932
+01:34:09,460 --> 01:34:11,579
+And the last presentation I did.
+
+933
+01:34:12,140 --> 01:34:13,720
+Inverse function and their derivatives.
+
+934
+01:34:27,859 --> 01:34:31,619
+And the next topic, I'm sorry, not the last one.
+
+935
+01:34:31,859 --> 01:34:34,799
+The next topic is inverse function and their derivatives.
+
+936
+01:34:37,059 --> 01:34:41,960
+In functions part, in the first topic, if you remember, we did functions.
+
+937
+01:34:41,960 --> 01:34:49,420
+And also, I just gave the topic functions very detailed to you.
+
+938
+01:34:49,719 --> 01:34:54,079
+And I gave lots of different functions and with their inverse functions also.
+
+939
+01:34:54,079 --> 01:34:57,339
+Now, I will repeat them here.
+
+940
+01:34:58,299 --> 01:35:02,000
+Again, we'll talk about the functions and the inverse of them.
+
+941
+01:35:02,420 --> 01:35:05,500
+Also, additionally, we will talk about their derivatives.
+
+942
+01:35:05,500 --> 01:35:09,399
+OK, so you can say that this is the second time we see, for example,
+
+943
+01:35:09,819 --> 01:35:12,739
+trigonometric functions, inverse trigonometric functions,
+
+944
+01:35:13,199 --> 01:35:15,639
+hyperbolic functions and inverse hyperbolic functions.
+
+945
+01:35:15,960 --> 01:35:18,119
+This is the second time you met with them.
+
+946
+01:35:18,279 --> 01:35:22,219
+OK, additionally, we will talk about their derivatives and the limits.
+
+947
+01:35:22,219 --> 01:35:27,839
+OK, but I want to make you remember and then see the domain and range
+
+948
+01:35:27,839 --> 01:35:31,039
+and the identities between them in order to make you remember.
+
+949
+01:35:32,299 --> 01:35:32,799
+So.
+
+950
+01:35:34,099 --> 01:35:39,779
+First, we will start with how can we have an inverse of a function,
+
+951
+01:35:40,079 --> 01:35:42,719
+in which cases we have an inverse of a function.
+
+952
+01:35:43,099 --> 01:35:45,259
+Not every function can be invertible.
+
+953
+01:35:45,259 --> 01:35:47,339
+See?
+
+954
+01:35:48,559 --> 01:35:50,880
+A function f is first one-to-one.
+
+955
+01:35:50,880 --> 01:35:55,539
+Of course, I think you can guess one-to-one and onto functions can be invertible.
+
+956
+01:35:56,259 --> 01:35:58,599
+So first, let's talk about one-to-one functions.
+
+957
+01:35:59,199 --> 01:36:02,939
+I think we did also examples about them, but let's see them again.
+
+958
+01:36:03,519 --> 01:36:10,239
+A function f is one-to-one on the domain d if fx1 is different from fx2,
+
+959
+01:36:10,239 --> 01:36:12,659
+whenever x1 is different from x2.
+
+960
+01:36:13,000 --> 01:36:17,559
+That means just in Turkish, this is just the starting point is this.
+
+961
+01:36:17,819 --> 01:36:17,899
+OK.
+
+962
+01:36:18,699 --> 01:36:24,000
+That means you have to first assume that when x1 is different from x2,
+
+963
+01:36:24,199 --> 01:36:30,719
+then you have to show if x1 is different from fx2 means f is one-to-one.
+
+964
+01:36:30,719 --> 01:36:32,199
+OK.
+
+965
+01:36:33,239 --> 01:36:38,279
+Or if you say, similarly, you can just get equivalently.
+
+966
+01:36:38,799 --> 01:36:45,539
+fx1 is equal to fx2, then if you get x1 is equal to x2, again means one-to-one.
+
+967
+01:36:45,539 --> 01:36:53,299
+But if you do this, x1 is equal to x2, then fx1 is equal to fx2 means not one-to-one.
+
+968
+01:36:53,559 --> 01:36:55,039
+It is a well-defined function.
+
+969
+01:36:55,259 --> 01:36:55,339
+OK.
+
+970
+01:36:55,960 --> 01:37:00,279
+Sometimes the students have a confusion about these so similar facts.
+
+971
+01:37:00,479 --> 01:37:00,579
+OK.
+
+972
+01:37:00,719 --> 01:37:06,759
+So it's important to decide where to start to make the proof.
+
+973
+01:37:07,139 --> 01:37:12,559
+Here, the proof of one-to-one starts that when x1 is different from x2,
+
+974
+01:37:12,779 --> 01:37:16,659
+you need to show that fx1 is different from fx2.
+
+975
+01:37:16,799 --> 01:37:23,079
+Or if fx1 is equal to fx2, start with it, assume it,
+
+976
+01:37:23,219 --> 01:37:25,799
+and then show that x1 is equal to x2.
+
+977
+01:37:26,099 --> 01:37:30,000
+Again, this is the way of proving one-to-one function.
+
+978
+01:37:30,000 --> 01:37:30,799
+OK.
+
+979
+01:37:32,199 --> 01:37:33,819
+Are we OK about this?
+
+980
+01:37:33,819 --> 01:37:38,299
+Be careful where to start and which to show.
+
+981
+01:37:38,759 --> 01:37:39,659
+This is important.
+
+982
+01:37:40,159 --> 01:37:42,960
+For example, who is x2?
+
+983
+01:37:43,960 --> 01:37:44,979
+Who is x2?
+
+984
+01:37:44,979 --> 01:37:46,420
+It's not a one-to-one function.
+
+985
+01:37:46,420 --> 01:37:57,619
+because both 2 and minus 2 having the same, how can we say, same image, image of the function.
+
+986
+01:37:57,619 --> 01:38:00,759
+They are both going to 4, not one-to-one.
+
+987
+01:38:00,759 --> 01:38:05,519
+One-to-one means one value is going to one specific value.
+
+988
+01:38:05,519 --> 01:38:12,259
+That means from a domain set, if you choose a point, the range of it is another unique number.
+
+989
+01:38:12,259 --> 01:38:22,840
+But this number cannot have another same, how can we say, image in the domain set.
+
+990
+01:38:22,960 --> 01:38:24,199
+They must be different points.
+
+991
+01:38:24,739 --> 01:38:26,019
+That's why we have such a proof.
+
+992
+01:38:26,019 --> 01:38:27,019
+So, let's go.
+
+993
+01:38:27,019 --> 01:38:31,019
+Let's go.
+
+994
+01:38:26,515 --> 01:38:56,515
+Ama bu iki ve iki üçün
+
+995
+01:38:56,515 --> 01:39:26,515
+Fün
+
+996
+01:39:26,515 --> 01:39:37,275
+Two different points cannot be going to the same value as the image means being one to one.
+
+997
+01:39:37,635 --> 01:39:46,555
+That's why once you have the horizontal lines to the graph of the function or one to one function, the intersection will be only one point.
+
+998
+01:39:46,555 --> 01:40:00,755
+Okay. If the function intersects the line more than once, it assumes the same y value for at least two different x values, which means the function is not one to one.
+
+999
+01:40:02,095 --> 01:40:06,775
+Let's see the exercise. Example. Look, this is y square.
+
+1000
+01:40:06,775 --> 01:40:16,855
+And the horizontal line, horizontal to x, horizontal line makes the intersection with the graph of f, as you see, with two points more than one.
+
+1001
+01:40:17,735 --> 01:40:28,875
+The intersection becomes more than once means different points of the domain set are going to one range, one point of range set.
+
+1002
+01:40:29,435 --> 01:40:34,475
+Two different points are going to same value. It's like an a function, but not one to one.
+
+1003
+01:40:34,475 --> 01:40:46,536
+Okay. Which means not one to one. It's easy to understand that we just get the horizontal lines and see if the intersection is more than one, which means the function is not one to one.
+
+1004
+01:40:46,835 --> 01:41:01,076
+But look for thinking of x cube. Once you get any horizontal line to x and the intersection will be always at once because you cannot get two different points going to same value of x cube.
+
+1005
+01:41:01,076 --> 01:41:06,455
+That's why it's the one to one function. Do you understand it?
+
+1006
+01:41:06,455 --> 01:41:06,495
+Do you understand it?
+
+1007
+01:41:18,387 --> 01:41:37,867
+I think it's easy. You know already, you know it. Okay. But this is a nice way to get a horizontal line test. Okay. Don't forget this. So let's continue. Now we will continue. One to one. And...
+
+1008
+01:41:42,899 --> 01:42:12,899
+F'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f
+
+1009
+01:42:12,899 --> 01:42:42,899
+ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in aile ve f'in a
+
+1010
+01:42:42,899 --> 01:42:50,339
+That means in a range set we have no more point odd of the function, odd out.
+
+1011
+01:42:52,500 --> 01:43:02,819
+And I did it before and I talked about this. The graph of inverse functions are symmetric about voice x.
+
+1012
+01:43:04,019 --> 01:43:09,299
+And I think I did the example about voice e to x and voice ln x.
+
+1013
+01:43:09,299 --> 01:43:15,939
+And graphs of them are symmetric about voice x. I think we did it. Do you remember?
+
+1014
+01:43:15,939 --> 01:43:17,939
+Do you remember?
+
+1015
+01:43:20,212 --> 01:43:24,212
+Ve e2x ve ve lnx'in inverse functions ve
+
+1016
+01:43:24,212 --> 01:43:28,212
+graphs of them are symmetric about ve x.
+
+1017
+01:43:28,212 --> 01:43:30,212
+OK. Symmetrik,
+
+1018
+01:43:30,212 --> 01:43:32,212
+that's why the graph of f prime,
+
+1019
+01:43:32,212 --> 01:43:34,212
+I'm sorry, f2 minus 1
+
+1020
+01:43:34,212 --> 01:43:36,212
+is obtained by reflecting.
+
+1021
+01:43:36,212 --> 01:43:38,212
+Reflecting means
+
+1022
+01:43:38,212 --> 01:43:40,212
+getting the symmetric of it.
+
+1023
+01:43:40,212 --> 01:43:42,212
+The graph of f about the line
+
+1024
+01:43:42,212 --> 01:43:44,212
+of course, about the line ve x.
+
+1025
+01:43:44,212 --> 01:43:46,212
+Like this.
+
+1026
+01:43:46,212 --> 01:43:48,212
+If the graph of f is this
+
+1027
+01:43:48,212 --> 01:43:50,212
+the inverse of it will be this
+
+1028
+01:43:50,212 --> 01:43:52,212
+symmetric about ve x.
+
+1029
+01:43:52,212 --> 01:43:54,212
+You can easily sketch if you want.
+
+1030
+01:44:11,188 --> 01:44:23,087
+Let's see how can we find the inverse functions. To find the inverse function, it's mistaken, I'm sorry, it must be f to minus 1, not f'', okay?
+
+1031
+01:44:24,127 --> 01:44:31,507
+I'm sorry, this is mistakenly written f'', it is f to minus 1 of f, that is the inverse of it.
+
+1032
+01:44:31,507 --> 01:44:44,708
+So, for x in y, let's find x is equal to f to minus 1y, that means just try to leave x alone, like writing that x is a function of y now.
+
+1033
+01:44:45,568 --> 01:44:52,847
+And then interchange x and y, let's write y is f to minus 1x, that means the inverse function.
+
+1034
+01:44:53,208 --> 01:44:58,228
+Again, if you want, you can write it in terms of x. If you want, you can write it in terms of y, okay?
+
+1035
+01:44:58,228 --> 01:45:03,708
+For example, can you find the inverse of this function?
+
+1036
+01:45:06,427 --> 01:45:09,148
+y is x over 2 plus 1, what's the inverse of it?
+
+1037
+01:45:30,484 --> 01:45:31,484
+bu nevda.
+
+1038
+01:45:41,908 --> 01:45:51,268
+I think you are so familiar to get the functions and the inverses from high school, don't you?
+
+1039
+01:45:53,428 --> 01:45:59,068
+Let's look, you're right. Let's see. Yes, 2x-2. Yes, you're right.
+
+1040
+01:46:00,928 --> 01:46:06,628
+Because you did leave x alone, 2y is x plus 2.
+
+1041
+01:46:06,628 --> 01:46:13,188
+So x is 2y-2. And then replace, that means change x and y.
+
+1042
+01:46:13,188 --> 01:46:17,807
+y is 2x-2 is the inverse function of f in terms of x.
+
+1043
+01:46:17,807 --> 01:46:20,868
+And look, the graphs of them. These are lines.
+
+1044
+01:46:21,468 --> 01:46:23,908
+And y is x over 2 plus 1 is this.
+
+1045
+01:46:24,968 --> 01:46:27,948
+x over 2 plus 1. And this is 2x-2.
+
+1046
+01:46:28,188 --> 01:46:31,448
+As you see, they are symmetric about y is x.
+
+1047
+01:46:46,836 --> 01:46:48,836
+I think it's easier.
+
+1048
+01:46:48,836 --> 01:46:50,836
+Okay.
+
+1049
+01:46:50,836 --> 01:46:56,836
+What about the derivatives of the inverse of differentiable functions?
+
+1050
+01:46:56,836 --> 01:47:01,836
+Now you can think that why do we have such a title, top title?
+
+1051
+01:47:01,836 --> 01:47:06,836
+Because sometimes the function will be given and we are asked to have a derivative of it.
+
+1052
+01:47:06,836 --> 01:47:08,836
+Derivative of the inverse function.
+
+1053
+01:47:08,836 --> 01:47:20,836
+Without having the inverse of it, while using only derivative, we will just try to evaluate the derivative of the inverse function without having the inverse of it.
+
+1054
+01:47:20,836 --> 01:47:23,836
+Because it will be so useful.
+
+1055
+01:47:23,836 --> 01:47:25,836
+You will see in the examples.
+
+1056
+01:47:25,836 --> 01:47:29,836
+Look, the derivative, we will have a formula about it.
+
+1057
+01:47:29,836 --> 01:47:35,836
+With a formula, we will just do it without having the inverse of the function.
+
+1058
+01:47:35,836 --> 01:47:38,836
+And with a theorem, we will see. Let's see.
+
+1059
+01:47:38,836 --> 01:47:46,836
+If the domain set of f is i and if f' exists, that means differentiable on i, and never be 0 on i,
+
+1060
+01:47:46,836 --> 01:47:52,836
+then the inverse of the function is differentiable at every point in its domain.
+
+1061
+01:47:52,836 --> 01:47:56,836
+Domain of the inverse function will be the range of f.
+
+1062
+01:47:56,836 --> 01:48:09,836
+That means if our function is differentiable, and so the inverse of it will never be 0, so the inverse of it will be again differentiable on the range of f.
+
+1063
+01:48:09,836 --> 01:48:16,836
+But what kind of a formula we have? Let's see. This formula. Look, don't forget this formula. This is so useful because...
+
+1064
+01:48:16,836 --> 01:48:32,836
+It's what? Inverse function at a point, but derivative of it. Be careful. Inverse derivative. That means derivative of inverse function.
+
+1065
+01:48:32,836 --> 01:48:42,836
+Normally, if you are asked to have the derivative of inverse function, normally you will just think that, first I need to get the inverse function and then derivate it.
+
+1066
+01:48:42,836 --> 01:48:53,836
+But with this formula, you don't need to make the inverse of it. You can just evaluate it with 1 over f' f' to minus 1x.
+
+1067
+01:48:53,836 --> 01:49:01,836
+But this is a specific value. That's why you can easily evaluate. Not the evaluation of the inverse of the function f.
+
+1068
+01:49:01,836 --> 01:49:12,836
+Okay. Derivative of inverse function is equal to 1 over... This is a composition. Be careful. F' composition.
+
+1069
+01:49:12,836 --> 01:49:28,836
+Inverse of f at the point x. Now you will see this. Think that what is fx and what is inverse of it. We have a and b. Think that b is f a. Okay.
+
+1070
+01:49:28,836 --> 01:49:50,836
+Because it's the range of it. A and f a. So instead of a, we can write f to minus 1b. And f a is b. If f a is b, we can write for a in the inverse function b is equal to a. And for b, we can write f a.
+
+1071
+01:49:50,836 --> 01:50:07,836
+And so on the inverse function, we just change the points because domain becomes range, range becomes domain. That's why at the point a, b becomes b a. And for b, b, what is a? In inverse function, this is b.
+
+1072
+01:50:07,836 --> 01:50:28,836
+b is f a. And this is a. That means f a and a. It becomes. And we know the slope of this graph of this function at the point a, f prime of a. What about slope of this new function at f a, not a, now f a at the point b?
+
+1073
+01:50:28,836 --> 01:50:36,836
+It is the derivative of the inverse function at the point b. It means. This is important. Think that f a is b.
+
+1074
+01:50:36,836 --> 01:50:37,836
+It means. Think that f a is b.
+
+1075
+01:50:38,068 --> 01:50:45,528
+So the derivative of it, slope of this curve at the point A, slope of this graph at the point A.
+
+1076
+01:50:45,828 --> 01:50:47,908
+What about the slope of the inverse function?
+
+1077
+01:50:48,007 --> 01:50:51,608
+Inverse function is again a function, another function, and it has a graph again.
+
+1078
+01:50:52,368 --> 01:50:56,007
+And the slope of it at F A, be careful, not at the point A,
+
+1079
+01:50:56,128 --> 01:50:58,868
+because at the point A it becomes F A.
+
+1080
+01:50:59,268 --> 01:51:01,408
+It's the domain set from the domain set.
+
+1081
+01:51:01,408 --> 01:51:06,408
+So it is inverse function derivative.
+
+1082
+01:51:07,068 --> 01:51:11,028
+Derivative of inverse function at the point B it means.
+
+1083
+01:51:11,788 --> 01:51:18,728
+So for A, that means if B is F A, so A is in the inverse function B.
+
+1084
+01:51:19,828 --> 01:51:21,588
+So according to this formula,
+
+1085
+01:51:23,347 --> 01:51:29,047
+the derivative of inverse function at the point B is equal to 1 over F prime A.
+
+1086
+01:51:29,047 --> 01:51:31,788
+Shortly, just remember this.
+
+1087
+01:51:32,988 --> 01:51:33,788
+But what is A?
+
+1088
+01:51:34,488 --> 01:51:39,307
+A is the, or what is B we can say?
+
+1089
+01:51:39,387 --> 01:51:42,108
+B is the value of the function at the point A.
+
+1090
+01:51:42,967 --> 01:51:45,387
+Just think the corresponding point, okay.
+
+1091
+01:51:46,788 --> 01:51:48,268
+It's coming from range.
+
+1092
+01:51:48,488 --> 01:51:49,068
+It's domain.
+
+1093
+01:51:49,068 --> 01:51:56,847
+That means derivative of inverse function at the point B is 1 over F prime A.
+
+1094
+01:51:57,188 --> 01:52:01,908
+But this A is the point which makes the function equal to B.
+
+1095
+01:52:02,788 --> 01:52:03,828
+Now, is it okay?
+
+1096
+01:52:04,288 --> 01:52:04,988
+This formula?
+
+1097
+01:52:04,988 --> 01:52:19,047
+Okay.
+
+1098
+01:52:16,243 --> 01:52:19,023
+is it confused for you what you say?
+
+1099
+01:52:24,819 --> 01:52:34,119
+Bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir
+
+1100
+01:52:58,707 --> 01:53:12,467
+Are you here? Are you okay? Any question? Okay, thank you. So shall we continue with examples? Okay.
+
+1101
+01:53:14,547 --> 01:53:18,467
+So continue. It's the proof of it at the same time.
+
+1102
+01:53:21,555 --> 01:53:51,555
+The proof says that f' at a point x, f'in-versi-vers
+
+1103
+01:53:51,555 --> 01:54:05,895
+function on both sides. If you derivate, we will get this composition. So the derivative of composition, derivative of the whole function, multiply with the insider function, derivative of insider function.
+
+1104
+01:54:05,895 --> 01:54:15,935
+So this is f' composition times derivative of it, derivative of the inverse function. Right-hand side becomes 1.
+
+1105
+01:54:15,935 --> 01:54:29,535
+X1. And then so, look, that means this will be equal to divide with derivative of f minus 1, 1 over, get this, okay.
+
+1106
+01:54:31,775 --> 01:54:38,135
+Or we can write similarly using g as the inverse of f.
+
+1107
+01:54:39,555 --> 01:54:45,195
+Composition of them will be x, derivative of both sides will be this easily.
+
+1108
+01:54:45,935 --> 01:54:54,375
+For example, f' is x squared but the positive part, right-hand side, right branch of the parabola.
+
+1109
+01:54:56,375 --> 01:55:01,415
+It says, what's the derivative of the inverse function?
+
+1110
+01:55:11,507 --> 01:55:13,507
+Evet, bu parabola var.
+
+1111
+01:55:13,507 --> 01:55:14,768
+Çünkü fx²
+
+1112
+01:55:14,768 --> 01:55:16,688
+is not in fact
+
+1113
+01:55:16,688 --> 01:55:18,327
+a 1 to 1 function.
+
+1114
+01:55:18,467 --> 01:55:20,648
+If you choose one part of the parabola
+
+1115
+01:55:20,648 --> 01:55:22,367
+ok, it's ok, it's 1 to 1.
+
+1116
+01:55:22,587 --> 01:55:23,747
+On the positive part.
+
+1117
+01:55:25,087 --> 01:55:25,867
+Let's get one here.
+
+1118
+01:55:29,148 --> 01:55:30,287
+So let's see.
+
+1119
+01:55:33,327 --> 01:55:33,768
+Ok.
+
+1120
+01:55:36,207 --> 01:55:37,207
+Yes, you're right.
+
+1121
+01:55:37,367 --> 01:55:37,947
+Let's see.
+
+1122
+01:55:39,307 --> 01:55:40,547
+Sure, we know
+
+1123
+01:55:40,547 --> 01:55:43,547
+x² is y.
+
+1124
+01:55:43,667 --> 01:55:45,427
+Normally, we can just get the
+
+1125
+01:55:45,427 --> 01:55:47,947
+inverse of it and then derivate it.
+
+1126
+01:55:48,087 --> 01:55:49,407
+Or using the formula.
+
+1127
+01:55:49,667 --> 01:55:50,287
+It's up to you.
+
+1128
+01:55:50,347 --> 01:55:51,587
+I think the second one
+
+1129
+01:55:51,587 --> 01:55:53,787
+using formula is easier,
+
+1130
+01:55:53,867 --> 01:55:55,447
+in my opinion, you can use.
+
+1131
+01:55:55,847 --> 01:55:58,167
+Normally, let's get the inverse function
+
+1132
+01:55:58,167 --> 01:55:59,007
+of x².
+
+1133
+01:55:59,188 --> 01:56:00,268
+Say x² is y.
+
+1134
+01:56:00,367 --> 01:56:01,967
+So x is square root y.
+
+1135
+01:56:02,068 --> 01:56:03,528
+Positive part we are choosing.
+
+1136
+01:56:04,207 --> 01:56:06,547
+So the inverse of the function
+
+1137
+01:56:06,547 --> 01:56:07,827
+is square root x.
+
+1138
+01:56:08,627 --> 01:56:10,407
+And derivative of 1 over 2 square root x.
+
+1139
+01:56:10,547 --> 01:56:10,967
+easily.
+
+1140
+01:56:11,327 --> 01:56:13,167
+Or, while using formula,
+
+1141
+01:56:14,367 --> 01:56:16,347
+derivative of inverse function
+
+1142
+01:56:16,347 --> 01:56:17,127
+is equal to
+
+1143
+01:56:17,127 --> 01:56:19,228
+1 over f prime.
+
+1144
+01:56:20,648 --> 01:56:22,467
+Here, the inverse of it.
+
+1145
+01:56:22,467 --> 01:56:23,467
+is equal to 1 over f prime.
+
+1146
+01:56:23,467 --> 01:56:28,268
+So let's get the inverse of it.
+
+1147
+01:56:26,515 --> 01:56:32,835
+ve o
+
+1148
+01:56:41,076 --> 01:56:41,836
+yes sir right.
+
+1149
+01:56:58,963 --> 01:57:23,443
+Are you okay? I think it is easy. Any problem? Okay. Okay, let's continue. What about this? Now at a point, generally such points we need. f x's x cubed minus 2. It says evaluate the derivative of the inverse function at the point 6.
+
+1150
+01:57:23,443 --> 01:57:31,823
+I think you need to do it with the formula without evaluating the inverse function. With the formula.
+
+1151
+01:57:41,524 --> 01:57:42,764
+Yer so quick.
+
+1152
+01:57:44,284 --> 01:57:45,204
+Anyone else?
+
+1153
+01:57:47,764 --> 01:57:48,204
+Välta.
+
+1154
+01:57:53,492 --> 01:57:54,492
+ok.
+
+1155
+01:58:03,123 --> 01:58:07,123
+Evet, şimdi, you are mistaken.
+
+1156
+01:58:10,323 --> 01:58:14,804
+Çünkü, I think you put the value mistaken.
+
+1157
+01:58:16,083 --> 01:58:18,483
+Yes, I think a little bit you had.
+
+1158
+01:58:19,043 --> 01:58:20,403
+Hurry up, no problem.
+
+1159
+01:58:20,403 --> 01:58:21,684
+You are just learning now.
+
+1160
+01:58:22,483 --> 01:58:23,764
+The formula says that.
+
+1161
+01:58:25,443 --> 01:58:29,844
+Derivative of inverse function at a point is equal to 1 over f'
+
+1162
+01:58:29,844 --> 01:58:32,963
+But this value, you have to be careful, not 6.
+
+1163
+01:58:33,684 --> 01:58:34,483
+Not at 6.
+
+1164
+01:58:35,123 --> 01:58:39,363
+It is the corresponding point you have to just get which points,
+
+1165
+01:58:40,403 --> 01:58:43,043
+for which point I get 6 of this function.
+
+1166
+01:58:43,684 --> 01:58:47,523
+That means just get which points of x gives 6.
+
+1167
+01:58:47,523 --> 01:58:50,483
+Because it's coming from y values in the formula.
+
+1168
+01:58:50,483 --> 01:58:51,443
+Be careful.
+
+1169
+01:58:51,443 --> 01:58:53,603
+It is y values, this is x values.
+
+1170
+01:58:54,724 --> 01:58:56,644
+So you can directly think.
+
+1171
+01:58:56,644 --> 01:59:00,563
+f to minus 1 derivative of f.
+
+1172
+01:59:01,123 --> 01:59:04,884
+At the point, for example, b, it is equal to 1 over f' a.
+
+1173
+01:59:05,443 --> 01:59:06,483
+a to b.
+
+1174
+01:59:06,483 --> 01:59:10,323
+There is a relation between the function a fb.
+
+1175
+01:59:11,123 --> 01:59:12,003
+I'm sorry.
+
+1176
+01:59:12,003 --> 01:59:13,443
+a f a, that means b.
+
+1177
+01:59:14,083 --> 01:59:15,764
+This is b y value.
+
+1178
+01:59:15,764 --> 01:59:19,603
+So you need to just get the corresponding x value to write in the f'
+
+1179
+01:59:19,603 --> 01:59:21,443
+and f' okay.
+
+1180
+01:59:21,443 --> 01:59:25,844
+So look, which points give 6 in this function?
+
+1181
+01:59:25,844 --> 01:59:28,163
+Make it equal to 6 and get x is 2.
+
+1182
+01:59:28,163 --> 01:59:32,003
+So x must be 2 written here in f'
+
+1183
+01:59:32,804 --> 01:59:39,523
+So the derivative of the inverse function at point 6 is equal to 1 over f' 2.
+
+1184
+01:59:39,523 --> 01:59:40,243
+It must be.
+
+1185
+01:59:41,603 --> 01:59:43,443
+Just find the corresponding point, okay?
+
+1186
+01:59:43,443 --> 01:59:48,724
+And the f' f' is 3x squared.
+
+1187
+01:59:52,003 --> 01:59:53,923
+f' I'm sorry, this is mistaken.
+
+1188
+01:59:54,963 --> 01:59:56,804
+f' is 3x squared.
+
+1189
+01:59:56,804 --> 01:59:59,043
+So write x is 2 here.
+
+1190
+01:59:59,043 --> 02:00:00,163
+1 over 12.
+
+1191
+02:00:00,163 --> 02:00:00,963
+You need to get.
+
+1192
+02:00:01,923 --> 02:00:03,123
+Are you okay now?
+
+1193
+02:00:03,123 --> 02:00:04,083
+Do you understand it?
+
+1194
+02:00:05,043 --> 02:00:08,563
+This is very easy formula, but you need to be careful about applying it.
+
+1195
+02:00:08,563 --> 02:00:38,083
+You need to be careful about applying it.
+
+1196
+02:00:18,355 --> 02:00:28,975
+Okay, because this is a composition, composition and the formula says that derivative of inverse function at the point b is equal to 1 over f' a.
+
+1197
+02:00:29,395 --> 02:00:39,315
+And a and b has a relation between f. a is fb. Be careful, this is y values, this is x values, the corresponding x values.
+
+1198
+02:00:39,775 --> 02:00:47,475
+This is the inverse derivative, derivative of inverse function, this is f''. Be careful, the corresponding points we are just choosing.
+
+1199
+02:00:47,475 --> 02:00:54,015
+and using in the formula. So be careful.
+
+1200
+02:00:59,764 --> 02:01:16,604
+What about the natural logaritms and exponential functions? We will see again exponential functions and trigonometric functions and inverses of them and some identities and derivatives and limits. We will see.
+
+1201
+02:01:16,604 --> 02:01:30,784
+And definition about natural logarithm is the function given by lnx. You know lnx, but you don't know, I think. Do you know the integral and the rules, sum of rules?
+
+1202
+02:01:32,663 --> 02:01:46,203
+lnx is the integral of 1 over x dx, for example. So 1 to x, 1 over t dt for positive x. This is the formulation of lnx, which is the natural logarithm function.
+
+1203
+02:01:46,604 --> 02:01:51,203
+Okay. Natural logarithm function.
+
+1204
+02:01:51,203 --> 02:01:51,264
+Natural logarithm function.
+
+1205
+02:02:05,587 --> 02:02:06,067
+Here.
+
+1206
+02:02:10,707 --> 02:02:12,747
+This is why is lnx, the graph of it.
+
+1207
+02:02:15,287 --> 02:02:19,607
+When limit x is going to infinity, lnx is going to infinity.
+
+1208
+02:02:20,127 --> 02:02:26,607
+When x is going to zero from right, lnx is going to negative infinity.
+
+1209
+02:02:27,268 --> 02:02:28,027
+Don't forget.
+
+1210
+02:02:29,247 --> 02:02:35,228
+And lnx, this function, is defined for only positive real numbers.
+
+1211
+02:02:35,228 --> 02:02:39,167
+You know, negative numbers cannot be evaluated.
+
+1212
+02:02:39,167 --> 02:02:41,747
+And you know, ln a is 1.
+
+1213
+02:02:42,527 --> 02:02:47,187
+And from the fundamental term of calculus, lnx is a continuous function.
+
+1214
+02:02:47,187 --> 02:02:49,187
+We know this is a continuous function.
+
+1215
+02:02:53,460 --> 02:03:03,060
+What about natural exponential function? This is both natural logarithm functions. Natural exponential function is e to x.
+
+1216
+02:03:03,539 --> 02:03:10,819
+Just the inverse of it, okay? e to x has such a formula which is symmetric about what is ln x, about what is x.
+
+1217
+02:03:12,180 --> 02:03:20,739
+With e to x is this function. And inverse of ln x is the natural exponential function.
+
+1218
+02:03:20,739 --> 02:03:28,659
+General exponential function is a to x for any positive real number different from 1, of course.
+
+1219
+02:03:29,939 --> 02:03:37,859
+And general logarithm function is defined by logarithm a with base a x. And this is inverse of a to x.
+
+1220
+02:03:37,859 --> 02:03:40,340
+They are inverses of each other.
+
+1221
+02:04:03,956 --> 02:04:08,516
+Şimdi, şimdi let's see the properties
+
+1222
+02:04:08,516 --> 02:04:14,016
+about natural logaritms and exponential functions.
+
+1223
+02:04:14,016 --> 02:04:16,756
+ln is 1,
+
+1224
+02:04:16,756 --> 02:04:26,096
+ln x times y, ln x plus ln y, ln x over y, ln x minus ln y.
+
+1225
+02:04:26,096 --> 02:04:29,016
+These are so useful properties, don't forget.
+
+1226
+02:04:29,016 --> 02:04:35,916
+Logaritms with the base a x to r means,
+
+1227
+02:04:35,916 --> 02:04:38,916
+the power of it becomes the coefficient on logarithm function
+
+1228
+02:04:38,916 --> 02:04:41,115
+and also in ln function,
+
+1229
+02:04:41,115 --> 02:04:43,716
+because ln function has the base e,
+
+1230
+02:04:43,716 --> 02:04:46,476
+different from general logarithm function,
+
+1231
+02:04:46,476 --> 02:04:50,355
+natural logarithm function is with the base e, okay.
+
+1232
+02:04:50,355 --> 02:04:57,355
+And once we have a to x in with the base a and the same a,
+
+1233
+02:04:57,355 --> 02:05:07,256
+x becomes x times logarithm a to a means 1,
+
+1234
+02:05:07,256 --> 02:05:09,256
+like ln e is 1.
+
+1235
+02:05:09,256 --> 02:05:16,256
+a to logarithm a with the base is a and this number is a becomes x.
+
+1236
+02:05:16,256 --> 02:05:19,256
+e to ln x is x in now,
+
+1237
+02:05:19,256 --> 02:05:23,355
+because they have the same base and this number is same.
+
+1238
+02:05:23,355 --> 02:05:28,655
+And you can write a to x e to x ln a,
+
+1239
+02:05:28,655 --> 02:05:32,855
+because you can put x to the power of a,
+
+1240
+02:05:32,855 --> 02:05:36,355
+e to ln a to x becomes a to x again,
+
+1241
+02:05:36,355 --> 02:05:44,155
+like in the same with e to n ln x and x to n.
+
+1242
+02:05:44,155 --> 02:05:50,655
+Logarithm a with the base a x is ln x over ln a.
+
+1243
+02:05:50,655 --> 02:05:51,556
+We can write.
+
+1244
+02:05:51,556 --> 02:06:13,456
+x
+
+1245
+02:05:55,188 --> 02:06:03,347
+logaritma 1, a, or e, it doesn't matter, it's 0. At the point 1, it becomes 0.
+
+1246
+02:06:09,492 --> 02:07:09,492
+Bu, bu
+
+1247
+02:07:09,492 --> 02:07:12,252
+Now this is with base A, okay
+
+1248
+02:07:33,779 --> 02:07:35,380
+What about the limits?
+
+1249
+02:07:38,387 --> 02:07:41,908
+When x is going to infinity, ln x is going to infinity.
+
+1250
+02:07:42,108 --> 02:07:48,667
+When x is going to 0 from right, ln x is going to negative infinity.
+
+1251
+02:07:48,827 --> 02:07:49,747
+Don't forget this.
+
+1252
+02:07:52,728 --> 02:07:55,867
+Similarly, when x is going to infinity, e to x is infinity.
+
+1253
+02:07:56,547 --> 02:07:59,688
+When x is going to negative infinity, e to x is going 0.
+
+1254
+02:08:01,228 --> 02:08:06,448
+Because when it's negative numbers, 1 over e to x, you can just consider 1 over infinity 0.
+
+1255
+02:08:06,448 --> 02:08:11,568
+And this one, again, when it is locked.
+
+1256
+02:08:12,327 --> 02:08:19,547
+When it is between 0 and 1, that means always we may have positive numbers.
+
+1257
+02:08:20,608 --> 02:08:28,007
+But if it is between 0 and 1, that means less than 1 means Linux is going to infinity.
+
+1258
+02:08:28,587 --> 02:08:32,408
+This limit, a to x, is going to 0 because it's less than 1.
+
+1259
+02:08:32,408 --> 02:08:40,408
+You can just write the rational form, which makes constant division with the infinity makes it equal to 0.
+
+1260
+02:08:40,807 --> 02:08:45,568
+But when it is different, greater than 1, it is going to infinity.
+
+1261
+02:08:47,568 --> 02:08:51,367
+And when x is going to minus infinity, a to x is going to infinity.
+
+1262
+02:08:51,367 --> 02:08:54,448
+When a is between 0 and 1.
+
+1263
+02:08:57,387 --> 02:09:00,108
+And here, when it is greater than 1, a.
+
+1264
+02:09:01,007 --> 02:09:04,028
+When x is going to negative infinity, again, it's going to 0.
+
+1265
+02:09:04,807 --> 02:09:07,747
+And 9 and 10 are so useful, don't forget.
+
+1266
+02:09:09,188 --> 02:09:10,908
+That's why I put a star here.
+
+1267
+02:09:11,247 --> 02:09:12,728
+Don't forget these limits.
+
+1268
+02:09:12,967 --> 02:09:14,427
+We will use much more.
+
+1269
+02:09:14,427 --> 02:09:19,807
+When x is going to infinity, 1 plus a to x to x is e to a.
+
+1270
+02:09:20,547 --> 02:09:22,488
+Or when x is going to 0.
+
+1271
+02:09:22,747 --> 02:09:28,228
+From right, 1 plus a to a times x to 1 over x is e to a.
+
+1272
+02:09:28,787 --> 02:09:31,608
+Don't forget these limit rules, well-known limits.
+
+1273
+02:09:32,507 --> 02:09:37,967
+And lastly, when x is going to 0 e to x minus 1 over x, it is evaluated.
+
+1274
+02:09:38,467 --> 02:09:39,108
+It is 1.
+
+1275
+02:09:39,167 --> 02:09:40,927
+You can directly use these limits.
+
+1276
+02:09:40,927 --> 02:10:10,908
+And then, let's see if you can see these limits.
+
+1277
+02:10:13,524 --> 02:10:26,804
+These are well-known and evaluated limits that sometimes, and not sometimes, nearly once we have the limit questions, always we will have such a function.
+
+1278
+02:10:27,744 --> 02:10:36,044
+So you will say that when x is going to infinity, 1 plus a to x to x is e to a there directly, you have to follow this rule.
+
+1279
+02:10:36,044 --> 02:10:44,584
+You have to just remember, these are well-known, evaluated limits you need to use directly for limit questions, okay?
+
+1280
+02:10:44,984 --> 02:10:46,244
+That means you need to memorize.
+
+1281
+02:10:48,624 --> 02:10:49,144
+Yes.
+
+1282
+02:10:49,744 --> 02:10:50,724
+No, not the explanation.
+
+1283
+02:10:51,024 --> 02:10:51,664
+Just use them.
+
+1284
+02:10:55,604 --> 02:10:56,484
+Okay, yes.
+
+1285
+02:10:58,264 --> 02:11:03,324
+And 11, you can again directly use. It is evaluated.
+
+1286
+02:11:04,463 --> 02:11:14,884
+You can say it x minus 1 over x is 1, but 9 and 10 are very important. Don't forget, they are so useful and the famous limits.
+
+1287
+02:11:15,764 --> 02:11:17,664
+Okay, you need to remember.
+
+1288
+02:11:23,731 --> 02:11:29,091
+And lastly, I'm sorry, let's see the derivatives and then we will be okay for today.
+
+1289
+02:11:31,231 --> 02:11:34,952
+And derivative of ln x, 1 over x.
+
+1290
+02:11:36,711 --> 02:11:43,572
+Once we have derivative of ln of a function, f'x over f,
+
+1291
+02:11:44,332 --> 02:11:48,011
+that means derivative over itself, derivative over itself, okay for ln.
+
+1292
+02:11:48,891 --> 02:11:51,851
+And derivative of e to x is always e to x,
+
+1293
+02:11:51,851 --> 02:11:55,211
+but if we have a function in the exponent,
+
+1294
+02:11:55,931 --> 02:12:00,511
+multiply with the derivative of it with respect to x, f'x times e to fx, okay.
+
+1295
+02:12:01,391 --> 02:12:04,211
+What if we have a different from e?
+
+1296
+02:12:05,452 --> 02:12:11,452
+Derivative of a to fx is f'x, a to fx ln a.
+
+1297
+02:12:11,572 --> 02:12:16,992
+That means derivative of the exponent, the function itself, and the ln of a, okay.
+
+1298
+02:12:17,532 --> 02:12:19,572
+Don't forget, this is very important, this rule.
+
+1299
+02:12:21,851 --> 02:12:23,471
+What about logarithm?
+
+1300
+02:12:26,631 --> 02:12:29,591
+General logarithm in the base a, the derivative of it,
+
+1301
+02:12:29,971 --> 02:12:34,811
+f'x over f normally for ln, multiply with ln a, okay.
+
+1302
+02:12:35,072 --> 02:12:42,311
+But here, we need to just remember these rules, derivative rules, okay.
+
+1303
+02:12:42,311 --> 02:12:43,311
+And then, we need to do that.
+
+1304
+02:12:43,311 --> 02:12:43,332
+Okay.
+
+1305
+02:12:43,332 --> 02:13:00,171
+Let's do that.
+
+1306
+02:12:55,956 --> 02:12:57,735
+Bir şey, birazcık.
+
+1307
+02:12:57,815 --> 02:12:58,596
+I'm so sorry.
+
+1308
+02:12:58,976 --> 02:13:01,036
+Okay, please repeat them today.
+
+1309
+02:13:01,195 --> 02:13:04,536
+And if you have any problem tomorrow, we will continue.
+
+1310
+02:13:05,275 --> 02:13:10,435
+And if you want, I can make a summary or repeat of these topics if you want.
+
+1311
+02:13:10,956 --> 02:13:13,655
+Okay, just study them, repeat them on your own.
+
+1312
+02:13:14,216 --> 02:13:16,855
+And tomorrow we will see again together.
+
+1313
+02:13:16,855 --> 02:13:19,655
+I am very sorry for today.
+
+1314
+02:13:20,096 --> 02:13:23,756
+I was late and I was just finishing the course earlier.
+
+1315
+02:13:23,876 --> 02:13:24,695
+I'm so sorry.
+
+1316
+02:13:24,695 --> 02:13:26,136
+Okay.
+
+1317
+02:13:27,355 --> 02:13:28,596
+Yes, I think so.
+
+1318
+02:13:28,756 --> 02:13:29,456
+They are easy.
+
+1319
+02:13:30,296 --> 02:13:32,576
+And tomorrow we will see together.
+
+1320
+02:13:33,935 --> 02:13:35,956
+I thank you for your participation.
+
+1321
+02:13:37,676 --> 02:13:39,076
+And for your kindness.
+
+1322
+02:13:39,296 --> 02:13:40,115
+Thank you so much.
+
+1323
+02:13:41,855 --> 02:13:43,136
+And see you tomorrow.
+
+1324
+02:13:43,315 --> 02:13:44,395
+Take care of yourselves.
+
+1325
+02:13:44,395 --> 02:13:45,676
+Thank you.
+
+1326
+02:13:46,815 --> 02:13:47,935
+See you tomorrow.
+
+1327
+02:13:48,275 --> 02:13:49,216
+See you.
