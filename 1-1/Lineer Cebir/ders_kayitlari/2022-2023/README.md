@@ -6,3 +6,4 @@
 | :---: | :---: | :--- | :--- |
 | 1 | Bahar | Mustafa Sarı | [sube_1/](sube_1/) |
 | 2 | Bahar | — | [sube_2/](sube_2/) |
+| 7 | Bahar | — | [sube_7/](sube_7/) |
