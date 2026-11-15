@@ -1,0 +1,1795 @@
+1
+00:16:51,155 --> 00:16:51,955
+Arkadaşlar.
+
+2
+00:16:54,835 --> 00:16:58,835
+Merhaba hocam.
+
+3
+00:17:01,575 --> 00:17:03,955
+Evet, sesim düzgün geliyor inşallah.
+
+4
+00:17:08,756 --> 00:17:09,956
+Evet, şu an iyisiniz.
+
+5
+00:17:11,396 --> 00:17:23,996
+Tamamdır. Bu hafta online ders yapmak durumunda kaldım. Çünkü biraz rahatsızım. O yüzden dersi online yapacağız.
+
+6
+00:17:23,996 --> 00:17:34,096
+Ama zaten biraz da kod üzerinden ilerlediğimiz için çok sorun olmayacağını düşünüyorum.
+
+7
+00:17:34,644 --> 00:17:43,923
+Bu hafta iki konu başlığımız var aslında. Önce Half Transform ile başlayacağım.
+
+8
+00:17:45,183 --> 00:17:55,763
+Ve Half Transform ile Straight Line doğru bulma ve Circle Detection konusundan bahsedeceğim.
+
+9
+00:17:59,700 --> 00:18:16,680
+Bir feature extraction yöntemi olan Histogram of Oriented Gradient konusunu anlatacağım. İki başlık, iki parça halinde birer saat toplamda iki saatlik bir ders yapmayı planlıyorum.
+
+10
+00:18:23,571 --> 00:18:28,071
+Slide üzerinden gidelim. Sonra kod üzerinden ilerleriz.
+
+11
+00:19:10,036 --> 00:19:19,016
+Evet, ilk konu başlığımız half transform olacak. Half transform'unun avantajlarından bahsedeceğim.
+
+12
+00:19:20,696 --> 00:19:29,476
+Ve half transform'unu kullanarak straight line detection konusu, bir de circle detection konusundan bahsedeceğim.
+
+13
+00:19:29,476 --> 00:19:34,696
+Ve circle detection yöntemini kullanarak integral differential operator.
+
+14
+00:19:35,220 --> 00:19:45,940
+Bununla ilgili belki bir ödev, ikinci bir ödev gelebilir. Integral Differential Operator ile ilgili.
+
+15
+00:19:45,940 --> 00:20:00,380
+And I will switch into English. I think our Erasmus students is here. Is that right? Hola.
+
+16
+00:20:01,907 --> 00:20:06,007
+Evet, bu yüzden ikinci en ingilizce.
+
+17
+00:20:06,007 --> 00:20:13,907
+Bu sorunlar, bu sorunlar, ilk bölümde de bu sorunlar.
+
+18
+00:20:13,907 --> 00:20:25,707
+Ve bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar.
+
+19
+00:20:25,811 --> 00:20:50,283
+Ve birçok bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halkı bir halk
+
+20
+00:20:50,324 --> 00:21:07,084
+Then, by using this binary image, we can apply the half transform to locate the regular curves, straight lines, circles, paraboles, or elliptic shapes.
+
+21
+00:21:07,892 --> 00:21:14,892
+Bu hafta hafta bir hafta bir şekilde,
+
+22
+00:21:14,892 --> 00:21:17,892
+ve çirkelerle ilgili bir şekilde,
+
+23
+00:21:17,892 --> 00:21:20,892
+ama bu şekilde,
+
+24
+00:21:20,892 --> 00:21:28,892
+bir şekilde,
+
+25
+00:21:28,892 --> 00:21:32,892
+farklı bir şekilde,
+
+26
+00:21:39,028 --> 00:21:58,228
+In this slide, you can see the advantages of half-transform, because there is advantages of half-transform, and it is tolerant to gaps in the edge.
+
+27
+00:22:22,996 --> 00:22:50,436
+Relativli unaffected by noise. This is another advantage. And also unaffected by occlusion in the image. These are the advantages of half transform. And you can see the half transform for straight line detection. How can we detect the straight lines?
+
+28
+00:22:50,720 --> 00:23:00,000
+We can detect the stride lines and also we can give its line equation in this way.
+
+29
+00:23:00,799 --> 00:23:03,039
+This is the idea here.
+
+30
+00:23:03,039 --> 00:23:08,039
+At the beginning, for a stride line...
+
+31
+00:23:08,500 --> 00:23:14,140
+We can write a line equation like this.
+
+32
+00:23:14,140 --> 00:23:17,000
+Y equal to mx plus c.
+
+33
+00:23:17,500 --> 00:23:23,779
+This is the general form of line, equation of line.
+
+34
+00:23:24,259 --> 00:23:32,140
+But there is some failed...
+
+35
+00:23:32,723 --> 00:23:59,563
+Bu örneğe bakalım.
+
+36
+00:23:59,731 --> 00:24:20,231
+And in this equation, there is an angle theta. Theta is here, you can see. And there is a row. This is the row. And this is the perpendicular to the line. This is the line.
+
+37
+00:24:25,428 --> 00:24:32,428
+Ve bu noktaların bu noktaların, bu noktaların bu noktaların.
+
+38
+00:24:48,564 --> 00:24:54,844
+Ve a teta angle, ve a rho distance here in this equation.
+
+39
+00:24:55,744 --> 00:25:00,624
+Okay, this is the representation of a striped line.
+
+40
+00:25:03,892 --> 00:25:26,612
+On this line, each point should provide this equation. In this way, we can detect the parameters of the line. What is the parameters of this line? R is one of the parameters and the other parameter is theta.
+
+41
+00:25:27,284 --> 00:25:48,104
+Okay, when we find these two parameters of the line, we can, in this way, we can detect the striped line in this image.
+
+42
+00:25:55,700 --> 00:25:58,519
+Okay, we have two parameters we set.
+
+43
+00:26:04,948 --> 00:26:22,948
+We will use an accumulator array to detect the stride line by using the voting mechanism. I think that we will define a matrix.
+
+44
+00:26:23,316 --> 00:26:25,416
+Rho ve Theta.
+
+45
+00:26:25,816 --> 00:26:28,235
+With different Rho and Theta values,
+
+46
+00:26:28,776 --> 00:26:35,516
+we will find the intersection of the parametric curves.
+
+47
+00:26:36,276 --> 00:26:49,276
+Here, there is a good example to define the detection of stride lines.
+
+48
+00:26:49,276 --> 00:26:51,148
+Think that...
+
+49
+00:26:51,539 --> 00:27:02,259
+İlk adım, bu üçüncü kere, bu üçüncü kere.
+
+50
+00:27:04,380 --> 00:27:10,259
+Bu üçüncü kere.
+
+51
+00:27:13,299 --> 00:27:38,923
+Ve bu konuyu örneklerle anlatacağız. Bu konuyu örneklerle anlatacağız.
+
+52
+00:27:40,915 --> 00:27:56,587
+Bir de
+
+53
+00:27:56,915 --> 00:28:20,735
+Actually, I said that we can draw a million lines from this point, but think that we have drawn the lines with the theta angle is 0, 30 degrees, 60 degrees, 90 degrees, and 120 degrees.
+
+54
+00:28:21,428 --> 00:28:48,728
+Please follow these lines. For the point 1, this is the point 1 here. And we have a 0 degree line at the beginning. This is the 0 degree line. This is the 0 degree line. And we have a 30 degree line.
+
+55
+00:28:49,203 --> 00:28:50,187
+Şöyle.
+
+56
+00:28:53,748 --> 00:29:00,908
+From this point we have a line like this.
+
+57
+00:29:00,908 --> 00:29:08,908
+We have another line with 30 degree here.
+
+58
+00:29:09,748 --> 00:29:15,968
+These are the 60 degree line here.
+
+59
+00:29:16,688 --> 00:29:17,548
+You can see.
+
+60
+00:29:18,388 --> 00:29:21,208
+And 90 degree this one.
+
+61
+00:29:22,516 --> 00:29:32,936
+And these are the lines from the point one.
+
+62
+00:29:32,936 --> 00:29:40,436
+And when we shift the point into the next one, this is the second point here.
+
+63
+00:29:50,483 --> 00:30:01,183
+Theta angle 0, 30, 60 degree, 90 degree, in a similar way from this point.
+
+64
+00:30:01,183 --> 00:30:08,663
+And we can calculate the distance to the origin.
+
+65
+00:30:09,884 --> 00:30:15,683
+This is the perpendicular line, actually.
+
+66
+00:30:16,243 --> 00:30:26,864
+And when we look at this table, we said that we have three points.
+
+67
+00:30:27,223 --> 00:30:28,884
+The next one is here.
+
+68
+00:30:30,243 --> 00:30:41,884
+And when we look at this table, you can see only the...
+
+69
+00:30:42,000 --> 00:30:56,819
+A theta angle 60 degree have the same or very similar distances.
+
+70
+00:30:56,819 --> 00:31:02,319
+That's the idea for the line detection.
+
+71
+00:31:06,579 --> 00:31:30,960
+On a line, on the line, we have three points, and for each point we draw many lines. Only one of them have the same distance. That's why we define the parameter theta and rho.
+
+72
+00:31:42,420 --> 00:31:55,948
+Bu, bu
+
+73
+00:32:10,036 --> 00:32:36,036
+For the same example, you can see the voting matrix here. We have a keta angle on the horizontal line, and we have a distance on the vertical line, and we have some different...
+
+74
+00:32:36,384 --> 00:32:38,184
+Theta angles.
+
+75
+00:32:38,644 --> 00:32:41,023
+And we calculate the distance.
+
+76
+00:32:41,624 --> 00:32:57,604
+And when we look at the graphics, you can see that for the 60 degree, we have the same or we have the similar distance.
+
+77
+00:32:57,604 --> 00:32:59,604
+That's why...
+
+78
+00:33:00,596 --> 00:33:07,836
+We can detect a line by looking at the parameter theta and distance.
+
+79
+00:33:09,096 --> 00:33:16,395
+Which distance value gets more voting?
+
+80
+00:33:16,395 --> 00:33:20,735
+And this is the parameter of the line.
+
+81
+00:33:23,859 --> 00:33:29,219
+The point where the curves intersect gives a distance and angle.
+
+82
+00:33:29,879 --> 00:33:36,920
+This distance and angle indicate the line which intersect the points being tested.
+
+83
+00:33:37,219 --> 00:33:44,319
+In the graph shown the line intersected the pink point.
+
+84
+00:33:45,000 --> 00:33:49,639
+This corresponds to the solid pink line in the diagram above.
+
+85
+00:33:50,163 --> 00:34:16,003
+And this is the graphical representation. But if we carry this output to a voting accumulator, we will use an accumulator matrix with two parameters, theta and rho.
+
+86
+00:34:16,916 --> 00:34:29,696
+In this matrix, please think that we have some discrete theta values on this matrix.
+
+87
+00:34:33,696 --> 00:34:40,936
+Between 0 and 10, 10 to 20.
+
+88
+00:34:41,684 --> 00:34:45,624
+In this way, we can discretize the theta values.
+
+89
+00:34:45,624 --> 00:34:50,923
+And in a similar way, we can define some row values
+
+90
+00:34:50,923 --> 00:34:54,824
+because we know the image size.
+
+91
+00:34:55,024 --> 00:35:03,884
+That's why we can define the borders of the r value.
+
+92
+00:35:04,423 --> 00:35:08,744
+And we can discretize this distance.
+
+93
+00:35:09,184 --> 00:35:18,644
+By the way, we can define a matrix, and we can vote to this matrix.
+
+94
+00:35:18,644 --> 00:35:35,164
+Actually, with the theta value between the 50 and 70, or the center point is 60, and r value between 80 and 85.
+
+95
+00:35:37,012 --> 00:35:48,652
+Bu, bu
+
+96
+00:35:50,420 --> 00:35:53,180
+test value on this matrix.
+
+97
+00:35:53,900 --> 00:35:57,139
+By the way, we will get a peak
+
+98
+00:35:57,139 --> 00:35:59,900
+on the matrix
+
+99
+00:35:59,900 --> 00:36:02,500
+for the single
+
+100
+00:36:02,500 --> 00:36:05,079
+R and theta
+
+101
+00:36:05,079 --> 00:36:07,559
+pair to define
+
+102
+00:36:07,559 --> 00:36:08,960
+the stride
+
+103
+00:36:08,960 --> 00:36:10,840
+line.
+
+104
+00:36:11,840 --> 00:36:13,880
+This is the idea
+
+105
+00:36:13,880 --> 00:36:17,079
+to detect the stride lines.
+
+106
+00:36:18,068 --> 00:36:27,788
+İngilizce bir halkı transform for straight line algorithm.
+
+107
+00:36:31,888 --> 00:36:35,528
+Quantize the halkı transform space.
+
+108
+00:36:36,188 --> 00:36:41,028
+Identify the maximum and minimum values of rho and theta.
+
+109
+00:36:41,940 --> 00:36:56,720
+And generate an accumulator array. This is a matrix with rho and theta values. Set all values to zero at the beginning. Then, for all edge points,
+
+110
+00:36:58,963 --> 00:37:06,283
+İmizde, çünkü biz de ilk başta, bir etiketik algeri ve bir etiketik algeri.
+
+111
+00:37:06,283 --> 00:37:09,403
+Ve bir etiketik algeri.
+
+112
+00:37:28,052 --> 00:37:33,211
+İngilizce gradient direction for theta, compute rho from the equation.
+
+113
+00:37:34,092 --> 00:37:46,112
+And in the accumulator matrix, the defined rho and theta cell, we will increment it by one.
+
+114
+00:37:47,592 --> 00:37:53,832
+At the end of this operation, for all image pixels,
+
+115
+00:37:56,211 --> 00:38:04,751
+İlk olarak, we will check the maximum value in the matrix, in the accumulator matrix.
+
+116
+00:38:05,751 --> 00:38:21,992
+And the rho and theta value, calculate the equation of the line, for the rho and theta value, this pair will define the straight line in the image.
+
+117
+00:38:23,507 --> 00:38:50,859
+Bu, bu
+
+118
+00:38:50,996 --> 00:39:00,996
+ve
+
+119
+00:39:00,996 --> 00:39:01,996
+matriz
+
+120
+00:39:01,996 --> 00:39:02,996
+sel
+
+121
+00:39:02,996 --> 00:39:04,996
+denemiş
+
+122
+00:39:04,996 --> 00:39:07,996
+en
+
+123
+00:39:07,996 --> 00:39:09,996
+ve
+
+124
+00:39:09,996 --> 00:39:10,996
+matriz
+
+125
+00:39:10,996 --> 00:39:11,996
+ve
+
+126
+00:39:11,996 --> 00:39:14,996
+bu
+
+127
+00:39:14,996 --> 00:39:15,996
+parlamiyet
+
+128
+00:39:15,996 --> 00:39:17,996
+bu
+
+129
+00:39:22,356 --> 00:39:43,856
+And in a similar way, we can detect the circles. We can use half transform for detection of circles. And we, you can see here, we have a circle equation.
+
+130
+00:39:44,403 --> 00:39:47,744
+Parametrik equation of the circle.
+
+131
+00:39:48,444 --> 00:39:59,884
+And in this equation, we know that A and B represents the center of circle.
+
+132
+00:40:01,564 --> 00:40:04,204
+R represents the radius.
+
+133
+00:40:04,204 --> 00:40:08,204
+And X and Y values are the...
+
+134
+00:40:12,340 --> 00:40:14,079
+This is A and B,
+
+135
+00:40:14,920 --> 00:40:16,059
+and through the circle,
+
+136
+00:40:16,840 --> 00:40:17,720
+and we have
+
+137
+00:40:17,720 --> 00:40:20,579
+radius R, and we have
+
+138
+00:40:20,579 --> 00:40:22,460
+some x and y
+
+139
+00:40:22,460 --> 00:40:24,380
+values. All the
+
+140
+00:40:24,380 --> 00:40:26,440
+pixels on the
+
+141
+00:40:26,440 --> 00:40:28,240
+circle should
+
+142
+00:40:28,240 --> 00:40:30,380
+provide this
+
+143
+00:40:30,380 --> 00:40:32,360
+equation. Is that
+
+144
+00:40:32,360 --> 00:40:33,820
+right? This is the circle
+
+145
+00:40:33,820 --> 00:40:36,420
+equation. That's why
+
+146
+00:40:36,420 --> 00:40:37,700
+all the points
+
+147
+00:40:38,612 --> 00:40:40,612
+bu şekilde
+
+148
+00:40:40,612 --> 00:40:45,612
+birçok
+
+149
+00:40:45,612 --> 00:40:48,612
+ve
+
+150
+00:40:48,612 --> 00:41:05,612
+bu
+
+151
+00:41:04,211 --> 00:41:06,891
+Çünkü örneğe is to detect the circle.
+
+152
+00:41:07,631 --> 00:41:11,131
+We have three parameters, you can see.
+
+153
+00:41:11,131 --> 00:41:14,971
+We have A and B, and also R.
+
+154
+00:41:15,612 --> 00:41:17,011
+We have three parameters.
+
+155
+00:41:17,891 --> 00:41:21,992
+In straight line equation, we have only two parameters.
+
+156
+00:41:22,527 --> 00:41:23,827
+Theta ve R.
+
+157
+00:41:24,067 --> 00:41:25,987
+But here we have three parameters.
+
+158
+00:41:26,247 --> 00:41:39,987
+That's why our accumulator matrix will be three-dimensional in this application, in this circle detection operation.
+
+159
+00:41:41,367 --> 00:41:46,307
+It's a little bit more complex than the straight line equation.
+
+160
+00:41:46,815 --> 00:41:50,815
+Bu, çok iyi bir şekilde çalışıyor.
+
+161
+00:41:50,815 --> 00:41:56,415
+Ama çok fazla zamanı da vermek için çok fazla zamanı vermek için
+
+162
+00:41:56,415 --> 00:42:00,363
+ne var mı?
+
+163
+00:42:09,780 --> 00:42:35,260
+You can see some examples here. Detection of circle by half transform examples. We have an original image here. We have some coins. And you can see all the circles are detected. At the beginning, Kenny edge detection is applied.
+
+164
+00:42:37,152 --> 00:42:42,412
+A white pixel represents the edges.
+
+165
+00:42:42,412 --> 00:42:59,992
+And then when we apply the half transform, we can find their center point and also we can find their radius for these four coins.
+
+166
+00:43:19,284 --> 00:43:40,884
+In Python code, you can see here for the psychimage transform library, we have half transform for the circle and the stripe line.
+
+167
+00:43:46,003 --> 00:44:04,724
+Metod to the synthetic image generated in this code, we can find the center of the circle and also radius of the circle. It's possible.
+
+168
+00:44:09,012 --> 00:44:32,364
+Bu, bu
+
+169
+00:44:32,532 --> 00:44:45,532
+İntekro Differential Operator, İRIS Detection, in his article.
+
+170
+00:44:45,532 --> 00:44:51,532
+And in this article, it uses...
+
+171
+00:44:52,851 --> 00:45:00,851
+Circle Detection Operation in a very similar form of half-transform, in my opinion.
+
+172
+00:45:00,851 --> 00:45:09,851
+That's why I add the Dockmann Integral Differential Operator to this part.
+
+173
+00:45:09,851 --> 00:45:20,491
+Dockmann uses Integral Differential Operator for locating the circular iris and pupil regions.
+
+174
+00:45:20,692 --> 00:45:37,052
+O aim is to define the iris, detect the iris circle and also pooping region.
+
+175
+00:45:38,172 --> 00:45:42,351
+Can you see my mouse movements on your screen?
+
+176
+00:45:44,992 --> 00:45:46,211
+Yes, hocam.
+
+177
+00:45:46,851 --> 00:45:47,612
+Okay.
+
+178
+00:45:48,500 --> 00:46:00,119
+I will explain this equation. This is integral differential operator equation, but it looks very complex, I know, but it's very easy.
+
+179
+00:46:02,643 --> 00:46:13,503
+At the end of this course, you should learn to solve these complex equations.
+
+180
+00:46:14,123 --> 00:46:16,623
+And how can we understand the equation?
+
+181
+00:46:16,843 --> 00:46:21,043
+We learn to think about it, okay?
+
+182
+00:46:21,503 --> 00:46:23,223
+It's not so difficult.
+
+183
+00:46:23,223 --> 00:46:27,943
+But this is a very big equation.
+
+184
+00:46:28,371 --> 00:46:32,371
+İlk başlayalım.
+
+185
+00:46:32,371 --> 00:46:40,371
+Bu bölümde, bu bölümde, bu bölümde, bu bölümde.
+
+186
+00:46:40,371 --> 00:46:41,931
+İnteklerle, bu bölümde.
+
+187
+00:47:15,443 --> 00:47:19,224
+İnteklerle anlatacağım.
+
+188
+00:47:32,851 --> 00:47:33,211
+Okay.
+
+189
+00:47:34,112 --> 00:47:35,152
+In this part,
+
+190
+00:47:36,551 --> 00:47:43,371
+we have an image like this
+
+191
+00:47:43,371 --> 00:47:46,931
+and our aim is to detect the circle
+
+192
+00:47:46,931 --> 00:47:50,431
+around the iris.
+
+193
+00:47:51,652 --> 00:47:54,231
+Our aim is to detect this circle.
+
+194
+00:47:54,231 --> 00:47:54,631
+Okay.
+
+195
+00:47:55,451 --> 00:47:58,652
+And all the images we have,
+
+196
+00:47:59,131 --> 00:48:00,231
+I...
+
+197
+00:48:26,003 --> 00:48:39,844
+We can think that we have a center point on this area or on this area, on this area.
+
+198
+00:48:40,083 --> 00:48:51,623
+By the way, we can define many, many center points and think that if this is a center point,
+
+199
+00:48:52,019 --> 00:49:19,460
+There should be a circle around it with the radius 1 or with the radius 2, with the radius 3. Okay. We will check all these possible center points and with different radius values to detect the real
+
+200
+00:49:19,840 --> 00:49:22,840
+Açıkla arasında ilisinizde.
+
+201
+00:49:23,539 --> 00:49:23,820
+Ok.
+
+202
+00:49:24,900 --> 00:49:28,019
+Eğer bu yukarıda bir yukarıda,
+
+203
+00:49:28,019 --> 00:49:29,740
+bu yukarıda aynı şekilde.
+
+204
+00:49:29,820 --> 00:49:32,019
+Bu yukarıda bir yukarıda.
+
+205
+00:49:33,019 --> 00:49:37,020
+Ve yukarıda bir yukarıda.
+
+206
+00:49:37,020 --> 00:49:39,020
+Yukarıda bir yukarıda.
+
+207
+00:49:39,020 --> 00:49:41,020
+Bu yukarıda.
+
+208
+00:49:41,748 --> 00:49:47,448
+Orada radüse 2, radüse 3, yukarıda bir çirkle.
+
+209
+00:49:47,568 --> 00:49:48,307
+We will check.
+
+210
+00:49:48,488 --> 00:49:54,568
+All these possible centers will be checked.
+
+211
+00:49:55,108 --> 00:49:57,427
+How can we check the point?
+
+212
+00:49:58,148 --> 00:49:59,427
+I will explain it.
+
+213
+00:50:12,052 --> 00:50:16,052
+İntet, if we find the...
+
+214
+00:50:20,563 --> 00:50:22,304
+A real center.
+
+215
+00:50:24,304 --> 00:50:25,123
+Here.
+
+216
+00:50:26,324 --> 00:50:28,463
+And we will check.
+
+217
+00:50:28,963 --> 00:50:32,184
+Are there any circle with the radius.
+
+218
+00:50:34,644 --> 00:50:36,543
+To, for example.
+
+219
+00:50:37,463 --> 00:50:39,743
+And on this radius.
+
+220
+00:50:39,943 --> 00:50:41,943
+All the intensity values.
+
+221
+00:50:42,516 --> 00:51:04,376
+You can see all the intensity values near to black. That's why all of them near to zero. And on the circle, each point on the circle, we will add their intensity values to our accumulator.
+
+222
+00:51:06,420 --> 00:51:11,960
+I will increase the radius and I will check it again.
+
+223
+00:51:12,180 --> 00:51:14,699
+Are there any iris here?
+
+224
+00:51:15,840 --> 00:51:22,940
+And in a similar way, all the pixels are from iris region
+
+225
+00:51:22,940 --> 00:51:27,920
+and it is near to zero because it's black region.
+
+226
+00:51:27,920 --> 00:51:33,159
+And when we add them up, their intensity values on this circle,
+
+227
+00:52:29,139 --> 00:52:47,800
+This represents the intensity image xy on the x0, y0 center point with the radius r.
+
+228
+00:52:47,800 --> 00:52:55,500
+But we will change the r value.
+
+229
+00:52:58,003 --> 00:53:45,656
+...
+
+230
+00:53:38,164 --> 00:53:44,784
+1, 2, 3, 4
+
+231
+00:53:44,784 --> 00:53:47,884
+ve
+
+232
+00:53:47,884 --> 00:53:52,744
+integral result
+
+233
+00:53:52,744 --> 00:53:56,624
+is near to 0
+
+234
+00:53:56,624 --> 00:53:57,904
+for example
+
+235
+00:53:57,904 --> 00:54:00,404
+the intensities
+
+236
+00:54:00,404 --> 00:54:02,744
+when I sum
+
+237
+00:54:02,744 --> 00:54:03,824
+them up
+
+238
+00:54:27,668 --> 00:54:36,468
+A very big value on this intensity or in this radius value.
+
+239
+00:54:38,088 --> 00:54:40,468
+Here there is a...
+
+240
+00:54:46,931 --> 00:54:48,431
+Derivative Operator.
+
+241
+00:54:48,951 --> 00:54:49,271
+Okay.
+
+242
+00:54:50,011 --> 00:55:00,431
+It means you will check the different r values for different r values, their integral results.
+
+243
+00:55:00,431 --> 00:55:10,431
+When we get the big difference like this, this is the r result for the...
+
+244
+00:55:10,931 --> 00:55:15,931
+...correct center point x0, y0...
+
+245
+00:55:15,931 --> 00:55:19,091
+...and also correct radius value.
+
+246
+00:55:19,511 --> 00:55:22,931
+This is the maximum difference.
+
+247
+00:55:23,072 --> 00:55:27,931
+When we get the maximum difference, it means we find the correct...
+
+248
+00:55:27,931 --> 00:55:33,931
+...center point of the circle.
+
+249
+00:55:34,976 --> 00:55:40,536
+ve bu noktada,
+
+250
+00:55:40,536 --> 00:55:52,456
+bu noktada,
+
+251
+00:55:52,456 --> 00:55:53,456
+ve bu noktada,
+
+252
+00:55:53,456 --> 00:56:01,536
+bu noktada,
+
+253
+00:56:02,420 --> 00:56:27,820
+And by the way, if we have some noisy pixels which generate the similar result, we can eliminate these pixels and we can localize the iris.
+
+254
+00:56:54,804 --> 00:56:59,804
+Bir de bupüle, bir de bupüle, bir de bupüle, bir de bupüle.
+
+255
+00:56:59,804 --> 00:57:05,804
+Bu, Dalkman'in integral differential operatörü,
+
+256
+00:57:05,804 --> 00:57:09,804
+bu de bupüle, bir de bupüle.
+
+257
+00:57:09,804 --> 00:57:11,804
+Ve bupüle ve bupüle.
+
+258
+00:57:41,043 --> 00:57:45,036
+We have 14 students and do you have any questions?
+
+259
+00:57:56,692 --> 00:58:07,371
+Evet arkadaşlar, Huff Transformu ile ilişkili olduğu için Dogma'nın Integral Differential Operator'unu da bu bölümde verdim.
+
+260
+00:58:07,371 --> 00:58:12,291
+Aslında çok güzel bir denklem yazmış.
+
+261
+00:58:13,012 --> 00:58:16,335
+Gördüğünüz gibi bu denklemde...
+
+262
+00:58:16,335 --> 00:58:24,115
+Bir integral var, bir türev var, bir de bir gauss fonksiyonu ile konvolüsyon işlemi görüyorsunuz.
+
+263
+00:58:24,115 --> 00:58:41,715
+Tüm bu işlemleri aslında bir arada kullanarak hem göz bebeğinin yerini bulma hem de irisin bir çember ile yerinin işaretlenmesi konusunda güzel bir çözüm sunmuş.
+
+264
+00:58:44,335 --> 00:58:49,615
+Örneği de bu çözümü de HALF Transform'unun peşinden anlatmak istedim.
+
+265
+00:58:51,076 --> 00:58:53,655
+Anlaşılmayan bir yer varsa sorabilirsiniz.
+
+266
+00:58:56,215 --> 00:58:57,936
+Bununla ilgili bir ödev vereceğim.
+
+267
+00:58:59,675 --> 00:59:03,215
+Detaylı bir açıklaması da olacak zaten ödevin.
+
+268
+00:59:07,956 --> 00:59:10,536
+Soru varsa chatten de yazabilirsiniz.
+
+269
+00:59:12,536 --> 00:59:17,155
+Are there any questions? You can write your questions on chat.
+
+270
+00:59:25,780 --> 00:59:33,180
+No questions. It's very clear. Çok mu iyi anlattım yoksa hiç kimse bir şey anlamadım. Anlamadım.
+
+271
+00:59:34,940 --> 00:59:37,780
+No, Hocam. You explained very well. Thank you.
+
+272
+00:59:39,780 --> 00:59:47,780
+Ders notları elinizde. Bunları biraz kendiniz de okuduğunuzda anlamadığınız bir şey olursa sorabilirsiniz.
+
+273
+00:59:48,532 --> 00:59:59,831
+Biraz sesim kötü. O yüzden kusura bakmayın. Gerçekten zor ders anlatıyorum ama herhalde anlaşılıyordur diye ümit ediyorum.
+
+274
+01:00:00,311 --> 01:00:07,172
+Peki, bir 10 dakika ara verelim. Sorunuz varsa lütfen düşünün. 10 dakika sonra tekrar sorabilirsiniz tabii.
+
+275
+01:00:10,431 --> 01:00:12,831
+Peki, bir 10 dakika ara verelim.
+
+276
+01:11:42,323 --> 01:11:43,963
+Evet, tekrar merhaba arkadaşlar.
+
+277
+01:11:51,636 --> 01:11:52,396
+Ne, hava an son?
+
+278
+01:12:00,051 --> 01:12:03,371
+İlk bölümle ilgili tekrar sos olmak isteyen var mı acaba?
+
+279
+01:12:47,764 --> 01:13:15,344
+Dersin ikinci bölümünde aslında üstünde duracağım tek bir konu var. Histogram of Oriented Gradients başlığı olacak şu. Diğer iki konuyu, Interest Point Detection ve Corner Detection konularını dahil etmeyeceğim. Bunların üzerinde hiç durmayacağım. Biz bunları, Future Engineering dediğimiz öz nitelik çıkarma işini,
+
+280
+01:13:15,743 --> 01:13:30,743
+Manüel olarak yaptığımızda, hep üzerinde tek tek düşündüğümüz konularda ama artık ihtiyaç yok. Ama Histogram of Oriented Gradients, kısaca HOG dediğimiz bu yöntem,
+
+281
+01:13:32,448 --> 01:13:47,448
+Çok bence güzel böyle şeyler içeriyor. Nasıl bir uygulama olduğunu görmenizi istiyorum. Çok kullandığımız bir Feature Extractor yöntemiydi.
+
+282
+01:13:48,659 --> 01:13:52,659
+İlk olarak, Human Detection için geliştirildi.
+
+283
+01:13:52,659 --> 01:13:54,659
+I will switch into English.
+
+284
+01:13:54,659 --> 01:14:04,659
+This is the histogram of oriented gradients and this feature extraction solution is...
+
+285
+01:14:05,332 --> 01:14:32,204
+Bu, bu
+
+286
+01:14:32,243 --> 01:14:58,384
+At the beginning it says, compute the centered horizontal and vertical gradients with no smoothing. Horizontal and vertical gradient means edges. Horizontal and vertical edges we will compute. But it says with no smoothing. You know in the last lecture.
+
+287
+01:14:58,576 --> 01:15:00,576
+Şimdi, birçok birçok yapıda,
+
+288
+01:15:00,576 --> 01:15:18,576
+birçok yapıda,
+
+289
+01:15:18,576 --> 01:15:20,576
+birçok yapıda.
+
+290
+01:15:20,576 --> 01:15:22,576
+İlk yapıda,
+
+291
+01:15:22,576 --> 01:15:23,243
+birçok yapıda,
+
+292
+01:15:23,252 --> 01:15:44,772
+Compete gradient orientation and magnitudes. You know we can calculate the gradient orientations. If we know the horizontal and vertical gradients, we can calculate the gradient orientation and also we can calculate the magnitude.
+
+293
+01:15:50,655 --> 01:16:09,636
+There is an example image size. It says that, for example, we have an image of 64 by 128 pixels image. This is an example image size.
+
+294
+01:16:14,068 --> 01:16:38,123
+Bu, bu
+
+295
+01:16:38,387 --> 01:16:45,467
+16 x 16 blocks of 50% overlaps.
+
+296
+01:16:47,067 --> 01:16:47,127
+Okay.
+
+297
+01:16:48,847 --> 01:16:57,567
+And here you can see a small calculation for the given image size.
+
+298
+01:16:58,167 --> 01:17:05,467
+If we use 16 x 16 blocks with 50% overlaps, it means we have
+
+299
+01:17:05,811 --> 01:17:07,931
+7 x 15
+
+300
+01:17:07,931 --> 01:17:33,811
+15
+
+301
+01:17:32,627 --> 01:17:34,627
+16x16.
+
+302
+01:17:36,327 --> 01:17:37,327
+Blocks.
+
+303
+01:17:39,327 --> 01:17:44,627
+And we will divide this block into 2x2 cells.
+
+304
+01:17:45,528 --> 01:17:50,028
+It means each cell will be 8x8.
+
+305
+01:17:51,028 --> 01:17:52,028
+Is that right?
+
+306
+01:17:52,427 --> 01:17:52,927
+Yeah.
+
+307
+01:17:53,627 --> 01:17:55,927
+We have 8x8 cells.
+
+308
+01:17:56,127 --> 01:17:59,127
+We call them as cells.
+
+309
+01:18:01,235 --> 01:18:10,055
+In Step 6, quantize the gradient orientation into 9 beams.
+
+310
+01:18:14,036 --> 01:18:40,036
+We have an orientation angle from 0 to 180. And we will divide this range into 9 beans. And for every 20 degrees, we will define a bean. And we will...
+
+311
+01:18:41,735 --> 01:18:43,735
+15
+
+312
+01:18:40,979 --> 01:19:06,347
+Bu, bu
+
+313
+01:19:06,420 --> 01:19:13,500
+İçin bir kısım var ve nekısım var.
+
+314
+01:19:13,500 --> 01:19:17,500
+Bu yüzden, bir kısım var.
+
+315
+01:19:17,500 --> 01:19:21,340
+Bir kısım var.
+
+316
+01:19:21,340 --> 01:19:27,340
+İçin bir kısım var.
+
+317
+01:19:27,340 --> 01:19:30,028
+3,780 kısım var.
+
+318
+01:19:58,452 --> 01:20:25,391
+Okay, we can use one-dimensional filter coefficients, or we can use Previt or Sobel filters to calculate the centered gradients of the image. This is a one-dimensional form of filters.
+
+319
+01:20:27,412 --> 01:20:54,016
+X'e y
+
+320
+01:20:54,015 --> 01:21:17,695
+Dimension X and Y, we can calculate the magnitude and we can calculate the orientation of each pixel in the image. Each pixel in the image we can calculate. And when the magnitude is high, it means you can see the white pixels on the image here.
+
+321
+01:21:17,952 --> 01:21:43,980
+Bu, bu
+
+322
+01:21:52,627 --> 01:22:02,627
+In Step 4 & 5, it says divide image into blocks and divide the blocks into cells.
+
+323
+01:22:02,627 --> 01:22:13,627
+Okay? Divide image into blocks, 16 by 16 blocks, the size of the blocks.
+
+324
+01:22:13,627 --> 01:22:20,523
+And we define the cell. You can see here.
+
+325
+01:22:20,948 --> 01:22:34,548
+Bu, red square represents the blocks, and the green blocks represent the cells.
+
+326
+01:22:34,548 --> 01:22:44,548
+In each block we have four cells, and if we have a...
+
+327
+01:22:46,644 --> 01:22:51,644
+64 x 128 image.
+
+328
+01:22:51,644 --> 01:23:07,644
+When we define 16 x 16 blocks with 50% overlap, we can generate 105 blocks.
+
+329
+01:23:13,300 --> 01:23:20,699
+2x2, ve 2x2, ve 1x2, ve 1x8, 8x8.
+
+330
+01:23:40,819 --> 01:23:43,819
+8x8 px,
+
+331
+01:23:43,819 --> 01:23:46,819
+we will, for each cell,
+
+332
+01:23:46,819 --> 01:23:52,819
+we will calculate the histogram of
+
+333
+01:23:52,819 --> 01:23:58,819
+oriented gradients
+
+334
+01:23:58,819 --> 01:24:02,819
+to generate this histogram.
+
+335
+01:24:03,699 --> 01:24:28,139
+Bu, bu
+
+336
+01:24:28,148 --> 01:24:30,747
+Ve neyin 9 biens.
+
+337
+01:24:30,747 --> 01:24:35,708
+Bu yüzden 20-degreye
+
+338
+01:24:35,708 --> 01:24:36,708
+Ranges.
+
+339
+01:24:56,307 --> 01:25:03,307
+You can see these beams here and the center of the beams.
+
+340
+01:25:03,307 --> 01:25:12,307
+For example, for this beam we have a center 10 degree, we have a center 30 degree.
+
+341
+01:25:12,307 --> 01:25:21,307
+These are the centers represented on the lower part in a histogram.
+
+342
+01:25:22,547 --> 01:25:39,884
+Bir şey var. Bu, bir şey var. Bu, bir şey var.
+
+343
+01:25:44,083 --> 01:26:08,460
+Bu, bu
+
+344
+01:26:11,699 --> 01:26:14,559
+Teta angle is 85 degree.
+
+345
+01:26:14,559 --> 01:26:26,699
+In this case, 85 degree means we have a value here, 85 degree.
+
+346
+01:26:26,699 --> 01:26:27,960
+And,
+
+347
+01:26:32,787 --> 01:26:59,019
+Yani, bu
+
+348
+01:26:59,315 --> 01:27:09,956
+If the theta angle is 85 degree, distance to the bean center 70 and 90 are 15 and 5 degrees.
+
+349
+01:27:10,575 --> 01:27:25,956
+Okay, that's why it says we should divide the watt into two beans, not only the...
+
+350
+01:27:28,467 --> 01:27:31,247
+90 derece.
+
+351
+01:27:31,247 --> 01:27:37,647
+We will divide this watt according to their weight.
+
+352
+01:27:38,487 --> 01:27:46,807
+And the weights are calculated according to their distance to the center points.
+
+353
+01:27:47,307 --> 01:27:54,688
+You can see here, if the theta angle is 85, it says the difference is
+
+354
+01:27:55,699 --> 01:28:03,739
+Bu, 70'e, 15'e, ve 50'e, ve 5'e.
+
+355
+01:28:15,859 --> 01:28:18,139
+Define Pixels Magnitude.
+
+356
+01:28:18,139 --> 01:28:42,579
+We will divide this magnitude into two beans and we will give it 75% to the nearest one, 90 degree and the
+
+357
+01:28:44,180 --> 01:29:05,000
+25% to the 70. Okay, this is 70, this is 90. We will define the, we will divide the magnitude, the amount of what is magnitude, we will divide it into two bins.
+
+358
+01:29:12,851 --> 01:29:17,171
+gradient orientations.
+
+359
+01:29:17,711 --> 01:29:21,791
+And we will obtain this graphic like this.
+
+360
+01:29:21,791 --> 01:29:24,032
+We will give the vote.
+
+361
+01:29:24,671 --> 01:29:25,971
+You can see here.
+
+362
+01:29:29,072 --> 01:29:32,152
+75% is here.
+
+363
+01:29:32,532 --> 01:29:37,072
+And 25% is here.
+
+364
+01:29:37,412 --> 01:29:39,912
+It is divided into two bins.
+
+365
+01:29:40,787 --> 01:29:45,003
+ve
+
+366
+01:29:49,268 --> 01:29:51,068
+Okay, that's the idea.
+
+367
+01:29:52,208 --> 01:30:05,948
+And when we calculate the gradient orientations, we need to normalize these histograms.
+
+368
+01:30:05,948 --> 01:30:10,487
+You can see here, this is the normalization part.
+
+369
+01:30:11,347 --> 01:30:13,948
+And it uses the...
+
+370
+01:30:16,724 --> 01:30:20,724
+Açık bir bölümde.
+
+371
+01:30:20,724 --> 01:30:22,724
+Bu bölümde,
+
+372
+01:30:22,724 --> 01:30:28,724
+bu bölümde,
+
+373
+01:30:28,724 --> 01:30:30,724
+çünkü,
+
+374
+01:30:30,724 --> 01:30:32,724
+her bir bölümde,
+
+375
+01:30:32,724 --> 01:30:44,328
+her bölümde,
+
+376
+01:30:41,908 --> 01:30:46,328
+total amount of this block.
+
+377
+01:30:47,728 --> 01:30:48,088
+Okay?
+
+378
+01:30:49,568 --> 01:30:51,688
+This is the normalization operation.
+
+379
+01:30:52,448 --> 01:30:53,328
+After that,
+
+380
+01:30:53,328 --> 01:30:55,208
+we can use
+
+381
+01:30:55,208 --> 01:30:56,328
+this
+
+382
+01:30:56,328 --> 01:31:00,828
+histogram,
+
+383
+01:31:01,768 --> 01:31:04,208
+concatenate the histograms.
+
+384
+01:31:04,207 --> 01:31:29,627
+As a feature vector, and we can use it to detect some human shapes in an image. This is a visualization here. There is a human in this way. When we look at the hawk features,
+
+385
+01:31:31,699 --> 01:31:39,460
+You can see the silhouette of the human, like this, actually.
+
+386
+01:31:40,460 --> 01:31:49,460
+By the way, in this article it says we can detect the human in an image.
+
+387
+01:31:49,460 --> 01:31:54,539
+For example, this is another example here.
+
+388
+01:31:56,219 --> 01:31:59,460
+It finds the...
+
+389
+01:32:24,083 --> 01:32:51,543
+Fikir, we can detect some different textures and objects in an image. It was used, actually. But the idea is very interesting. For example, in this part, that's why I need to give the subject
+
+390
+01:32:52,051 --> 01:32:56,844
+Bu kursa var.
+
+391
+01:33:03,604 --> 01:33:12,604
+Bu, cvpr article in 2005.
+
+392
+01:33:12,604 --> 01:33:20,604
+And it was a good solution in this time.
+
+393
+01:33:20,604 --> 01:33:26,604
+Hawk can represent a rough shape of an object.
+
+394
+01:33:27,188 --> 01:33:44,788
+As I said before, not only the human detection, we can use it for some other object detection operations. And we can use POC features and then we can use a classifier.
+
+395
+01:34:04,327 --> 01:34:11,148
+Bu örneğe alakalı bir örneğe alakalı.
+
+396
+01:34:01,268 --> 01:34:11,148
+I will skip this part, but I will give...
+
+397
+01:34:26,771 --> 01:34:49,932
+Okay. We have 14 weeks, you know, in this lecture, and this is the week six. And we finished the traditional computer vision solutions.
+
+398
+01:34:50,612 --> 01:34:59,772
+In the next part of the lecture, we will continue with the deep learning algorithms.
+
+399
+01:34:59,772 --> 01:35:10,971
+But in the traditional solutions, actually you can see here, we have an input image.
+
+400
+01:35:13,652 --> 01:35:20,311
+We have some feature extractors, like edge detectors.
+
+401
+01:35:24,148 --> 01:35:26,148
+Or, HOG Features.
+
+402
+01:35:29,148 --> 01:35:32,148
+It is called as Future Engineering.
+
+403
+01:35:39,923 --> 01:36:03,180
+ve ekstraktarın bir image kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullan
+
+404
+01:36:06,387 --> 01:36:07,948
+Or...
+
+405
+01:36:11,188 --> 01:36:12,987
+Segmentation process.
+
+406
+01:36:16,564 --> 01:36:25,724
+But today, we are using CNNs for feature extraction operation.
+
+407
+01:36:26,724 --> 01:36:38,144
+That's why instead of using this feature extraction or feature engineering part,
+
+408
+01:36:38,144 --> 01:36:43,704
+here we have convolutional neural networks.
+
+409
+01:36:44,724 --> 01:36:51,724
+Ve bu milyon ilerlerle
+
+410
+01:36:51,724 --> 01:36:56,724
+bu konvolution operasyon. Bu yüzden
+
+411
+01:36:56,724 --> 01:37:01,724
+çok kompleks bir şey var.
+
+412
+01:37:01,724 --> 01:37:07,724
+Bu da, bu de deep learning solutions
+
+413
+01:37:08,500 --> 01:37:18,299
+Bu konuyu örneklerle anlatacağım.
+
+414
+01:37:22,100 --> 01:37:23,819
+Neural Networks
+
+415
+01:37:30,739 --> 01:37:35,860
+We have many layers in this convolutional neural network.
+
+416
+01:37:36,500 --> 01:37:44,199
+And this CNN part of the deep learning solution generate very complex features.
+
+417
+01:37:45,420 --> 01:37:50,399
+By the way, we can get better performance in our application.
+
+418
+01:37:51,260 --> 01:37:52,300
+That's the idea.
+
+419
+01:37:53,760 --> 01:37:54,139
+Okay.
+
+420
+01:38:01,555 --> 01:38:19,175
+I will continue with the CNN and some other solutions in the next week. That's why I will stop here. If you have any questions, you can ask.
+
+421
+01:38:25,971 --> 01:38:41,652
+Soru sormak isterseniz lütfen çekinmeden sorabilirsiniz. Hani böyle boşluğa konuşuyor gibi olmayayım. Arada sizle soru sorun isterdim. Ya da chatten yazabilirsiniz.
+
+422
+01:38:46,804 --> 01:39:01,344
+Evet, az önce de söylediğim gibi ders 14 haftalık bir dersin ilk 6 haftasında geleneksel computer vision çözümlerinden bahsettik.
+
+423
+01:39:01,884 --> 01:39:06,623
+Geleneksel dediğime bakmayın, bazı şeylerin temel olarak bilinmesi gerekiyordu.
+
+424
+01:39:07,087 --> 01:39:22,907
+Bu edge detection yöntemleri, bir kenar bulma ve bu bulduğumuz edge'ler üzerinde yatay doğrultuda ya da dikey doğrultuda olan kenarların bulunması.
+
+425
+01:39:24,224 --> 01:39:44,684
+Bu, orientation dediğimiz yönün bulunması, bu kenarların yönünün bulunması gibi çözümler aslında her zaman karşımıza çıkacak ve bu temel konuları bilmeniz bence çok önemli. O yüzden ilk 6 haftayı bu konulara ayırdım. Biraz bunlardan bahsetmek istedim.
+
+426
+01:39:46,163 --> 01:40:04,443
+En son bahsetmiş olduğum Histogram of Oriented Gradients, Halk dediğim özelliklerde çok uzun yıllar aslında kullandığımız oldukça başarılı bir feature extractor diyebilirim.
+
+427
+01:40:08,243 --> 01:40:35,304
+Ne yapabiliyor? Convolutional Neural Networkler yapıyor. Çünkü Deep Learning Frameworklerinin içinde bir CNN katmanı var. CNN dediğimiz katman bir konvolüsyon katmanı aslında ve birden fazla konvolüsyon işlemi arka arkaya gerçekleştirildiği için
+
+428
+01:40:35,828 --> 01:40:48,828
+Ve çok farklı boyutta filtrelerle, farklı kat sayılarla filtreler kullanıldığı için çok daha kompleks öz nitelik çıkartabiliyoruz.
+
+429
+01:40:56,340 --> 01:41:08,780
+Düşüncelerimizin bir sınırı var. Bir görüntüde gördüğümüz kenarı, köşeyi, parlaklık farkını vs. bir nesneyi algılamak için kullanıyoruz.
+
+430
+01:41:08,780 --> 01:41:19,559
+Ama CNN dediğimiz çözüm bizim göremediğimiz başka karmaşık özellikleri de bulabiliyor.
+
+431
+01:41:22,804 --> 01:41:32,104
+Yapay sinir ağlarında ve bu derin öğrenme dediğimiz çok katmanlı yapılarda başarı onun için bu kadar yüksek çıkıyor.
+
+432
+01:41:33,384 --> 01:41:40,463
+Geleneksel yöntemlerle elde ettiğimiz performansın en az %10 fazlasını
+
+433
+01:41:40,863 --> 01:41:55,623
+Deep Learning ile elde edebiliyoruz. O yüzden artık bundan sonraki tüm çalışmalarda Object Detection için, basit bir Circle Detection vs. işlemleri için bile bir...
+
+434
+01:41:55,699 --> 01:42:05,699
+Derin öğrenme ağı tasarlayıp kullanabiliyoruz. Yani bunlar önemli bir çığır açtı diyebiliriz.
+
+435
+01:42:05,699 --> 01:42:14,359
+Tabi burada çokça görüntü ve input ile beslenmesi gerekiyor bu sistemlerin.
+
+436
+01:42:16,627 --> 01:42:36,347
+Veri miktarının artışı da aslında günümüzde artık herkesin sosyal medyada vesairede üretmiş olduğu veriler ile ihtiyacımız olan işaretli, annotated input image dediğimiz görüntüleri de daha kolay ulaşabiliyoruz.
+
+437
+01:42:36,347 --> 01:42:42,347
+Daha fazla sayıda görüntüyü sisteme eğitmek için verebiliyoruz. O nedenle...
+
+438
+01:42:43,347 --> 01:42:55,627
+Tüm bunlar aslında yapay zekada derin öğrenme algoritmalarını birdenbire çok ön plana çıkarmış oldu.
+
+439
+01:42:55,747 --> 01:42:58,547
+Ve bundan sonraki aşamada tabii bunlarla devam edeceğiz.
+
+440
+01:42:58,547 --> 01:43:09,627
+Ama klasik temel şeyleri de bilmemiz gerekiyordu. O yüzden bu konuları size ilk 6 hafta anlatmaya çalıştım.
+
+441
+01:43:11,347 --> 01:43:32,488
+İki hafta süresi var. Sanıyorum 1 Nisan'da teslimi vardı onun. İkinci ödev geliyor. İkinci ödev de Integral Differential Operator ile ilgili. Önümüzdeki hafta yapacağım derste onu anlatmaya çalışacağım. Önümüzdeki hafta 1 Nisan şakası yapayım size.
+
+442
+01:43:34,159 --> 01:43:40,159
+Şimdi [öğrenci] soru sormuş. Sınavda nasıl sorular çıkar?
+
+443
+01:43:41,159 --> 01:43:44,659
+Evet, klasik sınav yapıyoruz. Kod yazmıyoruz.
+
+444
+01:43:45,159 --> 01:43:58,659
+Yani derste anlattığım bir konvolüsyon işlemini, bir görüntü matrisi verip size bu görüntü matrisi üzerinde bu filtreyi kullanarak konvolüsyon işlemi yapsanız, output'u ne olurdu gibi soru sorabilirim.
+
+445
+01:43:58,996 --> 01:44:20,996
+Zaten önümüzdeki hafta derste bunları biraz tartışırız. Ama kesinlikle kod yazma olmayacak sınavda. Bunu söyleyebilirim. Basit görüntü matrisleri veririm. 5'e 5, 10'a 10'luk bir görüntü matrisi üzerinde şu yöntemi uygulayın diyebilirim. Yani bu tarz sorular sorabilirim.
+
+446
+01:44:22,416 --> 01:44:25,615
+Evet, başka dersle ilgili soru sormak istiyorsanız.
+
+447
+01:44:29,619 --> 01:44:34,199
+Peki, haftaya görüşmek üzere o zaman. Hoşçakalın.
+
+448
+01:44:37,079 --> 01:44:39,039
+Thank you Hüca. Ve güçmüş olsun.
+
+449
+01:44:39,940 --> 01:44:41,579
+Teşekkür ederim. Sağ olun.
