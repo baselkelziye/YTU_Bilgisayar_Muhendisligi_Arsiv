@@ -10,3 +10,4 @@
 | 12 | Güz | Hilal Tufan | [sube_12/](sube_12/) |
 | 24 | Güz | Metin Işıkoğlu | [sube_24/](sube_24/) |
 | 25 | Güz | Metin Işıkoğlu | [sube_25/](sube_25/) |
+| 26 | Güz | Metin Işıkoğlu | [sube_26/](sube_26/) |
