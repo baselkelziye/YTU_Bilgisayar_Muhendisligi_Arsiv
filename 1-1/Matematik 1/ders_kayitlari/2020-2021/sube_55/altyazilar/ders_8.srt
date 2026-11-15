@@ -1,0 +1,2015 @@
+1
+00:00:01,683 --> 00:00:02,764
+Okay, good morning.
+
+2
+00:00:10,484 --> 00:00:26,643
+Okay, so this is our last lesson of this weekday. And I said that today we will make only one hour lesson.
+
+3
+00:00:38,036 --> 00:00:42,615
+We start to see the derivation of the functions directly.
+
+4
+00:00:43,295 --> 00:00:49,216
+We see some rules and we see parametric equations and how can we find derivation of the parametric equations.
+
+5
+00:00:49,556 --> 00:00:53,056
+And also we start to see linearization.
+
+6
+00:00:53,936 --> 00:00:57,216
+And today I want to talk about...
+
+7
+00:00:57,216 --> 00:00:59,435
+One second, okay.
+
+8
+00:01:23,123 --> 00:01:30,524
+Evet, şimdi denerizasyon ve denerizasyon için bir soru var.
+
+9
+00:01:38,932 --> 00:01:50,132
+I'd say that if we have a complex function or your point is very problem point, you can use linearization to find the approximate value of this function at that point.
+
+10
+00:01:50,951 --> 00:01:57,432
+Instead of the functions video, we can take the value of the tangent line.
+
+11
+00:01:57,951 --> 00:01:59,951
+Okay, so it is called linearization.
+
+12
+00:02:00,691 --> 00:02:04,251
+And we see some linearization functions also yesterday.
+
+13
+00:02:06,004 --> 00:02:27,524
+And today, first of all, I want to talk about differential. Actually, you can use linearization and differential at the same time. Both of them will give the same result. But there is a little difference from linearization and differential. Let me look at here. Let y equals fx be a differentiable function. And here,
+
+14
+00:02:28,084 --> 00:02:36,944
+We have some concepts. Okay, this is our point. This is our integer point. And I want to find that what is the value of a plus dx?
+
+15
+00:02:37,824 --> 00:02:48,463
+Here, this value is the difference of the function. It is f a plus dx minus f a and it is called delta y.
+
+16
+00:02:50,463 --> 00:02:51,783
+This is
+
+17
+00:02:55,828 --> 00:03:12,228
+The other part in the line, it is delta L. This is delta L. And it comes from dy over dx. I know that at this point it is f' a.
+
+18
+00:03:23,955 --> 00:03:34,536
+This difference is given by f' a dx. This difference is given by delta y. We have four concepts, delta y, dy.
+
+19
+00:03:36,355 --> 00:03:46,716
+Here, this is also delta dx, and this is dx, and it is also delta x.
+
+20
+00:03:47,123 --> 00:03:52,024
+In your function and in your tangent line, this part, they are the same.
+
+21
+00:03:52,024 --> 00:03:58,443
+So, in the formula, I can take that dx and delta x are the same.
+
+22
+00:03:59,223 --> 00:04:05,804
+So, in the formula, dx, I will take delta x will be the same, but dy...
+
+23
+00:04:05,876 --> 00:04:17,096
+and delta y, they are not equal to each other, they are approximately equals to each other, because this is your error, okay? This is your error.
+
+24
+00:04:18,175 --> 00:04:33,096
+So, what is delta y? Delta y is f a plus dx, okay, plus minus fy, f a, sorry, this is delta y.
+
+25
+00:04:33,232 --> 00:04:56,872
+y, this will be approximately dy, it is f' a dx. So, if I want to find the difference in the function, what is the difference from the previous and the next function, the difference will be equals to f' x dx.
+
+26
+00:05:01,331 --> 00:05:02,711
+in the function
+
+27
+00:05:07,764 --> 00:05:21,963
+from a to a plus dx. Okay? If you want to find the difference only, this difference will be equals to f' a dx. Okay?
+
+28
+00:05:24,163 --> 00:05:29,184
+Let me show an example. Okay, let us look at this example.
+
+29
+00:05:38,163 --> 00:05:50,363
+Okay, let us look at this example. The radios are of a circle. Increases from A is 10 meter to 10.1 meter.
+
+30
+00:05:51,363 --> 00:06:02,663
+Use the A to estimate the increasing in the circle's area A. They are asking what is the difference in the area of a circle.
+
+31
+00:06:02,663 --> 00:06:05,483
+Okay, your radius is 1.
+
+32
+00:06:05,971 --> 00:06:34,971
+10.1
+
+33
+00:06:34,548 --> 00:06:38,028
+f' prime a dx.
+
+34
+00:06:38,567 --> 00:06:38,687
+Okay.
+
+35
+00:06:39,468 --> 00:06:41,148
+So, what is your f function?
+
+36
+00:06:42,388 --> 00:06:44,168
+Your f function is area.
+
+37
+00:06:46,848 --> 00:06:51,427
+What is area formula for a circle?
+
+38
+00:06:53,007 --> 00:06:54,687
+Area formülü neydi?
+
+39
+00:06:55,728 --> 00:06:58,788
+Bir çambe şeyin, dairenin alanı nasıl buluyorduk?
+
+40
+00:06:59,288 --> 00:07:01,427
+P, dkare.
+
+41
+00:07:04,531 --> 00:07:13,391
+But here I will write, ne yazalım, a demiş, re kare diyelim, şunu da re yapalım. Fonksiyonumuzu da re olarak tanımlıyordu.
+
+42
+00:07:15,911 --> 00:07:30,192
+Let us take f r, our function is p r square. They are asking, what is f' a product dx? a is your integer point. What is your integer point? It is 10.
+
+43
+00:07:31,552 --> 00:07:58,671
+First of all, I have to find what is f'r? 2pr. And they are asking what is f'r? It is 20pi. So this is 20pi. What is dx? dx, actually dx and delta x are the same, is the difference.
+
+44
+00:07:59,156 --> 00:08:25,156
+your end point minus your beginning point. This is your end point. Where are you? Where are you at last? And this is your beginning point. So I came to 10.1. I start with 10. So the difference will be the A will be 20 pi product.
+
+45
+00:08:25,588 --> 00:08:46,847
+10.1 minus 10, it will be 0.1, it will be 2 pi. So the difference in the area is 2 pi. They are not asking the previous one or the next one. But if you want to find, let us find, what is f10?
+
+46
+00:08:49,528 --> 00:08:52,688
+f10 is 100.
+
+47
+00:08:53,844 --> 00:09:06,403
+pi. The difference is 2 pi and it is also positive. It means that your new area will be for this point 100 pi.
+
+48
+00:09:06,403 --> 00:09:14,024
+There is an increasing 2 pi. It will be 102 pi.
+
+49
+00:09:14,580 --> 00:09:27,240
+But only they are asking the difference. What is it is increasing or decreasing? If it is positive, it means that it is increasing. But if the sign is negative, it means that it will decrease. Okay?
+
+50
+00:09:28,819 --> 00:09:35,080
+So, if they ask only the difference, differential will be more easy. Okay?
+
+51
+00:09:37,580 --> 00:09:39,299
+Soru da sadece
+
+52
+00:09:40,403 --> 00:09:46,004
+dx kısmı formülde, in the formula dx and delta x is the same.
+
+53
+00:09:46,844 --> 00:09:51,284
+The difference from the end point and the beginning point.
+
+54
+00:09:51,284 --> 00:09:55,884
+Okay, so your end point is 10.1, your beginning point is 10.
+
+55
+00:09:56,264 --> 00:09:59,224
+So the difference is 0.1.
+
+56
+00:10:01,043 --> 00:10:23,223
+Okey? Arkadaşlar, de ilk istediğimiz delta x de aynı şey. Aradaki fark. Yani siz nereden başladınız, nereye geldiniz? For example, if your radius is 10 and if you want to make 9.8, what is the x or delta x?
+
+57
+00:10:24,628 --> 00:10:33,228
+your end point is 9.8, your beginning point is 10, it will be minus 0.2.
+
+58
+00:10:35,168 --> 00:10:40,588
+Aradaki farka bakıyorsunuz. Son geldiğiniz noktadan ilk geldiğiniz noktayı çıkartıyorsunuz.
+
+59
+00:10:40,848 --> 00:10:45,068
+Bu pozitif de olabilir, negatif de olabilir. Önemli olan her zaman son eksi baş.
+
+60
+00:10:45,068 --> 00:10:48,668
+Bu aradaki sizin farkınızı gösteriyor.
+
+61
+00:10:52,371 --> 00:10:56,951
+Ok, let me make one more example, one second.
+
+62
+00:11:03,187 --> 00:11:03,727
+Okay.
+
+63
+00:11:04,907 --> 00:11:05,787
+One second.
+
+64
+00:11:41,748 --> 00:11:42,748
+ve süreklik, yöve saylandır.
+
+65
+00:11:42,748 --> 00:11:43,748
+Okay.
+
+66
+00:11:43,748 --> 00:11:54,748
+And our saylandırs H'hi is 5.
+
+67
+00:11:54,748 --> 00:11:56,748
+And the radius.
+
+68
+00:12:03,604 --> 00:12:14,304
+kare, çarpı, h yok mu? Olmaz. İki değişkenli fonksiyonlarda bu. Pardon. İki değişkenli fonksiyonlarda da günalleşme var da. Şöyle yapalım.
+
+69
+00:12:21,139 --> 00:12:24,500
+şey yapalım, şöyle yapalım, pardon. Bir de şöyle bir örnek yapalım.
+
+70
+00:12:28,100 --> 00:12:28,699
+Find
+
+71
+00:12:32,755 --> 00:12:34,124
+x kare artı 2x, f'
+
+72
+00:12:39,731 --> 00:12:42,231
+video of
+
+73
+00:12:49,460 --> 00:12:56,539
+1.1³, plus, 4, 1.1, minus 3.
+
+74
+00:12:57,300 --> 00:12:57,680
+Okay.
+
+75
+00:12:58,360 --> 00:12:59,580
+In the first way,
+
+76
+00:13:00,019 --> 00:13:03,440
+I will use linearization.
+
+77
+00:13:05,720 --> 00:13:06,440
+Okay.
+
+78
+00:13:06,740 --> 00:13:10,240
+And in the second way, I will use the differential.
+
+79
+00:13:10,620 --> 00:13:10,840
+Okay.
+
+80
+00:13:11,600 --> 00:13:16,340
+So let's see how can we use in two different ways.
+
+81
+00:13:16,340 --> 00:13:16,700
+Okay.
+
+82
+00:13:17,844 --> 00:13:20,644
+So, first of all, what is our linearization?
+
+83
+00:13:20,884 --> 00:13:25,104
+Firstly, you have to determine what is fx function and what is your point.
+
+84
+00:13:25,284 --> 00:13:26,864
+The point will be integer.
+
+85
+00:13:27,864 --> 00:13:28,164
+Okay?
+
+86
+00:13:31,988 --> 00:13:56,608
+So, Lx for this function will be... What is fx function? What is your a point? What can you say? What is point? What can I take for point? Ayni alabilirim buradan. Yes. a will be 1. What about the function? What can you select?
+
+87
+00:14:00,275 --> 00:14:18,455
+I can select s. Look at here. If you can cancel these points and if you write x, it will be 2x³ plus 4x minus 2x.
+
+88
+00:14:18,455 --> 00:14:24,255
+Okay. So, for linearization for this point, it will be f1.
+
+89
+00:14:27,155 --> 00:14:35,455
+If you look at your question, 1.1 will be approximately near to 1.
+
+90
+00:14:37,075 --> 00:14:41,515
+So I take 1. The point has to be integer.
+
+91
+00:14:42,475 --> 00:14:46,255
+O verdiği noktaya en yakın olan tam sayı alıyorsunuz.
+
+92
+00:14:46,655 --> 00:14:50,055
+So I will have f'1 x-1.
+
+93
+00:14:50,155 --> 00:14:53,735
+This is our linearization function for this function and for this point.
+
+94
+00:14:54,292 --> 00:15:21,512
+Okay, let us see, what is f1 here? 2 plus 4, 6 minus 3, it will be 3. After that, I have to find f' x firstly. It is 6x² plus 4. And what is f' 1? f' 1 will be 10. Okay, this is 10.
+
+95
+00:15:23,796 --> 00:15:33,156
+So, our linearization function will be 3 plus 10 x minus 1.
+
+96
+00:15:33,816 --> 00:15:38,475
+This is our linearization function and please don't open your parenthesis.
+
+97
+00:15:39,156 --> 00:15:46,635
+Okay, it means that near 1, the linearization function and our fx function have similar solutions.
+
+98
+00:15:46,635 --> 00:15:50,436
+Now, I want to find f 1.1.
+
+99
+00:15:50,899 --> 00:15:56,060
+f' 1.1 is approximately equals to L' 1.1.
+
+100
+00:15:56,860 --> 00:16:05,180
+And it is 3 plus 10, 1.1 minus 1.
+
+101
+00:16:05,899 --> 00:16:12,980
+So it is 3 plus 10, product 0.1.
+
+102
+00:16:12,980 --> 00:16:17,899
+It is only try to say to be dirt.
+
+103
+00:16:20,724 --> 00:16:32,043
+iş yapmadıyız. Evet. Yandışı. Evet. Yandışı. Evet. So, our approximate value for this function is 4.
+
+104
+00:16:32,764 --> 00:16:36,844
+Now, here, I want to use differential. You can use differential also.
+
+105
+00:16:38,303 --> 00:16:39,104
+In the differential,
+
+106
+00:16:48,403 --> 00:17:05,264
+In the differential, our approximate value will be, if I want to find a plus dx, this is your point, it will be approximately equals to f'a plus dy.
+
+107
+00:17:05,264 --> 00:17:08,364
+What is dy? dy is the difference.
+
+108
+00:17:08,980 --> 00:17:22,140
+First, let us find dy. I said that in the previous part dy is f'a dx. Also, this is delta x because they are the same.
+
+109
+00:17:22,860 --> 00:17:33,920
+What is f? We say that our f function is this, our a is this. So what is f'a? We find that f'1 is 10.
+
+110
+00:17:36,756 --> 00:17:38,956
+R point is 1.1 ve R p'
+
+111
+00:17:38,956 --> 00:17:40,696
+1.1 ve R p'
+
+112
+00:17:40,696 --> 00:17:41,696
+1.1.
+
+113
+00:17:41,696 --> 00:17:43,696
+So, the difference is 1.
+
+114
+00:17:43,696 --> 00:17:51,256
+It means that x positive, it increases 1.
+
+115
+00:17:51,256 --> 00:17:54,256
+What is your f'a point?
+
+116
+00:17:54,256 --> 00:17:55,256
+What is f'1?
+
+117
+00:17:55,256 --> 00:17:56,756
+F1 is 3.
+
+118
+00:17:57,076 --> 00:18:09,416
+So, we can say that if I want to find f1.1, it is approximately equals to f1 is 3 plus dy is 1. So, it is 4.
+
+119
+00:18:11,195 --> 00:18:24,236
+First of all, you will find the difference. Our difference is 1 and it is positive. It means that it is increasing. What is your beginning function? f1 is 3.
+
+120
+00:18:24,915 --> 00:18:31,855
+if I add 1, the result will be 4. You can use both of them, but in test, you can use which you want.
+
+121
+00:18:32,355 --> 00:18:40,036
+If they ask the approximate value, linearization is more suitable, but if they ask what is the difference in the function,
+
+122
+00:18:40,315 --> 00:18:44,235
+differential will be convenient for you.
+
+123
+00:18:44,235 --> 00:18:44,655
+Okay?
+
+124
+00:18:45,895 --> 00:18:48,912
+Bakın, differentialde biz burada...
+
+125
+00:18:48,912 --> 00:18:53,912
+farkı önce buluyoruz. Dinerleştirmede direkt yenisini buluyoruz.
+
+126
+00:19:07,155 --> 00:19:10,155
+x eksi 1, x eksi 1'deki 1
+
+127
+00:19:17,076 --> 00:19:17,796
+Bir saniye.
+
+128
+00:19:18,996 --> 00:19:21,215
+İngilizce sorusunu anlamaya çalıştım hocam.
+
+129
+00:19:21,316 --> 00:19:25,756
+x eksi 1'deki 1, a 1 olduğu için 1 değil mi?
+
+130
+00:19:25,836 --> 00:19:26,556
+Evet, evet.
+
+131
+00:19:27,316 --> 00:19:30,456
+Evet, a 1 olduğu için öyle. Başka bir soru daha çözeyim isterseniz.
+
+132
+00:19:31,376 --> 00:19:31,896
+Okay.
+
+133
+00:19:32,596 --> 00:19:34,936
+So let us look at the second part again.
+
+134
+00:19:36,056 --> 00:19:39,895
+In the differential, actually, first they will find dy.
+
+135
+00:19:40,395 --> 00:19:41,096
+What is dy?
+
+136
+00:19:41,256 --> 00:19:42,456
+Dy is the difference.
+
+137
+00:19:42,847 --> 00:19:45,448
+It is f' a dx. Okay.
+
+138
+00:19:46,788 --> 00:19:52,288
+What is f' r point is 1? I will find f' 1 product dx.
+
+139
+00:19:53,127 --> 00:19:56,248
+Actually, dx and talt x is the same. What is that?
+
+140
+00:19:56,728 --> 00:20:02,087
+It is the difference. Your end point is 1.1. Your beginning point is 1.
+
+141
+00:20:02,468 --> 00:20:04,728
+So what is f' 1? It is 10.
+
+142
+00:20:05,039 --> 00:20:27,539
+What is the difference? Difference is 0.1. The result will be 1. So it means that when you come from 1 to 1.1, okay, when you come from 1.1, comma 1, your function is increasing 1 value.
+
+143
+00:20:27,539 --> 00:20:30,799
+What is your beginning function? What is f1?
+
+144
+00:20:32,147 --> 00:20:40,488
+f1 is 10, and it increased 1 point, so your new result will be, pardon, only 3 olacak.
+
+145
+00:20:44,819 --> 00:20:46,819
+F1, E3,
+
+146
+00:20:55,220 --> 00:21:21,079
+f'1 is 3. It increase 1, so your new point will be 4. So firstly, we find the difference. And if you want to find the new value, 1.1, it will be approximately f'1 and dy. f'1 is 3. We find dy is 1, so it will be 4. Okay?
+
+147
+00:21:21,587 --> 00:21:23,248
+Let me make another example.
+
+148
+00:21:25,327 --> 00:21:27,028
+Yes, yes, we will solve.
+
+149
+00:21:27,447 --> 00:21:31,508
+But after that, before that, I want you to solve all these questions.
+
+150
+00:21:32,607 --> 00:21:35,067
+O testi özellikle sizin çözmenizi istiyorum.
+
+151
+00:21:35,288 --> 00:21:37,048
+Şu an o konularda olmayanlar var.
+
+152
+00:21:37,147 --> 00:21:39,147
+Türev konularını da bugün anlatıyorum zaten.
+
+153
+00:21:39,847 --> 00:21:43,048
+Bugün anlattığımla beraber hepsini çözebilirsiniz büyük ihtimalle.
+
+154
+00:21:44,347 --> 00:21:47,367
+Okay, let me make one more example about differential.
+
+155
+00:21:47,367 --> 00:21:47,987
+Okay.
+
+156
+00:21:49,299 --> 00:21:51,699
+find the approximate value,
+
+157
+00:21:51,699 --> 00:21:55,459
+cube root,
+
+158
+00:21:55,459 --> 00:22:06,619
+8.1,
+
+159
+00:22:06,979 --> 00:22:09,879
+minus 2 product,
+
+160
+00:22:10,639 --> 00:22:11,739
+8.1,
+
+161
+00:22:11,739 --> 00:22:13,819
+plus 1,
+
+162
+00:22:13,819 --> 00:22:14,499
+okay.
+
+163
+00:22:15,008 --> 00:22:41,448
+Find the approximate video of this function. Okay. So, first of all, you have to determine your function and your point. Firstly, what is your point? What can you write? Yes, our point is 8. What about the function in the question if you cancel 8.1 and if you write x? Okay.
+
+164
+00:22:42,612 --> 00:22:52,632
+Your function will be cube root x minus 2x plus 1. This is your function, okay?
+
+165
+00:22:54,632 --> 00:23:07,731
+Now, firstly, let us use linearization. In the linearization, our function, linearization function will be f8.
+
+166
+00:23:10,036 --> 00:23:19,336
+plus f' prime 8 x minus 8. Bunu kafadan yazdım. Sonuçları garip garip olabilir. Sorun değil.
+
+167
+00:23:20,076 --> 00:23:22,476
+Okey. Firstly, what is f' 8?
+
+168
+00:23:25,296 --> 00:23:30,435
+It will be 2 minus 2, 8, 16, artı 1.
+
+169
+00:23:31,796 --> 00:23:33,076
+Minus 30.
+
+170
+00:23:33,956 --> 00:23:34,456
+X, 18.
+
+171
+00:23:35,456 --> 00:23:36,096
+Okey.
+
+172
+00:23:37,299 --> 00:23:43,579
+16, aslında artı yapalım, fark etmez, artı yapalım, eksiyle uğraşmayalım.
+
+173
+00:23:45,159 --> 00:23:47,079
+16, 18, 19.
+
+174
+00:23:48,519 --> 00:23:51,139
+Okay, it is 19.
+
+175
+00:23:51,959 --> 00:23:55,499
+Now, what about derivation? Let us take derivation of the function.
+
+176
+00:23:57,499 --> 00:24:03,059
+If you look at this function, actually your function is x to the power 1 over 3.
+
+177
+00:24:04,084 --> 00:24:10,084
+And if I want to take derivation of this function, it will be, I will write the power here.
+
+178
+00:24:10,923 --> 00:24:14,683
+I will subtract from the power, it is minus 2 over 3.
+
+179
+00:24:16,064 --> 00:24:25,344
+This is our derivation, or you can think this function is 1 over 3 x squared, cube root.
+
+180
+00:24:26,344 --> 00:24:28,003
+This is your derivation.
+
+181
+00:24:29,364 --> 00:24:42,564
+So, our first terms derivation, 1 over 3, küpürüt x², and plus, this is our derivation.
+
+182
+00:24:43,204 --> 00:24:52,084
+Now, I have to write our point in the function. I will find f' 8, it will be 1 over 3.
+
+183
+00:24:54,516 --> 00:24:56,855
+2x, 4 olacak.
+
+184
+00:25:02,228 --> 00:25:02,728
+bastı.
+
+185
+00:25:06,675 --> 00:25:24,675
+F' 8 is 19, f' 8 is 25 over 12.
+
+186
+00:25:25,175 --> 00:25:31,615
+Now we can find our function. I want to find f' 8.1.
+
+187
+00:25:32,016 --> 00:25:36,796
+It will be approximately equals to L, 8.1.
+
+188
+00:25:37,516 --> 00:25:49,256
+It will be 19 plus 25 over 12, 8.1 minus 8.
+
+189
+00:25:49,556 --> 00:25:49,875
+Okay.
+
+190
+00:25:52,076 --> 00:25:53,996
+And you can find the result from here.
+
+191
+00:25:55,436 --> 00:25:56,556
+Bunu sonra bakarsınız.
+
+192
+00:25:56,855 --> 00:25:57,976
+This is the first way.
+
+193
+00:25:59,092 --> 00:26:14,972
+Okay, now in the second phase, let us find differential. In differential, first you will find what is the difference in the function. The difference in the function is f' a product dx. dx also means that that x.
+
+194
+00:26:16,432 --> 00:26:26,232
+So we find, we select that our function is this, our point is this. What is f' 8? We find f' 8 is 25 over 12.
+
+195
+00:26:27,859 --> 00:26:32,679
+What is the difference in the point? 8.1 minus 8.
+
+196
+00:26:33,459 --> 00:26:39,859
+Okay. So it will be 25 over 16. Product 0.1.
+
+197
+00:26:41,579 --> 00:26:49,379
+1 bölü 10. Şimdi kafamı da hesaplayamadım. İkinci dersim olduğu için biraz kafam gitti benim artık.
+
+198
+00:26:50,139 --> 00:26:54,959
+1 bölü 10 olduğu için 5'e bölersek 5 bölü 24.
+
+199
+00:26:56,884 --> 00:27:23,423
+Okay. The difference in the function is this. It is positive, so the function increase. So what is our new value? 8.1 will be approximately f8 and plus the difference. We find that f8 is 19. The difference in the function is 5 over 24.
+
+200
+00:27:23,935 --> 00:27:28,915
+So, this is your result, and these two results will be the same.
+
+201
+00:27:29,576 --> 00:27:32,155
+But the methods are different.
+
+202
+00:27:32,155 --> 00:27:32,596
+Okay?
+
+203
+00:27:33,135 --> 00:27:36,215
+In the financial, first we find the difference in the function.
+
+204
+00:27:36,375 --> 00:27:40,996
+After that, we add or subtract in the value of f.
+
+205
+00:27:41,576 --> 00:27:41,836
+Okay?
+
+206
+00:27:44,615 --> 00:27:50,155
+Okay, if you don't have any question, lastly, I want to talk about...
+
+207
+00:27:52,431 --> 00:27:53,431
+10.1
+
+208
+00:27:51,859 --> 00:27:53,859
+Bir second.
+
+209
+00:27:59,251 --> 00:28:02,572
+son olarak logaritmik türevden bahsedeceğimi söylemiştim.
+
+210
+00:28:23,635 --> 00:28:29,875
+Burada iki örneği çözmüşüm. Şimdi next week we will start from transcendental functions.
+
+211
+00:28:29,875 --> 00:28:42,755
+Okay. I don't know why I put these lectures or not. I'm not sure. I will look at. Okay. We will talk next week. We will talk about transcendental function. What is transcendental function?
+
+212
+00:28:43,571 --> 00:28:49,091
+The functions which doesn't derive from the polynomials.
+
+213
+00:28:49,091 --> 00:28:53,411
+What is that? Trigonometric functions, inverse trigonometric, hyperbolic.
+
+214
+00:28:53,872 --> 00:29:02,632
+inverse hyperbolic logaritm function, exponent function. All these functions are called transcendental functions.
+
+215
+00:29:02,632 --> 00:29:11,252
+Actually, we talked this function at the beginning of the semester in the domain. But in this part, we will talk about these functions in detail.
+
+216
+00:29:11,512 --> 00:29:21,132
+Okay? One second. This is derivation of logaritm. Aslında bunlardan bahsetmiştim ama haftaya şey yapacağım.
+
+217
+00:29:21,587 --> 00:29:24,948
+Şu an sadece logaritmik türevden bahsetmek istiyorum.
+
+218
+00:29:25,528 --> 00:29:25,708
+Okay.
+
+219
+00:29:27,048 --> 00:29:30,847
+Today only I want to talk about logaritmik differentiation.
+
+220
+00:29:31,248 --> 00:29:31,807
+What is it?
+
+221
+00:29:32,387 --> 00:29:40,928
+The derivative of positive functions given by formula that involves the product, co-alternates and powers can be found more quickly.
+
+222
+00:29:42,228 --> 00:29:47,708
+If you have a function and if your function is very complex, for example, like this.
+
+223
+00:29:48,180 --> 00:29:58,760
+If you can use the properties of the logarithm function, natural logarithm function, using this logarithm function, we can find the derivation more easily.
+
+224
+00:29:58,760 --> 00:30:01,800
+Let me show in the examples.
+
+225
+00:30:54,548 --> 00:31:20,948
+If our function is x square plus 1 product square root function x plus 1, x minus 1 over x cube plus 2 product x.
+
+226
+00:31:21,523 --> 00:31:31,523
+plus 3. Okay. And if they ask, what is the y' of this function, you can see that it is very difficult to find the derivation directly.
+
+227
+00:31:32,343 --> 00:31:42,843
+So, here, I will use the properties of ln function. What are they? The first one, I know that ln a plus ln b is ln a product b.
+
+228
+00:31:45,803 --> 00:31:46,884
+ln a
+
+229
+00:31:47,604 --> 00:31:51,204
+minus ln b will be ln a over b.
+
+230
+00:31:53,244 --> 00:31:58,104
+And ln a to the power b will be b ln a.
+
+231
+00:31:59,064 --> 00:32:01,684
+This is the main properties of ln function.
+
+232
+00:32:02,344 --> 00:32:07,244
+Okay, firstly, before the derivation, I want to take ln of left side and right side.
+
+233
+00:32:08,304 --> 00:32:13,224
+ln y will be ln this part.
+
+234
+00:32:13,224 --> 00:32:14,564
+Okay, I don't want to write.
+
+235
+00:32:15,604 --> 00:32:25,604
+So, using this property, what is that? Especially this one, this one, and also this one.
+
+236
+00:32:26,683 --> 00:32:36,963
+Because the other inverse also the same. If you have division or if you have product, okay, you can write these alarm functions separately.
+
+237
+00:32:39,084 --> 00:32:42,183
+Okay, so we can write that.
+
+238
+00:32:43,028 --> 00:32:46,367
+The first term is x square plus 1.
+
+239
+00:32:46,948 --> 00:32:54,587
+If I take ln, I will have ln x square plus 1.
+
+240
+00:32:55,988 --> 00:32:58,127
+Hatta şöyle yapalım. Bu soru için şu olmasın.
+
+241
+00:32:58,428 --> 00:33:01,107
+Tamam mı? Bir sonraki de böyle yapalım.
+
+242
+00:33:01,648 --> 00:33:03,339
+Kafamız karışıyorsun. Biraz basitlaştık.
+
+243
+00:33:05,428 --> 00:33:16,448
+There is a product here. Product means here. Product means here. It is plus. So I will write plus ln x plus 1.
+
+244
+00:33:18,128 --> 00:33:30,948
+Here I have another product. It means that plus ln x minus 1. If you look at your denominator division here, division means minus.
+
+245
+00:33:31,935 --> 00:33:42,236
+I will take ln of this function, but the sign will be minus ln x cubed plus 2.
+
+246
+00:33:43,675 --> 00:33:51,155
+And also for the last term, it is in the division, it means that the sign is minus ln x plus 3.
+
+247
+00:33:51,675 --> 00:33:55,016
+Firstly, I take ln of left side and right side.
+
+248
+00:33:55,596 --> 00:33:56,915
+Did you understand here?
+
+249
+00:34:01,364 --> 00:34:09,844
+I take left side and right side. Product means plus between them. If you have a division, the sign will be negative.
+
+250
+00:34:10,304 --> 00:34:18,564
+So, the sign for all these functions will be positive. Because of the division, the sign of this part will be negative.
+
+251
+00:34:18,564 --> 00:34:20,784
+Now, from here, I can take derivation.
+
+252
+00:34:21,523 --> 00:34:29,764
+Elen, y is your dependent variable. I write inside here and I will take derivation of here, y' over y.
+
+253
+00:34:30,344 --> 00:34:40,543
+Now let us take derivation of the right side. It will be x squared plus 1. Here I will take derivation of x squared plus 1. It is 2x.
+
+254
+00:34:40,543 --> 00:34:41,823
+Plus.
+
+255
+00:34:42,835 --> 00:35:06,135
+I have lnx plus 1, I will write x plus 1 here, and I will take derivation of x plus 1 is 1, plus x minus 1, the derivation of x minus 1 is 1, minus, I have x cubed plus 2, and I will write derivation of x cubed plus 2 is 3x squared.
+
+256
+00:35:08,628 --> 00:35:11,508
+Minus, I will have x plus 3 here.
+
+257
+00:35:12,748 --> 00:35:15,148
+And derivation of x plus 3 is 1.
+
+258
+00:35:15,528 --> 00:35:17,387
+This is your derivation.
+
+259
+00:35:17,387 --> 00:35:23,648
+Lastly, you will write y here.
+
+260
+00:35:28,724 --> 00:35:46,564
+if you cancel y and if you write y here, it will be x kare plus 1, x plus 1, x minus 1 over, x cube plus 2, x plus 3.
+
+261
+00:35:47,624 --> 00:35:51,024
+This is the logaritmic differentiation, okay?
+
+262
+00:35:54,099 --> 00:35:58,340
+Let me give another example. Let us look at this here.
+
+263
+00:36:04,275 --> 00:36:11,195
+find y' if your function is this. The last part you didn't understand.
+
+264
+00:36:14,996 --> 00:36:41,016
+Okay, you are talking about this one. On the left side, we have y' over y is this. Okay, but if I want to find y' alone, I have to write y on the right side. Okay, so I cancel y here and I write here as the product of the other one. Let me make another example you will see from here.
+
+265
+00:36:41,556 --> 00:37:01,596
+Okay, first of all, you have to write your, you have to take ln of left side and right side. So on the left side, I have ln y. What about here? The first function is x squared plus 1. I will write ln x squared plus 1. It is in your numerator, the sign will be positive.
+
+266
+00:37:03,519 --> 00:37:12,939
+I have a power of 1 over 2. It means that if you have a power, you can write 1 over 2 outside of the L'am function. It is like this.
+
+267
+00:37:15,699 --> 00:37:16,300
+Okay.
+
+268
+00:37:17,479 --> 00:37:23,279
+Firstly, I can write the power of the function as outside. It will be like this.
+
+269
+00:37:27,188 --> 00:37:36,387
+So, it will be 1 over 2 ln x plus 3. This term is in your denominator, so the sign will be negative ln x plus x minus 1.
+
+270
+00:37:36,948 --> 00:37:40,828
+Now, from here, I will take derivation of left side and right side.
+
+271
+00:37:41,508 --> 00:37:45,307
+Here, derivation will be derivation inside over inside.
+
+272
+00:37:46,771 --> 00:37:52,051
+You will take your function and you will write in your denominator, it is x squared plus 1.
+
+273
+00:37:52,051 --> 00:38:01,171
+And here you will write derivation of x squared plus 1 is 2x plus 1 over 2 comes from here.
+
+274
+00:38:01,572 --> 00:38:04,771
+Your function is x plus 3, you will write here.
+
+275
+00:38:05,572 --> 00:38:11,411
+And here I will take derivation of x plus 3 is 1 minus
+
+276
+00:38:12,052 --> 00:38:34,771
+I will write inside of the alarm function x minus 1 here. And the derivation of x minus 1 is 1. So I find y prime over y is this. But I want to find y prime. What is it? I will product left side and right side with y. And here I can cancel. So what is y prime?
+
+277
+00:38:35,380 --> 00:38:43,440
+This function product y. What is y? Why is this? I write y is also here. This is your derivation.
+
+278
+00:38:45,940 --> 00:38:58,559
+Okay, why do we use this function, this logarithmic differentiation? Actually, you can see two different cases. The first one is this. If you have very different polynomial types, you can use this one.
+
+279
+00:38:58,996 --> 00:39:03,496
+But especially we use logaritmic differentiation in this case.
+
+280
+00:39:03,496 --> 00:39:05,415
+First, let me write one thing here.
+
+281
+00:39:08,884 --> 00:39:18,463
+If you have a number and if you want to have a function of u, I know derivation of this function a to the power u product u prime.
+
+282
+00:39:19,364 --> 00:39:30,143
+Okay. If you have a function and if you have a number, for example, u cubed, the derivation of it is 3u squared u prime.
+
+283
+00:39:35,728 --> 00:39:40,407
+To the power function, we don't know derivation.
+
+284
+00:39:41,407 --> 00:39:47,788
+Ne biliyoruz? Sayı üzeri fonksiyonun türevini biliyoruz.
+
+285
+00:39:47,907 --> 00:39:53,127
+Fonksiyon üzeri sayıya biliyoruz ama fonksiyon üzeri fonksiyonu bilmiyoruz.
+
+286
+00:39:53,427 --> 00:39:54,167
+Formülümüz yok.
+
+287
+00:39:54,167 --> 00:39:58,927
+We don't have any formula about functions to the power and other functions.
+
+288
+00:40:00,000 --> 00:40:07,460
+We will use logaritmic differentiation. Let me see some, this question, okay? Especially you will see this kind of question.
+
+289
+00:40:08,279 --> 00:40:20,940
+If your function is x to the power x squared, here x is not zero, find y''. Firstly, we will take ln of left side and right side, ln.
+
+290
+00:40:21,907 --> 00:40:34,228
+x to the power x square. I said that if you have a power, you can write as a coefficient outside, it will be x square product ln x. Okay?
+
+291
+00:40:35,608 --> 00:40:41,907
+Now, from here, we can take derivation. The left side functions derivation is y prime over y.
+
+292
+00:40:42,387 --> 00:40:57,168
+Here I have two different functions and there is a product here. Derivation of x squared is 2x, product the second function, plus the first function, product derivation of lnx is 1 over x.
+
+293
+00:40:57,847 --> 00:41:06,028
+So it will be 2x lnx plus x.
+
+294
+00:41:06,804 --> 00:41:19,764
+And lastly, if I want to find y'', y'', y'', will be this derivation here, product y. What is y? y is x to the power x squared. Okay?
+
+295
+00:41:23,380 --> 00:41:24,364
+ok.
+
+296
+00:41:29,172 --> 00:41:42,012
+Okay, we have another question. Let us look at this example. If your function is this, what is y'e? Okay, first of all, I will take left side and right side as ln.
+
+297
+00:41:43,612 --> 00:41:53,331
+Here I have a cube root. Actually, it means that it is like this, 1 over 3. So I can write 1 over 3 outside. Now let us look at our function.
+
+298
+00:41:53,844 --> 00:42:19,364
+x, the ln function will be lnx. Here I hear product, it means that it is positive. The other one is lnx plus 1. I have a product, it means that it is positive. x minus 2. Now, these two terms are in your denominator, it means that the sign will be negative, negative. Negative x squared plus 1, negative ln2x plus 3. From here, we can take derivation.
+
+299
+00:42:19,731 --> 00:42:29,951
+What is derivation of left side? It is y prime over y. And let us take what is derivation of this function? 1 over x.
+
+300
+00:42:30,791 --> 00:42:38,692
+Derivation of this function is 1 over x plus 1. Derivation of this function 1 over x minus 2.
+
+301
+00:42:39,831 --> 00:42:45,871
+Here, it will be x squared plus 1. And derivation will be 2x.
+
+302
+00:42:46,547 --> 00:42:50,007
+And here it is 2x plus 3.
+
+303
+00:42:51,607 --> 00:42:54,027
+And derivation of this function is 2.
+
+304
+00:42:54,707 --> 00:43:00,227
+And lastly, you will cancel y turn and you will write on the right side.
+
+305
+00:43:00,227 --> 00:43:02,367
+And this is our derivation.
+
+306
+00:43:03,627 --> 00:43:03,947
+Okay.
+
+307
+00:43:10,036 --> 00:43:19,196
+Niye? Çünkü burada daha önce olan fonksiyonlar da şöyleydi. Yani şöyle bildiğimiz formülleri uyguluyorduk.
+
+308
+00:43:19,196 --> 00:43:23,196
+For example, in the previous lesson yesterday,
+
+309
+00:43:23,699 --> 00:43:28,419
+We see some functions and we know formula for all these functions.
+
+310
+00:43:28,619 --> 00:43:32,819
+For example, a to the power x squared, blah, blah, blah, blah.
+
+311
+00:43:32,819 --> 00:43:37,319
+Okay, because you know formula for these derivations.
+
+312
+00:43:37,519 --> 00:43:46,519
+But in here, I don't have any formula because your function is in the form of fx to the power gx.
+
+313
+00:43:47,251 --> 00:43:54,451
+Or, your function is very, very complex to find the derivation. In that case, we will use logarithmic differentiation.
+
+314
+00:43:55,271 --> 00:44:11,091
+Let me write another example. Okay. Find the tangent line. You can see this kind of question in the exam. Okay.
+
+315
+00:44:15,092 --> 00:44:17,092
+fx is
+
+316
+00:44:17,092 --> 00:44:21,172
+neyi usuruyorduk biz?
+
+317
+00:44:21,931 --> 00:44:25,391
+for example, x to the power tangent x
+
+318
+00:44:25,391 --> 00:44:25,791
+ok
+
+319
+00:44:25,791 --> 00:44:30,992
+x
+
+320
+00:44:30,992 --> 00:44:35,891
+for example, power to
+
+321
+00:44:35,891 --> 00:44:37,152
+bunu biraz kafadan attım
+
+322
+00:44:37,152 --> 00:44:40,092
+sinüs bölükosinüs
+
+323
+00:44:41,619 --> 00:45:01,099
+tangent'ın pi virüsü. x kare artı 2x, f'
+
+324
+00:45:02,963 --> 00:45:12,144
+So, they are asking the tangent line. Firstly, I have to find f'', but our function is in the form of fx to the power gx.
+
+325
+00:45:12,144 --> 00:45:15,864
+So, firstly, I have to take ln of left side and right side.
+
+326
+00:45:17,103 --> 00:45:29,124
+ln fx will be ln x to the power tangent x, and I said that I can write tangent x as the coefficient of outside.
+
+327
+00:45:29,715 --> 00:45:35,415
+It is the same, tanjant x, product ln x.
+
+328
+00:45:35,755 --> 00:45:39,455
+Now, let us take derivation of left side and right side.
+
+329
+00:45:40,095 --> 00:45:42,995
+Derivation of this function over inside.
+
+330
+00:45:45,655 --> 00:45:50,675
+We will be on the right side. Derivation of tanjant x is second square x.
+
+331
+00:45:52,795 --> 00:45:54,535
+Product, the second function.
+
+332
+00:45:55,411 --> 00:46:01,771
+plus the first function product, the second function's derivation is 1 over x.
+
+333
+00:46:02,231 --> 00:46:02,532
+Okay?
+
+334
+00:46:03,891 --> 00:46:11,092
+Now here, actually, you don't need to write f'x alone because only I need to find what is,
+
+335
+00:46:11,092 --> 00:46:18,751
+what is your tangent line y minus mt x minus phi.
+
+336
+00:46:20,411 --> 00:46:22,331
+Firstly, what is f'y?
+
+337
+00:46:22,963 --> 00:46:28,244
+Let us see pi to the power tangent pi.
+
+338
+00:46:30,104 --> 00:46:36,824
+Tangent pi nedir? Sinüs pi sıfır bölü birden dolayı sıfır.
+
+339
+00:46:37,564 --> 00:46:39,943
+Pi to the power 0 is 1.
+
+340
+00:46:41,144 --> 00:46:45,884
+So it will be 1 here.
+
+341
+00:46:46,544 --> 00:46:47,224
+This is 1.
+
+342
+00:46:48,884 --> 00:46:50,324
+Because this is f pi.
+
+343
+00:46:51,123 --> 00:47:17,123
+What about mt? mt is the slope x equals pi. So let us look at here. I will write pi in R's result. pi, pi, pi, pi, pi, pi. I find that f pi is
+
+344
+00:47:17,876 --> 00:47:19,516
+I find that it is 1.
+
+345
+00:47:21,275 --> 00:47:23,816
+But I don't know f' pi.
+
+346
+00:47:24,215 --> 00:47:25,916
+We are looking for this one.
+
+347
+00:47:26,596 --> 00:47:27,876
+Second square pi.
+
+348
+00:47:28,536 --> 00:47:30,516
+Second is 1 over cosine.
+
+349
+00:47:30,695 --> 00:47:32,296
+Cosine pi is minus 1.
+
+350
+00:47:32,496 --> 00:47:33,735
+But it will be square.
+
+351
+00:47:33,996 --> 00:47:34,976
+It will be 1.
+
+352
+00:47:36,775 --> 00:47:38,356
+Product ln pi.
+
+353
+00:47:39,956 --> 00:47:41,876
+Tencent pi is 0.
+
+354
+00:47:43,556 --> 00:47:45,235
+So this is ln pi.
+
+355
+00:47:46,708 --> 00:47:54,108
+What about our tangent line? y minus 1 will be f' pi we find is ln pi.
+
+356
+00:47:56,428 --> 00:47:58,388
+Product x minus pi.
+
+357
+00:48:00,008 --> 00:48:01,668
+This is our tangent line.
+
+358
+00:48:02,028 --> 00:48:02,128
+Okay.
+
+359
+00:48:04,888 --> 00:48:08,488
+In here, only I need to find f' 1.
+
+360
+00:48:08,768 --> 00:48:11,888
+So here you don't need to write fx on the right side.
+
+361
+00:48:12,528 --> 00:48:12,768
+Okay.
+
+362
+00:48:14,324 --> 00:48:23,604
+if they don't give any point, okay, you have to write fx on the right side, but if you don't, if they don't ask anything, you don't need, okay?
+
+363
+00:48:30,356 --> 00:48:31,936
+soru var mıydı bir de ona bakalım.
+
+364
+00:48:36,052 --> 00:48:39,192
+For example, let us look at this one.
+
+365
+00:48:40,132 --> 00:48:42,072
+Hatta şöyle kare yazayım bir saniye.
+
+366
+00:48:44,452 --> 00:48:48,132
+They are asking if our function is
+
+367
+00:48:48,132 --> 00:48:50,812
+tangent
+
+368
+00:48:50,812 --> 00:48:53,652
+x over 2
+
+369
+00:48:53,652 --> 00:48:55,932
+to the power
+
+370
+00:48:55,932 --> 00:48:57,972
+x axioms
+
+371
+00:48:57,972 --> 00:49:00,932
+ama onu görmedik. Şöyle yapalım.
+
+372
+00:49:01,872 --> 00:49:02,832
+x olsun.
+
+373
+00:49:04,596 --> 00:49:08,335
+Tamam. Çünkü arkasını daha üzerinde durmadık o kadar.
+
+374
+00:49:08,335 --> 00:49:13,056
+Tamam. If this is here, what is f' rhyme?
+
+375
+00:49:16,628 --> 00:49:21,148
+xd, not the konular. What is this?
+
+376
+00:49:23,367 --> 00:49:36,407
+Okay, firstly, I have to take ln of left side and right side. ln fx will be ln tangent x over 2 to the power x.
+
+377
+00:49:37,068 --> 00:49:43,728
+And we said that if you have a power, you can write this power as a coefficient of ln here.
+
+378
+00:49:45,235 --> 00:49:58,675
+So, it will be x product ln, tangent x over 2. Okay. So, now we can take derivation left side and right side.
+
+379
+00:49:59,155 --> 00:50:11,235
+f' x over f x will be, derivation of x is 1, it will be ln, tangent,
+
+380
+00:50:12,083 --> 00:50:23,724
+x over 2 plus the first function product derivation of L'n function you will write inside. L'n tangent x over 2.
+
+381
+00:50:24,104 --> 00:50:30,124
+Now here I will take derivation of tangent x over 2. What is this?
+
+382
+00:50:32,204 --> 00:50:35,124
+Derivation of tangent function is second square.
+
+383
+00:50:36,211 --> 00:51:03,251
+x over 2, but I have to take also derivation inside, it is 1 over 2. So let me write here, it is 1 over 2, second square, x over 2 here. And finally, you will write fx on the right side, so f' x will be, let me write here,
+
+384
+00:51:04,403 --> 00:51:29,403
+ln tangent x over 2 plus x over 2, I write 1 over 2 outside, it is second square x over 2 over tangent x over 2 and also
+
+385
+00:51:30,036 --> 00:51:41,476
+fx function, what is fx function? Tanjant x over 2 to the power of x. Okay? This is our derivation.
+
+386
+00:51:46,099 --> 00:51:47,083
+A
+
+387
+00:51:55,539 --> 00:51:57,139
+Şuraya mı soruyorsun bir saniye?
+
+388
+00:52:00,139 --> 00:52:02,719
+1 bölü 2 şuradan geldi, şunu aşağıya indirdim.
+
+389
+00:52:05,840 --> 00:52:08,639
+Şuradaydı ya, bunu buraya yazdım.
+
+390
+00:52:11,259 --> 00:52:15,699
+O 1 bölü 2 nereden geldi dersen, şuranın türevinden geldi, içinin türevinden geldi.
+
+391
+00:52:16,739 --> 00:52:21,619
+Derivation of tangent in second square x and derivation in side will be 1 over 2.
+
+392
+00:52:27,315 --> 00:52:40,875
+Okay, one second, let me open your question. Okay. So the subject is this. Let me look at this sample. Which one? 10. Bakalım 10. soruda.
+
+393
+00:52:43,456 --> 00:52:54,875
+Ha, bu soru güzel bir soru. Okay, this question is related to chain rule which we learned yesterday. Okay, let me write here.
+
+394
+00:52:55,860 --> 00:52:58,260
+They are asking f'x.
+
+395
+00:53:00,500 --> 00:53:00,800
+Okay.
+
+396
+00:53:01,760 --> 00:53:07,420
+If you have a u square, what is derivation if u is a function? What is this?
+
+397
+00:53:08,040 --> 00:53:10,980
+2 u u' prime.
+
+398
+00:53:11,780 --> 00:53:14,360
+Bilmiyorum, belki de vermemiş olabilirim. Bakalım olmazsa.
+
+399
+00:53:14,360 --> 00:53:15,740
+What is this?
+
+400
+00:53:15,920 --> 00:53:21,920
+So it will be 2 f gx.
+
+401
+00:53:24,820 --> 00:53:26,940
+and g'x
+
+402
+00:53:26,940 --> 00:53:30,760
+2x
+
+403
+00:53:30,760 --> 00:53:34,300
+şimdi bakalım
+
+404
+00:53:34,300 --> 00:53:36,860
+yanlış yapmış olabilirim çünkü
+
+405
+00:53:36,860 --> 00:53:38,080
+bilmiyorum bakalım
+
+406
+00:53:38,080 --> 00:53:40,220
+f'2 will be 2
+
+407
+00:53:40,220 --> 00:53:42,180
+f
+
+408
+00:53:42,180 --> 00:53:44,460
+g'2
+
+409
+00:53:44,460 --> 00:53:48,660
+prime plus g'2
+
+410
+00:53:48,660 --> 00:53:52,260
+this is
+
+411
+00:53:53,588 --> 00:54:05,108
+minus 2, g2 is 2, f2 is 4.
+
+412
+00:54:09,108 --> 00:54:13,728
+So, bir saniye, bir saniye bir eksik yaptım.
+
+413
+00:54:14,175 --> 00:54:16,275
+Can I say something?
+
+414
+00:54:16,536 --> 00:54:17,056
+Yes.
+
+415
+00:54:17,775 --> 00:54:31,955
+So, technically, if we have, let's say, f squared, like, derivative of f squared is 2 times f times the derivative of f, but at the same time, we have a chain function.
+
+416
+00:54:31,955 --> 00:54:32,596
+Yes.
+
+417
+00:54:32,596 --> 00:54:40,815
+So, technically, f of g, the derivative of all of that, would be g prime.
+
+418
+00:54:41,199 --> 00:54:53,359
+x f, um, can you write? Can you write? F time of g, right? One second. If you want, you can write. Fraudseltüm, you are, okay.
+
+419
+00:54:55,500 --> 00:54:58,920
+Uh, yes. You can write, I think, now.
+
+420
+00:55:01,659 --> 00:55:04,539
+Can you write with your mouse?
+
+421
+00:55:09,268 --> 00:55:09,987
+[öğrenci]-Türme.
+
+422
+00:55:11,648 --> 00:55:12,728
+No, I couldn't.
+
+423
+00:55:13,028 --> 00:55:13,668
+Ah, okay.
+
+424
+00:55:13,967 --> 00:55:17,907
+Okay, let me write.
+
+425
+00:55:17,907 --> 00:55:20,648
+I will say them and if you can write them.
+
+426
+00:55:20,648 --> 00:55:23,608
+So, F'
+
+427
+00:55:23,987 --> 00:55:24,548
+of X
+
+428
+00:55:24,548 --> 00:55:25,768
+equals
+
+429
+00:55:25,768 --> 00:55:28,568
+2 times
+
+430
+00:55:28,568 --> 00:55:31,268
+F
+
+431
+00:55:31,268 --> 00:55:32,188
+of G
+
+432
+00:55:32,188 --> 00:55:34,688
+of X
+
+433
+00:55:35,603 --> 00:55:36,603
+Yes, this one.
+
+434
+00:55:36,603 --> 00:55:37,103
+Times.
+
+435
+00:55:37,103 --> 00:55:38,103
+Yes.
+
+436
+00:55:38,103 --> 00:55:39,803
+f' prime of gx.
+
+437
+00:55:39,803 --> 00:55:40,803
+Yes.
+
+438
+00:55:40,803 --> 00:55:41,803
+Times.
+
+439
+00:55:41,803 --> 00:55:43,803
+Times g prime.
+
+440
+00:55:43,803 --> 00:55:44,803
+g prime x.
+
+441
+00:55:44,803 --> 00:55:45,803
+Yes, this is true.
+
+442
+00:55:45,803 --> 00:55:52,803
+If you do all the math, it would be, I think, 80 or negative 80, which is, we don't have that option.
+
+443
+00:55:52,803 --> 00:55:56,803
+So, I will write 2 here.
+
+444
+00:55:56,803 --> 00:55:58,803
+Let me look at here.
+
+445
+00:55:58,803 --> 00:56:02,803
+If I want to find 2, I will write 2.
+
+446
+00:56:04,275 --> 00:56:07,235
+2, 2, 2, 2, 2, 2.
+
+447
+00:56:08,615 --> 00:56:14,536
+Okay, so, g' prime 2 is minus 2.
+
+448
+00:56:15,855 --> 00:56:21,036
+g' 2 is 2.
+
+449
+00:56:22,396 --> 00:56:26,056
+f' prime 2 is 5.
+
+450
+00:56:28,135 --> 00:56:30,876
+f' 2 is 4.
+
+451
+00:56:33,876 --> 00:56:39,316
+2, 4, 5, minus 2, probably, yes.
+
+452
+00:56:40,896 --> 00:56:47,516
+Yes, şöyle, 4, 16, 90, 80.
+
+453
+00:56:48,795 --> 00:56:53,416
+4, 4 x 16, 30, 80.
+
+454
+00:56:53,416 --> 00:56:56,735
+Yes, the result is not here.
+
+455
+00:56:58,036 --> 00:57:00,316
+Okay, okay, so...
+
+456
+00:57:01,396 --> 00:57:05,176
+Bu sorun, bu sorun, bu sorun, belki de kancılabilir.
+
+457
+00:57:05,656 --> 00:57:07,436
+Evet, bu sorun, 80.
+
+458
+00:57:08,556 --> 00:57:11,856
+Minus 80, çünkü burada, bu sorun, bu sorun.
+
+459
+00:57:12,496 --> 00:57:13,936
+Bu sorun, bu sorun.
+
+460
+00:57:13,936 --> 00:57:14,196
+Tamam.
+
+461
+00:57:18,416 --> 00:57:20,416
+No, ben de kancılabilirim.
+
+462
+00:57:20,536 --> 00:57:24,556
+Probabilirsiniz, bu sorun, bu sorun.
+
+463
+00:57:25,235 --> 00:57:35,056
+ok, I forgot to this one because I remember the questions result was minus 8, minus 16. I forgot to add this one.
+
+464
+00:57:35,635 --> 00:57:42,495
+ok, ok, this is question in the results. We have a problem. But the question is ok.
+
+465
+00:57:43,295 --> 00:57:43,935
+Efendim?
+
+466
+00:57:45,855 --> 00:57:50,576
+f' üzere türev g2'de biz onu fazla yazdık. Bundan dolayı olabilir.
+
+467
+00:57:51,596 --> 00:57:52,235
+Yok.
+
+468
+00:57:52,788 --> 00:57:58,987
+2f'i indirdik, f'in türevini aldık, içinin türevini aldık. Şöyle düşünün. Bak.
+
+469
+00:57:59,427 --> 00:58:09,847
+Yok hocam, orada zaten biz f'in türevini aldıktan sonra 2'den 1 çıkardık, f, g2 yazdık. Sonra f'in türevi g2'ye yazmamamız gerekiyor.
+
+470
+00:58:10,708 --> 00:58:13,168
+Hocam, can I say something? Yes, yes.
+
+471
+00:58:13,447 --> 00:58:29,447
+We can just have, if it's f squared of gx, we can just have it as f of gx times f of gx, and then if we do the derivative, it will be as if we have like u times v, the old derivative, and then we do it normally, and then we will have it the same way.
+
+472
+00:58:29,447 --> 00:58:36,447
+Yes. For example, if you want to take derivation of this function, what is that? It is 2f...
+
+473
+00:58:37,715 --> 00:58:58,395
+f' okay? If you have f' squared x, derivation will be 2f x, f' x. But in our question, we have a composite function also, it is not x. If it is not x, you will have the same thing. But
+
+474
+00:58:58,800 --> 00:59:10,140
+x won't be, it will be gx, so it will be f' gx, f' gx, and extra, you will have g' x.
+
+475
+00:59:10,140 --> 00:59:13,000
+In this question, composite function,
+
+476
+00:59:13,376 --> 00:59:24,096
+and chain rule are in one place. Bu sorunun içinde hem chain rule var hem composite function var. İkisinin beraber olduğu için bu şekilde olacak.
+
+477
+00:59:24,096 --> 00:59:37,916
+Eğer ki f kare x olsaydı soru türe buydu. İçindeki fonksiyon değilse x ise. Ama bu x değil gx gibi bir fonksiyon olduğu için o zaman ne yapıyorsunuz? Bunlar x olmuyor artık.
+
+478
+00:59:38,192 --> 00:59:54,032
+x oluyor. Bir de buradan ne gelecek? Aynı zamanda g'nin türevinin de gelmesi gerekiyor. Bu geçen dönemde sınavda sorduğumuz soruydu. Ben sadece sayılarını değiştirdim ama tabi burada yanlış yapmışım şeylerini, şıklarını ama soru böyle.
+
+479
+00:59:55,232 --> 01:00:00,332
+Ok? Do you have any question? Only in the results I made a mistake?
+
+480
+01:00:00,851 --> 01:00:03,132
+But the question we don't have any problem.
+
+481
+01:00:03,411 --> 01:00:03,672
+Okay.
+
+482
+01:00:04,192 --> 01:00:05,632
+So that's enough for today.
+
+483
+01:00:05,632 --> 01:00:07,652
+Please try to solve these questions.
+
+484
+01:00:07,811 --> 01:00:10,531
+For example, especially I like this question.
+
+485
+01:00:10,751 --> 01:00:16,591
+I write on, I write for example, you see only you didn't see.
+
+486
+01:00:16,731 --> 01:00:18,231
+Let me look at the questions.
+
+487
+01:00:18,411 --> 01:00:20,071
+You see all these questions.
+
+488
+01:00:21,291 --> 01:00:24,031
+You didn't see yet seven.
+
+489
+01:00:24,891 --> 01:00:25,291
+Okay.
+
+490
+01:00:25,940 --> 01:00:28,860
+ve bunları gördünüz.
+
+491
+01:00:30,240 --> 01:00:31,820
+Bunları nefsini gördük?
+
+492
+01:00:33,579 --> 01:00:39,139
+Bunu da gördük.
+
+493
+01:00:40,719 --> 01:00:42,539
+We see all of them.
+
+494
+01:00:43,119 --> 01:00:43,320
+Okay.
+
+495
+01:00:43,780 --> 01:00:45,099
+Only we didn't see seven.
+
+496
+01:00:45,659 --> 01:00:49,579
+But except seven, you can solve all these questions.
+
+497
+01:00:49,740 --> 01:00:52,300
+I will solve these questions on the application lesson.
+
+498
+01:00:52,420 --> 01:00:52,659
+Okay.
+
+499
+01:00:53,492 --> 01:01:13,712
+So, that's enough for today. Probably next week I can prepare another test about the other concepts. But maybe later. Okay? So, that's enough for today. Have a good weekend. Yes, tomorrow we don't have any lesson. Gerçi sizinle de bitti. Cevap anahtarı var ama cevap anahtarı vermiyorum. Şimdi önce bir ses çözün bakalım. Tamam.
+
+500
+01:01:15,552 --> 01:01:20,492
+Haftaya, bu bizim, haftaya, haftaya niye çayşamba?
+
+501
+01:01:21,012 --> 01:01:23,132
+şey, salı günü. Tamam.
+
+502
+01:01:23,931 --> 01:01:24,971
+Okey, see you, bye bye.
+
+503
+01:01:27,032 --> 01:01:27,652
+See you.
+
+504
+01:01:28,491 --> 01:01:34,991
+Hayır, başka ders yok. Bugün yedim gündü zaten. Akşamüstü bir de ders yok artık. Bugün bitirdim böyle. Tamam. Görüşürüz.

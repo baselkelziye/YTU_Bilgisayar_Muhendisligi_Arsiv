@@ -1,0 +1,2415 @@
+1
+00:00:03,636 --> 00:00:06,615
+Evet, inaindu. Herkese.
+
+2
+00:00:58,707 --> 00:00:59,347
+Good morning.
+
+3
+00:01:00,347 --> 00:01:07,128
+Okay, so today we will continue to solve some questions, but before that let me look at, okay?
+
+4
+00:01:08,628 --> 00:01:09,188
+[öğrenci].
+
+5
+00:01:13,715 --> 00:01:16,835
+şimdi, indik soruları bakacağım.
+
+6
+00:01:24,756 --> 00:01:26,635
+Good morning, good morning, good morning.
+
+7
+00:01:28,316 --> 00:01:31,915
+Evet, herkese günaydın. Başlayalım Martik dersimize.
+
+8
+00:01:32,635 --> 00:01:38,835
+Şimdi, dinerce bir sınavınız olduğunu da biliyorum. O yüzden hemen başlamak istiyorum.
+
+9
+00:01:39,176 --> 00:01:41,156
+Biraz da, gerçi daha vaktiniz var herhalde.
+
+10
+00:01:41,656 --> 00:01:42,436
+Dif alan var mı?
+
+11
+00:01:44,115 --> 00:01:45,956
+Aynı zamanda difi olan var mı?
+
+12
+00:01:47,036 --> 00:01:51,496
+Gerçi siz 1'in sınıfısınız ama hani üst sınıfta olanlar olabilir belki.
+
+13
+00:01:55,924 --> 00:02:04,384
+Okay, so first of all, I want to start with the example which I gave you yesterday as a homework.
+
+14
+00:02:05,084 --> 00:02:06,704
+Did you look at the question?
+
+15
+00:02:16,147 --> 00:02:16,548
+Okay.
+
+16
+00:02:17,687 --> 00:02:18,787
+This is the question.
+
+17
+00:02:19,207 --> 00:02:21,048
+They are asking what is this result.
+
+18
+00:02:28,307 --> 00:02:29,908
+Evet, baktınız mı bakalım?
+
+19
+00:02:32,548 --> 00:02:34,788
+Did you look at this example yesterday?
+
+20
+00:02:35,908 --> 00:02:36,788
+Probably not.
+
+21
+00:02:38,468 --> 00:02:38,867
+Okay.
+
+22
+00:02:40,067 --> 00:02:46,228
+This question, you can see that it is related to Riemann's sum, but I have to make some changing.
+
+23
+00:02:46,228 --> 00:02:51,348
+For example, firstly, how can I write this part as a sum?
+
+24
+00:02:55,123 --> 00:03:02,183
+sum is from 1 to n. Let's answer right e. Okay.
+
+25
+00:03:06,740 --> 00:03:15,240
+Ah, no, no, no. It is related to Riemann. So now I will write, it is, uh,
+
+26
+00:03:19,283 --> 00:03:41,163
+n² plus e², this is n. Okay, first, this part is, let's see if it is 1, it is n over n² plus 1, yes. If it is 2, it is n over n² plus 1, yes. It is this. Now, let me write.
+
+27
+00:03:43,316 --> 00:03:54,876
+n-square outside, because if you remember, the Riemann sum will be a plus e delta x or e minus 1. Okay.
+
+28
+00:03:56,396 --> 00:04:10,936
+And this is f, this is delta x. Delta x is b minus a over n. Now here, I want to find the term as 1 over n.
+
+29
+00:04:11,412 --> 00:04:38,552
+Okay, so for this, I want to write n squared outside inside. It will be n. If I write n squared outside, I will have 1 plus e over n squared. Okay. And we can cancel n here. So inside I have
+
+30
+00:04:38,963 --> 00:04:53,744
+1 over 1 plus e over n squared, product 1 over n, from 1 to n. Okay?
+
+31
+00:04:56,683 --> 00:04:58,963
+Did you understand what we made here?
+
+32
+00:05:00,211 --> 00:05:02,971
+İlk olarak, bu partijden bir parçası var.
+
+33
+00:05:28,211 --> 00:05:37,331
+If I write n-square, I can cancel one of them. This part will be 1 plus e over n-square. Now, this is your delta x.
+
+34
+00:05:39,111 --> 00:05:54,831
+This is your function. a plus e delta x. Okay. So, from delta x, I can say that b minus a is 1. And f
+
+35
+00:05:55,475 --> 00:06:02,295
+a plus e delta x. Delta x is 1 over n.
+
+36
+00:06:06,995 --> 00:06:24,335
+will be 1 over 1 plus e over n square. Okay. From these two information, what can I write for a, what can I write for fx?
+
+37
+00:06:26,235 --> 00:06:30,775
+Okay. If I say f a is 0, what is your function?
+
+38
+00:06:34,387 --> 00:06:37,227
+1 over 1 plus x squared.
+
+39
+00:06:38,287 --> 00:06:48,747
+Okay, let's see. If I write e over n, it is 1 over 1 plus e over n squared. It is true.
+
+40
+00:06:50,427 --> 00:07:00,067
+Okay, so actually this limit is from 0 to 1 dx over 1 plus x squared.
+
+41
+00:07:01,267 --> 00:07:07,627
+This is arctanjant x from 0 to 1.
+
+42
+00:07:09,627 --> 00:07:18,727
+So arctanjant 1 minus arctanjant 0.
+
+43
+00:07:18,887 --> 00:07:21,367
+This is pi over 4.
+
+44
+00:07:21,367 --> 00:07:27,927
+This is 0.
+
+45
+00:07:28,339 --> 00:07:30,659
+tanjant, sıfır lan, sinüs, bir küsü, sıfır.
+
+46
+00:07:31,139 --> 00:07:32,379
+So, this is A.
+
+47
+00:07:33,459 --> 00:07:33,800
+Okay?
+
+48
+00:07:37,000 --> 00:07:41,419
+If you have this kind of question, you have to remember Riemann's sum.
+
+49
+00:07:41,419 --> 00:07:44,399
+You have to write firstly as a sum.
+
+50
+00:07:45,079 --> 00:07:53,099
+After that, you have to find a possible representation as F A plus E delta x product delta x.
+
+51
+00:07:53,500 --> 00:07:53,659
+Okay?
+
+52
+00:07:57,588 --> 00:08:04,608
+Okay. Let me look at another example. Şimdi bunları zaten çözmüştük.
+
+53
+00:08:08,211 --> 00:08:10,531
+diye bakıyorum. Biraz bırakmıştık çünkü.
+
+54
+00:08:23,252 --> 00:08:24,752
+hesablamak namışız bu da.
+
+55
+00:08:26,432 --> 00:08:29,432
+Let's look at this example we haven't looked at yesterday.
+
+56
+00:08:41,076 --> 00:08:41,456
+Okay.
+
+57
+00:09:00,467 --> 00:09:03,427
+Okay, they said that f is a continuous function.
+
+58
+00:09:09,716 --> 00:09:14,668
+ve bu informasyonlar, ve bu informasyonlar, neyden bir şey?
+
+59
+00:09:18,131 --> 00:09:27,471
+If inside of your function, if you have different variables inside of f, it means that actually you have to use a transformation.
+
+60
+00:09:28,471 --> 00:09:35,791
+But if you don't have, if you have derivation of f, it is related to the integration by parts or integrites.
+
+61
+00:09:35,791 --> 00:09:36,071
+Okay.
+
+62
+00:09:39,860 --> 00:09:50,259
+For example, I want to start with this one. If I write 4x as t, let's see what we will find. 4dx will be dt.
+
+63
+00:09:52,259 --> 00:10:06,259
+So the integral will be ft dt, 1 over 4 outside. What about the bounds? If x is 0, t will be 0.
+
+64
+00:10:08,019 --> 00:10:33,000
+If x is 4, t will be 60. I know that this is 3. This is the first information. Okay? This is our first information. I know that this is 4. This is our second information. And in the last part,
+
+65
+00:10:33,908 --> 00:10:45,468
+Let's write, if 4x² is t or u, hx dx will be du.
+
+66
+00:10:47,867 --> 00:10:59,687
+So, integral, x dx will be du over 8, du over 8, I can write outside, I have fu.
+
+67
+00:11:01,652 --> 00:11:13,152
+What about the bounds? If x is 1, you will be 4. If x is 2, you will be 4 or not?
+
+68
+00:11:15,152 --> 00:11:24,452
+Burası 16, burası 4. Okay. This is our question.
+
+69
+00:11:29,107 --> 00:11:47,827
+Okay. So if you look at the first and second information, I can say that 0 to 16, f t dt is from 0 to 4, okay, f x dx.
+
+70
+00:11:49,827 --> 00:11:54,788
+Inside of the integral, the variable is not important. You can write anything.
+
+71
+00:11:55,539 --> 00:12:00,879
+and from 4 to 16, f' u d' u.
+
+72
+00:12:01,779 --> 00:12:01,999
+Okay.
+
+73
+00:12:03,219 --> 00:12:13,919
+Now, from the information, this is, from here, if I write 1 over 4 here, it will be 12.
+
+74
+00:12:16,679 --> 00:12:20,259
+Here, they said that it is 4.
+
+75
+00:12:21,159 --> 00:12:23,199
+So, this part will be,
+
+76
+00:12:23,827 --> 00:12:41,288
+8. But in the question, they are asking 1 over 8 product. This integral is 8. So the result will be 1 here. It is this one.
+
+77
+00:12:44,275 --> 00:12:57,495
+Okay. Maybe in the results they can write, for example, 8. When you see 8, you can choose, but it is not. The question actually, they are asking 1. Okay.
+
+78
+00:12:57,495 --> 00:13:09,915
+Do you have any question? If you have different variables in your function, for example, x, 4x,
+
+79
+00:13:10,303 --> 00:13:28,268
+x kare artı 2x, f'
+
+80
+00:13:28,692 --> 00:13:37,591
+In this example, you have fx function, the variable is the same, but the functions, derivations, I have some derivations.
+
+81
+00:13:37,591 --> 00:13:46,671
+In this question, I have to use integration by parts or to find the integris. These two questions are different. Okay?
+
+82
+00:13:49,431 --> 00:13:50,072
+Okay.
+
+83
+00:13:56,403 --> 00:13:59,344
+bazıları final konusu olduğu için geçiyorum.
+
+84
+00:14:01,764 --> 00:14:04,403
+For example, let's look at this one.
+
+85
+00:14:05,104 --> 00:14:05,903
+Let's see.
+
+86
+00:14:07,484 --> 00:14:08,464
+Tamam, çözelim.
+
+87
+00:14:11,043 --> 00:14:11,803
+Okay.
+
+88
+00:14:17,011 --> 00:14:18,312
+Now this is our question.
+
+89
+00:14:20,312 --> 00:14:27,412
+What is the value of this limit? You can see that it is a definite integral and in the bounds we have some functions.
+
+90
+00:14:28,251 --> 00:14:36,731
+So when you have some functions in your bounds probably about 99% it is related to belirs.
+
+91
+00:14:37,432 --> 00:14:42,892
+Okay, if I write 0, sorry, if I write 2 in the limit I will have
+
+92
+00:14:43,443 --> 00:14:45,203
+0 over 0.
+
+93
+00:15:11,124 --> 00:15:37,464
+dt over 1 plus tübe over x minus 2. Okay, this is your function. I have 0 over 0. I have to take derivation of x minus 2 is 1. Now I have to take derivation of this function. Derivation of the upper bound is 2x. After that, I have to write in the function,
+
+94
+00:15:37,971 --> 00:15:52,932
+1 plus x square cube minus derivation of 2x is 2. After that, I will write in the function 2x cube.
+
+95
+00:15:55,732 --> 00:16:04,532
+Okay. Now we can write 2 in the limit. We will find it is 2 product 2 over
+
+96
+00:16:05,908 --> 00:16:07,288
+1 plus
+
+97
+00:16:07,288 --> 00:16:15,608
+2 yazarsa 4, 4'ün 64
+
+98
+00:16:15,608 --> 00:16:20,567
+minus 2 over
+
+99
+00:16:20,567 --> 00:16:24,687
+1 plus 2 kere 2, 4, 64
+
+100
+00:16:24,687 --> 00:16:30,668
+2 kere 2, 65
+
+101
+00:16:34,548 --> 00:16:36,548
+ok?
+
+102
+00:16:36,548 --> 00:16:41,548
+it is not difficult, but you have to be careful when you solve the questions.
+
+103
+00:16:45,875 --> 00:17:02,056
+ok, let me look at, we saw this question, bunu da çözdük, bu yok, bunu da çözdük, bu da yok, bunu da çözdük, bunu çözmedik sizlere, let's look at these x up, ok?
+
+104
+00:17:10,804 --> 00:17:12,804
+Okay, let's look at this example.
+
+105
+00:17:15,903 --> 00:17:21,903
+If integral from 1 to ln x ft dt is this, what is x0? What can we do here?
+
+106
+00:17:32,819 --> 00:17:57,900
+here, the bound, one of them is function, so it is related to Leibniz rule. If I take derivation of left side and right side, I can find f function. Let's see. If I take derivation of left side and right side, it is derivation of lnx is 1 over x.
+
+107
+00:17:58,352 --> 00:18:23,532
+After that, I have to write in the function. Minus derivation of 1 is 0. On the right side, I have two different functions and there is a product here. Derivation of the exponent function is the same. Sin ln x plus exponent function. Derivation inside of the sine function is 1 over x.
+
+108
+00:18:25,619 --> 00:18:52,019
+cosin ln x. Now, they are asking f0. This is your f-function. So, what can I write for x if I want to find f0? I have to write 1. Yes. If I write 1, I will have f0. On the right side, it will be e sin
+
+109
+00:18:54,067 --> 00:19:03,148
+ln1 plus e cos ln1.
+
+110
+00:19:03,148 --> 00:19:04,668
+This is 0.
+
+111
+00:19:05,668 --> 00:19:07,307
+This is 1.
+
+112
+00:19:07,307 --> 00:19:10,447
+So the result will be e here.
+
+113
+00:19:13,788 --> 00:19:14,648
+Okay?
+
+114
+00:19:18,740 --> 00:19:19,139
+ok.
+
+115
+00:19:26,036 --> 00:19:31,155
+Okay, let's look at this example. I haven't looked at this example also. Let's see together.
+
+116
+00:19:35,635 --> 00:19:39,796
+Okay, this is the question. Let's look at together.
+
+117
+00:19:41,016 --> 00:19:50,296
+Let f be a function. It's a continuous function. And we know that minus 2 to 3 fx dx is 4, minus 2 to 6.
+
+118
+00:19:50,836 --> 00:20:01,435
+f x dx9, then what is the integral 3 to 6 to x kare minus f x dx?
+
+119
+00:20:13,299 --> 00:20:15,219
+ne yapabiliriz hiç? Bakın bakalım.
+
+120
+00:20:29,332 --> 00:20:33,412
+Okay. Okay, let's write.
+
+121
+00:20:35,751 --> 00:20:52,132
+We can find 3 to 6, 2x² dx will be 2x³ over 3, from 3 to 6.
+
+122
+00:20:54,132 --> 00:20:55,932
+x 2 over 3.
+
+123
+00:20:58,036 --> 00:21:02,635
+6x36, 36, 36, 36 daha 256 mi?
+
+124
+00:21:04,695 --> 00:21:06,375
+Türemiyorum, 36'yı geldim.
+
+125
+00:21:23,124 --> 00:21:27,372
+x kare artı 3x, f'
+
+126
+00:21:33,907 --> 00:21:36,107
+Şimdi burası ne geldi?
+
+127
+00:21:40,107 --> 00:21:41,387
+Kafam durdu şu an.
+
+128
+00:21:41,807 --> 00:21:43,347
+Kafam da hesaplaymış.
+
+129
+00:21:44,247 --> 00:21:51,788
+9, 8, 89 çarpı 2 bölü 3.
+
+130
+00:21:53,927 --> 00:21:54,807
+Tamam.
+
+131
+00:21:55,847 --> 00:21:58,107
+What about the other one? Other part?
+
+132
+00:21:58,768 --> 00:21:59,587
+What can we do?
+
+133
+00:22:03,955 --> 00:22:11,095
+3'e belirsek, 63 x 2, 126.
+
+134
+00:22:19,284 --> 00:22:26,684
+Valla sabah da dersi gittim. O yüzden kafam durdu. Artık ilkokul gibi hesap yapıyorum.
+
+135
+00:22:27,784 --> 00:22:33,704
+Okey, so now we have to find 3-6 fxdx.
+
+136
+00:22:38,228 --> 00:22:39,067
+Bu da bir soru.
+
+137
+00:22:43,763 --> 00:22:49,523
+and throughout you said that we divide the bounds of the integral from 3 to minus 2.
+
+138
+00:22:52,324 --> 00:22:58,564
+But the bounds both of them are positive. You can't divide s minus 2.
+
+139
+00:23:05,556 --> 00:23:26,956
+but you can, maybe you can write like this. If you look at the first one here, if I change the order, okay, if I change the order, it will be, şöyle bir saniye, 3'ten x2, x2, yalatı bir saniye,
+
+140
+00:23:36,115 --> 00:23:36,375
+3x, f'
+
+141
+00:23:36,375 --> 00:23:37,716
+Şöyle düşündüm ama
+
+142
+00:23:37,716 --> 00:23:40,076
+3x, f'
+
+143
+00:23:40,076 --> 00:23:40,916
+2x, f'
+
+144
+00:23:40,916 --> 00:23:42,916
+diye düşünseniz olmaz buradan.
+
+145
+00:23:45,916 --> 00:23:48,216
+Bir saniye, bir saniye.
+
+146
+00:23:50,716 --> 00:23:54,036
+2x, f'
+
+147
+00:23:54,036 --> 00:23:55,916
+3x, f'
+
+148
+00:23:55,916 --> 00:23:56,916
+so,
+
+149
+00:23:58,115 --> 00:24:01,716
+eksi 5 de başında olacak. Evet, eksi 5 o önemli değil.
+
+150
+00:24:01,716 --> 00:24:02,716
+Peki,
+
+151
+00:24:03,380 --> 00:24:11,320
+Can you use a transformation in the first and in the second integrals, such as minus x, for example?
+
+152
+00:24:14,140 --> 00:24:20,820
+I mean, we have both bounds 3 to 6, so we change as sum of two integrals.
+
+153
+00:24:22,240 --> 00:24:23,780
+And the other one is minus 2.
+
+154
+00:24:25,300 --> 00:24:30,300
+[öğrenci], you are talking about this one or this one?
+
+155
+00:24:37,491 --> 00:24:44,011
+Minus 2 is outside of your domain. The integral is given from 3 to 6.
+
+156
+00:24:47,443 --> 00:24:57,903
+Okay, so 3'ten 6'ya kadar. Peki, if I change the functions as minus x,
+
+157
+00:25:02,900 --> 00:25:03,400
+Evet.
+
+158
+00:25:13,652 --> 00:25:21,692
+Okay, let's see. Okay, from minus 2, this is 6, this is 3.
+
+159
+00:25:23,451 --> 00:25:32,152
+They said that this part is 4, this part is 9.
+
+160
+00:25:32,932 --> 00:25:41,516
+Okay, minus 2 to 3, it is 4, minus 2 to 6, it is 9. So this part will be...
+
+161
+00:25:43,220 --> 00:25:44,740
+is 5.
+
+162
+00:25:45,740 --> 00:25:46,019
+Okay?
+
+163
+00:25:47,539 --> 00:25:50,319
+So, this part will be 5.
+
+164
+00:25:51,640 --> 00:25:57,839
+So, our integral view 126 minus f, 5.
+
+165
+00:25:58,599 --> 00:26:00,900
+Product, we say that this is 5.
+
+166
+00:26:04,420 --> 00:26:08,920
+126 x'i 25 bir yerde yanlış yaptım. Ama nerede?
+
+167
+00:26:09,940 --> 00:26:11,539
+Doğru mu? Pardon. 101.
+
+168
+00:26:12,539 --> 00:26:13,820
+Okay, this is C.
+
+169
+00:26:14,519 --> 00:26:14,759
+Okay.
+
+170
+00:26:17,039 --> 00:26:21,620
+In the first integral, they give from minus 2 to 3, it is 4.
+
+171
+00:26:21,880 --> 00:26:25,980
+In the second integral, they said that minus 2 to 6, it is 9.
+
+172
+00:26:26,560 --> 00:26:29,019
+So, this part will be 5.
+
+173
+00:26:29,140 --> 00:26:33,820
+And this is our question integral from 3 to 6, fx dx.
+
+174
+00:26:34,320 --> 00:26:35,160
+This is 5.
+
+175
+00:26:35,536 --> 00:26:49,216
+if I write here, this is 5, this integral is 5, the beginning part is 126 minus f5 product, the integral, it will be 101.
+
+176
+00:26:50,596 --> 00:26:50,895
+Okay?
+
+177
+00:26:52,776 --> 00:26:53,716
+Dönüşme yapma, de gerekir.
+
+178
+00:26:58,483 --> 00:27:04,723
+Okay. I think the last one is this. I can close this.
+
+179
+00:27:08,980 --> 00:27:11,980
+Ok, let me look at some other examples.
+
+180
+00:27:14,420 --> 00:27:16,240
+Çözdük, çözdük.
+
+181
+00:27:21,971 --> 00:27:25,332
+Bir saniyeniz alacağım. Soruyu görmem lazım.
+
+182
+00:27:42,420 --> 00:27:46,740
+Ok, arkadaşım biraz çok çizmiş de.
+
+183
+00:27:50,180 --> 00:27:52,440
+Ok, let me write the question.
+
+184
+00:28:01,679 --> 00:28:30,776
+ok.
+
+185
+00:28:14,387 --> 00:28:18,228
+if the integral from a to b, then it's equal to sum of yes.
+
+186
+00:28:19,228 --> 00:28:24,228
+Yes, [öğrenci], your suggestion is true.
+
+187
+00:28:24,887 --> 00:28:28,627
+If you have from a to b, you can divide it at any point.
+
+188
+00:28:28,627 --> 00:28:29,627
+Okay.
+
+189
+00:28:30,427 --> 00:28:33,127
+So our question is this.
+
+190
+00:28:33,407 --> 00:28:40,468
+Our function is fx is x squared plus 4x squared.
+
+191
+00:28:41,779 --> 00:28:42,779
+kübret.
+
+192
+00:28:42,779 --> 00:28:43,779
+Okay.
+
+193
+00:28:43,779 --> 00:28:48,779
+And they said that which of the following can't be said?
+
+194
+00:28:48,779 --> 00:28:54,779
+And in the question we have some functions and they are asking local maximum, local minimum.
+
+195
+00:28:54,779 --> 00:29:00,779
+Firstly, let us find the local maximum and local minimum points, okay?
+
+196
+00:29:04,660 --> 00:29:08,660
+Let's investigate the local maximum and local minimum points.
+
+197
+00:29:12,276 --> 00:29:21,156
+okay this is our function and there are some choices according to local, maximum, local, minimum, absolute, maximum or absolute minimum.
+
+198
+00:29:32,372 --> 00:29:37,652
+Okay. So let us find f' prime x.
+
+199
+00:29:40,052 --> 00:29:48,292
+So you can think this function is x square plus 4x to the power 2 over 3.
+
+200
+00:29:48,292 --> 00:29:59,892
+Let's take derivation from here. The power is 2 over 3 x square plus 4x power minus
+
+201
+00:30:00,000 --> 00:30:16,240
+1 over 3, and derivation inside is 2x plus 4. Okay, so I can write that it is 2x plus 4 over 3 cube root.
+
+202
+00:30:19,731 --> 00:30:21,571
+x kare artı 4x.
+
+203
+00:30:24,051 --> 00:30:26,311
+Okay, this is our first derivation.
+
+204
+00:30:26,672 --> 00:30:29,592
+Now from here we have to determine our critical points.
+
+205
+00:30:29,991 --> 00:30:32,311
+We have three different kinds of critical points.
+
+206
+00:30:32,311 --> 00:30:35,571
+The first one, f' x can be zero.
+
+207
+00:30:37,092 --> 00:30:42,231
+So from here I can say that 2x plus 4 is zero.
+
+208
+00:30:42,867 --> 00:30:47,367
+x can be minus 2. This is our first critical point.
+
+209
+00:30:47,367 --> 00:30:53,208
+The second one, f' x not exist.
+
+210
+00:30:56,723 --> 00:31:07,623
+In that case, x² plus 4x is 0, x can be 0, and x can be minus 4.
+
+211
+00:31:08,523 --> 00:31:12,423
+But before that, what is your domain?
+
+212
+00:31:13,323 --> 00:31:18,583
+Because this point have to be in your domain, but what is our domain for this function?
+
+213
+00:31:25,587 --> 00:31:35,288
+Evet, bir real numar. Çünkü kübere, bir növer bir növer. Ve bir növer bir növer. Ve bir növer bir növer.
+
+214
+00:31:35,288 --> 00:31:46,687
+Bir növer bir növer. Yani 0 ve 4 ve 4'e bir növer. Ve diğer növer bir növer.
+
+215
+00:31:46,687 --> 00:31:51,847
+Şimdi, 0 ve 2 ve 4'e bir növer.
+
+216
+00:31:52,403 --> 00:32:15,384
+Okay, now I have to make a sin table. This is our derivation. The sin is changing according to this function and this function. So let's write here 2x plus 4 and the sin of x squared plus 4x.
+
+217
+00:32:17,384 --> 00:32:18,384
+Okay.
+
+218
+00:32:19,892 --> 00:32:33,152
+2, 3. So, I have minus 4, minus 2, 0. This is minus 2. It is negative. After that, it is positive.
+
+219
+00:32:34,011 --> 00:32:43,832
+The roots is this one. Inside of the roots negative, it will be positive. So, the sine will be f' x.
+
+220
+00:32:45,203 --> 00:32:48,383
+negative, positive, negative, positive.
+
+221
+00:32:49,463 --> 00:32:49,823
+Okay.
+
+222
+00:32:50,703 --> 00:32:56,963
+So, it is decreasing, increasing, decreasing, increasing.
+
+223
+00:32:56,963 --> 00:33:02,303
+This point I have x equals minus 4.
+
+224
+00:33:02,763 --> 00:33:05,383
+We have local minimum.
+
+225
+00:33:06,343 --> 00:33:08,983
+x equals minus 2.
+
+226
+00:33:09,723 --> 00:33:11,763
+I have local.
+
+227
+00:33:12,276 --> 00:33:25,396
+maximum. x x equals 0. x i have lokal minimum. Okay, let me look at the answers. Okay.
+
+228
+00:33:32,276 --> 00:33:33,276
+The hard answers.
+
+229
+00:33:36,788 --> 00:33:59,008
+They said that minus 4, I have local minimum. Let's look at this is local minimum. Okay. Let's see at minus 4, I have local minimum. Yes. In the question, they are asking which of the following can't be saved.
+
+230
+00:34:00,788 --> 00:34:02,008
+For this question.
+
+231
+00:34:05,748 --> 00:34:26,148
+can't be set. Okay. So it is true, I can say. For minus 2, I have local maximum. Yes, I have. I can say that. In C,
+
+232
+00:34:26,804 --> 00:34:36,524
+and d, they are talking about absolute. Let's look at later. Let's look at e. At zero, I have local minimum. Yes.
+
+233
+00:34:37,984 --> 00:34:50,804
+Okay, it is true. But what can we say about absolute? Let's look at the graph of the function. They said that in the graph between
+
+234
+00:34:51,251 --> 00:35:15,612
+The important point is minus 4, minus 2, 0. Minus 4, before the minus 4, it is decreasing. Okay, it is decreasing. So, it is, şöyle yapayım, noktalarını bilmiyorum. The points are not important. It is,
+
+235
+00:35:16,019 --> 00:35:43,500
+Bu, bu
+
+236
+00:35:43,764 --> 00:35:48,104
+decreasing, for example, here.
+
+237
+00:35:49,364 --> 00:35:50,784
+How to do it? It is increasing.
+
+238
+00:35:52,083 --> 00:35:52,324
+Okay.
+
+239
+00:35:53,224 --> 00:35:53,623
+So,
+
+240
+00:35:54,423 --> 00:35:57,583
+what can we say about this one?
+
+241
+00:35:57,583 --> 00:35:59,264
+I have two
+
+242
+00:35:59,264 --> 00:36:04,164
+local minimum.
+
+243
+00:36:04,684 --> 00:36:04,844
+Okay.
+
+244
+00:36:06,524 --> 00:36:08,244
+But minus 2
+
+245
+00:36:09,427 --> 00:36:32,587
+Okay, you have minus 2 or you can find also. Let me look at here one second. We have two local minimum. What is f0 and what is f minus 4? f0 is 0. f minus 4 is also.
+
+246
+00:36:34,587 --> 00:36:36,547
+Kaç olacak? 16.
+
+247
+00:36:38,164 --> 00:36:39,724
+x 16, o da sıfır oluyor.
+
+248
+00:36:41,524 --> 00:36:43,923
+Değil mi? İki tane minimum noktası var.
+
+249
+00:36:44,904 --> 00:36:45,904
+Okay, so,
+
+250
+00:36:47,704 --> 00:36:53,624
+they said that at x equals minus 2, we have absolute maximum.
+
+251
+00:36:54,923 --> 00:37:02,844
+At x equals minus 2, we can't say any absolute maximum because after this point, the function is increasing.
+
+252
+00:37:03,524 --> 00:37:04,964
+They go to any point.
+
+253
+00:37:05,396 --> 00:37:19,096
+Okay? We can't say any absolute maximum for this point. For minus 2, sorry, for minus 4, yes, I have absolute minimum at this point.
+
+254
+00:37:19,396 --> 00:37:30,096
+Because after that, this point, at, sorry, at minus 4 and at 0, both of them...
+
+255
+00:37:30,771 --> 00:37:48,231
+It is absolute minimum also. This is absolute minimum because the value of f minus 4 is 0. This is f0 is also 0. So 0 is our absolute minimum value here.
+
+256
+00:37:52,820 --> 00:37:57,640
+0 ve eksi 4'te türevi tanımlı değil ama fonksiyon tanımlı. O zaman alabiliyorum.
+
+257
+00:37:58,680 --> 00:38:03,220
+Domain'de ise alabiliyorum. Domain'de olduğu için alabiliyorum tabii ki.
+
+258
+00:38:03,220 --> 00:38:08,820
+O yüzden burada mutlaklıkla ilgili bunu söyleyemiyorsunuz. Bunu söyleyebiliyorsunuz.
+
+259
+00:38:09,119 --> 00:38:19,719
+şunu söyleyebiliyorsunuz. I can say that we have absolute minimum because if you look at here, it is decreasing, increasing, decreasing, increasing.
+
+260
+00:38:19,719 --> 00:38:24,179
+So I have these points and both of them are zero.
+
+261
+00:38:24,692 --> 00:38:43,831
+The function will be greater than 0. So 0 will be your absolute minimum point. And it will be at minus 4 and 0. So for here, I can say that at minus 4, I have absolute minimum. But I can't say about C.
+
+262
+00:38:46,231 --> 00:38:48,391
+Şimdi, kritik nokta şuydu.
+
+263
+00:38:48,916 --> 00:38:54,596
+fonksiyon türevini sıfır yapan, fonksiyon türevini tanımsız yapan değerler.
+
+264
+00:38:54,716 --> 00:38:59,115
+Ama tanımsız yaptığı zaman ama fonksiyonun domeninde olmak zorunda.
+
+265
+00:39:00,796 --> 00:39:03,115
+Fonksiyonun domeninde olmak zorunda.
+
+266
+00:39:03,796 --> 00:39:07,896
+Mesela, for example, cube root x.
+
+267
+00:39:09,476 --> 00:39:11,636
+Here our domain is real number.
+
+268
+00:39:12,536 --> 00:39:14,036
+What is our derivation?
+
+269
+00:39:14,036 --> 00:39:16,036
+1 over 3.
+
+270
+00:39:16,692 --> 00:39:18,371
+x kare artı 2x² küpür.
+
+271
+00:39:19,931 --> 00:39:30,992
+Here, x at x equals 3, 0, f' prime x is not exist, but it is in your domain, so this is your critical.
+
+272
+00:39:30,992 --> 00:39:31,871
+Okay?
+
+273
+00:39:34,911 --> 00:39:35,631
+Okay.
+
+274
+00:39:51,059 --> 00:39:57,300
+Bunları zaten çözdüğümüz sorular da ekstra var mı diye bakıyorum.
+
+275
+00:40:15,059 --> 00:40:16,579
+Türensorsu bu kolay.
+
+276
+00:40:24,211 --> 00:40:24,711
+soru.
+
+277
+00:40:32,307 --> 00:40:33,868
+is to get these examples.
+
+278
+00:40:42,612 --> 00:41:00,231
+Okay, the question is, g is a continuous function, and in this interval, twice a differential.
+
+279
+00:41:16,436 --> 00:41:17,976
+Okay, what can we do here?
+
+280
+00:41:31,092 --> 00:41:56,492
+Okay, let me write a separate, let's see, is it true? We have a problem or not. gx, g'xdx, plus, second one, 0 to 1, gx, g'x, g'x,
+
+281
+00:41:59,635 --> 00:42:00,895
+çöp tü x.
+
+282
+00:42:04,436 --> 00:42:17,256
+And the last one is 0 to 1 gx², second derivation of gx dx.
+
+283
+00:42:18,316 --> 00:42:19,556
+This is not a question.
+
+284
+00:42:21,076 --> 00:42:23,635
+Pardon, yanlış yazdım, sorucusu.
+
+285
+00:42:26,635 --> 00:42:28,256
+This is wrong, sorry.
+
+286
+00:42:32,019 --> 00:42:58,019
+eksik yazımlar doğrusu, g²x, g'x, seconds gx dx. Okey. Şimdi oldu. g eksinkreisi gx dx. Okey. So, what can we say here? Let's start with the first one. Okey.
+
+287
+00:42:58,643 --> 00:43:16,563
+If you look at the first one, what can I write that? Here, if gx is t, g'x dx will be dt. Actually, this integral is the same with t dt.
+
+288
+00:43:20,019 --> 00:43:33,239
+tü2 over 2, or I can write that g2x over 2, from 0 to 1.
+
+289
+00:43:35,139 --> 00:43:36,960
+So what is this?
+
+290
+00:43:38,579 --> 00:43:41,199
+If I write 1 over 2 outside,
+
+291
+00:43:41,199 --> 00:43:46,260
+g21,
+
+292
+00:43:47,251 --> 00:44:11,912
+minus g2, 0. Okay? So, what is g1? g1 is minus 4. So, 1 over 2, it will be 16 minus, what is g0? 2, it is 4.
+
+293
+00:44:14,612 --> 00:44:18,271
+So, this part is 12, 2'ye bölersek alt.
+
+294
+00:44:19,492 --> 00:44:21,072
+Okay, this part is 6.
+
+295
+00:44:22,152 --> 00:44:25,271
+Okay, what can I say about...
+
+296
+00:44:30,260 --> 00:44:31,860
+O da yani şunluyor pardon.
+
+297
+00:44:37,860 --> 00:44:44,860
+Ağulde, anşabış mı?
+
+298
+00:44:37,204 --> 00:44:45,204
+Bir dakika yanlış yazmış mıyım? Gözüm de görmüyor. Doğru yazmışım.
+
+299
+00:44:45,204 --> 00:44:53,204
+x kare artı 2x'in küp. Yanlışlık yok.
+
+300
+00:44:53,204 --> 00:44:57,204
+Tamam. Bunu da artık.
+
+301
+00:45:05,300 --> 00:45:07,039
+Okay, what can we do here?
+
+302
+00:45:14,804 --> 00:45:27,824
+Okay, let's take a break for 10 minutes. After the break, let's talk about again and in the break time, maybe you want to look at this example. Okay, let's take a 10-minute break.
+
+303
+00:45:27,824 --> 00:45:33,564
+Okay, on dakikara edin. Hem dinlenin siz hem de bakın bakalım, biraz düşünün. Güzel bir soru bu gerçekten.
+
+304
+00:45:34,224 --> 00:45:36,184
+Tamam? On dakikara veriyoruz.
+
+305
+00:58:52,628 --> 00:58:55,248
+Now, did you think about this question?
+
+306
+00:58:57,668 --> 00:58:59,248
+Evet arkadaşlar, bak diyorsun bakalım.
+
+307
+00:59:01,788 --> 00:59:03,288
+So, what is your opinion?
+
+308
+00:59:11,284 --> 00:59:17,804
+integration by parts. Okay. So which one is u and which one is dv?
+
+309
+00:59:30,708 --> 00:59:35,708
+u is g prime x. Okay, let's see.
+
+310
+00:59:38,708 --> 00:59:40,708
+Let's say that.
+
+311
+00:59:42,708 --> 00:59:56,708
+u is g prime x square dv is g prime dx.
+
+312
+00:59:58,579 --> 00:59:59,079
+ok.
+
+313
+01:00:02,804 --> 01:00:03,804
+so...
+
+314
+01:00:10,771 --> 01:00:28,851
+Okay, so du will be 2g' g2'. V will be, what is it? g2 over 2.
+
+315
+01:00:31,572 --> 01:00:36,851
+Okay, so our integral will be u product v. g.
+
+316
+01:00:37,012 --> 01:01:03,212
+x kare artı 2x, g' prime, square x, over 2, from 0 to 1, minus integral 0 to 1, v du, it is g' prime x,
+
+317
+01:01:04,563 --> 01:01:22,824
+g²x, g²x, dx. Okay? And you can see that this is positive, this is negative. So this part in the sum will be 0. So only I have to find this part.
+
+318
+01:01:24,963 --> 01:01:31,284
+g²1, g'²1.
+
+319
+01:01:32,659 --> 01:01:46,159
+minus g square 0, g prime square 0, over 2.
+
+320
+01:01:52,275 --> 01:02:19,835
+Okay. So, what is g1? g1 is 4, minus 4. So, minus 4 square. g'1 is minus 3. It is minus 3 square. Minus g0 is 2, 2 square.
+
+321
+01:02:21,460 --> 01:02:40,500
+G prime zero it is three three square over two. Kaç oldu? 16 çarpı 9 eksi 4 çarpı 9 bölüm 2.
+
+322
+01:02:48,784 --> 01:03:08,164
+So, the first one is 6. The other one is 54. Minus integral plus integral. This is the same. It will be 0. So, it will be 60. Okay? It is E.
+
+323
+01:03:11,699 --> 01:03:13,679
+Did you understand what we made here?
+
+324
+01:03:24,724 --> 01:03:25,724
+Evet.
+
+325
+01:03:25,724 --> 01:03:29,612
+Bu ilk başta.
+
+326
+01:03:33,588 --> 01:03:47,988
+it is 6. This is the second part. Okay. We can see that if I write that this is i, this integral will be also i.
+
+327
+01:03:47,988 --> 01:03:53,188
+But in the sum, one of them is positive, the other one is negative, so it will be zero.
+
+328
+01:03:53,907 --> 01:04:00,507
+Bu, bu bölümde, bu bölümde, bu bölümde, 54 bölümde.
+
+329
+01:04:00,507 --> 01:04:05,067
+Yani 6 bölümde, 54 bölümde, 60 bölümde.
+
+330
+01:04:05,067 --> 01:04:06,067
+Tamam.
+
+331
+01:04:10,483 --> 01:04:14,063
+Ok, so let's see some other questions.
+
+332
+01:04:25,012 --> 01:04:36,312
+It is easy. You can see from here. What are the local maximum points of the functions? It is easy. Local maximum point is this. This one.
+
+333
+01:04:40,403 --> 01:04:41,204
+is there anyone?
+
+334
+01:04:48,724 --> 01:05:04,204
+Oh, pardon, pardon. Sorry, sorry, sorry. I made a mistake. Let's look at it again because this is not derivation and this is not the graph of f' x. Let's take this question, okay? Sorry.
+
+335
+01:05:06,344 --> 01:05:09,264
+Sınavda dikkat edin, benim gibi şey düşmeyin.
+
+336
+01:05:10,867 --> 01:05:37,507
+Okay, this is the graph of f'x, and they are asking what is the local maximum points, okay? Local maximum points. This is the graph of f'x, okay? So you have to look at f'x is negative after that f'x has to be positive.
+
+337
+01:05:39,059 --> 01:06:02,880
+This is local minimum. f' x is positive. After that f' x is negative, it will be local maximum. So I have to investigate these points for the local maximum. Okay, let's look at a.
+
+338
+01:06:04,019 --> 01:06:09,039
+Before A, it is positive, positive. So A can't be.
+
+339
+01:06:10,860 --> 01:06:17,380
+For B, before B, this is positive. After that, it is negative.
+
+340
+01:06:18,179 --> 01:06:24,940
+This is positive. After that, it is negative. Yes, I have a local maximum point. It will be B.
+
+341
+01:06:26,139 --> 01:06:26,780
+B olacak.
+
+342
+01:06:28,440 --> 01:06:29,480
+For C,
+
+343
+01:06:30,612 --> 01:06:36,791
+Before that it is negative, after that it is negative. No, we can't say c.
+
+344
+01:06:37,431 --> 01:06:50,551
+About d, before that it is negative, after that it is positive, but negative to positive it will be local minimum, but they are asking local maximum, so I can't take d.
+
+345
+01:06:52,391 --> 01:06:53,851
+What about e?
+
+346
+01:06:54,996 --> 01:07:06,496
+Before that and after that it is positive. We can't. f, it is positive. After that it is negative. Yes, I have a lokal maximum here. I can take f.
+
+347
+01:07:07,196 --> 01:07:21,176
+About g, before and after that it is negative. For h, it is negative. After that it is positive. It is lokal minimum. Okay, so our solution is b.
+
+348
+01:07:23,219 --> 01:07:23,719
+Okey?
+
+349
+01:07:25,480 --> 01:07:28,579
+Okey, grafik soruları, yorum soruları gelir sınavda.
+
+350
+01:07:29,519 --> 01:07:31,259
+Yani hep sorulan şeyler zaten.
+
+351
+01:07:31,559 --> 01:07:34,319
+O yüzden şeyleri iyi bilmek yazmıştı.
+
+352
+01:07:34,480 --> 01:07:37,319
+Ne anlama geldikleri, birinci türev ifadeleri.
+
+353
+01:07:37,539 --> 01:07:40,619
+Mesela burada da ona benzer bir soru var.
+
+354
+01:07:41,839 --> 01:07:46,119
+Ya soruların tam hali var mıydı bende acaba?
+
+355
+01:07:46,119 --> 01:07:47,259
+Bir saniye.
+
+356
+01:07:48,436 --> 01:07:50,876
+sonyum, bekleteceğim, siz nasıl bir şeyle?
+
+357
+01:08:03,443 --> 01:08:08,123
+üzerinde yazılmamış verli varsa bizim için daha rahat olur. Sizin görmek açısından.
+
+358
+01:08:24,916 --> 01:08:26,916
+Okay, let's look at this one.
+
+359
+01:08:46,228 --> 01:08:51,768
+The question is this. They give the first function's derivation. Okay.
+
+360
+01:08:53,108 --> 01:09:04,788
+So, the derivation of fx graph is here. And at which intervals it is concave down? Okay.
+
+361
+01:09:09,235 --> 01:09:17,515
+Pitch intervals for concave.
+
+362
+01:09:21,779 --> 01:09:43,959
+Okay. So, in the graph, I have only the first function's derivation, but for the concave up and concave down, I have to investigate the second derivation. So, if the second derivation is negative, I can say that for the first derivation, f' has to be decreasing.
+
+363
+01:09:46,799 --> 01:09:47,479
+Okay.
+
+364
+01:09:48,340 --> 01:10:09,460
+Why? Let's think about the first function. For example, if function f is decreasing, how can you understand it is decreasing? I look at the first derivation. If the first derivation is negative, then I can say that it is decreasing. When you take your function as first derivation,
+
+365
+01:10:11,091 --> 01:10:14,311
+then the second derivation will be negative.
+
+366
+01:10:14,311 --> 01:10:22,051
+If you take your function as f'', then I can talk about the second derivation.
+
+367
+01:10:22,579 --> 01:10:26,279
+Şimdi biliyorum ki fonksiyon azalsa türevi negatif olması gerekiyor.
+
+368
+01:10:26,739 --> 01:10:36,319
+Fonksiyonun yerine birinci türev olarak düşünürseniz o zaman birinci türevin azalması ikinci türevin negatif olması ile alakalı.
+
+369
+01:10:36,539 --> 01:10:39,159
+O zaman ne diyebiliyorum? Şöyle de yapabilirsiniz.
+
+370
+01:10:41,299 --> 01:10:49,639
+So I can say that if f' rhyme is decreasing then I can say that it is concave.
+
+371
+01:10:50,195 --> 01:11:02,556
+or you can say that the same thing if the second derivation is positive then f' x will be increasing.
+
+372
+01:11:05,435 --> 01:11:08,435
+it is related to concave up. okay
+
+373
+01:11:08,435 --> 01:11:15,155
+okay now let us look at the graph they are asking
+
+374
+01:11:17,460 --> 01:11:24,780
+The second derivation is negative or f' x is decreasing.
+
+375
+01:11:25,479 --> 01:11:30,239
+So, what about the first one? It is increasing. I can't take.
+
+376
+01:11:30,239 --> 01:11:35,720
+This is decreasing. Yes, this part will be here.
+
+377
+01:11:36,220 --> 01:11:42,000
+What about this one? It is decreasing. Okay, this part is okay.
+
+378
+01:11:43,140 --> 01:11:43,479
+Here?
+
+379
+01:11:44,307 --> 01:11:52,268
+It is, after that, it is increasing. I can't take this part, but I can take this is increasing.
+
+380
+01:11:53,988 --> 01:12:09,628
+After that, it is increasing. So, I can take this part and this part. So, from A to C.
+
+381
+01:12:11,283 --> 01:12:32,563
+and e to g. At this point, it is concave. Now, let me write here, for a to c and e to g, it is concave.
+
+382
+01:12:35,412 --> 01:12:42,811
+Let us write the concave up intervals. At which intervals it is increasing from 0 to A?
+
+383
+01:12:46,811 --> 01:12:49,412
+After that from C to E?
+
+384
+01:12:52,412 --> 01:12:53,811
+And lastly,
+
+385
+01:12:57,412 --> 01:12:58,412
+G to
+
+386
+01:13:02,068 --> 01:13:25,427
+infinity. Concave up in terms. Okay? Do you have any questions? Anlaşıldı mı arkadaşlar grafik okuma? Özellikle şu kısım da önemli sizin için. This part is also important. If you want to learn concave up and concave down and if you have first derivation,
+
+387
+01:13:25,779 --> 01:13:32,159
+Eğer o
+
+388
+01:13:32,159 --> 01:13:32,439
+yüksek,
+
+389
+01:13:32,439 --> 01:13:34,559
+o
+
+390
+01:13:34,559 --> 01:13:34,939
+ok?
+
+391
+01:13:40,532 --> 01:13:41,420
+ok.
+
+392
+01:14:12,340 --> 01:14:24,100
+Okay, in the question they said that our function fx is epsilon 2x minus 2 and the interval is 1 over 3.
+
+393
+01:14:26,340 --> 01:14:29,260
+And they are asking...
+
+394
+01:14:38,163 --> 01:14:44,484
+And they are asking what is the average of f in this interval?
+
+395
+01:14:46,724 --> 01:14:56,083
+And integral relation odity mean value theorem for integrals.
+
+396
+01:14:58,244 --> 01:15:01,043
+Okay. What is c?
+
+397
+01:15:05,652 --> 01:15:19,652
+Okay, firstly, let us find our average. Average of f'function will be 1 over b minus a integral a to the b fx dx.
+
+398
+01:15:22,612 --> 01:15:32,932
+So, our bounce is from 1 to 3. It will be 1 over 2. Integral 1 to 3. Our function is x minus 2.
+
+399
+01:15:33,587 --> 01:15:58,567
+dx. We have absolute value function and the center of this absolute value is 2. So I have to write as two parts. The first one, 1, 2, 2. What I will write here, x minus 2 or 2 minus x. From 1 to 2, it will be negative. So I will write 2 minus x dx.
+
+400
+01:16:00,851 --> 01:16:15,271
+And from 2 to 3, it is x minus 2 dx. Okay. So it is 2x minus x squared over 2.
+
+401
+01:16:18,868 --> 01:16:42,788
+from 1 to 2 plus x square 2 minus 2x from 1 to 2. Ve gelecek bakalım. Aslında bir tanesi buğumuz yeterli. Diğerinin aynısı olacaktır zaten. 4 eksi 2, eksi 2, artı 1, 2.
+
+402
+01:16:45,460 --> 01:16:47,059
+Teş, teş, bulbulik.
+
+403
+01:16:47,899 --> 01:16:48,860
+Teş, yız, bonumut.
+
+404
+01:16:56,115 --> 01:17:12,675
+şu, 2, şu küçük. This is 1 over 2. This is 9 over 2 minus 6 minus 4, böyle 2 den 2 eksi 2, ekstra artı 4.
+
+405
+01:17:18,739 --> 01:17:28,179
+tabir birlik. So it will be 1. Okay? So our average field will be 1. Let's look at the solutions.
+
+406
+01:17:37,555 --> 01:17:39,555
+bu.
+
+407
+01:17:45,300 --> 01:17:58,340
+Okay, the integral is 1, but average will be 1 over 2. Because outside I have 1 over 2, so average f will be 1 over 2, product 1, it is 1 over 2.
+
+408
+01:17:59,640 --> 01:18:04,760
+Okay, if it is 1 over 2, I can cancel this one, this one, and this one.
+
+409
+01:18:06,300 --> 01:18:06,800
+Okay?
+
+410
+01:18:09,640 --> 01:18:11,480
+Now, what about the other one?
+
+411
+01:18:14,355 --> 01:18:22,735
+They are asking, what is the mean value to them for integrites? Do you remember?
+
+412
+01:18:26,595 --> 01:18:27,175
+Okay.
+
+413
+01:18:33,524 --> 01:18:36,844
+Evet, so, let me show here.
+
+414
+01:18:38,384 --> 01:18:39,543
+Şinatıleyelim beraber.
+
+415
+01:18:44,051 --> 01:18:46,251
+mean ve süreklik, 4 integrals.
+
+416
+01:18:47,831 --> 01:18:51,591
+If f is integrable in this interval, blah, blah, blah,
+
+417
+01:18:51,591 --> 01:19:07,311
+there will be a point fc, where it is 1 over b minus a integral, a to the b, fx dx.
+
+418
+01:19:08,311 --> 01:19:08,851
+Okay?
+
+419
+01:19:10,547 --> 01:19:13,747
+So, I find that this is our average. It is 1 over 2.
+
+420
+01:19:14,688 --> 01:19:23,288
+So, if I write c in the function, c minus 1 over 2 will be 1 over 2.
+
+421
+01:19:24,948 --> 01:19:28,747
+Yani ortalamayı sağlayacak bir değer gerekiyor bize.
+
+422
+01:19:28,747 --> 01:19:35,347
+So, if it is c minus 1 over 2 equals 1 over 2.
+
+423
+01:19:36,115 --> 01:19:45,292
+x kare artı 2x, f'
+
+424
+01:19:49,811 --> 01:19:50,771
+fonksiyon 2.
+
+425
+01:19:51,951 --> 01:19:52,271
+Okay.
+
+426
+01:19:54,131 --> 01:19:55,572
+The average is 1 over 2.
+
+427
+01:19:55,572 --> 01:19:58,072
+So, c minus 2.
+
+428
+01:20:03,699 --> 01:20:14,159
+is 1 over 2, so c will be 5 over 2. Is it okay? Yes, because in this part, we assume that c is greater than 2.
+
+429
+01:20:14,960 --> 01:20:27,680
+Okay, we can take c1. Okay. The second one, 2 minus c1, c2, sorry, has to be 1 over 2.
+
+430
+01:20:29,011 --> 01:20:45,752
+So, c2 will be 3 over 2. Is it okay? Yes, because in here we assume that c2 is less than 2. Is it less than 2? Yes, it is okay. So, I can take also 3 over 2. So, our solution is this.
+
+431
+01:20:47,796 --> 01:21:02,796
+So, min mediator and for integrals, they said that if your function is integrable in your interval, then you will have one point, which is equals average of this function in this interval.
+
+432
+01:21:11,572 --> 01:21:16,231
+fonksiyona eşit olan bir nokta, en az bir nokta var demektir diyor.
+
+433
+01:21:22,003 --> 01:21:22,404
+Ok.
+
+434
+01:21:27,891 --> 01:21:28,747
+zaten çok
+
+435
+01:21:32,180 --> 01:21:34,659
+Ya şey olsa değil olurdu. Neyse.
+
+436
+01:21:35,620 --> 01:21:36,739
+Üzerinden birazcık.
+
+437
+01:21:38,300 --> 01:21:38,700
+Okey.
+
+438
+01:21:40,920 --> 01:21:42,479
+Let me write the quiz.
+
+439
+01:21:51,028 --> 01:21:52,628
+I will write the question.
+
+440
+01:21:55,148 --> 01:21:57,427
+They said that fx is
+
+441
+01:21:59,507 --> 01:22:03,108
+x square minus 4 over x square minus 4.
+
+442
+01:22:05,507 --> 01:22:07,507
+And which of the following is wrong?
+
+443
+01:22:08,628 --> 01:22:09,268
+Which
+
+444
+01:22:11,667 --> 01:22:12,548
+is wrong?
+
+445
+01:22:13,587 --> 01:22:15,028
+Okay, this is our question.
+
+446
+01:22:15,667 --> 01:22:17,028
+In A they said that
+
+447
+01:22:18,068 --> 01:22:27,788
+Our domain is R-1, 1. What can you say about this? Is it true or false?
+
+448
+01:22:34,387 --> 01:22:44,987
+It is true or not? Yes, it is true. If you find the points where x kare minus 1 is 0, so it is our domain. Now, let's look at the b.
+
+449
+01:22:46,987 --> 01:22:52,407
+In b, they said that no inflection point.
+
+450
+01:22:57,108 --> 01:23:05,108
+Okay, they said that no inflection point. For this quiz, for this choice, I have to find the second derivation.
+
+451
+01:23:05,667 --> 01:23:19,908
+Let us find the first derivation, 2x, x squared minus 1, minus x squared minus 4, product 2x, over,
+
+452
+01:23:23,475 --> 01:23:26,275
+x kare minus 1 square.
+
+453
+01:23:28,515 --> 01:23:31,636
+Okay, it will be 2x kubus minus 2x kubus.
+
+454
+01:23:32,515 --> 01:23:36,515
+x e 2x artı sekiz altı x idi.
+
+455
+01:23:45,140 --> 01:23:55,300
+x kare artı 2x, x kare artı 2x, ette altı x.
+
+456
+01:23:55,300 --> 01:23:55,700
+Okay.
+
+457
+01:23:57,860 --> 01:23:59,780
+Okay, this is the first derivation.
+
+458
+01:24:00,040 --> 01:24:03,239
+For the inflection point, I have to find the second derivation.
+
+459
+01:24:04,239 --> 01:24:12,159
+It is derivation of 6x, f'еди 6, x square minus 1 square.
+
+460
+01:24:13,011 --> 01:24:36,331
+minus 6x, 2x²-1, product 2x, will be, x²-14. So it will be, if I cancel one part, it is 2x²-1.
+
+461
+01:24:37,043 --> 01:24:45,703
+Bunu yok edersek. x'i 24 x kare mi geldi? Ben yanlış yapıyorum acaba.
+
+462
+01:24:50,644 --> 01:24:51,463
+Farniyans!
+
+463
+01:24:57,747 --> 01:25:07,948
+türevden bir daha bakalım. 2x küp, x'i 2x, 4 kere 2, 8. 2'i çıkardık, 6. Tamam.
+
+464
+01:25:12,307 --> 01:25:15,307
+x kare artı 3x, f'
+
+465
+01:25:19,444 --> 01:25:20,944
+Ay tamam, biskut yok.
+
+466
+01:25:28,372 --> 01:25:56,132
+x kare x, 1'in kare x, 2 x kare x, 1, 2 x tamam. Bunlardan birer tane götürdük. Burası oldu küp. 6 x kare x, 6 pardon. O zaman burasını eksiye alırsak, 6'yı da dışarı alırsak, 1 artı 3 x kare oldu.
+
+467
+01:25:57,108 --> 01:26:00,868
+bu nekü, ok?
+
+468
+01:26:04,884 --> 01:26:14,064
+So, you can say that the second derivation, so, let's find the impossible, let's find the possible inflection point.
+
+469
+01:26:14,443 --> 01:26:18,423
+The first one, the second derivation, you can see that it is always non-zero.
+
+470
+01:26:20,423 --> 01:26:26,243
+For the second derivation, not exist, we have,
+
+471
+01:26:26,931 --> 01:26:36,511
+2x, f' actually, plus and minus 1, but they are not in your domain. So, no inflection point, it is true.
+
+472
+01:26:38,152 --> 01:26:47,752
+Okay. So, at C, they said that they have 3 asymptotes.
+
+473
+01:27:03,572 --> 01:27:12,252
+inci, they said that 3, ne demişti? 3 asimptoms.
+
+474
+01:27:18,804 --> 01:27:24,804
+Okay, what about the asymptotes? The first one, do you have any vertical asymptote?
+
+475
+01:27:31,123 --> 01:27:32,523
+Do you have vertical asimptop?
+
+476
+01:27:38,163 --> 01:27:45,263
+yes, x is plus minus değer vertical asimptom. Do you have horizontal?
+
+477
+01:27:48,851 --> 01:27:54,331
+Horizontal means when you take limit angles to infinity, yes, I have one.
+
+478
+01:27:54,851 --> 01:27:59,971
+This is our horizontal asymptote, but if we have horizontal, we don't have obliquus.
+
+479
+01:28:00,111 --> 01:28:01,951
+So this is your horizontal asymptote.
+
+480
+01:28:02,731 --> 01:28:05,531
+So I have three asymptotes, it is true.
+
+481
+01:28:08,111 --> 01:28:08,992
+Okay.
+
+482
+01:28:10,271 --> 01:28:15,296
+In D, they said that...
+
+483
+01:28:15,296 --> 01:28:16,676
+ek asymtoat yok
+
+484
+01:28:16,676 --> 01:28:18,036
+indi
+
+485
+01:28:18,036 --> 01:28:21,615
+non oblik yok asymtoat
+
+486
+01:28:27,923 --> 01:28:31,184
+Okay, you have to take plus or minus infinity.
+
+487
+01:28:31,623 --> 01:28:32,604
+Okay, let's see.
+
+488
+01:28:34,243 --> 01:28:36,823
+Limit x goes to minus infinity.
+
+489
+01:28:37,064 --> 01:28:38,543
+Let's see what we will have, okay?
+
+490
+01:28:39,944 --> 01:28:43,083
+If x goes to infinity, you can easily see that it is 1.
+
+491
+01:28:43,163 --> 01:28:45,724
+But if x goes to minus infinity, let's see.
+
+492
+01:28:47,543 --> 01:28:53,064
+If I write x squared outside, okay, I will have 1 minus 4.
+
+493
+01:28:54,484 --> 01:28:59,484
+x² over x²
+
+494
+01:28:59,484 --> 01:29:03,284
+1 minus 1 over x².
+
+495
+01:29:03,644 --> 01:29:03,784
+Okay.
+
+496
+01:29:06,264 --> 01:29:08,444
+So this is always.
+
+497
+01:29:11,988 --> 01:29:14,788
+0, this is always 0.
+
+498
+01:29:15,888 --> 01:29:18,007
+It will be 1 over 1, it is 1.
+
+499
+01:29:18,507 --> 01:29:22,048
+So, for both of them, the horizontal asymptote will be 1.
+
+500
+01:29:22,847 --> 01:29:30,708
+No obliquil asymptote, it is true, because if you have horizontal asymptote, then you can't have obliquil asymptote at the same time.
+
+501
+01:29:31,528 --> 01:29:36,507
+What about E? In E, they said that three critical points.
+
+502
+01:29:37,587 --> 01:29:40,827
+In E, they set the three critical points.
+
+503
+01:29:52,148 --> 01:30:19,087
+For this, I have to investigate this one. Okay, let's investigate 6x over x² minus 1². This is f''. If x is 0, this is our critical point. But for plus or minus 1, they can be, but they are not in your domain.
+
+504
+01:30:20,115 --> 01:30:30,855
+So, not critical point. Okay? What I try to say is that we have an asymptote or infinite image.
+
+505
+01:30:39,060 --> 01:30:48,940
+No, both of them will be the same. You are talking about if limit x goes to infinity if your function is b.
+
+506
+01:30:50,739 --> 01:31:02,579
+And or limit x goes to minus infinity if f is b, then y equals b your horizontal asymptom.
+
+507
+01:31:03,780 --> 01:31:04,120
+Okay?
+
+508
+01:31:04,560 --> 01:31:28,000
+If any of them, yes. But maybe in some questions you can find different horizontal asymptotes. For example, x goes to infinity, you can find one. And x goes to minus infinity, you can have minus one, for example. In that case, both of them are horizontal asymptote. But here, x goes to plus or minus infinity, the result is the same. So we have only one horizontal asymptote.
+
+509
+01:31:28,840 --> 01:31:29,360
+Okay?
+
+510
+01:31:31,764 --> 01:31:35,523
+So, the solution is E.
+
+511
+01:31:37,644 --> 01:31:41,003
+Because we have only one critical point.
+
+512
+01:31:41,144 --> 01:31:45,984
+Okay, we have one critical point.
+
+513
+01:31:47,804 --> 01:31:51,023
+Okay, bakalım varla ne iş bir şeyler var.
+
+514
+01:31:52,863 --> 01:31:53,824
+Ne ona benzer?
+
+515
+01:32:01,171 --> 01:32:03,531
+Okay, let's look at this example.
+
+516
+01:32:05,931 --> 01:32:06,251
+Okay.
+
+517
+01:32:07,451 --> 01:32:10,991
+Bir iki tane daha sürç yüzük bırakacağım size yoruldum sizde.
+
+518
+01:32:13,871 --> 01:32:14,431
+Okay.
+
+519
+01:32:14,871 --> 01:32:16,951
+Now, what can you say about this?
+
+520
+01:32:17,091 --> 01:32:18,531
+Let's talk about together.
+
+521
+01:32:19,171 --> 01:32:20,411
+They give a function.
+
+522
+01:32:20,771 --> 01:32:23,311
+Okay, in the question, this is your function.
+
+523
+01:32:23,531 --> 01:32:24,971
+They are asking...
+
+524
+01:32:29,043 --> 01:32:45,003
+which is true for horizontal asymptote of fx.
+
+525
+01:32:47,003 --> 01:32:50,503
+No asymptote, no horizontal asymptote.
+
+526
+01:32:54,228 --> 01:32:59,127
+This is your asymptote, this is your asymptote, this is your asymptote.
+
+527
+01:33:00,987 --> 01:33:02,627
+Okay, what can we say?
+
+528
+01:33:02,967 --> 01:33:07,487
+For the horizontal asymptote, I have to find limit x goes to infinity.
+
+529
+01:33:10,847 --> 01:33:17,208
+I have to find 2x plus 4x².
+
+530
+01:33:19,060 --> 01:33:24,300
+plus 3x over, this is, okay. So I have
+
+531
+01:33:24,300 --> 01:33:35,220
+infinity plus infinity. Okay, what can we find, how can we find this one?
+
+532
+01:33:45,811 --> 01:33:57,211
+Okay, normally, this is, what is this? It is infinity, yes. For positive, it is infinity.
+
+533
+01:33:57,731 --> 01:34:06,471
+But in the horizontal asymptote, I have to look at both of them. But when you take limit x goes to minus infinity, what is this?
+
+534
+01:34:13,043 --> 01:34:17,324
+It is infinity minus infinity.
+
+535
+01:34:18,463 --> 01:34:21,064
+Okay, for this one, okay, this is infinity.
+
+536
+01:34:21,263 --> 01:34:23,283
+It means that we don't have horizontal asim.
+
+537
+01:34:23,324 --> 01:34:28,984
+Not for x goes to infinity, but x goes to minus infinity, it is indeterminat for.
+
+538
+01:34:29,384 --> 01:34:31,283
+So I have to solve this limit.
+
+539
+01:34:31,804 --> 01:34:35,943
+For this, let us product with conjugate.
+
+540
+01:34:35,943 --> 01:34:39,756
+Okay, 2x plus...
+
+541
+01:34:41,587 --> 01:34:44,268
+4x² plus 3x.
+
+542
+01:34:50,355 --> 01:35:15,635
+x minus 4x squared plus 3x, over, 2x minus, 4x squared plus 3x. This is limit x goes to minus infinity.
+
+543
+01:35:17,779 --> 01:35:33,219
+it is 4x squared, minus 4x squared, minus 3x, 2x, minus 4x squared, plus 3x.
+
+544
+01:35:34,119 --> 01:35:34,520
+Okay.
+
+545
+01:35:37,139 --> 01:35:41,620
+Now, in the last part, I want to cancel 1x in your numerator and denominator.
+
+546
+01:35:42,387 --> 01:36:01,807
+Limit x goes to minus infinity, minus 3x. If I write 1x outside, I will have 2. Minus, if I write 1x in the square root function, it will be x squared. 4 plus 3 over x.
+
+547
+01:36:02,807 --> 01:36:08,507
+Okay. Now we can cancel x here, here.
+
+548
+01:36:09,587 --> 01:36:12,747
+This is 1 over infinity is 0.
+
+549
+01:36:12,747 --> 01:36:17,747
+So the result will be minus 3 over...
+
+550
+01:36:17,747 --> 01:36:23,747
+It will be...
+
+551
+01:36:23,747 --> 01:36:25,047
+Which one?
+
+552
+01:36:29,363 --> 01:36:34,303
+to, 2, 2, ne yapabiliriz?
+
+553
+01:36:37,043 --> 01:36:39,303
+eksi, 2 mi olur?
+
+554
+01:36:46,068 --> 01:36:46,548
+acaba?
+
+555
+01:36:48,708 --> 01:36:51,228
+Peki, aslında burası şöyle değil mi?
+
+556
+01:36:59,283 --> 01:37:05,684
+yazdın. Shouldn't we change the sign in the denominator because we took x is out?
+
+557
+01:37:07,684 --> 01:37:08,884
+Bir saniye.
+
+558
+01:37:12,659 --> 01:37:13,479
+Şöyle yapalım.
+
+559
+01:37:14,019 --> 01:37:14,799
+Daha rahat göreceğiz.
+
+560
+01:37:21,332 --> 01:37:22,712
+Şöyle yapalım, daha rahat olacak.
+
+561
+01:37:40,115 --> 01:37:41,068
+list.
+
+562
+01:37:47,667 --> 01:37:48,887
+buradan şöyle çıkar.
+
+563
+01:38:00,083 --> 01:38:13,363
+Okay, actually it is this. Okay, after that, I want to write x outside, but here x goes to negative, x is negative, so I will write this is minus x.
+
+564
+01:38:13,363 --> 01:38:26,363
+So it will be limit x goes to minus infinity, this is minus 3x. If I write x outside, I will have 2 plus...
+
+565
+01:38:27,859 --> 01:38:54,719
+4 plus 3 over x. x kare artı 2x, f'
+
+566
+01:38:54,996 --> 01:38:59,496
+Çünkü burada, bu bir şey yok,
+
+567
+01:38:59,895 --> 01:39:02,615
+direkt bir hizmet verirseniz,
+
+568
+01:39:03,256 --> 01:39:03,536
+tamam mı?
+
+569
+01:39:05,296 --> 01:39:06,216
+Başka?
+
+570
+01:39:15,091 --> 01:39:16,572
+çözüm, çözüm, çözüm.
+
+571
+01:39:19,796 --> 01:39:23,036
+İzle sınav soruları, sanki bunları çözmüştüm size, bunlar vardı.
+
+572
+01:39:31,539 --> 01:39:34,099
+Bir daha göstermişim. Son kısmı göstereyim bir daha.
+
+573
+01:39:37,559 --> 01:39:46,739
+Normally, when I write here x squared outside, normally you have to write in the absolute value, you have to be careful here because x is negative.
+
+574
+01:39:47,219 --> 01:39:57,639
+So I write as absolute value x, in here x goes to minus infinity, I will write outside as minus x, it will be plus.
+
+575
+01:39:58,000 --> 01:40:04,600
+So, if I write x outside, I will have 2 plus in the squared function 4 plus 3 over x.
+
+576
+01:40:04,720 --> 01:40:04,940
+Okay?
+
+577
+01:40:05,880 --> 01:40:09,380
+I will put these questions on the basis page after the lesson.
+
+578
+01:40:09,520 --> 01:40:09,700
+Okay?
+
+579
+01:40:09,940 --> 01:40:10,880
+We can look at it again.
+
+580
+01:40:12,880 --> 01:40:13,880
+And...
+
+581
+01:40:13,880 --> 01:40:16,880
+Oturumu değerini...
+
+582
+01:40:16,880 --> 01:40:21,460
+Bunlar olmasa gene kuveririm size.
+
+583
+01:40:30,260 --> 01:40:45,760
+soruları çözdüm diye hatırlıyorum. Başka da şu an yapacağım bir şey. Bunların mı? Arkadaşım çözmüştü sanırım. Vardı herhalde. Olmazsa koyarım. Var herhalde. Bunları da koyarım. Bakarsınız.
+
+584
+01:40:45,760 --> 01:40:54,760
+I will put these questions but some of them are Turkish. You have to change in English some questions only.
+
+585
+01:40:55,667 --> 01:41:04,667
+ok? But if you have any question, you can write. I can change in English. Ok? Ok, that's enough for today. I will...
+
+586
+01:41:08,564 --> 01:41:09,564
+Seybetelim.
+
+587
+01:41:10,224 --> 01:41:12,384
+Okay, so that's enough for today.
+
+588
+01:41:12,524 --> 01:41:15,104
+I will prepare some extra questions also.
+
+589
+01:41:16,864 --> 01:41:17,784
+I will upload.
+
+590
+01:41:18,024 --> 01:41:20,064
+Okay, now I am uploading.
+
+591
+01:41:21,423 --> 01:41:22,904
+Okay, şimdi yapacağım.
+
+592
+01:41:23,623 --> 01:41:30,784
+Okay, so I will put this written and I will give the questions also.
+
+593
+01:41:30,784 --> 01:41:31,184
+Okay.
+
+594
+01:41:31,699 --> 01:41:35,439
+When I find some extra questions, I will send you again.
+
+595
+01:41:36,059 --> 01:41:38,199
+So have a good exam.
+
+596
+01:41:38,619 --> 01:41:41,960
+I hope that you can take great notes.
+
+597
+01:41:42,639 --> 01:41:47,439
+But don't be upset if you can't...
+
+598
+01:41:49,011 --> 01:41:57,271
+çok daha iyi bir soru, çünkü 2nd examen daha iyi bir soru, çünkü de soru.
+
+599
+01:41:57,271 --> 01:42:06,711
+İçeride soru, ama ilk soru, bir soru, bir soru.
+
+600
+01:42:06,711 --> 01:42:13,771
+İçeride soru, ve son soru, belki de soru, daha iyi bir soru.
+
+601
+01:42:14,963 --> 01:42:21,983
+Moraliniz şey yapmayın, sınavlarda hani genel olarak söylüyorum, moralinizi bozmak için de söylemiyorum.
+
+602
+01:42:23,643 --> 01:42:28,403
+Genellikle ilk sınavlardan sonra daha zor gelebiliyor konu itibariyle ama soruları ben de görmedim, bilmiyorum.
+
+603
+01:42:29,203 --> 01:42:52,023
+Hepinize başarılar diliyorum. Dinerce birinizde ayrıca. Diff'iniz varsa, diff olabilir, matematik olabilir. Ben şimdi soruları yükleyeceğim. Bu arkadaşımınkini de yüklerim. Ekstra soru bulursam onu da yüklerim. Cuma'ya kadar daha vaktimiz var nasıl olsa. Olmazsa belki sınavdan önce bir uygulama falan da yapabiliriz durumumuza bağlı. Tamam mı?
+
+604
+01:42:52,884 --> 01:43:04,724
+Evet arkadaşlar, hepinize kolay gelsin diyorum. Hepinize başarılar diliyorum. İnşallah sınavınız çok çok güzel geçer. Tamam mı? Sorunuz olursa yine WhatsApp'tan bana yazabilirsiniz. Tamam mı? Görüşürüz. Bay bay.

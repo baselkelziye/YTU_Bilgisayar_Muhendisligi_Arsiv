@@ -1,0 +1,3187 @@
+1
+00:00:04,307 --> 00:00:05,407
+Merhaba arkadaşlar.
+
+2
+00:00:18,643 --> 00:00:20,243
+İki dakika bekleyelim arkadaşlarımızı.
+
+3
+00:00:32,787 --> 00:00:38,847
+Nasılsınız bakalım bu arada? Fizik belli oldu mu bu arada? Belli olmadı falan diyordunuz en son.
+
+4
+00:00:52,404 --> 00:00:53,164
+Allah Allah.
+
+5
+00:00:55,164 --> 00:00:57,144
+Eee ne yaptınız? Çizik nasıl geçti?
+
+6
+00:00:59,603 --> 00:01:00,404
+Hay hay.
+
+7
+00:01:03,044 --> 00:01:07,664
+Bazılarından bazı. Bazılarından nasıl belli olmamış? 2'ye mi böldüler? O yüzden mi?
+
+8
+00:01:16,980 --> 00:01:32,439
+zorlamışlar bayağı öyle duydum. Özellikle bize sonra bir arkadaşa bir öğrenci soru şey yapmış da yani içinde diferansiyel denklemler falan ne ararsam var diferansiyel denklem görmeden. İyi yapmışsınız, integrali görmeden integral almışsınız.
+
+9
+00:01:39,284 --> 00:01:44,664
+dif alıyorsunuz. ha difi evet görmüşsünüz. ya basit bir diferansiyel denklem tarzı bir şey varmış sanırım.
+
+10
+00:01:44,664 --> 00:01:52,604
+hani onu yaparsanız da integral alma tekniklerinde daha geçmediğimiz için o şeyi, kısmıyı falan.
+
+11
+00:01:52,604 --> 00:01:58,604
+ya difte sorun yok.
+
+12
+00:01:58,604 --> 00:02:06,604
+difte yani problem yaşayacağınızı düşünmüyorum da şu an sıkıntı anladığım kadarıyla şeyde.
+
+13
+00:02:06,772 --> 00:02:32,872
+Şimdi eski gelen öğrenciler bilerek geliyordu integral falan. İlk ürte bilerek geliyorlardı. Şimdi siz bilmediğiniz için onun... Biz integralde neler işledik? Biz integralde ne işledik? Tablo halinde yani belirli formülleri olanları işledik. İşte sinüs, kosinüs, tablo olarak direkt bulabildiklerimizi işledik. Sonra Riemann'a geçtik. Daha integral çözümüne bugün geçeceğiz.
+
+14
+00:02:34,771 --> 00:02:40,872
+O diften almıştır. Differansiyelden 83 almış oluydu.
+
+15
+00:02:48,276 --> 00:03:02,256
+Yani aşağı yukarı bu şekilde oluyor ama bu dönem derken şimdi yeni gelen öğrenciler integral bilmedikleri için o bize sıkıntı yaratıyor anladığım kadarıyla.
+
+16
+00:03:02,256 --> 00:03:14,316
+Yani şu anda çünkü eskiden sekreliğe gidiyordu. İntegral biliyordunuz iyi kötü. Ama yeni gelen öğrencilerin bir kısmı hiç bilmiyorlar. Hiç bilmeden yani bizim integral konumuz o şeye yetişmiyor.
+
+17
+00:03:15,860 --> 00:03:22,260
+Sonuçta mesela şimdi kısmı integral kullanmışsınızdır ama biz kısmı integrasyonu mesela bugün geçeceğiz.
+
+18
+00:03:23,420 --> 00:03:29,159
+Eskiden öğrencileri kötü biliyorlardı. Şimdi bilmedikleri için biraz o konularda sıkıntı.
+
+19
+00:03:30,879 --> 00:03:36,260
+Başka neyle ilgili sıkıntınız var? Zorlamış da olabilirler tabii.
+
+20
+00:03:39,283 --> 00:03:44,843
+Evet, işleyeceğimiz yerleri attım. İşlediğimizi de attım, bugün işleyeceğimizi de attım.
+
+21
+00:03:49,939 --> 00:03:50,439
+Peki.
+
+22
+00:03:58,068 --> 00:04:01,228
+fizikte mi? 15'in altında aldın.
+
+23
+00:04:10,675 --> 00:04:35,875
+Matematikte. Ya bakın ortalama ne olursa olsun en az 40 olması gerekiyor ki, şöyle söyleyeyim bu arada, benim iki grubum vardı. Birinin ortalaması 79 küsür, birinin de 84 küsürdü. Ben birinci olduğumu biliyordum. Pınar Hoca ikinci olduğunu biliyordum. Küsüratla ama öyle değilmiş. Birinciliği kaptırmışım 87 ortalama öyle bir hocaya.
+
+24
+00:04:36,435 --> 00:05:03,935
+Ben de çok şaşırdım. Bayağı yüksek bir ortalama da var. 87 gibi bir ortalama da var. 87, sonra 84 geliyor işte benim diğer grubum. Sonra başka bir hoca daha var. O da 84'lü. Yine Pınar Hoca var 84'lü. Sonra aşağı doğru iniyor. Ortalamalar yüksek. 70 üzeri büyük ihtimalle. Kalır mısın? Şu an belli değil açıkçası. Ama nasıl 15 aldın ki? Keşke biraz daha şey yapsaydın. Yani 15 daha iyi alabilirdin.
+
+25
+00:05:04,531 --> 00:05:10,192
+ikinci vizeye sıkı çalış. Yani ikinci vize ve finalden alırsan hala geçebilirsin.
+
+26
+00:05:12,512 --> 00:05:21,312
+15 puan altında, pardon. Ben öyle okudum da. Tamam, pardon [öğrenci]. Yok yok, bir şey olmaz. Geçme konusunda sıkıntı olmaz.
+
+27
+00:05:22,572 --> 00:05:27,471
+Hani iyi bir not alayım diyorsan daha yüksek arttırırsın ama yok, hayır kalmazsın 15 puan altında.
+
+28
+00:05:27,956 --> 00:05:42,596
+Tabii düşürmezsen, 2. vize konuları daha belli değil. Bize bu hafta söyleyecekler. Sınav dediğim gibi 12. normal ya, normal. Yok yok, sıkıntı yok. Ben 15 aldığını zannettim. Hatta düşünüyorum 15 alan öğrencim de yoktu ama.
+
+29
+00:05:43,415 --> 00:05:49,016
+2. vizeniz 12. haftanın içerisinde hafta içi, gün belli değil.
+
+30
+00:05:49,588 --> 00:05:58,627
+Çünkü hafta sonu çıkma yasağı olduğu için bazı öğrencilerin çıkması gerekiyor internet kafeyi herhangi bir yere gitmesi için. O yüzden hafta içine kondu.
+
+31
+00:05:59,408 --> 00:06:06,468
+Konu olarak daha tam belli değil ama integral bir kısmı olacaktır. Ama bana gelince ben de size söyleyeceğim.
+
+32
+00:06:07,768 --> 00:06:13,968
+Onun dışında yine grup olacak ama bu sefer bizim grubumuz birinci etapta olacak.
+
+33
+00:06:14,420 --> 00:06:17,420
+İlk sınavda ikinci olarak biz başlamıştık.
+
+34
+00:06:19,560 --> 00:06:27,220
+Hayır, yani sonuçta, hayır, sokağa çıkma yasağı olmayınca öğrenci hafta sonu olduğu zaman çıkıp başka yerde gidebiliyordu.
+
+35
+00:06:29,040 --> 00:06:31,140
+Ama şu an gidemediği için hafta sonu yapamıyoruz.
+
+36
+00:06:31,860 --> 00:06:32,920
+12. hafta ne?
+
+37
+00:06:33,920 --> 00:06:37,120
+Derken 12. hafta, belirli bir tarih daha vermediler.
+
+38
+00:06:37,560 --> 00:06:39,660
+Daha belirli, yani kesin olmadı daha.
+
+39
+00:06:40,820 --> 00:06:41,740
+Tabii, ders olacak.
+
+40
+00:06:44,372 --> 00:06:56,372
+aşağı yukarı aynı olur. Bir tık belki daha şey olabilir. Çünkü integral işin içine giriyor. Daha farklı konular girdiği için biraz daha zorlanabilirsiniz. O yüzden...
+
+41
+00:06:59,795 --> 00:07:25,836
+iki tane sınav yap... Yani iki tane not verilmesi gerekiyor. O yüzden iki vize bir final oluyor. Biz ödev veremeyeceğimiz için biz iki vize bir final yapıyoruz. Ama her zaman öyleydi zaten. Normal, uzaktan değil şu an normal eğitim de olsaydınız bu şekilde. Yani bilmiyorum şu an birinci sınıfsınız. O yüzden şu an size öyle geliyor ama inanın her zaman böyle olacak. Yani birinci vizeye başladıktan sonra artık sınavlarınız bitmeden devam ediyor. Biri bitiyor, biraz sonra diğeri başlıyor.
+
+42
+00:07:26,420 --> 00:07:27,900
+Tabi, testi devam ediyoruz.
+
+43
+00:07:30,040 --> 00:07:32,860
+Şimdi matematik 1. sınavda 2'ye bölünmüştü.
+
+44
+00:07:32,920 --> 00:07:34,780
+1 grup 1'de, 1 grup 3'te girmişti.
+
+45
+00:07:34,960 --> 00:07:36,700
+Biz 3'teki gruptaydık.
+
+46
+00:07:37,120 --> 00:07:38,280
+Şimdi onun yeri değişecek.
+
+47
+00:07:38,760 --> 00:07:42,140
+Biz 1'de, işte kaçtaysa artık yani hafta sonu için öyleydi tabi.
+
+48
+00:07:42,800 --> 00:07:44,340
+İlk grupta biz gireceğiz.
+
+49
+00:07:44,780 --> 00:07:46,400
+Sonra öbür gruplar girecek.
+
+50
+00:07:47,348 --> 00:08:00,168
+Yani yerini değiştiriyorlar. Şimdi 1 ve 3'tü birinci vizede. Şimdi 3'te 1'in yeri değişecek. Yani ilk siz gireceksiniz. Ondan sonra öbür grup girecek 2 saat sonra. Finalde bilmiyorum artık.
+
+51
+00:08:04,403 --> 00:08:08,103
+Çünkü ikinci grupta girenlerin ortalaması biraz daha yüksek.
+
+52
+00:08:08,223 --> 00:08:13,944
+Tabii soruları görebildikleri için aşağı yukarı en azından hangi konular sorulabilir diye.
+
+53
+00:08:14,043 --> 00:08:18,184
+O yüzden onların ortalaması biraz daha yüksek. O yüzden şimdi tam tersine yapacaklar.
+
+54
+00:08:19,923 --> 00:08:23,363
+Yani bölmek zorundayız çünkü sistem kaldırmıyor. 5 bin öğrenci var.
+
+55
+00:08:31,252 --> 00:08:52,032
+Yerleri değiştiriyorlar. Yani matematiği ikiye böldük. İşte Türkçe grupların ilk 25 grup ilk etapta girdi. Sonraki gruplar ikinci etapta girdi. Şimdi tam tersi olacak. 25. grup ve sonrası ilk etapta girecek. İlk 25 grup olanlar da ikinci etap. 1 ve 2. Yerleri değişti sadece.
+
+56
+00:08:54,932 --> 00:09:14,271
+İkinci vize ile ilgili konuşuyorduk. İkinci vize ne zaman? Tam gün olarak tarihi veri değil. Sadece 12. haftanın içinde olacağını biliyorum. Yani bu hafta 10, 11, 12. Yani 21 Aralık'ın olduğu hafta hangi gün olur onu bilmiyorum ama büyük ihtimalle akşam saatleri olur diye tahmin ediyorum. Çünkü herkesin hafta günün içinde dersleri var.
+
+57
+00:09:15,412 --> 00:09:35,992
+ona göre bir belli olsun şey yapacağız. Sınav konusu olarak tam yeri belli değil ama integral konusunun bir kısmı dahil olacaktır. Tamam? Evet, evet. 2 hafta sonra. Bu 10. haftadayız. 12. haftada olacak işte. Yani haftaya, bu hafta dersimiz var. Haftaya dersimiz var.
+
+58
+00:09:35,992 --> 00:09:39,612
+Tabii, pardon. Okey.
+
+59
+00:09:40,211 --> 00:09:59,811
+Now we are talking about the second exam. Your second exam will be at the week of 21, but the exact time is not clear. You will have the second midterm in the 12th week. We have two weeks. We will see the subjects this week and next week.
+
+60
+00:10:00,000 --> 00:10:05,000
+Sonraki videoda sonra, ikinci midterm hakkında bir şey var.
+
+61
+00:10:05,000 --> 00:10:10,000
+Ama bu konuda, hiçbir şey var.
+
+62
+00:10:10,000 --> 00:10:15,000
+Ama bu konuda, bazı tekniklerle görebilirsiniz.
+
+63
+00:10:15,000 --> 00:10:18,000
+Bu konuda, ilk dönem.
+
+64
+00:10:18,000 --> 00:10:23,000
+8. January.
+
+65
+00:10:23,000 --> 00:10:27,724
+Bu konuda 14 günlük.
+
+66
+00:10:29,107 --> 00:10:56,447
+Okey. Okey, now I want to start the lesson. Okey, I want to close this one. Okey, last week I think we finished with the Riemann song. Geçen hafta nerede kalmıştık? Size alınıverdim değil mi? İki grubum var da karıştırıyorum, birinde daha girdim. Alınıverdim diye hatırlıyorum en son. Last week we talked about Aria, I think.
+
+67
+00:10:56,820 --> 00:11:15,680
+Okay. And I want to say one thing about ARIA. ARIA subject is a later subject. Okay. Probably in the second exam, they won't ask ARIA. Because in the sci-blus, first the integral techniques. Okay. After that, we have ARIA.
+
+68
+00:11:17,076 --> 00:11:23,076
+ve völüm, ama bu prevenç semestere, bu order var farklı.
+
+69
+00:11:23,076 --> 00:11:30,076
+Bu, ben de araya bahsettiğim, araya bahsettiğim, araya bahsettiğim, araya bahsettiğim, ok?
+
+70
+00:11:30,076 --> 00:11:36,076
+Ama bu, ben de araya bahsettiğim, sonraki midterm sorunlar, sonraki bölümde araya bahsettiğim.
+
+71
+00:11:36,076 --> 00:11:37,580
+Normalde...
+
+72
+00:11:37,875 --> 00:11:42,556
+alan konusu aslında daha önce anlatılıyordu ama şimdi onun yeri değişmiş.
+
+73
+00:11:42,875 --> 00:11:46,576
+Alanı anlattım ama ikinci vize de sorulmayacak. Yani konuya dahil olmayacak.
+
+74
+00:11:48,836 --> 00:11:49,816
+No, they will.
+
+75
+00:11:51,936 --> 00:11:54,396
+All the subjects are included. They can ask.
+
+76
+00:11:54,396 --> 00:11:59,716
+Okay, if we don't have any questions, let's start our integral techniques.
+
+77
+00:12:00,179 --> 00:12:06,939
+We will see many different kinds of integral techniques. The easy one, the first one is substitution.
+
+78
+00:12:08,039 --> 00:12:14,399
+If u equals gx is a differentiable function on an interval i, this is your domain.
+
+79
+00:12:15,199 --> 00:12:25,340
+And if f is continuous on this domain, i can be any real number, it can be real number or interval or union of intervals.
+
+80
+00:12:27,539 --> 00:12:47,279
+If you have f g x, g prime x dx, then I can change this integral and I can write as f u du. I can use a simple transformation and if I use this transformation, this integral can be written as f u du.
+
+81
+00:12:48,759 --> 00:12:50,659
+Let me give some examples.
+
+82
+00:12:51,347 --> 00:12:58,028
+And also the same. If you have a definite integral, you can use this transformation. Okay?
+
+83
+00:12:59,187 --> 00:13:05,548
+These parts are the same, but you have to change the bounds of the integral. What is that?
+
+84
+00:13:05,548 --> 00:13:15,427
+You will write, if x is a, this new bound will be g a. If it is b, this new bound will be g b.
+
+85
+00:13:16,388 --> 00:13:17,927
+Let us see in the examples.
+
+86
+00:13:27,956 --> 00:13:54,236
+This is our first example. They are asking, this is an indefinite integral. Now, here I want to use a simple transformation. What can I take? Especially if you have a root, square root, or cube root, we prefer to use a transformation for this function. Inside, I have 2x plus 1. So, I can write as, I will show you two ways, okay?
+
+87
+00:13:55,091 --> 00:14:18,412
+In the first way, I will take 2x plus y is u. This is our transformation. Now I will change x, our new variable will be u. But I have to find also dx. So let us take differential of left side and right side. 2 dx will be du.
+
+88
+00:14:21,091 --> 00:14:21,851
+Okay.
+
+89
+00:14:22,644 --> 00:14:34,264
+Now let us write in the differential equation x. What is x? If you look at here, we can write x will be u minus 1 over 2.
+
+90
+00:14:35,724 --> 00:14:39,744
+Okay, u minus 1 over 2.
+
+91
+00:14:42,644 --> 00:14:45,403
+This is square root will be u.
+
+92
+00:14:47,572 --> 00:15:12,251
+and dx will be du over 2. Now we can find this integral very easily. It is polynomial. Firstly, I can write 1 over 4 outsides. Inside I have u. I have 1 and half. It will be u to the power 3 over 2.
+
+93
+00:15:13,940 --> 00:15:18,720
+minus u, 1 over 2, d.
+
+94
+00:15:24,052 --> 00:15:49,371
+I have to find these integrites. Okay, let us write here. 1 over 4. This is a polynomial. How can we find? I have to add 1 to your power and you will write the same thing as your denominator. 3 over 2 plus 1. It will be 2 over 5.
+
+95
+00:15:50,836 --> 00:16:03,416
+u to the power 5 over 2, minus, if I have u to the power 1 over 2, I will add 1, and I will write the same thing as your denominator.
+
+96
+00:16:04,796 --> 00:16:15,436
+It will be 2 over 3, u 3 over 2, and a constant c, because it is an indefinite integral.
+
+97
+00:16:15,892 --> 00:16:25,772
+Now, when you use the transformation at the last, you have to write your transformation back. I will have... Okay, one second.
+
+98
+00:16:39,059 --> 00:16:39,859
+Okay, sorry.
+
+99
+00:16:42,659 --> 00:16:46,819
+Okay, I will have 1 over 10.
+
+100
+00:16:51,155 --> 00:17:09,915
+u is 2x plus 1, ok, to the power 5 over 2, minus 1 over 6, 2x plus 1, 3 over 2, and a constant c, ok.
+
+101
+00:17:15,316 --> 00:17:20,836
+When you take the derivation of here, it is 2 will be u''.
+
+102
+00:17:20,836 --> 00:17:22,115
+Okay.
+
+103
+00:17:22,796 --> 00:17:25,916
+What is u''? u' is du over dx.
+
+104
+00:17:27,556 --> 00:17:31,996
+So actually it will be 2dx plus will be du.
+
+105
+00:17:32,615 --> 00:17:34,076
+Okay, it comes from here.
+
+106
+00:17:34,635 --> 00:17:39,175
+You will take derivation of each term, but you will write
+
+107
+00:17:41,940 --> 00:17:48,940
+ve süreklik, bir dakika.
+
+108
+00:19:09,748 --> 00:19:13,168
+I'm so sorry. I need to look at the font.
+
+109
+00:19:14,587 --> 00:19:20,807
+Okay, here, square root means that the power is 1 over 2. Okay?
+
+110
+00:19:23,867 --> 00:19:25,188
+Boyu kullanma aracına.
+
+111
+00:19:26,188 --> 00:19:28,427
+x'in kök içine atamıyorsunuz.
+
+112
+00:19:28,608 --> 00:19:29,468
+Hayır, atamıyorsunuz.
+
+113
+00:19:29,468 --> 00:19:32,927
+Atabilirsiniz, x kare olarak atabilirsiniz ama bir anlamı yok.
+
+114
+00:19:34,188 --> 00:19:35,887
+Okay, so did you understand this way?
+
+115
+00:19:40,115 --> 00:19:45,536
+Okay. No. Why is no? You didn't understand this way, this part?
+
+116
+00:19:50,387 --> 00:20:01,607
+Okay. So, if you have this question, if you have a root function, square root or cube root, we prefer to take each side of the function as u.
+
+117
+00:20:04,367 --> 00:20:14,807
+Okay. So, I will take 2x plus 1 as u. After that, you will take the financial. What is this? Take each function's derivation.
+
+118
+00:20:15,316 --> 00:20:19,896
+After that, product with the differential of each term.
+
+119
+00:20:19,996 --> 00:20:25,556
+Here x, derivation of x is 1, but I have the coefficient 2, so it will be 2 product.
+
+120
+00:20:26,276 --> 00:20:30,816
+Differential of x will be dx. 1 is a constant, it will be 0.
+
+121
+00:20:31,696 --> 00:20:37,436
+Derivation of u, according to u, will be 1. Product, differential of u will be du.
+
+122
+00:20:37,976 --> 00:20:42,915
+Or you can think like this, you will take derivation with respect to x, it will be this.
+
+123
+00:20:43,443 --> 00:21:10,083
+What is u' ? u' is du over dx. It means that 2dx will be du. When you write here, you will find an easy integral. They are polynomials. And I will take integral of these polynomials here and here. This is our solution, but if you use the transformation, you have to write
+
+124
+00:21:10,579 --> 00:21:19,679
+your transformation bank, so I cancel you and I write 2x plus 1 in each part. This is the first way.
+
+125
+00:21:19,679 --> 00:21:21,679
+The second way...
+
+126
+00:21:29,428 --> 00:21:40,908
+I will take the root function again, but you can prefer to take 2x plus 1 as u squared.
+
+127
+00:21:41,148 --> 00:21:53,888
+I have a square root function. I can take u squared. 1 over 4 here? Here. I write outside. Okay?
+
+128
+00:21:57,556 --> 00:22:05,076
+Now, if you have a root function, if it is square root, I can take u square. If it is cube root, I can take u cube.
+
+129
+00:22:05,836 --> 00:22:12,275
+Let us see what happens. Let's take differential of left side and right side. Differential of x will be dx.
+
+130
+00:22:13,635 --> 00:22:19,455
+Differential of 1 is 0. Differential of this function, derivation of u is 2u.
+
+131
+00:22:20,455 --> 00:22:22,220
+And differential of...
+
+132
+00:22:23,667 --> 00:22:31,027
+türev'in alık yanına diferans yerinde yazıyorsunuz. Now I will write these transformations in the integral.
+
+133
+00:22:32,707 --> 00:22:34,955
+x will be from here.
+
+134
+00:22:38,259 --> 00:22:46,599
+u²-1 over 2. Okay? So, it will be u²-1 over 2.
+
+135
+00:22:49,719 --> 00:22:55,459
+In this squared root function, if I write here is u², it will be u.
+
+136
+00:22:56,959 --> 00:23:03,619
+The u will be, if I cancel the x, it will be u du.
+
+137
+00:23:10,740 --> 00:23:21,240
+Okay, so this integral will be u to the power 4 minus u square over 2 du.
+
+138
+00:23:25,011 --> 00:23:37,351
+So, integral will be u to the power 5 over 10 minus u cube over 6 and a constant c.
+
+139
+00:23:38,692 --> 00:23:51,851
+And if you write your transformation, u here you can see that 2x plus 1, I have power 5 and because of the root it is 2.
+
+140
+00:23:53,236 --> 00:24:17,636
+over 10, 2x plus 1, 3 over 2, over 6 plus c. Let me write here, u will be 2x plus 1 to the power 1 over 2.
+
+141
+00:24:20,084 --> 00:24:21,443
+Bu ikinci bir şekilde.
+
+142
+00:24:24,344 --> 00:24:25,584
+İki bir şekilde.
+
+143
+00:24:26,923 --> 00:24:28,144
+Bu bir şekilde.
+
+144
+00:24:28,144 --> 00:24:29,984
+Çünkü burada bir şekilde.
+
+145
+00:24:29,984 --> 00:24:31,824
+İrrationalı bir şekilde.
+
+146
+00:24:32,064 --> 00:24:33,804
+2 over 3, 5 over 3.
+
+147
+00:24:33,943 --> 00:24:34,423
+Bir şey.
+
+148
+00:24:34,984 --> 00:24:35,703
+Bir şekilde.
+
+149
+00:24:35,703 --> 00:24:37,824
+İnteger.
+
+150
+00:24:38,584 --> 00:24:39,403
+Bu bir şekilde.
+
+151
+00:24:40,344 --> 00:24:40,683
+Tamam.
+
+152
+00:24:40,804 --> 00:24:42,423
+Bu bir şekilde.
+
+153
+00:24:49,107 --> 00:24:53,987
+Ok, now let us see another example.
+
+154
+00:25:11,412 --> 00:25:25,172
+Okay, here, I need to use a transformation, but which one can I take? Firstly, if you have like this, you can look at, is there any function whose derivation is there also?
+
+155
+00:25:26,292 --> 00:25:38,392
+Türevi, orada olan herhangi bir fonksiyon var mı önce bir ona bakabilirsiniz. For example, if I take 3x, 3x squared plus 1, the derivation of this function will be 6x, but I don't have.
+
+156
+00:25:39,155 --> 00:25:40,155
+anyone.
+
+157
+00:25:40,155 --> 00:25:43,155
+If I look at...
+
+158
+00:25:43,155 --> 00:26:06,255
+...
+
+159
+00:25:50,675 --> 00:26:01,775
+If I want to take our function as this, okay, derivation of this function is 3x² plus 1, yes, I have here.
+
+160
+00:26:01,775 --> 00:26:07,255
+So, let us take x³ plus x as u.
+
+161
+00:26:09,455 --> 00:26:17,835
+So, differential of left side and right side will be 3x² plus 1.
+
+162
+00:26:18,708 --> 00:26:32,428
+dx, d'u. Okay? Now let's write this transformation in the differential equation. I take that it is u, u to the power 5.
+
+163
+00:26:34,028 --> 00:26:45,708
+And all of them are du. It is very easy. It is u to the power 6 over 6. And a constant c.
+
+164
+00:26:46,387 --> 00:27:00,788
+it will be x cubed plus x to the power 6 over 6 plus c. This is our solution and it is very easy actually.
+
+165
+00:27:02,147 --> 00:27:10,307
+If you have derivation at any place, then you can take your function as like this x cubed plus x.
+
+166
+00:27:14,067 --> 00:27:14,923
+ok?
+
+167
+00:27:18,516 --> 00:27:20,516
+For example, this question.
+
+168
+00:27:27,859 --> 00:27:29,119
+What can you do here?
+
+169
+00:27:32,539 --> 00:27:35,099
+I have x kare, sign x kare.
+
+170
+00:27:39,923 --> 00:27:42,403
+ne tür bir transformaçı yapabiliriz?
+
+171
+00:27:53,523 --> 00:27:55,143
+x3 over 3.
+
+172
+00:27:55,703 --> 00:27:57,923
+Okay, so let's take x3
+
+173
+00:27:57,923 --> 00:27:58,883
+as u.
+
+174
+00:28:00,723 --> 00:28:01,543
+The financial
+
+175
+00:28:01,543 --> 00:28:03,663
+will be 3x2
+
+176
+00:28:03,663 --> 00:28:05,163
+dx
+
+177
+00:28:05,163 --> 00:28:07,843
+will be
+
+178
+00:28:07,843 --> 00:28:08,303
+du.
+
+179
+00:28:09,743 --> 00:28:11,543
+Okay, if you write this
+
+180
+00:28:11,543 --> 00:28:12,463
+transformation
+
+181
+00:28:12,463 --> 00:28:14,843
+x2
+
+182
+00:28:14,843 --> 00:28:17,943
+dx will be
+
+183
+00:28:17,943 --> 00:28:19,083
+du over 3.
+
+184
+00:28:22,291 --> 00:28:40,411
+and sin x cube will be u. So, our integral will be this sin u over g du. It is very easy. If we use the table, it will be 1 over 3 minus cosine u and a constant c.
+
+185
+00:28:40,871 --> 00:28:48,771
+And if we write our transformation back, it will be 1 over 3 cosine x cube.
+
+186
+00:28:50,355 --> 00:28:53,395
+and a constant c here.
+
+187
+00:28:56,195 --> 00:28:57,955
+Do you have any question here?
+
+188
+00:29:23,988 --> 00:29:26,627
+Bu örneğin ne yapabiliriz?
+
+189
+00:29:37,715 --> 00:29:41,715
+What can we use? What kind of transformation can we write?
+
+190
+00:29:52,180 --> 00:30:08,720
+Okay, firstly, you can take x² plus 1 as u. Okay, or you can write, I said that if you have a root function, you can look at the root, it is cube root, it will be more easy to select u cube.
+
+191
+00:30:09,539 --> 00:30:18,579
+In that case, you don't need to make operation with a rational number.
+
+192
+00:30:19,347 --> 00:30:36,727
+Okay, so what is this? 2x dx will be 3u² du. But you can also take u. Both of them are true. But this process is more easy.
+
+193
+00:30:37,467 --> 00:30:46,727
+Okay, so let us write 2x dx will be 3u² du over...
+
+194
+00:30:47,188 --> 00:31:02,728
+u. Okay, we can cancel. This integral will be 3u² over 2. And a constant c, it will be 3 over 2.
+
+195
+00:31:04,228 --> 00:31:13,728
+What is u here? u will be x² plus 1 to the power 1 over 3.
+
+196
+00:31:14,836 --> 00:31:25,016
+So, if I want to write u², it will be x² plus 1, 2 over 3, and a constant c.
+
+197
+00:31:30,771 --> 00:31:36,331
+Do you want me to use the other way? Diğer yöntemi de yapmamı ister misiniz?
+
+198
+00:31:38,392 --> 00:31:48,571
+Okay. At home also you can take you and you can see the difference. You don't have any difference but the number are different. Okay?
+
+199
+00:31:50,971 --> 00:31:55,152
+Okay. Aslında burayı da yapmışım büyük ihtimalle. Burada görebilirsiniz.
+
+200
+00:31:57,172 --> 00:32:07,172
+Okay, let's look at this example. It is very easy. I write sθ. You can see different notation also.
+
+201
+00:32:08,031 --> 00:32:22,291
+So, if I take 7θ plus 3s u, 7dθ will be du. So, our new integral will be cosine u. For dθ, I will write du over 7.
+
+202
+00:32:22,867 --> 00:32:30,028
+So, the integral will be 1 over 7. Integral of cosine function will be sin u plus c.
+
+203
+00:32:30,667 --> 00:32:36,768
+After that, in the last part, I have to write theta. It will be 7 theta plus 3.
+
+204
+00:32:38,288 --> 00:32:39,988
+This question is very easy.
+
+205
+00:32:40,847 --> 00:32:45,468
+Okay, now, in the next part, I want to solve a definite integral.
+
+206
+00:32:46,488 --> 00:32:48,508
+Let's see what can we do here.
+
+207
+00:32:49,619 --> 00:32:51,339
+Buraya kadar anlaşıldı mı arkadaşlar?
+
+208
+00:32:54,159 --> 00:32:56,359
+Sizden bir fazla sesiniz çıkmıyor.
+
+209
+00:32:57,639 --> 00:32:59,019
+Hızlı gidiyorsam da söyleyin.
+
+210
+00:32:59,099 --> 00:33:01,059
+Çünkü ben de anlayamayabiliyorum bazen.
+
+211
+00:33:04,723 --> 00:33:13,984
+Okay, so here I will use a transformation, but our equation, our integral is also definite integral.
+
+212
+00:33:13,984 --> 00:33:19,663
+So what can I write for transformation? What can I take?
+
+213
+00:33:20,984 --> 00:33:21,584
+No, no, please.
+
+214
+00:33:30,675 --> 00:33:33,995
+What can we use? What kind of transformation can we use here?
+
+215
+00:33:35,275 --> 00:33:36,655
+Okay, let's see.
+
+216
+00:33:38,395 --> 00:33:44,595
+If I take x plus 1 is u squared, what happens?
+
+217
+00:33:45,715 --> 00:33:48,875
+dx will be 2ud.
+
+218
+00:33:49,995 --> 00:33:51,975
+Okay, let's write here.
+
+219
+00:33:53,655 --> 00:33:57,055
+Integral cosine u.
+
+220
+00:33:57,647 --> 00:34:21,648
+dx will be 2u du over, this will be u. You can cancel, it will be sine u. Okay. But what about the bounds? You have to change the bounds because it is definite integral. If x is 0,
+
+221
+00:34:24,211 --> 00:34:49,231
+you will be 1. Actually, it can be positive or negative, but we prefer to take a positive. If x is 8, you will be 3. Pardon, evet, 8 olsun, 9, 3. Şimdi bakın, ya pozitiflerin alacaksınız, ya negatifleri alacaksınız. Ama burada şuna da bakmak gerekir. x'in eksi birden büyük olması gerekiyor.
+
+222
+00:34:50,963 --> 00:35:09,163
+u'da burada bir şey yok. Her şeyi alabiliriz. Negatif de alabiliriz. Bir sıkıntı olmuyor. Yani şöyle, bire 3 alırsınız. Genellikle biz öyle alıyoruz. Ya da hiç şunu yapmayabilirsiniz de normal bilgisiz gibi yapıp en sonunda da yerine yazabilirsiniz. Fark etmez.
+
+223
+00:35:09,163 --> 00:35:11,663
+It will be 1 to 3.
+
+224
+00:35:18,260 --> 00:35:45,980
+1, 2, 3. It will be 2 sin 3 minus sin y. Okay? Or, let's look at here, in the next, or in the second choice, this is the first way. Okay?
+
+225
+00:35:46,996 --> 00:35:48,216
+in the second way,
+
+226
+00:35:49,216 --> 00:35:53,636
+I can take x plus 1
+
+227
+00:35:53,636 --> 00:35:56,676
+as t.
+
+228
+00:35:57,256 --> 00:35:57,556
+Okay?
+
+229
+00:35:58,275 --> 00:35:59,775
+If I take t,
+
+230
+00:36:00,396 --> 00:36:03,336
+differential of this function will be 1 over 2
+
+231
+00:36:03,336 --> 00:36:05,036
+squared x plus 1,
+
+232
+00:36:08,036 --> 00:36:09,516
+dx will be dt.
+
+233
+00:36:12,556 --> 00:36:14,115
+Gerçi aynıye geliyor ya.
+
+234
+00:36:15,155 --> 00:36:19,655
+Ay neye geliyor? Pardon, kafam karıştı. Yaptığımızda aynı şey geliyor aslında.
+
+235
+00:36:22,456 --> 00:36:30,395
+2. yol görüşüme inerisinde denk geliyor. Ya da 2 saati bile t diyebilirsiniz ama çok daha zorlaştırır. Şimdi bu kadar yeter. Tek yöntemle yapın.
+
+236
+00:36:33,907 --> 00:36:36,007
+Benim yaptığım aynısı, ben böyle yazdım sadece.
+
+237
+00:36:38,467 --> 00:36:41,068
+Okay, so, [öğrenci] here, do you have any questions?
+
+238
+00:36:43,707 --> 00:36:45,207
+Do you understand substitution?
+
+239
+00:36:51,027 --> 00:36:59,347
+Okay. Okay. Now, actually, I give the formula for tangent, secant, cotangent, and cosecant.
+
+240
+00:36:59,764 --> 00:37:11,104
+But here, I write the clear explanation. How can we find? The integral of tangent function is minus ln cosine x plus c.
+
+241
+00:37:11,484 --> 00:37:22,944
+But how can we take? You can see here, if I take cosine x is u, minus sine x dx will be du. And from here, I can write as a ln function.
+
+242
+00:37:23,731 --> 00:37:47,971
+for cotangent function will be the same. It will be ln sin x plus c. Here I made a mistake in the previous lecture notes. Please correct here. I realize when I prepared these lecture notes, the sign will be negative. This part will be positive. I think I made a mistake in the lecture notes, but I don't remember.
+
+243
+00:37:48,971 --> 00:37:50,771
+For second function,
+
+244
+00:37:51,284 --> 00:38:18,163
+I write the derivation of second function. It is second plus tangent. I write, pardon, second, second çarpı tanjantı. Bunu integrediği için her tarafa second artı tanjantı ekledim. Bunu yaptığımız zaman üst kısım, when we make this one, okay, it will be second x tangent x.
+
+245
+00:38:18,612 --> 00:38:20,452
+plus second squared x dx.
+
+246
+00:38:21,792 --> 00:38:25,172
+After that, we can write a line, but you don't need to know this one.
+
+247
+00:38:25,271 --> 00:38:26,712
+Only I write the explanation.
+
+248
+00:38:26,912 --> 00:38:32,532
+Only you have to know what is second and what is cosecant.
+
+249
+00:38:33,311 --> 00:38:34,931
+Çıkarışları bizim için önemli değil.
+
+250
+00:38:35,032 --> 00:38:36,712
+Ben sadece ekstra olarak yazdım.
+
+251
+00:38:37,652 --> 00:38:39,532
+Bu formülleri bilmemiz gerekiyor.
+
+252
+00:38:39,987 --> 00:38:49,627
+Şurada formülde ben sanırım hata yaptığımı hatırlıyorum, emin değilim ama büyük ihtimalle öyleydi. Ben şurada eksi koyduğumu hatırlıyorum. Eksi dışarıda şuranın artı olması gerek.
+
+253
+00:38:54,260 --> 00:38:56,100
+Bunları zaten tabloda vermiştim.
+
+254
+00:38:56,920 --> 00:38:57,180
+Okay.
+
+255
+00:38:58,200 --> 00:39:03,840
+Now, how can we find integral of sine square and cosine square x?
+
+256
+00:39:04,619 --> 00:39:13,800
+In this kind of integrals, we will use the equation, we will use the relation.
+
+257
+00:39:14,039 --> 00:39:14,680
+What is this?
+
+258
+00:39:22,708 --> 00:39:48,307
+cosin squared x minus sin squared x. Okay. But if I want to find a equation with only respect to x, sin x or cosin x, you can write this one. Cosin x is also 1 minus sin squared x minus sin squared x.
+
+259
+00:39:50,452 --> 00:39:58,552
+It will be 1 minus 2 sin square x. From here, I can write this relation.
+
+260
+00:40:00,852 --> 00:40:12,492
+Or, I can write cosine square x minus, I can change sine square x, 1 minus cosine square x.
+
+261
+00:40:16,628 --> 00:40:32,387
+2x²x-1. And from here, I can find this relation. In this kind of integrant, we will use these two formula, and they are very important. Okay?
+
+262
+00:40:35,208 --> 00:40:42,047
+So let's see, how can we take the integral of sine²x dx? I know that
+
+263
+00:40:42,351 --> 00:40:46,632
+sinüks, x is 1 minus cosin 2x over 2.
+
+264
+00:40:47,371 --> 00:40:49,132
+The integral is very easy.
+
+265
+00:40:49,351 --> 00:40:53,811
+Integral of 1 over 2 with respect to x will be x over 2.
+
+266
+00:40:54,931 --> 00:41:02,811
+Cosin 2x, this integral will be, I will take derivation inside, it is 2, and I will write 2 as your denominator.
+
+267
+00:41:03,592 --> 00:41:05,132
+Actually, it is like this.
+
+268
+00:41:05,771 --> 00:41:07,891
+1 over 2 comes from here.
+
+269
+00:41:08,403 --> 00:41:15,423
+The other two comes from the integral of cosine function. It will be sin 2x plus c.
+
+270
+00:41:18,264 --> 00:41:29,544
+If we make the same thing for sine function, integral of 1 over 2 will be x over 2 plus 1 over 2.
+
+271
+00:41:30,144 --> 00:41:32,423
+Integral of cosine function.
+
+272
+00:41:33,076 --> 00:41:46,456
+Derivation inside is 2. I will write 1 over 2 sin 2x and a constant c. This is the integral of sin squared and cosine squared x.
+
+273
+00:41:51,764 --> 00:41:57,203
+ok? ok, this is the other part.
+
+274
+00:42:01,331 --> 00:42:06,751
+Now we will see integral switch gives the inverse trigonometric functions.
+
+275
+00:42:07,871 --> 00:42:18,211
+If we have a square root, aslında bunu da formula olarak verdik ama bunun başka kısımları da var, onu daha sonra göreceğiz.
+
+276
+00:42:18,211 --> 00:42:19,291
+Sadece şuna bakalım.
+
+277
+00:42:20,451 --> 00:42:26,491
+If we have a square root function, actually I gave the formula in the last week as a table.
+
+278
+00:42:27,155 --> 00:42:33,735
+If I have square root in the square root a square minus x square here.
+
+279
+00:42:35,835 --> 00:42:41,295
+Aslında bunun çözümü daha sonra bir dönüşümler var. Onları göstereceğim zaten.
+
+280
+00:42:41,996 --> 00:42:45,235
+Orada göreceksiniz ama burada formüldekileri gösteriyorum şu an.
+
+281
+00:42:47,315 --> 00:42:52,856
+If we have a square minus x square, it will be arc sign.
+
+282
+00:42:54,835 --> 00:43:05,015
+it will be arc cosine. The integrals are the same. I will take x over a, but we don't have any coefficient here.
+
+283
+00:43:05,555 --> 00:43:15,135
+Only I will take arc sine x over this number. For arc tangent and arc cotangent, they are the same.
+
+284
+00:43:15,355 --> 00:43:21,935
+It will be dx over a square plus x square. If the sine is negative, it will be arc cotangent.
+
+285
+00:43:22,900 --> 00:43:30,099
+Inside, I will have x over a, but for arctengeon and arco-tengeon, we will have 1 over a here and here.
+
+286
+00:43:34,003 --> 00:43:36,003
+Okay, let's see some examples.
+
+287
+00:43:54,324 --> 00:43:56,083
+I know that. Şöyle düşünelim.
+
+288
+00:44:01,907 --> 00:44:16,748
+This is arcsin x. I know that this is arcsin x. Okay. So if I want to find similar function, the number here, it has to be 1. So I can divide each part with 4.
+
+289
+00:44:16,748 --> 00:44:28,867
+4'ü şöyle yapabiliriz. If I write 4, 1 minus x over 2 square. Okay. dx.
+
+290
+00:44:31,443 --> 00:44:44,063
+So, I can write 1 over 2 outside. Then, I have dx over 1 minus x over 2 square.
+
+291
+00:44:46,023 --> 00:44:46,663
+Okay?
+
+292
+00:44:48,383 --> 00:44:53,563
+If I have t here, instead of x over 2, I can write arcsine.
+
+293
+00:44:54,223 --> 00:44:57,043
+So, if you think x over 2 is t,
+
+294
+00:44:57,780 --> 00:45:02,440
+dx will be 2t, 2 dt.
+
+295
+00:45:04,000 --> 00:45:12,740
+Okay, so the new integral will be 2 dt over 1 minus t squared.
+
+296
+00:45:13,740 --> 00:45:25,160
+And it will be 2 arc sin t or 2 arc sin t.
+
+297
+00:45:26,643 --> 00:45:32,643
+x over 2x, and I have 1 over 2 outside, it will be...
+
+298
+00:45:38,612 --> 00:45:48,872
+arc sin x over 2 and a constant c. Formülü buradan çıkıyor aslında. Formülün çıkarılışı bu.
+
+299
+00:45:50,311 --> 00:45:59,432
+But if you look at here, this is the formula and the formula actually comes from this transformation.
+
+300
+00:46:00,432 --> 00:46:03,231
+Look at here. What is a?
+
+301
+00:46:05,043 --> 00:46:21,704
+Here is a². If a² is 4, a will be 2. So if you write in your formula, it will be arcsin x over 2 plus c.
+
+302
+00:46:24,704 --> 00:46:25,244
+Okay.
+
+303
+00:46:26,291 --> 00:46:31,251
+Burada formülü kullanabilirsiniz direkt ama sorularda tabii biraz daha farklı veririz.
+
+304
+00:46:31,711 --> 00:46:36,851
+Direkt formül kullanma gibi değil de ama formülün çıkış noktası burası aslında.
+
+305
+00:46:42,356 --> 00:46:44,356
+bölüm durumunda atmıyorum.
+
+306
+00:46:51,411 --> 00:47:04,612
+içinin türevini bölüm durumunda atmıyor muyuz? Nasıl bölüm durumunda? Yok. Burada x bölü 2'ye t dedik. 2'yi buraya attım. Sonra dx seçti 2 dt.
+
+307
+00:47:08,307 --> 00:47:14,327
+Burayı mı soruyorsun İslam? Burası zaten arksünüsün integrili. Bunu biliyoruz. Bunu direkt kullanabiliyoruz.
+
+308
+00:47:19,219 --> 00:47:23,059
+Yani tam olarak neyi sorduğunu anlamadım ama bunu direkt şey yapabiliyoruz.
+
+309
+00:47:23,879 --> 00:47:25,619
+Bunu normal şey gibi alamazsın.
+
+310
+00:47:25,979 --> 00:47:30,459
+İşte 1 üzeri 1 eksi tekrarı üzeri 1 bölü 2 olup hani integralini alamazsın onu.
+
+311
+00:47:30,639 --> 00:47:31,679
+Türevi yukarıda yok çünkü.
+
+312
+00:47:33,839 --> 00:47:34,219
+Okey.
+
+313
+00:47:38,324 --> 00:47:51,404
+molamı zaten çeyrek geçen başladık. Tamam. Tamam. Şunlara bakalım. Şununla ikisi. Bir saniye. Tamam. Şu ikisine bakalım. Sonra ara verelim. Zaten şimdi kısmı integrasyon asıl sizin önemli konunuz olacak.
+
+314
+00:47:53,244 --> 00:47:55,604
+Okay. You can see this example also.
+
+315
+00:47:58,884 --> 00:48:02,784
+This is x square plus 1. Look at here.
+
+316
+00:48:03,635 --> 00:48:10,295
+The sign is negative, so it will be R cotangent. What is x? A, A here is 2.
+
+317
+00:48:11,955 --> 00:48:17,855
+For R cotangent, R cotangent, I have 1 over A as a coefficient. It will be 1 over 2.
+
+318
+00:48:18,275 --> 00:48:24,175
+R cotangent, x over 2, or you can write like this. You can write minus outside.
+
+319
+00:48:25,615 --> 00:48:30,315
+It will be also minus 1 over 2, arc.
+
+320
+00:48:31,219 --> 00:48:56,907
+x kare artı 2x, f'
+
+321
+00:48:57,235 --> 00:49:04,435
+ok, there are some examples you can look at, you will find from the table.
+
+322
+00:49:05,075 --> 00:49:10,435
+ok, let's take a break for 10 minutes, after that we will talk about integration by parts,
+
+323
+00:49:10,435 --> 00:49:17,635
+this is very very very important, you will see in physics 1, physics 2, in the financial equations,
+
+324
+00:49:18,755 --> 00:49:23,075
+this integration technique is very important, ok?
+
+325
+00:49:23,603 --> 00:49:27,164
+Let's take a break for a time. After that, I will continue again.
+
+326
+00:58:54,516 --> 00:58:54,896
+Okay.
+
+327
+00:58:56,676 --> 00:59:01,676
+So, now let's start with integration by parts.
+
+328
+00:59:01,676 --> 00:59:02,036
+Okay.
+
+329
+00:59:17,235 --> 00:59:27,315
+Okay, what is integration by parts? If we have two different functions and if both of them are differentiable functions, we can take derivation of these functions.
+
+330
+00:59:28,275 --> 00:59:34,915
+What do we know about derivation of any function if there is a product? If we have two functions,
+
+331
+00:59:35,955 --> 00:59:42,195
+I know that derivation of these two functions will be the first function's derivation, the second.
+
+332
+00:59:42,688 --> 00:59:45,128
+The first one, the second function, derivation.
+
+333
+00:59:46,268 --> 00:59:49,327
+So, what is this? Actually, this is d over dx.
+
+334
+00:59:51,388 --> 00:59:53,788
+Okay, d over dx.
+
+335
+00:59:57,076 --> 01:00:22,635
+So, if we take integral of left side and right side, what do we have? I can write dx on the right side. Okay. So, what is this? This is v du over dx plus u dv over dx. And also, I write dx on the right side.
+
+336
+01:00:23,219 --> 01:00:46,299
+Okay, we can cancel here, here, here. So we have v du and u dv. So if here, one second, in the last part, I will have this formula. What is this? Why do we need this formula?
+
+337
+01:00:47,443 --> 01:00:51,403
+For example, if you have two functions like this,
+
+338
+01:00:59,764 --> 01:01:00,963
+ıh...
+
+339
+01:01:05,235 --> 01:01:29,035
+şöyle söyleyeyim. If you have an integral like this form and if you can't solve this integral, you can use another expression. What is this? I can write this integral also as uv minus vdu. With this relation, I can solve this integral easily.
+
+340
+01:01:29,652 --> 01:01:41,612
+If you have two different functions, and if you want to solve this integral, you can use this formula, and after this formula, I can easily solve this integral.
+
+341
+01:01:44,563 --> 01:01:49,303
+Here only the important part is how can you determine you?
+
+342
+01:01:49,703 --> 01:01:52,663
+The important point is to determine you.
+
+343
+01:01:53,403 --> 01:01:57,643
+For this maybe in high school, maybe some people see in the high school.
+
+344
+01:01:58,663 --> 01:02:04,844
+To determine you, I have a word, lab to, we see in high school also.
+
+345
+01:02:06,068 --> 01:02:25,208
+What is the meaning of lab 2? L means logarithm function, A is arc function, arc sine, arc cotangent, or anything else, P is polynomial, t is trigonometric function, and U is exponent function.
+
+346
+01:02:27,208 --> 01:02:27,728
+Okay?
+
+347
+01:02:30,188 --> 01:02:30,788
+So,
+
+348
+01:02:32,596 --> 01:02:38,276
+İlk olarak, I have today time on you and all the other part will be du.
+
+349
+01:02:39,176 --> 01:02:39,876
+Dv, okay?
+
+350
+01:02:41,615 --> 01:02:44,676
+So, let me explain in the example.
+
+351
+01:02:47,216 --> 01:02:49,596
+Let us start with an easy example.
+
+352
+01:02:59,987 --> 01:03:09,188
+Now, here I have two different functions. The first one is polynomial. We have lab 2. With lab 2, we will determine u function.
+
+353
+01:03:10,288 --> 01:03:23,788
+This is polynomial here. This is exponent function is this. Which is the first one? The first one is polynomial. So, I will take polynomial as u.
+
+354
+01:03:26,228 --> 01:03:29,628
+and all the other part will be dv.
+
+355
+01:03:31,128 --> 01:03:33,967
+u exponent function dx
+
+356
+01:03:39,411 --> 01:03:53,291
+dv. Okay. In the formula, I need to determine u, du, v, dv. Okay. In the formula, I need all of that.
+
+357
+01:03:54,251 --> 01:03:59,692
+If u is x, here I will take differential, du will be dx.
+
+358
+01:04:02,195 --> 01:04:11,036
+If I have dv to determine v, I have to take integral. The integral of this function is exponent function. It will be v.
+
+359
+01:04:11,255 --> 01:04:23,675
+Now, I have u du v dv. Now, our formula will be u v minus integral v du.
+
+360
+01:04:25,436 --> 01:04:29,016
+Okay, let us write in the formula u is x.
+
+361
+01:04:29,811 --> 01:04:38,351
+v' is exponent function, minus integral, v' is exponent function, du' is dx.
+
+362
+01:04:39,851 --> 01:04:51,071
+It will be x exponent function, this exponent function integral is the same, and lastly, I have to write a constant c.
+
+363
+01:04:52,291 --> 01:04:52,851
+For
+
+364
+01:04:54,003 --> 01:05:00,483
+integration by parts are formula uv minus integral vdu.
+
+365
+01:05:02,003 --> 01:05:02,403
+Okay.
+
+366
+01:05:04,243 --> 01:05:06,483
+Now, did you understand what we made here?
+
+367
+01:05:10,835 --> 01:05:18,515
+Şimdi arkadaşlar, elinizde birden fazla farklı fonksiyonun çarpanı varsa burada kısmi integrasyon kullanmamız gerekiyor.
+
+368
+01:05:18,515 --> 01:05:30,395
+Kısmi integrasyon dediğimiz şey şu. Daha önce verdiğim çözülmesi bu şekilde mümkün olmayan bir integrali yeniden yazıyorsunuz.
+
+369
+01:05:31,411 --> 01:05:59,371
+Laptü dediğimiz bir ifade var, onu kullanıyoruz. Burada uyu belirlemek için, L'l, A'ark, ters olanlar, P'polinomlar, T trigonometrikler, U'de üsteller. Bu uyu belirlemenize yarıyor. Burada bir polinomumuz var, bir de üstel fonksiyonumuz var. Polinom daha önce geldiği için x'e u dedim, diğer kalan her şeyi dv ediyorum. Şimdi benim formülde her şeye ihtiyacım var. U, du ve dv. U'yu biliyorsam buradan du.
+
+370
+01:05:59,411 --> 01:06:17,751
+uya geldim. Ne yaptım? Her tarafın diferansiyelini aldım. dv'yi biliyorsam v'yi bulmak için tam tersi işleme integral. O yüzden o fonksiyonun integralini aldım ve hepsini elde etmiş oldum. Bizim kısmı integrasyon formülümüz bu. Yerine yazdım sadece. u çarpı v, x v çarpı du.
+
+371
+01:06:17,751 --> 01:06:21,092
+Ok, let's talk English again.
+
+372
+01:06:22,324 --> 01:06:34,623
+If I can't solve this integral directly, because here I have two different functions, one of them is polynomial, the other one is exponent function, so I have to rewrite this integral.
+
+373
+01:06:34,623 --> 01:06:40,264
+For this, I have to determine u and dv.
+
+374
+01:06:41,364 --> 01:06:50,123
+For the determination of u, I have a word, lab 2. Here is logarithm R, polynomial trigonometric exponent function.
+
+375
+01:06:51,183 --> 01:06:59,223
+x is polynomial, the other one is exponent function. It is the differential of v function.
+
+376
+01:07:00,824 --> 01:07:03,943
+Differential of v function. Okay.
+
+377
+01:07:05,652 --> 01:07:11,211
+So, I determine u is x and all the other parts will be dv.
+
+378
+01:07:12,091 --> 01:07:15,571
+From here, I take differential and I find dv.
+
+379
+01:07:15,811 --> 01:07:18,731
+Here, I take integral and I determine v.
+
+380
+01:07:19,251 --> 01:07:29,911
+After that, I will write in the formula u product v, x product exponent function, minus integral v product dv.
+
+381
+01:07:30,911 --> 01:07:32,331
+And this is our solution.
+
+382
+01:07:33,268 --> 01:07:36,888
+Okay, let me give another example. I have lots of examples.
+
+383
+01:07:41,972 --> 01:07:43,012
+Bir example here.
+
+384
+01:07:54,516 --> 01:08:01,556
+here. When you see two different functions, you will use integration by parts if you can't use its transformation.
+
+385
+01:08:01,556 --> 01:08:09,635
+Okay. So one of them is polynomial. The other one is trigonometrik functions. Look at here.
+
+386
+01:08:12,916 --> 01:08:18,916
+one of them is polynomial, the other one is trigonometric functions, polynomial is
+
+387
+01:08:21,636 --> 01:08:34,275
+the first one. So I will take u as x and all the other functions cosine x dx will be dv.
+
+388
+01:08:36,195 --> 01:08:40,115
+Okay, from here I will take differential and I will find du.
+
+389
+01:08:40,659 --> 01:08:42,219
+du will be dx.
+
+390
+01:08:44,459 --> 01:08:48,840
+Here I have dv, if I want to find v, I have to take integral.
+
+391
+01:08:49,219 --> 01:08:53,319
+Integral of cosine function will be sin x, will be v.
+
+392
+01:08:54,399 --> 01:08:57,920
+So I have u du v dv.
+
+393
+01:08:57,920 --> 01:09:07,600
+Now I will write these known terms in the formula uv minus integral v du.
+
+394
+01:09:10,484 --> 01:09:21,463
+It will be x sin x minus integral v is sin x du is dx.
+
+395
+01:09:23,144 --> 01:09:30,203
+And I know that this integral is very easy. It is minus consign x.
+
+396
+01:09:31,264 --> 01:09:36,484
+And here I need a right constant. So our solution will be
+
+397
+01:09:36,948 --> 01:09:44,968
+x sin x plus cos x and a constant c.
+
+398
+01:09:47,968 --> 01:09:48,728
+Okay?
+
+399
+01:09:49,868 --> 01:09:51,708
+Do you understand what we made here?
+
+400
+01:10:00,564 --> 01:10:11,664
+Okay. Okay. Let us make another example. Okay. For example, this example.
+
+401
+01:10:26,420 --> 01:10:34,500
+Okay, now what can we say here? In this part, actually you see one function.
+
+402
+01:10:38,131 --> 01:10:53,671
+For lnx, for the integral of lnx, we don't have any formula. So, I have to use integration by parts. So, I have only lnx functions. So, I will take u is directly lnx.
+
+403
+01:10:58,420 --> 01:11:05,300
+So let us write ln x is u. All the other terms will be dv.
+
+404
+01:11:07,620 --> 01:11:14,260
+Okay, here I have to take the financial. What is the financial? Derivation of ln x is 1 over x.
+
+405
+01:11:14,260 --> 01:11:21,220
+And also I have to write the financial of x will be dx. This part will be d. Here
+
+406
+01:11:21,908 --> 01:11:28,408
+If I have dv, I need to find v, for this I have to take integral, it will be x.
+
+407
+01:11:30,028 --> 01:11:43,908
+So our formula will be u product v x ln x minus integral v product du, it is 1 over x dx.
+
+408
+01:11:45,188 --> 01:11:46,668
+And a constant we have.
+
+409
+01:11:47,412 --> 01:12:05,652
+What is this integral? It is very easy. I can cancel here. It will be x. So our solution will be x ln x minus x and a constant c. Okay?
+
+410
+01:12:08,612 --> 01:12:09,971
+Do you have any question here?
+
+411
+01:12:20,020 --> 01:12:24,140
+Okey. Yani şeysiniz çıkan öyle anladığınızı farslayıyorum.
+
+412
+01:12:27,079 --> 01:12:27,880
+Okey.
+
+413
+01:12:29,880 --> 01:12:32,020
+What about arcsine function?
+
+414
+01:12:33,880 --> 01:12:35,600
+Let's look at arcsine function.
+
+415
+01:12:46,195 --> 01:12:47,835
+We have arcsin x.
+
+416
+01:12:49,195 --> 01:12:51,475
+It is similar with the previous example.
+
+417
+01:12:51,695 --> 01:12:53,475
+Here I have only one function.
+
+418
+01:12:53,895 --> 01:12:55,855
+Only I have arcsin x.
+
+419
+01:12:56,095 --> 01:12:59,655
+So I will take arcsin x directly as u.
+
+420
+01:13:01,835 --> 01:13:06,575
+So the other one, the other function will be dv.
+
+421
+01:13:07,828 --> 01:13:14,148
+Now, I have to take the financial, actually you will take derivation and you will write dx near.
+
+422
+01:13:14,788 --> 01:13:19,508
+Derivation of sine function, x sine function will be 1 over 1 minus x squared.
+
+423
+01:13:21,968 --> 01:13:24,988
+And also dx will be du.
+
+424
+01:13:27,648 --> 01:13:31,888
+And if I want to find v, I have to take integral.
+
+425
+01:13:33,011 --> 01:13:39,691
+v will be integral dx, it will be x. So x will be v.
+
+426
+01:13:41,471 --> 01:13:52,171
+Now, we have u du v and dv. Our integral will be u v minus integral v du.
+
+427
+01:13:53,171 --> 01:13:58,811
+And it is x arc.
+
+428
+01:13:59,283 --> 01:14:04,603
+sin x minus integral v d.
+
+429
+01:14:10,707 --> 01:14:12,027
+A constant c.
+
+430
+01:14:13,087 --> 01:14:15,687
+Okay, now how can we solve this integral?
+
+431
+01:14:15,927 --> 01:14:19,327
+This integral is relation to previous part, substitution.
+
+432
+01:14:20,268 --> 01:14:21,768
+How can we solve this integral?
+
+433
+01:14:27,988 --> 01:14:30,488
+think about this integral nasıl çözebiliriz bakalım.
+
+434
+01:14:48,595 --> 01:15:07,135
+if you take x equals u, you will find the same thing. Yes, you can write 1 minus x squared is u. Yes, yes, you can write. Or x is, let me write.
+
+435
+01:15:11,347 --> 01:15:22,307
+I can write 1 minus x squared as t, but in the root function, we prefer to use t squared, it will be more easy.
+
+436
+01:15:22,307 --> 01:15:35,368
+Okay, so minus 2x dx will be 2t dt. We can cancel too. Now let us write in the integral.
+
+437
+01:15:36,275 --> 01:15:50,315
+x dx will be minus t dt over will be t. So it will be integral only minus dt. So it will be minus t.
+
+438
+01:15:50,315 --> 01:16:01,615
+What is our transformation? It will be minus, what is t here? t will be square root 1 minus x squared.
+
+439
+01:16:02,579 --> 01:16:06,799
+So, it will be 1 minus x square here.
+
+440
+01:16:11,731 --> 01:16:25,652
+So, our result will be x arc sin x plus 1 minus x squared and a constant.
+
+441
+01:16:32,595 --> 01:16:33,956
+c, 1.
+
+442
+01:16:34,895 --> 01:16:35,456
+Okey.
+
+443
+01:16:37,315 --> 01:16:41,715
+T de yazabilirsiniz, sorun yok. Ama o zaman kesirli falan olacak.
+
+444
+01:16:41,855 --> 01:16:44,895
+İntegreli, yani sayılar. O yüzden böyle daha kolay.
+
+445
+01:16:48,243 --> 01:16:48,743
+Okay.
+
+446
+01:16:50,963 --> 01:16:52,063
+Let us see.
+
+447
+01:17:23,060 --> 01:17:24,320
+Now, what can we do here?
+
+448
+01:17:30,771 --> 01:17:32,091
+Which function is you?
+
+449
+01:17:37,747 --> 01:17:49,807
+Yes, one of them is polynomial, the other one is trigonometric functions, and in the lab 2, polynomial is the first one. So, we will write x squared as u.
+
+450
+01:17:57,908 --> 01:18:11,748
+and sin x, dx will be dv. Now here I will take the financial, it will be 2x, dx will be du.
+
+451
+01:18:13,428 --> 01:18:21,828
+Here if I want to find v, I have to take integral of sine function, it will be minus cosine x, will be v.
+
+452
+01:18:22,515 --> 01:18:34,515
+Okay, now let us write in the formula u product v minus x square cosine x minus integral v.
+
+453
+01:18:35,715 --> 01:18:49,155
+The sign will be positive because of the sine cosine x product 2x dx. Okay.
+
+454
+01:18:53,011 --> 01:18:55,891
+so if I write to outsides
+
+455
+01:19:00,340 --> 01:19:11,579
+I have another integration by parts. Let us write 2. Okay. So, let us find the second integral.
+
+456
+01:19:13,059 --> 01:19:19,680
+Actually, you can understand if you have x squared, you need two integration by parts. If you have x cubed,
+
+457
+01:19:20,180 --> 01:19:30,220
+You need three integration byparts, because at each integration byparts, the degree will be less 1.
+
+458
+01:19:30,380 --> 01:19:36,800
+It will be x cubed. When you take integration byparts, it will be x squared. It will be x.
+
+459
+01:19:40,460 --> 01:19:44,980
+It will be positive because of the sign uv minus vdu.
+
+460
+01:19:46,547 --> 01:19:50,028
+I have minus, but here I have also minus, it will be plus.
+
+461
+01:19:51,967 --> 01:19:52,228
+Okay?
+
+462
+01:19:53,847 --> 01:19:57,108
+Okay, so let us look at the second integral.
+
+463
+01:19:57,987 --> 01:20:02,567
+In the second integral, I have polynomial trigonometric functions.
+
+464
+01:20:02,567 --> 01:20:05,648
+So, polynomial is the first one.
+
+465
+01:20:06,368 --> 01:20:12,567
+x will be u, cosine x, dx will be dv.
+
+466
+01:20:14,612 --> 01:20:16,811
+so dx will be du.
+
+467
+01:20:18,332 --> 01:20:23,332
+if we take integral of sine function, it will be sine x will be v.
+
+468
+01:20:24,752 --> 01:20:32,332
+okay, so our second integral will be u product v x sine x
+
+469
+01:20:32,332 --> 01:20:38,932
+minus integral v du, it will be sine x dx.
+
+470
+01:20:40,756 --> 01:21:07,796
+ve know that this integral is minus cos x. So it will be x sin x plus cos x. Now in the last part, I have to write this integral in the first integral. So our solution will be minus x squared cos x.
+
+471
+01:21:08,340 --> 01:21:26,600
+After that, I will product with 2. 2x sin x plus 2 cos x. And lastly, I need to write a constant c. This is our solution of this integral. Okay?
+
+472
+01:21:28,532 --> 01:21:38,891
+Niye 2 tane? Çünkü x kare her integralde 1 derecesi azalacağı için 2 kere kısmı integrasyon gerekti. x küp olsaydı 3 kere almamız gerekecekti.
+
+473
+01:21:40,711 --> 01:21:42,051
+Do you have any question here?
+
+474
+01:21:43,252 --> 01:21:44,172
+It is not difficult.
+
+475
+01:21:50,260 --> 01:21:51,059
+Yok, hayır.
+
+476
+01:21:53,059 --> 01:21:56,360
+Ben sadece burada niye 2 tane olması gerektiğini anladım.
+
+477
+01:21:58,100 --> 01:22:01,640
+Yok, çıksa da hepsini toplayıp bir tane yazmanız yetiyor.
+
+478
+01:22:02,520 --> 01:22:05,720
+Bir kere bir integral ile bir tane sabit olması yetiyor.
+
+479
+01:22:05,840 --> 01:22:07,899
+c1 artı c2 de olsa yine sabit.
+
+480
+01:22:08,819 --> 01:22:09,039
+Evet.
+
+481
+01:22:11,180 --> 01:22:14,220
+Okey, let me show you another.
+
+482
+01:22:20,243 --> 01:22:21,683
+Evet, bu değişik bir integral.
+
+483
+01:22:22,763 --> 01:22:24,583
+Okey, until you understand?
+
+484
+01:22:26,263 --> 01:22:27,683
+Burayı kadar anladınız mı arkadaşlar?
+
+485
+01:22:28,243 --> 01:22:29,603
+Çünkü bu önemli bir konu.
+
+486
+01:22:29,603 --> 01:22:32,983
+Sınavda da bu konu çıkar mı?
+
+487
+01:22:33,443 --> 01:22:33,943
+Çıkabilir.
+
+488
+01:22:35,503 --> 01:22:36,403
+Bir bakmam lazım.
+
+489
+01:22:38,644 --> 01:22:39,283
+Okey.
+
+490
+01:22:39,843 --> 01:22:40,843
+Çünkü sesiniz çıkmıyor.
+
+491
+01:22:40,923 --> 01:22:42,683
+Ben de anlayıp anlamadığınızı şey yapamıyorum.
+
+492
+01:22:44,212 --> 01:22:49,172
+Yani bu konuyu öğrenmeniz gerekiyor. Sadece sınav için değil çünkü bunu çok fazla kullanacaksınız.
+
+493
+01:22:52,787 --> 01:22:59,307
+Yok, çıkmaz diye bir şey yok. Şimdi ben bir ders çiğneye biraz sonra bakacağım. O konu hangi nerede geçiyor?
+
+494
+01:23:00,627 --> 01:23:06,787
+Okay, so what can we do here? We have exponent function, we have trigonometrik function.
+
+495
+01:23:08,787 --> 01:23:18,987
+Okay. We have exponent function, we have trigonometrik function, so I will write cosine x is u.
+
+496
+01:23:20,180 --> 01:23:23,620
+and exponent function dx will be dv.
+
+497
+01:23:25,540 --> 01:23:30,899
+Now here I will take differential. It will be minus sin x.
+
+498
+01:23:32,060 --> 01:23:33,739
+dx will be du.
+
+499
+01:23:35,300 --> 01:23:40,120
+And here I have to take integral. Integral of the exponent function is the same.
+
+500
+01:23:43,923 --> 01:23:47,243
+Evet, evet. Şimdi farklı bir şey çıkacak ama.
+
+501
+01:23:48,683 --> 01:24:07,863
+Okay, so, R integral will be u product v, e to the power x cosine x, minus integral v du, the sine will be positive, sine x product exponent function dx.
+
+502
+01:24:07,863 --> 01:24:11,043
+We have another integration by parts.
+
+503
+01:24:11,764 --> 01:24:14,084
+Now let us write, it is 2.
+
+504
+01:24:17,460 --> 01:24:20,920
+Now, I have another integration by parts.
+
+505
+01:24:21,719 --> 01:24:24,779
+Here, I have exponent function.
+
+506
+01:24:24,940 --> 01:24:26,699
+I have trigonometric functions.
+
+507
+01:24:27,020 --> 01:24:29,360
+The first one is trigonometric functions.
+
+508
+01:24:30,180 --> 01:24:31,440
+Sine x will be u.
+
+509
+01:24:32,260 --> 01:24:36,039
+And exponent function will be d.
+
+510
+01:24:37,719 --> 01:24:38,440
+Okay.
+
+511
+01:24:38,440 --> 01:24:42,119
+So, if I take differential, cosine x.
+
+512
+01:24:43,923 --> 01:24:50,404
+dx will be du. If I take integral, exponent function will be v.
+
+513
+01:24:52,404 --> 01:25:07,683
+So, the second integral will be u product v exponent function sin x minus integral v du.
+
+514
+01:25:10,387 --> 01:25:12,948
+Now, what we will do in the next part?
+
+515
+01:25:17,128 --> 01:25:18,847
+We have another integration.
+
+516
+01:25:31,764 --> 01:25:58,744
+Actually, this integral is the question integral. It is i. So, we can write this integral in the first one. So, i will be e to the power x cosine x plus the second integral is exponent function sine x minus i.
+
+517
+01:25:59,891 --> 01:26:22,291
+So here I need to find i. If I write i on the left side, i will be 1 over 2. I can write the exponent function outside. It will be cosine x plus sine x and a constant c here.
+
+518
+01:26:23,475 --> 01:26:33,235
+İki kere aldığınızda yine kendisine döndü. Bu trigonometriklerde olan bir şey. Üstel çarpı trigonometrik ise bu şekilde çözülüyor.
+
+519
+01:26:33,235 --> 01:26:43,655
+If your functions are exponent and trigonometrik functions as sine or cosine, the solution process is this. You have to take two integration by parts.
+
+520
+01:26:50,163 --> 01:26:56,844
+Bu şekilde kolaycına çıkıyor. Ama bu özel bir şey zaten. Üster çarpı sin ya da kosin olunca bunun dışında bir çözüm yolu yok zaten.
+
+521
+01:26:59,963 --> 01:27:01,804
+Okey. Now.
+
+522
+01:27:07,699 --> 01:27:08,652
+ok.
+
+523
+01:27:19,315 --> 01:27:22,076
+Evet, şimdi bakalım.
+
+524
+01:27:28,372 --> 01:27:34,432
+x arkt. x. Let's look at here, we have laughter.
+
+525
+01:27:37,619 --> 01:27:46,020
+We have polynomial, we have arc. This is arctangent function. So arctangent function is the first function.
+
+526
+01:27:47,399 --> 01:27:56,039
+So I will take arctangent x is u and x dx will be dv.
+
+527
+01:27:58,644 --> 01:28:06,123
+So here I take to take differential. Differential of arctengin function will be 1 over 1 plus x square.
+
+528
+01:28:07,324 --> 01:28:10,384
+Product dx will be du.
+
+529
+01:28:12,264 --> 01:28:18,404
+And when we take integral of x, it will be x square over 2 will be b.
+
+530
+01:28:21,908 --> 01:28:43,488
+Now, our solution will be u product v x square over 2 arctanjant x minus integral v product du dx over 1 plus x square.
+
+531
+01:28:44,048 --> 01:28:47,408
+Now, I have to solve this integral. Let me write 2.
+
+532
+01:28:48,020 --> 01:28:58,420
+Actually, we will see this type of integrants in the next lesson. It is related to rational function, but here I want to mention about a little bit.
+
+533
+01:29:00,239 --> 01:29:02,820
+Bunu zaten sonra çok ayrıntılı göreceğiz.
+
+534
+01:29:05,239 --> 01:29:07,300
+But I want to write here.
+
+535
+01:29:08,180 --> 01:29:11,860
+If you have a rational function as px over qx.
+
+536
+01:29:15,507 --> 01:29:26,387
+Let us write degree of px function is m and degree of qx function is n.
+
+537
+01:29:26,387 --> 01:29:34,667
+Okay. If m is greater or equal to n, firstly,
+
+538
+01:29:38,547 --> 01:29:52,547
+divide px to qx, after that, take integral.
+
+539
+01:29:57,524 --> 01:30:05,524
+If you have a rational function and if you want to find these rational functions integral, you have to look at the degree.
+
+540
+01:30:05,524 --> 01:30:19,784
+If degree of px is greater or equal to qx, before that you have to divide your px function to qx function and you have to take integral of this solution, this result.
+
+541
+01:30:20,243 --> 01:30:38,384
+But if the other one, we have another method. Okay. But in this example, it is related to first case. I need to find x squared dx over x squared plus 1. Okay.
+
+542
+01:30:44,659 --> 01:30:45,299
+şirket.
+
+543
+01:30:52,532 --> 01:31:05,332
+Okay, so this is a rational function. Degree of px is 2, degree of qx is 2. They are the same. So, first of all, I have to divide x square with x square plus 1.
+
+544
+01:31:06,612 --> 01:31:18,231
+This is 1. It will be x square plus 1, türev minus 1. So, I can take this integral as the integer part is 1.
+
+545
+01:31:18,836 --> 01:31:23,096
+The remainder is minus 1 x squared plus 1.
+
+546
+01:31:24,236 --> 01:31:26,556
+Now, I can take this integral.
+
+547
+01:31:27,336 --> 01:31:33,896
+Integral of 1 with respect to x will be x minus arctenjant x.
+
+548
+01:31:34,896 --> 01:31:40,556
+So, our solution will be x squared over 2.
+
+549
+01:31:43,028 --> 01:31:55,568
+arctengent x, minus 1 over 2, x minus arctengent x, and lastly, I have a constant c.
+
+550
+01:31:58,087 --> 01:32:03,568
+Okay, look at carefully again, and if you have any question, please ask.
+
+551
+01:32:12,180 --> 01:32:16,099
+Rasyonel fonksiyonları bir sonrakinde göreceğiz ama şu an karşımıza çıktı.
+
+552
+01:32:18,519 --> 01:32:20,800
+En son kısmı integrasyon yaptınız.
+
+553
+01:32:22,059 --> 01:32:22,859
+I'yı mı soruyorsun?
+
+554
+01:32:23,880 --> 01:32:24,439
+Yoksa burası.
+
+555
+01:32:26,760 --> 01:32:29,000
+Şurada yerine yazdım, şuraya yerine yazdım, şurası.
+
+556
+01:32:31,199 --> 01:32:32,399
+2'yi de yerine yazdım burada.
+
+557
+01:32:32,960 --> 01:32:33,279
+Bu 2.
+
+558
+01:32:37,555 --> 01:32:44,095
+Buraya mı diyorsun? Bu iki, ikinci integral bu. İntegrisini aldım.
+
+559
+01:32:51,604 --> 01:32:53,284
+it is arkotan agent.
+
+560
+01:32:57,876 --> 01:33:09,076
+oh yes or you can write as yes you can write as x plus r cotangent x also yes both of them are true
+
+561
+01:33:23,604 --> 01:33:26,956
+Okay, so let's look at another example.
+
+562
+01:33:33,395 --> 01:33:34,636
+mesela şuna bakalım.
+
+563
+01:33:35,596 --> 01:33:38,136
+belirli integral çözmedik ona bakalım.
+
+564
+01:33:38,136 --> 01:33:41,056
+bir saniye, mutlama da kim?
+
+565
+01:33:42,296 --> 01:33:43,416
+daha var sonumuz.
+
+566
+01:33:53,043 --> 01:34:15,043
+Now I want to solve a definite integral. So here I have, let's look at lab 2. This is polynomial and the other one is logarithm function.
+
+567
+01:34:18,515 --> 01:34:40,715
+square x will be u, x cube, dx will be dv. Okay. So, if I take the financial, it will be 2 ln x, product 1 over x dx, will be du.
+
+568
+01:34:43,923 --> 01:34:48,403
+And integral of x kare artı 3x3 will be x to the power 4 over 4 will be v.
+
+569
+01:34:51,823 --> 01:35:03,023
+Okay, now if I want to write i, u product v, x to the power 4 ln square x.
+
+570
+01:35:03,023 --> 01:35:07,684
+Now I have to write the bound from 1 to e.
+
+571
+01:35:08,404 --> 01:35:28,564
+minus integral from 1 to e, v product du. I have to product this one. Let me write here. 2 and then x over x. x to the power of 4 over 4 dx.
+
+572
+01:35:28,564 --> 01:35:32,244
+O da nereye gelir? Bu kadar x kılır.
+
+573
+01:35:32,979 --> 01:35:35,119
+bu bunu götürdük, ilke kaldı.
+
+574
+01:35:35,559 --> 01:35:37,699
+we can write fonal over to outside.
+
+575
+01:35:39,019 --> 01:35:40,800
+it will be x cube
+
+576
+01:35:40,800 --> 01:35:43,779
+ln x dx.
+
+577
+01:35:44,099 --> 01:35:44,340
+ok?
+
+578
+01:35:48,948 --> 01:36:00,748
+Okay. Now, firstly, let us find the first ones here. What is this? First, I have to write the upper bound.
+
+579
+01:36:02,668 --> 01:36:15,467
+e to the power 4 over 4. L and e will be 1, so it will be this. After that, I have to write, it means that f
+
+580
+01:36:15,859 --> 01:36:20,059
+if this is function f e minus f1.
+
+581
+01:36:21,499 --> 01:36:24,899
+When I write e in your, this is your f function actually.
+
+582
+01:36:25,879 --> 01:36:28,899
+When I write e, I find e to the power 4 over 4.
+
+583
+01:36:29,059 --> 01:36:34,239
+But if I write 1, I will find ln1 and ln1 will be 0.
+
+584
+01:36:34,399 --> 01:36:37,819
+So this is the first part, integral i.
+
+585
+01:36:38,707 --> 01:36:52,527
+will be this one, minus 1 over 2, integral 1 to e, x cube, and x dx. Now I have another integral. Let us take this is 2.
+
+586
+01:36:53,527 --> 01:36:59,947
+Okay? Now let us solve the second integral.
+
+587
+01:37:00,595 --> 01:37:14,195
+Here, I have polynomial and ln function. ln function is the first function, so I will write lnx is u, and x cubed dx will be dv.
+
+588
+01:37:15,775 --> 01:37:26,935
+So, differential will be dx over x will be du. x to the power 4 over 4 will be v.
+
+589
+01:37:28,851 --> 01:37:53,351
+So, the second integral will be u product v, x to the power 4, over 4 ln x, from 1 to e, minus integral from 1 to e, v product du, v is this, du will be dx over x.
+
+590
+01:37:59,475 --> 01:38:06,636
+So, let uns write this integral. Okay, what is this integral? I can cancel. It will be q.
+
+591
+01:38:07,256 --> 01:38:13,876
+Integral of x cubed will be x to the power 4 over 16 from 1 to e.
+
+592
+01:38:17,015 --> 01:38:26,815
+So, let uns write the second integral. If I write e, firstly, it will be e to the power 4 over 4.
+
+593
+01:38:30,068 --> 01:38:46,387
+And if I write 1 here, it will be 0. Minus, now I will write e here, e to the power 4 over 16, minus 1 over 16.
+
+594
+01:38:48,948 --> 01:38:55,188
+It is the second integral. So, right. First integral will be,
+
+595
+01:38:57,203 --> 01:38:59,503
+e to the power 4 over 4.
+
+596
+01:39:05,140 --> 01:39:26,100
+minus, I will product with minus 1 over 2, e to the power 4 over 8, plus e to the power 4 over 32, eksi 1 bölü 32. Bunun da cevabı şurada bir yerde vardı zaten, oradan bakarsınız.
+
+597
+01:39:35,188 --> 01:39:37,188
+ve bu result.
+
+598
+01:39:37,188 --> 01:39:43,188
+You can see in the lecture notes, I write step by step.
+
+599
+01:39:47,188 --> 01:39:49,188
+Do you have any questions?
+
+600
+01:39:49,188 --> 01:39:53,188
+If you don't have any questions, let's take a 10 minutes break.
+
+601
+01:39:53,188 --> 01:39:59,188
+After that, I will solve some other questions.
+
+602
+01:40:00,000 --> 01:40:03,059
+1x10 dakika ara verelim arkadaşlar.
+
+603
+01:51:03,380 --> 01:51:09,180
+Okay, so let's start again, but before that I want to share the...
+
+604
+01:51:09,180 --> 01:51:26,619
+These are the symbols of our lesson. Our exam will be at the 12th week. So probably the exam will be until the trigonometrik integris and reduction functions maybe.
+
+605
+01:51:27,252 --> 01:51:31,292
+Now we are here, we finished integration by parts.
+
+606
+01:51:32,112 --> 01:51:36,731
+Tomorrow we can talk about trigonometrik integris and reduction formulas.
+
+607
+01:51:37,752 --> 01:51:43,952
+Okay, probably tomorrow we will finish our second exam subjects, but it is not clear.
+
+608
+01:51:45,032 --> 01:51:47,551
+Okay, maybe it can be less than this one.
+
+609
+01:51:51,923 --> 01:52:10,344
+Yok. Soru çözeriz. Haftaya uygulama yapmamız lazım. Yani haftaya uygulama yapsak. Ama şu kısımlar var. Bu kısımlar öyle şey değil. Mesela şu konular daha ayrıntılı. Yani hocalar da benden çok daha ileride olan hocalar vardır.
+
+610
+01:52:11,380 --> 01:52:23,239
+Yani biz şu an tam şeydeyiz, iyi bir yerdeyiz. Çünkü özellikle böyle olmasını istedim. Çünkü integral konusu çok önemli bir konu ve her dönemde sonunda kalıp biraz hızlı geçiyoruz. Şu an bence gayet iyi geçiyoruz.
+
+611
+01:52:25,739 --> 01:52:36,000
+Yes, I know that. Your exam will be at the end of the 11th. So probably your exam subject will be at the end of the 11th.
+
+612
+01:52:36,000 --> 01:52:36,260
+Okay?
+
+613
+01:52:38,323 --> 01:52:46,023
+Şu an 11'i bitireceğiz ama zaten bir hafta ileride olmuş oluyoruz. Ama uygulama yaptığımız zaman aynıya denk geleceğiz zaten.
+
+614
+01:52:47,103 --> 01:52:53,743
+Yani şu an gidişimizde, yani siz anlıyorsanız şu an çok hızlı gittiğimi düşünmüyorum. Yani soru çöze çöze gidiyorum.
+
+615
+01:52:54,403 --> 01:53:01,883
+Dolayısıyla yarına konularını bitiririz. Yani 11. haftanın sonunu bitirdiğimize göre zaten 11. sonuna kadar olur en fazla konular.
+
+616
+01:53:02,804 --> 01:53:08,224
+Onun dışında şu an aklıma gelen başka bir şey yok. Peki devam edelim.
+
+617
+01:53:13,652 --> 01:53:16,772
+okay, I want to solve 2 more questions.
+
+618
+01:53:18,712 --> 01:53:20,652
+Buna bakarsın mesela şuna bakalım.
+
+619
+01:53:20,652 --> 01:53:24,252
+10 seconds.
+
+620
+01:53:32,724 --> 01:53:55,804
+Evet, I know that. Now we are in the 10th week. Your exam will be at 12th week. The subject for the second exam will be at the end of the 11th, but it is not clear. They haven't given any information. But at most it will be at the end of the 11th. Okay. Okay, now let's look at this example.
+
+621
+01:53:58,304 --> 01:53:58,783
+Okay.
+
+622
+01:53:59,828 --> 01:54:09,568
+We have two different functions. The first one is sin x, the other one ln. Inside of ln function, we have another function, but it is not important for now.
+
+623
+01:54:09,568 --> 01:54:24,768
+We have lab 2. The first one is trigonometrik. The second one is ln is logarithm function. So I will write ln tangent x will be u.
+
+624
+01:54:26,676 --> 01:54:31,276
+sin x, dx will be dv.
+
+625
+01:54:33,976 --> 01:54:34,656
+Okay.
+
+626
+01:54:35,356 --> 01:54:37,796
+So here I have to take the financial.
+
+627
+01:54:38,376 --> 01:54:41,476
+What is derivation of a lamp function?
+
+628
+01:54:41,696 --> 01:54:43,556
+It will be tangent x here.
+
+629
+01:54:44,536 --> 01:54:49,116
+And here I have to write derivation of tangent function is second square x.
+
+630
+01:54:50,736 --> 01:54:53,616
+dx will be dv.
+
+631
+01:54:55,347 --> 01:55:05,268
+Okay. Okay. So here I have to take integral. Integral of sine function will be minus cosine.
+
+632
+01:55:06,208 --> 01:55:15,548
+x will be v. I want to see what is this. What is 1 over cosine squared x?
+
+633
+01:55:17,668 --> 01:55:23,088
+Product 1 over tangent x is cotangent. It is cosine x over sine x.
+
+634
+01:55:28,372 --> 01:55:48,092
+So, let us write here, our integral will be u product v minus cosine x ln tangent x minus integral.
+
+635
+01:55:50,612 --> 01:56:03,891
+v product du, v is this, du is 1 over sine product cosine, it will be plus dx over sine x.
+
+636
+01:56:05,351 --> 01:56:06,231
+Okay.
+
+637
+01:56:07,391 --> 01:56:16,391
+So, in the last part, we can write that our integral will be minus cosine x.
+
+638
+01:56:18,387 --> 01:56:21,547
+ln tencant x.
+
+639
+01:56:21,887 --> 01:56:26,967
+And here, this integral is the integral of cosecant x.
+
+640
+01:56:28,648 --> 01:56:42,847
+And from the table, I know that cosecant is minus ln cosecant x plus cotangent x.
+
+641
+01:56:44,340 --> 01:56:46,340
+ve a constant c.
+
+642
+01:56:46,340 --> 01:56:48,340
+This is our integral.
+
+643
+01:56:48,340 --> 01:56:48,460
+Okay.
+
+644
+01:56:55,091 --> 01:56:56,091
+Do you have any question?
+
+645
+01:56:59,091 --> 01:57:00,771
+Okay. And
+
+646
+01:57:00,771 --> 01:57:09,251
+Lastly, I want to look at this example about the integration by parts. Okay.
+
+647
+01:57:16,340 --> 01:57:18,300
+Okey, bir daha bakalım İslam.
+
+648
+01:57:20,900 --> 01:57:22,500
+Nereye soruyorsun İslam?
+
+649
+01:57:24,199 --> 01:57:26,400
+Şu en son ı'yı nasıl yazdığımız mı?
+
+650
+01:57:29,400 --> 01:57:30,900
+Ha, şu kısım.
+
+651
+01:57:31,699 --> 01:57:33,659
+Bu kısım şeyden, tablodan yazılıyor.
+
+652
+01:57:43,060 --> 01:57:57,220
+here. Integral of cosecant function is this, minus this one. I write from the table, it is this.
+
+653
+01:58:00,100 --> 01:58:07,140
+So, cosecant is minus ln cosecant and plus cotangent x. I write from the table directly.
+
+654
+01:58:08,020 --> 01:58:10,180
+Okay, let me look at this example.
+
+655
+01:58:10,836 --> 01:58:12,836
+It is a definite integral.
+
+656
+01:58:15,836 --> 01:58:17,771
+Okay, what can we do here?
+
+657
+01:58:24,884 --> 01:58:36,784
+Okay, I want to say one more thing. In some questions, one of the functions can't be in this world. Okay. For example, 1 over x. What is 1 over x?
+
+658
+01:58:44,819 --> 01:58:47,799
+What is 1 over x? What kind of function is this?
+
+659
+01:58:50,359 --> 01:58:51,399
+Is it polynomial?
+
+660
+01:58:56,659 --> 01:58:58,700
+1 bölü x polinom modur değil midir?
+
+661
+01:59:07,667 --> 01:59:15,487
+For polynomial, it will be x to the power n. n has to be greater or equal to 0, but it has to be integer.
+
+662
+01:59:16,087 --> 01:59:29,387
+You can write n has to be z plus or 0. Okay, but it is not a polynomial. Okay, in lab 2, I have arcsine function.
+
+663
+01:59:29,387 --> 01:59:31,007
+The other one is 1 over x.
+
+664
+01:59:32,307 --> 01:59:40,167
+So, I have one over the function is the lab2, but the other one is not. What can we do here? Can we use lab2?
+
+665
+01:59:44,083 --> 01:59:51,444
+Actually, you have two possibilities. The first one you can use is simple transformation and you can find a new function.
+
+666
+01:59:52,503 --> 02:00:10,043
+The second, the first way is this. Wait, right. You can see after that. In the first way, if I write ln x as t, dx over x will be dt. Okay.
+
+667
+02:00:12,627 --> 02:00:14,627
+integral will be
+
+668
+02:00:18,195 --> 02:00:33,836
+arc sin t, dx over x will be dt. Okay. And after that, you can solve this question integration by parts.
+
+669
+02:00:33,836 --> 02:00:44,475
+What about the bounds? If x is 1, t will be ln 1 is 0. If x is e,
+
+670
+02:00:45,043 --> 02:00:48,463
+L and E will be 1, T will be 1.
+
+671
+02:00:49,243 --> 02:00:49,523
+Okay?
+
+672
+02:00:50,384 --> 02:00:52,063
+You can solve this question.
+
+673
+02:00:53,003 --> 02:00:56,223
+Second way, let us see, can we make another process?
+
+674
+02:00:57,423 --> 02:00:59,083
+Hatta onu acaba yazdım size.
+
+675
+02:00:59,083 --> 02:01:01,083
+Bir saniye.
+
+676
+02:01:01,443 --> 02:01:03,143
+Sonuçta yazmadıysam da.
+
+677
+02:01:09,779 --> 02:01:13,999
+Şunu da yapabiliriz diye düşündüm. Bir bakalım. Oraya yazmamışım. Buraya yazayım.
+
+678
+02:01:14,939 --> 02:01:17,079
+Okay. So if I write
+
+679
+02:01:17,079 --> 02:01:21,739
+arcsine
+
+680
+02:01:21,739 --> 02:01:23,059
+ln x
+
+681
+02:01:23,059 --> 02:01:25,459
+as you
+
+682
+02:01:25,459 --> 02:01:27,859
+and dx
+
+683
+02:01:27,859 --> 02:01:29,419
+over x is the
+
+684
+02:01:29,419 --> 02:01:33,519
+Bakalım olacak mı? Ben de iklifat edeyim ama sanki deneyip olmuştu diye hatırlıyorum.
+
+685
+02:01:34,100 --> 02:02:01,600
+What is this derivation of arcsine function? Derivation inside 1 over x, 1 minus inside square ln square x dx will be du. If I take integral, it will be ln x will be v. Okay?
+
+686
+02:02:04,083 --> 02:02:23,064
+So, the integral will be u product v ln x arcsin ln x minus integral v product du dx over x.
+
+687
+02:02:27,572 --> 02:02:31,072
+1 minus ln squared x.
+
+688
+02:02:31,811 --> 02:02:31,992
+Okay.
+
+689
+02:02:32,712 --> 02:02:35,592
+You can use integration by parts directly also.
+
+690
+02:02:36,392 --> 02:02:36,792
+Okay.
+
+691
+02:02:37,432 --> 02:02:39,532
+How can you solve the last integral?
+
+692
+02:02:40,012 --> 02:02:42,172
+Şimdi burada anlaşıldı mı arkadaşlar ne yaptığımız?
+
+693
+02:02:42,332 --> 02:02:47,231
+Yukarıda, birincinde, in the first way, I use its transformation.
+
+694
+02:02:47,231 --> 02:02:54,692
+I write ln x is t and after that I find another integral and for this you have to use integration by parts.
+
+695
+02:02:55,220 --> 02:03:01,840
+In the second way, I said that don't use a transformation, let us apply integration by parts directly.
+
+696
+02:03:03,140 --> 02:03:11,260
+I write arcsine lnx is u, dx over x will be dv, and I find integration by parts directly.
+
+697
+02:03:11,260 --> 02:03:17,600
+But here, I need to use, I need to find this integral also. How can you solve this integral?
+
+698
+02:03:19,100 --> 02:03:20,979
+Bakın bakalım, nasıl çözersiniz bunu?
+
+699
+02:03:31,699 --> 02:03:33,179
+So, yuh, re, o an, e.
+
+700
+02:03:57,108 --> 02:03:58,248
+ok, so
+
+701
+02:03:58,248 --> 02:04:03,668
+if I use this one, if I write one minus ln
+
+702
+02:04:03,668 --> 02:04:06,348
+squared xs
+
+703
+02:04:06,348 --> 02:04:11,528
+t squared
+
+704
+02:04:11,528 --> 02:04:14,731
+kare artı 2x
+
+705
+02:04:19,412 --> 02:04:36,332
+Okay, yes. You can use your u square. I prefer to take t square. It will be minus 2 ln x product 1 over x dx will be 2 t dt.
+
+706
+02:04:41,811 --> 02:04:59,851
+integral will be lnx over x dx will be t dt over, it will be t. The integral will be t, it will be 1 minus ln square x.
+
+707
+02:05:03,188 --> 02:05:28,208
+So, lastly, we can write, our questions result will be ln x, arg sin ln x, minus 1 minus ln square x, okay, from 1 to e.
+
+708
+02:05:30,068 --> 02:05:33,007
+ve bu şekilde bir resulta da bir lecture note
+
+709
+02:05:33,007 --> 02:05:35,807
+bu ikinci bir şekilde yazdım
+
+710
+02:05:35,807 --> 02:05:40,007
+ama bu şekilde kullanılabilirsiniz
+
+711
+02:05:40,007 --> 02:05:45,768
+bu şekilde kullanılabilirsiniz
+
+712
+02:05:45,768 --> 02:05:48,568
+ve
+
+713
+02:05:48,568 --> 02:05:52,088
+ok, bir şekilde bir fotoğraf
+
+714
+02:05:52,088 --> 02:05:54,448
+ve bu şekilde comparabilirsiniz
+
+715
+02:05:54,448 --> 02:05:56,608
+ama bu bir de kullanılabilirsiniz
+
+716
+02:05:56,863 --> 02:06:11,144
+yoruldunuz tabi biraz o yüzden de şey yok. Bunu yazmadım. Sen bunun bir resmini çekin. Kendiniz evde bir bakın bakalım. Bunu da kullanabilirsiniz. Hani hangisini istiyorsanız. Öbürküsü tabi biraz daha kolay gibi görünüyor. Sonuçta her ikisine de bir dönüşüm gerekecek size.
+
+717
+02:06:12,583 --> 02:06:22,663
+Okey. So, do you have any question? Look at this example at home. If you have any problem, we can talk about again tomorrow. Okey.
+
+718
+02:06:24,500 --> 02:06:28,500
+Lastly, I want to show you...
+
+719
+02:06:38,003 --> 02:06:40,003
+tabi tabi, evet çözebiliyorsunuz.
+
+720
+02:07:08,916 --> 02:07:11,596
+eski sınav sorularını bir açacağım da.
+
+721
+02:07:12,195 --> 02:07:12,996
+Bir saniye, bu değil.
+
+722
+02:08:10,323 --> 02:08:15,684
+Bunları sonra size üzgün bir şekilde vereceğim. Şu an sadece bir bakalım.
+
+723
+02:08:18,684 --> 02:08:24,224
+Okey, this is the vazire sınavıydı final herhalde.
+
+724
+02:08:27,796 --> 02:08:30,296
+Bu değil. Mesela bu soru.
+
+725
+02:08:32,456 --> 02:08:35,716
+Bir soruya bakalım. Let's look at this example for example.
+
+726
+02:08:40,307 --> 02:08:53,707
+How can you solve this integral? What is your opinion? This is the final exam or excuse exam question. Which of the following integral the solution?
+
+727
+02:09:03,828 --> 02:09:04,968
+Nasıl çözeceksiniz?
+
+728
+02:09:12,659 --> 02:09:14,539
+olabilir, koymuş olabilirim.
+
+729
+02:09:15,500 --> 02:09:16,100
+olabilirim.
+
+730
+02:09:16,440 --> 02:09:17,300
+How can you solve?
+
+731
+02:09:18,920 --> 02:09:21,260
+When you look at this question, it is very complex.
+
+732
+02:09:24,699 --> 02:09:26,140
+Yes, yes.
+
+733
+02:09:26,820 --> 02:09:27,420
+Varan, yes.
+
+734
+02:09:37,235 --> 02:09:47,435
+write here. Actually, it is very easy. If you remember, I write a property about the integral if minus t to t f t dt.
+
+735
+02:09:53,587 --> 02:10:08,907
+If f' t is odd, it will be 0. If f' t is even, it will be 2 integral from 0 to t, f' t, d.
+
+736
+02:10:09,907 --> 02:10:17,287
+This question is related to this one. Look at here. This is odd, 0. This is?
+
+737
+02:10:18,452 --> 02:10:43,652
+This is even, but this is odd, it will be zero. Here it is odd, this is even, but the product will be odd, zero. This is odd, this is even, but the product will be odd. All of them are zero, only I have two. So, you have to find.
+
+738
+02:10:46,707 --> 02:11:11,627
+2 integral minus t to t dt. dx. It will be x from minus t to t. It will be 2 product 2t. It will be 4t. It will be d. It is very easy. Don't try to solve this integral. They are very difficult. Okay?
+
+739
+02:11:12,595 --> 02:11:24,475
+If you see in the question, if you see minus t to t or minus 1 to 1, minus 2 to 2, you can consider this property.
+
+740
+02:11:24,655 --> 02:11:24,775
+Okay?
+
+741
+02:11:26,855 --> 02:11:27,695
+Did you understand?
+
+742
+02:11:30,575 --> 02:11:31,755
+Bakın bu çok kolay bir soru.
+
+743
+02:11:32,295 --> 02:11:34,975
+Yani hiçbir zorlu yok ama dikkat edeceksiniz özelliklere.
+
+744
+02:11:38,495 --> 02:11:39,055
+Okay.
+
+745
+02:11:40,020 --> 02:11:42,020
+bu konuya geçmediğim ki
+
+746
+02:11:48,564 --> 02:11:52,144
+diğer konuyla ilgili, şu an integral ile ilgili bakıyorum neler var diye.
+
+747
+02:11:56,532 --> 02:11:57,052
+Bir saniye.
+
+748
+02:12:02,932 --> 02:12:04,552
+Linearizasyon sorusu da çok kolay.
+
+749
+02:12:04,672 --> 02:12:06,132
+O şeyle ilgili, Leibniz'le ilgili.
+
+750
+02:12:08,412 --> 02:12:14,092
+Which of the following is the linearization of the function I will give later?
+
+751
+02:12:14,212 --> 02:12:14,932
+Maybe I gave.
+
+752
+02:12:15,052 --> 02:12:15,851
+I don't remember.
+
+753
+02:12:16,392 --> 02:12:17,552
+Ben midem hatırlamıyorum.
+
+754
+02:12:19,152 --> 02:12:23,652
+Which of the following is the linearization of f at the point 1?
+
+755
+02:12:24,851 --> 02:12:35,112
+So, I need to find f'1. Okay, I need to find f'1. But here I have to use the L'Hospital rule. What is this?
+
+756
+02:12:35,871 --> 02:12:47,251
+f'x will be minus 2x. I have two different functions and there is a product here. Derivation of the first function is 1.
+
+757
+02:12:47,572 --> 02:12:52,471
+So, it will be minus 1 to 1.
+
+758
+02:12:52,916 --> 02:13:05,615
+the same function, okay, plus the first function, product. I need to take derivation of this. For this, I have to use Leibniz rule.
+
+759
+02:13:06,215 --> 02:13:14,536
+I will take derivation of here. It will be 1. After that, I will cancel t and I will write x here and here.
+
+760
+02:13:18,000 --> 02:13:35,019
+x to the power 2020, sin x to the power 2019, cos x, 2020 plus 3.
+
+761
+02:13:36,019 --> 02:13:36,319
+Okay.
+
+762
+02:13:37,979 --> 02:13:41,220
+But here, I need to find one.
+
+763
+02:13:42,131 --> 02:13:56,351
+So, if I want to find 1, if I write 1 here, if I write 1, all this part will be 0.
+
+764
+02:13:57,351 --> 02:14:00,171
+So, what is f' prime 1?
+
+765
+02:14:00,291 --> 02:14:06,411
+It will be minus 2 plus minus 1 to 1.
+
+766
+02:14:07,444 --> 02:14:08,704
+I need to find
+
+767
+02:14:08,704 --> 02:14:14,824
+if I write x is 1, 1 to
+
+768
+02:14:14,824 --> 02:14:16,524
+2020
+
+769
+02:14:16,524 --> 02:14:20,444
+sine t
+
+770
+02:14:20,444 --> 02:14:22,824
+2019
+
+771
+02:14:22,824 --> 02:14:25,984
+cosine
+
+772
+02:14:25,984 --> 02:14:29,104
+2019
+
+773
+02:14:29,104 --> 02:14:30,264
+and 3
+
+774
+02:14:30,264 --> 02:14:34,844
+dt. Bunu bulmam gerekiyor.
+
+775
+02:14:38,260 --> 02:14:44,200
+Yes, sin function is a odd function, so this part will be 0.
+
+776
+02:14:45,480 --> 02:14:53,560
+Only I have to take integral of 3, it is 3t, minus 1 to 1, it will be 6.
+
+777
+02:14:55,260 --> 02:14:58,260
+x 2 de burada var, f' 1 will be 4.
+
+778
+02:15:02,771 --> 02:15:08,212
+So, our linearization function will be f1. What is f1?
+
+779
+02:15:11,252 --> 02:15:15,692
+Okay, it will be 4x minus 1.
+
+780
+02:15:18,252 --> 02:15:25,832
+Okay, but I don't know here. I have to find this one, but I can cancel, for example, this one and this one.
+
+781
+02:15:26,532 --> 02:15:29,072
+But for all of them, they are the same.
+
+782
+02:15:29,747 --> 02:15:43,728
+I need to find f1. Let us write 1, 1, 1, it will be 0, it will be 4. So this is 4. So 4x. It is 1.
+
+783
+02:15:45,247 --> 02:15:56,188
+Okay? Bunları sonra veririm zaten size verip vermediğim denemin değilim de teste. Yani bu da mesela deyip bizi çok sorarız. Yani farklı farklı yerlerde sorulur.
+
+784
+02:15:57,684 --> 02:16:00,364
+Okey, let me look at another thing.
+
+785
+02:16:01,164 --> 02:16:05,923
+Bunu görmedik. Daha şimdi görmediğimiz şeyler var burada. O yüzden vermiyorum.
+
+786
+02:16:15,123 --> 02:16:15,884
+Şu an bu kadar.
+
+787
+02:16:16,543 --> 02:16:18,144
+Okay, so that's enough for today.
+
+788
+02:16:20,344 --> 02:16:23,144
+I will continue to do lesson tomorrow.
+
+789
+02:16:23,503 --> 02:16:27,644
+I will explain the other integration techniques.
+
+790
+02:16:28,484 --> 02:16:32,324
+And next week I will make some application lessons.
+
+791
+02:16:32,324 --> 02:16:32,763
+Okay.
+
+792
+02:16:33,876 --> 02:16:43,155
+Please try to solve the test sample 5 or 6. I don't remember. Do you have any question about the last test sample? Did you solve?
+
+793
+02:16:43,155 --> 02:16:47,475
+Bir şey değil arkadaşlar. Çözdünüz mü en soncusunu?
+
+794
+02:16:53,940 --> 02:17:05,420
+Okay, today I will put the application questions for the final exam, but there are some subjects we haven't seen. Okay.
+
+795
+02:17:07,760 --> 02:17:12,819
+Bugün elimde olan bütün integral sorularını koyayım ama içinde görmediklerimiz de var.
+
+796
+02:17:14,500 --> 02:17:19,900
+Yes, [öğrenci], [öğrenci], you have some questions about the test temple.
+
+797
+02:17:23,507 --> 02:17:47,387
+Okay, I will solve the test sample. Maybe we can look at tomorrow or next week. I will solve all these questions. Also, I will give you some test sample again. Okay. Next week you can ask or tomorrow you can ask. Okay. Okay. Thank you. So let's finish for today. Let's talk again tomorrow. Okay. Bye bye.
