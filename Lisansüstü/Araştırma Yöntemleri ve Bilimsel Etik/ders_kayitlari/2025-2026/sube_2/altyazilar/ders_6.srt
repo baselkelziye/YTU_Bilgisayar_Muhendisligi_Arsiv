@@ -1,0 +1,1411 @@
+1
+00:00:04,500 --> 00:00:04,860
+Ok.
+
+2
+00:00:15,444 --> 00:00:15,944
+Evet.
+
+3
+00:00:25,364 --> 00:00:31,283
+Merhaba arkadaşlar. Sesim var, görüntü var, her şey var mı?
+
+4
+00:00:35,155 --> 00:00:36,576
+Merhaba hocam, evet var.
+
+5
+00:00:38,555 --> 00:00:40,095
+Saat kaç oldu, oldu mu?
+
+6
+00:00:42,875 --> 00:00:46,995
+Her yerde saat varken hiçbir yerde saat görmek çok başarılı diyor.
+
+7
+00:00:58,676 --> 00:01:09,816
+Hatta 4-5 dakika varmış. Tamam ben şöyle kapatıp kenarda bekleyeyim. Şey yapalım. Tam 5 olunca başlarız. Eksiklik olmasın. Birazdan görüşürüz.
+
+8
+00:01:10,736 --> 00:01:11,836
+Sağ olun hocam.
+
+9
+00:05:00,403 --> 00:05:02,884
+Evet, merhaba arkadaşlar.
+
+10
+00:05:07,091 --> 00:05:10,012
+Orada mıyız? Herkes duyuyor mu?
+
+11
+00:05:11,391 --> 00:05:12,951
+On kişi olmuşuz zaten.
+
+12
+00:05:15,251 --> 00:05:19,971
+Tamam, süper.
+
+13
+00:05:20,771 --> 00:05:21,031
+Şimdi,
+
+14
+00:05:23,111 --> 00:05:28,551
+Buradan daha bir şey olacak galiba.
+
+15
+00:05:29,631 --> 00:05:30,551
+Şimdi,
+
+16
+00:05:33,012 --> 00:05:56,672
+Bugün kaldığımız yerden devam edeceğiz. En son sizlerle şeyi konuşmuştuk diye hatırlıyorum. Bilimsel yazımı konuşmuştuk. Nasıl olması gerekiyor? Nasıl bir formatta yazıyoruz? Bu format üzerinde hangi alana nasıl bir şey yazdığımız lazım? Yani introduction, related work, material and methods, results ve discussion'ı uzun uzun tartışmıştık, konuşmuştuk.
+
+17
+00:05:59,156 --> 00:06:26,915
+Biraz onun devamı olan bir şey konuşacağız. Bu ve benzeri yazılarda bazı önemli noktalar var. Nedir onlar? Bir, referanslar. Referanslar nasıl verilmelidir, nasıl yapılmalı? Ne referanstır, ne değildir? Referansı verirken nasıl bir sistematik izlemek gerekir? Hangisi düzgün, hangisi yamuk yöntemdir ya da şekildir? Hangisi ne için yapılır? Onun dışında tablolar ve grafiklerle ilgili.
+
+18
+00:06:27,156 --> 00:06:29,016
+Böyle yazılı olmayan kurallar var.
+
+19
+00:06:31,091 --> 00:06:38,251
+Yazılı olmayan kurallar derken, hiçbir yerde, hiçbir journalda, hiçbir çok iddialı oldu gerçi.
+
+20
+00:06:38,851 --> 00:06:43,491
+Hani şey diyeyim, en azından ben herhangi bir journalda rastlamadım henüz.
+
+21
+00:06:45,111 --> 00:06:52,012
+Tablonunuzun nasıl olması gerektiğiyle ilgili ya da grafiklerinizin nasıl olması gerektiğiyle ilgili çok az bilgi olur.
+
+22
+00:06:52,871 --> 00:06:57,411
+Ya da hiç olmaz. Ya da en azından içerik anlamında sizi kısıtlayıcı bir şey söylemezler.
+
+23
+00:06:57,512 --> 00:06:59,091
+Daha şekilsel şeyler söyleyebilir.
+
+24
+00:06:59,091 --> 00:07:05,451
+bilirler. İşte atıyorum renkli olsun, renksiz olsun, şöyle olsun, böyle olsun vesaire gibi.
+
+25
+00:07:05,891 --> 00:07:10,692
+Öyleyse bunları bir konuşacağız. Bunu daha detaylı konuşacağız. Yazılmamış bazı kuralları konuşacağız.
+
+26
+00:07:10,831 --> 00:07:19,572
+Şimdi biz referansları niye kullanıyoruz? Aslında bir konuyu aydınlatmak için kullanıyoruz genellikle.
+
+27
+00:07:22,572 --> 00:07:23,371
+Yani
+
+28
+00:07:29,459 --> 00:07:30,859
+Öğrenç
+
+29
+00:07:31,732 --> 00:07:48,572
+Nasıl ifade edeyim? Yaptığımız yayın içerisinde birincil öncülüğümüz olmayan ama bakılması ya da uygulanması gereken yöntemin detaylarının anlatıldığı bir yere referans veriyor olabiliriz.
+
+30
+00:07:48,692 --> 00:07:56,912
+Ya da bir iddia öne attığımız savun orjinine ya da başlangıç noktasını referans olarak veriyor olabiliriz.
+
+31
+00:07:59,732 --> 00:08:08,932
+Biri tarafından ortaya atılmıştır. Biz de bu iddiaya dayanarak başka şeyler yapıyoruz. Detayları için bakınız şeklinde bir referans da veriyor olabiliriz.
+
+32
+00:08:10,432 --> 00:08:21,032
+Şimdi referans verirken önemli notlardan bir tanesi, bunların hepsinin aslında yayınlanmış şeyler olmasını bekleriz.
+
+33
+00:08:21,032 --> 00:08:25,132
+Yani yayınlanma aşamasında olan bir referans.
+
+34
+00:08:25,524 --> 00:08:42,483
+Olmaz. Çünkü bizim için önemli olan yayın derken, burada bilimsel yayından bahsediyoruz tabii ki, bu yayının yayınlanmış olması. Yani Peer River'den geçmiş olması, kabul edilmiş olması ve bir şekilde komüniteye sunulmuş olması. Aksi takvide sıkıntı.
+
+35
+00:08:43,668 --> 00:09:07,768
+Olur. Neden dolayı sıkıntı olur? Yani şu an basım aşamasındaysa o bir exception. Yani kabul edilmiştir ama basım aşamasındadır. Hani o zaman da in, press vs. deyip hani şey yapabiliriz, ekleyebiliriz ama onun dışındaki her durum. Yani bir journal'a bir makale gönderdiniz. Daha kabul bir şey de gelmedi. Öbür tarafta başka bir yere gönderdiniz.
+
+36
+00:09:08,820 --> 00:09:13,340
+İlk gönderdiğiniz makaleyi referans olarak gösteremezsiniz.
+
+37
+00:09:14,019 --> 00:09:18,980
+Tamam mı? Yani bir nokta. Çünkü daha kabul edilip edilmeyeceğini bilmiyorsunuz. Bir şey olup olmadığını bilmiyorsunuz.
+
+38
+00:09:19,080 --> 00:09:21,820
+Bu anlamdan bakınca, bu taraftan bakınca aslında...
+
+39
+00:09:22,611 --> 00:09:36,172
+Otomatikman şunu da kafanıza gelmiştir ya düşünmüşsünüzdür. O zaman biz bilimsel bir yayında, web sitesi, ıvır kıvır vs. orada burada yayınlanmış şeyleri de referans gösteremeyiz.
+
+40
+00:09:37,271 --> 00:09:47,172
+Aslında gösterebilirsiniz ve fakat hiç hoş karşılanmaz. Hoş karşılayacağı ya da istisna olacak olan şey nedir?
+
+41
+00:09:47,871 --> 00:09:59,971
+Mesela yaptığınız bir işin önemiyle ilgili motivasyon anlatıyorsunuzdur ya da etkisiyle ilgili bir şey anlatıyorsunuzdur ve yayınlanmış bir rapor vardır.
+
+42
+00:10:00,000 --> 00:10:06,539
+Bir yerlerde, bir web sayfasında, hakemli vs. falan bir dergide değil de herhangi bir web sayfasında vs.
+
+43
+00:10:07,720 --> 00:10:18,419
+Şimdi bu istatistiki bilgiyi paylaşmak istediğiniz zaman, hani oradaki oranları falan da kaynak benim diyemeyeceğinize göre neresi olduğunu gösteriyor olmanız zaten. Bu okey.
+
+44
+00:10:23,379 --> 00:10:42,680
+Parzı misal, biraz donanımsal bir şey yapıyorsunuzdur. Bir mikro kontrolörün bir özelliğini kullandığınız ya da konfigür ettiğiniz bir yapı vardır. O yapının nasıl kullanılacağı, o mikro kontrolörün data sheet'inde vardır. Data sheet bilimsel bir yayın olmamakla beraber o işin nasıl yapılacağı bütün detaylarını içerdiği için.
+
+45
+00:10:43,668 --> 00:10:52,688
+Ki o iş mesela işte bilimsel ne rejissörünün bilimsel ne bittiğini şöyle set etmek, burasını böyle set etmek, şurasını şöyle set etmek içeren.
+
+46
+00:10:54,107 --> 00:10:55,659
+Bol miktarda...
+
+47
+00:10:56,019 --> 00:11:15,579
+Farklı tablonun vesairenin bakılıp incelenmesine gerektiğin bir şey olabilir. Bunu böyle makalenin içerisinde anlatmak yerine referansını verip, hani bu Data Sheet'teki şu operasyona göre konfigür edilmiştir deyip veriyor olabilirsiniz. Yani istisnaları tabii ki var ama şu çok hoş karşılanmaz ya da kabul görmez.
+
+48
+00:11:16,916 --> 00:11:32,196
+Bir yayın hazırladım. Bütün referanslar şey, yani oradan buradan web sayfası, yıvır kıvır, birilerinin hazırladığı rapor, rapor, o iş tutmaz. Yani normal şartlarda tutmaması lazım. Öyle söyleyeyim en azından.
+
+49
+00:11:35,251 --> 00:11:52,531
+Referans verirken en önemli noktalardan biri şu, aslında zaten çoğu zaman işte Overleaf gibi ya da başka tool'lar gibi böyle otomatik referans üreten, daha doğrusu referansın numaralandırılmasını ya da ilişkilendirmesini otomatik üreten tool'lar kullanıyoruz.
+
+50
+00:11:52,951 --> 00:12:02,531
+Ve fakat bunu kullansanız da kullanmasanız da başka bir yapıyı da kullansanız şu çok önemli, referanslar kısmında olan bütün yayınlara...
+
+51
+00:12:03,251 --> 00:12:07,871
+Her chatten tekst içerisinde refere etmiş olmanız, sayt etmiş olmanız gerekiyor.
+
+52
+00:12:08,511 --> 00:12:11,811
+Aksi aslında çok hoş olmayan bir durum.
+
+53
+00:12:11,811 --> 00:12:23,671
+Aksi şu demek, birilerine iyi gözükmek, güzel gözükmek ya da orayı kalabalık göstermek adına böyle çok etik olmayan bir hareket yaptığınız anlamına geliyor.
+
+54
+00:12:24,932 --> 00:12:28,811
+Şimdi bu genel çarşıysı. Biraz daha özele ineceksek.
+
+55
+00:12:30,932 --> 00:12:36,932
+Aslında referansın...
+
+56
+00:12:40,019 --> 00:12:42,019
+Nasıl olmamasıyla...
+
+57
+00:12:43,663 --> 00:13:07,884
+İlgili örnekleri görüyorsunuz bu slide'da. Aslında bu slide'da başka şeyler de görüyorsunuz da. Bunu daha sonra ilerleyen dönemlerde anlatacağım. Bir sunum nasıl yapılmazın da belli açılardan örneği bu. Yani böyle her yere ağzına kadar tekst olan her şey uzun uzun anlatılmış, neredeyse bana söyleyecek bir şey kalmamış bir slide. O anlamda da sıkıntılı. Ama onu sonra konuşacağız.
+
+58
+00:13:11,668 --> 00:13:20,607
+Herhangi bir referansı verir iken bunu uygun, en uygun şekilde veriyor olmamız lazım.
+
+59
+00:13:21,427 --> 00:13:24,187
+Yani farzimsel ilkinde gördüğünüz şey şu.
+
+60
+00:13:27,827 --> 00:13:41,447
+İşte Smith's Elegant Contribution vesaire falan gibi bir şeyle referans verdiğiniz, aslında vermediğiniz bir yapı kabul edilebilir değil.
+
+61
+00:13:41,447 --> 00:13:50,287
+Yani bizim net bir şekilde niye ve neyi referans verdiğimizi söylüyor olmamız lazım.
+
+62
+00:13:51,923 --> 00:13:58,744
+Nasıl bir katkıda bulundu, ne yaptı, hangi çalışmasında bunu yaptı vesaire şeklinde bunu göstermiyoruz lazım.
+
+63
+00:13:59,324 --> 00:14:07,104
+Mühendislik tarafında daha çok bu desimal, ordut desimal şeklinde olan referansı kullanıyoruz.
+
+64
+00:14:07,104 --> 00:14:13,303
+Yani metnin içerisinde başlıyoruz. İlk referansımız, bir, ikinci referansımız, iki vesaire şeklinde gidiyor.
+
+65
+00:14:13,779 --> 00:14:22,399
+Tabii ki arada 1, 2, 3, 4 dedikten sonra tekrar 1'e referans vermeniz gerekiyorsa 1 yazıp devam ediyorsunuz. Ama sıra artarak gidiyor özetle.
+
+66
+00:14:23,980 --> 00:14:29,860
+Şimdi bütün referanslar netral ya da olumlu olmak zorunda değil.
+
+67
+00:14:33,940 --> 00:14:40,639
+Ama olumsuz olacağı zaman da bu bir kinaya ya da aşağılama şeklinde olmaması lazım.
+
+68
+00:14:41,172 --> 00:15:07,831
+Yani mesela Smith bir çalışmasında konunun bir kısmına değinmediyse ya da bir kısmını şey yaptıysa, nedir o, görmezden geldiyse ya da bir kısmını basit indirgemek için problemi göz ardı ettiyse, bunu şey diye belirtmek, okey, nasıl diyeyim, Smith did not study falan ya da işte
+
+69
+00:15:08,960 --> 00:15:24,960
+Smith did not include the constraint of blah blah blah bir şeyler demek okey ama hani böyle totally overlooked, ignored vesaire gibi biraz böyle iğneliyici olumsuzluklar şeklinde bir şeyler yazmak hiç...
+
+70
+00:15:26,580 --> 00:15:54,120
+kabul edilir ya da sevilir bir şey değil. Bu genel bir, nasıl diyeyim, common courtesy. Hani bilim dünyasında kimse kimseyi bu şekilde doğrudan rencide edecek ya da can sıkacak şeyler yapmıyor. Bir diğeri, bunu çokça görürsünüz, böyle trend şeklinde referanslar verenler vardır. İşte bir tire 10 ya da işte 1, 2, 3, 5, 7, 9 falan da yan yana şurada olduğu gibi.
+
+71
+00:15:54,580 --> 00:16:01,392
+Bu makul ve mantıklı bir referans yöntemi değil. Bu referans yönteminin...
+
+72
+00:16:01,392 --> 00:16:23,072
+Buradaki bir neyle ilgili ise onun yanında, iki neyle ilgili ise onun yanında olması gerekir. Bakınız şuradaki örnek. Yani bir numaralı çalışmada bizim Multiple Access Communication ile ilgili bir orada değindiğimiz bir şey varsa onu göstermeli. İkide de Mobile Radyo Telefoni ile ilgili bir şey varsa
+
+73
+00:16:23,604 --> 00:16:38,964
+Onu refere etmeli. Yani bunları bir şekilde uygun yerlere yerleştiriyor olmalıyız. Böylece o cümlede söylenen şeyin hangisi bu referanstan, hangisi birden, hangisi ikiden bakmak durumunda kalmasın karşı taraf.
+
+74
+00:16:40,851 --> 00:16:54,272
+Bunun dışında ne var? Tablolar var demiştik. Tablolarla ilgili aslında birkaç tane şey var. Çok basit kurallar ve fakat bazen insan ister istemez unutuyor.
+
+75
+00:16:54,272 --> 00:17:04,392
+Bir, sadece tablo için değil, grafik için de geçerli. Eğer bir sonuç ya da bir konuyu tabloda verecekseniz,
+
+76
+00:17:06,355 --> 00:17:23,956
+O zaman grafikte vermeyin. Grafikte vereceksiniz, tabloda vermeyin. Ya da ikisinden herhangi birini de vereceksiniz, tekst içerisinde uzun uzun anlatmayın. Eğer tekst içerisinde anlatabileceğiniz bir mevzusa, grafik ya da tablo kullanmamanız daha iyi olur çoğu zaman. Niye bunu söylüyorum?
+
+77
+00:17:25,140 --> 00:17:30,800
+Eskiden burada tablo ve grafiklerle uğraşmak editorial tarafında çok daha zor bir şeydi.
+
+78
+00:17:30,920 --> 00:17:34,940
+O yüzden insanlar o tabloları ve grafikleri pek sevmezler.
+
+79
+00:17:36,660 --> 00:17:39,580
+Özellikle bunlar lüzumsuz kullanıldığında can sıkıcı olur.
+
+80
+00:17:39,660 --> 00:17:43,460
+Çünkü editorial taraf da iş olarak görülür.
+
+81
+00:17:44,240 --> 00:17:45,400
+Bir de şöyle bir şey var.
+
+82
+00:17:45,400 --> 00:17:50,400
+Bir satır, iki satır bir cümleyle söyleyebileceğiniz şeyi koskoca bir tabloya...
+
+83
+00:17:50,592 --> 00:18:09,092
+Dökmek zaman zaman özellikle de yer kısıtı olan bir yayın yapısında çok hoş karşılanmaz. Şöyle ki diyelim ki bir konferans bekliyiniz var. 4 sayfa limitiniz var. Şuradaki gibi kalktınız böyle bir tablo koydunuz.
+
+84
+00:18:10,932 --> 00:18:17,951
+Bu tabloya baktığınız zaman 4 tane kolon var. Bu 4 kolonun ikisi zaten hiç değişmiyor. Aynı şeyler. Birbirini tekrar ediyor.
+
+85
+00:18:19,251 --> 00:18:24,932
+Dolayısıyla bu kolonun zaten, bu tablonun zaten bir kısmı gereksiz. Kaldı ki...
+
+86
+00:18:27,604 --> 00:18:36,463
+Bu koskocaman tablo, yayında belli bir alan katlayacak olan bu tablo, işte 3 satırlık bir cümleyle tıkır tıkır söylenebiliyor.
+
+87
+00:18:36,703 --> 00:18:41,583
+O zaman bunu bu kadar uzatmaya gerek yok. Yani sorun salınında beraber getiriyor.
+
+88
+00:18:41,683 --> 00:18:45,784
+Hem 4 sayfa doğru düzgün yerin yok hem de yerini böyle harcıyorsun.
+
+89
+00:18:47,003 --> 00:18:49,724
+Ya da aslında söyleyecek çok bir şeyin yok.
+
+90
+00:18:50,516 --> 00:19:08,635
+Yer doldurmak için böyle bir şey yapıyorsun. Yani bu hani böyle hakemi de, editörü de bu ve benzeri kötü düşüncelere gark eder. Dolayısıyla yapmamakta fayda var. Benzer şekilde bu bazen tekrar eden tabloda, tekrar eden bilgiler değil de.
+
+91
+00:19:09,107 --> 00:19:15,007
+Tamamen böyle birbirinden ilk bakışta tak diye ayrılan durumlar olabilir.
+
+92
+00:19:15,667 --> 00:19:27,007
+Bu bilgilerin bir kısmı şey, adamın ismini unuttum, kitaptan oruntu olduğu için, o da biyoloji alanında çalıştığı için o yüzden bu kadar çok...
+
+93
+00:19:28,884 --> 00:19:49,884
+Bakteri bilmem ne ismi görüyoruz ama dikkat edin. Şurada hani tekniğin ne olduğundan bağımsız olarak. A Condition'ını sağlayanlar için baktığınızda 1, 2, 4 ve 6'yı görüyorsunuz. 3 ve 5'te de bu kolondaki şartı sağladığını görüyorsunuz. Dolayısıyla bu aslında...
+
+94
+00:19:51,380 --> 00:20:09,380
+Böyle üç satır bile olmayacak, çok kısa bir cümle ile ifade edilebilecek bir tablo. Ama bunu böyle kullanmak, yer kaybı, yer israfı ve hani demin dediğim gibi herkese böyle şey yaptıracak, tetikleyecek, kötü düşünceleri tetikleyecek bir durum.
+
+95
+00:20:13,811 --> 00:20:33,831
+Şimdi elimizde biraz sayısal değer olduğunda herkes böyle bunu tablo mu yapsam vesaire mi diye düşünüyor ama öyle bir şart yok, öyle bir gereklilik yok. Birçok şey aslında baktığınız zaman, şu an yayınlanmış birçok yayına da baktığınız zaman birçok tablo aslında metin içerisinde tıkır tıkır tertemiz.
+
+96
+00:20:34,675 --> 00:20:44,955
+Söylenebiliyor, ifade edilebiliyor. Bazılarını söylemek çok zor. O yüzden mesela aslında şöyle şeyler görebilirsiniz.
+
+97
+00:20:45,395 --> 00:20:52,875
+Takibi kolaylaştırmak adına. Mesela intervehicle communication ile ilgili simülasyon yapıyorsanız orada simülasyonla ilgili milyon tane parametre var.
+
+98
+00:20:52,875 --> 00:21:00,395
+Milyon tane derken işte araç sayısı, toplam araç sayısı, herhangi bir T anındaki ortalama araç sayısı, işte
+
+99
+00:21:02,516 --> 00:21:18,496
+Şehit nedir o? Simülasyonun çalıştığı alanın kilometre kare cinsinden şeyi. Araçların nedir o? Haberleşme mesafesi, kanal kapasitesi, işte şey nedir o?
+
+100
+00:21:19,476 --> 00:21:32,096
+Propagation modeli, ıvırı kıvırı falan derken böyle 20 tane falan parametre sayabiliyorsunuz. Bunları tek tek böyle metnin içerisinde söylemek yerine genel olarak tabloda olduğunu görebilirsiniz.
+
+101
+00:21:32,096 --> 00:21:36,036
+Yani böyle istisnai durumlar da var ama iyi değerlendirmek lazım.
+
+102
+00:21:38,196 --> 00:21:40,096
+Şimdi benzer şekilde...
+
+103
+00:21:49,811 --> 00:22:01,051
+Şuraya baktığınız zaman, kaç hastada hangi yan etkinin göründüğüne dair bir tablo aslında.
+
+104
+00:22:01,051 --> 00:22:05,611
+Ama zaten organizasyonu da kötü, şeyi de kötü.
+
+105
+00:22:09,875 --> 00:22:28,756
+Böyle bir tablo ile gittiğiniz zaman, eğer kopya editöre kadar gelirse iş, tahminen sizden revizyon isteyecektir ama çoğu zaman normal hakemden ya da dergi editöründen de bu geçmeyecektir.
+
+106
+00:22:28,756 --> 00:22:35,235
+O yüzden her şeyi en kere yapmak yerine bir kere de düzgün yapmak daha iyi olacaktır.
+
+107
+00:22:35,316 --> 00:22:37,816
+Şimdi bir diğer konu, tablo mu figür mü?
+
+108
+00:22:37,875 --> 00:22:57,435
+Ne zaman tablo, ne zaman figür. Bunun böyle çok net, şu zaman şöyle, bu zaman şöyle durumu yok. Buna biraz bakıyor, değerlendiriyor ve izliyor olmamız lazım. Ne açıdan bakıyor, değerlendiriyor, izliyor olmamız lazım.
+
+109
+00:23:06,259 --> 00:23:21,400
+Grafiğin skalasını lineer ya da logaritmik vesaire falan değiştirdiğim zaman ne değişiyor, ne değişmiyor? Bunların hepsi birer ölçü bizim için. Dolayısıyla buna göre karar veriyor olmamız lazım.
+
+110
+00:23:23,155 --> 00:23:45,236
+Bu arada şey de ayrı bir sıkıntı. Grafik konusunda aslında bol miktarda farklı grafik kullanabilirsiniz. Yani bar grafik, pie chart grafik, işte ne bileyim time series. Yani şu an mesela Excel'i açınca herhalde karşınıza 50 küsur çeşit böyle 3D timeline bilmem ne falan filan derken bir tane şey geliyor.
+
+111
+00:23:45,715 --> 00:23:55,735
+Hangisini kullanabilirsiniz? Bu biraz veriye bağlı. Biraz da sizin kullanım amacınıza bağlı.
+
+112
+00:23:57,155 --> 00:24:06,336
+Dolayısıyla, burada deneme, yanılma da, incelemede özgürsünüz. Önü açık, bakıyor olmanız lazım.
+
+113
+00:24:07,827 --> 00:24:17,648
+Farklı grafik tiplerini deniyor, farklı grafik özelliklerini deniyor ve bu okey ya da değil diye karar veriyor olmanız lazım.
+
+114
+00:24:18,307 --> 00:24:28,648
+Grafik formatı olarak baktığım zaman dergiler genellikle sıkıştırılmamış formatları tercih ederler, yüksek çözünürlükte olmasını tercih ederler.
+
+115
+00:24:31,059 --> 00:24:49,079
+Dolayısıyla orada JPEG çok tavsiye edilen bir yöntem değil. Alternatif olarak PNG var. Ama asıl eski zamanlarda özellikle de PDF dosyası oluştururken, latex vesaire üzerinde oluştururken, EPS
+
+116
+00:24:49,587 --> 00:25:02,447
+kullanırdık. Hala kullanılıyor ama PNG'de aynı işi görüyor. Yeter ki PPI değerleri vs. uygun olsun. Dolayısıyla da derginin isterlerine bakmakta fayda var.
+
+117
+00:25:02,447 --> 00:25:15,527
+Şimdi grafik tipi olarak dediğim gibi sonsuz sayıda seçenek olmasa bile baya fazla sayıda seçenek var. Dolayısıyla bunu seçimini biraz
+
+118
+00:25:16,468 --> 00:25:40,148
+Verinin tipi ve durumuna göre bakmak lazım. Mesela bir line grafiği kullanacaksınız. En azından zamansal bir ilişki olması gösterdiğiniz şey de mantıklı ve makul olur. Yoksa birbirinden ayrı durumları line grafik üzerinde göstermeye kalktığınızda bu biraz yanıltıcı olur.
+
+119
+00:25:43,635 --> 00:25:56,975
+Bazı veri, değerlerin durumuna bağlı olarak, farklı grafik tiplerinde çok karman çorman görünebilirken,
+
+120
+00:26:07,763 --> 00:26:22,063
+Çok daha rahat anlaşılır olabilmektedir. Özellikle de her ne kadar böyle fantastik olsa, insanın böyle içini falan da gıcıkmasa bu Line 3D, Step Line 3D, Spline 3D falan gibi şeyler çoğu zaman
+
+121
+00:26:22,483 --> 00:26:50,483
+Çok sıkıntı çıkartır. O yüzden bunlara karşı böyle 3D bar stack ya da Manhattan bar falan bunlara karşı biraz daha şey olmak lazım, mesafeli olmak lazım. Bir de şunu unutmamak lazım. Ekranda gördüğünüz her zaman yeterli değil. Yani herhangi bir dergiyi, herhangi bir journal'a bir şey gönderdiğinizde bu kabul ediliyor, online basılıyor ama bir taraftan basılı da.
+
+122
+00:26:50,483 --> 00:27:08,084
+basılıyor. Dolayısıyla basılı olduğu zaman ne kadar okunulabilir olduğuna dikkat etmekte fayda var. Renkli yaptığınız grafik eğer siyah beyaz basılacaksa seçtiğiniz rengin bile önemi var. Bunu unutmayın. Dolayısıyla grafik üzerindeki her şeyin, her noktanın bizim için ayrı önemi var.
+
+123
+00:27:13,203 --> 00:27:26,324
+Farzı misal, farklı dergilerde ya da konferanslarda farklı sistemler uygulanmakla beraber, to column versiyonu var.
+
+124
+00:27:28,324 --> 00:27:29,203
+Dolayısıyla,
+
+125
+00:27:29,940 --> 00:27:34,980
+Bu şu demek, sayfanın yarısından daha az olan bir alanla sınırlısınız tool column'da.
+
+126
+00:27:35,680 --> 00:27:41,580
+Ve bu size şey olarak geri dönecek. Yaptığınız grafik baya bir dar olmak durumda.
+
+127
+00:27:41,700 --> 00:27:54,920
+Bazı tool column formatlarda grafiği sayfanın üstüne ya da altına iki kolona birden yayarak verme şansı sunarlar.
+
+128
+00:27:55,311 --> 00:28:06,971
+Dolayısıyla bunlara bakmak lazım ama sayfaların da belli bir sayısı var. Dolayısıyla bunu çizgi roman haline getirmek için bütün grafiklerinizin böyle çift kolon olduğu bir yapı oluşturmaya kalkarsanız o bir sıkıntı.
+
+129
+00:28:07,891 --> 00:28:18,211
+Bunun dışında bir grafik içerisinde, diyelim ki online grafikten veriyorsunuz, bunun içerisinde bir tane, iki tane, üç tane olmasında bir sıkıntı yok.
+
+130
+00:28:20,943 --> 00:28:32,303
+Hani sayısı arttıkça bunların bir şekilde birbirinden farklılaşması lazım. Farklılaşması için de aslında şey noktasında nedir o?
+
+131
+00:28:34,963 --> 00:28:53,071
+Değer noktalarında, işte yuvarlak, çarpı, kare, üçgen vs. gibi farklı şeyler kullanabilirsiniz. Ancak ve lakin takdir edersiniz ki ben de birkaç tane saydım. Dörtten beşten sonra bir şeyler saymak zor. Dolayısıyla yani...
+
+132
+00:28:53,071 --> 00:29:06,172
+Özellikle böyle önemli konferans ve journalların yayınlarına vesairelerine baktığınız zaman bir tablo içerisinde altıdan fazla çizgi, grafik vesaire bir arada pek verilmez.
+
+133
+00:29:07,091 --> 00:29:12,111
+Çok istisnai durumlar gibi yani. Ya aradan kaynamıştır ya başka bir şey vardır.
+
+134
+00:29:13,491 --> 00:29:17,491
+Dolayısıyla altı buradaki böyle hani şey...
+
+135
+00:29:18,548 --> 00:29:43,548
+Deadline gibi düşünebilirsiniz. 7 tane şeyi aynı grafikte vermeye çalışıyorsanız orada bir terslik vardır. Ya bir şeyleri çıkartmanız gerekir ya da bunu bölmeniz gerekir okunabilir olsun diye. Benzer şekilde çizgilerin sadece hani şeyleri değil, değer noktalarının ne olduğu değil şey de çok önemli. Bu çizgilerin kalınlıkları da çok önemli. Çünkü basıldığı zaman okunabilir olmaları lazım. Bunun dışında...
+
+136
+00:29:44,980 --> 00:29:59,980
+Ne önemli? Aksistlerin nasıl yapılandırıldığı da önemli. Eskiden ben bu örneği çok yoruyordum ama yaşını tutar mı emin olamadım. Ben çocukken sabah gazetesi vardı. Hala var herhalde bir yerlerde ama onun böyle alt tarafında...
+
+137
+00:30:00,915 --> 00:30:15,115
+Bir tane maaş aldı olurdu. İşte tıraş, sabahın tıraşı, diğerlerinin tıraşı. Böyle bir bar kocaman sabah burada, işte atıyorum hürriyet burada, milliyet burada falan gibi bir grafik olurdu.
+
+138
+00:30:15,556 --> 00:30:27,115
+Sanırsın ki arada dağlar taşlar var. Hayır. Sabahınki atıyorum milyon tıraşı var o sırada. Milyonda grafik böyle.
+
+139
+00:30:27,859 --> 00:30:41,720
+Hürriyet'inki 800 binde, diyelim, burada, yani görmüyorsunuz bile, şöyle ufacık bir yerde, işte öbürünki 600 bin daha da ufak gömülmüş. Neden? Sol taraftaki skelli logaritmik yapmışlar.
+
+140
+00:30:47,412 --> 00:31:10,991
+Arada aslında 200 bin fark olmasına, %20 bir fark olmasına yapmak, sanki fark dağlar, taşlar, %80'miş gibi bir algı yarattık için. Dolayısıyla bu şekilde scale'i yanlış yönlendirecek ya da tuhaf bir noktaya getirecek şeyler yapmıyoruz. Bunun bir yolu da şu.
+
+141
+00:31:15,635 --> 00:31:26,635
+Benzer şekilde grafik için bir alan kullanıyorsunuz. Kullandığınız alan hem genişlik hem yükseliklikten yiyor. Bunu yaparken de diyelim ki yüzdelik bir
+
+142
+00:31:26,996 --> 00:31:36,855
+Oran gösteriyorsunuz. İşte X yöntemiyle şu kadar şeyle %65 oldu, öbürüyle %75 oldu, %35 oldu, %45 oldu vs. diye giden bir şey gösteriyorsunuz.
+
+143
+00:31:36,895 --> 00:31:40,576
+Ya da zamana göre bir yüzdelik değişimi gösteriyorsunuz.
+
+144
+00:31:41,096 --> 00:31:54,615
+Şimdi bütün değerlerini 0 ile 78 arasındayken, ya bu yüzdelik dedim, o yüzden 0'dan 100'e kadar skelimiz olsun demek çok mantıklı ya da her zaman tutacak bir hareket değil.
+
+145
+00:31:54,996 --> 00:32:02,936
+Neden? Çünkü şu oluşacak, 0'dan 80'e kadar değeriniz var, 80'den 100'e kadar 20'lik kısımda hiçbir şeyiniz yok.
+
+146
+00:32:03,036 --> 00:32:07,375
+Ve siz yüksekliğinizin 5'te 1'ini heba ediyorsunuz.
+
+147
+00:32:09,875 --> 00:32:15,915
+Bakın mesela örnek burada var. 9 tane şey konmuş ki bu aslında kötü bir şey.
+
+148
+00:32:15,915 --> 00:32:20,908
+Yani bu kadar çok çizginin olmaması gerekiyor. Buranın 4 ya da 6 gibi bir yerlerde...
+
+149
+00:32:21,652 --> 00:32:45,451
+Duruyor olması lazım. Ancak ve lakin sol ve sağ arasındaki temel farkın şey olduğunu görüyorsunuz. Burada boşa harcanmış, şu ekstradan mesela 100'den 120'ye çıkılmış alan var. Burada o alanı biz dağıtmışız ve böylece birçok yerin özellikle şu aşağıdaki kısımın daha açık, daha net görülebilmesini sağlamıştır.
+
+150
+00:32:49,715 --> 00:32:53,195
+Nasıl diyeyim? Çok da güzel bir grafik değil.
+
+151
+00:32:55,715 --> 00:33:00,536
+Bunun dışında aslında burada birkaç bir şey daha var konuşulması gereken.
+
+152
+00:33:01,556 --> 00:33:08,635
+Birçok yayında bu grafikler hazırlandığı zaman şu title kısmını boş olarak görebilirsiniz.
+
+153
+00:33:08,816 --> 00:33:10,556
+Ama boş olmamasında fayda var.
+
+154
+00:33:10,556 --> 00:33:15,236
+Yani bu title, pardon bu grafik neyi gösteriyor bunu bilmemiz lazım.
+
+155
+00:33:15,776 --> 00:33:17,419
+Çoğu zaman caption ile bunu...
+
+156
+00:33:17,619 --> 00:33:34,619
+gösterdiğimiz için burada olmaması okey ama hani bir şekilde en azından aydınlatıcı, küçük de olsa bir şeylerin olması tercih edilir. Bunun dışında mutlaka bir legend'ın olması gerekir. Farklı renklerle bir şeyler gösterdiniz ama gösterdiğiniz şeyin ne olduğu...
+
+157
+00:33:35,412 --> 00:33:58,192
+Bilimsel, anlaşılmalı. Bu noktada eğer bu kadar böyle bodoslama çizginiz yoksa zaman zaman mesela dört tane olduğu durumda şurası kadar olduğunu düşünün. Bu dört taneyi grafik üzerinde overlap edip şurada bir yerlerde göstermek bu boşluğu da grafik için genişletmek için kullanmak çok daha iyi olacaktır mesela.
+
+158
+00:34:03,347 --> 00:34:29,228
+Birbirini takip eden grafikler olabilir. Yani before, after gibi düşünecek olursanız şu grafikleri. Sol taraf A ve C, before olsun, B ve D de after olsun. Bir durumun farklı açılardan değerlendirilmesi iki ayrı grafik özelinde. Sol tarafta A ve C'de, sağ tarafta B ve D'de görülüyor olabilir. Bunları yapmak için de genellikle
+
+159
+00:34:30,804 --> 00:34:47,083
+Bu şeyler için, nedir o? Söyleyemedim, pardon. Latek içerisinde ayrı kütüphaneler var. Yani tek bir figür olarak değil, bunu figür grup olarak söylüyorsunuz.
+
+160
+00:34:47,083 --> 00:34:53,583
+A, B, C, D diye veriyorsunuz ve öyle devam ediyorsunuz. Buradaki temel sıkıntı şu, bunu yerleştirirken,
+
+161
+00:34:54,420 --> 00:35:13,180
+Dikkatli olmak lazım. Bazen eğer two column vs. ya da tek bir column ise böyle dörtlü vermek okey. Ama two column da bazen bunu böyle vermek yerine alt alta A, B, C'de tek sıra halinde inecek şekilde vermek daha iyi olabilir.
+
+162
+00:35:13,400 --> 00:35:21,599
+Burada da yerleşime bakıyor olmak lazım. Böyle bir seçenek olduğunu bilmek ve buna uygun alternatifleri deniyor olmak lazım.
+
+163
+00:35:22,420 --> 00:35:35,359
+Bu tarafını bitirmiş olduk. Şu tarafa da bir geçelim. O da nedir? Review yöntemleri. Daha doğrusu review süreci yöntemi diyeyim. Özür dilerim.
+
+164
+00:35:42,996 --> 00:36:01,235
+Bilimsel çifti üretik ve bunu bir yere gönderdiğimiz zaman bu bir süreç aslında ve bu süreçin nasıl yönetileceğini de konuşuyor olmamız lazım. Aslında bunu konuşacağız. Ama isteyenler, merak edenler için şöyle bir şey söyleyeceğim.
+
+165
+00:36:10,003 --> 00:36:13,684
+Linkini bulursam şimdi şeyden atacağım.
+
+166
+00:36:17,724 --> 00:36:19,043
+Chatten atacağım.
+
+167
+00:36:19,604 --> 00:36:22,943
+Chat'e denk gelebilirsem olan gibi böyle birçok kısıtı var ama.
+
+168
+00:36:24,783 --> 00:36:25,264
+Şurada.
+
+169
+00:36:28,703 --> 00:36:35,264
+Özellikle de hakemliğin nasıl yürüdüğünü görmek adına güzel bir...
+
+170
+00:36:35,503 --> 00:36:38,123
+şey olabilir. El seviyorum. Bir review.
+
+171
+00:36:40,211 --> 00:37:01,171
+Portal'ı var diyeyim. O portal üzerinde Certified Reviewer olabiliyorsunuz. Yani gidip review nasıl yapılır, neye dikkat edin, ne yapılması lazım vesaire gibi bir eğitim alıyorsunuz. Sınavına geçiyorsunuz. Ondan sonra diyorsunuz ki ben reviewer olabilirim. Hangi dergilerle, hangi konularla ilgilendiğinizde söylüyorsunuz ve arada size review gönderiyorlar. Review yapıyorsunuz.
+
+172
+00:37:08,211 --> 00:37:31,811
+Sizin işinizi birileri değerlendiriyor. Dolayısıyla siz de başkalarınkini değerlendirmiyorsunuz. Bunun artıları var. Bir, masanın diğer tarafına geçince bu tarafta aslında neyi doğru, neyi yanlış yaptığınızı görmek daha kolay oluyor. İki, farklı çalışmaları okumak, böyle daha yayınlanmamış, yeni yayınlanacak şeyleri okumak ise günceli yakalamak adına önemli anlamlı.
+
+173
+00:37:32,307 --> 00:37:47,708
+O yüzden merak ederseniz dönün bir bakın derim. Şimdi şey noktasında neyi konuşacağız? Ay pardon. Submission'ı yani makale gönderimi işlemini konuşacağız. Review prosesini konuşacağız ve bittikten sonra ne olduğunu konuşacağız.
+
+174
+00:37:56,052 --> 00:38:09,052
+Farklı bir, yani farklı farklı böyle gönderim sistemleri kullanıyor. Manuscript Center'ı mesela Elsevier bol bol kullanıyor. İşte Scholar bana...
+
+175
+00:38:11,027 --> 00:38:27,687
+kullanıyorlar. Nerede? I-TRAPEE'de vs. Bunların güzelliği de zaten OrgID ile de entegrasyonu var. OrgID'den login olduğunuz ya da bir account yedip OrgID ile ilişkilendirdiğiniz zaman bütün bilgileriniz otomatik geliyor. Orada ne yazıyorsa, yazmayanlar yenemez.
+
+176
+00:38:29,067 --> 00:38:37,327
+Dolayısıyla gönderdiği sırasındaki bazı ahiret sorularına hızlı cevap vermiş oluyorsunuz. Bir güzellik oluyor.
+
+177
+00:38:38,900 --> 00:38:56,659
+Ve fakat bu sistemler şey üzerinden gidiyor. Siz makalenizi arkadaşların templateine göre hazırlıyorsunuz ama hazırlanmış son haline böyle laf diye koydum, latek olarak ya da pdf olarak koydum ve bitti gibi bir durum yok.
+
+178
+00:38:56,659 --> 00:39:06,039
+Bir kere sizden o makale içerisindeki başlık, yazar, abstrak vesaire gibi bilgileri alıyorlar.
+
+179
+00:39:07,284 --> 00:39:10,983
+Bunun dışında PDF ya da kaynak kod neyse onu alıyorlar.
+
+180
+00:39:11,860 --> 00:39:39,680
+Artı, journal'a özgü şeyler olabiliyor. Mesela Elsevier, Highlights diye bir şey istiyor. En az 3 tane, en fazla 5 tane, her biri 85 harften fazla olmayacak şekilde falan filan gibi böyle bir ton kıvır kıvır şeyi olan cümle formatında olmayacak, hani label gibi olacak diye giden Elsevier'in böyle bir sistematiği var. Bunu hazırlamak gerekiyor. Ama genel olan bir şey daha var. Bir cover letter hazırlamak gerekiyor.
+
+181
+00:39:39,860 --> 00:40:00,000
+Doğru literatür bu bilimizde şu, tercihen böyle antetlik ya da vesaire bir şey, işte gönderdiğiniz yayını, niye buraya göndermek istediğiniz, bu yayınla ilgili daha önce bir yerde yayın yapıldıysa, bir konferans...
+
+182
+00:40:00,000 --> 00:40:15,760
+Neyi değiştiririz? Bunun katkısının ne olduğu, eğer hiçbir şey yapamadıysa ve yeni yayınlayacaksa, bunun neler katacağını vesaireyi belirtiyor olduğunuz bir şey var.
+
+183
+00:40:15,880 --> 00:40:24,660
+Mesela bu örnek bizim fi tarihinde 2011'de, 2012'de neyse bir dergiye gönderirken yazdığımız cover letter.
+
+184
+00:40:25,268 --> 00:40:43,748
+Hani işte editörü adresleyerek, mümkünse, Dear Editor vesaire değil de Dear Dr. Winnam Kim vesaire diyerek, işte şeyde, şu dergide yayınlanmak zorunda, şu isimli yayınımızı, hani şu kişilerle beraber yaptığımız yayını işte,
+
+185
+00:40:46,420 --> 00:40:57,420
+Gönderiyoruz. Biz bunu daha önce şurada yayınladık ve bunun üzerine şunları, şunları, şunları, şunları yaptık, böyle eklemeler yaptık gibi anlattığınız...
+
+186
+00:40:58,931 --> 00:41:16,751
+Hatta mümkünse bir yerlerde aslında şu da olabilir. O zamanlar bu kadar gerekmiyordu ama şimdi daha da iyi oluyor. Yani sizin AMAP, ScopusAktaki şu keywordlerle çok uygun olduğumuzu düşündüğümüzden, yani journal ile ilişkisinin iyi de bir şekilde letter'da bahsedip,
+
+187
+00:41:17,492 --> 00:41:37,731
+Bir şey hazırlamak lazım. Review prosese baktığınız zaman aslında birkaç şekilde review olabiliyor. Ya blind review yapıyoruz ya double blind yapıyoruz. Blind review aslında şöyle makaleyi değerlendiren kişilerin yazarları bildiği ama yazarların değerlendiricileri bilmediği durum.
+
+188
+00:41:38,963 --> 00:41:58,364
+Double Blind Review'da kimsenin kimseyi bilmediydim. Yani, barzimsel bir yayın yaptım, daha doğrusu yayın hazırlığı yaptım, onu gönderdim dergiye, bir editör üzerinden hakeme gitti. Hakem benim kim olduğunu bilmediği gibi, ben de hakemin kim olduğunu bilmiyorum. Onun ise Double Blind Review oluyor.
+
+189
+00:41:58,867 --> 00:42:08,268
+Şimdi genellikle bu submission süreci şöyle başlıyor. Siz bütün formları doldurup her şeyi derleyip toparlıyorsunuz ve submit diyorsunuz.
+
+190
+00:42:08,268 --> 00:42:21,327
+O submit işleminden sonra bir editorial checkten geçiyor. Aslında bu da editorial check de iki parça gibi düşünebilirsiniz. Yani bir taslak yapı vesaire anlamında bir kontrol var.
+
+191
+00:42:26,132 --> 00:42:45,452
+Journal'un özellikle istediği bir şey vardı ama siz koymadınız ya da koyduğunuz şey onu karşılamıyor falan gibi. Yani şekilsel bir değerlendirme. Bir de oradaki editör in chief'in ya da ilgili alan editörünün bu yayını okuyup ya
+
+192
+00:42:47,827 --> 00:42:56,588
+Biz, yani evet, hani farzimsel siber güvenlikle ilgili de yayın yapıyoruz ama bu çok spesifik ve bize uygun değil.
+
+193
+00:42:56,588 --> 00:43:07,907
+Ya da bir sörvi yayını hazırladınız, gönderdiniz. Ya evet, biz normalde sörvi kabul ediyoruz ama şu an sörvi yayınlarımızın sayısı çok fazla. Dolayısıyla bunu kabul etmiyoruz.
+
+194
+00:43:08,047 --> 00:43:10,168
+Ya da daha kötüsü.
+
+195
+00:43:11,380 --> 00:43:25,640
+Ya evet, biz sizin yayınıza okuduk. İlginç de bir konu ama yeterince derinliğe sahip oldun ya da bilimsel çıktıları anlamında böyle sadece değer olduğunu düşünmüyoruz. O yüzden kabul etmiyoruz diyebilir. Böyle bir cevap gelebilir.
+
+196
+00:43:26,780 --> 00:43:30,539
+Ve fakat bunlar gelmiyorsa aslında bir alan editörüne...
+
+197
+00:43:30,835 --> 00:43:53,496
+Atanıyorsunuz yani ilk kontrolden sonra. Alan editörü de gözden geçirip okey deyip hayatına devam edebilir ya da reddedebilir. Alan editörü okey deyip devam ediyorsa kendisine reviewer bulması lazım. Yani bunu değerlendirecek hakemleri bulması lazım. Bunun için de aslında birkaç şeyden yararlanıyor. Bir, o dergideki hakem havuzu.
+
+198
+00:43:53,972 --> 00:44:16,192
+İki, submission sırasında sizin önerdiğiniz hakemler ya da kara liste olarak belirttiğiniz hakemler. Şu önemli, herkesin görmediği yerde illa bir ark enimi vs. falan gibi bir şey varsa, bir husumeti olan biriniz vs. varsa bunu belirtmek gerekiyor ki, hani size şey olarak gelmişsin.
+
+199
+00:44:21,972 --> 00:44:44,372
+Hakemler değerlendirme yapıyor, derleyip, toparlayıp editöre gönderiyorlar. Editör bunun üzerinden geçiyor, size geri döndürüyor. Sonrasında bunun tekrarları olabilir, olmayabilir. Şöyle ki, herhangi bir review aşamasında size gelebilecek dört farklı karar var. Minor revision, Major revision, reject.
+
+200
+00:44:44,751 --> 00:45:09,011
+ve accept. Şimdi ilk gönderilen bir makalenin tak diye accept edildiği durum pek yok. Öyle bir dünya yok. Genellikle en iyi durumda minor revision alırsınız. Yani ufak tefek değişiklikler yapılması gerekir. Siz de o değişiklikleri yapmak için işte belli bir süre verilir. Çalışırsınız, uğraşırsınız. Yapılan yorumların her birine karşılık verdiğiniz
+
+201
+00:45:10,420 --> 00:45:21,580
+Bir letter hazırlarsanız, yani birinci hakem şurada şöyle bir şey demişti, biz bunu böyle yaptık. İşte bu hakem böyle yapıcı bir yorum yapmıştı. Yorum için teşekkürler.
+
+202
+00:45:27,699 --> 00:45:45,320
+All the respect, we do not agree with the reviewer, cause vs. falan diye, yani her deneyimlerinde yapmak zorunda değilsiniz ama yapmadığınız şeyi niye yapmadığınızı ya da uygun bulmadığınız şeyi niye uygun bulmadığınızı düzgün bir dilde açıkladığınız bir letter yazıyor olmanız lazım.
+
+203
+00:45:45,320 --> 00:45:52,380
+Sonra tekrar sahmit ediyorsunuz, yani o letter ile beraber yeni güncel halini koyuyorsunuz ve tekrar review'dan geçiyor.
+
+204
+00:45:53,268 --> 00:46:10,928
+Normal şartlarda şöyle bir altın kural var. Minor revision böyle ufak tefek değişiklikler, major revision büyük değişiklikler. Eğer major revision aldıysanız ve değişiklikleri yapı tekrar gönderdiğinizde bir major revision daha alır iseniz bu eşittir, reject olur.
+
+205
+00:46:20,628 --> 00:46:36,588
+Aman değil. Bir diğer nokta, major aldınız, bir daha değiştirdiniz, minor aldınız. O zaman da accept de çok yakınsınız demektir. O ufak değişiklikleri de yaptığınız zaman iş bitecektir. Ne zaman biter? Ne zamanki iki...
+
+206
+00:46:36,724 --> 00:46:49,104
+3, 4, neyse, hakem de okey dedi ve editör de bunun okey olmasına karar verildi. Yani accept et dedi, o zaman biter. Accept edildikten sonra iş bitmiş olmuyor.
+
+207
+00:46:50,708 --> 00:47:18,708
+Bu sefer böyle hani back office editorial check gibi bir şey var. Arka tarafta bunun yayına hazır hale getirilmesiyle ilgili olarak işte bir proofreading'den geçer. O proofreading'de bazı atıyorum dığ kullanımı, virgül kullanımı ya da işte ne bileyim grafikler vardır ama o grafiklere değişiklikler sırasında verdiğiniz referansı uçurmuşsunuzdur, atlamışsınızdır falan. Bu ve benzeri sorularının o...
+
+208
+00:47:18,708 --> 00:47:28,528
+Bir şey gelir. Ya biz böyle böyle sıkıntılar gördük, şunları değiştirdik. Burada uygun olmayan var mı? Ya da bunların nasıl değişmesini istiyorsunuz falan gibi.
+
+209
+00:47:29,208 --> 00:47:38,428
+Ve hani bunun üzerinden benzer şekilde grafik ya da tabloların organizasyonuyla ilgili. Ya siz bu figürü buraya koymuşsunuz ama bunun çözünürlüğü çok düşük.
+
+210
+00:47:38,428 --> 00:47:46,648
+Bunu şuna çevirmeniz lazım gibi istekler gelebilir. Bunların sürdürüldüğü bir editorial check bulup ondan sonra da
+
+211
+00:47:46,708 --> 00:47:48,948
+yayınlanmış olur.
+
+212
+00:47:50,448 --> 00:47:53,468
+Şimdi burada unutulmaması gereken bir nokta var.
+
+213
+00:47:53,468 --> 00:48:01,148
+Bu da şu, dediğim gibi hani minor, major, reject, accept şeklinde farklı kararlar gelebilir.
+
+214
+00:48:02,608 --> 00:48:03,468
+Her aşamada.
+
+215
+00:48:07,868 --> 00:48:13,628
+Revision letter yazarken öncelikle sakin olması gerekir insanın.
+
+216
+00:48:13,780 --> 00:48:26,360
+Şundan dolayı bazen yazdığınız yani bütün kan, ter, gözeşi, emek vs. yazdığınız yayın karşılığını bulmayabilirsin. Neden dolayı bulmayabilir?
+
+217
+00:48:27,936 --> 00:48:46,556
+Sizin gönderdiğiniz dergi uygun değildir. Dergi uygundur ama hakem bunu tam anlamamıştır. Sizin anlatım diliniz biraz karmaşık gelmiştir. Hakem bir şekilde aslında alakası olduğunu düşündüğü ama alakası olmayan bir alanda bir şeyler yapıyordur.
+
+218
+00:48:46,556 --> 00:48:55,856
+Ya da siz bazı şeyleri yazarken kafanız otomatik tamamladığı için çok anlaşılır yazdığınızı düşünürsünüzdür.
+
+219
+00:48:55,936 --> 00:49:05,135
+Anlaşılır olmamıştır. Dolayısıyla hakemlerden gelen şeyler insanı biraz gücendirebilir zaman zaman.
+
+220
+00:49:05,135 --> 00:49:17,155
+Fakat bu durumda böyle sakin, nazik bir dil kullanarak her şeye cevap vermek lazım.
+
+221
+00:49:21,523 --> 00:49:40,324
+Herhangi bir review geldiği zaman, evet ilk heyecanla bir okuyorum. Genellikle de beraber çalıştığım insanlar ya da öğrenciler bir gaza geldiği zaman ben gelmiyorum. Onlara da gelmemelerini söylüyorum ya da hiçbir şey söylemiyorum. Çünkü sinirli adama sinirlenmediğince daha çok sinirleniyor. İşin doğası gereği.
+
+222
+00:49:47,507 --> 00:49:58,507
+O komentten bambaşka bir şeyler çıkartabiliyorsun. Burada şunu da unutma lazım. Çoğu zaman bu iletişim sırasında kimsenin, anadolu İngilizce olmuyor.
+
+223
+00:49:58,507 --> 00:50:13,288
+Yani şimdi kenardan hızlıca bulabilirsem, bir tane yakın zamanda gönderilen review'u bulmak isterim. Adam şey yazmış,
+
+224
+00:50:14,612 --> 00:50:28,052
+Anlaşılırlığı, biraz sıkıntılı, çok da akıcı değil falan gibi bir şey yazmış ama bunu öyle bir yazmış ki, yani tamam ana dili İngilizce değil ama sanki ormanda harzanla beraber büyüdü.
+
+225
+00:50:28,052 --> 00:50:38,371
+Öyle söyleyeyim. İnsanı böyle ayrı dertlere garg eden tuhaf bir yorum gelebiliyor.
+
+226
+00:50:39,731 --> 00:51:07,672
+O yüzden çok şey yapmamak lazım. Sakin kalmak, yer yer tekrar tekrar okumak lazım. Çünkü özellikle yabancı dil üzerinden döndüğünde olay şuna dönüyor. Acaba bunu mu demek istedi, şunu mu demek istedi? Umarım olarak ne demek istedi? Yani ya anlatımı temiz değil diyen adımın ne dediğini anlamakta zorlandığınız bir yorum gelebiliyor. Bu da insanı biraz çıldırtıyor.
+
+227
+00:51:07,731 --> 00:51:15,532
+Veya şimdi bu çok mu okunur falan diye bir gaza geliyorsunuz. Onu yapmamak lazım. Mümkünse tekrar tekrar şey yapmak lazım.
+
+228
+00:51:15,532 --> 00:51:21,992
+Dur bakayım ben şeyi bilmemadım. Allah Allah.
+
+229
+00:51:28,275 --> 00:51:29,895
+Evet.
+
+230
+00:51:32,295 --> 00:51:34,135
+Dur bakayım, buldum galiba.
+
+231
+00:52:13,492 --> 00:52:15,672
+Bakayım o şeyi bulabildim mi?
+
+232
+00:52:24,371 --> 00:52:33,871
+Bulamadım o yorumu. Beni çileden çıkartan yorumu. Fakat bulursam daha sonra paylaşırım.
+
+233
+00:52:34,996 --> 00:53:02,996
+Şey yapıyor olmakta fayda var. O review, net olarak, kenara koyayım, bir kere okuyayım, sonra bir daha okuyayım. Tekrar tekrar okuyarak anlamlandırmaya çalışmakta fayda var. O noktada hatta tek peşinde sayısınız farklı kişilere okudum. Hatta bağımsız bir gözü okudum. Eğer yayını yaptığınız birden fazla kişi varsa, üçüncü bir şey de okudum. Hani fikir almakta zaman zaman fayda oluyor. Öyle söyleyeyim. Şimdi aslında benim bugün için konuşacaklarım...
+
+234
+00:53:02,996 --> 00:53:28,655
+Bu kadardı. Temiz temiz bitirdim. Hem de baya erken bitirdim. Şimdi konuşabileceğimiz ya da konuşmamız gereken bir diğer konu var. O da nedir? Tabii ki projeler. Proje meyillerini aldım. Bendeler. Ama daha Excel'e döküp de toparlayıp ilan etmek vesaire şansım olmadı. Tez zamanda onu şey yapacağım.
+
+235
+00:53:30,324 --> 00:53:40,083
+Sizlerle paylaşacağım. Ama sizin şimdilik bir sorunuz varsa, sormak istediğiniz, tanışmak istediğiniz bir şey varsa onları alabilirim.
+
+236
+00:53:41,143 --> 00:53:49,304
+Bundan sonra zaten bir ya da iki ders daha ben anlatacağım. Sonrasında soru cevap kısmına geçeceğiz. Şöyle ki bir sunum teknikleri var.
+
+237
+00:53:49,679 --> 00:54:15,779
+Bir de yönetmelikler kısmı var. Yönetmelikler bir sunum nasıl yapılmamalının karşılığı olacak. Sunum teknikleri de sunum nasıl yapılmalının karşılığı olacak. O yüzden bazen konsept olarak ayırarak yapmak daha iyi oluyor ama bazen de böyle aynı ders içerisinde bir saat bu, bir saat bu falan yapıp daha hızlıca şey yapabiliyorum, hal ve vaziyete göre bakacağız.
+
+238
+00:54:16,947 --> 00:54:19,447
+Evet, var mı sizin tarafta bir şey?
+
+239
+00:54:22,028 --> 00:54:22,788
+Dobrik.
+
+240
+00:54:28,211 --> 00:54:34,071
+Kimse var mı? Daha korkunç soruyu sorayım. O kadar sessiz kaldık ya. Var hocam, buradayız.
+
+241
+00:54:34,511 --> 00:54:35,351
+Buradayız hocam.
+
+242
+00:54:37,211 --> 00:54:40,391
+Süper, teşekkürler. Var mı bir sorunuz?
+
+243
+00:54:42,531 --> 00:54:48,291
+Hocam, bu destek başvuru formunu o zaman şimdiden doldurulmalı mıyız yoksa?
+
+244
+00:54:49,571 --> 00:54:52,871
+E tabii ki, başlamamızın önüne bir engel yok bence.
+
+245
+00:54:53,972 --> 00:55:04,772
+Başlayabilirsiniz. Hatta ne kadar erken başlarsınız o kadar iyi. Çünkü yaşamanız gereken şokları daha önce yaşarsınız ve soracak sorunuz olur.
+
+246
+00:55:05,112 --> 00:55:18,672
+İlk en başlarda bir yerde de söylemiştim. Bu çok son dakikaya bırakılacak bir iş değil. Çünkü o proje başvurusu formunda sizi tarifsiz kederlere gark edecek çeşitli sorular göreceksiniz.
+
+247
+00:55:18,932 --> 00:55:21,032
+Allah'ım burada ne demek istiyor acaba diye.
+
+248
+00:55:21,876 --> 00:55:43,655
+Ve hani böyle uydurularak yazılacak ya da işte, nasıl diyeyim, chat GPT'ye falan yazdırılacak şeyler değil pek, öyle söyleyeyim. O durumlarda genelde laf kalabalığı şeklinde oluyor ve hani hiçbir anlamı olmuyor. Değerlendirme açısından da üstünü çizip geçiyoruz.
+
+249
+00:55:49,108 --> 00:56:03,027
+projesi değerlendirmesi vardı. Çok muhtemeldir ki, sizlerin de başına gelebilir. Birkaç şey var orada. Bir, ne yaptıklarını asla söylememişler.
+
+250
+00:56:05,027 --> 00:56:11,447
+Yani işte onu yapacağız, bunu yapacağız, şöyle güzel yapacağız, böyle güzel yapacağız ama nasıl yapacaksınız?
+
+251
+00:56:12,307 --> 00:56:34,827
+Yok. Kapsamı yok. Literatür taraması yok. O literatür taramının sonunda State of Art'ta ne var ortaya konmamış. Yok. Ekonomik öngörüler var. Çok güzel. Öyle satacağız, böyle satacağız. Birinci yılın sonunda 4 milyon 138 bin TL'lik yurt içi satış. Yurt dışında da 10 bin dolarlık satış bekliyoruz. Neye göre?
+
+252
+00:56:36,371 --> 00:56:58,331
+Pazar araştırması yok, piyasa araştırması yok. Atıyorum, Türkiye'de kaç tane firma bu işi yapıyor, ne kadar bir pazar var, baktığınız zaman pazar payı ne, biz ne alabiliriz, onların fiyatı ne, bizim fiyatımız ne olacak, bir karşılaştırma yok. Bizim maliyetimiz işlem başına 1.8 dolar, 3 dolardan satacağız.
+
+253
+00:57:05,268 --> 00:57:08,327
+Senin bir esprin kalmıyor.
+
+254
+00:57:09,076 --> 00:57:24,076
+Ya da işte kendi müşteri portföyümüz için yapıyoruz vs. diyorsan, o zaman da hani satış üzerinden değil, bu satışta elde edeceği verim artışı üzerinden değerlendiriyor olmak lazım.
+
+255
+00:57:24,876 --> 00:57:32,236
+Onu geçtim, bununla ilgili daha böyle ölçülebilir, somut hedefler koyuyor ya da hesaplar yapıyor olmak lazım.
+
+256
+00:57:32,236 --> 00:57:37,016
+Misal, tamam, bana maliyeti 1.8 dolar, satış fiyatım 3.
+
+257
+00:57:37,076 --> 00:57:56,816
+İşte şu kadar müşteriye bu kadardan satış yapsam, işte şey 10 bin dolar, 10 bin adet satmış olurum, 10 bin adet 3 dolardan 30 bin dolar. 30 bin dolar satış bekliyorum.
+
+258
+00:57:56,816 --> 00:58:03,256
+Ama aşağıda 4 milyon yazıyordum. Yukarıda açıklamada 30 bin dolar diyorsun, 50 ile çarpsan.
+
+259
+00:58:04,148 --> 00:58:14,768
+Bir buçuk milyon ediyor. Geri kalan üç küsur milyon için ne yapacağız? İllegal yollara mı başvuracağız? Şantajla falan mı alacağız adamlardan? Ne olacak? gibi.
+
+260
+00:58:15,368 --> 00:58:29,028
+Yani bir bölümde söylediğiniz ya da iddia ettiğiniz şeylerin diğer bölümlerle uyumlu ve tutarlı olması lazım. Bir başka şey, mesela projenin başarı kriteri isteniyor. Doğru mu?
+
+261
+00:58:29,588 --> 00:58:32,568
+Görmüşsünüzdür. Somut ve ölçülebilir olması isteniyor.
+
+262
+00:58:34,468 --> 00:58:46,508
+Proje kriteri olarak da o zaman kalkıp şey yazarsanız, açık kaynak kodlu sistemlerle entegrasyon. Hedeflenen şey %100.
+
+263
+00:58:49,508 --> 00:58:51,148
+Hangi açık kodlu?
+
+264
+00:58:51,956 --> 00:59:10,496
+Şey, kaynaklar. Yani bir tanesiyle de yapsan %100 yapmış oluyor musun? Beşiyle de yapsan %100 yapmış oluyor musun? Kaç tanesiyle yapınca %100 gibi böyle açık, ölçülemeyen tam olarak, böyle somut olmayan.
+
+265
+00:59:11,443 --> 00:59:35,023
+Başarı ölçütleri büyük problem mesela. Bunu böyle anlatınca şey oluyor yani başarı ölçütü yazarız herhalde. Niye yazamayalım falan gibi düşünebilirsiniz ama somut ve ölçülebilir başarı ölçütü yazmak bazen çok ciddi sıkıntı ve problem olabiliyor. Yani işte saniyede bilmem kaç tane isteği, en az bilmem kaç tane isteği karşılayacağız.
+
+266
+00:59:36,659 --> 00:59:48,659
+Tamam da bu projenin başarı ölçüde olmuyor. Şundan dolayı atıyorum bir sunucuda çalışırken 10 tanesini karşılıyorsun da 5 sunucuya yaydığım zaman 50 tanesini karşılıyorsun zaten.
+
+267
+00:59:48,659 --> 01:00:01,299
+Yani ben sistemi scale ettiğim an her türlü o şeyi karşılarım. Ya da işte bilmem ne işlemini 2 milisaniyenin altına indirmek. E tamam işlemcinin hızını arttırınca da iniyorsa.
+
+268
+01:00:02,228 --> 01:00:27,248
+Anlatabildim. Yani parametrelerini ve kısıtlarını çok iyi söylemek gerekiyor. Ölçülebilir ve somut olması için. Dolayısıyla mesela şey, risk. Yani risk analizi yapmış olmanız gerekiyor. Risklerinizi belirtmeniz gerekiyor. Çok beylik riskler var. Yani herkesin böyle yazdığı bir şey yapmış olmak için yaptığı çok belli olan. Misal, işten birinin ayrılma durumu.
+
+269
+01:00:28,724 --> 01:00:34,204
+Zaten ekip olarak yedekli çalışıyoruz, onu yapıyoruz, bunu yapıyoruz. Dolayısıyla minimuma indirilecektir.
+
+270
+01:00:34,864 --> 01:00:42,903
+Firma kapsamında başka projelerde çalışan şu kadar kişi daha vardır, oradan kaynak kaynılacaktır vs. gibi.
+
+271
+01:00:44,464 --> 01:00:50,244
+İşin management ile ilgili şeyler yazılıyor ama teknik kısma bakmak lazım.
+
+272
+01:00:50,864 --> 01:00:56,124
+Var misal, sen veri seti oluşturacaktın, istediğin büyük veri setini oluşturamadın.
+
+273
+01:00:57,300 --> 01:01:17,196
+Ya da XYZ işini hizmet olarak alacaktın, alamadın. Ya da kullanacağın yöntem ne? İşte %95 başarı olmasını bekliyordun, oraya çıkmasını bilmem neyi bekliyordun. Olmadı. O zaman ne yapacaksın? Kaldırıp çöpe mi atacağız? Yani teknik riskler...
+
+274
+01:01:17,588 --> 01:01:30,568
+Olması lazım, tanımlanmış olması lazım ki o öneriyi değerlendiren taraf şunu diyebilsin. Ya tamam, bunlar ne yaptığını biliyor. Bir şey patlar ve çatlarsa bir B ya da C planları var.
+
+275
+01:01:33,628 --> 01:01:43,668
+Kervan yolda düzülür mantığıyla oluşturulmamış olması ve böyle oluşturulmadığını karşı tarafa aktarıyor olmanız lazım aslında. Soyu bu mesela.
+
+276
+01:01:44,724 --> 01:01:45,923
+Teşekkürler hocam.
+
+277
+01:01:47,364 --> 01:01:48,983
+Yeter susun.
+
+278
+01:01:50,463 --> 01:01:55,563
+Yok yok, ben soruma isnaden detaylı çıkma yaptığınız için teşekkür ettik istedim.
+
+279
+01:01:56,643 --> 01:02:00,943
+Sağ olasın, ben dalga geçiyorum zaten şey diye, havamız değilsin diye.
+
+280
+01:02:01,023 --> 01:02:03,903
+Çünkü böyle anlatınca insanlar gerilerek korku filmine dönüyor.
+
+281
+01:02:04,083 --> 01:02:07,463
+O da olmayacak, bu da olmayacak falan diye.
+
+282
+01:02:08,123 --> 01:02:09,923
+Ama hani bunları görmek için...
+
+283
+01:02:10,420 --> 01:02:20,099
+Bir an önce başlıyor ve en azından formu indirip, ya nereye ne yazsak vesaire diye üzerine kafa patlatmanız gerekiyor.
+
+284
+01:02:20,099 --> 01:02:32,179
+Yani şu bile bir problem, onu aslında Produs'a üye olup girip, şeye bakmanız lazım, 1512'nin başvuru sisteminde,
+
+285
+01:02:33,492 --> 01:02:51,492
+Kenarda duran o word formlarında limitler yazmıyor galiba ama parzımsel projenin bir ön bilgisini veriyorsunuz. Yani amaç, kapsam vs. falan diye bunlar özet özet veriliyor. Uydurmayayım şimdi yanlış olmasın ama atıyorum bin karakter.
+
+286
+01:02:52,244 --> 01:02:59,324
+Üzerinden sınırlanmış. Sonra bunun geniş açıklamasını istiyor bir yerde. O 10.000 karakter üzerinden açıklanmış.
+
+287
+01:02:59,324 --> 01:03:17,704
+Şimdi özete yazdığınızı aynen kalkıp genel kısma yazarsanız o zaten sıkıntı. Benzer bir şeyi ya da aynı şeyi farklı cümlelerle ifade etmeniz, daha geniş ya da daha da ifade ediyor olmanız gerekiyor. Bu da insanı zorlayan bir şey.
+
+288
+01:03:19,059 --> 01:03:39,099
+Öbür türlü her yerde kendini tekrar eden birine de dönebilirsiniz. O yüzden sizden ricam ya da beklentim ya da sizin için iyi olan bir an önce o formuları indirmeniz, bir şeyler yazmayı denemeye başlamanız ki işte bu hafta başlasanız haftaya soracak bir şeyleriniz olur.
+
+289
+01:03:44,320 --> 01:03:45,300
+Teşekkür ederim canım.
+
+290
+01:03:46,643 --> 01:03:53,103
+Az biraz daha zorlarsam, ben indirdim ve bakıyorum hocam, şeyini duyacağım inşallah.
+
+291
+01:03:54,304 --> 01:03:57,663
+Okey, başka bir soru var mı?
+
+292
+01:04:00,663 --> 01:04:03,344
+Hocam ben kısa bir soru sorayım izninizle.
+
+293
+01:04:03,891 --> 01:04:17,652
+Bir proje hedefi dediniz ya örnek olarak. Mesela bu proje hedefi sadece teknik anlamda mı olur yoksa atıyorum şu X satışa ulaşmak veyahut ne bileyim X ciro'yu elde etmek gibi şeyler de bunun hedefine girer mi?
+
+294
+01:04:17,652 --> 01:04:19,711
+Eee şöyle.
+
+295
+01:04:23,603 --> 01:04:33,264
+Bunu bir başarı kriteri olarak, yani bir satış miktarını başarı kriteri olarak şey yapamazsın, kullanamazsın teknik olarak.
+
+296
+01:04:34,083 --> 01:04:44,483
+Şundan dolayı, en azından bizim tarafta bir mühendislik çalışması vs. olacağı için bir şey satman için çoğu zaman o projenin bitmesi gerekir.
+
+297
+01:04:44,483 --> 01:04:47,423
+Projenin bitmesine de başarı kriterine göre karar verirsin.
+
+298
+01:04:51,731 --> 01:05:03,471
+satış rakamı ya da satış hedefi o projenin başarı kriteri olamaz. Bu destek süreçlerinde en azından.
+
+299
+01:05:03,471 --> 01:05:13,751
+Ama tabii ki satış hedefi ve satış beklentisi senin ekonomik öngörü tarafında kullanacağın bir şey.
+
+300
+01:05:14,996 --> 01:05:25,936
+Ama başarı kriter olarak özellikle destek programlarında zor. Çünkü burada çoğu zaman 1512'de olsa bir yenilikçi yönü, bir ARGE tarafı olmasını bekliyoruz.
+
+301
+01:05:26,076 --> 01:05:31,076
+Ve hani başarı kriterinin de o teknik tarafla ilgili olması daha mantıklı.
+
+302
+01:05:32,211 --> 01:05:43,971
+Yani belki senin orada yapacağın şey, nasıl diyeyim, herhangi bir süreci, herhangi bir işlemi daha kısa zamana indirmek, daha kolaylaştırmak, böyle daha çok satmak.
+
+303
+01:05:43,971 --> 01:05:58,971
+Ama hedefi satış olarak koyduğun zaman şeye sıkıntısı var. Proje bitmeden ürünü çıkartmış olman lazım ki satmış ol. Ama biz o başarı kriterini projenin bitişinin başarısı olarak...
+
+304
+01:05:59,956 --> 01:06:08,155
+istediğimizden biraz sıkıntılı. Ha bu arada proje bitmeden satılır mı? Evet satılır. Yani ara çıktılarını satarsınız.
+
+305
+01:06:10,735 --> 01:06:19,155
+Belki onun üzerinden bir şeyler yapılabilir. Yani var mesela birinci iş paketinin son olduğunda sen bir...
+
+306
+01:06:20,947 --> 01:06:45,248
+Dar kapsamlı, dar özellik. Bir yazılım yapıyorsun. Ne olduğu önemli değil. Siber güvenlik yolculuğu bir güvenlik analizi yapan bir uygulama yapıyorsun. İlk başta ilk 1-2 iş paketi içerisinde belli temel bazı özellikleri implemento etmiş olmayı bekliyorsun. Bunu da farzına uyduralım. 6. ayda, 8. ayda neyse hazır etmiş olmayı bekliyorsun.
+
+307
+01:06:48,947 --> 01:07:08,327
+ne kadar kez satacağım? Vesaire gibi bir hedef belki koyabilirsin ama şey anlamında, bu TÜBİTAK destekleri anlamında çok tatmin edici ya da doyurucu bir başarı kriteri olmaz hakemler açısından. İşin doğasına biraz ters.
+
+308
+01:07:10,728 --> 01:07:12,487
+Tamamdır hocam, teşekkürler.
+
+309
+01:07:16,115 --> 01:07:20,195
+Pardon. Başka?
+
+310
+01:07:29,043 --> 01:07:33,023
+Tamam. Zorla soru sorduk.
+
+311
+01:07:34,183 --> 01:07:36,143
+Sesimi duyarıyor musunuz?
+
+312
+01:07:36,543 --> 01:07:37,183
+Şu an geliyor.
+
+313
+01:07:37,963 --> 01:07:46,884
+Şu an bu söylediklerinizde istiradayız. Seçtiğimiz konunun aslında zor olacağını fark ettik. Konu değiştirme kansı var mı acaba?
+
+314
+01:07:50,884 --> 01:07:51,443
+Yani.
+
+315
+01:08:01,396 --> 01:08:02,916
+Konu neydi?
+
+316
+01:08:04,576 --> 01:08:17,935
+Hocam, biz radyolojik ve bu tıpkı görüntülenme kısmındaki görüntüleri yapay zekayla yorumlamaya dayalı bir proje fikriyle başvurduk.
+
+317
+01:08:17,935 --> 01:08:24,576
+O formu da incelemiştik aslında ama tabii soruları sizin söylediğiniz gibi düşünmedik.
+
+318
+01:08:24,695 --> 01:08:27,935
+Biz biraz daha, ben kendi adıma konuşayım, daha basit düşünmüştüm.
+
+319
+01:08:28,768 --> 01:08:32,087
+Şu an isterleri karşılayamayacağını fark ettim.
+
+320
+01:08:32,987 --> 01:08:36,688
+Konuyu bir daha söyler misin? Ben tam duyamamış olabilirim.
+
+321
+01:08:37,587 --> 01:08:39,528
+Hocam, metrolüsüyüm kusura bakmayın.
+
+322
+01:08:42,387 --> 01:08:45,728
+Yazı da bilirsin, kolay olacaksa, daha kolay olacaksa.
+
+323
+01:08:48,128 --> 01:08:49,128
+Bir yaz, bir gönder.
+
+324
+01:08:49,520 --> 01:09:00,040
+Bir bakayım. Şu saatten sonra konu değişikliği açıkçası çok sempatik gelmiyor. O yüzden de by default hayır diyeceğim.
+
+325
+01:09:02,000 --> 01:09:13,460
+Ama konuya bakayım. Tam doğru duyamadığım için emin değilim. Bir görüntüden yapay zekayla bir şeyi çıkartmak üzerine olduğunu anladım. Ultraviyole falan gibi bir şeyler.
+
+326
+01:09:13,460 --> 01:09:15,460
+Efendim?
+
+327
+01:09:16,307 --> 01:09:25,228
+Mağlantım koptu. Tıbbi görüntülerin yapay zekayla yorumlanması üzerine bir konuyla başvurduk biz hocam.
+
+328
+01:09:25,439 --> 01:09:36,659
+Okey, tıbbi görüntüleri yapay zeka ile yorumluyorsanız ki, bunu biraz daha, bu kadar genel bir başlıkta değildir belki, daha farklıdır. Bu kadar genel bir başlık, biraz sıkıntı.
+
+329
+01:09:37,479 --> 01:09:43,279
+Ve fakat bunu hala şeye oturtmak mümkün. Yani bu başarı kriterleri vesaire anlamında bir yere oturtmak mümkün.
+
+330
+01:09:43,279 --> 01:09:53,439
+Mesela şunu diyebilirsiniz, bütün tıbbi görüntüleri her türlü anlamlandıracağız gibi bir fanteziye kaçmayacağınızı düşünüyorum. Dolayısıyla proje kapsamında.
+
+331
+01:09:53,439 --> 01:10:16,079
+Farz misal, akciğer kanseri, bilmem ne ya da ıvır kıvırla ilgili olarak MR görüntülerinin değerlendirilmesi, kanserli ücret sayılması vs. falan filanla ilgili bir şey yapılacaktır diye kapsamını daha netleştirdiğiniz bir yapıya geçebilirsiniz.
+
+332
+01:10:16,299 --> 01:10:18,699
+Bununla ilgili de başarı kriteri tonlarca verilebilir.
+
+333
+01:10:19,699 --> 01:10:35,239
+Tamam mı? Yani hani dolayısıyla dediğim gibi bununla ilgili ayrıca bir mail atın bakalım ama ben hani zorlayacak bir şey olduğunu sanmıyorum. Burada iyi manevralarla bir şeyler çıkar ve düzelir diye düşünüyorum.
+
+334
+01:10:35,239 --> 01:10:40,659
+Teşekkür ederim hocam. Kolayı biraz baraltarak hallederiz diye umuyorum o zaman.
+
+335
+01:10:41,180 --> 01:10:43,639
+Hallederiz? Hadi bakalım.
+
+336
+01:10:44,340 --> 01:10:45,199
+Hocam merhaba.
+
+337
+01:10:46,000 --> 01:10:46,380
+Merhaba.
+
+338
+01:10:46,963 --> 01:10:51,283
+Sesim geliyor mu? Biraz bir oturdu bu ortadan. Kusura bakmayalım. Geliyor. Sıkıntı değil.
+
+339
+01:10:51,804 --> 01:11:00,684
+Hocam bu TÜBİTAK.gov.tr'de 1512 girişimciler konumuyla ilgili bir puan var. İkinci yaşına başvurup. Bunu chatten ilettim.
+
+340
+01:11:01,503 --> 01:11:07,484
+Bir şey diyeceğim. Yazar mısın? Yani ara ara arkamdaki gürültü senin önüne geçiyor.
+
+341
+01:11:08,023 --> 01:11:09,003
+Tamam. Yazıyorum.
+
+342
+01:11:09,023 --> 01:11:09,844
+Diyemiyorum yani.
+
+343
+01:11:10,184 --> 01:11:10,884
+Yazıyorum.
+
+344
+01:11:11,003 --> 01:11:12,703
+Emenin biri geliyor, biri gelmiyor falan.
+
+345
+01:11:14,387 --> 01:11:19,448
+Processing'e şey yaptık. Bu nereye indi?
+
+346
+01:11:24,467 --> 01:11:39,608
+Zaten sen bir form göndermişsin. İkinci aşama formu. Tamam. Ön taktik. Okey. Bu. Zaten bu.
+
+347
+01:11:50,292 --> 01:11:54,192
+Bu formdaki soruları yapıyorlar.
+
+348
+01:11:54,432 --> 01:12:12,391
+Aynen öyle. Bu form doğru form. İkinci aşama. İlk aşama çünkü böyle şey, özet gibi bir şey yani. Sadece temel bilgileri paylaşıyordunuz. Bir eleme yapıyorlar. İkinci aşamaya geçiyorsunuz. Asıl değerlendirme orada. O yüzden de ikinci aşamayı doğrudan kullanacağız.
+
+349
+01:12:19,347 --> 01:12:21,268
+Ben teşekkür ederim. Sağ olasın.
+
+350
+01:12:24,307 --> 01:12:29,768
+O zaman başka sorusu olan yoksa olaysız bir şekilde dağılabiliriz.
+
+351
+01:12:30,948 --> 01:12:39,387
+Haftaya yine bu saatte, yani her zamanki saatte daha doğrusu pardon, görüşmek üzere diyorum. İyi akşamlar.
+
+352
+01:12:41,188 --> 01:12:44,007
+Kalan saatlerde de iyi dersler.
+
+353
+01:12:44,368 --> 01:12:46,728
+Teşekkürler hocam. İyi akşamlar.
