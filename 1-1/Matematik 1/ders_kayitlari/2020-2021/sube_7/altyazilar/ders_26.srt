@@ -1,0 +1,2139 @@
+1
+00:01:01,460 --> 00:01:03,660
+Çocuklar, bir 6 dakika bekleyebilir miyiz lütfen?
+
+2
+00:01:04,980 --> 00:01:06,159
+Tabii hocam, ne demek.
+
+3
+00:12:37,043 --> 00:12:42,744
+başlıyorum arkadaşlar. Yine böyle farklı sorular varsa onlardan bakacağım.
+
+4
+00:12:47,731 --> 00:12:57,251
+Şöyle bir tarayayım. Tabii önemli soruları birinci bize de dair olmak üzere çözeyim tabii mesela ne var? Şu soruyu çözeyim mesela.
+
+5
+00:12:59,091 --> 00:12:59,771
+Dördüncü soru.
+
+6
+00:13:01,731 --> 00:13:03,312
+Bunu son yok, şeyler de yapmadım.
+
+7
+00:13:05,072 --> 00:13:07,172
+Şimdi böyle bir parçalı fonksiyon vermiş.
+
+8
+00:13:09,672 --> 00:13:10,351
+Bunun
+
+9
+00:13:12,980 --> 00:13:15,980
+nelerin sağlatmasını görüyoruz bakalım sonra da.
+
+10
+00:13:16,860 --> 00:13:17,519
+Bakalım bir.
+
+11
+00:13:23,892 --> 00:13:25,388
+Diyor ki, işte...
+
+12
+00:13:30,932 --> 00:13:40,491
+Bu fonksiyon her noktada türev ve sürekliymiş. O zaman MNK'yı bulalım. Her noktada türev ve sürekliymiş.
+
+13
+00:13:42,152 --> 00:13:46,932
+Şimdi bakıyoruz. Bu aralıkta fx0.2 aralığında sürekli...
+
+14
+00:13:48,932 --> 00:13:51,351
+Bir dakika, sorusunu anlamaya çalışıyorum.
+
+15
+00:13:53,491 --> 00:14:16,491
+Tamam, sürekli olduğuna göre 0-2 açıldı, türev nebine olmalı. Buradan sağdan soldan, önce sıfır noktasında sağdan soldan limitini alacağız. Fakat bunun sorunun değişik bir tarafı var çocuklar. Ne biliyor musunuz? Bu bir kapalı aralık olduğu için mesela sıfırda...
+
+16
+00:14:17,748 --> 00:14:22,948
+sürekli olduğunu göstermek değil de, bu değişik bir soru, bak itibaba böyle değişik bir soru çözüyoruz.
+
+17
+00:14:23,427 --> 00:14:29,228
+Sıfırda sağdan sürekli olduğunu göstermek yetiyor arkadaşlar.
+
+18
+00:14:29,448 --> 00:14:37,028
+Çünkü kafalı aralıkla incelerken, neyse konuya yeni gelebilirim, bu sıfırla iki arasında süreli ve sürekli olduğuna göre diyor,
+
+19
+00:14:37,128 --> 00:14:41,368
+mesela bu fonksiyonun MNK değerleri nedir? Buradaki önemli olan ne biliyor musunuz?
+
+20
+00:14:42,388 --> 00:14:44,728
+Mesela sıfır için sürekliliği incelemek.
+
+21
+00:14:45,587 --> 00:14:51,107
+sorun var. Bir de 2 için incelemekte sorun var. Bir için önemli değil. Bir de ne yaparız?
+
+22
+00:14:51,508 --> 00:15:13,948
+soldan bakarız limitine, sağdan bakarız fonksiyon aldığı değer. Bu iç nokta ama burada sınır noktası var. Hiç böyle mesela uygulamalarda bunu da görelim. Yani sıfır noktasına soldan yaklaşamıyorum. Ama gerekmiyor. Niye? Kafalı aralıkta sürekli olması için. Uç noktalarda tek yönlü süreklilik yetiyor. Neymiş? Tekrar söylüyorum.
+
+23
+00:15:14,336 --> 00:15:36,615
+uç noktalarda incelerken, sıfırda 2'de incelerken, uç noktalarda süreklilik yetiyor. Yani ne demek? Sıfırda sağdan sürekliliğine. Bakalım. Sıfırda fonksiyonun aldığı değer kaç? 4. Peki, sağdan sürekliliği nereden hesaplayacağız? Şuradan hesaplayacağız. Yani, şuradan hesaplayacağız.
+
+24
+00:15:38,067 --> 00:15:40,327
+kalemden değiştireyim mi? Tamam.
+
+25
+00:15:40,668 --> 00:15:42,028
+Buradan hesaplayacağız arkadaşlar.
+
+26
+00:15:42,288 --> 00:15:46,008
+Yani, şöyle söylüyorum, x eşittir sıfırda.
+
+27
+00:15:49,716 --> 00:15:51,355
+sağdan sürekli olmalı.
+
+28
+00:16:01,364 --> 00:16:27,024
+Sürekli. Peki, 2'de de ne olması gerekir? Bunları unuttuk çünkü. Hatırlayalım. Soldan sürekli. Baştan itibaren finalde sorulabiliyor çünkü. Baştan itibaren düzgünce çalışın arkadaşlar. Evet, x eşit 2'de de soldan sürekli olmalı. Bunlar önemli. Çünkü burada sorun o. Çoğu kimse ama bunun soldan limiti yoktur deyip yanlış yapabilir. Hayır.
+
+29
+00:16:28,864 --> 00:16:47,504
+sağdan soldan gerekmiyor. Bir taraftan olması yetiyor. Peki, şurada yerine koydum. Zaten sürekli olduğunda söylüyor. 4 çıktı. Bu da 4 çıktı. x'e 0 koydum. x'e 5'e 4'ten b'nin x4 değerini buldum. Bunu ne yaptık? Bunu cebe koyduk. Tamam. Şimdi geldik iki noktasına.
+
+30
+00:16:49,024 --> 00:16:54,644
+Yine sorularınızda yazın bakıyorum var mı çetle bir şey. Sınav hakkında konuşacağınız bir şeyler var mı?
+
+31
+00:16:57,587 --> 00:17:04,467
+Şunu söyleyeyim, sizin sınıfınız, sizin sınıfınız, diğer anlattığım sınıftan ortalama olarak %3 daha fazlaydı.
+
+32
+00:17:05,988 --> 00:17:12,947
+Bir, onu söyleyeceğim. Bir de girmeyenler var, o girmeyenler sıfır sayıldığı için ortalama düşük geliyor.
+
+33
+00:17:15,087 --> 00:17:22,147
+%58 civarındaydı başarı. Genel üniversite ortalaması %55, onun üzerindeyiz demek ki.
+
+34
+00:17:22,900 --> 00:17:37,180
+Bir de mazerete girecekler var. Tabi sınava girmeyenler sıfır aldığı için, onlar da ondan da dolayı düştüğü için 58. Ama bence %60'ın üzerinde bence okula göre iyi bir derece.
+
+35
+00:17:38,860 --> 00:17:41,180
+Hocam ben farklı bir şey sorabilir miyim?
+
+36
+00:17:41,519 --> 00:17:41,760
+Evet.
+
+37
+00:17:42,580 --> 00:17:46,860
+Bu birinci ve ikinci vizenin hani belirli bir yüzdesi alınıyor ya.
+
+38
+00:17:47,200 --> 00:17:47,480
+Evet.
+
+39
+00:17:47,920 --> 00:18:01,079
+Bizim bu iki vizenin yüzdeleri 40'ı geçiyor ama biz finalden belirli bir not almamıza gerek var mı? Atıyorum mesela finalden 40 üzeri almak zorundayız veya 50 üzeri almak zorundayız gibi bir durum söz konusu mu?
+
+40
+00:18:01,480 --> 00:18:15,079
+Valla benim bildiğimi söyleyeyim de yani şimdi şunu da bizde benim bildiğim her birinin ortalaması hesaplanır. Öyle bir şart yok biliyorum. Mesela sen şimdi 40 aldın. Finalde de...
+
+41
+00:18:15,412 --> 00:18:24,612
+Orta Alman diyelim ki, bunun % aldığın notun %60'ı, birinci bizdenin %30'u, ikinci bizdenin %30'u hesaplanıyor.
+
+42
+00:18:25,872 --> 00:18:39,211
+40 aldın. Finalden de bir not aldın, onun da %40'ı diyelim 16. 56 aldın. Anlatabiliyor muyum? 0 aldın diyelim finalden. 0 aldıysan 40 kalabilirsin yani.
+
+43
+00:18:40,500 --> 00:18:44,500
+Çünkü anlatan 40'ın altı değerlendirmeye girmiyor biliyorsun.
+
+44
+00:18:45,500 --> 00:18:52,500
+Yani, dolayısıyla mesela diyelim ki ortalaman 39 düşüyor, finalinde girmedim ve 0 aldım.
+
+45
+00:18:52,500 --> 00:18:57,500
+O zaman zaten o notun ortalaması hesapla şey yapmıyor zaten, dc alamıyorsun.
+
+46
+00:18:57,500 --> 00:19:00,500
+Dc alman için 40 ve üstü olması gerekiyor.
+
+47
+00:19:01,500 --> 00:19:07,500
+Yani şey değil, girip girmek önemliyiz. Yani 0 alıyorsun, 100 almışsın diyelim.
+
+48
+00:19:07,859 --> 00:19:32,099
+60 almışsın, finale de girmemişsin. Yani 60 ne düşer? Bc'ye düşer, tamam mı? Bc'ye alırsın. Öyle bir şey yok. Finale girme zorlu diye bir şey yok ama yine de sen bunu, ben öyle biliyorum ama çünkü hafızan beni yanıltmıyorsa final notunda istediğin notu alabilirsin.
+
+49
+00:19:32,531 --> 00:19:41,672
+girmek zorunda, finale herkes girmek zorunda diye bir şey ben bilmiyorum ama sen yine araştır tamam mı? Ben bildim, önemli değil yani. Ben öyle biliyorum, hatırlıyorum.
+
+50
+00:19:42,172 --> 00:19:43,371
+Tamam hocam, teşekkür ederim.
+
+51
+00:19:43,371 --> 00:19:45,871
+Ama sen yine bir sor, sor yine birkaç şey tamam mı?
+
+52
+00:19:45,951 --> 00:19:46,871
+Tamam hocam.
+
+53
+00:19:47,031 --> 00:19:50,971
+Geçme notu genelde 40 olur diyorlar, onu hoca belirler diyorlar da.
+
+54
+00:19:51,311 --> 00:19:55,371
+Hayır, final notunda 0 aldın ama ortalaman...
+
+55
+00:19:55,371 --> 00:20:00,000
+Hayır yani ortalaman atıyorum, genel olarak 40 geçme notudur diyorlar.
+
+56
+00:20:00,000 --> 00:20:01,240
+Evet, doğru.
+
+57
+00:20:02,400 --> 00:20:08,740
+Benim merak ettiğim şu, benim iki vizeden ortalamam 40'ın üzerinde mesela, geçebiliyorum çok rahat.
+
+58
+00:20:10,579 --> 00:20:16,980
+Finale kasmayayım diyorum mesela, finalden acaba almak zorunda olduğum belli bir not var mı diye merak etmiştim.
+
+59
+00:20:17,715 --> 00:20:30,335
+yok, sıfırda aldın, ortalamanda 42 düşüyor. Ben şunu söylemek istiyorum, yani final notunda şu, şu notu alman diye bir şart yok diyebiliyorum. Öyle bir şey hatırlamıyorum.
+
+60
+00:20:31,096 --> 00:20:32,655
+Tamamdır hocam, teşekkür ederim.
+
+61
+00:20:32,655 --> 00:20:38,355
+O ama normal ortalama şeyinde geçer gider yani, normal ortalama.
+
+62
+00:20:38,996 --> 00:21:04,516
+üniversite çapında hesaplanır ki hiç finallere bakmazlar yani. Şimdiye kadar bakmıyorlardı. Ama sen sor yine. Başka bir dersten de gidiyorsan da hocana da sor tamam mı? Ne diyecek mi? Yine bana sorarsın haftaya tamam mı? Yani öyle bir şart yok diyebiliyorum. Ama 40'ın altı geçer not verilemiyor. Haa şu var yani 40'ın altı verilemiyor kesinlikle.
+
+63
+00:21:05,107 --> 00:21:12,768
+Ama 3 sınırda diyelim 41 aldın, orada da geçme garantin ortalamaya göre olmayabilir sakın he.
+
+64
+00:21:14,007 --> 00:21:19,847
+Yani şunu söylemek istiyorum, iyi yönde sizin dehinize 39'u DC verelim diyemiyorlar.
+
+65
+00:21:20,947 --> 00:21:24,367
+Ama 43'ün üzerine DC diyebiliyorlar yani.
+
+66
+00:21:24,367 --> 00:21:27,887
+40'ı o kadar takmayın. Mesela bakarsın 42'de kalabilirsiniz.
+
+67
+00:21:28,980 --> 00:21:30,519
+O kendileri belirliyorlar.
+
+68
+00:21:30,680 --> 00:21:34,720
+Onu belirliyorlar ama 40'ın altını asla geçiremiyorlar.
+
+69
+00:21:35,680 --> 00:21:38,460
+Hocam sınıfın ortalaması 30'sa genel olarak...
+
+70
+00:21:38,460 --> 00:21:40,920
+Hayır evet, sınıfın ortalaması 30.
+
+71
+00:21:41,820 --> 00:21:42,759
+30'u da solmuş.
+
+72
+00:21:43,360 --> 00:21:46,320
+Tamam 30 diyelim, çok yüksek noktalar var, hepsi düşük.
+
+73
+00:21:46,920 --> 00:21:49,059
+Sana 45'e DC diyebilirler yani.
+
+74
+00:21:50,400 --> 00:21:52,180
+O hocaların inisiyatifine kalmış bir şey.
+
+75
+00:21:53,556 --> 00:21:54,655
+44'te de kalabiliyor.
+
+76
+00:21:54,655 --> 00:21:56,655
+Bunu siz mi ayarlıyorsunuz?
+
+77
+00:21:56,856 --> 00:21:58,196
+Evet, hocalar karar ediyor.
+
+78
+00:21:59,096 --> 00:22:04,876
+Sınıfın ortalaması 30, geçme notu, DC notunu 45 ve üstü verebilirler.
+
+79
+00:22:07,476 --> 00:22:10,356
+Yani illa ortalama geçer diye bir kural yok yani.
+
+80
+00:22:11,856 --> 00:22:12,615
+Anladım hocam.
+
+81
+00:22:12,615 --> 00:22:15,296
+Ama öyle bir şey olmuyor tabii de.
+
+82
+00:22:15,816 --> 00:22:16,756
+Öyle bir kural yok.
+
+83
+00:22:16,836 --> 00:22:17,396
+Ama şu var.
+
+84
+00:22:18,548 --> 00:22:31,708
+39 olan asla dc alamıyor. Geçer not alamıyor. 40 alacaksın, 40 da yeterli değil. 40'ın muhakkak alacaksın. 40'ın altında hiçbir şansı yok.
+
+85
+00:22:32,228 --> 00:22:42,568
+40'ın üstünde de diyelim ki öyle oldu mesela. 43 ve üstüne dc verdiler. 42 yine dd ile kaldı. Ben 41 aldım, oh rahatladım demek de yok.
+
+86
+00:22:45,107 --> 00:22:55,107
+Ne seçileceği belli değil. Negatif yönde 40 önemli. 40'ın altında alırsanız, 10 notu adam yerine koymuyorlar. Hiçbir şansı yok.
+
+87
+00:22:55,967 --> 00:23:03,467
+40 ve üstü biz şey diyoruz tabii, en azından 40'a da DEC'ye verelim diye biz söylüyoruz. 40 almış, minimum not falan.
+
+88
+00:23:04,228 --> 00:23:10,027
+40'ı genelde DEC seçiyoruz ama bazen bir kere 43'ü DEC'ye seçmişlerdi. Onu da söyleyeyim.
+
+89
+00:23:10,771 --> 00:23:36,711
+Yani 43 ile 48 arasını DG seçtikleri bir sınav olmuştu. 48 ile 57 arasını CG seçmişlerdi. Bu yani böyle seçerken biz şöyle yapamıyoruz. Yani şunu söyleyebilirim. Bağılım ortalamadan bize şeyler geliyor. Dağılımlar geliyor. Orada yazıyor mesela. Hangisini seçerim diye düşünüyoruz. Orada diyor ki mesela 43 ile 48 gelmiş tamam mı? 48 ile endiş. Hadi bu dağılımı seçelim. Çünkü herkesin birbirine bağlantılı olması lazım.
+
+90
+00:23:37,523 --> 00:23:45,683
+keyfe seçemiyoruz. Hadi 43 seçelim diyemiyoruz. Başka bir şey var diyelim, başka bir dağılım. 45 ile 50 arasında DC seçtik olabilir.
+
+91
+00:23:46,463 --> 00:23:53,063
+Başka bir ortalama, yani biz onları değişik şekilde simülasyon yapabiliyoruz.
+
+92
+00:23:53,063 --> 00:24:02,283
+Bir tanesini de gel diyelim, geçenlere, kalanlara falan bakıyoruz. Diyelim ki 40-45 arasında DC seçelim diyoruz ama ondan sonrası, o aralık...
+
+93
+00:24:02,432 --> 00:24:09,992
+bilgisayarında var. Biz o 40-45 diye bir şey seçemiyoruz yani. Ona dokunamıyoruz çünkü. Bir şeye dokunduğu zaman özel davranmış oluyoruz. Hayır.
+
+94
+00:24:11,112 --> 00:24:17,992
+İyi yönlü de olsa genel herkes uygulanıyor. Kötü yönlü de olsa bilgisayardaki o dağılımda standart sapla uygulanıyor yani. Bunu söylemek istiyorum.
+
+95
+00:24:18,992 --> 00:24:21,172
+Evet. Başka bir sorunuz var mı? Söyleyeyim mi?
+
+96
+00:24:22,311 --> 00:24:26,372
+Peki. Şu soruyu çözüyoruz arkadaşlar. Şimdi sesler geldiğine göre daha canlı anlatabiliriz.
+
+97
+00:24:27,059 --> 00:24:54,220
+Şimdi bakın, burada olay şu, tamam mı? Sonrasında, bakın, şu fonksiyon sürekli ve türevli, tamam mı? Ondan sonra bakıyoruz. Mesela şimdi burada şartlara bakıyoruz. Sıfırda, sıfırda fonksiyon alık değeri kaç? 4, şurası 4. Limit değeri kaç?
+
+98
+00:24:54,963 --> 00:25:09,563
+4. Niye? Sağdan limite bakıyoruz. Değişik bir soruydu. Sağdan çok güzel örnek geldi bu. Sevdim çünkü zaten biz konuları gün bitirdik. Haftaya da iki ders yapacağız. Ondan sonra final sınavına gireceksiniz.
+
+99
+00:25:10,043 --> 00:25:20,543
+Mazeret sınavı için sorusu olan var mı? Mazeret pazartesi gibi çocuklar. Saat 6'da galiba. Yani ben hep bazı şeyler hiç net konuşmak istemiyorum. Ben bir fikrimi söylüyorum.
+
+100
+00:25:21,268 --> 00:25:42,268
+Ondan sonra öğrenci çok iyi biliyor, tamam mı? Kendi hatasını hocalara bulmayı. Dikkat etmiyor, gelmiyor, bilmem ne. Ben de ağzımdan derim ki, ya bir yaşlı bir dilim sürçtü. 8 diyeceğim, 18 dedim, atıyorum. Yani 50 tane doğru söylesem, bir tanesinden lafımı eğip büküp...
+
+101
+00:25:42,771 --> 00:25:50,531
+Hoca yüzünden ben mazereti kaçırdı. Sen bak ben sana saatini söylemek zorunda değilim. Matematik sayfasında yazıyor arkadaş.
+
+102
+00:25:50,531 --> 00:26:01,711
+Ben net konuşmayayım ki bu video kaydı almıyor. Pazartesi 18 diye biliyorum ama net söylemiyorum bunu. Sen de bak.
+
+103
+00:26:03,411 --> 00:26:09,551
+Orada birinci ve ikinci vizeler aynı anda sınav. Ayrılığı yok. Konular iki vize içinde.
+
+104
+00:26:10,132 --> 00:26:12,872
+bütün konulardan. Onu söyleyeyim.
+
+105
+00:26:13,912 --> 00:26:17,372
+Hocam, bu finalin soru dağılımı nasıl olur ortalama olarak?
+
+106
+00:26:17,992 --> 00:26:19,432
+Valla başlardan da çıkabilir.
+
+107
+00:26:20,632 --> 00:26:25,211
+Genel olarak nasıl oluyor? İkinci vizeden sonrakiler ağırlıklı mı oluyor?
+
+108
+00:26:25,452 --> 00:26:28,012
+Ben şunu söyleyeceğim.
+
+109
+00:26:28,192 --> 00:26:29,592
+Yoksa eşit mi oluyor genel olarak?
+
+110
+00:26:29,711 --> 00:26:34,032
+Yani biz baştan sona çalışalım. Çünkü o komisyonun alacağı karar.
+
+111
+00:26:34,516 --> 00:27:01,016
+Ama 100 yüze sınavlarda daha çok 2. yüze'den sonrası, daha çok integralde ağırlık olurdu eskiden. Ama bu sınavda her konudan soru istendi. Yani bizlerden soru istiyorlar, ondan seçiyorlar. En baştaki konudan da herkesler eşit oranda istediler. Ama hazırlayan komisyon, aynı 3 kişilik bir komisyon soruları hazırlıyor.
+
+112
+00:27:01,359 --> 00:27:12,359
+Dolayısıyla siz, yine tekrar söylüyorum, son konuyu anlayan, zaten baş konuyu anlamış oluyor.
+
+113
+00:27:12,359 --> 00:27:23,359
+En sondan başa doğru çalışın yani. Impropriate integral'ler vardı tabii, onlardan da bakacağım. İnşallah bugün çıkarsa impropriate integral'ı yine çözdüm dün de.
+
+114
+00:27:23,359 --> 00:27:27,051
+Dün aslında ben uygulamayı bitirdim, yani bugüninkini ekstradan yapıyorum artık.
+
+115
+00:27:27,188 --> 00:27:33,327
+Böyle teferruatlar yani şey yapıyorsam, ev bitirilsin de ufak tamirleri kalır ya, ben şu anda tamirlerini yapıyorum.
+
+116
+00:27:34,867 --> 00:27:47,648
+Tamam mı? Yani baştan sonra çalışın derim. Her konudan. Ta en baş fonksiyon, limit, türev, tamam mı? Onların hepsine bakın.
+
+117
+00:27:49,568 --> 00:27:52,988
+Peki. Şimdi geldik bu soraya. Ama bu soruya da dikkatli bakın.
+
+118
+00:27:53,556 --> 00:28:00,476
+Çünkü neden biliyor musunuz? Böyle bir parçalı fonksiyonda bir için sorun yok. Birdeki sürekliliği araştırırız arkadaşlar. Niye?
+
+119
+00:28:01,195 --> 00:28:08,316
+Burada hem sağ var, hem sol var, hem de fonksiyonun aldığı değer var. Üçünün birbirine eşit olması lazım. Tamam mı?
+
+120
+00:28:08,355 --> 00:28:18,855
+Hem sağdan, hem soldan, limit. Bunların üçünün eşit olması lazım. Ama uç noktalarda, burada sağdan ve
+
+121
+00:28:21,107 --> 00:28:48,208
+fonksiyon aldığı değer. Burada da soldan bir limit ve fonksiyon aldığı değerler birleştirecek. Anlayanlar. Tamam mı? Ben şunu da söyleyeyim. Şu sınav, benim şu dün çözdüğüm alan harcimler yay uzunluğu, yüzey alanlarında gördüğünüz soruları çok fazla zorlaştıramayacakları, konuyu bilirsen yapacağın sorular olduğu için sizin en kolay sınavınız final olabilir. Onu da söyleyeyim.
+
+122
+00:28:49,428 --> 00:29:16,048
+Bir de sınıf çok iyi ya. Ben de aslında notları girerken, ben girdim, baktım. 63 almış, 63 almış. Böyle bir iki tane istisnağı vardı. Yani yüksek alıp da düşüş alan. Yani zaten 58 ortalama da çok düşük değil yani bir vize için. Ki girmeyenler var. Sıfırları silip atsam belki 70 olacak ortalama. Bilmiyorum. Yani sınıf ortalaması sizin sınıf daha iyi. Diğer sınıf bir iki puan daha düşüktü.
+
+123
+00:29:17,779 --> 00:29:42,719
+Aynı soruları çözüyorum. Demek ki aynı başarı Allah razı olsun. İki yeri de aynı şeyi anlatmama rağmen. Neyse, çok konuştum. Şuna baktık. Şu sıfırda sağdan limitini aldık. Bir de fonksiyon aldığı değer aldık. m'yi bulduk. Şimdi sola gel. Buradan da iki de soldan limit aldık. Soldan limit alınca ne oluyor? 2n-k. Fonksiyon aldığı değer de bu. Tamam mı? Bu değer.
+
+124
+00:29:44,788 --> 00:29:46,087
+Evet, baktık.
+
+125
+00:29:48,128 --> 00:29:51,548
+Evet, iki noktasının aldığımız değerler de bu.
+
+126
+00:29:52,668 --> 00:29:53,367
+Devam ediyorum.
+
+127
+00:29:55,587 --> 00:29:58,067
+Bire soldan bakıyorum, birire soldan baktım.
+
+128
+00:30:00,587 --> 00:30:02,288
+Bire soldan baktım.
+
+129
+00:30:03,367 --> 00:30:04,447
+Şurada yerine koydum.
+
+130
+00:30:06,108 --> 00:30:06,768
+N-k.
+
+131
+00:30:07,867 --> 00:30:09,168
+Sağdan baktım.
+
+132
+00:30:12,948 --> 00:30:28,587
+pardon, bire bakıyorum değil mi? Bire baktım, soldan baktım, 4xm. Tamam, 4xm'yi n-k'ya eşitlersem, m'yi de biliyorum, şu bağıntı çıkar, devam ediyorum.
+
+133
+00:30:29,307 --> 00:30:37,148
+Tekrar söylüyorum, bire soldan baktım, bir koydum, 3xm'ye çıktı, tamam mı? 3xm'ye nerede? 3xm'yi göremedin, aşağıda mı kaldı?
+
+134
+00:30:40,500 --> 00:30:57,639
+1 koydum buraya, 3x m. Burada 1 koydum, n-k. Ha, m'nin değerini bildiği için zaten tamam, b'nin değerini koyduk.
+
+135
+00:30:58,160 --> 00:31:04,420
+n-k'nin değerini de bulduk. Devamlıyorum. Şimdi sıfıra geldi. Sıfırı yaptık. 1'i yaptım, 2'yi yaptım. Şimdi bakalım.
+
+136
+00:31:08,596 --> 00:31:20,576
+türevliğe geçtik. Yetmedi ki bilimleyen arkadaşlar. Süreklilikten ancak bu kadar bildiği ulaştık. Bir M'yi bulduk, bir de L'xK'yı bulduk. Şimdi bir noktasında sağdan soldan türeve geçtik.
+
+137
+00:31:31,988 --> 00:31:44,048
+Bunun türevini aldık. Bunun da türevini aldık. Yani bir noktasında sağdan soldan türevi alıyorum. Bir noktasında soldan buradan türevi aldım.
+
+138
+00:31:44,248 --> 00:31:54,528
+x 2x artı 4x, 4'ten 1 koydum. Burada sağdan türevi aldım. N geldi. Bunlar da birbirine eşitle tutuyorlar. Bireklerim de buradan çıktı mı? Çıktı.
+
+139
+00:31:55,635 --> 00:32:04,635
+x kare artı 2x, yöne koydum, kayda buldum. Tamam, bitti. Soru bu. Bu önemli bir soruydu. Burada ortalama değer teoremer adımın çözdüksün de.
+
+140
+00:32:06,635 --> 00:32:08,139
+Burada ne var?
+
+141
+00:32:15,188 --> 00:32:41,768
+rotora sonuçluymuş. Geçelim. Bu da öyle. Bakalım. Ha şunu da çözmek istiyorum. Şeyde ikinci bize diyebilirim. Hani eskiden. Buna da bakalım. Genel minimum, genel maksimum olayı. Bakalım. Bunun türevini aldık. Normal türevini aldık. Bu çıktı. Payda eşitledik. Göklere baktık. 0. x eşitir 1.
+
+142
+00:32:42,836 --> 00:32:45,915
+f' üsü tarımsız x eşitir 0. Tamam.
+
+143
+00:32:47,036 --> 00:32:49,475
+x eşitir ve x eşitir kritik noktalardır. Tamam.
+
+144
+00:32:51,355 --> 00:32:55,955
+Bugün niye kritik nokta? Çünkü bu değerler fonksiyonu süreksiz yapmıyordu onun için arkadaşlar.
+
+145
+00:32:57,635 --> 00:33:01,955
+Yaptık. 0, 1'i koyduk. Azaldı, arttı, azaldı.
+
+146
+00:33:03,736 --> 00:33:05,615
+Yerel minimum, yerel maksimum.
+
+147
+00:33:08,355 --> 00:33:09,695
+1, 3, yerel maksimum.
+
+148
+00:33:12,147 --> 00:33:24,327
+Evet, tamam. Burada işarete baktık. x'in işareti eksi olduğu için, eksi artı, eksi katlı köfte yok. Güzel. Burası azalan, burası artan, burası azalan. Tamam.
+
+149
+00:33:25,567 --> 00:33:27,847
+Axios fonksiyonu var. Neyini sormuşlar? Bakın.
+
+150
+00:33:32,788 --> 00:33:35,528
+İncelemiş, biz de inceleyelim. Neyi incelemesin? Biz de incelemesin.
+
+151
+00:33:36,448 --> 00:33:42,448
+Önce tanım aralarına bakmış. Aksürüs fonksiyonun tanım aralarına nedir? Eksi 1 ile artı 1 arasındadır. Değil mi? Doğru.
+
+152
+00:33:43,548 --> 00:33:44,327
+Bir de artı.
+
+153
+00:33:48,500 --> 00:33:52,779
+Evet, bir de aksinüs, bir de ayrıca karakökün büyük eşit sıfırlığı var.
+
+154
+00:33:54,419 --> 00:33:57,399
+Bu, şu nasıl eşitsizlik çizebiliriz?
+
+155
+00:33:58,699 --> 00:33:59,959
+Şu var değil mi, aksinüs.
+
+156
+00:34:02,099 --> 00:34:05,299
+Bakalım, şu karakökten başladık.
+
+157
+00:34:07,299 --> 00:34:10,300
+Evet, bu fonksiyonun sonucu ne çıkar zaten değil mi? Bakalım.
+
+158
+00:34:10,880 --> 00:34:13,059
+Şuradan eşitsizlik çizdik.
+
+159
+00:34:14,859 --> 00:34:15,960
+Eksi 1, 1.
+
+160
+00:34:20,403 --> 00:34:28,864
+x artı x. Demek ki burada tanımlı. Tamam, güzel. Tanım aranını bulduk. Tamam. Bu kadar. Buna bakacağız. Bunun sonucu ne çıkar aksinüsünce?
+
+161
+00:34:30,284 --> 00:34:38,483
+Aksinüsünce sonucu ne çıkar? x'i pi bölü 2 artı pi bölü 2 çıkar. O bizi yedirmiyor. O değer kümesi oluyor. Peki buna baktık.
+
+162
+00:34:39,884 --> 00:34:44,243
+Türev aldık. Aksinüsün türevi nedir? İçinin türevi. İçinin türevi nedir? Kare küt'ün türevi.
+
+163
+00:34:44,659 --> 00:35:11,460
+Karaköksin türevi nedir? İçi eksi 2x bölü 2 tanı kendisinden bölü. 1 eksi, 1 eksi x karenin, yani şunun, yani karaköks 1 eksi x karenin karesi, karaköks kalktı. Buradan şu çıktı. Çünkü mutlak değer x diye yazarız. Baktığımız zaman, bakın, dikkat edin, x eşittir sıfırda sağdan sordan türev alırsanız, yok.
+
+164
+00:35:12,307 --> 00:35:15,027
+Burada da alın bir kazık marka bir durum var arkadaşlar.
+
+165
+00:35:17,907 --> 00:35:23,347
+Şimdi x mesela paydanın kökü diye sıfır aldınız, tanımlıdır diye tuzağa düşmeyin.
+
+166
+00:35:23,648 --> 00:35:32,688
+Bakın tekrar söylüyorum, kulağınızı açıyorsunuz, x eşittir sıfır aldınız, paydanın kökü tanımlıdır, kritik nokta demeyin diye biraz sabredin.
+
+167
+00:35:32,688 --> 00:35:34,847
+Mesela sıfır eksi alırken,
+
+168
+00:35:40,307 --> 00:36:06,807
+böyle, x'i x alıyorsunuz biliyorsun değil mi? Burada x yerine koyuyorsunuz değil mi? Burada şunlar birbirini götürüyor sonuçta tamam mı? Burası 1-x kare. Bir de sıfır korsanız x yerine, 1 çıkıyor. Ama sağdan hesaplarsanız, x'i 1 çıkar yani uzatmayalım çünkü bu x diye çıkar.
+
+169
+00:36:07,251 --> 00:36:32,112
+x kare artı 2x'e bu x'i 1 gelir. Sonuçta x'i 1. Yani sağdan sonra türev yok olduğu için türev yok. Demek ki kritik nokta ama türev yok. Şurada böyle daha çok mide bulandıcı şeyler var. Şurada kritik nokta diye görmeyin. Mutlak değer burada sağdan soldan türev alırsanız farklı çıkacak türev yok. Tamam mı? Burada türev yok. Tanımlı mı? Tanımlı.
+
+170
+00:36:32,692 --> 00:36:37,271
+Peki, bu değerler domende olduğuna göre maksimum mülüm etkiliyor mu? Hayır.
+
+171
+00:36:38,711 --> 00:36:39,492
+Değil mi? Olabilir.
+
+172
+00:36:40,692 --> 00:36:47,051
+Çünkü türev yok olması, türevin olmaması, onun maksimum mülüm olmadığını göster.
+
+173
+00:36:48,891 --> 00:36:51,851
+Yani bu, pardon, kritik nokta değil mi dedim ben?
+
+174
+00:36:53,992 --> 00:36:55,492
+Hayır, kritik nokta. Neden?
+
+175
+00:36:56,179 --> 00:37:20,619
+Çünkü burada tanımlı, türev olmayabilir. Yanlış bir şey mi anlatıyordum yani? Tamam, türevi yok ama yine kritik nokta. Kritik nokta. Onu değiştirmez. Ama bunu hesapladık, tamam, türevler farklı olsun. Türevin olmadığını gösterdik. Size türevi var mı diye sordular. O sorunun cevabını verdik. Ama kritik nokta. Neden? Şurayı çünkü kare kök olduğu için tanımlı yapıyor.
+
+176
+00:37:21,012 --> 00:37:47,392
+Kritik nokta arkadaşlar, bunun kritik noktası x eşittir 0. Peki, x eşittir 0'a kritik noktası dedik. O zaman 1'e de kritik nokta deriz, bu da domenide. Kritik nokta kaç tane oldu? Bir 0 oldu, bir 1 oldu, bir de 3 tane kritik noktası var. Evet, bu kritik nokta 3 tane 0, 1, eksi 1. Tamam.
+
+177
+00:37:47,807 --> 00:38:09,047
+Bunları eşitsizlik olarak gösterdik. Şu işarete burada sağdan sonradan, türevin işaretine sağdan soldan battık. Artı eksi işaretledik. Burası artı, burası eksi. Buradan biz bunun ne olduğunu gördük. Maksimum nokta olduğunu gördük. Evet, peki şurası nedir? Onu da söyleyeyim.
+
+178
+00:38:09,780 --> 00:38:11,620
+Evet, bu çözerken şunları yazmıyorlar.
+
+179
+00:38:12,340 --> 00:38:15,800
+Şimdi x yerine eksi 1 koydum, aksiyonuz 0, 0.
+
+180
+00:38:17,539 --> 00:38:18,180
+Bir dakika.
+
+181
+00:38:19,320 --> 00:38:21,300
+x yerine ne koydum? Eksi 1.
+
+182
+00:38:23,140 --> 00:38:24,320
+Aksiyonuz 0 nedir?
+
+183
+00:38:25,740 --> 00:38:26,120
+0.
+
+184
+00:38:28,620 --> 00:38:30,620
+1 koydum, yine 0.
+
+185
+00:38:32,460 --> 00:38:33,820
+0 koydum.
+
+186
+00:38:34,739 --> 00:38:40,779
+P bölü 2, şöyle yazalım da soru güzel versin. Şunları yazmayın da soru anlaşıldı. Şunları bir daha anlatacağım arkadaşlar.
+
+187
+00:38:53,235 --> 00:39:09,875
+Baktık. Ben bunu bir daha anlatayım. Soru şu. Sorusunu görmediğim için bir anda sorusu bu sayfa burada değil. Tekrar onu döküm ayındırıp çıkartmak. Tekrar söylüyorum. Bu fonksiyonun kritik noktalarını araştıralım diyoruz. Tanım aralığını araştıralım.
+
+188
+00:39:11,476 --> 00:39:17,096
+tanım aranı bu arkadaşlar. x 1 ile 1 arası. Neden? Şuradan anladık değil mi? Artı olduğu yer bu.
+
+189
+00:39:17,476 --> 00:39:26,996
+Kedere koydum. Kritik noktaları buluyorum. Türev aldım. Türevi, türevin olmadığı noktalar da olabilir.
+
+190
+00:39:27,356 --> 00:39:31,636
+Burada 3 tane türevin olmadığı nokta yok. Tamam, burada da türevin olmadığı noktalar.
+
+191
+00:39:31,636 --> 00:39:38,036
+Ama kritik nokta çünkü neden? Bu değerler burada tanımlı. Peki.
+
+192
+00:39:38,612 --> 00:39:44,152
+F-İsikçi tarımsız yapan deriler ve yok değerler kântik nokta olabiliyor.
+
+193
+00:39:44,532 --> 00:39:45,572
+Geldim çocuklar.
+
+194
+00:39:47,251 --> 00:39:47,971
+Geldik.
+
+195
+00:40:00,000 --> 00:40:16,779
+Evet, geldim. Şimdi, x'i bir sıfır, minimum nokta değil mi? Bu hem minimum, bu da sıfır. Bunlar şu noktalar. Hem yerel minimum.
+
+196
+00:40:22,068 --> 00:40:24,068
+Bu da bu da tamam mı ikisi de?
+
+197
+00:40:24,068 --> 00:40:25,996
+Hem de mutlak minimum.
+
+198
+00:40:29,108 --> 00:40:38,967
+Şu nokta, hem yerel maksimum, bu sınavda da çıkabilir sınavda, yerel hem de mutlak maksimum.
+
+199
+00:40:40,148 --> 00:40:50,688
+Neden? Şöyle sınırlı bölgelerde yani, kapalı bölgelerde, sınırları kapalı bölge, burada yerel maksimum, mutlak maksimum.
+
+200
+00:40:51,155 --> 00:40:56,836
+Şu sıfır noktaları nereden koyduk? Şunu bir fonksiyonu yerine koyarak yaptık. Dolayısıyla bunları yaptık. Geçelim.
+
+201
+00:41:00,467 --> 00:41:04,167
+Evet, bunları soruyormuş demek. Geçiyoruz. Yine aynı bir fonksiyon vermiş.
+
+202
+00:41:08,980 --> 00:41:18,079
+Baktım. Evet. Burada da bu fonksiyonun yerel, mutlak, ne isterseniz hepsini istiyor. Tamam mı? Bakıyoruz.
+
+203
+00:41:18,739 --> 00:41:29,840
+Şimdi bu verilmemiş tabii. Biz bunun domenini bulduk. Nereden bulduk hocam derseniz. Şuradaki x diyor ki bana sorma diyor. Ben uyumluyum. Kare kökün içine sor. Sorduk. Kare kökün içi.
+
+204
+00:41:30,516 --> 00:41:39,275
+eşitsizlikten burada tanımlıdır yani. Bf demek, domain function'dan yazıyorlar, Türkçeleşmiş artık, tamam mı? Biz de bazı kelimeleri Türkçeleştirmişiz.
+
+205
+00:41:40,536 --> 00:41:42,416
+Tanım aralığıyla D harfinin bir alakası yok.
+
+206
+00:41:45,256 --> 00:41:48,536
+İngilizce, konuşa konuşa İngilizceyi Türkçeleştirmiştir aslında.
+
+207
+00:41:48,536 --> 00:41:54,416
+Tabii Yeditepe'de ben İngilizce ders alattım karşısına. Orada domain function diye anlatıyorduk.
+
+208
+00:41:54,976 --> 00:41:57,956
+Evet, buraya Türkçeleşmiş, domain demek yani tanım aralığıdır.
+
+209
+00:41:59,059 --> 00:42:06,279
+Kapalı bölgeleri domen veya renk ile gösteriyorlar. Rejiyon ile gösteriyorlar. Rejiyon. Evet, geçiyoruz.
+
+210
+00:42:07,500 --> 00:42:13,079
+Peki, x 4, 4 dedik. Tamam, türeve geldik. Kapalı bölge biliyorsunuz. Bu, tamam mı?
+
+211
+00:42:13,920 --> 00:42:20,139
+Sürekli dik incelerken tabii sağdan, soldan, buradan mesela sağdan, buradan, soldan sürekli olması gerekir. Tamam mı?
+
+212
+00:42:20,380 --> 00:42:24,500
+Olduğunda görüyoruz zaten karakteri olsun. Türev alıyoruz. Chartman türevi.
+
+213
+00:42:26,963 --> 00:42:36,603
+Dün çok önemli bir uygulama yaptım. Ona tekrar bakın. O sizin her şeyiniz. Orada bütün konular bitti arkadaşlar. Tekrar bu fazlası yani.
+
+214
+00:42:36,603 --> 00:42:51,563
+Tamam mı? f3x, kare kök 16-x² artı x çarpı x2x bölü 2, 16-x² eşittir. Kare kök eşit, 16-x²-x², kare kök 16-x², o da eşittir. Eksini hesapladık. Türevi?
+
+215
+00:42:52,275 --> 00:42:58,295
+Zaten bunun x4 dışında kökü çıkarsa işimize yaramıyor zaten. Baktık, şurayı eşitledik.
+
+216
+00:43:00,235 --> 00:43:10,536
+Sarımsız yapan değerler artı eksi 4 ama kritik nokta. Yukarıya artı eksi 2 kökü, evet bu da içeride, bunlar da kritik nokta. 4 tane kritik noktamız var.
+
+217
+00:43:14,804 --> 00:43:18,704
+Bu yalnız, bunlar uç noktalar, farkında mısınız?
+
+218
+00:43:19,484 --> 00:43:23,463
+Tamam mı? Evet, bu f'lüsü ikisi tanımsız yapan değerler uç noktadır.
+
+219
+00:43:24,864 --> 00:43:25,144
+Peki.
+
+220
+00:43:27,184 --> 00:43:30,664
+Şunları da yazalım. 4 koyduk, değil mi bu? 0 oldu çocuklar.
+
+221
+00:43:32,684 --> 00:43:35,923
+4 koyduk, eksi 4 koyduk, 0, 4 bu da 0.
+
+222
+00:43:36,444 --> 00:43:40,003
+Bu değerler üzerine yazalım ki, eksi 2 kök 2 korsak ne olur?
+
+223
+00:43:41,300 --> 00:43:43,900
+8, 2 kök 2,
+
+224
+00:43:43,900 --> 00:43:49,400
+eksi 16. Yanlış yapıyorsam kusura bakmayın.
+
+225
+00:43:49,640 --> 00:43:50,340
+Yerine koydum.
+
+226
+00:43:52,260 --> 00:43:53,760
+2 kök 2 koydum.
+
+227
+00:43:54,200 --> 00:43:55,619
+8, 16'tan 8 çıktı.
+
+228
+00:43:55,740 --> 00:43:57,240
+2 kök 2 diye çıktı.
+
+229
+00:43:58,900 --> 00:44:02,079
+8, 2 kök 2 ile 2 kök 2'yi çarparsam.
+
+230
+00:44:03,411 --> 00:44:10,231
+4, 8. Bunu yanlış mı yaptım? 2x2 diye çıktı. 2x2 ile çarptım. 4x8. Fadım. 8 oluyor.
+
+231
+00:44:14,931 --> 00:44:19,051
+Burası 8 oluyor. Eksi koyduğum için de eksi 8 oluyor.
+
+232
+00:44:21,471 --> 00:44:24,591
+Burası artı 8 oluyor. Lütfen siz de bakın.
+
+233
+00:44:28,019 --> 00:44:44,279
+Bu da sıfır oluyor. Baktık, kapalı bir bölge. Uç noktalara da bakıyoruz. Mesela bu, sınırlı bölge tabii. Azaldığına göre çok açıkça bu eşitsizlikten fonksiyonlu ne olduğunu görüyoruz. Bunun yerel maksimum olduğunu görüyoruz.
+
+234
+00:44:46,039 --> 00:44:50,059
+Yerel maksimum. İnmiş. Burası da yerel minimum.
+
+235
+00:44:50,931 --> 00:45:04,551
+çıkmış, yerel maksimum, inmiş, yerel bir numara. Ama maksimumların en, yani yerel maksimum olduğuna göre burası sıfır, pardon, bu sıfır, bu sekiz, bu mutlak ayrı zamanda. Büyük harfe yazalım. Mutlak, maksimum.
+
+236
+00:45:10,867 --> 00:45:12,027
+mutlak min.
+
+237
+00:45:14,688 --> 00:45:15,207
+Tamam.
+
+238
+00:45:16,207 --> 00:45:17,288
+Yanda yazıyorum, bakalım.
+
+239
+00:45:17,827 --> 00:45:19,648
+x 4x0, yerel maksimum.
+
+240
+00:45:19,747 --> 00:45:21,827
+Çok güzel. Çünkü inmiş. Bu da nereye iner?
+
+241
+00:45:22,487 --> 00:45:24,827
+Minimum iner. Tamam mı? 4'te onun için yerel minimum.
+
+242
+00:45:25,288 --> 00:45:28,387
+Ama bakıyoruz, minimumların en küçüğü x 8 olduğu için
+
+243
+00:45:28,387 --> 00:45:32,707
+o nokta, x 2x2, x 1'miş burası ya.
+
+244
+00:45:32,827 --> 00:45:33,547
+Ben yanlış mı gördüm?
+
+245
+00:45:34,547 --> 00:45:38,947
+Hocam bu okları sağdan sola doğru bakarak yapmıyor muyduk?
+
+246
+00:45:39,347 --> 00:45:43,107
+Bakıyoruz işte. Bu tarafa doğru bakıyoruz. Azalmıyor mu bu?
+
+247
+00:45:43,287 --> 00:45:45,527
+Sağdan sola doğru olarak bakmıyor muyduk?
+
+248
+00:45:45,987 --> 00:45:47,447
+Sağdan sola mı gider fonksiyon?
+
+249
+00:45:49,188 --> 00:45:52,547
+Soldan sağa doğru bakılmaz mı yani? x ekseni böyle büyümez mi?
+
+250
+00:45:55,287 --> 00:45:56,707
+Grafik soldan başlar.
+
+251
+00:45:57,067 --> 00:45:57,547
+Olabilir.
+
+252
+00:45:58,407 --> 00:46:00,907
+Grafik soldan başlar, sağa gider [öğrenci]'e değil mi?
+
+253
+00:46:01,876 --> 00:46:08,596
+Şunu demek istiyorum, böyle gider. Şimdi bak, başlamış bir şey azalıyor. O nokta ne olabilir?
+
+254
+00:46:09,416 --> 00:46:10,376
+Aynen hocam, tamam tamam.
+
+255
+00:46:10,456 --> 00:46:19,376
+Tabii, sen dağın tepesine çıktın, inmeye başlamışsın. E o zaman maksimumdır. İnmişsin tam çukura, değil mi? Tam vadiye inmişsini minimum.
+
+256
+00:46:20,655 --> 00:46:26,716
+Tekrar çıkmışsın bir tepeyi, ama bu daha yüksek bir tepeymiş. Bu sıfırdan daha yüksekmiş.
+
+257
+00:46:27,219 --> 00:46:37,219
+O zaman bu mutlak oluyor. Daha büyük bir tepeye çıktı. Sonra inmeye başladı. Bir şey sonunda artı, sağda eksi ise maksimum demektir.
+
+258
+00:46:37,219 --> 00:46:41,219
+Bu türev'in işaretini anlıyoruz ya. Türev'in işaretini anlıyoruz bunu.
+
+259
+00:46:41,219 --> 00:46:48,219
+Bu da ama en büyük olduğu için bu da tam Ağrı Dağ'ın tepesi dedik. Dolayısıyla buna mutlak maksimum dedik.
+
+260
+00:46:48,219 --> 00:46:54,219
+Bu da Van Gölü'nün içi dedik atıyorum burası da mutlak minimum dedik.
+
+261
+00:46:55,059 --> 00:46:57,699
+Buradan tekrar azalıyor. Bir şey nereye azalır?
+
+262
+00:46:59,939 --> 00:47:04,960
+Aşağı doğru gidiyorsun. Taşıya attın aşağı doğru gidiyorsun. O zaman gittiği yer nedir? Minimumdur.
+
+263
+00:47:05,380 --> 00:47:12,279
+Şu değerlere bakıyorsun f'lerde. 0, 0. Burada dinine dinine anlatıyoruz. Tamam mı? Şey değil, ekstradan girelim. Programımızı yaptık.
+
+264
+00:47:13,380 --> 00:47:20,659
+Şu anda hala konu yetiştirmeye çalışanlar var. Tamam mı? Ben sırfım iyi. Ben notlardan memnunum arkadaşlar. Girenler de var. 70 civarında.
+
+265
+00:47:21,235 --> 00:47:30,695
+okuldaki çok daha yüksek bölümler var, bilgisayar, elektronik, yine ben, bizim sınıf iyi, güzel ders yapmışız.
+
+266
+00:47:30,695 --> 00:47:37,036
+Tabii başarısızlıklar olacak, ne yapalım yani? Olabilir, aksilikler olacak. Ben şunu söyleyeceğim tekrar sınava taktik olarak.
+
+267
+00:47:39,076 --> 00:47:44,515
+Dedim ya, bir arkadaşınız 3 tane soru gönderdi bana, çıkmış sorundadır herhalde, çekmiş fotokopunu, bana gönderdi.
+
+268
+00:47:44,996 --> 00:47:48,795
+Doğalına döndüm. Buradaysa söylesin, anlayamadığı bir şey varsa.
+
+269
+00:47:49,396 --> 00:48:13,816
+Yani bakıyorsunuz, soruya şöyle bakın. Bu konu hangi konuyla ilgili? Şunu sorun sınavda. Bu konu hangi konuyla ilgili? Ya integral üzerinde sıfırın üzerinde, integral işaret üzerinde sıfırdan x eksi y'ye gidiyor. Ya integral üzerinde hep sayı olmaz mı belediye integral? x'in ne işi var? Ya hiç çalışmasanız bile.
+
+270
+00:48:14,324 --> 00:48:40,144
+Sallayın ya, türevini almıyorum ya. Başka ne yapacaksın yani? İki sıra da bir fonksiyon var, x gibi falan. Düşünün yani sınavda, biraz sizin yaratıcı olun. Yani yüksek noktada var tabii, çok yüksek noktada var. Alın, üstün sınırı, ha y ne? y, x'e ait bir fonksiyon. Onun da türevi y üstü oluyor, bitti. y yerine y üstü yazarsanız, x'in de 1-y üstü yazdığınız zaman.
+
+271
+00:48:40,596 --> 00:49:06,535
+çarpı, bir de x-y'yi şeyde yerine korsanız, en üzeri tek karede mesela, çözersiniz. Başka bir soru var. 7'den 9'a elen x üzeri 9, x üzeri 5 mesela falan. Küçük eşit m diyor. Biz bununla ilgili sınavda soru çözmedik mi? Bu içindeki fonksiyona bakın. Hangi değerde maksimum olur? x yerine 9 korsanız koyun elen.
+
+272
+00:49:06,996 --> 00:49:31,980
+9 üzeri 4 artı L'en, 9 üzeri 3 artı L'en bilmem ne. Onu sadeleştirip çıkıyor cevap. Yani inanın saniye tutun 10 saniye. Şimdi şunu düşüneceksin, şu aklınıza gelmezse yattı. Küçük eşit M niye demiş Büyükem? Ya diyeceksiniz hoca çözmüştü. Bu sınavda da gelir mesela negatif tarafa korlar, küçük M korlar, küçük M ne olmalı? O zaman da...
+
+273
+00:49:32,083 --> 00:49:45,264
+Aynı soruda mesela küçük eşitlem değil de soru şöyle başlasaydı. Küçük m harfi küçük eşitliğe başlasaydı o zaman da 7'yi koyacaksınız. Çünkü o fonksiyon, içindeki fonksiyon yani integral falan almıyorsunuz. Integral anda olmuştur yani.
+
+274
+00:49:46,344 --> 00:49:58,324
+Öyle bir yapamayarsa gülerim valla. Ondan sonra 7'yi koyup tamam mı? Orada da öyle bir şey olsaydı cevaplarda ln 7'li bir şeyler olurdu tabii. O zaman da küçük m'yi bulurdunuz.
+
+275
+00:50:00,000 --> 00:50:04,259
+aynısını benzerli çözdük yani. İlla fonksiyon aynı olması gerekmiyor.
+
+276
+00:50:05,479 --> 00:50:08,059
+Bir soru daha sormuştu. Onu şu hatırıma gelir diye.
+
+277
+00:50:08,619 --> 00:50:11,059
+Gelince de onu da yaparım. Ondan sonra.
+
+278
+00:50:11,539 --> 00:50:13,719
+Yani baktığın zaman değişik gibi duruyor.
+
+279
+00:50:14,639 --> 00:50:18,099
+Ama ilişkiyi kuracaksınız. Bu soru hangi konu?
+
+280
+00:50:20,139 --> 00:50:23,299
+Konuları da biliyorsunuz. Ben konu üzerinde çok fazla duruyorum zaten.
+
+281
+00:50:23,987 --> 00:50:29,607
+Şimdi mesela burada ben önemli gördüm final sınavında. Mesela bu soruyu çözüyorum. Niye?
+
+282
+00:50:30,987 --> 00:50:33,507
+Mesela tekrar geleyim. Bu 4'ün soru da önemliydi.
+
+283
+00:50:37,108 --> 00:50:42,628
+Neden? Çünkü sizi tuzağa düşürecek noktalar var. Nedir?
+
+284
+00:50:43,827 --> 00:50:44,968
+Noktalar, onu söyleyeyim.
+
+285
+00:50:47,288 --> 00:50:49,288
+Şunlardır mesela sizi tuzağa düşürebilir.
+
+286
+00:50:50,568 --> 00:50:54,448
+Mesela bu fonksiyonun tabii şeyini bilmiyorum ama önemli değil yani türev ve sürekli.
+
+287
+00:50:54,948 --> 00:50:59,068
+Tamam mı yani? 0, 2'de sürekli, 0 açık arasında türevli olabilmek.
+
+288
+00:50:59,088 --> 00:51:01,168
+Mdk nedir diyor. Tamam mı?
+
+289
+00:51:02,452 --> 00:51:29,172
+Ondan sonra, ya bir şey sorusu ne olursa olsun. Demek ki şurada bakacaksınız tek tek. Sıfırda incelerken sağdan soldan alamıyorsunuz limit değil mi? Limit alamazsınız sağdan soldan. O zaman bunun sağdan sürekli, buranın soldan sürekli olması. Koydunuz ya böyle. Tamam. Sıfırda sağdan, şey sıfırda evet. Sağdan yaklaşıyorsunuz. Sağ kolunuzu böyle bir tarafa getirin sağdan.
+
+290
+00:51:29,536 --> 00:51:31,775
+2'de de soldan sürekli olacak. Bu bir.
+
+291
+00:51:32,915 --> 00:51:35,175
+Sıfırda ve 2'de türev araştırmayın türev.
+
+292
+00:51:35,775 --> 00:51:37,495
+Türev yoktur. Türev açık aralıkta bak.
+
+293
+00:51:38,576 --> 00:51:42,135
+Sakın burada 2 koyarak türev alamazsınız. Bunun türevi yok.
+
+294
+00:51:42,556 --> 00:51:45,975
+Tamam sağdan soldan sürekli var ama sağdan sonra da türev ilikliği bir şey yok.
+
+295
+00:51:46,596 --> 00:51:52,915
+Sonra da sıfır noktasında da iç nokta olduğu için, bakın size koskoca bir haftalığında anlattığım konuyu anlatıyorum.
+
+296
+00:51:53,619 --> 00:52:04,420
+uç noktalarda süreklilik sağdan soldan, iç noktalarda da sağdan soldan da var, fonksiyonun aldığı değer de var. Burada çözdük. O çok güzel bir soruydu. Durdum.
+
+297
+00:52:05,500 --> 00:52:10,500
+Burada ortalama değer töreni. Bunu çözdüğüm için geçiyorum. Çözdümse iki şeyde. İki gibi de yazdığınızı yazdığınızı.
+
+298
+00:52:14,771 --> 00:52:40,132
+Şimdi şu var, mesela bir sınavda sorular çok garip olsa ortalama 60 civarında olmaz. Bir de o sınıfta 90'lar, 95'ler olmaz. Bayağı var yani. Ama çok yüksek not alıp da 6-7 alan da var. 15 tane yanlış çıkan da var. Onu da anlamadım, çözemedim. Çocuk yapmış, sıfır alıyor. Hepsini yapmış.
+
+299
+00:52:41,492 --> 00:53:06,192
+15 tane yanlışı vardı. 15 miydi? 16 miydi? Boşta bırakmış. Yani sıfır almış. Allah Allah. Sınıfa mı girmemiş? Yok. Peki. Bir de şunu söyleyeyim. İtirad etmenin hakkında test sınavlarına itirad edilmez. Ha şöyle itirad edin. Ben şeye bakıyorum bir daha mesela. Ben yanlış mı girdim? Ben doğru girmişsem bitti. Hiçbir şansınız kalmıyor.
+
+300
+00:53:07,443 --> 00:53:32,483
+Ben bana mesaj yazarların hepsine döndüm. Bugün de bakayım yine hepsine döndüm. Ben size tamam diyorsam tamamdır. Yani bunun düzelmesi yok ki. Sınav kağıdı yok ki. İşaretlemiş sınav. Bilerek yanlış işaretlediysen bunun dönüşü yok. Ben girerken ama o çok dikkatli girdi. 3 kere kontrol ettim notları. İtiraz edenlerden de bir tanesi bile şey değildi. Hepsi doğruydu.
+
+301
+00:53:33,684 --> 00:53:44,304
+Evet, sınav neticelerinde çok dikkatli, kontrollü. Evet, bunu yaptık. Aksinüsü anlattım. Bak burada mesela, bunun da maksimum minimumlarını anlattım. Burada da var.
+
+302
+00:53:46,244 --> 00:53:54,624
+Demek ki maksimum yerel manutlatma önemsiyorum. Niye? Çünkü bu dersin temeli bunlar, maksimum minimumlar. Buna baktık.
+
+303
+00:53:56,467 --> 00:54:00,668
+Burada grafik çizimi var. Güzel, yapalım hadi. Neden? Grafik çizimi olabilir.
+
+304
+00:54:03,008 --> 00:54:07,208
+Şeyleri arkadaşlar size vurduracağım. Asimptotlara dikkat edin.
+
+305
+00:54:09,048 --> 00:54:15,708
+Tamam mı? Yatay eğri asimptotlara dikkat edin. Eğik değil de pardon. Yatay eğri asimptot, düşüğü asimptotlara dikkat edin arkadaşlar.
+
+306
+00:54:16,407 --> 00:54:19,367
+Bir de mesela yaparken sağdan soldan limit alacağız.
+
+307
+00:54:21,268 --> 00:54:23,108
+Bir 10 dakika dinlerim arkadaşlar.
+
+308
+00:54:25,427 --> 00:54:26,827
+Bir sıvı içeyim.
+
+309
+00:54:27,628 --> 00:54:28,927
+Evet, 10 geçe devam edeceğim.
+
+310
+00:54:29,188 --> 00:54:29,608
+Tamam mı? Burada.
+
+311
+01:13:53,652 --> 01:13:55,771
+Evet, arkadaşlar devam ediyorum.
+
+312
+01:13:57,711 --> 01:14:03,271
+Final için şunu söyleyeceğim. Arkadaşınız dedi yani final sınavından sıfır alsam işte neyse falan.
+
+313
+01:14:03,271 --> 01:14:11,131
+Ben şunu söyleyeceğim. Sınavların içinde en garantilisi ve en yüksek not alınacağı final sınavdır.
+
+314
+01:14:12,211 --> 01:14:18,851
+Çünkü burada ben özellikle konu soru çözerken konu tekrarı yapıyorum her seferde.
+
+315
+01:14:19,512 --> 01:14:20,252
+Örneğin şöyle.
+
+316
+01:14:21,971 --> 01:14:46,652
+bir silindirik kabuk. Kendisi zor. Ama bir formülü var mesela. 2p kabuk yarı çapı, kabuk yüksekliği. Bu kadar da şifresi olan bir şey. Yani bu soruyu ne kadar zorlaştıracaklar? Anlatabiliyor muyum? Yani sen ne bileyim mesela bir hacimde silindirik kabuk.
+
+317
+01:14:47,539 --> 01:14:51,420
+veya disk, disk dilimleme de diyorlar, dilimle, dilimleme.
+
+318
+01:14:51,960 --> 01:15:01,460
+veya pul, conta var ya, tüplere takılır filan veya ne bileyim böyle çivilerin şeyine hani böyle çıkmasın diye şey yapan bir şeyler vardır ya ama pul denilen.
+
+319
+01:15:01,979 --> 01:15:03,039
+pul yöntemi.
+
+320
+01:15:03,840 --> 01:15:04,399
+hacim bu.
+
+321
+01:15:05,460 --> 01:15:08,379
+anladın mı tam anlarsın, anlamayın da hiç zaten o süreye yaklaşmayın.
+
+322
+01:15:08,819 --> 01:15:12,100
+anlaşılmasında 3 dakika kendinizi verseniz her sonu közersiniz.
+
+323
+01:15:12,532 --> 01:15:16,332
+Finalden korkmayın, bence finalden yüksek not almaya çalışın arkadaşlar.
+
+324
+01:15:16,332 --> 01:15:20,332
+Finalden yükseltmeye çalışın. %40 ağırlığı var, en yüksek finalin ağırlığı.
+
+325
+01:15:20,332 --> 01:15:28,332
+Diğer vizeler %30-30. Dolayısıyla, yani bence hiç pes etmeyin, finale yüklenin derim.
+
+326
+01:15:28,332 --> 01:15:32,532
+Güzel ortalama, diğer sınıfların yanında diğer hocalar paylaşıyorlar.
+
+327
+01:15:32,532 --> 01:15:36,332
+Yani çok hocadan daha yüksektim sınıfın ortalamaları. Orada sevindim.
+
+328
+01:15:36,332 --> 01:15:40,332
+%50 olan var, %45 olan var.
+
+329
+01:15:40,692 --> 01:15:48,451
+Anlatabiliyor muyum? Dolayısıyla iyi ortalamaya sayınız. Çalışırsınız, yüksek notları alırsınız. Ben de mutlu olurum.
+
+330
+01:15:49,692 --> 01:15:55,672
+Genellikle düşük olanlar da moralini bozmasın arkadaşlar. İlk düzeler yüksekti zaten. Finalde de yüksek not alsınlar.
+
+331
+01:15:57,371 --> 01:16:04,551
+Öyle çalışın. Bakın ne yapabiliyor muyum? Sondan başa doğru çalışın. Önce improper integral. Dediğiniz olay ne dedi? Bir limit yazıyorsun.
+
+332
+01:16:04,692 --> 01:16:07,692
+Integralın başına bir limit yazmak ya. 3 saniye süredi ya.
+
+333
+01:16:08,275 --> 01:16:16,915
+0'dan sonsuza bir integral, sonsuza yerine A yazdın, limit A sonsuza giderken, ne bileyim, veya integral içinde mesela 0 yapan bir değer vardı yani.
+
+334
+01:16:17,636 --> 01:16:26,296
+x eşitli 0. O 0 artı H veya 0 eksi H yerine göre yazdığınız zaman bitiyor. Ondan sonra yüzey alanı var. Neydi?
+
+335
+01:16:27,876 --> 01:16:33,515
+İşte bir y çarpı integral 1 artı y üstü kare kare içinde de x ya da.
+
+336
+01:16:33,583 --> 01:16:59,144
+ters fonksiyon olarak belirse x çarpı 1 artı x3 kare d7. İşte o da ona göre yeni değişimlerini yazıyorsunuz. Bir de dışında ne vardı? 2P vardı mesela yüzey alanın dışında. Ondan sonra evet bu yüzey alanda 2P vardı. Bunu çözerken eğer unutmuşsam hatırlatmış olayım. 2P'ler vardı o formda. Tekrar bir şey varsa hatırlatırım tekrar.
+
+337
+01:16:59,796 --> 01:17:05,275
+Anlatabiliyor muyum? 2 pi'yi aradı, unutmadık onun başında vardı. Sonra burada olduğuna göre muhakkak vardı.
+
+338
+01:17:05,275 --> 01:17:11,115
+Burada mat bu, yalnız çözülmüş olamaz. Ondan sonra y uzunluğu var.
+
+339
+01:17:11,115 --> 01:17:17,796
+Kare kök 1 artı y üstü kare de x veya kare kök 1 artı x üstü kare de y.
+
+340
+01:17:17,796 --> 01:17:25,636
+Geriye doğru gelin, alan hesabı var. yx'e göre, yy'ye göre, tamam ikisini de biliyorsunuz. Sonra gelin.
+
+341
+01:17:26,195 --> 01:17:32,476
+İşte trigonometrik dönüşümler var. Basit kesirler var biliyorsunuz. Basit kesirlere ayırma var.
+
+342
+01:17:33,636 --> 01:17:36,755
+Trigonometrik sinüs de sekante, tanjante var.
+
+343
+01:17:37,876 --> 01:17:44,435
+Gelin ondan sonra daha önceki şey, kısm-integrasyon, trigonometrik integraller var.
+
+344
+01:17:44,755 --> 01:17:49,956
+Değişken dönüşümü var. Geriye doğru gelin Riemann integralleri var, Riemann toplamı var.
+
+345
+01:17:50,228 --> 01:17:54,228
+Riemann, bir dakika, 3 tane soru göndermiştim, 3. aklıma geldi.
+
+346
+01:17:58,847 --> 01:18:05,728
+Riemann'ın integralini yaparken, Riemann toplamında ben 2 kere, öteki kara tahtaya da geçerek şunu yazmadım mı?
+
+347
+01:18:07,587 --> 01:18:09,547
+K eşittir, birden ele kadar.
+
+348
+01:18:12,487 --> 01:18:14,128
+K kare var, tamam mı?
+
+349
+01:18:15,807 --> 01:18:17,148
+Bunun formülünü verdik ya.
+
+350
+01:18:18,323 --> 01:18:26,203
+n çarpı, n artı 1 çarpı, 2n artı 1, onu da hatırladım. Neyse hafızanın yerine geldi. 2n artı 1. Böyle 6 idi.
+
+351
+01:18:28,384 --> 01:18:31,643
+Bunun yerine bunu yazsaydı sonra bitmişti yani. Ondan sonra sadeleştiriyor.
+
+352
+01:18:32,603 --> 01:18:38,543
+Şimdi işte yani biraz daha şey olacak. Dersten kopuk olmayacak. Bunun Riemann'da geçiyordu değil mi? Riemann'da.
+
+353
+01:18:38,931 --> 01:19:02,791
+Riemann toplamı bulurken, orada sürekli direkt şeyi sormuşlar. Riemann toplamında ne kullanılıyor? Sigma formülü kullanılıyor. Sigma formülünü yazıyorsun, soru çıkıyor. O kadar basit bir soruydu. Yine 10-15 saniyelik bir soruydu. Yani böyle şeylerde düşünün, bu nerede geçiyordu? Riemann'ı hatırlamıyorsanız zaten koruyun çalışmamasıdır. Nerede geçiyor bu yani sigma? Bu toplamlar k kare, k küp.
+
+354
+01:19:03,444 --> 01:19:14,224
+k, 6 tane formül yazmadım mı? Veya sabit. Neyse, hatırlatayım. Soruyu düşünün, nerede geçiyor? Oradan ona göre hatırlarsınız. Peki.
+
+355
+01:19:16,604 --> 01:19:20,623
+Sorumuza gelelim arkadaşlar, dur. Bunları yapmıştık, geçiyorum arkadaşlar.
+
+356
+01:19:25,619 --> 01:19:31,860
+Tanımı, x 2 artı 2 hariç, çünkü paydayı sıfır yapabiliyorlar. Bu da aynı zamanda biliyorsunuz nefret düşeğe asım toktur.
+
+357
+01:19:31,940 --> 01:19:35,239
+Değil mi? Ama bunlar da önemli. Bu limitleri bile sınavda sorarlar.
+
+358
+01:19:35,239 --> 01:19:42,420
+Tamam mı? Mesela 2 artı, 2 artı nasıl yapıyorduk bu limiti? Mesela sağdan yaparken ben şöyle yapıyorum.
+
+359
+01:19:43,139 --> 01:19:46,260
+Ben böyle yapıyorum, hiç düşünmüyorum. Kendimden de eminim.
+
+360
+01:19:48,880 --> 01:19:52,840
+Buraya da geliyorum mesela. 2 artı aşın kalesi, tamam mı? Yazıyorum.
+
+361
+01:19:54,836 --> 01:19:57,036
+Tamam mı? Böyle.
+
+362
+01:19:57,936 --> 01:19:59,796
+2 artı h'ın kalesi diyorum.
+
+363
+01:20:02,516 --> 01:20:04,676
+Eksi 4. Soldan olsaydı,
+
+364
+01:20:05,076 --> 01:20:07,355
+2 eksi h yazacaktı. Bunun sağ direşimde,
+
+365
+01:20:08,216 --> 01:20:10,736
+gidiyor, çıkıyor zaten. Böyle yapın.
+
+366
+01:20:12,056 --> 01:20:13,016
+Eksi 2 artı h,
+
+367
+01:20:13,076 --> 01:20:15,556
+eksi 2 eksi h, tamam mı? Böyle yapın arkadaşlar.
+
+368
+01:20:15,775 --> 01:20:17,115
+Söylüyoruz, hoca sözü dinleyin.
+
+369
+01:20:17,115 --> 01:20:18,195
+Evet.
+
+370
+01:20:18,739 --> 01:20:26,479
+e-2 asimptot yok. Tabi yata asimptotu tabi bakıyoruz. Artı, eksi sonsu için her ikisi de. İkisi de ayrı anda yapmış ama iki kere ayrı yapmak lazım.
+
+371
+01:20:27,059 --> 01:20:36,139
+y eşitir bir de yata asimptot, düşe asimptot. Evet. Bu iki asimptotun kesim noktası nedir mesela? Bakalım kesim noktaları nedir?
+
+372
+01:20:37,959 --> 01:20:45,059
+Bunlar eksi 1 artı 1 değil mi? Düşe asimptot. Pardon eksi 2 artı 2. Bir de ne var? y eşittir 1 var.
+
+373
+01:20:46,131 --> 01:20:49,131
+Bu asimptotların kesim noktaları nedir? Şuralarda değil mi?
+
+374
+01:20:51,831 --> 01:20:57,511
+Eksi bire, işte, bir, bire bir. Mesela kesim noktaları geçebilir.
+
+375
+01:20:59,331 --> 01:21:04,791
+Evet. E2 asimptot olabilirler. Bunlar önemli. Asimptotlar falan tamam mı? Çok önemli.
+
+376
+01:21:04,931 --> 01:21:07,992
+Finaşlar için. Bunlar da hata yapmayın. Anlayın.
+
+377
+01:21:10,996 --> 01:21:24,176
+Ben soru çözüyorum demek, benim sorularımı ezberlemedi demek değil ki, ezberlemedi değil. Anlayın arkadaşlar. Sorumu anlayın. Yani anlattığım sorudan konuyu anlayın. O soru soru ezberlemeyin. Soruları tabi aynısını sormaklar. Peki devam ediyorum.
+
+378
+01:21:27,176 --> 01:21:28,296
+Çok gidiyor.
+
+379
+01:21:28,532 --> 01:21:52,631
+Buraya baktık, düşe yasintot var. Yatay asintot. Ekseni kestiği nokta bir tek sıfır. Orijinden geçmiş. Türevini aldık. Artık bu türevi de anlatacak bir şey yok. Bölümün türevi. Bakıyoruz. Artı eksi 2, domende olmadığı için burada yani. Bakıyoruz. Burası işte. Hem çift kat gök hem de çocuklar şey. Sonrayı da görelim diyoruz.
+
+380
+01:21:54,452 --> 01:22:03,452
+Hem de tanımlı değil. Yani şunlar kritik nokta değil. Kritik nokta değil. Bir tek kritik nokta sıfır. Peki bunları kullanmayacak mı? Kullanacağız.
+
+381
+01:22:03,452 --> 01:22:16,452
+Buradan da şey yapabilirler mesela, şu kritik nokta değildir. Bunu maksimum minimum diye verebilirler. Mesela büküm noktasının sonsuz yapan değerdir ama fonksiyon tanımlı değildir.
+
+382
+01:22:16,452 --> 01:22:21,452
+O zaman o büküm noktası olamaz. Ama eşitsizlik de gerekiyor. Hem de çift kat. Tamam mı?
+
+383
+01:22:21,652 --> 01:22:36,672
+Bu önemli ama bir tek artan azaranları belirlemek için bunların maksimum olma şansı yok. Çünkü paydada olmasından dolayı değil. Fonksiyon burada sonsuz olduğu için. Olmayan bir nokta yani. Tamam mı? Geçiyoruz.
+
+384
+01:22:37,532 --> 01:22:47,051
+İkinci türevi de aldık. İkinci türevde de baktık. Artı, eksi, iki. Domende değil, büküm noktası yok diyoruz. Ama domende olsaydı bunun sonsuz olması sorun değil.
+
+385
+01:22:47,828 --> 01:23:08,468
+Domende olmaması sorun. Peki, yaptık. Yerlerine koyduk. Buradan da grafiği çiziyoruz. Nasıl çiziyoruz? Bir tane grafiği burada tam görelim. Çok güzel bir grafiği var bunun. Mesela şu noktaları yazdık. Türevin işaretine göre, işte çift kat durumuna göre, 2'de çift kat, x'e x'i gelmiş, 0'da işaret değiştirilmiş, çift kat olduğu için değişmemiş.
+
+386
+01:23:08,916 --> 01:23:27,716
+Büküm noktasına yok ama işte onu sonsuz yapan değer. x 2x2. Ama bunlar bende sonsuz yapıyor arkadaşlar. Tamam mı? Sıfır değil, sonsuz yapıyor. İşaret. Onun için bunlar büküm noktası olamaz. Konkallık değişmiş ama olamaz. Konkallık değişmiş ama. Yukarı konuk yok arkadaşlar ama büküm noktası değil.
+
+387
+01:23:33,391 --> 01:23:59,532
+yata yasimptot'tan artıyor yukarı kankav olarak. Buraya gidiyor. Nereye gittiği yer? x'leştirex'e iki asimptotu. Yani kuzey kutbuna gidiyor. Kuzey kutbunda batıyor. Ama kuzey kutbunun içinde delik biliyor musun? Enteresan bir şey. Ya buradan aşağı inecek, ya güney kutbundan çıkacak. Başka şansı yok. O da şu kankavlığa bakıyoruz. Artan azalanlığa bakıyoruz. Ne var burada?
+
+388
+01:24:00,115 --> 01:24:07,836
+artmış, aşağıdan, aşağı konkavul artmış, buraya gelmiş, orijinden geçmiş, sonra
+
+389
+01:24:07,836 --> 01:24:15,175
+konkavul değişmeden bu asimptotun yine gitmiş Güney Kutlu'na. Güney Kutlu'ndan mı çıkacak, Kuzey Kutlu'ndan mı?
+
+390
+01:24:15,615 --> 01:24:19,655
+Şuradan anlıyoruz, azaldığına göre böyle gidecek. Demek ki Kuzey Kutlu'ndan çıktı.
+
+391
+01:24:19,655 --> 01:24:27,515
+Ama önündeki asimptotu da kesemiyor tabii, yatay asimptotu böyle gidiyor. Böyle grafiğe de bakın.
+
+392
+01:24:32,979 --> 01:24:39,199
+buradan geçtik artık arkadaşlar. Bu aynı şekilde grafiği de var. Siz de bulunsun. Soruları onun için bunu böyle şey yaptırır.
+
+393
+01:24:40,019 --> 01:24:50,379
+Grafiği de çizmiş. Böyle bir grafik. Bu da e-2 asimptot var. Mesela e-2 asimptotla, diyelim düşeği asimptotu kesilir. Şuradan kesişterek şu noktaları bulabilirsiniz. Sorabilirler. Tamam mı?
+
+394
+01:24:50,479 --> 01:24:56,979
+Burada bir maksimum varmış, burada bir minimum varmış. Geçiyoruz. Bir öğrensiniz matematik çok zevkli bir ders.
+
+395
+01:24:58,771 --> 01:25:06,731
+Çift fonksiyon olayı mesela burada x'e ne eksi x koyunca ne çıktı burada? fx çıktı. Demek ki çift fonksiyon.
+
+396
+01:25:07,692 --> 01:25:15,992
+2x'e de göre simetrik. Tarım aralığı nedir? x3 artı 3'i çıkar. Gerisini artık türevler, mürevler. Artık yani dersini anlatıp olsa da sıkılıyorum çünkü artık.
+
+397
+01:25:16,551 --> 01:25:19,311
+Buna baktık. Burada da türevlerini alıyoruz.
+
+398
+01:25:20,756 --> 01:25:28,515
+Şurası biliyorsunuz hep pozitif çocuklar. Şurası hep pozitif olduğu için bu sıfır eşit olması müdür değil. O zaman şunu bir sıfır eşit diyerek yapıyorsunuz.
+
+399
+01:25:29,855 --> 01:25:37,636
+Buradan kritik noktalar, evet bunu fonksiyonu ne yapıyor? Şey yapıyor fonksiyonu. Bir bakalım.
+
+400
+01:25:39,476 --> 01:25:42,556
+Mikrofonu şey yapıp unutmuş olduğum ya, tam ne anlıyoruz?
+
+401
+01:25:43,380 --> 01:26:10,399
+Peki, sonra 2x türev alıyoruz. Tekrar söylüyorum, üstel fonksiyonu pozitif olduğu için sıfır olma ihtimali yok. Şunun kas sayısını alıyoruz. Evet, buradan da bu büküm noktası maksimumları araştırıyoruz. Burada da logaritma türevini alıyoruz. Burada yine türevlenebilir, sürekli ve türevlenebilir işte sorusu neyse bizi yendiren kısım. A ve B nedir diyor. Ondan süreklilikten gidersek sıfırda sağdan sürekliliğine bakarız.
+
+402
+01:26:11,123 --> 01:26:14,203
+İki de soldan süreksizliğine bakarız.
+
+403
+01:26:14,304 --> 01:26:19,344
+Bir de de iç nokta olduğu için hem sağdan hem soldan hem de fonksiyon aldığı değere bakarız.
+
+404
+01:26:19,623 --> 01:26:20,583
+Bir de türeve geçeriz.
+
+405
+01:26:20,684 --> 01:26:21,903
+Türevi yaparken ne yapıyorduk?
+
+406
+01:26:22,844 --> 01:26:23,684
+Türevi ne bilir diyor ya.
+
+407
+01:26:23,783 --> 01:26:25,943
+İsterseniz o türevi içinde şöyle bir şey yapın arkadaşlar.
+
+408
+01:26:26,884 --> 01:26:28,623
+Böyle yaparsanız rahat edersiniz.
+
+409
+01:26:29,684 --> 01:26:34,344
+Türevi de kullanacaksanız böyle parçalı fonksiyonda bu da ben size bir güzel bir hatırlatmam olsun.
+
+410
+01:26:35,644 --> 01:26:36,463
+Ne olacak o zaman?
+
+411
+01:26:36,463 --> 01:26:37,863
+Evet.
+
+412
+01:26:38,644 --> 01:26:47,644
+Şöyle diyeceğiz, 0 x 1-2x.
+
+413
+01:26:53,171 --> 01:26:57,072
+Evet, bu sıfırdan başladığı için sıfır küçük bir şey yapmaya gerek yok. x 2x artı 3.
+
+414
+01:27:00,659 --> 01:27:21,199
+1, buralara eşit koyup koyulmanız hiç önemli değil. Hiç önemli değil. 1'den x. Yalnız uç noktada eşit koyamazsınız. 0'da eşit olamaz, 2'de eşit olamaz. Açık aralık olması gerekiyor. Bu da m. Buradan da türev şartlarını, bir noktasında sağdan soldan türevi yaparsınız. Yani f üstü 1 artı.
+
+415
+01:27:23,956 --> 01:27:29,156
+Çünkü sürekli ve türevli olduğuna göre açık aralıkta bu şartlar sağlı bir eksiği.
+
+416
+01:27:29,656 --> 01:27:36,156
+Buradan da m'yi bulursunuz, diğerini de n'i bulursunuz, pardon a'yı b'yi bulursunuz, hepsini bulursunuz arkadaşlar. Geçiyoruz.
+
+417
+01:27:37,536 --> 01:27:44,816
+Peki, bunu da anlattık. Burada ne var? Riemann toplamı. Bir hatırlayalım Riemann toplamları bir daha.
+
+418
+01:27:47,188 --> 01:27:54,728
+Riemann toplamı ne diyor? Alt Riemann'ı sormuş. Alt Riemann'ı sorduğuna göre, hadi bir hatırlatalım, anlatmıştık, bir de anlatıyorum.
+
+419
+01:28:12,148 --> 01:28:31,948
+Evet. Geldik. Şunu çizdik. Tamam, bu grafiğini çizdik. Alt Riemann dediği için şu bölgeye bakalım istersen. Büyük yaparsak daha iyi görürüz. Şuradan bir sıfırdan bire kadar değil mi? Şöyle bir alt Riemann dediği için az alacağız arkadaşlar.
+
+420
+01:28:34,804 --> 01:28:43,064
+Dörtgeni böyle alacağız. Demek ki x'i alacağız. Bunu desem yeterdi. Anlayana dedi ya, anlayana da olsun. Sizi sinek saz olur zaten.
+
+421
+01:28:44,244 --> 01:28:51,123
+Çünkü, peki, bu alt Riemann da bu. Alt Riemann. Aynı azalan olduğu için arkadaşlar, üst Riemann olsaydı,
+
+422
+01:28:53,603 --> 01:28:58,103
+üst Riemann, pardon, Riemann toplamı olsaydı, tamam mı? Riemann toplamı.
+
+423
+01:28:59,103 --> 01:29:01,103
+Üst Riemann toplamı olsaydı da,
+
+424
+01:29:01,524 --> 01:29:04,364
+x i eksi 1'i şunu alacaktım o zaman.
+
+425
+01:29:05,963 --> 01:29:09,144
+Değişik kalem çizersem daha iyi olur mu? Şunu alacaktım.
+
+426
+01:29:10,684 --> 01:29:14,624
+Yani x i eksi 1'i alacaktım arkadaşlar.
+
+427
+01:29:15,484 --> 01:29:17,324
+Tamam mı? Bunu alacaktım.
+
+428
+01:29:18,624 --> 01:29:23,884
+Dörtgen büyük diye düşünecektim. Çünkü azalan artan olmaya göre değişiyor.
+
+429
+01:29:24,787 --> 01:29:26,707
+Peki sildik. Tamam bunu yaptık.
+
+430
+01:29:27,207 --> 01:29:28,667
+Neyi aldık? X'yi aldık değil mi?
+
+431
+01:29:28,787 --> 01:29:30,747
+X'yi aldık. Tamam gerisini artık
+
+432
+01:29:30,747 --> 01:29:32,167
+siliyorum. Anlatabilirim.
+
+433
+01:29:32,987 --> 01:29:33,967
+Niye X'yi aldık?
+
+434
+01:29:35,707 --> 01:29:36,527
+X'yi aldık.
+
+435
+01:29:37,087 --> 01:29:38,787
+Riman dediği zaman neyi alıyoruz?
+
+436
+01:29:40,107 --> 01:29:40,847
+Onu da söyleyeyim.
+
+437
+01:29:41,147 --> 01:29:41,507
+X
+
+438
+01:29:41,507 --> 01:29:44,667
+i her zaman
+
+439
+01:29:44,667 --> 01:29:46,807
+X'yi artan olsun
+
+440
+01:29:46,807 --> 01:29:47,847
+adalan olsun arkadaşlar.
+
+441
+01:29:48,227 --> 01:29:49,907
+X'yi eksi 1 bölü 2 alıyoruz.
+
+442
+01:29:54,292 --> 01:29:55,992
+Yalnız Riemann toplamında
+
+443
+01:29:55,992 --> 01:29:57,552
+Hocam
+
+444
+01:29:57,552 --> 01:29:59,172
+Buyurun.
+
+445
+01:29:59,772 --> 01:30:02,472
+x'i 1 bölü 2 nereden geldi anlayamadım.
+
+446
+01:30:02,811 --> 01:30:04,172
+Orta noktası tamam güzel.
+
+447
+01:30:05,832 --> 01:30:06,912
+Şöyle bir şey var ya.
+
+448
+01:30:07,872 --> 01:30:11,192
+Şimdi mesela şimdi bunun üst toplamı bu değil mi?
+
+449
+01:30:15,252 --> 01:30:16,532
+Bu x'i eksi 1 değil mi?
+
+450
+01:30:18,372 --> 01:30:19,311
+Aynen hocam.
+
+451
+01:30:19,891 --> 01:30:20,672
+Bu x'i değil mi?
+
+452
+01:30:22,532 --> 01:30:23,472
+Ortası nedir?
+
+453
+01:30:26,332 --> 01:30:26,932
+Tamam.
+
+454
+01:30:30,579 --> 01:30:32,699
+Hayır, niye ortasını aldık onu anlayamadım.
+
+455
+01:30:33,699 --> 01:30:36,100
+Altını da almayacağım, üstünü de almayacağım.
+
+456
+01:30:37,219 --> 01:30:42,360
+Bir pazarlık yapıyorsunuz, biri 100 lira diyor, biri 200 lira diyor, hadi ortada anlaşalım diyorsunuz.
+
+457
+01:30:43,699 --> 01:30:44,500
+Anladın mı dediğimi?
+
+458
+01:30:45,440 --> 01:30:47,899
+Yani orta noktası bu değil mi? x ile x eksi 1.
+
+459
+01:30:48,532 --> 01:30:49,712
+Aynen hocam.
+
+460
+01:30:50,192 --> 01:30:57,432
+Tamam, hayır. Bu doğrusu. Ama siz Riemann'da x'e eksi 1 bölü 2 almasanız da, tamam mı? Bunu da bilmiş olmalıyorsam.
+
+461
+01:30:57,891 --> 01:31:05,492
+Yani normalde xc, yani direkt fonksiyona değerini koyuyorsun. xc diye bir değer alıyorlar. xc de fonksiyon üzerindeki değer oluyor.
+
+462
+01:31:06,112 --> 01:31:15,372
+Anlatabiliyor muyum? Yani şunu demek ki, bu aradaki değer Riemann eğer toplamıyla alanı varsa, bu aradaki her nokta olabilir. Yani direkt daha doğrusu.
+
+463
+01:31:15,764 --> 01:31:33,764
+xc dediğim değerde direkt x i de alsanız Riemann toplamı aynen çıkar. Tamam mı? Sonuçta ama teori x i eksi 1 bölü 2 orta noktası. Yani şu, şunu demek istiyorum. Anladın mı? Şuradaki kutudan bahsediyoruz. Biri diyor ki, biri...
+
+464
+01:31:34,579 --> 01:31:59,680
+Bunu al diyor, biri yukarıya al, ben de şuradan olarak ortalama bir, tamam mı? Yani en yaklaşık olarak alıyorum. O da x i ile x i eksi birinin ortası, x i eksi bir bölü 2 yani bunlar eksi bir bölü 2. Tamam bunun ortası olmuyor, tamam mı? Şuna eşit oluyor. Evet, teoride böyle geçiyor ama problem çözerken, bakın internetten falan, Riemann toplamı deyince hep x i alıyorlar, tamam mı? Sonuçta değişmiyor, anlatabiliyor muyum? Zaten konuyla ilgili.
+
+465
+01:32:02,163 --> 01:32:16,384
+Mesela Riemann toplamıyla alan diyorlar. Alan dediği zaman zaten limit de var ya. Riemann toplamı. Direkt x'i alabilirsiniz ama doğrusu şu. x'i eksi 1 bölü 2 alıp şurada yerine koyuyorsunuz. Bak şurada i yerine koyuyorsunuz biliyor musunuz?
+
+466
+01:32:28,212 --> 01:32:51,916
+x i eksi 1, i eksi 1 bölü 2'yi buluyoruz. Burada da x i eksi 1 bölü 2'yi buluyoruz. Burada da yine i yerine koyuyoruz. i eksi 1 bölü
+
+467
+01:32:52,180 --> 01:33:18,239
+2 yazıyoruz. Değişen o. Gerisini koyuyorsunuz. Bak burada mesela sigma toplamı vardı. Sınavda çıktı. Riemann çıktı mı? Çıktı. Ne çıktı şurada? İşte n kare gelmişti. K kare gelmişti. Orada da yazacağınız n çarpı n artı 1 çarpı 2 n artı 1 bölü 6 yazacaktınız. Sonradan 10 saniyede puanı kapacaktınız. Peki, geçiyoruz. Alt toplamı, üst toplamı anlattık biliyorsunuz. İki düzeye girerken. Şimdi final için bir daha anlatıyorum.
+
+468
+01:33:20,500 --> 01:33:24,559
+Sonuç olarak, alana geçtik işte.
+
+469
+01:33:26,220 --> 01:33:29,500
+Delta x dediğimizde b-a bölü m, bu da formülü var.
+
+470
+01:33:29,680 --> 01:33:31,059
+b-a bölü m.
+
+471
+01:33:32,319 --> 01:33:32,720
+Bu b.
+
+472
+01:33:35,319 --> 01:33:36,559
+Bu sabit tamam mı?
+
+473
+01:33:36,600 --> 01:33:39,960
+Delta x değil. Hangisini yaparsanız yapın bu sabit, değişmez.
+
+474
+01:33:41,819 --> 01:33:43,300
+Delta x'i eksi bir değil.
+
+475
+01:33:43,420 --> 01:33:45,539
+Delta x aslında o.
+
+476
+01:33:46,068 --> 01:33:50,307
+Bu da b-a bölü. Yani birden sıfırı çıkartıp n'e bölüyorsunuz.
+
+477
+01:33:50,827 --> 01:33:54,228
+Ha bir de bunu yazacağım. Mesela diyelim ki şunu yazmak istiyoruz değil mi?
+
+478
+01:33:56,688 --> 01:33:58,847
+x'e eksi 1 bölü 2 yazalım hadi burada.
+
+479
+01:33:59,887 --> 01:34:00,128
+O da.
+
+480
+01:34:05,587 --> 01:34:06,647
+tamam yazıyorum bak.
+
+481
+01:34:08,327 --> 01:34:10,287
+a artı formülü yazıyorum.
+
+482
+01:34:10,487 --> 01:34:11,967
+a artı
+
+483
+01:34:11,967 --> 01:34:15,987
+b eksi a bölü en
+
+484
+01:34:15,987 --> 01:34:17,467
+bu delta eksi tamam mı?
+
+485
+01:34:19,667 --> 01:34:20,427
+çarpı
+
+486
+01:34:20,427 --> 01:34:23,427
+i eksi 1 bölü
+
+487
+01:34:23,427 --> 01:34:24,827
+2. Bu da Riemann.
+
+488
+01:34:26,827 --> 01:34:29,087
+Yani alt üst değil. Riemann bu da.
+
+489
+01:34:29,087 --> 01:34:30,487
+Şu yazdım.
+
+490
+01:34:33,108 --> 01:34:36,347
+Yani Riemann'ın altı var, üstü var, bir de ortası var.
+
+491
+01:34:37,307 --> 01:34:39,028
+Burada bunu koyuyorsunuz.
+
+492
+01:34:40,288 --> 01:34:42,327
+Şurada değişen ne oluyor burada indisler?
+
+493
+01:34:42,408 --> 01:34:43,868
+Tabii fonksiyon değişebilir tabii.
+
+494
+01:34:44,608 --> 01:34:47,488
+Burada limiti olduğu için değişmemiş de fonksiyon değişir tabii.
+
+495
+01:34:47,888 --> 01:34:53,228
+Alt Riemann, üst Riemann'la Riemann'ın şeyler değişebilir, n'e bağlı olarak değişikleri.
+
+496
+01:34:53,948 --> 01:34:56,128
+x'i 1 bölü 2 yazıyorsunuz, gerisi işlem.
+
+497
+01:34:57,268 --> 01:34:59,468
+Burada yazayım, bir daha bu soruya bakın sonra arkadaşlar.
+
+498
+01:34:59,572 --> 01:35:25,572
+Bak, bunu silmeyeceğim. Burada da aynı şekilde artan fonksiyonmuş. Artan fonksiyon olduğuna göre, üst riman dediğine göre, artanda x üst rimanda neyi seçeceğim? x i'yi seçeceğim arkadaşlar. x'i eksi 1'i seçmeyeceğim. Evet, bunun x'i eksi 1. Şu ortası da x'i...
+
+499
+01:35:26,195 --> 01:35:54,036
+x eksi 1 bölü 2. Bu Riemann'da bu seçilecek. Üst Riemann, 3 Riemann diyelim. Üst Riemann toplamı, bu da alt Riemann toplamı. Ama alt Riemann toplamı ama fonksiyon artarken böyle oluyor. Yani alt Riemann'da x eksi 1 yazacaksın. Tek bir şey yaptığınız şu x'i de almasın arkadaşlar.
+
+500
+01:35:54,131 --> 01:35:57,811
+Şurada değişiklik oluyor yani. Başka bir yerde değil.
+
+501
+01:35:58,771 --> 01:35:59,011
+Peki.
+
+502
+01:36:01,652 --> 01:36:02,851
+Buna baktık.
+
+503
+01:36:06,387 --> 01:36:30,047
+Evet, bu, şu yok aslında soruda. Bunu türev alıyoruz, tamam mı? Böyle bir şey vermiş. Neyi soruyor? F1'i soruyor galiba, bakalım. F1'i mi soruyor? Neyi soruyor? Bakın. Yok, F1 bölü 2'yi soruyormuş. Bunu soruyormuş. Ben ne yapacağım? Bakıyorum kara kara, düşünüyorum. Soru neymiş? F1 bölü 2. İyi.
+
+504
+01:36:31,572 --> 01:36:35,752
+Ya diyorum bu integral işareti. Yani Lippis formülü. O zaman kosinüsün türevini al.
+
+505
+01:36:35,752 --> 01:36:45,992
+Buraya gelirler bu sınavda y korlar. Teslim olmayın arkadaşlar. Kosinüs y korlarsa ne yazacaksınız buraya yazarken, türevini yazarken?
+
+506
+01:36:46,932 --> 01:36:52,291
+x artı pardon, türevim var. Eksi y üstü çarpı sinüs y değil mi?
+
+507
+01:36:56,083 --> 01:36:59,064
+çarpı f kosinüs y, doğru mu?
+
+508
+01:37:00,663 --> 01:37:03,404
+Aslında da çıkmışım bir deşener, şey hali, daha zor abi.
+
+509
+01:37:03,623 --> 01:37:05,163
+Siz sınadın sonu böyle yazacaksın.
+
+510
+01:37:06,503 --> 01:37:08,423
+Kosinüs y, türevi çarpı y, üstü.
+
+511
+01:37:08,603 --> 01:37:10,724
+Çünkü kapalı fonksiyon ya.
+
+512
+01:37:11,224 --> 01:37:16,203
+Eşittir, 1 bölü, 1 artı x kare diyeceksiniz.
+
+513
+01:37:17,171 --> 01:37:22,811
+Bu andan sonra x'ya değerleri verilmiştir. Orasınız buradan y üstünün işte değerini bulursunuz.
+
+514
+01:37:22,992 --> 01:37:31,111
+Anlatabiliyor muyum? Yani bu y üstünün değeri. Çıkar. Bak bu sorudan soru ürettim. Şuraya kosinüs, si'ye koyduğu zaman durup kalmayın diye.
+
+515
+01:37:31,192 --> 01:37:37,471
+Buraya x eksi kosinüs, si'ye koyarsanız ne olacak? 1 eksi buraya da şey koyacaksınız.
+
+516
+01:37:37,671 --> 01:37:44,391
+f, 1 eksi kosinüs, si'ye deyince. x eksi kosinüs, si'ye deyince. O kadar. Peki.
+
+517
+01:37:46,771 --> 01:37:53,231
+Türev'i aldınız. Aldıktan sonra buranın ne olması istediyordu? 1 bölü 2 2 olması istediyordu.
+
+518
+01:37:53,391 --> 01:38:00,971
+Kosinüsü 1 bölü 2 2 yapan değerleri 1-1 bölü 4 de olur ama burası pozitif değerler demiş.
+
+519
+01:38:01,072 --> 01:38:04,912
+Onun için p bölü 4 alıp tekrar yerine koyduğunuz zaman şu değer çıkar.
+
+520
+01:38:05,031 --> 01:38:06,551
+Arkadaşlar, burada bırakıyorum.
+
+521
+01:38:07,412 --> 01:38:25,311
+kaldığım yerden devam edeceğim. Yarın. Yarın dedi haftaya. Tamam mı? Haftaya, pazartesi, salı görüşürüz. Sorunlarınız var mı arkadaşlar? Takıldığınız bir şey var mı? Evet. Mazeret dilekçelerini işte matematik bölüm sayfasında
+
+522
+01:38:25,876 --> 01:38:32,615
+Onun şeyden giriyorsunuz, akademik bilimlerden. Servis derslerinde yazıyor, mazerete girecek öğrenciler dikkat diye.
+
+523
+01:38:33,115 --> 01:38:40,876
+Orada bir duyuru var, orada diyor ki şu formu doğdurup bölümünüze gönderiniz diyor. Siz de onu beyinde gönderiyorsunuz. Sorun yaşarsanız tabii.
+
+524
+01:38:42,716 --> 01:38:50,496
+Fakat enteresan bir şey var. Genelde mazeret yaşadığını söyleyen öğrenciler,
+
+525
+01:38:51,988 --> 01:38:53,868
+sınavın açıklanmasını beklediler.
+
+526
+01:38:56,208 --> 01:38:57,927
+Anlatabiliyor muyum? O da hayatları sanat.
+
+527
+01:38:58,007 --> 01:39:01,688
+Yani sınav yaşadıysanız, dünü niye beklediniz ki?
+
+528
+01:39:01,788 --> 01:39:03,168
+Daha önceden mesaj yazsaydınız.
+
+529
+01:39:04,248 --> 01:39:05,888
+Bir de böyle şansımı arayalım.
+
+530
+01:39:06,908 --> 01:39:09,288
+Ya bilmiyorum, siz kendi hakkınızı ne ararsanız anlarsın.
+
+531
+01:39:10,488 --> 01:39:12,048
+Yani uyanıklı şeyinize karışmıyorum.
+
+532
+01:39:12,808 --> 01:39:14,587
+Eğer yaparsanız araştırın.
+
+533
+01:39:15,068 --> 01:39:16,028
+Kendi bölümünüze.
+
+534
+01:39:16,532 --> 01:39:26,391
+kendi bölümümüze telefon edin. Orada matematik bölümüne mi, kendi bölümümüze mi mazeret dilekçesini gönderin. Pazartesi günü de sınava girin. Peki, hadi hoşçakalın. Sorunuz yoksa.
+
+535
+01:39:27,092 --> 01:39:28,711
+Görüşmek üzere hocam. Allah'a emanetsin.

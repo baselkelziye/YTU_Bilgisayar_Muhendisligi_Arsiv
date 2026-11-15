@@ -1,0 +1,3975 @@
+1
+00:00:57,363 --> 00:01:24,503
+Günaydın çocuklar. Evet, sonra da girebildim. Biraz sabahları çok yoğun oluyor, zor girebiliyoruz. Açmam zor oldu. Şimdi çocuklar bugün şu kalan kısmı bitireceğim ve uygulamalara başlayacağım. Sınav tarihiniz belli. Değil mi? Kaç yıl, 25'i mi? Cumartesi günü değil mi? Cumartesi, şey cumartesi değil, cuma günü saat.
+
+2
+00:01:25,652 --> 00:01:31,591
+sinüs sınavınız 18-20 arasındaydı. Yanlış hatırlamıyorsam.
+
+3
+00:01:33,111 --> 00:01:36,852
+Yine test olacak, online olacak. Aynı şekilde yine takip edin.
+
+4
+00:01:37,731 --> 00:01:41,412
+Sorun varsa aynı maillere gönderin. Tekrar söylemek istemiyorum.
+
+5
+00:01:43,212 --> 00:01:44,432
+Hocam konular belli miydi?
+
+6
+00:01:44,451 --> 00:01:46,491
+Konular belli oldu. Evet, şey yok.
+
+7
+00:01:49,491 --> 00:01:52,532
+Geçen hafta başladığım alanlardan itibaren yok.
+
+8
+00:01:53,876 --> 00:01:57,876
+şey de yok galiba, bir daha bakacağım da.
+
+9
+00:01:57,876 --> 00:02:04,876
+basit kesinlikle integral de yok galiba, bir daha oraya bakacağım.
+
+10
+00:02:04,876 --> 00:02:05,876
+tamam mı?
+
+11
+00:02:05,876 --> 00:02:10,876
+kısmi integrasyon var, şey var, indirgeme bağıntıları var.
+
+12
+00:02:10,876 --> 00:02:17,876
+ondan sonra kısmi integrasyon, indirgeme bağıntıları, trigonometrik integraller var.
+
+13
+00:02:19,187 --> 00:02:28,667
+Orada bir tane daha bir konu yok da ona bir şey yok diye bakıyorum. Bir dakika ben şurada yine WhatsApp'a bakayım.
+
+14
+00:02:31,367 --> 00:02:44,007
+Bir saniye. 11. hafta demişler, 11. haftanın sonuna kadar demişler. 11. haftanın sonunda programda ne vardı? 12. haftada şey yazıyordu galiba değil mi?
+
+15
+00:02:46,003 --> 00:02:53,263
+basit kesirlere integral, yani şu alana en yakın olan şey konusu yok.
+
+16
+00:02:57,303 --> 00:03:00,963
+Basit kesirlere ayrılma ama ben onu bir ara verip orada bir daha bakacağım.
+
+17
+00:03:01,524 --> 00:03:04,863
+10. hafta da bir yanlışlık yapmak istemiyorum çünkü çok hassas ama şey yok.
+
+18
+00:03:05,323 --> 00:03:10,264
+Alan, hacim, yüzey alanı, yay uzunluğu yok.
+
+19
+00:03:11,955 --> 00:03:36,036
+o hafta onlar yok. Hip hop, bir integral'lar yok. Bugün anlatacaklarım yok. Ama ben dediğim gibi tamam değil ki. Sonra sıradan sonra hemen biliyorsunuz kalan süre içinde de ne yapayım? 2 haftada final uygulaması yapayım.
+
+20
+00:03:36,852 --> 00:03:40,012
+Peki, devam ediyorum. Şu kaldığım üzeri neresiydi? Ona bakmak istiyorum.
+
+21
+00:03:41,651 --> 00:03:43,632
+Alanı anlattım, hacmi anlattım.
+
+22
+00:03:44,991 --> 00:03:46,051
+Siz yine bir kontrol edin.
+
+23
+00:03:50,836 --> 00:03:53,216
+Düzemsel alan şeyleri anlattım.
+
+24
+00:03:55,736 --> 00:03:57,116
+Pul yöntemini falan anlattım.
+
+25
+00:03:57,976 --> 00:03:58,856
+Siz yine bakın.
+
+26
+00:04:01,076 --> 00:04:08,736
+Evet, bakın. Pul yöntemini, yani bunları anlattım diye düşünüyorum. Yanlış mı hatırlıyorum? Siz de takip ediyorsunuz.
+
+27
+00:04:10,736 --> 00:04:12,436
+Kaçın sayfaya kadar gelmiştik?
+
+28
+00:04:16,403 --> 00:04:20,923
+Buradan devam ederim. Fark etmez. Bunu bitireyim. Ondan sonra uygulamalara başlayacağım.
+
+29
+00:04:20,923 --> 00:04:23,483
+Bunu hızlıca devam edeyim arkadaşlar.
+
+30
+00:04:25,884 --> 00:04:28,683
+Şu anlatımı biraz da geriden alabilirim.
+
+31
+00:04:30,483 --> 00:04:32,283
+Evet şuradan ben yine
+
+32
+00:04:33,803 --> 00:04:38,683
+şöyle bir disk yöntemi, pull yöntemi ve ne vardı?
+
+33
+00:04:39,183 --> 00:04:40,983
+Kabuk yöntemi vardı.
+
+34
+00:04:41,779 --> 00:05:08,079
+şöyle kısa bir özet yapmak istiyorum yine. Tamam mı? Şunu bitireyim. Bir yarım saat. Ondan sonra şeyimize bakalım. Evet, tekrar. Yani tüm konuları bitirmiş olayım. Ondan sonra haftaya gerek konu tekrarı, gerekse uygulamaları yapacağım. Sınav haftasında yine ders olur mu olmaz mı bilmiyorum onun için tamam mı? Olmazsa uygulama yapacağız. Eğer ders varsa ders söyleyelim.
+
+35
+00:05:08,596 --> 00:05:36,136
+ikinci haftada bazen ders yapabiliyoruz. Eğer öyle bir şey varsa önümüzdeki haftada uygulama yaparız. 25 Aralık mı bildirmiştim size? Şimdi 15'i salı, 22'si salı, 23 çarşamba, 24 perşem. 25 Aralık'ta saat 18.20 diye bildirdim size. O zaman öyle bir şey olursa zaten eğer o haftada biz ders yapabiliyorsak ben yine uygulama yaparım.
+
+36
+00:05:36,596 --> 00:05:51,195
+Ama ders yoksa yapamam tabii. Evet, şuna disk yöntemi diyorduk. Bildiğimiz bir demir para. Mesela bu y eksen etrafında dönüyor değil mi? Y eksen etrafında dönüyor. Yarı çapı var. Bu silindirin hacmi nedir? Diskin hacmi diyelim.
+
+37
+00:05:52,735 --> 00:06:01,835
+Şu y eksen etrafında döndüğü için yarı çap ne olur? x olur değil mi? x yönünde olur. Kısaca, mesela bu da c'den d'ye.
+
+38
+00:06:06,036 --> 00:06:08,036
+ve süreklik.
+
+39
+00:06:11,220 --> 00:06:13,520
+c'den d'ye
+
+40
+00:06:13,520 --> 00:06:21,620
+x kare d'ye oluyor. Tamam mı? Mesela n etrafına dönerken, y eksenin etrafına dönerken.
+
+41
+00:06:23,280 --> 00:06:27,560
+Yani şekil çizdiğiniz zaman yarı çapının ne önünde olduğunu görüyorsunuz, x yönünde olduğunu görüyorsunuz.
+
+42
+00:06:27,620 --> 00:06:29,520
+Eğer bu risk yöntemi
+
+43
+00:06:29,520 --> 00:06:34,800
+şöyleyse, yani x eksenin etrafında dönüyorsa
+
+44
+00:06:34,800 --> 00:06:37,020
+şöyleyse
+
+45
+00:06:39,028 --> 00:06:43,448
+Dikkat edin, bu da nedir? h dediğimde nedir? d y'dir değil mi?
+
+46
+00:06:44,948 --> 00:06:53,247
+Burada da, dikkat edin, şu, bu sefer yarı çap y'dir.
+
+47
+00:06:55,348 --> 00:07:03,148
+Bu d x'dir yani, paranın yüksekliği d x'dir. O zaman da x eksen etrafına döndüğü zaman ne diyoruz?
+
+48
+00:07:07,252 --> 00:07:09,692
+Nereden nereye kadar? a'dan b'ye kadar.
+
+49
+00:07:11,752 --> 00:07:13,052
+Evet, yine bunu tekrar alayım.
+
+50
+00:07:13,771 --> 00:07:16,432
+Evet, a'dan b'ye ne diyoruz?
+
+51
+00:07:18,112 --> 00:07:22,151
+x kare, şey y kare özür dilerim, dx diyoruz.
+
+52
+00:07:22,432 --> 00:07:22,951
+Demek ki,
+
+53
+00:07:23,360 --> 00:07:25,920
+Disk yönteminde hangi şeye göre
+
+54
+00:07:25,920 --> 00:07:28,000
+eksene göre integri ediyorsak
+
+55
+00:07:28,000 --> 00:07:29,620
+eksen de ne olacak?
+
+56
+00:07:29,759 --> 00:07:31,100
+Ona göre olacak değil mi?
+
+57
+00:07:31,400 --> 00:07:32,480
+İntegral da ona göre olacak.
+
+58
+00:07:32,600 --> 00:07:34,060
+Y eksenin etrafındaysa dy.
+
+59
+00:07:34,259 --> 00:07:35,360
+Yani y'ye göre bir integral.
+
+60
+00:07:35,520 --> 00:07:37,580
+Bunu fy diye yazacağız.
+
+61
+00:07:37,860 --> 00:07:39,680
+Yani fy cinsinden yazacağız bunu.
+
+62
+00:07:40,780 --> 00:07:41,280
+Bunu da
+
+63
+00:07:41,280 --> 00:07:42,960
+fx cinsinden yazacağız.
+
+64
+00:07:43,100 --> 00:07:44,020
+Burası dx olacak.
+
+65
+00:07:45,139 --> 00:07:45,639
+Bu disk.
+
+66
+00:07:47,028 --> 00:08:13,327
+Bunu sirdik. Anlattığım şeyleri bir anlatıyorum tekrar. Tamam mı? Bu finale dedik. Sakın bunu bize için düşünmeyin. Yani bu anlatacağım bu şey son üçüncü kısımda tamamen hariç. Üç tane pdf dosyası anlattım ya size. Bu üçüncü hafta başlamış. Bu altın sayfası. Bunu bitireceğim. Bu hariç. Sınava dahil değil. Ondan öncekilerde de basit kesim integrali dahil değil.
+
+67
+00:08:14,836 --> 00:08:39,836
+Bir de şeyler dahil değil. x eşittir sinüs t, x eşittir kosinüs t, x eşittir tanjant t, tamam mı? Hani kare kökünü dışına çıkartan şeyler vardı ya, onların da dahil olmadığını var diyorum ama bir arada bir daha bakarım, tamam mı? Yani bir ara terafiste. Ondan sonra şey, en son rekürans bağıntıları dahil. O 11. haftanın son konusu. Ya kısaca bana...
+
+68
+00:08:40,192 --> 00:08:47,412
+Siz kendiniz Bologda sayfasına girin, Bologda sayfasına girin, 11. haftanın sonuna kadar.
+
+69
+00:08:48,091 --> 00:08:54,172
+Mat 10.71'e bakın, orada zaten göreceksiniz tamam mı? Bologda sayfasına lisans yazıyor.
+
+70
+00:08:54,251 --> 00:08:56,991
+Lisanstan girdiğiniz zaman, kendi bölümünüze girdiniz.
+
+71
+00:08:57,632 --> 00:08:59,192
+Orada birinci...
+
+72
+00:09:00,500 --> 00:09:26,120
+yılın birinci semestrinde mat 171 mat. Baktınız, tıkladınız, şey çıkıyor, program. Programda 11 haftalık sonu. Tamam mı? Ben öyle bildireyim, bitireyim orayı. Öyle bildirdiler. Eskiden şu konu bu konu diyorlardı. O pur diyor ki, Bologna sayfasına girin bana gelen yazıda, cep telefonda. Bologna sayfasında 11. haftanın sonuna kadar sınava dahi diyor. Yani orada 12, 13, 14'te
+
+73
+00:09:26,515 --> 00:09:32,915
+finale eklenecek. Anlatabiliyor muyum? Ben yine şunu öğrendim. Son konuları ağırlıklı çalışın arkadaşlar.
+
+74
+00:09:32,915 --> 00:09:40,596
+Yani maksimum, minimumdan ve o dahil olmak üzere. En son rekürans bağıntılarına kadar dikkatli.
+
+75
+00:09:40,596 --> 00:09:48,276
+Rekürans bağıntılarında çalışın arkadaşlar, tamam mı? Mesela end'in bağıntı vardı ya, onları da bağlı.
+
+76
+00:09:48,276 --> 00:09:52,635
+Ondan sonra kısmi integrasyon, değişken dönüşümü, bunlar hepsi de var.
+
+77
+00:09:53,364 --> 00:09:59,964
+İntegrasyon tablosu, İntegrasyon formülleri, Riemann toplamları, tamam mı? Var.
+
+78
+00:10:01,104 --> 00:10:04,303
+Maksimum minimum. Ama baştan itibaren olduğu da söylemiş olayım.
+
+79
+00:10:04,844 --> 00:10:11,043
+Peki, yeter bu kadar. Şimdi diski anlattık. Diski dolu paradır. Bir de eskiden 2,5 kuruşlar vardı.
+
+80
+00:10:11,803 --> 00:10:18,183
+Tabii benim de çocukluğumu hatırladığım için. O zaman size hiç alakası olmayan bir tarihten bahsediyorum.
+
+81
+00:10:18,264 --> 00:10:19,144
+2,5 kuruş şuydu.
+
+82
+00:10:21,076 --> 00:10:47,076
+böyle demir 2,5 kuruşlar vardı. Biz o 2,5 kuruşu giderdik. Bakkaldan 5 lira fındık alırdık küçükken. Fındık o zaman taneyle satılıyordu. Evet, şöyle bir demir halka yani. Tam güzel çizeyim, bunu güzel çizemedim. Şöyle. İçi boş. Burada tabii disk ama diskin içi boş. Tamam buralar dolu.
+
+83
+00:10:47,923 --> 00:10:49,483
+Bunun hacminden bahsediyor.
+
+84
+00:10:50,423 --> 00:10:55,103
+Diyelim ki bu şöyle y ekseni etrafında dönüyor değil mi?
+
+85
+00:10:56,663 --> 00:11:02,743
+Şu x1, büyük olan da x2, y cilsinden tamam mı?
+
+86
+00:11:03,563 --> 00:11:05,743
+Yükseklikte dy olsun tamam mı?
+
+87
+00:11:07,023 --> 00:11:07,923
+Yani iki tane...
+
+88
+00:11:09,235 --> 00:11:22,536
+diski çıkartacağım, pul olacak mesela. y eksenin etrafında aynı, diskle aynı şekilde işlem görüyor. y'ye göre olduğuna göre integral y'ye göre olacak. D var çünkü. Bu da x2 kare, x1 kare.
+
+89
+00:11:26,004 --> 00:11:53,964
+Evet, burası pi. Bu da c'den d'ye. Yani ne olmuş oluyor? İki tane pulun, iki tane diskin farkı oluyor. İki diski birbirine çıkartırsak, boşluğu çıkartırsak, şöyle halka gibi bir şey değil. Buna şey deniyor, böyle conta deniyor mesela. Tüplere takılır da böyle conta sıkı, şey yapsın diye, hava kaçırılmasın diye. Conta bildiğimiz. Peki, eğer bu...
+
+90
+00:11:54,484 --> 00:11:55,124
+keza
+
+91
+00:11:55,124 --> 00:11:59,563
+x 80 etrafına dönüyorsa da
+
+92
+00:11:59,563 --> 00:12:00,683
+bu halka
+
+93
+00:12:04,148 --> 00:12:25,708
+şöyle, şöyle tamam mı? Olduğu zaman da, x eksen etrafında olduğu zaman da, pi, bu sefer, bu dx olur. Şu bölgede, şuradaki arasında, y2 kare eksi y1 kare olur. Bunları anlattığım için çok düz bir tekrar yapıyorum.
+
+94
+00:12:27,708 --> 00:12:30,088
+dx olur. Peki, devam edelim.
+
+95
+00:12:31,316 --> 00:12:35,716
+Bu da bize x cinsinden x eksinin etrafına dönmesini verir.
+
+96
+00:12:36,256 --> 00:12:44,656
+En sonunda sindrik kabuğa geldiğimiz zaman da bildiğimiz kabukta da şu formül geçerli.
+
+97
+00:12:47,656 --> 00:12:49,276
+Şu formül genelde şöyle.
+
+98
+00:12:54,156 --> 00:12:54,876
+2P
+
+99
+00:12:54,876 --> 00:12:58,156
+kabuk
+
+100
+00:12:58,580 --> 00:13:20,300
+yarı çapı, yarı çapı, çarpı, kabuk, yüksekliği. Bu yükseklik, buradaki yarı çapı. Tamam mı? Dx veya dy, o değişiyor çünkü. Tamam mı? Dx, dy, 1 geliyor. Tamam mı? Bu mantık bu.
+
+101
+00:13:20,947 --> 00:13:47,167
+Bunun da dönme eksenine uzaklığı yarı çapı oluyor. Dönme, hangi eksen varsa bunları anlatmıştım arkadaşlar. Kabuk yarı çapına uzaklık. Bu da kabuğun yüksekliği oluyor. 2p. Nereden geliyor? Bunu şu üçüncü söyleyeceğim. Dx olduğuna göre, Dx olursa y eksenin etrafında oluyor, ters oluyor. Dye olursa x eksenin etrafında. Diyeceksin ki nasıl olacağım? Şöyle.
+
+102
+00:13:48,436 --> 00:13:52,115
+Mesela der ki, şöyle bir kabuk var.
+
+103
+00:13:55,860 --> 00:13:59,060
+Bu böyle sarılmış sarılmış, ne gibi sarılmış?
+
+104
+00:13:59,860 --> 00:14:06,860
+Diyelim ki mutlakta kullandığımız streçler var değil mi? Veya alüminyum folyolar var.
+
+105
+00:14:07,260 --> 00:14:09,460
+Ne olmuş? İşte aynı buna örnek.
+
+106
+00:14:09,460 --> 00:14:13,660
+Böyle değil mi? Alüminyum folyolar sarılmış sarılmış sarılmış böyle sonsuz tane.
+
+107
+00:14:14,660 --> 00:14:20,260
+İşte burada baktığım zaman x ekseni etrafında döndüğü zaman dönme ekseni nedir? Bakın.
+
+108
+00:14:20,660 --> 00:14:23,260
+Gördünüz mü? Dönme ekseni bu. x ekseni.
+
+109
+00:14:23,731 --> 00:14:25,652
+yarı çap bu. yarı çap ne oluyor?
+
+110
+00:14:32,659 --> 00:14:34,439
+Şimdi bu x'in etrafında dönüyor.
+
+111
+00:14:36,740 --> 00:14:38,919
+x'in etrafında dönüyor.
+
+112
+00:14:41,339 --> 00:14:43,159
+Kabuğun yüksekliği nedir?
+
+113
+00:14:43,939 --> 00:14:44,439
+Kabuğun
+
+114
+00:14:44,439 --> 00:14:46,600
+yüksekliği
+
+115
+00:14:46,600 --> 00:14:48,019
+dy'dir, değil mi?
+
+116
+00:14:50,439 --> 00:14:52,360
+Kabuğun yüksekliği dy'dir.
+
+117
+00:14:53,179 --> 00:14:54,139
+dy, pardon.
+
+118
+00:14:54,360 --> 00:14:55,399
+Yüksekliği dy değil.
+
+119
+00:14:57,399 --> 00:14:58,559
+Bir dakika.
+
+120
+00:14:59,475 --> 00:15:02,676
+x 80'in etrafında çeviriyoruz, 2 pi'miz var.
+
+121
+00:15:05,016 --> 00:15:10,615
+İsterseniz bunu bir daha şöyle, şu bir ruloyu açtığım zaman şöyle bir şey görürüm.
+
+122
+00:15:12,436 --> 00:15:13,176
+Ne görürüm?
+
+123
+00:15:17,524 --> 00:15:43,683
+Şurada bir dy var değil mi? Şu kabuğu kalınlığı bu. Ondan sonra şurada ne var? 2py var. Doğru mu? Yarı çapı yedi ya. Buraya da yazıyorum 2py. Evet. Burası 2py. Yükseklik de.
+
+124
+00:15:44,403 --> 00:16:10,403
+x olur. Değil mi? Bu kabuğun yüksekliği de x olur. x dy olur. Eğer x 80'i etrafında çeviriyorsak, bu olur. Ama şu formüller ikisi de geçerli oluyor. 2px'i. Yalnız şunu düşüneceğiz. dy olduğu zaman burada x'i f'ye eşit şeklinde değerini koyacağız. Eğer y olursa da
+
+125
+00:16:11,796 --> 00:16:19,635
+2p, x, y diyeceğim. dx olacak bu sefer. y eksen etrafında döndüğü zaman da.
+
+126
+00:16:20,755 --> 00:16:27,255
+Tamam mı? Dönme eksenine uzaklığı yine bu sefer değişecek. Bu sefer x olacak.
+
+127
+00:16:27,716 --> 00:16:32,676
+Yükseklik y olacak. Dolayısıyla da integral x'e göre olacak diye bir özetlemek istiyorum.
+
+128
+00:16:33,296 --> 00:16:38,816
+Ama dediğim gibi şimdi anlattıklarımız olursanız önemli değil. O kadar çok kabuk falan çözeceğiz ki sizden uygulamada.
+
+129
+00:16:39,251 --> 00:16:41,871
+Onlar da bırakın finale kalsın 2 hafta. Tamam mı?
+
+130
+00:16:44,511 --> 00:16:50,051
+2 hafta süre var finale hazırlanmak için. Rahat rahat bunları yaparız.
+
+131
+00:16:50,391 --> 00:16:56,311
+Belediye ihtiyaçlar, basit kesirler filan. Tekrar size bırakıyorum. Siz Bologna'dan bakın.
+
+132
+00:16:57,111 --> 00:17:02,291
+Söyleyeceğim net bilgi bana öyle geldi. 11. haftanın sonuna kadar. Ben programa bakmadım.
+
+133
+00:17:02,803 --> 00:17:13,663
+programın 12. haftanın sonu, hatırladığım kadarıyla söylüyorum. 12. haftada basit kesirler falan vardı. Demek ki o yok. Alan hacimler var, o da yok. Peki.
+
+134
+00:17:21,811 --> 00:17:23,011
+Beni duyuyorsunuz değil mi?
+
+135
+00:17:25,951 --> 00:17:30,192
+Bu ekran niye çıktı?
+
+136
+00:17:32,051 --> 00:17:35,592
+Bir sorun yok değil mi? Ekranda değişik şeyler gördüm de.
+
+137
+00:17:36,451 --> 00:17:36,871
+Yok hocam.
+
+138
+00:17:37,311 --> 00:17:38,891
+Tamam, tamam. Devam ediyorum.
+
+139
+00:17:39,931 --> 00:17:41,431
+Tekrar geçiyorum artık buradan.
+
+140
+00:17:42,511 --> 00:17:47,092
+İşte disk yöntemi x80'in etrafında çevirse pi y kare de x.
+
+141
+00:17:47,271 --> 00:17:48,132
+Formülleri burada.
+
+142
+00:17:48,596 --> 00:18:13,695
+geçtik. Pull yönteminde 2 tane görüyorsunuz değil mi? 2 tane diskin farkı oluyor. 2 kere diski uyguluyorum, farkı oluyor. Bir de şunu söyleyeyim tekrar. Geçen hafta bunları söylemiştim. Pull ile yaparken disk olmaz. Aynı soru hem pull hem disk olmaz. Soru böyleyse bunun diski olmaz. Çünkü arada boşluk var. Tamam mı? Ama kabuk olabilir.
+
+143
+00:18:14,612 --> 00:18:40,292
+Ama her soru kabukta çözülmeye edebilir. Neden biliyor musun? Şekil mesela öyle bir şeydir ki bir soru x eksenin etrafında döndüğü zaman bir kapalı cisim oluşur. Fakat enteresandır. Aynı bölgeyi y eksen etrafında çevirin. Katlanır. Hacim oluşmaz. O zaman ne deriz? Hacim oluşmaz. O zaman şey deriz.
+
+144
+00:18:40,880 --> 00:18:53,660
+O soru onunla çözülmez. Onun için şekli gözünde bir hayali olarak o şekilde çevirin. Evet, baktık x eşitli, y, y eşitli, f, y eşitli, c, y eşitli arasındaki hacim y eksene tarafında çevrilse hacim bu oluyor. Devam ediyorum.
+
+145
+00:18:55,620 --> 00:18:56,180
+Buradan
+
+146
+00:18:56,180 --> 00:18:59,460
+baktık, bunu çözdüm.
+
+147
+00:19:00,120 --> 00:19:00,940
+Devam ediyorum.
+
+148
+00:19:03,460 --> 00:19:04,520
+Bu da mesela
+
+149
+00:19:06,804 --> 00:19:28,724
+Şimdi bakın y eşitçeği bu aradaki kısım ne diyor? y eksene tarafında çevrilirse de bu sefer yine disk olur. Çünkü şurası boş arkadaşlar. Şu kısım nedir? Boş. Eğer dönme ekseninde bir boşluk kalıyorsa puldur. Puldur. İçi boş olan iki tane yani şöyle bir şey diyelim.
+
+150
+00:19:38,996 --> 00:19:57,536
+benzin varilleri var diyelim. Şurası demir kısmı var. Şurası boş. O demirin hacmi dendiği zaman tamam mı? Böyle böyledir. Ona ne deriz biz? Pool yöntemi deriz. Peki. Devam ediyorum şimdi hızla. Soru var. Şekli çizmişiz.
+
+151
+00:20:00,000 --> 00:20:15,900
+x etrafında çevirirse hacim, tabii ki bu nedir? x 80 etrafında dolu kısımdır hepsi. Dolayısıyla bunun pulu olmaz. Bu zaten iki şeyle çözülebilir. Size böyle şartsız verdiyse ne yapabilirsiniz? İster kabukla çözebilirsiniz, isterseniz neyle çözebilirsiniz?
+
+152
+00:20:24,596 --> 00:20:28,596
+Şöyle topaça benzeyen bir cismin hacmi çıkmış. Tamam mı? Bu şekilde.
+
+153
+00:20:29,796 --> 00:20:32,895
+Tabii dikkat ederseniz yarı çap nedir? Y'dir.
+
+154
+00:20:33,836 --> 00:20:34,535
+İşte y kare.
+
+155
+00:20:36,455 --> 00:20:42,796
+Tamam mı? Şu burada bir silindir gibi düşünürsek tabii değil mi? Burası da dx'dir değil mi?
+
+156
+00:20:42,796 --> 00:20:47,576
+Her bir diskin kalınlığı dx olduğuna y kare dx'dir.
+
+157
+00:20:47,859 --> 00:20:54,339
+uzatmıyorum tekrar. Şu anda çok fazla bunu uzatarak. Tamam mı? Sınava doğru. Yalnız şöyle bitmek istiyorum.
+
+158
+00:20:55,039 --> 00:20:59,299
+Baktık, yeştir kök x. Yine. Ha, şunu pulla yapsak ne olurdu?
+
+159
+00:21:01,139 --> 00:21:03,920
+Şey, kabukla yapsak ne olurdu? Pulla yapamayız ama.
+
+160
+00:21:04,720 --> 00:21:08,279
+Kabukla yaptığın zaman da şöyle bir dışında bir kabuk düşünelim.
+
+161
+00:21:10,039 --> 00:21:13,799
+Kabuğun yükseliği y yerinde olduğu için tam x eksenin etrafında.
+
+162
+00:21:15,220 --> 00:21:19,000
+d'ye geliyor buraya.
+
+163
+00:21:20,140 --> 00:21:22,960
+d'ye geldiği için de şu sınırı bilmem lazım.
+
+164
+00:21:23,500 --> 00:21:25,500
+x'e 4 korsam, şurası 2 yapıyor.
+
+165
+00:21:26,680 --> 00:21:29,120
+y'nin sınırları sıfırdan 2'ye, 2 pi.
+
+166
+00:21:29,940 --> 00:21:33,300
+Yarı çapı nedir? Kabuk yarı çapı. Kabuk yarı çapı y'dir, değil mi?
+
+167
+00:21:33,300 --> 00:21:33,440
+y.
+
+168
+00:21:35,140 --> 00:21:36,880
+Yükseklik nedir? x'dir.
+
+169
+00:21:37,660 --> 00:21:39,940
+Tabii ki x'in de ne cinsine eşitliğini yazacağız.
+
+170
+00:21:40,500 --> 00:21:48,320
+y cinsinden eşitliğini yapacağız. Böyle de yaparsak yine ne çıkacak çocuklar? 8 pi çıkacak. Bu da silindirik kabuktur.
+
+171
+00:21:49,740 --> 00:21:58,660
+Dediğim gibi en zor bunlar olduğu için ben daha sonraki uygulamada, fren uygulamasında bunu iyice size yedirip en zor şeyleri de yüzde yüz garantiletip böyle tamam mı?
+
+172
+00:21:58,660 --> 00:22:02,340
+Frenin de başarı ile gitmenizi sağlamak istiyorum. Devam ediyoruz.
+
+173
+00:22:02,860 --> 00:22:06,440
+Y eşitir 1 demek, ye eşitir 1 demek çocuklar.
+
+174
+00:22:07,028 --> 00:22:29,028
+x ekseni demektir. x ekseni gibi mantıkla demektir. Mantığı x ekseni. Çünkü y eşittir 1 ile y eşittir 0 aynı doğru değil mi? Paralar doğrular. Dolayısıyla y eşittir 1 etrafında döndüğüne göre yine şey oluyor, pul oluyor tabii. Çünkü arada dolu. Burada eşiti var. Bu yüzden durmak istemiyorum. Geldik.
+
+175
+00:22:33,587 --> 00:22:36,607
+Evet, bir dakika ayıracağım.
+
+176
+00:24:15,635 --> 00:24:17,395
+Evet, devam ediyorum çocuklar.
+
+177
+00:24:18,776 --> 00:24:22,316
+Dedik işte yeşte 1 ekseni demek. Şurayı düşüneceksiniz.
+
+178
+00:24:23,276 --> 00:24:29,036
+Yarı çap nedir? Yarı çap şuradaki değil mi? Şuradaki sütun.
+
+179
+00:24:30,576 --> 00:24:31,516
+Çünkü böyle dönüyor ya.
+
+180
+00:24:32,675 --> 00:24:37,695
+Yani o da x eksene kadar değil de bire kadar olduğu için kök x eksi 1 ile gösteriliyor ye.
+
+181
+00:24:38,963 --> 00:25:02,124
+x'in değişimi tabii x80 oldu. 1'den 4'e kadar yazdık, bulduk. Bunu mesela kabukla da yapabilirdik. Nasıl yapabilirim? Kabukla yapalım hadi. Biraz zor deneyelim. Kabukla şöyle. Şimdi şöyle çevirdik. Yarı çap Y yazalım.
+
+182
+00:25:04,339 --> 00:25:31,839
+kabuk şu x dönme eksenine uzaklık y değil mi? y ama ne olacak burası? Şimdi şu mesafe ne olacak? y eksi 1 olacak doğru mu? 2 pi var. 2 pi nereden var? O silindirin kabuğunu açtığımız zaman hani şimdi silindir vardır ya mantık şu arkadaşlar bazısı vardır ezberleyemez mantık. Bunun kabuğunu yapmıyoruz. Dış yüzeyinin şey yüzey alanı nedir?
+
+183
+00:25:32,596 --> 00:25:57,935
+2pire değildir. 2pire. H ile de çarparsam, değil mi? Neyi buldurum? O kabuğun hacmini buldurum. Doğru mu? 2pire, 2pire, pardon. Silindirin yanar yüzeyin alanını buldurum. Bir de dx veya dy ile çarparak hacmi oluştururum. Olay bu. Mantığını anlayalım. Tekrarlığa tekrarlığa beyninizi yıkayıp bunu öğreteceğim tabii sonra.
+
+184
+00:25:58,355 --> 00:26:03,035
+Devam ettik. Yazalım. Kabuk yarı çapı nedir? y-1.
+
+185
+00:26:07,763 --> 00:26:08,883
+Yükseklik de
+
+186
+00:26:08,883 --> 00:26:11,723
+şurasıdır. O da
+
+187
+00:26:11,723 --> 00:26:13,023
+4-x
+
+188
+00:26:13,023 --> 00:26:15,423
+şey
+
+189
+00:26:15,423 --> 00:26:17,223
+pardon burası
+
+190
+00:26:17,223 --> 00:26:19,023
+y-1 dedik.
+
+191
+00:26:19,903 --> 00:26:20,603
+Burası nedir?
+
+192
+00:26:21,523 --> 00:26:22,163
+4-x
+
+193
+00:26:22,163 --> 00:26:25,223
+x. x'e ne yazacağım?
+
+194
+00:26:25,583 --> 00:26:27,243
+y kare tamam mı?
+
+195
+00:26:27,243 --> 00:26:28,943
+Çünkü y c'sine yazacağız. d y.
+
+196
+00:26:29,323 --> 00:26:31,583
+Neden? x eksen etrafında çevirince
+
+197
+00:26:31,583 --> 00:26:33,603
+integralı y'ye göre yazıyoruz. Bu da birden
+
+198
+00:26:34,067 --> 00:26:40,468
+ne olacak? Şurayı 4 korsam 2'ye kadar. Şu integral dağıtlar arkadaşlar. Yine yeni pibörü alt çıkar.
+
+199
+00:26:41,968 --> 00:26:50,188
+Bu da kabukla. Neden biliyor musunuz? Sıraplarda çoğunlukla değil, ben mesela özellikle final sınavlarında
+
+200
+00:26:51,092 --> 00:27:11,412
+Yani bu hacimsiz, ben hiçbir soru görmedim yani. Ama açıkça belirtiyorlar, diyorlar ki integral hesaplamayın 7,6'ya kadar ama en azından çok da testte uygun, integralı yaz diyorlar, burada bıraktırtıyorlar yani çoğunlukla, çoğunlukla. Bunu sorma da olabilir. Yani bunu soruyorlar veya kabukla yaptığımız gibi demin işte y kareli bir şey yazmıştım ya, onu yazın bırakın diyorlar.
+
+201
+00:27:11,955 --> 00:27:19,995
+Dolayısıyla onun yazılışında kopya herhangi bir yerden test etme şansınız da olmuyor. Bilmezseniz yapamıyorsunuz. İlk devam bir durum arkadaşlar.
+
+202
+00:27:21,995 --> 00:27:23,695
+Evet, bunu yazdık.
+
+203
+00:27:24,435 --> 00:27:25,215
+Ne diyor?
+
+204
+00:27:26,055 --> 00:27:29,795
+y'ştir 1 ile 4 arasında çevrilirse ne olur? Bu disk olur. Geçiyorum.
+
+205
+00:27:31,095 --> 00:27:35,235
+x'ştir 3 etrafında diyor. Tamam mı? x'ştir 3 etrafında çevrilirse hacim.
+
+206
+00:27:36,495 --> 00:27:38,995
+Şu 3 etrafında olduğu için ne olacaktır yine?
+
+207
+00:27:39,551 --> 00:28:02,091
+değil mi? Yine disk olacaktır. Tabi burada yarı çap ne olacaktır mesela? İşte yaptık. 3 eksi nedir? 3 eksi y kare artı 1. Bu da 2 eksi y kare olacaktır.
+
+208
+00:28:03,091 --> 00:28:04,551
+Şurada olduğu gibi değil mi?
+
+209
+00:28:06,324 --> 00:28:07,264
+devam ediyorum.
+
+210
+00:28:11,859 --> 00:28:20,259
+Evet, burada da yine x eksen etrafında çevrilirse, bu tabi x eksen etrafında çevrilince disk enterörü yöntemi olacak.
+
+211
+00:28:20,779 --> 00:28:29,199
+2 tane şey, pardon kabuk olacak, şey kabuk diyorum, pul olacak ve 2 tane diskin farkı olacak. Geçiyorum.
+
+212
+00:28:30,439 --> 00:28:34,199
+Ya x eksen etrafında çevrilirse hacı, ne olduğunu söylüyorum.
+
+213
+00:28:36,199 --> 00:28:36,799
+Baktık.
+
+214
+00:28:38,516 --> 00:29:06,056
+Şimdi y eşitir x kare bu, y eşitir 2x var. Bu y eksenin etrafında çevrilse tabii ki pul oluyor. İntegrada y'ye göre oluyor. Evet, sindrik kabuklarla söyledik. Evet, baktık mesela burada bunu söylemiş. Kabuk yarı çapı, kabuk yüksekliği diye. Ama böyle bir formül yazmak daha iyi. Kabuk yarı çapı nereye kadar oluyor? İşte dönme eksenine uzaklık oluyor. Kabuk yüksekliği de bölgedeki şeyden yazıyorsunuz.
+
+215
+00:29:06,804 --> 00:29:09,504
+y eksen tarafında olduğu için integral x'e göre olmuş.
+
+216
+00:29:11,423 --> 00:29:12,604
+Bunları geçiyorum.
+
+217
+00:29:17,644 --> 00:29:21,524
+Gerçi hep ben yükseklik bulunca iş halloluyor. Tamam mı? Buna baktık.
+
+218
+00:29:22,524 --> 00:29:26,224
+x eksen tarafında dönerse bakalım nasıl bir şekil çıkar.
+
+219
+00:29:28,948 --> 00:29:53,847
+Evet, kabuk yarı çapı mesela x eksenin etrafında dönüyor. Kabuk yarı çapı x eksenin olan uzaklığı veriyor. Dönme ekseni olan x eksenin uzaklığı oluyor. O da ne oluyor? Şu iki tane y'nin farkı yani y2-y1 geliyor. Yükseklikte de burası geliyor. Yükseklikte direkt x2-x1 oluyor. Yani uzatmadan.
+
+220
+00:29:56,980 --> 00:30:21,980
+Şunu yazabiliyoruz. Baktık. Tekrar aynı şeyler. Burada net olarak sonradan var zaten değil mi? y ekseni etrafında çevirmesiyle orucu adım denliğine göre y ekseni etrafında döndüğüne göre kabuk yarı çapı y ekseni etrafında dönüyor ya kabuk şöyle y ekseni etrafında döndüğü için kabuk yarı çapı.
+
+221
+00:30:24,819 --> 00:30:51,720
+x oluyor. Şurası x. Tamam. Yarı çap x'tir direkt. O bölgenin nedir? Bakın. Yarı çap x'tir değil mi? Yani. Şu x, şurası. Yükseklikte şu iki tane arasındaki y2-y1. Bu da y2-y1 geliyor burada. Tamam. O da. Sıfır davuşu kesim noktası 1'e kadar yaparsak 2 pi'yi biliyorsunuz. Silindirin yan yüzeye alandan geliyordu.
+
+222
+00:30:53,044 --> 00:30:54,943
+Peki bu da böylece halloldu.
+
+223
+00:30:58,004 --> 00:31:03,464
+Tabi o uygulama yaptığımız zaman yine buradaki sorular da zamanımız kalsa tekrar bunları bir daha çözer.
+
+224
+00:31:05,104 --> 00:31:11,403
+Bu da öyle. y eksen etrafında çevrilmesiyle kabuk yarı çapı y eksen etrafında olduğu için x'tir.
+
+225
+00:31:12,948 --> 00:31:17,928
+y'de x kare bölü 4 artı 1'den sıfırı çıkartırsak bu kalır.
+
+226
+00:31:18,347 --> 00:31:24,968
+Gerisi, şu şey çok önemli, yarı çapla yükseklik, yayı uzunluğu dediğimiz zamanda çocuklar,
+
+227
+00:31:26,667 --> 00:31:31,788
+buradan, mesela buraya kadar belli sınır veriyorlar, başlangıç bitim noktaları veriyorlar.
+
+228
+00:31:33,788 --> 00:31:36,887
+Burada önemli olan şu, nedir onu söyleyeyim.
+
+229
+00:31:37,887 --> 00:31:39,367
+Evet, önemli olan,
+
+230
+00:31:41,460 --> 00:31:51,360
+şu formülü mesela x'e göre integre ederken şunu bilmek gerekiyor. x1'den x2'ye, yay uzunluğu x1'den x2'ye kadar.
+
+231
+00:31:53,020 --> 00:31:58,980
+Bir tek formülü var. Kolaydır. Böyle çıkarsa, sakın tamamlayın yani bir tere soru garanti değil.
+
+232
+00:32:00,020 --> 00:32:02,500
+Yay uzunluğu çıktığı zaman şu formülü yazıyorsunuz.
+
+233
+00:32:04,680 --> 00:32:07,500
+Ama y'eştir fx diye eğiliverilirse tabii.
+
+234
+00:32:08,115 --> 00:32:15,375
+hep şöyle x'e göre verilmişse ama x eşit reflüğe verilirse de şu formülleri unutmayacağız.
+
+235
+00:32:18,536 --> 00:32:35,036
+Evet, geçtik. x eşit reflüğe verilirse de o zaman da yay uzunluğu y1'den y2'ye kare kök 1 artı şey, birisi yanlış, x yazdım.
+
+236
+00:32:37,811 --> 00:32:39,011
+1 artı
+
+237
+00:32:39,011 --> 00:32:42,291
+x üstü kare
+
+238
+00:32:46,867 --> 00:33:13,087
+d'ye olur. Tamam. Çarpı. Evet, d'ye olur. Bu, evet, y'ye bir sığırdan y'ye ikiye kadar. Bu da eğer fonksiyon böyle x eşit refye şeklinde verilirse, iki tane formülü var. Mesela en kolay bir örnek olarak nedir? Bizim merak ettiğimiz bir çember vardır, değil mi? Çemberin çevresini bulmak istiyoruz, değil mi? Onu bir uygulama olarak yapmak istiyorum. Burada yok ama.
+
+239
+00:33:13,811 --> 00:33:18,371
+eğer 100'e ders olsaydı soruya 10 ile başlardım ben.
+
+240
+00:33:19,891 --> 00:33:22,571
+Çemberin çevresini herkes biliyor 2p'le diye.
+
+241
+00:33:23,692 --> 00:33:24,071
+Doğru mu?
+
+242
+00:33:24,851 --> 00:33:26,251
+2p'le diye herkes biliyor.
+
+243
+00:33:27,291 --> 00:33:29,051
+Çemberin çevresi nedir? 2p'le.
+
+244
+00:33:29,211 --> 00:33:30,791
+Bu 2p'le ispatlayalım.
+
+245
+00:33:32,471 --> 00:33:33,571
+Şöyle bir fonksiyonu alalım.
+
+246
+00:33:36,980 --> 00:33:42,559
+Bu nedir? y eşittir. Şu R olsun tamam mı? Bu da x R olsun.
+
+247
+00:33:46,067 --> 00:33:48,528
+Şu formülü uzat bulmak isteyelim. Bu da
+
+248
+00:33:48,528 --> 00:33:52,847
+1-x kare nedir? Bu çember deklamı değil mi?
+
+249
+00:33:54,008 --> 00:33:57,268
+Yani diyeceksiniz x kare artı y kare işte, R kare yapalım. Burası da R kare.
+
+250
+00:34:00,147 --> 00:34:01,887
+Evet, bunun türevini alalım.
+
+251
+00:34:03,067 --> 00:34:03,647
+Türev de
+
+252
+00:34:03,647 --> 00:34:05,768
+x r bölü
+
+253
+00:34:05,768 --> 00:34:11,248
+2r, eksi 2r bölü, eksi 2x bölü falan.
+
+254
+00:34:11,248 --> 00:34:12,307
+Eksi 2x bölü.
+
+255
+00:34:13,684 --> 00:34:18,164
+kare kök, x 2x bölü, birer yok.
+
+256
+00:34:20,864 --> 00:34:22,324
+E kare eksi x kare.
+
+257
+00:34:23,664 --> 00:34:28,404
+Türevini aldık. İçinin türevi eksi 2x, böyle iki tane, ikiler gider.
+
+258
+00:34:29,624 --> 00:34:32,084
+Sonra, of, deminki formülü yerine koyduk.
+
+259
+00:34:32,724 --> 00:34:36,164
+Eksi R'den artı D'ye dedik, tamam mı? Eksi R'den artı D'ye.
+
+260
+00:34:37,544 --> 00:34:39,544
+Kare kök, 1 artı
+
+261
+00:34:41,172 --> 00:34:42,827
+türevin karesi
+
+262
+00:34:48,659 --> 00:34:49,260
+buradan
+
+263
+00:34:49,260 --> 00:34:51,980
+dx
+
+264
+00:34:51,980 --> 00:34:55,139
+ondan sonra dx
+
+265
+00:34:55,139 --> 00:34:55,539
+dedik.
+
+266
+00:34:57,399 --> 00:34:57,800
+Yani
+
+267
+00:34:57,800 --> 00:35:01,920
+eksi r'den
+
+268
+00:35:01,920 --> 00:35:03,739
+r'ye kadar
+
+269
+00:35:03,739 --> 00:35:07,420
+x bölü
+
+270
+00:35:07,420 --> 00:35:10,880
+şey x'e gider pardon
+
+271
+00:35:10,880 --> 00:35:13,680
+r'yi de dışarı çıkartalım arkadaşlar.
+
+272
+00:35:13,680 --> 00:35:14,519
+r bölü
+
+273
+00:35:16,659 --> 00:35:17,699
+ne kalır burada?
+
+274
+00:35:25,715 --> 00:35:26,715
+x bölü
+
+275
+00:35:30,132 --> 00:35:33,471
+kare kök, R kare eksi x kare.
+
+276
+00:35:37,364 --> 00:35:41,443
+Şimdi tabi chatlere bakmadım. Bir dakika bakayım neler var, ne mesajlar var.
+
+277
+00:35:45,235 --> 00:35:47,795
+hacim hesabı hariç değil, alan hesabı da yok.
+
+278
+00:35:52,916 --> 00:35:55,256
+rasyonel kesirler yok.
+
+279
+00:35:58,376 --> 00:36:00,376
+Rasyonel kesirler yok çocuklar.
+
+280
+00:36:01,036 --> 00:36:04,115
+Yani basit kesim integrali var ya hani böyle şey yapıyoruz, o yok.
+
+281
+00:36:05,456 --> 00:36:13,296
+Ben, şeyler yok yani bu belirli, yani alan, hacim, yüzey alanı, yay uzunluğu, infropi integraller yok.
+
+282
+00:36:14,756 --> 00:36:15,436
+Şeye kadar.
+
+283
+00:36:16,115 --> 00:36:36,155
+Diyorum ya, Bologna diye girersiniz internet sayfasından. Bologna yazıyor ya uygulamalarda. Bologna'ya girin, kendi bölümünüzün şeyinde, Bologna sayfasında, lisansta şey var, Mat 1'e bakın, orada 11 tane haftanın sonuna kadar, tamam mı? Oraya bakarsınız arkadaşlar, internete girmeye gidiyorsunuz.
+
+284
+00:36:36,155 --> 00:36:43,175
+Bana da öyle geldiği için şu anda, ama ben de hatırladığım kadarıyla, 11. haftanın sonunda şey vardı diye hatırlıyorum.
+
+285
+00:36:44,724 --> 00:36:59,564
+şeyler dahil, yani indirgeme bağıntıları dahil, kısmi integrasyon dahil, tamam mı? Trigonometrik integraller dahil, ondan sonra. Ne kalıyor geriye? Basit kesirler kalıyor.
+
+286
+00:37:00,083 --> 00:37:26,563
+Bir de şey yok, ben size bırakıyorum arkadaşlar. Şu anda yanlış yapmaz şeyden çekinelim. Bakın trigonometrik dönüşümler vardır ya, x eşittir sinüsle, x eşittir sekantle, x eşittir tanjantle. Bir de basit kesirler. Bu ikisi yok diye net olmaz. Size bırakarak onu söylüyorum. Bakın neler yok o zaman sınava? Basit kesirler integralleri, yani rasyonel kesirler integralleri 1. Sonra
+
+287
+00:37:27,155 --> 00:37:39,036
+belirli integral, yani belirli integral değil de pardon, uygulamalarından yani, uygulamalarından, alan, hacim, yüzey alanı, yay uzunluğu ve impropri integraller yok. Onlar yok.
+
+288
+00:37:39,036 --> 00:37:48,755
+Ama yarın da dersim var, yarın ben tekrar bir netleştirdim ama yani bir hatam var. Hatam olduğunu zannetmiyorum şu anda. Yani şeyin olmazlığını hatırlıyorum yani.
+
+289
+00:37:48,755 --> 00:37:51,956
+Basit kesilerin integralıyla.
+
+290
+00:37:52,148 --> 00:37:56,307
+trigonometrik integral başka, trigonometrik dönüşümler başka. Karıştırmayın.
+
+291
+00:37:57,108 --> 00:38:01,048
+Trigonometrik dönüşümler deyince normal integral trigonometrik değil.
+
+292
+00:38:01,248 --> 00:38:05,588
+Kare kökten çıkartmak için sinüs t kullanıyorsunuz, tanjant t kullanıyorsunuz, sekant t.
+
+293
+00:38:05,688 --> 00:38:08,728
+Bunların da olmamasını altın. Çünkü 12. haftanın konusuydu.
+
+294
+00:38:09,608 --> 00:38:13,688
+Ama yine tekrar yarın netleştiririz. Başka soru var mı? Bakıyorum.
+
+295
+00:38:14,488 --> 00:38:18,928
+Evet, bakıyorum. Sınavda hacim yok dedik. Evet.
+
+296
+00:38:20,436 --> 00:38:22,856
+Yine bir sorunuz varsa yazın oraya arkadaşlar.
+
+297
+00:38:23,016 --> 00:38:23,876
+Baktım sorularınıza.
+
+298
+00:38:24,596 --> 00:38:26,155
+Burada şu çıktı.
+
+299
+00:38:26,296 --> 00:38:27,336
+Devam ediyorum arkadaşlar.
+
+300
+00:38:29,936 --> 00:38:30,496
+Şu.
+
+301
+00:38:34,996 --> 00:38:44,896
+Şuradan da R çarpı aksinüs, aksinüs x bölü R.
+
+302
+00:38:46,896 --> 00:38:49,635
+Yalnız kısmi integrasyonlar var yani.
+
+303
+00:38:50,096 --> 00:38:54,175
+Trigonometrik integraller var mesela sekant çarpı tangant vesaire vesaire.
+
+304
+00:38:54,483 --> 00:39:00,804
+trigonometrik bütün integreller var. Trigonometrik deyince, ben buraya not alayım da, birisi de çıkıp da hocam yanıttınız demeyin.
+
+305
+00:39:01,244 --> 00:39:10,664
+Trigonometrik integral başka, trigonometrik dönüşümler başka. Trigonometrik dönüşümler dediğimiz sekant, tanjant, bir de sinüs dönüşümleri var karaköfü yok açmak için.
+
+306
+00:39:10,664 --> 00:39:21,123
+Bunlar yok diye biliyorum ama düzeltirim. Önemli değil. Eğer şu anda yanlış anlatıyorsam, meyinde düzeltme hakkım var. Şu andaki düzeltmezsem demek ki doğru söyledim.
+
+307
+00:39:21,492 --> 00:39:44,572
+Neler yok o zaman? Bir son toparlayalım yeni gelen arkadaşlara. Trigonometrik integreller var ama trigonometrik dönüşümler yok. Trigonometrik integral demek direkt integralız, sinüs, sekant, kosinüs, bunlar var. Öyle değil. Bir de başka bir şey var. Dx'e x kare eksi 4. Ama biz burada diyelim x eşitir 2 sekant d dönüşümü uyguluyoruz. Bu yok.
+
+308
+00:39:45,331 --> 00:40:06,391
+Başka basit kesim integrali var. Hani yok pardon. Basit kesim integralleri yani nedir? Hani vardı ya a bölü x eksi 1 artı b bölü x eksi işte neyse yazıyorduk. Payda eşit diyorduk. A, b'leri buluyorduk. Bu da yok. Bir de alan, hacim, yüzey alanı, yay uzunluğu ve improbile integral.
+
+309
+00:40:06,931 --> 00:40:20,231
+alan 1, hacim 2, yüzey alanı 3, yay yüzünden 4, improper 5. Bu yok. Basit kesirler 6, 7 de trigonometrik dönüşümler. O kadar. 7'in konudu, bütün konular var.
+
+310
+00:40:21,251 --> 00:40:30,971
+Dedik, açığa kavuşturduk. Yine kafanıza takılan sorun, ben bakıyorum. Evet, R koyduk. Buradan da arksinüs 1P bölü 2.
+
+311
+00:40:36,884 --> 00:40:44,492
+x kare artı 2x, f'
+
+312
+00:40:48,659 --> 00:41:13,387
+Buradan ne çıktı? Bir de 2 olacak bu integralın başında. Neden biliyor musunuz? 2'yi unutmuşuz arkadaşlar. Şu 2 var işte. Çünkü buradan bir de 2 var dışında. Niye 2 var biliyor musunuz? Biz buradan buraya kadar hesapladık. Bir de burası var. Yani x r'den artı r'ye kadar dersek burayı hesaplamış oluruz. Bir de...
+
+313
+00:41:13,940 --> 00:41:19,260
+burası var. Dolayısıyla 2 de olacak. Şurada 2 de olduğu zaman burası 2 pi r çıkar arkadaşlar.
+
+314
+00:41:22,940 --> 00:41:26,980
+Evet, çemberin uzunluğunu da yaptık. Devam ediyorum arkadaşlar.
+
+315
+00:41:30,100 --> 00:41:32,240
+Bugün anlattıklarım yok. Onu söyleyeyim.
+
+316
+00:41:40,179 --> 00:41:49,679
+Bugün uygulamam var tabi, uygulamaya geçeceğim biraz sonra arkadaşlar. Bu dersi burada bir şey yapayım ya. Bugün dersler, bugün anlattığım konu yok ama uygulamalar var.
+
+317
+00:41:53,876 --> 00:41:54,676
+devam ediyorum.
+
+318
+00:41:55,516 --> 00:41:57,796
+Hocam bu pdf'den herhangi bir şey çıkacak mısın?
+
+319
+00:41:58,276 --> 00:41:58,956
+Anlamadım.
+
+320
+00:41:59,416 --> 00:42:01,936
+Bu pdf'den, bu işlediğimiz pdf'den.
+
+321
+00:42:02,396 --> 00:42:03,576
+Yok, hiç çıkmayacağım.
+
+322
+00:42:03,956 --> 00:42:04,496
+Tamamdır.
+
+323
+00:42:04,596 --> 00:42:09,036
+Bu pdf'den yok. Bu pdf zaten biraz sonra teneffüste, bunu elveda diyoruz.
+
+324
+00:42:09,536 --> 00:42:14,136
+Bununla ilgili uygulamaları, ikinci vizeden sonra 2 hafta kalıyor ya, 13-14. hafta.
+
+325
+00:42:14,136 --> 00:42:18,576
+Hep 2 hafta final uygulaması yapacağım, orada çözeceğim. Bunlardan çıkmayacak.
+
+326
+00:42:19,096 --> 00:42:21,136
+Hatta geçen pdf'den de...
+
+327
+00:42:21,748 --> 00:42:22,848
+eksikler var.
+
+328
+00:42:24,648 --> 00:42:26,628
+Netleştirdim mi? Yani o da ne eksik var?
+
+329
+00:42:27,368 --> 00:42:32,668
+Basit kesimin integrali, bir de trigonometrik dönüşümler yok.
+
+330
+00:42:33,448 --> 00:42:36,108
+Trigonometrik denklemler değil, trigonometrik integral değil.
+
+331
+00:42:36,608 --> 00:42:40,188
+Trigonometri kullanarak, dönüştürerek çözme diye bir şey var.
+
+332
+00:42:40,307 --> 00:42:42,588
+Sinüs'te, ne var? 3 tane var değil mi?
+
+333
+00:42:42,588 --> 00:42:43,768
+Sinüs'te, sekante.
+
+334
+00:42:44,596 --> 00:42:45,655
+Anlatabiliyor muyum? Bu var.
+
+335
+00:42:46,915 --> 00:42:50,615
+Tanjant x bölü 2 dönüşümü dahil. Onu söyleyeyim. Yanlış anlamayın.
+
+336
+00:42:51,895 --> 00:42:53,835
+Tanjant x bölü 2 dahil. Tamam mı?
+
+337
+00:42:55,655 --> 00:42:58,516
+Hani vardı ya orada bir şey var. Onlar da dahil.
+
+338
+00:42:58,995 --> 00:43:03,335
+O trigonometrik şey, trigonometrik integralı çözmek için o tanjant x bölü 2.
+
+339
+00:43:04,175 --> 00:43:07,315
+O da karışacaktı şimdi söylemesi. Tanjant x bölü 2 dahil.
+
+340
+00:43:07,315 --> 00:43:11,635
+Ama sinüs t, sekant t ve tanjant t hariç.
+
+341
+00:43:11,952 --> 00:43:13,952
+Bir de basit kesirler hariç.
+
+342
+00:43:14,752 --> 00:43:18,352
+Bir de ondan sonra gördüğümüz şekilli sorular var. Onlar hariç.
+
+343
+00:43:18,352 --> 00:43:21,552
+Peki devam etti mi? Y ay uzunluğu anladık. Geçiyorum.
+
+344
+00:43:21,552 --> 00:43:24,352
+Formüllerini çıkartıyor. Bakarız bundan sonra.
+
+345
+00:43:24,352 --> 00:43:26,352
+Formüllerini de şey yapmaya gerekli.
+
+346
+00:43:26,352 --> 00:43:32,352
+Böyle olunca x'e göre bu şekilde, eğer fonksiyon y'ye göre belirse bu şekilde dedik. Devam ediyorum.
+
+347
+00:43:33,552 --> 00:43:37,152
+Bunları çok kolay diyebilirim. Direkt basitçe integral ediyorsunuz.
+
+348
+00:43:37,460 --> 00:43:48,500
+Sınırlar da belli zaten. Türev alıyorsunuz. Yerine koyup sadeleştiriyorsunuz. Çok basit. Buradan da öyle mesela fonksiyon verilmiş ki türev aldık. Sıfırdan 2'ye integre edelim. Geçtik. Bu da tamam.
+
+349
+00:43:50,159 --> 00:44:01,419
+Bu ters fonksiyon. Ha şurada da önemli bir şey var. Bakın. Sıfırdan 2'ye integre ederken maalesef türevde x yerine 0 koyamıyoruz.
+
+350
+00:44:02,195 --> 00:44:09,375
+Bakın, türevde ne yapamıyoruz? x'e 0 koyamıyoruz. Dolayısıyla olmuyor. O zaman ne yapıyoruz biliyor musunuz? Şunu yapıyoruz.
+
+351
+00:44:11,076 --> 00:44:18,895
+Şunu x'i yalnız bırakıyoruz, y'e cilsinden. Tamam mı? x 0 iken y de 0'dır tabii. Bu sefer ne yapıyoruz?
+
+352
+00:44:20,355 --> 00:44:24,215
+Ters fonksiyon diye yazıp buna göre integral ediyoruz, mecburen.
+
+353
+00:44:24,639 --> 00:44:30,639
+Böyle de bir şey var. Döner yüzeyleri alalım. Burada neden hızlı geçiyorum? Formül var. Ondan sonrası bir olma.
+
+354
+00:44:30,639 --> 00:44:36,639
+Formülde de, şuraya kadarki yay uzunluğunda vardı çocuklar.
+
+355
+00:44:36,639 --> 00:44:43,639
+Ne bileyim, şu vardı değil mi? 1 artı yavisi kare. Burada ne geliyor? 2 pi'ye geliyor. Tamam mı?
+
+356
+00:44:44,820 --> 00:44:53,059
+Eğer bu olmasaydı ya yuzun ne olurdu? 2x'ye de geldiğinde için döner yüzeyin alanı oluyor. Döner yüzeyi ne demek? Onu bir söylemek istiyorum.
+
+357
+00:44:53,059 --> 00:44:57,300
+Döner yüzey, şimdi bu pdf bitir böyle ara vereceğim ki yok.
+
+358
+00:44:57,300 --> 00:45:02,820
+Evet, baktık. Döner yüzeyin alanı. Devam ediyorum.
+
+359
+00:45:23,668 --> 00:45:24,388
+var.
+
+360
+00:45:48,340 --> 00:46:14,200
+Evet, geldik döner yüzeyin alanları dedik, bunu yazdık. Formüldür, yapacak bir şey yok tabii. Yok, formül var. Bu formülü yazacaksınız. Şu formülü mesela. Evet, bu da ters fonksiyon olarak verilirse. Bak, bu da önemli. Eğer x seçtir, g, y şeklinde verilirse ve y eksen etrafında sormuşsa, buraya o zaman x şarpı 1 artı x üstü y, d, y diye geliyor. İki tane formülü var. Sadece formülü de yerine koy.
+
+361
+00:46:14,996 --> 00:46:28,096
+Burada mesela x seçtirip 1-e, y'ye, y'yi sınırlar edermiş. O zaman x verilmiş. Bunun türevi nedir x üstü? Eksi 1'dir. Burada yerine koy. Bunlar sonra çözdüğümüz zaman hoşunuza da gider.
+
+362
+00:46:29,036 --> 00:46:40,876
+Buna baktık. Böyle bir fonksiyon var. x1 ile 5 arasında. xx'in etrafında dönüyor. Burada y var. Burada da y üstüklere var. Tamam bak. Dikkat et gerisi sadece türev al yerine koy yani.
+
+363
+00:46:41,492 --> 00:47:03,792
+Evet, bu son kısmlar çok kolay. Genelleştirilmiş integrallere geliyoruz çocuklar. O da şu. Bunu bir anlatmak istiyorum. Allah'tan ki sınava dair değil tabii. Çok örnek çözmek lazım. Şimdi bakıyoruz. Zamanında matematiçiler hep mesela 3'ten 5'e kadar almışlar. Demişler ki ya mesela eksi sonsuz var. 3 var. Bu belirli integral değil.
+
+364
+00:47:06,992 --> 00:47:08,872
+Şu an bu belirli integral değil.
+
+365
+00:47:10,387 --> 00:47:34,907
+Hani şöyle bir çağrışım yaparsam, zamanında mesela x kare eşittir, eksi 1 geldiği zaman, değil mi? Ne diyorlarmış? Bunun çözümü boş küm ediyorlarmış, değil mi? Eğer birisi çıkıp demeseymiş, tamam mı? Yani bu ya eksi 1'e hadi şey diyelim ya, tamam, i kare diyelim demişler, değil mi? Mesela karmaşık sayılarda. i kare diyelim demişler.
+
+366
+00:47:35,795 --> 00:48:00,435
+Ondan sonra damar asistent yapmışlar. Bu i kare denmez. Yani karmaşık sayıları ortaya çıkartmış. Kök eksi bire iyi demişler ve bütün elektrik, melektrik. Demek ki bunu demeseydik şu anda evimizde elektrik yoktu. Elektrik aletleri diye bir şey yoktu. Çünkü karmaşık sayılar. Bu elektrik, elektronik mühendisleri çok iyi bilirler. Değil mi? Bütün devrelerde olmazsa olmaz.
+
+367
+00:48:01,811 --> 00:48:27,172
+her şeyde var bu tamam mı? Serp, indikatör, yani her şeyde bu i sayısı geçiyor. Allah'tan birisi yıkaya demiş tamam mı? Demese orada kalmıştı matematik kalmıştı. Bunun gibi burada da demişler ki ya bu belirli integral değil, birisi ne yapmış biliyor musunuz? Hokus fokus yapmış. Nasıl?
+
+368
+00:48:28,788 --> 00:48:30,788
+Ya demiş, bu integralı şöyle yazayım.
+
+369
+00:48:34,127 --> 00:48:36,127
+B eşit, direkt sonsuza giderken demiş.
+
+370
+00:48:39,539 --> 00:48:40,579
+hokus pokus.
+
+371
+00:48:42,039 --> 00:48:44,019
+Şimdi bu integral ne oldu çocuklar?
+
+372
+00:48:47,179 --> 00:48:49,879
+Belirli oldu değil mi? Bakın, bize bir limit koyduk başına.
+
+373
+00:48:51,939 --> 00:48:53,959
+Buraya baktık, sonsuz gören var mı şurada?
+
+374
+00:48:54,675 --> 00:49:08,715
+B'ye bakmayın, limite. Burada belirsizlik gören var mı? Yok. Bu ne yapmış? Ben demiş bunu hesaplarım, belirli olarak. Sonra limit uygularım demiş. İşte bu tür sınırlarda sonsuz, x sonsuz varsa buna biz ne diyoruz?
+
+375
+00:49:09,364 --> 00:49:27,784
+Birinci tip improper integral diyoruz. Birinci tip genelleştirilmiş integral diyoruz. Genelleştirilmişler. Yani çözülmeyen integral de çözülür hale getirmişler. Ama buna rağmen sonucu sonsuz çıkarsa raksak olur. Çözümü yoktur. Ama bunun sonucu x3, x5 gibi de olabiliyor. Devam ediyorum.
+
+376
+00:49:28,532 --> 00:49:40,952
+İşte bu. Yani birinci bir integral. Limitle bak. Mesela sıfırdan sonsuza, A'dan sonsuza giden bir integralı gelmiş. R sonsuza giderken A'dan R'ye demiş. İşte bitirmiş sonraki o kadar. Devam edelim.
+
+377
+00:49:41,592 --> 00:49:55,852
+x sonsuzdan A'ya olursa, x sonsuzdan A'ya da limite saklamış x sonsuzdan. Şunu çözdükten sonra limit almış. Siz eğer mesela sınavda böyle improporu görmerseniz, limit yazmadan soruyu çözerseniz doğru da çıksa olmaz. Sıfır alırsınız.
+
+378
+00:49:56,532 --> 00:50:19,132
+yazmak zorundasınız. Bu da teste çok uygun sorular olabiliyor. Şu yazılışlar var. R'e sütüken yani tamam mı? Siz de onu çok iyi bileceksiniz. Eğer x-sonsu arasında olduysa arada bir C noktası düşüneceksiniz. İki parçaya böleceksiniz. Bir x-sonsu'dan C'ye bir de C'den sonsuza parçalama şansımız var. İki tane limit yazdınız. İntegre bir kitabı limitini aldınız. Sonra bitti.
+
+379
+00:50:20,692 --> 00:50:28,451
+Evet, her iki durumda da limit sonucu sonluysa, z-prop integral yakasaktır. Sonuç sonsuz çıkıyorsa, ıraksaktır, onu da söyleyelim.
+
+380
+00:50:29,251 --> 00:50:38,891
+İkinci tipi, pop integralde, bakıyorum mesela soruya, eksi birden bire kadar 1 bölü x neyiz?
+
+381
+00:50:41,471 --> 00:50:47,371
+Bunu böyle, elen x dedik, neyse, eksi bire artı 1 dedik, neyse, tamam mı?
+
+382
+00:50:48,179 --> 00:50:49,179
+Böyle dedik.
+
+383
+00:50:50,820 --> 00:50:57,099
+Sonucu bulduk diyelim, atıyorum. Sıfırı da aldık, değil mi? Yanlış. Niye? Niye yanlış yaptığımız?
+
+384
+00:50:57,800 --> 00:51:01,000
+Çünkü dalgınlık yaptık. Neden dalgınlık yaptık?
+
+385
+00:51:03,619 --> 00:51:06,059
+Burada bir belirsizlik var çünkü. Nedir o?
+
+386
+00:51:06,940 --> 00:51:12,079
+Eksi 1'den artı 1'e, 1 bölü x dediğimiz zaman bu fonksiyon,
+
+387
+00:51:13,492 --> 00:51:23,392
+x 1 ile 1 arasında, 0 da nedir? Sonsuz. Olmaz. Improper. Bu da ikinci türü improper. Şu da ikinci türü improper.
+
+388
+00:51:24,032 --> 00:51:38,952
+Improper. x 1'den bire kadar, 1 bölü x artı 1. Bakın alt sınırda, x yerine x 1 şey, üst, pardon evet, x 1 koyduğum zaman, ne oluyor? Sonsuz oluyor. Veya şu da improper.
+
+389
+00:51:40,244 --> 00:51:41,923
+x'i birden bire kadar
+
+390
+00:51:41,923 --> 00:51:46,864
+dx bölü x'i eksi bir. Bu da üst sınırda improper.
+
+391
+00:51:48,403 --> 00:51:50,123
+Bunlar ikinci tür improperlar.
+
+392
+00:51:50,724 --> 00:51:52,043
+Hatta bunu çoğaltabiliriz.
+
+393
+00:51:54,244 --> 00:52:01,123
+Improper demek işte o uçlarda ve arada bir ve birçok değerde sonsuz oluyorsa buna improper diyeceğiz.
+
+394
+00:52:01,503 --> 00:52:06,403
+Çözümü nedir onu söyleyeceğim ve zaten bütün dersimizin de son konusu bu oluyor.
+
+395
+00:52:06,931 --> 00:52:29,631
+Ondan sonra bir ara vereceğim çocuklar. Ondan sonra başlayıp yarın da hep ikinci vizeye dönükler. Bunlardan sonra çözmeyeceğim tabii. Bir de şöyle olabilir mesela. Eksi 2'den 2'ye kadar mesela örnek olarak veriyorum. Bu da değil mi? Bakın f1 sonsuz değil mi? Ara değer.
+
+396
+00:52:35,027 --> 00:52:35,747
+sonsuz.
+
+397
+00:52:36,947 --> 00:52:38,587
+O zaman diyoruz ki,
+
+398
+00:52:39,527 --> 00:52:44,167
+düşünün, bir yerde ne yaparız? Bir yerde çatlak varsa orayı ne yaparız?
+
+399
+00:52:44,807 --> 00:52:46,527
+Sıvarız, yapıştırırız değil mi?
+
+400
+00:52:46,967 --> 00:52:48,307
+Mesela buralarda çatlak var.
+
+401
+00:52:48,747 --> 00:52:50,727
+Mesela bunu çöderken diyelim, şöyle yaparız.
+
+402
+00:52:51,307 --> 00:52:51,687
+Demit.
+
+403
+00:52:55,188 --> 00:53:20,387
+h sıfıra giderken mesela, x'i 2'den, x'i 1'de çatlak var ya, x'i 1 aşağı kadar gelirim. Tamam mı? Anlatabiliyor muyum? Bu iş, senin yazmak istemiyorum. Tamam, yazdım. Denk değil. Bakın, ne oldu? x'i 1 çünkü tehlikede. x'i 1 korsam sonuç oluyor. Ama x'i 1'in azıcık yaklaştı men sonuna, orası sonlu bir değer. Bunu hesaplarım, artı derim.
+
+404
+00:53:20,980 --> 00:53:26,699
+bir daha limit yazarım. Tamam mı? Bir şeyden yazmak istemiyorum. Sonra o x'i birden atlattık.
+
+405
+00:53:28,659 --> 00:53:44,480
+Orada çukur var. İlerisinden geçtik. Nereye kadar gittik? 1-aşa kadar gittik. Değil mi? İçsek bunun hepsini değil mi? O tek bir şey yazabiliriz. 1-aşa. Çünkü birde de şatlak var. Oraya da bir şey yaptık. Sonra
+
+406
+00:53:46,068 --> 00:53:57,068
+Tekrar yazdık, bir daha. Tek limitli de yazabiliriz. Ondan sonra 1 artı h'tan ne yaparız? Devam ettiririz. Nereye kadar? 2'ye kadar.
+
+407
+00:53:57,868 --> 00:54:03,347
+Böyle bunu sonsuz yapan değerlerde ne yaparız? Atlatmış oluruz.
+
+408
+00:54:04,108 --> 00:54:08,428
+Tabii bunun uygulamasını çözeriz. Bir şey değil. Bir limit koyuyoruz. Bu konu bir şey değil.
+
+409
+00:54:08,820 --> 00:54:25,500
+Yani en son konu, improper korkutması. İntegranın başına bir limit yazınca bu konu bitmiş oluyor. Sonsuzlarda sonsuza gider bir limit. Burada da sonsuz yapan x değerlerinde h ile bir düzeltme yapıyoruz. Devam ediyorum çocuklar.
+
+410
+00:54:27,668 --> 00:54:49,448
+Mesela diyor ki, fx, a, b'de sürekli, b'de süreksiz. O zaman ne yapıyoruz? Ben bu yazılışı sevmiyorum arkadaşlar. Teorik olarak yazılıyor da ben bunu yerine yazarım. Düzgün yazmak varken limit h sıfıra giderken derim a'dan c eksi h'a kadar derim ya c noktasını atlatırım işte.
+
+411
+00:54:52,179 --> 00:54:58,899
+x'e kadar. İşte ben b'ye kadar integre ettim mi? Etmedim. Nereye kadar ettim? b'ye kadar.
+
+412
+00:54:58,899 --> 00:55:04,179
+O zaman şeylik kalktı değil mi? Sürekli olmuyor. b'ye kadar sürekli.
+
+413
+00:55:04,179 --> 00:55:11,579
+Epsilon kadar yakında sürekli. Bir tek 10 noktada sürekli. Bunu böyle yazarım, hesaplarım işte yani.
+
+414
+00:55:11,579 --> 00:55:17,179
+Şu yazılış, tabii teorik bir yazılış. Şu yazdığım daha açık.
+
+415
+00:55:19,284 --> 00:55:20,044
+geldik.
+
+416
+00:55:22,604 --> 00:55:23,804
+Buna baktık.
+
+417
+00:55:23,903 --> 00:55:26,804
+A, A ile B'de, C'de süreksizmiş.
+
+418
+00:55:28,684 --> 00:55:30,164
+Arada süreksizmiş.
+
+419
+00:55:31,004 --> 00:55:33,344
+O zaman ben nasıl çözerim bunu?
+
+420
+00:55:33,924 --> 00:55:34,204
+Arada.
+
+421
+00:55:35,424 --> 00:55:36,164
+Limit.
+
+422
+00:55:39,104 --> 00:55:41,144
+H sıfıra giderken derim.
+
+423
+00:55:42,804 --> 00:55:43,364
+A'dan
+
+424
+00:55:43,364 --> 00:55:45,604
+C eksi H'a kadar.
+
+425
+00:55:47,123 --> 00:56:09,344
+artı derim. İçine integral yazarım tabii. c artı h'dan b'ye kadar. İşte buyurun. Değil mi? fc var mı burada? Yok değil mi? fc'yi atlattım. Süreksiz olduğu noktaya atlattım. Yani sonsuz, ya çok küçük kadar, ya sonuna geldim, çok küçük kadar sağdan devam ettim. Bitti. Bu kadar. Devam ediyorum.
+
+426
+00:56:13,012 --> 00:56:35,772
+Mesela bir fonksiyon var. Böyle bir fonksiyon. Birden sonsuza kadar alan hesaplayalım diyor mesela. Alanı hesapladık. Yani bunun integralını alacağız. Ne yaptım arkadaşlar? Bu konunun farkı ne? Sonsuzu sakladım değil mi? R sonsuza kadar gitti dedim. Gerisini değişken dönüşümünü de çözdüm. En sonunda limit aldım. Anlatacağım bir şey yok.
+
+427
+00:56:36,211 --> 00:56:44,971
+Limit alacağım en sonunda. Yazdık. Ne çıkmış sonuç? 1 çıkmış. Tamam bak biliyorsun. Sınırlarda sonsuz vardı ama alanı real bir sayı çıktı. Devam ediyoruz.
+
+428
+00:56:56,179 --> 00:57:07,179
+Bu x sonsuzdan artı sonsuzluğu olduğu için, ne bileyim, sıfırı yazarız ki değer koyması çok kolay olur. Arkadaşlar, sıfırı koymak çok kolay. Önce x sonsuzdan sıfıra, sıfırdan sonsuzluğu yapar.
+
+429
+00:57:07,179 --> 00:57:16,179
+Çövarım. Sonra birinci türden impropil integral olduğu için de x sonsuzdan koyarak bunu yapar. Sonra da artı sonsuzluğu yazarak bunu çözerim.
+
+430
+00:57:16,179 --> 00:57:20,179
+Bittikten sonra da limit değerini yazarım ve cevap çıkar.
+
+431
+00:57:24,596 --> 00:57:33,175
+Mesela burada bir noktası tehlikeli değil mi? Oraya hemen Japon yapıştırıcıyla yapıştıralım. Nasıl yapıyorum? Bu şekilde yapmıyorum tabii ben.
+
+432
+00:57:33,995 --> 00:57:41,556
+c 1- diyoruz. Yani 1- aşı kafada diyor. Fark etmez. Böyle yazabiliriz. Ben olsa ne yapardım?
+
+433
+00:57:44,615 --> 00:57:48,175
+Bir noktasına göre yani buraya 1- aşı derdim.
+
+434
+00:57:50,867 --> 00:58:12,208
+Tamam, buradan da 1 artı h'dan devam ettirirdim. Kaça kadar? 3'e kadar. Böyle yapardım yani. Ve h'da nereye giderdi? Limit de 0'a giderdi sonuçta. Ben böyle çözerdim arkadaşlar. Tamam mı? Bu şekilde çözerdim. İçine de integralini yazardım. Burada çözüm var zaten.
+
+435
+00:58:13,208 --> 00:58:14,268
+Hocam teslim geliyor mu?
+
+436
+00:58:14,672 --> 00:58:15,491
+Evet, buyurun.
+
+437
+00:58:16,092 --> 00:58:21,172
+1-h yazdınız, diğerine 1 artı h yazdınız. Neden öyle yazdınız, onu anlayamadım.
+
+438
+00:58:21,172 --> 00:58:25,891
+Çünkü bir noktası, tamam güzel, bir noktası da sonsuz olmuyor mu?
+
+439
+00:58:26,152 --> 00:58:26,471
+Aynen.
+
+440
+00:58:27,051 --> 00:58:31,511
+Sen bir noktasına basarsan, orada Japon yapıştırıcısı var, ayağın yapışıyor mu?
+
+441
+00:58:32,471 --> 00:58:32,891
+Aynen.
+
+442
+00:58:33,331 --> 00:58:35,711
+İntegrarı çözemiyorsun, çok güzel sordun, tartışarak.
+
+443
+00:58:36,031 --> 00:58:38,051
+O zaman bir noktasını geçmek istiyorum.
+
+444
+00:58:38,051 --> 00:58:40,051
+Ama sen o...
+
+445
+00:58:40,500 --> 00:58:45,179
+Şöyle var ya, mesela diyelim ki bir yerde çukur var. Çukurun ucuna kadar gelen açmışsın, gelirsin değil mi?
+
+446
+00:58:46,619 --> 00:58:55,480
+Diyelim ki bir güç seni çukura atlattı. Çukur vardı önünde. Çukurun 1xH'ına kadar geldin, tamam mı? Çukura düşmedin daha.
+
+447
+00:58:57,139 --> 00:59:05,899
+Anladın mı dedim? Mesela bir çukur var burada. Şöyle söyleyeyim. Burada bir çukur var. Burası bir noktası. Burası 1xH.
+
+448
+00:59:07,315 --> 00:59:09,056
+Burası bir artı ağaç, doğru mu?
+
+449
+00:59:10,195 --> 00:59:10,576
+Anladım.
+
+450
+00:59:10,615 --> 00:59:21,635
+Burası da bir. Burada tanımsız. Buradan dibi gözükmeyen bir çukur var. Buraya bastın mı gittin. Bu bir değeri tanımsız yani. F1 sonsuz. Anladım dediğimi.
+
+451
+00:59:22,036 --> 00:59:28,815
+Anladım. Ya şeyi sorayım hocam, o integralde bir tarafa bir x'a aç, altına bir artı ağaç yazabiliyor muyuz diye sormuştum da.
+
+452
+00:59:30,356 --> 00:59:57,976
+integralde işte ben onun için tam bir yazayım. Tam bir çözeyim öyle. Öyle çözmek daha iyi. Bakın tekrar söyleyeyim. Yazayım dur bir dakika. Yani ben bu şekilde kafada tutarak bireksi aşıyı. Bu da yapıyor bireksi aşı. Yanlış anlamayın. c'ye bireksi aşı. Bireksi demek şurası bireksi aşı tamam mı? Bu c'ye de bir artı aşı yazın. Okey. Ben olsam c yazmam yani. Bir artı aşı yazar.
+
+453
+00:59:58,324 --> 01:00:25,604
+1x h yatarım. Şunu da h sıfıra kadar götürürüm. Anladık mı soruya? Bu c'yi hiç kullanmam yani ben. Şu limitte c'yi kullanmam. Bu çözümü kafa karıştırıcı. Şöyle çözerim. h sıfıra giderken sıfırdan 1x h'a kadar gidiyor tamam mı? Anladık mı? Yani 1x h'a kadar gider. Sonra da burayı kullanmam.
+
+454
+01:00:26,099 --> 01:00:45,759
+Bunun yerine ne yazarım? x sıfıra kadar giderim tamam mı? 0'a kadar. Bu yok. 1 artı h'tan 3'e kadar. Anlaşıldı mı? Bilmiyorum. Karıştık mı? Yani 1 eksi h'a kadar götürürüm. 1 artı h'tan da 3'e kadar götürürüm. Başında da limit x sıfıra kadar yazarım. Böyle burada da aynısını yazıyor ama.
+
+455
+01:00:46,483 --> 01:01:12,023
+İnsanın beynini zorluyor. Yani bunu bireksi kafada yazıyor. Ne demek? Yani o bireksi aşı yazıyor. Anladın mı? Ama kafasında düşünüyor. Burada da bir artı aşı yazıyor. Bir artı demek bir artı aş demek. Yazıyor ama aşı sıfıra gittiğinde kafasından söylüyor. Anladınız mı? Yani onun için bu biraz daha karıştırıcı diyor. Tekrar çeyelim. Ben olsaydım.
+
+456
+01:01:12,788 --> 01:01:39,367
+Buradan limiti h0'a kadar gider yapardım. Burayı 1xh yazardım. Yine bunu h0'a kadar götürürdüm. Bunu da 1xh, şu şekilde yani doğrusu bu, doğrusu değil. Kafa karıştırmayacak hali bu. Bunu böyle yazar hesaplardım. Sonra de limiti yerine koydum. Burada profesyonel sanki hocaymış gibi yazmış tamam mı? Yani onu şurada yazsak daha iyi olurdu.
+
+457
+01:01:39,731 --> 01:01:56,172
+sildik. Sonra cevap oldu zannediyorum. Geçiyorum. Evet, baktık. Evet, burada da değerlerini, limiti yazdıktan sonra değerlerini yazıyorum. Evet, arkadaşlar şimdi bir ara veriyorum. 20 geçe başlayacağım. Uygulama başlıyor.
+
+458
+01:01:56,231 --> 01:02:02,539
+Hocam ara vermeden bir soru sorabilir miyim? Sor, sor, sor. Hocam şey, biz tam x bölü 2 dedik ama...
+
+459
+01:02:02,963 --> 01:02:06,923
+x bölü 2, en son biz şey dedik, indirgeme formüllerine kadar dedik.
+
+460
+01:02:07,463 --> 01:02:10,324
+İndirgeme, tanjant x bölü 2 de dahil diyebiliyorum ama.
+
+461
+01:02:10,771 --> 01:02:14,692
+Hocam, o 12. haftanın konusu gözüküyor ama ya bu şeyde var.
+
+462
+01:02:14,711 --> 01:02:19,912
+Ben o zaman müsaade ederseniz ben bu 12 dakikalık arada ben bir net bakabilir miyim?
+
+463
+01:02:19,932 --> 01:02:20,352
+Tamamdır.
+
+464
+01:02:21,032 --> 01:02:24,012
+Yok, bizden kesinleştirelim diye emin olmak için.
+
+465
+01:02:24,052 --> 01:02:32,831
+Anladım, iyi ki hatırlattın. Ya ben şimdi dedim ki bana gelen cevap şu. 11. haftanın sonuna kadar. Eğer 12. haftadaysa yok demekti.
+
+466
+01:02:32,912 --> 01:02:36,932
+12. haftada gözüküyor ama bu bizim diğer yaptığımız slide'ın son konusu.
+
+467
+01:02:37,452 --> 01:02:38,771
+Önemli değil o. Slide ile ilgisi.
+
+468
+01:02:38,771 --> 01:02:39,032
+yok.
+
+469
+01:02:39,231 --> 01:02:39,592
+Tamam.
+
+470
+01:02:40,392 --> 01:02:42,492
+Yok. 12. haftadaysa kurtardınız.
+
+471
+01:02:43,092 --> 01:02:45,132
+Yani 12. haftada olan konular yok.
+
+472
+01:02:45,132 --> 01:02:47,331
+Bak ben size isterseniz git bana şunu söyleyeyim.
+
+473
+01:02:47,412 --> 01:02:48,572
+Bölüm başkanlığının yazısı.
+
+474
+01:02:49,492 --> 01:02:51,311
+Bakın siz de ne anlarsanız tamam mı?
+
+475
+01:02:51,652 --> 01:02:52,412
+Devam ediyorum.
+
+476
+01:02:53,372 --> 01:02:54,791
+Bana gelen konu şu.
+
+477
+01:02:56,952 --> 01:02:58,372
+Biraz daha detaylı yazılsaydı.
+
+478
+01:02:58,452 --> 01:02:58,872
+Bak ne diyor?
+
+479
+01:03:02,516 --> 01:03:09,676
+Sayın hocalarım, öğrencilere ikinci ara sınav, bolokla, on bininci haftanın sonuna kadar bakmasını söyleyebilir misiniz?
+
+480
+01:03:11,096 --> 01:03:13,236
+O zaman tamam, on ikide gözüküyor çünkü.
+
+481
+01:03:13,276 --> 01:03:17,936
+Tabii tabii, ben o, kendim tancant x12'yi bir an, hani benim pdf ile ilgili.
+
+482
+01:03:18,256 --> 01:03:19,876
+Tabii on ikide gözüküyorsa o da yok.
+
+483
+01:03:20,996 --> 01:03:24,716
+Ama on bininci haftada şey var ama, trigonometrik integrerler var.
+
+484
+01:03:26,483 --> 01:03:33,003
+Var hocam. Evet, şey, indirgeme formüllerine kadar hocam, şey yok, trigonometrik değişken dönüşümleri vesaire yok da.
+
+485
+01:03:33,124 --> 01:03:46,603
+Yok yok, o tamam. Ben hatırladım. Bir tek tancant x kare 2'ye emir olmamıştım. Çünkü niye emir olmadığım biliyor musun? Tancant x kare 2, sinüsle, kosinüste kullanılır çünkü. Ama burada hafta belirtmiş, soramazlar. Tamam mı?
+
+486
+01:03:47,463 --> 01:03:48,103
+Tamam hocam.
+
+487
+01:03:49,003 --> 01:03:49,844
+Ben yine bakacağım.
+
+488
+01:03:50,483 --> 01:03:51,543
+Tamam hocam, konuşuruz.
+
+489
+01:03:51,563 --> 01:03:52,983
+10 dakika sonra görüşürüz yani.
+
+490
+01:03:52,983 --> 01:03:53,983
+Tamam hocam.
+
+491
+01:20:31,572 --> 01:20:33,516
+Evet, ekranı görüyorsunuz değil mi?
+
+492
+01:20:38,420 --> 01:20:38,899
+Çocuklar.
+
+493
+01:20:40,020 --> 01:20:40,639
+Evet hocam.
+
+494
+01:20:41,219 --> 01:20:41,460
+Tamam.
+
+495
+01:20:42,420 --> 01:20:46,880
+Buradan çeşitelim. Konumuzla ilgili olan sorulardan tabii karışık bazısı finalde çıkıyor.
+
+496
+01:20:48,059 --> 01:20:51,219
+Mesela bu birinci soru. Yayozunluğu var. Bunu çözmeyeceğim.
+
+497
+01:20:51,940 --> 01:20:53,380
+Ama bunları tekrar kontrol edeceğim.
+
+498
+01:20:54,399 --> 01:20:56,619
+Hocam şey, baluglardan bakabildiniz mi acaba?
+
+499
+01:20:57,119 --> 01:21:00,520
+Baktım baktım. Dediğiniz gibi, tajant x bölü 2 yok.
+
+500
+01:21:01,260 --> 01:21:02,020
+Tamamdır hocam.
+
+501
+01:21:02,020 --> 01:21:02,619
+Bakın şey.
+
+502
+01:21:05,140 --> 01:21:07,720
+Basit kesirlere, rasyonel kesim integrali yok.
+
+503
+01:21:09,340 --> 01:21:12,460
+Bir de ne yok? Trigonometrik dönüşümler yok, tamam mı?
+
+504
+01:21:13,640 --> 01:21:14,360
+Tamamdır hocam.
+
+505
+01:21:15,140 --> 01:21:23,079
+Trigonometrik dönüşümler, ilçede tanjant x'ın 2 de var. Ondan sonra rasyonel kesim integrali yok.
+
+506
+01:21:23,460 --> 01:21:27,060
+Bir de alan hacimler falan zaten bu yaptıklarımız yok.
+
+507
+01:21:27,819 --> 01:21:31,020
+Evet, şeye kadar en son ne yazıyordu? En son.
+
+508
+01:21:31,604 --> 01:21:41,004
+reklam bağıntıları var ya, onlar var. Doğru mu? Kısmı integrasyon var. Bir de indirgeme bağıntıları var.
+
+509
+01:21:42,184 --> 01:21:47,783
+Evet hocam. Tamam. 11. hafta bu. Gelen resmi yazıyı okudup, benden sorumluluk değilse. Tamam.
+
+510
+01:21:48,144 --> 01:21:56,123
+Şimdi çocuklar, mesela buradan başlayalım. Dediğim gibi, maksimum, minimum, rol töreni, ortalama değer törenleri, sınava dahil değildi. Onlar da dahil oldu tabii.
+
+511
+01:21:56,123 --> 01:21:59,123
+Bakıyorum şimdi mesela, bu sınavda, finalde çıkmış sonlardan.
+
+512
+01:22:00,243 --> 01:22:24,503
+Mesela bu birinci soruyu sonra çözeceğim merak etmeyin. Yay uzunluğu olduğu için. Yay uzunluğu sınava dahil değil. Gereksiz yere zaman kaybetmeyelim. Şimdi bakalım final sorularından çözüyorum. Ne diyor? Bir fonksiyon verin mi çocuklar? Artık bugün, yarın uygulama yapacağım. Haftaya şey var mı siz biliyor musunuz? Sınav haftası mı sizin de? Sınavlarınız var değil mi haftaya?
+
+513
+01:22:26,292 --> 01:22:28,132
+Yok hocam, hafta sınav hafta değil aslında.
+
+514
+01:22:28,971 --> 01:22:35,692
+Değilse o zaman haftaya ders yapacağım demektir. 2 tane daha fazladan uygulama yapacağım demektir. Tamam mı? O güzel bir haber. Okey.
+
+515
+01:22:36,391 --> 01:22:44,092
+Yani demek ki bol bol evet hep soru çözeceğim artık. Ondan sonraki sıradan sonra da final ile ilgili uygulama yapacağım.
+
+516
+01:22:44,092 --> 01:22:51,592
+Yani 3-4 hafta soru çözeceğim. Bir de tabii yine bir konu tekrarlar da yapacağım. Evet, şuna bakalım.
+
+517
+01:22:52,148 --> 01:22:58,087
+Bir fonksiyon var, x eşitir 3 noktasında minimum, x eşitir 1 noktasında maksimum.
+
+518
+01:22:58,407 --> 01:23:00,368
+Şimdi bu ne özelliklerdir biliyor musunuz?
+
+519
+01:23:00,427 --> 01:23:06,887
+Şimdi x eşitir 3 noktasında minimum demek, diyor ki türevini al, x yerine 3 koş 0 çıksın değil mi?
+
+520
+01:23:06,988 --> 01:23:11,988
+Minimum noktaysa nedir kural? Maksimum minimumda türev nedir? 0'dır değil mi?
+
+521
+01:23:12,548 --> 01:23:17,887
+Minimum diyor. Ama her türevin 0 olduğu yer maksimum değil. Ama burada zaten minimum demiş.
+
+522
+01:23:18,899 --> 01:23:28,519
+Tabii ki türem sıfır olacak. x1 koyunca yine türem sıfır olacak. O zaman türevi alıyoruz, 3 koyuyoruz, sıfır eşitliyoruz. Kesinlikle. Çünkü minimum diyor.
+
+523
+01:23:29,939 --> 01:23:41,279
+x1 koyuyoruz, sıfır. Buradan 2 bin lira denklemden A ve B'yi buluyoruz. Fonksiyonu yerine koyduk. Bir tek burada C kaldı. Bir de diyor ki, f-1 eşittir 7.
+
+524
+01:23:42,323 --> 01:23:59,323
+ha, maksimum değerini de vermiş, mesela 7 diye, tamam mı? Yani gidip, bu sefer de fonksiyonda eksi 1 yazarsam 7 oluyor. x yerine eksi 1 yazıyorum, 7'ye eşitliyorum, c'yi de buluyorum. Tamam mı? A, B, C sayılarını bulmuş oluyorum. Şimdi bu soruda anlamadığınız bir şey varsa tekrar anlatayım.
+
+525
+01:24:00,483 --> 01:24:08,323
+Yani buradaki kurallar, mesela bazen şey soruyorlar, daha böyle zorlaştırıp, diyor ki mesela x eşit 3 noktasında,
+
+526
+01:24:09,811 --> 01:24:34,031
+büküm noktası vardır diyor. Demek ki 2. türev sıfır yapıyor demektir. E bir de büküm noktası 7. Onu direkt fonksiyonuna koyuyorsun. Çünkü o fonksiyonun aldığı değerler. Böyle sorular geldiği zaman kaçırmayalım. Bir bakın inceleyip, tamam mı? Şimdi acele etmeyelim. Bir de 2. bize haftası konmadığına göre kesinlikle ders yapıyoruz. Bu çok büyük bir sevinç.
+
+527
+01:24:35,279 --> 01:24:46,639
+derslerimi o zaman muhakkak yapacağım tabii. Ondan sonra sınavla çakıştığı için yapamadım geçen şeyleri tabii. Sınavda bağlı arkadaşlar diye. İyi, güzel. O zaman çok rahat, hiç böyle sıkıntımız yok.
+
+528
+01:24:48,520 --> 01:25:00,500
+Geldik. O zaman yine zor konulardan, yine anlattığım şeylerden de döner. Tekrar yaparım. Peki, x seçtiricini yazdık. Tamam, geçiyorum. Bakın, farklı soru varsa çözeceğim.
+
+529
+01:25:01,971 --> 01:25:13,171
+kısmit integrasyon var tabi. Bakın enteresan bir şey var. Tabi logaritma var. Lapture'ya göre. Logaritma'ya o dedik mi?
+
+530
+01:25:14,391 --> 01:25:19,231
+Peki diğer kalan zaten logaritmanın yanında kimsenin SMS okunmaz zaten.
+
+531
+01:25:23,188 --> 01:25:24,188
+çizde o ametli.
+
+532
+01:25:24,188 --> 01:25:25,188
+Çizdiğiniz için teşekkür ederim.
+
+533
+01:25:29,043 --> 01:25:55,783
+Bunun türevini aldık. İçinin türevi x, sinüs x bölü, cos x, dv de cos x, değil mi? Bu da sinüs x. Evet, dediğim gibi eğer bunların roll'leri değişirse, yani u yerine dv konulsa, dv yerine v konulsa bakın ne kadar değişik bir integral çıkıyor, değil mi? Ne güzel bir cahsorlar çözüyoruz. Hepsi de direkt sınav soruları arkadaşlar. Bakın, 14 puanlık bir soruymuş olamam işte.
+
+534
+01:25:57,747 --> 01:26:03,567
+Devam ettik. Uv değil mi integralde? Burası nedir? Uv.
+
+535
+01:26:07,252 --> 01:26:09,572
+Bu da eksi vd o.
+
+536
+01:26:10,552 --> 01:26:12,852
+Yani kural çözüyoruz. Burada da konu anlatıyoruz.
+
+537
+01:26:12,952 --> 01:26:14,132
+Soru çözerken konu anlatmayacak.
+
+538
+01:26:14,612 --> 01:26:20,852
+Şu, bakın udv derken imkansız değil mi? Zor.
+
+539
+01:26:24,032 --> 01:26:28,012
+Ama bunların rollerini değiştirirsem bu nedir? Kolay değil mi?
+
+540
+01:26:28,152 --> 01:26:29,332
+Bütün mantık bu işte.
+
+541
+01:26:31,672 --> 01:26:33,372
+İmkansız olan, imkanlı olan.
+
+542
+01:26:33,779 --> 01:26:59,420
+Aynı şeydi. Udv, bunun integraline, bunun türevini koyuyoruz. Bu zaten bitmiş. uv, uxv zaten işlem görmüş. Bu. Kısmı integrasyon önemli arkadaşlar. Bunu öğrenelim. Tamam mı? Bakın şimdi tekrar kısmı integrasyonun konusunu anlatmış oluyorsunuz. O üzerinde yaptık. uxv bitti. Bu işlem tamam. Bu tamam.
+
+543
+01:26:59,840 --> 01:27:22,300
+bu da v devu. v devu. Eksi vardı. Eksi de bu artı oldu. Sonra çocuklar, sonra ne oldu? Burası bitti. Burada sinüs kare eksi 1 eksi, kosinüs kare eksi diyorum. Kosinüse bölüyorum. İki tarafı arttı. Tekrar çıkıyoruz. Sinüs x elen, kosinüs x.
+
+544
+01:27:23,347 --> 01:27:27,768
+artı dx bölü kosinüs x eksi kosinüs x dx. Tamam, devam ediyoruz.
+
+545
+01:27:29,048 --> 01:27:31,528
+Hocam, burada kos x'e u ilesek olmaz mıydı?
+
+546
+01:27:33,167 --> 01:27:33,908
+Sinüs x nerede?
+
+547
+01:27:35,268 --> 01:27:39,028
+Sin kare x bölü kos x'den bahsediyorum şu, sağdaki integral var hocam.
+
+548
+01:27:39,788 --> 01:27:45,148
+Tamam, tabii, sen tabii hatırını kırma, o için diyeceğim ama problemi göstereceğim sana.
+
+549
+01:27:45,507 --> 01:27:48,288
+Tabii, söyleyeceksin ki bu ona göre, tabii daha güzel öğrenir.
+
+550
+01:27:48,819 --> 01:27:53,500
+Doğru söylüyor. Burada diyorsun, kosinüs x'e u desem. Doğru mu?
+
+551
+01:27:55,199 --> 01:27:55,979
+Evet hocam.
+
+552
+01:27:56,420 --> 01:27:56,639
+Tamam.
+
+553
+01:27:58,680 --> 01:28:02,500
+Nerede önümüze yokuş çıkacak onu anlatacağım. Bu da x'ximus x'i x doğru mu?
+
+554
+01:28:05,079 --> 01:28:06,639
+Buna doğru değil mi? Bir hata var mı?
+
+555
+01:28:07,579 --> 01:28:08,279
+Yok hocam.
+
+556
+01:28:08,600 --> 01:28:16,559
+Şu kare olmasaydı dediğin çok güzeldi değil mi? Şu kare olmasaydı. Ama maalesef ki orada kare var. Ne demek kare var yani?
+
+557
+01:28:17,524 --> 01:28:23,564
+oraya yazarken, sinüs x var ya, sinüs x'in de yerine ne yazacağım?
+
+558
+01:28:26,724 --> 01:28:28,064
+Doğru mu? Bunu yazacak mıyım?
+
+559
+01:28:29,123 --> 01:28:29,744
+Evet hocam.
+
+560
+01:28:30,244 --> 01:28:30,484
+Güzel.
+
+561
+01:28:31,604 --> 01:28:33,904
+Bir de başımıza kare kök derdi geldi şimdi.
+
+562
+01:28:35,003 --> 01:28:37,503
+Sonra sinüs x dx yerine de ne yazacağım?
+
+563
+01:28:39,283 --> 01:28:39,564
+Değil mi?
+
+564
+01:28:41,003 --> 01:28:44,463
+Burada da sinüs x dx yazalım.
+
+565
+01:28:46,131 --> 01:28:54,992
+en azından böyle yaparsak niye kötü olduğunu anlatmış oluyorum. Sonra ne hale geliyor bakalım. Olmaz değil.
+
+566
+01:28:54,992 --> 01:29:07,371
+integral 1-u kare oldu değil mi? Kare kök geldi bak. Hiç sevmediğimiz bir şey çıktı karşımıza. 1-kare kök. Sinüs x gene ne yazdım? Eksi de u yazdım.
+
+567
+01:29:10,387 --> 01:29:12,327
+Sence bu integral daha mı kolay oldu?
+
+568
+01:29:13,768 --> 01:29:16,887
+Doğru hocam, haklısınız. İyice karıştı hocam.
+
+569
+01:29:17,347 --> 01:29:19,047
+Tamam, söylesin arkadaşım.
+
+570
+01:29:19,787 --> 01:29:24,368
+Demek ki iyice karıştı. Onun için yapmadım. Ama burada kare olmasaydı, haklısın.
+
+571
+01:29:25,147 --> 01:29:28,827
+Veya 3 olsaydı yine seninkini tercih ederdim.
+
+572
+01:29:29,907 --> 01:29:35,207
+Mesela sinüs küp olsaydı, tamam mı? Ne yapardım? O zaman şu kare küp olmazdı, değil mi?
+
+573
+01:29:36,148 --> 01:29:44,548
+o zaman daha kolay olabilirdi. Yani bir tek bir şeyin değişmesi, tamam sinüs küp olsa ne yapardım ben? O zaman kesinlikle böyle gitmezdim o zaman.
+
+574
+01:29:44,548 --> 01:29:58,347
+Diyelim ki o soru, hadi biz amacımız konu öğretmek değil mi? Geçelim mesela, burası sinüs küp olsun. O zaman arkadaşınız ki mecbur yapmak zorundayız. Ne olurdu o zaman biliyor musunuz?
+
+575
+01:30:00,180 --> 01:30:08,140
+Arkadaşınızın o zaman sinüs kip olduğu için bir tanesi sinüs kareye ayırdık. Şöyle olurdu. 1-kosinüs kare x.
+
+576
+01:30:13,300 --> 01:30:16,100
+Sinus X T X'i... Burası da nedir şimdi?
+
+577
+01:30:16,100 --> 01:30:18,100
+Sinus X T X değil mi?
+
+578
+01:30:21,944 --> 01:30:44,944
+x kare artı 2x, f'
+
+579
+01:30:21,332 --> 01:30:28,492
+Burası da cos x. cos x'e de u dedim. Ne olurdu integral? 1 eksi u kare değil mi?
+
+580
+01:30:30,792 --> 01:30:37,492
+Burası eksi de u. Burası da u olurdu. O zaman arkadaşının dediğiyle yapmak zorundaydı.
+
+581
+01:30:37,492 --> 01:30:45,731
+Tamam mı? Orada işte bir tek karaköklü geldiği için, tabii ben de hoca olduğum için tabii bu şeyini daha önceden görebiliyorum.
+
+582
+01:30:45,891 --> 01:30:48,012
+Arkadaşımızın da öyle düşünmesi çok normal.
+
+583
+01:30:48,532 --> 01:31:09,252
+Evet, tamam. Böyle olurdu değil mi? O zaman olurdu. Ama kare olduğu zaman olmaz. Kare kök gelir. Ha öyle giderim, çözerim ama kulağımı ters taraftan tutmak gibi olur yani. Evet. Şimdi ne oldu sonuçta?
+
+584
+01:31:10,579 --> 01:31:12,299
+dx bölü kosinüs x nedir?
+
+585
+01:31:12,899 --> 01:31:13,840
+secant x'dir.
+
+586
+01:31:14,220 --> 01:31:16,699
+secant x'inde bu integralleri ezberleyelim arkadaşlar.
+
+587
+01:31:16,819 --> 01:31:18,340
+İntegral sanatablosu çok önemli.
+
+588
+01:31:23,539 --> 01:31:44,640
+Sınavınız iyi geçer diye düşünüyorum. İntegramı ne kadar zorlaşacaktır? Formülleri ezberlerseniz. dx bölü kosinüs x, ln secant x'e artı tanjant x oluyor. Tamam mı? Çünkü bu secant x değil mi? Bu nedir çocuklar? Secant x değil mi? Secant x'in integralı de.
+
+589
+01:31:46,804 --> 01:32:14,524
+Değil mi? Nedir secant x? Elen secant x artı kotanjant x. Peki bu cosecant x olsaydı, o zaman da elen cosecant x eksi tanjant x eksi kotanjant x ya da artıcı ya da eksi elen cosecant artı kotanjant x formüleri yazdım. O zaman bakalım.
+
+590
+01:32:14,644 --> 01:32:37,184
+x kare artı 2x, tamam geçtik. Formüllerimizi ezberleyelim. 20'ye yakın bir formül var. Türev'den zaten ezberlemiştik. Kosinüs x'in integralı da aynen sinüs x oluyor. Bitiyor. Bu da çıkmış final sınavı da. Geçmiş olsun. Bunu çözemeyiz. Neden çözemeyiz? Söyleyin arkadaşlar, niye çözemeyiz şu anda?
+
+591
+01:32:39,123 --> 01:33:05,623
+ne sorusu bir şey hem de bir yandan da görüyoruz. Impropriate integral değil mi? Neden? Aynen çözmek istemiyorum. Bugün anlattığım için taze olduğunu söyledim. Çünkü x yerine eksi 1 korsak ne oluyor? Sonsuz oluyor. O zaman ne oluyor? Orada bir çukur var. Biz ne yapıyoruz? Japon yapıştırıcı da bu C işte. Tamam mı? Böyle eksi 1 artı ama ben dedim ya h0 değil arkadaşlar. Benim dediğim gibi yapın. Ben daha hataya oranı az olur. Geçelim.
+
+592
+01:33:06,996 --> 01:33:07,735
+çözmüyorum.
+
+593
+01:33:09,336 --> 01:33:10,016
+Baktık.
+
+594
+01:33:10,775 --> 01:33:12,975
+Bunu da çözmüyoruz. Bu da sınava dahil değil. Neden?
+
+595
+01:33:13,775 --> 01:33:18,556
+Basit kesirlerin, şey, rasyonel kesirlerin integralı. Bu da finale sınava dahil olacak.
+
+596
+01:33:19,876 --> 01:33:22,576
+Bu trigonometrik dönüşüm. Burada görüyoruz da.
+
+597
+01:33:22,655 --> 01:33:27,996
+Mecburen böyle çözmek zorundayız. Bu da yine x eşitir, köküsün üstte. Bu da sınava dahil değil.
+
+598
+01:33:28,176 --> 01:33:29,096
+Finale dahil.
+
+599
+01:33:29,836 --> 01:33:31,716
+Trigonometrik dönüşüm dediğimiz bunlar işte.
+
+600
+01:33:33,171 --> 01:33:43,452
+Evet, baktık. D bölgesini çizdiniz. Değil mi? Alan bak. Birkaç bir daha şimdiden final hakkında. Bak hacim sormuşlar, alan sormuşlar, kabuk yöntemi demişler. Değil mi?
+
+601
+01:33:45,391 --> 01:33:53,811
+Evet, bak yine görüyorsunuz. Değil mi? İki tane böyle aynı şeyde sormuş. Geçtik bunu geçtik. Başka bir tane çıkartmak istiyorum. Evet.
+
+602
+01:33:56,231 --> 01:33:56,872
+Bakalım.
+
+603
+01:34:02,100 --> 01:34:10,120
+Bakıyorum tabi ben burada neyin deneyerek bakacağım. Bakalım burada var mı yoksa geçeceğiz. Geçelim.
+
+604
+01:34:11,280 --> 01:34:18,400
+Eğris'in ekstrem noktasını bulun demişler. Şunu niye yapmadık? Alan. Alan yok sınava dahil değil.
+
+605
+01:34:19,460 --> 01:34:26,480
+Buna baktık x kare evet. Eğris'in ekstrem noktasını bulmuşuz. Türev almışız. Tamam mı? Türev aldık.
+
+606
+01:34:28,787 --> 01:34:33,787
+türevi sıfır yapan değer x' üzerine 1 korsak sağlam bir türevi.
+
+607
+01:34:37,300 --> 01:34:40,699
+x yerine 1 korsak x evet, bunu sağlamış.
+
+608
+01:34:42,480 --> 01:34:44,500
+Buradan ikinci türevi geçmişiz.
+
+609
+01:34:46,520 --> 01:34:51,220
+Deneyerek bulmuşuz yani. x yerine 1 korsak, sıfır eşit sıfır çıkmış.
+
+610
+01:34:53,359 --> 01:34:59,300
+Devam ettik. f üstü 2x, iki türev testiyle yapmışız bunu.
+
+611
+01:34:59,439 --> 01:35:01,739
+Yani ikinci türevini almışız, şunu.
+
+612
+01:35:02,452 --> 01:35:07,952
+pozitif çıkmış, artmaya başlamış, o zaman minimum diyecek değil mi? Minimum noktası çıktı.
+
+613
+01:35:10,752 --> 01:35:13,312
+Şu nokta minimummuş, devam edelim.
+
+614
+01:35:14,512 --> 01:35:15,772
+Alan bahçesi çıkmış.
+
+615
+01:35:17,392 --> 01:35:19,092
+Buna bak, ha bu alan sonrası.
+
+616
+01:35:19,472 --> 01:35:20,332
+Geldik, burada ne var?
+
+617
+01:35:21,632 --> 01:35:25,912
+Tabii işte dedim ki böyle, mecburlar tabii böyle.
+
+618
+01:35:26,640 --> 01:35:30,200
+Tek ikinci vizeye diye bir uygulamam yok tabii ki. Seçerek yapacağız.
+
+619
+01:35:31,380 --> 01:35:34,180
+Bakın, kısmi degrasyon çok sormuşlar değil mi?
+
+620
+01:35:36,400 --> 01:35:40,520
+Burada ne var? Bakın, kısmi degrasyon değil. Bu değişken dönüşü değil mi?
+
+621
+01:35:41,080 --> 01:35:44,680
+Substitution method yani. Yerine koyma metodu yani.
+
+622
+01:35:46,000 --> 01:35:49,380
+Bakıyoruz, şöyle dikkatli bakıyoruz.
+
+623
+01:35:49,640 --> 01:35:51,900
+Aaa, lnx var, 1 bölü x var.
+
+624
+01:35:52,724 --> 01:36:16,224
+hemen kafanızda şimşekler çakıyor. Neden? L'n x, türevi 1 bölü x. İkisini de aynı anda görüyorum. x diye görmeyin bunu. 1 bölü x diye görüyorum. Mesela şöyle bir sorunu da, pardon şurada niye mağrı oluyor bu? Tamam. Mesela çok da. Mesela en üzeri kök x,
+
+625
+01:36:20,948 --> 01:36:42,408
+kare artı 2x, değil mi? Bunu kare artı 2x diye görmeyin. Burayı 1 bölü kare artı 2x diye görür. O zaman ne oluyor mesela? u eşittir kare artı 2x derseniz, devu ne oluyor çocuklar? 1 bölü 2x oluyor değil mi? Bu da değişken dönüşümü oluyor. Yani bu biraz gözünüzü açacaksınız.
+
+626
+01:36:44,508 --> 01:36:45,328
+Peki.
+
+627
+01:36:47,731 --> 01:36:57,612
+Evet, güzel sorular çıkıyor. İşte bakacağız. Bir sürü şeyler var. Karışık olduğu için siz tabii artık 2. bir ziden sonra zaten tümünü böyle inceleyebilirsiniz.
+
+628
+01:36:57,612 --> 01:37:15,192
+Benim Avesis sayfamda biliyorsunuz. Ona girip bakabiliyorsunuz arkadaşlar. Yani o sorular orada var. Mesela bu çözdüğüm soruların hepsi Avesis sayfamda var. Nasıl giriyorsunuz? Uygulamalardan Avesis. Avesis'ten girip tamam mı? Oradan şey yapabiliyorsunuz tamam mı?
+
+629
+01:37:16,340 --> 01:37:20,319
+servetes'e girip paylaşımlarımda bakabilirsiniz.
+
+630
+01:37:21,659 --> 01:37:21,980
+Peki.
+
+631
+01:37:26,420 --> 01:37:32,239
+Tabi difteklem alan varsa difteklemlere de, lif benden bakabilir yani oradaki sorularına.
+
+632
+01:37:34,099 --> 01:37:36,319
+Bir tek dinerce bir vermiyorum.
+
+633
+01:37:36,819 --> 01:37:38,819
+Dinerce bir notum yok.
+
+634
+01:37:40,260 --> 01:37:41,460
+Devam ediyoruz.
+
+635
+01:37:42,500 --> 01:37:43,939
+Ne oldu peki?
+
+636
+01:37:43,939 --> 01:37:47,659
+L'nx'e u dedik, türevi 1 bölü x, 2 üzeri u devu oldu.
+
+637
+01:37:50,539 --> 01:37:51,467
+Güzel.
+
+638
+01:37:52,115 --> 01:38:02,176
+u yerine de ne koyduk? lx koyduk. Cevap çıktı. Hiç anlamadığınız, bakın sorunuz var mı? Yokmuş. Tamam anlamadığınız zaman da sorunca daha güzel oluyor.
+
+639
+01:38:03,376 --> 01:38:14,435
+Devam ederiz. Evet buraya baktık. x'e türevi var değil mi? x'e türevi var değil mi? x'e türevi var değil mi? x'e türevi var değil mi?
+
+640
+01:38:14,435 --> 01:38:17,456
+Bakın enteresan. İkisi de farklı yerde ama bu bunun türevi.
+
+641
+01:38:18,131 --> 01:38:26,331
+O zaman değişken dönüşümü. Demek ki bakın, bu değişken dönüşümü de önemli bir konu. u eşittir evzel x, de u eşittir evzel x de x.
+
+642
+01:38:27,671 --> 01:38:31,511
+Evzeli evzel x çarpı evzel x de x, o da evzel u de o.
+
+643
+01:38:32,891 --> 01:38:43,131
+Ben şunu öneriyorum arkadaşlar, yani bu şeyde fırsata çevirip, böyle mesela yüz yüze muhakkak yüz yüze olacak değil mi?
+
+644
+01:38:44,275 --> 01:39:11,055
+Biliyorsunuz, anaokulları mesela dün serbest bırakıldı tekrar, açıldı yani. Öyle bir gelecek ki mesela, 2. dönemde belki de hep yüz yüze yapacağız. Hastalık olsa da, olmasa da. Dolayısıyla, bu mat biri, ne yapın yapın, size büyük bir tavsiye olsun. Bu dönem vermeye çalışın arkadaşlar. Bunu fırsata çevirin.
+
+645
+01:39:11,828 --> 01:39:37,788
+Çünkü 100 yüzyıda başarılar %30'lara düşüyor, şimdi %90'larda 80'lerde, tamam mı? Sakın pes etmeyin, 5 saatlik dersinizi verin. Sen size bir yakın bir tavsiyesi anlatabiliyor muyum? Çünkü test sorularında bir yerde çok fazla oynayamıyoruz. Dolayısıyla çok fazla zor soramıyoruz. Onu da söylediğim isterim.
+
+646
+01:39:38,644 --> 01:40:00,564
+Evet, bir iyi niyet. Fizikte belki sorulabiliyor. Çünkü fizik, biz mesela lisanstayken fizikten, bir modern fizik diye ders vardı. Hoca hiç böyle kitap defteri açık sınav yapardı. Birbirimize yardımlaşırdık, yine de yapamazdık. Yani fizik öyle bir ders. Fizikte test olsa zor sorabiliyorlar ama matematikte. Dolayısıyla bu dönem iyi çalışın.
+
+647
+01:40:02,100 --> 01:40:05,260
+Ben özellikle hocam, bütün okul zaten yapamadık.
+
+648
+01:40:05,700 --> 01:40:15,560
+Yok, hayır, fiziğin öyle bir durumu var. Fizikte diyorum, bırak yan yana, yan yana sınava girseniz, kopya çekmek için.
+
+649
+01:40:16,372 --> 01:40:19,012
+Anlatabiliyor muyum? Fizik öyle zorlaştırılacak.
+
+650
+01:40:19,312 --> 01:40:23,232
+Yok hocam, zaten online diye daha da şey yapmışlar galiba, zorlamışlar.
+
+651
+01:40:23,972 --> 01:40:31,112
+Bilmiyorum yani, o derslerde diyorum ya, bakın bize diyorum, lisansla fizik dersinde, modern fizik dersimiz vardı.
+
+652
+01:40:31,272 --> 01:40:32,372
+Ben matematik mühendisiyim.
+
+653
+01:40:34,192 --> 01:40:37,332
+Fizik dersinde hoca bırakırdı.
+
+654
+01:40:38,032 --> 01:40:40,372
+Kitap açık, kaynak açıktı.
+
+655
+01:40:41,652 --> 01:40:57,612
+Öyle sınav oluyorduk yani. Birimize yardımlaşma serbest. Hiç bırakma önümüze durmazdı. Yine de çok iyi not alamayabilirdik. Zorası da bu sorularda istediğin kadar zorlaştırılabilir. Anlatabiliyor muyum? Tabii.
+
+656
+01:40:59,752 --> 01:41:06,652
+Yani şey değil, bunlar fırsatları dökmemekte lazım öğretileri yani. Ben onlara da karşıyım yani.
+
+657
+01:41:09,203 --> 01:41:14,123
+matematikten memnunum. Ne olacak? Çocuk güzel. Ben derslerim hep doluyorum. Mesela full. Çok güzel.
+
+658
+01:41:14,923 --> 01:41:21,643
+Yani 110, 120, 130. Çocuklar devam ediyorlar. Geçsinler hepsi. Ne olacak? Yani derse devam edenin bence geçmesi lazım.
+
+659
+01:41:22,583 --> 01:41:26,903
+Yani devam eden bir öğrencinin geçmesi işte şey olmaz yani.
+
+660
+01:41:27,843 --> 01:41:31,503
+Evet. Şimdi buraya gelelim arkadaşlar. e üzeri x'e u dedik. d u, e üzeri x'de x.
+
+661
+01:41:32,403 --> 01:41:33,923
+Yerine koyduk. e üzeri u, d u.
+
+662
+01:41:36,051 --> 01:41:44,332
+Evet, bu fiziği duydum da onun için paylaştım yani. Fizikte biraz daha başarılar düşükmüş diye. Düşük olur tabi, hocalar nende ise ise sıfır da yapar yani.
+
+663
+01:41:45,372 --> 01:41:51,731
+Öyle bir soru sorar ki yani, herkesi 100 kişi aynı salonda yardımlaşsa bile yapamayacağı soru konabilir yani.
+
+664
+01:41:52,891 --> 01:41:55,532
+Orada o kadar iş değil yani, öyle ben sevmedim işler.
+
+665
+01:41:56,671 --> 01:42:00,372
+Evet, geldik. Evzer x, u. Evzer x, d, x, d, u. Tamam.
+
+666
+01:42:01,372 --> 01:42:02,631
+Geldik, evzer u, d, u.
+
+667
+01:42:03,891 --> 01:42:09,351
+yerlerine koyduk. Anladık değil mi? Uzatmaya gerek yok. Anlaşılmayan anda söyleyin.
+
+668
+01:42:11,371 --> 01:42:18,391
+Ha, buna baktık. Güzel, tam böyle bizim uygulama şeyiymiş. Çok güzel. Sevdim bunu, evet.
+
+669
+01:42:20,451 --> 01:42:25,671
+Bunun konu başlığı neydi? 20-21 düzlerin matematik. Tamam. Geldik mesela.
+
+670
+01:42:27,011 --> 01:42:27,971
+x sinüs x kare.
+
+671
+01:42:30,868 --> 01:42:44,908
+x kare artı 2x değil mi? Buna u diyoruz. Sinüs u dev oluyor. 1 bölü 2 de değil mi? 2x olmadığı için 2 ile çarptık, 2 ile bölüyorum. Şöyle yapıyorum yani. Şurada 2 ile çarpıp.
+
+672
+01:42:50,868 --> 01:43:03,347
+Evet, şimdi geldik. 2 ile çarptık, 2 ile böldük. Şu 2'yi buraya koyduk. Tamam mı? Burada bir şey yok. Şu 2, şuradaki 2, buradaki 2. Sonuçta sinüsum integralı x kosinüsum.
+
+673
+01:43:17,300 --> 01:43:18,700
+Evet, süper geldik buraya.
+
+674
+01:43:19,900 --> 01:43:26,500
+Seni suya da yazdık, yerine yazdık. Tamam, uzatmayalım. Burada anlamadığınız varken anlamadık yani. Yavaş, bilhetsin. Hiç çekinmeyin, tamam mı yani?
+
+675
+01:43:27,700 --> 01:43:29,700
+Ben eleştiriye açığım yani.
+
+676
+01:43:33,460 --> 01:43:35,220
+Evzel X, sinus X, DX.
+
+677
+01:43:35,880 --> 01:43:37,020
+Evzel X'e U diyoruz.
+
+678
+01:43:38,239 --> 01:43:38,819
+Sinus X,
+
+679
+01:43:39,300 --> 01:43:40,500
+DX, DX, DV.
+
+680
+01:43:40,960 --> 01:43:42,600
+DU eşittir. Evzel X, DX.
+
+681
+01:43:42,899 --> 01:43:43,800
+Eksi kosinus X.
+
+682
+01:43:44,579 --> 01:43:45,239
+İşte neyse.
+
+683
+01:43:45,340 --> 01:43:46,899
+Buna U dedik, buna DV dedik.
+
+684
+01:43:47,939 --> 01:43:49,260
+Bu soru çözülmüştü ama
+
+685
+01:43:49,260 --> 01:43:50,020
+bir daha çözelim.
+
+686
+01:43:50,439 --> 01:43:52,159
+Bunu anlatmıştım benim konularda.
+
+687
+01:43:53,159 --> 01:43:55,239
+Lap diye göre. Bak burada enteresan
+
+688
+01:43:55,239 --> 01:43:56,739
+bir şey. Hiç kimsenin dikkatini çekmiyor.
+
+689
+01:43:56,859 --> 01:43:58,720
+Hani lap diye göre hocam
+
+690
+01:43:58,720 --> 01:44:01,159
+hep evzel X'e
+
+691
+01:44:01,199 --> 01:44:03,039
+dv diyecektiniz değil mi?
+
+692
+01:44:03,699 --> 01:44:04,659
+diye soran olabilir.
+
+693
+01:44:05,340 --> 01:44:09,279
+Öyle mi yani? Genelde ben çözerken sinüs x'e o demiştim. Doğru mu?
+
+694
+01:44:11,920 --> 01:44:14,000
+Yani hep şöyle çözmüştüm ben.
+
+695
+01:44:14,659 --> 01:44:15,800
+Burada sinüs x'le
+
+696
+01:44:15,800 --> 01:44:18,659
+yani
+
+697
+01:44:18,659 --> 01:44:21,659
+tavsiyem
+
+698
+01:44:21,659 --> 01:44:27,119
+bir kural olsun. Her zaman bunu dv seçin arkadaşlar.
+
+699
+01:44:27,119 --> 01:44:27,500
+Ama
+
+700
+01:44:28,115 --> 01:44:48,035
+sinüs ile kosinüs, sinüs ile evzeri x veya kosinüs ile evzeri x, integral ve türev her ikisinin de kolay. O bakımdan, yani Laptü'de, hani Laptü diye bir şey vardı ya, logaritma, arklılar, polinom, trigonometrik, üstel.
+
+701
+01:44:55,636 --> 01:45:01,336
+fark etmiyor yani. Önemli değil yani. Neden önemli değil biliyor musunuz ama?
+
+702
+01:45:01,652 --> 01:45:19,352
+Laptü derken üstel şekil olarak da, e üzeri x'in üzeri e üzeri x, yani türevi kendine, integralı kendine eşit olan tabii ki üstel seçesin ama trigonometrik de zor değil. Sinüsün integrali, kosinüs, kosinüs integrali, şey pardon, sinüsün integrali, eksi kosinüs, kosinüs integrali artı sinüs.
+
+703
+01:45:19,352 --> 01:45:27,352
+Orada da o kadar fark etmediği için öyle alması da bir mahsur yok. Yani trigonometrik de üstel'in yer değiştirmesi,
+
+704
+01:45:28,659 --> 01:45:43,880
+bir şeyi değiştirmiyor. Ama üstelik ben dv diye tercih ederim. Bunu değil de, evzer x dx'i dv diye tercih ederim. Ben tercih ederim. Bu kurallara kalsın. Burada da öyle yapmamış, uyu evzer x almış. Alabilir.
+
+705
+01:45:45,380 --> 01:45:55,619
+Laptü'ye göre, çünkü bazı arkasına soracak ama Laptü dedik, niye trigonometriyi u dememiş diye sorarsanız, trigonometrik de üstel yer değişirse fark etmiyor diyelim.
+
+706
+01:45:56,340 --> 01:45:57,140
+Tamam mı çocuk?
+
+707
+01:45:58,220 --> 01:46:12,460
+d u e üzeri x de x, sinüs x de x'e d v, dedik, eksi kosinüs x v, e üzeri x sinüs x de x, u v eşit direkt v d u, e üzeri x, eksi kosinüs x, eksi e üzeri x, e üzeri x, tamam mı? Bunu yaptık.
+
+708
+01:46:14,100 --> 01:46:19,140
+Buradan yerlerine koyduk. u v eksi v d u da yerine koyduk.
+
+709
+01:46:19,140 --> 01:46:22,412
+Aaa bir baktık ki, Allah'ım.
+
+710
+01:46:24,372 --> 01:46:26,372
+bundan bunun arasında
+
+711
+01:46:29,372 --> 01:46:31,372
+daha mı zorlaştı?
+
+712
+01:46:31,372 --> 01:46:32,372
+Hayır.
+
+713
+01:46:32,372 --> 01:46:33,372
+Daha mı kolaylaştı?
+
+714
+01:46:33,372 --> 01:46:34,372
+Hayır.
+
+715
+01:46:34,372 --> 01:46:36,372
+Benzer bir integral.
+
+716
+01:46:36,372 --> 01:46:38,372
+O zaman
+
+717
+01:46:38,372 --> 01:46:40,372
+durmak yok, yola devam.
+
+718
+01:46:40,372 --> 01:46:42,372
+Bir daha kısmı integral sonu vereceğim.
+
+719
+01:46:46,804 --> 01:46:56,804
+Bakıyorum, tekrar yine e üzeri x'e u dedim, e üzeri x de x de u, kosinüs x de x'e dv dedim, silüs x v dedik. Devam ediyoruz.
+
+720
+01:46:57,804 --> 01:47:05,804
+Buradan eksi e üzeri x artı a üzeri x artı eksi i diyorum. Tamam, buradan 2 ve eşittir bu, ve eşittir bu oldu. Tamam.
+
+721
+01:47:06,420 --> 01:47:20,380
+Buradan dikkat et. Aynısı kendini verdi artık. Buraya baktığımız zaman bu sonsuza kadar gitmeyecek. Tabi uyanık olmak lazım. Bunun bu olduğunu da görmemiz lazım. Görmeyip bir daha kısmı integrasyon yaparsak.
+
+722
+01:47:21,235 --> 01:47:35,455
+50 saat geçse bu bitmez değil mi? Çünkü aynısı çıktığını görmek lazım. Buna i dediğimiz zaman bu tarafa 2 i oldu. Bitirdikten sonra da artı c bizi de muhakkak koymamız lazım. Belirsiz integralde artı c var.
+
+723
+01:47:36,055 --> 01:47:40,715
+Hocam şu i'yi anlamadım ya. Oraya kaçırtın mı? Hocam i olduğu yeri anlayamadım.
+
+724
+01:47:40,715 --> 01:47:42,635
+Tamam, güzel. Devam geçiyoruz.
+
+725
+01:47:46,295 --> 01:47:47,875
+Şimdi diyorum ki
+
+726
+01:47:49,908 --> 01:48:02,628
+Bunu çözerken şu çıktı mı karşıma? Şu çıktı mı çıktı? Yani bu çıktı. Sorun nedir? Buydu değil mi? Sorun bu yani. Doğru mu?
+
+727
+01:48:03,708 --> 01:48:15,048
+Buraya baktık. Yine bunları uyguladık mı? Bir daha uyguladık. Yine karşımıza bu çıktı. Bu çıktı bu sefer. Bakıyorum.
+
+728
+01:48:15,731 --> 01:48:18,311
+Yine şöyle bir integral çıktı.
+
+729
+01:48:20,172 --> 01:48:21,612
+Buna I dersem diyorum,
+
+730
+01:48:23,431 --> 01:48:24,492
+bu da I olmaz mı?
+
+731
+01:48:26,912 --> 01:48:27,572
+Evet hocam.
+
+732
+01:48:28,152 --> 01:48:30,231
+Tamam işte. Burada da I var.
+
+733
+01:48:32,292 --> 01:48:34,792
+Eksi I'yi bu tarafa getirirsem 2 I olmaz mı?
+
+734
+01:48:35,872 --> 01:48:37,032
+Hocam anladım. Teşekkür ederim.
+
+735
+01:48:37,372 --> 01:48:39,351
+Rica ederim. Devam ediyoruz.
+
+736
+01:48:39,351 --> 01:48:41,811
+Lütfen anlamadığınızı sorun.
+
+737
+01:48:43,475 --> 01:48:44,355
+Evet, güzel.
+
+738
+01:48:46,716 --> 01:48:50,576
+Ondan sonra yerine koyuyoruz ama bittikten sonra da arka cemizde yazıyoruz.
+
+739
+01:48:50,895 --> 01:48:54,155
+Ha bu belirli integral olursa da bittikten sonra sınırları koyuyoruz.
+
+740
+01:48:54,155 --> 01:48:56,235
+Tamam mı? Önce belirsiz olarak çözün.
+
+741
+01:48:57,756 --> 01:48:59,895
+Grafini çiziniz diyor. Çizelim.
+
+742
+01:49:03,828 --> 01:49:06,228
+Evet, devam ediyoruz çocuklar.
+
+743
+01:49:07,108 --> 01:49:07,547
+Bayi.
+
+744
+01:49:21,844 --> 01:49:29,644
+Baktık, tanım kümesi ne de? Tabii bu olabilir, olur. Olur mu? Yani her şey, adattığımız her şey kolay zor diye düşünmeyin arkadaşlar.
+
+745
+01:49:31,443 --> 01:49:39,024
+x x kub artı 6x kare, x 9x artı 3. Yine birinci vize dek gibi inşallah yine bizim sınıfta yüksek olur.
+
+746
+01:49:40,144 --> 01:49:49,064
+Sordum, çoğu hoca arkadaşımda daha düşüktü ortalamalar. Yüksek olur. Çok soru çözmenin etkisi çok fazla oluyor, onu söyleyeyim. Yine soru çözeceğim arkadaşlar.
+
+747
+01:49:50,323 --> 01:49:53,364
+Evet. Heyecandanmayın.
+
+748
+01:49:54,823 --> 01:49:56,364
+Mazeret için başvuran oldu mu?
+
+749
+01:49:58,864 --> 01:50:01,384
+Mazeret galiba 14. haftada olacak değil mi Çocuklar?
+
+750
+01:50:02,364 --> 01:50:05,203
+Hocam finallerden önceki hafta olacakmış sanırsak.
+
+751
+01:50:05,323 --> 01:50:11,323
+14. hafta oluyor, son hafta oluyor. Yani ne oluyor? Ocağın ilk haftası oluyor herhalde.
+
+752
+01:50:11,604 --> 01:50:12,703
+Evet, galiba öyle.
+
+753
+01:50:13,119 --> 01:50:17,680
+son hafta oluyor. Ona göre güzelce çalışır. Baştan sona oluyor.
+
+754
+01:50:20,140 --> 01:50:22,020
+Baştan sona kadar oluyor bütün konular.
+
+755
+01:50:23,239 --> 01:50:29,079
+Birinci vize de olsa, ikinci vize de olsa, baştan sona oluyor bütün konular. Ona göre çalışır.
+
+756
+01:50:30,039 --> 01:50:33,699
+Peki, evet. Yani mazeret oluyla şunu düşünmeyin arkadaşlar.
+
+757
+01:50:34,640 --> 01:50:41,680
+matematik bölümünde öyle bir şey yok. Mazerette çok zor soralım diye bir şey yok. Tamam mı? Normal, aynı ağırlıkta sorular soruluyor. Merak etmeyin.
+
+758
+01:50:42,880 --> 01:50:44,640
+Evet, fonksiyonu tarafın için.
+
+759
+01:50:45,340 --> 01:50:45,760
+Hocam?
+
+760
+01:50:46,100 --> 01:50:46,560
+Efendim?
+
+761
+01:50:46,940 --> 01:50:49,680
+1. vizenin mazereti de mi tüm konuları?
+
+762
+01:50:49,680 --> 01:50:51,720
+Evet, evet. Tabi, tabi. Öyle oluyor. Yani.
+
+763
+01:50:52,619 --> 01:50:59,739
+Şeyde, % eğitimde öyle oluyordu. Anlatabiliyor muyum? İki tanesinden de vize aldığı zaman tek sınav, tek gidiyorsunuz.
+
+764
+01:51:00,180 --> 01:51:04,500
+Yani 2 senede öyle aynı aynı vize de yapılmıyor. 2 senede mazeret olmuyor.
+
+765
+01:51:05,400 --> 01:51:11,780
+Diye biliyorum. Tabii ben bölüme sorarsınız. Evet. Yani bu sona kadar aynı sorulardan giriyorsunuz.
+
+766
+01:51:12,079 --> 01:51:17,920
+Hocam fizikte bu sene mesela 2 tane mazeret oluyormuş hocam. 1. ve 2. vizenin.
+
+767
+01:51:18,360 --> 01:51:26,039
+Hayır, hayır. Anlamadım. 1. ve 2. vizenin mazeretleri tek oluyordu. Yüz yüze eğitimde.
+
+768
+01:51:26,612 --> 01:51:37,931
+Şimdi ne olur bilmiyorum. Tamam mı? Yani bilmediğim bir şey de konuştuk. Yani ben eski şeyi söylüyorum. Eskiden, birinci vizeden de olsa, ikinci vizeden de olsa tek soru sorulurdu.
+
+769
+01:51:38,311 --> 01:51:39,271
+Anladım hocam, teşekkür ederim.
+
+770
+01:51:39,411 --> 01:51:51,751
+Burada belki farklı hazırlamazlar, hazırlamazlar, onu bilmiyorum. Tamam mı? Yani tek oluyor diye biliyordum eskiden. Ben kendi bilgim tabii. Siz kendiniz mazerete giren araştırırsınız, şey yapsın. Tamam mı?
+
+771
+01:51:52,115 --> 01:51:58,876
+Ama şu var, zaten biliyorsunuz, sonuçta 1. vizeye kadar, yarın bildiğimi unutayım, ikinci vizeye giren insan ne demektir?
+
+772
+01:52:00,255 --> 01:52:02,855
+Sen zaten ne sorsa sorsun, yapacaksın demektir değil mi?
+
+773
+01:52:03,855 --> 01:52:07,235
+Sen zaten 2. vizeye girmişsin, 2. vizenin hazırsın.
+
+774
+01:52:08,255 --> 01:52:09,015
+Buna baktık, evet.
+
+775
+01:52:10,775 --> 01:52:16,675
+Hatta ben öğrenci olsam, 1. vizeden hepsinden girmek isterim.
+
+776
+01:52:16,775 --> 01:52:18,956
+Eskiden olan konular daha çok unutulur yani.
+
+777
+01:52:20,180 --> 01:52:22,020
+Yani sizin lehiniz olan bir şey aslında.
+
+778
+01:52:22,340 --> 01:52:25,300
+Hocam, her isteyen girebiliyor mu ona, yoksa sadece giremeyenler mi giriyor?
+
+779
+01:52:26,060 --> 01:52:29,000
+Yok, giremeyenler giriyor ya, o mazereti kabul edilecek.
+
+780
+01:52:29,440 --> 01:52:31,980
+Öyle diyince bir şey dedim hani, herkes...
+
+781
+01:52:31,980 --> 01:52:39,040
+Hayır, hayır, başvuruyorsun, kabul ederlerse zaten mazerete girecekler belli oluyor zaten.
+
+782
+01:52:40,000 --> 01:52:40,920
+Tamamdır, anladım hocam.
+
+783
+01:52:41,020 --> 01:52:42,720
+Herkes girmiyor, yok, öyle bir şey yok.
+
+784
+01:52:43,039 --> 01:53:08,039
+O da mesela başvuruyor, araştırıyor. Ne bileyim, internette resmini çekiyor, bilmem ne yapıyor. Bizim Uzem onu kontrol ediyor. Evet, bu çocuk sıkıntı yaşanmış diyor. Ama bir öğrenci bana mail atmıştı. Ben internetten düştü dedi ama ben karışmadım. O malzene tak kalsa da biraz bana şüpheli geldi. Çünkü bir insan...
+
+785
+01:53:09,716 --> 01:53:11,716
+15'i soruya kadar çözmüş.
+
+786
+01:53:11,716 --> 01:53:14,716
+Ama aradakileri yapamamış.
+
+787
+01:53:14,716 --> 01:53:17,716
+Anlatabiliyor muyum? Aradakileri yapamamış.
+
+788
+01:53:17,716 --> 01:53:21,716
+Ondan sonra 15'e gelmiş.
+
+789
+01:53:21,716 --> 01:53:26,716
+Zaten yaptıktan da çok yanlışlar vardı.
+
+790
+01:53:26,716 --> 01:53:29,716
+Bana bu düşmüş biraz garip geldi ama...
+
+791
+01:53:29,716 --> 01:53:32,716
+Ben hafiye değilim.
+
+792
+01:53:32,716 --> 01:53:36,556
+Ona onlar karar versinler. Ben olsam mazeret vermezdim.
+
+793
+01:53:37,043 --> 01:53:49,184
+Çünkü bir insan öyle düşerse sırayla yapar ve 3'ün sonundan sonra düşer internetler. Ama öyle yapmamış. 2'yi yapmış yanlış, 3'ü yapmış yanlış, 5 doğru, 6 yanlış, 15'e bakmış bilmem ne. Ondan sonra düşmüş.
+
+794
+01:53:50,963 --> 01:53:59,443
+Pek bana içime sinmedi o arkadaşın isimini de söylemek istemiyor. O hakkına girecekse girsin bir şey diyebilirim ama benim içime sinmedi.
+
+795
+01:54:00,323 --> 01:54:03,083
+Çünkü ben karar vermedim. Bana karar verse ben girme derdim.
+
+796
+01:54:03,731 --> 01:54:09,572
+giremezsin derdim yani böyle. Çünkü Zoom'da öyle gözüküyor ki sizin böyle mektup şey gibi gözüküyor, harita gibi gözüküyor.
+
+797
+01:54:10,032 --> 01:54:17,792
+Şimdi çocuklar biz ara verelim, 11 oldu hiç söylemiyorsunuz. Tamam mı? 15 geçe başlayalım sorulara. Tamam mı?
+
+798
+01:54:20,172 --> 01:54:24,832
+Anlaştık mı? Tamam hadi. 11-15 geçe devam edeceğiz. Hadi çocuklar.
+
+799
+01:54:25,939 --> 01:54:27,899
+kapat, şey yapıyorum hadi, ara veriyorum.
+
+800
+01:54:28,099 --> 01:54:29,359
+Hocam çeyrek geçeyim dediniz.
+
+801
+01:54:29,719 --> 01:54:31,199
+Çeyrek geçeyim, çünkü 11 olmuş zaten.
+
+802
+01:54:31,659 --> 01:54:32,299
+Tamamdır hocam.
+
+803
+01:54:32,659 --> 01:54:32,859
+Tamam.
+
+804
+02:14:20,180 --> 02:14:24,140
+Evet çocuklar, tekrar merhaba. Sesim geliyor mu çocuklar?
+
+805
+02:14:25,039 --> 02:14:25,739
+Geliyor hocam.
+
+806
+02:14:25,980 --> 02:14:32,159
+Tamam, hadi başlayalım. Şu grafik izleyelim. İlk etapta, bu basit grafik şimdi, tamam mı? Daha detaylı değil.
+
+807
+02:14:36,724 --> 02:14:43,963
+Evet. Bunun tanım kimesi nedir? Kondom olduğu için x-sonsuz artı sonsuzdur. Türevi.
+
+808
+02:14:47,539 --> 02:15:13,000
+türevini aldık, köklerini bulduk. İkinci türevi hesapladık. Bunları tablo üzerinde gösteriyoruz. Bunda asimptotu var mı? Yok. Asimptotu yok. Neden? Neden asimptotu yoktu? Bunlar sınava dahildi ama şimdi sınava dahildi. Bakıyoruz. Mesela x'e artı sonsu koyduğumuz zaman sonuç.
+
+809
+02:15:13,939 --> 02:15:33,539
+x sonsuz çıkıyor, x sonsuz koyduğun zamanda artı sonsuz çıkıyor. Demek ki yataya, ilk asimptotu da yok, bölüm şeklinde değil. Bir de paydalı değil. Bunu sonsuz yapan x değeri yok, düşeye asimptotu yok, yataya asimptotu yok. Tamam. Peki o zaman asimptot yoksa neyi kullanacağız? Şu limitleri kullanacağız. Yani.
+
+810
+02:15:34,131 --> 02:15:44,871
+x yerine sonsuza giderken y-sonsuz. Onu tabloda göstereceğiz. y yerine x yerine x-sonsuz korsak da artı sonsuz olacak. Nerede koyacağız? En yüksek dereceli terimde koyacak. Devam ediyoruz.
+
+811
+02:15:46,691 --> 02:16:01,331
+Tanım kürmesi x-sonsuz artı sonsuz. Evet. Burada basit bir şey sonuçta. Evet. Birinci türev'ün kökleri 1-3, iki türev'ün kökü 2. İşaretlerine bakalım.
+
+812
+02:16:02,579 --> 02:16:09,599
+an işareti eksi olduğu için en son kökten sonrası eksi oluyor. Artı artı sonra eksi eksi diye devam ediyor.
+
+813
+02:16:09,819 --> 02:16:19,840
+3 türev baktık. 2. Burası eksi olduğu için köke kadar, 2. Köke kadar eksi kökten önce de ters işareti artı oluyor.
+
+814
+02:16:20,619 --> 02:16:29,260
+Buradan acaba büküm noktası var mı bakıyoruz. Evet. Konkallık mesela. Burası nedir? Yukarı konkal.
+
+815
+02:16:29,747 --> 02:16:54,128
+yukarı konkal, aşağı konkal, aşağı konkal, azalan değil mi? Azalan, artan, artan, azalan, azalan. Burası büküm noktası oluyor o zaman, büküm noktası. Burası minimum, azalmış artmış, burası artmış, azalmış maksimum nokta. Devam ediyoruz.
+
+816
+02:16:57,459 --> 02:17:00,939
+Bildiğimiz şeyler tamam mı? Geldik. Şimdi grafikleri nasıl uygulayacağız bakalım.
+
+817
+02:17:40,468 --> 02:17:42,468
+O sayfayı buradan, neyse, geri geri.
+
+818
+02:17:43,847 --> 02:17:46,488
+Evet, şimdi mouse'la sonra. Tamam, buradan bu kadarlık yeter.
+
+819
+02:17:48,148 --> 02:17:50,648
+x eksi sonsuz iken y artı sonsuz oluyordu.
+
+820
+02:17:51,108 --> 02:17:53,028
+x artı sonsuz iken de eksi sonsuz oluyordu.
+
+821
+02:17:53,608 --> 02:17:56,268
+O zaman nereden başlıyoruz? Bu noktaları çiziyoruz önce.
+
+822
+02:17:56,888 --> 02:17:57,567
+0'a 3.
+
+823
+02:17:59,708 --> 02:18:00,907
+0'a 3, burası.
+
+824
+02:18:01,308 --> 02:18:02,347
+y ekseni kestiği nokta.
+
+825
+02:18:06,484 --> 02:18:09,544
+1-1, şu aşağıdaydı, biraz aşağıda kaldı.
+
+826
+02:18:13,716 --> 02:18:39,316
+Şurası 1x'dir. Sonra 2x'ye 0, ekseni kesti. 2, 1, 2x1 burası. 3x'e 3 burası. Bakıyoruz nereden? x'in eksi sonsu, y'nin artı sonsu. Kaçıncı bölge? İkinci bölgeden azalıyor. Bakın azaldı, azaldı, azaldı, azaldı. 1x'i bir noktasına kadar geldi. Buradan böyle arttı.
+
+827
+02:18:40,755 --> 02:19:01,815
+Bakın şöyle, yukarı konkav olarak arttı. Fakat burada büküm noktası oldu. Konkavlık değişti. Böyle geldi. Nereye gitti? x'in artı sonusunu yendi, x sonusuna gitti. Grafik bu arkadaşlar. Anlamadın. Bir daha anlatacağım.
+
+828
+02:19:05,203 --> 02:19:25,123
+Evet, bunları çözerim çünkü birinci vizeden çıkmayacak diye bir şey söz konusu değil. Evet, burada ne yapmış? Belirsizlik var. Hopital kuralı alınmış ve eksiği bölü 2 bulunmuş. Burada da öyle. 0 bölü 0 çıkmış. Hopital kuralı uygulanmış. Ve sonuçta da 2 bölü 2'den 1 çıkmış.
+
+829
+02:19:35,987 --> 02:19:39,587
+Buradan limitli tamam, bunları geçelim artık.
+
+830
+02:19:39,587 --> 02:19:41,327
+Limitlerle boş kare etmiyoruz.
+
+831
+02:19:41,327 --> 02:19:42,468
+Devam edelim.
+
+832
+02:19:47,283 --> 02:19:57,083
+Geçiyorum. Bunlar birinci bize de anlatılmıştı. Üstelik birisinde anlatılmıştı. Başka sorunlara bakacağım.
+
+833
+02:20:00,664 --> 02:20:02,304
+Bu da parametreküler.
+
+834
+02:20:04,484 --> 02:20:07,623
+Bir bize de çıkmıştı ya d kare y böl, d t kare filan.
+
+835
+02:20:09,243 --> 02:20:11,144
+D x kare falan var da bunlar.
+
+836
+02:20:14,515 --> 02:20:15,396
+devam ediyoruz.
+
+837
+02:20:17,536 --> 02:20:18,096
+Evet.
+
+838
+02:20:19,655 --> 02:20:21,975
+Evet, en küçük değerini soruyor. Bir dakika bakalım.
+
+839
+02:20:28,724 --> 02:20:30,724
+En küçük değerini buluruz.
+
+840
+02:20:32,724 --> 02:20:35,724
+Evet, bir beş nokta aramındaki en küçük değerini buluruz. Bakalım.
+
+841
+02:20:36,724 --> 02:20:38,724
+Önce türevini aldık.
+
+842
+02:20:43,572 --> 02:20:48,832
+Hocam şu altta ve üstteki küçük oklarla ince ayar yapabilirsiniz aşağı yukarı.
+
+843
+02:20:49,832 --> 02:20:50,711
+Hangi oklarla?
+
+844
+02:20:51,412 --> 02:20:55,371
+O yaptığınız yerin küçük bir ok var hocam o sütunda en sağdaki.
+
+845
+02:20:55,752 --> 02:20:56,012
+Aynen.
+
+846
+02:20:57,351 --> 02:20:59,172
+Onlarla küçük, ince ince.
+
+847
+02:20:59,632 --> 02:21:03,152
+Tamam abi teşekkür ederim ya bir şey daha öğrenmiş oldum.
+
+848
+02:21:03,452 --> 02:21:03,891
+Aynen hocam.
+
+849
+02:21:03,891 --> 02:21:04,391
+Tamam ya.
+
+850
+02:21:05,051 --> 02:21:06,992
+En üst yukarı hocam yukarı gitmek.
+
+851
+02:21:06,992 --> 02:21:09,672
+Valla tamam anladım. Şimdi buraya baktık tamam.
+
+852
+02:21:10,420 --> 02:21:31,180
+yukarıya da bastığım zaman yukarı çıkıyor. Tamam. Öğrendik. Ne yapalım? Evet. Teknolojiyi öğreneceğiz. Evet. f'i seçti. x küp eksi 3x kare eksi 9x artı. Bu aralardaki en küçük değerini soruyoruz. Önce türevini aldık. Kökleri bulduk. F1'i hesapladık. Eksi 10 çıktı.
+
+853
+02:21:33,043 --> 02:21:36,723
+Bir de f3'i hesaplayacağız, f5'i hesaplayacağız. Tamam mı?
+
+854
+02:21:37,144 --> 02:21:39,644
+f1'i hesapla, f5 bu uç noktalar.
+
+855
+02:21:40,304 --> 02:21:42,783
+x 10, 6. Bir de şeyi hesaplayacağız.
+
+856
+02:21:47,324 --> 02:21:52,263
+Türevdeki değerleri hesaplayacağız. x 26, 10. O zaman en küçük değerini bu şekilde bulacağız.
+
+857
+02:21:53,004 --> 02:21:56,324
+Bu bir yerde mutlak mümum oluyor, değil mi? Mutlak mümum oluyor.
+
+858
+02:21:58,420 --> 02:22:13,360
+yerel maksimum olduğuna göre f1 değerini bulunduruz diyor. Bakalım, 2'de yerel maksimum olduğuna göre ne yapacağız? 2'de bunun türevi sıfır olacak. Buradan a'yı bulacağız. Evet, türevini aldık. Tamam.
+
+859
+02:22:17,556 --> 02:22:26,336
+Peki, türevini aldık. Türevinde 2 koyduk. A'yı da 24 diye bulduk. Şimdi f1 değerini bulacağız. Bu kolay bir soru oldu artık.
+
+860
+02:22:27,175 --> 02:22:27,396
+Peki.
+
+861
+02:22:29,936 --> 02:22:34,716
+x eşitlik sıfır sorusu noktasındaki türev formülleri bu. Onu hatırlatmış.
+
+862
+02:22:37,376 --> 02:22:41,556
+Bunun değerini buldunuz diyor. Bu nedir? Direkt f üstü 2'dir değil mi? Bunun değeri.
+
+863
+02:22:42,675 --> 02:22:57,635
+nedir? Direkt f3x2'dir. Bunu öğretmek için çözülmüş. Bazı önemli sorular da eski konularda mı çözüyoruz? Tamam bu değerli soru. Bu arada da testte bunun ne olduğunu direkt türevini alır. Bulurum 2 saniye bu kadar. İyi uğraşın.
+
+864
+02:23:03,987 --> 02:23:21,007
+Bu farklı bir soru, pardon. Bu şey başka, fx, eksi f2, x eksi 2 yerine koyduk. Bu f üstü 2 demek, tamam. Şimdi f üstü 2 de bunlara hesaplamaya gerek var mı? Yok, türev alı 2 korudu ya, tamam.
+
+865
+02:23:26,067 --> 02:23:28,707
+Bu geçiyorum. Türevlilik 1. vize konusuydu.
+
+866
+02:23:32,084 --> 02:23:33,924
+Evet, şimdi başka bir tane bakıyorum.
+
+867
+02:24:05,683 --> 02:24:08,003
+Bakalım burada var mı? Şöyle bir inceleyeceğim.
+
+868
+02:24:09,663 --> 02:24:11,583
+Burada tesadüfen çektim.
+
+869
+02:24:13,123 --> 02:24:14,863
+Yoksa başka bir soruya bakacağım.
+
+870
+02:24:17,804 --> 02:24:19,663
+Çünkü bunların içinde şeyler olabilir. Neydi bu?
+
+871
+02:24:20,203 --> 02:24:23,543
+Çözüme sahip olduğunu gösteriyor. Tamam, bu sınav birinci sınavda vardı.
+
+872
+02:24:24,863 --> 02:24:25,783
+Buna baktık.
+
+873
+02:24:27,383 --> 02:24:29,804
+Tarım hükümesi. Bu tamamen birinci bir zehir dedik.
+
+874
+02:24:32,852 --> 02:24:33,632
+bakıyorum.
+
+875
+02:24:38,227 --> 02:24:40,987
+Evet, bunlara bakıyorum. Bunlar benimle bize ödülür.
+
+876
+02:24:49,556 --> 02:24:50,988
+ve
+
+877
+02:24:58,611 --> 02:24:59,451
+Burada var mı?
+
+878
+02:25:01,231 --> 02:25:03,831
+Sabit bir fonksiyon olduğunu gösteririz diyor.
+
+879
+02:25:05,651 --> 02:25:06,931
+Hiçbir şey göremiyoruz.
+
+880
+02:25:08,051 --> 02:25:09,131
+Göremiyorsunuz peki.
+
+881
+02:25:10,091 --> 02:25:10,371
+Peki.
+
+882
+02:25:12,791 --> 02:25:13,471
+Bir saniye.
+
+883
+02:25:16,991 --> 02:25:17,351
+Şimdi.
+
+884
+02:25:19,351 --> 02:25:20,451
+Görüyor musunuz?
+
+885
+02:25:20,711 --> 02:25:21,091
+Evet.
+
+886
+02:25:21,091 --> 02:25:21,771
+Tamam.
+
+887
+02:25:22,331 --> 02:25:23,511
+Atılatın da çünkü.
+
+888
+02:25:24,915 --> 02:25:29,075
+bazen böyle zoomdan dolayı bir anda sistem değişiyor. Evet, bakalım.
+
+889
+02:25:30,735 --> 02:25:37,295
+Sabit fonksiyon olduğunu gösteririz ve fonksiyon değerini buluruz diyor.
+
+890
+02:25:37,675 --> 02:25:40,995
+Peki bir fonksiyon, sabit fonksiyonsa?
+
+891
+02:25:42,255 --> 02:25:43,335
+Türev her yerde sıfır.
+
+892
+02:25:43,515 --> 02:25:47,595
+Türev sıfırdır değil mi? O zaman bakalım bunun türevi sıfır mı?
+
+893
+02:25:48,084 --> 02:25:55,544
+Tamam mı? Bakalım. Hem de burada türev formüllerini hatırlatmak istiyorum tekrar. Türevi sıfır mı? İçinin türevi nedir?
+
+894
+02:25:57,564 --> 02:26:12,804
+Aksinus x, içinin türevi nedir? Şu. Önce sırayla yapmamış arkadaşlar. İçinin türevi bu. Peki. Nasıl bulmuş?
+
+895
+02:26:13,652 --> 02:26:19,412
+Üstünün türevi 1 çarpı fayda, eksi faydanın türevi 1 çarpı x, eksi 1 bölü faydanın karesi olmuş.
+
+896
+02:26:19,612 --> 02:26:31,632
+Tamam. Bölü, hani aksiyon türevi şuydu ya, u üstü bölü, 1 eksi u kare. Tamam mı? 1 eksi u kare.
+
+897
+02:26:36,755 --> 02:26:48,435
+1-u kare. Aksinüsün türevini hatırlatalım. Sonra aktan canatı türev neydi? O da u üstü bölü 1 artı u kare.
+
+898
+02:26:49,335 --> 02:26:53,975
+Siz ilk etapta yapacağınız türev ve integral formüllerini ezberleme.
+
+899
+02:26:56,244 --> 02:26:58,764
+Burada özellikle türevinin de integral...
+
+900
+02:26:58,764 --> 02:27:01,123
+Çünkü kısmı integrasyonu da mesela.
+
+901
+02:27:01,244 --> 02:27:03,564
+Ark taten ise o dediğiniz zaman türevi lazım.
+
+902
+02:27:03,744 --> 02:27:05,424
+İntegrada da türevimiz lazım.
+
+903
+02:27:06,004 --> 02:27:06,864
+Devam ediyorum.
+
+904
+02:27:08,644 --> 02:27:09,543
+Burada ne oldu?
+
+905
+02:27:10,504 --> 02:27:13,104
+Bakalım, yine alışkanlık olmuş ya.
+
+906
+02:27:13,744 --> 02:27:15,963
+Yukarıdaki çizgi arkadaşınız bana bir şey öğretti.
+
+907
+02:27:16,043 --> 02:27:16,944
+Çok önemli bir şey öğretti.
+
+908
+02:27:17,844 --> 02:27:18,864
+Türevi aldık.
+
+909
+02:27:19,504 --> 02:27:20,804
+Burada sadeleştirdik.
+
+910
+02:27:21,024 --> 02:27:22,784
+Birbirini götürdü, safa çıktı. Ne güzel.
+
+911
+02:27:25,556 --> 02:27:39,335
+O zaman sabit fonksiyon. Peki, sabit fonksiyonsa, bu sabit fonksiyonun değeri nedir? Ne koyalım biliyor musunuz? En güzel benim aklıma ne geliyor biliyor musunuz? x'se de 1 yazın. 1 yazmayın. 1 yazın, 1 yazın. Niye biliyor musunuz?
+
+912
+02:27:39,816 --> 02:27:51,796
+Peki, 1 yazarsanız aksiniz 0 çıkıyor. Çünkü ne yazarsanız yazın, sabit olduğuna göre aynı değer çıkacak. Mesela 0 da koyabilirsiniz. 0 korsanız aksiniz eksi 1 olur.
+
+913
+02:27:52,404 --> 02:28:17,904
+o da eksi p bölü 2. Değil mi? Ark süre 0'da, arkaryakta 0 olur. Ya da x'e 1 koydunuz. Burası 0 olur. Burası p bölü 4 olur. Değil mi? Tanjant bir de. Sonuçta 1 koymuş ve sonuç eksi p bölü 2. Ne yazarsan ama sakın gidip başka farklı değerler yapmayın. Mesela 5, 7, 8. O da olur da oradan şunu bulamayabilirsiniz.
+
+914
+02:28:19,200 --> 02:28:46,319
+tavsiyem ya 1 koyun ya da 0 koyun. Buradan da fonksiyon x p bölü 2 imiş demek. Şu gördüğünüzü sadeleştirirseniz eğer, tamam mı? Mesela çeşitli ödeşiklerle, x p bölü 2 de çıkar. O da ayrı bir şey. Devam ediyoruz. Baktım. Yine alışkanlık tabii. Kendimi alıştırmam lazım küçük tuşa. Bu arkadaşımıza
+
+915
+02:28:47,188 --> 02:28:50,847
+Millet borcum var. Hiç kimse de sormadı.
+
+916
+02:28:51,648 --> 02:28:56,887
+Baya, evet, geldik. Şimdi buraya baktık. Şu alçı aşağıdan devam ediyorum şimdi güzel bir sırayla.
+
+917
+02:28:57,867 --> 02:29:05,507
+Buna baktık. Burada da, evet, değişken dönüşümü sınavda çıkabilir.
+
+918
+02:29:06,507 --> 02:29:12,028
+L'in x'e t diyorum, 1 bölü x'te x. Göremeyebilirsiniz, tamam mı? Bak, bu çıktı.
+
+919
+02:29:12,819 --> 02:29:15,220
+Bunun da formülü var. Nedir bu formülür?
+
+920
+02:29:17,020 --> 02:29:17,500
+L'en
+
+921
+02:29:21,843 --> 02:29:42,144
+t artı kare kök, 1 artı t kare diye hatırlatayım bunları. Bir eksi kalması. Çünkü trigonometrik dönüşüm uygulamayınca bu formülü bilmeniz gerekir. Tamam mı? Bakın, bunun formülü bu. Evet.
+
+922
+02:29:43,283 --> 02:30:10,283
+Ondan sonra da değerleri yazacaksın. Bakın tekrar söylüyorum. tt bölü 1 artı, bunu unutmuş olabilirim, şu anda tamamlıyorum. 1 artı t kareler, L'n'te. x'i burası şey olsaydı, t kare eksi 1 olsaydı, kare kökün içi, bunu not edin bir kemara ise t kare eksi 1 olsaydı, kare kökün içi, bu sefer burası kare kökün içi,
+
+923
+02:30:10,656 --> 02:30:14,116
+t kare eksi 1 olurdu.
+
+924
+02:30:15,016 --> 02:30:18,236
+Tek fark o. t kare artı 1'de t kare artı 1 yazılıyor.
+
+925
+02:30:18,716 --> 02:30:20,976
+t kare eksi 1'de t kare eksi 1 yazılıyor.
+
+926
+02:30:21,416 --> 02:30:22,856
+Bunu da formül olarak bilelim.
+
+927
+02:30:23,496 --> 02:30:26,076
+Sonra da üst sınır, alt sınırı korusun. Önemli değil.
+
+928
+02:30:26,276 --> 02:30:28,036
+Demek ki şu formülü yeni verdim bugün.
+
+929
+02:30:28,956 --> 02:30:30,956
+1 artı kare küksünde 1 artı t kare.
+
+930
+02:30:31,956 --> 02:30:36,876
+Ben tabii trigonometrik dönüşümlerin dahil olacağını düşündüğüm için bu formülü vermek istemedim.
+
+931
+02:30:36,876 --> 02:30:38,016
+Yani.
+
+932
+02:30:38,804 --> 02:30:47,324
+Ben olsam, tabi burada formül yerine t yerine tanjant dönüşü uygulandım. Ama o konu hariç olduğuna göre bunu vermek zorunda kaldım şimdi.
+
+933
+02:30:48,024 --> 02:30:50,963
+İki tane formül var, tekrar söylüyorum. Şuraya yazayım formülleri.
+
+934
+02:31:06,515 --> 02:31:20,515
+Bu ln x artı kare kök x kare artı a kare. Bu integral tablosundaki formül.
+
+935
+02:31:22,175 --> 02:31:31,296
+Dediğim gibi bunu vermek sevmiyorum ama mecbur kaldım. Eğer burası eksi olursa burası da eksi oluyor.
+
+936
+02:31:31,924 --> 02:31:35,924
+Bunu da vermiş olalım. Onu tamamlamak makamına.
+
+937
+02:31:37,204 --> 02:31:44,564
+Bu da tamam. Şunu söyleyeceğim. Önümüzdeki hafta, sınav haftası da değilse, yani öyle gözüküyor.
+
+938
+02:31:45,224 --> 02:31:50,564
+Yarın ve önümüzdeki haftada ikinci vizeye dönük tabii. Finali karıştırmayacağım. Uygulama çözeceğim.
+
+939
+02:31:51,204 --> 02:31:58,804
+Cuma'ya göre de sınava girersiniz. Saatiniz 18.20 arası. Yanlışsa düzeltin çocuklar.
+
+940
+02:31:59,412 --> 02:32:01,631
+25 Aralık, Cuma.
+
+941
+02:32:02,432 --> 02:32:06,072
+İyi gün, hiç olmazsa 2 ders daha yapıyoruz o hafta. Gayet güzel oldu.
+
+942
+02:32:06,072 --> 02:32:06,691
+Evet.
+
+943
+02:32:09,191 --> 02:32:09,912
+Peki.
+
+944
+02:32:15,059 --> 02:32:23,779
+Ondan sonra 2 hafta kalıyor galiba. Son hafta 14. haftada muadene sınavları filan şeyler ikramı. Yani o geri kalanında da final uygulaması yapıyorum. Devam ediyorum.
+
+945
+02:32:23,779 --> 02:32:24,279
+Peki.
+
+946
+02:32:26,739 --> 02:32:29,799
+Buradan silelim bunları artık. Tamam mı?
+
+947
+02:32:33,203 --> 02:32:34,644
+Evet, bakalım.
+
+948
+02:32:37,224 --> 02:32:39,103
+Şu sildik formülleri de verdim.
+
+949
+02:32:39,384 --> 02:32:40,943
+Kıvı olarak da verdim.
+
+950
+02:32:43,943 --> 02:32:44,783
+Peki.
+
+951
+02:32:53,811 --> 02:33:03,292
+Evet, burada tabii tancam t dönüşümüyle yapmış. Biz onu bıraktık, tamam mı? Bu şurada değil, formül verdim onun için. Taplıda onu vermek zorundayız. Bunu sildim. Tamam, bu yok.
+
+952
+02:33:04,191 --> 02:33:17,612
+Yani bu şöyle, yani bu çözüm, ha siz biliyorsanız bununla çözül sınavda, tamam mı? Yani dair değil ama bu soruda bunu da kullanabilirsin. Tancam dönüşümü uygulama çöz, fark etmez.
+
+953
+02:33:18,291 --> 02:33:22,371
+Ama tancansız o formülde sorulabilir. Onu söylemek istiyorum.
+
+954
+02:33:24,111 --> 02:33:27,592
+Trigonometrik dönüşümleri biliyorsanız niye uygulamayın? Test nasıl olsa tamam mı?
+
+955
+02:33:28,051 --> 02:33:31,412
+Kolay hangisiyse onunla çözün. Geçiyoruz. Bunları yaptı. Dair değil.
+
+956
+02:33:32,592 --> 02:33:35,171
+Türev tarımı da tamam geçtik. Buna baktık.
+
+957
+02:33:36,851 --> 02:33:37,931
+Bu nedir?
+
+958
+02:33:39,611 --> 02:33:42,051
+Bu da sorulabilir.
+
+959
+02:33:42,051 --> 02:33:43,051
+Neden?
+
+960
+02:33:47,476 --> 02:33:52,156
+tabi bunu burada direkt şeyi yok biliyor musun? Burada basit kesileriyle çözmüş.
+
+961
+02:33:55,540 --> 02:34:20,520
+Yani değişken dönüşümüyle çözmüş. Ama bu, tabii şu halde yapılırsa, şu andaki çözüm dahil değil ama bu başka türlü çözülebilir. Çünkü onu şöyle söylemek istiyorum. Bu dönüşümü uygulayıp şu hale getirebilirsiniz. Görmeyi de yapabilirsiniz. Yani burada tereddütte kaldım. Burada mesela u artı değil mi? Yani bu bu şekilde değil de.
+
+962
+02:34:29,587 --> 02:34:44,768
+Mesela şu paydaya şu o kare artı 3'ü artı 2'ye t diyerek mesela değişken dönüşümüyle çözülebilir. Onun için diyorum 2u artı 3 de o.
+
+963
+02:34:49,876 --> 02:35:17,376
+t, t dersiniz. Tamam mı? Bu yolla çözmüyorum. Şu yazdığımız rasyonel kestelerin integralini görüyoruz. Bu şekildeki yöntemi ikinci vizeye dahil değil. Finale dahil. Ama bu soru diyorum şu halde istenirse buna u t diyerek dt. Yani biz 2u artı 3d u dedik. Tamam mı? Yani bu başka bir çözülebilir. 7 parantezini alırız.
+
+964
+02:35:20,819 --> 02:35:22,559
+ne olur? u artı
+
+965
+02:35:28,915 --> 02:35:30,475
+6 bölü 7 olur.
+
+966
+02:35:33,615 --> 02:35:37,475
+Sonra 2 ile çarpıp 2 ile böleriz. 7 bölü 2.
+
+967
+02:35:41,203 --> 02:35:43,203
+2u artı
+
+968
+02:35:43,203 --> 02:35:47,123
+12 bölü 7
+
+969
+02:35:47,123 --> 02:35:51,504
+bir de 2 ile çarptık.
+
+970
+02:35:51,603 --> 02:35:54,224
+Sonradan da 3 ekleyip 3 çıkartabiliriz.
+
+971
+02:35:59,092 --> 02:36:07,792
+Yani bu şekilde yapıp 2u artı 3'ü oluşturduk. Geri kalanları da devam edip tam kare ile çözebiliriz.
+
+972
+02:36:07,792 --> 02:36:20,891
+Şimdi bunu daha sonra buna yarın ve önümüzdeki hafta tekrar bu soruya daha net çözüm hazırlayayım da onun üzerinde anlatayım. Çünkü çok işlemi var.
+
+973
+02:36:24,308 --> 02:36:41,488
+Ama çıkmayabilir bu soru yani. Başka bir örtebi var da o bakıma geldi ama bu rasyonel kesilir geldiği için, şu değişken dönüşümünde düzgün bir şeyler çıksaydı, bunun türev de burada çıksaydı, olabilirdi ama bakıyoruz evet. Ama şu şekildeki şu çözüm sınava dahil değil.
+
+974
+02:36:44,147 --> 02:36:54,987
+Rol teoremi uygulanabilir mi? Ha bunu çözelim bari. Rol teoremi uygulanabilir mi? Eğer uygulanabilirse teoremi sağlayan x değerini bulursa. Hadi bakalım. Rol teoremi şuydu biliyorsunuz.
+
+975
+02:36:54,987 --> 02:36:57,688
+Sadece onu da anlatayım. Rol teoremi şuydu.
+
+976
+02:36:59,700 --> 02:37:25,819
+Evet, bitiriyor zaten. Dersimiz de bitiyor. Biraz sabır. Şimdi bir fonksiyon var değil mi? Buradan geçiyor. Buradan geçiyor. Şöyle anlatmıştım ya, uçak buradan geçiyor. Buraya geliyor. Ya boşluğa kapılır, şey yapar ama düşmez. Ya da yüksekten gider ve sonuçta illaki bir yerde en az bir tane değil mi? x80'de paralel f'yi vardı. Yani en az bir noktada mesela f üstü c sıfırdır. Onu anlatmaya çalışıyor. Ama nerede?
+
+977
+02:37:28,468 --> 02:37:54,628
+Yani en az bir tane, yani a ile b arasında en az bir tane c var. Birkaç tane de olabilir, tamam mı? Bu c değerini bulmayan rotörü uygulamak diyoruz. Ama bu fonksiyonun sürekli olması şart, türevde olması şart. Bir de f1 eşittir, f3 olması şart. Yani ikisi de aynı şeyden, yükseklikten geçmesi lazım. Yani şunun aynı hizada olması gerekir.
+
+978
+02:37:55,283 --> 02:37:57,443
+Buna Rout öğrenmi diyoruz.
+
+979
+02:37:58,884 --> 02:38:00,724
+Bu sınava dahil
+
+980
+02:38:04,468 --> 02:38:25,708
+Devam ediyorum. Burada sürekli olacak. Sürekli zaten değil mi? Üstel fonksiyonları her yerde sürekli olacak. Türev'ini aldık. Türev'i de, şurası hep pozitiftir zaten. Bunu sonsuz yapan değer yok. Bir de f1 eşittir, f3, troll theorem uygulanabilir. Devam ediyorum. f3'e eşittir. Bunu aldık. Tamam mı?
+
+981
+02:38:26,036 --> 02:38:42,256
+c koyduk. Bunu sıfır eşitledik. Evet, bu sıfır yapan iki değeri var ve 1 ile 3 arasında. Tamam, uygulamayız. Bitti. Bu impropri integral. Ortalama değer teoremi de bir tane çözsek iyi ama buradan yok. Evet arkadaşlar, hoşçakalın.
+
+982
+02:38:43,443 --> 02:38:44,943
+Yarın görüşmek üzere.
+
+983
+02:38:45,583 --> 02:38:46,783
+Görüşürüz hocam.
+
+984
+02:38:47,023 --> 02:38:48,304
+İyi günler hocam.
+
+985
+02:38:48,484 --> 02:38:48,984
+İyi günler.
+
+986
+02:38:49,443 --> 02:38:50,903
+Görüşürüz hocam. Allah'a emanet olun.
+
+987
+02:38:50,903 --> 02:38:52,523
+Yarın da siz de Allah'a emanet olun.
+
+988
+02:38:52,783 --> 02:38:54,923
+Haftaya da dediğim gibi ders yapmak istiyorum tabii.
+
+989
+02:38:55,304 --> 02:38:58,403
+Ben yapacağım. Bana bırakırlarsa yapacağım zaten ki.
+
+990
+02:38:59,063 --> 02:39:01,644
+Vize haftası olmadığı için de ders olacak zaten.
+
+991
+02:39:02,324 --> 02:39:03,863
+Hep uygulama çözeriz tamam mı?
+
+992
+02:39:04,003 --> 02:39:04,223
+Peki.
+
+993
+02:39:04,923 --> 02:39:05,363
+Tamamdır.
+
+994
+02:39:05,543 --> 02:39:06,223
+Hoşçakalın.
