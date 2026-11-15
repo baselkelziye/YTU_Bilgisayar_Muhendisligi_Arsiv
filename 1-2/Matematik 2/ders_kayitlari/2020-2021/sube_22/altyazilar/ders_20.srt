@@ -1,0 +1,2963 @@
+1
+00:00:14,323 --> 00:00:16,323
+Merhaba arkadaşlar, hoş geldiniz.
+
+2
+00:00:27,699 --> 00:00:30,219
+Evet, nasılsınız dünden beri? Her şey yolunda mı?
+
+3
+00:00:34,643 --> 00:00:35,704
+Merhaba, başlar.
+
+4
+00:00:56,531 --> 00:01:21,811
+Harika. Bu arada sınav sonuçlarınız açıklandı. Bu sabah iletildi bizlere de. Ama sabah dersim olduğu için vaktim olmadı ve dersten sonra ancak bir grubu girebildim. Sizin grubunuzu, bu dersimiz biter bitmez gireceğim. Tamam mı notlarınızı? Şimdi sistemde benim üzerime tanımlandığı için ben gireceğim.
+
+5
+00:01:21,811 --> 00:01:30,171
+dersten bir yarım saat sonra falan, USİS'te bir sıkıntı olmazsa, hemen gireceğim notlarınıza.
+
+6
+00:01:34,995 --> 00:01:43,915
+Nasıl geçti? Gerçi ders sınavlarınız dün çok yorum yapmadınız bilmiyorum ama genel ortalama 60 civarlarındaymış sanırım.
+
+7
+00:01:47,155 --> 00:01:57,775
+Benim diğer sınıfımın ortalaması 58 çıktı. Maalesef ortalamanın biraz altına çıktı. İnşallah sizinki daha iyidir.
+
+8
+00:02:09,395 --> 00:02:19,075
+Şimdi kaç kişi olmuşuz? 51 kişi olmuşuz. 1-2 dakika daha bekleyelim. O sırada başlığımızı atalım. Bugünkü konu başlığımız dinerleştirme arkadaşlar.
+
+9
+00:02:23,015 --> 00:02:23,695
+Dinerleştirme.
+
+10
+00:02:27,987 --> 00:02:42,207
+Evet. Ekran gözüküyor değil mi? Ben böyle bir iki defa şey yapmışlığım var. Ekranı paylaşmayı unutup böyle kendi kendime anlatmaya başlamışım falan. Böyle şeyler yapmışlığım var. Beni uyarın tamam mı? Kafa gidiyor arada.
+
+11
+00:02:47,508 --> 00:03:02,908
+Bu linaleştirmeyi Mat1'den de bildiğiniz bir konu aslında. Bu Mat2 yani tek değişkenli bir fonksiyondaki linaleştirme kavramını 2 ve 3 değişkenli fonksiyonlarla genelleştireceğiz arkadaşlar. Mat1'i kimden aldınız bu arada?
+
+12
+00:03:10,324 --> 00:03:14,104
+Hangi hocanın adını? Hatırlıyor musunuz ismini?
+
+13
+00:03:23,891 --> 00:03:25,031
+Genel olarak [öğrenci].
+
+14
+00:03:25,271 --> 00:03:26,271
+Tamam çok güzel.
+
+15
+00:03:26,491 --> 00:03:29,611
+Şimdi mat 1'deki ne önce bir hatırlayalım.
+
+16
+00:03:29,912 --> 00:03:32,931
+Daha sonra nasıl genelleştirdiğimizi size göstereyim.
+
+17
+00:03:33,771 --> 00:03:35,151
+Şimdi yaptığımız şey şuydu.
+
+18
+00:03:35,431 --> 00:03:37,771
+Bir tane şöyle fx y eşittir.
+
+19
+00:03:38,111 --> 00:03:39,491
+fx eğrimiz var.
+
+20
+00:03:39,831 --> 00:03:42,752
+Tek değişkenli bir fonksiyon bir eğri belirtiyordu.
+
+21
+00:03:42,752 --> 00:03:45,451
+Çift değişkenli fonksiyon yüzey belirtiyordu değil mi?
+
+22
+00:03:45,611 --> 00:03:48,931
+Eğriye bir boyut daha ekliyorum ve yüzey elde ediyorum.
+
+23
+00:03:49,211 --> 00:03:49,611
+Olay bu.
+
+24
+00:03:49,611 --> 00:03:55,051
+Şimdi bunu herhangi bir noktasındaki linealleştirmesi dediğim şey.
+
+25
+00:03:55,151 --> 00:03:58,072
+Linealleştirme aslında doğrusallaştırma.
+
+26
+00:03:58,512 --> 00:04:02,451
+Yani o noktadan itibaren bir TED oluşturma mevzu.
+
+27
+00:04:03,692 --> 00:04:04,151
+Tamam mı?
+
+28
+00:04:05,471 --> 00:04:07,512
+Bunu da neden yapmışlar arkadaşlar?
+
+29
+00:04:07,512 --> 00:04:09,512
+Şundan dolayı.
+
+30
+00:04:10,031 --> 00:04:15,451
+Şimdi bir eğrinin yani bu fx fonksiyonu çok karmaşık bir fonksiyon olabiliyor.
+
+31
+00:04:15,451 --> 00:04:22,012
+Ve herhangi bir noktasındaki mesela örneğin şu noktasındaki değerini bulmak oldukça zor olabiliyor.
+
+32
+00:04:22,531 --> 00:04:24,792
+O zaman ben hani şöyle yapalım diyorlar.
+
+33
+00:04:24,911 --> 00:04:25,111
+Tamam.
+
+34
+00:04:25,692 --> 00:04:35,172
+Buna en yakın noktada ki yani en kolay hesaplayabileceğimiz ve bu noktaya en yakın nokta hangi nokta?
+
+35
+00:04:35,412 --> 00:04:36,072
+Atıyorum bu.
+
+36
+00:04:36,451 --> 00:04:38,391
+Ben bu noktada linealleştireyim diyor.
+
+37
+00:04:38,812 --> 00:04:39,312
+Tamam mı?
+
+38
+00:04:40,091 --> 00:04:43,531
+Buna da hatta Lx doğrusu diyorduk hatırlarsanız.
+
+39
+00:04:43,531 --> 00:04:47,471
+Daha sonra bakın şu kareyi zoomladığımızı düşünün.
+
+40
+00:04:49,172 --> 00:04:53,632
+Bu iki değer yani ben şu nokta yerine şu noktadaki değerini hesaplıyorum.
+
+41
+00:04:54,111 --> 00:05:02,632
+Ve bu aradaki mesafe o kadar az bir şey ki yani minicik bir yanılma payıyla ben bana sorulan şeyi hesaplayabiliyorum.
+
+42
+00:05:02,752 --> 00:05:04,911
+Fonksiyonun işte bir noktadaki değerini.
+
+43
+00:05:05,271 --> 00:05:08,991
+Mesela atıyorum işte f1'i hesaplamak kolaydır.
+
+44
+00:05:09,172 --> 00:05:13,151
+Ama f1 ve 100, 005'i hesaplamak zordur öyle değil mi?
+
+45
+00:05:13,151 --> 00:05:20,331
+İşte bu 0, 005'lik bir esneme payıyla yani o bir hata payımız oluşturacak burası.
+
+46
+00:05:20,831 --> 00:05:30,252
+F1'deki değerini böyle doğrusal bir fonksiyon üzerinden hesaplayıp buna yakın bir değer elde edeceğimizi söyleyeceğiz.
+
+47
+00:05:31,111 --> 00:05:33,351
+Sonra söylüyorduk daha doğrusu.
+
+48
+00:05:33,351 --> 00:05:37,471
+Buradaki Lx'in denklemini nasıl oluşturuyorduk?
+
+49
+00:05:37,731 --> 00:05:40,012
+Bir doğru denklemi için neye ihtiyacım var?
+
+50
+00:05:40,391 --> 00:05:43,471
+Doğrunun üzerindeki bir noktaya ihtiyacım var değil mi?
+
+51
+00:05:44,351 --> 00:05:46,192
+Burası x0 noktası olsun.
+
+52
+00:05:46,331 --> 00:05:48,252
+Burası da fx0 noktası olsun.
+
+53
+00:05:48,372 --> 00:05:50,132
+Ve bu doğrunun eğimine ihtiyacım var.
+
+54
+00:05:50,492 --> 00:05:52,312
+Peki bu doğrunun eğimi neydi arkadaşlar?
+
+55
+00:05:52,492 --> 00:05:53,812
+Bu noktadaki eğimi.
+
+56
+00:05:53,812 --> 00:05:56,851
+f türev x0'dı değil mi?
+
+57
+00:05:57,752 --> 00:06:00,372
+Dolayısıyla bu doğrunun denklemini ben nasıl yazıyordum?
+
+58
+00:06:00,692 --> 00:06:02,312
+y-fx0
+
+59
+00:06:02,312 --> 00:06:06,872
+Çünkü bu x0, fx0 noktasından geçen
+
+60
+00:06:06,872 --> 00:06:13,091
+ve f türev x0 eğimine sahip olan doğru değil mi?
+
+61
+00:06:13,152 --> 00:06:14,652
+Lx doğrusu dediğimiz şey.
+
+62
+00:06:14,651 --> 00:06:19,631
+Dolayısıyla y-fx0 eşittir.
+
+63
+00:06:20,391 --> 00:06:25,432
+f türev x0 da çarpı x-x0 diyordum.
+
+64
+00:06:27,831 --> 00:06:30,411
+Sonra fx0 diğer tarafa atınca
+
+65
+00:06:30,411 --> 00:06:35,891
+fx0 artı f türev x0 x-x0
+
+66
+00:06:35,891 --> 00:06:38,672
+İşte bu y doğrusu dediğim şey.
+
+67
+00:06:38,851 --> 00:06:40,751
+İşte burası da Lx oluyor arkadaşlar.
+
+68
+00:06:41,351 --> 00:06:41,831
+Oluyordu.
+
+69
+00:06:41,831 --> 00:06:44,611
+f türev x0
+
+70
+00:06:44,611 --> 00:06:47,292
+x-x0
+
+71
+00:06:47,292 --> 00:06:49,351
+Ve daha sonra da
+
+72
+00:06:49,351 --> 00:06:52,211
+işte bu belli bir aralıkta
+
+73
+00:06:52,211 --> 00:06:54,871
+fx eğrisi ile
+
+74
+00:06:54,871 --> 00:06:59,012
+Lx doğrusunun değerleri birbirine o kadar yakın ki
+
+75
+00:06:59,012 --> 00:07:02,792
+fx yerine Lx'deki değerini hesaplayıp
+
+76
+00:07:02,792 --> 00:07:05,391
+bu fx fonksiyonunun yaklaşık değerini buluyorum ben.
+
+77
+00:07:06,771 --> 00:07:09,031
+Tek değişkenli fonksiyonlarda yaptığımız şey bu.
+
+78
+00:07:09,032 --> 00:07:13,272
+Aynı şekilde bakın aynı şekilde
+
+79
+00:07:13,272 --> 00:07:14,971
+Burada y eşittir fx
+
+80
+00:07:14,971 --> 00:07:19,172
+Şimdi de fonksiyonu z eşittir fx y olsun.
+
+81
+00:07:19,692 --> 00:07:20,192
+Tamam mı?
+
+82
+00:07:20,752 --> 00:07:21,252
+Pardon.
+
+83
+00:07:21,252 --> 00:07:29,591
+Tamam mı?
+
+84
+00:07:23,732 --> 00:07:24,532
+Bir saniye arkadaşlar.
+
+85
+00:07:25,712 --> 00:07:27,272
+Geldi mi görüntü tekrar?
+
+86
+00:07:29,492 --> 00:07:30,232
+Geldi hocam.
+
+87
+00:07:31,112 --> 00:07:33,952
+Şimdi fonksiyonum z eşittir fx'de.
+
+88
+00:07:34,072 --> 00:07:35,352
+İki değişkenli fonksiyonum.
+
+89
+00:07:35,492 --> 00:07:35,972
+Tamam mı?
+
+90
+00:07:36,632 --> 00:07:38,012
+Şimdi lx değil.
+
+91
+00:07:38,272 --> 00:07:39,492
+Neyi hesaplayacağım o zaman?
+
+92
+00:07:39,772 --> 00:07:41,732
+Lxy'yi hesaplayacağım.
+
+93
+00:07:42,812 --> 00:07:46,352
+Şimdi bir eğrinin bir t doğrusu vardır.
+
+94
+00:07:47,312 --> 00:07:48,472
+Dün de demiştik ki arkadaşlar.
+
+95
+00:07:48,732 --> 00:07:51,472
+Bir yüzeyinde bir t düzlemi vardır.
+
+96
+00:07:51,472 --> 00:07:56,172
+Yani doğruya bir boyut daha ekleyince düzlem elde ediyorum.
+
+97
+00:07:56,712 --> 00:08:02,152
+Dolayısıyla bir tane lxy düzleminin denklemini elde edeceğim.
+
+98
+00:08:03,212 --> 00:08:11,552
+Yani böyle yamuk yumuk bir yüzeydense bir noktaya t olan düzlem denklemini elde edip yakın bir değer bulacağım.
+
+99
+00:08:12,912 --> 00:08:15,012
+Aynı mantıkla eşittir diyorum.
+
+100
+00:08:15,432 --> 00:08:15,872
+Tamam mı?
+
+101
+00:08:16,672 --> 00:08:17,572
+Şöyle diyelim.
+
+102
+00:08:17,572 --> 00:08:24,372
+fx'ye'nin x0, y0 noktasındaki lineerleştirmesi.
+
+103
+00:08:29,172 --> 00:08:56,172
+Şöyle yazalım. Tamam mı? Bakın, buradan yola çıktım. L, x'i. Artık nokta çiftlerim var düzlemde olduğum için. F, x0 değil, x0, y0. Tamam mı? Artı diyorum. Burada tek değişkenim olduğu için, bir tek x değişkenim olduğum için sadece x'e göre türev alıyordum. Ama burada iki tane değişkenim var. O zaman da şunu yapıyorum.
+
+104
+00:08:56,172 --> 00:09:16,372
+Önce x'e göre türevi alıp, kısmi türev alıp, bunun x0, y0'daki değerini yazıyorum. Sonra yine x, x0 diyorum. Artı diyorum. F, y'nin x0, y0'daki değerini yazıp, y, y0 diyorum. O kadar. Bu şekilde de genelleştirmiş oluyorum.
+
+105
+00:09:20,211 --> 00:09:33,292
+Bakın mantık aynı. fx0 yine bunu yazdım. Burada tek bir tane türevim var ama iki değişkende iki çeşit türevim var. İki kısmı türev de yazıp yanlarına neye göre kısmı türev aldıysam onun farkını yazıyorum.
+
+106
+00:09:37,139 --> 00:09:40,699
+İşte bu Lx' diye düzlemi Z eşittir.
+
+107
+00:09:41,639 --> 00:09:50,259
+Fx' diye yüzeyine T'tir.
+
+108
+00:09:52,659 --> 00:09:54,100
+Yine tekrarlıyorum.
+
+109
+00:09:54,199 --> 00:09:56,000
+Burada T doğru denklemini bulduk.
+
+110
+00:09:56,139 --> 00:09:59,279
+Burada yüzeye T olan düzlem denklemini bulduk.
+
+111
+00:09:59,279 --> 00:10:04,779
+Yani tek değişken bir fonksiyonundaki dinleleştirmede T doğru yaklaşım yapıyorum.
+
+112
+00:10:04,779 --> 00:10:07,460
+Burada da T düzlem yaklaşımı yapıyorum.
+
+113
+00:10:07,620 --> 00:10:09,039
+İki değişkenli fonksiyonundaki.
+
+114
+00:10:10,039 --> 00:10:13,779
+Bunu aynı şekilde üç değişkenliğe de genelleştirebiliriz arkadaşlar.
+
+115
+00:10:16,220 --> 00:10:27,460
+Yani Fx, Y, Z fonksiyonunun bir tane P0, X0, Y0, Z0'daki dinerleştirmesi de.
+
+116
+00:10:31,460 --> 00:10:33,220
+Dinerleştirmesi de yazamadım.
+
+117
+00:10:34,779 --> 00:10:37,279
+Aynı mantıklı o zaman ne olur?
+
+118
+00:10:37,579 --> 00:10:39,860
+Fx, Y, Lx, Y, Z.
+
+119
+00:10:40,960 --> 00:10:43,919
+F, X0, Y0, Z0.
+
+120
+00:10:44,039 --> 00:10:46,799
+Yani başlangıç değerimi yazıyorum arkadaşlar.
+
+121
+00:10:47,059 --> 00:10:48,799
+Noktayı fonksiyonun yerine koyuyorum.
+
+122
+00:10:49,579 --> 00:10:50,639
+Üç tane değişkenim var.
+
+123
+00:10:50,720 --> 00:10:52,379
+O yüzden üç kısmi türevi uygulayacağım.
+
+124
+00:10:52,379 --> 00:10:57,759
+F'in X'e göre kısmi türeminin, X0, Y0, Z0'daki değeri,
+
+125
+00:10:58,519 --> 00:10:59,720
+X-X0.
+
+126
+00:11:01,519 --> 00:11:05,179
+Artı, F'in Y'e göre kısmi türeminin,
+
+127
+00:11:05,179 --> 00:11:11,559
+bu noktadaki değeri çarpı Y-Z0.
+
+128
+00:11:11,559 --> 00:11:14,460
+Z'ye göre kısmi türeminin,
+
+129
+00:11:14,460 --> 00:11:19,159
+bu noktadaki değeri çarpı Z-Z0.
+
+130
+00:11:23,892 --> 00:11:26,712
+ve aynı şekilde fx ile z de
+
+131
+00:12:15,860 --> 00:12:16,700
+Münün yazık mı?
+
+132
+00:12:44,755 --> 00:12:57,315
+Bugün belki dersi blog işleyebiliriz arkadaşlar. Çünkü bu kısa bir konu. Bununla ilgili ve dünkü istediğimiz yönlü türevi de ilgili minik bir uygulama yapıp dersi tamamen de bitirebiliriz.
+
+133
+00:12:57,815 --> 00:13:07,775
+Duruma göre konuşuyoruz. Normalde ikiye bölüyordum ben ama dediğim gibi bu konu biraz kısa olduğu için belki bugün tek derste bitirebiliriz.
+
+134
+00:13:27,635 --> 00:13:34,235
+Şimdi bize iki değişkenli bir fonksiyon verilmiş. 3, 2 noktasındaki linealleştirmesini bulun. Bu aslında ne demek biliyor musunuz?
+
+135
+00:13:35,235 --> 00:13:42,995
+Bu fonksiyonun 3, 2 noktasındaki t düzleminin denklemini aslında bulunmuş olacağız.
+
+136
+00:13:50,740 --> 00:13:54,460
+Nasıl bulacağız? Onu da V, X, Y demiştik değil mi?
+
+137
+00:13:55,659 --> 00:14:00,299
+Şimdi bu bizim X0'ımız, bu bizim Y0'ımız.
+
+138
+00:14:01,060 --> 00:14:05,060
+Dolayısıyla F, X0, Y0 yani F, 3, 2.
+
+139
+00:14:06,639 --> 00:14:14,379
+Artı, F'in X'e göre kısmi türevinin 3, 2'deki değeri, çarpı X, 3.
+
+140
+00:14:15,180 --> 00:14:20,379
+Artı, F'in Y'e göre kısmi türevinin 3, 2'deki değeri, çarpı Y, 2.
+
+141
+00:14:27,668 --> 00:14:36,148
+Şimdi f3, 2 ne olacak? 9, eksi 6, 3 oldu. Artı 2, 5, 3 daha 8. Şurası 8'miş.
+
+142
+00:14:40,467 --> 00:14:47,288
+Şimdi benim şu değerlere ihtiyacım var. Dolayısıyla f'in x'e göre ve y'ye göre kısmi türevlerini hesaplamam lazım.
+
+143
+00:14:51,155 --> 00:15:00,395
+x'e göre kısmi türevi ne olacak? 2x-y olacak. y'e göre kısmi türevi de x-x artı y olacak.
+
+144
+00:15:04,596 --> 00:15:10,916
+Sonra bunların 3, 2'deki değerleri, direkt şuraya yazalım hatta, şöyle.
+
+145
+00:15:12,096 --> 00:15:18,615
+6, 4 oldu burası. Burası da x3 artı 2'den x1 oldu.
+
+146
+00:15:19,755 --> 00:15:30,456
+Bu eseride L-Y'miz 8 artı 4, x-3, x-y, y-2 oldu.
+
+147
+00:15:30,456 --> 00:15:40,615
+Buradan da 4, x-y, x-2, eşittir 0 demeyelim.
+
+148
+00:15:47,539 --> 00:15:51,620
+Bu bizim lineleştirilmiş, yani lineleştirdiğimiz yüzlemin denklemi.
+
+149
+00:15:53,339 --> 00:16:01,099
+İşte bu, şu karmaşık fonksiyonda yerine koymaktansa bir noktayı, atıyorum işte bunlar şöyle soruluyor.
+
+150
+00:16:02,099 --> 00:16:12,860
+3, 2 ve 2 lineleştirilmesi, hani 3.01, işte 1.99'daki değerini bulunuz, diyor.
+
+151
+00:16:14,019 --> 00:16:16,799
+Tamam mı? O zaman ne yapıyorum ben?
+
+152
+00:16:17,539 --> 00:16:30,779
+Burada x gördüğüm yere, işte 3.01 yazıp, 4 ile çarpıp, bu 1.99'u çıkarmak, şu kareli işlemleri yapmaktan, değil mi, bu ondalık sayılarda çok daha rahat oluyor.
+
+153
+00:16:31,559 --> 00:16:33,299
+Bunu zaten ilerleyipçe bulacağız.
+
+154
+00:16:33,419 --> 00:16:41,559
+Şimdi burada bizim lineleştirme, şeyini öğrenmemiz, tam olarak oturtmamız önemli olan bu.
+
+155
+00:16:50,484 --> 00:16:52,024
+Mesela şöyle bir soru var.
+
+156
+00:16:54,204 --> 00:17:00,024
+1,1'in karesi artı 2,5'un küpü sayısı için.
+
+157
+00:17:03,668 --> 00:17:07,627
+Yaplaşık bir değer bulunuruz.
+
+158
+00:17:30,612 --> 00:17:33,112
+Burada değil, lineleştirme kullanacağız arkadaşlar.
+
+159
+00:17:33,332 --> 00:17:39,112
+Ama bu tarz sorularda yapmamız gereken şey ilk önce şu ifadeyi bir fonksiyona atamak.
+
+160
+00:17:39,272 --> 00:17:39,471
+Değil mi?
+
+161
+00:17:39,512 --> 00:17:42,352
+Benim lineleştirme yapmak için bir fonksiyon olması lazım elimde.
+
+162
+00:17:42,971 --> 00:17:46,072
+O zaman iki tane bakın sayı değirim var.
+
+163
+00:17:46,231 --> 00:17:48,312
+Birinin karesini birinin küpünü almışım.
+
+164
+00:17:49,312 --> 00:17:51,951
+O zaman iki değişkenli bir fonksiyon belirliyorum.
+
+165
+00:17:52,612 --> 00:17:59,752
+Peki x yerine 1,1 y yerine 2,5 yazdığımda şu ifadeyi bana hangi fonksiyon verir?
+
+166
+00:18:00,612 --> 00:18:03,451
+x kare artı y küp.
+
+167
+00:18:03,592 --> 00:18:04,471
+Aynen öyle.
+
+168
+00:18:05,072 --> 00:18:07,711
+x kare artı y küp fonksiyonumu oluşturdu.
+
+169
+00:18:08,192 --> 00:18:08,652
+Tamam mı?
+
+170
+00:18:09,032 --> 00:18:11,832
+Şimdi x sıfırı y sıfır noktamı oluşturmam lazım.
+
+171
+00:18:13,172 --> 00:18:20,812
+Yani benim bu toplamı yapabileceğim ve şu noktalara en yakın tam sayı değerlerini yazmam lazım.
+
+172
+00:18:20,992 --> 00:18:21,612
+Bu da nedir?
+
+173
+00:18:21,612 --> 00:18:22,672
+Bir tanesi 1.
+
+174
+00:18:23,152 --> 00:18:26,672
+2,5, 2 ile 3'ün tam ortasında olan ister 2 alın ister 3.
+
+175
+00:18:27,072 --> 00:18:28,832
+İkisinde de hata payımız aynı olacak.
+
+176
+00:18:29,112 --> 00:18:29,832
+2 alalımız.
+
+177
+00:18:30,612 --> 00:18:31,211
+Tamam mı?
+
+178
+00:18:33,092 --> 00:18:35,172
+O zaman şimdi başlayalım.
+
+179
+00:18:35,392 --> 00:18:37,332
+x sıfırımız 1, y sıfırımız 2.
+
+180
+00:18:38,372 --> 00:18:39,012
+Yazıyorum.
+
+181
+00:18:39,231 --> 00:18:42,332
+L, x, y için neye ihtiyacım var?
+
+182
+00:18:42,772 --> 00:18:44,652
+F'in 1,2'deki değerini.
+
+183
+00:18:45,872 --> 00:18:49,112
+Yani 1,2'den azıcık satmışız arkadaşlar.
+
+184
+00:18:49,451 --> 00:18:52,112
+Bakın x kare nasıl diyeyim?
+
+185
+00:18:52,112 --> 00:19:00,532
+Şimdi lineareleştirmede biz birinci dereceden yani x ve y'nin kuvvetleri bir olacak şekilde bir denklemelde edeceğiz.
+
+186
+00:19:00,532 --> 00:19:09,312
+Yani şu ondalık işte bir günlük sayıların karelerini küplerini almakla uğraşmadan lineer bir fonksiyonda kolayca hesaplama yapabileceğiz.
+
+187
+00:19:09,872 --> 00:19:10,932
+Amacımız bu zaten.
+
+188
+00:19:11,252 --> 00:19:11,632
+Tamam mı?
+
+189
+00:19:11,632 --> 00:19:14,792
+Şimdi bir miktar sapmışız.
+
+190
+00:19:14,792 --> 00:19:15,412
+Tamam mı?
+
+191
+00:19:15,512 --> 00:19:20,272
+Şu rahatça hesaplayabileceğim tam sayı değerlerinden bir miktar sapmışız.
+
+192
+00:19:21,231 --> 00:19:25,052
+Onu şimdi hesaplamaya çalışıyorum.
+
+193
+00:19:25,052 --> 00:19:30,652
+ne kadar sapacağız ve bu sapma sonucu fonksiyonun değeri ne olacak yaklaşık olarak.
+
+194
+00:19:31,252 --> 00:19:32,971
+Şimdi başlangıç değerimi yazdım.
+
+195
+00:19:33,211 --> 00:19:41,072
+Artı fx'in 1,2'deki değeri x,1 artı fy'nin 1,2'deki değeri y,2.
+
+196
+00:19:44,468 --> 00:19:47,348
+Şimdi fx ve fy hesaplamam lazım yine.
+
+197
+00:19:47,908 --> 00:19:52,288
+x'e göre kısmi türev 2x, y'ye göre kısmi türev 3y².
+
+198
+00:19:53,327 --> 00:20:01,208
+Bunların 1, 2'deki değerleri, burası 2 olacak, fy'nin 1, 2'deki değeri de ne olacak?
+
+199
+00:20:02,208 --> 00:20:03,587
+4, 12.
+
+200
+00:20:15,443 --> 00:20:33,624
+Evet. Sonra ne yapıyorum? F'in 1, 2'deki değeri nedir? 1 artı 8, 9. Şurası 9. Yazalım. L, x, y. Eşittir 9 artı 2 çarpı x eksi 1 artı 12 çarpı y eksi 2.
+
+201
+00:20:33,624 --> 00:20:56,563
+Tamam. Bakın, bu noktada 1, 2 noktasında şu yüzeye t olan bir düzlem denklemi buldum. Yani şu üstlerden kurtulup doğursal, lineer 1 denkle emelde ettik ki daha kolay hesaplamamı yapayım diye. Tamam. Evet, tam değer bulmayacağız ama yaklaşık bir değer bulacağız.
+
+202
+00:20:56,563 --> 00:21:26,543
+Tamam. Evet, tam değer bulacağız.
+
+203
+00:21:26,543 --> 00:22:24,836
+Tamam.
+
+204
+00:22:37,811 --> 00:22:38,871
+Yalnızmayan ne?
+
+205
+00:22:58,644 --> 00:23:09,243
+Her şey yanında mı? Arkadaşlar, birkaç kişi hariç. Herkes çok sessizmiş, lütfen. Alışamadık mı? Ne yaptık?
+
+206
+00:23:24,948 --> 00:23:28,268
+85 kişi var ama en fazla 5 kişinin ses çıkıyor. Neden?
+
+207
+00:23:33,172 --> 00:23:50,552
+Bu arada her türlü eleştiri açığındır arkadaşlar. Mesela sabahki sınıfta şeyleri de, öyle çok hızlı anlatıyorsunuz. Biraz yavaşlayın işte, şurayı tekrar anlatır mısın falan. Böyle bir şey olursa beni uyarın, tamam mı? Aynı şekilde yavaş gidiyor olabilirim, daha hızlanırım.
+
+208
+00:23:52,692 --> 00:23:58,731
+Ama siz sessiz kaldıkça böyle kendi kendime anlatıyormuşum hisse yatına kapılıp üzülüyorum.
+
+209
+00:24:11,220 --> 00:24:33,380
+Tamam, teşekkürler [öğrenci]. Bu arada, dün şurada dikkatimi çekti. Bazı arkadaşlar özelden yazıyor sorularını. Tabii ki sizin tercihiniz ama benim size tavsiye, genelden yazın ki ortak yerden, belki sizin sorunuz başka birinin de kafasına takılmıştır.
+
+210
+00:24:33,380 --> 00:24:42,480
+Aynı şekilde onun da sorusuna cevap olmuş olur. Çünkü şey oluyor yani, neyin sorusuna cevap verdiğimi bilmiyor diğer arkadaşlar falan.
+
+211
+00:24:43,039 --> 00:24:52,200
+Çekinmeyin arkadaşlar, burası ortak, free bir ortam. Ben de arada saçmalıyorum, emin olun. Çok saçmaladığım yerler oluyor. İnsanım çünkü.
+
+212
+00:24:53,440 --> 00:24:55,960
+Öyle saçmalamak serbest bir derste. Anlaştık mı?
+
+213
+00:25:00,788 --> 00:25:07,928
+Şimdi diferansiyel dediğimiz kavram da arkadaşlar yine math1'dekine paralel olarak yaptığımız bir şey.
+
+214
+00:25:08,428 --> 00:25:16,067
+Yaklaşık değer bulurken ya da bir fonksiyonun değişim oranı dediğimiz şey diferansiyel değil mi?
+
+215
+00:25:17,587 --> 00:25:25,008
+Bir noktadaki çok minik bir değişim oranı ifade ediyordu bize math1'de hatırlarsınız.
+
+216
+00:25:25,008 --> 00:25:34,107
+Hani şöyle diyorduk hatta nasıl diyelim işte df bölü dx eşittir f türev x'ti.
+
+217
+00:25:34,488 --> 00:25:41,008
+Hatırlarsanız df diferansiyelini biz f türev x çarpı dx olarak yazıyorduk.
+
+218
+00:25:43,468 --> 00:25:48,548
+Yine tek değişkenli bir fonksiyon için tabii ki y eşittir f x için.
+
+219
+00:25:48,548 --> 00:25:51,107
+Bu ne demek?
+
+220
+00:25:51,107 --> 00:25:54,627
+Şurası arkadaşlar f fonksiyonundaki değişim.
+
+221
+00:25:55,067 --> 00:25:56,768
+Neye karşılık gelen değişim?
+
+222
+00:25:57,307 --> 00:26:01,067
+x'teki bu minik değişime karşılık gelen değişim.
+
+223
+00:26:01,468 --> 00:26:08,587
+x'teki minik değişimi fonksiyonun türeviyle çarptığımız zaman bu bize f'in geneline yansıyan değişimi veriyor.
+
+224
+00:26:08,587 --> 00:26:13,327
+Aynı mantıkla bu sefer f x'ye fonksiyonunda
+
+225
+00:26:13,327 --> 00:26:13,827
+çarptığımız zaman bu sefer f x'ye fonksiyonun türeviyle çarptığımız zaman bu sefer f x'ye fonksiyonun türeviyle çarptığımız zaman bu sefer f x'ye fonksiyonun türeviyle çarptığımız zaman bu sefer f x'ye fonksiyonun türeviyle çarptığımız zaman bu sefer f x'ye fonksiyonun türeviyle çarptığımız zaman bu sefer f x'ye fonksiyonun türeviyle çarptığımız zaman bu sefer f x'ye fonksiyonun türeviyle çarptığımız zaman bu sefer f x'ye fonksiyonun türeviyle çarptığımız zaman bu sefer f x'ye fonksiyonun türeviyle çarptığımız zaman bu sefer f x'ye fonksiyonun türeviyle çarptığımız zaman bu sefer f x'
+
+226
+00:26:18,420 --> 00:26:22,880
+bir x0, y0 noktasından
+
+227
+00:26:26,548 --> 00:26:41,048
+yakınındaki bir x0 artı dx, y0 artı dy noktasına hareket edilirse
+
+228
+00:26:46,163 --> 00:26:48,983
+Seyinin yine ertleştirmesinden.
+
+229
+00:26:54,132 --> 00:26:56,832
+Elde edilen değişim.
+
+230
+00:27:01,332 --> 00:27:06,412
+Aynı mantıkla bakın arkadaşlar. Genelleştirme mantığı şöyle df eşittir.
+
+231
+00:27:07,212 --> 00:27:11,972
+Şimdi burada türevini aldık. Bir tek x olduğu için x'e göre türevini aldık.
+
+232
+00:27:11,972 --> 00:27:19,612
+Burada önce x'e göre kısmi türev alacağım. Bunun x0, y0'daki değerini yine dx ile çarpacağım.
+
+233
+00:27:20,772 --> 00:27:28,512
+Artı diyeceğim. Bir de y değişkenim olduğu için bunun x0, y0'daki değeri çarpı d y diyeceğim.
+
+234
+00:27:28,512 --> 00:27:35,572
+İşte bu ifadeye biz aynı zamanda arkadaşlar f'nin tam diferansiyeli de diyeceğiz.
+
+235
+00:27:46,228 --> 00:27:54,668
+Buradaki dx ve dy dediğimiz gibi x'den yakınındaki bir noktaya hareket ettiğimizde meydana gelen değişim.
+
+236
+00:27:54,928 --> 00:27:58,488
+Yani dx dediğimiz yaklaşık olarak delta x.
+
+237
+00:27:58,688 --> 00:27:59,688
+Delta x neydi?
+
+238
+00:28:00,168 --> 00:28:01,168
+x eksi x0.
+
+239
+00:28:02,567 --> 00:28:04,148
+x'den kayma miktarımız.
+
+240
+00:28:04,688 --> 00:28:06,728
+x1 x noktasından kayma miktarımız.
+
+241
+00:28:06,728 --> 00:28:10,807
+Aynı şekilde dy yaklaşık olarak delta y'ye eşit.
+
+242
+00:28:12,508 --> 00:28:14,408
+y eksi y0.
+
+243
+00:28:16,228 --> 00:28:30,608
+Bu ikisini x'i ve y'yi x0 artı dx veya y0 artı d'ye taşıdığımız durumda fonksiyonun y'lerinde meydana gelen değişimde delta f ile göstereceğim.
+
+244
+00:28:31,548 --> 00:28:32,008
+Tamam mı?
+
+245
+00:28:32,008 --> 00:28:43,128
+Ve bu değişimleri f'in x'e göre kısmetlerinin x0 y0'deki değeri ve çarpı f'in y'ye göre kısmetlerinin x0 y0'deki görevi ile çarpı toplayınca
+
+246
+00:28:43,128 --> 00:28:47,128
+bu bana fonksiyonun meydana gelen değişimi verecek.
+
+247
+00:28:48,028 --> 00:28:49,807
+Değişim miktarını verecek.
+
+248
+00:28:50,008 --> 00:28:50,268
+Tamam mı?
+
+249
+00:28:52,587 --> 00:28:57,728
+Onu da fonksiyonun kendi değerine eklersem sonucu elde edeceğim.
+
+250
+00:28:57,847 --> 00:29:01,807
+Yani değiştirilmiş şekilde sonucunu elde edeceğim.
+
+251
+00:29:01,807 --> 00:29:07,028
+fonksiyonun en genel en son halini yani.
+
+252
+00:29:08,388 --> 00:29:10,847
+Şimdi örneklerden daha rahat anlayacağız.
+
+253
+00:29:11,968 --> 00:29:13,268
+Bu arada şunu da yazayım.
+
+254
+00:29:13,648 --> 00:29:14,827
+Örneğe geçmeden.
+
+255
+00:29:16,108 --> 00:29:18,807
+Mesela 3 değişkenliği olursa eğer fonksiyonun
+
+256
+00:29:18,807 --> 00:29:21,567
+f'x'e z fonksiyonunda
+
+257
+00:29:21,567 --> 00:29:23,928
+yine
+
+258
+00:29:23,928 --> 00:29:28,188
+x0 y0 z0 noktasına
+
+259
+00:29:28,188 --> 00:29:33,168
+x0 artı dx
+
+260
+00:29:33,168 --> 00:29:35,628
+y0 artı d'ye
+
+261
+00:29:35,628 --> 00:29:38,048
+ve z0 artı dz noktasına
+
+262
+00:29:38,048 --> 00:29:39,807
+taşımamla
+
+263
+00:29:39,807 --> 00:29:41,807
+oluşturduğum yeni fonksiyonundaki
+
+264
+00:29:42,608 --> 00:29:44,688
+değişim oranı değişim miktarı
+
+265
+00:29:44,688 --> 00:29:46,948
+yine aynı şekilde arkadaşlar.
+
+266
+00:29:48,048 --> 00:29:49,908
+f'in x'e göre kısım etürenin
+
+267
+00:29:49,908 --> 00:29:52,847
+buradaki değeri bx
+
+268
+00:29:52,847 --> 00:29:56,307
+y'ye göre kısım etürenin
+
+269
+00:29:56,307 --> 00:29:58,948
+buradaki değeri b y
+
+270
+00:29:58,948 --> 00:30:02,108
+z'ye kısım etürenin
+
+271
+00:30:02,108 --> 00:30:05,188
+buradaki değeri b z
+
+272
+00:30:05,188 --> 00:30:10,807
+Bu da yine bize f'deki değişim oranına
+
+273
+00:30:10,807 --> 00:30:11,968
+vermiş olacak.
+
+274
+00:31:34,900 --> 00:31:56,200
+Yükselteki, sırasıyla, dr eşittir 0,08 ve dh eşittir, eksi 0,3 miktarında değiştiriliyor.
+
+275
+00:32:02,516 --> 00:32:03,976
+konserve kutusunun
+
+276
+00:32:03,976 --> 00:32:07,196
+hacmindeki
+
+277
+00:32:11,892 --> 00:32:12,832
+Teşekkürler.
+
+278
+00:32:47,124 --> 00:32:48,824
+soruyu yazdık herhalde. Şimdi
+
+279
+00:32:48,824 --> 00:32:51,104
+benim
+
+280
+00:32:51,104 --> 00:32:53,183
+bulmam gereken şey hacimdeki değişim.
+
+281
+00:32:53,324 --> 00:32:54,564
+O zaman benim ilk önce
+
+282
+00:32:54,564 --> 00:32:56,903
+hacim fonksiyonumu yazmam lazım.
+
+283
+00:32:56,903 --> 00:32:58,124
+Öyle değil mi? Ben
+
+284
+00:32:58,124 --> 00:33:00,403
+hacmi nasıl hesaplıyorum?
+
+285
+00:33:00,864 --> 00:33:02,743
+Hangi fonksiyonu yardımıyla?
+
+286
+00:33:02,943 --> 00:33:04,604
+Aynen. P, R kare,
+
+287
+00:33:04,903 --> 00:33:07,084
+H yardımıyla. Yani bu arkadaşlar
+
+288
+00:33:07,084 --> 00:33:08,943
+hem R'ye hem H'ya
+
+289
+00:33:08,943 --> 00:33:11,064
+bağlı yani iki değişkene bağlı
+
+290
+00:33:11,064 --> 00:33:12,943
+aslında çift
+
+291
+00:33:12,943 --> 00:33:14,663
+değişkenli bir fonksiyon değil midir?
+
+292
+00:33:14,743 --> 00:33:15,584
+Hacim fonksiyonu.
+
+293
+00:33:17,124 --> 00:33:20,004
+O halde ne
+
+294
+00:33:20,004 --> 00:33:20,784
+yapıyorum ben?
+
+295
+00:33:21,764 --> 00:33:24,403
+R'deki yani yarı çaplaki ve yükseklikteki
+
+296
+00:33:24,403 --> 00:33:26,024
+değişim acaba
+
+297
+00:33:26,024 --> 00:33:28,163
+bu hacim fonksiyonu nasıl etkiliyor?
+
+298
+00:33:28,624 --> 00:33:30,024
+Bakın diferansiyel dediğim şey
+
+299
+00:33:30,024 --> 00:33:31,884
+o fonksiyonla meydana gelen
+
+300
+00:33:31,884 --> 00:33:33,544
+değişimi hesaplayan
+
+301
+00:33:33,544 --> 00:33:35,963
+bir araç. Şimdi
+
+302
+00:33:35,963 --> 00:33:37,663
+o halde ben neyi bulacağım?
+
+303
+00:33:38,503 --> 00:33:40,163
+Delta V'yi bulacağım değil mi?
+
+304
+00:33:40,264 --> 00:33:42,163
+Yani yaklaşık olarak DV'yi
+
+305
+00:33:42,163 --> 00:33:43,384
+bulacağım. Bu
+
+306
+00:33:43,384 --> 00:33:46,304
+V'de meydana gelen değişim demiştik
+
+307
+00:33:46,304 --> 00:33:47,183
+az önce diferansiyeli
+
+308
+00:33:47,183 --> 00:33:47,743
+tanımlarken.
+
+309
+00:33:48,364 --> 00:33:50,064
+Peki bunun neye eşitti?
+
+310
+00:33:51,584 --> 00:33:52,804
+Bu fonksiyonun tam
+
+311
+00:33:52,804 --> 00:33:54,423
+diferansiyeli neye eşit?
+
+312
+00:33:55,284 --> 00:33:56,963
+V'nin ilk değişkene göre
+
+313
+00:33:56,963 --> 00:33:58,203
+kısmi türevinin
+
+314
+00:33:58,203 --> 00:34:01,423
+R0, H0'daki değeri
+
+315
+00:34:01,423 --> 00:34:03,324
+çarpı DR
+
+316
+00:34:03,324 --> 00:34:06,364
+artı V'nin
+
+317
+00:34:06,364 --> 00:34:07,804
+ikinci değişkene göre
+
+318
+00:34:07,804 --> 00:34:09,204
+kısmi türevinin
+
+319
+00:34:09,204 --> 00:34:11,364
+R0, H0'daki değeri
+
+320
+00:34:11,364 --> 00:34:12,244
+çarpı DR
+
+321
+00:34:12,244 --> 00:34:35,204
+çarpı
+
+322
+00:34:17,235 --> 00:34:29,955
+Bunu yazmamda bir sorun yoktu değil mi? Fonksiyonun V fonksiyonu, yani hacim fonksiyonu, ilk değişkenim R, ikinci değişkenim H. Harika.
+
+323
+00:34:30,596 --> 00:34:41,996
+Şimdi o zaman benim neleri hesaplamam lazım? Bir kere, R sıfırım nedir? 3. H sıfırım nedir? 12. Bu benim ilk başlangıç değerleri.
+
+324
+00:34:41,996 --> 00:34:45,975
+silin konserve kutumun yarış çaklığı ve yüksekliğinin ilk değerleri bunlar.
+
+325
+00:34:46,576 --> 00:34:50,435
+Şimdi benim neye ihtiyacım var? V, R'ye ve V, H'ye ihtiyacım var.
+
+326
+00:34:50,855 --> 00:34:56,875
+Yani M'nin R'ye göre kısmi türevini bulacağım. Nedir arkadaşlar bu? 2P, R, H'tır öyle değil mi?
+
+327
+00:34:58,815 --> 00:35:02,115
+V'nin H'e göre kısmi türevi de P, R karedir.
+
+328
+00:35:03,795 --> 00:35:10,875
+O zaman V, R'nin 3'e 12'deki değerine ihtiyacım var benim. Değil mi?
+
+329
+00:35:10,875 --> 00:35:14,475
+36, R'ye ve 36, R'ye ve 36, R'ye ve 36, R'ye ve 72P mi oluyordu?
+
+330
+00:35:15,675 --> 00:35:16,755
+72P mi oluyordu?
+
+331
+00:35:16,755 --> 00:35:17,275
+72P mi?
+
+332
+00:35:17,275 --> 00:35:21,475
+Ve V, H'in de 3'e 12'deki değerine ihtiyacım var.
+
+333
+00:35:22,036 --> 00:35:22,775
+Burası da 9.
+
+334
+00:35:22,775 --> 00:35:22,855
+9.
+
+335
+00:35:29,396 --> 00:35:30,416
+Şimdi tekrar yazalım.
+
+336
+00:35:30,556 --> 00:35:32,156
+Dv'miz neymiş arkadaşlar?
+
+337
+00:35:32,876 --> 00:35:36,036
+vr'nin v0 h0'daki değeri 72 pi.
+
+338
+00:35:36,516 --> 00:35:37,836
+Şurası 72 pi.
+
+339
+00:35:38,776 --> 00:35:39,956
+Burası 9 pi.
+
+340
+00:35:41,156 --> 00:35:44,596
+r'deki ve h'deki değişim oranlarını zaten bana soruda verdi.
+
+341
+00:35:44,596 --> 00:35:46,316
+O zaman ne yapıyorum?
+
+342
+00:35:46,456 --> 00:35:54,635
+72 pi çarpı dr yani 0.08 artı 9 pi çarpı eksi 0.3.
+
+343
+00:35:54,635 --> 00:36:00,336
+Bu da 3,06 pi yapıyormuş arkadaşlar.
+
+344
+00:36:00,536 --> 00:36:07,656
+Yani yaklaşık olarak 9,61 cm3 gibi bir şey çıkıyor.
+
+345
+00:36:07,796 --> 00:36:09,036
+Pi yerine koyunca.
+
+346
+00:36:09,036 --> 00:36:11,596
+İşte bu ne demek biliyor musunuz arkadaşlar?
+
+347
+00:36:11,896 --> 00:36:20,576
+Sonuç artı çıktığı için yarı çarpı 0.08 oranında arttırıp yüksekliği 0.3 oranında azaltsak bile
+
+348
+00:36:20,576 --> 00:36:28,776
+silindirik konser ve kutunun hacmi 9,61 cm3 artıyormuş.
+
+349
+00:36:29,556 --> 00:36:31,596
+Bu artış miktarı.
+
+350
+00:36:32,135 --> 00:36:35,596
+Eğer işte pi r kare haşer işte ne olacak?
+
+351
+00:36:35,596 --> 00:36:37,416
+9 çarpı 12 108 mi oluyor?
+
+352
+00:36:37,756 --> 00:36:46,176
+108 pi'ye 3,06 pi daha eklersem de bu değişim sonucundaki en son hacmi bulmuş olacak.
+
+353
+00:36:46,696 --> 00:36:49,016
+Bu sadece fonksiyonundaki değişim miktarı.
+
+354
+00:36:54,420 --> 00:36:55,079
+Onlar için.
+
+355
+00:37:00,179 --> 00:37:00,719
+Zip bye.
+
+356
+00:37:14,739 --> 00:37:16,619
+Métendim, bir de komisyonlar.
+
+357
+00:37:55,155 --> 00:37:56,596
+Bakın, bu da bir yorum sorusu.
+
+358
+00:38:36,659 --> 00:38:43,159
+Yine silindirik bir depolama tankımız var. 8 metre yüksekliğinde 2 metre yarı çapındaymış.
+
+359
+00:38:43,819 --> 00:38:51,319
+Şimdi tankların hacimleri, yükseklik ve yarı çapdaki küçük değişimleri ne kadar hassastır?
+
+360
+00:38:51,879 --> 00:38:56,299
+Dediğim gibi bir yorum sorusu. Şimdi bize neyi soruyor?
+
+361
+00:38:57,039 --> 00:39:01,460
+Yükseklik ve yarı çapı değiştirirsen bu hacme nasıl yansır?
+
+362
+00:39:01,460 --> 00:39:07,819
+Yani hacimdeki genel değişimi soruyor bana. Aynı mantıkla şimdi hesaplayalım.
+
+363
+00:39:08,379 --> 00:39:11,379
+Hacmemiz neydi? pi, r kare, h da öyle değil mi?
+
+364
+00:39:12,359 --> 00:39:16,579
+Peki benim neyi bulmam lazım? dv'yi bulmam lazım.
+
+365
+00:39:16,859 --> 00:39:21,960
+Hacimdeki değişim oranını bulmam lazım ki o hassasiyetini ölçebileyim.
+
+366
+00:39:22,759 --> 00:39:24,239
+Değişim oranını yazıyorum şimdi.
+
+367
+00:39:25,940 --> 00:39:29,019
+V'nin r'ye göre kısmi türenin aynı mantıkla arkadaşlar.
+
+368
+00:39:29,019 --> 00:39:36,239
+Neredeki yarı çap r, h ikilisi şeklinde yazarsam 2,8 şeklinde yazmam lazım.
+
+369
+00:39:36,420 --> 00:39:39,379
+Tamam mı? h, r şeklinde yazarsam tam tersine.
+
+370
+00:39:39,500 --> 00:39:40,639
+Ona dikkat edin sadece.
+
+371
+00:39:41,739 --> 00:39:49,679
+d, r artı m'nin h'e göre kısmi türenin 2,8'deki değeri çarpı dh.
+
+372
+00:39:49,679 --> 00:40:18,679
+Evet.
+
+373
+00:39:54,996 --> 00:40:01,615
+Şimdi şu vr zaten neydi? 2prrh, burada hesaplamıştım. Yerine yazalım.
+
+374
+00:40:02,036 --> 00:40:20,396
+R'miz 2, 8, 16, 32p, dr, değil mi? Artı vh'da 4p, dr ve dh bize verilmiyor. Zaten en genel halini soruyor bize arkadaşlar.
+
+375
+00:40:20,396 --> 00:40:25,036
+Şimdi bunu buldum. Bu ne demek biliyor musunuz? Bakın.
+
+376
+00:40:26,876 --> 00:40:37,916
+Hacim, hacim fonksiyonu, r'deki değişime, h'deki değişime nazaran 8 kat daha duyarlıdır demek bu arkadaşlar.
+
+377
+00:40:39,996 --> 00:40:49,056
+Tamam mı? Yani hacmi yüksekliğim 4p kadar etkilerken, yarı çap 32p kadar etkiliyor.
+
+378
+00:40:49,056 --> 00:41:04,416
+Tamam mı? Tamam mı? Tamam mı? Tamam mı? Tamam mı? Tamam mı? Tekrar diyorum. Hacim, r'deki değişime, tamam mı? Yarı çaptaki değişime, yükseklikteki değişime nazaran 8 kat daha duyarlıdır.
+
+379
+00:41:04,416 --> 00:41:20,416
+Yani bu ne demek biliyor musunuz?
+
+380
+00:41:20,416 --> 00:41:25,416
+Yani bu ne demek biliyor musunuz arkadaşlar?
+
+381
+00:41:25,416 --> 00:41:30,416
+R'deki bir ne demek biliyor musunuz?
+
+382
+00:41:35,476 --> 00:41:41,256
+Hacmi 32 pi civarında.
+
+383
+00:41:45,108 --> 00:41:56,888
+baştaki bir birimlik değişimde V'yi 4P civarında değiştirir veya etkiler.
+
+384
+00:42:03,699 --> 00:42:08,279
+Niferansiyel yardımıyla da bu değişim oranlarını bu şekilde hesaplayabiliyoruz.
+
+385
+00:42:11,827 --> 00:42:20,927
+Türev dediğimiz şeyin zaten en temelde geometrik yorumu buydu arkadaşlar. Bir fonksyondaki değişimi hesaplamak, değişim oranı hesaplamak.
+
+386
+00:42:52,820 --> 00:42:53,880
+Yazmayanlar mı?
+
+387
+00:43:14,452 --> 00:43:18,892
+Bu arada sizin matematik olarak bir WhatsApp grubunuz var mı arkadaşlar?
+
+388
+00:43:28,596 --> 00:43:48,056
+Haberleştiğiniz bir WhatsApp grubu var değil mi? Şimdi ben diğer sınıflarda şöyle yapıyordum. Şimdi bu online eğitimde bazen sıkıntılar yaşayabiliyoruz. Herhangi bir problem anında ben sınıftan bir temsilci seçip onunla iletişime geçiyorum. Yani sanki WhatsApp grubunun başkanı gibi.
+
+389
+00:43:48,056 --> 00:44:07,376
+Biriniz bana özelden [öğrenci] veya [öğrenci] veya başka biri numaranızı yazarsanız, hani şu son hani bu haftaya atık ama, 3 haftada hani olur ki bir şey olur ya da bazen şey, ek derslerle alakalı duyuruyu da, maile herkes görmeyebiliyor.
+
+390
+00:44:07,376 --> 00:44:17,436
+WhatsApp grubu üzerinden daha hızlı iletebiliyorum. Ek ders duyurularını veya ek dersin linkini özellikle paylaşıyorum. [öğrenci] yolladı şimdi bana.
+
+391
+00:44:18,056 --> 00:44:20,635
+Bir saniye, bir saniye kaydedeyim seni [öğrenci].
+
+392
+00:44:22,735 --> 00:44:25,496
+Ek ders linklerini ben [öğrenci]'le paylaşırım.
+
+393
+00:44:25,496 --> 00:44:27,496
+[öğrenci] de...
+
+394
+00:44:30,579 --> 00:44:32,619
+gruptan sizinle paylaşır, tamam mı?
+
+395
+00:44:41,523 --> 00:44:43,784
+Gözüm de bozulmuş, bayağı okuyamıyorum.
+
+396
+00:44:44,423 --> 00:44:52,324
+Şimdi [öğrenci], ben seni çaldırayım. Sen de kaydet dediğim gibi, sınıftaki iletişim aracımız sen olacaksın.
+
+397
+00:44:54,603 --> 00:44:55,543
+Çaldı değil mi?
+
+398
+00:45:10,483 --> 00:45:12,264
+Grup 22, değil mi sizin grubunuz?
+
+399
+00:45:34,260 --> 00:45:54,560
+şu şekilde 2.05 çarpı e üzeri 2.05'in karesi eksi 3.9 değerini a'nine erleştirmeyi.
+
+400
+00:45:58,099 --> 00:46:00,480
+B. Differenciar ve sallı.
+
+401
+00:46:05,076 --> 00:46:11,556
+Differansiyel hesap dediğimiz şey tam differansiyel arkadaşlar. İki türlü de geçer ismi aklınızda bulunsun.
+
+402
+00:46:13,235 --> 00:46:21,916
+Yine hesaplayın. Şimdi tabii ki yüz yüze sınavlarda bir yöntem belirtiliyordu genelde ve o yöntemle çözülmesi isteniyordu.
+
+403
+00:46:22,315 --> 00:46:26,295
+Gerçi ikisi de birbirinin aynısı zaten. Şimdi daha iyi anlayacaksınız arkadaşlar.
+
+404
+00:46:27,076 --> 00:46:32,596
+Ama ben ikisini de çözeyim. Bu test sınavında hangisi daha kolayınıza gelirse onunla yaparsınız.
+
+405
+00:46:32,596 --> 00:46:35,815
+soruyu okuyayım. Şurası gözükmüyorsa eğer.
+
+406
+00:46:35,815 --> 00:46:43,235
+2,05 çarpı e üzeri 2,05'in karesi eksi 3,9.
+
+407
+00:47:02,771 --> 00:47:13,491
+Şimdi yine bizden hesaplamamızı istediği bir değer var. O halde ben ne yapacağım? Öncelikle fonksiyonumu oluşturmakla işe başlayacağım. Bakın burada iki tane sayım var, öyle değil mi?
+
+408
+00:47:14,211 --> 00:47:19,612
+f, x, y. O zaman benim fonksiyonum nasıl olur? Nasıl bir fonksiyon oluşturmam gerekiyor?
+
+409
+00:47:19,612 --> 00:47:28,011
+x çarpı e üzeri x kare eksi y.
+
+410
+00:47:31,795 --> 00:47:37,815
+Ve benden istediği şey de f 2,05,3,9.
+
+411
+00:47:43,155 --> 00:47:53,536
+Şimdi, sonu yazdım. Her ikisinde de neye ihtiyacım var arkadaşlar? Her iki yöntemde de, f'in, x0, y0 noktamı belirleyin.
+
+412
+00:47:53,536 --> 00:48:06,775
+x0, y0 noktam. 2,05'e en yakın tam sayı değeri nedir? 2'dir. 3,9'a en yakın tam sayı değerinde 4'dur. Bunu da belirledim.
+
+413
+00:48:06,775 --> 00:48:14,556
+Bu benim başlangıç noktam gibi düşünün. Bu da sapma miktarım. Yani sattığım nokta 2,05'e 3,9.
+
+414
+00:48:16,335 --> 00:48:21,596
+Şimdi, f'in x'e göre ve y'ye göre kısmi türevlerini hesaplamam lazım.
+
+415
+00:48:22,416 --> 00:48:30,155
+Burada bir çarpım türevi var. x'in x'e göre türevi 1, çarpı e'leri x kare eksi y diyorum.
+
+416
+00:48:30,155 --> 00:49:00,135
+Artı, e'nin x'e göre türevi 2, çarpı e'nin x'e göre türevi 2, çarpı e'leri x kare e'nin türevini alıyorum.
+
+417
+00:48:48,724 --> 00:48:59,524
+y'ye göre kısmi türevde de x sabit, e'nin üstünün türevini aldığımda y'ye göre eksi 1 gelecek. Dolayısıyla eksi x, e üzeri x kare eksi y oldu mu burası da?
+
+418
+00:49:05,012 --> 00:49:08,792
+Şimdi başlıyorum. Bunları bir kenara koydum arkadaşlar.
+
+419
+00:49:09,872 --> 00:49:11,372
+Dinerleştirme ile başlayalım.
+
+420
+00:49:12,512 --> 00:49:20,552
+Şimdi düzlemimi bulalım. Bu 2,4 noktasında bu yüzeye t' et olan düzlem hangi düzlemmiş acaba?
+
+421
+00:49:20,552 --> 00:49:23,132
+Bu bana hangi şey veriyordu?
+
+422
+00:49:23,132 --> 00:49:30,632
+f 2,4 artı x'e göre türevin 2,4'deki değeri x-2
+
+423
+00:49:30,632 --> 00:49:35,952
+f'in y'e göre kısım yitirevin 2,4'deki değeri y-4
+
+424
+00:49:42,612 --> 00:49:55,572
+Şimdi şuraya bakalım. 4 eksi 4 sıfır. Burası 1 oldu. 2'nin karısı 4, 8. Burası da 1. 8, 1 daha 9. Şurası 9'dur.
+
+425
+00:49:59,668 --> 00:50:06,148
+Burası ne olacak? Şurası e üzeri sıfırdan 1, eksi 2, burası da eksi 2 oldu.
+
+426
+00:50:08,508 --> 00:50:11,588
+F2,4 nedir? Burası zaten 1, burası da 2.
+
+427
+00:50:18,675 --> 00:50:23,915
+ve x'yi oluşturdum ve fx'yi fonksiyonumda buna yakınsıyordu.
+
+428
+00:50:23,915 --> 00:50:32,596
+Bu da nedir arkadaşlar? 2 artı 9x-2, eksi 2, y-4.
+
+429
+00:50:37,139 --> 00:50:46,299
+Benim neye ihtiyacım var? F2,05, 3,9'a ihtiyacım var.
+
+430
+00:50:50,356 --> 00:51:02,176
+O halde bu da yaklaşık olarak neye eşit olacak? 2 artı 9 çarpı 0,05, 2,05 den 2'yi çıkardım.
+
+431
+00:51:02,876 --> 00:51:09,216
+Eksi 2 çarpı, eksi 0,1. 3.9'dan da 4'ü çıkardım.
+
+432
+00:51:11,956 --> 00:51:16,016
+Bu da arkadaşlar 2.65 yapıyor.
+
+433
+00:51:38,228 --> 00:51:39,548
+Buraya kadar tamamlayız.
+
+434
+00:51:52,083 --> 00:52:08,323
+Şimdi diferansiyelle hesaplayalım. Diferansiyelimiz neydi arkadaşlar? Tam diferansiyelimiz, f'in x'e göre kısmi türevinin 2, 4'teki değeri dx artı f'in y'e göre kısmi türevinin 2, 4'teki değeri dy.
+
+435
+00:52:08,323 --> 00:52:13,623
+Şimdi benim dx'i ve dy'yi bulmam lazım.
+
+436
+00:52:14,243 --> 00:52:19,723
+dx dediğimiz şey yaklaşık olarak neydi? x eksi x0 yani x'teki sapma miktarı.
+
+437
+00:52:20,263 --> 00:52:24,203
+Yani 2,05 eksi 2. Yani 0,05.
+
+438
+00:52:26,503 --> 00:52:34,043
+dy'miz de y'deki değişim. Yani y'deki sapma 3,9 eksi 4'ten eksi 0,1.
+
+439
+00:52:37,940 --> 00:52:46,960
+Dolayısıyla benim fonksiyonumdaki değişimde arkadaşlar, yani df'de, yani delta f, ne olacak?
+
+440
+00:52:47,619 --> 00:52:53,220
+Fonksiyonumdaki değişimde noktaları buraya kaydırdığım durumda ortaya çıkan değişim.
+
+441
+00:52:53,220 --> 00:53:00,059
+Yani f2,05, 3,9, eksi f2,1,0.
+
+442
+00:53:05,940 --> 00:53:20,000
+Bakın aynı şey oldu. Şimdi şu farkı, bunun yerine şu farkı yazıyorum. Ve bunları da çarpıp topladığım durumda, bu F2,4'ü eşitliğin diğer tarafını atarsam, çünkü benim ihtiyacım olan ifade şu ya, ben bunu arıyorum.
+
+443
+00:53:20,000 --> 00:53:24,000
+F2,4'ü eşittir.
+
+444
+00:53:24,000 --> 00:53:30,000
+O zaman F2,5,3,9 eşittir.
+
+445
+00:53:30,000 --> 00:53:34,000
+F'in 2,4'teki değeri neydi arkadaşlar? 2'ydi zaten.
+
+446
+00:53:34,000 --> 00:53:38,000
+Değil mi? Bunu diğer tarafa attım, bakın şu tarafa attım.
+
+447
+00:53:38,000 --> 00:53:46,000
+2 artı, Fx'in 2,4'teki değeri 9 çarpı 0,05.
+
+448
+00:53:46,000 --> 00:53:54,000
+Burası, burası, burası, eksi 2 çarpı, D'yemizde eksi 0,1. Bakın aynı şey oldu.
+
+449
+00:53:54,000 --> 00:53:57,000
+2,4'ü eşittir.
+
+450
+00:53:57,000 --> 00:54:16,000
+65.
+
+451
+00:54:04,019 --> 00:54:31,400
+Burada aslında şunu yaptık. Bu eksi 2 eşittir. Aslında yaptığımız şey bu. İsterseniz böyle edersem daha kolay görürsünüz. Bakın burası df, burası fx 2'nin 4'teki değeri bx, burası da fy'nin 2 4'teki değeri b. Formülü buraya geçir.
+
+452
+00:54:39,572 --> 00:54:46,271
+Tamam, 10 dakika, 5 geçiye kadar bir mola verelim. Mola isteyen arkadaşlar oldu.
+
+453
+00:54:49,092 --> 00:54:59,012
+14, 15, 0, 5'e kadar, ya da 10 dakikalık mola diyelim canım. 10 dakika mola.
+
+454
+00:55:01,152 --> 00:55:04,112
+Ay bir dakika, üzerinden yazdım.
+
+455
+00:55:11,123 --> 00:55:12,583
+10 dakika sonra görüşürüz.
+
+456
+01:05:10,643 --> 01:05:12,083
+Birkaç son söz edelim birlikte.
+
+457
+01:05:20,884 --> 01:05:30,644
+Bu konuda bittikten sonra haftaya ekstrem değerler diye bir konumuz var. Onu işleyeceğiz. Ondan sonra artık iki katlı integrallere geçiyoruz arkadaşlar.
+
+458
+01:05:31,123 --> 01:05:41,043
+Dün de bahsetmiştim. Şimdiye kadar ki en güzel, bana göre en zevkli konu, böyle zirvede kapatacağız dönemi inşallah birlikte. Siz de severseniz tabii.
+
+459
+01:05:42,704 --> 01:05:47,764
+Şimdi birkaç konu söz edelim bu. Yani vaktimiz yettiğince işte.
+
+460
+01:05:53,300 --> 01:05:53,760
+Sola.
+
+461
+01:05:57,715 --> 01:06:03,295
+Bu çözeceğim iki soru arkadaşlar. Sınav sorusu.
+
+462
+01:06:10,228 --> 01:06:21,967
+diyor ki, sinü, pi, 0,01, 1,05, artı, ln, 1,05.
+
+463
+01:06:23,648 --> 01:06:28,568
+İparesinin yaklaşık değeri mi?
+
+464
+01:06:40,596 --> 01:06:44,856
+Aslında ben ilk gördüğümde bunu bayağı hoşuma gitmişti.
+
+465
+01:06:45,335 --> 01:06:47,516
+Elimde bir hesap makinesi yok, bir şey yok.
+
+466
+01:06:47,635 --> 01:06:52,536
+Sadece matematik bilgimle böyle çok ilginç bir ifadenin, değil mi?
+
+467
+01:06:52,916 --> 01:06:56,436
+Hem pi var, böyle birbiriyle ifadeler var, bunları çarpacağım.
+
+468
+01:06:56,536 --> 01:07:03,635
+Pi ile çarpıp elenli bir ifadeyle toplayıp bir de bunun sinüs fonksiyonu altındaki değerini bulacağım.
+
+469
+01:07:05,175 --> 01:07:06,655
+Aslında oldukça zor bir şey.
+
+470
+01:07:06,655 --> 01:07:08,675
+Hesap makinesiyle bile zor bir şey.
+
+471
+01:07:08,675 --> 01:07:11,635
+Ancak güncel matematik programlarıyla yapabilirsiniz.
+
+472
+01:07:11,815 --> 01:07:18,315
+Ama elimde hiçbir şey olmadığını düşünürsem sadece bir türev bilgimle bunu çok rahat hesaplayabiliyorum.
+
+473
+01:07:18,715 --> 01:07:21,155
+Bu çok güzel gelmişti bana ilk gördüğümde.
+
+474
+01:07:22,596 --> 01:07:26,396
+Bir uygulama aslında matematiklerin bir uygulaması gibi düşünebilirsiniz.
+
+475
+01:07:28,635 --> 01:07:31,496
+Şimdi istediğiniz yolda yapabilirsiniz.
+
+476
+01:07:31,496 --> 01:07:35,335
+Zaten dediğimiz gibi iki yol aslında birbirinin aynı, bir farkı yok.
+
+477
+01:07:35,335 --> 01:07:41,516
+Sadece biraz başlayacağınızı fark ediyor.
+
+478
+01:07:41,715 --> 01:07:42,016
+O kadar.
+
+479
+01:07:42,596 --> 01:07:44,655
+Şimdi ilk önce nasıl başlıyorum?
+
+480
+01:07:45,016 --> 01:07:47,655
+Şu ifadeyi bir fonksiyona atayarak başlıyorum.
+
+481
+01:07:47,795 --> 01:07:51,695
+Şimdi iki tane sayım olduğu için iki değişkenli bir fonksiyon alacağım.
+
+482
+01:07:51,695 --> 01:07:58,295
+Eğer bu da başka bir sayı olsaydı atıyorum sıfır dokuz gibi o zaman bir de z tanımlamam gerekirdi.
+
+483
+01:07:58,655 --> 01:07:58,876
+Tamam mı?
+
+484
+01:07:58,876 --> 01:08:00,056
+Bu da aklınızda bulunsun.
+
+485
+01:08:00,876 --> 01:08:04,195
+Burada iki tane sayım var.
+
+486
+01:08:04,336 --> 01:08:06,896
+İki değişkenli bir fonksiyon oluşturacağım dolayısıyla.
+
+487
+01:08:07,536 --> 01:08:08,235
+Ne olacak bu?
+
+488
+01:08:08,235 --> 01:08:12,416
+15PXY artı NLY fonksiyonu.
+
+489
+01:08:17,171 --> 01:08:20,271
+Sonra x0 ve y0 noktalarımı oluşturmam lazım.
+
+490
+01:08:21,171 --> 01:08:23,991
+Yani şuna en yakın tam sayı değerimiz 0.
+
+491
+01:08:25,051 --> 01:08:27,611
+Şu sayı en yakın tam sayı değerinde 1.
+
+492
+01:08:27,971 --> 01:08:29,031
+Bunları da oluşturdum.
+
+493
+01:08:30,711 --> 01:08:32,411
+Ve neye bakmam gerekiyor?
+
+494
+01:08:32,571 --> 01:08:33,731
+Hemen şunu da bulayım.
+
+495
+01:08:33,951 --> 01:08:36,951
+F0 1'deki değerine de ihtiyaç duyacağım.
+
+496
+01:08:38,391 --> 01:08:39,531
+Burası 0 oldu.
+
+497
+01:08:39,611 --> 01:08:41,751
+ln 1 0, sin 0 0.
+
+498
+01:08:42,531 --> 01:08:43,671
+Bunu da kenara yazdım.
+
+499
+01:08:43,671 --> 01:08:48,011
+Ve arkadaşlar kısmi türevleri ihtiyacım olacak.
+
+500
+01:08:48,271 --> 01:08:54,491
+F'in x ve y'ye göre kısmi türevlerine bir de bunların 0 1 noktasındaki değerlerine ihtiyacım var.
+
+501
+01:08:55,071 --> 01:08:56,571
+Şimdi x'e göre kısmi türev alalım.
+
+502
+01:08:56,692 --> 01:09:00,371
+Zaten buradaki mesele bu kısmi türevleri doğru almak.
+
+503
+01:09:00,631 --> 01:09:02,991
+Başka hiçbir esprisi yoktur tarzlarıların.
+
+504
+01:09:03,692 --> 01:09:04,931
+Ve tabii ki bileceksiniz.
+
+505
+01:09:05,071 --> 01:09:06,051
+Formülünü bileceksiniz.
+
+506
+01:09:06,171 --> 01:09:07,091
+Yolunu bileceksiniz.
+
+507
+01:09:08,031 --> 01:09:09,871
+Önce içinin türevini alıyorum.
+
+508
+01:09:09,871 --> 01:09:13,091
+Px'ye göre türevi piye.
+
+509
+01:09:13,671 --> 01:09:14,071
+Değil mi?
+
+510
+01:09:14,192 --> 01:09:18,591
+ln y'nin türevi 0 çarpı sinüs fonksiyonunun türevini aldığım kısmi.
+
+511
+01:09:18,991 --> 01:09:24,511
+İçine aynen yazıyoruz.
+
+512
+01:09:25,747 --> 01:09:31,987
+Sonra y yor kısmi türevini alıyorum. İçinin türevi px, Elanya'nın türevi bir bölüye.
+
+513
+01:09:33,787 --> 01:09:39,268
+Sonra sinüsün türeviyle çarpıyorum. Cosmix diye artı elenme.
+
+514
+01:09:46,739 --> 01:09:50,159
+Sonra bakalım fx'in 0, 1'deki değeri.
+
+515
+01:09:51,699 --> 01:09:52,779
+Burası pi oldu.
+
+516
+01:09:53,219 --> 01:09:55,239
+Kosinus 0 artı 1.
+
+517
+01:09:55,340 --> 01:09:56,199
+Kosinus 0, 1.
+
+518
+01:09:56,300 --> 01:09:57,979
+1 çarpı 1'den burası 1.
+
+519
+01:09:59,639 --> 01:10:01,719
+fy'nin 0, 1'deki değeri.
+
+520
+01:10:03,199 --> 01:10:04,920
+Burası 1, 0.
+
+521
+01:10:05,099 --> 01:10:05,880
+Burası 1 oldu.
+
+522
+01:10:06,399 --> 01:10:10,420
+Burası da kosinus 0'dan 1 mi oldu?
+
+523
+01:10:11,519 --> 01:10:12,840
+Şuraya tekrar bakıyorum.
+
+524
+01:10:12,920 --> 01:10:14,559
+Burası pi çarpı 1'den.
+
+525
+01:10:14,639 --> 01:10:15,479
+Burası pi olacak.
+
+526
+01:10:16,739 --> 01:10:19,399
+Pi çarpı 1 çarpı kosinus 0'dan.
+
+527
+01:10:19,619 --> 01:10:20,579
+Pi gelecek burası.
+
+528
+01:10:20,800 --> 01:10:21,779
+Burası da 1 geldi.
+
+529
+01:10:24,219 --> 01:10:27,019
+Bir de tabii ki bu hesaplamaları doğru yapmamız gerekiyor.
+
+530
+01:10:27,420 --> 01:10:29,439
+Ben çok fazla işlem atansı yapan biriyim.
+
+531
+01:10:29,579 --> 01:10:31,139
+Öğrendiliğimde de çok yapardım.
+
+532
+01:10:31,639 --> 01:10:32,439
+Hala da yapıyorum.
+
+533
+01:10:32,599 --> 01:10:33,559
+Hala atlatamadım.
+
+534
+01:10:34,599 --> 01:10:35,699
+Siz beni düzeltin.
+
+535
+01:10:38,699 --> 01:10:43,319
+Şimdi ister nelerleştirme, ister diferansiyel hesap hiç fark etmez.
+
+536
+01:10:44,579 --> 01:10:45,719
+Hangisiyle yapalım?
+
+537
+01:10:46,739 --> 01:10:47,939
+Fark eder mi?
+
+538
+01:10:48,840 --> 01:10:53,760
+Ya da hangisini daha az anladıysanız ya da hangisi daha zor geliyorsun isterseniz öyle yapabiliriz.
+
+539
+01:10:54,760 --> 01:11:01,139
+Bir de tabii ki.
+
+540
+01:10:58,676 --> 01:11:00,436
+Ya da isterseniz ikisiyle de yapalım.
+
+541
+01:11:02,376 --> 01:11:03,716
+Ve x'lerimiz ne olacak?
+
+542
+01:11:04,376 --> 01:11:07,716
+F0 1'deki değeri yani 0 artı
+
+543
+01:11:07,716 --> 01:11:12,716
+P çarpı x eksi x sıfır.
+
+544
+01:11:12,896 --> 01:11:13,996
+X'imiz ne arkadaşlar?
+
+545
+01:11:14,196 --> 01:11:15,256
+0 nokta 0 bir.
+
+546
+01:11:16,476 --> 01:11:18,536
+X'i 0 bu oldu.
+
+547
+01:11:19,655 --> 01:11:23,316
+Artı F'ye'nin 0 bir'deki değeri 1 çarpı
+
+548
+01:11:23,316 --> 01:11:25,036
+y eksi y sıfır.
+
+549
+01:11:25,196 --> 01:11:26,976
+Yani 0 veriyor 0 5.
+
+550
+01:11:28,676 --> 01:11:31,356
+O zaman burası ne oldu?
+
+551
+01:11:33,256 --> 01:11:35,155
+0 nokta 0 bir pi
+
+552
+01:11:35,155 --> 01:11:39,876
+artı 0 nokta 05
+
+553
+01:11:39,876 --> 01:11:42,996
+Bu da ne olmuş arkadaşlar?
+
+554
+01:11:43,276 --> 01:11:46,356
+0 virgül yani pi'yi de yerine koyduğumuzda
+
+555
+01:11:46,356 --> 01:11:50,536
+0 virgül 814 yapıyormuş.
+
+556
+01:11:51,016 --> 01:11:52,936
+E bu da yaklaşık olarak neye eşitmişti?
+
+557
+01:11:53,655 --> 01:11:56,076
+Tabi ki x'i 0 nokta 0 bir aldık.
+
+558
+01:11:56,076 --> 01:11:58,176
+Y'yi 1 virgül 05 aldık.
+
+559
+01:11:58,176 --> 01:12:00,856
+Bu yaklaşık olarak F0 virgül 0 bir.
+
+560
+01:12:01,856 --> 01:12:03,756
+1 virgül 05'e eşit.
+
+561
+01:12:03,956 --> 01:12:06,856
+Bunun da yaklaşık değeri 0 virgül 814.
+
+562
+01:12:06,856 --> 01:12:13,856
+05'e eşit.
+
+563
+01:13:05,011 --> 01:13:12,491
+Bu da çok güzel bir sınav sorusu arkadaşlar. Örümle baya hoşuma gitmişti. Sınav sorusu diyebilirim.
+
+564
+01:13:15,131 --> 01:13:18,131
+1 fxd fonksiyonu için.
+
+565
+01:13:24,564 --> 01:13:28,564
+f'in 1, 2 ve 2 değeri 5 ve
+
+566
+01:13:28,564 --> 01:13:38,043
+f'in i artı j vektörü yönündeki türevi
+
+567
+01:13:44,115 --> 01:13:45,475
+Çök 2 olsun.
+
+568
+01:13:53,395 --> 01:14:02,335
+ve f1,1,2,1 değerini yaklaşık olarak hesaplamamızı istiyor.
+
+569
+01:14:12,340 --> 01:14:29,079
+Şimdi bakıyorum, soruyu ilk okuduğumuzda bir yönlü türev sorusu gibi görünüyor. Ama aslında bir lineleştirme sorusu. Yaklaşık değer hesabı istiyor. Yani iki konuyu aynı soruda uygulatan bir soru sormuşlar.
+
+570
+01:14:37,876 --> 01:14:56,496
+Şimdi hiç kafamız karışmasın. Şöyle tane tane çözerek gidiyoruz. Benden istenen şey şu değil mi? Peki ben bunu bulmak için ne yaparım arkadaşlar? Öncelikle bu noktadaki lineerleştirmesini bulmam gerekiyor benim öyle değil mi? Yani L, X, Y'yi bulmam gerekiyor.
+
+571
+01:14:56,496 --> 01:14:59,296
+Bu da neye eşittir?
+
+572
+01:15:01,456 --> 01:15:11,636
+F, şimdi şunu da yazalım şuraya. Bunlara en yakın tam sayı değerleri X0'ımız 1, Y0'ımız 2. Değil mi? Bunları zaten biliyorum.
+
+573
+01:15:12,296 --> 01:15:25,976
+Bu ve ise F1,2 artı F'in X'e göre kısmi türevinin 1,2'deki değeri çarpı X-1 artı F'in Y'ye göre türevinin 1,2'deki değeri çarpı Y-1.
+
+574
+01:15:32,756 --> 01:15:36,136
+Sonra x gördüğüm yere işte 1,1 koyacağım.
+
+575
+01:15:36,256 --> 01:15:38,436
+y gördüğüm yere 2,1 koyacağım.
+
+576
+01:15:39,396 --> 01:15:40,856
+Ve bu da neye eşit olacak?
+
+577
+01:15:41,016 --> 01:15:42,876
+Yaklaşık olarak buna eşit olacak.
+
+578
+01:15:44,396 --> 01:15:46,036
+Şimdi burayı bir toparlayalım.
+
+579
+01:15:46,036 --> 01:15:46,716
+Tamam mı?
+
+580
+01:15:46,816 --> 01:15:51,816
+f 1,1 2,1 neye eşit?
+
+581
+01:15:51,896 --> 01:15:55,436
+Yaklaşık olarak v 1,1 2,1'e eşit.
+
+582
+01:15:55,636 --> 01:16:00,396
+O da f 1,2'deki değeri zaten bakın bana soru da vermiş.
+
+583
+01:16:00,396 --> 01:16:04,496
+f 1,5 artı şurası ne olacak arkadaşlar?
+
+584
+01:16:04,716 --> 01:16:07,876
+1,1'den 1'i çıkardığında 0,1 kaldı.
+
+585
+01:16:08,695 --> 01:16:20,316
+f x'in 1,2'deki değeri çarpı 0,1 artı f y'nin 1,2'deki değeri çarpı 2,1'den 2'yi çıkartınca 0,1,1.
+
+586
+01:16:20,316 --> 01:16:23,036
+Yani bunu şöyle toparlayabilir miyiz?
+
+587
+01:16:23,036 --> 01:16:33,896
+5 artı 0,1 parantezinde f x'in 1,2'deki değeri artı f y'nin 1,2'deki değeri.
+
+588
+01:16:37,235 --> 01:16:45,956
+Yani benim şu ifadeye ihtiyacım var arkadaşlar. Acaba bu neymiş? Şu 0,1 de parantez alalım isterseniz karışmasın.
+
+589
+01:16:50,996 --> 01:16:57,016
+Harika. Şimdi bunu bulmak için bana başka şeyler de varmış. Şimdi o kısımla dönelim.
+
+590
+01:16:57,456 --> 01:17:05,716
+Çünkü şimdi neye ihtiyacım olduğunu çıkardım. Buna ihtiyacım var ve bunun sonra da bana verilen diğer verilerden çıkarmam lazım.
+
+591
+01:17:06,596 --> 01:17:12,596
+Ne diyor? F'nin i artı j vektörü yönündeki türevi 3 kökçü. Bakın yönlü türenin değerini vermiş.
+
+592
+01:17:12,596 --> 01:17:25,836
+Yönlü türevi biz nasıl bulduk? Herhangi bir birim u vektörü yönünde bir f fonksiyonun yönlü türevi bir noktadaki hatta bir iki noktasındaki yönlü türevi nedir?
+
+593
+01:17:26,376 --> 01:17:31,676
+Gradiyent vektörün bir iki deki değeri çarpı skaler çarpı u idi.
+
+594
+01:17:32,275 --> 01:17:37,756
+Ve bunun da bana değerini vermiş bakın sonucunu vermiş. 3 kök 2 diye.
+
+595
+01:17:37,756 --> 01:17:45,496
+Şimdi acaba şunlar ne? Ona bakıyorum. Yönümü de vermiş arkadaşlar. Değil mi?
+
+596
+01:17:45,935 --> 01:17:49,996
+i artı j vektörü yönünde. Ama burada neye dikkat etmem gerekiyordu?
+
+597
+01:17:50,435 --> 01:17:55,655
+Bana verilen yön vektörün birim mi? Yani o yönde ve doğrultuda sonsuz vektör vardı.
+
+598
+01:17:55,815 --> 01:18:01,056
+Onları temsilen biz birim vektörü alıyorduk. Buraya baktığımız zaman bu birim vektör mü arkadaşlar?
+
+599
+01:18:01,655 --> 01:18:05,395
+Uzunluğu ne? Kök 2. Değil mi? Dolayısıyla birim değil.
+
+600
+01:18:05,395 --> 01:18:07,895
+Yani ben bunu nasıl birimleştiririm?
+
+601
+01:18:09,956 --> 01:18:16,256
+i artı j'yi neye bölerek? Kök 1 artı 1'e. Yani uzunluğuna bölerek değil mi?
+
+602
+01:18:16,895 --> 01:18:22,876
+Bu da ne olacak? 1 bölü kök 2 i artı 1 bölü kök 2 j.
+
+603
+01:18:30,804 --> 01:18:32,184
+Şurada yerini yazacağım.
+
+604
+01:18:34,163 --> 01:18:35,804
+Şimdi şuna gelelim.
+
+605
+01:18:37,003 --> 01:18:38,864
+Gradyant f vektörümüz neydi?
+
+606
+01:18:40,064 --> 01:18:41,344
+Bunun bir ikideki değeri.
+
+607
+01:18:42,703 --> 01:18:46,824
+f'in x'e göre kısmi türevinin bir ikideki değeri i,
+
+608
+01:18:47,824 --> 01:18:52,524
+artı f'in y'e göre türevinin bir ikideki değeri c.
+
+609
+01:18:54,324 --> 01:18:56,003
+Sonra aradığım şeye bakıyorum.
+
+610
+01:18:56,123 --> 01:18:58,703
+Aa, aslında ben gradyantı arıyormuşum.
+
+611
+01:19:03,731 --> 01:19:11,171
+Tabii bunun iyicisi salim yani sadece şu ikisini toplamın yani buradan i ve j vektörlerini yok etmem lazım ki bana bunu versin.
+
+612
+01:19:12,091 --> 01:19:17,192
+E zaten şunu da şuraya yazınca arkadaşlar ne olacak?
+
+613
+01:19:17,372 --> 01:19:23,412
+Yani şu iki vektörü skaler çarptığımda sonuç 3 kök 2 oluyorsa e u vektörümü de biliyorum.
+
+614
+01:19:23,692 --> 01:19:25,711
+O zaman şunu bulabilirim değil mi?
+
+615
+01:19:26,471 --> 01:19:28,752
+3 kök 2 eşittir.
+
+616
+01:19:29,072 --> 01:19:31,492
+Bu ikisini skaler çarptığımda ne gelecek arkadaşlar?
+
+617
+01:19:31,492 --> 01:19:45,131
+1 bölü kök 2 i kare 1 olduğu için gidecek fx 1 2 artı şu ikisini skaler çarptığım 1 bölü kök 2 fy 1 2.
+
+618
+01:19:47,231 --> 01:19:59,192
+Dolayısıyla bu iki ifadeyi 1 bölü kök 2 parantezine alırsam ve diğer tarafa atarsam arkadaşlar fx'in 1 2'deki değeri artı fy'nin 1 2'deki değeri
+
+619
+01:19:59,192 --> 01:20:03,771
+3 fik 2 çarpı kök 2'den 6 olmuş oldu.
+
+620
+01:20:04,332 --> 01:20:07,811
+Bu sonucu da gidip burada yerine yazarsam ne oldu?
+
+621
+01:20:08,011 --> 01:20:10,332
+0 1 ile çarptım 6'yı 0 6.
+
+622
+01:20:10,872 --> 01:20:13,091
+Bunun sonucu da şöyle kırmızıyla yazalım.
+
+623
+01:20:13,711 --> 01:20:16,912
+5 nokta 6 olmuş oldu.
+
+624
+01:20:19,311 --> 01:20:20,032
+Değil mi?
+
+625
+01:20:20,171 --> 01:20:21,091
+Çok güzel bir soru.
+
+626
+01:20:21,091 --> 01:20:23,532
+Aslında hiçbir zorluğu yok.
+
+627
+01:20:24,131 --> 01:20:27,792
+Ama öğrenci konuyu anlamış mı anlamamış mı öyle güzel ölçüyor ki.
+
+628
+01:20:31,051 --> 01:20:33,112
+Çünkü şey yapıyorlar genelde işte.
+
+629
+01:20:33,631 --> 01:20:35,231
+Yönü kürenin formülünü ezberliyor.
+
+630
+01:20:36,152 --> 01:20:38,452
+Dinarlıçı menü formülünü ezberliyor.
+
+631
+01:20:39,731 --> 01:20:40,692
+Ezberle giriyor.
+
+632
+01:20:40,912 --> 01:20:44,572
+O zaman böyle tersten sorulan bir soru gelince kalıyor.
+
+633
+01:20:44,572 --> 01:20:50,211
+Önce neye ihtiyacım olduğunu çıkardım.
+
+634
+01:20:50,471 --> 01:20:50,771
+Tamam mı?
+
+635
+01:20:50,792 --> 01:20:51,752
+Benden bunu istiyor.
+
+636
+01:20:52,252 --> 01:20:54,591
+Bunu hesaplamak için benim nelere ihtiyacım var?
+
+637
+01:20:54,692 --> 01:20:56,051
+Şu ifade ihtiyacım var.
+
+638
+01:20:56,431 --> 01:20:59,211
+Bunu bulmak için bana verilen diğer şeyler neler?
+
+639
+01:20:59,551 --> 01:21:02,252
+Oradan yola çıkarak bakın çorap sökü gibi geliyor zaten.
+
+640
+01:21:57,747 --> 01:21:59,727
+Bunu diğer sınıfa çözemelim ama
+
+641
+01:21:59,727 --> 01:22:04,227
+Bir saniye
+
+642
+01:22:17,619 --> 01:22:21,979
+Burada diyor ki, f1, 2 eşittir, eksi 3.
+
+643
+01:22:24,800 --> 01:22:28,300
+Bakın, burada da birazcık daha farklı soru soruyor.
+
+644
+01:22:28,300 --> 01:22:35,260
+Bunun değerini vermiş, tamam mı? Eksi 2.96 şartını sağlayan.
+
+645
+01:22:39,796 --> 01:22:44,036
+bir f x y
+
+646
+01:22:47,828 --> 01:22:48,588
+E gönlüm.
+
+647
+01:22:54,484 --> 01:22:56,484
+Ve o gibi fonksiyonlar.
+
+648
+01:23:00,307 --> 01:23:02,347
+F1, 2 noktasında
+
+649
+01:23:07,347 --> 01:23:13,207
+u eşittir, eksi 2 i artı 2 cil vektörü yönündeki
+
+650
+01:23:19,572 --> 01:23:21,112
+sürenin, değerinin
+
+651
+01:23:26,515 --> 01:23:28,515
+Ya, fıştıklar, fıştıklar.
+
+652
+01:23:31,699 --> 01:23:40,639
+Az önceki soru türünü tersten sormuş bakın. Burada da dinerleştirmenin son ölçünü vermiş. Yönlü türelim ve yerini istiyor yaklaşık olarak.
+
+653
+01:23:54,036 --> 01:23:57,655
+Şimdi yine benden istediği şeyden yola çıkarak geriye doğru gideyim.
+
+654
+01:24:00,655 --> 01:24:10,916
+Fx'e fonksiyonunun u vektörü yönündeki yönlü türevinin p noktasındaki değeri neydi arkadaşlar?
+
+655
+01:24:11,836 --> 01:24:18,655
+Bu f fonksiyonunun p noktasındaki gradyanti ile u birim vektörünün skarer çarpımıydı.
+
+656
+01:24:18,655 --> 01:24:26,355
+Önce bakıyorum. Bu birim vektörünün değil. O zaman u'yu hemen birimleştiriyorum.
+
+657
+01:24:26,775 --> 01:24:28,195
+Nasıl birimleştiriyorum?
+
+658
+01:24:29,956 --> 01:24:34,355
+Eksi 2i artı 2j uzunluğuna bölüyorum.
+
+659
+01:24:34,956 --> 01:24:36,475
+4 artı 4.
+
+660
+01:24:39,155 --> 01:24:40,416
+Buradan ne oldu?
+
+661
+01:24:40,636 --> 01:24:46,996
+Eksi 2 bölü kök 8i artı 2 bölü kök 8j.
+
+662
+01:24:46,996 --> 01:24:48,496
+1 artı 4.
+
+663
+01:24:48,496 --> 01:24:49,355
+1 artı 1.
+
+664
+01:24:59,444 --> 01:25:01,784
+Evet, şimdi gradyante bakalım.
+
+665
+01:25:04,884 --> 01:25:27,264
+F'in x'e göre kısmi türevi i, artı F'in y'ye göre kısmi türevi i, artı F'in y'ye göre kısmi türevi i, artı F'in y'ye göre kısmi türevi i, artı F'in y'nin 1.2'deki değeri i.
+
+666
+01:25:32,627 --> 01:25:35,167
+Çarpıyorum arkadaşlar, skaler çarpacağım.
+
+667
+01:25:35,487 --> 01:25:35,907
+Tamam mı?
+
+668
+01:25:36,587 --> 01:25:37,127
+Ne gelecek?
+
+669
+01:25:39,768 --> 01:25:51,867
+Eksi 2 bölü kök 8, fx 1, 2, artı 2 bölü kök 8, fy 1, 2.
+
+670
+01:25:56,787 --> 01:26:03,667
+Burayı da birazcık toparlarsam arkadaşlar, aslında bu türev değeri, benim aradığım türev değeri,
+
+671
+01:26:04,547 --> 01:26:16,087
+eksi 2 bölü kök 8 parantezinde, f'in x'e göre kısmi türevi eksi, f'in y'e göre kısmi türevi olmaz mı?
+
+672
+01:26:20,340 --> 01:26:22,659
+Yani benim aradığım şey şimdi de bu.
+
+673
+01:26:26,739 --> 01:26:31,739
+Aynen öyle. Devamda lineerleştirmeden bulacağız. Bana verilen diğer bilgilerden.
+
+674
+01:26:32,539 --> 01:26:37,239
+Şimdi Lxy. Neydi arkadaşlar?
+
+675
+01:26:37,599 --> 01:26:48,460
+F'in 1, 2'deki değeri artı F'in X'e göre kısmi türevinin 1, 2'deki değeri X-1 artı F'in Y'e göre türevinin 1, 2'deki değeri Y-2.
+
+676
+01:26:48,460 --> 01:26:49,599
+Değil mi?
+
+677
+01:26:51,000 --> 01:26:54,559
+Şimdi yazıyorum. X dediğim şey 1,01.
+
+678
+01:27:01,171 --> 01:27:01,891
+Geldi mi?
+
+679
+01:27:07,539 --> 01:27:09,960
+L 1,01
+
+680
+01:27:09,960 --> 01:27:12,199
+1,99
+
+681
+01:27:12,199 --> 01:27:16,420
+eşittir.
+
+682
+01:27:16,899 --> 01:27:19,199
+F'in 1,2'deki değeri bana yine verilmiş.
+
+683
+01:27:19,399 --> 01:27:20,279
+Eksi 3.
+
+684
+01:27:21,500 --> 01:27:23,479
+Sonra bu bizim
+
+685
+01:27:23,479 --> 01:27:24,500
+x'miz.
+
+686
+01:27:24,920 --> 01:27:26,479
+x'den 1'i çıkardım.
+
+687
+01:27:26,739 --> 01:27:28,439
+Artı fx
+
+688
+01:27:28,439 --> 01:27:29,319
+1,2
+
+689
+01:27:29,319 --> 01:27:31,840
+x'miz bu.
+
+690
+01:27:32,060 --> 01:27:32,859
+y'miz de bu.
+
+691
+01:27:33,899 --> 01:27:35,640
+0,01 oldu.
+
+692
+01:27:35,640 --> 01:27:37,720
+Artı fy
+
+693
+01:27:37,720 --> 01:27:38,960
+1,2
+
+694
+01:27:38,960 --> 01:27:40,619
+x'i
+
+695
+01:27:40,619 --> 01:27:43,680
+0,01 oldu.
+
+696
+01:27:46,079 --> 01:27:48,899
+1,99'dan 2'yi çıkarınca
+
+697
+01:27:48,899 --> 01:27:50,279
+x'i 0,01
+
+698
+01:27:50,279 --> 01:27:51,300
+kaldı.
+
+699
+01:27:53,699 --> 01:27:55,159
+Dolayısıyla arkadaşlar
+
+700
+01:27:55,159 --> 01:27:56,840
+bunun da sonucu neymiş?
+
+701
+01:27:58,619 --> 01:28:00,460
+x'i 2,96
+
+702
+01:28:00,460 --> 01:28:03,119
+eşittir.
+
+703
+01:28:03,119 --> 01:28:04,239
+x'i 3
+
+704
+01:28:04,239 --> 01:28:05,739
+artı
+
+705
+01:28:05,739 --> 01:28:07,640
+0,01
+
+706
+01:28:07,640 --> 01:28:08,920
+parantezinde
+
+707
+01:28:08,920 --> 01:28:11,859
+f'in x'e göre kısım
+
+708
+01:28:11,859 --> 01:28:13,239
+türevinin 1,2'deki değeri
+
+709
+01:28:13,239 --> 01:28:13,800
+eksi
+
+710
+01:28:13,800 --> 01:28:16,019
+f'in y'e göre türevinin 1,2'deki değeri.
+
+711
+01:28:16,220 --> 01:28:17,539
+İşte istediğim şey
+
+712
+01:28:17,539 --> 01:28:18,800
+çıktı ortaya.
+
+713
+01:28:20,659 --> 01:28:22,119
+Bu ve ise şu işlemleri yapınca
+
+714
+01:28:22,119 --> 01:28:24,319
+arkadaşlar 3'ü diğer tarafa atarsam
+
+715
+01:28:24,319 --> 01:28:26,479
+0,04 kalır.
+
+716
+01:28:26,619 --> 01:28:26,779
+Değil mi?
+
+717
+01:28:27,140 --> 01:28:29,359
+0,01'e bölersem de
+
+718
+01:28:29,359 --> 01:28:31,159
+şu ifade neye eşit olur?
+
+719
+01:28:31,680 --> 01:28:31,859
+Hop
+
+720
+01:28:31,859 --> 01:28:33,359
+4 eşit olmaz mı?
+
+721
+01:28:35,819 --> 01:28:37,140
+Bunda geldim.
+
+722
+01:28:37,279 --> 01:28:38,579
+Burada yerine yazdım.
+
+723
+01:28:41,359 --> 01:28:42,579
+Bak kırmızı ile yazalım.
+
+724
+01:28:43,100 --> 01:28:45,119
+Eksi 8 bölü kök 8'den
+
+725
+01:28:45,119 --> 01:28:48,939
+eksi kök 8 çıkmış oldu.
+
+726
+01:28:55,155 --> 01:28:57,916
+Anlaşılmayan bir yer var mı?
+
+727
+01:29:27,155 --> 01:29:28,515
+O, niye? O şah.
+
+728
+01:30:08,851 --> 01:30:19,311
+Bu düşe yazdım, gele yazdım falan bir Türkçe kitaplarını kullanıyorlar arkadaşlar. Bir de ben kullanıyorum. [öğrenci] bunu anlamamış olabilir.
+
+729
+01:30:27,155 --> 01:30:37,635
+Bu bezdum da bizim aramızda şey vardı, benim böyle üzerine kocaman darlandım yazan bir tişört vardı. Ben onu genelde ek ders günlerinde giyiyordum.
+
+730
+01:30:38,435 --> 01:30:48,916
+Şey böyle 2-3 saat boyunca şey yapınca tabii, darlanıyorlar, beziyorlar falan böyle. Oraya şey yapıyordum, laf atıyordum onlara.
+
+731
+01:30:49,815 --> 01:30:52,836
+Bezdum da oradan geliştim, darlandım, bezdum falan.
+
+732
+01:30:52,836 --> 01:31:02,176
+Tamam mı arkadaşlar? Ve son olarak şuna değineceğim. Bu sonucun eksik kök 8 çıkması bize neyi söylüyordu?
+
+733
+01:31:02,695 --> 01:31:08,775
+Bu vektör şey, fonksiyonumuz bu vektör yönünde artıyor mu, azalıyor mu?
+
+734
+01:31:16,051 --> 01:31:25,511
+Azalıyor değil mi? Aynen ters yönde artması demek. Ve şu u vektörü yönünde süpersiniz. Azaldığı yorumunu çıkarıyorduk.
+
+735
+01:31:26,471 --> 01:31:40,411
+Bugünlük bu kadar arkadaşlar. Sanırım artık bu konuda iyice oturmuştur. Haftaya şeyden başlarız. Ekstra mumlardan. Sonra da sonunda bitirdikten sonra iki katlı integrallerimize geçeriz.
+
+736
+01:31:40,411 --> 01:31:48,251
+Üç haftayı da bu şekilde. Yani iki buçuk haftayı da iki katlı integrallerle devam ettireceğiz ve bitireceğiz.
+
+737
+01:31:48,251 --> 01:31:55,891
+Ben teşekkür ediyorum. Haftaya görüşmek üzere. Bir şey olursa ben sizleri [öğrenci] vasıtasıyla haberdar edeceğim.
+
+738
+01:31:57,311 --> 01:32:01,351
+Ben teşekkür ederim arkadaşlar. İyi günler. Kendinize iyi bakın. İyi hafta sonları.
+
+739
+01:32:04,391 --> 01:32:05,431
+İyi günler.
+
+740
+01:32:10,579 --> 01:32:11,699
+İyi günler cazkız.
+
+741
+01:32:15,923 --> 01:32:19,524
+Sen de ama ama et ol. Hepiniz ama ama et ol. İyi günler.
