@@ -1,0 +1,3963 @@
+1
+00:05:03,540 --> 00:05:05,520
+Evet, merhaba arkadaşlar.
+
+2
+00:05:11,668 --> 00:05:14,487
+39 kişiyiz şu anda.
+
+3
+00:06:09,172 --> 00:06:18,272
+Şimdi arkadaşlar geçen hafta matrisin rangını bulmayı yapmıştık.
+
+4
+00:06:19,512 --> 00:06:24,632
+Rangı bulabilmek için de elemanter işlemleri öğrenmiştik.
+
+5
+00:06:26,092 --> 00:06:35,532
+Burada elemanter işlemlerde demiştim ki satır işlemlerini tercih edin.
+
+6
+00:06:35,532 --> 00:06:46,392
+Çünkü rangı bizim bulmamızdaki esas sebep lineer denklem sistemlerinin çözümde kullanmak için rang buluyoruz.
+
+7
+00:06:47,352 --> 00:06:56,132
+Orada da sadece satır işlemleri yapılıyor.
+
+8
+00:06:56,672 --> 00:07:00,132
+Lineer denklem sistemi dediğim şöyle bir sistem.
+
+9
+00:07:00,132 --> 00:07:03,532
+Bu sistemin çözümü sorulacak bize.
+
+10
+00:07:03,532 --> 00:07:08,252
+Bu çözümü bulmak için de gene rang bulacağız.
+
+11
+00:07:08,652 --> 00:07:11,792
+Rangı bulurken de sadece satır işlemleri yapacağız.
+
+12
+00:07:11,992 --> 00:07:18,292
+Normalde rangı bulurken satır ve sütun her ikisini de yapabilirsin ama bulduğun sadece rang olur.
+
+13
+00:07:18,792 --> 00:07:23,172
+Yani gidersin sonuna kadar satır sütun işlemlerini yapar sonuna gelirsin.
+
+14
+00:07:23,172 --> 00:07:25,552
+Ama sistemi çözmüş olmazsın.
+
+15
+00:07:25,552 --> 00:07:30,572
+Tekrar en baş işlemlere gelip bu sefer satırla tekrar aynılarını tekrarlayacaksın.
+
+16
+00:07:31,632 --> 00:07:33,552
+Ve sistemin çözümünü bulacaksın.
+
+17
+00:07:33,812 --> 00:07:43,472
+Oysa ki en başından satır işlemi devam ettirirsen sonuna geldiğinde hem rangı söylersin hem de sistemin cevabını söylersin.
+
+18
+00:07:43,632 --> 00:07:44,772
+Çözümünü söylersin.
+
+19
+00:07:44,772 --> 00:07:49,392
+Onun için sadece satır işlemi yapın diyorum.
+
+20
+00:07:49,852 --> 00:07:50,372
+Tamam mı?
+
+21
+00:07:50,872 --> 00:07:53,072
+Şimdi ne yapıyorduk peki biz?
+
+22
+00:07:53,592 --> 00:07:55,352
+Ne işlem yapıyoruz?
+
+23
+00:07:55,772 --> 00:07:57,532
+İlk elemanımızı bir yapacağız.
+
+24
+00:07:57,872 --> 00:08:00,932
+Sonra birin bulunduğu sütunu komple sıfır yapacağız.
+
+25
+00:08:01,372 --> 00:08:04,812
+Sonra sıfırdan sonraki ilk elemanımı gene bir yapacağım.
+
+26
+00:08:05,192 --> 00:08:07,232
+Birin bulunduğu sütunu sıfırlayacağım.
+
+27
+00:08:07,392 --> 00:08:09,652
+Sıfırdan sonraki ilk elemanı bir yapacağım.
+
+28
+00:08:09,772 --> 00:08:11,732
+Ve birin bulunduğu sütunu sıfırlayacağım.
+
+29
+00:08:11,732 --> 00:08:13,512
+Bu şekilde işlem yapıyorum.
+
+30
+00:08:14,252 --> 00:08:25,892
+Ama sadece bana soru rangısa ben belli bir noktada rangı doğru gördüğüm yerde işlemi bırakıp rangı söyleyebilirim.
+
+31
+00:08:26,272 --> 00:08:29,572
+Yani mesela şimdi şu soruya bakacak olursak.
+
+32
+00:08:29,831 --> 00:08:35,872
+Bak burada yukarıyı sıfır yapmadan da aşağıyı sıfır yapman önemli.
+
+33
+00:08:36,491 --> 00:08:40,132
+Yani şu asal köşegenin altını sıfır yapmak önemli.
+
+34
+00:08:40,132 --> 00:08:45,152
+Bunun altı sıfırsa burada işlemi kesebilirim.
+
+35
+00:08:45,231 --> 00:08:46,652
+Burada rangı görüyorum çünkü.
+
+36
+00:08:47,032 --> 00:08:50,711
+Kaç satırda sıfırdan farklı eleman var diyoruz.
+
+37
+00:08:51,012 --> 00:08:58,132
+Bir, iki, üç satırda sıfırdan farklı eleman olduğu için rang üçtür deyip buradan rangı söyleyebiliyorum.
+
+38
+00:08:58,991 --> 00:08:59,172
+Tamam.
+
+39
+00:08:59,172 --> 00:09:03,312
+Şimdi şu işlemleri size de yapayım.
+
+40
+00:09:04,172 --> 00:09:05,172
+Haksızlık olmasın.
+
+41
+00:09:07,272 --> 00:09:08,731
+Şu soruyu.
+
+42
+00:09:08,731 --> 00:09:18,731
+Bir, iki, üç satırda sıfırdan.
+
+43
+00:09:18,731 --> 00:09:21,731
+Bir, iki, satırda sıfırdan.
+
+44
+00:09:12,467 --> 00:09:22,147
+Ve
+
+45
+00:09:25,875 --> 00:09:28,275
+A matrisin şöyle olsun dedik.
+
+46
+00:09:28,275 --> 00:09:41,956
+1, 3, 3, 3, 3, 1, 4, 3, 1, 3, 4, 1, 3, 4, 1, 3, 4.
+
+47
+00:09:45,971 --> 00:09:50,231
+Şimdi A matçısının rakı soruluyorsa bana ne yapacağım?
+
+48
+00:09:50,611 --> 00:09:52,851
+İlk elemanım 1 olacak ki burada 1.
+
+49
+00:09:53,192 --> 00:09:56,031
+Ne yapacağım? Sonra 1'in bulunduğu sütunu sıfırlayacağım.
+
+50
+00:09:56,432 --> 00:09:57,891
+Yani ne yapmam lazım?
+
+51
+00:09:58,552 --> 00:10:05,052
+Birinci satırı eksi 1 ile çarpıp buraya eklerim ki burası sıfır olsun diye.
+
+52
+00:10:05,531 --> 00:10:07,692
+Eksi 1 ile çarp 2'ye ekle.
+
+53
+00:10:07,692 --> 00:10:13,072
+Sonra birinci satırı eksi 1 ile çarpıp 3'e ekleyeceğiz.
+
+54
+00:10:13,072 --> 00:10:16,471
+3'e ekle.
+
+55
+00:10:17,011 --> 00:10:21,631
+Buradan 1, 3, 3.
+
+56
+00:10:22,412 --> 00:10:25,211
+Eksi 1 ile çarptık ekledik sıfır.
+
+57
+00:10:25,692 --> 00:10:28,211
+Eksi 1 ile çarptık ekledik bir.
+
+58
+00:10:28,731 --> 00:10:38,672
+Eksi 1 ile çarptık ekledik sıfır.
+
+59
+00:10:39,091 --> 00:10:41,771
+Eksi 1 ile çarptık ekledik bir.
+
+60
+00:10:43,072 --> 00:10:45,011
+Tamam.
+
+61
+00:10:45,572 --> 00:10:48,211
+Sonra şimdi bakıyorum.
+
+62
+00:10:48,912 --> 00:10:54,432
+Bak dedim ki eğer ki soru sadece rank sorusuysa ben buradan rankı görebiliyorum.
+
+63
+00:10:54,951 --> 00:10:55,131
+Niye?
+
+64
+00:10:55,591 --> 00:10:59,631
+Şu asal köşegen altındaki elemanlar sıfır.
+
+65
+00:11:00,172 --> 00:11:00,652
+Tamam mı?
+
+66
+00:11:00,652 --> 00:11:03,552
+Kaç satırda sıfırdan farklı eleman var?
+
+67
+00:11:03,951 --> 00:11:08,871
+1, 2, 3 satırda sıfırdan farklı eleman var.
+
+68
+00:11:09,451 --> 00:11:14,271
+A'nın rangı 3'tür diye söyleyebiliyorum.
+
+69
+00:11:15,172 --> 00:11:21,131
+Ama sonuna kadar işlemleri götürmem gerekiyorsa o zaman yapacağım işlem şu.
+
+70
+00:11:21,652 --> 00:11:22,312
+Ne yapacağız?
+
+71
+00:11:22,771 --> 00:11:25,831
+Birin bulunduğu sütunu sıfırladık ya geldik buraya.
+
+72
+00:11:26,312 --> 00:11:28,271
+Birin bulunduğu sütunu sıfırlayacağım.
+
+73
+00:11:28,271 --> 00:11:29,271
+Ne yaparım?
+
+74
+00:11:29,731 --> 00:11:33,371
+2'yi eksi 3 ile çarpıp 1'e eklerim.
+
+75
+00:11:33,651 --> 00:11:34,912
+Burası sıfır olsun diye.
+
+76
+00:11:34,912 --> 00:11:47,491
+Sonra 1, 0, burası 3, 0, 1, 0, 0, 0, 1.
+
+77
+00:11:47,491 --> 00:11:52,291
+Sonra baktık sıfırdan sonraki ilk elemanım 1 gene.
+
+78
+00:11:52,771 --> 00:11:54,871
+Birin bulunduğu sütunu sıfırlayacağım.
+
+79
+00:11:55,011 --> 00:11:56,471
+Yani şurayı sıfırlayacağım.
+
+80
+00:11:56,871 --> 00:11:57,771
+Ne yapmam lazım?
+
+81
+00:11:58,211 --> 00:12:01,312
+Bunu ne ile çarpıp yukarıya ekleyeyim ki sıfır olsun?
+
+82
+00:12:01,951 --> 00:12:06,471
+O zaman 3'ü eksi 3 ile çarp 1'e ekle.
+
+83
+00:12:06,471 --> 00:12:12,631
+eklersek 1, 0, eksi 3 ile çarptım.
+
+84
+00:12:12,631 --> 00:12:18,672
+0, 0, 1, 0, 0, 0, 1.
+
+85
+00:12:19,971 --> 00:12:22,871
+Artık yapılacak başka işlem kalmadı.
+
+86
+00:12:22,871 --> 00:12:28,172
+Şimdi diyorum ki kaç satırda sıfırdan farklı eleman var?
+
+87
+00:12:28,631 --> 00:12:30,211
+1, 2, 3.
+
+88
+00:12:30,572 --> 00:12:34,331
+Yani A'nın rangı 3'tür diyoruz.
+
+89
+00:12:34,331 --> 00:12:35,172
+Tamam.
+
+90
+00:12:35,172 --> 00:12:45,951
+Var mıdır sorusu olan anlamayan sorusu olan?
+
+91
+00:13:00,179 --> 00:13:04,179
+3-1 de hata yok mu?
+
+92
+00:13:08,083 --> 00:13:08,763
+Nerede?
+
+93
+00:13:11,583 --> 00:13:14,363
+3, 1 yok zaten hep 1, 3 var.
+
+94
+00:13:14,843 --> 00:13:16,083
+Ay şurayı diyorsun.
+
+95
+00:13:18,003 --> 00:13:18,683
+Şunu mu diyorsun?
+
+96
+00:13:20,543 --> 00:13:23,963
+Birinci satırı, eksi 1 ile çarptık, ekledik 0.
+
+97
+00:13:24,303 --> 00:13:26,323
+Eksi 1 ile çarptık, ekledik 0.
+
+98
+00:13:26,583 --> 00:13:28,263
+Eksi 1 ile çarptık, 1 etti.
+
+99
+00:13:33,971 --> 00:13:38,151
+3. ne? Eksi 3 ile çarpıp, 1. satırı.
+
+100
+00:13:41,940 --> 00:14:01,640
+eksi 3 ile çarpıp 1'e eklerken, niye eksi 2? Şimdi eksi 3 burası nedir? 0 zaten bu. 1. Eksi 3 ile çarptım, ekledim, 0. Burası da 3.
+
+101
+00:14:07,124 --> 00:14:10,624
+satırla işlem yapıyoruz, tütunla işlem yapmıyoruz.
+
+102
+00:14:32,692 --> 00:14:35,692
+sütunla işlem yok, satırla işlem yapıyoruz.
+
+103
+00:14:40,628 --> 00:14:46,088
+İkinci yerden rangı belli zaten. Bak yukarıya yazdım. Rank belli.
+
+104
+00:14:51,892 --> 00:15:00,912
+Ama son noktaya kadar gitmem gerekiyorsa, sistem sorusuysa, gideceğim son nokta da bu. Onu göstermek için devam ettim.
+
+105
+00:15:11,091 --> 00:15:15,451
+Peki, var mı başka sorusu olan?
+
+106
+00:15:17,532 --> 00:15:19,792
+Şimdi şu soruyu ben yazayım.
+
+107
+00:15:22,871 --> 00:15:24,692
+Kitapta olan soru bu.
+
+108
+00:15:25,991 --> 00:15:28,312
+Bunu da çözeyim. Uzun bir soru bu.
+
+109
+00:15:29,211 --> 00:15:30,792
+Hani daha iyi anlarsınız.
+
+110
+00:15:30,792 --> 00:15:59,192
+1, 2, 1, 0, 3, 2, 1, 2, 2, 2, 2, 2, 2, 5, 5, 6, 3, 5, 6, 3, 2,
+
+111
+00:15:59,192 --> 00:16:10,552
+2, 1, 3, eksi 1, eksi 3, eksi 1, eksi 3.
+
+112
+00:16:15,508 --> 00:16:33,567
+1, 2, 1, 0, 3, 2, 1, 1, 2, 2, eksi 1, 2, 5, 5, 6, 3, 2, 1, 3, eksi 1, eksi 3. Evet.
+
+113
+00:16:36,328 --> 00:16:40,868
+Üçüncü satırı, 1, 3, 4.
+
+114
+00:16:51,604 --> 00:16:53,604
+sorunuz, sorusu olan
+
+115
+00:17:00,947 --> 00:17:02,607
+Hocam ben bir şey soracağım.
+
+116
+00:17:02,707 --> 00:17:02,908
+Evet.
+
+117
+00:17:03,827 --> 00:17:08,468
+Ben sistemlerde matrizlerin kullanılarını birazcık inceledim de.
+
+118
+00:17:08,867 --> 00:17:16,468
+Düşe işlemleri yaptığınız zaman mesela cebirsel ifadeler üzerinde de oynama yapmış oluyoruz ya sistem sorularında.
+
+119
+00:17:17,187 --> 00:17:19,367
+Onun mantığını ileride anlatacaksınız değil mi?
+
+120
+00:17:19,367 --> 00:17:19,807
+Evet.
+
+121
+00:17:19,807 --> 00:17:20,528
+Evet evet.
+
+122
+00:17:21,728 --> 00:17:32,988
+Yani onlar bir tık sonra ama bazı şeyleri niye yaptığımızı anlayın ve kafanızda kalıcı olsun diye ara ara bazı şeyleri söylüyorum.
+
+123
+00:17:33,488 --> 00:17:38,347
+Ama bunların detaylı açıklamasını daha sonra yapacağım.
+
+124
+00:17:38,968 --> 00:17:39,988
+Anladım hocam sağ olun.
+
+125
+00:17:40,708 --> 00:17:41,228
+Bir şey değil.
+
+126
+00:17:41,788 --> 00:17:44,627
+Şimdi arkadaşlar şu A matrizinin rangına bakalım.
+
+127
+00:17:45,107 --> 00:17:46,988
+Dedik ki ilk elemanımız bir olacak.
+
+128
+00:17:46,988 --> 00:17:49,528
+Bakıyoruz burada ilk elemanımız bir zaten.
+
+129
+00:17:49,807 --> 00:17:50,788
+Sonra ne yapacağım?
+
+130
+00:17:50,907 --> 00:17:53,867
+Birin bulunduğu sütunu sıfırlayacağım.
+
+131
+00:17:54,288 --> 00:17:54,488
+Tamam.
+
+132
+00:17:54,947 --> 00:17:58,488
+Birin bulunduğu sütunu sıfırlamak için ne yapıyoruz?
+
+133
+00:17:59,127 --> 00:18:08,087
+Birinci satırı eksi 3 ile çarpıp 2'ye ekliyorum.
+
+134
+00:18:09,847 --> 00:18:16,687
+Sonra birinci satırı eksi 2 ile çarpıp 3'e ekleyeceğim.
+
+135
+00:18:16,687 --> 00:18:21,427
+Birinci satırı eksi 2 ile çarpıp 3'e ekleyeceğim.
+
+136
+00:18:21,427 --> 00:18:28,607
+Sonra şunu sıfır yapmak için birinci satırı eksi 5 ile çarpıp nereye?
+
+137
+00:18:28,887 --> 00:18:29,968
+4'e ekleyeceğim.
+
+138
+00:18:29,968 --> 00:18:38,708
+Sonra bunu sıfır yapmak için birinci satırı eksi 1 ile çarpıp 5'e ekleyeceğim.
+
+139
+00:18:38,708 --> 00:18:47,748
+Şimdi buradan 1, 2, 1, 0.
+
+140
+00:18:47,748 --> 00:18:50,667
+Eksi 3 ile çarpıp ekledik.
+
+141
+00:18:50,667 --> 00:18:53,528
+Eksi 3 ile çarptık.
+
+142
+00:18:53,528 --> 00:18:54,127
+Ne etti?
+
+143
+00:18:54,528 --> 00:18:56,728
+Eksi 6 ekledik.
+
+144
+00:18:57,228 --> 00:18:58,468
+Eksi 4.
+
+145
+00:18:59,028 --> 00:19:00,728
+Eksi 3 ile çarptık.
+
+146
+00:19:01,468 --> 00:19:02,147
+Ekledik.
+
+147
+00:19:02,587 --> 00:19:02,947
+Ne etti?
+
+148
+00:19:03,028 --> 00:19:04,508
+Eksi 3 ile çarparsak.
+
+149
+00:19:04,807 --> 00:19:06,367
+Eksi 3 ekledik.
+
+150
+00:19:06,647 --> 00:19:07,307
+Eksi 2.
+
+151
+00:19:08,187 --> 00:19:10,268
+Burası da 2.
+
+152
+00:19:10,268 --> 00:19:14,947
+Şimdi eksi 2 ile çarpıp ekliyoruz.
+
+153
+00:19:15,347 --> 00:19:15,988
+Sıfır.
+
+154
+00:19:16,528 --> 00:19:18,048
+Eksi 2 ile çarptık.
+
+155
+00:19:18,407 --> 00:19:19,147
+Eksi 4.
+
+156
+00:19:19,667 --> 00:19:20,327
+Ekledik.
+
+157
+00:19:20,788 --> 00:19:21,508
+Eksi 5.
+
+158
+00:19:23,587 --> 00:19:27,847
+Sonra eksi 2 ile çarptık.
+
+159
+00:19:27,927 --> 00:19:28,407
+Ekledik.
+
+160
+00:19:28,567 --> 00:19:29,067
+Sıfır.
+
+161
+00:19:30,127 --> 00:19:31,728
+Burası da 5.
+
+162
+00:19:31,728 --> 00:19:34,847
+Sonra eksi 5 ile çarptık.
+
+163
+00:19:34,947 --> 00:19:35,567
+Ekledik.
+
+164
+00:19:35,988 --> 00:19:36,728
+Sıfır.
+
+165
+00:19:37,447 --> 00:19:38,748
+Eksi 5 ile çarptık.
+
+166
+00:19:38,867 --> 00:19:39,667
+Eksi 10.
+
+167
+00:19:40,147 --> 00:19:40,768
+Ekledik.
+
+168
+00:19:41,127 --> 00:19:41,968
+Eksi 4.
+
+169
+00:19:42,988 --> 00:19:44,407
+Eksi 5 ile çarptık.
+
+170
+00:19:44,688 --> 00:19:45,367
+Ekledik.
+
+171
+00:19:45,768 --> 00:19:46,508
+Eksi 2.
+
+172
+00:19:48,087 --> 00:19:48,887
+Burası da 2.
+
+173
+00:19:50,427 --> 00:19:52,947
+Şimdi eksi 1 ile çarptık.
+
+174
+00:19:53,067 --> 00:19:53,667
+Ekledik.
+
+175
+00:19:54,048 --> 00:19:54,768
+Sıfır.
+
+176
+00:19:55,367 --> 00:19:56,788
+Eksi 1 ile çarptık.
+
+177
+00:19:56,968 --> 00:19:57,647
+Ekledik.
+
+178
+00:19:58,127 --> 00:19:58,468
+1.
+
+179
+00:19:58,468 --> 00:20:02,708
+Sonra eksi 1 ile çarptık.
+
+180
+00:20:02,927 --> 00:20:03,587
+Ekledik.
+
+181
+00:20:04,548 --> 00:20:05,268
+Eksi 2.
+
+182
+00:20:06,988 --> 00:20:08,127
+Burası da eksi 3.
+
+183
+00:20:13,332 --> 00:20:29,612
+Şimdi 2 ile 5'i yer değiştireyim. Bir de şunu kullanmıyorum. 3'ü de eksi 1 bölü 5 ile çarpayım. Sayıları küçülteyim.
+
+184
+00:20:29,612 --> 00:20:57,872
+1, 2, 1, 0, 0, 1, 2, 3, 0, 1, 0, 1, 0, 4, 2, 2, 0, 4, 2, 2, 2
+
+185
+00:20:59,612 --> 00:21:10,352
+Buradan şu 1'i bulduk. 1'i bulduk. Sonra 1'in bulunduğu sütunu sıfırlayacağım. Yani şurayı.
+
+186
+00:21:15,539 --> 00:21:42,279
+Ne yapacağım? İkinci satırı eksi iki ile çarpıp bire. Sonra ikinci satırı eksi bir ile çarpıp üçe. İkinci satırı dörtle çarpıp dörde. İkinci satırı dörtle çarpıp beşe. Ekleyelim.
+
+187
+00:21:47,700 --> 00:21:49,539
+Buradan ne olacak?
+
+188
+00:21:50,080 --> 00:21:50,340
+1.
+
+189
+00:21:51,600 --> 00:21:53,700
+Eksi 2 ile çarptık 0.
+
+190
+00:21:54,700 --> 00:22:02,860
+Eksi 2 ile çarptık artı 4.
+
+191
+00:22:03,140 --> 00:22:04,460
+Ekledik 5.
+
+192
+00:22:07,220 --> 00:22:10,799
+Eksi 2 ile çarptık 6.
+
+193
+00:22:12,559 --> 00:22:13,480
+Ekledik 6.
+
+194
+00:22:13,480 --> 00:22:20,420
+Sonra 0, 1, eksi 2, eksi 3.
+
+195
+00:22:22,940 --> 00:22:27,200
+Eksi 1 ile çarptık ekledik 0.
+
+196
+00:22:29,400 --> 00:22:32,940
+Eksi 1 ile çarptık ekledik 2.
+
+197
+00:22:34,019 --> 00:22:37,720
+Eksi 1 ile çarptık artı 3 ekledik 2.
+
+198
+00:22:38,779 --> 00:22:40,860
+Sonra 0.
+
+199
+00:22:40,860 --> 00:22:47,240
+Sonra 4 ile çarptık ekledik 0.
+
+200
+00:22:47,799 --> 00:22:53,759
+4 ile çarptık eksi 8 ekledik eksi 10.
+
+201
+00:22:55,500 --> 00:22:59,400
+4 ile çarptık eksi 12 eksi 10.
+
+202
+00:22:59,400 --> 00:23:05,579
+Sonra 4 ile çarptık 0.
+
+203
+00:23:06,340 --> 00:23:08,259
+0.
+
+204
+00:23:08,259 --> 00:23:12,860
+Sonra 4 ile çarptık 12.
+
+205
+00:23:17,539 --> 00:23:19,579
+4 ile çarptık 8, 10.
+
+206
+00:23:19,920 --> 00:23:20,519
+Eksi 10.
+
+207
+00:23:21,960 --> 00:23:26,140
+4 ile çarptık 12, 10.
+
+208
+00:23:26,140 --> 00:23:29,640
+5 ile çarptık.
+
+209
+00:23:29,640 --> 00:23:32,140
+6 ile çarptık.
+
+210
+00:23:32,140 --> 00:23:39,640
+7 ile çarptık.
+
+211
+00:23:39,640 --> 00:23:44,640
+8 ile çarptık.
+
+212
+00:23:36,307 --> 00:23:54,307
+Şimdi sıfırdan sonraki ilk elemanım 1 olacak. Ne yapacağım? 3'ü 1 bölü 2 ile 4'ü eksi 1 bölü 10 ile 5'i eksi 1 bölü 10 ile çarparım.
+
+213
+00:23:54,307 --> 00:23:55,307
+Burada
+
+214
+00:23:55,307 --> 00:23:59,307
+0
+
+215
+00:24:03,892 --> 00:24:05,692
+Öyle mi? Bakayım. Bir dakika.
+
+216
+00:24:08,011 --> 00:24:08,731
+Ne ettik?
+
+217
+00:24:09,731 --> 00:24:13,112
+4 ile çarptık. 12. Evet, eksi 10. Aynen.
+
+218
+00:24:16,112 --> 00:24:30,731
+1, 0, 5, 6, 0, 1, eksi 2, eksi 3, 0, 0, 1, 1, 0, 0, 1, 1.
+
+219
+00:24:33,892 --> 00:24:36,592
+0, 0, 1, 1.
+
+220
+00:24:39,072 --> 00:24:46,932
+Şimdi bak, biri buldum, birinin bulunduğu sütün 0, biri buldum, birinin bulunduğu sütün 0, biri buldum.
+
+221
+00:24:47,432 --> 00:24:58,692
+Şimdi bakıyorum, bak, bu satırla diğer iki satır birbirinin aynı olduğu için, bu satır diğer iki satırı sıfırlar.
+
+222
+00:24:58,692 --> 00:24:59,692
+dolayısıyla ben buradan, bunun rangı 3, 3 satırı sıfırlar.
+
+223
+00:24:59,692 --> 00:25:03,932
+Dolayısıyla ben buradan bunun rangı 3'tür diye söyleyebilirim.
+
+224
+00:25:04,192 --> 00:25:07,032
+Kaç satırda? 0'dan farklı eleman var.
+
+225
+00:25:07,172 --> 00:25:10,072
+Kaç satırda? 1, 2, 3 satırda.
+
+226
+00:25:10,192 --> 00:25:11,892
+Rang 3'tür diye söyleyebilirim.
+
+227
+00:25:11,991 --> 00:25:13,892
+Ama görmüyorsan tabii devam edeceğiz.
+
+228
+00:25:15,272 --> 00:25:15,892
+Ne yapacağız?
+
+229
+00:25:16,491 --> 00:25:19,491
+Şunun bulunduğu sütünü 0'u 0'layacağım.
+
+230
+00:25:23,092 --> 00:25:24,052
+O da nedir?
+
+231
+00:25:24,711 --> 00:25:28,072
+Üçüncü satırı eksi beş ile çarp bire.
+
+232
+00:25:29,992 --> 00:25:35,492
+Üçüncü satırı iki ile çarp ikiye.
+
+233
+00:25:37,992 --> 00:25:44,492
+Sonra üçüncü satırı eksi bir ile çarp dörde.
+
+234
+00:25:45,951 --> 00:25:50,292
+Üçüncü satırı eksi bir ile çarp beşe ekle.
+
+235
+00:25:50,772 --> 00:25:52,312
+Buradan ne olacaktır?
+
+236
+00:25:53,092 --> 00:26:23,092
+Bir, sıfır, eksi beş ile çarptık sıfır, eksi beş ile çarptık bir, sıfır bir, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır, iki ile çarptım sıfır,
+
+237
+00:26:23,092 --> 00:26:45,112
+Bir, birin bulunduğu sütun sıfır, bir, birin bulunduğu sütun sıfır, bir, birin bulunduğu sütun sıfır, aşağısı komple sıfır olduğu için işlem bitti. Kaç satırda sıfırdan farklı eleman var? Bir, iki, üç. O zaman A madresinin rangı üçtür diye söylüyorum.
+
+238
+00:26:51,059 --> 00:26:54,980
+Tamam. [öğrenci] hatan yok sanırsam ya.
+
+239
+00:26:59,059 --> 00:27:01,119
+Nerede hata var gibi geldi sana?
+
+240
+00:27:09,460 --> 00:27:21,519
+3'ü, nerede? 3. satırı 2 ile çarpıp 2. satıra ekledim. Şurayı 0 yapmak için.
+
+241
+00:27:30,163 --> 00:27:31,003
+Anladık mı?
+
+242
+00:27:33,824 --> 00:27:35,763
+Rank bu.
+
+243
+00:27:39,044 --> 00:27:41,963
+Şu soruyu anlattım ben size.
+
+244
+00:27:42,644 --> 00:27:48,943
+Bu üst taraf sıfırlanmamış, yarıda kesilmiş, sanki farklı gibi gözüküyordu.
+
+245
+00:27:49,483 --> 00:27:54,243
+Cevabın aynı olduğunu göstermek için burada tekrardan yaptım.
+
+246
+00:27:54,763 --> 00:27:55,963
+Devamını getirdim.
+
+247
+00:27:57,144 --> 00:27:58,243
+Yani cevap aynı.
+
+248
+00:27:58,243 --> 00:28:07,644
+Yani yaptığınız işlemler farklı da olsa satır işlemi yapıyoruz ya cevap aynı çıkar arkadaşlar.
+
+249
+00:28:10,124 --> 00:28:12,544
+Şimdi teorem diyoruz.
+
+250
+00:28:12,763 --> 00:28:16,584
+Teorem şöyle inversi bulmak için bir teorem bu.
+
+251
+00:28:16,903 --> 00:28:17,723
+A matrisinin.
+
+252
+00:28:18,844 --> 00:28:23,943
+Bir kare matrisin inversinin bulunabilmesi yani regüler olması.
+
+253
+00:28:24,104 --> 00:28:25,784
+Regüler olması demek ne demekti?
+
+254
+00:28:25,784 --> 00:28:28,644
+Tersinin inversinin var olması demekti.
+
+255
+00:28:29,604 --> 00:28:35,604
+Regüler olması için gerek ve yeter koşul birim matrise satırca denk olmasıdır.
+
+256
+00:28:36,183 --> 00:28:41,864
+En ince mertebeden regüler bir A matrisi için A, I, N denktir.
+
+257
+00:28:41,864 --> 00:28:49,463
+I, N, A üzeri eksi bir olacak şekilde bulunan A üzeri eksi bir matrisi A matrisinin inversidir.
+
+258
+00:28:49,963 --> 00:28:51,023
+Yani ne diyoruz?
+
+259
+00:28:51,943 --> 00:28:56,963
+Eğer ki inversi olan bir A matrisi için inversi olma şartı neydi?
+
+260
+00:28:57,423 --> 00:29:00,183
+Kare ve determinant sıfırdan farklı olacaktı.
+
+261
+00:29:00,263 --> 00:29:03,023
+Eğer bu iki şart varsa A üzeri eksi bir vardı.
+
+262
+00:29:03,344 --> 00:29:05,523
+Eğer bu varsa bunlar da var demekti.
+
+263
+00:29:05,523 --> 00:29:06,124
+Tamam.
+
+264
+00:29:06,604 --> 00:29:09,543
+A üzeri eksi bir varsa bu bana neyi söylüyordu?
+
+265
+00:29:09,884 --> 00:29:11,864
+Regüler matrisi olduğunu söylüyordu.
+
+266
+00:29:12,203 --> 00:29:16,884
+Şimdi regüler bir matris olmak üzere A ne yapıyoruz?
+
+267
+00:29:17,003 --> 00:29:18,203
+Nasıl buluyoruz tersini?
+
+268
+00:29:18,763 --> 00:29:29,163
+A'nın yanına A'nın mertebesinde yani A 3 çarpı 3 mertebesinden bir kare matris ise A'nın yanına I 3'ü ilave ediyorsun.
+
+269
+00:29:29,163 --> 00:29:33,084
+Sonra elemanter satır işlemleri uyguluyoruz.
+
+270
+00:29:33,543 --> 00:29:42,043
+A'nın olduğu yerde birim matrisi elde edecek şekilde elemanter satır işlemleri uygulanıyor.
+
+271
+00:29:42,483 --> 00:29:49,564
+Ve I'yı bulduğum anda bu tarafta bulduğum matris ise A üzeri eksi bir matrisidir.
+
+272
+00:29:50,144 --> 00:29:50,344
+Tamam.
+
+273
+00:29:50,703 --> 00:29:54,423
+Bu tarafta bulunan matris A üzeri eksi bir matrisidir.
+
+274
+00:29:54,423 --> 00:30:02,503
+Şimdi arkadaşlar biraz evvel bu rank sorusunda da ne yapıyorduk?
+
+275
+00:30:02,563 --> 00:30:05,624
+1 ve 0'ları elde edecek şekilde işlem yapıyorduk.
+
+276
+00:30:06,003 --> 00:30:12,304
+Burada yaptığım işlem de aynı esasında hiç diğerinden farkı yok.
+
+277
+00:30:12,743 --> 00:30:14,344
+Burada da aynı işlemi yapıyorum.
+
+278
+00:30:14,344 --> 00:30:21,884
+Yani A'nın olduğu yerde birim matrisi elde edecek şekilde elemanter satır işlemleri yapıyorum.
+
+279
+00:30:21,884 --> 00:30:24,223
+Sütun yapar mıyız?
+
+280
+00:30:24,584 --> 00:30:25,963
+Sütun yapamayız.
+
+281
+00:30:26,324 --> 00:30:26,523
+Niye?
+
+282
+00:30:27,884 --> 00:30:30,784
+Çünkü sütun işlemi yaparsak ne yaparız?
+
+283
+00:30:31,104 --> 00:30:37,543
+Bunun dördüncü satırıyla, dördüncü sütunuyla bunun birinci sütununu yer değiştir.
+
+284
+00:30:37,543 --> 00:30:41,403
+Yani sütunları yer değiştirerek ne yaparsın?
+
+285
+00:30:41,784 --> 00:30:44,284
+A ile I'yı yer değiştirmiş olursun.
+
+286
+00:30:44,364 --> 00:30:49,703
+Bu A üzeri eksi bir I burada bulundu diye bu taraf A üzeri eksi bir olduğu anlamına gelmiyor.
+
+287
+00:30:49,983 --> 00:30:50,523
+Ne yaptık?
+
+288
+00:30:51,104 --> 00:30:56,644
+A'yı bu taraftan aldın, sağdan aldın, sola verdin, soldan aldın, sağa verdin yaptık.
+
+289
+00:30:56,784 --> 00:30:58,503
+Yaptığımız işlem öyle olur.
+
+290
+00:30:58,923 --> 00:31:02,003
+Onun için sütun işlemi yok.
+
+291
+00:31:02,344 --> 00:31:03,983
+Sütun işlemi yapmıyoruz.
+
+292
+00:31:04,203 --> 00:31:05,703
+Sadece satır işlemi yapıyoruz.
+
+293
+00:31:05,703 --> 00:31:07,703
+Peki, şimdi...
+
+294
+00:31:11,443 --> 00:31:13,783
+Bir tersini bulalım.
+
+295
+00:31:14,443 --> 00:31:15,463
+A'nın tersini.
+
+296
+00:31:15,943 --> 00:31:17,303
+Şu soruyu bir daha yazayım.
+
+297
+00:31:26,228 --> 00:31:27,488
+A matrisi
+
+298
+00:31:33,011 --> 00:31:42,011
+1 3 3 1 3 3 1 4 3 1 3 4
+
+299
+00:31:45,875 --> 00:31:52,155
+a üzeri eksi biri bulunuz.
+
+300
+00:31:52,155 --> 00:31:54,796
+Şimdi, ne yapıyoruz?
+
+301
+00:31:55,036 --> 00:32:03,635
+a'nın yanına birim matrisi 3 çarp 3 mertebesinden olduğu için a3 ilave ediyoruz.
+
+302
+00:32:04,655 --> 00:32:11,395
+Şimdi bu nokta koyduğum nokta, iki matrisi birbirinden ayırt etmek için kullanılan bir sembol.
+
+303
+00:32:13,796 --> 00:32:14,635
+Tamam?
+
+304
+00:32:15,875 --> 00:32:17,756
+Buradan ne yapıyoruz?
+
+305
+00:32:18,715 --> 00:32:19,596
+a'yı yazıyoruz.
+
+306
+00:32:19,776 --> 00:32:21,615
+1, 3, 3
+
+307
+00:32:21,615 --> 00:32:24,695
+1, 4, 3
+
+308
+00:32:24,695 --> 00:32:27,715
+1, 3, 4
+
+309
+00:32:27,715 --> 00:32:32,016
+Buradan ün edin.
+
+310
+00:32:32,115 --> 00:32:34,195
+1, 0, 0
+
+311
+00:32:34,195 --> 00:32:36,836
+0, 1, 0
+
+312
+00:32:36,836 --> 00:32:39,395
+0, 0, 1
+
+313
+00:32:45,011 --> 00:32:51,851
+Şimdi burada U'yu elde edecek şekilde elemanter satır işlemleri yapacağım. Tamam mı?
+
+314
+00:32:54,491 --> 00:32:56,692
+İlk elemanım 1'di.
+
+315
+00:32:58,051 --> 00:33:02,251
+Birin bulunduğu sütunu sıfırlayacağım.
+
+316
+00:33:02,251 --> 00:33:04,571
+Yani ne yapmam lazım?
+
+317
+00:33:04,851 --> 00:33:10,331
+Burayı sıfırlamak için birinci satırı eksi 1 ile çarpıp 2'ye.
+
+318
+00:33:10,331 --> 00:33:16,311
+Sonra birinci satırı eksi 1 ile çarpıp 3'e ekliyorum.
+
+319
+00:33:20,500 --> 00:33:49,799
+Buradan, 1, 3, 3, 1, 0, 0, eksi 1 ile çarptım, 0, eksi 1 ile çarptım, 1, eksi 1 ile çarptım, 0, eksi 1 ile çarptım, 0, eksi 1 ile çarptım, eksi 1, 1, 0, eksi 1 ile çarptım, 0, eksi 1 ile çarptım, 0, eksi 1 ile çarptım,
+
+320
+00:33:50,500 --> 00:34:16,679
+0, eksi 1, eksi 1, 0, 1. Şimdi geldik, bu tarafta I'yı elde edecek şekilde işlem yapıyorum ya, o zaman ne olması lazım? Şu birin bulunduğu I'yı elde etmek için birin bulunduğu sütunu sıfırlayacağım.
+
+321
+00:34:16,679 --> 00:34:30,019
+Yani ne yapacağım? Yani ne yapacağım? İkinci satırı, eksi 3 ile çarptım, 1'e ekliyorum. Burası 0 olsun diye. O zaman 1, 0, 3.
+
+322
+00:34:33,844 --> 00:34:39,284
+3 ile, eksi 3 ile çarptım, artı 3, ekledim 4.
+
+323
+00:34:40,104 --> 00:34:43,423
+Eksi 3 ile çarptık, burası 0.
+
+324
+00:34:44,104 --> 00:34:55,903
+Sonra 0, 1, 0, eksi 1, 1, 0, 0, 0, 0, 1, eksi 1.
+
+325
+00:35:00,083 --> 00:35:01,643
+0, 1
+
+326
+00:35:01,643 --> 00:35:18,743
+Şimdi, birim matrisi oluşturabilmek için, şu birim bulunduğu sütun ne olmalı? 0 olmalı. O zaman ne yapıyoruz? Üçüncü satırı, eksi 3 ile çarp, 1'e ekle.
+
+327
+00:35:18,743 --> 00:35:22,223
+eklersek, 1
+
+328
+00:35:22,223 --> 00:35:24,864
+eksi 3 ile, burası 0
+
+329
+00:35:24,864 --> 00:35:26,663
+eksi 3 ile çarptık, 0
+
+330
+00:35:26,663 --> 00:35:30,423
+eksi 3 ile çarptık, artı 3
+
+331
+00:35:30,423 --> 00:35:31,143
+7
+
+332
+00:35:31,143 --> 00:35:35,623
+eksi 3
+
+333
+00:35:35,623 --> 00:35:37,963
+0, 1
+
+334
+00:35:37,963 --> 00:35:41,083
+0
+
+335
+00:35:41,083 --> 00:35:42,963
+eksi 1
+
+336
+00:35:42,963 --> 00:35:43,884
+1
+
+337
+00:35:43,884 --> 00:35:44,723
+0
+
+338
+00:35:44,723 --> 00:35:47,723
+0, 0, 1
+
+339
+00:35:47,723 --> 00:35:53,263
+işte burada
+
+340
+00:35:53,263 --> 00:36:00,263
+I3'ü buldum. I3'ü bulduğum anda, bu tarafta bulduğum, ay üzeri, eksi 1'dir.
+
+341
+00:36:09,492 --> 00:36:25,552
+Yani a üzeri eksi bir matrisi, 7, eksi 3, eksi 3, eksi 1, 1, 0, eksi 1, 0, 1.
+
+342
+00:36:28,052 --> 00:36:34,332
+İşlemlerin doğru olup olmadığını kontrol etmek için şuna bakabilirsiniz.
+
+343
+00:36:35,992 --> 00:36:38,552
+a ile a üzeri eksi birin çarpımı i'ye eşittir.
+
+344
+00:36:39,492 --> 00:36:39,832
+Tamam.
+
+345
+00:36:39,832 --> 00:36:41,592
+Var mı sorusu olan?
+
+346
+00:36:42,032 --> 00:36:42,592
+Anlamaya.
+
+347
+00:36:50,516 --> 00:37:02,096
+Birkaç türlü ay üzeri eksi bir bulunuyor. Birinci yöntem bu. Diğerleri ise determinanttan sonra öğreneceğiz.
+
+348
+00:37:06,931 --> 00:37:08,231
+Şimdi ne yapıyoruz?
+
+349
+00:37:08,731 --> 00:37:14,671
+A'nın yanına A'nın mertebesinde birim matriz ilave ediyoruz.
+
+350
+00:37:15,411 --> 00:37:26,311
+Sonra yapacağımız işlemler bir önceki yaptığımız işlemlerin aynısı.
+
+351
+00:37:26,551 --> 00:37:28,791
+Aynı işlemleri tekrarlıyoruz.
+
+352
+00:37:28,971 --> 00:37:29,931
+Yani neydi o?
+
+353
+00:37:29,931 --> 00:37:31,571
+Bir ve sıfırları.
+
+354
+00:37:32,111 --> 00:37:36,911
+Yani şu birim matriz buydu ya bunu elde edecek şekilde işlem yapıyorsun.
+
+355
+00:37:37,231 --> 00:37:37,791
+Bu da nedir?
+
+356
+00:37:37,851 --> 00:37:38,651
+Bir ve sıfır.
+
+357
+00:37:39,111 --> 00:37:39,571
+Öyle değil mi?
+
+358
+00:37:39,951 --> 00:37:41,431
+O zaman ilk elemanım bir.
+
+359
+00:37:41,811 --> 00:37:44,031
+Birim bulunduğu sütunu sıfırlayacağım.
+
+360
+00:37:44,371 --> 00:37:45,591
+Bunun için ne yapıyorum?
+
+361
+00:37:46,111 --> 00:37:50,031
+Bunu diyorum neyle çarpıp buraya ekleyeyim ki burası sıfır olsun.
+
+362
+00:37:50,491 --> 00:37:51,131
+Eksi birle.
+
+363
+00:37:51,671 --> 00:37:55,091
+Bunu neyle çarpıp buraya ekleyeyim ki sıfır olsun.
+
+364
+00:37:55,311 --> 00:37:55,971
+Eksi birle.
+
+365
+00:37:55,971 --> 00:38:03,051
+O zaman bu satırı komple eksi birle çarpıp bu aşağıya ekliyoruz.
+
+366
+00:38:04,271 --> 00:38:04,451
+Tamam.
+
+367
+00:38:04,451 --> 00:38:12,331
+Sonra bu satırı komple eksi birle çarpıp buraya aşağıya ekliyorsun.
+
+368
+00:38:13,291 --> 00:38:14,692
+Ve bu matriz elde etti.
+
+369
+00:38:15,231 --> 00:38:16,791
+Şimdi sonra ne yapıyorsun?
+
+370
+00:38:16,991 --> 00:38:19,891
+Sıfırdan sonraki ilk elemanımın bir zaten burada.
+
+371
+00:38:20,291 --> 00:38:21,371
+O zaman ne olmalı?
+
+372
+00:38:21,751 --> 00:38:24,251
+Bunun bulunduğu sütun sıfır olmalı.
+
+373
+00:38:24,251 --> 00:38:30,771
+O zaman diyorum ki bunu neyle çarpıp buraya ekleyeyim ki burası sıfır olsun.
+
+374
+00:38:31,251 --> 00:38:32,531
+Neyle eklemem lazım?
+
+375
+00:38:33,391 --> 00:38:36,431
+Eksi üçle çarpıp eklersem sıfır olur.
+
+376
+00:38:36,431 --> 00:38:44,571
+O zaman bu satırı yani ikinci satırı eksi üçle çarp birinci satıra ekle.
+
+377
+00:38:44,571 --> 00:38:47,671
+Yaptığımız işlem bu.
+
+378
+00:38:48,211 --> 00:38:49,751
+Sonra bunu bulduk.
+
+379
+00:38:50,091 --> 00:38:51,371
+Şimdi tekrar bakıyorum.
+
+380
+00:38:51,791 --> 00:38:56,391
+Bir, birin bulunduğu sütun sıfır.
+
+381
+00:38:56,751 --> 00:38:57,451
+Geldik buraya.
+
+382
+00:38:57,591 --> 00:38:58,511
+Burası da bir.
+
+383
+00:38:58,931 --> 00:39:01,511
+Birin bulunduğu sütunu sıfır yapmam lazım.
+
+384
+00:39:01,931 --> 00:39:03,891
+O zaman diyorum ne yapayım?
+
+385
+00:39:03,891 --> 00:39:06,351
+Bunu neyle çarpayım?
+
+386
+00:39:06,651 --> 00:39:09,391
+Buraya ekleyeyim ki burası sıfır olsun.
+
+387
+00:39:09,911 --> 00:39:12,531
+Eksi üçle çarpıp eklemem lazım.
+
+388
+00:39:13,271 --> 00:39:22,851
+Eksi üçle çarpıp ekleyince üçüncü satırı eksi üçle çarpıp birinci satıra eklediğimde bunu elde ettim.
+
+389
+00:39:23,151 --> 00:39:24,391
+Burası ne oldu şimdi?
+
+390
+00:39:24,831 --> 00:39:26,291
+Birim matrisi elde ettik.
+
+391
+00:39:26,431 --> 00:39:32,531
+Birim matrisi elde edince bu tarafta bulduğum ay üzeri eksi bir matrisidir.
+
+392
+00:39:32,531 --> 00:39:43,591
+Şimdi eğer ki ay üzeri eksi bir yoksa o zaman burada hiçbir zaman birim matrisi elde edemezsin.
+
+393
+00:39:43,991 --> 00:39:50,251
+Yaptığın işlemler sonucunda hiçbir zaman burada birim matris elde edilmez.
+
+394
+00:39:51,211 --> 00:39:51,411
+Tamam?
+
+395
+00:39:53,291 --> 00:39:54,291
+Dediğimiz bu.
+
+396
+00:40:02,931 --> 00:40:07,891
+Şimdi başka bir soru D matrisi bu.
+
+397
+00:40:08,531 --> 00:40:10,451
+D matrisinin inversini soruyor.
+
+398
+00:40:11,192 --> 00:40:11,911
+Ne yapacağız?
+
+399
+00:40:12,111 --> 00:40:16,271
+D'nin yanına birim matris ilave ediyoruz.
+
+400
+00:40:17,291 --> 00:40:19,111
+Tamam ilave ettik.
+
+401
+00:40:19,391 --> 00:40:21,171
+Şimdi ilk elemanın bir.
+
+402
+00:40:21,711 --> 00:40:26,651
+Birim bulunduğu sütunu sıfırlayacağım.
+
+403
+00:40:26,651 --> 00:40:28,031
+Ne yapıyorum?
+
+404
+00:40:28,031 --> 00:40:33,611
+Bunu bu satırı ne ile çarpıp buraya ekleyeyim ki sıfır olsun?
+
+405
+00:40:34,291 --> 00:40:36,771
+Eksi bir ile çarpıp buraya eklemem lazım.
+
+406
+00:40:37,211 --> 00:40:38,491
+Burası sıfır olması için.
+
+407
+00:40:39,011 --> 00:40:42,531
+Bunu ne ile çarpıp buraya ekleyeyim ki burası sıfır olsun?
+
+408
+00:40:42,871 --> 00:40:43,451
+Eksi iki.
+
+409
+00:40:43,991 --> 00:40:48,011
+O zaman biri eksi bir ile çarptık.
+
+410
+00:40:48,151 --> 00:40:49,271
+Ekledik sıfır.
+
+411
+00:40:49,551 --> 00:40:51,311
+Eksi bir ile çarptık eksi iki.
+
+412
+00:40:51,311 --> 00:40:52,951
+Ekledik eksi üç.
+
+413
+00:40:53,371 --> 00:40:56,151
+Eksi bir ile çarptık ekledik eksi yedi.
+
+414
+00:40:56,151 --> 00:40:59,271
+Eksi bir ile çarptık ekledik eksi bir.
+
+415
+00:40:59,931 --> 00:41:00,651
+Burası bir.
+
+416
+00:41:00,951 --> 00:41:01,771
+Burası sıfır.
+
+417
+00:41:02,271 --> 00:41:05,291
+Peki eksi iki ile çarptık ekledik sıfır.
+
+418
+00:41:05,491 --> 00:41:07,671
+Eksi iki ile çarptık eksi dört.
+
+419
+00:41:07,971 --> 00:41:09,192
+Ekledik eksi bir.
+
+420
+00:41:09,811 --> 00:41:12,671
+Eksi iki ile çarptık ekledik eksi üç.
+
+421
+00:41:13,111 --> 00:41:16,091
+Eksi iki ile çarptık ekledik eksi iki.
+
+422
+00:41:16,751 --> 00:41:18,711
+Burası sıfır burası da bir.
+
+423
+00:41:18,711 --> 00:41:20,931
+Şimdi ne yapıyoruz?
+
+424
+00:41:22,211 --> 00:41:25,192
+Sıfırdan sonraki ilk elemanım bir olmalı.
+
+425
+00:41:25,192 --> 00:41:29,571
+O zaman diyorum ki ben bu iki satırı yer değiştireyim.
+
+426
+00:41:30,051 --> 00:41:36,491
+Bu iki satırı yer değiştirdiğim zaman, iki ile üçü yer değiştirdiğimde ne oldu?
+
+427
+00:41:39,111 --> 00:41:41,111
+Üçüncü satır ikinci satıra geldi.
+
+428
+00:41:41,271 --> 00:41:42,311
+İkincisi üçe indi.
+
+429
+00:41:43,271 --> 00:41:44,671
+Şunları yer değiştirdik.
+
+430
+00:41:44,671 --> 00:41:46,251
+Şimdi ne yapacağım?
+
+431
+00:41:46,611 --> 00:41:53,331
+Sıfırdan sonraki ilk elemanımın bir olması için ikinci satırı eksi bir ile çarpıyorum.
+
+432
+00:41:53,751 --> 00:41:56,692
+İkinci satırı eksi bir ile çarptığımda bunu buldum.
+
+433
+00:41:57,071 --> 00:42:00,171
+Peki şimdi sıfırı bulduğuma göre ne yapmam lazım?
+
+434
+00:42:00,591 --> 00:42:03,271
+Bunun bulunduğu sütunu sıfırlayacağım.
+
+435
+00:42:03,631 --> 00:42:06,491
+Yani bunu ne ile çarpayım?
+
+436
+00:42:06,851 --> 00:42:09,591
+Eksi iki ile çarpacağım ikinci satırı.
+
+437
+00:42:09,591 --> 00:42:13,371
+Birinci satıra ekleyeceğim ki burası sıfır olsun.
+
+438
+00:42:14,891 --> 00:42:18,531
+Sonra ikinci satırı üç ile çarpacağım.
+
+439
+00:42:18,851 --> 00:42:21,051
+Üçü ekleyeceğim ki burası sıfır olsun.
+
+440
+00:42:21,471 --> 00:42:23,031
+Şimdi bu işlemi yaparsak,
+
+441
+00:42:23,311 --> 00:42:25,931
+Eksi iki ile çarptık, ekledik sıfır oldu.
+
+442
+00:42:26,151 --> 00:42:28,111
+Eksi iki ile çarptık, eksi altı.
+
+443
+00:42:28,231 --> 00:42:29,711
+Ekledik, eksi beş oldu.
+
+444
+00:42:30,211 --> 00:42:32,291
+Eksi iki ile çarptık, eksi dört.
+
+445
+00:42:32,511 --> 00:42:34,011
+Ekledik, eksi üç oldu.
+
+446
+00:42:34,011 --> 00:42:35,711
+Burası sıfır zaten.
+
+447
+00:42:35,911 --> 00:42:37,891
+Eksi iki ile çarptık, artı iki.
+
+448
+00:42:38,071 --> 00:42:39,171
+Ekledik, iki oldu.
+
+449
+00:42:39,791 --> 00:42:41,351
+Burası olduğu gibi aynı.
+
+450
+00:42:42,091 --> 00:42:44,891
+Sonra bunu ne ile çarpıyordum?
+
+451
+00:42:45,051 --> 00:42:47,192
+Üç ile çarpıp ekliyorum sıfır.
+
+452
+00:42:47,531 --> 00:42:49,111
+Üç ile çarpıyorum dokuz.
+
+453
+00:42:49,571 --> 00:42:50,791
+Ekledim iki.
+
+454
+00:42:51,371 --> 00:42:52,991
+Üç ile çarptım altı.
+
+455
+00:42:53,391 --> 00:42:54,571
+Ekledim beş.
+
+456
+00:42:55,091 --> 00:42:56,351
+Burası bir.
+
+457
+00:42:57,192 --> 00:42:58,791
+Üç ile çarptım artı.
+
+458
+00:42:58,791 --> 00:43:02,811
+Bir dakika.
+
+459
+00:43:03,271 --> 00:43:04,451
+Üç ile çarptım.
+
+460
+00:43:05,971 --> 00:43:07,091
+Eksi üç.
+
+461
+00:43:07,291 --> 00:43:09,051
+Üç ile çarptık, eksi üç.
+
+462
+00:43:09,192 --> 00:43:10,251
+Ekledik, eksi üç.
+
+463
+00:43:10,652 --> 00:43:11,731
+Şimdi ne yapacağız?
+
+464
+00:43:12,771 --> 00:43:14,791
+Üçüncü satırı ne ile?
+
+465
+00:43:14,911 --> 00:43:16,951
+Bir bölü iki ile çarpıyorum.
+
+466
+00:43:17,331 --> 00:43:19,251
+Bir bölü iki ile çarptığımda
+
+467
+00:43:19,251 --> 00:43:22,231
+şunu elde ettim.
+
+468
+00:43:22,551 --> 00:43:24,111
+Şimdi ne yapıyoruz arkadaşlar?
+
+469
+00:43:24,771 --> 00:43:27,211
+Şunun biri bulduk.
+
+470
+00:43:27,211 --> 00:43:29,931
+Birin bulunduğu sütunu sıfırlayacağım.
+
+471
+00:43:30,291 --> 00:43:32,791
+Yani üçü beş ile çarpıp
+
+472
+00:43:32,791 --> 00:43:34,431
+birinci satıra.
+
+473
+00:43:36,151 --> 00:43:39,571
+Üçüncü satırı, eksi üç ile çarpıp
+
+474
+00:43:39,571 --> 00:43:41,851
+ikinci satıra ekliyorum.
+
+475
+00:43:42,271 --> 00:43:45,271
+Eklersem beş ile çarptım sıfır.
+
+476
+00:43:45,711 --> 00:43:46,811
+Beş ile çarptım.
+
+477
+00:43:47,111 --> 00:43:48,131
+Yirmi beş bölü iki.
+
+478
+00:43:48,131 --> 00:43:50,131
+Bir sonraki.
+
+479
+00:43:48,947 --> 00:43:52,007
+Eksi 6 o da nedir?
+
+480
+00:43:52,288 --> 00:43:53,447
+19 bölü 2.
+
+481
+00:43:54,327 --> 00:43:56,967
+5 ile çarptık 5 bölü 2.
+
+482
+00:43:57,427 --> 00:44:03,587
+5 ile çarptık eksi 15 bölü 2 artı 4 eksi 11 bölü 2.
+
+483
+00:44:04,147 --> 00:44:07,627
+Sonra eksi 3 ile çarptım 0.
+
+484
+00:44:07,627 --> 00:44:14,007
+Eksi 3 ile çarptık eksi 15 bölü 2 artı 4 eksi 11 bölü 2.
+
+485
+00:44:14,007 --> 00:44:19,467
+Eksi 3 bölü 2 eksi artı oldu.
+
+486
+00:44:19,907 --> 00:44:29,967
+9 bölü 2 eksi 2 7 bölü 2 diye a üzeri eksi 1'i buluruz.
+
+487
+00:44:29,967 --> 00:44:31,427
+Tamam.
+
+488
+00:44:38,036 --> 00:44:40,956
+Şimdi birinci bölüm bitti.
+
+489
+00:44:41,576 --> 00:44:45,175
+Bu konularla ilgili uygulama yapacağız.
+
+490
+00:44:46,496 --> 00:44:54,155
+Şimdi buraya bakacak olursak burada A matrisi bu, C matrisi bu, iki matris veriliyor.
+
+491
+00:44:56,255 --> 00:45:00,275
+A çarpı B eşittir C olacak şekilde B matrisini bulun.
+
+492
+00:45:00,275 --> 00:45:12,056
+Şimdi arkadaşlar A matrisini öyle bir B matrisiyle çarpacağım ki neye eşit olacak?
+
+493
+00:45:12,356 --> 00:45:14,115
+Şu C matrisine eşit olacak.
+
+494
+00:45:14,695 --> 00:45:19,076
+Şimdi A'nın mertebesine 2 çarpı 2, C'nin mertebesi 2 çarpı 2.
+
+495
+00:45:19,576 --> 00:45:20,836
+Çarpımda ne oluyordu?
+
+496
+00:45:21,316 --> 00:45:24,235
+Çarpımda şu ikisi birbirine eşit oluyordu.
+
+497
+00:45:24,775 --> 00:45:28,155
+Buradan satır, buradan da sütun sayısı geliyordu.
+
+498
+00:45:28,155 --> 00:45:29,976
+C zaten 2 çarpı 2.
+
+499
+00:45:30,115 --> 00:45:31,396
+O zaman B'de ne olmalı?
+
+500
+00:45:31,476 --> 00:45:33,155
+2 çarpı 2 mertebesinden olmalı.
+
+501
+00:45:33,816 --> 00:45:33,976
+Tamam.
+
+502
+00:45:34,796 --> 00:45:38,496
+Şimdi B o zaman 2 çarpı 2 mertebesinden bir matris.
+
+503
+00:45:38,635 --> 00:45:39,336
+Bunu yazdık.
+
+504
+00:45:39,876 --> 00:45:41,155
+A çarpı B.
+
+505
+00:45:42,135 --> 00:45:43,516
+Yani ne yapıyorduk?
+
+506
+00:45:43,655 --> 00:45:48,615
+Bununla bunu karşılıklı olarak çarpıp, toplayıp şunu elde ediyorduk.
+
+507
+00:45:49,036 --> 00:45:50,516
+Yani eksi X.
+
+508
+00:45:51,456 --> 00:45:55,456
+Bununla bunu karşılıklı olarak çarpıp, toplayıp bunu elde ediyorduk.
+
+509
+00:45:55,516 --> 00:45:56,036
+Eksi Y.
+
+510
+00:45:56,036 --> 00:45:59,416
+Bununla bunu karşılıklı çarpıp topluyorduk.
+
+511
+00:45:59,735 --> 00:46:01,275
+5 X artı 2 Z.
+
+512
+00:46:02,215 --> 00:46:04,336
+Bununla bunları çarpıyorduk.
+
+513
+00:46:04,675 --> 00:46:06,496
+5 Y artı 2 T.
+
+514
+00:46:07,235 --> 00:46:08,275
+Bu da neye eşit?
+
+515
+00:46:08,695 --> 00:46:09,556
+C'ye eşit.
+
+516
+00:46:11,735 --> 00:46:11,996
+Tamam.
+
+517
+00:46:12,215 --> 00:46:13,235
+Bu da C'ye eşit.
+
+518
+00:46:13,235 --> 00:46:14,456
+Peki.
+
+519
+00:46:14,456 --> 00:46:21,076
+Şimdi matrislerin eşitliğinden X'i, Y'yi, Z'yi, T'yi bulalım.
+
+520
+00:46:21,675 --> 00:46:23,476
+X neye eşit olacak?
+
+521
+00:46:23,476 --> 00:46:26,016
+Eksi X, 3'e.
+
+522
+00:46:26,235 --> 00:46:27,916
+Yani X, eksi 3'e.
+
+523
+00:46:28,356 --> 00:46:30,056
+Y, eksi 2'ye.
+
+524
+00:46:31,896 --> 00:46:35,436
+Bunları bulduktan sonra 5 X artı 2 Z.
+
+525
+00:46:35,436 --> 00:46:35,576
+Evet.
+
+526
+00:46:36,635 --> 00:46:37,896
+Buradan da Z'i bulacağım.
+
+527
+00:46:38,016 --> 00:46:38,876
+Bu da neye eşitmiş?
+
+528
+00:46:38,996 --> 00:46:39,715
+1'e eşitmiş.
+
+529
+00:46:39,856 --> 00:46:41,316
+X'i götürüp yerine yazıyorum.
+
+530
+00:46:41,436 --> 00:46:42,255
+Eksi 3 diye.
+
+531
+00:46:42,816 --> 00:46:44,976
+Buradan Z'i 8 diye bulduk.
+
+532
+00:46:45,416 --> 00:46:47,396
+Sonra 5 Y artı 2 T.
+
+533
+00:46:47,836 --> 00:46:49,115
+O da neye eşitmiş?
+
+534
+00:46:49,336 --> 00:46:49,816
+0'a eşitmiş.
+
+535
+00:46:50,896 --> 00:46:51,675
+Y'de neydi?
+
+536
+00:46:51,936 --> 00:46:52,695
+Eksi 2 idi.
+
+537
+00:46:52,695 --> 00:46:56,675
+Bunu da yerine koyduğumda T'yi 5 diye buluyorum.
+
+538
+00:47:01,076 --> 00:47:25,896
+Şimdi, başka bir soru. A matrisi bu. Fx şuna eşit. 3x küp, eksi 2x kare, artı x, eksi 5, şey eşit. F, A'yı bulunuz diyor. Ne yapacağız? F, A dediğine göre, x'ler yerine A'yı yazıyoruz. A dediğim ne? Matris. A matrisini yazıyoruz.
+
+539
+00:47:25,896 --> 00:47:47,856
+Bu da nedir? 3, A'nın kübü, eksi 2, A'nın karesi, artı A, eksi 5. 5, yalnız burada arkadaşlar 5. Bunlar matris, bu ise sayı. Matrisle sayı toplanmaz, işleme girmez. Bunun da ne olması lazım? Bunun da matrisi olması lazım.
+
+540
+00:47:47,856 --> 00:47:54,856
+O zaman, o zaman bunun da matris, o zaman bunun da matris, o zaman bunun da matrisi olacak.
+
+541
+00:48:17,856 --> 00:48:20,856
+var mıdır? Var mıdır sorusu olan?
+
+542
+00:48:29,331 --> 00:48:30,351
+Peki, devam.
+
+543
+00:48:32,031 --> 00:48:37,112
+A matrisinin simetrik olması için x, y, z değerleri ne olmalı?
+
+544
+00:48:37,951 --> 00:48:38,991
+Yukarıya çıkayım.
+
+545
+00:48:40,652 --> 00:48:41,132
+Şunu mu?
+
+546
+00:48:55,219 --> 00:49:00,719
+simetrik olması için x, y, z değerlere ne olmalıdır?
+
+547
+00:49:07,956 --> 00:49:08,356
+Şu
+
+548
+00:49:12,980 --> 00:49:14,340
+Çarpma işleminden
+
+549
+00:49:21,684 --> 00:49:26,184
+A'nın karesi 1, 0, 9, 16.
+
+550
+00:49:27,644 --> 00:49:29,244
+A'da neydi?
+
+551
+00:49:30,124 --> 00:49:35,403
+A, eksi 1, 0, 3, 4.
+
+552
+00:49:36,024 --> 00:49:39,084
+Bununla bunu, bununla bunu çarpıyorsun, topluyorsun.
+
+553
+00:49:40,604 --> 00:49:42,964
+Burada da bununla bunu çarpıyorsun.
+
+554
+00:49:43,464 --> 00:49:46,844
+Eksi 9, artı 16 çarpı 3.
+
+555
+00:49:47,684 --> 00:49:48,464
+Buraya yazıyorsun.
+
+556
+00:49:49,784 --> 00:50:15,684
+Tamam, anladık mı?
+
+557
+00:49:56,692 --> 00:49:57,911
+[öğrenci] anladın mı?
+
+558
+00:50:10,675 --> 00:50:22,936
+İki satırı yer değiştiriyoruz. Ama bak zaman geçiyor. Ondan sonra soruyorsunuz ki nerede anlamadım diye. Şimdi hangi soruda ne yaptık, neyi anlamadın? Yani madem anlamadın, niye o zaman sormuyorsun?
+
+559
+00:50:31,219 --> 00:50:50,699
+İki satırı yer değiştiriyor. Mesela burada da var. İki ile üçü yer değiştir diyor. İkinci satırla, yani şu satırla, bu satırı yer değiştir diyor. İkisi yer değişti. İki satır.
+
+560
+00:50:56,563 --> 00:50:58,563
+Tamam, anladın mı?
+
+561
+00:51:08,436 --> 00:51:32,456
+Şimdi gelelim buraya. Simetrik olması için x'ye z değerleri ne olmalıdır? Simetriklik şartı neydi? Transpozesi kendisine eşit olan matristi. Yani A, i, j simetrik olabilmesi için ne olması lazım? Transpozesine eşit olacak. Transpozede ne oluyordu? Satırla sütün yer değiştiriyordu. Yani j, i, i eşit olacak.
+
+562
+00:51:32,456 --> 00:51:59,376
+Yani A, i, i elemanı neye eşit olmalı? A, i, i, y. Burada bir sıkıntı yok. Şimdi diğer elemanlara bakalım. X elemanı nedir? 2, 1 elemanı. Neye eşit olacak? 1, 2'ye. 1, 2 neydi? 5. O zaman x de 5 olacak. Peki y neye eşit? Y, 1, 3'e. Bu neye eşit olmalı? 3, 1'e. 3, 1 ne? 8.
+
+563
+00:51:59,376 --> 00:52:10,196
+O zaman z, z neydi? 3, 2. 3, 2. Neye eşit olmalı? 2, 3'e. O da neydi? 7'ydi. 7'ye eşit olmalı diyoruz.
+
+564
+00:52:14,804 --> 00:52:22,144
+Şimdi A matrisinin involüt bir matris olması için K değeri ne olmalıdır?
+
+565
+00:52:22,543 --> 00:52:23,963
+Involütluk şartı neydi?
+
+566
+00:52:24,384 --> 00:52:26,483
+A kare eşit I olmalıydı.
+
+567
+00:52:26,824 --> 00:52:28,304
+O zaman ne yapıyoruz?
+
+568
+00:52:28,503 --> 00:52:30,523
+A'nın karesini hesaplıyoruz.
+
+569
+00:52:30,523 --> 00:52:35,483
+A'nın karesi nedir?
+
+570
+00:52:36,564 --> 00:52:38,144
+Çarpmayı yapıyoruz yani.
+
+571
+00:52:38,543 --> 00:52:41,704
+A'yı yazdık buraya ve buraya.
+
+572
+00:52:41,704 --> 00:52:45,124
+Çarpma işlemini yapacak olursak bununla bunun çarpımı 0.
+
+573
+00:52:45,344 --> 00:52:46,844
+Bununla bunun çarpımı 4.
+
+574
+00:52:47,604 --> 00:52:49,463
+Eksi 3 topladık 1.
+
+575
+00:52:50,164 --> 00:52:54,144
+Sonra 0 K artı 3.
+
+576
+00:52:54,144 --> 00:52:55,284
+K artı 3.
+
+577
+00:52:55,844 --> 00:53:01,403
+Sonra 0 4 eksi 4 topladık 0.
+
+578
+00:53:01,864 --> 00:53:03,463
+Geldik aşağı satıra.
+
+579
+00:53:04,284 --> 00:53:07,304
+0 4K 12.
+
+580
+00:53:07,644 --> 00:53:08,923
+4K artı 12.
+
+581
+00:53:08,923 --> 00:53:11,164
+Buradan 4.
+
+582
+00:53:11,884 --> 00:53:14,523
+K'nın karesi eksi 12.
+
+583
+00:53:14,963 --> 00:53:16,884
+K'nın karesi eksi 8.
+
+584
+00:53:17,764 --> 00:53:19,764
+Sonra eksi 4.
+
+585
+00:53:21,064 --> 00:53:24,284
+4K artı 16.
+
+586
+00:53:24,844 --> 00:53:26,624
+4K artı 12.
+
+587
+00:53:27,304 --> 00:53:28,384
+Burası 0.
+
+588
+00:53:29,384 --> 00:53:30,204
+Eksi 12.
+
+589
+00:53:30,644 --> 00:53:31,884
+Artı 12 0.
+
+590
+00:53:31,884 --> 00:53:35,423
+3 eksi 3 K.
+
+591
+00:53:36,724 --> 00:53:37,844
+Eksi 12.
+
+592
+00:53:38,523 --> 00:53:40,624
+Eksi 3 K eksi 9 etti.
+
+593
+00:53:41,664 --> 00:53:43,344
+Sonra eksi 3.
+
+594
+00:53:44,023 --> 00:53:44,764
+Eksi 12.
+
+595
+00:53:45,384 --> 00:53:47,384
+Artı 16 topladık 1.
+
+596
+00:53:47,923 --> 00:53:50,543
+Şimdi şöyle.
+
+597
+00:53:51,104 --> 00:53:51,923
+Yani şuraya bakalım.
+
+598
+00:53:52,384 --> 00:53:56,023
+Asal köşegen üstündeki sayılar ne olacak?
+
+599
+00:53:56,543 --> 00:53:57,403
+1'e eşit olacak.
+
+600
+00:53:57,604 --> 00:54:01,204
+Asal köşegen dışındaki sayılarım da 0'a eşit olacak.
+
+601
+00:54:01,204 --> 00:54:04,644
+O zaman K'nın karesi eksi 8 neye eşit olmalı?
+
+602
+00:54:04,764 --> 00:54:05,884
+1'e eşit olmalı.
+
+603
+00:54:06,664 --> 00:54:08,543
+Peki K'nın karesi neye eşit olur?
+
+604
+00:54:08,624 --> 00:54:09,284
+9 olur.
+
+605
+00:54:09,724 --> 00:54:10,784
+K'da neye eşit olur?
+
+606
+00:54:10,903 --> 00:54:12,104
+6'a eksi 3 olur.
+
+607
+00:54:12,543 --> 00:54:14,564
+Peki her iki değeri de sağlıyor mu?
+
+608
+00:54:15,423 --> 00:54:17,304
+Her iki değeri de sağlıyor mu?
+
+609
+00:54:17,403 --> 00:54:20,304
+Asal köşegen dışındaki elemanlarım 0 olmalıydı.
+
+610
+00:54:20,384 --> 00:54:22,184
+Birim madresi eşit olması için.
+
+611
+00:54:23,463 --> 00:54:26,704
+Buralara iki değeri de verdiğimde 0 oluyor mu?
+
+612
+00:54:27,124 --> 00:54:30,043
+Artı 3'ü verdiğim zaman buraları 0 olmaz.
+
+613
+00:54:30,043 --> 00:54:32,983
+O yüzden artı 3 sağlamaz.
+
+614
+00:54:33,284 --> 00:54:34,864
+Sağlayan tek değer var.
+
+615
+00:54:35,184 --> 00:54:36,523
+Eksi 3'tür.
+
+616
+00:54:37,104 --> 00:54:40,463
+Tamam.
+
+617
+00:54:44,659 --> 00:54:46,699
+Şimdi başka bir soru.
+
+618
+00:54:49,879 --> 00:54:52,399
+A matrisi hermityan bir matrismiş.
+
+619
+00:54:53,539 --> 00:54:57,699
+A'nın eşleneğinin de hermityan matris olduğunu gösteriniz.
+
+620
+00:54:58,460 --> 00:55:02,139
+Şimdi eşlenek neydi?
+
+621
+00:55:02,359 --> 00:55:04,579
+Z eşittir A artı İB idi.
+
+622
+00:55:05,579 --> 00:55:07,599
+Eşleneği A eksi İB oluyor.
+
+623
+00:55:08,119 --> 00:55:14,019
+Peki A'nın eşleneği nedir?
+
+624
+00:55:14,659 --> 00:55:16,039
+A'nın eşleneği.
+
+625
+00:55:16,500 --> 00:55:18,159
+Hepsinin eşleneklerini alıyorum.
+
+626
+00:55:18,299 --> 00:55:33,099
+1, 1 eksi İ, 2 eksi 3 İ, 1 artı İ, 2 artı İ, 2 artı 3 İ, İ ve 0.
+
+627
+00:55:34,460 --> 00:55:34,719
+Tamam.
+
+628
+00:55:35,519 --> 00:55:36,779
+Şimdi neyi göstereceğim?
+
+629
+00:55:37,159 --> 00:55:42,480
+Bunun eşleneğinin yani A'nın eşleneğinin hermityan olduğunu göstereceğim.
+
+630
+00:55:42,480 --> 00:55:45,139
+Hermityan olması demek ne demekti?
+
+631
+00:55:45,699 --> 00:55:47,899
+Hermityan olması demek ne demekti bunun?
+
+632
+00:55:49,719 --> 00:55:56,099
+Bir defa A'nın yani A'nın eşleneğinin transpozesi A'ya eşit demekti.
+
+633
+00:55:56,259 --> 00:55:57,679
+Hermityanlık şartı bu.
+
+634
+00:55:57,980 --> 00:55:58,420
+Tamam mı?
+
+635
+00:55:58,420 --> 00:56:02,319
+A'nın eşleneğinin transpozesi A'ya eşit demek.
+
+636
+00:56:02,319 --> 00:56:03,319
+Yani
+
+637
+00:56:03,319 --> 00:56:04,319
+bir defa A'nın eşleştirme.
+
+638
+00:56:04,319 --> 00:56:20,319
+Bir defa A'nın eşleştirme.
+
+639
+00:56:10,260 --> 00:56:15,380
+Yani şuna B dersek, ben neyi göstereceğim?
+
+640
+00:56:15,860 --> 00:56:22,360
+B'nin eşleneğinin transpozesinin B'ye eşit olduğunu göstereceğim.
+
+641
+00:56:22,960 --> 00:56:27,440
+Yani B, İ, J elemanı neye eşit olmalı?
+
+642
+00:56:27,980 --> 00:56:32,200
+Transpozeden dolayı J, İ'ye bunun eşleneğine.
+
+643
+00:56:32,200 --> 00:56:38,180
+Peki asal köşegen elemanları yani B, İ, İ elemanları ne olmalı ki?
+
+644
+00:56:38,180 --> 00:56:40,520
+Eşleneği kendisine eşit olsun.
+
+645
+00:56:40,960 --> 00:56:41,620
+Ne olmalı?
+
+646
+00:56:42,860 --> 00:56:44,160
+Real olmalı öyle değil mi?
+
+647
+00:56:44,560 --> 00:56:45,420
+Real olmalı.
+
+648
+00:56:45,660 --> 00:56:46,900
+Ki bu şartı sağlıyor.
+
+649
+00:56:47,100 --> 00:56:48,440
+Real şartını sağlıyor.
+
+650
+00:56:48,960 --> 00:56:50,400
+Diğer elemanlarımıza bakalım.
+
+651
+00:56:50,960 --> 00:56:51,880
+Ne olması lazım?
+
+652
+00:56:52,420 --> 00:56:57,360
+Bir, iki elemanı iki, birin eşleneğine eşit olmalı.
+
+653
+00:56:57,880 --> 00:56:58,460
+Öyle değil mi?
+
+654
+00:56:58,460 --> 00:57:10,500
+Sonra bir, üç, üç, birin eşleneğine, iki, üç, üç, ikinin eşleneğine eşit olmalı.
+
+655
+00:57:11,180 --> 00:57:14,700
+Peki bakıyoruz bir, iki, bir eksi iyiydi.
+
+656
+00:57:15,940 --> 00:57:17,800
+Bunun eşleneği bir artı iyi.
+
+657
+00:57:18,920 --> 00:57:19,680
+Evet doğru.
+
+658
+00:57:20,160 --> 00:57:21,240
+İki eksi üç iyi.
+
+659
+00:57:21,400 --> 00:57:23,060
+Bunun eşleneği iki artı üç iyi.
+
+660
+00:57:23,380 --> 00:57:24,640
+Burada o da doğru.
+
+661
+00:57:25,060 --> 00:57:26,040
+Yani bunu sağladı.
+
+662
+00:57:26,160 --> 00:57:26,880
+Bunu sağladı.
+
+663
+00:57:26,880 --> 00:57:30,760
+Sonra iyi eşleneği eksi iyi.
+
+664
+00:57:31,900 --> 00:57:33,420
+Üç, iki bunu da sağladı.
+
+665
+00:57:33,900 --> 00:57:34,820
+Demek ki neymiş?
+
+666
+00:57:35,040 --> 00:57:36,120
+Hermit yanmış.
+
+667
+00:57:36,620 --> 00:57:48,360
+Peki bunu bu şekilde rakamlarla hani uygulama olarak gösterebileceğimiz gibi teorik olarak da bunu ispatlayabiliriz.
+
+668
+00:57:48,800 --> 00:57:50,820
+Ne yapabiliriz arkadaşlar burada?
+
+669
+00:57:50,820 --> 00:57:54,920
+Ben A'nın eşleneğine B dedim.
+
+670
+00:57:55,280 --> 00:57:55,820
+Tamam mı?
+
+671
+00:57:55,820 --> 00:57:58,340
+Benim göstermem gereken o zaman ne?
+
+672
+00:57:58,500 --> 00:58:00,880
+Hermit yanlığı soruluyor ya.
+
+673
+00:58:01,360 --> 00:58:06,240
+B'nin eşleneğinin transpozesinin B'ye eşit olduğunu göstereceğim.
+
+674
+00:58:06,240 --> 00:58:08,280
+Şimdi ben neyi biliyorum?
+
+675
+00:58:08,280 --> 00:58:09,040
+Şunu biliyorum.
+
+676
+00:58:09,120 --> 00:58:10,140
+Bunu vermiş zaten.
+
+677
+00:58:10,280 --> 00:58:11,320
+A hermit yan demiş.
+
+678
+00:58:11,480 --> 00:58:11,940
+Bu var.
+
+679
+00:58:12,220 --> 00:58:13,380
+Bu var olan koşul.
+
+680
+00:58:13,740 --> 00:58:15,280
+Bunu çünkü şurada söylemiş.
+
+681
+00:58:15,660 --> 00:58:16,520
+A hermit yan.
+
+682
+00:58:16,900 --> 00:58:19,140
+Ben B'nin hermit yanlığına bakacağım.
+
+683
+00:58:19,800 --> 00:58:25,300
+Yani şimdi burada B yerine, B yerine giderim.
+
+684
+00:58:25,400 --> 00:58:26,020
+Neyi yazarım?
+
+685
+00:58:26,020 --> 00:58:27,540
+A'nın eşleneğini yazarım.
+
+686
+00:58:28,060 --> 00:58:33,140
+A'nın eşleneğinin, eşleneğinin transpozesi eşit mi?
+
+687
+00:58:33,560 --> 00:58:34,540
+A diye bakacağım.
+
+688
+00:58:35,100 --> 00:58:37,840
+Eşleneğinin eşleneği yani A demek.
+
+689
+00:58:38,040 --> 00:58:42,200
+A'nın transpozesi A'nın eşleneğine eşit.
+
+690
+00:58:42,420 --> 00:58:44,200
+Bunu burada zaten vermişti.
+
+691
+00:58:44,200 --> 00:58:50,080
+Bunu zaten şöyle de her iki tarafın transpozesini alırsam A neye eşit olur?
+
+692
+00:58:50,080 --> 00:58:53,560
+A'nın yani şöyle bir daha yazayım.
+
+693
+00:58:53,700 --> 00:58:56,800
+Transpozenin transpozesi A'ydı.
+
+694
+00:58:57,420 --> 00:58:59,900
+O zaman A neye eşit olur?
+
+695
+00:59:00,060 --> 00:59:04,240
+A'nın eşleneğinin transpozesine eşit olur.
+
+696
+00:59:05,480 --> 00:59:13,720
+Anladık mı?
+
+697
+00:59:27,347 --> 00:59:28,407
+İyi, peki.
+
+698
+00:59:32,115 --> 00:59:33,755
+Şimdi başka bir soru.
+
+699
+00:59:37,115 --> 00:59:40,215
+A ve B tersi olan iki matriz iseler.
+
+700
+00:59:41,775 --> 00:59:49,096
+A çarpı B'nin de tersinin olacağını ve bu tersinde B üzer eksi 1, A üzer eksi 1'e eşit olduğunu gösteriniz.
+
+701
+00:59:49,635 --> 00:59:53,135
+Şimdi A'nın tersi varsa ne yapıyorduk?
+
+702
+00:59:53,215 --> 00:59:55,976
+A'yı sağdan ve soldan çarptığımda neye eşit oluyordu?
+
+703
+00:59:56,076 --> 00:59:57,056
+I'ye eşit oluyordu.
+
+704
+00:59:57,056 --> 01:00:09,355
+Şimdi A çarpı B'nin tersi varsa A çarpı B'yi sağdan ve soldan B üzer eksi 1, A üzer eksi 1 ile çarptığım zaman bu neye eşit olmalı?
+
+705
+01:00:09,615 --> 01:00:10,655
+I'ye eşit olmalı.
+
+706
+01:00:10,735 --> 01:00:12,096
+Bakalım bunu sağlıyor mu?
+
+707
+01:00:12,556 --> 01:00:13,175
+Ne yapacağız?
+
+708
+01:00:13,315 --> 01:00:18,896
+A çarpı B'yi sağdan ve soldan B üzer eksi 1, A üzer eksi 1 ile çarpalım.
+
+709
+01:00:19,795 --> 01:00:23,916
+Çarptığımızda A, B, B üzer eksi 1, A üzer eksi 1 olur.
+
+710
+01:00:23,916 --> 01:00:25,576
+O da neye eşittir?
+
+711
+01:00:25,675 --> 01:00:26,916
+Bununla bunun çarpımı.
+
+712
+01:00:27,056 --> 01:00:28,115
+I'ye eşittir.
+
+713
+01:00:28,396 --> 01:00:30,355
+A çarpı I, A'dır.
+
+714
+01:00:31,036 --> 01:00:33,896
+A çarpı A üzer eksi 1 de I'ye eşittir.
+
+715
+01:00:34,275 --> 01:00:39,235
+Şimdi bunu soldan A çarpı B ile çarptığımda ne olacaktır?
+
+716
+01:00:39,295 --> 01:00:41,795
+Bu sefer A üzer eksi 1, A parantezini alacağım.
+
+717
+01:00:42,215 --> 01:00:43,876
+Burası gene I'ye eşittir.
+
+718
+01:00:44,195 --> 01:00:47,516
+I ile B üzer eksi 1'in çarpımı B üzer eksi 1'dir.
+
+719
+01:00:47,936 --> 01:00:51,076
+B üzer eksi 1 ile B'nin çarpımı da I'dır.
+
+720
+01:00:51,695 --> 01:00:55,335
+Dolayısıyla sağdan ve soldan çarptığımda I'yı buldum.
+
+721
+01:00:55,335 --> 01:00:57,315
+O zaman bu bana neyi söylüyor?
+
+722
+01:00:57,735 --> 01:01:02,275
+A çarpı B'nin tersi B üzer eksi 1, A üzer eksi 1'dir.
+
+723
+01:01:02,275 --> 01:01:03,275
+Tamam.
+
+724
+01:01:11,059 --> 01:01:11,559
+Evet.
+
+725
+01:01:18,867 --> 01:01:26,347
+Şimdi A'nın tersi varsa ne dedik?
+
+726
+01:01:26,768 --> 01:01:29,788
+Bunu sağdan ve soldan çarptığımda I'ya eşitti.
+
+727
+01:01:30,947 --> 01:01:32,628
+Tamam mı? I'ya eşitti.
+
+728
+01:01:32,628 --> 01:01:42,208
+O zaman A çarpı B'nin tersi buysa sağdan ve soldan çarptığımda bunun da I'ya eşit olması lazım dedim.
+
+729
+01:01:42,788 --> 01:01:43,788
+Hareket noktam bu.
+
+730
+01:01:44,228 --> 01:01:48,188
+O zaman A çarpı B'yi sağdan ve soldan ne yaptık?
+
+731
+01:01:48,867 --> 01:01:50,027
+Şununla çarptık.
+
+732
+01:01:50,347 --> 01:01:55,567
+Çarptığımda parantezleri özellik vardı ya çarpmanın özellikleri.
+
+733
+01:01:55,987 --> 01:01:57,268
+Şunu değiştirebiliyordum.
+
+734
+01:01:57,527 --> 01:01:58,728
+Bu şekilde yazabiliyordum.
+
+735
+01:01:59,228 --> 01:02:02,728
+B ile B'ye neye eşitti? I'ya eşitti.
+
+736
+01:02:03,307 --> 01:02:08,447
+Bununla bunun çarpımı da I ile N'yi çarparsa kendisine eşittir zaten.
+
+737
+01:02:09,768 --> 01:02:13,827
+A ile A'yı üzeri eksi birin çarpımı da I'dır.
+
+738
+01:02:14,228 --> 01:02:18,307
+Burada ise A'yı üzeri eksi bir ile A'yı paranteze aldım.
+
+739
+01:02:18,307 --> 01:02:20,188
+Bu neye eşittir?
+
+740
+01:02:21,768 --> 01:02:22,847
+I'ya eşittir.
+
+741
+01:02:23,967 --> 01:02:29,208
+Sonra B üzeri eksi bir ile I'nın çarpımı da B üzeri eksi birdir.
+
+742
+01:02:29,527 --> 01:02:32,447
+B üzeri eksi bir ile B'nin çarpımı da I'dır.
+
+743
+01:02:34,248 --> 01:02:34,467
+Tamam.
+
+744
+01:02:34,967 --> 01:02:43,648
+Sağdan ve soldan çarptığımda I'yı bulduğum için o zaman A çarpı B'nin tersi B üzeri eksi bir A üzeri eksi birdir diyorum.
+
+745
+01:02:44,007 --> 01:02:44,607
+Anladık mı?
+
+746
+01:02:48,307 --> 01:02:50,947
+Peki, şimdi başka bir soru.
+
+747
+01:02:53,887 --> 01:02:57,288
+A ve B simetrik iki matris olmak üzere diyor.
+
+748
+01:02:57,608 --> 01:03:00,307
+A ve B simetrik iki matris olmak üzere.
+
+749
+01:03:01,867 --> 01:03:05,088
+Şimdi A ve B simetrik ise şart ne?
+
+750
+01:03:07,108 --> 01:03:12,188
+A'nın transpozesi A'ya eşit, B'nin transpozesi B'ye eşit.
+
+751
+01:03:12,347 --> 01:03:14,608
+Bu şartlar var. Tamam mı? Bu var.
+
+752
+01:03:15,228 --> 01:03:16,447
+Simetriklik şartı bu.
+
+753
+01:03:16,447 --> 01:03:23,407
+Diyor ki bana, 5 A üzeri 7 artı 7 B üzeri 5 matrisinin de simetrik olduğunu gösterin.
+
+754
+01:03:24,487 --> 01:03:26,947
+Şimdi bu simetriklik şartı neydi?
+
+755
+01:03:27,467 --> 01:03:29,387
+Transpozesi kendisine eşit olacak.
+
+756
+01:03:29,987 --> 01:03:34,068
+Peki, bu simetrik ise ne olmalıdır?
+
+757
+01:03:34,608 --> 01:03:37,827
+Bunun transpozesi kendisine eşit mi?
+
+758
+01:03:38,047 --> 01:03:38,748
+Buna bakıyorum.
+
+759
+01:03:38,987 --> 01:03:39,967
+Kendisine eşit mi?
+
+760
+01:03:40,387 --> 01:03:41,927
+Ne yapacağım o zaman arkadaşlar?
+
+761
+01:03:43,927 --> 01:03:45,248
+Buradan başlayıp,
+
+762
+01:03:45,248 --> 01:03:47,788
+nereye şuraya varmam lazım.
+
+763
+01:03:47,788 --> 01:03:49,628
+Şimdi bu matrisi yazdım.
+
+764
+01:03:50,148 --> 01:03:53,688
+Bu A matrisi, bu da B matrisi ise,
+
+765
+01:03:53,827 --> 01:03:56,708
+iki matrisinin toplamının transpozesi,
+
+766
+01:03:57,108 --> 01:03:59,708
+ayrı ayrı transpozeler toplamıydı.
+
+767
+01:04:00,108 --> 01:04:04,367
+Bu özellikler kısmında verdiğim ve işaretlettiğim,
+
+768
+01:04:04,668 --> 01:04:09,088
+işte önemli sorularda kullanacağımız dediğimiz özelliklerdir bunlar.
+
+769
+01:04:09,088 --> 01:04:10,088
+ne yapıyorduk?
+
+770
+01:04:10,088 --> 01:04:11,088
+Ne yapıyorduk?
+
+771
+01:04:11,088 --> 01:04:13,987
+Ayrı ayrı ayrı ayrı matrislerin,
+
+772
+01:04:13,987 --> 01:04:14,608
+değil mi?
+
+773
+01:04:14,728 --> 01:04:16,887
+Transpozeyi aşağıya indiriyorduk.
+
+774
+01:04:17,367 --> 01:04:20,007
+Ayrı ayrı transpozeler toplamına eşitti.
+
+775
+01:04:20,547 --> 01:04:23,387
+Şimdi 5'in transpozesi 5'tir.
+
+776
+01:04:23,628 --> 01:04:25,268
+Sayının transpozesi kendisi.
+
+777
+01:04:26,047 --> 01:04:27,807
+Peki, transpoze ile 7,
+
+778
+01:04:27,987 --> 01:04:30,507
+7 ile transpoze yer değişebiliyordu.
+
+779
+01:04:30,728 --> 01:04:32,288
+Üstler yer değişebiliyordu.
+
+780
+01:04:32,288 --> 01:04:33,688
+O zaman bu nedir?
+
+781
+01:04:33,927 --> 01:04:36,347
+A'nın transpozesinin 7. kuvveti.
+
+782
+01:04:36,708 --> 01:04:37,467
+Artı,
+
+783
+01:04:38,148 --> 01:04:40,108
+7'yi attık dışarıya.
+
+784
+01:04:40,307 --> 01:04:42,068
+Gene transpozesi kendisidir.
+
+785
+01:04:43,588 --> 01:04:44,128
+Nedir?
+
+786
+01:04:45,007 --> 01:04:48,507
+B'nin transpozesinin 5. kuvveti.
+
+787
+01:04:48,768 --> 01:04:50,827
+Şimdi A'nın transpozesi neydi?
+
+788
+01:04:51,027 --> 01:04:53,248
+A, B'nin transpozesi de B'ydi.
+
+789
+01:04:54,027 --> 01:04:56,467
+Bunlar yerine A ve B'yi yazdığımda,
+
+790
+01:04:56,807 --> 01:04:58,208
+üstlerinde indirirsek,
+
+791
+01:04:58,827 --> 01:05:00,427
+bunu elde ederiz.
+
+792
+01:05:00,427 --> 01:05:02,947
+göstermem gereken de buydu zaten.
+
+793
+01:05:03,367 --> 01:05:04,007
+Tamam mı?
+
+794
+01:05:10,996 --> 01:05:12,956
+Şimdi başka bir soru.
+
+795
+01:05:14,836 --> 01:05:17,476
+A çarpı B eşittir A.
+
+796
+01:05:17,695 --> 01:05:19,836
+B çarpı A eşittir B.
+
+797
+01:05:20,135 --> 01:05:26,996
+Olmak üzere A ve B matrislerinin idempotent matris olduklarını gösteriniz.
+
+798
+01:05:27,215 --> 01:05:30,296
+A ve B'nin idempotent matris olduğunu göstereceğim.
+
+799
+01:05:30,936 --> 01:05:31,956
+Şimdi arkadaşlar.
+
+800
+01:05:35,836 --> 01:05:38,276
+İdempotent matris tanımı neydi?
+
+801
+01:05:38,276 --> 01:05:41,675
+A kare eşit A, B kare eşit B olacaktı.
+
+802
+01:05:42,215 --> 01:05:44,635
+Ben şu elimde bu özellikler var.
+
+803
+01:05:44,756 --> 01:05:46,476
+Bunu vermiş olmak üzere diyor.
+
+804
+01:05:46,836 --> 01:05:49,356
+Bunları kullanarak şuraya varmam lazım.
+
+805
+01:05:49,536 --> 01:05:51,276
+Şu eşitliği göstermem lazım.
+
+806
+01:05:51,796 --> 01:05:53,056
+O zaman buraya bakıyorum.
+
+807
+01:05:53,476 --> 01:05:55,936
+Eşitliğin bir tarafı kare, bir tarafı A.
+
+808
+01:05:56,735 --> 01:06:00,596
+Benim elimdeki şeyler de bunlar.
+
+809
+01:06:00,756 --> 01:06:01,816
+Özellikler de bunlar.
+
+810
+01:06:02,096 --> 01:06:03,036
+Bunları kullanacağım.
+
+811
+01:06:03,195 --> 01:06:06,735
+O zaman iki tarafı A olan şunu kullanmam lazım diyorum.
+
+812
+01:06:06,735 --> 01:06:16,215
+O zaman ben bunu öyle bir yerden A ile çarpacağım ki bir taraf kare olacak, bir taraf olmayacak.
+
+813
+01:06:16,596 --> 01:06:19,816
+Şimdi soldan çarparsam iki taraf da kare olur.
+
+814
+01:06:20,175 --> 01:06:30,756
+O zaman diyorum ben bunu sağdan çarpmam lazım ki ne olsun sağdan çarparsam bir taraf kare olur, diğer taraf olmaz.
+
+815
+01:06:30,756 --> 01:06:32,556
+Eşitliğe bakıyoruz.
+
+816
+01:06:32,556 --> 01:06:35,956
+Eşitliğe baktığımda B çarpı A neye eşittir?
+
+817
+01:06:36,256 --> 01:06:37,316
+B'ye eşittir.
+
+818
+01:06:37,675 --> 01:06:38,896
+Bunun yerine B yazarım.
+
+819
+01:06:39,376 --> 01:06:41,536
+A ile B'nin çarpımı da neye eşitti?
+
+820
+01:06:41,936 --> 01:06:42,816
+A'ya eşitti.
+
+821
+01:06:43,235 --> 01:06:44,715
+A kare eşit A olur.
+
+822
+01:06:45,296 --> 01:06:45,516
+Tamam.
+
+823
+01:06:46,115 --> 01:06:47,135
+Şimdi geldik buna.
+
+824
+01:06:47,615 --> 01:06:49,655
+B çarpı A eşittir B.
+
+825
+01:06:49,655 --> 01:07:01,115
+Şimdi gene bunu şunu elde etmek için öyle bir yerden B ile çarpacağım ki bir taraf kare olsun, bir taraf olmasın.
+
+826
+01:07:01,476 --> 01:07:05,756
+O zaman sağdan çarparsam ben bunu bu taraf kare olur.
+
+827
+01:07:06,296 --> 01:07:07,856
+Bu taraf ise kare olmaz.
+
+828
+01:07:08,296 --> 01:07:10,715
+A ile B'nin çarpımı A'ya eşittir.
+
+829
+01:07:11,036 --> 01:07:12,796
+B A da B'ye eşittir.
+
+830
+01:07:13,096 --> 01:07:16,296
+B eşit B'nin karesi diye bulurum.
+
+831
+01:07:16,296 --> 01:07:16,836
+Tamam.
+
+832
+01:07:21,172 --> 01:07:22,432
+Başka bir soru.
+
+833
+01:07:24,512 --> 01:07:34,472
+A ve B eninci mertebeden değişmeli matrisler ise, A kare ve B küp matrisinin de değişmeli olduğunu gösteriniz.
+
+834
+01:07:34,472 --> 01:07:40,891
+Ben size hani demiştim ki değişmeli lafı çok geçer, hani bu önemli demiştim.
+
+835
+01:07:41,311 --> 01:07:43,512
+Değişmeli olduğunu gösteriniz.
+
+836
+01:07:43,952 --> 01:07:45,331
+Şimdi ne yapacağız?
+
+837
+01:07:47,251 --> 01:07:48,612
+Neyi göstermem lazım?
+
+838
+01:07:48,612 --> 01:07:52,592
+Değişmeli olması için A çarpı B, B çarpı A idi.
+
+839
+01:07:52,932 --> 01:07:54,371
+Tamam mı? Değişmeli dediğim bu.
+
+840
+01:07:55,032 --> 01:08:00,592
+Bunun değişmeli olduğu ise, A kare B küp, B küp A kare olduğunu göstereceğiz.
+
+841
+01:08:01,172 --> 01:08:05,771
+Peki, bunu gösterebilmek için, benim elimde kullanacağım da bu var.
+
+842
+01:08:06,452 --> 01:08:10,052
+Bunun üstlü ifade, bu ise üstsüz ifade.
+
+843
+01:08:10,052 --> 01:08:12,952
+O zaman ben bunu ne yapmam lazım?
+
+844
+01:08:13,291 --> 01:08:15,112
+Üstsüz bir şekilde yazmam lazım.
+
+845
+01:08:15,112 --> 01:08:18,931
+Yani A çarpı A çarpı B, B, B diye yazdık.
+
+846
+01:08:19,051 --> 01:08:22,271
+Buradan bakıyorum.
+
+847
+01:08:22,372 --> 01:08:23,952
+Şu eşitliği kullanabilmek için.
+
+848
+01:08:24,252 --> 01:08:25,292
+A çarpı B var.
+
+849
+01:08:25,431 --> 01:08:27,631
+O zaman bu A çarpı B yerine,
+
+850
+01:08:28,072 --> 01:08:29,091
+ben ne yazarım?
+
+851
+01:08:29,452 --> 01:08:30,612
+B, A yazarım.
+
+852
+01:08:36,372 --> 01:08:38,972
+A çarpı B yerine tamam mı?
+
+853
+01:08:39,271 --> 01:08:41,212
+Bunun yerine ne yazıyorum?
+
+854
+01:08:41,692 --> 01:08:43,072
+BA'yı yazdım.
+
+855
+01:08:44,712 --> 01:08:44,932
+Tamam.
+
+856
+01:08:45,932 --> 01:08:47,412
+Şimdi BA'yı yazdık.
+
+857
+01:08:47,512 --> 01:08:49,351
+Yazdıktan sonra tekrar bakıyoruz.
+
+858
+01:08:49,752 --> 01:08:51,592
+Bak burada AB var.
+
+859
+01:08:51,992 --> 01:08:53,271
+Burada da AB var.
+
+860
+01:08:53,771 --> 01:08:56,132
+Bu AB yerine ne yazarım?
+
+861
+01:08:56,712 --> 01:08:57,872
+BA'yı yazdım.
+
+862
+01:08:58,731 --> 01:09:01,432
+Buradaki AB yerine ne yazdım?
+
+863
+01:09:01,992 --> 01:09:03,112
+BA'yı yazdım.
+
+864
+01:09:03,112 --> 01:09:05,231
+Sonra tekrar bakıyorum.
+
+865
+01:09:05,231 --> 01:09:08,132
+Tekrar baktığımda burada gene AB var.
+
+866
+01:09:08,472 --> 01:09:09,452
+Şu B'yi yazdım.
+
+867
+01:09:09,771 --> 01:09:12,452
+AB yerine BA'yı yazdım.
+
+868
+01:09:15,012 --> 01:09:18,132
+Sonra burada gene AB var.
+
+869
+01:09:18,512 --> 01:09:20,612
+Bu AB yerine de BA'yı yazdım.
+
+870
+01:09:21,012 --> 01:09:22,012
+Tekrar bakıyorum.
+
+871
+01:09:22,412 --> 01:09:25,492
+Tekrar baktığımda BB'yi yazdık.
+
+872
+01:09:25,811 --> 01:09:27,932
+AB yerine ne yazdım?
+
+873
+01:09:28,332 --> 01:09:29,432
+BA'yı yazdım.
+
+874
+01:09:34,260 --> 01:09:37,220
+Ne yapıyoruz? Bunu elde etmeye çalışıyoruz.
+
+875
+01:09:38,079 --> 01:09:42,699
+A kare B kübün, B küp A kareye eşit olduğunu göstermeye çalışıyorum.
+
+876
+01:09:43,100 --> 01:09:45,420
+Neyi kullanarak? Şunu kullanarak.
+
+877
+01:09:47,360 --> 01:09:47,980
+Anladık mı?
+
+878
+01:09:50,560 --> 01:09:51,600
+İspat yapıyoruz.
+
+879
+01:09:52,100 --> 01:09:54,119
+Buradan başlayıp buraya varacağım.
+
+880
+01:09:56,239 --> 01:09:57,920
+Buradan B, B
+
+881
+01:10:03,060 --> 01:10:13,020
+B olduğu için bu nedir? B küp. Bu tarafta AA olduğu için bu da nedir? A'nın karesidir. Göstermem gereken buydu.
+
+882
+01:10:23,796 --> 01:10:24,676
+Anladık mı?
+
+883
+01:10:31,764 --> 01:10:32,764
+Sorusu olan
+
+884
+01:10:44,532 --> 01:10:58,851
+Peki devam edelim. A maddesinin inversini bulalım. A'nın inversi. A maddesini yazdık. Yanına ne yapıyoruz? Yanına birim maddesi ilave ediyoruz.
+
+885
+01:10:58,851 --> 01:11:22,252
+Şimdi ne yapmam lazım? Burada A'nın olduğu yerde birim maddesi elde edecek şekilde işlem yapıyorum. Yani ne yapacağım? Bir, birin bulunduğu sütundaki diğer elemanları sıfır yapmam lazım. Ne yapacağız? Birinci satırı eksi bir ile çarpıp üçe ekleyeceğim.
+
+886
+01:11:22,252 --> 01:11:36,752
+Sonra bir de şurayı kullanmıyorum. İkinci satırı da eksi bir ile çarpayım. Şimdi ikinci satırı eksi bir ile çarptık. Sonra bunu eksi bir ile çarpıp ekliyorum.
+
+887
+01:11:36,752 --> 01:11:50,872
+Eksi bir ile çarptık ekledik sıfır. Burası bir. Eksi bir ile çarptık ekledik eksi bir. Eksi bir ile çarptık ekledik eksi bir. Burası sıfır. Burası da bir oldu.
+
+888
+01:11:50,872 --> 01:11:59,552
+Şimdi sıfırdan sonraki ilk elemanım bir. Sonra ne yapacağım? Birin bulunduğu sütunu sıfır yapacağım.
+
+889
+01:11:59,891 --> 01:12:05,992
+Yani ikinci satırı eksi bir ile çarpıp üçüncü satıra ekleyeceğim.
+
+890
+01:12:06,652 --> 01:12:17,511
+Eklersem ne oldu? Eksi bir ile çarptık ekledik sıfır. Eksi bir ile çarptık artı bir ekledik sıfır. Burası eksi bir. Eksi bir ile çarptık artı bir. Burası da bir.
+
+891
+01:12:17,511 --> 01:12:24,532
+Şimdi ne olması lazımdı arkadaşlar? Burada birim matrisi elde edebilmem lazımdır.
+
+892
+01:12:24,872 --> 01:12:33,712
+Oysa ki burada birim matrisi elde edemiyorum. Edemeyince demek ki bu A matrisinin inversi, tersi yoktur.
+
+893
+01:12:33,891 --> 01:12:39,511
+Yani A matrisi tekil matristir diyoruz. Tamam anladık mı?
+
+894
+01:12:39,511 --> 01:13:08,512
+Evet.
+
+895
+01:12:50,899 --> 01:12:55,899
+Peki, şimdi başka bir soru.
+
+896
+01:12:56,979 --> 01:12:58,039
+Başka bir soru.
+
+897
+01:12:59,199 --> 01:13:08,479
+A sıfırdan farklı, B sıfırdan farklı iken A çarpı B eşittir sıfır ise A ve B'nin tersinin olmadığını gösterin diyor.
+
+898
+01:13:08,779 --> 01:13:11,639
+Şimdi bu zamana kadar hep olduğunu göster sorusuydu.
+
+899
+01:13:12,059 --> 01:13:15,679
+Burada ise olmadığını göster diyor bana soruda.
+
+900
+01:13:16,259 --> 01:13:20,359
+Olmadığını göster sorularında çelişki yaratmam lazım.
+
+901
+01:13:20,359 --> 01:13:23,359
+Ve olmadığını o şekilde göstereceğim.
+
+902
+01:13:24,279 --> 01:13:33,179
+Yani A sıfırdan farklı, B sıfırdan farklı ve A çarpı B sıfıra eşitken ben ne yapayım?
+
+903
+01:13:33,579 --> 01:13:35,359
+A üzeri eksi bir var kabul edeyim.
+
+904
+01:13:36,199 --> 01:13:36,379
+Tamam?
+
+905
+01:13:37,379 --> 01:13:38,000
+Var olsun.
+
+906
+01:13:38,339 --> 01:13:39,579
+Bunu böyle bir kabul yapayım.
+
+907
+01:13:40,239 --> 01:13:47,299
+Peki, A üzeri eksi bir varsa ben bu denklemin her iki tarafını soldan A üzeri eksi bir ile çarparım.
+
+908
+01:13:48,059 --> 01:13:49,359
+Çarptığımda ne olacaktır?
+
+909
+01:13:49,359 --> 01:13:49,979
+Ne olacaktır?
+
+910
+01:13:50,359 --> 01:13:53,539
+A üzeri eksi bir ile A, I'ye eşit olacaktır.
+
+911
+01:13:54,039 --> 01:13:54,199
+Tamam?
+
+912
+01:13:54,579 --> 01:13:56,679
+I çarpı B'de neye eşittir?
+
+913
+01:13:57,719 --> 01:13:58,659
+B'ye eşittir.
+
+914
+01:13:58,939 --> 01:13:59,359
+Ne oldu?
+
+915
+01:13:59,519 --> 01:14:00,739
+B eşit sıfır oldu.
+
+916
+01:14:01,399 --> 01:14:02,579
+B sıfıra eşit oldu.
+
+917
+01:14:02,719 --> 01:14:05,439
+Oysa ki burada soruda neydi?
+
+918
+01:14:05,859 --> 01:14:08,219
+B sıfırdan farklı diye almıştık.
+
+919
+01:14:09,339 --> 01:14:10,439
+Bu böyle verelim işte.
+
+920
+01:14:10,439 --> 01:14:12,879
+Bende ne çıktı?
+
+921
+01:14:13,099 --> 01:14:14,159
+Sıfıra eşit çıktı.
+
+922
+01:14:14,659 --> 01:14:15,719
+Bu bir çelişkidir.
+
+923
+01:14:16,000 --> 01:14:18,139
+Ve bu çelişkiyi de yaratan neydir?
+
+924
+01:14:19,219 --> 01:14:23,619
+Benim A üzeri eksi biri var kabul etmemden bu çelişki doğmuştur.
+
+925
+01:14:23,619 --> 01:14:26,479
+O yüzden A üzeri eksi bir yoktur.
+
+926
+01:14:26,960 --> 01:14:28,420
+Şimdi ne yapacağız?
+
+927
+01:14:29,679 --> 01:14:32,439
+Aynı şeyi B üzeri eksi bir için düşünüyoruz.
+
+928
+01:14:32,799 --> 01:14:34,679
+B üzeri eksi bir var kabul edelim.
+
+929
+01:14:34,839 --> 01:14:36,000
+Gene aynı şartlarda.
+
+930
+01:14:36,000 --> 01:14:38,559
+B üzeri eksi bir var olsun.
+
+931
+01:14:39,559 --> 01:14:45,059
+Şimdi A çarpı B'nin her iki tarafını sağdan B üzeri eksi bir ile çarpalım.
+
+932
+01:14:45,619 --> 01:14:50,099
+B üzeri eksi bir ile çarptığım zaman ne olacaktır?
+
+933
+01:14:50,219 --> 01:14:53,159
+B ile B üzeri eksi birin çarpımı I olacaktır.
+
+934
+01:14:53,259 --> 01:14:55,359
+I ile A'nın çarpımı da nedir?
+
+935
+01:14:56,059 --> 01:14:56,639
+A'dır.
+
+936
+01:14:57,039 --> 01:14:58,460
+A eşit sıfır oldu.
+
+937
+01:14:59,439 --> 01:15:01,299
+Oysa ki A neydi?
+
+938
+01:15:01,599 --> 01:15:03,039
+Sıfırdan farklıydı.
+
+939
+01:15:03,579 --> 01:15:04,859
+Bu bir çelişkidir.
+
+940
+01:15:06,000 --> 01:15:07,960
+Bu çelişkiyi de yaratan nedir?
+
+941
+01:15:08,319 --> 01:15:10,699
+B üzeri eksi birin var kabul edilmesidir.
+
+942
+01:15:10,920 --> 01:15:15,099
+Dolayısıyla B üzeri eksi bir yoktur diyoruz.
+
+943
+01:15:15,719 --> 01:15:15,939
+Tamam.
+
+944
+01:15:20,819 --> 01:15:22,119
+Var mı sorusu olan?
+
+945
+01:15:27,636 --> 01:15:29,076
+Peki, devam.
+
+946
+01:15:38,739 --> 01:16:04,059
+Buradan çıkıyor, şuradan. Bu nedir? B eşit sıfır. Öyle değil mi? Oysa bana soruda ne olarak verilmişti? B sıfırdan farklı. Burada da şu ne? I, B ile B üzeri eksi birin çarpımı I. A ile I'nın çarpımı da neye eşit? A'ya eşittir. Tamam? Anladın mı [öğrenci]?
+
+947
+01:16:12,595 --> 01:16:37,015
+Peki. Şimdi diyor ki, A matrisi idem potent bir matris olduğuna göre K bilinmeyenini bulun. Peki, idem potentlik tanımı neydi? A kare eşit A idi. Tamam mı? İdem potentlik tanımı bu. O zaman ne yapıyoruz? A'nın karesini buluyoruz ve A'yı eşitliyoruz.
+
+948
+01:16:37,015 --> 01:16:52,975
+A'nın karesini nasıl? Burada artık çarpma işlemi. Bunu artık bir daha geçmeyelim üstünden. Çarpmayı öğrendik. A ile A'yı çarpıyoruz. Bu matrisi bulduk. Bunu ne yapıyoruz? A matrisini eşitleyeceğiz. A matrisini eşitleyeceğiz.
+
+949
+01:16:52,975 --> 01:16:57,975
+Burada bu tarafta K'ya.
+
+950
+01:16:57,975 --> 01:17:00,615
+Bu tarafta bir tarafta bir tarafta bir tarafta bir tarafta bir tarafta bir tarafta bir tarafta bir sayıya denk gelecektir.
+
+951
+01:17:00,895 --> 01:17:05,395
+Ki buraya bakarsak 4 eksi K neye eşitmiş? Eksi 1'e eşitmiş.
+
+952
+01:17:05,755 --> 01:17:09,655
+Burada K nedir? 5 diye bulunur.
+
+953
+01:17:10,955 --> 01:17:11,195
+Tamam.
+
+954
+01:17:13,355 --> 01:17:15,655
+Var mı sorusu olan? Anlamayan.
+
+955
+01:17:23,123 --> 01:17:38,863
+Şimdi arkadaşlar, diğer sınıfta da iki tane rank sorusu kaldı. O iki rank sorusunu haftaya anlatalım diye bıraktım. Sizde de gene aynı yerde bırakacağım ki, hani eşitlik bozulmasın diye.
+
+956
+01:17:50,292 --> 01:17:52,072
+Haftaya mı 29 Ekim oluyor?
+
+957
+01:17:53,432 --> 01:17:54,932
+Benim günlerim de şaşırdı.
+
+958
+01:18:00,692 --> 01:18:05,131
+Şimdi mesela hepsini yapmak zorunda mıyız?
+
+959
+01:18:06,652 --> 01:18:07,051
+Şöyle
+
+960
+01:18:07,051 --> 01:18:10,532
+Nerede bu?
+
+961
+01:18:17,332 --> 01:18:36,392
+Mesela, bir tek şunu, şurada, şunu yapıp da bıraksaydım, şunu yapıp bıraksaydım, K'nın karesi, eksi 8 eşittir 1, K eşit artı eksi 3 deseydim, yanlış cevabı bulmuş olacaktım.
+
+962
+01:18:36,392 --> 01:18:41,252
+Oysa ki, artı 3, benim cevabımı sağlamıyordu.
+
+963
+01:19:02,739 --> 01:19:16,420
+Tamam. Şimdi normalde klasik sınav olsaydı, klasik sınavda zaten çarpmayı olduğu gibi göstermek zorundaydın. Çünkü aksi takdirde puanın gidiyordu.
+
+964
+01:19:18,340 --> 01:19:30,059
+Testte tabii bunları göstermiyoruz ama kesin cevabı, aynen kesin cevabı bulmak için, bunu bir kontrol etmek için yapman lazım.
+
+965
+01:19:30,059 --> 01:19:39,719
+Çünkü burada gösterdiğim gibi, işte mesela iki tane cevap bulduk. Orada muhakkak sağlamıyorsa, iki cevap da orada olacaktır.
+
+966
+01:19:40,719 --> 01:19:48,059
+Yani şunu göreceksin cevap şıkkında, hani soruyu tam çözmeyen, direkt gidecek, artı eksi üçe atlayacak.
+
+967
+01:19:49,119 --> 01:19:52,059
+Öbür soruyu tam çözen de gidip buna işaretleyecek.
+
+968
+01:19:52,059 --> 01:20:02,880
+Bunun gibi testte biliyorsunuz çok yakın cevaplar konuyor ki özellikle öğrenci daha rahat şaşırsın diye.
+
+969
+01:20:07,283 --> 01:20:28,023
+Haftaya 29 Ekim'miş. Ben hani takvime hiç bakmamıştım. Bugün ayın kaçı olduğundan bile haberim yoktu. Böyle biraz evde oturup online olunca gerçekten insanın günü birbirine karışıyor. 29 Ekim'se ders yok tabii ki. Aynen dersimiz yok. Sonraki haftaya devam edeceğiz o zaman arkadaşlar.
+
+970
+01:20:28,023 --> 01:20:38,723
+Peki. Başka sorusu olan var mı? Sorunuz yoksa ben dersi bitireceğim.
+
+971
+01:20:39,783 --> 01:20:41,363
+Hocam ben bir şey sorabilir miyim?
+
+972
+01:20:41,463 --> 01:20:41,743
+Sor.
+
+973
+01:20:43,583 --> 01:20:54,983
+Dersi kitaptan takip ediyorum. Bu son kısımda problemlerin sırası bizde karışık. O PDF'le alakalı bir durum mu bizle alakalı mı yoksa son basımı falan mı?
+
+974
+01:20:54,983 --> 01:20:58,943
+Şunu mu diyorsun? Şunu mu diyorsun? Benim yaptığım soruları mı diyorsun?
+
+975
+01:20:59,223 --> 01:21:05,483
+Evet hocam. Son yaptığım soruları, alıştırma soruları bizde soru sıraları farklı bulmakta zorluk çekiyorum.
+
+976
+01:21:05,884 --> 01:21:14,983
+Hayır bak ben burada özellikle hani örnek olsun diye aralardan istediklerini seçtim seçtim koydum.
+
+977
+01:21:15,083 --> 01:21:16,103
+Anladım. Tamam hocam.
+
+978
+01:21:16,123 --> 01:21:22,823
+Hepsini koymadım yani. Hepsini koymadım. Buradan aralardan ben kendim seçtiklerimi buraya size aktarıyorum.
+
+979
+01:21:22,823 --> 01:21:26,063
+Tamam hocam ben ona alınıyor. Teşekkür ederim.
+
+980
+01:21:26,063 --> 01:21:28,903
+Yani karışık seçtim ben. Anlatabildim mi?
+
+981
+01:21:29,263 --> 01:21:33,943
+Yani orada teoremler mesela bazı sorular var. Onları siz zaten yapabilirsiniz dedim.
+
+982
+01:21:34,323 --> 01:21:38,323
+Ama mesela bu teoremleri hani kendi başınızı anlamanız daha zor.
+
+983
+01:21:38,683 --> 01:21:42,743
+Özellikle bütün teoremleri oradan çektim. Teoremleri anlatmaya çalıştım hep.
+
+984
+01:21:43,363 --> 01:21:44,403
+Tamam hocam teşekkür ederim.
+
+985
+01:21:44,403 --> 01:21:52,023
+Tamam. Hani buradaki rakamları da hani bu demeyin ki işte işte 15 yazıyor bu niye böyle oldu?
+
+986
+01:21:52,543 --> 01:21:58,844
+Hani aradaki ner nerde filan olmasın diye ben bunların rakamlarını değiştirdim. Soru rakamlarını.
+
+987
+01:21:59,223 --> 01:21:59,403
+Tamam.
+
+988
+01:21:59,403 --> 01:22:08,163
+Kitapta çözümlü örnekler de var. Oldukça fazla çözümlü örnek var. Çözümsüz örnek de var.
+
+989
+01:22:09,583 --> 01:22:17,643
+Devamsızlık için henüz bir bilgimiz yok ama sistem otomatik kayıt ediyormuş. Direni çıkanı otomatik kayıt ediyormuş.
+
+990
+01:22:27,091 --> 01:22:42,491
+Tamam mı arkadaşlar? Başka eğer ki sorunuz yok ise ben hani dersi bitireceğim. Haftaya o zaman görüşemeyeceğiz. Sonraki hafta devam ederiz.
+
+991
+01:22:54,292 --> 01:23:03,472
+İyi günler arkadaşlar. Ben de dersi dinlediğiniz için teşekkür ediyorum. Hepinize sağlıklı günler. Hoşçakalın.
