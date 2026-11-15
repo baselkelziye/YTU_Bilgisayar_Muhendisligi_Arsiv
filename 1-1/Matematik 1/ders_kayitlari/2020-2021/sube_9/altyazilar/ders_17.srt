@@ -1,0 +1,2075 @@
+1
+00:00:08,147 --> 00:00:12,827
+Merhaba arkadaşlar, nasılsınız? İyi misiniz? Sesim geliyor mu?
+
+2
+00:00:20,628 --> 00:00:22,108
+Sesim duyuluyor mu acaba?
+
+3
+00:00:22,487 --> 00:00:23,327
+Geliyor hocam.
+
+4
+00:00:24,948 --> 00:00:34,307
+Sınavınız nasıldı? Bana sormak istediğiniz bir şey var mı? Derse başlayacağım. Ders öncesi sormak istediğiniz bir şey varsa sizi dinleyebilirim.
+
+5
+00:00:37,188 --> 00:00:38,487
+Merhaba hocam, iyi günler.
+
+6
+00:00:38,868 --> 00:00:46,048
+İyi günler, merhabalar. Evet, galiba yok. Dersimize kaldığımız yerden devam edelim arkadaşlar.
+
+7
+00:00:46,868 --> 00:01:00,968
+Bugün ve yarın ehli çizimi, konkavlık bunları konuşacağız. Kabaca bir ehli çizmeyi öğreneceksiniz. Şöyle ben ekran paylaşımı yapayım yine sizlerle.
+
+8
+00:01:11,251 --> 00:01:13,091
+pdf gözüküyor mu arkadaşlar?
+
+9
+00:01:14,251 --> 00:01:15,231
+Gözüküyor değil mi?
+
+10
+00:01:15,471 --> 00:01:16,632
+Herkes görebiliyor mu?
+
+11
+00:01:17,352 --> 00:01:18,591
+Evet hocam gözüküyor.
+
+12
+00:01:19,091 --> 00:01:19,751
+Sekür ederim.
+
+13
+00:01:20,451 --> 00:01:23,831
+Şimdi arkadaşlar yine ilk önce bu soruyu çözeceğim.
+
+14
+00:01:24,308 --> 00:01:34,048
+Şöyle göstereyim arkadaşlar. Bundan sonra da konkavlık ne demek? Bir hatırlatmak hem de dikkat etmemiz gereken kısımlardan bahsedeceğim.
+
+15
+00:01:34,628 --> 00:01:49,147
+Bir fonksiyonun yerel ve mutlak ekstremum değerlerini bulunuz. Normalde mutlak çok fazla çıkmıyor ama bir fonksiyon belirli bir kapalı aralıktaysa mesela A ile B
+
+16
+00:01:49,620 --> 00:02:04,719
+kapalı aralıktaysa, bunun için mutlak maksimumlarını, minimumları soruluyor. Burada da aslında belirli bir kapalı aralıktı arkadaşlar. Bunu şöyle ekran paylaşımı yapıp size çözeceğim.
+
+17
+00:02:12,372 --> 00:02:16,112
+Evet, görüntü geldi değil mi? Tahta geldi arkadaşlar.
+
+18
+00:02:16,112 --> 00:02:19,432
+Şöyle diyelim, mesela örneğin,
+
+19
+00:02:27,699 --> 00:02:46,139
+örneğin fx, x kare kök içinde 16-x kare fonksiyonunun yerel ve mutlak ekstremumlarını istiyor. Ekstremumları nelerdir diye sorulmuş.
+
+20
+00:02:49,072 --> 00:03:02,172
+Ne yapıyorduk? Bunun kritik noktalarını buluyorduk. Yani 1. türevini 0 yapan ve 1. türevinin tanımsız olduğu noktaları buluyorduk. Daha sonra da tablo yapıyorduk. Ona göre hesaplıyorduk.
+
+21
+00:03:02,172 --> 00:03:16,252
+Ama ilk öncelikle bunu tanımsız yapan fonksiyonun tanım kümesine bakalım. Yani bu fonksiyon her sayı için şöyle çizsem, bir fonksiyon çizeceğim. Her yerde bir şekli var mı? Her noktada tanımlı mı?
+
+22
+00:03:17,072 --> 00:03:25,512
+eksi sonsuz, artı sonsuz arasında x y ekseninde acaba tanımlı mı bu fonksiyon? Ona bakacağım. Şimdi bakalım.
+
+23
+00:03:31,412 --> 00:03:33,472
+şöyle diyelim arkadaşlar.
+
+24
+00:03:34,392 --> 00:03:35,632
+Şimdi bakıyoruz.
+
+25
+00:03:35,892 --> 00:03:37,312
+fx fonksiyonu
+
+26
+00:03:37,312 --> 00:03:40,132
+x kare kök içinde
+
+27
+00:03:40,132 --> 00:03:41,772
+16-x kare
+
+28
+00:03:41,772 --> 00:03:44,492
+şöyle diyoruz. Bu her noktada tanımlı.
+
+29
+00:03:44,592 --> 00:03:47,052
+x bir sorun yok. Burası kare kök içinde.
+
+30
+00:03:47,652 --> 00:03:48,852
+Kare kökün içi
+
+31
+00:03:48,852 --> 00:03:50,992
+büyük eşit sıfır içi
+
+32
+00:03:51,443 --> 00:04:05,763
+tanımlı. E buna göre arkadaşlar, 16-x kare her x için fonksiyon tanımlı değil. Yani bunun içi, kare kökün içi, 0 ve 0'dan büyük değerler için tanımlı.
+
+33
+00:04:06,355 --> 00:04:25,395
+için tanımlı. E buna göre arkadaşlar ne gelir? 16 büyük eşit x kare. Yani x kare küçük eşit 16. Buradan ne gelir? x eksi 4 ile artı 4 arasında çıkar değil mi? Eşitlikte olduğu için bunun için tanımlı.
+
+34
+00:04:25,744 --> 00:04:30,144
+Yani, demek ki sadece bu değerleri fonksiyon alabiliyor.
+
+35
+00:04:31,144 --> 00:04:35,944
+Yani, f fonksiyonu eksi sonsuz artı sonsuz arasındaki değerleri alamaz.
+
+36
+00:04:36,464 --> 00:04:40,903
+f fonksiyonu eksi 4 ile 4 arasındaki değerleri alıyor.
+
+37
+00:04:42,036 --> 00:04:55,836
+E tamam, bunu bulduk. Ne yapıyorduk? Mutlak ya da yerel ekstremumları bulmak için f'in türevini alıyorduk. Beraber alalım. f üstü x'i alalım. Nedir arkadaşlar?
+
+38
+00:05:05,620 --> 00:05:15,500
+kare köklü ifadenin türevi. kare köklü ifadenin türevi, mesela kök x'in türevi 1 bölü 2 kök x, yukarıda da kök x'in içinin türevi gelir.
+
+39
+00:05:15,620 --> 00:05:25,000
+Burada da 1 bölü 2 kök 16 eksi x kare ve içinin türevi de yukarıya yazarsak eksi 2x'dir.
+
+40
+00:05:25,971 --> 00:05:30,771
+kök 16'ya eksi x karenin türevini de bu şekilde yazabiliriz.
+
+41
+00:05:30,911 --> 00:05:39,072
+Bunu düzenlediğimiz zaman arkadaşlar, şöyle f üstü x ne gelir arkadaşlar?
+
+42
+00:05:39,291 --> 00:05:40,991
+Şunlar gitti, ikiler gitti.
+
+43
+00:05:40,991 --> 00:05:52,051
+Pay değişitlerseniz 16 eksi x kare, şurada da eksi x kare, bölü, kare kök içinde 16 eksi x kare gelecek.
+
+44
+00:05:54,100 --> 00:06:00,980
+16-2x kare bölü kare kök içinde 16-x karedir.
+
+45
+00:06:01,600 --> 00:06:02,800
+Buraya kadar tamam mı?
+
+46
+00:06:03,360 --> 00:06:04,220
+Var mı bir sorun?
+
+47
+00:06:04,699 --> 00:06:05,759
+Yok değil mi arkadaşlar?
+
+48
+00:06:07,079 --> 00:06:10,899
+Şimdi arkadaşlar ne yapıyorduk?
+
+49
+00:06:10,899 --> 00:06:15,620
+Bu fonksiyonu, f üstünü, kritik noktaları nasıl buluyorduk?
+
+50
+00:06:15,939 --> 00:06:19,560
+Kritik noktalar, noktalar neydi?
+
+51
+00:06:20,244 --> 00:06:29,724
+f'ü üstü x'i sıfır yapan ve f'ü üstü x'i tanımsız olduğu noktalardır.
+
+52
+00:06:31,184 --> 00:06:32,644
+Olduğu noktalar.
+
+53
+00:06:33,704 --> 00:06:37,364
+Şimdi f'ü üstü x'i sıfır yapan noktalar.
+
+54
+00:06:37,364 --> 00:06:41,324
+f'ü üstü x'i sıfır yapan noktalar nedir?
+
+55
+00:06:41,864 --> 00:06:44,504
+Yani payı sıfır yapan noktalardır değil mi?
+
+56
+00:06:44,980 --> 00:07:06,920
+16-2x kare eşittir 0. Buradan da x kare eşittir 8. x eşittir artı eksi 2 kök 2'dir. Bu tamam mı arkadaşlar? 1. Bu noktalar. Yani 2 kök 2 nedir? 2'den büyük değil mi?
+
+57
+00:07:07,475 --> 00:07:13,115
+2'den büyük, 3'den küçük bir sayı, 2 ile 3 arasındaki bir sayı.
+
+58
+00:07:13,895 --> 00:07:18,755
+Şimdi, eksilisi de, eksi 2 ile eksi 3 arasındaki bir sayı.
+
+59
+00:07:18,755 --> 00:07:21,835
+Şimdi geldik, tanımsız yapan noktalar.
+
+60
+00:07:22,415 --> 00:07:25,055
+Buraya 0 yapan noktalar, değil mi?
+
+61
+00:07:25,795 --> 00:07:26,815
+Ne diyeceğiz?
+
+62
+00:07:27,815 --> 00:07:31,255
+f üstü x'i tanımsız yapan noktalar.
+
+63
+00:07:34,175 --> 00:07:35,055
+Noktalar.
+
+64
+00:07:35,923 --> 00:07:58,944
+Bunlar nelerdir arkadaşlar? f üstü eksi tanımsız yapan noktalar, paydayı sıfır yapan noktalardır. Yani 16-x kare eşittir sıfır, x kare eşittir 16, x eşittir artı eksi 4. Şimdi kaç tane nokta bulduk? Siz söyleyebilir misiniz? Burada iki tane nokta var.
+
+65
+00:07:59,379 --> 00:08:17,680
+Burada da iki tane nokta var. Ve hepsi arkadaşlar, bakın, şöyle göstereyim. Şu aralıkta mı? Eksi 4 bu aralıkta. 4 bu aralıkta. 2 kök 2 ve eksi 2 kök 2 de bu aralıktaki değerlerdir. Yani bunlar kritik noktadır.
+
+66
+00:08:18,324 --> 00:08:41,223
+şöyle, 4 tane kritik noktamız var. Demek ki ne yapıyoruz? 1. türevi alıyoruz. 1. türevin sıfır olduğu ve tanımsız olduğu noktalar bizim kritik noktalarımız. Ama bulduğumuz noktalar fonksiyonun tanım kümesinde olmak zorunda. Buraya kadar tamam mı? Anlaşılmayan bir nokta var mı?
+
+67
+00:08:41,223 --> 00:08:42,844
+Anlaşıldı hocam.
+
+68
+00:08:43,104 --> 00:08:44,783
+Tamam, şimdi şöyle yapıyoruz.
+
+69
+00:08:45,331 --> 00:08:47,451
+şimdi ben bu ekranı sileceğim.
+
+70
+00:08:48,091 --> 00:08:48,412
+şöyle
+
+71
+00:08:48,412 --> 00:08:52,152
+x'i yazacağım.
+
+72
+00:08:53,892 --> 00:08:55,251
+şimdi
+
+73
+00:08:55,251 --> 00:08:57,051
+fx
+
+74
+00:08:57,051 --> 00:08:58,111
+neydi?
+
+75
+00:08:58,951 --> 00:09:01,591
+x kare gök içinde 16x kare.
+
+76
+00:09:02,351 --> 00:09:03,932
+fonksiyonun tanım kümesi
+
+77
+00:09:03,932 --> 00:09:07,151
+nereden nereye kadardı?
+
+78
+00:09:07,751 --> 00:09:09,812
+eksi 4 ile 4 arasındaydı.
+
+79
+00:09:09,812 --> 00:09:11,731
+ve kritik noktalar
+
+80
+00:09:12,244 --> 00:09:15,403
+kritik noktalar nelerdi?
+
+81
+00:09:16,323 --> 00:09:18,223
+Kritik noktalar şöyle yazayım.
+
+82
+00:09:18,943 --> 00:09:23,663
+x'i 4, 4, 2 kök 2, x'i 2 kök 2 idi.
+
+83
+00:09:23,963 --> 00:09:24,783
+Bunları bulduk.
+
+84
+00:09:24,783 --> 00:09:30,163
+Şimdi kritik noktaları bulduktan sonra arkadaşlar bir tablo yapacaksınız.
+
+85
+00:09:30,563 --> 00:09:32,723
+Tabloya bakın seziyorum.
+
+86
+00:09:32,843 --> 00:09:33,864
+Burası çok önemli.
+
+87
+00:09:34,663 --> 00:09:35,004
+Şöyle.
+
+88
+00:09:37,423 --> 00:09:38,983
+Buraya x'leri yazıyoruz.
+
+89
+00:09:39,539 --> 00:09:43,019
+Bu x'ler fonksiyonun tanımlı olduğu x'ler.
+
+90
+00:09:43,939 --> 00:09:48,099
+Eksi sonsuzdan artı sonsuza kadar bütün değerler var mı f kümesinde?
+
+91
+00:09:49,239 --> 00:09:51,299
+Yok. Sadece neresi var?
+
+92
+00:09:52,459 --> 00:09:55,059
+Eksi 4 ile 4 arasındaki değerler var.
+
+93
+00:09:55,059 --> 00:09:59,659
+Demek ki en başta eksi 4 var. Şöyle bundan öncesi var mı?
+
+94
+00:10:00,539 --> 00:10:00,879
+Yok.
+
+95
+00:10:01,491 --> 00:10:28,951
+ve en sonunda da 4 var. Bundan sonra var mı? Sayılar yok. Çünkü şöyle hayal edin. Fonksiyon burada, x'i 4 ile artı 4 arasında şöyle bir şekil. Bundan sonrası yok. 4'ten sonrası. x'i 4'ten sonrası da yok. Buraya kadar tamam mı? x'i 4'ün öncesi ve 4'ün sonrası yok. Şimdi bunu yazdık. E peki?
+
+96
+00:10:29,423 --> 00:10:45,423
+f üstü x'te hangi noktaları bulduk? 1, eksi 4, eksi 2 kök 2, sırayla yazalım. Eksi 4'ü yazdık. Sonra eksi 2 kök 2, sonra sırayla yazdık.
+
+97
+00:10:47,423 --> 00:10:55,823
+Şimdi buralarda ne arkadaşlar? Bunlar f üstünün bir kökü ya da tanımsız olduğu noktalar. Tek kat mı hepsi? Tek kat.
+
+98
+00:10:56,148 --> 00:11:20,888
+değil mi? Şöyle. Şimdi f üstü fonksiyonu nasıldı? Ben yazayım şuraya. f üstü x şöyleydi. 16-2x kare bölü. Karakök içinde 16-x kareydi. Şimdi arkadaşlar burada bir değer aldığınız zaman şöyle de yazabilirsiniz yukarı. 2 parantezinde şöyle i.
+
+99
+00:11:21,620 --> 00:11:37,279
+8, 2 kök 2, eksi, x, 2 kök 2, artı x şeklinde de yazabilirsiniz. Böyle de yazıp yapabilirsiniz. Şimdi buradan bir değer aldığınız zaman, buraya koyduğunuz zaman, mesela 3'ü aldınız.
+
+100
+00:11:37,812 --> 00:12:05,751
+koydunuz. Mesela 3 koyun şuradaki 3 değerine. Ne gelecek? Şurası artı, burası artı, şurası eksi, aşağısı artı, eksi gelecek. İşaretimiz eksi. Şimdi şunu sileyim. Bunu işaret bulmak için yazdım. Sonra şuradaki işaret köke çarptı artı, köke çarptı eksi. Ya da teker teker de bakabilirsiniz. Aradaki bir değeri alıp. Şimdi arkadaşlar,
+
+101
+00:12:05,812 --> 00:12:24,211
+f üstünün pozitif olması demek ne demek? Bu ne demek? f artan demek. f üstünün negatif olması demek ne demek? Bakın yalnız şunu şöyle yazayım. f fonksiyonu artan.
+
+102
+00:12:24,563 --> 00:12:28,063
+Bu ne demek? f fonksiyonu azalan demek.
+
+103
+00:12:28,863 --> 00:12:32,983
+Şimdi bir aralıkta f üstü pozitifse şöyle diyoruz.
+
+104
+00:12:33,063 --> 00:12:36,423
+Bu aralıkta pardon negatif azalmış.
+
+105
+00:12:36,543 --> 00:12:37,543
+Şöyle yapalım hatta.
+
+106
+00:12:37,903 --> 00:12:38,843
+Şöyle çizelim.
+
+107
+00:12:39,863 --> 00:12:42,043
+Şurayı şöyle düzeltenim.
+
+108
+00:12:42,643 --> 00:12:43,883
+Şöyle diyoruz arkadaşlar.
+
+109
+00:12:44,063 --> 00:12:45,503
+Bakın f fonksiyonu.
+
+110
+00:12:45,812 --> 00:12:47,552
+Şöyle devam ettirelim.
+
+111
+00:12:48,072 --> 00:12:54,072
+Şimdi bu aralıkta f fonksiyonu f üstü negatifse bu aralıkta azalan demek.
+
+112
+00:12:54,251 --> 00:12:56,312
+Bakın başlangıcı burası azaldı.
+
+113
+00:12:56,312 --> 00:12:59,192
+Sonra bu aralıkta ne yapmış?
+
+114
+00:12:59,572 --> 00:13:00,091
+Artmış.
+
+115
+00:13:01,331 --> 00:13:26,032
+Bakın artıysa artmış. Bu aralıkta ne yaptı? Bakın azaldı. Buradan devam ettik. Şimdi bakın burada kaldık. Buradan artıyorsa mesela şöyle ok geldi. Burada kaldık. Buradan sonra artıyor. Artırdık. Mesela buradan sonra azaldı. Azalttık. Mesela arttı. Bu şekilde gösteriyoruz.
+
+116
+00:13:28,371 --> 00:13:50,111
+azaldı, arttı, azaldı. Demek ki bu aralıkta azalanmış. Bu, bu demek. Bu aralıkta artanmış, bu aralıkta azalanmış. Eksiler, f üstünün eksi olması azalan, artı olması artan demek arkadaşlar. Bakın arkadaşlar, şu şekil nasıl oluştu? Şöyle.
+
+117
+00:13:51,508 --> 00:14:08,268
+Bu nokta nedir? Tam şu nokta. Yerel en düşük noktası değil mi? Şurası x eşittir. Tam şu noktada. Eksi 2 kök 2'de nedir? Arkadaşlar, yerel minimum noktadır.
+
+118
+00:14:09,556 --> 00:14:26,376
+Mesela burada nasıl bir şekil oluştu? Hatta şurayı şöyle biraz silelim. Bakın, eksiden artıya geçti. Ya da bakın, şu noktada eksiden artıya geçti. Ya da artıdan eksiye geçti. Değil mi? Tam artıymış, eksi olmuş.
+
+119
+00:14:26,799 --> 00:14:50,720
+işaret değiştirdiği, birinci türevin işaret değiştirdiği noktalar, yerel maksimum ya da minimum noktalardır. Bakın burası en aşağıdaydı, yerel minimum nokta. Bakın burası nedir? Tepede, ne diyeceksiniz? Bu nokta x eşittir. 2x2 yerel maksimum noktadır.
+
+120
+00:14:51,187 --> 00:15:07,327
+Şimdi bakın arkadaşlar, şimdi uç noktalarda şurası, en uçta en tepede değil mi arkadaşlar? Şurada, eksi 4'te. En uçta en tepede, o zaman burası x'e uç noktalarda maksimum minimumdu, mutlak maksimum minimumdu hatırlayın.
+
+121
+00:15:07,327 --> 00:15:19,187
+O zaman x eşittir, eksi 4'te, genel maksimum. Mesela buraya geldiniz, bu nokta nedir? 4'te ise ne olmuş en sonunda? Uçta, en aşı.
+
+122
+00:15:19,187 --> 00:15:27,368
+en altta kalmış. Burası x eşittir 4. Yerel minimum noktadır. Buraya kadar tamam mı?
+
+123
+00:15:27,923 --> 00:15:51,923
+Evet, şimdi o zaman yerel maksimum minimumu bulduk. Ama bize ne diyor? Mutlak maksimum minimum varsa onları da bulun. Bu bulduğumuz yerel maksimum değerlerinin, mesela maksimumların en büyüğü mutlak maksimum, minimumların en küçüğü de mutlak minimum olacak. Nasıl bulacağız? Şimdi f-4'e baktık. f-4 değeri...
+
+124
+00:15:52,755 --> 00:16:15,235
+hesapladığınız zaman 0 çıkacak. Ben de tahtada çok yer olmadığı için hesaplayamıyorum. x 2x2 değerine baktınız. x 8 çıktı. x 2x2 değerine baktınız. 8 çıktı. Şuradaki değeri 8. x 2x2'deki değeri 8.
+
+125
+00:16:15,956 --> 00:16:23,355
+eksi 4'teki değeri 0 ve f4'teki değerine baktınız kaç çıktı? 0 çıktı
+
+126
+00:16:23,355 --> 00:16:31,556
+o zaman ne diyorsunuz şimdi ben neyi arıyorum? maksimumlara bakıyorum maksimumlar hangisi? 1 şu
+
+127
+00:16:31,556 --> 00:16:43,556
+ve maksimum bu hangisinin değeri daha büyük? baktığınız zaman burada 2 kök 2'deki maksimum değeri 8
+
+128
+00:16:44,340 --> 00:17:07,720
+x kare artı 4x, maksimum değeri 0. Hangisi daha büyük? 8 daha büyük. O zaman ne diyeceksiniz? Burası mutlak maksimumdur. Şimdi minimumlara bakalım. Bir de minimumlar için farklı bir renk kullanalım. Mesela yeşili alalım. Bu minimum, şu minimum.
+
+129
+00:17:08,468 --> 00:17:28,048
+ve de şu minimum. Değil mi arkadaşlar? E şimdi hangisi daha küçük? Burası eksi 8, burası 0. O zaman ne diyeceksiniz? Hangisi daha küçük? Bu daha küçük. Eksi 8 daha küçük. O zaman buna ne diyeceksiniz? Mutlak minimumdur.
+
+130
+00:17:29,044 --> 00:17:53,524
+Anlaşıldı mı arkadaşlar? Bize değerlerini sormuştuk. Mutlak minimum değeri eksi 8'dir. Mutlak maksimum değeri 8'dir. Ve yerel maksimum değeri mesela 0 ve buradaki de 0'dır. Evet. Var mı sormak istediğiniz bir nokta burada? Evet.
+
+131
+00:17:54,740 --> 00:18:13,899
+Şimdi bunu anladıysanız, hatırladıysanız şöyle pdf'ye geçeceğim. Burada da daha şey olarak yazılmış şu kısmı azalan, artan, azalan ona göre değerlerini yazıp yapacağız.
+
+132
+00:18:13,899 --> 00:18:15,180
+Şimdi arkadaşlar.
+
+133
+00:18:16,627 --> 00:18:27,908
+Bunu satır satır okumayacağım. Şöyle size özetleyeceğim. Konkallık. Konkallık ne demek? Bunun hakkında konuşalım. Şöyle göstereyim sizlere.
+
+134
+00:18:32,019 --> 00:18:34,360
+Evet, konu tablık.
+
+135
+00:18:40,596 --> 00:18:44,516
+fonkallık şu demek arkadaşlar. Şimdi 1, şunu unutmayacaksınız.
+
+136
+00:18:45,256 --> 00:18:50,776
+Bir f fonksiyonu vardı. Bu f fonksiyonun f üstü türevini aldınız.
+
+137
+00:18:51,776 --> 00:18:57,195
+f üstü türevi pozitif veya f üstü türevi negatif olabiliyordu.
+
+138
+00:18:57,195 --> 00:19:04,496
+ya da f üstü türevi sıfır ya da f üstü türevi tanımsız olabiliyordu.
+
+139
+00:19:04,816 --> 00:19:29,476
+Hatırladık mı? f üstü türevinin pozitif olması demek ne demek? Artan. f üstü türevinin negatif olması demek ne demek? Fonksiyon azalan. Yani f artan. Burada da f azalan. f üstü türevinin sıfır ya da tanımsız olması demek ne demekti? Bunlar kritik noktalardı.
+
+140
+00:19:30,000 --> 00:19:37,740
+ve bunlardan ne geliyordu? Bunlardan yerel, maksimum, minimum noktalar geliyordu.
+
+141
+00:19:39,079 --> 00:19:40,039
+Tamam mı arkadaşlar?
+
+142
+00:19:40,940 --> 00:19:43,519
+Şimdi aynı şekilde f için
+
+143
+00:19:43,519 --> 00:19:47,920
+şimdi bir f2 üstü türevi
+
+144
+00:19:47,920 --> 00:19:49,319
+şöyle yapalım
+
+145
+00:19:49,319 --> 00:19:54,960
+f2 üstü türevi pozitif olabilir, negatif olabilir.
+
+146
+00:19:55,720 --> 00:19:56,880
+Eğer pozitifse
+
+147
+00:19:57,428 --> 00:19:58,768
+yukarı konkav.
+
+148
+00:20:02,208 --> 00:20:04,908
+Negatifse de aşağı konkav.
+
+149
+00:20:05,808 --> 00:20:08,068
+Şimdi bakın buradan, sesim geliyor mu?
+
+150
+00:20:08,308 --> 00:20:09,788
+Bir kişi...
+
+151
+00:20:09,788 --> 00:20:11,888
+Geliyor hocam.
+
+152
+00:20:12,408 --> 00:20:13,528
+Aynı buradaki gibi.
+
+153
+00:20:13,728 --> 00:20:17,548
+Bakın, burada f üstü büyük, küçük.
+
+154
+00:20:18,008 --> 00:20:19,468
+Bir de o zaman burada ne olacak?
+
+155
+00:20:24,847 --> 00:20:38,508
+tanımsız olduğu noktalar gelecek. Değil mi arkadaşlar? Şimdi biz ilk öncelikle demek ki pozitif olursa yukarı konka, negatif olursa ikinci türev aşağı konka. Ama ne? Yine f.
+
+156
+00:20:38,996 --> 00:20:48,756
+f, yine burada da f. Bunları buluyorsunuz ama f yukarı konkab, f aşağı konkab. Yukarı konkab demek ne demek? Göstereyim.
+
+157
+00:20:49,376 --> 00:20:56,876
+f iki üstü pozitif mesela. O şöyle demek mesela. Şöyle bakın. Burada yukarı konkab.
+
+158
+00:20:58,556 --> 00:21:05,396
+Bakın. Şöyle. Burada ne arkadaşlar? Yukarı konkab. Bu yukarı konkab.
+
+159
+00:21:06,036 --> 00:21:29,855
+yani şöyle tanım olarak size de verdim. Herhangi bir t-t aldığınız zaman yukarıda kalıyor. Şimdi aşağı konkav nasıl mesela? Bu nedir arkadaşlar? Aşağı konkav. Aşağı konkav. Şöyle yapayım. Bakın bu da aşağı konkav. Aşağı konkav.
+
+160
+00:21:30,548 --> 00:21:49,048
+o zaman bu şekillenin ikisinde, mesela şurada f2 üstü pozitif, burada da f2 üstü pozitif, şurada ise f2 üstü, şöyle yapalım, f2 üstü negatif, burada da f2 üstü negatiftir.
+
+161
+00:21:49,048 --> 00:21:54,388
+Yukarı konkavlık ve aşağı konkavlık bu şekilde söyleyebilirim.
+
+162
+00:21:56,819 --> 00:22:14,859
+Bunu anladıysanız, yani demek ki 1, f fonksiyonunun 2. türevinin pozitif olduğu ve negatif olduğu yerler bunlar yukarı konkav, f yukarı konkav ya da f aşağı konkav olduğu yerlerdi.
+
+163
+00:22:24,660 --> 00:22:45,620
+f azalan olduğu yerler. Buraya kadar tamam mı? Şimdi mesela bir tane örnek yapayım ben size. Sonra da notlardan özet olarak okuyalım. Örnek yaparsak daha iyi anlarsınız. Mesela örneğin y eşittir x küp eğrisi.
+
+164
+00:22:47,188 --> 00:23:08,268
+eğrisini inceleyelim. Şimdi y eşittir x küp ya da ne deriz? fx eşittir x küp eğrisi dedik. Şimdi bunun birinci türevinin pozitif olduğu yerler artan, negatif olduğu yerler azalan. Şöyle yapıyoruz değil mi? Birinci türevini aldık. f üstü x. Ne geldi? 3x kare.
+
+165
+00:23:08,723 --> 00:23:13,644
+Peki, nerede işaret değiştiriyor? Yine sıfır yapan ve tanımsız olduğu yerlere bakıyoruz.
+
+166
+00:23:14,303 --> 00:23:22,104
+3x kare eşittir sıfır, x kare eşittir sıfır, x ne çıktı? Sıfır.
+
+167
+00:23:22,844 --> 00:23:26,144
+Peki, kaç tane x var? 2 tane çift kat.
+
+168
+00:23:27,155 --> 00:23:47,775
+çift kat. Ben çift katları şöyle yıldız koyuyorum. Bakın şimdi tablo yaparsak x'ler eksi sonsuzdan artı sonsuza. x için bir kısıtlama var mı? Yok değil mi? Eksi sonsuzdan artı sonsuza kadar gidiyor. Bir tane sıfır bulduk. Hangisi için? F üstü için.
+
+169
+00:23:48,627 --> 00:24:12,107
+Peki bu sıfır çift kat mı? Çift kat. Peki sıfırdan büyük değerler için f üstü x, bakın burada f üstü x. Nedir işareti? Pozitiftir. Burası nedir? Pozitiftir. Köke çarpı pozitif. O zaman ne dersiniz? f üstü pozitif, f fonksiyonu burada nedir? Artan.
+
+170
+00:24:13,011 --> 00:24:20,071
+Sonra peki burada nedir? f fonksiyonu artan şeklindedir. İkisinde de artan.
+
+171
+00:24:20,071 --> 00:24:23,751
+Şimdi demek ki fonksiyon şöyle diyoruz.
+
+172
+00:24:24,211 --> 00:24:34,691
+Eksi sonsuz sıfır ve sıfır sonsuz aralığında artandır.
+
+173
+00:24:36,531 --> 00:24:38,571
+Peki, konkavlığını inceleyelim.
+
+174
+00:24:39,211 --> 00:24:44,531
+Şimdi birinci, şöyle söyleyeyim, birinci tablodan neyi bulduk?
+
+175
+00:24:45,271 --> 00:24:47,011
+Artan azalanlığını bulduk.
+
+176
+00:24:47,011 --> 00:24:49,271
+Bakın burada, şöyle, şurayı sileyim.
+
+177
+00:24:49,615 --> 00:25:03,915
+Şimdi ikinci tabloyu yapacağız. f2 üstü. Bakın arkadaşlar, fx bu ise, f2 üstü x nedir? f üstü x bu ise, 3x karenin bir daha türevini aldınız, 6x.
+
+178
+00:25:09,203 --> 00:25:17,783
+6x ise bunun yine işaret değiştirdiği yerleri bulmak için sıfır eşitledik ya da tanımsız olduğu noktalara bakacağız.
+
+179
+00:25:18,403 --> 00:25:31,343
+x eşittir sıfır. x eşittir sıfır da şöyle bakın sıfır da değişiyor. Kaç tane var? Bir tane. Tek kat. Şöyle diyelim. x'leri yazdık.
+
+180
+00:25:32,019 --> 00:25:58,640
+Nereden nereye? Eksi sonsuzdan artı sonsuza bir tane sıfır var. Şöyle dedik. Burası ne? f2 üstü. f2 üstünün işaretine bakalım. Bakın f2 üstü fonksiyon olarak şurada var. Şimdi arkadaşlar, f2 üstü sıfırdan büyük değerler için 6x nasıl alır? Pozitif. Sonra burada ise
+
+181
+00:25:59,087 --> 00:26:24,668
+negatif, köke çarptı negatif. O zaman şöyle deriz. f2 üstünde artı demek ne demek? O aralıkta f yukarı konkav demek. Yukarı konkav. f2 üstünde eksi demek ne demek? Aşağı konkav demek. O zaman ne diyeceğiz? Sıfırla sonsuz arasında yukarı konkav.
+
+182
+00:26:25,076 --> 00:26:51,995
+ve eksi sonsuz da sıfır arasında da aşağı konkaptır. Buraya kadar anlaşıldı mı? Anlaşıldı herhalde. Şimdi mesela şöyle göstereyim. Hatta bunun şöyle size şeklini de göstereyim. Bakın y eşittir x küp eğrisi. Bildiğiniz bir eğri. Şöyle kısaca şuraya çizeyim. Hatta kırmızıyla çizelim.
+
+183
+00:26:52,500 --> 00:26:57,700
+xy koordinat sisteminde y eşittir x küp. Şöyle.
+
+184
+00:26:59,780 --> 00:27:03,000
+y eşittir x küp. Bakın burası sıfır.
+
+185
+00:27:03,940 --> 00:27:08,100
+Sıfırdan büyük değerler için, bakın, yukarı konkaf.
+
+186
+00:27:10,483 --> 00:27:27,644
+sıfırdan küçük değerler için aşağı konkav. Hakikaten de bakın sıfırdan küçük değerler için aşağı konkav, sıfırdan büyük değerler için de yukarı konkavdır. Var mı bir sorunuz burada? Yok galiba.
+
+187
+00:27:28,531 --> 00:27:39,911
+Hocam, bir şey soracağım. Sorularda mesela bu x diagramın da yukarı aşağı olduğunu göstersek yetiyor mu? Yoksa koordinat düzleminde de mi? Bir daha gösterelim kon kabloklarını.
+
+188
+00:27:39,911 --> 00:27:50,571
+Şimdi eğri isterse eğri, yoksa eğri istemiyorsa böyle bazen de sadece aralık olarak göstermeniz istenebilir. Tamam mı arkadaşlar?
+
+189
+00:27:53,395 --> 00:28:10,995
+Şöyle göstereyim. Bakın, konkavlık için ne dedik? İkinci türevi pozitifse yukarı konkav. Bir aralıkta. İkinci türevi negatifse aşağı konkav. Mesela buralarda yukarı konkav. Değil mi? Buralarda da aşağıya bakıyor. Aşağı konkav dedik.
+
+190
+00:28:10,995 --> 00:28:19,995
+Hatta işte burada yukarı konkavlığı yazdım. Aşağı konkavlığı yazdım. Bakın arkadaşlar y eşittir x küp.
+
+191
+00:28:20,660 --> 00:28:45,640
+bu yukarı konkavdır. y eşittir x kare. Bakın burada bu şekilde kapalı olarak yazdım. Ben size çözüm olarak açık halini yazdım. Bunu da yapalım. y eşittir x karenin yukarı konkav, aşağı konkav olduğu yerleri bulalım. Şöyle diyelim. Örneğin y eşittir x kare.
+
+192
+00:28:46,163 --> 00:28:56,183
+Bunu bulalım. Neye bakacağız yukarı konkavlık, aşağı konkavlık için? 2. türevine. fx eşittir x kare ya da y ile devam edelim.
+
+193
+00:28:56,183 --> 00:29:08,403
+y2 üstünün, şöyle diyelim, şöyle y ile devam edelim. y2 üstünün, y2 üstü pozitif ise yukarı konkav.
+
+194
+00:29:09,683 --> 00:29:25,743
+y2 üstü negatif ise aşağı konkav olacak. Şimdi bakalım. Şimdi yx kare ise y üstü nedir arkadaşlar? 2x'dir. y2 üstü nedir? 2'dir.
+
+195
+00:29:26,683 --> 00:29:35,663
+Şimdi y2 üstü 2 çıktı arkadaşlar. y2 üstü o zaman her zaman ne arkadaşlar? x'e bağlı mı?
+
+196
+00:29:36,339 --> 00:29:57,219
+hepsi için y2 üstü nedir? Pozitiftir. Dolayısıyla her zaman için ne olacak? Yukarı konkav olacak. O zaman şöyle diyelim arkadaşlar. Bakın şeklini bildiğiniz bir şekil. xy koordinatlarında y eşittir x kare şöyle.
+
+197
+00:30:00,000 --> 00:30:12,399
+O zaman bakıyoruz arkadaşlar. Hakikaten de bütün x'ler için, bakın bütün x değerleri için hep nedir arkadaşlar? Yukarı konka. Bu taraf yukarı konka.
+
+198
+00:30:12,959 --> 00:30:23,419
+Tabi bunların şekilleri var. Artan ve azalan olmasına göre. Ya böyle ya böyle oluyor. Ya böyle ya böyle oluyor. Onu biraz sonra konuşacağız.
+
+199
+00:30:24,147 --> 00:30:40,487
+Evet, bunu da anladıysanız, şimdi şöyle söyleyeyim, yukarı konkallık bu. Şimdi bir de büküm noktasından kısaca bir 5 dakika bahsedip ara vereceğim. Bahsedeyim değil mi? Ondan sonra mı ara vereyim? Olur mu arkadaşlar?
+
+200
+00:30:40,487 --> 00:30:41,487
+Tabii ki de hocam.
+
+201
+00:30:41,687 --> 00:30:43,167
+Ben o yüzden bahsedeyim.
+
+202
+00:30:43,867 --> 00:30:47,687
+Şimdi büküm noktası, şimdi arkadaşlar şöyle düşüneceksiniz.
+
+203
+00:30:48,307 --> 00:30:48,627
+F
+
+204
+00:30:49,683 --> 00:31:04,783
+neydi? f'in pozitif olduğu, f'in negatif olduğu, bakın birinci türevinin f üstünün tanımsız, pardon f üstünün sıfır ve f üstünün tanımsız olduğu noktalar vardı.
+
+205
+00:31:05,644 --> 00:31:10,364
+Şimdi bunlardan ne buluyorduk? Bu neydi? f üstü pozitifse siz söyleyin.
+
+206
+00:31:10,364 --> 00:31:11,903
+Evet.
+
+207
+00:31:12,980 --> 00:31:13,980
+artı.
+
+208
+00:31:13,980 --> 00:31:16,420
+artı. f üstü negatifse?
+
+209
+00:31:16,420 --> 00:31:18,420
+azalan.
+
+210
+00:31:18,420 --> 00:31:32,980
+bunlar ise neydi? kritik oklama ve şöyle diyordu işaret değiştirdiği zaman f üstünün ya da sıfır olduğu ya da f üstünün tanımsız olduğu yerin tam tabloda şöyle
+
+211
+00:31:33,203 --> 00:31:45,364
+artıken eksi ya da eksiyken bir noktanın sağ tarafı eksi, sol tarafı artı ya da sağ tarafı artı, sol tarafı eksi ise işaret değiştirdiği yerler neydi?
+
+212
+00:31:46,104 --> 00:31:47,443
+Yerel maksimum minimum.
+
+213
+00:31:47,463 --> 00:31:50,723
+Evet, yerel maksimum minimum oldu.
+
+214
+00:31:51,135 --> 00:32:01,596
+Demek ki bu noktalarda şunlar kritik noktalar ve bazıları veya hepsi, bilemiyoruz, noktalar yerel maksimum minimum.
+
+215
+00:32:01,816 --> 00:32:04,855
+Şimdi bakın, f ne yaptık?
+
+216
+00:32:05,415 --> 00:32:10,395
+İkinci türevi, pozitif olanlar, negatif olanlar.
+
+217
+00:32:11,135 --> 00:32:12,415
+Şimdi bunlar ne dedik?
+
+218
+00:32:13,696 --> 00:32:15,756
+Şöyle, şöyle yazalım.
+
+219
+00:32:16,884 --> 00:32:37,364
+bu yukarı konkav, bu ise aşağı konkav'dı. O zaman ne bekleyeceksiniz? Burada da f2 üstünün eşittir sıfır olduğu ve f2 üstünün tanımsız olduğu noktalar olacak.
+
+220
+00:32:40,372 --> 00:32:50,912
+Şimdi bunlar da arkadaşlar kritik nokta denilmiyor bunlara. Bu noktalardan da işte işareti f2 üstüden mesela noktaları elde ettiniz.
+
+221
+00:32:51,372 --> 00:33:00,732
+Eksiyken artı, artıyken eksi işaret değiştiriyorsa bir noktanın işte yine buradan bulduğunuz noktalara. Ben bunlara aday nokta diyorum.
+
+222
+00:33:01,952 --> 00:33:06,832
+Bunlar da arkadaşlar işte mesela burada şöyle göstereyim.
+
+223
+00:33:07,167 --> 00:33:29,788
+x iken artı oldu şu noktada, a noktasında ya da b noktasında artı iken eksi oldu. O zaman bunlar yerel maksimum minimum nokta oluyordu değil mi? Burada da eksi iken artı oldu mesela şurada c noktasında ya da d noktasında artı iken eksi oldu. Bunları da biz büküm noktası diyoruz.
+
+224
+00:33:31,508 --> 00:33:35,788
+Tamam mı arkadaşlar? Demek ki büküm noktasını nasıl bulacağız?
+
+225
+00:33:36,567 --> 00:33:42,628
+f2 üstünü sıfır yapan, f2 üstünü tanımsız yapan noktaları bulacağız.
+
+226
+00:33:43,168 --> 00:33:46,348
+Noktalara aynı buradaki kritik noktalar gibi.
+
+227
+00:33:46,348 --> 00:33:49,948
+Ama bu sefer nerede? f2 üstünde.
+
+228
+00:33:50,628 --> 00:33:52,628
+Sonra yine tablo çizeceğiz.
+
+229
+00:33:52,848 --> 00:33:54,468
+Mesela bulduk c'de.
+
+230
+00:33:54,788 --> 00:33:57,388
+Mesela eksi artı, eksi.
+
+231
+00:33:57,807 --> 00:33:59,248
+D'nin sağında ve solunda.
+
+232
+00:33:59,508 --> 00:34:17,507
+değiştirmiş, o zaman büküm noktası diyeceğiz. x'i artı olmuş. Ama burası ne? Artık f2 üstü. c'nin sağında ve solunda değişmiş büküm noktası olacak diyeceğiz. Anlaşıldı mı arkadaşlar buraya kadar? Anlaşıldı hocam. Evet, şimdi demek ki...
+
+233
+00:34:17,940 --> 00:34:24,400
+dikkatli etmemiz gereken gelen maksimum minimumları 1. türevden buluyoruz.
+
+234
+00:34:24,900 --> 00:34:28,100
+Büküm noktalarını 2. türevden buluyoruz.
+
+235
+00:34:28,180 --> 00:34:30,900
+F2 üstü bunlar 2. türevden bulunuyor.
+
+236
+00:34:31,460 --> 00:34:38,960
+Ve artan azalanlı 1. türevden, yukarı aşağı konkavlığını da 2. türevden.
+
+237
+00:34:39,260 --> 00:34:40,160
+Tamam mı arkadaşlar?
+
+238
+00:34:40,700 --> 00:34:44,420
+Şimdi mesela şunu da bahsedeyim, ara verelim.
+
+239
+00:34:45,300 --> 00:34:47,240
+şöyle göstereyim arkadaşlar.
+
+240
+00:34:47,500 --> 00:34:47,800
+bakın
+
+241
+00:34:48,884 --> 00:34:56,203
+Bütün noktaları bir t-et doğrusuna sahip olduğu ve konkavlığının değiştiği.
+
+242
+00:34:56,523 --> 00:34:58,423
+Konkavlığının değiştiği ne demek?
+
+243
+00:34:58,923 --> 00:35:06,203
+Artı iken, yukarı konkavken, mesela bir tarafta aşağı konkavken, bir noktada yukarı konkav oluyor.
+
+244
+00:35:06,703 --> 00:35:12,563
+Ya da yukarı konkavken aşağı konkav oluyor ve t-et doğrusunun olması.
+
+245
+00:35:13,083 --> 00:35:15,423
+Ya da kısaca şunu bilmeseniz de olur.
+
+246
+00:35:16,128 --> 00:35:25,807
+ikinci türevini sıfır yapan ve ikinci türevinin mevcut olmadığı nokta, mesela c noktası, büküm noktası olabilir.
+
+247
+00:35:26,367 --> 00:35:33,268
+Ama ne olacak? Aynı zamanda bir tarafı eksi, bir tarafı artı ya da bir tarafı artı iken diğer tarafı eksi olacak.
+
+248
+00:35:33,688 --> 00:35:39,288
+Yani konkallığı değişecek. Yani t doğrusuna sahip olacak. O da şudur.
+
+249
+00:35:44,128 --> 00:35:50,148
+sıfır ya da mevcut olmaması demektir. Ve işaret değiştirecek arkadaşlar. Tamam mı?
+
+250
+00:35:50,947 --> 00:35:56,628
+Şimdi örnek yapayım mı arkadaşlar? Şu iki örneği yapıp ondan sonra ara versem olur mu arkadaşlar?
+
+251
+00:35:56,728 --> 00:35:58,427
+Dur hocam daha 40 dakikalık var.
+
+252
+00:35:58,527 --> 00:36:07,007
+Tamam. Şöyle diyelim bakın. Örnek üzerinde de daha iyi anlarsınız. Her şey sanki birinci türevde yaptığınız gibi.
+
+253
+00:36:07,007 --> 00:36:08,387
+Şöyle.
+
+254
+00:36:10,260 --> 00:36:37,160
+Ekran paylaşımı yapacağım. Ekran geldi mi? Gelmedi bende. Evet, geldi değil mi şimdi? Şöyle düşünün, bakın bir tane büküm noktası bulalım. Diyorum ki, şöyle, soru şu. Örneğin, şununla yazalım. y eşittir x üzeri 4 eğrisinin büküm noktası var mı? Büküm noktası. Tamam.
+
+255
+00:36:37,619 --> 00:36:42,879
+Şimdi, şöyle diyoruz, büküm noktası ve konkallık ikinci türevle alakalı.
+
+256
+00:36:43,199 --> 00:36:50,039
+Birinci türevini alalım, 4x3, sonra ikinci türevini alalım, 12x kare.
+
+257
+00:36:50,619 --> 00:36:56,679
+İkinci türevi sıfır yapan ve türevinin tanımsız olduğu noktalar bizim aday noktalarımız.
+
+258
+00:36:56,679 --> 00:37:02,379
+Sıfırını yapan nokta var, değil mi? Ne gelir? x kare eşittir sıfır.
+
+259
+00:37:02,659 --> 00:37:05,619
+Yani ikinci türevi sıfır yapan noktayı bulabiliriz.
+
+260
+00:37:05,619 --> 00:37:23,559
+bulduk burada. Ne oldu? x kare eşittir 0, x eşittir 0. Ama kaç tane x var burada? Nasıl katlı kök? 2 katlı. Çift katlı. Çift katlı. Dikkat ediyoruz. Şimdi bakın, tabloyu çiziyorum. Aynı birinci türevler için yaptığımız gibi. x.
+
+261
+00:37:24,307 --> 00:37:47,568
+tanımsız olduğu bir nokta var mı? Fonksiyonun. Burayı fonksiyonun noktalarına göre. Yok, bütün x üzeri 4, bütün sayıları yazabiliriz. Neyi bulduk? Noktamız aday nokta diyorum ben buna. Aday nokta. Aynı kritik nokta gibi bir aday nokta bulduk. Sıfır. Ama burada kaç tane? Çift kat. Hatta yıldız koyayım çift katlı.
+
+262
+00:37:48,000 --> 00:37:53,340
+Bu hangi fonksiyon için biz bunu bulduk? Bakın bu fonksiyonumuz şu.
+
+263
+00:37:54,180 --> 00:37:56,940
+y2 üstü fonksiyon için bulduk.
+
+264
+00:37:57,280 --> 00:37:57,980
+Şimdi bakıyoruz.
+
+265
+00:37:58,400 --> 00:38:01,660
+Sıfırdan büyük değerler için fonksiyonun işareti ne?
+
+266
+00:38:02,039 --> 00:38:04,260
+12x kare. 12 pozitif.
+
+267
+00:38:04,620 --> 00:38:06,840
+Pozitif değerler verdik. Yine pozitif.
+
+268
+00:38:07,315 --> 00:38:10,235
+sıfırdan küçük değerler içinde pozitif.
+
+269
+00:38:10,755 --> 00:38:11,875
+Şimdi ne diyoruz?
+
+270
+00:38:12,275 --> 00:38:15,975
+y2 üstü fonksiyonu da bunları buldum.
+
+271
+00:38:16,055 --> 00:38:16,735
+Bu ne demek?
+
+272
+00:38:16,875 --> 00:38:18,455
+Artı y2 üstünde.
+
+273
+00:38:18,455 --> 00:38:23,355
+Bu aralıkta fonksiyon yukarı konkab demek.
+
+274
+00:38:25,755 --> 00:38:29,295
+Şimdi sonra burada da artı y fonksiyonu.
+
+275
+00:38:29,455 --> 00:38:31,295
+Yukarı konkab.
+
+276
+00:38:31,635 --> 00:38:40,675
+E burada da yukarı konkar. İşaret değiştirdi mi arkadaşlar fonksiyon? Yani artı iken eksi oldu mu? Ya da eksiyken artı? Olmuyor.
+
+277
+00:38:40,675 --> 00:38:40,936
+Hayır.
+
+278
+00:38:41,576 --> 00:38:51,416
+Dolayısıyla fonksiyon, büküm noktası yoktur. Tamam mı arkadaşlar? Büküm noktası yoktur. Bakın şekli de çizeyim ben size.
+
+279
+00:38:52,355 --> 00:38:58,715
+x, y koordinat sisteminde y eşittir x üzeri 4'ün şekli şöyledir.
+
+280
+00:38:59,699 --> 00:39:12,819
+y eşittir. x üzeri 4. Bakın gerçekten de arkadaşlar, şöyle, şurada yukarı konkal, burada da yukarı konkal. Yani sıfır şurası.
+
+281
+00:39:13,231 --> 00:39:34,791
+0 noktası. 0'ın sağ tarafı yukarı konkav, sol tarafı da yukarı konkav. Yani bir tarafı yukarı konkavken bir tarafının aşağı konkav olması lazım. Yani işaretinin değişmesi lazım. Büküm noktası yok. Büküm noktası yoktur. 1. Bunu söyledik.
+
+282
+00:39:35,284 --> 00:39:42,744
+Şimdi bir örnek daha yapalım. Sonra ara verelim. Örneğin bir örnek daha. Anlaşıldı değil mi arkadaşlar?
+
+283
+00:39:43,584 --> 00:39:43,784
+Evet.
+
+284
+00:39:45,064 --> 00:39:53,224
+Şimdi bakın bir tane daha örnek yapıyorum. y eşittir x üzeri 1 bölü 3. E'lisinin büküm noktası var mı?
+
+285
+00:39:53,864 --> 00:39:57,064
+Şimdi ne diyorum? Büküm noktası için ikinci türev lazım.
+
+286
+00:40:00,000 --> 00:40:05,380
+1 bölü 3 başı düştü. x üzeri eksi 1 çıkartırsanız eksi 2 bölü 3 olur.
+
+287
+00:40:06,068 --> 00:40:08,248
+Ama bize ne lazım? İkinci türev.
+
+288
+00:40:08,608 --> 00:40:10,608
+y2 üstü ne olur?
+
+289
+00:40:11,008 --> 00:40:16,468
+eksi 2 bölü 9, x üzeri eksi 1 azalttınız, eksi 5 bölü 3 oldu.
+
+290
+00:40:17,148 --> 00:40:18,108
+Şimdi ne yapıyoruz?
+
+291
+00:40:18,268 --> 00:40:21,348
+Büküm noktası için yine aday noktalar belirliyoruz.
+
+292
+00:40:21,348 --> 00:40:28,688
+y2 üstünü sıfır yapan ve y2 üstünü tanımsız yapan noktalar.
+
+293
+00:40:29,235 --> 00:40:32,516
+Şimdi bakıyoruz. Bu nedir arkadaşlar?
+
+294
+00:40:32,835 --> 00:40:38,876
+Eksi 2 bölü 9 çarpı budur değil mi? Aslında 1 bölü x üzeri 5 bölü 3.
+
+295
+00:40:39,356 --> 00:40:40,775
+Sıfır yapan nokta var mı?
+
+296
+00:40:41,523 --> 00:40:59,384
+yok değil mi? Payı sıfır eşitlediğimiz zaman sıfır yapan noktaları buluruz. Payı sıfır eşitlediğimiz zaman tanımsız yapan noktaları buluruz. Pay kısmında x yok ki. O zaman sadece y2 üstünü, ne yapan y2 üstünü,
+
+297
+00:40:59,987 --> 00:41:02,067
+Tanımsız yapan değerler var.
+
+298
+00:41:02,268 --> 00:41:03,748
+Tanımsız yapan değerler.
+
+299
+00:41:04,027 --> 00:41:04,748
+O da nedir?
+
+300
+00:41:05,107 --> 00:41:06,567
+Paydanın sıfır olması.
+
+301
+00:41:07,188 --> 00:41:10,807
+x üzeri 5 bölü 3, 9 var ama yazmıyorum.
+
+302
+00:41:11,307 --> 00:41:12,807
+Bu eşittir sıfır.
+
+303
+00:41:13,128 --> 00:41:15,887
+Ya da 9 çarpı x üzeri 5 bölü 3.
+
+304
+00:41:16,407 --> 00:41:19,607
+Buradan x üzeri 5 bölü 3 eşittir sıfır.
+
+305
+00:41:20,087 --> 00:41:20,847
+Buradan ne gelir?
+
+306
+00:41:21,327 --> 00:41:23,467
+x eşittir sıfır olur.
+
+307
+00:41:23,467 --> 00:41:25,307
+Tek bir nokta bulduk.
+
+308
+00:41:26,099 --> 00:41:29,099
+şimdi bakıyoruz bakın tablomu çiziyorum
+
+309
+00:41:29,396 --> 00:41:56,936
+şöyle x'e y2 üstü. Şimdi bakıyorum. Şimdi buradaki x'in yerine fonksiyonda bir kısıtlama var mı? x'in tanımsız olduğu bir nokta var mı? Yok. Bakın hep şu grafiğin üst kısmındaki noktalar, şuraya yazacağınız noktalar, hep fonksiyonun tanım aralığında olmayan bir nokta var mı? Yok. O zaman eksi sonsuzdan artı sonsuza kadar değerler.
+
+310
+00:41:57,396 --> 00:42:00,496
+Ben bu tanımlı olduğu aralıktan hangi noktayı aldım?
+
+311
+00:42:00,716 --> 00:42:06,556
+Sıfırı tek kat ve y2 üstü de şurada bir kök olarak buldum.
+
+312
+00:42:07,356 --> 00:42:13,196
+Şimdi y2 üstü fonksiyonu, bakın burada, şurada, y2 üstü.
+
+313
+00:42:13,196 --> 00:42:20,936
+x'in sıfırdan büyük olan değerler için, bakın mesela 1 koyun, burası eksi, 1 koydunuz, 1 geldi.
+
+314
+00:42:21,436 --> 00:42:23,135
+Nedir işareti?
+
+315
+00:42:23,603 --> 00:42:41,063
+eksidir. O zaman köke çarptı. Ne olacak? İşareti artı olacak. Ne çıktı burada? Y fonksiyonu. Bakın buraya y yazıyorum. Bu aralıkta nedir? Yukarı konkav.
+
+316
+00:42:41,876 --> 00:42:53,196
+Çünkü neden? y2 üstü pozitifmiş bu aralıkta. Değil mi? Bu aralıkta aşağı konkav. Neden? Çünkü bakın negatifmiş.
+
+317
+00:42:53,652 --> 00:43:15,492
+O zaman şimdi bir tarafı artı, bir tarafı eksi. İşaret değiştirdi mi arkadaşlar? Şurası eksi. İşaret değiştirdi mi? Değiştirdi. O zaman x eşittir ya da eksi artı olacak. Eksiden artıya geçer. x eşittir sıfır noktası bükü noktasıdır.
+
+318
+00:43:16,788 --> 00:43:24,347
+Şeklini de çizelim. Bakın şöyle gelir. y eşittir. x üzeri 1 bölü 3 arkadaşlar. Şöyledir.
+
+319
+00:43:27,208 --> 00:43:42,028
+x, y koordinat sisteminde şöyle bir şekli var. Şöyle. Bakın sıfırdan büyük değerler için, x büyük sıfır için neydi? Aşağı konkal.
+
+320
+00:43:42,579 --> 00:44:06,440
+değil mi? Böyle bulduk. Bakın x sıfırdan büyük değerler için aşağı konkav. Sıfırdan küçük değerler için yukarı konkavdır. Yukarı konkav. Bakın gerçekten sıfırdan büyük değerler için aşağı konkav. Sıfırdan küçük değerler için bakın şöyle. Nedir? Yukarı konkavdır.
+
+321
+00:44:07,155 --> 00:44:17,295
+Ve tam sıfır noktası bir tarafı aşağı konkav, bir tarafı yukarı konkav olduğu için sıfır noktası bükü noktasıdır.
+
+322
+00:44:19,295 --> 00:44:23,976
+Evet. Anlaşıldı mı arkadaşlar buraya kadar?
+
+323
+00:44:24,275 --> 00:44:25,755
+Evet hocam.
+
+324
+00:44:26,835 --> 00:44:41,715
+Şimdi bir ara verelim. Olur mu arkadaşlar? Saat 47 geçiyor, 50 geçiyor diyelim. 15 dakika ara vereceğiz. Sizler de şöyle saat 55 geçe buluşalım. Olur mu arkadaşlar?
+
+325
+00:44:42,255 --> 00:44:50,035
+Çan uygulanacak mı diye sormuşsunuz. Arkadaşlar, her sene notlarınız çan sistemine göre uygulanıyor.
+
+326
+00:44:54,835 --> 00:45:06,095
+kararlar ama tabii her an değişebilir. İkimizde bir final olacak. Bir puanla nasıl kaldın [öğrenci]? Puanlar belli değil ki.
+
+327
+00:45:06,095 --> 00:45:15,915
+Orada yazanlar yanlış mı? Nasıl? Ortalama konusunda. Ortalama, her sene ortalama değişir. Bazen öğrenci...
+
+328
+00:45:17,364 --> 00:45:19,144
+Şöyle, ben bir söyleyeyim.
+
+329
+00:45:19,744 --> 00:45:31,463
+1. vizenizin, eğer sistem böyle işlerse, 1. vizenizin %30'u, 2. vizenizin %30'u ve finalinizin %40'a alınacak puanlarınızın.
+
+330
+00:45:31,463 --> 00:45:35,144
+Sonra sizin puanınız mesela eskiden şöyleydi.
+
+331
+00:45:35,584 --> 00:45:38,344
+40'ın altında olanlar kalıyordu.
+
+332
+00:45:39,188 --> 00:46:07,188
+Online sistemde bir vize bir final yapıldı. O zaman daha farklı bir. Mesela denildi ki 50'nin altında notlar çok yüksekti. 50'nin altında olanlar kalacak. Şimdi sizin birinci vizenizde oldunuz. İkinci vizenizi de olacaksınız. Finalinizi de olacaksınız. Sonra ne yapılacak arkadaşlar? Bütün işte kaç bin? 4 bin kişi mi var? Bütün 4 bin kişinin, 5 bin kişinin ortalığı.
+
+333
+00:46:07,188 --> 00:46:12,887
+ortalaması alınacak. Mesela denilecek ki, daha bu belli değil, 40'ın altı kalıyor.
+
+334
+00:46:13,684 --> 00:46:24,104
+Tamam mı arkadaşlar? Şu anda birinci vizenizde kalmak yok veya geçen senenin ortalamasına göre ortalama hesaplamayın. Tamam mı arkadaşlar?
+
+335
+00:46:24,944 --> 00:46:35,084
+İkinci vize tahminen ne zaman olur bilmiyorum. Yani onu sorarım, size söylerim arkadaşlar. Evet, açıklayıcı oldu mu [öğrenci]?
+
+336
+00:46:36,947 --> 00:46:37,447
+Evet.
+
+337
+00:46:37,707 --> 00:46:38,967
+Evet hocam, tamamdır.
+
+338
+00:46:39,207 --> 00:46:56,647
+Tamam, yani siz geçen sene, ondan önceki senenin notlarına göre puanlarınızı hesaplamayın. Ama 2. vize en az 3 hafta sonradır diye düşünüyorum. Yani 2 hafta içinde olacağını zannetmiyorum ama bilemiyorum.
+
+339
+00:46:56,647 --> 00:47:04,907
+Tabii ki çan sistemi, yani şöyle, bilgisayardan birebir aynısını yapmıyoruz. Geçen senelerde öyle.
+
+340
+00:47:04,947 --> 00:47:27,547
+ama şimdi nasıl olur? Bütün öğrencilerin notları hesaplanıyor. Bütün öğrencinin, 5000 öğrencinin işte şu aralıkta şu kadar öğrenci puanı aldı, şu aralıkta şu kadar öğrenci. Ona göre ÇAN sisteminin ne? Bütün hocalar karar veriyor arkadaşlar. Öyle söyleyeyim. Tamam mı? ÇAN sistemi.
+
+341
+00:47:28,148 --> 00:47:52,968
+Belli bir sınır var mı? İşte [öğrenci] dediğim gibi belli bir sınır yok. Şöyle, bütün sınavları olacaksınız, 2 vize, 1 finali, ondan sonra herkesin puanı hesaplanacak sınırlar sizin aldığınız puanlara göre oluşuyor. Her senenin sınırı farklı oluyor. Tamam mı? Açıklayıcı oldu mu?
+
+342
+00:47:53,907 --> 00:47:55,347
+Tamam hocam, teşekkür ederim.
+
+343
+00:47:55,347 --> 00:47:55,927
+Bir miyim?
+
+344
+00:47:56,327 --> 00:48:00,467
+Şöyle bir dakika, hocam sınav sorularını çözme şansınız var mı?
+
+345
+00:48:00,927 --> 00:48:04,167
+Şimdi ben cevaplarını bir dahaki ders belki paylaşırım.
+
+346
+00:48:04,627 --> 00:48:07,407
+Bilmiyorum, onun hakkında bir açıklama yapılmadı.
+
+347
+00:48:08,107 --> 00:48:12,027
+Açıklama yapılırsa tabii ki sınav sorularını çözebilirim.
+
+348
+00:48:12,287 --> 00:48:14,387
+Evet, birisi konuşmak istemişti.
+
+349
+00:48:15,107 --> 00:48:18,947
+İkinci vizelerin yerine ödev yapsak olur mu?
+
+350
+00:48:19,307 --> 00:48:21,227
+Yani öyle bir sistem oluşabilir mi?
+
+351
+00:48:21,907 --> 00:48:37,667
+Ben bireysel olarak mesela matematik bölümüne bir ders veriyorsam onu ödev şeklinde yapabiliyorum ama sizin yani servis derslerinde çok fazla sınıf olduğu için kararları bizler veremiyoruz [öğrenci].
+
+352
+00:48:37,667 --> 00:48:49,907
+Biz bölüm mesela kesinlikle sınav olacak. Genelde servis derslerinde kararlar bölüm tarafından alınıyor. Bizler bütün hocalar yani bu dersi veren...
+
+353
+00:48:49,907 --> 00:48:52,667
+Bütün hocalarda o kararlara uymak zorundayız.
+
+354
+00:48:52,747 --> 00:48:57,067
+Yani biz bireysel karar veremediğimiz için sizlere ödev veremeyiz.
+
+355
+00:48:57,067 --> 00:49:00,667
+Yani ne deniliyor? 2 vize 1 final olacak denildi.
+
+356
+00:49:00,787 --> 00:49:14,087
+Şu anda sistemde farklı gözükebilir ama değişmediği sürece şu anda matematik bölümünün aldığı karar doğrultusunda ileride değişir mi bilmiyorum ama bazen değişebiliyor.
+
+357
+00:49:14,247 --> 00:49:17,907
+Değişmediği sürece 2 vize 1 final olacaksınız.
+
+358
+00:49:17,907 --> 00:49:21,407
+bunu ödev şeklinde biz alamayız. Tamam mı [öğrenci]?
+
+359
+00:49:21,840 --> 00:49:23,280
+Hocam bir şey sorabilir miyim?
+
+360
+00:49:23,460 --> 00:49:30,540
+Olması çok mantıklı da. Şimdi online sistem olunca bazen sınavlarda sistemde sorunlar çıkıyor ve çok stresli geçiyor.
+
+361
+00:49:30,640 --> 00:49:36,600
+Hani bizim bir hafta stresliyken diğer ikinci vizede de stresli geçmesi biraz göz korkutucu diyeyim.
+
+362
+00:49:36,600 --> 00:49:44,760
+Evet, ben sizi anlıyorum. Ben kendi sınıflarımı geçen dönem online'de hepsine ödev verdim. Sizleri anlıyorum.
+
+363
+00:49:49,840 --> 00:50:00,000
+online'ın kendine göre ayrı bir stresi var. Maalesef bunun için yapabileceğim hiçbir şey yok [öğrenci]. Sizi anlıyorum. Yani sizler de...
+
+364
+00:50:00,000 --> 00:50:11,060
+hani bu stresi yaşamayalım 2. vizede ödev olsun diye düşünüyorsunuz ama gerçekten bu konuda yapabileceğim bir şey yok. Sizleri anlıyorum ama onu söyleyeyim.
+
+365
+00:50:11,200 --> 00:50:19,820
+Hocam hiç de motive edici değil bu şey sistemi, sınav sistemi yani ders konusunda zaten motive olmakta zorlanıyoruz sürekli evde kaldığımız için.
+
+366
+00:50:19,820 --> 00:50:28,000
+Evet [öğrenci] seni de anlıyorum ve haklısınız arkadaşlar. Evdesiniz, online yani ben sizleri göremiyorum derse.
+
+367
+00:50:28,000 --> 00:50:55,960
+sanatırken, dikkatinizin dağılmaması, hani böyle odaklanmak, hepsi ayrı bir tabii ki sizler için zor bir şey. Ama inanın bu noktada çünkü yapabileceğimiz bir şey yok. Çünkü 4 bin, 5 bin öğrenci giriyor bu sınava ve dolayısıyla kararları yani sınıf bazında değil de tüm öğrenciler için, tüm sınıflar için aynı alınıyor ve aynı şekilde.
+
+368
+00:50:56,000 --> 00:51:23,900
+uygulanıyor. Yani bireysel karar veremiyoruz. [öğrenci] seni de anlıyorum. Haklısınız arkadaşlar ama maalesef bu konularda benim bireysel olarak zaten olsaydı inanın farklı sınavlar yapardık ama bu öyle bir şey değil. Bir anda biz online olmadığı zaman da mesela hafta sonu yapıyorduk ama öğrenciler tabii okuldaydı, soru soruyorlardı, önlerine bir kağıt geliyordu.
+
+369
+00:51:24,000 --> 00:51:31,200
+onu dolduruyorlardı. Sınavı yapabildiklerini yapıp çıkıyorlardı. Ama maalesef online'da bu şekilde işliyor arkadaşlar.
+
+370
+00:51:31,860 --> 00:51:33,160
+Hocam bir şey sorabilir miyim?
+
+371
+00:51:33,280 --> 00:51:34,180
+Tabii ki [öğrenci].
+
+372
+00:51:35,740 --> 00:51:37,000
+Hocam şimdi...
+
+373
+00:51:37,000 --> 00:51:39,280
+Sesin gitti.
+
+374
+00:51:41,588 --> 00:51:47,428
+Pardon hocam. Bizim şimdi birinci vizeden dersten kalıp kalmadığımız anlaşılmaz değil mi?
+
+375
+00:51:47,608 --> 00:52:00,668
+Hayır, hayır. Birinci vizeniz çok düşük geçti. Sıfır aldınız. Hiç önemli değil. İkinci vizenizden 80 alabilirsiniz, 70 alabilirsiniz, 60 alabilirsiniz, mesela 30 alabilirsiniz.
+
+376
+00:52:09,588 --> 00:52:16,568
+Mesela aldığınız puanın eğer sistem değişmezse %30'unu alacaksınız hesaplarken.
+
+377
+00:52:17,188 --> 00:52:21,428
+İkinci vizenizden de aldığınız puanın %30'unu alacaksınız.
+
+378
+00:52:22,068 --> 00:52:28,108
+Finalden de aldığınız puanın %40'ını alacaksınız ve bunları toplayacaksınız.
+
+379
+00:52:28,108 --> 00:52:30,588
+O sizin ortalamanız.
+
+380
+00:52:31,092 --> 00:52:46,231
+O puana göre çan eğrisi oluşturulacak. Mesela ilk vizeden 10 aldınız, ikinci vizeden 40 aldınız, finalden 80 aldınız. Anlatabiliyor muyum?
+
+381
+00:52:46,692 --> 00:52:48,852
+Anladım hocam, teşekkür ederim, anlaşıldı.
+
+382
+00:52:48,852 --> 00:52:53,852
+Tamam mı? Ona göre, eğer finalde de kaldıysanız...
+
+383
+00:52:54,195 --> 00:53:00,635
+Sonra, birinci vizeniz, ikinci vizeniz ve bütünleme notunuz hesaplanacak.
+
+384
+00:53:01,695 --> 00:53:09,735
+Yani birinci vizenin %30'u, ikinci vizenin %30'u ve bütünlemenin %40'ını alacaksınız.
+
+385
+00:53:10,155 --> 00:53:13,395
+Ona göre geçip geçmediğinizi anlayacaksınız.
+
+386
+00:53:14,235 --> 00:53:14,395
+Evet.
+
+387
+00:53:14,395 --> 00:53:15,775
+[öğrenci] Hocam, teşekkür ederim.
+
+388
+00:53:16,995 --> 00:53:18,475
+Sor bakalım [öğrenci].
+
+389
+00:53:19,731 --> 00:53:31,051
+Bakmayın da. Örneğin, ortalamayı biz 50 yaptık diyelim dönem sonunda. Ancak çan sisteminde ortalama 60 görünüyor.
+
+390
+00:53:32,711 --> 00:53:42,591
+Çan sisteminde, hayır, ortalama değil. Ortalama öğrencilerin ortalaması. Ama biz şöyle diyoruz mesela, sen 50 değilsin, tamam mı?
+
+391
+00:53:42,867 --> 00:53:53,288
+Biz diyeceğiz ki, mesela 40'ın altında olan öğrenciler ortalama değil bu. Bakın ortalama değil. 40'ın altındaki öğrenciler kalıyor.
+
+392
+00:53:54,324 --> 00:54:21,864
+40'ın altındaki öğrenciler kalacak. Sen 50 aldın. Ve şöyle, normalde şöyleydi. Harf notuna dökülecek. İşte mesela diyeceğiz ki 40 ile 45 arası C'de olsun. İşte 40 ile 50 arası C, C olsun. Ve onun üstü işte C, B olsun. Harflendireceğiz. Sonra diyeceğiz ki bakın bütünlemede şöyle bir koşul var.
+
+393
+00:54:22,324 --> 00:54:28,504
+bütün nemeğe kimler giremiyor? Harf notu cc üstü olanlar giremiyordu.
+
+394
+00:54:29,523 --> 00:54:53,804
+Ama online'da nasıl olur bilemiyorum. Yani şu anda ben size işleyen, şu ana kadar işleyiş anlatıyorum. Bütünlemeye de herkes giremiyor. Zayıf olan öğrenciler, zayıf olan demeyeyim de notları düşük olan öğrenciler girebiliyor ve harf notu cc üstü olanlar bütünlemeye giremiyordu.
+
+395
+00:54:54,603 --> 00:54:57,403
+O nasıl bir şey? Pardon lafınızı kestim.
+
+396
+00:54:57,523 --> 00:55:11,523
+Fakat bu konusu şöyle, mesela şöyle yapacaksınız. Sen mesela 55 aldın. Ortalaman 55. Şöyle bir aralık vereceğiz biz size. Mesela 46 kalıyor.
+
+397
+00:55:12,019 --> 00:55:28,059
+40 ile 45 arasındaki notları olanlara harf notu. Yani mesela %80 arasındaki öğrencilerin harf notu AA. 80 ile 70 arasındakilerin A- yani BA. Biz böyle aralıklar belirliyoruz.
+
+398
+00:55:28,059 --> 00:55:40,019
+Yani öğrencilerin aldığı puanlara göre sizin bütün notlarınız bu şekilde olacak. AA, BA, BB, CB, CC ve o şekilde...
+
+399
+00:55:40,019 --> 00:55:59,359
+Bu şekilde yani herkesin aldığı notun puan aralığı oluşuyor. Tamam mı arkadaşlar? Ve diyoruz ki işte şu puandakilerde kalıyor. O çant sisteminde belli olacak. Anlatabildim mi bilmiyorum. Evet. Var mı sorusu olan?
+
+400
+00:56:02,195 --> 00:56:03,476
+Hocam teşekkür ederim.
+
+401
+00:56:03,476 --> 00:56:05,096
+Rica ederim.
+
+402
+00:56:05,715 --> 00:56:09,456
+Bütünleme hangi sınav yerine mi geçiyor?
+
+403
+00:56:10,596 --> 00:56:26,635
+Yani şöyle, finalden, yani sizin iki vize, bir filaninizin toplam ortalamasından eğer geçmeye puanınız yetmiyorsa bir daha hak veriyor üniversite ve bütünlemeye giriyorsunuz.
+
+404
+00:56:26,635 --> 00:56:27,756
+O zaman
+
+405
+00:56:28,244 --> 00:56:34,344
+iki vizeniz ve bütünleme notunuz yeniden hesaplanıyor. Tamam mı arkadaş?
+
+406
+00:56:34,344 --> 00:56:36,244
+Yani dört sınavın ortalaması oluyor.
+
+407
+00:56:38,604 --> 00:56:43,304
+Finaliniz yerine bu sefer bütünleme notunuz yeniden hesaplanıyor.
+
+408
+00:56:43,664 --> 00:56:49,344
+Şimdi siz finale gireceksiniz. İki vizenizi ve bir finalinizi hesaplayacağız.
+
+409
+00:56:49,876 --> 00:56:55,776
+Siz oldu ki finaliniz çok kötü geçti. Vizelerinizin de notu iyi değil. Kaldınız.
+
+410
+00:56:56,367 --> 00:57:02,768
+kaldınız 2 hafta, yaklaşık 2 hafta sonra yeniden sınava giriyorsunuz ya da 1 hafta.
+
+411
+00:57:02,847 --> 00:57:10,347
+Bütünleme sınavına bu sefer o 2 vizeniz ve bütünlemeniz yeniden alınıp puanınız hesaplanıyor.
+
+412
+00:57:10,748 --> 00:57:11,748
+4 sınavın değil.
+
+413
+00:57:12,167 --> 00:57:14,967
+Anladım. Bir daha finale girmiş gibi bir şey alıyoruz.
+
+414
+00:57:15,067 --> 00:57:18,327
+Evet, bir daha finale, ikinci final gibi düşünün.
+
+415
+00:57:18,708 --> 00:57:19,708
+Tamam mı arkadaşlar?
+
+416
+00:57:19,907 --> 00:57:20,047
+Evet.
+
+417
+00:57:20,500 --> 00:57:23,980
+Bu bütünleme sadece final için oluyor, vizeler için olmuyor.
+
+418
+00:57:23,980 --> 00:57:34,699
+Hayır olmuyor. Eğer vizeye giremediyseniz, bir aksilik olduysa, onun için de arkadaşlar, ikinci vizede de bu başınıza gelebilir.
+
+419
+00:57:35,380 --> 00:57:43,980
+Bölümünüze mail atıyor. Tabii bizleri bilgilendiriyorsunuz ama bölümünüze, durumunuzu anlatan, iletişime geçiyorsunuz, mail atıyorsunuz.
+
+420
+00:57:48,500 --> 00:58:16,500
+sizlerin bölümlerinden bize geliyor. Diyor ki mesela şu numaralı işte şu öğrenci şu sebepten dolayı girememiştir sınava. Onlar kabul ederse matematik bölümüne isminizi gönderiyor arkadaşlar. Ve bizim matematik bölümüne gelen listeler doğrultusunda yani birinci vizenin ve ikinci vizenin sadece mazereti var. Giremeyen öğrenciler için mazeresini.
+
+421
+00:58:16,500 --> 00:58:24,059
+sınavı var ama finalde başarısız olursanız ikinci bir final gibi derseniz o da bütünlemedir.
+
+422
+00:58:25,099 --> 00:58:25,380
+Evet.
+
+423
+00:58:27,039 --> 00:58:29,480
+Hocam mesela kaldık diyelim.
+
+424
+00:58:29,639 --> 00:58:34,800
+İkinci dönem Mat 1, Mat 2 birlikte mi alıyoruz yoksa sadece Mat 1 mi alıyorsunuz?
+
+425
+00:58:35,443 --> 00:58:48,103
+Arkadaşlar, Mat 1'den kalıp Mat 2'den geçen öğrenciler biliyorum. İkinci dönem Mat 2 açılacak. Mat 2'yi alıyorsunuz. Sonra yine dönemi gelince de Mat 1'i yeniden alabiliyorsunuz.
+
+426
+00:58:48,223 --> 00:58:51,623
+Bunlar şey değil mi? Koşulu dersler değil mi hocam? Mat 1'i bitirmeden Mat 2.
+
+427
+00:58:51,623 --> 00:59:03,283
+Belki alabiliyorsunuzdur. Geçen öğrenciler var da belki ikinci alışlarında geçmişlerdi. Ama alabiliyorsanız alabiliyorsunuzdur. Yine sorarım.
+
+428
+00:59:03,443 --> 00:59:22,699
+tam olarak. Yani onun hakkında tam bir açıklama yapamam artık. Siz az önce dediniz ya, o yüzden anlayamadım. Hani şeyi bitirmeden. [öğrenci], ben sorarım şimdi. Mat 1'i geçmeden Mat 2'yi alabiliyor musunuz? Onu sorarım, derste söylerim. Tamam mı? Tamam.
+
+429
+00:59:23,347 --> 00:59:33,087
+Yani şöyle, yabancı diliği yarı yılda bitirip gelen öğrenciler oluyor, Mat 2'ye giriyor, Mat 2'yi veriyor o dönemde. Mat 1'i almadan Mat 2'yi alabiliyor mesela.
+
+430
+00:59:33,844 --> 00:59:41,604
+anlatabiliyor muyum? Ama mat 1'den kalıp mat 2'ye alabiliyor musunuz? Onu sorarım. Aradan sonra söylerim sizlere.
+
+431
+00:59:42,564 --> 00:59:50,184
+Birinci dönem dersleri her senenin birinci dönemi açılıyorsa ikinci sınıfın birinci dönemi alabilirsiniz. Eğer ikinci dönem açılmazsa evet.
+
+432
+00:59:50,184 --> 00:59:54,244
+Arkadaşınız bir şey yazmış. Evet. Var mı başka sorusu olan?
+
+433
+00:59:55,483 --> 00:59:56,864
+Hocam bir şey soracağım da ben de.
+
+434
+00:59:57,084 --> 00:59:58,443
+Tabii [öğrenci]'in de sor.
+
+435
+00:59:58,503 --> 00:59:59,844
+Başka bir dersle alakalı da.
+
+436
+01:00:00,000 --> 01:00:01,240
+Gene bilmediğim için soracağım.
+
+437
+01:00:01,539 --> 01:00:01,800
+Evet.
+
+438
+01:00:02,660 --> 01:00:08,160
+Ben bir sınava giremedim ve elimde bir mazeretim de yok yani. Benim suçum tamamen.
+
+439
+01:00:08,660 --> 01:00:08,960
+Evet.
+
+440
+01:00:10,260 --> 01:00:14,519
+Bu konuda ne yapabilirim? Şey yapabilir miyim yani? Ne olacak durum mu onu sormak için?
+
+441
+01:00:14,519 --> 01:00:20,780
+Bunu da söyleyeyim. Şimdi online olduğu için mazeret sınavları var. Bölümünle konuşmalısın.
+
+442
+01:00:21,331 --> 01:00:42,231
+Yani bir sınava girmediniz, bir sınavın da aksaklık olduğu vs. bunu bölümünüzle konuşun ya da hocanızla ama bölümünüzde konuştuktan sonra onlar sizi yönlendirir. Tamam mı? Servis dersleri için bölümünüzle konuşun. Yine bunun için de bölümünle konuşabilirsin.
+
+443
+01:00:42,931 --> 01:00:45,631
+Ondan sonra yönlendiririm [öğrenci]'i.
+
+444
+01:00:45,991 --> 01:00:47,291
+Tamamdır O'yem teşekkür ederim.
+
+445
+01:00:47,571 --> 01:00:51,811
+Rica ederim. Başka sorusu olan, bilmiyorum açıklayıcı oldu mu arkadaşlar.
+
+446
+01:00:53,251 --> 01:00:53,491
+Evet.
+
+447
+01:00:54,420 --> 01:01:05,279
+Şimdi, hocam, ben bir şey merak etmiştim ama genel ortalama hesaplanırken bizim şimdi Çan'a göre olan harf notumuz mu belirleyici oluyor?
+
+448
+01:01:05,899 --> 01:01:07,000
+Yoksa o aldığımız noktada.
+
+449
+01:01:07,000 --> 01:01:12,139
+Hayır, hayır. Sizin harf notunuz değil, harf notlarınız şöyle.
+
+450
+01:01:12,920 --> 01:01:20,219
+Senin mesela birinci vizenin %30'u, ikinci vizenin %30'u, finalinin %40'a alınacak.
+
+451
+01:01:21,076 --> 01:01:22,755
+ve bir puan oluşacak.
+
+452
+01:01:24,115 --> 01:01:27,655
+Hocam şey matematik için değil, genel yani ağırlıklı ortalama için.
+
+453
+01:01:27,655 --> 01:01:30,495
+Şimdi ağırlıklı ortalama.
+
+454
+01:01:30,995 --> 01:01:33,035
+Hocam cc gözüküyor.
+
+455
+01:01:33,695 --> 01:01:34,596
+Neyi gidiyor söyle?
+
+456
+01:01:35,556 --> 01:01:39,975
+Ağırlıklı ortalama hesaplanırken nasıl oluyor onu merak etmiştim.
+
+457
+01:01:40,056 --> 01:01:44,655
+Ya şimdi her koca farklı hesaplayabilir, onun için bir şey söyleyemem.
+
+458
+01:01:45,835 --> 01:01:46,195
+Anladım.
+
+459
+01:01:46,708 --> 01:01:49,868
+Yani çanın direkt şöyle bir sistemi yoktur.
+
+460
+01:01:51,128 --> 01:01:54,008
+Tamam? O yüzden bir şey diyemem bunun için.
+
+461
+01:01:55,888 --> 01:01:57,808
+Yeterli oldu mu senin bilemedim.
+
+462
+01:02:00,128 --> 01:02:01,788
+Yanlış sordum sana de bilmem ne?
+
+463
+01:02:03,728 --> 01:02:08,788
+Notlarınıza göre, harf notunuza göre değil, çana göre harf notlarınız oluşur.
+
+464
+01:02:11,123 --> 01:02:31,243
+Yani çan sisteminden sonra harf notunuz verilir. Şu ağırlıkta olanlar AA olsun, şu ağırlıkta olanlar CB olsun mesela, şu ağırlıkta olanlar F olsun gibi. [öğrenci] anlıyor musun? Çandan sonra harf notlarınız oluşur. Tamam mı [öğrenci]?
+
+465
+01:02:31,563 --> 01:02:32,844
+Tamam hocam, teşekkürler.
+
+466
+01:02:33,283 --> 01:02:38,443
+Rica ederim. Şimdi bir ara verelim mi arkadaşlar? Var mı sorusu olan?
+
+467
+01:02:39,027 --> 01:02:40,067
+yok galiba.
+
+468
+01:02:41,107 --> 01:02:43,167
+Saat 2'ye 5 geçiyor.
+
+469
+01:02:43,647 --> 01:02:46,047
+2'ye 20 geçe dersimize devam edelim.
+
+470
+01:02:46,147 --> 01:02:47,007
+Olur mu arkadaşlar?
+
+471
+01:22:15,475 --> 01:22:18,795
+Arkadaşlar, kaldığınız yerden devam ediyoruz.
+
+472
+01:22:21,295 --> 01:22:24,655
+Şimdi şöyle bir pdf paylaşayım.
+
+473
+01:22:27,495 --> 01:22:28,635
+Sesim geliyor mu?
+
+474
+01:22:29,355 --> 01:22:30,315
+Geliyor hocam.
+
+475
+01:22:37,844 --> 01:22:44,824
+Ben kötü bir haber aldım. O yüzden birazcık sorularınıza bir cevap veremeyebilirim arkadaşlar.
+
+476
+01:22:45,824 --> 01:22:47,984
+Hocam, hiç yapmayalım bile isterseniz.
+
+477
+01:22:47,984 --> 01:22:50,584
+Evet hocam, sesimizden belli.
+
+478
+01:22:52,744 --> 01:22:58,744
+Dersimizi yapalım. Evet, kaldığımız yerden devam edelim.
+
+479
+01:23:00,844 --> 01:23:03,024
+Hocam, bizim için sıkıntı yok. Gerçekten yapmayalım.
+
+480
+01:23:03,244 --> 01:23:05,304
+Hocam, biz PDF'den de çalışırız bunu.
+
+481
+01:23:05,876 --> 01:23:21,416
+Hocam, bir yakınınızı falan mı kaybettiniz? İsterseniz ertel edelim derse.
+
+482
+01:23:21,416 --> 01:23:31,636
+Şöyle yapalım, ben sizden bir 15-20 dakika daha istiyorum. Saat ne zaman diyelim?
+
+483
+01:23:32,212 --> 01:23:36,632
+15 dakika daha çeyrek kala başlayalım. Olur mu ders arkadaşlar?
+
+484
+01:23:37,952 --> 01:23:39,772
+Çeyrek kala derse başlayalım.
+
+485
+01:43:30,707 --> 01:43:34,127
+Arkadaşlar, sesim geliyor mu? Sesimi duyuyoruz.
+
+486
+01:43:34,887 --> 01:43:35,647
+Peki hocam.
+
+487
+01:43:36,167 --> 01:43:43,847
+Kaldığımız yerden devam ediyoruz. Şöyle söyleyeyim, belki örnekleri biraz düzeysel geçebilirim.
+
+488
+01:43:44,268 --> 01:43:46,047
+Hocam, bir şey söyleyebilir miyim hocam?
+
+489
+01:43:48,108 --> 01:43:53,768
+Hocam, ben sizi anlayabiliyorum. İçiniz böyle dersimiz gitmesin, el vermiyor.
+
+490
+01:43:54,355 --> 01:43:58,115
+Ama hocam bizim de sizin böyle ders işlemenize hiçimiz el vermiyor.
+
+491
+01:43:58,556 --> 01:43:59,255
+Teşekkür ederim.
+
+492
+01:43:59,255 --> 01:44:12,755
+Hocam bence şöyle bir orta yol bulalım. Siz bugünlük dersi burada bitirin. Ama biz bir gün belirleyelim. Siz o gün kaldığınız yerden devam ederseniz hem sizin içiniz rahat olur hocam hem bizim içiniz rahat olur.
+
+493
+01:44:12,979 --> 01:44:20,959
+Ya şöyle yapalım, ben bir yarım saat anlatayım arkadaşlar. En azından pdf'i anlarsınız.
+
+494
+01:44:21,579 --> 01:44:26,219
+Hocam biz pdf'i anlarız zaten ama sizin durumunuz yani böyle...
+
+495
+01:44:26,452 --> 01:44:28,932
+Bizim içimiz el vermiyor hocam böyle dinlemeye.
+
+496
+01:44:29,132 --> 01:44:33,051
+Evet hocam, zaten az çok bildiğimiz bir konu. Hiç bilmiyor değiliz bunu.
+
+497
+01:44:33,772 --> 01:44:38,572
+Orta bir yol bulalım. Hem sizin içiniz rahat olsun hem bizim içiniz rahat olsun hocam böyle.
+
+498
+01:44:38,932 --> 01:44:44,272
+Teşekkür ederim. Yalnız konu olarak çok gerideyiz. Geriye kalmak istemiyorum.
+
+499
+01:44:44,992 --> 01:44:50,352
+İşte onu diyorum hocam, bir gün belirleyelim. O gün ekstradan, bir ders fazladan yaparız gerekirse.
+
+500
+01:44:50,971 --> 01:44:52,952
+Bundan sonra dersiniz var mı hocam hiç acaba?
+
+501
+01:44:53,471 --> 01:45:00,351
+Bugün bu dersi yapamam. Çarşamba yapabilirim sizler için.
+
+502
+01:45:00,931 --> 01:45:04,172
+Tamam, çarşamba. Bir saat belirleyin hocam bize.
+
+503
+01:45:04,172 --> 01:45:10,891
+Bilmiyorum. Saat sonra olabilir, dört yıl olabilir.
+
+504
+01:45:11,380 --> 01:45:15,440
+Tamam, bizim dörtte bir dersimiz olmaması gerekiyor genel ders.
+
+505
+01:45:15,440 --> 01:45:17,159
+Evet, evet, yok o saatte.
+
+506
+01:45:17,159 --> 01:45:18,280
+Dörtte hiçbir dersimiz yok.
+
+507
+01:45:18,739 --> 01:45:21,720
+Biz size göre ayarlarız kendimizi, hiç sıkıntı değil hocam.
+
+508
+01:45:21,980 --> 01:45:26,200
+Benim arkadaşlar, ailemden birisi hastaneye kaldırılmış konuklar.
+
+509
+01:45:26,300 --> 01:45:27,680
+Hocam, çok geçmiş olsun.
+
+510
+01:45:27,680 --> 01:45:29,460
+Çok geçmiş olsun.
+
+511
+01:45:30,360 --> 01:45:31,079
+Yani olabilir.
+
+512
+01:45:32,372 --> 01:45:37,391
+Biz çarşamba devam ederiz. Hem sizin içiniz rahat olur hem bizim içiniz rahat olur.
+
+513
+01:45:37,452 --> 01:45:45,272
+Bu biraz ağırlaşmış. Ondan dolayı tamam o zaman. Çarşamba günü saat 4 diyelim.
+
+514
+01:45:45,811 --> 01:45:46,612
+Sağ olun hocam.
+
+515
+01:45:47,772 --> 01:45:50,811
+Umuyorum atlatır. Umuyorum tüm hasta olanlar.
+
+516
+01:45:51,352 --> 01:45:51,832
+İnşallah.
+
+517
+01:45:52,352 --> 01:45:53,972
+İnşallah hocam. Çok geçmiş olsun.
+
+518
+01:45:54,632 --> 01:45:57,152
+O zaman ben derse bu günlük burada bitiriyorum.
+
+519
+01:45:57,152 --> 01:45:58,231
+Sağ olun hocam.
