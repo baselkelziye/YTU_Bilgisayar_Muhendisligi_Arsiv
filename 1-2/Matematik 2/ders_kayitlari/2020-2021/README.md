@@ -12,5 +12,6 @@
 | 20 | Bahar | — | [sube_20/](sube_20/) |
 | 22 | Bahar | — | [sube_22/](sube_22/) |
 | 25 | Bahar | Mustafa Sarı | [sube_25/](sube_25/) |
+| 26 | Bahar | Eyüp Kızıl ve Salih Çelik | [sube_26/](sube_26/) |
 | 35 | Bahar | — | [sube_35/](sube_35/) |
 | 52 | Bahar | Muttalip Özavşar | [sube_52/](sube_52/) |
