@@ -1,21 +1,8 @@
-# İşletim Sistemleri Ders Kayıtları
+# İşletim Sistemleri 2025-2026 Ders Kayıtları
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+2025-2026 eğitim öğretim yılında bu dersin birden çok şube ya da dönem kaydı vardır. Her birinin altyazıları ve notları kendi klasöründedir.
 
-### 📋 Genel Bilgiler
-* **Ders:** İşletim Sistemleri (BLM3011)
-* **Dönem:** Güz
-* **Akademik Yıl:** 2025-2026
-* **Şube:** BLM3011 - 1
-
-Bu dizin, ilgili ders kayıtlarının altyazılarını (.srt) içermektedir. Notlar henüz yazılmamıştır.
-
-## 📚 Ders Kayıtları Dizini
-
-Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir). Notu olmayan dersler "—" ile gösterilmiştir.
-
-| Ders No | Tarih | Altyazı |
-| :---: | :---: | :---: |
-| **Ders 1** | 30 Aralık 2025 Salı | [SRT](altyazilar/ders_1.srt) |
-
-Ders tarihleri ve eksik kayıtların ayrıntısı için `altyazilar/README.md` dosyasına bakın.
+| Şube | Dönem | Hoca | Klasör |
+| :---: | :---: | :--- | :--- |
+| 1 | Güz | — | [sube_1/](sube_1/) |
+| 2 | Güz | — | [sube_2/](sube_2/) |
