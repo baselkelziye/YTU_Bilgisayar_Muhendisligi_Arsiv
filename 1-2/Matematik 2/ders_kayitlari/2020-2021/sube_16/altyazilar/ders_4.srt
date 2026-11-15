@@ -1,0 +1,1687 @@
+1
+00:00:47,636 --> 00:00:51,756
+Günaydın arkadaşlar. Ses geliyor mu? Günaydın.
+
+2
+00:00:52,096 --> 00:00:52,975
+Günaydın hocam.
+
+3
+00:00:53,376 --> 00:00:54,856
+Nasılsınız bugün? İyi misiniz?
+
+4
+00:00:55,716 --> 00:00:57,316
+İyiyim, teşekkürler. Nasılsınız?
+
+5
+00:00:57,475 --> 00:00:58,776
+Ben de iyiyim, teşekkür ederim.
+
+6
+00:00:59,936 --> 00:01:05,996
+Evet, dün dizileri bitirmiştik, serilere giriş yapmıştık. Ne demiştik seri?
+
+7
+00:01:06,936 --> 00:01:14,156
+Dizinin terimlerin toplamından elde ettiğimiz ifadeye seri diyorduk ve sigma sembolüyle ifade etmiştik.
+
+8
+00:01:14,867 --> 00:01:18,587
+Sonra bazı özel seriler var dedik, onları konuştuk.
+
+9
+00:01:19,028 --> 00:01:32,427
+Geometrik seri verdik. Hatta şurada hemen önümde duruyor bakın. Geometrik seri dediğimizde şöyle kısaca ne zaman yakınsak, bunu hatırlayalım. Çünkü bu çok önemli bir seri. Her zaman karşımıza çıkabilir demiştik.
+
+10
+00:01:33,088 --> 00:01:43,427
+Toplam en eşitli birden sonsuza kadar A çarpı R üzeri en eksi bir şeklindeki seriye biz geometrik serisi diyeceğiz. Bu seri ne zaman yakınsaklı demiştik.
+
+11
+00:01:44,628 --> 00:01:58,027
+A'sı sıfırdan farklı, pozitif. Bir de mutlak değer R, birden küçükse yakınsak, aksi durumda bıraksaktır demiştik. Tamam mı arkadaşlar? Hatta şöyle kısaca özetlemiştik şuraya.
+
+12
+00:01:58,644 --> 00:02:03,963
+Yani bize yakınsak olabilmesi için mutlak değer R'nin birden küçük olması gerekir.
+
+13
+00:02:04,483 --> 00:02:10,683
+Ve yakınsadığı değer de yani serinin toplamını sorduğuna göre A bölü 1-R'den de bulacaktık.
+
+14
+00:02:11,223 --> 00:02:14,264
+A'sı da sıfırdan farklı olmak koşuluyla demiştik.
+
+15
+00:02:14,563 --> 00:02:17,243
+Diğer bütün durumlarda hep ıraksak çıkmıştı.
+
+16
+00:02:17,243 --> 00:02:21,183
+Bir de teleskopik seri söylemiştik.
+
+17
+00:02:22,259 --> 00:02:31,459
+O da neydi? Biz sonsuz terimli seriyi nasıl buluyorduk toplamını, ilk n teriminin toplamına bakıyorduk.
+
+18
+00:02:31,939 --> 00:02:38,699
+İlk n teriminin toplamına baktığımızda geometrik seri ise geometrik seri özelliğini kullanarak onun yakınsaklığını buluyorduk.
+
+19
+00:02:39,099 --> 00:02:47,259
+Değilse eninci terimini basit kesilere ayırarak daha basit biçimde ifade edebiliyorsak buna da teleskopik seri demiştik.
+
+20
+00:02:47,959 --> 00:02:49,859
+Örneğin bakın şöyle bir örnek yapmıştık.
+
+21
+00:02:50,259 --> 00:03:01,039
+basit kesirleri ayırarak bu şekilde toplamını bulamamıştık. Ama basit kesirleri ayırarak kolayca toplamı bulmuştuk. Yani iki tane özel seri vermiştik. Geometrik seri.
+
+22
+00:03:01,407 --> 00:03:12,787
+Teleskopik seri, bir de harmonik seri demiştik. Bunu da en eşitli birden sonsuza kadar bir bölü en serisi şeklinde. Bunu sonra göstereceğim, ıraksak olduğunu ama şu anda ıraksaktır diyelim.
+
+23
+00:03:12,787 --> 00:03:29,387
+Hatta geometrik seriyle ilgili bir iki soru daha çözeceğim. Şurada aşağılarda onu bulup sonra devam edeceğim konuya. Tamam mı? Diyelim ki şöyle bir örnek verilmiş bize. Bunun toplamını bulun diyor bana arkadaşlar. Tamam mı?
+
+24
+00:03:29,407 --> 00:03:35,427
+Burada dikkat ederseniz, iki tane seri var. Bunları ayrı ayrı yazabilirim.
+
+25
+00:03:36,051 --> 00:04:04,051
+Yani 3 bölü 6'nın eninci kuvveti, o da ne olur? 1 bölü 2'nin eninci kuvveti şeklinde. Eksi derim, 2 bölü 6'nın eninci kuvveti, o da ne olur? 1 bölü 3'ün eninci kuvveti şeklinde. Yani bu serinin toplamını bulmaya çalışıyoruz. Ya da bu seri yakınsak mıdır diye bana soruyor. Onun için ne yapıyorum? İki tane ayrı seri gibi düşünüyorum. Tamam mı arkadaşlar? Bunu ayrı hesaplayacağım, bunu ayrı sonra farkını...
+
+26
+00:04:04,051 --> 00:04:22,871
+Şimdi geliyoruz, diyoruz ki, işte bunu toplamını nasıl bulacağım? İlken terimine bakmam gerekir normalde hesaplayabilmek ama diyorum ki bu acaba bir geometrik seri olabilir mi? Ama burada N0'dan başlamış, bunu 1'den başlatmak zorundayım. Çünkü geometrik seri nasıldı?
+
+27
+00:04:23,379 --> 00:04:49,840
+n'eşittir birden sonsuza kadar, a çarpır r üzeri n-1 şeklinde yazmalıyım. O zaman ne yapıyorum? Bakın şurada görelim. n'i birden başlattım. O zaman nasıl yazmalıyım bunu? 1 bölü 2 üzeri n-1. Çünkü burada n'e 1 verdiğimde ne olur bakın? 1'i elde ediyorum. Burada da n'e 0'ı verdiğimde 1'i elde ediyorum. Yani bu iki seri ne olması? Eşit olması gerekir. Ne demiştik? İndisler.
+
+28
+00:04:50,387 --> 00:05:13,628
+Başka sayıdan başlatılabilir istediğim şekilde. Yani bunu ne yapıyorum? N1 olacak şekilde yeniden düzenlemiş oluyorum. Hiç değişiklik yok. İkisi de aynı seri. Tamam mı? O halde benim istediğim konuma gelmiş oldu. Yani bu artık benim için bir geometrik seridir. A'sı nedir? 1'dir. R'si 1 bölü 2'dir. Yani 1 bölü 2 ile üretilmiş bir geometrik seridir.
+
+29
+00:05:14,228 --> 00:05:42,207
+Neye bakıyorum? Mutlak değer R'ye bakıyorum. R'si zaten 1 bölü 2 pozitif olduğu için mutlak değer bile yazmamışız. Yani bu da birden küçük olduğu için A'sı da sıfırdan farklı. Ne diyoruz? Verilen geometrik seri yakınsaktır. Yakınsadığı değeri de nasıl buluyorum? A bölü 1 eksi R'den buluyorum. A'yı yerine yazdım. R'yi de biliyorum. 1 bölü 2 dedik. Düzenlersek 2. İşte birinci serimizin toplamı nedir? 2'dir. Yani yakınsaklık.
+
+30
+00:05:42,228 --> 00:06:10,228
+seri çıktı. Toplamı da ikiye eşittir. Aynı şekilde ikinciye bakıyoruz bakın. Gene bunun da n'in sıfırdan başlattığı için ben bunu geometrik seri olarak düşünüyorum. Birden başlatmak zorundayım. n'i birden başlatırsam birden sonsuza kadar 1 bölü 3 üzeri n-1 şeklinde yazmış oldum. Bakın değer ver, n'e 1 ver. Birinci terimim ne oldu? 1 olmalı. Burada da n'e sıfır verdiğimde birinci terimin 1. İkisi de arttı.
+
+31
+00:06:10,228 --> 00:06:22,707
+Aynı. Evet, o zaman diyorum ki bu artık benim için bir geometrik seridir. A'sı 1'dir. R'si de 1 bölü 3'dür. Yani 1 bölü 3'de üretilmiş bir geometrik seridir. Neye bakıyorum?
+
+32
+00:06:23,411 --> 00:06:51,411
+Mutlak değer, R'si birden küçük mü? 1 bölü 3 de birden küçük oldu. A şikar zaten. O zaman seri yakınsattır. Yakınsadığı değeri de A bölü 1 eksi R'den. Hemen yerine yazarsak, A'sı 1'dir, R'si 1 bölü 3'den. 3 bölü 2 çıkar. Ne diyeceğim? 2 eksisi geldik buraya. Bunun toplamı 2 idi. Bununki de 3 bölü 2 idi. Düzenlenirse 1 bölü 2 olarak buluruz. O halde diyoruz ki verilen şu serinin toplamı.
+
+33
+00:06:51,411 --> 00:06:59,291
+1 bölü 2'ye eşittir diyeceğiz. Tamam mı arkadaşlar? Evet, bakın benzer şekilde bu örneğimiz var.
+
+34
+00:07:00,571 --> 00:07:05,191
+İşte yine soruyor bana, bu serinin toplamı nedir ya da seri yakınsak mıdır?
+
+35
+00:07:05,531 --> 00:07:10,351
+Toplamını sorduğuna göre, baktık işte serinin eninci terimi dediğimiz nedir?
+
+36
+00:07:10,411 --> 00:07:13,151
+1 artı 2 üzeri n artı 1 bölü.
+
+37
+00:07:13,651 --> 00:07:37,831
+3 üzeri M. Baktık, bu teleskopik seri olmaz dedik. Acaba bir geometrik seri midir? Bunu biraz daha ayrıntılı yazarsak, anlayabilmek için ne yaptım? Yine bir toplam var burada. Ayrı ayrı yazdık bunu. Bakın, şu. Pardon, şunu şurada düzenledik önce. Nasıl yazalım? 2 çarpı, 2 bölü 3'ün eninci kuvveti olsun. Şu şekilde ayırmış olalım.
+
+38
+00:07:38,579 --> 00:07:57,979
+Şimdi burada, bakın, şurada, hiç şurayı görmesek, şimdi buna ben geometrik seri diyemeyeceğim. Neden n'i birden başlamış ama, r üzeri a çarpı, r üzeri n-1 olmalı. Bu n ile başlıyor. Onun için ne yapıyorum? Benzeteceğim o şekilde, geometrik seri şeklinde yazmaya çalışacağım burada.
+
+39
+00:07:58,867 --> 00:08:06,768
+Buradan yazarsam, o zaman 1 bölü 3'ü dışarı atarsam, ne olur? 1 bölü 3, n-1 şeklinde yazmalıyım.
+
+40
+00:08:07,411 --> 00:08:35,392
+Bakın kafanız karışıyorsa burada ne yaparım? Bunu açıkça yazsam ne olur? Birinci terimin 1 bölü 3 gelir değil mi? Sonra ikinci terim 1 bölü 3'ün karesi şeklinde. O halde geometrik serinin ilk terimi 1 ile başlamak zorunda. O zaman ne yaparım? 1 bölü 3 parantezini alacağımı düşünürüm arkadaşlar. 1 bölü 3 parantezini alırsam ne olur? 1 diyeceğim. Açtığımda şunu. Artı 1 bölü 3, artı 1 bölü 3'ün karesi şeklinde giden bir geometrik seri şeklinde ifade etmiş olurum.
+
+41
+00:08:35,412 --> 00:08:42,231
+Onun için biz bunu açık yazmak yerine kısaca geometrik seriyi biliyoruz. O şekilde yazmaya çalışıyoruz.
+
+42
+00:08:46,644 --> 00:09:00,203
+ifade etmiş oldum. İşte benim A dediğim ifadem budur. R'si de 1 bölü 3, R ile üretilmiş. Yani 1 bölü 3 üretilmiş bir geometrik seridir. Anlaşıldı mı arkadaşlar? Bakın, aynı seriyi bu şekilde yazmış oldum.
+
+43
+00:09:01,683 --> 00:09:16,024
+İşte A'sı 1 bölü 3 dedik. R'si de 1 bölü 3'tür. Birden küçük olduğu için diyoruz ki bu geometrik seri yakınsattır. Yakınsadığı değeri de bakın şuradan bulalım. A bölü 1 eksi R'den A'sı 1 bölü 3.
+
+44
+00:09:16,755 --> 00:09:44,755
+R'si de 1 bölü 3'tü. Bunu düzenlersek, 1 bölü 2 buluruz. Geldik şimdi dışarıda ikinci olana. Değil mi arkadaşlar? İkisi, gene bakın burada da n birden başlıyor. Tamam geometrik seri için yeterli benim için. Ama şurada ne olması gerekir? n-1 olması gerekir. Onu da gene ne yapıyorum? 2 bölü 3'ün bir tanesini dışında tutarsam ne olur? 4 bölü 3 olur. 2 bölü 3 üzeri n-1 şeklinde ifade etmiş olacağım.
+
+45
+00:09:44,755 --> 00:10:11,155
+Burada da A dediğimiz ifade ne çıktı? 4 bölü 3. R'si de 2 bölü 3 olduğuna göre, mutlak değer R'de ne oldu? Birden küçüktür diyorum. Gene yakınsak bir seridir. Yakınsadığı değeri de ne yapıyoruz? Gene A bölü 1 eksi R'den buluyoruz. Bu da yerine yazılıp düzenlendiğinde 4 çıkmış. Buradan da 9 bölü 2 diye bulduk. İşte bu serinin toplamı 9 bölü 2'ye eşittir diyoruz.
+
+46
+00:10:11,764 --> 00:10:13,024
+Anlaşıldı mı arkadaşlar?
+
+47
+00:10:15,543 --> 00:10:16,663
+Anlaşıldı hocam.
+
+48
+00:10:17,004 --> 00:10:19,663
+Artık geometrik seriyi unutmuyoruz. Tamam mı?
+
+49
+00:10:19,923 --> 00:10:23,244
+Şimdi geriye dönelim, konumuzda kaldığımız yerden devam edelim.
+
+50
+00:10:24,744 --> 00:10:30,124
+En son teleskopik seriyi verdik. Bir tane örnek kalmıştı diye hatırlıyorum.
+
+51
+00:10:30,783 --> 00:10:32,783
+Şunu yaptık. Şuradayız bakın.
+
+52
+00:10:33,652 --> 00:10:55,831
+Bana bu serinin toplamını soruyor. Bu bir geometrik seri değil bir kere, logaritma var burada. Bakın, n2'den toplam n2'den sonsuza kadar n1-1 bölü n2'nin toplamını bana soruyor. Neden n'i 2'den başlatmış arkadaşlar sizce? Birden niye başlatmamış? Veya sıfırdan birden.
+
+53
+00:10:58,100 --> 00:11:00,639
+sıfır olduğu için. Elen bir sıfır.
+
+54
+00:11:00,879 --> 00:11:01,680
+Tanımsız olur.
+
+55
+00:11:01,920 --> 00:11:09,580
+Değil mi? Bakın, elen bir deseydik, bu sıfır olurdu, tanımsız olurdu. Onun için, tanımlı olabilmesi için ikiden başlatmış. Tamam mı? Bu.
+
+56
+00:11:09,879 --> 00:11:11,639
+Şimdi ne yapıyoruz? Bizim bildiğimiz...
+
+57
+00:11:12,500 --> 00:11:40,500
+Bunun toplamını bulabilmemiz için sonsuz terimli bir seri dedik. İlk n terimin toplamına bakacağım. Mantık olarak ilk aklıma gelen budur. Yazdım ilk n terimini bakın. N'e 2 veriyorum. Elen 3 bölü 4 olur. 3 verirsem, elen 8 bölü 9 şeklinde devam ettiğimde, n verdiğimde de elen 1 eksi 1 bölü n kare şeklinde ilk n terimini de esenle göstermiştik. Bu. Ama şu anda bunu toplayamıyorum. Diyorum ki bunu biraz daha...
+
+58
+00:11:40,500 --> 00:11:55,459
+Değişik şekilde burada ne bir teleskopik seridir bu, ne de bir geometrik seridir. O zaman bu durumda ne olabilir? Bunu bir şekilde toplamını bulabilirim yani demektir. Birazcık elen özelliklerini kullanmam gerekir diye düşünmeliyim.
+
+59
+00:11:55,459 --> 00:12:08,500
+Eğer arkadaşlar şimdi daha konumuz yeni, bana bir serinin toplamını soruyorsa sınavda, ya o bir geometrik seridir, ya bir teleskopik seridir, ya da doğrudan ilk enterimi toplamını sorabilir.
+
+60
+00:12:08,500 --> 00:12:30,519
+toplanabilen bir seridir. Başka da bulamam. Tamam mı? Böyle düşüneceğiz. Şimdi o zaman ne yapıyorum? Bunu biraz daha, serinin eninci terimi nedir? Elen, bir eksi, bir bölü en karedir. Bunu da parantezin içinin paydasını eşitlersem, en kare eksi, bir bölü en kare olur. Bunu da şöyle çarpanlarına ayırırsam, en eksi bir.
+
+61
+00:12:31,091 --> 00:12:58,552
+Değil mi? n artı 1 faydalı. Şöyle yazmış olalım arkadaşlar. Yani şunu bu şekilde yazdım. Yazabilirim. O halde burada ilk n teriminin toplamını yazmaya çalışalım. Yani esen diyorum. n'e 2 verdim. 1 bölü 2 çarpı 3 bölü 2. Artı ikinci terimi bulmak için n'e 3 veriyorum. Çünkü ikiden başlattık ya. O zaman ne olur? 2 bölü 3 çarpı 4 bölü 3 diyeceğim.
+
+62
+00:12:59,091 --> 00:13:15,512
+nokta nokta m verdiğimde de bu. Burada dikkat ederseniz, logaritmik özellik aklımıza gelebilir değil mi? Toplamın logaritması, çarpımın logaritmasıydı. Çarpımda bölüm şeklinde bilirdik bu özelliklerini değil mi? Yani şuraya da yazdık bakın.
+
+63
+00:13:26,480 --> 00:13:48,879
+İstiyoruz diyoruz. Tamam mı? O zaman ne diyorum? Esen eşittir. Elen aç büyük bir parantez. 1 bölü 2 çarpı 3 bölü 2, çarpı 2 bölü 3, çarpı 4 bölü 3, nokta nokta, ta ki en eksi 1 bölü, en çarpı, en artı 1 bölü, en. İşte ne yaptık? Toplamın logaritması, çarpımın logaritmasına eşit olduğu için bu şekilde yazmış olduk.
+
+64
+00:13:48,879 --> 00:13:52,840
+Şimdi gidenlere, kalanlara bir bakalım. Bakın. Üçler gitti.
+
+65
+00:13:53,683 --> 00:14:05,483
+Bu ikiler gider, üçler, dörtler. Sadeleştiğinde, yine geniş düşünerek, hayal gücümüzü geniş tutarak, bu parantezin içinde en son ne kalır arkadaşlar?
+
+66
+00:14:06,144 --> 00:14:13,264
+Bir bölü iki çarpı, en artı bir bölü en kalır. Şu. Değil mi?
+
+67
+00:14:14,323 --> 00:14:40,844
+Dikkat ederseniz, şu ikiler bununla gider. Şurada bir terim daha yazmış olsak, kaçıncı terimi yazıyoruz? 4 mü? Değil mi? 4 mü yazacağım? 3 bölü 4 şeklinde. Yani hepsi birbirini götürür. Yani sonuçta elen, en artı, bir bölü, ikien şeklinde bir sonuç bulurum. Yani ilk enterimin toplamı budur. Şimdi ne yapacağım? Bunun limitine bakmalıyım.
+
+68
+00:14:42,323 --> 00:15:04,563
+Giderken, esen diyorum, limit en sonsuza giderken, eleni yazdık. Bu da ne olur arkadaşlar? Parantezin içi. Payı birinci dereceden, paydası da ikinci dereceden olduğu için kat sayıların oranını eşittir. Yani elen bir bölü ikidir diyeceğiz. O halde bu yakınsaktır. Toplamı da verilen şu serinin toplamı sonuçta elen bir bölü iki eşittir diyoruz. Tamam mı?
+
+69
+00:15:06,131 --> 00:15:21,511
+Anlaşıldı sanırım. Sadece özelliği atılmak. Başka da bir şey değil. Tekrar dediğim gibi bana bir toplam soruyorsa, ya o bir geometrik seridir, ya bir teleskopik seridir, ya da doğrudan işte böyle özellikler kullanarak toplamını yazabileceğim seri olmalı.
+
+70
+00:15:21,871 --> 00:15:26,831
+Tamam mı? Evet, şimdi gelelim serilerle ilgili özelliklerimizi de söyleyelim.
+
+71
+00:15:27,604 --> 00:15:47,744
+Birinci özelliğimiz toplam yakınsak bir seri. Bakın indisinden nasıl başlaması hiç önemli değil. Onun için koymadık. Diyelim ki bir AK serisi var toplam. Onun toplamı A'ya eşit. BK serisinin toplamı da B ise. İki serinin toplamı yine A artı B'ye.
+
+72
+00:15:48,275 --> 00:16:09,215
+yakınsak ya da eşit olur. Farkı da aynı şekilde arkadaşlar. Gene toplam seriyi sabitle çarpmak, gene toplamın değerini değiştirmez. Sadece bir alfa çarpanı gelir. Yani alfa çarpı a diye yazarız. İkinci özelliğimiz, eğer toplam a, n serisi bıraksak ise,
+
+73
+00:16:10,196 --> 00:16:18,916
+Bu serinin her terimini alfayla çarptığımızda da sonuç değişmez. Gene ıraksaktır. Yani alfa toplam AN serisi de ıraksaktır diyeceğiz.
+
+74
+00:16:19,475 --> 00:16:26,996
+Üçüncü özelliğimiz, eğer toplam AN serisi ıraksak, BN serisi de yakınsak ise,
+
+75
+00:16:28,275 --> 00:16:37,975
+İki serinin toplamı da ıraksak olur. Aynı şekilde farkı da ıraksak olur arkadaşlar. Yani topladığımızda da, farkını aldığımızda da yine ıraksak çıkar.
+
+76
+00:16:38,855 --> 00:16:45,275
+Dördüncü özelliğimiz de toplam A-N ve toplam B-N her ikisi de ıraksak olsalar dahi,
+
+77
+00:16:45,919 --> 00:17:06,920
+Toplam veya farkı da yakınsak olabilir, ıraksak da olabilir. Yani bunun için bir şey diyemiyoruz. Yani her iki seri ıraksak olduğu halde yakınsak da olabilir toplamı, ıraksak da olabilir. Bakın çok basit bir örnek diyelim ki böyle bir seri verilmiş. Bütün terimleri bir. Beğen serisinde bütün terimleri...
+
+78
+00:17:06,991 --> 00:17:34,991
+Eksi 1 ise bu iki serinin toplamı yakınsak mıdır, ıraksak mıdır diye bana sorsalar. Ne yapıyorum? A'n artı B'n toplarsak bunları, bütün terimler sıfır değil midir? Neye bakmalıyım? İlken terimin toplamına bakıyorum. E sen dediğimde işte sıfır sıfır en tane sıfırın var değil mi? En çarklı sıfır. Limit en son sıfır gittiğinde de bu ne olur? Sıfır olur. O halde sıfırda belli bir değer olduğuna göre seri yakınsak diyeceğim. Özel bir örnek.
+
+79
+00:17:34,991 --> 00:17:46,011
+Tabii her zaman böyle bir şey olur diye bir şey diyemiyoruz. Yani onun için her iki seri, pardon, ıraksak olduğunda toplam yakınsak da olabilir, ıraksak da onun için bir şey diyemiyoruz.
+
+80
+00:17:47,352 --> 00:17:59,352
+Gelelim beşinci kuralımıza. Bir seriye sonlu sayıda terim eklemek veya silmek karakterini değiştirmez.
+
+81
+00:18:00,084 --> 00:18:04,423
+Bunu da unutmayalım. Çünkü bunda da çok karşımıza çıkabilir.
+
+82
+00:18:05,104 --> 00:18:11,783
+İşte serinin baş tarafına terim eklemek veya çıkarmak serinin karakterini değiştirmeyecek.
+
+83
+00:18:13,243 --> 00:18:17,584
+Evet, 6, buna 2 yıldız koymuşum. Bu çok önemli arkadaşlar.
+
+84
+00:18:18,223 --> 00:18:20,364
+Verilen toplam seri yakınsak ise,
+
+85
+00:18:21,107 --> 00:18:49,107
+Limit en sonsuza gittiğinde eninci terimi sıfırdır diyeceğiz. Yani yakınsak bir serinin eninci terimi sonsuza gittiğinde limiti sıfır olmalıdır. Ama teoremin tersi doğru değildir arkadaşlar. Yani limit en sonsuza gittiğinde an sıfır ise seri yakınsak da olabilir, ıraksak da olabilir. Bu bizi yanıltır. Ama seri yakınsaksa ille ki eninci terim limitte sonsuza sıfıra gider. Değilse.
+
+86
+00:18:49,107 --> 00:19:15,087
+Sadece zaten bir şey diyemeyeceğiz ona. Ama tersi doğru değil. Örneğin bana limit en sonsuza gittiğinde an sıfırsa ben bu seriye yakınsak diyemeyeceğim. Yakınsak da olabilir, raksak da olabilir diyoruz. Bunu unutmuyoruz. Bir de eninci terim testimiz var. Peki diyelim ki bu limit en sonsuza gittiğinde an sıfırsa seri yakınsak da olabilir, raksak da olabilir diyoruz.
+
+87
+00:19:15,635 --> 00:19:29,135
+Ama diyelim ki ben bunu sıfırdan farklı bulmuş olsam, seriye ne diyebilirim? Sıfırdan farklı bulsam, limit en sonsuza gittiğinde, an sıfırdan farklıysa ne deriz arkadaşlar seriye? Yakınsak mı?
+
+88
+00:19:30,228 --> 00:19:31,807
+Sıfırdan farklı bulursam.
+
+89
+00:19:32,187 --> 00:19:33,827
+Evet, bıraksak.
+
+90
+00:19:34,028 --> 00:19:36,967
+Bıraksak derim işte, biz ona eninci terim testi diyeceğiz.
+
+91
+00:19:37,228 --> 00:19:39,567
+Onu da bakın, gene iki yıldız yaptık burada.
+
+92
+00:19:39,907 --> 00:19:41,327
+Eninci terim testi diyoruz.
+
+93
+00:19:41,687 --> 00:19:49,988
+Eğer, bakın, limit en sonsuza gittiğinde, AN sıfırdan farklı ise, hiç düşünmeden verilen toplam seri nedir?
+
+94
+00:19:50,087 --> 00:19:51,327
+Iraksaktır diyeceğiz.
+
+95
+00:19:52,048 --> 00:19:53,207
+Bunu ikisini unutmuyoruz.
+
+96
+00:19:53,207 --> 00:19:55,207
+Seri yakınsaksa,
+
+97
+00:19:55,251 --> 00:20:07,611
+Limit en sonsuza gittiğinde eninci terim ne oluyor? Sıfıra gidiyor. Ama ben bunu sıfırdan farklı bulduysam hiç düşünmeden bakın ıraksak diyeceğim. Bu da çok işimize yarar örneklerdir.
+
+98
+00:20:07,611 --> 00:20:19,331
+Evet, devam edelim. Bu iki soruyu çözmüştük. Evet, şimdi gelelim şuna. Ne diyor bize? Serisi yakınsak mıdır?
+
+99
+00:20:20,019 --> 00:20:32,519
+Bir işlem yapmadan, bunun eninci terimi en sonsuza gittiğinde bir kontrol edeyim, olur mu, olmaz mı? Çünkü böyle bir kuralı gördüm diyelim, ne yapıyorum? Limit en sonsuza gittiğinde, bunun eninci terimi nedir arkadaşlar?
+
+100
+00:20:33,019 --> 00:20:45,920
+n bölü 2, n eksi 1. Ne olur bunun limiti? 1 bölü 2 oldu bakın. Bu da sıfırdan farklı olduğundan, hiç düşünmeden diyorum ki, bu eninci terim testine göre, bıraksak bir seridir. Başka bir işlem yapmama gerek yok.
+
+101
+00:20:48,019 --> 00:20:54,240
+hiçbir şey diyemezdim. Dönecektim, onun toplamını bulmaya çalışacaktım. Dediğimi anlıyor muyuz?
+
+102
+00:20:56,360 --> 00:20:56,660
+Evet.
+
+103
+00:20:57,380 --> 00:21:03,799
+Farkı anlayalım lütfen. Evet. Şimdi gelelim, bu seri bıraksaktır diyoruz. Neden?
+
+104
+00:21:04,600 --> 00:21:13,059
+Diyorum ki ilk n teriminin toplamına bakmadan önce, acaba bunun n. terimi sıfır mıdır veya sıfırdan farklı mıdır?
+
+105
+00:21:15,827 --> 00:21:38,848
+Eksi 1 üzeri n artı 1'in limiti mevcut değildir değil mi? Yani artı eksi sonsuz da değil, limiti yok diyeceğiz. Yani bunun limitine baktığımızda bir kısım sıfıra gider, bir kısım bire gider. Onun için limit olmadığından o halde hiç düşünmeden eninci terim testine göre diyeceğiz ki bu ıraksak bir seridir. Tamam mı arkadaşlar?
+
+106
+00:21:40,788 --> 00:21:42,088
+Var mı buraya kadar bir sorumuz?
+
+107
+00:21:44,276 --> 00:21:45,615
+Evet, şimdi
+
+108
+00:21:46,963 --> 00:22:14,564
+Serinin yakınsaklığını bulurken, dedik ki toplamına bakarak buluyoruz. Şimdi bazen bir serinin toplamını bulamayabiliriz. Yani o zaman bana nasıl sorar? Karakterini belirleder. Yani bu seri yakınsak mıdır, ıraksak mıdır diye sorar. Onun için de biz bazı testler vereceğiz. Yani pozitif terimli seriler için testler uygulayacağız. Onları vermeye çalışalım. Burada sorumuz yoksa bunu göndereyim, başka konuma geçeyim hemen.
+
+109
+00:22:14,963 --> 00:22:17,384
+Var mı sorumuz? Yok sanırım.
+
+110
+00:22:17,884 --> 00:22:18,344
+Yok hocam.
+
+111
+00:22:24,692 --> 00:22:25,092
+Evet.
+
+112
+00:22:25,940 --> 00:22:35,000
+Şimdi dediğim gibi bana pozitif terimli bir seri verilsin demin hep ne sordu bana? Bu serinin toplamını veya bu seri yakınsak mıdır diye sordu.
+
+113
+00:22:35,000 --> 00:22:44,420
+Şimdi bazen dediğim gibi toplamını bulamayabiliriz ama en azından o serinin yakınsak mı, ıraksak mı olduğu hakkında bir bilgi verebiliriz.
+
+114
+00:22:44,500 --> 00:22:51,480
+Onun için de bazı testler vereceğiz. İşte integral testi, mukayese testi, kök testi, oran testi şeklinde bunları tek tek vereceğim.
+
+115
+00:22:51,960 --> 00:22:53,880
+Birazcık ezber gibi oluyor ama yapacağım.
+
+116
+00:22:53,940 --> 00:23:03,940
+bir şey yok. Örneklerle pekiştirmeye çalışacağız. Başlığımızda dikkat ederseniz, pozitif seriler için yakınsaklık testleri. İlk testimiz integral testi.
+
+117
+00:23:04,460 --> 00:23:12,079
+Integral testi, hep pozitif terimli olması gerekir tamam mı? Negatifler için ayrı konuşacağız. Pozitif terimli bir serinin
+
+118
+00:23:12,480 --> 00:23:26,980
+ona benzer şekilde davranan bir improper integralleri karşılaştırmak suretiyle yakınsak veya ıraksak olup olmadığını belirlememize yarayan ya da yardımcı olan bir seridir.
+
+119
+00:23:27,900 --> 00:23:29,539
+Onun için teoremi şöyle verelim.
+
+120
+00:23:30,740 --> 00:23:38,640
+F fonksiyonu bir pozitif n times sayısı için aralığın en sonsuz aralığında pozitif, sürekli ve azalan.
+
+121
+00:23:39,124 --> 00:24:06,864
+Yani bana bir seri verilecek arkadaşlar. Ben daha özet konuşalım. Diyelim ki bir AN serisi verilmiş olsun. Ben bunun karakterini belirlemek istiyorum. Onun için bunu bir integral testini uygulayabilmem için serinin eninci terimini bir fonksiyon olarak göz önüne alacağım. O zaman bu fonksiyonum ne olmalı? Pozitif olmalı, sürekli olmalı, azalan olmalı. Bu üç özellik sağlanıyorsa diyeceğim ki integral testi uygulanabilir.
+
+122
+00:24:07,124 --> 00:24:25,084
+İşte söylediğimiz olay bu. Olmak üzere, en ince terimin Fn olsun. O zaman toplam seri ve integral n'den sonsuza kadar Ft, Dt'nin her ikisiye yakınsaktır ya da sonsuza ıraksaktır.
+
+123
+00:24:25,364 --> 00:24:31,124
+Peki bu tip integralle biz ne derdik arkadaşlar? Üst sınırı sonsuz veya at sınırı da sonsuz olabilir.
+
+124
+00:24:32,788 --> 00:24:41,987
+Fonksiyonlarda ne diyorduk biz bunlara? Birinci tip improper integral'dir. Fonksiyon sadece sınırında sonsuz olduğunda değil mi? Onları geçen dönem gördük.
+
+125
+00:24:41,987 --> 00:24:52,987
+Evet, şu notumuza da tekrar vermek istiyorum. F fonksiyonu n sonsuzda pozitif, sürekli ve azalan. Demin de dediğim gibi fonksiyon ise...
+
+126
+00:24:53,715 --> 00:25:06,855
+Ve serinin en ince terimi de EFN olarak düşünüyorsak, teorem bize toplam seri ve integralin her ikisini ya yakınsadığını ya da sonsuza ıraksadığını garanti eder.
+
+127
+00:25:07,175 --> 00:25:21,695
+Fakat bu bize serinin toplamını vermez arkadaşlar. Yani örneğin ben burada integral 2-3 gibi bir değer bulduysam, işte serinin toplamı 3 demeyeceğim. Sadece seri yakınsaktır diyeceğim. O kadar.
+
+128
+00:25:21,715 --> 00:25:28,735
+Yani serinin toplamını bize vermez. Sadece test ediyoruz. Yakınsak mı, ıraksak mı? Buna dikkat ediyoruz. Tamam mı arkadaşlar?
+
+129
+00:25:29,615 --> 00:25:35,715
+Evet, şimdi gelelim. Harmonin serinin ıraksaklığını...
+
+130
+00:25:38,395 --> 00:25:47,296
+Ben bunu bir de P serisine almıştım. Kendim yazdığım yerden anlatmak istiyorum arkadaşlar. Bir dakika.
+
+131
+00:25:52,084 --> 00:26:05,864
+Şimdi burada daha ayrıntılı gitmek istedim. Önce integral test, harmonik bir seri nedir diyoruz. Toplam en eşitli birden sonsuza kadar bir bölü en serisine biz harmonik seri diyoruz arkadaşlar. Tamam mı?
+
+132
+00:26:05,951 --> 00:26:13,412
+Yani terimleri bu şekilde giden seri, harmonik seridir. Hatta dersimizin başında söylemiştik, harmonik seri, ıraksak bir seridir.
+
+133
+00:26:13,692 --> 00:26:21,731
+Bunu da şimdi integral testini uygulayarak test etmek istiyorum. Onun için bakın, diyelim ki serinin eninci terimi nedir?
+
+134
+00:26:22,091 --> 00:26:27,851
+An. Bunu bir fonksiyon olarak göz önüne aldım. Fx olsun, Fn olsun hiç fark etmemiz. 1 bölü x diyelim.
+
+135
+00:26:28,211 --> 00:26:36,111
+Fonksiyonu aralığımda nedir? Bakın, 1 sonsuz. Orada hatırlarsanız, n sonsuz demiştik herhangi bir değerden başladığı için.
+
+136
+00:26:36,771 --> 00:26:43,791
+Aralığında ne olması gerekir benim bu fonksiyonum? Sürekli. Ki gerçekten sürekli bir bölü x fonksiyonu bu aralıkta.
+
+137
+00:26:44,271 --> 00:26:47,091
+Pozitif. Zaten bütün terimler pozitiftir.
+
+138
+00:26:47,519 --> 00:26:53,159
+Ve azalan olmalı. Onu da nasıl bakarım ben? Fonksiyonlarda artan azalanlığı, türevine bakarım.
+
+139
+00:26:53,519 --> 00:27:00,519
+Fonksiyonun türevi nedir? Bakın, eksi bir bölü, şunun türevi, x karedir. E bu da sıfırdan küçük değil midir bu aralıkta?
+
+140
+00:27:00,939 --> 00:27:07,599
+Sıfırdan küçük olduğu için azalandır. O zaman ne diyorum? Bakın benim bu fonksiyonum sürekli oldu. Pozitif ve azalan.
+
+141
+00:27:07,599 --> 00:27:15,519
+O zaman üç tane özelliği de sağladığına göre ben verilen bu seriyi integral testiyle test edebilirim.
+
+142
+00:27:15,519 --> 00:27:15,719
+Görün.
+
+143
+00:27:16,115 --> 00:27:43,756
+Yani integral testi uygulanabilir diyoruz. Onu da nasıl uygulayacaktık? Hatırlarsanız biraz önce integral n'den sonsuza kadar. Burada bizim n dediğimiz 1'dir. O zaman ne diyorum? İntegrel 1'den sonsuza kadar dx bölü x. O halde geldik. Şimdi bunu unutuyorum. Şu integrali çözmeye çalışıyorum. Bakıyorum diyorum ki bunun üst sınırda sonsuz olduğu için bu benim fonksiyonlarda bildiğim birinci tip improper integraldir. Tamam mı?
+
+144
+00:27:44,115 --> 00:28:01,656
+Burada integre edebilmek için limit, R, D, B, D ne dersen de, B sonsuza giderken dedim, integral birden B'ye kadar, Dx bölü x. Şimdi ne yapacağım? Şu belirli integrali hesaplayıp, sonra limite geçeceğiz. Hatırlıyor musunuz? Improper integralleri arkadaşlar.
+
+145
+00:28:03,827 --> 00:28:31,507
+Birinci tip. Hatırlarsınız. Evet. Sadece burada birinci tip karşımıza çıkacak. Ya üst sınırda sonsuz olur, ya alt sınırda ki bizde alt sınır olmaz. Üst sınırda olacak sadece. O halde bunu da böyle çözüyoruz. Ne yapıyorum? Önce şu integral alıyoruz. Bu nedir? LMx'dir. Sınırın birden B'ye kadar. Limit B sonsuza giderken, üst sınırı LMb, eksi alt sınır. LM1 sıfırdır. Ne yapıyorum? Yazdık, o gitti.
+
+146
+00:28:31,827 --> 00:28:37,987
+B sonsuza giderken, elen sonsuza nedir? Sonsuzdur. O zaman bakın bu integral ne oldu? Iraksak çıktı.
+
+147
+00:28:38,547 --> 00:28:47,747
+E ne diyoruz? Integral testimi uyguladık. Integralim Iraksak çıktığına göre verilen seri de Iraksaktır. Her ikisi de aynı karakterdedir diyeceğiz.
+
+148
+00:28:48,427 --> 00:28:54,087
+Impropri integral Iraksaktır ve dolayısıyla harmonik seri de Iraksaktır diyoruz arkadaşlar.
+
+149
+00:28:54,087 --> 00:28:59,827
+Tamam mı? Baştan da söylemiştik zaten. Bundan sonra harmonik seri karşımıza çıktığında başka bir...
+
+150
+00:28:59,827 --> 00:29:18,967
+işlem yapmama gerek yok diyeceğim. Bıraksak bir seridir. Biliyorum nasılsa. Testini de yaptım burada. Evet, şimdi gelelim. Bir özel serimiz daha var. Ne dedik? Geometrik seri dedik, harmonik seri dedik, bir de teleskopik seri dedik. Şimdi de P serisi diyoruz. P serisi de şöyle, bu da önemli.
+
+151
+00:29:19,667 --> 00:29:37,288
+Toplam en eşittir birden sonsuza kadar en üzeri eksi P veya bir bölü en üzeri P şeklinde de yazabiliriz veya açık şekilde bu şekilde yazılır. Böyle bir seriye biz P serisi diyoruz. P'si pozitif ve birden farklı olmalı. Biri olursa ne olur arkadaşlar?
+
+152
+00:29:38,003 --> 00:29:49,144
+1 olursa, P yerine 1'i yazarsam, yukarıda verdiğim harmonik seridir. Bunu test etmeye gerek yok. Iraksak olduğunu biliyorum. Onun için P'nin birden farklı olması durumunu inceleyeceğiz.
+
+153
+00:29:49,743 --> 00:29:59,943
+Şimdi gelelim, bu ne zaman yakınsak, ne zaman ıraksak olduğunu burada bulalım. Özet olarak aklımızda kalsın. Aynen bir geometrik seri gibi olacak bu sonuçta.
+
+154
+00:30:00,307 --> 00:30:15,807
+Eğer diyelim, P birden büyük, biri almıyorum zaten, ıraksak olduğunu gördüm. Ne yapıyorum? Eğer diyorum ki P birden büyükse yakınsaktır, birden küçük eşit ise de ıraksaktır diyeceğim. Bunu görmek istiyorum. Bu burada kalsın.
+
+155
+00:30:22,932 --> 00:30:30,871
+Bu seriyi, integral testini uygulamak istiyorum. O halde serinin eninci terimi ne olur? Bir fonksiyon olarak göz önüne aldım.
+
+156
+00:30:31,091 --> 00:30:34,991
+fx eşittir, x üzeri eksi p diye yazdım değil mi? Şu.
+
+157
+00:30:36,551 --> 00:30:44,432
+Şimdi ne olması gerekir? Bunu integral testini uygulayabilmem için, verilen bu aralıkta pozitif, sürekli ve azalan olması gerekir.
+
+158
+00:30:45,152 --> 00:30:50,031
+Verilen aralığımızda bir sonsuz olduğuna göre değil mi? Şu birden farklı tabii ki.
+
+159
+00:30:50,483 --> 00:31:03,407
+O zaman ne diyorum bakın, pozitif zaten, sürekli olduğu da aşikar. Bir tek azalanlığına nasıl bakacağım, türevine bakıyorum. Bunun türevini nasıl alırım? Üst başa gelir, üstü biraz alırsa. Yani...
+
+160
+00:31:03,407 --> 00:31:22,267
+eksi p bölü x üzeri 1 artı p değil midir? Aralığı da düşünürsem bu sıfırdan küçüktür. Yani azalandır. O halde pozitif sürekli ve azalan olduğundan integral testini uygulayabilirim. Onu da nasıl uyguluyorum? İntegral birden sonsuza kadar dx bölü x üzeri p. Tamam mı?
+
+161
+00:31:22,900 --> 00:31:37,620
+Gene dedik ki, bu birinci tipi, improbent integraldir. O zaman limit B sonsuza giderken, 1'den B'ye kadar, x üzeri eksi P'de 2 şeklinde yazdım. Şimdi bu belirli integral hesaplayacağız. Bu da kolay zaten, üstünü bir artır değil mi?
+
+162
+00:31:38,031 --> 00:31:43,292
+Ne oldu? 1-P gelir. Bölü 1-P. Sınırın 1'den B'ye kadar.
+
+163
+00:31:43,951 --> 00:31:56,991
+İşte, şunu dışına attım. 1-P'yi. Limit B sonsuza giderken, üst sınır diyorum. B üzeri 1-P. Eksi alt sınır 1 olur.
+
+164
+00:31:56,991 --> 00:32:04,531
+Şu. Şunu da daha iyi görebilmek için şöyle gönüm olarak yazdım arkadaşlar.
+
+165
+00:32:05,268 --> 00:32:21,327
+Tamam mı? Şimdi, burada tabii ki B sonsuza giderken, P'nin durumuna bağlı. Eğer P birden büyük olursa, bakın, şurada birden büyük olursa, burada kalır değil mi? Yani B sonsuzsa, bir bölü sonsuz sıfır olur.
+
+166
+00:32:23,347 --> 00:32:49,887
+Öyle değil midir? Yani sonuçta, şurası eksi 1'e gidecek, onu da düzenlersem, 1 bölü P eksi 1'e, yani bu da belli bir değer olduğu için, yakınsaktır diyeceğim. O halde, demek ki P serisi, eğer P'si 1'den büyük olduysa, hiç düşünmeden yakınsak diyeceğim. Bu durumda seride yakınsak olacak. Eğer P 1'den küçükse, o zaman ne olur? Şuradan görmeye çalışacağım.
+
+167
+00:32:50,240 --> 00:33:07,039
+P'si birden küçük olursa, şu kısım B'nin üstü negatif olmaz mı? O da paya çıkar değil mi? B sonsuza giderken sonsuz olur. Bu da sonsuz olduğundan, yani integralim, improper integralim, ıraksak olur. Aynı şekilde seri de ıraksaktır.
+
+168
+00:33:07,039 --> 00:33:17,579
+Yani sonuçta, yani işlem nasıl, hani buraya geldiğimizi görmeniz için yaptım bu ara işlemi. Şunu bilmeniz gerekir arkadaşlar. Böyle bir P serisi.
+
+169
+00:33:18,291 --> 00:33:41,831
+Ya böyle yazarız, ya böyle. Ne dedik? Eğer P1'den büyükse yakınsak, eğer P1'den küçük, harmoniyi de buraya atmış olduk, eşitse de ıraksaktır. Yani şunu bilmem gerekiyor. Eğer P1'den büyükse yakınsak, diğer durumdan ıraksaktır. İşte geometrik seri gibi bunu da özetlemiş olduk değil mi arkadaşlar? Tamam mı? Evet.
+
+170
+00:33:46,355 --> 00:33:51,496
+Peki, bir tane örnek daha almışım. Bunu da çözelim.
+
+171
+00:33:52,435 --> 00:34:08,996
+Bu da integral testiyle çözülebilir. Gene diyor ki, serisi yakınsak mıdır? Bakın toplamını sormuyor. Artık bu serinin karakterini belirleyiniz diye de sorabilir. Bu seri yakınsak mıdır? Onun için ne yapıyorum? Seriye bakıyorum. Bu pozitif terimli bir seridir.
+
+172
+00:34:09,556 --> 00:34:20,435
+İşte vereceğim testlere göre hangisini uygulayacağıma karar vereceğim. Şu an bir tane test verdik. O da nedir? İntegral testidir dedik. O halde integral testini uygulayabilmem için serinin eninci...
+
+173
+00:34:20,436 --> 00:34:30,516
+Bu fonksiyon terimli bir fonksiyon olarak göz önüne alacağım. Bu fonksiyon verilen aralıkta pozitif, sürekli ve azalansa ne yapıyorum? İntegral ile test etmeye çalışıyorum.
+
+174
+00:34:31,476 --> 00:34:45,135
+İşte aldık, an dedim, fx dedim, fn de diyebilirsin. Hiç problem değil bu sembollere çok takılmıyoruz. Ne diyorum? Bir bölü x kare artı bir fonksiyonu aralığımızda bir sonsuz verilmiş bakın.
+
+175
+00:34:45,775 --> 00:34:54,016
+Pozitiftir değil mi? Problem yok. Süreklidir, süreks yapan bir değerim de yok. Azalan mıdır diye bakacağım. Bunun türevini almam gerekir.
+
+176
+00:34:59,476 --> 00:35:07,036
+x gelir, bölü paydanın karesi, ve payda zaten pozitiftir. Bu da gerçekten şu aralıkta negatiftir.
+
+177
+00:35:08,135 --> 00:35:15,776
+Değil mi? Bu. Onun için ne diyorum? Azalandır. Pozitif, sürekli azalan olduğu için integral testi uygulanabilir diyorum.
+
+178
+00:35:16,316 --> 00:35:18,856
+Integral birden sonsuza kadar diyeceğiz.
+
+179
+00:35:19,316 --> 00:35:23,195
+dx bölü x kare artı bir şeklinde, integre edelim bakalım.
+
+180
+00:35:23,603 --> 00:35:35,403
+Bu da nedir dedik? Improper integraldir. Üst sınırı sonsuz olduğu için limit B sonsuza giderken integral 1'den B'ye kadar Dx bölü x kare artı 1 diyeceğiz.
+
+181
+00:35:35,923 --> 00:35:38,943
+Bu da neyin integralidir arkadaşlar? Arktancı değil mi?
+
+182
+00:35:39,956 --> 00:35:56,296
+Yani neyin türevi var burada? 1 bölü x kare artı 1. Ark tanjant x'tir. Sınırım birden b'ye kadar. O halde limit b sonsuza giderken, üst sınır, eksi alt sınır diyorum. Ark tanjant 1 nedir? Tanjant 1 olan açı pi bölü 4'tür.
+
+183
+00:35:56,672 --> 00:36:18,192
+Arktanjant sonsuz nedir? Tanjant sonsuz olan açıda pi bölü 2'dir diyeceğiz. Buradan da sonuç ne olur? Pi bölü 4 olarak çıktı. Bakın integralin sonucu belli bir değer olduğuna göre integral yakınsaktır. Bundan dolayı da integral testine göre verilen seride ne diyeceğim? Yakınsaktır diyorum. Anlaşıldı mı arkadaşlar?
+
+184
+00:36:19,771 --> 00:36:20,211
+Anlaşıldı.
+
+185
+00:36:20,211 --> 00:36:23,831
+İntegral testi bu. O zaman tekrar konumuza dönelim.
+
+186
+00:36:34,291 --> 00:36:37,371
+Evet, şimdi ikinci testi verelim.
+
+187
+00:36:38,771 --> 00:36:40,592
+Mukayese testi diyeceğiz.
+
+188
+00:36:41,311 --> 00:36:43,072
+Ya da karşılaştırma testi.
+
+189
+00:36:43,291 --> 00:36:44,831
+İkisini de kullanıyoruz arkadaşlar.
+
+190
+00:36:44,971 --> 00:36:46,451
+Mukayese, karşılaştırma.
+
+191
+00:36:46,911 --> 00:36:50,072
+Gene pozitif terimli iki serimiz olsun.
+
+192
+00:36:50,391 --> 00:36:55,692
+Toplam A, M ve toplam B, M terimleri negatif olmayan veya pozitif iki seri olsun.
+
+193
+00:36:56,331 --> 00:36:57,931
+Birinci durumda A diyelim.
+
+194
+00:36:59,983 --> 00:37:15,503
+AN küçük eşit BN ise, yani birinci serinin terimleri, ikinci seriden küçük ya da eşit kalıyor ise, ve toplam BN serisi de yakınsak ise, toplam AN de yakınsaktır.
+
+195
+00:37:15,983 --> 00:37:23,543
+Bakın şöyle düşünüyoruz arkadaşlar, verilen serileri, bu bana verilen seri olacak, ben de özelliğini bildiğim bir seri seçmiş olacağım.
+
+196
+00:37:27,699 --> 00:37:36,439
+Burada büyük olan seri yakınsak ise ondan küçük olan seri de haydaydı yakınsak olacaktır mantığını söylüyoruz.
+
+197
+00:37:36,539 --> 00:37:47,179
+Yani bu eşitsizliğimiz varsa her terimle verilen serinin her terimi, benim seçtiğim serinin her teriminden küçük ya da eşit kalıyorsa,
+
+198
+00:37:47,659 --> 00:37:52,799
+yani büyük olan seri yakınsaksa ondan küçük olan seri de haydaydı yakınsak olacak.
+
+199
+00:37:52,999 --> 00:37:54,939
+Tersi de olursa raksaktır diyeceğiz.
+
+200
+00:37:55,476 --> 00:38:03,916
+Şimdi ikinci durumunda söyleyelim, bıraksak şeklini. Eğer her n için a n büyük eşit b n ise ve
+
+201
+00:38:04,335 --> 00:38:10,435
+Toplam BN serisi de ıraksak ise, verilen toplam AN serisi de ıraksaktır diyeceğiz.
+
+202
+00:38:10,715 --> 00:38:14,955
+Yani şurada bakın, benim seçtiğim seri küçük olan seri değil mi?
+
+203
+00:38:15,355 --> 00:38:21,935
+Küçük olan seri ıraksak ise, ondan büyük olan da haydi haydi ıraksak olacak mantığıyla söylüyoruz.
+
+204
+00:38:22,135 --> 00:38:25,596
+İşte biz bu teste mukayese testi diyoruz.
+
+205
+00:38:26,115 --> 00:38:30,835
+Bunu da tabii ki özelliğini bildiğim serileri seçerek karşılaştıracağım.
+
+206
+00:38:32,335 --> 00:38:46,076
+ne olabilir? P serisi olabilir, geometrik seri olabilir diyoruz. Tamam mı arkadaşlar? P serisini buraya gene özet olarak yazdık. Birden büyükse yakınsak, birden küçük eşsiz ıraksaktır.
+
+207
+00:38:47,603 --> 00:39:00,384
+Mukayese için genel olarak seçilen seriler, geometrik seri ya da harmonik seri ya da P serisidir. Tamam mı? Bunlarla karşılaştırır. Çünkü özelliğini bilmeliyim ki serileri test edebilelim.
+
+208
+00:39:01,703 --> 00:39:05,623
+Burada var mı takıldığımız bir yer? Şimdi örneklerde takılırsanız sorun arkadaşlar.
+
+209
+00:39:05,623 --> 00:39:07,623
+Şimdi şöyle bir...
+
+210
+00:39:08,148 --> 00:39:18,808
+Serinin karakterini belirleyiniz diyor. Şimdi seriye dikkat edersek, pozitif terimli bir seri. Pozitif terimli olması önemli arkadaşlar. Başka türlü bu testleri uygulayamayız.
+
+211
+00:39:19,923 --> 00:39:43,423
+Yani bana verilmiş pozitif terimli bir serim var. Acaba diyorum bunun karakterini integral testini mi uygulayabilirim ya da mukayese testini mi? Hiçbir kural yok. Her ikisini de uygulayabilirsin ama bazen zor olabilir. Örneğin bunun integraliyle uğraşmak biraz zahmetli olabilir. Onun için bunu diyoruz ki mukayese ya da karşılaştırma testini uygulayalım.
+
+212
+00:39:47,923 --> 00:40:13,324
+Seriyi seçeceğime karar verebilirim. Bazen de seçemiyorsam, adım adım giderek de seçebiliriz. Örneğin bakın, burada yaptığımız işlemler gibi, seriyi seçmeye çalışıyorum. Hangi seriyle bunu karşılaştırabilirim diyorum. Onun için ne yapıyorum? Serinin en inci terimini alıyorum. Düzenlemeye çalışıyorum. Ne yaptık? Bakın, şunu 3N bölü, N kare artı 1, artı 1 bölü, N kare artı 1 şeklinde ayırabildim.
+
+213
+00:40:15,956 --> 00:40:30,976
+Ne yapabilirim? Şuna dokunmadım. Şunun paydasındaki birine 60 olsan, ne olur? Bu daha küçük kalır. Değil mi? Şu. Buradan da sadeleştirirsek, 3 bölü m kare olur.
+
+214
+00:40:33,656 --> 00:40:38,756
+Burada da, hatta bunun da bir tane enine 60 olalım.
+
+215
+00:40:39,184 --> 00:40:49,704
+Sonuçta, 3 bölü n kare artı 1 bölü n kare, 4 bölü n kare şeklinde, şöyle bir eşitsizliğin doğrudur. Her en büyük eşit bir için arkadaşlar.
+
+216
+00:40:50,903 --> 00:40:55,104
+Ben onu bakın, hiç bu işlemleri yapmadan da burada,
+
+217
+00:40:55,648 --> 00:41:03,008
+Şöyle bakarız kabaca, n'leri sadeleştirdiğimizi düşünürsek, bir böyle n kare ile test edelim diyebilirim.
+
+218
+00:41:03,348 --> 00:41:14,888
+Burada dördün olması veya üçün olması hiçbir şey ifade etmez. Yukarıda bir özellik verdik. Sonsuz terimli serinin baş tarafına terim eklemek, çıkarma karakterini değiştirmez dedik değil mi?
+
+219
+00:41:15,307 --> 00:41:22,228
+Bir sabitle de çarpma karakterini değiştirmez demiştik. İki tane özellik yukarıda vermiştik. Bunları unutmayın dedim hatta.
+
+220
+00:41:23,648 --> 00:41:32,668
+Ben burada 4'ü atabilirim. Çünkü ne yapacağım? Sonuçta neyi anlayacağım burada? Nasıl bir seri seçeceğimi düşünüyorum.
+
+221
+00:41:33,108 --> 00:41:56,467
+1 bölü n kare, yani p serisini seçmeliyim diye düşünüyorum. Onun terimlerini 4 ile çarpmak serinin karakterini değiştirmeyecektir diyorum. Onun için ben bu uzun işlemi yapmadan da şurada bakarak diyebilirim ki işte bunu 1 bölü n kareyi seçerek test edebilirim diyorum. Tamam mı arkadaşlar? O halde ne yapıyoruz? Verilen şu seriyi dedik.
+
+222
+00:41:56,916 --> 00:42:06,716
+Küçüktür. Seri olarak yazmaya çalışıyorum. En eşitliği birden sonsuza kadar 4 bölü n kare. 4'ü de serinin başına çarpan olarak atarsam,
+
+223
+00:42:07,123 --> 00:42:32,063
+Burada, bu benim bir bölü en karem ne olur? P serisi olur. P'si nedir? 2'dir. 2'de birden büyük olduğu için P serisine göre yakınsaktır. O halde bakın benim seçtiğim seri, büyük olan seri değil mi? Büyük olan seri yakınsaksa, ondan küçük kalan seri de haydi haydi yakınsak olacaktır diyoruz mukayese testine göre. Tamam mı? O halde verilen seri yakınsaktır diyeceğiz.
+
+224
+00:42:34,835 --> 00:42:37,596
+Anladık mı? Evet hocam.
+
+225
+00:42:38,615 --> 00:42:43,475
+Yani istediğin, tabii biraz sonra limit şeklini verirsek işimiz daha kolay olur.
+
+226
+00:42:43,615 --> 00:42:48,036
+Her istediğim aklıma gelen her şeyi seçerim, test ederim, oluyor mu olmuyor mu diye bakarım.
+
+227
+00:42:48,355 --> 00:42:56,495
+Ama dediğim gibi, hani düşünemiyorsak baştan buraya bakarak işte bir bölen kareyi seçeceğimi, böyle adım adım da gidebiliriz.
+
+228
+00:42:57,295 --> 00:42:58,675
+Şimdi gelelim şuraya.
+
+229
+00:42:59,507 --> 00:43:06,248
+n eşittir 2'den sonsuza kadar, bir bölü elenen serisinin karakterini inceleyiniz diyor.
+
+230
+00:43:07,128 --> 00:43:10,467
+Burada da dikkat ederseniz, gene bu pozitif terimli bir seridir.
+
+231
+00:43:10,967 --> 00:43:16,128
+Diyorum ki, ya integral testiyle test edeceğim, ya da mukayeseyi kullanacağım.
+
+232
+00:43:16,128 --> 00:43:19,148
+E şimdi diyorum ki, mukayeseyi kullanalım, daha kolay.
+
+233
+00:43:19,588 --> 00:43:20,668
+Bunun için de ne yapıyorum?
+
+234
+00:43:21,788 --> 00:43:24,128
+Şu, n eşittir 1'den.
+
+235
+00:43:25,396 --> 00:43:47,396
+Başlayıp, şunu özelliği biliyoruz değil mi? Elen, enin en'den küçük olduğunu biliyoruz biz. Elen bir desen, sıfır olur değil mi? O da birden küçüktü. Şu özelliği biliyoruz. Enin de küçük, e üzeri en olduğunu biliyoruz. Yani sonuçta elen, enin bir bölü en olduğunu, enden küçük olduğunu biliyorum şu özelliği. Şimdi ben kendi...
+
+236
+00:43:48,755 --> 00:43:58,435
+Serime dönüyorum. Neyi seçmeye çalışacağım burada arkadaşlar? Bakın bir bölü elenende ne olur o zaman? Bir bölü enden büyük olur.
+
+237
+00:44:01,096 --> 00:44:10,915
+Yani sorumuza dönüyoruz. Her, şurada en 2 vermiş için elenen küçük endir dedik. Bu böyleyse, bu da böyle olmaz mı tersi? Budur.
+
+238
+00:44:11,668 --> 00:44:39,008
+O zaman ben bu durumda neyi seçmeliyim? Bir bölü en harmonik serisini seçmeliyim. Yani bakın yazdık, bu bana verilen seridir, toplam seri. Bu da benim buradan bakarak düşündüğüm, yani şu özelliği bilmem gerekir tabii ki, şu. E bu da ne oluyor o zaman? Bundan büyük. Şimdi benim seçtiğim seri şu, bunun özelliğini biliyorum, harmonik seridir, hiç düşünmeden ıraksaktır diyeceğim. O halde ne yapıyorum? Mukayese testine göre.
+
+239
+00:44:39,891 --> 00:45:06,311
+Benim seçtiğim seri, bakın küçük olan seri değil mi? Iraksaksa, ondan büyük olan seri de haydi haydi raksak olacaktır. Bu ıraksak olduğundan diyorum, mukayese testine göre bu seride nedir? Iraksaktır diyeceğiz. Tamam mı arkadaşlar? Yani şu, yukarıdaki ikinci, şuna uygun değil mi? Şu. Bu benim beğen dediğim benim serim oluyor. Aende verilen seri.
+
+240
+00:45:08,211 --> 00:45:09,952
+Evet, devam edelim.
+
+241
+00:45:12,112 --> 00:45:12,912
+Evet.
+
+242
+00:45:13,844 --> 00:45:35,444
+Tamam, mukayese. Şimdi gelelim limit şekline. Bu işimizi biraz daha kolaylaştıracak arkadaşlar. Yani bu mukayeseyi bazen hangi seriyi seçeyim diye düşünürüz. Biraz zor olabilir ama limit testi bizim işimizi kolaylaştıracak. Bunu da şöyle, gene pozitif terimli seri diyoruz. İki seri olmak üzere toplam AM ve toplam B.
+
+243
+00:45:41,844 --> 00:45:53,844
+L olsun. Burada 3 durum karşımıza çıkacak arkadaşlar. Eğer birinci durumda L sıfır sonsuzdan farklı çıkarsa ise yani limiti her iki seride aynı karakterdedir.
+
+244
+00:45:55,668 --> 00:46:04,567
+Eğer L0 çıkarsa, L eşittir 0 ve toplam beğende yakınsak ise, o zaman verilen seri de yakınsaktır diyeceğiz.
+
+245
+00:46:05,007 --> 00:46:09,887
+Gene ben burada tabii ki bir tane seri seçeceğim. Bu da bana verilen seri olacak. Limitine bakacağım.
+
+246
+00:46:10,487 --> 00:46:17,487
+Eğer seçtiğim seri yakınsak, limitle 0 çıkıyorsa, o zaman işim tamam diyeceğim. Verilen seri yakınsaktır.
+
+247
+00:46:17,940 --> 00:46:25,579
+Eğer L sonsuz çıkarsa, benim seçtiğim bir seri de ıraksak ise, o zaman verilen seri de ıraksaktır diyeceğiz.
+
+248
+00:46:26,079 --> 00:46:35,500
+Onun için bakın, şurada, yukarıdaki bu kadar işlemi yapıp, hani düşünmeden, kendimiz burada bakın, harmonik seriyi seçtin diyelim.
+
+249
+00:46:35,619 --> 00:46:42,059
+Bu ıraksak bir seridir. Limit, L sonsuza giderken, A, N bölü, B, N'e bakacaksın değil mi arkadaşlar?
+
+250
+00:46:42,612 --> 00:47:06,251
+Bu. Bu da ne olur? En bölü, elenen olur. Sonsuz bölü, sonsuzdan oradan limitine bakarak ya bunun limiti ne çıkmalı sizce? Raksak olduğu için biliyoruz bu serinin raksak olduğunu. Ya sonsuz çıkması gerekir ya da sıfırdan farklı çıkması gerekir limitin. O zaman doğru seçmişsindir. Öbür türlü ne yaparsın? Dersin ki seçtim, uymadı. Gidip değiştirebilirim diyeceksin. Tamam mı arkadaşlar?
+
+251
+00:47:06,612 --> 00:47:12,391
+Buna da biz limit şekli diyoruz ya da bazen parantezine limit mukayese de deriz.
+
+252
+00:47:12,632 --> 00:47:15,811
+Tamam mı? Yani şu mukayesinin limit şeklidir diyeceğiz.
+
+253
+00:47:16,271 --> 00:47:19,371
+Şimdi bakın bunu örnekler üzerinde şöyle bir delemeye çalışalım.
+
+254
+00:47:20,340 --> 00:47:30,000
+Toplam, en eşittir, birden sonsuza kadar bir bölü, bir artı köken serisinin karakterini belirleyiniz. Yani seri yakınsak mıdır, ıraksak mıdır?
+
+255
+00:47:30,380 --> 00:47:42,480
+Şimdi burada şu seriye bakarak, pozitif terim seri olduğu aşikar zaten başka türlü uygulayamam. Limit mukayeseyi kullanalım. Baktık, integral zor dedik, karşılaştırma zor.
+
+256
+00:47:42,480 --> 00:47:48,320
+Acaba limit şekliyle yapabilir miyim diye düşünüyorum. Onun için ne yapmalıyım? Özelliğini bildiğim.
+
+257
+00:47:48,340 --> 00:48:00,780
+Bir seri seçmedim. Şimdi sizce burada nasıl bir seri seçebilirim? Özelliğini bildiğim bir seri. Ya P serisi seçeceğim, ya geometrik seri seçeceğim değil mi? Ne seçebilirim buna bakarak sizce?
+
+258
+00:48:06,036 --> 00:48:06,536
+Evet.
+
+259
+00:48:13,012 --> 00:48:15,072
+Nasıl karar vereceğiz ki?
+
+260
+00:48:16,152 --> 00:48:25,152
+Serinin eninci terimine bakarak karar verebilirsin şurada. Ne seçebilirsin? Özelliğini de biliyorsun. Diyorum ya, ya geometrik seri seçeceksin ya da P serisi seçeceksin.
+
+261
+00:48:28,711 --> 00:48:30,351
+Bir bölü kökeni seçemez misin?
+
+262
+00:48:32,831 --> 00:48:37,572
+Bir bölü köken serisi nasıl bir seridir? Ne serisidir bir bölü köken?
+
+263
+00:48:42,579 --> 00:49:08,320
+En üzeri de 1 bölü 2 diye yaz onu. 1 bölü en üzeri 1 bölü 2 diye yaz. Ne serisidir o? Geometrik seri mi? P serisidir. P serisi. Tamam, P'si nedir peki? 1 bölü 2 dedik. Evet, o da birden küçük mü, büyük mü? Küçük. O zaman ne diyeceğim? Bıraksak diyeceğim. Bıraksak bir seri seçtim, ne yapacağım? Getireceğim. Şöyle bir limite bakacağım.
+
+264
+00:49:08,755 --> 00:49:30,816
+Düşünün diye soruyorum arkadaşlar. Sınav için sormuyorum size. Biraz hani katılmanızı sağlamak için soruyorum. Bakın, dedim ki şuraya baktım. Burada zaten bu çok basit bir soru. Tabii ilk olduğu için göremeyebilirsiniz. Bunu seçeceğim. Başka seçeneğim yok çünkü. Bir bölü kökeni seçtim. Bu da benim bildiğim P serisi dedim. Birden küçük olduğu için P'si bir bölü iki. Iraksak diyorum.
+
+265
+00:49:31,476 --> 00:49:42,316
+Şimdi ne yapıyorum? Limit mükayeseyle çözmeye çalışıyorum. Limit en sonsuza giderken an dedim, bana verilen serinin en inci terimini yazdım. Bu da benim seçtiğim beğendir. Tamam mı?
+
+266
+00:49:42,592 --> 00:50:05,872
+Bunu ne yapıyorum? Düzenlersen, limit en son size giderken, ters çevirip çarptığımızda ne olur? Köken bölü, bir artı köken. Bunda limiti artık bir değil midir? Düşünemezsem, paydasın köken parantezini alırım, kökenler gider, bir bölü, bir artı bir bölü köken olur, bir bölü köken de sıfıra gideceğine göre sonuç nedir? Birdir diyeceğim. Bir ise teste bakın.
+
+267
+00:50:06,516 --> 00:50:13,196
+Ne dedik? Eğer limiti sıfır ve sonsuzdan farklı çıkıyorsa, her iki seri aynı karakterlidir.
+
+268
+00:50:13,615 --> 00:50:20,056
+Yani seçtiğim seri ıraksak olduğundan, verilen seri de limit testine göre ıraksaktır diyeceğiz.
+
+269
+00:50:21,216 --> 00:50:26,376
+Biraz ezber arkadaşlar ama bir iki örnek çözdüğünüzde aklınızda kalır. Anladık mı?
+
+270
+00:50:28,692 --> 00:50:51,032
+Evet, şimdi geldik buna. Serisinin karakterini belirleyelim. Gene konumuzun başlığı olarak pozitif terimli seri diyoruz. Limit şeklini kullanarak çözmeye çalışalım. Gene özelliğini bildiğimiz bir seriyi seçelim. Hadi bekliyorum, seçmeye çalışın. Ne seçebilirim?
+
+271
+00:50:51,891 --> 00:51:01,491
+Ya harmonik seri, ya P serisi, ya geometrik seri bir tanesini seçmeliyim. Ben her zaman harmonik demeyebilirim, P de diyebilirim. Çünkü harmonik de P'nin içinde.
+
+272
+00:51:12,179 --> 00:51:15,259
+Evet, yorum yapın. Birbirine tartışalım. Ne seçelim?
+
+273
+00:51:15,259 --> 00:51:16,319
+Harmonik olur mu?
+
+274
+00:51:16,880 --> 00:51:18,299
+Bir bölü eni mi seçiyorsun?
+
+275
+00:51:18,859 --> 00:51:19,039
+Evet.
+
+276
+00:51:19,039 --> 00:51:28,940
+Seç, tamam. Harmonik seri diyorsun, ıraksak diyorsun. Limit en sonsuza giderken, a, en bölü, b, ene bak. Hadi 2 dakika yaz kağıdın varsa. Limit ne çıkıyor?
+
+277
+00:51:33,204 --> 00:51:34,804
+Seçebilirsin, özgürsün.
+
+278
+00:51:37,044 --> 00:51:49,384
+Yani nasıl diyeceksin? Limit en sonsuza giderken sinüs, üçüncü dereceden, bir bölü en bölü, bir bölü en diyorsun değil mi? O limiti nasıl bulacaksın? İşin zor değil mi?
+
+279
+00:51:50,344 --> 00:51:51,184
+Evet, zormuş.
+
+280
+00:51:51,504 --> 00:51:53,264
+Peki ne seçmen lazım sence?
+
+281
+00:52:00,019 --> 00:52:04,660
+Bir böyle endil de ne seçebilirsin? Limiti yazdığında bak burada görmen gerekir.
+
+282
+00:52:08,755 --> 00:52:10,615
+Evet, başka fikri olan arkadaşlar.
+
+283
+00:52:10,635 --> 00:52:11,835
+Bir bölü enin küpü mü?
+
+284
+00:52:12,135 --> 00:52:19,775
+Aynen, aynen. Bir bölü enin küpünü seçtiğinde hepsinin küpü parantezini alabilirsin değil mi? Bitti. Bu kadar sorunun cevabı.
+
+285
+00:52:20,596 --> 00:52:48,596
+Onu işte dediğim gibi özgürsün, istediğin seriyi seç ama yerine yazarsın, bazen limit alamıyorsun, bazen işte işine yaramıyor, değiştirebilirsin. Evet, baktık, pozitif terimli bir seri dedik, limit şeklini uygulayarak test edelim. Bir bölü, n küpü seçtik. Bu da bizim bildiğimiz P serisidir dedik. P'si 3'tür, birden büyük, yakınsak. Yakınsak bir seri seçtim. Şimdi bunu test ediyorum. Limit en sonsuza giderken, an yani sinüs, bir bölü.
+
+286
+00:52:48,596 --> 00:52:51,255
+bölü n'in kübü dedik, bölü bn, bu.
+
+287
+00:52:52,467 --> 00:53:20,447
+Tamam mı? Limit en sonsuza giderken, şöyle hepsinin kübü şeklinde yazmış olalım. Bu parantezin için ne olur arkadaşlar? En sonsuza giderken, hatırlayın bakın, limit x sıfıra giderken, sinüs x bölü x'in limitinin 1 olduğunu biliyorum değil mi? Burada da dönüşüm yapmama artık gerek yok. 1 bölü n'e x dersem, en sonsuza giderken x sıfıra gider. Yani sinüs x bölü x şeklinde bir ifade, bunun da limiti 1'dir. Ama biz bunu fonksiyonlardan biliyoruz.
+
+288
+00:53:20,467 --> 00:53:33,347
+Artık uzatmadan, bunun limiti 1'e gider. 1 üzeri 3'te nedir? 1'dir. Bu da 0 ve sonsuzdan farklı olduğuna göre, limit testine göre, her iki seride aynı karakterdedir.
+
+289
+00:53:33,347 --> 00:53:42,668
+Yani, seçtiğimiz seri yakınsak olduğundan, verilen seride nedir? Yakınsaktır. Anlaşıldı mı arkadaşlar? Şu limit tamam değil mi?
+
+290
+00:53:46,579 --> 00:53:47,460
+Var mı problem?
+
+291
+00:53:47,940 --> 00:53:48,780
+Yok hayır hocam, tamam.
+
+292
+00:53:48,880 --> 00:53:50,159
+Tamam, devam edelim.
+
+293
+00:53:52,559 --> 00:54:00,679
+Evet, şimdi diyelim ki toplam en eşittir birden sonsuza kadar iki en bölü, en artı birin.
+
+294
+00:54:01,072 --> 00:54:23,172
+karesinin karakterini belirleyiniz. Yine baktık, pozitif terimli bir seri. Bunu hangi testle uygulayacağız? İşte integral testi var, mukayese testi var, limit şekli var, limit mukayese ya da hangisiyle test edelim? Evet. Biraz düşünün bakalım, ne seçelim?
+
+295
+00:54:35,027 --> 00:54:36,267
+Ne seçebiliriz?
+
+296
+00:54:43,155 --> 00:54:47,456
+Bir P serisi seçmek zorundayız değil mi? Geometrik serisi seçemeyiz. Ne seçelim?
+
+297
+00:54:50,695 --> 00:55:02,795
+Bir bölü N seçebiliriz değil mi? Bakın şuradan gör. N'leri sadeleştirir gibi. En büyük N'i ne olur? N kare olur. Burada da N gelir. Bir bölü N. Bunu bir seçim. Aklıma bu gelsin değil mi önce?
+
+298
+00:55:04,179 --> 00:55:14,979
+İstediğini seçebilirsin. Burada atıyorum bir böyle n kareyi seçersin. Bakarsın oluyor mu, olmuyor mu denersin. Tamam mı? Evet, Harmonik seriyi seçtik.
+
+299
+00:55:15,795 --> 00:55:41,655
+Bu da nedir? Iraksak seridir. Biliyoruz özelliğini. Limitine bakıyoruz. Limit n sonsuza giderken, a n'i yazdım. 2n artı 1 bölü n artı 1'in karesi bölü b n. Bu da benim seçtiğim seri. 1 bölü n'dir. Bunları düzenlersek, 2n kare ters çevirip çarpma n bölü faydanın karesi değil mi? Bu da gene ne olur? Açtığınızda şunu n kare artı 2n artı 1 gelir.
+
+300
+00:55:42,096 --> 00:56:02,836
+Payı polinom, payı da polinom dereceleri aynıysa kat sayılarının oranına eşittir. Yani sonuç ikidir. Bu da gene sıfır sonuçtan farklı olduğu için limit testine göre her iki seri aynı karakterlidir. Yani seçtiğim seri ıraksak olduğundan verilen seri de nedir? Raksaktır diyeceğim. Tamam mı arkadaşlar? Anlaşıldı mı?
+
+301
+00:56:04,156 --> 00:56:04,456
+Evet.
+
+302
+00:56:04,456 --> 00:56:09,016
+Evet, yani burada n kareyi seçmiş olsam ne olur acaba?
+
+303
+00:56:09,844 --> 00:56:32,784
+Bir böyle n kareye atılır. Söyle. O zaman P serisi diyeceğim. Yakınsak seçtim diyelim değil mi? Şurada n kareyle çarptığımı düşünürsem, değil mi? Tert çevirdim. 2 n küp gelir, artı n kare. Burada da yani sonuçta sadeleştiğinde payında n kalır değil mi? O zaman sonsuz olur mu? Demi sonsuz çıkar değil mi?
+
+304
+00:56:33,619 --> 00:57:01,359
+Sonsuz çıktığına göre, o zaman ne diyeceğim? Olmadı. Çünkü benim serim yakınsak seçtim. Bu limitim ya sıfır çıkmalıydı ya da sıfırdan farklı çıkmalıydı. O zaman seçtiğim seri olmadı. Geriye dönüp başka seriyi seçeceğim. Onun için dediğim ya, limitli özgürsün. Aklına ne geliyorsa seç. Ama şu şart uygulayabiliyorsan problem yok. Bakın, diyelim ki bir bölen kareyi seçtim. Sonuç sonsuz çıktı. Sonsuz seçtiysem bakın.
+
+305
+00:57:01,619 --> 00:57:19,940
+Tanımı tekrar göstereyim size. Bakın sonsuz çıkıyorsa, seçtiğim seri de ıraksak ise seri ıraksaktır. Ama benim seçtiğim seri yakınsak olduğu için olmadı. Ben yakınsak bir seri seçtiğimde L'nin sıfır çıkması gerekir ya da sıfırdan farklı çıkması gerekir değil mi? Sonsuz çıkamaz.
+
+306
+00:57:21,012 --> 00:57:39,211
+Anlıyor musunuz demek istediğimi? Biraz hani düşünün diyor, konuşuyorum tamam mı? Evet, şimdi geldik buraya. Evet, hadi bunu çözün bakalım. Gene aynı soru, karakterini belirleyiniz. Pozitif terimli bir seri diyorum. Ne seçebilirim? Hadi bekliyorum, bunu yapın lütfen. Bir dakika bekliyorum.
+
+307
+00:57:57,684 --> 00:58:20,923
+Ne seçiyorsunuz? Onu duyayım sizden. Geometrik seri. Pardon? Geometrik seri. Neyi seçtin? Geometrik seri. Bir bölü. Bir bölü E üzeri en eksi bir şeklinde. Yok tamam onu geometrik seri seçmen tamam yeterlidir yani orada incelemene de gerek yok. Kafanda da inceleyebilirsin. Tamam doğru düşünüyorsun.
+
+308
+00:58:24,724 --> 00:58:27,324
+Başka ne seçilebilir? Seçen var mı?
+
+309
+00:58:30,771 --> 00:58:36,972
+Burada zaten aklımıza ilk gelen arkadaşlar, ya bir bölü E üzeri N'i seçersin, ya da bir bölü köken.
+
+310
+00:58:36,972 --> 00:58:39,271
+Bir bölü köken, harmonik mi?
+
+311
+00:58:39,771 --> 00:58:45,692
+Bir bölü köken serisi, en üzeri bir bölü, en üzeri bir bölü 2'yi düşünürsen, P serisidir.
+
+312
+00:58:45,692 --> 00:58:46,472
+P serisidir.
+
+313
+00:58:46,472 --> 00:58:49,791
+Bir bölü 2, birden küçük, ıraksaktır dersin değil mi?
+
+314
+00:58:50,192 --> 00:58:58,391
+O bir ıraksakla bir test et onu, yani A, N bölü B, N dersen, bir bölü E üzeri N kalır limitinde, o da sıfır olur.
+
+315
+00:58:58,771 --> 00:59:09,152
+Olmaz. Seçemezsin bir bölü kökeni. Çünkü seçtiğin seri ıraksaktı, senin limitin de sıfır çıktı ya, olmuyor. Sıfırdan farklı çıkması gerekirdi.
+
+316
+00:59:09,152 --> 00:59:21,652
+Bu seçim seri, dediğimi anlıyor musun? Hani yorum yapıyorum, konuşuyorum ki sizin de kafanızda bir şeyler oluşsun diye. Arkadaşınızın dediği gibi geometrik seriyi seçmeliyim. Evet, bakalım artık cevabına.
+
+317
+00:59:22,132 --> 00:59:49,172
+Bakın, bir bölü kökeni kendiniz de uygulama olarak yapın, seçin, olmuyor. Bakın, gözümle yaptım, bir bölü köken dedim, enler gitti, bir bölü, e üzeri, n kaldı. En sonsuza giderken, bir bölü sonsuz sıfır çıktı. Yani limitim sıfır çıktı ama benim seçtiğim seri ıraksa aktı, olmadı. Onun için attım onu, geriye bu kaldı. Yani dediğim gibi, ilk öğrencinin karşısına çıktığımda, ya der ki bir bölü, e üzerini seçeyim ya da bir bölü kökeni seçeyim der.
+
+318
+00:59:49,536 --> 00:59:59,056
+Başka seçeneği yok. Evet, şimdi geldik, karar verdik. En eşittir birden sonsuza kadar bir bölü E üzeri N serisini seçiyoruz.
+
+319
+01:00:00,000 --> 01:00:17,819
+seri şeklinde de yazmam gerekir değil mi? N birden başlıyor, problemim yok. O zaman 1 bölü E ile üretilmiştir. 1 bölü E'nin bir tanesini dışına attım. 1 bölü E üzeri N-1 şeklinde. İşte bildiğim geometrik seridir. Bunun A'sı 1 bölü E'dir. R'si de 1 bölü E'dir.
+
+320
+01:00:18,224 --> 01:00:35,744
+Yazdık şuraya. Mutlak değer R'ye de baktık. 1 bölü E. O da birden küçüktür. Yakınsak bir seri seçtim. Yakınsak seri seçtiğim için limit ne olmalı? Ya 0 çıkmalı ya da yani sonsuzdan farklı çıkması gerekir. Kısaca onu söylemiş oluyorum.
+
+321
+01:00:35,952 --> 01:00:39,652
+Limit en sonsuza giderken, am bölü b'ye bakıyorum.
+
+322
+01:00:40,352 --> 01:00:46,912
+İşte yerine yazdığımızda, sonuçun oğlu bir bölü köken olur. Bunun da limiti sıfırdır diyeceğiz.
+
+323
+01:00:48,152 --> 01:00:53,592
+Sıfır çıktığına göre, seçtiğim seride yakınsak olduğundan diyoruz. Bakın tekrar görün şurada.
+
+324
+01:00:55,123 --> 01:01:21,364
+ise toplamda yakınsaktır. Limit 0 ve seçtiğim seride yakınsak ise, verilen seride yakınsaktır diyeceğiz. Tamam mı? O halde limit testine göre serimiz yakınsaktır diyeceğiz. Tamam mı arkadaşlar? Anlaşıldı sanırım. Evet, şimdi artık bunu geçelim. Diğer dördüncü testimiz de oran testi.
+
+325
+01:01:22,068 --> 01:01:41,068
+Oran testi de gene pozitif terimli seriler için test diyoruz. Toplam AN pozitif terimli bir seri ve limit en sonsuza giderken AN dediğimiz AN artı bir serinin eninci teriminin AN artı bir bölü AN limitine bakıyoruz. Bu da L olsun diyoruz.
+
+326
+01:01:48,115 --> 01:01:50,615
+Verilen toplam seri yakınsaktır.
+
+327
+01:01:51,219 --> 01:02:19,159
+L'si birden büyük ise toplam seri ıraksaktır. L1 ise bu test sonuç vermez. Başka testi denememiz gerekir. Yani ne yaptık? Bana pozitif denemli bir seri verildi. Oran testini uygulamak istiyorsam ne yapıyorum? Limit en son size giderken A'n artı bir bölü A'n ifadesine bakıyorum. Bunun limiti birden küçük çıkarsa yakınsak, birden büyükse ıraksak, biri eşitse başka testi uygulayacağız. Bu test yeter.
+
+328
+01:02:19,219 --> 01:02:45,779
+değerli değil, diyeceğiz arkadaşlar. Oran testini de, kural değil, buraya yazmadık ama, serinin eninci terimi faktöryel içeriyorsa, oran testini uygulamak daha avantajlıdır. Yani bizi sonuca daha çabuk götürür diyoruz. Yani, eninci terimde faktöryel ifadesi varsa, ilk aklımıza oran testi gelmelidir, demeliyiz. Ama diğerler için bir şey diyemeyeceğim, öyle bir kuralım yok.
+
+329
+01:02:46,195 --> 01:03:11,096
+Kural demeyeyim de, hani bize şimdi konu başlığı altında sorunları çözmek kolay. Ama bitsin testler, rastgele bir örnek vereyim. İşte bunun karakterini belirle dediğimizde, işte ne yaparız? Eninci terimine bakarız. İşte faktörel varsa bir oran testini uygulayalım ama kural değil. O ilk aklımıza gelen ifade olmuş olsun. Bilgi daha doğrusu. Evet, şimdi bunu uygulayalım.
+
+330
+01:03:11,507 --> 01:03:22,427
+İşte dediğim gibi, en eşitli birden sonsuza kadar 99 üzeri n bölü, n faktör serisinin karakterini belirleyiniz diyor bize.
+
+331
+01:03:22,807 --> 01:03:28,427
+Şimdi baktım, integral testini uygulayabilir miyim? Uygulayabilirim ama işim zor olur.
+
+332
+01:03:28,728 --> 01:03:30,708
+İntegral almak çok da kolay değil diyorum.
+
+333
+01:03:31,168 --> 01:03:50,068
+Mukayeseyle yapmak da zor dedik. Acaba dedim, oran testini uygulayabilir miyim? Çünkü bunun eninci terimine bakıyorum. Faktürel ifadesi var. O zaman diyoruz ki, oran testini uygulayalım. O zaman serinin eninci terimi dediğim ifade, 99 üzeri n bölü n faktürel.
+
+334
+01:03:50,068 --> 01:03:56,527
+Neye bakmalıydım? Limit en sonuçta giderken, an artı bir bölü, an ifadesine bakıyorum.
+
+335
+01:03:57,139 --> 01:04:18,079
+AN artı 1'i önce oluşturalım. 99 üzeri N artı 1, bölü N artı 1 faktürel olur değil mi? Bölü AN'i de aynen yazdık. Burada tek dikkatli işlem yapmak için hiç zorluk yok arkadaşlar. Limit en sonunda giderken, bu da 99 üzeri N artı 1, bölü N artı 1 faktürel. Bunu da ters çevirirsek şu. Şunu nasıl yazarım ben?
+
+336
+01:04:18,463 --> 01:04:46,463
+n artı 1 çarpı n faktöreel deriz değil mi? n faktöreller gitti, 99 üzeri n'lerde gider, 99 bölü n artı 1 kalır. Sadeleştirmeyi görüyoruz değil mi? Şuradan n artı 1, yani görebiliyor muyuz diyelim, yazmadık da, n artı 1 çarpı n faktöreel diye yazmış olalım değil mi? n artı 1 faktöreli, n faktöreller gitti, n artı 1 kaldı. 599 çarpı 99 üzeri n diye yazmış olayım, onlar da gider.
+
+337
+01:04:46,463 --> 01:05:07,303
+bitti, şu kalır. Buradan da en sonsuza giderken bu nereye gitti? Sıfıra gitti. E sıfırda birden küçük olduğuna göre, oran testine göre ne diyeceğim? Yakınsaktır diyeceğim. Tamam mı? Dikkat ederseniz işlem hatası yapmamak başka da bir şey yok. Kolay. Evet, şimdi gelelim buna.
+
+338
+01:05:08,467 --> 01:05:28,547
+n eşittir birden sonsuza kadar 2 üzeri n bölü n serisinin karakterini belirleyiniz. Hadi bunu oran testini uygulayın bakalım ne çıkıyor. Yakınsak mı, raksak mı? Bekliyorum arkadaşlar. Bakın şuradan bakarak önce limit n sonsuza giderken an artı bir bölü an limitine bir bakın bakalım ne çıkıyor.
+
+339
+01:05:52,884 --> 01:05:55,623
+Bunlar var mı? Yakınsak mı, raksak mı ne çıktı limit?
+
+340
+01:05:58,623 --> 01:05:59,264
+Yakınsak.
+
+341
+01:06:00,123 --> 01:06:01,123
+Limiti ne buldunuz?
+
+342
+01:06:02,744 --> 01:06:03,344
+2.
+
+343
+01:06:04,023 --> 01:06:06,923
+Bakalım. Evet, doğru. Evet, limit 2.
+
+344
+01:06:08,304 --> 01:06:11,043
+Yakınsak diyorsun 2. Birden büyük oluyor.
+
+345
+01:06:12,003 --> 01:06:13,344
+Raksak demen gerekir.
+
+346
+01:06:15,123 --> 01:06:16,083
+Değil mi? Karıştı.
+
+347
+01:06:17,244 --> 01:06:18,384
+Doğru limitin.
+
+348
+01:06:19,059 --> 01:06:45,980
+AN artı 1 bölü AN'e bakıyoruz. Pozitif terimli seri dedik. Oran testini uyguluyoruz. Yazdık. 2 üzeri N artı 1 bölü, N artı 1 bölü. 2 üzeri N bölü N. Bunu düzenlersek, ters çevirip çarptığımızda 2 üzeri N'ler gider. 2 çarpı N bölü N artı 1 kalır değil mi? Bunda limiti 1'dir. 2. Limit oran testine göre bak bakalım. Birden büyüksene diyoruz, ıraksak diyoruz. Kafamız karışması. Tamam mı?
+
+349
+01:06:46,579 --> 01:07:07,960
+Evet, limiti birden büyük çıktığı için ne diyoruz? Iraksaktır diyoruz. Peki buna bir bakın, bunun limiti ne çıkacak? Bakın bu da hemen faktörel ifadesi içeriye, eninci terimi, pozitif terimli bir seridir. Hemen diyoruz ki oran testini uygulayalım. İlk önce aklımıza gelen bu olsun. Evet, limitini bulun bakalım ne çıkıyor arkadaşlar.
+
+350
+01:07:12,179 --> 01:07:17,919
+Birden büyük çıkarsa, ıraksak diyoruz. Birden küçük çıkarsa, yakınsak, oran testine göre.
+
+351
+01:07:29,652 --> 01:07:30,412
+Iraksak mı?
+
+352
+01:07:31,112 --> 01:07:38,032
+Bilmiyorum, bakacağım. Aklımda kalmıyor öyle sonuçları. Ne buldun, limiti, onu en azından test etmiş olalım.
+
+353
+01:07:38,032 --> 01:07:43,832
+Bakalım, doğrudur. Evet, tamam.
+
+354
+01:07:44,532 --> 01:08:06,632
+Bravo. Evet, şimdi ne yapıyoruz? A n artı 1 bölü a n dedik. Hemen n artı 1 üzeri n artı 1 bölü n artı 1 faktöryel, n üzeri n bölü n faktöryel. Şimdi bunu düzgünce düzenlemeye çalışalım. Birinciyi aynen yazdım, ikinciyi tert çevirdim bakın. Şimdi şurada n artı 1 üzeri n artı 1'i nasıl yazarım? n artı 1 üzeri n çarpı n artı 1 diye yaz.
+
+355
+01:08:07,023 --> 01:08:29,703
+n artı 1 faktöriyeli de, n artı 1 çarpı n faktöriyel, n faktöriyeller gitti, tamam mı? Sonra ne kaldı şurada? n artı 1 üzeri, bir tane n artı 1'imiz de gitti şuradaki n artı 1 ile. Sonuçta n artı 1 üzeri n bölü, n üzeri n kaldı. Onu da şöyle yazarım artık ortak parantezinde şu.
+
+356
+01:08:30,095 --> 01:08:44,536
+Parantezin içini de bölersek, 1 artı 1 bölü en üzeri, bu da bizim fonksiyonlarda bildiğimiz, değil mi? Şurası k ise, e üzeri k'ya gider. Burada k'sı 1 olduğuna göre, limit en sonsuza giderken bu e'ye gidecektir.
+
+357
+01:08:44,796 --> 01:08:53,876
+E de birden 2.78 şeklinde olduğu için birden büyük olduğuna göre, oran testine göre seri, ıraksaktır diyeceğiz. Tamam mı arkadaşlar?
+
+358
+01:08:54,676 --> 01:08:58,996
+Gayet kolay, bir tek işlem hatası yapmamak, düzgün sağdileştirmek.
+
+359
+01:09:00,595 --> 01:09:24,195
+Evet, buna bir bakın bakalım. Toplam, en eşitli birden sonsuza kadar, n kare, bölü 3 üzeri n serisinin karakterini belirleyiniz. Gene baktık, en kolay dedik, oran testini uygulamak, oran testiyle ne çıkacak? Evet, bekliyorum, limiti ne buluyorsunuz arkadaşlar? Lütfen, kalem kağıdınız vardır. Şöyle bir karalama yaparak bulmaya çalışın.
+
+360
+01:09:48,435 --> 01:09:51,815
+Yakınsak sanırım. Tam kuralı hatırlamıyorum ama 1 bölü 3 buldum.
+
+361
+01:09:52,835 --> 01:10:01,215
+1 bölü 3 bulduysam o da birden küçük yakınsak olur. Bakalım ben de hatırlamıyorum yani ne çıktığınız sonucunu. Doğru söylüyorsun 1 bölü 3'miş.
+
+362
+01:10:02,415 --> 01:10:13,135
+Evet. Kolay değil mi? Bakın hemen yerine yazdık. A en artı 1 bölü A en dedik. Oran testini uyguladık. İşlemlerimizi düzenlediğimizde bakın şurada 3 üzeri en.
+
+363
+01:10:13,716 --> 01:10:32,936
+Şu 3 üzeri n'le gider, ters çevirdiğimizde, yani sonuçta 1 bölü 3'ümüz kaldı. N artı 1'in karesi böyle n kare. Bunda hiç açmadan bile dereceler aynı olduğu için kat sayılarının oranı nedir? 1'dir şurada. Sonuç 1 bölü 3'tür. Bu da birden küçük olduğuna göre, oran testine göre bu seri nedir? Yakınsaktır diyeceğiz.
+
+364
+01:10:34,236 --> 01:10:39,195
+Evet, bir tane daha var. Şuna bakın bakalım.
+
+365
+01:10:40,500 --> 01:10:59,860
+Toplam en içtirdir birden sonsuza kadar 2n faktöryel bölü n faktöryelin karesi. Yaparsınız birlikte bakalım artık sanırım hepimiz öğrendik değil mi? İşlem yapmak başka da bir şey değil. Oran testini uyguluyoruz dedik. Pozitif terimli bir seridir. n sonsuza giderken an artı bir bölü an'e bakıyoruz.
+
+366
+01:10:59,860 --> 01:11:06,059
+Hemen 2n n artı bir dersem 2n artı iki faktöryel bölü.
+
+367
+01:11:06,384 --> 01:11:31,443
+n artı 1 faktöriyelin bir de karesi var. Bölü a, aynı aynen yazdık. Şimdi burada biraz daha işlemler var. Birinciyi aynen yazdım, ikinciyi ters çevirdim arkadaşlar. Şu 2n artı 2 faktöriyeli nasıl yazabilirim? 2n artı 2, 2n artı 1, 2n faktöriyeli. Tamam, burada kalsın. Paydayı nasıl yazabilirim? n artı 1 faktöriyeli de nasıl yazarım? n artı 1 çarpı.
+
+368
+01:11:31,891 --> 01:11:34,391
+en faktör geldiği yazarım değil mi?
+
+369
+01:11:35,252 --> 01:11:59,292
+Bir de şurada karesi vardı ya şu, iki tane var yani. Şurada bakın, n faktöriyelim var, bir de şurada n faktöriyelim var. Tamam mı? Şunu açarsam. Şuraya geldik. Bunu ters çevirdiğimde n faktöriyelim, n faktöriyelim diye yazdık. Onlar da zaten şunlarla gitmiş oldu. Tamam mı arkadaşlar? Yani şurada n artı birin karesi kaldı. Şurada da iki n faktöriyelim de şununla gitti.
+
+370
+01:12:00,020 --> 01:12:18,840
+Geriye kalanları yazıyorum. Sanırım anlaşılır şurada. 2n artı 2 kalmıştı. 2n artı 1 kaldı. Şurada da n artı 1'in karetsi kaldı. Tamam mı? Bakın şurada n faktöriyel, n faktöriyel. Şunlar götürdü birbirini. Yani sonuçta bakın, bunu uzun uzun açmaya da gerek yok.
+
+371
+01:12:19,507 --> 01:12:45,987
+Çarptığımızda 4n kare ifadesi var. Derecelere aynı. Sonuç paydının da derecesi aynı olduğuna göre kat sayılarının oran ne iştir? Limit. Yani sonuç nedir? 4'tür. Bu da birden büyük olduğuna göre, oran testine göre ne diyeceğim? Seri ıraksaktır diyeceğiz. Tamam mı? Evet, son bir testimiz de kök testi var arkadaşlar. O da gene pozitif terimli bir seri verilmiş olsun.
+
+372
+01:12:46,515 --> 01:13:14,175
+ve limit en sonsuza giderken eninci kökten an ya da an üzeri bir bölen şeklinde de yazabilirim. Limiti l olsun diyoruz. Tamam mı? Burada gene 3 durum söz konusu. Eğer l birden küçük ise verilen toplam seri yakınsaktır, l birden büyük ise seri ıraksaktır, l biri eşitse bu test sonuç vermez, başka test uygulamamız gerekir diyoruz.
+
+373
+01:13:14,515 --> 01:13:22,355
+Burada da demin oran testinde dedim ki, eninci terimde faktörel ifadesi varsa, oran testi bize daha çabuk cevap verir dedik.
+
+374
+01:13:22,355 --> 01:13:33,415
+Bunda da gene kural değil ama bilgi olarak veriyorum size. Serinin eninci teriminde üstel ifadeler varsa, kök testi daha avantajlıdır kullanmak için.
+
+375
+01:13:33,515 --> 01:13:42,295
+Ama dediğim gibi, işte 5 tane test verdik. Her pozitif terimli seriyi 5 testi de uygulayabilirsin. Ama dediğim gibi, işlem kolay, zor.
+
+376
+01:13:42,515 --> 01:13:58,475
+göre düşünmemiz gerekir. Tamam mı? Bu. Şimdi gelelim. İşte bir tane örneğimiz şu. K eşittir ikiden toplam sonsuza kadar bir bölü elen K üzeri K. İşte dedik ki pozitif terimli bir seri.
+
+377
+01:13:58,832 --> 01:14:19,752
+İşte 4-5 tane testi gördüm, hepsine baktım, dedim ki bakın bunun eninci terimi birbülü, lnk üzeri k üstel bir ifade içeriyor. O zaman diyorum ki kök testini uygulamak daha avantajlıdır diyoruz. Evet o zaman buna kök testini uygulamaya çalışıyorum. Bakın n veriyoruz, k diyoruz, hiç fark etmez. K sonsuza giderken,
+
+378
+01:14:20,180 --> 01:14:37,880
+K'nıncı kökten ak diyoruz. Limit k sonsuza giderken, k'nıncı kökten an'i yazıyorum. 1 bölü elen k üzeri k. Tamam mı? Bu da ne olur arkadaşlar? K'lar birbirini götürür değil mi? Limit k sonsuza giderken, 1 bölü elen k bulunur.
+
+379
+01:14:37,939 --> 01:14:51,299
+Bunun da limiti ne olur? Elen sonsuz, sayı bölü sonsuz sıfırdan limiti sıfırdır. E sıfırda birden küçük olduğuna göre ne diyorum? Kök testine göre seri yakın saattir. Bu.
+
+380
+01:14:52,899 --> 01:14:57,119
+Tamam mı arkadaşlar? Şimdi gelelim ikinci bir örneğimizde şu.
+
+381
+01:14:57,503 --> 01:15:15,963
+Bakın bu da gene pozitif terimli bir seridir. Üstel ifadeler içeriyor bakın. O zaman diyoruz ki kök testi uygulanabilir buna. O zaman ne yapıyorum? Serinin eninci terimi budur. Limit en son size giderken eninci kökten an diyoruz.
+
+382
+01:15:17,284 --> 01:15:19,663
+Aynen an'i yazdım içine.
+
+383
+01:15:20,148 --> 01:15:47,648
+Şunu da nasıl yazarım? 2 üzeri, n artı bir bölü, n diye yazarım. Bölü, n. n kalır. Şu. E şimdi en sonsuza giderken limitlere bakarsak, 2 üzeri, şu limit birdir. Yani ikiye gidecek. Payda da sonsuz olduğuna göre, sayı bölü sonsuz sıfıra gitti. Gene bu da birden küçük olduğu için, kök testine göre seri, ne diyeceğim? Yakınsaktır diyeceğim. Anlaşıldı mı arkadaşlar?
+
+384
+01:15:48,500 --> 01:15:51,500
+İyi bir limit bilmek gerekiyor, başka da bir şey yok.
+
+385
+01:15:53,019 --> 01:15:53,319
+Evet.
+
+386
+01:15:54,100 --> 01:15:58,900
+Hadi bunu bulun bakalım. Bu da sizin ödeviniz gibi olsun. Bekliyorum şimdi. Evet.
+
+387
+01:15:59,440 --> 01:16:07,560
+En eşitli birden sonsuza kadar 2 üzeri n artı 5 bölü 3 üzeri n serisinin karakterini belirleyiniz.
+
+388
+01:16:07,920 --> 01:16:12,380
+Baktık dedik ki bunu en kolay kök testini uygulayabiliriz.
+
+389
+01:16:12,740 --> 01:16:19,500
+Bazı kitaplarda kök yerine koşi kök testi de yazılabilir. Kafanız karışmasın tamam mı arkadaşlar?
+
+390
+01:16:19,500 --> 01:16:21,280
+Koşi kök testi de denir.
+
+391
+01:16:21,908 --> 01:16:33,748
+Evet, hadi bekliyorum. Ne yapacaksın? Serinin eninci terimi 2 üzeri n artı 5 bölü 3 üzeri n'in 1 bölü n'inci kuvvetini alarak limitini bulacaksınız. Ne çıkıyor bakalım? Hadi bekliyorum.
+
+392
+01:16:52,979 --> 01:17:09,099
+Diymeti 2 bölü çıkıyor. Yakınsak. O da birden küçük mü büyük mü? Evet, doğru buldunuz. Hemen bakalım. Bakın, eninci kökten AN diyoruz. Kök testini uyguluyoruz. Diymetine bakıyoruz. Yazdık AN'i de buraya.
+
+393
+01:17:09,876 --> 01:17:20,876
+Ne yapabilirim? Düzenlemem gerekir. Payını bakın, 2 üzeri n parantezine alırsam, 1 artı 5 bölü 2 üzeri n olur. Paydası zaten, 1 bölü eninci kuvvetinde 3 kalır.
+
+394
+01:17:21,556 --> 01:17:29,696
+Burada şu ifadenin dışına attığımda ne kalır? 2 kalmaz mı? Bakın, o zaman 2 bölü 3 kaldı. Eninci kökten şu ifadem.
+
+395
+01:17:29,696 --> 01:17:36,536
+Şimdi limitine geçersem, parantezi kökün için ne olur? Bakın, sayı bölü sonsuzdan bu sıfıra gitti.
+
+396
+01:17:37,108 --> 01:17:39,488
+Burada da 1 üzeri
+
+397
+01:17:39,988 --> 01:18:07,887
+Bir dakika, pardon, 1 üzeri n, 1 bölü n, 1 üzeri 1 bölü n'den bu da sıfır oldu. Yani şu parantezin için ne olur? 1 olur arkadaşlar. Buradan 2 bölü 3 bulurum. Bu da birden küçük olduğuna göre, diyorum ki kök testine göre seri yakınsaktır. Şurada anlaşıldı değil mi? Şunu üstten yazarsak daha kolay olur. 1 artı 5 bölü 2 üzeri n'in 1 bölü n'inci kuvveti. En sonsuza giderken bu terim sıfırdır.
+
+398
+01:18:07,988 --> 01:18:18,168
+Parantezin içi de zaten 1 oldu. 1 üzeri 0'da 1'dir. 2 bölü 3 olarak bulunur. Hadi buna bir bakın bakalım. Toplam en eşittir.
+
+399
+01:18:19,252 --> 01:18:46,952
+Gözüktü zaten. Hadi birlikte bakalım. Gördük. Kök testini uyguluyoruz diyoruz. Karakterini belirliyoruz. Bunun pozitif terimli bir seri olduğu için 5 tane testimiz var. Herhangi biriyle test edebiliriz. Ama en kolay üstel ifade olduğu için kök testini uygulayalım dedik. Bakın limit en sonsuza giderken a n üzeri bir bölü n şeklinde de yazabilirsiniz bunu. Eninci kökten 2 üzeri n bölü n kare dedik.
+
+400
+01:18:47,252 --> 01:18:54,492
+Bu da ne olur? 2 bölü, en üzeri 2 bölü n şeklinde yazdık değil mi?
+
+401
+01:18:57,712 --> 01:19:02,952
+Bunu aslında ben açıkta çözmüştüm.
+
+402
+01:19:03,231 --> 01:19:05,812
+Şu en üzeri 1 bölü n geliyor ya arkadaşlar.
+
+403
+01:19:06,292 --> 01:19:08,592
+Sonsuz üzeri 0 belirsizliği var.
+
+404
+01:19:10,868 --> 01:19:26,888
+Bunu sonra çözeyim. Ben açık çözecektim. Şimdi oraya geçmeyeyim. Kalsın bunu sonra çözeyim. Çözülür özelliğini biliyorsunuz ama neyse geçmeyeyim bir dakika. Sonra tekrar açıklarım. Bakın bunun ne oldu? 2 kaldı bölü. En üzeri 2 bölü N oldu.
+
+405
+01:19:27,699 --> 01:19:55,659
+Buradan da en üzeri bir bölü eni dizilerde hatırlarsanız verdik. Limit en sonsuza giderken bire gider. Üstten bir belirsizliktir. Logaritme kullanarak da çözebilirsiniz. Ama özelliği kullanalım burada. En üzeri bir bölü enin limitinin bir olduğunu biliyoruz. O zaman pay ne oldu? Bire gitti payda. Payda iki ise yani limit ne olur? İki. İkide birden büyük olduğuna göre kök testine göre bu nedir? Iraksaktır. Yani şunu açıkça başka da çözebilirdiniz.
+
+406
+01:19:55,699 --> 01:20:06,599
+Y eşittir. En üzeri bir böyle N dersin. Logaritmayı kullanıp, limite geçip, uzun uzun çözülüp, bir olduğunu görebilirsiniz. Ama kuralı biliyorsak, burada uygulayabildik diyelim.
+
+407
+01:20:07,299 --> 01:20:21,979
+Evet, şimdi, en inci terim testini burada tekrar hatırlattık. Hatırlarsanız, vermiştik. Dedik ki, eğer en sonsuza giderken, A-N sıfırdan farklı ise, toplam seri, ıraksaktır, diyoruz.
+
+408
+01:20:23,188 --> 01:20:47,188
+Evet, serisinin karakterini belirleyiniz diyoruz. Bakın bu da gene üstel bir fonksiyondur. Kök testini uygulayabiliriz diyoruz burada. Tamam mı? Şimdi kök testini uygulayalım. En inci kökten, AN alıyorum, limit en son ise giderken, buradan sonuç ne çıktı? Bir çıktı.
+
+409
+01:20:49,136 --> 01:21:05,235
+Diyoruz ki, kök testine göre bu sonuç vermez. Bu testi uygulayamayabilirim, uygulayamam diyeceğim. O zaman acaba diyorum, eninci terim testini uygulayabilir miyim? Yani limit en sonsuza giderken, şu an'in limiti ne olur sizce arkadaşlar?
+
+410
+01:21:08,115 --> 01:21:13,136
+Bunla sonuç vermedi. Ne olur? E mi? E üzeri eksi bir mi olur?
+
+411
+01:21:15,380 --> 01:21:35,020
+Eksi var burada bak. E üzeri eksi birdir. Eninci terim testini kullanırsak, diyoruz ki e üzeri eksi bir oldu. O da bir bölüye sıfırdan farklı değil midir? O zaman hiç düşünmeden eninci terim testini uyguladım. Sıfırdan farklı çıktığı için seri ıraksaktır diyorum. İşte kök testine göre burada da söyledik ya.
+
+412
+01:21:35,539 --> 01:21:47,000
+Bir ise bu test uygulanamaz. O zaman ne yapıyorum? Testi değiştiriyorum. Ama aklıma en inci terim testini uygulayalım. En azından sıfır mıdır? Sıfırdan mı? Ama sıfır olsaydı bu arkadaşlar hiçbir şey diyemeyecektim.
+
+413
+01:21:47,572 --> 01:21:56,092
+Çünkü bunun sıfır olması serinin yakınsak olmasını gerektirmiyor. Yakınsak da olabilir, ıraksak da olabilir diyoruz. Tamam mı?
+
+414
+01:21:56,472 --> 01:22:03,132
+Peki öyle belirsiz mi kalacak yoksa başka bir şey de deneyecek miyiz tekrar? Sıfır çıksaydı mesela, ıraksakla deneyiz.
+
+415
+01:22:03,252 --> 01:22:09,272
+Başka dönecektim, başka test uygulayacaktım. Demek ki kök testi cevap vermedi. Başka test uygulayacaksın.
+
+416
+01:22:09,572 --> 01:22:09,832
+Tamam.
+
+417
+01:22:11,475 --> 01:22:20,215
+Anlaşıldı mı testler arkadaşlar? Ben burada kalmak istiyorum. Değişik işareti serilere bir dahaki derse geçelim. Oldu mu?
+
+418
+01:22:21,395 --> 01:22:22,115
+Olur hocam.
+
+419
+01:22:22,695 --> 01:22:23,535
+Var mı sorumuz?
+
+420
+01:22:28,435 --> 01:22:34,035
+Evet, yoksa haftaya pazartesi görüşürüz. Kendinize iyi bakın arkadaşlar. Görüşmek üzere.
+
+421
+01:22:35,195 --> 01:22:37,615
+İyi günler hocam.
+
+422
+01:22:37,895 --> 01:22:38,535
+İyi günler.

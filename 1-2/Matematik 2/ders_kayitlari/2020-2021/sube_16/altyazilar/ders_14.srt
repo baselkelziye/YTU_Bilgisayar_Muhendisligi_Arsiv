@@ -1,0 +1,1627 @@
+1
+00:00:50,292 --> 00:00:52,572
+Haydın arkadaşlar. Ses geliyor mu?
+
+2
+00:00:55,072 --> 00:00:56,051
+Geliyor hocam.
+
+3
+00:00:56,051 --> 00:00:58,231
+Haydın arkadaşlar. Nasılsınız? İyi misiniz?
+
+4
+00:00:59,012 --> 00:01:00,411
+İyiyiz hocam. Siz nasılsınız?
+
+5
+00:01:00,472 --> 00:01:01,852
+Ben de iyiyim. Teşekkür ederim.
+
+6
+00:01:02,356 --> 00:01:30,355
+Evet, dün çok değişkenli fonksiyonlara başlamıştık. Birden fazla bağımsız değişkeni varsa, bunlara biz çok değişkenli fonksiyonlar demiştik. Çok değişkenli fonksiyonların tanım hükümeleri nasıl bulurduk, onlardan bahsettik. Limiti nasıl bulacağız, onu söyledik, süreklilik. Şimdi de geldik türeve, kısmı türev diyoruz. Dün de söylediğim gibi, çok değişkenli fonksiyonların türevlerini kısmı türev diye adlandırıyoruz. Birden fazla bağımsız değişkenli.
+
+7
+00:01:30,355 --> 00:01:37,555
+değişken olduğu için isim olarak adi türev olarak demiyoruz. Sadece kısmi türev şeklinde ifade ediyoruz.
+
+8
+00:01:38,075 --> 00:01:47,975
+Gene hep dediğim gibi çok değişkenli fonksiyon deriz ama örnek memelerimizi yani tanımlamalarımızı hep iki bağımsız değişkenli fonksiyon üzerinde yapıyoruz.
+
+9
+00:01:48,096 --> 00:01:54,415
+Çok nadir işte üç değişkenli olursa diye. Onun için de başlık olarak kısmı türev diyoruz arkadaşlar.
+
+10
+00:01:55,987 --> 00:02:11,768
+Z eşittir, fx'ye fonksiyonunun, dikkat ederseniz Z'i fonksiyon, x'ye bağımsız değişken. Böyle bir fonksiyonun birinci mertebe kısmı türevleri dendiğinde, kaç tane bağımsız değişkeni varsa, o sayıda birinci mertebe türevi olacaktır.
+
+11
+00:02:11,768 --> 00:02:23,987
+Hatırlarsanız y eşittir, fx dediğimizde, birinci mertebe türevi y'nin x'e göre türevi derdi. Burada da iki tane bağımsız değişkeni olduğu için, fonksiyonun hem x'e hem de y değişkenine göre birinci değişkeni.
+
+12
+00:02:23,987 --> 00:02:29,108
+mertebe kısmı türevleri mevcuttur. Şimdi bunu nasıl alacağız onu konuşalım.
+
+13
+00:02:29,907 --> 00:02:57,807
+Şimdi sembolleri önce bakın adi türev olarak söylemiyoruz. Şöyle ters gibi düşünüyoruz. Bunu gördüğümüzde anlıyoruz ki çok değişkenli fonksiyonların sembolü. Çünkü biz normal fx fonksiyonunda adi türev dediğimizde d sembolünü kullanırdık. Bunu da d diye okuyoruz ama sembol görüntüsü farklı. Yani burada yazdığımı df bölü dx diyorum. Yani f'in x'e göre türevinin sembolü.
+
+14
+00:02:57,907 --> 00:03:06,328
+Veya şu sembolü de kullanabiliriz. F1x'e yani fonksiyonun birinci değişkenine göre kısmı türevi anlamına gelir.
+
+15
+00:03:07,027 --> 00:03:11,927
+Veya şu f deriz, şuraya bir x yazarız. fx'ye diye yazarız şu şekilde.
+
+16
+00:03:12,147 --> 00:03:19,907
+Gene deriz ki bu bize ne ifade eder? Fonksiyonun birinci değişkenine göre türevidir. Yani f'in x'e göre türevidir diyoruz.
+
+17
+00:03:19,907 --> 00:03:25,907
+Veya z'in dz bölü dx şeklinde de yazarız. Gene aynı şekilde fonksiyonun.
+
+18
+00:03:25,907 --> 00:03:47,888
+fonksiyonun x'e göre türevdir. İstediğimiz herhangi birini kullanırız. Hatta f deriz, altına yani şurada bunun olduğu gibi, neyse bu kadar terimler yeterli. Kitapla da görürseniz kafanız karışmasın. Yani genellikle ya şunu kullanırız ya da bunu bazen de kolaylık olsun diye f bile f iki diye de söyleriz.
+
+19
+00:03:53,907 --> 00:04:15,687
+y sabit düşünüyorum arkadaşlar. Hatırlayın, y'iştir fx fonksiyonu türevi nasıl bulurduk? Limit has sıfıra giderken, f parantez içinde x artı h, eksi fx bölü h. Öyle bir limitimiz varsa derdik, bu limite fonksiyonun x'e göre türevi derdik. Burada da hiç değişen bir şey yok. Şimdi ben bunun diyorum ki, limit has sıfıra giderken,
+
+20
+00:04:16,276 --> 00:04:26,516
+X'e göre türevi sorduğuna göre bana diyorum ki, Y'yi sabit düşünüyorum, ona hiç dokunmuyorum. Değişkeni X'i X'i artıyorum. Bakın X artı H, Y.
+
+21
+00:04:27,055 --> 00:04:54,135
+eksi fx'ye bölü var. Eğer böyle bir limit mevcutsa, bu limite fonksiyonun x'e göre kısmı türevidir diyoruz. Tamam mı arkadaşlar? Yani x'e göre türev alıyorsam, y benim için sabit olacak. Örneğin burada istersem 5-6 tane bağımsız değişkenim olsun. Hiç önemli değil. Ben kime göre türev alıyorum? x'e göre türev alıyorsam, diğerleri benim için sabit olacak. Bu, mantığımız bu şekilde. Tanımımız da bu arkadaşlar.
+
+22
+00:04:55,055 --> 00:05:07,775
+Diyelim ki y'ye göre düşünürsek, gene aynı mantıkla bakın, limit h sıfıra giderken diyeceğim, bu sefer x'i sabit düşünüyorum, y'yi değiştireceğim, yani artıracağım.
+
+23
+00:05:08,375 --> 00:05:19,375
+x virgül y artı h diyeceğim, eksi f x y bölü h, eğer böyle bir limit mevcutsa diyoruz, bu limite fonksiyonun y değişkenine göre kısmi türevidir diyeceğiz.
+
+24
+00:05:23,055 --> 00:05:34,175
+F bölü D'ye, yani fonksiyonu Y'ye göre türevidir. Y bizim burada ikinci değişkenimiz olduğu için F2 deriz veya yani ikinci değişkenine göre kısmi türev demektir.
+
+25
+00:05:34,735 --> 00:05:50,955
+Veya F deriz, şuraya Y'ye yazarız. F'in Y'ye göre türevi alınmış deriz. Veya DZ bölü D'ye şeklinde herhangi birini gördüğümüzde anlarız ki fonksiyonun Y değişkenine göre alınmış kısmi türevidir diyeceğiz arkadaşlar. Tamam mı?
+
+26
+00:05:51,055 --> 00:05:51,695
+Bu.
+
+27
+00:05:53,515 --> 00:05:54,335
+Van bir problem.
+
+28
+00:05:56,415 --> 00:06:02,275
+Evet, dedik ki böyle bir limitler varsa, bunlara biz işte birinci mertebe, kısmi türev diyoruz.
+
+29
+00:06:03,656 --> 00:06:04,335
+Evet.
+
+30
+00:06:05,459 --> 00:06:33,459
+Yani burada da yazdık zaten. Ben hangi değişkene göre türev alıyorsam diğer bağımsız değişkenler benim için sabit olacaktır diyoruz. Bir de şu notasyonu vermek istiyorum. Hani hatırlarsanız bir fonksiyon bir noktadaki değerini bulun da diyebilirler. Burada da aynı şekilde diyelim ki Z'in X'e göre kısmı türevinin AB noktasındaki değerini hesapla dediğinde Z'in X'e göre türevi deriz şöyle bir düz çizgi deriz.
+
+31
+00:06:33,459 --> 00:06:54,620
+Buraya AB noktasını yani X'e A yazacaksın, Y değişkenli de B yazarak hesaplayacaksın. Veya şu sembolü de kullanabiliriz, FXAB veya birinci değişken olduğu için X'imiz F1AB şeklinde de notasyonları gördüğümüzde fonksiyon bu noktadaki değerini sormuş diye türevinin bu noktadaki değeridir diyeceğiz.
+
+32
+00:06:54,620 --> 00:07:00,159
+Yine benzer şekilde Z'in Y'ye göre türevinin AB'deki değeri anlamına gelir.
+
+33
+00:07:00,576 --> 00:07:08,936
+F'in y'ye göre türevinin AB'deki değeri, ikinci değişken olduğu için y, F2, AB şeklindeki notasyonları da kullanacağız.
+
+34
+00:07:09,696 --> 00:07:16,316
+Fonksiyonlardaki türev kuralı, yani tek değişkenlerdeki türev kuralı, çok değişkenli fonksiyonlar için de geçerli olacak.
+
+35
+00:07:16,536 --> 00:07:20,384
+Yani toplam, çarpımlar, bölümler için geçerli olan tüm...
+
+36
+00:07:20,384 --> 00:07:35,984
+Türev kuralları, kısmi türevler içinde geçerlidir. Hiçbir değişiklik yok. Hiç kafamızı da karıştırmayacağız arkadaşlar. Hangi değişkene göre türev alıyorsa, diğeri benim için sabit olacak. Bakın bir tane basit örnek üzerinde görmeye çalışalım.
+
+37
+00:07:36,692 --> 00:07:47,492
+Bana verilen fonksiyon, bakın z eşittir, x küp y kare artı, x üzeri 4 y artı, 4 x kare, y üzeri x küp, y üzeri 4 artı y kare.
+
+38
+00:07:47,851 --> 00:07:53,831
+Yani burada z fonksiyon x'e bağımsız değişken, benden istenen d z bölü d x.
+
+39
+00:07:53,951 --> 00:07:58,572
+Yani z'in x'e göre birinci mertebe türevini buldu, bir de z'in y'ye göre.
+
+40
+00:07:58,971 --> 00:08:04,372
+Şimdi ben burada diyorum ki, x'e göre türev alacaksam, y benim için sabit düşüneceğim.
+
+41
+00:08:04,692 --> 00:08:30,091
+İşte buradan türevi nasıl alıyorum? X'e göre türevi alıyorum. 3x kare, değil mi? y kare. Bitti iş. Artı, gene x'e göre türevi alıyorsam, y'yi sabit düşünüyorum. 4x küp y. Artı, devam ediyorum. 12x kare, y üzeri 4, y karenin türevi 0, gitti. Değil mi? Bakın, görelim burada da.
+
+42
+00:08:30,483 --> 00:08:35,104
+Ne yapıyorum? X'e göre türev alıyorsam, y benim için sabit bir sayıymış gibi düşünüyorum.
+
+43
+00:08:35,884 --> 00:08:37,884
+3x kare, y kare.
+
+44
+00:08:38,263 --> 00:08:40,503
+Artı 4x küp y.
+
+45
+00:08:41,268 --> 00:08:49,408
+Buradan alıyorum, 12x kare, y üzeri 4, artı, y kare sabit, 2, 3 gibi düşün, 0 değil mi? Yok, bitti.
+
+46
+00:08:49,988 --> 00:08:56,488
+Şimdi buradan aynı şekilde, ne yapıyorum bu sefer de? Z'in y'ye göre kısmı türevini sormuş. Bu sefer de o zaman ne yapıyorum?
+
+47
+00:08:56,608 --> 00:09:03,608
+x'i sabit düşünüyorum, y'ye göre türev alıyorum. Buradan y'ye göre alırsam, 2x küp y.
+
+48
+00:09:04,436 --> 00:09:29,736
+Artı x üzeri 4, değil mi? Artı 16 x küp y küp 2 ye. Tamam mı arkadaşlar? Sahibe dikkat gerekiyor. Hiçbir zorluğu yok. Neye göre türev alıyorsam, diğerleri benim için sabit olacak. Türev anladık mı arkadaşlar? Var mı bir problem?
+
+49
+00:09:33,235 --> 00:09:37,775
+Evet. Ses yok mu? Ses gelmiyor mu?
+
+50
+00:09:43,475 --> 00:09:46,836
+Arkadaşlar, sesim geliyor değil mi? Kendi kendime konuşmuyorum.
+
+51
+00:09:51,251 --> 00:10:00,000
+Tamam. Sağ ol [öğrenci] arkadaşım. Sen de cevap vermesen hiç vermeyecek kimse. Ses geliyor mu? Kendime de bazen...
+
+52
+00:10:00,000 --> 00:10:17,379
+Konuşabilirim değil mi? Evet arkadaşlar. Şimdi verilen, bakın gene 2 değişkenli fonksiyon verilmiş. fx'ye eşittir. e üzeri x'ye çarpı kosünüs x artı y. Bizden istenen, bakın ara ara değişik semboller kullanıyoruz. f1, 0, pi. Bu ne anlama geliyor?
+
+53
+00:10:28,000 --> 00:10:33,339
+İki değişkenli fonksiyonun, x'e göre kısmi türevini bulup, 0p'daki değeri nedir?
+
+54
+00:10:33,519 --> 00:10:36,120
+Hadi bir dakika, hatta iki dakika veriyorum size.
+
+55
+00:10:36,799 --> 00:10:39,600
+Bulun arkadaşlar. Sonuç nedir? Sonucu bekliyorum.
+
+56
+00:10:40,659 --> 00:10:42,079
+3 mi 5 mi ya da nedir?
+
+57
+00:10:43,579 --> 00:10:47,259
+x'e göre türev alacaksam, y'yi ne yapıyorum? Sabit düşünüyorum.
+
+58
+00:11:34,259 --> 00:11:37,299
+Bulan cevabı söyleyebilir veya yazabilir.
+
+59
+00:11:39,939 --> 00:11:46,320
+Pi mi? Doğru, pi çıkacak da, eksi mi diye. Evet, eksi pi. Doğru, sağ ol.
+
+60
+00:11:47,519 --> 00:11:51,620
+Evet, o zaman alalım bakın. Ne var burada? Çarpım var, değil mi arkadaşlar?
+
+61
+00:11:51,939 --> 00:11:57,899
+X'e göre türev alıyorsam, y'yi sabit düşünüyorum. Ne yapıyorum? E'nin türevi nedir? E üzeri x'ye'nin türevi x'e göre.
+
+62
+00:11:57,899 --> 00:12:00,379
+Y çarpı e üzeri x'ye.
+
+63
+00:12:00,820 --> 00:12:27,320
+Çarpı ikinci ifademi yazdım. Kosmüs x artı y. Sonra artı diyeceğim. Birinci çarpı ikincinin x'e göre türevi. Kosmüs'ün türevi nedir? Eksi gelecek. Sinüs x artı y. İçindeki zaten y'ye göre türevi bir olacağı, pardon x'e göre türevi bir olacağı için yazmaya gerek yok biri. Çarpı e üzeri eksi x'ye. İşte ne yaptık? x'e göre türevini yazmış olduk.
+
+64
+00:12:27,572 --> 00:12:37,531
+Bizden istenen 0P'deki değeri, yani x yerine 0, y yerine pi yaz. Şu yukarıdaki notasyonlardan en sonuncusunu kullanmışız.
+
+65
+00:12:37,991 --> 00:12:45,991
+İşte yerine yazarsak, y yerine pi, x yerine 0'ı yazdığımızda sonuç ne oluyor? Eksi pi'dir diyoruz.
+
+66
+00:12:46,391 --> 00:12:50,831
+Peki burada y'ye göre türevi sormamış. Ben sizden istiyorum.
+
+67
+00:12:51,379 --> 00:13:14,320
+Bulup yazın bir kağıda, yani fonksiyonun y'ye göre kısmı türevinin 0 pi'deki değeri ne çıkıyor? Sonucu istiyorum sadece arkadaşlar. Alın y'ye göre türevini. Yani aynı şekilde y'ye göre türev alacaksam ne yapıyorum? X'i sabit düşünüyorum. Gene çarpımın türevi. Birincinin türevi çarpı ikinci artı birinci çarpı ikincinin türevi.
+
+68
+00:14:01,844 --> 00:14:18,584
+Evet, sıfır çıkıyor. Doğru söylüyorsunuz. Bakın, şurada artık sözle alalım türevi daha doğrusu. Neye göre türevi alıyorum? Y'ye göre. Birincinin Y'ye göre türevi. E üzeri X'ye'nin Y'ye göre türevine gelecek arkadaşlar. X çarpı E üzeri X'ye çarpı kosünüs X artı Y.
+
+69
+00:14:19,187 --> 00:14:31,367
+Artı birinci çarpı, yani e üzeri x'ye çarpı, kosünüsün türevi, eksi, eksi diyeceğim, e üzeri x'ye, sinüs x artı y diyeceğiz.
+
+70
+00:14:31,827 --> 00:14:39,447
+Onu da x yerine 0, y yerine pi yazarsanız 0 bulursunuz. O artık siz kendiniz yapmışsınızdır. Zor bir şey değil.
+
+71
+00:14:39,447 --> 00:14:44,667
+Evet, devam edelim. Şimdi bir tane sorumuz da şu.
+
+72
+00:14:45,056 --> 00:15:13,016
+fx'ye eşitir x kare y fonksiyonunu, bakın bu sembolü kullanmışız. f'in y'ye göre türevini tanımdan bulunuz. Yani şurada yukarıdaki tanımı hatırlayalım bakın. f'in y'ye göre kısmı türevi ne yapıyorduk? Limit h sıfıra giderken f parantez içinde x'e dokunmuyoruz. y'ye göre türevi istediğine göre x virgül y artı h eksi fx'ye bölü h. Böyle bir limit varsa bu limite fonksiyonu y'ye göre
+
+73
+00:15:13,056 --> 00:15:19,076
+alınmış kısmı türevidir diyoruz. Şimdi bu soruyu da ona göre çözmeye çalışalım arkadaşlar.
+
+74
+00:15:19,668 --> 00:15:40,668
+Evet, vermiş f'in y'ye göre türevi demektir. Bu da dedik, limit h sıfıra giderken f, x, y artı h, eksi f, x'ye, bölü h. İşte burada ne anlıyorum? Fonksiyonda x yerine x, y yerine y artı h'ı yaz. Geliyorum, fonksiyonumda x yerine x'i yazdım, x kare.
+
+75
+00:15:47,279 --> 00:16:06,000
+eksi x kare y bölü h. İşte bu limite bakıyorum. Şu anda has sıfıra giderken, bu sıfır bölü sıfır belirsizliği var. Bu belirsizliği giderebilmek için, önce şu parantezleri açarsanız bakın, x kare y artı x kare h, eksi x kare y'ler gitti. Ne kalır?
+
+76
+00:16:06,384 --> 00:16:27,824
+x kare h, bölü h. h'larda birbirini götürürse, sonuç nedir? h sıfıra giderken x karedir. İşte tanımdan, gerçekten bunun limiti x karedir. Neden? Şuradan da doğrudan, hani tanımı kullanmadan almış olsaydık y'ye göre, x kare olarak bulacaktık. Tamam mı? Tanımı da bu şekilde uygulamış oluyoruz.
+
+77
+00:16:29,587 --> 00:16:44,827
+Siz de kendiniz X'e göre alabilirsiniz tanımdan. X'e göre de aldığımda ne bulmalıyım? 2X'ye olarak türevini bulmalıyım tanımdan. O da size ödev olsun. Kendiniz yapın arkadaşlar. Evet, şimdi de gelelim.
+
+78
+00:16:46,227 --> 00:16:58,967
+Böyle bir fonksiyon verilmiş, parçalı olarak verilmiş, bizden istenen f'in x'e ve f'in y'ye göre türevlerinin 0,0'daki değerlerini mevcut ise bulunuz ya da hesaplayınız.
+
+79
+00:16:59,847 --> 00:17:10,548
+Evet, şimdi bunu bulmaya çalışalım. Gene tanımdan gitmemiz gerekir. Parçalı verilmiş fonksiyonumuz. O zaman önce x'e göre türevi tanımdan nasıl yazardık?
+
+80
+00:17:10,991 --> 00:17:32,851
+Noktayı da mümkünse kullanmakta yarar var böyle tip sorularda. Öbür türlü işlem çok uzun olur. Nokta işimizi kolaylaştırır. Yani fonksiyonun, x'e göre türevinin 0,0'daki değeri diyorum. Tanımdan limit, has 0'a giderken, f, x'e göre türevi yazacaksam, x artı h yerine, x yerine ne yapıyorum? 0 yazıyorum.
+
+81
+00:17:34,132 --> 00:17:39,812
+y noktayı da kullandım, sıfır. Eksi f sıfır sıfır. Öylediğimiz tanımımız arkadaşlar.
+
+82
+00:17:40,012 --> 00:17:47,572
+f parantez içinde x artı h, virgül y derdik. E noktalarımız da vermiş, onları da kullandığımız için bu şekilde yazıyoruz.
+
+83
+00:17:47,572 --> 00:17:56,912
+Eksi f x y idi. Yani f sıfır sıfır bölü h. Bu limit mevcudsa limite işte bu noktadaki türevidir diyeceğiz.
+
+84
+00:17:57,352 --> 00:18:02,132
+Ve buradan ne anlıyorum? Fonksiyonda x gördüğüm yere h yazacağım. y yerine de
+
+85
+00:18:02,132 --> 00:18:24,792
+0 yazacağım. Sonra f'in 0, 0'daki değeri. Zaten f'in 0, 0'daki değeri verilmiş burada bakın. 0 olarak. O zaman yazalım. Şimdi fonksiyonumuz şu değil mi? Burada x yerine h, y yerine 0'ı yazarsam h kare çarpı sinüs bir bölü h karenin kare külkü bölü h değil mi?
+
+86
+00:18:25,395 --> 00:18:36,655
+Bu da ne olur? Düzenlersek limit, has sıfıra giderken, şu haşlar bir tanesi gitsin, haş çarpı, sinüs, bir bölü, mutlak değer olur. Bu da haş.
+
+87
+00:18:36,655 --> 00:18:40,299
+İşte bunun limitinin sıfır olduğunu...
+
+88
+00:18:40,531 --> 00:18:59,871
+Bildiğim için yazdım ama hatırlamıyorsam ne yapabilirim arkadaşlar bunu? Bakın şöyle düşünebilirsiniz. Sinüs 1 bölü h bölü, şu h'ı da 1 bölü h diye yazarım. 1 bölü h'a t dönüşümü uyguladığınızda bakın 1 bölü h'a t dersen, h 0'a giderken t nereye gider? Sonsuza gider.
+
+89
+00:18:59,871 --> 00:19:07,092
+Yani sonuçta limit t sonsuza giderken sinüs t bölü t diye yazarım.
+
+90
+00:19:08,531 --> 00:19:20,831
+fonksiyonlarda Sandeviç teoreminde ispatlamıştık. Limit, diyelim x sonsuza giderken, sinüs x bölü x'in 0 olduğunu orada ispatlamıştık arkadaşlar. Tamam mı? Doğrudan o yüzden yazdım.
+
+91
+00:19:21,211 --> 00:19:32,591
+Yani işte dediğim gibi sinüs 1 bölü h, bölü şu h'ı da 1 bölü h diye yaz. Yani sinüs 1 bölü h bölü 1 bölü h diye yazarsan, 1 bölü h'a da bir t dönüşümü yaparsan,
+
+92
+00:19:36,531 --> 00:19:59,991
+T de 0'dır. Sandvich teoreminden birinci dönemde ispatlamıştık. Tamam mı? Yani sonuçta bunun limitini 0 bulduk. O halde fonksiyonun x'e göre kısmi türevinin 0,0'daki değeri neye eşitmiş? Mevcutmuş değeri de 0'mış. Benzer şekilde y'ye göre alalım arkadaşlar. F'nin y'ye göre kısmi türevi 0,0'daki.
+
+93
+00:20:00,000 --> 00:20:27,919
+F'in karesi gelecek, sinüs, şuradan bir bölükü, kaç?
+
+94
+00:20:28,000 --> 00:20:54,079
+Bu da yine düzenlenirse, haçlar sadeleşir, limit ha sıfıra giderken, haç çarpı sinüz, bir bölü haç diye kalır. Bu da yukarıdaki aynı mantıkla sıfırdır diyeceğiz. Tamam mı arkadaşlar? Yani limit mevcutmuş, değeri de sıfıra eşittir. Evet, var mı takıldığımız bir yer? Anladık mı arkadaşlar?
+
+95
+00:20:56,819 --> 00:21:04,939
+Yok, o zaman geçiyorum. O zaman bir de geometrik anlamını söyleyelim. Şurada bir dakika.
+
+96
+00:21:11,667 --> 00:21:38,487
+Evet, kısmi türevin geometrik anlamı. Tek değişkenli fonksiyonlarda türevin anlamı neydi? Eğimden anlıyorduk değil mi? Eğimi verir diyorduk. O noktadaki teğidin eğimi türev demekti. Burada da benzer şekilde şöyle diyelim. Z eşittir fx'ye iki değişkenli fonksiyonu bildiğimiz gibi 3 boyutlu uzayda bir yüzeyi gösteriyordu değil mi? Dün konuşmuştuk. İki değişkenli bir fonksiyon, bir yüzey ifade eder.
+
+97
+00:21:39,667 --> 00:22:04,127
+üzerinde, yani şöyle diyelim, 3 boyutlu uzayımızı z, x, y diye çizmiş olalım. Tamam mı arkadaşlar? Şu, x, y, z. Şu da benim yüzeyim olsun. Şöyle, şu bir yüzeyim. Yani z eşittir, f, x, y, bir yüzey olsun. Bu yüzey üzerinde bir noktamız da p olsun.
+
+98
+00:22:04,596 --> 00:22:24,816
+Bu yüzey denkleminde şimdi ben y yerine y sıfır yazarak y değişkenliği sabit tutarsam elde edilen z eşittir efiksiye tek değişkenli fonksiyonu şekilde görüldüğü gibi bakın diyelim ki burada y'yi sabit tutup
+
+99
+00:22:25,044 --> 00:22:34,564
+düşünürsem, yüzeye paralel bir düzlem elde etmiş olacağım. Yani şurada y sıfırı sabit düşünürsem, benim şu z eşittir, f x.
+
+100
+00:22:35,124 --> 00:22:55,464
+Y0 tek değişkenli bir fonksiyon gibi göz önüne alacağım değil mi? Y'yi sabit düşünüyorsam, sanki bu tek değişkenli x'e bağlı bir fonksiyon gibi kabul edip, şekilde görüldüğü gibi S yüzeyi üzerinde P noktasından geçen, yani şu Y0 sabit düşündüysem, şöyle bir düzlem oluşturmuş oluyorum.
+
+101
+00:22:59,955 --> 00:23:26,155
+OXZ düzlemine paralel olan bir eğrinin denklemidir. Tamam mı? Yani bu tek değişkenlerde biz onlara doğru derdik ama uzayda biz bunlara düzlem olarak göz önüne alacağız. Z eşittir. İşte FX gibi düşün. Orada Y0 sabit gibi düşünürsek bu yüzeyde bir düzlem. İşte şöyle bir düzlem diyelim. Bu da XOZ'e paralel bir düzlemdir. Şu taradığım kısım arkadaşlar.
+
+102
+00:23:26,644 --> 00:23:35,124
+İşte buradaki bu düzlemin şurada P noktasındaki T etinin eğimine Z'in X'e göre türevi diyeceğiz.
+
+103
+00:23:36,384 --> 00:23:43,604
+Tamam mı? Bakın benzer şekilde eğer X'i sabit düşünürsen, bu seferde ne olur X'i sabit düşünürsen?
+
+104
+00:23:45,428 --> 00:24:12,348
+Paralel bir düzlem elde etmiş olacağım arkadaşlar. Şu her ikisi de burada olduğu için çok da karışık olmasın. Bir tanesi için konuşayım en azından. Yani şu demin şunu düşündüğümüzü göz önüne alalım. Bakın y'ye sabit düşündüm. Şöyle bir düzlem elde ettim. Bu da ne dedim? X, O, Z, T paralel bir düzlemdir. Şu. İşte bunun P noktasındaki eğimini de alf olarak göz önüne alırsak.
+
+105
+00:24:14,708 --> 00:24:27,948
+Sonuçta Z'in X'e göre ve benzer şekilde Z'in Y'ye göre kısmı türevlerini, yani şu yukarıda dedik ki X'e göre düşünüyorsam Y'yi sabit düşünüyorum, Y'ye göre düşünüyorsam X'i sabit düşünelim değil mi?
+
+106
+00:24:28,028 --> 00:24:38,408
+Eğrilerin göz önüne alınan P noktasındaki türevleri olduğundan bu kısmı türevlerin geometrik anlamları bu eğrilerin P noktasındaki T'nin eğimi olur.
+
+107
+00:24:42,228 --> 00:24:42,968
+Bu yüzden.
+
+108
+00:24:43,471 --> 00:24:51,391
+Göz önüne alıyorum. Burada herhangi bir P noktası dedik. P noktasındaki T etinin eğimi bize onun türevini vermiş olacak.
+
+109
+00:24:51,551 --> 00:24:58,531
+İşte buna göre de T etlerin eğimi olur dedik. Z'in X'e göre türevinin P noktasındaki değeri. Bu da tanjant alifa.
+
+110
+00:24:59,231 --> 00:25:06,551
+Benzer şekilde işte Y'ye göre türevde de şurada beta dedik. Buna da tanjant beta olarak göz önüne alacağız.
+
+111
+00:25:06,551 --> 00:25:11,471
+İşte geometrik olarak da bu şekilde diyoruz. Tamam mı? T etlerin eğimi.
+
+112
+00:25:11,471 --> 00:25:19,391
+diyeyim mi olur diyeceğiz. Bilgi olarak verdim, aklımızda kalsın diyelim. Evet, konumuza dönelim.
+
+113
+00:25:26,451 --> 00:25:32,071
+Evet, tanımı da söyledik. Geometrik olarak ne ifade ettiğini de söyledik. Şimdi gelelim.
+
+114
+00:25:32,500 --> 00:25:42,160
+Basit zincir kuralı nedir? Ya da bileşike fonksiyonunun türevi. Biz gene hep tek değişkenlere götürüyoruz aklımıza gelsin diye.
+
+115
+00:25:42,539 --> 00:25:48,740
+Diyelim ki y eşittir f u diyorduk. Bu da bir fonksiyonsa. Bunun türevini nasıl alırdık arkadaşlar?
+
+116
+00:25:49,220 --> 00:25:55,400
+Fonksiyonun türevi çarpı içinin türevi. Burada da iki değişkenli fonksiyondaki bileşik fonksiyonunu göz önüne alalım.
+
+117
+00:26:00,500 --> 00:26:06,019
+Z fonksiyonun bakın, F'e bağlı, F de kendi içinde bir G fonksiyonuna bağlı olsun.
+
+118
+00:26:06,240 --> 00:26:07,920
+Yani fonksiyon fonksiyonu gibi.
+
+119
+00:26:08,400 --> 00:26:15,400
+Bunun türevini bana sormuş olsa, yani X'e göre türevini sorduğunda verilen F fonksiyonunun ne diyeceğim?
+
+120
+00:26:15,400 --> 00:26:21,460
+Aynen tek değişkenlerdeki mantıktaki gibi fonksiyonun türevi diyorum, içini aynen yazıyorum.
+
+121
+00:26:21,839 --> 00:26:27,519
+Çarpı, içi iki değişkenli olduğu için, bakın G hem X'i hem Y'ye bağlı olduğu için ne diyorum?
+
+122
+00:26:28,500 --> 00:26:34,099
+Fonksiyonun g'nin neye göre türevini almak istiyoruz? X'e göre, g'nin x'e göre türevi.
+
+123
+00:26:34,640 --> 00:26:40,640
+Fonksiyonun türevi, çarpı içinin türevi. O tek değişkenlerde tek olduğu için içinin türevi derdik.
+
+124
+00:26:40,759 --> 00:26:44,400
+Burada da fonksiyonun türevi, içinin x'e göre türevi.
+
+125
+00:26:44,720 --> 00:26:47,680
+Bunun y'ye göre türevini sormuş olsaydı bana ne diyecektim?
+
+126
+00:26:48,240 --> 00:26:54,819
+Fonksiyonun türevi, çarpı içinin g, y diyecektim. Y'ye göre türevi. İşte bu mantıklı.
+
+127
+00:26:54,819 --> 00:26:55,859
+Aynı şekilde bakın.
+
+128
+00:26:56,500 --> 00:27:09,099
+y'ye göre de fonksiyonun türevi, çarpı içinin y'ye göre türevi. İşte zincir kuralı dediğimiz ya da basit bileşike fonksiyonun türevini de bu şekilde düşünüyoruz.
+
+129
+00:27:09,519 --> 00:27:15,140
+Tamam mı arkadaşlar? Devam edelim. Diyelim şöyle bir örnek üzerinde görmeye çalışalım.
+
+130
+00:27:15,604 --> 00:27:36,144
+z eşittir, f, x bölü y. Yani bakın, burada gx, y dediğimiz x bölü y'dir. Yani iki bağımsız değişkenli fonksiyon, içindeki fonksiyon. Bunun şu denklemi, verilen z fonksiyonun denklemi sağladığını gösterin. Yani ne yapmalıyım burada? Z'in x'e göre türevini bulmalıyım.
+
+131
+00:27:36,496 --> 00:27:54,756
+z'in y'ye göre türevini bulacağım. Sonra da bunları yerine yazdığımda sıfırı görmem gerekir ya da bulmam gerekir. O halde ilk önce verilen şu z eşittir f x bölü y fonksiyonunun önce x'e göre kısmı türevini almalıyım değil mi? Nasıl almalıyım?
+
+132
+00:27:55,604 --> 00:28:19,044
+İşte sembolü şöyle bunu kullanmış olduk. dz bölü dx diyoruz. Ne diyorum? Fonksiyonun türevi f üstü x bölü y. Çarpı içinin x'e göre türevi değil mi? İçinin x'e göre türevini alıyorsam y'yi sabit düşünüyorum. Tamam mı? O da ne olur? x'e göre türevse 1 bölü y gelir. Tamam mı arkadaşlar? Bu.
+
+133
+00:28:19,571 --> 00:28:43,371
+Sonra, y'ye göre türevine de ihtiyacım var. O da gene aynı mantıkla. Ne diyorum? Fonksiyonun türevi. İçini aynen yazdım. Çarpı, parantez içinin y'ye göre kısmı türevi. Payın türevi sıfır değil mi? Çarpı payda. Eksi pay çarpı paydanın türevi. Eksi x bölü paydanın karesi diyeceğim. Şu.
+
+134
+00:28:44,852 --> 00:29:00,412
+İşte birinci mertebe kısmı türevleri bu şekilde buldum. Bize şu denklemi sağla diyor. Bunları burada ayrı ayrı yaptı. Yani önce z'in x'e göre türevini x ile çarpmalıyız. Çarptık x bölü y'ye gelir değil mi? F'in türevi.
+
+135
+00:29:00,784 --> 00:29:18,304
+Aynı şekilde zetiniye göre türevinde y ile çarp diyor. Onu da çarparsak, eksisi x bölüye f üstü gelir. Bir de bunları topladığımızda, dikkat ederseniz, birbirini götürür. Yani sonuçta türevleri doğru bulduk. Burada da denklemi sağladığını gösterdik.
+
+136
+00:29:18,304 --> 00:29:28,743
+Amaç bu denklemi bulmak önemli değil. Burada, eğer şurada türev hatası yaptıysan, burada biz kendimizi kontrol etmek için böyle bir denklemde yerine yazmak bizim için.
+
+137
+00:29:28,784 --> 00:29:52,443
+daha iyi bence. Çünkü öbür türlü burada bir işaret hatası yapsan nasıl türevi buldum deyip bırakıyorsun. Ama şu denklemi sağlamazsa geriye dönüp kontrol edebiliriz. Tamam mı arkadaşlar? Anlaşıldı mı? O zaman devam edelim. Buraya geçiyorum geometrik olarak. Ben orada size verdim. Şöyle diyelim.
+
+138
+00:29:55,796 --> 00:30:02,576
+birden fazla, yani ikiden fazla değişkenli fonksiyonların türevi dediğimizde nasıl düşüneceğiz?
+
+139
+00:30:03,275 --> 00:30:14,796
+Eğer F diyelim ki en tane bağımsız değişkeni var, en değişkenli bir fonksiyon ise o zaman F'in her bir değişkenine göre alınan en tane kısmı türevi mevcuttur.
+
+140
+00:30:17,935 --> 00:30:45,935
+O sayıda kısmı türevi mevcuttur birinci mertebe. Yani en tane bunun birinci mertebe kısmı türevi vardır. Nasıl alacağım? Diyelim ki x1'e göre türev alıyorsam f'in x1'e göre türevi derim veya şu birinci değişken olduğu için bir ikileri kullanmak daha yazım için kolay olur diyorum. Yani ne diyeceğim? Önce x1'e göre türev alıyorsam f1 diyeceğim. İçini aynen yazdım. Sonra ikinci değişkenine göre türev alıyorsam.
+
+141
+00:30:45,935 --> 00:31:13,255
+türev alırım, F2 derim. Benzer şekilde ta ki, nokta nokta de, eninci değişkenine göre türev alırım. Bu şekilde bulabiliriz. Yani hiç önemlidir, en tane bağımsız değişkeni de olsa arkadaşlar, türev alırken, neye göre türev alıyorum? Atıyorum, X3'e göre türev alıyorsam, diğerleri benim için sabit olarak düşünüyorum. İşte bunu da sembolik olarak şöyle yazmış olduk. Bakın bir tane örnek görelim şurada.
+
+142
+00:31:13,615 --> 00:31:19,275
+Ne vermiş bize parantezin içinde? 2xy bölü 1 artı xz artı y kare.
+
+143
+00:31:19,663 --> 00:31:39,743
+Dikkat ederseniz, x, y, z, 3 tane bağımsız değişkenli bir fonksiyon varmış. Bizden istenen z'in, yani d, pardon d bölü, d, z. Yani şu parantez içindeki fonksiyonun z'e göre kısmi türevini al diyor. Ben bunu z'e göre kısmi türevini alıyorsam, x, y benim için sabit gibi düşünüyorum.
+
+144
+00:31:47,188 --> 00:32:01,748
+Pi çarpı, 2x'ye çarpı, pi'danın z'e göre türevi, birin türevi yok, sıfır. Buradan z'e göre türev alıyorsam, x geldi, y kare de yok, sıfır. Bölü, pi'danın kalesi. Bu işte.
+
+145
+00:32:02,675 --> 00:32:15,596
+Bakın, aynı fonksiyonu bu sefer x'e göre türevi al. x'e göre türev alıyorsam, y'yi vezeti sabit düşünüyorum değil mi? Gene aynı bölümün türevinden, payın türevi neye göre alıyorum? x'e göre 2y çarpı payda.
+
+146
+00:32:16,019 --> 00:32:35,019
+Eksi, pi çarpı, pi'danın x'e göre türevinden ne gelir? Şuradan 0 sadece z var değil mi? Şuradan y kareden de 0. Yani eksi 2x'ye z. Bölü pi'danın karesi. İstediğin şekilde y'ye göre de alabilirsin.
+
+147
+00:32:36,115 --> 00:32:51,795
+Y'ye göre almış olsak, bunun türevini ne gelecek? 2x çarpı paydayı yazarım. Eksi 2x'ye çarpı paydanın türevinden 2y gelir, bölü paydanın karesi diye yazarız.
+
+148
+00:32:54,035 --> 00:33:02,295
+Anlaşılıyor değil mi arkadaşlar? Yani şurada bugünkü dersimin özeti, türevi almayı bilmek başka da bir şey yok aslında. Tamam mı arkadaşlar?
+
+149
+00:33:03,412 --> 00:33:24,251
+Evet, şimdi gelelim yüksek mertebeden türevler. Yani birinci mertebe türev var elimde. Onun tekrar türevini alırsam ikinci mertebesini bulurum. Tekrar türev alırsam üçüncü. Yani iki ve ikiden fazla mertebede olan türevlere de biz ne diyeceğiz? Yüksek mertebeden türevler diyeceğiz. Aynen tek değişkenlerde olduğu gibi.
+
+150
+00:33:29,076 --> 00:33:35,475
+Z eşittir, efixiye fonksiyonu için ikinci mertebe, kısmi türevlerini bulmaya çalışalım.
+
+151
+00:33:36,500 --> 00:33:41,579
+Önce bizim elimizde birinci mertebe türevlerimiz olmalı değil mi arkadaşlar?
+
+152
+00:33:42,019 --> 00:33:47,000
+Diyelim ki bunun birinci mertebe türevi neydi? Z'in x'e göre türevi bir tanesi şuydu.
+
+153
+00:33:47,559 --> 00:33:52,879
+Diğeri de z'in y'ye göre türevdir. Bunlar benim için birinci mertebe türevlerim.
+
+154
+00:33:53,139 --> 00:33:57,519
+Şimdi bunların üzerinden tekrar türev alırsam ikinci mertebe türevi bulmuş olacağım.
+
+155
+00:33:57,519 --> 00:34:03,899
+Onun için de bu parantezin içindeki birinci mertebe türev benim için bir fonksiyon gibi düşünüyorum.
+
+156
+00:34:04,500 --> 00:34:15,260
+Bunun kaç tane bağımsız değişkeni varsa, gene onlara göre türevi vardır. Bunun hem x'e göre türevi vardır, hem y'ye göre türevi. Olsun olmasın ama sembolik olarak almak zorundayım.
+
+157
+00:34:15,559 --> 00:34:24,179
+Şimdi ne yapıyorum? Önce bunun diyorum ki x değişkenine göre türevi. Onu da şöyle yazarız. D bölü dx parantez içinde z'in x'e göre türevi dersin.
+
+158
+00:34:24,179 --> 00:34:32,440
+Veya bunu okurken d kare z bölü dx kare şeklinde gösterirsin. İkinci mertebe türevi ifade eder. Veya iki kez.
+
+159
+00:34:32,500 --> 00:34:45,000
+Birinci değişkenine göre türev alınmıştır. F1x'i edersin veya iki kez x'e göre türev alınmıştır. İstediğin sembolü kullan. Ne yaptım? Burada x'e göre ikinci mertebe türevini yazmış oldum.
+
+160
+00:34:45,539 --> 00:34:53,319
+Bunun fonksiyonu bir de neye göre türevi vardır? Aynı şekilde y'ye göre. Tamam mı? Bakın şuradan şuraya geçiyorum. Kafam karışmasın diye.
+
+161
+00:34:53,840 --> 00:35:00,260
+Birinci mertebe türevi var şurada zetini x'e göre türevi. Bunun diyorum ki hem x'e göre türevi vardır hem y'ye göre.
+
+162
+00:35:00,500 --> 00:35:06,179
+Bir de y'ye göre türevini alırsam, yani d bölü dy diye yazarım sembolik olarak.
+
+163
+00:35:06,800 --> 00:35:13,659
+Bu da şöyle ifade edilir, d kare z bölü dy dx, yani önce x'e göre alınmış, sonra y'ye göre.
+
+164
+00:35:14,800 --> 00:35:21,119
+Veya f1, 2 dersin, önce y, pardon, önce x'e sonra y'ye.
+
+165
+00:35:21,119 --> 00:35:25,220
+Bu şekilde ifade ederiz. İstediğin sembolik kullan. Bitti.
+
+166
+00:35:25,427 --> 00:35:45,627
+Sonra bir de ne vardı elimde? Z'in y'ye göre türevi vardı. Gene bunun hem x'e göre türevi olacak, hem y'ye göre. Önce x'e göre türevini alırsam bunu, derim ki d kare z bölü dx d'ye diye okurum. Veya 2, 1, x'ye veya f, y, x diye yazılır. Tamam mı? Bu.
+
+167
+00:35:46,047 --> 00:36:05,387
+Sonra aynı fonksiyonun bir de y'ye göre türevi vardır. Yani y'ye göre türevi alınmış. Tekrar bunun y'ye göre türevini alırsam bunu da d kare z bölü dy kare diye okurum. Yani ikinci mertebe y'ye göre türevi ifade etmiş oluyor. Yani iki kez y'ye göre türevi alıyorum veya bu sembolü kullanabilirim.
+
+168
+00:36:05,387 --> 00:36:14,047
+İşte dikkat ederseniz ikinci mertebe kısmı türevlerinin sayısı kaç tanedir? 4 tane. İki değişken için tabii konuşuyorum. Tamam mı?
+
+169
+00:36:14,047 --> 00:36:30,707
+Bu. Şimdi gelelim. Bir tane de 3 değişkenli bir fonksiyon verilmiş. İşte burada neyi anlıyorum ben? 5. mertebe kısmi türevi yazmış burada arkadaşlar değil mi?
+
+170
+00:36:31,103 --> 00:36:50,923
+D üzeri 5, omega bölü, ne yapıyor? Önce Z'e göre türevi almış. Yorumluyorum burada bakın. İki kez Y'ye, bir kez X'et, sonra tekrar Y'ye göre. İşte şurada açık ifade etmiş. Önce omega'nın Z'e göre türevi al diyor. Sonra Y'ye göre türevini al, tekrar Y'ye.
+
+171
+00:36:51,311 --> 00:36:58,551
+Tekrar x'e ve tekrar y'ye göre alındığında, 5. mertebe istediği şu türevleri bulmuş olacağız.
+
+172
+00:36:58,711 --> 00:37:01,631
+Veya şu sembollerle de yazabiliriz.
+
+173
+00:37:02,891 --> 00:37:04,011
+Evet, şimdi gelelim.
+
+174
+00:37:04,911 --> 00:37:09,811
+Şurada verilmiş fx'ye 2 bağımsız değişkenli bir fonksiyon verilmiş.
+
+175
+00:37:09,991 --> 00:37:12,851
+x çarpı kosinus y artı e üzeri x'ye.
+
+176
+00:37:13,351 --> 00:37:17,711
+Bizden istenen 2. mertebe bakın, şu türevleri hesaplayınız diyor.
+
+177
+00:37:18,311 --> 00:37:18,851
+Tamam mı?
+
+178
+00:37:19,668 --> 00:37:40,528
+Hadi hesaplayalım birlikte. Önce bir kere bunların birinci mertebe türevlerini bulmanız. Değil mi? F'in x'e göre türevi nedir? x'e göre türevi alıyorsam y'yi sabit düşünüyorum. Ne gelir? Kosinüs y'ye şuradan, artı, şuradan x'e göre alıyorum, e üzeri x, y. Bitti. y'ye göre türevini alıyorum. Bakın.
+
+179
+00:37:41,268 --> 00:37:53,288
+Fonksiyonu y'ye göre türevini aldığımda da x'i sabit düşünüyorum. x çarpı, bunun da türevi eksisi, x çarpı sinüs y diyeceğim. Buradan da üzerisi. İşte birinci mertebe türevlerimiz bunlar.
+
+180
+00:37:53,748 --> 00:38:03,168
+Şimdi ne yapacağım? Bunlar üzerinden ikinci mertebe. Şimdi bu benim elimde var. Bunun hem x'e göre türevi mevcuttur, hem de y'ye göre. Çünkü iki bağımsız değişkenli.
+
+181
+00:38:09,268 --> 00:38:26,367
+mevcuttur diyeceğim. O zaman alalım. Bakın, bunun x'e göre türevini alırsam tekrar, sembolik olarak d kare f bölü, dx kare diye yazmış oldum. Şuradan x'e göre türev alıyorum. Buradan gelmez değil mi? 0. Şuradan e üzeri x, y diyeceğim.
+
+182
+00:38:27,092 --> 00:38:53,612
+Sonra bunun bir de y'ye göre türevi vardır. Şuradan y'ye göre türevini alırsam, şuraya yazmış olayım değil mi? Eksi sinüs y artı e üzeri x. Tamam mı? Sonra geldik buna. Bunun y'ye göre türevi vardır. Önce y'ye göre aldığımı düşünüyorum. d kare f bölü d y kare. Sonra y'ye göre alıyoruz. Bakın, eksi x çarpı kosinüs y buradan sıfır.
+
+183
+00:38:54,000 --> 00:39:06,980
+Tekrar bunun bir de x'e göre türevi vardır. x'e göre alırsam, eksisi nüsye, e üzeri x. Peki neye dikkat ettiniz? Bakın 4 tane türevi de hesaplamış olduk arkadaşlar. Dikkatimizi çeken ne var burada?
+
+184
+00:39:12,211 --> 00:39:12,692
+Evet.
+
+185
+00:39:16,340 --> 00:39:42,040
+Dikkatiniz bir şey çekmedi mi arkadaşlar? Bakın şu iki türevin eşit olduğunu gördük değil mi? İşte biz bunlara karışık türev diyoruz. Şimdi bir tören vereceğim. Bu karışık türevlerin eşit olduğunu söyleyeceğiz. Ondan sonra ikinci mertebe türevin sayısı 4 değil de 3 tane diyeceğiz. Bakın o türev. Biraz sonra yapalım.
+
+186
+00:39:42,771 --> 00:40:07,992
+Karışık türev teoremi ya da çapraz türev de diyoruz bazen. Onun için şöyle diyelim, eğer fx'ye fonksiyonu ve onun kısmı türevleri, yani f'in x'i, f'in y'i, fx'i, f'ye x fonksiyonları ab noktasında sürekli ve ab'yi içeren bir bölgede tanımlıyseler, işte karışık türev dediğimiz
+
+187
+00:40:08,659 --> 00:40:33,519
+Türevler verilen noktada birbirine eşittir. Tamam mı? Onun için yani bu bize neyi ifade ediyor? Kısmi türev alırken sıra önemli değil. Yani önce x'e göre türev almak, sonra y'ye göre veya tam tersi hiç önemli değil. Bu teoremi verdikten sonra sıra önemli değil. Yani şu fx'ye ile fx eşittir. Tamam mı arkadaşlar?
+
+188
+00:40:34,420 --> 00:40:44,920
+Tabii ki bu şartları sağladığı için türevleri ve fonksiyon verilen noktada sürekli ise karışık türevler birbirine eşittir.
+
+189
+00:40:45,820 --> 00:40:55,920
+Yani burada da yazdım. İkinci mertebe türevlerde olduğu gibi sürekli olduğu müddetçe tüm mertebeden türevlerin türev alma sırası bir önem ifade etmez.
+
+190
+00:40:55,920 --> 00:40:58,900
+Yani sıra önemli değil. İster önce x veya sonra.
+
+191
+00:40:59,311 --> 00:41:22,991
+Y'ye veya tam tersini düşünebiliriz. Evet, tamam mı arkadaşlar? O yüzden geriye dönüyoruz. Yani bana böyle bir soru sorulduğunda bir tanesini almam, 3 tane. Yani şunla şu aynı şeydir. Önce Y'ye veya onun için de biz birinci mertebe türevleri buluruz. Buradan içse, buradan Y'ye göre ikinci mertebe türevlerini alırım.
+
+192
+00:41:27,311 --> 00:41:39,371
+düşünürsem, karışık türevi bulacağım. Buradan y'ye göre türevi alırım. Ama buraya gelirsem, x'e göre türevi alacağım. Onları da artık bilirim. Tamam mı arkadaşlar? Anladınız mı demek istediğimi?
+
+193
+00:41:41,031 --> 00:41:54,371
+Evet, devam edelim. Şimdi bizden şunu, ne diyor? Z eşittir elen, x kare artı y kare ise, d kare z bölü d x kare, artı d kare z bölü d kare.
+
+194
+00:41:54,735 --> 00:42:20,415
+dy karenin sıfır olduğunu gösterin. Yani şu fonksiyonun ikinci mertebe türevini bulalım. Evet, ben bekliyorum arkadaşlar. Bir iki dakika. Sizin de eliniz alışsın. Bulun bakalım. Yani d kare z bölü dx karenidir. d kare z bölü dy kare. Yani z'in iki kez x'e göre türevi, z'in iki kez y'ye göre türevlerini bulup topladığınızda sıfırı versin.
+
+195
+00:42:21,012 --> 00:42:23,612
+Evet, bekliyorum arkadaşlar. 2 dakika veriyorum.
+
+196
+00:43:29,235 --> 00:43:39,255
+Z'in X'e göre türevini hemen ne yazarız? 2X bölü değil mi? X kare artı Y kare dersin. Z'in Y'e göre kısmı türevi ise.
+
+197
+00:43:40,211 --> 00:44:00,291
+2y bölü x kare artı y kare değil mi? Sıfırı yani doğru türev alıyorsak dikkat gerekiyor. Başka bir şey yok. Alın diye bekledim. Evet bulduk. Diyelim ki Zet'in baktık iki bağımsı değişkenli bir fonksiyon. Birinci mertebe türevi iki tanedir. X'e göre aldım. 2x bölü x kare artı y kare. Tamam mı?
+
+198
+00:44:00,724 --> 00:44:26,444
+Buradan da x'e göre tekrar türevini almak istersem, onu göstermişiz. D kare z bölü de x kare deriz. O da ne olur? Payın türevi x'e göre 2 çarpı payda değil mi? Eksi pay çarpı paydanın türevi 2x. Bölü paydanın karesi. Yani bölümün türevi aynen fonksiyonlardaki kurallar burada da geçerlidir demiştik. Bunu da düzenlersek ne olur?
+
+199
+00:44:26,931 --> 00:44:40,771
+2x kare, şuradan da 4 gider, parantezini almışız bakın, 2 parantezini alarak yazmışız daha doğrusu. O zaman ne olur? y kare, bir tanesi gitmiş olsun, x kare kalır.
+
+200
+00:44:40,951 --> 00:44:50,331
+y kare eksisi, x kare, bölü, paydanın karesi. Benzer şekilde y'ye göre birinci mertebe türevi aldığımızda da 2y bölü x kare artı y kare değil mi?
+
+201
+00:44:50,331 --> 00:44:54,931
+Bunun üzerinden tekrar y'ye göre türev alırsam, ikinci mertebe türevi bulurum.
+
+202
+00:44:54,931 --> 00:44:59,491
+O da d kare z bölü dy kare sembolünü kullanmış olalım.
+
+203
+00:45:00,031 --> 00:45:08,171
+Parin y'ye göre türevi 2 çarpı payda, eksi pay çarpı yani 2y çarpı paydanın y'ye göre türevi 2y.
+
+204
+00:45:08,451 --> 00:45:11,151
+Şu bölü paydanın karesi.
+
+205
+00:45:11,771 --> 00:45:18,331
+İşte burada da gene iki parantezin olarak yazdığımızda x kare eksi y kare bölü paydanın karesi.
+
+206
+00:45:18,651 --> 00:45:21,931
+Bizden istenen neydi? Bunları taraf tarafa topla.
+
+207
+00:45:22,867 --> 00:45:28,248
+Şuna en azından eksi parantezini alırsam topladığımızda sıfırı verir. Tamam mı?
+
+208
+00:45:29,548 --> 00:45:35,648
+Evet, devam edelim. Anlaşıldı sanırım. Dikkatli. Türev almak başka bir şey yok. İşlem hatası yapmamak. Evet.
+
+209
+00:45:37,188 --> 00:45:43,668
+Şimdi de karışık türevi söyledik. Eşit olduğunu. Yani çapraz türev ya da karışık türevleri.
+
+210
+00:45:43,668 --> 00:45:46,668
+Şimdi şurada da diyor ki bana, zetim...
+
+211
+00:45:48,628 --> 00:45:51,088
+100 k'ye ifadesinde
+
+212
+00:45:51,572 --> 00:46:01,751
+Şu d kare z bölü dx dy'nin, d kare z bölü dy dx'e eşit, yani karışık türevlerin birbirine eşit olduğunu gösteririz.
+
+213
+00:46:02,012 --> 00:46:07,271
+Tamam mı? Şimdi ne yapıyorum? Bunun önce y'ye göre türevini aldığımı düşüneyim.
+
+214
+00:46:07,711 --> 00:46:13,612
+Y'ye göre alırsam x'i sabit düşünüyorum. Tamam mı? Ne olur? Kosünüsten gelecek. O da ne gelecek?
+
+215
+00:46:13,612 --> 00:46:17,672
+Eksi k çarpı e üzeri k x çarpı sinüs ky.
+
+216
+00:46:18,164 --> 00:46:23,824
+Tamam. O zaman y'ye göre türev aldıysam, bunun bir de x'e göre türevini soruyor bana.
+
+217
+00:46:24,344 --> 00:46:31,444
+x'e göre türev alırsam şuradan, eksi k'nın karesi çarpı, e üzeri k x çarpı, sümüz k'yı bu.
+
+218
+00:46:32,115 --> 00:46:49,396
+Bunun, yani şunu buldum, bunun eşit olduğunu göster. O zaman ne yapıyorum? Bunun tekrar x'e göre kısmı türevini alıyorum. x'e göre türevini alırsam y'yi sabit düşünüyorum. Ne gelir? k çarpı, e üzeri kx çarpı, kosünüs ky. Bu.
+
+219
+00:46:49,876 --> 00:46:52,816
+Bunun bir de y'ye göre türevine ihtiyacım var.
+
+220
+00:46:53,276 --> 00:46:57,036
+Bunu da yazarken d kare z bölü d y d x diye.
+
+221
+00:46:57,176 --> 00:46:59,636
+Yani önce x'i sonra y'ye göre aldık.
+
+222
+00:47:00,136 --> 00:47:03,136
+Buradan y'ye göre alırsam ne gelir?
+
+223
+00:47:03,656 --> 00:47:05,115
+Eksi k'nın karesi.
+
+224
+00:47:05,523 --> 00:47:24,543
+çarpı ezeri, kx çarpı sinüz ky diyoruz. İşte dikkat ederseniz, bunlar birbirine eşittir. Yani karışık türevler birbirine eşit olduğu için, buradan anlayacağımız, türev alırken sıra önemli değil diyoruz. Tamam mı arkadaşlar? Evet, var mı buraya kadar takıldığımız bir yer?
+
+225
+00:47:26,643 --> 00:47:31,143
+Yok sanırım, anlamışızdır diye düşünüyorum. Dikkat gerekiyor, başka da bir şey yok.
+
+226
+00:47:31,463 --> 00:47:34,423
+İki değişkenli fonksiyonlar için artım teori mi diyelim?
+
+227
+00:47:35,163 --> 00:47:36,223
+Şöyle ifade edelim.
+
+228
+00:47:36,823 --> 00:47:45,063
+X0, Y0 noktasını içeren açık bir R bölgesinde, yani bir bölge düşünelim, merkez X0, Y0 olan.
+
+229
+00:47:54,003 --> 00:47:59,804
+x0, y0 noktasında f'in x'e ve f'in y'ye göre kısmi türevleri sürekli olsun.
+
+230
+00:48:01,324 --> 00:48:07,824
+Yani verilen bölgede, r bölgesinde fonksiyon ve kısmi türevleri verilen noktada
+
+231
+00:48:08,724 --> 00:48:23,963
+Hem tanımlı türevleri de sürekli olsun. Bu durumda R bölgesinde X0'ya 0'dan başka bir X0 delta X, Y0 delta Y noktasına taşınmasıyla oluşan F değerindeki değişim.
+
+232
+00:48:24,384 --> 00:48:30,463
+Hatırlarsanız arkadaşlar, Y'ştir Fx fonksiyonunun artımını biz delta Y ile göstermiştik.
+
+233
+00:48:30,824 --> 00:48:36,724
+Yani değişkenli delta X kadar artırıp, işte ne diyorduk? Fx artı delta X, eksi Fx diye yazardık.
+
+234
+00:48:36,724 --> 00:48:59,684
+Burada da bizim fonksiyonumuz delta z, pardon z ya, onun da artım miktarı ne olur? Delta z olur. O zaman noktamızı da x0, y0 vermişti. O zaman noktaları x'i delta x kadar y'i de delta y'ye kadar artırdığımızda f x0 delta x virgül y0 delta y eksi fx'i fonksiyonun artımı değil mi? Şu.
+
+235
+00:49:02,708 --> 00:49:20,168
+Biz orada f üstü x derdik değil mi? Burada da fonksiyon x'e göre türevi diyoruz. Delta x artı fonksiyon y'ye göre kısmı türevi. Delta y artı epsilon 1 delta x artı epsilon 2 delta y denklemini sağlar.
+
+236
+00:49:20,659 --> 00:49:34,279
+Burada delta x delta y sıfıra gittiğinde epsilon 1, epsilon 2 sıfırdır. Bu da bize neyi ifade etmiş olacak arkadaşlar? Yani şu delta z denklemini sağlayan fx, fy türevleri mevcut olan
+
+237
+00:49:34,708 --> 00:49:53,148
+fxye fonksiyonuna x0 noktasında türevlenebilirdir diyeceğiz. Yani özet olarak, bir fonksiyonun birinci mertebe türevleri x0, y0 noktasında sürekli ise, bu durumda bu fonksiyon x0, y0 noktasında türevlenebilir.
+
+238
+00:49:53,148 --> 00:49:59,307
+Yani bu biraz tek değişkenlerden farklı. Tek değişkenli fonksiyonlarda ne diyorduk?
+
+239
+00:50:00,000 --> 00:50:16,860
+türevi varsa süreklidir. Ama burada böyle bir şey diyemeyeceğiz. Yani fonksiyonun kısmı türevleri olabilir ama fonksiyonun sürekli olmak zorunda değildir. Ancak türevleri de sürekliyse fonksiyonu süreklidir diyeceğiz. Onu ifade etmek istedik burada arkadaşlar. Tamam mı?
+
+240
+00:50:17,748 --> 00:50:32,708
+Bak söyledim, burada da yazmışız zaten. Bakın tek değişkenli fonksiyonlarda diyorduk ki fonksiyonun o noktada türeve sahipse, ne diyorduk? Kesinlikle fonksiyon süreklidir. Ancak bu özellik kısmı türevlerde geçerli değildir.
+
+241
+00:50:33,107 --> 00:50:44,587
+Çok değişkenli fonksiyon bir noktada birinci mertebeden türevlere sahip olsa bile fonksiyon o noktada sürekli olmayabilir. Bu önemli. Onun için tek değişkenlerle karıştırmayalım.
+
+242
+00:50:45,235 --> 00:50:51,376
+Tek değişkenlerde türevi varsa süreklidir diyorduk. Ama burada türevi varsa sürekli olmayabilir.
+
+243
+00:50:52,376 --> 00:51:07,635
+Evet, tekrar fxye fonksiyonunun birinci mertebe kısmı türevleri, yani f'in x'e, f'in y'ye göre kısmı türevleri, x0'ya 0 noktasını içeren bir bölgede sürekli ise fonksiyon o noktada süreklidir diyeceğiz.
+
+244
+00:51:08,179 --> 00:51:23,639
+Yani türevlerinin de sürekli olması gerekir. Yani türevi varsa hemen ben bu fonksiyon süreklidir demeyeceğim. Çok değişkenler için konuşuyoruz değil mi? Anladınız mı demek istediğimi? Bu. Örneğin bakın bir tane örnek şöyle verilmiş.
+
+245
+00:51:24,563 --> 00:51:32,803
+Diyor ki, parçalı verilmiş fonksiyon, x'ye sıfırdan farklıken değeri sıfırmış, x sıfırya sıfırken de değeri birmiş.
+
+246
+00:51:33,283 --> 00:51:42,183
+Bizden istenen y eşittir x boyunca fx'ye fonksiyonunun sıfır sıfırdaki limitini bulunuz diyor.
+
+247
+00:51:42,343 --> 00:51:47,323
+İkinci de de f'in sıfır sıfırda sürekli olmadığını gösterin.
+
+248
+00:51:48,500 --> 00:51:56,719
+Üçüncüde de f'in x'e ve f'in y'ye göre türevlerinin 0,0'da m3'de olduğunu gösteririz. Tamam mı?
+
+249
+00:51:57,860 --> 00:52:06,319
+Evet, şimdi dikkat ederseniz, dün de konuşmuştuk, bir fonksiyonun limitinin varlığını araştırabilirsiniz.
+
+250
+00:52:06,460 --> 00:52:13,259
+Burada bize kendisi vermiş, diyor ki bir doğru boyunca fonksiyonun limiti nedir?
+
+251
+00:52:14,420 --> 00:52:14,759
+Değil mi?
+
+252
+00:52:17,172 --> 00:52:26,551
+İşte birinci olarak şöyle diyelim. Yeşittir x doğrusu boyunca orijin hariç limitim neyi alacağım arkadaşlar?
+
+253
+00:52:27,591 --> 00:52:33,331
+x0'a y0'a yaklaştığında bunun limitinin varlığını araştırıyorum. Fonksiyonum şu değil midir?
+
+254
+00:52:35,031 --> 00:52:41,211
+Şu. İşte limit x0'a y0'a yaklaştığında benim fonksiyonum sıfır.
+
+255
+00:52:41,972 --> 00:52:57,072
+Zaten bu ne olursa olsun, her zaman sıfırdır. Çünkü öyle verilmiş fonksiyonlar. Yani y eşitir x'i yaz buraya. İşte fx, x dersin, x sıfıra yaklaştığında gene nedir? Sıfırdır. İşte limiti sıfırmış.
+
+256
+00:52:59,812 --> 00:53:02,828
+Evet, şimdi b...
+
+257
+00:53:05,940 --> 00:53:07,940
+olmadığını gösteriniz.
+
+258
+00:53:08,399 --> 00:53:13,099
+E fonksiyonun sıfır, bir noktada sürekli olabilmesi için neydi fonksiyon?
+
+259
+00:53:13,099 --> 00:53:18,000
+O noktada tanımlı olacaktı. Limit değeri de tanımlı olduğu değeri eşit olmalıydı.
+
+260
+00:53:18,339 --> 00:53:20,039
+E o zaman fonksiyona bakıyoruz.
+
+261
+00:53:20,599 --> 00:53:23,059
+Sıfır sıfır noktasındaki değeri nedir?
+
+262
+00:53:23,379 --> 00:53:23,859
+Birdir.
+
+263
+00:53:25,239 --> 00:53:27,500
+E limiti de zaten belli değil mi?
+
+264
+00:53:27,920 --> 00:53:30,679
+X sıfıra, Y sıfıra yaklaştığında değeri sıfır değil midir?
+
+265
+00:53:30,759 --> 00:53:31,539
+Verilmiş burada.
+
+266
+00:53:32,083 --> 00:53:38,303
+Onlarda bakıyorsun, birbirinden farklı olduğu için ne diyorum? Fonksiyon sürekli değildir.
+
+267
+00:53:39,423 --> 00:53:42,403
+Türevini soruyor bize, C şıkkında da.
+
+268
+00:53:43,323 --> 00:53:46,643
+X'e göre türev alıyorsam ne yapıyorum? Y'yi sabit düşünüyorum.
+
+269
+00:53:47,083 --> 00:53:49,036
+Y'ye göre türev alırsam da...
+
+270
+00:53:52,916 --> 00:54:06,116
+Noktayı da sorduğu için y'yi 0 düşünüyorum. Tamam mı arkadaşlar? O zaman burada da fxye fonksiyonumu 1 olarak düşünürsem, bunun da x'e göre türevi ne olur? Noktada 0'dır zaten.
+
+271
+00:54:06,716 --> 00:54:18,036
+Benzer şekilde eğer y'ye göre kısmı türevi soruyorsa bana 0, 0'daki değer için. Bu sefer ne yapıyorum? x'i sabit düşünüyorum. Yani x0'ı sabit düşünürsem.
+
+272
+00:54:18,416 --> 00:54:34,996
+O zaman benim fonksiyonum gene fxc fonksiyonum 1'dir. Değil mi? 0,0'daki değeri. O da türevide ne olur? Gene 0 olur. İşte türevleri de bu şekilde bulmuş olduk. Tamam mı arkadaşlar? Var mı burada takıldığımız bir yer?
+
+273
+00:54:39,923 --> 00:54:45,023
+Evet, geçelim o zaman. Peki, şuna bir bakalım.
+
+274
+00:54:47,244 --> 00:54:58,983
+Parçalı verilmiş bir fonksiyonun, f'in x'e ve f'in y'ye göre türevlerinin mevcut olduğunu, ancak 0,0'da sürekli olmadığını gösteriniz.
+
+275
+00:54:58,983 --> 00:55:05,983
+Tamam mı? Evet, fonksiyonun 0,0 noktasındaki...
+
+276
+00:55:06,260 --> 00:55:22,640
+Türevinin x'e göre, bir de y'ye göre kısmı türevlerinin olduğunu önce göstermeye çalışalım. Sonra da sürekli olmadığını. Evet. Ne yapmam gerekir? Tanımdan giderek değil mi fonksiyonun?
+
+277
+00:55:23,059 --> 00:55:34,879
+X'e göre türev ile ne diyeceğim? Limit, h sıfıra yaklaşırken, noktayı da kullanırsam, X'e göre türev alıyorsam, F0 artı h, virgül sıfır diyeceğim değil mi?
+
+278
+00:55:35,239 --> 00:55:42,460
+Eksi F0, 0 bölü h. F'in X'e göre türevinin 0, 0'daki yukarıda benzer bir örnek yapmıştık değil mi?
+
+279
+00:55:42,460 --> 00:55:47,799
+Bu, böyle bir limit varsa, bu limite fonksiyonun X'e göre türevi diyeceğim.
+
+280
+00:55:48,139 --> 00:55:51,059
+Buradan da ne anlıyorum? Burada X gördüğüm yere h.
+
+281
+00:55:51,059 --> 00:56:01,679
+h yazacağım, y'ye de 0 diyeceğim. Sonra fonksiyonu 0, 0'daki değeri zaten verilmiş burada bakın 0. O zaman yazarsak fonksiyonum şu, değil mi limitine baktığım için?
+
+282
+00:56:02,319 --> 00:56:10,719
+0'a giderken, x yerine 0, pardon x yerine h, y yerine 0 yaz. Bu 0 oldu değil mi? 0.
+
+283
+00:56:11,476 --> 00:56:28,216
+eksi, bu da sıfır. Yani pay sıfır oldu, pay da h. Bu da nedir? Sıfırdır. Benzer şekilde y'ye göre yazarsak ne olacak? Limit h sıfıra giderken, x'i sabit düşünüyorum, sıfır noktayı da kullanıyorum. Sıfır artı h, eksi f sıfır sıfır diyeceğim işte şu.
+
+284
+00:56:28,884 --> 00:56:35,983
+Böyle bir limit varsa, limite fonksiyonun y'ye göre kısmi türevidir diyeceğiz. Tamam mı arkadaşlar?
+
+285
+00:56:36,423 --> 00:56:42,503
+Yine aynı şekilde yazarsam, burada x yerine 0, y yerine h yazarsam, ne oldu? 0.
+
+286
+00:56:43,635 --> 00:56:57,995
+Eksi, F'in sıfır sıfırdaki değer de sıfır. Yani pi sıfır oldu, pi'de da h. Sonuç nedir? Sıfırdır. İşte, kısmi türevleri verilen noktada mevcut. Ama diyor ki, bunun sıfır sıfır da sürekli olmadığını gösteriniz.
+
+287
+00:56:58,355 --> 00:57:11,515
+Fonksiyon sıfır sıfır da tanımlı değil mi? Değeri sıfır. Onun için neyi göstermem gerekir? Bunun limitinin sıfır olduğunu ispatlamam gerekir. Ama dün de konuşmuştuk. Bunun limitini bazen ispatlayamayabilirim.
+
+288
+00:57:11,635 --> 00:57:31,375
+Hanım'dan ama ne yapabilirim? Bunun varlığını araştırabilirim. Ya bir eğriyle, ya bir doğruyla yaklaşırım veya iki kat limitine bakabilirim. Burada da ben bir doğruyla genel diyelim ki yeşilir, emiks doğrusuyla bunun limitinin varlığını araştırmaya çalışalım.
+
+289
+00:57:31,664 --> 00:57:44,764
+Tamam mı arkadaşlar? Yani x, y sıfıra yaklaştığında, yani amacım limit x sıfıra, y sıfıra yaklaştığında x, y bölü x kare artı y kare limitinin sıfır olduğunu ispatlamak.
+
+290
+00:57:45,084 --> 00:57:49,944
+Ama o biraz dedim ki zor oluyor. Bunun acaba limiti var mı diye bir araştırayım.
+
+291
+00:57:50,404 --> 00:57:58,384
+Onun için diyorum ki genel bir doğru ile, dün konuşmuştuk değil mi? Doğru ile, eğri ile veya iki kat limitle de bakabiliriz.
+
+292
+00:57:58,867 --> 00:58:26,867
+Bunun 2 kat limiti 0 olduğu için sonuca gidemem buradan. Yani ille bir yolla daha yaklaşmam gerekir. O halde ne diyorum? Bakın y eşittir. Diyelim ki mx ile yaklaşalım. Limitinin varlığını araştırmak için. y 0'a giderken x 0'a gider. Tamam doğru. O zaman bunu ben tek değişkenli bir fonksiyon gibi yazacağım. Limit x 0'a giderken. Şurada y yerine ne yazıyorum? mx yazıyorum. mx'in karesi olur. Bölü x kare.
+
+293
+00:58:26,867 --> 00:58:29,047
+m² x² değil mi? Şu.
+
+294
+00:58:30,467 --> 00:58:37,347
+Buradan da ne yapabilirim? x² parantezini alırsam, sonuçta m bölü 1 artı m² kalır.
+
+295
+00:58:37,347 --> 00:58:42,547
+Yani burada m değiştikçe, sonuç değişeceği için ne diyorum? Limit yok.
+
+296
+00:58:42,887 --> 00:58:46,507
+Elimiti yoksa zaten, diyeceğim ki sürekli değildir.
+
+297
+00:58:47,447 --> 00:58:48,227
+Tamam mı arkadaşlar?
+
+298
+00:58:51,923 --> 00:58:57,283
+Evet. Anlaşıldı mı? Devam edelim.
+
+299
+00:59:00,916 --> 00:59:08,556
+Evet, türev ile ilgili kısım bu. Şimdi gelelim, zincir kuralı nedir? Onu konuşalım.
+
+300
+00:59:12,788 --> 00:59:30,188
+Evet, eğer z eşittir, z x'ye, yani burada f de dersin, z de dersin, fark etmez. Tamam mı arkadaşlar? Değişik değişik yazılışları göresinizde yazıyoruz. Yani z eşittir, f x'ye alıştığınızda z eşittir, z x'ye demekle bir yanlışlık yok. Yani burada z x'ye, y'ye bağlı.
+
+301
+00:59:35,856 --> 00:59:48,036
+X, T'ye bağlı, Y de T'ye bağlı, türevlenebilen bir fonksiyon ise. Burada amacımız, zincir kuralıyla türev nasıl alınır, onu görmek istiyoruz. Biraz dikkat edelim arkadaşlar.
+
+302
+00:59:48,615 --> 00:59:59,376
+Bakın, şurada bunu irdeliyorum verildiği şekilde. Ne yapıyorum? Diyorum ki, Z, X'e, Y'ye bağlıymış. Bu Y'ler, X'ler de T'ye bağlı.
+
+303
+01:00:00,000 --> 01:00:15,559
+yazınız. Ağaç dalı gibi düşünün. Bakın Z diyorum. İki dal çıkardım. X'e, Y'ye bağlı. Bu X'ler, Y'ler de T'ye bağlı. Onun için burada şöyle yorumluyorum. Bakın Z en son bağlı olduğu değişken nedir? T'dir.
+
+304
+01:00:16,532 --> 01:00:22,472
+O yüzden ben ne yapıyorum? Z'in en son bağlı olduğu değişkene göre türev alacağımı düşünüyorum.
+
+305
+01:00:22,972 --> 01:00:28,852
+Burada Z en son T'ye bağlı olduğu için tek değişkenli fonksiyonu T'deyle göstermiş oldum.
+
+306
+01:00:28,932 --> 01:00:30,692
+Türev alırken ona göre dikkat edeceğim.
+
+307
+01:00:31,352 --> 01:00:35,752
+Z önce X'e, Y'ye bağlı olduğu için çok değişkenli fonksiyon değil mi?
+
+308
+01:00:36,252 --> 01:00:41,612
+X, Y'de sadece X'ler, Y'ler de T'ye bağlı olduğu için bu da tek değişkenli.
+
+309
+01:00:42,032 --> 01:00:44,212
+Tek değişken demek çok değişken demek.
+
+310
+01:00:44,532 --> 01:01:04,192
+Onun için ne yapıyorum? Bu yazılışa göre ben z fonksiyonunun en son bağlı olduğu değişkene göre türev alabilirim. Yani z'in t'ye göre türevi. Neden adi türev yazdım? Çünkü en son tek değişkene bağlı olduğu için bu semboller önemli arkadaşlar. Tamam mı? Şöyle diyoruz.
+
+311
+01:01:04,527 --> 01:01:28,067
+Z'in DZ bölü DT diyorum. Şimdi sırayla türevi şöyle alıyoruz zincir kuralından. Ne yapıyorum? Önce Z'in X'e göre türevi, X'in de T'ye göre türevi. Artı Z'in Y'ye göre türevi, Y'nin T'ye göre. Bakın Z'in X'e göre türevi çok değişkenli olduğu için kısmı türevi yazdım. Z'in X'e göre türevi.
+
+312
+01:01:28,628 --> 01:01:42,048
+x'in de en son bağlı olduğu değişkene göre, adi tek değişkenli olduğu için, adi türevi x'in t'ye göre. Sonra z'in y'ye göre, gene çok değişken şu arası. Y'ye göre türevi, y'nin t'ye göre.
+
+313
+01:01:46,900 --> 01:02:06,720
+Şuradaki türevi arıyorum ve t'ye göre türevi. Böyle de aklımızda kalabilir. Z'in y'ye, y'nin t'ye göre türevi. İşte bu şekilde zincir kuralından verilen bu fonksiyonun z'e göre türevini bu şekilde yazarız. Varsa değerleri yerine yazılır. Anlaşıldı mı arkadaşlar? Zincir kuralı.
+
+314
+01:02:07,251 --> 01:02:15,751
+Bu yazışa göre verilen z fonksiyonu tek bağımsız değişkene bağlı, bileşik fonksiyon gibi de düşünebiliyoruz.
+
+315
+01:02:16,551 --> 01:02:25,311
+Ama en güzeli böyle analiz ederek tek tek yazmak. Yani ağaç dalları gibi işte z, x, y'ye bağlı, x'ler, y'ler de t'ye bağlı.
+
+316
+01:02:25,411 --> 01:02:31,471
+Tamam mı? Anladık mı arkadaşlar bu türev almak şeklini? Zincir kuralı.
+
+317
+01:02:33,492 --> 01:02:42,380
+Evet, devam edelim. Z eşittir, fx'ye, birinci mertebe kısmı türevleri sürekli olan bir fonksiyon ve...
+
+318
+01:02:42,516 --> 01:02:52,255
+X, ST'ye, Y de ST'ye bağlı, S ve T'nin türevlenebilen fonksiyonları ise, burada zincir kurallarını görmeye çalışıyoruz.
+
+319
+01:02:52,395 --> 01:02:58,516
+Yani diyelim ki bu seferde ne oldu bakın, Z, X'e, Y'ye bağlı verilmiş, bakın F'li yazdık hiç fark etmez.
+
+320
+01:02:58,835 --> 01:03:01,815
+Bu X'ler, Y'ler de kime bağlı? S'e ve T'ye bağlı.
+
+321
+01:03:02,771 --> 01:03:08,572
+Bunların türevlerini bana soruyor. Ben yine kendimce şu kenarda analiz ediyorum, neler yapabilirim.
+
+322
+01:03:08,692 --> 01:03:16,452
+Diyorum ki Z önce kime bağlı verilmiş? X'e, Y'ye bağlı verilmiş. Bu X'ler, Y'ler de kime bağlı? S'e ve T'ye bağlı.
+
+323
+01:03:17,311 --> 01:03:26,972
+Bu yazışıma göre Z'in en son bağlı olduğu değişkenlere göre kısmı türevlerini alabilirim. Bakın, hem S'e göre türevi mevcuttur, hem de T'ye göre.
+
+324
+01:03:27,972 --> 01:03:29,192
+Bu yazış önemli sıra.
+
+325
+01:03:30,195 --> 01:03:37,556
+O halde burada da konuşuyorum. Diyorum ki, Zet'in en son bağlı olduğu değişken, 2 tane olduğu için bu çok değişkenli.
+
+326
+01:03:38,420 --> 01:04:06,420
+Buraya geliyorum. Z, X'e, Y'ye bağlı olduğu için çok değişkenli. X, Y'ler de hem S'e hem T'ye bağlı olduğu için çok değişkenli. Yani bir ağaç gibi düşün. Z'i çiz. Buraya Z'de 2 dal çıkar. X, Y. X'e de 2 dal çıkarıyorsun. S, T. Y'ye de 2 dal çıkardın. S, T. İşte bu şekilde ağaç diagramı gibi ne yapıyorum? Diyorum ki Z'in en son bağlı olduğu değişkenlere göre kısmi türev alıyorum. Hem S'e göre türevi var.
+
+327
+01:04:06,420 --> 01:04:18,739
+Hem T'ye göre. İşte geliyorum sol tarafta. Önce diyelim ki sıra önemli değil. Z'in S'e göre kısmı türevini alıyorum. Bakın kısmı yazdım. A'de yazmadım. Çünkü hepsi çok değişkenli.
+
+328
+01:04:19,092 --> 01:04:38,892
+Z'in S'e göre türevi eşittir diyorum, adım adım zincir kuralına göre. Z'in önce X'e göre türevi, X'in S'e göre türevi değil mi? Z'in X'e göre türevi, X'in S'e göre türevi. Artı Z'in Y'ye göre türevi, Y'nin S'e göre türevi. Bu. Bitti.
+
+329
+01:04:40,211 --> 01:04:44,172
+Benzer şekilde z'in bir de t'ye göre türevi vardır. Onu yazalım bakın.
+
+330
+01:04:44,692 --> 01:04:47,132
+Z'in t'ye göre türevi diyeceğim.
+
+331
+01:04:47,811 --> 01:04:51,351
+Gidiyorum bakın. Z'in x'e göre türevi, x'in t'ye göre türevi.
+
+332
+01:04:51,572 --> 01:04:55,532
+Artı z'in y'ye, y'nin t'ye göre türevi. Bu.
+
+333
+01:04:57,092 --> 01:05:02,052
+İşte böyle bir fonksiyon verilmişse, bu nedir? İki değişkenli birleşik fonksiyondur.
+
+334
+01:05:02,052 --> 01:05:07,032
+Çünkü en son s ve t'ye bağlı birleşik fonksiyon şeklinde verilmiş.
+
+335
+01:05:07,699 --> 01:05:08,940
+Anladık mı arkadaşlar?
+
+336
+01:05:11,779 --> 01:05:18,239
+Evet, o zaman şöyle bir örneği çözersek buradan anlaşılır herhalde değil mi?
+
+337
+01:05:18,880 --> 01:05:23,880
+Diyor ki, omega xy, x kosinus t, y de sinüsteymiş.
+
+338
+01:05:24,199 --> 01:05:30,000
+Yani burada soruyla konuşuyorum, diyorum ki omega xy'ye bağlıymış, bak z dememiş, omega demiş, hiç önemli değil.
+
+339
+01:05:30,779 --> 01:05:34,319
+Bu xy'ler de neye bağlıymış? Sadece t'lere bağlıymış.
+
+340
+01:05:35,315 --> 01:06:02,735
+Benden istenen, tabii ki adi türev yazacak. Neden? Bakın, cevabı önemli değil. Ben amaç bu türevi nasıl alırım? Sonuç hiç önemli değil. Önce konuşuyorum soruyla. Diyorum ki, Omega, X'e, Y'ye bağlıymış, X'y'ler de T'ye bağlı. Omega'nın en son bağlı olduğu değişkene göre türev alacağım. Kuralı mı? Zincir kuralı. O zaman bakın, tek değişkene bağlı olduğu için, onu adi türev yazıyorum. Bakın, D omega bölü, D, T diyorum.
+
+341
+01:06:03,795 --> 01:06:19,475
+Tek değişkenli çünkü. Bunlar bakın, x'e, y'ye bağlı. Çok değişkenli ama x'e, y'ler de tek değişkene bağlı olduğu için tek değişkenli. O zaman ne diyorum? Omega'nın t'ye göre türevini alırken ne diyeceğim? Omega'nın x'e göre türevi.
+
+342
+01:06:20,019 --> 01:06:39,720
+X'in T'ye göre türevi, adi türevi yazdım. Artı, Omega'nın Y'ye göre türevi, Y'nin T'ye göre türevi. İşte bu kadar arkadaşlar. Tamam mı? Bu. E şimdi bildiklerimi yerine yazıyorum. Bakın, ne diyorum? Omega'nın X'e göre türevi ne olur burada? Kısmi türevini alıyorum. Y.
+
+343
+01:06:40,820 --> 01:06:52,720
+x'in t'ye göre türevi nedir? Eksi sinüs t. Artı omega'nın y'ye göre türevi nedir? x diyeceğim. y'nin t'ye göre türevi de kosünüs t'dir.
+
+344
+01:06:53,240 --> 01:07:06,580
+İşte burada hem x hem y olmaz değil mi? Hem de t. Hepsini t cinsinden ifade etmem gerekir. O zaman y'ye gördüğüm yere ne yazmalıyım arkadaşlar? Sinüs t, x gördüğüm yere de kosünüs t'ye yazmalıyım.
+
+345
+01:07:07,027 --> 01:07:26,847
+Ya da şuradaki gibi değerlerini bulurum. İşte t pi bölü 2 ise yerine yazarım. X'i 0 bulurum. Y'i de 1 bulurum. Burada getirip yerine yazdığımda da sonucu bulurum. İşte x, y yerine 1, t yerine pi bölü 2 yaz. X yerine de 0 yazarsam sonuç eksi 1'dir.
+
+346
+01:07:27,215 --> 01:07:42,735
+Tamam mı? Şimdi diyebilirsiniz ki, hocam siz bu kadar niye uğraşıyorsunuz? Ben olsam, işte getiririm omega'da x'i yerine yazarım, y'yi yerine yazarım, omega eşittir, işte kosünüs çarpı sinüs derim, oradan kolayca t'ye göre türev alırım.
+
+347
+01:07:42,735 --> 01:07:55,215
+Ama o zaman bana hiçbir şey demezse, örneğin bir sınav sorusu şunu verir, der ki bunun pi bölü 2'deki değerleri, tabii ki niye? Ama bana burada diyor ki, zincir kuralını uygulayarak, zincir kuralını uygula diyoruz.
+
+348
+01:07:55,215 --> 01:08:17,675
+Bu şekilde gitmek zorundayım. Ama demiyorsa, dediğim gibi al yerine yaz. İşte omega'yı t cinsinden ifade etmiş olurum. Oradan da kısaca türevini alırım. İşte nedir? Çarpımın türevinden bulursun. Sonuç geni eksi 1 olarak yazılır. Tamam mı arkadaşlar? Yani zincir kuralını uyguluyorsam, şurada y'nin yerine de sinüs t'yi yazmalıyım. Yani eksi sinüs kare t.
+
+349
+01:08:18,195 --> 01:08:28,216
+Artı, kosinüs kare t diyeceğim. Sonra t pi bölü 2'deki değerini de yerine yazdığımda, eksi 1'i bulmalıyım. Yani zincir kuralını uyguluyorsa. Tamam mı? Bu.
+
+350
+01:08:30,275 --> 01:08:39,675
+Anladınız mı farkı? Yani zincir kuralını uygula dediği için yaptım demese, hiç bu kadar uğraşmama gerek kalmaz. Alır yerine yazarım, bulurum. Tamam mı arkadaşlar?
+
+351
+01:08:41,775 --> 01:08:42,175
+Evet.
+
+352
+01:08:44,564 --> 01:08:51,804
+Peki, şöyle bir şey verilmiş. Hadi bunu bekliyorum sizden. Bakın, biraz siz düşünün. Omega XYZ.
+
+353
+01:08:52,239 --> 01:09:14,239
+Tamam mı? Omega, X'e, Y'ye, Z'e bağlı verilmiş. 3 bağımlısız değişkenli var. Bakın, Omega'nın bu X'ler, Y'ler, Z'ler de hepsi T'ye bağlı. Bizden istenen Omega'nın T'ye göre türevinin sıfırdaki değeri. Hadi bekliyorum arkadaşlar. 2 dakika veriyorum. Yani sonuç benim için önemli değil. Sade zincir kuralını uygulayarak türevini hesaplayınız.
+
+354
+01:09:14,688 --> 01:09:33,927
+Onun için önce bir konuşun soruyla. Bakın omega diyeceğim ki, x'e, y'ye, z'e bağlı. Çok değişkenli değil mi? X'ler, y'ler, z'ler de t'ye bağlı. Omega en son bağlı olduğu değişken nedir? t'dir. Tek değişkenlidir. Onun için adi türev vermiş bakın. Omega'nın t'ye göre türevi.
+
+355
+01:09:35,667 --> 01:09:39,628
+En azından şu ilk bir satırı görmek istiyorum. Nasıl yazarsınız?
+
+356
+01:09:40,532 --> 01:09:42,992
+Karala mağaz, soru bilik de kontrol edin.
+
+357
+01:10:40,979 --> 01:10:43,319
+Evet, uğraşmışsınızdır diye düşünüyorum.
+
+358
+01:10:46,836 --> 01:10:55,296
+Sonucu [öğrenci] arkadaş bulmuş. Sonuç kaçmış? 2'ymiş. İşaret hatası yapmışsınızdır. Bakalım. Neyse.
+
+359
+01:10:55,775 --> 01:11:23,775
+Şimdi önce ne yapıyorum? Soruyla bir konuşuyorum. Diyorum ki omega kime bağlıymış? X'e, Y'ye, Z'e bağlı. Bu X'ler, Y'ler, Z'ler de T'ye bağlı. Sonuçta omega en son T'ye bağlı olduğu için tek değişkenli fonksiyon diyorum. Omega burada X'ye, Z'e bağlı olduğu için çok değişkenli. X'ler, Y'ler, Z'ler de sadece T'ye bağlı verildiği için tek değişkenli. Onun için ne yapıyorum? Omega'nın en son bağlı olduğu değişkene göre türevi alınır. Zincir kuralına göre.
+
+360
+01:11:23,775 --> 01:11:38,775
+O halde adi türev diyorum, tek değişkene bağlı olduğu için, omega bölü dt diyorum. Eşittir diyoruz. Şimdi sırayla alıyoruz. Merdiven gibi basamaklarla adım adım gidiyoruz. Omega'nın x'e göre türevi diyorum. x'in...
+
+361
+01:11:38,931 --> 01:11:56,572
+t'ye göre türevi, adi türevi. Çünkü en son tek değişkene bağlı olduğu için. Artı, omeganın y'ye göre türevi, y'nin t'ye göre türevi. Adi türevi olacak. Artı, omeganın z'e, z'nin t'ye göre türev. İşte bu şekilde yazdık arkadaşlar.
+
+362
+01:11:56,572 --> 01:12:06,931
+Burada bir tane daha olsa, diyelim ki ne olsun, büyük t olsa, omeganın büyük t'ye göre türevi, t'nin küçük t'ye göre türevi şeklinde birçok zincir ekliyor.
+
+363
+01:12:06,931 --> 01:12:20,351
+Kısketle gitsin yani mantığını kavradıktan sonra hiçbir problem yok. Şimdi bilinenleri yerine yazıyorum. Bakın, Omega'nın X'e göre türevi, şuradan alıyorum türevini, kısmı türevini. X'e göre alıyorsam, YZ benim için sabittir. Ne gelir? Y.
+
+364
+01:12:21,076 --> 01:12:48,376
+x'in t'ye göre türevi, eksisin üstü. Artı, omeganın y'ye göre türevini alıyorum. x çarpı, y'nin t'ye göre türevi, kosün üstü. Artı, omeganın z'ye göre türevi, bir. Z'nin t'ye göre türevi, bir. İşte, burada dediğim gibi, gene, x'i y'ye getirip yerine yazacağız. Tamam mı? Ya da dediğim gibi, buradan hesaplayıp yazabilirsiniz. Evet.
+
+365
+01:12:48,948 --> 01:13:14,347
+T sıfırsa, x'i ne olur? Bakın, 1 olur, y'si de sıfır olur. Y yerine sıfır, x yerine de 1'i yazarsak, t yerine de sıfırı yazdığımızda, şurada 1 olur, şu sıfır tamam, sonuç 2'dir, doğruymuş sonuç 2. Tamam mı arkadaşlar? Eksi 1'i nasıl buldun [öğrenci]? Acaba şeyleri mi karıştırdın şuradan? Kesin oradan karışmıştır. Yoksa yapılamayacak bir şey değil, değil mi? Bu.
+
+366
+01:13:16,115 --> 01:13:19,475
+Evet, peki. Şunu bulun bakalım.
+
+367
+01:13:20,275 --> 01:13:35,836
+Omega eşittir 2y artı x artı z kare, x eşittir r bölü s, y eşittir r kare artı ln s, z eşittir 2r, ise Omega'nın re'ye ve Omega'nın s'e göre, kısmı türevlerini re ve s cinsinden ifade ediniz.
+
+368
+01:13:36,235 --> 01:13:37,916
+Değerini bulma, burada türevleri bulun.
+
+369
+01:13:37,916 --> 01:13:41,815
+Hadi bunu bekliyorum arkadaşlar, bakın Omega kime bağlıymış?
+
+370
+01:13:42,056 --> 01:13:45,136
+X'e, y'ye, z'e, 3 bağımsız değişkenli.
+
+371
+01:13:45,676 --> 01:13:47,916
+Bu x'ler, y'ler, z'ler de...
+
+372
+01:13:48,275 --> 01:14:00,815
+S ve R'ye bağlıymış. Onun için Omega en son R ve S'e bağlı olduğu için, çok değişkenli fonksiyon oluyor. Omega'nın hem R'ye göre türevi vardır, hem de S'e göre. Hadi bu mantıkla bir yazmaya çalışın.
+
+373
+01:14:04,595 --> 01:14:21,635
+Evet, anladım. Yani sonunda yerine koyarken hata yapmışsınızdır diye düşünmüştüm. Evet. Teşekkür ederim, ilgilendiğiniz için. Diğer arkadaşları da yaptığını kabul ediyorum. Ne yazıyorlar, ne cevap veriyorlar. Bir arkadaşımız katılıyor sürekli.
+
+374
+01:14:23,215 --> 01:14:27,615
+Evet, hadi bunu da yazmaya çalışın, bakalım. Bir dakika veriyorum.
+
+375
+01:14:30,387 --> 01:14:38,328
+Sadece türevi doğru almanız önemli benim için. Sonra yerine yazarsınız. X gördüğünüz yere işte. R böleği ise yaz.
+
+376
+01:15:12,051 --> 01:15:36,191
+Evet, birlikte bakalım. Ne dedik? Omega, gene önce analiz ediyoruz, konuşuyoruz soruyla ne yapmamız gerekiyor diye. Omega kime bağlamış? Bakın X'e, Y'ye, Z'e bağlı. X'ler, Y'ler, Z'ler de R ve S'e bağlı. Hepsi dikkat ederseniz çok değişkenli. Onun için ne yapıyorum? Diyorum ki Omega en son R ve S'e bağlı olduğu için Omega'nın hem R'ye hem de S'e göre kısmı türevi vardır.
+
+377
+01:15:36,851 --> 01:16:03,551
+Onun için de ona göre sırayla önce S'e göre yazmışız. Omega'nın S'e göre kısmı türevi eşittir diyorum. Omega'nın X'e göre, X'in S'e göre. Omega'nın Y'ye göre türevi, Y'nin S'e göre. Bakın şurayla da uyumlu olsun, kafamız karışmasın tamam mı? Omega'nın Z'e, Z'in S'e göre türevi. İşte sıra bu zincir kuralı. O halde bildiklerimi yerine yazıyorum.
+
+378
+01:16:03,967 --> 01:16:29,387
+Omega'nın x'e göre türevi, geliyorum buraya, 1'dir. x'in s'e göre türevini alıyorum. x'in s'e göre türevi nedir? Kısmi türevi, eksi r bölü s karedir. r'yi sabit düşünüyorum, kısmı türevi alıyorum çünkü. Sonra Omega'nın y'e göre türevi, buradan 2'dir. y'nin s'e göre türevine gelecek, 0, 1 bölü s gelir. Artı, Omega'nın z'e göre türevi, 2z.
+
+379
+01:16:30,003 --> 01:16:39,203
+Z'in S'e göre türevi 0. Bu da düzenlenirse, eksi 2S, pardon 2S, şuradan.
+
+380
+01:16:40,404 --> 01:17:07,884
+Payda da eşitlemişiz. Evet, 2S-R bölü S kare. Tamam, bu bitti. Şimdi gelelim, Omega'nın bir de R'ye göre kısmı türevi mevcuttur. Onu da alırken yine aynı mantıkla. Omega'nın X'e göre türevi, X'in R'ye göre türevi. Artı, Omega'nın Y'ye göre türevi, Y'nin R'ye göre türevi. Artı, Omega'nın Z'e, Z'in R'ye göre. İşte şu ağaç dalı gibi sırayla türevimizi yazdık.
+
+381
+01:17:08,404 --> 01:17:35,823
+türetlerimizde 20'ye, Omega'nın X'e göre türevi 1'di, X'in R'ye göre türevi 1 bölü S. Omega'nın Y'ye göre türevi 2, Y'nin R'ye göre türevi 2R, şu, artı Omega'nın Z'e 2Z, Z'in R'ye 2. Bu da düzenlenirse arkadaşlar, buradan yazdık, 4R gelir değil mi?
+
+382
+01:17:36,307 --> 01:17:55,188
+4 z var. Z'in yerine de ne yazmalıyım? 2 r. Çünkü r ve c, s cinsinden ifade et diyor. O zaman ne olur? 12 r gelir. Bir de bir bölü esimiz var. İşte sonuçta r ve s cinsinden türevleri yazmış olduk arkadaşlar. Tamam mı?
+
+383
+01:17:57,708 --> 01:18:00,648
+Şimdi de gelelim, var mı burada takıldığımız bir yer?
+
+384
+01:18:02,899 --> 01:18:07,779
+Şimdi de gelelim böyle bir fonksiyon verilmiş.
+
+385
+01:18:10,279 --> 01:18:15,519
+Bunun bizden istenen değerlerini f'in kısmı türevleri cinsinden bulunuz diyor.
+
+386
+01:18:16,139 --> 01:18:22,539
+Bu tip sorularda biraz daha basite indirgemek için arkadaşlar şu x kare y'ye u diyebilirim.
+
+387
+01:18:23,179 --> 01:18:27,999
+Diğerine de v demiş olalım. Yani sonuçta f, u, v'ye bağlı olsun.
+
+388
+01:18:30,036 --> 01:18:39,796
+O halde ne diyorum? Bakın, burada gene analiz etmeye çalışıyorum. F fonksiyonum diyorum, U'ya, V'ye bağlı, U'v'ler de X'e, Y'ye bağlı.
+
+389
+01:18:40,000 --> 01:18:49,399
+Onun için bu şekilde düşünerek türevini alacağım. Yani böyle yazdıysam, bakın f, x'e, y'ye bağlı olduğu için çok değişkenli.
+
+390
+01:18:49,960 --> 01:18:56,039
+f, u, y, v'ye bağlı olduğu için çok değişkenli. u'lar, v'ler de x'ye bağlı olduğu için çok değişkenli.
+
+391
+01:18:56,220 --> 01:19:03,539
+E şimdi benim şu yazdığıma göre, f fonksiyonunun hem x'e hem de y'ye göre kısmı türevi mevcuttur.
+
+392
+01:19:03,640 --> 01:19:08,000
+Zaten onları soruyor bana bakın. Verir şekli biraz farklı olduğu için kafanız karışıyor.
+
+393
+01:19:08,000 --> 01:19:28,880
+konuşmasın. İşte bu yazdığıma göre ne diyeceğim? Bakın, F'in X'e göre türevini alırsam, F'in U'ya göre türevi, U'nun X'e göre türevi. F'in V'ye, V'nin X'e göre türevi şeklinde konuşmam gerekir. Daha doğrusu almam gerekir. Şuraya tamam mı arkadaşlar? Bakın, basite indirgemek için birinci değişkenine U dedik.
+
+394
+01:19:29,460 --> 01:19:36,420
+Diğerine de V demiş oldu. Şimdi bu yazdığıma göre, diyorum ki önce F'in X'e göre türevini alalım.
+
+395
+01:19:37,800 --> 01:19:48,100
+F'in X'e göre türevi, ne diyorum? F'in U'ya göre türevi, U'nun X'e göre türevi, artı F'in V'ye, V'nin X'e göre türevi dedik.
+
+396
+01:19:48,100 --> 01:19:51,420
+Tamam mı? F'in U'ya göre türevi, tamam.
+
+397
+01:19:51,935 --> 01:20:06,415
+U'nun x'e göre türevini alırsam şurada, 2xy artı f'in v'ye göre türevi, çarpı v'nin x'e göre türevi 1. İşte sonuç budur. Yani şu eşittir, bu olacak.
+
+398
+01:20:07,412 --> 01:20:31,311
+Hani bu kadar yazmam, ben kafama göre alırım dersen, biraz kafan karışabilir. Yani fonksiyonun birinci değişkenine göre türevi, birinci değişkenin x'e göre türevi, fonksiyonun ikinci değişkenine göre türevi, ikinci değişkenin x'e göre kafan karışır. En iyisi bu şekilde yazmak arkadaşlar. Tamam mı? Benzer şekilde ne yapacaktık? Bir de bunun y'ye göre türevini soruyordu.
+
+399
+01:20:31,796 --> 01:20:41,496
+y'ye göre türevini alırsan, gene aynı mantıkla, f'in u'ya, u'nun y'ye, artı f fonksiyonunun v'ye göre türevi, v'nin y'ye göre türevi.
+
+400
+01:20:41,996 --> 01:20:46,615
+f'in türevi, şöyle kısa yazmışız, f'u demişiz, u'ya göre türevi, yoksa bu bunun aynısı.
+
+401
+01:20:47,435 --> 01:20:52,416
+u'nun y'ye göre türevi neymiş? x kare, artı f'in v'ye göre türevi.
+
+402
+01:20:52,851 --> 01:21:19,992
+B'nin y'ye göre türevi de 2'dir. İşte sonuçta bu şekilde yazmış olduk. Tamam mı? Evet. Burada kalalım. Kapalı türevi de sonra anlatırız. Var mı sorumuz arkadaşlar? Takıldığımız bir yer. Zincir kuralı biraz, evet, kafanız karışmış olabilir ama birkaç soru daha çözerim bir dahaki dersimizde. Şimdi haftaya sınav haftası üniversitenin arkadaşlar dersi yapmıyoruz.
+
+403
+01:21:20,595 --> 01:21:22,835
+Bir sonraki hafta görüşmek üzere.
+
+404
+01:21:23,895 --> 01:21:27,875
+Sorunuz yoksa kendinize iyi bakın. Sınavlarınızda size başarılar diliyorum.
+
+405
+01:21:29,916 --> 01:21:30,655
+Var mı sorumuz?
+
+406
+01:21:33,655 --> 01:21:36,255
+Evet, iyi günler o zaman arkadaşlar.
+
+407
+01:21:37,916 --> 01:21:38,835
+Kendinize iyi bakın.

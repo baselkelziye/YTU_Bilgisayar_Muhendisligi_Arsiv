@@ -1,0 +1,1211 @@
+1
+00:01:27,987 --> 00:01:31,947
+Günaydın arkadaşlar. Ses geliyor mu?
+
+2
+00:01:33,328 --> 00:01:34,328
+Günaydın hocam.
+
+3
+00:01:34,828 --> 00:01:36,248
+Nasılsınız? İyisiniz inşallah.
+
+4
+00:01:44,243 --> 00:01:55,164
+Evet arkadaşlar, dün kuvvet serilerine başlamıştık hatırlarsanız. Şöyle hızlıca geçmek istiyorum. Ekran gözüküyor değil mi arkadaşlar yazılar?
+
+5
+00:01:59,284 --> 00:02:00,564
+Evet, görünüyor mu?
+
+6
+00:02:12,915 --> 00:02:24,635
+Evet, kuvvet serisi demiştik. Şöyle bir sembolle gösterdik. Toplam n-0'dan sonsuza kadar an çarpı x-c üzeri n şeklindeki serilere biz kuvvet serisi demiştik.
+
+7
+00:02:25,015 --> 00:02:36,316
+Buradaki a0 an'ler serinin kat sayılarıydı. c'ye serinin merkezi demiştik. Serinin yakınsaklık yarı çapı da r şeklinde söylemiştik arkadaşlar.
+
+8
+00:02:40,915 --> 00:02:45,596
+Dalanbert oran kuralını mutlak değer içinde
+
+9
+00:02:46,063 --> 00:02:51,063
+Diyelim ki burada ifadeyi düşünürsek, oran kuralını kullanarak bulmuştuk.
+
+10
+00:02:51,543 --> 00:02:55,743
+Yani böyle bir kuvvet serisi 3 şekilde karşımıza çıkabilir.
+
+11
+00:02:56,264 --> 00:02:58,803
+Sadece x eşittirciye de yakınsak olabilir.
+
+12
+00:02:59,303 --> 00:03:01,423
+Tüm real değerler için yakınsak olabilir.
+
+13
+00:03:02,043 --> 00:03:04,843
+Üçüncü bir durumda da aralıkta yakınsak olabilir.
+
+14
+00:03:05,043 --> 00:03:10,024
+Yarı açık, yarı kapalı veya tam kapalı aralıkta yakınsak olabilir demiştik.
+
+15
+00:03:10,024 --> 00:03:14,024
+Böyle bir kuvvet serisinin, dün de konuştuklarımı konuşuyorum.
+
+16
+00:03:14,063 --> 00:03:31,663
+arkadaşlar, zaten notlarda var hepsi. Kuvvet serisinin türevi alınabilir, kuvvet serisi sabitle çarpılabilir, türevini almak, sabitle çarpmak, x ile çarpmak serinin yakınsaklık aralığını değiştirmez. Böyle bir kuvvet serisinin integrali alınabilir.
+
+17
+00:03:32,596 --> 00:03:51,695
+2 kuvvet serisi toplanabilir, çarpılabilir. Onları da tek tek dün konuşmuştuk. Şimdi ben bugün biraz bu kuvvet serisi veya serilerle ilgili birkaç örnek çözmek istiyorum. O yüzden o örneklerime geçmek istiyorum. Tamam mı arkadaşlar? Kuvvet serisiydi. Dün de konuşmuştuk tekrar.
+
+18
+00:04:17,908 --> 00:04:20,088
+Evet, şimdi ekran gözüküyor değil mi arkadaşlar?
+
+19
+00:04:22,987 --> 00:04:23,628
+Görüyor muyuz?
+
+20
+00:04:24,851 --> 00:04:25,851
+Evet hocam.
+
+21
+00:04:25,991 --> 00:04:33,172
+Görünüyor değil mi? Evet. Şimdi kuvvet serisiyle ilgili örnek yapmak istedim. Birinci örneğimiz şu olsun.
+
+22
+00:04:33,531 --> 00:04:43,552
+N eşittir sıfırdan sonsuza kadar 5 çarpı x üzere n bölü n artı bir faktör yani serisinin en geniş yakınsaklık aralığı nedir?
+
+23
+00:04:43,851 --> 00:04:51,292
+Veya serisi yakınsak mıdır? Veya hangi aralıkta yakınsaktır? Veya mutlak yakınsak mıdır? Birçok şekilde sorulabilir.
+
+24
+00:04:52,851 --> 00:05:08,351
+Örneğimiz, en geniş yakınsaklık aralığını bulmaya çalışalım. Nedir bu? Bakıyoruz. Bir kuvvet serisidir veya değişken terimli seri de denir demiştim. Dün de konuşmuştum. Kitaplardan hani görürseniz değişken terimli seriler veya kuvvet serileri de diyoruz burada.
+
+25
+00:05:08,351 --> 00:05:20,851
+Burada bizim serimizin merkezi nedir arkadaşlar? Sıfırdır değil mi? X eksi C, C'si burada nedir? Sıfır olduğu için serinin merkezi sıfırdır. Şimdi böyle bir kuvvet serisinin biz yakınsaklık aralığını bulmak için
+
+26
+00:05:22,259 --> 00:05:43,199
+Oran testini kullanmamız gerekir. Oran testini de şöyle yazıyorduk. Limit en sonsuza giderken mutlak değer içinde an artı bir bölü an ifadesine bakardık. Oran kuralı neydi? Eğer böyle bir limit birden küçükse yakınsak, birden büyükse ıraksak, birse bu test uygulanamaz demiştik.
+
+27
+00:05:50,259 --> 00:06:02,120
+bölü n artı 1 faktöriyerdir. Şimdi a n artı 1'i oluşturmaya çalışıyoruz. Bakın burada mutlak değer içinde 5 çarpı x üzeri n artı 1 yazdım.
+
+28
+00:06:02,259 --> 00:06:14,519
+x en yerine n artı 1'i yazıyorum. Bölü n artı 1 faktörü ne olur? n artı 2 faktörü yani. Bölü a n'i yazıyorum. Kendisini yazdım. 5 çarpı x üzeri n, bölü n artı 1 faktörü yani.
+
+29
+00:06:18,259 --> 00:06:45,059
+Doğruluk yok. Sadece dikkatlice sadeleştirmek gerekiyor. Onun için de ne yaptık? Birinciyi şöyle ayırarak sade biçimde yazmaya çalıştım. 5x üzeri n çarpı x diye yazalım. Paydayı da n artı 2 faktöreli nasıl yazarım? n artı 2 çarpı n artı 1 faktörel diye yazalım. Diğerini de ters çevirdiğimde n artı 1 faktörel bölü 5 çarpı x üzeri n. Şimdi gidenler ne olur? n artı 1 faktöreller gitti.
+
+30
+00:06:46,196 --> 00:07:09,076
+İki zirenler de gider, beşler de gider. Geriye kalanları yazalım. Limit en sonsuza giderken, x'imiz var, mutlak değer x. N pozitif olduğu için mutlak değere artık gerek yok. Böyle n artı 2. İşte bu işlemi sadeleştirip, pardon, en son bu hale geldik. Şimdi en sonsuza giderken bu terim nereye gider? Sıfıra gider değil mi?
+
+31
+00:07:09,588 --> 00:07:17,308
+x değer, bir sayı, bölü sonsuz da sıfır olur. Bu da birden küçük olduğu için bizim için seri nedir? Yakınsaktır.
+
+32
+00:07:17,808 --> 00:07:29,588
+Şimdi seri yakınsak dedik. Hangi x değerler için bu seri yakınsaktır? Burada bizim dikkat ederseniz limitimiz nedir arkadaşlar? Sıfırdı değil mi?
+
+33
+00:07:30,387 --> 00:07:46,527
+Yani limitli sıfır çıktığına göre, 1 bölü R bizim nedir aslında? Yakınsaklık yani, R yakınsaklık yarı çapıydı. O zaman diyeceğim ki seri her x değeri için mutlak yakınsaktır. Çünkü mutlak değerlerini alarak ifade ettiğimiz için.
+
+34
+00:07:49,396 --> 00:07:59,175
+Bu işlemi, bu uzun işlemi yapmadan da ben serinin yakınsaklık yarı çapını, yani R'yi bularak da işlem yapabilirdim.
+
+35
+00:07:59,495 --> 00:08:08,336
+Onun için de bu limit oran testini sadece X üzeri N'i düşünmeyip, çünkü bakın sadeleştiğinde ne kalıyor? Sadece mutlak değer X'imiz kalır.
+
+36
+00:08:08,696 --> 00:08:14,435
+Bu da işte mutlak değer X küçük, R derim, R'yi de bulurum, işte yakınsaklık aralığı budur diye yazarım.
+
+37
+00:08:14,435 --> 00:08:17,396
+Onun için de burada 5 bölü N artı bir fat.
+
+38
+00:08:17,396 --> 00:08:26,336
+Faktüryel benim için oran testinde o limiti bulacağım değerdir. Yani yakınsaklık yara çapını hesaplayabileceğim değerdir.
+
+39
+00:08:26,675 --> 00:08:32,956
+Onun için de onu L ile göstermiş olsam, burada L'yi ben ne buldum? Dikkat ederseniz sıfır buldum.
+
+40
+00:08:33,375 --> 00:08:42,036
+O zaman benim R nedir? 1 bölü R'den sonsuz olur. Yani bizim serimiz mutlak değer X, küçük, sonsuz şeklinde ifade etmiş oluruz.
+
+41
+00:08:42,036 --> 00:08:45,395
+O da nedir? Yakınsaklık aralım o zaman. R sayılar değil.
+
+42
+00:08:45,395 --> 00:08:51,275
+diye söylerim. Ya da bu şekilde, çok da vaktimiz almaz, böyle de bulabilirsiniz arkadaşlar.
+
+43
+00:08:52,475 --> 00:08:55,655
+Evet, şimdi devam edelim. Var mı burada takıldığımız bir yer?
+
+44
+00:09:01,139 --> 00:09:03,200
+Anladık mı arkadaşlar bunun çözümünü?
+
+45
+00:09:04,200 --> 00:09:05,039
+Anladık hocam.
+
+46
+00:09:05,620 --> 00:09:09,000
+Devam edelim. Değişik sorular aldım birkaç tane böyle.
+
+47
+00:09:09,579 --> 00:09:21,659
+Şimdi toplam n eşittir sıfırdan sonsuza kadar x artı 1 üzeri 2n bölü 9 üzeri n serisinin toplamını ve yakınsaklık aralığını bulunuz bize diyor.
+
+48
+00:09:22,484 --> 00:09:42,163
+Bu serinin toplamını soruyorsa, biraz daha hani kafayı kullanıp, biz serilerde bir serinin toplamını soruyorsa, ya serinin nasıl buluyorduk? İlk enteriminin toplamına bakarak bulurduk. İlk enteriminin toplamını en son size giderken belli bir değere giderse seri yakınsak diyorduk.
+
+49
+00:09:43,059 --> 00:10:07,059
+Onun için, ilken terimin toplamına bakardık. Bazı özel seriler vardı. Örneğin, işte geometrik seri, harmonik seri, değil mi? Teleskopik seri. Yani toplam soruyorsa bunlardan bir tanesi olur diye düşünüyoruz. Onun için de bu kuvvet serisi dikkat ederseniz. Bunun üzerinde biraz düzenlemeye çalışalım. Nasıl düzenlerim? Bakın, paydadaki ifadenin...
+
+50
+00:10:08,532 --> 00:10:20,932
+9'un üzeri n. Şu payı da düşünürsem, x kare, pardon x artı 1'in karesi üzeri n diye düşünürsem, bu ifadeyi ben şöyle yazabilirim bakın.
+
+51
+00:10:21,732 --> 00:10:27,272
+Değil mi? Şuradan şuraya geçiş olabilir. x artı 1'in karesi bölü 9 üzeri n.
+
+52
+00:10:27,648 --> 00:10:37,827
+Amacım burada, gördüğünüz gibi bildiğim bir geometrik, bildiğim bir seri şeklinde yazabiliyor muyum? Yani acaba bu geometrik seri midir? Çünkü biraz benziyor geometrik seriye.
+
+53
+00:10:37,827 --> 00:10:39,168
+İşte.
+
+54
+00:10:39,988 --> 00:10:46,268
+Geometrik seriyi de hatırlayalım isterseniz neydi? Toplam n eşittir birden sonsuza kadar derdik.
+
+55
+00:10:46,468 --> 00:10:51,648
+A çarpı, r üzeri n-1 şeklinde seri yazılabiliyorsa biz buna geometrik seri diyorduk.
+
+56
+00:10:51,648 --> 00:10:55,488
+O zaman bizim tek yapacağımız şu indisini düzenlemek.
+
+57
+00:10:55,807 --> 00:10:59,447
+İndi sıfırsa demeyeyim birden başlatmak istiyorum.
+
+58
+00:10:59,588 --> 00:11:04,628
+O zaman n eşittir birden sonsuza kadar dersen o zaman burası da ne olur? n-1 olur.
+
+59
+00:11:04,968 --> 00:11:07,988
+Yani burada bakın n'e 1 verirsem ilk terimim 1'dir.
+
+60
+00:11:07,988 --> 00:11:33,748
+Burada da n'e sıfır verirsem ilk terimim 1. Yani bu iki seri aynıdır. Ama ben bunun yakınsaklığını inceleyebilmek için geometrik seri şeklinde ifade etmek istiyorum. Onun için de işte bu şekilde ifade ettiğime göre bu benim için bir geometrik seridir. Bu aslında neyle üretilmiştir? X artı 1'in karesi bölü 9 ile üretilmiştir. Yani R dediğim ifade budur. A'sı da burada 1'dir.
+
+61
+00:11:34,163 --> 00:11:46,923
+A'sı sıfırdan farklı. İşte ne yapacağız bunun? Bu ne zaman yakınsak oluyordu geometrik seri? Mutlak değer R, birden küçükse seri yakınsaktır, değilse ıraksaktır diyeceğiz.
+
+62
+00:11:47,412 --> 00:11:55,251
+Buraya kadar tamam değil mi arkadaşlar? Verilen seri üzerinde oynadık, düzenledik, ne yaptık? Geometrik seri şeklinde ifade etmiş olduk.
+
+63
+00:11:55,652 --> 00:12:00,692
+Şimdi diyoruz ki A'sı 1, bunun R'si de X artı 1'in karesi bölü 9 diyoruz.
+
+64
+00:12:01,131 --> 00:12:04,831
+Acaba bu yakınsak mıdır değil mi? E bu ne olması gerekir diyoruz.
+
+65
+00:12:05,032 --> 00:12:09,052
+Yakınsak olabilmesi için mutlak değer R'nin birden küçük olması gerekir.
+
+66
+00:12:09,940 --> 00:12:16,800
+O zaman re'yi getirip yerine yazarsam, x artı birin karesi bölü 9, mutlak değersinde küçük 1 olmalı.
+
+67
+00:12:17,180 --> 00:12:23,200
+Ve bunu da düzenlersem ne olur? x artı birin karesi zaten pozitif mutlak değere ihtiyacım yok.
+
+68
+00:12:23,620 --> 00:12:26,280
+Değil mi? Küçük 9 diyeceğim. Bu.
+
+69
+00:12:26,900 --> 00:12:29,720
+Her iki tarafın kare kökünü alırsak şuradan.
+
+70
+00:12:30,772 --> 00:12:58,552
+Bakın, şurada ben inceledim parantez için. Hani bunu doğrudan, buradan istersen sen doğrudan da yazabilirsin. Ama hani göremedik, hata yapmaktansa dedim. Ne yaparım? Buradan her iki tarafın kare kökünü aldığımda ne olur bu? Mutlak değer. Çünkü kök içinde a kare, mutlak değer a diye dışarıya çıkar. O da ne olur? Mutlak değer x artı 1 oldu. Küçük 3 değil mi şu? Bunu da düzenlersek, bu mutlak değer olduğuna göre pozitifse içi.
+
+71
+00:12:58,772 --> 00:13:10,731
+x artı bir küçük 3 olur, değil mi? Buradan da, yani bir böyle çıkar, mutlak değerli düzenlersen, bir de eksilisi olur. Şöyle açık açık yazmışım bari, ona sadık kalayım.
+
+72
+00:13:11,187 --> 00:13:39,187
+Buradan ne olur? X küçük 2 oldu değil mi şu ifadeden? Buradan düşünürsem, her tarafı eksiyle çarparsam eşitsizliğim yön değiştirecek. Şöyle olur. Buradan da düşünürsek, X büyük, eksi 4 olur. Her ikisini toparlarsak, o zaman diyoruz ki, eksi 4 ile 2 arasındadır. Yani şu ifadeyi, bu mantıkla düşünerek, hop dedik ki, bu serinin yakınsaklık aralığı, yani eksi 4 ile 2 arasındadır.
+
+73
+00:13:39,187 --> 00:13:59,788
+Yani seri bu aralıkta mutlak yakınsaktır diyoruz. Yakınsaklık aralığını bulun dedi bir de ne yapıyoruz? Toplamını sorduk bize. Egeometrik serinin toplamını da biz zaten formülünü biliyorduk değil mi? A bölü 1-R'dir. Tamam mı? Buradan da bildiklerimi yerine yazıyorum hemen. A'sı 1'di.
+
+74
+00:14:00,307 --> 00:14:06,807
+bölü 1 eksi, re'sini yazdık. x artı 1'in karesi bölü 9. Bunu da düzenlediğimizde,
+
+75
+00:14:07,508 --> 00:14:35,308
+İşte böyle bir sonuç buluruz. Bu aslında bir sınavda sorulmuş test sorusu arkadaşlar da ben yer kaplıyor diye cevapları yazmadım. İşte diyor ki aşağıdakilerden hangisidir işte. Cevabı buydu. Ben de bunu doğrudan yazdım. Hani bir daha bunu açık düzenlemedim. İstersen parantezi açık düzenlersin. Gerek yok böyle cevap olduğu için bunu doğrudan yazmış oldum. Yani çözdüğüm çoğu soru sınavlarda sorulmuş test sorularıdır. O yüzden çoğunun cevabını öyle yazmıyorum ABC diye.
+
+76
+00:14:35,508 --> 00:14:44,208
+Tamam mı? Anladık mı? Bakın bir kuvvet serisi, dikkat ederseniz geometrik seri şeklinde ifade etmiş olduk. Evet, devam edelim.
+
+77
+00:14:47,796 --> 00:15:12,736
+Şimdi bu 3'ü atlayacağım arkadaşlar. Çünkü sonra anlatacağım konu içeriyor, limiti. Çünkü daha size Taylor, Maclaurin serilerini vermedim. Bunlara sonra döneceğim. 4'ü de atlayacaktım. 5'i de atlayacağım. Sanırım limitleri atlıyorum. Sonra döneceğim onları. 6'ı da atlayacağım. Şimdi 7'ye gelelim. Evet. Onları sonra çözeceğim.
+
+78
+00:15:13,107 --> 00:15:26,927
+Toplam, n eşittir birden sonsuza kadar, eksi bir üzere n çarpı, x artı bir üzere n bölü iki üzere n çarpı n kare serisinin, en geniş yakınsaklık aralığını bulunuz demişim yine.
+
+79
+00:15:27,347 --> 00:15:33,727
+Ya da yakınsaklık aralığı nedir? Dikkat ederseniz bu, bir gene kuvvet serisidir arkadaşlar, değil mi?
+
+80
+00:15:34,964 --> 00:15:52,624
+Ne yapacağım? Diyorum ki gene oran testini uygulayarak bulalım. Evet, ben o zaman şimdi demin önceki soruda da çözdük, birinci sorumuzda. Bir kuvvet serisidir dedik. Siz bunu oran kuralıyla yakınsaklık aralığını buldun bakalım arkadaşlar. Bekliyorum. Hadi.
+
+81
+00:15:54,259 --> 00:16:02,719
+İşte limit en sonsuza giderken mutlak değer içinde, AN artı 1 bölü, AN değil. Sadeleştirin bakalım ne çıkacak aralık. Hadi bekliyorum.
+
+82
+00:16:52,211 --> 00:16:53,991
+Bulan varsa cevap verebilir.
+
+83
+00:17:18,132 --> 00:17:20,251
+Evet, sadeleştiremediniz mi?
+
+84
+00:17:35,859 --> 00:17:41,759
+Evet, bulan var mı arkadaşlar? Çözüyor muyuz acaba? Merak ediyorum. Lütfen.
+
+85
+00:17:43,539 --> 00:17:46,539
+4 işlem sadeleştirip düzenleyeceksiniz. O kadar.
+
+86
+00:17:58,612 --> 00:18:26,612
+Yapmıyoruz diyorsunuz. İyi, ben yürürüyüm bari. Evet, en sonsuza giderken dedik ki, a n artı 1 bölü a n. Tamam mı? a n artı 1'i yazıyoruz. Eksi 1 artık mutlak değer olarak düşünürsek değil mi? Ne olur? Artılar gelir. Artık eksi 1'i göz önüne almadım. Pozitif olarak düşündüm. En sonsuza giderken a n artı 1 ifadesi x artı 1 üzeri n artı 1 bölü 2 üzeri n artı 1 çarp n artı 1'in karesi.
+
+87
+00:18:26,612 --> 00:18:48,672
+bölü an, onu ters çevirerek yazdım. Satır eksik artık yukarıda da gördük. Değil mi şu? An'ı yazmış olduk buraya. Şimdi buradan giden kalanlara bakalım. Bakın x artı bir üzeri n'ler gider. Sadece x artı bir kalır. Şurada da iki çarpı iki üzeri n gelir. İki üzeri n'ler de gider. Geriye kalanları yazalım.
+
+88
+00:18:49,619 --> 00:19:07,099
+İşte x artı 1 kaldı, n kare kaldı. Paydadı 2 çarpı n artı 1'in karesidir. 1 bölü 2'yi dışarı atarız. x artı 1 de limitten bağımsız, onu da ayrı tutarız. Limite bağlı olan nedir? n kare artı n artı 1'in karesidir.
+
+89
+00:19:07,284 --> 00:19:23,164
+En son size giderken bakın, pay ikinci dereceden, paydasını da açtığımızda yine ikinci dereceden olur. Payı polinom, paydası polinom. Limitin ne olur? Kat sayılarının oranını ne iştir? Yani şu limit 1 olur. Yani sonuçta benim limitim nedir? 1 bölü 2 çarpı.
+
+90
+00:19:24,980 --> 00:19:45,539
+x artı 1. Bunun oran kuralına göre yakınsak olması için ne olmalı? Birden küçük olmalı. Buraya dikkat ediyoruz. Tamam mı? Bunu da düzenlersem ne olur? Mutlak değer x artı 1, küçük 2 olur. Buradan x'i bulmak istiyoruz. Bu ne olur? Eksi 2 ile artı 2 aralığındadır. Mutlak değer özelliğini kullanırsak.
+
+91
+00:19:46,291 --> 00:19:50,731
+Her tarafı eksi 1 eklediğimde, eksi 3 küçük x küçük 1'dir.
+
+92
+00:19:51,072 --> 00:19:56,271
+İşte seri, eksi 3 ile artı 1 aralığında ne diyorum? Mutlak yakınsaktır.
+
+93
+00:19:57,052 --> 00:20:02,072
+Ama seri uçlarda da yakınsak olabilir. Yani eksi 3'te de olabilir, 1'de de olabilir.
+
+94
+00:20:02,592 --> 00:20:04,932
+Onu da ayrıca incelememiz gerekir.
+
+95
+00:20:05,779 --> 00:20:23,619
+Şimdi bakalım, seri uçlarda yakınsak mı araştıralım? Nasıl araştıracaktım? X eksi 3 olduğunda verilen kuvvet serisi ne olur? Eksi 3'ü şuraya yazdığımızı düşünelim. Bakın, eksi 3 diyeceğim. Tamam mı arkadaşlar? Buradan ne olur? Eksi 2 üzeri en gelmez mi?
+
+96
+00:20:24,115 --> 00:20:44,155
+Eksi 1 üzeri n çarpı 2 üzeri n diye yazarım. 2 üzeri n'ler gider. Eksi 1 üzeri 2 n olur. O da zaten pozitif olur. Yani sonuçta 1 bölü n kare gibi bir ifade gelir. Bakın, buradan da görelim. Ne yapıyorum? Uçları inceliyorum. Seri uçlarda yakınsak mı? Yakınsaksa eşitlik olacaktır.
+
+97
+00:20:44,564 --> 00:20:56,504
+Ne yapıyorum? Kuvvet serisinde x yerine eksi 3 yazıyorum. En eşitli birden sonsuza kadar eksi birimiz vardı. x artı bir de ne kaldı? Eksi 2 üzeri n bölü, 2 üzeri n bölü n kare bu.
+
+98
+00:20:57,011 --> 00:21:16,111
+Buradan ne yaptık? Şu eksi 1'i de ayırdım. Üzeri en, çarpı iki üzeri en şeklinde yazdım. E şimdi şunu düşünürsem, eksi 1 üzeri iki en değil midir? O da nedir? Hep pozitiftir. Onun için onu yerine 1 yazarım artık. O da ne olacak? Bakın iki üzeri enler de gitti. Sadece ne kaldı? Toplam.
+
+99
+00:21:16,596 --> 00:21:36,655
+en eşitli birden sonsuza kadar bir bölüm n kare serisi bulunur. Bu da benim bildiğim bir seridir. Nedir? P serisidir değil mi? Bunun P'si nedir? İkidir. İki de birden büyük olduğuna göre yakınsaktır. P serisi birden büyükse yakınsak, birden küçük ya da eşitse raksak diyorduk. O halde ne diyoruz?
+
+100
+00:21:37,076 --> 00:21:52,615
+f'si 2 birden büyük olduğundan seri yakınsaktır. Yani eksi 3'te de eşitlik var. Tamam mı? Bu. Sonra bir için kontrol ediyoruz kuvvet serisini. Yerine yazalım bakalım. Bir için.
+
+101
+00:21:53,683 --> 00:22:17,484
+Toplam, en eşitli birden sonsuza kadar, eksi bir üzeri n. X artı bir dedi mi serimiz? X yerine biri yazıyorum. 1 artı birin karı. Bu da ne olur? 2 üzeri n olur. 2 üzerinden gider. Geriye ne kalır? Eksi bir üzeri n bölü n kare. Bu da dikkat ederseniz, bir işareti 1 artı bir eksi gittiği için, bu da bizim için özel seridir. Alterne seridir.
+
+102
+00:22:18,579 --> 00:22:40,079
+Acaba bu alternatif seriyi nasıl test ederdik? Dün de konuşmuştuk. Her terimi azalıyor mu diye bakıyorduk. Limit en sonsuza giderken AN sıfır mı diye bakardık. Bu şartlar sağlanıyorsa alternatif seri yakınsaktır derdik. Acaba bu şartlı mıdır, mutlak yakınsak mıdır? Onun içinde ne yapardık? Mutlak değerlerinden oluşan seriye bakardık.
+
+103
+00:22:40,788 --> 00:22:56,468
+Eğer o yakınsaksa seri mutlak yakınsak, değilse şarta bağlı ya da şartlı yakınsaktır diyoruz. Onun için böyle bir A-TN serinin, eğer önce mutlak değerlerinden oluşmuş seriye bakabilirim, o yakınsaksa başka bir işlem yapmama gerek yok.
+
+104
+00:22:56,468 --> 00:23:04,608
+Onun için diyorum ki A-TN serinin mutlak değerlerinden oluşan seriye alıyorum. Yani her terimin mutlak değerini alırsam ne gelir?
+
+105
+00:23:05,523 --> 00:23:29,323
+Pozitif terimli bir seri olur. Yani bir bölü en kare serisi olur. Bu da yukarıda test etmiştik. Yakınsak bir seridir. O zaman ne diyeceğim? Alterne seri mutlak yakınsaktır. Tamam mı arkadaşlar? Yani bir de de eşitlik var. Yani böylece serinin yakınsaklık aralığı ne olacaktır? Eksi 3 küçük eşit x küçük eşit 1'dir diyeceğiz.
+
+106
+00:23:30,483 --> 00:23:57,723
+Pardon. Yani bunu kapalı olarak da yazabilirim. Kapalı, parantez, büyük parantez, eksi 3 ile bir aralığı şeklinde kapalı olarak da gösterilebilir. Yani seri bu aralıkta mutlak yakınsaktır diyeceğiz. Anlaşıldı mı arkadaşlar? Yani bir kuvvet serisinin, dün bir sürü konuştuk, en geniş şekilde inceleme şekli budur yakınsaklık aralığını. Tamam mıyız?
+
+107
+00:24:01,875 --> 00:24:24,776
+Anlıyor muyuz arkadaşlar? Kimse yok mu acaba? Boşuna mı konuşuyorum? Cevap yok. Bir ses alabilir miyim arkadaşlar? Sınıfta 98 kişi gözüküyor yani. Dersi dinleyen acaba? Evet arkadaşlar, duyuyor muyuz? Tamam. Bir cevap verin. Uyumayın lütfen.
+
+108
+00:24:25,311 --> 00:24:40,991
+Evet, bakın çok üzerinde duruyorum, anlaşılsın. Çünkü geniş bir konu, sınavda da çıkacaktır karşınıza. Aralık sormaz, içinde başka bir şey sorabilir ama konuya hakim olmak gerekir. Tamam mı arkadaşlar? Lütfen. Biraz dikkatli de dinleyelim.
+
+109
+00:24:40,991 --> 00:24:44,731
+Evet, şimdi bir tane örneğimiz de şu.
+
+110
+00:24:45,523 --> 00:25:09,563
+Dün hatırlarsanız kuvvet seriler dedik ki, toplanabilir, çarpılabilir, integrale alınabilir, türev alınabilir demiştik. Bir de meşhur dedik geometrik serimiz vardır. Onu vermiştik hatırlarsanız. 1 bölü 1 eksi, 1 bölü 1 eksi x, o da neydi? Toplam eniştir sıfırdan sonsuza kadar dedik. Şöyle edeyim.
+
+111
+00:25:10,324 --> 00:25:18,784
+x üzeri n'di, onun da yakınsaklık aralı, eksi 1 ile artı 1'dir. Bunu kullanarak birçok fonksiyonlar elde etmiştik.
+
+112
+00:25:19,124 --> 00:25:23,743
+İşte verilen fonksiyonun kuvvet serisi nedir diye de sorular çözmüştük.
+
+113
+00:25:23,983 --> 00:25:26,824
+Şimdi bunu da kullanarak bizden şunu istiyor arkadaşlar.
+
+114
+00:25:27,384 --> 00:25:33,624
+1 bölü x artı 2 fonksiyonu için bir kuvvet serisi gösterimi bulunuz.
+
+115
+00:25:33,624 --> 00:25:38,064
+Yani şu verilen kuvvet serisini kullanarak geometrik seriyi.
+
+116
+00:25:38,324 --> 00:25:43,243
+Bunun için bir kuvvet serisi nedir? Onu bulmaya çalışacağız. Tamam mı arkadaşlar?
+
+117
+00:25:43,844 --> 00:25:53,163
+Bunun için bu fonksiyonu ben önce alalım. Şuradan, yani şuna benzetmeye çalışacağım. Tamam mı?
+
+118
+00:25:53,384 --> 00:26:00,024
+1 bölü 2 parantezini alalım paydasını. Alırsam ne olur? 1 artı x bölü 2 diye yazarım.
+
+119
+00:26:00,024 --> 00:26:04,223
+1 bölü 2 şöyle tutalım bakın. Şuradayız.
+
+120
+00:26:04,692 --> 00:26:17,912
+Şuraya bakarsak, 1 bölü 1 eksi x'i kullanmak istiyoruz. O zaman burada ne yapmışız deriz, x yerine eksi x yazılmış değil mi arkadaşlar? x yerine eksi x bölü 2 pardon yazılırsa.
+
+121
+00:26:18,483 --> 00:26:41,543
+Çünkü şu geometrik serim var. Şu fonksiyonu yazmaya çalışıyorum. Nasıl bir, hangi kuvvet serisidir diye. O yüzden ne yaptık? Paydayı iki parantezine aldım. 1 artı x bölü 2 diye yazdım. Burada şununla karşılaştırdığımda, demek ki x yerine eksi x bölü 2 yazılmış. Ben x yerine eksi x bölü 2 yazarsam, ne olur?
+
+122
+00:26:42,099 --> 00:27:02,999
+Aynı bunu elde etmiş olacağım. Tamam mı? O zaman, bizim şunu da kullanmak istersem, şu 1 bölü 2'yi dışında tutalım. Toplam n eşittir 0'dan sonsuza kadar, yani şu geometrik seride, ilk serine x bölü 2 yazdıysam, şunu da da yazmak istiyorum. Onu da yazdım bakın.
+
+123
+00:27:02,999 --> 00:27:10,039
+Eksi x bölü 2 üzeri n diyorum. Bunu da yakınsaklık aralığı neydi? Eksi 1 ile artı 1 ya da kısaca mutlaka.
+
+124
+00:27:10,099 --> 00:27:32,499
+x küçük 1 diye yazdık arkadaşlar. Şimdi artık bunu biraz daha düzgün yazmaya çalışalım. 1 bölü 2 içine atarsam, eksi 1 üzeri n'i ayrı tutalım bakın. Yazdım. x üzeri n var. Payda da 2 üzeri n. Bir de şunu düşünürsem 2 üzeri n artı 1 olur. İşte verilen şu fonksiyonun kuvvet seri.
+
+125
+00:27:32,915 --> 00:27:54,435
+temsili ya da gösterelimi budur diyeceğim. E şimdi ne yaptım? Benim şu geometrik serinin yakınsaklık aralı eksi 1 artı 1 ya, ya da şöyle yazmıştık. O zaman ben burada x serine ne yazmıştım? Eksi x bölü 2 yazmıştım. Onu yazmam gerekir burada. O halde bunu da düzenlersek x bölü 2 küçük 1 olur.
+
+126
+00:27:55,284 --> 00:28:10,144
+Buradan da mutlak değer x, küçük 2 için seri yakınsaktır. Veya bunu açık düşünürsek, eksi 2 ile artı 2 aralığında seri yakınsaktır diyeceğiz. Serinin yakınsaklık aralığı. Tamam mı arkadaşlar?
+
+127
+00:28:10,684 --> 00:28:19,784
+Bakın böyle bir fonksiyonun kuvvet serisini bulmak istiyoruz ama bu seriden yararlanarak bulacağız. Bunu düzenledik. İlk serine eksi.
+
+128
+00:28:20,403 --> 00:28:42,644
+x bölü 2'yi yazdık. O halde serimiz ne oldu? Bu oldu. E bunda yakınsaklık aralığı, şuydu bizim geometrik serimizin yakınsaklık aralığı. Burada da x'lerin eksi 2, x bölü 2 yazarak düzenlemiş olduk. Yani verilen fonksiyonun kuvvet serisi budur diyoruz. Yakınsaklık aralığı da eksi 2 ile artı 2'dir diyoruz. Tamam mı arkadaşlar?
+
+129
+00:28:45,423 --> 00:28:47,824
+Şimdi gelelim şöyle bir.
+
+130
+00:28:48,223 --> 00:28:59,263
+ifadeye, diyor ki, integralini, yani integral 1 bölü 1 artı x üzeri 7dx integralini, bir kuvvet serisi olarak hesaplayınız.
+
+131
+00:28:59,263 --> 00:29:08,384
+Gene benim, yukarıdaki 1 bölü 1 eksi x geometrik serisini kullanarak, böyle bir integral,
+
+132
+00:29:09,076 --> 00:29:35,836
+Nasıl bir kuvvet serisine eşittir, onu bulmak istiyoruz arkadaşlar. Tamam mı? Ne yapabiliyorduk? Kuvvet serilerinin türevleri alınabilir, integral alınabilir demiştik, toplanabilir, çarpılabilir. Onları hep yapabiliriz, özgürüz diyorduk. Şimdi gelelim, burada fonksiyonum nedir? İntegraldeki fonksiyonum. 1 bölü, 1 artı x üzeri 7 fonksiyonunu bir kuvvet serisinin toplamı olarak ifade edelim.
+
+133
+00:29:36,627 --> 00:29:43,367
+Tamam mı arkadaşlar? İfade edelim. Sonra da onun integralini aldığımda, o seri şudur diye yazarım.
+
+134
+00:29:44,907 --> 00:29:51,987
+Evet, devam edelim. Dediğim gibi, 1 bölü 1 eksi x'siniz var. Bunu da buraya yazdım tekrar.
+
+135
+00:29:52,587 --> 00:29:59,807
+E şimdi bununla düşünürsem, şöyle bir fonksiyonu elde edebilmek için şu geometrik seriyi kullanıyorsam, burada aşikar hemen görürüm değil mi?
+
+136
+00:29:59,807 --> 00:30:01,927
+İlk serilerine yazmalıyım. Eksi.
+
+137
+00:30:02,516 --> 00:30:27,396
+x üzeri 7 yazmalıyım. Değil mi arkadaşlar? Sorumuz şu, orada duruyor. Benim fonksiyonum 1 bölü 1 artı x üzeri 7. Diyorum ki, bilgimde şu zaten, şu geometrik seriyi kullanarak başka türlü bulmak zor yani. Elimdeki veri bu. Ve bunu kullanmak istiyorsam, o zaman burada 1 bölü 1 artı x üzeri 7'yi elde edebilmek için x yerine ne yazmalıyım diyorum. x üzeri.
+
+138
+00:30:27,988 --> 00:30:37,567
+eksi x üzeri 7 yazmalıyım. O halde yazalım bakın. Yazdık diyelim. Bu da ne oldu? 1 bölü, 1 artı x üzeri 7 oldu.
+
+139
+00:30:37,567 --> 00:30:44,447
+Eş toplam n eşittir sıfırdan sonsuza kadar x yerine eksi x üzeri 7 yazdım.
+
+140
+00:30:45,236 --> 00:30:47,536
+Bu da ne olur? Biraz daha düzgün yazarsak.
+
+141
+00:30:47,655 --> 00:30:50,635
+Eksi 1 üzeri n, x üzeri 7n.
+
+142
+00:30:50,955 --> 00:30:55,236
+İşte verilen şu fonksiyonun kuvvet serisi nedir?
+
+143
+00:30:55,556 --> 00:30:56,996
+Budur diyeceğiz değil mi arkadaşlar?
+
+144
+00:30:57,776 --> 00:31:00,195
+Bunu da yakınsaklık aralığı gene ne olacaktır?
+
+145
+00:31:00,195 --> 00:31:01,496
+Mutlak değer.
+
+146
+00:31:02,420 --> 00:31:29,800
+eksi x üzeri 7 küçük 1 olmalı. Çünkü, şunun geometrik serilerini, yakınsaklık aralığını bildiğim için, onu doğrudan söylerim. Evet, şimdi neye ihtiyacımız var? Sorumuza dönüyoruz. Şunun integral ne kuvvet serisini soruyor? Bu fonksiyonun kuvvet serisi buysa, ne yapmam gerekir? Her tarafın integralini alacağım değil mi? Bakın, terim terim integralini alırsak, integral diyorum, dx 1 artı x üzeri 7.
+
+147
+00:31:30,291 --> 00:31:36,971
+integral, şu toplamı yazdım şuraya, dex. Bunu zaten soruyor bana.
+
+148
+00:31:37,428 --> 00:31:51,788
+Bu da belirsiz integral olduğu için bir tane sabit olacak, karışmasın diye sabiti şuraya yazdım. Artı, toplam integralden bağımsız bakın, dışına attım. En eşittir sıfırdan sonsuza kadar, eksi bir üzeri en dedim.
+
+149
+00:31:52,608 --> 00:32:01,788
+İntegral x'e bağlı olduğu için ne olacak? Üstünü bir arttırdım, integralini alıyorum. Yedeyen artı bir bölü, yedeyen artı yedi üzeri.
+
+150
+00:32:03,220 --> 00:32:28,019
+Şuraya yanlış yazmışım arkadaşlar, özür dilerim. 7n artı 1 tamam mı? Yukarı kaymış, tepesinde gibi duruyor. Anlarsınız değil mi onu? 7n artı 1, yukarı kaymış. Evet, yani üstünü bir arttırdım. 7n artı 1, bölü 7n artı 1, anlaşılır zaten. Şimdi biraz da açık yazalım bunu. Enes 0 verirsem, birinci teremim ne gelecektir?
+
+151
+00:32:30,804 --> 00:32:48,384
+n'e 0 verdim, tamam, x gelir, doğru. n'e 1 verirsem ne olur? Eksi x üzeri 8 bölü 8. Bu şekilde işte verilen şu integralin kuvvet serisi şeklinde ifade etmiş olduk.
+
+152
+00:32:49,764 --> 00:32:50,983
+Tamam mı arkadaşlar? Bu.
+
+153
+00:32:51,731 --> 00:33:07,152
+Yukarıda da demin dediğim gibi bizim serimizin yakınsaklık aralığında ne olacaktır? X'e eksi x üzeri 7 yazdığım için mutlak değer küçük bir ya da mutlak değer x küçük bir için seri yakınsaktır diyeceğim. Anlaşıldı mı?
+
+154
+00:33:10,036 --> 00:33:21,776
+Hatta burada kalsın bir tane ders anlattığımız konunun altında bir tane örnek var. Onu da görmenizi istiyorum. Şurada hemen. Bir tek o kalmıştı dünden.
+
+155
+00:33:37,140 --> 00:33:45,880
+Şu arkadaşlar bakın, o soruya benzer. Ama bu biraz daha farklı. Onun için de bu örneği dün yapmamıştım, burada kalmıştım biliyorum ama sonra gelecektim.
+
+156
+00:33:45,880 --> 00:33:55,360
+Yani fx eşittir, 1 bölü 2 artı x için x eksi 1'in kuvvetlerine göre olan bir seri temsilini ve yakınsaklık aralığını bulunuz.
+
+157
+00:33:55,720 --> 00:34:02,860
+Bakın orada bir şey demiyordu, burada x eksi 1'in kuvvetlerine göre, gene aynen bizim 1 bölü 1 eksi.
+
+158
+00:34:03,667 --> 00:34:29,927
+X geometrik serimizi kullanarak, burada X eksi 1'in kuvvetlerine göre diyor. Onun için ne yapabilirim ben? X eksi 1'e t dönüşümü yaparız. Bu da bir değişik şekildeki bir soru. Onun için bunu da görmenizi istiyorum. X eksi 1'e t dersem, X ne olur? t artı 1. O zaman bu dönüşümü yapalım. Tamam mı? Ne olur? Aldık fonksiyonu 1 bölü 2 artı X.
+
+159
+00:34:30,739 --> 00:34:41,707
+x eksi 1'e t der dedik. x gördüğüm yere ne yazıyorum? t artı 1'i yazarsam 3 artı t olmaz mı? Şu. E şimdi gene...
+
+160
+00:34:42,003 --> 00:34:54,063
+Ne olacak? Benim fonksiyonum şu. Bunu düzgün bir şekilde geometrik seriye benzeterek yazma. Yani 1 bölü 1 eksi x'i kullanacağım ya, onu düzenlemek için ne yapmalıyım? Gene paydayım 3 parantezini almalıyım.
+
+161
+00:34:54,483 --> 00:35:04,063
+3 parantezini alırsam ne olur? 3 çarpı aç parantez 1 artı t bölü 3 olur. 1 bölü 3'ü dışında tutayım şöyle. Şöyle yazarım değil mi? Şuradan şurası tamam.
+
+162
+00:35:04,063 --> 00:35:06,623
+Bu 1 bölü 3'tür.
+
+163
+00:35:07,476 --> 00:35:25,436
+Hatta bunu toplam içine de yazabilirsiniz. Yani bizim 1 bölü 1-x geometrik serisinde ne yazılmış x yerine? Eksi t bölü 3 yazmışız değil mi arkadaşlar? Eksi t bölü 3 yazmışız. Buraya doğrudan yazıldığı için takip edemeyebilirsiniz.
+
+164
+00:35:25,436 --> 00:35:34,036
+Yani hatırlayın 1 bölü 3'ümüz vardı. Toplam n eşittir sıfırdan sonsuza kadar x üzeri n değil midir?
+
+165
+00:35:34,996 --> 00:36:02,916
+toplam olarak yazmak istersek, ya da açık bir şekilde yazarız. Yani x yerine eksi t bölü 3 yazmış oluyorum. Onu da bakın yazarsak, 1 bölü 3 duruyor şurada. Burada ne olur? İlk terimimiz bir değil midir? Kuvvet serisinde yazarken. 1 artı x'ti. x yerine eksi t bölü 3 yazıyorum. x kare. O zaman ne olur? t kare bölü 3'ün karesi. Bu şekilde olan bir kuvvet serisi olarak.
+
+166
+00:36:02,996 --> 00:36:04,895
+açık bir şekilde yazmış oluruz.
+
+167
+00:36:05,296 --> 00:36:09,976
+Bunun da yakınsaklık aralığı, geometrik serinin yakınsaklık aralığı neydi?
+
+168
+00:36:10,395 --> 00:36:12,556
+Eksi bir küçük x, küçük birdi.
+
+169
+00:36:12,556 --> 00:36:16,655
+Biz x yerine eksi t bölü 3 yazmıştık.
+
+170
+00:36:16,735 --> 00:36:18,216
+Düzenlersek bu da ne olur?
+
+171
+00:36:18,476 --> 00:36:22,996
+Eksi bir ile artı bir aralığında olacaktır diyeceğiz.
+
+172
+00:36:24,436 --> 00:36:39,695
+Tamam mı? İşte gene bunu da toplu sembol ile ifade etmek istersek ne olacaktır? Yani böyle kafanız karışıyorsa arkadaşlar, şunu düzenledikten sonra sigma sembolünün içinde yazmak daha kolayınıza gelir bence.
+
+173
+00:36:39,695 --> 00:36:52,176
+En eşittir sıfırdan sonsuza kadar derdik. 1 bölü 3 diye yazmıştık hatırlarsanız. Dedik ki x yerine ne yazmıştık? Eksi t bölü 3'ün eninci kuvveti dersin. O da düzenlenirse bu şekilde.
+
+174
+00:36:52,436 --> 00:37:00,596
+Yazılır işte. Tamam mı? Ve bunu da artık düzenlersek şuradan, eksi 3 de artı 3 olur, yakınsaklık aralı.
+
+175
+00:37:01,436 --> 00:37:09,936
+Diyeceğiz bu t için. Şimdi biz geriye döneceğiz. Çünkü bize verilen bu fonksiyonun, bunun kuvvetlerine göre yaz diyor.
+
+176
+00:37:10,296 --> 00:37:16,235
+T gördüğüm yere ne olacak? X'li ifadesini yazacağım. T gördüğüm yere ne yazıyorum? X eksi 1'i yazıyorum.
+
+177
+00:37:19,119 --> 00:37:26,399
+Toplam, eksi 1 üzeri n, x eksi 1 üzeri n bölü 3 üzeri n artı 1'dir. Tamam mı arkadaşlar?
+
+178
+00:37:26,399 --> 00:37:31,319
+E şimdi t gördüğüm yeri de gene ne yazmalıyım? Aralığını da yazabilmek için. Eksi 1'i yazıyorum.
+
+179
+00:37:31,479 --> 00:37:37,679
+Yazarsam, bunda yakınsaklık aralığı ne olur? Eksi 2 ile 4 diye yazmış olurum.
+
+180
+00:37:40,500 --> 00:37:55,739
+Anlaşıldı mı arkadaşlar? Bu biraz daha diğerine göre zor sayılır. Çünkü x-1'in kuvvetlerine göre dediği için önce onu düşünmek gerekir. Evet, anlaşıldı sanırım. Şimdi gene soruma dönüyorum.
+
+181
+00:38:01,556 --> 00:38:03,315
+Evet, burada kalmıştık.
+
+182
+00:38:05,516 --> 00:38:07,676
+Tamam değil mi arkadaşlar? Problem yok.
+
+183
+00:38:08,296 --> 00:38:11,016
+Evet, şimdi de şöyle bir örneğim var.
+
+184
+00:38:11,956 --> 00:38:33,056
+Toplam, en eşitli birden sonsuza kadar, C bölü 3 üzeri n artı 2 serisinin toplamı 6 olduğuna göre, C kaçtır? Bu da gene bir test sorusu arkadaşlar. C aşağıdakilerden hangisidir şeklinde. Tamam mı? Sorulmuş bir sorulardan bir şey. Evet, şimdi buradaki C'yi bulmak istiyoruz.
+
+185
+00:38:33,568 --> 00:39:01,568
+İşte böyle bir toplam da biliniyor. O zaman önce bu seriyi bir açıkça biraz yazmaya çalışalım. Nasıl bir seri olduğunu görmek açısından. Ne yapıyorum? Terimlerini n'e bir veriyorsam ne olur? C bölü 3'ün kübü olur. 2 verirsem ikinci terimini yazarım. C bölü 3'ün dördüncü kuvveti. Ta ki n verirsem C bölü 3 üzeri n artı 2 nokta nokta. İşte toplam seri açık.
+
+186
+00:39:01,568 --> 00:39:19,668
+açık yazıldığında böyle bir sonsuz seri şeklinde ifade etmiş olurum. Burada dikkat edersek, ortak parantezi alabilirim. C bölü 3'ün parantezini alırsam, aç parantez 1. Buraya ne gelir? 1 bölü 3 gelir. 1 bölü 3'ün karesi, artı nokta nokta.
+
+187
+00:39:20,179 --> 00:39:35,900
+1 bölü 3 üzeri, en eksi 1 değil mi? Doğru yazdım. Şunu düzdenlersem, en altı ikisi kalır. Bu. İşte şu seriyi bu şekilde ifade etmiş oldum. Dikkat ederseniz bu da bir geometrik seri göstermiyor muydu?
+
+188
+00:39:36,436 --> 00:39:45,135
+Biz hatırlayın bakalım, geometrik seri ne demiştik? En eşittir birden sonsuza kadar, a çarpı, r üzeri, n eksi bir şeklindeydi.
+
+189
+00:39:45,135 --> 00:39:54,115
+İşte onu açtığımızda, a parantezinde, bir artı işte, r artı r'nin karesi şeklinde, üretici de r idi demiştik.
+
+190
+00:39:54,336 --> 00:40:00,755
+Bu da aslında bir geometrik seri bakın, para a'sı şu olacak, ilk terimi de bir ile başlıyor.
+
+191
+00:40:01,215 --> 00:40:03,896
+İşte bu bizim için bir geometrik seridir.
+
+192
+00:40:05,076 --> 00:40:17,135
+Ya da bunu kapalı bir şekilde, yani toplam sembolüyle nasıl yazarım? Toplam, n'ş'tir birden sonsuza kadar, c bölü, 3'ün kübü 27, 1 bölü 3 üzeri n-1.
+
+193
+00:40:18,260 --> 00:40:40,100
+Biz daha çok böyle yazmaya alışık olduğumuz için hemen bunu gördüğümüzde geometrik seri diyoruz. İstiyorsan onu burada da kendin düzenleyebilirsin. Değil mi arkadaşlar? Bakın ne yaparım? Şunu en eksi bir şekilde yazmaya çalışırsak bu şekilde de yazarız. Ama görmek için birkaç terimini böyle açık yazarsanız daha kolay görebilirsiniz.
+
+194
+00:40:41,460 --> 00:41:03,320
+Tamam, şimdi burada dedik ki bu bizim için geometrik seridir. Bunun A'sı nedir? C bölü 27'dir. R'si neyle üretilmiş? 1 bölü 3'dür. Bunun yakınsak olabilmesi için ne olması gerekir? Mutlak değer R, 1 bölü 3, küçük 1 olmalı. Bu da gerçekten birden küçük olduğu için verilen şu geometrik seri yakınsaktır.
+
+195
+00:41:08,755 --> 00:41:34,395
+C bölü 27, bölü 1-1 bölü 3 değil mi? Öyle yazarız. Yani resle 1 bölü 3'ü. Bunu düzenlersek ne olur? C bölü 27, şunu ters çevirirsem 3 bölü 2, şuradan 9 kalır. Değil mi? 18, 6 ile de düşünürsek ne olur? Çarptığımızda 108 olur. Demek ki C sayısı neymiş? 108'miş arkadaşlar.
+
+196
+00:41:36,403 --> 00:41:39,403
+Anlaşıldı mı? Bu da değişik bir soru şekli.
+
+197
+00:41:41,283 --> 00:41:41,563
+Evet.
+
+198
+00:41:43,043 --> 00:41:45,243
+Tamam değil mi arkadaşlar? Problem yok.
+
+199
+00:41:46,083 --> 00:41:48,903
+Ne yaptık? Geometrik seri şeklinde düzenledik.
+
+200
+00:41:49,443 --> 00:41:51,923
+Zaten geometrik seri yakınsaklığını da biliyoruz.
+
+201
+00:41:52,503 --> 00:41:54,943
+Nasıl toplanacağını da bildik. Yerine yazdık.
+
+202
+00:41:55,243 --> 00:41:55,423
+Evet.
+
+203
+00:41:57,324 --> 00:41:59,523
+Şimdi gelelim buraya.
+
+204
+00:42:00,340 --> 00:42:14,320
+Bu da toplam n eşittir c'den sonsuza kadar 1 bölü 3 üzeri 2n artı 1. Küçük 1 bölü 72 olduğuna göre c'nin alabileceği en küçük değer kaçtır?
+
+205
+00:42:15,220 --> 00:42:21,019
+Yani burada c en küçük ne olmalı neyle başlatmışlar bu seriyi? Onu bulmak istiyoruz.
+
+206
+00:42:22,324 --> 00:42:27,864
+Bu da yukarıdaki örneğe benzer şekilde düşünmemiz gerekecek. Değil mi arkadaşlar?
+
+207
+00:42:30,104 --> 00:42:38,324
+Evet. Bakın. Şimdi alıyorum şu seriyi. Birkaç terim yazmaya çalışıyorum.
+
+208
+00:42:38,964 --> 00:42:47,644
+Ne yapıyorum? Önce C'ye verdiğimi düşünürsem. 1 bölü 3 üzeri 2C artı 1. Artı ne yapacağım?
+
+209
+00:42:48,244 --> 00:43:08,824
+C artı 1 verdim. C artı 2 veriyorum. C artı 2 verirsem, ne olur? 2C artı 3 olur. Bir tane daha verdiğimi düşüneyim. C artı 3 vereyim. Tamam mı? En yerine C artı 3 yazarsam.
+
+210
+00:43:14,835 --> 00:43:37,456
+Evet. 2C artı 1 doğru değil mi? C yerine, N yerine C yazdım. C artı 1 yazıyorum, N yerine. C artı 1 yazarsam 3 olur, doğru. N yerine C artı 2 yazıyorum. 4, 5 olur. Tamam, doğru yazmışım. Değil mi? Bu.
+
+211
+00:43:38,260 --> 00:43:45,019
+Şimdi burada dikkat edersek, 3 üzeri 2c artı 1 parantezinde yazabilirim.
+
+212
+00:43:45,599 --> 00:43:49,960
+1 bölü, 3 üzeri 2c artı 1 parantezini alırsam 1 gelir.
+
+213
+00:43:50,500 --> 00:43:53,599
+Buradan 1 bölü 3'ün karesi olur, aşikar artık.
+
+214
+00:43:54,119 --> 00:43:57,380
+1 bölü 3'ün 4. kuvveti.
+
+215
+00:43:57,920 --> 00:43:59,660
+Doğru düşünüyoruz değil mi? Evet, doğru.
+
+216
+00:44:00,083 --> 00:44:18,463
+Bu. İşte bu da yukarıdaki gibi dikkat ederseniz, köşeli parantezin için ilk terimi 1 ile başlamış. 1 bölü 3'ün karesi 4. Yani üreticide nedir R'si? 1 bölü 3'ün karesidir. Yani bu nedir? Geometrik seridir. A'sı da şu ifadedir.
+
+217
+00:44:19,304 --> 00:44:26,264
+İşte dedik ki bu gene bizim için geometrik seridir. R'si 1 bölü 9'dur. A'sı da bu ifadedir.
+
+218
+00:44:27,092 --> 00:44:51,052
+Yine bunu yazdık, küçük diyoruz. 1 bölü 72 olmalı. Şimdi ne yapıyoruz? Bu mutlak değer R küçük 1 oldu. A şikâyet yakınsak bir seridir. Bunun toplamını yazalım. A'sı nedir? Şu değil mi? Yazdım. Çarpı. A bölü 1-R'den buluyoruz değil mi? Toplamını şu. A'yı şuraya yazmış oldum.
+
+219
+00:44:51,476 --> 00:45:16,116
+1 bölü, 1-r'ye yazdım. R'si de 1 bölü 9'dur. Burada düzenlemeye çalışalım. Şunu nasıl yazarım? 3'ün 2c'inci kuvveti geldi. Çarpı 3 dedik. Bunu da ters çevirirsen 9 bölü 8 olur. Tamam mı? Şunlar sadeleşirse şurada 3 kalır. Şu 3'ü de şuraya attığımı düşünürsem 1 bölü, 3 üzeri 2c-1 olur. Değil mi şuradan?
+
+220
+00:45:18,452 --> 00:45:23,791
+Şu da 8'in çarpı 8. Küçük 1 bölü 72 istiyoruz. Çünkü öyle vermiş soru da.
+
+221
+00:45:24,572 --> 00:45:34,072
+Buradan biraz daha düzenlersek, şu 8'i şuraya attığımda, 1 bölü 72 ile sadeleştirdiğimde, 1 bölü 9 kalır.
+
+222
+00:45:34,952 --> 00:45:41,344
+Burada da ne olacaktır? 3'ün karesi derim bana da. Yani şu küçükse...
+
+223
+00:45:41,344 --> 00:46:06,543
+tersi olursa büyük olur değil mi? Şuradan ters çevirirsem. Yani 3 üzeri 2c eksi 1 büyüktür, 3'ün karesinden. Ve üstlerde eşit olması gerekir değil mi? Yani 2c eksi 1'in de 2'den büyük olması gerekir. Bunu da düzenlersem 2c büyük 3, c büyük 3 bölü 2 olur. Tamam mı arkadaşlar? Bu.
+
+224
+00:46:06,543 --> 00:46:07,543
+Bu.
+
+225
+00:46:08,980 --> 00:46:22,199
+Ne dedik? 3 bölü 2'den büyük olmalı. E bu seriden bahsettiğimize göre kesinlikle değil değil mi? Tam sayılar olması gerekir. Tam sayı olduğuna göre verilen koşulu sağlayan C ne olmalı sizce?
+
+226
+00:46:24,148 --> 00:46:43,568
+C, bakın orada 1.5 oluyor. 1.5'tan büyük olacak. Tam sayı olması gerekir. En küçüğünü soruyor. Ne olması gerekir? 2 olacak. Evet, doğru konuşuyor. [öğrenci] arkadaşımız, sağ ol. Bir tane cevap aldım en azından. Evet, bence hepiniz, yani çoğunuz bence çözüyorsunuz da bazı arkadaşlar katılmak istemiyor demeye.
+
+227
+00:46:43,891 --> 00:46:53,831
+Öyle düşüneyim. Evet, ne dedik? C tam sayı olduğuna göre verilen koşulu sağlayan C'nin alabileceği en küçük tam sayı nedir? İkidir diyeceğiz. Bu.
+
+228
+00:46:55,411 --> 00:47:01,532
+Evet, anlaşıldı sanırım. Biraz hani işlemler şey gibi, karışık gibi değil mi? Basit ama zor değil.
+
+229
+00:47:01,711 --> 00:47:08,492
+Görmenizi istedim. Değişik soru tarzı olabilir, sorulabilir arasında. Evet, bir tane de şu olsun.
+
+230
+00:47:10,643 --> 00:47:37,824
+Biraz silik çıkmış ama. Elen, 3. kökten x, artı elen 9. kökten x, artı elen 27. kökten x, artı nokta nokta, elen 3 üzeri n. kökten x, artı nokta nokta. Böyle bir sonsuz toplam verilmiş. Toplamı 4 ise diyor, x nedir? Evet, biraz silik açayım. Şimdi ne yaptım arkadaşlar?
+
+231
+00:47:38,416 --> 00:47:49,496
+Önce bunu düzenlemek istedik. Logaritmik özellikleri kullanırsam x üzeri 1 bölü 3, logaritmik özellikten üst başa çarpan olarak gelir değil mi? Hepsini o şekilde yazdım bakın. 1 bölü 3.
+
+232
+00:47:50,099 --> 00:48:04,019
+LNX dedik. Artı 1 bölü 9 LNX, artı 1 bölü 27 LNX, artı nokta nokta, bu da ne olur? 1 bölü 3 üzeri N LNX, artı nokta nokta eşittir 4 diyoruz.
+
+233
+00:48:04,440 --> 00:48:10,319
+Şimdi, burada dikkat ederseniz, LNX'ler ortak, bir de 1 bölü 3'ümüz ortak.
+
+234
+00:48:10,319 --> 00:48:14,360
+Yine ne yapıyorum? Bakın, 1 bölü 3 LNX parantezinde yazdım.
+
+235
+00:48:14,771 --> 00:48:24,192
+Ne olur? 1 artı 1 bölü 3, işte bu şekilde, ta ki nokta nokta, 1 bölü 3 üzeri en eksi 1 şeklinde ifade etmiş olduk.
+
+236
+00:48:24,271 --> 00:48:29,531
+Bakın verilen bu sonsuz terimli bir seriyi bu şekilde yazmış olduk.
+
+237
+00:48:29,632 --> 00:48:32,471
+Bu da gene bakarsanız bir geometrik seridir.
+
+238
+00:48:33,492 --> 00:48:42,652
+İlk terimi 1 ile başladı. A'sı zaten 1 bölü 3 ln x'dir. Neyle üretilmiştir? Yani R dediğimizde nedir? 1 bölü 3'tür diyoruz.
+
+239
+00:48:43,832 --> 00:48:49,612
+Evet, R 1 bölü 3'tür. Bu da zaten birden küçük olduğu için yakınsak bir seridir bu.
+
+240
+00:48:49,907 --> 00:49:15,788
+A'sı da bu zaten sıfırdan farklı. Bunun toplamından gideceğim ki, bana neyi soruyordu? X soruyordu. Evet, toplamı da A bölü 1-R'dir. Yazarsak A'sı 1 bölü 3 L'en X çarpı 1 bölü 1-R'de 1 bölü 3'tür. Bunu düzenlersem, bu ne olur? 3 bölü 2 gelir, 3'ler gider, L'en X bölü 2 kalır değil mi? Şuradan gördük.
+
+241
+00:49:16,403 --> 00:49:43,023
+Eşittir 4. Bu da ne olur? 8 olur. Lnx 8 ise, x'i yalnız bırakırsak ne olur? E üzeri 8'dir. İşte burada x neymiş? E üzeri 8'miş arkadaşlar. Tamam mı? Bu da değişik bir soru. Anlaşıldı sanırım değil mi? Evet. Gelelim. Şu. An dizisi.
+
+242
+00:49:43,764 --> 00:49:52,564
+Dizileri anlatırken de söylemiştim. İki küçük parantez arasında da yazılırsa onu dizi olarak anlıyoruz veya kırlangıç parantezi olarak ifade edilir.
+
+243
+00:49:52,924 --> 00:50:00,000
+Hatta şurada en eşittir birden sonsuza kadar yazılabilir. Bunun hepsi diziyi temsil eder diyoruz yani dizinin sembolü.
+
+244
+00:50:00,000 --> 00:50:18,880
+Bu dizinin karakteri için aşağıdakilerden hangisi doğrudur? Yine bunların hepsi aslında test soruları. Hatta bunların cevaplarını da almışım bir tane görmek açısından diye. Evet. Evet. Şimdi biz bu dizinin...
+
+245
+00:50:18,880 --> 00:50:46,660
+Yakınsak mı, ıraksak mı olduğuna nasıl bakacağız? Dizinin eninci terimi nedir? Şu parantez içindeki eksi 3 bölü, n-kök içinde n kare artı 2'dir değil mi? Limit en sonsuza giderken bunun limitine bakacağız. Bu. İşte vermiş bir sürü cevap, hangisi doğru diye bakacağız. Peki bekliyorum 1-2 dakika. Siz bunun limitini bulun. Limit en sonsuza giderken, eksi 3 bölü, n-kök içinde n kare artı n'in limiti ne çıkacak?
+
+246
+00:50:46,880 --> 00:50:52,460
+Yani şu cevaplardan hangisi olur? Hadi bekliyorum bir dakika, yapmaya çalışın hadi.
+
+247
+00:51:36,115 --> 00:51:44,416
+Evet, bulan var mı arkadaşlar? Cevap şıkkı hangisi? B diyorsun. Değil [öğrenci], B değil. Ben B'yi bulmamıştım.
+
+248
+00:51:48,052 --> 00:51:49,012
+0-1
+
+249
+00:51:53,396 --> 00:51:54,016
+Başka?
+
+250
+00:52:03,668 --> 00:52:24,188
+O zaman çözelim bakalım. E diye hatırlıyorum cevabı. Yani 6 diye hatırlıyorum. Evet 6'ymış. Evet ne dedik? Limit en sonsuza giderken an limitini buluyoruz. Limit en sonsuza giderken en inci terimini yazdık. Eksi 3 bölü en, eksi 4 içinde en kare artı en dedik. Şimdi pay eksi 3.
+
+251
+00:52:24,592 --> 00:52:29,951
+Kontrol ediyorum bakın, paydası nereye gidiyor? Sonsuz eksi, sonsuz belirsizliğine gidiyor arkadaşlar.
+
+252
+00:52:30,391 --> 00:52:34,291
+Bunu bir kenarda halletmem lazım. Yani eksi 1 bölü 2 bulmuşum. Bu kalsın.
+
+253
+00:52:34,572 --> 00:52:39,612
+Şimdi ne yapıyorum? Şunu görmem. Bu bir belirsizliktir değil mi? Bu belirsizliği gidermem gerekir.
+
+254
+00:52:39,692 --> 00:52:46,572
+Aldım buraya bakın parantez içinde açıklaması. En sonsuza giderken, en eksi, kök içinde en kare artı en.
+
+255
+00:52:46,991 --> 00:52:51,371
+Dedik ki bu sonsuz eksi, sonsuz belirsizliği var. Bu tip belirsizlikleri ne yapıyorduk?
+
+256
+00:52:52,592 --> 00:53:17,231
+payı paydayı çarparak belirsizliği gideriyorduk. Payın eşleniği ne olur? n artı kök içinde n kare artı n olur. O zaman payı paydayı n artı kök içinde n kare artı n ile çarparsam, hızlıca bir satır eksik yazdım buraya, ne olur? n'in karesi eksisi n kare eksilen gelir. Paydası da ne olur? Şu n artı kök içinde n kare artı n.
+
+257
+00:53:17,652 --> 00:53:39,692
+Bunun eşleniyle payı paydayı çarptım şu. En kareler gider. Eksi en bölü. Şu paydayda en parantezini alırsam en aç parantez bir artı değil mi? Şuradan en kare parantezini almış olduğumu düşünürsem en diye dışarıya çıkar. En sonsuza gittiği için mutlak değere gerek yok. Bir artı bir bölü en kare olur şu.
+
+258
+00:53:40,851 --> 00:54:08,691
+Şimdi n'ler gitti. En sonsuza giderken kontrol edersem, kökün içi ne olur? 1 bölü n kare 0 olur. Kök 1, o da 1 olur. Yani payda 1 artı 1'e gitti. Pay eksi 1 kaldı. Yani sonuçta eksi 1 bölü 2 bulurum. Yani şu belirsizliği giderdim. Eksi 1 bölü 2 çıktı. Bunu da getirip şurada yerine yazdım. Yani eksi 3, payın limiti eksi 3. Paydanın limitinde eksi 1 bölü 2 buldum. Düzenlersem.
+
+259
+00:54:08,851 --> 00:54:12,011
+6 diye sonucu bulurum. Yani cevap E şıklıymış.
+
+260
+00:54:14,631 --> 00:54:18,971
+Evet, böyle düşünen oldu mu arkadaşlar? Payda sonsuz eks sonsuzu.
+
+261
+00:54:21,931 --> 00:54:23,791
+Düşünmüşsünüzdür diye düşüneyim. Evet.
+
+262
+00:54:25,851 --> 00:54:27,091
+Şimdi gelelim.
+
+263
+00:54:28,211 --> 00:54:37,891
+Şöyle bir seri verilmiş, toplam birden sonsuza kadar 3 bölü n çarp n artı 1 artı 1 bölü 2 üzeri n serisinin toplamını bulunuz.
+
+264
+00:54:39,851 --> 00:54:44,851
+Evet, bekliyorum arkadaşlar, bunun toplamını bulun bakalım nedir?
+
+265
+00:54:47,699 --> 00:55:02,159
+yapmak için ayırarak düşünün. Yani burada 2 seri toplamı var değil mi? Bakın bir tanesi n eşitli birden sonsuza kadar 3 bölü n çarpı n artı 1. Diğeri de toplam n eşitli birden sonsuza kadar 1 bölü 2 üzeri n.
+
+266
+00:55:07,987 --> 00:55:12,687
+Bu da gene bir test sorusu. Yani sınavda sorulmuş bir soru.
+
+267
+00:55:19,956 --> 00:55:30,795
+Evet, bir dakika bekliyorum. En azından uğraşın. İki tane ayrı seri bir tanesini hesapla, diğerini de hesapla. Sonra toplam olarak şudur dememiz gerekir.
+
+268
+00:56:13,396 --> 00:56:19,235
+Işıkları yazmamışım arkadaşlar. Üşendim yazmaya. Siz bana söyleyin, ben size doğru yanlış söylerim.
+
+269
+00:56:24,371 --> 00:56:26,052
+Işıktan gideyim diyorsun değil mi?
+
+270
+00:56:45,907 --> 00:56:57,907
+Evet, devam edeyim. Cevap gelmiyor. Bakın dedim ki, ayıracağım bu iki tane seri var. Birine S1 diyelim, S2 diyelim, taşımayalım bir daha. Şimdi S1'in...
+
+271
+00:56:58,739 --> 00:57:23,219
+İnceliyorum, toplamını bulmaya çalışıyorum. Espir dediğim toplam, el eşli birden sonsuza kadar, üçü de hatta dışında tutayım. Çünkü serinin bütün terimlerini sabit teçer atmak karakterini değiştirmediği için bu şekilde yazmış oldum. Bu da benim bildiğim, bakın, teleskopik bir seridir. Yani serinin en inci terimini basit kesirlere ayırarak daha basit biçimde ifade ettiğimiz için bu tip serilere teleskopik seri diyoruz.
+
+272
+00:57:23,827 --> 00:57:45,028
+Evet, şimdi bunun ne yapıyorum? Eninci terimini alıyorum. 1 bölü n çarpı n artı 1. Bunu basit kesirlere ayırabilmek için hatırlarsınız. İntegralde çok yapmışızdır. Bunlar nedir? Basit köktür. Bunun için nasıl arıyorum? A bölü n, n artı 1 de yine benim için basit köktür. Yani birinci dereceden bir polinom olduğu için basit köktür diyoruz.
+
+273
+00:57:45,407 --> 00:58:04,088
+B bölü, n artı, 1. Burada A'yı, B'yi bulmak için ya payda eşitlik, özdeşlikten gidebilirsiniz. Yani bunu n artı, 1 ile çarparsın. Bunu da n ile paydalarını eşitleyip, işte özdeş, 1 dersin, oradan bulursun. Ama uzunu, burada kapama yöntemi işimizi görür. Yani A'yı bulmak için ne yapıyorum?
+
+274
+00:58:04,659 --> 00:58:16,799
+Sol tarafta n'i kapatıyorum. Bunun kökü nedir? Sıfır olduğu için n yerine sıfır yazarak buluyorum. Yani bir bölü n artı birde n yerine sıfır yazarak biri bulmuş oldum.
+
+275
+00:58:17,172 --> 00:58:30,471
+Sonra B'yi bulmak için de bunun kökü nedir? Eksi 1'dir, n artı 1'in kökü. Burada sol tarafta n artı 1'i kapatıyorum. 1 bölü n'de n yerine eksi 1'i yazıyorum. O da ne olur? Eksi 1'dir.
+
+276
+00:58:30,851 --> 00:58:36,612
+Dediğim gibi nasıl istiyorsan, bu basit kök olduğu için kolay. Buradan paylaş dediğini düşünürsen ne olur?
+
+277
+00:58:37,351 --> 00:58:43,672
+A n artı A artı B değil mi? B n özdeş 1 olmalı dersin. Oradan bulursun.
+
+278
+00:58:44,052 --> 00:58:58,391
+Evet, şimdi ne yaptık? Sonuçta A'yı, B'yi bir şekilde bulduk. Getiriyoruz. Gene S1 demiştik ona. Üçümüz dışarıda durdu. Toplam 1'den sonsuza kadar 1 bölü N. A'yı bulmuştum. B'si de eksi 1 bölü N artı 1.
+
+279
+00:58:58,951 --> 00:59:08,632
+İşte şimdi ne yapıyorduk? Böyle bir sonsuz serinin toplamı bulmak için ilk N teriminin toplamına bakıyorum. Ona da S'en diyelim. Tamam mı?
+
+280
+00:59:08,916 --> 00:59:26,731
+3 dışarıda n'e 1 verdim. Birinci terimini yazıyorum. 1-1 bölü 2 olur. Artı ikinci terimi yazmak için n'e 2 veriyorum. 1 bölü 2-1 bölü 3. Artı devam edersem n-1. terimi yazmak istiyorum. 1 bölü...
+
+281
+00:59:26,835 --> 00:59:51,175
+n-1 diyorum. N yerine n-1 yazarsam, 1 bölü n artı n. terimim, 1 bölü n-1 bölü n artı 1. İşte serinin toplamını bulabilmek için sonsuz terimli serinin ilk n terimini yazdım. Bunun toplamına bakıyorum. Gidenler var dikkat edersek. Burada birim kalır. 1 bölü 2'ler gittiler. 1 bölü 3 de gitti.
+
+282
+00:59:52,083 --> 01:00:09,503
+Ta ki böyle, biraz hayal gücümüzü geniş tutarak, burada bakın, bir bölü n'ler de gider, bir bölü n-1'ler de gider, bir bölü n artı 1 kalır. Yani sonuçta bu toplam, parantezin içindeki toplam, bir eksi bir bölü n artı 1. Başında da 3'ü vardı.
+
+283
+01:00:09,780 --> 01:00:24,440
+İşte ilk enterimin toplamı bu. Bunun limitine bakacaktık. Limit en sonsuza giderken esen diyorum. Bunun limiti ne olur? Bu sıfır olduğuna göre 3'tür. Demek ki birinci serimizin toplamı 3. Bu bir kenarda kalsın. Tamam mı?
+
+284
+01:00:25,719 --> 01:00:34,559
+Bu ta serilerin en başındaki kurallarımız değil mi? Toplam soruyorsa ilk enterimin toplamının en sonsuza giderken limitiydi.
+
+285
+01:00:34,559 --> 01:00:36,019
+Şimdi geliyoruz.
+
+286
+01:00:36,884 --> 01:00:45,684
+Onu yazdık. İkinci serimizi, ona da S2 demiştim. Toplam n eşittir birden sonsuza kadar 1 bölü 2 üzeri n.
+
+287
+01:00:46,356 --> 01:01:12,976
+Bu seride acaba diyoruz ki geometrik seri midir ki? Aşikar belli geometrik seri olduğu için. Onun için de ne yapıyoruz? n eşitti birden sonsuza kadar o tamam. Ama şu n olmadı. n-1 şeklinde yazmalıyım. Onun için de ne yapıyorum? 1 bölü 2'yi dışarı atıyorum. 1 bölü 2 üzeri n-1. Bakın kafan karışıyorsa, değer verirsen her ikisi de aynı işte. Bakın n'e 1 verdiğimde 1 bölü 2, buna da 1 verdiğimde 1 bölü 2. Yani her ikisi de birbirine eşit.
+
+288
+01:01:14,356 --> 01:01:34,316
+Böyle olmasını istediğim için bu şekilde yazdım. Geometrik seri dedik. A'sı nedir? 1 bölü 2. Sıfırdan farklı. Neyle üretilmiştir? R'si de 1 bölü 2. Mutlak değer R'de birden küçüktür. 1 bölü 2 birden küçük olduğu için bu seriye yakınsaktır. Bu halde bunun toplamını nasıl buluyorduk?
+
+289
+01:01:35,188 --> 01:01:50,908
+a bölü 1 eksi r'den, a'sı 1 bölü 2, bölü 1 eksi r'si de 1 bölü 2. Bunu yazıp düzenlersek, ikiler gider, sonuç 1'dir değil mi? Şu. Buradan da ikinci serinin toplamını da 1 bulduk.
+
+290
+01:01:51,699 --> 01:02:03,119
+O halde sonuç olarak S1 artı S2 demiştik. Birinci seriyi 3 buldum toplamını. Diğerinde 1 dedik. Sonuç nedir? 4'tür diyeceğiz. Tamam mı arkadaşlar?
+
+291
+01:02:04,439 --> 01:02:14,099
+Bu. Evet, örneklerim bu kadar arkadaşlar. Sormak istediğiniz bir şey var mı? Peki anlıyor muyuz arkadaşlar? Pek derse katılmıyorsunuz.
+
+292
+01:02:14,547 --> 01:02:29,387
+Ben geçen dönem anlattığımda, sorduğum öğrencilerden iyi kötü cevap alıyordum. Sizde hiç cevap alamıyorum. Yanlış olsa konuşun, takıldığınız yeri sorun. Sormadığınız için ben anlayamıyorum. Birkaç kişiden cevap geliyor. Belli kişiler.
+
+293
+01:02:31,147 --> 01:02:32,407
+Evet, ne diyorsunuz?
+
+294
+01:02:35,507 --> 01:02:49,327
+Anlıyor muyuz? Şimdi yeni konuya bugün geçmek istemiyorum. Taylor, Maclaurin serilerini vereceğim. Onlar da biraz uzun. Onları haftaya vermek istiyorum. Ben konuları attım Aves'e. Gördünüz mü arkadaşlar? Dün işlediğimiz konuları.
+
+295
+01:02:52,755 --> 01:02:54,755
+Yani bu üçüncü haftamız sanırım.
+
+296
+01:02:55,188 --> 01:03:07,307
+Bütün konular orada var. En azından bu hafta o konulara bakıp, biraz örnekler çözüp oturmasını sağlayın. Lütfen konular ilerledikçe biraz daha zorlaşıyor. Tamam mı arkadaşlar?
+
+297
+01:03:07,928 --> 01:03:15,228
+Sizin için diyorum, çünkü çok zor dönemlerden geçiyoruz. Yani online ders dinlemek zor, anlatmak zor.
+
+298
+01:03:15,867 --> 01:03:23,188
+Yani zor dediğim, çünkü öğrenciyi göremiyorsun, anlayıp anlamadığını anlayamıyorsun. O yüzden biraz daha sizi özverişim.
+
+299
+01:03:23,188 --> 01:03:32,688
+Bir de daha bulunup, biraz fazla sorular çözün. Çünkü test sınavı olacak. Hani bir sürü ayrıntılı şeyler anlatıyoruz ama notlarınız elinizde olacağı için.
+
+300
+01:03:33,300 --> 01:04:00,600
+Testleri daha kolay yaparsınız. Ama konuya hakim olmak gerekir test sorularını da çözebilmek için. Çünkü gidip aradan bir şey soruyor. İşte şöyle olursa ne olur, böyle olursa ne olur. O yüzden siz birazcık sorular çözüp oturmasını sağlayın. Çünkü bilemiyorum hepinizin seviyesinin ne olduğunu. Belki de çoğunuz anladınız, onu da bilemiyorum. Şimdi siz bana çok cevap vermediğiniz için çok anladığınızı sanmıyorum şu an. İnşallah yanılıyorumdur. Tamam mı? Öyle düşüneyim.
+
+301
+01:04:01,300 --> 01:04:22,220
+Şaka yaptım. Yani bilemiyorum tabii. Baktığınızda hepiniz anlayacaksınız. Üniversiteye gelmiş öğrenci okuduğunu tabii ki anlayacak. İşin esprisi. O yüzden biraz birbirimize destek olalım. Çalışmaya çalışalım. Çünkü daha çok ilerlemedik. Üçüncü hafta. İlerledikçe de konular artacağı için biraz zor olur. Baştan sıkı tutalım işimizi. Tamam mı arkadaşlar?
+
+302
+01:04:22,847 --> 01:04:30,188
+O zaman bugün yeni konuya geçmeyelim. Burada bırakalım. Haftaya görüşmek üzere. Kendinize iyi bakın arkadaşlar. Görüşürüz.
+
+303
+01:04:34,579 --> 01:04:45,619
+Sorunuz var mıydı? Sormadım ama. Evet. Var mı sorusu olan arkadaş? Tamam. Yoksa iyi günler arkadaşlar.

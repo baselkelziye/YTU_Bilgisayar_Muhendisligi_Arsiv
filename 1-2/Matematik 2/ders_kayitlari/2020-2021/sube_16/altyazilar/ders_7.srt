@@ -1,0 +1,2143 @@
+1
+00:00:51,091 --> 00:01:14,212
+Günaydın arkadaşlar. Nasılsınız, iyi misiniz? Ses geliyor mu? Evet, inşallah iyisinizdir. Bir hafta sonra tekrar dersimize başlayalım. Var mı bir problem arkadaşlar? Ben de iyiyim, teşekkür ederim.
+
+2
+00:01:16,980 --> 00:01:25,060
+Evet, geçen hafta kuvvet serilerini bitirmiştik. Şimdi de Taylor, Maclaurin serileri diye bir başlığımız var.
+
+3
+00:01:25,820 --> 00:01:37,560
+Taylor, Maclaurin serilerini birçok yerde işimize yarayacak, kolaylık sağlayacak. Örneğin, elementer olmayan bir integral hesaplayamadığımızdan biz onu seri açarak kolayca hesaplayabileceğiz.
+
+4
+00:01:37,560 --> 00:01:44,960
+Bir noktanın değerini yaklaşık olarak hesaplamak için kullanacağız. Bazı fonksiyonları seri açın.
+
+5
+00:01:44,980 --> 00:01:53,000
+dediğinde, Taylor, Maclaurin serilerini kullanarak kolayca yapmaya çalışacağız. Onun için önce tanımını konuşalım.
+
+6
+00:01:54,100 --> 00:01:57,760
+Evet, sorunuz yoksa başlayabilir miyim derse? Var mı bir problem arkadaşlar?
+
+7
+00:02:00,500 --> 00:02:02,760
+Evet, o zaman başlayalım.
+
+8
+00:02:03,284 --> 00:02:04,984
+Taylor ve Maclaurin serileri.
+
+9
+00:02:05,324 --> 00:02:10,484
+Taylor, Maclaurin serileri aslında kısaca çok kitapta Taylor serileri diye geçer.
+
+10
+00:02:11,164 --> 00:02:15,283
+Maclaurin, Taylor'un özel bir hali olarak göz önüne almış olacağız.
+
+11
+00:02:15,843 --> 00:02:21,223
+Örneğin şöyle bir soru aklımıza gelmiş olsa, yakınsaklık aralığı içindeki bir kuvvet serisi,
+
+12
+00:02:21,804 --> 00:02:26,544
+toplamlının her mertebeden türevli olan bir sürekli fonksiyon olduğunu biliyoruz değil mi?
+
+13
+00:02:26,996 --> 00:02:42,656
+Acaba bunun tersi doğru mudur? Eğer bir fx fonksiyonunun bir i aralığında her mertebeden türevi varsa, o aralıkta fonksiyonu bir kuvvet serisiyle ifade edebilir miyiz? Eğer yapabilirsek bu kuvvet serisinin kat sayıları için ne söyleyebiliriz?
+
+14
+00:02:44,336 --> 00:02:50,656
+Bu son soruyu fx fonksiyonu pozitif yakınsaklık yarı çapına sahip şöyle bir...
+
+15
+00:02:51,475 --> 00:03:11,696
+kuvvet serisi olarak göz önüne alalım arkadaşlar. Yani açıkça şöyle demek istiyoruz. Yakınsak bir kuvvet serisi pozitif bir fonksiyon olarak da, fx'de pozitif düşüneceğiz. Şöyle bir yakınsak serinin seriyi göz önüne alacağız. Bu seri, ı aralığı içinde kabul edeceğiz. Bu fonksiyonda ve
+
+16
+00:03:12,180 --> 00:03:31,500
+türevlerinde, x yerine a yazarak, şu kat sayıları bulmaya çalışacağız. A0, A1 şeklinde. Bunları bulup, getirip yerine yazdığımızda, işte bu bizim Taylor serimizdir diyeceğiz. İşin özü bu arkadaşlar. Yani ne dedik? FX fonksiyonu pozitif yakınsaklık yarı çapına sahip.
+
+17
+00:03:31,924 --> 00:03:40,816
+kuvvet serisi olarak ifade edilirse, yukarıdaki konuştuklarımızı cevaplayabiliriz diyoruz. Yani bunu da yakınsaklık aralığı...
+
+18
+00:03:40,816 --> 00:03:53,756
+Bu aralığında yakınsak olarak kabul ediyoruz. Tamam mı? Şimdi ne dedik? Biz kısaca özet olarak böyle yakınsak bir kuvvet serisini fx olarak göstermiş olalım. Şu şekilde açıkta yazmış olduk.
+
+19
+00:03:53,756 --> 00:04:08,736
+Şimdi diyorum ki bu fonksiyonu fonksiyonda ve türevlerinde x yerine a yazarak a0, a1, a n'leri bulmaya çalışalım. Şimdi öncelikle örneğin bu fonksiyonda x yerine a yazarsak ne olur?
+
+20
+00:04:08,816 --> 00:04:16,836
+Bakın, a0'dan sonraki bütün terimler ne olacaktır? 0 olacaktır. Yani ben a0 yerine ne yazmam gerekir?
+
+21
+00:04:17,456 --> 00:04:22,915
+Fonksiyonun a'daki değerini yazmam gerekti. Şimdi birinci mertebe türevini alırsak bunun.
+
+22
+00:04:23,279 --> 00:04:49,419
+Şuradan alalım, daha kolay olur. Bunun türevi sıfır gelecek. X'e göre türev alıyorum tabii ki. A1 diyeceğim. Tamam mı? Artı, bunun türevi ne olur? Üst başa gelir. 2A2 çarpı X eksi A. Artı bir sonraki terim ne gelecektir? A3 çarpı X eksi A'nın kübü dersem, 3A3 X eksi A'nın karesi. Böyle devam edersek, nokta nokta, n çarpı A n. Değil mi?
+
+23
+00:04:50,228 --> 00:04:55,408
+Şurada ani unutulmuş arkadaşlar. x eksi a üzeri n eksi bir artı nokta nokta.
+
+24
+00:04:56,427 --> 00:05:02,888
+İkinci mertebe. Şimdi burada ne yapıyorum? Fonksiyonda ve türevlerinde x yerine a yazıyorum.
+
+25
+00:05:03,127 --> 00:05:08,168
+x yerine a yazarsam bütün terimler sıfıra gitmez mi? a bir dışındaki bütün terimler sıfır olur.
+
+26
+00:05:08,608 --> 00:05:20,887
+O halde A1 gördüğüm yere ne yazmalıyım ben? Fonksiyonun türevinin A'daki değeri diyeceğim. Benzer şekilde ikinci mertebe türevi alıyorum şuradan. Ne gelecek? Bu sıfır oldu. Bunun türevi ne olur?
+
+27
+00:05:21,459 --> 00:05:27,639
+2a2 gelir. Bunun türevi 6 ya da 2 çarpı 3 diyelim bu formül oluşturacağımız için.
+
+28
+00:05:27,800 --> 00:05:32,120
+a3 çarpı x eksi a. Bir daha devam edersek ne gelir?
+
+29
+00:05:32,680 --> 00:05:36,379
+2, pardon bir önceki terimim nedir benim?
+
+30
+00:05:36,740 --> 00:05:41,560
+a4 x eksi a'nın üçüncü kuvveti diyeceğiz değil mi? O da ne olur?
+
+31
+00:05:41,660 --> 00:05:44,860
+3 çarpı 4 a4 x eksi a'nın karesi diyeceğim.
+
+32
+00:05:44,860 --> 00:05:48,540
+İşte burada yine x yerine a'yı yazarsam ne bulurum ben?
+
+33
+00:05:49,459 --> 00:05:59,240
+hepsi sıfıra gider. Sadece a2 yerine ne gelmesi gerekir? Fonksiyonun ikinci mertebe türevinin ağdaki değeri bölü 2 şeklinde. Bu şekilde devam edilirse arkadaşlar,
+
+34
+00:06:00,148 --> 00:06:15,068
+Yani buradan 3. mertebe türevi alırız, n. mertebe türevi gitmeyiz tabii ki. n tane türev almak o kadar kolay değildir. Ama gene bunu hayal gücümüzü geniş tutarak işte n, n kat sayısı ne gelir diye onu da düşünebiliriz.
+
+35
+00:06:15,068 --> 00:06:28,148
+İşte yukarıda da dediğim gibi böyle bir yakınsak kuvvet serisinde ne dedik? Fonksiyonda ve türevlerinde x yerine a yazarak işte ne yaptık? A1 yerine ne geldi? Bakın fonksiyonun türevi.
+
+36
+00:06:28,148 --> 00:06:56,148
+n.in. a'daki değeri. Sonra, buradan a2 çektiğimi düşünürsem, fonksiyonun ikinci mertebe türevi bölü 2 gelecek. Ya da bu şekilde bırakabiliriz şimdilik. Fark etmez. Hani yazıma doğru aynen burayı takip etmiş olayım. Üçüncü mertebe türevde x yerine a'ları yazdığımızda da bu ifadem gelecek. Ta ki böyle devam ettiğimizde de n.in. mertebe türevini aldığımızı düşünürsek, ne gelecektir? Bunun a'daki...
+
+37
+00:06:56,148 --> 00:07:08,408
+N! çarpı AN. İşte böylece, böyle bir serinin en inci kat sayılarını, yani bütün kat sayılarını şu formülle bulmuş olacağız.
+
+38
+00:07:09,108 --> 00:07:17,687
+Tamam mı arkadaş? Yani şu kadar karmaşık gibi gözüken ifade de hiçbir zorluk yok. Tekrar söylüyorum. Böyle bir yakınsak kuvvet serisinde ne yaptık?
+
+39
+00:07:18,627 --> 00:07:27,288
+Fonksiyonda ve türevlerinde x yerine a'ları yazarak kat sayıları bulmuş olduk. İşte kısaca kat sayılarımı buradan bulacağım. İşte ne yapıyorum?
+
+40
+00:07:27,567 --> 00:07:35,627
+N0 verirsem, a0. kat sayım ne çıkmıştı bakın? Fonksiyonun a'daki değeridir değil mi? Burası 0 olursa kendisi demektir.
+
+41
+00:07:35,680 --> 00:07:58,860
+1'i bulmak istersem, A1 kat sayısı yerine ne yazacağım örneğin? A1 dersem fonksiyonun türevinin A'daki değeri bölü 1 faktörel. İşte şu. Örneğin diyelim ki 3'ü bulmak istiyorum değil mi? A3 kat sayısı yerine ne yazacağım? A3 yerine ne olacak? Fonksiyonun 3. mertebe türevi bölü ne gelecek? 3 faktörel. İşte bu da 3 faktörel diyeceğiz. Tamam mı arkadaşlar?
+
+42
+00:08:02,036 --> 00:08:23,255
+getirip, şurada yerine yazacağım. Şu yakınsak kuvvet serim var ya, orada yerine yazdığımızda, yani fx diyoruz, tamam mı? Bakın şuradan, a0 yerine geliyor, fonksiyonun a'daki değeri diyorum. Sonra ne gelecek? a1 çarpı x eksi a demiştik, a1 yerine de buradan hemen buldum, yerine yazdım.
+
+43
+00:08:30,036 --> 00:08:34,435
+Bir tane daha yazmış olsam, a3 yerine ne yazmam gerekir arkadaşlar?
+
+44
+00:08:35,096 --> 00:08:41,415
+Fonksiyonun 3. mertebe türevinin a'daki değeri bölü 3 faktöre çarpı x eksi a'nın kübü diyeceğim.
+
+45
+00:08:41,775 --> 00:08:52,495
+Böyle devam edersem, a n kat sayısı yerine fonksiyonun 5. mertebe türevinin a'daki değeri bölü n faktöre çarpı x eksi a üzeri n artı nokta nokta.
+
+46
+00:08:52,495 --> 00:08:57,655
+İşte yukarıdaki seriyi bu şekilde ifade etmiş olduk.
+
+47
+00:08:58,035 --> 00:09:14,715
+R nokta nokta derler, bazen kitaplarda Rnx derler. Yani kalan terim de denir arkadaşlar. Tamam mı? Ama biz burada nokta noktayı kullanmış olduk. Ama kitaplarda da Rnx görürseniz hiç kafanız karışmasın. Yani kalan terim. İşte biz buna biraz sonra diyeceğiz ki, Taylor serisidir.
+
+48
+00:09:16,403 --> 00:09:35,864
+Burada anlaşılmayan bir şey var mı arkadaşlar? Hani burada bir sürü hikaye yazdık ama tekrar söyleyeyim işin özeti. Böyle bir yakınsak kuvvet serisini aldık. Fonksiyonda ve türevlerinde x yerine a'ları yazarak kat sayıları bulduk. Getirdik burada yerine yazdık. Şu yıldız şeklindeki bir formül elde ettik. Yani böyle bir seri yazmış olduk.
+
+49
+00:09:36,659 --> 00:09:40,059
+Evet, şimdi burada konuştuklarımız tekrar şöyle diyelim.
+
+50
+00:09:40,059 --> 00:09:55,979
+Şimdi eğer x eşittir a merkezli bir i aralığında her mertebe türevi olan herhangi bir f fonksiyonuyla başlarsak ve bu fonksiyonu yıldızdaki seri üretmek için kullanırsak, bu seri i'daki her x için f x'e yakın sarmı.
+
+51
+00:09:55,979 --> 00:10:00,000
+Yani şimdi burada tabii ki kalan terim, yani şu nokta nokta.
+
+52
+00:10:00,000 --> 00:10:14,020
+Hatta terimin hesaplayıp, bu serinin fx'e yakınsadığını göstermek gerekir. Ama size kalan terimi çok hesaplanmayacağımız için o kadar teorik kısmına girmiyoruz arkadaşlar.
+
+53
+00:10:14,960 --> 00:10:25,400
+Evet, şimdi her fonksiyon fx'e yakınsar mı diye, bu belkidir her zaman doğru olmayabilir. Yani bazı fonksiyonlar için doğru, bazıları için yanlış olabilir.
+
+54
+00:10:26,067 --> 00:10:33,668
+Yani bizim burada bilmemiz gereken şu yıldızla yazdığımız seriye Taylor serisi diyeceğiz.
+
+55
+00:10:34,307 --> 00:10:40,148
+Yani F fonksiyonu bir A noktasını içeren bir aralıkta her mertebeden türevlenebilir bir fonksiyon olsun.
+
+56
+00:10:40,707 --> 00:10:48,067
+Bu durumda F tarafından X'e A noktasında üretilen Taylor serisi işte bu şekilde tanımlanır.
+
+57
+00:10:48,067 --> 00:10:50,108
+Yani şu yukarıda bulduğumuz.
+
+58
+00:10:50,611 --> 00:11:01,532
+Formülü getirip yerine yazdığımızda, işte bu bizim için Taylor serisidir diyeceğiz arkadaşlar. Yani sonuçta fonksiyonun x eşittir, a noktasındaki seri açılımıdır.
+
+59
+00:11:01,731 --> 00:11:11,552
+Öyle de denebilir. İşte verilen fonksiyonu, atıyorum x eşittir, iki noktasında seri açın dediğimizde, biz ne anlayacağız? İşte Taylor serisini anlamış olacağız.
+
+60
+00:11:12,072 --> 00:11:15,792
+Tamam mı arkadaşlar? Bilmeniz gereken formülümüz bu, Taylor serisi.
+
+61
+00:11:17,076 --> 00:11:29,456
+Evet, şimdi Maclaurin serisi de dediğimiz, bu da Taylor serisinin özel bir halidir. Yani buradaki A gördüğüm yere 0'ı yazarsam, Maclaurin serisini elde etmiş olacağım.
+
+62
+00:11:29,456 --> 00:11:39,235
+F tarafından üretilen Maclaurin serisi de, işte Taylor serisinde A yerine 0'ı yazarsak arkadaşlar, F'in 0'daki değeri.
+
+63
+00:11:39,764 --> 00:11:46,584
+f üstü 0 çarpı x artı f'in ikinci mertebe türevinin 0'daki değeri böyle iki faktürel.
+
+64
+00:11:47,059 --> 00:12:13,679
+x kare böyle devam edersek, f'in eninci mertebe türevinin sıfırdaki değeri böyle n faktörüne çarpı x üzere n. İşte buna da biz Maclaurin serisi diyoruz. Yani Taylor'un özel bir halidir. Eğer bir fonksiyonu seriye açın diyorlarsa, bana hiçbir nokta vermiyorsa ben onu anlayacağım ki Maclaurin serisini aç. Ya da bazen der ki Maclaurin serisini aç diyebilir de, demeyebilir de, nokta verilmiyorsa ben onu ne yapıyorum?
+
+65
+00:12:15,059 --> 00:12:20,799
+0 düşünerek x eşittir, 0 civarındaki Taylor serisini açmış olacağım.
+
+66
+00:12:21,203 --> 00:12:42,303
+Tamam mı? Özel bir durum. Dediğim gibi bazı kitaplar hiç Maclaurin demezler, hepsini Taylor serisi olarak söylerler. Ama eğer dediğim gibi bana hiçbir nokta vermiyorsa, verilen fonksiyonun Taylor serisini yaz diyorsa ben onu anlayacağım ki özel bir durum. Yani Maclaurin serisini istiyor, sıfır civarındaki seri açılımını bana söylüyor.
+
+67
+00:12:42,303 --> 00:12:49,203
+Dikkat ederseniz bunları toplam sembolüyle de ifade ettik yani kısaca ama daha çok bunları kullandığımız için açık olalım.
+
+68
+00:12:49,203 --> 00:13:05,104
+olarak bunları söyledim. İşte dediğim gibi bilmeniz gereken iki tane formülümüz. Yani kısaca Taylor serisini bileceğiz. Tamam mı arkadaşlar? Var mı buraya kadar bir problem? Anlaşılmaya. Evet.
+
+69
+00:13:06,995 --> 00:13:17,155
+Şimdi gelelim, Taylor polinomu nedir? İşte şurada hani nokta nokta dedim ya, bu bizim için aslında Taylor serisinde kalan terim demektir.
+
+70
+00:13:17,155 --> 00:13:28,755
+Ya da bunu dediğim gibi kitaplarda Rnx diye görürüz. Eğer en sonsuza gittiğinde şu kalan terim sıfıra giderse bu ne olur arkadaşlar? Sonlu bir ifade oluşur. İşte biz buna polinom diyeceğiz.
+
+71
+00:13:29,200 --> 00:13:51,240
+Evet, buradan da tekrar söyleyeyim bakın. Taylor polinomları diyoruz. F fonksiyonu 1A noktasını içeren 1 Aralık'ta n. mertebeden türeve sahip bir fonksiyon olsun dedik. Bu durumda F tarafından x eşit A'da üretilen n. mertebe Taylor polinomunu polinomdan hatırlamak için n. dereceden dediğine göre Pnx ile göstereceğiz.
+
+72
+00:13:57,200 --> 00:14:03,560
+son suza giderse seri oluyor, sonlu olursa da polinom diyeceğiz. Taylor polinomu.
+
+73
+00:14:07,028 --> 00:14:17,388
+Evet, yani böyle bir Taylor polinomunda bir noktayı yaklaşık olarak hesapla dediğinde bize ne kadar çok terim alırsak o derece gerçek değere yaklaşmış olacağız.
+
+74
+00:14:17,508 --> 00:14:25,208
+Onun için de diyoruz ki Taylor polinomları F'in A civarındaki en iyi polinomon yaklaşımını verecektir diyoruz.
+
+75
+00:14:25,508 --> 00:14:26,248
+Tamam mı arkadaşlar?
+
+76
+00:14:27,548 --> 00:14:31,548
+Evet, şimdi sadece dediğim gibi burada hani bu kadar.
+
+77
+00:14:32,371 --> 00:14:38,371
+Konuştuk, bilmemiz gereken 3 tane formumuz var. Taylor serisi, Maclaurin serisi ve Taylor koninamı.
+
+78
+00:14:39,471 --> 00:14:47,251
+Hepsi de zaten tek bir Maclaurin serisinden üretilmiş olacak. Ne dedik? Maclaurin serimiz budur.
+
+79
+00:14:47,371 --> 00:14:57,651
+Yani Taylor serimiz fonksiyonun x eşittir a civarındaki seri açılımıdır.
+
+80
+00:14:58,227 --> 00:15:09,227
+Matören olursa da A yerine 0 yazarak elde etmiştik. Polinomda ne dedik? Şu nokta nokta olmayacak. Sonlu kısım olursa buna da polinom diyeceğiz.
+
+81
+00:15:10,347 --> 00:15:15,668
+Evet, 3 tane formülümüz var. Şimdi bunları nasıl uygulayacağız? Örneklerde onu görelim.
+
+82
+00:15:16,747 --> 00:15:23,767
+Evet, şimdi gelelim. Şimdi fx eşittir. e yüzey tarafından üretilen.
+
+83
+00:15:24,159 --> 00:15:37,480
+x eşittir 0 noktasındaki Taylor serisini ve Taylor polinomunu bulunuz. Bakın bu 0 dediği için aslında burada bana Maclaurin de diyebilirdi. Hiç noktayı da vermeyebilirdi. Şöyle de diyebilirdi.
+
+84
+00:15:37,908 --> 00:16:04,488
+fx eşittir e üzeri x'in seri açılımını yazın ya da polinomunu bulun derdi. O zaman derdim ki nokta yoksa ben a noktasını sıfır olarak göz önüne alacağım. Hani x eşittir a civarındaki seri açılımıydı ya. O zaman a yerine ne yapıyorum? Sıfır. O zaman benden istenen Taylor serisinin özel bir durumu Maclaurin'i istiyor. Bakın Maclaurin serimiz şurada. Bu. O zaman benim yapmam gereken
+
+85
+00:16:05,235 --> 00:16:31,675
+Önce verilen fonksiyonda sıfır değerini yazıp fonksiyon değerini bulacağım. Sonra türevini alacağım. Orada sıfırı yazıp bulacağım. Sonra bu şekilde en ince mertebeye kadar türevlerini alıp getirip bu formülde yerine yazdığımızda işte seri açılımı budur diyeceğiz. O zaman dediklerimizi uygulamaya çalışalım. Bakın fonksiyonum bu. Fonksiyonun sıfırdaki değeri nedir? 1'dir. Türevini alırsam gene kendisidir.
+
+86
+00:16:32,128 --> 00:16:42,028
+Onun sıfırdaki değeri birdir. Yani bunu bu şekilde ta ki eninci mertebeye kadar türevini alıp, onun sıfırdaki değeri hep bir çıkar değil mi? Bakın bu.
+
+87
+00:16:43,764 --> 00:17:08,603
+İşte bütün eninci mertebeye kadar türevlerini bulduk. Arkadaşlar, her zaman her verilen fonksiyonun eninci mertebe türevini bulmak kolay olmayabilir. Bulmadan da yapabiliriz. İşte üç beş tane, üçüncü işte beş tane türev aldık, yerine yazdık, getirip seride yerine yazdığımızda biz onun eninci terimini tahmin edebiliriz. Ama bu kolay olanları zaten bulabiliriz. İşte burada da dikkat ederseniz.
+
+88
+00:17:09,071 --> 00:17:16,211
+n tane türevini aldık. Yani n. mertebeye kadar türevlerini aldık ve noktayı da kullandığımızda hep değerimiz 1 çıktı.
+
+89
+00:17:16,671 --> 00:17:21,931
+O zaman Taylor serisi dedik. O Taylor dediği için, yani aslında bizim Maclaurin serisini yazmış oluyoruz.
+
+90
+00:17:21,931 --> 00:17:32,071
+Neydi önce? Fonksiyonun sıfırdaki değeri, değil mi? Yazdık. 1. Artı fonksiyonun, türevinin sıfırdaki değeri 1 çıktığı için çarpı x.
+
+91
+00:17:32,788 --> 00:17:55,387
+Artı ikinci mertebe türevin sıfırdaki değeri, 1 bölü 2 faktüriyel, çarpı x kare. Bu şekilde. Bakın akılda kalması da kolay. Yanındaki x çarpanının derecesiyle türevin mertebeleri aynı değil mi? Bakın 2, 2. Bir tane terim daha yazsan, üçüncü mertebe türevin sıfırdaki değeri x küp bölü 3 faktüriyel diyeceğim. Bu.
+
+92
+00:17:56,276 --> 00:18:14,756
+Ta ki, eninci mertebe türevin sıfırdaki değeri de 1 çıkmıştı şuradan. 1 bölü n faktürel çarpı x üzeri n nokta nokta. İşte verilen n üzeri x'in seri açılımı budur diyeceğiz arkadaşlar. Polinom dediğine göre, pn x ile göstermiştik bakın şurada.
+
+93
+00:18:21,748 --> 00:18:39,008
+polinomumuz diyeceğiz. Taylor polinom. Zaten e üzeri x'in seri açılımını artık böyle adımız gibi bilmek zorundayız. Çünkü bunu kullanacağız işlemlerimizde. Onun için kullandıklarımızı bu şekilde vermek istiyorum. Diğer bir tanesi de cos x'in.
+
+94
+00:18:39,392 --> 00:18:44,451
+x eşittir sıfırdaki Taylor serisini ve polinomunu yazınız.
+
+95
+00:18:44,832 --> 00:18:50,832
+Peki ben bir iki dakika bekleyeyim arkadaşlar. Siz yazın bakalım. Yani burada neyi soruyor bana?
+
+96
+00:18:51,291 --> 00:18:56,852
+Cosinus x'in Maclaurin seri açılımını soruyor. Yani birkaç mertebe türevini alırsınız.
+
+97
+00:18:57,692 --> 00:19:04,192
+Hatta tahmin edebilirsiniz en ince mertebe türevini. Yerine yazıp serimi şudur diyelim.
+
+98
+00:19:05,460 --> 00:19:24,040
+Evet, bekliyorum. Hadi. Fonksiyonun sıfırdaki değeri nedir? Kosini sıfırı 1'dir. Bir kez türevini alacaksın. Ne gelir? Eksi sinüs x gelir. Onun sıfırdaki değeri sıfırdır. Bu şekilde gidecektir. Yani 1 gider, eksi 1, sıfır bu şekilde devam edecek. Hadi bir iki dakika bekliyorum.
+
+99
+00:19:50,451 --> 00:20:06,052
+Hatta formülü de size şuradan hemen görün diye. Bakın. Maclaurin serisi şu. Tek yapmanız gereken türevlerini alıp, birkaç terim türev de alıp, yerine yazıp, oradan da eninci terimi tahmin edebilirsiniz arkadaşlar.
+
+100
+00:20:26,036 --> 00:20:27,496
+Evet, uğraşan var mı?
+
+101
+00:20:30,816 --> 00:20:34,635
+Anlaşılıyor mu arkadaşlar? Dediklerim, anlıyor muyuz daha doğrusu?
+
+102
+00:20:43,155 --> 00:21:01,475
+Evet, cevap gelmedi. Ben devam edeyim o zaman. Evet, şimdi bakın, ne dedik? Fonksiyonda x yerine 0 yazdığımızda, kosinus 0, 1'dir. Türevine ihtiyacımız var. Birinci mertebe türevini alıyorum. Nedir? Eksi sinüs x'dir. Bunun sıfırdaki değeri ne olur? Sıfırdır.
+
+103
+00:21:01,835 --> 00:21:08,415
+Üçüncü mertebe türevini alıyorum. Eksi kosinüs x olur. Onun sıfırdaki değeri eksi 1'dir.
+
+104
+00:21:08,884 --> 00:21:29,523
+Üçüncü mertebe türevime bakıyorum. Kosünüsün türevi eksi, sinüs, bir dönemde eksi var, sinüs x olur. Bunun sıfırdaki değeri. Dikkat ederseniz bakın 1, 0, eksi 1 diye gitti. Bakın tek kuvvetlerinde sıfır oluyor değil mi? Çift kuvvetlerde artı eksi 1 diye gitti.
+
+105
+00:21:34,932 --> 00:22:02,912
+Demin de dediğim gibi, bu kadar eninci terimin, yani eninci mertebe türevini bulmanıza gerek de yok aslında. Bunları birkaç terim türev alıp getirip seride yerine yazdığınızda siz eninci terimini de tahmin edebilirsiniz orada. Ama burada aldığımız için yazalım. Bakın, diyorum ki aldım birkaç terim, tahmin ediyorum bunun. Dikkat ettim, şurada bakın. Çift kuvvet, tek kuvvetlerinde sıfıra gitti. Hatta teklerde sinüs geldi.
+
+106
+00:22:02,932 --> 00:22:26,892
+geldi değil mi? Çiftlerde kosünüs geldi. O zaman nasıl yazmalıyım? F'in iki en mertebe türevi diyorum x, artı eksi işaretimiz de var, eksi bir üzeren, kosünüs x diyorum. Denemek için burada n'e sıfır verirsem, yani kendisini elde etmeliyim değil mi? Fx neydi? Kosünüs x'ti. Bunun da değeri ne olacaktı? 1 olacak, doğru.
+
+107
+00:22:27,635 --> 00:22:39,796
+Örneğin, ikinci mertebe türevi, pardon, bir vermiş olsam, ikinci mertebe türevi elde edeceğim. İkinci mertebe türevimde de, bakın, eksi kosünüs, doğru gidiyorum. Değeri de eksi bir olacak.
+
+108
+00:22:40,180 --> 00:22:51,480
+Tek kuvvetlerde de sıfır gelecek. Onu da artık şöyle yazıyorum. 2N artı 1 kesinlikle tek kuvvet olacak. Eksi 1 üzeri N artı 1 sinüs diyorum. Bu da sıfır olacak.
+
+109
+00:22:51,819 --> 00:22:59,720
+İşte ama dediğim gibi bana seri soruyorsa birkaç terim türev alır. Yani şunu da uğraşmama gerek yok. Burada ben tahmin edebilirim.
+
+110
+00:23:00,019 --> 00:23:25,039
+Yani, Taylor serisini yazıyorduk. Neydi? Fonksiyonun sıfırdaki değeri 1 bulmuştuk. Birinci mertebe türevi 0'dı. Yazmayalım. Sonra ikinci mertebe türevi ne bulduk? Eksi 1, eksi x kare bölü 2 diyeceğim. Üçüncü mertebe türevi 0. Dördüncü mertebe türevim gelecek. O da 1 olması gerekir. x üzeri 4 bölü 4 şeklinde.
+
+111
+00:23:25,940 --> 00:23:44,320
+Pardon, şu 4 faktöryel, bu 2 faktöryel arkadaşlar. Yani sonuçta birkaç terim yazdıktan sonra da tahmin edebilirsiniz, şu nasıl gittiğini dikkat ederseniz, hep x'in çift kuvvetleri olarak gidiyor. Teklerde sıfır olduğu için. O zaman bir kere x üzeri 2 en olacak, çift olması gerekir.
+
+112
+00:23:44,539 --> 00:23:53,940
+Bununla da bakın, x kare, bunlar faktöryel arkadaşlar, yazılmamış. Burada da ne olacak? Ona uygun derecesine, yani 2 en faktöryel, önünde de artıya giriyor.
+
+113
+00:23:53,940 --> 00:24:10,580
+eksi 1 üzeri n şeklinde yazılır diyoruz. İşte burada cos x'in seri açılımı ya da kısaca böyle yazarız. Tamam mı arkadaşlar? Yani cos x'in seri açılımı nedir? 1 eksi x kare bölü 2.
+
+114
+00:24:11,087 --> 00:24:23,288
+artı x üzeri 4 bölü 4, bir tane daha yazmış olsam, eksi x üzeri 6 bölü, 4 faktörel, 2 faktörel, 6 faktörel şeklinde gitmesi gerekir.
+
+115
+00:24:23,448 --> 00:24:32,388
+İşte kısaca bunu böyle de toplam sembolü ile en eşitir sıfırdan solsuna kadar eksi 1 üzeren, x üzeri 2n bölü 2n faktörel diye yazarız.
+
+116
+00:24:32,388 --> 00:24:35,388
+Tamam mı? Bu polinomda dediğimizde,
+
+117
+00:24:35,859 --> 00:24:39,239
+Ne diyoruz? Son olan kısmını da polinom dedik.
+
+118
+00:24:40,399 --> 00:24:46,539
+Burada zaten tek mertebe kuvvetlerinin türevinden sıfır geldiği için bunlar birbirine eşittir.
+
+119
+00:24:47,059 --> 00:24:54,259
+Pnx'de desen hiçbir sakıncası yok. Şu şekilde ifade ettik. İşte buna da biz Taylor polinomu diyeceğiz.
+
+120
+00:24:54,539 --> 00:24:55,279
+Tamam mı arkadaşlar?
+
+121
+00:24:58,699 --> 00:24:59,419
+Gelelim.
+
+122
+00:25:02,708 --> 00:25:04,188
+Evet, şimdi
+
+123
+00:25:08,211 --> 00:25:16,211
+Diyelim ki herhangi bir fonksiyon, fx eşittir 1 bölü x tarafından, a eşittir 2'de üretilen Taylor serisini bulunuz.
+
+124
+00:25:16,751 --> 00:25:19,812
+Hangi noktalarda seri 1 bölü x'e yakınsak?
+
+125
+00:25:20,292 --> 00:25:23,271
+İkinci kısmını bırakalım. Şimdi biz ne yapacağız arkadaşlar?
+
+126
+00:25:23,832 --> 00:25:25,932
+Verilen fonksiyonu nedir? 1 bölü x'tir.
+
+127
+00:25:25,932 --> 00:25:31,172
+Bunu iki noktası civarında seriye açmam gerekir, Taylor serisini.
+
+128
+00:25:31,511 --> 00:25:35,632
+İşte yukarıda bakın, tekrar göstermek istiyorum Taylor serisini.
+
+129
+00:25:36,435 --> 00:25:36,935
+Şu.
+
+130
+00:25:37,556 --> 00:25:54,556
+Benim a dediğim nokta nedir? 2'dir. O zaman ne yapıyorum? Önce bana ne yapmam gerekecek? Önce fonksiyonun 2'deki değerini yazacağım. Artı türevinin 2'deki değeri çarpı x eksi 2 artı ikinci mertebe türevinin 2'deki değeri böyle 2 faktörel çarpı x eksi 2'nin karesi.
+
+131
+00:25:55,556 --> 00:26:05,236
+Bu şekilde devam edersem ta ki eninci mertebe türevinin 2'deki değeri böyle n faktörel çarpı x eksi 2 şeklinde bulmamız gerekir. O zaman
+
+132
+00:26:05,556 --> 00:26:08,976
+Ne yapmalıyım? Burada birkaç terim türev almaya çalışacağız.
+
+133
+00:26:09,796 --> 00:26:10,796
+Evet, alalım.
+
+134
+00:26:14,196 --> 00:26:19,135
+Evet, önce fonksiyonun 2'deki değeri ne olacaktır? 1 bölü 2 gelir, değil mi?
+
+135
+00:26:20,531 --> 00:26:22,672
+İşte buraya da yazmışız, hesaplayacağız.
+
+136
+00:26:23,231 --> 00:26:25,132
+Şimdi burada, bakın, yazıyoruz.
+
+137
+00:26:25,311 --> 00:26:27,412
+Fonksiyonun 2'deki değeri 1 bölü 2'dir.
+
+138
+00:26:28,011 --> 00:26:29,372
+Türevini alıyorum, ne gelir?
+
+139
+00:26:29,551 --> 00:26:35,211
+Eksisi 1 bölü x kare, türevinin 2'deki değeri, eksi 1 bölü 2'nin karesi.
+
+140
+00:26:35,811 --> 00:26:37,811
+Açık kalsın, formül oluşturmaya çalışalım.
+
+141
+00:26:38,372 --> 00:26:41,692
+Sonra, ikinci mertebe türevini alırsam burada,
+
+142
+00:26:41,692 --> 00:26:44,331
+payın türevi 0 çarpı payda, değil mi?
+
+143
+00:26:44,531 --> 00:26:47,192
+Eksisi, pay çarpı,
+
+144
+00:26:47,316 --> 00:27:14,636
+Artı gelir, 2, x bölü, x üzeri 4'ten, 2 bölü x küp kalır, değil mi? Şu. Ya da x çarpı 1 diye de yazarız bunu. Bunun ikideki değeri de, 2 faktöriyel bölü, 2'nin küpü diyeceğiz. Sonra, 3. mertebe türevi buradan alırsak, dikkat edersek, payın türevi 0 çarpı payda, eksi 2 çarpı paydanın türevi gelecek, 3x kare değil mi?
+
+145
+00:27:15,059 --> 00:27:27,059
+Bölü x üzeri 6'dan, karesi gitsin, 4 kalır. Şu. Yani eksi 6'yı da nasıl yazarım? 3, 2, 1 şeklinde faktöreli ifade etmek istersen.
+
+146
+00:27:27,480 --> 00:27:42,279
+İşte burada gene dediğim gibi, bunun eninci mertebe türevini tahmin edersek, ne olur? Artı eksi işaret gittiğine göre, eksi 1 üzeri n çarpı n faktöreli bölü, x üzeri n artı 1 diye düşünmeliyiz.
+
+147
+00:27:43,124 --> 00:28:09,963
+Dediğim gibi, bunu bulamayabilirsiniz de, hiç problem değil. Siz getirdik birkaç terimi, Taylor serisinde yerine yazarsanız, onu tahmin edersiniz nasıl gittiğini arkadaşlar. Tamam mı? Ama burada tahmin edilebildiği için, tahmin etmiş olduk burada. Örneğin, 3. mertebeyi doğru buluyor muyum diye, n'e 3 versem, değil mi? 3! bölü, bakın, x üzeri 4. Doğru. Önünde de eksisi olacak. Tamam.
+
+148
+00:28:10,771 --> 00:28:13,932
+İşte bunları getirip ne yapıyoruz? Seride yerine yazıyoruz.
+
+149
+00:28:14,312 --> 00:28:28,471
+Fonksiyonun ikideki değeri, formülü yazdık önce, artı türevinin ikideki değeri, çarpı x eksisi, iki bölü, bunlar hep yanlış, eksik yazılmış arkadaşlar.
+
+150
+00:28:28,471 --> 00:28:32,751
+Bir faktör elini yazmamış, şurada da iki yazılması lazım.
+
+151
+00:28:33,612 --> 00:28:34,971
+F'in ikideki değeri.
+
+152
+00:28:35,892 --> 00:28:49,231
+Artı, türevin 2'deki değeri bölü 1 faktörel. Siz formüle tekrar bakarsınız yazarken tamam mı? Buradan yazmayın. Yani şurada eksiklik var. Hadi biri yazmasın da şurada 2 faktöreli unutmuşlar yazarken.
+
+153
+00:28:49,792 --> 00:28:57,572
+Tabi derste biz bunları tahtada yazınca düzeltiyoruz tabi de eksik yazabiliyoruz bazen değil mi? Formülü yazdık yukarıda zaten. O zaman ne diyorum ben?
+
+154
+00:29:03,892 --> 00:29:28,032
+Fonksiyonun, birinci mertebe türevinin ikideki değeri, eksi bir bölü iki faktöriyel, çarpı x eksi iki, artı fonksiyonun, ikinci mertebe türevinin ikideki değeri, değil mi? Bölü iki faktöriyel, çarpı x eksi ikinin karesi. Şunu yazdık. İki faktöriyeller götürdüğü için buraya yazmadık. Tamam mı arkadaşlar?
+
+155
+00:29:28,660 --> 00:29:48,080
+Sonra, ta ki eninci mertebe türevin, eksi bir üzeri n, tamam mı? Çarpı n faktöriyel, bölü x üzeri n artı bir çarpı, x eksi 2'nin eninci kuvveti bölü n faktöriyel, gene n faktöriyeller gitmiş oldu. Bakın şuradan, bu kaldı.
+
+156
+00:29:49,780 --> 00:29:53,180
+İşte bunu da toplam sembolüyle, kısaca ifade edersek.
+
+157
+00:29:53,587 --> 00:29:59,987
+1 bölü 2 parantezinde, eksi, x eksi 2 bölü 2'nin en eksi birinci kuvveti.
+
+158
+00:30:00,647 --> 00:30:04,087
+İşte bu da bizim bildiğimiz bir geometrik seri değil mi arkadaşlar?
+
+159
+00:30:04,852 --> 00:30:13,072
+Bu A'sı, bu da bizim R. Yani şu ifadeyi, 1 bölü 2 parantezini alarak düzenledik, şu hale getirmiş olduk.
+
+160
+00:30:13,152 --> 00:30:23,372
+Aa, dedik ki biz de bunu tanıdığımız bir seri, geometrik seridir. A'sı nedir? 1 bölü 2'dir. R'si de, eksi, x eksisi, 2 bölü 2'dir.
+
+161
+00:30:23,923 --> 00:30:31,503
+Öyle değil miydi? En eşitli birden sonsuza kadar A çarpı R üzeri N-1 şeklindeki serilere biz geometrik seri diyorduk.
+
+162
+00:30:31,643 --> 00:30:38,623
+A sı sıfırdan farklı, yakınsak olabilmesi için. Mutlak değer R de birden küçük olmalı, yakınsak olabilmesi için.
+
+163
+00:30:39,123 --> 00:30:46,883
+Evet, o zaman A'yı bulduk, R'yi de bulduk. Ne yapmalıyım? Mutlak değer R'ye bakıyorum. Bakın şurada.
+
+164
+00:30:47,700 --> 00:31:10,339
+eksi mutlak değerli için artı çıktı. Yani x eksi 2 bölü 2 küçük, yakınsak olabilmesi için 1 olmalı. Bunu da düzenlersek arkadaşlar, şurada bakın, ne olur? Eksi 1 ile artı 1 arasında diye yazarım. Eksi 2 ile artı 2 aralığındadır. Eksi yalnız bırakırsak 0 ile 4 arasında. Yani şurada bakın, şu.
+
+165
+00:31:11,827 --> 00:31:32,768
+Eksi 2 ile artı 2 arasında her tarafı 2'yi eklersek, ne olur? 0 küçük x küçük 4 değerleri için seri ne olacaktır? Nereye yakınacaktır? Toplamını da bulmam gerekir. Toplamı da neydi? A bölü 1 eksi R'den. A'sı biliniyor. R'si de şuydu. Dikkat ediyoruz. Eksi şu ifade.
+
+166
+00:31:39,827 --> 00:31:57,448
+1 bölü x'e gidecek. İşte ne yaptık bakın, verilen bu fonksiyonu iki noktasında seriye açtık. Bu seriye baktık, bir geometrik seri, yani bulduğumuz bu seri toplamı da 1 bölü x olduğuna göre, yani 1 bölü x'e yakınsak diyeceğiz.
+
+167
+00:31:58,291 --> 00:32:15,331
+Taylor serisi, yakınsaklık aralığı da budur. 0 ile 4 aralığında verilen bu seri, 1 bölü x'e yakınsa. Yukarıda da dedi ki, her zaman bulamayabiliriz, hangi fonksiyonu yakınsadığını. İşte bulunduğunda da zaten ona göre sorusunu soracaktır.
+
+168
+00:32:17,831 --> 00:32:21,372
+Evet, var mı bunda anlaşılmayan arkadaşlar?
+
+169
+00:32:22,963 --> 00:32:46,344
+Ne yaptık? Seriye açtık, düzenledik, karşımıza bildiğimiz bir seri çıktı, geometrik seri. Oradan da zaten bildiklerimizi uyguladık, toplamını bulduk. O halde ne dedik? Verilen şu serinin toplamı ne oldu? 1 bölü x, yani seri 1 bölü x'e yakınsak oldu. Aralığı da zaten hesapladık, 0 ile 4 diye söyledik. Şimdi yaklaşık değerde de kullanabiliriz dedik, Taylor serilerini.
+
+170
+00:32:46,799 --> 00:32:55,980
+Bizden istenen 3. kökten 1.2 için 2. mertebe Taylor polinomunu kullanarak yaklaşık değer bulunuz.
+
+171
+00:32:55,980 --> 00:33:04,899
+Burada kendisi vermiş, bazen vermezse ben tabii ki eninci mertebeye kadar onu hesaplamam, çok kolay değil. Bir yerden keselim, yaklaşık olarak hesapladım diyeceğim.
+
+172
+00:33:05,019 --> 00:33:14,799
+Burada ne diyorsa ona göre hesaplayacağız. İki tane terim almış, 2. mertebe türeve kadar hesaplayın diyor. Bir tane daha ekleseydim, bir tane daha ekleseydim.
+
+173
+00:33:14,799 --> 00:33:42,799
+Tabii ki gerçek değere daha çok yaklaşmış olacaktım. Onun için dediklerini uygulayalım. Şimdi burada nokta verilmiş bana. Bu noktanın yaklaşık değerini bul diyor. O halde ne yapmalıyım? Taylor seri polinomunu kullanacaksam bana fonksiyon lazım. O zaman benim fonksiyonum ne olsun buna uygun? Üçüncü kökten x olur. Bir tane de nokta almam gerekir. 1.2'yi en yakın noktada ne olur? 1 olur. Yani düzgün hesaplayabilmem için. O zaman...
+
+174
+00:33:42,799 --> 00:34:09,079
+O zaman, önce benim ne yapmam gerekiyor? Verilen fonksiyonun bir noktasındaki Taylor polinomunu yazmam gerekiyor. O da ikinci mertebeye kadar. O zaman iki kez türeve ihtiyacım var. Önce verilen fonksiyonun birdeki değeri nedir? Birdir. Türevini alırsak bunun, x üzeri bir bölü işte yazarsam, üst başa gelecek, üstü biraz alacak değil mi? Onu da nasıl yazarım? Bir bölü üç çarpı üçüncü kökten.
+
+175
+00:34:09,715 --> 00:34:11,175
+x'in karesi olur.
+
+176
+00:34:12,211 --> 00:34:38,971
+İkinci mertebe türevi gene yazmak istersek, buradan zor gelirse x üzeri eksi 2 bölü 3 diye yazın arkadaşlar. Tamam mı? O da ne olur? Bakın üst başa geldi. Eksi 2 bölü 9. Üstünü bir artırız. Eksintirsek. Eksi 5 bölü 3 olur. Bu da ikinci mertebe türevimizin. Bir de neye ihtiyacın var? Birdeki değerine ihtiyacın var. Yerine yazarsam eksi 2 bölü 9. İşte fonksiyonun birdeki değeri 1.
+
+177
+00:34:39,376 --> 00:34:49,516
+Birinci mertebe türevinin birdeki değeri, 1 bölü 3. Bu kadar istedi. Daha isterse bir tane daha alırsın, buraya yazabilirsin. O zaman getirip yerine yazalım.
+
+178
+00:34:50,276 --> 00:35:01,716
+FX fonksiyonu, yaklaşık olarak yazacağım. Çünkü eşit değil. Çünkü iki terim aldığımız için, yani ikinci mertebe türeviye kadar aldığımız için, o zaman P2 diyorum.
+
+179
+00:35:01,716 --> 00:35:03,136
+P2 X.
+
+180
+00:35:03,987 --> 00:35:28,827
+Yazalım. Fonksiyonun birdeki değeri 1 artı, ben x polinomunu hatırlayalım. Ne gelecek? Fonksiyonun birinci mertebe türevinin birdeki değeri 1 bölü çarpı, x eksi 1 bölü 1 faktör. Yani yazmaya gerek yok. Sonra ikinci mertebe türevin birdeki değeri eksi 2 bölü 9.
+
+181
+00:35:29,907 --> 00:35:48,728
+Bölü 2! çarpı x-1'in karesi. Bir tane daha yazmış olsaydım, 3. mertebe türevin 1'deki değeri diyecektim. Bölü 3! çarpı x-1'in kübü diyecektik. Tamam mı? Bu. İşte 2. mertebe Taylor polinomumu yazmış oldum.
+
+182
+00:35:49,204 --> 00:36:03,844
+Bana neyi soruyor arkadaşlar? 1.2'nin değerini soruyor. O zaman x gördüğüm yere 1.2 yazacağım. Bu da yaklaşık olarak diyoruz ki, polinom P2 1.2, x gördüğüm yere 1.2 yazacağız.
+
+183
+00:36:04,603 --> 00:36:10,123
+x'e eksi 1'i nasıl yazdık? Bizim Taylor polinomumuza gidelim yukarıda hemen hızlıca.
+
+184
+00:36:14,579 --> 00:36:33,880
+Bakın, Taylor polinomum değil mi arkadaşlar? Ben fonksiyonumu buldum. Belirledim. Yani 3. kökten x dedim. Tamam mı? Noktayı da belirledim. A'da 1'di. O zaman önce benim verilen fonksiyonu bir noktasındaki Taylor polinomunu yazdım. Şuradan da kes diyor bana. 2'ye kadar. Tamam mı?
+
+185
+00:36:34,996 --> 00:36:48,155
+Ay bir seçtik tabii, öyle karar verdik. Dedik ki fonksiyonum ne olsun? Üçüncü kökten kök x olsun. 1.2'ye en yakın değer 1 olur. 2 alamam çok uzak olmuş olur. Tamam mı?
+
+186
+00:36:48,788 --> 00:37:10,227
+Evet. Onun için bu formülde yazdım işte. Ne dedik? F'in birdeki değerini bir bulduk. Türevini ne bulmuştuk? Bir bölü üç müydü? Neyse önemli değil. X eksi bir dedim hatırlamıyorum. İkinci mertebe türevini buldum. Bölü iki faktörün X eksi birin karesi. Buradan kestim. Çünkü öyle istedi. Bir tane daha istese bir tane daha yazacaktım. Tamam mı? Dönelim şimdi sorumuza.
+
+187
+00:37:12,980 --> 00:37:40,320
+İşte bakın, ilk örnek olunca ben kafanız karıştı. Bunun yaklaşık değerini bul diyor. Bana şey, polinomu, Taylor'u kullanacaksam fonksiyon olmalı, bir de nokta. E buna uygun fonksiyon ne dedim? Üçüncü kökten x olsun. E noktaya en yakın noktada bir alacağım. İki alırsam çok uzaklaşmış olurum. En yakın noktam birdir. Yani bu fonksiyonun önce bir noktasındaki Taylor polinomunu yazdım. İkinci mertebeye kadar olan yazdım. İşte şu.
+
+188
+00:37:41,268 --> 00:37:52,467
+Burada da diyor ki bu noktayı hesapladım. Orada da x gördüğüm yere 1.2'yi yazarsak, işte klasik çarpma, bölme, 1.0.62 olarak değerini bulmuş olduk.
+
+189
+00:37:52,827 --> 00:37:57,788
+Dediğim gibi ne kadar çok terim eklersek gerçek değere o kadar çok yaklaşmış olacağız.
+
+190
+00:37:59,635 --> 00:38:13,416
+Evet, şimdi bir iki örneğim daha var. Sinüsün de Elen fonksiyonlarının, Taylor serilerine ihtiyacımız var. Onlara özet yazmadan şuradan görmenizi istiyorum nasıl yaptığını.
+
+191
+00:38:20,916 --> 00:38:36,836
+Evet, şimdi diyelim ki fonksiyonumuz, yani Sinüs'ün, Taylor serisini biraz sonra da zaten özet olarak vereceğim ama buradan da tekrar görelim. Sinüs x'in x eşittir 0'daki Taylor serisi ve Taylor polinomunu yazalım.
+
+192
+00:38:38,099 --> 00:39:06,099
+Bunu sıfır vermeliydi arkadaşlar. Sinusix'in Taylor serisini yazın derdi. Ben anlardım nokta vermediğine göre ne yapacaktım? Maclaurin serisi olarak yazacağım. Bakın formülde buraya yazdım. Maclaurin serisi demeyi istedik. Yani fonksiyonun sıfırdaki değerini bulacağım. Türevinin sıfırdaki değeri, çarpı x, artı ikinci mertebe türevin sıfırdaki değeri. Şurada bir faktörlerimiz var. Bir olduğu için yazmamışız. Bu şekilde devam edecek. Bakın burada benim yapmam gereken...
+
+193
+00:39:06,099 --> 00:39:10,179
+Fonksiyonda ve türevlerinde sıfırları yazarak bulmaya çalışalım.
+
+194
+00:39:10,359 --> 00:39:12,859
+Fonksiyonun sıfırdaki değeri ne olur? Sıfır olur.
+
+195
+00:39:13,259 --> 00:39:17,599
+Birinci mertebe türevim kosünüs x'dir. Bunun sıfırdaki değeri birdir.
+
+196
+00:39:18,000 --> 00:39:23,339
+İkinci mertebe türevi, kosünüsün türevi eksi sinüstür. Bunun sıfırdaki değeri sıfır gelecek.
+
+197
+00:39:23,819 --> 00:39:30,299
+Üçüncü mertebe türevim ne gelir? Eksi kosünüs x'dir. Bunun sıfırdaki değeri de eksi birdir.
+
+198
+00:39:30,299 --> 00:39:34,099
+İşte burada da dediğim gibi hiç bunu tahmin etmeden de...
+
+199
+00:39:34,099 --> 00:39:59,139
+Seriye getip yazabilirdiniz ama burada tahmin edilebildiği için dikkat ederseniz, çift kuvvetlerinde sıfır gelmiş, teklerde artı eksi bir gider. O zaman çift kuvvetlerini yazalım. Üzeri iki en, iki en mertebe türev olsun, eşittir, eksi bir üzeri. Yani onlar da çiftlerde sinüs gidiyor değil mi? Eksi artıları da var önlerinde tabii ki.
+
+200
+00:40:00,000 --> 00:40:26,559
+F üzeri n sinüs x demiş olalım. Bunun da sıfırdaki değeri sıfırdır. Tek kuvvetlerinde de kosünüs ve önünde eksi artı işaretimiz var. Tek kuvveti de ne olsun? F üzeri parantez içinde 2n artı 1 x diye yazmış olalım. Eksi 1 üzeri n çarpı kosünüs x. Bunun da değeri ne olacaktır? Artı eksi 1 diye gider. Onu da eksi 1 üzeri n diye yazmış olalım. Şimdi getirip şurada yerine yazıyorum bakın. Sinüs x serisi dedim.
+
+201
+00:40:28,000 --> 00:40:54,059
+0'daki değerini ne bulmuşuz? 0. Şurada türev yazmışım arkadaşlar. Şu türev işareti olmayacak. Fonksiyonu 0'daki değeri 0. Tamam mı? O gitti. Ne gelecek? Türevi 1 gelecek. X gelir. Sonra ikinci mertebe türevim 0 yazmıyorum. Üçüncü mertebe türevim x küp bölü 3 faktör yer geliyor.
+
+202
+00:40:54,543 --> 00:40:56,823
+Dördüncü mertbe türev.
+
+203
+00:40:57,427 --> 00:41:05,567
+0 olacak, 5. mertebe türevin 1 gelecek, x üzeri 5 bölü 5 faktörü yani, diye bu şekilde yazarız.
+
+204
+00:41:05,947 --> 00:41:10,687
+Dediğim gibi, yani sen şurada zaten bunları yazdığın için buraya getirip de oradan yazabilirsin.
+
+205
+00:41:10,887 --> 00:41:16,167
+İşte, eksi 1 üzeri n diyeceksin, eninci mertebe türevi gidip yerine yazdığında ne olacak?
+
+206
+00:41:16,647 --> 00:41:20,547
+x üzeri 2'yen artı 1 bölü, 2'yen artı 1 faktörü yani şeklinde kalacak.
+
+207
+00:41:20,547 --> 00:41:25,427
+Yani ben sınıfta da öğrencilere anlattığımda, şunları hiç yazmıyorum.
+
+208
+00:41:25,427 --> 00:41:42,287
+Birkaç terim türev alıp, getirip seride yerine yazarım. Örneğin şuraya kadar yazdım. Burada ben bunu tahmin edebilirim. Dikkat ederseniz bakın, x'in tek kuvvetleri var. O zaman diyorum ki, tek kuvvet ne olması gerekir? x üzeri 2n artı, 2n çift olur, n artı kesinlikle tektir değil mi?
+
+209
+00:41:43,059 --> 00:42:06,199
+Bu. x üzeri, 2n artı 1. Dikkat ederseniz, Paydalı'da hep bunun derecesinin faktör yerleri var. Yani 2n artı 1, önünde de artı eksi 1 gittiğine göre, eksi 1. Deneyerek bulabilirsin. İşte burada 0 verdiğimde bakın, neyi elde etmeliyim? x'i elde etmeliyim. 0 verirsem, ön işaretim artı gelir. x bölü x.
+
+210
+00:42:07,059 --> 00:42:12,639
+Sadece eksi. Bir verdiğimde de şunu elde etmeliyim. Bir olursa ön işaretim eksi gelir.
+
+211
+00:42:13,119 --> 00:42:41,039
+x küp bölü, 3 faktöre. Onun için, hani bunu yazmak için çok da uğraşmaya gerek yok. Ama yazabiliyorsan, tahmin ediyorsan, zaten yazılabilir. Yani çok da zor değil ama dediğim gibi ben bunu sınıfta anlattığımda çocuklara birkaç terim, hadi yazın seride tahmin edelim, bunun en üst terimi ne olur? Ki kolayca tahmin edilebilir. Yani her x için bu yakınsak bir seridir. Polinomda dediğine göre, polinomda yaz dedi, o da nedir? Sonluk.
+
+212
+00:42:41,119 --> 00:42:58,599
+Baksınlar şu. Tamam mı arkadaşlar? Evet. Bunu da şimdi özet olarak hepsini geri dönüp orada göreceğiz. Şimdi gelelim lnx fonksiyonunun a eşittir 1'de n. derecelin Taylor polinomunu yazınız diye.
+
+213
+00:43:00,307 --> 00:43:08,748
+Peki, bunun nokta vermeden, yani 0 civarında seri açabilir miydim arkadaşlar? LNX'i A eşittir 0 civarında.
+
+214
+00:43:12,179 --> 00:43:14,799
+Açabilir miydim Maclaren serisini, LNX'i?
+
+215
+00:43:18,291 --> 00:43:19,571
+Evet, soruyorum.
+
+216
+00:43:22,431 --> 00:43:24,891
+LNX, Maclaurin serisini açabilir miydim?
+
+217
+00:43:28,307 --> 00:43:39,307
+Açamam değil mi? Elen sıfır sonsuz. Onun için tamam mı? Evet şimdi ne yapalım? Elen X serisine de ihtiyacımız olacağı için burada görelim. O zaman...
+
+218
+00:43:39,956 --> 00:43:48,755
+Yine, Taylor polinomunu sorduğuna göre, P'n x'de göstermiştik. Formülü tekrar hatırlamak için, hep parantez isteri hatırlatmak arkadaşlar. Tamam mı? Ne diyeceğim?
+
+219
+00:43:49,135 --> 00:43:55,076
+Fonksiyonun a'daki değeri, artı, türevinin a'daki değeri bölü 1, faktörel çarpı x, x a.
+
+220
+00:43:55,175 --> 00:43:59,896
+İkinci mertebe türevinin a'daki değeri bölü 2, faktörel çarpı x, x a'nın karesi.
+
+221
+00:43:59,896 --> 00:44:07,936
+Böyle devam edersek, ta ki, eninci mertebe türevinin a'daki değeri bölü n, faktörel çarpı x, x a üzeri n.
+
+222
+00:44:07,956 --> 00:44:34,316
+İşte Taylor polinomumuz budur. Seri deseydi artı nokta nokta gidecektik. O zaman benim yapmam gereken fonksiyonun birdeki değeri değil mi? Sıfır. Getirip yerine yazacağım. Türevi nedir bunun diyelim? 1 bölü x'dir. Bunun birdeki değeri de 1 olur. İşte buraya getireceğim. 1 çarpı x eksi 1 diyeceğim. Artı ikinci mertebe. Onları da hemen şuradan hızlıca türevlerinde alalım bakın.
+
+223
+00:44:35,284 --> 00:44:52,003
+Fonksiyonum lnx noktam 1, fonksiyonum birdeki değeri 0 dedim. Türevi lnx'in türevi 1 bölü x'dir. Birdeki değeri 1'dir. İkinci mertebe türevim ne gelir? Eksi 1 bölü x'in karesidir. Bunun birdeki değeri eksi 1'dir.
+
+224
+00:44:53,164 --> 00:45:02,003
+İkinci mertebe türevi şuradan alırsak, bölüm var. Payın türevi ya da al üzerini x üzeri eksi 2 dersen, başa gelir. 2 çarpı.
+
+225
+00:45:02,771 --> 00:45:08,492
+x üzeri eksi 3 olur. Yani 2 bölü x küptür. Bunun birdeki değeri nedir? 2'dir.
+
+226
+00:45:09,351 --> 00:45:18,891
+Dördüncü mertebe türevimiz nedir? Buradan eksi 6 bölü x üzeri 4. Yani şunu al yukarıya bakın. 2 çarpı x üzeri eksi 3 dersin.
+
+227
+00:45:19,092 --> 00:45:27,831
+Türevi ne olur? Üst başa geldi. Eksi 6 çarpı x üzeri eksi 4 dersin. Onu da paydaya atarsın. Şöyle. Bunun da birdeki değeri eksi 6'dır.
+
+228
+00:45:28,275 --> 00:45:43,275
+Bu şekilde devam edilirse bakın, tahmin edilebilir eninci mertebe türevi. Dediğim gibi etmeyebilirsin de. Burada edildiği için yazın, hani siz de görmüş olun diye. Şöyle yazmak istedim. Birle en arasında olmak üzere.
+
+229
+00:45:43,275 --> 00:45:54,076
+F'in, k'nıncı mertebe türevin dedik. Eksi bir üzeri k eksi bir çarpı k eksi bir faktörel bölü x üzeri k'dır. Bunun da birdeki değeri.
+
+230
+00:45:54,527 --> 00:45:57,427
+Bu şekildedir diyeceğiz. Tamam mı? Yazdık.
+
+231
+00:45:57,628 --> 00:46:00,387
+Şimdi getirip polinomu sorduğuna göre, pnx dedik.
+
+232
+00:46:00,887 --> 00:46:03,628
+Fonksiyonun birdeki değeri 1'di.
+
+233
+00:46:06,168 --> 00:46:07,007
+Bir saniye.
+
+234
+00:46:08,608 --> 00:46:10,827
+Pardon, birdeki değer 0. Doğru.
+
+235
+00:46:11,568 --> 00:46:15,248
+Türevinin birdeki değeri 1'miş. O zaman x-1 gelecek.
+
+236
+00:46:16,007 --> 00:46:19,208
+İkinci mertebe türevide 1 bölü 2 faktörü geldi.
+
+237
+00:46:19,887 --> 00:46:21,807
+Pardon, özür.
+
+238
+00:46:22,356 --> 00:46:45,896
+İkinci mertebe türevi eksi 1'miş arkadaşlar. Eksi 1 bölü 2 faktöriyel, formülden gelen 2 faktöriyel çarpı x eksi 1'in karesi diyeceğim. Sonra, üçüncü mertebe türevim nedir? 2 bölü 3 faktöriyel, üçüncü terimde olduğum için 3 faktöriyel çarpı x eksi 1'in kübü diyeceğim. Dördüncü mertebe türevi bulmuşum. Eksi 6 çarpı, tamam mı?
+
+239
+00:46:46,420 --> 00:47:08,360
+4. terimdeyim. 4! çarpı x-1'in 4. kuvveti. Şimdi bunu tahmin etmeye çalışacağım. Bilmiyormuşum gibi. Tamam mı? x-1 diyorum. Burada ne gelir? x-1'in karesi bölü 2 dedik. Bunu düzenlersem, 3 kalır. 6'dan. x-1'in kübü bölü 3. Şuradan da düzenlersek.
+
+240
+00:47:09,012 --> 00:47:23,412
+ne kalır sadeleşirse, x eksi birin dördüncü kuvveti bölü 4 kalır. İşte böyle devam edilirse dikkat ederseniz, x eksi birin birinci kuvveti ikinci üçüncü, yani x eksi bir üzeri n derim.
+
+241
+00:47:23,923 --> 00:47:29,344
+Gerçi yazdım, doğrudan yazabilirim burada ama diyelim ki buradan tahmin etmeye çalışıyorum.
+
+242
+00:47:29,463 --> 00:47:38,884
+Bakın, paydaları da 1, 2, 3, 4 diye gidiyor. O da engelde. Önündeki işaretle artı eksi 1 olarak gittiğine göre işte böyle de doğrudan yazabilirim arkadaşlar.
+
+243
+00:47:39,163 --> 00:47:45,643
+Hani en ince mertebe türevleri bulmadan da birkaç terim yazarak serinin nasıl gittiğini tahmin edebiliriz.
+
+244
+00:47:45,643 --> 00:47:51,463
+İşte LNX'in bir noktası civarındaki polinomu nedir? Budur diyeceğiz.
+
+245
+00:47:53,684 --> 00:48:20,124
+Tamam mı? Evet, şimdi gelelim, fx eşittir, ln, 1 artı x fonksiyonunun, Maclaurin serisini yazınız diyor bana. Yani bakın, Maclaurin serisi dediğine göre, a'sı nedir? Sıfırdır. Hadi ben 1-2 dakika bekliyorum, siz seriyi yazmaya çalışın arkadaşlar. Birkaç terim türev alıp, formüle yerine yazıp, seri nasıl gidiyor? Bir bakın bakalım.
+
+246
+00:48:20,755 --> 00:48:21,735
+Hadi bekliyorum.
+
+247
+00:48:23,775 --> 00:48:26,195
+2 dakika veriyorum yazmanız için.
+
+248
+00:48:27,235 --> 00:48:31,536
+Fonksiyonu 0'daki değeri yerine yazarsam, ln1, o da nedir? 0 olur.
+
+249
+00:48:33,635 --> 00:48:39,195
+Türevini alın. 2. 3. 4. mertebeye kadar türev alıp, hatta 2-3 tane bile yetebilir.
+
+250
+00:50:10,516 --> 00:50:11,876
+Evet, yazıyor muyuz?
+
+251
+00:50:21,268 --> 00:50:47,867
+Evet, dahi buraya yazamıyorsunuz ama uğraşmanız benim için önemli arkadaşlar. Hani hepsini buraya yazmak zor tabii ki seri. Evet, şimdi gelelim. Bunu seri aç, elen 1 artı x'i seri açmak istiyoruz. Tamam mı? Fonksiyonun, [öğrenci] arkadaşımız da uğraşmış. Tamam, teşekkür ederim uğraştığınız için. Evet, şimdi buradan kontrol edelim. Önce ne dedik? Fonksiyonun sıfırdaki değerini.
+
+252
+00:50:48,288 --> 00:51:01,927
+Benim fonksiyonum şu, nedir? 0'dır, LM1, 0. Türevini alıyorum, LM1 artı x'in türevine gelir, 1 bölü 1 artı x gelir. Bunun sıfırdaki değeri 1'dir. Sonra ikinci mertebe türevimi alıyorum, payın türevi 0 çarpı payda.
+
+253
+00:51:02,483 --> 00:51:07,743
+Değil mi? Eksi 1 çarpı, paydan türevi de bildirir. Eksi 1 bölü 1 artı x'in karesi.
+
+254
+00:51:08,003 --> 00:51:14,923
+Bunu kolay türevin alabilmek için, bunu şöyle yazabilirsiniz. 1 artı x üzeri eksi 1 diye yazıp, kolayca türev alabilirsiniz arkadaşlar.
+
+255
+00:51:15,103 --> 00:51:19,083
+Nasıl istiyorsanız. Bunun da gene sıfırdaki değeri ne gelir? Eksi 1 gelir.
+
+256
+00:51:19,723 --> 00:51:25,963
+Üçüncü mertebe türevimizi almışız buradan. Bu da 2 bölü 1 artı x'in kübü gelecektir.
+
+257
+00:51:25,963 --> 00:51:28,623
+Yani şunu ben şöyle düşündüm. Eksi.
+
+258
+00:51:29,119 --> 00:51:40,239
+Parantez içinde 1 artı x üzeri eksi 2. Üst başa gelir, artı 2 olur. Üstü biraz alır, eksi 3 gelir. İçinin türevinden de 1 olduğu için böylece doğrudan böyle kolay yazabiliriz.
+
+259
+00:51:40,499 --> 00:51:43,759
+Bunun da sıfırdaki değeri nedir? 2'dir. Tamam mı?
+
+260
+00:51:44,079 --> 00:51:51,819
+Dördüncü mertebe türevi de gene aldığımızda o zaman ne gelir? Eksi 6 bölü 1 artı x'in dördüncü kuvveti gelecektir.
+
+261
+00:51:51,819 --> 00:51:57,119
+Bunu yukarıda düşündüğümde 2 çarpı 1 artı x'in üzeri eksi 3 diye düşündüm. Üst başa.
+
+262
+00:51:57,119 --> 00:52:24,399
+geldi. Tamam mı? Eksi 6 üstü bir azaldı. 1 artı x'in karesi bölü. Paydanın karesinden sadeleşirse bu kalır. Bunun da sıfırdaki değeri eksi 6'dır. Beşinci mertebe türevi de 24 olarak bulmuşuz. Bakın tahmin edin. Bunu getirip ne yapıyorum? Seride yerine yazıyorum. Elen 1 artı x. Fonksiyonun formülümüzü yukarıda yazmıştık zaten. Yani formülümüz şu. Biraz yukarıda yazdığımı hatırlıyorum.
+
+263
+00:52:28,115 --> 00:52:35,016
+Şu, tabii ki bu nokta nokta serisini sorduğuna göre koordinatını sormuyor bana. Tamam mı?
+
+264
+00:52:35,443 --> 00:52:41,143
+O zaman getirip orada, pardon, Maclaurin serisini soruyor. Onu zaten yukarıda hazır.
+
+265
+00:52:41,683 --> 00:52:49,283
+Yazdık diyelim. Fonksiyonun sıfırdaki değeri sıfır dedik. Sonra türevinin sıfırdaki değeri ne bulmuşuz?
+
+266
+00:52:49,283 --> 00:52:59,543
+1 bölü 1 faktörel çarpı x. Artı ikinci mertebe türevin sıfırdaki değeri eksi 1 bölü formülden gelen 2 faktörel çarpı x kare.
+
+267
+00:53:00,083 --> 00:53:02,563
+Üçüncü mertebe türevimiz nedir? 2.
+
+268
+00:53:03,315 --> 00:53:28,715
+Bölü formülden gelen 3 faktörelim var. x küp artı 4. mertebe türevim, eksi 6 bölü 4 faktörel, çarpı x üzeri 4. 5. mertebe türevim, 24 bölü 5 faktörel, x üzeri 5 artı nokta nokta gittik. Tamam mı? Şimdi bunları düzenleyelim. Şuradan x gelir. Buradan eksi x kare bölü 2 olur. Şunu 6, 3 kalsın. x küp bölü 3 gelsin.
+
+269
+00:53:29,460 --> 00:53:57,460
+Burada 24, 4 kalır sadeleşirse. X üzeri 4 bölü 4. Buradan da sadeleşirse, X üzeri 5 bölü 5. Bakın, bu kadar düzenledim. Şimdi buradan tahmin etmeye çalışıyoruz. Gene dikkat ederseniz, X'in birinci kuvveti ikinci vesaire. Yani X eninci terim ne olur? X üzeri N gelir. Paydası da bakın, ona uygun. Karesi ise 2, küp ise 3, N. Önünde de artı eksi işaretlerim var. Eksi bir üzere N.
+
+270
+00:53:57,460 --> 00:54:07,699
+1-1 diye yazdım, artı nokta nokta. Tamam. Bu. İşte burada n'i sıfırdan başlatamam. 1'den başlatacağım seri olarak yazmak istersen.
+
+271
+00:54:08,380 --> 00:54:17,539
+n'e 1 verirsem, bakın şunu elde etmek zorundayım. n'e 1 verdim, işaretim artı, x gelir. 2 vereceğim.
+
+272
+00:54:17,972 --> 00:54:26,592
+Tamam mı? X kare bölü 2 gelmeli. Ön işaretim eksi. İşte gerçekten bu serinin, Maclaurin seri açılımı budur diyeceğiz.
+
+273
+00:54:27,188 --> 00:54:42,327
+İşte yazdık zaten. Şimdi bunun arkadaşlar, seriyi açıp yakınsaklık aralığını da bulun diye bana sorabilir. Buraya ben doğrudan yazdım ama onu nasıl bulduğumu aşağıda parantez içinde görmenizi istiyorum.
+
+274
+00:54:42,327 --> 00:54:54,407
+Yani sorum şu aslında, işte verilen şu kuvvet serisinin yakınsaklık aralığını bulunuz. En geniş yakınsaklık aralığı nedir? Böyle bir kuvvet serisinin biz yakınsaklık aralığını nasıl buluyorduk?
+
+275
+00:54:55,188 --> 00:55:04,068
+kuralını uygulardık değil mi? Limit en son size giderken mutlak değer içinde, a n artı bir bölü a n. Şimdi bakın şunu bulmaya çalışacağız. Diyorum ki,
+
+276
+00:55:04,659 --> 00:55:18,139
+Şimdi ne yaptık? Seriye açtık. Toplam serinin genel terimini buldum. Bunun yakınsaklık aralığını bulmak istiyorum. Yani şöyle bir kuvvet serisinin yakınsaklık aralığı nedir? Onu bana sorduğunu varsayalım. Doğrudan yazmak istemedik.
+
+277
+00:55:18,139 --> 00:55:32,659
+Şimdi ne yaptık? Oran kuralını uygulayacaktık. Limit en solsıza giderken an artı bir bölü an yazalım. An dediğimiz ifademiz şu değil mi? Mutlak değeri de düşünürsem artık artı eksi birleri göz ardı edelim. Doğrudan yazmış.
+
+278
+00:55:32,659 --> 00:55:58,219
+Limit en sonsuza giderken, x üzeri n artı 1, a n artı 1 oluşturuyorum. Böyle n artı 1, bölü a n diyeceğim. Onu da ters çevirip çarptığımda n bölü x üzeri n. Şu. Bunu düzenleyelim bakalım. x üzeri n'ler gider düzenlediğimizde değil mi? Sade x kalır. Bir de n bölü n artı 1. Bakın şu. Bu da n'ler pozitif olduğuna göre mutlak değere gerek yok. Şu.
+
+279
+00:55:59,092 --> 00:56:13,971
+Şimdi bunun limitine bakıyorum. Payı polinom, paydası polinom, dereceleri aynısı, kat sayıların, yani şunun limiti ne olur? 1 olur arkadaşlar. Yani benim bu serinin yakınsaklık yarı çapını sorsaydı, 1 diyecektim değil mi?
+
+280
+00:56:15,155 --> 00:56:33,135
+Yani bunun yakınsak olmasını istiyoruz. Yani şuradan baktık, mutlak değer x, oran kuralına göre yakınsak olmasını istiyorum. Ne olmalı? Küçük 1 olmalı diyoruz. O halde buradan mutlak değer x küçük 1 ise bu nedir? Eksi 1 ile artı 1 aralığında seri mutlak yakınsaktır.
+
+281
+00:56:39,860 --> 00:57:01,100
+Özet edeyim mi? Bu kadar. Bir kuvvet serisinin yakınsaklık aralığını nasıl buluyorduk? Oran kuralını uyguladık. Geldik. Burada şu. Dedik ki seri eksi 1 ile artı 1 aralığında mutlak yakınsak. Acaba uçlarda yakınsaklık var mı? Onu nasıl bakıyorduk? İşte ilk serini eksi 1 yazıyorum seride. Çıkan seriyi inceleyeceğim. 1 yazarak inceleyeceğim.
+
+282
+00:57:01,460 --> 00:57:23,280
+Evet, şimdi ne yapıyorum? Verilen kuvvet serisinde x eşittir, eksi 1 de yakınsaklık var mı yok mu incelemek için x gördüğüm yere eksi 1 yazıyorum. Eksi 1 üzeri, bakın toplam, n eşit 1'den sonsuza kadar, eksi 1 üzeri n eksi 1, parantez, eksi 1 üzeri n, değil mi? Eksi yerine 1 yazdım. Pardon, eksi 1 yazdım. Böyle n.
+
+283
+00:57:23,764 --> 00:57:30,983
+E şimdi bu da ne olur? Eksi bir üzeri iki en, eksi bir değil midir? Bölü en. Eksi bir üzeri iki enler nedir? Hep pozitif değil midir?
+
+284
+00:57:31,699 --> 00:57:59,699
+Sadece eksi bir bölü en kalır. Eksi biri de toplamın dışına atabilirim. Neden? Çünkü sonsuz terimli serileri sabitle çarpmak karakterini değiştirmezdi değil mi? Baş tarafından terim eklemek, çıkarmak karakterini değiştirmezdi dedik. Onun için de ben böyle bir seri eksi bir ile çarptığımda karakteri değişmez. O yüzden onu dışında tuttum. Yani toplam birden sonsuza kadar bir bölü en serisi çıktığını varsayıyorum. Tamam mı? Bu da benim bildiğim meşhur.
+
+285
+00:57:59,699 --> 00:58:16,179
+Harmonik seridir diyorum. Bıraksaktır. Bu bıraksak da, eksiyle de çarpsam değişmez diyorum. O halde seri, eksi 1'de yakınsak olmadığı için eşitlik olmayacak. Tamam mı? Bakın burada yok eşitliği. Şimdi gelelim.
+
+286
+00:58:16,980 --> 00:58:34,540
+yazmışım şuraya harmonik olduğunu. Bir için kontrol ediyoruz arkadaşlar. Bir yazıyorum, iki seri mi? Ne olur? Bir bölü en gelir. Başında da eksi bir üzeri en, eksi birin var, bir bölü en. Bu da bakın, alternat seridir. İşaretleri artı eksi gittiği için bildiğimiz özel bir seri alternat seridir.
+
+287
+00:58:34,540 --> 00:58:44,480
+Bunu da yakınsaklığını nasıl inceliyorduk? Ya doğrudan bunun mutlak değerlerinden oluşan seriye bakarız örneğin. Bunun mutlak değerlerini aldığımda karşıma ne çıkar?
+
+288
+00:58:44,980 --> 00:58:50,480
+1 bölü n serisi çıkar değil mi? O da nedir? Harmoniktir, bıraksak bir şey diyemem.
+
+289
+00:58:52,040 --> 00:58:57,400
+İşte bu mutlak yakınsak mı, şartlı mı? Onun için ne yapmalıyım? Alternatif seri testini uygulamam gerekecek.
+
+290
+00:58:57,740 --> 00:59:05,120
+Alternatif seri testleri neydi? Her terim mutlak değerce azalıyor mu? Bir de en sonsuza giderken en inci terim sıfır mı?
+
+291
+00:59:05,120 --> 00:59:11,160
+İkisi de sağlanıyorsa seri yakınsak diyecektik. Tamam mı? Onu da bakalım şurada.
+
+292
+00:59:12,019 --> 00:59:28,060
+Bakın notlarımızda ne yapmıştık? An dediğimiz ifade burada bir bölen pozitiftir. Birinci şıkkımız tamam. İkide ne yapıyorduk? Her terim azalıyor mu? Gerçekten azalıyor. Yani şu eşitsizlik var. An artı bir küçük, an midir diye baktık. Bu da tamam.
+
+293
+00:59:28,440 --> 00:59:40,019
+Üçüncü olarak limit en solsıza giderken an yani limit en solsıza giderken bir bölen nedir? Sıfırdır. O zaman ne diyorum? Bu üçünden dolayı alternatif.
+
+294
+00:59:40,019 --> 01:00:07,080
+seri yakınsaktır. Bu yetiyor aslında benim için aralık. Ama acaba şartlı mı, mutlak mı diye soruyorsa ne yapmam gerekir? Bir şık daha ekliyoruz. Her terimi mutlak değerini aldım bakın. Ne oldu? Pozitif terimli bir seri çıktı. Bu da gene bizim bildiğimiz meşhur serimiz. Harmonik seri. Bu da ıraksaktır. O zaman alternatif seriye ne diyeceğim? Şartlı yakınsak seridir diyoruz. O halde yakınsaklık aralığımız.
+
+295
+01:00:07,860 --> 01:00:34,980
+Eksi 1 küçük x, küçük eşit 1 demeliyim. Bakın, bunun için şu dördüncü şık incelememe gerek yok ama görmeniz için yazdım. Yani bu yetiyor. Alternatif seri şartlarını sağladığı için seri yakınsaktır. Yani eşitlik var. İşte diyoruz ki, lnx'in, nerede yazdım? Şurada. Bakın, lnx'i seriye açtık. Yakınsaklık aralığı da budur.
+
+296
+01:00:35,443 --> 01:01:02,784
+Onun için bütün açtığımız serileri, yakınsaklar onu tek tek incelememiz gerekir ama bazen de oradan yazıyoruz. İşte burada da görmeniz için bu örneği yapmış oldum arkadaşlar. Tamam mı? Evet, ara verelim mi? Biraz dinleyelim. Var mı sorunuz burada anlaşılmayan? Kaç dakika ara verelim arkadaşlar? Evet.
+
+297
+01:01:03,251 --> 01:01:08,751
+10 dakika yeter mi? Tamam, 10 dakika, 10 gece buluşuyoruz.
+
+298
+01:10:58,996 --> 01:11:00,796
+Evet arkadaşlar, geldik mi?
+
+299
+01:11:09,716 --> 01:11:18,916
+Evet, bir ses verin. Tamam, o zaman devam edelim. Konumuza döndük tekrar. Aldığımız yerden. Bakın, sık kullanılan.
+
+300
+01:11:19,604 --> 01:11:32,684
+Maclaurin serileri dedik. Bunları özet olarak buraya yazdık. 1 bölü 1 eksi x zaten geometrik seriydi. Bunu incelemiştik. Yakınsaklık aralı eksi 1 artı 1 demiştik. 1 bölü 1 artı x vermiştik.
+
+301
+01:11:32,684 --> 01:11:47,444
+n eşittir sıfırdan sonsuza kadar eksi 1 üzeren çarpı x üzeri n şeklindeki seriydi. Bunun da yakınsaklık aralı eksi 1 artı 1 idi. Hatta bu seri bizim bildiğimiz önemli geometrik seri demiştik. Burada ben x yerine
+
+302
+01:11:47,604 --> 01:11:58,984
+eksi x yazarsam, 1 bölü 1 artı x serisini elde etmiş olurum. Onun da yakınsaklık aralığı değişmez değil mi? Türev almak, integral almak, bir sabitle çarpmak.
+
+303
+01:11:59,891 --> 01:12:23,431
+Yakınsaklık aralığını değiştirmez dedik. E üzeri x'i zaten biraz önce yazmıştık. Bunun da yakınsaklık aralığı, her x real değer için seri yakınsaktır. İşte bunu dediğim gibi, bazılarını doğrudan yazmış olduk ama isterseniz siz kendiniz de bulabilirsiniz. İşte bu benim bir kuvvet serimdir değil mi? Bunu yakınsaklık aralığını gene oran testiyle ben bulabilirim.
+
+304
+01:12:24,532 --> 01:12:48,395
+Bulursanız oradan da zaten görebilirsiniz. Bakın bazen uzun işlem yapmadan da R'yi bulabilirsiniz. Burada mutlak değer X küçük R deriz ya yakınsaklık aralığına. Burada R'yi nasıl bulursun? 1 bölü N faktörüeli. Limit N sonsuza giderken A'n artı 1 bölü A'n'den gidip bulabilirsiniz. Yani orada...
+
+305
+01:12:48,595 --> 01:13:03,956
+Nasıl bulunur? 1 bölü n faktöriyeli limitansı olsa giderken düzenlerseniz, 1 bölü n artı 1 faktöriyel, bölü 1 bölü n faktöriyel dediğinizde, ne olur onun limiti?
+
+306
+01:13:07,731 --> 01:13:35,731
+0 çıkar değil mi? Oradan da yakınsaklık yarı çapını ne bulursunuz? R bulursunuz diyelim. Evet, gene sinüs x'i de yazdık. Buraya verdik. Kosünüsü de yazdık arkadaşlar. Elen 1 artı x'i de biraz önce yazdık. Hatta inceledik hatırlarsanız. Tamam mı? Arktan jantı da geometrik seriyi kullanarak gene bulmuştuk onu da. İşte bu önemli seriler bunlar. Şimdi bunları kullanalım.
+
+307
+01:13:35,731 --> 01:13:52,111
+Anarak elementer integrelleri bazen çözeme, elementer olmayan integrellerde bu serileri kullanabiliriz. Belirsizlikleri giderebilmek için serileri kullanıyoruz. Onun için onlarla ilgili birkaç örnek vermek istiyorum. Bunlar aklımızda kalsın. Bilmiyorsak da hemen açarız seriyi.
+
+308
+01:13:52,771 --> 01:14:01,111
+Örneğin, bana şunu soruyor. E üzeri eksi x kare bölü 3'ün Maclaurin seri açılımını yazın diyor.
+
+309
+01:14:01,456 --> 01:14:19,976
+Şimdi ben diyorum ki biraz önce Maclaurin seri açılımı formülünü biliyorum. Benim fonksiyonum nedir? E üzeri eksi x kare bölü 3'tür. E bunu ne yapacağım? Türevlerini alacağım değil mi? Çok zahmetli. Ama ben bununla uğraşmak yerine e üzeri x'in seri açılımını biliyorum arkadaşlar şurada.
+
+310
+01:14:21,108 --> 01:14:49,108
+Burada e üzeri x'in seri açılımı biliyorsam, x gördüğüm yere de ne yaparım? E üzeri x, eksi x kare bölü 3'ü yazarak seriyi açmış olurum. O yüzden işte Maclaurin, işte Taylor serilerini verdik. Buralarda bizim işimize yarayacak. Yani kalkıp da ben bunun işte 3. 4. mertebe türevini almam çok zahmetli değil mi? Onun için hiç gerek yok. Ne yapıyorum? E üzeri x'in seri açılımını biliyorum. X gördüğüm yere eksi x kare bölü 3'ü yazarak seriyi açmış olurum.
+
+311
+01:14:49,108 --> 01:15:01,788
+e üzeri x'in seri açılımı yukarıda. Buraya da hemen aldık. Bakın şu. Ne yapıyorum? x gördüğüm yere e üzeri x kare bölü 3'ü yazıyorum.
+
+312
+01:15:02,608 --> 01:15:08,987
+İşte yazarsak eksi x kare bölü 3'ün eninci kuvveti çarpı 1 bölü m faktörü.
+
+313
+01:15:10,323 --> 01:15:18,683
+Bunu da düzenlersek, eksi 1 üzeri, eni ayrı tutalım. X üzeri 2 en bölü, 3 üzeri en çarpı en faktörü.
+
+314
+01:15:18,963 --> 01:15:25,663
+İşte verilen şu fonksiyonun seri açılımı budur. Ya da açık yazarsak bu şekildedir.
+
+315
+01:15:25,983 --> 01:15:31,703
+Gene bunun da yakınsaklık aralığı nedir? Her x real değer için bu seri yakınsaklık diyoruz.
+
+316
+01:15:32,543 --> 01:15:40,703
+İşte ne kadar kolay. Yani E üzeri x'i biliyorsam, ne olursa olsun E'li ifadenin seri açılımını doğrudan yazabilirim.
+
+317
+01:15:42,264 --> 01:15:43,904
+Evet, devam edelim.
+
+318
+01:15:46,623 --> 01:15:52,683
+İşte, sinüs x karenin Maclaurin serisinin soruyu bana.
+
+319
+01:15:54,676 --> 01:15:59,695
+Bir de genel terimini, yani seriyi açıp genel terimini buluruz diyor arkadaşlar.
+
+320
+01:16:00,276 --> 01:16:05,176
+Peki, sinüs x karenin seri açılımını nasıl bulacağım? Nereden yararlanmam gerekir?
+
+321
+01:16:05,376 --> 01:16:12,596
+Yani kalkıp da bunu fx eşittir sinüs x kare deyip de işte birkaç mertebe türevini almak çok zahmetli değil mi?
+
+322
+01:16:13,076 --> 01:16:18,776
+Türevini alacağım, işte x gördüğüm yerlere 0 yazarak kat sayıları bulup getirip formülü de yerine yazacağım.
+
+323
+01:16:18,776 --> 01:16:22,636
+Ama ona gerek var mı? Yukarıda verdiğimiz 7-8.
+
+324
+01:16:22,676 --> 01:16:33,716
+bir tane serileri kullanarak kolayca açabiliriz değil mi? Ne yapabilirim sizce? Sinüs x karenin Maclaurin seri açılımını nasıl yazacağım?
+
+325
+01:16:36,656 --> 01:16:45,436
+Evet, size soruyorum. Sinüs kare yerine ne yazabilirim? Yarım açı formüllerini hatırlarsın.
+
+326
+01:16:48,372 --> 01:16:52,052
+1 eksi 2x bölü 2 değil mi? Evet.
+
+327
+01:16:53,772 --> 01:17:01,452
+Şimdi sinüs x kare yerine 1 bölü 2, 1 eksi cos 2x'i yazdım. İşim kolay. Tamam mı?
+
+328
+01:17:01,592 --> 01:17:06,632
+Bir tek neyi bilmeliyim arkadaşlar? Cos x'in seri açılımı. Bunlar zaten problem yok burada.
+
+329
+01:17:06,971 --> 01:17:13,652
+Cos x'in seri açılımını da bilirim. Neden? Cos x'in seri açılımını biliyorum şundan. Bakın şu.
+
+330
+01:17:14,079 --> 01:17:23,039
+Burada da x yerine 2x yazarsam, kosinus x'i seriye açmış olurum, kosinus 2x'i. Tamam mı arkadaşlar? İşte buradan yazmaya çalışalım.
+
+331
+01:17:25,076 --> 01:17:53,055
+1 bölü 2, aç parantez, 1 burada. Ne yapıyorum? Kosinus x'i hatırlayın bakalım. 1 eksi x kare bölü 2 faktöriyel diye giderdi. Çünkü çift kuvvetlerine göre gider. Bakın bir daha bakın isterseniz hatırlamak açısından. Ne yapıyoruz? x gördüğüm yere 2x'i yazıyorum. Aklımda da kalır aslında. Çünkü x'in çift kuvvetlerine göre gidiyor. 1 eksi x'in karesi. Ne yapıyorum? x yerine 2x yazıyorum. 1 eksi.
+
+332
+01:17:53,076 --> 01:18:03,055
+2x'in karesi bölü 2 faktörel, artı 2x'in dördüncü kuvveti bölü 4 faktörel, eksi 2x'in altıncı kuvveti bölü 6 faktörel diye yazmalıyım.
+
+333
+01:18:03,355 --> 01:18:07,435
+Tutun aklınızda, yapacak bir şeyimiz yok arkadaşlar. Şurada yazalım.
+
+334
+01:18:08,431 --> 01:18:32,511
+1 bölü 2'yi yazdık. 1 zaten vardı. Bunu da eksiyle çarparak, yani orada artı 1'de, eksi 1 geldi. Eksi ise artı oldu. 2x'in karesi bölü 2 faktöre. Eksi 2x'in dördüncü kuvveti bölü 4. Böyle gider. Bir tane daha yazmış olsam, artı diyecektim. 2x'in altıncı kuvveti bölü 6 faktöre. Şimdi bunu düzenleyelim. Bakın, biriler gider. 2'yi de dışında tuttuk şu anda.
+
+335
+01:18:33,524 --> 01:18:58,004
+Bu şekilde yazdık. Tamam mı? Şimdi bakalım. Şuradan ne olur açarsak, şunun 4'ünü atmış olalım. 2x kalsın burada değil mi? Şu karesi var arkadaşlar. Şunun bakın 4x kare. Şurada ikisi yazılmamış. Onu anlarsınız. İkisi gitti. 2x kare. Böyle iki faktör yani var.
+
+336
+01:18:58,515 --> 01:19:09,636
+Burada da ne gelecek? 2'nin 4. kuvveti, bir tanesi gitsin, 2'nin 3. kuvveti, x üzeri 4. Çünkü bana genel terimini tahmin et diyor. Böyle 4 faktörü. Faydalara dokunmuyoruz zaten.
+
+337
+01:19:10,355 --> 01:19:19,115
+Şu 1 bölü 2 ile çarpıyorum bütün seriyi. 2'nin 6. kuvvetinden şuradan ne kalır? 2'nin 5. kuvveti x üzeri 6 bölü 6 faktör yani.
+
+338
+01:19:19,456 --> 01:19:28,996
+İşte bunu tahmin etmeye çalışıyoruz en inci terimini. Bir kere x'in çift kuvvetleri şu 2 unutmuyorum. 4, 6 diye gitti. Tamam mı arkadaşlar?
+
+339
+01:19:30,095 --> 01:19:32,595
+O halde x üzeri 2n artı 2.
+
+340
+01:19:33,203 --> 01:19:41,564
+Çift kuvvetlerinde, eni sıfırdan başlattığımız için. Sonra ikiler var, bakın, 3, 5, o da tek kuvvet olarak gidiyor.
+
+341
+01:19:41,763 --> 01:19:51,503
+250 2n artı 1, bu da tek kuvvet, tamam mı? Bölü paydası da zaten uygun, bakın, x kare bölü 2 faktörel, x üzeri 4 bölü 4 faktörel.
+
+342
+01:19:51,603 --> 01:20:00,000
+O zaman buraya 2n artı 2 yazdıysam, buraya da 2n artı 2 faktörel. Ön işarete, eksi artı 1 gidiyor, şu. Bunu birkaç kere yazarsan, zaten denersin.
+
+343
+01:20:00,000 --> 01:20:12,840
+bulursun. Hani bir iki terimini de elde ederim ben. Hani doğru yazdım mı diye. N'e sıfır verdiğimde 2 x kare bölü 2 faktörel elde etmeliyim. Sıfır verdim. Bakın ön işaretim artı. Sıfır veriyorum. 2 geldi. Doğru.
+
+344
+01:20:13,427 --> 01:20:30,868
+x'in karesi, doğru. Yok ama biz öyle düşündük, var karemiz, yazmamışız, eksik olmuş. Paydası da ne gelecek? 0 verdik değil mi? 2 faktör yani, doğru. Bir tane daha elde edelim, 1 verelim. Bakın ön işareti eksi geldi. 2'nin 3. kuvveti doğru.
+
+345
+01:20:31,391 --> 01:20:51,291
+4 doğru faktör. Tamam. İşte bu da her x real değeri için yakınsaktır diyoruz. İşte sinüs x kareli seri açılımı bu. Ama dediğim gibi bunu unutursam bunu kalkıp da açmak çok zahmetli olur diyoruz. Evet. Şimdi bir tane sorumuz da şu.
+
+346
+01:20:52,307 --> 01:21:05,208
+Tanjant x'in, Maclaurin serisinin ilk 3 terimini, kosinus ve sinüsün seri açımları yardımıyla bulunuz. Yani tanjant neydi? Sinüs bölü, kosinüstü değil mi? Bu.
+
+347
+01:21:07,347 --> 01:21:10,347
+Evet, şimdi gelelim yazalım.
+
+348
+01:21:11,636 --> 01:21:39,376
+Şimdi tanjant dedik, sinüs bölü koy. Sinüsün seri açılımını biliyorum. X eksi, x küp bölü 3 faktörü, yani artı, x üzeri 5 bölü 5 faktörü, yani bir tane daha yazsam, eksi tek kuvvetleri gidiyor. X üzeri 7 bölü 7 faktörü, yani gelir. Bölü, kosünüsü de biraz önce yazdık zaten, şuradan bakın. 1 eksi, x kare bölü 2, artı, x üzeri, bu faktörü, yani arkadaşlar, bazı işlem, yazım hatalarımız var şurada. Tamam mı? Bu faktörü, yani.
+
+349
+01:21:39,636 --> 01:21:43,736
+2 faktoriyel, x'leri 4 bölü 4 faktoriyel diye gitti.
+
+350
+01:21:44,056 --> 01:21:48,416
+Şimdi ne yapıyoruz? Bölüm işareti var. Payı paydasına bölüp,
+
+351
+01:21:48,787 --> 01:22:10,447
+İlk 3 terimini yaz diyor. Zaten bunun eninci terimini tahmin etmek oldukça zordur. Hatırlarsanız, böyle durumlarda birkaç terimini yazmak bizim için yeterlidir. Çarpımından genel terimini yaz. Zaten genel teriminin soruyorsa yazılabilen bir seridir. Burada 3 tane terimini yaz. Yani klasik payı paydaya bölüyoruz. Ne yaptık?
+
+352
+01:22:10,783 --> 01:22:34,507
+1-x² bölü 2! yazmışız neyse ki burada, x üzeri 4 bölü 4! E şimdi ne yapalım, x elde edebilmek için, x ile çarpacağım. Çarptım bakın, x, eksi x³ bölü 2! artı x üzeri 5 bölü 4! taraf tarafa çıkarırsak, x'ler gider, tamam mı? Ne kalır?
+
+353
+01:22:34,547 --> 01:22:39,627
+Şuradan düşünürsek, 3 ile x küp bölü 3 kalır.
+
+354
+01:22:41,687 --> 01:22:42,327
+Sonra
+
+355
+01:22:42,868 --> 01:23:10,868
+eksi, şuradan düşünürsek, x üzeri 5 bölü 30 diyeceğiz. Tamam mı? Şu. Şimdi o zaman ne yapıyorum? Şimdi tekrar bunu neyle çarpmalıyım? x küp bölü 3'le çarpmalıyım. Şunu götürebilmek için. İşte bu şekilde çarparsak arkadaşlar, devam eder bu artık. Sonsuza kadar gidecek. Bize 3 terim dediğine göre yazmış oldum. İlk 3 terim işte. x artı x küp bölü 3 artı 2 x üzeri 5 bölü 15. Bu şekilde bulmuş.
+
+356
+01:23:10,868 --> 01:23:25,188
+Evet, şimdi bir de dedik ki, elementer olmayan, integrallerde de biz serileri çok kullanıyoruz. Örneğin, x eşittir, integral 0'dan x'e kadar.
+
+357
+01:23:25,680 --> 01:23:53,680
+e üzeri eksi t kare dt'nin, Maclaurin serisinin genel terimini bulunuz. Yani ben bu integral hesaplayacağım. Demek ki bir seri çıkacak. Oradan da genel terimini bulmaya çalışacağım. Zaten bu eliptik tip bir integraldir. Bunu hesaplayamayız bildiğimiz ancak bunun yaklaşık değeri hesaplanır. Onu da zaten siz bilmiyorsunuz. O halde ne yapmalıyım ben? Konum seriler olduğuna göre diyorum ki serilerden yararlanarak bu integr...
+
+358
+01:23:53,680 --> 01:24:20,699
+Önce bir hesaplayalım. Bunu da hesaplayabilmek için benim fonksiyonum nedir burada? e üzeri eksi t karedir. Ben e üzeri eksi t karenin Maclaurin serisini yazamam çok zor ama e üzeri x'in seri açılımını biliyorum. Orada e üzeri x'i açarım. x gördüğüm yere de eksi t kareyi yazdığımda bunu seriye açmış olurum. Değil mi arkadaşlar? Bakın yukarıda da demin e üzeri x'i size hemen göstereyim şurada.
+
+359
+01:24:25,844 --> 01:24:52,863
+Nereye açtık? E üzeri x biraz önce. Ha şu. Bakın, e üzeri x'i açmışız değil mi? Bana ne lazım? E üzeri eksi t kare diyor. x gördüğüm yere eksi t kareyi yazıyorum. Yani şurada eksi t karenin eninci kuvveti bölü m faktörel. Ya da şurada yazarsam bir eksi t kare artı t üzeri 4 bölü 2 faktörel diye gider. Onun için de hemen geliyoruz. Şuradayım.
+
+360
+01:24:53,363 --> 01:25:18,863
+Buradan yazıyorum. 1 eksi, yani e üzeri x'i biliyorum. Orada x gördüğüm yere eksi t kareyi yazacağım. 1 eksi t kare gelir tamam mı? Artı t üzeri 4 bölü 2 gelecek. Sonra eksi t üzeri 6 bölü 3. Şurada faktöre olması gerekir arkadaşlar. Yanlış düşünmüyorum değil mi? Bakın şuradayım.
+
+361
+01:25:24,659 --> 01:25:38,779
+Biri, dur bir dakika, kafam karıştı bir saniye. Bu bir faktöreli yazmaya gerek yok diye. Tamam, doğru. Yazmamıştır. Şurada faktörel işaret olacak şu iki yerin dedi. Tamam mı? Evet.
+
+362
+01:25:40,115 --> 01:25:54,235
+2 oldu. Faktöre de gerek kalmayabilir de tabii. Hani hatalı demiyorum ama formülü yazıyorsak, burada faktörel varsa, burada da olsa daha iyi olurdu. Ama gerek yok. Yani 2 faktörel 2'dir diye. Yanlış demeyeyim artık. Tamam mı? Bu. Yazdık.
+
+363
+01:25:54,235 --> 01:26:06,456
+Şimdi ne yapıyorum? Bunun integralini alabilmek için getiriyorum. E üzeri eksi t kareyi içine yazıyorum integrali. Şu nokta nokta devam ediyor. Şimdi ne yapacağız? Terim terim. İntegralini alıyorum. Birinin integrali t.
+
+364
+01:26:07,028 --> 01:26:18,708
+tekrar n integrali, eksik tek 3 bölü 3 gelir. t üzeri 4'ün integrali de t üzeri 5 bölü 10 olur. Ya da 5 çarpı 2 faktör yani diyebiliriz. Sonra
+
+365
+01:26:19,475 --> 01:26:44,415
+t üzeri 6'nın 7 bölü, değil mi? t üzeri 7 bölü 7 çarpı 3 faktör yani diyeceğim. Bir tane daha alsam t üzeri 9 bölü 9 çarpı 4 faktör yani. Sınırları nokta nokta devam ediyor. Sınırım nedir? Sıfırdan eksi kadar. Üst sınır t gördüğüm yere eksi yazacağım. Eksi alt sınır. Sıfır olduğu için yazmaya gerek yok. Sadece t gördüğüm yere eksi yazıyorum arkadaşlar.
+
+366
+01:26:45,043 --> 01:27:02,644
+x eksi x küp bölü 3, artı x üzeri 5 bölü 10 ya da 5 çarpı 2 faktöre, eksi x üzeri 7 bölü 7 çarpı 3 faktöre, artı x üzeri 9 bölü 9 çarpı 4 faktöre, nokta nokta devam ediyor.
+
+367
+01:27:02,724 --> 01:27:07,444
+İşte bakın birkaç terimi yazmışız, buradan bunun en inç terimini tahmin etmeye çalışacağız.
+
+368
+01:27:07,824 --> 01:27:10,064
+Bakın x'in tek kuvvetleri gitti hep.
+
+369
+01:27:10,224 --> 01:27:32,123
+O zaman önce hemen x üzeri 2n artı 1 tek olacağı için bunu yazdım. Şimdi paydaya dikkat ediyorum. Nasıl gelmeli? Bakın burada n faktoryal, bir dakika, şurada 3, 5, 7 diye gidiyor değil mi? Tek sayılarım var. Bir kere onun için 2n artı 1'i demeliyim.
+
+370
+01:27:32,756 --> 01:27:38,435
+Çünkü bakın, x üzeri 5 üzeri bölü 5, x küp bölü 3. Bir kere bunu oluşturmalıyım.
+
+371
+01:27:38,756 --> 01:27:43,916
+Ve burada da ne gelecek? 1 faktöriyel, 2 faktöriyel, 3 faktöriyel, 4 faktöriyel diye gider.
+
+372
+01:27:44,564 --> 01:27:54,684
+O da n faktörel olur. Önünde de artı eksisi 1 var. Eksi 1 üzeri n diye yazarım. Toplam n eşittir sıfırdan sonsuza kadar. Acaba doğru mu yazdım diye deneyeceğim şimdi.
+
+373
+01:27:55,104 --> 01:28:05,423
+n'e sıfır verdiğimde x'i elde etmeliyim. n'e sıfır verdiğimde ön işaretim artı. Şuradan ne gelir? 1 sıfır faktörelde 1'dir. Payda tamam. Şurada da x doğru.
+
+374
+01:28:05,423 --> 01:28:12,564
+Bir tane daha elde etmiş olalım. 1 verelim. Şu terimi elde etmeliyim. Eksi x küp bölü 3'ü. 1 veriyorum. Ön işaretim x.
+
+375
+01:28:12,564 --> 01:28:29,743
+x'i x küp geldi, doğru. 1 verdim, 2, 3 geldi, birim faktörü, tamam, doğru. Demek ki işte tahmin ederek bu şekilde bulmuş olduk. Bu da her x real değeri için nedir? Yakınsaktır diyeceğiz. Tamam mı arkadaşlar?
+
+376
+01:28:32,243 --> 01:28:38,224
+Şimdi bir dakika, ben birkaç örneğim daha var oradan. Şöyle.
+
+377
+01:28:44,692 --> 01:28:51,372
+Geçen örnekler çözdüm ya, arada bu konuyu anlatmamıştım dedim. Oradaki örneğimiz, evet ilk örneğimiz şu, bakın.
+
+378
+01:28:53,771 --> 01:29:01,752
+Yani ne dedik, belirsizliklerde de kullanabiliriz, serileri integralde kullanabiliriz, bazı fonksiyonları seriye açarken kullanabiliriz.
+
+379
+01:29:06,131 --> 01:29:30,011
+Evet, şimdi limit x1'e giderken lnx bölü x-1'in limitini hesaplayınız. Bu kolay aslında, normalde seriye gitmeden de hesaplayabilirsin ama soruyu şöyle sormuş olalım. Serilerden yararlanarak limitini hesaplayınız. [öğrenci] arkadaşımız ne yazmış? Onu şimdi gördüm. 2000 yanına, evet, ne demek? Anlayamadım.
+
+380
+01:29:36,532 --> 01:29:42,851
+Soruyu çözerken sormuş ama şimdi dikkatimi çekti ama anlayamadım arkadaşım. Yani yazdım, iki bin yanına evet ne demek?
+
+381
+01:29:45,692 --> 01:29:54,731
+Evet, ikinin yanına faktoryel, hani desek de olur, tabii demesek de olur. İkidir zaten de, hani düzgün yazmak istersek demek istedim. Tamam, şimdi gördüm, kusura bakmayın.
+
+382
+01:29:54,731 --> 01:29:58,731
+Evet, şimdi bakıyorum, limit x1'e giderken,
+
+383
+01:30:00,000 --> 01:30:27,779
+LN x bölü x eksi bir. x bire giderken LN bir sıfırdır. Payda da sıfır. Demek ki bu nedir? Sıfır bölü sıfır belirsizliği var. Biz bunu ne yaparız? Hopitale uygulayarak belirsizliği giderebiliriz. Bu kolay giderilebilirdi aslında. Ama diyelim ki çok zahmetli. 5-6 kez arka arkaya hopitale uygulayarak bulmak zahmetlidir. O zaman diyorum ki bunu serilerden yararlanarak bulmaya çalışalım. Serilerden yararlanabilmek için de ne yapmalıyım?
+
+384
+01:30:28,000 --> 01:30:40,059
+1, 8, 1 yapacağım bir şey yok zaten. Elen x'in seri açılımını bulmalı. Nerede? x eşittir 1 civarındaki seri açılımını. Hatırlarsanız biraz önce hesaplamıştık.
+
+385
+01:30:40,819 --> 01:31:05,499
+Oradan formülü şuraya alıyorum. Bir daha hesaplamayacağım. Yani lnx'in, fx eşittir lnx'in bir civarındaki Taylor serisini yazmış olduk zaten. Yani yazıyorum x eksi 1, eksi 1 bölü 2 faktörler, x eksi 1'in karesi. Bu şekilde bulmuştuk arkadaşlar. Tamam mı? Çünkü hesapladık biraz önce. Şimdi ne yapıyorum? Getirip bunu yazıyorum.
+
+386
+01:31:06,739 --> 01:31:19,099
+Limit x1'e giderken lnx yerine seri açılımını yazıyorum. x-1, 1 bölü 2 faktörer x-1'in karesi, artı 2 bölü 3 faktörer x-1'in kübü, nokta nokta gider.
+
+387
+01:31:19,239 --> 01:31:25,859
+En ince terimini yazmak zorunda da değilsin. Limit alacağın için birkaç terimini yaz, yeter. Bölü x-1.
+
+388
+01:31:26,219 --> 01:31:34,579
+Şimdi ne yapıyoruz? Hala belirsizliğimiz devam ediyor. Dikkat ederseniz 0 bölü 0 belirsizliğimiz var. Ne yapıyorum? x-1 ile sadeleştirelim. Tamam mı?
+
+389
+01:31:34,739 --> 01:31:38,859
+Ne olur? x1'e giderken 1 kalır.
+
+390
+01:31:39,479 --> 01:31:46,099
+Eksi 1 bölü 2 faktörüel x eksi 1 artı 2 bölü 3 faktörüel x eksi 1'in karesi böyle devam eder.
+
+391
+01:31:46,099 --> 01:31:52,839
+Şimdi kontrol edersem x1'e giderken şu 1'in dışındaki bütün terimler ne olursa olsun sıfıra gidecek değil mi?
+
+392
+01:31:53,159 --> 01:31:57,399
+Toplam olduğu için 0. O halde sonuç nedir? 1'dir diyeceğiz.
+
+393
+01:31:58,547 --> 01:32:04,268
+Serileri kullanarak verilen limitin değeri nedir? 1'dir diyeceğiz. Tamam mı arkadaşlar?
+
+394
+01:32:05,867 --> 01:32:09,867
+Peki, şimdi şöyle bir integral'i bize soruyor. Hesaplayınız diyor.
+
+395
+01:32:11,527 --> 01:32:16,207
+Bunu baktık. Hesaplayamıyoruz elementer yöntemlerle bildiğimiz.
+
+396
+01:32:16,207 --> 01:32:26,007
+O zaman diyorum ki ben ne yaparım? Elen 1-x'in seri açılımını yazıp, sonra da x'e bölerek,
+
+397
+01:32:26,676 --> 01:32:31,036
+Bir ifade elde etmiş olacağım. Sonra onun integralini almam kolay olacak.
+
+398
+01:32:31,556 --> 01:32:40,716
+ln1-x'in de seri açılımını biliyoruz. Nereden biliyoruz arkadaşlar? ln1 artı x'i biliyoruz.
+
+399
+01:32:41,016 --> 01:32:45,576
+Orada x gördüğüm yere ne yazarım? xx'i yazarak ln1-x'i seri açmış olurum.
+
+400
+01:32:46,596 --> 01:32:51,576
+Bakın ln1 artı x'i de biraz önce, hatta aralığında hesapladık. Tamam mı? Şu.
+
+401
+01:32:53,300 --> 01:33:03,380
+Bu şekilde bulduk. x eksi, x kare bölü 2, artı x küp bölü 3. Bu şekilde devam eder. Ya da toplam sembolüyle şu, yakınsaklık aralığında böyle yazmıştık.
+
+402
+01:33:03,739 --> 01:33:12,260
+Şimdi bana ne lazım? Bakıyorum fonksiyonuma. Elen 1 eksi x lazım. O zaman x gördüğüm yere ne yazıyorum arkadaşlar? Eksi x'i yazıyorum.
+
+403
+01:33:13,203 --> 01:33:26,104
+yazarsam, eksi x, buradan değişmez. Eksi x kare bölü 2 olur. Burası eksi x kütlülü 3 gelecektir. Bir sonrası, eksi yazacağıma göre, değil mi?
+
+404
+01:33:26,448 --> 01:33:42,068
+O zaman, x üzeri 4 bölü 4 gelecektir. Şu, bu şekilde devam eder. Şimdi getirip bunu integralin içine yazalım. İntegrel 0'dan 1 bölü 3'e kadar, ln, 1-x bölü x de x dedik. Bunu yazıyorum aynen.
+
+405
+01:33:42,068 --> 01:33:50,847
+x-x, x-x kare bölü 2, x-x küp bölü 3, nokta nokta bölü x diyelim. Şimdi bir de x'e bölelim.
+
+406
+01:33:51,988 --> 01:34:19,028
+Eksi 1 geldi. Eksi x bölü 2. Eksi x kare bölü 3. Nokta nokta devam etsin. Şimdi artık kolay değil mi? Toplum ya da farkın integralini alacağız. Ayrı ayrı integralini alalım. Eksi 1'in integrali, eksi x gelir. Eksi x'in integrali, x kare bölü 2. Bir de x ikimiz var. Eksi x kare bölü 4 gelir. Şuradan 9 olacak. x küp bölü 9. Devam etsin.
+
+407
+01:34:19,507 --> 01:34:29,607
+0'dan 1 bölü 3'e kadar sınır mı? Şimdi üst sınır, eksi alt sınır. Bu bir sınav sorusu, hatta test sorusu arkadaşlar.
+
+408
+01:34:30,487 --> 01:34:37,147
+İşte serisi aşağıdakilerden hangisidir diyor. Ben şimdi hepsini yazmadım. Sadece istediği cevap doğru olanı yazdım.
+
+409
+01:34:37,147 --> 01:34:44,047
+Yani ne yapıyorum? Alt sınır 0 olacağı için sadece x yerine 1 bölü 3'ü yazıyorum. Bakın, eksi 1 bölü 3 gelir.
+
+410
+01:34:44,479 --> 01:35:09,119
+1 bölü 3'ün karesi diyeceğim. 1 bölü 4 çarpı 3'ün karesi gelsin. Eksi 1 bölü 9 bir de kübü gelecek. Şu. Hatta n. terimini de tahmin etmişiz şurada. Tamam mı? O da ne olur? Eksi 1 bölü m kare çarpı 3 üzeri n diye devam eder. Tamam mı? Bu. İşte.
+
+411
+01:35:10,036 --> 01:35:16,796
+Aşağıdakilerden hangisi dediğimde cevabımız budur diyeceğiz. Anlaşıldı mı arkadaşlar?
+
+412
+01:35:20,404 --> 01:35:21,824
+Evet, devam edelim.
+
+413
+01:35:23,744 --> 01:35:24,764
+Yoksa sorumuz.
+
+414
+01:35:28,164 --> 01:35:29,264
+Evet, şimdi.
+
+415
+01:35:31,283 --> 01:35:58,823
+Şu limiti hesaplayınız. Bakın limit x0'a giderken, bu nedir? 1 bölü sinüs sonsuza gider değil mi? Yani sonsuz eksi, sonsuz belirsizliği var. Bunu gene sorum şu olsun. Serilerden yararlanarak limitini hesaplayınız. Hadi bekliyorum siz bulun arkadaşlar. Bakın sonsuz eksi, sonsuz belirsizliği var. Onun limitini serilerden yararlanarak bulmaya çalışın bakalım. Hadi bekliyorum.
+
+416
+01:36:02,579 --> 01:36:22,859
+x0'a giderken, 1 bölü sinüs x-1 bölü x. Önce paydalarını eşitleyin bakın, x-sinüs x bölü x' çarpı sinüs x diye yazıp, bir tek bilmeniz gereken sinüs'ün seri açılımı. Onu da yazarsanız yerine, oradan hesaplayabilirsiniz.
+
+417
+01:36:23,859 --> 01:36:26,359
+Sinüs x'in seri açılımı da nasıldı?
+
+418
+01:36:27,315 --> 01:36:51,676
+x eksi tek kuvvetlerine göre giderdi. x eksi x küp bölü 3 faktöriyel, yardımcı olayım size, hani notlar önümüzde olmadığı için belki. Sinüs x'in seri açılımı x eksi x küp bölü 3 faktöriyel artı x üzeri 5 bölü 5 faktöriyel, böyle devam eder. Birkaç terim yazın o şekilde. Tek kuvvetlerine göre gidiyor, artı eksi diye.
+
+419
+01:36:52,564 --> 01:36:59,644
+eksi 1 üzeri n, x üzeri 2n artı 1 bölü 2n artı 1 faktöriyel diye giderdi. Öyle hatırlıyorum.
+
+420
+01:37:16,083 --> 01:37:25,523
+Ama seri açarak mı buldun [öğrenci] arkadaşım? Seri açarak bul. Doğrudan hesaplama. Seri aç. Sinüsü dedim ya sana bak.
+
+421
+01:37:25,923 --> 01:37:35,823
+X eksi x küp bölü 3 artı x üzeri 5 bölü 5 faktöre. Eksi x üzeri 7 bölü 7 faktöre. Yaz birkaç terim. Yeterli olacak sana.
+
+422
+01:37:38,344 --> 01:37:39,783
+Tahmin et oradan ne çıkacak.
+
+423
+01:37:43,123 --> 01:37:47,963
+Biliyorum zaten onu hemen bulursunuz. Serilerden yararlanarak bulmaya çalışın.
+
+424
+01:37:49,543 --> 01:37:50,684
+Hadi bir dakika veriyorum.
+
+425
+01:37:55,667 --> 01:38:19,807
+Zaten bir tek sinüsün seri açılımını bilmeniz gerekiyor. Zaten önünüzde notlar olacak, sınavınız test olacak. Yani normalde yüz yüze eğitimde öğrenci, yani onu ezberlemek zorunda kalıyordu. Aklında da kalıyordu birkaç terim yazdığında. Sinüs tek kuvvetler, kısmi türev çift kuvvet diye gider. Öyle kalıyor aklımda. Bir de evzeri x'i bileceğim. Diğerlerinde zaten yapacak bir şey yok. Evet.
+
+426
+01:38:22,131 --> 01:38:45,291
+Devam edelim. Baktık, dedik ki sonsuz eksi, sonsuz belirsizliği var. Paydasını eşitledik şu. Şimdi ne yapıyoruz? X'e yapacağım bir şey yok. Sinüs X'in seri açılımını yazıyorum. X dedim. X sıfıra giderken takip. Aç parantez. X eksi X küp bölü 3 faktöre artı X üzeri 5 bölü faktöre 5 faktöre eksi X üzeri 7 bölü 7 faktöre nokta nokta gitsin. Tamam mı?
+
+427
+01:38:45,587 --> 01:38:50,827
+Bölü, payda da x'e yapacağım bir şey yok. Onu aç parantez, aynen sinüsü açtık.
+
+428
+01:38:51,127 --> 01:38:55,747
+Şimdi burada dikkat edersek payında x'ler gider, değil mi açtığımızda?
+
+429
+01:38:56,287 --> 01:38:59,728
+Ne yapabilirim? x küp parantezini alabilirim payını.
+
+430
+01:39:00,127 --> 01:39:04,327
+Alırsam bir de eksiyle çarparak alacağım, değil mi? x küp parantezini aldım bakın.
+
+431
+01:39:04,768 --> 01:39:10,868
+1 bölü 3 faktörel, eksi, buradan x kare bölü 5 faktörel, artı nokta nokta.
+
+432
+01:39:11,315 --> 01:39:22,015
+Dimitlerin hepsini yazmama gerek yok. Hayal gücümü geniş tutuyorum. Bölü yazmak çünkü biraz zahmetli. Şunu açtığımı düşünürsem, x kare parantezini alacağım değil mi arkadaşlar?
+
+433
+01:39:29,140 --> 01:39:46,500
+3 faktörüel, çünkü x karesi dışarıda var. Bunu ne yapıyorum? Bu da ne olur? x üzeri x küplü 5 faktörüel dedik, nokta nokta devam etti. Ne yapabiliriz? Buradan x küplü x kareyi sadeleştirdi, x çarpanı gelecek.
+
+434
+01:39:47,155 --> 01:39:59,355
+Payı ne olur? 1 bölü 3 faktöryel, eksi x kare bölü 5 faktöryel, nokta nokta devam eder. Payda da ne kaldı? 1 eksi x kare bölü 3 faktöryel, x küp bölü 5 faktöryel diye devam eder.
+
+435
+01:39:59,695 --> 01:40:05,195
+Şimdi limiti kontrol edersem, şuraya limit yazmamışım, hata yapmışım. Değil mi arkadaşlar?
+
+436
+01:40:06,003 --> 01:40:31,264
+x sıfıra giderken, şu terim nereye gider? Sıfıra gider. Bu da sıfıra gidecek. Yani şuradan ne kalacak? 1 bölü 3 faktörel çarpı x. O da ne olur? Sonuç sıfırdır. Yani şurada gözüküyor aslında değil mi? Şuradan sadeleştirdiğimde x kaldı. Bu terimlerde zaten problem yok. Hepsi sıfıra gitti. Yani sonuçta limit nedir? Sıfırdır diyeceğiz.
+
+437
+01:40:31,828 --> 01:40:52,768
+Tabii şimdi diyebilirsiniz, hocam, sınav testse ben seriden gitmeden de yapabilirim. Ama öyle bir soru sorarlar ki, kaç kez arka arkaya hopitalite uygulasam bulman çok zor olacak. Onun için ille ki serileri yazarsınız. Basit aldım bunları. Şimdi biraz daha karışık bir önlerim daha var. Hadi şunu bulun, çok karışık değil bu ama.
+
+438
+01:40:53,524 --> 01:41:01,903
+Limit x sonsuza giderken, e üzeri x çarpı sin 3, sin 3 parantez içinde e üzeri x x'in limitini hesaplayınız.
+
+439
+01:41:02,363 --> 01:41:06,663
+x sonsuza giderken, sonsuz çarpı 0 belirsizliği var değil mi?
+
+440
+01:41:07,083 --> 01:41:11,443
+Gene serilerden yararlanarak bulmaya çalışın.
+
+441
+01:41:12,264 --> 01:41:13,344
+Hadi sizi bekliyorum.
+
+442
+01:41:16,344 --> 01:41:19,804
+Peki bana ne yapmayı düşünüyorsunuz, ne yapacaksınız?
+
+443
+01:41:21,876 --> 01:41:37,636
+Fikri olan, en azından söyleyin, hesaplarız birlikte. Çünkü bazı serilerini unutabilirsiniz ne oldu ilk gün olduğu için. Yolumuz ne olmalı, ne yapmalıyım? Hangi fonksiyonun seri açılımını bilmeliyim sizce?
+
+444
+01:41:42,484 --> 01:41:44,684
+Hadi lütfen cevap verin.
+
+445
+01:41:45,784 --> 01:41:46,744
+E üzeri x mi?
+
+446
+01:41:47,463 --> 01:41:55,744
+E üzeri x'imi bileceksin. Ama hani e üzeri x dedin. Ne oldu? Şuraya çarpım geldi değil mi? Bir de neyi bilmen gerekecek?
+
+447
+01:41:56,923 --> 01:42:07,224
+Sinüsü bileceksin. Sinüs x'i açacaksın. X gördüğün yeri e üzeri x'i. Şu e üzeri x'i önce dokunma. Sinüsü aç. Oradan çok kolay çıkacak.
+
+448
+01:42:08,064 --> 01:42:10,084
+Tamam mı? Bakın. Görelim.
+
+449
+01:42:11,859 --> 01:42:29,239
+Ona dokunmadım. Sinüsün seri açılımını şuradan kopya çekiyorum bakın. Değil mi? Şuydu. X gördüğüm yere, eksisi, e üzeri x'i yazıyorum. Yazdım. Şu. Oldu mu? E şimdi ne yaparım? Bunu da seriye açarsam düşünün.
+
+450
+01:42:29,747 --> 01:42:45,767
+Bir sürü toplam gelecek, onunla tek tek çarpmak. Mantıksız. Ama şu şekliyle hemen e üzeri x ile çarparsak parantezin içini ne olur? Bir olur değil mi? Şuradan ne gelir? Eksi, e üzeri eksi 2x, böyle 3 faktörer bu şekilde devam eder.
+
+451
+01:42:45,767 --> 01:42:57,747
+Şimdi x sonsuza giderken bu terimlerin hepsi sıfıra gitmez mi? Sadece bir kalır. Bakın, çok zormuş gibi eğer sen e üzeri x'i seri açarak, bir de sinüsü de seri açarak devam edersen işin çok...
+
+452
+01:42:57,747 --> 01:43:24,387
+Çok zor olur. Orada çok geniş hayal gücünü kullanarak, işte bu çarpımın sonucunda neler kalır? Ama açmadan önce, hani E üzeri, X'in seri açılımını, böyle düşünürsen daha kolay görebilirsin. Bu da gene bir eski sınav sorusu, yani güzel bir soru aslında. Değil mi? Evet. Bitti, bunları çözmüştük zaten. Şimdi tekrar konuma dönüyorum. Kaldığım yerden devam. Var mı burada da tıkıldığımız bir yer arkadaşlar? Gene bir karışık limit sorumuz var gene.
+
+453
+01:43:31,796 --> 01:43:58,716
+Bunu yapmıştık. Hadi bunu çözün bakalım. Bu zor değil o kadar. Limit x0'a giderken x-sinus x bölü x küpün limitini seri açılımıyla hesaplayınız. Serilerden yararlanarak hesaplayınız diye. Bu da gene nedir bakın. 0 bölü 0 belirsizliği. Tek neyin seri açılımını bilmen gerekir? Sinus x'in seri açılımını bilmen gerekir arkadaşlar. Sinus x de neydi?
+
+454
+01:43:59,199 --> 01:44:10,579
+x eksi x küp bölü 3 faktöre, artı x üzeri 5 bölü 5 faktöre, birkaç terimi yazarak, hadi bulmaya çalışın bakalım ne çıkacak. Kolay hemen yapabilirsiniz.
+
+455
+01:44:35,315 --> 01:44:43,076
+Ama seri açarak değil mi [öğrenci]? Nasıl buldun? Seri açarak mı? Tamam, sağ ol.
+
+456
+01:44:44,115 --> 01:45:12,115
+Haklıyorum yani. Test olacağı için istediğin şekilde yapabilirsin. Ama dediğim gibi öyle bir soru sorarlar ki, gerçekten seriden yararlanman gerekir. Yani ona göre sorarlar. Ben buraya tabii rastgele kolay, zor aldım öğrenci görsün diye. Evet, o zaman dönelim. Ne yaptık? Dedik ki bu sıfır bölü sıfır belirsizliği var. Bu belirsizliği giderebilmek için serilerden yararlanıyoruz. Demek ki X sıfıra giderken X'e yapacağım bir şey yok. Eksi, sinüsün açılımını biliyorduk. X eksi, X.
+
+457
+01:45:12,115 --> 01:45:40,056
+x küp bölü 3 faktörel, artı x'leri 5 bölü 5 faktörel, böyle devam eder. Bölü x. Şimdi parantezi açtığımda ne olur? Bakın x'ler birbirini götürür. x küp parantezinde de yazabilirsin. Ya da bir kere yazmış olalım. Şöyle bir dakika, hemen acele etmeden. Ne olur? x küp bölü 3 faktörel, eksi x'leri 5 bölü 5 faktörel, artı devam eder. Bölü x küp. Buradan da artık x küp ile sadeleştirerek yazarsak, 1 bölü 3 faktörel değil mi? Eksi.
+
+458
+01:45:40,115 --> 01:45:47,115
+x kare bölü 5 faktörel artı x'leri 4 bölü 7 faktörel şeklinde devam eder. Yani x'in kuvvetleri gibi.
+
+459
+01:45:47,115 --> 01:45:57,176
+E şimdi kontrol edersem limiti x sıfıra giderken, bu bütün terimler sıfıra gider. Sadece 1 bölü 3 faktörel, o da nedir? 1 bölü 6'dır diyeceğiz.
+
+460
+01:45:58,416 --> 01:46:04,176
+Evet, anlaşıldı sanırım. Kolay çünkü. Şimdi gelelim bakın, en karışık soru.
+
+461
+01:46:04,851 --> 01:46:17,271
+Limit x0'a giderken, e üzeri 2x-1 çarpı ln, 1 artı x'in kübü, bölü 1 eksi, kosünüs 3x'in karesinin limiti nedir?
+
+462
+01:46:19,551 --> 01:46:23,091
+Bu nedir? 0 bölü, 0 belirsizliği var şu anda.
+
+463
+01:46:23,612 --> 01:46:28,612
+İşte bu belirsizliği biz serilerin açılımından yararlanarak bulmaya çalışacağız.
+
+464
+01:46:29,032 --> 01:46:30,731
+Hadi ben 1-2 dakika bekliyorum.
+
+465
+01:46:32,756 --> 01:46:39,236
+Dediğim gibi bu biraz karışık yani. Gerçekten bunu arka arkaya hoplaya uygulayarak bulmak çok zor.
+
+466
+01:46:40,376 --> 01:46:44,376
+Neyi bilmem gerekir burada? Bir kere e üzeri x'in seri açılımını bileceğim.
+
+467
+01:46:45,036 --> 01:46:49,036
+Orada x gördüğüm yere 2x'i yazarak e üzeri 2x'i seriye açmış olacağım.
+
+468
+01:46:49,716 --> 01:46:56,216
+Bir de ln1 artı x'in seri açılımını biliyordum değil mi? x0 civarındaki açmıştık.
+
+469
+01:46:56,216 --> 01:46:59,556
+Orada da x gördüğüm yere x küpü yazarak.
+
+470
+01:47:00,020 --> 01:47:01,420
+Seriyi açmış olurum.
+
+471
+01:47:01,899 --> 01:47:03,699
+E, kosünüs x'i de biliyorum zaten.
+
+472
+01:47:04,380 --> 01:47:06,539
+Orada da x gördüğüm yere 3x'i yazmış olacağım.
+
+473
+01:47:16,724 --> 01:47:19,784
+Evet, bir yazmaya çalışın bakalım. Ne düşünüyorsunuz?
+
+474
+01:48:24,819 --> 01:48:26,119
+Evet, bulan var mı?
+
+475
+01:48:28,739 --> 01:48:33,339
+Neyse, yazalım birlikte düşünelim arkadaşlar. Biraz, evet, karışık bir örnek.
+
+476
+01:48:35,239 --> 01:48:40,839
+Şimdi ne yaptık? Dedik ki, E üzeri X'i bilmeliyim. Onu açmıştık biraz önce seriye. Bu.
+
+477
+01:48:42,179 --> 01:48:44,719
+Ne yapıyorum? X yerine 2X yazıyorum.
+
+478
+01:48:45,108 --> 01:48:52,867
+Ne olur? 1 artı 2x, artı 2x'in karesi bölü 2 faktörel, işte artı 2x'in kübü bölü 3 faktörel diye böyle gider.
+
+479
+01:48:53,707 --> 01:49:06,047
+Sonra, kosinus x'e ihtiyacım var. O da 1 eksisi, hatırlarsanız x kare bölü 2 faktörel, artı x'e 4 bölü 4 faktörel, eksi x üzeri 6 bölü 6 faktörel diye giden bir seriydi.
+
+480
+01:49:06,292 --> 01:49:18,952
+Burada da neye ihtiyacım var? X gördüğüm yere 3x yazmadım. Onu yazarsam 1-3x'in karesi bölü 2 faktöriyen artı 3x'in 4. kuvveti bölü 4 faktöriyen. Böyle gider.
+
+481
+01:49:20,012 --> 01:49:30,252
+Sonra, elen 1 artı x'i de açmıştık seriyi hatırlarsanız. O da x-x kare bölü 2 artı x küp bölü 3 diye giderdi bu şekilde.
+
+482
+01:49:30,963 --> 01:49:46,204
+Yani x üzeri 4 bölü 4 şeklinde gider. Orada da ne demem gerekecek? x gördüğüm yere x küpü yazmalıyım. Ne olur? x küp, eksi x üzeri 6 bölü 2, artı x üzeri 9 bölü 3 diye yazdık.
+
+483
+01:49:46,204 --> 01:49:57,944
+İşte bütün fonksiyonların seri açılımları elimde hazır. Getirip yerine yazıyorum. Limit x sıfıra giderken yazdık bunu. E üzeri 2x eksi 1'i yazıyorum.
+
+484
+01:49:58,515 --> 01:50:20,475
+Şuradan, aynen yazdım, eksi bir. Kapat parantezi. Elen bir artı x gibi yazıyorum. Şuradan yazdık. Şuradan. Bölü, faydada ne var? Aç parantez, bir var. Eksi, kosünüs x'i eksiyle çarparak alıyorum. Eksi, artı gelir, 9x kare bölü, iki faktöriyel.
+
+485
+01:50:21,011 --> 01:50:44,112
+eksi olur. 3 üzeri 4, x üzeri 4 bölü 4 faktörleyelim, parantez karesi. Şimdi şu biriler gitti bakın. Paydadaki biriler de gider. Geriye şu birkaç terim çarptığımızı varsayarak arkadaşlar, bunda biraz herhalde gücümüzü geniş tutacağız çünkü sayfalara sığmaz bu kadar işlemi yapmak. Ne yapıyorum bakın 2x ile
+
+486
+01:50:44,659 --> 01:50:48,980
+Bu terimin tamamını çarptığımı düşünüyorum değil mi? Bakın 2x üzeri 4 gelir.
+
+487
+01:50:49,579 --> 01:50:57,500
+İşte sonrası ne olur? 2 üzeri 2'ler gider. İşte x üzeri 7 şeklinde. Onu almıyorum. Tahmin ediyorum.
+
+488
+01:50:57,640 --> 01:51:02,119
+Sonra bununla çarptığımı düşünüyorum. Tamam mı? İkinci terimini çarptığımı düşünüyorum.
+
+489
+01:51:02,199 --> 01:51:05,640
+Çünkü sonrakiler x'in daha büyük kuvvetleri şeklinde gelecek.
+
+490
+01:51:05,640 --> 01:51:10,640
+Ne yapıyorum? 2x'in karesi böyle 2 faktör yerle çarptığımı düşünürsem.
+
+491
+01:51:11,636 --> 01:51:21,636
+Ne olacak? İkiler, şuradan 4 gelir, 2 kalır değil mi? Şununla da düşünürsen, x üzeri 5 kalır.
+
+492
+01:51:23,855 --> 01:51:31,576
+Özür, pardon, x kütle çarpıyorum, bir dakika. Kafam karıştı. Bakın önce birinci terimini şununla çarptım, tamam mı?
+
+493
+01:51:32,076 --> 01:51:37,868
+2x üzeri 4 geldi. Sonra ikinci terimle çarptım.
+
+494
+01:51:38,068 --> 01:51:48,847
+Pardon, ikinci terimi birinciyle çarpıyorum. Buradan da ne gelir? 2, x üzeri 5 olur. Diğer terimleri de tahmin edersek bu şekilde gidecek. Tamam mı?
+
+495
+01:51:49,507 --> 01:51:50,807
+Hacım, söyler miyim?
+
+496
+01:51:51,488 --> 01:51:51,847
+Söyle.
+
+497
+01:51:52,404 --> 01:51:58,244
+Şimdi 4x kare oluyor, 6'da 4 oluyor. Yani aslında x üzeri 8 olması gerekmiyor mu?
+
+498
+01:51:58,584 --> 01:52:03,164
+Hayır. Şimdi bak, şurada şu terimi alıp bu parantezin hepsiyle çarpmaz mısın?
+
+499
+01:52:03,404 --> 01:52:03,684
+Evet.
+
+500
+01:52:04,164 --> 01:52:08,504
+Artı 2x kare, böyle iki faktör eli, bunu tamamıyla çarparsın.
+
+501
+01:52:08,784 --> 01:52:14,024
+İşte diyorum ki, hayal gücümüzü geniş tutarak, hani küçük terimleri başa almaya çalıştım.
+
+502
+01:52:14,024 --> 01:52:19,164
+Yani ilk önce ne geldi? 2x üzeri 4'üm gelir. Sonra ne yapıyorum?
+
+503
+01:52:19,764 --> 01:52:21,543
+Şununla düşünüyorum.
+
+504
+01:52:22,003 --> 01:52:29,143
+İlk bu terimi çarptığımı düşünürsem, ikinciyle şunu çarptığımı düşünüyorum. Bütün terimlerini çarpıyorum değil mi?
+
+505
+01:52:29,243 --> 01:52:30,384
+Anladım, evet, evet.
+
+506
+01:52:30,903 --> 01:52:32,323
+O zaman doğru düşünüyor musun?
+
+507
+01:52:32,523 --> 01:52:32,903
+Doğru.
+
+508
+01:52:33,563 --> 01:52:34,363
+Doğru değil mi?
+
+509
+01:52:34,563 --> 01:52:34,863
+Doğru.
+
+510
+01:52:35,083 --> 01:52:37,903
+Tamam, 2 üzeri 5 gelir, doğru.
+
+511
+01:52:38,023 --> 01:52:38,203
+Evet.
+
+512
+01:52:38,443 --> 01:52:49,563
+Böyle gider yani. Hep x'in daha büyük kuvvetleri gelir illeki değil mi? Tahmin etmem gerekir. Çünkü çok zor bunu çarpmam. Ya tek tek böyle yazacağız. Şimdi paydayı da düşünmeye çalışalım.
+
+513
+01:52:50,003 --> 01:53:16,823
+Paydada da eksi 1'ler, artı 1'ler gitti. Burada ne yapabilirim? Bunu, bir dakika, x kareyi düşünebilirim. Değil mi? x karenin parantezini alabilirim bunu. Ortak parantezini alıp yazabilir miyim? Paydasını. Bakın, x kare parantezinin karesi parantezini alabilirim değil mi?
+
+514
+01:53:17,908 --> 01:53:42,568
+İşte burada da x üzeri 4'lerin var, onlar birbirini götürdüğünde ne kalır? Bakın 2 kalır, 2x kalır, diğer terimler x'in kuvvetlerine göre gitti. Paydayı da ne yapıyorum? Parantezin içini x karenin karesi parantezine almış olalım. Ya da önce x kare parantezine al üşenmeden, bir de onun karesi olursa x üzeri 4 parantezine almış gibi düşünerek yazmış oldum şunu. Tamam mı? Şu geçiş tamam mı arkadaşlar?
+
+515
+01:53:43,412 --> 01:54:06,412
+Önce parantezi x kare parantezinde yazdık, bir de onun dışında karesi var. O da ne olur? x üzeri 4 olur, payla düşünürsek gitmiş olur. Yani çok uzun olduğu için böyle biraz hayal gücümüzü geniş tutarak sadeleştirmeye çalışıyorum. Oldu mu? Payında 2 kaldı, 2x böyle x'in kuvvetleriyle gitti. Payda da ne oldu? 9 bölü 2 kaldı. İçinde zaten...
+
+516
+01:54:06,463 --> 01:54:23,703
+x kare parantezini aldığım için karesi kaldı. Böyle gider. Bütün x sıfıra giderken, şu terimlerin hepsi sıfıra gitmez mi parantezin içindeki ifade? Bunlar sıfıra gitti. Paya gelirsem bu da. Yani payında 2, paydasında 9 bölü 2'nin karesi kaldı. O da bakın.
+
+517
+01:54:24,079 --> 01:54:40,560
+2, şurada 9 bölü ne olur? 81 bölü 4, ters çevirsem 4 bölü 81'den 8 bölü 81 kalır. Biraz karışık ama biraz dediğim gibi geniş düşünerek, tahmin ederek bu şekilde sadeleştirme yapmış olacağız.
+
+518
+01:54:40,560 --> 01:54:52,079
+Yani serileri açtık, şurada çarptığımızı düşündük. En küçük terimlerim şunlar geldi, x'in kuvvetlerine göre düşünüyorum. Gerisi zaten büyük büyük terimler gelecek. Beni çok ilgilendirmeyi sıfıra x.
+
+519
+01:54:52,079 --> 01:55:07,680
+görebileceği için onlar gider. Payda da kolay mı? Paydayı görebilirsiniz. Ne yapabilirim? X kare parantezini alırım. Dışında karesi duruyor. Yazdım. E burada karesini düşünürsem x üzeri 4'ler sadeleşir. İşte ifadelerim şöyle kalır. Anladık mı arkadaşlar?
+
+520
+01:55:10,036 --> 01:55:15,216
+2 üzeri 5 yanlış değil mi? 8 diyorsun. Ama o da gelebilir arada.
+
+521
+01:55:15,216 --> 01:55:16,496
+Anladım hocam şimdi onu.
+
+522
+01:55:16,655 --> 01:55:18,136
+Sen mi sormuşsun? Tamam, pardon.
+
+523
+01:55:19,275 --> 01:55:31,296
+Yok zaten onlar da gelecektir arada. Bilemiyorum ki çarpacaksın. Ama dedim ya, hayal gücümüzü biraz geniştir. Çok karışık bir örnektir. Çok kolay değil arkadaşlar. Ama görmeniz için aldım yani. Tamam mı? Anlaşıldı mı?
+
+524
+01:55:31,975 --> 01:55:32,855
+Anlaşıldı hocam.
+
+525
+01:55:32,996 --> 01:55:33,235
+Tamam.
+
+526
+01:55:35,796 --> 01:55:47,155
+Evet, binom serisi konumuza dahil değil. Eski notlarımız olduğu için burada kaldı. Evet, Taylor, Maclaurin serileri anlaşıldı mı arkadaşlar? Var mı bir problem?
+
+527
+01:55:47,699 --> 01:56:05,920
+Dediğim gibi, bir tek Taylor serisini, Maclaurin serisini, polinomları bileceksiniz. İşte onların uygulamalarını da gördünüz. İntegrele uyguladık, limitlere uyguladık, herhangi bir fonksiyonu seriye açarken uyguladık, yaklaşık değer hesaplarken kullandık değil mi? Bu şekilde düşüneceğiz.
+
+528
+01:56:06,720 --> 01:56:14,880
+Evet, ne yapalım? Parametri denklemlere geçeyim mi, bırakayım mı? Yoruldunuz mu? Var mı sorumuz?
+
+529
+01:56:17,332 --> 01:56:23,832
+Anlıyor muyuz arkadaşlar? Bir iki kişi katılıyor. Merak ediyorum anlayıp anlayamadığınızı.
+
+530
+01:56:27,956 --> 01:56:49,755
+Yoruldunuz, evet ben de konuştuğumda yoruldum. Bırakmak istiyorum, tamam mı? Yeri gelir uzatırız, önemli değil. Yeni konuyu sabah geçmek istiyorum. 9'da yarın dersimiz, parametrik denklemler diye. Haftasına göre de gidiyorum, acele de etmek istemiyorum, tamam mı? O zaman burada kalalım, biraz da kendimiz çalışalım, tamam mı arkadaşlar?
+
+531
+01:56:54,260 --> 01:57:00,100
+Whatsapp'tan şey, örneklerim vardı, geçen hafta yapmıştım. Onları size atabilir miyim?
+
+532
+01:57:00,800 --> 01:57:01,380
+Bir dakika.
+
+533
+01:57:03,340 --> 01:57:03,940
+Demeyelim.
+
+534
+01:57:32,979 --> 01:57:45,839
+Geldim arkadaşlar size. Bir tane attım. Örneklerimiz vardı ya, geçen hafta da çözmüştüm. Bir iki soru da burada kalmıştı. 3, 4, 5, 6'yı çözdüm. Bir kontrol eder misiniz açabilirseniz?
+
+535
+01:57:52,500 --> 01:57:55,739
+Tamam geldiyse problem yok, yoksa yarın konuşuruz.
+
+536
+01:57:57,000 --> 01:58:02,739
+Evet, teşekkürler. Yarın görüşmek üzere arkadaşlar. Kendinize iyi bakın. İyi günler.
