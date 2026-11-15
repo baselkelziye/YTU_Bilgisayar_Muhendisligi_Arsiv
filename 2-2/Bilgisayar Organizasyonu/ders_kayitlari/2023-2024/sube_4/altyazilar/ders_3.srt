@@ -1,0 +1,3395 @@
+1
+00:06:28,531 --> 00:06:30,491
+Merhaba arkadaşlar, sesimi duyabiliyor musunuz?
+
+2
+00:06:36,884 --> 00:06:38,144
+Sesiniz geliyor hocam.
+
+3
+00:06:39,044 --> 00:06:43,204
+Teşekkür ederim. Online Yıldızı TV'deki linki kullanarak mı girdiniz?
+
+4
+00:06:44,484 --> 00:06:46,024
+Yok hocam, Teams'den girdim ben.
+
+5
+00:06:47,084 --> 00:06:47,364
+Tamam.
+
+6
+00:06:47,783 --> 00:06:49,444
+Ben Online Yıldız'dan girdim hocam.
+
+7
+00:06:49,963 --> 00:06:53,684
+Tamam, bir sorun var mı onu merak ettim sağ ol [öğrenci]. O zaman bir soru yok.
+
+8
+00:06:54,283 --> 00:06:55,104
+Rica ederim hocam.
+
+9
+00:07:02,163 --> 00:07:03,603
+Bir iki dakika bekleyelim.
+
+10
+00:07:06,543 --> 00:07:10,803
+Kimseyi göremeyince bir acaba her şey yolunda gitmiyor mu diye düşünmüştüm de.
+
+11
+00:07:11,603 --> 00:07:16,644
+Bir de ara verdik biliyorsunuz uzaktan eğitime. Online Yıldız'ı uzun zamandır kullanmıyorum.
+
+12
+00:07:47,283 --> 00:07:53,243
+Bir de ilk kez büyük ekranda kullanacağım. Bakalım nasıl gözüklecek sizin tarafta onu merak edelim.
+
+13
+00:08:03,252 --> 00:08:05,951
+Şu an nasıl görebiliyorsunuz? Bir sorun var mı?
+
+14
+00:08:05,951 --> 00:08:07,352
+Daha bir metik 2'ye bölünmüş halde.
+
+15
+00:08:08,052 --> 00:08:08,331
+Tamam.
+
+16
+00:08:48,947 --> 00:09:00,707
+Bir giriş yapayım, başlayayım ben. Katılan kişiler takip edebilir veya sonradan katıldılarsa tekrar dönüp izleyebilirler zaten. Öyle bir riskimiz bulunmuyor.
+
+17
+00:09:01,812 --> 00:09:13,132
+Bugün aslında daha önce bildiğimiz bilgileri birleştireceğimiz ve ortaya bir bilgisayar mimarisi çıkaracağımız durum oluşacak.
+
+18
+00:09:13,772 --> 00:09:18,932
+Tek çevrimli bir bilgisayar yapacağız birlikte. Sizlerin de burada katkılarını istiyoruz.
+
+19
+00:09:19,796 --> 00:09:34,336
+Ondan önce bu bilgisayar yaparken hangi yeteneklere sahip olacak derseniz, aslında sizin de şu anda ödevde uğraştığınız, tasarımda kullandığınız ALU'yu kullanacağız.
+
+20
+00:09:34,336 --> 00:09:46,036
+Birebir aynı fonksiyonelliğe sahip bir ALU'yu kullanacağız ve geçtiğimiz hafta kullandığımız, gördüğümüz Instruction Set Architecture veya Assembly.
+
+21
+00:09:46,995 --> 00:10:08,015
+kodlarını aslında bir donanımla gerçekleştiriyor olacağız. Bu şu demek, bize 32 bitlik bir komut gelecek. Biz bu komutu pars edeceğiz ilgili fonksiyonları yapabilmek amacıyla ve şimdiye kadar geliştirdiğimiz donanımların girişine vereceğiz.
+
+22
+00:10:08,015 --> 00:10:13,115
+Bazılarını biz geliştirmedik, hala hazırda yapılmış olarak varsayacağız, kullanacağız.
+
+23
+00:10:13,875 --> 00:10:27,735
+Buradaki farklı dijital blokları, dijital tasarım bloklarını kullanarak ve aynı zamanda komutların bilgilerini kullanarak bir kodu gerçekleyen sistem yapmak istiyoruz.
+
+24
+00:10:28,816 --> 00:10:36,836
+Şimdi öncelikle bıraktığımız yerden devam edelim. Şöyle bir şey vardı. Komutlar farklı tiplerde olabilirdi. Evet.
+
+25
+00:10:38,515 --> 00:10:52,395
+Komutların her biri 32 bitlik. Ben şuraya bir R1, R2, R3 şeklinde bir SMC kod yazsam bu mesela register tipinde bir komut olduğu için şu dizilime sahip olması gerekiyor.
+
+26
+00:10:52,915 --> 00:11:02,275
+Ben immediate tipinde bir işlem yapacaksam eğer neler bunlar derseniz şuralarda örnekleri vardı hızlıca bir üstünden geçebiliriz.
+
+27
+00:11:02,899 --> 00:11:19,360
+Add-in, i mesela, yani integration ekle anlamında veya load-work tarzında bir şey yapacaksam bu i tipi bir kod şekline giriyordu ve buna göre bunun 32 bitlik binary dizisi oluşuyordu.
+
+28
+00:11:20,079 --> 00:11:27,659
+Store ve branch tipi farklı tipler ve dediğim zaman bunların hepsini alt alta koyduğumuz zaman aslında bir komut farklı.
+
+29
+00:11:28,755 --> 00:11:41,775
+farklı parse etme durumlarına sahip olabilir. Ama ortak bir durum var. Dikkatini çektiğe ise ilk yeni biti her durumda opcode olarak geçiyor.
+
+30
+00:11:41,775 --> 00:11:51,816
+Ve çoğunlukla şuradaki 3 biti function 3 olarak geçiyor. Sonraki 5 biti çoğunlukla destination adres olarak geçiyor.
+
+31
+00:11:52,628 --> 00:12:05,328
+Immediate'ler ise karışık fark ettiyseniz. Yani U tip olursa immediate'da bilgisini çekebilmem için 31. bit ile 12 bit arasını almam lazım gibi bazı bilgiler var.
+
+32
+00:12:05,615 --> 00:12:13,596
+Şimdilik bu tarafta çok fazla kafa karışıklığı yaratmaya gerek yok. Bir anda bir şey tasarlamayacağız zaten. Adım adım tasarlıyor olacağız.
+
+33
+00:12:14,155 --> 00:12:27,456
+Şimdi bu aslında Virtual Design & Computer Architecture kitabının 7. çeptörü. Eğer ki aklınıza takılan bir şey olursa dönüp çok rahatlıkla sizler de bakabilirsiniz.
+
+34
+00:12:29,316 --> 00:12:32,016
+Terse başlamadan sormak istediğiniz herhangi bir şey var mıdır?
+
+35
+00:12:38,740 --> 00:13:05,579
+Peki, şimdi biz zaten daha önce lojik gördüğümüzü söylemiştik ve transistörler veya atomlar seviyesinde bir iş yapmadık. Analog dizayn da bizim işimiz değildi. Biz bilgisayar organizasyon dersiyle birlikte digital devreler elde ettik. HALU gibi lojik tasarımlar yaptık ve şu an buradayız.
+
+36
+00:13:06,676 --> 00:13:10,556
+Bir mikro mimari nasıl tasarlanır onu konuşuyor olacağız.
+
+37
+00:13:12,376 --> 00:13:21,596
+Bunu konuşurken aslında mikro mimari dediğimiz şey ne anlama geliyor? Önce onu ifade etmek iyi olacaktır.
+
+38
+00:13:25,331 --> 00:13:45,392
+ALU, hafıza birimi gibi farklı dijital blokları birleştirerek bir yapı inşa ediyoruz aslında. Bu yapı inşa etme durumundan dolayı hep architecture kavramı ortaya çıkıyor. Gerçekten de biz bir inşaat yapar gibi tasarım yapıyoruz.
+
+39
+00:13:46,995 --> 00:13:52,995
+Çok küçük ölçeklerde olduğu için mikro mimari ismi alınıyor. Bu şekilde ifade ediliyor.
+
+40
+00:13:53,536 --> 00:14:01,796
+Şimdi öncelikle bu mikro mimari ya da bir bilgisayar ya da nasıl değil bir işlem birimi yapacak olsak.
+
+41
+00:14:01,895 --> 00:14:08,076
+Yani bu işlem birinin amacı şu olacak. Sen bir kod vereceksin. Bu kodu aslında adam çözüp çalıştıracak.
+
+42
+00:14:08,596 --> 00:14:19,655
+Böyle bir işlem birimi hangi yeteneklere ya da hangi birleşenlere sahip olması lazım diye çekecek olursak, birincisi control unit olmalı, ikincisi de datapath olmalı.
+
+43
+00:14:19,756 --> 00:14:25,276
+Şimdi bunları biraz daha ayrıntılı, basitten itibaren anlatmaya başlayalım.
+
+44
+00:14:27,655 --> 00:14:35,056
+Neydi olay? Burada farklı 32 bitlik kodlar var. Bu birinci satır.
+
+45
+00:14:35,572 --> 00:14:45,672
+İkinci satır, üçüncü satır diye ilk kodu mesela vereceksin bir işlem birimle. Bunun da sonucu bir şekilde çıkacak gibi düşünebilirsiniz.
+
+46
+00:14:46,392 --> 00:14:55,351
+Şimdi burada bir kod var arkadaşlar. Şurada bir kod var. Bu kod register tipinde olabilir, immediate tipinde olabilir, store tipinde olabilir.
+
+47
+00:14:55,351 --> 00:15:00,731
+Az önce gösterdik farklı tipte parsedilmiş bir binary.
+
+48
+00:15:01,748 --> 00:15:23,708
+ikili binary bilgileri içeriyor. Control unit dediğin şey aslında senin yazdığın ve sonrasında makine koduna dönüştürülen şuradaki kodu alıp ALU ve hafıza birimlerine ilgili şeyi yapmasını sağlayacak unit'e ismi veriliyor.
+
+49
+00:15:23,708 --> 00:15:26,708
+Yani hatırlarsınız bir tane ALU tasarlamıştık.
+
+50
+00:15:27,700 --> 00:15:35,680
+bir ALU'muz vardı. ALU'nun girişinde farklı girişler ve çıkışında da bir şey olduğunu düşünelim. Şöyle bir kod geldiğini düşünelim.
+
+51
+00:15:35,820 --> 00:15:45,540
+AD, R1, R2, R3. Aslında bunun yapacağı şey R2 ile R3 registerleri toplayıp R1, R yazmak olacak.
+
+52
+00:15:46,540 --> 00:15:51,740
+Bu durumda ne yapması lazım? ALU'ya buraya şu kolan R2'nin gelmesi lazım.
+
+53
+00:15:52,820 --> 00:16:08,220
+Şu kolan R3'ün gelmesi lazım. Bunların toplamı, ALU'ya da şunu söylemek lazım, sen toplama yapacaksın. Bilgisini vermen lazım. Tıkışını da R1'e yazman lazım demen lazım.
+
+54
+00:16:09,220 --> 00:16:17,820
+Bakın burada aslında yapabileceği pek çok şey var ALU'nun, yetenekleri çok çeşitli ama yazdığımız kozu çözümleyip,
+
+55
+00:16:18,451 --> 00:16:23,211
+Bütün olası birleşenleri ayarlayan kısım aslında control unit oluyor.
+
+56
+00:16:23,872 --> 00:16:30,251
+Tam anlamıyla aslında birimi kontrol eden mimari diye düşünebilirsiniz.
+
+57
+00:16:30,872 --> 00:16:32,771
+Peki datapath ne oluyor derseniz?
+
+58
+00:16:33,312 --> 00:16:39,811
+Datapath ise buradaki tüm dijital bloklar ile şu bağlantıların tamamına verilen isim.
+
+59
+00:16:40,811 --> 00:16:44,271
+Şimdi birazdan yaptıkça datapath'i göstereceğim.
+
+60
+00:16:44,820 --> 00:17:03,820
+Control unit dediğim gibi, nasıl söyleyebiliriz? Herhangi bir komut geldiğinde gerekli kontrol sinyallerini oluşturacak MOOC seçimi, registerları aktif etme ve hafıza bilgi yazma gibi böyle kritik seçimleri yapabilecek birim.
+
+61
+00:17:09,364 --> 00:17:15,364
+gerekli kısımları yazmak için bağlantı düzenekleri diyebiliriz.
+
+62
+00:17:15,364 --> 00:17:20,923
+Mesela buraya başka bir şey bağlı olsaydı bir hafaza birimi, bu da datapath içerisinde olacaktı.
+
+63
+00:17:21,344 --> 00:17:29,604
+Ama günün sonunda şu toplama kararını veren veya şuradaki şu sinyalleri üreten şey, control unit içerisinde olacak.
+
+64
+00:17:32,124 --> 00:17:34,144
+Bu bir giriş oldu bizim için.
+
+65
+00:17:40,051 --> 00:17:56,132
+Bu hafta aslında single cycle, pek çevrimli bir bilgisayar üreteceğiz. Haftaya daha doğrusu final video sonrasında çok çevrimli veya pipeline mantığındaki mimarilere bakacağız.
+
+66
+00:17:56,132 --> 00:17:58,172
+Şimdi single cycle'dan başlayalım.
+
+67
+00:18:03,892 --> 00:18:16,192
+Clock frekansı var. Yani saat çevreme frekansı var biliyorsunuz. Belki siz de kendi bilgisayarınızın özelliklerine bakarsanız işlemcınızın çalışma frekansını da görebilirsiniz. Mesela 2.2 cigaz.
+
+68
+00:18:16,192 --> 00:18:24,192
+Bu aslında şunu söylüyor frekans. T eşittir 1 bölü F derseniz.
+
+69
+00:18:24,468 --> 00:18:30,668
+Sizin tek bir kuluğun kaç nanosaniyede olduğunu anlayabilirsiniz.
+
+70
+00:18:30,887 --> 00:18:33,288
+İşte sallıyorum 2 nanosaniye gibi bir şey çıktı.
+
+71
+00:18:34,108 --> 00:18:42,028
+Bu ne demek? Aslında bir kuluğun yükselmesi, düşmesi ve sonraki kuluğa başlama arasındaki geçen süre demek.
+
+72
+00:18:43,668 --> 00:18:46,628
+Buna T-Clock diyebiliriz.
+
+73
+00:18:48,852 --> 00:19:00,852
+Sizce burada bu nasıl işe yarıyor olabilir? Ya da bilgisayar seçerken bakıyor musunuz buna? Nasıl yüksek olması mı düşük olması mı? Ne dersiniz?
+
+74
+00:19:07,220 --> 00:19:08,699
+Yüksek olması daha iyidir.
+
+75
+00:19:09,659 --> 00:19:11,279
+Evet, yüksek olması daha iyidir.
+
+76
+00:19:11,796 --> 00:19:29,635
+Burada bunu seçerken tabii ki şöyle bir düşünce var. Sen bunu olabildiğince kısa bir sürede clock vermiş oluyorsun ve eğer single cycle çalışan bir mimari ise adam bunu tek bir clockta bu işlemi bitirmiş oluyor.
+
+77
+00:19:36,468 --> 00:19:39,168
+Bu clock başlamadan önce bu komut var.
+
+78
+00:19:39,768 --> 00:19:48,788
+Bir clock vurduğunda ve bir sonraki yükselen kenara kadar bunun sonucu çıkarılacak ve ilgili sonuçlar R1'e yazılacak anlamına geliyor.
+
+79
+00:19:50,688 --> 00:19:57,648
+Tabii ki bunu yapabilmesi için komutların biraz daha basit olması lazım gibi durumlar söz konusu.
+
+80
+00:19:59,067 --> 00:20:00,000
+Başka şeyler de var.
+
+81
+00:20:00,000 --> 00:20:18,139
+durumlarda var işin içerisinde. Ona da değinelim. Şimdi buradaki komut mesela, add komutu yaptığınız işlemleri ve tüm birimlerden geçtikten sonra belki 5 nanosaniye gibi bir şey oluşturdu. Ama bir de back diye branch komutu var.
+
+82
+00:20:18,644 --> 00:20:27,144
+Buna baktınız, bununla tasarladığınız donanım 2 nanosaniye gibi bir şey istiyor sizden. Sonra MUL diye bir şeye baktınız, çarpma işini yapıyor.
+
+83
+00:20:27,824 --> 00:20:32,983
+Buna baktığınızda da bunun donanımsal karşılığı 10 nanosaniye gibi bir süre alıyor.
+
+84
+00:20:33,584 --> 00:20:40,644
+Şimdi eğer single cycle bir bilgisayar yapacaksanız, clock frekansı neye göre seçmeniz lazım? Hangi komuta göre?
+
+85
+00:20:44,723 --> 00:20:45,523
+Yüksek olana göre?
+
+86
+00:20:46,523 --> 00:20:48,003
+En yüksek olana göre.
+
+87
+00:20:49,023 --> 00:20:53,824
+Çünkü küçük olan zaten o sürede işini bitirmiş olacak küçük olanlar.
+
+88
+00:20:54,603 --> 00:20:58,923
+Kritik olan şey şu en zor, en büyük olan işi yapmak.
+
+89
+00:20:59,563 --> 00:21:02,384
+Bunu tek çevrimde yapabilirsin tabii ki.
+
+90
+00:21:02,384 --> 00:21:04,583
+Buna göre bir frekans belirleyebilirsin.
+
+91
+00:21:04,703 --> 00:21:07,123
+Bu durumda frekansın çok da yüksek olamaz.
+
+92
+00:21:08,819 --> 00:21:24,259
+gibi bir durum oluşuyor. Multi-cycle mantığında da her komut aslında belirli küçük parçalara görünüyor. Mesela belki multi-leg çarpma işleminin içerisinde bölebileceğiniz, parçalayabileceğiniz alt iş paketleri var gibi düşünün.
+
+93
+00:21:24,259 --> 00:21:35,259
+İşte iki buçuk saniye, iki buçuk nanosaniye şeklinde bölebileceğiniz bölümler olduğunu düşünün. Bu durumda o zaman bir clock geldiğinde şu...
+
+94
+00:21:36,307 --> 00:21:54,548
+Çarpma komutunun ilk aşaması, ikinci klok geldiğinde ikinci aşaması, üçüncü klok geldiğinde üçüncü aşaması ve dördüncü klok geldiğinde son aşaması işletilebilir. Bunların tabi belirli avantajları var ama öncelikle şu single cycle computer mantığını iyi bir şekilde oturtmamız gerekiyor.
+
+95
+00:22:02,996 --> 00:22:08,036
+İç paketlerine bölüp süredi daha hızlı yönetebilir hale geliyorsunuz.
+
+96
+00:22:08,776 --> 00:22:11,876
+Pipeline yapısı zaten çok büyük avantaj sağlıyor. Onu da göreceğiz.
+
+97
+00:22:13,836 --> 00:22:19,016
+Evet, programın çalışma süresi. Bu çok klinik ve güzel bir hesap.
+
+98
+00:22:19,376 --> 00:22:23,216
+Aslında bunu herkes anlayabilir. Buradaki hesabın çok karmaşık olduğuna bakmayın.
+
+99
+00:22:24,976 --> 00:22:27,216
+Şimdi şuradan başlıyorum.
+
+100
+00:22:29,044 --> 00:22:34,984
+Bu toplam komut sayısını içeriyor aslında. Toplam kaç tane komut işlemek istiyorsunuz?
+
+101
+00:22:35,604 --> 00:22:44,544
+Diyelim ki sizin bir dakika sohbet kısmından bir şeyler yazılmış. Kusura bakma. Tamam, yüksek olması daha iyi demişsiniz. Onu bir kenara açtım. Tekrar devam edeyim.
+
+102
+00:23:00,084 --> 00:23:08,184
+100 tane komut var içerisinde. Alt alta dizilmiş. O yüzden şu number of instruction denilen şey 100 olmuş oluyor.
+
+103
+00:23:09,644 --> 00:23:18,244
+100 komut. Acaba senin tasarladığın işlemcide ne kadar sürede biter? Execution time bunu söyleyecek.
+
+104
+00:23:18,244 --> 00:23:27,624
+Kaç saniye olduğunu söyleyecek. Dolayısıyla burada şimdi bu tasarıma etki eden faktörleri görmüş olacaksınız. Bir kere şunu sorman lazım.
+
+105
+00:23:29,203 --> 00:23:45,203
+cycle, böyle instruction. Bir komutu kaç cycle'da işleyebiliyorsun? Eğer single cycle computer ise bir olacak burası. Şurası single cycle computer'da bir olacak. Çarpı.
+
+106
+00:23:49,203 --> 00:24:03,644
+Bir cycle'ın kaç saat sürüyor? Bu da seçtiğin clock frekansı ile ilgili. T, C dediğimiz clock periyodu ile ilişkili bir çek.
+
+107
+00:24:14,836 --> 00:24:42,056
+Belirli bir şeyse, diyelim ki 5 nanosaniye, 100 komutu 500 nanosaniye gibi bir sürede işleyebiliyor oluyorsun. Bunun hesabı single cycle'da bu şekilde. Ama eğer multi cycle komputer ise, her bir komutu adam az önce anlattığım gibi 4 tane cycle'da, 4 cycle bitmeden bir komutu işleyemiyorsa, o zaman buraya 4 yazacağız. Bu şuradaki bilginin 4 katı olmuş olacak.
+
+108
+00:24:43,635 --> 00:25:09,635
+Burada bir mimari tasarladıktan sonra performans kriterleri neler oluyor? İşte ücreti önemli oluyor. Sen bu kadar... Her cycle süresi eşit, evet. Cycle dediğimiz şey bir kare dalga arkadaşlar. Hani eğer orada bir eksiğimiz varsa diye söylüyorum. Şu şekilde bir kare dalga. Sürekli geldiğini düşünün. Ve mükemmel bir kare dalga olduğunu düşünün. Yani kesinlikle şu süreler...
+
+109
+00:25:10,228 --> 00:25:27,728
+Hepsinde eşik. Benim burada çizdiğim gibi eri bir dediği çok düzgün bir şekilde ilerlediğini düşünebilirsiniz. Düşen kenarları çok net bir şekilde belli. Böylelikle her yükselen kenarda mesela filifloplara bir şey yazılacaksa yazılabiliyor.
+
+110
+00:25:36,884 --> 00:25:43,684
+Ne kadar ücreti tabi tutulacak, ne kadar güç harcıyor veya performansı ne olacak bu gibi kriterler var.
+
+111
+00:25:47,508 --> 00:26:13,667
+Bir saniyede kaç komut işleyebiliyor? Gibi bir şey koyuluyor. Buna Mega Instruction Per Seconds ismi veriliyor. Bu çoğunlukla mesela işlemci seçerken bakabileceğiniz kriterlerden birisi. Mesela 10 Mega Instruction Per Seconds ise bir işlemci o zaman saniyede 10 üzeri 6 tane komut işleyebileceği anlamına geliyor.
+
+112
+00:26:15,827 --> 00:26:21,488
+Bunlar aslında genel bilgiler. Şimdi tabii ki bu tasarımın nasıl yapılacağı tarafına bakacağız.
+
+113
+00:26:22,248 --> 00:26:28,448
+Dediğim gibi single cycle computer tarafı oldukça kolay yorumlanabilir bir taraf.
+
+114
+00:26:29,968 --> 00:26:32,347
+Basit olduğu için de buradan başlıyoruz.
+
+115
+00:26:33,728 --> 00:26:40,607
+Şimdi RISC-5 instructionlarını görmüştük. Bunların içerisinde en su kullandığımız işte ALU.
+
+116
+00:26:42,163 --> 00:26:48,223
+Komutları var. Tabii ki biz zaten bir bilgisayar bileşenini çoğunlukla hesap yapmak için kullanıyoruz.
+
+117
+00:26:50,283 --> 00:27:00,104
+Bunu register tipinde instructionlar ismini veriyoruz. Hafıza tipinde instructionlar var. Bir de dallanma tipinde instructionlar var.
+
+118
+00:27:01,043 --> 00:27:08,023
+Biz burada 3-4 tane komut alacağız. Bu komutları önce yazacağız. Ne anlama geldiğini öğreneceğiz. Anlamaya çalışacağız.
+
+119
+00:27:09,044 --> 00:27:18,144
+Bizim anladığımız şeyi bir bilgisayara yaptırmaya çalışacağız. Bakalım yapabilecek mi diye söyleyebiliriz.
+
+120
+00:27:19,144 --> 00:27:25,903
+Şimdi öncelikle bir işlemci tasarlamak istiyorsunuz. Bu işlemci tasarımında ne olmazsa olmaz.
+
+121
+00:27:30,228 --> 00:27:38,668
+Burada architectural states denilen aslında şeyler, şuradaki bileşenler olmazsa olmaz bileşenler.
+
+122
+00:27:38,788 --> 00:27:46,048
+Bir, bir kere bir mikro işlemci olacaksa mutlaka onun içerisinde bir register olması lazım.
+
+123
+00:27:46,168 --> 00:27:48,107
+Çünkü register işlemleriyle ALU dönüyor.
+
+124
+00:27:49,288 --> 00:27:56,028
+Ne yaparsa yapsın şuraya ALU'nun gireşine istediğim değerleri getirebileceğim ve istediğimde çıkışı elde edebileceğim bir şey olacak.
+
+125
+00:27:57,107 --> 00:28:07,107
+Ben bazen buradaki çıkışı yazmak isteyebilirim veya buradaki çıkışı bir hafıza birimine yazmak isteyebilirim.
+
+126
+00:28:09,107 --> 00:28:11,867
+Şöyle bir register'lar kısmı çizeyim.
+
+127
+00:28:12,287 --> 00:28:13,327
+Register'lar diyelim.
+
+128
+00:28:15,687 --> 00:28:16,107
+ALU'nun...
+
+129
+00:28:16,915 --> 00:28:31,796
+Girişlerine registerlardan bilgi sağlayabildiğimi düşünüyorum. İki tane çıkışı varsa seçiyorum. Bir tane de girişi varsa bunu yaz anlamında veriyorum. Bu olabilir veya dediğim gibi bir işlem yapıp bunu ben hafızaya atabilirim.
+
+130
+00:28:32,415 --> 00:28:39,695
+Başka bir yol olabilir mi? Ne gibi işlem yeteneklerine sahip olması lazım bir işlemcinin?
+
+131
+00:28:50,804 --> 00:28:51,604
+Bekliyorum.
+
+132
+00:28:57,268 --> 00:29:00,968
+Yerel saat tutabilir belki bir hafıza biriminde yine.
+
+133
+00:29:02,168 --> 00:29:06,088
+Yerel saat, saat insanı mı tutabilir?
+
+134
+00:29:06,168 --> 00:29:08,468
+CMOS gibi onu demeye çalışmıştım hocam.
+
+135
+00:29:11,859 --> 00:29:17,299
+Yani programın konumunu tutması lazım bir şey. Eğer onu söylemek istiyorsan.
+
+136
+00:29:22,324 --> 00:29:36,723
+Biraz daha basit anlamaya çalışalım. Bir komut var. 32 bitlik bir komut geldi. Bunu control unit denilen bir üniteye vereceğiz. Bu ünite bize ne yapması gerektiğini söyleyecek. Tamam o konuda hemfikiriz.
+
+137
+00:29:37,804 --> 00:29:47,324
+Ama sonuçta bu 32 bitlik komutlar hafızada belirli bir alanda bekliyor. Bu program memory ismini veriyoruz buna.
+
+138
+00:29:48,211 --> 00:30:02,672
+Demek ki neymiş? Bir kere olmazsa olmaz bir işlemcide program hafızası olması lazım. Çünkü adam oradan okuyup onu çözümleyecek. Bizim CISC'imiz için ise 32 bitlik bir program hafızası diye düşünebiliriz.
+
+139
+00:30:03,632 --> 00:30:11,311
+İkincisi, bu programı verecek kontrol ünite işlemleri yaptıracak günün sonunda ne olması lazım? İşi bittiği zaman.
+
+140
+00:30:16,435 --> 00:30:35,576
+Programın bir sonraki adama geçmesi lazım. Yani şuraya geçmesi lazım. Veya devam edecek üçüncü satıra, dördüncü satıra derken programın nerede olduğunu tutan bir değişkene ihtiyacı var. Burada program counter bunu sağlamış olacak.
+
+141
+00:30:38,132 --> 00:31:00,352
+Bu program memorisi dışında başka bir hafıza birimi gerekiyor mu? Evet, gerekiyor. Ben çünkü burada yaptığım işlemleri bir yere yazmak isteyebilirim. İşte storework denilen bir komut vardı biliyorsunuz ki. Mesela şöyle diyordun, R9'un üstüne 5 ekle. Sen bunu nereye yaz? R6'nın içerisinde bulunan adrese yaz.
+
+142
+00:31:03,248 --> 00:31:25,627
+değeri de 0x200 olsun. Gidip 0x200. adrese, hafızanın ilgili adresine R9 artı 5'i yazmak lazım. Dolayısıyla bunun böyle bir yeteneğe sahip olması lazım. Başka load were diye bir şey de var. Yani memoriden de bir bilgi alıp onu da işleme katabilirsin.
+
+143
+00:31:27,380 --> 00:31:49,500
+Dolayısıyla en genel anlamda sizin tasarlayabileceğiniz bir en basit bilgisayar sisteminde mutlaka bir üzerinde işlem yapabileceğiniz rezistörler, programları okuyabileceğiniz bir bellek hatta ve hatta verileri yazabileceğimiz başka bir bellek belki.
+
+144
+00:31:50,060 --> 00:31:52,640
+Bu program kantora ihtiyaç oluyor.
+
+145
+00:31:53,491 --> 00:32:04,771
+Şimdi bunları bileşen bileşen en başta anlatıp ondan sonra tasarıma başlayacağız. Buraya kadar sorusu olan varsa lütfen sorsun. Biraz bekleyin.
+
+146
+00:32:21,491 --> 00:32:35,891
+Az önce program counter, program belleği, şu instruction memory, register file ve data memory denilen 3 farklı şeyi hızlıca konuşmuştuk.
+
+147
+00:32:36,371 --> 00:32:40,871
+Şimdi bunları teker teker baktık olursak, önce program counter'dan başlayalım.
+
+148
+00:32:47,988 --> 00:32:49,428
+BAS'a sahipmiş bakın.
+
+149
+00:32:51,948 --> 00:33:00,188
+Ve 32 bit'lik BAS değeri programın hangi satırda olduğunu tutuyor.
+
+150
+00:33:02,308 --> 00:33:04,228
+Gibi düşünebilirsiniz.
+
+151
+00:33:05,408 --> 00:33:11,168
+Bir clock sinyali geldiğinde program counter next, program counter yerine geliyor.
+
+152
+00:33:16,339 --> 00:33:26,699
+Durumuna geliyor. Bu single cycle bir kompüter olduğu için dolayı her bir cycle'da bütün iş bittiğini varsayalım. Şunun gerisine bir şey tasarlayacağız. Bittiğini varsayalım.
+
+153
+00:33:27,639 --> 00:33:38,019
+Clock geldiğinde bir sonraki program counter değeri yüklendiği için bunun üzerinden işlemler yürütülecek oluyor. Bu çok basit bir shift register diye düşünebilirsiniz.
+
+154
+00:33:38,839 --> 00:33:43,819
+Clock geldiğinde girişi çıkışa yansıtıyor. Bir flip-flop gibi de düşünebilirsiniz bunu.
+
+155
+00:33:46,163 --> 00:33:56,403
+Bu şekilde söyleyebiliriz. Peki şimdi gelelim komut belleğine. Komut belleği aslında read-only bir bellek. Ne demek oluyor bu sizce?
+
+156
+00:34:05,748 --> 00:34:08,268
+Program belleği olabilir hocam.
+
+157
+00:34:09,047 --> 00:34:14,347
+Program belleği veya komut belleği aslında sadece okuma yapılacak bir şey.
+
+158
+00:34:14,507 --> 00:34:19,847
+Çünkü sen, daha doğrusu sen onu işletirken sadece okuma yapacaksın.
+
+159
+00:34:21,007 --> 00:34:23,807
+Senin onun içeriğini değiştirmemen lazım işletirken.
+
+160
+00:34:23,807 --> 00:34:31,588
+Bu yüzden sadece okuma yapacağın için okuma yapacağın adresi vermen gerekiyor.
+
+161
+00:34:32,211 --> 00:34:58,271
+Adresi verdikten sonra adam sana anında bunun 32 bitlik değerini söylemiş olacak. Bir görselleştirme yapabiliriz burada. Şurada şeyler var. Program counter 0'ı gösteriyor olsun. Burada sen program counter'a 0 daha doğrusu bunun 32 bitlik halini verirsen 0x0 0 0 0 şeklinde.
+
+162
+00:34:58,996 --> 00:35:25,076
+Adam gidecek. Buradaki 32 bitlik sayıyı çıkışa yansıtmış olacak. Bellekin içerisinde ne varsa o yola koyuyor. Ama fark edecek olursanız, burada bir clock girişi yok. Clock girişi olsaydı şöyle bir şey olurdu. Clock girişi olmadığına göre bu bellek anında son çıkış verebilen bir bellek tipi olmuş oluyor. Böyle bir şey görmüş müydük?
+
+163
+00:35:28,659 --> 00:35:33,139
+Clock vermeden doğrudan çıkışa yansıtabilecek bir bellek tipi.
+
+164
+00:35:35,840 --> 00:35:37,420
+Latch'ler vardı hocam.
+
+165
+00:35:37,599 --> 00:35:44,779
+Latch'ler vardı evet. Demek ki komut bellekleri veya program bellekleri latch'lerle sağlanabilir.
+
+166
+00:35:47,000 --> 00:35:52,559
+Peki şimdi şuna bakabiliriz.
+
+167
+00:35:52,960 --> 00:36:05,440
+Program memorisi 32 bitlik bir adrese sahip. Ne demek oluyor bu tam olarak? Kaç tane adresi burada adresleyebiliriz aslında? Onun bir hesabını yapabilir miyiz?
+
+168
+00:36:19,827 --> 00:36:45,087
+Şöyle biraz daha basit case'i düşünün. Bu bir hafıza diyelim. 2 bitlik bir hafıza. Sen bu 2 bitle neleri sayabilirsin? 0, 0, 0, 1, 1, 0, 1, 1. Şu 0, 0'da bir hafıza var. 0, 1'de bir hafıza diye var. 1, 0'da var. 1, 1'de var. Sen böyle 0, 0 yazdığın zaman hop buradaki bilgiyi çıkışa yansıtmış olacak.
+
+169
+00:36:45,556 --> 00:36:51,195
+O zaman bu gözle baktığımızda aslında 2 üzeri 2 tane alanı adresleyebilir.
+
+170
+00:36:51,735 --> 00:36:52,315
+2 bitlik.
+
+171
+00:36:53,456 --> 00:37:00,315
+O zaman 2 üzeri 32 bitlik ise 2 üzeri 32 tane bellek alanını adresleyebilir oluyor.
+
+172
+00:37:00,315 --> 00:37:02,996
+Bu şekilde düşünebiliriz.
+
+173
+00:37:06,195 --> 00:37:22,096
+Şöyle bir şey vardı eskiden sizler bilirsiniz belki. 32 bitlik bilgisayarlar vardı. 64 bitlik bilgisayarlar yeni geçildi sayıları yani son 10 yılda. Hatırlayan var mı? Ne kadar RAM takabiliyorduk 32 bitlik bilgisayarlara?
+
+174
+00:37:25,315 --> 00:37:27,096
+4 GB mi hocam?
+
+175
+00:37:27,096 --> 00:37:28,715
+Evet, doğru.
+
+176
+00:37:29,523 --> 00:37:40,863
+Yani isteseniz de 4 GB yanına backer endaksanız da kullanamıyordunuz. Çünkü o adres yolu o kadar şeyi adresleyebiliyor.
+
+177
+00:37:41,703 --> 00:37:54,643
+Veya işte bir switch yapısı falan ayrıca bir şey koymanız gerekiyordu. Şimdi onu 64 bitlik bir adres bas olduğu zaman 2 üzeri 64 tane bellek alanı adresleyebilir oluyorsunuz.
+
+178
+00:37:55,315 --> 00:38:02,956
+Dolayısıyla bu çok önemli bir bilgi aslında aynı zamanda komut belleği ile ilgili. Neyse tamam, bu kısım böyle.
+
+179
+00:38:04,735 --> 00:38:14,076
+Şimdi register belleği tarafına geçelim. Genellikle bizim kodlarımız şöyle bir hatırlayalım. Yine hep aynı örneği veriyorum ama anlaşılması açısından.
+
+180
+00:38:14,855 --> 00:38:20,655
+Burada aslında yapılan iş iki tane register'ın toplanıp bir register'a yazılması olayı.
+
+181
+00:38:21,492 --> 00:38:37,452
+Dolayısıyla bunlar komutlar içerisinde de var bu arada. Şurada gösterebiliriz. Register tipindeki komut. Destination register buradaymış. Birinci source register ve ikinci source register komutun içerisinde bulunuyor.
+
+182
+00:38:45,907 --> 00:39:01,668
+Yani şeye, register file'ına bana onun çıkışlarını vermesi gerekiyor. Nasıl çalışması lazım onu bir kurgulayalım. Bir kere kaç tane register var? 32 tane register var. Bu RISC-5'da söylenen bir şey.
+
+183
+00:39:03,127 --> 00:39:08,608
+Yani R0'dan, pardon X0'dan başlıyor. X31'e kadar gidiyor register isimleri.
+
+184
+00:39:09,652 --> 00:39:21,051
+Diyelim ki adam burada R2'ye denk gelen X2, X3 diyelim, X1'e yazmak istiyor. Bunu kod içerisinde kaç bitle ifade edebilir?
+
+185
+00:39:23,851 --> 00:39:34,987
+32 tane register'ı her birini buraya anlatabilmesi lazım. Register'a bunu sağladığı zaman ilgili çıkışların blok dışına...
+
+186
+00:39:35,411 --> 00:39:59,131
+sağlanması lazım. Komutlarımızda genellikle gördüğümüz şey bakın bu birinci sort değeri, bu ikinci sort değeri, bu da destination değeri. Ne yapacak aslında ALU? Şunu ve şunu alacak, toplayacak ve X1'i yazması lazım. Yani bunları okuması lazım, çıkışı da yazması lazım.
+
+187
+00:40:00,000 --> 00:40:22,880
+Bu durumda ona göre bir tasarım gerçekleştirilmiş register file üzerinde. Bakın şu read1 aslında source1 anlamına geliyor. Okuduğumda doğrudan çıkış burada hala hazırda bulunacak. Source2 burada bulunuyor. Şurası ise destination adresi aslında. Destination.
+
+188
+00:40:29,043 --> 00:40:55,863
+Bunlar source'un database. Bu da aynı şekilde. Şunlar ise seçtiğin source ve destination'ların adresini veriyor. Sonuçta register file toplama yapacağı işlemi alabiliyor. Şöyle tekrar çizelim alıyor. Toplama yapacaksın diye söyledik. T toplama bilgisini geldi. Bunun ilk basına ne çıkması lazım?
+
+189
+00:40:58,291 --> 00:41:22,291
+R1, R2, R3 şeklinde geliyorsa buraya R2 gelmesi lazım. Bu durumda bunun R2 gelmesi için şu A1'e 0, 0, 0, 1, 0 şeklinde bir şey vermen lazım. Bu aslında ikinci register olduğunu gösteriyor. Şuraya ikincisini R3...
+
+190
+00:41:23,668 --> 00:41:44,488
+Ne vermek gerekiyor? 0, 0, 0, 1, 1 vermek gerekiyor. Bu durumda ilk basa ikinci register'ı, ikinci basa da üçüncü register'ı çık demiş oluyorsun. Bunu yazarsan çıkacak. Bir de eğer buraya write enable verirsen, bakın write enable diye geçiyor.
+
+191
+00:41:51,380 --> 00:42:06,800
+Tekrar, yazma imkanın da var. Nereye yazsın? R1'e yazsın. O zaman demem lazım ki 0, 0, 0, 0, 1. Şimdi R1'e yazabilecek gibi konfigüre ediyorsun bunu.
+
+192
+00:42:08,440 --> 00:42:11,520
+Günün sonunda register file'in çalışma yapısını inceledik.
+
+193
+00:42:12,148 --> 00:42:19,007
+Ama şuradaki kuluğu atlamamak lazım. Bu bir senkron devre. Bunun içerisinde senkron bir devre var.
+
+194
+00:42:19,708 --> 00:42:27,228
+Clock vuruşuyla birlikte anlık olarak girikler çıkış, işlem yapılıp çıkışa yansıtılıyor.
+
+195
+00:42:27,387 --> 00:42:33,927
+Tabii ki bir clock gecikmesi, daha doğrusu bir propagation delay sonrasında oluyor.
+
+196
+00:42:35,059 --> 00:42:57,840
+Bir de data memorisi var, bellek hafızası. Bu bellek hafızasında aslında ben hem yazma yapabilirim hem okuma yapabilirim. Çünkü komutlarda load word ve store word gibi komutlar vardı. Bu durumda nereden okuma yapacağımı şuradaki adres bilgisine yazarım. Bellek konumunu vererek söylemem lazım.
+
+197
+00:43:01,427 --> 00:43:12,728
+WriteEnable0 olması lazım. Yazma yapacaksam da 1 olması lazım. Buna göre şuradaki kontrol sinyalini kontrol yönetinin sağlaması gerekecek.
+
+198
+00:43:14,447 --> 00:43:25,427
+Ve onun dışında ne yapacak? Okuyacaksa zaten okuduğu bilgi buraya çıkaracak. Yazma veriyorsam eğer, 1 veriyorsam şuraya, o durumda da data...
+
+199
+00:43:26,228 --> 00:43:31,688
+BAS üzerinde nasıl bir bilgi varsa ilgili adrese ilgili bilgiyi yazacak oluyor adam.
+
+200
+00:43:32,547 --> 00:43:40,847
+Yani şöyle diyebiliriz 0x200'de mesela. Şurada da 5 bilgisi var. O zaman gidiyor. Şuraya da 1 verdiğimizi düşünürsek.
+
+201
+00:43:42,867 --> 00:43:48,987
+0x200 adresinde ne olursa olsun artık hiç önemli değil. Onun üstüne doğrudan 5 değerini yazmış oluyorsunuz.
+
+202
+00:43:50,804 --> 00:43:56,704
+Bellekler bu şekilde. Biraz fazla zaman harcadık ama iyi bir şekilde öğrenilmesini istedik.
+
+203
+00:44:00,884 --> 00:44:03,924
+Sorusu olan varsa lütfen tam bu aşamada sorsun.
+
+204
+00:44:05,844 --> 00:44:12,004
+Hocam, bir şey sormak istiyorum. Bu registerdan bir read aldık, bir de write verdik ya.
+
+205
+00:44:12,004 --> 00:44:17,004
+Bu alüye giderken bir de gecikme oluyor. O kısımda nasıl gibi yazma işlemi gerçekleşiyor?
+
+206
+00:44:18,675 --> 00:44:20,195
+Tek bir clockta mı oluyor yani?
+
+207
+00:44:21,415 --> 00:44:25,195
+Bir daha söylenmesin. Buraya bir clock verdiğimiz zaman...
+
+208
+00:44:26,096 --> 00:44:37,195
+Evet hocam, yazmak istiyoruz mesela register'a. Ama biz bu işlemleri girdiğimizde ALU'da bir gecikme olacak ya, onu nasıl gerçekleştiriyor? Bir sonraki adımda mı gerçekleştiriyor?
+
+209
+00:44:38,415 --> 00:44:46,115
+Evet, bir sonraki adımda gerçekleştiriyor olabilir. Biraz ilerlediğimizde muhtemelen onu da görmüş olacağız. Ama ben senin sorunu anladım.
+
+210
+00:44:46,900 --> 00:44:48,699
+Birazdan ona cevap vereceğim.
+
+211
+00:44:54,867 --> 00:44:58,148
+Şimdi biraz daha basit bir cache'den başlıyoruz.
+
+212
+00:44:59,428 --> 00:45:01,948
+3 tane, pardon 4 tane komut olduğunu düşünelim.
+
+213
+00:45:03,928 --> 00:45:06,728
+Komutlar şu adreslerde arkadaşlar bakın.
+
+214
+00:45:06,988 --> 00:45:10,708
+Şurada program hafızasının adresi bulunuyor.
+
+215
+00:45:11,468 --> 00:45:14,448
+Bakın fark ettiyseniz 4'er 4'er artıyor.
+
+216
+00:45:14,963 --> 00:45:24,064
+Bu mutlaka program counter'ın değeri 4, 4 artında görebilirsiniz. Bu ilk başladığında program bu program değeriyle başlıyor.
+
+217
+00:45:24,564 --> 00:45:29,983
+Program daha doğrusu komut işletildikten sonra program counter eşittir, program counter artı 4 yapılıyor.
+
+218
+00:45:31,184 --> 00:45:34,324
+Bir sonraki yere geçmek için. Neden 4 toplanıyor biliyor musunuz?
+
+219
+00:45:38,675 --> 00:45:44,835
+Çünkü hocam, komutlar 32 bit ve hexadesimali de 4 arttırdığımız zaman 32 ilerlemiş oluyoruz.
+
+220
+00:45:45,515 --> 00:45:57,675
+Evet, aynen öyle. Byte adreslenebilirlik konusunu konuşmuştuk. Bu durumda eğer 4'er 4'er arttırırsanız ancak 32 bit, 32 bit komutları kullanmış oluyorsunuz.
+
+221
+00:45:57,675 --> 00:46:03,295
+Hepsi arasında 4'er bitlik ve daha doğrusu 4 değerinde bir fark var diyelim.
+
+222
+00:46:04,211 --> 00:46:14,512
+Tamam, bu dört satırlı bir komut. Program kantorunun da buradan başladığını düşünelim. Program kantor sonuçta bir sayaç ve içerisinde o değeri tutacak.
+
+223
+00:46:15,852 --> 00:46:28,632
+Ve bunun farklı tip komutlar var. Önce ne yaptığını bir anlamaya çalışmamız lazım. Bu datam olarak ne yapılıyor? Onu bir birlikte konuşalım. Yani şunu sağ tarafına bakmayın şimdilik.
+
+224
+00:46:29,204 --> 00:46:32,664
+Komutların ne yaptığını anlamaya çalışıyoruz. Şu komut ne yapıyor arkadaşlar?
+
+225
+00:46:51,507 --> 00:46:58,407
+İlk satırdaki load word komutundan mı bahsetmiştiniz?
+
+226
+00:46:58,507 --> 00:46:58,727
+Evet.
+
+227
+00:47:00,167 --> 00:47:05,127
+Eksi dörde x9 registerdaki değeri ekleyip x6'ya mı yazıyor?
+
+228
+00:47:06,167 --> 00:47:11,507
+X9 eksi dört dedi. Sonra ne yapacak?
+
+229
+00:47:11,507 --> 00:47:17,847
+Bu değeri x6 registerna yazacak.
+
+230
+00:47:19,347 --> 00:47:23,407
+Bu değeri mi yazacak yoksa başka bir şey mi yapacak?
+
+231
+00:47:23,627 --> 00:47:28,667
+Hayır, bu değerin gösterdiği adresteki değeri x6'ya yazacak.
+
+232
+00:47:29,087 --> 00:47:37,347
+Evet, aynen öyle. Burada bir işlem yapıyor. Zaten bu immediate tarafıydı. Yani sabit bir değer verdiği tarafıydı.
+
+233
+00:47:38,287 --> 00:47:44,347
+Bu işlem yaptığında bir sonuç elde ediyor. Bu sonuç değeri...
+
+234
+00:47:44,884 --> 00:47:54,463
+Aslında hafızanın ilgili gözümü göstermek üzere o gözümdeki değeri X6'ya aktaracak aslında yapılan iş bu.
+
+235
+00:47:55,223 --> 00:48:01,443
+Bakın load words, store words bunlar kesinlikle bellekle, data memory ile ilişkili kavramlar.
+
+236
+00:48:02,443 --> 00:48:06,223
+Çünkü bellekten word okudu, belleğe word yazacak.
+
+237
+00:48:06,223 --> 00:48:12,304
+Burada hazır konusu geçmişken bu birinci kodumuzun karşılığı, ikinci kodumuzun karşılığını da söyleyin.
+
+238
+00:48:12,628 --> 00:48:13,668
+Now, vamos ver.
+
+239
+00:48:20,083 --> 00:48:24,203
+Şimdi bu kez store edecek. Neyi store edecek? X6'yı store edecek. Nereye?
+
+240
+00:48:26,683 --> 00:48:35,043
+Hafızanın 9. register'ın üstüne 8 eklenmiş adresine koyacak.
+
+241
+00:48:37,543 --> 00:48:46,187
+Buralarda bir soru varsa lütfen söyleyin. İkisi farklı şeyler. Tamamen birbirinden farklı. Çünkü birisinde...
+
+242
+00:48:46,228 --> 00:48:56,827
+Okuyorsunuz ve register'a çekiyorsunuz bilgiyi. Store Word'de ise bilgiyi, register'daki bilgiyi adrese yazıyorsunuz.
+
+243
+00:48:58,268 --> 00:48:59,627
+3 ne yapacak?
+
+244
+00:49:04,532 --> 00:49:09,652
+X5 register'ındaki değerle X6'dakini orlayıp X4'de yazacak.
+
+245
+00:49:13,331 --> 00:49:18,992
+X4 ile X5 ile X6'yı yapması lazım.
+
+246
+00:49:19,912 --> 00:49:22,952
+Ve bunun sonucu X4'e yazılması lazım.
+
+247
+00:49:24,592 --> 00:49:27,351
+4 ile de 4'te ne yapacak peki?
+
+248
+00:49:29,331 --> 00:49:30,472
+Bunu hatırlıyor musunuz?
+
+249
+00:49:30,532 --> 00:49:32,512
+BEQ denilen bir şey var.
+
+250
+00:49:33,351 --> 00:49:34,572
+Açılımını da vereyim.
+
+251
+00:49:34,672 --> 00:49:35,771
+Branch if equal.
+
+252
+00:49:38,228 --> 00:49:45,867
+X4'deki değer, 4. register'deki değerle 4. register'daki değer aynıysa L7 label'ını atlayacak.
+
+253
+00:49:47,547 --> 00:49:59,628
+Zaten aynı. Dolayısıyla aslında orada sonsuz bir döngü kurmuş oluyor adam. Sürekli çünkü şu şart her türlü sağlanıyor oluyor. X4, X4'e eşitse.
+
+254
+00:50:00,115 --> 00:50:08,036
+L7'ye ekle. L7 zaten burada. Sürükle bu kod burada takılacak ve sürekli koyacak anlamına geliyor.
+
+255
+00:50:08,675 --> 00:50:15,395
+Şurada da şeyi nasıl gerçekleştirebilirim? Program kantoruna ilgili değeri ataması lazım burada.
+
+256
+00:50:16,496 --> 00:50:18,536
+Ve bu şekilde gerçekleştirilmesi lazım.
+
+257
+00:50:20,036 --> 00:50:21,815
+Şimdi şöyle bir kez düşünelim.
+
+258
+00:50:24,235 --> 00:50:26,235
+Hafızanın 0x
+
+259
+00:50:26,867 --> 00:50:35,527
+2000 değerinde benim 10 değerimin olduğunu düşünelim hafızanın. Bu adres gözünde böyle bir değer var.
+
+260
+00:50:37,547 --> 00:50:50,587
+X5 register'ın içerisinde 6 değeri olduğunu varsayalım. X9 register'ı içerisinde ise 0x2004.
+
+261
+00:50:51,284 --> 00:51:03,403
+Değeri olduğunu varsayalım. Bunları ben veriyorum yani şu an için. Şimdi buna göre işlemler nasıl yürür onu bir anlamaya çalışsak. Mesela şuradaki x altının değeri ne olur acaba?
+
+262
+00:51:08,019 --> 00:51:08,960
+Ne dersiniz?
+
+263
+00:51:10,579 --> 00:51:12,259
+Bu işlem sonrasında X6.
+
+264
+00:51:18,931 --> 00:51:45,491
+Ne diyordu? 9'un değerinden 4 çıkar. 10'un değerinden 4 çıkarırsak, evet aynen öyle. Bunun değerinden 4 çıkarırsak, 0x2000 olur. 2000 değerindeki bilgiyi X6 registerine at diyor. Yani bu işlem sonrasında, bu da burada verildiği için, 10 değerini aktarmış olacak. Peki şurası için ne diyeceğiz?
+
+265
+00:51:58,195 --> 00:52:05,396
+X9'un 8 sonrasına diyor. Yani 0x2004'e 8 eklerseniz ne olur?
+
+266
+00:52:09,715 --> 00:52:11,396
+200c miydi hocam?
+
+267
+00:52:11,615 --> 00:52:20,255
+Evet. 00c'ye aslında 10 yazmış oldunuz. Çünkü x6'ın değerini artık buraya yazdınız.
+
+268
+00:52:21,876 --> 00:52:35,735
+Burada bunların orlanma durumu var. Yani bunu yazmayacağım. Çünkü bunların binary halleri, X5 zaten burada var. Bunun binary haline yazacaksınız. X6'ın da binary halini yapabilirsiniz. Onu or yapıp sonuca yansıtacaksınız.
+
+269
+00:52:36,956 --> 00:52:46,195
+Ve burada program counter kısmı var. O zaten program counter tarafına ayrıca bakıyor olacağız. Dolayısıyla önce komutların nasıl çalıştığını anladık.
+
+270
+00:52:47,347 --> 00:53:06,347
+Şimdi bu komutların hangi tipte yazıldığını ifade edelim. Farklı tipte bunları farz ettiklerini biliyoruz. Şurada onların nasıl 32 bitli komutta nerelerde bu bilgilerin bulunduğunu şöyle ifade edelim. Mesela I tipinde ise...
+
+271
+00:53:09,876 --> 00:53:30,316
+Şurada da gördüğümüz gibi I tipinde aslında en düşük önemli 7 bit opcode'u, sonraki 5 bit destination register'ı, sonraki 3 bit function 3'ü, sonraki 5 bit rs1'i ve en önemli kısımlar da aslında 12 bit'lik bir immediate sayıyı gösteriyordu.
+
+272
+00:53:30,656 --> 00:53:33,136
+Şimdi bunu biraz daha iyi anlamaya çalışalım.
+
+273
+00:53:40,980 --> 00:54:05,420
+Şimdi bir, opcode önemliyse, bu load word'ün opcode'u ne? Bakılabilir. Bir yerde yazıyordur muhtemelen, opcode'u şuymuş. Zaten hakikaten de bunun 7 bitlik olması gerekiyordu. Şu kısım 7 biti gösteriyor. Destination register ne olacak? Bakalım. Destination register dediğimiz şey her zaman sol tarafta oluyor.
+
+274
+00:54:06,260 --> 00:54:27,840
+5 bitlik 6 yazdığımızda nasıl bir şey elde ederiz? 0, 0, 1, 1, 0. Doğru mu? Şunun değeri 6. Bu aslında 6. register'ı gösteren bilgi olmuş oldu.
+
+275
+00:54:27,840 --> 00:54:32,940
+Bunu gidip destination register tarafına koyduk.
+
+276
+00:54:34,036 --> 00:54:50,476
+Sonuçta kodunu tıkanmaya çalışıyoruz. Function 3, muhtemelen bu da vardır zaten. Load yapıyorsan, işte şu octodu ve bu function 3'ü kullanman lazım diye yazıyordur. Bu kısmı da geçtik bir yerde yazdığını varsayarak.
+
+277
+00:55:01,811 --> 00:55:24,451
+olarak 01001 olarak yazılabilir. Bunun binary karşılığı 9. O yüzden gittik bunu da şoz sözü ve yazdık. Komutta başka bilgisini vermediğimiz tek şey immediate oldu. Çünkü R9'un üstüne ne kadar ekleyeceğim bilgisi bulunuyor. Onun da 12 bitlik karşılığı burada bulunuyor.
+
+278
+00:55:26,068 --> 00:55:50,508
+Şunu istiyorsanız, eksi 4 olduğunu kanıtlayabiliriz. Nasıldı? Bu ikiye tümleyen mantığı da yazılmıştı. Önce natını alıyorduk. Önce baktıyorduk, pardon. Negatif bir sayı mı? Evet negatif sayı. Eksi bir değer gelecek. Bu durumda bunun tersini alıyorduk. Bir bire tümleyenle 0, 0, 0, 0 diye. Son iki fanesi 1, 1 olacak. Üstüne 1 ekliyorduk.
+
+279
+00:55:51,347 --> 00:56:04,607
+Bu durumda aslında 0, 0, 1 olmuş olacak. Bunun karşılığı 4. Önünde de eksi vardı. Eksi 4. Böylelikle bunu da tekrar hatırlamış oldum.
+
+280
+00:56:06,087 --> 00:56:17,927
+Evet, buradaki şeyi şöyle bölecek olursanız, şu 4 bit 4 bit bölecek olursanız, şuradaki 4 bitin hexadecimal karşılığı ne olur?
+
+281
+00:56:19,987 --> 00:56:30,067
+3 olur. Şu kısımda 3 çıkıyor. Bunun hexadesimal karşılığında, bir dakika yanlış başladık. En baştan başlamamız gerekiyordu.
+
+282
+00:56:32,527 --> 00:56:43,367
+Şurası 3 oldu. Evet, şimdi doğru olacak. Sonraki 4'lü 0 zaten. Sonraki 4'lü tekrar 3.
+
+283
+00:56:43,827 --> 00:56:52,067
+Şeklinde yazdığınızda aslında bunun hexadesimal olarak makine dilindeki karşılığını yazmış oluyorsunuz.
+
+284
+00:56:52,827 --> 00:56:58,687
+Sizin aslında program hafızasına gömdüğünüz sayılar bunlar arkadaşlar.
+
+285
+00:56:59,247 --> 00:57:00,567
+Veya bu da açılmış hali.
+
+286
+00:57:02,487 --> 00:57:07,347
+Sizin içlendinizin bunu anlayıp, pars edip ya da bölüp,
+
+287
+00:57:07,731 --> 00:57:20,992
+İşlemleri güzel bir şekilde gerçekleştiriyor olması lazım. Şimdi bir hızlıca TL'ye de bakalım. StoreWorld komutuna bakalım. Bu S tipinde bir komutmuş. Fark ettiyseniz bunun immediate'ları farklı adreslerde bulunuyor.
+
+288
+00:57:20,992 --> 00:57:30,152
+İşte immediate'ın 11. ile 5. bitleri arası buraya. Diğer bitleri buraya koyulmuş.
+
+289
+00:57:31,476 --> 00:57:43,615
+Bunlar tabii tasarım sırasında optimize edilmiş. O yüzden böyle kullanılıyor. Yoksa kafa karışıklığı özellikle yaratılsın diye koyulmamış. Burada peki ne yapması lazım adamın?
+
+290
+00:57:47,923 --> 00:57:56,023
+OPCODE, store word ile ilgili bir açıklama içeriyor. Function 3 de yine aynı şekilde bir durumu anlatıyor.
+
+291
+00:57:57,123 --> 00:58:12,983
+Immediate olarak burada 8 var. 8'i gerçekten şurada birleştirirseniz, bunun sonuna 0, 0, 0, 0, 0, 0, 0, 0 koyarsanız, bunun zaten decimal karşılığı 8'dir.
+
+292
+00:58:12,983 --> 00:58:14,923
+Yani şu immediate'ı verir.
+
+293
+00:58:15,668 --> 00:58:23,427
+Bunun dışında source register tarafına birisine 9, diğerine de 6 bilgisi eklenmiş durumda.
+
+294
+00:58:24,968 --> 00:58:26,128
+Onlar koyulmuş.
+
+295
+00:58:28,628 --> 00:58:31,548
+Register tarafını anlamak biraz daha kolay oluyor.
+
+296
+00:58:31,548 --> 00:58:34,508
+Çünkü bakın 5 ile 6'yı toplayacak.
+
+297
+00:58:35,048 --> 00:58:39,548
+5'in register karşılığı 6'nın...
+
+298
+00:58:40,500 --> 00:58:57,059
+Binary karşılığı, bu işlem toplamı yapıldığı zaman destination register'ın adres karşılığı ve bunun OR işlemi yapılacağına dair bilgilerde function 3, function 7 ve offcode tarafından belirlenmiş olacak.
+
+299
+00:58:58,180 --> 00:59:04,780
+Branch işlemi de yine aynı şekilde devam ediyor. Bu biraz bir [öğrenci] yazmış.
+
+300
+00:59:06,003 --> 00:59:10,163
+Function kodu 3 bit olduğuna göre toplam 8 tane bir fonksiyonumuz var.
+
+301
+00:59:16,436 --> 00:59:29,276
+Sanıyorum öyle. Ben de öyle hatırlıyorum. Evet, ben de öyle hatırlıyorum ama bir daha tekrar bir bakarız zaten donanımı biz yapacağımız için fotoğrafı da net bir şekilde görmüş oluruz.
+
+302
+00:59:34,260 --> 00:59:56,039
+Şimdi gelelim bu komutu gerçekleştirecek donanımı yavaş yavaş ayağa kaldırma tarafına. Öncelikle komut komut gideceğiz. Yani bizim ilk gerçekleştireceğimiz tasarım loadward fonksiyonunu işletebilsin yeter. Şu an için öyle düşünüyoruz. Bu durumda adamın ne yapması lazım?
+
+303
+01:00:00,115 --> 01:00:15,476
+Bunlar olmazsa olmazdı çünkü. Şu bileşenler var. Bir de ALU var. Burada ALU'luk bir durum var mı sizce? ALU'yu kullanmamız gerekiyor mu bu komuttan?
+
+304
+01:00:23,860 --> 01:00:27,900
+Ya da siz olsanız bunu bir dijital tasarımla nasıl gerçekleştirebilirsiniz?
+
+305
+01:00:30,900 --> 01:00:35,020
+Şimdi hocam bizim yükleyeceğimiz adresi bulmak için kullanmamız lazım değil mi?
+
+306
+01:00:37,040 --> 01:00:39,220
+Yani X dokunudan 4 çıkarmamız lazım.
+
+307
+01:00:39,940 --> 01:00:40,980
+Doğru, çok doğru.
+
+308
+01:00:41,620 --> 01:00:46,900
+Yani aslında şurada arkadaşınızın da bir şeyi, 4'ü çıkarttık.
+
+309
+01:00:48,260 --> 01:00:49,060
+X6'ya.
+
+310
+01:00:50,291 --> 01:01:09,711
+Ya da eksi 4 toplamak gibi de düşünebilirsiniz. İlle çıkarmak gibi düşünmeyin. Eksi 4 değerini toplamak gibi de düşebilirsiniz. Ama sonuçta bir aritmetik işlem var değil mi? Dolayısıyla bunu tasarlayacak olsam ben şuraya bir şey çiziyorum. Şu ALU. ALU'nun ilk girişi nereden gelecek?
+
+311
+01:01:18,931 --> 01:01:24,451
+Mesela burada X9 gözükmesi lazım. Burada X9 gözükmesi için ne yapmam lazım?
+
+312
+01:01:29,012 --> 01:01:33,092
+Source 1'i, komut satındaki Source 1'i vermemiz lazım, ALU'ya.
+
+313
+01:01:38,032 --> 01:01:41,231
+Öncelikle şurada bir register olması lazım, değil mi? Register file.
+
+314
+01:01:42,891 --> 01:01:48,592
+Bu register file'a şunu söylemen lazım, X9'u ver demen lazım.
+
+315
+01:01:49,172 --> 01:02:04,271
+Etiktoz'un Binary karşılığını vermen lazım hatta. Nasıl oluyor? 0, 1, 0, 0, 1 dersen register A kolunda hemen bunun bilgisini çıkartıyor. O zaman bu durumda bunu buraya bağlayabilirsin. Doğru mu?
+
+316
+01:02:09,012 --> 01:02:10,072
+Doğru mu arkadaşlar?
+
+317
+01:02:12,652 --> 01:02:13,932
+Evet hocam.
+
+318
+01:02:14,552 --> 01:02:14,852
+Tamam.
+
+319
+01:02:15,771 --> 01:02:17,132
+Bunun ikinci kolona ne gireceğim?
+
+320
+01:02:17,132 --> 01:02:17,592
+Evet.
+
+321
+01:02:18,012 --> 01:02:20,311
+Register file'dan çıkan bilgi tam olarak niye?
+
+322
+01:02:21,452 --> 01:02:29,632
+Register file'dan çıkan bilgi 32 bitlik bir şey, R9 adresinin içeriği oluyor.
+
+323
+01:02:30,512 --> 01:02:31,452
+Tamamdır hocam.
+
+324
+01:02:31,532 --> 01:02:34,251
+X9 diyorum, R9 diyorum, pardon, X9.
+
+325
+01:02:34,804 --> 01:02:39,244
+X2'un 32 bitlik data'sı, yani bilgisi.
+
+326
+01:02:42,484 --> 01:02:43,504
+Sağ olun hocam.
+
+327
+01:02:44,284 --> 01:02:47,784
+Siz de sağ olun. İkinci kısma x4 girmesi lazım.
+
+328
+01:02:51,987 --> 01:02:55,768
+Değil mi? Bu eksi dört bilgisini nasıl çekerim?
+
+329
+01:03:01,588 --> 01:03:23,748
+Bunu komutun şurasından alsam olur mu? Çünkü immediate bilgisini taşıyan kısım orası. Olur mu ne dersiniz? Mantıklı hocam olur gibi duruyor. Mantıklı. Burası 32 bitlik ya. Burası ne oldu o zaman? 12 bitlik oldu mu?
+
+330
+01:03:28,916 --> 01:03:32,916
+Hangi işten? Boş bitleri doldurmamız lazım sıfırlara.
+
+331
+01:03:33,795 --> 01:03:48,695
+Sign extension denilen bir şey var. En önemli bitine bakıyor. Eksi ise, yani bir ise daha doğrusu bir bir bir bir diyerek dolduruyor. Şöyle düşünelim. 12 bitlik bir sayı var. Bir bir diye gidiyor 12 bitlik sayı.
+
+332
+01:03:49,684 --> 01:03:54,184
+Bunu 32 biti tamamlamak için 1, 1, 1, 1 diyerek 32 biti tamamlıyor.
+
+333
+01:03:54,584 --> 01:04:01,744
+Sign extension. Eğer 0, 1 diye giden bir pozitif bir sayı varsa o zaman da soluna 0 koyarak dolduruyor.
+
+334
+01:04:01,864 --> 01:04:06,444
+Yani her türlü onu 32 biti çevirecek adam burada. Bu işlem yapılacak.
+
+335
+01:04:07,064 --> 01:04:11,144
+Evet, bu işlem yapıldıktan sonra ALU'da bir değer çıkacak.
+
+336
+01:04:17,108 --> 01:04:25,068
+İçerisindeki gitmem gereken yer. O zaman gidip hafızanın o gözüne bakmam lazım.
+
+337
+01:04:28,008 --> 01:04:37,528
+Demek ki buradan benim bilgim çıkacak. Bir hafıza data memory'e. Data memory'nin adres tarafına girecek.
+
+338
+01:04:38,387 --> 01:04:43,407
+Ve bu adres girdikten sonra da burada benim bilgim hali hazırda bulunmuş olacak.
+
+339
+01:04:43,947 --> 01:04:48,907
+Şimdi burada bir bilgi var. Bu bilgi böyle kalsın mı?
+
+340
+01:04:57,780 --> 01:05:04,480
+Hayır, kalmaması lazım. Çünkü memoriden bu bilgiyi al demişim, komut ne diyor? Bunu X6'ya yap diyor.
+
+341
+01:05:05,620 --> 01:05:17,500
+Şimdi bir de o çıktı. X6'ya bunu yazma işi var. O zaman bunun sonucunu getireceğim. Hop. Register içerisine koyacağım yazma ucuna. Bu bilgiyi yaz diyeceğim.
+
+342
+01:05:18,320 --> 01:05:23,420
+Nereye yazmam gerektiğini de buraya söyleyeceğim. Nereye yazmam gerektiği de hatta burada var.
+
+343
+01:05:24,628 --> 01:05:39,328
+Dolayısıyla şimdi çok karmaşık çizdim ama birazdan adamın çizimi çok daha güzel. Oradan durumu daha iyi anlayacaksınız. Başlıyoruz. Bu yaptığımız işlemlerin hepsini daha düzgün çizimle görmüş olacağız.
+
+344
+01:05:46,480 --> 01:06:09,719
+Bundan başladığını düşünüyorum. Neden buradan başlıyor? Çünkü komutumuz buna göre 0x1000'den başlıyor. Program counter bu değeri tutuyor. Tuttu. Güzel. Sen program belleğine bu değeri verdiğin zaman adam onun instruction karşı bana basa koyacak. Bu bilgi bas'ta var. Komut burada var. Komutu çözümlememiz lazım.
+
+345
+01:06:10,708 --> 01:06:17,288
+Bu komutu çözümleyecektik ve register file tarafına yazmamız gerekecekti.
+
+346
+01:06:18,907 --> 01:06:23,507
+Register file'da önce şunu soralım.
+
+347
+01:06:24,907 --> 01:06:29,847
+Bu komutun hangi bileşenleri register file'a beslenmesi lazım?
+
+348
+01:06:34,931 --> 01:06:39,192
+Şurada komut var bu arada. Buradan yorumlayabilirsiniz.
+
+349
+01:06:43,764 --> 01:06:48,704
+Register adresleri yeterli olacak. Yani burada A1 ve A3 derim.
+
+350
+01:06:53,043 --> 01:06:54,943
+A1'e ne bağlayacağız o zaman?
+
+351
+01:06:57,643 --> 01:06:58,483
+RS1.
+
+352
+01:07:00,503 --> 01:07:05,804
+RS1'i bağlayacağız. Burada kaçıncı bitlerine denk geliyor? Ona bir bakabiliriz.
+
+353
+01:07:06,963 --> 01:07:14,263
+O bitleri A1'e beslememiz lazım. Bir de A3'e beslememiz lazım. A2'lik bir şey yok çünkü.
+
+354
+01:07:14,844 --> 01:07:17,583
+Yani ikinci basa bir şey çıkmamıza gerek yok.
+
+355
+01:07:17,952 --> 01:07:39,732
+Sebebini birazdan göreceksiniz. Ya da anlatabiliriz. ALU tarafında bakın bir tane ALU'muzun girişi X9 iken ikincisinin girişi X4 olacak. Bu bir reddit buradan gelmeyecek. Bu sabit bir sayı. O yüzden şurada ne çıktığının önemi yok sizin için. İstiyorsanız don't care verebilirsiniz yani. Herhangi bir şey verebilirsiniz.
+
+356
+01:07:40,788 --> 01:07:56,288
+Ama sonuçta gelecek bilgi günün sonunda tekrar X6'ya yazılması lazım. O yüzden X6'ya bunu yazman için şuraya X6 yani 6'yı gösteren bilgiyi girmen lazım.
+
+357
+01:07:57,467 --> 01:08:05,288
+Günün sonunda ilerlettiğimizde ilk bağlantıyı şu şekilde yapıyoruz. Instruction'ın 19. ile 15. bitleri arasındaki bilgileri.
+
+358
+01:08:06,068 --> 01:08:12,128
+Koyuyorsun. Böylelikle 9. register'ın bilgisine erişmek istediğini register file'a bildiriyorsun.
+
+359
+01:08:13,527 --> 01:08:24,007
+Bir clock geldiğinde burada anında read data, database üzerine çıkmış oluyor. Burada o bilgi var artık.
+
+360
+01:08:25,847 --> 01:08:30,788
+9. register içerisinde 0x204 bilgisi varmış demek ki.
+
+361
+01:08:33,684 --> 01:08:52,264
+Bir de ne demiştik? ALU'ya ikinci giriş olarak immediate bilgisinin girilmesi lazım. Bu instruction içerisinde 31. bitten 20. bite kadar olan kısım zaten bunun sabit sayısını tutuyordu. Bunu sign in extension yapıp bu bilgiyi 32 bit haline getirdi.
+
+362
+01:08:52,264 --> 01:08:59,424
+Şimdi yapması gereken şey, red x9 ile eksi 4'ü toplayıp sonucu bulmak.
+
+363
+01:09:00,756 --> 01:09:26,396
+Bunu yaptı. Bir de ALU'nun ne yapması gerektiğini söylememiz lazım. Bakın burada 0000 toplama işlemiydi. Dolayısıyla ALU'ya 0000 sinyalini kontrol yönetim sağlaması lazım. Bakın burada önemli bir şey. Komutta bunu bulabiliyor muyuz doğrudan? Komut içerisinde yok sanki.
+
+364
+01:09:27,060 --> 01:09:29,840
+Bunun nasıl sağlandığını sonradan tasarlayacağız.
+
+365
+01:09:30,300 --> 01:09:35,240
+Bunun şekilde biz baktık ve toplamaya denk gelen itlem budur dedik.
+
+366
+01:09:36,180 --> 01:09:38,620
+Geldik, ALU sonucu burada var.
+
+367
+01:09:39,320 --> 01:09:43,159
+Bu ALU sonucunu şimdi ne yapmamız lazım? Sırada ne var arkadaşlar?
+
+368
+01:09:50,963 --> 01:09:53,843
+ALU sonucunu data memory ile adres sevenmemiz vardır.
+
+369
+01:09:54,564 --> 01:10:08,904
+Evet, adres kısmına verdik. Dolayısıyla adresin gitti 0x200'ün 2000'in adresine gitti. Onun değeri 10'du. Bu 10 değeri getirdiği ve register file içerisine besledi.
+
+370
+01:10:09,663 --> 01:10:18,183
+Bu da artık register file yaz demek oluyor. Tabi yazma sinyalini hala vermedik. Bunu write enable da veriyorduk hatırlıyorsanız.
+
+371
+01:10:18,688 --> 01:10:24,587
+Bu durumda register, write sinyalini bir olarak üretmesi lazım control unit'in yine.
+
+372
+01:10:25,048 --> 01:10:29,228
+Burada hep control unit'in ne kadar önemli kararlar verdiğini anlıyorsunuz.
+
+373
+01:10:29,747 --> 01:10:35,948
+Bütün olası senaryoda seçimleri control unit bir şekilde belirlemesi lazım.
+
+374
+01:10:35,948 --> 01:10:37,148
+Yani şunu diyecek.
+
+375
+01:10:37,779 --> 01:10:56,760
+Loadward sinyali daha doğrusu komutu geldiyse bir kere ben biliyorum ki bir toplama yapacağım. Toplama yapacaksam ALU'ya 0,0,0 vermem lazım. Ve biliyorum ki burada hafızadan çektiğim değeri bir register'a yazacağım. O zaman register write'ın 1 olması lazım. Böyle bir basit mantık kurguluyor orada.
+
+376
+01:10:58,459 --> 01:11:04,340
+Şu anki durumda bakın gerçekten şuradaki komutu işleyebilir halde.
+
+377
+01:11:05,492 --> 01:11:09,228
+Sorusu olan var mı? Anlamayan veya...
+
+378
+01:11:20,340 --> 01:11:41,620
+Günün sonunda, şurada görmüştüm. Burada işimiz bitti aslında. Şu işi yaptık. Ne yapmamız lazım? Program counter'ı 4 arttırmamız lazım. Bir sonraki program itine yine 4 arttırmamız lazım. O yüzden burada şöyle bir çevrim kuruyoruz.
+
+379
+01:11:42,159 --> 01:11:47,520
+Aslında bu işlemler devam ederken, clock gelince hemen program counter'ı değeri buraya geliyor.
+
+380
+01:11:48,275 --> 01:12:05,715
+Bir toplayıcı var, basit bir toplayıcı. Ya da sayıcı bile olabilir, 4'er 4'er sayıcı bir devre. Bu durumda program counter'ın devrini 4'e attırıp buraya koyuyor. Dolayısıyla bir clock daha gelirse program counter buraya aktarılmış oluyor, 1004 şeklinde.
+
+381
+01:12:06,935 --> 01:12:14,536
+Work toplanmış hali de 1008 şeklinde burada hali hazırda bekliyor. Zaten hızlı çalışan bir komut. O yüzden.
+
+382
+01:12:15,155 --> 01:12:22,115
+Çok büyük bir problem yok bu tarafta. Program counter'ın 4 arttığını söyledik.
+
+383
+01:12:23,636 --> 01:12:27,315
+Şimdi diğer komutları nasıl gerçekleştirebiliriz tarafı var.
+
+384
+01:12:28,395 --> 01:12:32,036
+StoreWorld dediğimizde ne yapmamız lazım?
+
+385
+01:12:33,255 --> 01:12:36,315
+Şimdi bir kere StoreWorld'ün komut tipi biraz daha farklı.
+
+386
+01:12:37,655 --> 01:12:40,675
+Genel olarak ne yaptığını burada anlamaya çalışalım.
+
+387
+01:12:42,260 --> 01:12:50,440
+X6'yı alacak, X9'un 8 sonrasındaki adrese yazacak.
+
+388
+01:12:53,180 --> 01:12:54,720
+Yapması gereken bu.
+
+389
+01:12:56,300 --> 01:12:59,200
+O zaman öncelikle X6'yı alması önemli.
+
+390
+01:13:00,940 --> 01:13:02,360
+Şu bilgi önemli öncelikle.
+
+391
+01:13:03,579 --> 01:13:06,539
+Bu bilgiyi alması için öncelikle ne yapması lazım?
+
+392
+01:13:06,539 --> 01:13:08,680
+X6 burada hangi bitlerde var?
+
+393
+01:13:09,140 --> 01:13:12,620
+Burada yok.
+
+394
+01:13:15,120 --> 01:13:15,760
+Bakan.
+
+395
+01:13:17,920 --> 01:13:18,579
+R1.
+
+396
+01:13:19,720 --> 01:13:21,840
+Şu dümü. 4 artı 2. Burası.
+
+397
+01:13:22,440 --> 01:13:23,079
+Şurada var.
+
+398
+01:13:23,640 --> 01:13:28,440
+Bu aslında 24. bit ile 20 biti arasındaki bilgiye denk geliyor.
+
+399
+01:13:28,440 --> 01:13:30,440
+Dolayısıyla şurada komut çekilecek zaten.
+
+400
+01:13:31,739 --> 01:13:34,440
+O komutun şuradaki 5 bitlik bilgisi.
+
+401
+01:13:35,220 --> 01:13:58,979
+İkinci tarafa gelmiş olacak. İkinci kolu daha önce beslememiştik. Bunu bu amaçla artık besliyor oluyoruz. İkinci adresin çıkışında dolayısıyla bu bilgi burada okunmuş oluyor. Yani şurada aslında X6 register'ındaki değer çıkmış oldu. X6'nın içerisinde 10 değeri varmış.
+
+402
+01:14:00,275 --> 01:14:12,136
+Bu değeri yazması lazım. Yazması gerektiği için doğrudan data memory'nin write data basına bağlıyor.
+
+403
+01:14:12,136 --> 01:14:23,815
+Ama bunu nereye yazacağı bakın hala soru işareti. Nereye yazacağı zaten komut içerisinde vardı. Bu durumda da adamın bu tarafı irtilemesi lazım tabii.
+
+404
+01:14:25,195 --> 01:14:27,315
+Öncelikle bu kısım göstermiş olduk.
+
+405
+01:14:28,467 --> 01:14:55,747
+Ne yapması lazım? X9'a erişmesi lazım. X9 bilgisi nerede? RS1'de bulunuyor. Zaten bu yine 19. ile 15. bitleri arasında. Yani şuraya hali hazırda uygulanmış oluyor. Uygulandığında bunun sonucu Source A'ya gelmiş oluyor. Yani şurada bir sorun yok. Eski kurgu zaten bunun çalışmasına vesile olmuş.
+
+406
+01:14:57,619 --> 01:15:02,719
+Bunun yanına eklediğin 8 değeri nereden gelmesi lazım ona bakalım.
+
+407
+01:15:04,100 --> 01:15:12,139
+Bu adam immediate'ın 11. ile 5.si buradaymış. Geri kalan 5 biti de buradaymış.
+
+408
+01:15:12,139 --> 01:15:18,139
+Şimdi bunu ayrı ayrı yapmamak amacıyla direkt fonksiyona şöyle gönderiyor.
+
+409
+01:15:19,479 --> 01:15:21,100
+Şu ilgili kısmı gönderiyor.
+
+410
+01:15:23,604 --> 01:15:37,004
+Yani aslında komutun çok büyük bir kısmını gönderiyor. Sign, Extend yapan şeyin içerisinde bir modül var. O eğer Immediate Source'u 1 ise şuradaki bitleri alarak immediate oluşturuyor.
+
+411
+01:15:37,004 --> 01:15:51,004
+Bakın burası biraz kilit ve belki anlayamayacağınız bir nokta. O yüzden tekrar etmek istiyorum. Eğer Immediate Source 0 ise burada...
+
+412
+01:15:51,315 --> 01:16:06,251
+Daha önce fark ettiyseniz 31'den 20'ye kadar alıyordu. Şimdi diğer komutun içeriğinde şuralarda da immediate'lı bilgileşenler olduğunu gördü. Bu yüzden artık...
+
+413
+01:16:06,676 --> 01:16:19,396
+32. bitten 7. bite kadar, 31. bitten 7. bite kadar daha doğrusu bu bilgiye sahip olacak. Bunu içerisinde çekecek ve değerlendirecek. Şu extendin içerisinde aslında öyle bir girdi var.
+
+414
+01:16:34,771 --> 01:16:59,172
+Buradakileri çekerek yapıyorum. Bunu biraz daha basitleştirmek için hepsinin extend'in altına vermiş. Burada onu söylüyor. Eğer immediate source 0 ise, break instruction'ın şuradaki 12 bitini alıyor. Bir ise o zaman buradaki bitleri birleştirerek yeni bir linki oluştur diyor.
+
+415
+01:17:01,747 --> 01:17:15,527
+StoreWorld komutu da aslında çalışabiliyor oluyor sanki. Bir bakalım çalışmadığı bir durum var mı? Mesela bu durumda register'a bir şey yazmamız gerekecek mi? Söyleyebilecek olan var mı?
+
+416
+01:17:30,899 --> 01:17:40,439
+X6'nın değerini alacağız. X9'a 8 ekleyip, hafızada o adrese gidip yazacağız.
+
+417
+01:17:41,479 --> 01:17:52,019
+Bakın yazmayı data memoriye yapıyorum. Register'a yapmıyorum. O yüzden RegisterWriteCtrlSignal'i 0 olarak gözüküyor.
+
+418
+01:17:56,435 --> 01:18:12,716
+Bunu söyledik, konuştuk. ALU, control hala toplama yapıyor burada. Sonuçta şu içini bulabilmesi için toplama yapması lazım. O yüzden 0, 0, 0 olması lazım. Bir de data memory'e yaz diye başka bir kontrol sinyori var. Onun da 1 olması lazım.
+
+419
+01:18:16,127 --> 01:18:29,967
+Şu ana kadar kurguladığımız şu mikro mimari aslında load ve store işlemlerini yapabilir kesinlikle. İstediğin kadar komut alt alt olsun o komutların hepsini destekleyebilir oluyor.
+
+420
+01:18:31,608 --> 01:18:38,467
+Burada bir soru işareti olan var mı? Belki şu email ile ilgili sorusu olan olabilir. Yoksa geçeceğim.
+
+421
+01:18:51,764 --> 01:19:07,123
+Gelelim OR işlemine. Bu bildiğimiz bir register tipinde ve sürekli kullandığımız bir tip çalışma. Ne yapıyor? X5, X6 bitleme girecek ve çıkışı X4'e yazmam gerekecek.
+
+422
+01:19:07,123 --> 01:19:17,664
+Bu durumda aslında şöyle register transfer language mantığıyla şöyle gösterebiliriz. Daha güzel bir gösterim oluyor.
+
+423
+01:19:18,452 --> 01:19:19,692
+OR diyelim şuraya.
+
+424
+01:19:21,631 --> 01:19:29,412
+Bu durumda, Resilter File'ın, şuradaki girişini, neyi çıkartmam lazım benim?
+
+425
+01:19:30,172 --> 01:19:31,432
+Daha doğrusu, ALU'nun girişini.
+
+426
+01:19:32,112 --> 01:19:33,891
+X5'i seçmem lazım.
+
+427
+01:19:35,612 --> 01:19:38,412
+ALU'nun ikinci girişinde, X6'yı getirmem lazım.
+
+428
+01:19:38,412 --> 01:19:43,372
+Ve ALU çıkışında, elde ettim değeri, X4'e yazmam lazım.
+
+429
+01:19:44,243 --> 01:19:54,683
+Buradan başlayarak çözümleyebilirsiniz. Bunu yaptığınız durumda, öncelikle şu X5'i seçmem için ne yapmam gerekiyor? Onu düşünelim.
+
+430
+01:19:55,523 --> 01:20:04,603
+Sizin zaten komutunuzun içerisinde bir bölüm bunun X5'i söylüyor ve şans eseri yine, şans eseri değil tabii ki, iyi dizayn edildiği için.
+
+431
+01:20:05,395 --> 01:20:12,495
+19. ile 15. komutlar arasındaki bilgi aslında Source 1'i gösteriyor.
+
+432
+01:20:13,915 --> 01:20:21,175
+Source 2, şurası. Yani 24. ile 20. bit arasındaki bilgi.
+
+433
+01:20:21,915 --> 01:20:32,095
+Artık siz şunları koyduğunuzda her türlü buraya 0x6 ile x5 register'ları gelmiş oluyor.
+
+434
+01:20:32,979 --> 01:20:50,979
+Peki günün sonunda benim daha önceki yaptığım kısımda nasıl bir işlem vardı? Sanki ALU'da bir farklılık vardı. Bakın gerek burada gerek önceki durumda ALU'nun girişini sabit bir değerle besliyorduk.
+
+435
+01:20:50,979 --> 01:20:59,219
+Çünkü burada da yaptığımız şey R9-4'tü. Bu komutta da yaptığımız şey aslında X9 artı 8.
+
+436
+01:20:59,988 --> 01:21:13,927
+Yani her zaman ALU'nun girişi sabit bir değerdi. Ama register tarzı bir iflem varsa bunun girişinin register olması lazım. Bu yüzden adam buraya bir tane MUX koymuş.
+
+437
+01:21:16,048 --> 01:21:26,408
+Bu MUX şunu söyleyecek. ALU'nun ikinci bacağına acaba sabit bir bilgi mi girecek yoksa register'dan gelen ikinci bilgi mi gelecek?
+
+438
+01:21:27,444 --> 01:21:54,984
+Burada ALU sorsu 0 girdiğinde doğrudan bunu dışarı bağlamış oluyorsunuz. Böylelikle iki register da içeride. Okey, bunda da bir sorun yok. Ne yapmam gerekiyor bunu? X4'e yazmam gerekiyor. X4 nerede? Burada bulunuyor. Bu da aslında 11. ile 7. bitleri arasında komutum. Bu bilgiyi de komut içerisinden çözüp yazmak istediğim adresi verebiliyorum.
+
+439
+01:21:55,475 --> 01:22:04,635
+Peki, yazmak istediğim değeri nasıl vereceğim? Normal koşulda bu doğrudan data memory'e bağlıydı. Bakın buradan bir çıkmışız.
+
+440
+01:22:06,256 --> 01:22:16,296
+Ve bunun çıkışını başka bir MUX bağlamışız. Bu MUX şunu söyleyecek. Sizin X4'de yazmak istediğiniz ya da register'a yazmak istediğiniz değer.
+
+441
+01:22:17,416 --> 01:22:23,055
+Acaba data memory'den mi gelecek yoksa register üzerinden mi gelecek? Onu seçiyorum.
+
+442
+01:22:23,475 --> 01:22:37,096
+Bakın Result Source. Bu durumda ben Register üzerinden toplama yapıp sonucu tekrar Register'a yazdığım için şunu 0 olarak veriyorum. Şu çıkışı da getirdim. Datapath'ına bağlıyorum.
+
+443
+01:22:38,275 --> 01:22:44,355
+Ve yazma yapacağım için Register Write ucunu da 1 olarak verdim diye söyleyebilirim.
+
+444
+01:22:46,260 --> 01:23:04,840
+Bir dikkatinizi çekecek şey OR işlemi var. OR işleminin ALU karşılığı 0111'di. Bunu daha önce görmüştük ama zaten size gerekirse bir tablo halinde de verilebilir.
+
+445
+01:23:08,979 --> 01:23:11,679
+Sizce zor mu? Ne dersiniz?
+
+446
+01:23:15,699 --> 01:23:16,779
+Yorumları alalım.
+
+447
+01:23:18,039 --> 01:23:20,899
+Hocam, çok zor değil ama üzerine tekrar yapmamız gerekiyor.
+
+448
+01:23:21,079 --> 01:23:22,359
+Biraz karışık bence.
+
+449
+01:23:22,579 --> 01:23:22,779
+Evet.
+
+450
+01:23:23,339 --> 01:23:26,119
+Tekrar dinleyip kendimiz çözümlememiz lazım.
+
+451
+01:23:27,119 --> 01:23:27,420
+Tamam.
+
+452
+01:23:27,679 --> 01:23:31,979
+Yani biraz aslında şey, bir bulmaca çözer gibi ilerliyor.
+
+453
+01:23:32,759 --> 01:23:36,899
+Biraz vakit geçiren belki zevk alabilecek seviyeye gelir.
+
+454
+01:23:36,899 --> 01:23:40,219
+Şu an ilk yıl gördüğünüz için belki zorlanabilirsiniz.
+
+455
+01:23:41,363 --> 01:23:53,663
+Bakın burada her seferinde yeni bir komutu desteklesin diye bir şey koyuyoruz ve eklediğimiz her şey bir kontrol sinyaline daha ekleme imkanı daha doğrusu gerekliliği doğuruyor.
+
+456
+01:23:55,923 --> 01:24:01,563
+Bunların hepsi bir kontrolünün tarafından sağlanması gerekiyor. Artık bunu biliyoruz.
+
+457
+01:24:03,563 --> 01:24:05,563
+Evet, şimdi gelelim.
+
+458
+01:24:08,372 --> 01:24:22,132
+Son komuta bu da BEQ'ydü hatırlarsanız. Bizim amacımız zaten buradaki komutları çalıştıracak kadar bir donanım gerçekleştirmekti. BEQ'yu nasıl yapacak bu adam?
+
+459
+01:24:25,908 --> 01:24:31,488
+Arka planda ne yaparsa bu işlemi sağlayabilir.
+
+460
+01:24:32,248 --> 01:24:36,488
+Branch F2, yani eşitse dallan diyor.
+
+461
+01:24:37,047 --> 01:24:43,467
+Dolayısıyla buradaki 4 ile şu iki kısımdaki bilginin eşit olup olmadığını önce bir karşılaştırması lazım.
+
+462
+01:24:45,288 --> 01:24:46,387
+Nasıl sağlayabilir bunu?
+
+463
+01:24:47,847 --> 01:24:49,688
+Karşılaştırmayı ayuda yapabilir.
+
+464
+01:24:51,927 --> 01:24:52,768
+Evet.
+
+465
+01:24:53,460 --> 01:24:55,219
+Şuradaki bilgi, pardon.
+
+466
+01:25:00,275 --> 01:25:08,275
+Evet. Şuradaki bilgiyle, buradaki bilgiyi ALU'ya verse, sonra...
+
+467
+01:25:10,275 --> 01:25:14,876
+Yani çıkartma yapıp zero file bir gelirse bunlar eşit demek.
+
+468
+01:25:16,296 --> 01:25:21,096
+001'di galiba, yanlış hatırlamıyorsam çıkarma. Çıkarma yapması gerektiğini söyledim.
+
+469
+01:25:22,376 --> 01:25:25,015
+Ve sonra burada bunun bir de zero file'i çıkıyor.
+
+470
+01:25:25,939 --> 01:25:28,699
+Zero Felik 1 mi diye bakacak değil mi?
+
+471
+01:25:30,699 --> 01:25:31,319
+Evet hocam.
+
+472
+01:25:32,819 --> 01:25:35,699
+Eğer 1 ise dallansın diyeceğim.
+
+473
+01:25:36,339 --> 01:25:40,539
+Dolayısıyla 1 ise zaten şey yapmış olacak.
+
+474
+01:25:40,719 --> 01:25:44,039
+Dallanma iklemini nasıl gerçekleştirecek donanım tarafında bir bakalım.
+
+475
+01:25:47,619 --> 01:25:48,719
+B, E, Q, evet.
+
+476
+01:25:50,719 --> 01:25:51,399
+Şimdi.
+
+477
+01:25:53,619 --> 01:26:17,340
+Öncelikle şu X4 ve X4 burada nerede tutuluyor ona bir bakmamız lazım. Source 1 ve Source 2 içerisinde tutulan bilgi diye yorumluyorum. Şu zaten 4, bu da 4 anlamına geliyor. Tamam. Benim gidip bunları register file'e vermem lazım. Verdim. İkisinin de değeri 4 zaten.
+
+478
+01:26:18,260 --> 01:26:24,659
+Bu durumda ikisinin de içerisinde bulunan değer 14, 14 olarak buraya geldi.
+
+479
+01:26:29,520 --> 01:26:36,560
+Ben burada resultür üzerindeki bilgiyle bir işlem yapacağım için ALU sorsunu 0 yapmam lazım.
+
+480
+01:26:36,739 --> 01:26:40,699
+Çünkü immediate bir şey kullanmayacağım. Bu durumda 14'ü hop buraya aktarmış oldum.
+
+481
+01:26:42,440 --> 01:26:44,260
+Daha sonra...
+
+482
+01:26:44,591 --> 01:26:49,011
+ALU'da ne yapacağım? Çıkarma yapacağım. O yüzden 001 koymam lazım.
+
+483
+01:26:50,951 --> 01:26:54,451
+Ve bunun 0 bitini burada kullanıyor olacağım. 1.
+
+484
+01:26:55,531 --> 01:26:57,311
+İse işlem yapacağım.
+
+485
+01:26:58,891 --> 01:27:03,491
+Şimdi onun bağlantısını yapmamış. Belki birazdan yapar veya o öyle kalabilir. Emin değilim.
+
+486
+01:27:04,991 --> 01:27:11,951
+Ne yapması gerekiyor? Aslında program kaunturun mevcut değerinin üstüne bir öteleme eklemesi lazım.
+
+487
+01:27:12,304 --> 01:27:30,003
+Bakın burada öteleme ya da immediate sabit bir değer yok. Ama bu adamın kod kısmında bir immediate değer görüyorsunuz. Biraz karışık da yazılmış. Mesela 4. bitten 1. bite kadar sıralanmış. En sonunda 11. biti var. Bunları bir şekilde hizalaması gerekiyor değil mi?
+
+488
+01:27:38,612 --> 01:27:54,552
+Bit giriyor. Yani şunların tamamı giriyor. Ve sen diyorsun ki, immediate source 1.0 dersen, o zaman adam B tipi bir komutmuş gibi bunları alıp sırasıyla yerine dizerek bir immediate bilgi oluşturuyor.
+
+489
+01:27:54,552 --> 01:28:01,972
+Bu immediate bilgiyle program kantorun üstüne eklediğinde aslında şöyle bir şey olacak muhtemelen.
+
+490
+01:28:04,435 --> 01:28:20,335
+Şu 4'ü yazacak olursak, 0, pardon, 0, 1, 0, 0 değil mi? Şuralara hep 1 koyalım. Hangi sayıya denk geliyor bir bakmaya çalışalım.
+
+491
+01:28:23,835 --> 01:28:28,135
+1, 0, 0, 1'e denk gelmiş olacak.
+
+492
+01:28:28,543 --> 01:28:32,823
+Bu da binary karşılığı olarak 8-9 oluyor. Bir dakika.
+
+493
+01:28:36,283 --> 01:28:38,143
+Yanlış mı yaptım acaba?
+
+494
+01:28:38,143 --> 01:28:39,763
+Anlamaya çalışıyorum.
+
+495
+01:28:42,103 --> 01:28:47,703
+9 öncesine götüremez diye düşünüyorum. Çünkü 4'er 4'er artıyordu.
+
+496
+01:28:49,903 --> 01:28:51,203
+Şu kısmı tekrar yazayım.
+
+497
+01:28:57,971 --> 01:29:07,451
+Burası eksi on iki olacak. Eksi on iki değeri olacak. Çünkü şurası sıfır x c oluyor.
+
+498
+01:29:10,152 --> 01:29:17,311
+C oluyor. Bundan eksi on iki topladığın zaman, yani daha doğrusu çıkarma anlamına gelir, sıfır x bine gitmiş olursun.
+
+499
+01:29:18,032 --> 01:29:24,591
+Bu durumda komutun en başına sarmış olursun. Yani şunu anlatmaya çalışıyorum. Komuta tekrar gelirsem göstereceğim.
+
+500
+01:29:25,108 --> 01:29:41,047
+Şimdi sizin program kaldığınız, countrınız 60, 60, 60. Şurada, artık şuraya tekrar gitmek istiyorsunuz. Ne yapmanız lazım? Program kaldığınızın mevcut değerinden 12 çıkartmanız lazım ki şuraya girmesiniz.
+
+501
+01:29:41,047 --> 01:29:50,168
+Bu durumda aslında şuradaki immediate'ları düzenleyip bir bakarsınız. Bunun 12 çıktığını görürsünüz.
+
+502
+01:29:51,315 --> 01:29:55,155
+Adam onu ilerletmiş ve o kısmı da yazalım.
+
+503
+01:29:57,855 --> 01:30:03,515
+Evet, 12. Bunun değerini program counter'a yüklemesi lazım.
+
+504
+01:30:04,435 --> 01:30:10,575
+Bakın, burada ilginç bir durum daha var. Normal koşulda program counter ne güzel kendi kendine artıyordu.
+
+505
+01:30:11,415 --> 01:30:13,575
+Ama şimdi programın akışını bozuyorsunuz.
+
+506
+01:30:13,575 --> 01:30:18,575
+Dolayısıyla program counter artık dörder dörder atmayacak da bir yere dallandığında değişecek.
+
+507
+01:30:19,155 --> 01:30:28,836
+O sebeple şunun girişini manipüle etmeniz lazım. Buraya bir MUX bağlayıp program counter'ın sorsunu seçebileceğin başka bir kontrol sinyali oluşturuyoruz.
+
+508
+01:30:29,975 --> 01:30:33,796
+Bu durumda şunu aslında yapacak kontrol ünitesi kabaca.
+
+509
+01:30:36,175 --> 01:30:42,615
+Eşit mi kontrolünü kullanıyorsam ben diyecek, o zaman kesinlikle bir dallanma olacak.
+
+510
+01:30:42,615 --> 01:30:44,975
+O dallanma durumu da.
+
+511
+01:30:46,292 --> 01:30:56,171
+Program Counter'ın Sources'una değiştirerek oluşacak. Birinci Sources'tan al diyorsun, böylelikle ikinci taraftan alabiliyorsun gibi bir durum var.
+
+512
+01:30:58,171 --> 01:31:03,412
+Yine ben bir dallanma yapacaksam, bir karşılaştırma yapmam gerekiyor. O zaman fark almam lazım.
+
+513
+01:31:04,511 --> 01:31:13,792
+BEQ komutu için diyorum tabii ki. O durumda 0 file'ye bakmam gerekecek. 0 file'yi yapabilmem için, fark almam için ALU'ya 001 vermem lazım.
+
+514
+01:31:14,547 --> 01:31:24,507
+Immediate kullanmayacağım için ALU sorsusu 0 yapmam lazım. Şurada daha doğrusu ALU üzerinde immediate kullanmayacağım için diyebilirim.
+
+515
+01:31:32,275 --> 01:31:58,636
+Şuradaki Extend denilen kısmın özellikle tekrar üstünden geçelim. Bu aslında girişine IMPSOR dediği şey kısmına. Hangi ikiliyi verirsen ona göre girişindeki immediate kısımlarını dizerek, ilgili kısımlarını dizerek immediate bilgisini oluşturuyor. Sizin orada bir şey yapmanıza gerek yok. Modülün hali hazırda öyle çalıştığını düşünebiliriz.
+
+516
+01:31:59,024 --> 01:32:03,564
+Hocam, datapemory kısmında ALU result neden üstten dolandı demişsin?
+
+517
+01:32:05,083 --> 01:32:08,024
+Datapemory kısmında ALU result...
+
+518
+01:32:12,467 --> 01:32:16,568
+Şu kısmı söylüyorsun sanırım, doğru mu?
+
+519
+01:32:24,500 --> 01:32:50,440
+Tamam. Şimdi burada yapman gereken şey şu. X5 ile X6'yı OR işlemini tutacaksın ve çıkışı bir hafızayı değil de bir registra yazacaksın. Daha önceki durumda bakacak olursam. Mesela load word ne yapacak? Hafızadan bir bilgi okuyacak. Hafıza elemanını kullanıyor.
+
+520
+01:32:50,931 --> 01:33:06,711
+Veya storeworld, hafızaya bir bilgi yazacak. Hafıza elemanı hep burada var. İlk iki komutumuz onu desteklesin diye yapmıştık. Ama şimdi karşımıza bir ALU operasyonu çıkınca biz artık mecburuz. Burada bir seçim yapacağız.
+
+521
+01:33:07,771 --> 01:33:16,671
+Buraya bir mox koymak lazım ve bu moxun söyleyeceği şey şu olacak. Bu sonucu ben register file yazacağım ama bu sonuç
+
+522
+01:33:17,332 --> 01:33:23,752
+Zaten memoriden de gelebilir. Yani bellekten okuduğum bir şeyi de register'a yazmak isteyebilirim. Load Word gibi.
+
+523
+01:33:24,552 --> 01:33:34,112
+Veya buradaki ALU işlemi gibi elde ettiğim sonucu da, ALU'dan elde ettiğim sonucu da tıkışa yansıtmak isteyebilirim.
+
+524
+01:33:35,612 --> 01:33:36,912
+Aslında onu sağlamış oluyor.
+
+525
+01:33:45,171 --> 01:33:46,571
+Umuyorum anlaşılmıştır.
+
+526
+01:33:46,571 --> 01:33:47,071
+Tamam.
+
+527
+01:33:49,431 --> 01:33:55,311
+Evet, günün sonunda single cycle computer yapısını oluşturmuş olduk.
+
+528
+01:33:55,371 --> 01:33:57,171
+Bakın hepsini böyle yazmıştık şurada.
+
+529
+01:33:57,711 --> 01:34:04,751
+Şunları toplayıp, tek farkımız bunları toplayıp bir control unitin sağladığını varsayarak bu durumu yaptık.
+
+530
+01:34:04,751 --> 01:34:07,751
+Şimdi artık ne gibi...
+
+531
+01:34:07,859 --> 01:34:21,159
+bilgileri manipüle edecek onu konuşabiliriz ve genel yapıyı da konuşabiliriz. Bir, bu anki single cycle prosesi, öncelikle tüm register işlemleri gerçekleştirebilir.
+
+532
+01:34:21,739 --> 01:34:30,699
+Register tipindeki şeyleri. İkincisi, load ve store work yapabilir. Üçüncüsü de branch equal komutunu koşturabilir.
+
+533
+01:34:32,083 --> 01:34:57,443
+Ne yapıyor bu adam? Instruction şurada var zaten. Instruction'ı alıyor ve çözümlüyor bakın. Bu instruction bilgilerini almış çözümleyecek. Çözümledikten sonra şuradaki kontrol sinyallerini üretecek. Ve ilgili yerlere bağlayacaksın. Artık senin çok fazla düşünmene gerek yok. O senin yerini zaten çözüyor olacak. Peki neler girişe giriyor? Onu bir düşünelim.
+
+534
+01:34:58,131 --> 01:35:11,151
+Aslında control unit ne tip bir işlem yapılacağını merak ediyor. Bakın opcode, function 3, function 7 ve zero bilgisini de ALU'dan alıyor. Şuradan aldığı kontrol edecek.
+
+535
+01:35:12,751 --> 01:35:20,151
+Şu an için bakın zero bilgisini aldı. Eğer büyüktür, küçüktür, kartlaştırması olsaydı o zaman bunun...
+
+536
+01:35:20,595 --> 01:35:38,875
+Negative, Carry, Overflow gibi bayraklarını da alacaktı adam. Ama şimdi çok basit bir şey var. Şu an ancak BEQ gibi ya da BNE gibi, Branch Classical gibi komutları ancak gerçekleştirebilecek bir bilgiye sahip.
+
+537
+01:35:40,255 --> 01:35:41,595
+Şöyle bir bakalım.
+
+538
+01:35:42,484 --> 01:35:53,704
+Şu an bunun içerisini tasarlayacağız bir ara verdikten sonra ama son olarak bir şeyin tekrarını yapalım. Hangi kısım neyi sağlayalım?
+
+539
+01:35:53,704 --> 01:36:09,584
+Bir, öncelikle bizim elemanlarımız içerisinde senkron olan elemanlar neler? Bir, burada bir flip-flop var. Buna bir clock işareti geldiğinde anında çıkışa yansıtmış oluyor. Burada bir clock işareti var, burada bir clock işareti var.
+
+540
+01:36:10,036 --> 01:36:18,515
+Bu clock işaretleri anında, yani daha doğrusu yükselen kenardan sonra bir gecikme ile birlikte girişi çıkışa yansıtmış olacak.
+
+541
+01:36:19,835 --> 01:36:32,956
+Onun dışında, diyelim ki mesela load word birden. Ne yapması lazım? Daha doğrusu buradaki kontrolleri nasıl sağlayabilir?
+
+542
+01:36:34,895 --> 01:36:57,595
+Load Word girdiğine göre hemen diyecek ki bu ALU sorsu 1 olmak durumunda. Çünkü neden? Immediate bilgisi gelmesi lazım şuradan. Şurayı şöyle bağlaması lazım. İkincisi, register'a yazma yapacak mıyım? Evet. Word'u zaten yükleyeceğim, memoriden yükleyeceğim. O yüzden burası 1 olmak durumunda.
+
+543
+01:36:58,771 --> 01:37:08,172
+Üçüncüsü, ALU kontrolüne ne vereceğim? Toplama yapacağı için 0,0,0 vermem lazım. Başka, şurası 1 dedik.
+
+544
+01:37:10,432 --> 01:37:18,212
+ImmediateSource, 0,0 vermem gerekiyor. 0,0 verirsem ona göre ilgili komutu açıp immediate bilgisini çekebilir.
+
+545
+01:37:20,659 --> 01:37:27,559
+Data memory'e bir şey yazacak mıyım? Hayır, yazmayacağım. Sıfır. Çünkü okuma yapacağım ben sadece.
+
+546
+01:37:29,039 --> 01:37:35,779
+Ve burada okuduğum değeri register'e yazmam gerektiği için buradaki MUPS'a 1 vermem lazım ki bu çıkışa yansısın.
+
+547
+01:37:37,399 --> 01:37:40,439
+Bu durumda aslında bütün kontrol sinyallerini ürettik mi? Bakıyorum.
+
+548
+01:37:41,059 --> 01:37:46,379
+Memory write sıfır olacak dedik. Şu sıfır sıfır sıfır dedik. Immediate source sıfır sıfır dedik.
+
+549
+01:37:46,836 --> 01:38:03,916
+Program counter'un değeri değişsin mi? Hayır, değişmesin. Çünkü bir dallanma komutu işletmiyorsun burada. O yüzden bu rutin program counter'u 4 artırmaya devam etsin.
+
+550
+01:38:04,916 --> 01:38:07,356
+Bir özet geçebiliriz.
+
+551
+01:38:09,076 --> 01:38:15,376
+Umuyorum anlaşılabiliyordur. Çok böyle online olduğu için çok iyi göremiyorum sizi.
+
+552
+01:38:22,163 --> 01:38:27,583
+Bir 10 dakikalık ara verelim arkadaşlar. Ondan sonrası da devam edebiliriz.
+
+553
+01:50:12,467 --> 01:50:17,108
+Evet, tekrar merhaba. Setimin geliyor olunca bir kontrolü yapayım.
+
+554
+01:50:27,283 --> 01:50:28,283
+Tamam, teşekkür ederim.
+
+555
+01:50:34,100 --> 01:50:48,060
+Şu anda aslında şöyle bir şimdiye kadar az bir akış izledik. Komutları çözüp bunu en azından verdiğimiz 4 komut için gerçekleyebilecek bir donanım ortaya çıkarmaya çalıştık.
+
+556
+01:50:48,659 --> 01:50:56,940
+Bakın soyutlamanın nasıl işe yaradığını görüyorsunuz değil mi? Yani burada mesela belleği alıp koyuyorsunuz buraya ama belleğin içerisiyle hiçbir işiniz yok.
+
+557
+01:50:56,940 --> 01:51:00,820
+Bu sayede bu abstraction ya da soyutlama denilen şey.
+
+558
+01:51:01,171 --> 01:51:15,431
+Çok büyük avantaj sağlayabiliyor. Belki bunu böyle bir kutu haline geçirip, daha doğrusu bir donanım tasarımı olarak getirip, bunu çok çekirdekli versiyonunda yapabilirsiniz.
+
+559
+01:51:15,431 --> 01:51:24,431
+Yani birbirini kopyalayarak. Tabii kontrol sinyalini iyi kontrol etmeniz gerekecek ama en düşükten en yükseğe kadar...
+
+560
+01:51:24,543 --> 01:51:38,224
+Farklı seviyelerde soyutlama yapmak çok büyük avantaj sağlıyor diyebiliriz. Şimdi bizim derdimiz şu. Kontrol sinyali, kontrol ünitesi üretiyorduk. Şimdi kontrol ünitesini tasarlayalım.
+
+561
+01:51:39,503 --> 01:51:48,864
+Şeklinde bir derleme yapacağız. Tek çevremli bir bilgisayar olduğunu düşünelim. Onu sağlayacak şekilde ilerleyeceğiz.
+
+562
+01:51:49,684 --> 01:52:06,583
+Control unit'in çıkışında elde etmesi gereken şeyler bunlardı. Biz bunu high level view'da görüyorduk, bu şekilde modellemiştik. Bunu biraz daha long level view'da nasıl elde edilmesi gerektiğini yorumlamaya çalışalım.
+
+563
+01:52:18,547 --> 01:52:19,627
+High Level View.
+
+564
+01:52:20,627 --> 01:52:22,287
+Aynı gelmiş oluyor.
+
+565
+01:52:23,528 --> 01:52:26,868
+Şu control unitin içerisi olmuş oluyor dolayısıyla şu anda.
+
+566
+01:52:28,507 --> 01:52:32,327
+Aslında bu iki farklı temel bileşenden oluşabilir diyor.
+
+567
+01:52:32,568 --> 01:52:36,547
+Birincisi, Main Decoder.
+
+568
+01:52:37,488 --> 01:52:46,127
+Aslında sen burada Operational Code'un ilk 7 bitini verirsen, bu durumda ben bunun ne yapacağını bildiğimden,
+
+569
+01:52:47,412 --> 01:52:58,172
+Mesela BEQ'nun bir op kodu var. Bu durumda benim dallanma yapmam lazım, program kaunteri değiştirmem lazım. O yüzden gibi branca bir şey yapması gerektiğini bilebilir.
+
+570
+01:52:59,192 --> 01:53:06,892
+Ve işte result'u yazacak mı, hafızaya yazacak mı falan gibi tüm bilgiler aslında komut bazlı biliniyor.
+
+571
+01:53:07,764 --> 01:53:18,224
+Bu operation kodları biraz daha net göstermek adına ben kitaptan bir şey yapayım, göstereyim. Şunların hepsini en başta bir sileyim, kafa karışıklığı yaratmasın.
+
+572
+01:53:18,224 --> 01:53:26,663
+Kitabın son sayfasında arkadaşlar, RISC-V Instruction Set Summary olarak bir bilgi.
+
+573
+01:53:27,188 --> 01:53:50,167
+Bu bilgi kısmının şurası zaten komutların nasıl farsetileceğiyle ilişkili bir bilgi sağlıyor. Burası ise ilgili komutların ne işlem yaptığını bakın, operasyonun nasıl oluştuğunu söylüyor. Hangi anlama geldiğini söylüyor. Nasıl kullanılması gerektiğini söylüyor. Hangi tipte bir komut olması gerektiğini söylüyor ve onlara ait
+
+574
+01:53:51,188 --> 01:54:14,207
+Operation kodları, Function 3 ve Function 7'ler bulunuyor. Şimdi sana bakacak olursanız, mesela gruplayalım. Register ile başlayan tüm işlemler, şuan işaretliymiş olayım hatta ben onları. Şunlar. Bakın toplama, tıkarma, shift left, set less than.
+
+575
+01:54:14,739 --> 01:54:40,140
+XOR, bunların hepsini ALU ile tasarlayabileceğimizi söylemiştik. Bunlar ALU komutları aslında. ALU'yu kullanan, doğrudan kullanıp ve çıpışı da yazan komutlar. Bunların hep OP kodları aynı fark ettiyseniz. 51, 51, 51, 51. Yani ben OP kodda 51 görünce artık şunu biliyorum. Bu kesinlikle registerlardan bilgileri alacak, ALU'yu kullanacak.
+
+576
+01:54:41,043 --> 01:54:51,423
+Ve sonucu tekrar register'a yazacak. Program counter'ı değiştirmeyecek. Data memory ile işi yok gibi bazı çıkarımlar yapabiliyorum.
+
+577
+01:54:52,683 --> 01:55:06,703
+Başka bir şey daha bulabilirim. Mesela load word. Bunun op kodu farklı. Store word'ın op kodu farklı. Bir dakika, farklı mı? Farklı, evet.
+
+578
+01:55:08,307 --> 01:55:11,967
+VoteWorld ve StoreWorld'ın komutları farklı.
+
+579
+01:55:13,947 --> 01:55:17,587
+Bunun dışında, branch komutları var.
+
+580
+01:55:17,807 --> 01:55:21,967
+Bakın, branch ile başlayan branch equal, branch not equal, branch lower than.
+
+581
+01:55:22,608 --> 01:55:24,307
+Bunların hepsinin opcode'ları aynı.
+
+582
+01:55:24,735 --> 01:55:40,876
+Yani buradan şunu anlıyoruz. Yapılacak işin genel karakteristiği opcode içerisinde zaten saklı. Zaten ona göre şuradaki program counter source, result source gibi böyle bitleri çıkartabilirim.
+
+583
+01:55:41,203 --> 01:55:59,903
+Buna göre main decoder mesela bir şey olabilir. İstediğim çıkışları verecek şekilde bir devre tasarlayabilirim. Adam benim yerimi decode edecek. Gerçekten şifre çözme işi gibi düşünebilirsiniz. Buradaki bu yeni bitki şifreyi çözecek ve ilgili sinyalleri üretecek.
+
+584
+01:56:06,100 --> 01:56:20,020
+Fark ettiyseniz, function 3, 0, 0, 0. Çıkarma için, ilginç burası, 0, 0, 0. Çıkarma için 0, 0, 1 demiştik ama burası neden böyle kalmış bilmiyorum.
+
+585
+01:56:24,724 --> 01:56:26,824
+Function 7'de bir farklılık oluşuyor.
+
+586
+01:56:27,824 --> 01:56:29,344
+Toplamayla çıkarma arasında.
+
+587
+01:56:31,503 --> 01:56:40,444
+Muhtemelen bunlar 0, 0, 0 girilmesinin sebebi birim işlem olarak toplayıcı ve çıkarıcı aynı donanım üzerinden gerçekleştiriliyor.
+
+588
+01:56:40,583 --> 01:56:42,244
+Onu söylüyor olabilir.
+
+589
+01:56:44,264 --> 01:56:45,824
+Diğerleri farklılaşıyor.
+
+590
+01:56:46,163 --> 01:56:47,864
+1, 1, 1 mesela AND işlemi.
+
+591
+01:56:47,984 --> 01:56:50,024
+1, 1, 0 OR işlemi.
+
+592
+01:56:50,284 --> 01:56:51,043
+1, 0, 1.
+
+593
+01:56:51,439 --> 01:57:04,719
+shift right alitmetik, 101 tekrar shift right left anlamına geliyor. Yani benzerliklerin olan kendi içerisindeki benzerlikler olan komutlarda function 3 tarafında benzer kodlara sahip.
+
+594
+01:57:05,959 --> 01:57:10,979
+Şimdi bunları neden konuşuyoruz? Çünkü bu dekoderin bu şekilde anlaması ve anlatması lazım.
+
+595
+01:57:11,839 --> 01:57:15,959
+Günün sonunda şurada operation'ı çözdükten sonra alo operation.
+
+596
+01:57:16,692 --> 01:57:22,952
+1 ve 0 bilgisi buradan çıkacakmış. ALU, operation 1 ve 0 ne demekti? Onu anlayalım.
+
+597
+01:57:25,192 --> 01:57:29,851
+Burada onunla ilgili bir şey yazıyormuş. Yok. Orada yeni çıkan bir bilgi herhalde.
+
+598
+01:57:36,051 --> 01:57:43,832
+Biraz ilerleyelim. Muhtemelen onu da açacak. Bu bilgi yukarıdan paylaşılıyor oluyor. Buradaki 5. biti yukarıdan çekiyoruz.
+
+599
+01:57:44,532 --> 01:57:56,091
+Function 3 ve Function 7 bilgilere giriyor. Böylelikle ALU decoder bunun ALU control tarafında neler yapacağını tanımlamış oluyor. Biraz daha detayına ineceğiz zaten.
+
+600
+01:57:57,872 --> 01:58:05,131
+Mesela load word, op kodu 3'müş. Store word op kodu 35, 51 ve 99 şeklinde verdim.
+
+601
+01:58:06,032 --> 01:58:08,372
+Şimdi burada ben size sormuş olayım.
+
+602
+01:58:13,587 --> 01:58:33,068
+Tekrar anlatmam lazım ama ne yapıyorduk? X9 artı eksi 4 yapıyorduk. Hafızanın bu gözündeki değeri alıp bir register'a atıyorduk.
+
+603
+01:58:33,068 --> 01:58:39,068
+Burada X6, X9 çok önemli değil. Genel olarak yapılan şeyi anlatmak istedim. Bu durumda...
+
+604
+01:58:39,796 --> 01:58:45,976
+Register'a yazma biti aktif olacak mı sizce? Şuradan bakabilirsiniz.
+
+605
+01:58:54,131 --> 01:59:02,091
+Şöyle iki tarafa da alabilirim aslında. Daha iyi görmeniz açısından. Bunu burada açayım.
+
+606
+01:59:16,979 --> 01:59:18,039
+Ne sepacim.
+
+607
+01:59:25,140 --> 01:59:50,820
+Evet, şuradaki load word fonksiyonuyla ilgili konuşuyoruz. Az önceki şeyleri tekrar ben soruyorum aslında size. Bu mimaride, şöyle sol tarafta verdiğimiz mimaride, load word komutu geldiğinde, reg write, 1 mi olacak, 0 mi olacak?
+
+608
+01:59:57,300 --> 02:00:00,840
+X6'ya yazıyorduk o zaman. Yazma 1 olacak.
+
+609
+02:00:01,539 --> 02:00:10,220
+Evet. Bu işin sonunda load word adı üstünde memory'den okuyacak ve bir register'a yazacak. O yüzden bunun yazma kısmı 1 olması lazım.
+
+610
+02:00:12,199 --> 02:00:16,720
+Immediate source, bunun zaten 0,0 olması gerektiğini az önce konuşmuştuk.
+
+611
+02:00:16,880 --> 02:00:20,000
+ALU source tarafında bir toplam işlemi yapılacak.
+
+612
+02:00:21,939 --> 02:00:25,659
+Bunun 0.0.0 olarak verilmesi lazım.
+
+613
+02:00:26,060 --> 02:00:30,939
+Tekrinde yorumlayarak gittiğimizde aslında az önce yazdığımız...
+
+614
+02:00:35,636 --> 02:00:57,456
+Kısımları oluşturmuş oluyoruz. Yani her türlü load word fonksiyonu gelirse bunları sağlaması lazım. Böyle bir mekanizma korumanız lazım. Bunun load word olduğunu ok koduna bakıp şu şu şu bitlere sahipse o zaman register write 1'dir, immediate source 0 0'dır, alo source 1'dir şeklinde kontrolün. Bunu sağlayacak.
+
+615
+02:00:57,976 --> 02:01:02,916
+Yine store word'de bu bitlerin vermesi lazım. Bakın.
+
+616
+02:01:03,380 --> 02:01:08,599
+Mesela store word tarafında result source'u kullanıyor mu acaba adam? Bakalım.
+
+617
+02:01:09,699 --> 02:01:17,079
+Store word demek aslında alınan bir bilgiyi register'a yazmamak anlamına geliyor.
+
+618
+02:01:18,979 --> 02:01:24,559
+Program memory'e yazmak anlamına geliyor. Bu biraz da mouse cycle tarafını göstermiş.
+
+619
+02:01:24,559 --> 02:01:30,359
+Bizim açına olduğumuz kısım şurada.
+
+620
+02:01:35,796 --> 02:01:45,576
+Storyboard yaptığınızda aldığınız bir register değerini data memory'e yazacaksınız. Yazacaksanız o zaman bu yurdaki memwrite 1 olması lazım.
+
+621
+02:01:47,515 --> 02:01:55,515
+Ve şuradaki bilgiye ihtiyaç var mı? Result korsunun ne olması lazım sizce?
+
+622
+02:02:01,811 --> 02:02:05,912
+Register'a bir yazma işlemi gerçekleştirmiyor mu sonuçta?
+
+623
+02:02:06,572 --> 02:02:13,012
+Gerçekleştirmiyoruz. Bunlardan herhangi biri mi olsun yani? Sonuçta seçeceğim bir tanesini.
+
+624
+02:02:14,891 --> 02:02:16,472
+Fark etmeyecektir.
+
+625
+02:02:17,252 --> 02:02:28,512
+Fark etmeyecektir. Siz şuradaki write enable'a bir vermediğiniz sürece yazma işlemi gerçekleştirmeyeceğinden şunun don't care olması gerekiyor.
+
+626
+02:02:29,011 --> 02:02:42,011
+Bir an için düşünün. ALU'nun çıkışını sağladığını düşünün. 0 verdiğini düşünün. ALU'nun çıkışı burada var ve sanki yazılacakmışsın gibi düşünüyor. Ama burayı write enable dediğim gibi vermiyorsunuz.
+
+627
+02:02:42,011 --> 02:02:55,011
+O yüzden herhangi birisinin ne olması etkilemiyor. Buna don't care x çarpı koyuyoruz. Branch'ı 0, HALU operation 0. İkisinde de kalklama yapıyor çünkü.
+
+628
+02:02:56,787 --> 02:03:03,027
+Register tipinde, register'a yazması gerekiyor tekrar, işlem yapabilmesi için.
+
+629
+02:03:04,567 --> 02:03:09,287
+Immediate source'u ne olursa olsun hiç önemli değil. Şöyle tekrar gelebilirsiniz.
+
+630
+02:03:10,527 --> 02:03:18,087
+Immediate source neyi belirliyordu? Eğer burada ALU'nun gireşinde bir sabit sayıyı kullanacaksam bu anlamı oluyordu.
+
+631
+02:03:25,524 --> 02:03:31,884
+0 olacak ve immediate source dediğin buradaki bit don't care olacak.
+
+632
+02:03:33,284 --> 02:03:35,324
+Hali source 0 olacak demiştik.
+
+633
+02:03:36,084 --> 02:03:37,684
+Hafızaya yazacak mısın? Hayır.
+
+634
+02:03:38,304 --> 02:03:41,164
+Çünkü registerlardan toplayıp yine register yazman lazım.
+
+635
+02:03:42,224 --> 02:03:46,804
+Peki sonuç registerdan mı gelsin yoksa hafızadan mı gelsin?
+
+636
+02:03:46,963 --> 02:03:49,404
+Tabii ki registerdan gelsin. O yüzden 0 yazıyorsun.
+
+637
+02:03:50,163 --> 02:03:54,884
+Branch tarafında bir işlem yapacak mısın? Program counter'ın değişecek mi? Hayır.
+
+638
+02:03:56,183 --> 02:03:58,443
+ALU tarafında nasıl bir operasyon yapacaksın?
+
+639
+02:03:59,603 --> 02:04:05,063
+ALU Operation burada özellikle şey yapmış, 1-0 şeklinde bir şey çıkarmış.
+
+640
+02:04:05,363 --> 02:04:07,443
+Tamam neyse bakarız karşılığına birazdan.
+
+641
+02:04:10,224 --> 02:04:14,863
+Çünkü bu doğrudan donanım içerisinde ALU Operation diye bir şey yok gördüğüm kadarıyla.
+
+642
+02:04:14,863 --> 02:04:14,923
+Yok.
+
+643
+02:04:17,363 --> 02:04:22,264
+ALU operation, sonradan ALU control'ün bilgisini çıkardık. Tamam.
+
+644
+02:04:24,283 --> 02:04:27,363
+Branch durumunda bir register'ı tekrar yerine yazmıyorsun.
+
+645
+02:04:28,384 --> 02:04:37,283
+Immediate bir bilgi çekmiyorsun. Bir dakika çekiyor musun? Çekiyorsun. Bunun immediate bilgisi de program counter'dan ne kadar çıkaracağın ve ekleyeceğin oluyor.
+
+646
+02:04:37,283 --> 02:04:44,243
+O yüzden bunu kullanıyorsun. ALU source tarafını bir düşünelim.
+
+647
+02:04:46,707 --> 02:04:48,427
+Ali Sors tarafını düşündüm.
+
+648
+02:04:51,148 --> 02:04:56,948
+Buradan mı alsın, buradan mı alsın diyor. İkisini farkına alacağın için Ali Sors'un sıfır olması lazım.
+
+649
+02:04:58,247 --> 02:05:01,127
+Hafızaya yazacak mısın bir şey? Hayır, yazmayacaksın.
+
+650
+02:05:01,847 --> 02:05:08,287
+Sonucun register'dan mı gelsin yoksa data'dan mı gelsin? Senin için önemli değil.
+
+651
+02:05:09,287 --> 02:05:11,167
+Neden önemli değil? Söyleyebilecek olan var mı?
+
+652
+02:05:28,756 --> 02:05:45,916
+Neticede iki değeri çıkarıyorsun. İki değer çıktıktan sonra zero flaynup kontrol ediyorsun. Yani senin sonuçla işin yok. O yüzden sonucun ne olursa olsun zaten yazma işlemi de yapmayacağın için branch kısmında bir olmuş oldu.
+
+653
+02:05:45,916 --> 02:05:56,036
+ALU operation 0-1 oldu. Şu ALU operation'ı birazdan anlatacak muhtemelen. Ama onun dışındaki kısımlarda eğer anlamadığınız bir şey varsa lütfen söyleyin.
+
+654
+02:05:56,659 --> 02:05:59,399
+Vay mutlu anlatalım. İyice okuyorsun yani.
+
+655
+02:06:10,323 --> 02:06:14,583
+Şunu da diyebilirsiniz. Hocam hiç anlamadım. Bu opsiyonunuzda var.
+
+656
+02:06:25,939 --> 02:06:35,539
+Tamam. Şimdi ALU neticede şu özelliklere sahipmiş ALU control kısmında 00 001 dediğinde subtract.
+
+657
+02:06:35,539 --> 02:06:49,139
+Az önceki şey 010 dediğinde and or way shift less than diyor. Set less less than diye bir fonksiyonu vardı. Bu zaten sizin ödevde de yaptığınız.
+
+658
+02:06:49,427 --> 02:07:03,067
+İşlem diyebiliyorum. Review demiş zaten. Yeni öğrendiğimiz bir şey yok. ALU böyle çalışıyor. Dolayısıyla ALU'ya bunları gerçekleştireceğini bilerek bir işlem yaptırmamız gerekecek.
+
+659
+02:07:04,067 --> 02:07:14,907
+Şimdi şunu yorumlamamız lazım. Eğer ALU operasyonu da sıfır sıfır bilgisi geliyorsa hangi durumda veriyordu? Ona bir bakalım.
+
+660
+02:07:15,956 --> 02:07:39,556
+Load Word tarafında veya Store Word tarafında sıfır sıfır veriyor. Bu ne anlama gelir? İkisinde de toplama yapacağımı biliyorum aslında. Bu yüzden toplama yapması lazım sistemin. Bunlar ne olursa olsun, şu ALU operasyonunda sıfır sıfır vermesi demek, senin bir şeyi hafızadan yükleyeceğini veya Store edeceğini söyler.
+
+661
+02:07:40,212 --> 02:08:02,892
+Hafızada bir register'ın belirli bir öteleme değerine gideceğin için bir toplama yapman lazım. Az önce gördük zaten. Bu OK. Şunlar ne olursa olsun toplama yapacağız. Peki 0,1 hangi durumda vardı ona bakıyoruz. Branch equal 0,1 veriyormuş. Branch işleminde nasıl bir işlem gerçekleştiriyorduk?
+
+662
+02:08:03,539 --> 02:08:12,359
+Aslında iki register'ın farkını alıp eşit mi diye kontrol ediyorduk. Yani farkını alma ile ilgili bir opcode olması lazım.
+
+663
+02:08:12,439 --> 02:08:18,579
+Ali kontrolü olması lazım pardon. Bu da farkını almak için gerekli olan kısım.
+
+664
+02:08:19,039 --> 02:08:27,679
+Ali operasyonu 1.0 ise zaten ne yapman gerektiğini söylemiş olacak. Register işlemi yapacağın kesin.
+
+665
+02:08:28,819 --> 02:08:35,659
+Function 3'te hangi tip bir register işlemi yapacağı kabaca belli. Bunun daha özel halleri de burada bulunuyor.
+
+666
+02:08:38,199 --> 02:08:44,619
+Bir dakika. Burada neden 3 tane vermiş? Bunlardan birisi olabilir anlamında mı vermiş acaba?
+
+667
+02:08:50,771 --> 02:09:13,392
+Function 3, 0, 0, 0, op 5, op 5 ve Function 7 çifti. Bu bir çift, bu bir çift, bu da başka bir çift. Bunlardan herhangi biri gelirse toplama yap diyor. Bunlardan herhangi biri neyi söylüyor acaba? Onu söylemiş mi? Söylememiş.
+
+668
+02:09:18,292 --> 02:09:32,271
+SAP'da bir tane var fark ettiyseniz. Add'de üç tane ikili koymuş. Şunları da don't care zaten. Ne gelirse gelsin. Aritmetik, pardon, shift işlemleri veya lojik işlemlerde böyle bir şey kullanmıyormuş.
+
+669
+02:09:35,511 --> 02:09:44,072
+Şu kısmı bir daha merak ettim. OP5 Function 7'nin beşincisi. En sona gidelim.
+
+670
+02:09:50,452 --> 02:10:15,712
+Toplama konunun komutunda Operation'ın beşincisi 1, 2, 3, 4, 5, şu baştan üçüncü oluyor. Baştan üçüncü hep 1 zaten. Yanlış mı yorumluyorum? Burada 0, 0, 1, 0, 1 olduğu durumlar var.
+
+671
+02:10:18,676 --> 02:10:21,216
+Neyse. Birazdan bakarız. Daha deklayalım.
+
+672
+02:10:27,796 --> 02:10:53,576
+Burada bir simülasyon yapmış aslında. Ant işlemi gerçekleştirilirse ne yapacak? Adam ant işlemi sonrasında bunun register tipinde bir işlem olduğunu biliyor. Şuraya bakacak bir tablosu var. Register tipinde herhangi bir işlem için üretmesi gereken kontrol sinyalleri hali hazırda burada gizli.
+
+673
+02:10:54,195 --> 02:11:03,516
+Hatta burada 1.0 üretiyormuş. Bunu da bir sonrakiyle paylaşıyor. Bunun 5. biti ve bunun diğer bitleri birleşerek ALU kontrolünü oluşturacak.
+
+674
+02:11:07,796 --> 02:11:13,316
+Öncesinde şunu söyleyeceğiz. Bu register işlemi sonrasında program counter'ın değeri değişecek mi? Hayır.
+
+675
+02:11:15,216 --> 02:11:24,036
+Bir sonraki 4 arttırılmış program counter değeri kullanılacak. Ondan yana bir şey yok. Bu tamam.
+
+676
+02:11:31,155 --> 02:11:40,515
+Program çekildi ve instruction olarak okundu. Instruction'ın belirli bölümleri register file ile ve control unit ile paylaşıldı.
+
+677
+02:11:42,076 --> 02:11:50,676
+Control unit'e bu bilgi geldiği zaman artık mesela register tipinde olduğu için register write'ın 1 olması gerektiğini biliyor.
+
+678
+02:11:54,387 --> 02:12:05,047
+şu register item 1 olması gerektiğini biliyor. Şunun don't care, bunun 0, 0, 1, 0, 0, 0 olması gerektiğini biliyor.
+
+679
+02:12:06,707 --> 02:12:16,167
+Ve ALU, control source'tan 0, 1, 0 gelmiş. Çünkü zaten N ve karşılık gelen bilgi olmuş oluyor.
+
+680
+02:12:21,363 --> 02:12:29,563
+Buraya kadar aslında control unitin nasıl davranması gerektiğini ve nasıl planlanması gerektiğini kabaca görmüş olduk.
+
+681
+02:12:30,603 --> 02:12:39,603
+Şimdi single cycle işlemciyi biraz daha geliştirmek istiyoruz. Geliştirirken yapılacak şeyler şunlar herhalde.
+
+682
+02:12:40,627 --> 02:13:04,747
+Bizim register tipindeki işlemlere olanak sağlıyor şu anda, hali hazırda. Şunların bir kısmını yapabiliyoruz. Load Word, Store Word yapabiliyoruz. Ve bir tane branş işlemi yapabiliyoruz. Adam diyor ki, buradaki toplam işlemlerinin bir de immediate'lı versiyonu vardı diyorum. Bakın burada ikisi arasındaki farkı hızlıca hatırlatayım.
+
+683
+02:13:06,771 --> 02:13:16,132
+SOURCE 7 ile, yani 1 ile pardon, 1. register ile 2. register'ı koplayıp, DESTINATION register'ı yazıyor iken,
+
+684
+02:13:17,092 --> 02:13:24,812
+ATIMMEDIATE komutu, 1. register'ın üstüne bir sabit değer ekleyerek yeni değeri elde ediyor.
+
+685
+02:13:25,892 --> 02:13:31,652
+Mesela şu anki mimari, bunları da tamamını destekleyecek hale getirebilir miyiz?
+
+686
+02:13:32,275 --> 02:13:36,956
+Niyetiyle biraz daha işlemciyi extend ediyor ya da iyileştiriyor.
+
+687
+02:13:37,815 --> 02:13:45,796
+Şimdi böyle bir şey yapacaksa, bu tarz bir yapı kuracaksa, tek fark aslında şu.
+
+688
+02:13:46,676 --> 02:13:53,056
+Daha öncesinde X9, mesela X2 ile X5'i topladığında böyle yapıyordu.
+
+689
+02:13:57,615 --> 02:14:08,235
+ALU'nun ikinci girişine vermesi lazım. Şurada bir immediate bilgisi var. Burada söylediği gibi ikinci kaynak immediate'den gelmesi lazım.
+
+690
+02:14:12,083 --> 02:14:29,564
+Bu yüzden de ALU source'u immediate'ı gösterecek şekilde seçmesi gerekecek. Şöyle gelecek olursak, bakın şurada bir ALU source vardı. Eğer bu aşağıdan gelirse, sabit bir değer olarak, o zaman bu iş yapılabiliyor olacak.
+
+691
+02:14:33,555 --> 02:14:43,295
+Şimdi bir kural daha koymuş olduk aslında. Immediatlı bir aritmetik eklem varsa o zaman ALI sorsu her durumda 1 olması lazım.
+
+692
+02:14:48,020 --> 02:14:55,000
+Immediate Source'un en doğru immediate bilgiyi çekmesi lazım. Şimdi detaylandıracağız.
+
+693
+02:15:00,756 --> 02:15:27,536
+Bu herhangi bir immediate tipindeki komutu gösteriyor. Bu durumda bu işlem sonrasında el iyi yaptığınız zaman mesela şuraya biraz daha düzenleyelim. X5 ve 5 dediniz mesela. X5'in üstüne 5 ekleyip X9'a yazacak. Yazmayı rejistir üzerinde yapacağı için burası 1.
+
+694
+02:15:30,292 --> 02:15:38,311
+Daha sonra ALU source'un 1 olması lazım. Çünkü ALU'nun ikinci kolunda immediate'dan şu bilginin gelmesi lazım.
+
+695
+02:15:39,792 --> 02:15:46,612
+Hafızaya bir bilgi yazacak mı? Hayır. Hafızada bilgi yazmayacak. Çünkü register'a yazacak zaten. Bu da 0 olması lazım.
+
+696
+02:15:47,932 --> 02:15:53,672
+Result source seçiminde register'dan gelen bilginin kullanılması lazım. Şunu demeye çalışıyorum.
+
+697
+02:15:58,931 --> 02:16:01,611
+Az önceki kısmı tek aylıklanan gerekecek.
+
+698
+02:16:01,611 --> 02:16:03,111
+Şöyle.
+
+699
+02:16:05,771 --> 02:16:08,111
+Programı anlamına inşallah.
+
+700
+02:16:11,111 --> 02:16:12,011
+Evet.
+
+701
+02:16:18,868 --> 02:16:28,068
+Şurada bu bilgi, register'da çıkan bilginin tıkışa yansıması lazım. O yüzden result selection 1 olacak, 0 olacak daha doğrusu.
+
+702
+02:16:28,668 --> 02:16:31,948
+Brunch işlemi yapmıyoruz. Yapmadığımız için 0 olacak.
+
+703
+02:16:33,528 --> 02:16:35,868
+ALU operation da 1, 0 olarak vermiş.
+
+704
+02:16:48,051 --> 02:17:00,031
+ImmediateSource 00 çünkü bu da aslında I tipinde bir instruction'du. Ama burada load işlemi yapıldığı için bir farklılık oluşmuş oluyor.
+
+705
+02:17:01,971 --> 02:17:17,351
+Bakın burada daha ayrıntılı bir şekilde her birine gitmesi gereken sinyal paylaşılmış durumda. Bu durumda akış nasıl olacak? Komutu aldım, okudum. Komut, add-i ya da sub-i gibi bir imediat içeren komut.
+
+706
+02:17:18,011 --> 02:17:26,491
+Buna göre ilgili kontrol sinyalleri, control unit tarafından üretildi. Akış nasıl olacak? İzleyelim. Bir kere yazma yapacağım.
+
+707
+02:17:29,424 --> 02:17:56,424
+Birinci bilgi buradan girdi. Şurada elde ettiğimiz değer geliyor. Bu değerin üstüne bir imeyi detekliyoruz. Mesela burada iki kez de X6-33 diyor. Şurada X6 var. Buradan X33 geliyor. Bunlar toplanıyor ve işlem konucu nereye yazılması lazım? Buraya. O yüzden çıkışı...
+
+708
+02:17:57,652 --> 02:18:09,152
+Buradan çıkışa veriyor. Yani o yüzden burasında sıfır yazılması lazım. Sonucu da register'a yazması lazım. O yüzden de zaten kontrol sinyalini bir öğretmesi lazım.
+
+709
+02:18:11,432 --> 02:18:13,932
+Başka bir şey var mı? Yok gibi duruyor.
+
+710
+02:18:15,316 --> 02:18:19,695
+Yani kolayca aslında immediate'lı fonksiyonları da gerçekleyebildik.
+
+711
+02:18:20,336 --> 02:18:26,056
+Tek yaptığımız farklılık şuradaki ALU'nun selection bacağını sabitten getirmek oldu.
+
+712
+02:18:27,636 --> 02:18:30,176
+Onun dışında başka bir şey yoktu sanki.
+
+713
+02:18:33,652 --> 02:18:43,131
+Şimdi JAL komutu var. Bu JAL aslında jump and linkti galiba. Yanlış hatırlamıyorsam.
+
+714
+02:18:43,991 --> 02:18:52,652
+BAQ gibiydi ama hatırlarsanız fonksiyona dallanırken program counter'ın değerini bir registra kaydediyorduk.
+
+715
+02:18:53,511 --> 02:18:57,932
+Bu sayede aslında dallanmış oluyorduk.
+
+716
+02:19:00,048 --> 02:19:05,648
+Aslında şurada şeyde bakabiliriz, JAL komutunun daha da ayrıntılı haline bakabiliriz.
+
+717
+02:19:06,247 --> 02:19:08,468
+Hani direkt kafadan konuşmamak adına.
+
+718
+02:19:10,567 --> 02:19:11,648
+Şurada JAL var.
+
+719
+02:19:13,108 --> 02:19:16,948
+JAL, R'de, yani destination register ve label alıyor.
+
+720
+02:19:18,008 --> 02:19:19,728
+Jampan linkmiş açıklaması.
+
+721
+02:19:20,927 --> 02:19:22,048
+Aslında...
+
+722
+02:19:23,700 --> 02:19:27,940
+Burada şu anki program counter değerini yedekliyor olması lazım.
+
+723
+02:19:30,000 --> 02:19:34,240
+Ve program counter'a label'ın olduğu adresi yükleyecek.
+
+724
+02:19:35,620 --> 02:19:39,560
+Yani aslında iki farklı işlem var. O yüzden bunu virgül koyarak yapmış.
+
+725
+02:19:40,659 --> 02:19:46,340
+Öncelikle program counter'ın değerini GERT ekleyerek bir register'a yazıyor.
+
+726
+02:19:46,340 --> 02:19:48,236
+Ondan sonra...
+
+727
+02:19:48,468 --> 02:19:53,528
+Artık program kartının şu anki değerini değiştiriyor ve ilgili yerine dallanıyor.
+
+728
+02:19:54,868 --> 02:19:58,528
+Bu yüzden branch işlemleriyle karıştırmayın JALP komutunu.
+
+729
+02:20:01,108 --> 02:20:02,508
+Fonksiyon branchı gibi mi oluyor?
+
+730
+02:20:03,728 --> 02:20:05,628
+Evet, fonksiyon branchı doğru.
+
+731
+02:20:13,780 --> 02:20:34,240
+Evet. Yani buradaki kilit şey şu. Aslında dallandığı yer program kantorun 4 sonrası olması lazım. Yani şöyle bir şey aklınızda kurgulayabilirsiniz. Burası BIM. Şurada bir JAL komutu çağırdınız. JAL, RA ve Label dediniz. Label, SPIRIT 2000'lerde mesela.
+
+732
+02:20:42,515 --> 02:20:47,315
+Bu işlem yaptıktan sonra return yaptığında tekrar bu komutu işletecek oluyor.
+
+733
+02:20:48,975 --> 02:20:58,815
+O yüzden program counter'ın 4 sonrasını RA'ya yedekliyorsunuz ki işi bittiğinde bu komutun altından devam etsin.
+
+734
+02:20:59,235 --> 02:21:07,695
+O yüzden program counter'ın 4 sonrasını hesaplaması lazım ve bunu RA ya da RD içerisinde yazması lazım.
+
+735
+02:21:08,211 --> 02:21:11,711
+Bunu yapabilecek bir donanım kurgulamamız lazım.
+
+736
+02:21:12,311 --> 02:21:15,311
+Bir de immediate formatı biraz daha farklı diyor.
+
+737
+02:21:15,612 --> 02:21:20,711
+Bakalım immediate formatına da... Bu eski şey de vardı ama...
+
+738
+02:21:23,612 --> 02:21:30,311
+Bakın burada kod parse ederken J tipi diyor. Bu JAL komutları burada bulunuyor.
+
+739
+02:21:31,028 --> 02:21:36,488
+Aslında Immiged'in belli bitleri, sırrları değiştirilerek yazılmış.
+
+740
+02:21:37,067 --> 02:21:40,388
+Dolayısıyla bunu da çözümleyecek bir devreye ihtiyaç var.
+
+741
+02:21:41,407 --> 02:21:47,067
+Bunu zaten biz çoğunlukla girmiyorduk o işe. Bizim yerimize bir donanım yapıyordu.
+
+742
+02:21:49,708 --> 02:21:53,148
+Tamam. O zaman buradan devam edelim.
+
+743
+02:21:56,008 --> 02:21:57,996
+Şimdi öncelikle...
+
+744
+02:21:58,388 --> 02:22:19,508
+Burada dallanmayla ilgili bir şey vardı. Branç işlemi ve zilopayrağ durum bulunduğunda dallanıyordu. Ne zamandı? Branç ikul kendi. Şimdi hangi durumda dallanması gerekiyordu? Program source su hangi durumda değiştirmesi gerekiyordu? Bir.
+
+745
+02:22:19,951 --> 02:22:37,092
+Branch işlemleri komutu geldiyse, bu komut geldi diyelim, pop code'dan geldi. Main decoder dedi ki, burada evet, branch işlemi yapılacak. Bir de, zero bayrağı da birse, o zaman program counter'ın değiştirilmesi için bilgi gönderiyordu.
+
+746
+02:22:37,620 --> 02:22:49,920
+Bundan daha önceki durumda. Şimdi adam buna bir şey daha eklemiş. Bundan gelecek bilgi de program kantorun sorusunu değiştirsin kafasıyla diyor.
+
+747
+02:22:51,580 --> 02:23:00,080
+Şu aslında doğrudan branş işleminden gelen bilgi. Bu da veya jump gelirse, jall komutundaki gibi buradan bir gelirse.
+
+748
+02:23:00,979 --> 02:23:04,740
+Dolayısıyla bunu üretmiş olacak. Fark ettiyseniz branşla jump.
+
+749
+02:23:05,072 --> 02:23:19,231
+Ayrı birer çıktı olarak paylaşılıyor. Çünkü ikisi farklı işlevler sağlıyor. Ama günün sonunda ikisi de program sorusu değiştirdiği için bir yerde bağlanmış olmuşlar.
+
+750
+02:23:21,612 --> 02:23:25,011
+Şurada JAL tarafına bakalım. Jampenlink.
+
+751
+02:23:25,523 --> 02:23:35,923
+dediği şeyde. Evet, program counter'ın değeri günün sonunda register'a yazılacağı için register rights control sinyali 1 olarak veriliyor.
+
+752
+02:23:36,763 --> 02:23:45,063
+Immediate source tarafında bakın daha önce kullanmamıştık. 1, 1 diye bir çift kullanmış. Burada onun aynısını anlatmış.
+
+753
+02:23:46,543 --> 02:23:50,663
+Aslında olay şu, farklı tip komutlar olabiliyor. Bakın.
+
+754
+02:23:51,316 --> 02:24:08,396
+Ve komutların iteriği ve immediate'lar farklı bitler arasında. Mesela şurada en yüksek anlamlı bitlerde. Hepsini tamamen vermiş I tipinde. S tipinde işte şurada birkaç bitini vermiş. Şurada beş bitini burada vermiş.
+
+755
+02:24:10,036 --> 02:24:23,975
+J tipinde iyice zor çünkü 20. biti 10. bitten 1. bite sonra 11. biti koyarak sıralayarak vermiş. Bizim işimiz değil dediğim gibi. Buradaki bizim işimiz aslında buna ait bir donanımı tasarlamak.
+
+756
+02:24:25,876 --> 02:24:33,835
+Dolayısıyla şurada bir Extent modülü var ya, bu Extent modülü dışarıdan bir Immiged Source seçimi geliyor.
+
+757
+02:24:34,288 --> 02:24:56,668
+Komut buraya geldiğinde komutun ne tipte olduğunu biliyorsunuz dolayısıyla. Mesela LW dediğinde bu immediate tipinde bir komut olduğunu biliyorsun. Bu bilgi extant ile paylaşılıyor. Extant ona göre ilgili yerlerden immediate bilgilerini çekerek bu sabit sayıyı oluşturmuş oluyor.
+
+758
+02:24:58,288 --> 02:25:01,128
+J tipi içinde böyle bir sıralama yapmış.
+
+759
+02:25:09,012 --> 02:25:17,952
+ALU source nereden gelirse gelsin önemli değil. Çünkü ALU ile ilgili bir işlem yapmıyoruz sanırım. Evet yapmıyoruz.
+
+760
+02:25:19,031 --> 02:25:34,191
+Memory write 0. Result source. Bir dakika burada bir şeyler değişmiş. Çünkü result source da 0 1 vardı. Evet. Burada bir şeyler değişmiş.
+
+761
+02:25:34,804 --> 02:25:53,504
+Sebebi ne? Ona bir bakmaya çalışalım. Daha önceki komutlarınızda fark ettiyseniz result source iki taraftan seçilebiliyordu. Yani ne demek bu? Register'a yazılacak olan değer bir. Register'dan mı gelsin? Daha doğrusu alü'dan mı gelsin? Yoksa memory'dan mı gelsin?
+
+762
+02:25:54,355 --> 02:26:08,675
+Konu buydu. Ama şimdi ben buraya jantumunu da eklediğimde şunu yapmak gerekiyor. Program counter'ın 4 sonrasını hesaplayıp bunu aslında adamın şeye eklemesi lazım. Register'a yazması lazım.
+
+763
+02:26:10,435 --> 02:26:19,135
+Yazması gerekçe için de buraya bir tane daha switch atmak lazım. O da program counter'ın 4 sonrası değeri olacak.
+
+764
+02:26:23,188 --> 02:26:37,308
+Program Counter'ın 4 sonrasındaki değer zaten hesaplanıyordu otomatik bir yerde. Sen bunu getirmişsin, buraya koymuşsun ve bunun çıkışını da tekrar Register'a yazma imkanın oldu böylelikle diyebiliriz.
+
+765
+02:26:37,648 --> 02:26:42,387
+Şuraya 1-0 yazmadık. Şu an dolayısıyla Register'a yazabileceğimiz 3 farklı durum oluştu.
+
+766
+02:26:43,067 --> 02:26:49,028
+Bir, bu Register'dan gelebilir, Memor'dan gelebilir veya Program Counter'dan gelebilir oldu.
+
+767
+02:26:51,252 --> 02:27:03,312
+Evet, geldik. Şurada bu değişti demiştik. Bu böyle olacak. Branch işlemi yapılmayacak kesinlikle. Bakın, Jamp ile Branch aynı değil. O yüzden burası 0. Jamp biti de 1 olacak.
+
+768
+02:27:04,512 --> 02:27:09,652
+ALO, OPERATION dediği şey, DON'T CARE olacak şekilde gösteriyor.
+
+769
+02:27:20,244 --> 02:27:23,064
+Buraya kadar sormak istediğiniz bir şey var mı arkadaşlar?
+
+770
+02:27:33,940 --> 02:27:35,520
+Biraz bekleyin isterseniz.
+
+771
+02:28:01,396 --> 02:28:02,096
+Pequim.
+
+772
+02:28:09,492 --> 02:28:30,632
+Yine aynı yere gelmiş olduk. Şurada gerçekten ne kadar süre bir programın çalışma süresini hesaplamak için böyle bir komut sayısı çarpı bir komutu kaç saygılda yaptın çarpı her saygılda kaç saniye geçti.
+
+773
+02:28:32,115 --> 02:28:40,615
+ile ilgili bilgi koyuyorsun. Burada bir kritik pet tanımı var arkadaşlar. Öncelikle bunu anlatmak lazım.
+
+774
+02:28:42,036 --> 02:28:52,115
+Dersin başında size şöyle bir şey anlatmıştım. Farklı komutlar vardı. Bu komutları hitlettiğinizde normalde aynı sürede tamamlanmayabilir demiştik.
+
+775
+02:28:52,115 --> 02:28:59,956
+Mesela bazı işlemler daha uzun sürebilir. Burada kritik pet tanımı aslında tasarladığınız şu donanımda
+
+776
+02:29:00,755 --> 02:29:12,295
+En çok donanım işlemleri yaptıktan sonra geçecek süre. Yani şunu anlatmaya çalışıyoruz. TC dediğimiz şey bu kritik beti anlatmak üzere.
+
+777
+02:29:14,335 --> 02:29:24,755
+Tüm bunların hepsini kullanacağın bir senaryo aslında kritik beti tanımlamış oluyor. Şöyle ki program kankı zaten...
+
+778
+02:29:27,028 --> 02:29:49,048
+Şuraya bir clock sinyali geldi. Clock sinyali geldikten sonra program counter'ın içerisindeki hafıza birimine ulaşıldı. Ulaşıldıktan sonra burada bir komut çıktı. Bu komut, control unit tarafından çözülecek. Register file de zaten doğrudan dışarı veriliyor. ALU bunu işleyecek. Burada bir zaman var.
+
+779
+02:29:50,067 --> 02:29:56,468
+Bu bilgi data memoriye aktarılıyor olacak ve şurada MOOCs'un bir gecikme süresi olabilir.
+
+780
+02:29:57,867 --> 02:30:05,108
+Yani bütün hepsinin çalışma sürelerini topladığınız zaman en uzun yol size kritik peti vermiş oluyor.
+
+781
+02:30:06,027 --> 02:30:10,407
+Burada bakın single cycle kritik pet şeyini burada açıklamış.
+
+782
+02:30:11,700 --> 02:30:21,260
+Aslında ayrıntılı bir şekilde vermiş. Bu program kantorun değiştirilmesi sırasındaki geçen zaman hafızaya erişim zamanı.
+
+783
+02:30:22,460 --> 02:30:30,840
+Çoğunlukla zaten şub sizi biraz kısıtlayabilir. Çünkü bir hafızadan bir şey okumak biraz zaman alıcı bir şey. Öyle hızlı bir şekilde alamıyorsunuz.
+
+784
+02:30:31,340 --> 02:30:34,260
+Kullandığınız hafızaya bağlı olarak da değişebilir.
+
+785
+02:30:34,995 --> 02:30:59,835
+Başka bunların maksimum al demiş. Ne demek bu? Referead. Referead ne olabilir? Register file'dan okuma veya, bir daha bakalım. Register file'dan okuma veya decoder.exe.
+
+786
+02:31:01,396 --> 02:31:15,976
+Şuraya gelecek bu bilgi. Buraya gelme süresi. Bir de bu aşağıdan gelebilir bu bilgi. Extention'a gelebilir. Sonra bu bilgi bir MOOC'tan geçebilir. Dolayısıyla bunları topladığında hangisi fazlaysa onun değerini aldıyor.
+
+787
+02:31:17,427 --> 02:31:43,007
+ALU'nun hesap süresi var. Memorinin tekrar ulaşma süresi olabilir. Bu memori ile bu memori farklı fark ettiyseniz, buradaki instruction memori'den, hafızadan, komut hafızasından, program hafızasından bilgi çekilmesi. Bu ise data memoriye bir şey yazılması veya okunması ile ilgili. En sonunda bir MOOCs var. Bu MOOCs'un bir gecikme süresi olabilir.
+
+788
+02:31:43,860 --> 02:31:54,640
+Ve RF setup dediği şeyine acaba bakıyoruz. Register file setup olabilir mi? Yazma işlemi olabilir mi hocam?
+
+789
+02:31:57,580 --> 02:32:10,120
+Yazma işlemi RF setup olabilir. Herhalde yazma işlemi. Buradaki bilgi sonrasında, çünkü bir tek ok alıyor yazma için geçen süre.
+
+790
+02:32:10,611 --> 02:32:17,271
+Neticede bunların hepsini topladığınızda en uzun sizin için zaman oluşmuş oluyor.
+
+791
+02:32:17,831 --> 02:32:24,611
+Yani sizin clock cycle'ınızı, clock periyodunuzu daha doğrusu bundan küçük seçmemeniz gerekiyor.
+
+792
+02:32:25,011 --> 02:32:27,271
+O yüzden kritik pet tanımı önemli.
+
+793
+02:32:28,171 --> 02:32:31,467
+Çoğunlukla da bu peti sınırlayan...
+
+794
+02:32:31,700 --> 02:32:36,299
+Ya da büyük çıkmasını sağlayan şey hafıza oluyor dediğim gibi.
+
+795
+02:32:36,900 --> 02:32:39,240
+ALU da olabilir tabii ki yapılacak işleme göre.
+
+796
+02:32:39,920 --> 02:32:43,400
+Veya register file'dan bilgi okumu da olabilir ama zaten şu ve şu.
+
+797
+02:32:46,079 --> 02:32:50,400
+Register file çoğunlukla daha hızlı erişilebilir oluyor. Şunu da atabiliriz.
+
+798
+02:32:53,479 --> 02:32:57,459
+Bir tane bilgi vardı ya. Onun üzerinden konuşsak ya. Burada var.
+
+799
+02:32:57,855 --> 02:33:02,835
+Mesela bunlar pico saniye cinsinden. Pico nasıl gösteriyordu? 10 üzeri kaçtı arkadaşlar?
+
+800
+02:33:05,455 --> 02:33:06,195
+X12 miydi?
+
+801
+02:33:09,075 --> 02:33:10,795
+Galiba X12 hocam evet.
+
+802
+02:33:11,435 --> 02:33:16,655
+1 pico saniye, 10 üzeri X12 saniye. O şekilde düşünürsek.
+
+803
+02:33:17,855 --> 02:33:20,855
+Aslında clock register...
+
+804
+02:33:22,100 --> 02:33:34,040
+Program counter'ın artması sırasındaki 40 pico saniye bunları register set etmek belli.
+
+805
+02:33:36,755 --> 02:33:55,355
+Burada en yüksek olana bakabiliriz. ALU'nun 120 pikosaniye olduğunu gördük. Hafızadan okuma işinin 200 pikosaniye olduğunu gördük. Rejister'den okumadığında 100 olduğunu gördük. Burada direkt hafıza olayını görüyorsunuz arkadaşlar. Bu bizim için önemli. Önümüzdeki derslerle de konuşacağız.
+
+806
+02:33:56,036 --> 02:34:00,076
+Şimdi bir hafıza hiyerarşisinden de bahsedeceğiz burada.
+
+807
+02:34:01,236 --> 02:34:22,416
+Aslında bizim mikro işlemcimizin içerisinde bir register dosyası var. Mikro işlemcimizin bağlı olduğu bir memory var. Bu çoğunlukla RAM olarak düşünebilirsiniz. Bir de bir hard disk olduğunu düşünebilirsiniz. Veya SSD fark etmez.
+
+808
+02:34:22,963 --> 02:34:37,084
+Şimdi aslında farklı tip hafızalar hep kullanıyoruz. Mikro işlemcinin içerisindeki register aslında en hızla erişilebilir hafıza birimi olmuş oluyor. O yüzden yapabiliyorsak bunun üzerinde işlemleri yapıyoruz.
+
+809
+02:34:38,084 --> 02:34:44,075
+Eğer yapamıyorsak o zaman hafızadan bilgiyi getirmemiz lazım. Bakın onun daha da...
+
+810
+02:34:44,180 --> 02:34:59,400
+Hafızadan okuma süresinin daha da uzun olduğunu söyledik. Eğer burada da o bilgi yoksa, çünkü sonuçta RAM'iniz ne kadar şeyse, küçükse, o durumda harddiskten memoriye, memoriden register'a taşımanız gerekecek.
+
+811
+02:35:00,400 --> 02:35:10,400
+Yani RAM'i küçük olan, şu an az olan var mı? Onlarla konuşmak isterim belki bu konuda. Nasıl bir...
+
+812
+02:35:10,832 --> 02:35:12,792
+Gecikme oluyor.
+
+813
+02:35:18,515 --> 02:35:37,736
+Ya da şöyle bir senaryo çizersek, eğer RAM'iniz çok çok düşük olursa, bu durumda sürekli bilgi harddiskten RAM'e taşımakla ulaşacaksınız. Sonra bunları da register'a tekrar taşımakla uğraşacaksınız. Bu durumda aslında çok uzun bir zaman alacak.
+
+814
+02:35:40,371 --> 02:35:50,092
+Bir durum oluşmuş oluyor. Bunu böyle söylemiş olalım. Biraz konu dışıydı ama hafıza hiyerarşisini buradan biraz anlatmış olduk.
+
+815
+02:35:50,752 --> 02:36:03,891
+Günün sonunda bu bütün olası blokları değerlendirip en yüksek, pardon hepsinin toplamına baktığımızda 750 pikosaniye gibi bir şey çıktı.
+
+816
+02:36:05,012 --> 02:36:19,731
+Şimdi bu, biz clock cycle'ının kaç olabileceğine dair bir bilgi sağlayacak bize. Bu durumda bunu kaç yapabiliriz? Clock frekansımız ne olabilir bu işlemci tasarımda sizce?
+
+817
+02:36:36,308 --> 02:36:47,907
+Aslında bir bölü TC ile bulunabilir. Bu da 10 üzeri eksi 12'di zaten. 10 üzeri 12 bölü 750 ile bulunabilir. Yani hesaplayabiliriz tabii ki.
+
+818
+02:37:01,012 --> 02:37:11,172
+1.3 GHz oldu arkadaşlar. Şu an bizim tasarladığımız hitlemcinin frekansı 1.3'den daha düşük olmak zorunda.
+
+819
+02:37:14,772 --> 02:37:37,712
+1.33 gigarastan daha düşük olmak zorunda. Eğer yüksek olursa o zaman daha bunların işlemi bitmeden bir sonraki clock işlemi, daha doğrusu bir sonraki komut işlemi alınmış olacak. O da zaten yapılmaması gereken bir şey oluyor.
+
+820
+02:37:40,595 --> 02:37:59,556
+100 milyar bir komut bulunduran bir program olduğunu düşünürsek, her bir komutun bir cycle'da işletildiğini düşünürsek, 75 saniyede aslında bu işlemlerin biteceği anlamına geliyor.
+
+821
+02:38:01,780 --> 02:38:11,500
+Şimdi, multi-cycle'a girecek. Bizim zaten dersimizin sonraki kısmına denk geliyor ama, multi-cycle'daki şu mantığı burada biraz anlatmak isterim.
+
+822
+02:38:13,080 --> 02:38:19,819
+Bunun tamamı 750 picosani. Bu sebeple bizim içlemci frekansımızı kısıtladı fark ettiyseniz.
+
+823
+02:38:20,479 --> 02:38:25,659
+İçlemci frekansımız burada nasıl oldu? İşte 1.3 gigahertz oldu.
+
+824
+02:38:28,819 --> 02:38:45,099
+Ya da 1.2 diyelim. Daha düz hesap olsun. Mesela keşke buradaki clock periyodu biraz daha düşük olabilseydi. Bunu nasıl yapıyor? Adam burada yapılacak işlerin çok büyük olduğunu düşünüyor.
+
+825
+02:38:45,779 --> 02:38:54,819
+Mesela şu üst tarafını bir blok gibi, iş paketi gibi ayırıyor. Şu kısmı ayrı bir iş paketi gibi ayırıyor. Şurasını ayrı bir...
+
+826
+02:38:55,123 --> 02:39:22,244
+Aslında 3 cycle'da bitirilecek bir hale getirmiş oldu diye düşünün. Bu durumda bunun toplamı kaç mesela? 250. Bunun kısmı kaç? 200 civarı. Bunun kaç? 160. O zaman artık şu kez de bunları bir clockta çalıştırabileceğimi biliyorsam, bunun clock frekansı, daha doğrusu periyod önce bulmam lazım. 250 seçebilirim.
+
+827
+02:39:22,804 --> 02:39:39,484
+250 pks. Aslında 750'nin 3'te 1'ini düşürmüş oldum. Bu durumda işlemci frekansımı 3 katına çıkarabilirim. 3.6 GHz çıkarabiliyor oluyorum.
+
+828
+02:39:40,623 --> 02:39:46,304
+Tabii bu şu haliyle sanki dezavantaj ya da avantajı yokmuş gibi gözüküyor.
+
+829
+02:39:46,835 --> 02:39:50,795
+Ama biraz işin içine girince aslında öyle olmadığını göreceğiz.
+
+830
+02:39:58,131 --> 02:40:10,912
+Kitaptan da biraz bahsetmek isterim. Yani kitabın evlili kısmında gerçekten güzel anlatmış. Biz de bu dönem ilk kez bu kitap üzerinden ilerliyoruz. Geçtiğimiz dönem Manon'un kitabından daha ziyade gidiyorduk.
+
+831
+02:40:12,651 --> 02:40:19,231
+O yüzden yani biz tabii ki anlatıyoruz Ufey ama sizin bu daha iyi anlamanız için kitabı öneriyorum.
+
+832
+02:40:23,603 --> 02:40:30,903
+Bütün anlatılan şeyler bizim sunumlarda kullandığımız bilgilerin birebir aynısı. Açıklamalarda mevcut.
+
+833
+02:40:37,780 --> 02:40:47,979
+Birkaç komut için arkadaşlar, şunun mesela makine diki karşılığının nasıl oluşturulduğunu kendiniz elinizle yapıp görün.
+
+834
+02:40:48,139 --> 02:40:52,620
+Yani bir tablo alabilirsiniz yanınıza. Bu tablo son sayfada verilen bir tablo olabilir.
+
+835
+02:40:53,780 --> 02:41:00,479
+Bu durumda şunu verdiğinizde bunun makine kodu nasıl oluşur? Bu makine kodunu şuradaki mimari nasıl çözümlüyor?
+
+836
+02:41:01,300 --> 02:41:03,600
+Ve buna göre kontrol sinyalleri ne olmalı?
+
+837
+02:41:04,180 --> 02:41:12,760
+Eğer baştan sona bir bakarsanız bu durumda şeyi çok iyi oturmuş olur. Yaptığınız işlemler oturmuş olur.
+
+838
+02:41:13,900 --> 02:41:19,860
+Ve bir iki satırlık böyle kod bir yerinde bu kodlar nasıl ilerler? Akışı da bir görme imkanınız olur.
+
+839
+02:41:19,860 --> 02:41:30,740
+İşi tek karıştıran benim gördüğüm images olayı. Burada register'ların, register tipinde veya branch tipindeki komutların
+
+840
+02:41:32,691 --> 02:41:45,511
+İçerisinde sabit bilgiler var. Bu sabit bilgiler de immediate'ın belirli bitlerini içeriyor. Bunları hizalamak biraz soru işareti ya da kafa karıştırıcı olabilir.
+
+841
+02:41:45,731 --> 02:41:51,591
+Ama onun da sizin elinize verildiğini düşündüğünüzde sizin onu çözebiliyor olmanı. Gerekiyor zaten.
+
+842
+02:41:53,731 --> 02:41:55,571
+Sorusu olan var mı diye sorayım.
+
+843
+02:42:08,211 --> 02:42:12,891
+Orta atladığım bir var mı diye bakıyorum. Bunlar da aynı şeyleri yapmış.
+
+844
+02:42:14,752 --> 02:42:23,671
+75. Önce çözdü örnek. Dolayısıyla VISA'ya kadar, Mount Cycle kompütere kadar gelmiş olduk.
+
+845
+02:42:24,831 --> 02:42:29,611
+Çok çevrimli işlemci kısmında bırakmış oluyoruz.
+
+846
+02:42:31,432 --> 02:42:33,171
+Teşekkürler katıldığınız için.
+
+847
+02:42:34,675 --> 02:42:36,595
+İyi bayramlar, iyi tatliler dilerim.
+
+848
+02:42:37,355 --> 02:42:38,115
+Sağ olun hocam.
+
+849
+02:42:39,435 --> 02:42:40,455
+Size de iyi bayramlar.
