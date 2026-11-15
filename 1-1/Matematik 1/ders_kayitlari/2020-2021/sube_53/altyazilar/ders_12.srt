@@ -1,0 +1,3487 @@
+1
+00:01:26,579 --> 00:01:30,000
+Merhaba arkadaşlar, teşekkürler, iyi misin? Nasılsınız? Görüşmeli.
+
+2
+00:01:52,691 --> 00:01:59,851
+uygulama yapacağız demiştim zaten dünden. Hazırsanız başlayalım.
+
+3
+00:02:27,283 --> 00:02:33,923
+Today we will have exercises and let's start from the first one, a limit question.
+
+4
+00:02:45,427 --> 00:02:46,247
+what to do.
+
+5
+00:04:02,836 --> 00:04:04,816
+Yes, are you solving the question? I'm waiting.
+
+6
+00:04:43,348 --> 00:04:46,247
+Bu problem, bu limit?
+
+7
+00:04:47,168 --> 00:04:47,768
+Tell me.
+
+8
+00:05:01,684 --> 00:05:04,684
+Evet, doğru. 0x0.
+
+9
+00:05:22,771 --> 00:05:23,812
+I think so.
+
+10
+00:05:29,267 --> 00:05:32,827
+I think your feeling is nice.
+
+11
+00:05:34,887 --> 00:05:35,627
+Yes, of course.
+
+12
+00:05:35,767 --> 00:05:37,847
+The literal rule, yes, of course you will follow.
+
+13
+00:05:39,267 --> 00:05:40,887
+Once you have 0 over 0.
+
+14
+00:05:42,367 --> 00:05:42,807
+Sure.
+
+15
+00:05:42,807 --> 00:05:44,067
+Aptal.
+
+16
+00:05:44,847 --> 00:05:48,627
+If we say arc sinis x is y.
+
+17
+00:05:48,907 --> 00:05:52,427
+So 1 minus x square.
+
+18
+00:05:54,847 --> 00:05:57,087
+Hocam nasıl söyleniyo bilmiyorum ya.
+
+19
+00:05:57,107 --> 00:05:58,107
+İngilizcesini unuttum.
+
+20
+00:05:59,267 --> 00:06:01,367
+Kökü nasıl söyleyebilirim?
+
+21
+00:06:01,987 --> 00:06:03,987
+Square root.
+
+22
+00:06:04,347 --> 00:06:10,327
+Because cosine square plus sinus square equals 1.
+
+23
+00:06:10,327 --> 00:06:17,567
+So 1 minus x square maybe equal arc sinis x.
+
+24
+00:06:18,567 --> 00:06:20,627
+I think you mean the derivative of it.
+
+25
+00:06:21,787 --> 00:06:22,307
+Maybe.
+
+26
+00:06:23,927 --> 00:06:25,747
+I think you can get the derivative.
+
+27
+00:06:26,947 --> 00:06:28,287
+While having the literal rule.
+
+28
+00:06:29,267 --> 00:06:33,427
+Because you will remember the rule that you set.
+
+29
+00:06:34,527 --> 00:06:35,247
+Arc sinis x.
+
+30
+00:06:35,927 --> 00:06:38,087
+1 over the square root.
+
+31
+00:06:38,187 --> 00:06:39,127
+1 minus x square.
+
+32
+00:06:39,127 --> 00:06:43,527
+So.
+
+33
+00:06:55,891 --> 00:06:58,692
+Now the result is not one. No.
+
+34
+00:07:01,411 --> 00:07:01,891
+No not.
+
+35
+00:07:14,196 --> 00:07:15,656
+No, it's not minus 1.
+
+36
+00:07:21,331 --> 00:07:23,331
+Evet 0.
+
+37
+00:07:23,331 --> 00:07:35,331
+Evet.
+
+38
+00:07:38,355 --> 00:07:39,536
+varın, all of you.
+
+39
+00:07:49,684 --> 00:07:52,764
+Evet, 1x derivete is okay here.
+
+40
+00:08:05,812 --> 00:08:09,172
+Let's see. Look.
+
+41
+00:08:12,372 --> 00:08:18,532
+Here 0 over 0 of this limit. Here the L'Britol rule and get the derivative.
+
+42
+00:08:18,532 --> 00:08:24,771
+e to x minus arcsin x minus 1, the derivative of it, 1 minus the derivative of exponent,
+
+43
+00:08:25,732 --> 00:08:30,052
+1 minus 1 over n square root 1 minus x squared times the function itself.
+
+44
+00:08:30,052 --> 00:08:36,532
+Okay. Over this function minus 2x over 2 in the square root 1 minus x squared.
+
+45
+00:08:39,652 --> 00:08:43,331
+These functions are having the same denominator.
+
+46
+00:08:44,611 --> 00:08:52,211
+So we have, due to the operations, I mean, square root 1 minus x squared minus 1 over minus xs,
+
+47
+00:08:52,211 --> 00:09:01,172
+this part. And e to x minus arcsin x is, it's 1. This part, e to x minus arcsin x is 1.
+
+48
+00:09:01,172 --> 00:09:07,331
+Okay. This part is no problem. But we have to deal with this because here we have 0 over 0.
+
+49
+00:09:10,292 --> 00:09:11,412
+Oh, really? Okay.
+
+50
+00:09:11,412 --> 00:09:21,971
+Are you okay up to now? We get the derivative. Do the need to operations of this division and get
+
+51
+00:09:21,971 --> 00:09:29,572
+this expression. This function times e to x minus arcsin x. And look, once you put the number 0,
+
+52
+00:09:29,572 --> 00:09:35,892
+e to x minus arcsin x is already going to 1. So there is no problem on this part. This is a finite limit.
+
+53
+00:09:35,892 --> 00:09:40,451
+Okay. We can, that means if we are sure that you have, you are having the finite limits,
+
+54
+00:09:41,012 --> 00:09:47,812
+you can separate them if they are finite. But here 0 over 0, we don't know what happens here. And 0
+
+55
+00:09:47,812 --> 00:09:54,692
+over 0 for this part only you can follow the L'Opital rule for only this part. Because the multiplication
+
+56
+00:09:54,692 --> 00:09:57,172
+will be so harder to get the derivative.
+
+57
+00:10:00,916 --> 00:10:02,916
+Mm-hmm. No, it's possible.
+
+58
+00:10:05,996 --> 00:10:13,716
+If you multiply with the conjugate and get this, no problem. Yes, you may. I'm not sure, but probably you are right.
+
+59
+00:10:17,683 --> 00:10:18,243
+Tamam.
+
+60
+00:10:18,603 --> 00:10:19,283
+Evet, olabilir.
+
+61
+00:10:20,183 --> 00:10:20,624
+Teşekkür ederim.
+
+62
+00:10:22,144 --> 00:10:23,923
+Hocam bir şey söyleyebilir miyim?
+
+63
+00:10:25,524 --> 00:10:26,923
+İngilizce ifade edemedim.
+
+64
+00:10:27,024 --> 00:10:27,583
+Anlatamadım.
+
+65
+00:10:27,683 --> 00:10:28,903
+Düşündüğüm için söylüyorum.
+
+66
+00:10:29,363 --> 00:10:29,603
+Ben
+
+67
+00:10:29,603 --> 00:10:33,603
+arc sinüs x yerine y yazıp
+
+68
+00:10:33,603 --> 00:10:35,124
+x yerine de sinüs y yazıp
+
+69
+00:10:35,124 --> 00:10:36,524
+değişken değiştirip çözdüm.
+
+70
+00:10:37,004 --> 00:10:38,583
+Ve yine sıfırı elde ettim yani.
+
+71
+00:10:39,063 --> 00:10:39,283
+Olur.
+
+72
+00:10:39,283 --> 00:10:41,063
+Olur değil mi?
+
+73
+00:10:41,764 --> 00:10:42,483
+Çok güzel olur.
+
+74
+00:10:42,884 --> 00:10:44,783
+Değişken dönüşümünü her zaman kullanabilirsiniz.
+
+75
+00:10:44,863 --> 00:10:45,903
+Bu çok güzel bir yöntem.
+
+76
+00:10:46,343 --> 00:10:46,543
+Tamam.
+
+77
+00:10:46,543 --> 00:10:47,703
+Hepinizi tebrik ediyorum.
+
+78
+00:10:47,803 --> 00:10:48,343
+Teşekkürler.
+
+79
+00:10:48,443 --> 00:10:48,603
+Tamam.
+
+80
+00:10:50,283 --> 00:10:52,024
+Konjugate ile çarpıp bölenleri de
+
+81
+00:10:52,024 --> 00:10:53,703
+evet aynı şekilde
+
+82
+00:10:53,703 --> 00:10:55,923
+hani bu şekilde çözmüştüm ben.
+
+83
+00:10:56,024 --> 00:10:57,423
+Tabii ki sizler bakın
+
+84
+00:10:57,423 --> 00:10:58,603
+çok daha güzel yöntemler
+
+85
+00:10:58,603 --> 00:11:00,124
+daha kolay yollar buluyorsunuz.
+
+86
+00:11:00,823 --> 00:11:01,963
+Tabii ki o şekilde de olur.
+
+87
+00:11:04,303 --> 00:11:05,243
+For this part
+
+88
+00:11:05,243 --> 00:11:06,884
+this part is okay.
+
+89
+00:11:06,884 --> 00:11:08,483
+This part is zero over zero.
+
+90
+00:11:10,223 --> 00:11:10,384
+So
+
+91
+00:11:10,384 --> 00:11:13,163
+get a little roll again
+
+92
+00:11:13,163 --> 00:11:14,223
+and get a derivative
+
+93
+00:11:14,223 --> 00:11:15,803
+here this result
+
+94
+00:11:15,803 --> 00:11:18,803
+zero over minus one.
+
+95
+00:11:18,963 --> 00:11:19,683
+So it is zero.
+
+96
+00:11:19,803 --> 00:11:20,743
+Zero times one.
+
+97
+00:11:21,223 --> 00:11:21,943
+Again zero.
+
+98
+00:11:22,083 --> 00:11:22,743
+Like you said
+
+99
+00:11:22,743 --> 00:11:25,264
+some different alternative methods
+
+100
+00:11:25,264 --> 00:11:26,483
+we may have no problem.
+
+101
+00:11:26,783 --> 00:11:27,923
+Like your friend says
+
+102
+00:11:27,923 --> 00:11:29,644
+a transformation
+
+103
+00:11:29,644 --> 00:11:30,803
+can be used here.
+
+104
+00:11:30,884 --> 00:11:32,303
+You can say arc sine x is
+
+105
+00:11:32,303 --> 00:11:33,504
+zero.
+
+106
+00:11:33,504 --> 00:11:36,443
+I'm sorry arc sine x is y
+
+107
+00:11:36,443 --> 00:11:38,043
+and put again
+
+108
+00:11:38,043 --> 00:11:38,923
+y is going to zero
+
+109
+00:11:38,923 --> 00:11:40,163
+and get the same result.
+
+110
+00:11:40,343 --> 00:11:41,063
+No problem.
+
+111
+00:11:41,223 --> 00:11:42,583
+Or you can multiply
+
+112
+00:11:42,583 --> 00:11:44,343
+and divide with the conjugate form.
+
+113
+00:11:44,583 --> 00:11:45,703
+Again you can get
+
+114
+00:11:45,703 --> 00:11:46,764
+same result.
+
+115
+00:11:47,163 --> 00:11:48,764
+These are all possible ways.
+
+116
+00:11:48,983 --> 00:11:49,963
+Well done all of you.
+
+117
+00:11:50,124 --> 00:11:50,283
+Okay.
+
+118
+00:11:50,283 --> 00:11:51,644
+thank you so much.
+
+119
+00:11:51,644 --> 00:11:51,663
+Thank you so much.
+
+120
+00:11:57,172 --> 00:11:57,572
+ok.
+
+121
+00:12:03,764 --> 00:12:25,403
+So, do you have any question about the solution? Here you can just ask me this part, why did you separate them? I separate them because this part is finite, but this part, firstly, I am not sure and I deal with this part only, and I get a finite result and then say, okay, this multiplication is going to zero.
+
+122
+00:12:25,403 --> 00:12:42,303
+But if this result will not be a finite number, we cannot separate them and say something times some part of them, they can be mistaken. That's why if some of these parts will be infinite, we cannot say.
+
+123
+00:12:42,604 --> 00:12:50,744
+But if we are sure that some parts are finite, you can separate, you can separately evaluate, like I said here.
+
+124
+00:12:50,744 --> 00:12:58,644
+So, this function is evaluated, because this function is evaluated, because I am sure that this is zero, I know, because.
+
+125
+00:12:59,844 --> 00:13:11,403
+And this part is also finite, so if we have finite limit results of a multiplication, we can separate them, no problem, the solution will be again same.
+
+126
+00:13:13,144 --> 00:13:13,844
+Any question?
+
+127
+00:13:23,956 --> 00:13:28,676
+Are you writing? Do you want me to wait for you or continue? Please tell me.
+
+128
+00:13:40,371 --> 00:13:49,011
+Okay. Okay. So continue. Wait about this. Let's deal with it.
+
+129
+00:14:07,091 --> 00:14:12,131
+x is going to 0 from right, 1 over ln x squared plus 1 minus 1 over x squared.
+
+130
+00:14:14,111 --> 00:14:16,572
+First time, what's the problem in this limit?
+
+131
+00:14:36,244 --> 00:14:46,163
+Which group is it? We have classified the indeterminate forms yesterday. If you remember, first group, 0 over 0, infinity over infinity.
+
+132
+00:14:46,163 --> 00:14:55,764
+Second group, 0 times infinity, infinity minus infinity. And the third group was exponential indeterminate forms.
+
+133
+00:14:57,923 --> 00:15:05,524
+Here, firstly, once you put x is going to 0, you see infinity minus infinity, second group. And just
+
+134
+00:15:05,524 --> 00:15:15,364
+remember that second group can be evaluated by transforming it into first group and apply the L'Hospital rule.
+
+135
+00:15:16,564 --> 00:15:31,364
+So yes, you need to make it 0 over 0 or infinity over infinity. I'm waiting for you.
+
+136
+00:15:34,515 --> 00:15:38,275
+1 over 2, well done. 1 over 2. Naya.
+
+137
+00:15:40,836 --> 00:15:41,675
+Yes, you're right.
+
+138
+00:16:06,100 --> 00:16:08,100
+Evet, ne? O da diğerlerle? O da bir şey.
+
+139
+00:17:43,700 --> 00:17:44,580
+Evet, anyone?
+
+140
+00:17:45,480 --> 00:17:46,500
+Is it difficult?
+
+141
+00:18:28,756 --> 00:18:29,956
+1x2.
+
+142
+00:18:42,195 --> 00:18:45,455
+Evet, bugün de biraz daha çok eğitimlerimiz var.
+
+143
+00:18:54,867 --> 00:18:55,867
+Ok, no problem.
+
+144
+00:18:57,867 --> 00:18:59,548
+Yes, we can see the solution.
+
+145
+00:19:06,804 --> 00:19:16,244
+Yani 1 over ln x2 plus 1, 1 over 0, infinity.
+
+146
+00:19:16,884 --> 00:19:19,284
+Infinity minus infinity here we have.
+
+147
+00:19:20,504 --> 00:19:25,124
+So, yes [öğrenci], 1 over 2.
+
+148
+00:19:27,604 --> 00:19:34,163
+So, second group must be transformed into 0 over 0 or infinity over infinity.
+
+149
+00:19:34,163 --> 00:19:44,984
+To delete operations and get x squared minus ln x squared plus 1 over x squared times ln x squared plus 1 makes it 0, 0.
+
+150
+00:19:46,064 --> 00:19:46,903
+First group.
+
+151
+00:19:47,604 --> 00:19:48,544
+So, use the Leputon rule.
+
+152
+00:19:48,704 --> 00:19:48,923
+Okay.
+
+153
+00:19:49,384 --> 00:19:53,464
+Get derivatives 2x minus 2x over x squared plus 1.
+
+154
+00:19:54,304 --> 00:20:03,024
+And divided the denominator has the derivative 2x times ln x squared plus 1 plus x squared times 2x over x squared plus 1.
+
+155
+00:20:03,024 --> 00:20:03,344
+Okay.
+
+156
+00:20:04,163 --> 00:20:17,524
+Again, do the needed operations and see it is 2x cubed over 2x times x squared plus 1 ln x squared plus 1 plus 2x cubed.
+
+157
+00:20:17,524 --> 00:20:22,764
+We can grouping of 2x cubed to cancel them.
+
+158
+00:20:23,584 --> 00:20:32,824
+And so, get 1 over ln x squared plus 1 plus ln x squared plus 1 over x squared plus 1.
+
+159
+00:20:32,944 --> 00:20:33,144
+Yes.
+
+160
+00:20:33,684 --> 00:20:34,964
+At the end we have this case.
+
+161
+00:20:35,403 --> 00:20:39,484
+But here once we put x is 0, ln 1 is 0.
+
+162
+00:20:40,264 --> 00:20:41,163
+1 is 1.
+
+163
+00:20:41,163 --> 00:20:43,524
+But here we have again infinity.
+
+164
+00:20:45,923 --> 00:20:46,564
+I'm sorry.
+
+165
+00:20:47,004 --> 00:20:48,064
+0 over 0.
+
+166
+00:20:48,704 --> 00:20:51,824
+So, this expression has a problem.
+
+167
+00:20:52,024 --> 00:20:54,423
+So, let's deal with only this part.
+
+168
+00:20:54,423 --> 00:20:57,264
+Because for other parts we have no indeterminate form.
+
+169
+00:20:57,804 --> 00:21:06,684
+Once you have some part of the expression in indeterminate form, just solve it with using the Leputon rule and then substitute to the expression.
+
+170
+00:21:06,684 --> 00:21:08,064
+If it is finite, of course.
+
+171
+00:21:08,064 --> 00:21:08,384
+Okay.
+
+172
+00:21:08,604 --> 00:21:10,684
+If the result is finite, you can substitute.
+
+173
+00:21:10,824 --> 00:21:15,444
+Evoluate and substitute.
+
+174
+00:21:19,508 --> 00:21:45,728
+No, we didn't multiply with x square plus 1. We just get the denominators are same here. That's why they are, they have canceled with x square plus 1 and then this one. And 2x and minus 2x are canceled. And then in the numerator 2x cubed, we have in the denominator grouping of 2x cubed and then cancel them. And then we have this case, this function. Okay.
+
+175
+00:21:56,211 --> 00:22:03,412
+Evet, şimdi bu yukarıda.
+
+176
+00:22:04,211 --> 00:22:06,692
+Şimdi, bu yukarıda, bu yukarıda.
+
+177
+00:22:07,172 --> 00:22:13,412
+Şimdi, 1 over ln x2 plus 1 plus ln x2 plus 1 over x2 plus 1.
+
+178
+00:22:13,412 --> 00:22:15,412
+Şimdi, bu 0, ve bu yukarıda.
+
+179
+00:22:15,412 --> 00:22:21,412
+Ve bu yukarıda, bu yukarıda.
+
+180
+00:22:21,412 --> 00:22:23,412
+Yukarıda, bu yukarıda.
+
+181
+00:22:23,412 --> 00:22:25,412
+Bu yukarıda, bu yukarıda.
+
+182
+00:22:25,412 --> 00:22:27,412
+Bu yukarıda.
+
+183
+00:22:27,412 --> 00:22:31,412
+Ve bu yukarıda, bu yukarıda.
+
+184
+00:22:31,412 --> 00:23:31,412
+Bu yukarıda, bu yukarıda.
+
+185
+00:23:31,412 --> 00:23:53,412
+Bu yukarıda.
+
+186
+00:23:38,932 --> 00:24:08,072
+Of course, not at all. May I ask a question? Yes, you may. Can we use that, can we solve that question without applying L'Opital rule? Maybe, maybe, but how? I don't know, I just wanted to ask, because sometimes I forgot to use L'Opital rule, so it becomes more difficult to solve. Yes, I think so, it is much more difficult, but
+
+187
+00:24:08,932 --> 00:24:23,991
+I think if you can't do anything to the limit, one is zero over zero and infinity over infinity, and if you can't find any proper algebraic operation to eliminate it, it means you need to apply the L'Opital rule, because you will not say anything.
+
+188
+00:24:24,432 --> 00:24:33,432
+No factorization, no grouping, no cancellation, no conjugate, working on the question. If you can't find anything, just apply the L'Opital rule. I think easier.
+
+189
+00:24:34,211 --> 00:24:36,231
+Okay, thank you. Not at all.
+
+190
+00:24:43,028 --> 00:24:44,028
+ok.
+
+191
+00:24:47,892 --> 00:24:50,211
+Any question? Are you okay?
+
+192
+00:24:52,632 --> 00:24:59,392
+Hocam, bir tarafta 1 bölü 2 bulduk, sonrasını anlamadım ben. Şurada, sanırım o ayrı bir bölüm mü? Yoksa bir şeyin devamı mı?
+
+193
+00:24:59,511 --> 00:25:07,312
+Yes, this part, this part is evaluation of this limit only. This part. This expression has an indeterminate form.
+
+194
+00:25:07,392 --> 00:25:14,312
+Only this part. That's why we separately evaluated and then substitute. That means this is the result. 1 over 2.
+
+195
+00:25:15,152 --> 00:25:15,412
+Okay.
+
+196
+00:25:15,772 --> 00:25:16,272
+Almayacağım.
+
+197
+00:25:16,711 --> 00:25:17,292
+Not at all.
+
+198
+00:25:25,556 --> 00:25:26,756
+Any question?
+
+199
+00:25:33,587 --> 00:25:40,067
+Are you writing or shall I wait for you or continue? Tell me if you are writing, I can wait or continue.
+
+200
+00:25:43,587 --> 00:25:47,907
+Okay.
+
+201
+00:25:55,443 --> 00:25:56,283
+So, continue.
+
+202
+00:25:58,283 --> 00:25:58,763
+Okay.
+
+203
+00:25:59,403 --> 00:26:00,324
+The next question.
+
+204
+00:26:01,223 --> 00:26:02,403
+Let's deal with it.
+
+205
+00:26:02,563 --> 00:26:03,483
+What happens here?
+
+206
+00:26:13,971 --> 00:26:16,612
+I think this is easier. You will do it.
+
+207
+00:27:04,852 --> 00:27:10,012
+Yes, [öğrenci]. Now you are okay with zero. Yes, it is zero.
+
+208
+00:27:20,211 --> 00:27:24,731
+you got the true solution and the nice question for you.
+
+209
+00:28:24,819 --> 00:28:26,899
+Evet, 0.
+
+210
+00:28:27,119 --> 00:28:28,179
+Neden?
+
+211
+00:28:29,179 --> 00:28:30,259
+I think you are okay.
+
+212
+00:29:25,779 --> 00:29:27,779
+Evet, 0. Evet, 0. Evet.
+
+213
+00:29:31,779 --> 00:29:32,779
+Evet.
+
+214
+00:29:37,811 --> 00:29:38,811
+ok.
+
+215
+00:29:43,667 --> 00:29:45,667
+Evet, doğru.
+
+216
+00:29:54,228 --> 00:29:57,028
+item sonlar.
+
+217
+00:30:06,963 --> 00:30:07,563
+Evet.
+
+218
+00:30:14,099 --> 00:30:15,459
+ok, yes, değilim.
+
+219
+00:30:19,443 --> 00:30:20,443
+mm-hmm
+
+220
+00:30:28,660 --> 00:30:34,019
+Okay, you are all okay about the solution. You get the correct answer. And let's see the solution.
+
+221
+00:30:34,480 --> 00:30:40,400
+First, tell me, what's the problem in this question? What happens here?
+
+222
+00:30:41,080 --> 00:30:47,220
+To get the indeterminator of which form is it? Or which group? Tell me.
+
+223
+00:30:49,640 --> 00:30:56,180
+Once x is going to infinity. Yes, you're right. It's infinity minus infinity. Okay.
+
+224
+00:30:56,180 --> 00:31:03,460
+So what to do? Transform it into 0 over 0 or infinity over infinity. Yes.
+
+225
+00:31:04,120 --> 00:31:09,759
+So how did you make it 0 over 0 or infinity over infinity? I'm just wondering.
+
+226
+00:31:13,268 --> 00:31:15,268
+How did you do it?
+
+227
+00:31:17,268 --> 00:31:19,268
+Graphing or what?
+
+228
+00:31:19,268 --> 00:31:21,268
+Ok, nice solution.
+
+229
+00:31:21,268 --> 00:31:22,268
+I think so.
+
+230
+00:31:22,268 --> 00:31:24,268
+The conjugate is nice.
+
+231
+00:31:24,268 --> 00:31:26,268
+Ok.
+
+232
+00:31:26,268 --> 00:31:28,268
+Ok, well done all of you.
+
+233
+00:31:28,268 --> 00:31:30,268
+I did another way.
+
+234
+00:31:30,268 --> 00:31:32,268
+But your way is nice I think.
+
+235
+00:31:32,268 --> 00:31:33,268
+Thank you.
+
+236
+00:31:33,268 --> 00:31:36,268
+Let's see what I did.
+
+237
+00:31:38,268 --> 00:31:40,268
+I prefer?
+
+238
+00:31:40,268 --> 00:31:42,268
+Yeah, ok.
+
+239
+00:31:42,268 --> 00:31:47,268
+I prefer to grouping of e to x and then divide with,
+
+240
+00:31:47,268 --> 00:31:52,268
+that means e to x means 1 over e to minus x.
+
+241
+00:31:52,268 --> 00:31:54,268
+In that case it becomes 0 over 0.
+
+242
+00:31:54,268 --> 00:32:00,268
+It is my solution but you are all ok about writing the multiplication conjugate.
+
+243
+00:32:00,268 --> 00:32:01,268
+Yes, ok.
+
+244
+00:32:03,268 --> 00:32:10,268
+Here, I put e to x outside of the square root and also grouping of e to x.
+
+245
+00:32:10,268 --> 00:32:11,268
+And write this.
+
+246
+00:32:11,268 --> 00:32:12,268
+Is it ok?
+
+247
+00:32:14,268 --> 00:32:15,268
+And then,
+
+248
+00:32:15,268 --> 00:32:17,268
+now it is 0 over 0.
+
+249
+00:32:17,268 --> 00:32:19,268
+So, a little bit of rule.
+
+250
+00:32:19,268 --> 00:32:20,268
+A little bit of it.
+
+251
+00:32:20,268 --> 00:32:28,268
+e to minus 2x over square root 1 plus e to minus 2x over minus e to minus x.
+
+252
+00:32:28,268 --> 00:32:32,268
+And then, once you get the leptin rule, do the needed operations.
+
+253
+00:32:32,268 --> 00:32:38,268
+Get the most simple form and then substitute the point and then continue if you need another leptin rule.
+
+254
+00:32:38,268 --> 00:32:39,268
+Ok?
+
+255
+00:32:39,268 --> 00:32:40,268
+Always.
+
+256
+00:32:40,268 --> 00:32:46,268
+And if you do the needed operations, you will get 1 over e to x times square root 1 plus e to minus 2x.
+
+257
+00:32:46,268 --> 00:32:48,268
+And put the point again.
+
+258
+00:32:49,268 --> 00:32:50,268
+e to infinity.
+
+259
+00:32:51,268 --> 00:32:53,268
+1 over e to infinity.
+
+260
+00:32:53,268 --> 00:32:54,268
+This is 0.
+
+261
+00:32:54,268 --> 00:32:55,268
+This is 1.
+
+262
+00:32:56,268 --> 00:32:58,268
+1 over infinity directly 0.
+
+263
+00:32:59,268 --> 00:33:00,268
+So, no problem.
+
+264
+00:33:00,268 --> 00:33:01,268
+Yes, it results 0.
+
+265
+00:33:01,268 --> 00:33:03,268
+Like you said, thank you so much.
+
+266
+00:33:03,268 --> 00:33:04,268
+.
+
+267
+00:33:22,132 --> 00:33:23,072
+ok, for you.
+
+268
+00:33:31,763 --> 00:33:33,683
+ok, still nice.
+
+269
+00:33:45,107 --> 00:33:50,307
+So, let's continue with the next question.
+
+270
+00:33:58,355 --> 00:33:59,355
+bu.
+
+271
+00:36:04,724 --> 00:36:05,923
+Evet, what do you get?
+
+272
+00:36:08,624 --> 00:36:09,024
+Ha!
+
+273
+00:36:10,544 --> 00:36:12,463
+Yes, well done. 3 pi over 2.
+
+274
+00:36:17,139 --> 00:36:18,339
+tri payover türev.
+
+275
+00:36:46,996 --> 00:36:57,635
+For this question, when x is going to 1 from right, what do you get? Tangent pi over 4.
+
+276
+00:36:59,076 --> 00:37:09,596
+Yes, yes, you're right, 3 pi over 2. And 2, this is 1, 1, 2, 3 over x minus 1, 1 to infinity.
+
+277
+00:37:10,235 --> 00:37:16,776
+Here the indeterminate form is 1 to infinity, which is exponential form, which is the third group.
+
+278
+00:37:16,996 --> 00:37:26,175
+of the indeterminate forms and need a ln, logarithmic limit. Yes, you're right, 3 pi over 2. Thank you.
+
+279
+00:37:27,056 --> 00:37:39,796
+And here logarithmic limit must be used to get this, to recover. And you will say this is y and get the logarithm of both sides and then get the limit of it.
+
+280
+00:37:46,675 --> 00:37:48,235
+e to 3 pi over 2.
+
+281
+00:37:49,855 --> 00:37:52,155
+3 pi over 2
+
+282
+00:37:52,155 --> 00:37:54,155
+is the result
+
+283
+00:37:54,155 --> 00:37:56,355
+of the logarithm of this function.
+
+284
+00:37:57,096 --> 00:37:58,295
+So it must be written
+
+285
+00:37:58,295 --> 00:37:59,875
+to exponent of 2.
+
+286
+00:37:59,956 --> 00:38:01,255
+e to 3 pi over 2.
+
+287
+00:38:01,855 --> 00:38:03,996
+This is the last step.
+
+288
+00:38:07,895 --> 00:38:09,115
+So let's see.
+
+289
+00:38:11,576 --> 00:38:12,855
+Let's see the solution.
+
+290
+00:38:14,895 --> 00:38:16,076
+This is why
+
+291
+00:38:16,076 --> 00:38:18,956
+for logarithmic limit
+
+292
+00:38:18,956 --> 00:38:20,255
+we need to get the
+
+293
+00:38:20,255 --> 00:38:21,415
+say it is y
+
+294
+00:38:21,415 --> 00:38:22,996
+and get logarithm of it
+
+295
+00:38:22,996 --> 00:38:24,536
+a natural logarithm
+
+296
+00:38:24,536 --> 00:38:25,516
+ln y is
+
+297
+00:38:25,516 --> 00:38:27,436
+3 over x minus 1
+
+298
+00:38:27,436 --> 00:38:29,596
+ln tangent pi x over 4.
+
+299
+00:38:29,596 --> 00:38:29,915
+Okay.
+
+300
+00:38:30,415 --> 00:38:31,635
+And get the limit of
+
+301
+00:38:31,635 --> 00:38:32,996
+logarithm of this function
+
+302
+00:38:32,996 --> 00:38:35,635
+because this form is easier
+
+303
+00:38:35,635 --> 00:38:36,315
+than this one.
+
+304
+00:38:36,795 --> 00:38:38,795
+So we get the limit of logarithm of it.
+
+305
+00:38:39,635 --> 00:38:41,775
+And again x is going to 1 from right.
+
+306
+00:38:42,755 --> 00:38:44,155
+This function we have
+
+307
+00:38:44,155 --> 00:38:45,355
+and see what we have.
+
+308
+00:38:45,355 --> 00:38:48,576
+this is ln 1 is 0.
+
+309
+00:38:48,655 --> 00:38:49,755
+0 over 0 we have.
+
+310
+00:38:49,875 --> 00:38:50,016
+Okay.
+
+311
+00:38:50,815 --> 00:38:51,096
+Yes.
+
+312
+00:38:51,155 --> 00:38:51,795
+0 over 0.
+
+313
+00:38:51,895 --> 00:38:52,735
+So what to do?
+
+314
+00:38:53,195 --> 00:38:53,815
+Leopold rule.
+
+315
+00:38:54,235 --> 00:38:54,516
+Okay.
+
+316
+00:38:54,635 --> 00:38:55,635
+3 is a coefficient.
+
+317
+00:38:56,056 --> 00:38:56,255
+Okay.
+
+318
+00:38:56,956 --> 00:38:57,195
+So
+
+319
+00:38:57,195 --> 00:38:59,855
+Leopold rule says
+
+320
+00:38:59,855 --> 00:39:00,695
+that get the derivatives
+
+321
+00:39:00,695 --> 00:39:01,596
+one by one
+
+322
+00:39:01,596 --> 00:39:03,415
+and pi over 4 times
+
+323
+00:39:03,415 --> 00:39:05,415
+and here we have composition
+
+324
+00:39:05,415 --> 00:39:08,175
+derivative of the whole function
+
+325
+00:39:08,175 --> 00:39:11,076
+ln tangent pi x over 4
+
+326
+00:39:11,076 --> 00:39:12,715
+and multiply with the derivative
+
+327
+00:39:12,715 --> 00:39:14,016
+of the insider function.
+
+328
+00:39:14,016 --> 00:39:14,375
+Okay.
+
+329
+00:39:15,855 --> 00:39:17,355
+Resulting from simple
+
+330
+00:39:17,355 --> 00:39:19,255
+chain formula.
+
+331
+00:39:19,255 --> 00:39:22,715
+So pi over 4 times
+
+332
+00:39:22,715 --> 00:39:23,476
+second square
+
+333
+00:39:23,476 --> 00:39:24,536
+pi x over 4
+
+334
+00:39:24,536 --> 00:39:25,135
+is the derivative
+
+335
+00:39:25,135 --> 00:39:26,895
+of tangent pi x over 4.
+
+336
+00:39:27,395 --> 00:39:28,775
+Derivative of the whole function
+
+337
+00:39:28,775 --> 00:39:30,476
+is ln
+
+338
+00:39:30,476 --> 00:39:32,235
+of this function.
+
+339
+00:39:32,395 --> 00:39:33,775
+So the derivative over itself
+
+340
+00:39:33,775 --> 00:39:35,096
+1 over
+
+341
+00:39:35,096 --> 00:39:36,735
+pi over 4 over
+
+342
+00:39:36,735 --> 00:39:39,476
+tangent pi x over 4.
+
+343
+00:39:39,476 --> 00:39:39,795
+Okay.
+
+344
+00:39:39,795 --> 00:39:39,935
+Yes.
+
+345
+00:39:40,935 --> 00:39:46,215
+Bye.
+
+346
+00:39:45,715 --> 00:39:47,715
+x minus 1 is coming, 1.
+
+347
+00:39:49,215 --> 00:39:55,295
+So, we have 3 pi over 4 times, and limit x is going to 1.
+
+348
+00:39:55,795 --> 00:40:00,155
+Here is second square pi x over 4 over tangent pi x over 4.
+
+349
+00:40:00,615 --> 00:40:03,175
+Okay, so here let's write 1.
+
+350
+00:40:03,556 --> 00:40:05,835
+Do we still have an indeterminate form or not?
+
+351
+00:40:06,355 --> 00:40:06,996
+Let's see.
+
+352
+00:40:07,815 --> 00:40:13,715
+And here, 3 pi over 4 times, second square, 1 over cosine square pi over 4.
+
+353
+00:40:13,715 --> 00:40:16,655
+That means second power of square root 2.
+
+354
+00:40:16,996 --> 00:40:17,096
+Okay.
+
+355
+00:40:18,435 --> 00:40:20,375
+Times 1 over tangent pi over 4.
+
+356
+00:40:20,455 --> 00:40:22,895
+Tangent pi over 4 is 1, so times 1.
+
+357
+00:40:23,215 --> 00:40:24,715
+So, you get 3 pi over 2.
+
+358
+00:40:25,135 --> 00:40:26,715
+All of you get 3 pi over 2.
+
+359
+00:40:26,955 --> 00:40:29,355
+But this is the limit of the logarithm function.
+
+360
+00:40:30,415 --> 00:40:31,576
+This is the L'AMP form.
+
+361
+00:40:32,195 --> 00:40:34,375
+So, what's the limit of this original function?
+
+362
+00:40:34,635 --> 00:40:36,215
+Must be written to E2.
+
+363
+00:40:38,036 --> 00:40:39,096
+3 pi over 2.
+
+364
+00:40:39,155 --> 00:40:39,375
+Okay.
+
+365
+00:40:58,804 --> 00:40:59,523
+are you okay?
+
+366
+00:41:12,724 --> 00:41:13,164
+mhm.
+
+367
+00:41:36,179 --> 00:41:43,199
+I think it's not so hard, easy, know what to do, you know, if you are careful, you will have no problem, I think.
+
+368
+00:41:57,204 --> 00:42:00,804
+If you are okay, let's continue with the next exercise.
+
+369
+00:42:01,564 --> 00:42:04,604
+If you are writing or if you have any problem, please write me, okay?
+
+370
+00:42:05,264 --> 00:42:06,324
+I can wait for you.
+
+371
+00:42:12,179 --> 00:42:15,779
+The next question is this. It's 1 to infinity.
+
+372
+00:42:27,731 --> 00:42:38,451
+So again an exponential form of indeterminate forms, third group, and logarithmic limit will be used here. Do it.
+
+373
+00:44:11,155 --> 00:44:12,155
+Evet, tamam.
+
+374
+00:44:15,572 --> 00:44:21,672
+E21, I think you mean E21, isn't it?
+
+375
+00:44:23,672 --> 00:44:25,452
+Yes, E21.
+
+376
+00:44:26,652 --> 00:44:27,672
+Yes, you're right.
+
+377
+00:44:31,532 --> 00:44:32,332
+E21.
+
+378
+00:44:33,132 --> 00:44:34,172
+Yes, it is.
+
+379
+00:44:38,164 --> 00:44:38,664
+ok.
+
+380
+00:44:48,403 --> 00:44:49,164
+Anyone else?
+
+381
+00:44:54,612 --> 00:44:55,372
+ok?
+
+382
+00:45:08,820 --> 00:45:17,019
+No, the logaritmic limit is resolved as 1, so it is resolved as e to 1, okay? That means e, yes.
+
+383
+00:45:22,260 --> 00:45:23,260
+ve süreklik,
+
+384
+00:45:29,460 --> 00:45:34,740
+As you see you know this is 1 to infinity. So logaritmic limit.
+
+385
+00:45:37,539 --> 00:45:49,139
+Get ln, apply logarithm function to the function in the limit and get 2 over sin x squared times ln e to x minus x.
+
+386
+00:45:49,139 --> 00:46:05,380
+Okay so as the limit of the logarithm function. Now we have 0 over 0. ln 1 is 0, sin 0 is 0, 0 over 0. Here we have two times of this limit.
+
+387
+00:46:06,019 --> 00:46:15,139
+So let's use the derivative of e to x minus x, derivative of this e to x minus x divided with e to x minus x.
+
+388
+00:46:15,139 --> 00:46:23,260
+So e to x minus 1 over e to x minus x over derivative of sin x squared 2x times cosine x squared.
+
+389
+00:46:23,579 --> 00:46:31,740
+Okay and then let's see. Do we still need a elliptal rule or not? Let's see.
+
+390
+00:46:32,220 --> 00:46:42,559
+2 over 2 times. Normally you have e to x minus 1 over e to x minus x times x times cosine x squared.
+
+391
+00:46:42,559 --> 00:46:43,559
+This expression.
+
+392
+00:46:47,000 --> 00:46:58,840
+And it seems that 0 over 0. Yes. But if you group them correctly. Look for example this part has no indeterminate form.
+
+393
+00:46:58,840 --> 00:47:04,960
+Because this is 1. 1 over. You can just separate the terms I mean.
+
+394
+00:47:05,400 --> 00:47:11,159
+If we have complicated structure and lots of functions in the case of multiplication.
+
+395
+00:47:11,699 --> 00:47:16,980
+Just try to group them and see which parts having an indeterminate form.
+
+396
+00:47:17,059 --> 00:47:21,619
+Which parts are infinite. Which parts are finite. Just separate them.
+
+397
+00:47:21,619 --> 00:47:23,840
+Okay. For example this part is okay.
+
+398
+00:47:24,340 --> 00:47:28,720
+Because once we put e to x minus 1 over e to x minus x.
+
+399
+00:47:29,179 --> 00:47:31,900
+We have a problem here. It has no problem.
+
+400
+00:47:32,019 --> 00:47:35,260
+1 over e to x minus x times cosine x squared.
+
+401
+00:47:35,340 --> 00:47:37,500
+When x is going to 0. It is 1 over.
+
+402
+00:47:39,840 --> 00:47:42,039
+1. Yes. 1 over 1. It is 1.
+
+403
+00:47:42,039 --> 00:47:44,360
+This part has a problem.
+
+404
+00:47:44,800 --> 00:47:45,840
+0 over 0.
+
+405
+00:47:46,639 --> 00:47:49,380
+Again. So let's deal with only this structure.
+
+406
+00:47:50,000 --> 00:47:51,860
+Separate. Evaluate. And then substitute.
+
+407
+00:47:52,400 --> 00:47:54,000
+E to x minus 1 over x.
+
+408
+00:47:54,519 --> 00:47:57,820
+By Leptal Rule easily you can get e to x.
+
+409
+00:47:58,159 --> 00:47:58,960
+Which results 1.
+
+410
+00:47:59,039 --> 00:48:01,139
+That means it is resulted as 1.
+
+411
+00:48:01,460 --> 00:48:02,180
+This is 1.
+
+412
+00:48:02,619 --> 00:48:03,740
+2 over 2 is 1.
+
+413
+00:48:03,820 --> 00:48:04,220
+So 1.
+
+414
+00:48:04,599 --> 00:48:08,519
+1 is the limit of the ln of this function.
+
+415
+00:48:08,519 --> 00:48:13,400
+So the original value is the limit of the original function.
+
+416
+00:48:13,539 --> 00:48:14,980
+Will be e to 1.
+
+417
+00:48:15,179 --> 00:48:15,820
+Which is e.
+
+418
+00:48:16,699 --> 00:48:17,659
+Are you okay?
+
+419
+00:48:17,800 --> 00:48:18,119
+Tell me.
+
+420
+00:48:25,748 --> 00:48:28,427
+Can you repeat this turret part?
+
+421
+00:48:28,427 --> 00:48:29,987
+Which part?
+
+422
+00:48:29,987 --> 00:48:31,987
+This part.
+
+423
+00:48:31,987 --> 00:48:36,228
+Yıldızladığınız aşağıdaki.
+
+424
+00:48:36,228 --> 00:48:37,748
+Hah, okay.
+
+425
+00:48:42,900 --> 00:48:43,400
+ok.
+
+426
+00:48:44,119 --> 00:48:44,440
+look.
+
+427
+00:48:48,211 --> 00:49:18,211
+Evet, şimdi, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda, yukarıda
+
+428
+00:49:18,211 --> 00:49:28,972
+Part by part functions we have in the case of multiplication. Okay, just look which parts of this question of the structure are finite, which ones have a problem.
+
+429
+00:49:30,152 --> 00:49:39,931
+Once you have one over, that means this part, this part has no problem. E to x minus x times cosine x squared has no problem when x is going to zero.
+
+430
+00:49:39,931 --> 00:49:50,512
+Because e to zero, one, one minus zero, one, cosine zero is one, one over one. That means this structure is directly one, so no problem.
+
+431
+00:49:51,052 --> 00:50:02,271
+So because I am trying to make the function easier, think that all the multiplication or only this part, which one is easier?
+
+432
+00:50:02,371 --> 00:50:07,612
+Of course, this part is easier because we have only problem at this part. This part has no problem.
+
+433
+00:50:07,612 --> 00:50:13,731
+That's why in that case, one by one, you can deal with it. And the problem is here, zero over zero.
+
+434
+00:50:14,472 --> 00:50:21,992
+Let's deal with this part separately because zero over zero we have and a little rule can be used here.
+
+435
+00:50:22,632 --> 00:50:26,211
+E to x minus one over x. Now I am evaluating this limit separately.
+
+436
+00:50:27,652 --> 00:50:33,612
+Get the limit. E to x minus one, e to x over x, one.
+
+437
+00:50:33,612 --> 00:50:40,231
+So it is e to zero, one. That means this limit, in fact, it is a result as one.
+
+438
+00:50:40,811 --> 00:50:45,411
+That is no problem. This part is one, this part is one, so the result is one.
+
+439
+00:50:46,371 --> 00:50:49,452
+One is the limit of the L and y.
+
+440
+00:50:49,992 --> 00:50:54,891
+So the limit of the original function, it will be e to one, which is e.
+
+441
+00:50:55,251 --> 00:50:56,251
+Now, are you okay?
+
+442
+00:50:56,251 --> 00:51:00,532
+Yes, thank you so much.
+
+443
+00:51:00,532 --> 00:51:02,391
+Okay, not at all, of course.
+
+444
+00:51:04,451 --> 00:51:05,791
+[öğrenci], do you understand me?
+
+445
+00:51:05,791 --> 00:51:34,552
+Okay.
+
+446
+00:51:11,315 --> 00:51:13,315
+Have I answered your question also?
+
+447
+00:51:14,775 --> 00:51:22,635
+Hocam, bulduğumuz sonucu her seferinde e'nin üstüne yazmamızın sebebi yukarıda elen yazmamız mı? Yani y'yi elen olarak almamız mı?
+
+448
+00:51:22,955 --> 00:51:34,235
+Yes, because look, we get the limit of elen y, not the limit of this. Limit of elen y, first we evaluate and get one, but this limit is asked.
+
+449
+00:51:34,235 --> 00:51:42,015
+but we evaluate and get one, but we evaluate and elen of it. That's why we are writing it in the exponent form. Otherwise they cannot be saying.
+
+450
+00:51:44,295 --> 00:51:46,415
+Tamam hocam, anladım. Teşekkürler.
+
+451
+00:51:46,695 --> 00:51:47,195
+Not at all.
+
+452
+00:51:49,695 --> 00:51:50,395
+Any question?
+
+453
+00:52:06,547 --> 00:52:10,307
+Any questions do you have? You can ask me.
+
+454
+00:52:17,844 --> 00:52:25,344
+So, you seem that you are okay. Okay, so let's continue. Okay.
+
+455
+00:52:29,492 --> 00:52:31,492
+Bu ne? Bu ne?
+
+456
+00:52:37,780 --> 00:52:40,019
+which indeterminate form is included here?
+
+457
+00:52:57,012 --> 00:53:00,251
+2x-1, 1x is going to 1.
+
+458
+00:53:19,603 --> 00:53:27,603
+What is it? Which form is it? Okay, well done. It's 1 to infinity.
+
+459
+00:53:31,923 --> 00:53:36,244
+So, again, logaritmic limit you will use. Let's solve it. I am waiting here.
+
+460
+00:53:38,804 --> 00:53:45,523
+Get the logarithm of them? No, it's not zero. No.
+
+461
+00:53:48,083 --> 00:53:52,244
+Yes, you're right. But e to 2 over pi, so there.
+
+462
+00:53:55,123 --> 00:53:58,083
+Isn't it? Yes. Okay, well done.
+
+463
+00:54:02,387 --> 00:54:14,887
+No, it's not. Not 1, not 0. It is e to 2 over pi. Let's do it again. I'm waiting.
+
+464
+00:54:19,347 --> 00:54:20,347
+Be careful.
+
+465
+00:54:43,411 --> 00:54:50,811
+mhm, but e2, e2, e2 over pi. e2, 2 over pi.
+
+466
+00:55:06,132 --> 00:55:07,672
+Evet, iyi gün.
+
+467
+00:55:08,072 --> 00:55:08,692
+2x, bye.
+
+468
+00:55:23,059 --> 00:55:30,380
+Okay. Anyone? Yes. E2x, f'ı.
+
+469
+00:55:45,907 --> 00:55:48,587
+Oh, it's possible, no problem.
+
+470
+00:55:50,587 --> 00:55:52,188
+But you like zero, I think.
+
+471
+00:55:55,127 --> 00:55:57,188
+Yes, okay, e to 2 over pi.
+
+472
+00:56:02,356 --> 00:56:03,516
+Evet, you're right.
+
+473
+00:56:05,276 --> 00:56:07,276
+Well done, all of you. Well done.
+
+474
+00:56:07,516 --> 00:56:09,856
+If you have any problem or not, it doesn't matter.
+
+475
+00:56:10,376 --> 00:56:11,736
+You're working on the questions.
+
+476
+00:56:12,656 --> 00:56:13,696
+So, thank you.
+
+477
+00:56:24,275 --> 00:56:27,835
+e to 2 over 5, it must be, not e².
+
+478
+00:56:35,572 --> 00:56:38,132
+Pays coming from the derivative, isn't it?
+
+479
+00:56:51,827 --> 00:56:59,748
+Şallı da
+
+480
+00:56:59,748 --> 00:57:42,067
+Evet.
+
+481
+00:57:46,452 --> 00:57:51,472
+Ok, and so use the little rule and get derivatives.
+
+482
+00:57:52,272 --> 00:58:00,272
+Derivative of it, 2 over 2x minus 1 over tangent pi x pi second square pi x.
+
+483
+00:58:00,432 --> 00:58:01,472
+Ok, that's right.
+
+484
+00:58:02,432 --> 00:58:04,452
+So let's do the needed operations here.
+
+485
+00:58:04,712 --> 00:58:09,672
+2 over pi times 1 over second square means cosine square.
+
+486
+00:58:10,172 --> 00:58:13,092
+Cosine square pi x over 2x minus 4.
+
+487
+00:58:13,712 --> 00:58:14,972
+And let's see.
+
+488
+00:58:16,452 --> 00:58:18,752
+When x is going to 1, what happens?
+
+489
+00:58:18,852 --> 00:58:23,512
+2 over pi times, this is the coefficient, cosine square pi.
+
+490
+00:58:24,132 --> 00:58:26,712
+Cosine pi is minus 1, second power is 1.
+
+491
+00:58:26,972 --> 00:58:29,352
+2x minus 1 is 1, so 1 over 1, 1.
+
+492
+00:58:29,872 --> 00:58:33,372
+So the result must be multiplied with 1, 2 over pi, this limit.
+
+493
+00:58:33,712 --> 00:58:39,372
+This limit result is the limit of ln y, that is ln of it.
+
+494
+00:58:39,912 --> 00:58:44,572
+So limit of this function is e2, 2 over pi, it must be.
+
+495
+00:58:44,572 --> 00:58:49,452
+Is it ok for you?
+
+496
+00:58:50,332 --> 00:58:51,112
+Any problem?
+
+497
+00:58:51,112 --> 00:58:51,632
+No.
+
+498
+00:59:12,275 --> 00:59:13,235
+I think it's easy.
+
+499
+00:59:20,980 --> 00:59:22,579
+So, let's continue.
+
+500
+00:59:28,371 --> 00:59:29,511
+Next question.
+
+501
+00:59:31,431 --> 00:59:32,831
+Let's do the seventh question.
+
+502
+00:59:36,275 --> 00:59:43,475
+1x is going to 0, 1 minus cosin x to x. 1 minus cosin x to x.
+
+503
+00:59:46,295 --> 00:59:48,795
+So it's what? Which form is it?
+
+504
+01:00:10,963 --> 01:00:12,963
+Which indeterminate form is it?
+
+505
+01:00:17,268 --> 01:00:32,947
+x is going to 0, what you say? Yes, 0 to 0, yes, you're right. Exponent form again. Again, you need to get a logarithm of it and then logarithmic limit must be followed here, I'm waiting.
+
+506
+01:01:12,820 --> 01:01:22,100
+Let me look. Yes, you're right. It's 1. Yes, 8 to 0. Yes, you're right. Well done.
+
+507
+01:01:56,371 --> 01:01:57,311
+yes, 1.
+
+508
+01:02:05,940 --> 01:02:07,940
+Evet, yaslıyor.
+
+509
+01:02:18,516 --> 01:02:21,896
+Yes, yes, it's 1. Let's see the solution.
+
+510
+01:02:24,755 --> 01:02:27,596
+It's 0 to 0. Get the logarithm.
+
+511
+01:02:28,776 --> 01:02:32,735
+And L'n of it is x times L'n 1 minus cosin x.
+
+512
+01:02:32,836 --> 01:02:41,655
+That means L'n cosin x over 1 over x we can write in order to make it because 0 times infinity, 0, infinite over infinity in this form.
+
+513
+01:02:41,655 --> 01:02:42,096
+Okay.
+
+514
+01:02:43,436 --> 01:02:45,916
+So, let's look at the little rule. We can easily follow.
+
+515
+01:02:47,115 --> 01:02:51,556
+L'n 1 minus cosin x has the derivative of sin x over 1 minus cosin x.
+
+516
+01:02:51,655 --> 01:02:51,956
+Okay.
+
+517
+01:02:52,416 --> 01:02:54,635
+And 1 over x has minus 1 over x squared.
+
+518
+01:02:55,556 --> 01:02:58,816
+And then two to the operations and then put the point.
+
+519
+01:02:58,936 --> 01:02:59,076
+Okay.
+
+520
+01:03:00,536 --> 01:03:03,436
+We get x squared sin x over cosin x minus 1.
+
+521
+01:03:03,936 --> 01:03:05,496
+So, put 0 again.
+
+522
+01:03:06,175 --> 01:03:07,755
+0 over 0.
+
+523
+01:03:08,076 --> 01:03:09,155
+Again, 0 over 0.
+
+524
+01:03:09,155 --> 01:03:39,135
+First one is 0.
+
+525
+01:03:45,235 --> 01:03:55,635
+This must be negatif, I think here. I think I am mistaken here. Minus 2x minus x squared cosinx over sinx.
+
+526
+01:03:55,635 --> 01:04:04,115
+This operation must be negative. Okay. Minus 2x minus limit x is going to zero and this. Minus 2x is going to zero.
+
+527
+01:04:04,115 --> 01:04:12,915
+But what about this one? It seems to zero over zero. But what do you think? What is it? What do you get from this
+
+528
+01:04:12,915 --> 01:04:18,435
+expression? Is it zero? Or how did you get zero of this expression? Tell me.
+
+529
+01:04:27,315 --> 01:04:30,515
+Evet, bu da. Evet, bu da.
+
+530
+01:04:30,515 --> 01:04:35,875
+Evet, bu da. Bu da. Bu da. Bu da. Bu da. Bu da. Bu da, bu da. Bu da, all of you.
+
+531
+01:04:36,435 --> 01:04:39,355
+Çünkü x over sin x is 1, when x is going to 0.
+
+532
+01:04:39,675 --> 01:04:42,555
+So, we have left x times cos x.
+
+533
+01:04:42,635 --> 01:04:46,076
+And we have left x times cos x. No problem.
+
+534
+01:04:46,475 --> 01:04:47,715
+It is going to 0.
+
+535
+01:04:48,395 --> 01:04:50,715
+So, 1 times 0 will be 0.
+
+536
+01:04:51,055 --> 01:04:51,955
+And this is 0.
+
+537
+01:04:52,096 --> 01:04:56,596
+So, the result of ln y, when x is going to 0, 0.
+
+538
+01:04:56,596 --> 01:04:58,835
+So, we need to write it in exponent form.
+
+539
+01:04:59,035 --> 01:05:00,195
+e to 0 is 1.
+
+540
+01:05:00,495 --> 01:05:01,596
+Well done, all of you.
+
+541
+01:05:01,675 --> 01:05:02,475
+Thank you so much.
+
+542
+01:05:21,427 --> 01:05:22,188
+Are you okay?
+
+543
+01:05:30,643 --> 01:05:31,843
+Any question with it?
+
+544
+01:05:49,748 --> 01:05:50,628
+Evet, ben.
+
+545
+01:05:54,887 --> 01:05:57,128
+Bu formu, bu bir şey.
+
+546
+01:05:57,128 --> 01:05:58,447
+Lepitulur ve bu.
+
+547
+01:05:58,447 --> 01:05:59,688
+Şimdi bu.
+
+548
+01:05:59,688 --> 01:06:00,588
+Bu, bu expression.
+
+549
+01:06:01,548 --> 01:06:03,528
+Bu, ilk 0, 0.
+
+550
+01:06:03,528 --> 01:06:13,528
+Bu, bu, bu.
+
+551
+01:06:13,528 --> 01:06:16,528
+Bu, bu, bu, bu.
+
+552
+01:06:16,528 --> 01:06:17,528
+Bu, bu, bu, bu, bu.
+
+553
+01:06:17,528 --> 01:06:18,528
+Bu, bu, bu, bu, bu, bu, bu.
+
+554
+01:06:18,528 --> 01:06:24,407
+0-2x minus it must be limit x is going to 0 x square cosine x over sine x.
+
+555
+01:06:24,407 --> 01:06:26,128
+I deal with them one by one.
+
+556
+01:06:26,128 --> 01:06:26,347
+Okay.
+
+557
+01:06:26,847 --> 01:06:28,148
+This limit is going to 0.
+
+558
+01:06:28,268 --> 01:06:28,867
+No problem.
+
+559
+01:06:29,248 --> 01:06:29,788
+It's finite.
+
+560
+01:06:30,307 --> 01:06:32,528
+But this seems to be 0 over 0.
+
+561
+01:06:32,648 --> 01:06:40,927
+But once you see x over sine x when x is going to 0, you have to just remember x over sine x or sine x over x is 1.
+
+562
+01:06:41,327 --> 01:06:44,128
+Not an indeterminate form, not an infinite result.
+
+563
+01:06:44,487 --> 01:06:45,847
+It is finite and 1.
+
+564
+01:06:45,847 --> 01:06:48,407
+But x over sine x is 1.
+
+565
+01:06:48,668 --> 01:06:51,108
+So we have left x times cosine x.
+
+566
+01:06:51,487 --> 01:06:54,847
+That means x over sine x times x cosine x.
+
+567
+01:06:55,108 --> 01:06:56,748
+X over sine x is going to 1.
+
+568
+01:06:57,268 --> 01:06:59,188
+X cosine x is going to 0.
+
+569
+01:06:59,568 --> 01:07:01,947
+So this multiplication will be 0.
+
+570
+01:07:02,467 --> 01:07:04,508
+This is 0.
+
+571
+01:07:04,927 --> 01:07:06,228
+The result will be 0.
+
+572
+01:07:06,947 --> 01:07:09,467
+And this is the logarithm of it.
+
+573
+01:07:09,467 --> 01:07:12,508
+So we have to write the result to e.
+
+574
+01:07:12,847 --> 01:07:14,768
+E to 0, which is 1.
+
+575
+01:07:15,847 --> 01:07:45,807
+Are you okay now?
+
+576
+01:07:24,307 --> 01:07:26,987
+Okay. Anyone else who has a problem?
+
+577
+01:07:43,507 --> 01:07:45,507
+If you are okay, let's continue.
+
+578
+01:07:54,195 --> 01:08:03,635
+Okay. So what about this question? 1 plus 2 to x plus 3 to x, 2, 1 over x.
+
+579
+01:08:05,315 --> 01:08:07,795
+It's just an eccentric question, I think.
+
+580
+01:08:22,707 --> 01:08:45,268
+First, tell me which indeterminate form is included here? Yes, you are right. Infinity to zero. Yes, so logaritmic limit must be used. Infinity to zero. Exponent form, the third group.
+
+581
+01:08:50,323 --> 01:08:51,743
+Dur sen zahmı, I'm waiting.
+
+582
+01:09:47,252 --> 01:09:58,572
+1 over L and 3.
+
+583
+01:09:58,572 --> 01:10:01,731
+You are just getting closer to the correct result.
+
+584
+01:10:02,392 --> 01:10:03,412
+I think check it again.
+
+585
+01:10:30,420 --> 01:10:32,020
+ve süreklik, bir soru.
+
+586
+01:10:35,020 --> 01:10:36,119
+I have to say that.
+
+587
+01:10:36,760 --> 01:10:37,539
+No, it's not.
+
+588
+01:10:45,043 --> 01:10:47,384
+It's a little bit difficult, I think, this question.
+
+589
+01:10:49,023 --> 01:10:51,783
+No one has answered it correctly up to now.
+
+590
+01:10:54,083 --> 01:10:57,963
+Maybe [öğrenci] will find it.
+
+591
+01:11:25,844 --> 01:11:30,804
+Why you get bulur elantri? It is E to elantri.
+
+592
+01:11:51,859 --> 01:11:56,899
+Hmm, okay, so well done [öğrenci]. You get the correct result only you get.
+
+593
+01:11:59,899 --> 01:12:02,439
+Well done. Anyone else? I'm waiting.
+
+594
+01:12:04,259 --> 01:12:05,719
+And I will be so happy.
+
+595
+01:12:06,920 --> 01:12:11,939
+If I hear more than one student to get the correct result.
+
+596
+01:12:47,636 --> 01:12:53,196
+No, it's not 1. No, it's not 3. Okay, but not 3.
+
+597
+01:12:59,123 --> 01:13:03,123
+anyone else? Now we will see it together.
+
+598
+01:13:26,420 --> 01:13:27,420
+ve süreklik, sülüsü.
+
+599
+01:13:36,275 --> 01:13:49,235
+This is infinity to 0. 2 to infinity, 3 to infinity, infinity. Infinity to 1 over infinity, 0. Infinity to 0. Third group, again, logarithmic limit is used and get the logarithm.
+
+600
+01:13:49,876 --> 01:14:01,715
+1 over x times ln, 1 plus 2 to x plus 3 to x. Okay. Write it in terms of ln, 1 plus 2 to x plus 3 to x over x, which makes it infinity over infinity. Okay.
+
+601
+01:14:01,715 --> 01:14:08,195
+Now it's ready for using the capital rule. Let's use it and get the derivatives.
+
+602
+01:14:09,155 --> 01:14:15,956
+Derivative of this expression, 2 to x times ln, 2 plus 3 to x times ln, 3.
+
+603
+01:14:17,315 --> 01:14:22,115
+Over the function itself, 1 plus 2 to x plus 3 to x times ln, 2.
+
+604
+01:14:22,675 --> 01:14:28,355
+Derivative of x is 1. So this. Now think, what to do?
+
+605
+01:14:32,916 --> 01:14:39,956
+You can have a grouping of 3 to x to eliminate a determinative form.
+
+606
+01:14:40,695 --> 01:14:45,895
+3 to x times 2 over 3, you will need ln2 plus ln3.
+
+607
+01:14:46,976 --> 01:14:47,235
+This.
+
+608
+01:14:49,655 --> 01:14:55,096
+Over 1 over 3 to x, 2 over 3 to x plus 1.
+
+609
+01:14:56,176 --> 01:14:58,395
+Okay, so 3 to x will be canceled.
+
+610
+01:14:58,395 --> 01:15:03,876
+Why should I choose 3 to x to group?
+
+611
+01:15:04,136 --> 01:15:08,256
+Because, don't forget this fact,
+
+612
+01:15:08,775 --> 01:15:11,336
+when x is going to infinity, a to x is 0,
+
+613
+01:15:11,416 --> 01:15:12,895
+when a is less than 1.
+
+614
+01:15:13,796 --> 01:15:18,115
+Okay, so I just make them less than 1
+
+615
+01:15:18,115 --> 01:15:19,615
+by dividing with 3 to x.
+
+616
+01:15:20,176 --> 01:15:23,976
+That's why these exponential forms are going to 0.
+
+617
+01:15:25,315 --> 01:15:25,916
+Okay.
+
+618
+01:15:25,916 --> 01:15:28,655
+when a is less than 1 over a,
+
+619
+01:15:28,655 --> 01:15:28,855
+when a is less than 1,
+
+620
+01:15:28,855 --> 01:15:30,476
+when a is less than 1, a to x is going to 0,
+
+621
+01:15:30,476 --> 01:15:32,056
+because it will be in the denominator.
+
+622
+01:15:32,615 --> 01:15:35,636
+1 over a, 1 over infinite results, 0.
+
+623
+01:15:36,216 --> 01:15:40,416
+So that's why I group of 3 to x to make them less than 1.
+
+624
+01:15:40,536 --> 01:15:40,796
+Okay.
+
+625
+01:15:42,536 --> 01:15:44,936
+2 over 3 to x is going to 0.
+
+626
+01:15:45,735 --> 01:15:50,315
+0 times ln2, 0 plus ln3 is the constant number, ln3.
+
+627
+01:15:50,655 --> 01:15:53,155
+Over 1 over 3 to x, 0.
+
+628
+01:15:53,775 --> 01:15:55,536
+2 over 3 to x, 0.
+
+629
+01:15:55,536 --> 01:16:00,155
+plus ln3 plus ln3 plus ln3.
+
+630
+01:16:00,155 --> 01:16:00,195
+ln3 is the result of ln3.
+
+631
+01:16:00,195 --> 01:16:02,476
+ln3 is the result of the logarithm,
+
+632
+01:16:02,756 --> 01:16:04,016
+limit of logarithm function.
+
+633
+01:16:04,456 --> 01:16:06,775
+So it must be written in the exponent form.
+
+634
+01:16:07,275 --> 01:16:10,195
+ln e2, ln3 will be...
+
+635
+01:16:10,195 --> 01:16:12,195
+Oh, yes, you said 3.
+
+636
+01:16:12,315 --> 01:16:13,155
+Yes, you're right.
+
+637
+01:16:14,155 --> 01:16:14,836
+I'm sorry.
+
+638
+01:16:17,516 --> 01:16:20,536
+Once you get 3, yes, you're right.
+
+639
+01:16:21,016 --> 01:16:21,695
+Who gets 3?
+
+640
+01:16:22,036 --> 01:16:22,815
+Yes, it's okay.
+
+641
+01:16:23,855 --> 01:16:24,456
+I'm sorry.
+
+642
+01:16:30,100 --> 01:16:31,100
+3 is okay.
+
+643
+01:16:46,579 --> 01:16:48,180
+Hocam, bir şey sorabilir miyim?
+
+644
+01:16:48,539 --> 01:16:49,539
+Yes, you may.
+
+645
+01:16:50,239 --> 01:16:55,319
+Ben 3 üzeri x kısmını anlayamadım, neden 3 üzeri x aldığımızı.
+
+646
+01:16:56,559 --> 01:17:01,819
+Because, for example, you can do it with 2 to x, but you will have a different result.
+
+647
+01:17:02,039 --> 01:17:05,880
+That means, not a different result. Maybe you cannot get the solution easily.
+
+648
+01:17:06,439 --> 01:17:14,399
+We get grouping of 3 to x because once we have this limit, limit x is going to infinity, a to x is going to 0.
+
+649
+01:17:14,399 --> 01:17:28,239
+So, when, when a is less than 1, 2 to 3 is less than 1, 1 over 3 is less than 1, 2 to 3 is less than 1, we make these exponent forms going to 0 while using this rule.
+
+650
+01:17:28,239 --> 01:17:38,800
+That's why I'm grouping of 3 to x, which makes these exponential forms, these base numbers are less than 1, which makes this limit is going to 0.
+
+651
+01:17:39,300 --> 01:17:42,019
+Okay? Now, do you understand me?
+
+652
+01:17:42,019 --> 01:17:43,460
+Yes.
+
+653
+01:17:43,460 --> 01:17:45,279
+Okay, nice.
+
+654
+01:17:45,279 --> 01:17:53,260
+And so, you get 0 plus L and 3 over 0 plus 1.
+
+655
+01:17:59,796 --> 01:18:01,275
+I think it's a nice question.
+
+656
+01:18:02,956 --> 01:18:04,036
+Not so easy.
+
+657
+01:18:05,096 --> 01:18:06,836
+It's a good question, in my opinion.
+
+658
+01:18:23,923 --> 01:18:26,684
+ve sülüksüzü.
+
+659
+01:18:26,684 --> 01:18:29,444
+ve sülüksüzü. Tan, ask me.
+
+660
+01:18:29,783 --> 01:18:31,123
+I can repeat if you want.
+
+661
+01:19:02,260 --> 01:19:06,220
+Are you all okay about this solution? Tell me. Do you have any problem?
+
+662
+01:19:15,572 --> 01:19:29,612
+Okay. Okay. So, let's continue with the next one. This question. 1 plus cosin pi x over 1 minus x, when x is going to 1.
+
+663
+01:19:54,036 --> 01:19:56,916
+Evet, evet, evet, 0.
+
+664
+01:20:41,171 --> 01:20:43,171
+Evet, 0.
+
+665
+01:20:52,372 --> 01:20:55,311
+ok, let's see.
+
+666
+01:21:02,131 --> 01:21:06,631
+Evet, 0. Evet, 0. Bu da, all of you. Thank you.
+
+667
+01:21:08,551 --> 01:21:15,171
+I prefer in this question, transformation. Transformations can be used anytime you want.
+
+668
+01:21:15,171 --> 01:21:20,211
+Once you apply the transformation correctly, there is no problem.
+
+669
+01:21:20,911 --> 01:21:28,591
+Sometimes, transformations make limits, integrations, or other operations much more easier.
+
+670
+01:21:28,591 --> 01:21:32,831
+For example, in this question, I just prefer to get a transformation.
+
+671
+01:21:33,611 --> 01:21:40,111
+This is my solution, and I decided to solve this question in this form.
+
+672
+01:21:40,631 --> 01:21:44,511
+Let's say u is 1 minus x. Okay, so x is 1 minus u.
+
+673
+01:21:45,711 --> 01:21:50,531
+And when x is going to 1, now I'm changing the variable u.
+
+674
+01:21:50,991 --> 01:21:53,351
+When x is going to 1, u is going to 0.
+
+675
+01:21:53,351 --> 01:22:00,351
+Okay, now the new function, the new function, the new function must be written in terms of u.
+
+676
+01:22:00,351 --> 01:22:02,791
+So the function must be written in terms of u. I need to decide where u is going.
+
+677
+01:22:02,791 --> 01:22:04,791
+Okay, u is going to 0.
+
+678
+01:22:04,791 --> 01:22:08,111
+1 plus cos pi 1 minus u over u.
+
+679
+01:22:10,631 --> 01:22:11,631
+Okay.
+
+680
+01:22:12,111 --> 01:22:14,111
+And this is the solution.
+
+681
+01:22:14,671 --> 01:22:17,791
+Normally, how did you solve it? Tell me.
+
+682
+01:22:18,791 --> 01:22:19,991
+It is 0 over 0.
+
+683
+01:22:21,671 --> 01:22:22,791
+How did you get 0?
+
+684
+01:22:33,395 --> 01:22:34,395
+How did you get zero?
+
+685
+01:22:41,684 --> 01:22:43,684
+Evet, bu yapayla.
+
+686
+01:22:43,684 --> 01:22:51,684
+Bu yapayla.
+
+687
+01:22:51,684 --> 01:22:53,684
+Yapayla.
+
+688
+01:22:53,684 --> 01:23:01,684
+Bu yapayla.
+
+689
+01:23:01,684 --> 01:23:03,684
+Yapayla.
+
+690
+01:23:03,684 --> 01:23:09,684
+Bu yapayla.
+
+691
+01:23:09,684 --> 01:23:16,684
+1 plus, I said it, 1 plus cosine pi minus pi times u over u.
+
+692
+01:23:16,684 --> 01:23:22,684
+Now I will use the sum and difference formula of cosine function.
+
+693
+01:23:22,684 --> 01:23:28,684
+So write 1 plus cosine pi cosine pi u plus sine pi times sine pi u.
+
+694
+01:23:28,684 --> 01:23:31,684
+I know that this is minus 1 and this is 0.
+
+695
+01:23:31,684 --> 01:23:35,684
+So I have, and this is 0.
+
+696
+01:23:35,684 --> 01:23:38,684
+So 1 minus cosine pi u over u.
+
+697
+01:23:38,684 --> 01:23:41,684
+And I just multiply and divide with pi.
+
+698
+01:23:41,684 --> 01:23:46,684
+And if we remember, 1 minus cosine x over x.
+
+699
+01:23:46,684 --> 01:23:48,684
+It was 0.
+
+700
+01:23:48,684 --> 01:23:50,684
+That's the same.
+
+701
+01:23:50,684 --> 01:23:54,684
+1 minus cosine pi times u over pi u.
+
+702
+01:23:54,684 --> 01:23:56,684
+And when u is going to 0, it is 0.
+
+703
+01:23:56,684 --> 01:23:58,684
+So it results as 0.
+
+704
+01:23:58,684 --> 01:24:03,684
+And like you said, while using the L'Opital rule, you can get the same way.
+
+705
+01:24:03,684 --> 01:24:07,684
+This is the alternative way I want you to consider.
+
+706
+01:24:07,684 --> 01:24:12,684
+Please, sometimes try the different ways without using the L'Opital rule.
+
+707
+01:24:12,684 --> 01:24:14,684
+You can just think some ways.
+
+708
+01:24:14,684 --> 01:24:16,684
+So this is a nice solution for you, I think.
+
+709
+01:24:16,684 --> 01:24:45,684
+Thank you.
+
+710
+01:24:36,692 --> 01:24:37,011
+maybe.
+
+711
+01:24:40,756 --> 01:24:43,756
+Evet, ozan.
+
+712
+01:24:43,756 --> 01:25:09,756
+[öğrenci], ozan.
+
+713
+01:25:10,579 --> 01:25:12,579
+bu sorunlar, bu sorunlar, belirsiz ve belirli integral sıfırdan bire.
+
+714
+01:25:27,028 --> 01:25:31,748
+Any questions? Okay. So let's continue with the next question.
+
+715
+01:25:35,956 --> 01:25:36,756
+Evet, I can.
+
+716
+01:25:37,315 --> 01:25:38,596
+Evet, I can repeat it.
+
+717
+01:25:38,596 --> 01:25:38,956
+Wait.
+
+718
+01:25:40,516 --> 01:25:42,115
+And for this question,
+
+719
+01:25:42,115 --> 01:25:44,636
+this solution is the alternative solution.
+
+720
+01:25:44,636 --> 01:25:46,996
+You can just think by using the loop-to-le rule,
+
+721
+01:25:46,996 --> 01:25:49,476
+you can solve it because 0 over 0 you get.
+
+722
+01:25:49,956 --> 01:25:50,836
+Again, you can use.
+
+723
+01:25:51,476 --> 01:25:52,916
+Without using the loop-to-le rule,
+
+724
+01:25:52,916 --> 01:25:55,395
+let's see what can we do for this question.
+
+725
+01:25:56,036 --> 01:26:00,435
+I just decide to get a transformation.
+
+726
+01:26:00,435 --> 01:26:01,636
+1 minus cx.
+
+727
+01:26:02,115 --> 01:26:03,235
+Let's say this is u.
+
+728
+01:26:03,235 --> 01:26:06,036
+I'm just changing the variable in the limit.
+
+729
+01:26:06,036 --> 01:26:07,315
+We can always follow.
+
+730
+01:26:07,876 --> 01:26:08,596
+No problem.
+
+731
+01:26:09,155 --> 01:26:11,155
+Sometimes it works so nice.
+
+732
+01:26:12,036 --> 01:26:13,956
+So x is 1 minus u.
+
+733
+01:26:13,956 --> 01:26:16,916
+And when x is going to 1, u is going to 0.
+
+734
+01:26:16,916 --> 01:26:17,636
+Okay.
+
+735
+01:26:17,636 --> 01:26:19,076
+Now limit is u.
+
+736
+01:26:19,076 --> 01:26:20,996
+Limit u is going to 0.
+
+737
+01:26:20,996 --> 01:26:23,876
+What about the function 1 plus cosine pi times?
+
+738
+01:26:24,435 --> 01:26:27,395
+x is 1 minus u over 1 minus x is u.
+
+739
+01:26:28,115 --> 01:26:32,836
+So it becomes 1 plus cosine pi minus pi times u over u.
+
+740
+01:26:34,115 --> 01:26:35,956
+And here for this function,
+
+741
+01:26:35,956 --> 01:26:39,476
+I just use the sum and difference formula of cosine function.
+
+742
+01:26:40,355 --> 01:26:43,796
+So it is cosine pi times cosine pi u.
+
+743
+01:26:43,796 --> 01:26:46,756
+That means cosine a minus b, you can just think.
+
+744
+01:26:46,756 --> 01:26:50,435
+Cosine a times cosine b plus sine a sine b.
+
+745
+01:26:50,435 --> 01:26:50,676
+Okay.
+
+746
+01:26:51,235 --> 01:26:54,516
+This is a formula of sum and difference formula of cosine.
+
+747
+01:26:56,676 --> 01:26:57,716
+Over u.
+
+748
+01:26:57,716 --> 01:26:59,796
+I'm not using the L'Opital rule here.
+
+749
+01:27:00,435 --> 01:27:02,916
+1 plus cosine pi is minus 1.
+
+750
+01:27:03,476 --> 01:27:04,516
+Cosine pi u.
+
+751
+01:27:04,516 --> 01:27:05,235
+Okay.
+
+752
+01:27:05,235 --> 01:27:06,115
+Is the variable.
+
+753
+01:27:06,115 --> 01:27:07,076
+Sine pi is 0.
+
+754
+01:27:07,076 --> 01:27:08,676
+So this will be 0.
+
+755
+01:27:09,235 --> 01:27:10,355
+So what we have left?
+
+756
+01:27:10,355 --> 01:27:12,916
+1 minus cosine pi over u.
+
+757
+01:27:13,716 --> 01:27:15,716
+Now multiply and divide with pi.
+
+758
+01:27:15,716 --> 01:27:21,155
+Because I know that 1 minus cosine pi u over pi times u.
+
+759
+01:27:21,796 --> 01:27:25,315
+Like 1 minus cosine x over x is going to 0.
+
+760
+01:27:25,315 --> 01:27:26,195
+It's the known limit.
+
+761
+01:27:26,916 --> 01:27:27,956
+It's going to 0.
+
+762
+01:27:30,115 --> 01:27:30,756
+Times pi.
+
+763
+01:27:30,756 --> 01:27:33,876
+So 0 times pi will be 0.
+
+764
+01:27:36,516 --> 01:27:37,235
+Are you okay?
+
+765
+01:27:37,235 --> 01:27:39,235
+Okay.
+
+766
+01:27:44,083 --> 01:27:46,403
+Do you understand it now? Tell me.
+
+767
+01:27:49,923 --> 01:27:54,003
+Okay, not at all of course. I can repeat as much as you want, no problem.
+
+768
+01:27:57,619 --> 01:28:02,119
+So if you are okay, let's continue.
+
+769
+01:28:03,159 --> 01:28:07,359
+The next question is, sin x over x minus square root x.
+
+770
+01:28:08,579 --> 01:28:10,800
+And it seems to be 0 over 0.
+
+771
+01:28:12,939 --> 01:28:14,519
+Let's look what to do here.
+
+772
+01:28:29,587 --> 01:28:33,747
+again, I will solve it with no-lipto rule. If you want, you can try it.
+
+773
+01:28:38,931 --> 01:28:48,791
+Evet, 0. Yüzey, L'Hospital, no problem, ve 0. Yüzey, L'Hospital, yine de yapmak için, yüzey, L'Hospital, ok?
+
+774
+01:28:48,791 --> 01:28:51,471
+You can use, of course, L'Hospital rule.
+
+775
+01:28:52,532 --> 01:28:56,211
+But if you are not allowed, just think the alternative methods.
+
+776
+01:28:57,391 --> 01:29:02,671
+And especially once you see sin x over some functions of x, when x is going to 0,
+
+777
+01:29:03,091 --> 01:29:06,351
+maybe you can find the other ways you have to just think.
+
+778
+01:29:06,652 --> 01:29:11,152
+But if you are allowed to use the L'Hospital rule, ok, just follow, no problem.
+
+779
+01:29:11,731 --> 01:29:12,572
+Easier because.
+
+780
+01:29:16,756 --> 01:29:18,336
+So let's see my solution.
+
+781
+01:29:20,416 --> 01:29:23,536
+Now think that you are not allowed to use the L'Hospital rule, what to do?
+
+782
+01:29:24,436 --> 01:29:30,476
+I know about the formula of sin x over x is going to 1 when x is going to 0.
+
+783
+01:29:31,016 --> 01:29:33,615
+It's a nice formula I think that we need to use.
+
+784
+01:29:34,376 --> 01:29:41,556
+Here, normally 0 over 0 and L'Hospital rule, you get 0, but think that this is the alternative method.
+
+785
+01:29:41,556 --> 01:29:49,496
+and to get sin x over a function of x or something, you need to just eliminate the substraction.
+
+786
+01:29:50,076 --> 01:29:51,235
+You can group of them.
+
+787
+01:29:51,936 --> 01:29:55,216
+Square root x times square root x minus 1, for example.
+
+788
+01:29:56,115 --> 01:30:00,735
+But sin x over square root x, we cannot say anything.
+
+789
+01:30:01,076 --> 01:30:02,776
+It must be in the square root again.
+
+790
+01:30:03,296 --> 01:30:05,735
+Square root sin x times square root sin x is sin x.
+
+791
+01:30:06,076 --> 01:30:09,695
+So square root x times square root x minus 1.
+
+792
+01:30:09,695 --> 01:30:28,096
+So it's minus 1, 0 over minus 1, 0.
+
+793
+01:30:28,756 --> 01:30:30,016
+So it is okay.
+
+794
+01:30:42,963 --> 01:30:43,283
+ok.
+
+795
+01:30:53,235 --> 01:30:54,735
+Any questions? I think it's easy.
+
+796
+01:31:03,828 --> 01:31:04,328
+Okay.
+
+797
+01:31:06,868 --> 01:31:07,968
+Let's continue, so,
+
+798
+01:31:10,368 --> 01:31:11,448
+with the next question.
+
+799
+01:31:16,340 --> 01:31:22,659
+Yes, what about this? 0 or 0 it seems to be.
+
+800
+01:31:30,420 --> 01:31:31,420
+Evet, evet.
+
+801
+01:31:34,420 --> 01:31:38,020
+haha, yes, yes, I think so, Yurke.
+
+802
+01:31:45,043 --> 01:31:46,163
+What about this question?
+
+803
+01:31:49,043 --> 01:31:55,203
+Once you put x is 0, square root 1, 1 minus 1, 0, 0 over 0 you have.
+
+804
+01:32:17,140 --> 01:32:18,140
+Evet, you're right.
+
+805
+01:32:19,460 --> 01:32:20,380
+It is zero.
+
+806
+01:32:20,460 --> 01:32:20,920
+Well done.
+
+807
+01:32:22,640 --> 01:32:24,520
+Yes, we can use a transformation.
+
+808
+01:32:24,920 --> 01:32:25,340
+Well done.
+
+809
+01:32:26,160 --> 01:32:27,660
+Which transformation is on?
+
+810
+01:32:29,420 --> 01:32:31,320
+Which expression we will transform?
+
+811
+01:32:38,899 --> 01:32:42,899
+Evet, ben de.
+
+812
+01:32:45,076 --> 01:32:48,076
+Evet, y'know, y'eşit.
+
+813
+01:33:10,868 --> 01:33:12,268
+Maybe, I am not sure.
+
+814
+01:33:15,828 --> 01:33:20,208
+Maybe we can use the conjugate form. We can try, yes.
+
+815
+01:33:31,188 --> 01:33:31,868
+anyone else?
+
+816
+01:33:55,923 --> 01:33:57,384
+sadece sonuçta.
+
+817
+01:34:01,268 --> 01:34:12,087
+L'Hospital, like your friend says, 1-x, n-square root 1-x, let's say u, because I don't want to deal with another second square root in square root.
+
+818
+01:34:12,587 --> 01:34:22,207
+This will be easier. n-square root 1-x, let's say u. Okay. And so 1-x will be u-square. Okay. The new variable is u.
+
+819
+01:34:22,207 --> 01:34:40,368
+When x is going to 0 from right, u is going to 1. Okay. Yes. But from left. Because we have to just make it positive. Yes.
+
+820
+01:34:43,859 --> 01:34:50,059
+So, limit x is going to 0 from right x over 1 minus 1 squared.
+
+821
+01:34:50,279 --> 01:34:51,539
+Again, 1 minus x.
+
+822
+01:34:52,099 --> 01:34:54,339
+Limit u is going to 1 from left.
+
+823
+01:34:55,319 --> 01:34:56,759
+1 minus u squared.
+
+824
+01:34:57,199 --> 01:34:58,799
+In the square root, 1 minus u.
+
+825
+01:34:59,159 --> 01:34:59,299
+Okay.
+
+826
+01:35:01,079 --> 01:35:05,439
+And we just make it 1 from left to make them positive.
+
+827
+01:35:05,639 --> 01:35:05,759
+Okay.
+
+828
+01:35:06,019 --> 01:35:06,799
+In the square root.
+
+829
+01:35:07,759 --> 01:35:12,659
+I think that this is a new form of this function, original function in terms of u.
+
+830
+01:35:12,659 --> 01:35:13,099
+Okay.
+
+831
+01:35:13,099 --> 01:35:15,799
+And we can just factorize it.
+
+832
+01:35:15,880 --> 01:35:16,559
+1 minus u.
+
+833
+01:35:16,619 --> 01:35:17,339
+1 plus u.
+
+834
+01:35:17,719 --> 01:35:19,179
+In the square root, 1 minus u.
+
+835
+01:35:20,679 --> 01:35:24,179
+This is square root, 1 minus u times 1 minus u.
+
+836
+01:35:24,380 --> 01:35:26,539
+So, it is the division.
+
+837
+01:35:27,619 --> 01:35:30,339
+In the square root, 1 minus u times 1 plus u.
+
+838
+01:35:30,639 --> 01:35:31,559
+Makes it finite.
+
+839
+01:35:31,779 --> 01:35:33,579
+Because u is going to 1 from left.
+
+840
+01:35:34,139 --> 01:35:35,099
+And this is 0.
+
+841
+01:35:35,659 --> 01:35:37,299
+And this is 2.
+
+842
+01:35:37,880 --> 01:35:39,880
+0 times 2 will be 0.
+
+843
+01:35:40,159 --> 01:35:40,979
+Like you said.
+
+844
+01:35:40,979 --> 01:35:53,219
+And this is the third one.
+
+845
+01:35:52,500 --> 01:35:56,079
+Hocam yukarıda neye göre türev aldığımızı değiştirdik ya, orayı bir daha anlatır mısınız?
+
+846
+01:35:59,840 --> 01:36:02,340
+Tekrar sorar mısınız? Anlayamadım. Çok pardon.
+
+847
+01:36:03,960 --> 01:36:11,180
+Yukarıda x sıfıra sağdan sonra değiştirip uya, bire sağdan, soldan diye yaklaştık ya, orayı nasıl yaptık?
+
+848
+01:36:11,180 --> 01:36:11,819
+Orayı anlatır mısınız?
+
+849
+01:36:11,819 --> 01:36:21,119
+Çünkü x'ı limit is defined from 0 to right, it makes it positive.
+
+850
+01:36:21,119 --> 01:36:26,159
+Okay, and once we change the function, we get in the square root 1 minus u.
+
+851
+01:36:28,199 --> 01:36:33,399
+Because this is u, in the square root 1 minus x is u, in the square root 1 minus u we get,
+
+852
+01:36:33,399 --> 01:36:41,100
+that's why if we get u from right, if we get, I'm sorry, if we are going to 1 from right, this can be negative.
+
+853
+01:36:41,819 --> 01:36:43,680
+That's why we need to make it from left.
+
+854
+01:36:44,439 --> 01:36:51,880
+We have to just guess it, and once you write the function, transform it, and then you have to just see, it must be from left.
+
+855
+01:36:52,939 --> 01:36:58,220
+Otherwise, this expression can be negative, which is not defined in this part.
+
+856
+01:36:58,359 --> 01:36:59,539
+Okay.
+
+857
+01:37:00,220 --> 01:37:03,119
+Teacher, can you explain again the rest of the question?
+
+858
+01:37:04,220 --> 01:37:05,420
+Yes, of course. This part.
+
+859
+01:37:06,819 --> 01:37:08,920
+Yes, last part, actually.
+
+860
+01:37:08,920 --> 01:37:10,460
+Okay.
+
+861
+01:37:11,180 --> 01:37:19,319
+And this factorization, 1 minus u, 1 plus u, in the square root 1 minus u, they will be canceled, and get in the square root 1 minus u.
+
+862
+01:37:19,539 --> 01:37:20,300
+Okay, thank you.
+
+863
+01:37:20,300 --> 01:37:24,439
+Times 1 plus u, and they are going to 0, because of this expression.
+
+864
+01:37:24,979 --> 01:37:25,119
+Okay.
+
+865
+01:37:25,119 --> 01:37:25,619
+Thank you.
+
+866
+01:37:26,239 --> 01:37:26,899
+Not at all.
+
+867
+01:37:28,640 --> 01:37:29,460
+Any questions?
+
+868
+01:37:29,460 --> 01:37:37,960
+Yes.
+
+869
+01:37:35,347 --> 01:37:38,347
+bu sorunlarla ilgili bir sorunlar var.
+
+870
+01:38:25,747 --> 01:38:30,268
+Evet, biz burada.
+
+871
+01:38:30,787 --> 01:38:31,147
+Evet.
+
+872
+01:38:31,987 --> 01:38:49,127
+Teşekkürler.

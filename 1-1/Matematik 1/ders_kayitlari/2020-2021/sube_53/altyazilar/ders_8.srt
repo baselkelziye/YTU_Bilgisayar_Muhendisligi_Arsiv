@@ -1,0 +1,5231 @@
+1
+00:01:54,739 --> 00:02:11,719
+Yes. Hi, everyone. Again, I want to say. And yesterday we have finished derivatives of first order. Today we will continue with the high order derivatives.
+
+2
+00:02:19,283 --> 00:02:27,243
+Yesterday we talked about the relation between differentiability and continuity.
+
+3
+00:02:27,804 --> 00:02:32,304
+If you remember, differentiability implies continuity.
+
+4
+00:02:32,843 --> 00:02:36,983
+Once we have a function that is differentiable at a point or in its domain,
+
+5
+00:02:37,603 --> 00:02:40,103
+we are sure that the continuity already holds.
+
+6
+00:02:41,063 --> 00:02:44,663
+But the converse of it is not always true.
+
+7
+00:02:44,663 --> 00:02:51,584
+Once we have the continuity of a function, it doesn't mean that always the differentiability.
+
+8
+00:02:52,584 --> 00:02:57,704
+We may not have differentiable function at the point once we have the continuity.
+
+9
+00:02:59,524 --> 00:03:03,503
+But if we have the discontinuity at a point of a function,
+
+10
+00:03:03,923 --> 00:03:11,204
+it is directly implying that the function may not have derivative at that point.
+
+11
+00:03:11,204 --> 00:03:18,963
+This is in this form in the single variable function.
+
+12
+00:03:19,123 --> 00:03:23,264
+And in mathematics too, you will see that this relation is a little bit different
+
+13
+00:03:23,264 --> 00:03:25,903
+in partial derivatives and several variable function.
+
+14
+00:03:28,283 --> 00:03:32,704
+Also, we did examples about the single variable function
+
+15
+00:03:32,704 --> 00:03:35,743
+and first order derivatives, ordinary derivatives.
+
+16
+00:03:36,463 --> 00:03:39,264
+So let's continue today with the high order derivatives.
+
+17
+00:03:39,824 --> 00:03:43,663
+High order means second order, third order derivatives.
+
+18
+00:03:43,883 --> 00:03:48,683
+That means once you get a first order derivative and continue to take the partial derivative,
+
+19
+00:03:48,903 --> 00:03:52,283
+I'm sorry, continue to have the derivatives again and again,
+
+20
+00:03:52,623 --> 00:03:55,903
+means higher order derivatives we get.
+
+21
+00:03:55,903 --> 00:03:59,144
+Let's see.
+
+22
+00:03:59,144 --> 00:04:09,483
+If a function y is differentiable, then f prime is also a function we know this.
+
+23
+00:04:10,243 --> 00:04:14,704
+If that means this is function, that means again it can be differentiable maybe.
+
+24
+00:04:15,043 --> 00:04:17,963
+We can continue to take the derivatives it means.
+
+25
+00:04:17,963 --> 00:04:23,063
+If f prime is differentiable as a function because it is again a function.
+
+26
+00:04:23,543 --> 00:04:29,384
+If it is differentiable, so second order derivative of f is called,
+
+27
+00:04:29,683 --> 00:04:36,443
+this function is again a function, second order derivative of f and denoted as follows.
+
+28
+00:04:36,624 --> 00:04:37,043
+Let's see.
+
+29
+00:04:37,384 --> 00:04:40,043
+Second order derivative, ordinary derivative notation.
+
+30
+00:04:40,043 --> 00:04:46,823
+d square y dx square, that means twice the derivatives are done.
+
+31
+00:04:48,223 --> 00:04:52,543
+d dx dy dx means the derivative of dy dx.
+
+32
+00:04:52,543 --> 00:04:54,943
+So the derivative of y prime.
+
+33
+00:04:55,563 --> 00:04:56,884
+So second order derivative.
+
+34
+00:04:57,343 --> 00:05:02,663
+So capital D square shows the derivative notation of the second order.
+
+35
+00:05:03,264 --> 00:05:05,923
+This number shows the order of the derivative.
+
+36
+00:05:06,103 --> 00:05:09,843
+That means the numbers of a derivative that we perform.
+
+37
+00:05:10,043 --> 00:05:10,384
+Okay.
+
+38
+00:05:12,183 --> 00:05:12,923
+y to n.
+
+39
+00:05:13,943 --> 00:05:15,923
+We generally show with a bracket.
+
+40
+00:05:17,463 --> 00:05:18,144
+Bracket, yes.
+
+41
+00:05:19,083 --> 00:05:20,644
+Ant order derivative.
+
+42
+00:05:20,644 --> 00:05:25,163
+It means ant order derivative of y of n of y.
+
+43
+00:05:26,063 --> 00:05:27,004
+Ant order derivative.
+
+44
+00:05:27,243 --> 00:05:27,483
+Okay.
+
+45
+00:05:29,543 --> 00:05:34,803
+So this notation is called the ant order derivative of f with respect to the variable x.
+
+46
+00:05:34,803 --> 00:05:36,863
+And of course, it is a positive integer.
+
+47
+00:05:37,483 --> 00:05:39,283
+Order of derivative is a positive integer.
+
+48
+00:05:54,836 --> 00:06:06,376
+So, this note says that suppose that the position of a moving particle along x-axis at the time t is x, defined with x as a function of time.
+
+49
+00:06:07,516 --> 00:06:18,076
+Then the velocity of this particle at that time is velocity. Be careful. Velocity, v, is dx dt, f' t.
+
+50
+00:06:18,076 --> 00:06:25,936
+Also, the acceleration at that time a is dv dt, that means the second order derivative of x.
+
+51
+00:06:25,936 --> 00:06:39,076
+So, second order derivative of f. And speed is the length or the norm of the vector or function v dx dt.
+
+52
+00:06:42,867 --> 00:06:46,187
+It's again the application of the derivative.
+
+53
+00:06:46,187 --> 00:06:48,548
+Velocity, acceleration and speed.
+
+54
+00:06:49,908 --> 00:06:54,348
+We have to just think x is the, how can we say,
+
+55
+00:06:56,588 --> 00:06:58,707
+is the distance you can just think.
+
+56
+00:06:59,487 --> 00:07:09,127
+The part of the line or way when the particle is moving,
+
+57
+00:07:09,127 --> 00:07:19,968
+that means the increment of destination or position a long time.
+
+58
+00:07:21,247 --> 00:07:24,348
+That means what happened, how many distance?
+
+59
+00:07:24,468 --> 00:07:26,668
+Yes, thank you displacement also we can say.
+
+60
+00:07:27,108 --> 00:07:31,487
+It's the measure of the displacement we can just say
+
+61
+00:07:31,487 --> 00:07:37,168
+in an increment of time or in a time period you can just think.
+
+62
+00:07:37,168 --> 00:07:39,707
+So v is dx dt.
+
+63
+00:07:40,367 --> 00:07:44,387
+That means the first order derivative of x is the velocity.
+
+64
+00:07:45,067 --> 00:07:46,908
+Second order derivative of x,
+
+65
+00:07:47,007 --> 00:07:49,968
+that means the first order derivative of velocity is acceleration.
+
+66
+00:07:50,927 --> 00:07:55,108
+That means how much we have just changed the velocity
+
+67
+00:07:55,108 --> 00:07:57,788
+in a time period.
+
+68
+00:07:58,207 --> 00:07:59,228
+It's the acceleration.
+
+69
+00:08:00,848 --> 00:08:03,608
+Speed is the value of it.
+
+70
+00:08:03,608 --> 00:08:04,228
+Okay.
+
+71
+00:08:11,603 --> 00:08:15,084
+Evet, evet, you're right.
+
+72
+00:08:17,363 --> 00:08:17,683
+So,
+
+73
+00:08:20,403 --> 00:08:20,963
+for example,
+
+74
+00:08:22,003 --> 00:08:26,003
+now we are talking about here end-order derivatives.
+
+75
+00:08:27,923 --> 00:08:31,283
+Write a formula, it says of the end-order derivative of y,
+
+76
+00:08:31,283 --> 00:08:32,644
+1 over 1 plus x.
+
+77
+00:08:32,644 --> 00:08:35,923
+Okay, now we are just thinking end-order derivatives.
+
+78
+00:08:35,923 --> 00:08:37,683
+That means you start firstly,
+
+79
+00:08:37,683 --> 00:08:38,723
+first-order derivative,
+
+80
+00:08:38,723 --> 00:08:39,923
+second-order derivative,
+
+81
+00:08:39,923 --> 00:08:42,004
+third-order derivative, etc.
+
+82
+00:08:42,004 --> 00:08:43,443
+Can we generalize it?
+
+83
+00:08:43,443 --> 00:08:44,884
+Is it important?
+
+84
+00:08:44,884 --> 00:08:45,203
+Yes.
+
+85
+00:08:46,323 --> 00:08:47,043
+Yes, we can.
+
+86
+00:08:47,764 --> 00:08:48,884
+First-order derivative,
+
+87
+00:08:50,723 --> 00:08:52,884
+minus 1 over 1 plus x all square.
+
+88
+00:08:54,163 --> 00:08:58,644
+Second-order, 2 over 1 plus x to all cube.
+
+89
+00:09:00,163 --> 00:09:05,043
+Third-order, minus 6 over 1 plus x to 4.
+
+90
+00:09:05,043 --> 00:09:07,124
+Fourth-order,
+
+91
+00:09:07,124 --> 00:09:08,083
+fourth-order,
+
+92
+00:09:08,723 --> 00:09:11,683
+24 over 1 plus x to 5.
+
+93
+00:09:12,884 --> 00:09:13,604
+And etc.
+
+94
+00:09:14,323 --> 00:09:16,004
+Look, there is a relation.
+
+95
+00:09:16,004 --> 00:09:19,764
+First, you can just think negative, positive, negative, positive,
+
+96
+00:09:19,764 --> 00:09:22,004
+because of having these negative powers.
+
+97
+00:09:22,004 --> 00:09:25,043
+So minus 1 to n.
+
+98
+00:09:26,644 --> 00:09:28,484
+And so what about the coefficients?
+
+99
+00:09:28,484 --> 00:09:29,283
+Let's see.
+
+100
+00:09:29,283 --> 00:09:30,403
+In the first one, 1.
+
+101
+00:09:31,043 --> 00:09:32,644
+Second derivative, 2.
+
+102
+00:09:32,644 --> 00:09:33,604
+In the third one,
+
+103
+00:09:34,723 --> 00:09:35,604
+1, 2, 3.
+
+104
+00:09:35,604 --> 00:09:36,803
+That means 3 factorial.
+
+105
+00:09:36,803 --> 00:09:37,844
+In the third one,
+
+106
+00:09:37,844 --> 00:09:38,963
+1, 2, 3, 4.
+
+107
+00:09:38,963 --> 00:09:40,403
+That means 4 factorial.
+
+108
+00:09:41,364 --> 00:09:46,004
+Because always this number will be the coefficient as the operation of derivative.
+
+109
+00:09:46,563 --> 00:09:51,923
+That's why here always we will have as the end-order derivative n factorial.
+
+110
+00:09:53,604 --> 00:09:57,283
+This gives the negativity minus plus minus plus.
+
+111
+00:09:57,283 --> 00:09:58,403
+And what we have?
+
+112
+00:09:58,403 --> 00:10:02,083
+1 plus x to minus n plus 1.
+
+113
+00:10:03,043 --> 00:10:06,163
+Because this is a negative number.
+
+114
+00:10:06,163 --> 00:10:15,923
+And in the derivative, we just put the power as the coefficient and get minus 1 between them.
+
+115
+00:10:15,923 --> 00:10:21,683
+So, for example, for minus 4, minus 4 times minus 5 it becomes.
+
+116
+00:10:22,323 --> 00:10:26,644
+That's why it is minus n plus 1 as the power of 1 plus x.
+
+117
+00:10:27,604 --> 00:10:29,203
+So this is a generalization.
+
+118
+00:10:29,844 --> 00:10:35,203
+And we have written a formula about the end-order derivative of the function, if we can.
+
+119
+00:10:35,203 --> 00:10:37,203
+If we can do, of course.
+
+120
+00:10:41,043 --> 00:10:42,283
+Do you understand it?
+
+121
+00:10:50,707 --> 00:10:51,067
+ok.
+
+122
+00:11:00,916 --> 00:11:09,156
+And the next one, yes, I want you to write a formula for the end-order derivative of sin ax plus b.
+
+123
+00:11:10,676 --> 00:11:17,156
+Please write me a formula about f to n, end-order derivative for sin ax plus b.
+
+124
+00:12:19,220 --> 00:12:43,240
+Yeni, y
+
+125
+00:13:37,235 --> 00:13:37,696
+Evet.
+
+126
+00:13:43,539 --> 00:13:48,299
+This is of the first order. What about end order?
+
+127
+00:13:52,275 --> 00:14:03,515
+Evet. 2x, f'
+
+128
+00:14:08,532 --> 00:14:14,012
+Mm-hmm. Yes, sin and cosine, yes, one by one.
+
+129
+00:14:16,072 --> 00:14:16,672
+Mm-hmm.
+
+130
+00:14:26,868 --> 00:14:29,188
+so so görkem, some of you.
+
+131
+00:14:31,328 --> 00:14:35,568
+yes, even in all numbers, you have to be careful all the powers.
+
+132
+00:14:36,348 --> 00:14:38,388
+that means order of derivatives, yes.
+
+133
+00:14:41,844 --> 00:14:53,004
+And negativity you may have, positive, negative maybe, because of the derivative of sin and cosine.
+
+134
+00:15:10,964 --> 00:15:17,044
+a to n times minus 1 to sin a x plus b.
+
+135
+00:15:17,044 --> 00:15:17,484
+Okay.
+
+136
+00:15:26,676 --> 00:15:27,916
+let's see them together.
+
+137
+00:15:33,908 --> 00:15:35,748
+This is our function.
+
+138
+00:15:35,988 --> 00:15:38,187
+First one, a times cosine ax plus b.
+
+139
+00:15:38,587 --> 00:15:41,108
+Second order, minus a square sine.
+
+140
+00:15:41,628 --> 00:15:44,327
+Third one, minus a cube cosine.
+
+141
+00:15:44,988 --> 00:15:46,488
+Fourth one, a to four.
+
+142
+00:15:47,207 --> 00:15:49,268
+Fifty one, a to five cosine.
+
+143
+00:15:50,028 --> 00:15:52,307
+Sixth one, minus a to six sine.
+
+144
+00:15:52,868 --> 00:15:56,848
+That means positive, negative, positive, negative.
+
+145
+00:15:56,848 --> 00:15:59,388
+We continue, but not in order.
+
+146
+00:15:59,388 --> 00:16:02,888
+That means one, two, three, four, not positive, negative, positive, negative.
+
+147
+00:16:03,848 --> 00:16:12,728
+We need to make a classification in odd powers, odd orders, or even orders.
+
+148
+00:16:12,988 --> 00:16:18,687
+We need to just classify because in order n, one, two, three, four, we cannot generalize it.
+
+149
+00:16:19,268 --> 00:16:25,608
+That's why we need to just say for two k, even powers, even, I'm just always saying powers.
+
+150
+00:16:25,608 --> 00:16:26,067
+I am sorry.
+
+151
+00:16:26,148 --> 00:16:28,947
+This is order, not the power, order of the derivative.
+
+152
+00:16:28,947 --> 00:16:34,508
+Once we have even order of the derivative, again, minus plus in it.
+
+153
+00:16:35,388 --> 00:16:38,728
+Here, this minus one to k, a to two k.
+
+154
+00:16:38,908 --> 00:16:41,427
+As you see, a squared, a to four, a to six.
+
+155
+00:16:41,548 --> 00:16:46,988
+That means just same order of the derivative, power of a.
+
+156
+00:16:47,128 --> 00:16:48,288
+Okay, direct, let's say.
+
+157
+00:16:48,968 --> 00:16:49,548
+And sine.
+
+158
+00:16:49,908 --> 00:16:52,707
+For even orders, we have sine function.
+
+159
+00:16:52,707 --> 00:16:55,567
+For all orders, we have cosine function.
+
+160
+00:16:55,668 --> 00:16:57,408
+Again, positive, negative, positive, negative.
+
+161
+00:16:57,728 --> 00:16:58,827
+So minus one to k.
+
+162
+00:16:59,248 --> 00:17:03,908
+Here, the powers of a is directly related with the order of the derivative.
+
+163
+00:17:04,468 --> 00:17:05,688
+A to one, first order.
+
+164
+00:17:05,847 --> 00:17:06,867
+Third order, a cube.
+
+165
+00:17:07,327 --> 00:17:08,567
+Fifth order, a to five.
+
+166
+00:17:08,867 --> 00:17:09,028
+Okay.
+
+167
+00:17:09,028 --> 00:17:11,587
+So a to two k plus one, cosine.
+
+168
+00:17:12,407 --> 00:17:13,468
+Minus one to k.
+
+169
+00:17:13,887 --> 00:17:15,248
+In even orders.
+
+170
+00:17:15,627 --> 00:17:16,827
+Again, minus one to k.
+
+171
+00:17:17,307 --> 00:17:18,548
+Two, second order.
+
+172
+00:17:18,728 --> 00:17:19,867
+Four, fourth order.
+
+173
+00:17:20,048 --> 00:17:21,028
+Six, sixth order.
+
+174
+00:17:21,168 --> 00:17:26,668
+That means a to two k for two k orders of the derivative and sine function.
+
+175
+00:17:26,668 --> 00:17:56,668
+Six, fifth order.
+
+176
+00:17:39,220 --> 00:17:41,220
+Now is it okay? Do you understand it?
+
+177
+00:17:47,476 --> 00:17:49,796
+Okay. Well done.
+
+178
+00:17:53,364 --> 00:17:54,923
+Thank you, all of you.
+
+179
+00:17:57,923 --> 00:17:58,703
+Okay.
+
+180
+00:18:00,024 --> 00:18:01,304
+So continue.
+
+181
+00:18:04,852 --> 00:18:06,552
+Evet, ikinlik, of course.
+
+182
+00:18:07,211 --> 00:18:08,112
+Let's look up again.
+
+183
+00:18:08,692 --> 00:18:09,692
+This is our function.
+
+184
+00:18:10,312 --> 00:18:11,172
+First order derivative,
+
+185
+00:18:11,292 --> 00:18:13,951
+normally from the beginning of the question,
+
+186
+00:18:14,052 --> 00:18:17,332
+you cannot understand to classify according to even or odd.
+
+187
+00:18:17,632 --> 00:18:19,032
+First you get the derivatives
+
+188
+00:18:19,032 --> 00:18:20,612
+and then you will just see.
+
+189
+00:18:21,272 --> 00:18:23,772
+First order, a cosine.
+
+190
+00:18:24,192 --> 00:18:25,852
+Second, minus a squared.
+
+191
+00:18:26,032 --> 00:18:27,852
+Third, again negative, but a cubed.
+
+192
+00:18:28,352 --> 00:18:29,292
+Fourth one positive.
+
+193
+00:18:29,532 --> 00:18:30,832
+Fifth one positive again,
+
+194
+00:18:30,992 --> 00:18:32,492
+but the sixth one negative.
+
+195
+00:18:32,492 --> 00:18:35,992
+You cannot write the only one general formula.
+
+196
+00:18:36,272 --> 00:18:37,032
+You cannot write.
+
+197
+00:18:37,872 --> 00:18:40,492
+Once you see one by one, step by step,
+
+198
+00:18:40,832 --> 00:18:43,132
+you will just be aware that
+
+199
+00:18:43,132 --> 00:18:47,012
+there is a relation between the even orders.
+
+200
+00:18:48,572 --> 00:18:53,072
+Here, even orders and odd orders of derivatives.
+
+201
+00:18:53,352 --> 00:18:54,192
+They have a relation.
+
+202
+00:18:54,951 --> 00:18:57,412
+Because in, for example, one, three, five,
+
+203
+00:18:57,932 --> 00:19:00,732
+that means odd orders of derivative,
+
+204
+00:19:00,732 --> 00:19:03,612
+first order, third order, fifth order, et cetera.
+
+205
+00:19:04,012 --> 00:19:04,832
+You just see.
+
+206
+00:19:05,332 --> 00:19:07,292
+And the powers of a directly,
+
+207
+00:19:07,752 --> 00:19:09,572
+the same number with the order.
+
+208
+00:19:10,772 --> 00:19:13,451
+a is of the first power, first order.
+
+209
+00:19:14,932 --> 00:19:19,692
+a cubed, that means third power of a in third order.
+
+210
+00:19:20,352 --> 00:19:23,231
+Fifth power of a, fifth degree,
+
+211
+00:19:23,432 --> 00:19:25,872
+I'm sorry, fifth order of the derivative.
+
+212
+00:19:25,872 --> 00:19:27,592
+That means they are directly related.
+
+213
+00:19:28,432 --> 00:19:29,971
+Also, the same relation,
+
+214
+00:19:30,152 --> 00:19:32,892
+but in, among, between,
+
+215
+00:19:33,072 --> 00:19:34,951
+even orders,
+
+216
+00:19:35,312 --> 00:19:37,731
+we have such a relation.
+
+217
+00:19:39,032 --> 00:19:41,172
+Second degree, second power.
+
+218
+00:19:41,372 --> 00:19:42,711
+Fourth degree, fourth power.
+
+219
+00:19:43,292 --> 00:19:44,772
+Sixth degree, sixth power.
+
+220
+00:19:45,231 --> 00:19:45,472
+Okay.
+
+221
+00:19:46,152 --> 00:19:48,092
+And they are different because in
+
+222
+00:19:48,092 --> 00:19:51,372
+odd orders, cosine function,
+
+223
+00:19:51,832 --> 00:19:53,372
+even orders, sine function.
+
+224
+00:19:53,372 --> 00:19:55,412
+That's why also we cannot write
+
+225
+00:19:55,412 --> 00:19:57,512
+the only one general formula
+
+226
+00:19:57,512 --> 00:19:59,231
+because cosine and sine,
+
+227
+00:19:59,372 --> 00:20:00,252
+cosine and sine,
+
+228
+00:20:00,672 --> 00:20:01,992
+it is continuing.
+
+229
+00:20:03,192 --> 00:20:04,512
+Also, in,
+
+230
+00:20:05,132 --> 00:20:08,532
+odd and both even powers in orders,
+
+231
+00:20:08,992 --> 00:20:10,572
+positive, negative, positive, negative,
+
+232
+00:20:10,711 --> 00:20:12,892
+again, because of sine and cosine functions.
+
+233
+00:20:13,211 --> 00:20:15,072
+So we can generalize it
+
+234
+00:20:15,072 --> 00:20:17,012
+for writing a formula
+
+235
+00:20:17,012 --> 00:20:20,392
+for even orders of derivative of f
+
+236
+00:20:20,392 --> 00:20:21,772
+with respect to x,
+
+237
+00:20:22,132 --> 00:20:23,412
+minus 1 to k,
+
+238
+00:20:23,792 --> 00:20:24,672
+a to 2k,
+
+239
+00:20:27,012 --> 00:20:27,632
+even power.
+
+240
+00:20:28,572 --> 00:20:29,892
+Sine functions always,
+
+241
+00:20:30,012 --> 00:20:30,532
+as you see,
+
+242
+00:20:30,992 --> 00:20:32,251
+of even orders.
+
+243
+00:20:33,251 --> 00:20:34,672
+For odd orders,
+
+244
+00:20:34,892 --> 00:20:35,392
+cosine function,
+
+245
+00:20:36,252 --> 00:20:37,372
+again, positive, negative,
+
+246
+00:20:37,512 --> 00:20:38,492
+minus 1 to k,
+
+247
+00:20:38,872 --> 00:20:39,951
+and the same number
+
+248
+00:20:39,951 --> 00:20:41,312
+with the order of the derivative,
+
+249
+00:20:41,731 --> 00:20:42,711
+same power of a,
+
+250
+00:20:43,231 --> 00:20:45,112
+we have in the derivative.
+
+251
+00:20:45,572 --> 00:20:47,012
+That's why we generalize it
+
+252
+00:20:47,012 --> 00:20:48,451
+this way.
+
+253
+00:20:52,948 --> 00:20:59,108
+Okay, thank you. And so continue with the next one.
+
+254
+00:21:04,339 --> 00:21:09,679
+Be careful about k. 2k plus 1, but minus 1 to k. Be careful.
+
+255
+00:21:10,139 --> 00:21:13,879
+Once you just try these numbers, you will get there is no problem. Okay, [öğrenci]?
+
+256
+00:21:18,612 --> 00:21:22,092
+Bu da aynı k
+
+257
+00:21:22,092 --> 00:21:22,532
+Be careful
+
+258
+00:21:22,532 --> 00:21:23,892
+Okay
+
+259
+00:21:23,892 --> 00:21:25,852
+And then
+
+260
+00:21:25,852 --> 00:21:27,672
+Ah
+
+261
+00:21:27,672 --> 00:21:28,471
+We will continue
+
+262
+00:21:28,471 --> 00:21:29,372
+With the chain rule
+
+263
+00:21:29,372 --> 00:21:32,372
+I think this is the
+
+264
+00:21:32,372 --> 00:21:33,352
+First
+
+265
+00:21:33,352 --> 00:21:34,592
+Time
+
+266
+00:21:34,592 --> 00:21:35,432
+You met
+
+267
+00:21:35,432 --> 00:21:36,412
+With the chain rule
+
+268
+00:21:36,412 --> 00:21:37,172
+Is it
+
+269
+00:21:37,172 --> 00:21:39,692
+Do you know
+
+270
+00:21:39,692 --> 00:21:40,312
+Anything about
+
+271
+00:21:40,312 --> 00:21:41,052
+The chain rule
+
+272
+00:21:41,052 --> 00:21:42,792
+Have you heard
+
+273
+00:21:42,792 --> 00:21:43,372
+It before
+
+274
+00:21:43,372 --> 00:21:43,892
+Second
+
+275
+00:21:43,892 --> 00:21:44,912
+Huh
+
+276
+00:21:44,912 --> 00:21:46,211
+I think
+
+277
+00:21:46,211 --> 00:21:47,532
+We see second
+
+278
+00:21:47,532 --> 00:21:49,072
+Oh yeah
+
+279
+00:21:49,072 --> 00:21:49,352
+Really
+
+280
+00:21:49,352 --> 00:21:50,231
+What do you know
+
+281
+00:21:50,231 --> 00:21:51,711
+About chain rule
+
+282
+00:21:51,711 --> 00:21:53,711
+So
+
+283
+00:21:53,711 --> 00:21:54,652
+That means
+
+284
+00:21:54,652 --> 00:21:55,951
+Up to now
+
+285
+00:21:55,951 --> 00:21:56,672
+You have heard
+
+286
+00:21:56,672 --> 00:21:57,152
+About it
+
+287
+00:21:57,152 --> 00:21:58,211
+And you have
+
+288
+00:21:58,211 --> 00:21:59,252
+Already used it
+
+289
+00:21:59,252 --> 00:22:00,032
+While having
+
+290
+00:22:00,032 --> 00:22:00,932
+The ordinary derivative
+
+291
+00:22:00,932 --> 00:22:02,752
+We have already
+
+292
+00:22:02,752 --> 00:22:03,292
+Used
+
+293
+00:22:03,292 --> 00:22:04,211
+Okay
+
+294
+00:22:04,211 --> 00:22:04,992
+So nice
+
+295
+00:22:04,992 --> 00:22:06,332
+So
+
+296
+00:22:06,332 --> 00:22:07,172
+You know
+
+297
+00:22:07,172 --> 00:22:08,052
+The main idea
+
+298
+00:22:08,052 --> 00:22:09,572
+So tell me
+
+299
+00:22:09,572 --> 00:22:10,951
+Why we have
+
+300
+00:22:10,951 --> 00:22:11,692
+Chain rule
+
+301
+00:22:11,692 --> 00:22:15,172
+Why is it used
+
+302
+00:22:15,172 --> 00:22:17,052
+Yes you are right
+
+303
+00:22:17,052 --> 00:22:17,852
+In turkish
+
+304
+00:22:17,852 --> 00:22:18,192
+Yes
+
+305
+00:22:18,192 --> 00:22:19,352
+Because it's like
+
+306
+00:22:19,352 --> 00:22:19,772
+A chain
+
+307
+00:22:19,772 --> 00:22:20,372
+The functions
+
+308
+00:22:20,372 --> 00:22:21,072
+But
+
+309
+00:22:21,072 --> 00:22:22,372
+Why do we need
+
+310
+00:22:22,372 --> 00:22:23,272
+To use the chain rule
+
+311
+00:22:23,272 --> 00:22:23,872
+What do you think
+
+312
+00:22:23,872 --> 00:22:27,072
+Why does it exist
+
+313
+00:22:27,072 --> 00:22:28,432
+Such a rule
+
+314
+00:22:28,432 --> 00:22:29,412
+Hmm
+
+315
+00:22:29,412 --> 00:22:33,592
+Anyone else
+
+316
+00:22:33,592 --> 00:22:35,451
+Do you know
+
+317
+00:22:35,451 --> 00:23:01,392
+I don't know
+
+318
+00:22:38,355 --> 00:22:46,695
+The main idea in chain rule because something implicit functions.
+
+319
+00:22:47,475 --> 00:22:50,875
+Değişkenleri birbiri türünden yazılınca mı böyle yapıyorduk?
+
+320
+00:22:50,875 --> 00:22:54,395
+Yes, you are getting closer, I think.
+
+321
+00:22:57,155 --> 00:23:03,215
+Means what? What you say? That means function in another function. Means what?
+
+322
+00:23:14,291 --> 00:23:15,491
+just think a little bit.
+
+323
+00:23:27,251 --> 00:23:28,711
+It means what [öğrenci]?
+
+324
+00:23:29,392 --> 00:23:30,192
+You are right.
+
+325
+00:23:30,351 --> 00:23:32,091
+Yes, well done [öğrenci].
+
+326
+00:23:32,912 --> 00:23:33,711
+And [öğrenci], yes.
+
+327
+00:23:34,152 --> 00:23:35,511
+Once we have the composition.
+
+328
+00:23:36,371 --> 00:23:39,051
+Because normally if we have a function, we can derivate.
+
+329
+00:23:39,132 --> 00:23:39,672
+No problem.
+
+330
+00:23:40,672 --> 00:23:41,192
+Operational.
+
+331
+00:23:41,192 --> 00:23:45,751
+But if they are in the case of composition.
+
+332
+00:23:47,111 --> 00:23:48,192
+In composite form.
+
+333
+00:23:48,851 --> 00:23:50,632
+In that case, how can we derivate it?
+
+334
+00:23:51,111 --> 00:23:56,831
+We have to just follow the chain rule to derivate the composition function.
+
+335
+00:23:57,011 --> 00:23:57,172
+Okay.
+
+336
+00:23:58,251 --> 00:23:59,071
+Yes.
+
+337
+00:23:59,172 --> 00:24:00,071
+Thank you all of you.
+
+338
+00:24:00,251 --> 00:24:01,111
+Thank you so much.
+
+339
+00:24:01,771 --> 00:24:02,791
+You know what to do.
+
+340
+00:24:03,611 --> 00:24:05,291
+So you see.
+
+341
+00:24:06,871 --> 00:24:07,871
+Let's see.
+
+342
+00:24:08,351 --> 00:24:13,091
+How can we evaluate the derivative of a composition while using the chain rule?
+
+343
+00:24:16,771 --> 00:24:17,791
+F prime.
+
+344
+00:24:18,152 --> 00:24:19,051
+I'm sorry.
+
+345
+00:24:19,412 --> 00:24:21,791
+F composition G means F.
+
+346
+00:24:22,051 --> 00:24:23,172
+G in F.
+
+347
+00:24:23,371 --> 00:24:23,511
+Okay.
+
+348
+00:24:24,031 --> 00:24:25,912
+G in F means.
+
+349
+00:24:25,912 --> 00:24:29,071
+And so the derivative of it.
+
+350
+00:24:29,071 --> 00:24:30,192
+F prime.
+
+351
+00:24:30,731 --> 00:24:32,551
+That means the composition.
+
+352
+00:24:32,912 --> 00:24:34,291
+Derivative of whole function.
+
+353
+00:24:34,432 --> 00:24:35,011
+The composition.
+
+354
+00:24:35,731 --> 00:24:36,231
+Times.
+
+355
+00:24:37,511 --> 00:24:38,771
+Derivative of G.
+
+356
+00:24:38,912 --> 00:24:39,811
+Insider function.
+
+357
+00:24:39,811 --> 00:24:41,511
+Okay.
+
+358
+00:24:41,511 --> 00:24:49,152
+That means derivative of a composition is equal to derivative of the whole function.
+
+359
+00:24:49,152 --> 00:24:52,251
+times derivative of the inside function.
+
+360
+00:24:52,251 --> 00:24:59,591
+This is for a single variable function and ordinary derivative.
+
+361
+00:24:59,591 --> 00:25:07,531
+We may have a similar way to get partial derivative of a single variable function.
+
+362
+00:25:07,531 --> 00:25:09,491
+So it is called the basic chain rule.
+
+363
+00:25:09,692 --> 00:25:11,011
+This is the basic chain rule.
+
+364
+00:25:11,111 --> 00:25:13,751
+Once we have only one variable, but no problem.
+
+365
+00:25:13,751 --> 00:25:18,051
+The composition means we are having function in another function.
+
+366
+00:25:18,291 --> 00:25:20,031
+That's why we need to chain rule.
+
+367
+00:25:20,031 --> 00:25:25,731
+Because they are so engaged, I think.
+
+368
+00:25:26,211 --> 00:25:26,291
+Okay.
+
+369
+00:25:26,291 --> 00:25:31,632
+So F prime times G prime must be written as the derivative of a composition.
+
+370
+00:25:33,172 --> 00:25:36,811
+Also, I think you are familiar to use this notation.
+
+371
+00:25:37,392 --> 00:25:39,971
+D Y DX, D Y DU, DU DX like a chain.
+
+372
+00:25:40,371 --> 00:25:41,692
+Y to U, U to X.
+
+373
+00:25:42,091 --> 00:25:44,091
+So it is equal to D Y DX.
+
+374
+00:25:44,091 --> 00:25:53,291
+If Y is belonging to U with F and if F is a function of U, that means U is belonging or
+
+375
+00:25:53,291 --> 00:25:55,231
+making combined with F to G.
+
+376
+00:25:55,751 --> 00:25:56,011
+Okay.
+
+377
+00:25:56,011 --> 00:25:57,632
+That's why we have such a relation.
+
+378
+00:25:57,632 --> 00:26:03,152
+We just combine the functions to each other and then get the derivative according to applying
+
+379
+00:26:03,152 --> 00:26:03,871
+this formula.
+
+380
+00:26:07,380 --> 00:26:14,140
+For example, it is a function, y sin x² plus x.
+
+381
+00:26:14,400 --> 00:26:18,080
+Normally, once you see this function, you can easily derivate it.
+
+382
+00:26:18,720 --> 00:26:24,180
+Sometimes, we are not being aware about using chain rule.
+
+383
+00:26:24,240 --> 00:26:26,940
+We already used chain rule because we knew what to do.
+
+384
+00:26:27,400 --> 00:26:31,080
+In fact, we are using the chain formula without knowing it.
+
+385
+00:26:31,080 --> 00:26:38,060
+For example, if I ask you, five minutes before sin x² plus x, you will directly say,
+
+386
+00:26:38,540 --> 00:26:40,620
+okay, this is the derivative of it.
+
+387
+00:26:40,840 --> 00:26:45,000
+But in fact, now we are using the chain rule because it is a composition.
+
+388
+00:26:45,560 --> 00:26:50,200
+Composition of sin x of x² plus x.
+
+389
+00:26:51,580 --> 00:26:59,600
+So, sin composition with x² plus x gets the new function, which is a composition, sin x² plus x.
+
+390
+00:26:59,600 --> 00:27:06,780
+And once you need to derivate it, derivative of the whole function, which is cosine x² plus x.
+
+391
+00:27:07,380 --> 00:27:13,400
+Multiply with the derivative of the insider function x² plus x, which is 2x plus 1.
+
+392
+00:27:13,940 --> 00:27:14,800
+Is it okay?
+
+393
+00:27:18,644 --> 00:27:33,443
+Do you understand what I'm trying to understand? Okay. That means you are using normally a chain rule directly without knowing it, because you know what to do for having such these functions. That's why we have this.
+
+394
+00:27:35,564 --> 00:27:36,284
+And then.
+
+395
+00:27:41,364 --> 00:27:51,124
+We will use much more of chain rule, but let's continue with the implicit differentiation.
+
+396
+00:27:54,740 --> 00:28:00,980
+İplicit differentiation is so nice, I think, because sometimes we have the implicit form of the functions.
+
+397
+00:28:01,720 --> 00:28:04,339
+Sometimes the functions are not given explicitly.
+
+398
+00:28:05,279 --> 00:28:08,140
+Implicit form means this form.
+
+399
+00:28:08,640 --> 00:28:09,960
+F x y is equal to 0.
+
+400
+00:28:09,960 --> 00:28:17,120
+That means an equation you have, you see two numbers of variable in the equation,
+
+401
+00:28:18,359 --> 00:28:20,960
+and you have to decide which one is function, which one is variable.
+
+402
+00:28:21,880 --> 00:28:23,940
+But one of them is the function of the other one.
+
+403
+00:28:23,940 --> 00:28:27,880
+It means it is the implicit form of a single variable function.
+
+404
+00:28:28,140 --> 00:28:33,180
+Because totally you have two variables, and probably one of them is the function of the other one.
+
+405
+00:28:33,619 --> 00:28:35,859
+But this must be expressed in the question.
+
+406
+00:28:36,160 --> 00:28:44,119
+For example, F x y is given such that, think that x is a function of y, or y is a function of x means,
+
+407
+00:28:44,339 --> 00:28:50,920
+here in this equation, all the variables are put to one side of the equation and equal to 0 means.
+
+408
+00:28:51,319 --> 00:28:53,660
+In fact, one of them is the function of the other one.
+
+409
+00:28:53,940 --> 00:28:56,299
+But they are not given explicitly.
+
+410
+00:28:56,819 --> 00:28:59,860
+So it is called the implicit function or implicit notation.
+
+411
+00:29:00,960 --> 00:29:04,440
+So express y explicitly.
+
+412
+00:29:04,839 --> 00:29:08,180
+We just express y explicitly in terms of x.
+
+413
+00:29:08,279 --> 00:29:15,500
+That means this says that, this notation says that y is a function of x, but this is not given explicitly.
+
+414
+00:29:15,500 --> 00:29:17,140
+Okay.
+
+415
+00:29:18,740 --> 00:29:19,579
+Any question?
+
+416
+00:29:20,980 --> 00:29:21,900
+Yes, you are right.
+
+417
+00:29:22,839 --> 00:29:30,160
+For example, if this function is given, x cube plus y cube minus 9 x, y is equal to 0.
+
+418
+00:29:30,160 --> 00:29:32,299
+Okay, this is an equation of two variables.
+
+419
+00:29:34,299 --> 00:29:39,619
+But if it is given relation, we have a relation between x and y.
+
+420
+00:29:39,920 --> 00:29:41,440
+This must be given in the question.
+
+421
+00:29:41,519 --> 00:29:46,619
+For example, this equation is given and we know that y is a function of x.
+
+422
+00:29:46,619 --> 00:29:52,819
+Sometimes it is impossible to leave y alone and write as a function of x only.
+
+423
+00:29:53,599 --> 00:29:58,420
+Sometimes that's why the functions are given implicitly in an equation.
+
+424
+00:29:58,640 --> 00:30:03,940
+But we know that we are sure that we are aware that one of them is the function of the other one.
+
+425
+00:30:03,940 --> 00:30:04,799
+Okay.
+
+426
+00:30:05,339 --> 00:30:10,539
+For example, in the second one, y cube x plus y cosine x, y is equal to 0.
+
+427
+00:30:10,660 --> 00:30:20,440
+For example, if y is the function, it's not so easy to leave alone y on one side and say that y is a function of x in this form, blah, blah, blah, blah, whatever it is.
+
+428
+00:30:20,759 --> 00:30:21,980
+Now, it's not so easy.
+
+429
+00:30:22,700 --> 00:30:23,639
+Sometimes impossible.
+
+430
+00:30:23,860 --> 00:30:27,880
+Sometimes so much hard to write y as a function of x and y.
+
+431
+00:30:27,880 --> 00:30:33,700
+So with these equations, x and y are defined implicitly.
+
+432
+00:30:33,940 --> 00:30:38,500
+And we can just say that this is the implicit form of the function y in terms of x.
+
+433
+00:30:39,299 --> 00:30:40,360
+Implicit definition.
+
+434
+00:30:40,840 --> 00:30:41,000
+Okay.
+
+435
+00:30:41,720 --> 00:30:43,559
+And the third one, it is easy.
+
+436
+00:30:43,860 --> 00:30:49,180
+We can easily leave y or x alone and write as a function of x or y, whatever it is.
+
+437
+00:30:49,299 --> 00:30:49,440
+Okay.
+
+438
+00:30:51,279 --> 00:30:55,740
+So these equations define an implicit relation between x and y.
+
+439
+00:30:55,880 --> 00:30:58,680
+That's why for single variable functions.
+
+440
+00:30:59,460 --> 00:31:03,180
+Single variable because function is one.
+
+441
+00:31:03,180 --> 00:31:04,940
+The other one is single variable.
+
+442
+00:31:05,380 --> 00:31:08,220
+That means totally two variables in an equation.
+
+443
+00:31:08,440 --> 00:31:11,900
+Means implicit equation of a single variable function.
+
+444
+00:31:11,960 --> 00:31:15,440
+Because if we have more than one, totally three variable it would be.
+
+445
+00:31:15,920 --> 00:31:25,940
+That's why totally two variable defines an implicit relation between one independent variable and the other one is a single variable function.
+
+446
+00:31:25,940 --> 00:31:28,579
+Do you understand it?
+
+447
+00:31:28,579 --> 00:31:43,579
+That means that we have more than one independent variable function.
+
+448
+00:31:47,508 --> 00:31:48,148
+Good job.
+
+449
+00:31:51,827 --> 00:31:52,867
+yes.
+
+450
+00:31:53,607 --> 00:31:57,528
+acaba bile türkçe anlatsanız çok kısa, ingilizce anlattığınızdan zaten.
+
+451
+00:32:00,387 --> 00:32:00,768
+okay.
+
+452
+00:32:04,819 --> 00:32:05,939
+O zaman çok kısa.
+
+453
+00:32:06,779 --> 00:32:08,779
+Şöyle söylüyorum kapalı fonksiyon.
+
+454
+00:32:09,700 --> 00:32:11,359
+Büyük F ile gösterdiğimiz.
+
+455
+00:32:11,559 --> 00:32:14,599
+Yani toplamda iki tane değişken görüyorsunuz.
+
+456
+00:32:15,339 --> 00:32:18,079
+Örneklerde de gördüğünüz gibi iki değişken oluşan bir eşitlik var.
+
+457
+00:32:18,439 --> 00:32:19,779
+Sağ tarafımız her zaman sıfır.
+
+458
+00:32:19,859 --> 00:32:21,980
+Bu bir kapalı fonksiyon gösterimidir.
+
+459
+00:32:21,980 --> 00:32:25,159
+Çok büyük ihtimalle yanında belirtilmek zorundadır.
+
+460
+00:32:25,859 --> 00:32:31,139
+Her sıfıra eşit olan her eşitlik bir kapalı fonksiyon gösterimi olmak zorunda değildir.
+
+461
+00:32:31,220 --> 00:32:34,079
+Ama sizin karşılaştıklarınız büyük ihtimalle öyle olacaktır.
+
+462
+00:32:34,079 --> 00:32:40,079
+Bir değişkenin diğerinin fonksiyonu olduğunu söylemek için aslında onda belli koşulları vardır.
+
+463
+00:32:40,259 --> 00:32:42,399
+Ama siz bu kısımla çok ilgilenmeyeceksiniz.
+
+464
+00:32:42,480 --> 00:32:43,039
+O bir detay.
+
+465
+00:32:43,740 --> 00:32:47,819
+Çok büyük ihtimalle size veriliyorsa böyle bir eşitlik kapalı fonksiyon gösterimidir.
+
+466
+00:32:47,819 --> 00:32:49,339
+X ve Y bir aradadır.
+
+467
+00:32:52,339 --> 00:32:53,579
+Nasıl diyebilirim?
+
+468
+00:32:54,319 --> 00:32:55,579
+Bir ilişki içerisindedir.
+
+469
+00:32:55,779 --> 00:32:58,619
+Birinci, ikinci, üçüncü örnekte gördüğünüz gibi aralarında bir ilişki var.
+
+470
+00:32:58,720 --> 00:33:01,460
+X küp, Y küp ve eksi dokuz eksiye sıfır eşit oluyormuş.
+
+471
+00:33:01,579 --> 00:33:02,759
+Bu aralarındaki ilişkiyi gösteriyor.
+
+472
+00:33:02,759 --> 00:33:06,699
+Burada X'de fonksiyon yeni fonksiyon olabilir, Y'de X'in fonksiyon olabilir.
+
+473
+00:33:06,859 --> 00:33:09,440
+Bu bize verilmek zorunda, size tanımlanmış olmak zorundadır.
+
+474
+00:33:10,000 --> 00:33:16,379
+Ama genel olarak F, X'ye eşittir sıfır gördüğünüzde düşüneceksiniz ki bu bir kapalı fonksiyon gösterimi.
+
+475
+00:33:16,759 --> 00:33:17,619
+Soruda da verilir.
+
+476
+00:33:18,019 --> 00:33:19,259
+Açıklama yapılmak zorundadır.
+
+477
+00:33:19,579 --> 00:33:22,940
+İşte Y kapalı bir şekilde bu fonksiyonla tanımlanmıştır.
+
+478
+00:33:22,940 --> 00:33:29,039
+Y, X'in fonksiyon olarak kapalı bir şekilde bu denklem bir şekilde verilmiştir denmek zorundadır.
+
+479
+00:33:29,759 --> 00:33:34,279
+Yani toplamda iki değişken görüyorsanız büyük ihtimalle bir diğerinin fonksiyonudur.
+
+480
+00:33:34,720 --> 00:33:36,019
+Bu belirtilmek zorundadır.
+
+481
+00:33:36,119 --> 00:33:37,779
+Siz tek bakışta bunu anlayamazsınız.
+
+482
+00:33:38,279 --> 00:33:43,500
+Bazen de bir fonksiyonu diğerinin cinsinden çekmek o kadar da kolay değildir.
+
+483
+00:33:43,500 --> 00:33:45,700
+İkinci örnekte gördüğünüz gibi hiç kolay değil.
+
+484
+00:33:45,819 --> 00:33:53,200
+Mesela eğer Y bir fonksiyonsa, Y'yi yalnız bırakıp X cinsinden bir fonksiyon olarak yazmak çok zor veya imkansız olabilir.
+
+485
+00:33:53,359 --> 00:33:56,460
+Öyle durumlarda da fonksiyonlar kapalı bir şekilde verilir.
+
+486
+00:33:58,019 --> 00:33:58,559
+Tamamen bu.
+
+487
+00:33:59,119 --> 00:34:05,519
+Hocam, burada peki mesela atıyorum Y'ye göre mi türev, tek taraflı türev mi, tek değişkene göre mi türev alacağız?
+
+488
+00:34:06,119 --> 00:34:07,059
+Türev istendiği zaman.
+
+489
+00:34:07,339 --> 00:34:09,199
+Onunla bağlantılı mı olacak sorular?
+
+490
+00:34:09,199 --> 00:34:23,340
+Tabii siz, bu mat bir olduğu için şöyle zaten, tek değişkenli ve adi türev yani normal bildiğiniz türev, bir de kısmi türev var ya çok değişkenler için.
+
+491
+00:34:23,340 --> 00:34:26,019
+Bu normal türev, ordinary türev.
+
+492
+00:34:26,039 --> 00:34:26,300
+Anladım.
+
+493
+00:34:27,219 --> 00:34:34,380
+Tabii ki burada size tekrar söylüyorum, denilecek ki bu eşitlikte, mesela birinci örneği gösteriyorum.
+
+494
+00:34:34,380 --> 00:34:41,420
+X küpü Y küpü X, X, X diye eşittir, sıfırda, bu eşitlikle Y fonksiyonu kapalı bir şekilde verilmiştir denir mesela.
+
+495
+00:34:41,599 --> 00:34:49,099
+Veya X fonksiyonu, Y'nin fonksiyonu olarak bu eşitlikle verilmiştir, kapalı bir şekilde tanımlanmıştır denmek zorundadır.
+
+496
+00:34:51,159 --> 00:34:55,900
+Ve toplamda da iki değişken olduğuna göre biri fonksiyon, diğeri bağımsız değişkendir.
+
+497
+00:34:56,500 --> 00:35:00,960
+Çok değişkenli durumlarda en az üç tane değişken olacak zaten, onu mat ikide göreceğiz.
+
+498
+00:35:00,960 --> 00:35:04,380
+Tamam, tamamdır hocam.
+
+499
+00:35:06,239 --> 00:35:09,559
+Anlaştık mı? Eksik kalan bir yer var mı?
+
+500
+00:35:09,659 --> 00:35:11,619
+Anlaştık, anlaştık. Anla yok yani.
+
+501
+00:35:13,960 --> 00:35:15,639
+Biraz hızlı konuşuyormuşum.
+
+502
+00:35:16,779 --> 00:35:19,819
+Tekrar etmemi istediğiniz bir yer varsa dönebilirim.
+
+503
+00:35:19,819 --> 00:35:25,960
+Türkçe konuşurken acele etme ihtiyacı duyuyorum.
+
+504
+00:35:26,059 --> 00:35:27,940
+Çünkü Türkçe konuşmak istemiyorum derste.
+
+505
+00:35:28,860 --> 00:35:32,719
+Bu yüzden bunu yaşıyorum. İster istemez yapıyorum bunu farkında olmadan.
+
+506
+00:35:42,675 --> 00:35:46,895
+So, do you want me to repeat it? Are you okay about this concept?
+
+507
+00:35:51,891 --> 00:35:59,011
+I think you are okay. Okay. So, continue.
+
+508
+00:36:00,771 --> 00:36:08,172
+Now you see step-by-step rules we have. They are related about implicit differentiation.
+
+509
+00:36:09,451 --> 00:36:16,811
+Firstly, we get the definition of implicit function. This was related about implicit function, definition of it.
+
+510
+00:36:16,811 --> 00:36:29,451
+Now, we will see the steps of implicit differentiation. Implicit differentiation means this. Term-by-term, we get the differentials of the terms.
+
+511
+00:36:31,491 --> 00:36:43,172
+But normally, for example, if y is x squared, you just say, okay, the derivative of y is 2x. It's so easy. You know what to do because the function is given explicitly.
+
+512
+00:36:43,172 --> 00:36:52,672
+Function is a, y is a function of x, for example, cosine x, x squared. Any function of x and you can easily get the derivative.
+
+513
+00:36:53,231 --> 00:36:57,131
+Y is this. So, y prime is derivative of it. Easily.
+
+514
+00:36:57,491 --> 00:37:09,311
+But in implicit differentiation, when the function is given implicitly, like in these examples, when the function is given implicitly, how can you get the derivative of y?
+
+515
+00:37:09,311 --> 00:37:17,511
+This is the question. This is the main idea and main need. That's why we need to talk about the step-by-step implicit differentiation.
+
+516
+00:37:18,531 --> 00:37:22,451
+How can we get the derivative of y, for example, from this equation?
+
+517
+00:37:22,771 --> 00:37:26,711
+Or from second equation, how can you get the derivative of y?
+
+518
+00:37:27,231 --> 00:37:28,631
+Y is not given alone.
+
+519
+00:37:28,631 --> 00:37:35,111
+If it was y is cosine x, okay, y prime is minus sine x.
+
+520
+00:37:35,291 --> 00:37:39,291
+But what if y is given implicitly with this equation?
+
+521
+00:37:39,631 --> 00:37:41,371
+How can you differentiate it?
+
+522
+00:37:41,631 --> 00:37:43,672
+How can you get the derivative of y?
+
+523
+00:37:43,891 --> 00:37:44,951
+This is the problem.
+
+524
+00:37:45,331 --> 00:37:47,652
+That's why we have this subject.
+
+525
+00:37:48,172 --> 00:37:50,031
+So, let's see step-by-step.
+
+526
+00:37:50,031 --> 00:37:59,331
+It says, differentiate both sides of the equation with respect to x, treating y as a differentiable function of x.
+
+527
+00:38:00,891 --> 00:38:07,231
+I generally call it implicit differentiation, in my opinion, term-by-term differentiation.
+
+528
+00:38:07,411 --> 00:38:10,791
+That means, term-by-term, we just deal with the differential of the terms.
+
+529
+00:38:11,192 --> 00:38:17,271
+But being carefully, which one is variable, which one is function, you have to be careful.
+
+530
+00:38:17,271 --> 00:38:23,652
+And this first case says that, okay, differentiate both sides of the equation.
+
+531
+00:38:23,811 --> 00:38:29,511
+That means, term-by-term, differentiate with respect to x, but treat y as a differentiable function of x.
+
+532
+00:38:29,631 --> 00:38:31,672
+That means, be careful, it says.
+
+533
+00:38:32,091 --> 00:38:32,631
+Be careful.
+
+534
+00:38:33,031 --> 00:38:34,231
+X is an independent variable.
+
+535
+00:38:34,571 --> 00:38:36,711
+Y is the function, it says.
+
+536
+00:38:37,251 --> 00:38:37,411
+Okay.
+
+537
+00:38:37,851 --> 00:38:45,411
+So, and then, collect the terms with y prime on one side of the equation and solve for dy dx.
+
+538
+00:38:45,411 --> 00:38:54,411
+That means, once you get the derivatives term-by-term, and then, group the terms of y prime and leave alone y prime, this will be your derivative.
+
+539
+00:38:55,351 --> 00:38:55,931
+It says.
+
+540
+00:38:56,471 --> 00:38:56,731
+Okay.
+
+541
+00:38:58,111 --> 00:39:07,652
+For example.
+
+542
+00:39:07,652 --> 00:39:07,711
+for example.
+
+543
+00:39:07,711 --> 00:39:08,652
+For example.
+
+544
+00:39:08,652 --> 00:39:11,652
+for example.
+
+545
+00:39:04,596 --> 00:39:08,096
+X squared plus y squared 1 is an implicit function, yes.
+
+546
+00:39:09,295 --> 00:39:11,476
+Think that again y is the function of x,
+
+547
+00:39:11,596 --> 00:39:16,155
+but they are given together in one equation and on one side.
+
+548
+00:39:16,536 --> 00:39:18,655
+Y is not alone given as a function of x.
+
+549
+00:39:18,655 --> 00:39:21,056
+Okay, so this is an implicit form.
+
+550
+00:39:22,135 --> 00:39:25,115
+But think that we are asked to have the derivative of y.
+
+551
+00:39:25,476 --> 00:39:26,476
+What is y prime?
+
+552
+00:39:26,976 --> 00:39:30,416
+X squared plus y squared is 1 and what is y prime?
+
+553
+00:39:31,215 --> 00:39:31,476
+Look.
+
+554
+00:39:31,476 --> 00:39:36,135
+Term by term, we need to get the differential.
+
+555
+00:39:36,335 --> 00:39:42,456
+That's why differentiate both sides means differentiate x squared plus y squared
+
+556
+00:39:42,456 --> 00:39:44,996
+is equal to differentiation of 1.
+
+557
+00:39:44,996 --> 00:39:46,856
+It must be again the same.
+
+558
+00:39:48,596 --> 00:39:53,655
+Term by term, differentiation of x squared with respect to x.
+
+559
+00:39:54,476 --> 00:39:54,916
+2x.
+
+560
+00:39:55,655 --> 00:39:59,775
+Okay, this is okay because I know that x is an independent voice function.
+
+561
+00:39:59,775 --> 00:40:02,195
+What about the derivative of y squared?
+
+562
+00:40:02,335 --> 00:40:04,016
+I think here we have the problem.
+
+563
+00:40:05,036 --> 00:40:09,356
+Y squared, what is the function and it has some x in it?
+
+564
+00:40:10,056 --> 00:40:13,295
+But we don't know what kind of a function of x is y.
+
+565
+00:40:13,936 --> 00:40:17,635
+That's why we need to just say it's like a composition.
+
+566
+00:40:17,635 --> 00:40:22,336
+Y is in the case of a composition with x.
+
+567
+00:40:22,735 --> 00:40:23,755
+X is another one.
+
+568
+00:40:24,275 --> 00:40:27,536
+So derivative of y is not an independent variable.
+
+569
+00:40:27,675 --> 00:40:29,175
+We cannot say 2y only.
+
+570
+00:40:29,715 --> 00:40:33,436
+It is 2y, but what about the function in it?
+
+571
+00:40:34,795 --> 00:40:35,735
+It is dy dx.
+
+572
+00:40:35,735 --> 00:40:41,056
+We don't know what is dy dx because we don't know what kind of a function is y in terms of x.
+
+573
+00:40:41,876 --> 00:40:45,876
+So it is 2y times dy dx like composition.
+
+574
+00:40:46,416 --> 00:40:52,175
+The composition of the, I'm sorry, derivative of the composition 2y and derivative of the
+
+575
+00:40:52,175 --> 00:40:53,735
+insider function you may think.
+
+576
+00:40:53,916 --> 00:40:54,056
+Okay.
+
+577
+00:40:54,735 --> 00:40:56,836
+So dy dx is equal to 0.
+
+578
+00:40:57,996 --> 00:41:01,016
+0 because derivative of a constant is 0.
+
+579
+00:41:01,016 --> 00:41:07,016
+Again, I want to say for x squared, I'm having to derivative with respect to x.
+
+580
+00:41:07,396 --> 00:41:08,175
+What is the function?
+
+581
+00:41:08,635 --> 00:41:09,956
+Term by term differentiation.
+
+582
+00:41:10,775 --> 00:41:12,635
+X squared, 2x.
+
+583
+00:41:12,996 --> 00:41:15,916
+Y squared, what is the function you have to be careful?
+
+584
+00:41:16,096 --> 00:41:18,655
+So 2y times y prime.
+
+585
+00:41:20,115 --> 00:41:22,096
+Again, using chain rule.
+
+586
+00:41:22,615 --> 00:41:24,076
+For 1, 0.
+
+587
+00:41:24,195 --> 00:41:28,295
+That means 2x plus 2y times y prime is 0.
+
+588
+00:41:28,295 --> 00:41:31,356
+That means dy dx is minus x over y.
+
+589
+00:41:32,056 --> 00:41:33,775
+Term by term differentiation.
+
+590
+00:41:33,996 --> 00:41:35,456
+That means implicit differentiation.
+
+591
+00:41:39,476 --> 00:41:53,316
+Here, you see the, if you want, you can just write explicit form this is, but it has two different parts, the circle, upper circle and lower semicircle.
+
+592
+00:41:53,936 --> 00:42:01,596
+Positive part shows the upper semicircle, and the square root 1 minus x square, but lower semicircle is negative form.
+
+593
+00:42:01,596 --> 00:42:12,996
+That means, if we try to, if we want to try to write y as alone a function of x only, we need to write positive and negative parts.
+
+594
+00:42:15,876 --> 00:42:17,155
+Do you understand?
+
+595
+00:42:19,516 --> 00:42:20,635
+Implicit differentiation.
+
+596
+00:42:32,563 --> 00:42:37,243
+Yüzey, would you tell me please, where did you use the chain?
+
+597
+00:42:41,083 --> 00:42:43,864
+Chain is in fact here, y-square. Think that.
+
+598
+00:42:48,463 --> 00:42:54,763
+Y-square, for example, how can I say? It's like a sine x-square.
+
+599
+00:42:54,763 --> 00:42:58,884
+For example, sine x-square is a composition, sine function and x-square.
+
+600
+00:42:58,884 --> 00:43:01,463
+It's the composition of sine and x-square.
+
+601
+00:43:02,083 --> 00:43:08,203
+So once you need the derivative of sine x-square, you need to write cosine x-square times 2x.
+
+602
+00:43:08,783 --> 00:43:10,803
+Here, y-square you have.
+
+603
+00:43:11,263 --> 00:43:17,203
+That means it is the composition with y and the second power, for example, x-square.
+
+604
+00:43:17,884 --> 00:43:22,303
+So 2y times derivative of insider function.
+
+605
+00:43:22,763 --> 00:43:24,663
+That's why it's like a composition.
+
+606
+00:43:26,503 --> 00:43:27,663
+Yeah, okay, thank you.
+
+607
+00:43:27,663 --> 00:43:28,824
+Not at all.
+
+608
+00:43:28,824 --> 00:43:31,824
+I couldn't get exactly what that.
+
+609
+00:43:31,824 --> 00:43:33,723
+Why we write dy dx there.
+
+610
+00:43:34,683 --> 00:43:37,384
+Because y is not an independent variable.
+
+611
+00:43:39,043 --> 00:43:42,923
+If it was independent variable, we will just say 2y.
+
+612
+00:43:43,163 --> 00:43:46,943
+But y is a function, not an independent variable.
+
+613
+00:43:47,463 --> 00:43:49,324
+Y is belonging to x also.
+
+614
+00:43:49,743 --> 00:43:51,884
+So it has another derivatives in it.
+
+615
+00:43:52,443 --> 00:43:53,723
+But we don't know what is it.
+
+616
+00:43:53,844 --> 00:43:55,183
+Because it is implicitly given.
+
+617
+00:43:55,183 --> 00:43:57,483
+That's why we need to write only y prime.
+
+618
+00:43:59,483 --> 00:44:01,243
+Hocam, ben de bir şey sorabilir miyim?
+
+619
+00:44:01,623 --> 00:44:02,023
+Yes.
+
+620
+00:44:02,384 --> 00:44:04,783
+Hani dy bölü dx dedik ya burada.
+
+621
+00:44:05,143 --> 00:44:08,364
+Şimdi bu hani yukarıdaki x kare artı y kare eşittir bir.
+
+622
+00:44:08,523 --> 00:44:13,403
+Buradan y'yi çektiğimiz zaman kare kükücünde bir eksi x kare oluyor ya hani.
+
+623
+00:44:13,403 --> 00:44:17,923
+O dy bölü dx dediğimiz kısım bir eksi x karenin türevini.
+
+624
+00:44:18,703 --> 00:44:21,023
+Ya bu kolay bir fonksiyon olduğu için söylüyorum.
+
+625
+00:44:21,023 --> 00:44:21,304
+Bu da.
+
+626
+00:44:24,563 --> 00:44:29,583
+Nasıl açıklayabilirim bunu acaba?
+
+627
+00:44:32,983 --> 00:44:35,824
+Her fonksiyonu tabii ki y'yi çekemeyebiliriz ama
+
+628
+00:44:35,824 --> 00:44:38,023
+örnek olsun diye söylüyorum.
+
+629
+00:44:38,023 --> 00:44:39,943
+D y bölü d x o demek mi?
+
+630
+00:44:40,583 --> 00:44:40,943
+Buradaki.
+
+631
+00:44:42,563 --> 00:44:45,503
+Trabiyonu alınca eksi x bölü y oluyor ama.
+
+632
+00:44:45,603 --> 00:44:47,563
+Ama iki tarafı var bunun.
+
+633
+00:44:47,683 --> 00:44:49,463
+Pozitif kısmı da var negatif kısmı da var.
+
+634
+00:44:49,483 --> 00:44:50,503
+Anlayacaktım evet.
+
+635
+00:44:50,643 --> 00:44:51,303
+Yani öyle bir durum.
+
+636
+00:44:51,303 --> 00:44:52,103
+Kare olduğu için.
+
+637
+00:44:52,103 --> 00:44:54,603
+Yani oradan y'yi çektiğinizde iki farklı.
+
+638
+00:44:54,703 --> 00:44:57,643
+Yani zaten hatırlarsınız x kare artı yıkarı eşittir bir.
+
+639
+00:44:58,223 --> 00:45:00,123
+Bir fonksiyonun grafiğini göstermez.
+
+640
+00:45:00,263 --> 00:45:01,523
+İki farklı fonksiyon var.
+
+641
+00:45:02,683 --> 00:45:03,303
+Burada iş değişik.
+
+642
+00:45:03,303 --> 00:45:08,344
+Hocam peki mesela d y bölü d x'i eksi x bölü y diye yazdık yani.
+
+643
+00:45:09,483 --> 00:45:14,263
+Bunu formulize etmek istersek işte x'i yukarıya negatif atıyoruz.
+
+644
+00:45:14,583 --> 00:45:16,803
+Bölü y diye mi yazıyoruz diyebilir miyiz?
+
+645
+00:45:17,723 --> 00:45:19,463
+Ha yok bunu formulize etmeye çalışmayın.
+
+646
+00:45:19,463 --> 00:45:20,683
+Her şeyin formülü yoktur.
+
+647
+00:45:20,963 --> 00:45:21,083
+Hayır.
+
+648
+00:45:21,503 --> 00:45:21,923
+Anladım.
+
+649
+00:45:22,103 --> 00:45:25,963
+Peki d y bölü d eksi normal bulacağız o zaman yazacağız yani değil mi?
+
+650
+00:45:26,483 --> 00:45:28,463
+Tabii tabii bu türev y üssü.
+
+651
+00:45:28,543 --> 00:45:28,943
+Bunu öyle düşün.
+
+652
+00:45:28,983 --> 00:45:29,623
+Bu y üssü.
+
+653
+00:45:29,864 --> 00:45:31,283
+İsterseniz y üssü deyin sadece.
+
+654
+00:45:31,483 --> 00:45:31,703
+Anladım.
+
+655
+00:45:33,364 --> 00:45:41,763
+Hocam ben bir yani anladığımı anlamak için soruyorum da burada iki yeni bu x kare a ile bir fonksiyon y kare a ile bir fonksiyon.
+
+656
+00:45:41,884 --> 00:45:45,683
+Biz ikisinin türevini aldığımızda eksi x bölü y oluyor.
+
+657
+00:45:45,803 --> 00:45:47,783
+Yani y üzerinden türev almıyoruz.
+
+658
+00:45:47,963 --> 00:45:48,623
+O şekilde mi?
+
+659
+00:45:48,623 --> 00:45:51,223
+No.
+
+660
+00:45:51,223 --> 00:46:09,003
+Bir sonraki y'e yukarı y'e yukarı y'e yukarı y'e yukarı y'e yukarı y'e yukarı.
+
+661
+00:46:09,003 --> 00:46:11,263
+Function means function belongs to another variable.
+
+662
+00:46:11,263 --> 00:46:11,783
+Okay.
+
+663
+00:46:12,364 --> 00:46:20,203
+So once you try to get the, of course, the derivatives are performed with respect to independent variables also.
+
+664
+00:46:20,543 --> 00:46:20,844
+Always.
+
+665
+00:46:21,563 --> 00:46:26,263
+That means when it is independent variable x here, so the derivative will be with respect to x.
+
+666
+00:46:27,043 --> 00:46:27,344
+Okay.
+
+667
+00:46:27,344 --> 00:46:30,063
+So x squared plus y squared is 1.
+
+668
+00:46:30,063 --> 00:46:34,283
+In this equation, y is given implicitly as a function of x.
+
+669
+00:46:35,403 --> 00:46:48,083
+So term-by-term differentiation means we need, and the derivative of x squared, once it is an independent variable, it is directly 2x because we get the derivative with respect to x.
+
+670
+00:46:48,483 --> 00:46:51,023
+So x squared with respect to x becomes 2x.
+
+671
+00:46:51,203 --> 00:46:52,403
+But what about y?
+
+672
+00:46:52,403 --> 00:46:57,743
+y is a function and it has x in it, but we don't know what kind of x in it.
+
+673
+00:46:58,183 --> 00:47:01,463
+So we just say it's like a composition again, I want to say.
+
+674
+00:47:02,203 --> 00:47:04,583
+Derivative of the whole function 2y times.
+
+675
+00:47:05,123 --> 00:47:08,063
+Also it has y prime that we don't know what is y prime.
+
+676
+00:47:08,563 --> 00:47:11,003
+Once you're writing the term-by-term differentiation.
+
+677
+00:47:11,483 --> 00:47:14,603
+Okay.
+
+678
+00:47:17,003 --> 00:47:20,003
+Do you really understand me or shall I repeat it?
+
+679
+00:47:20,963 --> 00:47:21,683
+No, thank you.
+
+680
+00:47:21,683 --> 00:47:22,804
+Thank you.
+
+681
+00:47:24,804 --> 00:47:25,623
+Anyone else?
+
+682
+00:47:25,623 --> 00:47:45,123
+Thank you.
+
+683
+00:47:34,164 --> 00:47:34,544
+Okay.
+
+684
+00:47:37,304 --> 00:47:42,464
+So be careful about having the derivatives of functions. Be careful of function.
+
+685
+00:47:43,384 --> 00:47:48,644
+Function means in the function we have some other variables.
+
+686
+00:47:49,344 --> 00:47:54,924
+And if it is given implicitly, we don't know what kind of a function in it, but it has a derivative, don't forget.
+
+687
+00:47:55,344 --> 00:48:02,204
+But in independent variable, we don't have anything. It is directly the derivative of it because it is directly an independent variable.
+
+688
+00:48:02,204 --> 00:48:07,324
+It doesn't belong to another variable. But function belongs to other variables.
+
+689
+00:48:07,324 --> 00:48:15,004
+That's why we cannot directly get the derivative of it. We need to multiply with the differentiation of it, y''.
+
+690
+00:48:15,004 --> 00:48:15,424
+Okay.
+
+691
+00:48:25,492 --> 00:48:36,912
+For example, this. If it was only y, it would be easy, but sin x times y also we have, which is an implicit form of the function y.
+
+692
+00:48:37,292 --> 00:48:43,192
+Here y is a function of x, because y' is asked. We are sure that y is a function of x.
+
+693
+00:48:43,552 --> 00:48:53,292
+We need to get the differential of both sides with respect to x while being careful about that y is the function, x is the independent variable. Be careful.
+
+694
+00:49:51,572 --> 00:49:53,572
+Okay, now we will look.
+
+695
+00:49:59,603 --> 00:50:00,483
+Anyone else?
+
+696
+00:50:12,275 --> 00:50:18,755
+You have to be careful about this function x times y. This part is acting complicated for you.
+
+697
+00:50:20,875 --> 00:50:28,975
+x has a derivative and also y has a derivative of x. Be careful. Two functions here. In the case of multiplication, you can just think.
+
+698
+00:50:30,895 --> 00:50:34,775
+Multiplication, you have. Derivative of a multiplication, you need to just apply.
+
+699
+00:50:52,947 --> 00:50:53,947
+let me dokur.
+
+700
+00:51:01,331 --> 00:51:03,331
+Let's see what's the solution.
+
+701
+00:51:08,052 --> 00:51:09,052
+Evet.
+
+702
+00:51:13,460 --> 00:51:21,500
+çeşimdi, f'
+
+703
+00:51:17,684 --> 00:51:21,044
+so, so, look.
+
+704
+00:51:24,947 --> 00:51:54,947
+Bu, y²'e de x²'e de x²'e de x²'e de x'e de x'e de y
+
+705
+00:51:54,947 --> 00:52:24,927
+with 2x plus sinxy again the composition sin function and multiplication of x and y so derivative of the whole function cosine xy times derivative of x times y derivative of x times y multiplication derivative of multiplication first is the derivative of x 1 times y plus x times derivative of y y' prime so y plus x times y
+
+706
+00:52:24,927 --> 00:52:34,447
+y times y prime times cosine x y this this is important that the rest of it is only basic operations we understand this step
+
+707
+00:52:39,027 --> 00:52:40,387
+Can you repeat?
+
+708
+00:52:41,047 --> 00:52:42,767
+Yes, I can, of course.
+
+709
+00:52:43,107 --> 00:52:44,147
+Let's start again.
+
+710
+00:52:48,367 --> 00:52:51,067
+Y² is our function.
+
+711
+00:52:51,727 --> 00:52:52,767
+So the derivative of it,
+
+712
+00:52:53,887 --> 00:52:56,707
+first the derivative of y², 2y times,
+
+713
+00:52:56,807 --> 00:52:58,587
+it's the function, not an independent variable,
+
+714
+00:52:58,767 --> 00:52:59,847
+so y' we have.
+
+715
+00:52:59,847 --> 00:53:03,227
+That means just like a chain rule
+
+716
+00:53:03,227 --> 00:53:06,827
+and writing the derivative of the whole function
+
+717
+00:53:06,827 --> 00:53:09,247
+times the derivative of the whole inside the function.
+
+718
+00:53:09,427 --> 00:53:10,007
+It's the same.
+
+719
+00:53:10,527 --> 00:53:15,307
+2y times y' is equal to derivative of y² is this.
+
+720
+00:53:15,707 --> 00:53:17,887
+X², X is independent,
+
+721
+00:53:18,147 --> 00:53:21,887
+so 2x only, X has no any other variable in it.
+
+722
+00:53:21,987 --> 00:53:24,427
+That's why it is directly 2x only, okay?
+
+723
+00:53:25,867 --> 00:53:29,067
+Plus here, sine xy,
+
+724
+00:53:29,467 --> 00:53:33,687
+sine function of xy is the composition again.
+
+725
+00:53:33,687 --> 00:53:37,907
+sine function, composition with x times y.
+
+726
+00:53:38,867 --> 00:53:40,487
+So derivative of it,
+
+727
+00:53:41,867 --> 00:53:43,487
+chain rule, according to chain rule,
+
+728
+00:53:43,587 --> 00:53:46,307
+is equal to derivative of the whole function,
+
+729
+00:53:47,007 --> 00:53:49,607
+that means sine xy becomes cosine xy,
+
+730
+00:53:50,247 --> 00:53:53,027
+times derivative of the insider function,
+
+731
+00:53:53,027 --> 00:53:54,567
+that means x times y.
+
+732
+00:53:54,967 --> 00:53:57,067
+Derivative of x times y, first the thing,
+
+733
+00:53:57,547 --> 00:53:58,467
+this multiplication.
+
+734
+00:53:59,107 --> 00:54:01,327
+Derivative, think of derivative of a function.
+
+735
+00:54:03,687 --> 00:54:05,327
+But we have the multiplication.
+
+736
+00:54:05,867 --> 00:54:07,787
+One by one, we just get the derivatives.
+
+737
+00:54:07,967 --> 00:54:08,507
+If you remember,
+
+738
+00:54:08,687 --> 00:54:10,707
+once we have the multiplication of two functions
+
+739
+00:54:10,707 --> 00:54:12,127
+and need to differentiate it,
+
+740
+00:54:12,427 --> 00:54:14,247
+one by one, we just differentiate.
+
+741
+00:54:14,787 --> 00:54:16,367
+First is the derivative of x,
+
+742
+00:54:16,807 --> 00:54:17,547
+which is 1.
+
+743
+00:54:17,647 --> 00:54:19,627
+1 times the second function.
+
+744
+00:54:19,947 --> 00:54:21,287
+1 times y plus
+
+745
+00:54:21,287 --> 00:54:24,367
+x times the second derivative of second function,
+
+746
+00:54:24,707 --> 00:54:25,607
+which is y prime.
+
+747
+00:54:25,967 --> 00:54:27,207
+Derivative of y is y prime,
+
+748
+00:54:27,267 --> 00:54:28,327
+because it's the function.
+
+749
+00:54:28,807 --> 00:54:28,947
+Okay?
+
+750
+00:54:29,607 --> 00:54:30,467
+That's all I think.
+
+751
+00:54:30,467 --> 00:54:31,467
+So,
+
+752
+00:54:32,627 --> 00:54:35,367
+2y times y prime is equal to 2x plus
+
+753
+00:54:35,367 --> 00:54:37,147
+cosine xy times
+
+754
+00:54:37,147 --> 00:54:39,327
+y plus x times y prime.
+
+755
+00:54:39,647 --> 00:54:41,627
+So grouping of y prime alone
+
+756
+00:54:41,627 --> 00:54:42,647
+to one side,
+
+757
+00:54:43,027 --> 00:54:43,487
+so again,
+
+758
+00:54:43,867 --> 00:54:45,567
+this is y prime is 2x plus
+
+759
+00:54:45,567 --> 00:54:47,087
+y cosine xy over
+
+760
+00:54:47,087 --> 00:54:49,587
+2y minus x times
+
+761
+00:54:49,587 --> 00:54:50,907
+cosine xy.
+
+762
+00:54:50,907 --> 00:54:53,907
+2y minus xy.
+
+763
+00:54:53,907 --> 00:54:54,507
+3y minus xy.
+
+764
+00:54:54,507 --> 00:54:56,507
+4y minus xy.
+
+765
+00:54:56,507 --> 00:54:59,507
+5y minus xy.
+
+766
+00:54:59,507 --> 00:55:02,507
+6y minus xy.
+
+767
+00:55:02,507 --> 00:55:10,507
+7y minus xy.
+
+768
+00:54:54,835 --> 00:54:57,955
+Now, are you okay? I hope.
+
+769
+00:55:00,475 --> 00:55:05,895
+Okay. Okay. I'm very happy to hear you. Hear yes from you.
+
+770
+00:55:07,715 --> 00:55:09,635
+It's not so easy, I know.
+
+771
+00:55:19,219 --> 00:55:23,579
+which step? Only the differentiation.
+
+772
+00:55:29,219 --> 00:55:30,219
+Şöyle.
+
+773
+00:55:34,324 --> 00:55:48,063
+Aslında hani daha önce de anlattığım gibi terim terime türetiyorum. Kapalı verilmiş y fonksiyonu tek başına y eşittir şudur diyemiyorum. Zaten sinüs fonksiyonun içerisinde de kapalı verilmiş bir şekilde görüyorsunuz.
+
+774
+00:55:49,264 --> 00:55:58,304
+Implicit differentiation yani kapalı türetme. Terim terime türetiyorum. Y'nin fonksiyon x'in bağımsız değişken olduğunu unutmuyorum.
+
+775
+00:55:58,304 --> 00:56:08,784
+y karenin türevi tabii ki ne olacak? 2y çarpı y üstü gelecektir. Çünkü y bir fonksiyon ve içerisinde x'ler var ama nasıl olduğunu bilmediğimiz x'ler. O yüzden y üstü deyip geçiyorum buraya.
+
+776
+00:56:09,304 --> 00:56:11,744
+y üstü demem lazım. Composition gibi düşünebilirsiniz.
+
+777
+00:56:12,824 --> 00:56:17,503
+x square bu bir bağımsız değişken olduğu için türevi zaten direkt 2x'tir.
+
+778
+00:56:19,104 --> 00:56:26,563
+Sinüs x çarpı y'de bir kompozition'dır. Burada bir bileşke var. Sinüs fonksiyonu ile x çarpı y'nin bir bileşkesi var.
+
+779
+00:56:26,563 --> 00:56:31,923
+bunun türevini alırken ilk önce tüm fonksiyonun yani bir bileşkinin türevi.
+
+780
+00:56:32,344 --> 00:56:36,084
+kusinüs x çarpı y çarpı içteki fonksiyonun türevi.
+
+781
+00:56:36,644 --> 00:56:40,003
+içteki fonksiyon x çarpı y ikisinde de x var.
+
+782
+00:56:40,184 --> 00:56:42,963
+Bu da x'in bir fonksiyonu kendisi y'nin de içinde x var.
+
+783
+00:56:43,084 --> 00:56:44,903
+Demek ki çarpımı türevi alacağım.
+
+784
+00:56:45,423 --> 00:56:46,324
+Tek tek türeceğim.
+
+785
+00:56:46,324 --> 00:56:48,324
+ilk önce x'in türevi çarpı.
+
+786
+00:56:48,324 --> 00:56:51,284
+İlk önce x'in türevi çarpı ikinci artı birinci çarpı ikincinin türevi.
+
+787
+00:56:51,784 --> 00:56:57,523
+Birincinin türevi bir çarpı ikinci fonksiyon y artı birinci çarpı ikincinin türevi.
+
+788
+00:56:57,604 --> 00:56:59,903
+Y fonksiyon zaten onu y üstü türevi.
+
+789
+00:57:00,104 --> 00:57:03,564
+Y üstü çünkü ben y'nin açık bir şekilde türevin ne olduğunu zaten bilmiyorum.
+
+790
+00:57:03,704 --> 00:57:04,084
+Onu arıyorum.
+
+791
+00:57:04,084 --> 00:57:05,284
+O yüzden y üstü çarpı.
+
+792
+00:57:05,284 --> 00:57:06,983
+Çarpı kosinüs x çarpı y.
+
+793
+00:57:07,043 --> 00:57:09,923
+Sonrasında y üstüleri gruplayıp çekiyorsunuz.
+
+794
+00:57:12,724 --> 00:57:13,764
+Is it okay?
+
+795
+00:57:14,804 --> 00:57:16,584
+Hocam ben bir şey soracaktım.
+
+796
+00:57:17,124 --> 00:57:17,804
+Yes.
+
+797
+00:57:18,644 --> 00:57:21,804
+Bu soruda bizde y fonksiyonun türevini istemiş.
+
+798
+00:57:21,943 --> 00:57:25,664
+Peki bu soruda biz x fonksiyonun türevini bulabilmeyiz.
+
+799
+00:57:25,724 --> 00:57:26,503
+Tam tersi mesela.
+
+800
+00:57:27,144 --> 00:57:27,403
+Evet.
+
+801
+00:57:27,403 --> 00:57:35,003
+aynı işlemi x için yaparsanız x'in fonksiyonu y'nin bağımsız değişken olduğunu kabul edip yaparsınız.
+
+802
+00:57:35,124 --> 00:57:36,664
+Tabi orada da bambaşka bir şey çıkacaktır.
+
+803
+00:57:37,364 --> 00:57:37,923
+Bu da olabilir.
+
+804
+00:57:38,644 --> 00:57:40,364
+Her zaman y fonksiyonu olmak zorunda değildir.
+
+805
+00:57:40,423 --> 00:57:41,304
+Bu verilmek zorunda.
+
+806
+00:57:44,124 --> 00:57:50,184
+Yani kapalı bir fonksiyon verilip hangisinin türevi isteniyorsa demek ki o fonksiyon.
+
+807
+00:57:54,963 --> 00:58:16,744
+Yani x üstü burada soruluyorsa, soruluyor olsaydı, x üstü normalde x bağımsız değişken ise x üstü zaten kendisine göre türev zaten birdir. Ama x üstü olarak soruluyorsa demek ki x fonksiyonu y değişken olarak düşünürsünüz. Çok genel olarak y fonksiyonu x değişken olur. Ama tekrar söylüyorum, notasyona takılmayın. Ne soruluyorsa oradan yorum yapın.
+
+808
+00:58:36,211 --> 00:58:45,092
+Are you okay with this question? Okay. Yes. Okay. So continue.
+
+809
+00:58:47,652 --> 00:58:55,811
+What about this? Let's do it. I'm waiting. Here, as you see, y' is asked, that means y is a function of x.
+
+810
+00:58:55,811 --> 00:59:02,851
+y is given implicitly with this equation. x squared y plus y squared x is equal to x cubed y cubed. Okay.
+
+811
+00:59:02,851 --> 00:59:11,251
+Let's have term-by-term differentiation and get y' from this one. Be careful. Y is function x is independent.
+
+812
+00:59:11,251 --> 00:59:28,291
+x is independent.
+
+813
+01:00:06,132 --> 01:00:06,512
+ok?
+
+814
+01:00:21,652 --> 01:00:22,711
+ok, no one knows.
+
+815
+01:00:36,724 --> 01:00:40,284
+Hocam, ben buldum da bunu nasıl yazabileceğimi inanın bilmiyorum.
+
+816
+01:00:41,004 --> 01:00:43,684
+Hiç önemli değil. Sen elinde tut, şimdi kontrol ederiz.
+
+817
+01:00:44,144 --> 01:00:49,804
+Aynen. Çünkü şey, kare mesela, kare nasıl yapılıyor? Arkadaşlar yazıyor ya burada.
+
+818
+01:00:50,284 --> 01:00:54,423
+Ben bilmiyorum. Yani ben yazamıyorum farkındaysanız kareyi.
+
+819
+01:00:54,584 --> 01:00:57,423
+Tamam, tamam. Siz yapın da ben kontrol edeyim.
+
+820
+01:00:57,644 --> 01:00:58,124
+Evet.
+
+821
+01:01:00,284 --> 01:01:01,364
+Bak, shift 6.
+
+822
+01:01:01,364 --> 01:01:04,244
+Shift 6. Aynen, aynen. Tamam. Teşekkür ederim, sağ olun.
+
+823
+01:01:04,284 --> 01:01:05,184
+Ben de teşekkür ederim.
+
+824
+01:01:23,027 --> 01:01:27,467
+Shall we see the solution together? And let's check your answers.
+
+825
+01:01:28,427 --> 01:01:30,807
+Hocam, ben de cevap buldum ama çok uzun.
+
+826
+01:01:31,407 --> 01:01:33,987
+Tamam. Let's see it together. Okay.
+
+827
+01:01:38,963 --> 01:01:40,344
+Okay, let's see.
+
+828
+01:01:40,864 --> 01:01:42,583
+This is our equation.
+
+829
+01:01:44,083 --> 01:01:45,563
+Let's do it one by one.
+
+830
+01:01:45,804 --> 01:01:46,443
+I think so.
+
+831
+01:01:48,903 --> 01:01:49,423
+Multiplications.
+
+832
+01:01:50,103 --> 01:01:51,443
+We have so be careful.
+
+833
+01:01:52,923 --> 01:01:53,244
+Okay.
+
+834
+01:01:54,643 --> 01:01:56,063
+You can only write here.
+
+835
+01:01:56,183 --> 01:01:59,103
+I did it and I'm waiting for your response.
+
+836
+01:01:59,224 --> 01:02:00,224
+You can just write here.
+
+837
+01:02:00,224 --> 01:02:02,623
+You don't need to write so much long things.
+
+838
+01:02:02,864 --> 01:02:05,923
+And once you are writing, thank you so much all of you.
+
+839
+01:02:06,483 --> 01:02:06,583
+Okay.
+
+840
+01:02:06,583 --> 01:02:09,384
+Let's start.
+
+841
+01:02:09,983 --> 01:02:11,423
+X squared times Y.
+
+842
+01:02:11,784 --> 01:02:13,103
+Now, X is independent.
+
+843
+01:02:13,304 --> 01:02:13,923
+Y is function.
+
+844
+01:02:14,384 --> 01:02:16,284
+But once we have the multiplication,
+
+845
+01:02:17,903 --> 01:02:19,844
+X squared is a function of X.
+
+846
+01:02:20,264 --> 01:02:21,364
+Y is a function of X.
+
+847
+01:02:21,463 --> 01:02:26,563
+That means here we need to get the derivative of the multiplication of two functions of X.
+
+848
+01:02:26,563 --> 01:02:29,503
+So one by one, we need to get the derivatives.
+
+849
+01:02:30,483 --> 01:02:32,503
+First there, the derivative of the first one.
+
+850
+01:02:32,503 --> 01:02:35,963
+X squared, 2X times the second one.
+
+851
+01:02:36,103 --> 01:02:39,844
+Plus first function times the derivative of second one.
+
+852
+01:02:40,043 --> 01:02:40,804
+Y prime.
+
+853
+01:02:40,903 --> 01:02:41,344
+Be careful.
+
+854
+01:02:41,583 --> 01:02:44,423
+Y is function because that's why Y prime.
+
+855
+01:02:44,943 --> 01:02:47,183
+Plus second term.
+
+856
+01:02:47,183 --> 01:02:51,324
+Again, we have the multiplication of two functions of X.
+
+857
+01:02:51,463 --> 01:02:57,103
+So again, I need to follow the rule about a derivative of multiplication of two functions.
+
+858
+01:02:58,423 --> 01:02:59,724
+Derivative of Y squared.
+
+859
+01:03:00,563 --> 01:03:03,224
+2Y, Y prime times the second function.
+
+860
+01:03:03,643 --> 01:03:07,683
+Plus first function times the derivative of second one.
+
+861
+01:03:08,483 --> 01:03:08,784
+X.
+
+862
+01:03:09,023 --> 01:03:10,824
+Derivative of X with respect to X.
+
+863
+01:03:10,824 --> 01:03:11,663
+1.
+
+864
+01:03:11,663 --> 01:03:13,103
+So Y squared.
+
+865
+01:03:13,724 --> 01:03:16,224
+Equal to now right hand side.
+
+866
+01:03:16,463 --> 01:03:18,304
+Again, we have the multiplication.
+
+867
+01:03:18,844 --> 01:03:21,623
+First there, the derivative of X cubed with respect to X.
+
+868
+01:03:22,063 --> 01:03:23,123
+3X squared.
+
+869
+01:03:23,443 --> 01:03:24,884
+Times the second function.
+
+870
+01:03:25,143 --> 01:03:26,143
+Y cubed plus.
+
+871
+01:03:26,543 --> 01:03:28,563
+Now it's turn off second function.
+
+872
+01:03:28,683 --> 01:03:29,663
+X cubed times.
+
+873
+01:03:30,483 --> 01:03:31,304
+Y cubed.
+
+874
+01:03:31,724 --> 01:03:34,543
+3Y squared.
+
+875
+01:03:34,683 --> 01:03:35,203
+Y prime.
+
+876
+01:03:35,663 --> 01:03:38,324
+Because Y prime is the function.
+
+877
+01:03:38,643 --> 01:03:40,563
+So the derivative is Y prime that we don't know.
+
+878
+01:03:40,824 --> 01:03:43,443
+Because we're just searching to get Y prime already.
+
+879
+01:03:43,623 --> 01:03:45,864
+That's why we need to just show with Y prime.
+
+880
+01:03:46,603 --> 01:03:51,224
+And grouping of the terms which is in the case of multiplication with Y prime on one side.
+
+881
+01:03:51,724 --> 01:03:54,264
+And making it alone by dividing.
+
+882
+01:03:55,143 --> 01:03:56,703
+So 3X squared.
+
+883
+01:03:56,784 --> 01:03:59,583
+Y cubed minus Y squared minus 2XY over.
+
+884
+01:04:00,744 --> 01:04:03,603
+X squared plus 2XY minus 3X cubed.
+
+885
+01:04:04,023 --> 01:04:04,623
+Y squared.
+
+886
+01:04:04,884 --> 01:04:06,724
+It must be the correct answer.
+
+887
+01:04:07,884 --> 01:04:08,143
+Okay.
+
+888
+01:04:08,143 --> 01:04:10,324
+Now you can check your answer and write me.
+
+889
+01:04:10,764 --> 01:04:11,043
+Okay.
+
+890
+01:04:11,143 --> 01:04:11,683
+I get it.
+
+891
+01:04:11,683 --> 01:04:12,543
+Okay.
+
+892
+01:04:12,543 --> 01:04:12,824
+I get it.
+
+893
+01:04:12,824 --> 01:04:12,923
+Okay.
+
+894
+01:04:12,923 --> 01:04:12,983
+I get it.
+
+895
+01:04:12,983 --> 01:04:13,043
+Okay.
+
+896
+01:04:13,043 --> 01:04:13,083
+I get it.
+
+897
+01:04:13,083 --> 01:04:13,183
+Okay.
+
+898
+01:04:13,183 --> 01:04:13,483
+I get it.
+
+899
+01:04:13,483 --> 01:04:13,543
+Okay.
+
+900
+01:04:13,543 --> 01:04:13,623
+I get it.
+
+901
+01:04:13,623 --> 01:04:13,683
+Okay.
+
+902
+01:04:13,683 --> 01:04:13,744
+I get it.
+
+903
+01:04:13,744 --> 01:04:14,083
+Okay.
+
+904
+01:04:14,083 --> 01:04:14,183
+I get it.
+
+905
+01:04:14,183 --> 01:04:14,523
+Okay.
+
+906
+01:04:14,523 --> 01:04:14,623
+I get it.
+
+907
+01:04:14,623 --> 01:04:14,683
+Okay.
+
+908
+01:04:14,683 --> 01:04:14,744
+I get it.
+
+909
+01:04:14,744 --> 01:04:14,824
+Okay.
+
+910
+01:04:14,824 --> 01:04:15,183
+I get it.
+
+911
+01:04:15,183 --> 01:04:15,683
+Okay.
+
+912
+01:04:15,683 --> 01:04:15,744
+I get it.
+
+913
+01:04:15,744 --> 01:04:15,784
+Okay.
+
+914
+01:04:15,784 --> 01:04:16,244
+I get it.
+
+915
+01:04:16,244 --> 01:04:16,683
+Okay.
+
+916
+01:04:16,683 --> 01:04:16,744
+I get it.
+
+917
+01:04:16,744 --> 01:04:16,824
+Okay.
+
+918
+01:04:16,824 --> 01:04:16,844
+I get it.
+
+919
+01:04:16,844 --> 01:04:16,884
+Okay.
+
+920
+01:04:16,884 --> 01:04:17,364
+I get it.
+
+921
+01:04:17,364 --> 01:04:17,443
+Okay.
+
+922
+01:04:17,443 --> 01:04:17,683
+I get it.
+
+923
+01:04:17,683 --> 01:04:17,824
+Okay.
+
+924
+01:04:17,824 --> 01:04:18,683
+I get it.
+
+925
+01:04:18,683 --> 01:04:18,824
+Okay.
+
+926
+01:04:16,755 --> 01:04:23,755
+ve
+
+927
+01:04:28,340 --> 01:04:35,240
+Evet, I think so. Step by step. And don't hurry up. Always be careful. Okay.
+
+928
+01:04:44,083 --> 01:04:44,884
+No problem.
+
+929
+01:04:46,663 --> 01:04:48,503
+If you want, we may have a break, yes.
+
+930
+01:04:48,823 --> 01:04:51,323
+If you got tired, I can have a break.
+
+931
+01:04:52,723 --> 01:04:53,623
+For 10 minutes.
+
+932
+01:04:53,923 --> 01:04:55,063
+Break can be good for us.
+
+933
+01:04:56,543 --> 01:04:57,023
+Okay.
+
+934
+01:04:59,503 --> 01:05:01,463
+So, have a break for 10 minutes.
+
+935
+01:15:11,923 --> 01:15:12,963
+Şall viyakontinuer?
+
+936
+01:15:27,380 --> 01:15:28,380
+ok.
+
+937
+01:15:37,427 --> 01:15:41,747
+So the next example is an easy example and second order derivative.
+
+938
+01:15:47,380 --> 01:15:49,539
+y, y is given explicitly.
+
+939
+01:15:51,140 --> 01:15:57,539
+It seems to, but in sign again we have a function of y here. Be careful.
+
+940
+01:17:02,131 --> 01:17:17,371
+For second order derivative, firstly, I think it's better to get the first order derivative, that means implicit differentiation term by term, get y' firstly, and then get normal derivative, y' the second order, easier.
+
+941
+01:17:19,991 --> 01:17:29,271
+That means for second order derivative, you don't need implicit differentiation. Once you get the function y' just derivate with respect to x, I mean.
+
+942
+01:18:10,228 --> 01:18:10,587
+ok.
+
+943
+01:18:14,100 --> 01:18:17,380
+Now we will see, elif not, anyone else?
+
+944
+01:18:35,764 --> 01:18:36,764
+ok.
+
+945
+01:18:41,555 --> 01:18:42,155
+Okay.
+
+946
+01:18:43,576 --> 01:18:44,195
+Anyone?
+
+947
+01:18:46,315 --> 01:18:52,795
+If you say, let's see the solution, we will just see the solution and then talk about it.
+
+948
+01:19:07,539 --> 01:19:08,539
+ve süreklik.
+
+949
+01:19:14,355 --> 01:19:15,595
+It's not so short.
+
+950
+01:19:16,555 --> 01:19:17,655
+I think so.
+
+951
+01:19:17,956 --> 01:19:18,576
+Oh my God.
+
+952
+01:19:18,675 --> 01:19:19,135
+What is it?
+
+953
+01:19:22,916 --> 01:19:24,055
+It's so nice.
+
+954
+01:19:25,555 --> 01:19:26,975
+No, please don't cry.
+
+955
+01:19:30,315 --> 01:19:31,095
+Let's see.
+
+956
+01:19:33,576 --> 01:19:34,095
+Yes.
+
+957
+01:19:35,576 --> 01:19:37,095
+[öğrenci], is it like yours?
+
+958
+01:19:40,195 --> 01:19:40,755
+Okay.
+
+959
+01:19:40,935 --> 01:19:41,795
+First one is okay.
+
+960
+01:19:44,355 --> 01:19:47,755
+Okay.
+
+961
+01:19:48,576 --> 01:19:49,376
+Let's see.
+
+962
+01:19:50,055 --> 01:19:51,315
+What is sine x plus y?
+
+963
+01:19:51,475 --> 01:19:52,895
+So y prime is?
+
+964
+01:19:55,235 --> 01:19:56,315
+Well done, [öğrenci].
+
+965
+01:19:56,496 --> 01:19:57,155
+Congratulations.
+
+966
+01:19:57,935 --> 01:19:58,315
+Well done.
+
+967
+01:20:02,163 --> 01:20:10,483
+I think if I were together with you, I would give you a chocolate, I think. You heard it.
+
+968
+01:20:12,483 --> 01:20:12,963
+Well done.
+
+969
+01:20:16,163 --> 01:20:23,443
+And also, I think so. You have to be respectful to your friend, [öğrenci].
+
+970
+01:20:27,988 --> 01:20:31,068
+ve [öğrenci]'ı da aynı zamanda.
+
+971
+01:20:31,068 --> 01:20:32,148
+Thank you so much.
+
+972
+01:20:32,148 --> 01:20:32,668
+Well done.
+
+973
+01:20:37,268 --> 01:20:38,467
+[öğrenci], well done.
+
+974
+01:20:39,608 --> 01:20:40,728
+Well done, all of you.
+
+975
+01:20:41,507 --> 01:20:44,127
+All of you who is working on the question,
+
+976
+01:20:44,127 --> 01:20:46,948
+all of you, I want to thank and say,
+
+977
+01:20:47,908 --> 01:20:52,247
+yes, well done.
+
+978
+01:20:57,011 --> 01:20:57,731
+Let's see.
+
+979
+01:20:59,591 --> 01:21:02,831
+Y prime, term-by-term differentiation.
+
+980
+01:21:03,692 --> 01:21:09,491
+Y prime is, for sine x plus y, again, a composition.
+
+981
+01:21:10,831 --> 01:21:14,572
+So, derivative of the whole function, cosine x plus y,
+
+982
+01:21:14,711 --> 01:21:19,211
+times derivative of insider function x plus y with respect to x.
+
+983
+01:21:19,211 --> 01:21:21,791
+Be careful, y is function, x is independent.
+
+984
+01:21:22,072 --> 01:21:25,152
+So, derivative of x with respect to x, 1,
+
+985
+01:21:25,152 --> 01:21:28,751
+plus derivative of y with respect to x is y prime.
+
+986
+01:21:29,311 --> 01:21:29,811
+It's okay.
+
+987
+01:21:29,891 --> 01:21:31,311
+The first one is okay, I think.
+
+988
+01:21:31,791 --> 01:21:36,871
+So, y prime is cosine x plus y over 1 minus cosine x plus y.
+
+989
+01:21:37,371 --> 01:21:39,471
+I think it's okay for all of you up to now.
+
+990
+01:21:39,931 --> 01:21:40,551
+It's easy.
+
+991
+01:21:42,152 --> 01:21:44,831
+And after this step, you will just continue.
+
+992
+01:21:47,871 --> 01:21:49,351
+Again, be careful.
+
+993
+01:21:50,731 --> 01:21:52,951
+Y is function, x is independent variable.
+
+994
+01:21:53,271 --> 01:21:53,411
+Okay.
+
+995
+01:21:55,152 --> 01:21:56,931
+Second order derivative of y.
+
+996
+01:21:57,192 --> 01:21:59,791
+Y prime, another derivative with respect to y,
+
+997
+01:21:59,851 --> 01:22:01,612
+makes second order derivative of y.
+
+998
+01:22:02,072 --> 01:22:03,411
+Now, we have a division.
+
+999
+01:22:04,271 --> 01:22:07,971
+So, the derivative of a division of a quotient of two functions,
+
+1000
+01:22:08,311 --> 01:22:11,311
+we need to just follow the derivative of a division.
+
+1001
+01:22:11,811 --> 01:22:15,431
+You know, derivative of numerator times the denominator,
+
+1002
+01:22:15,911 --> 01:22:19,231
+minus numerator times the derivative of denominator,
+
+1003
+01:22:19,891 --> 01:22:22,731
+divide with second power of the denominator.
+
+1004
+01:22:22,731 --> 01:22:27,532
+It's the rule that you need to follow to get the derivative of a quotient.
+
+1005
+01:22:27,532 --> 01:22:28,072
+Okay.
+
+1006
+01:22:28,991 --> 01:22:32,431
+So, derivative of numerator, cosine x plus y,
+
+1007
+01:22:32,991 --> 01:22:38,631
+minus sine x plus y times derivative of x plus y with respect to x,
+
+1008
+01:22:38,991 --> 01:22:40,231
+one plus y prime,
+
+1009
+01:22:40,591 --> 01:22:41,951
+times denominator,
+
+1010
+01:22:42,591 --> 01:22:44,532
+one minus cosine x plus y,
+
+1011
+01:22:44,851 --> 01:22:48,811
+minus numerator times derivative of denominator,
+
+1012
+01:22:49,551 --> 01:22:51,931
+derivative of one minus cosine x plus y.
+
+1013
+01:22:51,931 --> 01:22:53,311
+One is zero,
+
+1014
+01:22:53,311 --> 01:22:55,891
+minus cosine x plus y.
+
+1015
+01:22:56,211 --> 01:22:58,351
+First, the derivative of the whole function,
+
+1016
+01:22:58,671 --> 01:23:01,351
+which is sine x plus y because of the negativity,
+
+1017
+01:23:01,851 --> 01:23:06,112
+times derivative of x plus y with respect to x again.
+
+1018
+01:23:06,311 --> 01:23:07,991
+So, one plus y prime.
+
+1019
+01:23:08,451 --> 01:23:13,671
+Divide with second power of one minus cosine x plus y,
+
+1020
+01:23:13,891 --> 01:23:16,971
+gives the second order derivative of y.
+
+1021
+01:23:16,971 --> 01:23:18,032
+If you want,
+
+1022
+01:23:18,112 --> 01:23:20,551
+you can substitute y prime here,
+
+1023
+01:23:21,072 --> 01:23:22,131
+here and here.
+
+1024
+01:23:22,511 --> 01:23:22,851
+Okay.
+
+1025
+01:23:26,260 --> 01:23:32,380
+So this function first seems to be a short result, but second order.
+
+1026
+01:23:39,859 --> 01:23:43,559
+This one. [öğrenci].
+
+1027
+01:23:46,259 --> 01:23:49,439
+İkinci hocam. Bu. Evet.
+
+1028
+01:23:49,979 --> 01:23:53,279
+Okay.
+
+1029
+01:23:56,039 --> 01:23:57,579
+We did the multiplication.
+
+1030
+01:23:58,399 --> 01:24:03,119
+1 times cosine x plus y plus y prime times cosine x plus y.
+
+1031
+01:24:03,759 --> 01:24:04,439
+Multiplication.
+
+1032
+01:24:06,119 --> 01:24:06,420
+Okay.
+
+1033
+01:24:07,259 --> 01:24:07,859
+Nice.
+
+1034
+01:24:07,859 --> 01:24:10,739
+Not at all, of course. [öğrenci].
+
+1035
+01:24:11,619 --> 01:24:12,500
+Anyone else?
+
+1036
+01:24:13,219 --> 01:24:13,960
+Who has a problem?
+
+1037
+01:24:13,960 --> 01:24:14,059
+No.
+
+1038
+01:24:23,315 --> 01:24:28,355
+I think you are all okay about the solution, so nice, continue.
+
+1039
+01:24:30,515 --> 01:24:42,515
+Well done all of you. Hmm, tangent line equation of the curve, but the curve is given implicitly at the point P, pi over 4, 0.
+
+1040
+01:24:44,836 --> 01:24:49,555
+How can we write a tangent line equation? Tell me.
+
+1041
+01:24:55,572 --> 01:25:25,572
+Y-Y0'a y-y0'a y
+
+1042
+01:25:25,572 --> 01:25:27,452
+I think this is the question in this one.
+
+1043
+01:25:28,632 --> 01:25:31,912
+That means m is the slope of the tangent line.
+
+1044
+01:25:32,311 --> 01:25:40,832
+We know slope of a tangent line of a curve is directly easily evaluated by the derivative of that function at that point.
+
+1045
+01:25:41,212 --> 01:25:49,811
+That means we need to get the derivative of this curve, this function, which is y at the point p.
+
+1046
+01:25:51,051 --> 01:25:52,771
+That means we need to get the derivative.
+
+1047
+01:25:52,771 --> 01:26:02,971
+Think that again I want to just inform you y is the function of x and try to get the derivative of y at the point p.
+
+1048
+01:26:03,471 --> 01:26:07,172
+It will be the slope of your tangent line.
+
+1049
+01:26:09,112 --> 01:26:14,152
+But here the problem is function is given implicitly.
+
+1050
+01:26:18,912 --> 01:26:19,931
+Any question?
+
+1051
+01:26:19,931 --> 01:26:22,931
+Ben niye böyleyim söylüyorsunuz?
+
+1052
+01:26:24,132 --> 01:26:25,752
+O zaman defol şu odadan.
+
+1053
+01:26:27,072 --> 01:26:30,931
+Yerim mi var?
+
+1054
+01:26:31,931 --> 01:26:32,712
+[öğrenci] altında.
+
+1055
+01:26:34,332 --> 01:26:36,712
+O [öğrenci] altındaydı ben.
+
+1056
+01:26:38,311 --> 01:26:41,592
+Arkadaşlar mikrofonlarınızı dikkatli kullanalım.
+
+1057
+01:26:41,592 --> 01:27:09,592
+Ben.
+
+1058
+01:26:49,587 --> 01:26:51,547
+dersle ilgili katılım sağlayalım lütfen.
+
+1059
+01:26:51,967 --> 01:26:52,527
+dikkat edelim.
+
+1060
+01:28:03,091 --> 01:28:25,571
+but you need to evaluate it. y' at the point pi over 4 and 0. In the equation that you get the derivative, directly you can put the variables x is pi over 4, y is 0, y' is y' You can directly substitute the numbers pi over 4 and 0, elifnas.
+
+1061
+01:28:25,571 --> 01:28:39,411
+if you are sure that my solution is okay. Okay. I mean that if it is okay, yes, you can directly put only y' will be a variable for you for this equation.
+
+1062
+01:28:40,692 --> 01:28:49,491
+You can. If you want, you can leave the y' alone or without having so much operation, you can put the values directly.
+
+1063
+01:28:49,491 --> 01:28:55,171
+Yes. And get y' at the point p.
+
+1064
+01:29:52,564 --> 01:29:58,164
+is it the equation of tangent line? Okay.
+
+1065
+01:30:30,804 --> 01:30:33,703
+I think the same, okay. Belirsiz.
+
+1066
+01:30:37,939 --> 01:30:38,939
+anyone?
+
+1067
+01:31:17,716 --> 01:31:19,716
+[öğrenci], ok.
+
+1068
+01:31:19,716 --> 01:31:21,716
+Ok, no problem [öğrenci].
+
+1069
+01:31:21,716 --> 01:31:23,716
+Ok.
+
+1070
+01:31:23,716 --> 01:31:27,716
+Once you get this step you can directly put the variables.
+
+1071
+01:31:27,716 --> 01:31:32,716
+X is pi over 4, y is 0 and then get y prime at that point.
+
+1072
+01:31:32,716 --> 01:31:38,716
+And this equation without leaving y prime alone, you can do it also easily.
+
+1073
+01:31:38,716 --> 01:31:41,716
+Ok.
+
+1074
+01:31:41,716 --> 01:31:44,716
+So let's look together.
+
+1075
+01:31:44,716 --> 01:31:48,716
+Yes.
+
+1076
+01:31:48,716 --> 01:31:52,716
+This is our equation implicitly, why is the function x as the variable.
+
+1077
+01:31:52,716 --> 01:31:56,716
+Again, term by term implicit differentiation we are doing.
+
+1078
+01:31:56,716 --> 01:32:02,716
+Here we have the multiplication x squared is a function of x, y squared is another function of x.
+
+1079
+01:32:02,716 --> 01:32:07,716
+So we need to follow the rule about the derivative of the multiplication of two functions.
+
+1080
+01:32:07,716 --> 01:32:13,716
+Derivative of the first one, x squared 2x times y squared plus.
+
+1081
+01:32:13,716 --> 01:32:21,716
+First function times x squared times derivative of y squared 2y, y prime plus.
+
+1082
+01:32:21,716 --> 01:32:24,716
+Tangent x plus y again a composition.
+
+1083
+01:32:24,716 --> 01:32:29,716
+Derivative of whole one composition, 1 plus tangent squared x plus y times.
+
+1084
+01:32:29,716 --> 01:32:32,716
+Derivative of insider function with respect to x.
+
+1085
+01:32:32,716 --> 01:32:34,716
+x plus y with respect to x.
+
+1086
+01:32:34,716 --> 01:32:38,716
+x, we have 1 plus 4y, y prime.
+
+1087
+01:32:38,716 --> 01:32:41,716
+I think you get this equation, this step.
+
+1088
+01:32:41,716 --> 01:32:44,716
+Here I think you don't need to get the y prime alone.
+
+1089
+01:32:44,716 --> 01:32:46,716
+Just apply the point directly here.
+
+1090
+01:32:46,716 --> 01:32:48,716
+I mean this.
+
+1091
+01:32:48,716 --> 01:32:49,716
+Okay.
+
+1092
+01:32:49,716 --> 01:32:53,716
+Put x is pi over 4y is 0.
+
+1093
+01:32:53,716 --> 01:32:56,716
+0, 0, y is 0.
+
+1094
+01:32:56,716 --> 01:32:57,716
+So what you get?
+
+1095
+01:32:57,716 --> 01:32:59,716
+1 plus y prime.
+
+1096
+01:32:59,716 --> 01:33:02,716
+1 plus tangent squared pi over 4.
+
+1097
+01:33:02,716 --> 01:33:03,716
+Tangent pi over 4.
+
+1098
+01:33:03,716 --> 01:33:05,716
+1.
+
+1099
+01:33:05,716 --> 01:33:07,716
+So second power is 1.
+
+1100
+01:33:07,716 --> 01:33:08,716
+2.
+
+1101
+01:33:08,716 --> 01:33:09,716
+It is 0.
+
+1102
+01:33:09,716 --> 01:33:11,716
+1 plus y prime is 0.
+
+1103
+01:33:11,716 --> 01:33:16,716
+That means y prime is minus 1 at the point p, pi over 4 and 0.
+
+1104
+01:33:16,716 --> 01:33:18,716
+That means this is the slope.
+
+1105
+01:33:18,716 --> 01:33:19,716
+Slope is minus 1.
+
+1106
+01:33:19,716 --> 01:33:26,716
+So y is pi over 4 minus x will be the tangent line equation of this curve, which is given implicitly
+
+1107
+01:33:26,716 --> 01:33:28,716
+at the point pi over 4 and 0.
+
+1108
+01:33:28,716 --> 01:33:31,716
+Yes.
+
+1109
+01:33:31,716 --> 01:33:32,716
+Easily.
+
+1110
+01:33:32,716 --> 01:33:38,716
+Because you need y prime, the value of y prime at that point.
+
+1111
+01:33:38,716 --> 01:33:40,716
+Derivative of the function at the point p.
+
+1112
+01:33:40,716 --> 01:33:43,716
+This is the slope of the tangent line.
+
+1113
+01:33:43,716 --> 01:33:45,716
+That's why it's easy.
+
+1114
+01:33:51,604 --> 01:33:53,204
+Şimdi, bir soru var mı?
+
+1115
+01:34:01,171 --> 01:34:19,111
+Okay. Do you want to examine the solution? Shall I wait for you? Sometimes I continue so quickly, you can tell me. Okay. To wait for you or continue. You can just inform me. Okay. It's clear and easy, so continue.
+
+1116
+01:34:24,595 --> 01:34:25,575
+What about this?
+
+1117
+01:34:28,775 --> 01:34:30,195
+Next question.
+
+1118
+01:34:32,175 --> 01:34:34,015
+Again, an implicit equation you see.
+
+1119
+01:34:34,155 --> 01:34:35,195
+And y' is asked.
+
+1120
+01:34:35,315 --> 01:34:36,795
+That means what is the function of x?
+
+1121
+01:34:36,895 --> 01:34:37,575
+And be careful.
+
+1122
+01:35:52,659 --> 01:35:58,479
+x minus y, or minus 1, minus 1.
+
+1123
+01:36:03,796 --> 01:36:09,516
+Let's see. How did you get minus 1? Is that a little bit?
+
+1124
+01:36:15,444 --> 01:36:21,744
+Let me look. 2x-1 over. Yes. Yes, you're right.
+
+1125
+01:36:29,108 --> 01:36:59,108
+Bu konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda, o konuda
+
+1126
+01:36:59,108 --> 01:37:00,488
+You can think if you want.
+
+1127
+01:37:01,168 --> 01:37:06,047
+Two times x minus y times the derivative of it, x minus y with respect to x.
+
+1128
+01:37:06,387 --> 01:37:07,948
+Be careful, y is a function.
+
+1129
+01:37:08,868 --> 01:37:10,288
+Okay, well done all of you.
+
+1130
+01:37:10,547 --> 01:37:11,387
+Thank you so much.
+
+1131
+01:37:12,168 --> 01:37:13,967
+And derivative of x minus y.
+
+1132
+01:37:14,408 --> 01:37:26,427
+For x we have one minus derivative of y, y prime is equal to for x one, y prime minus one, zero with respect to x.
+
+1133
+01:37:26,427 --> 01:37:26,708
+Okay.
+
+1134
+01:37:27,347 --> 01:37:28,868
+I think this step is okay.
+
+1135
+01:37:28,868 --> 01:37:32,908
+The rest of it is just the basic operations that we need.
+
+1136
+01:37:33,868 --> 01:37:37,628
+Multiplication, grouping of y prime and then dividing.
+
+1137
+01:37:39,328 --> 01:37:40,847
+Hocam, bir şey sorabilir miyim?
+
+1138
+01:37:41,047 --> 01:37:41,828
+Yes, of course.
+
+1139
+01:37:42,307 --> 01:37:44,988
+Bu eksi ikiye üstü nereden geldi?
+
+1140
+01:37:46,068 --> 01:37:46,927
+From multiplication.
+
+1141
+01:37:50,579 --> 01:37:53,979
+2x-2y.
+
+1142
+01:37:54,579 --> 01:37:55,220
+Yes.
+
+1143
+01:37:56,819 --> 01:37:59,340
+Times 1-y''.
+
+1144
+01:37:59,340 --> 01:37:59,619
+So?
+
+1145
+01:38:02,500 --> 01:38:03,100
+Okay.
+
+1146
+01:38:04,380 --> 01:38:05,359
+Is it right?
+
+1147
+01:38:05,819 --> 01:38:06,579
+Okay, thank you.
+
+1148
+01:38:06,579 --> 01:38:07,619
+Okay, not at all.
+
+1149
+01:38:26,355 --> 01:38:34,755
+Evet, if you are okay, I want to make an introduction to linearization and differentials.
+
+1150
+01:38:37,515 --> 01:38:46,135
+I want to ask you, are you okay about the derivatives and implicit differentiation? Do you have any problem about it?
+
+1151
+01:38:47,275 --> 01:38:47,855
+Sorry.
+
+1152
+01:38:48,416 --> 01:38:49,055
+Yes, buyurun.
+
+1153
+01:38:49,416 --> 01:38:53,555
+Would you please show the previous slide?
+
+1154
+01:38:53,555 --> 01:38:55,036
+Yes, of course.
+
+1155
+01:38:56,355 --> 01:38:58,076
+I'm sorry.
+
+1156
+01:38:58,635 --> 01:38:58,895
+Yes.
+
+1157
+01:39:09,332 --> 01:39:11,332
+Evet, ok, teşekkür ederim.
+
+1158
+01:39:11,332 --> 01:39:13,332
+Not at all.
+
+1159
+01:39:13,332 --> 01:39:15,332
+And let's continue.
+
+1160
+01:39:15,332 --> 01:39:17,332
+Ah, I was asking that,
+
+1161
+01:39:17,332 --> 01:39:19,332
+do you have any problem
+
+1162
+01:39:19,332 --> 01:39:21,332
+or any question about
+
+1163
+01:39:21,332 --> 01:39:23,332
+implicit differentiation
+
+1164
+01:39:23,332 --> 01:39:25,332
+and differentiation?
+
+1165
+01:39:25,332 --> 01:39:27,332
+Generally, the ordinary derivatives
+
+1166
+01:39:27,332 --> 01:39:29,332
+and high-order derivatives.
+
+1167
+01:39:29,332 --> 01:39:31,332
+If you have, you can ask me now.
+
+1168
+01:39:31,332 --> 01:39:33,332
+And we did basic
+
+1169
+01:39:33,332 --> 01:39:35,332
+exercises that please try
+
+1170
+01:39:35,332 --> 01:39:37,332
+to solve different questions about
+
+1171
+01:39:37,332 --> 01:39:39,332
+and
+
+1172
+01:39:39,332 --> 01:39:41,332
+you will be familiar about the solving
+
+1173
+01:39:41,332 --> 01:39:43,332
+solutions once you get lots
+
+1174
+01:39:43,332 --> 01:39:45,332
+of different examples.
+
+1175
+01:39:45,332 --> 01:39:47,332
+Always try to study.
+
+1176
+01:39:47,332 --> 01:39:49,332
+Get some questions,
+
+1177
+01:39:49,332 --> 01:39:51,332
+different types of questions you can search.
+
+1178
+01:39:51,332 --> 01:39:53,332
+And
+
+1179
+01:39:53,332 --> 01:39:55,332
+this is the last concept of this
+
+1180
+01:39:55,332 --> 01:39:57,332
+topic. Linearization and differentials
+
+1181
+01:39:57,332 --> 01:39:59,332
+are used
+
+1182
+01:39:59,332 --> 01:40:01,332
+as an exercise, I'm sorry,
+
+1183
+01:40:01,332 --> 01:40:03,332
+as an application of derivative again.
+
+1184
+01:40:03,332 --> 01:40:05,332
+These are
+
+1185
+01:40:05,332 --> 01:40:07,332
+extensions of derivatives because
+
+1186
+01:40:07,332 --> 01:40:09,332
+for these topics we are using,
+
+1187
+01:40:09,332 --> 01:40:11,332
+derivatives so basically, so main
+
+1188
+01:40:11,332 --> 01:40:13,332
+idea is the derivative because
+
+1189
+01:40:13,332 --> 01:40:15,332
+a main operation,
+
+1190
+01:40:15,332 --> 01:40:17,332
+lots of applications we have,
+
+1191
+01:40:17,332 --> 01:40:19,332
+for example, linearization and differentials.
+
+1192
+01:40:19,332 --> 01:40:21,332
+Linearization means
+
+1193
+01:40:21,332 --> 01:40:25,332
+we use the linearization
+
+1194
+01:40:25,332 --> 01:40:27,332
+to make a function
+
+1195
+01:40:27,332 --> 01:40:29,332
+much more easier.
+
+1196
+01:40:29,332 --> 01:40:31,332
+But of course, while changing it,
+
+1197
+01:40:31,332 --> 01:40:35,332
+by making a function which is nonlinear,
+
+1198
+01:40:35,332 --> 01:40:37,332
+make it linear,
+
+1199
+01:40:37,332 --> 01:40:39,332
+linearize the function.
+
+1200
+01:40:39,332 --> 01:40:41,332
+Why do we need to linearize the function?
+
+1201
+01:40:41,332 --> 01:40:43,332
+Because sometimes we need to just get
+
+1202
+01:40:43,332 --> 01:40:45,332
+the approximate values of some
+
+1203
+01:40:45,332 --> 01:40:47,332
+expressions mathematically.
+
+1204
+01:40:47,332 --> 01:40:49,332
+And for using this,
+
+1205
+01:40:49,332 --> 01:40:51,332
+we need to just use linearization
+
+1206
+01:40:51,332 --> 01:40:53,332
+to get a standard linear approximation.
+
+1207
+01:40:53,332 --> 01:40:55,332
+Differential is in the same way as well.
+
+1208
+01:40:55,332 --> 01:40:59,332
+It's again an approximation we are using.
+
+1209
+01:40:59,332 --> 01:41:01,332
+They are so parallel to each other
+
+1210
+01:41:01,332 --> 01:41:03,332
+and the steps of the operations are so similar.
+
+1211
+01:41:03,332 --> 01:41:05,332
+You will understand in the exercises
+
+1212
+01:41:05,332 --> 01:41:07,332
+they are so similar.
+
+1213
+01:41:07,332 --> 01:41:09,332
+But the names and the techniques are different.
+
+1214
+01:41:09,332 --> 01:41:11,332
+But they have this mathematical,
+
+1215
+01:41:11,332 --> 01:41:13,332
+they have same meaning and same way of approximation
+
+1216
+01:41:13,332 --> 01:41:15,332
+to an expression in mathematics.
+
+1217
+01:41:15,332 --> 01:41:17,332
+Linearization,
+
+1218
+01:41:17,332 --> 01:41:19,332
+make a function which is nonlinear,
+
+1219
+01:41:19,332 --> 01:41:21,332
+linearize.
+
+1220
+01:41:21,332 --> 01:41:23,332
+Differential,
+
+1221
+01:41:23,332 --> 01:41:25,332
+try to measure the change of a function
+
+1222
+01:41:25,332 --> 01:41:27,332
+resulting in a move.
+
+1223
+01:41:27,332 --> 01:41:29,332
+But at the end,
+
+1224
+01:41:29,332 --> 01:41:31,332
+they are just
+
+1225
+01:41:31,332 --> 01:41:33,332
+a linearization.
+
+1226
+01:41:33,332 --> 01:41:35,332
+And then they are just
+
+1227
+01:41:35,332 --> 01:41:37,332
+a linearization.
+
+1228
+01:41:37,332 --> 01:41:39,332
+They are just
+
+1229
+01:41:39,332 --> 01:41:41,332
+aim to get the same solution
+
+1230
+01:41:41,332 --> 01:41:45,332
+and to get the same approximation as well.
+
+1231
+01:41:45,332 --> 01:41:49,332
+So start with the definition of linearization.
+
+1232
+01:41:49,332 --> 01:41:51,332
+First thing,
+
+1233
+01:41:51,332 --> 01:41:53,332
+function is not linear.
+
+1234
+01:41:53,332 --> 01:41:55,332
+So we are just making it linear.
+
+1235
+01:41:55,332 --> 01:41:59,332
+Making a function linear means linearization.
+
+1236
+01:41:59,332 --> 01:42:00,332
+Okay.
+
+1237
+01:42:00,332 --> 01:42:02,332
+And of course the function that you get
+
+1238
+01:42:02,332 --> 01:42:04,332
+is not the same as the function
+
+1239
+01:42:04,332 --> 01:42:06,332
+because you are just making it linear
+
+1240
+01:42:06,332 --> 01:42:08,332
+means you are just changing the function.
+
+1241
+01:42:08,332 --> 01:42:10,332
+You are just making the function
+
+1242
+01:42:10,332 --> 01:42:12,332
+a little bit easier
+
+1243
+01:42:12,332 --> 01:42:13,332
+by changing it.
+
+1244
+01:42:13,332 --> 01:42:15,332
+That's why the values that you get
+
+1245
+01:42:15,332 --> 01:42:17,332
+after linearization
+
+1246
+01:42:17,332 --> 01:42:19,332
+will be only an approximation,
+
+1247
+01:42:19,332 --> 01:42:21,332
+not the same values you get.
+
+1248
+01:42:21,332 --> 01:42:23,332
+you are just making it
+
+1249
+01:42:23,332 --> 01:42:24,332
+for the function of linearization.
+
+1250
+01:42:24,332 --> 01:42:25,332
+You are just making it
+
+1251
+01:42:25,332 --> 01:42:26,332
+for the function of linearization.
+
+1252
+01:42:26,332 --> 01:42:27,332
+You are just making it
+
+1253
+01:42:27,332 --> 01:42:28,332
+for the function of linearization.
+
+1254
+01:42:28,332 --> 01:42:29,332
+You are just making it
+
+1255
+01:42:29,332 --> 01:42:30,332
+for the function of linearization.
+
+1256
+01:42:30,332 --> 01:42:31,332
+You are just making it
+
+1257
+01:42:31,332 --> 01:42:32,332
+for the function of linearization.
+
+1258
+01:42:32,332 --> 01:42:33,332
+You are just making it
+
+1259
+01:42:33,332 --> 01:42:35,332
+for the function of linearization.
+
+1260
+01:42:35,332 --> 01:42:36,332
+You are just making it
+
+1261
+01:42:36,332 --> 01:42:37,332
+for the function of linearization.
+
+1262
+01:42:37,332 --> 01:42:38,332
+Yes,
+
+1263
+01:42:38,332 --> 01:42:41,332
+approximation is just what you say.
+
+1264
+01:42:41,332 --> 01:42:42,332
+And you are just making it
+
+1265
+01:42:42,332 --> 01:42:43,332
+for the function of linearization.
+
+1266
+01:42:43,332 --> 01:42:44,332
+And you are just making it
+
+1267
+01:42:44,332 --> 01:42:45,332
+for the function of linearization.
+
+1268
+01:42:45,332 --> 01:42:46,332
+And you are just making it
+
+1269
+01:42:46,332 --> 01:42:47,332
+for the function of linearization.
+
+1270
+01:42:47,332 --> 01:42:48,332
+And you are just making it
+
+1271
+01:42:48,332 --> 01:42:49,332
+for the function of linearization.
+
+1272
+01:42:49,332 --> 01:42:50,332
+And you are just making it
+
+1273
+01:42:50,332 --> 01:42:51,332
+for the function of linearization.
+
+1274
+01:42:51,332 --> 01:42:52,332
+And you are just making it
+
+1275
+01:42:52,332 --> 01:42:53,332
+for the function of linearization.
+
+1276
+01:42:45,811 --> 01:42:52,851
+[öğrenci] önemli değil. Sadece dikkat edelim. Olabilir böyle işler. Hepimiz için geçerli.
+
+1277
+01:42:56,979 --> 01:43:01,539
+Okay, linearization is used to get approximation, like your friend says.
+
+1278
+01:43:02,659 --> 01:43:09,539
+Differential is again for approximation, but next week probably we will see to talk about
+
+1279
+01:43:09,539 --> 01:43:14,579
+the differential and the main idea in differential is a little bit different, not linearizing a
+
+1280
+01:43:14,579 --> 01:43:23,379
+function. Differential is a change to measure a change of a function with a differential,
+
+1281
+01:43:23,379 --> 01:43:28,659
+with a derivative because we know derivative measures the rate of a change of a function.
+
+1282
+01:43:28,659 --> 01:43:36,099
+That's why in different technique, but at the end we are just solving the same approximation.
+
+1283
+01:43:36,099 --> 01:43:42,579
+But linearization by a technique, a different technique, we have a non-linear function,
+
+1284
+01:43:42,579 --> 01:43:48,419
+we are just making it linear. Okay, that's all. They are so similar, but the methods are different.
+
+1285
+01:43:48,419 --> 01:43:54,500
+Okay, at the end you get the same result, same way of approximation. Okay, with same errors you get
+
+1286
+01:43:54,500 --> 01:44:01,219
+the number. Okay, I will just give the definition of linearization and then we will be okay.
+
+1287
+01:44:01,779 --> 01:44:07,459
+It says if f is a differentiable function at x is a, then the approximating function,
+
+1288
+01:44:07,459 --> 01:44:13,779
+approximating function, be careful, that means not the same function, just the similar function.
+
+1289
+01:44:13,779 --> 01:44:19,619
+That's why it's approximating function. L x, now this is the new function which is linear,
+
+1290
+01:44:19,619 --> 01:44:28,259
+that's why it's called with L, not denoted with L. F a plus f prime of a x minus a. Okay,
+
+1291
+01:44:29,379 --> 01:44:36,739
+is the linearization of f at a. Normally f is not the linear function, f is not linear.
+
+1292
+01:44:36,739 --> 01:44:44,179
+f is a non-linear function, but we are making it linear to get the approximation. Look, f is
+
+1293
+01:44:44,179 --> 01:44:53,779
+approximately L. In fact, L is approximately f. Ah, really? Okay, so we can just stop here and next
+
+1294
+01:44:53,779 --> 01:44:58,979
+week we will continue with linearization and differentials detailed. So it is enough for today.
+
+1295
+01:44:58,979 --> 01:45:06,419
+thank you for your participation. Yes, yes, [öğrenci]. It is like making the x square to x, but of
+
+1296
+01:45:06,419 --> 01:45:08,419
+course they will be a different function.
+
+1297
+01:45:08,419 --> 01:45:21,859
+What do you think?
+
+1298
+01:45:21,859 --> 01:45:26,659
+x küplü köklü bir şeyle çok daha değişik bir fonksiyon. Ama biz oradaki bir değeri hesaplamaya
+
+1299
+01:45:26,659 --> 01:45:31,859
+çalışıyoruz ama kare ve küplerle hesaplayamıyoruz mesela diyelim ki operasyon olarak L'le
+
+1300
+01:45:31,859 --> 01:45:38,179
+hesaplayamıyoruz. O zaman bunu linear hale getiriyoruz. O zaman da bu sadece bir yaklaşım
+
+1301
+01:45:38,179 --> 01:45:43,299
+oluyor. Yani yaklaşık hesap kullanımı. Yani x kare x küplü x'e mendir gibi şey yapmaya çalışıyor.
+
+1302
+01:45:43,299 --> 01:45:48,500
+Evet, evet. Yani ona sadece o değere yaklaşmaya çalışıyoruz. Bunlar değer nokta bazında olacak
+
+1303
+01:45:48,500 --> 01:45:54,339
+çünkü. Yani yaklaşık hesabın çok basit bir yöntemi. Anladım. Tamam hocam. Yani standart,
+
+1304
+01:45:54,339 --> 01:46:01,779
+linear yaklaşım aslında dediğimiz o. Anladım. Sağ olun hocam. Rica ederim. Görüşmek üzere.
+
+1305
+01:46:03,939 --> 01:46:11,079
+Görüşürüz hocam. Thank you. Thank you so much. Have a nice day. Thank you for your participation and see you next week.
+
+1306
+01:46:11,079 --> 01:46:13,519
+Take care of yourselves. Okey?
+
+1307
+01:46:15,519 --> 01:46:17,359
+Görüşürüz hocam. Hoşçakalın. Kendinize iyi bakın.
+
+1308
+01:46:17,379 --> 01:46:19,159
+Görüşmek üzere. Siz de kendinize çok çok iyi bakın.

@@ -1,0 +1,5383 @@
+1
+00:01:35,731 --> 00:01:38,111
+Hi everyone, can you hear me?
+
+2
+00:01:50,036 --> 00:01:51,576
+I hope you are all okay.
+
+3
+00:01:58,644 --> 00:02:01,924
+And do you want to say anything about the exam? How was your exam?
+
+4
+00:02:02,724 --> 00:02:06,804
+Second one? Did you do well? I hope.
+
+5
+00:02:21,812 --> 00:02:22,572
+Well done.
+
+6
+00:02:23,052 --> 00:02:23,352
+Okay.
+
+7
+00:02:24,451 --> 00:02:25,312
+I believe in you.
+
+8
+00:02:26,032 --> 00:02:26,432
+Always.
+
+9
+00:02:30,900 --> 00:02:36,300
+I think you were good enough to achieve in that exam, I think.
+
+10
+00:02:37,860 --> 00:02:38,980
+Yes, you're right.
+
+11
+00:02:38,980 --> 00:02:42,020
+We were at trigonometrics substitutions.
+
+12
+00:02:43,259 --> 00:02:47,379
+And from the beginning, let's look and start with a short summary.
+
+13
+00:02:47,980 --> 00:02:49,599
+And then finish this topic.
+
+14
+00:02:49,860 --> 00:02:51,560
+And then continue with the areas.
+
+15
+00:02:52,020 --> 00:02:57,180
+And then volumes of the solides of revolutions with the single integral.
+
+16
+00:03:01,108 --> 00:03:06,188
+Look, if you are okay, I'm just starting.
+
+17
+00:03:10,611 --> 00:03:16,831
+Trigonometrik substitutions are used for, again, making some integrals easier,
+
+18
+00:03:17,231 --> 00:03:20,292
+even though we don't have any trigonometric function in the equation.
+
+19
+00:03:21,331 --> 00:03:28,391
+That means in the integral, we don't have any trigonometric equation or expression, I think better.
+
+20
+00:03:29,871 --> 00:03:36,871
+But, however, these substitutions make the integration so much easier
+
+21
+00:03:36,871 --> 00:03:42,771
+and they have specific clues or specific expressions to give this substitution.
+
+22
+00:03:42,912 --> 00:03:46,812
+For example, if we have in the square root a square minus x square,
+
+23
+00:03:47,431 --> 00:03:52,211
+as you see, not the trigonometric one, but x is a sine theta makes it easier.
+
+24
+00:03:55,271 --> 00:04:01,731
+I think we did them and talked about them and say that minus pi over 2 pi over 2 is positive.
+
+25
+00:04:01,731 --> 00:04:07,132
+And so the result of the expression a square minus x square after this transformation,
+
+26
+00:04:07,912 --> 00:04:11,252
+a cosine theta on this interval because it's positive.
+
+27
+00:04:12,451 --> 00:04:17,072
+And I said that again, once we have these kinds of transformations,
+
+28
+00:04:17,072 --> 00:04:26,552
+at the end, while going back to original variables in the question x and a in terms of x,
+
+29
+00:04:26,552 --> 00:04:33,091
+you can need this right triangle to write the equation x,
+
+30
+00:04:34,351 --> 00:04:35,111
+theta to x.
+
+31
+00:04:35,591 --> 00:04:36,411
+You can need it.
+
+32
+00:04:37,012 --> 00:04:42,471
+Once we have this transformation, right angle, you can use right triangle.
+
+33
+00:04:43,672 --> 00:04:45,731
+This is for x is a sine theta.
+
+34
+00:04:46,471 --> 00:04:49,271
+For a square plus x square a tangent theta,
+
+35
+00:04:49,531 --> 00:04:52,231
+it's one theta is between minus pi over 2 pi over 2.
+
+36
+00:04:52,231 --> 00:04:56,412
+Again, this expression results positive a second theta.
+
+37
+00:04:56,812 --> 00:04:59,831
+Again, at the end, while writing the variable,
+
+38
+00:04:59,831 --> 00:05:02,372
+new variable theta in terms of the older one x,
+
+39
+00:05:02,611 --> 00:05:03,992
+you can use the right triangle.
+
+40
+00:05:10,420 --> 00:05:18,660
+Similarly, for x²-a², a²θ transformation is used easily.
+
+41
+00:05:20,100 --> 00:05:28,259
+When θ is between 0 to pi over 2, it is positive and results a times tanθ and again you can use the right angle at the end.
+
+42
+00:05:31,379 --> 00:05:32,259
+And examples.
+
+43
+00:05:37,012 --> 00:05:40,372
+a² plus x² we have in this integration.
+
+44
+00:05:42,692 --> 00:05:44,771
+Normally once you see this integration,
+
+45
+00:05:47,411 --> 00:05:51,812
+if we had for example x dx here, this integral would be easier.
+
+46
+00:05:52,531 --> 00:05:56,451
+That means the differential of the function in the denominator in the square root
+
+47
+00:05:57,812 --> 00:06:01,331
+we can make it with a normal substitution and when
+
+48
+00:06:01,331 --> 00:06:08,372
+if the transformation and the differential of it was ready here it would be easier.
+
+49
+00:06:08,932 --> 00:06:14,132
+But here only this expression we have not the differential is together with dx.
+
+50
+00:06:15,012 --> 00:06:22,292
+That's why we need to do something and specifically when it is 4 plus x² that means a² plus x²
+
+51
+00:06:22,932 --> 00:06:28,531
+gives this substitution, says that give me this substitution and I will be easier.
+
+52
+00:06:28,531 --> 00:06:33,971
+So x is 2 tanθa times tanθa is 2 here.
+
+53
+00:06:36,132 --> 00:06:47,971
+So the differential and substitute to the integration.
+
+54
+00:06:43,091 --> 00:06:47,851
+İntegration is second square theta d theta dx.
+
+55
+00:06:48,851 --> 00:06:51,812
+In the square root, it results a times second theta,
+
+56
+00:06:52,151 --> 00:06:52,971
+very needed to be.
+
+57
+00:06:54,031 --> 00:06:55,812
+And the result is second theta, you know,
+
+58
+00:06:56,351 --> 00:06:58,711
+ln second theta plus tangent theta plus c.
+
+59
+00:06:59,991 --> 00:07:03,051
+What do we have theta in terms of x?
+
+60
+00:07:04,051 --> 00:07:05,692
+Right triangle, let's use,
+
+61
+00:07:06,051 --> 00:07:09,891
+we would say tangent theta is x over 2.
+
+62
+00:07:10,491 --> 00:07:12,951
+Our substitution is, so right.
+
+63
+00:07:13,091 --> 00:07:16,291
+Think that this is theta tangent x over 2,
+
+64
+00:07:16,371 --> 00:07:17,771
+so x over 2.
+
+65
+00:07:18,491 --> 00:07:19,991
+So for the Secorian theorem,
+
+66
+00:07:20,192 --> 00:07:22,572
+we have x squared plus 1 square root.
+
+67
+00:07:23,831 --> 00:07:26,771
+We need second theta and tangent theta in terms of x.
+
+68
+00:07:27,231 --> 00:07:29,251
+So right according to this angle,
+
+69
+00:07:30,231 --> 00:07:31,231
+second and tangent,
+
+70
+00:07:31,692 --> 00:07:33,371
+substitute here in terms of x,
+
+71
+00:07:33,671 --> 00:07:34,951
+and then it would be okay.
+
+72
+00:07:36,411 --> 00:07:39,471
+We know that when theta is between pi over 2,
+
+73
+00:07:39,471 --> 00:07:41,891
+0 and pi over 2, it's positive.
+
+74
+00:07:41,891 --> 00:07:42,851
+Okay.
+
+75
+00:07:44,512 --> 00:07:46,771
+And for this question, I think we did it.
+
+76
+00:07:48,671 --> 00:07:50,932
+A square minus x square means
+
+77
+00:07:50,932 --> 00:07:53,552
+sine theta transformation directly.
+
+78
+00:07:53,751 --> 00:07:54,871
+You need to just remember.
+
+79
+00:07:57,231 --> 00:07:58,552
+A is 3 here.
+
+80
+00:07:59,172 --> 00:08:00,731
+A square minus x square.
+
+81
+00:08:00,731 --> 00:08:01,731
+A is 3 here.
+
+82
+00:08:01,731 --> 00:08:16,132
+A square minus x square.
+
+83
+00:08:05,620 --> 00:08:24,899
+Here x square dx. If we had x here, it would be easier. In that case, you can give the substitution to 9 minus x square, for example, t square or t, it would be okay. But here x square we have, that's why this transformation is okay.
+
+84
+00:08:28,660 --> 00:08:34,759
+I'm just making your mind about the second ways also.
+
+85
+00:08:35,540 --> 00:08:39,960
+Okay, that's why I said that if the differential was ready here, this is not the differential of it.
+
+86
+00:08:40,500 --> 00:08:42,660
+So this way is always proper.
+
+87
+00:08:43,220 --> 00:08:50,379
+Once we have 9a²-x², always this transformation you can use even though we have x here.
+
+88
+00:08:50,379 --> 00:08:53,519
+I'm just talking about the second ways also, easier.
+
+89
+00:08:53,519 --> 00:09:06,500
+If you don't remember the trigonometric substitution, I think the first way to give the easy transformations and then make the integration much more easier.
+
+90
+00:09:09,500 --> 00:09:13,220
+Here x² is 9sin².
+
+91
+00:09:13,940 --> 00:09:16,160
+dx is 3cosθdθ.
+
+92
+00:09:17,120 --> 00:09:22,980
+9-x² results 8xcosθ, 3cosθ.
+
+93
+00:09:23,519 --> 00:09:25,600
+And so what we have on this sin².
+
+94
+00:09:26,040 --> 00:09:30,080
+1-cosθθ, 2θ over 2, easily integration.
+
+95
+00:09:31,220 --> 00:09:33,060
+Result is this in terms of θ.
+
+96
+00:09:33,879 --> 00:09:37,000
+θ, θ is arcsin x over 3.
+
+97
+00:09:38,920 --> 00:09:39,440
+Yes.
+
+98
+00:09:41,300 --> 00:09:44,940
+Sinθ and cosθ you can get from this again right triangle.
+
+99
+00:09:44,940 --> 00:09:47,320
+We first decide that.
+
+100
+00:09:47,460 --> 00:09:49,360
+Assume that sinθ is x over 3.
+
+101
+00:09:50,000 --> 00:09:50,960
+Think that this is θ.
+
+102
+00:09:51,220 --> 00:09:53,100
+So sinθ is x over 3.
+
+103
+00:09:53,580 --> 00:09:56,639
+So this length is in the square root 9 minus x².
+
+104
+00:09:57,340 --> 00:09:58,900
+We need sin times cosine.
+
+105
+00:09:59,160 --> 00:09:59,860
+Sin is okay.
+
+106
+00:10:00,420 --> 00:10:03,320
+Cosine θ we can evaluate from this triangle.
+
+107
+00:10:03,320 --> 00:10:09,700
+And it's okay at the end in terms of x and the arbitrary constant c as the result of this integral.
+
+108
+00:10:12,600 --> 00:10:14,060
+Any question up to now?
+
+109
+00:10:14,180 --> 00:10:14,759
+Are you okay?
+
+110
+00:10:14,759 --> 00:10:33,139
+Okay.
+
+111
+00:10:25,460 --> 00:10:38,379
+Okay, so nice. Let's continue with the next one. Did we do it? Do you remember? Okay, so let's do it. In a few minutes, I think you will be okay. I'm waiting for you.
+
+112
+00:10:41,180 --> 00:10:42,400
+Let's work a little bit.
+
+113
+00:11:31,635 --> 00:11:32,635
+ok?
+
+114
+00:12:26,772 --> 00:12:29,752
+The result is in terms of second and tangent.
+
+115
+00:12:33,072 --> 00:12:33,912
+I'm sorry.
+
+116
+00:12:36,972 --> 00:12:38,072
+Thank you so much.
+
+117
+00:12:44,467 --> 00:12:44,967
+Thank you.
+
+118
+00:13:18,995 --> 00:13:21,216
+What about the solution? Have you done?
+
+119
+00:13:30,707 --> 00:13:32,707
+Şöyle, see the solution together.
+
+120
+00:13:40,467 --> 00:13:41,668
+Okay, let's see.
+
+121
+00:13:43,707 --> 00:13:48,367
+Second theta, of course, the transformation that we need, 5x.
+
+122
+00:13:49,147 --> 00:13:52,548
+We may have as a coefficient in x, no problem.
+
+123
+00:13:53,707 --> 00:13:57,048
+Just think, square root of it, 5x.
+
+124
+00:13:57,827 --> 00:14:01,067
+And for a, again, for 4, a is 2.
+
+125
+00:14:02,067 --> 00:14:04,168
+So 5x is 2 second theta.
+
+126
+00:14:05,327 --> 00:14:08,967
+5 dx, 2 second theta, tangent theta, d theta, derivative of it.
+
+127
+00:14:08,967 --> 00:14:11,647
+Right in the integration.
+
+128
+00:14:13,168 --> 00:14:14,187
+And we will have,
+
+129
+00:14:15,987 --> 00:14:21,028
+Just substitute, dx is 2 over 5 second theta, tangent theta, d theta.
+
+130
+00:14:21,247 --> 00:14:26,747
+In the square root, 5x is 2 second squared, so 4 second squared minus 4.
+
+131
+00:14:27,267 --> 00:14:32,847
+So, 4 times second squared minus 1 tangent squared, so 2 tangent theta.
+
+132
+00:14:33,227 --> 00:14:33,447
+Okay.
+
+133
+00:14:34,487 --> 00:14:36,827
+Again, we assume that it is less than pi over 2.
+
+134
+00:14:38,967 --> 00:14:40,048
+That means positive.
+
+135
+00:14:40,048 --> 00:14:42,647
+So, what we have left?
+
+136
+00:14:42,647 --> 00:14:44,467
+Constellations we have easier.
+
+137
+00:14:44,467 --> 00:14:45,727
+Only second theta you get.
+
+138
+00:14:45,727 --> 00:14:49,947
+So, ln second theta plus tangent theta plus tangent theta plus c.
+
+139
+00:14:49,947 --> 00:14:50,487
+That's all.
+
+140
+00:14:50,827 --> 00:14:51,387
+This integral.
+
+141
+00:14:51,387 --> 00:14:55,247
+And so, you need a second and tangent.
+
+142
+00:14:55,247 --> 00:14:56,587
+Second is ready.
+
+143
+00:14:56,587 --> 00:14:57,707
+5x over 2.
+
+144
+00:14:57,707 --> 00:15:01,847
+And tangent theta, you can write from the right triangle.
+
+145
+00:15:01,847 --> 00:15:06,987
+Easily in the square root of 25x squared minus 4 over 2.
+
+146
+00:15:06,987 --> 00:15:36,967
+plus c is the result.
+
+147
+00:15:15,187 --> 00:15:16,788
+I think it was an easy example.
+
+148
+00:15:24,275 --> 00:15:26,275
+Any question with it?
+
+149
+00:16:11,251 --> 00:16:16,351
+Transformation? [öğrenci], are you asking about? Okay, let's see.
+
+150
+00:16:19,988 --> 00:16:31,428
+4 sekund, yes, that's x is a sekund, türev, between 0 and pi over 2, we have the positive a tangent türev, and that's all, I think.
+
+151
+00:16:34,128 --> 00:16:34,608
+Okay.
+
+152
+00:16:39,091 --> 00:16:47,891
+What about this? 5 minus x square, which transformation? a square minus x square. And the first one, what was it?
+
+153
+00:16:55,220 --> 00:17:05,900
+sin, I think so. Let's think. x is in the square root 5, a is square root 5, sin theta, which makes this integration much more easier.
+
+154
+00:17:07,259 --> 00:17:08,680
+Let's solve it. It's easy.
+
+155
+00:19:28,723 --> 00:19:30,323
+Have you done? It's easy.
+
+156
+00:19:35,124 --> 00:19:36,004
+Koton Tuget?
+
+157
+00:19:48,051 --> 00:19:50,051
+Bu ne? Bu ne? Bu ne?
+
+158
+00:19:50,051 --> 00:20:08,051
+Bu ne?
+
+159
+00:20:15,700 --> 00:20:21,700
+Bu bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe. Bu yüzden biraz sorumlu.
+
+160
+00:20:30,867 --> 00:20:32,867
+What about others?
+
+161
+00:20:32,867 --> 00:20:34,867
+What are you doing?
+
+162
+00:20:49,460 --> 00:20:51,460
+You have to be careful. Look.
+
+163
+00:20:54,900 --> 00:20:57,060
+x square root 5 sin theta.
+
+164
+00:20:58,440 --> 00:21:01,560
+Differential, square root 5 cos theta d theta.
+
+165
+00:21:05,364 --> 00:21:13,384
+So it results square root 5, cosin teta d teta over 5 outside, but 3 over 2.
+
+166
+00:21:14,203 --> 00:21:18,284
+So 5 square root 5, cosin square 3 over 2.
+
+167
+00:21:19,044 --> 00:21:26,024
+Third root of cosin teta, but another cosin teta is here, so they will be cancelled and get cosin square, which is second square.
+
+168
+00:21:26,963 --> 00:21:29,483
+And it's the derivative of tangent teta. That's all.
+
+169
+00:21:30,144 --> 00:21:33,524
+And tangent teta you can easily write from this right triangle.
+
+170
+00:22:05,748 --> 00:22:08,228
+Now, are you okay? Shall we continue?
+
+171
+00:22:16,180 --> 00:22:16,560
+ok.
+
+172
+00:22:20,500 --> 00:22:22,579
+in the next question. Let's look.
+
+173
+00:22:24,819 --> 00:22:29,539
+What to do here? 1 plus 9x square-ish transformation we need.
+
+174
+00:22:33,395 --> 00:22:37,195
+Evet, I think so, tanjant. Let's apply. It's easy. Again.
+
+175
+00:25:13,748 --> 00:25:18,708
+Here the transformation is tangent x and a is 1 as you see.
+
+176
+00:25:22,148 --> 00:25:27,748
+But 3x is 1 times tangent theta. You need to just use.
+
+177
+00:25:45,428 --> 00:25:49,448
+You must be finished now because the integration is easier.
+
+178
+00:25:55,188 --> 00:26:02,728
+Okay, well done. What did you get? You can write in terms of theta or x.
+
+179
+00:26:06,708 --> 00:26:08,708
+ve diğerlerle?
+
+180
+00:26:32,819 --> 00:26:33,460
+No one?
+
+181
+00:26:41,619 --> 00:26:43,619
+1 over 3
+
+182
+00:26:43,619 --> 00:26:45,619
+Sin 2 teta over 4
+
+183
+00:26:45,619 --> 00:26:47,619
+Plus teta over 2
+
+184
+00:26:58,451 --> 00:26:59,132
+Let's see.
+
+185
+00:27:00,471 --> 00:27:00,951
+Thank you.
+
+186
+00:27:03,051 --> 00:27:03,551
+Look.
+
+187
+00:27:05,852 --> 00:27:07,231
+3x is tangent theta.
+
+188
+00:27:07,531 --> 00:27:07,771
+Yes.
+
+189
+00:27:08,612 --> 00:27:09,211
+3x.
+
+190
+00:27:09,912 --> 00:27:10,832
+And a is 1.
+
+191
+00:27:11,612 --> 00:27:12,491
+Tangent theta.
+
+192
+00:27:12,672 --> 00:27:14,951
+So 3 dx second square theta d theta.
+
+193
+00:27:15,672 --> 00:27:17,332
+Substitute the integration.
+
+194
+00:27:17,932 --> 00:27:21,231
+dx is 1 over 3 second square theta d theta.
+
+195
+00:27:21,231 --> 00:27:24,231
+Over 1 plus 9x square.
+
+196
+00:27:25,251 --> 00:27:28,271
+1 plus tangent square theta all square.
+
+197
+00:27:28,451 --> 00:27:29,892
+This is second square.
+
+198
+00:27:30,051 --> 00:27:31,031
+So second to 4.
+
+199
+00:27:31,731 --> 00:27:32,672
+Here in the numerator.
+
+200
+00:27:33,152 --> 00:27:34,791
+Second power of second square.
+
+201
+00:27:35,071 --> 00:27:36,372
+So 1 over second square.
+
+202
+00:27:36,511 --> 00:27:38,072
+Which means cosine square theta.
+
+203
+00:27:38,491 --> 00:27:39,892
+We know what to do here.
+
+204
+00:27:40,412 --> 00:27:42,311
+1 plus cosine 2 theta over 2.
+
+205
+00:27:42,832 --> 00:27:44,291
+So 1 over 6 times.
+
+206
+00:27:45,451 --> 00:27:47,771
+1 plus cosine 2 theta in the integration.
+
+207
+00:27:48,392 --> 00:27:52,632
+The integration is theta plus 1 over 2 sine 2 theta plus d.
+
+208
+00:27:54,951 --> 00:27:56,112
+This is the result.
+
+209
+00:27:56,112 --> 00:27:58,791
+And in terms of x.
+
+210
+00:27:59,791 --> 00:28:01,251
+Write this triangle.
+
+211
+00:28:02,811 --> 00:28:03,332
+Theta.
+
+212
+00:28:04,072 --> 00:28:04,932
+Tangent theta.
+
+213
+00:28:05,231 --> 00:28:06,392
+We assume that 3x.
+
+214
+00:28:06,451 --> 00:28:07,511
+So 3x over 2.
+
+215
+00:28:07,652 --> 00:28:07,951
+1.
+
+216
+00:28:08,172 --> 00:28:08,751
+I'm sorry.
+
+217
+00:28:08,852 --> 00:28:09,731
+3x over 1.
+
+218
+00:28:10,491 --> 00:28:12,551
+We need theta and sine theta.
+
+219
+00:28:12,692 --> 00:28:14,051
+Theta is arc tangent.
+
+220
+00:28:14,271 --> 00:28:14,692
+Of course.
+
+221
+00:28:15,392 --> 00:28:17,692
+Sine 2 theta.
+
+222
+00:28:17,692 --> 00:28:17,892
+This.
+
+223
+00:28:18,751 --> 00:28:19,211
+1.
+
+224
+00:28:19,331 --> 00:28:20,372
+Sine 2 theta over 2.
+
+225
+00:28:20,612 --> 00:28:21,511
+Sine theta times.
+
+226
+00:28:21,592 --> 00:28:22,172
+Cosine theta.
+
+227
+00:28:22,172 --> 00:28:26,811
+In terms of x from this triangle.
+
+228
+00:28:27,811 --> 00:28:28,672
+And substitute here.
+
+229
+00:28:28,751 --> 00:28:29,192
+That's all.
+
+230
+00:28:29,192 --> 00:28:30,192
+And substitute here.
+
+231
+00:28:30,192 --> 00:28:33,831
+So 3x over 2.
+
+232
+00:28:33,831 --> 00:28:40,932
+So 4x over 2.
+
+233
+00:28:40,932 --> 00:28:41,932
+So 5x over 2.
+
+234
+00:28:56,788 --> 00:29:03,988
+Evet, evet, doğru.
+
+235
+00:29:10,548 --> 00:29:23,268
+in terms of theta. Sin 2 theta over 4 times 1 over 3, and theta over 2 times 1 over 3, 1 over 6 times theta. You are okay.
+
+236
+00:29:31,059 --> 00:29:35,220
+Anyone else? Only [öğrenci] doing it?
+
+237
+00:29:40,788 --> 00:29:43,127
+Okay, thank you.
+
+238
+00:29:43,688 --> 00:29:44,448
+Anyone else?
+
+239
+00:29:55,380 --> 00:29:56,540
+Ok, so let's continue.
+
+240
+00:29:57,740 --> 00:29:59,140
+Any question about the solution?
+
+241
+00:30:12,115 --> 00:30:14,996
+So, ikutlayın ve bu next topic.
+
+242
+00:30:14,996 --> 00:30:17,115
+Bu çok önemli.
+
+243
+00:30:17,115 --> 00:30:21,036
+Tanğın x over 2'ye değiştirmek için
+
+244
+00:30:21,036 --> 00:30:23,076
+çok önemli bir transforma için
+
+245
+00:30:23,076 --> 00:30:25,036
+for integrası,
+
+246
+00:30:25,036 --> 00:30:27,036
+any function we may have.
+
+247
+00:30:27,036 --> 00:30:28,155
+Bu,
+
+248
+00:30:28,155 --> 00:30:30,796
+integrası,
+
+249
+00:30:30,796 --> 00:30:33,556
+sine ve cosin gibi
+
+250
+00:30:33,556 --> 00:30:36,996
+çok önemli bir transforma.
+
+251
+00:30:42,115 --> 00:30:46,115
+Bu, çünkü 6th title
+
+252
+00:30:46,115 --> 00:30:50,115
+about the techniques of integration.
+
+253
+00:30:50,115 --> 00:30:51,115
+İnteklisi,
+
+254
+00:30:51,115 --> 00:30:53,115
+birçok birçok,
+
+255
+00:30:53,115 --> 00:31:03,115
+İnteklisi,
+
+256
+00:31:03,115 --> 00:31:05,115
+ve 6th one,
+
+257
+00:31:05,115 --> 00:31:08,115
+tanğın x over 2'ye değiştirmek için
+
+258
+00:31:08,115 --> 00:31:09,115
+birçok,
+
+259
+00:31:09,115 --> 00:31:10,115
+bu,
+
+260
+00:31:10,115 --> 00:31:12,115
+6th title,
+
+261
+00:31:12,115 --> 00:31:15,115
+ve bu tekniklerine
+
+262
+00:31:15,115 --> 00:32:07,115
+birçok,
+
+263
+00:32:07,115 --> 00:32:09,115
+u² du.
+
+264
+00:32:09,115 --> 00:32:11,115
+This is the first step differential.
+
+265
+00:32:11,115 --> 00:32:14,115
+What about sin and cosine in terms of u?
+
+266
+00:32:14,115 --> 00:32:16,115
+It's written trigonometrical.
+
+267
+00:32:16,115 --> 00:32:18,115
+And also x over 2.
+
+268
+00:32:18,115 --> 00:32:21,115
+And what is sin x?
+
+269
+00:32:21,115 --> 00:32:23,115
+Half angle rules.
+
+270
+00:32:23,115 --> 00:32:27,115
+2 sin x over 2 cos x over 2.
+
+271
+00:32:27,115 --> 00:32:29,115
+Sin x over 2,
+
+272
+00:32:29,115 --> 00:32:32,115
+from this right triangle we are writing,
+
+273
+00:32:32,115 --> 00:32:33,115
+that this is x over 2.
+
+274
+00:32:33,115 --> 00:32:37,115
+And tangent of it is u over 1.
+
+275
+00:32:37,115 --> 00:32:40,115
+So this is u square plus 1 in the square root.
+
+276
+00:32:40,115 --> 00:32:42,115
+So sin x over 2,
+
+277
+00:32:42,115 --> 00:32:45,115
+u over square root u square plus 1.
+
+278
+00:32:45,115 --> 00:32:47,115
+Cosine x over 2,
+
+279
+00:32:47,115 --> 00:32:50,115
+1 over in the square root u square plus 1.
+
+280
+00:32:50,115 --> 00:32:52,115
+And it has a multiple 2.
+
+281
+00:32:52,115 --> 00:32:56,115
+so 2 u over u square plus 1 is sin x,
+
+282
+00:32:56,115 --> 00:32:58,115
+given an integral.
+
+283
+00:32:58,115 --> 00:33:00,115
+Cosine x is,
+
+284
+00:33:00,115 --> 00:33:02,115
+again using the half angle rule,
+
+285
+00:33:02,115 --> 00:33:07,115
+we have cosine square x over 2 minus sin square x over 2.
+
+286
+00:33:07,115 --> 00:33:09,115
+Because we have x over 2.
+
+287
+00:33:09,115 --> 00:33:10,115
+We are working on x over 2.
+
+288
+00:33:10,115 --> 00:33:13,115
+That's why we are just writing in terms of,
+
+289
+00:33:13,115 --> 00:33:14,115
+in terms of,
+
+290
+00:33:14,115 --> 00:33:16,115
+converted easily in terms of u.
+
+291
+00:33:16,115 --> 00:33:18,115
+And according to this,
+
+292
+00:33:18,115 --> 00:33:20,115
+cosine and sine we already know.
+
+293
+00:33:20,115 --> 00:33:22,115
+Just get the second powers,
+
+294
+00:33:22,115 --> 00:33:24,115
+and get the subtraction,
+
+295
+00:33:24,115 --> 00:33:28,115
+and get 1 minus u square over u square plus 1.
+
+296
+00:33:28,115 --> 00:33:31,115
+Is this cosine x.
+
+297
+00:33:31,115 --> 00:33:33,115
+For example,
+
+298
+00:33:33,115 --> 00:33:36,115
+dx over 1 plus cosine x.
+
+299
+00:33:36,115 --> 00:33:38,115
+Normally it's not an easy integral.
+
+300
+00:33:38,115 --> 00:33:42,115
+If we had sin x here,
+
+301
+00:33:42,115 --> 00:33:44,115
+or the powers of it,
+
+302
+00:33:44,115 --> 00:33:45,115
+it's okay.
+
+303
+00:33:45,115 --> 00:33:47,115
+We can give the substitution directly,
+
+304
+00:33:47,115 --> 00:33:49,115
+1 plus cosine x.
+
+305
+00:33:49,115 --> 00:33:50,115
+For example,
+
+306
+00:33:50,115 --> 00:33:52,115
+if the transformation is ready,
+
+307
+00:33:52,115 --> 00:33:53,115
+if we have the powers of it,
+
+308
+00:33:53,115 --> 00:33:56,115
+differential is important.
+
+309
+00:33:56,115 --> 00:34:00,115
+Once you cannot solve an integral directly,
+
+310
+00:34:00,115 --> 00:34:03,115
+first idea always substitution.
+
+311
+00:34:03,115 --> 00:34:05,115
+But a proper substitution you need to use.
+
+312
+00:34:05,115 --> 00:34:07,115
+If the integration becomes much more detailed,
+
+313
+00:34:07,115 --> 00:34:09,115
+it doesn't work.
+
+314
+00:34:09,115 --> 00:34:10,115
+If the integration becomes much more detailed,
+
+315
+00:34:10,115 --> 00:34:11,115
+it doesn't work.
+
+316
+00:34:11,115 --> 00:34:12,115
+If the integration becomes much more detailed,
+
+317
+00:34:12,115 --> 00:34:13,115
+it doesn't work.
+
+318
+00:34:13,115 --> 00:34:14,115
+If the integration becomes much more detailed,
+
+319
+00:34:14,115 --> 00:34:15,115
+it doesn't work.
+
+320
+00:34:15,115 --> 00:34:16,115
+If the integration becomes much more detailed,
+
+321
+00:34:16,115 --> 00:34:17,115
+it doesn't work.
+
+322
+00:34:17,115 --> 00:34:18,115
+If the integration becomes much more detailed,
+
+323
+00:34:18,115 --> 00:34:19,115
+it doesn't work.
+
+324
+00:34:19,115 --> 00:34:20,115
+If the integration becomes much more detailed,
+
+325
+00:34:20,115 --> 00:34:21,115
+it doesn't work.
+
+326
+00:34:09,684 --> 00:34:17,224
+In that case, you have to first think, which substitution works here? Is it a specific integral or not?
+
+327
+00:34:18,004 --> 00:34:24,784
+It's a trigonometric integral, but it's not in the form of cosine to m times sine to n or the divisions of them.
+
+328
+00:34:24,784 --> 00:34:34,184
+No, only cosine x we have, not the differential is ready. So you can just think secondly, tangent x over 2 in that case.
+
+329
+00:35:46,947 --> 00:35:49,788
+Look, dx is 2 over 1 plus u squared du.
+
+330
+00:35:50,687 --> 00:35:55,647
+1 plus cosine x is 1 minus u squared over 1 plus u squared.
+
+331
+00:35:55,987 --> 00:35:57,367
+You need to remember that.
+
+332
+00:35:57,887 --> 00:36:00,947
+Differential of it, sine x and cosine x in terms of u.
+
+333
+00:36:00,947 --> 00:36:05,027
+And then it becomes a rational function more generally.
+
+334
+00:36:05,327 --> 00:36:05,788
+The easier.
+
+335
+00:36:06,268 --> 00:36:09,607
+That means no trigonometric function we will have left.
+
+336
+00:36:10,087 --> 00:36:11,768
+Because we are just making it.
+
+337
+00:36:12,927 --> 00:36:18,807
+Trigonometric functions into polynomials or the rational functions.
+
+338
+00:36:18,807 --> 00:36:21,248
+At the end we will have in the integration.
+
+339
+00:36:25,043 --> 00:36:42,364
+Here, do the needed operations, and as you see, denominators are same. So what we have left? Only one, as you see. It makes it so much easier. Look, this integral converts to 1 du, which means that this transformation is perfect.
+
+340
+00:36:43,583 --> 00:36:54,583
+In case you remember the formalizations that you need. So it results u plus c. What was u? Tangent x over 2 plus c. It's okay.
+
+341
+00:37:11,635 --> 00:37:15,496
+Okay, so continue with the next one.
+
+342
+00:37:17,596 --> 00:37:23,096
+I want to do this example. You can do it. I will make you remember the formalizations.
+
+343
+00:37:23,675 --> 00:37:29,896
+First, write the integral. Note it down. dx over 1 minus sine x plus cosine x.
+
+344
+00:37:38,771 --> 00:37:45,731
+And then I will inform you about the transformation. Look. Yes.
+
+345
+00:37:48,052 --> 00:37:56,771
+What do you need? dx. dx is, you can note them down, 2 over 1 plus u squared du.
+
+346
+00:37:57,731 --> 00:38:07,172
+sin x is 2u over u squared plus 1. cos x is 1 minus u squared over u squared plus 1.
+
+347
+00:38:37,780 --> 00:38:44,300
+1 over u2 minus u. Let's see in the exact exercise. Ha, look.
+
+348
+00:38:49,907 --> 00:38:59,987
+It becomes a very easy integral, [öğrenci]. 1 over? No, it's not. Don't forget to write a differential.
+
+349
+00:39:01,728 --> 00:39:18,927
+I think there is a problem about the transformation of u dx is 2 over 1 plus u squared du over 1 minus sin x and cos x in terms of u makes it integration 1 over 1 minus du only.
+
+350
+00:39:19,907 --> 00:39:23,427
+Maybe you had a problem about the calculations.
+
+351
+00:39:30,867 --> 00:39:31,927
+Do it again, I think.
+
+352
+00:40:21,364 --> 00:40:22,744
+Are you okay? Have you done?
+
+353
+00:40:35,507 --> 00:40:38,387
+du over 1 minus du. Okay, Matem.
+
+354
+00:40:59,731 --> 00:41:05,251
+Yes, you're right. Minus ln 1 minus u plus c. Yes, you're right.
+
+355
+00:41:42,387 --> 00:42:12,387
+Bu da bir diğer bir diğer bir diğer bir diğer bir diğer bir diğer bir diğer bir diğer bir diğer bir diğer diğer bir diğer diğer bir diğer
+
+356
+00:42:12,387 --> 00:42:42,387
+So, bu siden diğer
+
+357
+00:42:42,387 --> 00:43:07,188
+So, 1 over 1 minus 1. It's a very easy integral now. Just think that this negativity, the derivative of it is minus 1. Think that minus 1 is ready here. Just multiply and divide with minus 1. You can just think. It doesn't matter. Static. You can conclude that it's minus ln 1 minus u. Okay. Differential over the function itself. Derivative over itself.
+
+358
+00:43:07,188 --> 00:43:11,177
+You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You can conclude. You
+
+359
+00:43:15,699 --> 00:43:24,279
+That means this transformation is so perfect, but you have to remember the equivalent form of sine, cosine, and dx in terms of u.
+
+360
+00:43:24,919 --> 00:43:32,819
+The rest of it has always become so much easier because it becomes a rational function and easier rational function.
+
+361
+00:43:36,467 --> 00:43:38,228
+So don't forget this transformation.
+
+362
+00:43:39,407 --> 00:43:44,527
+Once you have the fractions of sin x and cos x, just remember tangent x over 2.
+
+363
+00:43:45,367 --> 00:43:47,527
+And couldn't you get anything about?
+
+364
+00:43:49,047 --> 00:43:50,047
+Yes, of course.
+
+365
+00:43:56,916 --> 00:44:02,196
+I mean that if you have any problem about solving a trigonometric integral, just remember this transformation.
+
+366
+00:44:02,756 --> 00:44:05,556
+It's so useful for sin x and cos x.
+
+367
+00:44:25,043 --> 00:44:27,043
+Yes, what is your question? I'm waiting.
+
+368
+00:44:36,916 --> 00:44:43,076
+for all complicated integral problems, or this part, I mean, türev uygulamaları, has the unique problems.
+
+369
+00:44:45,716 --> 00:44:53,076
+Specifically for sine and cosine x, and you couldn't find any transformation more. That means it's not a
+
+370
+00:44:53,076 --> 00:45:00,676
+general form of trigonometric integral. That means powers of sine and cosine even ought, okay, you know what to do.
+
+371
+00:45:00,676 --> 00:45:10,036
+They are easier to substitute. But once you can't solve the integration of sine and cosine,
+
+372
+00:45:11,155 --> 00:45:18,436
+fractions of sine and cosine size, say, that's why in that case only tangent x over 2 you can use.
+
+373
+00:45:18,436 --> 00:45:24,676
+For example, for this question, can you give any transformation to cosine x? No, it doesn't work.
+
+374
+00:45:24,676 --> 00:45:35,155
+That's why once you have a trigonometric function, including sine or cosine or cosine or cosine,
+
+375
+00:45:35,155 --> 00:45:40,836
+but you can't solve with a normal transformation of sine and cosine. In that case, you can just think that,
+
+376
+00:45:40,836 --> 00:45:42,916
+okay, tangent x over 2 I need to use.
+
+377
+00:45:45,396 --> 00:45:50,516
+In much more integrations about the trigonometric functions, it works.
+
+378
+00:45:50,516 --> 00:45:59,396
+But you need to just remember the formalizations, I think, which makes this usage of substitution harder a little bit.
+
+379
+00:45:59,396 --> 00:46:12,036
+Because it's not easy to remember three, at least three formalizations you need.
+
+380
+00:46:07,668 --> 00:46:08,168
+ok.
+
+381
+00:46:11,891 --> 00:46:41,871
+Bakın, bu neşte birçok
+
+382
+00:46:41,891 --> 00:49:01,891
+birçok
+
+383
+00:48:46,228 --> 00:48:51,847
+Like you see in this example. Why do we need to use this? Because again, I want to repeat it.
+
+384
+00:48:52,387 --> 00:48:59,407
+These parts, every part is much more easier to integrate than the original one, than the first form.
+
+385
+00:48:59,807 --> 00:49:05,728
+This form is complicated. As much as possible, try to make an integration easier.
+
+386
+00:49:06,248 --> 00:49:15,608
+If you need to cut into parts, okay, because if you have sum or subtraction of many numbers of terms in an integral,
+
+387
+00:49:15,608 --> 00:49:20,807
+you can integrate one by one. You can separate the integral. That's why it's becoming easier.
+
+388
+00:49:21,307 --> 00:49:27,688
+But in multiplication and division, we don't have such a case. That's why multiplications, for multiplication,
+
+389
+00:49:28,028 --> 00:49:33,967
+we use integration by parts, for example. For divisions, for rational functions, we are using this method
+
+390
+00:49:33,967 --> 00:49:40,387
+in order to make the integral easier. Okay, are you okay up to now? Did you get the main idea?
+
+391
+00:49:47,188 --> 00:49:49,867
+Okay. Look.
+
+392
+00:49:53,068 --> 00:50:02,228
+For example, 5x-3 over x²-2x-3 can be written in terms of factorization of denominator is important.
+
+393
+00:50:02,948 --> 00:50:12,148
+The roots of them are important. Now we will see every cases. Real roots, complex roots, no root, what happens? Let's see.
+
+394
+00:50:12,148 --> 00:50:25,708
+Here it can be factorized. Two real roots. This polynomial has x plus 1, x minus 3 are the factorization of x²-2x-3.
+
+395
+00:50:26,028 --> 00:50:32,347
+That's why once we have real roots specifically, just write a over x plus 1 plus b over x minus 3,
+
+396
+00:50:32,508 --> 00:50:38,268
+which makes the integration as a sum of easy parts of the first function.
+
+397
+00:50:38,268 --> 00:50:39,268
+Okay. And you know what to do. Okay. Okay. And you know what to do? Okay.
+
+398
+00:50:39,268 --> 00:50:44,268
+Okay. And you know what to do, I think? Just make the little operations, basic operations.
+
+399
+00:50:44,268 --> 00:50:52,268
+a times x minus 3 plus b times x plus 1 must be equal to 5x minus 3, the numerator.
+
+400
+00:50:52,268 --> 00:50:57,867
+Okay. And then we specify easily a and b. Okay.
+
+401
+00:50:57,867 --> 00:51:07,268
+Okay. First, let's see which cases we need to write the rational function p over q as a sum of proper fractions.
+
+402
+00:51:07,268 --> 00:51:12,268
+Let's see. Let's see. Degree of p, that means numerator.
+
+403
+00:51:12,268 --> 00:51:19,268
+must be less than the, less than, less than, degree of denominator.
+
+404
+00:51:19,268 --> 00:51:27,268
+If it was greater, what to do? If the degree of p is greater than q, what will you do?
+
+405
+00:51:27,268 --> 00:51:28,268
+what will you do? What will you do?
+
+406
+00:51:28,268 --> 00:51:29,268
+What will you do? If it be?
+
+407
+00:51:37,427 --> 00:51:38,527
+Do you have an idea?
+
+408
+00:51:54,516 --> 00:51:55,936
+Evet, [öğrenci].
+
+409
+00:51:57,976 --> 00:52:00,356
+Polynomial division you will use.
+
+410
+00:52:00,576 --> 00:52:01,175
+I think so.
+
+411
+00:52:01,956 --> 00:52:05,755
+If the degree of numerator is greater than q,
+
+412
+00:52:06,135 --> 00:52:07,135
+degree of q,
+
+413
+00:52:07,776 --> 00:52:10,296
+just polynomial division
+
+414
+00:52:10,296 --> 00:52:12,715
+and then part by part integrate again.
+
+415
+00:52:13,195 --> 00:52:16,296
+But if the degree of p less than the degree of q,
+
+416
+00:52:17,036 --> 00:52:18,776
+that means if it is possible,
+
+417
+00:52:18,776 --> 00:52:21,096
+use the method of purple fractions.
+
+418
+00:52:21,096 --> 00:52:27,036
+As you see, if not polynomial division is used,
+
+419
+00:52:28,356 --> 00:52:30,215
+factors of q must be known.
+
+420
+00:52:30,635 --> 00:52:31,715
+Yes, of course.
+
+421
+00:52:32,215 --> 00:52:34,175
+Factorization of it must be possible
+
+422
+00:52:34,175 --> 00:52:37,076
+to make a decomposition, of course.
+
+423
+00:52:39,276 --> 00:52:40,096
+Let's see.
+
+424
+00:52:41,556 --> 00:52:45,576
+How can we get the purple fraction method?
+
+425
+00:52:46,096 --> 00:52:48,016
+Purple fraction decomposition.
+
+426
+00:52:48,576 --> 00:52:49,476
+How can we apply?
+
+427
+00:52:49,476 --> 00:52:50,036
+Let's see.
+
+428
+00:52:51,096 --> 00:52:55,276
+Let x minus r be a linear factor.
+
+429
+00:52:55,715 --> 00:52:58,956
+Factor of denominator of original one.
+
+430
+00:52:59,436 --> 00:53:00,695
+First degree, it means,
+
+431
+00:53:01,596 --> 00:53:02,235
+of q.
+
+432
+00:53:02,615 --> 00:53:03,496
+But one of them.
+
+433
+00:53:03,876 --> 00:53:08,235
+Think that it has lots of different factors.
+
+434
+00:53:08,816 --> 00:53:10,936
+If one of them is x minus r,
+
+435
+00:53:11,195 --> 00:53:13,536
+a linear factor, that means of the first degree,
+
+436
+00:53:13,536 --> 00:53:21,215
+then x minus r to m be the greatest power of x minus r,
+
+437
+00:53:21,215 --> 00:53:22,836
+which divides qx,
+
+438
+00:53:22,836 --> 00:53:27,996
+then the sum of m numbers of proper fraction
+
+439
+00:53:27,996 --> 00:53:30,195
+is used for this factor.
+
+440
+00:53:31,876 --> 00:53:34,356
+For x minus r to m.
+
+441
+00:53:34,356 --> 00:53:37,476
+If it was the greatest one,
+
+442
+00:53:37,476 --> 00:53:41,816
+you will just start with the first degree,
+
+443
+00:53:42,036 --> 00:53:42,856
+second degree,
+
+444
+00:53:43,056 --> 00:53:43,695
+third degree,
+
+445
+00:53:43,856 --> 00:53:46,876
+up to m degree of the factor.
+
+446
+00:53:46,876 --> 00:53:47,536
+Okay.
+
+447
+00:53:47,536 --> 00:54:08,496
+Don't forget.
+
+448
+00:53:53,588 --> 00:53:58,988
+This procedure is repeated for each distinct linear factors of qx.
+
+449
+00:53:59,648 --> 00:54:06,807
+Each distinct linear factors, every different factors we are just talking about, okay?
+
+450
+00:54:07,628 --> 00:54:11,088
+That means one of them is R, the other one is S, for example.
+
+451
+00:54:11,088 --> 00:54:18,688
+For different factors, we just apply one by one, separately, we just apply.
+
+452
+00:54:22,452 --> 00:54:26,292
+What if we have an irreducible quadratic form?
+
+453
+00:54:26,792 --> 00:54:28,452
+X squared plus QX plus Q.
+
+454
+00:54:28,532 --> 00:54:31,332
+Irreducible means we cannot factorize it.
+
+455
+00:54:32,492 --> 00:54:34,512
+It doesn't have the real roots, okay?
+
+456
+00:54:35,832 --> 00:54:37,352
+Quadratic means second degree.
+
+457
+00:54:39,572 --> 00:54:42,052
+So that it's written here.
+
+458
+00:54:42,272 --> 00:54:46,132
+X squared plus QX be an irreducible quadratic factor of QX.
+
+459
+00:54:46,132 --> 00:54:50,572
+So that X squared plus QX PX plus Q has no roots.
+
+460
+00:54:50,712 --> 00:54:52,132
+That means cannot be factorized.
+
+461
+00:54:53,292 --> 00:54:59,592
+So suppose that X squared plus PX plus Q to N be the greatest power.
+
+462
+00:55:00,352 --> 00:55:05,392
+If we have the greatest powers, that means not always we have N powers,
+
+463
+00:55:05,552 --> 00:55:08,812
+AMP powers, sometimes only one, but sometimes two or three.
+
+464
+00:55:10,032 --> 00:55:12,012
+Three, I think so much it will be detailed.
+
+465
+00:55:12,012 --> 00:55:14,912
+But these are the general definitions.
+
+466
+00:55:15,132 --> 00:55:18,032
+That's why it's talking about AMP power, AMP power, okay?
+
+467
+00:55:19,212 --> 00:55:20,732
+The greatest power is important.
+
+468
+00:55:20,732 --> 00:55:26,932
+Then the sum of N numbers of proper fractions is obtained.
+
+469
+00:55:26,932 --> 00:55:37,132
+So for this root, for this factor, we use, look, B1X plus C1, X squared plus PX plus Q.
+
+470
+00:55:37,212 --> 00:55:48,132
+That means if we cannot factorize it, if it has complex roots, in the numerator, you need to just write the polynomial, not a custom number.
+
+471
+00:55:48,132 --> 00:55:53,532
+In the first one, real roots, only custom numbers, A1, A2, A2, A, M, these are the real numbers.
+
+472
+00:55:53,532 --> 00:55:56,852
+But here, polynomials, be careful.
+
+473
+00:55:57,972 --> 00:56:01,032
+For every of them, we are just writing a different polynomial.
+
+474
+00:56:01,032 --> 00:56:11,032
+So for example, 1 to N, if it is N to power of X squared plus PX plus Q, included in the factor of denominator.
+
+475
+00:56:11,032 --> 00:56:20,032
+These are general formulas about the factorization and writing the partial fractions.
+
+476
+00:56:20,032 --> 00:56:25,032
+So for example, 1 to N, if it is N to power of X squared plus Q, included in the factorization and writing the partial fractions.
+
+477
+00:56:25,844 --> 00:56:26,324
+Continue.
+
+478
+00:56:29,063 --> 00:56:32,063
+Again, this procedure is repeated for every factor of q.
+
+479
+00:56:32,884 --> 00:56:33,443
+Thirdly,
+
+480
+00:56:35,903 --> 00:56:41,284
+original rational function p over q is equal to the sum of all these purple fractions.
+
+481
+00:56:42,083 --> 00:56:44,644
+So undetermined coefficients are evaluated.
+
+482
+00:56:44,884 --> 00:56:51,523
+Undetermined coefficients are, look, a1, a2, a, m, or b1, c1, b2, c2, b, and cn.
+
+483
+00:56:51,824 --> 00:56:53,563
+These are undetermined coefficients.
+
+484
+00:56:54,344 --> 00:56:54,563
+Okay.
+
+485
+00:56:54,563 --> 00:56:57,144
+We just write the general formula.
+
+486
+00:56:58,104 --> 00:57:03,563
+And then with the basic operations, just specify the values of a1, a2, a, m, and then substitute.
+
+487
+00:57:03,884 --> 00:57:05,563
+And similarly for this case.
+
+488
+00:57:06,463 --> 00:57:06,583
+Okay.
+
+489
+00:57:08,023 --> 00:57:12,264
+If we have the factorization of denominator with only real roots,
+
+490
+00:57:12,264 --> 00:57:16,523
+that means these kinds of factors, only custom numbers.
+
+491
+00:57:16,943 --> 00:57:22,563
+If we have irreducible factors of the denominator of q, in that case,
+
+492
+00:57:22,563 --> 00:57:28,144
+for every specific these functions, we need to just write a polynomial here.
+
+493
+00:57:28,144 --> 00:57:30,923
+Don't forget, not a custom number is okay here.
+
+494
+00:57:31,503 --> 00:57:32,364
+It will be mistaken.
+
+495
+00:57:32,364 --> 00:57:36,224
+And then do the needed operations.
+
+496
+00:57:36,744 --> 00:57:38,324
+Evaluate undetermined coefficients.
+
+497
+00:57:38,983 --> 00:57:42,284
+And then separate the integral and evaluate one by one.
+
+498
+00:57:42,284 --> 00:57:43,284
+For example.
+
+499
+00:57:43,284 --> 00:57:49,284
+Ah, firstly, cover-up method is so useful.
+
+500
+00:57:49,284 --> 00:57:54,864
+But cover-up method for only real numbers, we can use it.
+
+501
+00:57:54,864 --> 00:57:59,184
+Do you remember, have you heard it before?
+
+502
+00:57:59,824 --> 00:58:04,943
+Cover-up method or heavy side method for, again, decomposition we are using?
+
+503
+00:58:04,943 --> 00:58:05,943
+And then we can use it.
+
+504
+00:58:05,943 --> 00:58:32,943
+Let's do it.
+
+505
+00:58:08,755 --> 00:58:11,556
+It can be the first time you met. No problem.
+
+506
+00:58:15,476 --> 00:59:45,476
+Bu, bu
+
+507
+00:59:45,476 --> 00:59:48,016
+And then specify a1, a2, a2, a2, a2 normally.
+
+508
+00:59:49,276 --> 00:59:55,215
+So in order to make it easier, a1 can be found by this limit.
+
+509
+00:59:55,615 --> 00:59:57,296
+Limit x is going to ri.
+
+510
+00:59:58,456 --> 01:00:00,695
+x minus ri times.
+
+511
+01:00:01,695 --> 01:00:06,556
+Look, normally you will just write p over x minus r1, r2, rn.
+
+512
+01:00:07,016 --> 01:00:10,936
+That means ri is not included here.
+
+513
+01:00:11,695 --> 01:00:15,076
+That means x minus ri will be deleted.
+
+514
+01:00:15,476 --> 01:00:15,736
+Okay.
+
+515
+01:00:16,496 --> 01:00:23,356
+Shortly to substitute x's ri in the denominator of p over q by covering the term x minus ri.
+
+516
+01:00:23,916 --> 01:00:26,175
+Covering means cover it.
+
+517
+01:00:26,436 --> 01:00:27,716
+That means don't see it.
+
+518
+01:00:28,195 --> 01:00:29,496
+Don't write the value.
+
+519
+01:00:29,496 --> 01:00:36,675
+Only cover x minus ri but put x's ri to other terms in the p over q.
+
+520
+01:00:37,936 --> 01:00:39,496
+I think you didn't understand me.
+
+521
+01:00:39,816 --> 01:00:42,175
+You will understand it in the example probably.
+
+522
+01:00:47,539 --> 01:00:48,619
+Let's see the example.
+
+523
+01:00:52,307 --> 01:00:55,228
+It looks complicated, but in fact it's so much easier.
+
+524
+01:00:56,367 --> 01:00:57,128
+Let's see.
+
+525
+01:00:59,427 --> 01:01:01,128
+For this rational function.
+
+526
+01:01:05,139 --> 01:01:09,619
+Of course, a polynomial division because it was x cubed over x squared.
+
+527
+01:01:10,059 --> 01:01:11,319
+First, a polynomial division.
+
+528
+01:01:11,559 --> 01:01:17,099
+Let's do x plus x minus 3 over x squared minus 4x plus minus 5.
+
+529
+01:01:17,639 --> 01:01:19,019
+Okay, integration is okay.
+
+530
+01:01:19,480 --> 01:01:20,119
+X is okay.
+
+531
+01:01:20,480 --> 01:01:21,359
+What about this part?
+
+532
+01:01:21,719 --> 01:01:23,859
+We just separate integration into two parts.
+
+533
+01:01:24,460 --> 01:01:26,039
+First part easily integrates.
+
+534
+01:01:26,159 --> 01:01:26,679
+Second part.
+
+535
+01:01:26,779 --> 01:01:30,059
+Second part is possible.
+
+536
+01:01:30,059 --> 01:01:33,799
+Here it's proper for use of a simple fraction method.
+
+537
+01:01:33,799 --> 01:01:39,739
+x minus 3 over x squared minus 4x minus 5.
+
+538
+01:01:40,079 --> 01:01:42,059
+This denominator, p over q, just think.
+
+539
+01:01:42,420 --> 01:01:47,279
+This denominator can be factorized at x minus 5x plus 1.
+
+540
+01:01:49,460 --> 01:01:52,940
+So since they are real roots, distinct real roots,
+
+541
+01:01:54,099 --> 01:01:59,099
+a over x minus 5 plus b over x plus 1 can be done easily.
+
+542
+01:02:00,059 --> 01:02:00,199
+Okay.
+
+543
+01:02:00,539 --> 01:02:03,019
+And in order to evaluate the values of a and b,
+
+544
+01:02:03,019 --> 01:02:05,699
+you need to do these equations.
+
+545
+01:02:07,400 --> 01:02:12,500
+A times x plus 1, b times x minus 5 is equal to x minus 3.
+
+546
+01:02:12,679 --> 01:02:16,319
+You need to write and these equations you need to solve.
+
+547
+01:02:16,739 --> 01:02:20,519
+A plus 1, a plus b is a coefficient of x is 1.
+
+548
+01:02:20,519 --> 01:02:28,799
+and a minus 5 by 5b minus must be equal to minus 3 in order to get values of a and b.
+
+549
+01:02:29,139 --> 01:02:31,480
+Two variables you have, that means two.
+
+550
+01:02:31,679 --> 01:02:34,519
+At least two equations you need in order to evaluate them.
+
+551
+01:02:36,460 --> 01:02:37,039
+Let's see.
+
+552
+01:02:37,779 --> 01:02:39,739
+By cover-up method, how can we do it?
+
+553
+01:02:39,739 --> 01:02:44,339
+Look, x minus 3 over x minus 5 times x plus 1.
+
+554
+01:02:45,559 --> 01:02:49,719
+For a, what we are using?
+
+555
+01:02:50,000 --> 01:02:50,699
+x is 5.
+
+556
+01:02:50,799 --> 01:02:51,440
+Okay, just think.
+
+557
+01:02:51,940 --> 01:02:53,859
+For a, root is 5.
+
+558
+01:02:54,579 --> 01:02:57,799
+Substitute root is 5 except x minus 5.
+
+559
+01:02:57,799 --> 01:02:58,159
+Okay.
+
+560
+01:02:58,559 --> 01:02:59,639
+Just substitute here.
+
+561
+01:03:00,639 --> 01:03:06,259
+So cover-up x minus 5 and substitute 5 to x minus 3 over x plus 1.
+
+562
+01:03:06,739 --> 01:03:08,579
+That's why it's called the cover-up method.
+
+563
+01:03:08,980 --> 01:03:09,759
+Heaviside method.
+
+564
+01:03:09,859 --> 01:03:10,019
+Okay.
+
+565
+01:03:10,420 --> 01:03:13,239
+Because if you substitute 5 here, it will be infinity.
+
+566
+01:03:13,799 --> 01:03:14,420
+That's why.
+
+567
+01:03:14,819 --> 01:03:15,500
+Just cover it.
+
+568
+01:03:15,599 --> 01:03:16,299
+Don't see it.
+
+569
+01:03:17,480 --> 01:03:18,859
+Except x minus 5.
+
+570
+01:03:18,859 --> 01:03:23,679
+Just substitute x is 5 to other expressions in p over q.
+
+571
+01:03:24,759 --> 01:03:25,859
+Now, do you understand me?
+
+572
+01:03:32,532 --> 01:03:40,892
+Cover x minus 5. So what will we have left? x minus 3 over x plus 1. So substitute x is 5 here and 1 over 3.
+
+573
+01:03:41,372 --> 01:03:49,192
+What about b? For b, the root is minus 1. Substitute minus 1 here, but accept the term x plus 1.
+
+574
+01:03:49,192 --> 01:03:57,052
+The other terms just substitute x is minus 1. Okay, x minus 3 to x minus 5, substitute x is minus 1.
+
+575
+01:03:57,211 --> 01:04:01,492
+That will be b, easily, as you see. Look, I think easier than this.
+
+576
+01:04:02,532 --> 01:04:08,692
+And this method is used for only real roots, but for complex roots, it doesn't work.
+
+577
+01:04:11,692 --> 01:04:13,692
+Do you understand the method, cover up method?
+
+578
+01:04:30,228 --> 01:04:32,648
+Çünkü bu bir integral question.
+
+579
+01:04:32,648 --> 01:04:37,748
+Çünkü, look up the original question.
+
+580
+01:04:38,387 --> 01:04:43,748
+In the integral, x squared, blah, blah, blah, over x squared minus 4x minus 5.
+
+581
+01:04:46,847 --> 01:04:48,427
+Can you integrate it directly?
+
+582
+01:04:51,827 --> 01:04:55,827
+That's why we are just using the methods.
+
+583
+01:04:55,947 --> 01:04:56,628
+What do we need?
+
+584
+01:04:56,628 --> 01:05:05,548
+First, once you have a rational function and the degree of numerator is greater than the degree of denominator,
+
+585
+01:05:05,748 --> 01:05:07,387
+first, the polynomial division.
+
+586
+01:05:08,387 --> 01:05:11,128
+As much as possible, try to make it easier.
+
+587
+01:05:11,847 --> 01:05:13,907
+And you can cut into some parts.
+
+588
+01:05:14,068 --> 01:05:18,528
+Cut into means sum or subtraction of easier parts of the integral.
+
+589
+01:05:18,668 --> 01:05:20,807
+Just try to separate them.
+
+590
+01:05:21,188 --> 01:05:25,288
+Because every part will be easier than the bigger one.
+
+591
+01:05:25,288 --> 01:05:29,708
+That's why we are just making it into parts of integral.
+
+592
+01:05:34,420 --> 01:05:42,039
+Bipolynomial division, first part, second part. First part, x² over 2. Okay, what about this part? How can you integrate it?
+
+593
+01:05:43,700 --> 01:05:58,180
+If it was, for example, look, denominator x²-4, x-5, derivative of it, 2x-4. If we have 2x-4 here, or if we can make 2x-4, you can write with ln function.
+
+594
+01:05:58,180 --> 01:06:05,820
+No, it is not possible. Can we factorize? So you have to just think. Factorize the denominator? Yes.
+
+595
+01:06:06,260 --> 01:06:14,000
+Degree of numerator less than the degree of denominator? Yes. So proper fraction method can be used here.
+
+596
+01:06:15,280 --> 01:06:25,720
+Cut into two parts. In that case, integral becomes x plus 1 over 3 times x minus 5 plus 2 over 3 times x plus 1 dx.
+
+597
+01:06:25,720 --> 01:06:32,720
+Now this is the, how can we cut into two parts. Now this is the, how can we cut the integral, the rational function into three parts.
+
+598
+01:06:32,720 --> 01:06:34,720
+Now this is the, how can we say, separated part of it. Now we cut the integral, the rational function into three parts.
+
+599
+01:06:34,720 --> 01:06:40,720
+And every part, every part, every part is easier than the original function. Of course.
+
+600
+01:06:40,720 --> 01:06:45,720
+That's why we are just making it into some parts. Or rational or polynomial, it doesn't matter.
+
+601
+01:06:45,720 --> 01:06:54,720
+Look, every part is easier to integrate. x² over 2, 1 over 3 times x plus 1 over 3 times x plus 1 over 3 times x.
+
+602
+01:06:54,720 --> 01:07:10,720
+Are you okay, tell me. Do you understand the cover-up method?
+
+603
+01:07:15,347 --> 01:07:26,547
+is it clear? okay. isn't it easier method than evaluating A and B in normal methods once we have real roots?
+
+604
+01:07:27,827 --> 01:07:32,547
+I think so. you have to use I think. but just be careful.
+
+605
+01:07:35,347 --> 01:07:47,347
+Bu ne?
+
+606
+01:07:47,347 --> 01:07:49,347
+Evet, bu ne?
+
+607
+01:07:49,347 --> 01:07:53,347
+Bir sonra bir break.
+
+608
+01:07:53,347 --> 01:07:55,347
+Bir sonra bir sonraki?
+
+609
+01:07:55,347 --> 01:07:57,347
+Bir sonraki?
+
+610
+01:08:00,596 --> 01:08:07,635
+10 minuten, 15 minuten, bir break, bir break, bir break, bu yüzden ben de beklemeye başlayacağım.
+
+611
+01:08:15,891 --> 01:08:17,931
+Okay, let's have a break for 10 minutes.
+
+612
+01:20:19,923 --> 01:20:22,104
+Hi again. Are you okay? Shall we continue?
+
+613
+01:20:43,667 --> 01:20:47,127
+Arkadaşlar öncelikle şu açıklamayı yapmak istiyorum soru üzerine.
+
+614
+01:20:49,067 --> 01:20:49,547
+Evet.
+
+615
+01:20:50,887 --> 01:20:54,927
+Evet sınavda bir problem vardı bir tane soruda bazılarınızda.
+
+616
+01:20:54,927 --> 01:20:56,667
+Şıkları çıkmıyordu sorunun.
+
+617
+01:20:57,447 --> 01:21:00,967
+Bir kısmında hal oldu bir kısmında problem çözülmedi.
+
+618
+01:21:02,207 --> 01:21:07,887
+Bununla ilgili biz gerekli mercilere hocanız olarak tüm gruplarda herkes iletti.
+
+619
+01:21:09,007 --> 01:21:11,947
+Ortak bir sonuç alındığında size haber vereceğim.
+
+620
+01:21:11,947 --> 01:21:14,688
+Şu anda ne yapılacağını biz bilmiyoruz.
+
+621
+01:21:15,567 --> 01:21:16,527
+Komisyona ilettik.
+
+622
+01:21:17,268 --> 01:21:18,007
+Bölüme ilettik.
+
+623
+01:21:18,887 --> 01:21:21,787
+Tabii ki sizin mağdur olmayacağınız bir çözüm bulunacaktır.
+
+624
+01:21:21,787 --> 01:21:23,607
+Çünkü bu sizinle ilgili bir durum değil.
+
+625
+01:21:23,707 --> 01:21:24,707
+Sistemsel bir sıkıntı.
+
+626
+01:21:24,768 --> 01:21:25,847
+Bizimle ilgili değil aslında.
+
+627
+01:21:26,787 --> 01:21:30,487
+Tamamen sistemsel bir sıkıntı ve herkesi değil bazı kişiler oldu.
+
+628
+01:21:30,607 --> 01:21:33,907
+Yani bazı kişilerde yaşandı bu.
+
+629
+01:21:34,587 --> 01:21:37,287
+Kimisinin düzeltinde o anda müdahale edildi zaten.
+
+630
+01:21:37,287 --> 01:21:43,907
+Bu yüzden sınavda problem yaşadığınızda bana hemen o anda mesaj atın.
+
+631
+01:21:44,027 --> 01:21:45,047
+Hemen o anda mail atın.
+
+632
+01:21:45,827 --> 01:21:48,947
+Sonrasında çoğu maili sınavdan sonra aldım ben.
+
+633
+01:21:49,268 --> 01:21:51,327
+Böyle böyle bir problem yaşadık haberiniz olsun diye.
+
+634
+01:21:51,768 --> 01:21:54,027
+Evet evet bir kısmınız da o anda mail attı.
+
+635
+01:21:55,627 --> 01:21:57,547
+Evet onları ben hepsini biliyorum.
+
+636
+01:21:58,587 --> 01:21:59,087
+İlettim.
+
+637
+01:21:59,567 --> 01:22:00,307
+Hepsini ilettim.
+
+638
+01:22:00,407 --> 01:22:02,667
+Bütün maillerinizi ilettim hatta bölüme.
+
+639
+01:22:02,667 --> 01:22:05,147
+Gereken yapılacaktır.
+
+640
+01:22:05,228 --> 01:22:06,527
+Hiç merak etmeyin o konu için.
+
+641
+01:22:06,647 --> 01:22:07,207
+Rahat olsun.
+
+642
+01:22:07,947 --> 01:22:08,987
+Ama tekrar söylüyorum.
+
+643
+01:22:09,127 --> 01:22:12,907
+Sınavda bir problem yaşadığınızda o anda hemen bana mail atmanızı istiyorum.
+
+644
+01:22:13,047 --> 01:22:14,527
+Ve Yahoo mailimi lütfen kullanın.
+
+645
+01:22:14,607 --> 01:22:15,367
+Yıldız mailimi değil.
+
+646
+01:22:24,275 --> 01:22:30,355
+Her zaman bu mail adresimden, bana ve iletişim kuruluyla, Yıldız mailimizi her zaman ulaşamayabiliyoruz.
+
+647
+01:22:33,315 --> 01:22:38,395
+Bütün maillerden haberim var. Hepsi iletildi, hiç merak etmeyin.
+
+648
+01:22:42,931 --> 01:22:44,532
+Ama tekrar söylemek istiyorum.
+
+649
+01:22:44,692 --> 01:22:50,051
+Bir probleminiz olduğunda hemen o anda mail atarsanız daha hızlı çözülebilir.
+
+650
+01:22:50,152 --> 01:22:51,051
+Çözülme imkanı olur.
+
+651
+01:22:51,192 --> 01:22:57,051
+Sonrasında ben yıldız maillerimi, evet her zaman bu mail adresini kullanın.
+
+652
+01:22:57,091 --> 01:22:58,891
+Yıldız maillerimi her zaman açamayabiliyorum.
+
+653
+01:22:59,831 --> 01:23:01,311
+Kota sıkıntısı var çünkü orada.
+
+654
+01:23:01,551 --> 01:23:02,271
+Çok mail geliyor.
+
+655
+01:23:03,271 --> 01:23:04,471
+Her zaman Yahoo'dan atın.
+
+656
+01:23:04,471 --> 01:23:11,091
+Ben o gün ben gerçi Yahoo mailimde de sıkıntı yaşadım ama bir kısmını iletmiştim zaten ki bu şeydi.
+
+657
+01:23:11,492 --> 01:23:12,131
+Şöyle düşünün.
+
+658
+01:23:12,131 --> 01:23:13,271
+Genel bir sıkıntı.
+
+659
+01:23:13,612 --> 01:23:15,091
+Bir sürü grupta bu problem vardı.
+
+660
+01:23:15,192 --> 01:23:17,112
+O yüzden o problem üzerine ulaşılıyordu zaten.
+
+661
+01:23:17,631 --> 01:23:19,211
+Bir kısmı düzeldi bir kısmı düzelmedi.
+
+662
+01:23:19,871 --> 01:23:20,511
+Sizde de var.
+
+663
+01:23:20,711 --> 01:23:21,731
+Yani bizim grupta da var.
+
+664
+01:23:21,831 --> 01:23:23,711
+Başka gruplarda da düzelmeyenler de var.
+
+665
+01:23:23,831 --> 01:23:27,331
+Yani o soruyu hiç işaretlemeyen öğrenciler var.
+
+666
+01:23:27,971 --> 01:23:30,091
+Onun için bir çözüm düşünülüyor şu anda.
+
+667
+01:23:31,612 --> 01:23:33,652
+Sonuçlandığında haber veririm ben size.
+
+668
+01:23:33,652 --> 01:23:36,671
+O yüzden ben o maillere sonrasında cevap dönemedim.
+
+669
+01:23:37,831 --> 01:23:41,492
+Biz net sonuçtan haberimiz olmadığı için şu anda.
+
+670
+01:23:41,492 --> 01:23:43,572
+Henüz o süreç tamamlanmadı.
+
+671
+01:23:48,916 --> 01:23:49,756
+tamam mıs?
+
+672
+01:23:53,811 --> 01:23:54,251
+Tamam.
+
+673
+01:24:00,500 --> 01:24:04,859
+Sonuçlar elimize geldiği anda da notlarınızı ilan edeceğim. Sonuç listeleri.
+
+674
+01:24:17,492 --> 01:24:25,771
+Our next question is 5x minus 3 over x squared minus 2x minus 3. Hmm. A rational function.
+
+675
+01:24:28,592 --> 01:24:40,832
+And it is proper to use the partial fractions? Yes, we can. 5x minus 3, first degree, denominator, second degree. Okay.
+
+676
+01:24:48,659 --> 01:24:54,659
+Let's factorize the denominator and use the simple fraction decomposition method and then integrate.
+
+677
+01:25:13,203 --> 01:25:15,403
+That's an easy question. Don't worry.
+
+678
+01:25:28,275 --> 01:25:31,475
+yes, belirsiz. plastiği.
+
+679
+01:25:34,931 --> 01:25:37,671
+Okay, well done. Anyone else?
+
+680
+01:25:41,524 --> 01:25:42,384
+Okay, I'm waiting.
+
+681
+01:25:47,060 --> 01:25:49,240
+You can use the cover-up method easily.
+
+682
+01:25:50,800 --> 01:25:55,140
+So, so shortly, you can solve these questions like [öğrenci].
+
+683
+01:25:58,899 --> 01:26:01,579
+Okay, Valda, ne düşünast? Anyone else?
+
+684
+01:26:15,347 --> 01:26:17,268
+Only you are listening to Matin today.
+
+685
+01:26:30,771 --> 01:26:31,771
+Afiyet olsun.
+
+686
+01:26:49,555 --> 01:26:52,895
+Ama, you are listening to me.
+
+687
+01:26:53,615 --> 01:26:56,855
+All of you must continue to listen to me carefully, I think.
+
+688
+01:26:57,515 --> 01:26:59,815
+Because the term is not finished.
+
+689
+01:27:00,995 --> 01:27:02,635
+You will have final exam.
+
+690
+01:27:03,335 --> 01:27:05,015
+And these topics are getting harder.
+
+691
+01:27:09,235 --> 01:27:13,235
+Bu, bu kadar önemli bir kursa geçirmeyi ve izleyin.
+
+692
+01:27:13,235 --> 01:27:15,235
+Böylece siz.
+
+693
+01:27:24,659 --> 01:27:32,260
+I think you don't need to get relaxed about wildlessness process.
+
+694
+01:27:33,260 --> 01:27:40,579
+I think you have to just listen to me as much as possible, as anyone, as always.
+
+695
+01:27:46,707 --> 01:27:53,707
+ve sonraki konuları
+
+696
+01:27:56,564 --> 01:27:57,624
+don't you think so?
+
+697
+01:27:59,764 --> 01:28:00,784
+am I right?
+
+698
+01:28:11,572 --> 01:28:20,271
+So, continue to listen to me carefully and attend the course, please.
+
+699
+01:28:34,868 --> 01:28:35,588
+Let's continue.
+
+700
+01:28:38,788 --> 01:28:39,748
+See the solution.
+
+701
+01:28:39,748 --> 01:28:41,988
+Like you said, it's an easy question.
+
+702
+01:28:45,347 --> 01:28:46,307
+Decomposition.
+
+703
+01:28:48,228 --> 01:28:52,708
+Fractions of denominator.
+
+704
+01:28:52,708 --> 01:28:54,628
+X minus 3, X plus 1.
+
+705
+01:28:54,628 --> 01:28:55,668
+All real roots.
+
+706
+01:28:56,868 --> 01:28:59,828
+OK, so cover up method is so proper here.
+
+707
+01:28:59,828 --> 01:29:07,347
+For A, X is 3. Substitute here in X is 3, but except X minus 3.
+
+708
+01:29:07,347 --> 01:29:10,548
+So 5 minus X over X plus 1.
+
+709
+01:29:10,548 --> 01:29:12,307
+Just write X is 3 and get 3.
+
+710
+01:29:13,188 --> 01:29:15,428
+And for B, X is minus 1.
+
+711
+01:29:15,428 --> 01:29:17,028
+The root is minus 1.
+
+712
+01:29:17,028 --> 01:29:20,468
+Substitute in P over Q, except X plus 1.
+
+713
+01:29:20,468 --> 01:29:22,708
+So 5 minus X over X minus 3.
+
+714
+01:29:22,708 --> 01:29:26,708
+Substitute X is minus 1 to get the value of B, which is 2.
+
+715
+01:29:26,708 --> 01:29:36,148
+So this function has a sum of 3 times 1 over X minus 3 plus 2 times 1 over X plus 1,
+
+716
+01:29:36,148 --> 01:29:37,988
+which is much more easier.
+
+717
+01:29:39,108 --> 01:29:40,307
+So the integrations are,
+
+718
+01:29:40,307 --> 01:29:44,388
+add an X minus 3, add an X plus 1 plus C.
+
+719
+01:29:45,828 --> 01:29:47,108
+And nice solution.
+
+720
+01:29:56,435 --> 01:29:58,435
+The question do you have?
+
+721
+01:30:02,579 --> 01:30:06,579
+Hmm, any questions after now?
+
+722
+01:30:06,579 --> 01:30:12,579
+What about this one? Hmm, second power.
+
+723
+01:30:12,579 --> 01:30:19,579
+Not distinct roots we have now, same roots, repeated roots.
+
+724
+01:30:19,579 --> 01:30:24,579
+We may call x is minus 2, but twice.
+
+725
+01:30:24,579 --> 01:30:28,579
+Two times the double root for x is minus 2.
+
+726
+01:30:28,579 --> 01:30:30,579
+What to do here?
+
+727
+01:30:30,579 --> 01:30:36,579
+As the second degree, first degree, again, decomposition you can use.
+
+728
+01:30:36,579 --> 01:30:42,579
+But while finding A and B, you have to be careful.
+
+729
+01:30:42,579 --> 01:30:45,579
+I think you know what to do from the high school.
+
+730
+01:30:45,579 --> 01:30:50,579
+Factorization and decomposition.
+
+731
+01:30:50,579 --> 01:30:54,579
+Only cover up method is new for you and integral.
+
+732
+01:30:57,171 --> 01:30:59,651
+Can you use cover-up method here? What do you think?
+
+733
+01:31:06,163 --> 01:31:13,363
+Evet, I don't think so. Evet, because the roots are the same. x plus 2x x plus 2. Evet, you're right.
+
+734
+01:31:13,363 --> 01:31:18,963
+So, no cover-up method. Normal methods, fundamental methods you can use. And do it.
+
+735
+01:31:26,387 --> 01:31:29,108
+You didn't expect the question or what?
+
+736
+01:31:29,108 --> 01:31:29,908
+At the back.
+
+737
+01:31:31,867 --> 01:31:33,148
+Is it second power?
+
+738
+01:31:33,268 --> 01:31:34,768
+That's why you say.
+
+739
+01:31:36,528 --> 01:31:36,908
+Okay.
+
+740
+01:31:37,688 --> 01:31:38,427
+Not so hard.
+
+741
+01:31:38,507 --> 01:31:38,768
+Easy.
+
+742
+01:31:38,867 --> 01:31:39,507
+You can do it.
+
+743
+01:31:53,555 --> 01:31:56,515
+2 minutes are okay, I believe in you.
+
+744
+01:32:00,675 --> 01:32:01,235
+I'm sorry.
+
+745
+01:32:03,475 --> 01:32:04,435
+How can we start?
+
+746
+01:32:04,435 --> 01:32:05,076
+I didn't get it.
+
+747
+01:32:05,795 --> 01:32:09,475
+We can start, [öğrenci], first decomposition.
+
+748
+01:32:11,155 --> 01:32:15,955
+But once we have repeated roots, that means not distinct roots,
+
+749
+01:32:15,955 --> 01:32:25,315
+we can have first condition, a over x plus 2 plus b over x plus 2 all square.
+
+750
+01:32:26,275 --> 01:32:30,595
+And then specify a and b with normal methods. Cover up method is not proper.
+
+751
+01:32:30,595 --> 01:32:32,275
+Okay, and then integrate.
+
+752
+01:32:34,355 --> 01:32:41,475
+Once we have the powers of the denominator, start from the first degree to up to which degree you have.
+
+753
+01:32:41,475 --> 01:32:47,875
+Okay, second degree that means two equations you will have.
+
+754
+01:33:55,475 --> 01:33:56,355
+let me look.
+
+755
+01:34:02,387 --> 01:34:11,207
+6 ln x plus 2 plus 5 over x plus 2 plus c. Yes, [öğrenci], you are okay. Well done.
+
+756
+01:34:18,068 --> 01:34:22,068
+[öğrenci], belki de problemiyle ilgili bir sorun var.
+
+757
+01:34:23,068 --> 01:34:28,568
+Ah, no. 3 ln x plus 2 o² means 6 ln x plus 2.
+
+758
+01:34:28,568 --> 01:34:29,028
+You're okay.
+
+759
+01:34:29,988 --> 01:34:30,908
+Ben, all of you.
+
+760
+01:34:31,588 --> 01:34:32,208
+Anyone else?
+
+761
+01:34:34,088 --> 01:34:35,588
+[öğrenci], are you okay?
+
+762
+01:34:36,448 --> 01:34:37,007
+Have you done?
+
+763
+01:34:37,288 --> 01:34:38,028
+Have you concluded?
+
+764
+01:34:38,887 --> 01:34:41,188
+Have you concluded the question?
+
+765
+01:34:43,547 --> 01:34:44,507
+No problem.
+
+766
+01:34:45,248 --> 01:34:46,148
+Let's see together.
+
+767
+01:34:47,088 --> 01:34:48,047
+You're okay, I think.
+
+768
+01:34:48,068 --> 01:34:48,168
+You're okay.
+
+769
+01:34:51,891 --> 01:35:00,391
+Once we have real roots and the double or triple or any repeated rules, repeated real roots,
+
+770
+01:35:01,051 --> 01:35:04,551
+always we are using again coefficients here, undetermined coefficients.
+
+771
+01:35:05,311 --> 01:35:12,091
+And write, start from the first degree up to nth degree, whatever you have in the question, okay?
+
+772
+01:35:12,612 --> 01:35:18,831
+Second degree, so come up to second degree of x plus 2, repeated real roots.
+
+773
+01:35:18,831 --> 01:35:21,871
+And a plus b, you will write.
+
+774
+01:35:22,251 --> 01:35:27,311
+In these cases, we can use the cover-up method for only distinct real roots.
+
+775
+01:35:27,671 --> 01:35:29,631
+That means different real roots, I'm talking.
+
+776
+01:35:30,271 --> 01:35:36,171
+For other cases, we cannot use some normal fundamental methods you can use that you already know.
+
+777
+01:35:36,671 --> 01:35:43,251
+a plus x plus 2 plus b is equal to 6x plus 7.
+
+778
+01:35:43,791 --> 01:35:46,431
+So a is 6, b is minus 5 easily.
+
+779
+01:35:46,431 --> 01:35:56,831
+That means this rational function is equal to sum of 6 times 1 over 2 minus 5 times 1 over x plus 2 all square.
+
+780
+01:35:57,271 --> 01:35:59,492
+So the integrations are okay.
+
+781
+01:35:59,492 --> 01:36:02,452
+For the first one, and then x plus 2.
+
+782
+01:36:02,452 --> 01:36:08,751
+For the second one, you can just think a transformation normally you can use.
+
+783
+01:36:08,871 --> 01:36:10,751
+Say x plus 2 is u, for example.
+
+784
+01:36:11,452 --> 01:36:14,971
+u over u square minus 1 over u square.
+
+785
+01:36:15,431 --> 01:36:18,912
+1 over u plus 5 times u.
+
+786
+01:36:19,192 --> 01:36:21,231
+That means 1 over x plus 2.
+
+787
+01:36:22,231 --> 01:36:23,871
+Easily, you can use.
+
+788
+01:36:23,871 --> 01:36:48,711
+You can use.
+
+789
+01:36:27,604 --> 01:36:29,503
+plus the, at the end.
+
+790
+01:36:29,963 --> 01:36:30,503
+Are you okay?
+
+791
+01:36:40,148 --> 01:37:07,427
+Okay. Okay, so let's continue. It was easy. What about the next one? Hmm. Look, here it has factorized. Here, denominator is factorized of the third degree, as you see. Numerator is of the first degree. Again, we can use a simple fraction decomposition. But here you have to be careful about the function.
+
+792
+01:37:07,427 --> 01:37:15,268
+x minus 1 has the real root. Okay. But here, x squared plus 1, does it have a real root?
+
+793
+01:37:19,699 --> 01:37:48,539
+It's an irreducible quadratic form. Yes, that's why it's an irreducible quadratic form. That's why you need to apply the second case. Bx plus z. For x squared plus one or ax plus b. Do it and tell me. And of course, again, like quadratic forms and like repeated roots,
+
+794
+01:37:48,539 --> 01:38:05,300
+we cannot use the cover-up method. Normal methods you will find ABC. Three undetermined coefficients you will have now. For x squared plus one, a polynomial you need to write in the numerator of the simple fraction. And the second one, only a coefficient.
+
+795
+01:38:34,292 --> 01:38:40,672
+[öğrenci], x² plus 1, plus 4, hmm.
+
+796
+01:38:44,180 --> 01:38:57,260
+Fırst term is okay, only the coefficient is problem, and for lnx minus 1 plus 1 times lnx minus 1, and additionally a third function you must have at the work from the integration.
+
+797
+01:39:08,115 --> 01:39:23,895
+Maybe you have the problem about decomposition, maybe. What did you get for x² plus 1 in the numerator? Huh, if you found your mistake, no problem. So, okay.
+
+798
+01:39:30,804 --> 01:39:42,213
+Bu, bu
+
+799
+01:40:08,435 --> 01:40:14,076
+Hmm. Uh, should we write in like, bx plus 1 or?
+
+800
+01:40:23,988 --> 01:40:26,248
+Why do you need to write bx plus 1?
+
+801
+01:40:30,368 --> 01:40:35,807
+First thing, first factor x squared plus 1, second factor x minus 1.
+
+802
+01:40:35,967 --> 01:40:40,807
+Okay, x minus 1 has the real root, so just write a or b, doesn't matter.
+
+803
+01:40:40,967 --> 01:40:47,268
+But for x squared plus 1, irreducible quadratic form, so you need to write the polynomial bx plus c, for example.
+
+804
+01:40:47,268 --> 01:40:56,108
+Or you can write ax plus b over x squared plus 1 plus c over x minus 1.
+
+805
+01:40:57,268 --> 01:40:58,248
+And then evaluate it.
+
+806
+01:40:58,748 --> 01:41:02,148
+I couldn't understand why you say bx plus 1.
+
+807
+01:41:17,716 --> 01:41:29,396
+No, no, bx plus d. Let me write. Over x square plus 1. Look. Wait.
+
+808
+01:41:34,868 --> 01:41:49,368
+like this. bx plus c, first one, if it is repeated in numbers. Here it's a one. x squared plus one, so bx plus c. Okay.
+
+809
+01:41:59,380 --> 01:42:00,739
+Let me look, [öğrenci].
+
+810
+01:42:02,960 --> 01:42:11,279
+Minus 1 over 2 ln x squared plus 1. Yes, you're right. Minus 3 arctangent x plus ln x minus 1. You're perfect. Okay. Well done.
+
+811
+01:42:43,956 --> 01:42:54,076
+Okay. I'm sorry. Because [öğrenci] was easier to me to just read. That's why I call you [öğrenci]. Okay.
+
+812
+01:42:56,636 --> 01:42:59,115
+I will say you. Hmm. Okay.
+
+813
+01:43:02,355 --> 01:43:04,115
+So I will call [öğrenci]. Okay.
+
+814
+01:43:18,003 --> 01:43:20,644
+Anyone else who guessed this result?
+
+815
+01:44:26,739 --> 01:44:27,139
+ok.
+
+816
+01:44:32,627 --> 01:44:34,627
+What about the coefficients?
+
+817
+01:44:37,876 --> 01:44:40,756
+Maybe you have the problem about the first integral.
+
+818
+01:44:44,979 --> 01:44:46,039
+mhm, ok.
+
+819
+01:45:23,444 --> 01:45:24,544
+Tabi ki ev yudan.
+
+820
+01:45:36,916 --> 01:45:37,775
+No problem.
+
+821
+01:45:40,735 --> 01:45:42,576
+Did you have the...
+
+822
+01:45:42,576 --> 01:45:44,136
+Ah, okay.
+
+823
+01:45:45,155 --> 01:45:46,275
+Maybe in the function.
+
+824
+01:45:47,496 --> 01:45:48,536
+[öğrenci], are you okay?
+
+825
+01:45:59,444 --> 01:46:00,604
+Tamam, bir problem.
+
+826
+01:46:00,684 --> 01:46:02,984
+Let's see together and learn what to do.
+
+827
+01:46:05,124 --> 01:46:08,584
+Look, I think all of you get this coefficient.
+
+828
+01:46:09,923 --> 01:46:14,224
+Ax plus b, x squared plus one, because it's an irreducible quadric form.
+
+829
+01:46:14,644 --> 01:46:22,304
+Okay, that's why a polynomial of the first degree we need to write in the numerator of x squared plus one.
+
+830
+01:46:22,704 --> 01:46:26,184
+Plus, for real roots, custom numbers only.
+
+831
+01:46:26,604 --> 01:46:29,144
+Okay, and no cover-up can be used here.
+
+832
+01:46:29,144 --> 01:46:31,044
+So just use the fundamental ways.
+
+833
+01:46:31,684 --> 01:46:38,784
+Ax plus b times x minus one, c times x squared plus one must be equal to four minus two x, the numerators.
+
+834
+01:46:39,164 --> 01:46:41,384
+Okay, blah, blah, blah.
+
+835
+01:46:42,504 --> 01:46:48,864
+Look, what we need is minus c, b is a minus two, c is four plus b.
+
+836
+01:46:49,884 --> 01:46:53,524
+Three undetermined coefficients, so three equations, of course, we need.
+
+837
+01:46:53,923 --> 01:46:58,024
+And as a result, we have b is minus three, c is one, a is minus one.
+
+838
+01:46:58,024 --> 01:47:04,324
+So the integration, this rational function in the integration becomes the sum of these
+
+839
+01:47:04,324 --> 01:47:09,764
+simple fractions.
+
+840
+01:47:10,204 --> 01:47:11,344
+What couldn't you get?
+
+841
+01:47:11,344 --> 01:47:14,624
+x plus three over x squared plus one.
+
+842
+01:47:16,364 --> 01:47:20,784
+About maybe having three undetermined coefficients.
+
+843
+01:47:21,724 --> 01:47:22,384
+Integral part.
+
+844
+01:47:22,484 --> 01:47:23,923
+Okay, I understand you.
+
+845
+01:47:23,923 --> 01:47:31,524
+So look, we have ax plus b minus x minus three over x squared plus one.
+
+846
+01:47:32,064 --> 01:47:33,084
+See what x minus b?
+
+847
+01:47:33,684 --> 01:47:34,184
+One.
+
+848
+01:47:34,664 --> 01:47:37,084
+One over x plus x minus one dx.
+
+849
+01:47:37,804 --> 01:47:38,484
+This is okay.
+
+850
+01:47:38,564 --> 01:47:39,564
+L and x minus one.
+
+851
+01:47:40,423 --> 01:47:40,944
+Easy.
+
+852
+01:47:41,824 --> 01:47:43,124
+What about this part?
+
+853
+01:47:43,124 --> 01:47:45,044
+First thing.
+
+854
+01:47:46,484 --> 01:47:50,444
+Normally, x plus three, x squared plus one.
+
+855
+01:47:53,744 --> 01:47:55,524
+Numerator, first degree.
+
+856
+01:47:55,884 --> 01:47:57,184
+Denominator, second degree.
+
+857
+01:47:57,184 --> 01:48:02,384
+If it was possible to factorize the denominator, we would continue.
+
+858
+01:48:03,224 --> 01:48:06,644
+After the decomposition, we would have this, in fact.
+
+859
+01:48:06,644 --> 01:48:11,944
+But since it is an irreducible quadratic form, we cannot factorize.
+
+860
+01:48:12,064 --> 01:48:14,764
+We cannot have the simple fraction decomposition here.
+
+861
+01:48:15,404 --> 01:48:19,764
+That's why we need to do something different in order to integrate this function.
+
+862
+01:48:20,824 --> 01:48:29,544
+Always, first thing, first idea coming to your mind must be, is the numerator derivative
+
+863
+01:48:29,544 --> 01:48:30,564
+of the denominator?
+
+864
+01:48:30,804 --> 01:48:31,244
+First thing.
+
+865
+01:48:31,424 --> 01:48:32,684
+Think of the ln function.
+
+866
+01:48:32,684 --> 01:48:40,044
+because if it was 2x, for example, 2x over x squared plus one, it would be ln x squared
+
+867
+01:48:40,044 --> 01:48:40,624
+plus one.
+
+868
+01:48:40,884 --> 01:48:42,084
+First thing, this case.
+
+869
+01:48:42,624 --> 01:48:46,804
+If it is possible to make this, yes, we can separate x and three.
+
+870
+01:48:47,484 --> 01:48:48,464
+Yes, we can do it.
+
+871
+01:48:48,924 --> 01:48:55,084
+In this case, once we have only x over x squared plus one, it is possible to make the numerator
+
+872
+01:48:55,084 --> 01:48:59,324
+the derivative of the denominator by multiplying and dividing with two.
+
+873
+01:48:59,324 --> 01:49:02,904
+2x over 2x squared plus one.
+
+874
+01:49:02,963 --> 01:49:07,264
+That means minus one over two times 2x over x squared plus one.
+
+875
+01:49:07,264 --> 01:49:10,284
+This integral becomes ln x squared plus one.
+
+876
+01:49:10,724 --> 01:49:12,564
+That's why this integral results.
+
+877
+01:49:13,064 --> 01:49:15,784
+Minus one over two ln x squared plus one.
+
+878
+01:49:15,864 --> 01:49:16,764
+It's already positive.
+
+879
+01:49:17,444 --> 01:49:20,644
+Minus three times, we have this part.
+
+880
+01:49:21,004 --> 01:49:24,624
+This part is a famous integral that we know.
+
+881
+01:49:24,624 --> 01:49:27,664
+It's arctangent x, x squared plus one.
+
+882
+01:49:27,884 --> 01:49:30,064
+A coefficient is constant here, numerator.
+
+883
+01:49:30,744 --> 01:49:33,264
+So minus three times arctangent x plus.
+
+884
+01:49:33,684 --> 01:49:36,104
+It was ln x plus one, minus one.
+
+885
+01:49:36,444 --> 01:49:38,284
+Plus c is the result.
+
+886
+01:49:38,524 --> 01:49:39,484
+Now, are you okay?
+
+887
+01:49:39,484 --> 01:49:54,604
+Okay.
+
+888
+01:49:53,587 --> 01:49:54,427
+End question.
+
+889
+01:50:04,851 --> 01:50:08,131
+If you don't have any question, this topic is okay.
+
+890
+01:50:10,391 --> 01:50:10,831
+Okay.
+
+891
+01:50:12,291 --> 01:50:14,612
+So trigonometrik substitutions are okay.
+
+892
+01:50:14,872 --> 01:50:15,431
+Okay.
+
+893
+01:50:17,431 --> 01:50:18,231
+Thank you.
+
+894
+01:50:20,372 --> 01:50:20,992
+Look.
+
+895
+01:50:36,724 --> 01:50:37,724
+wait for me
+
+896
+01:50:42,100 --> 01:50:46,539
+Yeni bir soru.
+
+897
+01:50:54,996 --> 01:50:58,996
+İnteklerinde önemli bir araya var.
+
+898
+01:50:58,996 --> 01:51:01,996
+İnteklerinde de araya var.
+
+899
+01:51:01,996 --> 01:51:04,996
+İnteklerinde tekniklerinde de araya var.
+
+900
+01:51:04,996 --> 01:54:38,996
+İnteklerinde de araya var.
+
+901
+01:54:28,948 --> 01:54:30,948
+Bu yüzden daha kolay.
+
+902
+01:54:33,588 --> 01:54:35,588
+O da diğer örnekler?
+
+903
+01:54:35,588 --> 01:54:37,588
+Ok, bir örnek.
+
+904
+01:54:40,548 --> 01:54:41,748
+Bir örnek.
+
+905
+01:54:41,748 --> 01:55:09,748
+Bu da bu örnekler?
+
+906
+01:55:09,748 --> 01:55:33,748
+Bu örnekler?
+
+907
+01:55:33,748 --> 01:55:35,748
+Evet.
+
+908
+01:55:35,748 --> 01:55:37,748
+3x minus x²?
+
+909
+01:55:37,748 --> 01:55:39,748
+Bu örnekler?
+
+910
+01:55:39,748 --> 01:55:41,748
+Evet.
+
+911
+01:55:41,748 --> 01:55:59,748
+Bu örnekler?
+
+912
+01:55:59,748 --> 01:56:01,748
+Övülete erya.
+
+913
+01:56:01,748 --> 01:56:05,748
+Bu örnekler?
+
+914
+01:56:04,083 --> 01:56:14,403
+So this area is 0 to 3, 3x minus x squared dx, since it is a positive function between 0 and 3.
+
+915
+01:56:15,304 --> 01:56:17,623
+So the result is 9 over 2.
+
+916
+01:56:32,115 --> 01:56:35,796
+What about we have other cases?
+
+917
+01:56:35,796 --> 01:56:37,315
+What can be the other cases?
+
+918
+01:56:37,315 --> 01:56:41,475
+Maybe f is not positive always in the given interval.
+
+919
+01:56:41,475 --> 01:56:42,756
+In that case, what to do?
+
+920
+01:56:43,796 --> 01:56:49,395
+Look, for evaluating the area of the region between the graph of f and x-axis,
+
+921
+01:56:49,956 --> 01:56:53,555
+if f is both positive and negative on interval a, b,
+
+922
+01:56:54,355 --> 01:56:58,756
+the subintervals are determined where the sign of f is not changed.
+
+923
+01:56:58,756 --> 01:57:03,796
+Total area is the sum of the absolutable views of definite integrals of f
+
+924
+01:57:03,796 --> 01:57:07,235
+on each interval where the sign of f is not changed.
+
+925
+01:57:07,876 --> 01:57:14,996
+That means it says that once we have a function on a given interval,
+
+926
+01:57:15,555 --> 01:57:19,956
+but in some parts of that interval function is positive,
+
+927
+01:57:19,956 --> 01:57:22,515
+in some parts the function becomes negative.
+
+928
+01:57:22,515 --> 01:57:28,195
+In that case, just specify the subintervals where the function is always positive
+
+929
+01:57:28,195 --> 01:57:29,315
+or always negative.
+
+930
+01:57:30,756 --> 01:57:34,036
+And then evaluate the integrals part by part,
+
+931
+01:57:35,235 --> 01:57:37,716
+and then get the absolute values,
+
+932
+01:57:37,716 --> 01:57:40,756
+and then some of them will be the exact value of the area
+
+933
+01:57:41,876 --> 01:57:44,836
+bounded by the graph of f and x-axis.
+
+934
+01:57:45,636 --> 01:57:51,796
+That means you need to just specify the subintervals where the function has no change in sign.
+
+935
+01:57:51,796 --> 01:57:53,235
+This is important.
+
+936
+01:57:54,195 --> 01:57:57,636
+Because once we have a positive function, integral is positive.
+
+937
+01:57:57,636 --> 01:58:00,515
+But when it's negative, integral becomes negative.
+
+938
+01:58:01,076 --> 01:58:04,996
+Specifically, if you are evaluating the area, it mustn't be negative.
+
+939
+01:58:04,996 --> 01:58:06,515
+That's why you have to be careful.
+
+940
+01:58:07,315 --> 01:58:10,595
+On that given interval, is my function always positive?
+
+941
+01:58:11,475 --> 01:58:14,355
+Maybe on some part of the interval, it becomes negative.
+
+942
+01:58:14,355 --> 01:58:22,195
+So you have to be sure and specify the subintervals where the function has no different sign.
+
+943
+01:58:22,195 --> 01:58:24,115
+Positive, positive, negative, negative.
+
+944
+01:58:24,676 --> 01:58:27,475
+And then evaluate part by part separately,
+
+945
+01:58:27,475 --> 01:58:30,676
+and then get the absolute values, and some of them will be the area.
+
+946
+01:58:33,076 --> 01:58:39,475
+So as a summary, to evaluate the area of the region between the graph of y and x-axis on AB,
+
+947
+01:58:39,475 --> 01:58:43,395
+divide AB into subintervals where f is zero.
+
+948
+01:58:44,355 --> 01:58:46,996
+Evaluate the integral of f on each subinterval.
+
+949
+01:58:47,555 --> 01:58:50,115
+Have the sum of the absolute values of integrals.
+
+950
+01:58:51,395 --> 01:58:53,796
+Because we don't need to get the negative values.
+
+951
+01:58:54,435 --> 01:58:55,636
+We mustn't have.
+
+952
+01:58:55,636 --> 01:58:58,996
+That's why just the absolute values, and then get some of them.
+
+953
+01:59:00,996 --> 01:59:02,036
+Are you okay?
+
+954
+01:59:02,036 --> 01:59:02,996
+Do you understand it?
+
+955
+01:59:22,836 --> 01:59:34,836
+So, let's see example. It says, evaluate the area of the region between the graph of f and x-axis, but between minus 1 and 2.
+
+956
+01:59:36,596 --> 01:59:42,516
+What do you think? Is this function always positive between minus 1 and 2?
+
+957
+01:59:44,275 --> 01:59:51,876
+Does it have some subintervals where the function having different signs?
+
+958
+01:59:52,836 --> 01:59:55,235
+What do you think? How can we understand it?
+
+959
+02:00:09,076 --> 02:00:12,195
+I think so. It's not always positive.
+
+960
+02:00:15,716 --> 02:00:21,796
+How can we specify the intervals? Where it is positive, where it's negative?
+
+961
+02:00:30,868 --> 02:00:32,868
+Sine table is nice.
+
+962
+02:00:32,868 --> 02:00:36,868
+And to see the sign tables or the negativity and positivity,
+
+963
+02:00:36,868 --> 02:00:40,868
+you need to specify firstly what?
+
+964
+02:00:40,868 --> 02:00:44,868
+You can say mean Turkish no problem.
+
+965
+02:00:44,868 --> 02:00:46,868
+Hmm.
+
+966
+02:00:46,868 --> 02:00:48,868
+You mean the roots.
+
+967
+02:00:48,868 --> 02:00:52,868
+First specify the roots.
+
+968
+02:00:52,868 --> 02:00:56,868
+And look what happens to the function between the roots.
+
+969
+02:00:56,868 --> 02:00:59,868
+And specifically between minus 1 and 2.
+
+970
+02:00:59,868 --> 02:01:03,868
+I think you're right. I understand you.
+
+971
+02:01:03,868 --> 02:01:04,868
+Okay.
+
+972
+02:01:04,868 --> 02:01:09,868
+And then just look on which interval it is positive,
+
+973
+02:01:09,868 --> 02:01:12,868
+on which interval it is negative, for example.
+
+974
+02:01:12,868 --> 02:01:16,868
+Evolue it separately, integral, and then get absolute values.
+
+975
+02:01:16,868 --> 02:01:23,868
+And then at the end, conclude by having the sum of absolute values.
+
+976
+02:01:23,868 --> 02:01:30,868
+Hmm.
+
+977
+02:01:30,868 --> 02:01:31,868
+Yes, you're right.
+
+978
+02:01:31,868 --> 02:01:59,868
+Hmm.
+
+979
+02:01:37,811 --> 02:01:39,311
+Evet, [öğrenci].
+
+980
+02:01:41,711 --> 02:02:10,391
+Evet, bu.
+
+981
+02:02:10,391 --> 02:02:12,391
+Bu.
+
+982
+02:02:12,391 --> 02:02:14,391
+Minus 1, 0, 2.
+
+983
+02:02:14,391 --> 02:02:16,391
+Minus 1 to 0, 0 to 2.
+
+984
+02:02:16,391 --> 02:02:18,391
+Okay.
+
+985
+02:02:18,391 --> 02:02:20,391
+Here, it's positive.
+
+986
+02:02:20,391 --> 02:02:22,391
+And here, it's negative.
+
+987
+02:02:22,391 --> 02:02:25,391
+Positive part and negative part.
+
+988
+02:02:25,391 --> 02:02:30,391
+On that interval, we are sure that the function never be positive.
+
+989
+02:02:30,391 --> 02:02:31,391
+Always negative.
+
+990
+02:02:31,391 --> 02:02:33,391
+It's important.
+
+991
+02:02:33,391 --> 02:02:35,391
+And for this part, it's always positive.
+
+992
+02:02:35,391 --> 02:02:36,391
+It's important.
+
+993
+02:02:36,391 --> 02:02:39,391
+That means important thing is not the positivity or negativity.
+
+994
+02:02:39,391 --> 02:02:42,391
+No change in sign is important.
+
+995
+02:02:42,391 --> 02:02:45,391
+If it is always positive, always positive.
+
+996
+02:02:45,391 --> 02:02:47,391
+Always negative, always negative.
+
+997
+02:02:47,391 --> 02:02:48,391
+But separate them.
+
+998
+02:02:48,391 --> 02:02:50,391
+Separate the changes of signs.
+
+999
+02:02:50,391 --> 02:02:52,391
+This is important.
+
+1000
+02:02:52,391 --> 02:02:53,391
+Okay.
+
+1001
+02:02:53,391 --> 02:02:57,391
+Because it doesn't matter where the positive, where the negative.
+
+1002
+02:02:57,391 --> 02:02:59,391
+The important thing is just differ them.
+
+1003
+02:02:59,391 --> 02:03:02,391
+Because at the end, we need to get the absolute values.
+
+1004
+02:03:02,391 --> 02:03:08,391
+If we cannot differ them, this integral will not result the exact value of the area.
+
+1005
+02:03:08,391 --> 02:03:12,391
+This is important.
+
+1006
+02:03:12,391 --> 02:03:21,391
+So, here, these subintervals, just different signs of f.
+
+1007
+02:03:21,391 --> 02:03:24,391
+It has positive, negative, or negative, positive.
+
+1008
+02:03:24,391 --> 02:03:25,391
+It doesn't matter.
+
+1009
+02:03:25,391 --> 02:03:26,391
+Just evaluate.
+
+1010
+02:03:26,391 --> 02:03:28,391
+You will see as a result of the integral.
+
+1011
+02:03:28,391 --> 02:03:30,391
+On minus 1 to 0.
+
+1012
+02:03:30,391 --> 02:03:32,391
+As you see, it results positive.
+
+1013
+02:03:32,391 --> 02:03:36,391
+That means the function is positive between minus 1 and 0.
+
+1014
+02:03:36,391 --> 02:03:38,391
+And here, 0 to 2.
+
+1015
+02:03:38,391 --> 02:03:43,391
+The function negative because the result is negative.
+
+1016
+02:03:43,391 --> 02:03:49,391
+So, as a last step, just get the absolute value of the negative ones.
+
+1017
+02:03:49,391 --> 02:03:51,391
+This is already positive.
+
+1018
+02:03:51,391 --> 02:03:53,391
+Absolute value of it is positive.
+
+1019
+02:03:53,391 --> 02:04:00,391
+And then, this is the result of the value of the area.
+
+1020
+02:04:14,003 --> 02:04:21,524
+Are you okay? We need this method for evaluating areas. Don't forget, not any integral.
+
+1021
+02:04:22,403 --> 02:04:28,884
+For any integral given, just evaluate. No problem, negative or positive. But if you are using integral
+
+1022
+02:04:29,443 --> 02:04:34,163
+to evaluate an area, you have to be careful about positivity and negativity.
+
+1023
+02:04:37,203 --> 02:04:37,524
+Okay?
+
+1024
+02:04:47,731 --> 02:04:48,492
+Any question?
+
+1025
+02:04:53,427 --> 02:04:55,427
+Ok, so let's continue.
+
+1026
+02:04:56,627 --> 02:05:03,827
+It says evaluate the area of the region between y is cosine x, x is zero, y is zero, and x is 3 pi over 2.
+
+1027
+02:05:12,275 --> 02:05:13,815
+I think you can sketch it.
+
+1028
+02:05:22,644 --> 02:05:35,923
+And also you can specify x is 0 to 3.2. Function is cosin x. You can easily specify the subintervals where cosin x is positive, where cosin x is negative.
+
+1029
+02:05:38,164 --> 02:05:48,324
+You can easily construct the subintervals, I think, about positivity and negativity. Differ the different signs of the function f.
+
+1030
+02:06:03,859 --> 02:06:21,719
+Evet, tabii ki. 0x, f'
+
+1031
+02:06:18,323 --> 02:06:19,323
+Evet, doğru.
+
+1032
+02:06:23,060 --> 02:06:26,140
+Yes, you're right, [öğrenci]. [öğrenci], I'm sorry.
+
+1033
+02:06:28,260 --> 02:06:30,539
+The result is 3, correct. [öğrenci].
+
+1034
+02:06:59,155 --> 02:07:11,536
+Well done. So, let's see it. Like you said, the function is cos x. 0 to pi over 2 is always positive.
+
+1035
+02:07:12,956 --> 02:07:22,235
+Pi over 2 to 3 pi over 2 is negative. That's why you need to just cut into two subintervals of the interval 0 to 3 pi over 2.
+
+1036
+02:07:22,735 --> 02:07:25,695
+0 to pi over 2, pi over 2 to 3 pi over 2.
+
+1037
+02:07:25,695 --> 02:07:30,195
+And integrate the function separately.
+
+1038
+02:07:31,515 --> 02:07:33,716
+Positivity and negativity must be different.
+
+1039
+02:07:34,456 --> 02:07:40,655
+And then integrate and get 1 from the positive 1, from negative 1 minus 2, get the absolute value,
+
+1040
+02:07:41,135 --> 02:07:43,135
+and the sum is the total area is 3.
+
+1041
+02:07:43,956 --> 02:07:45,076
+Like you said, thank you.
+
+1042
+02:08:02,131 --> 02:08:03,131
+So, continue.
+
+1043
+02:08:03,131 --> 02:08:07,171
+What if we have areas between curves?
+
+1044
+02:08:07,171 --> 02:08:15,991
+That means if the boundary of the region is not the x-axis, if it becomes the other curve
+
+1045
+02:08:15,991 --> 02:08:17,771
+given in the function of x.
+
+1046
+02:08:17,771 --> 02:08:22,291
+First, let's see in the first case with respect to x.
+
+1047
+02:08:22,291 --> 02:08:25,652
+And then with respect to y, we will talk about it.
+
+1048
+02:08:25,652 --> 02:08:32,551
+If f and g are continuous with f is greater than g throughout a, b, then the area of the
+
+1049
+02:08:32,551 --> 02:08:40,611
+region between the curves f and g from a to b is the integral f minus g from a to b.
+
+1050
+02:08:40,611 --> 02:08:46,152
+Of course, you can easily understand upper minus lower.
+
+1051
+02:08:46,152 --> 02:08:48,951
+That means greater one, lower one.
+
+1052
+02:08:48,951 --> 02:08:57,491
+Otherwise, it would be negative because that's why the upper one minus lower one must be
+
+1053
+02:08:57,491 --> 02:09:03,111
+written in the integral to evaluate the area between the curves of f and g.
+
+1054
+02:09:03,111 --> 02:09:07,091
+With respect to x-axis again, I want to say.
+
+1055
+02:09:07,091 --> 02:09:09,511
+On sides, we have x's a and x's b.
+
+1056
+02:09:09,511 --> 02:09:13,192
+So the integral a to b, f minus g.
+
+1057
+02:09:13,192 --> 02:09:16,831
+You may have such a case or such.
+
+1058
+02:09:16,831 --> 02:09:20,431
+They can be both positive or some of it can be negative.
+
+1059
+02:09:20,431 --> 02:09:21,152
+No problem.
+
+1060
+02:09:29,460 --> 02:09:37,659
+For example, it says find the area of the region enclosed by the parabola. y is 2 minus x squared and the line weighs minus x.
+
+1061
+02:09:40,239 --> 02:09:48,220
+Now the area, that means the region, is bounded by two different curves.
+
+1062
+02:09:49,399 --> 02:09:54,819
+One of them is parabola, 2 minus x squared, the other one is line.
+
+1063
+02:10:14,963 --> 02:10:16,443
+I think you can sketch it.
+
+1064
+02:10:22,771 --> 02:10:24,271
+2-x².
+
+1065
+02:10:25,372 --> 02:10:27,811
+The peak point is 2, kongkale down.
+
+1066
+02:10:32,243 --> 02:10:33,243
+Easy to sketch.
+
+1067
+02:10:33,243 --> 02:10:38,844
+And line is y is minus x, you know.
+
+1068
+02:10:38,844 --> 02:10:42,963
+Intersection points are important.
+
+1069
+02:10:42,963 --> 02:10:48,563
+No, at the back, it's not 3.
+
+1070
+02:10:54,452 --> 02:10:56,452
+Did you get the intersection points?
+
+1071
+02:10:56,452 --> 02:10:57,452
+Which points?
+
+1072
+02:11:02,804 --> 02:11:11,123
+You're right. Yes, these are the limits of integration at the same time. You get the subtraction, 9 over 2.
+
+1073
+02:11:13,043 --> 02:11:21,123
+It's 9 over 2. Maybe about the calculation you are making a mistake, no problem.
+
+1074
+02:11:51,155 --> 02:11:54,756
+As you see here only, boundary curves of the region is given.
+
+1075
+02:11:56,435 --> 02:12:05,796
+You can think that on which interval we need to get the substraction, we need to integrate the substraction of these equations.
+
+1076
+02:12:06,435 --> 02:12:10,916
+You can just sketch it. Sketch and see what kind of region you have.
+
+1077
+02:12:17,363 --> 02:12:22,703
+And the upper curve is parabola, of course, 2-x², and the lower one, minus x.
+
+1078
+02:12:22,743 --> 02:12:28,443
+You need to get the subtraction of them, 2-x²-x, but on which interval?
+
+1079
+02:12:30,183 --> 02:12:35,003
+In that case, you need to get the intersection points of this parabola and the line.
+
+1080
+02:12:35,763 --> 02:12:39,803
+These will be the boundaries and the limits of the integral that you need.
+
+1081
+02:12:40,703 --> 02:12:41,043
+Look.
+
+1082
+02:12:45,684 --> 02:12:50,724
+Bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola
+
+1083
+02:12:50,724 --> 02:13:20,724
+Bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parab
+
+1084
+02:13:20,724 --> 02:13:56,364
+parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu parabola ve bu par
+
+1085
+02:14:19,507 --> 02:14:28,627
+And the next question. I think you're okay. Look, it says find the area of the region between the curves,
+
+1086
+02:14:29,367 --> 02:14:33,347
+v' sin x, v' cos x, on 0 to pi.
+
+1087
+02:14:58,068 --> 02:15:00,068
+No, this is a very nice question.
+
+1088
+02:15:07,380 --> 02:15:16,980
+I advise you to sketch it. Firstly, sin x and cos x is easy to sketch between 0 and pi. And then we will talk about it.
+
+1089
+02:15:22,515 --> 02:15:25,155
+Hmm, that's the question I'm waiting.
+
+1090
+02:15:28,155 --> 02:15:30,475
+Hmm, well done.
+
+1091
+02:15:31,055 --> 02:15:32,935
+And thank you so much for this question.
+
+1092
+02:15:33,115 --> 02:15:34,155
+You're completely right.
+
+1093
+02:15:34,675 --> 02:15:37,295
+How can we know which one is upper, which one is lower?
+
+1094
+02:15:42,579 --> 02:15:45,079
+İşte bu şekilde 0 ve pi.
+
+1095
+02:15:46,399 --> 02:15:49,000
+Bu yüzden de bu şekilde yapabilirsiniz.
+
+1096
+02:15:50,079 --> 02:15:51,479
+Bu şekilde bilgi verilmiştir.
+
+1097
+02:15:51,479 --> 02:15:57,279
+Bu bilgi, sin, cos, positif ve negatif,
+
+1098
+02:15:57,279 --> 02:16:00,439
+bu şekilde 0 ve pi.
+
+1099
+02:16:00,439 --> 02:16:04,439
+Bu şekilde bilgi verilmiştir.
+
+1100
+02:16:07,439 --> 02:16:08,939
+Bu bilgi verilmiştir.
+
+1101
+02:16:09,439 --> 02:16:10,939
+Ve bu bilgi verilmiştir.
+
+1102
+02:16:10,939 --> 02:16:26,939
+Bu bilgi verilmiştir.
+
+1103
+02:16:38,739 --> 02:16:42,139
+That means you need to just specify the subintervals.
+
+1104
+02:16:43,799 --> 02:16:45,199
+Because it's changed.
+
+1105
+02:16:48,379 --> 02:16:50,639
+2²², elifnaz.
+
+1106
+02:16:51,479 --> 02:16:52,479
+2²².
+
+1107
+02:16:59,219 --> 02:17:07,939
+Have you cut into subintervals? Substitution? I'm sorry, partition of 0 to pi. Have you done?
+
+1108
+02:17:14,932 --> 02:17:20,792
+Because for this question, you cannot say that always cosine is lower or always sine is lower.
+
+1109
+02:17:21,472 --> 02:17:24,692
+That's why you need to be careful of this question.
+
+1110
+02:17:27,192 --> 02:17:27,772
+Look.
+
+1111
+02:17:32,084 --> 02:17:37,004
+That's why I advise you to sketch this figure. Look, this is cosine x.
+
+1112
+02:17:39,224 --> 02:17:40,644
+This is sine x.
+
+1113
+02:17:45,075 --> 02:17:49,735
+Bu bölümde, sin x is upper, sin x is lower.
+
+1114
+02:17:50,255 --> 02:17:56,195
+But after this angle, 2 pi, sin x is upper, sin x is lower.
+
+1115
+02:17:57,935 --> 02:17:59,655
+That's why you have to be careful.
+
+1116
+02:18:01,335 --> 02:18:02,495
+Which one is greater?
+
+1117
+02:18:03,175 --> 02:18:07,875
+If you cannot be careful about which one is greater, which one is lower,
+
+1118
+02:18:08,475 --> 02:18:09,855
+integral becomes negative.
+
+1119
+02:18:09,855 --> 02:18:11,475
+That's why you have to be careful.
+
+1120
+02:18:11,475 --> 02:18:16,475
+Because you have to just remain the function in the integral.
+
+1121
+02:18:16,835 --> 02:18:18,435
+Always positive or always negative.
+
+1122
+02:18:19,095 --> 02:18:23,875
+Here, you are just making a subtraction part between two curves.
+
+1123
+02:18:24,415 --> 02:18:29,735
+That's why you have to just make upper minus lower curve.
+
+1124
+02:18:30,155 --> 02:18:32,855
+That's why you have to just specify on that interval.
+
+1125
+02:18:33,795 --> 02:18:37,675
+Is it, for example, f is f always upper?
+
+1126
+02:18:37,675 --> 02:18:39,895
+Or is f always upper?
+
+1127
+02:18:39,895 --> 02:18:42,735
+You have to carefully specify it.
+
+1128
+02:18:45,375 --> 02:18:45,935
+Okay.
+
+1129
+02:18:46,435 --> 02:18:49,255
+So 0 to pi over 4, pi over 4 to pi.
+
+1130
+02:18:49,975 --> 02:18:51,695
+As you see, different functions.
+
+1131
+02:18:53,315 --> 02:18:56,215
+0 to pi over 4, cos x is upper.
+
+1132
+02:18:57,035 --> 02:18:59,475
+Pi over 4 to pi, sin x is upper.
+
+1133
+02:18:59,475 --> 02:19:01,475
+Okay.
+
+1134
+02:19:01,475 --> 02:19:07,315
+And so, integral, integrals must be separated.
+
+1135
+02:19:08,395 --> 02:19:09,555
+Evaluate separated.
+
+1136
+02:19:11,395 --> 02:19:16,335
+Integration, sin plus cosine, 0 to pi over 4 plus.
+
+1137
+02:19:17,615 --> 02:19:21,335
+Minus cosine, minus sine, pi over 4 to pi.
+
+1138
+02:19:21,895 --> 02:19:22,895
+Apply the limits.
+
+1139
+02:19:23,655 --> 02:19:25,595
+At the end, you will have 2 squared 2.
+
+1140
+02:19:25,595 --> 02:19:28,595
+2 to pi over 5 to pi.
+
+1141
+02:19:28,595 --> 02:19:30,575
+3 to pi over 5 to pi.
+
+1142
+02:19:30,575 --> 02:19:31,575
+4 to pi over 5 to pi.
+
+1143
+02:19:31,575 --> 02:19:35,075
+5 to pi over 5 to pi.
+
+1144
+02:19:35,075 --> 02:19:41,075
+6 to pi over 5 to pi.
+
+1145
+02:19:30,484 --> 02:19:32,484
+bu bir soru.
+
+1146
+02:19:43,860 --> 02:20:41,860
+O, x'in
+
+1147
+02:20:17,780 --> 02:20:19,760
+If you have any questions, please ask me.
+
+1148
+02:20:30,515 --> 02:20:31,015
+ok.
+
+1149
+02:20:34,451 --> 02:20:42,131
+So, I will continue with respect to y, the second case of the areas of the regions between two curves.
+
+1150
+02:20:47,156 --> 02:20:48,156
+destı.
+
+1151
+02:20:56,724 --> 02:20:58,724
+ile yi'ye göre.
+
+1152
+02:21:00,724 --> 02:21:04,724
+Eğer region's boundary curves are described by functions of y,
+
+1153
+02:21:04,724 --> 02:21:06,724
+then use the formula.
+
+1154
+02:21:06,724 --> 02:21:09,724
+Sometimes, yes, the graphs can be given in terms of y,
+
+1155
+02:21:09,724 --> 02:21:11,724
+and with respect to y, we can look.
+
+1156
+02:21:11,724 --> 02:21:14,724
+In that case, look up the region,
+
+1157
+02:21:14,724 --> 02:21:16,724
+get the projection on y axis,
+
+1158
+02:21:16,724 --> 02:21:20,724
+and specify the limits of integral.
+
+1159
+02:21:20,724 --> 02:21:23,724
+c to d
+
+1160
+02:21:23,724 --> 02:21:25,724
+f y minus g y,
+
+1161
+02:21:25,724 --> 02:21:27,724
+because with respect to y,
+
+1162
+02:21:27,724 --> 02:21:29,724
+now we are just considering.
+
+1163
+02:21:29,724 --> 02:21:33,724
+That's why right hand side always greater than the left hand side.
+
+1164
+02:21:33,724 --> 02:21:35,724
+So, with respect to y,
+
+1165
+02:21:35,724 --> 02:21:40,724
+if we are trying to evaluate the area between two different curves in terms of y,
+
+1166
+02:21:40,724 --> 02:21:41,724
+please write.
+
+1167
+02:21:41,724 --> 02:21:45,724
+Firstly, right hand side curve,
+
+1168
+02:21:45,724 --> 02:21:47,724
+subtract left hand curve.
+
+1169
+02:21:47,724 --> 02:21:52,724
+Okay, because this is the greater one than the left hand side curve, always.
+
+1170
+02:21:52,724 --> 02:21:53,724
+Always.
+
+1171
+02:21:53,724 --> 02:22:20,724
+.
+
+1172
+02:21:57,108 --> 02:22:23,788
+X'e y
+
+1173
+02:22:31,827 --> 02:22:32,847
+I think you are okay.
+
+1174
+02:22:37,075 --> 02:22:41,395
+bir de müşter, let's continue. I'm sorry, example, continue.
+
+1175
+02:22:45,139 --> 02:22:54,099
+It says evaluate area of the region between y² x, y0, yx-2, with respect to y.
+
+1176
+02:22:55,779 --> 02:23:04,680
+When the equations are given, you can make it x in terms of y, or you can make it y in terms of x, it doesn't matter, you can easily do it.
+
+1177
+02:23:06,799 --> 02:23:08,479
+It says with respect to y.
+
+1178
+02:23:20,979 --> 02:23:26,420
+y²√x is a parabola, x is y²,
+
+1179
+02:23:27,619 --> 02:23:33,539
+but one branch of the parabola because it says y²√x means y is positive.
+
+1180
+02:23:34,899 --> 02:23:37,379
+Positive part of the parabola.
+
+1181
+02:23:38,500 --> 02:23:42,020
+y is 0x-axis, y is x-2 is a line.
+
+1182
+02:23:43,619 --> 02:23:50,819
+Firstly sketch, specify the region and then look which one is greater than the other one.
+
+1183
+02:23:50,979 --> 02:23:54,020
+And then write in the formula.
+
+1184
+02:24:24,500 --> 02:24:25,700
+küçük bir keçet.
+
+1185
+02:24:33,876 --> 02:24:34,376
+ok.
+
+1186
+02:24:38,995 --> 02:24:45,995
+ve yazıları
+
+1187
+02:25:02,963 --> 02:25:04,863
+But in terms of why, don't forget.
+
+1188
+02:25:05,884 --> 02:25:07,804
+In terms of why must be written.
+
+1189
+02:25:08,263 --> 02:25:10,084
+With respect to why, because it says.
+
+1190
+02:25:15,540 --> 02:25:19,480
+y is x-2 is the right one.
+
+1191
+02:25:21,000 --> 02:25:23,600
+But in terms of y, you must be right.
+
+1192
+02:26:30,675 --> 02:26:31,395
+Are you okay?
+
+1193
+02:26:33,135 --> 02:26:33,415
+Huh.
+
+1194
+02:26:34,695 --> 02:26:36,456
+Uh, I'm sorry, but it's not.
+
+1195
+02:26:36,815 --> 02:26:38,095
+It's 10 over 3.
+
+1196
+02:26:49,108 --> 02:26:50,868
+What is your limits of integral?
+
+1197
+02:27:03,700 --> 02:27:05,140
+I said that 10 over 3.
+
+1198
+02:27:09,203 --> 02:27:11,523
+Evet.
+
+1199
+02:27:11,984 --> 02:27:12,763
+Okay, velda.
+
+1200
+02:27:25,523 --> 02:27:55,503
+x kare artı 2x, f'
+
+1201
+02:27:33,940 --> 02:27:46,640
+Look, this graph, x is y², but don't forget, y² x is given, which means that y is positive.
+
+1202
+02:27:47,700 --> 02:27:54,920
+This definition, because normally x is y², same equation, it seems, but in fact it is not.
+
+1203
+02:27:55,460 --> 02:28:02,920
+y² x means, normally y can be minus plus square root x, that means the positive part of the parabola for y.
+
+1204
+02:28:02,920 --> 02:28:05,340
+So one branch of the parabola included.
+
+1205
+02:28:06,159 --> 02:28:07,700
+Okay, this is important.
+
+1206
+02:28:09,319 --> 02:28:12,780
+So only this branch of the parabola, where y is positive.
+
+1207
+02:28:13,700 --> 02:28:17,500
+And the line, and the x-axis, so this region.
+
+1208
+02:28:27,476 --> 02:28:30,896
+ha, integrate with respect to x, maybe.
+
+1209
+02:28:36,371 --> 02:28:37,211
+No problem.
+
+1210
+02:28:39,691 --> 02:28:40,511
+Let's see.
+
+1211
+02:28:48,724 --> 02:28:51,304
+ten ortaya mısırı?
+
+1212
+02:29:00,564 --> 02:29:01,523
+is there any problem?
+
+1213
+02:29:05,843 --> 02:29:10,323
+Oh, is it mistaken? Result?
+
+1214
+02:29:15,700 --> 02:29:22,200
+y plus 2 minus y², y² over 2 plus 2y minus y³ over 3.
+
+1215
+02:29:23,159 --> 02:29:24,540
+Upper limit is 2.
+
+1216
+02:29:26,460 --> 02:29:28,520
+Hmm, 4 over 2.
+
+1217
+02:29:33,396 --> 02:29:34,456
+It must be 2.
+
+1218
+02:29:36,516 --> 02:29:37,516
+It's mistaken.
+
+1219
+02:29:38,296 --> 02:29:41,056
+It's 2 because y square over 2 add 2.
+
+1220
+02:29:42,056 --> 02:29:43,275
+It must be 2.
+
+1221
+02:29:43,656 --> 02:29:47,716
+2 plus 4 minus 8 over 3.
+
+1222
+02:29:48,096 --> 02:29:48,316
+Yes.
+
+1223
+02:29:49,236 --> 02:29:50,216
+2, 6.
+
+1224
+02:29:50,476 --> 02:29:51,416
+Yes, 10 over 3.
+
+1225
+02:29:52,336 --> 02:29:52,796
+Ah, yes.
+
+1226
+02:29:52,956 --> 02:29:53,816
+Yes, it must be 2.
+
+1227
+02:29:54,096 --> 02:29:56,256
+Mistakenly, it was written for.
+
+1228
+02:29:56,656 --> 02:29:57,355
+Yes, you're right.
+
+1229
+02:29:57,756 --> 02:29:59,156
+6 minus 8 over 3.
+
+1230
+02:30:00,316 --> 02:30:00,836
+Yes.
+
+1231
+02:30:00,836 --> 02:30:05,275
+Now, I want to say something which is important.
+
+1232
+02:30:05,976 --> 02:30:07,256
+Now, listen to me carefully.
+
+1233
+02:30:08,436 --> 02:30:09,556
+Can you think that?
+
+1234
+02:30:11,296 --> 02:30:14,656
+Why should we evaluate this area with respect to y-axis?
+
+1235
+02:30:15,076 --> 02:30:16,936
+Why not with respect to x?
+
+1236
+02:30:17,156 --> 02:30:18,195
+Can you explain me?
+
+1237
+02:30:28,244 --> 02:30:33,424
+What if the question was, evladen ve respect to x, what will you do?
+
+1238
+02:30:38,036 --> 02:30:39,095
+Do you have an idea?
+
+1239
+02:30:46,675 --> 02:30:51,075
+Do you know the smooth regions? Have you heard it before?
+
+1240
+02:30:52,075 --> 02:30:53,195
+Smooth regions.
+
+1241
+02:30:57,459 --> 02:31:00,779
+smoothness of the regions on Cartesian plane.
+
+1242
+02:31:02,319 --> 02:31:02,899
+Let's see.
+
+1243
+02:31:04,000 --> 02:31:04,500
+Look.
+
+1244
+02:31:12,884 --> 02:31:18,084
+Örneğin, bu region,
+
+1245
+02:31:19,644 --> 02:32:12,724
+bu region,
+
+1246
+02:32:12,724 --> 02:32:13,763
+with respect to x,
+
+1247
+02:32:13,763 --> 02:32:15,763
+okay,
+
+1248
+02:32:15,763 --> 02:32:17,763
+easily,
+
+1249
+02:32:17,763 --> 02:32:18,763
+that's why,
+
+1250
+02:32:18,763 --> 02:32:21,763
+this integral is evaluated with respect to x,
+
+1251
+02:32:21,763 --> 02:32:23,763
+the area,
+
+1252
+02:32:23,763 --> 02:32:25,763
+normally,
+
+1253
+02:32:25,763 --> 02:32:27,763
+if we are working on a,
+
+1254
+02:32:27,763 --> 02:32:30,763
+evaluation of an area,
+
+1255
+02:32:30,763 --> 02:32:35,763
+we can write the y formula of the corresponding,
+
+1256
+02:32:35,763 --> 02:32:38,804
+integral with respect to y,
+
+1257
+02:32:38,804 --> 02:32:39,804
+always we can write,
+
+1258
+02:32:39,804 --> 02:32:41,804
+sometimes one of them is easier,
+
+1259
+02:32:41,804 --> 02:32:43,804
+because of smoothness,
+
+1260
+02:32:43,804 --> 02:32:45,843
+for example,
+
+1261
+02:32:45,843 --> 02:32:47,843
+is this region,
+
+1262
+02:32:47,843 --> 02:32:50,843
+smooth with respect to y,
+
+1263
+02:32:50,843 --> 02:32:52,843
+what do you think,
+
+1264
+02:32:52,843 --> 02:32:55,843
+get the line vertical to y,
+
+1265
+02:32:55,843 --> 02:32:57,843
+and move it along to region a,
+
+1266
+02:32:57,843 --> 02:33:01,843
+is it smooth with respect to y,
+
+1267
+02:33:01,843 --> 02:33:02,843
+that means,
+
+1268
+02:33:02,843 --> 02:33:05,843
+right hand side always the same curve or line,
+
+1269
+02:33:05,843 --> 02:33:07,843
+left hand side always the same curve of line,
+
+1270
+02:33:07,843 --> 02:33:10,884
+what do you think,
+
+1271
+02:33:10,884 --> 02:33:12,884
+is it smooth with respect to y,
+
+1272
+02:33:12,884 --> 02:33:13,884
+what do you think,
+
+1273
+02:33:13,884 --> 02:33:14,884
+is it smooth with respect to y,
+
+1274
+02:33:14,884 --> 02:33:15,884
+what do you think,
+
+1275
+02:33:15,884 --> 02:33:16,884
+is it smooth with respect to y,
+
+1276
+02:33:16,884 --> 02:33:17,884
+what do you think,
+
+1277
+02:33:17,884 --> 02:33:18,884
+is it smooth with respect to y,
+
+1278
+02:33:18,884 --> 02:33:25,884
+what do you think,
+
+1279
+02:33:17,843 --> 02:33:19,123
+Sektion starts here.
+
+1280
+02:33:20,723 --> 02:33:22,323
+And think that section is here.
+
+1281
+02:33:23,083 --> 02:33:25,943
+Right-hand side parabola, right branch of the parabola.
+
+1282
+02:33:26,384 --> 02:33:29,384
+Left-hand side, left branch of the parabola.
+
+1283
+02:33:30,183 --> 02:33:32,323
+Up to this point, isn't it?
+
+1284
+02:33:33,543 --> 02:33:38,623
+After this point, when the section is moving on this region,
+
+1285
+02:33:39,323 --> 02:33:42,243
+right-hand side parabola, left-hand side becomes a line.
+
+1286
+02:33:42,583 --> 02:33:46,843
+Which means it is not smooth with respect to Y.
+
+1287
+02:33:47,843 --> 02:33:52,503
+Because on the left-hand side, curve is changed with the line.
+
+1288
+02:33:53,363 --> 02:33:55,884
+Up to this point, parabola.
+
+1289
+02:33:56,423 --> 02:33:59,243
+After this point, left-hand side becomes a line.
+
+1290
+02:33:59,903 --> 02:34:04,183
+Which means this region is not smooth with respect to Y.
+
+1291
+02:34:04,603 --> 02:34:05,543
+Do you understand it?
+
+1292
+02:34:18,772 --> 02:34:21,572
+Are you okay or not? Shall I repeat for you?
+
+1293
+02:34:24,372 --> 02:34:29,012
+Okay, so it's always important for evaluating areas.
+
+1294
+02:34:31,652 --> 02:34:36,852
+What about this? Why such curves are evaluated with respect to y? Because
+
+1295
+02:34:37,812 --> 02:34:46,132
+just look with respect to a y. Get the vertical line to y. Right hand side always f. Left hand
+
+1296
+02:34:46,132 --> 02:34:54,452
+side always g. That's why it's okay. It's smooth because if it is not smooth, if the region is not
+
+1297
+02:34:54,452 --> 02:35:04,612
+smooth, we need to cut into smooth parts. Okay. For example, this graph, this area. Think.
+
+1298
+02:35:06,052 --> 02:35:15,892
+Is it smooth with respect to y? Tell me. Vertical to y. Right hand side always this line.
+
+1299
+02:35:16,932 --> 02:35:26,532
+Left hand side always this parabola. It's not changed along while the y, the section is moving
+
+1300
+02:35:27,492 --> 02:35:34,292
+on a. Okay. That's why it is smooth with respect to y. That's why we have such an integral.
+
+1301
+02:35:35,252 --> 02:35:41,731
+Easily. Think that if I ask you this question in terms of x, write the integral and evaluate
+
+1302
+02:35:41,731 --> 02:35:58,532
+the area in terms of x. What would you do? Is it smooth with respect to x? What do you think?
+
+1303
+02:35:59,827 --> 02:36:00,827
+Are you sure?
+
+1304
+02:36:00,827 --> 02:36:02,827
+With respect to x.
+
+1305
+02:36:02,827 --> 02:36:05,827
+Is it smooth?
+
+1306
+02:36:05,827 --> 02:36:09,827
+Look, get a vertical line to x.
+
+1307
+02:36:09,827 --> 02:36:11,827
+Vertical to x.
+
+1308
+02:36:11,827 --> 02:36:13,827
+Start here.
+
+1309
+02:36:13,827 --> 02:36:14,827
+Continue.
+
+1310
+02:36:14,827 --> 02:36:18,827
+Above parabola, below x-axis.
+
+1311
+02:36:18,827 --> 02:36:21,827
+Up to this point.
+
+1312
+02:36:21,827 --> 02:36:30,827
+After this point, above again parabola, but below the line, where x is y plus 2.
+
+1313
+02:36:30,827 --> 02:36:36,827
+At this point, the boundary curve below is changed.
+
+1314
+02:36:36,827 --> 02:36:40,827
+That's why it is not smooth with respect to x.
+
+1315
+02:36:40,827 --> 02:36:47,827
+If you are asked to write this integral with respect to x, you will cut into two parts of the area.
+
+1316
+02:36:47,827 --> 02:36:49,827
+And then, evaluate.
+
+1317
+02:36:49,827 --> 02:36:54,827
+Up to this point, subtraction of these curves or lines.
+
+1318
+02:36:54,827 --> 02:36:58,827
+After this point, subtraction of parabola and this line.
+
+1319
+02:36:58,827 --> 02:37:02,827
+Which means two different functions of integral.
+
+1320
+02:37:02,827 --> 02:37:06,827
+That's why this area is evaluated with respect to y.
+
+1321
+02:37:06,827 --> 02:37:08,827
+Because it is easier.
+
+1322
+02:37:08,827 --> 02:37:10,827
+Because with respect to y, it becomes smooth.
+
+1323
+02:37:10,827 --> 02:37:13,827
+But with respect to x, it is not.
+
+1324
+02:37:13,827 --> 02:37:15,827
+That's why, of course, the easier way.
+
+1325
+02:37:15,827 --> 02:37:22,827
+Always, according to smooth exercises, you have to just solve the equations.
+
+1326
+02:37:22,827 --> 02:37:24,827
+Now, do you understand me?
+
+1327
+02:37:29,299 --> 02:37:29,939
+Väl da.
+
+1328
+02:37:37,587 --> 02:37:42,288
+I advise you to repeat this question and get the same result.
+
+1329
+02:37:43,547 --> 02:37:47,647
+Write the integral with respect to x, but sum of two integrals.
+
+1330
+02:37:48,727 --> 02:37:51,188
+Which point is it? I think it's 2.
+
+1331
+02:37:52,227 --> 02:37:53,288
+For y0, x is 2.
+
+1332
+02:37:53,907 --> 02:37:54,948
+0 to 2,
+
+1333
+02:37:56,887 --> 02:38:00,188
+subtraction of parabola and y0.
+
+1334
+02:38:00,927 --> 02:38:02,028
+2 to 4,
+
+1335
+02:38:02,708 --> 02:38:06,407
+subtraction of parabola and this line with respect to x, you will write.
+
+1336
+02:38:07,587 --> 02:38:12,628
+Evaluate these integrals one by one and get some of them, you will get again 10 over 3.
+
+1337
+02:38:13,047 --> 02:38:14,147
+Please do it for me.
+
+1338
+02:38:15,528 --> 02:38:16,847
+And tomorrow we will continue.
+
+1339
+02:38:20,979 --> 02:38:22,219
+if you have no question.
+
+1340
+02:38:33,108 --> 02:39:02,667
+Okay. Any question? Yes, part by part. Because which one to substitute? Which one get the subtraction? Up to 2? Above? Okay. Always y²x.²x will be the upper one. But which one is lower? y is 0 or y is x minus 2? Which one you will write? That's why you need to cut into parts.
+
+1341
+02:39:03,108 --> 02:39:11,148
+Up to 2, you will write y is 0. After 2, you will write y is x minus 2. As the lower curve. Okay.
+
+1342
+02:39:29,971 --> 02:39:30,771
+Any question?
+
+1343
+02:39:39,476 --> 02:39:40,596
+Any question up to now?
+
+1344
+02:39:48,340 --> 02:40:14,659
+Okay, thank you. So, we will continue tomorrow. I hope you will be all attend the lesson. Tomorrow, we will continue with the most important topic. Volumes of Solis of Revolutions. Very hard to understand will be for you. That's why please attend all of you. I want to say that tomorrow. I want to hear all of you here. Okay.
+
+1345
+02:40:14,659 --> 02:40:25,420
+Thank you so much. Thank you for your participation. Thank you so much. See you tomorrow.
+
+1346
+02:40:59,219 --> 02:41:00,099
+see you tomorrow.
