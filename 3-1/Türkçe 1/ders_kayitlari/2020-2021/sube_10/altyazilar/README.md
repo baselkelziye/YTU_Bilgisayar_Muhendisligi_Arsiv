@@ -1,6 +1,6 @@
 # TÜRKÇE 1 Ders Kayıtları Altyazıları
 
-Bu klasör, 2020-2021 eğitim öğretim yılı Güz dönemindeki TÜRKÇE 1 (TDB1031 - 10. şube) ders kayıtlarının altyazılarını içerir.
+Bu klasör, 2020-2021 eğitim öğretim yılı Güz dönemindeki TÜRKÇE 1 (TDB1031 - 10. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
 * **Dersi Veren Akademisyen:** Nurullah Arvas
 
