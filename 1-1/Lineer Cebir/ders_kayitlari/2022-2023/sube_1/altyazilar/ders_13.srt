@@ -1,0 +1,439 @@
+1
+00:01:14,099 --> 00:01:17,000
+Evet, merhaba arkadaşlar. Nasılsınız? Görüşmeli.
+
+2
+00:01:34,195 --> 00:01:36,756
+İsim geliyor mu? Beni duyabiliyor musunuz arkadaşlar?
+
+3
+00:01:40,155 --> 00:01:43,475
+Teşekkür ederim [öğrenci]. Ben de iyiyim.
+
+4
+00:01:45,855 --> 00:01:47,195
+Biraz geciktim, kusura bakmayın.
+
+5
+00:01:54,707 --> 00:02:02,108
+Evet, bu hafta kaldığımız yerden devam edelim. Bu haftaki konumuz koordinat matrisleri konusu.
+
+6
+00:02:05,027 --> 00:02:15,127
+Yeni bir alt başlık diyebiliriz. Tabanı gördük geçen hafta. Taban nasıl bulunur? Bunlarla alakalı örnekler yapmıştık.
+
+7
+00:02:15,288 --> 00:02:21,927
+Daha önceki hafta lineer bağımsızlık gelmeyi görmüştük. Geçen hafta da taban ve boyut kavramlarını gördük.
+
+8
+00:02:22,804 --> 00:02:36,144
+Bu hafta taban dönüşümü, bir vektör uzayının bir tabanından başka tabanla geçiş veya bir vektörün bir taban cinsinden ifade edildiğinde başka bir taban cinsinden ifade edilmesi gibi durumları göreceğiz.
+
+9
+00:02:36,783 --> 00:02:41,004
+Ve koordinat geçiş marşısını göreceğiz arkadaşlar tamamen olarak. Bakalım bunlar neymiş?
+
+10
+00:02:49,524 --> 00:03:12,460
+Şimdi bir teorimiz var, o da şu. V, n boyutlu bir vektör uzayı. Bunlar kansımız ne? Boyutundaki, yani tabanındaki eleman sayısı n. Uzay olsun ve b, işte b'nin bir tabanı olsun. Bu durumda...
+
+11
+00:03:13,427 --> 00:03:23,028
+V'deki her W yani her vektör bu V'deki vektörlerin katlarının toplamları şekilde tek türlü yazılabilir.
+
+12
+00:03:23,028 --> 00:03:36,028
+Bu taban olmasına kaynaklanan arkadaşlar, her eleman buradaki vektörlerin vektörlerin katların toplamı olarak veya bildiğin toplamı olarak tek türlü yazılabilir.
+
+13
+00:03:36,819 --> 00:03:48,819
+Bunu da herhalde daha önce söylemiştik, burada bir hatırlatma. Şimdi, v yine n boyutu bir vektörü sayı ve b de v'nin bir sıralı tabanı. Buradaki vektörlerin sırası önemli.
+
+14
+00:03:50,819 --> 00:04:04,319
+v1, v2, vn. Arkadaşlar, dönüşü için önemli olacak sıra. Evet, tabanı ve x1, x2, xn kat sayılarımız olsun. Bu durumda her W vektörü için.
+
+15
+00:04:04,768 --> 00:04:31,087
+Bu x1, x2, xn yazılışında, pardon, bu w'yu biz b1, v2 ve n'lerin birine adlandırma olarak yazdığımızda, buradaki bu kas sayıları biz w vektörünün b tabanına göre koordinat vektörü diyoruz. Ben kısa bir örnekle, mesela şöyle re karede, re karede b'yi, örneğin, 1, 0 ve 0, 1, 6 diyelim.
+
+16
+00:04:31,636 --> 00:04:46,036
+Sandal tabağı olarak alalım. Mesela iki, bir vektörümüz double olsun. Biz biliyoruz ki bu vektörün iki çarpı bir sıfır ve bir çarpı sıfır bir olarak yazılabilir, yazılır daha doğrusu.
+
+17
+00:04:46,036 --> 00:04:57,836
+Burada bu double vektörünün B tabanına göre koordinat vektörünü biz şöyle gösteriyoruz. Buradaki kastelerimiz ikiye bir olmak üzere ikiye bir.
+
+18
+00:04:58,067 --> 00:05:03,827
+şekilde biz bunu arkadaşlar gösteriyoruz. Notasyonumuz bu.
+
+19
+00:05:03,827 --> 00:05:10,067
+2'ye 1 bu şekilde bir süm vektör olarak yazabiliriz.
+
+20
+00:05:10,067 --> 00:05:19,067
+Bir satır vektör olarak da bunu yazabiliriz. 2'ye 5 şeklinde şöyle yazabiliriz.
+
+21
+00:05:19,067 --> 00:05:23,883
+Burada standart vektörü var. Standart tabanı aldığım için
+
+22
+00:05:25,108 --> 00:05:50,108
+Bu vektörün, double vektörün, B sıralı tabanına göre, koordinat vektörün yine kendisi oluyor. Taban değiştiği zamanlar arkadaşlar, bu vektör değişecektir. Mesela, 3, 2, 1 vektörünün, direkt uzayında, bu sandal tabana göre koordinat vektörün yine kendisi olacak. Neden? Çünkü biz 3,
+
+23
+00:05:50,836 --> 00:06:16,836
+2, 1 vektörünü 3 çarpı 1, 0, 0, artı 2 çarpı 0, 1, 0, artı 1 çarpı 0, 0, 1 olarak yazabiliriz. Buradan da, buraya kastelerim 3, 2, 1. Dolayısıyla bu W vektörünün, sandal tabana göre, koordinat vektörü yine 3, 2, 1.
+
+24
+00:06:17,524 --> 00:06:20,324
+vektörü, olmuş olacak arkadaşlar.
+
+25
+00:06:21,424 --> 00:06:22,764
+Evet, var mı sorunuz buraya kadar?
+
+26
+00:06:28,211 --> 00:06:54,572
+Devam ediyorum. Mesela bakalım tabanı değiştirdiğimizde koordinat vektörü ne olacak? Yine 1, 2, 3 vektörünün bu B tabanı verilen B tabanına göre koordinat vektörünü bulmaya çalışıyoruz. Öncelikle burada bir aslında denklem sistemindeyiz. Bu denklem sisteminin çözünürlüğünü gerekiyor. Şöyle ki, W vektörünü yani 1, 2, 3 vektörünü işte
+
+27
+00:06:55,475 --> 00:07:11,196
+lambda 1 diyelim, lambda 1 çarpı, 1, 2, 0, ve lambda 2 çarpı, 2, 0, 1, ve lambda 3 çarpı, 1, 2, 1 olarak yazalım.
+
+28
+00:07:12,256 --> 00:07:15,256
+Yani lambda 1, lambda 3 nedir, bunları bulmaya çalışacağız.
+
+29
+00:07:20,660 --> 00:07:31,480
+Artı lambda 3. İkinci bileşen 2 lambda 1, artı 2 lambda 3. Ve son bileşen de lambda 2, artı lambda 3.
+
+30
+00:07:31,480 --> 00:07:45,260
+Buradan bileşen bileşen eşitlikten bir denklem sistem elde etmiş oluyoruz. Şöyle ki, eşittir. 1, 2 lambda 1,
+
+31
+00:07:46,451 --> 00:08:11,172
+2, lambda, 3, eşittir. 2 ve lambda, 2, artı, lambda, 3, eşittir. Buradan 3. Şimdi arkadaşlar, şu uzunluğunu netten sevip görmeyeceğim. Şunu ikiye böldüğümüz zaman, lambda, 1, artı, lambda, 3, eşittir, 1.
+
+32
+00:08:11,860 --> 00:08:32,980
+Şimdi tekrardan yazayım, lambda 1 artı 2 lambda 2 artı lambda 3 eşittir 1. Bunu eksile çarpı çıkarttığımız zaman üsttekinden, ne kaliteli? 2 lambda 2 eşittir 0 ve buradan lambda 2 eşittir 0 sonucunu elde ediyoruz lambda 2 için.
+
+33
+00:08:38,355 --> 00:08:45,355
+Peki, lambda 2 0 ise, burada, şurada yerine yazdığımızda, lambda 3 eşittir 3 olur.
+
+34
+00:08:47,955 --> 00:09:02,827
+Ve lambda 3 3 ise, lambda 1 artı lambda 3, şöyle diyelim, lambda 1 artı lambda 3 eşittir 1'den, lambda 1 eşittir, eksi 2 olur.
+
+35
+00:09:03,731 --> 00:09:17,371
+Bakalım gerçekten sağlıyor mu? Şuraya baktığımız zaman, örneğin, lambda 2 artı lambda 3, yani 3, evet, lambda 1 artı, 2 lambda 1 artı 2 lambda 3'ten,
+
+36
+00:09:19,451 --> 00:09:30,091
+eksi 4 artı 6'tan 2, ve burası ise lambda 1 artı lambda 3'ten 1, lambda 2 artı 1, 2, 3 sağlıyor. O zaman, bu 1, 2, 3 vektörünün
+
+37
+00:09:30,868 --> 00:09:45,708
+Verilen B tabanına göre, koordinat vektörü, sırasıyla lambda bir, lambda iki, lambda yük, yani eksi iki, sıfır ve üç şeklinde, yani üç şeklinde olacaktır arkadaşlar.
+
+38
+00:09:46,868 --> 00:09:48,408
+Evet, var mı sorunuz buraya kadar?
+
+39
+00:09:55,764 --> 00:10:00,764
+Bir tiner birleşim olarak yazıyoruz ve daha sonra kas sıra sıra yazıyoruz. Bütün mevzu bu.
+
+40
+00:10:03,764 --> 00:10:10,764
+Evet, böyle uzun uzun bağdan çözmeye gerek yok diye düşünüyorum. Şimdi bir taban dönüşümü ve koordinat geçişim maskerini göreceğiz.
+
+41
+00:10:15,764 --> 00:10:16,764
+Arkadaşlar bir saniye.
+
+42
+00:10:24,788 --> 00:10:54,788
+Bu
+
+43
+00:11:18,388 --> 00:11:19,428
+Evet, ki seradahu ki.
+
+44
+00:11:26,868 --> 00:11:51,268
+Şimdi, tamam, v en boyutlu bir vektör uzayı. Bunun iki tane sıralık tabanını alıyoruz. B1 ve B2. Ve şunu yapıyoruz arkadaşlar. Öncelikle B1'deki her vektörü B2'deki vektörlerin lineer toplamı olarak yazıyoruz. İşte B1 eşittir, bunların lineer toplamı. B2 eşittir.
+
+45
+00:11:51,731 --> 00:11:58,131
+B2'deki rektörlerin birineer toplamı, Bdn eşittir, B2'deki rektörlerin birineer toplamı.
+
+46
+00:11:58,131 --> 00:12:06,131
+Burada, şu görmüş olduğumuz kanserler var. A11, A21 gibi.
+
+47
+00:12:06,131 --> 00:12:16,931
+Bu kanserleri alıp, oluşturduğumuz şu matrize, yani şu birinci sütun, birinci satır oluyor arkadaşlar.
+
+48
+00:12:17,299 --> 00:12:24,939
+W1'in kas sayısı, kas sayıları, birinci satır, W2'nin kas sayıları, ikinci satır.
+
+49
+00:12:29,107 --> 00:12:49,387
+ve en son olarak W'nin kas sayıları da L'inci satır olacağı şekilde bir matris oluşturuyoruz. Biz bu matrisse B1 tabanında B2 tabanına geçiş matrisi diyoruz ve bu şekilde gösteriyoruz.
+
+50
+00:12:58,131 --> 00:13:09,231
+Yani, gelişmiş olması olarak arkadaşlar bu şekilde ifade ediyoruz. Yaptığımız şey şu, bu da sıra önemli. İki tabanı aldık. B1 ve B2.
+
+51
+00:13:10,131 --> 00:13:22,131
+Eğer B1'den B2'ye geçiş matrisini bulmak istiyorsam, B1'deki vektörlerin, B2'deki vektörler genzinden, yani birine toplam olarak yazıyorum.
+
+52
+00:13:22,131 --> 00:13:31,131
+Ve daha sonra ortaya çıkan Kassera matrisinin transpozu bize B1'den B2'ye geçiş matrisini veriyor.
+
+53
+00:13:31,131 --> 00:13:32,875
+Evet.
+
+54
+00:13:35,379 --> 00:13:46,179
+Persinden eğer ben B2'den B1'e geçici matrisini bulmak istiyorsam eğer, o zaman da B2'deki vektörleri, B1'deki vektörleri ne toplam olarak sırasıyla yazıyorum.
+
+55
+00:13:47,620 --> 00:13:57,559
+Ve ortaya çıkan kast sayıları matrisinin transpozu. Bana B2'den B1'e geçici matrisini vermiş oluyor arkadaşlar.
+
+56
+00:13:57,559 --> 00:14:02,620
+Onu da şöyle gösteriyoruz. B2'den B1'e geçici matrisini bu şekilde.
+
+57
+00:14:03,475 --> 00:14:12,475
+ifade ediyoruz. Şimdi burada, peki bu iki masalar arasında bir ilişki var mı? Bu tören bunu söylüyor.
+
+58
+00:14:12,475 --> 00:14:30,412
+İşte B1 ve B2 ikiden taban olsun. Burada B1'den B2'ye geçme asrını A ve B2'den B1'ye geçme asrını B ile gösterirsek, bu durumda bu masara arkadaşlar birbirinin tersi olmuş oluyor.
+
+59
+00:14:30,419 --> 00:14:55,419
+Yani A çarpı B bize bir matris veriyor. Ne demek bu? Dediğim gibi birbirine ters olan matrisler olmuş oluyor arkadaşım. Ve burada şunu söyleyebiliyoruz artık. Diyelim ki ben bir U vektörünün B2'ye göre koordinat vektörünü biliyorum. Bunu
+
+60
+00:14:55,988 --> 00:15:22,988
+ve b'den b1'e geçmezsını biliyorum. Ben bu u vektörünün b2'ye göre koordinat vektörünü bu şekilde hesaplayabiliyorum. Tamam. Onu da şöyle söyleyebiliriz. İşte b2'den b1'e şekilde görebiliriz. Veya ben bu v vektörünün b1'e göre koordinat vektörünü biliyorum. Ve b1'den b2'ye geçmezsını biliyorum diyelim. Buradan da...
+
+61
+00:15:24,052 --> 00:15:31,651
+B'nin B2'ye göre koordinat vektörünün bu masri çarpımı yardımıyla hesaplayabiliyoruz. Bu bize bir kolaylık sağlıyor.
+
+62
+00:15:32,771 --> 00:15:38,531
+Şimdi bir örnek yapalım. Ne demek istediğimiz daha rahat anlaşılacak.
+
+63
+00:15:39,091 --> 00:15:46,851
+Burada V vektör uzayının iki sıralık tabanı verilmiş. B1 ve B2.
+
+64
+00:15:54,196 --> 00:15:56,036
+Oğurtör, ik uspes.
+
+65
+00:16:07,860 --> 00:16:21,360
+Önce B1'den B2'ye geçme atısını, daha sonra B2'den B1'e geçme atısını, ve U'nun B1'e göre kozant vektörünü ve daha sonra da U'nun
+
+66
+00:16:24,980 --> 00:16:30,620
+B2'ye göre koordinat vektörünü bulacağız. Şuradan başlayalım.
+
+67
+00:16:34,460 --> 00:16:39,740
+Ne yapmamız gerekiyor? Birincisi B1'den B2 olduğu için B1'deki vektörler sırası da
+
+68
+00:16:41,740 --> 00:16:46,860
+B2'deki vektörlerin n-toptum olarak ifade edeceğiz. Bakalım.
+
+69
+00:16:47,419 --> 00:16:52,419
+Tabi bu birazcık uzun bir işlem. Her bir vektör için bunu yapmak zorundayız.
+
+70
+00:16:52,820 --> 00:17:14,980
+Şöyle ki, 1, 2, 0 eşittir. İşte lambda 1 diyelim. 0, 2, 1, artı lambda 2 çarpı, eksi 1, 0, 1, artı lambda 3 çarpı, eksi 1, 3, 0. Bakalım direkt olarak görebiliyor muyuz?
+
+71
+00:17:49,907 --> 00:17:51,907
+Evet, direkt olarak görelim. Şöyle bir bakalım.
+
+72
+00:17:54,647 --> 00:17:56,987
+Çözdüğümüz zaman ne ediliyoruz? 1-1 ve 0.
+
+73
+00:18:01,748 --> 00:18:17,908
+ve buranın yanında. Şimdi B1'i B2'deki vektörler içerisinden yazdığımızda kas sayılarımız, ve bu denklem sistemini çözüyoruz kas sayılarımız, şurası bir, eksi bir ve sıfır bulunmuş.
+
+74
+00:18:28,180 --> 00:18:52,779
+ve eksi altı bölü beş, şeklinde ve veyişi yazdığımızda, kat sayılarımızda arkadaşlar, sekiz bölü beş, burası eksi üç bölü beş, ve eksi iki bölü beş şeklinde imiş. Bu durumda, B1'den B2'ye geçiş vektörü, veya matrisi, pardon,
+
+75
+00:18:54,163 --> 00:19:05,163
+Bu V1, V2, V3'i alt altı yazdığımızda elde etmiş olduğumuz kastaya matrisin transpoza olacak ve onu da burada bu şekilde ifade edebiliriz.
+
+76
+00:19:07,563 --> 00:19:14,563
+Yine benzer şekilde, V2'den V1'e geçit matrisini bulmak için artık tek tek şey yapmaya gerek yok.
+
+77
+00:19:21,971 --> 00:19:45,971
+Alınacak bir teorenden dolayı biliyoruz ki, A çarpı B, biri matris, bu ne demek? B A'nın tersi demek. Buradan da A'nın tersini bularak da biz bunun, bu matrisi, yani B'yi giden B1'e geçiş matrisini bulabiliriz. Hesaplarımıza böyle bir matris elde etmiş oluyoruz. Şimdi, şuna bakalım. U'nun B1'e göre koordinat vektörü.
+
+78
+00:19:48,564 --> 00:19:57,564
+15, 23, 5, B1 tabanında bu. Yine burada bir lineer denklem sistemini yönetmiş oluyoruz. Bir bakalım.
+
+79
+00:20:01,564 --> 00:20:12,564
+Evet, çözdüğümüz zaman, şöyle diyeyim, çözdüğümüz zaman, veya çözelim şöyle, mesela, buradan devam edeyim.
+
+80
+00:20:15,763 --> 00:20:41,203
+artı y3 eşittir, 3 bölü 2. Tekrardan bunu yazdığımızda y1 artı 2 y2 artı y3 eşittir, 2. İkincisini eksi birer çarpıp üsttekinden çıkarttığımızda arkadaşlar, buradan 2 y2 eşittir, 2 eksi 3 bölü giden 1 bölü 2 ve buradan y2 dediğimiz şey 1 bölü 4. Bu durumda
+
+81
+00:20:41,652 --> 00:20:52,892
+Bunu burada yerine yazdığımızda, y3 eşittir 5 eksi 1 bölü 4, buradan 19 bölü 4'ü elde etmiş oluyoruz.
+
+82
+00:20:52,892 --> 00:21:06,711
+Ve son olarak da bu ifadeyi, şu ikincisinde yerine yazdığımızda, 2y1 artı 38 bölü 4 eşittir 3.
+
+83
+00:21:07,188 --> 00:21:31,587
+Buradan, y1 eşittir, 3, 2, y1 eşittir. 3 eksi, 8 bölü 4, yani 12 eksi 36'tan eksi 26, eksi 26 bölü 4, o da eksi 13 bölü 2, ve buradan y1'i hesap olduğumuzda, eksi 13 bölü 4 olarak bunu buluyoruz. Bakalım doğru yaptık.
+
+84
+00:21:34,740 --> 00:22:00,740
+O zaman, bu vektörün B1 tamamına göre koordinat vektörü, burada yerine koyduğumuzda neydi? Y1-3 bölü 4, Y2 1 bölü 4, ve Y3'te 19 bölü 4 şekilde bunu ifade etmiş oluruz.
+
+85
+00:22:03,316 --> 00:22:13,816
+Ve bakalım, u vektörünün b2 tabanına göre koordinat vektörünü bulmak için bu yöntemi de kullanabiliriz. Şunu da kullanabiliriz arkadaşlar.
+
+86
+00:22:13,816 --> 00:22:30,316
+Sonuçta biz daha önce onları gördük. B2 dediğimiz şey, b1'den b2'ye geçişim aksesini ile bu u vektörünün b1 tabanına göre koordinat vektörü.
+
+87
+00:22:30,644 --> 00:22:36,203
+Yine çarptığımızda, yine aynı sonucu elde ederiz. Önce bu şekilde yapalım.
+
+88
+00:22:38,523 --> 00:22:45,043
+Buradan çözdük, sonuç bu çıkıyor. Yine benzer şekilde buradan da aynı sonucu elde ederiz.
+
+89
+00:22:45,523 --> 00:22:48,763
+Veya bu eşitleri buradan görebiliriz diyorum.
+
+90
+00:22:49,683 --> 00:22:53,003
+Var mı arkadaşlar, burayla alakalı sorunuz?
+
+91
+00:23:08,819 --> 00:23:19,500
+Evet, şu soruları yapmaya çalışalım beraber. Şimdi, vektör uzayın iki sıralık tabunu verilmiş ve aralarında böyle bir ilişki var.
+
+92
+00:23:23,347 --> 00:23:49,347
+Bu durumda B1'den B2'ye geçiş tabanı ne? B2'den B1'de geçiş tabanı ne? B1'nin U'ya göre koordinat vektörü 1, 0, 3 ise B2'ye göre koordinat vektörü ne? V'nin B2'ye göre koordinat vektörü 2, 2 ise bu durumda bu V vektörünün B1 tabanına göre koordinat vektörü nedir? diye soruyor.
+
+93
+00:23:50,163 --> 00:24:03,763
+Şimdi şu birden başlayalım. Sonuçta burada B1'den B2'ye geçiş master bulmak için B1'deki elemanların B2'deki vektörlerin bir lineer teknolojisi olarak yazılması gerekiyor.
+
+94
+00:24:03,763 --> 00:24:12,564
+Zara soru da verilmiş. O zaman şu buradaki kas sayıda master'ın transpozu bana bu master verecek arkadaşlar.
+
+95
+00:24:15,028 --> 00:24:25,327
+Yani ne o? W1'in kat sayıları birinci satır olmuş olacak. 1, 2, 1. W2'nin kat sayıları ikinci satır olmuş olacak. 1, eksi 1, 1, pardon 2.
+
+96
+00:24:26,067 --> 00:24:32,567
+Ve W3'ün kat sayıları da üçüncü, çok özür, W2'nin kat sayıları 1, eksi 1, 0.
+
+97
+00:24:34,347 --> 00:24:42,208
+Ve W3'ün kat sayıları da eksi 1, 1 ve 2 şeklinde bunu konmuş oluyorlar.
+
+98
+00:24:42,708 --> 00:24:55,708
+Burada, 2'yi yapmak için öncelikle tek tek bu W1, W2 ve W3'ü, W1, W2, W3'inden ifade etmek gerekiyor. O da ayrı bir soru.
+
+99
+00:24:55,708 --> 00:25:02,708
+Evet, ifade etmek gerekiyor. Ya öyle yapabiliriz ya da ikinci soruyu şöyle yapabiliriz.
+
+100
+00:25:02,708 --> 00:25:08,708
+Sonuçta B2'den B1'e geçişim hassi ile
+
+101
+00:25:09,715 --> 00:25:36,275
+Bu matris, B1'den, B2'ye geçiş matrisinin tersi. Dolayısıyla, burası, 1, 2, 1, 1, 1, 0, ve 1, 2 matrisinin tersi olmuştur. Tersinize, ters bulma yöntemini bulduğumuzda, bu sonucu elde etmiş oluyoruz.
+
+102
+00:25:37,619 --> 00:25:38,619
+gelelim.
+
+103
+00:25:38,619 --> 00:25:41,619
+Evet, buraya.
+
+104
+00:25:46,099 --> 00:26:11,099
+Şu ifade mi? Bunu nasıl yapacağız? Artık ben B1'e göre koordinat vektörünü biliyorsam, burada B1'den B2'ye geçişme hastasını kullanarak ben U'nun B2'ye göre koordinat vektörünü bulabilirim. Yani şu teorem ve sonuç yardımıyla.
+
+105
+00:26:12,660 --> 00:26:40,019
+Evet, hesapladığımız arkadaşlar çarpımıza sonucu elde etmiş oluyoruz. Yine benzer şekilde V'nin B1'e göre koordinat vektörünü şu çarpım yardımıyla elde edebiliyoruz. Neydi? İşte ben niye bilmiyorum. Soruda bana ne verilmiş? V'nin B2'ye göre koordinat vektörü verilmiş. Benden bunu istiyor. O zaman şöyle arkadaşlar.
+
+106
+00:27:12,852 --> 00:27:24,352
+Evet, devam edelim. Burada V'nin B2'ye göre koordinat vektörü göremiş, B1'e göre koordinat vektörünü biz alıncaki tören yardımıyla hesaplayabiliriz.
+
+107
+00:27:24,591 --> 00:27:33,112
+B2, yine B2 ve daha sonra yukarısı B1 olduğu şekilde B2'den B1'e geçiş matrisi yardımıyla biz bunu hesaplayabiliyoruz.
+
+108
+00:27:33,112 --> 00:27:39,511
+O zaman çarpımız arkadaşlar, sonucu elde etmiş oluyoruz. Ve bu halde konularımız bu kadar. Var mı herhangi sorumuz?
+
+109
+00:27:48,980 --> 00:27:50,480
+Arkadaşlar, var mı sorunuz?
+
+110
+00:29:04,915 --> 00:29:20,316
+Evet, bu hafta bu kadar yeter. Haftaya hem konu hem de artısına ayrı bazı sorular çözeceğim. Aynı zamanda soruları paylaşacağım arkadaşlar. Haftaya görüşmek üzere. Kendinize iyi bakın. İyi günler hocam.

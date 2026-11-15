@@ -1,0 +1,835 @@
+1
+00:00:11,412 --> 00:00:13,572
+Evet, merhaba arkadaşlar. Sesim geliyor mu?
+
+2
+00:00:38,228 --> 00:00:39,288
+Merhaba arkadaşlar.
+
+3
+00:00:40,968 --> 00:00:42,288
+Merhaba hocam.
+
+4
+00:00:42,648 --> 00:00:43,167
+Nasılsınız?
+
+5
+00:00:51,572 --> 00:00:52,772
+Sesim giriyorum arkadaşlar.
+
+6
+00:00:56,371 --> 00:00:58,131
+Geliyor hocam.
+
+7
+00:00:58,911 --> 00:01:00,171
+Tamam. Sınav nasıldı?
+
+8
+00:01:01,411 --> 00:01:04,031
+Geçen hafta olmuştunuz cuma günü. Nasıl geçti sınavınız?
+
+9
+00:01:10,004 --> 00:01:11,344
+Fena değildi hocam.
+
+10
+00:01:14,764 --> 00:01:18,024
+Sınav esasında herhangi bir problemle karşılaştınız mı?
+
+11
+00:01:19,564 --> 00:01:22,344
+Yok hocam, sınav esasında bir sıkıntı olmadı.
+
+12
+00:01:24,984 --> 00:01:36,484
+Tamam, iyi o zaman. Ben soruları görmedim. O yüzden sınav nasıldı, zor muydu, kolay mıydı bilmiyorum. İnşallah iyi geçmiştir sizin için.
+
+13
+00:01:40,659 --> 00:01:43,000
+İyi gibiydi hocam.
+
+14
+00:01:45,519 --> 00:01:53,079
+Evet, zaten genelde hesaplama üzerine olan sorulardır diye düşünüyorum. Konularımız hep o şekildeydi.
+
+15
+00:01:56,079 --> 00:02:07,180
+Bu haftan itibaren biraz daha soyut, cebilsel kavramlar göreceğiz. Son hafta hariç olmak üzere.
+
+16
+00:02:07,987 --> 00:02:13,367
+Boğazi'deki konumuz vektör uzayları. Vektör uzaylarına giriş hakkı arkadaşlar.
+
+17
+00:02:16,187 --> 00:02:19,927
+Şimdi derse başlamadan önce sizin sormak istediğiniz herhangi bir şey var mı?
+
+18
+00:02:23,860 --> 00:02:24,340
+Yok hocam.
+
+19
+00:02:29,812 --> 00:02:31,252
+Evet, bir arkadaşımız.
+
+20
+00:02:33,891 --> 00:02:39,672
+Evet, [öğrenci], finalde vize konuları dahil, yani baştan sona kadar sorumlu oluyorsunuz.
+
+21
+00:02:41,432 --> 00:02:45,092
+Bu arada, final tarifleri galiba açıklandı.
+
+22
+00:02:47,092 --> 00:02:50,391
+Bir bakalım, hemen bölümün sayfasından.
+
+23
+00:02:57,939 --> 00:03:00,939
+Pardon, mazenet sıramları hakkında bir...
+
+24
+00:03:02,939 --> 00:03:03,939
+Şöyle...
+
+25
+00:03:09,171 --> 00:03:12,692
+Yok, herhangi bir daha duyuru yapıyormuş. Ben duyuru yapı zannetmiştim.
+
+26
+00:03:15,472 --> 00:03:17,211
+O zaman dersimize başlayabiliriz.
+
+27
+00:03:17,211 --> 00:03:17,572
+Şimdi,
+
+28
+00:03:27,379 --> 00:03:35,040
+Evet, dediğim gibi bu hafta konumuz vektör uzayları ve daha sonraki alt başlığımızda alt vektör uzayları.
+
+29
+00:03:36,019 --> 00:03:39,560
+Şimdi bir görelim bakalım tanımı neymiş, vektör uzayının tanımı.
+
+30
+00:03:40,759 --> 00:03:44,560
+Şimdi arkadaşlar tanımını vermeden önce şöyle bahsetmek istiyorum.
+
+31
+00:03:44,680 --> 00:03:46,540
+Vektör uzayından kastımız bir küme.
+
+32
+00:03:47,399 --> 00:03:51,899
+Bu küme üzerinde iki tane işlemimiz olacak.
+
+33
+00:03:53,300 --> 00:04:04,560
+Toplama işlemi, diğeri de skaderikle çarpma işlemi. Biz bu işlemler altında, bu kümenin, bu işlemler altında bazı özellikleri sağlamasını bekleyeceğiz.
+
+34
+00:04:05,040 --> 00:04:10,840
+İşte o özellikleri sağladığı durumda o kümeye biz o işlemler ile birlikte vektör uzayı diyeceğiz.
+
+35
+00:04:11,740 --> 00:04:20,620
+Eğer o işlemlerden bir tanesini sağlamıyorsa, en az bir tanesini sağlamıyorsa o zaman da vektör uzayı değildir.
+
+36
+00:04:21,076 --> 00:04:45,735
+Bu küme bu işlemlerle birlikte bir elektör uzayı belirtmez değildir diyeceğiz. Bakalım onlar neymiş? Şimdi V boştan farklı bir küme ve buradaki R ile gösterdiğim real sayılar kümesi. Bu normalde F ismi olarak alınıyor. Ama bizim bu dersimizde bizi ilgilendiren küme real sayılar olduğu için real sayılar kümesi ne düşüneceğiz?
+
+37
+00:04:48,831 --> 00:05:11,412
+Yani, evet, bu küme üzerinde iki tane vektörü topladığımızda ve birisi kadar ile çarptığımızda bu çarpma işlemleri, birazdan söylediğimiz şartları sağlarsa, o zaman bu işlemler ile birlikte bu küme, biz bir vektör uzayı diyoruz.
+
+38
+00:05:14,995 --> 00:05:35,995
+Bu toplama her zaman bildiğimiz toplama işlemi olmayabilir. Biz nasıl gördük mesela rektörlerle toplama işlemini? Birleşen birleşen toplam olarak gördük. Böyle olmak zorunda değil. Bu toplama genel buradaki işlem genel olarak bir toplama işlemi, bir de sıkı kadarıyla çarpma işlemi. Bunu da nasıl görmüştük? İşte lambda çarpı u dediğimizde...
+
+39
+00:05:37,427 --> 00:05:42,927
+Şu ana kadar gördüğümüz, U'nun her bir birleşimini namlaya çarptığımızda elde ettiğimiz vektör.
+
+40
+00:05:43,668 --> 00:05:44,887
+Böyle olmak zorunda değil.
+
+41
+00:05:46,507 --> 00:05:49,967
+Genel olarak düşündüğümüzde düşüneceğiz bu iki tane işlemi.
+
+42
+00:05:50,608 --> 00:06:03,307
+Bu iki işlemiyle birlikte dediğim gibi birazdan söyleyeceğim şartları sağlarsa, o zaman biz bu V kümesine bu işlemlerle birlikte bir vektör uzayıdır diyoruz ve elemanlarına vektör diyoruz.
+
+43
+00:06:03,447 --> 00:06:03,627
+Şimdi,
+
+44
+00:06:04,276 --> 00:06:29,456
+Birincisi şu arkadaşlar, sağlamaz gereken şartlar. Şöyle bir hıvıza geçeyim. İlk beş tanesi toplama ile alakalı işlemler. Sonraki beş tanesi sıkılar ile çarpma işlemi ile alakalı işlemler. Birinciye gidelim. Birincisi arkadaşlar şunu söylüyor. Bu V kimesi tanımladığımız, tanımlanan toplam eşlemine göre kapalı bir kime olmamalı.
+
+45
+00:06:31,923 --> 00:06:51,463
+Her vektörleri topladığımızda yine V kümrüsü içerisinde bir vektör elde etmeliyiz, bir eleman elde etmeliyiz. Biri şunu söylüyor. İkincisi, toplamaya göre, bu tanımlanan toplama işlemine göre değişmeli olmalı. Üçüncüsü, doğma özelliğini, pardon, birleşme özelliğini sağlamalı.
+
+46
+00:06:59,860 --> 00:07:26,540
+etkisiz elemanı olmalı. Sıfırdan kastım o etkisiz eleman. Beşincisi de, her elemanın toplama işlemine göre, tanımlanan toplama işlemine göre tersi olan bir vektör yine okum içerisinde olmalı. Altıncısı, benim gibi ilk beş tanesi toplama işlemi ile alakalı işlemlerde. Altıncısı, bu aslında beş tanesinin
+
+47
+00:07:27,348 --> 00:07:40,708
+çarpmadaki karşılığı, şimdi her R, R'ye sayısı ve her V vektörü için, bu V kümesindeki, R çarpı V, yani bu tanımlanan işleme göre, bu V kümesi kapalı olmalı.
+
+48
+00:07:43,288 --> 00:07:53,708
+Yedincisi, dağılma özelliğini sağlamalı. Sekizincisi, yani, skalerleri toplayıp,
+
+49
+00:07:55,348 --> 00:08:17,100
+İşte R artı S çarpı V, ayrı ayrı R çarpı V artı S çarpı V eşit olmalı. Sekidincisi asıl dağılma özelliği bu. Dağılma özelliği yani skalerin vektörler üzerindeki dağılma özelliği sağlanmalı. Dokuzuncusu birleşme özelliği, skalerlerin birleşme özelliği. R çarpı...
+
+50
+00:08:17,651 --> 00:08:44,132
+R çarpı S çarpı V, R çarpı S çarpı V eşit olmalı. Ve onuncusu da çarpmaya göre, burada R'ye saydığım biri, 1 çarpı V, V'ye eşit olmalı. Bu çarpma işlemi altında. Eğer bu 10 tane çarpı sağlayorsa, o zaman biz bunlara, bu kümeye, bu işlemler ile birlikte bir vektör uzayı diyoruz.
+
+51
+00:08:44,480 --> 00:09:07,099
+Dediğim gibi şu ilk beş tanesi toplama ile ilgili diyelim. Sonraki beş tanesi skader ile çarpma ile ilgili. İlgili vaktadır.
+
+52
+00:09:09,139 --> 00:09:23,440
+Tabi soru şu, hocam her zaman bu 10 tanesini sağlatmak, yani kontrol etmek uzun değil mi? Evet uzun. Biz onunla alakalı bazı şeyler göreceğiz. Önce bir önerilerimize bakalım. Mesela R-E, bildiğimiz M bileşenli.
+
+53
+00:09:31,443 --> 00:09:42,624
+Bileşen bileşen toplama ve çarpma işlemini de bildiğimiz bileşen bileşen çarpma olarak tanınmadığımızda, bu arkadaşlar, burada vermiş olduğumuz 10 tane maddeyi sağlar.
+
+54
+00:09:43,423 --> 00:09:50,063
+Sağladığı için de R üzeri N bir vektör uzayıdır. Bildiğimiz sandal toplama ve çarpma işlemini birlikte.
+
+55
+00:09:54,064 --> 00:09:57,064
+Mesela, şu...
+
+56
+00:09:58,227 --> 00:10:03,707
+Mesela birinci madde neyi söylüyor? Her vektörü topladığımızda yine burada bir vektör elde etmeliyiz.
+
+57
+00:10:04,148 --> 00:10:14,207
+Şimdi topladığımızda toplam işlemi x, y, keyfi iki tane eleman olmak üzere v'de. Bunları topladığımızda şöyle bir eleman elde ediyoruz.
+
+58
+00:10:14,388 --> 00:10:23,327
+Peki bu eleman yine r zire n'de mi? Soru işareti. Yani bu ne demek? v, r zire n, bu toplama işlemi altında kapalı mı? Demek.
+
+59
+00:10:23,327 --> 00:10:25,408
+Şimdi bakalım şartımız ne?
+
+60
+00:10:25,971 --> 00:10:33,412
+Bu Reizer N'de olma şartı ne arkadaşlar? Bir entenli bileşen olacak ve bileşenler realseye olacak. Baktığımız zaman entenli bileşen var.
+
+61
+00:10:33,971 --> 00:10:48,412
+Ve bileşenler her birisi yine bir realseye. Dolayısıyla yine Reizer N'de bir eleman. Dolayısıyla arkadaşlar Reizer N bu toplama işlemleriyle birlikte toplama işlemine göre kapalı bir küme.
+
+62
+00:10:51,124 --> 00:11:02,744
+Bir şuna girelim. Değişme özelliği sağlanıyor mu? Evet sağlanıyor. x artı y. Ben burada şunları yerini değiştirebilirim. y bir artı x bir dersen sonuç değişmez.
+
+63
+00:11:04,424 --> 00:11:15,324
+y n artı x n. Bu da buradaki tanıma göre y vektörü ile x vektörü toplamıdır. Dolayısıyla arkadaşlar toplama göre değişmeli.
+
+64
+00:11:17,203 --> 00:11:39,004
+Üçüncüsü, birleşme özelliği ve sağlandığını zaten tanımdan görebiliriz. Dördüncüsü, her v vektörü için, bu burada olmayacak, v artı sıfır eşittir, sıfır olacağı şekilde bir, pardon, v olacağı şekilde bir birim vektörü toplamaya göre birim vektör olmalı.
+
+65
+00:11:39,004 --> 00:11:43,583
+Peki burada var mı toplamaya göre birim vektör? Sıfır vektörü, evet var.
+
+66
+00:11:44,628 --> 00:11:58,927
+sıfır vektörünü her birleşiğinin sıfır olan bir vektör olarak alırsam eğer, o zaman her x için x artı sıfır vektör eşittir, x vektörüdür, bunu sağlar. Bu da r üzeri m'de bir vektördür.
+
+67
+00:12:02,648 --> 00:12:10,788
+Ve ne diyor? Her vektör için toplam övüne tersi olan bir vektör olmalı. Buradaki her x vektörü için arkadaşlar, x diyelim, önemli değil.
+
+68
+00:12:11,668 --> 00:12:22,908
+x1, matris, xn dersek, toplama göre ters olan vektör nedir? Artı y, işte y1, yn eşittir, 0 olacak şekilde.
+
+69
+00:12:26,108 --> 00:12:36,548
+Bir vektör var mı? Bu y vektörü buradan şöyle seçilebilir. Eksi x1, eksi x2.
+
+70
+00:12:37,008 --> 00:12:50,208
+eksi x'en olarak seçersem, yani eksi x vektör olarak alırız arkadaşlar, o zaman her x vektör için, her bir x vektör için ters olan vektör aslında onun eksi bir katı olmuş oluyor.
+
+71
+00:12:50,728 --> 00:12:54,528
+Şimdi benzer şekilde biz 6, 7, 8, 9, 10'u da görebiliriz.
+
+72
+00:12:55,567 --> 00:13:02,748
+Mesela her r, r sayısı ve her v vektörü için, r çarpı v, v'de bir vektördür, vektör müdür bakalım.
+
+73
+00:13:03,475 --> 00:13:22,975
+Burada her r real sayısı ve her lambda real sayısı ve x ektör için tanımlanan şu eleman, x eleman değil x eleman için tanımlanan şu işlem ile birlikte burası bir real sayı, bir real sayı, bir real sayı.
+
+74
+00:13:23,327 --> 00:13:36,607
+Dolayısıyla, en tane vereceğim var. Rezere n'in bir elemanı olmuş oldu. Yani, bu rezere n kümesi, bu çarpma işlemi altında kapalı bir küme. Yani altıncı madde sağlamak oldu.
+
+75
+00:13:37,107 --> 00:13:49,687
+Diğer maddeleri arkadaşlar sağlamak. Mesela, bir çarpı x, x olmalı diyor her şey için, onuncu madde. Tanım gereğini buradan. Bir çarpı x, bir çarpı x bir, bir çarpı x iki.
+
+76
+00:13:50,196 --> 00:14:13,956
+1 çarpı xn. Buradaki işlem artık bildiğimiz real sıralardaki işlem. Çarptığım zaman x1, x2, xn yine buna x vektörünü verdi. Bunun gibi tüm maddelerin sağlanıldığını görebiliriz. Ve bu yüzden de r-n standart toplama ve çarpma işlemi altında bir vektör uzaydı. Bunu bilmemiz gerekiyor arkadaşlar.
+
+77
+00:14:17,299 --> 00:14:38,100
+standart, toplama ve çarpma işlemi ile birlikte bir vektör uzayı. Şimdi gelin ikinci önüne.
+
+78
+00:14:41,172 --> 00:14:55,592
+Mesela burada toplama işlemi bildiğimiz R², artık V eklemisi burada R² olarak alınmış. Bu R² üzerindeki toplama işlemin, yani iki vektörün toplamını biz yine bildiğimiz birleşen birleşen toplam olarak tanımlamışız.
+
+79
+00:14:57,012 --> 00:15:06,592
+Ama çarpma işlemine baktığımızda birleşen birleşen çarpma işlemi değil. Lambda çarpı A virgül B'yi A virgül lambda çarpı B olarak tanımlamışız.
+
+80
+00:15:07,124 --> 00:15:19,803
+Acaba bu işlem ile birlikte bu V kümesi bir vektör uzayımdır değil mi? Şimdi burada toplam işlemi standart toplam işlemi olduğundan ilk 5 maddeyi sağlar.
+
+81
+00:15:21,084 --> 00:15:22,104
+Şöyle diyelim.
+
+82
+00:15:26,580 --> 00:15:53,080
+Sandal toplama işlemi olduğunda ilk 5 maddeyi sağlar. O yüzden biz çarpma işlemi farklı verilmiş. O yüzden çarpma işleminin maddelerini kontrol etmemiz gerekli. Sonraki 5 maddeyi sağlayıp sağlamaları kontrol edeceğiz.
+
+83
+00:15:56,083 --> 00:16:09,963
+İlk maddemiz neydi? Bakalım. Altıncı madde yani. Çarpma işlemiyle alakalı. Bir kapalılık. İkincisi, işte R artı S çarpı ve R artı S çarpı ve bir bakalım. Altıncı maddeyi sağlıyor mu?
+
+84
+00:16:13,779 --> 00:16:27,519
+Altıncı madde. Şimdi lambda çarpı a, b, lambda çarpı a, lambda çarpı b olarak tanımlanmış. Bir real sayı, bir real sayı, o yüzden re karenin bir elemanı, altınamakta sağlanmış oldu.
+
+85
+00:16:27,519 --> 00:16:40,779
+Şimdi diğeri, r artı s çarpı v idi. v burada a, b şeklinde. Soru işareti, acaba bu r çarpı
+
+86
+00:16:41,620 --> 00:16:59,100
+A virgül B artı S çarpı A virgül B mi? Şimdi sol bir sola bakalım, sol tarafa. Tanım ne? Ne diyor bize? İlk birleşen sabit bırak, ikinci birleşeni R artı yani ikinci birleşeni lambdalı çarp. Buradaki R artı S lambdamız.
+
+87
+00:16:59,100 --> 00:17:08,159
+Şimdi sol tarafta ilk birleşen sabit kalacak. A virgül R artı S çarpı B.
+
+88
+00:17:09,299 --> 00:17:35,539
+Bakalım sağ tarafı işit mi? Yine buradaki tanıma uyarsak, a virgül ve çarpı b artı a virgül s çarpı b. Bunu devam ettirelim. Buradan topladığımızda arkadaşlar, neye eşit olacak bu? 2a virgül ve artı s çarpı b ye eşit oldu. Siz baktığınız zaman
+
+89
+00:17:36,627 --> 00:17:54,067
+Şu ikisi birbirine eşit değil. Burada A var, burada iki A var. Genel olarak eşit değil. A'ı sıfır alırsak eşit olur. Özel olması önemli değil. Genel olarak eşit olmak zorunda. Genel olarak eşit değil. Dolayısıyla arkadaşlar, yeni madde sağlanmıyor.
+
+90
+00:18:01,779 --> 00:18:15,860
+Verilen toplama ve çarpma işlemi ile birlikte, ile birlikte bir vektör uzayı değildir.
+
+91
+00:18:23,571 --> 00:18:25,131
+Var mı rank sorunuz buraya kadar?
+
+92
+00:18:43,059 --> 00:18:51,920
+Herhangi bir soru yok galiba. Geçiyorum o zaman. Evet, diğer bir örneğimiz R kare.
+
+93
+00:18:56,531 --> 00:19:06,331
+Üzerinde yine bir toplama ve çarpma işlemi var. Baktığımız zaman çarpma işlemi bildiğimiz sandal çarpma işlemi, yani bileşen bileşen.
+
+94
+00:19:11,667 --> 00:19:38,387
+çarpma, sandal çarpma işlemi. Buysa farklı. Nasıl verilmiş? A virgül B artı C virgül D işlemi, B virgül D olarak verilmiş. Yani birinci bileşenin, pardon birinci vektörün, birinci elemanın ikinci bileşenini al. İlk bileşeni yaz, ikinci.
+
+95
+00:19:39,124 --> 00:19:52,124
+elemanın ikinci birleşenini al ve buraya yani sadece ikinci birleşenlerini al yaz şeklinde bir toplam eşyalı tanımlanmış. Bakalım bu ilk beş maddeyi sağlıyor mu? Birden başlayalım.
+
+96
+00:19:52,124 --> 00:20:05,804
+Şer A, B ve C, D vektörü için topladığımız zaman B, C. Bu işlem altında renk renk kapalım. Evet burası yeni bir elemanın.
+
+97
+00:20:05,811 --> 00:20:14,611
+B'nin bir elemanı, o yüzden R'kare'nin bir elemanı, bu yüzden de R'kare bu toplam eşim altında kapalı bir küme.
+
+98
+00:20:15,191 --> 00:20:17,851
+İkincisi bize neyi söylüyordu? Değişmeli mi, değil mi?
+
+99
+00:20:19,371 --> 00:20:32,631
+Evet, yani A, B, artı C, D işlemi ile C, D artı A, B işleminin sonucu aynı.
+
+100
+00:20:33,556 --> 00:20:35,556
+Aynısı genel olarak değişmelidir.
+
+101
+00:20:37,556 --> 00:20:39,556
+Pardon. Aynısı değişmelidir.
+
+102
+00:20:39,556 --> 00:20:41,556
+Şimdi bakalım, sol taraf ne için?
+
+103
+00:20:42,556 --> 00:20:45,556
+Zaten buradaki verilmiş, B bölgünde.
+
+104
+00:20:46,556 --> 00:20:51,556
+Peki sağ taraf, bize neye söylüyordu? İkinci birleşenlerini yaz.
+
+105
+00:20:53,556 --> 00:20:55,556
+Ve ikinci birleşenleri sırası ile yaz.
+
+106
+00:20:56,556 --> 00:21:00,556
+Birincisi de ikinci birleşeni de, ikincisinin ikinci birleşeni...
+
+107
+00:21:01,652 --> 00:21:13,892
+B, D virgül B. Şimdi B virgül D, D virgül B'ye genel olarak eşit değildir. D ile B eşit olmadığı sürece eşit değildir. O yüzden arkadaşlar bu ikinci madde sağlanmaz.
+
+108
+00:21:14,451 --> 00:21:21,412
+Sağlanmadığı için ve bu toplama ve çarpma işlemi ile birlikte
+
+109
+00:21:25,332 --> 00:21:26,612
+vektör uzayı değiliz.
+
+110
+00:21:34,099 --> 00:21:35,619
+Evet, var mı renk sorunuz?
+
+111
+00:21:49,299 --> 00:21:56,099
+Bender şekilde üçüncü madde de sağlanmıyormuş. Biz ikinin de sağlanmaları görmüş olduk. Değişimli değil.
+
+112
+00:21:57,599 --> 00:22:06,719
+Başka bir örneğimiz, P burada bir lineer denklem sisteminin çözümü, homojen lineer denklem sisteminin çözümü olmak üzere.
+
+113
+00:22:07,359 --> 00:22:16,199
+X, Y, Z, 3'leri, X artı, Y artı, Z, 3'tir, 0. Kümesi üzerinde verilen işlem şu, elemanlarımız artık burada matrisler.
+
+114
+00:22:16,723 --> 00:22:31,144
+İşte bileşen bileşen toplama matrislerin. Bir de yine bildiğiniz bileşen bileşen çarpma. Bununla birlikte arkadaşlar aslında bir vektör uzayı olur.
+
+115
+00:22:38,483 --> 00:22:48,804
+Şimdi neden? Uzun uzun anlatmayacağım. Uzun uzun tek her maddenin üzerinden geçmeyeceğim. Önce birinci maddeye bakalım. Neden böyle? Mesela birinci madde bize neyi söylüyor? Buradan başlayalım.
+
+116
+00:22:51,264 --> 00:22:59,443
+Bu işlem sonucu yine P'de bir vektör mü? P'de bir eleman mı?
+
+117
+00:22:59,503 --> 00:23:09,264
+Ortaya çıkan şu matrisin P'de olabilmesi için şartımız ne? Şartımız bu. Toplamların sıfır olması gerekiyor.
+
+118
+00:23:09,524 --> 00:23:18,923
+Yani X1 artı X2 artı Y1 artı Y2 artı Z1 artı Z2 sıfır.
+
+119
+00:23:19,703 --> 00:23:24,503
+Birazdan göreceğiz ki sıfır. Şimdi zaten burası P'de.
+
+120
+00:23:25,172 --> 00:23:31,172
+Burası p de. Dolayısıyla x'i artı y'i artı z'i bir sıfır. O yüzden şöyle ayırabilirim.
+
+121
+00:23:33,172 --> 00:23:36,172
+Ben de her şekilde x'i artı y'i artı z'i bir sıfır.
+
+122
+00:23:39,347 --> 00:23:46,827
+Her ikisi sıfır olduğundan sonuç sıfır, o yüzden birinci maddemiz sağlanır. Yani neyi söyleyebiliriz birinci madde?
+
+123
+00:23:47,288 --> 00:23:52,827
+Bu P kümesi toplama, buradaki veriden toplama işlemi altında kapalı mı değil mi? Evet, kapalı.
+
+124
+00:23:53,688 --> 00:23:59,488
+İkincisi bize neyi söylüyor? Değişmeli mi, değil mi? Yani ben bunları yer değiştirsem yine aynı elemanı elde eder miyim?
+
+125
+00:23:59,488 --> 00:24:05,347
+Evet, burada x2, y2, z2 ile x1, y1, z1 toplasam.
+
+126
+00:24:06,067 --> 00:24:14,468
+ve bu işlemi göre yapsam, x2 artı x1, y2 artı y1, z2 artı z1 olur. O da birbirine işebilir. İklimatçı sağlanır.
+
+127
+00:24:15,468 --> 00:24:23,268
+B'ler şekilde arkadaşlar, diğer matkalar da sağlanır ve bu homojenlendirikler sistemin çözümü, bildiğimiz standart...
+
+128
+00:24:23,347 --> 00:24:35,887
+çözümün kümesi üzerinde bildiğimiz sandal toplama ve çarpma işlemi taramlandı arkadaşlar. Bu küme bir vektör uzayı, bu işlemlerle birlikte bir vektör uzayı olup diyoruz.
+
+129
+00:24:37,347 --> 00:24:38,587
+Şimdi bakalım.
+
+130
+00:24:41,227 --> 00:24:46,507
+Burada üçüncü dereceye kadar olan tüm polinomların kümesi var.
+
+131
+00:24:49,619 --> 00:25:13,619
+A0, A1, A2, A3 keyfi real sayılar. A3'i 0 alsam, A2'i 0'dan farklarsam ikinci dereceler. A2 ile A3'i 0 alsanız, A1'i 0'dan farklarsanız birinci dereceler. Bunun gibi sabitleri de elde edebiliriz. Üçüncü dereceye kadar olan, üçüncü dereceye dahil olmak üzere, tüm konuların kümesi P3. Bu küme üzerinde bildiğimiz...
+
+132
+00:25:14,291 --> 00:25:26,172
+toplama işlemi ve sıkıla ile çarpma işlemine göre bu küme bir vektör uzayıdır. O maddeyi sağlar, bir vektör uzayıdır deriz.
+
+133
+00:25:27,851 --> 00:25:34,531
+Diğer bir örneğimiz, ABC, yani real sayılar üzerinde iki çarpık tüm masterin kümesi.
+
+134
+00:25:40,064 --> 00:25:49,304
+ve bileşen bileşen çarpma işlemi altında arkadaşlar bir vektör uzayıdır. Bunları bilmemiz lazım. Artık bunların tek tek maddelerine girmeyeceğim.
+
+135
+00:25:49,304 --> 00:26:00,504
+Standart toplama aldığımızda, standart çarpma işlemi aldığımızda arkadaşlar bir vektör uzayı belirtilip, genel itibariyle her zaman olmaması olma değil.
+
+136
+00:26:00,504 --> 00:26:05,624
+Şimdi, sorumuz şu.
+
+137
+00:26:05,875 --> 00:26:27,255
+Mesela bir vektör uzayı aldık diyelim. Bu vektör uzayının içerisinde sonuçta bir küme, üzerine iki işlem var. Bu kümenin bir alt kümesini aldık. Yine bu alt kümenin vektör uzayı olup aynı işlemle ile birlikte bir vektör uzayı olup olmadığını kontrol etmek için yine 10 tane maddeye bakmaya ihtiyacımız var mı?
+
+138
+00:26:27,615 --> 00:26:35,915
+Alt vektör uzayında, yani bu tanım da şunu söylüyor, gerek yok, iki tane maddeye bakmamız yeterli diyecek bize.
+
+139
+00:26:36,915 --> 00:26:48,576
+Şimdi bir tanıma bakalım. V bir re vektör uzayı, yani real sayılar özel bir vektör uzayı ve V'nin boştan farklı bir alt kümlesine U diyelim.
+
+140
+00:26:49,844 --> 00:26:57,524
+Eğer bu U, V'deki ikili işlemlere göre bir vektör uzayı ise, U'ya V'li bir alt uzayı denir.
+
+141
+00:26:57,924 --> 00:27:17,124
+Şimdi şöyle düşünün, V burada bir küme, U da içinde bir küme, V bir vektör uzayı, verilen işlemlerle birlikte, eğer U da aynı maddeleri sağlıyorsa, bu işlemler için, o zaman U'ya V'li bir alt vektör uzayıdır diyoruz.
+
+142
+00:27:18,387 --> 00:27:45,488
+Burada bir şart teoremiz var. Şunu söylüyor arkadaşlar. Eğer o maddeyi sağlamak zorunda değil, iki maddeyi sağlıyorsa, o zaman alt vektör uzaytık diyeceğiz. Şimdi u'daki her vektör için u toplamaya göre kapalı.
+
+143
+00:27:47,955 --> 00:28:04,955
+ve çarpmaya göre kapalı ise arkadaşlar, buna gerek yok. U'ya yeni bir alt vektör uzayıdır deriz. Alt vektör uzayı ise aynı anda bir uzaydır, vektör uzayıdır. U'da bir vektör uzayı olmuş olur.
+
+144
+00:28:08,955 --> 00:28:10,955
+Şimdi toplama göre kapalıdır.
+
+145
+00:28:12,955 --> 00:28:13,803
+Toplamaya.
+
+146
+00:28:15,188 --> 00:28:17,188
+göre kapalı olmalı.
+
+147
+00:28:19,688 --> 00:28:21,188
+Çarpmaya
+
+148
+00:28:23,588 --> 00:28:24,588
+göre
+
+149
+00:28:25,688 --> 00:28:26,688
+kapalı
+
+150
+00:28:28,188 --> 00:28:29,188
+olmalı.
+
+151
+00:28:31,788 --> 00:28:33,788
+Bir örneklere bakalım. Mesela
+
+152
+00:28:42,932 --> 00:28:49,572
+Bildiğimiz, beşen beşen toplama ve çarpma işlemiyle birlikte bir vektör uzayı bu kadar denseydi eğer şunu yapacaktık.
+
+153
+00:28:50,432 --> 00:28:58,711
+Biliyoruz ki bu B kümesi, bu kümenin bir alt kümesi ve bu kümede bildiğimiz o işlemleriyle birlikte bir vektör uzayı.
+
+154
+00:28:59,312 --> 00:29:05,711
+Dolayısıyla bu küme, bunun bir alt kümesi olduğundan eğer o iki maddeyi sağlıyorsak,
+
+155
+00:29:06,644 --> 00:29:13,423
+Alt vektör uzayı olma şartlarını sağlıyorsa, o zaman bir alt vektör uzayıdır ve buradan da bir vektör uzayıdır diyecektir.
+
+156
+00:29:13,903 --> 00:29:26,644
+Bu zaten direkt verilmiş. Eğer işlem belirtmiyorsa arkadaşlar buradaki gibi, o zaman işlemimiz, yani büküme üzerindeki işlemimiz belirtilmediği için, standart toplama ve çarpma işlemi.
+
+157
+00:29:27,644 --> 00:29:30,624
+Şimdi bakalım, alt vektör uzayı mı değil mi? Birinci maddemiz neydi bizim?
+
+158
+00:29:33,140 --> 00:29:38,340
+İki elemanın toplamı yine B'de olmalı. O zaman iki tane eleman var.
+
+159
+00:29:39,340 --> 00:29:44,340
+A1, B1, 0, C1, Bd1.
+
+160
+00:29:45,539 --> 00:29:52,700
+Eleman artı A2, B2, 0, C2.
+
+161
+00:29:54,319 --> 00:29:55,220
+B'nin bir elemanı.
+
+162
+00:29:56,220 --> 00:29:59,140
+B'nin bir elemanı topladığım zaman.
+
+163
+00:30:00,147 --> 00:30:27,087
+Buradan neyeleceğim. A1 artı A2, B1 artı B2, köşegenlerden toplamışılmış, sıfır ve C1 artı C2. Şimdi sorum şu, plan ediyordu. Yine U'da olmalı. Yani yine okumet içerisinde kalmadı. Sorum şu, yine B'nin bir elemanı mı? Şimdi arkadaşlar, burası B'de bir elemansa, B'de eleman olmuş artı neymiş? C eşitir A artı B.
+
+164
+00:30:27,763 --> 00:30:53,043
+olmasıymış. Yani şu bileşen, üstteki iki bileşen toplama olacak. O zaman C1 eşittir, A1 artı B1. Buradan da C2 eşittir, A2 artı B2. Dolayısıyla, bunları ben toplarsam altı ağla ne elde ederim burada? C1 artı C2 eşittir, A1 artı A2 artı B1 artı B2'yi elde edelim. Yani birinci maddemiz,
+
+165
+00:30:53,715 --> 00:31:07,435
+Dolayısıyla bu şarj sağlandığı için bu şarj sağlamlığından elemandır, B'dir deriz. Bu durumda bu B kümesi toplama işlemi altında kapalı bir küme.
+
+166
+00:31:07,995 --> 00:31:14,076
+Yine beğenilen şekilde çarpma işlemi ile çarpma işlemi altında kapalı mı? Bana bakalım. A, B.
+
+167
+00:31:14,675 --> 00:31:40,255
+0c çarparsam, lambda çarpı a, lambda çarpı b, 0, lambda çarpı c. Şimdi burası benim bir elemanı. B'de bir vektör aldık, lambdaya çarptık. B'de bir eleman mı? B'de bir eleman olduğu için burası c eşittir a artı b. Bunu ben lambdaya çarparsam her iki tarafım, lambda çarpı c eşittir, lambda çarpı.
+
+168
+00:31:40,948 --> 00:32:04,028
+A artı B, buradan lambda çarpı A ve lambda çarpı B. Bu şart sağlandı. Yani şu bileşen, üstteki iki bileşen toplama olmalı idi. Evet, şartımız sağlandı. O yüzden arkadaşlar, B'nin bir elemanı olduğundan her iki malı sağlanıyor. Olduğundan B, şu altı vektör uzayı şartı.
+
+169
+00:32:08,500 --> 00:32:12,579
+Alt, vektör, uzay.
+
+170
+00:32:13,839 --> 00:32:15,119
+Alt vektör uzay.
+
+171
+00:32:18,867 --> 00:32:22,607
+Yani B, bu kümenin bir alt vektör uzayıdır deriz.
+
+172
+00:32:25,248 --> 00:32:30,268
+Bakalım, A kümesi acaba R kareli bir alt vektör uzayı mıdır?
+
+173
+00:32:30,367 --> 00:32:33,087
+Şimdi burada yine R kare üzerindeki işlem verilmemiş.
+
+174
+00:32:33,607 --> 00:32:37,268
+Verilmemiş o zaman sanat toplama ve çarpma işlemini düşüneceğiz arkadaşlar.
+
+175
+00:32:38,447 --> 00:32:40,567
+Birinci maddemiz neydi? Alt vektör uzayı olmamda.
+
+176
+00:32:41,467 --> 00:32:44,907
+Evet, alt kümesi. İkincisi, birinci maddemiz.
+
+177
+00:32:45,311 --> 00:32:47,311
+Toplamaya göre kapalı olmalı.
+
+178
+00:32:47,311 --> 00:32:49,311
+Şimdi burada A'daki elemanların formatı ne?
+
+179
+00:32:49,311 --> 00:32:53,311
+İşte birinci birleşen keyfi ikinci birleşen sıfır olacak.
+
+180
+00:32:53,311 --> 00:33:04,311
+O zaman x virgül sıfır, x bir virgül sıfır, artı x iki virgül sıfır toplarsak, x bir artı x iki virgül sıfır.
+
+181
+00:33:05,299 --> 00:33:31,940
+Yine baktığımız zaman, ilkleşen keyfi, ikini birleşen sıfır, A'da bir eleman, bir yıvı artı sağlanmış oldu. İkin yıvı artı yine belirlenmiştir. Lambda çarpı x, birgün sıfır diyecek bir şey. Lambda çarpı x, birgün sıfır, yine A'da bir eleman, çünkü ikini birleşen sıfır, burada sağlanmış oldu. O zaman bu A kümesi, d karenin bir alt vektör uzayıdır deriz.
+
+182
+00:33:35,508 --> 00:33:39,827
+Evet, W'ye bakalım. A, B, C, öyle ki A sıfırdan bir geçit.
+
+183
+00:34:01,044 --> 00:34:27,403
+Mesela ikinci maddeye bakalım. Ne diyordu bize? Her lambda real sayısı ve her abc vektörü için ne olmalı? Lambda çarpı abc vektörü yine w'de bir vektör olmalı. Soru işareti. Acaba böyle mi? Mesela ben lambdayı eksi bir alsam.
+
+184
+00:34:28,244 --> 00:34:52,423
+abc'yi de şöyle alsam abc işte 1, 1, 1 olsun. Çartımız da sadece ilk reşe sıfırdan büyük olması. O yüzden bu vektör, double double vektör ise, eksi 1 çarpı, 1, 1, 1, ne olacak? Eksi 1, eksi 1, eksi 1 olmuş orada. Peki bu vektör double double vektör mü? Değil. Çünkü eksi 1, ee.
+
+185
+00:34:53,427 --> 00:35:01,248
+sıfırdan büyük eşit değil arkadaşlar. O yüzden W'nin bir vektörü değil. Olmadığı için iklimat sağlanmaz.
+
+186
+00:35:03,268 --> 00:35:14,688
+Dolayısıyla bu W kümesi R karenin bir alt vektör uzayı değildi. Yani ne olmuş oldu? Şu arkadaşlar. W'dan bir vektör aldım.
+
+187
+00:35:16,108 --> 00:35:20,568
+Bir vektör olsun.
+
+188
+00:35:21,204 --> 00:35:46,304
+Bunu ben eksi 1'e çarptığım zaman, eksi 1 vektörü, double'un dışında bir vektör olmuş oluyor. Örneğin burada eksi 1, eksi 1, eksi 1. Ne olması gerekiyor? Double'daki her vektörü, her real sayı ile çarptığında, yine double içerisinde bir vektör elde etmek. Ama ben burada dışına çıktım. Dolayısıyla arkadaşlar, double'un dışında bir vektör elde etmiş olduk.
+
+189
+00:35:47,507 --> 00:35:51,507
+O zaman W bir alt elektör uzayı değildir diyoruz.
+
+190
+00:35:54,108 --> 00:36:00,507
+Yine başka bir örneğimiz, Röqüp'ün bir alt kümesi.
+
+191
+00:36:01,608 --> 00:36:08,108
+Elemanlara baktığımızda şartımız ne? Elemanların karısını toplamak biriler küçük eşit olmalıymış.
+
+192
+00:36:09,307 --> 00:36:11,307
+Bu bir alt elektör uzayı mı? Değil.
+
+193
+00:36:11,707 --> 00:36:13,307
+Yine mesela
+
+194
+00:36:14,228 --> 00:36:25,547
+W'da iki vektör alalım, bu şartı sağlayan. Örneğin, bir, sıfır, sıfır, W'nün bir vektörü. Yine beyazlar şekilde sıfır, bir, sıfır, W'nün bir vektörü.
+
+195
+00:36:26,168 --> 00:36:38,827
+Peki bu ikisini toplasam, acaba yine, yani birinci işlem neydi bizim, birinci maddemiz? Her vektörün toplamı, her iki vektörün toplamı yine W'da bir eleman olmalı.
+
+196
+00:36:41,472 --> 00:36:50,952
+0, 0, artı, 0, 1, 0. Toplarsam buradan, 1, 1, 0. Direktörünü elde etmiş olurum.
+
+197
+00:36:50,952 --> 00:37:01,192
+Şimdi, öbürünü bir eleman alalım. Eleman olmuş artı ne? Karelerin toplamı birden küçük eşit olmalı diyor.
+
+198
+00:37:01,192 --> 00:37:06,872
+Toplarsak, birin karesi, artı birin karesi, artı sıfır eklemiştir, 2.
+
+199
+00:37:07,731 --> 00:37:18,591
+Küçük eşit bir değil, sağlamıyor. Sağlamadığı için W toplama işlemi altında işlemine göre
+
+200
+00:37:22,099 --> 00:37:23,099
+Kapalı
+
+201
+00:37:24,380 --> 00:37:25,380
+Değil
+
+202
+00:37:26,660 --> 00:37:28,660
+Dolayısıyla arkadaşlar, burada
+
+203
+00:37:28,900 --> 00:37:31,780
+Ne diyoruz? W1 Alt Böktör uzayı
+
+204
+00:37:35,539 --> 00:37:38,500
+Bu rekim bir alt ayakta uzayı değildir, diyoruz.
+
+205
+00:37:49,012 --> 00:37:50,692
+Evet arkadaşlar, var mı sorunuz?
+
+206
+00:38:09,235 --> 00:38:11,015
+Soru yok galiba. O zaman
+
+207
+00:38:11,015 --> 00:38:20,315
+O zaman arkadaşlar haftaya görüşmek üzere. Kendinize iyi bakın.
+
+208
+00:38:24,596 --> 00:38:25,995
+Pahalı gelsin hocam, iyi günler.
+
+209
+00:38:26,635 --> 00:38:27,315
+Teşekkür ediyorum.

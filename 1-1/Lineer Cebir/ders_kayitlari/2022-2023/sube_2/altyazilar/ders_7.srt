@@ -1,0 +1,1523 @@
+1
+00:01:49,715 --> 00:01:59,115
+Merhaba arkadaşlar. Birazdan başlatacağım dersi. Sınıftayım şu anda. Geçen hafta olduğu gibi yine kimse yok ama beklemek zorundayım. Tamam mı? Birazdan dersi başlatacağım.
+
+2
+00:04:11,764 --> 00:04:14,164
+Evet, sesimi duyuyorsunuz değil mi arkadaşlar?
+
+3
+00:04:16,804 --> 00:04:17,444
+Evet hocam.
+
+4
+00:04:18,144 --> 00:04:19,064
+Sorusu olan var mı?
+
+5
+00:04:22,740 --> 00:04:29,340
+Gönderdiğim e-postayı aldınız mı? Toplu e-posta gönderdim size. Sınav günü ve saatiyle ilgili, müfredatla ilgili.
+
+6
+00:04:35,507 --> 00:04:58,887
+Yani o emeği almadık diyen varsa içinizde son defa hatırlatalım. Yani size duyurmuş olmaları lazım. Bizim bölüm sayfasında da ilan edildi. Bayramdan sonra, 28 Nisan, Cuma diye hatırlıyorum. Öğleden sonra saat 4-6 arası test usulü online sınav yapacağız arkadaşlar. Tek sınav, %60 ağırlıklı ve müfredat olarak da ilk 7 hafta.
+
+7
+00:05:00,339 --> 00:05:26,339
+Ben şu anda sınıftayım ama kimse yok sınıfta. Yani tek bir öğrenci bile yok. Geçen hafta da böyleydi. Yani hibrit eğitimi dedikleri buysa, yani önümüzdeki haftada bayram haftası, yani herhalde iki hafta gelmeyen bayram haftası hiç gelmez. Yani bu şekilde mi tamamlayacağız acaba sömestri? Yani insan düşünmeden edemiyor. Yani bunun...
+
+8
+00:05:26,387 --> 00:05:41,887
+Online eğitimden bir farkı yok ki, ben öğrenci görmedikten sonra sınıfta ismi hibrit olmamış bir anlamı yok. Var mı içinizde sorusu olan, şimdiye kadar anlatıklarımdan, yani şu kavramı anlamadım, oturmadı dediğiniz bir yer varsa, kısaca özel yapabiliriz.
+
+9
+00:05:42,727 --> 00:05:47,427
+Yoksa, en son dersini anlatmıştım, lineer homojen denklem sistemleri.
+
+10
+00:05:48,115 --> 00:06:10,555
+Onunla ilgili bir örnek çözerek o faslı kapatalım. Kremer yöntemine geçelim. Bu da lineer denklem sistemlerinin çözümü için elimizde olan bir yöntem daha. İlave bir yöntem olarak düşünün. Kremer yöntemini, yani determinantları kullanıyor özünde. Determinant hesabı yapmayı bilen adam için kremer yöntemi çocuk oyuncu.
+
+11
+00:06:11,348 --> 00:06:27,968
+Öğrenciler de nedense bunu seviyorlar, yani bu kramer yöntemini. Başta olduğu için herhalde, yani 7 haftalık müfredat olduğuna göre, lineer denklem sistemlerinden en az 3 soru, hatta ben ortalama 4 soru derim ona, gelir.
+
+12
+00:06:29,127 --> 00:06:33,948
+Birisi de kramer olur yani büyük bir ihtimalle. Öğrenci odaklı düşünürsek komisyon.
+
+13
+00:06:33,948 --> 00:06:35,728
+Şimdi arkadaşlar bakın.
+
+14
+00:06:36,851 --> 00:06:51,451
+Şöyle notlarım uygulamasını açayım. Tamam mı? Öbür sınıfa yaptığım karalamaları kullanabiliriz. Lineer denklem sistemleri. Ne olduğunu biliyorsunuz. Tamam mı?
+
+15
+00:06:52,751 --> 00:06:57,491
+Homojen olmayanı var, homojen olanı var. Yani homojen olmaması ne demek?
+
+16
+00:06:58,612 --> 00:07:11,872
+Şurada gördüğünüz, bakın tekrar yazayım altına, ax eşittir b. Bu sistemin kompak yazılışı. Değil mi? Açık açık yazacak olursam, işte kaç tane bilinmeyen, ne kadar lineer denklem varsa sistemde hepsini satır satır yazmam lazım.
+
+17
+00:07:12,232 --> 00:07:26,012
+Burada a'nın, x'in, b'nin kim olduğunu söylemiştik. A katsayılar matrisi. Katsayılar matrisinden kimi kastediyorum? İşte o sistemdeki değişkenler veya bilinmeyenler, x1, x2, xn'ler, onların başındaki katsayılar,
+
+18
+00:07:26,644 --> 00:07:34,004
+ile monte edilen matrisi kastediyorum, A ile. X çözüm vektörüdür. Yani bilinmeyenlerin oluşturduğu sütun matrisi olarak düşünebilirsiniz.
+
+19
+00:07:34,124 --> 00:07:39,624
+B'de her lineer denklemin sağında bir sabit var. O sabitleri bir sütun olarak sıralarsanız o matrisi kastediyorum.
+
+20
+00:07:40,063 --> 00:07:47,024
+Yani bu B sıfır olabilir, sıfır olmayabilir. Eğer sıfırdan farklıysa homojen olmayan lineer denklem sistemini kastediyoruz.
+
+21
+00:07:47,484 --> 00:07:51,984
+Homojen değilse homojen değil denmez zaten. Yani kısaca lineer denklem sistemi denir.
+
+22
+00:07:52,596 --> 00:07:58,036
+B özel olarak sıfır olduğunda, bakın aynen şurada olduğu gibi, homojen olduğunu söyleriz, tamam mı? Tırnak içinde yazayım.
+
+23
+00:07:58,696 --> 00:08:04,875
+Yani eğer B sıfır değilse, homojen değil demeye gerek duymayız. Bilmem anlatabiliyor muyum.
+
+24
+00:08:05,015 --> 00:08:10,096
+Şimdi işte Katserler matrisinin şu, çözümün az önce sözel olarak söylediğim şeyi şimdi.
+
+25
+00:08:10,644 --> 00:08:25,043
+Yani, üzerlerine ok koyarak göstermiş olayım. Tekrar tekrar yazmamak için. Yani bu denklem sisteminde kaç tane denklem olduğunu nereden anlayacaksın? Bu katseler matrisinin boyutuna bakarak tabii ki, satır sayısı değil mi? Satır sayısı.
+
+26
+00:08:26,043 --> 00:08:36,783
+M tane satır olduğuna göre, bu M adet lineer denklem olduğunu işaret eder değil mi? En tane bilinmeyen, tabii ki sabit sütun matrisi de.
+
+27
+00:08:37,395 --> 00:09:04,515
+satır sayısı kadar komponente olan bir matris olacak. Şimdi bu hatırlatmayı yaptıktan sonra, geçen ders bu örneği size çözdüm mü bilmiyorum, dersi tekrardan kayıttan ben izlemedim son kısmını, nerede kaldım diye. Ama şu örneği, kitaptaki şu örneği pas geçmiş olabiliriz. Size de çözelim. Gördüğünüz gibi homojen bir denklem sistemi değil mi? Yani B eşittir sıfır. Yani sütun matrisi olan B, komple sıfırlardan oluşan bir matris. Bunun çözümü var mı yok mu? Soru bu.
+
+28
+00:09:05,844 --> 00:09:22,204
+Tamam mı? Soru bu arkadaşlar. Bu sistemin çözümü var mı, yok mu? Şimdi, trivial çözüm her zaman var dedik değil mi? Neyi kastediyorum? Şunu bakın, trivial çözüm, sıfır çözüm, aşikar çözüm. İstediğiniz birini kullanabilirsiniz bu kelimelerden.
+
+29
+00:09:22,528 --> 00:09:31,368
+X'in, Y'nin, Z'nin aynı anda sıfır olması durumunda bu denklemlerin üçünün de sağlandığı belli, aşikar değil mi? O yüzden aşikar çözüm diyoruz.
+
+30
+00:09:32,028 --> 00:09:37,668
+Yani burada o zaman sigma'nın çözümü var mı derken neyi kastediyoruz? Sıfır olmayan bir çözümü de var mı? Değil mi?
+
+31
+00:09:38,163 --> 00:10:03,683
+Sıfır olmayan çözümü var mı? Ya homojen denklem sisteminin çözümü var mı dendiği zaman otomatikman bu anlaşılır, örtülü olarak. Sıfır olmayan bir çözüm, trivial olmayan bir çözüm var mı? Peki, bunu nasıl buluruz? Yani homojen veya değil. Lineer denklem sistemlerinin çözümü için bizim elimizde bir prosedür var değil mi? Belli adımları olan bir prosedür var. O prosedürü işleteceksiniz, yani homojen.
+
+32
+00:10:04,080 --> 00:10:31,539
+Sisteminiz homojen diye başka bir metot veya prosedür aramaya gerek yok. O prosedür de nasıl başlıyordu? Genişletilmiş kat sayılar matrisi. Bakın şunu kastediyorum. Genişletilmiş kat sayılar matrisini yazıp, şu gördüğünüz matris, yani sistemi gördüğünüz anda şu matrise geçiş yapabilirsiniz değil mi? Bunlar, yani sistemden matrise, matristen sisteme geçiş var.
+
+33
+00:10:32,019 --> 00:10:37,579
+Genişletilmiş katserler matrisini biliyorsanız bir sistemin, sistemi açık tarzda yazarsınız.
+
+34
+00:10:38,879 --> 00:10:48,019
+Tersinden eğer açık tarzda verildiyse, yani her bir lineer denklem verildiyse, bilinmeyenler kombinasyonu cinsinden, o zaman da genişletilmiş matrisi yazarsınız değil mi?
+
+35
+00:10:48,259 --> 00:10:51,480
+Bunları söylemiştik daha önceden. Şimdi genişletilmiş katserler matrisini yazdık.
+
+36
+00:10:52,079 --> 00:10:54,680
+Tabii ki son sütün sıfır değil mi? Komple sıfır.
+
+37
+00:10:56,480 --> 00:10:57,839
+Şimdi bu matrisi ne yapacağız o zaman?
+
+38
+00:10:58,772 --> 00:11:06,272
+Ne yapacağımızı hatırlayan var mı? Söylemek isteyen. Yani bu kadarını olsun hatırlayan var mı? Veya söylemek isteyen var mı?
+
+39
+00:11:17,299 --> 00:11:31,599
+Evet, bunu satıcı indirgenmiş forma indireceğiz değil mi arkadaşlar? O zaman bakalım. Ne yapmamız gerekiyor? Şimdi bakın, birinci satırın, şunları sileyim isterseniz, yani öbür sınıf için karalamıştım.
+
+40
+00:11:33,919 --> 00:11:38,119
+İlk sütunu bu matrisin, eksi 3, 2, 4. Silip tekrar yazalım, eksi 3.
+
+41
+00:11:43,635 --> 00:11:51,015
+Eksi 3, 2, 4. Şimdi şu matrisi, satırca indirgenmiş forma getireceğim.
+
+42
+00:11:55,187 --> 00:12:21,207
+Hangi işlemleri, elementer satış işlemlerini uygulamam gerekiyor? Bakın, matrisin sıfırdan farklı ilk elemanı eksi üç. Bunun pivot olması gerekiyor, yani bir olması gerekiyor. Bunu bir yapmak için eksi bir bölüşle çarpabilirsiniz ilk satırı, değil mi? Ama bunu yapmayacağım ben. Başka ne yapabiliriz? Söylemek isteyen var mı? Şu eksi üçü bir haline getirmek için.
+
+43
+00:12:22,035 --> 00:12:26,395
+Yapabileceğim elementer işlem nedir? Eksi bir bölü üçle çarpmak dışında ilk satır.
+
+44
+00:12:26,435 --> 00:12:28,775
+Hocam, eksi üçe bölebiliriz.
+
+45
+00:12:29,515 --> 00:12:33,395
+Aynı şeyi söylüyorsun ama. Eksi üçe bölmekle eksi bir bölü üçle çarpmak aynı şey.
+
+46
+00:12:34,275 --> 00:12:34,755
+Ben nasıl?
+
+47
+00:12:35,355 --> 00:12:37,435
+Başka bir şey söyle. İyice bak mesela.
+
+48
+00:12:37,755 --> 00:12:40,715
+Hocam, iki satırı birinci satıra eklesek olur mu?
+
+49
+00:12:41,295 --> 00:12:41,615
+Nasıl?
+
+50
+00:12:42,336 --> 00:12:44,215
+Üçüncü satırı birinci satıra eklesek.
+
+51
+00:12:44,635 --> 00:12:45,295
+Evet, olur.
+
+52
+00:12:47,556 --> 00:12:48,076
+Başka?
+
+53
+00:12:53,331 --> 00:13:06,251
+Arkadaşınızın söylediği olur arkadaşlar. Ama başka yolları da var. Çareler tükenmiyor yani. Başka görebilen var mı? Ötekini görebilen var mı?
+
+54
+00:13:06,271 --> 00:13:08,771
+Hocam, üçü bir ekleyebiliriz.
+
+55
+00:13:09,692 --> 00:13:11,351
+Üçü bir ekleyebiliriz dedi zaten arkadaş.
+
+56
+00:13:11,351 --> 00:13:14,471
+Veya üçünü ikiyle çarpıp bir ekleyebiliriz.
+
+57
+00:13:14,471 --> 00:13:18,951
+Şimdi son söylediğim farklı oldu işte diğer arkadaşının söylediğinden. Şimdi bak.
+
+58
+00:13:19,572 --> 00:13:46,152
+Arkadaşlar, ilk, az önceki arkadaşının söylediği şuydu, üçüncü satırı dedi ki bana, yani bir ile çarp, kendisini al yani, birinci satıra ilave et dedi. Tamam, bu okey, tamam mı? Senin söylediğinde ikinci satırı iki katını al, birinci satıra ilave et. Niye? İki, iki ile çarpıp, eksi üç ile toplarsan bir olur, bu da olur. Bunlardan istediğin birini kullan, hiç fark etmez. Hatta ilk satırı eksi bir bölüşle çarp, o da olur.
+
+59
+00:13:46,964 --> 00:13:53,764
+Ben kitabın izlediği sırayı takip edeyim. Şunu kullanacağım müsaadenizle. B'yi, tamam mı?
+
+60
+00:13:55,404 --> 00:14:03,324
+Şimdi, eksi üçü bir yaptıktan sonra, nasıl ama? İkinci satırın iki katını ilk satıra ilave etmek suretiyle.
+
+61
+00:14:05,244 --> 00:14:12,324
+Sonraki aşamada ne yapmam gerekiyor? Bakın şöyle yazalım. Tamam, bunu yaptık. Elimdeki matris, mavi kutu içine alayım. Şu.
+
+62
+00:14:13,460 --> 00:14:40,360
+Elde ettiğim matris bu arkadaşlar değil mi? Son iki satır değişmedi bakın biraz daha kaydedeceğim ekrana matrisin orijinalini de görebilirsiniz diye. Bakın son iki satır aynen duruyor. Değil mi? Son iki satır bakın mavi çizginin altına bakın aynen duruyor. İlk satır güncellendi haliyle. Bir, on iki, bir, sıfır olarak güncellendi. Peki bu bir pivot. Bunun altındaki herkes sıfır olmalı değil mi?
+
+63
+00:14:41,716 --> 00:14:49,375
+Evet olmalı. O zaman altındaki elemanlar 2 ve 4'ü sıfırlamam gerekiyor değil mi? E nasıl sıfırlarım bunu? Bakın buraya yazmışım.
+
+64
+00:14:49,416 --> 00:14:53,176
+Birinci satırı eksilerle çarpıp 2 ve 3 ekleyebiliyorsun.
+
+65
+00:14:53,635 --> 00:15:06,296
+Birinci satırını eksi 2 katını ikinci satıra ilave edelim. O da burada bakın. Sonra eksi 4 katını da son satıra ilave edersek o da burada. O zaman birinci sütunu olması gerektiği gibi elde eder miyim? Elde ederim.
+
+66
+00:15:07,251 --> 00:15:25,671
+Değil mi? Son iki satır güncellendi artık arkadaşlar. Bakın şu matriste, şu matriste son iki satır güncellendi. Çizgiyi çizeyim, ona göre bakın. Çizginin altındaki iki satıra bakın. Artık bunlar yeni satırlarım. Şimdi eksi on dokuzu bir yapmam lazım. Neden? Çünkü ikinci satırın pivotu bu.
+
+67
+00:15:33,331 --> 00:15:51,971
+Çarpabiliriz, değil mi? Burada mesela eksi birbirli on dokuzda çarpmayı deniyorum. Çünkü bu satırda sıfır olmayan tek elemanı eksi on dokuz. Öbürleri sıfır olduğu için, yani kesili bir sayıla çarpmak, sayıları karmaşık hale getirmiyor. Yani kesili sayılar doğurmuyor. Anlatabiliyor muyum toplama çıkarmak için, yapmak için?
+
+68
+00:15:52,884 --> 00:16:11,064
+Dikkat ederseniz, yani kesili sayıyla bir satırı çarpmayı pek tercih etmiyoruz. Neden? Çünkü bunu yaptığında diğer sayılar kesili sayı haline dönüyor. Onlarla toplama çıkarma yapmak, yani güç olabilir. Güç değil de, yani hata hata yapabilirsin değil mi? Tam sayılarla toplama çıkarma yapmak daha pratik tabii ki.
+
+69
+00:16:11,744 --> 00:16:19,884
+Şimdi eksi 19'a bölelim veya eksi 1 bölü 19'a çarpalım ikinci satırı. Çarptık, o zaman 1 olması gereken yerdir. Ama bunun...
+
+70
+00:16:20,211 --> 00:16:45,451
+satırca indirgenmiş eşelon formda olabilmesi için pivot haricinde bu sütunda herkesin sıfır olması gerekir. Bu durumda hedefimde kim var? Üstündeki 12, altındaki eksi 9. Bunları da sıfırlamak nasıl mümkün? Bakın altına yazmışım kullandığım işlemi. Yani ikinci satırın işte 9 katını 3'ün satıra ilave ederseniz, onu da bakın mavi çizgiyle göstereyim şu, eksi 9 sıfır olur. Değil mi?
+
+71
+00:16:45,875 --> 00:17:04,615
+Sonra ikinci satırın eksi on ikinci katını, birinci satıra ilave ederseniz, o da burada bakın, on ikiyi de sıfır yapmış olurum. Böylece ikinci satırın pivotunun bulunduğu sütunda bir haricinde herkes sıfır olur, bakın. Birinci sütun da tam olmasını gerektiği gibi, ikinci sütun da aynı şekilde.
+
+72
+00:17:11,955 --> 00:17:39,135
+Olması gereken yerde değil. Bir yerine eksi yedi var. İyi de eksi yediyi bir yapmak kolay. Eksi bir bölü yediyle çarparsın bunu. Değil mi? Bir olur. Bakın şu, bir olur. Bu bir olduktan sonra da ne yaparsınız? Bakın bunun bulunduğu sütun, üçüncü sütun şöyle. Eksi yediyi bir yaptık. Şunu da sıfırlamamız gerekecek. Öyle değil mi? Kitabınızda var bu örnek arkadaşlar.
+
+73
+00:17:39,955 --> 00:17:54,355
+Biri de sıfırlamam gerekecek. Peki, eksi yedi bir olduktan sonra birinci satırda tam üstündeki biri sıfırlayabilmek için ne yapmam lazım? Üçüncü satırın eksi bir katını birinci satıra ilave etmem lazım. İşte bunu da yaparsanız bulacağınız matris budur arkadaşlar.
+
+74
+00:17:56,435 --> 00:18:02,355
+Tamam mı? Bu matrisin okumasını yapabiliyorsanız sizin için artık...
+
+75
+00:18:02,784 --> 00:18:14,284
+sürecin sonu görünmüş demektir. Bakın, son satırdan, önceki satırlara geçiş yaparak gidiyorduk değil mi? Gauss, Jordan indirgeme yöntemi tam da böyle bir şeydi zaten.
+
+76
+00:18:15,044 --> 00:18:22,804
+Şimdi, son satıra bakalım. 0, 0, 1, 0. Bu ne demek? Z eşittir, 0 demek. Bu matrisi okumayı bilmeyen var mı içinizde arkadaşlar?
+
+77
+00:18:24,184 --> 00:18:28,284
+Bak, elde ettiğim satırca indirgenmiş eşelon form, isterseniz ona bir C.
+
+78
+00:18:28,692 --> 00:18:38,012
+Burada yaptığım gibi bakın, üstünden geçeyim. Hatta şöyle, buraları biraz temizleyelim. Tamam mı? Şöyle.
+
+79
+00:18:43,635 --> 00:19:04,795
+Şöyle, bakın son satırı okuyalım. Bu z eşittir sıfır demek. Bir önceki satıra bakalım. Bu y eşittir sıfır demek. Bu da x eşittir sıfır demek. Yani bu ne demek? Bu homojen sistemin trivial çözüm dışında bir çözümü yok demek. Yani tek çözüm var, o da her halükarda mevcut olan aşikar çözüm.
+
+80
+00:19:05,587 --> 00:19:21,087
+Şimdi rankları mesela kullanmadım, gerek de yok, o kadar yani rafine bir şekilde çıktı ki matris, değil mi? Rankları kullanarak da isterseniz, yani bunu yorumlayabilirsiniz tabii ki, nasıl yorumlayacaksınız?
+
+81
+00:19:32,468 --> 00:19:44,228
+A matrisinin rangını söyleyebilirsiniz. Değil mi arkadaşlar? Bu matrise bakıp A matrisinin rangını söyleyebilirsiniz. Bu satırca indirgenmiş formda bir matris. Sıfır olmayan satırların sayısı A'nın rangı değil mi? Üç.
+
+82
+00:19:45,968 --> 00:20:00,000
+Genişletilmiş matris olarak bakın. Şöyle, uzun satırları dikkat alın. O zaman da A sıfır, genişletilmiş matrisin rangı, bu da satırca indirgenmiş formda, bunun da sıfır olmayan satırları...
+
+83
+00:20:00,000 --> 00:20:21,200
+Ranklarının sayısı 3. Bunlar birbirine eşit. Sistemde zaten X, Y, Z olmak üzere 3 bilinmeyen vardı. Değil mi? Ranklarının birbirine eşit ve de bilinmeyen sayısına eşit olduğu durumda prosedür bize ne diyordu? Tek çözüm var diyordu. Değil mi? Sistem homojen olduğu için tek çözüm de 0 çözümdür tabii ki.
+
+84
+00:20:21,652 --> 00:20:29,251
+Ama dediğim gibi bakın eğer yukarıdaki matrisin yani satırca indirgenmiş forma getirdiğiniz, dönüştürdüğünüz matrisin şunu kastediyorum bakın.
+
+85
+00:20:29,632 --> 00:20:34,652
+Okumasını yapmayı biliyorsanız yani aslında üstü örtülü bir şekilde rangı da kullanmış oluyorsunuz yani.
+
+86
+00:20:36,632 --> 00:20:38,412
+Tek çözüm var o da sıfır çözüm arkadaşlar.
+
+87
+00:20:39,632 --> 00:20:41,892
+Şimdi gelelim kremer yöntemine.
+
+88
+00:20:43,831 --> 00:20:46,652
+Kremer yöntemine gelelim.
+
+89
+00:20:47,231 --> 00:20:48,791
+Sormak istediğiniz bir şey var mı buraya kadar?
+
+90
+00:20:52,211 --> 00:21:03,392
+Hocen sistemlerle söylememiz gereken şeyleri söyledik. Bakın, kremer yöntemi nasıl bir yöntem, hangi tip lineer denklem sistemlerine uygulanır buna bir bakalım.
+
+91
+00:21:03,992 --> 00:21:13,052
+Şimdi bir defa bu yöntemi uygulayabilmeniz için bilinmeyen sayısı kadar sisteminizde denklem olması gerekiyor.
+
+92
+00:21:13,971 --> 00:21:20,831
+Bu da şu demek, sistemin kat sayılar matrisi var ya, bunu şöyle yazalım bakın, kompakt formda yazıp öyle konuşalım isterseniz.
+
+93
+00:21:21,791 --> 00:21:26,011
+Sistemin kat sayılar matrisinin kare matris olması gerekir.
+
+94
+00:21:26,632 --> 00:21:31,811
+En bilinmeyen varsa, en adette denklem var.
+
+95
+00:21:31,811 --> 00:21:34,831
+Bir, iki, bakın en adet denklem var. Tamam mı?
+
+96
+00:21:34,871 --> 00:21:39,632
+Dolayısıyla A'nın n çarpı n kare matris olması gerekiyor ama yetmez.
+
+97
+00:21:40,243 --> 00:21:52,463
+determinantının da sıfır olmamasını istiyor bu yöntem. Tamam mı? Bu durumda çözüm vektörünün kim olduğunu söyleyecek şimdi aşağıda. Tamam mı?
+
+98
+00:21:52,803 --> 00:22:01,783
+Tekrar ediyorum, bakın kramer yöntemini uygulayabilmeniz için katseler matrisinin kara matris olması gerekiyor. Bu ne demek? Bilim mensajı kadar denklem olması gerekiyor.
+
+99
+00:22:02,355 --> 00:22:16,395
+Artı, bu katseler matrisinin regüler olması gerekiyor. Değil mi? Determinantı sıfır değilse bir matrisin, bunun ancak ve ancak neye denk olduğunu biliyoruz biz. A'nın tersi olan bir matris olmasına denk olduğunu biliyoruz.
+
+100
+00:22:17,236 --> 00:22:22,316
+Şimdi, kramer yönteminin söylediği şey, şöyle yapalım isterseniz.
+
+101
+00:22:24,756 --> 00:22:29,115
+Kramer'in söylediği şey şu arkadaşlar, bakın, şuraya bir çizgi çekelim.
+
+102
+00:22:32,147 --> 00:22:33,607
+Tremel'in söylediği şey şu.
+
+103
+00:22:38,644 --> 00:22:46,644
+Öyle ki, A kare matris, n çarpı n, ve de determinantı sıfır olmayacak şekilde.
+
+104
+00:22:47,103 --> 00:22:52,063
+Bu takdirde, bakın, kramer yöntemi, size şunu söylüyor.
+
+105
+00:22:53,363 --> 00:22:55,003
+X çözüm vektörü şudur.
+
+106
+00:22:56,583 --> 00:22:57,123
+X bir,
+
+107
+00:22:59,763 --> 00:23:04,423
+X'en, buradaki X'i'lerin kimler olduklarını söyleyeceğim size.
+
+108
+00:23:05,748 --> 00:23:15,947
+determinant, A'dan türetilmiş bir matris yazacağım. Her N için, tamam mı? Sonra da A matrisinin determinantına bölerek her bir değişkeni bulacağım.
+
+109
+00:23:15,947 --> 00:23:27,988
+Bakın, paydadaki determinantın neden sıfır olmaması gerektiğini de bize açıklıyor bu, değil mi? Dikkat edin, sıfır olursa sıfıra bölmeyle uğraşamayız, değil mi?
+
+110
+00:23:28,500 --> 00:23:33,480
+Burada i bilinmeyen sayısı olduğu için kaç tane değişkenimiz varsa sistemde o kadar.
+
+111
+00:23:36,539 --> 00:23:44,200
+Bu gördüğünüz determinant oranını yazacaksın. Şimdi bana diyebilirsiniz, o zaman bu a, i dediğin matris kim? Her bir i için. O da şu.
+
+112
+00:23:46,400 --> 00:23:48,720
+O da şu, bakın, yazıyorum. A matrisini bir yazalım önce.
+
+113
+00:23:50,460 --> 00:23:52,420
+A, bir, bir. Hadi iki.
+
+114
+00:23:53,875 --> 00:24:08,415
+Şimdi elemanını yazayım ilk satırın. Şöyle, A1N, 2, 1, 2, 2N, şu satırları pas geçip son satıra geçelim.
+
+115
+00:24:08,515 --> 00:24:19,635
+AN1, AN2, ANN. Şimdi, elinizde bir B sütün maddisi vardı değil mi? B1, BN.
+
+116
+00:24:20,115 --> 00:24:31,815
+Şimdi bakın, A'dan türeteceğim matrisler şu. İ'ninci sütunu, bu matrisin, İ'ninci sütunu. İ'ninci sütun elemanlarını da yazalım isterseniz şöyle.
+
+117
+00:24:33,035 --> 00:24:47,775
+A bir, şöyle yapalım, İ'ninci sütun. A bir, İ. A iki, İ. A N İ. Değil mi? Şu. R İ diyelim, yani İ'ninci sütun.
+
+118
+00:24:52,723 --> 00:25:12,743
+Evet. A-İ maddesini nasıl elde edersiniz? R-İ ile B'nin yer değiştirmesiyle arkadaşlar. Bu. Her İ için ama. İmam anlatabiliyor muyum? İ dediğim şey, bir, iki, en değerlerini alan bir pozitif tam sayı.
+
+119
+00:25:13,603 --> 00:25:18,303
+Mesela A-1'i yazalım isterseniz. A-1'den neyi anlıyorsunuz? Birinci sütunu B ile değiştir.
+
+120
+00:25:20,596 --> 00:25:43,115
+A1'i yazıyorum. B1, B2, Bn. Bakın diğer sütunları A ile aynı. Sadece ilk sütunu modifiye ettik tamam mı? A1-2, A2-2, An-2, A1-N, 2-N.
+
+121
+00:25:46,771 --> 00:26:11,631
+A, N, N, bu. Bunun determinantını alacaksınız. Demek ki X1 dediğim şey nedir? A1'in determinantıyla A'nın determinantlarının oranı. Bir tane daha yazayım isterseniz. Bakın A2'yi yazayım. A2. A2 ne demek? A matrisinin ikinci sütununu B'len değiştirir. Diğer sütunlarına dokunma demek. Tamam mı? Yazalım o zaman. A1, 1. Birinci sütun aynen kalıyor.
+
+122
+00:26:12,819 --> 00:26:16,900
+Şöyle sayfayı biraz daha yukarı çıkarıp, mesafe kazanalım.
+
+123
+00:26:16,900 --> 00:26:23,819
+AN1, B1, B2, BN.
+
+124
+00:26:27,412 --> 00:26:39,451
+A1N, 2N, NN, etc. Anlaşıldı sanırım, değil mi arkadaşlar?
+
+125
+00:26:42,412 --> 00:26:49,772
+Yani burada o zaman X1'i ne yazacaksın buraya? Determinant A1 bölü determinant A.
+
+126
+00:26:50,772 --> 00:26:53,132
+X2'yi yazmak istediğin zaman ne diyeceksin?
+
+127
+00:26:54,579 --> 00:27:02,419
+Ne demiştim ben? Özünde kremer yöntemi determinant hesabıdır. İşte o determinantlardan hangi matrislerin determinantını kastettiğimi şu anda söylemiş oldum size.
+
+128
+00:27:03,719 --> 00:27:18,039
+Değil mi? Bu şekilde. Kitaptaki notasyona bakarsan, kitaptaki notasyon, yani delta dediği şey, bakın bir delta kullanmış, bir delta iyi kullanmış. Yani delta dediği şey,
+
+129
+00:27:19,059 --> 00:27:28,640
+kat sayılar matrisi olan A'nın, determinantı delta i dediği şey ne? Benim orada a i diye yazdığım matrisin determinantı.
+
+130
+00:27:29,539 --> 00:27:40,640
+Dolayısıyla buradaki x i'ler ne olur? Tabii ki delta i bölü delta olur. Her i için. Kremer yöntemi bundan ibaret arkadaşlar.
+
+131
+00:27:40,640 --> 00:27:46,400
+Yani determinant hesaplayacaksınız. Yani üçlük veya dörtlük bir sistem olur en nihayetinde.
+
+132
+00:27:47,347 --> 00:27:56,407
+Determinant hesabı biliyorsanız bu yöntemi çok kolay bir şekilde kullanabilirsiniz. Yalnız burada dikkat etmemiz gereken bir şey var, o da bu.
+
+133
+00:27:58,707 --> 00:28:09,067
+Eğer kat sayılar matrisinde determinantı sıfır ise ne olur? Kremer yöntemi kullanılabilir değil. Bu demek değil ki sistemin çözümü yok.
+
+134
+00:28:09,687 --> 00:28:14,687
+İşte bunu öğrenciler karıştırıyor, biz de öğrencilerin bu kafa karışıklığını test sınavlarında kullanırız yani.
+
+135
+00:28:16,596 --> 00:28:38,412
+Yani kremer yöntemiyle çözemezsin. Bu yöntem kullanılabilir değil demek, bu sistem çözülemez anlamına gelmiyor. Yani elinde mesela bir avuç anahtar var, geldin kapıya, açmaya çalışıyorsun. Yani aldın rastgele bir anahtar veya içlerinde renkli bir anahtar var. Yani onun açacağını düşündün, kapıyı açmıyor. Bu durumda bu kapı…
+
+136
+00:28:38,771 --> 00:28:49,271
+Açılmaz mı diyeceksin? Diğer anahtarlarla deneyeceksin değil mi? Belki onların içinde var bir tane doğru anahtar. Bilmem anlatabiliyor muyum? Metafor olarak bu anahtar örneğini verdim ama.
+
+137
+00:28:49,971 --> 00:29:05,571
+Değil mi? Yani kramer yöntemi kullanılabilir, olmayabilir, kullanışsız olabilir. Ama başka bir yöntem olur ki alternatif o yöntemle sistemin çözümünün olup olmadığına dair bir şey söyleyebilirsin. Değil mi? Evet.
+
+138
+00:29:06,031 --> 00:29:27,271
+Mesela şu örnek 3.8'e bakalım. Kremer yöntemiyle çözülebiliyor mu? Kremer yöntemi uygulanabilir mi? Sigma diye yazalım şuraya sistemimize. Bu. Kremer yöntemine göre çözünüz dediğine göre demek ki uygulanabilir. Katseler matrisi, kare matrisi mi? Yani öyle olduğu gözüküyor. 3 bilinmeyen 3 denklem var. Değil mi?
+
+139
+00:29:27,988 --> 00:29:35,067
+A matrisi, bakın burada, determinantını hemen hesaplayın, eksi dört olarak bulacaksınız, ben bunu hesaplamak istemiyorum artık.
+
+140
+00:29:36,347 --> 00:29:43,008
+Tamam mı? Notlarımda var bu kısmı. Şöyle gösterelim.
+
+141
+00:29:46,420 --> 00:29:46,980
+Bakalım.
+
+142
+00:29:50,644 --> 00:30:16,324
+Bir dakika, ben orada farklı bir şey yapmışım. Size de yapayım aynısını. Bakın, kramer yöntemiyle çözmeye kalkalım. Şimdi delta 1 dediği şey nedir? Benim A1 dediğim delta 1. Şuraya yazayım hemen. Kitabın notasyonuyla delta 1 dediği şey, benim A1 dediğim matrisin determinantı. Buradaki A1 kimdir? Şuraya yazalım A1. A matrisinin ilk sütunu yerine sabit.
+
+143
+00:30:18,067 --> 00:30:35,248
+Sütunu koyacağım. 5, 6, 9. Diğer iki sütun aynı. 2, 2, 2, 1, 1, 3. A1 maddesi bu arkadaşlar. Bunun determinantını hesaplamayı da size bırakıyorum. Tamam mı? Eksi 4.
+
+144
+00:30:38,307 --> 00:30:40,868
+A2'yi de yazayım isterseniz. Bakın, A2.
+
+145
+00:30:41,428 --> 00:31:08,908
+Yani burada yazıyor zaten, bakın, determinant A2. A2'nin kim olduğu da belli. Yani iki tane dik çizginin içinde gördüğünüz matris A2. İkinci sütunu sabit. Bakın dikkat edin, ikinci sütunu sabit. A1'de birinci sütun sabit, diğer sütunlar A ile aynı. Katserler matrisi olan A ile aynı. Delta 3'e bakalım, üçüncü sütun B. İlk iki sütun aynı. Bunun determinantı eksi 8. Tamam, bunların sağlamasını yapın.
+
+146
+00:31:09,428 --> 00:31:30,248
+Teyit edin bunları, bu determinant hesaplanın. Teyit et diyelim. Tamam, ondan sonra geriye, yani sayıları birbirine bölmek kalıyor yani. X dediğin şey, eksi 4 bölü 4, yani 1, Y aynı şekilde 1, Z'de 2 çıkıyor. Yani çözüm vektörü burada, 1, 1 ve 2. Yani bunun gerçekten çözüm olduğundan yana şüphesi olan varsa,
+
+147
+00:31:30,672 --> 00:31:38,372
+Denklemde sağlamasını yapabilir. Yani sistemdeki bütün denklemleri eş zamanlı olarak sağlaması gerekir. X, Y, Z'nin bu değerleri değil mi?
+
+148
+00:31:39,872 --> 00:31:52,291
+Yani şurada X yerine, X ve Y yerine, bakın şurada X ve Y yerine bir, Z yerine iki koyarsanız, ilk denklemden başlayalım. X artı ikiye ne olur?
+
+149
+00:31:54,099 --> 00:32:20,379
+3 olur. 2 daha ilave edeseniz 5 eşittir 5. X satır sağlanıyor. İkinci satıra bakalım. 2X artı 2Y nedir o? 4. 2 daha ilave ederseniz 6 eşittir 6. O da sağlanıyor. Üçüncü satıra bakalım. X artı 2Y ne yapar? 3. Z'nin 3 katı 6. 3 artı 6 9. 9 eşittir 9 bakın. Değil mi? Kremer yöntemi bundan ibaret ama ben size daha geçen haftanın sonunda bu haftanın
+
+150
+00:32:21,172 --> 00:32:28,952
+Konusunu çıtlatmıştım hatırlarsanız. Değil mi? O da şuydu, Katsyeler Matrisinin tersi yöntemiyle bir çözümden bahsetmiştim.
+
+151
+00:32:28,952 --> 00:32:45,952
+Yani, hatırladınız mı onu? Şundan bahsetmiştim arkadaşlar, bakın. Yazalım. Şunu demiştim, eğer bir lineer denklem sisteminde,
+
+152
+00:32:46,771 --> 00:32:52,031
+Homojen olmayanı kastediyorum tabii, tamam mı? Homojen olmayanı kastediyorum.
+
+153
+00:32:56,632 --> 00:33:04,672
+A matrisi, ya A'nın determinantı sıfır değil dediğim anda A'nın zaten kara matris olduğu da söylenmiş oluyor değil mi?
+
+154
+00:33:05,271 --> 00:33:11,412
+Bu ne demekti? A'nın tersi var demekti. A'nın regüler bir matris, tersi olan bir matris demekti.
+
+155
+00:33:11,988 --> 00:33:17,988
+olup, değil mi? Mevcut olup, sonra ne yaptım? İki tarafı A üzeri eksi 1 ile çarptığımda...
+
+156
+00:33:25,907 --> 00:33:39,267
+Aradaki işlemi yazmıyorum, direkt sonucu yazıyorum. X eşittir, A üzeri eksi B, A üzeri eksi 1 çarpı B. Yani burada gördüğünüz matris çarpımı. Tamam mı? İşte X'i buluyorsunuz çözüm bu şekilde. Tek çözüm.
+
+157
+00:33:41,407 --> 00:33:49,987
+Şimdi şunu söylemek istiyorum. Madem ki Kremer yönteminde de katsayılar madrisinin kare madrisi olması, determinantının da sıfır olmaması şartı var.
+
+158
+00:33:52,019 --> 00:33:59,640
+Kaseler matrisinin inversi yöntemiyle çözme ve kremer yöntemiyle çözme, bu iki metot aslında ara kesiti var.
+
+159
+00:33:59,960 --> 00:34:04,319
+Yani istediğin birini kullanabilirsin bu şartlar yerine geldiğinde demek değil mi?
+
+160
+00:34:05,839 --> 00:34:08,960
+O zaman biz şöyle yapalım, bakın kitabın yapmadığı şeyi yapalım.
+
+161
+00:34:10,000 --> 00:34:12,019
+Yani kitabın kremer yöntemiyle çözdüğü...
+
+162
+00:34:12,639 --> 00:34:35,960
+soruyu, az önceki soruyu, biz Katseler Matris'inin tersini hesaplayarak da bulalım, aynı çözümü bulmam gerekiyor, tamam mı? Ondan sonra Katseler Matris'inin inversiyle çözüm bahsine geldiğimizde de o bu şekilde çözecek, biz de ilaveten Kremer'le çözelim, gene karşılaştıralım, tamam mı? Böyle yapalım, yani uyuşması açısından.
+
+163
+00:34:35,960 --> 00:34:38,399
+Şimdi bakın.
+
+164
+00:34:39,443 --> 00:34:59,203
+Biz az önce ne yaptık? Kremer yöntemini kullanarak bu sistemin çözümünü bulmadık mı? X eşittir, az önce yaptığım şeyi kastediyorum. X eşittir, Y eşittir 1 ve Z eşittir 2. Tamam mı? Kremer yöntemiyle bulduk. Bakın, çözümün bu olduğunu bulduk.
+
+165
+00:34:59,507 --> 00:35:25,507
+Şimdi ben ne diyorum burada? Determinant, sıfırdan farklı olduğu için tersi mevcut. Tersi mevcutsa bu da çözüm. Şimdi alternatif olarak, Katsala matrisinin inversiyle çözüm bulalım. Yani o da nedir? Matrisin tersini bul, belli. Bildiğin standart matris çarpımına tabi tut demektir bu. O zaman yazalım. A'nın tersini nasıl buluyorduk? Katılayalım. Genişletilmiş matrisi yazıyorduk değil mi? Paravanın sağında birim matris olacak şekilde, ondan sonra...
+
+166
+00:35:25,876 --> 00:35:33,456
+Bu madri ise şu madri kastediyorum bakın arkadaşlar. Elemental satış işlemleri uygulamak suretiyle şu hale getirmeye çalışıyorduk değil mi?
+
+167
+00:35:33,516 --> 00:35:43,735
+Ta ki paravanın solunda bir madris belirene kadar. Bunu gördüğünüz anda sağ taraftaki madris işte aradığınız ters, aradığınız madrisin inversidir.
+
+168
+00:35:44,615 --> 00:35:52,916
+Değil mi? Şimdi yazalım. Genişletilmiş madrisi yazıyorum bakın. Katseler madrisi tabii sisteme baktığında katseler madrisinin kim olduğu belli.
+
+169
+00:35:53,619 --> 00:36:19,819
+Öyle değil mi? Şöyle biraz daha indirelim. Sistemin denklemlerini de görün. Bakın A maddesini yazdım. Yanına birim maddesi de ekledim. Sonra buna bir takım elementer satış işlemleri uygulayıp, işte şunları bulacağım bakın. Bu elemanlar kimse. Şimdi burada tabii işlem yapmam gerekiyor tamam mı? Ben bunları yaptım önceki derste. Üstünden geçelim size şimdi.
+
+170
+00:36:27,380 --> 00:36:53,180
+Şöyle silelim isterseniz şurayı. 1-2-1 ilk sütün, aklımda tutayım onu. 1-2-1. 1-2-1. Şimdi şöyle. Ne yapacağım? Pivot tam da olması gereken yerde. Değil mi? Pivotun altında kim var, kim yok? Sıfırlamak gerekiyor mu? Gerekiyor.
+
+171
+00:36:53,536 --> 00:37:19,996
+Yani şu 2'yi sıfırlamam gerekiyor, 1'i de sıfırlamam gerekiyor. Bunun için ne yapmam gerektiği açık, değil mi arkadaşlar? İlk satırın, eksi 2 katını ikinci satıra ilave ederim. Bakın şunu kastediyorum, buraya yazmışım. Sonra, ikinin altındaki 1'i de sıfırlamak için, birinci satırı eksi 1 ile çarpıp son satıra ilave edersen, bakın şunu kastediyorum. O zaman, şurayı istediğim gibi elde ediyorum.
+
+172
+00:37:20,304 --> 00:37:46,463
+Pivot olması gereken yerde, pivot'un bulunduğu sütunda pivot haricinde kim varsa sıfır. Sonra ikinci satıra bakalım. İkinci satırda mesela şu pivot'un olması gereken yer burası ama pivot'un kendisi yok orada, eksi iki var. Eksi ikiyi nasıl bir yaparsın? İkinci satırı eksi bir bölü ikiyle çarpmayı deneyebilirsiniz. Bunun dışında başka bir yöntem var mı?
+
+173
+00:37:50,099 --> 00:37:51,779
+Yok gibi gözüküyor değil mi arkadaşlar?
+
+174
+00:37:55,347 --> 00:38:03,447
+Yok, o zaman eksi bir bölü ikiyle çarpalım, o zaman elimiz mahkum, yani kesili sayılarla boğuşacağız burada.
+
+175
+00:38:04,768 --> 00:38:11,427
+Eksi bir bölü ikiyle çarptık, şunu kastediyorum bakın arkadaşlar, ikinci satırı, eksi ikiyi bir yaptık.
+
+176
+00:38:11,427 --> 00:38:15,427
+Değil mi? Şu şekilde, eksi ikiyi bir yaptık. Ondan sonra...
+
+177
+00:38:15,824 --> 00:38:34,724
+Hazır üçüncü satıra bakın arkadaşlar. Onun pivotu da burada olması gerekiyordu değil mi? Bunu da bir bölü ikiyle çarpalım o zaman. Bakın şunu kastediyorum. Üçüncü satırı da bir bölü ikiyle çarparsak. Her satırın pivotu olması gereken yerde oluyor mu? Oluyor. Değil mi? O zaman yazalım şu maddesimizi.
+
+178
+00:38:42,804 --> 00:38:46,844
+Bu. Şöyle yazalım. Tamam mı? Pivotları şöyle göstereyim.
+
+179
+00:38:49,583 --> 00:38:57,364
+Merdiven şeklinde kutucuklar, mavi kutucuklar. Şimdi bakın, satırca indirgenmiş, eşelon formda değil bu matris.
+
+180
+00:38:58,104 --> 00:39:08,364
+Veya şöyle söyleyeyim. Sol tarafta birim matris henüz oluşmadı. Değil mi? Ama oluşmak üzere. Birin üzerinde iki var. Bu ikinin sıfır olması gerekiyor. Değil mi? Nasıl olur bu? İkinci satırı.
+
+181
+00:39:08,947 --> 00:39:34,427
+Eksi 2 ile çarpıp, birinci satıra ilave edersen olur. Şunu kastediyorum, bakın işlem bu. O zaman 2 sıfıra dönüşür mü? Dönüşür. Sonra ne kalıyor? Üçüncü satırın pivotu, şöyle bakın tarayarak göstereyim şöyle. Bunun üzerinde 1 bölü 2 var değil mi? Bunun sıfır olması gerekiyor. Sıfır olması gerekiyor. Bu 1 bölü 2'nin. Şuraya da yazmışım bakın.
+
+182
+00:39:34,804 --> 00:39:47,844
+1 bölü 2'nin 0 olması gerekiyor. E nasıl yaparsınız bunu? Son satırı, eksi 1 bölü 2 ile çarpıp, ikinci satıra ilave ederseniz, bakın işlem şu, 1 bölü 2 de 0'a dönüşür mü? Dönüşür.
+
+183
+00:39:48,264 --> 00:39:56,023
+Sadece 1 bölü 2 0'a dönüşmüyor ama bakın, uzun satırla çalışıyorum değil mi? O satırda kim var kim yok? Bundan etkileniyor yani.
+
+184
+00:39:56,864 --> 00:40:00,744
+Paravanın solundaki kısa satırlarla işlem yapıp sağındakine dokunmazsanız,
+
+185
+00:40:01,076 --> 00:40:14,076
+Yani şimdi kadar anlattıklarımı hiç anlamamışsınız demektir diye. Genişletilmiş matrisle, genişletilmiş matrise elementer satış işlemi uyguluyorsan, genişletilmiş satırlarla işlem yapacaksın. Uzun satırlar üzerinde çalışacaksın.
+
+186
+00:40:14,796 --> 00:40:25,896
+1 bölü 2'yi de bu şekilde sıfır yaparsan, evet arkadaşlar, sol tarafta gördüğünüz gibi artık birim matris oluştu, değil mi? Şu matris, bildiğimiz üzere birim matris.
+
+187
+00:40:26,291 --> 00:40:49,251
+O zaman sağ tarafta gördüğün matris, A'nın tersi. Yazalım o zaman, oradan bakın. İşte şu. Çözümünü yazalım o zaman. Yani bu matrisin tersini bulduktan sonra çözüm, standart matris çarpımı demedik mi? A üzeri eksi bir ile sabit B'yi çarpalım. Şu adımı kastediyorum. Tamam mı?
+
+188
+00:40:56,275 --> 00:41:14,456
+Burası da eksi, eksi ne olur? İkinci elemanı da yazalım bu sütün matrisinin. Eksi 25 bölü 4, eksi 6 bölü 2, eksi 9 bölü 4. O da 1 yapıyor zaten arkadaşlar bakın.
+
+189
+00:41:17,215 --> 00:41:20,556
+Hatırlarsanız x'i ve y'yi 1 bulmuştuk kremer yöntemiyle.
+
+190
+00:41:21,460 --> 00:41:33,060
+Çözdüğümüzde. Değil mi? Z'yi de 2 bulmuştuk. Bakalım burada da 2 çıkıyor mu? Son elemanını yazayım. Sütun matrisi olan x'in, sütun matrisi olan çözüm vektörü olan x'in son elemanını da yazıyorum.
+
+191
+00:41:33,860 --> 00:41:47,860
+Eksi 5 bölü 2 artı 9 bölü 2. Bu ne yapar? 4 bölü 2 yani 2. Gördüğünüz gibi Kremer'le bulduğum çözümün aynısını
+
+192
+00:41:50,228 --> 00:41:54,847
+Neyle buldum? Katris elemasının inversi yöntemiyle de buldum. Değil mi?
+
+193
+00:42:02,291 --> 00:42:07,592
+Anlaşıldı diye tahmin ediyorum arkadaşlar. Bu gerçekten kolay. Kolay bir yöntem yani.
+
+194
+00:42:09,092 --> 00:42:18,612
+Şimdi bir tane daha yapalım. İyice pekişsin isterseniz bu. 3-9 numaralı çözümü yapan. Burada da lineer denklem sistemini Kremer'le çözün diyor.
+
+195
+00:42:21,572 --> 00:42:27,552
+Kremer yöntemiyle çözün, lineer denklem sistemini çözünüz diyor. Bakın Kremer telaffuz edilmemiş.
+
+196
+00:42:28,307 --> 00:42:37,187
+Ama siz şu yanılgıya düşer de, bunun kremlerle çözüldüğünü zannederseniz, öğrenci neden zannedebilir, ben bunu kremlerle çözerim diye?
+
+197
+00:42:37,927 --> 00:42:47,307
+Çünkü bilinmeyen sayısı kadar, denklem var. Yani A matrisi, kare matris. İyi de bu koşullardan sadece bir tanesiydi.
+
+198
+00:42:48,228 --> 00:42:53,827
+Yani bununla beraber determinantının da sıfır olmaması gerekiyor, kremeri kullanabilmeniz için.
+
+199
+00:42:54,996 --> 00:43:20,456
+A kara matris iken, bu örnek için konuşacak olursak, determinantı olması gerektiği gibi değil. Aksine sıfır. Bu durumda Kremer yöntemiyle bunu çözemezsin. Yani kullanılabilir değil bu yöntem. Ama bu demek değil ki, bu sistemin çözümüne dair hiçbir şey söyleyemeyiz. Böyle bir şey yok. Başka bir yöntem olabilir o yöntemle.
+
+200
+00:43:20,916 --> 00:43:45,815
+Ya Katselamatsinin inversiyle de çözemezsin mesela. Değil mi? Çünkü ya A determinantı sıfırsa onun da tersi yok. Peki, kremeri kullanamıyorsun. Katselamatsinin tersini kullanamıyorsun. Ne yapılabilir o zaman? Söylemek isteyen var mı? Yoksa ben içinizden birine sorayım mesela.
+
+201
+00:43:46,260 --> 00:43:51,460
+Var mı söylemek isteyen? 22 tane öğrenci var, Happy Topu. Çete mesaj yazanlar var.
+
+202
+00:43:57,172 --> 00:44:08,791
+Yani özet, artık geç gördüm mesajımızı, bu saatten sonra başa dönemem. Dersi kayıttan izlediğinizde özet olmuş oluyor aslında yani.
+
+203
+00:44:13,076 --> 00:44:17,296
+Evet, söylemek isteyen var mı? [öğrenci]'e soralım mesela ilk sırada.
+
+204
+00:44:23,411 --> 00:44:25,172
+[öğrenci]'ye soralım. [öğrenci] burada mı?
+
+205
+00:44:31,123 --> 00:44:32,283
+[öğrenci]'a soralım.
+
+206
+00:44:39,572 --> 00:44:42,052
+[öğrenci]'a soralım. Kesin burada [öğrenci].
+
+207
+00:44:51,443 --> 00:44:55,204
+Evet, kesin dedik ama burada değilmiş.
+
+208
+00:44:56,084 --> 00:45:00,403
+[öğrenci]'ye soralım. Özet yapmamı isteyen öğrenciydi sanırım.
+
+209
+00:45:05,460 --> 00:45:10,980
+Evet. Tam anlamadığını söylüyor. Neyse.
+
+210
+00:45:12,679 --> 00:45:14,359
+Hocam ben buradayım, bana söylediysiniz.
+
+211
+00:45:14,859 --> 00:45:15,779
+Sen kimsin?
+
+212
+00:45:16,500 --> 00:45:16,940
+[öğrenci].
+
+213
+00:45:17,519 --> 00:45:21,299
+[öğrenci]. Tamam, [öğrenci] söylesin o zaman.
+
+214
+00:45:23,799 --> 00:45:25,059
+Neyi söyleyecektin?
+
+215
+00:45:26,179 --> 00:45:31,219
+Kremer yöntemini aslında, yani ekranda var zaten, şöyle aşağı doğru kaydırayım da görme cevabı.
+
+216
+00:45:31,635 --> 00:45:48,635
+Kremer yöntemiyle çözemiyorsun. Çünkü matris singüler bir matris. Katserler matrisini kastediyorum. O zaman Kremer yöntemi kullanışlı değil. Determinantı yoksa, yani sıfırsa, tersi de yok, onu da kullanamazsın. Ne yapacaksın? Lineer denklem sistemlerine ben ilk başladığımda...
+
+217
+00:45:49,280 --> 00:45:57,380
+çözümüne dair bir prosedürden bahsettim değil mi? O prosedür matrisin determinantı şu olsun, bu olsun diye bir kriter, bir kısıt koydu mu?
+
+218
+00:45:58,320 --> 00:46:00,400
+Biri matrisen mi dönüştürmeyecektik?
+
+219
+00:46:00,920 --> 00:46:06,340
+Hayır, biri matrisen dönüştürmeyecektim. Bak, prosedür kelimesini özellikle kullanmıştım veya istiyorsan süreçte yani, Türkçe.
+
+220
+00:46:07,599 --> 00:46:12,559
+Önce şunu yazmakla başlar, ondan sonra bu adımları takip edersiniz diye söylemiştim.
+
+221
+00:46:13,748 --> 00:46:22,268
+O süreç nasıl başlıyor, lineer denklem sisteminin çözmek için? Rankları mukayesesini yapıyordum hatta, bak ipucu vereyim, hafızanızı tazenemek için.
+
+222
+00:46:22,447 --> 00:46:27,108
+Hocam, şey mi yapıyorduk, karşısına birin matris yazıp, bunu birin, o tersiydi.
+
+223
+00:46:27,728 --> 00:46:32,188
+Aynen, bak arkadaşın güzel uyardı. O bir matrisin tersini bulurken.
+
+224
+00:46:32,527 --> 00:46:50,807
+Birim matrisi duvarın sağına koyuyordun, solunda belirene kadar elemente satı işlemlerini yapmaya devam ediyordun. En sonunda duvarın sağında beliren matris, aradığın inmers matris oluyor. Ama burada matrisin inmersi yok. Çünkü singular, yani determinantı sıfır. Dolayısıyla o dediğini burada kullanamıyoruz.
+
+225
+00:46:52,807 --> 00:46:57,688
+Yani bir genişletilmiş bir matris yazacaksın da içinde birim yok. Hadi bunu da bu kadarını da söylemiş olayım.
+
+226
+00:46:59,572 --> 00:47:00,751
+Şunu yazmayacak mıydın?
+
+227
+00:47:01,291 --> 00:47:01,951
+Hatırlayamıyorum.
+
+228
+00:47:02,871 --> 00:47:04,251
+Hatırlatalım sana o zaman bak.
+
+229
+00:47:04,271 --> 00:47:06,291
+Satırcıya indirgenmiş formunu da getireceksin.
+
+230
+00:47:06,632 --> 00:47:08,851
+Hangi madrisi ama? Şu yazdığın madrisi değil mi?
+
+231
+00:47:09,351 --> 00:47:09,632
+Evet.
+
+232
+00:47:10,492 --> 00:47:20,871
+Sistemin genişletilmiş katsayılar madrisini yazarsın, sonra bunu satırcıya indirgenmiş formda bir madrise, o madrise de CD diyelim arkadaşlar, tamam mı?
+
+233
+00:47:21,592 --> 00:47:24,572
+Getirirsin, değil mi? Sonra...
+
+234
+00:47:25,940 --> 00:47:38,880
+Bu satırca indirgenmiş formda matrise bakaraktan A matrisi ve AB genişletilmiş matrisin ranklarına bakılır değil mi? Ranklar mukayese edilir.
+
+235
+00:47:40,400 --> 00:47:46,796
+Ranklar eşit değilse zaten çözüm yok deyip işin içinden çıkılır demiştim hatırlarsanız. Ranklar eşitse...
+
+236
+00:47:47,155 --> 00:48:08,815
+O zaman çözüm var, ümidimiz var yani. O da nedir? Tek çözüm olur, sonsuz çözüm olabilir. Tek çözüm ne zaman vardır? Ranklar eşit ve bilinmeyen sayısında eşitse. Değil mi? Aksi takdirde ne oluyor? Yani rank enden büyük olamayacağına göre küçük olduğunda da fark kadar değişken, keyfi değişken. Değil mi?
+
+237
+00:48:10,068 --> 00:48:35,688
+O kadar keyfi değişken cinsinden de sonsuz çözüm var demiştik şimdi. O zaman bakın, genişletilmiş katsiyeler matrisimizi yazdık. Şu. Şöyle yazalım, yani duvarın sağında gördüğünüz matris, B, sütun matrisi bakın aynı. Sol tarafında gördüğünüz matris de katsiyeler matrisi. Şurada yazılmış zaten. İşte burada arada bir takım işlemler uyguluyorsunuz. Ben bunları artık yapmak istemiyorum. Defalarca yaptık çünkü.
+
+238
+00:48:36,947 --> 00:49:03,527
+En nihayetinde getir işte benim orada CD dediğim, yani satıcı indirgenmiş fonda bir matris elde edene kadar bu işlemlere devam edilir dedik ya, işte oradaki CD matrisi bu olmuş olsun. Şimdi ne yapacaksınız? Hemen rankların mukayesesine bakacaksınız. Sol taraftaki, paravanın solundaki matris, A'nın rangını söylüyor bize değil mi? Genişletilmiş matris olarak bakarsan, o da AB genişletilmiş matrisin rangını söylüyor.
+
+239
+00:49:03,956 --> 00:49:05,336
+Her iki halde de.
+
+240
+00:49:08,788 --> 00:49:36,067
+Sıfır olmayan satırların sayısı 2 değil mi? Yani mesela bak, şuna bakacak olasak, matrisin sol tarafa bakacak olursanız, bu A'nın rangını işaret ediyor, 2. Çünkü 2 tane sıfır olmayan satır var. Geniş matrise bakacak olursan, o da şunun rangını işaret ediyor değil mi? Bu matris de satıcı indi gelmiş formda ve sıfır olmayan 2 tane satır var, bunun da rangı 2.
+
+241
+00:49:36,563 --> 00:49:55,183
+Ranklar birbirine eşit. Bilinmeyen kaç tane? X, Y, Z, 3 tane. O da küçük. Yani ranklar eşit olduğu için çözüm var ama bilinmeyen sayısından küçük olduğu için 3-2 bir adet keyfi değişken cinsinden sonsuz tane çözüm var.
+
+242
+00:50:00,307 --> 00:50:07,188
+Yani bu maddesin okumasını yaparsanız, o keyfi değişkenin kim olduğunu burada görmeniz işten bile değil arkadaşlar, bakın.
+
+243
+00:50:08,907 --> 00:50:10,768
+Şöyle şuraları temizleyelim.
+
+244
+00:50:15,699 --> 00:50:38,159
+Bakın, okumasını nasıl yapıyoruz? Son satırdan bir şey elde edemezsin değil mi? Buradan bir şey elde edemezsin. Ondan önceki satıra bakarsın. Nasıl okuyordun bu matrisi? Denklem olarak yazacak olursak ne demek bu? 1 çarpı Y yani Y. Eksi 7 kere Z eşittir 17.
+
+245
+00:50:39,891 --> 00:50:45,532
+Bir önceki yani ilk satıra bakacak olsak, bu hangi lineer denklemi işaret ediyor?
+
+246
+00:50:46,351 --> 00:50:55,751
+1 çarpı x yani x artı 4 çarpı z eşittir eksi 5. Öyle değil mi arkadaşlar?
+
+247
+00:50:56,692 --> 00:51:00,652
+Son satırdan happy topu yazabileceğiniz şey bu.
+
+248
+00:51:04,019 --> 00:51:19,960
+3-2 yani bir tane keyfi değişken olduğunu söylemiştik ya, o keyfi değişkenin Z olduğu buradan gözüküyor. Neden? Çünkü bakın, X'e ve Y'ye bakın, her ikisi de, yani şöyle yapalım isterseniz, bakın, X'i Z cinsinden yazalım. Yani şu 4Z'yi silelim, karşı tarafa atalım. Tamam mı?
+
+249
+00:51:21,039 --> 00:51:31,420
+Eksi 4Z. Şuradaki eksi 7Z'yi de silelim, artı 7Z olarak karşı tarafa atalım. Tamam mı?
+
+250
+00:51:36,628 --> 00:51:58,407
+Şurası X, burası Y. Gördüğünüz gibi X'de Y'de Z'nin bir fonksiyonu. Yani onu şu şekilde yazarız bazen. Kimin fonksiyon kimin değişken olduğunu vurgulamak için değil mi? Yani mat birden biliyorsunuz bu tarz yazılışı. Ama Z değişken, bağımsız değişken. X ve Y ise bağımlı değişken. Yani sizin fonksiyon diye bildiğiniz şey.
+
+251
+00:51:58,900 --> 00:52:11,619
+İşte o keyfi değişkenin Z olduğu, bu maddesin okumasını yaptığınızda çıkıyor. Şimdi dikkat edin, bakın şu ana kadar verdiği örneklerde hep bir keyfi değişken var. Öyle bir sistem olur ki iki tane keyfi değişkeni de olabilir yani.
+
+252
+00:52:12,920 --> 00:52:22,900
+Dört tane bilinmeyen olur, X, Y, Z, T. İşte rankları mukayese ettiğinizde iki çıkabilir, dört eksi iki, iki tane keyfi değişkeni olabilir. Mesela X, Y, Z, T ise...
+
+253
+00:52:23,987 --> 00:52:38,007
+bilinmeyenler, bunlardan hangi ikisi bilmiyorum. Soruyu açık açık yazmak gerekiyor. Bunlardan iki tanesi keyfi değişken olur, diğer ikisi bunların cinsinden yazılıyor olabilir. Bu şekilde sonsuz çözüm olabilir.
+
+254
+00:53:09,043 --> 00:53:17,683
+Evet, sınıfta başka öğrenciler varmış. Arkadaşlar, notları, çantaları vardı. Onları almaya gelince mikrofonu kapattım.
+
+255
+00:53:18,603 --> 00:53:23,763
+Gürültüden rahatsız olmayın diye. Şimdi burada Z, keyfi değişken. Buna K demiş, fark etmez. Yani ne dediği önemli değil.
+
+256
+00:53:24,384 --> 00:53:30,063
+Buradaki keyfi değişkenin Z, X'de Y'nin de bunlar cinsinden yazılan değişkenler olduğunu bilin yeter. Değil mi?
+
+257
+00:53:30,063 --> 00:53:34,824
+O zaman çözüm vektörünü yazabilirsin. Bak, Kremer yöntemiyle.
+
+258
+00:53:35,135 --> 00:53:48,835
+Fikir beyan edememiştik. Ama bu çözümü var veya yok anlamına gelmez. Başka bir yöntem kullanılarak. Çözümüne dair bir şeyler söyleyebiliriz demiştik. İşte söyledik. Çözümü olan bir sistemmiş meğerse bu.
+
+259
+00:53:49,972 --> 00:54:05,351
+Ama sen kramer, sen şimdi determinantının sıfır olduğunu gördün de bu çözülemez dediysen, sırf kramer yönteminin kullanılamaz olduğundan hareketle onu sistem çözülemez diye anladıysan yanlış bir şekilde, yani soruya da yanlış cevap verirsin.
+
+260
+00:54:06,572 --> 00:54:12,152
+Değil mi? Burada Z'ye değerler verirsen işte muhtelif çözümler bulacaksın, belli yani.
+
+261
+00:54:13,851 --> 00:54:17,032
+Trivial çözüm falan da arayacak halimiz yok çünkü sistem homojen değil.
+
+262
+00:54:17,396 --> 00:54:43,456
+Öyle değil mi? Sıfır çözüm yok bu sistemde. Evet. Kat sayılar matrisinin inversi yardımıyla çözüm. Hali hazırda zaten bunu anlatmış oldum. Üstünden de geçtim. Hatta örnek bile çözdüm değil mi? Kremer yöntemiyle çözümü bulunan bir örneği ben kalktım. Daha yöntemi anlatmadan çözümünü de yaptım yani. Neredeydi o?
+
+263
+00:54:44,307 --> 00:54:45,687
+Şurada bir yerdeydi.
+
+264
+00:54:53,907 --> 00:55:07,088
+Evet, buydu sanırım. Kremer yöntemiyle bulmuştuk. Katselamatsinin inversi yardımıyla da bulduk. Değil mi? Yani aslında yöntemi anlatmadan. Çünkü ne demiştim? Ben bir iki dakikada anlatılabilecek bir şey bu demiştim yani.
+
+265
+00:55:11,603 --> 00:55:35,603
+Evet. Yine de son kez üstünden geçelim. Katseler matrisinin inversi yöntemiyle çözümden kastedilen nedir? Yazdık. Kompakt formda yazmak istiyorsan her zaman olduğu gibi AX eşittir B diye göster. A'nın X'in B'nin kim olduktan artık yazmıyorum. Tamam mı? Buradaki A kara matris, determinantı da...
+
+266
+00:55:36,052 --> 00:55:43,132
+Sadece determinantı sıfır değil desen zaten kara matris olduğu üstü örtülü bir şekilde söylenmiş olur değil mi?
+
+267
+00:55:44,132 --> 00:55:48,792
+Öyle ki A matrisin determinantı sıfır olmasın. O zaman bunun tersi var dedik.
+
+268
+00:55:51,692 --> 00:55:56,372
+A x eşittir B matris denklemini A üzeri eksi bir ile soldan çarparsan.
+
+269
+00:55:56,916 --> 00:56:22,476
+çözüm vektörünü bu şekilde bulursun. Yani ne demek bu? Standart matris çarpım. Bunun için neye ihtiyacın var? B belli. B bu. Bütün bilmen gereken a üzeri eksi birin kim oldu? Sonrasında b ile çarparsan x'i bulmaman için hiçbir neden yok. Değil mi? Şimdi ne yapacak kitap? Bak, katseler matrisinin inversi yardımıyla çözüme bir örnek verecek. Ben ne yapacağım?
+
+270
+00:56:23,027 --> 00:56:28,767
+Hem bunu göstereceğim, hem de Kremer yöntemine dönüş yapıp, iki çözümün yine aynı olduğunu göstereceğim.
+
+271
+00:56:29,367 --> 00:56:31,807
+Bu şekilde yapacağımı söylemiştim az önce hatırlarsınız.
+
+272
+00:56:35,067 --> 00:56:47,927
+Örneğimize bakalım. Örnek 3.10. Sistem bu. Kare matris mi? Katseler matrisi, kare matris. Bakın şu. Katseler matrisinin inversini direkt bulmuş.
+
+273
+00:56:48,563 --> 00:57:05,664
+Yani siz burada determinantının demek ki sıfır olmadığını göstermeniz gerekiyor değil mi? Bunu teyit etmeniz gerekiyor. Ben burada determinant hesaplamak istemiyorum şimdilik ama biraz sonra kremer yöntemiyle de sağlamasını yapmak istediğim için orada yine yapacağım. Şu an için hesaplamak istemiyorum. Tamam mı? Teyit edin siz bunu.
+
+274
+00:57:07,403 --> 00:57:13,384
+Determinantı sıfır olmadığı için katseler matrisinin tersi var. Onun tersini bu şekilde nasıl buldun?
+
+275
+00:57:14,099 --> 00:57:32,000
+Ya ben bunu yapmak istemiyorum çünkü az önce bir örnek üzerinde yaptım. Değil mi? A matrisinin sağına bir matris ilave edeceksiniz. Elemental satış işlemleri uygulayacaksınız. Sonrasında işte sağ taraftaki matris şu, A üzeri eksi bir diye yazılan matris.
+
+276
+00:57:38,547 --> 00:57:39,067
+Evet.
+
+277
+00:57:41,527 --> 00:57:42,487
+Devam edelim.
+
+278
+00:57:46,963 --> 00:57:49,323
+A matrisinin tersini bu şekilde bulduk.
+
+279
+00:57:51,843 --> 00:57:55,543
+O zaman geriye standart matris çarpımını işletmek kalıyor değil mi?
+
+280
+00:57:56,443 --> 00:57:57,383
+Şunu kastediyorum bakın.
+
+281
+00:57:59,463 --> 00:58:01,243
+11 bölü 3, x'in değeri.
+
+282
+00:58:01,843 --> 00:58:03,563
+7 bölü 3, y'nin değeri.
+
+283
+00:58:03,743 --> 00:58:06,103
+Eksi 17 bölü 3, z'nin değeri.
+
+284
+00:58:06,583 --> 00:58:09,243
+Şimdi biz bunu kasteler matrisinin inversi yardımıyla bulduk.
+
+285
+00:58:09,783 --> 00:58:10,943
+Kremer yöntemiyle bulalım.
+
+286
+00:58:11,795 --> 00:58:22,476
+Kremer yöntemi burada uygulanabilir, öyle değil mi? Matris, kare matris, determinant da sıfır değil. O zaman sadece determinant hesabıyla x, y, z'yi de bulabilirim.
+
+287
+00:58:23,295 --> 00:58:34,336
+Bunu ben yapmıştım diğer sınıfa. Aynı şeyleri tekrar tekrar yazmamak için. Müsaadenizle bunları kullanayım. Şimdi şu arkadaşlar, bakın, sistem bu.
+
+288
+00:58:38,036 --> 00:58:50,875
+Katseler matrisinin yardımıyla çözülebilir, değil mi? Çözümü de böyle bulduk, değil mi? X'in 11 bölü 3, Y'nin 7 bölü 3, Z'nin eksi 17 bölü 3 olduğunu söyledik az önce.
+
+289
+00:58:51,175 --> 00:58:58,335
+Biz ne yapalım? Kremer yöntemiyle sağlamasını yapalım, değil mi? A matrisinin determinantını burada hesaplamam gerekiyordu.
+
+290
+00:58:58,335 --> 00:59:05,275
+Az önce size teyit edin diye söylediğim şeyi burada artık mecbur hesaplamak gerekiyor. Katseler matrisinin determinantını burada.
+
+291
+00:59:05,907 --> 00:59:28,687
+İster sarıç kuralıyla yapın, ister labras açılımına tabi tutun, fark etmez. Üstelik de seçebileceğin bir satır veya sütun da yok, hiç sıfır yok, o da fark etmez. Ben birinci satıra referans kabul edip, açılımını yaptım bunun, tamam mı? Katseler matrisinin determinantının 3, yani sıfır olmadığı gözüküyor. Bu yüzden zaten inversi var, değil mi? Şimdi bana bu determinant lazım.
+
+292
+00:59:29,300 --> 00:59:40,079
+X, Y, Z'yi determinantların oranı olarak yazacağım. Kremer yöntemi tam da böyle bir şey. Payda konumundaki katseler matrisin determinantı olarak 3 yazacağım her seferinde.
+
+293
+01:01:03,635 --> 01:01:21,195
+Arkadaşlar, kusura bakmayın, böyle dersi bölen öğrenciler oluyor. Yani. Meğersem bu sınıfta başka bir ders varmış. Yani çok ilginç. Sizce 1 ile 3 arasında dersim var. B blok, zemin kat, A 4.
+
+294
+01:01:23,284 --> 01:01:49,164
+Şimdi kapıyı açıp iki öğrenci girdi, bizim burada ikide dersimiz var diyor. İyi de benim daha üçe kadar bu sınıf bende gözüküyor. Yani acaba bölüm bunu güncelledi de benim mi haberim yok diye bölüm sayfasına girip bakıyorum, orada da aynı. Yani işte karışık işler yani. Bu işin planlamasını bile nasıl yapıyorlar görüyorsunuz yani. Önceki dönemde şöyle bir şey yaşamıştım, hangi bölüm olduğunu hatırlamıyorum ama.
+
+295
+01:01:50,228 --> 01:02:01,867
+Öğrencilerin benimle dersi ikide bitiyor, ben öyle söyleyeyim. O öğrencilerin birçoğunun saat ikide Beşiktaş'ta olması gerekiyor başka bir ders için.
+
+296
+01:02:03,387 --> 01:02:09,568
+Ya ikide Davut Paşa'daki, ya ikiye on kala ben bunu bıraksam bu öğrenci on dakikada nasıl Davut Paşa'ya gidecek, şey Beşiktaş'a gidecek buradan.
+
+297
+01:02:10,307 --> 01:02:14,168
+Yani neyse, bunları yapan insanların...
+
+298
+01:02:14,675 --> 01:02:20,436
+Daha dikkatli olması gerekir. Şimdi bu determinantı hesaplamışız, tamam. Kremer yöntemini de çözmek istiyoruz.
+
+299
+01:02:23,375 --> 01:02:29,396
+Yani iki haftadır, mesela sınıfta öğrenci bulamıyorum, yani önümüzdeki haftada artık herhalde bayram haftası kimse gelmez yani.
+
+300
+01:02:29,476 --> 01:02:38,175
+Ben şu anda sınıftan anlatıyorum dersi tek başıma. Önümüzdeki haftada bu şekilde olursa ben iki saat burada durmam, yani ofisime geçerim, bir 10-15 dakika beklerim.
+
+301
+01:02:38,996 --> 01:02:41,695
+Kimsenin gelmediğini gördüğüm anda ofisime geçerim yani.
+
+302
+01:02:41,972 --> 01:02:48,992
+Koca sınıfta tek başıma durmamın bir anlamı yok. Üstelik yani burayı kullanmak isteyen başka insanlara da engel olmamış olurum.
+
+303
+01:02:49,552 --> 01:02:53,712
+Şimdi arkadaşlar, Kramer'le efendim, bir şey söylemek isteyen var galiba.
+
+304
+01:02:53,852 --> 01:02:56,552
+Kimse gelmez, yani birçok güzel şey yapıyorsunuz.
+
+305
+01:02:57,112 --> 01:03:03,472
+Ya işte, yani hibrit ama nasıl hibrit yani? Öğrencinin olmadığı bir öğretim hibrit nasıl oluyor yani?
+
+306
+01:03:06,232 --> 01:03:09,132
+225 öğrencim olan bir grubum var sizden sonra.
+
+307
+01:03:10,452 --> 01:03:29,292
+Yani, 4 veya 5 tane öğrenci geldi bakın geçen hafta, ilk defa o sınıfta. Yani, 225 mevcutlu sınıftan 4 ya da 5 tane öğrenci geldi. Demek ki burada bir sıkıntı var yani. Evet.
+
+308
+01:03:31,572 --> 01:03:40,912
+Ama final sınavları, bütünleme sınavları, ek sınavlar, mezuniyet sınavları, her neyse bunların yüz yüze olacağına dair senato kararı var. Haberiniz var mı arkadaşlar bunda?
+
+309
+01:03:43,252 --> 01:03:44,572
+Evet hocam, mevzul size geldim.
+
+310
+01:03:45,012 --> 01:03:53,932
+Tamam. Onları yüz yüze yapacaklar. Yani şeye dışındaysanız da bir şekilde gelmek durumunda kalacaksınız artık sınavlar için. Şimdi neyse kaldığımız dağıldı biraz. Kusura bakmayın.
+
+311
+01:03:54,304 --> 01:04:03,624
+Kramer ile sağlamasını yapacağız. Yani Katseler maddesinin inversiyle bulmuştuk çözümümüzü. İşte bu. 11 bölü 3, 7 bölü 3, eksi 17 bölü 3 sütün maddesi.
+
+312
+01:04:03,884 --> 01:04:11,544
+Kramer ile sağlamasını yapalım. Katseler maddesini yazdık, determinantini hesapladık. Şimdi ne yapacağım? X'i, Y'i, Z'i. Ben şimdi X'i, Y'i, Z'i hepsini bulmayayım.
+
+313
+01:04:11,544 --> 01:04:21,824
+Sadece bir tanesini bulsam diğerlerini de bulursunuz. Yani X'i bulmak için A1 maddesini yazmam lazım. Ne demek? İşte A maddesinde ilk sütün yerine B'yi koyacağım değil mi? Bakın. Dikkat edin.
+
+314
+01:04:22,356 --> 01:04:49,556
+A matrisindeki birinci sütunu neyle değiştirmişim? B ile. Değil mi? Buna A1 diyorum artık. A1 ile A'yı karıştırmayın bakın. A versus A1 diyelim. Tamam mı? Bu iki matrisi birbirine karıştırmayın. Yani A1 A'dan türetilmiş bir matris. Oradaki birin ne anlama geldiğini bilirsen, nasıl türetmen gerektiğini bileceksin. O bir demek birinci sütununu, A'nın birinci sütununu değiştir demek. Kiminle? Sütun matrisiyle.
+
+315
+01:04:49,940 --> 01:04:58,900
+A2 deseydin, A versus A2 desek, bu 2 ile ne alacaksın? A'nın ikinci sütununu B ile değiştir, işte bu matris A2'dir.
+
+316
+01:04:59,980 --> 01:05:08,279
+Tamam mı? A1'i yazdık, bak son iki sütun aynı, ilk sütunu değiştirdin B ile. Bana ne lazım şimdi, kremer yöntemi ne diyordu arkadaşlar, hatırlayalım.
+
+317
+01:05:09,639 --> 01:05:17,319
+Kremer yöntemi şunu demiyor mu bana, bakın, X determinantları oranı, paydada her halükarda, yani hem X'in, hem Y'nin, hem Z'nin.
+
+318
+01:05:17,715 --> 01:05:24,895
+ifadesine bakarsanız hepsiyle pi'de ortak. Değil mi? A'nın determinantı. Sadece pi değişik.
+
+319
+01:05:26,195 --> 01:05:34,056
+X'te A1'in determinantı var. A1'i yukarıda yazdık. Bakın maviyle yazdım. Şimdi onun determinantını hesaplayacağım burada.
+
+320
+01:05:36,195 --> 01:05:42,815
+Yani burada da özel olarak seçeceğiniz bir satır veya sütun gözükmüyor arkadaşlar. İlk satıra göre referans kabul edip açalım bunu.
+
+321
+01:05:43,184 --> 01:05:52,444
+determinantının 11 olduğunu bulursunuz. Bu durumda x ne olur? 11 bölü, katse elemanın determinantında 3 bulmuştum.
+
+322
+01:05:52,784 --> 01:05:59,024
+x'de zaten 11 bölü 3 değil miydi? Bakın yukarıda yavaşlığını çekerek göstereyim. x'i de 11 bölü 3 bulmuştum zaten.
+
+323
+01:05:59,724 --> 01:06:05,944
+Sütun maddesinin ilk elemanı olan x'i. Değişken x'i kastediyor. Diğerlerini de siz bulun. Yani şunu yapın arkadaşlar, bakın.
+
+324
+01:06:10,356 --> 01:06:14,476
+Hadi mavi ile yazdık, mavi ile devam edelim.
+
+325
+01:06:15,615 --> 01:06:23,336
+Şunları bulun, tamam mı? A2 ve A3 matrislerini yazın.
+
+326
+01:06:26,155 --> 01:06:30,236
+Bunların determinantlarını bulun. A2 ve A3'ü bul.
+
+327
+01:06:31,876 --> 01:06:37,615
+Sonra Y'yi nasıl yazacaksın? Determinant, A2.
+
+328
+01:06:38,483 --> 01:07:03,340
+Bölü, determinant A, o da 3'tü. Z'de ne olacak? Determinant A3 bölü 3. Yani bunu da ne bulmanız gerekiyor? İşte yukarıda neydi çözüm, bak hatırlayalım. 7 bölü 3 bulmanız gerekiyor, tamam mı? Şunu 7 bölü 3 olarak bulmanız gerekiyor. Bunu da...
+
+329
+01:07:03,507 --> 01:07:14,807
+eksi on yedi bölü üç olarak bulmanız gerekiyor. Bu kısmı test etmeyi size bırakıyorum. Check this diyelim size bunu. Tamam mı?
+
+330
+01:07:18,387 --> 01:07:30,788
+Evet, sizin gruba ders verirken illa bir 5-10 dakika hızlı olmuş oluyor. Çünkü ilk sınıfa yazdığım karalamaları kullandığımdan dolayı, değil mi?
+
+331
+01:07:33,427 --> 01:07:42,567
+Şimdi ne yaptık burada? Kremel'e de sağlamasını yaptık. Gene aynı maddesi, aynı çözümü bulduk. Evet, bu haftanın konusu da buraya kadardı.
+
+332
+01:07:43,668 --> 01:07:52,807
+Sormak istediğiniz bir şey var mı arkadaşlar? Mesela bak, kitabın çözümlü örneklerine bakmayı deneyebilirsiniz. Yani oldukça elementer, anlaşılır örnekler onlar.
+
+333
+01:07:53,548 --> 01:07:55,228
+Hocam bu kitabı paylaşmış mıydınız?
+
+334
+01:07:55,908 --> 01:07:56,248
+Efendim?
+
+335
+01:07:56,867 --> 01:07:57,728
+Bu kitabı paylaşmış mıydınız?
+
+336
+01:07:57,728 --> 01:08:02,588
+Ya ben paylaşmaya çalıştım bunu ama yükleyemedim yani. Yükleyemedim.
+
+337
+01:08:06,420 --> 01:08:10,119
+Materyal yükle diye bir şey var orada, yani almıyor yani.
+
+338
+01:08:15,699 --> 01:08:38,979
+Evet. Şimdi bunlar parça parça olduğu için benim yani maille göndermem de hoş olmaz yani. Etik kurallar falan kısmı var. Yani kitabı komple göndermedikten sonra sorun olmaz. Yani 3-5 sayfa taratılabilir. Yani ona müsaade ediliyor diyebiliyorum ama yani parça parça gönderecek olsam kitabın tamamına doğru gider yani bu iş. Değil mi?
+
+339
+01:08:42,036 --> 01:08:49,015
+Evet arkadaşlar, pdf olan varsa elinde bir şekilde aranızda haberleşip tedarik etmeye bakın.
+
+340
+01:08:50,456 --> 01:08:53,115
+Ben bulamadım pdf'ini bunun internette.
+
+341
+01:08:55,595 --> 01:09:02,756
+Yani olmasa da olur. Bu kitap çok basit bir kitap. Kolman'ın kitabına bakarsan çok daha yüklü bir kitaptır.
+
+342
+01:09:03,876 --> 01:09:08,536
+Egzersizleri falan da test sınavı için daha uygundur hatta.
+
+343
+01:09:09,268 --> 01:09:36,468
+Onu söyleyeyim, yani bu Türkçe kitabın soruları, farkında mısınız bilmiyorum ama klasik tip sınav için daha uygun gibi gözüküyor. Şunu bul, bununla şunu çöz. Ama Colman'ın kitabına bakarsan, adam quiz bile eklemiş oraya. Mesela doğru yanlış diyor, değil mi? Bu önermelerden hangileri doğru? Mesela buna daha test tipi, yatkın sorular yani. Colman'ı tercih edebilirsin. Mesela onun çözüm anahtarı var PDF olarak.
+
+344
+01:09:37,011 --> 01:09:59,031
+Söylemiştim değil mi size bunları? Yani kitabın arkasında soruların cevapları var, onu kastetmiyorum yani. Bir de nasıl çözüldüğünü gösteriyor yani. İşte bunlar hocalar için hazırlanır, tamam mı? Ama yani birisi koymuş internete bulabilirsin yani. Solution Manual diye yaz, Coleman Hill diye çıkıyor yani, Google her şeyi getiriyor yani.
+
+345
+01:10:00,000 --> 01:10:03,539
+Bir şey indirdik arkadaşlarla bu Kolman'ın İngilizce versiyonu.
+
+346
+01:10:03,879 --> 01:10:06,420
+Tamam. Çözümünü de buldun mu onun çözümlü olanını?
+
+347
+01:10:07,119 --> 01:10:11,119
+Çözümlü değil de daha sorularına bakmadım ama istiyorsa arkadaşı ona atabilir.
+
+348
+01:10:11,739 --> 01:10:21,719
+Tamam. Onu herkes bulabilir ya. Bulamayan varsa atabilirsin. WhatsApp grubunuz varsa birbirinizle iletişim kurun ama benim bak ikinci söylediğim daha önemli.
+
+349
+01:10:21,719 --> 01:10:26,979
+Kitabı bir şekilde bulursunuz. Benim söylediğim başka. O kitaptaki yüzlerce soru.
+
+350
+01:10:27,444 --> 01:10:34,384
+Hepsinin çözümü var. Bak, cevap demiyorum, çözüm. Yani adam çözüyor, çözülmüş hali var yani.
+
+351
+01:10:36,944 --> 01:10:41,424
+Soluşum manual diye yaz oraya Google'a, bulursun yani. Ben bu şekilde buldum yani.
+
+352
+01:10:44,212 --> 01:10:52,811
+Hoca sen de mi kullanıyorsun onu diyebilirsin ama artık o kadar çok sınav yapıyorsun ki durduk yerde de otur otur soru türetemeyiz, onunla uğraşamayız.
+
+353
+01:10:52,952 --> 01:11:01,352
+Tabii ki bakacaksın yani değil mi? Bunlar elementer şeyler. Bizim asli görevimiz resource'tür. Bu tip basit işlerle çok fazla vakit harcayamayız.
+
+354
+01:11:01,752 --> 01:11:06,512
+Hazır materyal varsa kullanılır yani. Zaten bunun için yapılır hocalar bu tip materyaller.
+
+355
+01:11:08,051 --> 01:11:11,891
+Evet, var mı sorusu olan? Yoksa ben burada bitireceğim artık.
+
+356
+01:11:15,492 --> 01:11:21,091
+Söylememi istediğiniz başka bir şey varsa konuşalım arkadaşlar.
+
+357
+01:11:25,492 --> 01:11:40,311
+Kitaptaki çözümlü problemlere bakıyorum mesela şu anda önümde. Yani bu kitabın pdf'i de yok, kendisi de yok. Böyle bir öğrenci düşünüyorum. Onun da işi zor yani değil mi? Bu yüzden soruyorsunuz yani.
+
+358
+01:11:40,311 --> 01:11:47,572
+Hocam yükler misiniz? Efendim? Çetten mesaj geldi mi? Bakalım kimde var? Yani birinde varsa.
+
+359
+01:11:48,500 --> 01:11:55,720
+Paylaşsın yani, kendi aranızda paylaşın yani. Sınavla alakalı sorabilirsin tabii Palime, sor. Ama yazma, aç mikrofonunu öyle sor.
+
+360
+01:12:06,612 --> 01:12:12,752
+Kütüphanedesin şu anda. Peki, yaz o zaman sorunu.
+
+361
+01:12:25,811 --> 01:12:45,891
+Hangi konuya kadar çıkacak? Bunları söylemiştik. E-posta da attık. Yani derse geç bağlandın herhalde. İlk 7 hafta, Bolonya sayfasından bakın, göstereyim size. Madem sordun. Yani öğrenci sürekli bunları soruyor bu tip şeyleri söylememize rağmen. Mat 13.20 Bolonya. Sayfası bu.
+
+362
+01:12:50,163 --> 01:12:51,963
+Haftalık konulara bakalım.
+
+363
+01:12:53,763 --> 01:12:56,804
+Şu yedi sayfayı, yedi, pardon, yedi hafta.
+
+364
+01:12:58,943 --> 01:12:59,163
+Bu.
+
+365
+01:13:06,739 --> 01:13:33,579
+Yani burada ağırlık nedir derseniz, mesela ilk iki haftanın konuları şeydir yani, alfabe gibi düşün yani. Esas burada ağırlık nedir? İşte üçüncü haftadan itibaren başlıyor. Bak, elementer satır sütün işlemleri, bir matrisin eşelon formu, değil mi? Yani bir matrisin rangı, işte bir matrisin tersi nasıl bulunur, determinant nasıl hesaplanır? Ondan sonra da lineer denklem sistemleri geliyor. Zaten bütün öğrendiklerimi de orada uyguluyoruz.
+
+366
+01:13:36,115 --> 01:14:02,655
+Ben ne demiştim size? Bu lineer denklem sistemi çözme olayı, yani sizin yabancı olduğunuz bir şey değil yani. Daha önceden de yapıyordunuz üniversiteye gelmeden önce değil mi? Bir denklemi bir sayıla çarpıp ötekine ekliyordun, üç tane değişken varsa onu ikiye indiriyordun, sonra ötekini de yerine koyuyordun falan filan. Ya dikkat ettiniz mi bilmiyorum, elementel satış işlemleri yaparken de yaptığım şey aslında ta kendisinden. Ama matrisle çalışıyorum. Matrisle çalışıyorum değil mi? Çok daha pratik ya.
+
+367
+01:14:04,212 --> 01:14:11,952
+Üstelik de iki tane, üç tane denklem olması gerekmiyor. Yani boyutu yüksek de olsa fark etmez. Şablon var önümde çünkü.
+
+368
+01:14:14,192 --> 01:14:24,472
+Evet arkadaşlar, konular bunlar [öğrenci]. Bunlardan çıkacak. Öğrenci olarak kendinizi bir şey yapın. Ben öğrenci olduğum zaman da böyle yapardım.
+
+369
+01:14:24,472 --> 01:14:28,892
+Buradan şu kadar çıkar, bu konudan çıkar. Kain olmaya gerek yok ki.
+
+370
+01:14:29,555 --> 01:14:53,655
+Nerelerden sonra geleceği, aşağı beş yukarı belli yani. Bak mesela son iki hafta, altı ve yedinci hafta, lineer denklem sistemleri bahsedeyim. Ben yani en az üç tane beklerim yani buradan. Dörtte olur. Zorlarsan beşte olur ama zannetmiyorum beş olacağını. İki tane çok az olur mesela. Üç ya da dört soru gelir yani. Determinant hesabı. Determinantla ilgili bir soru. Yani.
+
+371
+01:14:54,260 --> 01:15:13,720
+En az bir tane gelir yani, iki olur, üç olur belki. Salt, determinant hesabı sorulmaz. Yani mesela bir matrisin tersini, tersiyle ilgili bir şey soruyordur. Sen o matrisin tersinin mevcut olması determinantıyla alakalı ya, orada onu determinant hesaplatabilir sana. Yani bir başka sorunun içinde de çıkabilir.
+
+372
+01:15:15,475 --> 01:15:41,775
+İlk iki haftanın konusunu da kullandırtır size. Yani matrislerle ilgili bir denklem verebilir, tamam mı? Şimdi orada envai çeşit matris saydık, değil mi? Özel matrisler, nil potent, idem potent, involute, işte bir sürü var. Hermitian, ters hermitian, simetrik, antisimetrik, ortogonal. Şimdi ya bunların tanımlarını iyice hafızanıza oturtmanız gerekiyor.
+
+373
+01:15:42,676 --> 01:16:01,355
+Şimdi idem potent matrisle ilgili bir soru geldi. Sen daha idem potent matrisin karesi kendisine eşit olan matris olduğunu bilmiyorsan, o soruda hiçbir şey yapamasın ki. Nitekim böyle sorular da geliyor. Tamam mı? Evet, başka sorusu olan var mı?
+
+374
+01:16:08,212 --> 01:16:14,452
+Evet, bu sınıfta yanlış hatırlamıyorsam, 80-90 arası mevcudu olan bir sınıf ama 19 kişilerin ders yapıyoruz yani işte.
+
+375
+01:16:14,992 --> 01:16:25,932
+Beni saymazsan 18. Hatta benden iki tane mi var şu anda sınıfta? Evet, gördüğünüz gibi hem laptop'tan hem de iPad'ten bağlanıyorum.
+
+376
+01:16:26,072 --> 01:16:33,731
+Yani niye yapıyorum bunu? Sırf duvara yansıtmak için. Değil mi? Öğrenci olmadığı halde. Öbür kullanıcı devredeşi de bırakabiliriz yani. Neyse.
+
+377
+01:16:34,707 --> 01:16:36,007
+Paylaşımı durduralım.
+
+378
+01:16:38,268 --> 01:16:40,647
+Evet arkadaşlar, dersi burada sonlandırıyorum.
+
+379
+01:16:41,047 --> 01:16:41,727
+Hoşçakalın efendim.
+
+380
+01:16:42,207 --> 01:16:43,147
+Haftaya görüşmek üzere.
+
+381
+01:16:43,987 --> 01:16:45,188
+İyi günler, iyi dersler hepiniz.
