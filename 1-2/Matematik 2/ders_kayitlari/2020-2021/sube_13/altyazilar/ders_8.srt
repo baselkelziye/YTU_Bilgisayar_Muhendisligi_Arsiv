@@ -1,0 +1,3363 @@
+1
+00:00:27,891 --> 00:00:30,012
+Günaydın arkadaşlar, nasılsınız?
+
+2
+00:00:35,411 --> 00:00:36,512
+Günaydın.
+
+3
+00:00:41,747 --> 00:00:42,987
+Evet efendim.
+
+4
+00:00:44,243 --> 00:01:09,924
+Benim çalışkan öğrencilerim hemen 10 dakika önce geliyorlar dünkü ödevi dinlemek için. Evet, şimdi dünkü ödevi çözmeye başlıyoruz. Bugün ne yapacağız? Kaldığımız yerden devam edeceğiz. Bugün Taylor ve Maclaurin'den kaldığımız yerden, yani bilinen Taylor ve Maclaurin serilerini kullanarak bunlarla işlem yapmayı öğreneceğiz. Bunların sorularını sınavda bekliyoruz.
+
+5
+00:01:12,243 --> 00:01:17,463
+Parametrik denklemler ve kutupsal koordinatlar diye büyük başlığımızı atacağız.
+
+6
+00:01:18,084 --> 00:01:21,903
+Ve bunun altında da parametrik denklemleri konuşacağız arkadaşlar.
+
+7
+00:01:22,563 --> 00:01:26,443
+Bugün parametrik denklemlerin tamamını bitirmeyi hedefliyoruz.
+
+8
+00:01:27,043 --> 00:01:30,343
+Evet, şimdi dün verilen ödevin cevabı diyelim.
+
+9
+00:01:31,683 --> 00:01:39,563
+Dün verilen ödev sorusu ve cevabı.
+
+10
+00:01:42,388 --> 00:01:48,108
+Evet, dün verilen ödev sorusu şöyle bir şeymiş. Hemen yazıyoruz sorumuzu.
+
+11
+00:01:49,707 --> 00:02:00,608
+Ne eşittir? Birden sonsuza kadar x artı 2'nin eninci kuvveti bölü n çarpı 3 üzeri n.
+
+12
+00:02:00,608 --> 00:02:08,608
+Evet, yakınsaklık aralığı, yakınsaklık merkezi, değil mi? Efendime söyleyeyim, yakınsaklık yarı çapı.
+
+13
+00:02:10,036 --> 00:02:37,475
+Ve aralığın uçları, hepsi soruluyor. Hemen yakınsaklık merkezi gözüküyor bunun. Yakınsaklık merkezi kaç? Yazmak isteyen varsa buyursun yazsın hemen. İşleme hemen başlamadan da gözüküyor. Sınavda da böyle minno sorular size sorulabilir. Hazırlıklı olun. Kaçtır bunun yakınsaklık merkezi? Gören varsa yazsın. Hiç kimse göremiyor mu ya?
+
+14
+00:02:38,132 --> 00:02:46,451
+Ben niye çözüyorum o zaman, kimse görmek istemiyorsa? Geliyorum sabahın köründe erkenden, anlatıyorum dünkü ödevleri.
+
+15
+00:02:46,951 --> 00:02:54,971
+Kimse ilgilenmiyorsa ben niye anlatıyorum? Keşke anlatmayaydım. Eksi iki, bravo. Evet, aynen öyle.
+
+16
+00:02:56,532 --> 00:03:21,932
+İlgilenin dersinizle. Neden? Bir çiçek bile ektin, sulamasan, bırak sulamayı, sulamak bile yetmiyor. Evde olmadığın zaman bile, suyu olsa bile boynunu büküyor. Çünkü seni arıyor o. İlgini arıyor, ona bakmanı istiyor, onu görmeni istiyor. Derseyle çalışmadan muvaffak olunur mu ya? Değil mi? Olmaz yani.
+
+17
+00:03:23,891 --> 00:03:40,352
+Ne bölü, ne artı bir? Çok da basit bir soru. İnşallah yapmışsınızdır. Efendime söyleyeyim. Bak, işlemleri sadeleştirdiğinizde kala kala bunlar kalıyor zaten. Küçüktür bir diyorsunuz mesela, değil mi?
+
+18
+00:03:42,051 --> 00:03:49,852
+Efendime, hatta üçü şuraya koysak daha temiz olur. Neden? Sanki o hariç hepsini bu yana koymuş gibi olsun. Evet.
+
+19
+00:03:50,515 --> 00:04:09,575
+Şurada artıyı da silgi farkındayım. Evet, dolayısıyla şurada sizin L'iniz 1 bölü 3 çıktı. O zaman R'iniz hakkında konuşuyorsanız, R'iniz 1 bölü L'den 3'tür. Öyle değil mi?
+
+20
+00:04:17,204 --> 00:04:29,463
+3'den daha küçük kalır. Bu da x artı 2'nizin eksi 3 ile artı 2 arasında olduğu veya daha basit olarak eksi 5 ile
+
+21
+00:04:30,867 --> 00:04:52,768
+bir arasında olduğu söylenilebilir. Bir de şöyle deniliyor, mesela işte bu seriyi verecek sana, diyecek ki, işte mutlak yakınsak olduğu aralık aşağıdakilerden hangisidir? Mesela bu işlemi yapmanı isteyecek. Bir de eksi beşle bir dahil mi diye ayrıyeten de kontrol etmen gerekecek. Hemen farklı bir renk kullanalım.
+
+22
+00:04:59,060 --> 00:05:10,699
+Ne eşittir? Hocam ama sıfırdan başlamamış, birden başlamış, istediği yerden başlar. Bize ne? Öyle başlatmış, bizi ilgilendirmez. Bize nasıl verildiyse, biz öyle çözeriz.
+
+23
+00:05:14,995 --> 00:05:22,835
+Bak şimdi, eğer sana sınavda bu soru sorulmuş olsa, ben sana ne dedim, kağıdını hazırla, kağıdında alternatif şartlılar vardı.
+
+24
+00:05:22,835 --> 00:05:33,515
+Bunu nasıl bilirsiniz arkadaşlar? Hiç işlem yapmadan hop diye, bunu mesela şartlı yakınsak olduğu yer neresi dediği zaman tık diye bunu koyabilmen lazım seni.
+
+25
+00:05:39,891 --> 00:05:42,171
+[öğrenci]'cim 1 ile 0 olmayacak yavrum.
+
+26
+00:05:43,691 --> 00:05:44,931
+Eksi 5 ile 1 olacak.
+
+27
+00:05:46,072 --> 00:05:50,012
+Yok hocam, demek istediğim, eksi 5 ile 0 arasında olmayacak mı?
+
+28
+00:05:51,031 --> 00:05:51,791
+Öyle mi oluyor?
+
+29
+00:05:52,072 --> 00:05:52,891
+Aa, 0 olacak.
+
+30
+00:05:53,091 --> 00:05:53,951
+Yok, 1 olacak.
+
+31
+00:05:54,171 --> 00:05:55,572
+Çocuğum 3 bu burası ki.
+
+32
+00:05:55,691 --> 00:05:56,531
+Eksi 2 düşünce.
+
+33
+00:05:56,611 --> 00:05:57,971
+Ha, şurasını demek istiyorsun.
+
+34
+00:05:58,512 --> 00:06:00,951
+Şurayı hocan yanlış yazınca kafan karışır tabii.
+
+35
+00:06:01,091 --> 00:06:01,371
+Normal.
+
+36
+00:06:01,491 --> 00:06:02,471
+Hocan da kabahat.
+
+37
+00:06:03,771 --> 00:06:05,291
+Çocuğun kafası karıştı.
+
+38
+00:06:06,151 --> 00:06:06,411
+Evet.
+
+39
+00:06:08,211 --> 00:06:14,052
+[öğrenci]'cim tamam mı canım? Şurayı yanlış yazmışım yavrum. İki yazmışım.
+
+40
+00:06:14,852 --> 00:06:31,732
+Tamam. Şu nedir? Şu. Şu. Bunu nasıl bilirsiniz? Bir kere serisinin, hadi yazalım yine, mutlak değerlerinden oluşan seri.
+
+41
+00:06:37,204 --> 00:07:01,783
+Bıraksak olduğu için, mutlak yakınsak değil. Değil mi? Tamam. Peki şartla yakınsak mı? Şartla yakınsak. Hocam nereden hemen söylüyorsun? Ezberledim ben artık da ondan. Sen de çok çalışsan böyle olacak. Bir kere alterne. Doğru mu?
+
+42
+00:07:02,548 --> 00:07:27,207
+Gittikçe küçülüyor mu? Yes, küçülüyor. Üçüncü, limit n sonsuza giderken, bir bölü n de sıfır mı? Bit. Demek ki şartlı yakınsak. Şartlı martlı arkadaş, yakınsıyor mu? Yakınsıyor. Şartlı yakınsak. Peki x eşit bir koysam, x eşit bir koysam hiç şansın yok. Neden hocam?
+
+43
+00:07:28,403 --> 00:07:34,583
+Çünkü harmonikleri çıkıyor. Ben ne yapayım? Ben yapmadım ki. Kendi öyle oldu. Benim kabahatım yok.
+
+44
+00:07:36,643 --> 00:07:37,363
+Buğraksak.
+
+45
+00:07:39,343 --> 00:07:46,603
+Güzel. O zaman şu eksi 5'te eşitlik var. Tamam mı? Bir de yok.
+
+46
+00:07:47,383 --> 00:07:50,723
+Şimdi sana dese ki mutlak yakınsak olduğu aralık hangisi?
+
+47
+00:07:52,723 --> 00:07:54,123
+Ne diyeceğim?
+
+48
+00:07:55,028 --> 00:08:22,548
+Eksi 5 ile 1 diyeceksin. Şartlı yakınsak olduğu aralık neresi? Aralık değil hocam, bir tek eksi 5 ile başka bir yer bulamadım diyeceğim. Iraksak olduğu yer neresi desem sana? Hocam, eksi sonsuzdan eksi 5'e kadar bu dahil değil, birleşim. Efendim, hatta burayı da kapalı yapmam lazım, biliyor musun? Evet. Bir inen sonsuz arasındaysa ıraksak demem lazım.
+
+49
+00:08:22,963 --> 00:08:24,024
+Tamam yavrum.
+
+50
+00:08:25,144 --> 00:08:26,603
+Ama ödevcük var mı?
+
+51
+00:08:27,444 --> 00:08:35,144
+Evet, ödev sorumuzu da anlattık güzel bir şekilde. Her derste böyle bir minnoş ödevcikcik.
+
+52
+00:08:35,803 --> 00:08:36,084
+Evet.
+
+53
+00:08:37,764 --> 00:08:39,943
+Minnoş ödevcikcik, evet.
+
+54
+00:08:43,163 --> 00:08:47,124
+Beşteki aralıkta, beşte aralık yok ki bir tanem, nereden beşte buldun?
+
+55
+00:08:48,596 --> 00:09:09,675
+[öğrenci], 5'i nereden buldun? Ha 5'teki aralıkta kapalı olacak sanki. Hayır [öğrenci]'cim, kapalı olmayacak canım. Mutlak yakınsak değildi ki eksi 5'te. Mutlak yakınsak olduğu açık. Hatta orayı kırmızı kalem ile yazalım. [öğrenci], çok güzel bir şey söyledin.
+
+56
+00:09:16,659 --> 00:09:32,340
+Eksi 5. Bak sınavda sorarlar, gider pat diye orayı işaretlersin. Açık çünkü eksi 5'te şartlı yakınsak, mutlak yakınsak değil.
+
+57
+00:09:35,580 --> 00:09:40,639
+Bak [öğrenci] size çok güzel bir sabah sabah bir güzellik, bir iyilik yaptı.
+
+58
+00:09:41,524 --> 00:09:54,304
+Çünkü bunu sınavda sorarlar. Mutlak yakınsak olduğu aralık hangisidir diye sen de, efendime söyleyeyim kapalı aralık zannedersin sınav heyecanından.
+
+59
+00:09:54,964 --> 00:10:01,044
+[öğrenci] şimdi o heyecanını bu derste kullandı, artık sınavda o dikkat edecek.
+
+60
+00:10:01,524 --> 00:10:07,224
+Bak sen de şu anda böyle uyku mahmurluğunla fark etmedinse fark et.
+
+61
+00:10:07,988 --> 00:10:23,128
+Onu da yazdırdık buraya. Bak ne güzel oldu. Sana ne güzel bir iyilik yaptı yani. Evet, kaldığımız yerden başlayabiliriz. Saatimiz şu an 9 sınıfta. Bakalım kaç kişi varmış? 47-48 kişi var. Maşallah.
+
+62
+00:10:28,148 --> 00:10:41,707
+Akıllı öğrencilerim, çalışkan öğrencilerim. Evet, şimdi bilinen serileri kullanarak seri işlemleriyle aşağıdaki fonksiyonları yazınız demiş. Bu işlemler gelir mi?
+
+63
+00:10:42,067 --> 00:10:58,008
+Arkadaşlar, bu işlemler gelir. Birazdan başlığımızı da atacağız. Hemen cik cik örneklerimizi de yapacağız. Özellikle integraller gelebilir. Efendime söyleyeyim, özellikle serilerin yeni formları sana sorulabilir. Bunlara çok dikkat et.
+
+64
+00:10:59,187 --> 00:11:08,908
+L'hôpital'li limit olur da mesela der ki bu limitin işte efendim esul'in bilindik serilerle ifadesi aşağıdakilerden hangisidir diye sorabilir.
+
+65
+00:11:09,268 --> 00:11:16,968
+Çünkü limitin sonucunu sana sorsa sen hemen L'hôpital'den hop hop hop yapıp pıt diye yerine koyarsın.
+
+66
+00:11:17,348 --> 00:11:22,268
+O zaman da zaten sormak istediklerini sana soramamış olurlar.
+
+67
+00:11:22,268 --> 00:11:25,927
+Demek ki sonuçtan ziyade buradaki sürece dikkat edin.
+
+68
+00:11:27,187 --> 00:11:47,368
+Adımda soruyu durdurup aradaki işlemi sınavda sana sorabilirler. Bu manada dinlemen de çok fayda görüyorum. Evet, şimdi dersimize başlayalım. Hemen şöyle yazalım. Bilinen serileri kullanarak.
+
+69
+00:11:47,368 --> 00:11:53,048
+Hocam ben seri falan bilmiyorum. Ne demek bilmiyorsun ya? Dün sana kağıt yazdırdım ya.
+
+70
+00:11:53,908 --> 00:11:58,528
+Hangi kağıt hocam ben yazmadım ki? Siz bir şeyler yazdınız, dinlemedim ben o zaman.
+
+71
+00:11:59,067 --> 00:12:08,888
+Haa, onu yapmadınsa o kötü. Sen arkadaşlarına söyle, neler lazım diye sana söylesinler. Yakut dünkü videoyu seyret.
+
+72
+00:12:09,648 --> 00:12:19,168
+Orada bir kağıt dedim hazırla. Hatta şimdi bir daha söyleyelim. Evet, fonksiyonu yazınız. Evet.
+
+73
+00:12:21,299 --> 00:12:31,120
+Şimdi bilinen seriler derken biz dün mesela e üzeri x'i yaptık, sin x'i yaptık, bir de cos x'i yaptık.
+
+74
+00:12:31,500 --> 00:12:39,199
+Bu serileri kullanarak bunlara benzer serileri, kuvvet serilerinin özelliği gereği çok rahat bir şekilde yazabiliyoruz.
+
+75
+00:12:39,199 --> 00:12:45,539
+O açıdan şimdi bunlarla ilgili önce ara hesaplarda yapılması gereken minik işlemleri yapacağız.
+
+76
+00:12:45,639 --> 00:12:49,299
+Çok kolay bir şekilde biraz burayı böyle rahat yapacağız.
+
+77
+00:12:49,299 --> 00:12:58,799
+bir şekilde geçeceğiz, haberiniz olsun. Şimdi A şıkkında ne diyormuş mesela? A şıkkı diyor ki, 1 bölü 3, 2x artı,
+
+78
+00:12:59,120 --> 00:13:10,959
+x cos x, mesela böyle bir soru gelebilir. Diyebilir ki, bu fonksiyonun seri halinde ifadesi aşağıdakilerden hangisidir diyebilir.
+
+79
+00:13:11,379 --> 00:13:18,740
+Sen orada senin hemen kağıdında cos x formülü var, onu hemen yerine yazıp biraz işlemleri derleyip toplaman lazım.
+
+80
+00:13:19,179 --> 00:13:22,019
+Ve bu işlemlerde de biraz çabuk olman lazım.
+
+81
+00:13:22,259 --> 00:13:27,019
+Cos x'in formülü zaten elinde diyorum. Yani hala elinde değilse de artık...
+
+82
+00:13:27,120 --> 00:13:45,839
+Ne zaman elinde olacak acaba? Acaba ne zaman yapmayı düşünüyorsun? Bak şimdi ne demek istediğimi anlatabildim mi sevgili arkadaşlar? Bak yani anladınız mı? Çalışmanız lazım. Böyle hani gevşek davranarak bundan muvaffak olunmaz.
+
+83
+00:13:47,700 --> 00:14:08,600
+Hani diyor, karpuz yatarak büyür. Karpuz bile yatarak büyümüyor ya. Yani ben büyüttüm İstanbul'da, döndürmen lazım. Belki çok sıcak memleketlerde, öyle yattığı yerde büyüyordur ama bilmiyorum yani. Ondan sonra benim karpuz böyle hafif hafif güneşe doğru çevirmek zorunda kaldım. Çünkü bu sefer topraktan çürüyor.
+
+84
+00:14:09,203 --> 00:14:31,323
+Hani çok kurumuyor tabii buralarda. Toprak çok güneşten, altı ıslak kalıyor falan filan. Yani böyle bir şeyler. Onun için demek ki karpuz bile yatarak büyümüyormuş. Bak bunları derledik topladık. Anlamayan var mı? Beş hıkkına geçiyorum çünkü. Cos 2x. Şimdi cos 2x sana başlı başına gelmez ama tabii ki.
+
+85
+00:14:32,052 --> 00:14:39,052
+Bu işlemi senden yapman istenebilir. Hemen cos x'i yazıyorum. Cos x neydi? 1-1.
+
+86
+00:14:39,488 --> 00:14:58,928
+Sende bu kağıt hazır olması lazım. Bak şu şartlı yakınsaklık hikayesini de kağıdına bence ekle. Neden? Mesela sınavda deminki soru sorulmuş olsa, hemen eksi 5 için olan formu sen takadanak, aa bu şartlı yakınsaktı diye o hesabı yapmaksızın bile söyleyebilecektin.
+
+87
+00:15:01,727 --> 00:15:10,847
+derdin, efendime söyleyeyim, hangi aralıkta mutlak yakınsak, yahut işte hangi noktada, dur aşağıdakilerden hangisiymiş falan şeklinde olacak.
+
+88
+00:15:10,847 --> 00:15:21,768
+Aa hocam karambola gelmesin, ne yaptınız demin? Ne yaptım demin? Şimdi dikkat ediniz, eğer burası 2x ise, x olan yerlerin hepsine,
+
+89
+00:15:22,259 --> 00:15:37,899
+2x yazıyorum. Bakın gördüğünüz gibi bunun içerisine hep 2x bıraktım. Hocam tüm serilerde de böyle olur mu? Olur. Olur. Bu açıdan Taylor ve Maclaurin serileri çok kullanışlı serilerdir. Bunları güzel biliniz efendim.
+
+90
+00:15:38,620 --> 00:15:48,720
+Yine mesela sinüs x için konuşursak, mesela sana sinüs x kare sorulmuş olsa, sen yine burada sinüs x'i önce yazarsın.
+
+91
+00:15:49,268 --> 00:15:49,927
+Mesela.
+
+92
+00:15:56,724 --> 00:16:20,704
+Yani, hocam kaç terim yazayım peki? Dişe gelsin. Yani en az 3 tane sıfırdan farklı terim yaz. Zaten şıklar da seni yönlendirecektir. Hani bakarsın 4'er terimliyse 4 tane terim üzerinden konuşursun. Onda bir sıkıntı yok. Şimdi x gördüğüm yere x kare yazacağım değil mi arkadaşlar? Evet. Aynen böyle. Sıkıntı yok.
+
+93
+00:16:22,227 --> 00:16:49,767
+Kolaymış, kolay kolay. Çalışınca her şey kolay. Çalışmayan insana 3 kere 2 de zor. Neden? Çarpım tablosuna çalışmamış. Çarpım tablosunu öğrenene kadar birçoğunuzun, mesela ne kadar uğraştınız, küçüklüğünüzü hatırlasanıza ya, 3 kere 2 kaçtı, 5 kere 5 kaçtı, bilmem kaç kere kaç kaçtı, değil mi? Onun için bile küçücük halinle ne kadar ter döktün.
+
+94
+00:16:50,707 --> 00:16:57,427
+Değil mi? Bir sabah kalktın, çarpım tablosunu ez verebiliyorsun. Böyle bir şey var mı? Aranızda böyle birisi var mı?
+
+95
+00:16:59,028 --> 00:17:10,467
+Hoca da ikide bir sorar, 7 kere 8, 8 kere 9. En çok 7 kere 8, yani 7'lerle 9'ların son haneleri, 8'lerin 5'ten sonraki haneleri, çocukların kabusu.
+
+96
+00:17:11,768 --> 00:17:13,087
+Çocuğun da sıkıntısı var.
+
+97
+00:17:13,875 --> 00:17:35,715
+Sen koca mühendislik lisans öğrencisi, tabii ki bunlarla uğraşacaksın. Ufacık çocuklar çarpım cetveli için uykusu kaçıyor yavruca. Öyle değil mi? Ya, evet. Emeksiz yemek yok. Herkesin sıkıntısı var. Evet.
+
+98
+00:17:36,564 --> 00:18:00,084
+Akşam misafir gelecek. Annenin sıkıntısı var. İşte onu pişirelim, bunu taşıralım. Değil mi? O yemekler, efendime söyleyeyim, karşına böyle elini şık diye şıklatınca hop diye tabak tabak gelmiyor. Pişiriyor, taşırıyor, dibi tutmasın diye başını bekliyor. En basitinden bir bardak süt koyuyor önüne. Başında bekliyor, taşmasın diye.
+
+99
+00:18:00,852 --> 00:18:22,712
+Sonra çok kaynatıyor, efendime söyleyeyim, içindeki bakteridir, bir şeydir, hastalık bir şeyi taşımasın sana, midene gitmesin, sen rahatsızlanma diye. Bak, bir süt ya, bir bardak süt, ne yaptı ki bana süt getirdi. Anlatabildim mi? Onda bile inanılmaz emek var. Değil mi? Nankör olmamak lazım, çok önemli.
+
+100
+00:18:23,763 --> 00:18:50,283
+Onun için ağlamamak lazım. Herkesin sorumlulukları var, senin de sorumluluğun var. Sen de ne yapacaksın? Derslerini güzelce geçeceksin, inşallah diplomanı güzelce alacaksın. Efendime söyleyeyim, seni buralara taşıyan insanların yüzünü artacaksın. Değil mi? Ay diyecekler, ne güzel bizim evladım, meralere geldi. Ay maşallah, emekler verdik ama ne kadar değdi buna falan diye sevinecekler yani. Ya ne kadar önemli. Değişik.
+
+101
+00:18:52,243 --> 00:19:10,683
+Efendim, bak başka bir şey yapmış. E x çarpı sin x. Hocam, bunda ne yapacağız? Bu biraz, evet, enteresan bir şey. Şimdi şıklara bakarsın, şıklarda ne gibi bir şeyler var, ona göre yaparsın. Şimdi e üzeri x'in ben değerini yazayım. E üzeri x'in kağıtta da var. Dün de çıkarttık zaten bunları.
+
+102
+00:19:26,355 --> 00:19:51,395
+Evet, şimdi ne yaptık, ne yapacağız burada? Dağılma işlemi, ilkokuldaki gibi, şey ilkokulda yoktu şimdi de, belki işte ortaokulda öğrendi. Bu dağılma işlemi zaten yakamızı hiç bırakmıyor. Dağılma, birleşme bunlar. Evet, şimdi birle bunu çarpacağım, sonra x ile bunu çarpacağım, sonra x ile, hocam kaç tane? Üç tane yeterlidir dediğim gibi ışıklara da bakarsın, ondan sonra derlersin toplarsın, bir şey olmaz inşallah.
+
+103
+00:19:51,395 --> 00:19:52,755
+Evet.
+
+104
+00:20:22,259 --> 00:20:31,939
+İşte böyle devam ediyor. Bu da böyle bir şey. Hocam böyle gelir. Bu da zayıf bir ihtimal ama hani böyle bir şey olursa da bunların da hepsini bak mesela önce bir var.
+
+105
+00:20:32,419 --> 00:20:42,379
+X'li terim başka var mı? Hayır yok burada var. X kareli var mı? Derlersin toplarsın işte falan filan. Hani böyle yazabilirsin sevgili arkadaşım.
+
+106
+00:20:42,379 --> 00:20:48,439
+Şimdi esas bizim karşımıza çıkan şeyler şu sınav soruları şuna benzer olabilir.
+
+107
+00:20:49,715 --> 00:21:14,275
+Hocam, ben bunu böyle yapmam ki, nasıl yaparsın? Hocam, kısmiden yaparım. Kısmiden bir yap da biz de görelim ya. Valla bir görelim yani. Bunu ben kısmiden yaparım diyen var mı? Ey maşallah, bu kısmiden, mısmiden çözülmez, eliptik integraldir bu. Yine aynı vaziyette, ev üzeri x kare, eliptik integraldir. Sin x bölü x. Bir çöz de görelim ya.
+
+108
+00:21:15,155 --> 00:21:26,875
+Ben de alayım matematik bölümüne götüreyim. Bak benim öğrencim bunu çözmüş diye. Böyle bir şey yok. Bu integralleri normalde çözemezsiniz. Gerçekten mi? Gerçekten tabii.
+
+109
+00:21:27,443 --> 00:21:44,783
+Yani bunları Taylor ve Maclaurin serileri olmadan çözemezsiniz. Bunun konu diye karşınıza gelmesinin esas manası çözülemedik integralleri çözebilmesi içindir. Kilidi açabildiği içindir. Bunlar sana sorulur.
+
+110
+00:21:45,543 --> 00:21:51,443
+Silmeseydiniz hocam. Ne yazdım? E üzeri x kare yazdım. Bir de sin x bölü x yazdım. Al onları çöz mesela sende.
+
+111
+00:21:51,796 --> 00:22:04,076
+Tamam mı? Sen de onu çöz. Sıfırdan 1'e kadar yazdıklarımı çöz işte. Neleri çözeyim hocam? Ama ben çözmem yeter artık. Bütün ödevlerinizi bana yaptırıyorsunuz. Böyle şey olmaz. Yazık bana da ya.
+
+112
+00:22:05,276 --> 00:22:17,715
+E üzeri x kare. Çöz mesela bunu. Sin x bölü x. Çöz mesela bunu. Al bunlar sana ödev. Ben çözmeyeceğim ama sen çöz. Bunlar sınavda gelir. Daha ben ne diyeyim ya?
+
+113
+00:22:18,996 --> 00:22:28,896
+Artık bu kadar tembellik olur mu ya? Bir eline kağıdı kaleme al da, kağıt kalemde sevinsin, epeydir beni eline almıyor, ay ne güzel desin ya.
+
+114
+00:22:32,500 --> 00:22:39,680
+Evet. Şimdi burada sin x kare neydi? Hemen yine hatırlayalım. Sin x'imizi yazıyoruz.
+
+115
+00:22:48,915 --> 00:22:56,415
+Sinik skarayı da yaz. Nasıl yazayım? E bayağı yaz işte. Demin yazdığım gibi. Demin yazdığım gibi tabii.
+
+116
+00:22:57,172 --> 00:23:17,172
+Şimdi benimle birlikte mesela bu işlemleri yapsan da çıksa bunlar aradan. Çünkü bunlar yalnız başına yapılabilecek işlemler. Benimle birlikte bunları yapsan da bunları artık sınava hazırlanırken, bunları ben hoca çözerken, konuşurken de güzel güzel çözdüydüm, ben bunları beton gibi biliyorum desen mesela.
+
+117
+00:23:25,172 --> 00:23:52,692
+A da hangi birine çalışacaksın? Ben çalışmayacağım zaten. O başka senin öyle planın varsa tamam o plan. Evet çalışmayacaksan, evet şimdi çalışmaman normal ama çalışmayı düşünüyorsan sıkıntı var. Evet şimdi bunları terim terim alacağız. Hocam yine sonucu veriyor mu? Veriyor, problem yok. Tamam mı? Veriyor. Nasıl yani? Bayağı veriyor işte yerine koy. İntegral mi alacak? İntegral al.
+
+118
+00:23:53,748 --> 00:24:15,448
+Üstünü bir arttırıyorum, bölüyorum. Evet. Allah Allah. Ne tembellik arkadaş ya. Integral alacak soruyor. Lisede biliyorsun bunu. Üstünü bir arttır, kendisine böl. Faktöriyel dursun orada paşa paşa. Evet. Sıfırdan bire kadar. Şimdi hocam bir sınırı bir daha sınır mı koyacağım? Evet. Allah Allah.
+
+119
+00:24:19,476 --> 00:24:22,375
+Peki hocam, bunları hesap etmeme gerek var mı? Yok.
+
+120
+00:24:23,456 --> 00:24:26,296
+Baktın ki hesaplanmış olan sana soruldu.
+
+121
+00:24:27,836 --> 00:24:31,436
+O zaman bakarsın ama genelde öyle sorulmuyor yani.
+
+122
+00:24:32,476 --> 00:24:33,216
+Nasıl soruluyor?
+
+123
+00:24:34,576 --> 00:24:36,316
+Hani mesela şöyle veriyorlar genelde.
+
+124
+00:24:36,316 --> 00:24:44,236
+Böyle diyor mesela, yaklaşık olarak diyor, 1 bölü 3, eksi, 1 bölü 3 faktörü 6.
+
+125
+00:24:44,884 --> 00:25:06,144
+1 bölü 5 faktöryel 11 mesela. Bakarsın hani tek şıkta bu varsa, bir de kuyruğu da varsa, bu bir şıksa hemen tak diye gider olur. Bakarsın dördüncü terime mi hemen bir tane daha terim eklersin, tık diye ona da bakarsın. B ile C'de bu var, dördüncü terimde aralarındaki farksa ona göre karar demelisin. Çok basit bir şey yani. Anlaştık mı?
+
+126
+00:25:06,932 --> 00:25:30,572
+Evet, şimdi çözeceğim soru. Sınavda en az 3 kere geldi. Her sene anlatıyor. Arkadaşlar, buna dikkat et. Gelir yavrum. Hocam gelir mi gerçekten? Gelir çocuğum. Çalış yavrum buna. Hala burnunu kıvırıyor. Ya sınıfta yaptığımız soruyu. Tamam mı? Bak, sınıfta yaptığımız soruyu. Tamam mı? Sınavda sordular ya.
+
+127
+00:25:30,928 --> 00:25:47,567
+Yapamadı. Neden? Çünkü çok hafif aldı. Çok basit diye. Şimdi hocam, sinüs x'i biz biliyoruz. Evet. Ama tanjant x'i bilmiyoruz. Evet. Şimdi onun için tanjant x'i hesap etmemiz lazım. Evet.
+
+128
+00:25:48,339 --> 00:26:14,879
+Şimdi ben tancantiksin türevini falan alsam, 1 artı tancantiks diye çok zor oluyor. Evet, zor olur, çok uğraşman lazım. Onun yerine ben eski dehterlere baktım, bölme yapıyormuş hocalar. Evet, bölme yapıyoruz, soruyoruz da onu ama çözen yok canım. Ya, çözen yok. Mesela şöyle bir şey de sorabilir. Sin x bölü e üzeri x aşağıdakilerden hangisidir? Bölme işlemi yapman istenebilir senden. Mesela hani.
+
+129
+00:26:15,604 --> 00:26:42,403
+Nasıl yapacağız? Bak buradaki gibi yapacaksın. Anlatıyorum. Ona göre çalış. Daha ne diyeyim ben? Evet. Şimdi sin x'in formülünü yaz. Kaç terim yazacağım? 3 tane yeter dedik. Fazla yazıp da artık bayıtma kendini. Neden? Zaten 20 tane soru gelecek. Böyle küçük küçük sorarlar. Gerisini yazmıyor muyum? Yok yazmıyorsun. İlk 3 terimini yaz. Öbürkününkini de yaz.
+
+130
+00:26:43,092 --> 00:27:08,011
+Kosinkini mi? Kosinkini yaz. Hani sin bölü kos ya, onun için. Yaz onu da. Yazdım. Tamam. Şimdi bölme yap. Nasıl böleceğim? Bunda bu kaç defa var? Burası beni güldürüyor. X'de birkaç defa var. X defa var. Peki. X. Eksi.
+
+131
+00:27:08,692 --> 00:27:13,491
+x küp bölü 2 faktöryel, 3 de alıp başını gitti nerelere.
+
+132
+00:27:14,991 --> 00:27:15,211
+Evet.
+
+133
+00:27:17,152 --> 00:27:17,471
+Tamam.
+
+134
+00:27:18,351 --> 00:27:22,051
+Ondan sonra x 5 bölü 4 faktöryel.
+
+135
+00:27:22,351 --> 00:27:22,892
+Tamam mı?
+
+136
+00:27:24,311 --> 00:27:27,551
+Şimdi burada dikkatli ol, payda eşitlemen lazım.
+
+137
+00:27:28,000 --> 00:27:50,955
+Burada bunu bundan çıkartırken bunlar kafadan gitti. Ama burada sıkıntın var. Burada payda eşitlerken bu 3 faktöryel, bu 2 faktöryeler. Ya onları açarsın, 3 kere 2, 6 dersin, bu da 2 dersin. Veyahut 3 faktöryel ile 2 faktöryelin arasında bir tane 3 vardır dersin. Ona göre onu çarparsın. Çarptıktan sonra ne olur? 2 tane...
+
+138
+00:27:50,963 --> 00:28:11,304
+Evet, iki tane şöyle olur, 2x küp bölü 3 faktörüyle olur. Buradaki işlemleri yaptığın zamansa sadece 3 kalır. Bak bu işlemi yapman lazım. Bu işlemi yapabilmen için de antrenmanlı olman lazım. Ben buraya yazıyorum artık ben daha ne yapayım? Sen oturup bunlara çalışman lazım yavrum.
+
+139
+00:28:14,579 --> 00:28:37,779
+Aynı hikaye burada da bunu beşle genişleteceksin. Ondan sonraki işleme bakacaksın. Kim kaldı? Bak sorarlar. Ben daha ne diyeyim sana? Evet. Sonra bunda bu kaç defa var? Hocam bir öğüne bakmıyor. Hayır, baştakine bakacaksın. Bunda bu kaç defa. Sen işte buna çalışmazsan buna bakarsın. Saçma sapan bir şey yazarsın. Yazık günah oldu emeklere. Gitti emekler.
+
+140
+00:28:39,635 --> 00:29:05,536
+x küp bölü 3 defa var. Yaz onu da. Peki hocam kaç terime kadar bölme yapacağız? Ben ne dedim artık? Dilimde tüy bitti. 3 tane terim yeterli dedim değil mi? Baktın ki şıklarda 4 tane var, bir terim daha devam ettirirsin. Bu kadar basit yahu. Bu bunu götürdü. Buradaki işlemi yaparsın gene. Bu da 2 bölü 15 x üzeri 5 ediyormuş. Bunda bu kaç defa var?
+
+141
+00:29:06,067 --> 00:29:21,347
+2 bölü 15, x üzeri 5. Hocam işlerim oldu. Tamam dur o zaman, daha devam etme. Daha devam etme. Tamam oldu, buldum. Tamam, bölmeyi yapabil ama bak. Limit dedik, sıfıra giderken dedik.
+
+142
+00:29:27,731 --> 00:29:29,551
+Böyle noktacıkçıklı yazdık.
+
+143
+00:29:30,432 --> 00:29:32,551
+Hocam noktacıkçıksız yazsak ne olur?
+
+144
+00:29:32,672 --> 00:29:33,751
+Zaten teste giriyorsun.
+
+145
+00:29:33,892 --> 00:29:35,432
+Senin nasıl yazdığını kimse görmüyor.
+
+146
+00:29:35,531 --> 00:29:38,172
+Yazılı sınav olsa noktacıkçıklı yaz diyecektim sana.
+
+147
+00:29:38,791 --> 00:29:40,271
+Ama burada öyle bir sıkıntın yok.
+
+148
+00:29:40,412 --> 00:29:45,531
+Sınava girdiğin için başa lim yazdın mı, yazmadın mı onu da göremiyoruz maalesef.
+
+149
+00:29:46,531 --> 00:29:49,291
+Artık okullar açılınca onun rövanşını yaparız.
+
+150
+00:29:51,092 --> 00:29:51,652
+Evet.
+
+151
+00:29:53,395 --> 00:30:02,135
+Bak, hop, hop, bunlar gitti. Başka? Bunlar 2 tane oldu. Tamam. Öyle mi olmuş? Evet, 2 tane olmuş.
+
+152
+00:30:02,544 --> 00:30:22,084
+Tabii bunu şimdi, yok bak, buradaki işlemi yaparken de çok dikkat et. Bu 3 faktöryel, bu da 3 faydalarını eşitlemen lazım. Bunun paydasını eşitlemen için 2 tene koyman lazım yukarı. Bu 2 tane olursa ondan sonraki işlemi yapman lazım. Bu kalıyormuş. Ben de yapmadım işlemi. Şimdi bakarak yazıyorum. Yalan yok.
+
+153
+00:30:22,584 --> 00:30:27,504
+Efendime söyleyeyim, şurada bak bu 15'miş, o öyleymiş. Faydalarını eşitleyeceğim bir zahmet.
+
+154
+00:30:29,164 --> 00:30:30,044
+Tamam mı?
+
+155
+00:30:30,740 --> 00:30:42,339
+Bölü x küp. Evet, eşittir dedim. Bitti mi? Yok anacığım. Nerede? Evet, x küp parantezine alıyorum.
+
+156
+00:30:46,740 --> 00:31:06,759
+Aynen. X küpler de gitti. Sıfır koyduğunuz zaman artık bundan sonraki tüm terimler, hep x küplü, x kareli falan olduğu için bunların hepsi yerlerine sıfır konulduğunda sıfır olacaktır. Sonucunuz eksi 1 bölü 2'yi verecektir sevgili gençler.
+
+157
+00:31:07,299 --> 00:31:13,059
+Burası tamam mı yavrum? Sorusu olan var mı? Anladınsa bir tuşa bas bakayım. Tamam.
+
+158
+00:31:14,451 --> 00:31:40,692
+Evet, şımdık bir sonraki sorumuz. Oldukça kolay bir soru. Limit x sıfıra giderken 1 bölü sin x, eksi 1 bölü x, eşittir soru işareti. Limit dedik, x sıfıra giderken dedik. Önce payda eşitliyorum. x eksi sin x, bölü x çarpı sin x. Güzel.
+
+159
+00:31:41,140 --> 00:31:46,539
+Sonra ne yapmam lazım? Hocam, burada sin x'i yazacağız yerine. x diye bir şey yok çünkü. Aferin.
+
+160
+00:31:48,200 --> 00:31:51,120
+x yazdık. Sin x'in yerine değerini yazıyorum.
+
+161
+00:31:59,571 --> 00:32:24,652
+Mis gibi oldu. Evet. Hocam, şimdi bana böyle soru sorulursa ben bunu lopitelden yaparım. Onların ruhu duymaz ki. Öyle olur mu ya? O zaman adam aradakini sorar sana. Der ki bu limit aşağıdakilerden hangisinde ifade edilir der. Sana nereyi sorar biliyor musun? Yani bir akıl sende yok şekerim. Karşı tarafta da akıl var. Herkeste var akıl çok şükür.
+
+162
+00:32:26,228 --> 00:32:39,728
+Herkeste var akıl. Burada öyle bir şüphemiz olan kimse yok. Herkesin aklı fikri var. O zaman bir tek sende yok. Sana şu sorulabilir sevgili arkadaşım. Bak, bak, söylüyorum hemen.
+
+163
+00:32:48,307 --> 00:32:49,168
+Özür dilerim.
+
+164
+00:32:59,923 --> 00:33:10,464
+Sana bu sorulabilir. Mesela der ki, bu limit aşağıdaki limitlerden hangisiyle ifade edilebilir? Sen de gidip bunu işaretlemek zorunda kalırsın.
+
+165
+00:33:10,923 --> 00:33:16,044
+Şimdi anladın mı acaba derdimizi? Tamam mı?
+
+166
+00:33:16,044 --> 00:33:26,044
+Yani ben bunu ilkokul, şey ilkokul diyorum, lise birdeki gibi pıt pıt pıt, lopital hoppıdı hoppıdı hoppıdı diye bu limiti sana zoracak halleri yok.
+
+167
+00:33:26,996 --> 00:33:29,636
+Matiki dersindeyiz yani, lütfen kendine gel.
+
+168
+00:33:31,756 --> 00:33:35,596
+Konuların ne kadar zor olduğunu görüyorsun. Şimdi x kare parantezini alıyorum.
+
+169
+00:33:55,667 --> 00:33:56,927
+Hop, hop.
+
+170
+00:33:58,107 --> 00:34:01,667
+X yerine 0 yazdığın zaman, ne olur bu?
+
+171
+00:34:02,324 --> 00:34:14,423
+Bu gitti, bu gitti, bu gitti, bu gitti. Sıfır bölü birden sonuç sıfır çıkar ama böyle bir limitin sonucundan ziyade eşdeğer ifadesi sana sorulur.
+
+172
+00:34:14,423 --> 00:34:24,804
+Evet, Taylor ve Maclaurin'le ilgili son yapacağımız soru ise sevgili arkadaşlar yaklaşık hesapla ilgili.
+
+173
+00:34:25,003 --> 00:34:30,083
+Aa, Taylor ve Maclaurin'i yaklaşıkta mı kullanıyoruz? Evet, yaklaşıkta kullanıyoruz.
+
+174
+00:34:30,324 --> 00:34:37,923
+Evet, şimdi bir de buna bakalım. Evet, sorumu yazıyorum, sorunuz yoksa. Sorusu olan varsa buyursun, sorsun.
+
+175
+00:34:39,003 --> 00:34:45,384
+Taylor formülü ile sinüs 35 derecenin.
+
+176
+00:34:46,623 --> 00:34:52,983
+Hocam şeyden bakarım ki ben, cetvelden, trigonometrik cetvel var bende, ondan bakarım.
+
+177
+00:34:53,923 --> 00:34:56,463
+Allah'ım yarabbim, öleceğim ben derdimden ya.
+
+178
+00:34:57,172 --> 00:35:08,032
+Sana öyle sormayacak ki, seri eşitini soracak ki, sen daha neyin hayalini kuruyorsun hala? Bir sende akıl var, kimsede başka yok sanki. Hayret bir şey.
+
+179
+00:35:08,811 --> 00:35:24,032
+Taylor formülüyle sinüs 35'in yaklaşık değerini bulunuz. Şimdi ne yapılması gerekiyor onu konuşalım. Not.
+
+180
+00:35:24,755 --> 00:35:42,615
+Evet, bu not hem bu dönem öğreneceğimiz, daha sonra öğreneceğimiz, linearizasyon, ondan sonra diferansiyelle yaklaşık hesap, bütün yaklaşık hesap soruları için geçerli olan bir açıklamadır.
+
+181
+00:35:43,376 --> 00:35:45,755
+Orada da konuşacağız zaten, şimdiden yazalım.
+
+182
+00:35:45,755 --> 00:35:48,655
+Yaklaşık değer bulurken yazıyorum ben.
+
+183
+00:35:52,596 --> 00:35:54,435
+Önce fonksiyon tayin edilir.
+
+184
+00:35:57,735 --> 00:36:01,836
+Önce fonksiyon belirlenir.
+
+185
+00:36:02,056 --> 00:36:03,235
+Güzel yazalım şöyle.
+
+186
+00:36:05,056 --> 00:36:06,315
+Belirlenir. Tamam.
+
+187
+00:36:07,435 --> 00:36:11,216
+Mesela burada bizim fonksiyonumuz fx eşittir, sin x'tir.
+
+188
+00:36:11,296 --> 00:36:13,996
+Yani sen fonksiyonu belirlemedin ise geçmiş olsun yani.
+
+189
+00:36:14,815 --> 00:36:17,895
+Daha sonra, tamam mı?
+
+190
+00:36:18,900 --> 00:36:31,380
+Bize sorulan noktaya en yakın bizim bildiğimiz
+
+191
+00:36:36,244 --> 00:36:38,003
+Nokta belirlenir.
+
+192
+00:36:38,284 --> 00:36:39,764
+Haa, nokta belirlenir.
+
+193
+00:36:40,124 --> 00:36:41,024
+45 derece.
+
+194
+00:36:41,384 --> 00:36:43,564
+45'den daha yakın nokta var orada.
+
+195
+00:36:44,344 --> 00:36:45,344
+45'e 10 var.
+
+196
+00:36:46,963 --> 00:36:47,664
+Başka da var.
+
+197
+00:36:48,364 --> 00:36:48,824
+Ha, kaç?
+
+198
+00:36:50,704 --> 00:36:51,503
+Belirlenir.
+
+199
+00:36:52,503 --> 00:36:53,264
+30.
+
+200
+00:36:53,864 --> 00:36:54,124
+Tamam.
+
+201
+00:36:55,564 --> 00:36:56,364
+30 derece.
+
+202
+00:36:57,003 --> 00:36:57,264
+Değil mi?
+
+203
+00:36:58,224 --> 00:37:00,463
+Veya pi bölü 6.
+
+204
+00:37:01,604 --> 00:37:02,684
+Tamam mı?
+
+205
+00:37:02,684 --> 00:37:03,364
+Evet.
+
+206
+00:37:04,083 --> 00:37:06,683
+Hocam, niye pi bölü 6 dedik, 30 niye demedik?
+
+207
+00:37:07,263 --> 00:37:11,503
+Şimdi, 30 niye demedik, bu çok önemli bir konu.
+
+208
+00:37:12,103 --> 00:37:20,243
+Şimdi arkadaşlar, 1 derece diye konuştuğumuz ifade, aslında pi'nin 180'e bölünmüş halidir.
+
+209
+00:37:21,083 --> 00:37:28,003
+Ki pi dediğiniz şey, işte 3 virgül bilmem kaç, efendime söyleyeyim, bölü 180 dersen, aslında o 1 etmiyor.
+
+210
+00:37:28,483 --> 00:37:30,723
+Değil mi? Ama sen onu 1 zannediyorsun.
+
+211
+00:37:31,219 --> 00:37:52,500
+Değil mi? Bu büyük sıkıntıdır. Onun için derecelerle senin normal bildiğin sayma sayıları yahut işte rasyonel, real sayılar vesaire karışmasın diyerekten sen dereceyle işlem yapmazsın. Bunun yerine radyan kullanırsın. Daha temizdir, doğru sonuç verir. Sebep budur.
+
+212
+00:37:52,500 --> 00:37:56,500
+E hocam noktayı da belirledik. Sonra ne yapacağız? Sonra...
+
+213
+00:37:57,364 --> 00:38:14,703
+Efendime söyleyeyim. Bu noktaya göre, bu noktaya ve fonksiyona göre, Taylor formülü yazılır.
+
+214
+00:38:23,827 --> 00:38:38,367
+35 derece yazılır. Sonra diyelim, sonra elde edilen seriye 35 derece yazılır ve böylelikle değer bulunur.
+
+215
+00:38:51,923 --> 00:39:01,263
+F3 üstü x'imiz, eksi kos x. Tamam mı? Ondan sonra pi bölü 6'daki değerleri hakkında konuşuyorum.
+
+216
+00:39:02,903 --> 00:39:17,443
+Evet, kök 3 bölü 2, F2 üstü pi bölü 6, eksi 1 bölü 2, F3 üstü pi bölü 6, eksi kök 3 bölü 2. Tamam, gül gibi yazdık.
+
+217
+00:39:17,940 --> 00:39:28,719
+Şimdi ne yapmamız gerekiyor? Şimdi bunları yer cihazlarına yazmamız lazım. Şöyle kenara alalım, chat kutusunu, tahtanın kısmını da kullanmak istiyorum çünkü.
+
+218
+00:39:29,699 --> 00:39:37,880
+Sin x eşittir. Hocam sin x'e hemen eşittir yazdık. Niye? Çünkü dün ispat ettim ki her x değerleri için geçerliydi. Hatırlatırım.
+
+219
+00:39:45,876 --> 00:40:04,715
+bölü 1 faktöryel, şu 6 canım sıfır değil, sıfır zaten olmaz. X eksi pi bölü 6, güzel. Sonra, F 2 üstü pi bölü 6, bölü 2 faktöryel, X eksi pi bölü 6'nın karesi falan diye devam edecek.
+
+220
+00:40:05,296 --> 00:40:07,356
+Hocam iyi de şimdi bir sıkıntımız daha var.
+
+221
+00:40:08,076 --> 00:40:08,215
+Ne?
+
+222
+00:40:09,108 --> 00:40:17,268
+Şimdi biz bunu radyanlı yazdık. Bize sorulan şey dereceli biliyor musun? E onu da çevir. Çevireceğim de nasıl çevireceğim ben bilmiyorum.
+
+223
+00:40:18,588 --> 00:40:36,188
+Allah Allah. 1 derece pi bölü 180. 35 derece kaçtır? Bu kadar mı? Bu kadar tabii ya. Sen de ne alemsin. Nedir? 35 pi bölü 180.
+
+224
+00:40:36,947 --> 00:40:43,947
+Sadeleştirebilir miyim? Tabii ki. 7 pi bölü 6 mesela. Tamam mı?
+
+225
+00:40:44,768 --> 00:40:50,427
+Sonra da, peki biz bunu nereye yazacağız? Biz bunu nereye yazacağız? X gördüğümüz yere yazacağız.
+
+226
+00:40:50,427 --> 00:41:02,307
+7 pi bölü 6, buraya. 7 pi bölü 6, buraya. Sonra 7 pi bölü 6. Oldu, bitti. Bu kadar.
+
+227
+00:41:03,123 --> 00:41:08,823
+Üçüncü mertebe türevi yazmadık. Bakarsın şıklarda, ihtiyaç olursa yazarsın, ihtiyaç olmazsa yazmazsın.
+
+228
+00:41:09,763 --> 00:41:23,523
+O zaman yani sinüs 35 dediğin şey, sinüs 7 pi bölü 6'dır. Bu da yaklaşık olarak, şöyle yazmayayım dur şimdi, önce bir nokta nokta yazarsan zaten yaklaşığı yazmana gerek yok.
+
+229
+00:41:24,023 --> 00:41:27,723
+Şöyle yazalım, 7 pi bölü 6'daki değer 1 bölü 2 idi.
+
+230
+00:41:28,307 --> 00:41:38,067
+Burası köküç bölü 2 çarpı, bir faktöriyel, bir faktöriyel sanki çok şey değiştirdi.
+
+231
+00:41:38,567 --> 00:41:48,268
+7 pi bölü 6'dan bu çıkarsa bu kaç oldu? 5 pi bölü 6 kaç? Yok. Yanlış mı yazdım ben oraya? Sanki bir sıkıntı var burada.
+
+232
+00:41:48,268 --> 00:41:53,248
+7 pi bölü 6, ha bu pi bölü yok, doğru.
+
+233
+00:41:54,547 --> 00:41:57,087
+6 değil ki, 36. Ne alemim ben.
+
+234
+00:41:59,067 --> 00:42:04,507
+Kimse de söylemiyor anacığım. Kendi başıma burada debelenip duruyorum ben. Yazık. Evet.
+
+235
+00:42:05,427 --> 00:42:06,847
+36 değil mi burası?
+
+236
+00:42:08,907 --> 00:42:10,207
+Ben mi yanlış yaptım?
+
+237
+00:42:16,788 --> 00:42:17,788
+Gençler.
+
+238
+00:42:23,248 --> 00:42:26,508
+36. E niye söylemiyorsunuz? Aşk olsun ya.
+
+239
+00:42:28,088 --> 00:42:34,407
+Ama böyle ben, kimse dinlemiyorsa yazayım yazayım da kaçayım gidin bana da günah bak karşılıklı 2 kişilik oyun oynuyorum ya.
+
+240
+00:42:35,307 --> 00:42:36,208
+Allah Allah.
+
+241
+00:42:37,788 --> 00:42:40,148
+Evet, pi bölü 36.
+
+242
+00:42:42,088 --> 00:42:44,288
+Şurası için de işlem yaparsak.
+
+243
+00:42:45,235 --> 00:42:57,455
+Eksi 1 bölü 2, 1 bölü 2 faktör yer, 5 pi bölü 36 olarak yazabiliriz, nokta nokta.
+
+244
+00:42:57,975 --> 00:43:03,555
+Eğer sana şıklarda bu soruluyorsa, şöyle de sorulabilir, 1 bölü 2, bu çıkmış sorudur, haberiniz olsun.
+
+245
+00:43:11,443 --> 00:43:14,324
+Faktöriyeli falan da kaldır tabii artık onu yani.
+
+246
+00:43:15,543 --> 00:43:19,784
+İşte budur. Noktayı da burada koyar. Çünkü yaklaşık hesap koydu.
+
+247
+00:43:20,443 --> 00:43:27,764
+Tamam mı? Evet. An itibariyle parametrik denklemler ve kutupsal koordinatlara kadar gelmiş bulunuyoruz sevgili gençler.
+
+248
+00:43:30,804 --> 00:43:37,344
+Evet. Başlığımızı atacağız şimdi. Yeni konuya hazır mısınız? Sorunuz yoksa yeni konuya geçiyorum.
+
+249
+00:43:37,344 --> 00:43:38,844
+Tamam mı?
+
+250
+00:43:40,179 --> 00:43:54,900
+Evet, ne yazıyoruz? Şimdi ana başlığımız şu, kutupsal koordinatlara bir ders geçmeyeceğiz. Haftaya kutupsal koordinatlara geçiyoruz. Çok önemli konudur. Çok sıkı sorular gelir bu konudan. Ana başlığımız parametrik.
+
+251
+00:44:03,027 --> 00:44:04,268
+Bana başlık attırmıyor.
+
+252
+00:44:04,987 --> 00:44:15,208
+Paramatrik denklemler ve kutupsal koordinatlar.
+
+253
+00:44:19,219 --> 00:44:25,699
+Evet, bu başlığın altında bugün göreceğimiz kısım parametrik denklemler.
+
+254
+00:44:28,480 --> 00:44:33,000
+Bu başlığın altında göreceğimiz kısım ise düzlem evlilerin parametrize edilmesi.
+
+255
+00:44:45,715 --> 00:44:47,395
+Hocam bu konudan sınavda gelir mi?
+
+256
+00:44:47,775 --> 00:44:48,155
+Gelir.
+
+257
+00:44:49,175 --> 00:44:57,635
+Yani sana mesela Kartezyen denklemini bir şey verir, bir denklem verir, X'liye'li bir denklem verir.
+
+258
+00:44:58,135 --> 00:45:04,516
+Der ki işte bunun parametrize edilmiş hali aşağıdakilerden hangisi olamaz der.
+
+259
+00:45:05,715 --> 00:45:05,956
+Nasıl?
+
+260
+00:45:07,076 --> 00:45:09,835
+Yani hangisi parametrize edilmiş hal olamaz der.
+
+261
+00:45:11,860 --> 00:45:28,600
+Yani bir eğrini birden fazla parametrize etmek mümkün mü? Evet, mümkün. Yani mesela Ayşe başka türlü, siz başka türlü, ben başka türlü, bizim bir arkadaş var, o da başka türlü. Öyle herkes farklı farklı parametrize edebiliyor mu? Edebiliyor.
+
+262
+00:45:31,840 --> 00:45:36,420
+Evet, onun için biraz sıkıntı var, ona dikkat etmek lazım. Tamam mı?
+
+263
+00:45:37,900 --> 00:45:39,440
+Hemen yazalım.
+
+264
+00:45:41,652 --> 00:45:50,532
+Tanım, eğer, x ve y, t değerlerinin,
+
+265
+00:45:54,996 --> 00:45:56,356
+I aralığında.
+
+266
+00:46:00,115 --> 00:46:10,016
+x eşit f'te, y eşit g'te şeklinde tanımlanmış fonksiyonlar ise
+
+267
+00:46:22,771 --> 00:46:23,411
+O zaman
+
+268
+00:46:27,347 --> 00:46:29,407
+Bu denklemlerle tanımlanan
+
+269
+00:46:39,476 --> 00:46:45,596
+x,y eşittir, f,t,gt
+
+270
+00:46:45,596 --> 00:46:49,636
+noktalar kümesi
+
+271
+00:46:55,956 --> 00:46:57,376
+Bir parametrik eğridir.
+
+272
+00:47:05,780 --> 00:47:29,020
+Ne demek istiyor şu an? Değişik bir şey. Bir yazalım o zaman. X'i FT'ye eşitmiş, Y'si de GT'ye eşitmiş, T'ler de mesela A ile B'nin arasında değişiyormuş desem bu bir eğri mi gösteriyor yani? Evet, bu bir eğri gösteriyor.
+
+273
+00:47:29,020 --> 00:47:32,460
+Şimdi buraya kadar bir not alanları da bekleyelim.
+
+274
+00:47:33,235 --> 00:47:43,735
+Efendime söyleyeyim. Böyle bir şeyimize mesela verirse, hemen yine birinci dönemi, hatta lise eğitiminizi, o günleri bir hatırlayın bakalım.
+
+275
+00:47:46,516 --> 00:47:52,456
+Bu şekli sonra çizeceğim. Yani bu şekli çizme, bunun üstünde oynayacağım çünkü.
+
+276
+00:47:53,516 --> 00:47:59,816
+Şimdi diyelim ki, senin şöyle bir eğrin var. Bu eğri X1 noktasında başladı.
+
+277
+00:48:01,235 --> 00:48:19,535
+x2 noktasında bitti. Sen bunu lisede öğrendin. y eşittir fx, düzlemde, yani x'ye koordinat sisteminde böyle bir eğri tanımladı. Nasıl bir eğri? Böyle bir eğri işte. Tamam mı? Böyle bir eğri tanımladı bize. Tamam mı?
+
+278
+00:48:19,535 --> 00:48:28,535
+Evet. Aslında bunlar birbirlerine konuşuyorlar. Sürekli istişare halindeler.
+
+279
+00:48:29,139 --> 00:48:35,860
+Çok iyi arkadaşlar. İşte arkadaşım diyor, ben şöyle noktadan hareket edeceğim, sen de benimle birlikte gel.
+
+280
+00:48:36,420 --> 00:48:42,480
+İşte ben şu kadar olduğumda sen de bu kadar ol. Ben azıcık ileri gittiğimde sen de böyle peşim sıra gel.
+
+281
+00:48:42,940 --> 00:48:48,239
+Sonra sen biraz önden git, ben seni takip edeyim. Sen biraz azal, ben biraz çoğalayım.
+
+282
+00:48:48,759 --> 00:48:57,119
+Sonra ben biraz azalayım, sen biraz çoğal. Ondan sonra bir müddet böyle gidelim, sonra sen birden azal, ben çoğalmaya devam edeyim.
+
+283
+00:48:57,139 --> 00:49:17,059
+Sonra ben sabit kalayım, sen biraz art, efendime söyleyeyim, sonra sen biraz sabit kal, ben biraz azalayım, sonra beraber artarız, filan gibi konuşaraktan böyle konuşa konuşa yürüdükleri yer, yüzey üzerinde, yüzey demeyelim, düzlem üzerinde bir güzergah belirliyor sevgili arkadaşlar.
+
+284
+00:49:17,920 --> 00:49:24,579
+Ama tabii bunlar da böyle birbirlerine konuşuyorlar ya, işte aralarına kara kedi giriyor, küsüyorlar.
+
+285
+00:49:25,748 --> 00:49:53,748
+Diyor ki, bana ne diyor, ne yaparsa yapsın, gözüm görmesin, ben bir daha onunla konuşmayacağım falan diye, böyle büyük bir kocaman laflar ediyor falan. O arada da bunların yakın bir arkadaşları var, diyor ya yapma diyor, etme diyor buna, bu geliyor bak, tamam mı bu T. Bunların aralarını bozuyor, ya diyor senin için o kadar iyi şeyler söylüyor ki diyor, bilmiyorsun diyor, halbuki yani arasını bulmak için. Sonra gidiyor diyor ya esasında o da çok pişmanmış diyor, o da biliyor musun diyor, çok özlüyormuş seni diyor.
+
+286
+00:49:53,748 --> 00:50:10,428
+Ondan sonra şöyle böyle yapma diyor, bak diyor o diyor falanca günü diyor, A noktasına gidecek mi, şöyle artacak mı, sen de bak diyor, git de diyor A noktasına, sen de böyle art azal, bir şeyler yapın, beraber bir yürüyün bak diyor, düzelecek bu iş falan diyor böyle, aralarını yapıyor bu.
+
+287
+00:50:10,428 --> 00:50:21,168
+Bu, bunun aralarını ne müddette yapıyor? A'dan B'ye kadar yapıyor. Bunlar küstüler ya.
+
+288
+00:50:22,195 --> 00:50:35,536
+Bu arada T vasıtasıyla işte biraz homurta homurta böyle, öyle mi sen böyle mi gideceksin, pek de gelesim yoktu ama işte T çok ısrar etti geldim falan diye. Böyle A'dan B'ye kadar aynı yolu yürüyorlar.
+
+289
+00:50:36,244 --> 00:50:50,963
+Bakın eğri gene ayrı eğri, yürüdükleri güzergah gene aynı. Sadece birbirlerinle direkt konuşmak yerine ortak arkadaşları tarafından yönlendirilerek bu yolu tamamlıyorlar.
+
+290
+00:50:51,764 --> 00:50:59,464
+Şimdi diyeceksin ki, hocam bunların işte arkadaşlık ilişkileri bizi ne ilgilendirir, adam gibi konuşsalardı ya, bunlar da mı kavga ediyor aralarında?
+
+291
+00:51:00,004 --> 00:51:06,864
+Şimdi arkadaşlar, bu bir teşbih tabii ki. Normalde kartezyen koordinatlar kifayetsiz kalıyor bunların yanına.
+
+292
+00:51:07,164 --> 00:51:11,804
+Aa, ben kartezyen koordinatları en iyisi zannederdim, parametrik daha mı iyiymiş ya?
+
+293
+00:51:12,664 --> 00:51:13,624
+Evet, evet, daha iyi.
+
+294
+00:51:14,864 --> 00:51:17,104
+Nerede mesela kifayetsiz kalıyor hocam?
+
+295
+00:51:17,619 --> 00:51:39,099
+Bak mesela çemberde kifayetsiz kalıyor. Ooo en bilindik şeyde. Mesela x kare artı y kare eşit a karede kifayetsiz mi kalıyor kartezyen koordinatlar? Tabii ki. Nasıl? Böyle işte neyin kifayetsiz yüz yuvarlak çizdiği. Arkadaşım bu fonksiyon değil ki. Nasıl değil? Bu fonksiyon değil.
+
+296
+00:51:46,708 --> 00:51:51,668
+Ben iyi dinlememişim, orayı kaçırmışım. Bunun fonksiyon olmadığını kaç kişi biliyor bakayım?
+
+297
+00:51:55,411 --> 00:51:58,211
+Fonksiyon olmadığını bilen tuşa bassın.
+
+298
+00:51:59,451 --> 00:52:07,831
+2, 3, 4, 5, 6, 7, 8.
+
+299
+00:52:10,791 --> 00:52:13,931
+E işte, 8 kişi biliyormuş sağ olsunlar var olsunlar.
+
+300
+00:52:14,491 --> 00:52:17,511
+Hocam neden ben bilmiyordum ya bir desene bana niye değil.
+
+301
+00:52:17,911 --> 00:52:18,611
+9 kişi.
+
+302
+00:52:19,611 --> 00:52:20,331
+Evet.
+
+303
+00:52:20,800 --> 00:52:41,700
+Şimdi bak canım benim, eğer y'yi sen yalnız bırakırsan, sen bunu böyle yazarsın. Ayrıca bu yazılıma çalışın. Neden? Çünkü integralde lazım olacak. Ne var? Ya bakarım, ona sonra bakarım, buna sonra bakarım. Bu sonraki zamanda hangi birini yapacaksın? Öyle merak ediyorum ki. Öyle merak ediyorum yani.
+
+304
+00:52:44,640 --> 00:52:47,320
+Bak bu sadece üst tarafını ifade ediyor.
+
+305
+00:52:47,664 --> 00:53:08,524
+O zaman eksilisini yazarım. O zaman da sadece alt tarafını ifade edersin. O zaman eksilisini çekerim. O zaman da daha garip bir şekil oluyor. Ne gibi mesela? O zaman da burasını elde edersin. O zaman onun eksilisini yazarım.
+
+306
+00:53:10,612 --> 00:53:35,692
+Allah'ım yarabbim, öldüreceksin beni sen. Bak o zaman da bu tarafını elde edersin. Hiçbir zaman tamamını elde edemiyorum yani bir fonksiyonla. Evet. Peki bu konuda tamamını elde edebiliyor muyum? Elde edebiliyorsun. O açıdan önemli o zaman. Evet, bunun notunu alın sağ tarafın. Gerçi birazdan ben onu şey yapacağım, çizeceğim. Sıkıntı yok.
+
+307
+00:53:36,596 --> 00:54:03,596
+Şimdi ben yazmana gerek yok. Ben böyle parametrize ederken söyleyeceğim onu. Tamam. Bunlar bize nerede lazım? İki katlı integrallerde bunları beton gibi bilmezsen hiçbir şey yapamazsın. Ve tüm fonksiyonlarda bunları yapabilmen lazım. Yani neresini kastediyorum? Sağdan bakılışını mı, soldan bakılışını mı? Bunlar çok önemlidir. Haberiniz olsun. Peki o zaman. Şurası hakkında konuşursak nasıl bir şey söyleyebiliriz?
+
+308
+00:54:05,748 --> 00:54:06,748
+Şurayı siliyorum.
+
+309
+00:54:08,607 --> 00:54:09,168
+Ay ay ay.
+
+310
+00:54:18,068 --> 00:54:20,688
+Şimdi kırmızı kalemimi elime alayım.
+
+311
+00:54:22,588 --> 00:54:25,448
+Şurası T eşit A için konuşulan nokta.
+
+312
+00:54:25,807 --> 00:54:38,768
+Burası da T eşit B için konuşman nokta olsun. Bu A noktası, bu da B noktası olsun. Küçük A ile bu A'nın, küçük B ile bu B'nin alakası yok. Tamamen tesadüf A ve B. İstersen C, D noktası da. Bunları karıştırmanı istemiyorum.
+
+313
+00:54:39,367 --> 00:54:49,547
+Peki bu noktanın hapsisi nedir? Demin X1 yazmıştım. Demin de şimdi için konuşuyorum. Nasıl bulacağım o zaman? Nasıl bulacaksın? Güzel soru. Şöyle şunu ayırt ediyorum.
+
+314
+00:54:53,684 --> 00:54:59,484
+x eşittir f'teydi, g eşittir g'teydi, tamam mı?
+
+315
+00:54:59,864 --> 00:55:11,484
+Buralarda a'ları yerine yazdığında, efendime söyleyeyim, x'in f'a'ya, g'nin ise fb'ye eşit olduğunu söylersin.
+
+316
+00:55:11,584 --> 00:55:13,664
+Demek ki bu nokta f'adır.
+
+317
+00:55:15,484 --> 00:55:18,084
+Hocam burayı yanlış yazdı, hemen düzelsin.
+
+318
+00:55:19,184 --> 00:55:19,984
+Hoca yoruldu.
+
+319
+00:55:21,748 --> 00:55:29,427
+Hocam ara verelim. Araya daha çok var. Bugün çok gidilecek yolumuz var. Arayı şimdi verirsek sonra çok daha yoruluruz.
+
+320
+00:55:34,528 --> 00:55:41,168
+Şurayı da biraz yukarı alalım. Aynısını çizeceğim. Merak etme, şeklim bozulmadı.
+
+321
+00:55:47,668 --> 00:55:50,148
+Ama bunu maviyle çizmemiz lazım gençler.
+
+322
+00:56:01,844 --> 00:56:04,204
+Tamam, yine kırmızı kalemimi elime aldım.
+
+323
+00:56:04,704 --> 00:56:14,344
+B noktası için konuşursanız, t eşittir b için, x eşittir ft idi, y eşittir gt idi.
+
+324
+00:56:14,344 --> 00:56:26,344
+Yine bunları yerlerine yazdığımızda, x eşittir fb, y eşittir gb oldu.
+
+325
+00:56:28,019 --> 00:56:31,519
+Anladık mı acaba? Anlayanlar bir tuşa bassın bakalım.
+
+326
+00:56:34,079 --> 00:56:35,039
+Tamam mı?
+
+327
+00:56:38,547 --> 00:56:44,387
+Tamam değil mi gençler? Burası tamamdır. Peki, devam edelim o zaman.
+
+328
+00:56:52,340 --> 00:56:53,980
+Bir tane rızalıyım.
+
+329
+00:56:54,040 --> 00:56:55,920
+Notları şuradan alayım.
+
+330
+00:56:56,280 --> 00:56:57,500
+Bu daha konuşun.
+
+331
+00:56:58,540 --> 00:56:58,760
+Hoş.
+
+332
+00:57:00,020 --> 00:57:01,000
+Allah Allah.
+
+333
+00:57:20,436 --> 00:57:31,715
+Ay, notlarımı ta nereye koymuşum? Evet, tamamdır, buldum notlarımı. Evet, şimdi bir sonraki sorumuza geçelim sevgili arkadaşlar.
+
+334
+00:57:31,715 --> 00:57:47,835
+Öncelikle şöyle bir şey yazıyorum. X eşittir t kare, y eşittir t artı bir, eksi sonsuz, x artı sonsuz. Eğrisini çiziniz.
+
+335
+00:57:51,891 --> 00:57:55,171
+Hocam biz bunu mesela çizerken nokta mı vereceğiz?
+
+336
+00:57:55,611 --> 00:58:01,651
+Şimdi onu konuşalım. Eskiden bunları çözebilmek için her birinin türevleri alınıyordu.
+
+337
+00:58:02,387 --> 00:58:19,307
+Ondan sonra t'ye göre türevleri noktayla gösteriyorduk. Bunların türevleri alınıyordu. Bunları böyle bir dört satırlı bir, efendime söyleyeyim, işte x nokta buraya yazıyordum, x iki nokta, g nokta, y iki nokta diye böyle bir tablo oluşturuyorum.
+
+338
+00:58:19,748 --> 00:58:30,347
+Bu tabloya göre x noktaya güçlü hangi noktada artıyor, hangi noktada azalıyor. İşte buna göre konkavlığı böyle, konkavlığı şöyle, y hangi noktada artıyor, hangi noktada azalıyor.
+
+339
+00:58:30,387 --> 00:58:42,748
+Ondan sonra bunun da konkavluğu şöyle şöyle, ondan sonra böyle böyle falan diye. Sonra bu aralıklarda işte diyordun ki işte x'ım azaldı, y'im yukarı doğru götürdü, beni böyle götürdü, böyle götürdü, böyle götürdü diye çiziyordum.
+
+340
+00:58:43,248 --> 00:58:52,988
+Ve bu öğrencilerin o zaman kabus konusuydu. Yani gerçekten hani kuvvet serilerinden çok korkuyordu öğrenciler. Bir de korktukları bir konu daha vardı bu konuydu.
+
+341
+00:58:53,780 --> 00:59:18,380
+Bir konu daha vardı, kutupsal fonksiyonların erişizimleri, rozalar vardı. Onlar da çıkartıldı arkadaşlar, şanslısınız. Ne zaman çıkartıldı? Çok sene evvel. Yani ben yeni araştırma görevlisi olduğum zaman matematik bölümü mühendislere, kimyaya, fiziğe, servis derslerine gittiği zaman bunların hepsini o zaman anlatıyordu. Şimdi yok yani.
+
+342
+00:59:19,315 --> 00:59:27,243
+Konular bayağı seyreldi. Hocam o zaman buradaki eğri çizimini biz nasıl yapacağız? Nokta vererek zaten de hani sana...
+
+343
+00:59:27,284 --> 00:59:55,284
+Sorarlar mı? Emin değilim ama en azından sorarlarsa da böyle nokta vererek kontrol edersin. Nokta nasıl vereceğiz hocam? Ben mesela virgülü değer de mi verin? Canını sevmiyorsan verirsin ama hiç tavsiye etmiyorum yani. Verilir mi ya? Ne vereyim o zaman? Kolay değerler var. Mesela eksi üçten başla, eksi iki, eksi bir. Ondan sonra da bir, iki, üç verirsin. Tamam bitti gitti yani akıllı olmak lazım. Kalkıp da bir nokta doksan dokuz verip hesaplar.
+
+344
+00:59:55,284 --> 01:00:20,423
+Hesap makinelerinde cenk etmeye gerek var mı yani? 9 oldu mesela, eksi 2 oldu. Eksi 2 verirsen 4 oldu, eksi 1 oldu. Şurada yerine koyuyorsun sırasından. X kaç çıkıyor, Y kaç çıkıyor? Hesap ediyorsun yani. Bu da 0'a 1 oldu söz misal. Bu 1'e 2 oldu. Burada anlamadığınız bir şey var mı? Basit bir şey ama hani olabilir insan. Ya nasıl yapılıyor? Ben dur şey kaçırmışım. Biraz efendime söyleyeyim.
+
+345
+01:00:20,820 --> 01:00:44,960
+Dikkat edemedim falan diyorsa şu anda söylesin. Gidip gidip de ondan sonra şeyde en son efendim ders bittikten sonra soruyorum. Şimdi demir tavında dövülür. Şurada sıkıntım varsa öğren. Çünkü daha başka şeyler de göreceğiz. Sonra oralarda da bunu anlayamadım diye şey yapamazsın. Söyle ona. Bak absis ordinat ikillerini yazdım şimdi de. Bu noktalardan geçecek. Şimdi de bunları.
+
+346
+01:00:45,556 --> 01:01:12,676
+Eskiden gazete ilavelerinde noktaları birleştiriyorduk, tavşan çıkıyordu, ayı çıkıyordu, bir şey çıkıyordu ya hatırla. Ondaki gibi yani, hiçbir zorluğu yok. Şimdi noktaları güzelce işaretliyorsun burada. Ne gibi? Böyle mesela bu noktaları böyle işaretliyorsun. Tamam mı? Güzelce. Bak, oradaki noktaları buraya işaretliyorum, bir şey yok. Anladın mı? Bu kadar.
+
+347
+01:01:13,152 --> 01:01:26,112
+Başka? Evet. Budur yani zaten başka bir şey yok herhalde. Bir dakika. Bir tane daha işaretecekmişiz. Peki. Bir tane de uzakta varmış. Peki. Bir tane de şöyle yukarıda varmış.
+
+348
+01:01:26,739 --> 01:01:46,799
+Biraz kızdı bize, çok uzar şey yaptık diye. Şimdi bunların da hangi noktalar yazalım? Mesela bu t eşittir, eksi 3 için elde ettiğim, bu t eşittir, eksi 2 için elde ettiğim, t eşittir, eksi 1 için elde ettiğim, t eşit 0 için elde ettiğim, t eşit 1 için elde ettiğim, t eşit 2 için elde ettiğim, t eşit 3 için elde ettiğim.
+
+349
+01:01:46,799 --> 01:01:54,739
+Sonra elime böyle bir renkli kalem alıyorum. Ondan sonra da buradan böyle, e hocam ama kon kavluklarına, kon ve eksiklerine.
+
+350
+01:01:54,739 --> 01:02:16,599
+Evet, o zaman konkavlığı, konveksliği incelemek istiyorsan dört satık çizim yapman lazım. O sizin müfredatınıza dahil değil. Bence sevinilecek bir durumdasınız. Tamam mı? Buradan böyle tık tık tık ilerliyorsun. Peki hocam ne gibi bir şekil çıktığını benim daha önceden anlama şansım var mı? Var. Burada şöyle yapabilirsin. Şöyle söyleyelim.
+
+351
+01:02:17,427 --> 01:02:31,427
+Hemen yazıyorum. X eşit t kare, y eşit t artı birin arasında t'yi yok edebilirsek, kartezyen...
+
+352
+01:02:32,211 --> 01:02:49,911
+Aaa, evet. Kartezyen denklemi elde ederiz. Buna göre de sen bu şekil hakkında denklemi elde ederiz. Elde ederiz. Yazsam neler yazacağım da yazamadım. Denklemi elde ederiz. Tamam mı?
+
+353
+01:02:51,007 --> 01:03:00,208
+O zaman da sen bu şekil hakkında aşağı yukarı bir fikir sahibi olabilirsin. Ne gibi mesela? X eşittir t kare, y eşittir t artı bir de.
+
+354
+01:03:00,692 --> 01:03:23,411
+Efendime söyleyeyim, hani kare kök kullanmayayım, önce y'yi çekerim, daha kolay dersen ki mantıklısı odur. Ondan sonra da x eşit t karede de bunu yerine koyarsan, gördüğün gibi x eşittir, y eksi birin karesi olarak ötelenmiş bir parabol olduğunu bunun akıl edebilirsiniz sevgili arkadaşım.
+
+355
+01:03:23,411 --> 01:03:28,311
+Şimdi çemberin parametrizasyonu konusuna geçeceğim. Buraya kadar sorusu olan var mıdır?
+
+356
+01:03:31,092 --> 01:03:33,612
+Evet. Tamam mı?
+
+357
+01:03:35,832 --> 01:03:45,012
+Peki, devam ediyorum o zaman. Cici konular bunlar. Böyle özellikle kuvvet serisinden sonra böyle bir şey, ruhumuz dinlendi değil mi arkadaşlar?
+
+358
+01:03:46,132 --> 01:03:47,032
+Bilim çemberin.
+
+359
+01:03:54,099 --> 01:04:11,079
+Parametrik denklemini yazınız. Sorumuz bu. Hemen birim çemberimi yazıyorum. Daha doğrusu çiziyorum. Evet, böyle çizdim. Birim çember, bir yarı çapta, bir çember gördüğünüz gibi.
+
+360
+01:04:20,692 --> 01:04:44,172
+Açıya t dedim. Açı aynen trigonometrideki gibi. O zaman bu nokta cos t ve sin t olacaktır. Ve bu açı 0 ile 2 pi arasında değiştiği müddetçe başladığı noktaya gerisin, geriye döner. Yani buradan başlar, yine buraya kadar.
+
+361
+01:04:44,172 --> 01:04:46,692
+Hocam o zaman birisini kaldıralım mı?
+
+362
+01:04:47,188 --> 01:05:12,048
+Birisini kaldırma. Genelde ikisini de kapalı veriyor. Neden ikisini de kapalı veriyor? İntegre ederken sıkıntı olmasın diye. Özellikle yay uzunluklarında bunu yaparlar. Onun için sıkıntı yok burada, tamam mı? O zaman biz bunu parametrize ettiğimiz zaman x eşittir, cos t, y eşittir, sin t dediğim hikaye bunun parametrik denklemidir sevgili arkadaşlar.
+
+363
+01:05:15,539 --> 01:05:17,799
+Rey yarı çaplı çember içinde sorabilir.
+
+364
+01:05:28,980 --> 01:05:32,300
+Evet, o zaman benzer durumu orada yaparız.
+
+365
+01:05:43,315 --> 01:05:54,435
+Burası ne olur o zaman? Recoste, burası da resinte olur. Kısacası bunun parametrik denklemleri de recoste, resinte olur.
+
+366
+01:05:56,655 --> 01:06:06,695
+Şimdi bana şunu sorabilirsiniz. Hocam siz dediniz ki bir eğlenin başka türlü parametrizasyonu da yapılıyormuş mesela. Onu nasıl yapabiliriz?
+
+367
+01:06:07,355 --> 01:06:09,875
+Güzel soru. Nasıl yapabiliriz değil mi?
+
+368
+01:06:10,324 --> 01:06:15,284
+Mesela mualla dedi ki veya dedi başka bir parametrizasyon.
+
+369
+01:06:24,724 --> 01:06:29,484
+Ama güzel olmaz. Güzel olmaz ama oldu mu oldu, ben yaptım oldu gibi bir şey.
+
+370
+01:06:29,984 --> 01:06:38,084
+X yerine t koyduğunu varsay, re yarı çaplı termi çember derken x kare artı y kare eşittir, re kareden bahsetmiştik.
+
+371
+01:06:38,604 --> 01:06:46,384
+X yerine t yazarsa, y'si de re kare eksi t karenin kare kökü gibi yazılır ama tamamını elde edemez.
+
+372
+01:06:46,504 --> 01:06:49,684
+O zaman buraya artı eksi koyması lazım. Ay y'ye çok çirkin oldu.
+
+373
+01:06:49,684 --> 01:06:51,660
+Evet, buraya da...
+
+374
+01:06:52,052 --> 01:06:57,411
+Buraya da tekare, tabii aynen böyle. Güzel mi? Güzel değil. Ama parametrizasyon mu? Parametrizasyon.
+
+375
+01:06:58,192 --> 01:07:03,851
+Hemen hatırlatma diyelim. Şu çemberin hikayesini de şuraya yazalım. Hatırlatma. Evet.
+
+376
+01:07:04,751 --> 01:07:08,391
+Yani yahut da aman bana hatırlatma da diyebilirsin yani.
+
+377
+01:07:09,211 --> 01:07:17,192
+Y eşittir, re kare eksi, a kare ise burayı verir.
+
+378
+01:07:20,115 --> 01:07:24,396
+R kare eksi, akare ise aşağıya verir.
+
+379
+01:07:25,056 --> 01:07:31,456
+X eşittir, R kare eksi, y kare ise bunu verir.
+
+380
+01:07:31,836 --> 01:07:37,996
+X eşittir, eksi, R kare eksi, y kare ise bu da bunu verir.
+
+381
+01:07:38,135 --> 01:07:41,196
+İntegrallerde buna ihtiyacımız olacak.
+
+382
+01:07:41,436 --> 01:07:43,776
+Aynı hikaye paraboliler için de geçerlidir.
+
+383
+01:07:44,456 --> 01:07:45,696
+Onları konuşuruz.
+
+384
+01:07:46,675 --> 01:07:48,175
+Mesela şöyle bir şey.
+
+385
+01:07:49,576 --> 01:07:54,475
+Oh, x eşittir y kare dediğiniz zaman siz normalde bu bir fonksiyon değildir.
+
+386
+01:07:54,695 --> 01:07:57,435
+Bunun tamamını elde edersiniz.
+
+387
+01:07:58,135 --> 01:08:04,195
+Eğer y eşittir kök x dediyseniz sadece üst kısmına.
+
+388
+01:08:04,820 --> 01:08:13,820
+y eşittir, eksi, kök x dediyseniz bu sefer de alt kısmını elde edersiniz sevgili arkadaşlar.
+
+389
+01:08:14,500 --> 01:08:22,100
+Bunlar işte her eğride bu parçalanma hikayesini öğrenmeniz ve bunu beton gibi bilmeniz lazım.
+
+390
+01:08:22,739 --> 01:08:28,880
+Çünkü aksi takdirde iki katlı integrallerde muvaffak olmamız olanaksızdır.
+
+391
+01:08:29,480 --> 01:08:32,120
+Bakın tekrar da söylüyorum. Tamam mı?
+
+392
+01:08:33,395 --> 01:08:34,595
+Anlaştık mı?
+
+393
+01:08:38,036 --> 01:08:52,635
+O zaman hocam, şu da o zaman şey değil, fonksiyon değil. Tabii ki değil, fonksiyon değil o da. O da fonksiyon değil. Allah'ım Allah'ım. Evet. Evet, devam edelim. Devam edelim sevgili arkadaşlar.
+
+394
+01:08:57,844 --> 01:08:59,663
+Evet, devam ediyorum.
+
+395
+01:09:00,324 --> 01:09:01,583
+X'ye düzleminde
+
+396
+01:09:01,583 --> 01:09:05,904
+hareket eden
+
+397
+01:09:11,380 --> 01:09:12,420
+Bir parçacı
+
+398
+01:09:17,939 --> 01:09:19,699
+Px virgül y konumu
+
+399
+01:09:28,467 --> 01:09:39,228
+x eşittir kökte, y eşittir t, t büyük eşit sıfır ile verilmiştir.
+
+400
+01:09:39,228 --> 01:09:42,228
+Bu parçacığım
+
+401
+01:09:46,003 --> 01:09:47,963
+Yolu ve hareketini tanımayınız.
+
+402
+01:09:57,652 --> 01:10:08,652
+Evet, hemen yazıyorum. X kökte, G eşit t, t'miz de büyük eşit sıfır. Demek ki benim vereceğim değerler hep sıfırdan büyük olmak zorunda.
+
+403
+01:10:10,112 --> 01:10:20,512
+Hocam, karakök hesap ettiğim için hep karakökünü bildiğim şeyleri yazdım. Aferin, akıllısın onun için. Maşallah. Çok güzel. Çok güzel. Madem noktayı ben veriyorum.
+
+404
+01:10:21,268 --> 01:10:39,548
+Bulabildiğim değerleri, hesap maginetsiz bulabileceğim değerleri tabii ki yazar. Kafayı çalıştır yahu, aman. Elimizde öyle bir imkan varsa, niçin kullanmayacak? Diyor ki adam sen noktayı ver diyor, ben noktayı verirsem bildiğim noktaları veririm. Hemen işaretleyim.
+
+405
+01:10:49,427 --> 01:10:49,948
+Değil mi?
+
+406
+01:10:51,688 --> 01:10:56,747
+Sadece bir parabolün bu kanadı üzerinde bir hareket yaptığımı görürüm.
+
+407
+01:10:56,847 --> 01:10:59,647
+Bakın çünkü neden? T'yi pozitif kıl diyor bana.
+
+408
+01:11:00,127 --> 01:11:02,847
+Bu yüzden ben benzeri sorumuzu yazıyorum.
+
+409
+01:11:03,087 --> 01:11:06,688
+X eşittir T, Y eşittir T kare.
+
+410
+01:11:08,427 --> 01:11:12,647
+Eksi sonsuz T, artı sonsuz 8.
+
+411
+01:11:13,807 --> 01:11:14,507
+Allah'ım ya.
+
+412
+01:11:14,507 --> 01:11:15,227
+Evet.
+
+413
+01:11:15,631 --> 01:11:19,192
+Sonsuz, evet, parçacığın hareketini tanımlayınız.
+
+414
+01:11:28,819 --> 01:11:54,059
+Evet, şimdi burada yine, aa hocam burada istediğimi verebiliyorum. Evet, istediğini verebiliyorsun. Onun için hem negatif hem pozitif vermelisin ki, yani noktaları güzel anlayabilelim. Fazla vermeyeyim. Eksi 2, 1, 0, 1, 2 vereyim, tamam. Ha bence de yeterli. Artık zaten yorulduk. Bu kadar yeterli. Dişe gelsin yeter.
+
+415
+01:12:13,203 --> 01:12:39,963
+Tamam, bunu da yazdık. Eee, noktaları birleştireceğiz. Aa, hocam eskiden gazete ilavesi vardı, böyle birleştiriyorduk, bir, iki, üç, tavşan çıkar gibi. Evet, evet, aynı onun gibi. Aynen onun gibi, doğru söylüyorsun. Bu sefer ama birleştirme hikayesi, bak bu kol üzerinden. Yani bu kartezyen koordinatlarından farklı olarak aslında çizimi hangi kanat üzerinden yaptığını da sana gösteriyor. Bak, enteresan bir şey yani. Anladın mı?
+
+416
+01:12:40,532 --> 01:12:56,092
+Mesela buraya yazsam, t eşittir eksi 2, t eşittir eksi 1, t eşittir 0, burası mesela t eşittir 1, yine t eşittir 2 olmak üzere tam simetrik karşısına gelecek şekildeki noktadır.
+
+417
+01:12:56,092 --> 01:13:08,092
+Tamam mı? Aynen böyle. Tamam mı? Evet, şimdi şu çizimleri bitirelim, ara verelim. Emin olun şu an o kadar böyle ara verme...
+
+418
+01:13:08,224 --> 01:13:09,283
+İhtiyacımdayım.
+
+419
+01:13:10,064 --> 01:13:12,523
+Ama, yani çünkü çok yoruldum.
+
+420
+01:13:12,644 --> 01:13:15,003
+Gerçekten şekerim düştü herhalde bir parça.
+
+421
+01:13:15,684 --> 01:13:18,003
+Ama canımı dişime takıyorum.
+
+422
+01:13:18,543 --> 01:13:20,904
+Şu çizimler bitsin, çizim bitsin diye.
+
+423
+01:13:20,904 --> 01:13:25,003
+AB noktasından geçen.
+
+424
+01:13:31,347 --> 01:13:41,347
+V eğimi, M olan doğruyu parametrize ediniz.
+
+425
+01:13:44,448 --> 01:13:46,427
+Hocam, yine ne var?
+
+426
+01:13:48,387 --> 01:13:52,667
+Ya ben bu doğrunun parametrisine her seferinde telefonumdan bakıyorum ya.
+
+427
+01:13:53,448 --> 01:13:54,587
+Olur mu öyle şey ya?
+
+428
+01:13:55,108 --> 01:13:56,487
+E tutamıyorum aklımda.
+
+429
+01:13:56,868 --> 01:13:58,228
+Tutmana gerek var mı ki?
+
+430
+01:13:58,836 --> 01:14:01,836
+Yok mu? Yok tabii ki. Böyle bir...
+
+431
+01:14:02,355 --> 01:14:29,387
+Doğru çizersin, üzerine A virgül B diye nokta koyarsın, bir de buraya M yazarsın, tamam mı? Buraya da değişken bir nokta yazarsın, X, Y diye. Sonra dersin ki eğim ne zaman eşit olur? Delta Y bölü, delta X eğim eşit. Yani M eşittir, Y eksi B bölü, X eksi A. Ya bunun için ezberlenir mi ya? Ne kadar ayıp. Y eksi B'yi yalnız bırak, koca lisans talebesi telefonundan doğru denklemine bakıyor. Ay kimse duymasın, aramızda kalır.
+
+432
+01:14:31,412 --> 01:14:38,631
+Peki nasıl parametrize edeceğim? E tamam burada Ayşe başka türlü, Fatma başka türlü, Filiz başka türlü, Yeliz başka türlü parametrize eder.
+
+433
+01:14:39,952 --> 01:14:50,492
+Nasıl yani? Mesela şöyle, Filiz dedi ki t eşittir, x eksi a olsun dedi. Bu durumda yani x'i a artı t diye aldı.
+
+434
+01:14:57,811 --> 01:15:24,352
+Artı B o. Afilizm parametrizasyonu. Tamam mı? Bu kadar. İşte Ayşe de dedi ki, aman dedi hocam ya ne bu kadar uğraşıyorsun. X eşittir V ya diyeyim. V ya. X eşittir T de dedi. E. Y eşittir M dedi. T eksi A artı B de olay bitti dedi. Doğru, haklı çocuk. Haklı valla doğru ya. Bir şey yok onda.
+
+435
+01:15:25,811 --> 01:15:34,371
+Hocam bir şey daha söyleyeceğim. Söyle bakayım ne var? Aman senin de derdin bitmedi bugün. Hocam iki nokta olsaydı o zaman nasıl yapardık?
+
+436
+01:15:35,828 --> 01:15:59,387
+Mesela şöyle mi demek istiyorsun? A virgül B ile C virgülde. Evet ben bunu telefondan bakamadan yapamıyorum. Nasıl yapamıyorsun ya? O zaman da yine değişken bir nokta vereceksin. Bu sefer burada eğimi yazacaksın. Eğimi sana y bölü delta x'den eğim belli oluyor. D eksi B bölü C eksi A. Tamam mı? Aynı yönde çıkar tamam. Tamam.
+
+437
+01:16:00,148 --> 01:16:20,768
+Ondan sonra karar vermiyorum. Bunu mu alayım, bunu mu alayım? İşte çokluktan anacığım, çokluktan. İster bunu al. Yani şöyle yaz, y-d bölü x-c, d-b bölü x-a yaz. İstersen de bunu al. Aynısı mı çıkar? Aynısı çıkar, emin ol bana.
+
+438
+01:16:21,332 --> 01:16:30,452
+Y eksi B bölü X eksi A, D eksi B bölü C eksi A. Bu da aynı sonucu verir, bu da aynı sonucu verir. Tamam mı?
+
+439
+01:16:32,092 --> 01:16:37,992
+Müstakbel mühendis, müstakbel lisans öğrencisi. Evet, bunlarda sıkıntım varsa gider artık.
+
+440
+01:16:39,512 --> 01:16:47,872
+Yarın öbür gün konu komşu, kuzen muzen bir doğru denklemi sorunca, gakkuk edersen valla lisans okuyor ama benim kadar doğru bilmiyor der yani.
+
+441
+01:16:48,243 --> 01:16:49,943
+Milletin ağzına laf verirsin.
+
+442
+01:16:51,623 --> 01:16:52,563
+Burada bir şey yok.
+
+443
+01:16:53,463 --> 01:16:54,023
+Geleceksin artık.
+
+444
+01:16:55,683 --> 01:16:56,503
+Tamam mıyız?
+
+445
+01:16:57,023 --> 01:16:57,303
+Evet.
+
+446
+01:16:57,943 --> 01:16:59,403
+Son bir tane daha yapıyoruz.
+
+447
+01:16:59,583 --> 01:17:01,844
+Ondan sonra da aramızı verelim.
+
+448
+01:17:02,483 --> 01:17:06,183
+Yani dediğim gibi şu an hiç iyi durumda değilim ama devam ediyorum.
+
+449
+01:17:07,384 --> 01:17:07,823
+Evet.
+
+450
+01:17:08,283 --> 01:17:09,303
+Böyle de bir şeyim vardır.
+
+451
+01:17:09,563 --> 01:17:11,163
+Biraz konuşayım da şey olsun.
+
+452
+01:17:11,363 --> 01:17:12,163
+Kafam dinlensin.
+
+453
+01:17:12,303 --> 01:17:13,723
+2010 senesindeyiz.
+
+454
+01:17:13,963 --> 01:17:15,263
+Domuz gribi olmuşum ben.
+
+455
+01:17:16,212 --> 01:17:21,032
+Bilmiyorum tabii, o zaman böyle korona morona bilmem ne bir şey, yok eti, grip diyoruz bir şey.
+
+456
+01:17:21,952 --> 01:17:36,332
+Gece dersimiz var, inşaat fakültesinde. Bir hocayla birlikte gittik. Ders yediden ona kadar, yediyi bekliyoruz, saat altı buçuk gibi falan gittik.
+
+457
+01:17:36,332 --> 01:17:42,452
+Orada böyle bir öğretmenler odası gibi bir şey var, vize de anahtarını verdiler, üst katta.
+
+458
+01:17:42,768 --> 01:18:03,608
+Gittik, oturduk. Zaten kimse yok. Gitmiş herkes servisle. Bir tek işte gece dersi veren hocalar işte. Bir tane hoca vardı, o da orada oturuyordu. Kalktı gitti, altındaymış onun dersi. Ondan sonra filan. Biz oturuyoruz orada. Benim ateşim yükselmeye başladı. Nasıl kötüyüm? Öleceğim ya, öleceğim. O kadar fenayım.
+
+459
+01:18:04,340 --> 01:18:31,079
+Ondan sonra arkadaş bana dedi ki, kötüysün dedi, kötüyüm çünkü masanın üstüne düştüm artık böyle, yani kafamı dik tutamıyorum. Dedi, sen git ben öğrencilerini alayım dedi. Dedim, öğrencileri nasıl alacaksın? Servis dersi bu, çok kalabalık. Öğrenciler, 100 kişiye yakın, yani 100'ün de belki üzerindeydi, diferansiyel denklem öğrencim var. O hafta sonu, cumartesi günü de sınav var.
+
+460
+01:18:31,572 --> 01:18:58,472
+Düşün yani, sınıfa gelmeyen de geliyor, sınıfa gelmeyen de normalde geliyor. Bir de komşu sınıflarınki de geliyor bak. Tamam mı? Oturacak yer dedim yoktur şimdi sınıfta, seninkiler de öyledir dedim. Sen benimkileri alsan nereye oturtturacaksın? Yani bunu bile doğru düzgün söylemiyorum. Masanın üstünde, ölüyorum. Sınıfa gittim. Orada böyle şey, tekerlekli şeyler var ya hani o.
+
+461
+01:18:59,380 --> 01:19:25,979
+Hocanın oturması için sandalyeler. Ona oturdum, onu en yüksek pozisyona getirdim. Böyle kendimi ittiriyorum otururken, tırırt tırırt diye. Tahtanın böyle yarısından aşağıya soru çözdüm. Ama öleceğim. Çıktığım dersten berbat durumdayım. Beni alıp hastaneye götürdüler. Artık kaç derece olmuş ateşim? Hatırlamıyorum ben yani.
+
+462
+01:19:26,579 --> 01:19:44,640
+Şey demişim ki doktora, çok kötüyüm, şoför bey demişim doktora, hatırlamıyorum ben, ateşten, o kadar. Yani ben kötü olsam da ders anlatırım, onu söylemeye çalışıyorum. Şimdi öyle bir durumum yok zaten. Şu son örneği yapalım, aramızı verelim sevgili arkadaşlar.
+
+463
+01:19:44,819 --> 01:19:53,140
+Bu son örneği yapmadan da size yine bir şeyler anlatmak istiyorum. Bakınız, şuna dikkat edin.
+
+464
+01:19:53,524 --> 01:20:19,904
+Oradasınız değil mi? X kare artı y kare eşittir a kare dediğimiz zaman a yarı çaplı çemberi anlarız. Bu normalde x kare bölü a kare artı y kare bölü a kare eşittir bir yazıldığında bu düzgün şekli verir. Anlaştık. Ama eğer buradaki bu faydalar değişik olsaydı, o zaman şekil basıklaşır yahut sivrileşir. Yani x kare bölü a kare.
+
+465
+01:20:20,819 --> 01:20:38,679
+Artı y kare bölü b kare, bak birbirinden farklı oldu, artık çemberden farklılaştı. Neden? Bunu kapat, x'i eksi a artı a'da, bunu kapat, y'yi artı b eksi b'de kesmektedir. Bir de bunun eksi olma hikayesi vardır.
+
+466
+01:20:42,195 --> 01:20:42,775
+Bu nedir?
+
+467
+01:20:44,076 --> 01:20:45,315
+Hocam buna da baktım ben.
+
+468
+01:20:45,415 --> 01:20:48,615
+Bunu kapattığımız zaman x eksi a artı a da kesiyor.
+
+469
+01:20:49,435 --> 01:20:49,755
+Güzel.
+
+470
+01:20:50,576 --> 01:20:52,715
+Ama hocam bunu kapatıyorum.
+
+471
+01:20:52,996 --> 01:20:54,335
+Eksi y kare eksili oluyor.
+
+472
+01:20:54,456 --> 01:20:55,975
+Hiçbir zaman burayı kesemiyor.
+
+473
+01:20:56,595 --> 01:20:56,795
+Evet.
+
+474
+01:20:57,635 --> 01:20:58,835
+Çünkü o bir hiperbol.
+
+475
+01:21:00,115 --> 01:21:01,595
+O bir hiperbol.
+
+476
+01:21:02,931 --> 01:21:08,511
+Peki hocam, bu B'nin kıymeti harbiyesi ne o zaman? Ben anlayamadım. B ne yani burada?
+
+477
+01:21:09,131 --> 01:21:19,311
+B şu, B'leri işaretlediğin zaman artı B, eksi B diye. Burada bir kutu oluştur, hayali bir kutu.
+
+478
+01:21:21,771 --> 01:21:28,451
+Bunun asimtotu vardır. Nasıl? Yani bunun asimtot kaldığı bir.
+
+479
+01:21:30,899 --> 01:21:31,899
+Doğru vardır.
+
+480
+01:21:34,519 --> 01:21:36,079
+Evet, böyle. Tamam mı?
+
+481
+01:21:36,720 --> 01:21:37,979
+Bu hiperboldür.
+
+482
+01:21:38,739 --> 01:21:39,559
+Hocam ne alaka?
+
+483
+01:21:40,159 --> 01:21:42,779
+Şimdiki denklem hiperbolle alakalı. Onun için anlatıyorum.
+
+484
+01:21:42,920 --> 01:21:44,140
+Durduk yere niye anlatayım?
+
+485
+01:21:44,760 --> 01:21:49,760
+Bir de ayrıca, mesela bunun üzerinde sen geometri yaparsan, yani atıyorum.
+
+486
+01:21:50,323 --> 01:22:09,228
+Mesela birim çember aldın, bunun üzerinde bir geometri yaptın. O zaman bu, mesela t dedin, cos t, sin t dedin. Bunun adı trigonometridir. Değil mi? Hiperbol üzerinde geometri yaparsan, buna da hiperbolik geometri denir ve...
+
+487
+01:22:13,492 --> 01:22:41,392
+Kosünüs hiperbolik t, sinüs hiperbolik t denilen hiperbolik fonksiyonlar ortaya çıkar. Bu da birim hiperboldür. X kare eksi y kare eşittir bir. Bu birim çember x kare artı y kare eşittir bir. Onun için kos kare t artı sin kare t bire eşittir. Burada da kosünüs hiperbolik kare t eksi sinüs hiperbolik kare t ise bire eşittir. Bunun onun için eksisi vardır. Bunun onun için artısı vardır.
+
+488
+01:22:41,492 --> 01:23:08,552
+Bunu biliyor muydunuz? Müstakbel mühendisler, müstakbel lisans öğrencilerim. Evet, bunu biliyor muydunuz şunu? Birinci dönem hiperbolik geometri gördünüz. Esasında hiperbolik fonksiyonlar vardı. Belki hani onları o kadar böyle hani yarım kulak dinlediniz. Efendime söyleyeyim, bu budur yani. Evet, bunları sildim. Şimdi efendime söyleyeyim, niye edeceğiz?
+
+489
+01:23:10,036 --> 01:23:11,636
+Sorumuzu anlatalım.
+
+490
+01:23:13,396 --> 01:23:14,536
+X eşittir.
+
+491
+01:23:15,115 --> 01:23:16,356
+T artı bir bölü T.
+
+492
+01:23:16,615 --> 01:23:20,115
+Son sorumuz aradan evvelki güzel bir ara verelim.
+
+493
+01:23:20,876 --> 01:23:22,656
+T eksi bir bölü T.
+
+494
+01:23:26,131 --> 01:23:50,811
+T büyük sıfır ile parametrize edilen Px,y noktasının hareket ettiği yolu
+
+495
+01:23:52,692 --> 01:23:55,832
+Tanımlayınız ve çiziniz.
+
+496
+01:23:59,572 --> 01:24:25,192
+Evet, şimdi burada, tabii bunu tanımlamak, çizmek bir de T büyük sıfır diyor. Bak dikkat et. İkisini bir toplayayım. İkisini bir çıkartayım. Sonra bunların ikisini çarpeyim. E niye bunu yaptım? Tabii düşünmeden bu işlemi yapmak çok zor. Açık konuşuyorum. Yani kolay olduğunu söylemedim ben.
+
+497
+01:24:26,931 --> 01:24:52,192
+Dolayısıyla x kare eksi y kare eşit 4 ki bu hiperboldür. Peki benim hareketim hiperbolün neresindedir? Şimdi şunu düşünelim, t'miz büyük sıfır olduğu için x'imiz her zaman pozitiftir. Ama y için aynı şeyi söyleyemeyebilirim.
+
+498
+01:24:54,260 --> 01:24:58,440
+Küçük mü, büyük mü, sıfır mı? Bunu söyleyemem. Anlaştık mı?
+
+499
+01:24:59,280 --> 01:25:06,500
+Dolayısıyla, T'mizin büyük sıfır olması, X'mizin her zaman pozitif olduğu anlamına gelir.
+
+500
+01:25:07,460 --> 01:25:14,380
+X'mizin her zaman pozitif olmasıysa, söz konusu olan çizdiğim parabolüt,
+
+501
+01:25:14,836 --> 01:25:29,895
+Sadece t büyük sıfır olduğu zaman x de büyük sıfır olduğu için demek ki burada bir hareketim yoktur benim. O zaman bu kanat üzerinde hareket ettiğim anlamına gelir. Burasını anladınız mı acaba? Tamam mıyız?
+
+502
+01:25:31,175 --> 01:25:34,496
+Bir de arkadaşlar, soru soran varsa sorsun.
+
+503
+01:25:36,435 --> 01:25:58,435
+Şu an 15 geçiyor. 10.30'da buluşmak üzere. Birisi 10.30 yazabilir mi oraya? Hatta 16 geçti. Hadi 10.30 yaz. 10.35 yaz. 10.35 yaz. 10.35 yaz. Tamam. Dinlenelim güzelce. Hadi canlarım. Hadi bakalım. Kaçmayın bir yere. Sakın.
+
+504
+01:45:02,644 --> 01:45:05,564
+Ders şu anda başladı, tahtayı hazırlıyordum.
+
+505
+01:45:08,604 --> 01:45:17,623
+Şunu yazayım da, dedim ki, evet, dedim ki hani, bunlar geldiğinde hazır olsun dedim, ama yapamadım.
+
+506
+01:45:21,003 --> 01:45:25,404
+Tanımını yazayım dedim, bekleyeyim dedim onları dedim, öğrencilerimi dedim.
+
+507
+01:46:33,844 --> 01:46:40,984
+Şu anda sesim çıkmıyor. Ses kapalı diye değil. Konuşmaya başlayacağım birazdan. Şimdi bir tahtayı hazırlıyorum şu anda.
+
+508
+01:47:21,524 --> 01:47:25,824
+Aa, gerçekten mi? Böyle duyurulmuş mu yoksa kulaktan kulağı mı?
+
+509
+01:47:30,612 --> 01:47:32,332
+Doğrulmuş hocam sitede.
+
+510
+01:47:32,572 --> 01:47:33,832
+Haa, evet.
+
+511
+01:47:34,352 --> 01:47:36,812
+Ooo, 17 Mayıs mı?
+
+512
+01:47:37,812 --> 01:47:40,132
+Of, arkadaşlar yani.
+
+513
+01:47:40,312 --> 01:47:41,812
+Tek vize biliyorsunuz değil mi?
+
+514
+01:47:43,092 --> 01:47:45,392
+Ve konular ne kadar birikecek?
+
+515
+01:47:45,572 --> 01:47:46,572
+Düşünün artık.
+
+516
+01:47:48,172 --> 01:47:48,992
+Vay vay vay.
+
+517
+01:47:49,312 --> 01:47:51,012
+Hangi gün 17 Mayıs?
+
+518
+01:47:56,115 --> 01:48:02,935
+Hangi gün 17 Mayıs? Günü hangi gün? Hafta sonu mu? Hafta iç mi? Pazartesi hocam.
+
+519
+01:48:06,415 --> 01:48:15,295
+Evet. İkinci vize değil mi hocam diyor. İkinci vize tarihi mi bu? Hayır ben tek vize yapılacak diye biliyorum.
+
+520
+01:48:17,635 --> 01:48:21,615
+Yanlış mı biliyorum? Tek vize, tek vize sena.
+
+521
+01:48:22,547 --> 01:48:32,247
+Ay, evet, bir sürü de konu, şu andaki hali düşün, bir de ondan sonraki halini düşün. Eyvah, eyvah, eyvah.
+
+522
+01:48:33,067 --> 01:48:44,647
+Evet arkadaşlar, sikloid eğrisinden bahsediyoruz. Sikloid eğrisi gördüğünüz gibi bir çemberin yerde, hani böyle bir çocuğun elindeki oyuncağı düşün, çın çın çın çın diye yere sürterek yuvarlıyor.
+
+523
+01:48:44,647 --> 01:48:47,487
+Bu bizim zamanımızda da vardı, plastik.
+
+524
+01:48:47,891 --> 01:48:56,591
+Ta babamların, annemlerin zamanında da varmış ama o zaman tabii plastikleri daha çıkmadığı için onlar da böyle bir teli büküp falan yapıyorlarmış.
+
+525
+01:48:56,652 --> 01:48:59,391
+Demek ki çocuklar böyle şeylerle oynamaktan çok az ediyor.
+
+526
+01:49:00,271 --> 01:49:06,831
+Evet ve gördüğünüz gibi bu periyodik bir eğridir ve şu şekil bir eğri çiziyor.
+
+527
+01:49:06,831 --> 01:49:08,152
+Tamam mı?
+
+528
+01:49:08,916 --> 01:49:33,916
+%60 etkiliyor. Evet, son pişmanlık final %40 etkiliyor arkadaşlar. Hani son pişmanlık fayda vermez diye laf var ya, bakın bu atasözleri ne kadar doğru. Her duruma genelleştirilebiliyor. Son pişmanlık fayda vermez. Fayda verse de %40 fayda verir. Hani mesela çalışmadı, çalışmadı, çalışmadı, yattı, pişman oldu ama...
+
+529
+01:49:34,707 --> 01:50:01,667
+60 puanı uçtu gitti, artık ondan ne hayır gelecek artık değil mi? Dolayısıyla gerçekten çok ciddi çalışmak gerekiyor. Burası tamam mı? Bak siliyorum yavaş yavaş, durumu anladınız herhalde. O zaman bizim formül kağıdımıza yazacağımız bir formül daha var, sikloid eğrisi. Hemen onun arkasından astroid eğrisini de not alın. Kağıtlar hazır mı kağıtlar? Kimlerin kağıtları hazır? Bir tuşa basın bakayım kaç kişiymiş? Bir dakika.
+
+530
+01:50:04,467 --> 01:50:19,127
+Evet, bas bas, kağıda hazır olanlar bassın, ay ta 17 Mayıs'a kadar o kağıt artık kitap olacak, bana bak. O kağıt kitap olacak. Ya, kağıt kitap olacak.
+
+531
+01:50:21,127 --> 01:50:27,047
+Evet, çizelim o zaman resmi. Nasıl bir şeymiş?
+
+532
+01:50:32,948 --> 01:50:47,428
+Böyle gidiyor. Tabii ki buranın uzunluğu 2pi a kadar. Çünkü yarı çapı, yani nokta yere vurduktan bir daha yere vurana kadarki uzunluk, tabii ki 2pi r kadar olacaktır.
+
+533
+01:50:47,508 --> 01:50:54,588
+a yarı çaplı olduğu için de 2pi a olacaktır. Bu da tabii ki. Evet, hemen formülümüzü not alıyoruz.
+
+534
+01:50:54,588 --> 01:51:00,488
+Çünkü gelecek arkadaşlar soruların içerisinde. O zaman haşur haşur defteri karıştırmakla.
+
+535
+01:51:01,076 --> 01:51:01,876
+Uğraşma.
+
+536
+01:51:03,476 --> 01:51:04,356
+Tamam mı? Bu, bu.
+
+537
+01:51:05,336 --> 01:51:09,996
+İkinci eğrimiz ise, iki, asteroid eğrisi.
+
+538
+01:51:15,444 --> 01:51:17,884
+Evet, sikloid eğrisi ve astroid eğrisi.
+
+539
+01:51:21,971 --> 01:51:31,971
+Bu da yine böyle buralara değiyor. Burcan değmiyormuş gibi sanki çizdi ama biliyorsunuz grafik tablet bazen böyle kendi kafasına göre davranabiliyor.
+
+540
+01:51:33,172 --> 01:51:38,511
+Tamam, 1, eksi 1, eksi 1, 1.
+
+541
+01:51:41,011 --> 01:51:45,891
+Burası da tabii ki x ve y. Bunları da yazalım, şöyle güzel olsun.
+
+542
+01:51:46,492 --> 01:51:47,832
+Tamam, bunun da notunu al.
+
+543
+01:52:06,931 --> 01:52:14,052
+İkisi de kapalı. Bunu integre ederken kolaylık olması açısından. Hocam, integre de edecek miyiz? Sen ne diyorsun? Etmez miyiz?
+
+544
+01:52:14,052 --> 01:52:17,872
+Evet, şimdi hemen bunların notlarını aldık.
+
+545
+01:52:21,072 --> 01:52:22,532
+Efendime söyleyeyim.
+
+546
+01:52:26,420 --> 01:52:50,739
+Parametrik eğrilerle hesaplama, teğetler ve alanlar faslına başlıyoruz. Başlığımı atıyorum. Parametrik eğrilerle hesaplama, teğetler ve alanlar.
+
+547
+01:52:54,644 --> 01:53:03,483
+Evet, hemen mavi kalemini alayım ve yazmaya başlayayım. Eğer, FG
+
+548
+01:53:06,644 --> 01:53:07,783
+T noktasında
+
+549
+01:53:11,539 --> 01:53:21,579
+Akademik takvimde 26-30 izler. Vallahi [öğrenci]'cığım, bölüm dersleri için o, iki vizeler.
+
+550
+01:53:23,699 --> 01:53:30,500
+Bak, bir şeyler yazmış canım benim. Vallahi bilmiyorum [öğrenci], ben sizden öğreniyorum yani.
+
+551
+01:53:36,500 --> 01:53:49,859
+Bize sormuyorlar ne zaman yapalım bu öğrencilerin sınavlarını diye. Kendileri ilan ediyorlar. Dolayısıyla benim dışımda olan şeyler [öğrenci], hani niye bunu bu zaman yapmadınız? Ben bilmiyorum zaten.
+
+552
+01:53:55,923 --> 01:54:17,103
+Yazayım, konuşacağız şimdi. Sınav hakkında değil, çünkü sınavda dediğim gibi benim herhangi bir yaptırımım yok. Çünkü bu bir servis dersi. Notlamada da herhangi bir yaptırımım yok. E o zaman ne? Servis dersinin şeyi budur. Yani olayı bu. Herkese ne yapılıyorsa, efendime söyleyeyim, bize de o yapılacak. Problem yoktur.
+
+553
+01:54:17,779 --> 01:54:34,500
+Şimdi bizim fonksiyonumuz x eşit f'te, y eşit g'te ve bize diyor ki dy bölü dt, hatta öyle de yazmayalım önce, y üstü yahu namı diğer dy bölü dt'yi hesap et diyor.
+
+554
+01:54:35,539 --> 01:54:41,020
+Hayır, dy bölü dt değil, özür dilerim. dy bölü dx'i hesap et diyor bize.
+
+555
+01:54:41,860 --> 01:54:42,320
+Tamam mı?
+
+556
+01:54:43,260 --> 01:54:44,688
+Hemen şu dy'yi...
+
+557
+01:54:44,688 --> 01:54:53,708
+ve dx'i bu şekil kısımlara ayırdım ve dt'yi yabancı oyuncu olarak araya aldım.
+
+558
+01:54:54,228 --> 01:54:56,948
+Şimdi arkadaşlar, hemen şunu konuşalım.
+
+559
+01:54:57,547 --> 01:55:05,347
+Birinci dönem öğrenmiş olduğunuz, yani liseden bu yana görmüş olduğunuz türev adi türevdir.
+
+560
+01:55:06,128 --> 01:55:08,748
+Yani bunun literatürdeki ismi bu.
+
+561
+01:55:09,779 --> 01:55:22,019
+Ordinary manasında, yani alelade, adi manasındadır. Hatta birçok diferansiyel denklem kitabının başında da adi türevli diferansiyel denklemler denir.
+
+562
+01:55:22,639 --> 01:55:30,099
+Hocam o türev adi de bizim bu dönem öğreneceğimiz kaliteli türev mi? Ne alakası var? O da kısmi türev.
+
+563
+01:55:37,779 --> 01:55:45,439
+Partial differential equation diye anlatılıyor. Demek ki parçalı veyahut kısmen alınmış türevlerden bahsediyoruz.
+
+564
+01:55:45,959 --> 01:55:54,999
+Bunlar da zaten o şey parçallarda zaten kımıldatamazsın. Ama bunu çocuk gibi düşünebilirsin. Hani daha çok ufak bu.
+
+565
+01:55:55,779 --> 01:55:59,059
+Hani çocuğu da zapt edemiyorsan pıt oraya gidiyor, pıt bu yana gidiyor.
+
+566
+01:56:00,595 --> 01:56:17,755
+Efendime söyleyeyim. Hani Allah korusun düşüyor ediyor. Hani biz o kadar düşsek etsek kafamız gözümüz kırılır. Ona bir şey olmuyor. Değil mi? Neden? O daha mukavemetli hoplamaya zıplamaya falan. Onun yaptığı hareketleri biz yapsak kendimizi sakatlayabiliriz yani.
+
+567
+01:56:18,355 --> 01:56:40,735
+Fakat bu büyüyünce o hareketliliği gösteremiyor. Yani mesela d kare y bölü dx kare dediğiniz zaman artık çocuk büyümüş, bak olgunlaşmış. Bir pelerin giymiş üstüne, d bölü dx pelerini giymiş. Dolayısıyla artık ben bu d kare y bölü dx karenin bu dx karesini karşıya atarsam sıfırı alırım.
+
+568
+01:56:41,235 --> 01:56:44,256
+Bu artık kımıldamaz. Neden? Kemikleşmiş.
+
+569
+01:56:44,676 --> 01:56:47,936
+Bunu hani ince bir fidanı böyle tutup bükebiliyorsun.
+
+570
+01:56:48,476 --> 01:56:53,036
+Yine oink haline geliyor. Normal haline geliyor ya, efendime söyleyeyim.
+
+571
+01:56:53,416 --> 01:56:57,416
+Ama ağacı bükebiliyor musun sen? Artık kocaman ağaç olmuş, kımıldamıyor.
+
+572
+01:56:57,416 --> 01:56:59,636
+Bunu onun gibi düşünebilirsiniz.
+
+573
+01:57:00,235 --> 01:57:05,416
+Yani kısacası birinci mertebeden adi türevi istediğiniz gibi zıplatıp hoplatabiliyorsunuz.
+
+574
+01:57:05,996 --> 01:57:07,756
+Mesela böyle de yapabilirsin bunu.
+
+575
+01:57:08,212 --> 01:57:19,572
+Tıpkı hani çok incecik bir fidan gibi esneyebiliyor. Ama ikinci mertebe türevde aynı esnekliği gösteremiyor. Bir kere bunu herkes bilsin. Tamam mı? Bu önemlidir.
+
+576
+01:57:20,552 --> 01:57:30,092
+Zaten kısmi türevlere geçtiğimiz zaman çok değişkenli fonksiyonlarda konuşacağız tekrar bunları. Şimdiden bir ufak alıştırma olmuş olsun.
+
+577
+01:57:30,547 --> 01:57:42,567
+Şimdi bizim fonksiyonumuz Trabzon'un t'sine bağlı ama bizim y'nin x'e göre türevini almamız bekleniyor. O halde y'nin t'ye göre türevini aldığımız zaman dg bölü de t'yi anlayacağız.
+
+578
+01:57:43,148 --> 01:57:50,407
+x'in t'ye göre türevinden anlayacağımız şey ise f'in t'ye göre türevidir. Çok basitmiş hocam. Çok basit. Ben zor demedim.
+
+579
+01:57:50,407 --> 01:57:58,547
+Ama ikinci mertebe türeve geldiğiniz zaman artık bu ağaçlaşmış. Yani sen bunu istediğin gibi eğip bükemiyorsun.
+
+580
+01:57:58,547 --> 01:58:18,648
+O zaman ne yapman gerekecek? Şimdi sıkıntı buradadır sevgili gençler. D bölü Dx'i bıraktınız ve dolayısıyla şuraya DG bölü DT, DF bölü DT'yi yazdınız. O zaman adama derler ki, hop dur bakalım.
+
+581
+01:58:19,207 --> 01:58:24,747
+Niye? Türev alıyorum güzel güzel. Niye duruyorum? Bunun içi Trabzon'un T'sine bağlı.
+
+582
+01:58:26,452 --> 01:58:52,772
+Ama burası x'e göre türev. Nasıl alacaksın? O da diyor ki izle beni gör diyor. Yine yabancı oyuncu alırım diyor. Nasıl alacak? Dg bölü dt bölü df bölü dt. Bu dx'i en sona attı. Yabancı oyuncu dt olacak. Çünkü neden? Parantezin içinin türetebilmek için. Burası anlaşıldı mı sevgili gençler?
+
+583
+01:58:53,555 --> 01:59:00,055
+Dolayısıyla, sizin artık işleminiz, şuranın t'ye göre türevi ne olacaktır?
+
+584
+01:59:01,115 --> 01:59:12,555
+Birincinin türevi, çarpı ikinci, eksi, birinci çarpı, şu eksi, birinci çarpı, ikincinin türevi,
+
+585
+01:59:16,595 --> 01:59:18,275
+Bölü paydanın karesi.
+
+586
+01:59:21,876 --> 01:59:47,416
+Şuradaki ifadeyi ise, 1 bölü dx bölü dt şeklinde yazabilirsiniz. Bu ifade ise, df'in t'ye göre türevidir. Yani sonuçta, g2 üstünün türevini alırsanız, siz eğer, d kare g bölü dt kare, çarpı df bölü dt, eksi, dg bölü dt çarpı,
+
+587
+01:59:48,307 --> 01:59:58,987
+d kare f bölü dt kare, bölü d f bölü dt'nin parantezinin küpü olarak alabilirsiniz.
+
+588
+01:59:58,987 --> 02:00:10,667
+Hemen size, efendime söyleyeyim, ödevinizi yazıyorum. Önümüzdeki hafta inşallah bu soruyla başlayacağız.
+
+589
+02:00:16,275 --> 02:00:27,495
+t eksi t kübün, x değil bu, özür dilerim. Ben biraz yoruldum galiba ya. Niye bugün böyle oldu bana? Allah Allah.
+
+590
+02:00:30,035 --> 02:00:40,335
+Aftanın yorgunluğu herhalde. Evet. d kare y bölü d x kare türevini hesap ediniz diyor. Böyle soru gelir mi sınavda? Gelir.
+
+591
+02:00:42,068 --> 02:00:44,547
+Evet, sorusu olan var mı burada?
+
+592
+02:00:47,347 --> 02:00:48,427
+Tamam mıyız?
+
+593
+02:00:49,387 --> 02:00:53,547
+Peki, bir ödev sorusu daha yazıyorum sevgili arkadaşlar.
+
+594
+02:00:55,788 --> 02:01:00,587
+Ödev, bir diyelim, hatta bir kere daha yazayım.
+
+595
+02:01:00,587 --> 02:01:09,528
+X eşittir, t eksi, t kare, t kare, t eşittir, t eksi, t küp, t kareye bölü.
+
+596
+02:01:10,100 --> 02:01:16,359
+D x kare eşit soru işareti. İkinci ödevimiz, bak böyle soru da gelir.
+
+597
+02:01:16,359 --> 02:01:27,060
+Sekant t, y eşittir, tanjant t, eksi pi bölü 2 t, pi bölü 2 eğrisinin.
+
+598
+02:01:32,275 --> 02:01:34,076
+Efendime söyleyeyim.
+
+599
+02:01:35,856 --> 02:01:47,356
+Kök 2,1 noktasındaki teyitini bulunuz.
+
+600
+02:01:47,615 --> 02:01:48,996
+Evet, sorumuz budur.
+
+601
+02:01:49,996 --> 02:01:51,916
+İki tane ödevimiz var.
+
+602
+02:01:52,076 --> 02:01:55,636
+Önümüzdeki hafta bu soru ile başlayacağız.
+
+603
+02:01:55,775 --> 02:01:56,655
+Şimdi ne yapacağız?
+
+604
+02:01:57,363 --> 02:02:05,103
+Şimdi sevgili arkadaşlar, alan sorusunu da yine bu konuyla ilgili çözeceğiz.
+
+605
+02:02:05,623 --> 02:02:09,083
+Hemen şuraya bir not yazmak istiyorum.
+
+606
+02:02:09,083 --> 02:02:10,403
+Not.
+
+607
+02:02:13,503 --> 02:02:22,703
+Bir sonraki soru için hatırlatma.
+
+608
+02:02:23,863 --> 02:02:24,183
+Evet.
+
+609
+02:02:24,655 --> 02:02:25,935
+Hemen hatırlayalım.
+
+610
+02:02:28,135 --> 02:02:37,076
+G eşittir, fx diye birinci dönem bir eğri verilmiş olsaydı size a ile b arasında.
+
+611
+02:02:38,615 --> 02:02:48,576
+Dolayısıyla siz bu bölgenin alanını bulabilmek için a'dan b'ye kadar fx'deyiz.
+
+612
+02:02:49,908 --> 02:02:57,927
+FX'in göbek adı olarak YDX'i de yazabilirdiniz. Aynı şeydir.
+
+613
+02:02:58,739 --> 02:03:17,739
+Burası tamam mıdır? Bir de bu konuyu da konuşalım. O olucu demek ki integral çözecek. Evet, kesinlikle integral çözeceğim. Bir tane bölgenin, parametrik eğriyle denilmiş bir bölgenin alanını bulacağım. Daha sonra parametrik olarak tanımlı eğrinin...
+
+614
+02:03:18,515 --> 02:03:26,615
+Uzunluğun formülünü çıkartıp bununla ilgili de bir tane örnek çözeceğim ve dersimiz, inanmazsınız, bitecek.
+
+615
+02:03:26,615 --> 02:03:33,395
+Evet, peki hemen o zaman buraya kadar sorunuz yoksa devam ediyorum. Var mı problem?
+
+616
+02:03:35,475 --> 02:03:37,975
+Evet, hemen yazalım o zaman.
+
+617
+02:03:38,735 --> 02:03:39,456
+Hemen yazalım.
+
+618
+02:03:39,956 --> 02:03:42,135
+Sorumuz neymiş? Sorumuz şu.
+
+619
+02:03:42,735 --> 02:03:45,735
+X eşittir, cos küp t.
+
+620
+02:03:46,207 --> 02:03:49,967
+Y eşittir sin küp t.
+
+621
+02:03:51,087 --> 02:03:54,307
+Sıfır t, iki pi.
+
+622
+02:03:55,347 --> 02:03:57,907
+Bunun ne olduğunu hemen anlayabilmen lazım.
+
+623
+02:03:58,047 --> 02:04:00,087
+Hemen kağıdına bakarsın bu durumda.
+
+624
+02:04:15,060 --> 02:04:22,980
+Bulunuz. Sorumuz bu sevgili arkadaşlar. Hemen bölgenin resmini çizmek istiyorum.
+
+625
+02:04:22,980 --> 02:04:24,980
+Bölgemiz...
+
+626
+02:04:29,587 --> 02:04:33,587
+Aynen bu şekilde. Bir bölge. Ve buralar...
+
+627
+02:04:39,123 --> 02:04:41,823
+Aynen bu şekil yazabilirim.
+
+628
+02:04:42,163 --> 02:04:50,123
+Ve ben burada eğer şu bölgenin alanını bulacak olursam, onu dörtle çarparak tamamını bulabilirim.
+
+629
+02:04:50,203 --> 02:04:53,724
+Çünkü bu sistematik bir şekildi.
+
+630
+02:04:54,323 --> 02:04:56,963
+Dolayısıyla A diyorum, dört tane.
+
+631
+02:04:58,543 --> 02:05:01,224
+Efendime söyleyeyim, nereden nereye kadar diyeceğim?
+
+632
+02:05:01,224 --> 02:05:02,264
+Sıfırdan.
+
+633
+02:05:02,868 --> 02:05:07,967
+1'e kadar ydx şeklinde yazabilirim.
+
+634
+02:05:08,507 --> 02:05:18,528
+Burada, burada, eğer siz, bakınız çok önemli, noktaları, yani bunların hepsini çevirmek istiyorsanız,
+
+635
+02:05:19,068 --> 02:05:24,688
+şimdi y dediğiniz şey, sin küp t idi, y yerine değerine yazacaksın.
+
+636
+02:05:27,167 --> 02:05:53,167
+Kos küpteydi. O zaman dx yerine ne yazacaksın? Üç başa gelir. Tepesi bir azalır. İçinin türevini de bu şekil yazarsın. Bir de dt'yi yazarsın. Burada anlamadığım bir şey var mı? Tamam mıdır? Tamam mıdır? Şimdi parametrik eğrilere artık bunu dönüştürürsen, bak.
+
+637
+02:05:53,619 --> 02:05:56,039
+Çok dikkat et. Tamam mı?
+
+638
+02:05:57,380 --> 02:06:02,239
+Şimdi, x'i bir. Tamam mı?
+
+639
+02:06:02,920 --> 02:06:07,880
+Y'si sıfır olan nokta. Hangi nokta? Ben burada işaretliyim sana o noktayı.
+
+640
+02:06:08,380 --> 02:06:11,119
+X'i bir, y'si sıfır olan nokta bu nokta.
+
+641
+02:06:11,119 --> 02:06:14,960
+Evet. Diğeri ise şu nokta.
+
+642
+02:06:15,939 --> 02:06:18,923
+O noktaları, çünkü biliyorsun ben...
+
+643
+02:06:19,859 --> 02:06:33,539
+Bu güzergah üzerinde integrasyon yapacağım. O zaman T'nin buradaki değerini ben merak ediyorum. Bir de T'nin buradaki değerini merak ediyorum.
+
+644
+02:06:33,539 --> 02:06:45,839
+Çünkü integrasyonda kartezyen koordinatları kullanamam. Artık T'ye dönüştürmem lazım. Neden? Söz konusu olan denklem Trabzon'un T'sine göre. Şöyle bir şey aklına gelebilir.
+
+645
+02:06:46,387 --> 02:07:05,688
+Ay hocam ikisinin arasında teyiyor ki, değil mi kartezyen denklem yazayım, yapamazsın ki bunu bak, buradan çekemiyorsun. Çekilmeyecek bir eğri olduğu için sana bunu verdiler. Diyorum, bir tek akıl sizde mi var? Herkeste var. Herkesin aklı var, herkesin fikri var. Onu düşünemiyor mu sana veren kişi?
+
+646
+02:07:06,484 --> 02:07:33,024
+Bu örneği, bunu yap diyen kişi. Dolayısıyla sen buradaki t'leri bulabilmek için söz konusu olan t'lerin değerlerini yazman lazım. Anlaştık mı? O zaman ne yazacaksın? 1 eşittir, kos küpte. 0 eşittir, sin küpte dersen, bu şartı sağlayacak t değerinin artık kim olduğunu görürsün? 0.
+
+647
+02:07:34,771 --> 02:07:46,792
+Hemen yine kalemimi değiştirdim. X'i 0, Y'si 1 olacak şekildeki nokta hakkında konuşmak istiyorum.
+
+648
+02:07:46,792 --> 02:07:56,891
+0 eşittir, cos küp t, 1 eşittir, sin küp t yazarsanız şayet.
+
+649
+02:07:57,203 --> 02:08:23,104
+O zaman da söz konusu noktanın, hocam pi bölü 2 yerine onun katlarını yazamaz mıyız? Hayır, bunu böyle çemberin hareketi gibi düşün. Bu birinci dörtte birde. Dolayısıyla bunun karşılığı sıfırla pi bölü 2'dir. Yani onların katlarını düşünmeyin. Önce tam o aralıktaki değerleri için işlem yapınız lütfen. Dolayısıyla bunları yerine koyduğunuz zaman, dört dedim.
+
+650
+02:08:23,859 --> 02:08:49,699
+Sıfırın yerine, yani x'i sıfırlı olan noktanın yerine hangisini koymak gerekiyormuş? P bölü 2. Aa, enteresan, altta kaldı o. Evet, öbürküsünün yerine hangisini koyman gerekiyormuş? Onun yerine de sıfır. Güzel. Y'nin yerine ne yazman gerekiyormuş? Sinküpte. Güzel. Efendime söyleyeyim, dx'in yerine ne yazman gerekiyormuş? Üç tane.
+
+651
+02:08:50,739 --> 02:09:11,859
+Kos kare t çarpı eksisin t çarpı dt. Ve hemen, lütfen buraya dikkat et, yorulmuş olabilirsin. Emin ol ben de yoruldum. Emin ol ben de yoruldum. Ama devam ediyorum gördüğün gibi. Yoksa yazıp yazıp yazıp, çabuk yazıp bitirebilirim.
+
+652
+02:09:12,659 --> 02:09:16,719
+Ama bunu yapmıyorum. Lütfen sen de yapma bunu.
+
+653
+02:09:17,332 --> 02:09:25,731
+Evet, eksiyle sınırları yer değiştir diyorum.
+
+654
+02:09:26,271 --> 02:09:30,832
+Ve dolayısıyla sınırın sonuç yazıyorum.
+
+655
+02:09:31,731 --> 02:09:37,131
+4 tane, 4 ile 3'ü de birleştirdim, 12 etti. Bizim orada öyle ediyor. Sizin orada da öyledir ben eminim.
+
+656
+02:09:37,811 --> 02:09:41,492
+Sıfırdan pi bölü 2'ye kadar. Tamam mı?
+
+657
+02:09:41,492 --> 02:09:43,551
+Hadi kosluyu da başa alalım.
+
+658
+02:09:44,340 --> 02:10:06,720
+Kos kare t çarpı sin dört t çarpı dt. Sinli başta olsa olmaz mıydı? Olurdu, bir şey yok. Bitti mi soru? Biter mi ayol? Bunu çözeceğiz ilahi. Allah'ım yarabbim. Evet, tamam mıyız? Burada sorusu olan var mı? Şimdi bu integral'i çözmemiz gerekiyor sevgili arkadaşlar.
+
+659
+02:10:08,720 --> 02:10:11,119
+Hemen çözelim. Başlıyorum.
+
+660
+02:10:11,828 --> 02:10:25,307
+A eşittir 12, 0'dan pi bölü 2'ye kadar, 1 artı cos 2t bölü 2.
+
+661
+02:10:25,648 --> 02:10:29,228
+Hocam bunu niye yazdık? Bu cos kare t idi yani, değil mi?
+
+662
+02:10:30,668 --> 02:10:32,288
+cos kare t idi, hatırla.
+
+663
+02:10:33,047 --> 02:10:35,108
+Ondan sonra öbür küsü için ne yazıyoruz?
+
+664
+02:10:39,923 --> 02:10:41,504
+Bölü 2'nin karesi.
+
+665
+02:10:41,944 --> 02:10:46,284
+Ooo hocam o zaman formül kağıdı mı ben bunları da ekleyeyim çünkü bunlar bana lazım.
+
+666
+02:10:46,664 --> 02:10:49,704
+Kesinlikle çünkü integral sana illaki soracaklar.
+
+667
+02:10:50,164 --> 02:10:52,564
+O da yarım açı formüllerini bilmezden de olmaz.
+
+668
+02:10:52,984 --> 02:10:57,484
+Bak buradan 4 gelir, buradan 2 gelir 8, dışarıda kavuşurlar 12 bölü 8 diye.
+
+669
+02:10:58,004 --> 02:11:00,144
+Sıfırdan pi bölü 4'e kadar yaz.
+
+670
+02:11:00,504 --> 02:11:03,404
+Ondan sonra geri kalanını da ne yap?
+
+671
+02:11:04,104 --> 02:11:04,904
+Ne yapayım hocam?
+
+672
+02:11:05,300 --> 02:11:25,720
+Güzelce ne? Burada paskala göre aç. Yani 1-2, kos, 2t, artı, kos kare, 2t yaz. Yani ne yaptık? Karesini aldık. Değil mi? Sonra hocam, sonra da böyle, böyle, böyle, böyle, böyle, böyle çarp.
+
+673
+02:11:26,195 --> 02:11:33,136
+Çarptıktan sonra hesap et bak. 12 bölü 4. Şunları şöyle güzelce sadeleştir. 3 bölü 2 olsun o.
+
+674
+02:11:34,576 --> 02:11:43,275
+Ama sıfırdan pi bölü 4'e kadar de. 4 nereden geldi ayol? 2'de. Tamam mı? Evet.
+
+675
+02:11:44,936 --> 02:11:48,556
+Neden pi bölü 4 dedik? Çünkü hocan yanlış yazdı yavrum.
+
+676
+02:11:50,003 --> 02:12:01,884
+Diyorum ya, gerçekten iyi değilim diye. Teşekkür ediyorum [öğrenci]'ciğim. Dikkatiniz için. Sağ olun yavrum. Var olun. Evet, buradaki işlemi yaptığımız zaman, şimdi bak.
+
+677
+02:12:05,876 --> 02:12:28,796
+Kosikite bir tane geliyor. Bir tane de bir gelir ve eksili bir şekilde geliyor. Değil mi kosikite bir bakayım? Eksili mi gelir, artılı mı gelir? Kosikite bir, artı mı kosikite? Eksili mi geliyor? Ha bir tane buradan gelir, bir tane de oradan gelir, eksili olur. Tamam. Bir eksi kosikite olur. Tamam.
+
+678
+02:12:30,100 --> 02:12:50,560
+Kos kare nereden gelir? Kos kare bir buradan gelir. Bir de bunun çarpımından gelir. Eksi 2 tane artı 1 tane. Eksi olur o da. Eksi kos kareti. Bak, şu an hesap ediyorum. Kağıttan bakıp bakıp yazmıyorum. Kos küp zaten 1 tane. Onu direkt yazabilirim. Tamam, başka da bir şey gelmez. Güzel oldu bak. Çok güzel oldu. Evet.
+
+679
+02:12:51,155 --> 02:12:52,855
+t şeklinde yazdım.
+
+680
+02:12:53,416 --> 02:12:56,496
+Bunu da iki parçaya ayırabilirim sevgili arkadaşlar.
+
+681
+02:12:56,775 --> 02:12:58,055
+Nasıl yazacağız?
+
+682
+02:12:58,256 --> 02:12:59,496
+Hemen onu yazalım.
+
+683
+02:12:59,635 --> 02:13:02,115
+Sıfırdan 2 bölü 2'ye kadar dedim.
+
+684
+02:13:02,635 --> 02:13:06,555
+1 eksi cos 2t eksi.
+
+685
+02:13:06,555 --> 02:13:09,975
+Şunu yarım açı formülleri cinsinden yazmak istiyorum.
+
+686
+02:13:10,576 --> 02:13:16,376
+1 bölü 2 artı cos 4t bölü 2 şeklinde yazdım.
+
+687
+02:13:17,076 --> 02:13:21,376
+Hocam, belki diğeri, diğerini bekle, iki dakika ya, ne kadar sabırsızsın.
+
+688
+02:13:22,956 --> 02:13:27,356
+Evet, şu kısmını ise bir diğer integrale böldüm.
+
+689
+02:13:28,256 --> 02:13:30,556
+Yine sıfırdan pi bölü ikiye kadar dedim.
+
+690
+02:13:31,676 --> 02:13:33,596
+Kos kare iki t dedim.
+
+691
+02:13:34,976 --> 02:13:37,315
+Kos iki t dedim.
+
+692
+02:13:38,056 --> 02:13:38,815
+Dt diye.
+
+693
+02:13:39,516 --> 02:13:41,256
+Bu kısmı iki parçaya böldüm.
+
+694
+02:13:41,356 --> 02:13:42,775
+Bak, şurası şurasıdır.
+
+695
+02:13:42,775 --> 02:13:43,396
+Güzel.
+
+696
+02:13:43,775 --> 02:13:50,315
+Ve de bunu da, bunu da bak, bunu da yarım açı formüllerinden yazmak istiyorum.
+
+697
+02:13:51,076 --> 02:13:58,896
+1-sin kare 4t. Değil mi?
+
+698
+02:14:02,771 --> 02:14:08,811
+Ay yanlış mı yazdım? Sin 4T. Dur, sin kare olur mu ya? Yanlış yazdım. Çok özür diliyorum.
+
+699
+02:14:14,739 --> 02:14:36,340
+Koz kare yerine, evet 2T'li ise şayet, orası da 2T'ydi değil mi? 2T'ydi. Demek ki o zaman buraya ne yazacağım? 4T mi yazacağım gençler? Doğru yazdım mı? Bak kimse bana yardım etmiyor. Ay ay. Evet, tamam.
+
+700
+02:14:38,387 --> 02:14:47,268
+Aynen böyle. Yaz burada bir sıkıntım var. Ne gibi bir şey yazabilirim? Şimdi ne diyebilirim?
+
+701
+02:14:49,887 --> 02:14:58,948
+Böyle yazmayayım o zaman. Dur ya, böyle niye yazacağım? Ne alemim ben? Dur, dur, dur, dur, dur. Çok yorulmuş hocanız. Gerçekten yorulmuş çocuklar.
+
+702
+02:14:59,507 --> 02:15:16,367
+Ben de diyorum ki yarım açıya gerek yok ki, bir eksi sin kare 2t yazacaksın. Kağıttan bakmıyorum yani gerçekten. Güzel güzel hesap ediyorum. Neden? Nerelerde zorlanabileceğinizi her an tayin edebileyim diye böyle yaptım.
+
+703
+02:15:16,367 --> 02:15:24,967
+Bu durumda tabii ki u eşittir sin 2t dersem eğer, du eşittir 2kos 2t.
+
+704
+02:15:25,747 --> 02:15:41,507
+dt diyebilirim. Bu anlamda bu integralin içi u kare du bölü 2. 1 eksi u kare olur. U kare olmaz. 1 eksi u kare. Şimdi bu bu hale dönüşür. Harika oldu şimdi.
+
+705
+02:15:42,347 --> 02:15:49,007
+Evet yine eski rengime döneyim. Yeşillen. Bak yeşil yeşil gidiyoruz. 3 bölü 2 dedim.
+
+706
+02:15:49,524 --> 02:16:12,284
+Burayı integre ediyorum. T, eksi, sinüsün türevi kosünüstü. Böyle yazdım. 1 bölü 2. Eksisi yok mu hocam? Yok. Çünkü sinüsün türevi kosünüstür. Kosünüsün türevi eksi sinüstür. Yani ben yazdığım şeyin türevini alınca bu çıkması lazım. Onun için eksiği muhafaza etmem lazım. Hatta burasını, hadi bunu da böyle yazalım. T bölü 2 diye yazalım. Tamam. Burada eksilik var. 1 bölü 2 çarpı 4.
+
+707
+02:16:12,884 --> 02:16:39,263
+Sin 4T olacaktır bu da. Aynen böyle. Efendime söyleyeyim, sıfırdan Pi bölü 2'ne kadar olacaktır. Hemen bunları kafadan sıfırı bastım gözlerine gözlerine. Neden? Sebep. Çünkü Pi bölü 2'yi yerine koyarsam Sin Pi olur. Sıfırda da yine Sin 0 olur. Bunların alt sınıfları, üst sınıfları 0. Aynı hikaye burada da var. Sin 2 Pi ve 0'da. Dolayısıyla bunları hemen hesabın dışına atabilirsiniz sevgili arkadaşlar.
+
+708
+02:16:40,564 --> 02:17:03,203
+Burası tamam. Şimdi buraya geldim. Burası 3 bölü 4 oldu. Evet. Dışarıya ne olarak çıkacak bu? U eksi U küp bölü 3 şeklinde olacak. Sınırları da dönüştüreyim mi? Ay işin mi yok Allah aşkına. E ne yapayım o zaman ya bekle. Allah seni. Hocam düşünüyor seni. P bölü 2 eksi.
+
+709
+02:17:03,796 --> 02:17:20,335
+P bölü 4 dedim. Şunları yerine koydum. A sınırı yerine koymama gerek yok. Çünkü A sınırda zaten 0 oluyor. Artı dedim 3 bölü 4 dedim. Şimdi U'ları yerine koyuyorum. Sin 2T eksi 1 bölü 3. Sin küp 2T.
+
+710
+02:17:20,756 --> 02:17:29,216
+Hocam bu da gidiyor. Gidiyor evet biliyorum. Onun için dedim zaten dönüştürmekle uğraşma diye. Onun için söyledim. Çünkü bunu da koysam, bunu da koysam.
+
+711
+02:17:29,747 --> 02:17:56,788
+Bunu da koysan, bunu da koysan, hem bu yan, hem de bu yan gidiyor. Onun için uğraşmana gerek yok. Sadece şuradaki hikayeyi yazarsan, bir bölü kaç oldu burası? Dört mü oldu arkadaşlar? Bir bölü sekiz. Doğru yaptım değil mi? Çok yorgunum. Yardım ederseniz çok sevinirim. Yani gerçekten ihtiyacım var yardımınıza. Tamam mıdır? Evet, bitirdik bunu da.
+
+712
+02:17:59,700 --> 02:18:00,860
+Anlamayan var mı?
+
+713
+02:18:01,747 --> 02:18:12,247
+Hem de güzel bir integral antrenmanı oldu. Hocam ne gerek var integrale demeyiniz. Integral zaten sınavda muhakkak gelecektir sevgili gençler.
+
+714
+02:18:13,448 --> 02:18:29,747
+Bakın yani 17 işte neyse o bilmiyorum ayın kaçıdır, hangi aydır ama çok geç sınav. Sınavın çok geç olması ve tek vize olması çok tehlikeli bir durum arkadaşlar. Çok dikkatli davranmanız gerekiyor.
+
+715
+02:18:29,747 --> 02:18:48,247
+Yani açık net göstergesi, aman ha diyorum. Tamam mı? Güzel soru [öğrenci]'ciğim, evet. Aynen öyle. Evet, bir sürü konu olacak. Aynen dediğin gibi bu seçim. Aynen yavrum, çok konu olacak.
+
+716
+02:18:49,075 --> 02:19:12,235
+Ne yapalım, elle gelen düğün bayram diye laf var. O lafı da hiç sevmem ama hep söylerdi benim doktor olayım. Elle gelen düğün bayram kızım, elle gelen düğün bayram derdi. Ne diyor bu derdim? Yani herkese ne olacaksa bize de olacak. Problem yok manasında söylüyordu ama tabii ki pek de öyle değil. Böyle bir laf var ama ne denir ona? Böyle bir ilginç bir laftır bu laf.
+
+717
+02:19:16,852 --> 02:19:42,812
+olarak, şimdi mesela korona için düğün bayram diyebiliriz, elle gelmiş, herkese gelmiş. Yani herkese gelen şey, insanı etkilemez, yani daha az etkiler. Sadece sana mı oldu bu olanlar manasında bir sözdür o. Evet. Parametrik olarak tanımlı eğrinin uzunluğu.
+
+718
+02:19:44,628 --> 02:19:46,948
+Evet, şimdi bu konu hakkında konuşacağız.
+
+719
+02:19:49,927 --> 02:19:55,328
+Kulakları çınlasın sevgili doktora hocamın. Çok severim kendisini.
+
+720
+02:19:58,995 --> 02:19:59,715
+Evet.
+
+721
+02:20:00,000 --> 02:20:28,000
+Evet, böyle bir elimiz var. Bu elinin uzunluğunu bulmak istiyoruz. Tıpkı birinci dönem riman toplamlarında ne yapıyorduk? Herhangi bir alanımız vardı. İnce, ince, ince, ince kıyıyorduk. Ondan sonra da onlara böyle dikdörtgenler vasıtasında yaklaşımda bulunuyorduk hatırlarsanız. Yani bu altta kalabiliyordu, üstte kalabiliyordu. Alt riman toplamı, üst riman toplamı. Bu işte bu ince dikdörtgenleri topladığımız zaman bu elinin altındaki alanla başa baş gelmesi için bu silindirlerin...
+
+722
+02:20:28,000 --> 02:20:38,360
+İki yakasının, yani iki yakasının bir araya gelmesi lazım. Yani bu silindirlerin, ay silindir diyorum, özür dilerim. Bu kadar dikdörtgen diyemiyorum, silindir diyorum.
+
+723
+02:20:39,299 --> 02:20:49,059
+Efendim, mesela bu şeylerin, dikdörtgenlerin birbirlerine çok yakın, yani çok dar bir vaziyette.
+
+724
+02:20:50,579 --> 02:21:04,520
+yaklaşması, kısacası sonsuz tane olması durumunda dikdörtgenlerin alanlar toplamı ile eğrinin altındaki alan başa baş geliyordu ki biz buna Riman toplamı diyorduk.
+
+725
+02:21:04,639 --> 02:21:14,240
+Matbirdeki konumuz bu şekildeydi. Yine Matbirde eğrilerle ilgili işlem yaparken de şöyle bir şey yapıyorduk.
+
+726
+02:21:14,240 --> 02:21:18,579
+Elimize bir kibrit çöpleri alıyorduk, kırık parçalık.
+
+727
+02:21:18,579 --> 02:21:40,200
+sanki bunu küçük kirişlerle örtüyormuş gibi, tabii bu şimdi grafik tablette çok güzel gözükmüyor, küçük kirişlerle bunları minik minik parçalara ayırdığımızı ve bu kibrit çöplerinin, yani kırık kibrit çöpü parçalarınla bunun üstünü örttüğümüzü varsayıyorduk.
+
+728
+02:21:40,299 --> 02:21:44,819
+Hatırladınız mı bu işlemi? O zaman Riman toplamındaki gibi şunu söylemeniz.
+
+729
+02:21:46,260 --> 02:22:01,319
+mümkün olabiliyordu sevgili gençler. Diyordunuz ki, bu kibrit çöplerinin sayısı sonsuza gidecek kadar çok kısa kirişler ise, mini minnacık, gözle görülmeyecek kadar mikroskobik uzunluklu,
+
+730
+02:22:02,036 --> 02:22:26,175
+Kibrit çöpleri ise bunlar. O zaman bu kibrit çöplerinin toplam uzunluğu eğrenin uzunluğuna başa baş gelir diyordunuz. Şimdi bunun işleminin ispatını yapacağım. Yazıyorum efendim. Konuşmadan yazayım çünkü şu an gerçekten yani dersi bitirip bitirmeme konusunda tereddütlerim var.
+
+731
+02:22:42,995 --> 02:22:46,955
+Birazdan konuşacağım. Hani bu canın mikrofonu kapalı demeyin.
+
+732
+02:22:51,700 --> 02:22:53,080
+Şimdi yazayım, anlatacağım.
+
+733
+02:23:13,299 --> 02:23:16,599
+Hemen konuştuğumu yazıyorum. İşte şöyle olsun, böyle olsun.
+
+734
+02:23:21,139 --> 02:23:24,779
+Her ikisi bir yandan sıfır olmasın. Ortada eğri kalmaz.
+
+735
+02:23:40,884 --> 02:23:41,884
+Çok ders yaptık.
+
+736
+02:24:11,924 --> 02:24:16,904
+Arkadaşlar, yazayım yazdığımın üzerinde anlatacağım. İki dakika dinlenmiş olayım.
+
+737
+02:25:09,396 --> 02:25:10,996
+Anlatacağım şimdi çocuklar.
+
+738
+02:25:11,355 --> 02:25:12,175
+Bir pisaade buyurun.
+
+739
+02:25:59,412 --> 02:26:04,812
+Hem de yazanlar da yazsın. Yazmayanlar da, hoca ne yapıyor diye bir baksın bakalım.
+
+740
+02:26:06,972 --> 02:26:14,371
+Aa, hocam, delta tk'nın karesini kare kökün içine attınız. Ben anladım. Aferin be. Bravo.
+
+741
+02:26:17,332 --> 02:26:19,972
+Maşallah. Senden kaçmadı.
+
+742
+02:26:21,412 --> 02:26:25,871
+Ama bazı arkadaşlarımız yorgun olabilir. Benim gibi.
+
+743
+02:26:26,675 --> 02:26:29,975
+Onlar, aa hoca ne yaptı ya diyebilirler.
+
+744
+02:26:33,843 --> 02:26:35,644
+Evet, bunu böyle yaptık.
+
+745
+02:26:39,987 --> 02:26:43,287
+Ortalama değer teoremine göre bunu şöyle yazabiliriz.
+
+746
+02:27:00,531 --> 02:27:17,971
+Hocam ne yaptık? Anlatacağım dedim ya ama sen müsaade hiç etmiyorsun bana. Hoca ölsün mü artık ya? Vallahi çok yoruldu artık. Bayılacak. Cidden yani. Hani eğer yüz yüze dersen anlatsaydım ne olduğunu anlardın yani yüzüme baktığında.
+
+747
+02:27:30,067 --> 02:27:38,688
+ve eka, yıldız, yıldız. Hani mat bir kolay diyordunuz ya, bakın bakayım, hatırlayan kaç kişi var çok önemli benim için.
+
+748
+02:27:54,515 --> 02:27:55,495
+Bunu konuşacağız.
+
+749
+02:27:56,675 --> 02:27:58,188
+Bu durumda da...
+
+750
+02:28:01,363 --> 02:28:06,263
+Yani kirişlerin sayısı sonsuza gider senin matematikçesini söylüyor burada.
+
+751
+02:28:07,083 --> 02:28:11,603
+Tüm kirişlerin toplamı o zaman sana ya uzunluğunu verir diyor adam b'ye kadar diyor.
+
+752
+02:28:11,603 --> 02:28:26,923
+Bu da diyor f üstü t'nin karesi artı g üstü t'nin karesi çarpı dt şeklindedir diyor.
+
+753
+02:28:29,652 --> 02:28:53,811
+Hemen bir hatırlatma yapayım şuraya bir şeyle. Nasıl söyleyelim? F, B, eksi, F, A, bölü, B, eksi, A, eşittir. F üstü, C, C elemanıdır, A, B aralığından. Hatırladınız mı bunu?
+
+754
+02:28:58,100 --> 02:29:03,760
+Hatırlayanlar tuşa bastın bakayım. Canınız sağ olsun. Hatırlamadınsa da hatırlamadınmışsındır. Hatırladın değil mi?
+
+755
+02:29:04,200 --> 02:29:26,100
+Şimdi ben bunu oluşturmak için şöyle bir şey yaptım. Dedim ki ben hani böyle fotoğraf makinesini alıp şöyle şuraya bir zoom yaptım. Bir tane kiriş yakaladım. Tamam balık tutar gibi. Sen dedim gel bakayım buraya dedim. Tık tık tık tık çektim şöyle kenara. Senin dedim x'in ne söyle bakayım. Senin y'in ne söyle bakayım. Hani annen kim baban kim gibi sorarlar ya hani yaramaz çocuğu.
+
+756
+02:29:26,100 --> 02:29:50,920
+Canım kırınca, sen kimin çocuğusun? Söyle bakayım, annenin adı ne, babanın adı ne? Bunların hepsini, güzel seceresini öğrendim. Sonra dedim ki, bu kirişin boyunu hesap edeyim. İki noktası bilinen kirişin boyunu yazdım, karaköpünün içinde. Absislerin farkının karesi, ordinatının farkının karesi dedim. Sonra da tuttum, delta TK ile böldüm. Delta TK denilen kısım,
+
+757
+02:29:51,219 --> 02:30:00,000
+Yani şunların ikisinin arasındaki t mesafesi, atıyorum burası tk-1 idi, burası da tk idi, şunların arasında...
+
+758
+02:30:00,000 --> 02:30:19,540
+Peki, T farkı. Ki bu durumda bizim yaptığımız şey, bu TK'yı kare kökün içerisine soktuğum zaman, Delta TK kare oldu. O zaman bu da parantezlerin içine de ayrı ayrı sirayet edebilir. Sanki hani hücrenin bir betini içine çekmesi gibi düşün. Yani çoğunluk kimyacı burada.
+
+759
+02:30:20,308 --> 02:30:45,008
+Efendime söyleyeyim. Bunları böyle içine doğru absorbe etti bu. O zaman sen dedin ki, aa ben bunu ya birinci dönem hatırlıyordum. Burası da tk-tk-1 idi. Delta tk denilen bu da o zaman ortalama değer teoremine göre tk ile tk-1 arasında herhangi bir değere göre türev şeklinde yazılabilir dedim.
+
+760
+02:30:48,308 --> 02:31:16,067
+Türevlerini yazdım ve bu kilişlerin tamamı, sonsuz sayıda olsun demek, bu kilişleri birbirlerine çok, yani bu iki noktayı birbirlerine çok yaklaştırmak anlamına gelmektedir. Bu durumda da integral'i verir, dedim. Anlaşıldı mı sevgili gençler? Hocam ders bitti mi? Bir tane de küçük soru çözeceğiz, bitecek. Zaten şey de bitti, beyaz tahtamızın yeri de bitti arkadaşlar. Hemen yazıyoruz o zaman.
+
+761
+02:31:16,308 --> 02:31:23,108
+Küçük küçük yazıyorum. Eğer şunları da aşağı alayım da güzel güzel yazabilirim. Ondan sonra da hemen minik bir örnek çözüp bitireceğiz.
+
+762
+02:31:23,108 --> 02:31:34,688
+Eğer e iyisi x eşit efte ve y eşit yete a.
+
+763
+02:31:38,388 --> 02:31:46,067
+Oradasınız değil mi? Kaçmadınız, gitmediniz inşallah. Beni bırakmadınız değil mi gençler? Alo?
+
+764
+02:31:47,508 --> 02:31:48,708
+Buradayız hocam.
+
+765
+02:31:49,128 --> 02:31:53,228
+Aslansın, sen olmasan ben ne yapacağım? Hep bu hanım kızım konuşuyor ya.
+
+766
+02:31:54,288 --> 02:31:54,567
+Evet.
+
+767
+02:31:57,567 --> 02:32:02,308
+Ay canlarım benim, canlarım benim. Parametrik olarak.
+
+768
+02:32:05,075 --> 02:32:26,435
+Yazamıyorum arkadaşlar, o kadar yoruldum ya. Gerçekten yoruldum. Bir gün ne oldu bak size ne anlatayım. Şimdi ben söylemek istemiyorum bölümü. Ben kötüleştim. Bende şeker düşüklüğü var. Şimdi belki ebeveynlerinizde varsa bilirsiniz. Şeker düşüklüğü çok tehlikeli bir şey.
+
+769
+02:32:26,963 --> 02:32:39,283
+Hani şeker hastalığından bile tehlikeli. Çünkü şeker hastalığında da şeker düşük olabilir tabii ki. Ama şekeriniz eğer elinin altına düşerse sizi şeker de ayıltmaz. Nasıl?
+
+770
+02:32:39,987 --> 02:33:07,247
+Glikojan denilen bir madde var, onu vermeleri lazım ki siz ayılabilirsiniz. Çünkü kan, yani vücut bu sefer şekeri ememiyor da ve şekeriniz düştüğü zaman çok düşürmemeniz lazım. Yani çok düşürürseniz ölebilirsiniz. Yani öyle söyleyeyim. Doktor tanıdıklarınız varsa da sorabilirsiniz. Şeker yüksekliğinden insan komaya girer ama şeker düşüklüğünden ölürsünüz. Yani ambulans gelene kadar bile ölebilirsiniz.
+
+771
+02:33:07,987 --> 02:33:30,407
+Ben genelde öğrencilerimi diyorum, arkadaşlar bak işte ders yaparken hani şekerim düşüyor falan, burada çantamda bakın, önünde bir çantam var fermarında, bak burada kesme şekerler var, hani bir şey olursa eğer, hani böyle ağzıma sokmanız yeterli falan diyorum onlara. Ondan sonra böyle de bir konuşma da olmasına rağmen. Dedim ki arkadaşlar çok kötü.
+
+772
+02:33:31,092 --> 02:33:52,051
+Ders dedim bırakayım, bir şekeri olan var mı dedim. Yani o günde almamış mıyım, çantamı mı unuttum, neyse. Sınıf bana bakıyor ya. Böyle bir şey var mı? Şekeri olan var mı diyorum. Tepki yok sınıfta. Sınıfta tepki yok. Ya ben orada öğrenci olsam.
+
+773
+02:33:52,404 --> 02:33:58,064
+Ya yok hocam, şurada hoca odalarından bir tanesi de kesme şekeri, illaki vardı, kapıyı tıklatırsın.
+
+774
+02:33:58,463 --> 02:34:06,024
+Hocam, bizim sınıftaki hoca biraz fenalaştı, kesme şekeriniz var mı? Bir tane alabilir miyim? Herkes verir ya, herkes verir.
+
+775
+02:34:06,544 --> 02:34:13,424
+Yani sen bir evin kapısını çalsan, ya birisi çok kötüyüm, bir kesme şeker ver de, bunu verir ya, herkes verir.
+
+776
+02:34:13,864 --> 02:34:19,844
+Bakıyorlar benim suratıma, böyle bir şey yok. Bu klavyenin karşısında, otura otura,
+
+777
+02:34:20,404 --> 02:34:28,484
+Efendim [öğrenci], bir olay oldu, üzgün surat. Sevinmek, alkış. Efendim [öğrenci], bir şey oldu, gözü, yaşlı ikon.
+
+778
+02:34:28,979 --> 02:34:33,759
+Bunlarla insanlar tepkilerini kaybetti artık. Bunu yapmak çok kötü bir şey ya.
+
+779
+02:34:34,239 --> 02:34:40,579
+Veya işte köpek orada mesela efendim bayılmış etmiş. Tabii ki o da candır. Üzüleceğim tabii ya. Böyle şey mi olur?
+
+780
+02:34:40,579 --> 02:34:48,219
+Bir cana zeval gelmiş. Tabii ki üzüleceğim. Ay orada yazıyor yazıyor. Ah işte bunu yapan insan olamaz, şöyle olamaz.
+
+781
+02:34:48,439 --> 02:34:56,180
+Senin karşısında insan ölüyor. Sen bir tane şeker bulmaya tenezzül etmiyorsun. Yıkıla devrile.
+
+782
+02:34:56,628 --> 02:35:23,988
+Odadan çıktım. Ondan sonra orada karşıda bölüm vardı bölüme attım kendime. Hemen sekreterler bir şey soktular ağzıma. Ya böyle inanabiliyor musunuz arkadaşlar? Şimdi 10 tane diploman var. 10 tane de demeyeyim, 1000 tane diploman var. Ama çevrene karşı hiçbir duyarlılık geliştirememişsin. Ben soruyorum. Bu diplomanın.
+
+783
+02:35:24,628 --> 02:35:26,648
+Kıymeti harbiyesi ne kadardır?
+
+784
+02:35:29,407 --> 02:35:43,148
+Bu olay oldu. Bu olay oldu. Bakın fakültesini de söylemiyorum. Bir fakültede oldu. Bir fakültede oldu bu. Hangi fakülte söylemiyorum. Özellikle söylemiyorum. Sonra ne oldu? Allah Allah Allah.
+
+785
+02:35:44,308 --> 02:36:02,128
+Ondan sonraki ders, ben iyileştim tabii. Yani mesela atıyorum salı günkü ders, çarşamba ya da perşembe günü ikinci derse ben girdim yarım saat. Yedim bitirdim kurabiye gibi onları. Söyleyerekten, çenemle.
+
+786
+02:36:03,316 --> 02:36:30,456
+Dediler ki, herhalde bir daha artık birisi karşısına bayılacak gibi olursa, hepsi o konuşmadan sonra koşar. Çünkü, efendim, bayağı bir zulüm ettim çenemle yani. Evet, gerçekten bu olay oldu. Samimi söylüyorum. Hatta bir tanesi derste yokmuş. Dersten sonra geldi dedi ki, hocam ben derste olsaydım koşardım giderdim. Bilmiyorum artık. Ben de dedim ki, bilmiyorum, emin değilim yani. Evet.
+
+787
+02:36:30,932 --> 02:36:38,332
+parametrik, gerçekten böyle bu oldu ve sınıfta en az, yani ellinin üstünde arkadaşımız vardı.
+
+788
+02:36:39,412 --> 02:36:51,652
+Evet. Bir de mesela şöyle de oluyordu, enteresan, o sınıfa giriyorum ben, ondan sonra günaydın diyorum, efendime söyleyeyim, kimse selamımı da almıyor.
+
+789
+02:36:51,992 --> 02:36:56,192
+Böyle bakıyorlar, bazı dilinle dişinle falan gibi bir şey söylüyor.
+
+790
+02:36:56,659 --> 02:37:24,579
+1-3-5, ondan sonra dedim ki ya bir sınıfa girilince, bir selam verilince alınır yani. Böyle bir şey olabilir mi dedim arkadaşlar ya. Bir selam almamak olabilir mi? Şimdi bu bazen internetteki sınıflarımızda da oluyor. Ben mesela giriyorum, günaydınlar diyorum size mesela. Siz hemen yazıyorsunuz, günaydın hocam, günaydın, günaydın, günaydın, günaydın. Yani bir iki kişi yazsa zaten tamam. Hiç kimse yazmazsa sıkıntı var. Neden? O selam yerde kalıyor ya. Şimdi ben bunlara böyle dedim ya böyle, şimdi ben giriyorum.
+
+791
+02:37:24,659 --> 02:37:50,799
+Ben girince günaydın diyorum sabah için, çünkü ben on kala girerim. Hani internette de giriyorum, orada da giriyorum. On kala girerim, günaydın. Herkese günaydın hocam. Başlarını öne yiyorlar. Şimdi kapıdan içeri girer, ben kürsüde oturuyorum ya, günaydın hocam diyor, diğerlerine selam verme. Ya ben sana hocayım diye bana selam verme dedim. İnsanım ben bana selam ver, onlara da selam ver, onlar da sana selam versin.
+
+792
+02:37:51,092 --> 02:37:56,592
+Selam verme konusunda da artık bu kadar da olur mu? Olmaz. Olmamalı.
+
+793
+02:37:57,231 --> 02:38:00,632
+Her neyse şimdi gelelim. Bunlar bu eğriden meğriden önemlidir yani.
+
+794
+02:38:01,032 --> 02:38:04,912
+Eğer C eğrisi ile parametrik, bakayım dur düzelmiş miyim?
+
+795
+02:38:06,592 --> 02:38:11,612
+Parametrik olarak tanımlanıyor ise.
+
+796
+02:38:15,667 --> 02:38:20,468
+Tamam. F üstü, G üstü aynı anda sıfır değilse.
+
+797
+02:38:29,268 --> 02:38:53,108
+Tamam mı? Efendime söyleyeyim. F üstü, G üstü, AB'de sürekli. Efendime söyleyeyim. İse. Tamam mı? T eşit A'dan, T eşit B'ye kadar. Yay.
+
+798
+02:38:53,747 --> 02:38:59,587
+Uzunluğu, bak özetliyorum artık konuyu ve soruyu çözeceğiz. Soru uzun değil, merak etmeyin.
+
+799
+02:38:59,987 --> 02:39:15,608
+L, A'dan B'ye kadar, kare kökün içinde F üstü X'in karesi artı, G üstü X'in karesi, X değil tabii, DT.
+
+800
+02:39:16,404 --> 02:39:23,884
+Görürsen böyle hemen söyle. Çünkü neden? Sen gördün, kendi defterini düzelttin, arkadaş fark etmedi, o da yorulmuş benim gibi.
+
+801
+02:39:24,544 --> 02:39:30,264
+Efendime söyleyeyim. Ona da bir hayrın olsun ya. Önemli olan hayırlı insan olmak.
+
+802
+02:39:31,144 --> 02:39:38,864
+Yoksa ha üstüne diplomanda var, bak ne kadar güzel, çok güzel bir şey. Ama en önce hayırlı ol.
+
+803
+02:39:39,564 --> 02:39:41,963
+Hepsinden önemlisi hayırlı insan olmak.
+
+804
+02:39:41,963 --> 02:39:43,604
+TSE bölü DT.
+
+805
+02:39:47,540 --> 02:40:01,780
+F üstü t'nin karesi artı G üstü t'nin karesi 1 olup, bak bu da çok önemli çünkü daha sonra kullanacağız bunu, onun için yazıyorum.
+
+806
+02:40:02,260 --> 02:40:10,380
+Ds eşittir F üstü t'nin karesi artı G üstü t'nin.
+
+807
+02:40:10,380 --> 02:40:15,380
+Hocam soru çok uzun süre. Soru 1 dakika. Sen merak etme ben seni...
+
+808
+02:40:15,443 --> 02:40:28,463
+İnan bana, neredeyse senden çok düşünüyorum. İnanabilirsin yani. Ders konusunda, her konuda olamaz. Her konuda kim seni en fazla düşünür, senden daha fazla? Anne.
+
+809
+02:40:30,603 --> 02:40:39,063
+Evet, şimdik. Ama ders konusunda da ben seni, senden fazla düşünüyorum.
+
+810
+02:40:41,299 --> 02:41:00,840
+Hocam o zaman geçirecek misin? O manada değil, öğren diye. Öğrenemezsen kalacaksın. O zaman da işte biliyorsunuz, hiç okulunda tabizim yok. Zaten bizim tabizlik bir şey yok da, eğrisinin yanı yüzünden. Bak şimdi çok basit artık, pıt diye bitecek. Nedir?
+
+811
+02:41:01,940 --> 02:41:08,020
+Şimdi dx'in t'ye göre türevini alalım. Nedir bu? Eksi r sin t. Güzel.
+
+812
+02:41:08,580 --> 02:41:15,500
+dy'nin de t'ye göre türevini alalım. R koste. R zaten yarı çap, pozitiftir.
+
+813
+02:41:16,400 --> 02:41:22,740
+Nereden nereye kadar? Sıfırdan 2 pi'ye kadar. Evet. Eksi r sin t'nin.
+
+814
+02:41:23,123 --> 02:41:47,243
+Karesi, her zamanki gibi 35-36'da dersimiz bitecek inşallah. Evet, bitmek üzere şimdi. Şuraya hemen. Mutlak değer R oluyor burası, biliyorsunuz ama zaten R pozitif çünkü bir uzaklık bu. Dolayısıyla Rdt diye yazabilirsiniz. Rt oldu. 0, 2P, 2.
+
+815
+02:41:47,695 --> 02:41:54,576
+İki pire olaraktan çemberin uzunluğunu sana vermiş olduk.
+
+816
+02:41:55,059 --> 02:42:18,739
+Efendime söyleyeyim, sınavda sana neyi sorabilir? Mesela bir asteroid veyahut bir sikloid eğrisinin, mesela der ki T eşittir, şundan T eşittir, buna kadar falan gibi sorular. Ben zaten size bununla ilgili uygulama falan yapacağım zaten ama şu kardiyoidleri de bitirelim, yani kutupsalları da bitirelim. Ondan sonra, ha dur, şunu hemen atalım.
+
+817
+02:42:18,739 --> 02:42:20,099
+Save.
+
+818
+02:42:20,915 --> 02:42:26,975
+PDF, save, show folder. Tut bakalım.
+
+819
+02:42:27,915 --> 02:42:32,315
+Evet, bir kontrol eti olmuş mu? Tamam, 20 sayfamız full doldu.
+
+820
+02:42:33,255 --> 02:42:39,876
+Evet, ödevlerimizi yapmaya ihmal etmeyelim. Kalabalıklara çok girmiyoruz arkadaşlar.
+
+821
+02:42:42,036 --> 02:42:46,036
+Kendimizi de, ailemizi de, görüştümüz...
+
+822
+02:42:46,064 --> 02:42:53,404
+Kişileri de koruyoruz böylelikle. Lütfen dikkatli olalım. Hastaların şakası yok. Allah mahfaza.
+
+823
+02:42:54,364 --> 02:43:04,184
+Evet, zihin açıklıkları diliyorum. Başarılar diliyorum. Efendime söyleyeyim. Siz de efendim kendinize iyi bakın. Sağlıklı günler diliyorum efendim.
+
+824
+02:43:05,603 --> 02:43:10,184
+Bu arada sorusu olanlar var mı? Sağ olun. Siz de sağ olun var olun yavrum.
+
+825
+02:43:10,184 --> 02:43:11,564
+Evet.
+
+826
+02:43:12,180 --> 02:43:34,939
+Sorusu olan var mı? Öğrenci görüşme saati başlamıştır. Sorusu olan varsa buyursun sorusunu sorsun. Ben teşekkür ediyorum efendim. Çok hatırnaz. Efendime söyleyeyim. Soru sorunca cevap veren çok cici bir kılapım var. Maşallah çok güzel bir şey. İnşallah notlarınız da böyle güzel gönlünüz gibi.
+
+827
+02:43:35,572 --> 02:43:40,252
+Güzel olur ama bunun için gayret ve emek sarf etmeniz lazım.
+
+828
+02:43:40,832 --> 02:43:46,572
+Güzel öğrencilerim, lütfen bunu kendinizden ve ailenizden esirgemeyin.
+
+829
+02:43:47,412 --> 02:43:55,391
+Çünkü dediğim gibi sizi buralara göndermek için ne gibi emekler sarf ettiler, ne fedakarlıklarda bulundular.
+
+830
+02:43:56,132 --> 02:44:01,452
+Onun için sen de bu dersi güzel alnının akından güzelce ne ver, rahat edersin.
+
+831
+02:44:01,811 --> 02:44:13,492
+5 saatlik ders, seneye başına dert olur, üstten alttan derslerle çakışır, stres olursun, bak tek vizeye de indirgediler, bir kamyon konu var.
+
+832
+02:44:13,652 --> 02:44:24,432
+Ay ay ay Allah'ım ben korktum yani. Evet, güzel çalışın, iyi hafta sonları, iyi günler. İnşallah, inşallah canım. Evet, sorusu olan var mı?
+
+833
+02:44:26,932 --> 02:44:44,412
+Evet, yavaş yavaş azalıyoruz. Bilgisayarı açıp kaçan arkadaşlar inşallah yoktur. Evet, haftaya kutupsal koordinatları göreceğiz inşallah. Zor konudur haberiniz olsun. Kutupsaldan böyle, inanın böyle beton gibi sorular geliyor. Onun için kutupsalı da güzel öyle.
+
+834
+02:44:44,492 --> 02:44:50,432
+Hocam hepsinden, ya 20 tane soru var. Tabii ki her konudan sorarlar adamlar yani. Söyleyin şöyle.
+
+835
+02:44:51,316 --> 02:45:17,695
+Tamam, ben de görmüyorum bu arada soruları. O açıdan da rahatım. Bu gelir, o gelir diye rahat rahat konuşuyorum. Oh ne güzel. Evet. Hadi bakalım. Sorusu olan var mı? Bak kapatıyorum ona göre. Üç. Geri geri sayıyorum. Sorusu olan var mı? Yazsın bak mikrofonlarsın. Sorusu olan var mı? Evet. Geri sayım başladı. Kapatıyorum. Sorusu olan var mı? Üç.
+
+836
+02:45:18,932 --> 02:45:38,792
+Peki. Haftaya derse inşallah 10 dakika kala erken geleceğim. İki tane minnoz soru var, onları çözeceğim. Hoca nasıl olsa çözüyor, yat aşağı deme, çöz. Soru çözmek senin sınavdaki performansını arttırır. Çok daha çabuk, çok daha cevval davranmanı sağlar.
+
+837
+02:45:39,188 --> 02:45:56,067
+Efendime söyleyeyim. İlk defa mutfağa girsen, yemek yapmak için, yumurtayı kırarken kabuğu içine düşer. Bilmem neyi kızartayım dersin, yanı yanar. Değil mi? Ama her gün mutfağa girersen, iki dakikada yemeği mis gibi pişirirsin.
+
+838
+02:45:56,067 --> 02:46:05,688
+İşte sadece sınava çalışan arkadaşların yaptığı yemek, düşün, bir de her gün mutfağa giren arkadaşın yaptığı yemek gibidir.
+
+839
+02:46:06,484 --> 02:46:09,884
+Dolayısıyla antrenmansız olmaz.
+
+840
+02:46:11,684 --> 02:46:17,123
+Tamam mı? Allah'a ısmarladık diyorum. 3, 2, 1 deyip tuşa basıyorum. Evet.
+
+841
+02:46:17,684 --> 02:46:25,083
+And meeting for all diyorum. Bak basıyorum ona göre. Allah'a ısmarladık efendim. Görüşmek üzere inşallah. Hoşçakalın.

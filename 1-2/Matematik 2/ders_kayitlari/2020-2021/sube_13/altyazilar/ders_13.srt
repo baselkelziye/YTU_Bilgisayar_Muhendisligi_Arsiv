@@ -1,0 +1,2071 @@
+1
+00:00:44,851 --> 00:00:46,951
+Merhaba arkadaşlar, nasılsınız?
+
+2
+00:00:59,316 --> 00:01:20,596
+Nasılsınız efendim? Teşekkür ederim, ben de iyiyim. Bu resmi sizler için çektim. İki grubumdaki öğrenciler için. Davut Paşa'dan bahar manzaraları efendim. Teşekkür ederim, ben de iyiyim. Ağaçlar, çiçek açtı böyle her taraf. Bütün ağaçlar çiçek dolu.
+
+3
+00:01:21,024 --> 00:01:32,543
+Dedim ki, öğrencilerim okula gelmiyor, bari ben onlara böyle bir okul manzarası göstereyim dedim. Nasıl güzel bir fotoğraf. Çok güzel değil mi? Ne güzel açmış ağaçlar.
+
+4
+00:01:33,140 --> 00:01:55,300
+Özlemişiz değil mi okulu ya? Evet, evet, evet. İnşallah sağlıklı günlerdi. Ah ah arkadaşlar. Evet, bugün neler yapacağız? Bugün çok değişkenli fonksiyonlardan devam edeceğiz. Çok değişkenli fonksiyon konusunu bitireceğiz inşallah ve limit konusuna başlayacağız.
+
+5
+00:02:01,140 --> 00:02:05,179
+Böyle mümkün olduğu kadar ileri bir noktaya, limite başlamayı hedefliyoruz.
+
+6
+00:02:05,599 --> 00:02:10,719
+Tabii yarın 23 Nisan olduğu için resmi tatil ders yok sevgili arkadaşlar.
+
+7
+00:02:10,719 --> 00:02:20,800
+Ve ondan sonra da, efendime söyleyeyim, şey yok, haftaya da sınav haftasından dolayı ders yok.
+
+8
+00:02:21,151 --> 00:02:47,871
+Onu da biliniz. Böyle yani durum. Sizin soracağınız herhangi bir şey var mı? Şöyle bir bahçeyi seyredelim. Çiçekli, böcekli. Efendime söyleyeyim, resimden. Bak böyle ağaçlara bak orada. Ne güzel beyaz beyazı açmışlar. Tomurcuk tomurcuk. Evet, bahar gelmiş. Ay ay ay. Evet, en azından. Şimdi fonksiyonlara bakacağımız yerde ağaçları görelim.
+
+9
+00:02:48,436 --> 00:03:11,436
+Güzel, güzel. Evet, sorunuz var mı? Geçtiğimiz dersle ilgili. Yoksa şimdi yansıtacağım. Evet, hemen yansıtalım. Chat kutumuzu yine açalım. Chat kutusu yine aşağıda kaldı. Onu yukarı alalım. Bir saniye.
+
+10
+00:03:16,116 --> 00:03:31,576
+Evet, chat kutumuz da geldi. Çok güzel. Tamam. Şimdi bu videoyu da kapatıyorum artık. Ya da ders başlayınca kapatırız. Biraz daha açık kalsın. Evet.
+
+11
+00:03:32,048 --> 00:03:47,948
+Matbir dersinden limitlerle ilgili hatırlatma yaparak limit fölüne başlayacağız ama bugün tabii ki geçen derste çok değişkenli fonksiyonlara minik bir giriş yapmıştık. İki değişkenli fonksiyonlar için konuşacağız ve
+
+12
+00:03:48,403 --> 00:04:06,243
+İki değişkenli fonksiyonlarda tanım aralığı muhakkak sınavda çıkacaktır arkadaşlar. Tanım aralığı ve çıkmış sınav sorularıyla hemen derse başlayacağız. Burada gördüğünüz gibi, burada bakın arka arkaya şu birinci soru, şu soru, şöyle kör soru ile göstereyim.
+
+13
+00:04:06,243 --> 00:04:08,243
+Şu soru.
+
+14
+00:04:08,948 --> 00:04:26,567
+Şu soru çıkmış, şu soru çıkmış ve bu soru da yine çıkmış sınav sorusudur. Böyle soru gelir mi derseniz, evet kesinlikle gelecektir. İki değişkenli fonksiyonlarda arkadaşlar bunlar gelecektir. Bunlara dikkat ediniz efendim.
+
+15
+00:04:33,492 --> 00:04:34,471
+Tamam mıyız?
+
+16
+00:04:36,471 --> 00:04:38,412
+Sorusu olan var mıdır?
+
+17
+00:04:40,471 --> 00:04:42,572
+İki sayının fişini de takayım.
+
+18
+00:04:53,043 --> 00:05:05,144
+Bugün benden sonra dersiniz var mı? Bir bana cevap verirseniz sevinirim. Benden sonra dersiniz var mı? Yok, güzel, tamam.
+
+19
+00:05:05,684 --> 00:05:33,684
+Bunu öğrendiğim iyi oldu. Çünkü yarın dersimiz de yok. Öbür grupta tabii bir parça öne geçtik. Mümkün mertebe böyle bir aynı noktaya gelemeyiz. Onlara soru çözdüm. Size de o soruları çözeceğim zaten ama biliyorsunuz ben onları bırakacağım. Daha doğrusu teslim edeceğim bir diğer hocaya. Sizinle sene sonuna kadar devam ediyoruz ama onları Erdal hocaya teslim edeceğim.
+
+20
+00:05:33,684 --> 00:05:57,843
+O açıdan da onlara biraz soru falan yaptım. Size daha sonradan yapacağım. Problem değil yani. Siz de o sorulardan geri kalmayacaksınız. Var hocam. Var mı benden sonra dersiniz? O zaman çok fazla ileri şey yapmam. Merak etmeyin. Tamam. Tamam. Oldu. Önümüzdeki hafta o zaman. Mümkün belki. Yetişir zaten konular. Problem yok.
+
+21
+00:05:58,548 --> 00:06:10,108
+Evet, tamam mıyız sevgili gençler? Evet, ben videoyu kapatıyorum. Dediğim gibi Davut Paşa'dan manzara o. Geçen hafta çektim bu resmi ve sizin için çektim.
+
+22
+00:06:10,788 --> 00:06:17,408
+Yani sizin için derken sadece siz değil diğer grubumdaki öğrencilerim için de seçtim.
+
+23
+00:06:17,812 --> 00:06:38,451
+Efendime söyleyeyim bunu. Dedim ki okula gelemiyorlar, şöyle bir Davut Paşa manzarası görsünler canım öğrencilerim dedim. Evet, şu anda kapatıyorum resmi ya da biraz daha dursun. Evet, şimdi iki değişkenli fonksiyonlarda geçen dersler ne yapmıştık? Hemen onunla ilgili minik bir hatırlatma yapalım.
+
+24
+00:06:40,271 --> 00:06:44,451
+Efendime söyleyeyim, eğer sizin tek değişkenli bir fonksiyonunuz...
+
+25
+00:06:45,012 --> 00:07:03,851
+Var ise tanım kümeniz, hatırladığınız gibi şurası tanım kümesiydi ki bu tek değişkenli bir fonksiyon için tanım aralığı anlamındaydı.
+
+26
+00:07:03,851 --> 00:07:08,411
+Çünkü bu bir aralık gösteriyordu eğer sizin fonksiyonunuz.
+
+27
+00:07:12,052 --> 00:07:29,012
+G eşit, efiksi ile gösteriliyorsa efendim. Ama biz tabii ki biraz daha şimdi ilerledik. Dolayısıyla herhangi bir yüzeyimiz varsa artık bizim tanım kümemiz bize sorulabilir.
+
+28
+00:07:37,971 --> 00:07:39,891
+Bölgemiz, evet.
+
+29
+00:07:40,463 --> 00:08:05,544
+tanım bölgesi. Hangi fonksiyondan bahsediyoruz? Z eşittir, fxy ile gösterilen, efendime söyleyeyim, bir fonksiyondan bahsediyoruz. Bu matbirdeki hikayeydi. Artık biz mat2'ye geçtik ve olay gördüğünüz gibi çok değişkenli fonksiyonlara evrildi ve bu hali aldı.
+
+30
+00:08:06,675 --> 00:08:11,716
+Şimdi tanım kümesini konuştuktan sonra, evet.
+
+31
+00:08:13,216 --> 00:08:20,256
+Şimdi iç nokta ve açık kapalı bölge kavramlarına geçeceğiz.
+
+32
+00:08:21,735 --> 00:08:25,636
+Bahçenin içi ve bahçenin sınırı kavramı.
+
+33
+00:08:26,004 --> 00:08:35,663
+Çocukken bile öğrendiğimiz bir şeydi. İşte büyüklerimiz diyorduk, işte bu bahçeden ayrılmayacaksın, gözümün önünde olacaksın, şurası sınır diyordu, oraya gidemiyorduk.
+
+34
+00:08:35,744 --> 00:08:42,464
+Çok sınıra yaklaşınca hemen bakmaya başlıyorlar. Nereye? Hayırdır? Ne oldu? Aldın başını gidiyorsun diyerekten hemen kızıyorlar.
+
+35
+00:08:42,464 --> 00:08:52,304
+Demek ki bir noktanın iç noktası olması, yani bir bölgenin içinde bir iç noktadan bahsetmeniz sizin.
+
+36
+00:08:52,724 --> 00:08:54,864
+Efendime söyleyeyim ne anlama gelir?
+
+37
+00:08:56,384 --> 00:08:59,244
+Şimdi bunu konuşarak başlayacağız.
+
+38
+00:09:00,744 --> 00:09:03,984
+İşte şu an saatin bir olmasını bekliyorum.
+
+39
+00:09:04,124 --> 00:09:07,044
+Bunlar geçen dersten öğrendiklerimizle.
+
+40
+00:09:14,868 --> 00:09:29,108
+Yok [öğrenci]'ciğim, öyle olmaz ama kayıttan. Olmaz öyle. Yani ben alacağım, başımı anlatacağım, size başka derse gideceksiniz. O olmaz. Güzel bir davranış olmaz [öğrenci]'ciğim. Anladım. Teşekkür ediyorum nazik teklifiniz için.
+
+41
+00:09:30,008 --> 00:09:35,567
+Evet, tamam mıyız? Şu an saat 13. Hemen başlıyorum. Neden işte geç kalmayalım derste diye.
+
+42
+00:09:35,567 --> 00:09:39,408
+Şimdi iç nokta ne demek? Sizin bir bahçeniz var.
+
+43
+00:09:39,759 --> 00:10:00,000
+Ve bunun içinde herhangi bir noktanız var. Bu noktanın küçücük komşuluğunu düşün. Yani hani aura diye böyle konuşuluyor ya işte böyle yeni trend kelimeler var. Yani böyle bizim çevremizdeki minik alan gibi. Hani bunun bir komşuluk civarından bahsediyorsunuz. Sanki bir epsilon yarışı.
+
+44
+00:10:00,000 --> 00:10:17,520
+Kısaplı bir çember varmış, hayali bir çember varmış gibi düşünüyoruz bizim orada. Eğer bu noktanın bu çevresindeki yakın civarı ile birlikte bu nokta bu bölgenin içindeyse bu noktaya biz iç nokta diyoruz.
+
+45
+00:10:28,000 --> 00:10:32,320
+Sınır nokta ya da sınır nokta diyeceğiz sevgili arkadaşlar.
+
+46
+00:10:33,160 --> 00:10:43,360
+Eğer bir nokta sadece iç noktalardan oluşuyor, sınır noktaları hiç yoksa böyle bir bölgeye açık bölge diyeceğiz.
+
+47
+00:10:43,780 --> 00:10:53,259
+Eğer bu bölgeye bir de sınır noktaları ilave edersek bu bölge artık kapalı bir bölge haline gelecek.
+
+48
+00:10:53,259 --> 00:10:56,000
+Oldukça basit bir tanı.
+
+49
+00:10:56,000 --> 00:11:06,379
+Hanım, yani hani normalde de hani böyle böyle biliyor musun falan diye birisi sana anlatsa, sen de dersin ki tabii oğlum anladım yani bunda anlaşılmadık, ne var dersin.
+
+50
+00:11:06,379 --> 00:11:18,759
+Şimdi açık ve kapalı bölge ve iç ve sınır nokta kavramlarını geçtikten sonra, efendime söyleyeyim, şimdi sınavda bize sorulabilecek soruları konuşmaya sıra geldik.
+
+51
+00:11:19,316 --> 00:11:24,875
+Bu sorular bize nasıl sorulabilir? Bakın hemen böyle gibi. Mesela sınavda böyle bir soru gelebilir.
+
+52
+00:11:24,875 --> 00:11:37,956
+Z eşittir. Bir bölü kök x'ye artı elen 9 eksi x kare eksi y kare diyor ki bize fonksiyonun tanım bölgesini bulunuz.
+
+53
+00:11:38,316 --> 00:11:45,776
+Yani burada sizin fonksiyonunuz şuradaki gibi bir fonksiyon, şuradaki kırmızı bölgeyi bize...
+
+54
+00:11:45,775 --> 00:11:56,456
+işaretlemeniz veya ifade etmeniz gerekiyor. Şimdi bu soruyu şöyle ele alabilirsiniz. Önce mesela bu sarı ortak olsun.
+
+55
+00:11:57,139 --> 00:12:19,859
+Bu da kırmızı ortak olsun. İki ortak beraber bir iş yapacaklar. Şimdi herkes kendi yapabilirliğini ortaya koyuyor. Sarı olan ortak, yani şu birinci ortak diyor ki, ben diyor asla ve kat a sıfır olamam. Çünkü paydadayım. Bu benim değişmezim diyor.
+
+56
+00:12:20,416 --> 00:12:30,816
+Ve aynı zamanda da diyor, kökün içinde olduğum için negatif de olamam, pozitif kalma zorunluluğum var diyor.
+
+57
+00:12:32,244 --> 00:12:40,264
+Bu da ona diyor ki, o zaman sen hangi bölgelerde çalışıyorsun? Biz de bunu ifade et diyor.
+
+58
+00:12:40,264 --> 00:12:52,903
+Bu diyor ki, X'in sıfır olduğu veya Y'nin sıfır olduğu bölgeler bana uymaz. Ben oralara dokunamam. Cıs bana alerji yapıyor diyor.
+
+59
+00:12:53,491 --> 00:13:01,851
+Ve de diyor, ikisinin çarpımı pozitif olan, yani ikisi de ayrı ayrı pozitif olan sayılar benim kabulümdür.
+
+60
+00:13:02,191 --> 00:13:08,291
+Veya ikisinin çarpımı pozitif olan, yani ayrı ayrı negatif sayılar benim kabulümdür.
+
+61
+00:13:08,731 --> 00:13:19,871
+Şu bölgelerde seninle görüşebilirim ama bu bölgelerde ben görüşemiyorum, alerji yapıyor, oralara giremiyorum, virüs var diyor.
+
+62
+00:13:20,692 --> 00:13:35,292
+Şimdi kırmızı olan ortak da diyor ki, ben de diyor, biliyorsunuz diyor, elen fonksiyonuyum ve dolayısıyla benim tanımlı olduğum yer de başka bir yerdir diyor.
+
+63
+00:13:35,891 --> 00:13:45,331
+Yani diyor ki, benim de asla ve kat a, şunu kırmızı kalemle yapalım, benim de diyor asla ve kat a diyor.
+
+64
+00:13:49,683 --> 00:14:15,944
+Sıfır olma durumum söz konusu olamaz. Ben de diyor, elenim yani diyor. Yani sen sıfır olabiliyorsun da ben olacağım mı? Ben de olamam diyor. Ondan sonra diyor, efendime söyleyeyim. Benim de diyor yine elen olduğum için senin gibi diyor aynı benim de diyor lütfen. Yani bir tek kendinde var zannetme. Ben de diyor pozitif olmak zorundayım diyor. Bir de ayrıyetten ne olması gerekiyor? Dikkat ederseniz.
+
+65
+00:14:16,851 --> 00:14:31,851
+Dikkat ederseniz. Bir de, içinin herhangi bir şey olmasına gerek var mı? Yok, başka bir şeye gerek yok. Benim de diyor, bunlar kurallarımızdır diyor. Yani, kısacası, kardeşim diyor, ben...
+
+66
+00:14:31,919 --> 00:14:47,399
+Eğer diyor x kare artı y kare bir üç yarı çaplı çember gösterecekse ben ona değemem diyor. Ve de diyor x kare artı y kare üç yarı çaplı bir çemberse şayet diyor ben diyor onun içinde kalmak mecburiyetindeyim diyor.
+
+67
+00:14:47,764 --> 00:14:58,703
+O da ona diyor ki, peki sen neredesin? Bak ben açık açık kendimi nasıl ifade ettim? Sen de Allah'a sen bir ifade et kendini, saçma sapan konuşuyorsun diyor, ben anlayamadım diyor.
+
+68
+00:14:59,344 --> 00:15:11,663
+Şimdi bu da diyor ki, mesela sayı eksene şöyle verilirse eğer, ben üç yarı çaplı bir çember olaraktan, nokta nokta nokta çizilirim.
+
+69
+00:15:12,500 --> 00:15:16,260
+Ve bu çemberin içinde kalabilirim ancak ve ancak diyor.
+
+70
+00:15:16,260 --> 00:15:25,540
+O zaman bunların ikisi birden ortak iş yapacak olurlarsa bizim tarayacağımız bölge neresi olacaktır?
+
+71
+00:15:25,900 --> 00:15:39,640
+Sonuç ikisinin kesişim kümesini almanız gerekir ve bizim bölgemiz, buralar değmesin, değmesin, değmesin, değmesin.
+
+72
+00:15:40,436 --> 00:15:41,516
+Değmesin.
+
+73
+00:15:42,696 --> 00:15:44,336
+Sadece buralardır.
+
+74
+00:15:45,196 --> 00:15:46,296
+Anlaştık mı acaba?
+
+75
+00:15:47,056 --> 00:15:48,735
+Tamam mıyız sevgili gençler?
+
+76
+00:15:54,163 --> 00:16:10,524
+Tamamız değil mi? Evet, böyle size soru sorulur mu? Sorulur arkadaşlar. Dikkatli olunuz. Böyle soru sorulur. Her ikisinin birden, efendime söyleyeyim, sağladığı bölgeden bahsetmek durumundayız. Böyle bir durumumuz var.
+
+77
+00:16:11,184 --> 00:16:19,084
+Hocam, çizdiğimiz bölge en son kesişimi çizdik ya, aslında çizdiğimiz birinci grafiğe eşit olmuyor mu?
+
+78
+00:16:20,184 --> 00:16:21,724
+Sizce birinci grafiğe mi eşit?
+
+79
+00:16:22,707 --> 00:16:27,747
+Yani şekli değişik ama bölgeler aynı değil mi? Bana öyle geldi ama.
+
+80
+00:16:27,907 --> 00:16:33,387
+Yanlış gelmiş size. Buralar var mı bizde yavrum? Var mı çocuğun buraları?
+
+81
+00:16:33,407 --> 00:16:34,907
+Tamam, tamam. Orada sonsuz.
+
+82
+00:16:34,907 --> 00:16:41,447
+Çok ödeylediğiniz fark var. Bunu sınavda sorarlar ve oraları da işaretlerseniz sorunuz yanlış olur.
+
+83
+00:16:42,067 --> 00:16:43,527
+Tamam hocam. Teşekkürler.
+
+84
+00:16:43,767 --> 00:16:44,387
+Estağfurullah.
+
+85
+00:16:45,460 --> 00:16:59,300
+Burayı tamamlayalım şöyle. Evet, tahtayı temizleyeceğim diye. Bu çıkmış sorudur, haberiniz olsun böyle soru gelir. Tahtayı temizleyeceğim sorusu olan var mıdır? Hemen bir sonraki soruya geçiyorum. Evet.
+
+86
+00:17:03,796 --> 00:17:11,336
+İkinci sorumuz, şurada gösterilen soru. Derhal çizmeye başlayalım. Tekrar annotate'i açtım.
+
+87
+00:17:12,036 --> 00:17:14,536
+Üst katı sarı kalemle gösteriyorum.
+
+88
+00:17:16,635 --> 00:17:30,476
+Üst kattaki fonksiyon diyor ki, ben kare kökün içinde olduğum için büyük sıfır olacağım ama eşit sıfır da olabilirim çünkü pay kısmında yer alıyorum diyor.
+
+89
+00:17:31,059 --> 00:17:45,279
+Alt kattaki sarı fonksiyon ise biraz sıkıntılı. Böyle alerjileri var, böyle aman, böyle yürüyemiyor, şey yapamıyor, sıkıntısı var yani. Bu diyor ki, ay diyor ben elem fonksiyonuyum. Evet.
+
+90
+00:17:45,844 --> 00:18:01,644
+Dolayısıyla diyor, benim iç tarafım muhakkak sıfırdan büyük olmak zorunda. Bir de diyor, üzerinize afiyet. Ben paydada olduğum için diyor, kendimin sıfırdan farklı olması lazım çünkü ben paydadayım diyor.
+
+91
+00:18:11,183 --> 00:18:33,864
+Benim içim asla ve asla bir olamaz diyor. Biz de diyoruz ki neden? Çünkü eğer içim bir olursa, benim içim bir olursa, o zaman ben sıfıra eşit olurum çünkü diyor. Bunun için de içi bir olamaz. Burayı anladık mı?
+
+92
+00:18:35,796 --> 00:18:54,316
+Bakın bunlar sorulacak size. Anlamayan var mı burayı? Sonradan, geçtikten sonra ben niye böyle böyle olduğunu anlamadım demeyiniz. Anlamayan var mı? Şu yeşil kalemle yazdığımın niçin bir olmaması gerektiğini? Çünkü tekrar yazıyorum. Elen bir.
+
+93
+00:18:54,804 --> 00:19:15,684
+Sıfır idi. Bunun komple sıfırdan farklı olabilmesi için, içinin de birden farklı olması lazım. Burası anlaşıldı mı? Bak bastıra bastıra söylüyorum. Burası çok önemlidir. Sınavda böyle bir soru pek hala gelir. 5 puanlık soru olarak gayet münasip bir sorudur. Yani sınav süresi bakımından da.
+
+94
+00:19:15,684 --> 00:19:21,984
+O zaman biz önce kırmızı bölgemizi çizelim. Kırmızı bölge bir paraboldür.
+
+95
+00:19:22,996 --> 00:19:26,955
+Parabolü, önce bir eksen sistemi çizeyim.
+
+96
+00:19:32,531 --> 00:19:58,751
+Bu eksen sisteminde y kare 4x, yani y kare eşit 4x parabolünü öncelikle çizdim. Bu y kare eşittir 4x parabolüdür. Şimdi bunun sıfırdan büyük mü, küçük mü? Yani ya bunun içine bak, gidip odanın öbür tarafında dolaşıp dolaşıp son anda buraya gelme. Buraya bak, bunlar önemli. Bunlar sınavda sana sorulacak. Yüzde 1 milyon.
+
+97
+00:20:00,000 --> 00:20:05,399
+Şimdi bunun iç tarafına bakarsanız burayı mı taramalıyım yoksa dışarıyı mı taramalıyım?
+
+98
+00:20:05,819 --> 00:20:11,940
+Bunu nasıl yapıyorduk? Burada bir tane nokta veriyorsunuz. Hayali bir nokta. Misal bir sıfır noktası.
+
+99
+00:20:12,720 --> 00:20:18,859
+Burada 4x eksi y kare formülünde bunu yerine koyuyorsunuz.
+
+100
+00:20:18,859 --> 00:20:22,700
+Tamam mı? Dolayısıyla...
+
+101
+00:20:22,996 --> 00:20:32,016
+Bu sağlıyor mu? Evet, bu nokta bu eşitsizliği sağlıyor. Tabii bunu burada bırakacak değiliz. Burayı anlamayan var mı? Siliyorum.
+
+102
+00:20:37,332 --> 00:20:55,812
+Noktayı da sildim. Çünkü bu noktanın hiçbir ehemliyeti yok. Ben orada kalkıp başka bir noktada verebilirdim. Ben hani bunu vermeye uygun gördüm. Demek ki o zaman şu bölgemiz bizim, şunun ifade ettiği bölgenin ta kendisi oluyor. O zaman demek ki şu ifadeyi de sileceğim.
+
+103
+00:21:01,364 --> 00:21:19,683
+Burada çalışıyorum dediği yer, bu parabolün sonsuza kadar, bak bunu sınırlı düşünme, bu parabol kolları açılarak sonsuza doğru uzanıyor. O parabolün içi de birinci ortağın, yani pi fonksiyonunun çalıştığı güzergahtır.
+
+104
+00:21:19,683 --> 00:21:29,364
+İkinci güzergah hakkında konuşuyoruz, buna da sarı güzergah diyelim, yahut sarı ortak diyelim. Sarı ortak hakkında...
+
+105
+00:21:29,364 --> 00:21:45,564
+konusunda konuşursak, burası, burası, bir yarı çaplı bir çemberin, yani şurası için ne söyleyebiliriz? Bir büyüktür, x kare artı y kare, yani bir x kare artı y kareden daha büyük gibi düşüneceğiz.
+
+106
+00:21:46,183 --> 00:21:56,203
+Dolayısıyla, yani birden daha küçük olan noktaları alacağız ve eşitlik var mı? Hayır, yok. O zaman nokta cık cık cık çizmemiz lazım.
+
+107
+00:21:57,044 --> 00:22:14,384
+Evet, bir yarı çaplı bir çemberi çizdim. Bu bir yarı çaplı bir çember. Bunun iç tarafını bize anlatıyor. Ve de aşağıda da diyor ki, bu bunu götürürse eğer, x kare artı y kare de sıfırdan farklı diyor.
+
+108
+00:22:21,491 --> 00:22:40,491
+Bu duruma iştirak etmemesi anlamına geliyor. Yani şurası değmesin orjin diyor. Sarı ortak diyor ki orjin varsa ben yokum haberiniz olsun. Beni orjinden lütfen muhatap etmeyiniz diyor. Bu durumda o zaman sizin sonucunuz...
+
+109
+00:22:52,211 --> 00:23:18,271
+Burası yok. Şurası yok. Burası yok. Kesin. Evet. Şuralar nokta cık cık. Nokta cık cık. Burası kapalı ve şu kısım olarak karşımıza çıkıyor. Aynı bölge değildir. Bu sonsuza doğru devam ediyor. Burada burası yok. Tamam mı? Demin soran hanım kızı için söylüyorum özellikle. Tamam mıdır efendim?
+
+110
+00:23:19,059 --> 00:23:24,139
+Bunlar sınavda gelir sevgili arkadaşlar. Çok çok önemlidir.
+
+111
+00:23:25,099 --> 00:23:29,659
+Evet, hemen bir sonraki soruya geçiyorum. Sorunuz yoksa eğer?
+
+112
+00:23:31,519 --> 00:23:34,939
+Hemen şu soru için konuşmaya başlıyorum.
+
+113
+00:23:35,639 --> 00:23:40,499
+Kalemimi aldım elime, bu soru için konuşuyorum. Bu soru şurada hemen yazıyorum.
+
+114
+00:23:45,440 --> 00:23:58,240
+x kare artı y kare bölü 4 artı ark sekant x kare artı y kare şeklinde yazdık.
+
+115
+00:23:58,920 --> 00:24:06,500
+Ve dolayısıyla ilk ortağımız sarı olsun, öbürküsü ise kırmızı olsun.
+
+116
+00:24:07,340 --> 00:24:10,600
+Şimdi bu durumda sarı hakkında konuşmak istiyorum.
+
+117
+00:24:11,155 --> 00:24:27,836
+Şimdi burada ne diyor? M eşittir, arc sinüs, x kare artı y kare bölü 4 yazabilirsiniz. Bu sinüs M eşittir, x kare artı y kare bölü 4 demektir.
+
+118
+00:24:37,011 --> 00:24:50,211
+x kare artı y kare bölü 4'ün, eksi 1 artı 1 arasında olduğu anlamına gelir. Burayı anlamayan var mıdır? Bizim burada anlamlı söyleyebileceğimiz tek şey,
+
+119
+00:24:55,284 --> 00:25:18,124
+X kare artı Y karenin dörtten küçük olduğudur. Diyebilirsin ki bana. Ama hocam, eksi dörtten de büyükmüş, onu niye almadınız? Ben de ona diyorum ki o zaman. Ya iki tane kare zaten eksi dörtten büyüktür. Yani bu bir kıymeti harbiyesi yok ki. Mesela diyorsun ki ben eksi dört kilodan daha ağırım.
+
+120
+00:25:18,516 --> 00:25:41,556
+Yani zaten hepimiz eksi 4 kilodan daha ağırız. Veya boyumuz eksi 4 santimden daha büyüktür. Zaten herkesin boyu pozitif. Bu da kareler toplamı. Yani kareler toplamı zaten eksi 4 olamaz ki eksi 4'ten büyük olmasının bir kıymeti harbiyesi olsun. Anladınız mı? Tamam mı?
+
+121
+00:25:43,028 --> 00:25:57,008
+Şimdi diğeri hakkında konuşalım. Kırmızı ortak için konuşuyoruz. Bu da diyor ki n eşittir. Arc, sekant, x kare artı y kareyim ben diyor.
+
+122
+00:25:57,008 --> 00:26:05,048
+Yani sekant n, x kare artı y karedir diye söyleyebilirim.
+
+123
+00:26:06,259 --> 00:26:13,220
+Buradan da kosünüs n'nin 1 bölü x kare artı y kare olduğunu söyleyebilirim.
+
+124
+00:26:13,220 --> 00:26:22,220
+O zaman kosünüs n'iniz eksi 1 ile artı 1 arasındaysa 1 bölü x kare artı y kareniz,
+
+125
+00:26:22,708 --> 00:26:38,768
+Birden küçük ve eksi birden büyük olduğu için, burada da yine anlamlı olan ifade pozitif olan uç için tezahür eder. Demek ki bir tane bu anlamlıdır. Bu sarı ortak da bize bunu söylüyor.
+
+126
+00:26:39,731 --> 00:26:45,331
+Yani kısacası şunu söylüyor aslında, x kare artı y kare, küçüktür dördü söylüyor.
+
+127
+00:26:46,111 --> 00:26:56,731
+Kurallarımızın bir tanesi budur, diğer kural da budur. İkisini birden alırsanız, şu kural, iki yarı çaplı çemberin içini, şu kural ise...
+
+128
+00:26:56,751 --> 00:27:04,471
+Bir yarı çaplı çemberin dışını gösteriyor. İkisinin ara kesiti gördüğünüz gibi susamlı simit.
+
+129
+00:27:04,791 --> 00:27:08,011
+Hocam, burada bastıra bastıra mı çiziyoruz çemberleri?
+
+130
+00:27:08,431 --> 00:27:15,911
+Bastıra bastıra çiziyoruz. Çünkü buralarda eşitlik var. Eğer eşitlik olmasaydı nokta cık cık çizecektik.
+
+131
+00:27:16,271 --> 00:27:23,211
+Bu sınavda bize muhakkak sorulacak bir özellik olarak karşımıza çıkacaktı sevgili gençler.
+
+132
+00:27:23,211 --> 00:27:24,751
+Burası tamam mıdır acaba?
+
+133
+00:27:24,751 --> 00:27:28,751
+Tamam mıyız? Sorusu olan var mıdır?
+
+134
+00:27:30,259 --> 00:27:37,360
+Biraz tempolu bir vaziyette gidiyoruz. Çünkü dediğim gibi yarın 3 saat dersimiz, efendime söyleyeyim.
+
+135
+00:27:37,539 --> 00:27:42,019
+Ve şöyle söyleyeyim, hocam bunlar sınava dahil mi derseniz, evet dahil.
+
+136
+00:27:42,339 --> 00:27:48,579
+Hocam limitler, evet limitler dahil mi derseniz, limitler de sınava dahil.
+
+137
+00:27:49,019 --> 00:27:54,140
+Süreklilik dahil mi derseniz, süreklilik de sınava dahil ve haftaya da ders yok.
+
+138
+00:27:54,140 --> 00:27:57,220
+Onun için tempolu gitme zorunluluğumuz var.
+
+139
+00:27:57,360 --> 00:27:58,240
+Zaten şu an.
+
+140
+00:27:58,259 --> 00:28:01,880
+Ne kadar tempolu gittiğimizi herkes zaten biliyor.
+
+141
+00:28:03,380 --> 00:28:20,020
+Evet, hemen bir sonraki sayfamıza geçtik. Bu föyümüz 8 sayfa, 4. sayfamıza geldik. Burada iki değişkenli fonksiyonların grafikleri, seviye eğrileri ve konturları adını verdiğimiz eğrilerden bahsedeceğiz.
+
+142
+00:28:20,020 --> 00:28:31,380
+Ben her dönem şunu anlatıyorum. İşte biz küçükken Cüneyt Arkın'ın filmleri vardı. O böyle bir Bizans Kalesi gibi bir kaleyi böyle bir şey yapıyordu.
+
+143
+00:28:31,380 --> 00:28:59,360
+yapardı, giderdi. İşte orada da bir takım, işte karşı tarafın askerleri falan var. Bunlar böyle bir şeyle savaş, şey, ne dene ola, kılıçlarla haştuşt falan böyle bir karşılıklı mücadele ederler. Ondan sonra arkada da bir tane böyle bir şamdan vardır. Burası önemli. Efendime söyleyeyim, böyle bir şamdan vardır. Efendime söyleyeyim, o böyle bir kılıç darbesi vurur böyle. Tamam mı, burada bir tane
+
+144
+00:28:59,380 --> 00:29:07,100
+Yine mum var. Vurduktan sonra mum yine aynı durumda durur ve ondan sonra şuradaki işte karşı tarafın askeri de böyle güler.
+
+145
+00:29:08,300 --> 00:29:16,560
+Mumu bile kesemedim beceriksiz falan gibisine böyle güler. Ondan sonra Cüneyt Arkın da şöyle şunu hafifçe tık diye bir vurur.
+
+146
+00:29:16,700 --> 00:29:27,340
+Böyle meğerse o kadar hızlı kesmiştir ki o. Böyle mum efendim kesildiği halde aynı yerde kalmıştır yani. Böyle bir şey.
+
+147
+00:29:27,380 --> 00:29:55,340
+Şimdi diyeceksiniz ki, hocam bunu şimdi bize neden anlattınız? Zaten süremiz kısıtlı. Arkadaşım burayı güzel anlaman lazım çünkü. Şimdi burada bir yüzeyin kontur eğrisi demek, o yüzeye yatay bir kesit attığınız zaman yüzeyin üzerinde meydana gelen çiziktir. Bu çiziğe siz yüzeyin kontur eğrisi dersiniz. Tamam mı? Bu daha aklında artık mümkün.
+
+148
+00:29:55,380 --> 00:30:11,260
+Bir şey unutmak istesen de artık şey olmaz. Şimdi bunun aşağıya, yani bastığımız yere, ki bastığımız yerin matematikteki anlamı OX'ye de, bu böyle tangır tungur tangır tungur düştüğünüz düşün, tamam mı? Buna da seviye eğrisi deriz.
+
+149
+00:30:12,660 --> 00:30:40,599
+Şuradaki şekle bakarsanız, mesela bu böyle bir ters kapatılmış kase gibi, ki biz buna paraboloid diyoruz, bir yüzey. Bu yüzeyin böyle bir fışt diye buradan böyle kestiğimi düşün. Gördüğün gibi burada bir kontur eğrisi oldu. Aha da şu kırmızı eğri. Biraz daha aşağıdan fışt diye kestiğimi düşün. Şurada bir tane daha oldu. Bu da bir kontur eğrisidir. Fışt diye bir tane daha kestiğimi düşün. Bir tane de burada oldu. Şimdi bunlar böyle tıngır tıngır tıngır tıngır.
+
+150
+00:30:40,660 --> 00:30:52,428
+aşağı doğru yuvarlasalar, yere düşseler bunlara bir seviye eğrisi diyoruz. Sen seviye eğrilerini daha önce gördün mü? Bana deme ki, hocam ilk defa görüyorum, hiç seviye eğrisi...
+
+151
+00:30:55,859 --> 00:31:14,539
+Bilmiyorum desen, ben de derim ki, vallahi de gördün, unuttun, hatırlamıyorsun. Sen de dersen ki, hayır hocam ben görmedim. Nasıl görmedim derim ben de sana. Hatırlarsan ilkokulda böyle dağları, tepeleri gösteren böyle atlaslarımızın bazı sayfaları vardı böyle.
+
+152
+00:31:15,923 --> 00:31:22,624
+Şöyle, şöyle, şöyle, mesela, aa işte diyordum ki dağın en tepesi burasıymış yahu falan diyordum.
+
+153
+00:31:23,064 --> 00:31:32,584
+Yahu da aynı şey denizlerin içerisinde mesela, böyle yazılıyordu böyle. Bunlara ne harita diyorduk biz? Topografik harita diyorduk.
+
+154
+00:31:32,584 --> 00:31:39,944
+Ve normalde 3 boyutlu olan cisimleri aslında 2 boyuta haritalama yöntemiydi.
+
+155
+00:31:43,923 --> 00:31:55,524
+Böyle kesit kesit kesit aldık ve bunları da düz bir beyaz kağıdın üzerine iz düşürmek suretiyle topografik haritasını oluşturduk gibi düşünebilirsiniz.
+
+156
+00:31:55,984 --> 00:32:03,264
+Diyeceksin ki, hocam bunun ne gibi bize bir hikmeti var ki, neyi öğreniyoruz biz bunu diyebilirsin sen yani.
+
+157
+00:32:03,264 --> 00:32:11,923
+Ben de sana derim ki, bak yavrum, şimdi biz normalde mesela y eşittir, fx olan bütün eğitimlerimiz,
+
+158
+00:32:11,923 --> 00:32:30,884
+Zaten çizemiyorduk. Çizebilmek için çok uğraşıyorduk. Mesela atıyorum, şöyle bir şey içinde 5 bölü 2'si olsa, şurada da bir sinüs olsa, burada da bir 9 bölü 3 olsa, hadi bakalım çiz yani. Bu bile zor. Kaldı ki iki değişken olduğu zaman bütün şekilleri çizmemiz olanaksız.
+
+159
+00:32:39,923 --> 00:32:54,504
+Feneri nerede diye böyle evde arıyorsun ya, bunun gibi çizemediğin bir şekil için, el yordamınla buna dokunduğunda, yani kesitler aldığında, çemberler elde ediyorsan, demek ki bu yuvarlak bir şey.
+
+160
+00:32:54,844 --> 00:33:00,864
+Elipsler elde ediyorsan, demek ki daha böyle bir daralarak yukarı doğru giden bir şey.
+
+161
+00:33:07,923 --> 00:33:19,744
+Dur, kafam karıştı, masam olgu, sandalyemi, dizimi vurdum, gibi eşyaları yoklayarak çevrende ne olduğunu algılamaya benziyor.
+
+162
+00:33:20,144 --> 00:33:25,844
+Bununla ilgili soru gelir mi sevgili arkadaşlar? Bununla ilgili sorular gelecek ama daha erken.
+
+163
+00:33:25,844 --> 00:33:34,923
+İlk sınava belki yetişir, belki yetişmez ama finalde muhakkak grad konusunla birlikte bunu birlikte bize soracaklar.
+
+164
+00:33:35,923 --> 00:33:41,224
+Derslerimizde bu konuyla ilgili çıkmış sınav sorularını zaten çözeceğim.
+
+165
+00:33:41,683 --> 00:33:44,844
+Demek ki efeksiyeyi çizmek her zaman kolay değil.
+
+166
+00:33:44,844 --> 00:33:54,064
+Biz de kesitler almak suretiyle kontrol eğrilerini ve bunları aşağı iz düşürerek de seviye eğrilerini konuşabiliyormuşuz.
+
+167
+00:33:54,384 --> 00:33:57,384
+O zaman efeksiye eşittir böyle bir eğri.
+
+168
+00:33:57,624 --> 00:34:03,923
+Bir kere şunun için sevgili sınıfım en önemli bilmeniz gereken şeyi söylüyor.
+
+169
+00:34:03,923 --> 00:34:31,923
+Burada efiksiyenin göbek adı z'dir. Yani bu yüzey z eşittir. 100 eksi x kare eksi y kare şeklindeki bir ifadedir. Ve siz kontur eğrisini bulabilmeniz için bunun yerine sayılar koymalısınız. Burada ne diyor mesela? Efiksiyen eşit 0. Allah aşkına bu ne demek? Z yerine 0 koy demek. Bu ne demek? Z yerine 51 koy demek. Bu ne demek? Z yerine...
+
+170
+00:34:31,923 --> 00:34:37,704
+75 koy demek. Dikkat ederseniz bunları sırasınla yerlerine yazarsanız.
+
+171
+00:34:42,804 --> 00:34:58,704
+Neler bulursunuz? Hocam çemberler buluyorum. Tamam çemberler. Niye sesimi böyle yapıyorum? Çünkü boğazım gerçekten çok ağrıyor. Normalde öğrenciyi daha güzel bir sesle konuşturuyordum. Ama maalesef karga gibi çıkıyor sesim. Yapacak bir şey yok.
+
+172
+00:34:58,704 --> 00:35:01,704
+Şimdi burası...
+
+173
+00:35:02,516 --> 00:35:05,976
+Gerçi karga kadar da kötü değil, kendime çok haksızlık yapmayayım.
+
+174
+00:35:06,416 --> 00:35:11,076
+Efendime söyleyeyim, bunu bu şekil yazdığımızda bu 7 yarı çaplı bir çember.
+
+175
+00:35:11,336 --> 00:35:13,476
+Yarı çapı 7 olan bir çember.
+
+176
+00:35:13,916 --> 00:35:17,356
+Bunu yaptığımız zaman yarı çapı 5 olan bir çember.
+
+177
+00:35:18,096 --> 00:35:22,615
+Teşekkür ederim [öğrenci], çok naziksin, güzel canım benim yavrum.
+
+178
+00:35:23,176 --> 00:35:27,436
+Evet, bu da 10 yarı çaplı bir çember olmak üzere yazdık.
+
+179
+00:35:29,172 --> 00:35:32,011
+Hocam, şimdi bu bilginin ne gibi bir anlamı var ki?
+
+180
+00:35:32,011 --> 00:35:57,131
+Şimdi bu şu demek canım benim. Z eşittir 51 demek, yeryüzünden 51 santim yukarıda kestiğim zamanki kesit eğrisi. Z eşittir 75 demek, yeryüzünden 75 santim yukarıdaki kesit eğrisi. Z eşittir 0 demekse, tam yeryüzünden kestiğim zamanki kesit eğrisi anlamına gelir. E tamam onu anladım.
+
+181
+00:35:57,172 --> 00:36:23,492
+Demek ki ben ne kadar yukarıdan kesiyorsam, çemberlerin yarı çapları da o kadar küçülüyor bak dikkat edersen. Demek ki bu şekil yukarı doğru daralan bir şekil diyebiliriz sevgili arkadaşlar. Bu yöntemi bilmemiz bütün yüzeyler için bir öngörü geliştirebileceğimiz anlamını da vermez. Kimse de kalkıp da hayal görmesin. Anlaştık mı? Burası tamam mıdır?
+
+182
+00:36:24,019 --> 00:36:39,740
+Tamam mı? Sorusu olan var mı burada? Bu sayfayı da geçiyorum. Gördüğünüz gibi burada bunlar. Bunların aşağıdaki hikayesi de, efendime söyleyeyim, bunların kontur eğrileri ve aşağı düşmüş halleri de seviye eğrisi olarak söyleyebiliriz.
+
+183
+00:36:39,740 --> 00:36:52,019
+Evet, 3 değişkenli fonksiyon hikayesine geldiğimiz zaman, sevgili arkadaşlar, bakın ne yazmışız buraya. 3 değişkenli, bakın tek değişken olduğu zaman dersin başı...
+
+184
+00:36:52,019 --> 00:37:16,300
+Ne söyledik? Burada bir tanım aralığı vardı. İki değişken olduğu zaman bizim neyimiz vardı? Bir tanım bölgemiz, bahçe gibi bir şeyimiz vardı. Eğer dört boyuta gelince burada maalesef, tamam mı? Ne yapacağımı bilmiyorum ve böyle bakıyorum çünkü dört boyutu kafa almıyor.
+
+185
+00:37:17,268 --> 00:37:30,268
+Tamam mı? Dört boyutu bizim kafamız almıyor. Ancak ve ancak şunu söyleyebilirim ki bu burada tanığım bölgesi ise bu burada tanığım...
+
+186
+00:37:30,867 --> 00:37:54,088
+Aralığı ise, bunları ben tamam, kafa aldı, bunu kafa aldı, bunları kafa aldı, bunu da kafa aldı, bu R'de, bu R küpte, özür dilerim, bu R karede, bu R küpte, çünkü burası X ve Y, burası X, Y, Z, ama R üzeri 4'te üzgünüm, şekil yok. La şok. Evet.
+
+187
+00:37:54,708 --> 00:38:08,728
+O zaman ben sadece şunu söyleyebilirim. Burada aralıktı abi, burada tanım bölgesiydi. Artık burada bir bulut gibi tanım kümesi.
+
+188
+00:38:09,619 --> 00:38:30,279
+Yahut tanım bulutu bir hacim oluşturur. Anlaştık mı? Hacmi olan bir cisim oluşturur sevgili arkadaşlar. Şekil hakkında hiçbir şey söyleyemem. Sadece bölgenin daha da tombişleştiğini düşünerekten bunun bir küma haline geldiğini söyleyebilirim.
+
+189
+00:38:30,279 --> 00:38:37,179
+Peki, 3 değişkenli fonksiyon o zaman 3 boyutlu hacimlerdir dedik. Bakın bu burada yazıyor.
+
+190
+00:38:37,619 --> 00:39:04,379
+söylediklerimin hepsi. Oysa ki Z eşittir, iki değişkenli tanım kümeleri düzlemsel bölgelerde, tek değişkenli de tanım aralığıydı. Tamam. Peki o zaman burada başka ne söyleyebiliriz? O zaman bizim W eşittir, F, X, Y, Z dediğimiz herhangi bir ifade için, efendime söyleyeyim, mesela diyebilir ki bana, mesela şöyle diyebilir bana.
+
+191
+00:39:04,719 --> 00:39:13,819
+F, X, Y, Z eşittir. X kare. Sınavda böyle sorular gelebilir testte, haberiniz olsun. Tamam mı?
+
+192
+00:39:32,692 --> 00:39:46,611
+seviye eğrisi değil artık, seviye yüzeyini bulunuz. Aşağıdakilerden hangisidir der ve aşağıda da şöyle bir şey görürsün.
+
+193
+00:39:52,436 --> 00:39:59,056
+Yani, 10 yarı çaplı küre.
+
+194
+00:40:00,000 --> 00:40:24,179
+Aladınız mı? Çünkü neden? Yerine değerini koyuyorsunuz. Tıpkı demin Z'nin yerine 51 koymuştuk. Z'nin yerine 75 koymuştuk. Z'nin yerine 0 koymuştuk. Burada da W eşit 10 için elde edilen seviye yüzeyini bul denildiği zaman bize Z yerine değil W yerine koymamız lazım. 10 yarı çaplı küre olduğunu söyleyebiliriz.
+
+195
+00:40:28,000 --> 00:40:41,139
+Yarı çaplı küre olacak. 50 koysam 50 yarı çaplı küre olacak. Demek ki söz konusu olan bunun seviye yüzeyleri iç içe, iç içe küreler. Tıpkı matruşka bebek gibi.
+
+196
+00:40:41,259 --> 00:40:53,239
+Hani açtım bebek çıktı, açtım bebek çıktı, açtım bebek çıktı. Bu da iç içe top gibi. Hani açtın topu ekvatorundan, ekvator çemberinden tak bir daha küçük küre çıktı.
+
+197
+00:40:56,000 --> 00:41:14,319
+İç içe küreler gibi olan küreler bu. Gördüğünüz gibi 3 değişkenli bir fonksiyonun seviye eğrisi olmazmış o zaman. Seviye yüzeyi olurmuş sevgili arkadaşlar.
+
+198
+00:41:15,399 --> 00:41:24,000
+Peki, 3 değişkenli fonksiyonlarda iç nokta kavramını nasıl vereceğiz? Mesela bunu bir sis bulutu gibi...
+
+199
+00:41:24,000 --> 00:41:40,000
+Düşünün, eğer bir nokta kendi çevresini çevreleyen böyle bir hayali sabun köpüğü gibi bir türe olarak bu büyük bulutun içinde kalıyorsa bu bölgenin iç noktasıdır.
+
+200
+00:41:52,000 --> 00:42:01,619
+Bulutun içinde, bir kısmı bu bulutun dışında kalıyorsa, o bölgenin sınır noktasıdır adını alır.
+
+201
+00:42:01,919 --> 00:42:13,439
+Yine bir bölge olduğu gibi, mesela bir patates gibi düşün bölgeyi, kabuğunla birlikte düşünürseniz kapalı bir bölgedir.
+
+202
+00:42:20,000 --> 00:42:33,379
+çavlak, sadece iç nokta gibi bırakırsanız o zaman onu bir açık bölge olarak söyleyebiliriz sevgili arkadaşlar.
+
+203
+00:42:33,480 --> 00:42:43,599
+Şu da uzaylıya benzemiş. Evet, siliyorum. Sorusu olan var mıdır? Hızla ilerliyoruz. Evet, tamam mıyız sevgili gençler?
+
+204
+00:42:44,500 --> 00:43:11,699
+Peki, şu limit faslına tabii ki geçeceğiz. Bunu devam ettirelim. Evet, silindirler ve ikinci dereceden yüzeyler. Aman hocam bunlar nedir? Şimdi, geçen derste konuşmuştuk sizinle. Bunlar ilk defa öğrendiğimiz şeyler değil. Siz şunu fark ettiniz. Bu silindirdi.
+
+205
+00:43:12,307 --> 00:43:33,135
+Ama aynı zamanda camdan sirkelediğimiz bir paspasın da silindir olduğunu idrak ettik. Sonra masanın üzerinde böyle hafif kıvırıp oynadığımız kağıdın da bir silindir olduğunu gördük. Bunlar hep silindir. Ama...
+
+206
+00:43:33,135 --> 00:43:48,175
+İlkokulda öğrendiğimiz silindirin bu silindirlerden farklı olarak bir simetri ekseni, daha doğrusu bir eksen etrafında döndürülerek olduğu için dönen silindir olduğunu, bunlar için ise dönen silindir olmadıklarını gördük.
+
+207
+00:44:01,135 --> 00:44:19,215
+Eğer buradaki ifadenin arası negatif ise şayet, o zaman bir hiperbol gösterdiğini, y kare eşittir ax veya x kare eşittir by şeklinde ise, değil mi? Efendime söyleyeyim.
+
+208
+00:44:20,224 --> 00:44:27,824
+Veyahut, efendime söyleyeyim, böyle bir parabol gösterdiğini konuşmuştuk.
+
+209
+00:44:28,324 --> 00:44:33,124
+Şimdi artık bunlara birer tane daha boyut ekleme vakti geldi.
+
+210
+00:44:33,264 --> 00:44:37,564
+Yani mesela atıyorum burada z kare bölü c kare eklesem acaba bu ne hale gelir?
+
+211
+00:44:37,564 --> 00:44:42,604
+Bu elips de artık bir boyut daha olduğu için elipsoid oldu.
+
+212
+00:44:43,064 --> 00:44:45,804
+Sonra buna işte eksili bir şey ekleyebilirim.
+
+213
+00:44:46,304 --> 00:44:47,524
+Hiperboloid olur.
+
+214
+00:44:48,224 --> 00:45:08,144
+Bir parçalı bir şey eklersem, işte tek parçalı hiperboloid, iki eksili bir şey eklersem, iki parçalı hiperboloid olur. Bunları kalkıp, şunlara mesela AZ, BZ diye eklediğim zaman, işte eliptik paraboloid veya hiperbolik paraboloid gibi çeşitli isimler alır.
+
+215
+00:45:08,144 --> 00:45:16,124
+Ki biz bu yüzeylere ikinci dereceden yüzeyler yahut genel olarak kuvvetlik yüzeyler adını veriyoruz.
+
+216
+00:45:16,224 --> 00:45:30,884
+Elipsoid dediğimiz ifadeler, bakın gördüğünüz gibi elipse şu ifadenin eklenmesinle oluşuyor ve böylelikle artık şekil bir boyut kazandığı için, yani içine böyle su koysan duracak. Bu rugby topu gibi bir şey oldu.
+
+217
+00:45:31,344 --> 00:45:43,864
+Eksenleri kestiği yerlere bakarsanız, x'i bunlara sıfır verirseniz, eksi a artı a'da, y'yi eksi b artı b'de, z'yi de artı c eksi c'de keser.
+
+218
+00:45:44,224 --> 00:45:45,664
+Siz eğer kalkıp
+
+219
+00:45:45,972 --> 00:46:09,731
+Kesit alırsanız sevgili arkadaşlar, kesit almak ne demek? Mesela z yerine 10 gibi bir değer verirseniz, burası komple bir sayı olur. Sayı olduğunda ikinci tarafa atarsınız, kısacası elips bulursunuz. Demek ki ara kesit eğrileriniz, kesit aldığınız zaman, ister yukarı doğru, ister aşağıya doğru, kesit alın hiçbir şey fark etmez.
+
+220
+00:46:13,972 --> 00:46:24,351
+Elipsler verecektir. Elipsler vereceği için, bütün kesit eğrileri elips olduğu için bu şekilde biz genel olarak elipsoid diyeceğiz.
+
+221
+00:46:25,076 --> 00:46:45,395
+Yine bunun arkasından eliptik koni kavramı var. Onun da denklemi burada. Bereket versin sınavda ihtiyacınız olduğunda buradan bakabilirsiniz. Hiçbir sıkıntı yok. Burada kesit aldığınız zaman, mesela yine C koyduğunuzda, yatay kesit aldığınızda elipslerin çıktığını görürsünüz. Bir sıkıntı yok.
+
+222
+00:46:45,395 --> 00:46:53,076
+Dikey kesit aldığınızda ise doğruların çıktığını görürsünüz. Konilerin çıktığını görürsünüz. Hatta şöyle.
+
+223
+00:46:53,076 --> 00:46:53,615
+Böyle...
+
+224
+00:46:53,684 --> 00:46:58,324
+Aldığınız zaman daha farklı eğriler de çıkıyor. Onları konuşacağız daha sonra.
+
+225
+00:46:58,864 --> 00:47:03,184
+Eliptik paraboloid denilen şeklimiz burada. Bunun karesi yoktur.
+
+226
+00:47:03,584 --> 00:47:10,984
+Burada da kesit aldığınız zaman elipsler, dikey kesit aldığınız zaman paraboller ortaya çıkacaktır.
+
+227
+00:47:11,084 --> 00:47:14,624
+Mesela bu şekil kesit aldığınızda da paraboller çıkıyor.
+
+228
+00:47:15,044 --> 00:47:17,704
+Bunun için bunun adı eliptik paraboloid.
+
+229
+00:47:17,704 --> 00:47:20,424
+Şekillerine buradan bakabilirsiniz sınavda.
+
+230
+00:47:21,684 --> 00:47:32,084
+Kraboloid yahut semer yüzeyi denilen bir yüzeyimiz daha var. Hatta eyer yüzeyi deniyor. Bu atın üstüne konulan tıpkı semere benzediği için.
+
+231
+00:47:34,643 --> 00:47:51,603
+Hatta bunun tam şurasındaki noktaya da semer noktası yahut eğer noktası deniliyor. Literatürdeki adı bu. Saddle point deniliyor. Bunlar maksimum minimum problemlerinde teferruatla inceleyeceğimiz konulardır.
+
+232
+00:47:51,603 --> 00:48:02,623
+Çünkü bu kırmızı nokta çok kandırıkçıdır arkadaşlar. Sana gelir ağlar der ki ay der ben der en aşağıda kaldım minimum noktayım şöyleyim.
+
+233
+00:48:02,643 --> 00:48:11,763
+Böyleyim dersen de dersin ki bu minimum noktaymış. Maksimum minimum probleminde bak seni nasıl kandırıyor. Halbuki bak bu civarında en yüksek noktasıdır yani.
+
+234
+00:48:12,307 --> 00:48:18,807
+Bak gördün mü? Anladın mı? Hani durumum kötü diye sana geliyor, halbuki çevresinin en iyi durumunda.
+
+235
+00:48:19,847 --> 00:48:25,647
+Veyahut geliyor böyle efeleniyor, ben diyor şöyle iyiyim, böyle iyiyim, halbuki mesela bunların en altında.
+
+236
+00:48:26,127 --> 00:48:34,747
+Maksimum minimum problemlerinde özellikle semer noktası ya da eğer noktası noktalarını maksimum minimum problemlerinde belirtmemiz lazım.
+
+237
+00:48:35,287 --> 00:48:40,307
+Bunlar sınavda gelir mi? İkvize'de tabii ki gelmez ama finalde...
+
+238
+00:48:40,307 --> 00:48:42,547
+Tünlemede, inşallah da bütünlemeye kalmayın.
+
+239
+00:48:42,987 --> 00:48:44,487
+Muhakkak çıkacaktır.
+
+240
+00:48:44,787 --> 00:48:48,707
+Yani aşağıdaki noktalar, işte SMR noktası mıdır, işte falandır, fissandır.
+
+241
+00:48:49,067 --> 00:48:51,527
+Bununla ilgili sorular sorulacaktır.
+
+242
+00:48:51,927 --> 00:48:56,807
+Yine son olarak artık şeye doğru geliyoruz.
+
+243
+00:48:57,107 --> 00:48:57,947
+Ne denir ona?
+
+244
+00:48:58,287 --> 00:49:00,667
+Limit konusuna doğru hızla geliyoruz.
+
+245
+00:49:00,667 --> 00:49:02,887
+Ve son sayfamıza geldik artık.
+
+246
+00:49:03,027 --> 00:49:08,307
+Burada da tek kanatlı ve iki kanatlı hiperboloikten...
+
+247
+00:49:08,307 --> 00:49:30,947
+bahsedeceğiz. Gördüğünüz gibi burada bu elipsoidin denkleminde tek bir tane eksi varsa basket kotasının altındaki ağ gibi olan ağ'yı bulursunuz. İki kanatlı hiperboloitte ise aradaki tek eksi yerine burada iki tane eksi vardır. O zaman da iki kanatlı hiperboloid olur. Şurada gördüğünüz soru size
+
+248
+00:49:31,443 --> 00:49:45,103
+Size ilk vizede de sorulabilecek bir sorudur. Böyle bir soru bekliyorum ve bu da çıkmış bir sınav sorusudur. Bakın şuraya şöyle hiç bakmayın aşağıya. Soruyu ben size sıfırdan yazıyorum.
+
+249
+00:49:51,827 --> 00:50:08,028
+Fonksiyonunun 1, 1, 2 noktasındaki, size demin de söyledim, seviye, yüzeyi aşağıdakilerden hangisidir diye size sorulabilir.
+
+250
+00:50:16,628 --> 00:50:22,768
+bulmanız lazım, fx, y, z'yi bulmanız lazım. Kaç oldu burası? 1, 1. Burası 0 mı oldu? 0 oldu. Güzel.
+
+251
+00:50:23,367 --> 00:50:36,628
+Buna başka bir şey de söyleyebilirdi. Sonra bunu alıp, x kare artı y kare, eksi z eşit 0 yazıp, söz konusu olan seviye yüzeyini...
+
+252
+00:50:36,672 --> 00:50:57,012
+Bulabilirdiniz. Aynı soru size şöyle de sorulabilirdi. Atıyorum mesela kafadan. Efendime söyleyeyim ne olabilirdi mesela? 3, 2, 0 noktasındaki seviye yüzeyi diye sorulsaydı yine buna dikkat edin. Bunu çok arkadaşlar böyle ne denir ona?
+
+253
+00:50:58,260 --> 00:51:15,720
+Böyle ay hakir görüyorlar. Aman o mu gelir, boşver falan. Ondan sonra lömbürt diye soru geliyor. Yapamıyorlar, yazık günah oluyor yani. Anladınız mı? 13 oldu. Demek ki bizim seviye yüzeyimiz, sevgili arkadaşlar, buymuş. Tamam mı?
+
+254
+00:51:17,139 --> 00:51:33,359
+Bak böyle soru bekliyorum. Bunlardan gelecektir, haberiniz olsun. Dikkatli olunuz. Bunlar çantadaki keklik sorulardır. Keklikleri Düzova'da yakalayalım arkadaşlar. Çünkü öbürleri daha da zor olacaktır.
+
+255
+00:51:33,759 --> 00:51:39,219
+Buraya kadar sorusu olan var mıdır? Şimdi artık limit hikayesine geçiyoruz.
+
+256
+00:51:40,724 --> 00:51:52,443
+Güzel bir vaktimiz var. Nereye kadar gelmek istediğimi söyleyeceğim zaten size. Birazdan FÖ'yü yüklediğimde. FÖ'yü yüklü de açacağım zaten. Evet, sorusu olan var mı buraya kadar?
+
+257
+00:51:53,139 --> 00:52:11,559
+Siliyorum tahtayı. Şimdi çok iyi dinlemenizi isram ediyorum. Hatta bu konuyla ilgili, bakın gerçekten çok güzel bir FÖY hazırladım. Öbür sınıfıma da böyle söyledim. Buna çok güzel çalışmamız lazım.
+
+258
+00:52:12,420 --> 00:52:20,339
+Çünkü bu konunun zorluğu ne biliyor musunuz? Kendisini çok kolay zannettirmesi.
+
+259
+00:52:21,331 --> 00:52:43,771
+Nasıl yani? Kolay değil mi? Hiç kolay değil ve çok zor. Çok zor olduğu halde aman oğlum ya, onda ne var? Diyorlar ya, işte onlar sınavda limiti yapamayan arkadaşlar. Emin olabilirsiniz, bu konu kişiye öyle bir hayal gördürtür ki, kişi, kişi, bak kişi.
+
+260
+00:52:44,467 --> 00:52:57,648
+Soruyu doğru yaptığına öyle inanır ki, hocanın odasına ben doğru yaptım da bana niye puan vermediniz diye böyle gider de bir böyle hesap sordurur.
+
+261
+00:52:58,356 --> 00:53:17,916
+Sorunu versin ki gelir karşına oturur. Evladım açarsın kağıdını gösterin. Bak böyle böyle. Tamam. Evet. Evet. Evet hocam. Evet. Böyle değil mi? Değil yavrum. Nasıl öyle değil? Bizler size demedik mi? Böyle değil miydi? Değildi. 10 kere söyledim. Aç defterine bak.
+
+262
+00:53:18,387 --> 00:53:39,367
+Hayır hocam böyle çocuğum, nerede defterin? Yanımda değil hocam. Yanımda da birisi olur. Hocam benim defterim yanımda der. Aç yavrum oradan defterini. Açar, 5 saat bakar. Baktığı halde gene anlayamaz. Çünkü kendini o kadar inandırmıştır ki öbür bilgiye. Onun doğru olduğunu hala zannetmeye devam eder.
+
+263
+00:53:39,764 --> 00:53:46,564
+Sonra, yani hocanın odasından ayrılmaya böyle son bir iki de mücadele eder. Böyle hayır doğru.
+
+264
+00:53:47,027 --> 00:54:11,327
+Artık hoca da cinnet noktasına gelir o arada. Sonra diyerekten meselenin vahimiyetini anlar. Bütün o 25 puanlık limit sorusu, süreklilik sorusu bay bay olup gitmiştir. Arkadaş da yaklaşık 22-27 civarında notlar almıştır. Hüzünlenerekten odadan ayrılır, gider.
+
+265
+00:54:12,659 --> 00:54:19,159
+Ve maalesef ki bu arkadaşlar, limitte ne var ya, limit çok kolay ya diyen arkadaşlar.
+
+266
+00:54:19,579 --> 00:54:23,879
+Arkadaşlar, limit konusu en az kuvvet serileri kadar zor bir konudur.
+
+267
+00:54:24,739 --> 00:54:27,460
+Zorluğu kendisini kolay zannettirmesidir.
+
+268
+00:54:27,960 --> 00:54:33,399
+Burada size bir föy hazırladım. Bu föy gerçekten çok güzel bir föy.
+
+269
+00:54:33,399 --> 00:54:37,039
+Burada öğrencilerin bütün düştüğü hataları,
+
+270
+00:54:37,619 --> 00:54:50,519
+Yazdım. Yani yalnız başınıza bu föye çalıştığınız zaman, hani ben nerede yanlış yaptım diye bir şarkı var ya, işte orada yaptığınız yanlışları burada görebilirsiniz.
+
+271
+00:54:50,940 --> 00:54:57,019
+Bu şey, evet. Önemli uyarı, çok önemli. Dikkat! Bak, yazmışım.
+
+272
+00:54:57,280 --> 00:55:07,780
+Bak dikkat yazmışım, bak dikkat yazmışım, bak not düşmüşüm, son hatırlatma demişim, bak ünlem koymuşum.
+
+273
+00:55:08,047 --> 00:55:29,027
+Bak, en arkaya eşit çıkmış olsaydı bile limit bu sayıdır diyemezdik demişim. Tamam mı? Bunlara dikkat edin. Bak yazmışım, limit yoktur. Eşit çıksaydık da yine diyemezdik, vardır diyemezdik demişim. Her sorunun sonuna tekrar uyarı yazmışım. Bak.
+
+274
+00:55:29,360 --> 00:55:55,440
+Tamam mı? Daha da artık bundan sonra bak, bak tekrar ünlem, tekrar ünlem, tekrar ünlem. Her sorunun sonunda ve sürekliliğe gelince ne diyorum? Çok değişkenli fonksiyonlarda limit konusunu bir defa daha çalışınız. Başa gel, tekrar başa gel. Yetmez. Anladım zannedersin adamı geri serer.
+
+275
+00:55:56,563 --> 00:56:06,983
+Çok zor konu. Hocam ne zorluğu var şimdi bir anlatsana. Şimdi ne zorluğu var bunu daha önce konuştuk mu bilmiyorum artık. Şimdi hani önemli değil ilk kere konuşalım.
+
+276
+00:56:07,411 --> 00:56:15,011
+Şimdi önce bir mat birdeki limit kavramın hakikatten oturmuş mu yerine onu bilmiyoruz. Önce bu konudan bahsedelim.
+
+277
+00:56:15,511 --> 00:56:25,271
+Senin bir tane fonksiyonun olsun ve bu fonksiyonun da herhangi bir noktada, efendime söyleyeyim, limitini araştırıyor o.
+
+278
+00:56:25,271 --> 00:56:35,271
+Ve bu noktadaki ister değer L olsun, ister burada tanımsız olsun, hiç önemi yok. Buradaki olay şöyledir.
+
+279
+00:56:35,411 --> 00:56:43,851
+Siz burada şunu oynattığınız zaman, tabii bunu oynatınca otomatikman buradaki görüntü de oynuyor.
+
+280
+00:56:43,851 --> 00:56:52,811
+Yani şurası da oynuyor. Değil mi? Yani ben bunu oynatınca bunun aldığı değerler de oynuyor. Anlıyorsunuz değil mi? Dolayısıyla bunların...
+
+281
+00:56:53,172 --> 00:57:11,711
+Görüntü kümesi de şu aralıkta oynuyor. Sen bunu burada oynatıyorsun, bu da burada oynatıyor. Bunu kıpraştırdın, bu da kıpraştı. Bu böyle elini kaldırdı, o da oradan el salladı. Bu gözünü kırktı, o da saçını savurdu. Öbürküsü oradan böyle işmar etti, bu gözünü kırktı vs.
+
+282
+00:57:21,172 --> 00:57:36,952
+Ki biz burada x ile x sıfırın arasındaki mesafe, yani şuradaki kıpraşımlar, deltadan küçük, bunların görüntüleri ise, epsilondan küçük olduğu zaman bu aradaki oynama,
+
+283
+00:57:37,427 --> 00:58:05,427
+Şu aradaki oynamayla bir ilişki içerisindeyse eğer limit vardır diyorduk. Bunun kaba tabirle ifadesi şu anlama gelir. Bu noktaya sağdan ve soldan yaklaşırken, yaklaşımdan yani yoldan bağımsız olarak aynı değeri buluyorsan, atıyorum buradan yaklaşırken 5 buldun, buradan yaklaşırken de 5 buldun, o zaman dersin ki bu noktadaki limit...
+
+284
+00:58:05,427 --> 00:58:18,347
+5'tir dersin, olayı bitirirsin. Ama buradaki zorluk neden kaynaklanmaktadır? Şimdi bana dersen ki resmini yapabilir misin? Yapmaya çalışayım size nacizane.
+
+285
+00:58:24,788 --> 00:58:50,788
+İyi dinle. Sıkıntı burada. Tamam mı? Şimdi bunun bir kümesi var. Ne kümesi? Tanım kümesi. Hafif çizdim onu. Onun çok bir önemi yok. Burada bir noktamız var. Bu noktamız x0, y0 noktası. Senin fonksiyonunun bir adı var. Z eşittir, fx, y fonksiyonu.
+
+286
+00:58:53,715 --> 00:59:05,096
+Yani kısacası senin hep her, ne denir ona, absis-ordinat ikiline burada bir karşılık geliyor.
+
+287
+00:59:05,844 --> 00:59:26,683
+Aa, hocam, o zaman ben bu olayı anladım. Ne gibi anladın? Şimdi o kıpraşma bunun çevresinde olacak böyle. Bu arada böyle kıpraşınca, bu da burada böyle kıpraşacak. O da kıpraşınca burada kıpraşıyorsa, diyeceğim ki delta eşittir, delta epsilon, o zaman limit vardır, diyeceğim. Çok kolaymış.
+
+288
+00:59:27,443 --> 00:59:48,724
+Nereye kolay? E hocam aynısı işte bu çevrede böyle oynatıyorum, o da orada oynuyor, o da oynuyor, bitti gitti. Hiç kolay değil, bence hiç de komik de değil, bir de gülüyorsun kendi kendine. Şimdi bu noktaya sen kaç türlü ifade, hocam burada dediniz ya, böyle gittim, böyle gittim, bu buna eşit, bitti gitti. Bildim işte.
+
+289
+00:59:49,235 --> 01:00:14,675
+İşte bilemedin. Çünkü neden? Burada bir tanım aralığın vardı senin. Bu tanım aralığında bu noktaya ya bu yeşil ok ya da bu yeşil ok nispetinde yaklaşabilirsin. Yani burada şu noktaya yaklaşma şekli iki türlü olur. Biri sağdan, biri soldan. E tamam hocam burada da aynısı işte. Hiç problem değil. Çok abartıyorsunuz bence korkuyorsunuz ya biz yapamayız diye.
+
+290
+01:00:15,572 --> 01:00:42,332
+Ben abartmıyorum. Mesele gerçekten çok vahim. Sen bu işi çok hafife alıyorsun. Allah sonuna hayretsin diyorum yani. Niye hocam? Çünkü burada, bak bakalım, bu yoldan yaklaşım. Tamam hocam, bu yoldan da yaklaşım. Aferin. Bu yoldan da yaklaşım. Kaç farklı türde yaklaşmayı düşünüyorsun acaba? İşte elim ne kadar eriyorsa, işte 10-15 tane yaklaşırım hocam. Hepsinden aynı şey çıkıyorsa bitti gitti.
+
+291
+01:00:44,532 --> 01:00:56,811
+Olur mu ya öyle şey? Burada buraya yaklaşma türün kaç tane? İşte 10-15 yaklaşsak yetmez mi? Yetmez. Her türlü yaklaşırken hep aynı değeri bulduğunu bana garanti edeceksin.
+
+292
+01:00:56,811 --> 01:01:09,532
+E tabii, sen sonsuz türlü yaklaşamaz mısın oraya? Evet. O zaman sen bana diyeceksin ki sonsuz türlü yaklaştım, hepsinden aynı sonucu buldun.
+
+293
+01:01:10,739 --> 01:01:19,179
+Hocam ben niye var ki öyle bir şey? Sonsuz türlü ben nasıl? Bütün ömrümü oraya vakfetsem sonsuza kadar gitmez ki ya.
+
+294
+01:01:19,980 --> 01:01:22,899
+Değil mi? Gitmez. Bana kolay deme o zaman.
+
+295
+01:01:24,839 --> 01:01:28,539
+Değil mi ya? Anladım. Hiç kolay değilmiş.
+
+296
+01:01:29,960 --> 01:01:33,779
+O zaman hocam bir şey söyleyeceğim. Benim itim varlığını bize soramazlar ki.
+
+297
+01:01:34,996 --> 01:01:44,936
+Bu da ayrı bir konu. Şimdi buraya kadarki meselenin vahimiyetini anladık mı acaba? Burası tamam mı? Tamam mı? Tamamsa bir tuşa bas bakayım.
+
+298
+01:01:47,380 --> 01:01:58,840
+Mikrofondan hiç uzaklaşmıyorum. Hep aynı yerdeyim ama bazen bu şeyim, fanın çalışası tutuyor. O zaman bir tek kendi sesini duyuyor bu bilgisayar. Çok fena.
+
+299
+01:01:59,420 --> 01:02:13,980
+Anlaştık değil mi arkadaşlar? Burada anlamadığın serhangi bir şey var mı? Hiç kıpırdamıyorum yerimden. Zaten elimde kalem var ve sürekli o biliyorsunuz grafik tablete yazı yazıyorum sürekli. Kafamı da oynatmıyorum ayrıca.
+
+300
+01:02:14,516 --> 01:02:39,356
+Şimdi, o zaman şöyle bir şey söylemek istiyorum ben. Ne zaman limit vardır? Nasıl? Hani dedik ya biz limiti bulmak zordur dedik. Limiti ne zaman sorunsuz bir şekilde bulursun? Ben onu anlatmak istiyorum sana. Nasıl yani? Şöyle yani, şunu söylüyorum bak, limit.
+
+301
+01:02:39,775 --> 01:02:48,536
+Mesela atıyorum, XX0'a. Bak yine fan çalışmaya başladı, muhtemelen yine sesim uzaklaşıyor gibi geliyordur.
+
+302
+01:02:49,076 --> 01:03:00,576
+O da bazı arkadaşlara geliyor, bütün hepsine değil. Mesela şöyle bir soru soruldu size, ben o zaman ömrümde hiç limit bulamayacak mıyım hocam? Hep limit yok mu? O zaman ben limit yoktur işaretlerim.
+
+303
+01:03:01,844 --> 01:03:27,163
+Allah Allah. Biz seninle hiç anlaşamayacağız. Ne olacak bu senin halin ya? Şimdi bak, burayı iyi dinle. Bu ne? El. Ne gerek var? Fonksiyona vuracağız. Çok mu vuracağız? Yok, çok vurmayacağız. Azıcık. Yumuşak bir okşama tokatı. Evet.
+
+304
+01:03:32,019 --> 01:03:34,379
+Elimize noktayı aldık. Tamam mı?
+
+305
+01:03:35,899 --> 01:03:36,715
+Buna...
+
+306
+01:03:40,403 --> 01:03:47,324
+diye yerine yazdığınız zaman, eğer bir sayı bulabiliyorsanız, limit vardır.
+
+307
+01:03:48,788 --> 01:04:13,428
+Hocam bir şey söyleyeceğim. Zaten çat diye koyacağız. Çut diye koyma ihtimalimiz var. Ne saçma bir şey yaptınız şimdi. Daha görmedin canım. Burada sadece x0'ı koyup, saklayıp, arkadan y0'ı koyarak veya önce y0'ı koyup, arkadan x0'ı koyarak bir limit bulacağız. Ama bu durumda bulduğumuz limit, limit olmaz. Ne? Evet.
+
+308
+01:04:13,811 --> 01:04:21,132
+Yani biz tek hamlede fonksiyona çat diye x yerine 3 mesela, y yerine 5 yazdınız.
+
+309
+01:04:21,532 --> 01:04:26,172
+x işte 3'e, y 5'e giderken bu fonksiyonun limiti atıyorum 10 çıktı.
+
+310
+01:04:26,672 --> 01:04:29,132
+Fonksiyonun limiti var mıdır? Vardır arkadaşlar.
+
+311
+01:04:29,592 --> 01:04:35,572
+Ama sana bu soru sorulur mu? Problem ortağı. Bu soru çok kolay. Tamam mı?
+
+312
+01:04:38,751 --> 01:04:39,572
+Anlaştık mı?
+
+313
+01:04:41,523 --> 01:04:43,784
+Burası tamam mı? Burayı bir anlayalım.
+
+314
+01:04:44,804 --> 01:05:01,443
+Hocam, tamam, sormayabilirler ama iki değişkenli bir fonksiyonların, fonksiyonun limitinin olabilmesi için ben tek bir hamlede x yerine ve y yerine ilgili değeri yazdığım zaman bir sayı buluyorsam limit odur.
+
+315
+01:05:01,763 --> 01:05:06,003
+Bunu anladım ben. Doğru mu anlamışım? Aferin, çok doğru anlamışsın. Tamam.
+
+316
+01:05:06,708 --> 01:05:33,187
+Peki hocam, başka ihtimal de var mı acaba? Başka ihtimal de var. Bir ihtimal daha var. O kadar. Geri kalan ihtimaller korkunç yani. Düşünmek bile istemiyorum. Peki tamam, diğer ihtimalle de konuşalım. Mesela önce bir şunu yapalım da. Limit x1'e, y1'e giderken ki bunu şöyle de yazabilirsiniz. x, y, 1, 1 de yazabilirsiniz. Aynı şeydir, fark etmez.
+
+317
+01:05:33,715 --> 01:05:51,476
+Efendim ben söyleyeyim, şöyle yazayım, dur şimdi bir dakika. x kare eksi y kare bölü x artı y. Mesela. Tek hamlede yerine koymak ne demek? Birin karesi, birin karesi bölü 1 artı 1. 0 bölü 2 eşittir 0.
+
+318
+01:05:51,476 --> 01:05:52,755
+Hocam.
+
+319
+01:05:53,268 --> 01:06:10,628
+Efendim, limit sıfırdır diyebilir miyiz? Diyebiliriz. Ama sana böyle bir limit sorusu sorulur mu? Problem orada. Tamam mı? Önce bir kolay durumlarını bir konuşalım biz. Yani kolay olarak nasıl limit bulunur? Bunu anlayalım biz. Tamam, peki.
+
+320
+01:06:11,488 --> 01:06:17,328
+Efendime söyleyeyim, aynı soru şöyle. Sorulsaydı bir ihtimal daha var dedik. Bu ihtimali konuşmak istiyorum sizinle.
+
+321
+01:06:18,099 --> 01:06:33,559
+x kare eksi y kare bölü, x eksi y olsaydı, bu sıfır bölü sıfır belirsizlik. Tamam hocam, şey yapacağız, lopitel yap. Lopitel olmaz bir kere, burada iki değişken var. Lütfen çorba etme her şeyi. E ne yaparım o zaman? Çarpanlarını ayırın.
+
+322
+01:06:33,559 --> 01:06:43,360
+Heh, çarpanlarını ayırınca sen belirsizlik, daha doğrusu, evet, belirsizlik durumundan kurtulabiliyorsan, tamam mı?
+
+323
+01:06:44,947 --> 01:06:47,467
+O zaman limitin varlığından bahsedebiliriz.
+
+324
+01:06:47,867 --> 01:06:48,967
+Evet, sonuç 2.
+
+325
+01:06:49,307 --> 01:06:54,467
+Hocam şimdi burada 1'e giderken bu fonksiyonun limiti 2'dir diyebilir miyim?
+
+326
+01:06:54,907 --> 01:06:56,387
+Diyebiliriz. Sıkıntı yok.
+
+327
+01:06:57,367 --> 01:06:57,947
+Tamam mı?
+
+328
+01:06:57,947 --> 01:07:02,547
+Sadece bu iki durum ve buna benzer anladınız artık.
+
+329
+01:07:03,027 --> 01:07:07,007
+Efendime söyleyeyim. Buna benzer durumlar haricinde büyük sıkıntımız var.
+
+330
+01:07:08,347 --> 01:07:10,967
+Bunlara ne yapacağımız konusunu konuşacağız.
+
+331
+01:07:11,427 --> 01:07:12,267
+Burası tamam mıdır?
+
+332
+01:07:12,947 --> 01:07:14,347
+Tamamsa bir tuşya bas.
+
+333
+01:07:18,036 --> 01:07:31,536
+Anlamadığınız bir şey var mı buraya kadar? Tahtadaki tanım, matbirin tanımıdır. Korkulacak bir şey yoktur sevgili gençler. Tamam mı? Siliyorum. Tamam.
+
+334
+01:07:31,956 --> 01:07:42,736
+Burada hepsi var ayrıca. Ay hocam yazsaydık. Yani istiyorsan yazabilirsin ama burada hepsini yazın. Birazdan göreceksin zaten. Yani yazıldığını da göreceksin. Sabredersen göreceksin.
+
+335
+01:07:43,516 --> 01:07:54,956
+Şimdi ikinciye geldik. İki değişkenli fonksiyonlardaki hikayeyi nasıl yazalım? Hemen yine kalemimi aktive ettim. Ne dedim? Şimdi demin arkadaşınızla biliyorsunuz biraz böyle bir...
+
+336
+01:07:55,635 --> 01:08:17,296
+Konuştuk. Bu noktanın bu civarda hareket etmesi ne anlama gelir? X ile X0 karesi. Y ile Y0'ın karesini, kare kökünün, epsilon yarı çaplı bir çemberin, epsilon demeyelim, delta diyelim.
+
+337
+01:08:17,939 --> 01:08:33,359
+Hepsi bunu da diyebilirsin ama ona göre yazmanız lazım. Delta denilen bir çemberin içinde kalması bizim şu eflatunu şöyle oynatmamız anlamına geliyor. Bu arada böyle böyle böyle hareket ettirmemiz anlamına geliyor. Tamam mı?
+
+338
+01:08:34,359 --> 01:08:44,359
+Bunun görüntüsü olan noktanınsa bu böyle böyle oynadığı zaman burada böyle böyle oynaması ne manaya gelir?
+
+339
+01:08:45,779 --> 01:09:04,959
+Limit diye ortaya dökülen nokta ile fonksiyonun değerinin arasındaki farkın, değil mi? Epsilondan küçük kalacak şekilde, değil mi? Oynaması ve bu oynaklığın
+
+340
+01:09:06,195 --> 01:09:20,876
+Birbirlerine bağlı olarak, yani bu azıcık kıpraştı, bu da azıcık kıpraştı, bu birazcık bu tarafa gitti, o da birazcık böyle. Böyle oldu, böyle ama hep bu civar içinde kalınca bu da hep bu aralıkta raks ediyor.
+
+341
+01:09:20,876 --> 01:09:34,155
+Anlamında bu ikisi arasında bir ilişki varsa eğer tıkkı matbirdeki limit tanımı gibi limitin varlığından bahsedilebilir ve o zaman şurada.
+
+342
+01:09:34,195 --> 01:09:57,155
+Şuradaki ifade gerçekleşir. Yani fx, y, l olur. Söz konusu olan değişken nokta x0, y0'a giderken tekrar biliniz ki xx0'a, y, y0'a şeklinde de yazılabilir. Şuradaki notasyon hiçbir problem yoktur. Anlaştık mı acaba buradaki hikayede?
+
+343
+01:09:57,155 --> 01:09:58,956
+Hocam.
+
+344
+01:10:00,000 --> 01:10:06,239
+Biz şimdi limit bulunmazsa, limitin tanımından yaparsak, limitin var olduğunu kesin söyleyebiliriz değil mi?
+
+345
+01:10:06,979 --> 01:10:07,780
+Söyleyebiliriz, evet.
+
+346
+01:10:08,239 --> 01:10:11,319
+O zaman ben hepsini epsilon'lu delta'lı yaparım, gayet kolay olur.
+
+347
+01:10:12,239 --> 01:10:15,120
+Epsilon'lu delta'lı soru çözmek hiç kolay değildir.
+
+348
+01:10:15,579 --> 01:10:18,840
+Epsilon'lu delta ile her soruyu çözemeyebiliriz.
+
+349
+01:10:19,579 --> 01:10:20,440
+Gerçekten mi?
+
+350
+01:10:20,819 --> 01:10:21,340
+Tabii ki.
+
+351
+01:10:21,971 --> 01:10:48,791
+Hiç kolay değildir. Biz matematik mezunu olduğumuz için bize sorarlardı. Hatta sınav süresi bazen 3 saate kadar uzayabiliyordu. Çünkü hani hoca öyle sorular soruyordu ki ya bunu belki düşünemezler. Haydi biraz daha uzayalım. O kadar zor sorma o zaman yani değil mi yani? Evet ama soruyorlardı da. İşte böyle biz de böyle düşünüyorduk. Epsilon'ı küçülsek mi, büyüsek mi? Ne demek istediğimi en kolay örnek üzerinden anlatayım.
+
+352
+01:10:50,003 --> 01:10:59,264
+Tamam mı? Burada zaten formal tanımı var. Formal tanımın ne manaya geldiğini de söyledik. Burayla konuşalım, ondan sonra şey yapacağız.
+
+353
+01:10:59,572 --> 01:11:27,492
+Buradaki iki değişkenli fonksiyonların limitlerinin özellikleri hikayesi için konuşursak, çok beklendik sonuçlar var. Mesela ne diyor? Limit x, y, x0, y0'a giderken L oluyormuş, fx'ye. G'nin de limiti m'ymiş. Bu durumda toplamlarının limiti ne olur? Limitler toplamı olur. Bunun için bu konuyu efendime söyleyeyim. Aman da çok zor.
+
+354
+01:11:27,572 --> 01:11:35,431
+Ya buradaki kurallar zor değil. Efendim fonksiyonların toplamının limiti, limitler toplamıdır.
+
+355
+01:11:35,511 --> 01:11:40,212
+Tabii fonksiyonların limitlerinin olması lazım. Olmazsa olmayan bir şeyin limitinden bahsedilemez.
+
+356
+01:11:40,212 --> 01:11:47,891
+E farklarının limiti, limitler farklı. Çarpımlarının limiti, limitler çarpımıdır. Bölümlerinin limiti,
+
+357
+01:11:48,307 --> 01:12:15,028
+Limitler bölümüdür ama paydaya sıfır gelmesin, dikkat et. Bir kalsa bu sabitinle çarptım da limit aldım, limitini kalsa sabitinle çarptım anlamına geliyor. Bir eninci kuvvetini aldım da limitini aldım, limitin eninci kuvvetini aldım anlamına geliyor. Bir bölü eninci kuvvetini aldım da limitini aldım, almadan evvel limitini almışsam bir bölü eninci kuvvetini sonradan aldın anlamına geliyor.
+
+358
+01:12:16,307 --> 01:12:20,908
+ekip kuralların aynısı yani. Bunlar kolaymış. Evet, bunlar kolay. Hocam.
+
+359
+01:12:21,887 --> 01:12:27,467
+Demin siz dediniz ya hani hangi durumda limit vardır diye bu üç örnek de onunla ilgili anladığım kadarından.
+
+360
+01:12:27,967 --> 01:12:37,887
+Evet aynen öyle. Biz burada sorunsuz olarak hesap edebileceğimiz limitleri son bir dünya gözünle görelim diye buraya yazdık.
+
+361
+01:12:38,268 --> 01:12:46,807
+Bu hallerin dışındaki hiçbir halde limitin varlığından kolay kolay bahsedilemez. Yani bu artık son elveda arkadaşlar.
+
+362
+01:12:47,315 --> 01:13:01,815
+Hani böyle bir meyve ya da sebze, işte efendime söyleyeyim tam mevsiminde artık veda edersin, suyu kaçar, tadı çekilir filan. Mesela efendime söyleyeyim artık böyle tatsız tutsuz bir hale gelir.
+
+363
+01:13:02,420 --> 01:13:30,420
+Hani çok sevildik bir mesela, şimdi artık kereviz mesela artık. Kerevizi çok seviyorsanız ki ne aşıklısı vardır Allah'ım değil mi? Ne çok sevileri yani. Ben severim ayrıca. Kerevizler artık mesela artık suyu çekilmiş artık. Efendime söyleyeyim. Piyasadan yavaş yavaş hani satılsa da hani çok fazla kışki kadar böyle içleri kof kof olursun falan. Böyle artık kerevizden çok fazla şey alamazsın, randımanı alamazsın.
+
+364
+01:13:30,420 --> 01:13:50,180
+Şimdi artık bununla da burada vedalaşalım yani. Bunun da artık içi geçti gibi olmuş. Neymiş bu? Bir çırpıda yerine tek bir avazda yerine koyduğumuz zaman bana sonuç veren limitler gerçekten söz konusu olan sorulan limitlermiş.
+
+365
+01:13:54,963 --> 01:14:05,903
+Bulduğumuz sonuçlar yine söz konusu olan limit değeri imiş. Dersin başında yaptığım örnekle ilgili burada yazdığım örnekler.
+
+366
+01:14:06,463 --> 01:14:11,123
+Tamam mı? Buraya kadar sorusu olan varmış. Şimdi artık sıkıntılı yere başlıyoruz.
+
+367
+01:14:12,403 --> 01:14:22,243
+Evet, ilk 3 sayfa giriş kısmıydı. Girizgahta arkadaşlar. Şimdi artık ya da ne denir ona? Taksim diyebiliriz.
+
+368
+01:14:22,868 --> 01:14:35,568
+Efendim, müzikteki taksim gibi, şöyle taksim yaptık. Efendime söyleyeyim. Şimdi yeni konumuza geçiyoruz. Hazır mıyız? Esas sıkıntılı kısma geliyoruz.
+
+369
+01:14:42,036 --> 01:14:57,935
+Bu ne? Hocam şimdi bunu epsilon'unu derseniz yapamaz mıyım ben? Yapamazsın. Yapamazsın. Niye yapamayayım? Bak yazıyorum. Yaz da bir görelim mi? Arkadaşların da görsün. Yaz bir. Yazıyorum. Yaz.
+
+370
+01:15:00,635 --> 01:15:09,355
+Şimdi hocam sizi elime koyacağım ben. Çat diye bir tane vuracağım bu fonksiyona. Bak ne olacak? Ne olacak? Yaz da bir göreyim bakayım ne olacak Allah aşkına.
+
+371
+01:15:10,420 --> 01:15:33,260
+Ay, sıfır bölü sıfır oldu. Tamam. Şey yaparım, çarpanlarını ayırayım. E, ayır bakayım. Hadi ben de göreyim de. Vallahi bir göreyim ben ya. Çarpanlarını ayır da bir göreyim. Yıkarı parantezini alırım hocam. Öyle saçma şey mi olur? Bu tek değişkenli fonksiyon. Sonra ne yapacaksın? Olmadı. Peki, çarpanlarına da ayıramak. Lopitel. Lopitel olur mu ya? Kime göre türev alacaksın? Allah aşkına yapma.
+
+372
+01:15:34,452 --> 01:15:55,892
+Ne yapacağım? Bir şey yapamıyorsun işte. Onu söylemeye çalışıyorum. Bir şey yapamazsın. Ne yapacağım peki? Sana ne denilirse onu yapacaksın. Yeni yeni öğrenmeye başladık. Bugün bitecek de bir konu da değil. Epey üzerinde duracağız. Sınavın bel kemiği konulardan bir tanesi. Demek ki yerine koyunca olmuyor. Zaten burada sana sorulan şey o değil.
+
+373
+01:15:56,500 --> 01:15:59,560
+Böyle bir soru olduğunu ispatlayınız diye.
+
+374
+01:15:59,859 --> 01:16:03,659
+Hocam bir şey söyleyeceğim, biz yazılı sınava girmeyeceğiz ki böyle bir şey soramaz bize.
+
+375
+01:16:04,699 --> 01:16:06,060
+Çok da emin olma.
+
+376
+01:16:07,420 --> 01:16:07,939
+Nasıl?
+
+377
+01:16:08,779 --> 01:16:10,039
+Çok emin olma, sorabilir.
+
+378
+01:16:10,760 --> 01:16:12,319
+Neyi soracak ya öyle şey mi alır?
+
+379
+01:16:12,840 --> 01:16:13,619
+Şunu sorabilir.
+
+380
+01:16:14,560 --> 01:16:17,899
+Data ile Epsilon arasındaki bu antı aşağıdakilerden hangisidir?
+
+381
+01:16:18,880 --> 01:16:19,060
+Ne?
+
+382
+01:16:20,019 --> 01:16:20,539
+Sorabilir.
+
+383
+01:16:21,716 --> 01:16:49,256
+Ne yapacağım o zaman? Güzel güzel çözeceksin, ne yapacaksın? O zaman sana zaten şunu vermesi lazım. Der ki, mesela atıyorum, x eksi sıfırın karesi, çünkü neden? Şu ikisinin arasındaki mesafeyi delta'ya göndermesi lazım. Çünkü formül öyleydi, kare köklü vaziyette. Bunu delta'dan küçük olması lazım. Sonra şu ikisinin arasındaki mesafeyi de, değil mi? Kafayı çalıştır.
+
+384
+01:16:54,996 --> 01:17:10,036
+Epsilon'a göndermesi lazım. Ve sana da böyle böyle iken delta eşit, delta epsilon aşağıdakilerden hangisidir diye sorması lazım. Anladın mı? Anladım da anlamaz olaydı.
+
+385
+01:17:10,547 --> 01:17:37,907
+Evet, değil mi? Evet. Acı gerçek. Hemen yüzleştik ya bu kadar da çabuk mu olurdu ya? Evet. Peki, şunları tekrar yazmak istiyorum. X kare artı, y karenin kare kökü. Çok dikkatli olun arkadaşlar. İnşallah gelmez ama bazı senelerde böyle sorular geldi. Maalesef geldi. Evet. Bunu çok kötü yazmıştım. Ne biçim şey böyle biri yukarıda, biri aşağıda.
+
+386
+01:17:38,612 --> 01:17:58,112
+Tamam mı? Şimdi, hocam altındakini de ben yazayım. İyi, hadi yaz bakayım. Bunu yazıyorum hocam. Yaz tamam, hadi bekliyorum. Hocam şimdi bu mutlak değer ya. Evet, görüyorum. Şimdi burada pozitif olanları mutlak değerin dışına bıraktım hocam. E bırak, hadi. Bizim için mahsuru yok.
+
+387
+01:18:00,948 --> 01:18:21,088
+Bunu böyle yazabilirim değil mi? Bakayım yazabiliyor musun? Bence yazarsın. Arkadaşların itirazı yoksa yazsın. Evet yazabilir mi böyle? Şunu şöyle yazabilir mi? Yazabilir mi bunu böyle? Dinliyor musunuz siz beni? Dinlemiyorsanız ben de bunları böyle ilerleteyim, ilerledeyim, kapatalım ya.
+
+388
+01:18:21,456 --> 01:18:29,615
+Yazabilir, tamam. Yazabilir, tamam yazabilir. Tamam yazabilirse, şimdi çocuk burada uğraşıyor, yazık günah ya, cevap vermiyorsunuz.
+
+389
+01:18:30,756 --> 01:18:37,155
+Hocam şimdi ben bunu ağırlaştıracağım, arkadaşların canı sağ olsun ben yapıyorum. Peki tamam, nasıl ağırlaştıracaksın?
+
+390
+01:18:37,996 --> 01:18:44,316
+Hocam şimdi buraya mesela şey, mesela diyelim ki, buraya bir ağırlık koyduğumuzu düşünüyorum ben.
+
+391
+01:18:44,659 --> 01:19:03,720
+Nasıl ağırlık koyacaksın? Anlayamadım ben. Ve niye ağırlık koyacaksın? Neden ağırlık koyuyorsun? Nasıl anlatayım size şimdi? Burası zor ha. Zor olsun sen yine anlat. Güzel anladınsa anlatabilmen lazım. Eğer anlatamıyorsan demek ki güzel anlayamamışsın.
+
+392
+01:19:06,060 --> 01:19:11,199
+Şimdi hocam bu buna eşit ya şu durumda. Bakın bak eşit şimdi. Eşit değil mi arkadaşlar?
+
+393
+01:19:11,764 --> 01:19:28,824
+Ben şimdi elime kaleme aldım, şuraya bir ağırlık koydum. Tamam koydun. Bu artık eşit değil. Görüyoruz eşit değil. Senin maksadın ne? Ben maksadını anlayamadım. Hocam ben şimdi burayı böyle ağır hale getirdim.
+
+394
+01:19:29,587 --> 01:19:37,407
+Tamam getir, ne olacak ağır hale getirince ben onu anlayamadım. Yine ben anlayamıyorum ya senin yaptı. Saçma sapan bir şey yapıyormuşsun gibi geliyor bana.
+
+395
+01:19:37,407 --> 01:19:55,967
+Hocam bu mevzu şimdi şöyle anlatayım ben. Bununla, kiminle? Şununla hocam, şunun arasında bir bağıntı bulmamız lazım. Ben bunu, bunu bu hale getirmek istiyorum. Ooo zor.
+
+396
+01:19:57,268 --> 01:20:19,007
+Evet hocam, biz zor at halimiz yani. Zor. Bunu bu hale getirmek istiyorsun. Neden peki bunu bu hale getirmek istiyorsun? Amacın ne? Çünkü hocam, bu normalde şimdi küçüktür, epsilon halinde ya, burası küçük epsilon ya, ben eğer bunu bu hale getirirsem, o zaman bunun epsilonla deltanın arasında bir bağıntı bulmuş olacağım. Onu düşündüm ben.
+
+397
+01:20:19,636 --> 01:20:28,815
+Ooo çok güzel ya, valla. Bravo yani, çok takdir ettim seni. Anladınız mı arkadaşınızın amacını?
+
+398
+01:20:30,355 --> 01:20:53,036
+Madem diyor bir tanesi, epsilon'dan öbürküsü de diyor, delta'dan küçük, ben de diyor, epsilon'dan küçük olanı diyor, delta'lıyı git gide git gide benzetmeye çalışırım. Böylelikle de delta ile epsilon arasında bir mantı bulurum diyor. Mantığı anlamayan var mı? Bak sesini çıkarsın sonradan gidip dolaşıp dolaşıp ben anlamadım diye geliyormuş. Evet, tamam mı?
+
+399
+01:20:54,868 --> 01:20:59,228
+Tamam mı? Peki tamam dediniz. Bak ben karışmıyorum. Bunu böyle yazdık.
+
+400
+01:20:59,699 --> 01:21:24,199
+Bu aynı zamanda kimden küçüktü? Bu epsilon'dan küçüktü aynı zamanda. Tamam, peki. Bu da bu epsilon'dan küçüktü, bu da bundan küçük kaldı. Peki, ben o zaman yeni halini yazıyorum. Aferin, valla çok takdir ettim seni. Arkadaşlar pek cevap vermiyorlar ama canları sağ olsun. O zaman şuradaki hikayeye gidince, şunun yerine de bence kök x yaz. Hadi sen çok yoruldun, ben de yardım edeyim biraz sana.
+
+401
+01:21:24,948 --> 01:21:28,467
+Heh, tamam hocam, ben de öyle yazacaktım, sağ olun, teşekkür ederim.
+
+402
+01:21:29,587 --> 01:21:40,887
+Evet, oldu mu şimdi? Mutlak değer x'in yerine de kara kök x kare yazdı arkadaşınız. Doğru yazdı mı? Tamam mı? Anlayanlar bir tuşa bassın.
+
+403
+01:21:42,648 --> 01:21:50,347
+Güzel. Hocam, şimdi ben biraz daha bunu büyütmek istiyorum. E büyüt bakalım, besle büyüt bakalım, ne olacak? Aman, evet.
+
+404
+01:21:50,735 --> 01:22:00,395
+İnşallah karga gibi olmaz, gözümüze oymasın, dikkat et. Yok yok hocam, bir şey olmaz. Buraya kara yazacaktım yalnız. Tamam, yaz kareyi, yorumuşluğun.
+
+405
+01:22:00,895 --> 01:22:09,655
+Hocam, şimdi bunu büyütürsek biz daha büyük hale geldi, x kara artı y kara haline geldi. Hatta onu da böyle renkli kalemle yazalım, arkadaşların kafası karışmasın.
+
+406
+01:22:10,131 --> 01:22:23,871
+Tamam, güzel. Şimdi hocam, bu da, bu da, bu da, bu da, bu da, bu da, şöyle yazabilirim ben bunu. Dört, dört, dört, dört delta. Tamam, bu aynı zamanda dört deltadan da küçük.
+
+407
+01:22:30,195 --> 01:22:47,135
+Evet. Eskiden de bu epsilondan da küçüktü. Evet. O zaman ben bununla bunu birbirine eşit alabilirim hocam. Demek ki delta epsilon bölü dörde eşitmiş. Bravo valla. Bravo. Maşallah. Oldu mu arkadaşlar?
+
+408
+01:22:52,148 --> 01:23:17,488
+Tamam değil mi? Evet. Şimdi yolun, evet, bir şey söyleyeceğim de, şimdi diyeceksiniz ki hocam ama niye öyle diyorsunuz? Yani bir arpa boyu kadar ancak yol gittik. Esas sıkıntımız burada değil. Burası hakikaten sıkıntılı bir kısım ama esas sıkıntı burada başlamıyor. Daha başka bir yerde başlıyor. Şimdi oraya kadar gelip bırakacağım. Çünkü öbür sınıfta da oraya kadar geldim.
+
+409
+01:23:18,963 --> 01:23:36,844
+Tamam mı burası sevgili arkadaşlar? Burası tamam mıdır? Tamam değil mi? Bir de size şey ne denir ona? Bazı örnekler vereceğim. Onu dersin sonunda vereceğim. Onu da hafta sonu...
+
+410
+01:23:36,916 --> 01:24:03,335
+Tabii hafta sonu bakamazsınız belki, başka sınavlarınız var ama sınavlar biter bitmez hemen o FÖ'ye başlayın. Ödev olarak FÖ'ye yazacağım. O sorulara çalışın. Sonra anlamadığınız yerleri her dersten evvel 10 dakika geliyorum, oralarda çözeceğiz. Ve sınava kadar o soruları eritmemiz lazım.
+
+411
+01:24:03,796 --> 01:24:18,176
+Sebebini söyleyelim çünkü oklar da yine şeye dahil. Evet, tamam mı sevgili gençler? Peki bunu da hallettik. Maşallah, evet. Buraya kadar geldik. Önemli uyarı.
+
+412
+01:24:20,676 --> 01:24:29,176
+Of, of. Şimdi bakalım. Birazdan bahsedeceğimiz, ki bahsetmeyeceğim. Niye bahsetmiyoruz?
+
+413
+01:24:29,876 --> 01:24:32,356
+Çünkü öbür sınıfa da bahsetmedim, soru çözdüm.
+
+414
+01:24:33,596 --> 01:24:34,956
+Ondan size de öyle yapacağım.
+
+415
+01:24:35,836 --> 01:24:48,976
+Birazdan bahsedeceğimiz iki kat limit ya da ardışık limit veya bir yola bağlı limit hesabı limitin var olduğunu göstermek için asla yeterli değildir.
+
+416
+01:24:50,456 --> 01:24:51,296
+Ne?
+
+417
+01:24:53,587 --> 01:24:58,247
+Yani o kadar işlem yapacağız, limit var mı diyemeyecek miyiz? Evet, diyemeyeceğiz.
+
+418
+01:25:00,127 --> 01:25:05,747
+O zaman niye yapıyoruz ki? Madem diyemeyeceğiz de biz boştan yere deli miyiz? Biz hocam niye yapıyoruz ya?
+
+419
+01:25:06,847 --> 01:25:12,887
+Anacığım, farklı farklı yollarla yapacağız ki inşallah farklı bir değer bulalım diye.
+
+420
+01:25:13,887 --> 01:25:16,747
+Ya bulamazsak? İşte bulamazsak halimiz nice.
+
+421
+01:25:17,747 --> 01:25:19,188
+Ya, evet.
+
+422
+01:25:20,180 --> 01:25:39,680
+Yani mesela bir yolla bulacağız, 5 çıktı. Öbür yolla bulacağız, 5 çıktı. Beri yolla bulacağız, 5 yıl çıktı. 50 tane yolla yapıp da 5 çıksa limit 5'tir diyemeyeceğiz anacım ya. Ama siz dediniz ki hemen bir ayşamada koyunca 5 çıkınca. Onlar hariç. Onu başta söyledik, bitti artık. Diğerlerinden bahsediyorum.
+
+423
+01:25:43,220 --> 01:25:50,539
+Bu yöntemlerle farklı sonuç bulabilirsek eğer, hocam sizin dediğinizi diyor, oku bakayım ne diyor.
+
+424
+01:25:51,039 --> 01:25:59,020
+Bu yöntemlerle farklı sonuç bulabilirsek eğer, bu durumda sadece limitin olmadığını söyleyebiliriz.
+
+425
+01:25:59,439 --> 01:26:02,619
+Anam çok zor, ya valla zor.
+
+426
+01:26:02,619 --> 01:26:11,220
+Bu yöntemleri birçok farklı yolla dener ve hep aynı sayıyı, örneğin 5'i bulsak biliriz.
+
+427
+01:26:11,220 --> 01:26:34,300
+Demin dediğinizi diyor hocam. Evet neymiş? Bu limitin 5 olduğunu asla ifade etmez diyor. Evet arkadaşların yanılgısı bu. Böyle 5-6 yolla yaptığı zaman zannediyor ki 5 limittir. Evet. Peki bir yol boyunca limitin hesabı diyor. Bu ne demek hocam? Bu şu demek. Şimdi hemen bunu konuşalım.
+
+428
+01:26:35,507 --> 01:26:43,787
+Bu şu demek, mesela, mesela, mesela. Bunları tabii konuşacağız. Önce şu anda böyle bir temel atma töreni yapıyoruz gibi düşünebilirsiniz.
+
+429
+01:26:52,340 --> 01:26:53,280
+Niye böyle oldu?
+
+430
+01:26:54,600 --> 01:26:56,119
+Bir dakika çocuklar.
+
+431
+01:26:58,159 --> 01:26:59,320
+Anoteyit açalım.
+
+432
+01:26:59,640 --> 01:26:59,760
+Evet.
+
+433
+01:27:00,640 --> 01:27:02,340
+Şimdi diyelim ki bizim...
+
+434
+01:27:06,836 --> 01:27:08,276
+Bir tane noktamız.
+
+435
+01:27:08,876 --> 01:27:09,836
+Velev ki...
+
+436
+01:27:15,028 --> 01:27:18,648
+1-2 noktamız olsun. Şurada da herhangi bir
+
+437
+01:27:23,507 --> 01:27:30,507
+Z eşittir, efiksiyel olsun. Evet. Ve de bana denilsin ki, mesela, limit...
+
+438
+01:27:36,500 --> 01:27:47,500
+Bunun limiti nedir diye bana sorulsun. Tamam mı? Sen hemen bu birle ikiyi çat diye yerine koydun, böyle belirsizlik falan çıktı, bir şey bulamadın. Tamam mı? Üzgünüm.
+
+439
+01:27:47,923 --> 01:28:14,123
+İşte efendime söyleyeyim, böyle cırt cırt yok edeyim, çarpanlarını ayırırım falan dedin. Ondan da iş yok, ondan da çıkmadı. Sen mecburen ne yapacaksın? Şimdi burada yapılan şey, şurada bir eğri ya da bir doğru uydurmak. Mesela mualla dedi ki, ben herhangi bir C eğrisi boyunca, mesela muallanınki C1 olsun. Ben C1 eğrisi boyunca dedi, bu limiti hesaplayacağım dedi.
+
+440
+01:28:14,612 --> 01:28:40,912
+Mualla dedi ki, yalnız Mualla'nın dediği yerden muhakkak o limitin geçmesi lazım. Mualla dedi ki, x yerine bir koyunca y2 oluyor mu? Oluyor. Bak, yazmışım. Burada ne demişim? Limitin hesabı. Hesaplamak için öncelikle bu eğlenin söz konusu olan noktadan geçmesi gerekir. Mualla'nınki bu. Tamam mı?
+
+441
+01:28:41,332 --> 01:29:07,311
+Geldi şimdi buraya. X artı 1 yazdı, Y'yi kaldırdı ortalıkta. Tamam mı? Anladınız mı? Bu durumda artık Y'nin 2'ye gitmesi gibi bir durum söz konusu olmadı. Bu limit mat 1'deki gibi bir limit oldu. Mualla bunu buldu, buldu, buldu, buldu. Sonuçta 5 buldu. Tamam mı? Mualla limit 5'tir diyemez. Anladınız mı olayı?
+
+442
+01:29:10,579 --> 01:29:19,779
+Cemil geldi. Dedi ki, ben de dedi, y eşittir, 2x boyunca yaklaşacağım dedi. Tamam mı?
+
+443
+01:29:29,363 --> 01:29:54,423
+Ondan sonra, ben de dedi, y eşittir 2x. Tamam yavrum, hodri meydan dedim. 2x koydu buraya. Bu gitti. Ondan sonra bu kaldı. Bu da yine böyle y yerine 2x koyunca mat birdeki gibi bir limit oldu. Buldu, buldu, buldu, buldu. Bu da 5 buldu bak. Allah Allah. Ama çocuk da üzüldü. Dedi, hocam 5 bulduk ama limit 5'tir diyemeyiz ya dedi.
+
+444
+01:29:56,819 --> 01:30:18,659
+İdran geldi. Y eşittir, efendime söyleyeyim. 3x, eksi 1 yazdı. Uzatmayayım. Yerine koyunca sağlanıyor mu? Sağlanıyor. Buldu o da 5 buldu. Ne zaman ki Hüseyin geldi.
+
+445
+01:30:25,171 --> 01:30:27,091
+5x-3 yazdı.
+
+446
+01:30:30,351 --> 01:30:33,711
+Buldu sonuç 6'dır, oh dedi limit yoktur.
+
+447
+01:30:34,991 --> 01:30:43,711
+Olay budur. Burayı anladık mı? Bu bir yol boyunca limitin hesabı. Burası anlaşıldı mı? Anlaşıldıysa bir tuşa bas. Önemlidir.
+
+448
+01:30:48,275 --> 01:31:04,295
+Çok önemlidir. Şimdi burayı anlayınca diyor ki, tamam ben limiti çözdüm. Anacığım bu bu kadar biter mi ya? Daha kaçıncı sayfadayız biz? Beş. Bu limit konusu on sayfalık konu. Tamam mı? Şimdi burada bak tekrar uyaralım demişim.
+
+449
+01:31:06,195 --> 01:31:34,195
+Evet hayatım, aynen öyle. Ama bu bu kadar basit değil. [öğrenci], çok dikkatli ol. [öğrenci], çok dikkatli ol. Şimdi, öğrencilerin düştüğü bir başka hatayı söyleyeceğim. Bir C eğrisi boyunca limit hesaplamak ve bir değer elde etmek. Limitin var olduğu anlamına gelmez. Başka eğriler kullanarak aynı değer bulunsa dahi limit bu bulunan değerdir bile diyemeyiz dikkat yazmışım. Burada hepsini yazmışım. Söylediğim şeyler...
+
+450
+01:31:34,195 --> 01:31:40,395
+Yani burada yalnız başına çalışsan da var. Bir sıkıntımız daha var. Tamam mı?
+
+451
+01:31:41,336 --> 01:31:54,296
+İki kat limit mesela, bunu da konuşalım. İki kat limit hani böyle saklasak da mı saklasak, ne diyor, seri saklasak da mı saklasak, seri saklama saklasak diye böyle bir tekerleme var diye çocukken oynuyorlar.
+
+452
+01:31:54,484 --> 01:32:22,484
+Efendime söyleyeyim, sırasını da yerine koyuyorsun. Tamam mı? Buna ardışık limit diyor. Mesela atıyorum, buradan şanslıysan eğer, buradan 3 buldun, buradan 2 buldun, tamam mı? Ne yapıyorsun arkadaşım? Ayak bir adım öne, omuzlar 5 kere sallanıyor böyle, tamam mı? Foklora oynayan gibi, Allah limit yokmuş yaşasın diye. Tamam, böyle oynuyorsun yani. Böyle soru gelirse ne yapıyormuşuz? Hem doğru cevabı işaretleyip, arkadan.
+
+453
+01:32:22,484 --> 01:32:36,684
+Buradan da bir güzel seviniyormuşuz. Tamam mı? Peki ya aynı değer çıkarsa? Aynı değer çıkarsa geçmiş olsun anacığım. Ardaşık limit vardır ama limit vardır diyemeyiz gene.
+
+454
+01:32:38,264 --> 01:32:43,924
+Ay hocam ömrü mü yedin? Vallahi doğru anacığım. Seninle benimle. Peki.
+
+455
+01:32:44,564 --> 01:33:07,644
+Yani şimdi hocam bunu buldum, 5 çıktı, onu buldum, 5 çıktı. Velev ki deminki Hüseyin de gelmedi, hep 5 bulduk biz Cemil cümle. Ne olacak o zaman? Limit vardır diyemeyeceksin. Öyle birbirinize bakışıp duracaksınız. Gerçekten mi? Gerçekten. Gerçekten. Şimdi esas sıkıntımızın olduğu noktaya gelelim.
+
+456
+01:33:09,908 --> 01:33:35,408
+Çocuk burayı da anlıyor. Şimdi bu yolda takılanlar var. Yani buraları, mesela bunu anlamayan var, burayı anlamayan var. Şimdi şuraya kadar ben buradaki arkadaşların tamamının bunları anladığını anladım. Şimdi bir de sizin içinizde, ya kolaymış abi tamam, farklı bulana kadar devam ediyormuşuz. Bitti artık, kapat hadi, tamam bitti, limit bu kadar. Değil. Esas sıkıntının olduğu yere geliyorum. Dikkat et.
+
+457
+01:33:37,268 --> 01:33:39,828
+Soru çözmedik, bunlarla ilgili soruları çözeceğiz.
+
+458
+01:33:41,508 --> 01:33:46,228
+Şimdi, bunlar da aynı, falan filan filan.
+
+459
+01:33:46,628 --> 01:33:48,387
+Bir dakika dur, yola bağlı.
+
+460
+01:33:49,688 --> 01:33:52,228
+Şurada bir tane örnek. Bunları çözeceğiz.
+
+461
+01:33:52,928 --> 01:33:55,708
+Heh, esas zırnanın zırt dediği yer burası.
+
+462
+01:33:55,847 --> 01:34:00,268
+Çocuk zannediyor ki, ben atomu parçaladım, Allah Allah benleyim.
+
+463
+01:34:00,268 --> 01:34:00,847
+Bak.
+
+464
+01:34:03,628 --> 01:34:04,387
+Şu.
+
+465
+01:34:04,819 --> 01:34:23,159
+Bunları göreceğiz. Daha şimdi ben ön fragman, ön gösterelim. Bak, diyelim ki senin fonksiyonun orjindeki limiti soruyor sana. Diyor ki, bu da böyle bir tane de şey var, yüzey var. Sana diyor ki orjindekini bul. Tamam mı?
+
+466
+01:34:31,315 --> 01:34:36,655
+Her yönden yaklaşırım anacığım. Çok mahirim ben. Çok marifetliyim. Maşallah.
+
+467
+01:34:37,595 --> 01:34:44,775
+Y eşittir, mx doğrusu boyunca yaklaşırım. Hakikaten bak buna 0 yazdım. Buna da 0 yazdım.
+
+468
+01:34:45,235 --> 01:34:51,336
+Siz de dediniz ki bana x 0'a giderken, y de 0'a giderken f x virgül y dedim.
+
+469
+01:34:51,336 --> 01:34:58,336
+Ben de bu tür götürdüm yerine mx yazdım. Sonuçta m'ye bağlı çıkarsa...
+
+470
+01:34:59,347 --> 01:35:17,488
+Hiç bir şey yapmana gerek yok. O zaman da yine omuz öne, ayak bir adım öne, omuzlar 3 kere 4 kere sallanıyor. Allah! diyorsun böyle. Allah'ım limit yokmuş ne güzelsin ya Rabbim diyerekten limit yok diye işaretliyorsun.
+
+471
+01:35:24,659 --> 01:35:39,559
+M'ye bağlı çıkmaması durumunda ortaya çıkıyor. Zannediyor ki bu M çok kuvvetli bir şey. Yani bu M aldı bizi, götürdü, uçurdu, kaçırdı, okyanusları açtık biz. Allah Allah bu M neymiş ya Rabbim?
+
+472
+01:35:39,988 --> 01:36:01,307
+Tamam mı? Halbuki böyle bir şey yok. Sadece yola bağlı çıkınca başka bir inceleme yapmana gerek yok. Garanti limit yoktur. Dersin noktayı koyarsın. Ardaşık limit incelemene gerek yoktur. İki kat limit bakmana gerek, yani iki kat ardaşık aynı şey. İşte başka bir eğri ya da doğru boyunca hesap etmene gerek yoktur.
+
+473
+01:36:07,988 --> 01:36:23,748
+Değilse, bu, limitin olduğu anlamına gelmez. Öğrenci burada şaşırıyor. Esas Zurnanın zırt dediği yer burası işte. Odaya gelenler bu arkadaşlar. Ama ben bunu da buraya yazdım. Bak dikkat et. Ne diyor burada? Hemen bakalım.
+
+474
+01:36:25,203 --> 01:36:34,823
+Burada m bölü 1 artı m kare çıkmış. Her farklı yol için farklı değer çıkar. Çünkü mesela atıyorum y eşittir 2x için bu 2 bölü 1 artı 2'nin karesi.
+
+475
+01:36:35,183 --> 01:36:38,723
+y eşittir 3x için 3 bölü 1 artı 3'ün karesi. Değil mi?
+
+476
+01:36:39,343 --> 01:36:48,603
+Şimdi, yani limit yola bağlıdır. Yol değiştikçe değişir, limit yoktur. Tamam mı?
+
+477
+01:36:52,800 --> 01:36:54,880
+Tamam, onu yazalım.
+
+478
+01:36:58,547 --> 01:37:16,227
+Meye bağlı değil çıktı. Yine bir şey söylenemez. Ay başa mı döndük? Evet geçmiş olsun. Başa döndük. Arkadaşların sıkıntısı buradadır. Meye bağlı değilse zannediyor ki limit vardır. Hayır limit vardır diyemezsin.
+
+479
+01:37:17,108 --> 01:37:36,868
+Burası anlaşıldı mı? Burada bunu yapıyor ve noktayı koyuyor ve ben doğru buldum diye kaleme atıp gidiyor. Ondan sonra da tam puan tabii ki alamıyor. Tamam mı? Çünkü limit yok. Başka yollarla baksaydı olmadığını görecekti ama bakmıyor. Ve de limit var zannediyor.
+
+480
+01:37:39,060 --> 01:37:49,520
+Tekrar uyarı, limit yola bağlı olmasaydı bile yine limit vardır diyemezdik. Anladınız mı olayı? Burası çok önemlidir.
+
+481
+01:38:06,707 --> 01:38:24,867
+Sizinle gurur duyuyorum, teşekkür ederim. Maşallah, yani bu kadar çabuk, maşallah. İnşallah notlarınızda da böyle güzel, efendime söyleyeyim, sonuçlar gelir. Bunlar hakikaten böyle hep, ben kendimi sürekli paralıyorum, arkadaşlar dikkat edin, arkadaşlar, arkadaşlar.
+
+482
+01:38:25,047 --> 01:38:33,827
+Onlar sınav kağıtları geliyor, Allah'ım yine aynı şey, saçım bozulmayacağım yarabbim. Yani böyle bir şey yok, yapma dediğini mazçuktan yapan çocuk gibi yani.
+
+483
+01:38:34,515 --> 01:38:50,875
+Notlar çok arttı, gözümüz korkuyor hocam. Ay [öğrenci]'cim gerçekten, benim de gözüm sizin namınıza korkuyor. Gerçekten çok konu birikti yavrum. Ne deseni saklasınız. Ne deseni saklasınız çocuğum. Ama tabii. Güzel çalışalım, ne yapalım?
+
+484
+01:38:51,412 --> 01:39:09,172
+Gülerken birdenbire surat asın. Allah'ım, surat şeylerine çok gülüyorum ben. Peki dur, bir şey söyleyeceğim. Şurada stop share diyeyim. Size başka bir şey yüklemek istiyorum. Önce bir hazırlayayım şurada. Bir dakika, bir müsaade et.
+
+485
+01:39:15,828 --> 01:39:28,968
+Ay bana böyle şeyler söylemeyin çocuklar, bitirecek, bitirecek, Allah'ım yarabbim ya. Korona konusunda bile bu kadar şey değiliz, pesimi kötümser değiliz yahu, bitirecek, bitirecek. Ne yapalım ya? Aman.
+
+486
+01:39:33,587 --> 01:39:38,247
+Dur şu uygulamayı açınca şuradan size soruları verip şunlara çalışırsınız.
+
+487
+01:39:39,647 --> 01:39:42,367
+Vallahi elimden gelen her şeyi yapıyorum. Ne yapayım artık?
+
+488
+01:39:43,327 --> 01:39:43,787
+Vallahi yok.
+
+489
+01:39:44,927 --> 01:39:46,887
+Korona konusunda daha mükemmeliyiz.
+
+490
+01:39:47,267 --> 01:39:48,087
+Dur açıldı.
+
+491
+01:39:48,487 --> 01:39:49,347
+Tamam dur.
+
+492
+01:39:49,907 --> 01:39:51,467
+Şimdi şunu da paylaşıvereceğim.
+
+493
+01:39:51,587 --> 01:39:53,187
+2 dakika artık bitti şey yok.
+
+494
+01:39:53,187 --> 01:39:57,687
+Şunu paylaşalım.
+
+495
+01:39:58,687 --> 01:39:59,667
+Dur.
+
+496
+01:40:00,000 --> 01:40:01,760
+Yine chat kutusu gitti çocuğum.
+
+497
+01:40:03,380 --> 01:40:06,500
+Şimdi, ay hocam bunlar da mı var?
+
+498
+01:40:06,740 --> 01:40:08,000
+Yok yok, hayır bunlar.
+
+499
+01:40:08,780 --> 01:40:11,600
+Bunları sene sonunda göreceğiz arkadaşlar.
+
+500
+01:40:12,340 --> 01:40:13,440
+Ben nime seveyim.
+
+501
+01:40:15,720 --> 01:40:18,000
+Şimdi, ama bunları da tabii...
+
+502
+01:40:18,868 --> 01:40:44,812
+Sene sonunda zaten bunları yapacağız integral konusunda. Ben şimdi öbür sınıfı bırakacağım için onlara bu soruları verdim. Bunların hepsi çıkmış sorudur. Hepsi. Bak, hepsi çıkmış sorudur ve türlerinin çok güzel örnekleri gerçekten. Şimdi bak, bunların hepsi çıkmış sorudur. Bunları şu anda size soramazlar ilk sınavda. Bunu da soramazlar.
+
+503
+01:40:45,395 --> 01:40:48,296
+Neyi sorabilirler? Aha burası. Yazıyor.
+
+504
+01:40:53,363 --> 01:40:55,264
+Çalış.
+
+505
+01:40:59,252 --> 01:41:05,192
+Hem de numara verelim de, hangisini çözemezsem filan söylersin bana. Tamam mı?
+
+506
+01:41:07,271 --> 01:41:11,712
+Açtık mı? Ödev 3, ödev 3 beton gibi soru.
+
+507
+01:41:18,100 --> 01:41:44,120
+Daha sonra bak böyle sınavda gelir haberiniz olsun. Konuşacağız zaten. Nasıl olsa inşallah sene sonuna kadar bir aradayız. Öbür sınıfı bırakıyorum ya. Aktarma var yani. Ben bırakmıyorum. Hani aa hoca bizi bırakmıyor, onları bırakmıyor. Öyle bir şey yok yani. Sene başından belliydi. Bütün ders şeylere eşit olsun diye. Ödev kaçta kaldık biz? Ödev 4 mu oldu mu? Kaç oldu mu? Konuşurken 3 mü? 3.
+
+508
+01:41:52,532 --> 01:41:53,351
+Altı
+
+509
+01:41:59,731 --> 01:42:01,472
+Ödev 7
+
+510
+01:42:01,472 --> 01:42:05,152
+Amanın!
+
+511
+01:42:06,192 --> 01:42:08,192
+Ödev 8
+
+512
+01:42:08,192 --> 01:42:09,332
+Evet
+
+513
+01:42:14,644 --> 01:42:32,363
+Aradaki soru ne yavrum? Aradakiden kasıt şimdi yazdıklarımız mı? Baştakiler. Daha o konuları anlatmadım Bursi Allah aşkına. Zaten dünyanın başımızdaki karı eritelim önce. Dünya kadar konumuz var ayol.
+
+514
+01:42:33,235 --> 01:42:48,216
+Baştaki soruları mı? Sene sonunda çözeceğiz onu yavrum. Ondan sonra vereceğim. Onları şey geldikçe, konusu geldikçe hep onları vereceğim size. Siz merak etmeyin. Ben sizi gerçekten düşünüyorum. Sana öyle söylüyorum arkadaşlar. Tamam mı?
+
+515
+01:42:52,307 --> 01:43:03,868
+Tamam mı? Onlara daha çok var. Evet. Evet, sizi öbür derse de yetiştirdim. Efendime söyleyeyim, hepsini hallettik.
+
+516
+01:43:04,532 --> 01:43:26,992
+Tamam değil mi? Önümüzdeki hafta sınav haftası. Sınavlarınız var. Başarılar diliyorum. Muaffakiyetler diliyorum. Zihin açıklıkları diliyorum. İnşallah bir sonraki hafta bana böyle uça uça gelirsiniz. Ay hocam sınavlarımız çok güzel geçti falan diye biz de limit konusundan kaldığımız yerden devam ederiz arkadaşlar.
+
+517
+01:43:28,212 --> 01:43:47,452
+Evet, yarın 23 Nisan bayramınızı kutluyorum. Nice güzel günler görmenizi temenni ederekten, başarılar dileyerekten dersi sonlandırıyorum. Hep beraber inşallah, hep beraber. Bir de şu virüsten kurtulsak arkadaşlar.
+
+518
+01:43:49,555 --> 01:44:05,115
+Bütün dünya olarak tabii. Sadece bizim kurtulmamız yetmez. Çünkü başka yerlerde olunca pıt pıt pıt bize de geliyor tekrar. İyi günleriniz olsun efendim. Kapatıyorum. Sorusu olan var mıdır? Allah'a ısmarladık.
