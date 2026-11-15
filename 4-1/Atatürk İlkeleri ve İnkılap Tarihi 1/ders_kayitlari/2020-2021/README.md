@@ -11,3 +11,4 @@
 | 18 | Güz | — | [sube_18/](sube_18/) |
 | 22 | Güz | Turhan Ada | [sube_22/](sube_22/) |
 | 29 | Güz | — | [sube_29/](sube_29/) |
+| 38 | Güz | — | [sube_38/](sube_38/) |
