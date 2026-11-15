@@ -1,7 +1,7 @@
 # Graph Report - YTU_Bilgisayar_Muhendisligi_Arsiv  (2026-11-15)
 
 ## Corpus Check
-- 11561 files · ~70,057,268 words
+- 11561 files · ~70,059,689 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 10043 file(s) not represented in the graph (top: .srt 4415, .xml 855, .meta 712)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `827e44a1`
+- Built from commit: `60d9fe83`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -38001,13 +38001,13 @@ Nodes (3): KMP(), main(), tekrarhesap()
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Özyineleme (recursion)` connect `Yapısal Programlamaya Giriş 2020-2021 Ders Kayıtları (BLM1012, Dr. Ahmet Elbir, Şube 2)` to `Problem Solving and Program Design in C (Hanly, Koffman, 7th Ed.)`, `Chapter 9 Recursion`, `Insertion Sort`, `slaytlar.pdf`, `Bölüm 3: C'de yapısal program geliştirme`, `RSA şifreleme`, `BLM2031 Yapısal Programlama 2022 Slaytları`, `Recursion.pdf (BBG2 Ders 8, Amasyalı)`, `introduction_to_procedural_programming/lablar/lab_3/lab_3.c`?**
-  _High betweenness centrality (0.064) - this node is a cross-community bridge._
+  _High betweenness centrality (0.066) - this node is a cross-community bridge._
 - **What connects `data`, `next`, `data` to the rest of the system?**
   _26956 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `stdio` be split into smaller, more focused modules?**
   _Cohesion score 0.002102264789960919 - nodes in this community are weakly interconnected._
 - **Why does `Temizlik robotu yol sayısı (özyineleme)` connect `introduction_to_procedural_programming/lablar/lab_3/lab_3.c` to `Yapısal Programlamaya Giriş 2020-2021 Ders Kayıtları (BLM1012, Dr. Ahmet Elbir, Şube 2)`?**
-  _High betweenness centrality (0.063) - this node is a cross-community bridge._
+  _High betweenness centrality (0.065) - this node is a cross-community bridge._
 - **Should `assignment2/cs231n/layers.py` be split into smaller, more focused modules?**
   _Cohesion score 0.02053641566603075 - nodes in this community are weakly interconnected._
 
