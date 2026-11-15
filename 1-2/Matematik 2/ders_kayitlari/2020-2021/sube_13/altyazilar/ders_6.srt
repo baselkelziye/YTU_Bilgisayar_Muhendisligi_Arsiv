@@ -1,0 +1,3487 @@
+1
+00:00:16,115 --> 00:00:17,455
+Günaydın efendim.
+
+2
+00:00:27,283 --> 00:00:28,843
+Nasılsınız, iyi misiniz?
+
+3
+00:00:32,204 --> 00:00:33,984
+Sorunuz var mıdır?
+
+4
+00:00:36,463 --> 00:00:38,603
+Hemen beyaz tahtamı açıyorum.
+
+5
+00:00:46,963 --> 00:00:48,323
+Tam sayfa yapıyorum.
+
+6
+00:00:50,323 --> 00:00:53,843
+Evet, bugünün menüsünün başlığını atalım.
+
+7
+00:00:54,043 --> 00:00:57,363
+Oran testi ile kuvvet serilerinin yakın farklığını incelemek.
+
+8
+00:00:57,444 --> 00:01:00,963
+Bu arada sorunuz varsa siz de onları sorun.
+
+9
+00:01:02,843 --> 00:01:06,584
+Başlığı atalım çünkü o yukarıya yazmak biraz sıkıntılı biliyorsunuz.
+
+10
+00:01:16,275 --> 00:01:19,676
+Günaydın efendim. Ben de iyiyim. Teşekkür ederim.
+
+11
+00:01:38,004 --> 00:01:45,924
+Bak yine yazmıyor burası. Evet. Evet, oran testi ile kuvvet serilerinin yakınsaklığını incelemek.
+
+12
+00:01:46,683 --> 00:01:55,424
+Hocam, niye oran testi? Kök testinden incelenmez mi? Konuşacağız zaten bunları. Geçen derste ilgili sorusu olan var mı diye biliyorsunuz bilgisayarı. Erken açtık.
+
+13
+00:02:01,652 --> 00:02:11,012
+Evet, sorusu olan varsa hem chatten de yazabilir, hem mikrofonunu da açabilir. Ben şu an beyaz tahta doğduğum için kimin konuştuğunu da göremiyorum, isim de göremiyorum.
+
+14
+00:02:11,752 --> 00:02:17,391
+Onun için daha kutlata konuşabilirsiniz. Gerçi ne olacak, ne diyorsun?
+
+15
+00:02:17,391 --> 00:02:29,052
+Ne diyorsun yani? Bazen insanlar, işte bu soruyu soruyorum, bana ne derler falan diye bazıları çok hassas olabiliyor. O açıdan yani kimse görmüyor kimseleri.
+
+16
+00:02:29,460 --> 00:02:32,540
+Onun için de rahatsınız yani. Rahat rahat da sorunuzu sorun.
+
+17
+00:02:35,700 --> 00:02:41,460
+Evet, oran testiyle kuvvet serilerini niye inceliyoruz da başka incelemiyoruz.
+
+18
+00:02:42,060 --> 00:02:45,100
+Bir de ben mesela öğrenciken şunu kafama takmıştım.
+
+19
+00:02:45,980 --> 00:02:49,960
+Şimdi 5 tane test görmüştük. 5 testin başlığı şöyleydi.
+
+20
+00:02:50,280 --> 00:02:55,140
+Pozitif terimli seriler için bazı testler.
+
+21
+00:02:55,699 --> 00:03:15,939
+Ondan sonra da alterneyi görüyoruz. Değişik işaretliği görüyoruz. Sonra diyor ki, oran testiyle kuvvet serilerini incelebiliriz. İyi de kuvvet serilerinin x'in yerine eksi koyduğun zaman veya bazen alterneylik olduğu zaman, niye sesim boğuklaştı? Panda çalışmıyor halbuki. Bu senin nokta oluyor ya.
+
+22
+00:03:19,060 --> 00:03:22,459
+Dersin zamanında mı alakası var? Belki hatta çok yoğun.
+
+23
+00:03:23,860 --> 00:03:30,360
+Bugün, o çok etkiliyor biliyorsunuz, günlük, günlük programın yoğunluğu çok etkiliyor.
+
+24
+00:03:31,360 --> 00:03:46,080
+Evet, şimdi nasıl? Şimdi nasıl? Şu an oluyor. Şu an tetemden uçak geçiyor acaba, ondan dolayı mı? Bilemedim. Şu an sesim iyi mi?
+
+25
+00:03:49,651 --> 00:04:06,603
+İyi mi? Ha iyi, tamam. Tamam. Tamam. Şimdi, ben öğrenciyken işte kafama onu takmışım. Şimdi 5 tane test öğretiyorlar, başına da yazmışlar pozitif terimli seriler için. İyi. Ondan sonra da...
+
+26
+00:04:06,740 --> 00:04:28,960
+Hem böyle bir şey soruyor mesela işte. X üzeri n falan filan burada n artı bir şey. Bazen burada eksi bir üzeri bilmem kim falan. Böyle bir şey. Şimdi x'in yerine eksi 2 de yazılabilir. Eksi 2'nin en inci kuvveti alternelik de getirebilir. Buradan da bir eksilik var. Yani kısacası bir kuvvet serisi hem negatif hem de pozitif değerler alabiliyor.
+
+27
+00:04:29,684 --> 00:04:51,644
+Ondan sonra da başlık atıyor, oran testiyle kuvvet serileri. Sen oran testini pozitif terimli serileri kullanacağım diye başlık açtığın altına anlattın. Sonra da oran testiyle kuvvet serilerini incelemek diyorsun. Değil mi? Enteresan değil mi? Sizin aklınıza geliyor muydu mesela böyle bir şey? Gelir, ne zaman gelir aklınıza onu da söyleyeyim.
+
+28
+00:04:52,180 --> 00:05:00,759
+Hani sınava doğru iyicene çalışırsın ya, o zaman insanın aklına bütün sorular geliyor ama vakit geçmiş olacak diye bir şarkı var ya, onun gibi oluyor.
+
+29
+00:05:00,759 --> 00:05:13,300
+Çünkü neden? Hoca yanında değil artık. Efendime söyleyeyim, dersler anlatılmış, etmiş. Sen bir evvelki gün işte aklına geldi, çay demledin, aman da ders çalışayım da yarın da sınav var dedin.
+
+30
+00:05:13,500 --> 00:05:16,720
+O zaman bütün sorular insanın aklına çalıştığı anda gelir.
+
+31
+00:05:17,812 --> 00:05:30,812
+Peki burada yapılan şey nedir? Şimdi biz dün ne öğrendik? Değişik işaretli bir serinin yakınsak olduğunu anlayabilmek için en önemli yapılacak şey neydi? Hatta bir arkadaş da soru sormuştu neydi dedim.
+
+32
+00:05:30,812 --> 00:05:40,832
+O çok önemsemediği için söylememiştim. Mutlak değer alıyordunuz. Mutlak değer aldığınız zaman artık zaten o pozitif terimli bir seri haline geldi.
+
+33
+00:05:45,812 --> 00:06:06,412
+Katlı karalığı aslında o serinin mutlak yakınsak olduğu aralıktır. Burası anlaşıldı mı? Tekrar edeceğim ben bunu da. Şimdiden de söyleyeyim yani burada olan arkadaşlar için. Burası anlaşıldı mı? Anlaşıldıysa bir tuşa bas bakayım. Tekrar edeceğim de sen bak erken gelmişsin sana iki kere baskı olsun daha güzel yani. Evet.
+
+34
+00:06:07,060 --> 00:06:20,060
+Tamam mı? Şimdi o zaman insanın aklına şu da gelir. Hocam, oran testinden başka testler de var. Onları da uygulayabilir miyiz? Bence uygulayabilirsin. Ama hepsini değil. Mesela kimi uygulayamam?
+
+35
+00:06:20,819 --> 00:06:42,659
+Mesela integral testini uygulayamazsın. Neden? Neden uygulayamayayım hocam? Bunun başı gelme. Şimdi burada sen oran testi, şey integral testinde Nidenin nesine göre integral alıyordun. Öyle değil mi? Nidenin nesine göre integral. Bir de başımıza x çıktı. İntegrali kime göre alacağım? Nidenin nesine göre. x'i ne yapacağım o zaman?
+
+36
+00:06:44,739 --> 00:06:45,899
+Hı, ya.
+
+37
+00:06:47,187 --> 00:07:03,367
+Yani o teste göre ıraksak olabilmesi için o integralin, o improper integralin yakınsaması lazım. İçinde bilinmedik bir sürü x var. Hangi durumda bu yakınsak, hangi durumda ıraksak diye integrali çözdükten sonra nasıl karar vereyim? Zor yani.
+
+38
+00:07:04,127 --> 00:07:10,288
+Peki tamam hocam, buna geçelim. Peki hocam, iki numaralı testi kullanamaz mıyız? İki numaralı test neydi?
+
+39
+00:07:11,220 --> 00:07:27,400
+Hocam şey değil, 2 numaralı testle böyle bir tane seri seçiyorduk. Eee işte ondan küçük olunca kendi serileri yakınsak da yakınsak oluyordu. Ondan büyük olanlar için de seçtiğimiz seri ıraksaksa o zaman onun ıraksak olduğunu söylüyorduk. Öyle yapamaz mıyız? Yapamayız tabii. Niye yapamayız hocam?
+
+40
+00:07:28,403 --> 00:07:41,324
+Yapamazsın. Çünkü şundan dolayı, x muğlak bir şey. Hangi zaman o ondan küçük kalıyor, hangi zaman büyük kalıyor, x'in durumuna göre değişecek? Yani insan çıldırır yani nasıl olacak bu iş?
+
+41
+00:07:42,384 --> 00:07:52,963
+O da olmaz demek ki. Evet, o da olmaz. Peki başka ne olabilir? Üç numara vardı hocam, çok güveniyorduk biz ona, yarı yolda bizi bırakmıyorduk. Limit mukayese.
+
+42
+00:07:54,324 --> 00:08:08,663
+Limit mukayese de bir bildiğimiz seriye onu bölüyorduk. Tamam böldük ama üst katta x'ler kaldı bu sefer. O da limitin değerini değişir. Yani ben bu x'i ne yapacağım şimdi? Hangi durumda ne olacak? Yani buradan da bir aralık tayin etmek zor.
+
+43
+00:08:10,304 --> 00:08:16,304
+Tamam hocam anladım. İlk üçünden bize hayır yok. Evet, ilk üçünden bize hayır yok. Hangilerinden hayır var?
+
+44
+00:08:16,915 --> 00:08:40,935
+4 numaradan hayır var, oran testi, 5 numaradan da hayır var, kök testi. Bunlarla yapabilirsin. Çünkü neden? Evet, saat şu an 9, tam olarak derse başlıyoruz. Evet, şu andan itibaren söylediklerimi bir kere daha tekrar ediyorum. Kaç kişi var sınıfta? Merak ettim şimdi. Bugün çok önemli bir ders bakalım. Ciddi alanlar 56 kişi. Evet, sınıfın mevcudu.
+
+45
+00:08:42,035 --> 00:08:58,655
+150'nin üstünde diye biliyorum. Yani sınıfın şu an yaklaşık 3'te 1'i gibi bir arkadaş grubu gelmiş. Sağ olun, var olun. Ne iyi yaptınız, geldiniz, hoş geldiniz, sefalar getirdiniz.
+
+46
+00:08:59,555 --> 00:09:05,755
+Şimdi oran testiyle ilgili tekrar konuşmak istiyorum. Söylediklerimi bir daha tekrarlayacağım.
+
+47
+00:09:07,035 --> 00:09:08,755
+Hocam, söyle bakalım.
+
+48
+00:09:09,172 --> 00:09:17,912
+Biz şimdi pozitif terimi seriler için bazı testler diye bize test anlattın. İşte integral vardı, o vardı, o vardı, o vardı, o vardı.
+
+49
+00:09:19,028 --> 00:09:45,607
+Sonra dediniz ki, yani bunları pozitif terimli serilerde kullanacağız dediniz. Evet dedim. Sonra da geldiniz, kuvvet serileri için oran testiyle kuvvet serisinin yakınsaklığını incelemek dediniz. Ben onu anlamadım. Çünkü kuvvet serilerinin başında alternelik olabiliyor. X yerine mesela eksi 2 koyabiliyorum, eksi 3 koyabiliyorum. Böylelikle değişik işaretli seriler çıkabiliyor. O zaman işareti negatif olan bir seri için oran testini nasıl kullanacağız ki?
+
+50
+00:09:46,259 --> 00:09:48,060
+Demen lazım normalde.
+
+51
+00:09:48,480 --> 00:09:59,919
+Tabi bu sorular insanın aklına çalıştığı zaman, yani böyle sınav için güldür güldür çalışıyorsun ya bir gün evvel, iki gün evvel, keşke o çok daha evvel başlasa, o zaman işte fevkalade olur.
+
+52
+00:10:00,240 --> 00:10:04,419
+O zaman ne zaman çalışmaya başlarsan bu sorular insanın aklına gelmeye başlıyor.
+
+53
+00:10:04,419 --> 00:10:08,120
+Burada yapılması gereken şey, aslen sevgili arkadaşlar,
+
+54
+00:10:09,683 --> 00:10:29,903
+Mutlak yakınsaklık araştırmasıdır. Dünkü derste biz öğrendik ki herhangi bir serinin yakınsak olabilmesi için, eğer bir alternat serisi veya değişik işaretli bir seri ise ilk yapmamız gereken o serinin mutlak değerlerine almak. Mutlak değerini aldıktan sonra bu seri artık pozitif terimli bir hale gelir.
+
+55
+00:10:29,903 --> 00:10:37,663
+O zaman 5 tane testin 5'ini de yapabilir miyiz? gibi bir şey insanın aklına gelir.
+
+56
+00:10:37,683 --> 00:10:49,803
+Ama 5 testin 5'ini yapamayız. Neden yapamayız? İlk 10 dakika bundan bahsettik. İlk gelen arkadaşlar bir sefer dinlediler. Bir defa daha dinleyecekler, daha da pekişmiş olsun.
+
+57
+00:10:50,323 --> 00:11:00,323
+İlk test integralle ilgiliydi. Bu niğdenin neyse değişkenine göre alınan bir integral değil, proper integraldi. Ve bu yakınsıyorsa eğer, sizin serinizde yakınsıyordu.
+
+58
+00:11:05,683 --> 00:11:17,683
+hem de bilinmeyen bir x değeri var. Dolayısıyla siz integralin sonucunu x'e bağlı bulduktan sonra yakınsayıp yakınsamama konusunda karar vermeniz çok zor olur. Dolayısıyla da integral testi...
+
+59
+00:11:18,144 --> 00:11:46,144
+Pek de kullanılmaz. Yani zaten o çok da uygun değil. Gelelim 2 numaraya. 2 numarada kıyaslama yapmanız lazım. Yani sizin kendi karakterini bildiğiniz bir seri. Bu arada kağıtları inşallah hazırlamışsınızdır. Neyi bilmeniz gerekiyordu? P serisi. Beton gibi bilecektiniz. Geometrik seriyi. Beton gibi bilecektiniz. Bir de eninci terim testini de onun altına yazacaktınız. Tamam bu çok önemli. Bu kağıt da duracak. Hatta o kağıda ne?
+
+60
+00:11:46,144 --> 00:11:53,224
+Neyi ekleyin dedim ben dün? Alterne, efendime söyleyeyim, P serilerini de ekleyin, bunların karakterlerini de koyun dedim.
+
+61
+00:11:53,224 --> 00:12:00,044
+Sınavda müthiş işinize yarayacak bunlar. Ayrıyeten soruyu çözerken de oradan bakabilirsin.
+
+62
+00:12:01,203 --> 00:12:29,203
+Şimdi gelelim konumuza. Efendime söyleyeyim. Burada önce mutlak değer alıyoruz. Mutlak değer aldığımız zaman artık seri zaten pozitif hale geldi. Dedik ki bir numarayı kullanamayız. İki numarayı neden kullanamayız? İçinde değişken bir X var. X'in durumuna göre büyüklük, küçüklük değişir. Dolayısıyla da mukayese de uygun değildir. Peki hocam, üç numarayı biz çok beğeniyorduk. Limit mukayese vardı. Bir tane bildiğimiz seriyle noranlıyorduk. Ona göre çözüyorduk. O zaman...
+
+63
+00:12:29,203 --> 00:12:35,903
+Niye yapmıyoruz onu? Diyebilirsin. Onu da yapmamamızın hemen sebebini söyleyeyim sevgili gençler.
+
+64
+00:12:36,323 --> 00:12:41,683
+Efendime söyleyeyim, bunu yapmamamızın sebebi de yine biz kendi serimizi biliyoruz.
+
+65
+00:12:41,844 --> 00:12:49,884
+Oranladığımız zaman bulacağımız sonuç, x'e bağlı olacağı için karar verme mekanizmamız çok çok güçleşir.
+
+66
+00:12:49,964 --> 00:12:57,163
+Çünkü sıfırdan farklı mı, sonsuzdan farklı mı, hangi değer için ne oluyor? Böyle insanın kafası bulanır ve bir aralık bulmakta zorlanır.
+
+67
+00:12:57,203 --> 00:13:12,163
+O zaman oran testini kullanabiliriz. Neden? Kendisinin bir sonraki terimini bir öncekini oranlayarak buluyorduk ve diyorduk ki oran testinde, ben olsam kağıdımın altına testlerin de küçük küçük sonuçlarını yazardım.
+
+68
+00:13:12,163 --> 00:13:25,163
+Özellikle 3 numaranınkini yazardım. Çünkü 2 numarada integral testi, onda belki not alınabilir. Kuvvet serilerinin pozitif terimleri, kuvvet serileri.
+
+69
+00:13:25,203 --> 00:13:53,183
+için testlerin bir özetini bir kağıda ayrıyeten, mesela hani bir kağıdın ön yüzünde P serileri, geometrik seri, eninci terim testi olsun, arka yüzünde de efendime söyleyeyim, 5 tane teste ait özet bir bilgi, kendi anlayacağın şekilde yaz. İşte bir sonraki terimle oranlıyorum. Küçüktür bir ise yakınsaktır, büyüktür bir ise ıraksaktır, efendim eşit bir ise bir şey söylemez. Aynı usulle yine eninci terimi aldım, eninci derecede.
+
+70
+00:13:53,203 --> 00:13:57,323
+Kök testi de kullanılabilir mi? Kullanılabilir.
+
+71
+00:13:57,759 --> 00:14:10,799
+Çünkü neden? Orada da yine küçük bir, büyük bir olması durumuna göre olay değişir. Bu yüzdendir ki oran testi kullanırken mutlak değer kullanıyoruz. Çünkü bu serinin zaten tüm terinleri mutlak değerli.
+
+72
+00:14:11,440 --> 00:14:25,600
+O zaman hocam küçüktür bir deyince elde ettiğimiz aralık bu serinin mutlak yakınsak olduğu aralık mı? Gayet tabii ki mutlak yakınsak olduğu aralık. Çünkü biz değişik işaretli veya alterne yani onun bir alt kümesi olan.
+
+73
+00:14:25,759 --> 00:14:27,759
+Bu serileri...
+
+74
+00:14:28,307 --> 00:14:36,207
+Konuştuğumuz zaman, efendime söyleyeyim, ne diyorduk? Mutlak değerlerinden oluşan seri yakınsaksa, seri yakınsaktır diyorduk.
+
+75
+00:14:36,207 --> 00:14:47,528
+Mesela, alternatif serilerle de ilgili bir başlık atardım ben olsam, kağıdıma hemen yine, işte mutlak yakınsaklık, işte değişik işareti ya da alternatif seri bana verildiği zaman,
+
+76
+00:14:47,727 --> 00:14:53,327
+ilk yapmam gereken şey, mutlak değerlerinden oluşan seriyi kontrol etmek yazardım.
+
+77
+00:14:53,687 --> 00:14:56,307
+İşte efendime söyleyeyim, bu seriyi kontrol edildi.
+
+78
+00:14:56,307 --> 00:15:05,148
+Dildiğinde yakınsak çıkarsa, en başta bana verilen değişik işareti veya alternatif seriyi mutlak yakınsar yazardım.
+
+79
+00:15:05,467 --> 00:15:13,908
+Eğer bunu sağlamıyor ıraksaksa, o zaman alternatif testi uygulamak zorundayım yazardım ve bunun da maddelerini yazardım.
+
+80
+00:15:14,247 --> 00:15:19,207
+Yani eğer sınava bu kağıtla girerseniz, hiç kimseye ihtiyacınız yok.
+
+81
+00:15:19,207 --> 00:15:21,887
+Ha, bu kağıt var yanında.
+
+82
+00:15:22,207 --> 00:15:24,207
+Efendime söyleyeyim, ben bunu işte...
+
+83
+00:15:24,307 --> 00:15:37,648
+uçurtma yapıp da gökyüzüne mi uçacağım? Hayır, böyle bir şey yok. Çalışacaksınız. Üstüne bu kağıtla yanınızda olursa manevra yapmanız daha kolay olacak. Sınavı daha efektif kullanacaksınız sevgili arkadaşlar.
+
+84
+00:15:38,267 --> 00:15:40,507
+Evet, bu konuyla ilgili sorusu olan var mı?
+
+85
+00:15:41,172 --> 00:15:51,951
+Geçtiğimiz derste ilgili sorular, 10 dakika erken açtık, geç kalan arkadaşlar olabilir. Bilgisayarı kapatmadan önce öğrenci görüşme saatinde sorabilirsiniz.
+
+86
+00:15:52,451 --> 00:16:04,451
+Şimdi bu son anlattığımla ilgili sıkıntısı olan varsa buyursun, sorsun yoksa hemen örnekler üzerinde anlatıma başlayacağım sevgili gençler. Anlaştık mı? Tamam mıdır?
+
+87
+00:16:11,028 --> 00:16:22,888
+Evet, şimdi hemen ilk sorumuzu yazalım sevgili arkadaşlar. İlk sorumuz şöyle, bugün dersimiz çok keyifli fakat bir o kadar da türbülans içeriyor.
+
+88
+00:16:23,488 --> 00:16:33,087
+Şimdi uçak gökyüzüne artık havalandı. Şu an sakin, efendim bilmem kaç fitte gayet böyle mutedil. Devam ediyoruz.
+
+89
+00:16:33,711 --> 00:16:40,532
+Ondan sonra fazla sarsıntı falan yok. Türbülansa ne zaman gireceğiz? Kuvvet serilerine işlemler konusunda.
+
+90
+00:16:47,283 --> 00:16:49,083
+Burada bize sorulan soru şu.
+
+91
+00:16:50,703 --> 00:16:53,683
+Yakınsaklık merkezi.
+
+92
+00:16:53,844 --> 00:16:55,443
+Bence hemen söyleyebilmelisin.
+
+93
+00:16:55,624 --> 00:17:10,284
+Yakınsaklık aralığı, yakınsaklık yarı çapı, yakınsaklık aralığı ve aralığın uçlarındaki...
+
+94
+00:17:11,316 --> 00:17:34,275
+Durum. Evet. Bu konuyla ilgili yüzde bir milyon soru gelir. Hatta şöyle der işte. Bu serinin mutlak yakınsak olduğu aralık aşağıdakilerden hangisidir? Şartlı yakınsak olduğu işte efendime söyleyeyim noktalar aşağıdakilerden hangisidir? Iraksak olduğu aralık aşağıdakilerden hangisidir? Şeklinde pek çok soruyla karşılaşacaksınız.
+
+95
+00:17:34,275 --> 00:17:39,275
+Hemen oran testini uygulamaya başlıyorum. Oran testini uygulamadan...
+
+96
+00:17:39,316 --> 00:17:47,456
+evvel bunu pozitif terimli seri haline getirdiğim için burada bir mutlak değer var. Bu mutlak değerin içerisine eksi biri koymaya gerek yok.
+
+97
+00:17:47,855 --> 00:17:53,255
+Neden gerek yok? E zaten onu mutlak değer yutacak. Bu yüzden de onunla ilgilenmiyorum.
+
+98
+00:17:53,695 --> 00:18:01,155
+Direkt x üzeri n artı 1 bölü n artı 1, x üzeri n bölü n şeklinde yazıyorum. Gördüğünüz gibi.
+
+99
+00:18:02,291 --> 00:18:14,672
+Hatta şuraya acaba AN artı 1 bölü AN yazsa mıydım? Yazayım. Çünkü onu bilemeyecek olan arkadaşlarımız da olabilir aramızda. Nereden bunu yaptı diye onları da düşünmek lazım.
+
+100
+00:18:16,811 --> 00:18:21,971
+Evet, AN artı 1 bölü AN'e bakıyoruz.
+
+101
+00:18:23,811 --> 00:18:27,391
+Ve yazıyoruz sevgili arkadaşlar.
+
+102
+00:18:28,084 --> 00:18:45,964
+x üzeri n artı 1 bölü, n artı 1 bölü, x üzeri n bölü n. Hemen yazıyorum yine, limit n sonsuza. Şimdi nidenin n'lilerini, nidenin n'lilerini bir kenara ayırıyorum.
+
+103
+00:18:47,384 --> 00:18:54,544
+x'lilerini diğer kenara ayırıyorum. Çünkü limit bu kısımla ilgili. Hocam bu limit dediğimi, hayır o sabit sayı.
+
+104
+00:18:54,832 --> 00:18:58,352
+Ama sabit değil de değişkenli, limite göre sabit.
+
+105
+00:18:59,392 --> 00:19:02,732
+Çünkü limit, nidenin n'sine göre ve bu limitin değeri de 1.
+
+106
+00:19:03,452 --> 00:19:05,812
+Demek ki bu limitin değeri x oluyor.
+
+107
+00:19:06,512 --> 00:19:12,712
+Sizin oran testinize göre bu serinin yakınsak olabilmesi için bunun birden küçük olması lazım.
+
+108
+00:19:12,712 --> 00:19:14,492
+Bu ne manaya gelir?
+
+109
+00:19:17,587 --> 00:19:21,487
+Eksi 1 artı 1 arasında olduğu anlamına gelir.
+
+110
+00:19:21,887 --> 00:19:26,467
+Peki aralığın uçlarında durum nedir? Bir de şu soruları da yanıtlayalım.
+
+111
+00:19:26,847 --> 00:19:32,987
+Hemen yakınsaklık, yarı çapı demeyelim de neyi diyelim?
+
+112
+00:19:33,167 --> 00:19:37,827
+Önce yakınsaklık merkezi hakkında hiçbir işlem yapmadan söyleyebilirdik zaten.
+
+113
+00:19:38,787 --> 00:19:41,247
+Yakınsaklık merkezimiz kimdir arkadaşlar?
+
+114
+00:19:42,007 --> 00:19:43,367
+Sıfır. Değil mi?
+
+115
+00:19:43,887 --> 00:19:44,887
+C'si sıfır çünkü.
+
+116
+00:19:45,491 --> 00:19:49,931
+Hatta C yazayım yani. Dünkü dersten de böyle bize bir hatırlatma olsun.
+
+117
+00:19:50,611 --> 00:19:57,731
+Efendime söyleyeyim. Yakınsaklık, peki yarı çapı kimdir?
+
+118
+00:19:59,331 --> 00:20:00,000
+Yarı çapı da...
+
+119
+00:20:00,000 --> 00:20:06,620
+Bu tam ortasıydı hocam, o zaman söyle. Veyahut hocam bir formül daha görmüştüm ben bir kitapta. Ne görmüştün? Söyle bakalım.
+
+120
+00:20:07,180 --> 00:20:13,740
+Şimdi hocam bu Nidenin N'sinin N'sini bulduk ya, onun takla atmış hali bizim şey oluyordu. Ama ben ondan yapmıyorum.
+
+121
+00:20:13,820 --> 00:20:18,580
+Bunun tam ortası diye de yapıyordum. Aynı şey çıkıyor. Yanlış yazdın ama. Doğru mu yazdın?
+
+122
+00:20:20,180 --> 00:20:38,920
+Dur bir dakika, yanlış mı yandım? Dur, yakınsaklık yarı çapı, özür diliyorum. Yakınsaklık merkezine gitti birden aklım. Bir bölü bir, o ayrı, bunun ortası yakınsaklık merkezi. Ama yakınsaklık yarı çapı, o da böyle bir kenarına olan uzaklık, oradan ben yapıyorum. Tamam, öyle dersen tamam, demin yanlış söyledim.
+
+123
+00:20:39,412 --> 00:20:49,571
+Tabii hocanız yanlış söylüyor, çocuk değil. Evet, şimdi ben öyle anlatıyorum ki size şey olsun, latife olsun, hem de uyumayın, uykunuz gelmesin, mır mır mır mır, hep aynı kişi konuşunca insanın uykusu geliyor.
+
+124
+00:20:50,352 --> 00:21:02,531
+Evet, şimdi aralığın uçları için durumu inceleyin. Ne diyor bu ya? Şimdi, şimdi şunu konuşalım, aralığın uçlarında durumu inceleyin diyor. Bir kere bunu şimdi konuşalım.
+
+125
+00:21:03,028 --> 00:21:21,927
+Bu eksi 1 bu aralığa dahil mi? Bu artı 1 buna dahil mi? Eksi 1'de mutlak yakınsaklık var mı? Yahut da şartlı mı yakınsak? Sonra adam size diyebilir ki aşağıdaki aralıkların hangisinde bu seri mutlak yakınsaktır? Hangi noktalarda şartlı yakınsaktır? Hangi noktalarda ıraksaktır diye sana sorabilir.
+
+126
+00:21:22,768 --> 00:21:24,827
+Şimdi x yerine eksi 1 yazıyorum.
+
+127
+00:21:25,268 --> 00:21:52,228
+Niye? Çünkü bir kenarda eksi bir var. Burada x gördüğüm yere eksi bir yazmam lazım. O zaman hemen seride n eşittir birden sonsuza kadar eksi bir üzeri n, eksi bir üzeri n, bölü n yazdım. Şurası n eksi bir miymiş? Ay çok özür dilerim, şurası eksi birmiş, affedersiniz. Düzelttim hemen, nasıl olsa. Şurada not tutanlar, ben zaten bunu size atacağım ama not tutanlar, şurada eksi birini hocanız unutmuş canlarım.
+
+128
+00:21:52,511 --> 00:21:53,811
+Özür diliyorum.
+
+129
+00:21:54,591 --> 00:21:54,791
+Evet.
+
+130
+00:21:55,316 --> 00:22:22,876
+Ne eşittir? Birden sonsuza kadar, eksi bir üzeri, iki en, eksi bir bölü, en oldu. Bu ne manaya gelir? Alterne hocam bu. Ben size ilk derste söyledim, geçen derste. Bu alterne falan değil. Üstü hep tek sayı. Üst hep tek sayıysa, bu negatif bir sayıdır. Yani ne olur bu? Eksi dışarı atılır, en eşittir. Birden sonsuza kadar bir bölü en oldu kardeşim bu. Değil mi? Yanılıyor muyum? Bu nedir?
+
+131
+00:22:23,955 --> 00:22:31,675
+Buna artık patadanak söyleyecek ismin ne? Ayşe, Fatma, Filiz, Veli, Mustafa. Bu ne? Harmonik.
+
+132
+00:22:32,627 --> 00:23:00,627
+Evet, hemen söyleyeceğim bunu. Bak, bunu daha tanımıyorsan, yani hayal kurma bu dersten geçerim diye. Yani inşallah geç bak, kal demiyorum ben sana. Ama yanlış yoldasın diyorum. Bu uğraksak, eksi katı da bir, biliyorsunuz bir serinin herhangi bir sabit katı, yakınsaksa yakınsak, ıraksaksa ıraksak. Demek ki bu uğraksak. Kardeşim bu yakınsaklık aralığına dahil mahil değilmiş. Boşuna hayal kurma diyor bize. Peki, x eşittir, bir için işlem yapalım. Hatta onu da renk...
+
+133
+00:23:00,627 --> 00:23:05,928
+Kutluk kalemle yapalım da bu yazdıklarımıza karışmasın. Tamam mı gençler? Hatta onu da yeşille yapalım mesela.
+
+134
+00:23:07,508 --> 00:23:14,907
+X eşittir, eksi bir için işlem yaptığımızı düşünelim. Hemen yazıyorum. En eşittir birden sonsuza kadar dedim.
+
+135
+00:23:15,508 --> 00:23:22,147
+Eksi bir üzeri, pardon eksi bir değil, artı bir diyorum bugün. Hocam biraz yorgun galiba. Evet, eksi bir bölü.
+
+136
+00:23:22,932 --> 00:23:49,872
+En yazdım. Çünkü 1 üzeri en, 1 oldu. Yani burada 1 üzeri en var. O zaten 1. Bunu yazsan da olur, yazmasan da olur. Dolayısıyla bu, şimdi elinde senin kağıt var. Bak, hocam benim kağıdım yok. Yani iyi de iyi yapmıyorsun diyorum sana. Elinde kağıt olanlar, bakın bakayım bunun için, bak teste iç işlem yapmana gerek var mı? Bak oradan neymiş bu? Yakınsak mı, ıraksak mı, şartlı, yakınsak mı, mutlak, yakınsak mı, nasıl bir yakınsak bu?
+
+137
+00:23:52,723 --> 00:24:14,903
+[öğrenci]'cim düzelttim çocuğum. Evet. Nasıl bir bak kağıdından, bak kağıdından, hala ben kağıt yapmadım. İyi, aferin, çok güzel. Müthiş. Müthiş yani. Müstakbel kimyacı, müstakbel mühendis. Evet. Ne bu? Bu ne bu?
+
+138
+00:24:17,268 --> 00:24:25,528
+Bunu nasıl bilirsin? Hani Meftah'a soruyor da, tövbe yarabbim. Hani nasıl bilirsiniz bunu? Kağıtta yazmıyor mu? Kağıda olanlar kimler?
+
+139
+00:24:28,208 --> 00:24:41,188
+Aferin [öğrenci]'m ya. Maşallah. Şartlı yakınsak. Bitti. Bak kağıdı var, patadanak söylüyor. Sen orada öyle, sınavda da öyle bakacaksın. Ay neydi bu, neydi bu, neydi bu. Kağıdın olsa bakacaksın. Şartlı yakınsakmış. Bitti.
+
+140
+00:24:41,652 --> 00:25:01,912
+O zaman diyeceksin ki sınavda şartlı martlı abi yakınsıyor mu? Şuraya da koyayım. Demek ki neymiş? Eksi bir artı bir arasında açık aralığında mutlak yakınsak, x eşittir bir de şartlı yakınsak, eksi birde ise ıraksak, aralığın dışında da ıraksaktır diye hop diye şıkkı işaretleyeceksin. Bak [öğrenci] hemen söyledi. Neden? Kağıdı var.
+
+141
+00:25:03,912 --> 00:25:08,652
+Evet. Ne diyeceksin şimdi burada? Laf çok. Serisinin...
+
+142
+00:25:11,124 --> 00:25:21,304
+Mutlak değerlerinden oluşan ne eşittir birden sonsuza kadar bir bölü en ıraksaktır.
+
+143
+00:25:22,884 --> 00:25:28,203
+Yani seri mutlak yakınsak değildir.
+
+144
+00:25:28,564 --> 00:25:31,064
+Değil mi? Mutlak yakınsak değildir.
+
+145
+00:25:31,163 --> 00:25:33,243
+Peki şartlı yakınsak mı? Bakalım.
+
+146
+00:25:33,344 --> 00:25:36,124
+Bir, alterne mi? Evet, alterne.
+
+147
+00:25:37,107 --> 00:25:40,327
+İki, gittikçe küçülüyor mu? He valla küçülüyor.
+
+148
+00:25:42,008 --> 00:25:46,468
+Peki efendim, eninci terimi geçiyor mu? Eninci terimi de geçiyor.
+
+149
+00:25:47,607 --> 00:25:50,008
+Demek ki neymiş? Şartlı yakınsakmış.
+
+150
+00:25:50,008 --> 00:25:58,947
+Ama [öğrenci]'cığım, çalışkan olduğum için, bir fenime söyleyeyim, bu kadar işlemi söylemeden sonucu söyledi.
+
+151
+00:25:59,327 --> 00:26:04,407
+Peki şöyle bir özet geçersek o zaman, bunun için ne söyleyebiliriz sevgili gençler?
+
+152
+00:26:04,703 --> 00:26:25,903
+Bir kere yakınsaklık aralığı için hemen şekil çizelim. Burası dahil değil. Burası dahil. Şura sıfır. Yakınsaklık merkezi. Şurası yakınsaklık yarı çapı. Çıpı değil, çapı.
+
+153
+00:26:26,291 --> 00:26:37,571
+R eşittir, 1. Yakınsaklık merkezi, aha burası C. Efendime söyleyeyim, bunun yakınsaklık aralığı için konuşursak,
+
+154
+00:26:40,692 --> 00:27:03,692
+Eksi 1, x artı 1. Şimdi bakın, eğer size sorulsaydı mutlak yakınsak nerede, mutlak yakınsak olduğu yer neresi dediyse, mesela hani öbür sınıfa da bu kadar ayrıntılı yazmadım, elinizde de var ama hani size böyle oldu. Ne diyeceksiniz? Eksi 1 artı 1 arasında mutlak yakınsaktır. Şartlı yakınsak olduğu neresidir? Şartlı yakınsak olduğu...
+
+155
+00:27:06,675 --> 00:27:15,596
+Neresidir sevgili arkadaşlar? Sadece x eşittir. Bir noktasında şartlı yakınsaktır. Öyle değil mi? Peki nerede ıraksaktır?
+
+156
+00:27:26,036 --> 00:27:41,435
+Sonsuza kadar. Bak bu aralıkları açık yapar, kapalı yapar. Ben öbür sınıfa da bunu anlatacağım. Size sorar. Burasını doğru yazdım mı? Kontrol edenler var mı? Bakayım bir ses verin bakalım. Ben ettim hocam doğrudur falan diyen var mı? Doğru yazdık diye mi? Yanlış olmasın.
+
+157
+00:27:42,175 --> 00:27:50,455
+Iraksak olduğu yer burası. Evet, bir de mutlak yakınsak da. Buralarda da Iraksak. Anlayan var mıdır? Tuşa bassın bakayım.
+
+158
+00:27:55,700 --> 00:28:20,240
+Evet, maşallah benim öğrencilerime. Evet, şimdi olayı biraz daha derinleştirelim. Hemen bir sonraki sorumuza gelelim. Hemen bir sonraki sorumu yazıyorum. Kırmızıyla yazalım sorumuzu. Mümkün olduğu kadar yukarı... Aa yok, bu soru çok şey değilmiş, tombiş bir soru değil. Ferah ferah yazabiliriz. Evet, bu çözdüğüm iki soru sınavda daha önce gelmişti. Hatta açık sınavda geldi.
+
+159
+00:28:20,819 --> 00:28:38,980
+Yani yüz yüze olan sınavımızda. Yapan oldu mu? Şaşıran çok oldu. Şaşıran çok oldu. Hele ondan sonraki sorulan soru, zannederim pandemiden evvel son yüz yüze sınavımızda sorulmuştu. Soru gene aynı. İşte yakınsaklık, aralığı.
+
+160
+00:28:39,440 --> 00:29:06,079
+yakınsaklık yarı çapı, yakınsaklık merkezi filan filan soru gene aynı. Tamam uzun uzun soruyu yazmaya gerek var mı sevgili gençler? Var mı? Yok diyorsunuz. Peki ben de o zaman çözüme geçiyorum. Hemen başladım. Limit dedim. Hocam bir şey söyleyeceğim. Mutlak değer almaya gerek var mı? Burada alternelik ya da değişik işaretlilik yok ki. Yok mu sence?
+
+161
+00:29:07,347 --> 00:29:21,208
+Bu pozitif terimli bir seri mi? Pozitif diyenler pozitife bassın. İçinde negatifler olabilen diyenler de negatife bassın. Ayol tuşa basacaksın ne olacak? Yanlış cevap versen ne olur? Kim kimi tanıyor? Hadi.
+
+162
+00:29:23,307 --> 00:29:29,208
+Eksi, eksi, eksi. Maşallah, maşallah. Eksi yazdılar ama aferin pozitif size.
+
+163
+00:29:29,748 --> 00:29:39,688
+X'in değerine göre değişir diyor. [öğrenci]'cuğum da aynı. [öğrenci], niye öyle yazıyorsun? Pozitif değil ki. X yerine eksi bir yazarsak ne olacak bu serinin hali?
+
+164
+00:29:42,708 --> 00:29:51,408
+Tamam mı yavrum? [öğrenci]'cığım. Tamam, yanlış basmış zaten o. Tamam. Öyle olur. Eli yanlışa gitmiş. Evet.
+
+165
+00:29:51,827 --> 00:30:09,228
+Peki, şimdi sınavda yanlışa gitmemek için burada yanlış tuşlara basın, bütün yanlış tuşlarınızı derste bırakın, onun için de dersi dinleyip sorulara cevap verin ki yanlış olup olmadığını kendiniz de teyit edebilirsiniz.
+
+166
+00:30:09,228 --> 00:30:14,188
+Evet, x üzeri n bölü n faktör yel.
+
+167
+00:30:16,372 --> 00:30:36,772
+Limit dedik, en sonsuza giderken. Hocam dediniz ki ellileri ayır. Tamam ayırırım ben. Sen istediğin ellileri ayırmam olsun. İlahi yani. Ne var ayolu? Onu da bak. Ayır verdim sana. X'leri de ayıralım. Tamam onu da ayırdım. Hiçbir problem yok. Tamam. Limiti de hesap et o zaman madem öyle. Limit de hesap edelim.
+
+168
+00:30:38,228 --> 00:30:48,168
+Hocam, faktöriyelde biz istediğimiz yerde durabiliyorduk. N faktöriyeli hiç açmadım. N artı 1'i de geri gittim, böyle böyle çizdim. Aferin sana, çok güzel.
+
+169
+00:30:49,588 --> 00:30:56,368
+Peki, sonra da buradan L'yi bulacağım. R'yi de 1 bölü L diye yapılıyormuş. Yeni öğrendim onu da. Aferin, güzel öğrenmişim.
+
+170
+00:30:56,948 --> 00:31:02,448
+Peki, bizim L'imiz kaç çıktı bu durumda? Hocam, buraya sonsuz yazarsam 1 bölü sonsuz L sıfır. Tamam, güzel.
+
+171
+00:31:03,124 --> 00:31:23,103
+Peki hocam, o zaman bunu küçük bir dersen bir şey söyleyeceğim. Bu her zaman sıfır ki. Her zaman sıfır, evet. Bunun kimseye eyvallahı yok. Diyor ki, x, 3 olsun, bana ne? 7 olsun, kime ne? 8 olsun, bana ne? Öbürü olsun, sana ne?
+
+172
+00:31:23,519 --> 00:31:51,000
+X hangi değeri alırsa alsın bu seriyi yakınsaktır. Neden? Diyor ki çünkü benim limitim sıfır. Hangi sayıyı verirsen sıfırları çarparım, onun yuvasını yaparım diyor. Doğru mu? O zaman ne diyeceksin? Her X değeri için yakınsar demen lazım. O zaman adama sorarlar, böyle seri sorar, der ki yakınsaklık yarı çapı aşağıdakilerden hangisidir? Yakınsaklık merkezi aşağıdakilerden hangisidir? Sorar mesela bunları sana hep teste.
+
+173
+00:31:51,476 --> 00:32:14,036
+Anladın? Yakınsaklık yarı çapı nedir sizce? O zaman yazalım. Her x değeri için yakınsak. Her x değeri için yakınsak. Yakınsaklık yarı çapı nedir? Yakınsaklık merkezi sıfır dediniz. Yakınsaklık merkezi.
+
+174
+00:32:15,923 --> 00:32:20,383
+C eşittir, sıfırdır. Peki yakınsaklık yarı çapı nedir?
+
+175
+00:32:24,564 --> 00:32:31,763
+Evet, R eşittir. Bir bölü L yazayım hatta. Ve sonsuza gittiğini de bana güzel güzel söyle.
+
+176
+00:32:32,584 --> 00:32:38,703
+Hocam resmini çizebilir misin? Tabii ki çizerim. Hatta başka renkle çizeyim size. Bak gözüksün.
+
+177
+00:32:40,084 --> 00:32:44,084
+Her yerde kar var diyorduk ya hani bu yok ve her yerde yakınsak bu.
+
+178
+00:32:44,596 --> 00:32:55,776
+Peki, şurası da yakınsaklık merkezi. Gördüğünüz gibi yakınsaklık yarı çapıda her iki tarafa sonsuz uzunlukta olduğu için resi sonsuz. Anlaştık mı? Tamam mıyız?
+
+179
+00:32:59,251 --> 00:33:13,231
+Peki bir şey sorsam, her yerde mi mutlak yakınsak? Cevap. Cevap ver. Evet, doğru. Her yerde mutlak yakınsak. Aferin benim öğrencilerime. Peki şartta yakınsak olduğu bir yer var mı? Hayır.
+
+180
+00:33:13,907 --> 00:33:30,947
+Iraksak olduğu yer var mı? Nasla. Değil mi? Yok. Peki devam edelim o zaman. Hemen bir sonraki sorumuz. Bu geçen sene ilk sınavda. Yüz yüzeydi o sınav. Hey gidim günler hey. Yanlış mı hatırlıyorum ilk sınav mı yüz yüzeydi?
+
+181
+00:33:32,115 --> 00:33:59,375
+Yoksa ilk sınavı da mı uzaktan yaptık? O zaman evvelki senenin sorusu. Şöyle söyleyeyim, Mat 2'de son yaptığımız sınavda, yazılı sınavda, pandemiden evvel, hey gidi günler hey diyorum. Bu soru sınavda çıkmış sorudur. 12 puan mıydı? 7 puan mıydı bilmiyorum. Hocam bayağı da azmış puanı. Evet, az çünkü yapılacak işlem de çok az yani.
+
+182
+00:34:00,692 --> 00:34:01,511
+Böyle bir şey.
+
+183
+00:34:06,836 --> 00:34:30,936
+Nokta cık cık. Soru gene aynı işte. Yakınsaklık aralığı, yakınsaklık merkezi, yakınsaklık yarı çapı falan filan. Aynı soru. Tamam mı? Ne yapalım? Hadi başlayalım gene çözmeye. Limit dedik. Çok dikkat et. Bu soru geldi. Limit en sonsuza giderken A n artı bir bölü A n dedim.
+
+184
+00:34:31,987 --> 00:34:57,047
+Limit dedim. N sonsuza giderken dedim. N artı bir faktörü yel. X üzere N artı bir. N faktörü yel. X üzere N. Limit. Şimdi buralar kolay. Yani benim sizi korkuttuğum yer burası değil. Yani bunlar sizi korkuttuğum yer. Zannediyorsanız yanılıyorsunuz. Orası değil burası.
+
+185
+00:34:57,460 --> 00:35:24,599
+Neresi orası? Birazdan başlayacak. Kuvvet serilerinde işlemler. Sizi korkuttuğum yer orasıydı. Tamam, korkanın annesi ağlamaz diye biliyorsunuz. Bizim atasözümüz var. Yani öyle bir atasözümüz var. Güzel bir söz. Neden? Endişe edersen başına gelecek olan şeyden. Başına kötü bir şey gelmez. İşte kalmazsın, zayıf not almazsın, anneciğini de üzmezsin. Bu kadar basit. Çünkü neden? Anne daha çok üzülür çocuktan her zaman.
+
+186
+00:35:25,619 --> 00:35:52,980
+Çocuk bir birim üzülürse anne yüz birim üzülür. Evet. Şurada mutlak değer var. Küçüktür bir. Bu şart ne zaman sağlanacak arkadaş? Bu şart sağlanır mı? Bu şart sağlanır mı? Hayır, direkt sıfırdan ötürü. Nereye sıfırkı? Bu evvelden mi yazdınız bunu? Herhalde evvelden yazdı özlemciyim onu.
+
+187
+00:35:53,311 --> 00:35:56,072
+[öğrenci], [öğrenci] evane mi yazdın onu?
+
+188
+00:35:57,791 --> 00:35:59,852
+Tamam, tamam çocuğum.
+
+189
+00:36:00,231 --> 00:36:02,331
+Pek teşekkür ederim yavrum, sağ ol [öğrenci]'ciğim.
+
+190
+00:36:02,892 --> 00:36:05,152
+Şimdi ne olacak çocuklar?
+
+191
+00:36:07,352 --> 00:36:08,552
+Bu her yerde bıraksak mı?
+
+192
+00:36:10,164 --> 00:36:17,144
+Bir şey söyle bakalım ya, bak söylediğin şey yanlış olunca, özellikle bunu yazarsan falan, bir daha o hataya dünyada düşmüyorsun.
+
+193
+00:36:17,664 --> 00:36:23,544
+Neden şöyle bir şey oluyor, ay ne yazdım böyle, başından aşağı insanın böyle bir serinlik yahut bir sıcaklık kişiye göre değişir.
+
+194
+00:36:23,924 --> 00:36:28,744
+Böyle bir laşok gibi bir şey oluyor, o böyle beyinde bir açılıma sebep veriyor.
+
+195
+00:36:29,164 --> 00:36:34,184
+Bir daha o hatayı yapmıyorsun, gerçekten böyle. Onun için hataları burada yazın.
+
+196
+00:36:34,184 --> 00:36:38,164
+Her yerde ıraksak mıdır [öğrenci]'cığım, hiç yakınsak oldu, hiçbir yer...
+
+197
+00:36:38,164 --> 00:36:44,904
+Belki azıcık, küçücük, minicik bir yer vardır ya yakınsak olduğu çocuklar, gençler.
+
+198
+00:36:47,904 --> 00:36:55,644
+Dur tamam şunu yazalım o zaman. Yakınsaklık merkezi. Neresi? Önce bir bunu söyle.
+
+199
+00:36:55,644 --> 00:37:03,164
+Heh tamam. Yakınsaklık merkezi sıfır. Anlaştık. Yakınsaklık yarı çapı. Bir de bana onu söyle.
+
+200
+00:37:06,483 --> 00:37:23,144
+Hocam, dedin ki sen bir bölü L olsun. O zaman da sıfır oldu. Peki, yakınsak olduğu yer var mı? Tekrar söylüyorum. Bak, tahtada bir şey yazdım. İki satır bir şey yazdım. Birinci satıra dikkat et. Yakınsak olduğu bir yer var mı?
+
+201
+00:37:28,052 --> 00:37:29,012
+He, var mı?
+
+202
+00:37:30,452 --> 00:37:37,731
+[öğrenci], bravo! Evet, yakınsak olduğu bir yer var. Evet, evet, [öğrenci]'ciğim, [öğrenci]'ciğim, [öğrenci]'cığım.
+
+203
+00:37:37,911 --> 00:37:40,692
+Evet, [öğrenci] de bir sıfır yazmış, bilmiyorum ne için yazdı.
+
+204
+00:37:41,592 --> 00:37:46,411
+Evet, sıfır onu yakınsak yapar. Çünkü yakınsaklık merkezi kalbimiz gibi.
+
+205
+00:37:46,831 --> 00:37:53,632
+Biz hayatta olduğumuz, var olduğumuz sürece, her ne durumda olursa olsun kalbimiz hep çarpar. Değil mi?
+
+206
+00:37:54,643 --> 00:38:19,844
+İnşallah sağlıklı ikenin hep çarpsın. Değil mi? Hani sağlık kaybedildiği zaman bile kalp çarpmaya devam ediyor. Canlı, bütün canlılar için. Efendime söyleyeyim. Dün not yazmıştık. Evet, aynen öyle. Bunu yazmadıkları için puan vermediler kimseye biliyor musunuz? Benimle ilgisi yok durumun. Her kuvvet serisi.
+
+207
+00:38:22,612 --> 00:38:33,172
+Kendi yakınsaklık merkezinde yakınsar.
+
+208
+00:38:33,172 --> 00:38:48,531
+Evet, bu kuvvet serisi kendi yakınsaklık merkezinde.
+
+209
+00:38:52,947 --> 00:39:08,507
+Yakınsak, diğer tüm noktalarda ıraksaktır. Tamam mı? İşte bu kadar. Peki şartlı yakınsak olduğu yer var mıdır? Hayır yoktur.
+
+210
+00:39:09,967 --> 00:39:20,228
+Bıraksak yer var mıdır? Yani sıfır dışında her yerde ıraksar. Notunu al artık tamam mı? Sadece burada yakınsak. Aha burası. Şu nokta sıfır.
+
+211
+00:39:21,108 --> 00:39:24,808
+yakınsak. Buralar ve bıraksak. Tamam mı?
+
+212
+00:39:32,820 --> 00:39:34,540
+İşte bu kadar. Soru buydu.
+
+213
+00:39:35,960 --> 00:39:50,220
+Evet sevgili gençler. Şimdi bir notumuz var. Bu notumuzu da yazalım. Ondan sonra da kuvvet serilerinde işlemler konusuna geçeceğiz.
+
+214
+00:39:50,220 --> 00:39:59,220
+İşte zurnanın zırt dediği yere geldik. Şimdi hemen şuraya yazalım. Kuvvet serileri.
+
+215
+00:40:00,500 --> 00:40:27,500
+için, yakınsaklık, keoremi. Evet. Hemen rengimi değiştireyim. Yazıyorum. Eğer, n eşittir sıfırdan sonsuza kadar, a, n, x, n, serisi, x eşittir d, o da farklı sıfır için, yakınsak,
+
+216
+00:40:28,500 --> 00:40:46,580
+ise, x küçüktür ve şartını sağlayan tüm x'ler için mutlak yakınsaktır.
+
+217
+00:40:47,680 --> 00:40:48,500
+Demin dediğimiz hikaye.
+
+218
+00:40:51,360 --> 00:40:54,540
+Eğer, yani burada korkulacak bir şey yok.
+
+219
+00:40:56,500 --> 00:41:10,500
+x eşit b için bıraksak ise x'in mutlak değeri büyük d. D demeyeceğim, b diyeceğim. Niye oraya d demişim?
+
+220
+00:41:12,140 --> 00:41:15,640
+B. Şartını sağlayan
+
+221
+00:41:20,500 --> 00:41:24,539
+x'ler için, bıraksaktır.
+
+222
+00:41:26,280 --> 00:41:28,240
+Evet, şimdi,
+
+223
+00:41:29,460 --> 00:41:35,059
+a, n, x eksi, c üzeri, n serisi için,
+
+224
+00:41:36,519 --> 00:41:37,340
+aşağıdaki,
+
+225
+00:41:40,600 --> 00:41:41,559
+üç durumdan,
+
+226
+00:41:44,400 --> 00:41:45,360
+biri geçerlidir.
+
+227
+00:41:51,284 --> 00:41:53,844
+Chat kutusu var da, onun için oraya yazamadım.
+
+228
+00:41:54,344 --> 00:42:02,264
+1. R pozitif bir sayı olmak üzere.
+
+229
+00:42:04,024 --> 00:42:05,084
+Yazamadık, dur.
+
+230
+00:42:06,704 --> 00:42:10,943
+Atlatıyor bazen şey, bu ne dediği grafik tablet.
+
+231
+00:42:12,544 --> 00:42:17,403
+X eksi A küçük R için.
+
+232
+00:42:18,452 --> 00:42:36,711
+yakınsak, x eksi a, büyük re için, ıraksak, aralığın uçlarında, yakınsak veya ıraksak olabilir.
+
+233
+00:42:46,483 --> 00:43:02,943
+2. Tüm x'ler için yakınsak olup, r'si sonsuz olabilir. Demin çözdüğümüz örnekteki gibi.
+
+234
+00:43:03,344 --> 00:43:13,344
+Veyahut yakınsaklık, son çözdüğümüz örnekteki gibi, yakınsaklık merkezi dışında her yerde ıraksak olabilir.
+
+235
+00:43:17,972 --> 00:43:23,711
+Bıraksak olabilir. Bu durumda da R'si de sıfır olabilir sevgili gençler.
+
+236
+00:43:24,391 --> 00:43:30,811
+Evet, şimdi artık zor olan kısma geldi. Kuvvet serileri için işlemler.
+
+237
+00:43:31,331 --> 00:43:37,731
+Sene başından beri korktuğumuz konu bu konuydu. Şimdi bu konuyla ilgili gerçekten çok önemli yollar alacağız.
+
+238
+00:43:38,431 --> 00:43:42,092
+Bakalım ne kadar sürecek dersimiz. Tabii ki ara vereceğiz.
+
+239
+00:43:43,092 --> 00:43:45,092
+Böyle işte. Evet.
+
+240
+00:43:50,804 --> 00:43:57,304
+Tamam mıyız? Arttırıyorum sayfayı. Arttırdım. Şu chat kutusunu da şöyle kenara koyalım.
+
+241
+00:43:59,563 --> 00:44:01,184
+Şu an soruya mı geçeceğiz?
+
+242
+00:44:01,963 --> 00:44:09,063
+Hayır, konuya geçeceğiz. Kuvvet serilerine ilgili işlemlere başlayacağız. Yeni bir konu gibi düşünebilirsiniz. Sorunuz varsa buyurun sorun.
+
+243
+00:44:09,623 --> 00:44:15,143
+Yok, soru çözeceksiniz. Bir önceki sayfayı böyle tekrar gözden geçirelim diyecektim de hakim olmak adına.
+
+244
+00:44:19,155 --> 00:44:22,476
+Hocam, ben de tam yazamadığımda bir resmini çekebilir miyim?
+
+245
+00:44:22,795 --> 00:44:46,295
+Tabii ki. Bunlar size atılıyor. Dün de attığım notlarda var ayrıca. Dün attım ya. Dün attığım notlarda şu ana kadar ki, başlığa kadar, yani şu an yazıyor olduğum, başlığa kadar ki tüm notlar sizin şu an elinizde. Dün çünkü attım ben bunu size. Hani komşu sınıfın notlarını attım ya size. İçinde var.
+
+246
+00:44:47,347 --> 00:44:48,567
+Tamamdırıcı.
+
+247
+00:44:54,068 --> 00:45:20,368
+Hakim olmak adına diye bir şey yok. Orada ezber yapacağınız bir şey yok. Onu kağıda yazmanıza gerek yok. Bak tekrar ediyorum. Hani kağıt tutun diyorum ya. Deminki sayfayı al açayım ben. Onu açmakta bir şey yok. Sen bunu içselleştirmedikten sonra hiçbir işe yaramaz. Ama P serisini içselleştiremezsin. Kağıttan bakacaksın. Geometrik seriyi de kağıttan bakacaksın. Bunu kağıda da yazsan sana hiçbir hayrı yok. Bak ben sana açık net söylüyorum.
+
+248
+00:45:21,012 --> 00:45:48,192
+Burada yapman gereken şey nedir? Bu kağıttaki bilgi deminki oran testinin sonucudur. Oran testini yapmadıktan sonra bu kağıdı eline alıp hiçbir soruyu çözemezsin. Bak ben senin iyiliğin için söylüyorum. Buradaki sayfayı böyle oturayım da ezberleyeyim. Hiçbir soruyu kalemini oynatmana işine yaramaz. Bak açık net söylüyorum bunu. Anlatabildim mi?
+
+249
+00:45:48,659 --> 00:46:01,959
+Çünkü burada A ne? A ne burada? X eksi A diyor. A ne? Anlatabiliyor muyum demek istediğimi? Hatta şunları C yapayım ben.
+
+250
+00:46:03,799 --> 00:46:15,599
+C yapayım bir dakika. C yaparsam daha şey yapacağım. Şuradaki C olsun. Evet, X eksi C. A yazmışım. Tamamdır.
+
+251
+00:46:16,436 --> 00:46:34,936
+Şimdi, çekecekseniz çekin, Allah çektirmesin diyorum. Evet. Tamam mıyız, notu isteyenler? Burada tekrar ediyorum, bakın, burada içselleşecek hiçbir şey yok. Senin içselleştirmen gereken yer burasıdır. Bu işlemi yapmadan hiçbir şey söyleyemezsin.
+
+252
+00:46:35,987 --> 00:46:57,847
+Bu işlemi yapacak mı? Tık tık tık tık tık tık tık tık. Neden? Çünkü R bir bölü L'dir. L'yi sen hesap etmeden R'yi söyleyemezsin. C'yi söylersin ama R'yi söyleyemezsin. Demek ki sen bu işlemi yapmaya mecbursun. Bu işlemi yapmaya mecbur olduğuna göre bu kâh senin ne işine yarayacak? Soruyorum. Tamam mı?
+
+253
+00:47:01,652 --> 00:47:27,432
+Dikkat etmeniz gereken yere etmiyorsunuz. Dikkat etmeniz, yani dikkate, böyle ne edin orada? Hiç kayda alınmayacak yere haddinden fazla önem veriyorsunuz. Benim size söylediğim yerlere dikkat edin. Bak, kaç senedir buradayız? 1988 dedim ben. Yıldız Üniversitesi'ne girişim. Kaç sene olmuş hesap et. Matematiği kuvvetli olan biri yazsın.
+
+254
+00:47:28,179 --> 00:47:54,519
+Kaç sene olmuş? 30 küsur. Dördünü çık, mezun olur olmaz, araştırma görevlisi olur. Kaç senedir buradayız? Ben size söylüyorum, bak dikkat etmeniz gereken yerlere hala dikkat etmiyorsunuz. Dikkat etmeniz gereken şey, bir diziyle bir serinin ayırdığına varmak. Dizinin yakınsaklığının başka bir şey, serinin yakınsaklığının başka bir şey olduğunu fark etmek.
+
+255
+00:47:55,731 --> 00:48:13,132
+İkincisi, geometrik seriyi fark etmek, genel toplamının formülünü bir kağıda yazıp özetlemek, P serisini fark etmek, P serisinin özetini bir kenara yazıp fark etmek. Sonra bunların dışındaki seriler için
+
+256
+00:48:13,487 --> 00:48:32,447
+İlk önce eninci terim testini uygulaman gerektiğini fark etmek. Eninci terim testi sana cevap vermiyorsa, diğer 5 testi uygulamak zorunda olduğunu fark etmek. Bakın, sen bunları hala fark etmiyorsan gaflet uykusundasın, uyumaya devam et.
+
+257
+00:48:36,916 --> 00:48:42,536
+İstediğin kadar defterini böyle bakla gibi, baklavi gibi kocaman kocaman doldur. Hiçbir işe yaramaz.
+
+258
+00:48:46,036 --> 00:48:52,456
+Sonra dikkat etmen gereken şey, bak bunları harfiyen yaparsanız, başarı garanti.
+
+259
+00:48:54,256 --> 00:48:59,816
+Sen hala olmayacak yerlere dikkat etmeye devam ediyorsun. Sonra alterne bir seri.
+
+260
+00:49:00,275 --> 00:49:09,675
+Veya değişik işaretli bir seri sana verildiği zaman yapman gereken şeyi sen hala fark etmediysen yine uykudasın, uyanman lazım.
+
+261
+00:49:10,295 --> 00:49:15,536
+Ne yapacaksın? Mutlak değer alacaksın. Mutlak değer aldıktan sonra algoritma başa dönüyor.
+
+262
+00:49:15,635 --> 00:49:16,855
+Ne yapman? Gözünce...
+
+263
+00:49:16,855 --> 00:49:22,235
+Baktın ki yakınsak. Mutlak değer aldıktan sonra yakınsak oldu.
+
+264
+00:49:22,315 --> 00:49:26,455
+Bak ne oldu? Mutlak değer aldın, yakınsadı. Ne oldu bu? Mutlak yakınsak oldu.
+
+265
+00:49:26,455 --> 00:49:28,275
+Benimki yakınsamadı hocam.
+
+266
+00:49:28,275 --> 00:49:52,835
+Seninki yakınsamadıysa yola devam. Şartlı teste bakacaksın. Bunları böyle yazacaksın. Teker, teker, teker, teker yazacaksın sınava kadar. Sonra tekrar edeceksin. Beton gibi olacak. Sonra diyeceksin ki hocada valla razı olsun ya. Garip garip yerlere çalışıp kafam dağılıyordu. Zaten bir kamyon konu var sınava kadar.
+
+267
+00:49:53,492 --> 00:50:13,112
+Şimdi seriler bitecek. Onun arkasından Taylor, Maclaurin serileri. Taylor, Maclaurin serilerle ilgili işlemler. Önümüzdeki hafta hala seriler devam ediyor. Ondan sonra bitti parametrik seriler. Ondan sonra bitti kutupsal koordinatlar. Ondan sonra bitti vektör değerli fonksiyonlar. Daha çok değişkenli fonksiyonlara gelmedik bile. Bak.
+
+268
+00:50:13,844 --> 00:50:25,384
+Hala çalışmıyorsan sınavdan evvela hangisine çalışacaksın? Müstakbel mühendis, müstakbel kimyacı, müstakbel fizikçi. Müstakbel ne demek? Aday demek.
+
+269
+00:50:27,684 --> 00:50:32,523
+Sen teknik eğitim alıyorsun. Bu kadar bilgi insanın kafasına bir günde girer mi?
+
+270
+00:50:32,947 --> 00:50:43,427
+İki günde girer mi? Üç günde girer mi? Bu şeye aykırı. Nedir? İnsanın doğasına aykırı ya. Bir oturuşta on tepsi baklava ben yerim diyen var mı? Zaten adam şeker komasına girer.
+
+271
+00:50:45,627 --> 00:50:50,747
+Buna benziyor bu. Ben baklavayı çok seviyorum. Ye, vücud kaldırmaz. On tepsi baklava yiyebilir mi bir insan?
+
+272
+00:50:53,507 --> 00:50:59,067
+On tepsi domates yersin, on tepsi biber yersin. Hani o da insanı çok rahatsız eder de.
+
+273
+00:50:59,668 --> 00:51:08,008
+Ama baklava yiyemez, şeker komasına girersin. 10 tepsi. Ha bir tepsi yiyebilirsin, vaydı yani.
+
+274
+00:51:09,188 --> 00:51:17,347
+Hani ben yiyebilirim diye düşünüyorum bunu acız hani. Yani ben bir de şeker çok fena olur ama sanki bitiririm gibi geliyor bana. Anlatabildim mi?
+
+275
+00:51:17,347 --> 00:51:25,968
+Heh. Şimdi bak bu dediklerimi, bu dediklerimi hazırlayan var mı aranızda? Bir tuşa bassın bakayım, bir göreyim bakayım. Var mı aranızda?
+
+276
+00:51:31,956 --> 00:51:33,576
+Aferin ya, maşallah.
+
+277
+00:51:34,576 --> 00:51:40,096
+Tamam, bak, 3 tane arkadaşınız var. İnşallah Allah size de nasip etsin.
+
+278
+00:51:40,556 --> 00:51:46,195
+Ne diyeyim ben size? Siz zannediyorsunuz, hoca sizin iyiliğinizi mi istiyor, kötülüğünüzü? Bir düşün ya, bu kadar kendimi parçalıyorum.
+
+279
+00:51:46,596 --> 00:51:51,476
+Neyi istiyorum ben? Sizin hayrınızı istiyorum. Senin şerini isteyen bir insan mı var burada?
+
+280
+00:51:52,436 --> 00:52:02,516
+Bunları hazırla, bunları fark et. Ondan sonra göreceksin daha kuvvet serilerinde işlemler beton gibi, beton. Şimdi göreceksin.
+
+281
+00:52:02,796 --> 00:52:07,676
+Evet, önce basit bir işlemle başlayacağız. Kuvvet serilerinin çarpımı konusunu vereceğim.
+
+282
+00:52:08,820 --> 00:52:19,000
+Şimdi bunları hazırlayacaksınız. Bak siz büyük bir çoğunluğunuz müstakbel kimyager, efendime söyleyeyim. Kimyager, müstakbel kimyager.
+
+283
+00:52:19,480 --> 00:52:32,380
+Kimyacılar özellikle not tutmak konusunda çok titizlerdir. Neden? Çünkü sürekli formül, alta bir tane sayı yazıyor, üstte bir tane. Şimdi mühendisler küsüyor, hocam biz değil miyiz? Anacığım bunların disiplini farklı.
+
+284
+00:52:32,916 --> 00:52:41,236
+Ben de matematikçiyim. Bunlar bizden daha iyileri. Neden? Çok dikkat etmeleri lazım. 2'yi 3 yazsalar molekül birleşmiyor. Doğru mu söyledin? Değil mi?
+
+285
+00:52:41,696 --> 00:52:51,036
+Monekül birleşmiyor. 2'yi 3 yazsa, sen 2'yi 3 yapsan işlemde ay ekstra hatası yaptım diyorsun. Ama onlarda bütün reaksiyon bozuluyor. Doğru mu? Siz dikkatlisiniz zaten.
+
+286
+00:52:51,836 --> 00:52:56,916
+Dolayısıyla bu dikkatinizi burada pozitif kullanın. Kuvvet serilerinin çarpımı diyorum.
+
+287
+00:52:58,228 --> 00:53:00,528
+İlk işlemimiz bu. Bu kolay.
+
+288
+00:53:07,059 --> 00:53:14,400
+Şimdi iki tane kuvvet serisi alınır. Hani kek yapılırken diyor ya işte un alınır, yumurta alınır falan, fistan, şeker alınır.
+
+289
+00:53:14,840 --> 00:53:21,239
+Şimdi şöyle yazalım. Eğer iki tane kuvvet serisi alalım. Ne eşittir sıfırdan sonsuza kadar?
+
+290
+00:53:22,299 --> 00:53:24,099
+A, N, X üzerinde N.
+
+291
+00:53:24,884 --> 00:53:39,944
+AX. Bak mesela o kağıdına bir de ne yaz biliyor musun? Hanım kızlar, son tuşa bastınız ya. Ne yazın biliyor musunuz? Eğer bana serinin genel toplamı soruluyorsa bu seri ya teleskopiktir ya da nedir? Efendime söyleyeyim, söyle.
+
+292
+00:53:42,084 --> 00:53:42,964
+Geometriktir.
+
+293
+00:53:42,964 --> 00:53:47,164
+Geometriktir. Yazman lazım. Aynen öyle. Evet, aferin.
+
+294
+00:53:51,731 --> 00:54:12,032
+Burada ne diyor? İki tane seri varmış. Bunlar kendi yakınsaklık aralığında birer tane fonksiyon tanımlıyorlarmış. Çünkü yakınsaklık aralığının dışında da fonksiyonu tanımlayamazlar. Bunu da zaten bu dersin sonunda iyicene öğrenmiş olacağız. Bunları yan yana koyup çarptığımızı düşünelim. Tamam mı?
+
+295
+00:54:26,420 --> 00:54:53,280
+Çarpınca da cn etsin. Hatta bu paranteze de gerek yok. Bunların parantezlerini kopartalım. Evet. Şimdi bu serileri açık yazalım. Yani en yerine değer verdiğimizi düşünelim. Tamam mı? Böyle nokta cık cık cık cık cık gitsin. Bunu da çarpalım. Açık yazalım. Yani çarpı diyelim böyle. B0 artı, B1x artı.
+
+296
+00:54:54,099 --> 00:55:14,579
+b2x kare artı nokta cık cık cık gitsin. Bunu da açık yazalım, eşittir diyorum. c0 artı c1x artı c2x artı cx kare artı nokta nokta gitsin. Bizim burada derdimiz nedir? Bizim burada derdimiz c0, c1, c2'nin ne olacağını anlamaktır.
+
+297
+00:55:15,059 --> 00:55:28,399
+Ve bu konu bize şunu söyler, der ki sen üzülme, ben senin yerine hesap ettim, sen artık bu formülü kullanarak bunu yapabilirsin. Söz konusu formülde şudur der ve oraya karmaşık bir formül yazar.
+
+298
+00:55:29,556 --> 00:55:38,735
+Bu formülü ezberlememize gerek var mı? Cevap veriyorum, hayır yok. Gerekirse zaten notlar açık, açar bakarsın. Ama sen bunu formülsüz yaparsın.
+
+299
+00:55:38,735 --> 00:55:54,076
+Hoca dedi ki formül kağıdına buna eklememize gerek yok. Anladım, bir şey demek istedi şimdi. Evet. Peki, şuraya şöyle yazalım. Bunu formülüze edersen eğer, bak şimdi, bir tane de örnek çözeceğiz bununla.
+
+300
+00:55:54,420 --> 00:55:59,140
+Yani bak, evet, söylenilenleri dinlemek lazım yani.
+
+301
+00:56:02,900 --> 00:56:23,279
+Tamam mı? Evet. Bu. Efendime söyleyeyim. Bunu yazdık. Yani dedik, yani dedik. Şimdi hoca dedi ki sana bunu ezberlemene gerek yok. Ben sana öğreteceğim. Tamam. Öğret hocam. Nedir? Şimdi yavrum sen burada C0'ı merak etmiyor musun? C0. C0, A0 ile B0'ın çarpımı.
+
+302
+00:56:23,668 --> 00:56:38,428
+Hocam nasıl tutacağım? Tutacaksın ilahi ya. Aman. Bak şimdi çok kolay. C1'i bulurken böyle gidiyorsun. Bak. Bunu evdeki kardeşine söyle aklında tutar. Nedir bu ya? Tamam mı? A0'la A1'i böyle yazdın.
+
+303
+00:56:38,784 --> 00:57:03,044
+B sıfırla da B bir'i böyle yazdın. Bir tersten bir yüzden yani anladın mı? Haroşodan kolay bu. Evet, C2 yazıyorsun. Hani şişlenmişten bir şey yaptınsa inan onlardan kolay. A sıfır, bunun neyini notunu tutacaksın? Ama tut tabii ki yani. Hayır ben bırak demedim ama hani elimizde gözümüz gibi baktığımız bir formül kağıdı var. Ya oradaki formüllerle kıyas daha iyi olmaz. Bak buradan da böyle tersten yazıyorsun. Anlamayan var mı bunu?
+
+304
+00:57:05,300 --> 00:57:29,300
+Anlamayan var mı bunu? İşte bu kadar. Hadi C3'ü de yazalım. A0, A1, A2, A3'e kadar gideceksin. Bu kadar. Neden? C3 diyor çünkü. Değil mi? Hangisi diyorsa o kadara kadar A0'dan başlayıp gideceksin. Ondan sonra da geri geri ilmikleri...
+
+305
+00:57:29,844 --> 00:57:56,703
+İlmekleri çıkıyorsun. Evet. Değil mi? Şiş videoları falan var. Hani yün mün öğretiyor insana. Ne güzel şeyler var. Ne videolar var. Aman insan her şeyi öğreniyor. Fevkalade canım. Evet. Biz mesela bir örneği falan mesela genç gel. Öğrenmek için işte bilmem ne teyzeye gideriz. O da onun gönlü olacak da gösterecek de falan da filan da onun örneğini bulmak için. Şimdi yazıyorsun tak istediğin örnek.
+
+306
+00:57:57,364 --> 00:58:04,324
+uygulamalı. Şimdi diyor, şişi böyle batıracaksın, işte tığı böyle batıracaksın. Hepsini anlatıyor. Anlamadığınız bir şey var mı burada?
+
+307
+00:58:06,643 --> 00:58:17,123
+Tamam mı? Tamamsa bir tuşa basalım, örnek üzerinde gösterelim. Tamam, tamam. Bakayım sınıfta kaç kişi var? 110 kişi var. Keşke daha çok kişi olsa.
+
+308
+00:58:18,724 --> 00:58:25,023
+Evet, hemen sorumu yazıyorum. Soru şu. Soru şu. Çok güzel soru.
+
+309
+00:58:25,427 --> 00:58:48,987
+n eşittir sıfırdan sonsuza kadar x üzeri n çarpı n eşittir sıfırdan sonsuza kadar, evet, eksi 1 üzeri n, x üzeri n artı 1 bölü n artı 1 eşittir soru işareti.
+
+310
+00:58:48,987 --> 00:58:53,027
+Tamam budur, iki seriyi çarp diyor. Sınavda böyle bir şey gelir mi?
+
+311
+00:58:53,396 --> 00:58:59,296
+Vallahi inşallah gelir. Ne diyeyim ben? Çünkü kolay soru yani. Bu bizim korktuğumuz bir soru grubu değil.
+
+312
+00:58:59,827 --> 00:59:08,968
+Şimdi bizim cevabımız ne eşittir sıfırdan sonsuza kadar cnx üzeri n olsun istiyoruz da bunun kim olduğunu bilmiyoruz.
+
+313
+00:59:09,408 --> 00:59:14,428
+Şimdi derdimiz o. Hemen kalemin rengini değiştirip bunların göbek katlarını yazmaya başladım.
+
+314
+00:59:15,048 --> 00:59:20,228
+1 artı x artı x kare artı x küp nokta nokta devam edip gidiyor.
+
+315
+00:59:20,768 --> 00:59:23,048
+Hemen diğerine de bir sayı vereyim.
+
+316
+00:59:23,503 --> 00:59:33,403
+Bu ne oldu? X değil mi? Sonra, bir saniye şöyle yazmak istedim. Ne hikmetse öyle, Allah Allah. Niye öyle yazmak istedim acaba? Bir hikmet vardır elbet.
+
+317
+00:59:33,923 --> 00:59:47,183
+Eksi, x kare bölü 2, sonra x küp bölü 3, evet. Sonra, evet bu kadar yeter ya. Fazla yazdım. Hocam ne kadar yazsın? İşte dişe gelsin.
+
+318
+00:59:47,183 --> 00:59:48,523
+Ha, olur.
+
+319
+00:59:49,331 --> 00:59:59,871
+Şimdi şurası hakkında konuşalım. Bu durumda o zaman A0'mız da 1'dir, A1'miz de 1'dir, A2'miz de 1'dir, A3'miz de 1'dir. Doğru mu? Bunlar böyle.
+
+320
+01:00:00,471 --> 01:00:08,652
+Peki burası hakkında konuşacağız. Lütfen dikkat edin. B0'mız kimdir? B1'miz kimdir? B2'miz kimdir? B3'miz kimdir?
+
+321
+01:00:08,652 --> 01:00:13,152
+Siz bana B0'ı söylerken ben de formülleri yazayım ufak ufak.
+
+322
+01:00:16,467 --> 01:00:17,768
+Ve sıfırı kim söyleyecek?
+
+323
+01:00:19,587 --> 01:00:21,728
+Yanlış söylemek güzel bir şey burada.
+
+324
+01:00:22,127 --> 01:00:23,807
+Neden yanlış söylemek güzel?
+
+325
+01:00:23,987 --> 01:00:26,248
+O yanlışı yapınca bir daha yapmıyorsunuz.
+
+326
+01:00:26,387 --> 01:00:28,427
+Mesela şu an ilk yanlış geldi.
+
+327
+01:00:29,648 --> 01:00:33,107
+Evet, bir daha o hatayı yapmayacak mesela bu arkadaşımız.
+
+328
+01:00:33,587 --> 01:00:34,007
+Eminim.
+
+329
+01:00:35,947 --> 01:00:37,067
+İnşallah da diyelim.
+
+330
+01:00:37,228 --> 01:00:39,847
+Çünkü insanız nazarda değmesin.
+
+331
+01:00:40,567 --> 01:00:42,867
+Evet, ilk işlememiz sıfırdır.
+
+332
+01:00:46,612 --> 01:00:59,831
+Evet, ben formülü yazıyorum. Siz de diğerlerini tayin etmeye çalışın bakalım. Şöyle, hani kaleminiz olsun olmasın. Hani şöyle insan gözünle de karar verebilir. Efendime söyleyeyim. Evet, şimdi yazalım.
+
+333
+01:00:59,831 --> 01:01:06,291
+B sıfırımız neden öyle? Hemen şöyle renkli kalemle burada bir tane sıfır olduğunu söyleyebilirim. Neden?
+
+334
+01:01:06,815 --> 01:01:13,775
+Çünkü formülde dikkat ederseniz x'siz olan terime ben a0 diyordum. Buna dikkat etmek lazım.
+
+335
+01:01:14,775 --> 01:01:21,416
+Efendime söyleyeyim. Hemen şarjımızı takalım. Bilgisayarımız biraz sıskalaşmış pili.
+
+336
+01:01:28,788 --> 01:01:42,188
+Şimdi bunları da yerlerine yazalım. 1 çarpı 0. Şu ana kadar hocam böyle bir soru geldi mi? Valla şu ana kadar gelmedi. Hiç görmedim bu konuyla ilgili bir soru çıktığını.
+
+337
+01:01:44,128 --> 01:01:54,427
+Peki bu sene gelir mi? Bu sene gelmez demiyorum. Sadece geçmişe yönelik konuştum. Bu sene gelirse ne olur? Bir güzel yaparsın. Bence bunu kolay diye sormamışlar.
+
+338
+01:01:56,179 --> 01:02:03,279
+Yani çünkü birazdan anlayacaksın ne demek istediğimi üzülerek söylüyorum ama gerçekten çok zor sorular.
+
+339
+01:02:03,279 --> 01:02:07,619
+Evet, şimdi bir teorem yazacağım birazdan.
+
+340
+01:02:07,983 --> 01:02:24,463
+Efendim, hemen sonucumuzu da yazalım. Ne eşittir? Sıfırdan sonsuza kadar cn x üzeri n'i 0 artı x artı x kare bölü 2 artı 5 x küp bölü 6 artı nokta cık cık cık cık cık diye gidiyor.
+
+341
+01:02:24,463 --> 01:02:35,623
+Evet, sorusu olan varsa sorsun. Şimdi kuvvet serileri için çok önemli iki tane teorem yazacağım. Bu iki teoremin ikisini de,
+
+342
+01:02:36,884 --> 01:02:44,083
+Kullanacağız. İkisini de kullanacağız. Bakın, ikisini de kullanacağız. Hiç istisnasız. Sorusu olan var mı burayla ilgili?
+
+343
+01:02:44,583 --> 01:02:49,043
+Hocam, B2 1 bölü 3 değil mi? Çünkü B1 eksi 1 bölü 2 değil mi?
+
+344
+01:02:49,043 --> 01:03:03,203
+A bunları yazmamışız. Çok teşekkür ediyorum. B0'ımız 0. B1'imiz 1. B2'imiz eksi 1 bölü 2. B3'ümüz 1 bölü 3. Tamam mıdır efendim?
+
+345
+01:03:03,599 --> 01:03:08,360
+Hocam, B1 nasıl 1 oldu onu anlamadım. Ben B1'e eksi 1 bölü 2 diye düşündüm de.
+
+346
+01:03:09,219 --> 01:03:11,259
+O zaman sen takip etmiyorsun dersin.
+
+347
+01:03:11,719 --> 01:03:12,460
+Ben anlatacağım.
+
+348
+01:03:12,920 --> 01:03:13,759
+Ama anlatıyorum.
+
+349
+01:03:14,599 --> 01:03:15,579
+Bak, bak, bak.
+
+350
+01:03:16,059 --> 01:03:17,059
+Bakıyorum.
+
+351
+01:03:17,819 --> 01:03:19,819
+Görüyor musun şu cursor'ı, görüyor musun şu anda?
+
+352
+01:03:20,039 --> 01:03:20,719
+Evet, evet.
+
+353
+01:03:22,239 --> 01:03:25,000
+Bunu söyledim. Ne dedim?
+
+354
+01:03:25,000 --> 01:03:25,199
+Tamam.
+
+355
+01:03:25,639 --> 01:03:26,480
+B0 bu mu?
+
+356
+01:03:26,480 --> 01:03:26,679
+B0.
+
+357
+01:03:27,219 --> 01:03:27,400
+Evet.
+
+358
+01:03:27,920 --> 01:03:28,440
+B1.
+
+359
+01:03:29,019 --> 01:03:30,319
+Tamam, tamam hocam.
+
+360
+01:03:30,623 --> 01:03:34,764
+Konuştuk ya bunu yavrum, sen dinliyorum diyorsun ama, valla dinlemiyorsun beni.
+
+361
+01:03:35,244 --> 01:03:39,583
+Hocam, ben Baby'le B2'yi karıştırdım, pardon, özür dilerim.
+
+362
+01:03:39,943 --> 01:03:43,744
+Estağfurullah, estağfurullah. Dinleyin ama bak, dikkatli dinleyin beni.
+
+363
+01:03:44,304 --> 01:03:53,623
+Çünkü Çobat, en zor konudayız. Şu an böyle hani yarım gözünden dinliyorsan, inan ki yani ne diyeyim ben, algılarını maksimuma getir.
+
+364
+01:03:53,623 --> 01:03:58,463
+Şu an, şu andan sonra, hani şey diyor ya, önümüzde türbülans var.
+
+365
+01:03:58,623 --> 01:04:03,003
+Lütfen yerinizden kalkmayınız, kemerlerinizi bağlayınız, güzel güzel giderken.
+
+366
+01:04:03,483 --> 01:04:06,443
+Efendim, senin önüne de bir yemek vermişler, teypliği yiyorsun.
+
+367
+01:04:07,063 --> 01:04:08,703
+Ondan sonra pilot anons geçiyor.
+
+368
+01:04:08,703 --> 01:04:13,384
+Diyor ki, lütfen tuvalete de giden, cing cung, tang cung falan yapıyor böyle şey.
+
+369
+01:04:14,284 --> 01:04:16,163
+Ne denir ona? Uyarı ışıkları falan yanıyor.
+
+370
+01:04:16,244 --> 01:04:17,324
+Ashabım bozuluyor.
+
+371
+01:04:17,683 --> 01:04:19,264
+İnan şu an o noktadayız.
+
+372
+01:04:19,384 --> 01:04:20,723
+Bak, sinyal verdim.
+
+373
+01:04:20,864 --> 01:04:23,683
+Orada gidip başka bir şeyle, su içeyim, kahve içeyim.
+
+374
+01:04:24,083 --> 01:04:25,463
+Anne bana meyve mı getirdin?
+
+375
+01:04:25,864 --> 01:04:26,623
+İşte abla bir...
+
+376
+01:04:26,623 --> 01:04:35,103
+Bilmem ne mi oldu, dur oğlum şununu mu katlayayım falan onları yapıyorsan bu dersi anlayamazsın. Şu andan itibaren türbülansa giriyorum.
+
+377
+01:04:35,864 --> 01:04:46,744
+Türbülansın teoremini yazıyorum. Burada yazdığım teoremler bir fiil kullanılacaktır. Bir fiil kullanılacaktır. Bak tekrar ediyorum.
+
+378
+01:04:47,155 --> 01:05:04,995
+Kullanmadığımız bir teoremi, kullanmadığımız teoremi de yazıyoruz. Yani yazıyoruz da hani böyle diyorum, böyle değil yani. Bu gerçekten çok çok önemli. Şimdi yazıyoruz teoremimizi. Hemen şöyle başlık atayım. Teorem. Tamam mı?
+
+379
+01:05:05,907 --> 01:05:21,447
+Sonra mavi kalemimle yazayım. Çok önemli. Çok da yukarı yazdık. Yukarı yazınca biraz beyaz tahta kızıyor. Biraz aşağı kaydıyor. Ama bütün teoremler aynı sayfada olsun istiyorum. Ne eşittir sıfırdan? Bak sonsuz yazdırmıyor bana.
+
+380
+01:05:23,507 --> 01:05:29,507
+Evet, onu biraz aşağı almam lazım. Yazdırmıyor çünkü. Evet, ancak böyle kurtarabildim.
+
+381
+01:05:30,027 --> 01:05:50,507
+En eşittir sıfırdan sonsuza kadar, ane, x üzeri n, evet, serisi, tamam, x küçük r için mutlak yakınsak, tamam mı? İse.
+
+382
+01:05:52,083 --> 01:05:58,543
+Şimdi şurada bir durup bir nefeslenelim. Ne söyledi bize? Bir tane kuvvet serisi verdi, bir de yakınsaklık aralığını verdi. Tamam, anladım.
+
+383
+01:05:59,503 --> 01:06:03,883
+Efendime söyleyeyim. F fonksiyonu.
+
+384
+01:06:07,347 --> 01:06:24,727
+Sürekli bir fonksiyon ise. Tamam, sığdırdım. Şimdi buraya çok dikkat et. Tam altına yazıyorum, anlaşılsın diye. Ne eşittir? Sıfırdan sonsuza kadar. A ne?
+
+385
+01:06:29,619 --> 01:06:31,480
+X'in yerine bir şey yazacağım.
+
+386
+01:06:32,940 --> 01:06:33,619
+Serisi.
+
+387
+01:06:34,619 --> 01:06:37,519
+X'in yerine bir şey yazacağım. Sizce ne yazacağım?
+
+388
+01:06:44,532 --> 01:07:04,932
+Sizce ne yazacağım? X'in yerine bir şey yazacağım. X'in yerine bir şey yazacağım. Aha diziler için, hocam sürekli fonksiyon teoremindeki gibi mi? Evet, evet, aferin. Aynen oradaki gibi. Ne yapıyorduk orada? Hani f fonksiyonu sürekli bir fonksiyonsa.
+
+389
+01:07:12,083 --> 01:07:13,903
+Ne yazıyoruz? Evet, söyle bakalım.
+
+390
+01:07:17,643 --> 01:07:25,143
+Mesela burada köküks... Evet [öğrenci], aferin maşallah. Evet, tamam.
+
+391
+01:07:26,764 --> 01:07:31,824
+[öğrenci]'cığım şimdi mesela bunu asla unutmaz. Tamam mı? Bu işlemi yapacak mıyız?
+
+392
+01:07:32,063 --> 01:07:38,403
+Hem ne diyorsun sen, o kadar fazla yapacağız ki. Burası tamam mıdır anlamayan var mı? Tamam mı?
+
+393
+01:07:40,340 --> 01:07:59,240
+Eğer, An, x-c, güzel olmadı orası, şu eni aşağı düşürelim. An, bazen grafik tablet sırayı tutturamıyor, böyle savuruyor. Neden o oluyor bilmiyorum ama bazen yapabiliyor.
+
+394
+01:08:00,159 --> 01:08:05,039
+Serisi, bak yine yukarı savurdu mesela, R büyük sıfır.
+
+395
+01:08:07,155 --> 01:08:33,855
+Belki orada bir temassızlık mı var artık tam o noktaya gelince. Yakınsaklık yarı çapına sahip ise, yani a-r, x a artı r için seri yakınsak.
+
+396
+01:08:34,387 --> 01:08:36,387
+ise, tamam mı?
+
+397
+01:08:39,528 --> 01:08:41,708
+fx eşittir.
+
+398
+01:08:42,827 --> 01:08:45,608
+ne eşittir? 0'dan sonsuza kadar.
+
+399
+01:08:46,028 --> 01:08:48,708
+Evet, zurna'nın zırt dediği yer başlıyor şu anda.
+
+400
+01:08:48,988 --> 01:08:50,587
+Gerçi şu teorem de çok çok önemli.
+
+401
+01:08:50,768 --> 01:08:52,068
+Yani şu teorem de çok önemli.
+
+402
+01:08:54,068 --> 01:08:56,788
+a-rx
+
+403
+01:08:56,788 --> 01:08:58,827
+a artı r
+
+404
+01:08:58,827 --> 01:09:01,108
+şeklinde
+
+405
+01:09:02,547 --> 01:09:08,587
+Bir fonksiyon, tanımlar.
+
+406
+01:09:10,087 --> 01:09:17,228
+Evet, başımıza püsküllü dertleri çıkartan kısım burasıdır.
+
+407
+01:09:18,036 --> 01:09:42,992
+Size sınavda ne söyler? Size bir tane kuvvet serisi verir. Şunun gibi, şunun gibi bir kuvvet serisi verir. Der ki bu kuvvet serisi aşağıdaki fonksiyonlardan hangisini tanımlar? Ne? Ya. Veya size şöyle bir fonksiyon verir. Şöyle bir fonksiyon verir. Bu fonksiyon, bu fonksiyon aşağıdakilerden...
+
+408
+01:09:42,992 --> 01:10:08,452
+Hangi kuvvet serisiyle temsil edilir? Tamam mı? Böyle soru gelir mi? Gelir. Anlaştık mı? Esas problemimizin başı bu. Ve bu işlemi yapabilmek için, yani herhangi bir fonksiyonun kuvvet serisi temsilini bulmak için veyahut, efendim, bir kuvvet serisini gösteren fonksiyonu bulabilmek için yapacağınız işlemler, birinci işlem şu işlemdir.
+
+409
+01:10:09,876 --> 01:10:14,775
+İkinci işlem türev alma işlemidir. Üçüncü işlem integral işlemidir.
+
+410
+01:10:15,476 --> 01:10:18,195
+Hocam Allah aşkına ya bunu yerine koymak çok kolay.
+
+411
+01:10:18,195 --> 01:10:26,515
+Doğru kolay. Evet. Yani F fonksiyonunu bilirsen kolay. Ama F fonksiyonunun hangi fonksiyonu olduğuna sen karar vereceksin. Problem orada.
+
+412
+01:10:28,156 --> 01:10:33,355
+Ama türev almak da kolay ki. Benim matbilim çok iyi. Ben türev çok iyi alıyorum.
+
+413
+01:10:34,195 --> 01:10:40,195
+Türev almak kolay da ne zaman türev alacağına, ne zaman integral alacağına sen karar vermelisin. Zor olan kısım bu.
+
+414
+01:10:43,796 --> 01:10:55,576
+Evet, o zaman bana demek ki burası verilecek, burası sorulacak veya burası sorulacak, burası verilecek, burası sorulacak ama ben ya integral alacağım?
+
+415
+01:10:56,692 --> 01:11:09,612
+Ya türev alacağım, yahut da şu ilk teoremi kullanacağım, bunun bu eşitini veya bunun bu eşitini elde edeceğim. Doğru mu anladım? Doğru anladım. Doğru anladım. Aynen doğru anladım.
+
+416
+01:11:10,791 --> 01:11:23,391
+Ama hangi işlemi yapacağıma kendim karar vereceğim için, bu kararı vermek için de çok fazla soru çözmüş olmam gerektiği için ve genelde de buna üşendiğim için
+
+417
+01:11:23,859 --> 01:11:28,739
+Burada çok zorlanacağım. Evet, aynen öyle. Anlaşıldı mı mesele?
+
+418
+01:11:33,524 --> 01:12:00,484
+Tamam mı? Sıkıntı buradadır sevgili arkadaşlar. Sıkıntı buradadır. Bak, bütün sıkıntı budur. Sana burasını verir, burasını sorar. Burasını sorar, burasını verir, burasını sorar. Ya bu teyramdan yararlanırsın, ya bunu türetmen lazımdır, ya integralini alman lazımdır ama ne yapacağını insan kestiremez.
+
+419
+01:12:00,979 --> 01:12:04,800
+Senin için değil bu. Herkes için. Herkes için yavrum.
+
+420
+01:12:06,539 --> 01:12:10,960
+Evet, şimdi devam ediyorum o zaman.
+
+421
+01:12:12,420 --> 01:12:15,899
+Bu f fonksiyonunun.
+
+422
+01:12:19,604 --> 01:12:45,783
+Aralığım, iç noktalarında. Haa, evet, tabletimde şu noktada problem var. Haa, evet, bakayım tekrar yapayım. Gerçekten merak ettim şimdi. İç noktalarında. Şimdi aşağı çekerek yazmam. Orada aşağı çekerek yazmam lazım demek ki. Her mertebeden türevi vardır.
+
+423
+01:12:47,923 --> 01:13:01,984
+Şimdi burada bir sıkıntımız daha var. Ne gibi hocam? Şöyle yavrum, söyleyeceğim. Lütfen dikkat et. Bak uyuyorsan gözünü aç. Burada kulağınla beni dinlemen yetmez. Gözlerini de açarak tahtaya bak.
+
+424
+01:13:02,804 --> 01:13:12,204
+Şimdi biz kime göre türev alıyoruz? Hocam, X'e göre türev alıyoruz. Aferin. Burada A0 sabit, evet. C de sabit. 3 gibi, 5 gibi, evet.
+
+425
+01:13:12,576 --> 01:13:39,536
+Burada neyde biz sayı gibi düşünüyoruz. X'e göre türev aldığımız için tepesinin şey başa geliyor, üstü bir azalacak. Evet, aynen öyle. Ama bir sıkıntımız da var. Kolaymış deyip gitme. Gitme bir yere, buraya gel. Buraya gel. Sıkıntı nerede biliyor musun? Ney sıfırdan başlıyordu. Tekrar buraya sıfır, bak iyi dinle burayı, sonra ben anlamadım diyeceksin çünkü odanın öbür ucundasın.
+
+426
+01:13:42,644 --> 01:14:07,344
+Buraya gel. N sıfırdan başlarsa eğer, tekrar burayı da sıfırdan başlatırsam, sıfırı yerine koyunca x eksi c'nin üzeri kaç olur? Eksi bir olur. Bu da bir bölü x eksi c olması demektir. Kuvvet serisinde böyle bir şey yok. Uydurma bana. E ne yapacağım hocam? Burası sıfırdan başlayacak şekilde burayı kendin düzelteceksin elinle.
+
+427
+01:14:07,891 --> 01:14:27,571
+Hocam bir şey soracağım. O zaman x eksi c'nin üzeri n artı 1 olsaydı, türevi aldığımda n artı 1, x eksi c üzeri n artı 1 eksi 1 olsaydı, buradaki sigmayı sıfırdan başlatmamın bir problemi olur muydu? Olmazdı. O zaman tamam. Çünkü neden? Üstü bu hale gelmiyor o zaman. Burasını anlamayan var mı?
+
+428
+01:14:28,831 --> 01:14:35,271
+Şimdi odanın öbür ucundadır. Hocam bir daha söylesene. Neden? Ekrana bakmıyor, kullanma ders görüyor. Kim bilir orada neler yapıyor.
+
+429
+01:14:37,587 --> 01:14:44,068
+Ben yine tekrar ediyorum. Bundan sonra bilgisayarın başından ayrılmayın. En kolay kısmı burası. Daha da zorlaşacak.
+
+430
+01:14:45,288 --> 01:14:52,667
+Türevi aldığınız zaman tepesine dikkat ediyorsunuz. Tepesi sıfırdan başlayacak şekilde burayı ayarlıyorsun. Anladın mı?
+
+431
+01:14:54,127 --> 01:14:58,847
+Hocam burası üçtü zaten. Sıfırdan olacak şekilde mi ayarlayacağım? Hayır canım.
+
+432
+01:15:00,243 --> 01:15:15,844
+Hocam, hep 1 mi yoksa, değere göre başka değerlikler de alır mı? Eğer 0'sa, bak, eski değeri 0. Türevi aldıktan sonra 0'ı koyduğunda negatif oluyorsa, onu 0 yapacak şekilde en yakın değerden başlayacaksın. [öğrenci].
+
+433
+01:15:18,931 --> 01:15:27,811
+Tamam, en yakın değerden başlayacaksın. Eğer üstte en artı birse, türevi aldıktan sonra en haline geldiyse, sıfır burada sıkıntı çıkartmaz.
+
+434
+01:15:28,072 --> 01:15:33,412
+Ah, hoca dedi ki ilk türeden sonra birden başlayın. Ben öyle bir şey söylemedim. Ben öyle bir şey söylemedim.
+
+435
+01:15:34,271 --> 01:15:40,612
+Yarım kulak dinleme. Gözlerini de aç, buraya bak. Çok önemli burası. Daha burada hata yaparsan ne yapacağız ya?
+
+436
+01:15:45,140 --> 01:16:06,800
+Tamam mı? Bak tekrar ediyorum. Hani artık köprüden önce son çıkış. Hani odanın öbür ucundaysan da artık geldin, vahimiyeti anladın. X eksi C üzeri, mesela atıyorum burada bir sayı var, N var, bir şey var. Burada türevi aldıktan sonra bunun üstü N eksi 1 oldu.
+
+437
+01:16:07,347 --> 01:16:16,648
+Burayı n sıfır koyduğun zaman sen, bunun üstü eksi bir olacağı için, bu eksi biri sıfıra çekecek şekilde yapman lazım orayı.
+
+438
+01:16:17,007 --> 01:16:25,268
+Veya türevi al, burası n eşittir, birdi. Bunun üstü de atıyorum, x eksi c üzeri n eksi birdi. Tamam mı?
+
+439
+01:16:28,015 --> 01:16:48,215
+x eksi c üzeri n eksi 2 oldu. Sen yine burayı en eşit 1'den başlatamazsın o zaman. Kaçtan başlatman lazım? 2'den başlatman lazım. [öğrenci]'ciğim tamam mıyız? Şimdi senin sorduğun şeyi iyicene örneklendirdim. Tamam değil mi? Heh, bak, evet.
+
+440
+01:17:05,939 --> 01:17:12,059
+Artık daha da bunu önemsemeyip, hala gidip dolaşan, yok ben yoklamada var gözükeyim.
+
+441
+01:17:12,159 --> 01:17:23,859
+Yani bu yoklama işe yarasaydı, dersin başında milyon tane mesaj atılıp benim yoklamam için ne olacak diye mesaj atan, alttan alan öğrenci olmazdı.
+
+442
+01:17:25,279 --> 01:17:27,819
+Yoklamadan geçmek hiçbir şey değiştirmez.
+
+443
+01:17:28,819 --> 01:17:31,259
+Seneye gene aynı sıkıntıyı çekersin.
+
+444
+01:17:31,859 --> 01:17:33,079
+Neyi değiştirmen lazım?
+
+445
+01:17:33,652 --> 01:17:47,171
+Zihnini, düşüncelerini değiştirmen lazım. Çünkü bu kafayla bu iş gene aynı olacak. Gene kalacaksın, gene yoklama. Yok gelmesem olur mu? Gelme hala bakalım gelme gelme hadi ne kadar gelmeyecek.
+
+446
+01:17:48,591 --> 01:17:59,631
+Şimdi kaçtan başlayacak bu çocuklar, gençler? İkiden başlayacak. Anladınız mı olayı? Ve integre edilebilir diyorsun.
+
+447
+01:18:00,148 --> 01:18:24,888
+Başka bir işlem daha varmış. Hayda. İntegrasyon nasıl? İntegrasyonda da hocam, indisle oynayacak mıyız? Yok. İntegrasyonda indisle oynamana gerek yok. Çünkü onda sıkıntı çıkmaz. Yani şunu integre edebilirsin. Şunu integre edebilirsin. Bunun integrasyonu sonucunda her iki tarafın integrenini almak demektir bu. X'e göre tabii ki.
+
+448
+01:18:36,500 --> 01:18:42,840
+Hocam nasıl alacağız? E türevi nasıl aldın? Söyle. Ama burada n'de sıkıntın yok. Onu kontrol etmene gerek yok artık.
+
+449
+01:18:44,659 --> 01:18:48,220
+Ne yapacağım? Üstünü bir arttıracaksın. O sayıyı böleceksin.
+
+450
+01:18:48,739 --> 01:18:53,380
+Hocam integral alınca bir de k çıktı başıma. Ya değil mi? Vallahi doğru.
+
+451
+01:19:05,076 --> 01:19:05,716
+Tamam mı?
+
+452
+01:19:08,655 --> 01:19:16,296
+Belirli integral alabiliriz.
+
+453
+01:19:16,676 --> 01:19:26,456
+Tamam. Şimdi bir sıkıntımız daha var. Hocam bitmedi ya öyle. Sıkıntılar genelde üst üste gelir böyle. Enteresandır. Hani Allah uzak etsin diyelim biz gene de.
+
+454
+01:19:27,296 --> 01:19:29,496
+Şimdi, buraya kadar tamam mıyız?
+
+455
+01:19:31,115 --> 01:19:31,435
+Bak.
+
+456
+01:19:32,692 --> 01:19:52,912
+Çok önemli bir şey söyleyeceğim. Senin bu efiksinin yakınsaklık aralığı neydi? Hocam buydu bak altını çiziyorum. Aferin çiz. Diğerleri içinde aynı mı hocam? Aynı sen yaz oraya bakalım. Tamam orayı boş bıraktım özellikle. Orası konuşulması gereken çok önemli bir konu [öğrenci]. Çok önemli bir konu.
+
+457
+01:19:54,072 --> 01:19:59,311
+Hocam buraya da mı aynasını yazayım? Yaz ama bu bu kadar basit değil. Neden hocam değişecek mi?
+
+458
+01:20:00,148 --> 01:20:09,387
+Sanırım değişecek. Yani aynı kalma ihtimali de var ama değişme ihtimali de var. Nasıl karar vereceğim? Şimdi onu konuşacağız.
+
+459
+01:20:11,488 --> 01:20:20,847
+Şimdi, hocam, türev ya da integral aldığımız zaman yakınsaklık aralığı değişmiyormuş, onu mu anlamalıyım? Yok, yanlış anlamışsın. Ama aynısını yazdım.
+
+460
+01:20:21,748 --> 01:20:26,628
+Aynısını yazdım da buralarda durum değişebilir. Ne demek o hocam?
+
+461
+01:20:26,960 --> 01:20:46,140
+Yani şurada eğer aralık kapalıysa açık hale gelebilir, açıksa kapalı hale gelebilir. Peki bir defa daha türev alınca yine durum değişebilir. Yani kapalıysa açık, açıksa kapalı, kapalıysa açık, açıksa kapalı. Bu integralde de mi aynı? Evet. İntegralde de kapalıysa açık, açıksa kapalı hale gelebilir.
+
+462
+01:20:47,475 --> 01:21:10,275
+Ne yapacağım o zaman? Her türevde aralığın uçlarını mı değiştireyim? Ay akıllı ol, Allah senin iyiliğini versin ya. Her türevde aralığın ucu kontrol edilir mi? Ama değişiyor dediniz. Ya değişiyor dedim de, en son sen mesela atıyorum 3 defa arka arkaya türev almak zorunda kalacaksın. Ne? Ya. Ve de bir üstüne üstlük integral falan almaya kalkacağım. Ya. Evet.
+
+463
+01:21:11,380 --> 01:21:32,200
+Sen her keresinde kontrol edersen sınavın sonu gelmez. E ne zaman edeceğim? Bütün işlemlerin bitecek. En sonda bu aralığı yazdığın zaman kontrol edeceksin. Bu kadar. O da sorarlarsa, sormazlarsa, koş ver. Akıllı ol. Akıllı ol. Akıllı ol. Anlaştık mı?
+
+464
+01:21:37,427 --> 01:21:39,007
+Bir tek [öğrenci]'le mi anlaştık?
+
+465
+01:21:41,328 --> 01:21:46,967
+Dur, [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci].
+
+466
+01:21:47,387 --> 01:21:51,108
+Beyler neredesiniz? Hep hanım kızlar basıyor buraya şeyleri.
+
+467
+01:21:51,528 --> 01:21:53,007
+Evet, mevet, nokta, nokta.
+
+468
+01:21:53,507 --> 01:21:55,528
+Heh, [öğrenci], heh. Aferin, aferin, [öğrenci].
+
+469
+01:21:56,328 --> 01:21:57,847
+Ha, biraz beyleri de görelim ya.
+
+470
+01:21:58,608 --> 01:22:00,047
+Zor ama anlaştık herhalde.
+
+471
+01:22:02,131 --> 01:22:07,131
+Bak, [öğrenci], o surat ifadesi tam, tam, tam.
+
+472
+01:22:08,551 --> 01:22:10,231
+Hocam, bizim bölüm hep kız diyor.
+
+473
+01:22:11,811 --> 01:22:16,131
+Ay çocuklar, ilahi, vallahi beni çok güldürdünüz.
+
+474
+01:22:16,131 --> 01:22:22,291
+Ama [öğrenci]'in yaptığı surat ifadesi, tam kuvvet serilerinin amblemi olur yani.
+
+475
+01:22:23,591 --> 01:22:26,231
+Tam, tam kuvvet serilerinin amblemi.
+
+476
+01:22:30,003 --> 01:22:57,163
+Evet. Gerçekten. [öğrenci], gerçekten çok doğru bir tepki. Fakat şöyle diyorum, daha dur, daha dur diyorum. Evet. Peki. Şimdi hemen bir şeyden bahsedeceğim. Ondan sonra da bir ara verelim. Fakat şöyle söyleyeyim. Aradan sonra hiç gecikmemen lazım. Neden?
+
+477
+01:22:57,908 --> 01:23:08,427
+Aradan sonra gecikirsen sonra toparlamak çok zor olur. Bak açıkta net söylüyorum. Sana her şey hepsini söylüyorum. Daha ben ne diyeyim yani? Daha ben ne diyeyim? Evet, şimdi, şimdi.
+
+478
+01:23:09,555 --> 01:23:37,555
+Hemen şurada. Bir kere bizim kullanacağımız ana malzememiz var. Tamam mı? Hani mesela ekmek yapıyorsan ana malzeme bir undur. Diyeceksin ki hocam şimdi mercimekten de ekmek. Yapıyorlar valla her şeyden yapıyorlar da hani şimdi bırak şimdi o şeyleri, havalı şeyleri. Hani normal ekmek undan yapılır. Yani öyle un, böyle un, şöyle un, böyle un. Nihayetinde un yani. Şimdi ana malzememiz bizim un. Ben bundan bahsetmek istiyorum.
+
+479
+01:23:37,555 --> 01:23:49,675
+istiyorum size. Şimdi şunu bir yazayım. Şunu yazayım. Kısa zaten, çok uzun değil. Örneğin dedim, bak, ve kağıdına, kağıdına.
+
+480
+01:23:51,475 --> 01:24:18,495
+Yazacağın en önemli şey. Bir de sana şunu söylemiştim hatırlarsanız eğer. Ne eşittir birden sonsuza kadar, şunu tam ekran yapayım, o kızıyor bana yukarıya yazınca biliyorsunuz. Ne eşittir birden sonsuza kadar x üzeri ne eksi bir veya veya buradan bir çıkartırsan buraya bir eklemen lazım. Ne eşittir sıfırdan sonsuza kadar x üzeri ne? İkisi de aynı şeydir.
+
+481
+01:24:18,963 --> 01:24:46,163
+Var mı burada problem? Bunu adın gibi bileceksin. Bunu yaz. Bunu da yine kağıdına yaz. Bu senin ana malzemen. Un gibi un. Ekmek yapıyoruz ya. Bu unu bu, unu. İşte tam buğday unu yok. Değirmen unu ya. Un bu, un. Çok önemli. X mutlak değer küçük bir için. Veya bunun bir göbek adı var. Eksi bir artı bir aralığı. Aynı şeydir bu. Tamam mı? Bunu beton gibi bileceksin. Tamam mı?
+
+482
+01:24:46,676 --> 01:25:11,356
+Sağ ol [öğrenci]'ciğim. Şimdi, bunun eğer türevini almaya kalksak, nasıl alırız? Al buradan alalım. Şunu bırak, şuradan alıyorum. Tamam mı? Bak, şuradan alıyorum. Bak, dikkat et. Neye eşittir? Bir kere birden başlatacağım. Şurayı alma. Burası da doğru ama burayı alma. Bu doğru. Lakin kullanılmaz bu. Şöyle bir çizgi çektim.
+
+483
+01:25:12,627 --> 01:25:38,347
+Tamam mı? Doğru ama kullanmayacağız. Evet, doğru ama kullanmayacağız. Tamam. Biz buradan kullanıyoruz. Yani buradan türev alıyoruz. N başa geldi. Üstü bir azaldı. Bir azalınca birden başlatman lazım. Türevi de alıyorum. 0, 1, 2, x. Nasıl türev alıyor? Alıyorum ya türev. Sen de Allah aşkına. Lisede ilk öğrendiğin türevdeki gibi. Anladın mı?
+
+484
+01:25:38,804 --> 01:26:05,923
+1 bölü 1 eksi x'in türevi. Onu nasıl alırsın? 1 eksi x'in eksi birinci kuvvetinin türevi. Eksi başa gelir, üstü biraz alır. Aha da eksi 2 oldu. İçinin türevinden de eksi geldi. Oldu mu sana 1 bölü 1 eksi x'in karesi? Bunu sileceğim. Haberin olsun. Alacaksan al şimdi defterini. Onun türevini alabilecek durumda olman lazım zaten.
+
+485
+01:26:06,420 --> 01:26:29,199
+Böyle yakınsaklık aralığı neymiş? Değişiyor mu? Değişmiyormuş. Ama aralığın uçları için durumu değişiyor dediler hocam. Kontrol edersin ayrıyetten. Tamam mı? Yani türevden sonraki hikaye kontrol edilmelidir. Hatta öyle yazmayalım. Şöyle yazalım dilersen. Bak daha güzel olur bu yani. Zaten yapacağız merak etme.
+
+486
+01:26:30,996 --> 01:26:46,796
+Pembiş pembiş yazıyorum. Neden? Teneffüse gidiyoruz. Onun için Allah diyorsun, ara vereceğiz, yaşasın. Canım çıktı. Ayy biraz dinleneyim. Onun için pembeyle yazıyorum. Kutuluyorsun şimdi benden. Efendime söyleyeyim.
+
+487
+01:26:47,515 --> 01:26:52,796
+Şimdi bir tane daha alalım. Ondan sonra da aramıza çıkalım. Evet, bir tane daha alalım.
+
+488
+01:26:53,332 --> 01:26:59,271
+O zaman da neye eşittir? İkiden sonsuza kadar. Çünkü neden? Üstü bir azalırsa.
+
+489
+01:27:00,992 --> 01:27:10,392
+Evet, burada yine şeyin azizliğine uğradık, grafik tabletin. Pıt diye beni yukarı atıyor orada. Bir tuhaflık var orada. Çarptırdım herhalde orayı.
+
+490
+01:27:11,283 --> 01:27:15,043
+x üzeri ne eksik ya da çantada mı ezildi bilemiyorum artık.
+
+491
+01:27:16,023 --> 01:27:23,143
+0 artı 0 artı 2 artı 6x, hatta burayı yazsaydım eğer 4x küp olacaktı.
+
+492
+01:27:23,143 --> 01:27:25,344
+Hatta şöyle yazalım, evet aynen öyle.
+
+493
+01:27:26,003 --> 01:27:29,643
+Artı 12x kare falan diye böyle havalı havalı gidecekti.
+
+494
+01:27:29,903 --> 01:27:32,403
+Bu da bir bölüğü, bir eksi x'in.
+
+495
+01:27:32,768 --> 01:27:36,807
+Karesinin türeviyeyi olacaktı.
+
+496
+01:27:37,407 --> 01:27:40,688
+Efendime söyleyeyim. O da ne oluyormuş? Artık bir zahmet.
+
+497
+01:27:42,527 --> 01:27:44,647
+Ne oluyormuş canlar? 2 bölü.
+
+498
+01:27:45,867 --> 01:27:49,807
+1-x'in kübü oluyormuş.
+
+499
+01:27:49,807 --> 01:27:58,907
+Ve de buraya yine eksi 1x artı 1 yazdım ama bir de oraya şöyle renkli kalemle buraların ayrıyetten
+
+500
+01:27:59,315 --> 01:28:06,355
+Kapalı mı, açık mı olduğunu kontrol etmek gerektiğini de, bu bilgiyi de yazıyorum.
+
+501
+01:28:06,355 --> 01:28:08,195
+Şimdi şöyle yazıyorum.
+
+502
+01:28:08,975 --> 01:28:21,475
+Lakin aralığın uçları için durum incelen.
+
+503
+01:28:23,572 --> 01:28:44,711
+Birisi 10.35 yazabilir mi acaba? 10.35. Evet, 10.35'te gelmeniz şiddetle tavsiye olunur sevgili genç arkadaşlarım. Teşekkür ederim. Herkes 10.35 yaşasın. 10.35. Evet.
+
+504
+01:28:50,739 --> 01:28:53,359
+Sesi kapatıyorum. 10.35'te görüşürüz.
+
+505
+01:43:29,908 --> 01:43:36,848
+Evet, kullanacağımız seriyi, yani ana malzememizi, yani unu sofraya getirdim.
+
+506
+01:43:37,747 --> 01:43:59,247
+Ya da tezgahın üstüne çıkarttım. Çünkü bundan sonraki ana malzememiz bu arkadaşlar. Hani nasıl ki yemek yaparken malzemelerimizi tezgahın üzerine, masada işte hazırlıyorsanız işte, masanın üzerine artık, tezgahın üzerine hazırlıyorsanız, biz de ana malzememizi buraya yerleştirdik.
+
+507
+01:43:59,247 --> 01:44:05,447
+Şimdi burada, tabii bunu geometrik seri özelliklerinden yazıyorum. Hala kağıda olmayan arkadaşlar.
+
+508
+01:44:05,747 --> 01:44:20,587
+Bence bu hafta sonu artık kağıtlarını oluşturmaya başlarlar. O geometrik seri kağıdında göreceksiniz ki, re'nin mutlak değeri küçük 1 için yakınsak, re'nin 1'de yahut eksi 1'deki değerleri için ıraksak idi.
+
+509
+01:44:21,087 --> 01:44:29,487
+Dolayısıyla burada aralığın uçlarında bir açıklık vardır. Ama türev aldıktan sonra bu açık olan aralıklar kapalı hale gelebilir.
+
+510
+01:44:30,323 --> 01:44:41,143
+Veya aynı da kalabilir. Yahut biri açık, biri kapalı halde devam edebilir. Bunların integralleri aldığımız zaman da buradaki açık aralıklar kapalı hale gelebilir.
+
+511
+01:44:41,363 --> 01:44:54,263
+Veyahut biri açık, biri kapalı hale gelebilir. Yahut da açıklıklarını muhafaza edebilir. Bunu işlemi yaptıktan sonra en son ki işlemin neticesinde kontrol etmemiz gerekir.
+
+512
+01:44:58,323 --> 01:45:17,403
+soru çözeceğiz. Yani aradan sonra bunu neden dolayı söyleyelim? Bir tane de ödev vereceğim. Odevi kenara ayırdım. Bir tane burada bir soru çözeceğim. Bir dakika bakıyorum. Hem de kaç tane soru çözeceğimizi de konuşalım da ondan sonra insan daha bir rahatlar yani. Evet.
+
+513
+01:45:20,372 --> 01:45:29,552
+Evet, bu ikinci, iki tane, bu üç tane, evet, üç tane, başka?
+
+514
+01:45:32,912 --> 01:45:45,652
+Üç tane soru çözeceğiz. O kadar mı? O kadar. Erken mi çıkacağız? Hayır. Neden? Çünkü sorular çok zor. Dost acı söyler.
+
+515
+01:45:46,015 --> 01:45:52,835
+Bir tane de ödev vereceğim en sonunda. Unutturmayın ödevi tamam mı? Hazır mı yaz hazırsak? Tamam başlayalım.
+
+516
+01:45:53,515 --> 01:46:02,595
+Evet, 3 soru çözeceğiz ve dersimiz nihayet bulacakmış. Hani 3 soru diye sevinmeyin. Efendim, eserim soruların adı 3 soru.
+
+517
+01:46:02,595 --> 01:46:13,135
+Evet, peki ilk sorumuzu yazalım. İlk soru nispeten kolay bir soru. 1 bölü 1 eksi x'in karesi fonksiyonunu.
+
+518
+01:46:16,243 --> 01:46:17,783
+kuvvet serisi temsilini
+
+519
+01:46:25,587 --> 01:46:28,327
+ya da gösterilimini bulunuz.
+
+520
+01:46:30,768 --> 01:46:32,527
+Yakınsadığı aralığı inceleyiniz.
+
+521
+01:46:42,899 --> 01:46:56,459
+Yani türev mürev alacaksan, türevdir, integraldir, en sondaki halini de incelemeyi unutma diye hatırlatıyor bize. Böyle bir durumumuz var. Ben ne dedim size? İşte malzememiz belli dedim. Hemen malzemeyi cevap diyelim başlayalım.
+
+522
+01:46:59,519 --> 01:47:08,319
+Evet, ne eşittir sıfırdan sonsuza kadar? X üzerine bunu ben olsam kağıdımın en başına yazarım.
+
+523
+01:47:09,876 --> 01:47:19,456
+Birkaç tane kağıt olacak tabii ki bunlar güzel bir şekilde. Sınava girerken bu size çok ferahlık sağlayacak. Bak, samimiyetime güvenin.
+
+524
+01:47:21,436 --> 01:47:26,735
+Evet, şimdi türev alıyorum. Hocam birden başlayacak. Evet, tamam, birden başlayacak. Aferin.
+
+525
+01:47:39,028 --> 01:47:41,287
+Yaşasın sorulardan bir tanesi bitti.
+
+526
+01:47:41,608 --> 01:47:42,148
+Bitmedi.
+
+527
+01:47:43,448 --> 01:47:46,347
+Demin türevini de almıştım. Nasıl çıktığını da söylemiştim.
+
+528
+01:47:48,028 --> 01:47:49,068
+Bitti işte bulduk.
+
+529
+01:47:50,007 --> 01:47:54,007
+Bulamadık. Türev aldığımız için buraları incelememiz gerektiğini söylemiştim size.
+
+530
+01:47:54,648 --> 01:47:56,967
+Demek ki aralığın uçları için durumu inceleyeceğiz.
+
+531
+01:47:56,967 --> 01:48:00,488
+Şimdi aralığın uçlarını nasıl inceleyeceğimizi konuşacağız bu örnek üzerinde.
+
+532
+01:48:01,028 --> 01:48:02,387
+Renkli bir kalemi aldım.
+
+533
+01:48:03,827 --> 01:48:05,648
+X yerine eksi bir koymak istiyorum.
+
+534
+01:48:07,475 --> 01:48:08,635
+Güzel yazamadım dur.
+
+535
+01:48:12,243 --> 01:48:23,663
+Ne eşittir? Birden sonsuza kadar. Nerede yazacağım hocam? Nerede yazacaksın işte? Hangi seriyse? Onu da yazacaksın.
+
+536
+01:48:25,644 --> 01:48:37,363
+Bunda mı? O seri mi? Değil. Demek ki onu da yazmayacaksın. Bunda mı? O bizim malzememiz. Un o, un. Değil o zaman.
+
+537
+01:48:38,003 --> 01:48:41,403
+Ne de yerine yazacağım? Ekmekte ekmekte ekmek yaptın ya.
+
+538
+01:48:42,243 --> 01:48:47,443
+Yani bunun eşiti olanda mı? Evet, onun eşiti olanda yerine yazacaksın. En sondakinde.
+
+539
+01:48:48,923 --> 01:48:50,123
+Anlaşıldı mı burası?
+
+540
+01:48:55,444 --> 01:48:57,884
+Sevgili gençler, tamamız değil mi? Tamam.
+
+541
+01:48:59,744 --> 01:49:11,004
+Evet, kağıda olan arkadaşlara sesleniyorum. Çünkü kağıda olmayan arkadaşlar hala daha çalışmadılar. En yakın zamanda çalışmalarını temenni ediyoruz.
+
+542
+01:49:11,304 --> 01:49:16,284
+Şimdi kağıda olan arkadaşlara söylüyorum. Böyle bir seri, nasıl bir seri bu? İsmi ne bunun?
+
+543
+01:49:18,744 --> 01:49:19,724
+Yazan var mı?
+
+544
+01:49:20,692 --> 01:49:24,852
+Artık beyler de konuyor. Efe yazmış, oraya nokta koymuş. Teşekkür ediyorum [öğrenci]'ciğim.
+
+545
+01:49:25,392 --> 01:49:27,032
+Evet. Nasıl bir seri bu?
+
+546
+01:49:29,032 --> 01:49:33,952
+Ay kimse bilmiyor mu ayol? Deminden beri kendimi parçalıyorum da bunun ne serisi bu?
+
+547
+01:49:34,832 --> 01:49:36,252
+Bir eksi bir artı olmuyor mu bu?
+
+548
+01:49:38,292 --> 01:49:41,392
+Hah Allah razı olsun. Tamam. Peki. Tamam.
+
+549
+01:49:41,972 --> 01:49:43,692
+Alternif. Tamam anlaştık.
+
+550
+01:49:44,092 --> 01:49:46,712
+Peki bu serinin şimdi karakterini inceleyeceğiz.
+
+551
+01:49:46,712 --> 01:49:48,212
+Ne yapmamız gerekiyor?
+
+552
+01:49:48,819 --> 01:49:54,480
+Dünkü sohbeti hatırlayın. Ne yapmamız gerekiyor? Söyle. Ne yapmamız gerekiyor?
+
+553
+01:49:57,539 --> 01:50:06,840
+Evet, bu serinin mutlak değerlerinden oluşan... Hangi seri o? Seri bu seri mi?
+
+554
+01:50:09,260 --> 01:50:15,199
+Tamam, artık pozitif terimli bir seriniz var. Bunun karakteri için ilk yapmanız gereken şey ne? Söyle.
+
+555
+01:50:19,347 --> 01:50:25,208
+Yakınsak mı, ıraksak mı kontrol edeceğiz ya, daha şartla yakınsak olup olmadığını bana yazma lütfen. Bak kızacağım ha.
+
+556
+01:50:25,716 --> 01:50:49,676
+Çünkü neden? Mutlak yakınsak mı değil mi? Bilmiyoruz. Mutlak yakınsak olup olmadığını anlayabilmek için bu serinin, burada bak kalemi gösteriyor şu serini. Bu seriyi yakınsak mı değil mi? Niçin? Hangi testi uygulayabiliriz? İlk olarak uyguladığımız test ne olmadı? Dersin başında da bozuk plak gibi olmalı da pozitif serilerde ilk yapmamız gereken test hangi testi?
+
+557
+01:50:50,804 --> 01:50:55,884
+Aferin sana [öğrenci]. Eninci terim testi. Eninci terim testini geçiyor mu gençler?
+
+558
+01:50:59,956 --> 01:51:04,496
+Bak, kağıda olanlar hemen patır patır söylerler. Geçiyor mu kardeşim?
+
+559
+01:51:08,372 --> 01:51:10,132
+Geçti mi testi kaldı mı?
+
+560
+01:51:15,891 --> 01:51:29,251
+Nasıl bir seriymiş bu seri? Sonsuza gidiyorsa. Bak kağıdında, eninci terimde sonsuz oluyorsa, sıfırdan farklı bir şey oluyorsa, 5 oluyorsa, 10 oluyorsa, sonsuz oluyorsa, eksi sonsuz oluyorsa, bu seri nasıl bir seridir?
+
+561
+01:51:29,691 --> 01:51:32,951
+Aferin [öğrenci]'im. Evet, ıraksak [öğrenci]'cığım.
+
+562
+01:51:34,836 --> 01:52:01,536
+O zaman bir şey söyleyeceğim. Şimdi bana bak, bak gördün mü? Çalışanla çalışmayan biri olur mu ya? Hiç yapanla yapmayan biri olur mu ya? Evet, şimdi bu seri o zaman nasıl bir seridir? Mutlak yakınsak olabilir mi? Mutlak değerlerinden oluşan seri ıraksak olduğuna göre bu seri mutlak yakınsak olabilir mi? Hayır, olamaz. Yaz o zaman onu oraya. Mutlak.
+
+563
+01:52:01,887 --> 01:52:23,608
+Yakınsak? Değil. Peki şartlı olabilir mi? Bilmiyorum olabilir mi? Bir, hiç bakmıyorum. İki, hocam niye bakmıyorsun? Çünkü üçüncü terimi şunu geçemiyor. Evet, tamam mı? En.
+
+564
+01:52:24,532 --> 01:52:32,152
+Farklıdır sıfır, bizimki sonsuz çıktı. Dolayısıyla üçüncü şartı sağlayamadığı için şartlı yakınsak da değildir.
+
+565
+01:52:36,532 --> 01:52:37,692
+Anlaştık mı?
+
+566
+01:52:45,235 --> 01:52:49,636
+Tamam değil mi? Süper! Evet. Sorsu olan var mı?
+
+567
+01:52:51,155 --> 01:52:57,775
+E belki derslere çalışmazsanız burada muvaffakiyet zor. Yani keşke olsa ama yani öyle bir şey yok.
+
+568
+01:52:58,176 --> 01:53:04,796
+Emin olun hani karpuz yata yata büyür diyorlar ya, inanın ben karpuz büyüttüm, karpuz da yata yata büyümüyor.
+
+569
+01:53:06,115 --> 01:53:08,235
+Eğer karpuzu gidip çevirmezseniz...
+
+570
+01:53:09,171 --> 01:53:22,491
+Tamam mı? Toprağa değen yeri çürüyor. Üste kalan kısmı çok oluyor. Zaten onu da kesince saçma sapan bir şey oluyor. Üst tarafı pişmiş, alt tarafı çiğ gibi bir şey. Onu böyle küçük küçük döndürüyorsun.
+
+571
+01:53:22,491 --> 01:53:36,291
+Ha çok sıcak bir iklimdesindir. Hani böyle Adana gibi, Mersin gibi falan. Orada güneşi vurdu muydu? Toprak da kuruduğu için döndürmene belki gerek kalmaz ama yani İstanbul'da karpuz büyüteyim falan diyorsan,
+
+572
+01:53:37,171 --> 01:53:53,351
+çok uğraşıp, küçük küçük döndürmen lazım. Gerçekten. Evet. Ama atasözü, o karpuzun kendi öz vatanı, yani ne denir o, böyle sıcak iklim için konuşulmuş. İstanbul karpuzun yetişme yeri değil ki yavrum.
+
+573
+01:53:54,871 --> 01:54:03,071
+Evet, x eşittir 1 için konuşuyorum. Bunun için konuşursak ne olur? Söyle bakalım. En eşittir 1'den sonsuza kadar.
+
+574
+01:54:03,636 --> 01:54:05,636
+Sadece en olur. Doğru mu?
+
+575
+01:54:08,636 --> 01:54:10,116
+Bu alterne mi?
+
+576
+01:54:11,636 --> 01:54:12,876
+Haydi çabuk çabuk!
+
+577
+01:54:14,456 --> 01:54:15,296
+Bu alterne mi?
+
+578
+01:54:16,996 --> 01:54:17,796
+Değil.
+
+579
+01:54:19,756 --> 01:54:21,036
+Bıraksak mı yakınsak mı?
+
+580
+01:54:26,899 --> 01:54:30,699
+Alternatiyse, en önce eninci terim testini uygularsın.
+
+581
+01:54:34,079 --> 01:54:40,859
+Eninci terim testini göre bıraksaktır.
+
+582
+01:54:41,579 --> 01:54:44,039
+Tamam mı? Oh mis. Tamam.
+
+583
+01:54:44,699 --> 01:54:48,399
+Bunu da yazdık. O zaman kardeşim, sonuç.
+
+584
+01:54:51,444 --> 01:55:02,444
+1 bölü 1 eksi x'in karesi eşittir. 0 artı 1 artı 2x artı 3x kare artı nokta cik cik cik cik cik.
+
+585
+01:55:03,804 --> 01:55:11,503
+Evet, eşittir. n eşittir birden sonsuza kadar n çarpı x üzeri n eksi 1.
+
+586
+01:55:11,887 --> 01:55:21,467
+x'inizde eksi bir artı bir açık aralığıdır sevgili gençler. Uçlarda dahillik yoktur yavrum. Anlaştık mı?
+
+587
+01:55:27,507 --> 01:55:49,648
+Tamam mıyız? Oh, sorulardan biri gitti. Hadi hayırlısı. He valla, doğru söylüyorsun. İkinci soruya gelelim. Sorusu olan var mı? Tamamız diyorsun. Peki, [öğrenci] tamammış. Diğer arkadaşlar da tamam mı? Sınıfta kaç kişi var? Bir bakayım bakayım. Bu kadar önemli bir konuda. Sınıf mevcudumuz kaç acaba? 114. Evet.
+
+588
+01:55:52,467 --> 01:56:00,007
+Evet, diğer arkadaşları da tezinden çalışmalarına temenni ediyorum. Çünkü gerçekten olay güçtür.
+
+589
+01:56:00,728 --> 01:56:09,168
+Şimdi bir sonraki için konuşacağım. Bir sonraki sorumu yazıyorum. Kırmızı kalemimi elime aldım.
+
+590
+01:56:10,068 --> 01:56:12,427
+Ve sorumu tahtaya yazıyorum.
+
+591
+01:56:12,947 --> 01:56:16,207
+1 bölü 1 eksi x'in kübü.
+
+592
+01:56:16,307 --> 01:56:17,487
+Bunlar kolay sorular.
+
+593
+01:56:18,427 --> 01:56:21,547
+Haftayaki dersimiz daha zor sorularla başlayacak.
+
+594
+01:56:22,307 --> 01:56:23,707
+Şu an ısınma turundayız.
+
+595
+01:56:25,967 --> 01:56:26,608
+Fonksiyonunun.
+
+596
+01:56:26,768 --> 01:56:29,568
+Çünkü bu ders daha artanları bile görmedik.
+
+597
+01:56:29,887 --> 01:56:31,167
+Ben biraz yavaş gidiyorum.
+
+598
+01:56:31,287 --> 01:56:34,847
+Çünkü bu konular gerçekten zordur.
+
+599
+01:56:56,180 --> 01:57:13,720
+İvit sorumuz bu. Şimdi konuşalım bakalım. Ne yapmamız lazım? Yine elimizde malzememiz belli. Neydi? Tek bir tane unumuz var. Hocam hep bu mu var? Şimdi aksi olursa sana vermesi lazım. Vermediyse kullanacağın şey bu. Evet.
+
+600
+01:57:15,796 --> 01:57:30,275
+Tamam mı? Bak açık net söylüyorum. Eğer aksi olursa şu seriden yararlanarak diye verilmesi lazım. Hocam biz onları yapacak mı? Tabii yapacağız yani. Böyle bir şey olabilir mi? Yapmama gibi bir durumumuz olabilir mi yani? Evet. Türev alıyorum.
+
+601
+01:57:33,556 --> 01:57:40,496
+Demin almıştım zaten. Şurayı x üzeri 4'ü de yazmamız lazım. Çünkü çok alacağız.
+
+602
+01:57:46,036 --> 01:58:10,576
+Hey gidi günler hey. Mat yaparken taş binayı vermişlerdi bize. Ondan sonra son grupta bir tane karga dadandı bizim cama. Taş binanın camına. Ders yaptırmıyor. Şimdi yine sesini duydum. Ben Davutbaşadayım da. Sesini duydum ama herhalde yuvası mı orada artık, yavrusu mu düştü bilemiyorum neyse.
+
+603
+01:58:11,123 --> 01:58:36,423
+Ben bir şey söylüyorum, hayvan gak gak gak. Ben konuşurken de susuyor işin komik tarafı. Baya bir eğleniyorduk, bizim karga geldi falan diye. Enteresan. O günler geldi. İnşallah tekrar o günler gelir arkadaşlar. Yani böyle tamam oturduğumuz yerden belki daha rahat anlatılıyor ama değil mi? İnşallah, inşallah yavrum.
+
+604
+01:58:37,587 --> 01:59:02,287
+İnşallah ama gittikçe vaka sayıları tırmanıyor. Lütfen çok dikkat edin. Gençliğinize güvenmeyin. Gençlerde de kötü sonuçlar olabiliyor. Gençlerin ailesi hep genç değil ki. Büyükleriniz var, sonra üzülürsünüz. Onun için lütfen, lütfen. Bu da böyle bir çetin bir imtihan oldu bütün dünya için.
+
+605
+01:59:05,716 --> 01:59:28,736
+Bunu da aldık. Aa yaşasın bulduk. Bulamadık. Nereye bulduk? Niye bulduk? Bulamadık. Hocam bulduk. Bulamadık. Bak burada 2 var. Nasıl bulduk? O zaman 1 bölü 2 ile çarparım. Evet o zaman olur. Tamam ona anlaştık. O tamam eyvallah. Ona bir şey diyemem. Pıt pıt. Güzel oldu şimdi.
+
+606
+01:59:30,420 --> 01:59:44,819
+Çok özlediniz değil mi? Ya tabii. İnsan metroları bile özledi değil mi? O şey hani çok kalabalıktı, öldüm, çok sıcak, yapış yapış oldum, kalabalık. O metroları binmeyi bile özlediniz değil mi arkadaşlar?
+
+607
+01:59:56,467 --> 02:00:23,108
+Burada ne yapacağız? 2 bölü 2. Rink sırasını bile özleyeceğiz. İşte öyle. İnsan elindekilerin kıymetini bilmesi lazım. Kaybetmeyi beklememesi lazım. Şu anda da şunu düşünmek gerekiyor. Bazen bir şey oluyor. Ay ne duruma düştük. Ben de diyorum ki bak bugünü de özleyebiliriz. Bugünü de özleyebiliriz. Öyle değil mi?
+
+608
+02:00:23,699 --> 02:00:39,519
+Şimdi de mesela hani belki hani inşallah daha güzel şeyler olsun. Onun için bugünü de özlemeyelim inşallah. Böyle düşünmek lazım. Değil mi? Hani burnumuzu kıvırdığımız ay öf pöf falan dediğimiz şeyleri nasıl özlüyoruz?
+
+609
+02:00:43,123 --> 02:01:09,463
+Evet, yemek sırasını bile özledik diyor. Ya tabii o da güzeldi. Orada bir muhabbet ediyordum falan. O ona bir şey söylüyordu, öbür şakalaşıyordun falan. Evet, her şeyin bir güzelliği var. Evet, tamamdır. Bu da tamam. Eee ne oldu şimdi bizimki burada? 9 çıkmış. Bizim niye 9 çıkmadı arkadaşlar? Bir sıkıntı mı var? Niye böyle oldu? 3x kare. Ha yanlış yapmışım. Tamam. 6, 2. Tamam.
+
+610
+02:01:09,855 --> 02:01:22,415
+Doğru değil mi burası? Bak x kare 2x oldu 3x kare 4x küp filan filan filan filan. Tamam doğru. Evet şimdi bir tek olayımız artık ne kaldı?
+
+611
+02:01:23,220 --> 02:01:42,039
+Bunların uçları için durumu incelemek. Hadi bakalım, birlikte inceleyeceğiz. Bakayım öğrenmiş misiniz? Şimdi, kim öğrendi, kim öğrenmedi? Kendinizi test edin. Yoksa hoca sizi şimdi sınav yapmıyor. Ben burada isimleri görüyorum. Mesela öyle aşağıdan yukarı Ayşe Fatma mualla iniyor. Yani.
+
+612
+02:01:43,123 --> 02:02:07,884
+Tabii bir müddet sonra bu isimlerden bazılarını hatırlamaya başlıyorum. Çünkü çok faal olan maşallah arkadaşlarımız var. Evet, eksi bir için işlem yapıyorum. Bakayım bu eksi bir için ne oldu? Hani Türk filmleri de bu annem için, bu babam için falan diyordu Cüneyt Arkın tokat atarken adama, kötü adama. Evet, bölü 2.
+
+613
+02:02:08,659 --> 02:02:12,119
+eksi 1 üzeri, n eksi 2. Böyle bir şey.
+
+614
+02:02:13,419 --> 02:02:16,899
+Evet, bu seri nasıl bir seri? Cevaplar.
+
+615
+02:02:16,899 --> 02:02:29,179
+Evet, serisinin mutlak değerlerinden oluşan, değil mi?
+
+616
+02:02:30,619 --> 02:02:32,959
+N eşittir 2'den sonsuza kadar.
+
+617
+02:02:33,319 --> 02:02:34,879
+N çarpı, n eksi 1.
+
+618
+02:02:35,539 --> 02:02:39,439
+Bölü 2 serisi. Evet.
+
+619
+02:02:41,719 --> 02:02:45,460
+Evet, bu eninci terim testine göre kaç çıkıyor?
+
+620
+02:02:47,019 --> 02:02:49,639
+Yine mi geçemiyor eninci terim testinden acaba?
+
+621
+02:02:49,639 --> 02:02:51,399
+Hı? Serisi.
+
+622
+02:02:52,399 --> 02:02:59,059
+Eninci terim testine göre limit.
+
+623
+02:02:59,604 --> 02:03:08,124
+n sonsuza giderken, n çarpı n eksi 1 bölü 2, farklı sıfır. Çünkü bu sonsuza gider. Değil mi?
+
+624
+02:03:09,984 --> 02:03:10,844
+Bıraksaktır.
+
+625
+02:03:13,584 --> 02:03:14,184
+Bu yüzden,
+
+626
+02:03:16,924 --> 02:03:18,324
+bu yüzden,
+
+627
+02:03:18,784 --> 02:03:19,884
+şurayı şöyle yapalım.
+
+628
+02:03:20,944 --> 02:03:21,624
+Orada mısınız?
+
+629
+02:03:26,036 --> 02:03:52,436
+Cevap vermeyene arkadaşlarım, tabii yani eğer biliyorsan da cevap vermiyorsan problem yok onda. Tamam mı? Onda problem yok. Canın sağ olsun. Ama eğer hala bu sorulara cevap veremeyecek durumdaysan, bak o zaman şu söylediklerimin muhatabı tam da sensin. Eğer şurada yeşil kalemle yazdıklarımı anlamayacak durumdaysan, ne zaman çalışmayı düşünüyorsun? Bu birinci sorum.
+
+630
+02:03:52,756 --> 02:04:04,735
+İkinci soru, bu dersten geçmeyi istemiyor musun? Üçüncü soru, bu dersi ne zaman vereceksin? Seneye mi düşünüyorsun? Bu soruların cevaplarını düşünsünler.
+
+631
+02:04:06,576 --> 02:04:06,936
+Çünkü
+
+632
+02:04:08,819 --> 02:04:33,919
+Bunları son bir hafta oturup çalışmak için vakit geçmiş olacak diye bir Türk sanat müzikisi şarkısı var. Türk sanat müziğinden bir şarkı var. Vakit geçmiş olacak diye. Öyle bir şarkı var. Tamam mı? O şarkıdaki gibi oluyor. Belki bir gün geleceksin, o zaman vakit geçmiş olacak diye bir şarkı var. O şarkı olacak.
+
+633
+02:04:34,387 --> 02:04:51,467
+Hani aklın başına gelecek ama vakit geçmiş olacak. Bir de işin kötü tarafı ne biliyor musun? Tek vize var. Biliyor muydunuz bunu? Bu dönem tek vize var. Tek vizenin oranı kaç biliyor musunuz? Bilen var mı? Tek vizenin. Birinci vizenin oranını bilen var mı?
+
+634
+02:04:51,787 --> 02:04:53,027
+Yüzde altmış değil mi hocam?
+
+635
+02:04:53,027 --> 02:05:00,027
+Ey maşallah yüzde altmış. O zaman son pişmanlık kaç oranında fayda ediyormuş? Yüzde kırk.
+
+636
+02:05:00,756 --> 02:05:14,276
+Ayrıca baştaki 8 konudan %60'ı tutturamazsan tamamından %40'ı bu çalışma azminle, yani bunu cınas olarak söylüyorum, nasıl muvaffak olmayı düşünüyorsun?
+
+637
+02:05:16,836 --> 02:05:19,216
+Değil mi? Çok yaman bir çelişki.
+
+638
+02:05:19,216 --> 02:05:19,896
+Evet.
+
+639
+02:05:21,876 --> 02:05:24,356
+Mutlak yakınsak.
+
+640
+02:05:26,131 --> 02:05:44,471
+Değildir. O zaman seneye hocaya yine mail atarsın. Hocam, benim alttan alışım, işte bilmem ne dersimle çakışıyor, o zaman derse devam etmesem sizce olur mu diye mesaj atarsın. Bu planı yap yani. Çünkü seneye alacağım muhakkak.
+
+641
+02:05:45,779 --> 02:06:09,059
+Bak dost acı söyler. Niye söylüyorum? Şu an köprüden önceki son çıkışa yaklaşıyor. Tabela gözüktü diyor. Köprüden önce son çıkış. Biz de böyle son süratla yol sapanına doğru gidiyoruz. Orayı geçtikten sonra zor. Evet. Mutlak yakınsak değildir. Şartlı yakınsak mı? Hiç biri ikiyi kontrol etmene gerek yok. Neden? Çünkü üçüncü testi geçemiyor bu.
+
+642
+02:06:09,779 --> 02:06:16,340
+Limit en sonsuza giderken a eniniz sizin sıfırdan farklı. Dolayısıyla bu sebepten dolayı şartla yakınsak da değil.
+
+643
+02:06:18,779 --> 02:06:23,319
+Anlaştık mı? Tamam mı? Evet, sayfayı arttırıyorum.
+
+644
+02:06:24,319 --> 02:06:28,779
+X eşit 1 için işlem yaparsanız, o zaman da...
+
+645
+02:06:31,572 --> 02:06:53,832
+n eşittir birden sonsuza kadar, n çarpı, n eksi bir bölü, ikiyi bulursunuz. Bu seri, çiçek kutusundan yanalım, eninci terim, testine göre, limit, ben eninci terim testini bilmiyorum, oy anam, oy.
+
+646
+02:06:54,612 --> 02:07:05,872
+Biz çarpım tablosunu, biz bölme yapacağız, sen diyorsun ki ben çarpım tablosunu daha ezberlemedim. Ben ne diyeyim sana? Aynı bu durumdasın yani. Aynı bu durumdasın.
+
+647
+02:07:08,431 --> 02:07:13,931
+Bu sonsuza gidiyor. Sıfırdan farklı. Sıfırdan farklı bir şey. Bulduğun anda seri, yıraksaktı.
+
+648
+02:07:15,811 --> 02:07:20,171
+Sıfır bulsaydın, o zaman bir şey söyleyemezdik. Başka test uygulamamız lazımdır.
+
+649
+02:07:23,956 --> 02:07:34,395
+Evet. Yani yakınsaklık aralığı, artık yazalım o zaman. 1 bölü, 1 eksi, x'in kübü eşittir.
+
+650
+02:07:39,115 --> 02:07:50,496
+2 artı, valla birisi bana söylese oradan ama söylemiyorsunuz ki siz de. Şurası kaçtı, söylesenize bana. Bir mikrofonu olan okusun oradan, yukarıdan.
+
+651
+02:07:50,963 --> 02:07:51,944
+Ben bir geri gideyim.
+
+652
+02:07:55,475 --> 02:08:10,256
+2 bölü 2, 6 bölü 2, 12 bölü 2, 2 bölü 2, 6 bölü 2, 12 bölü 2, 2 bölü 2, 6 bölü 2, 12 bölü 2, 12 bölü 2.
+
+653
+02:08:11,175 --> 02:08:13,155
+Değil mi böyle? Nokta cık cık cık cık.
+
+654
+02:08:13,155 --> 02:08:21,895
+Sonra da bu da n eşittir. 2'den sonsuza kadar n çarpı n eksi 1.
+
+655
+02:08:22,304 --> 02:08:31,604
+x üzeri n eksi 2 bölü 2. Tamam mıdır? Yakınsaklık aralığını da yancağızına yazalım.
+
+656
+02:08:32,403 --> 02:08:41,264
+Eksi 1, artı 1, açık aralığı. Çünkü ne şartlı yakınsıyor ne de normal yakınsıyor. Öyle biliyorum. Dur bakayım.
+
+657
+02:08:41,483 --> 02:08:48,663
+Evet, şartlı yakınsak da değil, mutlak yakınsak da değil. Dolayısıyla bu şekil söyleyebilirim sevgili gençler.
+
+658
+02:08:49,395 --> 02:08:54,735
+Ay inanmıyorum, son soruya mı geldik? Evet, evet.
+
+659
+02:08:56,115 --> 02:08:59,975
+53, 54 numaralı sayfayı bulmam lazım.
+
+660
+02:09:00,715 --> 02:09:05,555
+Elen X'de bir soruydu, oldukça zor bir soru. Bu sorunun üzerinde çok duracağız.
+
+661
+02:09:06,295 --> 02:09:08,235
+Evet, 54 burada. Tamamdır.
+
+662
+02:09:09,971 --> 02:09:36,391
+Tamam mıyız, hazır mıyız soru için? Soru oldukça zor. Kaç dosya kağıdıymış? Şurada başlıyor. 54, 55, 55, evet. 55, 56'yı da sormuşum. Yaklaşık 2,5 dosya kağıdı sürüyor tüm incelemelerinle birlikte. Sınavda sorulmuş 25 puanlık bir soru bu.
+
+663
+02:09:37,555 --> 02:10:04,375
+Tamam mı? Evet, hazırsak başlayalım. Söz veriyorum bu soruyu sorduktan sonra, çözdükten sonra. Bir tane ödev vereceğim ve dersi bitireceğim. Çok da sevinmeyin, iki geçiyor işte, 22 falan geçer zaten. Evet, şimdi bakalım. Kalemimizle sorumuzu yazalım önce. Hazır mıyız? Ötelerde falansan, bak, ne denir ona?
+
+664
+02:10:07,091 --> 02:10:29,171
+Odanın öbür ucundaysan falan. Tamam mı? Tahtaya gel. Çok önemli soru. Çıkmış soru. Normalde kuvvet serilerinin ayarı budur. Yani soru ayarı şu anki tahtadakidir. Bu soru ayarını haftada devam edeceğiz. Haftayı da çözeceğim. Birçok soru olacak.
+
+665
+02:10:30,071 --> 02:10:32,291
+Fonksiyonunun kuvvet serisi.
+
+666
+02:10:34,195 --> 02:10:52,195
+gösterilimini ve yakınsaklık aralığını bulunuz. Bu nispeten kolay. Evet, artık efendime söyleyeyim.
+
+667
+02:11:02,868 --> 02:11:22,448
+İfade etmek için kullanılabilir mi? Neden? Açıklayınız. Soru aynı böyleydi. Mümkün ise ifade ediniz.
+
+668
+02:11:33,011 --> 02:11:45,872
+Tamamız değil mi? Haydi başlıyoruz. Hocam başlayacağız da. Bizim bir tane serimiz vardı. Çıkartalım mı tezgahın üzerine? Çıkart. Çıkartıyorum hocam. Çıkart çıkart yaz oraya.
+
+669
+02:11:53,716 --> 02:12:01,396
+Şimdi unu tezgahın üzerine koydu da hani mesela işte, şekeri de var, suyu falan da var, yağ da var da, elva yapmayı bilmiyor.
+
+670
+02:12:02,496 --> 02:12:13,976
+Şimdi bakalım, elvayı yapmaya çalışalım. Tutacak mı? Güzel olsun, cıbık mıbık olmasın. Güzel tutsun. Ne kuru ne sulu. Evet.
+
+671
+02:12:15,252 --> 02:12:43,212
+Evet, bunumuzu çıkarttık. O bize bakıyor. Biz ona bakıyoruz. Bizden istenen şey, elen, bir artı, x. Bizim elimizdeki şey, bir bölü, bir eksi, x. Ne alaka? Bununla bunun arasındaki alaka. Alakaya çay demli. Ne bu ya? Evet. Bununla bunun arasındaki...
+
+672
+02:12:43,380 --> 02:12:45,960
+Şey ne olabilir? Düşünüyorum da.
+
+673
+02:12:49,719 --> 02:12:52,079
+Ne olabilir, ne olabilir acaba?
+
+674
+02:12:53,479 --> 02:12:54,139
+Ne olabilir?
+
+675
+02:12:54,799 --> 02:12:56,279
+Şöyle mi yapsak acaba?
+
+676
+02:12:57,519 --> 02:12:59,659
+Türevi, evet, bence de, bence de.
+
+677
+02:13:00,479 --> 02:13:02,500
+Evet, 1 bölü 1 artı x.
+
+678
+02:13:03,779 --> 02:13:04,939
+Yine kontrol ediyorum.
+
+679
+02:13:06,759 --> 02:13:08,059
+Ay, olmadı gene.
+
+680
+02:13:08,799 --> 02:13:09,779
+Evet, olmadı gene.
+
+681
+02:13:11,252 --> 02:13:14,992
+Türevi oldu mu? Olmadı. [öğrenci], [öğrenci], [öğrenci], [öğrenci]. Evet.
+
+682
+02:13:18,172 --> 02:13:18,812
+O mu oluyor?
+
+683
+02:13:21,032 --> 02:13:23,212
+Ama bize elen bir artı ilk soruldu ki.
+
+684
+02:13:26,172 --> 02:13:28,552
+O zaman [öğrenci]'cum şöyle yapalım bence.
+
+685
+02:13:28,912 --> 02:13:30,812
+Bak, gel seninle bir plan yapalım.
+
+686
+02:13:30,952 --> 02:13:32,932
+Diğer arkadaşlarımız pek karışmıyor bize.
+
+687
+02:13:33,052 --> 02:13:34,552
+İkimiz plan yapalım seninle.
+
+688
+02:13:35,220 --> 02:14:02,080
+Bak şimdi, önce bir bölü, bir eksi, x'i alırız. Sonra size bir tane teoremi öğretmiştim. Hangi teoremdi? Bak hatırlıyorum, geri geri gidiyorum. Bak, geri, geri, geri, geri, geri. İşte bu. Aa, evet. Bak, x yerine eksi, x de yazabilirim. X yerine eksi, x yazarım. Güzel, bunu yaparım. Anladın mı [öğrenci]'cuğum? Çünkü [öğrenci]'dan başka kimse benimle konuşmuyor. Ben de [öğrenci]'yla konuşuyorum. Ne yapayım? [öğrenci]'cuğum tamam mı?
+
+689
+02:14:05,300 --> 02:14:16,680
+Duygu da benimle konuşmuyor. Hadi bakalım. Hadi bakalım. Duygu da bıraktı beni. Evet. Düşünüyorum. Şimdi, bak şimdi [öğrenci].
+
+690
+02:14:17,332 --> 02:14:41,971
+Önce bu seriyi aldık. Bu bizim zaten unumuz. Bu un bu. Tamam mı? Bu un. Şimdi un da x, önce hani şey su koyup yuruyoruz falan ya, x yerine eksi t koyup bir bölü bir eksi eksi t'den, [öğrenci], iki şeyimiz tamam mı? Bir bölü bir artı t'yi elde ederim. Tamam mı? [öğrenci]'cuğum.
+
+691
+02:14:43,764 --> 02:14:45,923
+Onu integre ettiğimde,
+
+692
+02:14:48,344 --> 02:14:53,524
+Elen, 1 artı t'yi, yahut 1 artı x'i bulabilirim.
+
+693
+02:14:54,163 --> 02:14:55,064
+Şimdi anladın mı?
+
+694
+02:15:01,363 --> 02:15:28,363
+Galiba yazman doğal. Çünkü zor bunlar. Samimi ve işten bir şekilde cevaplandırıyor arkadaşınız. Anladım galiba dedi. Çünkü hakikaten çok zor konular. Ben de onun için burayı mümkün olduğu kadar yavaş geçiyorum. Yoksa normalde kuvvet serilerinin bu hafta bitmesi lazım. Ama ben müfredatta bunun biraz daha yayılması gerektiğini düşünüyorum. Öbür konulardan...
+
+695
+02:15:28,916 --> 02:15:36,876
+Hani mesela söylenildiği kadar şey geçmiyor, daha çabuk bitiyor onlar. Ama bu konu çok yavaş işlenmesi gereken bir konu.
+
+696
+02:15:37,576 --> 02:15:45,356
+Şimdi tekrar edelim. Masamızın üzerinde unumuz var. Un dediğimiz şey temel malzememiz. Yani temel besin maddesi bu.
+
+697
+02:15:46,579 --> 02:15:53,919
+Burada x yerine eksi t koyacağım ve böylelikle 1 artı t'yi oluşturacağım.
+
+698
+02:15:54,919 --> 02:15:57,919
+Sonra onu integre ettiğimde takadanak bunu bulacağım.
+
+699
+02:15:58,019 --> 02:15:59,799
+Ama hocam t'li olur, x'li olur.
+
+700
+02:15:59,919 --> 02:16:01,679
+Ya neli olursa olsun biz ne dedik?
+
+701
+02:16:02,139 --> 02:16:05,139
+İster t'li olsun, ister m'li olsun, ister w'lu olsun.
+
+702
+02:16:05,399 --> 02:16:07,939
+Yani bu onu sen t cinsinden de yazabilirsin.
+
+703
+02:16:08,979 --> 02:16:18,319
+M cinsinden de yazabilirsin. W cinsinden de yazabilirsin. Bir tek N cinsinden yazma ki ne üzerine ne olunca hangisi indir, hangisi şey bilemezsin.
+
+704
+02:16:18,319 --> 02:16:30,299
+Şimdi tamam mı? Ama ikisi farklı. İkisi farklı değil. Hayatım ikisi farklı değil. İkisi farklı değil hayatım. Bir dakika canım.
+
+705
+02:16:34,067 --> 02:16:35,667
+[öğrenci]
+
+706
+02:16:44,435 --> 02:16:58,315
+Hayır canım. İşlemi yaptıktan sonra gerisin geriye dönmez. Çünkü sen onda fonksiyon olarak yerine koyuyorsun. Bir dönüşüm yapmıyorsun aslında. Çünkü sen şu teoreme, anladım ben [öğrenci] senin sorunu.
+
+707
+02:16:59,956 --> 02:17:14,355
+Sen şu teoremi kullandığın için artık beton gibi sağlam. Senin arkanın sen teoreme dayamışsın. Tamam mı? Sen diyorsun ki yeni serim bu. Artık beni geriye döndüremezsin. Ben artık yolumdan dönmem diyorsun. Bırak diyorsun peşimi diyorsun.
+
+708
+02:17:16,020 --> 02:17:19,260
+Evet, değişken dönüşümü kafasında düşündüm diyor.
+
+709
+02:17:19,620 --> 02:17:25,520
+Valla çok güzel mantık yürüten arkadaşlarımız var burada.
+
+710
+02:17:25,760 --> 02:17:27,319
+Yani gerçekten yani.
+
+711
+02:17:27,659 --> 02:17:30,819
+Samimi.
+
+712
+02:17:31,443 --> 02:17:58,843
+Bak, [öğrenci], [öğrenci], valla. Yanlış cevap verseniz de, [öğrenci] mesela. Efendim, çok güzel bu. Yani başka hanım kızlar da öyle. Hani erkeklerden de söyleyeceğim de, bir kere, iki kere falan tuşa dokunan var. Olsun, sağ olun. Onu yapmayanlar da var. Mesela [öğrenci] kalmış aklımda bir tek. Ondan sonra bir de neydi? [öğrenci] mi vardı? Dur bakayım bir dakika. Kim vardı erkekler? [öğrenci] belki bayan da olabilir, bilmiyorum tabii.
+
+713
+02:17:59,443 --> 02:18:04,603
+Çünkü [öğrenci]'i hem hanımlara hem beylere koyuyorlar.
+
+714
+02:18:06,003 --> 02:18:12,063
+[öğrenci], evet, bey mi, bayan mı, [öğrenci]?
+
+715
+02:18:15,636 --> 02:18:42,236
+Heh, tamam, evet. Beyefendiymiş. [öğrenci] diye bayan ismi de oluyor, yanlış anlamayın sakın, onun için emin olamadım. Çünkü bir öğrencim vardı [öğrenci] isminde, güzel bir isim. Bazı isimler hem baylara hem bayanlara koyulabiliyor. Ondan sonra böyle. Hatta inanmayacaksınız. Benim ismim Filiz değil mi? Filiz bayan ismi diyebilirsiniz. Filiz diye bir diş doktoru var ve bey.
+
+716
+02:18:43,763 --> 02:18:46,543
+Biliyor musunuz? Yani bir erkek ismi.
+
+717
+02:18:50,484 --> 02:19:04,644
+Evet, evet, evet. Bakın Filiz diye erkek bile var. Yani hani hiç tahmin etmez insan hani Filiz, Filiz deyince mesela. Mesela Dilek, Dilek diye erkek ismi var. Değil mi? Hani, evet.
+
+718
+02:19:07,544 --> 02:19:17,504
+Serhat diye kız arkadaşı varmış bak mesela. Evet, yani olabiliyor. Olabiliyor gerçekten. Evet, o açıdan bunlar kusura bakılmayacak şeyler yani.
+
+719
+02:19:18,420 --> 02:19:36,880
+Evet, Dilek Hanım demiş, buyurun benim demiş, karşıdan bir erkek. Benim arkadaşım şirkette çalışıyor. Ay demiş, ben Dilek Hanım'la görüşeceğim demiş, buyurun benim falan demiş. Ay demiş, kusura bakmayın falan. Yok yok demiş, normalde herkes demiş, böyle şaşırıyor demiş adamcağızla. Öyle bir şey olmuş.
+
+720
+02:19:38,100 --> 02:19:42,340
+Evet, şimdilik yavaş yavaş gidiyoruz. Tahtayı temizleyelim.
+
+721
+02:19:44,180 --> 02:19:51,020
+Temizleyen deyince clear ol diyecektim az daha. O kadar emeğimiz daha iyi olup bir daha soruyu tekrar yazmak zorunda kalacaktık.
+
+722
+02:19:51,799 --> 02:19:53,659
+Evet, şimdi şöyle silelim.
+
+723
+02:19:58,388 --> 02:20:23,368
+Ben de tahtayı silmeyi bile özledim arkadaşlar. O tahta silmek de ne kadar zordur biliyor musunuz? Kolunuz kopar yani. Çünkü bir ders boyunca kaç tane tahta sildiğimi düşünün. Burada görüyorsunuz. Bak kaç tahta doluyor aşağı yukarı 17-18 tahta doluyor bir derste. Evet, şimdi ne yapacağız? Evet, sakin sakin başlayalım.
+
+724
+02:20:23,368 --> 02:20:24,368
+Şimdi.
+
+725
+02:20:24,979 --> 02:20:35,880
+x yerine, eksi t koyalım. Hemen o zaman şöyle yazalım. Hatta bir de şunu da şöyle yazayım da, şunun bir göbek adı var, onu da şuraya yazalım.
+
+726
+02:20:39,252 --> 02:21:05,811
+Çünkü eksi t yazacağım ya, onun için şimdi yolunu yapıyorum yani sen anla beni. Evet, x eksi t yazaraktan ne eşittir sıfırdan sonsuza kadar? Eksi t'nin ney'ninci kuvveti? Bir artı eksi t. Eksi t'nin karesi. Eksi t'nin kübü. Eksi t'nin dördüncü kuvveti. Nokta cik cik.
+
+727
+02:21:06,548 --> 02:21:34,320
+Bir bölü, bir eksi, eksi t. Eksi t'nin mutlak değeri bir. Aralığın uçları için durum incelenir ama şu an onun da değil derdimiz. [öğrenci]'ciğim sizdiniz galiba, isimleri bazen karıştırıyorum. Bakın [öğrenci]'ciğim, bu şöyle de yazılabilir, aynı seri. Tamam mı? Hiç problem yok. Biz sırtımızı...
+
+728
+02:21:34,319 --> 02:21:55,180
+Teoreme dayamışız. Sıkıntımız yok. [öğrenci]. [öğrenci]'ti değil mi? Tamam mı? Böyle bunu. Böyle de yazabilirsin yani. Hiç problem yok. Aynı şeydir. İstersen M'lisini yaz, istersen [öğrenci]'in Z'sine göre Z'lisini yaz. Misal. Filiz'in F'sine göre yaz. İstediğin gibi yazabilirsin.
+
+729
+02:21:56,948 --> 02:22:14,888
+Bu bir değişken dönüşümü değildir. Tekrar ediyorum. t'leri x yaptım, böyle bir şey yok. İntegraldeki dönüşüm gibi değildir. Tekrar ediyorum. Evet, bunu güzelce tekrar yazıyorum ve de biraz böyle cabalı cabalı yazıyorum. Neden? İntegral alacağım çünkü. Ay başıma neydi gelen yarabbim. Evet.
+
+730
+02:22:20,371 --> 02:22:29,371
+Şöyle biraz bolluk bıraktım. Neden integral payı? Dikişte de vardır ya. T kare. Çok severim dikiş. Dikiş çok severim.
+
+731
+02:22:35,667 --> 02:22:38,948
+Evet, şurada da biraz bolluk bırakalım.
+
+732
+02:22:43,667 --> 02:22:53,047
+Burası ne oldu? Evet, t'nin birden küçük diye yazabiliriz. Şimdi elime kırmızı kalemimi aldım, integral'i koyuyorum.
+
+733
+02:22:53,528 --> 02:23:00,567
+Hocam, siz dediniz ki orada bir tane k vardı, bu k'dan kurtulmak için belirli integral yapabiliriz demiştik.
+
+734
+02:23:01,108 --> 02:23:04,567
+Hatırlayamadım, nerede dedim? Allah Allah. Nerede dedim?
+
+735
+02:23:05,075 --> 02:23:09,295
+Hani o teoremmi sayfa var ya orada dediniz. Öyle mi? Bakalım ne demişiz?
+
+736
+02:23:09,876 --> 02:23:20,115
+He bunu demişim. K gelmemesi için belirli integral de alabiliriz demişim. Bak bak bak. Nelerde demişim. Allah Allah.
+
+737
+02:23:20,876 --> 02:23:28,835
+Evet, buraya sıfırdan x'e kadar dedim. Burası da sıfırdan x'e kadar diyorum. Bak böyle kapattım. Bak bak.
+
+738
+02:23:28,835 --> 02:23:29,335
+Bak.
+
+739
+02:23:32,500 --> 02:23:58,659
+Oh, mis mis mis mis. Anlamayan var mı? Hocam neden sıfırdan x'e kadar dedik? K gelmesin diye. Ben de peki soruları çözerken böyle yapabilir miyim? Tabii ki sen de öyle yap diye yaptım yani. Başkası yapsın diye yapmadım zaten. Öyle bir elimizde şans da var. Şimdi alalım integralimizi. Tekrar yeşil kalemimize geri dönelim. Köyümüze geri dönelim gibi oldu. Evet.
+
+740
+02:23:59,316 --> 02:24:07,036
+x'i bir üzeri n, t üzeri n artı bir, bölü n artı bir, sıfırdan x'e kadar, güzel.
+
+741
+02:24:08,316 --> 02:24:09,596
+Hocam 16 geçiyor.
+
+742
+02:24:12,056 --> 02:24:16,496
+x değil, dur. Özür dilerim. t'ye göre integre ediyoruz.
+
+743
+02:24:16,596 --> 02:24:20,996
+Dx yazmışım zaten, burası yanlış olmuş. Kimse de bana söylemiyor. Aşık olsun çocuklar.
+
+744
+02:24:22,096 --> 02:24:25,164
+Evet, şu önce bir şurayı bir...
+
+745
+02:24:25,268 --> 02:24:45,427
+Zaten eşittir. Şurayı bir kırmızı kalem yapıp, dx'imi tamamlayayım. Sonra da tekrar yeşil yapayım da devam edeyim. Evet, t eksi, t kare, şunları unuttuk bu sefer de. Ay Allah'ım yarabbim. Yine dx yazmışım ben.
+
+746
+02:24:46,347 --> 02:24:48,868
+Valla yoruldum yoruldum gerçekten.
+
+747
+02:24:52,115 --> 02:24:52,635
+Tamam.
+
+748
+02:24:55,635 --> 02:24:57,795
+Evet, yorulunca böyle oluyor.
+
+749
+02:24:57,915 --> 02:25:06,175
+Evet, t kare bölü 2, t küp bölü 3, t 4 bölü 4, ay yeter artık nokta nokta.
+
+750
+02:25:06,556 --> 02:25:10,135
+Evet, şimdi sıfırdan x'e kadar.
+
+751
+02:25:10,216 --> 02:25:12,435
+Hocam ben de böyle öf diyebilir miyim sınavda?
+
+752
+02:25:12,495 --> 02:25:14,095
+Diyebilirsin, dört derim yeterlidir.
+
+753
+02:25:14,195 --> 02:25:15,036
+Beşinciye gerek yok.
+
+754
+02:25:15,115 --> 02:25:17,216
+Ben siz görünüz diye yaptım yani.
+
+755
+02:25:17,683 --> 02:25:31,323
+Tamam mı? Benim yaptıklarımı yapabilirsiniz sınavda. Problem yoktur. Yani öyle olmayacak şeyi yapmam burada. Çünkü benim örnek olmam lazım size. Şimdi üst ve alt terimleri yerlerine yazıyorum.
+
+756
+02:25:36,788 --> 02:25:38,948
+Bir üst bir alt değil mi? Tabii ki.
+
+757
+02:25:42,007 --> 02:25:46,427
+Aa, 6 için 0. Allah Allah. Niye 0 yazdın mı? Şimdi anlamışsındır artık.
+
+758
+02:25:48,087 --> 02:25:53,847
+[öğrenci], anladın mı neden belirli integral yaptığınızı? Bak senin istediğin gibi oldu hem de.
+
+759
+02:25:56,427 --> 02:25:56,988
+Teşekkür.
+
+760
+02:26:03,379 --> 02:26:07,020
+Bu da 0. Hop yallah gitti. Burayı yapalım.
+
+761
+02:26:14,899 --> 02:26:29,020
+Hop yallah bu da gitti. Çünkü elen 1-0. Oh mis. Hocam aralık. Aralık yine aynı. Aralığın uçları için durumu inceleyeceğiz. Bilmiyoruz bu. Yani eşitlik var mı yok mu? Onları incelememiz gerekiyor.
+
+762
+02:26:29,979 --> 02:26:39,099
+Şimdi onu tekrar yazmak istiyorum. Öbür sayfaya geçene kadar şöyle bir göz atın bakalım. İşte bak buraya göz atılması lazım mesela. Yanlışlık olmasın. Tamam mı?
+
+763
+02:26:41,940 --> 02:26:48,540
+Şimdi aralığın uçları için durumu inceleyeceğiz. Ben 20 geçe diye iyi söylemişim. 20 geçe olmadı gördüğünüz gibi.
+
+764
+02:26:52,468 --> 02:27:01,708
+Şimdi arkadaşlar, bunlar daha hızlı anlatılır mı? Ben size sorayım, çok mu yavaş gidiyoruz? Bir de fikrinizi beyan edin bakalım.
+
+765
+02:27:05,172 --> 02:27:30,112
+İyi değil mi? Yani daha hızlanın diyorsanız, benim işime gelir. Ben tır tır anlatırım. Biter gider. Ama bundan daha hızlı anlatılırsa bence biraz şey olur. Yani hızlanmayalım. Bence de. Bence de. Evet. Diğer arkadaşlar zaten yazmaya da vakit kalıyor diye. Maşallah çok hızlı yazıyorsunuz ama bak onu söyleyeyim size.
+
+766
+02:27:32,819 --> 02:27:35,939
+Halbuki siz yazıyorsunuz. Kimyada mısınız efendim?
+
+767
+02:27:41,299 --> 02:27:59,500
+Kimyadasınız. Alıştık diyor zaten, tabii. Evet. Kimyacılar hızlı yazar. Tabii. [öğrenci] siz de mi kimyadasınız? Yazsınlar diye zaten biraz oyalanıyorum da. Evet.
+
+768
+02:28:00,915 --> 02:28:14,915
+Evet, maşallah benim güzel sınıfıma. Bir de benim dediklerimi dinleseniz 10 numara 5 yıldız olacaksınız ama işte biraz böyle. Evet, bir de suskun taraf var, susanlar var. Yani eğer...
+
+769
+02:28:15,476 --> 02:28:30,536
+Bu konuşan arkadaşlarımızın fikrindesiniz de yazmaya üşeniyorsanız veya cep telefonundan, efendime söyleyeyim, dinleyince klavyeyi açıp ekranı kaybediyormuş. Ondan sebepse hiç problem yok. Yazma.
+
+770
+02:28:31,276 --> 02:28:38,695
+Ama ya burada ne yazıyor? Bu harmonik mi? Harmonik dediği nedir ya? En ince terim testi ne ya? Diyorsan.
+
+771
+02:28:39,040 --> 02:28:46,880
+Yani gerçekten çok facia bir durum. Ne olur bu hafta sonu otur, genel tekrar yap. Tamam mı? Siz de sağ olun yavrum.
+
+772
+02:28:47,763 --> 02:29:00,804
+İnanın bak samimiyetle söyleyeyim. Şöyle dün mü söyledim ben bunu sizin sınıfta mı söyledim? Şöyle bir teknoloji çıksa yani düşünsene biz çocukken böyle bir şey söylese hoca böyle yazacak senin evinde de tırt tırt tırt tahtada göreceksin.
+
+773
+02:29:01,223 --> 02:29:15,663
+Dersin ki o amma hayal gücün var falan dersin. Hayalini dahi kuramıyorduk böyle bir şeyin düşün. Şöyle bir teknik geliştirseler mesela bir sınıfın hocası çalıştıkça onun öğrencilerinin aralarında böyle bir neron bağlantısı gibi.
+
+774
+02:29:15,763 --> 02:29:42,243
+Bir şey. Hoca öğrendikçe çocuklara gidiyor. Hoca öğrendikçe çocuk. Yemin ediyorum uyumazdım bak. Yemin olsun uyumazdım. Derdim ki çocuk bunları da öğrensin. Ay bunları da öğrensin. Ay bunları da öğrensin. Hadi bas düğmeye gitti. Karşı tarafa yüklendi. Oh tamam. Ondan sonra ben kafamı yastığıma rahat rahat koyardım. Size söyledim değil mi? Öbür sınıfıma değil. Dur öbür sınıfa söyleyeyim o zaman onu. Tamam.
+
+775
+02:29:43,443 --> 02:30:04,403
+Öbür sınıfa söyleyeyim onu. Ya da bir aşı yapsalar mesela, böyle bilgi, fış kafana hemen girse mesela bütün bilgiler aşıyla. Olmayacak şey değil. Dur bak, bekle daha neler olacak. Bak burada böyle anlatıyoruz karşıda. Bizim çocukluğumuzla evde telefon yoktu. Evet.
+
+776
+02:30:05,971 --> 02:30:16,871
+Yani vardı da az evde vardı öyle. Her evde yok. Her evde olmayınca sen telefon edemiyorsun. İstediğin kadar sen de olsun. Ne yapacaksın yani? Sende var da ne işe yarıyor? Öyle değil mi?
+
+777
+02:30:29,459 --> 02:30:35,259
+Açık yazıyorum ve soru işareti koyuyorum. Şimdi bunları inceleyeceğiz. Ondan sonra da elenikif hastalığını konuşmamız lazım.
+
+778
+02:30:36,459 --> 02:30:44,759
+Şimdi, x yerine önce x'i 1 yazıyorum. Dikkat et. Bir tane de ödev vereceğim. Karambola gelmesin.
+
+779
+02:30:50,644 --> 02:31:10,364
+Şimdi bak, sağlam bir soru soracağım. Bakayım kaç kişi cevap verecek? Bakayım kaç kişi cevap verecek? Çok merak ediyorum. Gerçekten o kadar merak ediyorum ki. Ay diyorum benim güzel sınıfım. Biz de sene sonuna kadar beraberiz. Öbür sınıfı bırakıyorum. Evet, sizinle beraberiz. Bu alternemi.
+
+780
+02:31:13,644 --> 02:31:17,043
+Doğru yazdım değil mi? Yanlışlık yok. Heh, aferin.
+
+781
+02:31:17,683 --> 02:31:40,324
+Aferin, aferin. Evet. İken olmaz mı demiştin? İken değil ya. En neyini toplayınca iki en oldu. Bir de artı biri var. İken artı biri oldu. Her zaman bu negatif. Eksiği başa aldım. Ne eşit? Sıfırdan sonsuza kadar dedim. Peki bu seriyi nasıl bilirsiniz? Meftay nasıl bilirsiniz gibi oldu. Tövbe yarabbim. Evet şuraya artı bir dedim.
+
+782
+02:31:40,788 --> 02:31:50,587
+Buraya da eksi 1 dedim. Dolayısıyla benim serim eksi ne eşittir 1'den sonsuza kadar 1 bölü n oldu. Bunu nasıl bilirsiniz?
+
+783
+02:31:53,148 --> 02:31:59,028
+Üst taraf pozitif mi hep? [öğrenci]'cum üst taraf hep negatif, o negatifi başa aldım.
+
+784
+02:32:00,108 --> 02:32:03,488
+Ha şu anki hikayesini söylüyorsun. Şunun adı ne?
+
+785
+02:32:12,340 --> 02:32:22,260
+Harmonik, aferin. Tamam. Eksi katı, o da ıraksak. Güzel. Konuşmaya gerek yok o zaman.
+
+786
+02:32:22,540 --> 02:32:28,580
+Hocam niye mutlak değerini almadık? Ya niye mutlak değerini alayım? Mutlak değer değişik işaretli seriler için.
+
+787
+02:32:28,979 --> 02:32:35,100
+Bu değişik işaretle değil ki, pozitif terimli bir serinin hepsi negatifle çarpılmış.
+
+788
+02:32:35,100 --> 02:32:38,200
+Ben de dedim ki negatifini dışarı alayım, karakterine bakayım.
+
+789
+02:32:38,739 --> 02:32:55,479
+Tamam mı? Eksiyle çarpılmışı da zaten ona göre değil. Peki bunun mutlak yakınsaklığından bahsedemez mi? Bahsedemeyiz efendim. Bu değişik işaretli değil zaten. Bu pozitif terimli bir serinin eksi bir ile çarpılmış hali. Tamam mı? Canı sağ olsun.
+
+790
+02:32:55,939 --> 02:33:01,739
+Şimdi diğerine geçiyorum. Tamam mı? Rengi değiştirelim. X eşit bir koyuyoruz.
+
+791
+02:33:04,564 --> 02:33:07,384
+n eşittir sıfırdan sonsuza kadar
+
+792
+02:33:11,507 --> 02:33:12,007
+Evet.
+
+793
+02:33:13,688 --> 02:33:14,847
+Eksi 1 üzeri ne?
+
+794
+02:33:15,547 --> 02:33:16,507
+Bölü ne artı 1?
+
+795
+02:33:23,316 --> 02:33:30,536
+Kağıdı olanlar kimler?
+
+796
+02:33:38,675 --> 02:33:40,536
+Kağıdı olanlar, kağıdı olanlar.
+
+797
+02:33:43,536 --> 02:33:47,835
+Heh ben söyleyeceğim, şimdi sana soracağım ben de. Sıkı dur.
+
+798
+02:33:50,835 --> 02:33:56,315
+Ay demeyeydim ki. Aman ne olacak? Cevaplayamazsan ne olur ya? Canın sağ olsun Allah'ım yarabbim.
+
+799
+02:33:56,876 --> 02:34:00,275
+Eksi bir, pıt pıt. Şurası da eksi bir oldu.
+
+800
+02:34:01,536 --> 02:34:03,595
+Sorun hocam diyor bak [öğrenci]. Maşallah.
+
+801
+02:34:04,852 --> 02:34:15,092
+Aslan gibi. Evet. Sorun hocam. Haydi sor sor diyor bana [öğrenci]'ciğim. [öğrenci]'ciğim bunu nasıl bilirsin canım benim.
+
+802
+02:34:19,540 --> 02:34:21,180
+Kağıttan bak, serbest.
+
+803
+02:34:24,659 --> 02:34:30,100
+[öğrenci] sordum ama. Bir dakika hocam, bakıyorum diyor. Evet.
+
+804
+02:34:32,340 --> 02:34:33,260
+Köhmetri gibi.
+
+805
+02:34:34,020 --> 02:34:37,240
+Köhmetri olur mu kız? [öğrenci] sen misin telefonu açar?
+
+806
+02:34:37,280 --> 02:34:38,440
+Yok, değil de yok.
+
+807
+02:34:39,119 --> 02:34:44,000
+Senin kağıdın yok, belli. Bak o yazdı, alterne, alterne.
+
+808
+02:34:44,920 --> 02:34:48,000
+Alterne seri, tamam. Başka?
+
+809
+02:34:50,644 --> 02:34:59,244
+Ha onları yazmadınız da. Hani alterne harmonikleri yazmadınız mı? Tamam alterne harmonik. Alterne harmoniği nasıl bilirsiniz?
+
+810
+02:35:03,092 --> 02:35:19,756
+Iraksak bilirsiniz. Aman! Bunlar kağıda bak. Kız kağıdınız yok mu sizin? Şartlı yakınsak yazması lazım. Heh [öğrenci]. Şartlı yakınsak. Kağıdınıza yazacaksınız onu da. Evet, serisinin...
+
+811
+02:35:24,244 --> 02:35:44,943
+Hatta bunu böyle yapmana da gerek yok. Madem böyle kağıttan bakamadınız o zaman ben de bunu silerim. Direkt olarak yazabilirsiniz o ayrı ama madem kağıttan da bakamıyorsun, kağıttan bakamazsan o zaman nasıl yapman lazımdı? Şimdi bunu konuşalım. Öyle de yaparsın, problem yok. Bunu siz istediniz. Ben ne yapayım?
+
+812
+02:35:46,100 --> 02:35:51,940
+Bak demek ki kağıdı kullanmak için de soru çözmüş olmak lazımmış. Tamam mı?
+
+813
+02:35:52,979 --> 02:36:13,119
+Serisinin mutlak değerlerinden oluşan, böyle yapalım, klasik yöntemle değerlerinden oluşan, ne eşittir sıfırdan sonsuza kadar bir bölü ne artı bir serisi, ki bu da ne eşittir birden sonsuza kadar bir bölü en serisidir. Yukarıya bak.
+
+814
+02:36:13,620 --> 02:36:31,040
+Iraksak olduğunda, tamam mı? Bak, Iraksak olduğunda, ne eşittir sıfırdan sonsuza kadar eksi 1 üzeri ne bölü ne artı 1? Mutlak yakınsak değildir. Herkesin fikir herhalde.
+
+815
+02:36:35,540 --> 02:36:39,520
+Tamam. Şartlı yakınsak mı? Kontrol edelim.
+
+816
+02:36:44,371 --> 02:36:48,731
+Bence şartla yakınsak. Zaten [öğrenci] dedi bize.
+
+817
+02:36:49,432 --> 02:37:01,131
+Bir, alterne mi? İvit. İki, gittikçe küçülüyor mu? İvit. Üçüncüsü, en sonsuza giderken sıfır oluyor mu?
+
+818
+02:37:06,004 --> 02:37:11,024
+İbit, o zaman şartlı yakınsak. Şartlı Martlı abi yakınsıyor mu yakınsıyor.
+
+819
+02:37:14,515 --> 02:37:18,296
+O zaman bizim serinin akıbetini yazalım. Geri döneceğim, merak etme.
+
+820
+02:37:20,256 --> 02:37:21,855
+Bizim serinin akıbetini yazalım.
+
+821
+02:37:23,315 --> 02:37:41,615
+N eşittir, sıfırdan sonsuza kadar, eksi 1 üzeri N, x üzeri N artı 1, bölü N artı 1, o da eşittir, x eksi, x kare bölü 2, artı, x küp bölü 3, eksi, x üzeri 4, bölü 4.
+
+822
+02:37:42,031 --> 02:37:54,471
+Artı, nokta cık cık cık cık, elen, 1 artı x'e, hangi koşul altında? Eşit. Eksi bir de zannederim değildi değil mi şey? Bilemedim bak şimdi.
+
+823
+02:37:55,091 --> 02:38:04,491
+Çevirdim sayfayı, söylesenize mikrofonu açık olanlar. Burada mı dahildi? Burada dahildi sanki. Burada değildi değil mi?
+
+824
+02:38:06,195 --> 02:38:32,175
+Geri sayfaya dönüyorum zaten ben de. Aşk olsun ya. Bir soru sordum. Ne olur hocana yardım etsen yani. Aşk olsun. Bak yazmış. X eşit 1 için şartlı yakınsak, X eşit 1 için ıraksak. Tamam. Burada tamamla tamamlayacaklarını eleneki içinde konuşup dersi bitireceğiz. Föyü size atmayı unut tutturmayın bana. Tamam mı? Ha bir tane de ödev vereceğim. Dur kaçmaca yok. Evet kaçmaca yok.
+
+825
+02:38:36,852 --> 02:38:41,852
+Evet, bak bakalım. Tamam, sen söyle bana. Ben yazdım, ettim bilmem ne diyerekten.
+
+826
+02:38:43,492 --> 02:38:45,051
+Bu ne? Benim ödevim nerede?
+
+827
+02:38:46,272 --> 02:38:48,112
+Hay Allah, ödevi nereye yazdık?
+
+828
+02:38:49,132 --> 02:38:50,752
+Kaybettim o cekâldını da.
+
+829
+02:38:50,992 --> 02:38:53,792
+Ödev verecektim, ödevi kaybettim. Ne şanslısınız ayol?
+
+830
+02:38:54,752 --> 02:38:57,051
+Evet, dur bulurum ben şimdi sizi.
+
+831
+02:39:00,252 --> 02:39:01,652
+55, 56.
+
+832
+02:39:07,443 --> 02:39:10,423
+Ödevi mi çözdüm ben size? Ne yaptım? Yok, şu.
+
+833
+02:39:13,463 --> 02:39:14,623
+Yok, bu da değil.
+
+834
+02:39:16,783 --> 02:39:17,423
+Enteresan.
+
+835
+02:39:21,523 --> 02:39:22,263
+Bir dakika.
+
+836
+02:39:24,263 --> 02:39:25,363
+Ödev sorumu arıyorum.
+
+837
+02:39:30,708 --> 02:39:33,848
+Heh, burada. Kaybetmedim burada. Bak, beton gibi durdum.
+
+838
+02:39:38,932 --> 02:39:55,231
+Bakayım, şu mu? Bir saniye. Evet, evet, burada. Tamam, güzel. Evet. Tamam mıyız? Tamamız diyorsunuz. Geri dönüyorum. Soru şöyleydi.
+
+839
+02:39:55,832 --> 02:40:04,940
+Elen 2, acaba bu cinsten yazılabilir mi? Diyordu. Elen 2 olabilmesi için, Elen...
+
+840
+02:40:05,043 --> 02:40:14,523
+1 artı x de x yerine 1 yazılması gerekiyordu. Peki 1 yazabilir misiniz? 1 yazıp yazamayacağımızı konuşalım.
+
+841
+02:40:15,164 --> 02:40:24,744
+1 elemanıdır yakınsaklık aralığını ki yakınsaklık aralığımız eksi 1 artı 1 kapalı aralığıdır. Bak bu aralığı eksi 1 açık.
+
+842
+02:40:26,036 --> 02:40:33,876
+Bir kapalı olarak yazabiliriz. Bu aralıktadır. O zaman yazabiliyor muymuşuz? Söyle.
+
+843
+02:40:36,376 --> 02:40:47,756
+Yazabiliyor muymuşuz? Bırakıp gittiniz mi beni? Sınava ben gireceğim ya tabii anacığım normal. Beni çalıştırmıyor bunlar. Ne yaparsan yap diyorlar.
+
+844
+02:40:47,836 --> 02:40:53,115
+Diyorlar ki sınava sen gireceksin. Bize ne? İster çöz, ister çözme diyorlar bana.
+
+845
+02:40:53,683 --> 02:41:08,463
+Evet, ne eşittir? Sıfırdan sonsuza kadar, eksi bir üzerine, buraya bir koyarsan değişmez. Sakın enin yerine koymuyorsun, x'in yerine koyuyorsun, haberin olsun. Tamam mı? Yalan yanlış yapmayasın sonra.
+
+846
+02:41:08,463 --> 02:41:10,683
+Evet.
+
+847
+02:41:15,540 --> 02:41:24,680
+Bu da Elen 2. Yine aralık aynı. Gördüğünüz gibi. Aynı soru. Hatta bunu renkli kalemle yapalım.
+
+848
+02:41:30,004 --> 02:41:32,164
+Aynı soru bize.
+
+849
+02:41:34,284 --> 02:41:39,664
+Elen 5 için sorulmuş olsaydı cevabımız ne olurdu? Bana söyler misiniz?
+
+850
+02:41:45,396 --> 02:41:47,195
+Yazabilir miydik 5 için?
+
+851
+02:41:51,860 --> 02:42:17,100
+Yazamazdık. Neden? Çünkü buraya 4 gelir. 4 elemanı değildir. Eksi 1, 1 elemanının. Dolayısıyla elen 5 bu seri kullanılarak yazılamaz. Tamam mı? Ödevimize gelelim şimdi.
+
+852
+02:42:19,507 --> 02:42:41,167
+Ödevi şuraya yazıyorum, ondan sonra geri alırım, merak etmeyin. Ödev, 1 bölü, 1 artı, x küp serisinin, kuvvet serisi, temsilini, çok kolay bu artık yani.
+
+853
+02:42:41,167 --> 02:42:43,568
+Tam teste sorulacak bir soru.
+
+854
+02:42:46,579 --> 02:43:11,219
+Bulunuz. Tamam. Çok kolay bir soru. Şunu geri alayım. Bir sayfa. Yazanlar yazsın. Ben de o arada save edeyim. Evet. Şöyle pdf diyelim. Save diyelim. Show full diyelim. Evet. Ve de şöyle atalım. Evet.
+
+855
+02:43:11,891 --> 02:43:16,592
+Göyyah 20 geçe bitecekmiş de falanmış da pişmanmış.
+
+856
+02:43:17,432 --> 02:43:21,311
+Hiç de olmadı öyle. Ama olsun çok güzel öğrendik diye düşünüyorum.
+
+857
+02:43:22,311 --> 02:43:28,952
+Evet, sene başında yaptığım uyarılarla söz konusu olan dersin ağırlığı hakkında ne düşünüyorsunuz?
+
+858
+02:43:29,032 --> 02:43:33,652
+Uyarılar hakkında ne düşünüyorsunuz? Yazarsanız çok sevinirim.
+
+859
+02:43:33,652 --> 02:43:35,792
+Evet.
+
+860
+02:43:47,156 --> 02:44:11,436
+Söyleyin bakalım. Matbirden çok daha zor değil mi? Açık ara zor demiştim ben size zaten. Peki uyarı yaparken az mı söylemişim? Değil mi? Yani çok mu abartmışım? Az mı söylemişim değil miyim de çok mu abartmışım? Doğru değil mi? Zor. Yani bunu günü gününe çalışmadan muvaffak olmak gerçekten imkansız sevgili gençler. Bak samimi söylüyorum.
+
+861
+02:44:11,436 --> 02:44:14,036
+Samimi söylüyorum.
+
+862
+02:44:17,459 --> 02:44:42,519
+Değil mi? Evet. Evet, şu an öğrenci görüşme saati başladı. Sorusu olan varsa buyursun, sorsun. İyi hafta sonları diliyorum ayrılan arkadaşlara. Bakalım herkes ayrılacak mı? Bir de bilgisayar açıp hala kaçan arkadaşlar var. Yani ben de diyorum ki yani bu nasıl bir şeydir? Ne diyeyim ben? İyilik sağlıkları olsun. Ben başka bir şey diyemiyorum yani.
+
+863
+02:44:43,443 --> 02:44:55,643
+Biz ayrılıyoruz, adam hala burada. Neden bilgisayarı açmış? Diyor ki yani orada sen konuş. Ben konuşayım, ben kendim için mi konuşuyorum? Ben girmeyeceğim ki sınavaya. Sen gireceksin arkadaş sınava. Böyle bir şey yok.
+
+864
+02:44:57,643 --> 02:45:03,683
+Evet, iyi günleriniz olsun. Sağlıklı güzel günler görün. Evet, sorusu olan yoksa kapatıyorum.
+
+865
+02:45:05,108 --> 02:45:27,847
+Evet, hızla ayrılırsanız ben de en azından dinleyip dinlemediğinizi görmüş olurum. Çok üzülüyorum çünkü halinize. Yani bu benim şahsımla, beni dinlediler, beni dinlediler, değil, bununla ilgili değil, bunu idrak etmenizi istiyorum. Yani bu dersle ilgili hala bir, ne diyeyim ben, bir içsellik geliştirememekten bahsediyorum.
+
+866
+02:45:28,435 --> 02:45:44,095
+Anlatabildim mi? Hala bilgisayar açık, kaçıyor. Zannediyor ki bilgisayar açık olunca geçecek bu dersten. Yani. Böyle. Evet. İyi günleriniz olsun. Evet. Evet. Kapatıyorum. Ayrıl artık senle. 56 kişi var hala sınıfta.
+
+867
+02:45:46,995 --> 02:46:03,955
+Evet, kapatın arkadaşlar. Bakayım, bir göreyim bakayım. Kapatın yavrum da, bir göreyim bakayım. Bilgisayarı açıp kaçan 50 kişi mi var? Bu beni çok üzüyor. Yani hoca üzülmesin diye şu bilgisayarını kapat da bir bakayım dinliyor musun, dinlemiyor musun çocuğum? Hah, sağ ol. Evet, 50 oldu. Bakalım.
+
+868
+02:46:05,427 --> 02:46:31,288
+Soru soran yok artık, belli. Onun için bir şey söyleyecek mi, bir şey söylemeyeceğim. 3, 2, 1 diyeceğim, kapatacağım. Bir göreyim bakayım, elinin altına düşecek misin? Yok anacığım, 50 kişi böyle. Bunlar bırakıyor. Hatta açık bırakacağım bakayım, ne kadar daha devam edecek bu 50 kişinin burada durması. Bir de bunları tayin edelim biz. Kim bunlar? Bakayım sınıfa şimdi. Bakayım sınıfa bakayım, kimlermiş bunlar?
+
+869
+02:46:33,843 --> 02:47:00,243
+[öğrenci], [öğrenci], [öğrenci]. Evet, ayrılın artık sınıftan arkadaşlar. Burada mısınız? Buradaysam bir tuşa bas bakalım. Bilgisayarını açıp kaçtın mı yoksa? [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci]. Hani buradasınız? Konuşun efendim konuşma butonundan. Bir tuşa bas bakalım.
+
+870
+02:47:03,827 --> 02:47:04,307
+Ne?
+
+871
+02:47:08,244 --> 02:47:33,203
+[öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci]. Hadi yavrum. Bakalım kaç kişi kaldı? 46 kişi. 46 kişi hala sınıfta.
+
+872
+02:47:33,843 --> 02:47:41,483
+Ben ne diyeyim? Ben başka bir şey diyemiyorum yani. İyilikler olsun. Ne diyeyim ben? Başka bir şey diyemiyorum yani.

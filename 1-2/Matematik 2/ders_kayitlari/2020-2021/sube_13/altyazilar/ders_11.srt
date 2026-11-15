@@ -1,0 +1,1967 @@
+1
+00:00:59,859 --> 00:01:01,859
+Merhaba arkadaşlar, nasılsınız?
+
+2
+00:01:05,331 --> 00:01:07,211
+İyiyiz hocam, siz nasılsınız?
+
+3
+00:01:07,751 --> 00:01:10,631
+Ben de iyiyim, teşekkür ederim efendim, sağ olunuz.
+
+4
+00:01:11,751 --> 00:01:16,151
+Evet, bugün yeni bir konuya başlıyoruz, vektörler.
+
+5
+00:01:16,651 --> 00:01:21,451
+Öy üzerinden anlatım yapacağız. Geçtiğimiz derste ilgili sorusu olanlar var mıdır efendim?
+
+6
+00:01:25,652 --> 00:01:33,572
+Teşekkür ederim efendim. Sağolunuz. İyiyim. Evet, şimdi ekran paylaşımı yapıyorum.
+
+7
+00:01:36,572 --> 00:01:52,572
+Evet. Şimdi bu zaten bizim köyümüzdü. Bunu yapmıştık, şunu yapmıştık, bunu yapmıştık, bunu da yapmıştık.
+
+8
+00:01:53,748 --> 00:02:20,307
+Evet, şurada kalmıştık. Buradan gayrısı, bakın, şöyle yavaş yavaş ilerletiyorum. Bunlara çalışın. Şurada bir değişiklik yaptım. Bakın buna dikkat edin. Burayı değiştirdim, şurayı değiştirdim. Oraya dikkat edin, incelersiniz burayı. Bunları çalışın. Yine buradan devam edelim.
+
+9
+00:02:22,036 --> 00:02:25,956
+Bunu da çalışıyorsunuz. Yine teleskobik serilerle ilgili.
+
+10
+00:02:27,516 --> 00:02:29,915
+Ve de bu da var. Bunların hepsi çıkmış sorular.
+
+11
+00:02:31,915 --> 00:02:33,115
+Evet, gördüğünüz gibi.
+
+12
+00:02:34,316 --> 00:02:36,436
+Evet, bu zaten bizim çözdüğümüz ifade.
+
+13
+00:02:36,596 --> 00:02:37,996
+Şimdi biz bugün neler göreceğiz?
+
+14
+00:02:38,795 --> 00:02:41,795
+Biz bugün vektör bahsini bitireceğiz.
+
+15
+00:02:43,219 --> 00:02:51,579
+Vektörler sizin daha önceden bildiğiniz bir konu ama ben yine burada bizimle ilgili olan kısmını vurgulayarak anlatacağım.
+
+16
+00:02:51,699 --> 00:02:56,560
+Çünkü uzay geometriye geçeceğiz. Bunlarla ilgili bize ciddi sorular sorulacak.
+
+17
+00:02:57,340 --> 00:03:02,300
+Bu hafta itibariyle gelmeyi hedeflediğimiz yer neresi? Hemen bunu da konuşalım.
+
+18
+00:03:02,836 --> 00:03:10,496
+Normalde vektör ve uzay geometrisinin tamamını bitirmemiz gerekiyor. Vektör değerli fonksiyonları da bitirmemiz gerekiyor arkadaşlar.
+
+19
+00:03:11,355 --> 00:03:19,896
+Yani yarınki dersimizde vektörler ve uzay geometrisi olan bu 8 sayfalık ifadeyi bugün zaten bitireceğiz inşallah.
+
+20
+00:03:21,436 --> 00:03:24,636
+Skalar çarpım, vektörer çarpım bunlarla ilgili olan özellikler var.
+
+21
+00:03:25,044 --> 00:03:46,044
+Bunun hemen arkasında uzayda doğrular ve düzlemler ile ilgili bir fasıl var. Bunu konuşacağız. Evet, uzayda doğru ve düzlem. Ve yarın da vektör değerli fonksiyonlar ve bu konuyla ilgili çıkmış sınav sorularını konuşacağız. Eğer bu iki fayın tamamını bitirirsek bugün çok gerçekten...
+
+22
+00:03:46,592 --> 00:03:52,512
+Böyle ileri derecede böyle ilerlemiş oluruz. Yani baya baya bir ilerlemiş oluruz.
+
+23
+00:03:53,092 --> 00:03:59,332
+Tahminimce bu iki köyün tamamını bitiremeyiz. Böyle bir buçuk köyde kalır gibi geliyor bana.
+
+24
+00:03:59,924 --> 00:04:17,543
+Şimdi diyeceksiniz ki hocam dünkü derste istinaden ne için konuşmuyorsunuz? Dünkü derste ilk dersimiz 3 saatlik, ikincisi 2 saatlik. Sizinkisi ise öncesi 2 saatlik, sonrası 3 saatlik. Dolayısıyla geleceğimiz yeri tam tahmin edemiyorum bu manada.
+
+25
+00:04:18,384 --> 00:04:23,843
+Ama bana kalırsa şimdi şurayı uzayda doğrular ve düzlemler.
+
+26
+00:04:24,255 --> 00:04:35,096
+Zannederim, uzayda düzleme kadar geliriz gibi düşünüyorum. Uzayda düzlem yarına gelir, kalır gibi düşünüyorum sevgili arkadaşlar.
+
+27
+00:04:35,255 --> 00:04:44,495
+Bu arada chat kutusu yanıp sönüyor ama chat'i göremiyorum. Yine chatte bir tuhaflık oldu biliyorsunuz. Böyle bir kazan yapabiliyor.
+
+28
+00:04:45,716 --> 00:04:49,075
+Stop share diyeyim. Tekrar share yapayım.
+
+29
+00:04:50,803 --> 00:05:15,943
+Hadi bakalım, inşallah başarabiliriz diyor. Tamam, hadi başaralım. Ama chat kutusunu başaramıyorum. Heh, chat kutusunu da başardım peki. Peki, tamam, chat kutumuzu da başardık. O zaman şimdi vektörler konusunda başlayalım. Vektörleri zaten fizik dersinden de birazcık tanıyorsunuz. Birinci dönemliğine herce biri görmüştünüz değil mi sevgili arkadaşlar?
+
+30
+00:05:17,651 --> 00:05:19,251
+Evet hocam.
+
+31
+00:05:19,312 --> 00:05:34,872
+İyi, güzel. Yani kısacası bir vektöre aşinalığınız var. Benim diğer grubumda onlar ikinci seneliğinerce bir görüyorlarmış. Onlar biraz vektörlerde vakit kaybettik. Sizde o kadar vakit kaybetme olmaz.
+
+32
+00:05:34,872 --> 00:05:45,012
+Evet, hadi bakalım. Başlayalım o zaman. Şimdi AnoT8'i de açalım. Bunu size atamıyoruz biliyorsunuz. Yani şurada yazdıklarımızı size atamıyoruz biliyorsunuz.
+
+33
+00:05:45,331 --> 00:06:05,451
+Evet, şimdi bakın, ufaktık, okula başladık, tabii hani mesela bebek doğuyor, önce süt içiyor, sonra püre gibi şeyler yiyor, katı gıdaya, sonradan geçiliyor, değil mi? Yani demek ki bir insanın hazmı denilen bir olay var, hazm önemli.
+
+34
+00:06:05,451 --> 00:06:09,691
+Şimdi biz de küçüktük, bizim anlayabileceğimiz, hazmedebileceğimiz.
+
+35
+00:06:10,100 --> 00:06:34,060
+Bilgiler şöyle bize anlatıldı. Denildi ki, bak böyle bir doğru var, bak bunun üzerine tam sayıları ben koyayım sana, böyle böyle dedi. Güzel güzel anlattılar. Biz de dedik ki, tamam falan dedik. Hiç birimizle arada bir şey var mı, boşluk mu burası falan diye sormak aklımıza gelmedi. Belki aramızda vardır soranlar. Benim aklıma gelmemişti. Sonra biraz daha büyüdük.
+
+36
+00:06:34,483 --> 00:07:01,983
+Ondan sonra dediler ki, ya bu sayı doğrusu esasında daha uzun. Burada sıfır var, 1, 2, 3 böyle gidiyor. Efendime söyleyeyim, burada da eksi bir, meksi bir var, dediler. Biraz daha büyüyünce biz. Sonra birazcık daha büyüdük. Dediler ki, bak rasyonel sayıları da burada mesela 1 bölü 2'yi böyle işaretleyebilirsin, işte 1,5, 3 bölü 2'yi böyle işaretlersin falan diye rasyonelleri söylediler. Biz de dedik, ya aralar öyle doluyormuş demek ki dedik.
+
+37
+00:07:02,483 --> 00:07:24,483
+Sonradan dediler ki, yok yok, bir de köklü sayılar da var. Bunun içinde böyle artık tıkış tıkış burası yani. Böyle sayılamaz çoklukta her bir aralık. Yani iki sayının arasında sonsuz tane rakam yazılabiliyor. Ne dedik, böyle bir şaşırdık falan filan. Sonra bunu öğrendiğimiz zaman...
+
+38
+00:07:25,331 --> 00:07:37,912
+Tabii ki bize x eşittir 3'ü göster bakayım evladım falan dediklerinde veya işte x eşittir 2'yi göster bakayım yavrum dediklerinde gidip sayı doğrusu üzerine bir nokta koyuyorduk.
+
+39
+00:07:37,912 --> 00:07:45,112
+Hatta diyorduk ki şurası da bir, işte bu da saydım 0, 1, 2 falan diye x eşittir 2'yi böyle gösteriyorduk.
+
+40
+00:07:45,632 --> 00:07:47,972
+Sonra biraz daha büyüdük.
+
+41
+00:07:48,755 --> 00:08:09,536
+Sonra bize dediler ki, düzlemdeki noktaları, iki tane dik koordinat, iki doğru ile ifade ediyorsun falan. Sonra dediler, bak sana doğruyu öğretelim, x eşittir 2. Aslında biz sana şimdiye kadar söylemedik. Çünkü daha hazır değildim bu gerçeğe. x eşittir 2 aslında doğruydu, biz sana söylemedik.
+
+42
+00:08:16,755 --> 00:08:25,315
+Yani, aa işte bu doğrunun söz konusu olan bu ekseni değdiği nokta senin şu noktandı falan diye bize anlattılar.
+
+43
+00:08:25,855 --> 00:08:32,755
+Sonra azıcık daha da büyüdük, azıcık daha da büyüdük. Sonra dediler ki, biz 3 boyutlu uzayda yaşıyoruz.
+
+44
+00:08:33,076 --> 00:08:38,655
+Eee yaşayalım, ne olacak dedik biz de. Normalde dediği x eşittir 2 aslında.
+
+45
+00:08:39,572 --> 00:09:07,291
+Bir düzlem, aa dedik öyle mi? Evet, ben bu gerçeğe hazır değildim. Onun için bana önce bu nokta gibi algılandı, anlatıldı. Sonra efendime söyleyeyim, bunun bir yeşil doğru olduğunu ben sonra mı gördüm yani? Evet dediler, aynen öyle. Pardon, bir yeşil doğru derken şöyle çizmem lazımdı. Bir yeşil doğru olduğunu sonra bana gösterildi. Sonra da bunun yüksekliğinin de olduğunu ben idrak ettim. Ve de bu, bu şekil mi?
+
+46
+00:09:07,572 --> 00:09:12,331
+Yazıldı, ifade edildi dediğim zaman, evet, aynen öyle dediler.
+
+47
+00:09:12,331 --> 00:09:16,771
+Ve ben birbirinin arkasına gerçeklerle yüzleşmeye devam ettim.
+
+48
+00:09:17,051 --> 00:09:22,331
+Ve o zaman da dedim ki, aa siz bana çember diye öğrettiğiniz şey de yoksam çember mi değil.
+
+49
+00:09:23,051 --> 00:09:24,791
+Onun üzerine gülmeye başladılar.
+
+50
+00:09:24,991 --> 00:09:33,932
+Evet dediler, aslında biz seni kandırmadık ama yani x kare artı, y kare eşittir, re kare denilen ifade aslında.
+
+51
+00:09:35,059 --> 00:09:59,799
+Üç boyutlu uzayda bir dönen silindirin bu eksen üzerine iz düşü müdür dediler ve ben hayretler içerisinde kaldım. Yapmayın ya gerçekten mi dedim. Evet dediler. Dolayısıyla yani x kare artı, y kare eşittir, re kare denilen şey aslında ben düzlemde çalışırken bu böyle yukarıya doğru ve aşağıya doğru yükselen soba borusu gibi bir silindirin ta kendisiymiş.
+
+52
+00:10:00,000 --> 00:10:28,000
+Arkadaşlar, bize şimdiye kadar bak neler dediler. Ve ben onun üzerine dedim ki, ooo dedim o zaman siz beni böyle yani gerçekten çok şaşırtıyorsunuz. Peki o zaman y eşittir x kare dediğim bir parabol de yoksa parabol mi değil düşüp bayılacağım artık dedim. Onlar da dediler ki yok yok vallahi değil ama düşüp bayılma dediler. Çünkü bunun yukarıya doğru devamı var dediler. Ben de dedim ki peki o zaman bu şey...
+
+53
+00:10:28,000 --> 00:10:42,240
+Adı ne o zaman böyle, bu ne bu böyle, böyle elini böyle yuvarlak yapmış gibi, şöyle bir şekil, bu şeklin adı ne peki dedim, paraboloid mi yoksa dedim. Bana dediler ki hayır değil, ne peki dedim.
+
+54
+00:10:42,964 --> 00:10:59,584
+Yani bunun adı da dediler, normalde y eşittir x kare parabolünün böyle yukarıya doğru devam etmiş hali. Çünkü içinde hiç z yok. Z olmayınca her z için geçerli olduğu için düzlemdeki y eşittir x karenin yukarıya doğru devamı niteliğindedir dediler.
+
+55
+00:10:59,584 --> 00:11:08,044
+Ben de dedim ki tamam anladım ama ne olur bana söyleyin bu şeklin adı ne dedi. Bu silindir anladım ama bu da mı silindir yani dedim.
+
+56
+00:11:08,436 --> 00:11:30,476
+Onlar da bana dediler ki, evet aynen öyle, bu da silindir dediler ve ben bir şok daha geçirdim. Nasıl silindir ya? Bize soba borusu gibi olan şey silindir diye öğrettiler dedim. Onlar da dediler ki, bu dönen silindirdir. E bu dedim, bu normal bir silindir, alelade dediler.
+
+57
+00:11:31,096 --> 00:11:34,716
+Aa dedim, öyle mi? Evet, öyle dediler.
+
+58
+00:11:35,923 --> 00:11:52,283
+O zaman ben de onlara dedim ki, ay yani dedim bu kadar olmaz. Ben eğri diye sandığım şeyler normalde o zaman başka bir şey dedim. Onlar da dediler, ne demek istiyorsun? Yani şunu demek istiyorum dedim kendimce.
+
+59
+00:11:54,144 --> 00:12:02,443
+Şöyle bir şey çizdim. Mesela dedim ki, y eşittir fx diye ben bir eğri biliyorum. Evet biliyorsun dediler.
+
+60
+00:12:02,964 --> 00:12:06,264
+O zaman 3 boyutta bu ne gösterir ki? dedim.
+
+61
+00:12:08,224 --> 00:12:10,724
+Onlar da bana dediler ki, silindir.
+
+62
+00:12:11,584 --> 00:12:12,984
+Ne diyorsunuz ya dedim.
+
+63
+00:12:13,984 --> 00:12:15,244
+Valla silindir dediler.
+
+64
+00:12:16,704 --> 00:12:18,104
+Ya öyle şey mi olur dedim.
+
+65
+00:12:18,524 --> 00:12:19,504
+Olur tabii dediler.
+
+66
+00:12:20,264 --> 00:12:22,984
+Aynen öbürki gibi, böyle deniz dalgası gibi.
+
+67
+00:12:23,924 --> 00:12:25,824
+Şöyle, şöyle, şöyle, şöyle.
+
+68
+00:12:26,868 --> 00:12:48,368
+Şöyle, şöyle, şöyle, şöyle, şöyle. Bu da mı silindir yani dedim. Evet, silindir dediler. Aa, aynı halı sirkelerken ki böyle bir dalgalanış gibi değil mi? Evet. Peki dedim, ne zaman silindir olmaktan çıkar dedim. Bana dediler ki, içinde Z var mı, yok mu, kontrol et.
+
+69
+00:12:48,768 --> 00:13:00,388
+Y eşittir fx olarak kalmışsa ve içinde hiç z yoksa bu yukarıya doğru da aynı böyle bir çin seddi gibi yükselir.
+
+70
+00:13:00,388 --> 00:13:11,608
+Hiç eğrilip bükülmeden ama eğer sizin ifadenizde z eşittir fx y gibi z de varsa
+
+71
+00:13:12,080 --> 00:13:19,700
+O zaman işte aşağıdaki görüntüsünle yukarıdaki uyumsuz olup böyle bir kıvrılma oluşturur.
+
+72
+00:13:20,060 --> 00:13:26,519
+Bu aşağıya değer, bazen yukarıda kalır, bazen o tarafa sarkar, bunları bilemeyiz.
+
+73
+00:13:27,420 --> 00:13:30,560
+Bunları ancak çizerek bulabiliriz. Peki çizimden?
+
+74
+00:13:31,347 --> 00:13:42,107
+Mesul müyüz? Hayır değil. Beylik birkaç şekil haricinde çizimden mesul değiliz. Tamam mı?
+
+75
+00:13:43,447 --> 00:13:47,807
+Kimyacılar görmedi hocam diyor. Linerce bir mi görmediniz kimyacılar?
+
+76
+00:13:50,807 --> 00:13:52,408
+Cevap verir misiniz?
+
+77
+00:13:54,676 --> 00:14:16,576
+Haa, siz de görmeyenlerdensiniz. Evet, anladım. Öbür grubum da Liner Cebir görmemiş. Tamam, onları anlattığım gibi. Aynı, aynı. Tamam, tamam. Sıfırdan anlatacağım. Problem yok zaten. Onlara da öyle anlattım. Demek ki o zaman, neden ola, birazcık vakit geçecek yani bu şeyde. Çünkü bunu güzel anlamamız lazım. Buraya kadar sorusu olan var mı?
+
+78
+00:14:21,812 --> 00:14:24,412
+X, Y, Z
+
+79
+00:14:25,364 --> 00:14:30,384
+Bir tane böyle bir silindir olsun. Tamam, olsun. Bir mahsuru yok.
+
+80
+00:14:30,923 --> 00:14:34,823
+Ve bu re yarı çaplı olsun. Evet, demek ki o zaman şu.
+
+81
+00:14:35,343 --> 00:14:38,823
+X kare artı y kare eşittir, re kare formundadır. Evet.
+
+82
+00:14:39,384 --> 00:14:42,823
+Bir de düzlem alayım. Mesela şöyle bir düzlem alayım.
+
+83
+00:14:43,283 --> 00:14:48,864
+Bu da mesela 3 olsun. Yani şu da z eşittir. 3 düzlemi olsun.
+
+84
+00:14:48,864 --> 00:14:52,864
+Bunların ikisinin ara kesiline bakarsanız şu...
+
+85
+00:14:53,364 --> 00:14:54,043
+Acivert.
+
+86
+00:14:54,995 --> 00:15:13,036
+Efendime söyleyeyim, çemberdir. Bu çemberi sakın 3 yarı çaplı çember falan zannetmeyin. Bu x kare artı y kare eşittir, re kare silindiri ile z eşittir, 3 düzleminin ara kesedi olan çemberdir sevgili arkadaşlar.
+
+87
+00:15:13,036 --> 00:15:22,995
+Bu bilgiler özellikle bize sene sonunda göreceğimiz integral konusunda karşımıza çıkacak. Bütün tafsilatıyla anlatabiliriz.
+
+88
+00:15:22,995 --> 00:15:36,556
+emin olabilirsiniz. Şimdi bunu bir ön gösterelim olarak düşünün. Bunların tekrar çok detaylı incelemesini integral konusuna girdiğimiz zaman soruları üzerinden anlatacağım.
+
+89
+00:15:37,139 --> 00:15:57,759
+Yine aynı vaziyette, mesela işte merkezil çemberi biliyoruz ama düzlemde yani hani küçükken gördüğümüz, işte lisede ilk çember konusunda, mesela bize deseler ki A bir gül B merkezi, R yarı çaplı çemberin denklemini, belki sen cep telefonundan falan bakmak istersin ama bence hiç gerek yok.
+
+90
+00:16:05,139 --> 00:16:06,019
+Karışın.
+
+91
+00:16:06,899 --> 00:16:13,600
+y-b'nin karesi eşittir, r kadardır. E bu uzaklık formülünü at. Dolayısıyla ne oldu?
+
+92
+00:16:13,779 --> 00:16:27,200
+x-a'nın karesi artı y-b'nin karesi eşittir, r kare formu sana a virgül b merkezli ve r yarıçaklı bir çemberi ifade eder.
+
+93
+00:16:27,740 --> 00:16:34,759
+Peki, benzeri işlemi 3 boyutlu uzayda da yapamaz mısınız? Hemen cevap veriyorum. Niye yapamayayım?
+
+94
+00:16:34,899 --> 00:16:51,759
+Öyle de bir yaparım ki. Hatta hemen de yapıverelim şuraya. Bakalım, çözelim. Şurayı da silelim. Evet, hemen, hemen, hemen, hemen kalemimizi aktive ettik. Şimdi mesela hiç oraya bakmana gerek yok. Bak.
+
+95
+00:16:54,528 --> 00:17:07,435
+C yarı çaplı. Neden? Düzlemde noktamız absis ordinattı. Efendime söyleyeyim uzayda absis, ordinat, bak absis, ordinat, bir de koordinat olmak üzere ki bunun...
+
+96
+00:17:08,051 --> 00:17:21,931
+Bakın şöyle iz düşüyor, A'sı burası, B'si burası, bu tarafa da iz düşürürseniz C'ye, noktayı böyle gösteriyorsunuz. Hani burada böyle iz düşüyordu, böyle iz düşüyordu, burası A, burası B diyordu ki aynı hikaye.
+
+97
+00:17:30,836 --> 00:17:48,376
+Küreniz, gördüğünüz gibi, üzerinde yine bir nokta alalım, x, y, z gibi. Yine uzaklık formülünü yazarsanız, x eksi a'nın karesi, y eksi b'nin karesi, z eksi c'nin karesi eşittir.
+
+98
+00:17:48,884 --> 00:18:04,544
+Hatta bir de bunun kare kökünde yazayım. Eşittir, R olmak zorundadır. Kısacası, ABC merkezli, R yarı çaplı bir kürenin denklemi de bu şekil yazılabilir sevgili arkadaşlar.
+
+99
+00:18:06,544 --> 00:18:25,024
+Herhangi bir bölgeyi tarif etmek için, tabii bu bilgileri neden veriyoruz? Artık çok değişkenli fonksiyonlara geçiyoruz. Tanım kümeleri hakkında konuştuğumuz zaman nereyi kastettiğimizi idrak etmek için bunu yapıyoruz. Hemen şuradan.
+
+100
+00:18:26,644 --> 00:18:44,483
+Mesela şöyle, mesela desek ki mesela şurada, işte x kare artı y kare küçüktür 4 ne demek mesela? Burada şu demektir, x kare artı y kare artı z kare küçüktür 2'nin karesi. Bu ne demek? Kürenin içi demek. Tamam mı?
+
+101
+00:18:54,644 --> 00:19:10,763
+dışını kastetmiş olurum. Eşit 4 dersem, kürenin yüzeyini kastetmiş olurum. Bir de z'lerimde küçük 0 olsun dersem, o zaman almış olduğum merkezi...
+
+102
+00:19:11,028 --> 00:19:19,748
+0, 0, 0 orjin merkezli iki yarı çaplı kürenin sadece alt yarısını ifade etmiş olurum.
+
+103
+00:19:19,848 --> 00:19:27,608
+Çünkü diyor ki, z'ler negatif, lütfen pozitif olmasın. Yani üst yarıyı alamazsın diyor bize.
+
+104
+00:19:28,148 --> 00:19:32,168
+Buraya kadar sorusu olan var mı? Sonra şurayı da özetleyeceğim geri.
+
+105
+00:19:34,168 --> 00:19:36,248
+Var mı buraya kadar anlamadığınız bir yer?
+
+106
+00:19:37,715 --> 00:19:48,355
+Tamam, ben zaten hani dikkatli olmanız gereken yerde aman dikkat edin, işte buradan şöyle şöyle böyle diyebiliyorsunuz, beni tanıyorsunuz artık.
+
+107
+00:19:49,015 --> 00:19:58,175
+Çünkü bir aydan fazla zamandır, haftada iki kere biliyorsunuz böyle bir ortak zaman geçiriyoruz.
+
+108
+00:19:58,175 --> 00:20:03,815
+Şimdi eğer size şöyle bir denklem verildiyse.
+
+109
+00:20:04,144 --> 00:20:14,184
+Ki bu verilen denklemi, bakın şunu, şöyle güzel bir vaziyette yazayım. Şurada bir boşluk bırakayım mesela. Niye böyle bir şey yapıyorum? Birazdan anlayacaksın.
+
+110
+00:20:14,184 --> 00:20:20,184
+X kare dedim. Bak şuradaki 3x'i bunun yanına aldım. Ondan sonra...
+
+111
+00:20:20,788 --> 00:20:30,388
+y kareyi aldım, sonra z kareyi aldım, eksi 4z'yi aldım, bir de eşittir, eksi 1 diye de bunu karşı tarafa attım.
+
+112
+00:20:30,468 --> 00:20:34,168
+Bakın, şurada yazdığım şey, şu formülün aynısı, hiçbir problem yok.
+
+113
+00:20:34,168 --> 00:20:42,587
+Ve burayı tam kare haline getirebilmek için 3 bölü 2'nin karesini her iki yana ekledim.
+
+114
+00:20:43,067 --> 00:20:47,347
+Burada da 2'nin karesini her iki yana ekledim.
+
+115
+00:20:48,788 --> 00:20:53,028
+Artık bu kısımlar tam kare haline gelmiş oldu.
+
+116
+00:20:58,579 --> 00:21:17,759
+Gördüğünüz gibi bu, bu şekilde. Burası da, şu 2'nin karesi z değildir. Çünkü ben z'lerle ikiler karışmasın diye z'nin beline kemer koyuyorum. Bunu matematik okurken,
+
+117
+00:21:19,188 --> 00:21:28,587
+Diferansiyel denklemler dersine aldığım zaman karar verdim. Çünkü orada bir sürü z dönüşümü yapıyorduk ve ikilerle z'leri hep karıştırıyordum.
+
+118
+00:21:28,587 --> 00:21:41,388
+Ve onun üzerine z'lerle ikiler karışmasın diye z'lerin beline kemer koymaya başladım. Bu durumda o zaman benim merkezim, eksi 3 bölü 2, 0, 2, yarı çapım ise,
+
+119
+00:21:42,195 --> 00:21:45,795
+21 bölü 4'ün kare kökü tarzındadır.
+
+120
+00:21:46,195 --> 00:21:48,235
+Evet, buraya kadar sorusu olan var mıdır?
+
+121
+00:21:48,955 --> 00:21:53,899
+Yani dediğim gibi, burada konuştuğumuz şeyler biraz artık, yani...
+
+122
+00:21:54,740 --> 00:22:22,740
+Temel şeyler olacak bu ilk FÖY'de ama birazdan skaler çarpım ve vektörer çarpımla ilgili çok önemli özellikler göreceğiz. Eğer bu özellikleri içselleştirirseniz bir diğer FÖY olan uzay analitik geometri hakkında konuşacağız. Yani işte uzayda doğru, uzayda düzlem. Buralarda çok rahat edersiniz. Sonra yarınki dersimizde inşallah, efendim söyleyeyim vektör değerler.
+
+123
+00:22:22,740 --> 00:22:37,299
+fonksiyonları konuştuğumuz zaman da burada da yine scalar çarpım, uzunluğunu bulmak, modülünü bulmak, bu gibi işlemler çok yapacağız. Buralarda rahat edersiniz sevgili gençler.
+
+124
+00:22:37,680 --> 00:22:42,079
+Buraya kadar sorusu olan var mıdır efendim? Sıkıntı yok herhalde burada.
+
+125
+00:22:43,028 --> 00:23:01,228
+Peki, burada yok. Neden eksi 3 bölü 2 dedim efendim? Neden eksi 3 bölü? Bakın x kare var. Bakınız 3x. Siz üniversiteye girerken bu soruların çok daha zorlarını yaptınız. Tam kare yapmak için efendim. [öğrenci] tamam mıdır yavrum?
+
+126
+00:23:09,619 --> 00:23:36,319
+Nerede eksi 3 bölü 2 dedim? Ay sildikten sonra söylediniz şimdi bak. Biraz daha çabuk soru sorun olur mu? Bakalım gelecek mi yazdıklarımız? Geldi. Ooo harika. Şurada niye eksi dediğimi sordunuz herhalde değil mi? Şunu mu soruyorsunuz [öğrenci]? Biraz. Heh güzel. Şimdi bakınız, bakınız. X eksi A'nın karesi.
+
+127
+00:23:36,723 --> 00:23:39,624
+Artı y eksi b'nin karesi
+
+128
+00:23:40,276 --> 00:23:55,776
+Z eksi C'nin karesi eşittir, R kare derseniz eğer merkeziniz A, B, C'dir. Burayı eksi yapmanız lazım ki merkeziniz hakkında konuşabilirsiniz. Aksi takdirde merkezi yanlış söylersiniz.
+
+129
+00:23:55,776 --> 00:24:08,276
+Bu arada [öğrenci]'in sorduğu soru çok manalı ve güzel bir soru. [öğrenci]'cim tam kare yapmak için olan kısmı sormamış. Ben de sizin gibi düşündüm önce ama o buradaki kısmı...
+
+130
+00:24:08,276 --> 00:24:16,576
+sormuş, fevkaladenin fevkinde bir dikkat. Maşallah. Evet. Tamam mı? [öğrenci]'ciğim tamam mıdır?
+
+131
+00:24:19,028 --> 00:24:36,768
+Güzel, biz teşekkür ederiz. Bakınız arkadaşınızın sorduğu soru çok güzel. Burada diyor ki, burası normalde x artı 3 bölü 2'nin karesi şeklinde yazılıyordu. Siz niye bu eksiği ayırdınız? Hani şey gibi, kırmızı başlıklı kızın masalında kurda soruyor ya, aynı onun gibi. Seni daha iyi görebilmek.
+
+132
+00:24:37,268 --> 00:24:47,948
+Aynı buradaki gibi bakın eksiyi ayırdık ki merkezi görebilelim diye. Tamam mıdır? Birisi mikrofonunu açtı. Konuşacaksa buyursun, konuşmayacaksa kapatsın.
+
+133
+00:24:49,668 --> 00:24:57,848
+Evet, sorusu olan var mıdır? Siliyorum efendim. Tamam mıdır? Sildim. Şimdi vektör faslına başlıyoruz.
+
+134
+00:24:59,827 --> 00:25:19,988
+Vektörler ve uzay geometrisi. Şimdi, mühendislik ilerlediği zaman, hocam mühendislik niye ilerledi, ne güzel oturuyorduk, Allah Allah, ne güzel oturuyorduk, bayılıyorsun bilgisayarda oturayım, vakit geçireyim, televizyon seyredeyim, aman elektrik yansın, hızlı hızlı arabalarlandır, çabuk çabuk gideyim, havalarda uçayım, denizlerde yüzeyim, hepimiz bayılıyoruz.
+
+135
+00:25:19,988 --> 00:25:27,827
+Bunlar mühendislik ilerlemese ne olacaktı? Olmayacaktı. O zaman ne olacak? Demek ki vektörler bir ihtiyaçtan...
+
+136
+00:25:27,827 --> 00:25:55,827
+Neden? İşte önce sayı kavramı, beşeriyet geliştikçe, işte ticaret başlamış, sayı kavramı, sonra sayma sayıları vs. derken, işte uçuklu buçuklu sayılar için virgüllü sayılar, işte onun yarısı, bunun üç katı, bunun beş katı, önce rasyonel sayılar, sonra real sayılar, sonra efendime söyleyeyim, bakıyorsunuz piramitler, bilmem neler biliyorsunuz, işte hipotenüs, işte Nil Nehri taştığı zamanki alanların hesabı vs. derken real sayıları.
+
+137
+00:25:55,827 --> 00:26:23,827
+Reel sayılar. Sonra real sayılar falan, efendime söyleyeyim, daha da gelişiyor. Mühendislik o ara, işte şu buhar türbününü yapayım, onu yapayım, bunu yapayım derken, hızdır, ivmedir, kuvvettir, yer çekimidir. Değil mi? Bunlar devreye giriyor. Çünkü neden? Mekanik, dinamik, hidrodinamik vesaire gibi ifadelerle konuşabilmeniz için, kısacası vektörleri kullanmanız lazım. Çünkü sayılar kifayetsiz.
+
+138
+00:26:23,827 --> 00:26:44,367
+Hız gibi, inme gibi, kuvvet gibi, büyüklükler, büyüklüklerinin yanında bir de yön bildirmek zorundadır. Her defasında parmağınla aha da o yöne doğru giden bir hareketli, yer çekimi böyle oldu ama rüzgar estiği zaman hareketli de hafif şöyle mesine mi gitti yasın yani.
+
+139
+00:26:44,367 --> 00:26:51,367
+Dolayısıyla bu vektörleri ifade etme zorunluluğu duyulmuş. Sonra vektörleri...
+
+140
+00:26:51,827 --> 00:26:57,927
+Birbirleri cinsinden yazabilmek için bir bas takımı icat edilmek zorunda kalınmış.
+
+141
+00:26:58,288 --> 00:27:02,627
+İ, J, K vektörlerini hiç duymamış arkadaşımız var mı aramızda?
+
+142
+00:27:03,288 --> 00:27:12,248
+İ ve J vektörleri öncelikle x, y ekseni üzerinde yatan birim vektörlerdir bunlar.
+
+143
+00:27:12,248 --> 00:27:13,887
+İ vektörü.
+
+144
+00:27:15,284 --> 00:27:20,264
+Ve bunun uzunluğu şöyle mutlak değer gibi gösteriliyor bir birim.
+
+145
+00:27:20,983 --> 00:27:22,044
+J'nin de uzunluğu.
+
+146
+00:27:22,384 --> 00:27:28,824
+Bir birim. X ile Y birbirine dik olduğu için bu iki vektör de birbirine diktir sevgili arkadaşlar.
+
+147
+00:27:29,544 --> 00:27:44,943
+Sonra siz eğer 3 boyutlu uzayda işlem yapacak olursanız, bir de bunların gardişleri var Z diye, o geliyor, pardon Z diyorum, Z üzerinde yatan K diye, K da var, K da geliyor, diyor ki beni de alın, beni de alın diyor.
+
+148
+00:27:50,420 --> 00:27:52,420
+Kala, zi,
+
+149
+00:27:52,784 --> 00:27:58,344
+Yani 3'ü birbirine ikişerli olarak dik sevgili arkadaşlar.
+
+150
+00:27:58,864 --> 00:28:00,824
+Bu vektörler bizim ne işimize yarıyor?
+
+151
+00:28:01,204 --> 00:28:06,284
+Bu vektörler, tüm vektörleri, bu vektörler gillerden yazmaya yarıyor.
+
+152
+00:28:06,764 --> 00:28:11,744
+Peki bütün vektörleri, bu vektörler gillerden yazmak benim ne işime yarıyor?
+
+153
+00:28:11,744 --> 00:28:20,784
+Böylelikle vektörleri toplayabiliyorum, vektörleri çarpabiliyorum, vektörleri boyunu büyütebiliyorum, boyunu kısabiliyorum.
+
+154
+00:28:20,784 --> 00:28:32,284
+Kıksaltabiliyorum. Dolayısıyla IGK cinsinden yazdığım zaman birbirlerinle işleme sokabiliyorum. Böylelikle de işlem yaptığım zaman da, efendime söyleyeyim.
+
+155
+00:28:32,852 --> 00:28:45,512
+Mühendislikte, fizikte, efendime söyleyeyim bunların hareketlerini matematik modelleyebiliyorum ve formül geliştirip yenilikler yapabiliyorum. Çok önemli.
+
+156
+00:28:46,132 --> 00:28:49,292
+Peki, herhangi, buraya kadar anlamadığınız bir şey var mı?
+
+157
+00:28:52,339 --> 00:28:59,619
+Lütfen birikmeden ve sayfa dönmeden ve de sayfa silinmeden sorunuzu sorunuz efendim.
+
+158
+00:28:59,619 --> 00:29:04,619
+Şimdi diyelim ki bizim AB vektöründen bahsediyorsunuz.
+
+159
+00:29:05,059 --> 00:29:16,519
+A noktasında başlamış, B noktasında bitmiş, A'nın koordinatları A1, A2, B'nin koordinatları B1, B2 ile gösteriliyorsa,
+
+160
+00:29:20,339 --> 00:29:27,339
+Bu noktasının koordinatlarını başlangıç noktasından çıkarmak suretiyle bunları i ve j olarak yazıyorsunuz.
+
+161
+00:29:28,319 --> 00:29:38,599
+Eğer söz konusu olan noktalar 3 boyutta ise, absisleri farkını i ile, ordinatları farkını j ile.
+
+162
+00:29:38,960 --> 00:29:59,960
+Koordinatları farkını k ile çarpmak üzere topluyorsunuz ve böylelikle bu vektörü ifade etmiş oluyorsunuz. Eğer bu vektörün sadece uzunluğu ne kadar diye merak ediyorsanız o zaman da yapmanız gereken bunların bileşenlerinin karelerini...
+
+163
+00:30:00,000 --> 00:30:12,799
+alıp, toplayıp, karı kökün içerisine yazmak. Peki, o doğrultudaki minnoş vektörü bulmak ise, hocam minnoş vektör derken neyi kast ettiniz anlayamadım.
+
+164
+00:30:13,019 --> 00:30:25,420
+Şimdi bu uzun boylu bir vektör. Mesela işte 10 birim, 15 birim veya 3 birim, 4 birim boyu var. Sen bu doğrultuda olan ama boyu bir birim olan bir vektörü arıyorsan, biz buna birim vektör diyoruz.
+
+165
+00:30:28,000 --> 00:30:55,140
+bilmek için ki her doğrultuda birim vektörü bulunabilir. Mesela atıyorum şöyle kocaman bir vektörün var. Bu doğrultudaki birim vektörü de pekala bulabilirsin. Ne yapman lazım? Bu vektörün kendisini uzunluğuna bölersin ve bu doğrultudaki minik birim vektörü bulmuş olursun. Buraya kadar sorusu olan var mıdır?
+
+166
+00:30:59,443 --> 00:31:05,183
+Tamam mıyız? Peki efendim. Bir sonraki sayfamıza geçelim.
+
+167
+00:31:06,003 --> 00:31:14,103
+Skalar çarpan, 2 vektörü toplamayı biliyorsunuz herhalde. Var mı burada? Dur şunu da yazayım da çünkü linear c1 almadık diyenler var, onun için korktum.
+
+168
+00:31:14,643 --> 00:31:25,623
+Mesela diyelim ki sizin bir a vektörü diye bir vektörünüz var. Atıyorum mesela 3i artı 4i artı k. Mesela b vektörü diye de bir vektörünüz olsun.
+
+169
+00:31:25,623 --> 00:31:33,583
+i eksi j artı 2k olsun mesela. a artı b'yi yazamayan var mı? İçinizde.
+
+170
+00:31:34,932 --> 00:31:43,612
+Ne yapacağız? İleri topluyoruz. 4i artı 3i artı 3k. Mesela a eksi b'yi yazamayan var mı?
+
+171
+00:31:44,051 --> 00:32:01,412
+Mesela çıkartıyorsunuz. 2'yi, sonra 5'yi, sonra eksika. Tamam mı? 2 A'yı yazamayan var mı aranızda? Şu anda yazamayan var mı derken, yazamayacak arkadaşları da bu işlemlerin nasıl yapıldığını gösteriyor.
+
+172
+00:32:12,051 --> 00:32:25,991
+Birim vektörü ben bulamam diyen var mı? Mesela 3 bölü, burası kaç oldu? 6. Ay yoruldum. Burası kaç oldu? 9. Burası kaç oldu? 16 mı?
+
+173
+00:32:26,400 --> 00:32:50,380
+16, bir daha koyarsın. Kaç? 26 mı oldu? Kök 26. İ, evet, artı 4 bölü kök 26. J, efendime söyleyeyim, 1 bölü kök 26. K olmak üzere A'yı uzunluğuna bölmek suretiyle A doğrultusundaki minik vektörü de aynen bu şekil bulabiliriz.
+
+174
+00:32:50,380 --> 00:32:53,900
+Buraya kadar sıkıntısı olan var mı?
+
+175
+00:32:57,652 --> 00:33:10,672
+Evet, tahtayı temizliyorum. Köprüden önce son çıkış. Sıkıntısı olan bu konuyla ilgili var mı? Yok diyorsunuz. Peki efendim, ben de sildim.
+
+176
+00:33:11,251 --> 00:33:14,591
+Ve skaler çarpım konusuna geçtim.
+
+177
+00:33:15,331 --> 00:33:23,271
+İki vektörün skaler ve vektörel çarpımı için temelde bilmemiz gereken çok önemli bir özellik var.
+
+178
+00:33:23,271 --> 00:33:36,651
+Eğer benim bir vektörüm A1i, A2j, A3k olarak baz vektörleri cinsinden verilmişse, B vektörüm de B1i, B2j,
+
+179
+00:33:37,268 --> 00:33:45,168
+B3K olarak verilmişse, A ile B'nin skaler çarpımı dediğim şey, bunların karşılıklı olarak...
+
+180
+00:33:45,167 --> 00:34:06,087
+çarpılıp toplanmasıdır. O zaman iyikalar aradan çekilir. Sadece sonuç bir sayı olarak bulunur. Bunu bilmeyen var mı? Varsa şu andan sonra ben artık bilmiyorum deme şansı kalmadı sevgili arkadaşlar.
+
+181
+00:34:06,087 --> 00:34:12,087
+Şimdi yine A ile B'nin arasındaki açının kosünüsü bana sorulursa,
+
+182
+00:34:12,788 --> 00:34:39,507
+Kosünüs, şöyle yazalım hatta, şunu şey yapalım, A çarpı B, A'nın uzunluğu, B'nin uzunluğu, aralarındaki açının kosünüsü olduğu için, A ile B'nin arasındaki açıyı ben bulmak istiyorsam şayet, A ile B'yi çarptığım bu ifade, yani şuradaki şu sayıyı, mesela ne diyelim buna, bu bir sayı.
+
+183
+00:34:40,148 --> 00:34:42,748
+Şurası, şu sayı yerine koyacaksın.
+
+184
+00:34:43,427 --> 00:34:45,608
+A'nın uzunluğunu hesap edeceksin.
+
+185
+00:34:46,208 --> 00:34:49,228
+Ben bilmiyorum, bilmeyen var mı dedim.
+
+186
+00:34:49,307 --> 00:34:50,188
+Hiç gıgın çıkmadı.
+
+187
+00:34:50,728 --> 00:34:54,088
+A1'in karesi, A2'nin karesi, A3'ün karesi.
+
+188
+00:34:54,528 --> 00:35:00,948
+Bunun için konuşursam, B1'in karesi, B2'nin karesi, B3'ün karesi şeklinde yazabilirsin.
+
+189
+00:35:01,427 --> 00:35:05,228
+Demek ki bunu bu şekil söyleyebiliyormuşuz.
+
+190
+00:35:08,148 --> 00:35:25,148
+Temelde bilmemiz gereken bilgi, en böyle yani en temel bilgi, hani böyle mesela ne bileyim şu an bölmeyi konuşuyoruz da çarpım tablosunu bilmeyen var mı diyorum gibi düşün yani. O kadar bir konu. Mesela bunu çünkü...
+
+191
+00:35:25,780 --> 00:35:53,780
+Soruların alt işlemlerini bulmak durumunda kalacağız. Yani kosünüsü bulabilmek için işte iki tane vektör var. O doğrultuda işte bu vektörlerin arasındaki açı bize sorulabilecek. Direkt olarak böyle verip de pıt diye bana açıyı sormaz ama işte diyecek ki şu düzlemin bilmem nesinin ne öbürküsünün tt'nin hız vektörünü şöyle geçtiği zaman şöyle olursa böyle oradan elde ettiğim vektörün burada elde ettiğim vektörle arasındaki açının kosünüsü aşağıdakilerden hangisidir falan gibi orada bir ton.
+
+192
+00:35:53,780 --> 00:36:08,900
+Burada bir ton işlem yapacaksın, iki tane vektör bulacaksın ve kosünüs tetanın bu formülünde yerine koymak zorunda kalacaksın. Burada sıkıntısı olan var mı? Tamam mı? Peki yok diyorsunuz. Peki geometrik olarak?
+
+193
+00:36:09,376 --> 00:36:19,275
+Skaler çarpım ne manaya gelir? Bunu konuşalım. Şimdi diyelim ki sizin burada bir B vektörünüz var, bir de burada A vektörünüz var.
+
+194
+00:36:19,615 --> 00:36:33,996
+Hocam arasındaki açının da tete olduğunu ben anladım. Formülü de siz bize verdiniz zaten. A ile B'nin skaler çarpımı, A'nın uzunluğu, B'nin uzunluğu, bunların arasındaki açının kosünüsü olarak yazılabiliyor.
+
+195
+00:36:37,376 --> 00:36:46,115
+Bu sarı uzunluktan başka bir şey değildir. Çünkü bu vektörün, bu vektör üzerindeki iz-düşüm uzunluğu dediğiniz bu bir uzunluktur.
+
+196
+00:36:46,215 --> 00:36:54,795
+Mesela bu uzunluğun L1 uzunluğu diyelim. Bu L1 uzunluğu olsun. Diğeri ise, yani A'nın uzunluğu dediğiniz uzunluk ise,
+
+197
+00:36:56,563 --> 00:37:02,784
+Gördüğünüz gibi şu uzunluktur, değil mi? Bu da zaten komple A'nın uzunluğuna eşittir.
+
+198
+00:37:03,103 --> 00:37:08,284
+O zaman, skaler çarpımın geometrik manası hakkında ne söyleyebiliriz?
+
+199
+00:37:08,583 --> 00:37:16,364
+Bir vektörün uzunluğuyla mavi uzunluk, diğer vektörün bu vektör üzerindeki iz-düşüm uzunluğunun çarpımıdır.
+
+200
+00:37:16,463 --> 00:37:23,903
+Yani sarı uzunluk. Mavi uzunlukla sarı uzunluğun çarpımı A ile B'nin çarpımına eşittir.
+
+201
+00:37:24,563 --> 00:37:30,364
+Peki bize sınavda iz düşüm uzunluklarınla ilgili soru sorulabilir mi?
+
+202
+00:37:30,364 --> 00:37:40,364
+Şimdi siz normalde Linerce bir dersi görmüyor musunuz? Yoksa yani bölümünüze mi tanımlı değil yoksa seneye falan mı göreceksiniz?
+
+203
+00:37:41,268 --> 00:37:43,268
+Kimya, Liner, görmüyor musunuz?
+
+204
+00:37:43,268 --> 00:37:43,868
+Görmüyor musunuz?
+
+205
+00:37:44,028 --> 00:37:48,468
+Tamam, görmüyorsunuz. O zaman demek ki çok da derine şey yapmaya gerek yok.
+
+206
+00:37:48,868 --> 00:37:52,428
+Ben çünkü, bu dönem Linerce bir alanınız var mı aranızda?
+
+207
+00:37:55,968 --> 00:37:56,548
+Şu an...
+
+208
+00:37:56,548 --> 00:37:57,188
+Ben de varım hocam.
+
+209
+00:37:57,556 --> 00:38:09,436
+Siz varsınız. Tamam, bu konuya dikkatle seyredin, dinleyin. Özellikle karma çarpım konusuna gelince, vektörel çarpım konusuna gelince çözdüğümüz problemler size teste sınav sorusu olarak gelebilir.
+
+210
+00:38:10,476 --> 00:38:19,556
+Henüz daha vektörler konusuna başlamamışsınız. Başlayınca bunların bu şekilde anlatıldığını göreceksiniz ve bununla ilgili olan sorular da size gelebilir.
+
+211
+00:38:19,916 --> 00:38:20,996
+Bize de gelebilir mi?
+
+212
+00:38:21,780 --> 00:38:29,780
+Valla bize de gelebilir ama bizde o kadar çok konu var ki arkadaşlar, bunlara kalana kadar bizim buradaki...
+
+213
+00:38:30,164 --> 00:38:41,864
+Yani amacımız, Matikin'in diğer sorularında ihtiyacımız olan, skaler çarpım ve vektörel çarpım eksikliklerini gidermek için.
+
+214
+00:38:41,864 --> 00:38:54,184
+Yani kalkıp da bize burada bu şekil bir soru sorulmaz ama mesela Linerce bir gören bir arkadaşa denilebilir ki, işte mesela işte B vektörünün A vektörü üzerindeki izdüşüm uzunluğunu bul.
+
+215
+00:38:54,423 --> 00:38:58,164
+Bak buraya yazmışım. İzdüşüm uzunluğunun formülü bu. Bu formülü.
+
+216
+00:38:58,164 --> 00:39:26,124
+ile hesap edebilirsin. Sıkıntı yok. Mesela demişim ki, peki bu uzunluğu vektör olarak gösterirsen, bu vektörü nasıl yazarsın? Formülü var. Bak mesela buradan yazabilirsin. Hiçbir problem yok. Yine mesela, eğer A'yı B'nin üzerine iz düşürürsen, e hocam ama ufak tefek bu daha büyük, hiç fark etmez. Bak bu sefer L2 uzunluğu olarak bu uzunluk kastediliyor. Efendime söyleyeyim, buradan yine aynı vaziyette L2'yi bu vaziyet yazabilir.
+
+217
+00:39:26,164 --> 00:39:39,052
+Ve buradan çıkartabileceğin en önemli sonuç ne biliyor musun? Bir vektörün diğer vektör üzerindeki iz düşüm uzunluğu bulunurken kim kimin üstüne düşüyorsa, yani bir tanesi öbürünün...
+
+218
+00:39:39,059 --> 00:39:50,159
+Üstüne düşüyor böyle pat diye. Çocukken birbirimize böyle atardık ki, koşup koşup uzun eşek mi oynanıyordu öyle? Değil mi? Öyle bir şey. Birbirinin üstüne atlıyorsun.
+
+219
+00:39:50,159 --> 00:40:03,219
+Evet, hani böyle pat diye. Ondan sonra da en alttaki bir yıkılıverir. Haydi, tangır tungur herkes onun üstüne yuvarlanır. Hatta da o zaman da bazen altta kalanın canı çıksın diye. Hatırladınız mı oyunu? Hatırladınız mı?
+
+220
+00:40:03,759 --> 00:40:06,639
+Şimdi burada, efendime söyleyeyim.
+
+221
+00:40:07,284 --> 00:40:35,284
+İz düşümü alırken, bir vektör diğerinin üstüne düşüyor, öbürki eziliyor gibi düşün. Kim kimin üzerine iz düşüyorsa, altta kalan vektörün birim olması lazım. Hocam birim değil, o zaman birim yap evladım. Nasıl yapacağım hocam ben birim? Sana birim vektörü yapmayı öğrettim. Ne zaman öğrettiniz? Ben görmedim. Nasıl görmedin? A vektörünü uzunluğuna bölersem, o doğrultudaki minnoş vektörü hatta minnoş vektörü...
+
+222
+00:40:35,284 --> 00:40:58,164
+Minnoş dedim bak aklında kalsın. Eee hatırladım. Evet minnoş vektörü dedim bulursun demedim mi? Demek ki B'nin A üzerindeki izdüşümü bulunurken eğer bak B vektörünü A vektörü üzerine izdüşüm uzunluğunu bulmak istiyorsan sen mesela L1 bu altta kalan kim oluyor? A. O zaman L1 uzunluğu için ne söyleyeceksin?
+
+223
+00:40:58,835 --> 00:41:07,655
+A ile B'yi, scalar olarak çarparım, altta kalan A olduğu için A'nın uzunluğuna bölerim. Formül budur. Eğer L2'den bahsediyorsanız,
+
+224
+00:41:10,068 --> 00:41:37,508
+Bu sefer kim kimin üzerine iz düşüyor? A, B'nin üzerine iz düşüyor. Altta kalan kim? A hocam. Hayır, bu onun üstüne iz düşüyor. Onun sadece evi yukarıdaki tepeliğin üstünde. Bu bunun üstüne iz düşüyor. Yani altta kalan B oluyor. Eğer bu L2 uzunluğundan bahsediyorsanız, L2 uzunluğu da A ile B'nin, skaler çarpımının bu sefer B'nin uzunluğuna bölünmesi suretiyle bulunacak.
+
+225
+00:41:38,068 --> 00:41:44,908
+Bunu bu şekil aklınızda tutabilirsiniz. Tüm bilgiler burada yazıyor. Sorusu olan var mı efendim?
+
+226
+00:41:47,603 --> 00:41:59,203
+Evet, bu dönem linerce bir alanlar buraya çok daha dikkatli bir şekilde baksın. Özellikle vektörel çarpımla ilgili size türlü şekilde sorular sorulabilir.
+
+227
+00:41:59,343 --> 00:42:00,743
+E bize sorulmayacak mı?
+
+228
+00:42:00,743 --> 00:42:15,103
+Size de sorulacak. Size de sorulacak ama size vektör olarak sormaktan ziyade doğru ve düzlem sorularına evirerek aynı soruyu sorarlar. Onlara doğru ve düzlem olmaksızın direkt sorarlar.
+
+229
+00:42:15,603 --> 00:42:24,283
+Bizde onu maskeleyip sorarlar. Ama aynı sorudur. Onun için tabii ki sen de dinle. Biz bunu buraya boşuna mı anlatıyoruz?
+
+230
+00:42:25,423 --> 00:42:34,703
+Şimdi bir sonraki sayfamıza geçelim. Bu sayfamızda ne diyor? Şimdi buna bakalım. 2 vektör dikse, skaler çarpımları sıfırdır.
+
+231
+00:42:35,483 --> 00:42:36,223
+Neden hocam?
+
+232
+00:42:36,628 --> 00:42:55,148
+Çünkü şundan, formülümüz neydi hatırlarsan eğer, A ile B'nin skaler çarpımı, A'nın uzunluğu, B'nin uzunluğu, aralarındaki açının kosünüsü değil miydi? Kosünüsüydü. Kosünüs 90 olursa 0 olur. Bundan dolayı 2 vektör dikse skaler çarpımı 0'dır.
+
+233
+00:42:55,148 --> 00:43:04,407
+Bunu özellikle uzay analitik geometride, yani birazdan göreceğimiz geometride göreceğiz arkadaşlar. Çok çok önemli.
+
+234
+00:43:04,628 --> 00:43:17,907
+Yine birim vektörlerin birbirlerine skaler çarpımları faslına gelirsek, o zaman bunlar dik olduklarına göre birbirlerine çapraz çarpımları, yani farklı i ile j, j ile k, k ile i, bunların çarpımları sıfırdır.
+
+235
+00:43:17,907 --> 00:43:26,068
+i ile i, j ile j, k ile k ise bunun uzunluğu, bunun uzunluğu aralarındaki açının sıfırı, kosünüs sıfırı, bir olduğu için sonuç biri verir.
+
+236
+00:43:26,467 --> 00:43:32,628
+Bundan mütevellit, bakın dersin ilk başında yaptığım gibi bunları skaler olarak çarparsanız, i ile i ile k ise,
+
+237
+00:43:32,628 --> 00:43:43,487
+C'nin çarpımından bir, J ile C'nin çarpımından bir, K ile K'nın çarpımından bir olduğu için, baş kat sayıları çarpılır, aralara artı gelir, çapraz çarpımları olmadığı içinse gelmez.
+
+238
+00:43:43,927 --> 00:43:52,248
+Bu sebepten dolayı A ile B'yi istersen çarp, istersen de B ile A'yı çarp, gene aynı sonuca eşittir.
+
+239
+00:43:52,596 --> 00:44:14,855
+Sıfırla A'yı çarptığın zaman sıfır yutan eleman olduğu için bu sıfıra da eşit de yazılabilir. Sıfır vektör diye de yazılabilir. Hiç problem değil. Eğer A vektörünü kendisine çarparsanız bu sefer A ile A'nın çarpımı kendisinin uzunluğunun karesine eşittir ki biz buna skaler kare adını vereceğiz.
+
+240
+00:44:15,411 --> 00:44:34,391
+Bazen işimiz düşebiliyor bu formüle. Bu gördüğünüz gibi çocukluğumuzdan beri peşimizi bırakmayan dağılma özelliği arkadaşlar. Peşimizi bırakmıyor. Bu da lambda ile çarpma özel. İster lambda'yı dışarıda bırak, ister lambda'yı B'ye ver. Böyle lambda hopadak hopadak o tarafa bu tarafa hareket ediyor.
+
+241
+00:44:36,724 --> 00:45:02,003
+Hemen bu bilgilerin ışığında, benim demin size anlattığım bilgim, işte u vektörü var, v vektörü var, u ile v'nin arasındaki açı. Aman çok kolay Allah aşkına. Şununla şunu çarpacaksın. 1 çarpı 6, eksi 2 çarpı kaç? 3. Sonra eksi 2 çarpı 2. Dolayısıyla burası a çarpı b.
+
+242
+00:45:02,400 --> 00:45:06,059
+A çarpı B değil, U çarpı B'miş. Yanlış yazdık. Dur.
+
+243
+00:45:06,708 --> 00:45:34,708
+U çarpı V'yi oluşturuverdim. Evet, U'nun uzunluğu, U'nun uzunluğunu yazıyorum. Nerede U'nun uzunluğu? Şu, birin karesi, eksi ikinin karesi, artı eksi ikinin karesi. Bu U'nun uzunluğu oldu. Evet. Sonra çarpı V'nin uzunluğunu yazayım. V'nin uzunluğunu da yanına yazıyorum. Şu, altının karesi, üçün karesi, ikinin karesi çarpı, kosteta yazıyorum.
+
+244
+00:45:34,708 --> 00:45:51,327
+yazdığımda artık cos theta'yı buradan çekmek çok çok basit. Gördüğünüz gibi böyle. Peki hocam, cos theta eksi 4 bölü 21 olursa benim bundan anlayacağım şey sizce ne olmalı? Niye pozitif çıkmadı da negatif çıktı?
+
+245
+00:45:52,244 --> 00:46:19,504
+Çocuğum, o zaman bununla bunun arasındaki açı geniş açıymış demek ki Teta. Dolayısıyla da bu mesela atıyorum U ile V'nin, skaler çarpımı negatif çıkmasının sebebi işte şuradaki şu hikaye. Yani bu tarafa doğru düşüyor bu. Onun için bu şekil düşünebilirsin. Hani izdüşüm de negatif çıkarsa bunu böyle anlayacağız biz. Anlatabildim mi demek istediğimi?
+
+246
+00:46:20,724 --> 00:46:33,584
+Çünkü açı genişse, yani kosünüs teta, eğer teta 90 dereceden büyükse, 180 dereceye kadar tabii ki, bu negatif bir değer oluyor zaten.
+
+247
+00:46:34,604 --> 00:46:42,004
+Biliyorsunuz bunu. Anladık mı? Evet, yani çok önemli değil ama ben yine söylemek istedim.
+
+248
+00:46:42,004 --> 00:46:47,884
+Burada diyor ki V'nin U üzerindeki iz düşümü, formülü size söylemiştim ve...
+
+249
+00:46:48,244 --> 00:47:00,344
+U'nun üzerine iz düşüyor. Altta kalan kimdir kardeşim? U'dur. Demek ki U ile V'yi çarptıktan sonra U'nun uzunluğuna böleceksin formül gereği.
+
+250
+00:47:00,664 --> 00:47:09,563
+U ile V'yi çarpmıştım zaten. Bak burada eksi 4 bölü 21 yukarıya yaz. U'nun uzunluğunu da bulmuştum. 3'müş onu da yaz.
+
+251
+00:47:09,563 --> 00:47:15,684
+Uzunluk hiçbir zaman negatif olmayacağı için mutlak değeri de koy ama niçin negatif çıktı?
+
+252
+00:47:16,244 --> 00:47:44,244
+Dersen, sebep, açı geniş olduğu için bu kısma düşmedi, bu kısma düştü uzunluk. Onun için negatif çıktı, bunu da bil. Anlaştık mı? Tamam mı, Taylor? Peki bu doğrultudaki vektörü bul diyorsa bana ne yapmam lazım? Bunun da formülü bir evvelki sayfada vermiştim. O zaman şu vektör, minnoş vektörü bulmam lazım. Hangi minnoş vektörü bulacağım?
+
+253
+00:47:44,244 --> 00:48:01,923
+U'nun doğrultusundaki minnoş vektörü bulmam lazım. Bu minnoş vektör U doğrultusunda olduğu için bu şekildir ve bu L ile çarparak sen bu doğrultudaki vektörü bulmuş olursun sevgili genç arkadaşım.
+
+254
+00:48:02,344 --> 00:48:07,224
+Sorusu olan var mıdır buraya kadar? Şimdi vektörel çarpıma kadar geldik.
+
+255
+00:48:13,523 --> 00:48:26,344
+Var mı sıkıntı, problem? İlla ki problem hayatımızda var. Başta korona yani, değil mi? İnsanoğlu derdi biter mi? Karnın ağrır, başın ağrır, dişin ağrır.
+
+256
+00:48:26,688 --> 00:48:51,047
+Canı sıkılır. Olabilir yani. Ama dersle ilgili sıkıntısı olan var mı diyorum. Değil mi? Başka sıkıntı. Sıkıntı olmaz olabilir. 2 yaşında çocuğun bile sıkıntısı var. İstemediği şeyi annesi yediriyor. Erkenden yatırıyor. Oyuncağına elinden kardeşi çekiyor. Bak, herkesin derdi var. 2 yaşındaki çocuğun bile derdi var. Evet, peki efendim. Devam ediyoruz o zaman.
+
+257
+00:48:55,860 --> 00:48:56,380
+Şimdi
+
+258
+00:48:57,300 --> 00:49:14,880
+Bir sonraki sayfamıza gelelim. Ooo vektörel çarpım. Şimdi bu çok önemli bir mevzu. Vektörel çarpım kısmını iyi öğreneceğiz. Şu kısmı çok iyi öğreneceğiz. Burada sıkıntısı olan çok arkadaşım var. Ben biliyorum. Bunun üzerine çok fazla duracağım. Burada sıkıntı yok.
+
+259
+00:49:15,440 --> 00:49:19,960
+Öncelikle şunu bilmemiz lazım. Vektörel çarpım ne manaya gelir?
+
+260
+00:49:25,300 --> 00:49:31,820
+Kusur kalsın, anacığım manasını bilmezsen, şimdi birazdan uzay geometri yapmaya başlayacağız.
+
+261
+00:49:31,980 --> 00:49:38,360
+Orada diyecek ki, mesela işte yok üçgenin alanı, yok işte efendim, mesela bulunan düzleme, dik vektör bul.
+
+262
+00:49:38,360 --> 00:49:44,800
+Sen bunların manalarını bilmezsen, ne zaman skaler çarpacaksın, ne zaman vektörel çarpacaksın bilemezsin ki.
+
+263
+00:49:45,220 --> 00:49:52,159
+Mesela senin demin öğrendiğin şeyde, en önemli bilgi 2 vektör dikse, skaler çarpımları sıfırdır.
+
+264
+00:49:53,300 --> 00:50:16,380
+düzlemin denklemini bulurken, skaler çarpım kullanman gerektiğini buradan içselleştireceksin sen. Yani bu böyle langır lungur, soru ezberleyerek olabilecek bir şey değil. Maalesef değil. O zaman vektörel çarpımın da bir geometrik manası var. Bunun hakkında konuşmalıyız. Öncelikle iki vektörü vektör olarak çarparsan sonuç bir vektör olur. Bak.
+
+265
+00:50:16,947 --> 00:50:43,927
+Ve bu vektör şöyledir. Bak uzun etmeyin. Tamam mı? Dikkat etmen gereken yerleri söylüyorum sana. Bak, bu A vektör, öndeki A vektör, bu da B vektör. Bu da aralarındaki açının kosünüsü. Tamam mı? Bunu böyle bir kitabın üzerine koydum gibi düşün. Mesela böyle bir tepsi düşün, tepsi. Tepsinin üzerine ya da masa düşün, masa. Masanın üzerinde bu böyle yatıyor. Tamam mı? Güneşleniyor bu.
+
+266
+00:50:44,724 --> 00:50:50,264
+Tamam, yaz gelmiş, bunlar böyle güneşleniyorlar, D vitamini depoluyorlar yan yana iki kardeş.
+
+267
+00:50:50,784 --> 00:51:02,324
+Şimdi bak, eğer sen, eğer sen, A ile B'yi vektör olarak çarpıyorsan, size ben bir şey söylemiştim, çok hoşunuza gitmiştim.
+
+268
+00:51:02,423 --> 00:51:10,083
+Matematikte ve fizikte dedim, pozitif yön, saat yönünün tersi dedim. Saat böyle dönüyor biliyorsunuz. Saat böyle dönüyor.
+
+269
+00:51:11,027 --> 00:51:21,967
+Saat yönünün tersi bu yön. Bu yön ters. Demek ki A ile B'yi çarptığım zaman saat yönünün tersi olduğu için pozitif yön. Güzel.
+
+270
+00:51:22,607 --> 00:51:32,907
+Şimdi bu pozitif yönse bu düzleme dik bir vektör elde edersin. Bu vektör A vektörel çarpım B vektörüdür.
+
+271
+00:51:34,247 --> 00:51:37,587
+Hocam bir daha söyler misiniz? Bak bunu çok iyi öğren.
+
+272
+00:51:38,164 --> 00:51:50,224
+Eğer sen saat yönünün tersine A ile B'yi vektör olarak çarparsan, bu bir düzlemin içindeyse bu düzleme dik bir vektör elde edersin.
+
+273
+00:51:50,584 --> 00:51:56,003
+Ve bu vektör bunların saat yönünün tersine dönüyorsa pozitif yöndedir.
+
+274
+00:51:56,003 --> 00:52:04,923
+Eğer negatif yönde çarptıysan şayet, mesela şöyle çarptıysan, yani demem şu.
+
+275
+00:52:05,876 --> 00:52:19,836
+B ile A'yı vektör olarak çarptıysan, aynı miktar uzunluklu negatif yöndedir. Anladınız mı şimdi? Anlayanlar bir tuşa bassın. Yavaş yavaş, acele etmeye gerek yok.
+
+276
+00:52:19,836 --> 00:52:24,416
+Şimdi, hocam, söyle bakayım. Hocam.
+
+277
+00:52:25,108 --> 00:52:51,668
+Hocam, tamam hocam hocam diyorsun, söyle nedir? Şimdi iki tane vektör var, evet. İki vektörü ben vektör olarak çarptım. Tamam çarptın. Bunların bulundukları düzleme dik bir vektör elde ettim. Tamam anlamışsın, güzel. Eğer saat yönünün tersine dönüyorsam yukarı doğru, saat yönünde çarpıyorsam da aşağı doğru olacak. Onu da anladım ben. Tamam, güzel. Demek ki bunlar birbirlerine eşit değil.
+
+278
+00:52:52,063 --> 00:53:09,943
+E tabii değil. Yani bunların aralarında şöyle bağıntı var diyebilir miyim ben buradan? Yaz bakayım. Diyebilir misin, diyemez misin? Konuşalım. Hani bu onun zıt yönünde ya böyle hani ters istikametti diye böyle yazabilir miyim? Yazabilirsin. Çok güzel anlamışsın. Bravo.
+
+279
+00:53:10,351 --> 00:53:28,451
+Ama hocam sorun bu değildi. O zaman onu niye söylüyorsun? Olsun ben yine onu da söylemek istedim. Tamam söyle bakayım sorun ne? Hocam, adımı mı ezberliyorsun? Söyle evet. Hocam şimdi biz bunu bulduk ya, bunun uzunluğu ne kadar ya? Benim kafam karıştı. Bunun uzunluğu ne kadar olacak?
+
+280
+00:53:28,947 --> 00:53:49,927
+He bak çok güzel soru sordun ha. Bu vektörün uzunluğu ne kadar olacak? Çünkü ortada bir vektör var. Vektörün yönünü söyledik de bunun boyu posu ne kadar olacak? Bunun boyu posu bunların üzerine kurulmuş olan paralel kenarın alanına eşittir. Ne?
+
+281
+00:53:51,251 --> 00:54:12,692
+Bunları böyle paralel kenara birleştirdiğini düşün. Burada bir alan meydana gelmiyor mu? Geliyor. Mesela bu 5 birim uzunluklu ya. 5 birim kare ama. 5 birim kare buranın alanı. Hocam alan karedir. Evet tamam. 5 birim kare. Bunun da boyu 5 birim.
+
+282
+00:54:13,235 --> 00:54:27,695
+Ama hocam çok saçma değil mi? Bu alan, bu da uzunluk, ne kadar saçma ya, bu benim gara, bu da, bu da, çok saçma, böyle şey olmaz hocam, sen yanlış anlatıyorsun. Yanlış anlatmıyorum ben, niye yanlış anlatayım? Bak şimdi mesela düşün.
+
+283
+00:54:30,355 --> 00:54:34,815
+Hocam bu ne, javs mı? Yok, uçak. Kalbimi kırıyorsun ama. Evet.
+
+284
+00:54:35,315 --> 00:55:03,315
+Şurada türbülans oluyor, değil mi? Havalandığı zaman. Buradaki vektör, yani burada bir mesela işte burada pervane çalışıyor, hoş, hoş, hoş, hoş, hoş. Dolayısıyla burada bir vortisiti oluşuyor. Aslında girdap hareketi oluşuyor. Ve bu girdap havanın, değil mi? Bir türbülansını oluşturuyor. Ve bu türbülans bir vektör alanı meydana getiriyor. Ve bu alan ne kadar büyükse, bu alana dik...
+
+285
+00:55:03,315 --> 00:55:10,195
+olan vektörde o kadar kuvvetli bir şekilde oluyor ve uçağı yukarı kaldırıyor.
+
+286
+00:55:11,895 --> 00:55:23,375
+Aha! Ya tabii. Yine aynı vaziyette. O ne hocam? Pabuç mu? Hayır gemi. Yine kalbimi kırıyorsun ya.
+
+287
+00:55:24,532 --> 00:55:41,872
+Evet, şimdi pervane çalıştığı zaman yine burada bir, bu sefer su dalgasından bir vorticity meydana geliyor ve buradaki vektör alanı ne kadar genişse bunun itme kuvveti o kadar büyük oluyor.
+
+288
+00:55:41,872 --> 00:55:50,792
+Demek ki alanın şiddeti yani alanın büyüklüğü neticesinde bir vektör var. Bu hiç de saçma değil.
+
+289
+00:55:52,019 --> 00:55:53,299
+Anlaşıldı mı acaba?
+
+290
+00:55:54,439 --> 00:55:56,519
+O zaman ikinci maddemiz.
+
+291
+00:55:56,879 --> 00:56:11,439
+İki vektörün vektörel çarpımı, bu iki vektörü kenar kabul eden paralel kenarın alanına eşit uzunluklu ve bu iki vektörün bulunduğu düzleme dik bir vektördür.
+
+292
+00:56:13,699 --> 00:56:15,500
+Hocam sınavda gelir mi? Sen onu bırak.
+
+293
+00:56:16,239 --> 00:56:16,719
+Gelir.
+
+294
+00:56:17,599 --> 00:56:18,879
+Yenerce 1'de de gelir.
+
+295
+00:56:19,827 --> 00:56:21,587
+Bizim sınavımızda da gelir.
+
+296
+00:56:22,627 --> 00:56:28,007
+Peki hocam, iki tane vektör eğer paralelse, o zaman bu ne olur?
+
+297
+00:56:28,567 --> 00:56:30,727
+Sıfır olur, alan olmaz ki alan olmayınca.
+
+298
+00:56:30,867 --> 00:56:33,367
+Alan sıfır, alan sıfır olunca da vektör sıfır.
+
+299
+00:56:33,827 --> 00:56:39,907
+Veyahut sin sıfırdan sıfır, dolayısıyla yine burada sorusu olan var mı buraya kadar?
+
+300
+00:56:42,327 --> 00:56:43,187
+Tamam mıdır?
+
+301
+00:56:44,403 --> 00:56:55,743
+Güzel. Peki eğer bazı vektörleri cinsinden konuşuyorsanız bunu nasıl yaparız? Bu sefer saat yönünün tersine dönecek şekilde i ile j'nin vektörel çarpımı k kadardır.
+
+302
+00:56:56,043 --> 00:57:06,743
+k ile i'nin vektörel çarpımı j kadardır. Ama eğer saat yönünde dönecek olursam j ile i'nin vektörel çarpımı eksi k kadardır demem gerekiyor.
+
+303
+00:57:07,223 --> 00:57:08,423
+Burası da tamamdır herhalde.
+
+304
+00:57:09,076 --> 00:57:17,896
+Yine sıfır vektörle A vektörünü çarptığım zaman sonuç sıfır vektörü verir. Burada böyle bir çarpım var. Bir de lambdalı böyle bir özellik.
+
+305
+00:57:17,956 --> 00:57:25,296
+Hocam şurası çok önemli dediğiniz anlatmaz. Hayır, o astolist onu en sona bıraktı. Tamam mı? Onu da o şekilde yazabilirsin.
+
+306
+00:57:25,296 --> 00:57:30,296
+İki kat vektörel çarpım yapıyorsan da o zaman önce parantezlerin içlerini...
+
+307
+00:57:31,123 --> 00:57:36,763
+Hesap etmek suretiyle böyle bir bağıntı da var. Bunu da bilin, bunu da alta yazdım.
+
+308
+00:57:36,863 --> 00:57:49,063
+Şimdi zurna'nın zırt dediği yere geldik. En önemli kısım bu. Özellikle de ninerce bir almadığınız için bu konuyu güzel bir şekilde konuşmamız gerekiyor sevgili arkadaşlar.
+
+309
+00:57:49,723 --> 00:57:54,823
+Mesela öğrencinin en sevdiği şey örnek üzerinden konuşmaktır.
+
+310
+00:58:09,619 --> 00:58:10,440
+Kaç yazılı?
+
+311
+00:58:14,195 --> 00:58:30,876
+Evet, tamam mı? Şimdi A ile B'yi nasıl vektörel çarpacağız? Hocam orada formülü var, baksın herkes. Ya baksın diyorsunuz da bakmıyorsunuz işte sınavda ondan sonra canım sorular sadece bunu yanlış yaptığınız için gidiyor.
+
+312
+00:58:34,164 --> 00:59:02,164
+Şimdi bir kere, eğer sen A ile B'yi vektör olarak çarpıyorsan, önce A'yı yazacaksın, sonra B'yi yazacaksın. Aksi takdirde negatif bir vektör bulursun. Bu çok önemli. Bu birinci dikkat etmemiz gereken şey. İkincisi, bu enfekte olmuş arkadaşlar. Buna dikkat edin. Sosyal mesafeye dikkat. Evet, bize korona bulaştırmasın. Bu enfekte olmuş. Buna çok dikkat edin.
+
+313
+00:59:02,164 --> 00:59:09,504
+Laplace açılımı biliyorsanız eğer ki Linerce bir aldıysanız bilebilirsiniz veya bazı liselerde anlatılabiliyor.
+
+314
+00:59:09,984 --> 00:59:14,824
+Bilmiyorsan da hiç önemli değil. J'nin konum işareti normalde eksidir.
+
+315
+00:59:15,484 --> 00:59:22,944
+Dolayısıyla da siz birinci satıra göre Laplace açılımı, hocam birinci satıra göre Laplace açılımını benim bilmeme gerek var mı Matiki'de?
+
+316
+00:59:22,944 --> 00:59:28,904
+Hayır yok. Sen bunun açılımını yap, senin işin görülür. Tamam mı? Ben seni düşünüyorum, sen merak etme.
+
+317
+00:59:29,300 --> 00:59:31,300
+Sıkıntı yok. Tamam mı?
+
+318
+00:59:31,699 --> 00:59:45,959
+Tamam hocam. Peki şimdi o zaman şurayı konuşalım. Şimdi burada minor denilen bir kavram var Linerce 1'de. Bu minor kavramını bulabilmeniz için öncelikle i'ninkine göre açılım yapıyorsunuz.
+
+319
+00:59:45,959 --> 00:59:59,059
+i'nin bulunduğu satır ve sütunlar kapatıldığı zaman geriye kalan minik determinantı buraya yazıyorsunuz ve bu, bu kadar tane i ediyor arkadaşlar. Anlaştık mı?
+
+320
+00:59:59,699 --> 01:00:00,179
+Sonra,
+
+321
+01:00:01,379 --> 01:00:02,339
+Hocam,
+
+322
+01:00:02,759 --> 01:00:02,999
+Hı,
+
+323
+01:00:03,572 --> 01:00:06,852
+Hocam, J enfekte olmuştu. Ben söyleyeyim de fazla yaklaşmayın.
+
+324
+01:00:07,392 --> 01:00:26,072
+Ha, doğru, evet. Bu enfekte olduğu için, burada eksisi zaten yok. Ben kendim buraya kafadan bir eksi koyuyorum. Tamam mı? Bunu unutmayın. Orası eksidir. Her zaman eksidir. Bu çok önemlidir. Ve ondan sonra ben bunu koyuyorum. Sonra ne yapacağım? Sonra elime renkli bir kalem alıyorum.
+
+325
+01:00:31,572 --> 01:00:49,752
+Yani 3, 1, 5, 6 ve J'yi de yazıyorum. J'nin işaretinin eksi olduğuna lütfen dikkat ediniz. Dikkat diye yazıyorum buraya. Tamam mı? Evet. Ve buradan devam ediyorum sonra. Artı dedim.
+
+326
+01:00:50,931 --> 01:01:06,811
+Bu enfekte olmamış, bu art, problem yok. Efendime söyleyeyim, buna göre işlemi yaptığım zaman, bu sefer K'nın bulunduğu satır ve sütunu kapatıyorum. Geri kalanları buraya yazıyorum sevgili gençler.
+
+327
+01:01:17,588 --> 01:01:23,468
+18-5j artı, şurada da k'sı var, unutmuşuz onu.
+
+328
+01:01:24,244 --> 01:01:38,244
+Burada da 12-2k olmak üzere, 8i-13j artı 10k olmak üzere sonucu buluyorum.
+
+329
+01:01:38,704 --> 01:01:43,084
+Lütfen şuranın işaretini sınavda unutmayın.
+
+330
+01:01:43,084 --> 01:01:52,244
+Çünkü vektörel çarpım gerektiren sorularda özellikle burasının bir eksilisi bir de artılısına göre şıkların içine koyulabilir.
+
+331
+01:01:52,244 --> 01:02:14,244
+Bu hatayı yapanlar, o şıkkı işaretlesin diye bunun üstüne gidiyorlar. Lütfen buralara temas etmeyiniz. Yazık yani, emeğinize. Oldu mu canlılar? Tamam mı yavrum? Sıkıntısı olan var mı burada? Bu konuyla ilgili. Tamam mı? Yok. Peki efendim.
+
+332
+01:02:14,739 --> 01:02:33,559
+Son olarak karma çarpımdan bahsedeceğim sevgili arkadaşlar. Böylelikle yok ben linerce bir görmedim, yok ben skaler çarpım nedir bilmiyorum, vektörel çarpımı bize hiç göstermediler gibi şeyler söyleyemezsin. Tamam böyle bir şey artık yok.
+
+333
+01:02:34,260 --> 01:02:37,180
+Evet, şimdi son olarak.
+
+334
+01:02:37,560 --> 01:02:42,260
+Hocam aslında linear görmedik ama bunlar geçen dönem fiziğin ilk konularıydı.
+
+335
+01:02:43,000 --> 01:02:45,740
+Aa harika, ne güzel, tekrar da etmiş olduk.
+
+336
+01:02:46,100 --> 01:02:46,340
+Evet.
+
+337
+01:02:47,180 --> 01:02:51,620
+Özellikle bu dönem linearce bir alan arkadaşlarıma seslenmek istiyorum.
+
+338
+01:02:52,180 --> 01:02:56,580
+Mesela bu soru daha evvel linearce birin sınavında çıkmış soruydu.
+
+339
+01:02:56,980 --> 01:02:57,820
+Haberiniz olsun.
+
+340
+01:02:58,800 --> 01:02:59,640
+Duyuyor musunuz beni?
+
+341
+01:03:00,628 --> 01:03:10,108
+Bu soru daha evvel Linercebir sınavında çıkmış olan soruydu efendim. Haberiniz olsun, sınavda da karşınıza çıkar.
+
+342
+01:03:11,188 --> 01:03:18,148
+Şimdi burada ne soruyor bize? Bir düzlem var diyor. Düzlemin içerisinde noktalar var diyor.
+
+343
+01:03:18,148 --> 01:03:26,268
+Şimdi yine burada en büyük sıkıntımız noktaları vektörlerle karıştırmak. Nokta ayrı bir şeydir, vektör ayrı bir şeydir.
+
+344
+01:03:28,628 --> 01:03:48,847
+Gerersin. Tıpkı ip gerer gibi. Hani mesela çamaşır asarken bir çiviye, oraya bir çiviye de oraya ip geriyorsun, üstüne de çamaşırını asıyorsun ya, onun gibi. Yani söz konusu olan çivinin saplandığı noktalar sana veriliyor. Arada ip falan yok, çamaşır asamazsın. Yani önce vektörü araya germen lazım.
+
+345
+01:03:56,628 --> 01:04:05,387
+Pat diye ayağının dibine düşer, bir daha yıkamak zorunda kalırsın. Bu en fazla yapılan hatadır. Lütfen buna dikkat edin.
+
+346
+01:04:05,967 --> 01:04:18,347
+Ve burada PQ vektörünü yazarken, bitim noktasının koordinatlarını başlangıç noktasından çıkarttığınızı, bakın burada yapmışım, şu işleme çok dikkat edin.
+
+347
+01:04:18,347 --> 01:04:24,347
+Burada yaptığınız en ufak bir işaret hatası size doğru sorularınızdan...
+
+348
+01:04:24,628 --> 01:04:52,628
+Onda götürüyor, yiyor kurabiye gibi doğrularınızı. Yapmayın bunu. Sonra PR'yi de oluşturdum. R'den P'yi çıkartmak suretiyle. Şimdi bana ne diyor? Bunların bulunduğu düzleme dik vektör bul diyor. Allah aşkına. Demin ben bunu anlatmadım mı size? İki vektörün vektörel çarpımı bunların bulundukları düzleme dik bir vektör verir. Peki hocam ben...
+
+349
+01:04:52,628 --> 01:05:16,168
+Ben bunu böyle mi çarpayım, yoksa böyle mi çarpayım? Adam sana demiş mi ki, dik pozitif yönde? Dememiş. Düzleme dik olsun. İster bu, ister bu. Adamın işine gelir. Bu da diktir, o da diktir. İster bunu bul, ister bunu bul. Yani ister PQ ile PR'yi çarp, ister PR ile PQ'yu çarp. Hiçbir şey fark etmez hayatım.
+
+350
+01:05:17,172 --> 01:05:28,631
+Dolayısıyla PR ile PQ'yu deminki gibi çarparsın. Artık anlattığım için çok rahatım. İçim çok çok rahat. Dolayısıyla da bunu da yazdığım zaman olay bitti.
+
+351
+01:05:29,631 --> 01:05:34,172
+Şimdi ne diyor? Köşeleri bu üç nokta olan...
+
+352
+01:05:35,795 --> 01:05:49,695
+Üçgenin alanı nedir diyor. Üçgenin alanını bilmiyorum ama dörtgenin alanını biliyorum. Bunun hepsi PQ ile PR'nin vektörel olarak çarpımının uzunluğuydu.
+
+353
+01:05:49,695 --> 01:06:03,795
+Çünkü vektörel çarpımın uzunluğu bunun alanı kuvvetinde yukarı doğru olan bir vektördü. O zaman bu vektörün uzunluğunu bulursam ki bunun uzunluğu altının karesi sıfır.
+
+354
+01:06:03,795 --> 01:06:15,995
+0'ın karesi, 6'nın karesidir. Bu paralel kenarın tamamını verir. Bunun yarısıysa senin istediğin üçgenin alanını verecektir sevgili genç arkadaşım.
+
+355
+01:06:16,495 --> 01:06:26,875
+Dolayısıyla bu noktaların bulunduğu düzleme dik olan birim vektör denilince de şimdi bu doğrultudaki minnoş vektör sana soruluyor.
+
+356
+01:06:27,215 --> 01:06:40,475
+Şu, şu minnoş soruluyor sana. O zaman bulduğun şu vektörü uzunluğuna bölmek suretiyle o doğrultudaki birim vektörü elde etmiş olursun.
+
+357
+01:06:41,015 --> 01:06:47,795
+Şimdi anlamayan var mıdır? Burada sıkıntısı olan var mıdır sevgili arkadaşlar?
+
+358
+01:06:49,355 --> 01:06:50,215
+Deyin bakayım bana.
+
+359
+01:06:54,579 --> 01:06:56,739
+Yok diyorsunuz. Tamam mı?
+
+360
+01:06:57,059 --> 01:07:03,920
+Hocam, ben bir şey sorabilir miyim? Şu işlemde parantezin içinde eksi 2 olmayacak mı?
+
+361
+01:07:04,340 --> 01:07:09,639
+İyi yazarken. 4 artı 2 demişiz ya, birinci soruda, ilk soruda.
+
+362
+01:07:10,619 --> 01:07:10,960
+Şu mu?
+
+363
+01:07:12,340 --> 01:07:17,299
+Evet, o soru. Parantezin içinde iyiliği ifadeyi yazmışız. 4 artı 2, şu.
+
+364
+01:07:17,748 --> 01:07:19,487
+Çapraz çarpıyorduk ya hocam.
+
+365
+01:07:19,688 --> 01:07:27,708
+Çapraz da 4 artı 2. Tamam. Hemen bakayım yavrum ona. Tamam. O zaman şu tahtayı sileyim, şuraya yapayım. İster misin?
+
+366
+01:07:28,268 --> 01:07:30,007
+Sadece iyi de takıldım hocam.
+
+367
+01:07:30,788 --> 01:07:32,327
+Sadece iyi yapacağım çocuğum.
+
+368
+01:07:39,987 --> 01:07:59,647
+Şimdi elime kalemimi aldım, i'nin bulunduğunu kapattım. 2, eksi 1, 2, 2. Dolayısıyla i dedim. Bunun devamı var. Pıtı pıtı pıtı pıtı pıtı. Öncelikle böyle çarpıyoruz. 4, eksi, eksi 2. Yanlış mı yapmışım?
+
+369
+01:08:03,027 --> 01:08:05,027
+Ses veriniz lütfen hanım kızım.
+
+370
+01:08:05,307 --> 01:08:10,407
+Tamam hocam, şimdi anladım. Eksi, eksi iki olunca artı oldu. Ben sadece eksi iki diye düşündüm.
+
+371
+01:08:10,607 --> 01:08:14,847
+Çok güzel oldu, boşver. İyi oldu. Sınavda yapmazsın böyle. Güzel oldu şimdi.
+
+372
+01:08:14,947 --> 01:08:17,567
+Peki işte inşallah hiç böyle bir şey olmayacak sınavda.
+
+373
+01:08:17,587 --> 01:08:18,507
+Teşekkür ederim hocam.
+
+374
+01:08:18,907 --> 01:08:27,467
+Buradan büyük sıkıntı çıkıyor. Burada aklınıza yatmayan bir şey varsa şimdi sorun ki sonra kafanız bulanmasın yani.
+
+375
+01:08:27,467 --> 01:08:29,887
+Evet, şimdilik.
+
+376
+01:08:31,956 --> 01:08:40,176
+Bu ne? Karma çarpım. Hocam bu ne ya? Bu ne? Karma çarpım. Karma çarpım ne? İşte karışık dondurma gibi. Hiç sevmem.
+
+377
+01:08:41,524 --> 01:09:09,524
+Bir dondurma sevmeyen bir insan var mı? O da benim işte. Çocukken de mi sevmiyordum? Kesinlikle sevmiyordum. Hatta bizimkiler çok üzülüyorlar. Herkes çocuğuna bir şey almak ister. Şeker vereyim, yemem. Gazoz içeyim, boğazıma batıyor. Yok, goflet vereyim, ağzım acıyor. Yok, dondurma alayım, çok soğuk falan. Böyle bir tuhaf bir çocuktum ben. Boşver. Hiç sevmem dondurmayı. Şimdi dondurmadan örnek vereceğim.
+
+378
+01:09:09,524 --> 01:09:20,444
+Çocukken de sevmezdim. Gerçekten onu nasıl yiyorsunuz? Ben gerçekten hayret edeceğim. İnsan bir soğuk bir şey niye yer ya? Anlayamıyorum ben. Çocukken de anlayamazdım.
+
+379
+01:09:21,024 --> 01:09:32,064
+Şimdi, karma çarpım tıpkı karışık dondurma gibi. Yani mesela bizim zamanımızda öyle var mıydı? Vardı ben limonlu, limonlu vardı.
+
+380
+01:09:32,064 --> 01:09:35,884
+İşte karışık dondurma var deyince hepsinden koyuyorlar ya.
+
+381
+01:09:36,127 --> 01:10:03,067
+Onun gibi. Şimdi bizim burada kaçtır çarpmamız var? Vektörel çarpım, bir de skaler çarpım var. Bir tane ondan, bir tane de ondan. Peki hocam önce hangisini yiyeyim? Hangisini ye bakalım bilemedim. Şimdi üç tane vektörümüz olacak değil mi? Bu üç vektörün içinde bir tane karışık çarpacaksın, bir tane de skaler çarpacaksın. Peki hocam hangisini önce yiyeyim?
+
+382
+01:10:03,475 --> 01:10:25,295
+Şimdi önce bunu yiyemezsin. Sebep neden? Bundan sayı çıkar. Sayıyla da vektörü vektör olarak çarpamazsın. Bu fos uçtu. Demek ki o zaman sen önce vektörel olarak çarp, ondan sonra skaler olarak çarparsın. Peki hocam, şöyle de yazabilir miyim?
+
+383
+01:10:26,003 --> 01:10:36,144
+Yazabilirsin tabii, yani onda bir sıkıntı yok. Yani o zaman önce böyle çarpacağım değil mi? Evet, önce parantezin içi. Yani önce vektörel çarpımı çarptıktan sonra böyle yazabilirsiniz.
+
+384
+01:10:36,604 --> 01:10:46,024
+Hocam ama burada başka bir şeyler daha yazmışsınız, o ne? Şimdi bunların hepsini boncuk yaptım. Eskiden bir şey, ne diyor, dertlerimi boncuk yaptım, diziyorum mu?
+
+385
+01:10:46,024 --> 01:10:54,003
+Öyle bir şey, böyle bir şey, şarkılar var ya hep böyle şey yapıyorlar. Şimdi bunları boncuk yaptık, dizdik ipe, ipin de ucunu kapattık.
+
+386
+01:10:54,003 --> 01:11:07,184
+Şimdi A'dan başlarsak A, B, C, B'den başlarsak B, C, A, C'den başlarsak C, A, B diye gitmemiz lazım ki buna matematikte dairesel permutasyon deniliyor.
+
+387
+01:11:07,184 --> 01:11:20,144
+Dolayısıyla sen önce vektörel çarpmak suretiyle B'den başlarsan B, C, A. İster böyle çarp ama önce böyle çarpacaksın böyle.
+
+388
+01:11:21,456 --> 01:11:49,456
+İster böyle çarp ama böyle yazacaksın, ha böyle. Veya C'den başlarsan C, A, B, ister böyle çarp ama önce böyle çarpacaksın. Veyahut önce böyle çarpacaksın. Bunların hepsi birbirine eşit. Ama kalkar da böyle bir şey yazarsam, o zaman saçmalamış olurum. Neden? Dairesel permütasyonu bozdum. C'den sonra B gelmez, C'den sonra A gelir. O zaman demek ki dairesel...
+
+389
+01:11:49,456 --> 01:11:55,036
+İstediğim sırada yazabiliyorum. Peki, bu bana neyi veriyor?
+
+390
+01:11:56,815 --> 01:12:08,275
+Üç vektörün karma çarpımı, yani karışık dondurma gibi olan bu çarpımı, bunları kenar kabul eden paralel yüzün hacmini veriyor arkadaşlar.
+
+391
+01:12:08,876 --> 01:12:15,576
+Linerce bir alan arkadaşlarıma sesleniyorum. Orada mısınız? Böyle bir soru gelir size.
+
+392
+01:12:16,307 --> 01:12:17,347
+Bekleyin.
+
+393
+01:12:20,247 --> 01:12:21,768
+Karma çarpımdan soru gelir.
+
+394
+01:12:23,768 --> 01:12:24,487
+Bekleyin.
+
+395
+01:12:24,884 --> 01:12:52,884
+Peki hocam, karışık olarak çarpabilmek için önce vektörel sonra skaler mi çarpayım? Yok, daha kolay yolu var. Ben sana daha kolay yolunu söyleyeyim. Öncelikle 3 tane vektör lazım bu işlemi yapman için. Bu 3 tane vektörün bileşenlerini satır kabul eden bir determinant yazacaksın. O determinanta hesap edince işte 3'tür, 5'tür, 9'tür bir sayı çıkacak. O sayıda söz konusu olan bu şekildeki kaykılmış kutu gibi olan paralel yüz.
+
+396
+01:12:52,884 --> 01:13:06,183
+Yüzün sana hacmini verecek. Peki hocam, linearce bir alanlara seslendiniz. Böyle kalkıp 3 tane vektör verip de determinant mı soracak? Çok basit değil mi sizce? Bence basit, evet. Öyle sormaz.
+
+397
+01:13:07,091 --> 01:13:28,751
+Peki hocam, bize de aynı soru gelebilir mi? Gelebilir, evet. Düşük bir ihtimal olsa da size de böyle bir soru gelebilir. Çıktı mı daha evvelden? Evet. Çıkmış soruların içinde de bu soruyu bulabilirsiniz, görebilirsiniz. Şöyle bir soru soruldu sevgili arkadaşlar. Hemen yazıyorum soruyu. Mesela şu an kafadan atarak yazıyorum tabii. Mesela 1, 2, 3.
+
+398
+01:13:31,028 --> 01:13:49,248
+4, 5, 0. Şu an atıyorum tamamen kafamda. C, 9, 1, 1 mesela. D de, ne diyelim, 3, 2, 0. Şey, lambda. Ne? Lambda, lambda. Tamam mı?
+
+399
+01:13:50,484 --> 01:14:09,404
+Dört nokta veriliyor diyor. Bu dört noktanın aynı düzlemde bulunması için, bak böyle soru sorabilirler, haberin olsun, aynı düzlemde olması için lambda ne olmalıdır?
+
+400
+01:14:09,724 --> 01:14:16,304
+Liner Cebirciler, size sesleniyorum, orada mısınız? [öğrenci] buradayız diyor [öğrenci]. Bir tek [öğrenci] mi var, başka yok mu?
+
+401
+01:14:17,140 --> 01:14:29,060
+Şu an sınıfta kaç kişi var? Bir bakayım bakayım. 121 kişi var. Aranızdan linerce bir alanlar. Ses vermeseniz de notunuzu alın yavrum. Sizin hayrınıza söylüyorum. Burada benim bir şeyim yok.
+
+402
+01:14:29,060 --> 01:14:43,060
+Şimdi aynı düzlemde olması için lambda ne olmalı? Yapman gereken şey nedir? Mesela burada herhangi bir tane başlangıç noktası seçeceksin. Üç tane vektör yazacaksın. Bu üç vektörün bileşenlerine
+
+403
+01:14:44,916 --> 01:14:48,975
+Böyle yazacaksın ve bunun determinantını sıfıra eşitleyeceksin.
+
+404
+01:14:49,416 --> 01:14:52,055
+Hocam, neden sıfıra eşitledik?
+
+405
+01:14:54,576 --> 01:14:56,536
+Neden sıfıra eşitledin sence?
+
+406
+01:14:57,395 --> 01:15:00,456
+E hocam, şeye benziyor bu, hani biz taşınmıştık.
+
+407
+01:15:01,076 --> 01:15:21,216
+Ne alaka şimdi? Yani şimdi bak bir şey anlatacağım. Biz taşındık, taşınırken kutular falan vardı, büyük kutular, onları böyle bir sündürdük, dolabın arkasına koyduk. Yani tekrar bize çık derlerse, yine taşınırsak, onların içine eşyaları koyacağız onun için. O kutuları böyle sündürdük, dolabın arkasına koyunca o kutunun hacmi sıfır oluyor hocam. Onu demek istiyorum.
+
+408
+01:15:29,076 --> 01:15:33,895
+Yatarsa, dolayısıyla bu hacimde fos gider. Onu mu demek istiyorsun?
+
+409
+01:15:34,315 --> 01:15:39,935
+Evet hocam, onu demek istedim. 3 vektör aynı düzlemdeyse dedim, o zaman hacimi oluşturmaz.
+
+410
+01:15:40,176 --> 01:15:48,695
+Hacimi oluşturmazsa da, ben buradaki determinant tanımını sıfıra eşitlersem, buradaki lambdalı değeri de buradan otomatikman bulmuş olurum diye düşündüm hocam.
+
+411
+01:15:48,775 --> 01:15:53,076
+Öyle düşündüm. Evet, güzel. Aynı soru size...
+
+412
+01:15:53,596 --> 01:15:55,655
+Ah bir dakika, nereye gitti bu?
+
+413
+01:15:56,148 --> 01:15:56,688
+Pesani.
+
+414
+01:16:01,140 --> 01:16:07,800
+Aynı soru size, chat kutum da gitti bu arada, hepsi kapandı gitti, tamam gel.
+
+415
+01:16:08,600 --> 01:16:23,020
+Aynı soru size şöyle de sorulabilir, 3 vektör aynı düzlemde ise karma çarpımları sıfırdır veya 3 vektör aynı bir düzleme paralel ise karma çarpımları sıfırdır şeklinde de sorabilir.
+
+416
+01:16:23,020 --> 01:16:26,739
+Veya daha kolay oluyor, yani böyle bir soru soracaklarını tahmin etmiyorum.
+
+417
+01:16:26,900 --> 01:16:29,119
+Yani ne linerci bir de, yani şuradaki.
+
+418
+01:16:29,140 --> 01:16:46,260
+Çünkü bu çok kolay bir soru. Yani vektörleri de vermiş artık ki hacimde nedir yani? Sen de tahmin ediyor musun böyle bir soruları? Sorarlarsa zaten elini ovuşturur çözersin yani. Evet, bu kadar basit. Ondan sonra bunları yazdın. Hemen sarı ustan, marı ustan, pıt pıt pıt, bitti gitti yani budur.
+
+419
+01:16:55,123 --> 01:17:22,863
+Şeyden bahsedeceğim, çünkü 15 dakika, 15 dakikadır arkadaşlar. Biliyorsunuz çok tempolu devam etmek zorundayız. Neden tempolu devam etmek zorundayız? Bir buçuk hafta eksiğimiz olacak sene sonu itibariyle. Onun için onların bütün hepsini ben azar azar derslere yediriyorum. Böylelikle sorudan taviz vermek istemiyorum, konudan taviz vermek istemiyorum.
+
+420
+01:17:23,315 --> 01:17:33,175
+Anladınız mı? Evet, burada'ya kadar sorusu olan var mıdır? Yeni Föy'ü yükleyeceğim sevgili gençler. Tamam mıyız?
+
+421
+01:17:34,455 --> 01:17:44,215
+Liner Cebirciler, tamam mı? Bunu bir kenara not edin. Sonra, aa hoca bize de değildi dersiniz. Evet, tamam mıyız?
+
+422
+01:17:48,083 --> 01:17:48,963
+Tamamız değil mi?
+
+423
+01:17:49,763 --> 01:17:59,983
+Tamamız. Peki diğer föyümü yüklüyorum. Uzayda doğru ve düzlem. Düzleme geçemeyiz, doğruyu bitiririz gibi geliyor bana.
+
+424
+01:18:00,903 --> 01:18:03,763
+Şimdi hocam, söyle bakayım.
+
+425
+01:18:04,180 --> 01:18:29,040
+Hocam, şimdi biz şeyde hani küçükken öğrendik ya mesela eğim diyordum. Mesela atıyorum bir iki noktasından geçen doğrunun denklemini bulabilmek için böyle eğimi yazıyordum. Y eksi iki böyle x eksi bir eşittirme yazıyordum. Ondan sonra da buradan işte efendime söyleyeyim doğrunun denklemini yazıyordum. Şimdi burada uzayda doğru deyince eğim diye bir şey var mı? Eğim diye bir şey olabilir mi ya?
+
+426
+01:18:30,355 --> 01:18:57,575
+Niye? Doğru olursa eğim olmayacak mı? Eğim nerede olur yavrum? Nerede olur hocam? Sence nerede olur? İşte her yerde olur hocam. Ne gibi? Hani mesela böyle bir deniz kenarı. Evet. Burada da böyle bir tepelik var. Evet. Burası mesela çok eğimli bir yer. Çok eğimli bir yer. Güzel. Tamam. Niye eğimli?
+
+427
+01:18:58,260 --> 01:19:00,160
+Çünkü denizden sapmış hocam.
+
+428
+01:19:00,580 --> 01:19:01,420
+Güzel.
+
+429
+01:19:02,160 --> 01:19:08,160
+Denizden sapma miktarın senin eğimini veriyor.
+
+430
+01:19:08,420 --> 01:19:08,680
+Değil mi?
+
+431
+01:19:10,620 --> 01:19:11,520
+Öyle değil mi?
+
+432
+01:19:12,160 --> 01:19:12,880
+Bu nerede bu?
+
+433
+01:19:14,000 --> 01:19:14,640
+Nasıl nerede?
+
+434
+01:19:15,760 --> 01:19:17,080
+Yani bu nerede bu?
+
+435
+01:19:18,160 --> 01:19:18,980
+Anlamadım hocam.
+
+436
+01:19:19,680 --> 01:19:21,260
+Yani bu deniz, bilmiyorum hocam.
+
+437
+01:19:21,320 --> 01:19:23,800
+Öyle çizdiniz siz deniz kenarı, daha tepelik bir yer.
+
+438
+01:19:23,860 --> 01:19:24,900
+Bilmiyorum nereyi çizdiniz.
+
+439
+01:19:25,020 --> 01:19:25,660
+Ben nereden bileyim?
+
+440
+01:19:26,195 --> 01:19:47,956
+Yani dünyada bir yer değil mi bu? Ha dünyada, anladım. Dünyada, dünyada. Evet, bu dünyada deniz var, dağ var. Evet, dünya burası. Güzel. Biz ne yapıyoruz? Oku bakayım burada ne yazıyor? Uzayda doğrular. Üzleme geçmeyecekmişiz. Tamam. Uzayda doğru olunca dünyadaki doğru ile uzayda ki doğru aynı mı?
+
+441
+01:19:53,652 --> 01:20:21,072
+Güzel. İyi de senin deniz böyle bakıyorsun. Doğru burada. Şimdi denizden nasıl saptığını hesap edeceksin acaba? Ne demek istiyorsunuz hocam? Anlamadım ben. Yani şunu söylemek istiyorum. Çok önemli burası. Onun için yavaş giriyorum. Yoksa hızlı hızlı anlatırım, bitiririm burayı. Uzayda eğim yok.
+
+442
+01:20:23,444 --> 01:20:49,244
+Hayda, o zaman ben nasıl çizeceğim ki? Doğrultman vektör var. Ne? Doğrultman vektör var. O ne demek? Mesela diyelim ki senin bir tane doğrun var, sana diyecek ki, mesela atıyorum, x0, y0, z0 noktasından geçen, şu vektöre paralel olan,
+
+443
+01:20:51,444 --> 01:21:16,844
+Şimdi anladım. Evet. Tamam mı? Bu vektöre paralel olan doğrunun denklemini yaz diyecek sana. Sen nasıl yazacaksın? Hemen şöyle yazacaksın. Bunun üzerine tıpkı demin yaptığım gibi hareketli bir nokta koyacaksın. Formül ezberlemene gerek yok. X eksi X sıfır i. Ne yapıyorsunuz hocam? Şundan şunu çıkartıyorum. Ne var onda?
+
+444
+01:21:17,619 --> 01:21:42,659
+y-y0j, z-z0k, t tane, b1i, b2j, b3k. Ne oldu şimdi? Ay şu üstünü silelim. Bu vektör değil, t, parametre. Evet.
+
+445
+01:21:43,315 --> 01:21:53,315
+Yani o onun şey ise, paralelse bunlar, öbürünün bir katıdır yani. Anlatabildim mi demek istediğimi acaba? Tamam değil mi? Bu durumda o zaman...
+
+446
+01:22:06,131 --> 01:22:09,099
+Bunu bu şekil yazabilirsiniz. Buna doğrunun...
+
+447
+01:22:12,627 --> 01:22:23,467
+Simetrik yahut kanonik denklemi denir. Tamam mı? Anlamayan var mı burayı?
+
+448
+01:22:27,188 --> 01:22:28,007
+Bekliyor mu?
+
+449
+01:22:32,372 --> 01:22:50,932
+Hocam, çok önemli bir şey geldi aklıma. Ne geldi? Kimsenin sesi çıkmıyor. Senin bir çenen durmadı ya. Hocam ama çok önemli. Ne oldu? Neresi önemli? Ne? Neresi? Hocam söyleyeyim ama ayıp olacak size. Niye ayıp olsun ya? Yanlış yazdınız, onun için ayıp olacak.
+
+450
+01:22:51,636 --> 01:22:56,896
+Niye ayıp olsun? Ben de insanı mı yanlış yazdım? Niye ayıp olsun arkadaşlardan? Özür dilerim. Neresini yanlış yazmışım?
+
+451
+01:22:57,476 --> 01:23:04,076
+Hocam, şimdi çok önemli bir şey var. Söyleyeyim mi? Bak arkadaşlar duyuyorlar. Söyle, söyle. Ne oldu? Söyle bakayım. Neresini anlamadın?
+
+452
+01:23:04,776 --> 01:23:14,056
+Hocam, şimdi bak. Bize diyelim ki V vektörünü verdi. Tamam. Mesela burası sıfır. Olamaz mı? Olur.
+
+453
+01:23:15,604 --> 01:23:38,764
+Bak olur da diyorsun, bak devam edeceğim ama çok ayıp olacak sana. Ya niye ayıp olsun, devam et. Hocam o zaman burası da sıfır değil mi? Evet, burası da sıfır. Hocam o zaman buraya yazdınız, burası da sıfır oluyor, paydaya sıfır nasıl gelecek? İstediniz paydaya sıfır gelmez. Böyle oluyor ya. Bak arkadaşlar hep duydum. Duysun canım, dizimiz saklımız mı var?
+
+454
+01:23:39,507 --> 01:23:59,547
+Ha burada paydaya sıfır geldi. Bu manada mı söylüyorsun? Bu hakiki bölme değildir. Bu bir gösterilimdir. Bu şu anlama gelir aslında. Burası t ve 1'e eşit, burası bu durumda sıfıra eşit anlamına gelir. Yani alt taraf sıfırsa.
+
+455
+01:24:00,340 --> 01:24:26,680
+Kalkıp da y eksi y sıfırı sıfıra bölmezsin. Üst tarafta sıfır dersin. Burayı anladık mı? Bu çok önemlidir. Bak arkadaşınızın söylediği şey. Bu sizin de aklınıza gelecek. Ama ne zaman, ne zamanki bu dersi alacaksın, başlayacaksın çalışmaya. Ana, paydi, ya hoca ne yazmış ya? Böyle saçma şey mi olur? Yanlış mı yazdı acaba? Değil mi? Anlaşıldı mı burası acaba?
+
+456
+01:24:27,636 --> 01:24:51,136
+Hu hu. Tamam. Tamam değil mi sevgili genç? Çok önemlidir bak. Çok önemlidir. Çok önemlidir. Şimdi bir sıkıntımız daha var. Hocam ya bir bitmedi sıkıntı. Ne yapacaksın? Dünyadayız. Dünya öyle bir yer. Sıkıntılı bir yer. Şimdi bak. Kalemimi alayım da elime.
+
+457
+01:24:52,435 --> 01:25:06,275
+Şimdi bu doğrunuz simetrik denklem. Bir denklem daha var. Ay bitmedi mi? Sen ne diyorsun? Bunu yazdıktan sonra bir denklem daha var. Saat kaç oldu? Saat 24 geçiyoruz. Bunu bir öğrenirim de ondan sonra bakarız. Hadi.
+
+458
+01:25:09,935 --> 01:25:26,815
+V1T artı X0. Hocam ben anlamadım. Ya dur bir yazayım da ondan sonra anlamadım. Şurayı kapat. Burayı da kapat. Bununla bunu çarp. Bunu da karşı tarafa at. X'i bul. Burası tamam mı? Tamam mı?
+
+459
+01:25:34,899 --> 01:25:57,060
+Geri diyorum, geri almıyor. Çok enteresan bir şey. Niye almıyor geri? Tamam aldı. Sonra bununla bunu kapat. Y'deki hikaye, bunu boş ver. Şuranın sıfır olmasını boş ver sen. Bizimki öyle dedi sana, kafan karışmasın ona. Allah'ım yarabbim.
+
+460
+01:26:04,148 --> 01:26:05,127
+V2 yazalım.
+
+461
+01:26:05,488 --> 01:26:06,307
+Tamam.
+
+462
+01:26:06,967 --> 01:26:08,427
+Şimdi Y'yi çekelim buradan.
+
+463
+01:26:08,627 --> 01:26:09,427
+Y eşittir.
+
+464
+01:26:09,528 --> 01:26:11,488
+V2T artı Y0.
+
+465
+01:26:11,747 --> 01:26:12,108
+Doğru.
+
+466
+01:26:12,948 --> 01:26:14,188
+Z eşittir.
+
+467
+01:26:14,787 --> 01:26:15,807
+Şimdi ne yapacaksın?
+
+468
+01:26:16,328 --> 01:26:17,148
+Şimdi de...
+
+469
+01:26:21,747 --> 01:26:32,547
+Bununla bunu kapat. V3 de artı Z0. Tamam mı? Buna da doğrunun parametrik denklemi diyoruz.
+
+470
+01:26:36,404 --> 01:26:38,504
+Anlaştık mı? Çok önemli.
+
+471
+01:26:40,964 --> 01:26:48,024
+Şimdi buradan sana ne gibi sorular sorulabilir? Çok sıkıntılı sorular sorulabilir.
+
+472
+01:26:48,756 --> 01:27:16,336
+Ama hocam hiç sıkıntılı gibi durmuyor. Zaten esas sıkıntı bir şeyin kolay gözükmesidir. Zor gözüken şeye gardını alırsın, ona göre gidersin. Değil mi? Hani mesela insan kışın hasta olmuyor genelde de, baharda hasta oluyor. Neden baharda hasta oluyor? İşte bakıyorsun mesela nisan güneşine aldanma diye laf var mesela. Bakıyorsun, ay ne güzel hava ya, ince bir ceket alayım ben çekeyim. Ondan sonra hafif akşama kalıyorsun. Bir ay az, o zaman hapşı öksü.
+
+473
+01:27:17,076 --> 01:27:28,876
+Değil mi? Demek ki böyle kolay gözüken şeyler aslında seni yanılttığı için daha tehlikelidir. Buna çok dikkat et. Bu konuyla ilgili çok ciddi sorular var.
+
+474
+01:27:29,676 --> 01:27:31,676
+Şimdi şunu söylemeye çalışıyorum.
+
+475
+01:27:40,243 --> 01:27:42,323
+13 diyeyim de şu 3 ile karışmasın.
+
+476
+01:27:44,123 --> 01:27:45,723
+Bir de 5 diyeyim.
+
+477
+01:27:46,303 --> 01:27:51,643
+Mesela bu, hangi doğrultman vektöre sahip, hangi noktadan geçiyor?
+
+478
+01:27:52,103 --> 01:27:54,163
+Bunu çok rahat söyleyebilmen lazım.
+
+479
+01:27:54,723 --> 01:27:57,563
+Bu işlem içinse şu işlemi yapman gerekiyor.
+
+480
+01:27:57,563 --> 01:28:05,003
+x-3 bölü 2, y artı 2 bölü 13.
+
+481
+01:28:05,652 --> 01:28:27,612
+z eksi 5 bölü 7 eşit t. Demek ki senin noktan 3 eksi 2, 5, bak buraya dikkat et, buraya dikkat et, eksi eksi 2 çünkü. Tamam mı? Vektörün ise 2'yi, 13'i, 7K'dır. Anladınız mı olayı?
+
+482
+01:28:31,188 --> 01:28:57,307
+Bunu yazabilmen, buraya geçmen lazım. Yarın daha büyük sıkıntı var. Yarın buradan iki düzlemin ara kesiti olarak ifade etme faslı da var. Bak bunlarla da uğraşacağız. Çok işlerimiz var. Çok çok çok sıkıntımız var. Anladık mı? Burası tamam mı? Tamamsa bir tuşa bas. Sorusu olan var mı burada? Bak şimdi bir şey daha söyleyeceğim. Dur.
+
+483
+01:28:59,283 --> 01:29:19,743
+Bir şey daha söyleyeceğim. Güzel öğrencilerim, dur şimdi. Ay ay ay, chat kutusu kocaman oldu, bütün tahtayı kapladı. Allah'ım Allah'ım. Allah'ım yarabbim dur. Her taraf her tarafa geldi. Şunu da sinir şöyle öyle. Şunun üstünü açalım. Şimdi burayı da öğrendi benim güzel öğrencilerim. Şimdi bir tane daha var.
+
+484
+01:29:21,171 --> 01:29:34,171
+Bir tane doğrunun vektörel denkliği. Bundan da bahsedelim. Böylelikle ilk sayfayı bitirmiş oluruz. Yarınki derslere direkt örnekle başlayıp, düzlemlerle devam edip, vektör analizle...
+
+485
+01:29:34,836 --> 01:29:55,976
+Devam edeceğiz ve de çok değişkenli fonksiyonların ilk sayfasını da anlatacağız. Orada kalacağız sevgili arkadaşlar. Yarınki hedefimiz bu. Evdeki hesabımız çarşıya uyarsa tabii ki. Hani böyle bir sağlıktır, bir şeydir, olmaz inşallah bunları yapacağız.
+
+486
+01:30:00,000 --> 01:30:19,819
+bir formül yazmıştım. Hatırlarsanız eğer. Neydi bu? İşte dedik ki şu vektör ile bu vektör birbirlerine paraleldir. Dolayısıyla da bu vektörü yazarım. Bu vektörün t katıdır. Hatta şuradaydı, sildim onu. Değil mi? Şimdi burada bunu ikiye ayırmak istiyorum ben. Nasıl hocam?
+
+487
+01:30:20,851 --> 01:30:41,971
+Bayağı yani şöyle bak, şu x, y, z dediğim kısmı i'li, j'li, k'lı olarak böyle yazmak istiyorum. Sonra da şu mavi ile gösterdiğim kısmı da şöyle yazmak istiyorum. Bu kısım zaten otomatikman tv olduğu için problem yok.
+
+488
+01:30:42,579 --> 01:30:55,600
+Evet, ve dolayısıyla şu vektöre R, şu vektöre de R0 dersem, demek ki bu R0'ı da karşı tarafa atarsam buna da doğrunun vektörel denkleme adını veriyorum.
+
+489
+01:30:56,079 --> 01:31:04,019
+Esasen yarın zaten vektör değerli fonksiyonlara geçtiğimizde bundan çok daha fazlasını öğrenmiş olacağız.
+
+490
+01:31:04,439 --> 01:31:10,359
+Burada minik bir hatırlatma olarak bunu söyledim sevgili gençler.
+
+491
+01:31:10,579 --> 01:31:16,039
+Evet, benim bugün söyleyeceklerim bu kadar. Sizin sorunuz var mıdır?
+
+492
+01:31:21,011 --> 01:31:36,152
+Yarın görüşmek üzere efendim, inşallah. Hoşçakalınız. Sağlıklı günler diliyorum, zihin açıklıkları diliyorum. Yarın görüşmek üzere, hoşçakalın diyorum efendim. Teşekkür ederim. Bay bay.
