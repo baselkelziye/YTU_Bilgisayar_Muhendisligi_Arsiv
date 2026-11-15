@@ -19,3 +19,4 @@
 | 32 | Bahar | — | [sube_32/](sube_32/) |
 | 33 | Bahar | Nurgül Demirdöven | [sube_33/](sube_33/) |
 | 34 | Bahar | Dilek Yıldırım | [sube_34/](sube_34/) |
+| 35 | Bahar | Zeynep Attar | [sube_35/](sube_35/) |
