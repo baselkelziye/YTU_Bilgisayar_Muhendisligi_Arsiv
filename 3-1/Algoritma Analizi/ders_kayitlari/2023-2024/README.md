@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Algoritma Analizi (BLM3021)
+* **Hoca:** Mehmet Amaç Güvensan
 * **Dönem:** Güz
 * **Akademik Yıl:** 2023-2024
 * **Şube:** BLM3021 - 2

@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İstatistik ve Olasılık Hesapları (BLM2011)
+* **Hoca:** Oğuz Altun
 * **Dönem:** Güz
 * **Akademik Yıl:** 2025-2026
 * **Şube:** BLM2011 - 1

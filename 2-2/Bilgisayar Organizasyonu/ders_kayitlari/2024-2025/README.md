@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | BAHAR | — | [sube_1/](sube_1/) |
+| 1 | BAHAR | Erkan Uslu | [sube_1/](sube_1/) |
 | 2 | BAHAR | Doç. Dr. Ali Can Karaca | [sube_2/](sube_2/) |

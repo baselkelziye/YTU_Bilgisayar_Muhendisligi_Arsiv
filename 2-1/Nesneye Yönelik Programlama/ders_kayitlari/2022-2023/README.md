@@ -4,6 +4,6 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Bahar | — | [sube_1/](sube_1/) |
+| 1 | Bahar | Mehmet Sıddık Aktaş | [sube_1/](sube_1/) |
 | 2 | Bahar | Dr. Yunus Emre Selçuk | [sube_2/](sube_2/) |
-| 3 | Bahar | — | [sube_3/](sube_3/) |
+| 3 | Bahar | Furkan Çakmak | [sube_3/](sube_3/) |

@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Hesaplama Kuramı (BLM2502)
+* **Hoca:** Ayşe Betül Oktay
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM2502 - 2

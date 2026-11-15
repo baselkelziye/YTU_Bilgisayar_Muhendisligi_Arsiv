@@ -5,4 +5,4 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | — | [sube_1/](sube_1/) |
-| 1 | Bahar | — | [sube_1_bahar/](sube_1_bahar/) |
+| 1 | Bahar | Serkan Ayvaz | [sube_1_bahar/](sube_1_bahar/) |

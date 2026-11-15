@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Yapısal Prog. Giriş (BLM1012)
+* **Hoca:** Mehmet Fatih Amasyalı
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM1012 - 1

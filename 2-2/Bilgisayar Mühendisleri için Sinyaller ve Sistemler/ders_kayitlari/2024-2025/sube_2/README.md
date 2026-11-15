@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Bilgisayar Mühendisleri için Sinyaller ve Sistemler (BLM2041)
+* **Hoca:** Erkan Uslu
 * **Dönem:** BAHAR
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM2041 - 2

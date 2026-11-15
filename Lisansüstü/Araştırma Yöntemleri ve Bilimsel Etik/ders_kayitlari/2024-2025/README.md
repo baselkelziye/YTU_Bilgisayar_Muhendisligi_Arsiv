@@ -5,4 +5,4 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | Dr. Ahmet Elbir | [sube_1/](sube_1/) |
-| 1 | BAHAR | — | [sube_1_bahar/](sube_1_bahar/) |
+| 1 | BAHAR | Ayşe Öcal | [sube_1_bahar/](sube_1_bahar/) |

@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Mikroişlemci Sistemleri (BLM3031)
+* **Hoca:** Erkan Uslu
 * **Dönem:** Güz
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM3031 - 3

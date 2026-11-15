@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Bahar | — | [sube_1/](sube_1/) |
+| 1 | Bahar | Mehmet Fatih Amasyalı | [sube_1/](sube_1/) |
 | 2 | Bahar | Dr. Ahmet Elbir | [sube_2/](sube_2/) |

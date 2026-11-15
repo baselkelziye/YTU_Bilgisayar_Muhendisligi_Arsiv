@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Elektronik Devreler (BLM2032)
+* **Hoca:** Hamza Osman İlhan
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM2032 - 2

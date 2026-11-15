@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Veri Yapıları ve Algoritmalar (BLM2512)
+* **Hoca:** Mehmet Amaç Güvensan
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM2512 - 3

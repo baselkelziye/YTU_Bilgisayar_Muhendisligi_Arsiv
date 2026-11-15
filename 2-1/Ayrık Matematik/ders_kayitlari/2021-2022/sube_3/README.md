@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Ayrık Matematik (BLM2521)
+* **Hoca:** Ahmet Elbir
 * **Dönem:** Güz
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM2521 - 3

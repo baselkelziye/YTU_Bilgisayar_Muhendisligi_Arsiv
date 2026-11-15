@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Devre Teorisi (BLM1032)
+* **Hoca:** Hamza Osman İlhan
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM1032 - 2

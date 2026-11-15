@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Lineer Cebir (MAT1320)
+* **Hoca:** Mehmet Emin Köroğlu
 * **Dönem:** Güz
 * **Akademik Yıl:** 2020-2021
 * **Şube:** MAT1320 - 32

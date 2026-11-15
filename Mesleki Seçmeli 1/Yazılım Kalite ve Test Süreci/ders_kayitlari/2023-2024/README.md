@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Yazılım Kalite ve Test Süreci (BLM4770)
+* **Hoca:** Oya Kalıpsız
 * **Dönem:** Güz
 * **Akademik Yıl:** 2023-2024
 * **Şube:** BLM4770 - 1

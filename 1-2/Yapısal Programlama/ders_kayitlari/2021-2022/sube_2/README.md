@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Yapısal Programlama (BLM2031)
+* **Hoca:** Ahmet Elbir
 * **Dönem:** Güz
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM2031 - 2

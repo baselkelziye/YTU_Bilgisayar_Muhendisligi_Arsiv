@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Hesaplama Kuramı (BLM2502)
+* **Hoca:** Oğuz Altun
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2023-2024
 * **Şube:** BLM2502 - 1

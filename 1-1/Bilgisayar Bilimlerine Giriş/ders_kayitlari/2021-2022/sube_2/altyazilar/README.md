@@ -2,6 +2,8 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki Bilgisayar Bilimlerine Giriş (BLM1011 - 2. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
+* **Dersi Veren Akademisyen:** Göksel Biricik
+
 Kayıt arşivindeki ilk ders kaydı 25 Ekim 2021 Pazartesi gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
 ## Hafta Bilgisi

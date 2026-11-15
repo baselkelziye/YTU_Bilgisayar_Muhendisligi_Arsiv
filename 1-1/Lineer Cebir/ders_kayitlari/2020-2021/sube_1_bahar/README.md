@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Lineer Cebir (MAT1320)
+* **Hoca:** Ahmet Göksel Ağargün
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2020-2021
 * **Şube:** MAT1320 - 1

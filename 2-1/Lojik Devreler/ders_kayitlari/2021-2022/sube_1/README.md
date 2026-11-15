@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Lojik Devreler (BLM2611)
+* **Hoca:** Gökhan Bilgin
 * **Dönem:** Güz
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM2611 - 1

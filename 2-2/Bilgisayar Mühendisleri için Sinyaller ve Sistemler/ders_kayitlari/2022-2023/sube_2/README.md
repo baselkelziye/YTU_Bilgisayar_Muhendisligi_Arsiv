@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Bilgisayar Mühendisleri için Sinyaller ve Sistemler (BLM2041)
+* **Hoca:** Ali Can Karaca
 * **Dönem:** Güz
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM2041 - 2

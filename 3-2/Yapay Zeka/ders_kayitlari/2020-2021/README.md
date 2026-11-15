@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Yapay Zeka (BLM4510)
+* **Hoca:** Mehmet Fatih Amasyalı
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM4510 - 1

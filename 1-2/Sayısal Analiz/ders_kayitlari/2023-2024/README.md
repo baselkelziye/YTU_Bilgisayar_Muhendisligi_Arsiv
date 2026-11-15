@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Sayısal Analiz (BLM1022)
+* **Hoca:** Banu Diri
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2023-2024
 * **Şube:** BLM1022 - 2

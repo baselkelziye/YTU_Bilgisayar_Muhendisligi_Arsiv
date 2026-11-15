@@ -5,4 +5,4 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Bahar | ERKAN USLU | [sube_1/](sube_1/) |
-| 4 | Bahar | — | [sube_4/](sube_4/) |
+| 4 | Bahar | Ali Can Karaca | [sube_4/](sube_4/) |

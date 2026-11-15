@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Yapısal Programlama (BLM1031)
+* **Hoca:** Ahmet Elbir
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2025-2026
 * **Şube:** BLM1031 - 2

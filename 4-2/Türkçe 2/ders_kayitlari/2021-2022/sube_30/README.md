@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Türkçe 2 (TDB1032)
+* **Hoca:** Hilal Tufan
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2021-2022
 * **Şube:** TDB1032 - 30

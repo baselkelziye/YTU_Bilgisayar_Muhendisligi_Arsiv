@@ -4,13 +4,13 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Bahar | — | [sube_1/](sube_1/) |
-| 13 | Bahar | — | [sube_13/](sube_13/) |
-| 15 | Bahar | — | [sube_15/](sube_15/) |
-| 16 | Bahar | — | [sube_16/](sube_16/) |
-| 18 | Bahar | — | [sube_18/](sube_18/) |
+| 1 | Bahar | Servet Es | [sube_1/](sube_1/) |
+| 13 | Bahar | Filiz Kanbay | [sube_13/](sube_13/) |
+| 15 | Bahar | Mustafa Bayram Gücen | [sube_15/](sube_15/) |
+| 16 | Bahar | Serpil Uslu | [sube_16/](sube_16/) |
+| 18 | Bahar | Yasemin Alagöz | [sube_18/](sube_18/) |
 | 20 | Bahar | — | [sube_20/](sube_20/) |
 | 22 | Bahar | — | [sube_22/](sube_22/) |
-| 25 | Bahar | — | [sube_25/](sube_25/) |
+| 25 | Bahar | Mustafa Sarı | [sube_25/](sube_25/) |
 | 35 | Bahar | — | [sube_35/](sube_35/) |
 | 52 | Bahar | Muttalip Özavşar | [sube_52/](sube_52/) |

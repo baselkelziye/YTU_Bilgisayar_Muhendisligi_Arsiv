@@ -4,6 +4,6 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Güz | — | [sube_1/](sube_1/) |
-| 2 | Güz | — | [sube_2/](sube_2/) |
+| 1 | Güz | Gökhan Bilgin | [sube_1/](sube_1/) |
+| 2 | Güz | Hamza Osman İlhan | [sube_2/](sube_2/) |
 | 3 | Güz | Prof. Dr. Gökhan Bilgin | [sube_3/](sube_3/) |

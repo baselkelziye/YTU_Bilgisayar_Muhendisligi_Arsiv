@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Seminer (BLM2051)
+* **Hoca:** Yunus Emre Selçuk
 * **Dönem:** Güz
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM2051 - 2
