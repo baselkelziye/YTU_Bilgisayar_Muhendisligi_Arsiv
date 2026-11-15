@@ -1,0 +1,2199 @@
+1
+00:03:53,268 --> 00:03:57,228
+Evet, merhaba arkadaşlar. Nasılsınız görüşmeyelim.
+
+2
+00:04:27,603 --> 00:04:38,742
+Şimdi bugünkü dersimizde iki katlı integralleri göreceğiz. Derse başlamadan önce sizin söylemeksiniz herhangi bir şey var mı? Önce oradan başlıyorum isterseniz.
+
+3
+00:04:51,603 --> 00:04:58,723
+yok yok herhalde Ben tekrar edeyim bu ders piliyetlerini kendi sayfamdan paylaşıyorum
+
+4
+00:04:58,723 --> 00:05:07,204
+ismim Mustafa Sarı abasis Mustafa sarı diye aratırsanız zaten çıkıyor orada
+
+5
+00:05:07,204 --> 00:05:15,483
+ders piliyetini paylaşıyorum ders piliyetlerin şifresi var arkadaşlar şifresi de [şifre]
+
+6
+00:05:15,483 --> 00:05:24,242
+tekrar edelim [şifre] şifresi ile o ders pdf'lerini indirebilirsiniz
+
+7
+00:05:24,242 --> 00:05:32,584
+şimdi dediğim gibi bu haftaki konumuz hatta bundan bu haftaki bundan sonraki haftalarda
+
+8
+00:05:32,584 --> 00:05:39,783
+konumuz çok katlı integrallerden iki katlı integrer integrerler eskiden 3 katlı integrerler
+
+9
+00:05:39,783 --> 00:05:45,362
+bu mat 1072'ye dahildi o sonradan herhalde ölüm
+
+10
+00:05:45,362 --> 00:05:51,543
+bu üç katlı integrerleri
+
+11
+00:05:51,543 --> 00:05:59,343
+ders programına çıkarmış o yüzden sadece iki katlı integrerleri göreceğiz
+
+12
+00:05:59,343 --> 00:06:08,223
+Dediğim gibi bu hafta iki katlı integrerlerin tanımı ve iki katlı integrerlerde değişken dönüşümü
+
+13
+00:06:08,223 --> 00:06:16,562
+bu bir alakalı soruları çözüp bugün dersimizi bitireceğiz sonraki dersimizi iki katlı integrerlerle
+
+14
+00:06:16,562 --> 00:06:19,384
+alan hesabıyla devam edeceğiz
+
+15
+00:06:22,802 --> 00:06:30,483
+bu şöyle başlayalım önce bir alt başları görelim bu bu haftada beraber üç haftada
+
+16
+00:06:30,483 --> 00:06:37,562
+neleri göreceğiz iki katı integraller fukunit öğrenimi göreceğiz Muhtemelen bu ikisi de dersimizi
+
+17
+00:06:37,562 --> 00:06:46,682
+bitireceğiz arkadaşlar iki katı ile ile alan hesabı kutusal koordinatlarda iki katı integraller
+
+18
+00:06:46,682 --> 00:06:57,903
+ve bunlarla hacim hesabı değişken dönüşümü değişken dönüşümünü değişken dönüşümü farklı bir şey
+
+19
+00:06:57,903 --> 00:07:05,403
+değişken dönüşümü göreceğiz burada bir Jacobian determinantına böyle bir determinant ortaya çıkıyor
+
+20
+00:07:05,403 --> 00:07:11,283
+bunu da göreceğiz değişken dönüşümün adımları ve iki katı integraller için ortalama değer
+
+21
+00:07:11,283 --> 00:07:20,403
+Muhtemelen bu sonraki konuları üçten dokusa kadar olan konuları haftaya işleyeceğiz sadece ilk iki
+
+22
+00:07:20,403 --> 00:07:23,403
+konuyu bugün işlemi düşünüyorum
+
+23
+00:07:26,771 --> 00:07:39,072
+Şimdi önce iki katlı integrallerin tanımını vermeden önce bizim bildiğimiz integral tanımının nereden ortaya çıktığını bahsedelim.
+
+24
+00:07:39,072 --> 00:07:41,072
+Hatırlarsanız...
+
+25
+00:07:44,819 --> 00:07:48,180
+Riman toplamları vardı. Hatırlıyor musunuz? İlk dönemde.
+
+26
+00:07:51,987 --> 00:07:59,987
+verilen bir eğrin altında kalan alanı biz Rivan toplamıyla buluyorduk ya. Böyle bir toplamımız vardı ve o toplamın limitine biz
+
+27
+00:08:02,987 --> 00:08:06,987
+eğer o limit varsa integral olarak tanımlıyorduk.
+
+28
+00:08:07,987 --> 00:08:12,987
+Yani şöyle, küçük bir hatırlatma yapalım.
+
+29
+00:08:17,139 --> 00:08:18,538
+F-İs fonksiyonu şu olsun.
+
+30
+00:08:22,451 --> 00:08:44,172
+Burası A ve burası B olmak üzere. Bu altta kalan alanı biz Riemann toplamlarının limiti olarak buluyorduk. Şimdi biraz onu bir hatırlatayım. Öncelikle bu altta kalan alanı biz buraya N parçaya bölüp, yani X, A, B arasını N parçaya böldüğümüzde
+
+31
+00:08:44,172 --> 00:08:56,072
+oluşturduğumuz ziköltgenlerin alanlarının toplamlarının limiti olarak bunu buluyordu. Şimdi bir kısaca devam edelim. X0A olsun.
+
+32
+00:09:02,355 --> 00:09:07,056
+Şurası X1 olmak üzere. Böyle kökkenler oluşturduğumuz zaman,
+
+33
+00:09:11,124 --> 00:09:21,203
+Her bir gölkenin yüksekliği fxe ve n'i de delta xe.
+
+34
+00:09:22,644 --> 00:09:24,563
+Bundan kaç tane var? N tane var.
+
+35
+00:09:24,682 --> 00:09:26,604
+i birden n'e kadar.
+
+36
+00:09:27,344 --> 00:09:29,783
+Bu ifadeyi biz riman toplaması diyorduk.
+
+37
+00:09:30,203 --> 00:09:32,903
+Bunun limiti, niye limit alıyoruz?
+
+38
+00:09:32,903 --> 00:09:40,484
+Çünkü burada fazlalıklar veya gölken oluşturduğumuzda fazlalıklar oluşabiliyor veya eksiklikler oluşabiliyor.
+
+39
+00:09:40,484 --> 00:09:48,163
+Bu fazlalıkları veya eksiklikleri sıfıra götürmek için a, b arasını en sonsuz parçaya bilmemiz lazım.
+
+40
+00:09:48,624 --> 00:09:50,384
+Demek ki en sonsuz yöntememiz gerekiyor.
+
+41
+00:09:50,504 --> 00:09:57,484
+Bu durumda hatalar sıfıra gideceği için bu gölkenlerin alanların toplamı altta kalan alanını bize veriyor.
+
+42
+00:09:57,484 --> 00:10:08,604
+Dolayısıyla i birden n'e kadar fxe çarpı delta xe'yi biz eğer bu limit varsa a'dan b'ye,
+
+43
+00:10:08,604 --> 00:10:15,403
+fx, dx olarak bunu biz tek kalıtı integrallerde bu şekilde tanımlamıştık.
+
+44
+00:10:15,923 --> 00:10:18,644
+Çift kalıtı integrallerde ise bu da benzer bir şekilde olacak.
+
+45
+00:10:19,144 --> 00:10:23,783
+Burada böyle bir, buradaki değişkenlerimiz x.
+
+46
+00:10:24,783 --> 00:10:27,543
+x teyzenin üzerinde biz bir parçalamayı düşündük.
+
+47
+00:10:27,724 --> 00:10:31,864
+Ama çift kalıtı integrallerde ise bir bölge üzerinde bunu düşüneceğiz.
+
+48
+00:10:31,864 --> 00:10:37,484
+O yüzden bölgeyi önce bir dükkörken üzerinde düşüneceğiz.
+
+49
+00:10:37,884 --> 00:10:42,604
+Dükkörkeni en tane alt dükkörkene göreceğiz.
+
+50
+00:10:43,583 --> 00:10:46,344
+Ve oradan bir hacim hesabıyla devam edeceğiz.
+
+51
+00:10:46,344 --> 00:10:47,264
+Şimdi bir bakalım.
+
+52
+00:10:47,264 --> 00:11:03,303
+Taban alanı xye düzleminde olan b bölgesi için taban alanı xye düzleminde b bölgesi olan ve üstten z eşit fxye yüzeye tarafından sınırlanan hismin hacmini bulmaya çalışalım.
+
+53
+00:11:04,364 --> 00:11:05,403
+Önce bir grafiği çizelim.
+
+54
+00:11:06,563 --> 00:11:07,442
+D bölgesi bu.
+
+55
+00:11:07,703 --> 00:11:11,724
+Taban alanı bir dükkörken veya burada bir parayla kenar olmuş.
+
+56
+00:11:11,724 --> 00:11:15,644
+Çok önemli değil.
+
+57
+00:11:16,583 --> 00:11:17,583
+Ama düzgün bir şekil.
+
+58
+00:11:19,024 --> 00:11:20,384
+Bu da yüzeyimiz olsun.
+
+59
+00:11:20,624 --> 00:11:24,403
+Alttan b bölgesi ile üstten de yüze ile kıslanan bölge.
+
+60
+00:11:25,504 --> 00:11:25,803
+Evet.
+
+61
+00:11:26,203 --> 00:11:26,682
+Cisim bu.
+
+62
+00:11:26,964 --> 00:11:28,524
+Cisimin hacmini bulmaya çalışacağız.
+
+63
+00:11:28,624 --> 00:11:29,043
+Şimdi burada.
+
+64
+00:11:30,224 --> 00:11:30,464
+Evet.
+
+65
+00:11:30,543 --> 00:11:33,124
+Xye düzleminde olsun tabanı.
+
+66
+00:11:33,604 --> 00:11:34,604
+Şimdi burada arkadaşlar.
+
+67
+00:11:40,283 --> 00:11:41,144
+Yapacağımız şey.
+
+68
+00:11:41,724 --> 00:11:43,744
+Dükkörkenler prizması oluşturmak.
+
+69
+00:11:43,823 --> 00:11:45,724
+Çünkü burada biz hacim bulmaya çalışıyoruz.
+
+70
+00:11:46,423 --> 00:11:50,364
+Az önceki sonra da alan bulmaya çalışıyorduk ve alt alanlara böldük.
+
+71
+00:11:50,504 --> 00:11:53,124
+Alt dükkörkenlere böldük ve onun alanlarını topladık.
+
+72
+00:11:53,224 --> 00:11:55,464
+Bu da ise hacmi alt hacimlere böleceğiz.
+
+73
+00:11:56,464 --> 00:11:57,484
+Yani V dediğim şey.
+
+74
+00:11:59,182 --> 00:12:04,823
+Bu oluşturmuş olduğumuz dükkörkenler prizmasının hacimlerin toplamı olacak.
+
+75
+00:12:05,663 --> 00:12:06,364
+Biraz devam edelim.
+
+76
+00:12:06,364 --> 00:12:06,724
+Şimdi.
+
+77
+00:12:08,163 --> 00:12:09,604
+A1 bölgesi burası.
+
+78
+00:12:09,764 --> 00:12:10,724
+A2 bölgesi burası.
+
+79
+00:12:10,724 --> 00:12:13,563
+Bu şekilde en tane parçaya böldüğümüzü düşünelim.
+
+80
+00:12:14,764 --> 00:12:19,083
+Burada tabi her bir dükkörkenler prizması için şöyle bir noktamız olacak.
+
+81
+00:12:19,182 --> 00:12:20,182
+Burası X1, Y1.
+
+82
+00:12:21,004 --> 00:12:22,224
+Burası X2, Y2.
+
+83
+00:12:22,744 --> 00:12:24,063
+Burası X3, Y3.
+
+84
+00:12:24,144 --> 00:12:24,823
+Böyle devam etsin.
+
+85
+00:12:25,384 --> 00:12:26,423
+En tane parça olsun.
+
+86
+00:12:26,964 --> 00:12:27,583
+Şimdi devam edelim.
+
+87
+00:12:27,583 --> 00:12:37,563
+Burada şu A1 bölgesi üzerindeki dükkörkenler prizmasının alanını bir görmeye çalışıyorum arkadaşlar.
+
+88
+00:12:37,744 --> 00:12:38,903
+Pardon hacmi görmeye çalışıyorum.
+
+89
+00:12:38,903 --> 00:12:48,224
+Çünkü şurası X1, Y1 ise bunun yüksekliği fonksiyonunu yerine koyduğumuzu elde ettiğimiz değer.
+
+90
+00:12:48,364 --> 00:12:49,364
+Yükseklik o zaman.
+
+91
+00:12:49,364 --> 00:12:52,524
+Fx1, Y1.
+
+92
+00:12:53,203 --> 00:12:57,504
+Taban alanında biz delta A1 diyelim.
+
+93
+00:12:57,504 --> 00:13:05,744
+Bu durumda V1, A1, delta A1 çarpı.
+
+94
+00:13:05,744 --> 00:13:08,803
+Fx1.
+
+95
+00:13:09,331 --> 00:13:23,672
+diyebilir olacak. V2 ise yine benzer şekilde, taban alanına delta A2 dersek, yükseklikte, eğer şu nokta X2Y2 ise, bunun yüksekliği, F2Y2 olmuş olacak.
+
+96
+00:13:26,836 --> 00:13:36,436
+bu şekilde en tane hacim elde etmiş olacağız delta a n çarpı f x n y n ve burada
+
+97
+00:13:37,254 --> 00:13:42,394
+bu durumda alta kalan alan için bir yaklaşık formül diyelim ve eştir
+
+98
+00:13:43,235 --> 00:13:50,596
+bunların toplamları i1 den n'e kadar delta a i çarpı
+
+99
+00:13:50,596 --> 00:13:56,894
+bu fx yi ve tabi burada
+
+100
+00:13:56,894 --> 00:14:04,316
+bu sonuçta hatalar var çünkü mesela ilk ülkenin ülkenin prizmasının hacmi
+
+101
+00:14:04,316 --> 00:14:09,436
+aslında altta kalan alanın hacminden daha büyük bu hataları sıfır ötürmek için yine
+
+102
+00:14:09,436 --> 00:14:14,716
+benzer şekilde en son söz etmemiz gerekiyor yani sonsuz parça yapmamız gerekiyor dolayısıyla
+
+103
+00:14:14,716 --> 00:14:27,216
+en son söz ederken iyi birden n'e kadar fx yi çarpı delta a i
+
+104
+00:14:28,596 --> 00:14:34,275
+bu ki biz bu toplama arkadaşlar f fonksiyonunun
+
+105
+00:14:36,115 --> 00:14:40,515
+f fonksiyonunu bu bölge üzerindeki çift altı entegreli olarak tanımlıyoruz
+
+106
+00:14:40,515 --> 00:14:43,515
+onu da göstereyim olarak şöyle bir göstermemiz var
+
+107
+00:14:44,515 --> 00:14:47,515
+çift altı entegreli olarak iki tane entegre işaretimiz olacak
+
+108
+00:14:47,515 --> 00:14:48,515
+şöyle yazayım
+
+109
+00:14:48,515 --> 00:14:49,515
+eşittir
+
+110
+00:14:49,515 --> 00:14:51,515
+iki entegre işareti
+
+111
+00:14:51,515 --> 00:14:53,515
+f fonksiyonu
+
+112
+00:14:54,515 --> 00:14:56,515
+ve burada da da
+
+113
+00:14:56,515 --> 00:14:57,515
+bu
+
+114
+00:14:57,515 --> 00:15:00,515
+dx dy de olabiliyor
+
+115
+00:15:00,515 --> 00:15:04,515
+dy dx de olabiliyor bunu daha sonra göreceğiz
+
+116
+00:15:04,515 --> 00:15:06,515
+sırası önemli çünkü
+
+117
+00:15:06,515 --> 00:15:09,515
+bu şekilde arkadaşlar bunu tanımlıyoruz
+
+118
+00:15:09,515 --> 00:15:10,515
+şimdi bir devam edelim
+
+119
+00:15:14,802 --> 00:15:17,082
+Evet, az önceki yazmış olduğum şeylere özellikle gördük.
+
+120
+00:15:22,082 --> 00:15:23,982
+Evet, B bölge üzerinde
+
+121
+00:15:23,982 --> 00:15:27,962
+bir geri geleyim.
+
+122
+00:15:28,043 --> 00:15:28,363
+Şurada
+
+123
+00:15:28,363 --> 00:15:30,903
+unutmuşum.
+
+124
+00:15:31,524 --> 00:15:32,982
+Şu altına B bölgesini yazıyoruz.
+
+125
+00:15:33,082 --> 00:15:34,283
+Çünkü burada bölgemiz önemli.
+
+126
+00:15:34,903 --> 00:15:37,423
+Bölgemize göre X'in ve Y'nin sınırlarını
+
+127
+00:15:37,423 --> 00:15:39,102
+belirliyoruz arkadaşlar.
+
+128
+00:15:39,264 --> 00:15:40,982
+O yüzden B bölgesini yazalım.
+
+129
+00:15:42,283 --> 00:15:43,403
+Evet, bunun anlamı ne?
+
+130
+00:15:43,403 --> 00:15:45,822
+F fonksiyonu B bölgesi üzerindeki
+
+131
+00:15:45,822 --> 00:15:46,923
+çift kalatlı integrali
+
+132
+00:15:46,923 --> 00:15:48,504
+bu şekilde gösteriliyor.
+
+133
+00:15:48,682 --> 00:15:51,043
+Veya işte DxD, Y, V, Y, D, Y, D, X
+
+134
+00:15:51,043 --> 00:15:53,082
+tabii dediğim gibi
+
+135
+00:15:53,082 --> 00:15:54,582
+bu durumda sınırlar değişiyor.
+
+136
+00:15:55,264 --> 00:15:56,403
+Veya D, A
+
+137
+00:15:56,403 --> 00:16:01,024
+bunun anlamı DxD, Y, V, Y, D, Y, D, X
+
+138
+00:16:01,024 --> 00:16:04,562
+evet, çift kalatlı integrali
+
+139
+00:16:04,562 --> 00:16:05,342
+bir aslında
+
+140
+00:16:05,342 --> 00:16:08,182
+bulmuş olduğumuz bu toplamın limiti olarak
+
+141
+00:16:08,182 --> 00:16:09,884
+bunu tanımlıyoruz.
+
+142
+00:16:11,342 --> 00:16:12,182
+Birazdan
+
+143
+00:16:12,182 --> 00:16:14,062
+göreceğiz aslında
+
+144
+00:16:14,062 --> 00:16:14,562
+ne oldu?
+
+145
+00:16:14,663 --> 00:16:16,062
+Şimdi ikinci fukuni teoremi
+
+146
+00:16:16,062 --> 00:16:18,722
+şimdi bölge üzerinde
+
+147
+00:16:18,722 --> 00:16:20,182
+bir fonksiyonun
+
+148
+00:16:20,182 --> 00:16:21,004
+mesela
+
+149
+00:16:21,004 --> 00:16:23,864
+X eksenine göre düzgün bir bölge
+
+150
+00:16:23,864 --> 00:16:26,462
+baktığımız zaman
+
+151
+00:16:26,462 --> 00:16:28,124
+X ekseninin üzerinde
+
+152
+00:16:28,124 --> 00:16:30,202
+bu bölgeyi görebiliriz.
+
+153
+00:16:30,202 --> 00:16:34,082
+X eksenine göre düzgün bir bölgeyi
+
+154
+00:16:34,082 --> 00:16:35,182
+ve
+
+155
+00:16:35,182 --> 00:16:36,144
+bu bölgeyi görebilirsiniz.
+
+156
+00:16:34,100 --> 00:16:55,220
+x'in üzerinde bölge a'dan b'ye, y ve x'e göre x'e bir dik çizdiğimizde, bu bölge üstten, y'iştir u x ile ısıtlanmış bir bölge, ve alttan da y'iştir v x ile ısıtlanmış bir bölge. Yani bölgemiz altta şu, y'iştir u x ile üstten,
+
+157
+00:16:59,860 --> 00:17:19,859
+üstten, yeştir, ve x ile alttan, kısıtlanan bir bölge, aynı zamanda sağdan ve soldan, yeştir, a ve x ile b ile kısıtlanmış bölge olarak tanımlayabiliriz. Bu bölge üzerinde, bir fx'ye fonksiyonunun, çift katlı integrali, şöyle diyelim,
+
+158
+00:17:19,859 --> 00:17:35,859
+B bölgesi üzerinde, fx'ye fonksiyonunun, çift katlı integrali, arkadaşlar, eğer böyle bu şekilde, kısıtlanmışsa, şöyle yapıyoruz, burada, x eksenine göre, düzgün bölge olduğu için,
+
+159
+00:17:39,442 --> 00:17:43,124
+x dışarıda, y ise içeride olacak.
+
+160
+00:17:44,022 --> 00:17:45,844
+dy, dx. Bu önemli.
+
+161
+00:17:47,844 --> 00:17:49,542
+Ve bu şu anlamı veriyor arkadaşlar.
+
+162
+00:17:50,202 --> 00:17:57,242
+İkinci, şu dışarıdaki integral işareti, x'e göre sınırları verilmeli.
+
+163
+00:17:58,042 --> 00:18:04,923
+İçerideki integral işaretinin sınırları ise, içerideki integral işareti, y'ye göre verilmeli.
+
+164
+00:18:05,144 --> 00:18:05,604
+Bu durumda.
+
+165
+00:18:12,019 --> 00:18:15,200
+x nereden nereydi? x a'dan b'ye
+
+166
+00:18:16,298 --> 00:18:17,298
+y ise
+
+167
+00:18:18,180 --> 00:18:22,778
+yani bölge ise alttan vx üstten ux'e kıslanmıştı
+
+168
+00:18:24,680 --> 00:18:26,278
+ux olarak
+
+169
+00:18:26,278 --> 00:18:29,278
+biz bu çift kağıdı integral'i hesaplıyoruz
+
+170
+00:18:29,278 --> 00:18:31,680
+bunu hesaplarken de, şey yazıyoruz pardon
+
+171
+00:18:31,680 --> 00:18:33,058
+hesaplarken ise
+
+172
+00:18:33,480 --> 00:18:36,598
+öncelikle içerden başlıyoruz yani şuradan
+
+173
+00:18:37,920 --> 00:18:41,920
+vx'den ux'e fx y'nin y'ye göre integral'ini çözüyoruz
+
+174
+00:18:41,920 --> 00:18:43,920
+daha sonra ortaya çıkan sonucu
+
+175
+00:18:47,420 --> 00:18:50,920
+a'dan b'ye ortaya çıkan sonucu x'e gül integre ediyoruz
+
+176
+00:18:52,618 --> 00:18:53,618
+burada önemli olan şey
+
+177
+00:18:54,220 --> 00:18:57,720
+bu çift kağıdı integral'in sınırlarını doğru bir şekilde yazabilmek
+
+178
+00:18:58,920 --> 00:18:59,420
+ve
+
+179
+00:19:00,318 --> 00:19:00,818
+evet
+
+180
+00:19:01,720 --> 00:19:02,818
+bakalım şimdi eğer
+
+181
+00:19:03,519 --> 00:19:06,220
+bölgemiz y-x'e göre düzgün bir bölge ise
+
+182
+00:19:06,920 --> 00:19:07,519
+bu durumda
+
+183
+00:19:08,818 --> 00:19:09,920
+bölgemizi bir yazalım
+
+184
+00:19:09,920 --> 00:19:11,920
+burada artık
+
+185
+00:19:12,920 --> 00:19:15,920
+sınırlar c'den, yani y-x'in üzerinde c'den d'ye
+
+186
+00:19:16,420 --> 00:19:19,920
+o yüzden y'ye c'den y'ye c'den d'ye
+
+187
+00:19:20,920 --> 00:19:21,618
+ve
+
+188
+00:19:22,420 --> 00:19:25,920
+y'ye göre olduğu için y'ye bir dik çizdiğimde
+
+189
+00:19:25,920 --> 00:19:27,920
+bu bölge
+
+190
+00:19:27,920 --> 00:19:28,920
+bu bölge b bölgesi üstten
+
+191
+00:19:29,920 --> 00:19:30,920
+ve alttan başlayalım
+
+192
+00:19:30,920 --> 00:19:31,920
+x'e'ye c'dir
+
+193
+00:19:32,420 --> 00:19:33,920
+r y ile alttan
+
+194
+00:19:34,920 --> 00:19:36,920
+ve x'e'ye c'dir
+
+195
+00:19:37,420 --> 00:19:39,920
+s y ile s fonksiyonu ile üstten
+
+196
+00:19:40,420 --> 00:19:41,420
+kısıtlanmış bir bölge
+
+197
+00:19:41,420 --> 00:19:42,420
+bölge
+
+198
+00:19:42,420 --> 00:19:43,420
+dolayısıyla
+
+199
+00:19:43,420 --> 00:19:44,420
+bizim çift kağıdı integral'imiz
+
+200
+00:19:44,420 --> 00:19:45,420
+bir fx'e fonksiyonu
+
+201
+00:19:46,420 --> 00:19:47,420
+bu b bölgesi üzerindeki
+
+202
+00:19:47,920 --> 00:19:49,420
+çift kağıdı integrali
+
+203
+00:19:49,420 --> 00:19:51,420
+bu bölge
+
+204
+00:19:53,394 --> 00:20:19,174
+yazarken şöyle yazacağız. F, X, Y, D. Artık burada, öncekinde X dışarıdaydı. Burada ise Y dışarıda olacak. Çünkü Y ekseniden göre düzgün bölge. O yüzden D, X, D, Y diyoruz. Bu durumda Y dışarıda olduğu için dışarıdaki integral sınırlarını Y'ye göre, içeridekinin ise X'e göre vermemiz gerekiyor. O zaman yazalım.
+
+205
+00:20:24,596 --> 00:20:46,954
+c, x, d, y. y'nin sınırları neydi? c'den d, y idi. c'den d, y. x'in sınırları ise, bölge alttan, ry fonksiyonu ile üstten de sy fonksiyonu ile kıslanmış bir bölge olduğu için, sınırları bu şekilde yazıyoruz.
+
+206
+00:20:46,954 --> 00:21:04,214
+Bunun hesaplarıyla yine benzer şekilde, öncelikle içeriden başlıyoruz. Bu içerideki integral, x'e göre integral, dışarıdaki integral ise y'e göre integral. İçeriden başlıyoruz. Bunu çözdükten sonra, ortaya çıkan sonucu y'e göre integral edip, sınırları yerine koyuyoruz.
+
+207
+00:21:05,134 --> 00:21:07,394
+Evet, var mı herhangi bir sınırınız arkadaşlar buraya kadar?
+
+208
+00:21:19,380 --> 00:21:24,019
+Evet, sorunuz var mı? Anlaşılmayan herhangi bir yer var mı?
+
+209
+00:21:34,098 --> 00:21:49,098
+o zaman biraz soru çözelim B bölgesi x0 x0 x2 y0 ve y2 x2 x2 olarak verilmiş
+
+210
+00:21:49,098 --> 00:21:57,740
+bu entegrede B bölgesi üzerinde artık bu fonksiyonumuz etkisi edilmiş y y fonksiyonu
+
+211
+00:21:57,740 --> 00:22:06,240
+B bölgesi üzerindeki çift ve altı entegrede sırasıyla x'e göre ve y'ye göre düzgün bölge olarak hesaplamaya çalışalım
+
+212
+00:22:06,240 --> 00:22:12,240
+Öncelikle bölgemizi çizelim burada bölge çizmek önemli
+
+213
+00:22:12,240 --> 00:22:21,740
+y eşit x2 bir parabol şöyle sağdırıp tutuyorum sadece
+
+214
+00:22:21,740 --> 00:22:28,240
+bu şimdi yeşil 0 yeşil iskara yeşil 0 dediğim şey iş ekseni
+
+215
+00:22:29,939 --> 00:22:31,740
+bu demek ki x ekseni ile
+
+216
+00:22:32,439 --> 00:22:36,858
+bu parabol arasında kalan bir bölge olacak ve ilk seçim 2
+
+217
+00:22:38,078 --> 00:22:41,740
+bu ola burası demek ki bölgemiz burada arkadaşlar
+
+218
+00:22:41,740 --> 00:22:48,740
+bu şurası sıfır zaten evet şimdi bakalım
+
+219
+00:22:49,740 --> 00:22:51,740
+x'e göre
+
+220
+00:22:54,962 --> 00:22:56,063
+Düzgün bölge değil.
+
+221
+00:23:01,875 --> 00:23:13,875
+Bu durumda bu b bölgesi üzerindeki y fonksiyonunun çift katlı integrali y, dy dx olacak bu durumda.
+
+222
+00:23:14,536 --> 00:23:17,516
+Çünkü x'e göre olduğuna göre x dışarıda olmalı.
+
+223
+00:23:18,056 --> 00:23:20,914
+Peki x nereden nereye? x sıfırdan x ikiye.
+
+224
+00:23:22,836 --> 00:23:24,375
+Peki y nereden nereye?
+
+225
+00:23:24,375 --> 00:23:30,634
+Bölgeye baktığımız zaman bölge alttan y eşit sıfır ile üstten de y eşit x kare ile kısıtlanmış.
+
+226
+00:23:30,634 --> 00:23:32,674
+O zaman sıfırdan x kareye.
+
+227
+00:23:33,336 --> 00:23:34,454
+Şimdi bu ifadeyi çözelim.
+
+228
+00:23:35,296 --> 00:23:36,615
+Öncelikle içeriden başlıyoruz.
+
+229
+00:23:37,154 --> 00:23:38,414
+Şunu bir yazalım sıfırdan ikiye.
+
+230
+00:23:39,036 --> 00:23:43,194
+Şu içerideki integralini çözersek sıfırdan x kareye y, dy.
+
+231
+00:23:44,654 --> 00:23:46,394
+İntegre ettiğimiz zaman y kare bölü 2.
+
+232
+00:23:48,796 --> 00:23:51,276
+Sıfırdan x kareye dx.
+
+233
+00:23:52,474 --> 00:23:54,516
+Ve yerine koyduğumuzda sıfırdan ikiye.
+
+234
+00:23:55,355 --> 00:23:57,316
+Şurada yerine koyduğumuzda x yarı 4 bölü 2.
+
+235
+00:23:57,576 --> 00:23:59,516
+Eksi sıfır yani x yarı 4 bölü 2.
+
+236
+00:24:00,634 --> 00:24:01,974
+Dx.
+
+237
+00:24:02,516 --> 00:24:04,934
+Ve bunu entegre ettiğimizde x yarı 5 bölü 10.
+
+238
+00:24:06,414 --> 00:24:07,596
+Sıfırdan ikiye.
+
+239
+00:24:07,836 --> 00:24:10,276
+Sonucumuz 32 bölü 10'dan 16 bölü.
+
+240
+00:24:13,375 --> 00:24:14,454
+16 bölü 5.
+
+241
+00:24:15,276 --> 00:24:15,894
+Şimdi gelelim.
+
+242
+00:24:16,375 --> 00:24:19,096
+Y eksene göre biz bunu ifade edebilir miyiz?
+
+243
+00:24:19,934 --> 00:24:21,115
+Tekrardan bölgeyi çizeyim.
+
+244
+00:24:31,892 --> 00:24:32,892
+Bu, yeşil tek skala.
+
+245
+00:24:36,852 --> 00:24:38,852
+ve seçimle ki
+
+246
+00:24:41,490 --> 00:24:51,050
+Şimdi y eksene göre, y'ye göre diyelim, y'ye göre, düzgün bölge.
+
+247
+00:24:52,711 --> 00:25:05,250
+Bu durumda integralimiz, b bölgüsü üzerinde, y, d, x, dy olacak arkadaşlar.
+
+248
+00:25:05,250 --> 00:25:08,510
+Ve bu durumda, d, x, dy olduğu için,
+
+249
+00:25:11,892 --> 00:25:14,172
+sınırları tekrar ifade etmek gerekiyor.
+
+250
+00:25:21,298 --> 00:25:28,980
+bu bölge bu y ekseni üzerinde nereden nereye bakalım y ekseni üzerinde
+
+251
+00:25:30,180 --> 00:25:39,778
+sıfırdan x2 ise 4 sıfırdan 4'e kadar yazayım y sıfırdan 4'e
+
+252
+00:25:39,778 --> 00:25:57,798
+y eksene göre baktığımız için y'ye bir bölge üzerinden y'ye bir dik çizdiğimizde bu doğru bölgeyi alttan parabol ile üstten de x eşit 2 doğrusu ile kesiyor
+
+253
+00:25:57,798 --> 00:26:03,538
+şimdi parabolun denklemini artık y'ye göre vermek zorundayız yani x eşit bir şey olarak vermek zorundayız
+
+254
+00:26:03,538 --> 00:26:10,538
+y eşit x2 ise x eşit artı eksi kök y'dir
+
+255
+00:26:10,538 --> 00:26:16,538
+tabi burada x pozitif olduğu için x eşit kök y olacak
+
+256
+00:26:16,538 --> 00:26:26,538
+dolayısıyla bu b bölgesi x eşit kök y ile alttan ve x eşit 2 ile üstten kısıtlanmış bir bölge
+
+257
+00:26:26,538 --> 00:26:30,538
+o zaman bizim çift artı integrörümüz artık sınırları belirledik
+
+258
+00:26:30,538 --> 00:26:59,909
+y y y y 0'dan 4'e y y 0'dan 4'e y
+
+259
+00:27:03,092 --> 00:27:09,291
+0'dan 4'e. Tek tek yerine koyduğumuzda, 2y,
+
+260
+00:27:11,392 --> 00:27:14,291
+eksi, y üzeri 3 bölü 2.
+
+261
+00:27:17,810 --> 00:27:20,810
+y2
+
+262
+00:27:20,810 --> 00:27:23,810
+y5 bölü 2
+
+263
+00:27:23,810 --> 00:27:26,810
+5 bölü 2
+
+264
+00:27:26,810 --> 00:27:29,810
+ve 0'da
+
+265
+00:27:29,810 --> 00:27:32,810
+4'e yerine koyduğumuzda
+
+266
+00:27:32,810 --> 00:27:35,810
+4 üzeri 2 den 16
+
+267
+00:27:35,810 --> 00:27:38,810
+4 üzeri 5 bölü 2 den
+
+268
+00:27:38,810 --> 00:27:41,810
+32
+
+269
+00:27:41,810 --> 00:27:43,810
+çarpı
+
+270
+00:27:43,810 --> 00:27:46,810
+2 bölü 5
+
+271
+00:27:46,810 --> 00:27:48,810
+4'e yerine koyduğumuzda
+
+272
+00:27:48,810 --> 00:27:50,810
+80-64
+
+273
+00:27:50,810 --> 00:27:52,810
+16 bölü 5
+
+274
+00:27:52,810 --> 00:27:54,810
+olarak aynı sonucu bulduk
+
+275
+00:27:54,810 --> 00:27:56,810
+arkadaşlar
+
+276
+00:27:56,810 --> 00:27:58,810
+şimdi dikkat ettiysek
+
+277
+00:27:58,810 --> 00:28:00,810
+integrasyon sırasını değiştirmek
+
+278
+00:28:02,810 --> 00:28:04,810
+burada dy dx
+
+279
+00:28:04,810 --> 00:28:06,810
+burada dx dy
+
+280
+00:28:06,810 --> 00:28:08,810
+aynı fonksiyon için
+
+281
+00:28:08,810 --> 00:28:10,810
+integrasyon sırasını değiştirmek
+
+282
+00:28:10,810 --> 00:28:12,810
+sonucu etkilemiyor
+
+283
+00:28:12,810 --> 00:28:14,810
+bir fonksiyonun bir bölge üzerindeki çift kalı
+
+284
+00:28:14,810 --> 00:28:16,810
+integrasyon sırasını değiştirecek
+
+285
+00:28:16,810 --> 00:28:18,810
+bile değişmez
+
+286
+00:28:18,810 --> 00:28:20,810
+bu bizim için önemli
+
+287
+00:28:20,810 --> 00:28:24,810
+çünkü bazen bu içeride verilen fxf fonksiyonunun
+
+288
+00:28:24,810 --> 00:28:26,810
+bir integr
+
+289
+00:28:26,810 --> 00:28:28,810
+buradaki integrasyona göre
+
+290
+00:28:28,810 --> 00:28:30,810
+integrasyon değişkenine göre
+
+291
+00:28:30,810 --> 00:28:32,810
+integrali
+
+292
+00:28:32,810 --> 00:28:34,810
+elementer yöntemlerle alınmayabiliyor
+
+293
+00:28:34,810 --> 00:28:36,810
+bu durumda
+
+294
+00:28:36,810 --> 00:28:38,810
+biz integrasyon sırasını değiştirerek
+
+295
+00:28:38,810 --> 00:28:40,810
+o soruyu çözüyoruz
+
+296
+00:28:40,810 --> 00:28:42,810
+çözüyoruz arkadaşlar
+
+297
+00:28:42,810 --> 00:28:44,810
+onun için bu önemli bir kural
+
+298
+00:28:44,810 --> 00:29:04,810
+evet burada alışınmadan herhangi bir şey var mı
+
+299
+00:28:53,778 --> 00:29:10,700
+X ve Y'ye göre, aslında yaptığımız şey, integrasyon sırasını değiştirmek. Her iki eksene göre de, bu verilen integral, çift katlı integralini hesaplamış olduk. Diğer sorumuza bakalım.
+
+300
+00:29:17,428 --> 00:29:18,428
+Evet.
+
+301
+00:29:20,028 --> 00:29:32,428
+0'dan 1'e, 1'den y'ye, sinüs x kare, dxt, y. Şimdi içerideki integral'e baktığımız zaman, yani şuraya sinüs x kare, dx. Bu bizim
+
+302
+00:29:34,827 --> 00:29:39,728
+gördüğümüz elementer, integral alma yöntemleri ile
+
+303
+00:29:39,728 --> 00:29:44,228
+arkadaşlar, çözülebilen bir integral değil. Olmadığı için,
+
+304
+00:29:45,667 --> 00:29:47,167
+burada yapmamız gereken şey,
+
+305
+00:29:48,067 --> 00:29:51,988
+integrasyon sırasını değiştirerek, bu integral'ı yeniden ifade etmek. Yani eşittir.
+
+306
+00:29:53,988 --> 00:29:56,988
+Sinüs x kare, dy,
+
+307
+00:29:57,988 --> 00:29:59,708
+dx olarak bunu yazmak,
+
+308
+00:30:00,288 --> 00:30:01,968
+yazmamız lazım. Bu durumda,
+
+309
+00:30:02,788 --> 00:30:05,887
+sınırlar değişmesi gerekiyor. O yüzden
+
+310
+00:30:05,887 --> 00:30:07,147
+öncelikle bölgemizi,
+
+311
+00:30:07,147 --> 00:30:10,188
+belirliyoruz,
+
+312
+00:30:10,188 --> 00:30:11,847
+belirliyoruz. Dediğimiz gibi,
+
+313
+00:30:11,847 --> 00:30:13,827
+dışarıdaki integral, dışarıdaki değişken,
+
+314
+00:30:15,827 --> 00:30:16,728
+içerideki integral,
+
+315
+00:30:17,167 --> 00:30:20,688
+içerideki değişkene ait. Bu durumda,
+
+316
+00:30:20,688 --> 00:30:36,847
+y,
+
+317
+00:30:43,923 --> 00:30:52,982
+Evet, ilk seçtiğiye doğrusu, ilk seçtiğiye, ve ilk seçtiği bir doğrusu, pardon, ilk seçtiği bir doğrusu.
+
+318
+00:30:57,875 --> 00:31:08,875
+Şimdi bölge, y iseniz yerinde zaten bunu ifade etmeniz lazım. Şey, o şekilde verilmiş. Bölge y iseniz yerinde sıfırdan bire gelmiş. Yani buraya kadar.
+
+319
+00:31:10,875 --> 00:31:20,875
+Peki ne? Demek ki kıslanan yer, bölge alttan doğru ile üstten de x'i çiftliğe kıslandığı için kıslanan yer arkadaşlar burası olmuş olacak.
+
+320
+00:31:23,892 --> 00:31:34,892
+Şimdi biz bunu dy, dx olarak ifade etmemiz gerektiğinden, x'e x'e göre düzgün bir bölge olarak düşünmemiz lazım. Bu durumda...
+
+321
+00:31:39,154 --> 00:32:00,474
+Bu durumda, şu x eksen üzerinde, bölgemiz sıfırdan 1'e, demek ki x sıfırdan x 1'e, ve x eksenine dik bir çizgi çizdiğimizde bölge üzerinden, bu dik çizgi bölgeyi üstten x eşittir y ile kesiyor, alttan da x eksenini kesiyor.
+
+322
+00:32:00,474 --> 00:32:19,375
+Dolayısıyla, üstten y eşittir, alttan başlamışsız, y eşittir 0, üstten de y eşittir x ile kısıtlanmış bir bölge. Dolayısıyla, çift katlı integralin sınırları x sıfırdan 1'e, y ise 0'dan x'e.
+
+323
+00:32:20,615 --> 00:32:23,515
+Şimdi artık, bu içerideki integrali, yani şurayı çözebiliriz.
+
+324
+00:32:28,660 --> 00:32:36,980
+Çünkü sinüs x kare y'den bağımsız bir fonksiyon. Dolayısıyla y'e göre aslında bir sabit gibi düşünemeliyiz.
+
+325
+00:32:36,980 --> 00:32:50,500
+Bu durumda yine tekrar 0'dan 1'e. Burası artık y çarpı sinüs x kare olacak. 0'dan x'e dx.
+
+326
+00:32:50,500 --> 00:33:04,099
+Yerine koyduğumuzda x çarpı sinüs x kare 0 yazdığımızda 0 gelecek.
+
+327
+00:33:04,099 --> 00:33:12,099
+Artık şunu rahat bir şekilde integr edebiliriz. Çünkü x karenin türevi yan tarafında var.
+
+328
+00:33:12,099 --> 00:33:19,700
+Neyin türevinden sinüs x kare gelir? Kusunus x karenin türevinden sinüs x kare gelir. Dolayısıyla bir kusunus x kare olacak.
+
+329
+00:33:19,700 --> 00:33:23,299
+Bunun türevini aldığımızda bunun türevi nedir?
+
+330
+00:33:23,299 --> 00:33:31,700
+x2 x çarpı cos x kare. Dolayısıyla burayı eksi 2'ye bölünen lazım.
+
+331
+00:33:31,700 --> 00:33:45,700
+x2 x kare bölü 2 0'dan 1'e ve yerine koyduğumuzda eksi cos 1 bölü 2 eksi
+
+332
+00:33:45,700 --> 00:33:47,700
+çarpı sinüs x kare.
+
+333
+00:33:47,700 --> 00:33:49,299
+x2 x kare.
+
+334
+00:33:49,460 --> 00:33:58,839
+eksi eksi olacak, artı, kosinus 0 bölü 2, sonucu olamaz, sonucumuz 1 eksi, kosinus 1 bölü 2 arkadaşlar.
+
+335
+00:34:01,538 --> 00:34:09,480
+Evet, bu elementer olmayan integrali, bu şekilde, değişken dönüşümü yardımıyla,
+
+336
+00:34:10,940 --> 00:34:15,380
+pardon, değişken dönüşümü, yanlış oldu, değişken dönüşümü bu değil arkadaşlar.
+
+337
+00:34:16,460 --> 00:34:19,380
+Eğer böyle bir fayda kullandıysam şu anaklar, sırada yanlış oldu.
+
+338
+00:34:19,460 --> 00:34:23,559
+İntegrasyon sırasını yer değiştirerek, yaptığımız için,
+
+339
+00:34:23,659 --> 00:34:26,219
+integrasyon sırasını yer değiştirmek, değişken dönüşümü değil,
+
+340
+00:34:27,000 --> 00:34:28,719
+integrasyon sırasını yer değiştirerek,
+
+341
+00:34:29,239 --> 00:34:31,239
+bu elementer olmayan integrali, bu şekilde,
+
+342
+00:34:32,260 --> 00:34:34,460
+çözmüş olduk diyelim.
+
+343
+00:34:38,612 --> 00:34:40,431
+Evet, var mı alışımdan herhangi bir şey?
+
+344
+00:34:47,539 --> 00:34:49,239
+Yoksa diğer sorumuza geçelim.
+
+345
+00:34:54,675 --> 00:34:55,155
+Evet.
+
+346
+00:34:57,175 --> 00:34:57,835
+Yine burada
+
+347
+00:35:02,099 --> 00:35:09,318
+Önce bir bölge çizelim. Bölgemiz 0, x eşit 0, y eşit 0 ve y eşit 4 eksik iskare ile kıssanmış bir bölge.
+
+348
+00:35:17,460 --> 00:35:20,719
+Evet, yeşil 4 eski iskare bir parabol.
+
+349
+00:35:23,719 --> 00:35:25,440
+Nasıl? Önce bir yolu görelim.
+
+350
+00:35:26,300 --> 00:35:31,719
+Normalde yeşil 4 eski iskare, kollar aşağı olan ve orijinal iken şöyle bir paraboldür.
+
+351
+00:35:32,360 --> 00:35:34,940
+Burada bir 4 var. Bu da 4 ne işe yarıyor? Öteleme işe yarıyor.
+
+352
+00:35:35,880 --> 00:35:39,860
+Bu parabolu yeşil 4'e yukarı ötele demek.
+
+353
+00:35:40,860 --> 00:35:42,639
+Yani bu durumda şöyle bir
+
+354
+00:35:42,639 --> 00:35:47,639
+bir grafiği olacak.
+
+355
+00:35:48,900 --> 00:35:49,679
+Bir grafiği olacak.
+
+356
+00:35:54,132 --> 00:36:01,831
+y ekseni, x ekseni, y'yi 4'te, x'i de x'i 2'yi artik ile kesen bir parabol. Şöyle diyelim.
+
+357
+00:36:04,492 --> 00:36:14,132
+Şurası 4, burası 2, ve x eşli 0, y ekseni, y eşli 0, x ekseni, arada kalan bölgede, burası olmuş olacak arkadaşlar.
+
+358
+00:36:17,291 --> 00:36:19,152
+Şimdi bunu x'e göre bir ifade edelim.
+
+359
+00:36:25,172 --> 00:36:31,431
+Ve önce y'ye göre bir ifadedir. Yani y eksenine göre düzgün bir bölük olarak bunu düşünürsek eğer,
+
+360
+00:36:35,188 --> 00:36:39,148
+Pardon.
+
+361
+00:36:39,347 --> 00:36:41,407
+X eşitliğine göre düzgün bölge olarak düşünürsek
+
+362
+00:36:41,407 --> 00:36:43,068
+otomat X eşitli sıfırdan
+
+363
+00:36:43,068 --> 00:36:47,188
+X eşitli ikiye ve
+
+364
+00:36:47,188 --> 00:36:49,288
+fonksiyon alttan
+
+365
+00:36:49,288 --> 00:36:50,748
+Y eşitli sıfır ile kıslanmış.
+
+366
+00:36:51,367 --> 00:36:53,168
+Ve üstten de parabol ile yani
+
+367
+00:36:53,168 --> 00:36:54,947
+Y eşitli 4 eksi
+
+368
+00:36:54,947 --> 00:36:57,007
+X kare ile kıslanmış. Bu durumda
+
+369
+00:36:57,007 --> 00:36:58,467
+İntegra şuna dönüşecek.
+
+370
+00:36:59,327 --> 00:37:00,608
+Bu B bölgesi üzerindeki
+
+371
+00:37:00,608 --> 00:37:03,547
+üzerinde X çarpı
+
+372
+00:37:03,547 --> 00:37:04,128
+E'ye zili
+
+373
+00:37:04,128 --> 00:37:07,027
+2Y bölü 4 eksi
+
+374
+00:37:07,027 --> 00:37:07,327
+Y
+
+375
+00:37:07,327 --> 00:37:10,806
+DA dediğimiz
+
+376
+00:37:10,806 --> 00:37:11,387
+İntegra
+
+377
+00:37:11,387 --> 00:37:15,447
+X 80'e göre düzgün bölge olarak düşündüğümüzde
+
+378
+00:37:15,447 --> 00:37:19,268
+Bölü 4 eksi
+
+379
+00:37:19,268 --> 00:37:19,608
+Y
+
+380
+00:37:19,608 --> 00:37:20,708
+DY
+
+381
+00:37:20,708 --> 00:37:23,487
+DX o olacak bu durumda.
+
+382
+00:37:23,588 --> 00:37:25,427
+Çünkü X 80'e göre düzgün düşündük.
+
+383
+00:37:25,987 --> 00:37:26,306
+O yüzden
+
+384
+00:37:26,306 --> 00:37:28,568
+X değişkeni dışarıda olacak.
+
+385
+00:37:29,208 --> 00:37:31,128
+Ve X'in sınırları sıfırdan ikiye idi.
+
+386
+00:37:31,128 --> 00:37:35,806
+Y'nin sınırları sıfırdan
+
+387
+00:37:35,806 --> 00:37:37,007
+4 eksi
+
+388
+00:37:37,007 --> 00:37:38,347
+X kare.
+
+389
+00:37:38,347 --> 00:37:39,027
+Burada
+
+390
+00:37:39,027 --> 00:37:40,027
+Y'nin sınırları sıfırdan
+
+391
+00:37:47,092 --> 00:37:54,791
+Burada, şu içerideki entegreleri çözmek, yine dediğiniz gibi elementer yöntemlerle basit değil.
+
+392
+00:37:55,692 --> 00:37:59,492
+Ve elementer yöntemlerle alınmaya da bilir, tahmin ediyorum.
+
+393
+00:38:00,192 --> 00:38:11,791
+Yani, x çarpı e zili 2y bölü 4 eksi y'nin y'ye göre entegreli basit bir entegre değil.
+
+394
+00:38:11,791 --> 00:38:16,251
+O yüzden burada entegreasyon sırasını değiştirmeliyiz.
+
+395
+00:38:16,391 --> 00:38:20,851
+Yani, bunu şöyle ifade edeceğiz.
+
+396
+00:38:22,952 --> 00:38:36,172
+x çarpı e zili 2y bölü 4 eksi y, dx dy, yani y ekserine göre, y'ye göre düzgün bölge olarak düşündüğümüzde düşünmemiz gerekiyor.
+
+397
+00:38:36,172 --> 00:38:47,112
+Bu durumda, y nereden nereye bu bölge üzerinde, bu bölge için 0'dan 4 e, y'miz 0'dan 4 e.
+
+398
+00:38:47,152 --> 00:38:48,112
+Peki, x nereden nereye?
+
+399
+00:38:48,271 --> 00:38:56,251
+Şöyle bir çizgi çizdiğimiz zaman, bu çizgi alttan, bölgeyi alttan y ekseni ile, yani x'e için 0 ile kesiyor.
+
+400
+00:38:57,532 --> 00:38:59,572
+Üstten ise, parabolle kesiyor.
+
+401
+00:38:59,572 --> 00:39:06,512
+Evet, tabii bunu yaparken de, x'i y bir fonksiyon olarak bunu yazdığımızda lazım.
+
+402
+00:39:06,811 --> 00:39:16,431
+Burada, x'i çekersek eğer, x eşittir, artı eksi, kök içerisinde 4 eksi y.
+
+403
+00:39:17,112 --> 00:39:20,271
+Fakat burada, x pozitif, pozitif olduğu için negatif almıyoruz.
+
+404
+00:39:21,411 --> 00:39:22,112
+Bu negatif yok.
+
+405
+00:39:22,311 --> 00:39:25,172
+O zaman, x kök içerisinde 4 eksi y.
+
+406
+00:39:25,172 --> 00:39:55,172
+Evet.
+
+407
+00:39:30,003 --> 00:39:41,422
+Bu durumda, y'nin sınırları 0'dan 4'e ve x'in sınırları ise 0'dan kök içerisinde 4 eksi y'yi.
+
+408
+00:39:42,182 --> 00:39:44,143
+Burada, şimdi çözelim bakalım.
+
+409
+00:39:46,143 --> 00:39:50,963
+0'dan 4'e, artık bunu integre etmek kolay x'e göre.
+
+410
+00:39:50,963 --> 00:39:56,503
+Çünkü, e' de 2'ye böyle 4 eksi y'ye bir sabit gibi bunu düşüneceğiz.
+
+411
+00:39:56,503 --> 00:39:57,784
+Çünkü, x'ten bağımsız.
+
+412
+00:39:58,182 --> 00:39:58,864
+Burada bir x var.
+
+413
+00:39:59,063 --> 00:40:00,922
+Bunun integreleri, o zaman x kare bölü 2.
+
+414
+00:40:01,764 --> 00:40:10,083
+x kare bölü, 2 çarpı, e üzeri 2'ye, bölü, 4 eksi y'ye, nereden nereye?
+
+415
+00:40:10,222 --> 00:40:13,864
+0'dan, kök içerisinde, 4 eksi y'yi.
+
+416
+00:40:14,043 --> 00:40:15,463
+Dışarıda bir değiğimiz var.
+
+417
+00:40:16,023 --> 00:40:16,742
+Devam edelim buradan.
+
+418
+00:40:17,943 --> 00:40:22,182
+0'dan, 4'e, burada yerine koyduğumuzda,
+
+419
+00:40:23,222 --> 00:40:25,543
+kök 4 eksi y'nin karesi, 4 eksi y'ye.
+
+420
+00:40:29,172 --> 00:40:35,692
+çarpı e-2y bölü 2 çarpı 4-y.
+
+421
+00:40:36,831 --> 00:40:38,012
+e-d.
+
+422
+00:40:38,351 --> 00:40:44,092
+buradan 4-y'ler sağdaleşir, geriye kanal ifade, gayet basit. e-2y bölü 2.
+
+423
+00:40:44,710 --> 00:40:47,612
+bunu da yeğeri entegre ettiğimizde,
+
+424
+00:40:48,052 --> 00:40:51,172
+1 bölü 4 çarpı e-2y,
+
+425
+00:40:51,831 --> 00:40:54,112
+nereden nereye? sıfırda 4'e.
+
+426
+00:40:54,112 --> 00:41:01,771
+yerine koyduğumuzda, 1 bölü 4 çarpı e-8, e-e-0'dan 1.
+
+427
+00:41:02,831 --> 00:41:06,771
+olarak, sonucumuzu bulmuş olduk arkadaşlar.
+
+428
+00:41:09,271 --> 00:41:10,492
+evet, burada
+
+429
+00:41:12,992 --> 00:41:17,271
+verilen bölge üzerinde, bu fonksiyonun, cifre hatı entegreliği bulmuş olduk.
+
+430
+00:41:17,271 --> 00:41:19,271
+tabi burada,
+
+431
+00:41:19,271 --> 00:41:22,271
+önce x'e göre düzgün bölge olarak düşündüğümüzde,
+
+432
+00:41:22,271 --> 00:41:25,271
+bu ortaya çıkan entegreliği çözemediğimizde,
+
+433
+00:41:25,271 --> 00:41:29,271
+bunu çözemediğimizde,
+
+434
+00:41:29,271 --> 00:41:32,271
+daha doğrusu elementer yöntemlerle çözemediğimizde,
+
+435
+00:41:32,271 --> 00:41:36,271
+bunu,
+
+436
+00:41:36,271 --> 00:41:38,271
+veya çözümü uzun olduğunda,
+
+437
+00:41:38,271 --> 00:41:41,271
+burada,
+
+438
+00:41:41,271 --> 00:41:43,271
+integrasyon sırasını yer değiştirerek,
+
+439
+00:41:43,271 --> 00:41:44,271
+bunu çözdük.
+
+440
+00:41:44,271 --> 00:41:45,271
+integrasyon sırasını yer değiştirdiğimizde,
+
+441
+00:41:45,271 --> 00:41:48,271
+sınırlar genelde değişir.
+
+442
+00:41:48,271 --> 00:41:49,271
+ve değiştiğinde,
+
+443
+00:41:49,271 --> 00:41:51,271
+bölge üzerinden,
+
+444
+00:41:51,271 --> 00:41:53,271
+sınırları yeniden ifade ederek,
+
+445
+00:41:53,271 --> 00:41:55,271
+bu integrasyon sırasını değiştirdik ve,
+
+446
+00:41:55,271 --> 00:41:58,271
+çift katlı integralimizi çözmüş olduk.
+
+447
+00:41:58,271 --> 00:42:07,271
+bir sonraki sorumuza bakalım.
+
+448
+00:42:10,099 --> 00:42:16,759
+mi Evet bu yine beyaz şekilde burada bir elementer olmayan bir
+
+449
+00:42:18,039 --> 00:42:27,739
+bu integral var o da bu e-xye bölü diye ve e-y bölüye değil ya bunun
+
+450
+00:42:27,739 --> 00:42:32,980
+İntegre öyle benim bildiğim kadarıyla elementer yöntemleri çözülemiyor kuvvet serisi yardımıyla
+
+451
+00:42:32,980 --> 00:42:40,059
+çözülebilir O yüzden burada İntegrasyon sözünün yer değiştirilir yani biz bunu
+
+452
+00:42:41,059 --> 00:42:50,980
+bu e-y x bölüye de ye para de x de olarak bu ifade etmeliyiz bu durumda şunu İntek etmek kolay
+
+453
+00:42:53,659 --> 00:42:58,059
+bu fakat bu durumda sınırlar nedir ona bakalım şimdi Öncelikle bölgemiz
+
+454
+00:42:58,059 --> 00:43:05,860
+bu burada değil dışarıda olduğu için bu sınırlar ne göre verilmiş ilk segeret üzüm
+
+455
+00:43:05,860 --> 00:43:14,818
+bölge olarak verilmiş ilk seçim sıfırda şarkı iki şimdi bu seçim bile ve içerideki de
+
+456
+00:43:14,818 --> 00:43:25,679
+içerideki tekrar içerideki değişkene göre bu demek ki bölge alttan yeşil x üstten ise yeşil
+
+457
+00:43:25,679 --> 00:43:28,480
+bu bölge kısıtlanmış bölge şimdi bölgemiz çizelim
+
+458
+00:43:28,480 --> 00:43:42,639
+bölgemiz çizelim
+
+459
+00:43:35,411 --> 00:43:43,411
+y-h-x bölgesi, doğrusu, y-h-1, elektris tanmış.
+
+460
+00:43:46,110 --> 00:43:48,610
+Ve bölge x'e göre verilmişti.
+
+461
+00:43:49,311 --> 00:43:55,911
+Nereden nereye? 0'dan 1'e. O zaman bölgemiz şurada arkadaşlar.
+
+462
+00:43:58,811 --> 00:44:03,911
+Çünkü bölge x'e bir dik çizdiğimizde,
+
+463
+00:44:05,411 --> 00:44:07,710
+bölge alttan doğru ile üstten de
+
+464
+00:44:08,411 --> 00:44:12,110
+y-h-1'lik ısıtlanmış. Demek ki bölgemiz burası. Şimdi biz bunu
+
+465
+00:44:12,411 --> 00:44:15,610
+İntegrasyon sınasını yer değiştirilmek istediğimizde
+
+466
+00:44:16,110 --> 00:44:17,110
+y-y
+
+467
+00:44:21,588 --> 00:44:26,806
+bu yeğe göre düzgün bölge olarak düşünmemiz lazım Bu durumda Burası sıfır burası bir
+
+468
+00:44:26,806 --> 00:44:36,588
+yeşil sıfırdan yeşil bile ve bölge ise şöyle bir çizgi çizdiğimizde bölge alttan ilk seçim
+
+469
+00:44:36,588 --> 00:44:44,148
+sıfır kısıtlanmış üstten de ilk seçim ye ile kısıtlanmış o zaman bu entekan niye dönüştü
+
+470
+00:44:44,148 --> 00:44:54,108
+y sınırları sıfırdan bire bu ise sıfırdan yeyi artık bunu çözebiliriz sıfırdan bire
+
+471
+00:44:55,487 --> 00:45:07,427
+bu bunun etkiler nedir ye çarpı bu ezili ilk sürü ye eziliye ilk sürü yenisi gülüntü arkadaşlar
+
+472
+00:45:07,427 --> 00:45:14,867
+bu ifade ezili eksikliye dengelip türeli aldığımız zaman birbiri ye gerçek fakat kasası bir olduğu
+
+473
+00:45:14,867 --> 00:45:24,648
+için bu ye çarpmamız lazım çarptık ve bunu elbette bu sıfırdan ye ye ye ye burada sıfırdan bire
+
+474
+00:45:27,288 --> 00:45:34,248
+bu burada değişkeniz ilk si o yüzden ilk gördüğümüz yere sırası yeri sıfır yazacağız ye yazdığımızda
+
+475
+00:45:34,248 --> 00:46:16,677
+e e
+
+476
+00:46:21,556 --> 00:46:25,556
+Evet, yine integrasyon sırasında yer değiştirmek zorunda kaldığımız bir soru.
+
+477
+00:46:28,614 --> 00:46:39,795
+Bölgeyi çizip, yeniden ifade edip, hangi ekserine göre düzgün bir bölge olarak düşüneceğimizi düşünüp, ona göre sınırları bulup tekrar da ifade etmemiz gerekiyor.
+
+478
+00:46:44,500 --> 00:46:48,860
+Evet. Yine buna benzer bir soru bakalım.
+
+479
+00:46:50,139 --> 00:46:55,000
+İçerideki integral, e üzeri, ln, x, x, dx.
+
+480
+00:47:12,659 --> 00:47:14,018
+Evet, aslında bu,
+
+481
+00:47:14,759 --> 00:47:16,440
+çözülebilen bir şey.
+
+482
+00:47:16,559 --> 00:47:19,059
+Çünkü, e'lere eren x dediğim şey x'tir.
+
+483
+00:47:21,858 --> 00:47:23,059
+x bölü,
+
+484
+00:47:23,500 --> 00:47:26,000
+x çarpı e'lere eksi x.
+
+485
+00:47:30,579 --> 00:47:36,159
+bu kısmı integrasyon yardımına bu çözülebilir ama bunu uzatmayalım
+
+486
+00:47:37,340 --> 00:47:40,900
+bu uzatmadan da bunu ifade edebiliriz şimdi burada bölgemize bakalım
+
+487
+00:47:40,900 --> 00:47:46,739
+İntegrasyon sırasında yer değiştirebiliriz burada ve yer değiştirdiğimizde böyle kısma
+
+488
+00:47:46,739 --> 00:47:53,980
+kısma integrasyonla uğraşmak zorunda kalmayız bölgemize bakalım bölge yeye göre düzgün bölüm
+
+489
+00:47:53,980 --> 00:48:09,940
+verilmiş çünkü y dışarıda o zaman yeşil 1 yeşil 2 içerideki ise ilk seçtiği eşitir 1 bölü 2 ve ilk seçtir 1 bölü ye bu durumda bölgemiz
+
+490
+00:48:23,922 --> 00:48:29,043
+Şimdi x seçili birbürü y eğrisinin grafiği şöyle bir şey.
+
+491
+00:48:30,483 --> 00:48:33,922
+x büyüdükçe y'nin küçüldüğü ve x küçüldükçe y'nin büyüdüğü.
+
+492
+00:48:34,003 --> 00:48:36,083
+Ta pozitif olma durumunda böyle bir fonksiyon.
+
+493
+00:48:38,163 --> 00:48:42,264
+x olma durumunda ise şurada beğenilen şekilde bir grafiği var.
+
+494
+00:48:43,023 --> 00:48:44,023
+x seçili birbürü iki.
+
+495
+00:48:49,139 --> 00:48:50,278
+Burada bir doğru olsun şöyle.
+
+496
+00:48:53,639 --> 00:48:53,878
+Ve
+
+497
+00:48:53,878 --> 00:48:57,920
+şimdi y-sene üzerinde verilmiş.
+
+498
+00:48:58,878 --> 00:48:59,719
+Önce onu bir görelim.
+
+499
+00:49:03,922 --> 00:49:05,922
+2 eksen üzerinde, burası 2 arkadaşlar.
+
+500
+00:49:09,588 --> 00:49:11,367
+Y1'den 2'ye kadar,
+
+501
+00:49:12,427 --> 00:49:13,268
+Güneşimi fizelim.
+
+502
+00:49:17,204 --> 00:49:23,804
+Evet şimdi y1'e 2'ye ilk seçip 1 bölü 2 ile alttan ve parabol ile
+
+503
+00:49:23,804 --> 00:49:30,284
+pardon şu eğri ile üstten kıslanan bölge şurası oluyor demek bölgemiz burası
+
+504
+00:49:30,284 --> 00:49:37,164
+ki biz bunu x'e göre düzgün bir bölge olarak düşüneceğiz ve ona göre çizeceğiz
+
+505
+00:49:37,164 --> 00:49:44,324
+bu durumda x'in üzerinde x nereden nereye bölge için ona bakalım
+
+506
+00:49:44,324 --> 00:49:51,083
+Evet bir böyle ikiden başlayıp bir ne kadar devam ediyor bu demek ki ilk
+
+507
+00:49:53,143 --> 00:49:57,123
+Bu bir böyle ikide x1'e kadar ve
+
+508
+00:49:57,922 --> 00:50:04,204
+bu ilk seksine dik bir çizik çizgi bizi bu dik çizgi bölgeyi alttan yeşil püri ile
+
+509
+00:50:04,204 --> 00:50:13,023
+kesiyor üstten ise yeşil püri üstten kesişi eğri erin denkleri yeşil püri
+
+510
+00:50:13,023 --> 00:50:17,943
+bu durumda bu entekrasyonu dönüşecek
+
+511
+00:50:17,943 --> 00:50:25,844
+bu e üzeri Eren x-x diye
+
+512
+00:50:25,844 --> 00:50:35,344
+bu de x isimiz bir böyle giden bire ve ye ise birden bir bölüm ise
+
+513
+00:50:35,344 --> 00:50:44,164
+bu artık yerine koyabiliriz buradaki içerideki fonksiyon ye'den bağımsız
+
+514
+00:50:47,092 --> 00:50:49,291
+olduğundan rahat bir şekilde, integre edebiliriz.
+
+515
+00:50:49,291 --> 00:50:49,972
+Ye çarpı.
+
+516
+00:50:49,972 --> 00:50:50,472
+Baba.
+
+517
+00:50:50,472 --> 00:50:52,672
+E üzeri Eren.
+
+518
+00:51:01,972 --> 00:51:09,972
+e'ye, elen, x, x, 1'den, 1 bölü x'e, yx.
+
+519
+00:51:11,371 --> 00:51:20,972
+Şimdi burada y'ye, yerine sırası ile, 1 bölü x, 1, 1 yazarsak, 1 bölü 2'den 1'e, 1 bölü,
+
+520
+00:51:31,251 --> 00:51:37,552
+Bu bir böyle ilk sen bana bir böyle ilk çarpı evde elen ilk ses yapıyoruz
+
+521
+00:51:39,052 --> 00:51:47,192
+Bu bir bölü x çarpı E zili elen ilk seksi x eksi bir çarpı E zili elen ilk seksi x dolayısıyla bir
+
+522
+00:51:47,192 --> 00:51:47,911
+bir seks bir
+
+523
+00:51:47,911 --> 00:52:01,652
+çarpı E zili elen ilk seksi x de artık bunu isterim değil et de kolay Çünkü elen ilk sesin türevi yan
+
+524
+00:52:01,652 --> 00:52:09,331
+tarafında var demek ki bunun ilk teklif arkadaşlar E zili elen ilk seksi x derden nereye bir bölü ikiden
+
+525
+00:52:09,331 --> 00:52:21,990
+bir yerine koyduğumuzda E zili elen bir eksi bir eksi E zili elen bir bölü iki eksi bir böyle iki
+
+526
+00:52:22,532 --> 00:52:36,210
+Evet şimdi düzenlersek fazla şöylesi eksi bir eksi bu ifade edilen bir bir iki bir iki demek çarpı
+
+527
+00:52:36,210 --> 00:52:46,112
+bu e zili eksik bir böyle iki o da aslında bir bölü kök e demek Dolayısıyla bir bölü
+
+528
+00:52:53,012 --> 00:52:54,351
+1,2 çarpı
+
+529
+00:52:58,387 --> 00:52:59,987
+Şuradan kök E gelecek.
+
+530
+00:53:02,288 --> 00:53:02,867
+Kök E.
+
+531
+00:53:04,626 --> 00:53:06,027
+Yani 1 bölü E.
+
+532
+00:53:07,806 --> 00:53:09,148
+1 bölü 2.
+
+533
+00:53:10,347 --> 00:53:10,927
+Kök E.
+
+534
+00:53:11,768 --> 00:53:14,148
+Biraz daha düzenlersek, düzenleyelim mi?
+
+535
+00:53:18,356 --> 00:53:32,795
+Buraya 2 ile çarpalım. 2 eksi, buraya kök e ile çarpalım. Kök e, bölü, 2 bölü kök e, bölü 2 kök e olarak sonucumuzu bulabiliyoruz.
+
+536
+00:53:40,083 --> 00:53:40,682
+Evet.
+
+537
+00:53:44,210 --> 00:53:57,992
+Evet arkadaşlar, bugünlük konumuz buraya kadardı. Haftaya iki katlı integrallerle alan hesabına geçeceğiz. Var mı herhangi bir sorunuz buraya kadar?
+
+538
+00:54:04,980 --> 00:54:06,119
+Rize ederim [öğrenci].
+
+539
+00:54:07,619 --> 00:54:09,018
+Sormak ispiyonuz herhangi bir şey var mı?
+
+540
+00:54:20,275 --> 00:54:21,695
+Evet, var mı herhangi bir sorunuz?
+
+541
+00:54:27,860 --> 00:54:29,400
+Ders pdf'ini paylaştım.
+
+542
+00:54:31,159 --> 00:54:34,440
+Kendi sayfamdan, oradan bakabilirsiniz.
+
+543
+00:54:35,699 --> 00:54:38,059
+Şifresini tekrar söyleyeyim. [şifre].
+
+544
+00:54:39,639 --> 00:54:42,000
+[şifre].
+
+545
+00:54:47,635 --> 00:54:48,635
+Yok, Jay-a.
+
+546
+00:54:52,467 --> 00:54:53,347
+Kalkulus'un
+
+547
+00:54:53,347 --> 00:54:56,686
+İlk karifi CA
+
+548
+00:54:56,686 --> 00:54:57,788
+108
+
+549
+00:54:57,788 --> 00:54:59,666
+Evet, siyah
+
+550
+00:55:21,652 --> 00:55:27,811
+Evet, sorunumuz yok herhalde. O zaman arkadaşlar, haftaya görüşmek üzere. Herkese iyi günler diliyorum. Kendinize iyi bakın.
