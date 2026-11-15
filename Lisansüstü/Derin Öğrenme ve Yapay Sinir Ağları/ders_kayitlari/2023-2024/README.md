@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Derin Öğrenme ve Yapay Sinir Ağları (BLM5135)
+* **Hoca:** Hamza Osman İlhan
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2023-2024
 * **Şube:** BLM5135 - 1

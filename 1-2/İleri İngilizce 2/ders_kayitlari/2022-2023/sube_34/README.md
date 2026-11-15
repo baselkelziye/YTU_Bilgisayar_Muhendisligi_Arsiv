@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İLERİ İNGİLİZCE 2 (MDB1032)
+* **Hoca:** Dilek Yıldırım
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2022-2023
 * **Şube:** MDB1032 - 34

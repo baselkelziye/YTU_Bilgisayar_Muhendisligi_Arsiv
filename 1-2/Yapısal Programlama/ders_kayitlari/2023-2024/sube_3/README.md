@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Yapısal Programlama (BLM1031)
+* **Hoca:** Yunus Emre Selçuk
 * **Dönem:** Güz
 * **Akademik Yıl:** 2023-2024
 * **Şube:** BLM1031 - 3

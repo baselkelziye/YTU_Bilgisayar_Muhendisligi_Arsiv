@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Nesneye Yönelik Programlama (BLM2012)
+* **Hoca:** Yunus Emre Selçuk
 * **Dönem:** Güz
 * **Akademik Yıl:** 2023-2024
 * **Şube:** BLM2012 - 1

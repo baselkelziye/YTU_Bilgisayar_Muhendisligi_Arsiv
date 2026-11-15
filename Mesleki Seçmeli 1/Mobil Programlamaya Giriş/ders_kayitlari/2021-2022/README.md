@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Mobil Programlamaya Giriş (BLM3520)
+* **Hoca:** Mehmet Amaç Güvensan
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM3520 - 1

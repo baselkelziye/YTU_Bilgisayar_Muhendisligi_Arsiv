@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Bilgisayar Organizasyonu (BLM2022)
+* **Hoca:** Erkan Uslu
 * **Dönem:** BAHAR
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM2022 - 1

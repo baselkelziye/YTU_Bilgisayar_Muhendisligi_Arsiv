@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Matematik 1 (MAT1071)
+* **Hoca:** Serpil Uslu
 * **Dönem:** Güz
 * **Akademik Yıl:** 2020-2021
 * **Şube:** MAT1071 - 24

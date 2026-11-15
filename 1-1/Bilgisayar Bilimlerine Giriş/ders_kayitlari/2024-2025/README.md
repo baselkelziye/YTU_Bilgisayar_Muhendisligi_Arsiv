@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Bilgisayar Bilimlerine Giriş (BLM1011)
+* **Hoca:** Göksel Biricik
 * **Dönem:** Güz
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM1011 - 2

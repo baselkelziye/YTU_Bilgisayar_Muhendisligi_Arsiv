@@ -4,6 +4,6 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Güz | — | [sube_1/](sube_1/) |
-| 2 | Güz | — | [sube_2/](sube_2/) |
+| 1 | Güz | Ahmet Elbir | [sube_1/](sube_1/) |
+| 2 | Güz | Ziya Cihan Taysi | [sube_2/](sube_2/) |
 | 4 | Güz | — | [sube_4/](sube_4/) |

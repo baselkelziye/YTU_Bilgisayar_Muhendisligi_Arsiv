@@ -4,6 +4,6 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Bahar | — | [sube_1/](sube_1/) |
+| 1 | Bahar | Ayşe Öcal | [sube_1/](sube_1/) |
 | 2 | Güz | Z. Cihan Taysi | [sube_2/](sube_2/) |
-| 2 | Bahar | — | [sube_2_bahar/](sube_2_bahar/) |
+| 2 | Bahar | Ayşe Öcal | [sube_2_bahar/](sube_2_bahar/) |

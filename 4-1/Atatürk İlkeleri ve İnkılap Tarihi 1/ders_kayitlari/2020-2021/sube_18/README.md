@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Atatürk İlkeleri ve İnkılap Tarihi I (ATA1031)
+* **Hoca:** Gülsema Lüyer
 * **Dönem:** Güz
 * **Akademik Yıl:** 2020-2021
 * **Şube:** ATA1031 - 18

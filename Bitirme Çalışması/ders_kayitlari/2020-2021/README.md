@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Bitirme Çalışması (BLM9000)
+* **Hoca:** Yunus Emre Selçuk
 * **Dönem:** Güz
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM9000 - 21

@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Atatürk İlkeleri ve İnkılap Tarihi I (ATA1031)
+* **Hoca:** Zafer Doğan
 * **Dönem:** Güz
 * **Akademik Yıl:** 2021-2022
 * **Şube:** ATA1031 - 5

@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Bilgisayar Sistemleri ve Ağ Güvenliği (BLM5102)
+* **Hoca:** Ali Gökhan Yavuz
 * **Dönem:** Güz
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM5102 - 1

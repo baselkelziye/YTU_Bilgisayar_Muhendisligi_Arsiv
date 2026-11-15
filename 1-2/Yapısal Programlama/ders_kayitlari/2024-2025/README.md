@@ -4,7 +4,7 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | BAHAR | — | [sube_1/](sube_1/) |
-| 2 | BAHAR | — | [sube_2/](sube_2/) |
+| 1 | BAHAR | Yunus Emre Selçuk | [sube_1/](sube_1/) |
+| 2 | BAHAR | Hafiza İrem Türkmen Çilingir | [sube_2/](sube_2/) |
 | 3 | BAHAR | Dr. Ahmet Elbir | [sube_3/](sube_3/) |
-| 4 | BAHAR | — | [sube_4/](sube_4/) |
+| 4 | BAHAR | Muzaffer Kaan Yüce | [sube_4/](sube_4/) |

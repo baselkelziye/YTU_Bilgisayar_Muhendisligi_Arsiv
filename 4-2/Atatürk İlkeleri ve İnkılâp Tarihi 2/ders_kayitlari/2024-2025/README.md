@@ -4,8 +4,8 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 10 | BAHAR | — | [sube_10/](sube_10/) |
-| 14 | BAHAR | — | [sube_14/](sube_14/) |
-| 15 | BAHAR | — | [sube_15/](sube_15/) |
+| 10 | BAHAR | Neslihan Erkan | [sube_10/](sube_10/) |
+| 14 | BAHAR | Neslihan Erkan | [sube_14/](sube_14/) |
+| 15 | BAHAR | Gülsema Lüyer | [sube_15/](sube_15/) |
 | 21 | BAHAR | Zafer Doğan | [sube_21/](sube_21/) |
 | 24 | BAHAR | Öğr. Gör. Dr. Şebnem Gelmedi | [sube_24/](sube_24/) |

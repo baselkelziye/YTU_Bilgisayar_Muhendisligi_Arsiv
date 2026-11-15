@@ -4,6 +4,6 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 28 | Bahar | — | [sube_28/](sube_28/) |
-| 29 | Bahar | — | [sube_29/](sube_29/) |
-| 30 | Bahar | — | [sube_30/](sube_30/) |
+| 28 | Bahar | Arzuhan Kocabaş | [sube_28/](sube_28/) |
+| 29 | Bahar | Cemile İnan | [sube_29/](sube_29/) |
+| 30 | Bahar | Hilal Tufan | [sube_30/](sube_30/) |

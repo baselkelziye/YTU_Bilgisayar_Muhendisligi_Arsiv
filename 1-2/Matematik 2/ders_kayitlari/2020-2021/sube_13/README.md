@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Matematik 2 (MAT1072)
+* **Hoca:** Filiz Kanbay
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2020-2021
 * **Şube:** MAT1072 - 13

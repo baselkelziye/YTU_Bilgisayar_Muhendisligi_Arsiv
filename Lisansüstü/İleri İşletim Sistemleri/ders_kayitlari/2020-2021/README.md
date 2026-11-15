@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İleri İşletim Sistemleri (BLM6108)
+* **Hoca:** Ali Gökhan Yavuz
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM6108 - 1

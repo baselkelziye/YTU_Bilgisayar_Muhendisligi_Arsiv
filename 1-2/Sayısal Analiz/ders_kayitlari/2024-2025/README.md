@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Sayısal Analiz (BLM1022)
+* **Hoca:** Ahmet Elbir
 * **Dönem:** BAHAR
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM1022 - 2

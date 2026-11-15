@@ -2,6 +2,8 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Bahar dönemindeki Devre Teorisi (BLM1032 - 1. şube) ders kayıtlarının altyazılarını içerir.
 
+* **Dersi Veren Akademisyen:** Erkan Uslu
+
 Kayıt arşivindeki ilk ders kaydı 10 Mart 2022 Perşembe gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
 ## Hafta Bilgisi

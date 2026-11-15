@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 2 | Güz | — | [sube_2/](sube_2/) |
-| 3 | Güz | — | [sube_3/](sube_3/) |
+| 2 | Güz | Serkan Ayvaz | [sube_2/](sube_2/) |
+| 3 | Güz | Mustafa Utku Kalay | [sube_3/](sube_3/) |

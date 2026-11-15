@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Algoritma Analizi (BLM3021)
+* **Hoca:** İrem Atılgan
 * **Dönem:** Güz
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM3021 - 1

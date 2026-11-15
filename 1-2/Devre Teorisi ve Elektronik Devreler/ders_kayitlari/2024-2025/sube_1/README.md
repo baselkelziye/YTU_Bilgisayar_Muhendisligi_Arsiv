@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Devre Teorisi ve Elektronik Devreler (BLM1033)
+* **Hoca:** Hamza Osman İlhan
 * **Dönem:** BAHAR
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM1033 - 1

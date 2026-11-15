@@ -2,6 +2,8 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Bahar dönemindeki Biyoenformatiğe Giriş (BLM3810 - 1. şube) ders kayıtlarının altyazılarını içerir.
 
+* **Dersi Veren Akademisyen:** Nizamettin Aydın
+
 Kayıt arşivindeki ilk ders kaydı 11 Mart 2022 Cuma gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
 ## Hafta Bilgisi

@@ -6,16 +6,16 @@
 | :---: | :---: | :--- | :--- |
 | 13 | Bahar | Arzu Ekoç Özçelik | [sube_13/](sube_13/) |
 | 14 | Bahar | — | [sube_14/](sube_14/) |
-| 16 | Bahar | — | [sube_16/](sube_16/) |
+| 16 | Bahar | Dilek Yıldırım | [sube_16/](sube_16/) |
 | 17 | Bahar | — | [sube_17/](sube_17/) |
 | 21 | Bahar | Eda Abbasioğlu Akaya | [sube_21/](sube_21/) |
-| 23 | Bahar | — | [sube_23/](sube_23/) |
+| 23 | Bahar | Berrin Muşlu | [sube_23/](sube_23/) |
 | 24 | Bahar | — | [sube_24/](sube_24/) |
 | 26 | Bahar | — | [sube_26/](sube_26/) |
 | 27 | Bahar | — | [sube_27/](sube_27/) |
-| 29 | Bahar | — | [sube_29/](sube_29/) |
-| 30 | Bahar | — | [sube_30/](sube_30/) |
-| 31 | Bahar | — | [sube_31/](sube_31/) |
+| 29 | Bahar | Berrin Muşlu | [sube_29/](sube_29/) |
+| 30 | Bahar | Barış Emsal | [sube_30/](sube_30/) |
+| 31 | Bahar | Esin Aydoğdu | [sube_31/](sube_31/) |
 | 32 | Bahar | — | [sube_32/](sube_32/) |
-| 33 | Bahar | — | [sube_33/](sube_33/) |
-| 34 | Bahar | — | [sube_34/](sube_34/) |
+| 33 | Bahar | Nurgül Demirdöven | [sube_33/](sube_33/) |
+| 34 | Bahar | Dilek Yıldırım | [sube_34/](sube_34/) |

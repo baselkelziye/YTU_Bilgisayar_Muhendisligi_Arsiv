@@ -4,6 +4,6 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Güz | — | [sube_1/](sube_1/) |
-| 2 | Güz | — | [sube_2/](sube_2/) |
-| 3 | Güz | — | [sube_3/](sube_3/) |
+| 1 | Güz | Yunus Emre Selçuk | [sube_1/](sube_1/) |
+| 2 | Güz | Ahmet Elbir | [sube_2/](sube_2/) |
+| 3 | Güz | Yunus Emre Selçuk | [sube_3/](sube_3/) |

@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İş Sağlığı ve Güvenliği 2 (BLM1992)
+* **Hoca:** Sertaç Temur
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2025-2026
 * **Şube:** BLM1992 - 1

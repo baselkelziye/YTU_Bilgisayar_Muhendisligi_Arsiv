@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Lineer Cebir (MAT1320)
+* **Hoca:** Eyüp Kızıl
 * **Dönem:** Güz
 * **Akademik Yıl:** 2021-2022
 * **Şube:** MAT1320 - 31

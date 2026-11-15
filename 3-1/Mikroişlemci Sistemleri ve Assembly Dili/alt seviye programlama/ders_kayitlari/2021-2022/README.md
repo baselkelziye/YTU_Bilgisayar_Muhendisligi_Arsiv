@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Alt Seviye Programlama (BLM2021)
+* **Hoca:** Erkan Uslu
 * **Dönem:** Güz
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM2021 - 3

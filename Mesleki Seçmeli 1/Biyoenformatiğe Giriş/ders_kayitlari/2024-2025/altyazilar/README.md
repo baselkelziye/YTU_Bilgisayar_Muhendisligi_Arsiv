@@ -2,6 +2,8 @@
 
 Bu klasör, 2024-2025 eğitim öğretim yılı BAHAR dönemindeki Biyoenformatiğe Giriş (BLM3810 - 1. şube) ders kayıtlarının altyazılarını içerir.
 
+* **Dersi Veren Akademisyen:** Nizamettin Aydın
+
 Kayıt arşivindeki ilk ders kaydı 20 Şubat 2025 Perşembe gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
 ## Hafta Bilgisi

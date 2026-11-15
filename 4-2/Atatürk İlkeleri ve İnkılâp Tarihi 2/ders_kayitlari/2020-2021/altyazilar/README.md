@@ -2,6 +2,8 @@
 
 Bu klasör, 2020-2021 eğitim öğretim yılı Bahar dönemindeki Atatürk İlkeleri ve İnkılap Tarihi 2 (ATA1032 - 34. şube) ders kayıtlarının altyazılarını içerir.
 
+* **Dersi Veren Akademisyen:** Turhan Ada
+
 Kayıt arşivindeki ilk ders kaydı 9 Mart 2021 Salı gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
 ## Hafta Bilgisi

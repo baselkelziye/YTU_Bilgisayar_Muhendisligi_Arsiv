@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Atatürk İlkeleri ve İnkılap Tarihi 2 (ATA1032)
+* **Hoca:** Gülsema Lüyer
 * **Dönem:** BAHAR
 * **Akademik Yıl:** 2024-2025
 * **Şube:** ATA1032 - 15

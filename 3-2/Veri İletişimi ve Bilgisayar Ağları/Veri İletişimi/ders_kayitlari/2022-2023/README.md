@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Veri İletişimi ve Bilgisayar Ağları (BLM3051)
+* **Hoca:** Furkan Çakmak
 * **Dönem:** Güz
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM3051 - 1

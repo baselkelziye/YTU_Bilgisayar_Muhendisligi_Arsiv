@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 2 | Güz | — | [sube_2/](sube_2/) |
+| 2 | Güz | Göksel Biricik | [sube_2/](sube_2/) |
 | 3 | Güz | Doç. Dr. M. Amaç Güvensan | [sube_3/](sube_3/) |

@@ -5,4 +5,4 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | Dr. Yunus Emre Selçuk | [sube_1/](sube_1/) |
-| 2 | Güz | — | [sube_2/](sube_2/) |
+| 2 | Güz | Ahmet Elbir | [sube_2/](sube_2/) |

@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Ağ Teknolojileri (BLM3022)
+* **Hoca:** Ziya Cihan Taysi
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM3022 - 2

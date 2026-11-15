@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Mikroişlemci Sistemleri (BLM3031)
+* **Hoca:** Hamza Osman İlhan
 * **Dönem:** Güz
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM3031 - 2

@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Yapısal Programlama (BLM1031)
+* **Hoca:** Hafiza İrem Türkmen Çilingir
 * **Dönem:** BAHAR
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM1031 - 2

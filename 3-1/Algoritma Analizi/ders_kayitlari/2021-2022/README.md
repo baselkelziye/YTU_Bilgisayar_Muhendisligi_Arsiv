@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Algoritma Analizi (BLM3021)
+* **Hoca:** Mine Elif Karslıgil ve Mehmet Amaç Güvensan
 * **Dönem:** Güz
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM3021 - 3

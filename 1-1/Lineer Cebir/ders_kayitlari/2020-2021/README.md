@@ -5,13 +5,13 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | Serpil Karayel | [sube_1/](sube_1/) |
-| 1 | Bahar | — | [sube_1_bahar/](sube_1_bahar/) |
-| 6 | Güz | — | [sube_6/](sube_6/) |
+| 1 | Bahar | Ahmet Göksel Ağargün | [sube_1_bahar/](sube_1_bahar/) |
+| 6 | Güz | Bayram Ali Ersoy | [sube_6/](sube_6/) |
 | 7 | Güz | Mehmet Emin Köroğlu | [sube_7/](sube_7/) |
-| 10 | Bahar | — | [sube_10/](sube_10/) |
+| 10 | Bahar | Hülya Burhanzade | [sube_10/](sube_10/) |
 | 11 | Güz | Mehmet Emin Köroğlu | [sube_11/](sube_11/) |
-| 12 | Güz | — | [sube_12/](sube_12/) |
+| 12 | Güz | Hülya Burhanzade | [sube_12/](sube_12/) |
 | 14 | Güz | Mustafa Sarı | [sube_14/](sube_14/) |
 | 16 | Güz | İsmail Aydoğdu | [sube_16/](sube_16/) |
 | 31 | Güz | İsmail Aydoğdu | [sube_31/](sube_31/) |
-| 32 | Güz | — | [sube_32/](sube_32/) |
+| 32 | Güz | Mehmet Emin Köroğlu | [sube_32/](sube_32/) |

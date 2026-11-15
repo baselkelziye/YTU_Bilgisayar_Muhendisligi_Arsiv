@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Yazilim Proje Yönetimi (BLM5119)
+* **Hoca:** Oya Kalıpsız
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM5119 - 1
