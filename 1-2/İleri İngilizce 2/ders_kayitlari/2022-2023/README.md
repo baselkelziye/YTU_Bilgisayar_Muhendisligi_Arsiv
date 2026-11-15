@@ -13,3 +13,4 @@
 | 24 | Bahar | — | [sube_24/](sube_24/) |
 | 26 | Bahar | — | [sube_26/](sube_26/) |
 | 27 | Bahar | — | [sube_27/](sube_27/) |
+| 29 | Bahar | — | [sube_29/](sube_29/) |
