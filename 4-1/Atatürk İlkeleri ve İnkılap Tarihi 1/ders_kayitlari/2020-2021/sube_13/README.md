@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Atatürk İlkeleri ve İnkılap Tarihi I (ATA1031)
+* **Hoca:** Şebnem Gelmedi
 * **Dönem:** Güz
 * **Akademik Yıl:** 2020-2021
 * **Şube:** ATA1031 - 13

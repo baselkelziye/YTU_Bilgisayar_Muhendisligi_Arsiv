@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İş Sağlığı ve Güvenliği 2 (BLM1992)
+* **Hoca:** Feride Ulu
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2023-2024
 * **Şube:** BLM1992 - 1

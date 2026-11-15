@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Veritabanı Yönetimi (BLM3041)
+* **Hoca:** Serkan Ayvaz
 * **Dönem:** Güz
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM3041 - 2

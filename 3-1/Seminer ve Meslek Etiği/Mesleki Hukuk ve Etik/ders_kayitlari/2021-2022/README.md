@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Mesleki Hukuk ve Etik (BLM3012)
+* **Hoca:** Göksel Biricik
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM3012 - 1

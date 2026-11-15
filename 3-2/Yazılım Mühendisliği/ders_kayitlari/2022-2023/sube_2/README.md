@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Yazılım Mühendisliği (BLM3722)
+* **Hoca:** Yunus Emre Selçuk
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM3722 - 2

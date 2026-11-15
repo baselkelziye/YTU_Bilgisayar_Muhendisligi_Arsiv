@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Araştırma Yöntemleri ve Bilimsel Etik (BLM5004)
+* **Hoca:** Ayşe Öcal
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2023-2024
 * **Şube:** BLM5004 - 2

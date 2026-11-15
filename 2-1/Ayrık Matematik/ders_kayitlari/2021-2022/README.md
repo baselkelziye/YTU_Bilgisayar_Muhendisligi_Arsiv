@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Güz | — | [sube_1/](sube_1/) |
-| 3 | Güz | — | [sube_3/](sube_3/) |
+| 1 | Güz | Banu Diri | [sube_1/](sube_1/) |
+| 3 | Güz | Ahmet Elbir | [sube_3/](sube_3/) |

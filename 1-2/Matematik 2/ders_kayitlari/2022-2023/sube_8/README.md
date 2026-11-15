@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Matematik 2 (MAT1072)
+* **Hoca:** Erdal Gül
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2022-2023
 * **Şube:** MAT1072 - 8

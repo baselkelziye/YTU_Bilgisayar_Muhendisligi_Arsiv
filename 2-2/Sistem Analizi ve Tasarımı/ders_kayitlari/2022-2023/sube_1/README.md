@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Sistem Analizi ve Tasarımı (BLM2042)
+* **Hoca:** Oya Kalıpsız
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM2042 - 1

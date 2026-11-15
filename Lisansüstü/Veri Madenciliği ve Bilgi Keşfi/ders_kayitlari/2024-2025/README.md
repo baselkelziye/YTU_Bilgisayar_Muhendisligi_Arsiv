@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Veri Madenciliği ve Bilgi Keşfi (BLM5116)
+* **Hoca:** Songül Varlı
 * **Dönem:** Güz
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM5116 - 1

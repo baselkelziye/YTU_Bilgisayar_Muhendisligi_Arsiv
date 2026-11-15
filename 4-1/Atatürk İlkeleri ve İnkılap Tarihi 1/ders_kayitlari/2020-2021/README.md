@@ -4,12 +4,12 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 2 | Güz | — | [sube_2/](sube_2/) |
+| 2 | Güz | Gülsema Lüyer | [sube_2/](sube_2/) |
 | 4 | Güz | Öğr. Gör. Dr. Şebnem Gelmedi | [sube_4/](sube_4/) |
 | 10 | Güz | Zafer Doğan | [sube_10/](sube_10/) |
-| 11 | Güz | — | [sube_11/](sube_11/) |
-| 13 | Güz | — | [sube_13/](sube_13/) |
-| 18 | Güz | — | [sube_18/](sube_18/) |
+| 11 | Güz | Gülsema Lüyer | [sube_11/](sube_11/) |
+| 13 | Güz | Şebnem Gelmedi | [sube_13/](sube_13/) |
+| 18 | Güz | Gülsema Lüyer | [sube_18/](sube_18/) |
 | 22 | Güz | Turhan Ada | [sube_22/](sube_22/) |
-| 29 | Güz | — | [sube_29/](sube_29/) |
-| 38 | Güz | — | [sube_38/](sube_38/) |
+| 29 | Güz | Gülsema Lüyer | [sube_29/](sube_29/) |
+| 38 | Güz | Turhan Ada | [sube_38/](sube_38/) |

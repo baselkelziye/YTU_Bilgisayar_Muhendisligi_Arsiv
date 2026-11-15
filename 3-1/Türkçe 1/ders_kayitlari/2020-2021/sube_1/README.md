@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** TÜRKÇE 1 (TDB1031)
+* **Hoca:** Cemile İnan
 * **Dönem:** Güz
 * **Akademik Yıl:** 2020-2021
 * **Şube:** TDB1031 - 1

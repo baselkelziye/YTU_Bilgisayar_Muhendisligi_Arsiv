@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Veri İletişimi ve Bilgisayar Ağları (BLM3051)
+* **Hoca:** Ziya Cihan Taysi
 * **Dönem:** Güz
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM3051 - 1

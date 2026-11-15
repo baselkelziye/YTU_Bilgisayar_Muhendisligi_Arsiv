@@ -2,6 +2,8 @@
 
 Bu klasör, 2023-2024 eğitim öğretim yılı Güz dönemindeki Mobil Teknolojiler İçin Veri İşleme Teknikleri (BLM5134 - 1. şube) ders kayıtlarının altyazılarını içerir.
 
+* **Dersi Veren Akademisyen:** Mehmet Amaç Güvensan
+
 Kayıt arşivindeki ilk ders kaydı 15 Kasım 2023 Çarşamba gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
 ## Hafta Bilgisi

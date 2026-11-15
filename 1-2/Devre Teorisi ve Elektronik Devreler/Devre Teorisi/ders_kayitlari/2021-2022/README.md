@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Devre Teorisi (BLM1032)
+* **Hoca:** Erkan Uslu
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM1032 - 1

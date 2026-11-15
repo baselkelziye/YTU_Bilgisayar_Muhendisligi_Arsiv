@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Mobil Teknolojiler İçin Veri İşleme Teknikleri (BLM5134)
+* **Hoca:** Mehmet Amaç Güvensan
 * **Dönem:** Güz
 * **Akademik Yıl:** 2023-2024
 * **Şube:** BLM5134 - 1

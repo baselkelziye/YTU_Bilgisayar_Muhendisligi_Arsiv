@@ -2,6 +2,8 @@
 
 Bu klasör, 2020-2021 eğitim öğretim yılı Güz dönemindeki Atatürk İlkeleri ve İnkılap Tarihi I (ATA1031 - 2. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
+* **Dersi Veren Akademisyen:** Gülsema Lüyer
+
 Kayıt arşivindeki ilk ders kaydı 5 Ekim 2020 Pazartesi gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
 ## Hafta Bilgisi

@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Biyomedikal İşaret ve Görüntü İşleme (BLM5104)
+* **Hoca:** Gökhan Bilgin
 * **Dönem:** Güz
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM5104 - 1

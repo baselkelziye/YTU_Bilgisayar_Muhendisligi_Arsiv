@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Nesneye Yönelik Programlama (BLM2012)
+* **Hoca:** Furkan Çakmak
 * **Dönem:** Güz
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM2012 - 3

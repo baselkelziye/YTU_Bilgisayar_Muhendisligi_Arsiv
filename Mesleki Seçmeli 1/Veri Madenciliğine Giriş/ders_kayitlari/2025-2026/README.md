@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Veri Madenciliği (BLM4800)
+* **Hoca:** Songül Varlı
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2025-2026
 * **Şube:** BLM4800 - 1

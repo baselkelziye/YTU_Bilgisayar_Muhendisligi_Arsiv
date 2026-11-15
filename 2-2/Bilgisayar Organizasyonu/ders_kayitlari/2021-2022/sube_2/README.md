@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Bilgisayar Organizasyonu (BLM2022)
+* **Hoca:** Ali Can Karaca
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM2022 - 2

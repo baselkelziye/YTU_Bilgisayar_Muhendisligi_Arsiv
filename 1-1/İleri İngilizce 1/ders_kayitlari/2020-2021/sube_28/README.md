@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İleri İngilizce 1 (MDB1031)
+* **Hoca:** Nurgül Demirdöven
 * **Dönem:** Güz
 * **Akademik Yıl:** 2020-2021
 * **Şube:** MDB1031 - 28

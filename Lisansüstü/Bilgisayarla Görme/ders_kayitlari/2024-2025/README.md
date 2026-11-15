@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | BAHAR | — | [sube_1/](sube_1/) |
-| 1 | Güz | — | [sube_1_guz/](sube_1_guz/) |
+| 1 | BAHAR | Songül Varlı | [sube_1/](sube_1/) |
+| 1 | Güz | Oğuz Altun | [sube_1_guz/](sube_1_guz/) |

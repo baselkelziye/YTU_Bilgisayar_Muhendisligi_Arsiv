@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Biyoenformatiğe Giriş (BLM3810)
+* **Hoca:** Nizamettin Aydın
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM3810 - 1

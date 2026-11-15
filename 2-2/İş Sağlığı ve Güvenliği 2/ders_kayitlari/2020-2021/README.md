@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İş Sağlığı ve Güvenliği 2 (BLM1992)
+* **Hoca:** Adem Altay
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM1992 - 1

@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İşletim Sistemleri (BLM3011)
+* **Hoca:** Ahmet Elbir
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM3011 - 1

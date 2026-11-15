@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Veritabanı Yönetimi (BLM3041)
+* **Hoca:** Mustafa Utku Kalay
 * **Dönem:** Güz
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM3041 - 1

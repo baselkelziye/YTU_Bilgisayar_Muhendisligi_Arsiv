@@ -2,6 +2,8 @@
 
 Bu klasör, 2023-2024 eğitim öğretim yılı Güz dönemindeki Veritabanı Yönetimi (BLM3041 - 2. şube) ders kayıtlarının altyazılarını içerir.
 
+* **Dersi Veren Akademisyen:** Mustafa Utku Kalay
+
 Kayıt arşivindeki ilk ders kaydı 28 Aralık 2023 Perşembe gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
 ## Hafta Bilgisi

@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Bilgisayarla Görme (BLM5103)
+* **Hoca:** Oğuz Altun
 * **Dönem:** Güz
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM5103 - 1

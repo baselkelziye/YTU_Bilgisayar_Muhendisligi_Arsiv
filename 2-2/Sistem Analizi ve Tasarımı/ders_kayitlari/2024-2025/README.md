@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Sistem Analizi ve Tasarımı (BLM2042)
+* **Hoca:** Göksel Biricik
 * **Dönem:** BAHAR
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM2042 - 2

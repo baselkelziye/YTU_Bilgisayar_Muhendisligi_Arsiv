@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Bilgisayar Sistemleri ve Ağ Güvenliği (BLM5102)
+* **Hoca:** Hasan Hüseyin Balık
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM5102 - 1

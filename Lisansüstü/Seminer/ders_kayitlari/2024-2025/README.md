@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Seminer (BLM6001)
+* **Hoca:** Hafiza İrem Türkmen Çilingir
 * **Dönem:** Güz
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM6001 - 1

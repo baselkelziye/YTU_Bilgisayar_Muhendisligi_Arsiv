@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Yazılım Mühendisliği (BLM3722)
+* **Hoca:** Oya Kalıpsız
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM3722 - 1

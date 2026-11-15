@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Kollektif Öğrenme (BLM5109)
+* **Hoca:** Mehmet Fatih Amasyalı
 * **Dönem:** Güz
 * **Akademik Yıl:** 2025-2026
 * **Şube:** BLM5109 - 1

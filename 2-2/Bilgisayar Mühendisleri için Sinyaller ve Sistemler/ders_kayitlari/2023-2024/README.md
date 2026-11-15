@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Bilgisayar Mühendisleri için Sinyaller ve Sistemler (BLM2041)
+* **Hoca:** Ahmet Elbir
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2023-2024
 * **Şube:** BLM2041 - 2

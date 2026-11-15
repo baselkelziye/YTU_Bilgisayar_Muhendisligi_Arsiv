@@ -2,6 +2,8 @@
 
 Bu klasör, 2022-2023 eğitim öğretim yılı Bahar dönemindeki Bilgisayar Sistemleri ve Ağ Güvenliği (BLM5102 - 1. şube) ders kayıtlarının altyazılarını içerir.
 
+* **Dersi Veren Akademisyen:** Hasan Hüseyin Balık
+
 Kayıt arşivindeki ilk ders kaydı 10 Mart 2023 Cuma gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
 ## Hafta Bilgisi

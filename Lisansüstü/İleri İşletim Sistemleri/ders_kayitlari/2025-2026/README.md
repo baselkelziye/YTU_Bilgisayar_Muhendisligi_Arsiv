@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İleri İşletim Sistemleri (BLM6108)
+* **Hoca:** Ahmet Elbir
 * **Dönem:** Güz
 * **Akademik Yıl:** 2025-2026
 * **Şube:** BLM6108 - 1

@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | BAHAR | — | [sube_1/](sube_1/) |
+| 1 | BAHAR | Hamza Osman İlhan | [sube_1/](sube_1/) |
 | 2 | BAHAR | Prof. Dr. Gökhan Bilgin | [sube_2/](sube_2/) |

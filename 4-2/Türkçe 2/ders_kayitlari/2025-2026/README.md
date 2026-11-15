@@ -4,13 +4,13 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Bahar | — | [sube_1/](sube_1/) |
+| 1 | Bahar | Sema Noyan | [sube_1/](sube_1/) |
 | 2 | Bahar | Arzuhan Kocabaş | [sube_2/](sube_2/) |
-| 3 | Bahar | — | [sube_3/](sube_3/) |
+| 3 | Bahar | Sema Noyan | [sube_3/](sube_3/) |
 | 4 | Bahar | Hilal Tufan | [sube_4/](sube_4/) |
 | 5 | Bahar | — | [sube_5/](sube_5/) |
 | 6 | Bahar | Dr. Metin Işıkoğlu | [sube_6/](sube_6/) |
-| 11 | Bahar | — | [sube_11/](sube_11/) |
+| 11 | Bahar | Hilal Tufan | [sube_11/](sube_11/) |
 | 12 | Bahar | — | [sube_12/](sube_12/) |
 | 15 | Bahar | — | [sube_15/](sube_15/) |
 | 17 | Bahar | Hilal Tufan | [sube_17/](sube_17/) |
