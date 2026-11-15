@@ -1,0 +1,2147 @@
+1
+00:00:30,132 --> 00:00:33,012
+Hocam, grup bir olarak biz sunabiliriz. Tamam.
+
+2
+00:00:35,112 --> 00:00:40,231
+Bakayım bir. Herkes geldi mi? Bakalım da. Belirli bir sıra yoksa biz de.
+
+3
+00:00:42,752 --> 00:00:45,472
+Bir bakalım arkadaşlar. Merhaba herkese.
+
+4
+00:00:47,091 --> 00:00:49,811
+Şimdi o sıraya ben bir bakayım hızlıca.
+
+5
+00:01:21,043 --> 00:01:22,483
+Hocam sesiniz gelmiyor.
+
+6
+00:01:24,783 --> 00:01:27,563
+Sesim gelmiyormuş. Şimdi geliyor mu arkadaşlar ses?
+
+7
+00:01:27,563 --> 00:01:32,563
+Şu an geliyor. Az önce de geliyordu. Bir işte 4-5 cümle gelmedi. Sonra geldi şu an geliyor.
+
+8
+00:01:33,723 --> 00:01:41,024
+Tamam arkadaşlar. O zaman sesi kısıktı. Şimdi açtım bayağı sesini. Kısıtmış biraz önce.
+
+9
+00:01:41,663 --> 00:01:45,003
+Şimdi sıra nasıldı? Bakıyorum hemen. 23'ünde bugün.
+
+10
+00:01:49,780 --> 00:01:57,740
+Grup birden başlayabiliriz isterseniz. Yani öyle yapalım. Grup bir hemen slide'ını paylaşabilir.
+
+11
+00:02:23,187 --> 00:02:24,467
+Başlayabilir değil mi?
+
+12
+00:02:25,247 --> 00:02:26,807
+Evet, başlayabilirsiniz arkadaşlar.
+
+13
+00:02:27,967 --> 00:02:34,108
+Merhabalar, biz bugün sizlere LLM'lerin medikal alanda kullanılmasını anlatacağız.
+
+14
+00:02:36,747 --> 00:02:38,287
+Slide ilerlemiyor mu?
+
+15
+00:02:38,647 --> 00:02:42,987
+Bir dakika, şimdi başına girişteyiz, tamam.
+
+16
+00:02:45,139 --> 00:03:05,719
+Yapay zeka günümüzde hepimizin gözlemleyebileceği üzere oldukça gelişmiş durumda. Bu gelişimin etkisi sağlık sektöründe de oldukça fazla görülüyor. Yardımcı olabileceğini düşündüğümüz alanlar şunlar. Hasta iletişime, teşhis koyma, araştırma ve analiz yapma. Şu an bildiğim üzere yapay zeka enliliğinde çok fazla veri var ve bunları işleyerek oldukça güzel.
+
+17
+00:03:06,292 --> 00:03:21,372
+Çoğu doktordan daha fazla veriye sahip olduğunu söyleyebiliriz. Bu yönlerin yanında bu modellerin neden olabileceği bazı sorunların da olabileceğini öngörüyoruz. Bunlar etik ve mahremiyet sorunları. Hastalığın verilerini kullanarak teşhis koyabileceğini de söylemiştik.
+
+18
+00:03:21,372 --> 00:03:33,912
+Bu durumda teşhis koyarken hasta verilerinin kullanılması ya da koyduktan sonra reinforcement eğitimi yaparken hastalığın verilerinin kullanılması etik mi değil mi? Bu bizim için bir sorun olarak karşımıza çıkıyor.
+
+19
+00:03:34,292 --> 00:03:42,092
+Diğer bir sorunda teşhis sonucu hastanın başına bir şey gelirse, model geliştirenler bundan sorumlusu tutacak mı? Bu da bir diğer sorumuzdu.
+
+20
+00:03:45,716 --> 00:04:06,855
+Tıp alanında internette oldukça fazla makale ve çalışma var. Bu çalışmalar dil modelleri tarafından veri kaynağı olarak kullanılabiliyor. Bu nedenle şu an bir dil modelinin bir doktordan daha çok tıbbi vakalaya hakim olabileceğini söylemek yanlış olmaz. Bu makale işlem özelliği sayesinde hekimlere ve hastalığa oldukça yardımcı olabileceğini düşünüyoruz eleğenlerin.
+
+21
+00:04:11,604 --> 00:04:23,903
+Bu akış şeva'mızda gördüğümüz akış şu şekilde işliyor. Hasta modele soru soruyor. Model hastanın bilgilerini analiz ederek doktora bilgi ve öneri veriyor. Doktor model yardımıyla teşhis koymuş oluyor.
+
+22
+00:04:27,603 --> 00:04:33,884
+Burada da bir makaleden aldığımız örnekli kullanım var. Hasta problemlerini anlatıyor yukarıda gördüğünüz üzere.
+
+23
+00:04:34,403 --> 00:04:39,603
+Ve Creve Short isimli bir model. Bunun Long'u da var. O daha iyi eğitilmiş bir model.
+
+24
+00:04:40,723 --> 00:04:47,264
+Bu model buna bir teşhis koymaya çalışıyor. Altta da doktorun gerçek koyduğu teşhis var.
+
+25
+00:04:47,943 --> 00:04:55,584
+Bu iki teşhisin oldukça birbiriyle uyuştuğunu görüyoruz. Yani bu bizim medikal alanda elelemlerin geleceğini gösteren bir çalışma.
+
+26
+00:04:55,603 --> 00:05:05,103
+Sonuç olarak da büyük dil modelleri, sağlık ve klinik alanda oldukça umut vadeli olduğunu söyleyebilirim. Sözü arkadaşım [öğrenci] bırakıyorum.
+
+27
+00:05:08,244 --> 00:05:33,984
+Burada devamlayayım. Sağlık sektöründe hasta ile doktor arasında hasta ve doktor için yardımcı bir araç ihtiyacı var. Araştırma sorumuz, sağlık sektöründe Türkçe dilinde fine-tune edilmiş büyük dil modellerinin kullanımı ile hastalar ve sağlıklı profesyonel arasındaki iletişim nasıl iliştirilebilir ve tedavi süreçlerine katkı nasıl sağlayabilir? Burada hipotezimiz bu Türkçe elenemlerinin bu alanda faydalı olacağı yönünde.
+
+28
+00:05:37,779 --> 00:05:43,959
+Projenin özgün değeri, sağlık sektöründe Türkçe elenemlerin fine tune edilmesiyle elde edilecek yeniliklerde yatıyor.
+
+29
+00:05:44,459 --> 00:05:50,579
+Bu yaklaşım, Türkiye'de sağlık hizmetlerinin kalitesini arttıracak ve hasta memnuniyetini yükseltecek bir dönüşümü temsil etmektedir.
+
+30
+00:05:50,759 --> 00:05:55,679
+İlgili bilim ve teknoloji alanlarına kavramsal, kuramsal, metodolojik katkılar sağlayarak,
+
+31
+00:05:55,679 --> 00:06:01,899
+dil modelleri ve doğal dil işleme teknolojilerine sağlık sektöründe uygulanabilirliğini genişletecektir.
+
+32
+00:06:02,699 --> 00:06:05,779
+Bu proje, sağlık ve yetişimdeki mevcut eksiklikler ve ilgilerine yönelik sonuçlanıyor.
+
+33
+00:06:05,779 --> 00:06:11,519
+Komik bir çözüm sunarak, dil teknolojinin potansiyelini yeni ve etkili yollarla kullanmaya hedeflemektedir.
+
+34
+00:06:12,403 --> 00:06:21,004
+Amaçlarımız, Türkçe konuşan hastalar ve sağlık profesyonelleri için interaktif, bilgi sağlayıcı ve yardımcı bir araç geliştirmektir.
+
+35
+00:06:21,363 --> 00:06:29,543
+Bu araç hastaların ve sağlık profesyonelleri medikal konular hakkında önceden soru sorup yanıt alabilmelerini sağlayacak şekilde tasarlanacaktır.
+
+36
+00:06:29,543 --> 00:06:34,644
+Bu sayede sağlık sektöründe iletişim kalitesi artırılacak ve bilgiye iletişim kolaylaştırılacaktır.
+
+37
+00:06:36,276 --> 00:06:48,675
+Geliştirme hedefimiz, Türkçe konuşan kullanıcılar için fine tune edilmiş bir LLM tabanlı sağlık yardımcısı geliştirmek. Bu yardımcı medikal, ternoloji ve sağlık konularında doğru ve anlaşılır bilgiler sunacak.
+
+38
+00:06:49,415 --> 00:06:58,855
+Eriştirilebilir hedefimiz, aracı ve tabanlı bir plafonda ve mobil uygulama olarak sunarak her yaştan ve her teknoloji beceri seviyesindeki kullanıcıların kolayca erişebilmesini sağlamak.
+
+39
+00:06:58,855 --> 00:07:04,276
+Doğruluk hedefimiz de geliştirecek olan sağlık yardımcısının sağlık profesyonelleri tarımlığı.
+
+40
+00:07:04,276 --> 00:07:13,355
+Bu konuda, bilimsel yöntemlerinden onaylanmış, güncel ve doğru bilgiler sağlamasını garantilemek ve bu amaçla projede yer alan sağlık profesyonelleri ve bilimseliyle sürekli bir kalite kontrol süreci yürütmektir.
+
+41
+00:07:15,656 --> 00:07:20,516
+Eğitim hedefimiz, sağlık yardımcısının kullanıcıların sağlık konularında bilinçlendirmesine yardım alacak.
+
+42
+00:07:21,516 --> 00:07:27,735
+Geri bildirim ve iyileştirme hedefimiz, kullanıcı geri bildirimleriyle aktif olarak projede düzenlemeler yapılacak.
+
+43
+00:07:28,276 --> 00:07:41,396
+Yargınlaştırma hedefi de üniversiteler ve hastanelerle iş birliği yapılarak bunu Türkiye için genel bir tabana ulaştırmak.
+
+44
+00:07:41,396 --> 00:07:49,855
+Bu hedefler projenin sonunda yastılığın ve sağlık profesyonel daha bilinçli ve etkili ilişim kurmalarını sağlayacak, kolay bir, ilişkili ve güvenilir bir sağlık yardımcısı oluşturmaya başlar.
+
+45
+00:07:50,836 --> 00:08:06,695
+Burada karar verme alternatif bakışımızı görüyoruz. Klinik veri girişi olarak veri girişi LLM anemizinle verecek. Burada analiz sonuçları doktorun gözden geçilmesi işlemine aktarılacak ve karar verme olarak da hasta bakım kararı olarak rapor oluşturulacak.
+
+46
+00:08:09,276 --> 00:08:11,115
+Şimdi arkadaşımla bekleyeyim.
+
+47
+00:08:11,935 --> 00:08:15,596
+Bundan sonrasını ben de vereyim [öğrenci]. Bu da yöntem olarak.
+
+48
+00:08:18,291 --> 00:08:25,291
+tasarımı karma bir metodoloji kullanacak. Hem dijel hem de tel toplama analizinde dayanacak. Araştırmada...
+
+49
+00:08:26,196 --> 00:08:33,456
+Temel, mevcut, ülkçe sağlık veri setleri toplanacak, ön işleme tabisi olacak vs. Burada doğal değil işlemenin temel prosedürleri incelenecek.
+
+50
+00:08:33,556 --> 00:08:43,596
+Bağımlı, bağımsız değişkenlere gelirsek, bağımsız değişkenler olarak, elenemlerin payetine edilmesi, veri setlerin boyutu, kalitesi vs. eğitim parametrelerinin mesela öğrenmeyin oranı, batchlerin boyutu denilebilir.
+
+51
+00:08:44,056 --> 00:08:47,316
+Bağımlı değişkenlerde modelin doğruluğu, kullanıcı memnuniyeti vs. bunlar sayılabilir.
+
+52
+00:08:47,895 --> 00:08:53,916
+Veri toplama araçları da sağlık veri setleri. Bu da e-nabızdan veya işte Türkçe sağlık formlarından, medikal makalelerden.
+
+53
+00:08:54,196 --> 00:09:07,996
+hasta kayıtlarının tutulduğu verilerden vs. buradan sağlanılabilir. Anket ve geri bildirim formları. Bunlar da kullanıcının deneyimini ve eminimini ölçmek için yapılan formlar. Bir de analiz yöntemleri. Analiz yöntemlerinde yukarıda aslında demiştim, nicel ve nitel analiz yöntemleri.
+
+54
+00:09:07,996 --> 00:09:21,875
+Nijel yöntemlerde doğruluk, recall, F1 skorları vs. gibi yapılan modelin doğruluğunu, çalışma performansını ölçecek. Nitel analiz yöntemleri de tematik analiz yöntemleri ve kullanıcının geri bildirimleri.
+
+55
+00:09:22,196 --> 00:09:26,516
+Ulanıcıların araç hakkındaki görüşleri vs. Bir sonraki slide'a geçebiliriz.
+
+56
+00:09:26,899 --> 00:09:53,000
+Ön çalışma olarak proje kapsamında seçilen sağlık veri seti üzerine bir ön eğitim yapılması gerçekleştiriyor. Başlangıç, modern performansı değerlendiriliyor. Burada toplanılan veri setleri test ediliyor vs. İş paketlerine ilişkilendirme burası en önemli kısım. Burada yapılan veri toplama ve ön işlemlerinden sağlık veri setlerinin toplanması, temizlenmesi, ön işlemlerinden sonra ön işleme kabul tutulması vs. ekibin belirlenmesi bunların hepsi paketlerine ilişkilendirme kısmına geliyor.
+
+57
+00:09:54,899 --> 00:10:00,000
+dediğimizde LLM'lerin sağlık veri setlerinin eğitimi ve fine tuning süreci, model değerlendirme,
+
+58
+00:10:00,000 --> 00:10:10,180
+Geliştirilen modelin performansını değerlendirmesi ve optimizasyonu. En sonunda kullanıcı testleri, geri bildirim ve final değerlendirme, raporlama. Buralarda da feedbackleri alıyoruz. Bir sonraki strata geçebiliriz.
+
+59
+00:10:10,779 --> 00:10:21,920
+Burada zaman çizelgesi mevcut. Zaman çizelgesinde görüldüğü üzere iş paketlerinin her birisine yaklaşık 3'er ay, 4'er ay ve toplamda 36 ay olacak şekilde bir zaman çizelgesi çıkartılmış.
+
+60
+00:10:21,920 --> 00:10:28,000
+Herhangi ekibin hangi zaman diliminde neler yapacağı belli. İş paketlerine kısaca gelecek olursak, iş paketi no bilimsel.
+
+61
+00:10:28,000 --> 00:10:36,980
+Bu iş paketinde proje planlama ve ekip oluşturma, ilk başta burada projenin hedeflerinin, teslim tarihlerinin belirlenmesi, kaynakların tahsis edilmesi vs.
+
+62
+00:10:37,680 --> 00:10:43,200
+Uygun bir ekip oluşturulması, rollerin, sorumlulukların tanımlanması, risklerin belirlenmesi, risk yönetimi.
+
+63
+00:10:43,780 --> 00:10:51,540
+Buradaki çıkkılar olarak da, bunlar yapılacak görevlerde, çıkkılar olarak da proje hedeflerinin, teslim tarihlerine belirlendiği bir proje planı, bir proje planını çıkartmamız lazım.
+
+64
+00:10:51,540 --> 00:10:56,000
+Ve ekip yapılandırılması, görev ve sorumlulukların tanımlandığı ekip yapılandırılması lazım. Bir de risklerin belirlenmesi lazım.
+
+65
+00:10:56,000 --> 00:11:17,100
+Risk yönetim planının hazırlanması. Bunlar iş paketi bir olarak. İş paketi iki de ilgili literatür, yani ön araştırma ve literatür taraması. Burada ilgili literatür veri tabanlarının belirlenmesi, nerelerden hangi konuların araştırılacağı, tarama kriterlerinin oluşturulması, literatür taraması ile yapılması ve ilgili çalışmaların değerlenmesi ve projenin araştırma soruları ile ilişkilendirilmesi.
+
+66
+00:11:24,000 --> 00:11:31,140
+Kritik analizi, bir de araştırma sorunlarının revize edilmesi ve netleştirilmiş hali, literatürün analize dayanılarak geliştirilen araştırma hipotezleri.
+
+67
+00:11:31,800 --> 00:11:38,400
+Bunlar bizim araçlıklarımız. İş paketi 3'den sonrasını da arkadaşım devre alacak.
+
+68
+00:11:39,460 --> 00:11:40,120
+Merhabalar.
+
+69
+00:11:40,659 --> 00:12:03,159
+Üçüncü iş paketimiz ismi araştırma yönteminin geliştirilmesi ve test edilmesi. Bu iş paketi kapsamında yapılacak bazı görevler. Araştırma sorularına en önemli yöntemler seçim için kriterler belirlenir. Seçilen yöntemler üzerine gerek düzenlemeler yapılır ve metodolojiler geliştirilir. Geliştirilen araştırma yöntemi pilot çalışma ile test edilir.
+
+70
+00:12:03,820 --> 00:12:08,659
+Burada çıktığı olarak çeşitli raporlar var. Yöntem seçimi ve kriterler.
+
+71
+00:12:08,659 --> 00:12:31,360
+Dördüncü iş paketimiz, veri toplama ve analizi. Yapılacak görevler, veri toplanma yöntemlerini ve araçlarının belirlenmesi, belirlenen yöntemlere ve araçlara uygun olarak verilerin toplanması, toplanan verilerin onarız edilmesi ve yorumlanması. Burada alınacak en büyük çıktı, toplanan ham veri siti oluyor.
+
+72
+00:12:34,580 --> 00:12:53,200
+Uygulama geliştirme ve test etme. Araştırma sonuçlarına dayanarak geliştirilen uygulamalar için gereksinlikle belirlenir burada. Belirlenen gereksinlikle uygun uygulamalar tasarlanır ve geliştirilir. Geliştirilen uygulamaların test edilmesi ve değerlenilmesi işlem de burada yapılır.
+
+73
+00:12:54,227 --> 00:13:10,648
+Altıncı iş paketimiz sonuçların değerlendirmesi, raporlanma ve paylaşım. Projeden elde edilen bulguların detaylı analizi ve değerlendirilmesi yapılır. Araştırma sonuçlarının bulguların ve uygulama sonuçları raporlanır. Raporların makaleler ve diğer açıklarını ilgili piyatlamlarla paylaşılır.
+
+74
+00:13:12,275 --> 00:13:34,355
+Risk yönetimi kısmına geldiğimizde burada bazı olası riskler belirledik ve bunları anlamayacak bazı tedbirleri belirledik. Bunlarla bazı birkaç tanesinden bahsedeceğiz. Örnek risk, ekip üyeleri arasında iş yükü dağılım ve uyum sorunları. Tedbir olarak düzenli toplantılar yapılarak belirlenen rol ve sunumluk açı çerçevesinde uyum içerisinde çalışılmalıdır.
+
+75
+00:13:34,868 --> 00:13:57,308
+Başka risk, yöntemden beklenen verim alınamayabilir. Yöntem üzerine pilot testler yapılır ve gerekirse yöntem üzerine değişikliğe gidilir buna tedbir olarak. Toplanan verilir, gizlilik ve güvenlik sorunları yaşanabilir, karşılaşılabilir. Bunun için güvenlik protokolleri güçlendirilir, şifreleme yöntemleri uygulanır.
+
+76
+00:13:57,812 --> 00:14:10,731
+Bir başka örnek olarak da, geliştirilen uygulamalar kullanıcı bir kentleri karşılamayabilir. Bunun için de erken aşama, beta aşamasında kullanıcı geri bilgilerini toplanarak uygulama geliştirme de kullanılır.
+
+77
+00:14:11,951 --> 00:14:13,351
+Bu kadar cinsiyet yönetimi kısmı.
+
+78
+00:14:14,227 --> 00:14:34,668
+Proje esnasında ve sonrasında elde edilmesi öngörülen çiftelere çalışmalar sırasında elde edilen bilgiler hakkında yayınlanacak akademik makaleler, elelem tabanlı yazılım prototipi, yazılım patent başvurusu, sağlık kuruluşları ile iş birliği ve geliştirme anlaşmaları, yüksek lisans ve doktor öğrencileri için araştırma ve geliştirme projeleri örnek verilebilir.
+
+79
+00:14:41,792 --> 00:14:57,792
+Projenin 12. ayında bir gün sürecek çalıştay. Projenin 6. ve 18. ayında bir hafta süredik eğitim simüllerleri. Tüm proje boyunca güncel kalacak Web sayfası ve sosyal medya. Proje sonrası sürekli olarak yayınlanacak.
+
+80
+00:14:57,792 --> 00:15:03,172
+Bakale yazımı da örnek verilebilir. Bir sonraki saate geçelim.
+
+81
+00:15:03,635 --> 00:15:15,716
+Projen oluşması öngörülen etkilere bakacak olursak, hastaların kendi sağlık durumlar hakkında daha bir işlerine gelmesi, sağlık profesyonelinin hastalarla iletişimin iyileşmesi,
+
+82
+00:15:18,115 --> 00:15:27,675
+ondan sonra özel dil modellemesi ve yapay zekal çözümleriyle yeni ticari ürün ve hizmetlerini geliştirilmesi, yeni iş olanakları ve
+
+83
+00:15:28,916 --> 00:15:37,696
+Modelde kullanılacak hasta verilerin gizliliğinin ve güvenliğinin sağlanmasına yönelik çözümler geliştirmesi öngörülen etkileri örnektir.
+
+84
+00:15:38,656 --> 00:15:39,916
+Bir sonraki slide'a geçebiliriz.
+
+85
+00:15:41,696 --> 00:15:51,736
+Eylemlerin performansına bakacak olursak özellikle almanak modelinin diğer modellere göre daha iyi bir performans hali görülmüştür.
+
+86
+00:15:52,116 --> 00:15:55,256
+Kötü niyetli girişimlere karşı da daha dirençli yolda görülmüştür.
+
+87
+00:15:55,668 --> 00:15:57,668
+Bir sonraki sayete geçelim.
+
+88
+00:15:59,668 --> 00:16:09,668
+Burada Almanak, Bart, Bing ve ChatGPT4 modellerinin gerçeklik, tamamlık ve tercih metriklerinde performanslarını görmekteyiz.
+
+89
+00:16:09,668 --> 00:16:15,668
+Genel olarak Almanak daha iyi performans göstermektedir. Bir sonraki sayete geçebiliriz.
+
+90
+00:16:16,019 --> 00:16:26,419
+Bizim için en önemli metriklerden doğru atıf yüzdesinde Almanak ve Bing'in iyi bir performans gösterdiği %80'nin üstünde olduğu görülmüştür.
+
+91
+00:16:26,419 --> 00:16:34,219
+Kötü prompta karşı dirençlikte de Almanak modelinin %100 performans gösterdiği görülmüştür.
+
+92
+00:16:38,676 --> 00:16:48,036
+Uzun klinik metinler için eylemlere geldiğimizde burada eylemler sadece kullanıcı sorularını doğrudan kendi bilgileriyle cevaplamadan çok.
+
+93
+00:16:48,255 --> 00:16:51,635
+Aynı zamanda doktorlar için vesaire literatür taraması yapabilir.
+
+94
+00:16:52,211 --> 00:17:11,911
+Yani büyük bağlamdaki verileri de araştırabilir. Bundan dolayı uzun, yüksek token sayıda sahip modeller lazım. Clinical Longformer var, Clinical Big Bird var, bunlar örnek. Burada da işte hasta kayıtlarını inceleme, klinik notları inceleme, literatür taraması gibi işlemleri yapabiliyoruz.
+
+95
+00:17:20,211 --> 00:17:35,751
+Özel olarak eğitilmiş sağlık alanda modellerin nör performansına baktığımızda diğer klasik modellere göre %5'lik yaklaşık olarak her alanda farklı veri setlerinde yaklaşık olarak %5'lik bir başarım farkı var.
+
+96
+00:17:36,291 --> 00:17:37,592
+Sonrasında soru cevaplama.
+
+97
+00:17:38,016 --> 00:18:00,416
+Görevine gelecek olursak, burada da Exec, Match ve Quesson Enzürek'te bir de F1 skor var. Bu skorlarda da yer yer %15'lere kadar başarı farkı var. Diğer normal modellere göre özel olarak sağlık alanında eğitilmiş bu yüksek kontekst lengte sahip modeller. Sonrasındaysa sonuçlar gelecek vizyonuna gelecek olursak.
+
+98
+00:18:00,884 --> 00:18:19,324
+Burada bir modelin ileriye dönük entegrasyonuyla bireyselleştirilmiş hasta bakımı, yani kişiye özel modeller, sonrasında tıbbi araştırmaları hızlandırma, genel sağlık hizmetlerinin iyileştirilmesi gibi pek çok alanda bu modeller daha ucuz, daha hızlı ve daha erişilebilir şekilde kullanılabilir.
+
+99
+00:18:19,324 --> 00:18:28,104
+Hem doktorlar açısından, hem hasta açısından, hem sağlık personelleri açısından, hem sağlık personelinin eğitim açısından vs. vs. Ama işte bunun birkaç tane çıkıntısı var.
+
+100
+00:18:28,884 --> 00:18:50,884
+Ve işte birkaç yıl önce korona yaşadık. Bu koronada işte insanları aşağı yönlendirmek için modelleri bir şekilde yanlı şekilde eğitirsek aslında insanların aşağıya çok daha rahat yönelebilirdi. Bu şekilde yanlı davranması modeli sağlanabilir. İşte bunun sağlanamaması lazım. Ve aynı zamanda modeller halüsinasyon görebiliyor. Yani yanlış bilgi üretebiliyor, uydurabiliyor. İşte bunun da öne geçmek lazım. Sonrasında...
+
+101
+00:18:51,279 --> 00:19:06,720
+Burada sağlık sektöründeki elelemlerin geleceğiyle alakalı bir akış görüyoruz. Bu akış diagramına bakacak olsak, ileride beklenen gelişmeler, potansiyel zorluklar ve üstelten gelme planları var. Burada az önce anlattığım sıkıntılarla baş etme yöntemleri, neler geliştebilir vs. akışını göreceğiz.
+
+102
+00:19:07,839 --> 00:19:18,120
+Sonrasında ileride doktoru ortadan kaldırırsak ne olur? Akışını göreceğiz burada. Klinik veri bir şekilde hatta veya sağlık personeli girecek. Sonrasında elelem bunu analiz edecek.
+
+103
+00:19:19,279 --> 00:19:26,819
+sonucunda karar verecek. Bu karar sonucunda tedavi süreci başlanacak. Tedavi sürecinin girdileri, çıktığıları tekrardan el eleme verecek.
+
+104
+00:19:26,900 --> 00:19:32,059
+El eleme bunu anlayacak. Sonrasında tekrardan tedavi sürecini yönetecek gibisinden bir akış var.
+
+105
+00:19:32,620 --> 00:19:35,279
+Sonraki akışa gelecek olursak da. Burada yine...
+
+106
+00:19:35,796 --> 00:19:59,936
+Hasta veylerine girecek, bu veyleri elelem analiz verecek, analiz sonuçları hemşireye verecek ve hasta bakıcıya verecek. Sonrasında hemşire ve hasta bakıcı hastaya tedavi uygulayacak. Sonrasında hastanın tepkime sonuçları tedavi kararlarının oluşmasında etkili olacak. Sonrasında tedavi elelem değerlendirecek tedavi sürecini. Sonrasında ayarlamaları ve önerileri hemşireye yani hasta bakıcıya verecek. Sonrasında hasta bakıcı da bu tekrardan tedavi sürecini yönetmek.
+
+107
+00:20:00,000 --> 00:20:09,060
+İçin hastaya gerekli çıkları verecek. Sonrasında ise bizim kaynaklarımız da burada göründüğü gibi. Bizim anlatacaklarımız bu kadardı. Bizi dinleyen için teşekkür ederiz.
+
+108
+00:20:22,804 --> 00:20:24,344
+Teşekkürler arkadaşlar.
+
+109
+00:20:26,004 --> 00:20:26,984
+Teşekkür ederiz hocam.
+
+110
+00:20:28,344 --> 00:20:29,384
+Teşekkür ederim.
+
+111
+00:20:33,395 --> 00:20:39,195
+Şöyle bir bakalım yine metodunuza hızlıca değil mi? Bir bakalım hızlıca bir şey.
+
+112
+00:20:41,375 --> 00:20:45,195
+Metotlarınızı, slide'larınızı hızlıca bir gözden geçirelim, sonra diğer gruba geçelim.
+
+113
+00:21:00,884 --> 00:21:02,823
+Bir dakika nasıl izleyeceğim hocam?
+
+114
+00:21:03,144 --> 00:21:04,343
+Şuan dosyumla.
+
+115
+00:21:13,076 --> 00:21:36,556
+Ben paylaştım, gözüküyordur inşallah. Evet, görünüyor şu anda. Tamam. Tamam, şöyle hızlıca metoda bakalım. Ya da hızlıca tamam, bütün snipe'lere bakalım. Hızlı hızlı köker. Sonrasında işte bu elelemin nasıl kullanırsa akışıyor? İşte bununla alakalı bir elelemin başarısını ölçen bir metin. Sonrasında işte hipotezimiz var, ayrıca sorumuz var.
+
+116
+00:21:36,960 --> 00:21:42,140
+Burada bir model inceliyoruz. Modelle alakalı bir yorum var. Sonrasında amaçlarımızı belirtiyoruz, hedeflerimizi belirtiyoruz.
+
+117
+00:21:42,860 --> 00:21:48,840
+Birefle alakalı açıklama yapıyoruz. Sonrasında burada yine bir LLM'in kullanım akışı var. Sonrasında yöntemlerimizi burada anlatıyoruz.
+
+118
+00:21:49,720 --> 00:21:54,660
+Yaklaşık olarak 12 tane yöntem var. Sonrasında iş zaman çizgimiz var. Sonra iş paketlerimizi anlatıyoruz sırasıyla.
+
+119
+00:21:56,400 --> 00:22:02,660
+Sonrasında risk yönetimini anlattık. Sonrasında yaygın etkileri anlatıyoruz. Paylaşım ve yaygın etkileri anlatıyoruz projeni.
+
+120
+00:22:03,039 --> 00:22:25,220
+Sonrasında ilişkin bilgileri anlatıyoruz. Sonrasında bir model var. Referans alacağımız bir model. Bu modelin başarımını gösteriyoruz burada grafiklerde. Sonrasında uzun metniler için başka bir model var. İki model. Bu modeldenin başarımlarını gösteriyoruz. Sonrasında gelecek vizyon hakkında ileride nasıl gelişmeler olabilir? Bununla alakalı hayal ettiğimiz bir akış var. Bu akışları gösteriyoruz ve sonunda kaynaklarla beraber bitiriyoruz.
+
+121
+00:22:26,019 --> 00:22:29,900
+Tamam, tamam. Güzel olmuş arkadaşlar. Diğer gruba geçelim hemen.
+
+122
+00:22:35,059 --> 00:22:37,779
+Orca'nın chat'e biz yazmıştık, bizdi değil mi? Evet.
+
+123
+00:22:38,379 --> 00:22:42,339
+Hangi grupsunuz arkadaşlar? 16 var, 16, 17, 19.
+
+124
+00:22:45,619 --> 00:22:49,419
+Grup 16, grup 17, grup 19.
+
+125
+00:22:54,355 --> 00:22:58,875
+Bir saniye hocam, bizim grup, biz grup 16'yız galiba, isimli siz de varsa.
+
+126
+00:22:59,635 --> 00:23:00,976
+[öğrenci], senin grup.
+
+127
+00:23:00,976 --> 00:23:02,056
+Evet, evet hocam biziz.
+
+128
+00:23:02,096 --> 00:23:05,336
+Tamam, tamam, grup 16. Başlayın arkadaşlar.
+
+129
+00:23:06,976 --> 00:23:08,276
+Tamam hocam, bir saniye.
+
+130
+00:23:20,372 --> 00:23:21,612
+Ekran geliyor mu acaba?
+
+131
+00:23:22,392 --> 00:23:23,732
+Evet, geldi şu anda.
+
+132
+00:23:24,692 --> 00:23:25,292
+Geldi.
+
+133
+00:23:30,228 --> 00:23:38,468
+Biz bu ders kapsamında yapay zeka destekli çevrim içi terapi uygulaması projisi geliştirdik, yani planladık.
+
+134
+00:23:39,028 --> 00:23:50,008
+Proje yine sunum içeriğinde de ilk önce konumuzdan bahsedeceğiz, amaçlarımızdan bahsedeceğiz. Özgün değerimiz anlatıp yöntemleri aktardıktan sonra yine bunu nasıl gerçekleştireceğimizle ilgili bilgiler vereceğiz.
+
+135
+00:23:50,708 --> 00:24:00,908
+Projemizin konusu, proje çevrimçi terapi uygulamında yapay zeka destekli yazılımlar ile danışanın yüz ifadeleri ve biosinyaller kullanarak duygu tespitini sağlamaktır.
+
+136
+00:24:01,491 --> 00:24:15,571
+Projemiz danışanların verileri olabilecek en güvenli şekilde. Çünkü yine bu tarz bir konu olduğu için güvenlik çok önemli. Kan basıncı, kalp atışı, solunum sıklığı gibi faktörlerin insan duygu ve düşünceli hakkında bir bilgi vereceğiz yine psikoloğa.
+
+137
+00:24:29,428 --> 00:24:32,728
+Aslında canlı veri akışı sağlamı planlıyoruz psikoloğa.
+
+138
+00:24:33,548 --> 00:24:38,988
+Bu benzer uygulamaları araştırdığımızda da TorxSpace uygulaması, canlı terapi uygulamaları bunlar.
+
+139
+00:24:38,988 --> 00:24:42,347
+Aslında birebir terapi uygulaması.
+
+140
+00:24:43,316 --> 00:25:00,516
+Ginger başka bir yine vetimi video aracıyla profesyonellerden yani bunlar herhangi bir yapay zeka içermeyen uygulamalar. Bir de yapay zeka terapistleri var. VISA direkt yapay zeka destekli bir ruh sağlığı asistanı. TES diye ayrı zamanda bir sistem var. O da yine metin tabanlı bir psikolojik yapay zeka.
+
+141
+00:25:01,172 --> 00:25:29,172
+Şimdi burada şöyle bir sorun var. Bence hem online olduğu için psikolog yeteri kadar etki edemeyebilir hastaya. Aynı zamanda yapay zekada tabii ki insan olmadığı için bir sürü eksik barındırıyor. Biz o yüzden hiprit bir yaklaşım düşünüyoruz farklı olarak örneklere. Gerçek zamanla AI destekli, yardımcı ve profesyonel terapi hizmetlerini birleştirmeyi planlıyoruz. Esnek ve uygulamayabilir bir terapi planlıyoruz. Kullanıcının ihtiyacına göre kişisel yerleştiren seanslar. Ayrıca yine teknoloji...
+
+142
+00:25:29,172 --> 00:25:37,971
+ve insan dokunuşuna uyumu, yani AI teknolojisinin hızlı ve analitik gücüyle insan terapistlerin duygusal zekası ve deneyimlerini birleştirmeyi planlıyoruz.
+
+143
+00:25:38,711 --> 00:25:47,032
+Yine kullanıcı merkezi bir tasarım ayrıca düşünüyoruz. Kullanıcının ruh sağlığı yolculuğu destekleyen, kolay kullanımlı ve etkileşimli bir arayüzü tasarlanmak önemli.
+
+144
+00:25:47,700 --> 00:26:04,360
+Amaçlarımız, bunları çok okumayacağım ama genel olarak amacımız yapay zeka gibi teknolojilerle terapileri hiprit bir şekilde birleştirerek online terapinin getirdiği sıkıntı minima indirmek ve herkesin gerekli psikolojik desteğe en maksimum kalitede bulaşmasını sağlamak.
+
+145
+00:26:05,683 --> 00:26:17,604
+Burada yine Ökler'in Video Magnification Algorithmus'unu kullanacağız. Burada yüzdeki renk değişimleri ve mikro hareketlerden kan basını, stres seviyesi gibi fizyolojik faktörü tespit edebiliriz.
+
+146
+00:26:17,604 --> 00:26:20,255
+Zaman seviyesi fitlerimi yöntemiyle de...
+
+147
+00:26:20,256 --> 00:26:35,316
+Danışanın fiziksel tepkini derinden inceleyebiliriz. Aynı zaman tabii ki yapay zeka bir katmanı da olacak. Danışanın göz ve ağız hareketlerini analiz ederek duygusal durumlarıyla ilgili geri bildirim sağlayacağız. Bunun için görüntü için ve makine öğrenmesi tekliflerini kullanacağız.
+
+148
+00:26:36,175 --> 00:26:47,836
+Verilerin gösterleştirilmesi ve sunumu, tabii ki bu da hem hasta için hem de psikolog tarafından önemli bir konu. Danışmanın ve danışanın konfor seviyesini maksimum koşullarda getirerek
+
+149
+00:26:48,240 --> 00:26:51,900
+duyguları hakkında daha net bir perspektif sağlamasını sağlayacağız.
+
+150
+00:26:52,599 --> 00:26:56,519
+Siber güvenlik tabii ki burada bir psikologdan bahsettiyoruz. İnsanlar sırlarını aktarıyor.
+
+151
+00:26:56,519 --> 00:27:05,779
+O yüzden siber güvenlik en önemli şeylerden biri. Özel şifre ve teknikleri ve veri koruma protokollerini kullanarak güvenliği maksimum çıkarmayı planlıyoruz.
+
+152
+00:27:05,900 --> 00:27:11,900
+Hukuki danışmanlık yine başka bir önemli husus. Çünkü çok mahrem bilgileri aslında saklamamız gerekiyor.
+
+153
+00:27:12,339 --> 00:27:37,199
+Burada kullanıcıya maksimum güven sağlamamız lazım. Yine gerçek zamanlı bir uygulama planladığımız için, hiprit bir çalışma yaptığımız için psikolojik danışmana sadece analizler ve yardımcı bilgiler gerçek zamanlı gelmesi deneyim açısından çok önemli. Bunun için programın optimizasyonu ve ihtiyaç duyulan işleme kapasitesi de özel olarak ilgilendiğimiz bir konu. Bu kısımdan itibaren [öğrenci]'in arkadaşımız devam edecek.
+
+154
+00:27:39,028 --> 00:28:07,028
+Evet, ben devam edeyim. İlgili araştırmalardan, örneklerden biraz bahsedecek olursak da ilk örneğimizde aslında çevrim içi terapi yöntemlerinin başarı vaat eden bir dönüşüm olduğundan bahsetmekte. Pandemi ile birlikte online terapi uygulamaları yaygınlaşmıştır hepimizin bildiği gibi. Bir diğer araştırma örneğinde de yapay zekanın büyük veri işleme yeteneğiyle ruh sağlığında tespitler yapabildiğinden bahsetmektedir. Son araştırma örneğimizde de yapay zeka ile gelişen bu uygulamaların tepkili.
+
+155
+00:28:07,028 --> 00:28:11,088
+tedaviye önemli bir, önemli ölçüde iyileştirebildiğinden bahsetmektedir.
+
+156
+00:28:13,811 --> 00:28:35,692
+Projemizin özgün değerinden bahsedecek olursak, pandemiyle bildiğimiz gibi günlük yaşam rutinlerini büyük ölçüde değiştirdi. Bununla birlikte de online terapiye başvuru oranında artışlar oldu. Ancak burada da kanunda bahsettiği gibi terapi süreçlerinde duygusal anlayış ve derinlikte bazı eksiklikler görüldü. Danışan ve danışman arasında bir sanal duvar oluştu aslında.
+
+157
+00:28:41,811 --> 00:28:52,971
+Yani psikolog hizmetlerine dayanmaması, bunların hibrit ve integrasyonunu sunması, yapay zeka, büyük veri analizlere ve duygusal durum tahminleri yaparak psikologları derinlemesine bilgiler sağlamaktadır.
+
+158
+00:28:57,971 --> 00:29:09,412
+Araştırma sorusu ve hipotezlere de geçecek olursak, bu entegrasyon danışan ve danışman arasındaki iletişim engellerini nasıl etkiler ve terapi sürecinin genel verimliliğine katkısı nedir?
+
+159
+00:29:10,151 --> 00:29:19,211
+Burada da proje sürecinin genel verimliliğinin artmasına katkıda bulunmaktadır. Çünkü danışan ve danışman arasında daha derin bir empatik bağ kurulmasına alınmak sağlamaktadır.
+
+160
+00:29:22,259 --> 00:29:31,259
+Çevrimci terapide yapay zeka yardımıyla toplanan verilerin uzun vadeli tedavi sonuçları üzerindeki etkisi de terapi kullanılarını...
+
+161
+00:29:31,259 --> 00:29:33,259
+Bir saniye...
+
+162
+00:29:36,692 --> 00:29:40,071
+Daha kişiselleştirilerek uzun vadiyelerde başarıyı iyileştirmesidir.
+
+163
+00:29:40,491 --> 00:29:49,771
+Çevrimiç sebi süreçlerindeki yapay zeka araçlarının demogratif gruplar üzerindeki etkisi de ya şinsiyet ve kültürel, arka plan gibi faktörlerden bağımsız olarak tutarlıdır.
+
+164
+00:29:54,804 --> 00:29:56,624
+Buradan [öğrenci]'e devredebilirim.
+
+165
+00:30:11,859 --> 00:30:12,720
+Sesim geliyor mu?
+
+166
+00:30:14,399 --> 00:30:15,200
+Evet, ben duyuyorum.
+
+167
+00:30:15,899 --> 00:30:28,859
+Öler'in video magnification altyapısını kullanacağız biz şöyle. Daha önce bu tarz bir uygulama geliştiren bir platformu görüp biz buradan ilham aldık aslında.
+
+168
+00:30:31,680 --> 00:30:36,680
+Aslında onlar bu arka planda biz bu algoritmayı kullandıklarını düşünüyoruz.
+
+169
+00:30:37,203 --> 00:30:44,123
+Bu algoritmayı fakat biz bilgisayarımıza çalıştırdığında bir miktar yavaşlık gördük.
+
+170
+00:30:44,703 --> 00:30:50,903
+Aslında projemizin en büyük arge sürecini bu algoritmanın hızlandırılması oluşturacak.
+
+171
+00:30:55,731 --> 00:31:19,932
+Algoritmanın yapısını hızlıca değineyim. Temporal filtering kullanıyor. Arkada renkleri ve zamana göre ayrıştırıyor. Yukarıdaki insan yüzünü verdiğimizde renkleri, pikselleri büyütüyor algoritma ve renkleri de daha canlı hale getirdiğinde siz resimden bile görebiliyorsunuz aslında.
+
+172
+00:31:21,491 --> 00:31:24,991
+Kan basıncının nerede daha yüksek, nerede daha düşük olduğunu.
+
+173
+00:31:29,875 --> 00:31:36,736
+Yüz ifadelerinin ve duygu tespitinin yapılması bu aslında çok üzerine düşeceğimiz bir konu değil.
+
+174
+00:31:36,935 --> 00:31:43,476
+Çünkü kullanıcının kamerasının çok kötü olduğu durumda bile bu belli olabilir.
+
+175
+00:31:43,476 --> 00:31:56,155
+Fakat gene de danışmanın ekranının altında bir ona bir fikir verebilir diye biz bunu da ekleyeceğiz.
+
+176
+00:31:56,596 --> 00:32:18,836
+Burada da arka planlı biz Hard Cascade Classifier kullanacağız. Yüzlerin tespiti kısmında Hard Cascade'in çalışma makinizmasından biraz değindik. Yüzü ve ağzı dikdörtgen şeklini alması için integral görüntüsü alarak renklerin yoğunluğunu belirliyor mesela.
+
+177
+00:32:20,276 --> 00:32:33,276
+Mesela göz buluyor diyelim, herkeski. Gözün çevresinde daha böyle bir karanlık oluyor. Pikseller daha yoğun oluyor. İntegral görüntüsü olarak bu yoğunluğu daha hızlı bir şekilde test edebiliyor.
+
+178
+00:32:34,195 --> 00:32:37,276
+Adavus makine öğrenmesi yönteminde de...
+
+179
+00:32:38,867 --> 00:32:47,947
+Bu Harcay's Gate'in içerisindeki basit sınıflandırıcıları birleştirip, model birleştirmek gibi aslında daha güçlü bir hale getiriyor.
+
+180
+00:32:48,487 --> 00:32:58,007
+Ve bu şekilde de istediğimizi yüzümü bulacağız, ağzımı bulacağız. Bu şekilde hızlıca bulabiliyor. Bir sayfa daha geçebiliriz.
+
+181
+00:32:59,443 --> 00:33:19,983
+Bu size bahsettiğim bizim ilham aldığımız proje aslında. Binah EO'y'in bir sitesinden aldık biz bu görüntüyü. Kan basıncını ölçüyorlar, stres seviyesini ölçüyorlar bu algoritma temelinde. Biz bunu dijital terapi uygulamalarına entegre edeceğiz.
+
+182
+00:33:24,500 --> 00:33:28,580
+Bir logo tasarladı [öğrenci] arkadaşımız, onu da bu şekilde ekledik.
+
+183
+00:33:31,940 --> 00:33:34,120
+Uygulama planına geçiyoruz.
+
+184
+00:33:35,620 --> 00:33:44,040
+Bir kısım ekibimizden arkadaşımız, Yulerian Video Magnification'ın literatür taramasını ve entegrasyonunu yaparken,
+
+185
+00:33:45,080 --> 00:33:49,200
+web sitesi ve mobil uygulama geliştirme kısmı da aktif olarak devam edecek.
+
+186
+00:33:49,200 --> 00:33:51,200
+İlk testleri de...
+
+187
+00:33:52,372 --> 00:34:05,612
+Yazılım geliştirmeden sonraki test kısmında entegrasyonlar, algoritmanın web sitesine ve mobil uygulamalara entegrasyonunu yapacağız. Son testlerde aynı şekilde.
+
+188
+00:34:07,192 --> 00:34:11,372
+Bir yandan biz bu algoritmanın doğru ölçüp ölçmediğini...
+
+189
+00:34:12,692 --> 00:34:32,511
+Belirlemek için aslında kendi ev ortamımızda yapacağız bu çözümlemeyi. Çünkü algoritma kullanacağımız için şey yok. Ekirisi nasıl gidiyor gibi bir testi yapamayız bilgisayar ortamında. Akıllı bileklikler kullanabiliriz bu noktada.
+
+190
+00:34:33,511 --> 00:34:37,971
+Algoritmanın çalışmasını test etmek için, bir yanlış gidiyor mu diye kontrol etmek için.
+
+191
+00:34:38,900 --> 00:34:48,420
+Güvenlik ve veri koruma incelemesi. Kullanıcıların hem sağlık verileri oluyor bir yandan biz algoritma çıkısı oluşturduğumuzda.
+
+192
+00:34:49,380 --> 00:35:00,900
+Aynı zamanda video kaydı da alındığı için kişisel verileri de var. Bunların koruması üzerine bu kısımda kafe yoracağız.
+
+193
+00:35:03,219 --> 00:35:13,380
+Ürünün nihai sürümünü çıkardığımızda da sonrasında piyasayı sürdükten sonra biz bu güvenlik adımına geçmeyi planlıyoruz.
+
+194
+00:35:14,579 --> 00:35:15,059
+Bu şekilde.
+
+195
+00:35:18,979 --> 00:35:24,880
+Aslında burada da size anlattığım konunun çizelgedeki hali var.
+
+196
+00:35:25,652 --> 00:35:34,252
+Web sitesi hazırlama, mobil uygulama geliştirme ve literatür taraması, gerekiyorsa veri kaplama ve analizi kısımları aynı anda başlıyor.
+
+197
+00:35:34,832 --> 00:35:41,311
+Algoritmanın geliştirilmesi literatür taramasından sonraki süreçte devam ediyor. En uzun süreci bu kapsıyor.
+
+198
+00:35:42,152 --> 00:35:51,771
+Test aşamasında biz bu algoritmayı test ediyoruz. Kendi akıllı belki bileklikler sayesinde kontrolünü sağlıyoruz.
+
+199
+00:35:52,788 --> 00:36:01,068
+entegrasyon yapıyoruz web sitesine, memobu uygulamaya. Daha sonrasında da çıkarma aşamamız var. Sözü [öğrenci] arkadaşıma da ödüyorum.
+
+200
+00:36:02,027 --> 00:36:16,987
+Teşekkürler. İş paketlerinde ilk iş paketimiz web sitesi hazırlama. Bu kapsamda yapılacak işler web sitesi için arayüz tasarımı, önerilerinin geliştirmesi ve onaylarının alınması, içerik yönetim sisteminin kurulumu, web sitesi içeriklerinin hazırlanması diyebiliriz.
+
+201
+00:36:17,387 --> 00:36:19,427
+Devam edelim istersen. Aydın.
+
+202
+00:36:20,052 --> 00:36:45,092
+İkinci iş paketimiz mobil uygulama geliştirme. Burada da kullanıcı gereksinimleri ve işlevsellik kriterlerinin belirlenmesi, mobil uygulama için arayış tasarımı ve kullanıcı deneyimi ve produktiflerinin geliştirmesi, iOS ve Android platformlar için uygulamanın kodlanması ve test edilmesi, uygulamanın daha sonrasında beta sürümünün yayınlanması ve kullanıcı geri bildirimlerine göre niyay sürümünün hazırlanması ve yayın kısmı başlıyor. Devam edelim.
+
+203
+00:36:47,795 --> 00:37:15,635
+Literatür taraması, veri toplama ve analizi iş paketimizde de literatür taramasının sonucunda algoritma geliştirme aşaması için bir yol atarası oluşturulacak. Daha sonrasında terapi seyanslarından veri toplama protokollerinin oluşturulması, toplanan verilerin ön işleme ve temizlenme süreçlerinin geliştirilmesi, veri analizi için gerekli algoritmanın test edilmesi ve optimizasyonu, elde edilen sonuçların değerlendirilmesi, raporlanması, sonuçların danışman ve araştırmacılara sunulması ve geri bildirimlerin incelenmesi şeklinde devam edelim.
+
+204
+00:37:17,460 --> 00:37:35,340
+Dördüncü iş paketimiz algoritmalar entegresi. Burada duygu analizi için gerekli algoritmaların seçimi ve optimizasyonu çalışması yapılacak. Fizyolojik tepkileri izleyen algoritmaların entegrasyonu, algoritmaların mobil ve web platformlarıyla uyumlu çalışmasını sağlayacak API'lerin oluşturulması yapılacak.
+
+205
+00:37:35,340 --> 00:37:44,260
+Duygu analizi, fizyolojik tepki ve kullanıcı verilerini saklamak için bir veri tabanı tasarımı, kurulumu, yedeklenmesi ve kurtarma senörüleri geliştirilecek.
+
+206
+00:37:45,460 --> 00:37:50,443
+ve bilimsel yöntemlerin çoklu platformlarda test edilmesi ve performans değerlendirmesi de ayrıca yapılacak işler arasında.
+
+207
+00:37:51,059 --> 00:38:13,579
+Test aşamasında mobil ve web uygulamalarının kullanabilirlik testleri yapılacak. Sistem entegrasyon testleri ve hata raporlaması sağlanacak. Performans ve yük testleriyle sistemin dayanıklılığının değerlendirilmesi, güvenlik testleriyle veri koruma ve gizlilik prosedürlerinin incelenmesi yapılacak. Geri bildirimlere dayalı olarak uygulama ve algoritmaların iyi değiştirilip güncellenmesi de sağlanacaktır.
+
+208
+00:38:15,219 --> 00:38:43,219
+Demam edelim. Kullanıcılar için web uygulaması ve entegrasyon işlemleri, test kullanıcı kitlesinin geri dönüşlerini alma IP'sinde de masaüstü uygulamasının kullanıcı gereksinimlerine uygun olarak tasarlanması ve geliştirilmesi yapılacak işler arasında, analiz ve terapi algoritmalarının masaüstü uygulaması ile entegrasyonunu sağlanması, test kullanıcılarının geri dönüşlerinin alınarak bu genelde dönüşler doğrultusunda da uygulamanın yeni güncellemeleri yapılması, uygulamanın farklı kullanıcı senaryolarını...
+
+209
+00:38:43,219 --> 00:38:50,379
+Bu konuda test edilmesi ve kullanıcı dostu bir deneyim sağlanması, güncellenen uygulamanın final testlerinden geçiremesi ve dağıtma hazırlanması aşamaları olacak.
+
+210
+00:38:52,467 --> 00:39:15,168
+Devam edelim. Teslim aşamasında da teslim için gerekli belgelerin, dökümanların hazırlanması, eğitim materyalleri ve kullanıcı dökümanlarının geliştirmesi, final ürün sürümünün paketlenmesi ve dağıtım kanallarına sunulması, kullanıcı eğitimleri ve destek hizmetlerinin organize edilmesi, proje sonrası değerlendirme toplantılarının yapılarak gelecekteki güncellemeler için diğer faz çalışmalarının başlatılması yapılacak işler arasında.
+
+211
+00:39:16,947 --> 00:39:18,688
+Sözü ben de [öğrenci]'in arkadaşıma bırakayım.
+
+212
+00:39:19,411 --> 00:39:20,331
+Sesim geliyor mu?
+
+213
+00:39:21,907 --> 00:39:22,927
+Evet, ben duyuyorum.
+
+214
+00:39:24,407 --> 00:39:35,988
+Risk yönetiminden bahsedecek olursak, ilk önce ilk riskimiz, ekonomik olarak düşünebiliriz bunu, bütçenin aşılmasıyla birlikte maddi kesintiler sonucu projedeki aksaklık.
+
+215
+00:39:35,988 --> 00:39:40,847
+Buna karşı da ek gelir kaynağı için başka bir kuruluşla anlaşmayı planladık.
+
+216
+00:39:41,588 --> 00:39:44,988
+İkinci, diğer riskler teknik olarak düşünebiliriz.
+
+217
+00:39:46,847 --> 00:39:49,907
+İlk teknik riskimiz, sistemin dağıtıldığı konumdaki ağ...
+
+218
+00:39:49,907 --> 00:39:59,788
+Bu, bu, bu, tam bizim elimizde olan bir şeydir. İnternet servis sağlayıcısından dolayı. Burada potansiyel veri kaybı ve veri değişiklikleri olabilir.
+
+219
+00:40:00,115 --> 00:40:09,115
+Burada da kendi hizmetimizi bir süre durdurup internet servis sağlayıcısının, alt tip hizmetini daha iyi hale getirmesini sağlamayı düşünüyoruz.
+
+220
+00:40:09,675 --> 00:40:20,576
+İkinci teknik riskimiz de sisteme aşırı yoğunluktan dolayı yine internet sitesi ve geliştirdiğimiz mobile uygulamadaki sistemin yavaşlaması veya kopması.
+
+221
+00:40:20,976 --> 00:40:33,396
+Burada da önemli olan bölgelerde biz hizmeti devam ettirip, daha az önemli olan bölgelerde hizmeti bir süreliğine kapatıp problemi çözdükten sonra devreye almayı düşünüyoruz.
+
+222
+00:40:34,076 --> 00:40:47,936
+Son teknik riskimiz de bu her zaman olabilecek bir şey. Yoğun siber saldırılar sonucu hem uygulamadaki veya internet sitesindeki hatalar veya mahrem olan verilerin çalınması, hırsızlığı.
+
+223
+00:40:48,976 --> 00:40:58,655
+Bu arada siber saldırıyı geçene kadar yine sistemi kapatıp, saldırıya karşı gerekli önlüğü aldıktan sonra tekrardan devreye almayı düşünüyoruz.
+
+224
+00:40:59,655 --> 00:41:00,036
+Geçelim.
+
+225
+00:41:03,572 --> 00:41:08,492
+Projenin geliştirilmesinde donanım olarak neler kullanacağız bunlardan bahsedeyim.
+
+226
+00:41:09,052 --> 00:41:20,492
+Yapay zeka algoritmalarının geliştirilmesi ve eğitimi hızlandırmak için HP, Z8, G4 Workstation ve Nvidia, Tesla ve UGPU kullanmayı planlıyoruz.
+
+227
+00:41:21,192 --> 00:41:28,852
+Mobil uygulama ve web sitesinin geliştirilmesi için de Visual Studio ve JetBrains ürünlerini kullanmayı düşünüyoruz idelerini.
+
+228
+00:41:29,268 --> 00:41:38,887
+Veri güvenliği, veri koruma yazılımları için de Semantic Security ve Cisco Firewall kullanmayı düşünüyoruz.
+
+229
+00:41:39,248 --> 00:41:54,887
+Burada da en son olarak da mobil uygulama ve web uygulamasının kullanıcı arayüz etkiliğini ölçmek ve kullanıcının tıklamalarından vesaire geri bölümlerinden analiz edip daha iyi bir deneyim sunmak için Hitmet ve Click Tracking yazılımları kullanmayı düşünüyoruz.
+
+230
+00:41:56,244 --> 00:41:56,904
+Geçelim.
+
+231
+00:41:59,731 --> 00:42:24,291
+Şimdi projenin yaygın etkileninden bahsedeyim. Önce projendeki öngörülen çıktılardan bahsetmek istiyorum. Burada bilimsel çıktı olarak projenin geliştirilmesinden sonraki 15-18 aylık süre zarfında mental sağlık sektöründe bu uygulamanın ve bu alandaki proje üretme potansiyelinin artacağını düşünüyoruz ülke çapında.
+
+232
+00:42:27,731 --> 00:42:43,731
+açıklılardan bahsetmiş olsak, ekonomi olarak biz araştırdığımız zaman tarz bir uygulamanın dünyada ülke bazında söyleyeyim, ülke ülke olarak baktığımız zaman çok bir muadilini bulamadık. O yüzden bunu...
+
+233
+00:42:44,692 --> 00:42:57,292
+Çeşitli Google Play Store olsun veya App Store olsun iOS için bu uygulamanın ihracatıyla veya başka ülkelere satımıyla ulusal ekonomiye katkı sağlayacağını düşünüyoruz.
+
+234
+00:42:57,952 --> 00:43:05,692
+Onun dışında da yine bu alandaki muadili olmadığı için Türkiye'nin psikolojik danışmanlık alanında öncü bir konuma gelmesini...
+
+235
+00:43:06,835 --> 00:43:34,835
+Planlıyoruz. Ek olarak da danışmanların daha etkili destek sunabilmesi mümkün hale gelecek bu şekilde. Son olarak da araştırmacı yetiştirilmesi ve yeni projeler oluşturmasına yönelik çıktılardan bahsedecek olursak da uzmanlık alanlarında kalifiye araştırmacıların yetiştirilmesi ve bu alandaki bilgi birikiminin arttırmasını, psikolojik danışmanlık teknolojisi üzerine yeni projelerin teşvihini öngörüyoruz. Bu da projenin bitişini taklif eden 2-3 yıl.
+
+236
+00:43:34,835 --> 00:43:38,476
+Yıl arasında diri planladık. Geçelim.
+
+237
+00:43:39,411 --> 00:43:56,311
+Projeden oluşması öngörülen etkilere bakacak olursak, toplumsal olarak etkiye baktığımız zaman, yapay zeka destekli terapi yöntemleriyle psikolojik sağlık hizmetlerinin geliştirmesi, toplumsal sağlık refahının arttırılmasını düşünüyoruz en geç bir sene içerisinde.
+
+238
+00:43:56,731 --> 00:44:07,311
+İkinci olarak ekonomik etkilerden bakacak olursak, az önce bahsettiğimiz gibi benzer olarak yerli teknolojiyle geliştirdiğimiz uygulamanın sağlık teknoloji pazarında hem ülke için...
+
+239
+00:44:07,411 --> 00:44:34,603
+Rekabetçinin artması hem de yeni iş olanaklarının yaratılacağını düşünüyoruz. Bu da yaklaşık 1-1,5 sene süre zarfında. En son olarak da bu uygulamana sürekli bir siber güvenlik zafiyetleri olabileceği için sonuçta her gün yeni bir saldırı türleri keşfediliyor. Bu alanda da yapay zeka teknolojinin kullanımıyla psikolojik destek süreçlerinin güçlendirmesi için kişisel belirtilmiştir.
+
+240
+00:44:39,188 --> 00:44:48,967
+Sibel güvenliğin artılacağını düşünüyoruz. Bu da 18-24 aylık süre zarfında. Geçelim. Burada proje bütçesinden bahsedeceğim.
+
+241
+00:44:51,795 --> 00:45:19,795
+İlk bahsedeyim. Burada yazılım kısmı var, yapay zeka kısmı var ve psikoloji alanındaki danışmanlar var. Burada 250 bin lira bir bütçe düşündük. Yazılım lisans ücretlerinden bahsedecek olursak da ilk başlarda bahsettiğim bu JetBrains ideleri için profesyonel sürümleri almayı düşünüyoruz. Geliştirmeyi kolaylaştırıyor. Bunlar ve mobil uygulamaların gerek Google Play'de gerekse App Store'da.
+
+242
+00:45:19,795 --> 00:45:35,215
+Burada yayınlanması için belli bir ücret ödememiz gerekiyor. Bunları da kattığımız zaman 80 bin liralık bir tutar ortaya çıktı. Yine bu yapay zeka algoritmalarının geliştirilmesi ve çalıştırılması için yüksek işlem güçlü makineler gerekiyor.
+
+243
+00:45:37,331 --> 00:45:54,831
+Sonuçta saklayacağımız veriler görüntü olacağı için yine bir depolama sunucularımız vs. olacak. Ek olarak da yine geliştirdiğimiz mobil uygulamaların manuel testleri için gerçek test telefonları veya tabletleri alınacak. Bunlar da 410 bin liralık bir bütçe olarak hesapladık.
+
+244
+00:46:00,884 --> 00:46:11,003
+Çalışan arkadaşlar daha iyi bilir. Penetrasyon testleri yapılacak. Belli süre zarflarında. Bunlar için de yine 150 bin liralık bir bütçe ayırdık.
+
+245
+00:46:11,543 --> 00:46:24,263
+Ve en sonunda test kısmında gerek otomasyon testi gerek manuel testler. Burada da hem masaüst web sitesi testleri gerekse mobil uygulamalı testleri.
+
+246
+00:46:24,639 --> 00:46:34,500
+Burada da işte testlerden aldığımız geri dönüşlere göre potansiyel hataların gidilmesini için bir bütçe ayırdık. Bu da 25.000 lira. Geçelim.
+
+247
+00:46:38,839 --> 00:46:47,019
+Burada da kullandığımız kaynaklardan verdik en son kaynakçı olarak. Bu şekilde bizi dinlediğiniz için teşekkür ederiz.
+
+248
+00:46:49,972 --> 00:47:12,952
+Ben teşekkür ederim arkadaşlar. Güzel sundunuz. Bir tek şu Literature Review kısmına bir daha bakabilir miyiz? Literature Review kısmına. Çünkü orada bir de hani slide'larınızda ilk başta çok fazla metin var. Onu biraz daha kısaltabilirsiniz. İlk kısımlardaki metinleri. İlk kısımlar. İlk beş slide.
+
+249
+00:47:14,324 --> 00:47:31,463
+Mesela burada şu proje konusu falan biraz daha kısa olabilir, siz anlatabilirsiniz. Literature review kısmı vardı, orada, burası, bir ön, bu, bu slide. Burada arkadaşlar,
+
+250
+00:47:33,268 --> 00:47:47,607
+Alıntı yaparken, vaat etmektedir diyor ya, ondan sonra nokta, biçimsel olarak burada bir düzeltme yapıyorum size. Şu nokta var ya, vaat etmektedir dedikten sonra, oraya nokta koymamak lazım. Birden sonra nokta koymak lazım.
+
+251
+00:47:49,228 --> 00:47:52,047
+O kaynaklı, evet.
+
+252
+00:47:53,108 --> 00:48:10,708
+Buna dikkat edersiniz. Mesela makale yazarken ya da işte rapor yazarken başka zaman. Bu kısım gözüme çarptı. Başka işte dediğim gibi slide sunum yaparken bunları biraz daha kısa tutabilirsiniz.
+
+253
+00:48:13,528 --> 00:48:14,708
+Haklısınız hocam.
+
+254
+00:48:15,768 --> 00:48:18,748
+Proje özgün değeri. Tamam, bu kısımlar güzel.
+
+255
+00:48:19,923 --> 00:48:21,063
+Biraz daha ideal.
+
+256
+00:48:24,596 --> 00:48:29,576
+Ön bir öne yapalım. Yönteme bir daha bakalım. Yönteme.
+
+257
+00:48:31,916 --> 00:48:32,476
+Evet.
+
+258
+00:48:32,795 --> 00:48:37,976
+Bu da alt tipinin kullanımıyla başladık. Sonra bir örnekten sonra yine bizim çizdiğimiz bir flowchart.
+
+259
+00:48:38,735 --> 00:48:43,235
+İşte biraz da anlatıp. En son arayüz ve logo hocam.
+
+260
+00:48:43,715 --> 00:48:51,456
+Evet. Güzel olmuş arkadaşlar. Tamam. Çok güzel. Teşekkürler. Hemen diğer gruba geçelim.
+
+261
+00:48:52,563 --> 00:48:54,043
+17, grup 17.
+
+262
+00:48:54,724 --> 00:48:56,503
+Hocam biz sunabiliriz, grup 17.
+
+263
+00:48:57,244 --> 00:49:00,543
+Tamam. Slidelerinizi paylaşın arkadaşlar.
+
+264
+00:49:00,543 --> 00:49:06,103
+[öğrenci], [öğrenci], [öğrenci], [öğrenci].
+
+265
+00:49:08,703 --> 00:49:12,423
+Evet, görünüyor şimdi arkadaşlar. Slideleriniz görünüyor.
+
+266
+00:49:19,539 --> 00:49:29,760
+Başlıyoruz hocam. Herkese merhaba. Biz TÜBİTAK 1001 projesi olarak derin öğrenme yöntemleri ile meme kanserinde erken tesis üzerine çalıştık.
+
+267
+00:49:33,364 --> 00:49:47,784
+Sunum içeriğimiz giriş, girişte öncelikle meme kanseri ne olduğundan ve hangi yöntemler kullanıldığından, bu amaçla özellikle derin öğrenmede hangi yöntemlerden yer alacağını göreceğiz.
+
+268
+00:49:47,784 --> 00:49:56,904
+Daha sonra bizim önerdiğimiz yöntemdeki amaçlarımızdan, ne amaçla biz bu yöntemi çalıştık, ondan bahsedeceğiz.
+
+269
+00:49:57,084 --> 00:49:59,784
+Daha sonra ise bu projeyi gerçekleştirirken ki zaman çizgilerden...
+
+270
+00:50:00,000 --> 00:50:06,759
+ve iş paketlerimizden bahsettikten sonra olası risklerden ve yaygın etkiyle devam edeceğiz.
+
+271
+00:50:07,635 --> 00:50:16,355
+Meme kanseri 2020 yılından bu yana dünya çapında tüm hastalıklar arasında yüksek artış oranına sahip bir hastalık.
+
+272
+00:50:16,635 --> 00:50:25,096
+Meme görüntüleme, meme kanseri hastalarının sonuçlarını iyileştirmek için erken teşhis ve müdahalede önemli bir rol oynuyor.
+
+273
+00:50:25,096 --> 00:50:35,635
+Geçtiğimiz 10 yılda derin öğrenme meme kanseri görüntüleme analizinde dikkate değer bir ilerleme göstererek meme görüntüleme yöntemlerinin zengin bir bilenim ve karmaşık bağlanması.
+
+274
+00:50:35,635 --> 00:50:41,915
+yorumlanmasında büyük umut vahat etmekte. Bu amaçlı literatürde meme kanseri görüntüleme analizi,
+
+275
+00:50:42,275 --> 00:50:47,735
+eçikpları, sınıflandırma, teslim ve segmentasyon olmak üzere üç kategoride incelenmekte.
+
+276
+00:50:48,500 --> 00:50:59,819
+Sınıflandırma, CNN, DanceNet, dikkat mekanizmasına dayalı görüntü transformatörleri, GAN'lar ve 3 boyutlu U-Net mimarileri çalışılmakta.
+
+277
+00:51:00,359 --> 00:51:08,659
+Tespitte ise FES, R-CNN, YOLO dedektörleri ve RetinaNet mimarileri çalışılmış.
+
+278
+00:51:09,019 --> 00:51:16,440
+Segmentasyonda ise görüntü altı örnekli piksel bazında tahminleri üst örnekleyen U-Net mimarileri genelde kullanılmakta.
+
+279
+00:51:16,500 --> 00:51:32,579
+Literatürde kullanılan çoğu modelde veri ve etiket eksikliği üzerine sorunlar oluşmaktadır. Biz de bu amaçla bir yarı denetimli autoencoder öneriyoruz. Bu sayede etiketli veri üreterek veri kümesini artıracağız.
+
+280
+00:51:33,876 --> 00:51:44,656
+Araştırma sorularımız ise literatürdeki çalışmalar incelendiğinde, derin öğrenme modeli kullanıldığında, veri kümelerinde karşılaşılmış olan zorluklar nelerdir ve biz neler üretebiliriz bu amaçla?
+
+281
+00:51:45,056 --> 00:51:54,596
+Yara denetimini kendi kendine öğrenen, öğrenmeye dayalı bir model olan autoencoder kullanımı, meme kanserinde ise ne gibi yenilikler getirebilir?
+
+282
+00:51:54,596 --> 00:52:06,056
+Biz özellikle veri kümeleri üreterek yara denetimi bir encoder ile sınıflandırma alanında bir yenilik getirerek daha çok veri üretmeyi amaçlayacağız.
+
+283
+00:52:06,456 --> 00:52:08,576
+Şimdi arkadaşım yöntemden bahsedecek.
+
+284
+00:52:16,403 --> 00:52:17,364
+Sesim geliyor mu?
+
+285
+00:52:18,563 --> 00:52:20,684
+Evet.
+
+286
+00:52:21,324 --> 00:52:26,403
+Merhaba hocam, ismim [öğrenci]. Size yöntemden biraz bahsedeceğim.
+
+287
+00:52:27,463 --> 00:52:28,403
+Biz...
+
+288
+00:52:28,403 --> 00:52:32,304
+Tamam, tamam.
+
+289
+00:52:37,108 --> 00:52:37,768
+Bir dakika.
+
+290
+00:52:38,968 --> 00:52:39,688
+Göremiyorum.
+
+291
+00:52:42,688 --> 00:52:44,408
+Valla'ım seni görüyorum.
+
+292
+00:52:48,371 --> 00:52:50,411
+Tamam, şu an görüyorum.
+
+293
+00:52:52,191 --> 00:53:08,451
+Ben yöntemden biraz bahsedeceğim. Yöntemden bahsederken önce veri setlerinden biraz bahsedeceğim. Sonra görüntüleme yönteminde seçtiğimiz yöntemden, autoencoderlardan, UNET ile birleşiminden ve görüntü ön işleme adımlarından birazcık bahsedeceğim. Buraya geçebiliriz.
+
+294
+00:53:09,876 --> 00:53:25,636
+Veri setlerinde iki tane veri seti kullanacağız aslında bu çalışmada. İlki etiketsiz veri seti olan RSNA. RSNA'da 8000 katılımcı var ve özellikleri diğer kullandığımız veri setiyle aslında aynı özelliklere sahip.
+
+295
+00:53:25,636 --> 00:53:35,636
+Ve bu çalışmada her hastaya ait normalde 4 resim olması gerekirken her hastanın 4 resmi olmayabiliyor. Etiketli veri setinde ise biz...
+
+296
+00:53:36,179 --> 00:54:01,759
+Burada bahsedilen kanser görüntü setini kullanacağız. Bu da 1566 katılımcıdan oluşuyor. Ama toplamda 6671 hasta gibi görünüyor. Çünkü her katılımcının hasta kimliği farklı bir hastalık içinde kullanılabiliyor. Yani farklı bir lezyon için kullanılabiliyor. Bu yüzden 6671 hasta varmış gibi görünüyor. Bu da etiketli veri setimiz. Buraya geçebiliriz.
+
+297
+00:54:03,315 --> 00:54:19,056
+Burada ise görüntü ön işleme adımında aslında bir çalışmadan, makaleden alınmış bir kısım burası. 80 çalışmada hangi görüntü ön işleme adımları daha sık kullanılmış? Buna biraz baktık ve bu ön işleme adımlarını kullanabiliriz diye düşünüyoruz.
+
+298
+00:54:19,056 --> 00:54:31,056
+En çok kullanılan aslında burada görüntü artırma yöntemi. Döndürme, çevirme gibi ön işleme adımları yaparak başarının arttığı gözlemlenmiş. İkinci sırada...
+
+299
+00:54:31,315 --> 00:54:45,315
+Burda da RUY öz nitelik çıkartması var. Bu da çok fazla kullanılan bir yöntem. 30 makalede bunu kullanmışlar, 30 çalışmada. Scaling de bunun ardından geliyor ve normalizasyon her zamanki gibi.
+
+300
+00:54:57,679 --> 00:55:09,559
+Karanlık köşeler gibi olan kısımları gösterenler yine çok fazla göz önünde bulundurulmamış ama bunun da çok büyük etkisi olduğunu söylüyor bu çalışma. Bu kısım geçebiliriz.
+
+301
+00:55:14,387 --> 00:55:23,387
+Auto Encoder'ları gelecek olursak aslında önerdiğimiz sistemde şöyle bir yapı öneriyoruz. Temel bir Auto Encoder'da aslında 3 tane aşamamız var.
+
+302
+00:55:24,371 --> 00:55:32,331
+Bir encoder aşaması, bir hidden layer aşaması, bir de decoder kısmında autoencoder'ı kullanıyoruz.
+
+303
+00:55:32,811 --> 00:55:39,171
+Encoder'da biz çok boyutlu bir veriyi alıp daha az boyuta indirgiyoruz ve bu hidden layer'a gelmiş oluyor.
+
+304
+00:55:39,171 --> 00:55:44,871
+Hidden layer'da ise tekrardan bu veri inşa edilerek decoder'dan çıkarılıyor.
+
+305
+00:55:52,371 --> 00:55:57,551
+Böyle iyi özelliklerini çıkartmak için kullandığımız bir yöntem diyebiliriz.
+
+306
+00:55:58,091 --> 00:56:04,711
+Proje içerisinde kullanacağımız hiper parametreleri de optimizasyonla belirleyeceğiz bu çalışma esnasında.
+
+307
+00:56:05,192 --> 00:56:06,291
+Bu kısmı geçebiliriz.
+
+308
+00:56:07,987 --> 00:56:18,927
+Yönt'te ise şu şekilde birleştirilmesi düşünülüyor. Otoenkoder'dan çıkarttığımız özelliklerin outputlarını biz burada Yönt'in inputuna veriyoruz.
+
+309
+00:56:25,588 --> 00:56:36,068
+kendi yönetin içerisinde bulunan skip bağlantıları ile aslında kesinleştirerek, derinleştirerek daha keskin bir segmentasyon bize sunuyor.
+
+310
+00:56:36,668 --> 00:56:39,608
+Bunun için burada yöneti kullanmak mantıklı diye düşünüyoruz.
+
+311
+00:56:40,328 --> 00:56:50,288
+Segmentasyonu daha iyi bir şekilde yaparsak aslında öz nitelikleri de daha iyi çıkartmış oluruz ve teşhiste daha düzgün ve doğru bir oran elde ederiz diye düşünüyoruz.
+
+312
+00:56:50,988 --> 00:56:53,588
+Bizim yöntemimiz bu şekilde, buna geçebiliriz.
+
+313
+00:56:53,588 --> 00:57:00,888
+Burada da proje yönetimine geçiyoruz. Arkadaşıma sözü devretmek istiyorum hocam. Benim anlatacaklarım.
+
+314
+00:57:00,888 --> 00:57:05,968
+Merhaba arkadaşlar. Proje yönetim noktasında ben sözü devralacağım. [öğrenci].
+
+315
+00:57:06,648 --> 00:57:10,708
+Zaman size ergesi ve iş paketleri kısmından ben bahsedeceğim. Devam edebilirim.
+
+316
+00:57:13,396 --> 00:57:35,336
+Ekranda gördüğünüz bizim aslında zaman tüzelgemizin detaylı gösterilmiş hali. 4 iş paketinden oluşuyor bizim zaman tüzelgemiz. 4 iş paketinde araştırma ve nezle aşamasına, 4 ay kadar varlık model geliştirme ve tasar aşamasına, 20 ay uygulama ve validasyon aşamasına, 10 ay dağıtım ve eğitim aşamasına ise 6 ay kadar süre ayırtık.
+
+317
+00:57:38,036 --> 00:57:52,456
+İlk faketlerimizin detayları şu şekilde. Araştırma ve analiz faketi aslında tam olarak problemimizi belirlediğimiz, bu probleme uygun veri setlerin oluşturduğumuz, topladığımız, düzenlediğimiz, tabii ki şu an kullanmayı planladığımız veri setlerini araştırıp ekledik.
+
+318
+00:57:52,456 --> 00:58:05,936
+Ama burada daha detaylı çalışmalar yaparak keşfedemediğimiz, göremediğimiz veri setlerin de projemize ekleyebiliriz. Belirlediğimiz modellerde kullanmayı planladığımız ilk modeller aslında. Ancak biliyoruz ki literatürde çok daha fazla çalışma ve çok daha fazla model.
+
+319
+00:58:06,036 --> 00:58:15,295
+Bu modellerden istediğimiz sonuçları elde edemezsek eğer, hala hazırda literatürde denemeyi planladığımız başka modelleri de ekleyerek çalışmayı da saylandırabiliriz.
+
+320
+00:58:15,715 --> 00:58:18,635
+Buradaki asıl amacımız araştırmamızı ve analizimizi tasarlamak.
+
+321
+00:58:19,036 --> 00:58:27,936
+Model geliştirme ve test aşamasının iş paketinde ise, model sonuç olarak en son kullanacağımız model mimarını belirlemek için çalışma yapıyoruz.
+
+322
+00:58:27,936 --> 00:58:32,775
+Burada kullanacağımız modellerin hepsinin eğitimlerini gerçekleştiriyoruz.
+
+323
+00:58:34,036 --> 00:58:44,215
+sonuçlarına göre hiperparametre ayarlarını yaparak en uygun modeli bulabilmek için başarı marka tırması noktasında ve model tas noktasında geliştirmeler, iyileştirmeler yapıyoruz.
+
+324
+00:58:45,076 --> 00:59:04,155
+Uygulama ve validasyon aşaması ise modeli belirledik, belirimizdeki veri setleriyle bunun taslarını yaptık. Gerçek dünya verileriyle modeli değerlendirmemiz lazım. Bu durumda gerçek dünya verileri, şu an onlara da Meme Kanser'in okusunduğu, Sağlık Bakanlığı'nın yayınladığı bazı veriler var. Onları kullanarak yapabiliriz.
+
+325
+00:59:04,155 --> 00:59:13,076
+Bu da bazı hastaneler bunların geliştirilmesi için verilerini anonimleştirerek sunabiliyorlar. Onları kullanarak yapabiliriz. Ya da burada artık modelin...
+
+326
+00:59:13,076 --> 00:59:19,775
+kullanacağımız modelin klinik bir uygulama haline getirmesini sağlarsa kaptanlı bir validasyon süreci geliştirebiliriz diye düşündük.
+
+327
+00:59:19,875 --> 00:59:26,155
+Dağıtım ve test eğitim aşamasında ise modernin tüper etkisiyenlerine ve sağlık kuruluşlarına dağıtım yapmak.
+
+328
+00:59:26,295 --> 00:59:30,915
+Burada evet, bizim mekanasyonun testi yapıyoruz. Bununla ilgili bir model geliştiriyoruz.
+
+329
+00:59:31,355 --> 00:59:37,935
+Ancak bunun nasıl kullanıcısı? Aslılardan daha çok eğitim alan öğrenciler ve doktorlar oluyorlar.
+
+330
+00:59:37,935 --> 00:59:41,076
+Çünkü aslında onların işini kolaylaştıran bir çalışma.
+
+331
+00:59:41,076 --> 01:00:02,556
+Çünkü hastaların kendi tespitlerini, kendi hastalık tespitlerini yapabilmeleri çok olağan bir durum değil. Burada bu modelin kullanım noktasında doktorlar ve tıp öğrencileri için eğitim materyalleri hazırlamak, eğitim ve bilgilendirme otorulmları düzenlemek gibi son iş takatınıza ayırdık bu sürecine. Ben de burada sözü arkadaşıma bırakabilirim.
+
+332
+01:00:03,572 --> 01:00:10,572
+Merhabalar, ben [öğrenci]. Yukarıda dalimi tanımlanan iş paketlerinin risklerinden bahsedeceğim.
+
+333
+01:00:11,507 --> 01:00:22,687
+Öncelikle araştırma ve analiz iş planının riski, yani olabilecek temel risklerden biri aslında yetersiz ve eksik veri olması, veri yetersizliği.
+
+334
+01:00:22,687 --> 01:00:30,687
+Bunu çözmek için ne yapabileceğiz? Veri toplama sürecinde olası eksik ve hatalı verileri göz önünde bulanacak ve denetlenecek.
+
+335
+01:00:31,467 --> 01:00:38,687
+Eksik ve hatalı veriler tespit edilirse bunların düzeltilmesi veya eksik bilgilerin tanımlanması için ek bir veri toplama aşaması planlanacak.
+
+336
+01:00:40,211 --> 01:01:08,192
+İkinci iş planımız model geliştirme ve test. Burada tanımlanan risk de modelin beklenen başarıyı sağlayamaması, düzgün train olmaması, öğrenememesi. Bunu nasıl çözebiliriz? Alacağımız tedbir de şu. Modelin performansını arttırmak için ek optimizasyon ve ayarlamalar yapılacak. Farklı bir öğrenme ayırtması denenebilir. Başarı ölçütlerine ulaşılmadığında modelin güncellenmesi veya değiştirilmesi gibi alternatifler.
+
+337
+01:01:08,211 --> 01:01:35,331
+değerlendirilecek. Üçüncü iş planımız uygulama ve validasyon. Bunun adı tanımlanan risk ise uygulama ve validasyon sürecinde modelin gerçek dünya verileri üzerinde beklenen başarı ölçütlerini karşılamama riski. Bunu çözmek için de düzenli doğrulama ve test adımları uygulanacak. Başarı ölçütlerine ulaşılmadığında modelin güncellenmesi veya hiperpanometrelerin değiştirilmesi gibi adımlar değerlendirilecek.
+
+338
+01:01:35,860 --> 01:01:48,100
+Dağıtım ve eğitim diğer bir iş planımız. Bunun da riski modelin sağlık kuruluşlarına başarılı bir şekilde dağıtılamaması veya kullanıcıların yeterli eğitimi alamaması.
+
+339
+01:01:49,012 --> 01:02:02,792
+Bunun da çözebileceğimiz tedbir, alınacak tedbir, tıp pratisyenleri ve sağlık kuruluşlarıyla iş birliği yapılacak, kullanıcı ihtiyaçları anlaşılacak, dağıtım süreci düzenli olarak izlenecek ve gerektiğinde revize edilecek.
+
+340
+01:02:02,892 --> 01:02:12,332
+Kullanıcılar için kapsamlı eğitim materyalleri hazırlanacak, düzenli eğitim oturumları düzenlenecek, kullanıcı geri bildirimleri toplanacak ve eğitim süreci gerektiğinde revize edilecek.
+
+341
+01:02:12,892 --> 01:02:14,772
+Bir sonraki sallı sayta geçebiliriz.
+
+342
+01:02:15,452 --> 01:02:17,012
+Bundan sonraki bölümde yaygın etkili...
+
+343
+01:02:17,012 --> 01:02:22,192
+İlk ilerinden bahsedeceğiz, projelerin, projemizin. Bir slide daha geçebilir miyiz?
+
+344
+01:02:24,512 --> 01:02:36,192
+Projede elde edilmesi öngörülen çıktılara baktığımız zaman ilk olarak bilimsel kategoriler ayrıldığında, bilimsel ve akademik çıktılar bakıldığında işte proje çıktısı olarak...
+
+345
+01:02:38,463 --> 01:02:47,263
+Yayınlarım, işte yaptığımız projenin yayınlaşması ve dergi ve uluslararası konferanslarda yayınlanması bekleniyor.
+
+346
+01:02:48,211 --> 01:03:02,012
+Aynı zamanda ekonomik ve ticari, sosyal çıktılar kategorisini değerlendirdiğimiz zaman da beklenen çıktı olarak geliştirilecek olan ürün, hastaneler, klinikler veya taramatan merkezleri gibi sağlık kuruluşlarına lisanslanabilir veya satılabilir.
+
+347
+01:03:02,152 --> 01:03:13,852
+Projemizin sonuçlarını raporlar, makaleler veya seminerler aracıyla, sağlık personelleriyle ve halka duyurarak meme kanseri erken teşhisinin önemi vurgulamak ve farkındalığı arttırmak amaçlanmaktadır.
+
+348
+01:03:13,852 --> 01:03:16,211
+Tabi bu süreçler proje sonrasında.
+
+349
+01:03:16,211 --> 01:03:40,032
+Bu konuda oluşacak süreçler. Üçüncü kategori çıktı olarak da araştırmacı yetiştirmesi ve yeni projeler oluşturmasına yönelik çıktılar. Bundaki öngörülen çıktı ise proje kapsamında 4 yüksek lisans tezini tamamlanması planmaktadır. Bu çalışmanın sonucunda master ve doktor öğrencilerinin gelecekteki projelerde çalışması ve hatta bu projeleri başlatması amaçlanmaktadır. Bir sonraki slide'a geçeriz.
+
+350
+01:03:41,492 --> 01:04:07,432
+Proje çıktılarını paylaşımı ve yayılımı. Proje çıktılarını proje başlangıcından itibaren bir web sitesi üzerinden araştırmacılara, sağlık çalışanlara, konu hakkında bilgi sahibi olmak isteyen insanlara paylaşmak ilk çıktığımız paylaşımız. Sonra fuarlarda tıpkı, cihaz, üreticileri, sağlık kuruluşları gibi son kullanıcı yani sağlık çalışanlarına.
+
+351
+01:04:07,920 --> 01:04:23,140
+Yeter, ulaşabilmek ve genel halk ve sağlık ulaşıları içinde üçüncü çıktı paylaşımımız ve yayılımız, basın bültenleri, röportaj ve haber yayınları toplumun bilinçlenmesi amacında. Bir sonraki slide'a geçebiliriz.
+
+352
+01:04:24,371 --> 01:04:29,251
+Projede elde edilmesi göngörülen etkilere baktığımızda da toplumsal ve kültürlü etkilere.
+
+353
+01:04:30,791 --> 01:04:34,612
+Meme kansenin erken teşhis edilmesi tedavi başarısını arttıracaktır.
+
+354
+01:04:35,152 --> 01:04:40,311
+Bu proje sadece doktorlarımıza bir destek değil, tıp öğrencilerinin eğitimine de çok büyük bir katkı olacaktır.
+
+355
+01:04:40,711 --> 01:04:46,251
+Bu projenin sağlayacağı altyapıyla doktorlarımıza daha kısa sürelerde etkili teşhisler konmasını sağlayacaktır.
+
+356
+01:04:47,291 --> 01:04:49,251
+Ekonomik etkilerine baktığımızda da...
+
+357
+01:04:50,003 --> 01:04:55,443
+Bu proje mamografi cihazlarının entegre edildiği takdirde medikal cihaz pazarında büyüme sağlayacaktır.
+
+358
+01:04:56,023 --> 01:05:01,603
+Sağlık alanındaki başarı, teşhisler, çalışmalar, ülkemizdeki sağlık turizminin de etkili bir hale gelmesini sağlamaktadır.
+
+359
+01:05:02,183 --> 01:05:07,703
+Bu proje ile meme kanseri tespitlerini kendimize öne çıkararak ülkemizin sağlık turimizine de katkıda bulunabiliriz.
+
+360
+01:05:07,983 --> 01:05:17,703
+Ulusal güvenlik etkisine baktığımızda da sağlık eğitimi ve farkındalığının artması, sağlık teknolojileri arasında milli üretim artışı, daha etkili sağlık hizmetleri, ekonomik...
+
+361
+01:05:18,003 --> 01:05:32,123
+rafı arttıracak enerji istikrarları sağlar. Bir sonraki saate geçebiliriz. O son saytımız zaten. Genel olarak yaygın etkilerini bu şekilde değerlendirdik. Bizi dinlediğiniz için teşekkür ederiz. Sunumunuzu kadar.
+
+362
+01:05:34,403 --> 01:05:39,947
+Ben teşekkür ederim arkadaşlar. Sizin grubunuzda önce biri vardı sonra...
+
+363
+01:05:40,211 --> 01:05:42,031
+Çıktı mı? Evet, evet.
+
+364
+01:05:42,611 --> 01:05:43,291
+Evet, evet.
+
+365
+01:05:44,652 --> 01:05:47,371
+Dersi sayılmış galiba onun, öyle bir şey vardı.
+
+366
+01:05:48,511 --> 01:05:50,751
+Kim bir arkadaşları o kişi?
+
+367
+01:05:51,231 --> 01:06:02,951
+[öğrenci] benle. [kişisel bilgi] O yüzden zaten muhabbet buldum.
+
+368
+01:06:04,192 --> 01:06:06,951
+Tamam, tamam arkadaşlar. Teşekkürler.
+
+369
+01:06:08,851 --> 01:06:13,131
+Şöyle bir geçelim hızlıca slide'larımıza bakalım. Sonra diğer gruba geçelim.
+
+370
+01:06:42,835 --> 01:06:43,755
+Bu şekilde hocam.
+
+371
+01:06:56,083 --> 01:06:58,563
+Ben göremiyorum da paylaştınız mı arkadaşlar?
+
+372
+01:06:58,824 --> 01:07:00,824
+Paylaştık, hep geçtim.
+
+373
+01:07:03,324 --> 01:07:04,744
+Şimdi görünüyor mu hocam?
+
+374
+01:07:05,103 --> 01:07:06,244
+Evet, şimdi görünüyor.
+
+375
+01:07:06,463 --> 01:07:07,764
+Başlanın, açayım hocam.
+
+376
+01:07:10,284 --> 01:07:16,744
+Tamam, evet. Motivasyonu, özgün değeri. Araştırma sorusuna bakalım bir daha. Araştırma sorusuna.
+
+377
+01:07:16,744 --> 01:07:17,483
+Hadi.
+
+378
+01:07:34,068 --> 01:07:36,068
+Müriyenlik getirir.
+
+379
+01:07:44,755 --> 01:07:58,076
+Şimdi bu mesela birinci soruda literatürde araştırma sorusu hazırlarken bu bir başlangıç olabilir.
+
+380
+01:07:58,076 --> 01:08:11,076
+Hani ilk başta karşılaşılmış zorluklar nelerdir? Ondan sonra o zorlukları görüp, oradan bir boşluk çıkarıp ya da bir zorluğu keşfedip, ondan sonra...
+
+381
+01:08:12,115 --> 01:08:27,976
+Ondan sonra bir araştırma sorusuna ulaşmak gerekir. Mesela sorularda da ne gibi bir yenilik getirir?
+
+382
+01:08:31,572 --> 01:08:53,471
+Biraz daha araştırmak lazım arkadaşlar. Araştırma soruları, yani research questions aslında önce bir gap buluruz. O gap'i bulduktan sonra o boşluğa yönelik bir araştırma sorusu olması gerekir. Şimdi burada karşılaşılan zorluklar nelerdir? O bir adımdır.
+
+383
+01:08:54,036 --> 01:09:01,095
+O zorlukları gördükten sonra bir araştırma boşluğu bulunur. Sonra o araştırma sorusu üretilir.
+
+384
+01:09:01,716 --> 01:09:15,456
+Yani ya da mesela çok deskriptif sorular da olmaması gerekir. Yani deskriptif sorular işte nasıl örnek verebilirim?
+
+385
+01:09:18,644 --> 01:09:26,824
+Mesela şunlar şunlar nelerdir gibi bu çok deskriptif bir soru. Böyle soru da uygun olmaz mesela.
+
+386
+01:09:37,376 --> 01:09:59,876
+Onlara bir bakmak, mesela güzel araştırma sorusu nasıl hazırlanır gibi kaynaklar var. O kaynaklara bakıp ya da makalelere bakıp makalelerde araştırma soruları nasıl sorulmuş? Onlara bir bakmak gerekir. Deskriptif sorulardan ziyade daha böyle nasıllı, yani how, mesela what question'ları değil.
+
+387
+01:10:00,000 --> 01:10:21,380
+Why ya da How? Yani onlarla başlayan sorular genelde iyi araştırma sorularıdır. Bu bir adım, mesela buradaki başlangıçta bu araştırma sorusu bir adım aslında sizin. Onlara bakıp daha böyle bunu güzelleştirebilirsiniz ama konu güzel. Sonra geri bir adım daha gidelim, veri setlerine bakalım.
+
+388
+01:10:24,627 --> 01:10:31,407
+Mesela veri setleri, verilerin özellikleri, yöntem, önceden yapılmış yöntemler tamam, bunlar güzel.
+
+389
+01:10:34,347 --> 01:10:36,528
+Bu autoencoder'ın yapısı tamam.
+
+390
+01:10:38,768 --> 01:10:39,087
+Evet.
+
+391
+01:10:43,127 --> 01:10:46,067
+Yani genel olarak öyle mesela literatüre bakılıp
+
+392
+01:10:46,484 --> 01:10:51,164
+Boşluk bulunup ondan sonra o boşluk nasıl doldurulur ona yönelik bir araştırma sorusu.
+
+393
+01:10:51,744 --> 01:10:57,904
+Ve dediğim gibi descriptive değil de daha böyle yani what ile başlayan sorular yerine how ya da why ile.
+
+394
+01:10:58,420 --> 01:11:25,899
+olan soruları sormak gerekir. Genel bir boşluğu kapatan bir araştırma sorusu bulmak gerekir. Sonra da veriler güzel. Metot da, önceki metotlar nasıl metotlar, bu metotlar nasıl daha çok geliştirilebilir ve sizin araştırma sorunuz o metotta çözülür mü? O metodu uygulayınca siz araştırma sorusuna cevap verebilecek sonuçlar bulabilir misiniz? Genelde öyle olması gerekir araştırmada.
+
+395
+01:11:27,956 --> 01:11:35,435
+Teşekkürler arkadaşlar. Güzel olmuş genel olarak. Biz teşekkür ederiz hocam. Diğer gruba geçelim. Grup 19.
+
+396
+01:11:38,435 --> 01:11:41,695
+Merhabalar hocam. Merhaba. Merhaba.
+
+397
+01:11:41,695 --> 01:11:44,716
+Ben ekranı paylaşıyorum.
+
+398
+01:11:54,355 --> 01:11:55,655
+Ekranım geldi mi acaba?
+
+399
+01:11:56,655 --> 01:11:56,995
+Evet.
+
+400
+01:11:57,956 --> 01:12:01,235
+Tamamdır, teşekkürler. Başlıyorum o zaman hocam.
+
+401
+01:12:02,175 --> 01:12:02,855
+Başlayalım.
+
+402
+01:12:02,855 --> 01:12:06,855
+Bizim gerçekleştirdiğimiz proje başvurusu...
+
+403
+01:12:08,159 --> 01:12:22,940
+Borsa İstanbul üzerinde yer alan teknoloji şirketlerinin finansal raporlarından faydalanarak bir başarı tahminlemesi yapılması ve bu tahminleme sonucunda bir karara bağlanması noktasında bir çalışmayı gerçekleştirmeye amaçladık.
+
+404
+01:12:23,319 --> 01:12:30,719
+Bu çalışmayı ben [öğrenci], [öğrenci], [öğrenci] ve [öğrenci] olarak hazırladık bu raporu.
+
+405
+01:12:32,467 --> 01:12:53,387
+Özgün değerinden bahsedecek olursak bu projenin, Borsa İstanbul'da yer alan bu teknoloji firmalarının kar zarar durumlarında oluşabilecek durumlara karşı karar alma mekanizmalarında kullanılmak üzere bir girdi oluşturabilecek ve hatta onları yönlendirebilecek bir çalışma ortaya koymayı düşündük.
+
+406
+01:13:00,467 --> 01:13:03,727
+öncül bir girdi sağlamayı hedefledik.
+
+407
+01:13:04,948 --> 01:13:32,948
+Borsa İstanbul'u incelediğimizde teknoloji sektöründe 68 şirket bulunmakta ve bu 68 şirketin verisini kullanırken hem zaman serisi yöntemleri hem de karar ağacı yöntemlerini birleştirerek buradan şirketlerin geçmiş verilerinin üzerinden tabii ki de bu öğrenmeyi sağlayarak gelecekteki mali durumlarına dair şu anki mali durumlarından yola çıkarak bir...
+
+408
+01:13:32,948 --> 01:13:41,328
+kar zarar miktarını ortaya koyacak, başarılı ve başarısızlık kararını sunacak bir çalışma olmasını hedefledik.
+
+409
+01:13:41,808 --> 01:13:48,128
+Literatür de buna benzer, Borsa İstanbul üzerindeki şirketler üzerinde gerçekleştirenen çalışmalar var.
+
+410
+01:13:48,128 --> 01:13:56,688
+Hatta teknoloji sektöründe de özel çalışmalar var. Birçok sektörü de ele alarak gerçekleştiren çalışmalar var.
+
+411
+01:13:57,148 --> 01:14:00,948
+Ancak burada sadece zaman serisi yöntemlerini kullanarak bırakmış çalışmalar.
+
+412
+01:14:00,948 --> 01:14:24,868
+Biz burada özgün değer olarak üzerine bir karar ağacı yöntemiyle de bu sonucun, yani çıkan sonucun başarılı veya başarısızlık durumunda olan değerine göre ne karar verilmesine, hangi aksiyonu alınması noktasında tavsiyeler sunan bir sistem oluşturmayı hedefliyoruz.
+
+413
+01:14:26,195 --> 01:14:31,935
+Bu noktadan sonra gerçekleştireceğimiz yöntemler için de [öğrenci] arkadaşıma sözü veriyorum.
+
+414
+01:14:34,235 --> 01:14:35,235
+Merhabalar.
+
+415
+01:14:36,875 --> 01:14:42,695
+Yöntem kısmında öncelikli olarak kamu aydınlatma platformu.
+
+416
+01:14:44,148 --> 01:15:00,368
+Özelinde verilerle çalışmayı amaçladık. Kamuya aydınlatma platformu hani kısaca Türkiye piyasalarının, Borsa İstanbul'un daha doğrusu resmi haber kurumu diyebiliriz. Yani duyuru ve haber.
+
+417
+01:15:02,036 --> 01:15:24,975
+Burada şirketler bu periyodik olarak belli süreler zarfında mali durumlarını bildiriyorlar ve bildirmek zorundalar. Biz bu bildirimlere de finansal rapor adını veriyoruz. Yapmayı hedeflediğimiz çalışmada zaten bu veri olarak finansal rapor bildirimleri kullanılmış olacaktır.
+
+418
+01:15:25,975 --> 01:15:28,175
+Devam edelim, sonraki slide'a geçelim.
+
+419
+01:15:29,811 --> 01:15:47,811
+Şimdi burada çalışma kapsamında bir elimize verinin geçmesi gerekiyor. Şimdi normalde kamu aydınlatma platformu bir haber kanalı, yani bir web sitesi şeklinde. Fakat şimdi web sitesi şeklinde ama...
+
+420
+01:15:48,207 --> 01:16:10,227
+Buradan işlenebilir veri elde etmek zor bir seçenek. Yani sonuçta elimizde bir HTML çıktısı var. Bize anlamlı daha böyle işlenebilir verilere sunulması gerekir. Çünkü veri işlemede en önemli kriterlerden, en önemli şeylerden bir tanesi de işlenebilir veriyi elde etmek.
+
+421
+01:16:16,207 --> 01:16:35,407
+Yani belli bir yapıda. Burada biz Extendable Business Reporting Language yani kısaca XBRL veri formatını araştırıp bu format XML yapıda ancak uluslararası standartlarda desteklenmiş.
+
+422
+01:16:35,840 --> 01:16:54,880
+Bir business rapor verisi diyebiliriz. XML tabandır ve tüm dünyada aynı şekilde kullanılır. Belli prosedürleri, standartları olan bir yapıdır. Bu yapıyı kullandığımız zaman veriyi işlemek çok daha kolaylaşıyor.
+
+423
+01:16:55,283 --> 01:17:13,743
+Çünkü daha yapısal bir veri, standartları belli. Biz de bu XBRL verisini kullanmayı hedefledik ki, veriyi işleme konusunda daha bize yardımcı olsun. Burada bir örnek veri koyduk.
+
+424
+01:17:13,760 --> 01:17:24,940
+Bu arada bu XBRL verisi tamamen public şekilde değil. Burada kamuoydan aydınlatma platformunun ücretli apileri var.
+
+425
+01:17:25,555 --> 01:17:44,435
+Onlardan faydalanmanız gerekiyor. Yani public şekilde yayınlandığını söyleyemeyiz bunun. Ücretli apilerden bu şekilde bir XBRL örneği alabiliyorsunuz. Daha çok böyle key value şeklinde veriler.
+
+426
+01:17:44,916 --> 01:18:07,136
+Ayrıca dil desteği de var. İngilizce, Türkçe veya istediğiniz kadar dil desteği ekleyebiliyorsunuz. Her bir finansal kalem bir key ile tutuluyor. Biz de verileri işleyeceğimiz zaman bu keylerden yola çıkarak 2009'dan itibaren sanırım dijital veriler halinde yayınlanıyor.
+
+427
+01:18:07,539 --> 01:18:18,479
+2009'dan itibaren bu key value şeklinde bu finansal kalemleri alıp işleme koyabiliyoruz. Bir sonraki slide'a geçelim.
+
+428
+01:18:20,600 --> 01:18:26,399
+Şimdi biz 3 algoritma hedefledik, 3 algoritmayı kullanmayı.
+
+429
+01:18:27,072 --> 01:18:53,711
+Birincisi, yapay zeka ile zaman serisi tahmin yapılan yöntemlerden biri diye geçiyor. Facebook Profit. Bu Facebook'un geliştirdiği bir algoritma. Public hale gelmiş bir algoritma. Aynı zamanda erişilebilir durumda. Python kütüphanesi ile geliştirme yapılabiliyor.
+
+430
+01:18:54,355 --> 01:19:12,335
+Yani alıp doğrudan kullanabiliyorsunuz. Zaman serisi temelli bir algoritma bu. Aynı zamanda bias tabanlı bir algoritma. Şimdi burada daha önce yapılmış literatürde çalışmalar var.
+
+431
+01:19:12,819 --> 01:19:29,159
+Hatta bir doktora tezinde de geçiyor bu algoritma. Makaleler de var. Borsa İstanbul özelinde kullanıldığı çalışmalar da var. Burada Facebook Profit algoritmasının güçlü yanlarından birisi.
+
+432
+01:19:29,716 --> 01:19:41,056
+Gürültüye karşı duyarlılık. Daha doğrusu gürültü dediğimiz istisnai değerler olabiliyor. Bunlara karşı duyarlı bir algoritma.
+
+433
+01:19:44,095 --> 01:20:00,000
+Tatil günleri veya işte periyodik bildirimin yapılamadığı zamanlar gibi hani aralarda böyle eksik veriler olabiliyor. Onları tamamlama noktasında da bu Facebook Profit algoritması diğerleri...
+
+434
+01:20:00,000 --> 01:20:20,180
+Bu değerine göre bir adım önde diyebiliriz. Zaten algoritmadaki temel amaçlardan bir tanesi bu. Eksik veri, gürültü analizi, aykırı değer gibi ekstrem keyifleri handle edebilme noktasında geliştirilmiş bir algoritma. Devam edelim.
+
+435
+01:20:21,779 --> 01:20:32,399
+Diğer bir algoritmamız da Long Short-Term Memory, yani uzun kısa süreli bellek isminde bir algoritma.
+
+436
+01:20:33,759 --> 01:20:37,659
+Bu algoritma da yapay sinir ağları tabanlı bir algoritma.
+
+437
+01:20:37,659 --> 01:20:44,399
+Burada uzun kısa süreli bellek derken uzun kısa birbirinin zıttı anlamında değil.
+
+438
+01:20:44,916 --> 01:21:01,596
+Kısa süreli, metrikleri uzun süreli saklayabilen ve bunları işleyebilen anlamında. Yani uzun kısa aslında uzundan sonra bir virgül koyuluşu aslında daha iyi olur. Bazen böyle kafa karşıma yol açabiliyor.
+
+439
+01:21:02,516 --> 01:21:06,436
+Yapay sinir ağlarını kullanan bir algoritma.
+
+440
+01:21:06,868 --> 01:21:22,628
+Yine bunda da zaman serisi kullanımı var ama bunun asıl güçlü yönleri, şimdi 2009'dan beri bu finansal veriler yayınlandığını söylemiştik.
+
+441
+01:21:23,123 --> 01:21:46,283
+Ve her bir finansal verim içinde böyle az önceki gösterdiğimiz örnekte de key value şeklinde küçük küçük değerler var. Bu değerleri uzun süreli saklayıp bunların işte aralarında korelasyonlar kurulabilmesi noktasında güçlü bir yöntem bu. Yine bununla ilgili de Borsa İstanbul özelinde de yapılmış çalışmalar var.
+
+442
+01:21:47,283 --> 01:22:02,043
+Özellikle uzun dönem analizlerin yapıldığı durumlarda güçlü bir algoritma aynı zamanda bu yapay sinir ağları kullanıyor ve geri beslemeli yapay sinir ağlarını destekliyor.
+
+443
+01:22:02,043 --> 01:22:06,923
+Yani şimdi bir model oluşturduğumuzu düşünelim.
+
+444
+01:22:07,731 --> 01:22:25,551
+Ve ben bu modeli eğitmeye başladım. Bir sene boyunca bu modeli hiç sıfırlamadan devamlı eğittiğimiz zaman, geri beslemeni olduğu için modelimiz giderek daha da iyi bir hale gelebilecektir.
+
+445
+01:22:25,551 --> 01:22:32,311
+Yani aslında uzun vadeli, uzun vadede bir çalışma yapmak istiyorsak.
+
+446
+01:22:32,724 --> 01:22:41,944
+Bu uzun kısa süreli bellek algoritması diğerlerine göre aslında bir tık daha iyi gibi duruyor. Bir sonraki slide'a geçelim.
+
+447
+01:22:43,984 --> 01:22:59,604
+Bir diğer yöntemimiz de decision tree yani karar ağacı yöntemleri. Aslında karar ağacı yöntemleri şöyle. Bunlar da klasik veri madenciliğinde binary triler şeklinde.
+
+448
+01:23:00,095 --> 01:23:10,115
+Karar ağaçları oluşturulabiliyor. Şimdi burada key value şeklinde değerlerden bahsetmiştik, finansal değerlerden.
+
+449
+01:23:10,115 --> 01:23:19,115
+Şimdi bu finansal değerleri bir ağacın ağaç özelinde toplu bir...
+
+450
+01:23:19,923 --> 01:23:31,884
+Bir veriye dönüştürecek olursak, sayısal veriler de olduğu için burada entropi hesapları karar ağacı oluşturmada aslında faydalı olacaktır.
+
+451
+01:23:32,764 --> 01:23:44,623
+Yani burada bütün veriyi kullanmak yerine aslında en faydalı finansal veri kalemi hangisidir? En faydalı keyler hangileridir?
+
+452
+01:23:45,140 --> 01:24:08,460
+Entropi hesabıyla bunları seçme noktasında belki bir optimizasyon olarak karar ağacı kullanmak daha mantıklı olabilir. Yani doğrudan karar ağacına bakarak bir model geliştirmek yerine hangi kalemlerin, hangi değerlerin daha faydalı olacağını entropi hesabıyla yapıp
+
+453
+01:24:08,916 --> 01:24:30,675
+Ona göre belli başlı değerleri bu diğer içi algoritmaya girdi olarak kullanmak aslında daha mantıklı gibi duruyor. Yani tek başına bir karar ağacı mekanizmasından ziyade bu şekilde bir hesaplama yapma yöntemine gidilir. Bir sonraki sayıta geçelim.
+
+454
+01:24:32,500 --> 01:24:55,380
+Şimdi kullanılacak değişkenler dedik. Şimdi bu finansal raporlarda çok fazla değer var. Yani baktığımız zaman yüzlerce böyle değer var. Bunları işlerken bazı değerler hani belki etkili olabilir, belki etkili olmaya da bilir. Finansal başarı dediğimiz olayda.
+
+455
+01:25:00,180 --> 01:25:17,180
+Biz bu değerleri koyarak entropi hesabıyla hangisinin maksimum fayda sağlayacağını tespit ederek diğer iki algoritmaya model eğitimi konusunda bir girdi hazırlamak şeklinde düşünebiliriz.
+
+456
+01:25:17,960 --> 01:25:20,820
+Burada örnek bir tane tablo koyduk.
+
+457
+01:25:21,332 --> 01:25:38,272
+Burada gördüğünüz gibi belli başlı değerler var. Finansal tablo dediğimiz şey aslında bu bir özet tablo. Çok daha büyük, çok daha fazla değer içeren tablolar. Biz özet şeklinde kısaca bunlardan bahsettik.
+
+458
+01:25:39,792 --> 01:25:46,092
+Bir sonraki slide'a geçelim. Benim yöntem kısmı bu kadardı. Ben de sözü [öğrenci]'ya bırakayım.
+
+459
+01:25:47,060 --> 01:26:05,140
+Projemizi verimli bir şekilde yönetebilmek ve planlayabilmek için projeyi iş paketlerine ayırdık. 6 adet iş paketimiz var. Bunların projedeki başarısının önemi için ve iş yükü anlamında aylara böldük ve planımızı yaptık. Sonraki lütfen.
+
+460
+01:26:05,908 --> 01:26:19,707
+İlk iş paketimiz proje planlaması. Yaptığımız araştırmalar sonucunda ve literatürdeki eksiklikleri gözlemledikten sonra özgün bir projenin kararlaştırılması, proje hedeflerinin adımlarının belirlenmesi paketi.
+
+461
+01:26:20,247 --> 01:26:25,627
+Ara çıktılarımız proje hedeflerimiz, proje planımızın daha detaylı bir şekilde ortaya çıkması.
+
+462
+01:26:25,627 --> 01:26:30,728
+İkinci iş paketimiz kullanacağımız teknolojilerin ve metodların belirlenmesi.
+
+463
+01:26:33,908 --> 01:26:39,948
+ve veri toplama araçlarına karar verilmesi, en uygun finansal tahminleme modellerine karar verilmesi.
+
+464
+01:26:40,868 --> 01:26:44,047
+Bu iş paketinden elde edeceğimiz ara çıktılar.
+
+465
+01:26:44,667 --> 01:26:47,387
+Kullanacağımız programlarla ilgili bilgi edindik.
+
+466
+01:26:48,268 --> 01:26:51,908
+Karar verili de kullanılacak tahminleme modelleri belirlendi.
+
+467
+01:26:52,028 --> 01:26:54,608
+Bizim projemiz için en uygun olanlar olarak.
+
+468
+01:26:54,908 --> 01:26:55,948
+Devam edelim lütfen.
+
+469
+01:26:57,408 --> 01:26:59,148
+Üçüncü adımımız veri toplama.
+
+470
+01:27:00,851 --> 01:27:11,332
+Finansal tahminleme yapılacak şirket verilerini güvenilir kaynaklardan elde ederek, verilerin düzenlenerek kategorilere ayırılması, kullanılabilir ve işlenebilir hale getirilmesi.
+
+471
+01:27:12,152 --> 01:27:18,811
+Bu kapsamda veri kaynaklarımızı belirliyoruz. Verileri elde ediyoruz, verileri düzenliyoruz, işlenebilir hale getiriyoruz.
+
+472
+01:27:21,372 --> 01:27:24,032
+Dördüncü paketimiz verilerin işlenmesi ve analizi.
+
+473
+01:27:24,724 --> 01:27:31,503
+Bu pakette elde ettiğimiz verileri modelleme için kullanıyoruz ve artık tahminlerimizi oluşturuyoruz.
+
+474
+01:27:31,984 --> 01:27:44,104
+Finansal modellerimiz kuruldu, tahminler elde edildi. Bu paket için ara çıktılarımız, yazılım adımımızı genel anlamda tamamlıyoruz ve modelimizin çıktılarını görmeye başlıyoruz.
+
+475
+01:27:46,083 --> 01:27:51,724
+Sonraki adımımız test ve başarı analizi. Burada elde ettiğimiz tahminler...
+
+476
+01:27:51,792 --> 01:28:06,712
+için bir hata analizlerimizi yapıyoruz. Hata olanları inceleniyor. Hataları azaltmaya çalışıyoruz ve gerekli ise modelimizi revize ediyoruz. Ara çıktılarımız test sonuçları, modelin son hali ve tahmin sonuçlarımızı elde ettik.
+
+477
+01:28:08,311 --> 01:28:12,612
+Daha sonra verilerin görselleştirilmesi ve yorumlanması.
+
+478
+01:28:13,555 --> 01:28:27,315
+Anlaşılabilir bir hale getirilmesi ve daha iyi gözlemlenebilmesi için verileri görselleştiriyoruz. Sonuçlarımız belirleniyor. Bu aşamada ara çıktılarımız, görsel kaynaklarımız, araştırma sonuçlarımızdır.
+
+479
+01:28:29,395 --> 01:28:36,835
+Proje sürecinde karşımıza çıkabilecek risklerin tanımlarını ve bu konuda yapabileceğimiz tedbirler belirttik.
+
+480
+01:28:37,575 --> 01:28:42,295
+Kullanılacak teknolojiler ve metodların projeye uyum göstermemesi ilk riskimiz.
+
+481
+01:28:42,875 --> 01:28:48,315
+Araştırma genişletilerek yeni verilere uygun yeni teknoloji ve metodlar bulabiliriz plan olarak.
+
+482
+01:28:49,171 --> 01:28:55,491
+Bir sonraki riskimiz toplanan verilerde eksiklikler, hatalı veriler çıkması gibi durumlarla karşılaşabiliriz.
+
+483
+01:28:56,151 --> 01:29:07,271
+Durum proje sağlığı açısından tolera edilemeyecek bir seviyedeyse araştırma için yeni şirketlere odaklanılabilir veya kullandığımız yazılım programlarıyla düzenleme yapabiliriz.
+
+484
+01:29:07,271 --> 01:29:09,195
+Daha sonra...
+
+485
+01:29:09,300 --> 01:29:14,080
+Test ve başarı analizi sırasında beklenenden daha çok hata görebiliriz modelimizde.
+
+486
+01:29:14,660 --> 01:29:18,060
+Model geliştirilerek hata oranı azaltılmaya çalışılır.
+
+487
+01:29:18,200 --> 01:29:22,800
+Gerekirse yeni tahminleme yöntemleri projeye eklenerek entegre edilebilir bu adımda.
+
+488
+01:29:24,460 --> 01:29:26,800
+Bir sonraki slide'a geçebiliriz.
+
+489
+01:29:33,076 --> 01:29:48,855
+Merhaba, yaygın etki kısmında ben anlatacağım. Burada projeden elde edilmesi yöngörülen çiftleriyle ilişkin bilgilerden bahsedeceğim. Bilimsel akademik çiftleriyle başlamak gerekirse, proje sonrasında bir ulusal, bir uluslararası dergi makalesi ve iki konferans bilgisi yayınlanmayı hedefliyoruz.
+
+490
+01:29:48,855 --> 01:29:59,695
+Bu makaleler sağ indekslerine taranan dergilerde sunulması ve konferanslarda, uluslararası indekslerde taranan konferanslarda bildirilmesi.
+
+491
+01:30:00,000 --> 01:30:21,359
+Aksu olması planlanmaktadır. Ekonomik, ticari, sosyal çıktılar başlığının altında ise yapay zeka tabanının tahmin modelleri teknoloji sektörüne finansal başarısızlığı öngörülmek için kullanılıyor. Bu modeller girişim şirketinin gelecekteki mali performansları değerlendirmede ve riskleri azaltmada kritik bir rol oynayacaktır. Devam edebiliriz.
+
+492
+01:30:21,971 --> 01:30:32,471
+Araştırmacı ve yetiştirilmesi ve yeni projeler oluşturması yönelik çıktılardı. Bu da yine proje sonra 0-6 ay içerisinde bir doktora ve yüksek lisans öğrencisine burs verilerek yapılacaktır.
+
+493
+01:30:32,471 --> 01:30:41,371
+Bu araştırmacılar, ekonomimizde oluşan ve oluşması öngörülen riskleri yapay sinir ağları aracıyla tespit edebilecek nitelikli belirler olarak da yetiştireceğiz.
+
+494
+01:30:41,876 --> 01:31:03,695
+Şimdi projenin çıktılarına yönelik iletişim ve paylaşım stratejilerimizi anlatacağım. Hedefimiz projenin sonuçlarını mümkün olunca geniş bir kitleye ulaştırmak ve projenin etkisini maksimize etmektir. Burada paydaşlarımız ve hedef kitlelerimizden bahsedeceğim. Teknoloji sektöründeki şirketler, danışmanlık şirketleri ve akademi dışından proje yönetimine ilgilenen bireylerdir.
+
+495
+01:31:04,064 --> 01:31:11,164
+Paylaşım stratejiler olarak da projenin çıktığı, yani aşağıdaki gibi seminer ve çalıştığı olarak kanallar aracılığıyla paylaşacağız.
+
+496
+01:31:11,624 --> 01:31:20,664
+Projenin 24. ayında 1-2 günlük bir seminer düzenlenecektir. Seminerde projenin genel bakışı, metodoloji ve bulgular ve öneriler sunulacaktır.
+
+497
+01:31:21,204 --> 01:31:32,064
+Çalıştay ise projenin 36. ayında 1-2 günlük bir çalıştay düzenlenecek. Çalıştay da projenin bulgular ve önerileri paydaşlarla tartışılacak ve projenin etkisini arttırmak için stratejiler...
+
+498
+01:31:32,064 --> 01:31:55,164
+belirlenecektir. Sonuç olarak projenin çıktığı çeşitli kanallar aracılık genişlikte ulaştırılmak için kapsam bir iletişim ve paylaşım strateji geliştirilmiştir. Bu stratejinin projenin etkisini maksimize edeceğine ve projenin bulgularının ve önerilerinin ilgili paydaşlar tarafından benimsenmesine ve kullanılmasına yardımcı olacağına inanıyoruz.
+
+499
+01:31:56,307 --> 01:32:17,587
+Toplumsal kültürel etkide açısından teknoloji şirketlerin mali durumlarının daha etkin yönetmelerini ve stratejik finansal kararlar almalarını sağlayarak rekabet güçlerini arttıracaktır bu şekilde. Bu tahminler sayesinde kaynaklarını daha verimli kullanabilir ve finansal istikrarlarını sağlayarak sektördeki varlıklarını sürdürülebilirler.
+
+500
+01:32:18,739 --> 01:32:38,420
+Ayrıca inovasyon ve büyüme potansiyelerini de arttırarak sektörel kalkınmaya katkı sağlayacaklardır. Ekonomik etki olarak çeşitli sektörlerde potansiyel uygulama alanları sunarak ekonomik etki yaratacaktır. Özellikle bankacılık, sigortacılık ve yatırım danışmanlığı gibi sektörlerde yeni iş fırsatları oluşturacaktır.
+
+501
+01:32:40,979 --> 01:32:57,159
+Ve risklerin minimize edilmesi, işletmelerin büyüme ve istihdam yaratma potansiyelini de arttırılacaktır. Doğru finansal tahminlerle işletmelerin rekabet gücü arttırılabilir ve ihracat desteklenmesiyle ekonomik rekabetçilik de sağlanacaktır.
+
+502
+01:32:59,764 --> 01:33:19,003
+Finansal sistemlerin istikrarının korunması ve ulusal siber güvenliğinin sağlanmasına da katkıda bulunacaktır. Burada finansal başarısızlık, risklerin erken tespit ve siber saldırıda karşı savunma mekanının güçlendirilmesini de bizim ulusal güvenliğimizi olumlu yönde etkileyecektir.
+
+503
+01:33:19,003 --> 01:33:26,243
+Bu proje sayesinde hem bilimsel literatürde katkıda bulunmak hem de ekonomik, sosyal ve ulusal güvenlik alanında önemli geliştirmeler sağlamayı da amaçlıyoruz. Teşekkür ediyorum.
+
+504
+01:33:30,323 --> 01:33:34,224
+Teşekkürler arkadaşlar. Bir kişi, [öğrenci].
+
+505
+01:33:37,564 --> 01:33:41,804
+Hocam, katılmadı sonradan arkadaşımız çalışmalara.
+
+506
+01:33:42,543 --> 01:33:45,484
+Hiç mi katılmadı? Rapora da mı katılmadı?
+
+507
+01:33:45,684 --> 01:33:46,884
+Rapora da katılmadı hocam.
+
+508
+01:33:48,403 --> 01:33:49,764
+Tamam, o zaman...
+
+509
+01:34:01,140 --> 01:34:02,680
+Raparada sunulmada.
+
+510
+01:34:08,140 --> 01:34:15,619
+Şöyle bir bakalım arkadaşlar hızlıca slide'larınıza. Zaten başka grup kalmadı artık. Hepsini bitirdik. Evet.
+
+511
+01:34:18,359 --> 01:34:25,619
+Özgün değer. Bunları dediğim gibi hani slide'larda böyle cümle cümle değil de.
+
+512
+01:34:29,076 --> 01:34:39,815
+Daha böyle ana noktaları koyup, sizin anlatmanızı, anlattınız, güzel anlattınız. Ama hani slaytlar biraz daha al metin içerebilir.
+
+513
+01:34:49,779 --> 01:35:05,739
+Başka, yukarı çıkalı, yöntem, yöntem tamam, yönteme bakalım. Veri toplama, evet. Yukarıda neler var? Siz şey yaptınız, böyle yöntemle iş paketini tamam, birleştirdiniz gibi olmuş orada, tamam.
+
+514
+01:35:07,764 --> 01:35:29,523
+Aslında yöntemi önce başlayıştım. Pardon hocam ben biraz geçtim. Literatür nasıldı? Literatüre bakalım. Var mıydı literatür yukarıda? Literatürü sunumda paylaşmadık hocam. Tamam. Ama raporda mevcut. Özellikle Özgün Değer'in içerisine de yedirmiştik orada.
+
+515
+01:35:32,500 --> 01:35:36,579
+Tamam, bir yukarı çıkalım biraz daha. İlk kısmı.
+
+516
+01:35:36,579 --> 01:35:39,460
+Tamam, özgün de yani başlıyor, tamam.
+
+517
+01:35:52,532 --> 01:36:14,291
+İntemlerden sonra proje yönetimi, işbirlik etleri, elde edilmesi, öngörülen çıktılar, çıktıların paylaşımı, yayılımı ve öngörülen etkileri, ilişkin bilgiler.
+
+518
+01:36:15,492 --> 01:36:19,532
+Tamam arkadaşlar, teşekkürler.
+
+519
+01:36:21,203 --> 01:36:27,583
+Sonumların hepsini bitirdik. Sorusu olan var mı genel olarak?
+
+520
+01:36:31,475 --> 01:36:39,055
+Raporda, derse katılıp da rapor puanını almayan var mı arkadaşlar? Rapor notunu almayan var mı?
+
+521
+01:36:44,051 --> 01:36:58,171
+Tamam, yok. O zaman ben sunum notlarını da girerim, ikinci vize olarak. Onu da görürsünüz. Bir de finaliniz olacak. Şimdi bu vizeleri yüzde otuz, yüzde otuz, finale yüzde kırk yapabilirim.
+
+522
+01:37:08,115 --> 01:37:29,416
+%30 raporunuz, %30 etkileyecek. Sunumunuz %20, final %50 olabilir. Yani final %40 mi, %50 mi? Şu an ikisi de olabilir. Finaliniz olacak, test olacak, 25 soru olacak. Yarım saat, yarım saat olacak.
+
+523
+01:37:31,667 --> 01:37:40,488
+Saat beş buçukla altı buçuk arasında haftaya perşembe. Onu gördünüz mü arkadaşlar? Web sayfasında zaten paylaşıyorlar. Gördünüz mü onu?
+
+524
+01:37:44,404 --> 01:37:46,404
+Bölümün web sayfasında...
+
+525
+01:37:48,764 --> 01:37:49,844
+Evet hocam, gördük.
+
+526
+01:37:50,244 --> 01:37:50,984
+Gördük hocam.
+
+527
+01:37:51,644 --> 01:37:51,904
+Tamam.
+
+528
+01:37:52,744 --> 01:37:56,944
+İşte finaliniz olacak, bizzat okulda olacak dediğim gibi.
+
+529
+01:38:00,944 --> 01:38:03,644
+Yapabileceğiniz sorular, 25 soru yarım saat.
+
+530
+01:38:03,644 --> 01:38:06,624
+Çok kısa sürede yapabileceğiniz sorular zaten.
+
+531
+01:38:07,220 --> 01:38:17,300
+Öyle arkadaşlar, finalde görüşürüz o zaman. Herhangi bir sorunuz olursa, bir şeye ihtiyacınız olursa her zaman bana yazabilirsiniz, e-mail gönderebilirsiniz her zaman.
+
+532
+01:38:18,079 --> 01:38:26,020
+Güzel bir dönem oldu hepimiz için. Ben memnun kaldım hepinizden. Öyle dönemi bitirdik arkadaşlar böylece.
+
+533
+01:38:26,760 --> 01:38:32,500
+Dediğim gibi notlarınızı da OBS'den görebilirsiniz. Ben bu sunum notlarına girerim. Bugün yarın girerim.
+
+534
+01:38:33,555 --> 01:38:39,315
+Sonra finaliniz olduğunda da final notunuzu görürsünüz. Böylece dönemi bitirmiş oluruz.
+
+535
+01:38:43,572 --> 01:38:45,692
+Herhangi bir sorusu olan var mı arkadaşlar?
+
+536
+01:38:50,899 --> 01:39:01,779
+Hepinize başarılar diliyorum. Bundan sonraki dönemlerinizde de hepinize başarılar diliyorum. İyi günler, görüşmek dileğiyle.
+
+537
+01:39:03,859 --> 01:39:06,199
+İyi günler hocam.

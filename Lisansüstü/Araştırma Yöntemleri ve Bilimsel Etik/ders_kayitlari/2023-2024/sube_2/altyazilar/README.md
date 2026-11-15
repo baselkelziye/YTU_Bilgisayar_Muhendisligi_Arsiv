@@ -1,6 +1,6 @@
 # Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları Altyazıları
 
-Bu klasör, 2023-2024 eğitim öğretim yılı Bahar dönemindeki Araştırma Yöntemleri ve Bilimsel Etik (BLM5004 - 2. şube) ders kayıtlarının altyazılarını içerir.
+Bu klasör, 2023-2024 eğitim öğretim yılı Bahar dönemindeki Araştırma Yöntemleri ve Bilimsel Etik (BLM5004 - 2. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
 Kayıt arşivindeki ilk ders kaydı 22 Şubat 2024 Perşembe gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
