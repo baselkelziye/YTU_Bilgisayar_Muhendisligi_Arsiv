@@ -1,0 +1,2655 @@
+1
+00:02:49,587 --> 00:02:50,608
+Evet, merhaba arkadaşlar.
+
+2
+00:02:51,608 --> 00:02:52,427
+Şimdi...
+
+3
+00:02:59,635 --> 00:03:04,615
+Beni görüyorsunuz, duyuyorsunuz da diye tahmin ediyorum ya da umut ediyorum her iki grupta.
+
+4
+00:03:09,204 --> 00:03:12,084
+Tamam, güzel, teşekkürler.
+
+5
+00:03:12,084 --> 00:03:12,484
+Evet.
+
+6
+00:03:14,384 --> 00:03:15,704
+Bu tarafta bir şey var mı?
+
+7
+00:03:17,164 --> 00:03:17,924
+Okey, tamam.
+
+8
+00:03:18,864 --> 00:03:20,524
+Şimdi ufak ufak başlayalım.
+
+9
+00:03:20,824 --> 00:03:25,104
+Herkesin katılmasını falan beklemek gibi bir bilgimiz yok.
+
+10
+00:03:25,283 --> 00:03:27,144
+Diğer grubun biraz gerisinde kalmış.
+
+11
+00:03:27,243 --> 00:03:28,243
+Hızlanmamız lazım.
+
+12
+00:03:30,224 --> 00:03:32,623
+Biraz geriden alayım.
+
+13
+00:03:33,183 --> 00:03:34,584
+Aldığınız yerden devam edelim.
+
+14
+00:03:35,044 --> 00:03:36,264
+Interprocess Communication.
+
+15
+00:03:36,671 --> 00:03:41,091
+Gerçi interkonses konütçesinin daha şey konuşmaya devam edeceğiz.
+
+16
+00:03:44,031 --> 00:03:46,151
+Detaylı konuşmaya devam edeceğiz.
+
+17
+00:03:46,812 --> 00:03:49,512
+İlerleyen bölümlerde diyeyim.
+
+18
+00:03:51,531 --> 00:03:57,651
+Zerfaket, bugün bu kapsamda, bu kapsamda ufak bir şeyimiz olacak.
+
+19
+00:03:59,292 --> 00:04:02,372
+Detayını fazla girmeden konuşmamız olacak.
+
+20
+00:04:09,939 --> 00:04:27,779
+Şimdi hatırlayacak olursanız, process, thread, iletişim için iki tane temel yönetim. Bunları nasıl bir temel yönetim üzerinden de aslında daha farklı yerlere gidebiliyordum.
+
+21
+00:04:29,100 --> 00:04:34,019
+Ancak belki iki temel yönetim bir tanesi şey etmemeli bir de message passing.
+
+22
+00:04:36,100 --> 00:04:37,451
+Baktığımız zaman...
+
+23
+00:04:38,196 --> 00:04:53,176
+Şehir memori aslında normal şartlarda biz ne yapıyoruz? Bütün proseslerin memori sadece kendilerine ait gibi kullanabildiği ve proseslerin de birbirinden izole edildiği bir şekilde yönetiyoruz.
+
+24
+00:04:53,756 --> 00:05:00,496
+Bunun istisnasını oluşturduğumuz yani bir memori bölgesini iki proses tarafından da kullanabilecek bir hale getirdiğimiz yer.
+
+25
+00:05:00,496 --> 00:05:06,188
+Diğer tarafta message facility'ye baktığımız zaman bunun da implementasyonu aslında...
+
+26
+00:05:06,291 --> 00:05:13,891
+Şeye göre değişiklik gösterebilir. Ve fakat buradaki görevde gördüğünüz gibi, kenel üzerinden yapılması bir alternatif.
+
+27
+00:05:13,891 --> 00:05:18,891
+Birazdan farklı işletim sistemlerindeki karşılığını konuşacağız.
+
+28
+00:05:18,891 --> 00:05:26,891
+Ve fakat durum aslında şu, iki tane prosesimiz var. Bunlar...
+
+29
+00:05:27,987 --> 00:05:43,108
+Aslında yöntemin persistency levelına bağlı olarak, nasıl internet eliniğine bağlı olarak, neye görelim, internet eliniğine bağlı olarak, ya şey yapıyorlar, kendi özelliğine ya da paris sistemine yapıyorlar.
+
+30
+00:05:43,748 --> 00:05:52,947
+Burada tabii ki bu işin özelliği olması daha protected olması, bu da kendi özelliğine yapılırsa daha mantıklı.
+
+31
+00:05:57,524 --> 00:06:01,384
+Pardon, grubu aynı anda yapmam lazım.
+
+32
+00:06:13,779 --> 00:06:36,959
+Inter-process kolor görsüme, genel olarak olmasının nedeni de sistem içerisinde birden fazla prosesi aslında haberleştirerek bunların efektifliğini arttırmak. Ne yapıyoruz? Biz aslında herhangi bir işi çoğu zaman ya iş üzerinden ya data üzerinden bölerek toplu bir şekilde yapmak hedefiyiz.
+
+33
+00:06:41,204 --> 00:06:49,663
+Mesela söründeki çarpışma datası, çok fazla gözlemlenen parçacık var, parçacığa ait dester var.
+
+34
+00:06:50,084 --> 00:06:57,163
+Mesela bunun üzerinden hangisi hangisiyle gerçekten ne olmuş, ne çarpışınca bu olmuşmuş, vesaire bulmak gerek var.
+
+35
+00:06:58,079 --> 00:07:19,740
+Veriyi ayırmak bir seçenek. Ya da böyle akan bir video üzerinde devamlı uyguladığınız, çalıştırdığınız bir görüntü işleme yapısı vardır. Ne bileyim, bir videoya devamlı olarak olmayan bir karaktere ekleyebilmek. Canlı durumunda mesela. İşte bunun için kameradan görüntüyü alan bir proses olabilir.
+
+36
+00:07:19,795 --> 00:07:26,875
+Bunun üzerinde ön işlemleri yapan bir başka proses. Yani bir pipeline için şey yapabilirsiniz.
+
+37
+00:07:28,036 --> 00:07:40,515
+Dolayısıyla farklı fikirlerde kooperatif hale etkilemeyi unutmayın. Ama çoğu zaman bir işi daha etkile, daha hızlı yapıyor olmak.
+
+38
+00:07:40,515 --> 00:07:45,515
+Şimdi normal şartlarda bu ve benzeri...
+
+39
+00:07:47,156 --> 00:08:01,055
+Kooperatif bir yapımız olduğu zaman, bunu da demin bahsettiğim gibi sadece datayı bölmek değil de iş üzerinden götürdüğümüzde aslında şöyle bir yapı oluşuyor.
+
+40
+00:08:01,495 --> 00:08:02,656
+Bir taraf bir şey üretiyor.
+
+41
+00:08:02,836 --> 00:08:08,175
+Parcımysel, işte demin verdiğim bir nefes kameradan görüntüyü alan adam.
+
+42
+00:08:08,615 --> 00:08:10,656
+O görüntüyü aldığı zaman bir bofura kuruyor.
+
+43
+00:08:10,995 --> 00:08:16,115
+Bu bufferdan bir başka prosesini alıp bunu pre-proses edip başka bir buffer.
+
+44
+00:08:16,564 --> 00:08:27,463
+Diğer prosesin o bufferdan alıp üzerinde artık ne işlem yapacaksa onu yapıp başka bir buffera koyması ya da işte ekranda göstermesi ya da başka bir şey yapmışlar.
+
+45
+00:08:27,824 --> 00:08:34,683
+Dolayısıyla bu açıdan baktığın zaman bu işlemler hep aralarında bir producer consumer ilişkisi taşıyorlar.
+
+46
+00:08:34,683 --> 00:08:42,124
+Yani biri bir işlem yapmalı, bir şey üretmeli ki diğeri onu consume etsin, onun üzerine işlem yapmaya devam edebilirsin.
+
+47
+00:08:45,779 --> 00:09:12,559
+Bu bufferların, aradaki bufferların yönetilmesi bir problem. Bu problemde farklı açıları var. Nedir? Buffer boyutunun ne olacağı, ne olması gerektiği. Ya da o bufferdaki şeyin, consistency'nin korunması ya da veri bütünlüğünün korunması anlamı. Şimdi bunun bir boyutu, aslında o bufferın boyutunun ne olacağı.
+
+48
+00:09:12,639 --> 00:09:17,740
+Buffer'ın boyutunun ne olacağı aslında bizim performansımızla da doğrudan alakalı.
+
+49
+00:09:17,740 --> 00:09:34,839
+Yani sizin prosesiniz saniyede 25 frame capture edebiliyorken, proses eden, yani bunun üzerinde frame frame yapan prosesiniz saniyede 15 frame işleyebiliyorsa, şey AFK'dır.
+
+50
+00:09:35,279 --> 00:09:37,559
+Bu bufferda bir yerlerde sorun olacak. Neden?
+
+51
+00:09:38,131 --> 00:10:02,211
+Teknik olarak bir buffer'ın boyutu ne olabilir? Sıfır olabilir bir yöntem. Belli bir limit şartında vardır ya da sınırsız olabilir. Sınırsız aslında teorik olarak konuştuğumuz bir yapı. Yani unbound buffer pratikte yapabileceğimiz bir şey değil. Neden? Olup sahip olduğumuz için kaynakları sınırı var.
+
+52
+00:10:02,740 --> 00:10:12,519
+Yani sonuçta buffer dediğimiz şey bir memura alıyor. O memura alıyor içerisinde bir sınırımız var. O yüzden de çoğu zaman bir bounded buffer kullanırız.
+
+53
+00:10:12,620 --> 00:10:21,759
+Sınır olan bir buffer kullanırız. Zero bufferı da arada duyacaksınız. Onu şu. Ben yapıyorum. Hemen gönderiyorum. Karşı tarafta hemen alıyor, işliyor gibi.
+
+54
+00:10:23,900 --> 00:10:30,180
+Şimdi bounded bufferda da haliyle bir bufferımız var ve buna da çoğunlukla circular kullanılıyor.
+
+55
+00:10:31,283 --> 00:10:42,203
+Yani nedir? İşte 0.1.2.3.4.5. gözüne yazdım. 6. gözü yok. Dönüyorum. 0'a tekrar yazıyorum. Dolayısıyla bir şeyleri arada kaybetmek üzerine yazmak.
+
+56
+00:10:42,203 --> 00:10:52,624
+İklimaller var. Dolayısıyla benim bahsettiğim ratelerle üreten ve tüketen processler arasında en basitinden böyle bir sorun oluşabilir.
+
+57
+00:10:54,676 --> 00:11:00,576
+Bunu bir engellemek gerekebilir ya da buna göre bir hesap kitap yapıyor olmak gerekebilir.
+
+58
+00:11:02,615 --> 00:11:06,296
+Şimdi normal şartlarda direkt şu slide'a atlayayım.
+
+59
+00:11:06,836 --> 00:11:11,316
+Bir producer'ımız ve bir konsolörümüz var ise bunlar da bir doktor.
+
+60
+00:11:11,876 --> 00:11:14,416
+İş yapıyorlarsa ne olmasını bekleriz?
+
+61
+00:11:18,035 --> 00:11:31,076
+Pardon, şöyle yapayım. Veri tiplerini de konuşalım da. Bir bufferımız olacak. O bufferın her gözünde item diye bir streslik tanımlanmış. O item tipinde elemanlar olacak. İki tane de indisimiz olacak.
+
+62
+00:11:32,532 --> 00:11:45,412
+Biri, prodüserun ürettiği şeyi koyacağı gözün hangisi olduğunu bilmek için, diğeri de tüketicinin hangi gözden okuyacağını bilmesi için gerekir.
+
+63
+00:11:45,511 --> 00:11:55,052
+Çünkü neden? Ben birinci gözü doldurdum, ikinci gözü doldurdum, üçüncü gözü doldurdum ama daha konsümer bunların hiçbirini kullanmadı.
+
+64
+00:11:56,563 --> 00:12:00,764
+Böyle bakın. Yani tekminin de üzerinden olması o anlamda mümkün değil.
+
+65
+00:12:02,084 --> 00:12:07,084
+Basit bir çözüm ya da uygulama producer tarafında nasıl olur?
+
+66
+00:12:07,303 --> 00:12:10,984
+Wild to Loaching yani bu sonsuz bir iş gibi düşünün.
+
+67
+00:12:11,203 --> 00:12:14,384
+İçerisinde de Wild E artı bir upper size mod.
+
+68
+00:12:15,584 --> 00:12:19,051
+Auto esitse orada benim...
+
+69
+00:12:19,124 --> 00:12:45,764
+Çitli olmam lazım. Neden? Çünkü ben bir şekilde buffer'ı doldurmuşum ve henüz consumer hiçbir şekilde şey yapamamış. Nedir o? Orayı tüketememiş. Bu döngüden çıkabiliyorsam ondan sonra buffer'a bir şey ekleyeceğim ve eklediğim zaman da inlisimi bir arttıracağım. Genel, surfer bir buffer olduğu için de buffer sayısı göre şey yapmam lazım. Öbür tarafta consumer tarafı.
+
+70
+00:12:48,467 --> 00:13:03,668
+Nedir? Eğer buffer boşta, ki in ve out'un değerleri birbirine etkili oluyorsa, buffer boş dur. O zaman ne yapman lazım? Bekleyeceğim. Ne zamana kadar? Burada bir fark oluşan.
+
+71
+00:13:03,668 --> 00:13:10,567
+Fark oluştuğu anda, artık bufferda bir şey var demek, onu alacağım ve çalışacağım, işleyeceğim, bitireceğim.
+
+72
+00:13:10,964 --> 00:13:18,844
+Bitirdikten sonra da ne yapacağım? Bunu bitirdiğimi göstermek amacıyla indisini bir arttıracağım.
+
+73
+00:13:18,844 --> 00:13:29,384
+Şimdi burada aslında çok kritik sıkıntılar var. Olaya böyle baktığınız zaman bir sıkıntı yok gibi gelebilir.
+
+74
+00:13:35,347 --> 00:13:40,667
+paylaşılan hassas verilerimiz var.
+
+75
+00:13:41,667 --> 00:13:44,027
+Ve işlemimiz hiç bir atomik değil.
+
+76
+00:13:45,407 --> 00:13:52,367
+Dolayısıyla özellikle senkronizasyon bölümüne geldiğimizde bunu nasıl toparlarız diyoruz.
+
+77
+00:13:52,367 --> 00:13:56,867
+Fakat buraya baksanız zaman gördüğünüz en büyük problem nedir?
+
+78
+00:14:07,988 --> 00:14:11,148
+Şey midir? Hocam sorun çıkartma problem yok mu diyorsunuz?
+
+79
+00:14:24,884 --> 00:14:25,564
+İçinliğe olsun.
+
+80
+00:14:31,124 --> 00:14:54,864
+Wild True mu hocam? Yok. Wild True değil. Sağol. Teşekkürler. [kişisel bilgi] Şimdi Wild True bir sorun değil. O bu işin sonsuza denk çalışacağını göstermek için yapmadık. Sorun şu.
+
+81
+00:15:00,403 --> 00:15:03,863
+Ne yapıyoruz? Aslında atomik olmaması değişiyor.
+
+82
+00:15:06,143 --> 00:15:12,903
+Buffer'dan bir şey çekeceğimiz zaman kendi lokal değişkenimize çekiyoruz. Ondan sonra da index arttırıyoruz.
+
+83
+00:15:13,403 --> 00:15:19,663
+Aynı şeyi el tarafında, nedir o? Prodüse tarafında da yapıyoruz.
+
+84
+00:15:20,343 --> 00:15:22,663
+Buffer'ı bir ilgilenip yapıyoruz. O ilgilenip arttırıyoruz.
+
+85
+00:15:23,243 --> 00:15:24,623
+Bunu tabii ki de yapabiliriz.
+
+86
+00:15:24,623 --> 00:15:26,063
+Ben de, platformunda.
+
+87
+00:15:26,836 --> 00:15:34,235
+Hani böyle indisi arttırıp, önceki indisi koymak şeklinde de yapabileceğiz. Ama fark edemez. Ne anlamda fark edemez?
+
+88
+00:15:34,235 --> 00:15:42,396
+Şimdi diyelim ki prodüse geldi, while döngüsünde bekliyor, içerideki var. Bekliyor, bekliyor, bekliyor, bekliyor.
+
+89
+00:15:42,396 --> 00:15:52,235
+Sonra da konsüme bir şeyler aldı, tüketti. Dolayısıyla şeyim, aa yerim var. O zaman hemen bir şeyi buffer'a koyayım dedim.
+
+90
+00:15:54,964 --> 00:16:04,964
+Nedir o? Şu buffer in eşittir next produce'da şey yaptı. İşledi. O sırada da biz ne yaptık, bu prosesle ne yaptık?
+
+91
+00:16:04,964 --> 00:16:10,964
+Ecevare'de bir ne yapıcın, yöne not olduklarımız, diğer növahşitörüsü, yöne not olduklarımız, diğer növahşitörüsü.
+
+92
+00:16:10,964 --> 00:16:16,964
+Burada araya geldin, bu prosesi, bu prosesi koydu ama yenilisene aktarmadı.
+
+93
+00:16:16,964 --> 00:16:18,964
+Bu durumda ne olacak?
+
+94
+00:16:21,620 --> 00:16:30,019
+Hiçbir şey olmuş gibi olmayacaktı. Arkadaş hayatını beklemeye devam ediyoruz. Biz bozu başarına almışız, konteks olsaydı.
+
+95
+00:16:30,019 --> 00:16:39,779
+Ya da tam tersi olsaydı, indisi arttırıp buffer'a sonra gelmiş gibi olsaydım ve aradığı kesinlikle. Bu sefer de şey yazıyacaktım.
+
+96
+00:16:39,779 --> 00:16:46,980
+Buffer'a koymadığın bir bezit sanki varmış gibi olmadı. Bu sefer producer ne yapmaya çalışacaktı?
+
+97
+00:16:47,539 --> 00:16:52,139
+Yanlış bir veri, aslında buffer'da kalan bir ses, eskiden kalmış.
+
+98
+00:16:52,139 --> 00:16:54,220
+Valla yapmıyor, onun üzerine çalışacağız.
+
+99
+00:16:54,939 --> 00:17:08,579
+Aynı şey burada da geçerli. Ben buffer'dan bir şey aldım ama izlisi arttıramadan prompt edildim.
+
+100
+00:17:08,579 --> 00:17:13,539
+Dolayısıyla ne olacak? Buffer boşalmış olmasına rağmen bulmuyor.
+
+101
+00:17:14,675 --> 00:17:35,795
+Ben bir şey alacağım diye indisi artık, sonra bu konuda yapacağım. Bu sefer de çekmişim gibi olacak, bu konuda bir soru oraya bir şey olacak, aslında okuyacağım ya da alacağım bilgiyi kaybedecek. Bunların hepsi senkronizasyon konuluydu.
+
+102
+00:17:47,092 --> 00:17:47,820
+Evet.
+
+103
+00:17:56,915 --> 00:17:58,091
+Evet, bir şey yapalım.
+
+104
+00:18:06,516 --> 00:18:09,516
+Burda ki kontrol, tamamen, unumizyaya ay.
+
+105
+00:18:46,420 --> 00:19:07,400
+Şimdi şöyle bir durum var. Message message yapıyorsanız aslında genellikle bununla ilgili size sunulan yapı ya da sistematik dersi de iki temel primitive oluyor. Bunlardan bir tanesinden diğer de bir şey. Bunun şeyine bakmayın.
+
+106
+00:19:12,180 --> 00:19:29,300
+Ve abstract yördemeye bakmayın. Her zaman bu kadar böyle mesajı gönderdim, mesajı aldım şeklinde ikna, operasyon olmayacaktır. Daha doğrusu bu kadar basit bir şey. Bu mesajın kenarına kıyısına başka parametrelerin de gelmesi, girmesi, yerleşmesi gerekir. İşin doğrultuluğu.
+
+107
+00:19:36,788 --> 00:19:46,668
+Nereden geldiğinin bu ikisi olacağı. Gerekebiliriz, gerek yok. Bu bir postbaksin olmayı bahsediyor.
+
+108
+00:19:46,668 --> 00:19:48,468
+Hangi bir bakım?
+
+109
+00:19:59,028 --> 00:20:00,928
+Mimbaşı, bu bir şey.
+
+110
+00:20:02,367 --> 00:20:02,847
+Bir şey.
+
+111
+00:20:07,220 --> 00:20:10,119
+Başka bir durum, az önce bir durum.
+
+112
+00:20:10,980 --> 00:20:14,519
+Bir projesi, bir projesi, bir projesi, bir projesi, ayrı bir durum.
+
+113
+00:20:14,619 --> 00:20:16,160
+İşte parametreleri vesairesi.
+
+114
+00:20:16,480 --> 00:20:24,680
+Ve işte generasyonlar gönderip aldığınız mesajların boyutu vesairesi de her zaman böyle sabit olmayacaktır.
+
+115
+00:20:24,900 --> 00:20:27,500
+Dolayısıyla şey yapılması gerekebilir.
+
+116
+00:20:28,880 --> 00:20:29,599
+Bunların da...
+
+117
+00:20:48,243 --> 00:20:49,103
+Karar verilir.
+
+118
+00:20:49,203 --> 00:20:50,003
+Üzerine konuşulur.
+
+119
+00:20:53,491 --> 00:20:59,471
+Bu mekanizmeyi, test ve işletim sistemi arasında değil. Ne ile ne arasında?
+
+120
+00:21:05,172 --> 00:21:16,331
+Ne ile ne arasında? İşletim sisteminde bu mekanizmayı oluştururken karar vermemiz gereken şeyler aslında.
+
+121
+00:21:16,331 --> 00:21:22,512
+Yani oradaki development ekibinin ya da işletim sistemini oluşturan kişinin vermesi gereken kararlar.
+
+122
+00:21:24,019 --> 00:21:35,779
+Şimdi derdimiz ne? İki tane prosesimiz arasında bir komünikasyon linki yaratacağız. Bunun üzerinden de sentrisiyle mesaj alıp vermek istiyoruz.
+
+123
+00:21:35,779 --> 00:21:44,460
+Şimdi bu linkleri nasıl oluşturabiliriz? Bu linkler sadece iki proses arasında mı olabilir?
+
+124
+00:21:49,364 --> 00:22:02,364
+İki proses arasında oluşabilecek linklerin bir sınırı var mı? Ya da o linkin kapasitesi nedir? Ya da o link üzerinden gönderilen mesajın maksimum boyutu nedir?
+
+125
+00:22:02,963 --> 00:22:26,963
+Bu link çift yönlü müdür, tek yönlü müdür? Yani P'den Q'ye mesaj göndermek için bir link, Q'dan P'ye mesaj göndermek için ayrı bir link mi oluşturmam lazım? Yoksa tek bir link üzerinden iki taraflı da gönderebilir miyim? Yani Q, Dablex, Halt, Dablex ya da Simplex mi çalışacak? Karar verilmesi gereken şeyler bunlar. Şey üzerinden baktığımız zaman da...
+
+126
+00:22:28,307 --> 00:22:33,147
+Tarihsel gelişim anlamına baktığımız zaman, inter-process communication konuşurken göreceksiniz.
+
+127
+00:22:33,647 --> 00:22:39,067
+Şu an mesela OSIX şeylerini, inter-process communication metotlarını konuşacağız.
+
+128
+00:22:39,468 --> 00:22:41,667
+Laboratuvarda da onların uygulamalarını yapıyorsunuz.
+
+129
+00:22:42,087 --> 00:22:46,347
+Parzumsite pipe dediğiniz yapı aslında simplex bir yapı.
+
+130
+00:22:46,567 --> 00:22:48,948
+Yani iki proses arasında bir pipe oluşturabilirsiniz.
+
+131
+00:22:51,731 --> 00:23:03,372
+İki ucu var. Adıyla zaten net işlevi arasındaki ilişki. Borunun bir ucundan su döktüğünüz zaman öbür ucundan çıkıyor.
+
+132
+00:23:03,839 --> 00:23:20,279
+Tamam, yani iki tarafından birden dökerseniz ortalık karışıyor, olmuyor. Pipe da böyle bir yapı. Bir tarafından yazıp, bir tarafından okuyorsunuz. İki ucu var, iki descriptor var. Bir tanesi write descriptor, biri read descriptor. Write ettiğiniz zaman diğer proses öbür taraftan read edebiliyor.
+
+133
+00:23:21,559 --> 00:23:29,279
+Dolayısıyla simplex bir yapı var. Dolayısıyla hani sondaki sorunun cevabından başlamış olduk. Ve fakat hani...
+
+134
+00:23:31,571 --> 00:23:39,571
+Eğer iki proses arasında iki yönlü konuşma yapmak istiyorsanız, o zaman birden fazla link oluşturmanız gerekiyor. Birden fazla pipe oluşturmanız gerekiyor.
+
+135
+00:23:41,571 --> 00:23:52,555
+Dolayısıyla iki tane pipe oluşturup, sonra fork edip, iki prosesde de bu pipeların oluşmuş olmasını sağlayıp, birinin de right ucunu...
+
+136
+00:23:52,627 --> 00:24:00,007
+Birinin right ucunu, diğerinin read ucunu, diğerinde tam ters uçları kapatıp tıkır tıkır haberleşebiliyorsunuz.
+
+137
+00:24:00,207 --> 00:24:13,647
+Şimdi en basitinden bu şeyler arasında, prosesler arasında nasıl ilişkilendiriyoruz ya da nasıl yapıyoruz?
+
+138
+00:24:15,007 --> 00:24:16,567
+Şöyle bir durum var.
+
+139
+00:24:17,044 --> 00:24:44,164
+Gördüğünüz üzere mesela birden fazla link oluşturabiliyoruz. Onun dışında ne var? Onun dışında şöyle bir durum var. Burada üç tane prosesle pipe'ı ilişkilendirebilir miyim? Teknik olarak evet ama zaten iki ucu olduğu ve birinden write, birinden read edeceğin için aynı anda ikisi iki prosesin birden bir yere write etmesi büyük sıkıntı oluşturacağı için. Ancak şöyle ilişkilendirebilirsin.
+
+140
+00:24:45,268 --> 00:24:59,827
+Bir pipe oluşturursun, sonra iki proses daha oluşturursun. O iki proses sadece read ucundan bir şeyler okur. İlk orjinal proses de write ucundan bir şeyler yazar ve ikisi de okuyabilir.
+
+141
+00:24:59,827 --> 00:25:03,167
+Ve fakat oradaki sıkıntı da şu.
+
+142
+00:25:03,667 --> 00:25:25,347
+Şöyle düşünün, aynı neyirde iki kere yıkanabilir misin gibi. Bir taraf yazdı, diğer taraf okudu. Öbür prosesin okuyunca bir şey alması mümkün değil. Çünkü yazılan okundu. Dolayısıyla teknik olarak evet bir pipe'ı üç prosesle ilişkilendirebilirsin ve fakat doğru kullanılması çok mümkün değil gibi.
+
+143
+00:25:25,811 --> 00:25:36,471
+Başka memorilerde ya da başka interpositive communication yönetimlerinde bunu daha doğru yapmak ya da daha düzgün yapmak mümkün.
+
+144
+00:25:36,471 --> 00:25:45,692
+Yani mesela message passing dediğimiz için aslında şey olmaz ama sıkıntılı olacak.
+
+145
+00:25:47,248 --> 00:25:49,347
+Yani tam oturmayacak.
+
+146
+00:25:49,447 --> 00:25:52,187
+Share it memory de bunu başka türlü implement edebilirsin.
+
+147
+00:25:52,307 --> 00:25:53,687
+Message passing de biraz zor.
+
+148
+00:25:54,488 --> 00:25:56,248
+Bunun dışında kapasitesi ne olacak?
+
+149
+00:25:56,248 --> 00:25:58,248
+Yani hem şey anlamında...
+
+150
+00:26:05,940 --> 00:26:18,720
+Hem şey anlamında, yazılan ya da aktarılan mesajın tutarlılığı anlamında, hem de yönetimi anlamında.
+
+151
+00:26:18,720 --> 00:26:22,720
+Şimdi, message passing işini...
+
+152
+00:26:24,276 --> 00:26:32,875
+Şurada konuşurken bir yanlış anlaşılmaya ya da şey yapmaya, apakar işte menedin olabilecek bir şey de değinmek lazım.
+
+153
+00:26:32,875 --> 00:26:48,396
+Şimdi message passing'te aslında yaptığımız şey şu, doğrudan iki prosesin eriştiği tek bir ortak memori olması yerine bu işin mesajlaşma mantığıyla yapılmasından bahsediyoruz.
+
+154
+00:26:51,667 --> 00:27:08,047
+Fiziksel ortam olarak gerçek anlamda shared bir memory üzerinden de message passing yapabilirsiniz. Bu bir hardware bus üzerinden de yapılabilir, network üzerinden de yapılabilir. Yani TCP, IP'de yaptığımız soket haberleşmesi tam bir message passing'tir.
+
+155
+00:27:11,047 --> 00:27:17,067
+Bunun dışında bu işin hani fiziksel olarak gerçeklenebildiği ortam.
+
+156
+00:27:19,412 --> 00:27:24,731
+Bu işin nasıl çalışacağına bakıyor.
+
+157
+00:27:25,272 --> 00:27:44,792
+Yani varız mesela, mesaj kutu oluşturduğumuz, bunu da kernel kutu oluşturduğumuz, sizin t prosesiniz, Q'ya bir şey göndermek istediğinizde, bunu kerneldeki mesaj kutu'na koyup, sonra Q'nun da gidip bunu alıyor olması gibi bir yapıdan bahsediyor olabiliriz.
+
+158
+00:27:47,508 --> 00:28:00,048
+Bunun senkron ya da asenkron olmasından bahsedebiliriz. Yani ben mesajı gönderdim, işim bitti, hayatıma devam ediyorum. Mesajı alana alacağı zaman, almak istediği zaman alır.
+
+159
+00:28:01,048 --> 00:28:08,288
+Ya da ben mesajı gönderiyorum, ben karşı taraf benimle el sıkışıp mesajı alana kadar burada bekliyorum.
+
+160
+00:28:08,288 --> 00:28:14,467
+Yani senkron mu asenkron mu çalışıyorum. Bunun dışında ne olabilir?
+
+161
+00:28:14,864 --> 00:28:37,283
+Aradaki buffering. Zaten buffering ve senkron asenkron olması aslında kendi içinde de yer yer ilişkili ve bağlantılı noktalar. Eğer hiçbir buffer kullanmayacaksanız, zero buffer kullanacaksanız zaten senkron yapmak zorundasınız. Yani karşı taraf gelecek, sizden o bilgiyi alacak, hayatınızı öyle devam edeceksiniz gibi.
+
+162
+00:28:42,132 --> 00:28:47,132
+Bu bazı bunu uğraştırmayıp diye düşünüp tasarlanmıştı artık bu bir konu bulunuyor.
+
+163
+00:28:54,228 --> 00:29:03,827
+Eğer bir direct communication yapıyorsak, demin bahsettiğim şey, sent ve resimin burada farklı parametreleri olabilir demiştim.
+
+164
+00:29:04,268 --> 00:29:10,728
+Direct bir communication yapıyorsak, en basitinden karşı tarafa adresli olmamız gerekir.
+
+165
+00:29:22,516 --> 00:29:33,996
+Link, burada da adreslediğimiz zaman otomatikman bir linkten bahsediyoruz. Bu linkin de özelliği çoğu zaman kullanılan mekanizmaya göre değişir, implementasyona göre değişir.
+
+166
+00:29:33,996 --> 00:29:39,876
+Ve fakat ya unidirectional'dır ya bidirectional'dır.
+
+167
+00:29:45,460 --> 00:29:50,740
+Onlara da, hani yeri geldiğinde örnekler üzerinden konuşurken bakmak daha mantıklı olacaktır.
+
+168
+00:29:52,600 --> 00:29:56,740
+Indirect kommunikasyonu ise bir mesaj kutusundan bahsederiz.
+
+169
+00:29:56,900 --> 00:30:01,759
+O mesaj kutusunun da bir unique identifier olması gerekir.
+
+170
+00:30:01,759 --> 00:30:06,759
+Ve o mesaj kutusu da aslında prosesler arasında...
+
+171
+00:30:07,508 --> 00:30:13,548
+Haberleşmenin sağlanması için explicit olarak yaratılması gerekir.
+
+172
+00:30:17,388 --> 00:30:21,128
+Bu noktanın güzelliği ve avantajı şu.
+
+173
+00:30:23,868 --> 00:30:28,368
+O link üzerinden aslında deminki anetlerle konuştuk.
+
+174
+00:30:29,368 --> 00:30:32,408
+A'dan B'ye, B'den A'ya göndermek için.
+
+175
+00:30:33,108 --> 00:30:34,748
+Böyle için aletlerimiz.
+
+176
+00:30:35,284 --> 00:30:42,744
+Aslında ikiden fazla proses arasında haberleştirmeyi sağlayabilecek bir linkten bahsediyoruz doğası gereği.
+
+177
+00:30:42,744 --> 00:30:44,924
+Yani bir boşluk sıvı var mı?
+
+178
+00:31:01,811 --> 00:31:07,011
+Yani buradaki bu detaylara şu an krumanın çok fazla esprisi olduğunu düşünmüyorum.
+
+179
+00:31:07,172 --> 00:31:08,571
+Anadolu'yla konuştuk zaten.
+
+180
+00:31:09,211 --> 00:31:10,652
+Dediğim gibi biraz hızlı okuyayım.
+
+181
+00:31:14,067 --> 00:31:29,928
+Diğer grubu da yakalamamız lazım. Zaten inter-process communication konuşurken şey yapacağız. Daha detayına gireceğiz. Yani implementasyon üzerinde detayına gireceğiz. Fakat burada önemli şeylerden bir tanesi var.
+
+182
+00:31:31,148 --> 00:31:40,288
+İndalik, kommunikasyon, kürsüz, kürsüz, kürsüz, daha doğrusu, çok örnek, bir dönüşü konuşmak. Benimki üç tane kürsüz var, bir tane mail var.
+
+183
+00:31:40,980 --> 00:31:43,080
+Bu arkadaşlar, bu meyve bakıp aynı.
+
+184
+00:31:43,760 --> 00:31:46,140
+Terent ibiri oraya neden gönderdiyse,
+
+185
+00:31:47,440 --> 00:31:52,060
+mesajı kimin alacağı ya da alabileceği bir soru işaret.
+
+186
+00:31:52,300 --> 00:31:53,240
+Neden soru işaret?
+
+187
+00:32:02,195 --> 00:32:04,655
+tasarlıyorsam ne yapabilirim?
+
+188
+00:32:04,715 --> 00:32:06,455
+Seçenekleri neler? Ne yapmam?
+
+189
+00:32:06,695 --> 00:32:08,475
+Daha mantıklı ya da daha kolay
+
+190
+00:32:08,475 --> 00:32:10,815
+ya da daha zor olur. Ya da şöyle aslında
+
+191
+00:32:10,815 --> 00:32:12,875
+işletim sisteminin
+
+192
+00:32:12,875 --> 00:32:14,115
+geliştirilmesi tarafından
+
+193
+00:32:14,115 --> 00:32:15,555
+hangisi daha zor olabilir?
+
+194
+00:32:16,355 --> 00:32:18,235
+Bunun uygulama geliştireceğini
+
+195
+00:32:18,235 --> 00:32:20,096
+kolay bir yol olabilir.
+
+196
+00:32:20,915 --> 00:32:21,975
+Benzer şekilde
+
+197
+00:32:21,975 --> 00:32:24,995
+ilk işletim sisteminin
+
+198
+00:32:24,995 --> 00:32:25,655
+geliştirilmesi tarafından
+
+199
+00:32:25,655 --> 00:32:27,195
+hangisi daha zor olur?
+
+200
+00:32:28,435 --> 00:32:56,155
+application, download'un işine daha çok kolaylaştırılır. Şimdi ne yapabilirsiniz? Bir başı arıyorsa başı kesinmiş. Üç tane process paylaşmasın diyebiliriz. En fazla iki process var. O zaman P1, P2, P3'e bir şey göndermek istiyorsa ne yapmak lazım? İki tane mail bakıştırması lazım. P1, P2 arasında P1, P3 arasında.
+
+201
+00:32:58,963 --> 00:33:00,243
+Bir diğer şey,
+
+202
+00:33:02,843 --> 00:33:04,603
+F'ye bir mesajı gönderdi.
+
+203
+00:33:05,183 --> 00:33:10,863
+Ya şunu yapacağız, bırakacağız, F'ye birçokan biri receive edecek.
+
+204
+00:33:11,983 --> 00:33:15,543
+Ve o mesaj, o mailbox'a alındığı zaman iş bitecek.
+
+205
+00:33:16,343 --> 00:33:17,583
+Kapatacağız, bitti diyeceğiz.
+
+206
+00:33:18,483 --> 00:33:19,483
+Ya da,
+
+207
+00:33:21,403 --> 00:33:23,303
+şöyle bir şey yapacağız.
+
+208
+00:33:23,571 --> 00:33:33,111
+O anki duruma, yapıya vesaireye göre, receiver'ın kim olacağını, kim olacağını bilirilecek ve mesajın kime gittiğini de bir taraftan söyleyeceğiz.
+
+209
+00:33:33,791 --> 00:33:38,891
+Bu şeylerin, ne diyor, yaklaşım ve kavga'nın artısı ekstri.
+
+210
+00:33:39,811 --> 00:33:41,031
+Ne anlamda?
+
+211
+00:33:41,791 --> 00:33:48,011
+Mesela birincisini seçersiniz, işgizm sisteminde interprocessed communication metodu internet ediyorsunuz, hayat kolaylaşır.
+
+212
+00:33:49,051 --> 00:33:50,091
+Tamam mı? En kolay olur.
+
+213
+00:33:50,483 --> 00:33:55,084
+Üçüncüsü ise herkesin işine zorlaştırılacak.
+
+214
+00:33:57,163 --> 00:34:03,303
+Sistemin kafasına göre receiver seçmek ve sonra sender bununla ilgili bilgilendirmesi.
+
+215
+00:34:03,423 --> 00:34:05,344
+Ne olacak? Sender'in resi göndermesi.
+
+216
+00:34:07,243 --> 00:34:10,764
+Gönderdiği şeyi kimin aldığını bilmiyor.
+
+217
+00:34:11,003 --> 00:34:14,583
+Dolayısıyla kimin aldığına dair de bir yerde bir mesaj beklemesi.
+
+218
+00:34:16,884 --> 00:34:21,764
+Öbür tarafta bizim her sebebiyle bir alıcı seçmeniz gerekecek.
+
+219
+00:34:21,764 --> 00:34:23,043
+Kriptere göre.
+
+220
+00:34:23,043 --> 00:34:26,083
+Mesajı vermek sonunda geri bilgi vermeyecek.
+
+221
+00:34:26,083 --> 00:34:32,163
+Yani işleri böyle ekstralık, şey yapacak, karmaşıklaştıracak bir şey.
+
+222
+00:34:32,163 --> 00:34:38,243
+Fakat farklı farklı sistemlerde bunların çeşitli örneklerini göreceğiz, farklı versiyonlarını.
+
+223
+00:34:38,243 --> 00:34:42,324
+Senkronizasyondan bahsetmiştik, hatırlarsınız.
+
+224
+00:34:43,092 --> 00:34:50,092
+Oradaki senkron ya da asenkron olma aslında işlemin blocking ya da non-blocking olmasıdır.
+
+225
+00:35:08,244 --> 00:35:22,144
+TCP'de, UDP'de kullanıyor olsak fark elemez. Biz mesajı göndereceğimiz zaman send ya da send to you sistem çağrısını çağırıp o kuranın yerini söylüyoruz. Ne göndermek istediğimi söylüyoruz. Nereye göndermek istediğimi söylüyoruz.
+
+226
+00:35:22,224 --> 00:35:30,524
+Bakit üzerinden. Ve hayatımıza devam ediyoruz. O sistem çağrısı bitince biz ne yapmaya devam ediyorsak onu yapmaya devam ediyoruz.
+
+227
+00:35:32,204 --> 00:35:35,524
+Dolayısıyla doğası gereği o non-blocking bir send.
+
+228
+00:35:36,788 --> 00:36:00,847
+Mesajı gönderiyoruz ve hayatımıza devam ediyoruz. Mesajı gönderiyoruz derken aslında mesajı TCPI pistine devrediyoruz. Adam göndermekle uğraşıyor. Bölmesi, çarpması, çıkartması, ne gerekiyorsa onu yapıyor. Karşı taraftaki TCPI pistine alacak. Ondan sonra da öbür tarafa verecek. Öbür tarafa vermek derken şöyle bir tarafta bir sistem ediyorsak diğer tarafta birilerinin de receive ediyor olması lazım.
+
+229
+00:36:01,300 --> 00:36:24,000
+Receiving'in doğası aslında blocking'tir. Yani, böyle bir mesajlaşma anlamında bakacak olursanız, bana gönderilen bir şey olmadığı sürece, receive ettiğin zaman blocking bir yapıda dururum, beklerim, biri bir şey göndersin diye.
+
+230
+00:36:24,000 --> 00:36:28,400
+Bu işi senkron hale getirir aslında.
+
+231
+00:36:30,068 --> 00:36:47,748
+Yani tam senkron hale getirmez. Pardon, yanlış bir ifade oldu. Karşı taraftaki sent de blocking ise, ikimiz de blocking yapıyorsak, o zaman senkron hale getirir ama Receive'in bu doğal blocking yapısını bozmak, değiştirmek, farklılaştırmak mümkün. Nasıl mümkün?
+
+232
+00:36:48,847 --> 00:36:54,648
+Farklı mekanizmalarda, inter-process communication mekanizmalarda, mesela FIFO'da, pardon FIFO demişim.
+
+233
+00:36:54,864 --> 00:37:20,064
+Message kuru da timed receive yapabiliyorsunuz. Ya da benzer şekilde soket programlamada timed yapabiliyorsunuz. Ya da receive'in doğrudan IOControl, IOControl üzerinden blocking olmasını enable. Non-blocking. Non-blocking bir receive'de ne elde edebilirsiniz?
+
+234
+00:37:21,300 --> 00:37:29,079
+Yani baktınız, bir şey alacaksınız, yok mesaj, o zaman ne olacak? Tamam, mesaj yok, hayatımıza devam.
+
+235
+00:37:29,079 --> 00:37:37,460
+Ya şey diyecek, bir null pointer dönecek, ya işte ne bileyim, negatif bir şey dönecek.
+
+236
+00:37:37,579 --> 00:37:42,840
+Yani bir şekilde biz bununla ilgili bilgi alacağız. Aksi taktirde de normal bir mesaj okuyabileceğiz.
+
+237
+00:37:47,123 --> 00:37:51,183
+Dediğim gibi farklı mekanizmalarda bunların her türlü şeyi mümkün.
+
+238
+00:37:54,363 --> 00:38:06,983
+Bu iş eğer senkron olursa ya da işte ne bir blocking olursa deminki o producer consumer problemi çok basit primitif bir hale geliyor.
+
+239
+00:38:08,063 --> 00:38:13,923
+Ancak ve lakin burada da performans sıkıntısı ya da sorunları görüyor olacağız.
+
+240
+00:38:15,699 --> 00:38:25,460
+Şimdi arada bir buffering mekanizması olması lazım demiştik. Hatta şeyde bounded, unbounded kapasite vesaire yazıyordu. Ben zero kapasitede olur demiştim.
+
+241
+00:38:26,519 --> 00:38:32,000
+Burada konuştuğumuz şey de o. Daha doğrusu slide'ın anlattığı şey de o.
+
+242
+00:38:32,679 --> 00:38:37,099
+Bounded bir kapasiteden bahsediyorsak en tane mesajımızın girdiği bir şey var.
+
+243
+00:38:38,387 --> 00:38:44,707
+Yapı var. Dolayısıyla bu aslında neyi belirliyor? Senderımızın blocking olup olmayacağını belirledi.
+
+244
+00:38:46,447 --> 00:38:59,608
+Hala tek belirleyici değil. Şöyle sağladığınız mekanizma üzerinde send dediğiniz zaman bütün Q doluysa, bütün buffer doluysa şunu dönebilirsiniz.
+
+245
+00:39:00,403 --> 00:39:07,324
+Yani blocking yapmayacağım ben bunu dediğinizde send edene hata mesajı buffer full diye dönersiniz.
+
+246
+00:39:07,804 --> 00:39:13,844
+Blocking yapacağım derseniz de o adamı bekletirsiniz. Ne zamana kadar? Buffer boşana, onun mesajı buffer'a konana kadar.
+
+247
+00:39:15,063 --> 00:39:15,844
+Unbounded'da...
+
+248
+00:39:18,068 --> 00:39:28,988
+Unbounded kapasitenin, yani kapasitenin sonsuz olduğu bir yerde yine bir şeyleri, daha doğrusu sender kısmını yine isterseniz biraz çılgınca olur.
+
+249
+00:39:29,528 --> 00:39:32,648
+Ama hani şey yapmak mümkün, blocking yapmak mümkün.
+
+250
+00:39:33,307 --> 00:39:37,168
+Ama kapasite hiçbir zaman dolmayacağı için aslında beklemeniz için hiçbir neden yok.
+
+251
+00:39:37,523 --> 00:39:41,283
+Sadece şunun üzerinden gidiyor olabilirsiniz.
+
+252
+00:39:41,523 --> 00:39:43,663
+Böyle randevu usulü yapacağım.
+
+253
+00:39:43,943 --> 00:39:45,243
+Ben mesajı gönderdim.
+
+254
+00:39:45,323 --> 00:39:47,003
+Karşı taraflarına kadar bekleyeceğim falan.
+
+255
+00:39:47,304 --> 00:39:48,463
+Ama o da mantıklı değil.
+
+256
+00:39:48,603 --> 00:39:49,943
+Çünkü yeriniz var aslında.
+
+257
+00:39:50,983 --> 00:39:52,764
+Yani orada yapılabilir mi?
+
+258
+00:39:52,823 --> 00:39:54,363
+Yapılabilir ama mantıksal değil.
+
+259
+00:39:55,063 --> 00:39:56,103
+Burada ne olur?
+
+260
+00:39:57,483 --> 00:39:58,283
+Ne olur?
+
+261
+00:39:58,363 --> 00:39:59,363
+Anbaanlık kapasitinde.
+
+262
+00:39:59,363 --> 00:40:00,000
+İşin doğası.
+
+263
+00:40:00,000 --> 00:40:19,219
+Nasıl geliyor bizden? Hani gönderici hiçbir zaman beklemez. Neyin beklemesi lazım? Bekleyecekse, receiver'ın beklemesi lazım. Nasıl bekleyecek? Birinin buffer'a mesaj koyması bekleyecek. Onu da hala non-blocking yapmak mümkün. Baktınız, read ettiniz, olmadı. Hayatına devam et. Sonra gel bir daha bekle.
+
+264
+00:40:22,708 --> 00:40:30,148
+İki tarafın da blocking olacağı yapı zero kapasite olması durumu. Yani bir şekilde randevu açmamız lazım.
+
+265
+00:40:31,268 --> 00:40:41,968
+Gönderinin beklemesi, receiver'ın da beklemesi lazım. Hangi durumlarda? Sender bir şey gönderebilmek için karşı tarafın gelmiş olmasını bekleyebilir.
+
+266
+00:40:42,307 --> 00:40:48,648
+Receiver bir şey alabilmek için yine sender'ın gelmiş olmasını bekliyor. Çünkü ara bir tampon bellek yok.
+
+267
+00:40:49,907 --> 00:40:54,987
+Şimdi IPC ile ilgili örnekleri yapacağız.
+
+268
+00:41:00,275 --> 00:41:07,995
+Ama hani shared memory bu işin en bilinen yapılarından bir tanesi.
+
+269
+00:41:08,596 --> 00:41:10,955
+Light'larda da var. O yüzden hızlıca bir üzerinden geçelim.
+
+270
+00:41:11,135 --> 00:41:13,035
+Çok bu döküle şu an girmenin esprisi yok.
+
+271
+00:41:13,915 --> 00:41:17,815
+Burada böyle girmekle de uygulamada, top kodda görüyorsunuz zaten.
+
+272
+00:41:19,615 --> 00:41:21,555
+Size primitifler nasıl olmuş olması lazım?
+
+273
+00:41:22,015 --> 00:41:23,355
+Neyi nasıl olmuş olması lazım?
+
+274
+00:41:23,355 --> 00:41:24,535
+Bir şey, memori sunmuş.
+
+275
+00:41:24,820 --> 00:41:26,159
+yapabiliyor olmalı lazım.
+
+276
+00:41:26,579 --> 00:41:28,920
+Sermemek okumuna konuşuyorsunuz.
+
+277
+00:41:29,559 --> 00:41:34,639
+F-Trancake'le de o şey memori'nin boyutunu beliriyor.
+
+278
+00:41:35,139 --> 00:41:38,579
+Ondan sonrası o memori alanına yazmak.
+
+279
+00:41:39,139 --> 00:41:42,139
+Yazmak olduğu için de yapacağınız şey
+
+280
+00:41:42,139 --> 00:41:45,360
+çoğu zaman
+
+281
+00:41:49,235 --> 00:41:54,235
+Bir alana doğrudan esprinte vesaire ya da ne bileyim...
+
+282
+00:42:01,523 --> 00:42:14,923
+write, read vs. üzerinden o alana yazmak. Ancak merak etmeyin, yazdığınız yer, yazdığınız mesajın boyutu, o mesajın, o bufferın üzerinde vs. dikkat ederseniz kod içerisinde tamamen sizde.
+
+283
+00:42:14,923 --> 00:42:22,724
+Yani orada eskili taktıktan sonra, unutturum bir yerine arttırılması, iddia yazılıktan sonra tekrar arttırılması vs.
+
+284
+00:42:23,284 --> 00:42:36,584
+Consumer tarafında da iş aile. Bir şekilde shared memory'i açmanız lazım. O oluşan memory alanını map ediyor olmamız lazım. Bir pointer'a. O pointer üzerinden çalışıyor olmanız lazım.
+
+285
+00:42:37,384 --> 00:42:50,664
+Oluşturduğunuz objeyi aslında şey gibi düşünün. Bir dosya açmak, bir soket açmak, bir şey yapmak gibi düşünün. Açtığınız her shared memory'i bir şekilde kapatmanız lazım. Bunun için de anlayınlık var.
+
+286
+00:42:52,244 --> 00:42:56,824
+Interprocess Communication'a geldiğimizde detayları uygulamada görürsünüz.
+
+287
+00:42:57,444 --> 00:43:11,604
+Orada olay şu, benim bu objemin konsistensizinin ne olduğuna bağlı olarak, yapısının nasıl oluşturulduğuna bağlı olarak ne zaman kapatılacağı da değişebiliyor.
+
+288
+00:43:15,347 --> 00:43:25,132
+Bir şekilde o shared memory'e referans veren adamlar ayaktaysa ve hayatlarına devam ediyorlarsa ya da...
+
+289
+00:43:25,300 --> 00:43:51,360
+O referansları ortadan kaldırmadan çıkıp gittilerse o obje hayatta kalmaya ve çalışmaya devam ediyor. Dolayısıyla bir şekilde bu ilişkiyi kopartmamız lazım. Onun için de share bir madresa on link var. Her birinde yani message queue'da mq open var, mq close var vesaire var. Her birinde farklı bir yapı var. Bu yapıların kullanımının detayını IPC'de konuşuyor olacağız.
+
+290
+00:43:52,115 --> 00:44:02,016
+Mac kernelinde de komünikasyon aslında message-based, hatta sistem çağrıları vesairesi bile message-based.
+
+291
+00:44:02,016 --> 00:44:05,715
+Toplamda da SentryC ve RPC diyor üç tane.
+
+292
+00:44:06,516 --> 00:44:19,856
+şey var, primitive var. Bir de portu allocate için port allocate var. Bunun detayına şu an girmenin çok bir esprisi yok. Yani Windows'da da yani local procedure call aslında benzer bir şekilde yapıyor.
+
+293
+00:44:20,856 --> 00:44:33,356
+Pocket ile ilgili de hani bunu daha çok şeyde advanced network programında ileri ağa programlamada konuşmamız gereken şeyler ve fakat burada da
+
+294
+00:44:33,460 --> 00:44:42,159
+Yine bir link oluşturuyorsunuz. Linki de ne üzerinden oluşturuyorsunuz? Bir soket üzerinden oluşturuyorsunuz. Soketin de aslında...
+
+295
+00:44:42,159 --> 00:45:03,115
+Karşı tarafı tanımlaması gerekiyor seçeneği. Tanımlamayı da nasıl yapıyoruz? TCP, IP olduğu için bir IP adresine ihtiyacımız var. IP adresi bize neyi adreslememizi sağlıyor? Bir hostu adreslememizi sağlıyor. Ama biz neyle haberleşme halindeyiz? Inter-process communication. Prosesler arasında haberleşme halindeyiz. Dolayısıyla...
+
+296
+00:45:03,188 --> 00:45:07,548
+İki ayrı host üzerindeki iki ayrı prosesin konuşması lazım.
+
+297
+00:45:08,327 --> 00:45:11,847
+Şimdi IP network katmanında bir adresleme sağlıyor.
+
+298
+00:45:12,228 --> 00:45:16,788
+Bizim daha üst katmanda, application noktasında bir adreslemeye ihtiyacımız var.
+
+299
+00:45:16,788 --> 00:45:21,708
+Onun için de transport katmanındaki adres bilgisini yani portu kullanıyoruz.
+
+300
+00:45:22,228 --> 00:45:27,327
+Dikkat edin 161.25.19.8, 2.3'de 16.25 yazılmış.
+
+301
+00:45:27,788 --> 00:45:30,387
+Bu şey demek 161.25.19.
+
+302
+00:45:31,188 --> 00:45:38,807
+8 IP'sindeki hostun üzerinde 1625 numaralı port numarasında çalışan bir şey var.
+
+303
+00:45:38,807 --> 00:45:48,288
+Ben onunla haberleşiyorum ki o örnekte aslında bir web server haberleşmesi üzerinden verilmiş.
+
+304
+00:45:50,307 --> 00:45:57,168
+80 numarasında bir web server kendini içindeki kontent'i server ediyor.
+
+305
+00:45:58,496 --> 00:46:18,175
+bir host x 146.86.5.20 adresine sahip bir IP adresine sahip bir hosttaki proses, karşı taraf da kendi soketi içerisinde, karşı tarafın adresini tutuyor. Tam tersi öbür tarafta da var.
+
+306
+00:46:19,987 --> 00:46:45,727
+Şimdi, Java implementasyonuna ve remote procedure kola girmeyeceğiz. Bunun dışında, Pipe'ı zaten konuştuk. Şöyle ki, çok uzun şey yapmaya gerek yok. Pipe, bilinen ilk böyle inter-process communication örneklerinden biri. Zaten şey örneklerinde de konuşacağımız Pipe, FIFO, MessageQ, Signal, shared numara olacaktır.
+
+307
+00:46:47,795 --> 00:46:48,795
+İlham bir şey.
+
+308
+00:46:49,811 --> 00:46:58,112
+Bir şekilde aralarında parent-chall ilişkisi olan prosesör arasında kullanılmak üzere oluşturulmuş bir mekanizma.
+
+309
+00:46:58,271 --> 00:47:06,472
+Aslında günümüzde de hala bu primitive yapısına vesaireye rağmen çokça ve takır takır güzelce kullanıyoruz.
+
+310
+00:47:07,072 --> 00:47:08,851
+Nerede kullanıyoruz? Şöyle yapayım.
+
+311
+00:47:08,851 --> 00:47:17,731
+Bu pipe yapısı aslında tam command shell ya da terminal ne derseniz.
+
+312
+00:47:17,811 --> 00:47:40,623
+command line interface ne derseniz buralarda kullanmaya çok uygun. Ne anlamda çok uygun? Biz ne yapıyoruz? Komut satırında bir mesaj yazıyoruz. Bir pardon, komut yazıyoruz. Mesela ls diyorsunuz. Hatta yanına parametre veriyoruz. Tire l, a diyoruz. Her şeyi listele, dizile denir. Sonra bir pipe işareti koyuyoruz ve başka bir komut veriyoruz.
+
+313
+00:47:40,623 --> 00:48:07,183
+Mesela işte grep diyoruz yanına bir parametre daha veriyoruz. İşte içerisinde cihan geçenleri bul. Belki de user isimlerini falan bulmak istediğimiz için. Ondan sonra hani bunlardan kaç tane var diye bunu anlamak için bir pipe işareti daha koyup wc diyoruz. Word count yapacağız diyoruz. İşte oradaki satır sayılarının ne olduğunu bize bulmasını istiyoruz. İşte 5 diyor, 3 diyor, 2 diyor, bir şey diyor.
+
+314
+00:48:08,755 --> 00:48:14,275
+Şimdi buradaki pipe işlemi aslında tam olarak bu pipe kullanılarak yapıyor.
+
+315
+00:48:14,496 --> 00:48:20,096
+Nedir? Komut satırı, sizin girdiğiniz komutu alıyor, inceliyor, varsediyor.
+
+316
+00:48:20,375 --> 00:48:22,655
+Önce diyor ki, LSI çalıştırmam lazım.
+
+317
+00:48:22,655 --> 00:48:27,516
+Bunun çıktısını şeye, paslamam lazım, grebe.
+
+318
+00:48:27,735 --> 00:48:30,235
+Onun çıktısını da wordcount'a.
+
+319
+00:48:30,931 --> 00:48:38,631
+Paslamam lazım. Normal şartlarda tek bir komut yatsaydınız ne olacaktı? Arkadaş komutu alacak, part edecek, doğru komut.
+
+320
+00:48:38,631 --> 00:48:44,431
+Bir tane proses fork edecek, sonra o prosese exec ile o komutu yükleyecekti.
+
+321
+00:48:46,271 --> 00:48:54,111
+Yine benzer bir şey yapıyor. Sizin üç prosesiniz de oluşturuyor. Aradaki girdi ve çıktıları da arkadaşlara linkliyor.
+
+322
+00:48:55,011 --> 00:48:57,651
+Yani şöyle oluyor.
+
+323
+00:48:58,099 --> 00:48:59,500
+diye düşünün.
+
+324
+00:49:01,340 --> 00:49:05,579
+Parent ve child arasında şey nedir o?
+
+325
+00:49:06,780 --> 00:49:10,380
+Bir ucunda pardon.
+
+326
+00:49:12,300 --> 00:49:14,900
+Bir ucunda şey neydi?
+
+327
+00:49:14,980 --> 00:49:15,619
+LS var.
+
+328
+00:49:17,880 --> 00:49:22,099
+LS right ucundan yazacak pipe'ın sonrası
+
+329
+00:49:22,099 --> 00:49:25,320
+nedir o?
+
+330
+00:49:25,664 --> 00:49:44,084
+thread, bunun read olucundan okuyacak. Bunu da nasıl yapıyoruz aslında? Zaten bu her prosesin aslında açması gereken input out descriptorları var. Bunları manipüle ederek aralarında pipeler oluşturarak oluşturacağız.
+
+331
+00:49:50,195 --> 00:50:00,000
+şey jargonundaki daha bilinen jargonundaki karşılığı FIFO. FIFO'ya aynı zamanda name pipe diyoruz. Bu da pipe'ların hani okey kullanımları.
+
+332
+00:50:00,000 --> 00:50:06,759
+Fakat birbiriyle alakalı prosesler arasında, parent child ilişkisine sahip prosesler arasında kullanılabiliyor.
+
+333
+00:50:07,219 --> 00:50:11,859
+Dolayısıyla bunu değiştirmemiz lazım. Nasıl değiştireceğiz? Bir referansa ihtiyacımız var.
+
+334
+00:50:12,319 --> 00:50:19,000
+Named yaparsak bu işi olur diyoruz. Ama FIFO yapısı, Named pipe yapısı gibi nasıl çalışıyor?
+
+335
+00:50:19,500 --> 00:50:23,000
+Bir mesaj koydum, ikinci mesaj koydum, üçüncü mesaj koydum.
+
+336
+00:50:23,795 --> 00:50:47,135
+Okuyacak olan önce biri, sonra ikiyi, sonra içi çalıştıracak. Yani first in, first out çalışıyor. Dolayısıyla isimleri FIFO diye geçer. Aklınızda olsun. Şimdi bu bölümü temize havale ettik. Diğer bölüme başlayacağız ama başlamadan önce bir on dakika ara verelim. On dakika sonra yani tam bir iki de kaldığımız yerden devam edeceğiz.
+
+337
+01:04:12,115 --> 01:04:13,936
+İki tarafta duyuyor değil mi beni?
+
+338
+01:04:19,443 --> 01:04:25,324
+Arkadaşlar,
+
+339
+01:04:28,340 --> 01:04:29,340
+Şimdi...
+
+340
+01:04:37,652 --> 01:04:48,491
+Bu arada bir arkadaşınız ayrıca mesaj yazmış, soru sormuş. Ama ben onu biraz geç gördüğüm için tam yerine kaçırmış olabilirim.
+
+341
+01:04:48,632 --> 01:05:01,291
+Oysa tam soruyu anlamlandırmakta sıkıntı olabilir ama Sİİ'deki file kütüphanelerini kullandığımızda ayır birimleriyle aynı mantıklama iletişim kuruyoruz diye sormuş.
+
+342
+01:05:01,907 --> 01:05:08,167
+Tam olarak o sıradaki neyi konuşuyorduk ezbere şu an hatırlamıyorum zamansal olarak.
+
+343
+01:05:10,107 --> 01:05:13,847
+Message passing yapma anlamında sanırım.
+
+344
+01:05:15,467 --> 01:05:18,867
+Yani message passing mi yapıyoruz diye soruyor galiba.
+
+345
+01:05:18,867 --> 01:05:22,764
+Şimdi oradaki yapı...
+
+346
+01:05:22,804 --> 01:05:29,923
+Aslında doğrudan sadece siyle alakalı değil, altta çalışan işletim sistemiyle alakalı bir şey.
+
+347
+01:05:29,923 --> 01:05:37,684
+Ve fakat bizim aslında sistem çağrılarıyla özellikle de IO diye sorduğum için söylüyorum.
+
+348
+01:05:38,284 --> 01:05:42,384
+Yaptığımız şey başka türlü bir şey.
+
+349
+01:05:43,224 --> 01:05:43,923
+Ama...
+
+350
+01:05:45,331 --> 01:05:50,972
+Yani başka türlü bir şey deyince tam oturmadı belki ama şimdi sistem çağrısını da daha detaylı bulacağız.
+
+351
+01:05:52,251 --> 01:05:56,251
+Ne yapıyoruz? Bizim bir ayo bahşiştirmek için söyleyen bir sistem çağrısı.
+
+352
+01:05:56,652 --> 01:06:01,791
+Bunu yaptığımız sırada User Mode'dan kernel moda geçmemiz gerekiyor.
+
+353
+01:06:01,791 --> 01:06:04,652
+User Mode'dan kernel moda geçmek için de...
+
+354
+01:06:05,811 --> 01:06:12,331
+Daha doğrusu geçtikten sonra ne IOS'u yapacaksak, nasıl bir IOS yapacaksak bunun bilgilerini vermek lazım.
+
+355
+01:06:12,471 --> 01:06:17,192
+O bilgileri aslında çeşitli şekillerde pastıyoruz.
+
+356
+01:06:17,311 --> 01:06:23,511
+Ya direkt register üzerinden pastıyoruz, ya stack üzerinden pastıyoruz, ya bir block üzerinden pastıyoruz vs.
+
+357
+01:06:24,971 --> 01:06:27,192
+Normal, standart konuşacağımız şey bu.
+
+358
+01:06:28,551 --> 01:06:32,711
+Ve fakat şeyin önünde bir engel yok.
+
+359
+01:06:33,652 --> 01:06:41,692
+Sistem çağrılarını, yani message passing yaparken yaptığın işlerin birçoğu alt tarafta sistem çağrısıyla yürüyor.
+
+360
+01:06:42,211 --> 01:06:46,592
+O yüzden yerler olarak alt üst ilişkisi ters.
+
+361
+01:06:46,751 --> 01:06:48,851
+Fakat bunun terse çevirmenin önünde bir engel yok.
+
+362
+01:06:48,851 --> 01:07:00,891
+Bazı sistem çağrılarını oturup, demin mesela Mac'ı konuşurken sistem çağrılarının da bir kısmı message passing tabanlı demiştik.
+
+363
+01:07:01,331 --> 01:07:22,311
+Benzer bir şey yapabilirsiniz. Ama şey diye sorduğunuz zaman, C'de biz Ayo yaptığımızda bu böyle mi oluyor dersen, buna evet diyemem. Her zaman hayır da diyemem ama. Biraz yuvarlak bir cevap olur sadece. Benden olabileceğin o noktada.
+
+364
+01:07:27,476 --> 01:07:42,536
+Bir dakika bu tarafı geçemeyelim. Şimdi, tamam. Thread konuşacağız. Thread'in neyini konuşacağız? Ne yapacağız? Bir, thread'in hani konseptiyonu olarak ne olduğunu ya da nasıl olduğunu biliyoruz. Doğru mu?
+
+365
+01:07:44,615 --> 01:07:55,016
+Aslında lightweight bir yapı. Yani daha hafif, daha kurban olduğumuzu sağlayan bir yapı. Ve fakat bizim neye ihtiyacımız var?
+
+366
+01:07:55,507 --> 01:08:07,067
+Biraz ilerlersam, grup iyi varsa aslında şöyle. Daha iyi olacak ama dur bakayım.
+
+367
+01:08:10,643 --> 01:08:19,644
+Şöyle, biraz öne gireyim, sonra geri geleceğim. Şimdi baktığımız zaman bir proseste, zaten içerisinde bu thread var.
+
+368
+01:08:21,644 --> 01:08:26,644
+Akan bir lojik var. Ona da thread sağlıyor. Single thread tamam.
+
+369
+01:08:27,644 --> 01:08:31,644
+Biz ne yapıyoruz? Bu prosesten birbirine fazla takıyoruz. Uçturmak yerine...
+
+370
+01:08:32,916 --> 01:08:59,916
+Sadece içerisindeki thread'i çoklayalımdır. Bu sayede tekrar kod, data, file, register, stack, bunların hepsini bir de alıştırmak ne? Sadece ayrı bir stack oluşturan, birden fazla set oluşturan. Ama şunu unutmayın. Bu bir yerde lojik bir yapı. Dolayısıyla bunun işletilebilmesi lazım. Yani bu multi-threaded yapının bir şekilde...
+
+371
+01:09:00,287 --> 01:09:25,507
+işletim sisteminde karşılarım olması, implementasyon, ona göre yapılması lazım. Bunu yapabilmek için de yollar var. Hani kernel seviyesinde thread'ler oluşturup o kernel seviyesindeki thread'lerin user, yani etkiket işletiyle thread'lerle nasıl eşlendiğine vesaireye bakacağız. Mesela bunları konuşacağız. Şöyle bir daha geri geleyim.
+
+372
+01:09:27,891 --> 01:09:29,931
+Bu objektif vesaireye gerek yok.
+
+373
+01:09:30,051 --> 01:09:31,671
+Motivar için objektif.
+
+374
+01:09:32,051 --> 01:09:33,231
+Yani şey belli zaten.
+
+375
+01:09:33,832 --> 01:09:34,511
+Derdimiz ne?
+
+376
+01:09:34,511 --> 01:09:42,691
+Bir işi daha efektif yapmak, daha hızlı yapmak, daha kolay yapmak.
+
+377
+01:09:42,791 --> 01:09:44,127
+Yani en basitinden...
+
+378
+01:09:44,127 --> 01:10:03,347
+Belki bir grup prosesin kendi arasında yapacağı işi birden fazla proses olsa kaynaklayıp bunlar arasında context switch yapıp daha da ağır şeyler yaşamamak için, performans düşüşleri yaşamamak için daha hırsız bir yapı üzerinde halletmeye çalışmak.
+
+379
+01:10:03,347 --> 01:10:05,627
+En basit örneklerinden biri.
+
+380
+01:10:06,112 --> 01:10:13,471
+Bir serverınız var. Bu web server da olabilir, FTP server da olabilir, transaction server da olabilir. Olabilir de olabilir. Her şey olabilir.
+
+381
+01:10:15,532 --> 01:10:20,752
+Ne oluyor? Bir istek geliyor. O isteğe karşılık ya böyle önden bir grup proses yaratıyorsunuz.
+
+382
+01:10:20,891 --> 01:10:25,712
+Onu pool'dan birine atıyorsunuz gelen isteği ve hayatınıza devam ediyorsunuz.
+
+383
+01:10:25,752 --> 01:10:30,352
+Ya da istek geldiğinde bir proses yaratıp onu ona eşliyip hayatınıza devam ettiriyorsunuz.
+
+384
+01:10:31,252 --> 01:10:38,452
+Fakat bu yapıda ne kadar çok client, o kadar çok process, eşittir o kadar çok problem.
+
+385
+01:10:39,891 --> 01:10:42,612
+Neden performanslı bir düşüş yaşayabilirsiniz?
+
+386
+01:10:42,752 --> 01:10:45,032
+Bunu işte normalde ne yapıyoruz?
+
+387
+01:10:45,332 --> 01:10:49,572
+Multi process artı multi-traded yapıyoruz ki iki taraftan da eşlensin.
+
+388
+01:10:49,692 --> 01:10:51,012
+Neden iki taraftan diyorum?
+
+389
+01:10:52,340 --> 01:11:17,340
+Thread'in nasıl davranacağını bilmiyoruz. Şöyle bilmiyoruz. Demin bahsettiğim şey, user thread'iniz var. Yani 100 tane. Ama sizin işletim sistemindeki thread implementasyonuz, biri en, yani user seviyesindeki en tane thread, aşağıda sadece tek bir thread'le eşleşmiş durumda. O thread'lerden biri bloklanınca, sizin alttaki thread de bloklandı gitti.
+
+390
+01:11:18,323 --> 01:11:29,723
+Dolayısıyla mantıklı değil. Onun yerine ne yapabiliriz? Birden fazla proses, her prosesin içinde birden fazla thread, hem bize izolasyon sağlar, hem daha ölçüklenebilir bir yapı olur.
+
+391
+01:11:30,063 --> 01:11:38,943
+Vesaire. Böyle bir şeyler oluşturabiliriz. Yani motivasyon her zaman için aslında responsiveness kısmını arttırmak.
+
+392
+01:11:46,323 --> 01:12:10,363
+Altını, üstünü, sağını, solunu çizmek lazım. Şundan dolayı, zaten bir prosesin içerisindeki threadler olduğunuz zaman birçok dataya ortak yarışıyorsunuz. Bu anlamda basit. Yani eksplisit bir şey oluşturmanıza, inter-process communication yöntemi oluşturmanıza çoğu zaman gerek yok. Fakat hala senkronizasyon şeyi var, uğraşmanız gereken.
+
+393
+01:12:14,420 --> 01:12:34,091
+Diğer tarafta, burada ekonomi ve scalability diye ayrı ayrı söylenmiş ama şöyle bakmak lazım. Sonuçta daha az şey kullandığınız zaman...
+
+394
+01:12:34,323 --> 01:12:49,384
+Nedro kaynak kullandığınız zaman daha ekonomik oluyorsunuz. Dolayısıyla daha hızlı yaratabiliyorsunuz threadleri. Bir diğer şey, threadler arasında geçiş yaparken tam bir context switch yapmıyorsunuz.
+
+395
+01:12:49,384 --> 01:12:56,863
+Prosesle yaptığınız gibi. Dolayısıyla iş biraz daha kolay, biraz daha yürütülebilir. Scalability de bundan dolayı.
+
+396
+01:12:57,247 --> 01:13:02,987
+Aslında daha az kaynak kullanan bir yapıda aynı.
+
+397
+01:13:03,507 --> 01:13:06,387
+Kaynak miktarıyla daha fazla scale edebiliyorsunuz.
+
+398
+01:13:06,487 --> 01:13:11,227
+Ve fakat scalability noktasında başka şeyleri de düşünmek lazım.
+
+399
+01:13:11,347 --> 01:13:13,108
+Bu sadece memori üzerinden gidilmiyoruz.
+
+400
+01:13:13,647 --> 01:13:21,147
+Bir daha fazla prosesörün olduğu, işlemcinin olduğu yerde multiprocess olmak size daha avantajlı olacaktır.
+
+401
+01:13:21,147 --> 01:13:28,127
+O yüzden de mesela deminki örnekte olduğumda multiprocess, multitraditeler oluşturmayı tercih ediyoruz.
+
+402
+01:13:30,963 --> 01:13:46,956
+Şimdi, multi-core ya da işte multi-process sistemlere baktığımız zaman, başka sıkıntılar, başka problemler getiriyor. Bir taraftan çok güzel, bir taraftan da...
+
+403
+01:13:47,060 --> 01:14:12,180
+Çok problemli yapılar. Problem derken, olası bütün problemleri öngörmek, bunun üzerinde çalışmak, bunları çözmek anlamında da zor. Yani test ve debug anlamında da zor. Aynı case'i tekrar üretmek her zaman o kadar kolay değil. Bir diğer şey, paralelleşmeyi ya da concurrency'yi nasıl yaptığınız önemli. Paralelleşme.
+
+404
+01:14:13,716 --> 01:14:18,396
+Aslında şey demek, bir sistemin aynı anda birden fazla işlemi yapıyor olması.
+
+405
+01:14:18,556 --> 01:14:19,676
+Konkronizasyon ise,
+
+406
+01:14:23,444 --> 01:14:46,123
+Bunun kaba tabiriyle mış gibisi. Yani siz ne yapıyorsunuz? Az az hepsi biraz ilerlesin diye özellikle single processor ya da single core yapılarda ne yapıyoruz? Ara ara time sharing yaparak, o arkadaşların zamanlarını paylaştırarak aynı anda ilerlemelerine gitmelerini sağlıyoruz. Aynı andaymış gibi aslında.
+
+407
+01:14:47,123 --> 01:14:51,444
+Sistem açısından baktığın zaman biri çalışıyor, diğerleri yatıyor gibi değil. Ara ara hepsi...
+
+408
+01:14:51,444 --> 01:14:52,604
+çalışıyor ve ilerliyor.
+
+409
+01:14:53,344 --> 01:14:54,543
+Konkörnisi bu.
+
+410
+01:14:55,324 --> 01:15:01,344
+Şimdi, multi-core ya da multi-prosesör sistemde de hem paralelizm hem konkörnisi yaratmak istiyor.
+
+411
+01:15:02,043 --> 01:15:05,744
+Ancak, belki, paralelizmi yaratmak için iki yolumuz var.
+
+412
+01:15:06,004 --> 01:15:11,344
+Bir, işlem tamamlığını yaratabiliriz.
+
+413
+01:15:11,484 --> 01:15:12,744
+Bir, data tamamlığı.
+
+414
+01:15:14,036 --> 01:15:28,855
+Dolayısıyla data splitting ve dividing activities burada sıkıntılı olan kısım. Yani bazı işler işin doğası gereği bölünemeyebilir.
+
+415
+01:15:41,171 --> 01:15:52,171
+Performans kazancı ya da kaybı olarak geliyor oranlar. Bir diğer şey de bunu saydım, thread, format, yetmez. Ölgünün altında farklılıkların, kendi farklılıkların dengini olması gerekiyor.
+
+416
+01:15:52,171 --> 01:16:00,171
+Diyelim ki ikiye bölgünün bir şey, bir proses ayrı yoluyla çalışıyor, diğeri devamlı çalışıyor.
+
+417
+01:16:05,908 --> 01:16:13,508
+Bu şekilde, Andal's gibi galiba bir durum var.
+
+418
+01:16:13,508 --> 01:16:15,628
+Bu şeyi ne kadar sağlanmış gibi bir durumda,
+
+419
+01:16:15,628 --> 01:16:19,628
+ya da sonra bir durumda ne kadar sağlayabiliriz diyebiliriz.
+
+420
+01:16:19,628 --> 01:16:20,620
+Sağol olarak.
+
+421
+01:16:29,268 --> 01:16:45,487
+Şimdi bu demin konuştuğumuz şeylerin aslında tekrar yapımının biraz konkurrensiyonu, biraz daha ortaya çıkmış. Şöyle bakalım. İlk konkurrensiyonuz varken en fazla ve en fazla krefer arasında, en fazla fazla konkurrensiyonuz olabilirsiniz.
+
+422
+01:16:51,380 --> 01:17:00,979
+şeyde ise, multi-core bir sistemde ise, o zaman paralellikten bahsedebiliriz. Yani, core 1'de T1 ve T3 döne döne çalışıyor.
+
+423
+01:17:00,979 --> 01:17:14,380
+Core 2'de aynı anda T2 ve T4 çalışıyor. Yani core 1'deki T1 ve core 2'deki T2 aynı anda çalışıyor. O yüzden paralellikten baktığınız zaman core 1 ve core 2'deki elin içinde komputer arası değiştiriyorlar.
+
+424
+01:17:16,435 --> 01:17:21,275
+Bu şu, formülü de sadece bir türlü çözüyor, formülü de sadece C2P4.
+
+425
+01:17:22,675 --> 01:17:29,355
+Bunun temel nedeni de şu, aslında forlar ve işlemciler arttırma.
+
+426
+01:17:29,355 --> 01:17:38,475
+Nesli kuruluşu gösterecek bir şekilde bizim bir ilişki kurmamız gerekecek.
+
+427
+01:17:38,511 --> 01:17:45,231
+İşlemcinin içerisinde oradaki prosesin ya da threadin çalışmasını hızlandıracak olan ne mekanizması var?
+
+428
+01:17:45,532 --> 01:17:46,592
+Cache mekanizması var.
+
+429
+01:17:47,231 --> 01:17:54,351
+Şimdi bir thread ya da proses çalışırken o cache'i yaptığı IO istekleriyle vesairesiyle dolduruyor.
+
+430
+01:17:55,652 --> 01:17:58,592
+Artık o cache'te onun çalışmasıyla ilgili bilgiler var.
+
+431
+01:18:02,003 --> 01:18:14,564
+O core ya da o işlemciden başka bir core'a ya da başka bir işlemciye verdiğiniz zaman başınıza gelecek en temel sıkıntı performansın düşmesi olacaktır.
+
+432
+01:18:14,703 --> 01:18:20,023
+Neden? Adamın bütün bilgileri işte işlemcinin keşinde, diğer işlemcinin keşinde.
+
+433
+01:18:20,183 --> 01:18:21,984
+Siz bu tarafa aldınız, patladı.
+
+434
+01:18:22,203 --> 01:18:26,583
+Ya da işlemci içerisindeki keşler, dikkat edin, L1, L2, L3 keşler var.
+
+435
+01:18:26,943 --> 01:18:30,003
+Core'ların bir kısmı bunlara ortak erişiyor, bir kısmı her bir core.
+
+436
+01:18:30,003 --> 01:18:50,984
+Kor'a ait. Dolayısıyla Kor'un kendisi içerisindeki o thread'in oluşturduğu keşteki bilgilere artık erişimi ola da bilir, olmaya da bilir. Olacaksa bile daha yavaş olurmuş. Dolayısıyla burada bu yapı daha da zorlaşacaktır. Yönetim açısından, işletim sistemlerindeki yönetim açısından.
+
+437
+01:18:55,699 --> 01:19:02,199
+Şimdi Amdal'ın kalını elde edebileceğiniz maksimum hızlanmayı söylese.
+
+438
+01:19:02,920 --> 01:19:09,959
+Yani şöyle bir şey tanım yapmış.
+
+439
+01:19:10,500 --> 01:19:15,260
+Sizin bir uygulamanız var. Bir bütün, yani bir parça.
+
+440
+01:19:15,760 --> 01:19:19,619
+Bunun eslik kısmı seri olsun. Yani paralelleştirilemiyor.
+
+441
+01:19:21,019 --> 01:19:22,420
+Bu durumda demiş ki Amdal.
+
+442
+01:19:22,768 --> 01:19:30,387
+elde edebileceğimiz maksimum hızlanma 1 bölü S artı 1 eksi S bölü N'dir.
+
+443
+01:19:31,548 --> 01:19:37,347
+N de burada ayrıca kullanabilecek misiniz processing core olarak tarifleniyor.
+
+444
+01:19:37,347 --> 01:19:43,427
+Böyle baktığınız zaman bir örnek üzerinden de bakacak olursanız.
+
+445
+01:19:46,996 --> 01:20:05,175
+Size, nedir o? %75 paralelleşebilen %25 seri olan bir yapı, size işlenci sayısını 2'den 1'e çıkarttığınızda 1.6 kat, dikkat edin, 1'den 2'ye çıktığınızda 2 kat değil, 1.6 kat hızlanma sağlıyor.
+
+446
+01:20:06,095 --> 01:20:10,415
+Bunu 2'den 3'e çıkartırsanız, buradaki hızlanma aslında ne olacak?
+
+447
+01:20:11,123 --> 01:20:15,123
+Bir eşit değeri var. Orada kilitlenecek. Her seferinde
+
+448
+01:20:15,123 --> 01:20:21,623
+artım yavaşlayacak ya da düşecek.
+
+449
+01:20:21,623 --> 01:20:27,123
+Şimdi
+
+450
+01:20:31,796 --> 01:20:40,416
+Bu farklı sistemlerde farklı thread libraryleri olmakla beraber normalde biz ders kapsamında positsitif threadlerini tutturacağız.
+
+451
+01:20:40,416 --> 01:20:52,416
+Şimdi, günümüzün modern işletim sistemlerine baktığımız zaman aslında...
+
+452
+01:20:52,756 --> 01:21:04,136
+Neredeyse hepsi MacOS'ta, Windows'ta, Linux'ta kernel tarafında da thread yapısını destekliyor. User tarafında da thread yapısını destekliyorlar.
+
+453
+01:21:04,136 --> 01:21:13,296
+Fakat buradaki yönetim, özellikle POSIX Libraries'e baktığınız zaman zaten adı isimli library, library üzerinden destekleniyor.
+
+454
+01:21:15,412 --> 01:21:31,692
+Thread libraries olarak örnek verebileceğimiz hani POSIX threadleri de var, Windows threadleri de var, Java threadleri de var. Dolayısıyla hem user level'da hem geneller level'da threadlerden bahsediyoruz. O zaman da threadlerin birbirleriyle eşlenmesi zorunda görüyoruz.
+
+455
+01:21:32,811 --> 01:21:38,291
+Şimdi kimi nasıl çalıştıracağız? Burada üç tane yaklaşık.
+
+456
+01:21:38,868 --> 01:22:02,868
+Ya many to one yapacağız, ya one to one yapacağız, ya da many to many yapacağız. Bunlar neyi değiştiriyor? Bunlar çok iyi. Sayınan ne kadar etkin kullanıldığını aslında belirliyor ama bunun yanında başka sıkıntıları da söylüyor ya da bize gösteriyor. Many user level thread'i bir tane tek thread'e seçtirdiğiniz zaman...
+
+457
+01:22:03,028 --> 01:22:06,548
+Aynı sıkıntı, başlı bir anlar yapmak için yaptım.
+
+458
+01:22:07,208 --> 01:22:11,048
+Threadlerden bir tanesi, Bluetooth'un bir tanesi, Bluetooth'un bir iş yaptım.
+
+459
+01:22:19,315 --> 01:22:22,275
+Aşağıdaki kenarlarımızın çıkandı kaldı.
+
+460
+01:22:24,835 --> 01:22:28,135
+Ve fakat diğerleri bir şeyler yapmış.
+
+461
+01:22:28,376 --> 01:22:31,115
+Yapabilecekler, yapamayacak.
+
+462
+01:22:31,796 --> 01:22:36,715
+Dolayısıyla bu anlamda bizim için efektif bir yapı değil.
+
+463
+01:22:37,635 --> 01:22:41,695
+Ve fakat hala kullanan var mı? Var.
+
+464
+01:22:41,695 --> 01:22:43,235
+Ama yaygın değil.
+
+465
+01:22:44,876 --> 01:22:45,695
+Bunun dışında...
+
+466
+01:22:46,260 --> 01:22:47,260
+Ne olabilir?
+
+467
+01:22:48,760 --> 01:22:51,559
+Şunu yapabiliriz. One to one eşleyebiliriz.
+
+468
+01:22:53,360 --> 01:23:01,996
+İlk kere, konkurence anlamında bizi çok rahatlatır. Neden? Many to one'da ne yapıyoruz? Adamlardan her birini bir grup...
+
+469
+01:23:05,619 --> 01:23:15,180
+Aynı anda çalıştırılacak bir şey gibi yaptığımız thread'in miktarı arttı. Diğer şey, burada sıkıntı aslında.
+
+470
+01:23:18,399 --> 01:23:26,799
+Şu, bütün kullanıcı süresi thread'in kendine süresini miktar dolu. Sonrasında gani gani oluşturuyoruz.
+
+471
+01:23:27,799 --> 01:23:32,899
+Bu da ne demek? Hani bir yerden sonra bir overhead oluşturacak.
+
+472
+01:23:33,492 --> 01:23:35,112
+kaynağı geniş bir kısım var.
+
+473
+01:23:36,551 --> 01:23:38,672
+O yüzden de o zaman
+
+474
+01:23:43,060 --> 01:24:10,360
+Proces başına olması, test sayısı genellikle kısıtlanıyor. Bu modeli kullanan kim var dersiniz? Windows'lar, Windows'lar. Hepsi kullanıyor. Bu niye çalışmıyor? Bir dakika, yanlış ekran olası, yanlış görüntüyü değiştirmişim. Bir diğer model ne? Menu to menu modeli. Birden fazla şey nedir o?
+
+475
+01:24:10,771 --> 01:24:27,691
+User thread'i birden fazla kernel thread'iyle eşliyorsunuz. Bunun güzelliği ile efektifliği. Neden efektif? Şundan dolayı efektif. Hatırlayın, many to one yaptığınız zaman, yukarıdaki user level thread'lerden bir tanesi blocking bir iş yaparsa,
+
+476
+01:24:29,844 --> 01:24:36,163
+Aşağıdaki kernel thread'de blocking olacağı için her şey bu takılıyor. Ancak ve lakin şimdi nasıl bir şansın olur?
+
+477
+01:24:36,384 --> 01:24:43,384
+Menü to menu modelde diyelim ki şuraya geçeyim. Bir sonraki slide bir görüntü var. Oradan şey yaparız.
+
+478
+01:24:44,224 --> 01:24:53,523
+Menü to menu modelde diyelim ki 4 tane user thread'ini 3 tane kernel thread'ine map ettiniz.
+
+479
+01:24:55,203 --> 01:24:56,484
+Burada ne olacak?
+
+480
+01:24:58,323 --> 01:25:02,843
+User threadlerinden bir tanesi blocking modunda aşağıdaki threadlerden bir tanesi.
+
+481
+01:25:03,564 --> 01:25:08,543
+Ama kalan threadler size ne şansı verecek? Çalışmaya devam etme şansı verecek.
+
+482
+01:25:09,064 --> 01:25:14,183
+Dolayısıyla böyle bir avantajı olacak.
+
+483
+01:25:14,183 --> 01:25:25,343
+Şimdi burada aslında bu işi iki ayrı, daha doğrusu hibrit bir modelle de yapabilirsiniz.
+
+484
+01:25:26,579 --> 01:25:38,500
+Neye göre, kime göre? Şimdi, menu to menu aslında belli açılardan güzel bir kaynak kullanımı ve işlerin blok olmasının engellenmesi anlamında güzel bir çözüm sağlıyor.
+
+485
+01:25:38,500 --> 01:25:44,500
+Ve fakat her zaman için neye ihtiyacınız var? Aşağıdaki kernel thread sayısı...
+
+486
+01:25:44,783 --> 01:25:55,263
+Daha az olacağı için işin doğası gereği, yukarıda daha çok user thread olacağı için kaynak paylaşımı ya da daha doğrusu CPU zamanlama anlamında sıkıntılar olacak.
+
+487
+01:25:55,463 --> 01:26:05,804
+Onun yerine böyle özel, acil, önemli falan ismerinizin olduğu yapılarda daha efektif bir şey kullanmak istiyorsanız, o zaman da one-to-one bir mapping yapmak isteyebilirsiniz.
+
+488
+01:26:06,283 --> 01:26:10,323
+Dolayısıyla böyle hibrit, two-level bir model de oluşturuyor olabilirsiniz.
+
+489
+01:26:12,148 --> 01:26:17,268
+Ne oluyor böyle bir tuhaflık var? Neyse.
+
+490
+01:26:18,288 --> 01:26:31,028
+Şimdi thread library için şunu demiştik hatırlarsanız, user level'daki threadleri oluşturmak için kütüphane kullanıyoruz.
+
+491
+01:26:31,308 --> 01:26:32,868
+Tam olarak da posix kullanıyoruz.
+
+492
+01:26:38,387 --> 01:26:41,907
+Bu noktada biz aslında POSIX'i kullanacağız.
+
+493
+01:26:42,087 --> 01:26:47,247
+POSIX'i baktığınız zaman bir implementasyon, bunu unutmayın.
+
+494
+01:26:48,247 --> 01:26:52,327
+Pardon, implementasyon değil, özür dilerim, birbirine karıştı, yan kafam karıştı.
+
+495
+01:26:52,827 --> 01:26:54,967
+Bir spesifikasyon, bir standart yani.
+
+496
+01:26:56,188 --> 01:26:59,167
+POSIX standartı der ki, yani C'deki standart gibi düşünün.
+
+497
+01:26:59,887 --> 01:27:02,507
+ANSI 99 standartı gibi düşünün.
+
+498
+01:27:02,963 --> 01:27:08,963
+Bu böyle olacak, bu böyle olacak, şu şöyle olmalı, bu böyle olmalı, vesaire bir şeyleri söyler. Ama bazı yerleri...
+
+499
+01:27:10,996 --> 01:27:23,756
+Açık uçludur. Tanımlanmamıştır standart. Dolayısıyla o açık uçlu yerlerin davranışı o standarta göre implement edilmiş kütüphaneye aittir.
+
+500
+01:27:23,756 --> 01:27:35,775
+Yani kütüphaneyi yazan diğer fonksiyonları yerine getirmek için o x, y, z neyse o iş onu böyle yapmaya uygun görmüştür ya da farklı türlü yapmaya uygun görmüştür.
+
+501
+01:27:37,600 --> 01:27:44,680
+Davranışsal olarak bu standardın implementasyonlarında farklılık görebilirsiniz. Bunu unutmayın.
+
+502
+01:27:46,120 --> 01:27:47,440
+Allah Allah.
+
+503
+01:27:48,520 --> 01:27:51,460
+Arada ekran gidiyor geleni.
+
+504
+01:27:51,880 --> 01:27:59,819
+Şimdi, Itrap POSIX library ise aslında kullanımı belli açıdan çok basit bir library.
+
+505
+01:28:00,340 --> 01:28:05,980
+Uygulamada bunu da anlatacak arkadaşlar. Göreceksiniz. Şunu yapıyorsunuz.
+
+506
+01:28:06,220 --> 01:28:10,460
+P-thread library'sinin işin kullanım için de P-thread başı include etmeniz lazım.
+
+507
+01:28:11,659 --> 01:28:20,960
+Compilation sırasında da thread lab P-threads deyip P-threads library'sinin de işe dair olacağını söylüyor olmanız lazım.
+
+508
+01:28:25,171 --> 01:28:33,291
+Bu ilk ekrandakiler parametre çekin. Ama önemli olan şey şu orada. Bir fonksiyonunuz var, runner diye.
+
+509
+01:28:37,431 --> 01:28:39,291
+Onu şunun için...
+
+510
+01:28:46,452 --> 01:28:48,772
+Onu şunun için kullanıyoruz.
+
+511
+01:28:50,472 --> 01:28:57,112
+Bir thread oluşturduğumuz zaman thread'in çalıştırılacağı kodu bir function pointer olarak arkadaşa iletmemiz lazım.
+
+512
+01:28:57,572 --> 01:29:02,512
+Dolayısıyla her şeyi fonksiyon içerisinde tanımlıyoruz ve onunla şey yapıyoruz.
+
+513
+01:29:09,043 --> 01:29:16,284
+Sistem çağrısı var, kütüphane çağrısı var, onu kullanıyorsunuz. Yanına da parametre olarak verebildiğiniz çeşitli şeyler var.
+
+514
+01:29:17,364 --> 01:29:27,284
+Bir sonraki, bu çeşitli şeyler aslında dört tane. O dördün ilki, siz o thread'i yarattığınız zaman size o thread'in ID'siyle ilgili bir bilgiye gelmesi lazım.
+
+515
+01:29:27,844 --> 01:29:31,604
+Onu o yüzden böyle amparasanla, adres olarak yapıyoruz. Bir diğeri,
+
+516
+01:29:32,307 --> 01:29:45,507
+Bu thread'in özelliklerini, attributlarını eğer default değil de kendi belirlediğiniz başka şeylerle olmasını istiyorsanız, mesela join olmasını istiyorsanız, detach değil de join olmasını istiyorsanız, onu vermek için söylüyorum.
+
+517
+01:29:48,268 --> 01:29:56,368
+Çalıştıracağı işin ne olduğunu söylüyorsunuz. Burada o runner fonksiyonu. O runner fonksiyonuna bir tane de parametre aktarıyoruz.
+
+518
+01:29:56,368 --> 01:29:59,568
+Buradaki ilginçlik şu, tek bir parametreden bahsediyoruz.
+
+519
+01:30:00,020 --> 01:30:14,500
+Ve fakat burada bahsettiğimiz böyle bahsedince biraz şey oluyor, nedir o? Kısıtlı bir yapılmış gibi oluyor. Ama farklı farklı kombinasyonlarla parametre pas etmek mümkün.
+
+520
+01:30:15,040 --> 01:30:24,960
+Ve fakat thread içerisinde arkadaşlar kütüphane bir kanalda şöyle bir yol açmışlar. Ben farklı tiplerdeki veri aktarabilirim.
+
+521
+01:30:25,908 --> 01:30:38,908
+Bu verinin boyutu çok değişken olabilir. Dolayısıyla ben bir void pointer aktarırsam her şeyi bunun üzerinden ne yapabilirim? Cast ederek kullanabilirim.
+
+522
+01:30:38,908 --> 01:30:45,908
+Dolayısıyla dikkat edin bizim burada aktardığımız parametre uygulamaya verilen argümanın birinci parametresi.
+
+523
+01:30:45,908 --> 01:30:52,908
+Bu. Yani artık o her neyse. Onu da runner fonksiyonu içerisinde ne yapmış adam?
+
+524
+01:30:53,332 --> 01:31:07,492
+AutoID, Integra test etmiş ve öyle kullanmaya çalışmış. Yaptığı şey de her biri böyle sum üzerinde toplaya toplaya devam etmek aslında farklı. Entenet proses üzerinde.
+
+525
+01:31:08,231 --> 01:31:12,291
+Sum'da bu global değişken olduğu için pıtır pıtır pıtır pıtır şey olacak.
+
+526
+01:31:13,747 --> 01:31:34,087
+Ortaya çıkacak. Şimdi bir yerde P-thread exit de var. O da şu, bizim thread'imizin bir yerde ne olması lazım? Çalışması bittikten sonra termin olması lazım. Bu basit bir şey olduğu için işte sıfırdan üst limite kadar devamlı sayıları toplayıp ekrana yazdığı için.
+
+527
+01:31:37,652 --> 01:31:59,632
+Bir şey, çok da kalmış bir şey olmadığı için, fonksiyonun sonunda, fitret, exit çıkıyoruz. Fitret, exit, bu anlamda sadece içinde olduğunuz thread'i termine ediyor. O yüzden de, şunda dikkatli olmak lazım, multi-thread yapı içerisinde, exit'la, tek başına exit olan sistem çağrısıyla, oynamıyor.
+
+528
+01:31:59,632 --> 01:32:05,052
+Çünkü, yani, fitret çağrı, bir procesi termine etmiş.
+
+529
+01:32:06,387 --> 01:32:08,347
+Bu önemli bir detay.
+
+530
+01:32:08,347 --> 01:32:09,427
+Şimdi
+
+531
+01:32:13,876 --> 01:32:16,195
+Burada önemli bir şey daha var.
+
+532
+01:32:18,695 --> 01:32:20,235
+Joinable bir teşkilatı.
+
+533
+01:32:22,096 --> 01:32:24,895
+Şimdi oranın açıklamasını yapmamıştım.
+
+534
+01:32:24,976 --> 01:32:25,756
+O yüzden bu önemli.
+
+535
+01:32:26,976 --> 01:32:28,684
+Yarattığınız thread'in...
+
+536
+01:32:28,884 --> 01:32:33,743
+Yaratım amacınıza bağlı olarak ne sonuç ürettiğini merak ediyor olabilirsiniz.
+
+537
+01:32:33,984 --> 01:32:36,604
+Ya da çalışmasının bitmesi gerekiyor olabilir.
+
+538
+01:32:36,764 --> 01:32:41,184
+Neden? Sizin işinize başlamanız için ya da başka bir thread'in o işi yapıyor olması için.
+
+539
+01:32:41,944 --> 01:32:48,944
+Bu durumlar için, bu ve benzeri durumlar için thread'lerinizi joinable yaparsınız.
+
+540
+01:32:48,944 --> 01:32:52,363
+Ve p-thread join dediğinizde blocking bir koldur.
+
+541
+01:32:56,435 --> 01:33:12,855
+thread ile join etmeniz, yani onun sonucunu beklemenizi sağlar. Eğer bunu yapmazsanız, attribute'unu detached olarak belirlemişsiniz, ki bulunduğunuz ortama göre default'u detached ya da join'u olabilir, ona bakmanız lazım.
+
+542
+01:33:14,996 --> 01:33:21,855
+Detached dediğiniz zaman, thread'i kaba tabirle, saldım çeyre, mevlam kayıra şeklinde çalıştırıyor.
+
+543
+01:33:23,828 --> 01:33:36,328
+Aynı uygulamayı, Windows'un thread library'sini kullanarak kullanılacak.
+
+544
+01:33:38,168 --> 01:33:42,228
+Orada da yapı oldukça benzer olacak. Dikkat edin.
+
+545
+01:33:42,948 --> 01:33:47,448
+İsimler değişir, parametrelerin sayısı, yeri vs. değişir.
+
+546
+01:33:49,555 --> 01:33:52,475
+Aslında mantık değişmez.
+
+547
+01:33:53,015 --> 01:34:01,076
+Yani p-thread, create, yetene, create thread diye bir sistem çağrısı yaparsınız, kütüphan çağrısı yaparsınız.
+
+548
+01:34:01,755 --> 01:34:05,255
+Handle'ı parametre olarak değil, return olarak alırsınız.
+
+549
+01:34:05,475 --> 01:34:06,496
+Ancak bunlar değil.
+
+550
+01:34:06,735 --> 01:34:10,036
+Fakat geri kalan bütün mantık birbirinin aynıdır.
+
+551
+01:34:12,155 --> 01:34:16,036
+Ve o trendleri de şey yapmıyoruz.
+
+552
+01:34:17,939 --> 01:34:24,459
+Ya thread klasını extended ederek oluştursunuz ya da runable interface.
+
+553
+01:34:26,679 --> 01:34:36,859
+Birinci şeyimiz bu değil. Derdimiz bu değil. Birinci daha önemli dertlerimiz var. Misal, bir dakika.
+
+554
+01:34:46,036 --> 01:35:08,636
+Nasıl oluşturulacağı, yani ne zaman çalışacağız, ne kadar çalışacağız, nasıl bir şey çalıştırılacağı konusu, implisiz olarak yapılabilir.
+
+555
+01:35:08,636 --> 01:35:10,636
+Biz ne yapıyoruz, ne kadar değiştiriyorsunuz?
+
+556
+01:35:11,828 --> 01:35:13,828
+Şunu diyoruz.
+
+557
+01:35:14,928 --> 01:35:20,828
+Yani, kodun burasında bir kodun çalışacak, bu kodu çalışacak, bu böyle olacak hesabı.
+
+558
+01:35:21,368 --> 01:35:26,688
+Şimdi bu yapı, bütün hakimiyetin developer üzerinde olduğu bir yapı.
+
+559
+01:35:26,828 --> 01:35:28,328
+Olabilir bir yapı.
+
+560
+01:35:28,708 --> 01:35:30,748
+Bezleyen açılardan da etkisi bir yapı.
+
+561
+01:35:31,148 --> 01:35:33,908
+Fakat, değerlerinde getirdiği zorluklar var.
+
+562
+01:35:36,628 --> 01:35:38,048
+Dolayısıyla hani...
+
+563
+01:35:38,836 --> 01:35:50,836
+Sefkabı bir tabir olacak ama daha az yetenekli adamların ya da daha böyle, burası ile değil de, bu uygulamanın daha bir planı fiyatı ile eserde daha çok iyi yapabilir.
+
+564
+01:35:50,836 --> 01:36:02,836
+Bu işi implicit de yapılmış. Implicit yapmaktan kasıt ne? Normal şartlarda.
+
+565
+01:36:04,404 --> 01:36:07,904
+Kuşturma ve yönetimi, anlamadım.
+
+566
+01:36:24,148 --> 01:36:27,307
+Basitçe bir şekilde tekrar koyalım.
+
+567
+01:36:27,307 --> 01:36:35,688
+Yani, mesela, bir şeyde, Grand Central Dispatch'te var mıdır burada?
+
+568
+01:36:36,387 --> 01:36:37,188
+Diyorsunuz ki,
+
+569
+01:36:42,931 --> 01:37:00,372
+Bir blog yarattım. İşte onu da üst ve curly brace açı kapayla yarattım. Ben artık buranın şey, multi-tredit olduğunu söylüyorum. Adam burayı multi-tredit olarak oluşturuyor.
+
+570
+01:37:05,716 --> 01:37:30,716
+Şimdi, threadlerle ilgili, diğer bütün örneklerine full girmeyeceğim. Threadlerle ilgili konuşurken, uygulamada da arkadaşlar üzerinden geçecektir. Birkaç tane sorumsalımız var. Daha doğrusu işletim sistem tarafından baktığımız zaman, karar verilmesi gereken, düşünülmesi gereken, implementasyonu anlamında dikkat edilmesi gereken şeyler var.
+
+571
+01:37:32,307 --> 01:37:33,387
+Portfuexec.
+
+572
+01:37:40,372 --> 01:37:41,252
+Nasıl olacak?
+
+573
+01:37:45,011 --> 01:38:12,471
+Yani ne demek istiyorum? Diyelim ki siz bir prosessiniz ve içinizde beş tane thread var. O threadlerden biri de kalktı, fork dedi. O an itibariyle yeni oluşan prosesin içerisinde beş tane mi thread olacak, bir tane mi thread olacak, bir tane olacaksa hangisi olacak, çağrıyı yapan mı olacak, nedir ne değildir bu.
+
+574
+01:38:15,028 --> 01:38:19,347
+Bunun için mesela Unix'e baktığımız zaman aslında iki farklı versiyonu var folk'un.
+
+575
+01:38:19,807 --> 01:38:23,608
+Farklı davranışları hangisini istiyorsanız onu yapabilmek için.
+
+576
+01:38:23,608 --> 01:38:37,047
+Ya da exec, yani içerisinde birden fazla thread'i olan bir prosesin içerisindeki bir thread, exec'i çağırdığı zaman ne olacak?
+
+577
+01:38:41,427 --> 01:38:48,768
+İlgili uygulamayı ikinci diskten alıp memori'deki operasyon üzerine kod bölümüne tıkı tıkı yazıp hayatına devam eden yapın.
+
+578
+01:38:50,788 --> 01:38:56,347
+Bu durumda teknik olarak ne olacak sorusu var.
+
+579
+01:38:56,507 --> 01:39:00,387
+Tabii çoğu zaman bunun cevabı şey, yani Excel aynen çalışmaya devam edecek.
+
+580
+01:39:01,188 --> 01:39:02,427
+Bunun dışında...
+
+581
+01:39:02,644 --> 01:39:05,884
+Inter-process communication'da özellikle göreceğiz.
+
+582
+01:39:06,104 --> 01:39:07,604
+Sinyal handling nasıl olacak?
+
+583
+01:39:07,823 --> 01:39:09,764
+Şimdi ne yapıyoruz sinyal mekanizmasında?
+
+584
+01:39:11,043 --> 01:39:13,983
+Bir prosesten diğerine sinyal gönderiyoruz.
+
+585
+01:39:14,583 --> 01:39:17,943
+Gönderdiğimiz sinyal aslında ne oluyor?
+
+586
+01:39:18,344 --> 01:39:21,804
+O prosesdeki sinyal handling tarafından işleniyor.
+
+587
+01:39:26,355 --> 01:39:38,555
+Bununla ilgili olarak çalıştıracağım. Ne yapabilirim? Dedik ya bir tane seçip onu çalıştırabilirim. Herhangi birini çalıştırabilirim gibi opsiyonlar var.
+
+588
+01:39:41,055 --> 01:39:49,796
+Ki hani burada şeyde bir sıkıntı. O sinyalin ne için kullanıldığı ya da kullanılmak istediği de önemli.
+
+589
+01:39:50,963 --> 01:40:06,043
+Bunun dışında bir thread'i başlattığınız gibi bir thread'i durdurabilirsiniz, iptal edebilirsiniz. Dolayısıyla bunu asenkron mu yapacağım, şey mi yapacağım, deferred gecikmeli vesaire mi yapacağım, ne yapacağım.
+
+590
+01:40:06,043 --> 01:40:16,863
+Bu arada thread'ın bir lokal alanının olmasını istemiyorum. Ve scheduler tarafında kararlar alır.
+
+591
+01:40:18,292 --> 01:40:22,692
+Bir fark oluşturacak, krali, numaralı gibi noktalara var.
+
+592
+01:40:23,731 --> 01:40:27,051
+Şimdi fork ve egzeyi aslında zaten konuştuk.
+
+593
+01:40:37,043 --> 01:40:45,203
+Sinyaller, baktığınız zaman, inter-process communication ile daha detayını konuşacağız, uygulamada göreceksiniz.
+
+594
+01:40:45,203 --> 01:40:48,203
+Fakat arada da ara ara konuşuyoruz.
+
+595
+01:40:51,684 --> 01:41:00,203
+Bunlar, kaba tabirle, bir prosesi bir şiha hakkında haberdar etmek için oluşturulan bir event'e karşılık.
+
+596
+01:41:02,387 --> 01:41:19,728
+Yapılar, yani atıyorum eskiden Facebook'taki POC etmek gibi, durptun, bilmem ne yaptın, bağıran, doğrudan bir veri transferi yaptığımız bir şey değil, büyük büyük veri transferi yaptığımız bir şey değil. Sadece beklenen bir olayın, durumun oluştuğunu haber verdiğimiz yapılar aslında o zaman.
+
+597
+01:41:23,728 --> 01:41:29,728
+Şimdi, bir sinyal oluşturulduğunda, mesela çalışan programımız...
+
+598
+01:41:30,228 --> 01:41:43,288
+Konsolda çalışırken Ctrl C'ye bastığınız ya da window ortamındaysanız şarpıya tıkladığınızda olan şey aslında bir sinyalin oluşturulması ve prosesse iletilmesi.
+
+599
+01:41:43,288 --> 01:41:53,988
+Prosesinde bunlar için karşılık gelen sinyal handlerları var. Bunu ne için kullanabiliriz?
+
+600
+01:41:56,851 --> 01:42:17,171
+Mesela Ctrl-C'yi interrupt için kullanıyoruz. Adamın bir durması için bir şey söylüyoruz. Keza stop sinyalini de aynı şey için kullanıyoruz. Ya da işte user 1, user 2 gibi sinyaller var. Aslında prosesler kendi arasında mesela birbirlerini yoklayabilsin ve hani şey yapabilsin diye kullanıyoruz.
+
+601
+01:42:19,283 --> 01:42:26,723
+Büyük büyük haberleşme mekanizmaları kullanmadan ayakta olup olmadıklarını birbirlerine haber versin diye kullanıyoruz.
+
+602
+01:42:27,823 --> 01:42:37,683
+Şimdi burada bu default sinyal handle'ların hepsini şey yapmak mümkün.
+
+603
+01:42:39,363 --> 01:42:41,263
+Nedir? Override etmek mümkün.
+
+604
+01:42:41,263 --> 01:42:44,183
+Zaten onu yaptığınız zaman benim bahsettiğim yapımları.
+
+605
+01:42:44,783 --> 01:42:45,983
+Biri oluşturabiliyorum.
+
+606
+01:42:46,612 --> 01:42:47,112
+Evet.
+
+607
+01:42:52,212 --> 01:42:59,792
+Bu durumda bir proses, başka bir proses, bilgi gönderdiğinde bu proses ne olacak?
+
+608
+01:43:02,372 --> 01:43:04,332
+Birkaç tane seçenek var.
+
+609
+01:43:07,032 --> 01:43:08,912
+Neyin nedir o?
+
+610
+01:43:10,532 --> 01:43:13,992
+Thread Library'sinin implementasyonu konusunda göz önünde alabilecek.
+
+611
+01:43:13,992 --> 01:43:15,820
+Bir tanesi...
+
+612
+01:43:17,876 --> 01:43:20,735
+Dediket bir tane tüzümüz olur. Bütün sinyaller alana gidiyor.
+
+613
+01:43:24,315 --> 01:43:30,056
+Bütün şeyler içerisindeki, medros, prasif, kastik, bütün tektörün sinyallerine.
+
+614
+01:43:30,655 --> 01:43:35,756
+Bu önemli bir kontrol mekanizması oluşturmak lazım.
+
+615
+01:43:35,916 --> 01:43:38,016
+Diyelim ki o sinyal karşısında bir şey yok.
+
+616
+01:43:38,863 --> 01:43:48,863
+10 tane de thread'iniz var. 10'un birden aynı şeyi yapıyor olması çoğu zaman bir sıkıntının haber açısıdır. Dolayısıyla bir şey yapıldı, yapıldı, yapıldı diye bakıp ondan sonra yapmak olacak.
+
+617
+01:43:48,863 --> 01:43:59,863
+Ama burada da şöyle bir şey var. Siz 10 kere sinyal handler çalışırız. Çok da kötü bir çözüm. Bazı şeyleri rahatlatır ama bir taraftan da çok kötü bir çözüm.
+
+618
+01:44:08,083 --> 01:44:16,684
+threadle, yani proses içerisindeki threadlerden, hani bizimle ayrı, ona göndermek vesaire gibi bir şey yapılabilir.
+
+619
+01:44:17,123 --> 01:44:19,764
+Ama bu da bambaşka ayrı mekanizm olarak ister.
+
+620
+01:44:20,644 --> 01:44:23,083
+Dolayısıyla implantasyon olduğu gibi o da...
+
+621
+01:44:25,083 --> 01:44:26,083
+Şimdi...
+
+622
+01:44:32,756 --> 01:44:33,996
+Konuşma olmak lazım.
+
+623
+01:44:52,500 --> 01:44:56,899
+Bir de thread cancellation kısmında ne olabilir?
+
+624
+01:44:59,899 --> 01:45:05,699
+Bir thread'i yarattık, bir thread create ile yarattığımız thread'in ne yapılmasını isteyebiliriz?
+
+625
+01:45:05,699 --> 01:45:08,699
+Durdurulmasını isteyebiliriz.
+
+626
+01:45:08,699 --> 01:45:11,500
+Nasıl istiyoruz? Bir saniye.
+
+627
+01:45:11,648 --> 01:45:13,728
+Bu grubun slide'ında aşağısı çekim.
+
+628
+01:45:14,568 --> 01:45:16,188
+Şimdi geldi.
+
+629
+01:45:16,908 --> 01:45:23,028
+Piltred create ile yarattığınız şeyi, thread'in ID'sini ile filtred cancel ile cancel etmeye çalışabilirsiniz.
+
+630
+01:45:26,028 --> 01:45:29,028
+Şimdi, burada...
+
+631
+01:45:32,212 --> 01:45:45,152
+şey tarafında, posix'ten bahsediyorsak, links tarafında bahsediyorsak, aslında thread cancellation, thread'in o anki durumuna bağlı olarak değişir.
+
+632
+01:45:45,152 --> 01:45:46,152
+Yani,
+
+633
+01:45:50,515 --> 01:46:09,996
+Deferred ya da asynkron yapıda oluyor olabilir mod olarak. State de bu durumda cancel'a izin verecektir. Ama bunu tamamen off'a kullanıyor olabiliriz. Yani thread cancellation'a off yapmışızdır. State de disabled'dur. Dolayısıyla hiçbir şekilde termine edemeyebiliriz de.
+
+634
+01:46:16,692 --> 01:46:34,552
+Asenkron ve deferred'ı tartışmak lazım. Eğer mod deferred olarak set edilmişse, thread içerisinde şeyin olması gerekir. Belli bir iptal noktasının olması gerekir.
+
+635
+01:46:35,412 --> 01:46:43,852
+Thread o cancellation pointe ulaştığı zaman ancak iptal gerçekleşebilir. Bu da aslında ne için kullandığımız ya da niye böyle bir yol?
+
+636
+01:46:44,307 --> 01:46:45,228
+Şu ne için?
+
+637
+01:46:45,868 --> 01:46:53,568
+Thread, başka threadlerle beraber ortak veri ve kaynaklar kullanıyor.
+
+638
+01:46:54,128 --> 01:47:02,228
+Böylesiyle belli anlarda bu kaynakları garantiye aldığı, onların bir şekilde korrupt olmadığı anlara ulaşması lazım.
+
+639
+01:47:02,228 --> 01:47:11,168
+Böylesiyle yaptığınız şey hassasiyetine bağlı olarak böyle bir duruma ihtiyaç duyuyor olabilir.
+
+640
+01:47:13,108 --> 01:47:22,708
+Asenkron dediğiniz zaman da zaten takır takır göndermiş oluyorsunuz.
+
+641
+01:47:28,212 --> 01:47:51,351
+Gene yamuk gözüktü. Thread local storage da hani şundan farklı, bununla karıştırmayın. Kapı karışıklığı yaratılabiliyor. Şimdi bir thread yarattığınız zaman aslında ki aslında prosesin içerisindeki her şeye erişimi var.
+
+642
+01:47:51,988 --> 01:48:17,228
+Orada bir sıkıntı yok. Globallere zaten bir sıkıntı yok. Bir de kendi lokal değişkenleri olacaktım. Muhakkak. Ve fakat bu şey değil. Yani o execution'u yaptınız, bitti. Artık o data orada yok. Dolayısıyla hani böyle function call içerisinde, function içerisindeki bir değerin sabit kalmasını istiyorsak, siyi de static kullanırız ya, onun gibi bir yapıdan bahsediyoruz. Thread, local, storage.
+
+643
+01:48:18,644 --> 01:48:33,444
+Dolayısıyla o thread tekrar başladığında tekrar devam ettiğinde bir yerden bir konteks evleri olmasını sağlayabilmek için önemli.
+
+644
+01:48:33,444 --> 01:48:45,604
+Bu genellikle threadlerin oluşturulması yönetimi vesaire noktasında herhangi bir söz sahibi olmadığınız durumlarda.
+
+645
+01:48:46,064 --> 01:49:06,884
+kullandığımız yapılar. Yani implicit threadlerde kullandığımız yapılar. Şimdi burada bir şey daha var. Şey dedik, bunun match edilmesi, yani threadlerin eşleştirilmesi noktasında aslında
+
+646
+01:49:07,572 --> 01:49:14,252
+Farklı yapılar olabilir. İşte many to one olabilir, one to one olabilir, many to many olabilir.
+
+647
+01:49:16,212 --> 01:49:23,572
+Many to one'da bir şey, çok bir...
+
+648
+01:49:23,731 --> 01:49:26,671
+sıkıntı yok.
+
+649
+01:49:27,091 --> 01:49:29,591
+One to one'da hiçbir sıkıntı yok.
+
+650
+01:49:29,591 --> 01:49:34,051
+Fakat bizim şey tarafında ne yapmamız lazım?
+
+651
+01:49:38,707 --> 01:50:03,488
+Alttaki kernel thread'inin ya da thread'lerinin üstteki user thread'i çalıştırabilmesi noktasında eşleşmenin one to menu ya da menu to menu olmasını sağlayabilmek adına aşağıdaki kernel thread'inin yukarıdaki hangi thread'i çalıştıracağını belirliyor olmamız.
+
+652
+01:50:07,828 --> 01:50:08,748
+Evet.
+
+653
+01:50:12,115 --> 01:50:36,275
+Bunun da bir taraftan şeye bildirilmesi lazım. Nasıl diyeyim? Yukarıdaki thread library'sine bildirilmesi lazım. Upcall yapıyor olmalı. Yani yukarıda bir thread library'miz var.
+
+654
+01:50:36,692 --> 01:50:43,452
+User threadleri implement ediyorsunuz. O da oluşan threadleri aşağıda hangi kernel threadlerine bağlayacaksınız?
+
+655
+01:50:44,251 --> 01:50:50,231
+Bir taraftan da alttaki kernel threadi hangi threadi o an çalıştıracak?
+
+656
+01:50:50,832 --> 01:50:57,251
+Bunlar konuşmamız gereken scheduler tarafında ilerleyen dönemde daha detaylı şeyler.
+
+657
+01:50:57,431 --> 01:51:01,171
+Şimdi bundan sonra işletim sistemlerin örnekleri var. Buraya girmeyeceğim.
+
+658
+01:51:02,420 --> 01:51:17,820
+Zaten örneklerle ilgili olarak Linux Box X'i uygulamada göreceksiniz. Windows tarafına da siz bir zannet elinizi biraz hırlatın, bir bakın bakalım ne var ne yok. Sonra gerekirse konuşuruz.
+
+659
+01:51:24,176 --> 01:51:25,936
+başlarsınız.
+
+660
+01:51:26,815 --> 01:51:28,076
+Sonraki uygulama için
+
+661
+01:51:28,076 --> 01:51:30,536
+OBS üzerinden göndermiştim.
+
+662
+01:51:30,655 --> 01:51:31,695
+Hepinizde olması lazım.
+
+663
+01:51:35,115 --> 01:51:37,216
+Hepinize iyi uygulamalar diyorum.
+
+664
+01:51:37,456 --> 01:51:39,256
+Haftaya görüşmek üzere diyorum.
