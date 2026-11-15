@@ -1,0 +1,2107 @@
+1
+00:00:47,923 --> 00:00:51,043
+Evet arkadaşlar, dersimizi başlatalım.
+
+2
+00:00:52,804 --> 00:00:53,823
+Sorusu olan var mı?
+
+3
+00:00:58,771 --> 00:01:09,751
+lineer bağımlılık, lineer bağımsızlıktan bahsediyordum. İsterseniz bir özet yapayım size. Yeni bir sayfa açalım ya.
+
+4
+00:01:16,243 --> 00:01:22,543
+Şimdi bakın arkadaşlar, lineer bağımsızlık veya bağımlılık ne demek?
+
+5
+00:01:25,524 --> 00:01:36,603
+Tekrardan özet yapayım. Peşinden de birkaç örnekle bunu takviye edelim. Oldu mu? Lineer bağımsızlık veya lineer bağımlılık.
+
+6
+00:01:40,180 --> 00:01:54,540
+Ne demek? Ve bir vektör uzayı olsun. Kaç kişi var sınıfta merak ettim, buna bir bakayım. Evet, 10 kişi var. Bu 10 kişiden henüz dersi başlatmadan sormak isteyen, şey sormak isteyen var mı?
+
+7
+00:01:58,804 --> 00:02:01,003
+Sınıfta olan var mı şu anda fiziki olarak?
+
+8
+00:02:08,563 --> 00:02:24,524
+Evet, lineer bağımsızlık, lineer bağımlılık ve vektör uzayı olsun. Bu vektör uzayından bir takım vektörler alalım, tamam mı? Vektörler. Bunların sayısı kadar da skaler alalım.
+
+9
+00:02:27,584 --> 00:02:34,764
+Olmak üzere. Bakın benim adına referans denklemi dediğim bir denklem yazacağım. Şu yazdığım.
+
+10
+00:02:35,135 --> 00:02:48,795
+Verilen vektörlerin lineer kombinozomu. Değil mi? Bunu herkes biliyor. Bu vektör V'nin elemanı. Değil mi? Eşittir sıfır. Şimdi şu denklemi düşün. Referans denklemi dediğim denklem bu.
+
+11
+00:02:50,275 --> 00:02:58,096
+Şimdi bu denklem üzerinden verilen vektörlerin, yani şunları kastediyorum, lineer bağımlı veya bağımsız olması ne demek? Bunu söyleyeceğim.
+
+12
+00:02:59,987 --> 00:03:03,867
+Bu denklemin her zaman çözümü var. Bakın yazalım onu.
+
+13
+00:03:08,436 --> 00:03:09,855
+Denkleme daima
+
+14
+00:03:19,795 --> 00:03:44,615
+İçin sağlanır, değil mi? Yani ben buna ne diyorum? Triviyel çözüm diyorum, veya sıfır çözüm. Yani her zaman triviyel çözüm var. Bunun dışında bir çözüm var mı, yok mu? Yoksa, lineer bağımsız diyoruz. Yani, alfa bir, V bir, artı alfa M, V M.
+
+15
+00:03:45,204 --> 00:03:53,164
+Eşittir sıfır ancak ve ancak bu şartta sağlanıyorsa ne diyoruz?
+
+16
+00:03:55,324 --> 00:04:02,084
+İse vektörlere lineer bağımsız diyoruz arkadaşlar.
+
+17
+00:04:04,463 --> 00:04:05,623
+Aksi takdirde
+
+18
+00:04:09,780 --> 00:04:10,840
+Niner bağımlı.
+
+19
+00:04:15,027 --> 00:04:20,396
+Aksi takdir eden neyi kastediyorum sizce? Yani sıfır olmayan bir çözüm de var demek istiyorum. Yani...
+
+20
+00:04:23,411 --> 00:04:32,411
+Yani bazı, en az bir tane demektir bu, skaler için i nedir burada? Birden m'e kadar, tamam mı? İçin...
+
+21
+00:04:39,540 --> 00:04:41,420
+Sıfır olabiliyor demektir bu, tamam mı?
+
+22
+00:04:43,180 --> 00:04:46,220
+Lineer bağımlılık bu. Şimdi bunların geometrik anlamlarına bakın.
+
+23
+00:04:47,220 --> 00:04:49,300
+Geometrik olarak bunları anlarsanız,
+
+24
+00:04:54,196 --> 00:05:17,196
+Daha rahat edersiniz. Mesela, iki tane vektör verelim. V1, V2 olsun. Mesela, vektör uzayı olarak da ne alalım? V karan. Mesela, yukarıda yazdıklarımı anlamlandırmaya çalışayım sizi. Mesela, bu iki vektörün, mesela yazalım referans denklememizi. Alfa 1, V1 artı, alfa 2, V2 eşittir sıfır. Şimdi, sadece ve sadece sıfır...
+
+25
+00:05:17,651 --> 00:05:34,951
+İçin oluyorsa, bakın, sadece ve sadece, alfa 1, alfa 2, sıfır için oluyorsa, ise, yukarıda söylediğim gibi bunlar lineer bağımsızlık. Tamam da, geometrik olarak ne demek? Lineer, şurayı düzgün yazalım.
+
+26
+00:05:39,891 --> 00:06:07,111
+Bağımsız. Yani geometrik olarak şudur arkadaşlar, bakın. Bu vektörleri, doğrultu vektörü kabul eden bir çift, birbirini bir noktada kesen doğru var demektir. Yani bu iki vektör aynı doğru üzerinde değildir. Tamam mı? Bunu anlayacaksınız. Yani biri diğer cinsinden yazılamaz ki. Budur yani. Böyle iki vektör de size bir tane düzlem verir tabii ki. Tamam mı? Yani buna da piyene diyelim mesela düzlem.
+
+27
+00:06:07,860 --> 00:06:11,360
+Bir ve yalnız bir düzlem. Verir değil mi? Böyle iki vektör.
+
+28
+00:06:14,039 --> 00:06:16,459
+Lineer bağımsız olması, iki tanesi için konuşuyorum.
+
+29
+00:06:18,039 --> 00:06:30,624
+Lineer bağımlı olursa, mesela alfa bir, V1 artı alfa iki, V2 eşittir sıfır, mesela alfa iki sıfır olmadan da sıfır oluyorsa, mesela veya alfa bir sıfır olmadan, hatta...
+
+30
+00:06:30,624 --> 00:06:47,244
+Ne alfa 1, ne alfa 2. Sıfır olmadan da bu toplam sıfır oluyorsa, aksi takdirde dediğim şey bu. Yani sıfır olmayan bir çözüm varsa demektir bu. Ne demek? İşte kat sayısı sıfır olmayan terimi siz izole edersiniz burada. Bakın ne oluyor? Eksi alfa 1 ve 1.
+
+31
+00:06:48,204 --> 00:06:53,424
+Alfa 2'de sıfır olmadığına göre bunu alfa 2'ye bölebilirim demektir bu. Değil mi?
+
+32
+00:06:54,803 --> 00:07:01,263
+Buna da ne diyelim? Mesela kısaca beta diyelim. Yani beta dediğim de nedir? Eksi alfa bir, alfa iki. Yeni bir skaler yani.
+
+33
+00:07:03,543 --> 00:07:16,443
+Yani özetle, V2 ne oluyor? Yani burada V1, V2 lineer, bağımlı oluyor tabii ki ama geometrik olarak ne demek? Onu göstermeye çalışıyorum.
+
+34
+00:07:17,267 --> 00:07:29,367
+Ne demek? Biri diğerinin katı oluyor. İki tane vektör için konuşuyoruz ama bak. Yani iki tane katı oluyorsa tek bir doğru var. İki vektör bu doğru üzerinde yatık vaziyette. Yani biri diğerinin katı işte. Bu.
+
+35
+00:07:31,867 --> 00:07:40,407
+Üç tane vektör için konuşacak olursan o zaman yani geometri değişir. Mesela üç tane vektör alırsan alfa bir, v bir, alfa iki.
+
+36
+00:07:41,588 --> 00:08:08,468
+V2, alfa 3, V3, eşittir sıfır. Ancak ve ancak, işte sadece sıfır çözümü varsa, o zaman ne diyorsun? Lineer bağımsız diyorsun. E lineer bağımsız olması ne demek bunların? Üçü birden, aynı düzlemde değil demek. Değil mi? Aynı doğru üzerinde de değil, üçü. Yani olabilecek olan durum şu.
+
+37
+00:08:09,555 --> 00:08:15,875
+Yani, şöyle bir şey arkadaşlar, bu ikisinin gerdiği düzleme ait değil mesela birisi.
+
+38
+00:08:19,095 --> 00:08:23,075
+Gördüğünüz gibi bütün yönler, her bir doğrultu otonom, yani kendi başına.
+
+39
+00:08:23,815 --> 00:08:26,735
+Buyruk mu diyelim yani, diğerleri cinsinden ifade edilemiyor.
+
+40
+00:08:26,895 --> 00:08:30,695
+Mesela x, y düzlemini düşün yani, i vektörünü, j vektörünü alın.
+
+41
+00:08:30,735 --> 00:08:33,056
+Bunların birini diğer cinsinden ifade edebilir misiniz? Edemez.
+
+42
+00:08:34,644 --> 00:08:50,783
+Ama iki i vektörünü alırsan, i ile iki i, biri diğer cinsinden ifade edilebilir katı, aynı doğru üzerinde olduğu için. Değil mi? Mesela şu vektörü alın, i artı j. i artı j ile i'yi karşılaştır. Biri diğerinin cinsinden yazılamaz ki. Cinsinden demek şu, eğer iki vektör...
+
+43
+00:08:50,803 --> 00:09:14,003
+Söz konusuysa, biri diğerinin cinsinden derken, biri diğerinin katı mı? Eğer üç tane vektör söz konusuysa, biri diğer ikisinin cinsinden mi? Den kasıt şu, diğer ikisinin lineer toplamı gibi yani, lineer kombinazonu gibi yazılıyor mu? Yazılamıyor bir mesele. Tamam mı? Evet. Bunu bu şekilde hatırlattık. Şimdi mesela bu örneklerle takviye edelim bunları, tamam mı?
+
+44
+00:09:15,347 --> 00:09:27,028
+Sorusu olan varsa hiç çekinmeden sözümü bölebilir. Bunların oturması lazım çünkü bu kavramlar oturmadı mı, peşinden gelecek olan tabanı, boyutu hiçbirini anlamaz değil.
+
+45
+00:09:28,748 --> 00:09:39,087
+Haftaya mesela koordinat geçiş matrisinden bahsedeceğim. Orada lineer bağımlılık, bağımsızlık bahsi söz konusu değil ama.
+
+46
+00:09:42,803 --> 00:10:04,844
+Tabanda, boyutta bu iki argümanı çokça kullanıyoruz. R küpte, tamam, örneğimize bakalım. R küp, uzayımız bu, üç tane vektör verilmiş bakın. Üç adet vektör. Bunların lineer bağımsızlıklarını gösterin. Ne demek? İşte o referans denklem dediğim denklemi ne yapacağım?
+
+47
+00:10:05,460 --> 00:10:13,360
+Sadece ve sadece sıfır çözümü var mı, yok mu buna bakacağım. Yani burada bana zaten lineer bağımsızlıklarını söylediğine göre ben bunun sağlamasını yapacağım demektir bu soruda.
+
+48
+00:10:15,600 --> 00:10:30,019
+Yazalım. Yani neyi göstereceğim? Ancak ve ancak soru şartı koyayım şuraya, henüz göstermedim. Çünkü sadece ve sadece bu şartta mümkün olduğunu göstermem lazım. Yani sıfır olmayan çözümünün olmadığını göstermem lazım.
+
+49
+00:10:30,995 --> 00:10:41,475
+Sıfır olmayan bir çözüm olsa zaten bu denklemin lineer bağımlı olur. Değil mi? Yazalım, yani yerine koyalım. Ne demek? V1, V2, V3. Bunlar koordinatları cinsinden verildiyse yerine koyalım işte şurada.
+
+50
+00:10:43,095 --> 00:10:55,175
+İki vektörün, re küpte iki vektörün eşitliğidir şu son satır. Değil mi? Her birinin üç tane koordinatı varsa bu vektörlerin. Her bir koordinat da aslında yani lineer bir denklemdir. Bakın şunlar.
+
+51
+00:10:55,988 --> 00:11:11,188
+O zaman bu nedir? Üç bilinmeyen, üç denklemli bir homojen, lineer denklem sistemidir. Hatırlarsanız kompakt formatta şöyle yazmıştık, değil mi? Ya bu da ilk bilinmeyen nedir? İşte C1, C2, C3. Sütun matrisidir tabii ki.
+
+52
+00:11:12,608 --> 00:11:23,148
+Yani böyle bir sistemi nasıl çözüyorduysak yine o şekilde çözmeniz gerekiyor. Yani burada denklem sisteminin çözümüne girmeyeceğim tekrardan. Çünkü bunu zamanında yapmıştık, değil mi? Yani.
+
+53
+00:11:25,683 --> 00:11:33,063
+Kats sayılar maddesinin determinantını hesaplayarak mesela buna dair bir şey söyleyebildiğimizi hatırlıyoruz değil mi?
+
+54
+00:11:34,303 --> 00:11:37,703
+Kats sayılar maddesi bakın, A maddesi şudur.
+
+55
+00:11:41,587 --> 00:11:45,787
+Yani bu sistemin kas elemanısını yazamayacak öğrenci herhalde yoktur artık içimizde, değil mi?
+
+56
+00:11:46,787 --> 00:11:52,507
+E determinantına baktık, sıfır değil. E sıfır değilse homojen denklem sisteminin sadece sıfır çözümü oluyordu, değil mi?
+
+57
+00:11:54,627 --> 00:12:00,947
+E burada zaten, işte az önce yukarıda soru işareti koyduğum yer, gösterilmiş oluyor demektir yani.
+
+58
+00:12:02,387 --> 00:12:06,027
+Değil mi? Şu soru işaretini buradan kaldıralım, madem ki ancak ve ancak.
+
+59
+00:12:06,451 --> 00:12:14,132
+C1, C2, C3'ün aynı anda sıfır olmasıyla mümkün oluyor. Bu yıldız denklemi o zaman gerçekten de iddia edildiği üzere bu üç vektör lineer bağımsız.
+
+60
+00:12:16,711 --> 00:12:26,272
+Aslında burada size çok pratik bir yöntem de veriyoruz. Yani re küpte mesela üç tane vektörün lineer bağımsız mı, lineer bağımlı mı olduklarını en pratik şekilde nasıl anlarsın?
+
+61
+00:12:26,831 --> 00:12:32,012
+Satırları veya sütunları bu vektörler olacak şekilde bir matris monte edersin, determinantına bakarsın.
+
+62
+00:12:32,340 --> 00:12:42,920
+Birazdan bunu teorem olarak söyleyeceğim zaten. Determinant sıfır değilse vektörler lineer bağımsız olur. Ancak ve ancak. Determinant sıfırsa lineer bağımlı olur.
+
+63
+00:12:43,700 --> 00:12:54,020
+R üzeri dörtte dört tane vektör alırsam, bak gene dikkat edin, R üzeri dört diyorum, dört tane vektör diyorum. Yani vektörlerin sayısı ile koordinatların sayısı aynı.
+
+64
+00:12:54,700 --> 00:12:59,040
+Kare matris elde edebilmem için gerekli bu, yoksa determinattan bahsedem.
+
+65
+00:12:59,764 --> 00:13:15,543
+Değil mi? Ama mesela dikdörtgen olursa ne olur? Yani reküpte iki tane vektör alamaz mısın? Alabilirsin. O zaman sütunları bu vektör veya satıları bu vektörler olacak şekilde bir matris yazarsan kare matris olmaz, dikdörtgen olur, tamam. Determinantı yok ama rangı var.
+
+66
+00:13:17,083 --> 00:13:25,104
+İşte o rankla da verilen vektörlerden kaç tanesinin mesela en azından lineer bağımsız olduğunu söyleyebilirsin. Birazdan bunları göstereceğim, tamam mı?
+
+67
+00:13:25,875 --> 00:13:49,896
+Hazırlık olsun diye şimdiden çıtlatmış olalım. Bir sonraki örneğe bakalım. Bakın bu sefer de P2 vektör uzayını verdi bize. Şöyle sileyim ekranı rahatça görebilmeniz için. Tamam mı? 3 adet P2 neydi? Derecesi en çok 2 olan polinomların vektör uzayı değil mi? Sıfı polinomu da orada olacak şekilde.
+
+68
+00:13:53,172 --> 00:14:15,032
+Şimdi bu polinomlar istersen vektörde ister polinomde fark etmez. Yani V1 dediği bu, V2 dediği bu, V3 dediği bu. Ya bunlar lineer bağımsızlık değil mi? Hemen referans denklemini yaz. Sadece ve sadece sıfır çözümü mü var? Yoksa sıfır olmayan çözümüm de var mı? Buna bakacaksın. Yazdık referans denklemini. E tamam polinomları yerine yazdık. Bakın açık açık.
+
+69
+00:14:15,519 --> 00:14:40,759
+E, sol tarafı düzenlersek elde edeceğimiz şey tabii ki ikinci dereceden bir polinom. Sağ tarafta sıfır var, o sıfırı da sıfır polinom olarak düşüneceksin ikinci dereceden. E, o zaman bu ne demek? İki polinomun eşitliği demek tabii ki, başka ne olacak? Değil mi? İki polinomun eşitliği ne demek? Aynı dereceden iki polinomun eşitliği, aynı dereceli terimlerin kat sayıları birbirinin aynı olacak demek. Değil mi? O ne demek? İşte burada, bakın, şu.
+
+70
+00:14:41,200 --> 00:14:45,460
+Bu ne demek? Sizi sigma sistemine yönlendiriyor bu. Dikkat edin, direkt.
+
+71
+00:14:46,460 --> 00:14:55,779
+Yani iki poynamonun eşitliğinden şu homojen sisteme indirgedik, değil mi? Yani bu sistemin çözümü var mı, yok mu? Gene iş geldi, buraya dayandı.
+
+72
+00:14:57,460 --> 00:15:04,039
+Bu sistemi çözerseniz, ben çözmüyorum, çünkü daha önceden yaptığım bu özellikler, kas elemasının determinantına bakabilirsiniz.
+
+73
+00:15:06,899 --> 00:15:30,539
+Sadece trivial çözüm olduğunu görürsünüz. Lineer homojen denklem sisteminin. Bu ise nedir? En yukarıda yazdığım C1, V1, C2, V2, artı C3, V3'ün sadece ve sadece sıfır çözüm olduğunu işaret eder. Yani bu üç polinom gerçekten de idare dediği üzere lineer bağımsızdırlar. Tamam mı? Şimdi burada bir teorem var.
+
+74
+00:15:32,307 --> 00:15:35,108
+Tören 5.28. Bakalım ne diyor bu tören bize?
+
+75
+00:15:40,851 --> 00:15:48,891
+Şunu diyor arkadaşlar, bir vektör uzayında belli sayıda ama lineer bağımlı olduğu bilinen vektör alırsak ne olur?
+
+76
+00:15:48,891 --> 00:16:03,771
+Bakın, V vektör uzayında M adet ama lineer bağımlı olduğu bilinen vektörler bize verilse, bu vektörlerden bazıları diğerlerinin lineer kombinazonu olarak ifade edilebilir.
+
+77
+00:16:06,100 --> 00:16:30,560
+Neden? Çünkü eğer lineer bağımıysa bunlar yazalım. Bakın alfa 1, V1, artı alfa M, Vm. Yani bu ne demek? Bir tane sıfır olmayan çözümü var demektir. Yani bu katsayılardan en az bir tanesi sıfır olmadan da eşitliğin solundaki lineer kombinazon sıfır vektörü oluyor demektir. Hangi terimin katsayısı sıfır değilse, o terimi yalnız bırakırsın.
+
+78
+00:16:30,927 --> 00:16:40,968
+Değil mi? Onun yanındaki vektör nedir? Alfa i, v i'dir. Yani bakın, yalnız bırakırsan ne olur? Öbür tarafta eksi, alfa j, v j olur değil mi?
+
+79
+00:16:41,028 --> 00:16:48,668
+j burada birden m'e kadar ama i olmayacak tabii ki. Çünkü bir terimi çıkardık, izole ettik sol tarafta. Değil mi?
+
+80
+00:16:49,299 --> 00:17:01,699
+Gördüğünüz gibi bu, yani, sağdakilerin, yani, diğerlerinin, değil mi, sağdaki demeyelim, yani, eğer bu M tanesi lineer bağımsızlık, bunlardan bir tanesi veya bazıları, diğerlerinin işte lineer kombinazonu olarak yazılıyor demek ki.
+
+81
+00:17:02,019 --> 00:17:13,739
+Törem budur yani. İspatı kabaca budur. Bunun üzerine kuruluyor. Bir sonraki töreme bakalım. Bu sefer de diyor ki, M tane vektör ama lineer bağımsızlık oldukları bililsin.
+
+82
+00:17:14,836 --> 00:17:22,395
+Sen şimdi lineer bağımsız olan belli sayıda vektöre öyle bir vektör ilave et ki artık yeni koleksiyon lineer bağımlı olsun.
+
+83
+00:17:23,476 --> 00:17:34,336
+Bu takdirde, teorem söylediği şu, ilave edilen vektör öncekilerin, yani lineer bağımsız oldukları bilinen, verilen, bu şekilde verilen vektörlerin lineer kombinazanı olur.
+
+84
+00:17:34,336 --> 00:17:42,076
+Yani bunlar ispatları kolayca anlaşılabilecek teorem aslında. Yani ben size bunları örnekleyeyim mesela. Söylediği şey şu.
+
+85
+00:17:43,476 --> 00:18:09,976
+Bakın, her iki teorem, numaralarını hatırlamıyorum şu anda. İlk teoremin söylediği neydi? V1, VM, lineer, bağımlı. O zaman ne diyordu? Bunlardan mesela bazıları, hadi bir tanesini yazalım, VI. Diğerlerinin, işte lineer, kombinazonu gibi yazılabilir değil mi? Alfa J bölü, alfa I.
+
+86
+00:18:10,963 --> 00:18:37,864
+J eşittir birden M'e kadar ve J. Burada J, İ'ye eşit olamaz. Bunun dışındaki bütün değerlerini alır bir ile M arasında. Değil mi? Yani bunu istersen şöyle yazabilirsiniz. J eşittir birden M'e kadar beta J diyebilirsiniz mesela. Gördüğünüz gibi birisi veya bazıları, işte kaç tanesi, katsaysız sıfır olmayan kaç tane varsa her biri için bu yazdığımı söyleyebilirsiniz. Burada beta J'den kastım şudur. Alfa.
+
+87
+00:18:38,804 --> 00:18:48,423
+J, alfa, i. Alfa, i sıfır olmadığı için betalar tanımlı. Değil mi? İlk teoremin söylediği bu. İkinci teoremin söylediği.
+
+88
+00:18:53,364 --> 00:18:59,503
+Yani, örnekleme yapalım. Hadi bir önceki teorende de örnekleme yapacağımızı söyledik ama pek de öyle yapmadık.
+
+89
+00:18:59,784 --> 00:19:07,864
+Üç tane diyelim, V1, V2, V3. Mesela örnekleme yapıyorum. Lineer bağımlı ise, bu ne demek?
+
+90
+00:19:07,864 --> 00:19:16,264
+Alfa V1 artı beta V2 artı gama V3 eşittir sıfır. Yani alfa beta gama katsayılarından.
+
+91
+00:19:16,756 --> 00:19:33,816
+Hepsi birden aynı anda sıfır olmadan da bu denklem sağlanıyor demektir. Hangi katsayı sıfır değilse o katsayı baz alarak vektörü yalnız bırakın, diğerleri cinsten yazarsınız demektir. Mesela eğer bu denklem beta sıfır olmayan, burada kullandığım beta, yandaki beta j ile aynı değil tamam mı?
+
+92
+00:19:34,516 --> 00:19:44,296
+Mesela beta için sıfırdan farklı beta için sağlanıyorsa bu denklem bu ne demektir? İşte v2 eşittir. Ne olur? İşte eksi alfa bölü beta v1.
+
+93
+00:19:45,364 --> 00:20:10,364
+Eksi, Gamma bölü, Beta, V2 işte bu size bir lineer kombinazondur. Değil mi? Ya V1 ve V2'nin önündeki sayılar değil mi? Diğer teoremde şunu söylüyor. V1, V2, V3 mesela. Bunlar lineer bağımsızsa. Örnekleme yapıyorum. Yani M tane almaya gerek yok. M'i 3 aldım yani. Lineer bağımsız. Fakat siz bu koleksiyona...
+
+94
+00:20:11,316 --> 00:20:21,316
+V1, V2, V3, V4, lineer bağımlı olacak şekilde V4 eklerseniz,
+
+95
+00:20:28,723 --> 00:20:35,144
+Eklerseniz ne oluyor? Ne diyordu Tüören? Bakalım. Tekrardan göstereyim size.
+
+96
+00:20:39,763 --> 00:20:54,483
+Eklediğiniz vektör öncekilerin lineer kombinazonu, değil mi? Eklerseniz V4 ne olur? İşte alfa V1 artı beta V2 artı gamma V3 olur işte bazı alfa beta gamma sayılar için. Söylediği bu.
+
+97
+00:21:04,948 --> 00:21:07,948
+Yani bunu da geometrik olarak göstereyim size. Mesela...
+
+98
+00:21:11,412 --> 00:21:26,712
+Şu V1 olsun, tamam mı? Şu V2 olsun, şu da V3 olsun. Tamam mı? Lineer bağımsız üç tane vektör yazdım. Bunların toplamı gibi olan bir tane vektör yazalım şuraya bakın.
+
+99
+00:21:27,592 --> 00:21:38,512
+Yani alfa V1 artı beta V2 artı gama V3 şeklinde bir tane W vektörü yazdım.
+
+100
+00:21:38,751 --> 00:21:59,291
+Bu dördü, lineer bağımlı. Çünkü V1, V2, V3'ün gerdiği, uzaya ait bir tane vektör eklemiş oldum. Yani yeni bir şey eklemiş olmadım, yeni bir şey söylemiş olmadım. Veya şöyle düşünün, yani iki tane lineer bağımsız vektör alın, iki tane. Daha da basit olarak. V1, V2 lineer bağımsız olsun.
+
+101
+00:22:02,804 --> 00:22:15,723
+Öyle ki, V1, V2, V3, lineer bağımlı olacak şekilde V3 ekleyelim.
+
+102
+00:22:17,064 --> 00:22:22,203
+Bu durumda V3, V1 ve V2'nin lineer kombinazonudur. Yani bu ne demek? Geometrik olay şu demek, bakın.
+
+103
+00:22:22,844 --> 00:22:29,023
+V1 ile V2 lineer bağımsızsa, bunlar bir düzlem gelir, tamam mı? P diyelim.
+
+104
+00:22:29,748 --> 00:22:36,748
+Buna bir tane daha eklediğinizde lineer bağımlıysa sizin eklediğiniz düzlem, vektör o düzleme aittir arkadaşlar.
+
+105
+00:22:36,968 --> 00:22:39,687
+Tamam mı? Artık da üçü lineer bağımlı olmaz.
+
+106
+00:22:40,587 --> 00:22:43,008
+Değil mi? Lineer kombinazonu demek bu demek.
+
+107
+00:22:45,748 --> 00:22:46,347
+Evet.
+
+108
+00:22:52,276 --> 00:22:55,875
+Anlamadığınız bir şey varsa arkadaşlar söyleyin, ben tekrarlarım bunu, tamam mı?
+
+109
+00:22:58,596 --> 00:23:01,675
+Bir sonraki teoreme bakalım, 5.30'u kastediyorum.
+
+110
+00:23:04,016 --> 00:23:08,735
+Vektör uzayında N ve M burada birer pozitif tam sayı, N M'den küçük olmak üzere.
+
+111
+00:23:09,496 --> 00:23:12,276
+M adet vektör aldım, N tanesi N bağımlı istedim.
+
+112
+00:23:12,895 --> 00:23:14,776
+Yani size verilen vektörlerden daha azı.
+
+113
+00:23:15,380 --> 00:23:21,840
+Hepsi birden değil ama daha azının lineer bağımlı olduğunu biliyorsan, tamamı için de söyleyebilirsin, tamamı da lineer bağımlı diyebilirsin.
+
+114
+00:23:22,039 --> 00:23:25,779
+Yani söylediği şey şu, teorem 5.30'un söylediği şu arkadaşlar, bakın.
+
+115
+00:23:27,400 --> 00:23:28,900
+Bu teoremi de yazayım size.
+
+116
+00:23:30,000 --> 00:23:40,000
+Teorem 5.30'un söylediği şey şu, yani mesela V1, V2, Vn böyle gidiyor.
+
+117
+00:23:41,076 --> 00:23:59,336
+nm'den küçük dedik ya, olsun dedik ya, vektörleri için eğer v1, vn, lineer bağımlı ise, bakın yani şu parçası lineer bağımlı ise,
+
+118
+00:24:03,571 --> 00:24:05,171
+Tamamı lineer bağımlı olur.
+
+119
+00:24:08,884 --> 00:24:15,923
+Yani daha geniş olan koleksiyonda aynı şekilde lineer bağımlı olur. Yani karakterinden bir şey kaybetmez.
+
+120
+00:24:18,563 --> 00:24:19,663
+Neden acaba?
+
+121
+00:24:24,852 --> 00:24:46,252
+Yani mesela örnek, örnek diyelim yani. V1, V2, V3 vektörleri için, mesela vektörleri için, bu teoremleri böyle, yani düşük boyutlu uzaylarda daha mümkün olduğu kadar az sayıda vektör için ne gösterdiğini görürseniz daha iyi anlarsınız.
+
+122
+00:24:46,712 --> 00:24:50,732
+Şu an yaptığım da o zaten. V1, V2, V3 vektörleri için.
+
+123
+00:24:51,087 --> 00:24:54,548
+Mesela ve ilk ikisi lineer bağımlı hissi.
+
+124
+00:25:01,619 --> 00:25:03,960
+V3'te 3'ü birden lineer bağımlı.
+
+125
+00:25:06,160 --> 00:25:07,460
+Ne demek bu?
+
+126
+00:25:09,559 --> 00:25:12,339
+Geometri şudur arkadaşlar, bakın, 3 tane vektör var.
+
+127
+00:25:13,039 --> 00:25:14,899
+İkisi lineer bağımlı. Yani bu ne demek?
+
+128
+00:25:16,559 --> 00:25:19,680
+Bakın, V1, V2.
+
+129
+00:25:31,827 --> 00:25:41,007
+Peki, üçüncüyü kattığınızda, üçüncü de lineer bağımlı oluyorsa, bir dakika, şöyle bir dakika, üç tane vektör var, ikisi lineer bağımlı.
+
+130
+00:25:41,967 --> 00:25:50,867
+Üçü de lineer bağımlı olur diyor. Neden? Şöyle bir şey mi anlayacaksınız? Bakın, alfa, V1 artı beta, V2 artı gama, V3 eşittir sıfır.
+
+131
+00:25:58,740 --> 00:26:12,740
+Lineer bağımlı olması ne demek? Yani bir tane, mesela beta sıfır olmayan beta içinde sağlanıyorsa, siz burada Gamayı sıfır da alsanız bir şey değişmez. Değil mi? Gene sıfır olmayan bir çözüm olurdu yani.
+
+132
+00:26:14,359 --> 00:26:24,419
+Yani, şöyle diyebilirsiniz, yani alfa ve gamma sıfır olsa da, beta sıfır olmadan da gene sağlandığı için sıfır olmayan bir çözüm var, gene lineer bağımlı olmuş oluyor.
+
+133
+00:26:33,140 --> 00:26:34,400
+Evet, söylediği bu.
+
+134
+00:26:42,099 --> 00:26:44,639
+Sonraki teoreme bakalım. Teorem 5.31'e.
+
+135
+00:26:55,763 --> 00:27:05,943
+En boyutlu demiş, arkadaşlar henüz burada vektör uzayın boyutunu tanımlamadığımız için, bu biraz tuhaf oluyor burada, tamam mı? Önce boyut kavramını tanımlamadı ki, tanınamadığı bir şeyi kullanıyor yani.
+
+136
+00:27:07,023 --> 00:27:18,903
+Değil mi? Boyutu birazdan söyleyeceğim. Tanımlamadığı için burada tuhaf duruyor. Siz onu isterseniz R üzeri N gibi düşünün. Çünkü en boyutlu her uzay R üzeri N'e izomofdur. Yani aynıdır diyelim kabaca.
+
+137
+00:27:19,231 --> 00:27:46,492
+Size, yoksa izomorfizma nedir, bunlardan bahsetmem gerekiyor. Lineer bir transformation'ın, dönüşümün izomorfizma olması ne demek, vesaire vesaire. Oralara girmeyelim, kabaca, yani öklü tuzayı diyelim, tamam mı? Burada söylemek istediğin ne? En boyutlu bir vektör uzayında, m tane vektör alırsan, yani, o zaman boyutu şöyle düşün, yani, vektörün koordinatları olarak düşün, tamam mı? Öyle değil tabii ki. Tabii ki öyle değil de, koordinat sayısı değil yani, boyut denen şey o değil.
+
+138
+00:27:48,339 --> 00:28:12,719
+m tane vektör var. Bu vektörlerin her birinin n tane koordinatı olduğunu düşünün. Tamam mı? Böyle vektörleri satır veya isterseniz sütün kabul eden bir matris monte edebilirsiniz her zaman. Bu n ve m sayıları birbirinin aynı değilse bu monte ettiğiniz matris dikdörtgen matris olur. Öyle değil mi? Dikdörtgen matris olur.
+
+139
+00:28:13,107 --> 00:28:31,247
+Dikdörtgen bir matrisse, determinantından bahsedemezsin ama rangından bahsedebilirsin. Bu n ve m sayılarından hangisi büyükse, matrisin rangı ondan daha büyük olamayacağına göre.
+
+140
+00:28:31,707 --> 00:28:40,647
+Değil mi? Bakın şöyle, a matrisini mont ettik. Teorem ne diyor? Önce ona bakalım. Bu matrisin bir rangı var, değil mi?
+
+141
+00:28:40,980 --> 00:28:43,820
+kare matris olmayabilir ama rangı var.
+
+142
+00:28:45,560 --> 00:28:47,060
+Determinantı yoksa da rangı var.
+
+143
+00:28:48,140 --> 00:28:50,140
+Rangını bulduk diyelim, ona da R diye.
+
+144
+00:28:50,880 --> 00:28:51,280
+Tamam mı?
+
+145
+00:28:52,200 --> 00:29:00,360
+İşte, M tane satırından rangı kadar olanı, R tanesi her halükarda lineer bağımsızdır.
+
+146
+00:29:00,460 --> 00:29:01,220
+Tüorimiz söylediği bu.
+
+147
+00:29:01,220 --> 00:29:02,520
+Yani örnekleme yapayım.
+
+148
+00:29:02,720 --> 00:29:06,820
+Mesela, yani ne diyoruz?
+
+149
+00:29:06,880 --> 00:29:08,220
+Mesela R üzeri 4'te,
+
+150
+00:29:09,236 --> 00:29:31,415
+Üç tane vektör aldınız diyelim. V1, V2, V3. Yani bu ne demek? Her birinin dört tane koordinatı var, tamam mı? V1, V2, V3 bakım. Üç çarpı dörtlük bir maddes. Bunun rangı en fazla ne olur? En fazla üç olur. Yani dört olması mümkün değil ki. Siz bunu indirgenmiş forma da getirseniz, yani gene üç tane satır olur. İndirgenmiş hal. Değil mi?
+
+151
+00:29:32,211 --> 00:29:59,672
+Bazıları sıfır olur, komple sıfır olur veya olmaz meselesi ama üç satır vardıysa indirgenmiş hale geldikten sonra dört olmaz, iki olmaz. Değil mi? Yani rangı en fazla üç. Bir olabilir, iki olabilir, üç olabilir. Hangisi? Ona bakarsınız rangını hesaplayarak. Yani üç satırı var, üçü birden lineer bağımsız olabilir ya da iki tanesi veya bir tanesi olabilir değil mi? İşte teoremi söyledi bu.
+
+152
+00:30:00,000 --> 00:30:25,980
+satırını bulursan, kaç tanesinin aralarında lineer bağımsız olduklarını tespit de edersin diyor. İkinci seçene bakalım. Rank sayısı M'den küçük olduğunda, yani satır sayısından küçük olduğunda, dört satırı varken mesela, rangı üç ise, dört satırın üç tanesi lineer bağımsızsa, o zaman kalan satır için ne diyeceksin? Bu üç tane lineer bağımsız satırın lineer kombinazonu gibi yazılabilir diyeceksin. Değil mi?
+
+153
+00:30:26,740 --> 00:30:48,700
+Eşit olduğunda ne olur? N ve M sayıları. O zaman bu, yani matris kara matrisi olur. Satırları veya sütunlarının minner bağımsız olması gerek ve yeter koşul determinantının sıfır olmaması. Bak işte test sınavında kullanacağınız pratik, en pratik yöntem bu. Tamam mı? Bunu tersinden okursan.
+
+154
+00:30:49,971 --> 00:30:54,711
+Lineer bağımlı olmaları için gerek ve yeter koşulu nedir dersen bana cevap vermek isteyen var mı sizde?
+
+155
+00:30:57,172 --> 00:30:58,811
+N, M'ye eşit olduğunda.
+
+156
+00:31:03,443 --> 00:31:08,043
+Bunların lineer bağımlı olması için gerek ve yeter koşu nedir desem,
+
+157
+00:31:12,980 --> 00:31:14,640
+determinantı sıfır diyeceksin.
+
+158
+00:31:16,160 --> 00:31:16,700
+Değil mi?
+
+159
+00:31:22,099 --> 00:31:36,459
+Evet, son seçeneğe bakalım. Eğer rank sayısı M'den küçük ise, M tanesi de lineer bağımlı ise, yani 4 satırlı bir matrisim var ama 4 çarpı 3'lük bir matris olduğunu düşün. Tamam mı?
+
+160
+00:31:38,059 --> 00:31:49,579
+4 satırlı bir matris, 4 tane satırın 4'ü de lineer bağımlı. Rank da 4'den küçük, N'de M'den küçük.
+
+161
+00:31:50,996 --> 00:32:18,076
+Dolayısıyla M tanesi lineer bağımlı. Bu dörttense ilk üçünü doğru anlamanız bile sizin için yeterlidir. Biraz kafa karıştırıcı gibi duruyor ama değil. Bakın özetleyeyim tekrar. Matris eğer diktörkense, bir kere bak, kare matris varsa elinde o çok kolay. Onu isterseniz tek celsede çıkartalım aradan. Kare matris varsa matrisin satırları veya şütunları vektör olarak düşünebilir misin? Düşünebiliriz. Bunlar lineer bağımlı mı, bağımsız mı?
+
+162
+00:32:18,451 --> 00:32:45,511
+Nasıl anlayacaksın? Matrisin determinantını hesaplayarak. Determinant sıfır değilse, satırları ya da istersen, sütunları lineer bağımsız. Determinant sıfırsa lineer bağımlı, bu değil. Peki matris kare matris değil de, diktörkense, bunun satırlarından veya sütunlarından kaç tanesinin lineer bağımlı, kaç tanesinin lineer bağımsız olduğu bilgisine nasıl erişeceğim diye soruyorsan, teoremin sana söylediği şu, rangını hesapla. Rank sayısı kadar.
+
+163
+00:32:46,771 --> 00:33:12,091
+Lineer bağımsız, kalanları da bunların lineer kombinozonu şeklinde yazılır. Yani ne demek istiyor bunu söyleyince? Satırların tamamı lineer bağımlı olmuş oluyor değil mi? Daha az sayıda olanı lineer bağımsız olabilir ama hepsini birlikte düşünecek olursan lineer bağımlı. Kalanı öncekilerin lineer toplamı gibi yazılabiliyor dediğin anda, bütün koleksiyon ne oluyor? Lineer bağımlı oluyor. Budur yani, özeti budur bu diyorum.
+
+164
+00:33:15,188 --> 00:33:29,508
+Evet, Reküp'e bakalım, örnek 5.32'ye bakalım. Bakın, az önce söylediğim uygulaması, 3 boyutlu uzayda Reküp'te bildiğiniz 3 boyutlu öklük uzayında 4 adet vektör vermiş.
+
+165
+00:33:30,188 --> 00:33:37,988
+Bu 4 adet vektörü satır veya istersen sütun kabul eden bir matris monte edelim. Edelim bakalım şu A matrisini. Ne olur?
+
+166
+00:33:38,708 --> 00:33:43,607
+Boyutu kaç bu matrisin arkadaşlar? Satır olarak yazarsam A, B, C, D'yi. Boyutu kaç bunun?
+
+167
+00:33:50,387 --> 00:34:06,887
+4 çarpı 3. Bu matrisin rangının kaç olduğuna bakacaksınız, değil mi? Soru ne diyor bize? Reküpte A, B, C, D vektörlerinin lineer bağımlı olduğunu gösteriniz.
+
+168
+00:34:07,787 --> 00:34:12,467
+Lineer bağımlı, yani bu matrisin bütün satırlarının lineer bağımlı olduğunu gösteriniz.
+
+169
+00:34:13,652 --> 00:34:19,652
+Bunların arasında maksimum sayıda vektör alarak geriye kalanları bunların lineer kombinazonu olarak yazınız.
+
+170
+00:34:20,211 --> 00:34:26,992
+Bu yani klasik sınav sorusu ama zorlarsan test sınav haline de getirilebilir, test sınav sorusu haline getirilebilir.
+
+171
+00:34:26,992 --> 00:34:31,632
+Bakın, 4 çarpı 3'lük matrisini monte edersin.
+
+172
+00:34:33,051 --> 00:34:37,871
+Kare matris olmadığı için determinantı kullanamıyorum ama matrisin rangını kullanabilirim.
+
+173
+00:34:38,324 --> 00:34:42,404
+Rangını kullanabilmen için indirgenmiş forma dönüştürmen lazım mı? Evet.
+
+174
+00:34:43,543 --> 00:34:46,604
+Dönüştürdük mü burada? Bakın dönüştürmüş. İşte şu matris.
+
+175
+00:34:47,724 --> 00:34:50,204
+Bir tane satır sıfır, o zaman rangı kaç bunun? Üç.
+
+176
+00:34:51,024 --> 00:34:51,963
+Kaç satırı var? Dört.
+
+177
+00:34:51,963 --> 00:34:55,484
+Bu ne demek peki? Dört satırdan üçü.
+
+178
+00:34:56,164 --> 00:35:02,284
+Yani bana verilen A, B, C, D vektörlerinden üç tanesi lineer bağımsızlık.
+
+179
+00:35:03,476 --> 00:35:09,036
+Peki o 3 vektör kimdir sorusunu sorabilir misin bu arada? Sorabilirsin. Onu söylüyor mu? Hayır.
+
+180
+00:35:10,036 --> 00:35:15,195
+Yani rangın 3 olduğu, o 3'ünün kim olduğu anlamına gelmiyor ki. Sadece sayılarını söylüyor zaten.
+
+181
+00:35:16,716 --> 00:35:21,076
+Kim olduklarını söylemiyor. Bunu nasıl anlayacaksın? Orada kendin manuel bir müdahale yapmak zorundasın.
+
+182
+00:35:22,735 --> 00:35:30,716
+Yani rank 3 olduğuna göre 3 çarpışlık, kare alt matrisleri çekersen bu A matrisin içinden, kaç tane var onlardan? 4 tane var. Değil mi?
+
+183
+00:35:31,572 --> 00:35:42,332
+O dört tane üç çarpışlık alt matrislerden determinantı sıfır olmayan hangileri ise onların satırları olan vektörler, üçer vektör, lineer bağımsız olur.
+
+184
+00:35:43,332 --> 00:35:52,252
+Değil mi? Mesela bir tane seçelim mesela. Şunu alsak mesela. A, B, C'yi alsak. Şöyle yapalım arkadaşlar bakın.
+
+185
+00:35:52,788 --> 00:36:02,887
+Şu üçünü alsak mesela, şu üç çarpı üçlük bloğu alsak, yani birinin satırı A, ikinin satırı B, üçün satırı C olacak şekilde. Bu üçlük bloğu alsak, bunun determinantı nedir?
+
+186
+00:36:07,539 --> 00:36:20,100
+Sıfırdır değil mi? Bir tane sütün komple sıfır mesela burada. Ya A, B, L, L, L, L, N, R bağımsız olduklarını söyleyebilir misin bu durumda? Bu soruma cevap vermek isteyen var mı?
+
+187
+00:36:31,827 --> 00:36:38,367
+Ben sorayım o zaman size. [öğrenci]'e soralım mesela. Takip edebiliyor musun [öğrenci]?
+
+188
+00:36:46,547 --> 00:36:48,167
+[öğrenci]'ya soralım.
+
+189
+00:36:54,483 --> 00:36:56,923
+Hadi ben sormayayım, içinizden birisi söylesin.
+
+190
+00:37:00,980 --> 00:37:06,260
+Sayfayı getirip tekrar sorarız soruyu, yani bakarız tekrardan. Var mı söylemek isteyen?
+
+191
+00:37:08,420 --> 00:37:16,960
+A, B, C, D vektörleri verdim ama bu dört vektörden üçünün lineer bağımsız olduklarını tespit ettim rangı hesaplamak suretiyle.
+
+192
+00:37:17,340 --> 00:37:22,619
+Ama o üç vektörün hangisi olduğunu bilmiyorum. A, B, C olmadığını gösterdim. Nasıl yaptım onu?
+
+193
+00:37:28,788 --> 00:37:54,988
+Evet, bu sınıfta maalesef biraz ilgi sorunu yaşıyoruz. Öbür sınıflar böyle değil yani. Öbür sınıflar böyle değil, bu kadar değil. Şimdi bakın. A, B, C, D'den 3'ü lineer bağımsız. Ama hangi 3'ü? A, B, C olmadı. Tamam mı? A, B, D'ye bakalım. O da ne demek?
+
+194
+00:37:55,731 --> 00:38:01,032
+Yani şunu alacaksın, şunu alacaksın, bir de bunu alacaksın. Bu 3x3'lük matrisin determinantına bakacaksın.
+
+195
+00:38:05,811 --> 00:38:24,492
+O da şudur, bakın, ABD. Satırlar ABD ve Vektörü olan şu üç tükmati yazdım, determinantı sıfır değil. Sıfır değilse ABD, işte lineer bağımsız olan üç vektör. Diğer olasılıklara da siz bakın, tamam mı? Bakın, tablo şu.
+
+196
+00:38:33,876 --> 00:38:38,336
+A, B, C, D vektörleri verdim. Nerede? R üzeri 4'te. Değil mi?
+
+197
+00:38:40,216 --> 00:38:45,316
+Nin, 3 tanesi lineer bağımsızlık.
+
+198
+00:38:48,296 --> 00:38:49,576
+Ama hangi 3'ü?
+
+199
+00:38:51,096 --> 00:38:51,936
+A, B, C mi?
+
+200
+00:38:53,016 --> 00:38:54,036
+A, B, D mi?
+
+201
+00:38:56,516 --> 00:38:57,896
+B, C, D mi?
+
+202
+00:39:00,916 --> 00:39:18,956
+Başka ne var arkadaşlar? A, C, D mi? Hangisi? Hangi üçü? Şunun lineer bağımsız olmadığını gördük. Değil mi? Neden? Bir determinant yazdık. Satırları A, B ve C olan sıfır olduğu için. Olmadı. A, B, D'ye baktık mı? Oldu. Neden?
+
+203
+00:39:21,715 --> 00:39:27,956
+A, B, satırları A, B ve D vektörleri olan matrisin determinantı sıfır olmadığı için. Şu ikisine de siz bakın. Oldu mu?
+
+204
+00:39:31,411 --> 00:39:51,572
+Peki, mesela şuna baktık. A, B ve D'nin lineer bağımsızlıklarını gösterdik. Bu ne demek? Kalan vektör hangisi? C. İşte C onların lineer kombinazonu gibi yazılıyor. Alfa çarpı A vektörü, beta çarpı B vektörü, artı gama çarpı D vektörü. Tamam mı? Budur.
+
+205
+00:40:01,076 --> 00:40:01,635
+Evet.
+
+206
+00:40:06,228 --> 00:40:09,688
+Bir soru daha var, onu da çözelim. Ondan sonra bir ara vereyim isterseniz.
+
+207
+00:40:10,447 --> 00:40:14,487
+Biliyorsunuz, hep söylüyorum, bugün 6 saat dersim var peş peşe, yorucu oluyor gerçekten yani.
+
+208
+00:40:14,548 --> 00:40:21,268
+Bu saatlerde artık iyice yorgunluk kendini gösteriyor. Örnek 5.33'e bakalım.
+
+209
+00:40:23,068 --> 00:40:28,467
+R üzeri 4'teyiz. Kaç tane vektör vermiş bize? 3 tane. Tamam mı?
+
+210
+00:40:28,788 --> 00:40:31,527
+Bu 3 vektörün lineer bağımlı olduklarını gösteriniz.
+
+211
+00:40:32,340 --> 00:40:38,920
+Ve bunlar arasından maksimum sayıda vektör alarak geriye kalanları bunların lineer kombinezonu olarak yazın.
+
+212
+00:40:39,440 --> 00:40:44,259
+Ne demek bu? Şöyle ekranı bir sileyim isterseniz.
+
+213
+00:40:46,900 --> 00:40:52,579
+Şöyle, az önceki örnekte ne yaptıysam bunda da aynı şeyi yapacağım. Özü itibariyle. Tamam mı?
+
+214
+00:41:01,619 --> 00:41:29,516
+Evet, şimdi bakın, satırları A, B ve C olan bir A matrisi monte ettim. Tamam mı? 3x4'lük bir matris. Bu matrisin rangının 4 olma ihtimali yok. En fazla 3 olur. Ama 2 de olabilir. Değil mi? O zaman bu matrisin rangı kaç? İndirgenmiş forma getirdik. Hangisi o matris? İşte bu matris. 0 olan bir tane satır var. O zaman...
+
+215
+00:41:29,972 --> 00:41:51,732
+Rangı 2 demek ki. Değil mi? Rangı 2. Bu ne demek? A'da 3 tane satır var. Satırları da A, B, C vektörleri. Ama bunlardan rank 2 olduğu için sadece 2 tanesi lineer bağımsız. Değil mi? Ama hangi ikisi? Bak gene aynı şey. Hangi ikisi? Bu soruda da gene benzer bir şekilde.
+
+216
+00:41:53,532 --> 00:41:55,312
+Bakın bu soruda da.
+
+217
+00:41:57,396 --> 00:42:13,296
+A matrisi kurduk, tamam mı? Yani 1, 2, 3, A, B ve C matrisleri, yani pardon vektörleri, A, B, C neredeydi? R üzeri 4'teydi, değil mi? Bu matris 3 çarpı, 4'lük bir matris o zaman. Rangının 2 olduğunu gösterdik. Bu ne demek?
+
+218
+00:42:14,896 --> 00:42:24,396
+A, B, C'nin ikisi. Lineer bağımsız. Nereden biliyorum bunu? Teoremden biliyorum, teorem.
+
+219
+00:42:25,076 --> 00:42:51,535
+Değil mi? Diğeri bunların lineer kombinazonu olarak yazılır diyor bana diyor. İ ile hangi ikisi? Yani A, B mi? A, C mi? B, C mi? Hangi ikisi? Değil mi? Hangi ikisi lineer bağımsız? A, B lineer bağımsızsa o zaman ne diyeceksin? C bunların lineer kombinazonu olarak yazılır.
+
+220
+00:42:51,764 --> 00:43:17,884
+Eğer A ile C lineer bağımsız ise, o zaman B bunların lineer kombinazonu olarak yazılır. Aynı şekilde benzer şeyler B ve C için söylenebilir. Eğer lineer bağımsız ise, bakın şimdi nereden anlayacağım? Mesela A, B ikilisine bakalım. Lineer bağımsız olanlar bunlar mı? A, B, C için de lineer bağımsız olan çift bu mu değil mi? A ve B matrisin birinci satırıydı, birinci ve ikinci satırıydı değil mi?
+
+221
+00:43:18,804 --> 00:43:24,244
+Rank 2 olduğuna göre demek ki 2x2'lik bloklara, alt matislere odaklanacağım.
+
+222
+00:43:25,024 --> 00:43:32,903
+Yani mesela şunu alacak olursan bunun determinantı 0 ama bundan başka 2x2'lik matisler de var. Öyle değil mi?
+
+223
+00:43:35,124 --> 00:43:38,504
+Şunu alırsan mesela determinantının 0 olmadığı belli mi?
+
+224
+00:43:43,155 --> 00:44:01,556
+Evet hocam. O zaman ne diyeceksin? A, B, lineer, bu çift lineer bağımsız diyeceksin. O zaman C ne olacak? Bunların lineer toplamı olacak. Tamam mı? Yani A ile B lineer bağımsız ama A, B, C lineer bağımlı. Bu ne demek? C bu ikisinin lineer toplamı gibi yazılır demek.
+
+225
+00:44:02,420 --> 00:44:10,719
+Peki o toplamdaki kat sayılar nedir diye merak ediyorsan, işte orada biraz, yani ne yapacaksın, kolları sıvıyıp hesap kitap yapacaksın biraz.
+
+226
+00:44:12,420 --> 00:44:17,179
+Ha şunu da söyleyeyim, yani lineer bağımsız olan yegane çift bu mudur, değil midir?
+
+227
+00:44:18,239 --> 00:44:21,339
+Ha ona bakarsın, bak bu çift için lineer bağımsız olduklarını teyit ettik mesela.
+
+228
+00:44:21,339 --> 00:44:27,339
+Ben ne dedim? A, C'ye bak, D, C'ye bak, değil mi? Mesela...
+
+229
+00:44:27,572 --> 00:44:50,172
+Yani daha koyu bir renk kullansak daha güzel olacak. Mesela BC'ye bakalım. B ve C son iki satırı matrisin. Bu son iki satıra odaklandığında bunun içinde determinant sıfır olmayan 2x2'lik bir blok var mı? Ben hemen şurada görüyorum mesela. Bak şu blokun determinantı, yok bu olmaz.
+
+230
+00:44:51,291 --> 00:44:53,211
+Hocam sağdaki 2 sıfır olmuyor.
+
+231
+00:44:54,052 --> 00:44:54,331
+Evet.
+
+232
+00:44:54,804 --> 00:45:11,964
+Şunu ortadakine alırsan bu da olmuyor. Aynen. Dediğim gibi sağdaki iki taneyi alırsan, ekşi üç artı dört sıfır değil. O zaman B, B ve C. Buna da soru işaretini kaldırır. Bu da lineer bağımsız. Bu ne demek? A, B ve C'nin toplamı gibi yazılır. Yani lineer toplamı. Yani bak.
+
+233
+00:45:12,467 --> 00:45:33,467
+Hemen toplam deyince böyle bir şey anlama. Bak, böyle de olabilir. Yani, lineer toplam olarak yazarsın, kat sayıları sırasıyla, B ve C'nin kat sayıları çok özel olarak bir bir çıkabilir, çıkmaz demiyorum. Ama sen her zaman toplamından, lineer toplamından bunu anlıyorsan yanlış anlıyorsun derim. Tamam mı? Yani kat sayılarıyla beraber anlayacaksın. Tamam mı? Tamam, B ve C için...
+
+234
+00:45:34,996 --> 00:45:42,996
+Bunlar da lineer bağımsız. Geriye ne kalıyor mesela? Başka hangi çift vardı? AC mesela bunun içinde oluyor mu? A ve C'ye bakalım. Ekranı temizleyeyim.
+
+235
+00:45:45,036 --> 00:45:49,115
+A ve C için mesela 2x2'lik determinant 0 olmayan bir blok bulabiliyormuşuz.
+
+236
+00:45:51,956 --> 00:45:53,195
+Gene aynı şekilde bak.
+
+237
+00:45:53,296 --> 00:45:54,096
+Sağdan 2.
+
+238
+00:45:54,416 --> 00:45:58,755
+Hep de sağda kümelenmiş ya bunlar. Değil mi? Gene bu bak.
+
+239
+00:45:59,896 --> 00:46:01,076
+A birinci satır C.
+
+240
+00:46:01,684 --> 00:46:10,344
+Üçün satır bildiğiniz gibi. Mesela bir, eksi bir, iki, eksi üçü alırsan, değil mi? Bu determinant sıfır değil. Sıfır değilse A ve C içinde oluyor demek ki.
+
+241
+00:46:11,344 --> 00:46:18,983
+Yani bu ne demek biliyor musunuz? Bu soruda, bu verilen üç vektörden hangi ikisini alırsan al, lineer bağımsızlık.
+
+242
+00:46:19,724 --> 00:46:24,384
+Diğer vektörde bunların lineer kombinazonu olarak yazılıyor demektir. Öyle mi değil mi?
+
+243
+00:46:26,844 --> 00:46:27,624
+Evet öyle.
+
+244
+00:46:29,139 --> 00:46:29,599
+Emi?
+
+245
+00:46:35,188 --> 00:46:38,028
+Yani ben mesela size buradan bir test sorusu üreteyim mi şimdi?
+
+246
+00:46:43,123 --> 00:46:45,723
+Test sorusu üreteyim size bak tamamen spontane.
+
+247
+00:46:46,923 --> 00:46:47,543
+Spontane.
+
+248
+00:46:51,507 --> 00:47:18,367
+Yani ne dedik burada mesela? İkisi lineer bağımsız. Hangi ikisi? Bu ikisi tamam dedik, buna da tamam dedik, buna da tamam dedik. Yani hangi çifti alırsan al? Lineer bağımsız. O zaman şöyle diyelim soruyor. Aşağıdakilerden, yani A, B, C verilsin falan filan onları yazmıyor. Aşağıdakilerden hangisi? Ne diyelim? Seçenek yazalım. B, C.
+
+249
+00:47:19,315 --> 00:47:42,795
+A, B olsun. Lineer bağımsız olan çiftleri yazıyorum. B, C, yani sadece diyelim, tamam mı? Sadece, sadece, sadece koyalım. D, hepsi olsun, tamam mı? E, hiçbiri olsun. Aşağıdakilerden hangisi doğrudur desek, hangi seçenek doğru? Sadece A, B, lineer bağımsız.
+
+250
+00:47:45,907 --> 00:47:50,728
+Hangisi doğru olur arkadaşlar o zaman? Böyle bir soru monte kurmuş, yapmış olsaydın?
+
+251
+00:47:52,068 --> 00:47:52,628
+Hepsi.
+
+252
+00:47:53,228 --> 00:48:11,268
+Hepsi değil mi? Sadece AB lineer bağımsız dersen eksik. AB dışında da lineer bağımsız olan çiftler olduğunu gördük. Bu soru yani eksik, yanlış yani. İki, eksik, yanlış. Bu da yanlış. Hepsi lineer bağımsız mı? Doğru. Hiçbiri, bu hiç doğru değil zaten.
+
+253
+00:48:12,307 --> 00:48:13,947
+Bak, alsana soru işte.
+
+254
+00:48:16,607 --> 00:48:17,367
+Alsana soru.
+
+255
+00:48:22,260 --> 00:48:26,220
+Evet. Arkadaşlar, burada bir ara vereyim mi?
+
+256
+00:48:28,660 --> 00:48:29,060
+Tamam hocam.
+
+257
+00:48:29,060 --> 00:48:40,180
+7 dakika ara vereyim. Mesela saat 15.53 gösteriyor. Tamam mı? Saat başında kaldığım yerden devam edeyim. Bir su içeyim bu arada. 16'da devam edelim. Oldu mu? Tam 16'da kaldığım yerden devam edelim.
+
+258
+00:58:53,907 --> 00:59:03,307
+Evet arkadaşlar, devam edelim. Nerede kalmıştık bir bakalım. Evet, bunu bu şekilde test sorusu haline getirebiliriz dedik. Sorunun aslına dönelim.
+
+259
+00:59:07,251 --> 00:59:11,392
+Evet, sayfayı gitti başa aldı. Kaldığım yere bir döneyim.
+
+260
+00:59:29,844 --> 00:59:36,983
+Evet, bu örnekteydik sanırım. Ya da bu değil, bir sonraki değil mi? Evet, buydu.
+
+261
+00:59:41,235 --> 00:59:50,235
+Şimdi mesela AB vektörlerinin, mesela lineer bağımsızlıklarını gördük, bu durumda C vektörü bunların lineer kombinazonu olarak yazılabilir.
+
+262
+00:59:50,675 --> 00:59:57,375
+Yazılabilir de o lineer kombinazon tam olarak nedir? Yani A ve B'nin başındaki katsayılar kimdir?
+
+263
+00:59:57,595 --> 01:00:01,295
+Mesela sorusunu sorarsan ne olacak? Orada hesap kitap yapman lazım. Şunu kastediyorum yani.
+
+264
+01:00:02,075 --> 01:00:06,355
+Yani K1, K2, K3 sayılarını bulman lazım. Onu bulabilmen için bu sistemi çözmen lazım.
+
+265
+01:00:06,719 --> 01:00:14,419
+homojen, lineer denklem sistemidir, değil mi? Kare olmadığına göre katselamatisi, ne yapacaksın? Rankları işin içine sokacaksın, değil mi?
+
+266
+01:00:15,019 --> 01:00:23,759
+Hatırlarsanız katselamatisi ve genişletilmiş katselamatisinin ranklarını kıyas ederekten çözümün olup olmamasına dair bir şeyler söylüyorduk, değil mi? Öyle bir prosedür vardı elimizde.
+
+267
+01:00:24,519 --> 01:00:31,659
+Hatırlatma yapayım size bunu. Yani bunu çözerseniz, bakın ben çözmeyeceğim çünkü bunları daha önceden yaptık.
+
+268
+01:00:32,755 --> 01:00:45,115
+Çözerseniz yukarıdaki sistemi, bulacağınız şey bu. K1 artı K3 sıfır, K2 artı K3 sıfır. Yani ben buradan ne anlıyorum? K3 keyfi değişken.
+
+269
+01:00:45,972 --> 01:01:10,672
+K1 ile K2 de K3 cinsinden yazılıyor. Değil mi? Yani bir keyfi değişken cinsinden sonsuz tane çözümü varmış demek ki yukarıdaki sistemi. Bakın onu da sayfayı şöyle hafif kaydırayım. Hem sistemi görün hem de bir sonraki sayfada onun çözümünü görün. Tamam mı? Sigma'ya bakın. Bir de onun çözümüne bakın. Tamam mı? Yani burada K3'ün keyfi değişken olduğu belli. Ben nasıl yazıyordum onu hatırlarsanız. Şöyle yazıyordum değil mi?
+
+270
+01:01:11,284 --> 01:01:36,844
+K2, K3 cinsinden yazılıyor. Nasıl? Böyle. K1 de aynı şekilde. Değil mi? Mesela sıfır çözüm her zaman var mı? Sistem homojen ya. Yani bakın sistemimiz homojen, değil mi? Sıfır çözüm her zaman var. Peki bu K3 keyfi değişken cinsinden sıfır çözüm hangisi? K3'e sıfır verirsen bulursun. K3'e sıfır verirsen K1'de, K2'de sıfır olur.
+
+271
+01:01:37,811 --> 01:02:04,191
+Her zaman mevcut olan çözüm işte bu. Ama bunun dışında da çözüm var. Mesela sıfır olmayan bir çözüm hangisidir? İşte K3'e sıfır olmayan bir sayı değeri verirsen mesela bir, K1, K2, eksi bir bulursun. Bu durumda yukarıdaki toplamda bakın, şu toplamda K1 yerine eksi bir koy, K2 yerine eksi bir koy, K3 yerine bir koy.
+
+272
+01:02:04,532 --> 01:02:24,192
+Yani ben zaten C'yi AB cinsinden yazmak istemiyorum. C eşittir, ne olacak? A artı B. Dedim ya, lineer kombinazondaki AB'nin katsayılarının ne olduğunu somut olarak görmek istiyorsan, bu hesap kitap işini yapman gerekiyor. İşte yaptık, o zaman katsayılarını bir bir bulduk.
+
+273
+01:02:25,780 --> 01:02:35,500
+Bu tek türlü yazılış mı? Değil. Yani K3 yerine başka, ya sistemin çözümleriyle alakalı, K3 yerine başka bir sayı verirsen, ne olur?
+
+274
+01:02:39,603 --> 01:02:40,103
+Bakalım.
+
+275
+01:02:44,532 --> 01:02:58,972
+Ama özünde aynı şey gibi duruyor. Bakın, K1A, K2B artı K3C eşittir sıfır. Burada A ile B'nin lineer bağımsız olduğunu biliyorum. C bunların lineer kombinazı olarak yazılır demiştik.
+
+276
+01:02:59,791 --> 01:03:09,532
+K3'e mesela eksi bir versen, K1, K2 neydi? Eksi K3'tü, yani bir.
+
+277
+01:03:10,612 --> 01:03:12,251
+Bu durumda bu denklemin ne olur?
+
+278
+01:03:17,811 --> 01:03:30,531
+A artı B, eksi C eşittir sıfır olur, gene aynı yere dönersin. Değil mi? C eşittir A artı B. Başka bir lineer kombinazon mümkün olmaz yani.
+
+279
+01:03:32,571 --> 01:03:43,131
+Yani mesela... Bir şey sorabilir miyim? Tabii tabii sor. O zaman bu denklem olduğu uzayı giremez diyeceğiz değil mi? Hangi uzayı giremez? ABC'yi nerede aldın?
+
+280
+01:03:43,987 --> 01:03:46,107
+Reküp'te aldık galiba.
+
+281
+01:03:46,307 --> 01:03:48,167
+Reküp'te mi aldım? Bir bakalım, soruya dönelim.
+
+282
+01:03:48,387 --> 01:03:49,287
+Ben de hatırlamıyorum.
+
+283
+01:03:49,687 --> 01:03:50,967
+Bir bakalım, soruya dönelim.
+
+284
+01:03:55,347 --> 01:04:06,487
+Şöyle, her seferinde görüntüyü kaydettiği için bir süre bekliyor. Bir dakika, soruyu bulalım tekrardan. Bu, R üzeri 4'te almışız.
+
+285
+01:04:06,768 --> 01:04:12,527
+Ha, 4'müş. R üzeri 4'te 3 tane vektör almışım. İsmin neydi? [öğrenci].
+
+286
+01:04:13,127 --> 01:04:19,647
+[öğrenci], bak sen güzel bir soru sordun. Şimdi bu soru etrafında biraz dolaşalım sen. Bak, R üzeri 4'te 3 tane vektör almışım.
+
+287
+01:04:19,987 --> 01:04:26,067
+Bu üç vektörden iki tanesinin lineer bağımsız olduğunu, kalan vektörün de bu ikisinin lineer toplamı gibi olduğunu söyledik, öyle mi?
+
+288
+01:04:26,847 --> 01:04:28,807
+Sen şimdi bunu geometrik olarak mı görmek istiyorsun?
+
+289
+01:04:29,747 --> 01:04:30,047
+Evet.
+
+290
+01:04:30,907 --> 01:04:35,047
+Nedir, fikrin nedir, ne gördüğünü söyle, ben de doğru mu değil mi onu söyleyeyim sana.
+
+291
+01:04:36,847 --> 01:04:41,107
+Yani ben geremediğini düşünüyorum, R üzeri 4 uzayını.
+
+292
+01:04:41,507 --> 01:04:43,567
+R üzeri 4, zaten geremez ki bu üçü.
+
+293
+01:04:43,607 --> 01:04:43,807
+Evet.
+
+294
+01:04:44,659 --> 01:04:46,299
+Çünkü dört tane yok zaten.
+
+295
+01:04:46,719 --> 01:04:48,419
+Eksik çünkü eksik.
+
+296
+01:04:48,459 --> 01:04:48,719
+Evet.
+
+297
+01:04:49,159 --> 01:04:55,599
+Ya bir ayağı eksik. Şuna benziyor. Bir masa düşün. Dört ayağı var. Sen birini koparsan dengede durmaz.
+
+298
+01:04:56,239 --> 01:05:00,259
+Ya metafor olarak söylüyorum yani. Tam mükemmel dengede durmaz yani.
+
+299
+01:05:02,639 --> 01:05:08,059
+Kafana göre. Peki burada sayı yani burada işin esprisi dört mü? Hayır o da değil.
+
+300
+01:05:08,659 --> 01:05:13,459
+4 tane vektör, mesela 4 tane vektör alsan kafana göre, onlar geliyor mu R4?
+
+301
+01:05:15,219 --> 01:05:15,879
+Söyleyebilir misin?
+
+302
+01:05:15,939 --> 01:05:16,379
+Hayır belli değil.
+
+303
+01:05:17,019 --> 01:05:20,419
+Tabii, nasıl vektör aldığına bağlı değil mi? Bak orada ben size bir örnek vermiştim.
+
+304
+01:05:21,119 --> 01:05:26,399
+İlk defa bu dönem böyle bir şey spontane verdim ama aslında güzel bir metafordu yani.
+
+305
+01:05:26,839 --> 01:05:31,919
+Öğrenci bunu pek anlamıyor. Yani bak bir V vektör uzayı alıyorsun, bunun bir alt kümesini alıyorsun, tamam mı?
+
+306
+01:05:32,371 --> 01:05:59,371
+Sonra S ile bir vektör uzayı geriyorsun. Ben dedim ki bak tas tamam içinde de olabilir ya da eşit de olabilir. Değil mi? Nasıl seçtiğine bağlı. Ben nasıl bir örnekleme yaptım bunun? Şöyle yaptım yani sana birkaç tane iplik verdim. Şu da V sökük gibi düşün. Sen kalktın bunlarla bir dokuma yaptın mesela. Tamam mı? Şöyle bir kumaş dokudun. Tamam mı? Ama söküğü...
+
+307
+01:05:59,699 --> 01:06:17,359
+Bunu S kümesi gibi düşün, şunu S ile geldiğin alt uzayda şu kumaş parçası, dokuduğun kumaş parçası gibi düşün, söküğü de V gibi düşün. Örtmeye yetmedi. Ama şöyle diyebilirim, iplik sayısı azdı.
+
+308
+01:06:18,387 --> 01:06:38,327
+Biraz daha verseydin, belki yani daha büyük bir yama dokuyup o söküyü tamamen örtebilirdim diyebilirdin veya ya bu ipiklerin kalitesi uygun değil, biraz daha esnek, biraz daha uzun olsaydı, ben bu kumaşı daha büyük boyutlarda dokuyamasam da esnek olduğu için çeker uzatır o söküyü bir şekilde gene doldurdum da diyebilir misin mesela?
+
+309
+01:06:40,887 --> 01:06:45,907
+Yani bence güzel bir örnek yani. Kel alaka diyebilirsin ama bence yani meramımızı anlatıyor.
+
+310
+01:06:46,335 --> 01:06:48,896
+Yani nasıl bir S kümesi seçtiğine bağlı değil mi?
+
+311
+01:06:50,516 --> 01:06:50,896
+Evet.
+
+312
+01:06:51,556 --> 01:07:04,835
+Yani Meram'ımıza anlatıyor. Mesela soruya bakalım. Yani burada V, V kümesi, V uzayı, R üzeri 4. Sen S ne aldın? A, B, C aldın. Değil mi? Yani A, B, C, R üzeri 4'ün elemanları.
+
+313
+01:07:05,755 --> 01:07:11,396
+S ile gerdiğin uzaya bak. Ya ne dedin? Bunun mümkün değil ki V olması. Mümkün değil yani.
+
+314
+01:07:12,947 --> 01:07:15,747
+Peki, R küp olsaydı o zaman da mı germezdi?
+
+315
+01:07:15,768 --> 01:07:16,907
+R küp de olmaz.
+
+316
+01:07:18,007 --> 01:07:18,847
+Evet, o da olmaz.
+
+317
+01:07:18,867 --> 01:07:20,167
+Bak, S ile R küp de gelemez.
+
+318
+01:07:20,987 --> 01:07:23,627
+Yani, bak, R küp V'nin içinde, değil mi?
+
+319
+01:07:23,827 --> 01:07:28,268
+V, yani, 4 boyutlu uzayın içinde 3 boyutlu uzayı düşünebilirsin ama onu da germez.
+
+320
+01:07:29,987 --> 01:07:30,507
+Neden?
+
+321
+01:07:32,532 --> 01:07:36,012
+Şimdi unuttum ama az önce denklemde şey yapamıyordu.
+
+322
+01:07:36,331 --> 01:07:52,152
+Lineer bağımsız değil ki üçü. Üçü birden lineer bağımsız değil ki. Yani A, B lineer bağımsız. Yani şöyle düşün onları o zaman. Bak, A vektörü bu, B bu, tamam mı? Bunların geldiği düzlemde C var. C de bu işte.
+
+323
+01:07:55,311 --> 01:07:58,211
+İşte yani senin buzayın bu.
+
+324
+01:07:59,764 --> 01:08:04,584
+Yani sen bu S ile R üzeri 4'te ne geriyorsun o zaman? Nasıl bir alt uzay geriyorsun?
+
+325
+01:08:06,943 --> 01:08:08,144
+Üç boyutlu.
+
+326
+01:08:08,804 --> 01:08:11,524
+İki boyutlu, R kare. Üç boyutlu geremez.
+
+327
+01:08:12,224 --> 01:08:14,104
+A ve B'den mi bahsediyorsun sadece?
+
+328
+01:08:14,684 --> 01:08:22,363
+Hayır, S kümesini kastediyorum. S kümesiyle R üzeri 4'te gerebildiğin alt uzay düzlem olur en fazla.
+
+329
+01:08:22,804 --> 01:08:24,923
+Çünkü bu üçü lineer bağımsız değil.
+
+330
+01:08:26,355 --> 01:08:34,415
+İkisi de neğer bağımsızlık, üçüncüsü bunların toplamı ya. Yani bak şöyle eskimen şu, A, B, A artı B demedik mi?
+
+331
+01:08:36,335 --> 01:08:36,975
+Evet.
+
+332
+01:08:37,415 --> 01:08:40,595
+Bak, A ile B'yi kullanaraktan şu düzlemi gerdin mi?
+
+333
+01:08:42,136 --> 01:08:42,775
+Evet.
+
+334
+01:08:42,775 --> 01:08:51,475
+Tamam, ama A artı B şey değil ki bu yani, A ve B'den bağımsız bir vektör değil ki, ikisinin toplamı diyorsun. Yani bu aynı düzlemde demektir.
+
+335
+01:08:54,195 --> 01:08:55,036
+Anladım ben.
+
+336
+01:08:55,855 --> 01:09:06,055
+Yani, eğer aynı düzde, yani bana buraya C, A ile B'nin toplamı gibi olmayan, yazılamayan bir tane vektör olsaydı S kümesinde, o zaman re küpü geliyor diyebilirdim.
+
+337
+01:09:06,775 --> 01:09:14,695
+Yani bu S kümesiyle, dört boyutlu uzayda en fazla bir düzlem gelersin. Yani bir tabaka, bir plaka yani.
+
+338
+01:09:15,876 --> 01:09:20,216
+Bu plaka üzerinde gezinebilirsin uzayda en fazla yani, onun dışında bir yere.
+
+339
+01:09:20,692 --> 01:09:47,131
+çıkabilme, çıkışın yok yani uzayda, gömülüsün yani o plaka üzerinde, dört boyutlu uzayda. Yani üç boyutu temaşa edemezsin, dört boyutu temaşa edemezsin gibi. Bak yani bu terimleri de herkes kullanamaz yani. Bak söyleyeyim sana, bak üç boyutlu uzayda bir tane küre düşün tamam mı? Bak karıncayı koy şuraya, kürenin kabuğu üzerine tamam mı? Yani küre üzerinde istediği yere gidebilir bu karınca.
+
+340
+01:09:47,604 --> 01:10:11,484
+Tamam mı? İyi de reküpten haber yok ki bunun. Dışındaki uzayı göremiyor bu. O kabuk üzerinde yürüdüğü müddetçe, yani, üçüncü boyuttan haberi yok bunun. Ne zaman mesela şuraya geldi, şu noktaya geldi, bu pozisyona geldi, burada teğet uzayı düşün tamam mı? Küreye her noktada bir teğet uzay yok mu? Teğet düzlem yok mu?
+
+341
+01:10:14,036 --> 01:10:41,475
+Var, evet. Var, bak, o karınca geldi, geldi, geldi, tam şu temas noktası, yani küreye bu noktada teğet olan düzlemi kastedi. Tam o noktaya geldi, düzlemin üzerine çıktı karınca, tamam mı? Bak, artık karınca burada. Küre kabuğunu geride bıraktı. Şu teğet uzaya geçtiği anda, yürüdüğü anda ne oluyor? Artık, yani, güç boyutlu uzayı temaşa ediyor artık. Bilmem, anlatabildim mi?
+
+342
+01:10:44,340 --> 01:10:57,280
+Yani oradaki R4'ü ben sana çizemeyeceğim tabii burada dört boyutlu uzay ama yani senin orada yani gezebileceğin şey bu, zeminin bu yer, S çizgi bu, dördün içinde.
+
+343
+01:11:00,040 --> 01:11:06,739
+Tabii burada kürenin kabuğu falan o vektör uzayı değil, o ayrı bir şey yani sadece. Geometrik olarak bir şey göstereyim dedim.
+
+344
+01:11:08,051 --> 01:11:33,031
+Evet, başka sorusu olan var mı? Ya bunlar aslında eğlencelidir bakın yani. Eğlencelidir yani. Mesela uzayda da analitikömetri var ya, basit analitikömetri var mesela. Yani ne var? Şurada güneş var. Hadi bunu sarıyla çizelim. Güneş olduğu belli olsun. Burada da mavi dünya var değil mi?
+
+345
+01:11:35,539 --> 01:11:38,399
+Etrafında dönüyorum. Bir de Aymu var.
+
+346
+01:11:42,515 --> 01:11:49,735
+Ona da bir yörüngesi var. Dünyanın yörüngesi, elips değil mi? [öğrenci] miydi ismini?
+
+347
+01:11:51,475 --> 01:11:51,796
+Evet.
+
+348
+01:11:52,675 --> 01:12:01,636
+Elips'in denklemi de var. Biz biliyoruz değil mi elips'in denklemini? Neydi ya? X kare bölü A mıydı? Artı Y kare bölü B eşittir bir. Böyle bir şeydi değil mi? Yanlış hatırlamıyorsam.
+
+349
+01:12:02,355 --> 01:12:05,235
+A kare miydi? A kare, B kare. Değil mi?
+
+350
+01:12:05,792 --> 01:12:22,852
+Yani A ile B'den hangisi büyük, hangisi küçük, buna göre işte elipsin uzun kenarı hangisi, kısa kenarı hangisi, işte koordinat eksen üzerinde falan filan hikayesi. Onları da geçelim. Şimdi bu elips dünyanın yörüngesi, elips. Düzleme yerimi uzay yerimi. Sen hangi bölüm öğrencisisin?
+
+351
+01:12:23,859 --> 01:12:25,299
+Elektronik haberleşme.
+
+352
+01:12:25,359 --> 01:12:33,899
+Elektronik haberleşme, bak matematikçiler öyle sayılarla toplama çıkarma yapan insanlar gibi görmeyin yani. Al sana elips uzay eğrisimi düzlemeyelim, hadi bakalım.
+
+353
+01:12:37,460 --> 01:12:43,460
+Kalkülüs 2'de düzleme eriyi, uzay eriyi göstermişlerdir size parametrik denklemleri falan değil mi? Bunlar...
+
+354
+01:12:44,639 --> 01:12:47,059
+Hocam ben ilk matematik dersim şu anda bu.
+
+355
+01:12:47,059 --> 01:12:54,180
+Tamam bak elips, bu düzlemdedir bu elips, flat yani. Ya bak şöyle değil yani bak.
+
+356
+01:12:55,199 --> 01:13:03,860
+Şöyle bir iniş çıkış yapıp tamamen böyle bir şey değil, öyle olsa dünya yani alt üst olur değil mi? Yani bu.
+
+357
+01:13:06,036 --> 01:13:31,576
+Yani düzlemde yani bu E yörüngesi düzlemde. Orbit yani. Orbit düzlemi derler buna yani. Ayın da yörüngesi bir düzlemde. Bu iki düzlem arasında açı var mesela. Bak hiç bilmiyorum düşündüğünüzü. Yani ayınki de şöyle bir şey var. O da şöyle.
+
+358
+01:13:32,243 --> 01:13:39,543
+Onun yörüngesi de bu, bu iki düzlem arasında bir açı var bak. Bu açının kaç derece olduğunu bilen var mı?
+
+359
+01:13:46,644 --> 01:14:07,824
+Mesela, yani burada bir analitik geometri var yani mesela, yani dünyanın yörünge eğisi, onu barındıran yörünge düzlemi. Bir de bunun şeyi var, ekseni var değil mi? Bu eksen mesela bu düzleme, düzlemle açı yapıyor değil mi? Yani bu, yani.
+
+360
+01:14:11,667 --> 01:14:13,667
+Yani burada geometrik şeyler var yani.
+
+361
+01:14:15,847 --> 01:14:21,587
+Lineer bağımlılık, lineer bağımsızlık da yani geometriyle bağımlı yani. Bağlı, sıkı sıkıya bağlı yani.
+
+362
+01:14:24,327 --> 01:14:36,367
+Evet. Mesela ne oluyor? Yani ne alaka şimdi? Hoca bir şey dedi, bu kalktığı yörünge eğrisi, yörünge düzlemi falan diyor. Mesela nasıl bağlarsın? Dünyanın mesela yörüngesi, elips, o da bir düzlemli olduğuna göre o eğri.
+
+363
+01:14:36,367 --> 01:14:38,847
+E, dünyanın kendi ekseni var.
+
+364
+01:14:40,083 --> 01:14:49,184
+Bu düzleme eğik değil mi? Dünyanın ekseni eğik değil mi? Eğik. Kaç derece açığı yapıyor bu düzlemle? 21 miydi, 23 müydü? Kaç dereceydi ya?
+
+365
+01:14:51,583 --> 01:14:59,023
+Mevsimler oluyordu değil mi? O şeyin eksenin düzleme eğik olması, açığı yapması mevsimlere yarıyor yani.
+
+366
+01:14:59,543 --> 01:15:06,224
+O eksenin mesela ucu, güneşe baktığında yaz oluyor Kuzey Yarımküre'de.
+
+367
+01:15:06,612 --> 01:15:14,992
+Sonra alt ucu, mesela güneye bak, diğer ucu güneşe yakın olduğunda bu sefer ne oluyor? Güney yarım kürede yaz oluyor, değil mi?
+
+368
+01:15:17,352 --> 01:15:29,692
+Şimdi mesela o zaman o dünyanın eksenini bir vektör gibi düşünsen, yörüngesini de düzlem olarak düşünsen mesela, o düzlemde iki tane vektör bulabilirsin yine bağımsız, değil mi? En fazla.
+
+369
+01:15:30,551 --> 01:15:32,252
+Yani dünyanın yörünge düzleminde en fazla.
+
+370
+01:15:32,720 --> 01:15:42,200
+İki tane lineer bağımsız vektör bulursun. Eksenini de bir vektör, üçüncü bir vektör olarak düşünürsen, o düzleme ait değil. Yani o zaman üçü lineer bağımsız olur. Değil mi?
+
+371
+01:15:45,587 --> 01:15:46,108
+Evet.
+
+372
+01:15:49,147 --> 01:15:51,448
+Bunu da böyle anlatmış olalım.
+
+373
+01:15:52,967 --> 01:15:54,967
+Bir tane daha örnek verelim mi burada?
+
+374
+01:15:56,967 --> 01:16:00,347
+Bu örnek 5.34'te bir öncekinden farklı değil arkadaşlar.
+
+375
+01:16:00,507 --> 01:16:03,688
+Bakın gene R.04'te 3 tane vektör aldık.
+
+376
+01:16:03,927 --> 01:16:04,288
+Tamam mı?
+
+377
+01:16:05,147 --> 01:16:09,420
+Eğer vektörleri, eğer lineer bağımlı ise bunlar arasında maksimum sayıda...
+
+378
+01:16:09,652 --> 01:16:22,871
+vektör alarak geriye kalanları bunların lineer kombinazonu olarak yazınız. Ya bunda bir sıkıntı var mı? Belli sayıda vektör lineer bağımlı iken bunların içinde bazıları lineer bağımsızlık nasıl oluyor? Bu soru takılan var mı kafasına?
+
+379
+01:16:25,211 --> 01:16:31,172
+Beş tane vektör verdim sana, lineer bağımlı. Ya bunlardan mesela iki tanesi kendi içinde lineer bağımsız olamaz mı mesela?
+
+380
+01:16:35,796 --> 01:16:47,695
+Geometrisiyle düşüneceksin. Olabilir değil mi? Mesela bak, hep geometriyle düşüneceksin bunları. Yoksa öteki türlü hiç çıkamasın işin içinden. Bak, üç tane vektör vereyim sana. V2, V3, lineer bağımlı.
+
+381
+01:16:49,156 --> 01:16:56,896
+Yani, bunların içinde en fazla kaç tane lineer bağımsız vektör bulabilirsin? Olma ihtimali var yani. İki tane.
+
+382
+01:16:57,555 --> 01:17:20,376
+Üçü lineer bağımlıysa bunların, hadi düzlem uzayda olsun bunlar mesela, yani gösterme temsiliyet açısından. Üçü lineer bağımlıysa bu üçü aynı düzlemde. Değil mi? Bunlardan en fazla iki tanesi. Liner bağımsız olabilir mi? Mesela olur işte bak hangi ikisini alırsan al, ister bunu alın. Değil mi? İster şu ikisini alın.
+
+383
+01:17:20,819 --> 01:17:42,260
+Fark etmez. İster şu ikisini al, fark etmez. Olabilir yani. Üçü lineer bağımlı. Şimdi ekranımızı kaydırdık. Üç tane lineer bağımlı ama daha az sayıda lineer bağımsız olmaz diyemezsin yani. Değil mi? Veya üç tanesi lineer bağımsız.
+
+384
+01:17:44,275 --> 01:17:52,835
+Üç tanesi lineer bağımsız ise daha az sayıda vektör için lineer bağımlı diyebilir misin mesela? Tersten okuyalım.
+
+385
+01:18:00,083 --> 01:18:04,503
+Bak bunlar kafa karıştırıyor gibi gözüküyor ama bunlara bir vakıf oldun mu, tamam iş bitti yani.
+
+386
+01:18:06,404 --> 01:18:12,384
+Anlayamadığım müddetçe de böyle kabusun olur, yani peşini bırakmaz. Çok zor bir şeymiş gibi zannedersin, aslında iş de değil.
+
+387
+01:18:14,144 --> 01:18:21,884
+Üç tane vektör, lineer bağımsızlığa, bunlardan daha az sayıda, bunlardan herhangi ikisi mesela, lineer bağımlı olma şansı var mı?
+
+388
+01:18:24,283 --> 01:18:24,804
+Yok.
+
+389
+01:18:25,344 --> 01:18:26,064
+Yok değil mi?
+
+390
+01:18:27,731 --> 01:18:35,672
+Bir şey daha söyleyeyim. Mesela aslında anlatacağım şeyler ama önceden söylemiş olayım. Peki, boyut olayını şöyle anlayın. Bak, boyutun tanımını yapayım size isterseniz.
+
+391
+01:18:36,452 --> 01:18:50,032
+Boyut şudur. Yani bir uzayı gelen maksimum lineer bağımsız vektör sayısıdır. Mesela düzlemin boyutu 2 diyorsun. Neden? En fazla 2 tane lineer bağımsız vektör bulabilirsin uzayı gelen. O yüzden.
+
+392
+01:18:51,032 --> 01:18:52,871
+3 tane bulamazsın.
+
+393
+01:18:54,484 --> 01:19:03,443
+Bir tane lineer bağımsız vektör olamaz mı R karede? Olabilir ama onunla da düzlemin kendisini geremezsin. Doğru gerersin. Yani vektör tabii sıfır değilse.
+
+394
+01:19:06,423 --> 01:19:06,684
+Evet.
+
+395
+01:19:09,884 --> 01:19:11,384
+Yine gitti, başa aldı.
+
+396
+01:19:15,315 --> 01:19:17,636
+Böyle saçmalıklar yapıyor işte bu iPad.
+
+397
+01:19:31,252 --> 01:19:33,452
+Evet, nerede kaldık? Şu soruya bakıyorduk.
+
+398
+01:19:33,891 --> 01:19:40,452
+R üzeri 4'te, ya ben artık tabanın tanımını yazayım. Bu 5-34 örnek bir öncekinden farklı değil.
+
+399
+01:19:40,592 --> 01:19:42,792
+Yani tabanın tanımını artık yapacak durumdayız yani.
+
+400
+01:19:43,192 --> 01:19:46,731
+Bak, V bir vektör uzayı, T de bunun bir alt kümesi.
+
+401
+01:19:47,372 --> 01:19:50,172
+Bir alt küme ne zaman vektör uzayın tabanı ya da bazı olur?
+
+402
+01:19:50,172 --> 01:19:54,352
+İki şartı sağlıyorsa, birinden biri olmazsa bu şartların taban olmaz.
+
+403
+01:19:55,051 --> 01:19:55,992
+Nedir o şartlar? Bir.
+
+404
+01:19:56,627 --> 01:20:14,207
+Bu alt kümenin elemanları, lineer bağımsız olacak. İki, uzayı gelecek. Tamam mı? Uzayı gelecek. Evet. Mesela i ve j vektörlerini al. Bunlar re kare için bir taban olur mu?
+
+405
+01:20:21,619 --> 01:20:40,699
+Bakın, vektör uzayı olarak düzleme alalım, t içinde i ve j vektörlerini alalım, tamam mı? Yani i dediğim şey 1, 0, j dediğim şey 0, 1. Bu vektörler lineer bağımsız mı? Tabii ki lineer bağımsız, değil mi? Yani şuradan baksan bile gözüküyor zaten. Bu yönlerin biri diğer cinsinden mümkün değil yazılamaz.
+
+406
+01:20:41,699 --> 01:20:46,100
+E, uzayı da geriyor mu? Geriyor. Ne demekti o? Hangi V'yi alırsan al? V'den.
+
+407
+01:20:46,496 --> 01:20:56,015
+Değil mi? Bunların lineer kombinazonu olarak yazılıyor dedik işte alfa i. Şunu da şuraya iz düşürürsek, buna da beta j dedik değil mi? İşte yazılıyor.
+
+408
+01:20:58,755 --> 01:21:03,695
+T, re kareyi geriyor, başka? T, lineer bağımsız bir küme.
+
+409
+01:21:07,155 --> 01:21:23,015
+Yani bu ne demek? T bir taban demek yani. T, V için taban. Değil mi? Yalnız bir kümenin taban olmasıyla geren küme olması birbirinden farklı. Tamam mı? Bunları birbirine karışmayın. Dikkat.
+
+410
+01:21:23,915 --> 01:21:34,036
+Mesela bir S kümesi alsam. I, J ve I artı J. Bu küme R kareyi geriyor mu? Geriyor.
+
+411
+01:21:34,739 --> 01:21:57,379
+Nasıl anlıyorsun? Ya İ ile J zaten yetiyor. İ artı C'yi katsan ne olacak? Başına sıfır koyarsın. Değil mi? Lineer toplamda. Geriyor ama S lineer bağımlı. Dolayısıyla S burada taban değil. Bak uzayı geriyor ama taban değil. Niye? Çünkü elemanları lineer bağımsız değil.
+
+412
+01:21:57,779 --> 01:22:13,899
+Nereden anladım lineer bağımsız olmadığını? Çünkü şu kattığım vektör bu ikisinin toplamı da ondan. Değil mi? Ya İ ile J lineer bağımsız ama üçüncü vektör işi bozdu. İlk ikisinin toplamı gibi yazılabilen bir vektör eklediğim için koleksiyona lineer bağımsızlığı bozdu.
+
+413
+01:22:14,579 --> 01:22:30,300
+Dolayısıyla bu S uzayı geriyor ama taban değil. Yani taban çok özel bir küme. Hem uzayı geriyor hem de elemanları lineer bağımsız. Tabanın elemanlarına da ben üreteş diyorum. Niye? Çünkü uzayı üretiyor. Uzayı geriyor, uzayı üretiyor. Tamam mı?
+
+414
+01:22:32,700 --> 01:22:37,800
+Evet. Mesela şu S kümesi, Reküp'ün standart tabanı.
+
+415
+01:22:38,707 --> 01:22:48,608
+Yani x, y, z eksenleri, pozitif x, y, z eksenleri boyunca aldığın birim vektörler, yani standart tabandır.
+
+416
+01:22:48,727 --> 01:22:53,667
+Mesela lineer uzayı gerdiği belli, lineer bağımsızlıkları da belli mi? Nereden anlarsın en kolay bunun?
+
+417
+01:22:54,647 --> 01:23:03,747
+Sütunları bunlar olacak şekilde bir matris yazarsın, determinantının sıfır olmadığını gördüğün an, ki lineer zaten birim matris olur bu, bu s için konuşuyorum, tamam mı?
+
+418
+01:23:04,387 --> 01:23:05,547
+Lineer bağımsızlıkları belli.
+
+419
+01:23:09,235 --> 01:23:17,275
+Şimdi taban tanımını söylediğimize göre ben isterseniz boyut tanımını da hemen peşinden söyleyeyim. Boyutta şu, tabandaki elemanların sayısı uzayın boyutu. Bu kadar.
+
+420
+01:23:20,376 --> 01:23:21,395
+Bilmem anlatabildim mi?
+
+421
+01:23:24,756 --> 01:23:43,952
+Birden fazla taban olabilir mi bu uzayın? Olabilir. Ama hepsinin ortak bir özelliği var, o da şu, hepsinin aynı sayıda elemanı var. Öteki türlü boyut sabit olmaz ki. Değil mi? Ya boyut, madem tanımdan tabandaki elemanların, üreteçlerin sayısı oluyorsa, yani...
+
+422
+01:23:43,952 --> 01:23:50,092
+Her tabanda farklı sayıda üreteci olursa, o zaman boyut farklı farklı demiş olursun, saçma sapan bir şey olur ya.
+
+423
+01:23:50,532 --> 01:23:56,711
+Değil mi? Bütün tabanlar, ya birden fazla taban olabilir ama hepsinin ortak özelliği var, aynı sayıda üretece sahipler.
+
+424
+01:23:57,092 --> 01:23:59,271
+İşte o sayıda uzayın boyutu.
+
+425
+01:24:01,171 --> 01:24:25,071
+Bu tabanlar içerisinde standart olan var her zaman, bir de standart olmayanlar var. Standartdan kastı aldığın vektörler özel olarak birim vektör, birbirlerine dik, ikişer ikişer falan filan. Ama yani sen illa bu şartı sağlamak zorunda değil ki. Geometrik olay konuşalım bak, şuna bakın. Yani standart olan tabanı yazıyorum size, bu standart bir taban.
+
+426
+01:24:25,908 --> 01:24:53,347
+Ben size standart olmayan bir taban yazayım şimdi bakın. i artı c, i eksi c. Buna u vektörü deyin, buna da v deyin. Tamam mı? Al sana standart, s standart olan bir taban, i ve c'den oluşan. Ama standart olmayan bir tane, başka bir taban yazıyorum sana bakın. Taban olduğunu nereden biliyorum? Bunlar lineer bağımsız çünkü. Uzayı da geliyor. İstediğim vektörü al buradan bak, istersen şunu al.
+
+427
+01:24:54,036 --> 01:25:21,376
+W. U ile V'nin toplamı gibi yazılabilir. İ ile J'nin toplamı gibi de yazılabilir. Ama her iki toplamı karşılaştırdığında katsaylar farklı. Yani kombinazondaki katsaylar farklı. Yani her tabana göre farklı bir yazılış söz konusu. Değil mi? Yani uzayın, yani tabandan muradımız bizim ne o zaman? Vektör uzayının bir elemanı, tabandaki elemanları lineer kombinazonu gibi tek türlü yazıyoruz da ondan.
+
+428
+01:25:22,163 --> 01:25:45,324
+Yani uzayda, yani re karede kaç tane vektör var? İstemediğin kadar var. E ben niye iki tanesine odaklanıyorum? Çünkü hangisini alırsan al, bu ikisinin toplamı da ondan. O zaman diğerleri, yani ne edilebilir? Göz ardı edilebilir. Yani bu iki tanesiyle işini görüyorsun ki. Değil mi? Temsiliyet var yani, iki tanesi yetiyor.
+
+429
+01:25:48,692 --> 01:26:02,651
+Evet, U ile V gene bir taban. Bak dikkat edin, her ikisinin ortak özelliğine iki tane elemanı olması. Yani kardinaliteye bak. Bununla adet eleman sayısını kastetmiş olalım, şu notasyonla. İkisi de iki tane eleman.
+
+430
+01:26:06,251 --> 01:26:11,211
+Mesela T yıldız diye bir tane yazayım. U, V, U eksi V.
+
+431
+01:26:12,148 --> 01:26:38,087
+Bu uzayı geriyor mu? Geriyor. Şey pardon, düzlemi geriyor mu? Geriyor. Ama taban değil. Niye? Elemanları lineer bağımlı. Taban olsa zaten iki tane olması gerekirdi, lineer bağımsız. Değil mi? Bir teoremimiz var arkadaşlar. Birazdan söyleyeceğim. Bakın bu çok şey. Boyutun ne olduğunu söyledik. Şimdi taban olması için iki şart gerekiyor ya, bir tevkümesi.
+
+432
+01:26:38,836 --> 01:26:52,196
+Birincisi nedir? T-Liner bağımsız. Bakın bu çok önemli. Birinden biri olmazsa taban olmaz. Diğer şart, uzayı gelecek dedik. Ama teoremimiz bize şunu söylüyor. Bakın bu taban tanımı. Tamam mı? Taban.
+
+433
+01:26:54,156 --> 01:27:04,856
+Şimdi size bir teorem veriyorum. Teorem diyor ki, ve vektör uzayı, boyutu en uzun.
+
+434
+01:27:05,268 --> 01:27:22,387
+Yani varsayalım ki size uzayın boyutu hazır veriliyor. Tamam mı? Bu takdirde bu iki şarttan hangisini sağlayan bir T kümesi varsa elinde öteki şartta otomatik sağlanır. Dolayısıyla elindeki küme bas olur.
+
+435
+01:27:24,387 --> 01:27:31,568
+Şunu söylemek istiyorum, bakın. Bir tane T kümesi. Bir.
+
+436
+01:27:32,819 --> 01:27:53,939
+t alt kümesi için eğer t lineer bağımsız ise t otomatikmen taban oluyor. Şimdi diyeceksin ki hocam iki şartın ikisi de sağlanması gerekiyordu. Ama bu teorem şunu diyor, sen boyutu biliyorsan.
+
+437
+01:27:54,452 --> 01:28:16,832
+İkisini değil, herhangi biri elindeyse öteki otomatikman sağlanabilir. Dolayısıyla taban oluyor diyor. Bak test sınavında işte çok güzel kullanılacak bir anahtar bu. Ya da, bak ya da, eğer T, V'yi geriyorsa lineer bağımsız olduğunu göstermene gerek yok. Direkt taban oluyor. Ya teorem söylüyor bunu, anlatabildim mi? Teorem bunu söylüyor. T, taban.
+
+438
+01:28:18,676 --> 01:28:38,015
+Lineer bağımsızlık oluyor yani. Yani o bir iki özelliğinden hangisi varsa diğeri de var. Diğeri de var. O zaman mesela reküpte, mesela reküpte, reküpte, bana bir taban söyle, reküpte taban üretelim mesela, taban, taban örnekleri verelim.
+
+439
+01:28:42,899 --> 01:28:49,079
+Nasıl bana vereceksin taban? Numune ver bana, öyle bir taban söyle bana hemen. Nasıl söyleyeceksin?
+
+440
+01:28:52,260 --> 01:28:58,760
+[öğrenci]'e soralım bunu, gene. Standart olmayan bir taban söylesene bana, otomatik.
+
+441
+01:29:01,260 --> 01:29:03,019
+Nasıl söyleyebilirim?
+
+442
+01:29:03,219 --> 01:29:08,719
+Kafadan söyleyemeyebilirsin belki, hani sayılarıyla ama. Nereden elde edersin mesela, nasıl elde edersin?
+
+443
+01:29:10,868 --> 01:29:12,328
+Üç tane vektör.
+
+444
+01:29:12,988 --> 01:29:15,268
+Boyutunun üç olduğunu biliyor musun? Biliyorsun.
+
+445
+01:29:15,348 --> 01:29:15,548
+Evet.
+
+446
+01:29:15,768 --> 01:29:19,768
+O zaman üç tane vektör, lineer bağımsız, bulduğun anda tabandır bu.
+
+447
+01:29:20,108 --> 01:29:25,948
+Ya da reküpü geren üç tane vektör bulduğun anda tabandır bu.
+
+448
+01:29:27,208 --> 01:29:28,928
+Hangisini kullanırsın sen sence?
+
+449
+01:29:29,328 --> 01:29:32,768
+Üç elemanlı geren bir küme mi bulmayı tercih edersin?
+
+450
+01:29:32,828 --> 01:29:36,688
+Yoksa üç elemanlı, üç vektör, lineer bağımsız üç vektör bulmayı mı tercih edersin?
+
+451
+01:29:36,748 --> 01:29:37,528
+Taban elde etmek için.
+
+452
+01:29:38,484 --> 01:29:39,544
+İkisi de değil mi?
+
+453
+01:29:40,464 --> 01:29:44,744
+İkisi de olur ama ben olsam, üç tane lineer bağımsız vektör elde etmeye çalışırım.
+
+454
+01:29:44,984 --> 01:29:50,084
+Neden? Çünkü, üç tane hemen U ve matris yazarım değil mi?
+
+455
+01:29:50,764 --> 01:29:53,524
+Determinantı sıfır olmayacak şekilde bitti.
+
+456
+01:29:54,744 --> 01:29:55,864
+Al sana taban.
+
+457
+01:29:57,784 --> 01:29:59,604
+Oldu mu? Budur işte.
+
+458
+01:30:01,904 --> 01:30:02,404
+Taban olur.
+
+459
+01:30:03,544 --> 01:30:03,844
+Yani.
+
+460
+01:30:04,884 --> 01:30:31,943
+Öyle bir matris yazarsın ki, determinantı sıfır olmayan, bu matrisin sütunları veya istersen satırları sana otomatikman taban verir, reküpte. Öyle değil mi? Uzayı geriyor mu, germiyor mu diye bakmana gerek yok. Törem zaten gerdiğini söylüyor. Direkt determinant hesabıyla bunu söyleyebilirsin ama şöyle de yapabilirdin. Burada determinant hesabıyla U'nun, V'nin, W'nin kim olduğunu somut bir şekilde söylemen daha kolay.
+
+461
+01:30:32,304 --> 01:30:55,644
+Öteki türlü, öyle üç tane vektör alayım ki reküpü gelsin. Kim bunlar? Orada oturup şunu yapman lazım. Yani reküpten bir tane, tipik bir tane, herhangi bir tane eleman alacaksın. Değil mi? Ondan sonra öyle uv bulacaksın ki x, y, z, eşittir u çarpı alfa, alfa çarpı u, beta çarpı v artı gama çarpı.
+
+462
+01:30:56,243 --> 01:31:07,043
+W olarak yazılsın. Kimdir bu U ve W? Bu denklem sistemi çözmen lazım. Gerek yok ki buna. Anladın mı neden bunu tercih ettiğimi? Çok daha kestirme.
+
+463
+01:31:07,463 --> 01:31:23,343
+Anladım. Çok daha kestirme. Ya bak, Türkçe kitabınıza bakın, orada bile öğrenciyi uyandırmıyor. Not olarak yazabilir yani. Daha çok geren kavramıyla çıkıyor yola. O zaman tabandır diyor teoremden. İyi de ötekini de not olarak yazabilirsin.
+
+464
+01:31:24,404 --> 01:31:27,344
+Yani test sınavında bunu kullanmak mantıklı değil ki.
+
+465
+01:31:30,244 --> 01:31:43,824
+Mesela, hatırlarsanız 2x2'lik matrislerin vektör uzayında izi sıfır olanları bir tarafa toplarsan onun alt uzay olduğunu göstermiştim, değil mi? O alt uzayın mesela bir tabanını bulalım.
+
+466
+01:31:45,108 --> 01:31:59,688
+Sonra da boyutunu bulalım mesela. Aslında tabanını bulmanıza gerek yok. Size şu örneği veriyor otomatik. Ya bu tevkümesi W için bir taban olduğunu gösterdi. Tamam mı? Dikkat et, T'nin elemanları izi sıfır olan matrisler.
+
+467
+01:32:01,828 --> 01:32:10,528
+Şimdi sen burada W alt uzayının boyutunu bilmediğin için o iki özellikten birinden birini göstermem kâfi diyemezsin. Değil mi?
+
+468
+01:32:13,268 --> 01:32:17,408
+Yani W uzayı burada öklüt uzayı değil ki, matrislerin uzayı değil mi?
+
+469
+01:32:19,648 --> 01:32:25,088
+O yüzden ne yapman gerekiyor? İki şartı da sağlandığını göstermen gerekiyor.
+
+470
+01:32:25,168 --> 01:32:28,847
+Bir, T'nin elemanlarının lineer bağımsızlıklarını göstereceksin.
+
+471
+01:32:30,128 --> 01:32:35,448
+O da seni bir lineer denklem sisteminin çözümüne götürür, çözümünün olup olmamasına götürür.
+
+472
+01:32:36,248 --> 01:32:38,868
+Uzayı geriyor mu? Yani W uzayını geriyor mu? Germiyor.
+
+473
+01:32:40,275 --> 01:32:51,595
+Ona da bakacaksın. O da bir lineer denklem sisteminin çözümüyle alakalı. Bu oldukça uzun yer. Bak dikkat et. Önce gerdiğini gösterelim. Bak şuraya dikkat et. Önce gerdiğini gösterelim.
+
+474
+01:32:55,380 --> 01:32:55,880
+Evet.
+
+475
+01:33:00,595 --> 01:33:07,595
+Şu, t'yi gerdiğini ve sonra da lineer bağımsız olduğunu göstermemiz lazım değil mi? Şu iki şartı göstermemiz lazım.
+
+476
+01:33:10,235 --> 01:33:11,295
+Şurayı şöyle.
+
+477
+01:33:18,868 --> 01:33:19,648
+Silelim.
+
+478
+01:33:21,268 --> 01:33:23,028
+Şimdi geldiğini nasıl gösterirsin?
+
+479
+01:33:23,988 --> 01:33:28,368
+Ne demek bu? W'dan bir tane tipik bir eleman alacaksın. Bak, A eleman W, tipik.
+
+480
+01:33:30,448 --> 01:33:37,048
+W'yu geriyorsa, W'nun tipik bir elemanı, T'deki elemanların lineer kombinazonu gibi yazılıyor demektir, değil mi?
+
+481
+01:33:38,260 --> 01:33:49,779
+Ama W'nun tipik bir elemanıysa ne demek? İzi sıfır demek. A ile D'nin toplamı sıfırsa, yani burada D eşittir, eksi A, ya da A eşittir, eksi D'dir.
+
+482
+01:33:49,899 --> 01:33:58,399
+Bu durumda W'nun tipik bir elemanı olan A matrisini yazarken A, B, C, D şeklinde dört tane parametre kullanmana gerek yok ki, üç tane kullanman yeterli.
+
+483
+01:33:58,760 --> 01:34:05,260
+Çünkü A ile D birbirine bağımlı, değil mi? Biri diğer cinsinden yazılıyorsa, dört değil, üç tane kullanman yeterli demektir.
+
+484
+01:34:06,963 --> 01:34:34,503
+Değil mi? Tamam, o zaman yazalım. Tipik bir eleman nedir? İşte budur, bak. Ben bunu gördüğüm anda sana, yani matrisin boyutunun içi olduğunu söylerim ama siz onu anlayacak durumda değilsiniz şu anda. O yüzden elementer bir şekilde bakalım sorunun cevabını. Şimdi tamam, W'nun tipik bir elemanı bu. İzi sıfır olan iki çarpı ikilik tipik bir matris bu şekilde yazılır. Yani üç tane, en fazla üç tane parametre kullanarak.
+
+485
+01:34:35,507 --> 01:35:00,228
+Yani en fazla üç tane, dikkat et bak, ille de üç tane olmasına gerek yok. Yani mesela bir, eksi bir, b'yi, c'yi sıfır alarak da yazabilirsin. Bu matris izi sıfır olan bir matristir. Değil mi? Veya bir, bir, sıfır, eksi bir. Bu da izi sıfır olan bir matristir. Veya bir, eksi bir, bir, eksi bir. Bu da izi sıfır olan bir matristir. En fazla üç tane paramet.
+
+486
+01:35:01,363 --> 01:35:27,803
+Tipik, jenerik bir elemandan bahsettiğime göre, yani 3 parametreyi işin içine katman gerekiyor değil mi? En fazla 3 tane. Tipik olanı bu. Yani bütün olasılıkları bünyesinde barındıran matris formatı bu, izi sıfır olan. Şimdi bu matris, T'dekilerin niner kombinazorunu gibi yazılmıyor mu? Yazılmıyor mu? Germesi bu demek. Yani yıldızda gösterdiğim denklem bakın. Şu denkleme bakalım. Ya bunu çözmen lazım.
+
+487
+01:35:28,851 --> 01:35:55,532
+Sol tarafta bir matris var, iki çarpı ikilik toplarsan, değil mi? Sağ tarafta bir matris var. İki tane iki çarpı ikilik matrisinin eşitliği ne demek? İki çarpı ikilik matrisinin dört tane elemanı var. Bu matrisin elemanları karşılıklı bakarsan, lineer denklem demektir yani bunları yazarsan, bir sisteme gider bu iş. Öyle değil mi? O sistemin genişletilmiş katsalar matrisi de işte bu.
+
+488
+01:35:56,372 --> 01:36:15,552
+Bak, dikkat et. Genişletilmiş katseler matrisi. Ne yapacaksın bunun çözümü var mı yok mu olayını anlamak için? Yani indirgenmiş forma götürme ranklarını mukayese edeceksin A ile A ve katseler matrisini değil mi? Ama ikisinin de rangı 3 olduğundan çözüm var.
+
+489
+01:36:16,916 --> 01:36:27,596
+Değil mi? Ranklar eşit olmasaydı çözüm yoktur diyeceksin. Çözüm olmadığı için de A matrisi, yani W'nun tipik bir elemanı olan A, T'dekilerin lineer kombinasyonu gibi yazılamaz diyeceksin.
+
+490
+01:36:29,036 --> 01:36:34,336
+Değil mi? Yazılamıyorsa zaten lineer bağımsız mı değil mi diye bakmana da gerek yok. Mümkün değil, taban olmaz.
+
+491
+01:36:34,336 --> 01:36:42,336
+Ama biz burada ne gördük? Şimdi ranklar 3'se çözüm var. Çözüm var. Ama tek mi? Yoksa işte...
+
+492
+01:36:43,764 --> 01:37:10,884
+keyfi değişken cinsinden çözüm var mı yok mu meselesi değil mi? Ben o kısımlarına girmek istemiyorum. Yani çözüm bu. Daha önceden yaptık bakın. C1'i, C2, C3'ü, A, B, C cinsinden yazdım. Tamam mı? Yani bu. Yukarıdaki denklem bu. Gerçekten de A matrisi, tipik bir A matrisi, izi sıfır olan tipik bir A matrisi, bakın dikkat edin yazıldı. Yani alfa, T1'in elemanlarına, B1,
+
+493
+01:37:11,699 --> 01:37:30,600
+V2, V3 diyelim, tamam mı? Gama, V3, buradaki V1, V2, V3, 2x2'lik, gizli sıfır olan yukarıda verdiğim matrislerdi, tamam mı? Yani alfa sayısını ben ne buldum? İşte B-C, böyle 2. Beta sayısını ne buldum? Bu. Gama sayısını ne buldum? Bu.
+
+494
+01:37:31,600 --> 01:37:37,659
+Lineer kombinazonu olarak yazılıyor mu? Yazılıyor. O zaman geriyor mu bu tevkümesi? W, geriyor.
+
+495
+01:37:38,644 --> 01:37:45,264
+Ne kaldı geriye? Lineer bağımsız mı değil mi? O zaman da ne yapacaksın? Sağ tarafı sıfır olan referans denklemini işleteceksin.
+
+496
+01:37:47,243 --> 01:37:57,344
+Ne yapacaksın? Bir de lineer denklem sistemi çözeceksin. Yani o sistemin sadece ve sadece sıfır çözümü olduğunu görmek için değil mi? Gerçekten de öyle.
+
+497
+01:37:59,484 --> 01:38:05,384
+Ama size bakın, size pratik bir şey göstereyim arkadaşlar.
+
+498
+01:38:07,028 --> 01:38:10,828
+Pratik bir şey göstereyim size. O da şu.
+
+499
+01:38:17,408 --> 01:38:25,888
+Bakın, bu uzaylar hoşunuza gidiyor sizin, biliyorum yani. Nispeten daha kolay değil mi? Bazı şeyleri görmek.
+
+500
+01:38:25,888 --> 01:38:33,568
+Ama yani, işte M çarpı N matrislerin vektör uzayını veya işte polinomların,
+
+501
+01:38:34,996 --> 01:39:01,915
+Veya fonksiyonların, vektör uzaylarını aldığında biraz yabancılık çekiyorsunuz. Ama şu var, bakın, ister polinom ister matris olsun. Siz bunları sıralı üçlü, beşli, üçlü, dörtlü, beşli neyse, sıralı enli olarak temsil edebilirsiniz. Tamam mı? Bak bunu iddia ediyorum ya, lineerce bir dersi veren her hoca bunu göstermez. Bak bir matrisi nasıl sıralı enli olarak gösterirsin? Sıralı en kareli hatta.
+
+502
+01:39:02,771 --> 01:39:07,492
+Yani hatta şey yapalım, yani 2 çarpı 2'li matrislerle konuşuyorduk, mesela bir tane matris alalım.
+
+503
+01:39:08,532 --> 01:39:12,011
+Yani hadi şöyle olsun, izli sıfır olan bir matris olsun, ne olacak ki?
+
+504
+01:39:12,632 --> 01:39:17,752
+Şöyle bir matris aldık, W'nun elemanı, o da 2 çarpı 2 vektör uzayının alt uzayıydı.
+
+505
+01:39:17,811 --> 01:39:24,652
+Bak, ben diyorum ki bu A matrisini R üzeri 4'ün elemanı olarak düşünebilirsin, temsil edebilirsin.
+
+506
+01:39:24,771 --> 01:39:28,511
+Nasıl? Matrisin satırlarını komponent gibi yaz, bak.
+
+507
+01:39:29,555 --> 01:39:37,455
+Önce ilk satırı, sonra peşinden hangi satır geliyorsa onu. Al sana R üzeri 4'ün elemanı. Yani matris oldu sıralı dörtlü.
+
+508
+01:39:40,475 --> 01:39:44,655
+2 çarpı 2'lik bir matrisi sen R üzeri 4'te temsil edebilirsin bu şekilde.
+
+509
+01:39:47,715 --> 01:39:52,955
+Tamam mı? Mesela polinom. Bir tane polinom alalım. İkinci derecede.
+
+510
+01:39:53,684 --> 01:40:03,363
+A x kare artı b x artı c. Bu polinomu re küpte bir vektör olarak gösterebilirsin. Nasıl gösterirsin? Bak yazıyorum.
+
+511
+01:40:04,823 --> 01:40:14,403
+Sıralama buysa, önce ikinci dereceler, sonra birinci dereceler, sonra da sabit terim geliyorsa, o zaman a, b, c vektörünün ta kendisidir bu polinom.
+
+512
+01:40:15,103 --> 01:40:20,003
+Neden? Çünkü bu polinom kat sayılarıyla tek türlü belirli değil mi? Ondan.
+
+513
+01:40:21,108 --> 01:40:36,427
+A'yı, B'yi, C'yi verdiğin anda A x kare, B x artı C polinomu diyorsun yani. Dolayısıyla A'sını, B'sini, C'sini biliyorsan, polinomu biliyorsun veya polinomu biliyorsan A'yı, B'yi, C'yi biliyorsun yani. Bakın bu temsiliyettir yani.
+
+514
+01:40:37,208 --> 01:40:45,108
+Yani dolayısıyla size mesela, bu da tüy olsun, size mesela bir tane küme verdiler. İşte P, Q ve R.
+
+515
+01:40:45,684 --> 01:41:12,304
+O da nerede? Şu polinomların vektör uzayında. Bak bunlar lineer bağımsız mı? Değil. Ya ben polinomyal bir eşitlikle, denklemle uğraşmayı sevmiyorum diyorsan, bu P'yi, Q'yu ve R'yi reküpte vektörler olarak temsil et. Tamam mı? Ondan sonra şu matrisin determinantına bak. Öyle değil mi? Şu matrisin determinantına bak.
+
+516
+01:41:13,076 --> 01:41:36,335
+Eşit mi veya eşit değil mi? Sıfır. Değil mi? Polinomlarla niye uğraşıyorsun ki? Ama burada dikkatinizi çekmek isterim. Sıra önemlidir yine. Yani eğer şu sırada veriyorsa size, A x kare, yani önce derecesi en yüksek terim gelecek şekilde veriyorsa polinomu, yani buna ne diyeceksin? A, B, C diyeceksin. Bununla temsil edeceksin. Tamam.
+
+517
+01:41:36,720 --> 01:41:59,240
+Ama eğer şu sırada, bazen de böyle yapıyorlar. Bakın, Px'i diyor ki, önce sabit terimle başlıyor. C artı, Bx artı, Ax kare. Önce sabit, sonra en yüksek dereceli terim gelecek şekilde. Bunu böyle yaparsan sıra C, B, A. Bu ikisi aynı şey değil, bu iki temsiliyet. Tamam mı? Hangi sırada verdiyse o sıraya riayet edecek şekilde bir vektörle temsil et, polinomunu. Evet.
+
+518
+01:42:06,547 --> 01:42:10,168
+Dersiniz var mı arkadaşlar bundan sonra? Beşte dersi olan var mı?
+
+519
+01:42:19,572 --> 01:42:22,012
+Evet, ben burada bitireyim isterseniz müsaadenizle.
+
+520
+01:42:30,131 --> 01:42:45,111
+Tabanı, bazı söyledik, standart olanı söyledik, standart olmayan tabanlar da olabilir dedik. Ama hepsinin ortak özelliğinden bahsettik. Bakın burada mesela 5.39'da 3 tane polinom vermiş. P2 uzay için taban mı değil mi?
+
+521
+01:42:48,291 --> 01:42:51,991
+Lineer bağımsızlıklarını göstermen lazım. P2'yi geldiğini göstermen lazım.
+
+522
+01:42:53,076 --> 01:42:59,216
+İster polinomyal eşitlikle uğraş, ister az önce gösterdiğim temsiliyeti kullan. Tamam mı?
+
+523
+01:43:05,524 --> 01:43:06,024
+Evet.
+
+524
+01:43:15,123 --> 01:43:41,343
+Bir örnek daha var. Boyutla ilgili ufak bir iki bir şey daha söylemem gerekiyor ama ben burada bitireyim isterseniz dersi tamam mı? Koordinatları ve geçiş matrislerinden bahsedeceğim önümüzdeki hafta. Buraya geçmeden önce bir on dakika daha devam edelim. Tevraf ederiz yani. Geride falan değiliz yani. Çok geride değiliz. Tamam mı? Sadece tamam ve boyuttan bahsettim ama biraz daha doldurmak isterim. Takviye yapmak istiyorum oraya. Evet, burada bitireyim ben dersi müsaadenizle.
+
+525
+01:43:41,760 --> 01:43:43,220
+Sorusu olan var mı içinizde?
+
+526
+01:43:47,539 --> 01:43:50,579
+O zaman haftaya görüşmek üzere. Hoşçakalın.
+
+527
+01:43:51,380 --> 01:43:52,300
+Görüşürüz hocam.

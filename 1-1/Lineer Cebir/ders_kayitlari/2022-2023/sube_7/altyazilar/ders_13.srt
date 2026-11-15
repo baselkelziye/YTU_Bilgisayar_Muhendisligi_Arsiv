@@ -1,0 +1,1455 @@
+1
+00:00:23,379 --> 00:00:26,839
+Evet, merhaba arkadaşlar. Duyuyor musunuz arkadaşlar beni?
+
+2
+00:00:32,723 --> 00:00:34,723
+Ses problemi yaşamıyoruz değil mi?
+
+3
+00:00:39,731 --> 00:00:57,271
+Evet, nerede kalmıştık? Onu bir bulayım. Koordinat vektörü geçiş matrisi onlardan bahsedeceğim ama oraya geçmeden bir 5-10 dakika taban boyut hakkında biraz daha konuşalım. İyice pekişsin orası. En son nerelerde kalmıştım? Onları bir hatırlamaya çalışayım.
+
+4
+00:01:00,051 --> 00:01:03,512
+Sorusu olan varsa sorularını cevaplayarak da başlatabilirim ders.
+
+5
+00:01:09,299 --> 00:01:10,340
+Var mı sorusu olan?
+
+6
+00:01:19,444 --> 00:01:22,963
+Evet, mikrofonu açıp konuşabilirsen [öğrenci] daha kolay olur bu şekilde.
+
+7
+00:01:25,984 --> 00:01:27,524
+Nedir sormak istediğin soru?
+
+8
+00:01:33,876 --> 00:01:38,695
+Yani beni duyuyor musunuz sorumu mu? Evet oldu bu cevabı.
+
+9
+00:01:45,012 --> 00:01:46,652
+Peki, sorusu olan var mı?
+
+10
+00:01:49,652 --> 00:01:51,271
+Ben sorayım mı mesela?
+
+11
+00:01:53,091 --> 00:01:55,792
+Mesela [öğrenci]'a sorsak, [öğrenci]'a. Orada mı?
+
+12
+00:01:56,431 --> 00:01:57,512
+Buradayım hocam, buyurun.
+
+13
+00:01:58,211 --> 00:01:59,951
+[öğrenci] listede gözüküyor.
+
+14
+00:02:06,260 --> 00:02:13,759
+[öğrenci] bize cevap verebilir mi? Taban ne demekti mesela? Geçen hafta tanımını vermiştim. İlk örnekle yaptım diye hatırlıyorum.
+
+15
+00:02:19,187 --> 00:02:24,447
+[öğrenci]'a sorsak, babanın ne olduğunu hatırlıyor musun [öğrenci]?
+
+16
+00:02:29,812 --> 00:02:37,951
+Arkadaşlar, bakın, 225-230 kişilik sınıftan, yani hepi topu 7 kişi gelmiş derse, 7 kişinin de ağzını bıçak açmıyor yani.
+
+17
+00:02:40,331 --> 00:02:42,331
+Yani işimi hiç kolaylaştırmıyor şimdi.
+
+18
+00:02:42,740 --> 00:02:59,199
+Bazı hocalar için bu çok ideal bir tavrı. Soru soran yok, anlattım çıktım gittim diyor adam. Vazifemi yaptım, dersimi verdim. Ben tam tersi. İstiyorum ki öğrenciyle konuşayım, interaktif bir ders yapalım. Bana soru sorusunu öğrenci istiyorum. Ama sizden soru da gelmeyince online ders iyice çekilmez oluyor.
+
+19
+00:03:02,000 --> 00:03:05,600
+Yok mu sorusu olan? Sorusunu cevaplayarak başlayalım dersi. Hadi bakalım.
+
+20
+00:03:09,108 --> 00:03:09,987
+Evet, yok.
+
+21
+00:03:16,180 --> 00:03:42,099
+Bu online eğitim şilemiz de bitecek haftaya zaten. Bakın tabandan kasıt neydi? Üstünden hızlıca geçelim. Vektör uzayının bir tabanı. Ne demekti? Yani vektör uzayının bir takım elemanlarından oluşuyor bu taban dediğim koleksiyon veya alt küme ama özel bir takım elemanlar. Zaten özel olmalarından mütevellit ben onlara üreteç diyorum. Yani bir şey üretiyorlar ki taban oluyorlar değil mi?
+
+22
+00:03:42,479 --> 00:04:03,740
+Yani sadece ürettiklerinden dolayı da değil. Yani üretmelerinden kastımda uzayı geriyorlar. Bu bir özellik. İkinci özellik de lineer bağımsızlıklar. Değil mi? Bu iki özellik olduğu müddetçe aldığın koleksiyon veya alt kümeni oluyor. Uzayın tabanı veya bazı oluyor. Başka ne demiştik mesela? Uzayın birden fazla tabanı olabilir ama hepsinin ortak özelliği şu, aynı sayıda eleman içerir. Değil mi?
+
+23
+00:04:05,907 --> 00:04:27,648
+Başka ne söylemiştik? Mesela boyutu da zaten tabanın tanımını yaptıktan sonra hemen peşinden söyleyebiliyorsunuz. Yani tabandaki, her ne zaman size bir taban verirse taban elemanlarının sayısı uzayın boyutudur. Yani mesela re kare, düzleminin boyutu neden iki? İki tane lineer bağımsız vektörle gerebildiğin için. Değil mi? Veya yani şöyle söyleyeyim.
+
+24
+00:04:27,983 --> 00:04:49,343
+Hangi tabanı alırsan al düzlemin? Orada iki tane eleman olduğu için, değil mi? Reküp, neden boyutu üç? Üç boyutlu uzay diyorsun, niye üç? Çünkü üç tane lineer bağımsız vektörle gerebildiğin için, vektörle gerebilir misin? Geremezsin. Ama iki boyutlu bir alt uzayını gerebilirsin.
+
+25
+00:04:49,812 --> 00:05:03,852
+Reküp'ün içinde. O başka bir şey. Değil mi? Bunları böyle birbirlerine karıştırmadan anlayabildiyseniz memnun size. Taban, boyut, bunlar çok önemli kavramlar. Bakın, ben şu örneği verdiğimi hatırlıyorum 5.39'u.
+
+26
+00:05:08,652 --> 00:05:11,951
+Mesela örnek 5.40, bunu anlattık mı anlatmışız diye.
+
+27
+00:05:13,651 --> 00:05:24,731
+Düşünüyorum. Yani burada belli kriterler var mesela pratik kullanabileceğiniz test sınavda. Bu arada final sınavı da aynen vizede olduğu gibi online olacak diye bir duyuru yapıldı mı size arkadaşlar?
+
+28
+00:05:26,432 --> 00:05:26,991
+Evet, yapıldı.
+
+29
+00:05:27,011 --> 00:05:38,991
+Rektörümüz böyle bir tweet atmış. Ben son anda fark ettim ama bana gelen resmi bir bilgilendirme yok herhalde. Yani bu şekilde olacak. Senato kararından bahsediyor orada. Size bilgilendirme yapıldı mı arkadaşlar bölümünüzde?
+
+30
+00:05:42,324 --> 00:06:00,364
+Haberiniz var mı? Yüz yüze diye sınava gelmenize gerek kalmadı diye ben anlıyorum bunu yani. Tamam mı? Sürekli değişiyor yani kurallar, kararlar sürekli değişiyor. Onu da söyleyeyim yani kesin bilgilendirmeyi de elli kulağında herhalde yaparlar bugün yarın.
+
+31
+00:06:00,723 --> 00:06:08,103
+Şimdi bakın, bu örnek 5.40'taki 3 tane vektör. Reküpte 3 vektörden bahsediyorsan, bunları sütün kabul eden 3x3'lük bir kara matris monte edersin.
+
+32
+00:06:08,403 --> 00:06:15,723
+Onun determinantına bakarak verilen bu vektörlerin, lineer bağımlı mı, lineer bağımsız mı olduğunu pratik bir şekilde tespit edebilirsiniz, değil mi?
+
+33
+00:06:16,183 --> 00:06:21,243
+Determinantın 0 olup olmamasıyla alakalıydı, hatırlarsanız. Determinant 0 değilse, lineer bağımsız oluyor.
+
+34
+00:06:22,343 --> 00:06:26,083
+Matrisin sütünleri veya işte satır olarak konumlandırdıysan, satırları fark etmez.
+
+35
+00:06:26,803 --> 00:06:36,103
+sıfır olsa da lineer bağımlı oluyor. Bunu da söylemiştik, hatırlıyorum. Boyutun ne olduğunu söyledik, tamam.
+
+36
+00:06:39,668 --> 00:06:45,007
+Şimdi reküpte 3 tane lineer bağımsız vektör tabandır. Aynen. Bunu da söylemiştik.
+
+37
+00:06:46,327 --> 00:06:53,168
+Şimdi bakın. Mesela örnek 5.46'da. 4 tane, yok 3 tane vektör var reküpte.
+
+38
+00:06:53,875 --> 00:07:11,435
+Yani bakın burada sayı da kafa karışıklığı olmasın. Yani Reküp'te size verilen her üç vektör otomatikman baz olmaz. Yani sayının üç olması değil, o üç vektörün lineer bağımsız olması ve uzayı germesi sebebiyle baz olur.
+
+39
+00:07:13,172 --> 00:07:37,812
+Yani re karede size kim iki tane vektör verse bu otomatikman bazdır demeyeceksin. Yani sayısının iki olması değil, lineer bağımsız ve uzayın geldiği halde iki olduğu için. Tamam mı? Evet. Mesela örneğin 547, yani az önce söylediğim örnekten yani tıp atıp aynı. U1, U2, U3'ü bir matrisin satırları veya isterseniz sütunlar olarak sıralayın.
+
+40
+00:07:38,708 --> 00:08:04,108
+Değil mi? Böyle bir kare matris monte edin, determinantına bakın, olsun bitsin yani. Determinant sıfır olmadığı için bunlar zaten lineer bağımsızdır. Size bir teorik bilgi vermiştim hatırlarsanız. Taban olmak için iki şart gerekiyor. Bir, koleksiyondaki veya kümenizdeki vektörlerin lineer bağımsız olması gerekiyor. İki, uzayı gelmesi gerekiyor. Ama bunun şöyle bir indirimi var. İndirimden şunu kastediyorum. Eğer size verilen uzayın boyutunu biliyorsanız,
+
+41
+00:08:05,076 --> 00:08:10,696
+Ta en başında biliyorsanız uzayın boyutunu, o zaman bu iki şarttan birinde indirime gidebilirsiniz.
+
+42
+00:08:11,496 --> 00:08:16,836
+Yani bu indirimden kastım şu ama, yani biri sağlanıyorsa öbürü sağlanmasa da olur anlamında söylemiyorum.
+
+43
+00:08:16,996 --> 00:08:20,356
+Biri sağlanıyorsa öteki de otomatikman sağlanıyor, teyit etmene gerek yok.
+
+44
+00:08:21,796 --> 00:08:25,976
+Neyin ışığında bunu söyleyebiliyorsunuz? Uzayın boyutunu biliyor isen.
+
+45
+00:08:27,056 --> 00:08:30,656
+Biliyor isen, mesela elindeki koleksiyon.
+
+46
+00:08:31,007 --> 00:08:57,268
+Lineer bağımsız vektörlerden oluşuyorsa, gerip germediğine bakmana gerek yok. O zaten otomatik sağlanıyordur. Taban deyip çıkacaksın veya elindeki koleksiyon uzayı geriyorsa, lineer bağımsız mı diye bakmana gerek yok. Zaten o da sağlanacak otomatik. Bunun ispatı var ama vermedik size. Gerek yok çünkü test sınavı oluyorsunuz. Kimse ispat sormayacak. Sürekli söylediğim gibi. Burada da aynı şekilde yani 5.47 örnek.
+
+47
+00:08:57,652 --> 00:09:14,792
+R küp diyor, boyutu 3. 3 tane vektör vermiş, bunlar taban mı değil mi? Sadece lineer bağımsızlığını göstersen yeter. Onun içinde matrisi monte et, determinantına bak. Ben böyle yapmak istemiyorum, uzayı geldiklerini göstermek istiyorum, taban olduklarını teyit etmek için diyorsan, onu da yapabiliriz.
+
+48
+00:09:18,004 --> 00:09:30,304
+Burada teorem 5.48'i söyleyelim arkadaşlar. Bakın yazarak size anlatmaya çalışayım bu kısmını. Bu teorem önemli çünkü şunu söylüyor teorem 5.48.
+
+49
+00:09:39,827 --> 00:09:40,607
+Oyutlu
+
+50
+00:09:44,019 --> 00:09:54,860
+vektör uzayı olsun, tamam mı? Bunun bir tane de tabanını alalım. Yani boyut n ise n tane üreteç var demektir. Tabanda değil mi? V1, Vn, bu da taban olsun.
+
+51
+00:09:58,611 --> 00:10:00,652
+Bir tane keyfi eleman alalım, herhangi.
+
+52
+00:10:05,076 --> 00:10:07,596
+Bu takdirde bakın, teoremin söylediği şey şu.
+
+53
+00:10:10,155 --> 00:10:10,796
+Pardon.
+
+54
+00:10:18,196 --> 00:10:35,496
+W'yu şöyle yazarsınız, alfa 1, V1, alfa N, VN olacak şekilde tek türlü. Bakın, bu yazdığım sembol yani mevcut ve ünlem işaretleriyle birlikte, mevcut ama tek türlü, yani birden fazla değil, tek. Bu alfa İ skalerleri tek türlü.
+
+55
+00:10:36,275 --> 00:11:02,955
+Mevcut. Yani ne yapıyorsunuz bu? Uzaydaki, yani bunu amostra gibi düşünün, amostralık vektör gibi, numune gibi düşünün. Yani tabandaki elemanların cinsinden, cinsinden kastım ne? Onların lineer kombinazonu gibi yazıyorsunuz. Ama tek türlü olması da şu. Bu skalerler alfa bir, kombinazonda skalerler tek türlü. Zaten bu tabana göre vektörün koordinatı oluyor bunlar. Tamam mı? Koordinatı oluyor. Yani onu da birazdan bu notasyonu kullanacağım. Ve vektörünün.
+
+56
+00:11:03,264 --> 00:11:07,543
+B tabanına göre ifadesi, koordinat vektörü şu.
+
+57
+00:11:09,304 --> 00:11:10,064
+Tamam mı? Yazalım.
+
+58
+00:11:10,944 --> 00:11:16,144
+V'nin koordinat vektörü diyoruz buna.
+
+59
+00:11:17,244 --> 00:11:19,024
+Yani B tabanına göre koordinatları.
+
+60
+00:11:19,543 --> 00:11:24,224
+Neyi kastediyorum? B'deki vektörlerini lineer kombinazon olarak yazdığımda, işte o kombinazondaki katsaylar.
+
+61
+00:11:26,043 --> 00:11:26,564
+Evet.
+
+62
+00:11:26,991 --> 00:11:39,831
+Tek türlü, tamam mı? He, başka bir vektör alırsan, tamam, başka bir vektör alalım. Başka bir vektör alalım, başka, başka bir eleman alalım, W alalım mesela.
+
+63
+00:11:40,131 --> 00:11:45,751
+Bunu da tabandaki elemanların lineer kombinazorunu gibi yazacaksın ama kat sayılar değişik. Yani her vektörün kendi kat sayıları, koordinatları var.
+
+64
+00:11:46,891 --> 00:11:54,011
+Bunu kastediyor. Ona da ne diyelim, mesela beta 1'leri kullanalım bunun kat sayıları olarak da. Bakın, beta n,
+
+65
+00:11:55,028 --> 00:12:07,067
+Yani burada ne diyeceksin? W vektörünün gene aynı baza göre yazılışı, süslü B, beta 1, beta n.
+
+66
+00:12:09,447 --> 00:12:20,548
+Katsayılar değişiyor. Tören 5.48'in söylediği bu. Benim size anlatacağım bu hafta koordinat vektörü ve geçiş maddesi diye bir şey anlatacağım size.
+
+67
+00:12:23,187 --> 00:12:44,008
+Yazalım. Koordinat vektörü ve geçiş, transition matrix derler buna. Bir tabandan diğerine, geçiş matrisi. Yani bir uzayda birden fazla taban olabilir. O zaman bu tabanlardan birinden diğerine geçebilir miyiz?
+
+68
+00:12:44,436 --> 00:13:12,355
+Geçebilirsin. Peki bu geçişi yapan kimse var mı? Bundan sorumlu birisi var mı? Var. O da bir matris. İşte o matrisi geçiş matrisi diyoruz. Yani bir tabandan diğerine geçiş matrisi. Bugün ondan bahsedeceğim ama oraya geçmeden sıralı taban kavramından bahsedelim. Tanım, sıralı, taban. Tabanın ne olduğunu biliyorsun da sıralı olursa ne olur? İşte yani tabanın elemanlarını bir sıraya riayet edecek şekilde. Yani bunu tanım olarak yazmasam bile olur yani.
+
+69
+00:13:12,436 --> 00:13:19,696
+şu sıralı taban olsun dediğinde şunu kastediyorsundur. Yani bu elemanları nasıl dizdiğinin bir önemi var.
+
+70
+00:13:20,235 --> 00:13:27,096
+Sırayı bozarsan ne olur? O farklı bir taban olur anlamında. Mesela hadi şuraya bir tane de V2 koyalım.
+
+71
+00:13:27,096 --> 00:13:35,655
+Sen mesela V2 ile V1'in yerini değiştirirsen, şu koleksiyonu alırsan bak bu da bir taban. Ama ilkinin aynı değil. Niye? Çünkü burada farklı bir sıra var.
+
+72
+00:13:37,196 --> 00:13:38,828
+Tamam mı? Buna mesela beta...
+
+73
+00:13:38,932 --> 00:14:05,672
+Üssü diyebilirsin. Mesela bu da farklı, sıralı bir tamam olmuş olur. Tamam mı? Yani ben burada bir soru sordum, mesela diğer sınıflarından birine, yani öğrenci bunu Türev diye anladı ya, ben yani bu hayretler içerisinde kaldım diye. Beta üssü yazdık diye o üssünü Türev olarak anlıyor. Türev ile ne alakası var şimdi bu yazdığı?
+
+74
+00:14:10,131 --> 00:14:15,671
+Yani mesela V1 ile V3'ün yerini değiştir. Mesela V3'ü, V1 yaz.
+
+75
+00:14:20,083 --> 00:14:34,023
+B1'i B3 yaz mesela, pardon. 3'ü 1'e koy, 1'i 3'e koy. 2'yi hiç değiştirmeyelim mesela. Yani bu da başka bir taban. Mesela B2 üstü diyelim, ikinci türevi değil yani.
+
+76
+00:14:36,123 --> 00:14:47,563
+Farklı bir sıralı taban. Yani sıraya riayet etmek söz konusuysa o zaman tabanımıza sıralı taban diyoruz. Yani sadece bunu vurgulamak istedim arkadaşlar. Kaç kişi var şu anda? 9 kişi var.
+
+77
+00:14:48,436 --> 00:14:49,536
+Sorusu olan var mı?
+
+78
+00:14:54,644 --> 00:15:10,663
+Evet, yok, devam edelim. Koordinat ve geçiş maddesinden şu anda size bahsedeyim. Bakın sıralı tabandan, ne diyor burada? Buraya kadar tabandaki vektörlerin sırasında çok önem vermedik. Bu kısımda sıralı tabandan söz edeceğiz. Tamam, neymiş? Az önce söylediğim şey tabii ki.
+
+79
+00:15:14,043 --> 00:15:21,943
+Yani bir tabanda elemanların sırasını değiştirirsen o taban olmaktan çıkmıyor ki. Sadece farklı bir taban gözüyle bakıyorsun yani, sıra değiştiği için.
+
+80
+00:15:22,836 --> 00:15:28,855
+Şimdi bir dakika, burası bitti, bize artık 13. haftanın şeyi lazım, tamam, burası.
+
+81
+00:15:29,975 --> 00:15:38,336
+Mesela T1, V vektör uzayının, en boyutlu V vektör uzayının, yani bunun boyutunun en olduğunu söyleyelim ki, yani burada neden en tane üreteş olduğunu anlayabilirsiniz.
+
+82
+00:15:39,635 --> 00:15:46,216
+V'nin sıralı bir tabanı ise, bakın, yani ilk iki elemanın yerini değiştirdiğinde o sana başka bir, farklı sırada bir taban verir.
+
+83
+00:15:46,795 --> 00:15:49,556
+Tamam mı? Şimdi peki, tanım 549'a bakalım.
+
+84
+00:15:50,836 --> 00:16:01,716
+Az önce söylediğim şey, yani bir vektörü bir tabana göre yazdığında, lineer kombinazondaki skalerler o vektörün o tabandaki koordinatları oluyor.
+
+85
+00:16:03,336 --> 00:16:07,816
+Koordinatları oluyor. Notasyonda, aynen benim demin size verdiğim notasyon.
+
+86
+00:16:07,895 --> 00:16:12,056
+Bakın, V vektörü herhangi bir vektör, T tabanını vermiş yukarıda, sıralı tabanı.
+
+87
+00:16:17,812 --> 00:16:25,812
+C1, C2, Cn ne demek? Yani V vektörünü, t'nin elemanları olan V1, V2, Vn'in lineer kombinazonu gibi yazarsan, kullanacağın kat sayılar bunlar demek.
+
+88
+00:16:27,111 --> 00:16:34,251
+Tamam mı? Şimdi, 5.50 örneğimize bakalım. Şimdi bakın, yazalım isterseniz buraya da.
+
+89
+00:16:42,355 --> 00:16:47,255
+Örnek 5.50. Yani uzay olarak reküpü vermiş, tamam mı?
+
+90
+00:16:53,844 --> 00:16:55,344
+Bir t tabanı veriyor.
+
+91
+00:16:57,024 --> 00:17:12,463
+Elemanları 1, 2, 4 olan bir vektör var burada. Başka buna 1, 2, 4, 0, eksi 1, 2, 0, eksi 1, 2, eksi 5, 1, 0, eksi 5, 1, 0.
+
+92
+00:17:13,564 --> 00:17:14,024
+Tamam mı?
+
+93
+00:17:14,724 --> 00:17:20,104
+Bunlara da isterseniz u1 sırasıyla u2, u3 diyelim bu vektörlere.
+
+94
+00:17:21,523 --> 00:17:27,403
+Mesela için, bu yazdığım t bir taban, sıralı bir taban.
+
+95
+00:17:29,463 --> 00:17:38,423
+Sıralı tabandır. Yani bunun gerçekten taban olup olmadığını isterseniz bir kez daha, yani check edebilirsiniz.
+
+96
+00:17:38,723 --> 00:17:42,003
+Yani lineer bağımsızlıklarını gösterseniz, kâfi neden? Çünkü boyutunu vermiş size.
+
+97
+00:17:42,663 --> 00:17:46,423
+Ya da uzaya geldiğini gösterseniz yeterli. Lineer bağımsız da olurlar.
+
+98
+00:17:46,867 --> 00:18:11,607
+Ama lineer bağımsızlıklarını göstermek daha kolay çünkü 3x3'lik kare matrisinin determinantına bakacaksınız değil mi? Sıfırdan farklı olduğunu gördüğünüz anda lineer bağımsız diyeceksiniz. Oradan da otomatikman taban olacak. Bizim sorumuz bu değil. Sorumuz ne peki? Sorumuz şu arkadaşlar. Bakın. Bana bir vektör veriliyor. Koordinatları. Eksi 4, 4, 2 olan vektör. Bunu t bazına göre koordinat vektörünü yazın diyor. Tamam mı? Şu.
+
+99
+00:18:16,660 --> 00:18:20,240
+1-4, 4, 2
+
+100
+00:18:23,923 --> 00:18:48,903
+vektörü verilsin. Bizden istediği u vektörünün t bazına göre ifadesi, yani o da sütün matrisi olacak, bu kimdir? Tamam mı? İstediği bu. Ne demek? Bir vektörü bir tabana göre yazmaktan ne kastediyoruz? Tabandaki elemanların lineer kombinazonu gibi yazmaktan bahsediyoruz değil mi? O kombinazondaki skalerler t.
+
+101
+00:18:49,460 --> 00:19:08,559
+Görünür şekilde, ekranı biraz daha kaydırdım ki, t'yi görün yukarıda. Şimdi uyu, yazacaksınız nasıl? Alfa çarpı u1, beta çarpı u2, yani burada alfa, beta, gamma ise bunların kim olduğundan nereden bulacaksınız? Şu son yazdığım denklemden bulacaksınız değil mi? Buradaki.
+
+102
+00:19:09,523 --> 00:19:17,883
+Alfa, beta, gamma'yı bulacaksınız. Koordinat vektörünü veya t'ye göre koordinatlarını bulmak istiyorsanız, bu verilen u vektörünün yapmanız gereken işlem tam da bu.
+
+103
+00:19:18,703 --> 00:19:22,963
+Yazalım, eksi dört, her şeyi yerine koyalım, herkesi yerli yerine.
+
+104
+00:19:24,423 --> 00:19:27,243
+U bir, bir iki dört.
+
+105
+00:19:29,943 --> 00:19:31,123
+Bir, iki, dört.
+
+106
+00:19:35,859 --> 00:19:39,619
+eksi beş, bir sıfır.
+
+107
+00:19:45,364 --> 00:19:49,584
+Beta'nın vektörü hangisiydi? 0, eksi, bir, iki.
+
+108
+00:19:51,564 --> 00:19:53,744
+0, eksi, bir, iki. Evet arkadaşlar.
+
+109
+00:19:54,664 --> 00:19:56,924
+Gördüğünüz gibi burada iki vektörün eşitliği var değil mi?
+
+110
+00:19:57,584 --> 00:20:01,024
+Nasıl? O da size bir lineer denklem sistemine götürür.
+
+111
+00:20:01,684 --> 00:20:02,484
+Yani nedir bu?
+
+112
+00:20:03,464 --> 00:20:07,564
+Alfa, eksi, beş, gama, eşittir. Eksi, dört.
+
+113
+00:20:07,988 --> 00:20:16,148
+2 alfa eksi beta artı gama eşittir 4. Bir tane lineer denklem sistemiyle karşılaşacağız değil mi? Homojen olmayan.
+
+114
+00:20:17,028 --> 00:20:28,028
+4 alfa artı 2 beta eşittir 2. Bu denklemin çözümü var mı yok mu diye bakacaksınız. Varsa alfa beta gama bilinmeyenleri çıkacak. Çözüm bekliyorum. Değil mi?
+
+115
+00:20:29,128 --> 00:20:35,088
+Yani bu kısmını size bırakıyorum. Katseler matrisine bakarsanız bunun zaten A matrisine. Değil mi?
+
+116
+00:20:36,596 --> 00:20:53,296
+Katseriler matrisini, buna şöyle diyelim, AX, B şeklinde yazalım. A matrisini 1, 0, eksi 5, 2, eksi 1, 1, 4, 2, 0 diye yazarsanız, bunun determinantına bakın, ben 0 olmadığını tahmin ediyorum.
+
+117
+00:20:54,316 --> 00:21:03,675
+Tamam mı? Dolayısıyla, ne olurdu 0 olmadığı zaman? Hangi metodu kullanabilirsiniz burada? Kendimi söyleyin.
+
+118
+00:21:07,635 --> 00:21:10,736
+Sigma, yani çözüm vektörü, alfa, beta, gamma, bu kimdir?
+
+119
+00:21:17,172 --> 00:21:21,392
+Yani bunları daha önceden anlattık değil mi? Lineer denklem sistemleri 7. 8. haftanın konularıydı.
+
+120
+00:21:21,512 --> 00:21:24,272
+Yani şimdi oraya dönüp tekrar denklem sistemi çözmeyeceğim size.
+
+121
+00:21:24,372 --> 00:21:28,052
+Yani bunu bulursunuz yani. Çok kolayca bulabilirsiniz bu sistemin çözümün.
+
+122
+00:21:28,052 --> 00:21:34,092
+Tek çözüm olduğunu göreceksiniz. Ben oraya çözümü kitaptan kopyalayacağım şimdi.
+
+123
+00:21:34,152 --> 00:21:38,272
+Alfa, beta, gamma sayılarını çekelim. Ara işlemleri yapmayacağım çünkü.
+
+124
+00:21:40,147 --> 00:21:45,548
+Bakın, alfa, beta, gama, yani benim orada alfa, beta, gama dediğime bu K1, K2, K3 değilmiş.
+
+125
+00:21:45,887 --> 00:21:54,067
+1-1, 1.
+
+126
+00:21:55,208 --> 00:21:55,827
+Değil mi?
+
+127
+00:21:56,647 --> 00:22:06,307
+Yani o zaman U vektörünün T bazına göre koordinatları kimdir dersen 1-1, 1 diyeceksin. Sorunun cevabı bu.
+
+128
+00:22:11,988 --> 00:22:39,048
+Evet. Şimdi geçiş matrisini yazalım arkadaşlar. Bakın geçiş matrisinin kim olduğunu size şu anda tanımlayabilecek durumdayım. Bu hafta çok fazla konu yok. Geçiş matrisi çarşabuk anlatılabilecek bir şey. Çok fazla bir konu yok. O yüzden yani iki saat dolu dolu ders yapacak kadar materyal yok, teyorik materyal. Bakın şimdi geçiş matrisini şu anda size tanımlayabilecek durumdayım. Geçiş matrisi.
+
+129
+00:22:45,364 --> 00:23:10,263
+En boyutlu vektör uzayı. İki tane taban alayım arkadaşlar buradan. V1, VN, sıralı iki taban. Tamam mı? U1, UN, sıralı iki taban olsun.
+
+130
+00:23:16,180 --> 00:23:20,619
+Bu durumda bu bazlar arasında bir geçişten bahsedebilirsiniz.
+
+131
+00:23:21,160 --> 00:23:25,539
+Yani mesela size bir tane V elemanı verilsin, olsun. Tamam mı?
+
+132
+00:23:26,819 --> 00:23:33,740
+Bu V vektörünü istersen S bazında da yazabilirsin, istersen diğer baz olan T'ye göre de yazabilirsin. Öyle değil mi?
+
+133
+00:23:35,740 --> 00:23:39,640
+Peki bunlar arasında bir ilişki var mı sorusunda sorabilir miyiz?
+
+134
+00:23:40,660 --> 00:24:00,640
+Tamam, şununla şu, bunlar arasında bir münasebet var mı? Yani bir geçişkenlik var mı? Birinden diğerine, ötekinden berikine gidiş var mı? Evet var mı? Peki bunu kim yapıyor? Yani aracı konumunda olan kim? İşte geç matrisi dediğim tam da bu. Birinden diğerine geçişten bir matris sorunlu arkadaşlar. Tamam mı? Bu matrize geç matris diyoruz. Şimdi onu tanımayacağım.
+
+135
+00:24:12,756 --> 00:24:39,716
+S'den T bazına geçiyoruz. Bu yönde bir geçiş veya gidiş söz konusu olsun. Ben madem ki vektör uzayının herhangi bir elemanını istediğim tabana göre yazabiliyorum, o zaman tabanın elemanlarını da özel olarak, vektör uzayının elemanı olarak düşünürsek, diğer tabanın elemanlarını kombinazon olarak yazabilirim pekala. Öyle değil mi?
+
+136
+00:24:40,564 --> 00:24:47,264
+Yani, bakın mesela, S'nin herhangi bir elemanı, S'nin elemanlarına biz ne demiştik bakalım, şu.
+
+137
+00:24:48,163 --> 00:24:55,584
+Bakın arkadaşlar, yani, bu V eleman V için ne dedik? İster S ister T tabanına göre yazın. Bu ne demek?
+
+138
+00:24:55,724 --> 00:25:03,284
+Yani burada, işte mesela, alfa İ'ler diyelim, V İ'lerin kombinazonu olarak. T bazına göre yazarsan işte, ne diyelim, beta İ'ler.
+
+139
+00:25:03,647 --> 00:25:30,647
+T'nin elemanları kim? U, İ'ler. Şunu kastediyorum. Yani S ve T tabanlarına göre yazmaktan bunu kastediyorum. İ de, yani siz çok özel olarak V'nin herhangi bir elemanı değil de, senin bizzatü üreteçlerini alsanız bu. Yani o aldığınız V elemanı olarak üretecin kendini düşün. Her bir üreteci. Bunları da yazmayı deneyebilirsin, değil mi? Yani o zaman şu olur bak. O zaman şu olur.
+
+140
+00:25:31,796 --> 00:25:39,616
+Yani, S'nin elemanlarını şurada yazalım, V1, Vn, bakın bunların her birini,
+
+141
+00:25:43,220 --> 00:25:54,900
+t bazında yazmayı deneyebilirsiniz. İsteyebilirsiniz yani. V2, t, vn'i t bazına göre yazmak isteyebilirsin.
+
+142
+00:25:55,160 --> 00:26:04,900
+Veya, bakın t'nin elemanları için de bunu yazabilirsin. t'nin mesela elemanı olan u1'i gidip s bazına göre yazmak isteyebilirsin. Değil mi? u2.
+
+143
+00:26:06,612 --> 00:26:16,332
+T'nin ikinci elemanı olan U2'yi gidip test bazına göre yazmak isteyebilirsiniz. Her bir elemanın içinde bunu yapmak isteyebilirsiniz, değil mi?
+
+144
+00:26:19,192 --> 00:26:33,332
+Evet, S'den T'ye geçiş matrisini şöyle diyelim, bakın. S'den T'ye. Buna ne diyelim? S tabanından T tabanına
+
+145
+00:26:33,491 --> 00:26:35,412
+Notasyon olsun bu tabanına.
+
+146
+00:26:37,471 --> 00:26:38,432
+Geçiş matrisi.
+
+147
+00:26:39,832 --> 00:26:44,332
+Nereden anlayacaksın? Aşağıya yazdığı ilk matris, hareket noktası bu, tamam mı?
+
+148
+00:26:44,652 --> 00:26:46,792
+Şöyle ok çizeyim size, şimdilik böyle anlayın.
+
+149
+00:26:46,872 --> 00:26:52,531
+Yani kimden kime geçiş olduğunu izah etmek için ama böyle ok işareti kullanmayabilir yani.
+
+150
+00:26:52,892 --> 00:26:54,491
+Bazı kitaplar kullanıyor, bazıları kullanmıyor.
+
+151
+00:26:54,612 --> 00:26:57,971
+Mesela sizin Türkçe kitabınız kullanmıyor ok işareti, kolmana bakarsan.
+
+152
+00:26:58,692 --> 00:27:00,491
+Bazen kullanıyor, bazen kullanmıyor.
+
+153
+00:27:01,076 --> 00:27:26,136
+Şimdi, o zaman bu maddesin tanımı nedir? Bakın, yazıyorum, tanım, geçiş maddesini, burada verildiği şekliyle, yani eğer geçiş S'den T'ye ise, bakın, S'den T'ye olduğunu söylediğim an, S'nin elemanları T cinsinden yazılacak demektir. Kimdi S'nin elemanları? V1, VN. Bunların her birini T cinsinden yazacaksınız, bakın.
+
+154
+00:27:27,443 --> 00:27:50,123
+Tamam mı? Şu. Bu maddesi kastediyorum. Tamam mı? Bunlar sütun. Bakın, sütun bunlar. En tane elemanı var, en tane sütunu var. Değil mi? Her bir sütunda en eleman var. Yani dolayısıyla bu geçiş maddesi burada, bu en boyutlu vektör uzayımız için, en çarpiyenlik bir kare maddisten başka bir şey değil. Peki, ötekini yazsak.
+
+155
+00:27:52,048 --> 00:28:14,468
+Geçiş eğer T'den S'ye ise, yani hareket başlangıç matrisim T ise, T'den S'ye gidiş söz konusuysa, T'nin elemanları ne? U, İ'ler. Değil mi? Hangi baza göre yazacağım? Bitiş. Bazım hangisi? S. S'ye göre koordinatlarını yazacağım. Bunlar hepsi bütün matrisleridir, tamam mı? Bunları böyle sıralayacağım.
+
+156
+00:28:18,548 --> 00:28:23,048
+M yazmam gerekiyor köşeli parantez içinde matris olduğunu vurgulamak için geçim matrisi.
+
+157
+00:28:23,627 --> 00:28:28,288
+Bu iki matris de birbiriyle ilişkili, biri diğerinin tersi. Bunu birazdan söyleyeceğim zaten.
+
+158
+00:28:29,708 --> 00:28:30,647
+Tamam mı?
+
+159
+00:28:31,788 --> 00:28:34,947
+Bakın, geçiş matrisini nasıl yazmış?
+
+160
+00:28:35,988 --> 00:28:42,167
+T tabanından, S tabanına geçişten bahsediyorsanız, T'nin elemanlarını S cinsinden yazarsınız.
+
+161
+00:28:42,907 --> 00:28:44,127
+Bunlar sütün olur.
+
+162
+00:28:44,788 --> 00:28:54,728
+S tabanından, T tabanına geçişten kastediyorsanız, S'nin elemanlarını P cinsinden yazarsınız. Bunları sütün kabul eden matrisden bahsediyoruz demek.
+
+163
+00:28:55,627 --> 00:29:05,008
+Şimdi, mesela burada 5.52, ben bu örneği size yazarak söyleyeyim. Takip edebiliyor musunuz arkadaşlar?
+
+164
+00:29:08,564 --> 00:29:11,384
+Sorunuz varsa sözümü kesip hemen araya girebilirsiniz.
+
+165
+00:29:17,395 --> 00:29:22,475
+Şöyle bir şey yapalım, oradaki örneği ben size yazarak göstermeye çalışayım.
+
+166
+00:29:32,500 --> 00:29:58,559
+Yani standart taban alayım size, tamam mı? 1, 0, 0. Bunun kim olduğunu söylemiştik daha önceden. 0, 1, 0, 0, 0, 1. İşte bu sizin i, j ve k diyebildiğiniz vektörler, tamam mı? Yani v1 vektörünüz i, v2 vektörünüz j, v3 vektörünüz de k, tamam mı?
+
+167
+00:30:00,000 --> 00:30:24,420
+Mesela burada sırayı değiştirsek, ikinciyi bir, birinciyi iki diye yazsak yeni bir taban buluruz değil mi? Şöyle yapalım. Yani J, İ, K. İki tane sıralı taban yazdım. Farklı. Yani buna da isterseniz, ötekinde V2 dediğime burada U1 diyorum. Yani anlatabiliyor muyum? U1, U2, U3. Çok da önemli değil yani.
+
+168
+00:30:25,172 --> 00:30:51,292
+Kısaca, i, j, k ve j, i, k da diyebilirdiniz. Tamam mı? Şimdi, s'den t'ye, t'den s'ye geçiş matrislerini yazmaya çalışalım mesela. Soru şu olsun. S'den t'ye geçiş matrisi kimdir? Siz burada hemen peşinden şunu da sorabilirdiniz. T'den s'ye geçiş matrisi kimdir? Değil mi? Benzer şekilde. Soru bu olsun.
+
+169
+00:30:53,652 --> 00:31:11,731
+Evet, tanımımız neydi bizim? Mesela bunlardan ilkini hesaplamak istiyorsak, tanımdan, bakın, nereden nereye gidiş var, hangi bazdan hangi baza geçiş var, S'den T'ye. O zaman S'nin elemanlarını T cinsinden yazmaktan bahsediyoruz.
+
+170
+00:31:11,731 --> 00:31:21,051
+S'nin elemanları kimdi? Sırasıyla İ, J ve K. İ, C ve K. Ama bunların T bazındaki ifadelerini yazmam gerektiğini.
+
+171
+00:31:21,491 --> 00:31:43,971
+Bunları sütun kabul eden vektör, pardon matris, 3x3'lük matris, değil mi? Şimdi o zaman sırasıyla bunların hepsini bulmam gerekiyor. Yani i vektörünün t bazındaki ifadesi kimdir? Yani 1, 0, 0'ın t bazındaki ifadesi. Bunu yazalım. Ne demek o?
+
+172
+00:31:47,859 --> 00:32:10,359
+0, 0 matrisini nasıl yazacaksın? İşte alfa, t bazı, dikkat ederseniz, j, i ve k idi sıralama. Yani 0, 1, 0, 1, 0, 0, artı gama 0, 0, 1 şeklinde. Yani buradaki, yani alfa, beta, gama ise bunları bulacağım, tamam mı?
+
+173
+00:32:13,140 --> 00:32:19,100
+Şu yazdığım son denklemin çözümünü elde ederek tespit etmeye çalışacağım. Buradan alfa kimdir?
+
+174
+00:32:23,220 --> 00:32:25,360
+Görebilen var mı? Bunu söyleyebilecek olan var mı?
+
+175
+00:32:28,160 --> 00:32:30,600
+Alfa nedir arkadaşlar burada?
+
+176
+00:32:33,740 --> 00:32:34,680
+Sıfır değil mi?
+
+177
+00:32:35,680 --> 00:32:41,200
+Yani bu denklemi çözemeyen öğrenci, çok kötü durumda derim yani.
+
+178
+00:32:41,880 --> 00:32:44,220
+Bu denklemi çözemeyen. Triviyel çünkü.
+
+179
+00:32:46,600 --> 00:32:47,580
+Beta nedir arkadaşlar?
+
+180
+00:32:50,387 --> 00:33:16,548
+1'dir değil mi? Gamma nedir? 0'dır. O zaman yani i vektörünün t bazına göre ifadesi veya koordinat vektörü ya da koordinatlarından neyi kastediyorum? 0, 1, 0'ı kastediyorum. Tamam mı? Bu durumda yazacağınız ilk sütun, yani buraya, şuraya yazacağınız ilk sütun işte odur. 0, 1, 0.
+
+181
+00:33:17,491 --> 00:33:40,991
+Diğerini bulalım, sıradaki J'nin T'ye göre ifadesi, tamam mı? Bakın benzer hesaplamaları yapacağım. J'nin T'ye göre ifadesi, tamam mı? Bunu hesaplayacağım. O ne demek? J vektörü kimdi? 0, 1, 0. T'deki elemanlar kimler? 0, 1, 0. 1, 0, 0.
+
+182
+00:33:41,683 --> 00:34:03,083
+0, 0, 1. Bunların lineer kombinasyonu olarak A, B artı C. ABC sayılarını bulacaksınız. Değil mi? A sayısı burada kimdir? 1'dir. B'nin 0 olduğu gözüküyor, C'nin de 1 olduğu gözüküyor. Yani C'nin T bazına göre ifadesi ABC.
+
+183
+00:34:03,827 --> 00:34:26,827
+Onlar da sırasıyla bir sıfır, bir dakika, burada C'nin sıfır olduğunu söylememiz gerekiyor, bir değil, değil mi? Bir sıfır sıfır. Ve nihayet, geçiş maddesinin son sütununu, yani K vektörünün T bazına göre ifadesinde yazarsanız, maddesinizi elde etmiş olursunuz. K vektörü sıfır, sıfır bir vektörüydü, tamam mı? Bunu...
+
+184
+00:34:27,347 --> 00:34:45,288
+Mesela K1 çarpı, t'nin elemanlarını iner kombinazonu olarak yazalım. 0, 1, 0, 1, 0, 0, K3, 0, 0, 1. Yani buradaki K1, K2, K3 sayılarını bulmanız gerekiyor değil mi?
+
+185
+00:34:55,411 --> 00:35:01,991
+sıfır olduğu gözüküyor, K2'nin sıfır olduğu gözüküyor, K3'ün bir olduğu gözüküyor arkadaşlar.
+
+186
+00:35:03,771 --> 00:35:11,572
+Yani bakın, şöyle kırmızı tik koyalım, bunlar benim geçiş matrisimin sütunları,
+
+187
+00:35:14,072 --> 00:35:22,072
+şuraya da bir tik koyalım, tamam mı? Bunları sütün olarak monte edeceğim, geçiş matrisimi elde edeceğim.
+
+188
+00:35:22,771 --> 00:35:33,971
+Nereden nereye? S'den T'ye. Çünkü S'nin elemanlarını T cinsinden yazdım. Tamam mı? Dikkat edin. Bak, ilk sütun 010. İkinci sütun, hadi iki tik koyayım, takip edebilmeniz kolay olsun.
+
+189
+00:35:34,471 --> 00:35:40,431
+10000, üçüncü sütun 001. Yazıyorum o zaman matrisimi.
+
+190
+00:35:46,492 --> 00:35:47,011
+Pardon.
+
+191
+00:35:51,059 --> 00:36:06,979
+M matrisi, nereden nereye? S'den T'ye. Ne dedik? Tekrar yazalım, son bir kez bakın. İ, İ'nin T'ye göre ifadesi, sonra J'nin T'ye göre ifadesi, sonra K'nın T'ye göre ifadesi.
+
+192
+00:36:07,039 --> 00:36:15,820
+Yani şuna bir tik demiştim, buna iki, buna üç demiştim ya, onları yazacağım şimdi. Sıfır, bir sıfır buldum. İkinci...
+
+193
+00:36:15,891 --> 00:36:20,471
+sütunu 1, 0, 0 diye bulmuştum. 0, 0, 1 diye buldum. Bu.
+
+194
+00:36:23,171 --> 00:36:39,271
+Şimdi size ödev olarak versem mesela, size de desem ki, benzer şekilde, siz de mesela, T'den S'ye geçiş maddesini bulun desem, ne diyeceksiniz bana?
+
+195
+00:36:40,500 --> 00:37:03,800
+Yani şunu yazacaksınız, t'den s'ye geçiş, t'nin elemanları kimlerdi? Sırasıyla c, i ve k. Ama bunları kime göre yazacaksınız? Bitişin bazı s olduğuna göre, s'ye göre. Yukarıda söylemiştim, tekrar etmiş oluyorum, bakın. Şimdi bunların hepsini t'ye ekte yazmanız gerekiyor. Mesela ben işte birinciyi nasıl yazacağınızı söyleyin bu sefer. Bunu nasıl yazacaksınız? Yani ne diyelim buraya?
+
+196
+00:37:04,659 --> 00:37:20,659
+C1, C2, C3 olsun. Bu C1, C2, C3'ten biz ne anlıyoruz yani? Şunu anlıyorsun, C0, 1, 0, senin 0, 1, 0 vektörünü...
+
+197
+00:37:22,675 --> 00:37:35,535
+T'nin birinci elemanı olan J vektörünü S cinsinden yazacağım. Tamam mı? Yani C1, S'deki vektörleri nasıl sıraladım? IJK diye sıralamıştım. Bakın bu sırada lineer kombinazorunu yazarsanız.
+
+198
+00:37:40,052 --> 00:37:47,392
+Tamam mı? Buradan C1, C2, C3'ü bulursunuz. Dolayısıyla bu matrisin birinci sütununu bulursunuz. Diğerlerinde aynı şekilde. Tamam mı?
+
+199
+00:37:50,352 --> 00:37:59,492
+Benzer şekilde bulursunuz. Ama bunları böyle müstakil, her birini ayrı ayrı hesaplamaya da gerek yok. Biri diğerinin tersi değil mi? Bakın, isterseniz bunu bu şekilde yapın.
+
+200
+00:38:00,172 --> 00:38:04,192
+Yani ikinci ve üçüncü sütunda bulun. Elde edeceğiniz, bulacağınız matris.
+
+201
+00:38:04,755 --> 00:38:16,775
+Şu yazdığım, kırmızıyla yazdığım maddesin tersidir arkadaşlar. Tamam mı? S'den T'ye buysa, T'den S'ye olan maddes bunun tersi olacak arkadaşlar. Yani bakın istersen şuraya yazayım.
+
+202
+00:38:19,175 --> 00:38:25,115
+Hay Allah. Şuraya yazayım bakın. Şöyle bir pencere açalım.
+
+203
+00:38:25,715 --> 00:38:41,856
+M geçiş matrisi. Bu defa T'den S'ye. Nedir o? 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1 matrisinin tersi. Şimdi sorabiliyorsunuz, ya bu matris tersinir mi? Tersinir olmasa zaten böyle bir şey söylemeyiz. Değil mi?
+
+204
+00:38:43,476 --> 00:38:51,596
+Tersi olan bir matris. Determinantından belli zaten. Sıfır olmadığından zaten regüler bir matris olduğunun.
+
+205
+00:38:52,179 --> 00:39:16,359
+Dolayısıyla tersin olduğu belli. Değil mi? Bu matrisin tersinin nasıl bulunabildiğini de gösterdik zamanında. İsterseniz buradan tek celsede bulatabilirdiniz veya müştakil, yani ilk matrisi S'den T'ye geçim matrisini nasıl bulduysanız, oradaki argümanların benzerini kullanarak burada da T'den S'ye geçim matrisini benzer şekilde bulabilirsiniz. Ama elde edeceğiniz matris, işte burada maviyle gösterdiğim matrisin ta kendisi.
+
+206
+00:39:16,359 --> 00:39:19,639
+Ya tabii hesaplamadım burada, değil mi? Bunu yazmak lazım.
+
+207
+00:39:24,115 --> 00:39:28,216
+Var mı sorusu olan arkadaşlar bunlarla ilgili? Buraya kadar anlattıklarımla ilgili.
+
+208
+00:39:30,256 --> 00:39:34,516
+Geçişim maddesinin tanımını anladınız mı mesela? Bak soru gelir bundan, finalde kesin banko gelir ya.
+
+209
+00:39:40,628 --> 00:39:50,388
+Yani taban kavrama oturmadıysa, tabandan tabana geçişi nasıl yapacak öğrenci? Değil mi? Daha tabanı kafasında oturtamayan öğrenciye, yani geçiş matrisini nasıl anlatacaksın? O da ayrı bir şey.
+
+210
+00:39:51,668 --> 00:40:00,628
+Şimdi biraz da, yani çok zaman geçmedi üzerinden, yani araya fazla zaman girmeden bunlara bakıp pekiştirmeniz faydanıza olur.
+
+211
+00:40:01,460 --> 00:40:21,340
+Faydanızı olur. Bu konular ağırlıklı gelir. Vektör uzaylarından itibaren son haftaya kadar bakın. Ben iddia ediyorum 20 sorudan en az 10'u buradan gelir. En az 10'u buradan gelir. Maddi sorusu sorulmaz mı? Deteminat sorusu sorulmaz mı? Sorulur da müstakil sorulmayabilir. Bir şeyin içinde.
+
+212
+00:40:22,228 --> 00:40:41,768
+kullanıcı kullandırılabilir. Değil mi? Ya şu matrisin determinantı aşağıdakilerde hangisidir diye bir soru sorulmayabilir. Bu sınavda o iyi sınav için olabilir öyle bir soru. Uygun olabilir. Bu sınavda o tarz bir soru gelmeyebilir. Yani sen determinant hesabı yaparak mesela vektörlerin lineer bağımlı mı, lineer bağımsız mı olduğuna karar verebilirsin mesela.
+
+213
+00:40:45,235 --> 00:41:05,675
+Evet. İki geçiş maddesini de bu şekilde söyledik. Bakın. Nasıl bulduk? Bak işte onun bulduğu maddesi aynı mı? Bakın. Benim bulduğum, yani burada bunun B1 dediğine ben S dedim, tamam mı? B2 dediğine T dedim. Yani burada bulduğu.
+
+214
+00:41:06,099 --> 00:41:17,500
+B1'den B2'ye geçiş maddesi benim yaptığımla S'den T'ye geçiş maddesi. Dikkat edin, bakın, onun bulduğu maddesiyle benim bulduğum maddesin aynı olması gerekiyor. İlk iki sütununa dikkatle bakın.
+
+215
+00:41:19,500 --> 00:41:31,500
+C, İ ve K vektörleri. S'den T'ye geçiş maddesi. Bakın, kendi notlarıma bakalım. S'den T'ye bakın, aynı. Tamam mı? Şu maddesi.
+
+216
+00:41:35,603 --> 00:41:38,764
+Aynı. Evet.
+
+217
+00:41:42,643 --> 00:42:00,703
+Şimdi bu sorunun devamı var. Devamında da şunu soruyor bakın. B şıkkına bakalım. B şıkkında da elimizde bir tane özel bir vektör var. 1-2-3 vektör. Bunun B2 tabana göre koordinat vektörünü bulmaktan bahsediyor. Yani benim yazdığım şekilde T tabanına göre. Tamam mı? O zaman ben devam ettireyim işlemlerimi.
+
+218
+00:42:11,764 --> 00:42:33,864
+Çok özel bir tane vektör alıyorum. Yani bir tane verilsin. Bana sorulan soru şu. Bu vektörün t bazına göre ifadesi nedir? Ne demek bu? T bazının j, i bu sırada şu verildiği haliyle bir taban olduğunu hatırlayalım. Tamam mı?
+
+219
+00:42:36,340 --> 00:42:40,380
+O zaman 1, 2, 3 vektörünü t tabanına göre yazmaktan ne anlıyorum?
+
+220
+00:42:40,500 --> 00:42:43,900
+1, 2, 3'ü bunların lineer kombinozorunu gibi yazmaktan bahsediyorum tabii.
+
+221
+00:42:44,139 --> 00:42:50,320
+Lambda kere ş artı beta kere i artı gama kere k. Değil mi?
+
+222
+00:42:50,860 --> 00:42:57,179
+Bu alfa beta sayı gama sayılarını bulursan v'nin t bazına göre ifadesini bulursun.
+
+223
+00:42:57,179 --> 00:43:03,539
+Şimdi yazalım o zaman 1, 2, 3, alfa çarpı 0, 1, 0.
+
+224
+00:43:04,820 --> 00:43:11,880
+Beta çarpı, bir, sıfır, sıfır, gama çarpı, sıfır, sıfır, bir. Değil mi? Bu ne demek?
+
+225
+00:43:15,411 --> 00:43:32,791
+Nasıl çözersiniz bunu? Alfa eşittir. Kaç söyleyebilen var mı bunu? Gören var mı alfanın kaç olduğu burada? Arkadaşlar bir söz alıp söyleseniz hiç fena olmaz yani. Ben burada kendi kendime konuşmayayım.
+
+226
+00:43:37,811 --> 00:43:39,211
+Alfa eşittir, iki.
+
+227
+00:43:39,291 --> 00:43:39,672
+Bir hocam.
+
+228
+00:43:40,972 --> 00:43:42,072
+Güzel. Beta kaç?
+
+229
+00:43:44,092 --> 00:43:44,652
+Bir.
+
+230
+00:43:46,351 --> 00:43:47,731
+Bir. Gama kaç?
+
+231
+00:43:47,972 --> 00:43:50,231
+Üç.
+
+232
+00:43:51,311 --> 00:43:55,652
+Arkadaşlar, bana bir otuz saniye müsaade edin. Kapımda birileri konuşuyor, onları bir göndereyim, olur mu?
+
+233
+00:44:23,987 --> 00:44:24,827
+Evet arkadaşlar.
+
+234
+00:44:28,532 --> 00:44:42,731
+Alfayı, betayı, gamayı bulduk. Yani ne demek istiyor? Yani bir, iki, üç vektörünün, bakın bir, iki, üç vektörünün t bazına göre ifadesini nasıl buldum ben? İki, bir, üç diye buldum.
+
+235
+00:44:43,431 --> 00:44:50,731
+Tamam mı? Ya bu ne demek? Bak, bu şu demek. Yani bir vektörü bir baza göre yazmak, bunların ne olduğunu...
+
+236
+00:44:50,943 --> 00:45:15,824
+Anlamadıysan hepsini birbirine sokuşturuyorsun. Yani 1, 2, 3 vektörünü t bazına göre yazarken 2, 1, 3 bulmak şu demek. Bak bu 2.3 işte. Şu demek. 1, 2, 3 vektörünü t bazının elemanları olan 0, 1, 0, 1, 0, 0, 0, 0, 0, 1 vektörlerin lineer kombinasyonu olarak yazdığında
+
+237
+00:45:16,884 --> 00:45:38,384
+Kullanacağım kat sayıların kim olduğunu söylüyor. İki, bir, üç. Tamam mı? Budur. Artık koyalım şuraya, artık. Bilmem anlatabiliyor muyum. Şöyle. Ben size şimdi bunun bir pratik...
+
+238
+00:45:38,675 --> 00:46:05,835
+Yani oradaki geçiş maddesiyle bir vektörün bir baza göre koordinat vektörünü bulmak arasında bir ilişki var. Bakın, özetleyelim şu anda yaptıklarımızı. Bakın, özet. S bazından T bazına bir geçiş maddesi buldum değil mi? Yanlış hatırlamıyorsam şöyle bulmuştuk onu. 0, 1, 0, 1, 0, 0, 0, 0, 1 şey olarak bulduk değil mi?
+
+239
+00:46:07,027 --> 00:46:07,827
+olarak
+
+240
+00:46:07,827 --> 00:46:10,267
+bulduk.
+
+241
+00:46:11,427 --> 00:46:14,347
+V vektörü 1, 2, 3 olarak verildi.
+
+242
+00:46:15,947 --> 00:46:16,707
+Bu vektörün
+
+243
+00:46:16,707 --> 00:46:19,587
+t bazına göre ifadesini de
+
+244
+00:46:19,587 --> 00:46:21,567
+2, 1, 3 olarak bulduk.
+
+245
+00:46:22,767 --> 00:46:23,047
+Şimdi
+
+246
+00:46:23,047 --> 00:46:24,967
+mesela
+
+247
+00:46:24,967 --> 00:46:27,687
+dedim ya bu vektörünü
+
+248
+00:46:27,687 --> 00:46:30,967
+ister s bazına göre yaz, ister t bazına göre yaz.
+
+249
+00:46:31,807 --> 00:46:33,507
+Değil mi? T bazına göre bulduk.
+
+250
+00:46:34,132 --> 00:46:38,011
+Aynı şekilde S bazına göre de bulabilir miyiz? Bulabiliriz.
+
+251
+00:46:39,391 --> 00:46:45,491
+Az önce ne yaptıysam tekrarlayıp V'nin S bazına göre ifadesini de müstakil olarak yapabilirim.
+
+252
+00:46:45,491 --> 00:46:53,172
+Ama gerek yok. Geçiş matrisi sana onu verir. Nasıl verir? Yani şunu sorabiliriz.
+
+253
+00:46:53,711 --> 00:46:59,471
+Elimde bu varsa, bundan hareketle şunu nasıl bulursun?
+
+254
+00:47:02,068 --> 00:47:21,448
+Şöyle bulursun bakın, eşit formüle bakın. T bazıyla, sağdaki dataya bak şimdi. V'nin T bazına göre ifadesi verildiyse, demek ki T bazı senin hareket noktan. O zaman geçiş maddesini, bakın T ile başladı, burada T'ye göre ifadesi verildiyse, T yazacaksın buraya. Tamam mı? Buraya da S. Bu, formül bu.
+
+255
+00:47:21,856 --> 00:47:35,976
+Bakın, isterseniz V'nin S'ye göre ifadesini müştakil olarak, az önce V'nin T'ye göre ifadesini nasıl bulduysam benzer şekilde yazabilirsiniz veya şu an yazdığım formülü işleterek de bulabilirsiniz. Tamam mı?
+
+256
+00:47:37,216 --> 00:47:48,716
+Yazalım. V'nin S'ye göre ifadesi nedir? 0, 1, 0, 1, 0, 0, 0, 0, 1. V'nin T'ye göre ifadesi 2, 1, 3.
+
+257
+00:47:49,364 --> 00:47:54,604
+Ne olur bu? Matris çarpımı bu. Bildiğiniz standart matris çarpımı.
+
+258
+00:47:56,204 --> 00:47:59,604
+Bir, iki ve üç.
+
+259
+00:48:00,264 --> 00:48:01,844
+Bu V vektörünün ta kendisi.
+
+260
+00:48:02,943 --> 00:48:08,244
+Yani vektörün S bazına göre ifadesi ta kendisi ama T bazına göre yaptığında aynı şey olmadı bakın.
+
+261
+00:48:08,244 --> 00:48:10,384
+Yani şöyle dikkatinizi çekeyim buna.
+
+262
+00:48:10,931 --> 00:48:30,231
+Bunu öğrencilerin çoğu fark etmiyor. Bakın bu V'nin ta kendisi değil ama ses standart baz olduğu için böyle. Tamam mı? Dikkat, dikkatinizi çekeyim buraya. Bak bu çok önemli. Dikkat. Yani V vektörü öyle bir vektör ki standart baza göre yazdığında aynı şey.
+
+263
+00:48:35,860 --> 00:48:52,240
+V'nin T'ye göre ifadesi V ile aynı şey değil. Değil mi? Çünkü bunda şaşılacak bir şey yok. Her ne zaman elinizde kanonik baz varsa, standart baz varsa, vektörün o baza göre koordinatları kendi koordinatlarıdır.
+
+264
+00:48:52,240 --> 00:49:02,240
+Yani çünkü T standart değil. T standart veya standart veya biz daha çok kanonik ifadesini kullanırız.
+
+265
+00:49:03,572 --> 00:49:22,891
+Kanonik, taban, değil. Tamam mı? Bunları birbirine karıştırmamak lazım. Yukarıda bir formül yazdım. Tekrar yazayım onu. Formülümüzü tekrar yazalım.
+
+266
+00:49:30,739 --> 00:49:43,159
+sıralı taban verilsin. O zaman bu V'yi hem S'ye göre yazarsın, hem T'ye göre yazarsın. Başka ne var? Geçiş matrisleri var. S'den T'ye.
+
+267
+00:49:45,119 --> 00:49:55,359
+Özetliyorum bakın. T'den S'ye. Şimdi formülüm şu. Formülüm şu. Eğer.
+
+268
+00:49:55,827 --> 00:50:20,827
+Eğer sizde V'nin T'ye göre ifadesi var ama siz S'ye göre ifadesini arıyorsanız, bu hangi geçim adresini işleme sokmanız gerekiyorsa, ona nasıl karar vereceksiniz? T ile başlamışım, o zaman T buraya, S buraya. Tamam mı? Birinci formülüm bu. Bunları ezberlemenize gerek yok çünkü yani çevrim içi olacaksa final sınavı aynen vize gibi kitabına bakabilirsin demektir bu. Ama ben...
+
+269
+00:50:21,556 --> 00:50:47,975
+Benim için sorun yok. Ben bunları zaten ezberlemediğim için öyle bir sorunum yok. Bakın böyle V'nin S'e göre ifadesini verip T'ye göre olan ifadesini isteseydi o zaman da T başlangıç matrisi bazım bu ise o zaman geçiş matrisinde kullanacağım ilk baz S olacak. S'den T'ye geçiş söz konusu. İki formül. Tamam mı? Bir şey daha söylemiş olalım. Bakın şöyle. Şunu söyledik.
+
+270
+00:50:49,043 --> 00:50:52,683
+Tamam mı? Başka? Şunu söyledik.
+
+271
+00:50:57,523 --> 00:50:59,103
+Bir şey daha söylemiş olalım.
+
+272
+00:51:10,420 --> 00:51:13,279
+Bu matrislerden biri diğerinin tersidir.
+
+273
+00:51:13,940 --> 00:51:14,339
+Tamam mı?
+
+274
+00:51:18,547 --> 00:51:30,228
+Yani bu durumda şöyle de ola, t'den s'e matris kimdir dersen, o da s'den t'ye olan matrisin tersi. Değil mi?
+
+275
+00:51:34,356 --> 00:51:35,256
+Budur arkadaşlar.
+
+276
+00:51:36,556 --> 00:51:41,776
+Evet, bugünkü konuyu size güzel bir şekilde özetledim ama devam edelim kitapta kaldığımız yerden.
+
+277
+00:51:41,956 --> 00:51:43,516
+Sorusu olan varsa lütfen sorsun.
+
+278
+00:51:45,135 --> 00:51:45,635
+Tamam mı?
+
+279
+00:51:46,596 --> 00:51:52,655
+Evet, 2-1-3 vektörünün standart olmayan B2 bazına göre ifadesini de bulduk.
+
+280
+00:51:53,576 --> 00:51:56,056
+Değil mi az önce? Nerede bakın? 2-1-3 olarak bulduk.
+
+281
+00:51:57,195 --> 00:51:58,476
+Benim az önce yaptığım işlemleri.
+
+282
+00:52:00,340 --> 00:52:05,120
+Kitapta, kitaba bakmadan yaptım ben. Siz de yapabilirsiniz. 2, 1, 3 olarak bulduk bakın.
+
+283
+00:52:06,620 --> 00:52:14,360
+B2, B1 bazından elde edilen bir baz ama sıra değiştirilerek. Nasıl? İkinci elemanı 1, birinci elemanı 2 yazarak B1 bazını. Değil mi?
+
+284
+00:52:15,500 --> 00:52:20,920
+Şimdi bakın teorem 555. Ben önden yüklemeli anlattım size. Teorem 555'i aslında anlattım size az önce.
+
+285
+00:52:21,840 --> 00:52:27,059
+Ne dediğini bilseniz kafi. Bakın T'den S'ye geçiş matrisi, S'den T'ye geçiş matrisinin
+
+286
+00:52:28,083 --> 00:52:53,804
+Tersi. Biri diğerinin tersi, öteki berikinin tersi yani değil mi? Yani bunu mesela böyle yazarsan şunu da söyleyemez misin yani? O zaman S'den T'ye geçiş matrisi, T'den S'ye geçiş matrisinin tersi ise, o zaman T'den S'ye geçiş matrisi de, o da ne olur? S'den T'ye geçiş matrisinin tersi olur tabii ki. Değil mi? Yani birinden diğerini, ötekinden berikini elde edebilirsin bu şekilde.
+
+287
+00:52:56,019 --> 00:53:06,659
+Evet. Benim söyleyeceklerim bunlardan ibaret arkadaşlar. Sizin sormak istediğiniz bir şey var mı? Şu ekran paylaşımını bitireyim. Var mı sormak istediğiniz?
+
+288
+00:53:11,699 --> 00:53:22,279
+Bakın kitaptan size bir örnek çözeyim isterseniz. Kimsenin sorusu yok. Biz soru soralım size. Evet.
+
+289
+00:53:29,139 --> 00:53:30,779
+Alıştırma diye.
+
+290
+00:53:33,980 --> 00:53:36,139
+Soru içinde soru var bu alıştırmalı.
+
+291
+00:53:36,920 --> 00:53:41,119
+2 çarpı 2'lik bütün matrislerin vektör uzayını alalım.
+
+292
+00:53:41,239 --> 00:53:41,699
+Tamam mı?
+
+293
+00:53:42,420 --> 00:53:48,799
+Bunun içinde de şu şekilde matrislerin alt uzayını alalım.
+
+294
+00:53:50,000 --> 00:53:51,900
+A, B, C dediğim burada sayılar.
+
+295
+00:53:52,299 --> 00:53:52,679
+Tamam mı?
+
+296
+00:53:53,739 --> 00:53:54,559
+Alt uzay.
+
+297
+00:53:55,411 --> 00:53:57,591
+Bunu daha önceden gösterdim diye hatırlıyorum.
+
+298
+00:53:58,851 --> 00:54:05,951
+Yani hatırlamayan varsa otursun tekrardan, bu neden alt uzaydır bunu göstersin. İki şart sağlaması gerekiyor değil mi?
+
+299
+00:54:06,931 --> 00:54:14,192
+Bu W'nun tipik bir elemanını alalım. Yani tipik bir elemanı neye benziyor? İşte bir amatisi alalım. Tipik A, B, C, C.
+
+300
+00:54:16,591 --> 00:54:17,991
+Herhangi bir eleman, tipik.
+
+301
+00:54:18,708 --> 00:54:40,348
+Bu nasıl bir matris? Bunu gören var mı tipini? Yani özel bir sınıf matris mi acaba? Bu matrisi şöyle bir matristir diye sınıflayabilir miyim hemen? Şu özelliğe sahiptir diyebileceğim bir matris mi bu? Özel matrislerden bahsetmiştim daha ilk haftada hatırlarsınız. Görebilen var mı? Aa nasıl bir matris?
+
+302
+00:54:47,795 --> 00:55:09,056
+Hiç gören yok mu bunun? Nasıl bir matris oldun? A, B, C'ye bakarsan aralarında bir ilişki var. Köşegöne göre bak. Esas köşegöne göre. Bu kadar ipucu vereyim. Nasıl bir matris bu? Yok mu söylemek isteyen?
+
+303
+00:55:18,612 --> 00:55:25,452
+Ben sorayım o zaman. [öğrenci]'e soralım. [öğrenci], yazdığın matris ne tip bir matris sence?
+
+304
+00:55:33,715 --> 00:55:37,376
+[öğrenci]'a soralım. [öğrenci], söyleyebilir misin yazdığım matrisin tipini?
+
+305
+00:55:45,940 --> 00:56:00,320
+Evet, cevap verecek olan kimse yok mu ya? 9 kişi var yani. Cepten veya bilgisayardan bağlanıp sırf yoklamada ismim gözüksün diye mi yapıyor öğrenciler bunu anlamadım yani.
+
+306
+00:56:05,300 --> 00:56:14,539
+Online ise online, yani bu da ders değil mi? Yok mu söylemek isteği? [öğrenci]'ye sorsak, son kez şansımızı deneyelim.
+
+307
+00:56:20,724 --> 00:56:46,804
+Online eğitimin bizi getirdiği nokta bu. Maalesef. Hiç de hoşlandığım bir şey değil. Sınıfta ders anlatmayı tercih ederim. Yorulmayı tercih ederim. Bu şekilde de olmuyor. Öğrenciden tepki alamayınca, katılım göremeyince, Çin'den çıkılmaz bir hale dönüyor. Kendi kendine konuşuyor hocam. Kayıttan dinlesen ne olacak? O zaman aklına gelen soruyu soramayacaksın ki.
+
+308
+00:56:48,275 --> 00:57:14,835
+Evet, o zaman biz de hızlı hızlı geçelim. Madem kimse söz almıyor, yani laf lafı açıyor olması lazım, değil mi? Ben bir şey söyleyince, sizin başka bir şey söylemeniz lazım ki böyle, yani dolu dolu olsun yani. Sizden bir şey gelmeyince, tepki gelmeyince, yanıt gelmeyince böyle kendi kendimize konuşmuş oluyoruz burada. Yani simetrik bir matris demek. Tamam mı? Simetrik matris olduğu belli işte.
+
+309
+00:57:15,860 --> 00:57:31,920
+Yani bunu bir kişi olsun çıksın söylesin istedim ama kimse söylemedi. Bak böyle bir matrisi 3 tip matrisin lineer kombinazonu olarak tek türlü yazarsın. Oradaki A, B, C parametrelerinin rolü veya fonksiyonu da zaten bu.
+
+310
+00:57:32,280 --> 00:57:42,460
+A matrisini mesela A çarpı bir matris, B çarpı bir matris artı C çarpı 2 çarpı ikilik matrisleri kastediyorum. Bir matris şeklinde yazmak istersen kimdir bu matrisler?
+
+311
+00:57:43,251 --> 00:58:01,652
+Bak yazayım. A parantezinde bir matris yazmak istersen şunu yazacaksın. B parantezinde bir matris yazarsan, yazmak istersen tabii ki bunu yazacaksın. C parantezinde bir matris yazmak istersen tabii ki şunu yazacaksın. Size ödev şu üç matris lineer bağımsız.
+
+312
+00:58:03,791 --> 00:58:10,827
+Lineer bağımsız olduklarını gösterin. Bağımsız. Tamam mı?
+
+313
+00:58:11,795 --> 00:58:29,415
+Artı, lineer bağımsızlık, bak bir bunu göster, bir, iki olarak da bu üç özel simetrik matris, sıfır, bir, bir, sıfır, bakın bunlarla o yukarıda yazdığım W uzayında gerersiniz, tamam mı?
+
+314
+00:58:30,295 --> 00:58:33,415
+Dolayısıyla ben aslında burada soru içinde soru var dedim ya bu alıştırmada.
+
+315
+00:58:34,915 --> 00:58:39,155
+Soru içinde yani bir ve ikiyi birlikte düşündüğünüzde ben ne demiş oluyorum? Bir tane.
+
+316
+00:58:39,668 --> 00:58:49,927
+T kümesi yazmış olsam bu matrislerden, bir, sıfır, sıfır, sıfır, sıfır, sıfır, mesela şu sırada yazmış olsak.
+
+317
+00:58:54,387 --> 00:59:00,748
+T ne oluyor? W için taban, sıralı taban mesela, taban.
+
+318
+00:59:05,588 --> 00:59:14,128
+E bu tabansa mesela sen burada simetrik matrislerin o zaman uzayının boyutunun kaç olduğunu söyleyebilirsin? 3 olduğunu söyleyebilirsin. Değil mi?
+
+319
+00:59:16,807 --> 00:59:24,688
+2 çarpı 2 boyutlu simetrik matrisleri kastediyorum. Yani 3 çarpı 3'lükleri alırsan o başka bir şey. Değil mi? Ona ayrıyeten bakman gerekir.
+
+320
+00:59:25,548 --> 00:59:30,907
+Yani ona ayrıyeten. Hadi o da size bir ödev olsun. Bak bu da güzel. Ödev. Yani.
+
+321
+00:59:32,115 --> 00:59:51,275
+Ne diyelim? V uzayın, 3x3'lük kare matrislerin vektör uzayı olsun. W'yu da ne alalım? A, B, C. Simetrik olabilmesi için şu olması lazım. Şu olması lazım. Bir de bu olması lazım. Değil mi?
+
+322
+00:59:55,251 --> 00:59:59,911
+A, B, C, D, E, F. Bunlar real sayı.
+
+323
+01:00:01,931 --> 01:00:10,751
+Bakın, köşegöne göre simetrik olacak şekilde yerleştirdim bunları. Değil mi?
+
+324
+01:00:11,751 --> 01:00:12,251
+Yani...
+
+325
+01:00:12,512 --> 01:00:16,472
+Ben bu örneği anladın diyen varsa, kendini bir riske atıp bunu bir yapsın bakalım.
+
+326
+01:00:16,612 --> 01:00:23,472
+Yani yapabiliyorsa helal olsun derim yani. Bunu anlamış yani. Bu tabanı, boyutu, lineer bağımsızlık olayını çözmüş derim yani.
+
+327
+01:00:25,731 --> 01:00:33,751
+Şimdi, bu W'nun boyutunu söyleyin bana. Yani kendiniz bunu evde çözmeye çalışın.
+
+328
+01:00:36,572 --> 01:00:40,172
+Ötekinde üçlü bunda da üçlü deme kolaylığına sapma.
+
+329
+01:00:40,532 --> 01:00:48,392
+Tamam mı? Yani her örneği kendi üzerinde düşüneceksin. Burada boyut artık yükseldi. 3x3'li bir matrislerle çalışıyorsun. Parametri sayısı arttı bak, dikkat et.
+
+330
+01:00:49,831 --> 01:01:03,652
+Tamam mı? Bir de taban. Taban bul. Taban. Kimdir? Neyse, biz yukarıdaki örneğimize dönelim.
+
+331
+01:01:05,811 --> 01:01:21,931
+Şunu söylemek istiyorum. Neyle gerildi bu küme? Simetrik matrislerin, bakın tipik bir matris, yani bu neyle gerildi?
+
+332
+01:01:23,751 --> 01:01:33,072
+1, 0, 0, 0, yani şöyle yazayım isterseniz, bu sizin kafanızı karıştırır sonra. Şöyle yazayım.
+
+333
+01:01:35,027 --> 01:01:37,007
+Tipik bir matris, A, B, C.
+
+334
+01:01:41,331 --> 01:02:01,331
+Neyle geriliyor bu? Şu matrislerle. 0, 1, 1, 0, 0, 0, 0, 0, 1. Tamam mı? Şimdi ben bu uzaydan bir tane özel bir matris alayım. Ne alayım mesela? Bir A matrisi alalım. Ne olsun kitapta...
+
+335
+01:02:01,460 --> 01:02:23,000
+T örneği takip etmek istiyorum. Mesela bir tane özel bir matris, simetrik matris. Şu olsun. Simetrik mi? Simetrik. Yani bu W'nun elemanı olan bir tane matris. Bu matrisin, benim yapmak istediğim şey şu. Şuna T bazı dedin, tamam mı? T bazı. Yani T bazıyla üretilmiş W vektör uzayından bahsediyorum. T sıralı tabanın.
+
+336
+01:02:24,947 --> 01:02:31,847
+A matrisinin veya elemanının veya vektörünün t bazına göre koordinatları kimdir? Soru bu.
+
+337
+01:02:34,967 --> 01:02:48,207
+Ne demek bu? Şu demek, eksi 4, 2, 2, 1 matrisini, t'nin elemanları olan matrisler kimler? 1, 0, 0, 0, 1, 1, 0.
+
+338
+01:02:49,139 --> 01:02:54,300
+0, 0, 0, 1 bu matrislerin lineer kombinazonu olarak yazdığında
+
+339
+01:02:58,516 --> 01:03:00,135
+Bulmanı istediğim kat sayılar.
+
+340
+01:03:00,596 --> 01:03:01,916
+Lineer kombinozondaki değil mi?
+
+341
+01:03:02,715 --> 01:03:03,936
+Yani şöyle yazalım isterseniz.
+
+342
+01:03:04,056 --> 01:03:05,456
+Bakın, alfa, beta, gamma.
+
+343
+01:03:06,356 --> 01:03:07,735
+Bunları kastediyorum yani.
+
+344
+01:03:08,596 --> 01:03:09,755
+Onları da nasıl bulacaksın?
+
+345
+01:03:12,255 --> 01:03:13,635
+Şöyle bulacaksın, bakın.
+
+346
+01:03:15,456 --> 01:03:19,315
+Bu son yazdığım, denklemi açarak bulacaksın, değil mi?
+
+347
+01:03:19,735 --> 01:03:20,315
+Yazalım.
+
+348
+01:03:21,596 --> 01:03:23,735
+Biraz daha işlem yapalım, bakın.
+
+349
+01:03:24,775 --> 01:03:25,456
+Ne demek bu?
+
+350
+01:03:26,963 --> 01:03:37,943
+Yani x4, 2, 2, 1, iki matrisinin eşitliği. Yani ne var burada? Alfa var, burada beta var, birinci satır elemanları bunlar, sağdaki matrisin.
+
+351
+01:03:39,304 --> 01:03:48,663
+Soldaki matrisin ikinci satır, pardon, sağdaki matrisin ikinci satır elemanlarını yazıyorum şimdi. Şu var, değil mi? Ya bu ne demek?
+
+352
+01:03:50,364 --> 01:03:52,963
+Bunu bir adım daha öteye götürmek istersek, biz alfanın...
+
+353
+01:03:54,324 --> 01:04:02,104
+Eksi 4, beta'nın 2, gamanın da 1 olduğunu görürüz. Değil mi?
+
+354
+01:04:03,204 --> 01:04:12,984
+Dolayısıyla, eksi 4, 2, 2, 1 matrisinin t bazına göre ifadesinden ben ne anlamam gerekiyor?
+
+355
+01:04:13,084 --> 01:04:15,844
+İşte bunu anlamam gerekiyor. Eksi 4, 2, 1.
+
+356
+01:04:17,844 --> 01:04:20,104
+Test sorusu olarak sorsaydık, bu matrisin...
+
+357
+01:04:20,211 --> 01:04:42,092
+eksi 4, 2, 2, 1 matrisinin t bazına göre ifadesi, aşağıdakilerden hangisidir diye sorsaydık, şıklarda şunlar olsaydı bakın, a, b, c, d, e, mesela doğru cevap eksi 4, 2, 1 olsaydı, bu işlemleri yaptığım takdirde doğru cevap burada bulurdum mesela ama yanlış cevap koyalım şuraya, eksi 4, 2, 1 koyalım mesela bu yanlış.
+
+358
+01:04:47,092 --> 01:05:00,211
+Değil mi? Bu değil. İşte eksi 4, 2, 0, bu da değil. 4, 2, 0, bu da değil. Değil mi? Bunların hiçbiri değil. Nereden biliyorsun? İşte yukarıdaki işlemleri yaparsan bileceksin.
+
+359
+01:05:07,507 --> 01:05:18,708
+Normalde klasik sınav sorusu gibi içiyorum ama bakın en son bir test tipi soru olabilecek şekilde uyarladım mı? Uyarladım. Yani olmayacak bir şey değil yani.
+
+360
+01:05:20,447 --> 01:05:27,127
+Evet arkadaşlar, benim size anlatacaklarım bundan ibaret. Önümüzdeki hafta özdeğerler, özvektörlerden bahsedip artık dönemi sonlandıracağım.
+
+361
+01:05:27,248 --> 01:05:31,607
+Özdeğer, özvektörden de kesinlikle soru geliyor finalde. Tamam mı?
+
+362
+01:05:32,659 --> 01:05:58,199
+Yani en az iki soru gelir yani. Koordinat vektörü, geçiş matrisimlerden da gelir. Yani bu son iki haftanın en az üç, ortalama dört soru gelir. Var mı sormak istediğiniz? Hatta şöyle söyleyeyim, yani ben yirmi soru soru olsa final sınavında, bunun en az on tanesinin ikinci, birinci vizeden sonra gördüğümüz konulardan geleceğini tahmin edebilirim yani. Yani kendin de tahmin edebilirsin bunu. Yani ağırlıklı olarak bu konulardan gelir.
+
+363
+01:05:59,668 --> 01:06:04,008
+Var mı sorusu olan yoksa sonlandıracağım arkadaşlar.
+
+364
+01:06:07,476 --> 01:06:08,875
+Haftaya görüşmek üzere o zaman.
