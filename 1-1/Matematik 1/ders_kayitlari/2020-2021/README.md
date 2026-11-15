@@ -7,6 +7,7 @@
 | 1 | Güz | Yasemin Alagöz | [sube_1/](sube_1/) |
 | 7 | Güz | — | [sube_7/](sube_7/) |
 | 9 | Güz | — | [sube_9/](sube_9/) |
+| 11 | Güz | Bayram Ali Ersoy | [sube_11/](sube_11/) |
 | 12 | Güz | — | [sube_12/](sube_12/) |
 | 14 | Güz | Serpil Karayel | [sube_14/](sube_14/) |
 | 18 | Güz | — | [sube_18/](sube_18/) |
