@@ -6,3 +6,4 @@
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | — | [sube_1/](sube_1/) |
 | 10 | Güz | Nurullah Arvas | [sube_10/](sube_10/) |
+| 18 | Güz | Hilal Tufan | [sube_18/](sube_18/) |
