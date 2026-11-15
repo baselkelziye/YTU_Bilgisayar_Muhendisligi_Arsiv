@@ -1,0 +1,1243 @@
+1
+00:00:48,243 --> 00:00:50,664
+Günaydın arkadaşlar. Nasılsınız?
+
+2
+00:00:54,228 --> 00:00:55,588
+Ses geliyor mu arkadaşlar?
+
+3
+00:00:59,892 --> 00:01:14,512
+İyisinizdir inşallah. Evet, dün kutupsal koordinatlara başlamıştık. Ben de iyiyim, teşekkür ederim. En son alanı veriyorduk. Değil mi? Verdik, iki tane de örnek çözdük. Bugün tekrar alanla ilgili birkaç soru çözmek istiyorum.
+
+4
+00:01:15,891 --> 00:01:25,612
+Evet, şöyle bakalım sayımız ne kadar oldu? 24 kişiyiz şu anda. Sorusu olan var mı arkadaşlar? Sormak istediğiniz bir şey varsa.
+
+5
+00:01:35,219 --> 00:01:42,500
+Evet, yoksa o zaman başlamak zorundayım. Gelen artık katılır. Sabah olduğu için herhalde uyanamadık henüz.
+
+6
+00:01:42,932 --> 00:01:50,032
+Evet, dün söylediğim gibi kutupsal koordinatlarda alan nasıl bulunacaktı, onu vermiştik.
+
+7
+00:01:50,472 --> 00:01:58,051
+R eşittir f-teta denklemiyle verilmiş bir eğrinin, teta eşittir alfa ve teta eşittir beta doğrularıyla sınırladığı alan dediğimizde,
+
+8
+00:01:58,712 --> 00:02:04,972
+hatırlarsanız daire dilimlerinin alanları toplamı şeklinde ifade edip, onun limitini aldığımızda,
+
+9
+00:02:04,972 --> 00:02:10,731
+şöyle bir formül bulmuştuk, alan eşittir 1 bölü 2 integral alfadan beta'ya kadar.
+
+10
+00:02:10,931 --> 00:02:38,911
+Kare, D, T, T formülüyle alanı hesaplayacağız. Bir tane daha, şu örneği çözmüştük. Kardiyoidin alanını sormuştu bize. İşte kardiyoidi çizdik. Çizimi de görmüştük zaten. Bunu milimetrikte çizmek gerekmiyor. Kabaca kardiyoid olduğunu bilirsek, denklemin onu kolayca çizebiliriz. Hatta burada birkaç değer T, T'ye vererek de çizebiliriz. T, T'ye 0 verdiğimizde bu ne olur? 2 olur. Sivri noktası, x80 üzerine.
+
+11
+00:02:38,931 --> 00:02:45,252
+üzerinde olduğunu zaten şekilleri de verdim geçen ders. Nasıl çizilir kabaca diye.
+
+12
+00:02:45,460 --> 00:02:59,080
+Onu da çizdim. İşte pi bölü 2 olduğunda ne olur? 1'e gelir. Pi olduğunda da 0 olur. Şöyle çizeriz. Bu zaten kutup eksenine göre simetrisi vardır. Tamamını çizdiğinizde işte kargörü değerini çizmiş oluruz.
+
+13
+00:02:59,540 --> 00:03:09,220
+Alan hesaplarken burada kutup eksenine göre simetri olduğu için alanın yarısını alıp daha az işlem yaparak hesaplayabiliriz. Onun için a bölü 2 demiştik.
+
+14
+00:03:09,579 --> 00:03:13,360
+Formülümüz 1 bölü 2. Şimdi şu yarısını düşün.
+
+15
+00:03:13,460 --> 00:03:20,939
+örsek bölgenin theta açısını bulmak istiyorduk. Ne yaptık? Sıfırdan nereye kadar geldi? Pi'ye kadar geldi.
+
+16
+00:03:21,716 --> 00:03:44,996
+simetri kullandığımız için o zaman 1 bölü 2 alfası 0'dan beta pi'ye kadar dedik. Eğrimizde ne eğrisiydi? Kardiyot eğrisiydi. Yani 1 artı kosmüüs tetanın karesi d teta diye yazıp hesaplamıştık. Tamam mı arkadaşlar? Şimdi böyle bir eğri var. Peki iki eğri olursa alanı nasıl hesaplarız? Bunlarla ilgili birkaç sorum var. Şöyle.
+
+17
+00:04:01,747 --> 00:04:11,927
+Evet, şimdi diyelim ki, ve bunu da not olarak verdim. Şöyle, teta iştir alfa ışını, teta iştir beta ışını, R1 ve R2.
+
+18
+00:04:12,819 --> 00:04:27,039
+Kutupsal eğrilerimiz olsun. Yani bana sorulan şu taradığım iki eğri arasındaki alanı nasıl hesaplarız? Hani tek olduğunda reviri düşünmediğimizde, alfa beta ışın arasında R2 eğrisi verildiğinde ne yapmıştık?
+
+19
+00:04:27,139 --> 00:04:40,819
+1 bölü 2, integral alfadan beta'ya kadar R2'nin karesi D, teta diye hesaplamıştık. Ama burada iki eğri arasındaki bölgenin alanı sorulduğunda bana ne yapacağız burada dikkat edersin?
+
+20
+00:04:40,819 --> 00:04:51,980
+Sınırımız alfadan beta'ya, R2'nin alanından, R1'in alanını çıkarırsak, ortada taradığımız alanı bulmuş oluruz arkadaşlar.
+
+21
+00:04:52,319 --> 00:04:57,799
+Yani ikiye eri verilirse bu şekilde, şu taralı bölgenin alanını bulmak için ne yapıyoruz?
+
+22
+00:04:58,220 --> 00:05:03,919
+R2 bölgesinin alanından, R1'in alanını çıkarırsak, taralı bölgenin alanını buluruz.
+
+23
+00:05:08,819 --> 00:05:22,639
+Bt'ye kadar, R2 bölgesinin alanı, R2'nin karesi, Dt'de eksi, 1 bölü 2 integral alfadan Bt'ye kadar, R1 bölgesinin karesi diyeceğiz, R1'in karesi, Dt'de.
+
+24
+00:05:22,959 --> 00:05:33,279
+Ya da kısaca, 1 bölü 2 integral alfadan Bt'ye kadar, R2'nin karesinden, R1'in karesini çıkararak, şu taralı kısmın alanını bulmuş olacağız.
+
+25
+00:05:33,279 --> 00:05:33,979
+Tamam mı?
+
+26
+00:05:34,720 --> 00:05:40,480
+bölge olursa, aradaki bölgenin alanını bulmak için bu formülü kullanıyoruz arkadaşlar.
+
+27
+00:05:41,060 --> 00:05:43,920
+Şimdi biraz örneklerim var, onları çözmek istiyorum.
+
+28
+00:05:45,760 --> 00:05:54,020
+Evet, diyelim ki, re eşittir 1, bu neydi re eşittir 1 dersen bunu karte zende çember olduğunu anlarız, değil mi arkadaşlar?
+
+29
+00:05:54,520 --> 00:05:57,600
+Çünkü nasıl re kare eşittir 1 dediğimde burada,
+
+30
+00:05:58,144 --> 00:06:12,144
+Biz kartezyen koordinatlarla, kutsal koordinatlar arasındaki ilişkiyi biliyorduk. Yani R kare yerine ne yazıyordu kartezyen de? X kare artı Y kare değil mi? Eşittir bir. Yani yarı çapı bir olan çember diyoruz. Bu çemberin içinde...
+
+31
+00:06:12,627 --> 00:06:17,587
+R eşitli bir eksi, kosmüs teta, bu da zaten kardiyoid eğrisi olduğunu biliyoruz.
+
+32
+00:06:17,987 --> 00:06:21,707
+Kardiyoidin dışında kalan bölgenin alanını buluruz.
+
+33
+00:06:21,827 --> 00:06:25,507
+Önce hemen kabaca şekli çizmeye çalışacağız.
+
+34
+00:06:25,667 --> 00:06:30,687
+Hemen yarı çapı 1 olan çember dediğine göre şöyle merkeze bir çembere çizmiş oldum.
+
+35
+00:06:30,767 --> 00:06:31,507
+Yarı çapı 1.
+
+36
+00:06:32,147 --> 00:06:33,587
+Şimdi gelelim kardiyoid'de.
+
+37
+00:06:34,259 --> 00:07:00,939
+Artık biliyoruz, uzun uzun, hani şöyle çizilir, böyle çizilir demeyeceğiz. Kardiyot ama sivri noktası nerede olacak? Şurada eksi olduğu için uç noktası x ekseninin negatif kısmında olacak değil mi? Çünkü bakın pi verdiğinizde ne olur burası? Eksi artı bir olur, iki yani uç nokta şuraya gelir. İşte bu da çizmiş oldu kardiyotu. Bakın şöyle, şöyle bir kardiyot.
+
+38
+00:07:01,235 --> 00:07:14,675
+Şimdi tekrar okursak, çemberin içi diyor, kardiyoidin dışı, kardiyoidin dışı da o zaman şu taradığım bölge oluyor arkadaşlar. Tamam mı? Şu. Bu bölgenin bize alanını soruyor.
+
+39
+00:07:15,315 --> 00:07:42,715
+Burada yine dikkat ederseniz simetri var. Yani kutu pekseline göre simetri var. Onu da kullanabilirsiniz. Kullanmayabilirsiniz de. Nasıl istiyorsanız. Ama biz dikkat ederseniz, kartezyen de alan hesaplarken, iki eğri arasındaki alan hesaplarken ne yapardık? Kabaca eğriyi çizerdik. Ama verilen denklemleri çakıştırıp, hani çakıştıkları noktaları bulurduk. E burada da her iki eğriyi çakıştırıp, değil mi? Ortak, teta.
+
+40
+00:07:43,168 --> 00:07:56,728
+Açılarımız nedir? Onları bulmamız gerekecek. O yüzden iki eğrimiz R1 ile 1-cosθ'yı çakıştırmamız gerekir. Çakıştıralım bakın, eşitlemek demek yani. Buradan cosθ ne olur? 0 olur.
+
+41
+00:07:57,108 --> 00:08:11,008
+Ecosθ'nın 0 olduğu değerler nedir? Pi bölü 2 ve katlarıdır değil mi? Birinci bölgedeyiz ve şu dördüncü bölgede olduğumuza göre o zaman eksi pi bölü 2 ile artı pi bölü 2 diyeceğiz. Değil mi?
+
+42
+00:08:11,168 --> 00:08:12,208
+Açılarımız bunlar.
+
+43
+00:08:13,828 --> 00:08:14,048
+Evet.
+
+44
+00:08:14,747 --> 00:08:19,268
+Şimdi, nasıl hesaplamamız gerekecek?
+
+45
+00:08:20,019 --> 00:08:47,559
+Ben simetriyi kullanmadan hesaplamışım. Simetriyi de kullanabilirdik. Yani sıfırdan pi bölü 2'ye kadar da düşünebilirdik. Ama simetriyi ilk örnek olduğu için hiç kullanmadan doğrudan, bakın iki eğriyi çakıştırdım. Açığımı buldu. Yani eksi pi bölü 2 ile artı pi bölü 2 bulduk. Yani şurada bizim hani teta 3'tir alfa ve teta 3'tir beta ışınlarımız var ya, onlar bir tanesi pi bölü 2, bir tanesi de eksi pi bölü 2.
+
+46
+00:08:48,019 --> 00:08:53,919
+İşte bu iki ışın arasındaki şu kalan bölgenin alanını bana soruyor arkadaşlar.
+
+47
+00:08:54,359 --> 00:08:56,639
+Şimdi o zaman ne yapmaya gerekecek?
+
+48
+00:08:58,240 --> 00:09:02,819
+Eksi pi bölü 2'den integral, şimdi alanı yazalım bakın birlikte.
+
+49
+00:09:02,819 --> 00:09:04,919
+A dedik, 1 bölü 2 formülümüz.
+
+50
+00:09:05,460 --> 00:09:08,740
+Eksi pi bölü 2'den artı pi bölü 2'ye kadar integralimiz.
+
+51
+00:09:09,379 --> 00:09:13,200
+İşte R2'nin alanından R1'in alanını çıkaracağız.
+
+52
+00:09:13,779 --> 00:09:23,099
+Simetriyi de kullanmışım arkadaşlar. Çünkü uzun böyle gitmeye gerek yok. Şimdi simetriden gidelim. Tamam mı? Yani böyle de yapabiliriz.
+
+53
+00:09:25,331 --> 00:09:53,331
+Evet, simetri kullanmışız. Yani iki katını alırsak, 1 bölü 2 formülden gelen 2 var. 0'dan pi bölü 2'ye kadar. Şimdi şurada düşünmemiz, bakın ışınlarımız şunlardı, pi bölü 2 ile eksi pi bölü 2. E ne diyeceğim? R2'nin alanından, yani çemberden kardiyoidi çıkaracağım değil mi? Alanından. O zaman çemberin denklemi neydi? Bir de. Birin karesi diyorum. Eksi kardiyoidi çıkaracağım.
+
+54
+00:09:53,331 --> 00:10:03,611
+Böyle çıkarıyorum. Kardiyolikta neydi? 1-kosinus tetanın karesi d tet. Bu kısma anlaşıldı mı arkadaşlar? Simetriyi kullandığım için kullanmasam da burada ne diyecektim?
+
+55
+00:10:03,672 --> 00:10:11,331
+Eksi 1 bölükten artı 1 bölükteye kadar çarpı 1 bölükteye gelecekti. Ya da biz bazen buraya a bölükte deriz, yani alanın yarısını hesaplarız.
+
+56
+00:10:11,412 --> 00:10:20,611
+Aynı şey, onlar problem değil ama şu içini yazabilmek. Ne yaptık? Bakın, iki eğriyi çakıştırdık. Ortak kesişim açılarını bulmuş olduk.
+
+57
+00:10:21,268 --> 00:10:27,168
+Buradan da, bakıyorum şu ışınlar arasındaki şu taralı bölgenin alanını bulmak için ne yapıyorum?
+
+58
+00:10:27,968 --> 00:10:33,388
+İşte çemberden kardiyoidi çıkarırsam, burayı bulmuş olacağım.
+
+59
+00:10:35,768 --> 00:10:37,548
+Anlaşıldı mı arkadaşlar şu kısım?
+
+60
+00:10:39,268 --> 00:10:39,628
+Evet.
+
+61
+00:10:42,268 --> 00:10:44,168
+Bir ses, anlıyor muyuz?
+
+62
+00:10:45,235 --> 00:10:57,495
+Hesaplaması ikinci planda bizim arkadaşlar. Tamam mı? Evet. En azından bir arkadaş cevap verdi. Teşekkür ederim. Evet. Şimdi ne yapıyoruz? İşlemlerimizi de yapmaya çalışalım.
+
+63
+00:10:58,004 --> 00:11:17,744
+İkiler gider, integralim sıfırdan pi bölü 2'ye kadar, bunun karesi 1 geldi. Bunun karesini açarsam 1, eksi 1, 2 katı, birinciyle ikincinin çarpımının 2 katı, eksi 2, bir de şu eksiden artı 2, kosünüs teta gelir. Buradan da artı kosünüs kare, önünde de eksi var, eksi kosünüs kare, d teta.
+
+64
+00:11:17,744 --> 00:11:26,004
+E şimdi, birler gider, 2 kosünüs teta'nın integrali tamam, kosünüs karenin integralini de yapabilmek için ne yapmamız gerekiyor?
+
+65
+00:11:26,004 --> 00:11:38,543
+Yarım açı formüllerini kullanıyoruz. Yani bunun yerine 1 artı kosünüs 2 teta bölü 2'yi yazmam gerekir. O halde bakın yazdık. İntegral 0'dan 1 bölü 2'ye kadar 2 kosünüs teta.
+
+66
+00:11:38,975 --> 00:11:54,676
+eksi, bunun yerine de 1 artı, kosinüs 2 teta bölü 2'yi yazdık. O zaman artık integralini alabiliriz. 2 kosinüs teta'nın integraline gelir, 2 sinüs teta gelir. Buradan 1 bölü 2'nin integrali, eksi teta bölü 2 gelsin.
+
+67
+00:11:55,155 --> 00:11:59,655
+Kosinüs 2 teta'nın integraline de 1 bölü 2, bir de şu 2 var, 1 bölü 4.
+
+68
+00:12:00,144 --> 00:12:28,124
+Sinüs 2 teta tabelinde eksileri olduğu için eksiler geldi. Sınırımız 0'dan pi bölü 2'ye kadar. Şimdi üst sınır diyoruz. Alt sınır 0 olduğu için yazmamıza gerek yok. Üst sınır pi bölü 2, sinüs pi bölü 2 1 olduğuna göre 2 gelir. Buradan pi bölü 4 gelecektir. Şurada yerine yazarsam, sinüs 2 pi de pi bölü 2 yazarsam, sinüs pi o da 0'dır. Gitti bu terim. Yani sonuçta 8 eksi pi bölü 4 birim karedir diyeceğiz.
+
+69
+00:12:28,144 --> 00:12:31,984
+Tamam mı arkadaşlar? Evet, devam edelim.
+
+70
+00:12:35,604 --> 00:12:39,904
+Evet, re eşittir. 2 kosünüs teta çemberinin içinde.
+
+71
+00:12:40,851 --> 00:12:47,391
+Ve R eşittir, kök 2 çemberinin dışında kalan bölgenin alanını bulunuz diyorum.
+
+72
+00:12:47,871 --> 00:12:54,771
+Hadi ben 1-2 dakika bekliyorum arkadaşlar. Siz en azından kabaca çizin. Bakın bu çember nasıl çember olduğunu anladım.
+
+73
+00:12:55,251 --> 00:13:00,731
+Her tarafını şunu R ile çarparsam ne olur? R kare eşittir 2R, kısmi tete olur değil mi?
+
+74
+00:13:01,131 --> 00:13:08,032
+R kare neydi? X kare arttı, Y kare eşittir 2X dersin. Bu X eksenine ötelenmiş bir çember.
+
+75
+00:13:08,851 --> 00:13:27,192
+Zaten yarı çapı kökü olan merkez ilçemerdir. Bir çizin bakayım bölgeyi kabaca bir tarayıp nasıl düşünürsünüz? Şimdi bakacağız zaten. Bir iki dakika bekliyorum. Siz de fikir edinmiş olursunuz. En azından nereye istiyor? Açılarını bu iki eğriyi çakıştırıp açısını bulabilir misiniz?
+
+76
+00:13:54,131 --> 00:13:58,571
+Bir x-exenine ötelenmiş çember var. Bir de merkezli çember.
+
+77
+00:14:01,211 --> 00:14:04,211
+Evet, şekle bir bakalım isterseniz birlikte.
+
+78
+00:14:05,691 --> 00:14:11,771
+Bakın burada da kendim hani dönüştürmüşüm nasıl çizeceğim diye hani kabaca bilmiyorsam ne yaptım?
+
+79
+00:14:12,351 --> 00:14:16,591
+Kartezyen koordinatlar, kutupsal koordinatlar arasındaki bağıntı şunlardı.
+
+80
+00:14:17,331 --> 00:14:40,292
+Buradan da ne yaptım? Bunu R ile çarptığımda şu şekilde yazmış oldum. Yani karteziyene dönüştürdüm kutupsalı. Bunu da şu şekilde bildiğim çember denklemi şeklinde yazdım. Yani X'in biri ötelenmiş, yarı çapı 1 olan çemberdir. Bu da zaten X kare artı Y kare eşittir. 2 yani yarı çapı kök 2 olan merkezli çemberdir.
+
+81
+00:14:45,331 --> 00:15:01,632
+Biri ötelenmiş, yarı çapıda bir olursa ikiye gelir. Değil mi? Şu. Kabaca çizdik iki tane çember. Ne diyordu bize soruda? Ötelenmiş çemberin içi, merkezi çemberin dışı. Yani şu taradığımız bölge. Tamam mı?
+
+82
+00:15:01,652 --> 00:15:16,792
+Dediğim gibi, biz bunu çok milimetrik çizmediğimiz için ne yapacağım? Şu çakıştıkları noktalardaki açıları, yani ışınlarımız, yani şu alfa, beta dedik ya, onları bulmak zorundayız. İki eri kesiştir noktalar diyeceğim.
+
+83
+00:15:17,268 --> 00:15:42,268
+Kök 2, değil mi? 2 kosinisteta'yı çakıştırırsak ne olur? Kök 2 bölü 2, bu da zaten 45 derecedir. Birinci bölgede olsaydı 45 derece diyecektim şu ışınıma, tamam mı? Şuraya. Ama bir de şu dördüncü bölgede olduğuna göre o da 7 pi bölü 4'tür. Yani şu iki eğriyi çakıştırdığımızda açılarımız bir tanesi pi bölü 4, diğeri de 7 pi bölü 4.
+
+84
+00:15:43,412 --> 00:16:04,192
+Ama burada gene ne yaparım? Simetriyi kullanabilirim. Yani burada da yazdım. Kutupsal eksene göre simetri var. Dikkat ederseniz. Yani OX eksene göre simetri olduğu için alanın yarısını alırım. Yani sıfırdan Pi bölü 4'e kadar deriz. Değil mi? Evet. Nasıl yazacağım peki içini? Şu taralı kısmı bulmak için.
+
+85
+00:16:07,892 --> 00:16:26,312
+Evet, var mı fikri olan? Sesli söyleyebilirsiniz. Hangi alandan hangi alanı çıkaracağım? Yani çözümü istemiyorum. Sadece fikir açıları bulduk. Simetriyi de kullanmak istersek integral diyeceğim. Sıfırdan pi bölü 4'e kadar değil mi tete açımız?
+
+86
+00:16:26,312 --> 00:16:32,292
+R'imizi, alanı nasıl bulacağım? Şu taralı alanı. Kimin alanından kimi çıkaracağım?
+
+87
+00:16:34,484 --> 00:16:43,604
+Ötelenmiş çemberin alanından değil mi? Şunu çıkarırsam merkezi, taralı kısmın alanını bulmuş olacağım. İşte.
+
+88
+00:16:44,128 --> 00:16:56,048
+Dediğim gibi simetriyi kullanıyoruz. Yani OX'e göre ya da kutup ekserine göre simetri olduğu için alanın A bölü 2 dedim. Demin de yanına şu iki katını aldık değil mi? Şu yarısını hesaplıyoruz.
+
+89
+00:16:56,488 --> 00:17:10,528
+Formülümüz 1 bölü 2 dedik. İntegral 0'dan Pi bölü 4'e kadar ötelenmiş çemberin alanından 2 kosinüs teta kareden eksi merkezli çemberin alanını çıkararak hesaplayacağız.
+
+90
+00:17:10,528 --> 00:17:12,028
+Taralı bölgenin alanını.
+
+91
+00:17:12,127 --> 00:17:31,427
+Tamam mı? Evet. O zaman, şurası bittiyse problem yok. Devam edelim. 1 bölü 2, içini açarsak, integral sıfırdan pi bölü 4'e kadar, 4 kosümüz kare gelir. Şuradan 2 gelecek. Tamam mı? Buradan da, ikileri dışarıya atarsam,
+
+92
+00:17:32,019 --> 00:17:42,579
+Ne olur? Gider 2'ler, integral 0'dan pi bölü 4'e kadar, 2 kosünüs kare tete, eksi 1 d tete integralini hesaplayacağız.
+
+93
+00:17:43,719 --> 00:17:45,119
+Bunu da nasıl hesaplarım?
+
+94
+00:17:45,652 --> 00:18:00,892
+Bir yerine ne yazabilirim? Kosünüs karesinin toplamı 1 olduğuna göre, onu yazdım bakın. Başka türlü de çözebilirsiniz ama benim aklıma gelen bu oldu, en kolay. Buradan da kosünüs karenin bir tanesi giderse,
+
+95
+00:18:01,395 --> 00:18:16,536
+Ne kalacak geriye? Kosünüs kare eksi sinüs karenin farkı kalmış oldu. Bunun integralini hesaplayacağız. Bu da neyin açılımıdır arkadaşlar? Kosünüs 2 tetanın açılımıdır değil mi? Kos kare eksi sin kare diye yazarız.
+
+96
+00:18:16,895 --> 00:18:37,076
+Burada biraz kafayı karıştıralım. Bunlar benim şu an çözdüklerim hepsi sınavda sorulmuş sorular arkadaşlar. Görmeniz için aldım. Hani işte şöyle diyebilir, bu taralı bölgenin alanını veren şık aşağıdakilerden hangisidir der. Yani sadece şunu da sorabilir, tamam mı? Ama sonucunu da sorabilir.
+
+97
+00:18:37,811 --> 00:19:05,811
+Onun için bunlar hep çözdüklerim, yani kendim yazdıklarım sınav sorularıdır. Burada birçok öğrenci şunu yerine şunu düşünüp yazamadığı için biraz şuralarda kalırdı. Klasik sormuştuk bunu hatta çözsün diye. Evet, neyse devam edelim. Bunun yerine dedik ki karelerin toplumun 1 olduğunu biliyorum. Onu yazdım. Sonuçta şu kaldı. Bu da kosünüs 2 teta'nın açılımıdır dedik. Onu da yazdıktan sonra artık kolayca...
+
+98
+00:19:05,811 --> 00:19:12,851
+Bunun integralini alabiliriz. Bu da nedir? 1 bölü 2, sinüs 2 teta, sınırımız sıfırdan pi bölü 4'e kadar.
+
+99
+00:19:13,451 --> 00:19:23,051
+Şimdi üst sınır teta yerine pi bölü 4 yazarsam, pi bölü 2 olur. O da 1'dir. 1 bölü 2 gelir. Alt sınır 0 olduğu için 0 olur.
+
+100
+00:19:23,491 --> 00:19:32,251
+Sadece 1 bölü 2 bulurum. Buradaki 2 ile şuraya attığımda alan neye eşitmiş? Birbirinin kareye eşittir diyeceğiz. Tamam mı?
+
+101
+00:19:32,980 --> 00:19:37,259
+Evet, devam edelim. Anlaşıldı sanırım.
+
+102
+00:19:39,299 --> 00:19:45,119
+Evet, bakın bu da gene sınavda sorulmuş aynen. Aldım çektim son anda gördüğüm için.
+
+103
+00:19:45,920 --> 00:19:47,460
+Buradaki soru da şu arkadaşlar.
+
+104
+00:19:49,140 --> 00:20:00,000
+R eşittir 2, R eşittir 4 sinüs teta ve R sinüs teta eşittir 3 ile sınırlı bölgenin alanını veren belirli integral ya da integral.
+
+105
+00:20:00,000 --> 00:20:23,380
+kutupsal koordinatlarda yazınız. İntegralleri hesaplamayınız. Tamam mı? Hadi ben bir iki dakika bekliyorum. Siz şekli çizin en azından arkadaşlar. Sonra birlikte konuşuruz. Bakın okuyamıyorsanız R eşittir 2. Bu nedir zaten? Yarı çapı 2 olan çember değil mi? Şu da R eşittir 4 seniz teta nedir arkadaşlar?
+
+106
+00:20:24,000 --> 00:20:26,640
+Bu da y eksenine ötelenmiş bir çemberdir.
+
+107
+00:20:27,220 --> 00:20:29,500
+R sinüs teta eşittir 3 nedir peki?
+
+108
+00:20:30,000 --> 00:20:32,480
+R sinüs teta eşit 3 dediğimiz ne olur?
+
+109
+00:20:35,539 --> 00:20:35,880
+Evet.
+
+110
+00:20:37,960 --> 00:20:39,160
+Bilirsiniz bu kolay.
+
+111
+00:20:40,920 --> 00:20:42,940
+Y eşittir 3 doğrusu değil midir arkadaşlar?
+
+112
+00:20:43,119 --> 00:20:44,779
+Bu da y eşittir 3 doğrusu.
+
+113
+00:20:45,160 --> 00:20:47,519
+Evet, hepsini bir çizin bakalım kabaca.
+
+114
+00:20:47,940 --> 00:20:49,960
+Bölgeyi tarayın, sonra açacağım şekli.
+
+115
+00:20:57,172 --> 00:21:00,031
+Bir dakika bekliyorum, şekli çizmenizi istiyorum.
+
+116
+00:21:42,675 --> 00:21:57,675
+Evet, sanırım kabaca belki çizmişsinizdir. Söyleyin diyemeyeceğim. Çünkü şekli çizmek, hani göstermek zor olur. Bakın, şimdi dedik ki, şu nedir? Yarı çapı 2 olan merkezli çember. İşte şurada çizmiş olduk. Bakın, şu.
+
+117
+00:21:58,324 --> 00:22:11,304
+Sonra, bu da ötelenmiş bir çemberdir. Bu da ne diyeceğim, bakın R ile çarparsanız, R kare eşittir 4, R'sini üstte de dersin, X kare artı Y kare, R kare yerine yazıyorum, eşittir 4, Y.
+
+118
+00:22:11,804 --> 00:22:22,364
+Bunu da düzenlerseniz, X kare artı Y eksi 2'nin karesi eşittir 4, yani Y'nin 2'ye ötelenmiş, yarı çapı da 2 olursa 4'e gelir.
+
+119
+00:22:22,364 --> 00:22:26,324
+Yani kabaca şöyle ötelenmiş bir Y eksenme bir çemberim.
+
+120
+00:22:26,324 --> 00:22:36,044
+Bu da dedik ki zaten R sinüs ya da neye eşittir kutupsal da, karteziyen de ye eşittir, ye eşittir, üç doğrusu. Bu da ye eşittir, üç doğrusu.
+
+121
+00:22:37,264 --> 00:22:47,664
+Hepsinin ortak sınırladıkları alan ne olacaktır? Şu taralı bölgedir değil mi? Bakın doğru var. Ötelenmiş çember, merkezi çember. Yani bölgemiz şu.
+
+122
+00:22:49,587 --> 00:23:06,187
+Şimdi burada bunları çakıştırarak eğrileri, alanları, şu taralı bölgenin alanını bulmak istiyoruz. Şunlar arkadaşlar puanlama tamam mı? Sınav sorusu olduğu için ben aynı resmini çektim sadece. Tamam mı?
+
+123
+00:23:06,740 --> 00:23:23,180
+Hatta burada biz gene simetriyi kullanarak yazacağız. Neden? Daha kolay olsun işimiz diye. Yani bu pi bölü 2'ye göre simetri var. Ya da kartezyen olarak düşünürsen y eksenine göre simetri var. Yani alanın yarısını alacaksın. Şurayı.
+
+124
+00:23:23,180 --> 00:23:34,480
+Şimdi amacımız şu taralı bölgenin alanını bulmak. Ne yapmam gerekir arkadaşlar? Eğrileri çakıştırmamız gerekir. Bakın şu noktam var, bir de bu nokta. Bunu zaten biliyorum pi bölü 2 olur açısı.
+
+125
+00:23:34,740 --> 00:23:43,740
+Şimdi her iki eğriyi çakıştıralım. Şuradaki çakışan eğrilerimiz nedir? Bakın bir merkezi çemberle ötelenmiş çemberi çakıştırmam gerekir.
+
+126
+00:23:44,948 --> 00:24:08,827
+Merkezli çemberin hangisiydi? 2, re'şitir 2 ile ötelenmişte 4 sinüs tetayı çakıştırdığımı düşünüyorum. Tamam mı? Buradan sinüs tetam ne olur? 1 bölü 2 olur. 1 bölü 2 de birinci bölgede nedir? 30 derecedir. Yani pi bölü 6. İşte şunu bulmuş oldum bakın. Pi bölü 6. Şimdi bir de şu noktayı bulmam gerekir. Doğruyla çemberi çakıştıracağım.
+
+127
+00:24:09,236 --> 00:24:31,096
+Çember şu 4 sinüs tetaydı arkadaşlar. Buradaki de 3 bölü sinüs tetaydı. R sinüs tetadan, R'yi çekersem şu. Bunları çakıştırırsak sinüs kare tetaydı ne olur buradan? İşler dışarı çarpımından 3 bölü 4. Ya da sinüs tetaydı ne olur? Artı eksi, kök 3 bölü 2. Kök 3 bölü 2 de neydi?
+
+128
+00:24:31,731 --> 00:24:53,551
+60 dereceydi değil mi? Birinci bölgede olduğuna göre, tetamız ne olur? Pi bölü 3 olacaktır. İşte açıları da bulduk. Burada şimdi geriye kalan alanı yazmak. E ne diyeceğim? Pi bölü 6 ışınından değil mi? Pi bölü 3'e kadar, pi bölü 3'ten, pi bölü 2'ye kadar. Bu. Şimdi tek tek yazalım.
+
+129
+00:24:54,932 --> 00:25:10,071
+Yarısını kullandık dedik, simetriyi kullanıyoruz. Yani alanın yarısını aldım. Formülden gelen 1 bölü 2'miz var. Önce şu pi bölü 6 ile pi bölü 3 arasındaki integral pi bölü 6'dan pi bölü 3'e kadar diyoruz.
+
+130
+00:25:10,071 --> 00:25:22,771
+Ne var burada? Ötelenmiş çemberden, değil mi? Merkezli çemberi çıkarırsam, yani alan olarak şu taralı kısmı bulmuş olacağım. Ötelenmiş çemberimiz neydi? 4 sinüs tetanın karesinden.
+
+131
+00:25:22,932 --> 00:25:32,852
+Merkezli çemberin karesi diyorum. Formülümü yazdım. Artı, neredeyim şimdi? Pi bölü 6'dan, pi bölü 2'ye kadar değil mi? 6 diyorum, pardon 3.
+
+132
+00:25:33,592 --> 00:25:43,852
+İntegrel. Bu formülümüzden 1 bölü 2, pi bölü 3'den, çünkü nereye kadar gidiyor bölgem? Şöyle ki, değil mi? Pi bölü 2'ye kadar gidiyor.
+
+133
+00:25:43,852 --> 00:25:49,872
+E ne yapacağız burada da? Pi bölü 3'den pi bölü 2'ye kadar.
+
+134
+00:25:50,516 --> 00:26:16,476
+düşünüyoruz. Doğrudan, değil mi? Doğrunun alanından, merkezli çemberin alanını çıkardığımızda da, bunu, şu kısmı bulmuş olacağız. Tamam mı? Yani, 3 bölüsünün setanın karesi, eksi, 2'nin karesi şeklinde. Anladık mı arkadaşlar? Yani, öyle basit değil. Karışık bir şekil. Tamam mı?
+
+135
+00:26:17,940 --> 00:26:32,600
+Çok kolay değil. Var mı bir problem? Bu kadar istemiş, sadece yaz bıraktığı hesaplama. Onun için buradan geçelim bakalım. Başka bir örnek daha aldım gene.
+
+136
+00:26:34,280 --> 00:26:42,620
+Evet, diğer, gene bu da bir sınav sorusu. Aynen orada resmini çektim. Re eşittir, bir eksi, sinisteta. Bu gene kardiyot.
+
+137
+00:26:43,284 --> 00:26:58,164
+Kardiyoidun dışında, re eşittir sinüs teta, bu da gene çember değil mi? Çemberin içinde kalan bölgenin alanını soruyor bana. Hadi bekliyorum bunu çizin bakalım neresi olur. Bakın gene re eşittir, re eksi sinüs teta.
+
+138
+00:26:58,836 --> 00:27:18,115
+Bu sefer de y ekseni, sivri ucu y ekseninin y negatif tarafında olacak ya pozitif tarafında olan bir kardiyot olacak. Onu artık siz düşünün bakayım nasıl çizeceksiniz. Diğeri de re eşittir sinüs teta ise da ne olacak? Re kare eşittir re sinüs teta diye yazarsan, o da ne olur?
+
+139
+00:27:18,115 --> 00:27:25,635
+X kare artı y kare eşittir y diye yazarsın. Yani y eksenini ötelenmiş bir çember gibi çizeceksiniz.
+
+140
+00:27:26,163 --> 00:27:36,344
+Kardiyodun dışı, çemberin içi. Hadi bir dakika bekliyorum. Çizip bölgeyi bir tarayın. Açıları da çakıştırıp bulmaya çalışın arkadaşlar. Hadi lütfen.
+
+141
+00:27:37,544 --> 00:27:45,304
+Burada zaten şimdi bakacağız zaten. Çizip çizmediğinizi acaba ne kadar öğrenebilmişim? Onu test edebilirsiniz.
+
+142
+00:27:54,836 --> 00:28:12,776
+Ben sınavda illeki bir alan sorusu beklerim arkadaşlar. Ya hesaplama sonucunu sorar veya deminki gibi yaz hangisidir? Test olacağına göre verilen bölgenin alanı aşağıdakilerden hangisiyle ifade edilmiştir diye size o şekilde de sorabilir yani.
+
+143
+00:28:14,516 --> 00:28:21,436
+Onun için alanı kesinlikle bekliyorum. T doğrusu, normal doğru denklemi sorabilirler.
+
+144
+00:28:23,251 --> 00:28:27,471
+Şimdi birazdan da eğri uzunluğunu vereceğim. Ondan soru gelebilir.
+
+145
+00:28:33,011 --> 00:28:35,871
+Evet, sanırım biraz düşünmüşsünüzdür.
+
+146
+00:28:37,951 --> 00:28:41,191
+Şimdi hemen çizmeye çalışalım.
+
+147
+00:28:41,191 --> 00:28:43,911
+Dedik ki bu kardiyoitti.
+
+148
+00:28:44,711 --> 00:28:46,059
+Kardiyoidin...
+
+149
+00:28:46,548 --> 00:28:57,288
+Bakın, sivri ucu nerede olacak? Buna pi bölü 2 verirsem zaten 0 olur değil mi? Yani şuradan, yani sivri uç, y ekseninin eksi tarafından.
+
+150
+00:28:57,707 --> 00:29:09,048
+Yani şuralar. İşte kardiyoid bu dedik, çizdik ezber artık çok üzerinde durmayalım. Bu da y ekseninin ötelenmiş, 1 bölü 2'ye ötelenecek, yarı çapıda 1 olan bir çemberdir şu.
+
+151
+00:29:09,048 --> 00:29:14,447
+Ne dedi bize? Kardiyoidin dışında, çemberin içi, yani şu, taradığımız.
+
+152
+00:29:14,548 --> 00:29:23,667
+Şu kısım arkadaşlar. Tamam mı? Dediğim gibi biz bunu kabaca çizdik ama ne yapmam gerekir? Şu iki yerinin çakıştığı noktaları yani açıları bulmam gerekir.
+
+153
+00:29:24,347 --> 00:29:34,487
+Çakıştırırsak, 1-sinus theta ile sinus theta'yı çakıştırırsak, buradan ne olur? 2 sinus theta eşit 1 ise, sinus theta 1 bölü 2 ise 30 derecedir değil mi?
+
+154
+00:29:34,647 --> 00:29:41,187
+Pi bölü 6'dır şu birinci bölgede. Şu ikinci bölgesinde de 5 bir bölü 6 olur değil mi? 150'ye gelir.
+
+155
+00:29:41,748 --> 00:29:58,587
+Tamam mı? Şu. Yani açılarımız bunlar. Simetri de kullanabilirsiniz veya kullanmadan da yapabilirsiniz. Yani pi bölü 6'dan 5 pi bölü 6'ya kadar deyip doğrudan yapabilirsiniz. İşte öyle demişiz ilk önce bakın. Alan diyorum.
+
+156
+00:30:00,000 --> 00:30:26,319
+2 zaten formülden gelen pi bölü, theta pi bölü 6'dan 5 pi bölü 6'ya kadar integralimiz. Ne diyeceğim şimdi? Şu taralı kısmı bulabilmek için ötelenmiş çemberden kardiyoidi çıkaracağım ki şu taralı kısmı bulalım. O zaman ötelenmiş çemberin alanından yani sinüs tetanın karesinden kardiyoidin karesi, 1- sinüs tetanın karesi d-theta diye yazacağım.
+
+157
+00:30:28,000 --> 00:30:36,039
+Dediğim gibi, alanın yarısını düşünürsen, buraya 2 dersin, bu 2 ile de bu 1 bölük sadeleşirse, bu kalır diyeceğiz.
+
+158
+00:30:41,140 --> 00:31:04,800
+Pardon, özür dilerim. Buradan buraya geçiş değil. Veya demiş. Şimdi bu tamam tamam simetri kullanmadık ama simetri kullanırsam şurada, yani alanın yarısını düşünürsem ne olacak? A bölü 2 diyeceğim. O zaman pi bölü 6'dan pi bölü 2'ye kadar değil mi? Şu, şuraya kadar. 1 bölü 2'leri de sadeleştirerek yazmışlar. Tamam mı?
+
+159
+00:31:05,172 --> 00:31:12,751
+Anlaşıldı tamam mı? Ya bu, ya da böyle yazarsın. Bu simetriyi kullanmışız burada. Yani y eksenine göre simetri vardır demişiz.
+
+160
+00:31:13,751 --> 00:31:32,112
+Buradan da integral pi bölü 6'dan pi bölü 2'ye kadar şunu sinüs kare açarsak bu ne olur? Eksi 1 gelir. Eksi 2 sinüs teta. Önünde eksisi var. Artı gelir. Bu da eksi sinüs kare teta. Sinüs kareler gider. İntegramı da basitmiş bakın. Eksi 1'in integralı eksi tetadır.
+
+161
+00:31:32,531 --> 00:31:56,951
+2 sinüs tetada nedir? Eksi 2 kosinüs tetadır integrali. İntegral pi bölü 6'dan pi bölü 2'ye kadar diyeceğiz. Sınırların yerine yazarsak, 3 sınır, eksi pi bölü 2, kosinüs pi bölü 2 sıfır gelecek. Eksi alt sınırdan yazmışız sıfır bu. Eksi pi bölü 6 diyeceğiz değil mi? Alt sınırı yazıyoruz.
+
+162
+00:31:57,536 --> 00:32:13,376
+Bir de şuradan pi bölü 6, kosinüs pi bölü 6 dedik. Onun da değeri ne olur? Kök 3 bölü 2 gelir. Yani sonuçta arkadaşlar, şu işlemin sonucunda eksi pi bölü 3 artı kök 3 diye sonucu yazabileceğiz.
+
+163
+00:32:15,296 --> 00:32:16,516
+Oldu mu? Var mı bir problem?
+
+164
+00:32:19,776 --> 00:32:21,016
+Anlaşıldı mı arkadaşlar?
+
+165
+00:32:23,508 --> 00:32:26,667
+Eğri uzunluğunu nasıl hesaplayacağız? Ona geçelim.
+
+166
+00:32:28,367 --> 00:32:29,827
+Yoksa sorumuz...
+
+167
+00:32:37,715 --> 00:32:47,695
+Evet, şimdi bir de alanı verdik, eğri çizimini verdik, kutupsal olarak. Şimdi kutupsal bir eğrinin uzunluğu veya yay uzunluğu da diyorduk buna.
+
+168
+00:32:47,695 --> 00:33:03,595
+Şimdi diyelim ki, teta alfa ile beta. Eğer teta alfa ile beta aralığında, re eşittir f teta fonksiyonunun sürekli birinci mertebe türevi varsa ve teta değeri alfadan beta'ya değişirken,
+
+169
+00:33:05,715 --> 00:33:15,575
+R eşittir F theta eğrisinin sadece bir kez geçiyorsa, yani düzgün eğri ise, bu durumda eğrinin uzunluğunu nasıl hesaplayacağız?
+
+170
+00:33:15,695 --> 00:33:23,115
+Hatırlarsanız parametrik denklemlerdeki bir eğri uzunluğunu hesaplarken dedik ki, biz düzgün eğrilerin uzunluklarından bahsediyoruz.
+
+171
+00:33:23,215 --> 00:33:27,555
+Yani her önümüze gelen kutupsal eğrinin uzunluğunu hesaplayabiliriz.
+
+172
+00:33:27,555 --> 00:33:31,575
+Çünkü ne olması gerekir? Türevinin de sürekli olması gerekir.
+
+173
+00:33:33,715 --> 00:33:58,415
+değişen bir eğri verilmişti. A'dan B'ye hareket ederken hiçbir nokta, kesiklik olmaması gerekir. Atlama, zıplama yok. Yani eğrimiz düzgün olması gerekir. Türevlerinde sürekli olması gerekirdi. Burada da aynı mantıkla. Düzgün bir eğrinin uzunluğundan bahsediyoruz. Böyle bir kutupsal eğrinin uzunluğunu da hesaplayabilmek için parametrik denklemlerden yararlanacağız arkadaşlar.
+
+174
+00:34:01,715 --> 00:34:09,715
+kısmi türev ve katlı integral konuları arasındaki ilişkiyi biliyorduk. Neydi? x eşittir r kosünüs teta, y eşittir r sinüs teta demiştik.
+
+175
+00:34:09,715 --> 00:34:19,715
+R'de neydi? f tetaydı zaten. Onu yazdığımda işte x eşittir f tetaydı kosünüs t, y eşittir f tetaydı kosünüs t, aralığımızda nedir?
+
+176
+00:34:19,715 --> 00:34:29,715
+İşte alfa beta aralığında verilmiş şu eğrinin uzunluğunu hesapla diyor bana. Ben bunu parametrik uzunluk formülünü kullanarak kolayca bulacağım.
+
+177
+00:34:29,715 --> 00:34:31,315
+Karametreyi de hatırlayalım bakın.
+
+178
+00:34:32,244 --> 00:34:41,663
+x eşittir f'te, y eşittir g'te, t'de a b aralığında verilmiş bir eğrinin uzunluğunu biz l ile göstermiştik.
+
+179
+00:34:41,824 --> 00:34:52,024
+İntegral a'dan b'ye kök içinde x'in t'ye göre türevinin karesiydi, artı y'nin t'ye göre türevinin karesinin kare kökü dt idi.
+
+180
+00:34:52,024 --> 00:34:55,984
+Hatta bu eğrinin bu formülünü de nereden bulmuştuk?
+
+181
+00:34:56,384 --> 00:35:00,244
+Kartezyen denklemin uzunluk formülünü kullanarak bulmuştuk.
+
+182
+00:35:00,244 --> 00:35:07,244
+Burada da biz ne yapacağız? Böyle bir kutupsal eğrinin uzunluğunu hesaplayabilmek için parametrik...
+
+183
+00:35:07,795 --> 00:35:35,775
+Denklemlerin uzunluk formülünü kullanacağız. Hiçbir fark yok arkadaşlar. Buradaki bizim parametremiz neydi? T idi değil mi? Burada kutupsala geçtiğimizde benim parametrem yani bakın burada x, f, t'ye bağlı. Burada x, n'ye bağlı? Teta'ya bağlı. O zaman t gördüğüm yere ne yazmalıyım? Teta yazmalıyım. Yani buradaki parametre t, bizim kutupsaldaki parametremiz de tetadır. O zaman ben buradaki uzunluğu s dedi kutupsal.
+
+184
+00:35:35,795 --> 00:35:46,475
+Valla bununla karışmaması için dedim ki, kutupsal bir eğrinin uzunluğunu S ile gösterdim. Sınırlarım benim de nedir? Bakın integral, alfadan beta'ya kadar diyeceğim.
+
+185
+00:35:47,076 --> 00:35:59,255
+Kök içinde, t gördüğüm yere teta yazıyorum. X'in teta'ya göre türevinin karesi artı, y'nin teta'ya göre türevinin karesinin kare kökü çarpı d teta.
+
+186
+00:36:01,119 --> 00:36:11,420
+Aktarmış oldum. Şimdi tek yapmam gereken benim, formülü çıkaracağım ya, x'in teteye göre türevini alacağım, y'nin teteye göre türevini alıp karelerin toplamını bulacağım.
+
+187
+00:36:11,420 --> 00:36:27,039
+Alalım birlikte bakın. x'in teteye göre türevini şuradan alıyorum. Çarpım yok mudur? Birincinin türevi. f üstü teta, kosünüs teta. Çarpı artı, f teta çarpı, kosünüsün türevi eksisi, sinüs gelecek şu.
+
+188
+00:36:27,668 --> 00:36:36,347
+Y'nin türevini alırsam teta'ya göre, f üstü teta sinüs teta, artı f teta kosünüs teta.
+
+189
+00:36:36,847 --> 00:36:41,028
+E şimdi bakıyorum formülde, bir de bunların kareleri lazım bana. Karelerini alalım.
+
+190
+00:36:41,927 --> 00:36:47,108
+Buradan karesini de oradan aldım bakın. Şu ifadenin karesini alıyorum. Birincinin karesi.
+
+191
+00:36:47,764 --> 00:36:56,023
+Birinci ile ikincinin çarpımının iki katına gelir. Eksi 2 f üstü, f teta, sinüs teta, kosinüs teta. İkincinin karesi.
+
+192
+00:36:56,963 --> 00:37:05,143
+Aynı şekilde y'nin teta'ya göre türevinin karesini alıyorum. Gene şöyle kocaman bir kare diyorum. Birincinin karesi.
+
+193
+00:37:05,844 --> 00:37:15,864
+Artı birinci ile çarpı, ikincinin çarpımın iki katı, 2 f üstü, f teta, seri üst teta, kosin üst teta dedim. Artı ikincinin karesi geldi. Tamam mı?
+
+194
+00:37:16,052 --> 00:37:42,452
+Şimdi bunları taraf tarafa toplayalım. Tabi uzatmayacağım burada. Dikkat ederseniz şu eksi 2 artı 2 birbirini götürdü. Tamam mı? Geriye ne kaldı? Dikkat edelim. Şuradan f üstünün karesi parantezini alırsam şu iki ifadeyi sinüs kare, kosinüs karenin toplamı 1 olmaz mı? Yani şuradan şu ikisinin toplamından f üstünün karesi kaldı. Bunlar gitti. Burada da aynı mantıklı f.
+
+195
+00:37:43,059 --> 00:37:49,779
+karenin parantezini alırsam, sinüs kare, kosinüs kareler 1 olduğuna göre, burada da f'in karesi kaldı.
+
+196
+00:37:50,079 --> 00:37:56,159
+Yani sonuçta f'in türevinin karesi artı f'in karesi kaldı.
+
+197
+00:37:56,659 --> 00:38:20,460
+Bunu bir daha şöyle de yazabilirim, daha kolay olsun diye. F yerine ne yazalım? R değil midir? R işte, R f theta değil midir? R'nin karesi gelecek. Bu da türev ise R'nin theta'ya göre türevinin karesi. Evet, şimdi ben bunu getireceğim. Şurada yerine yazacağım değil mi formülümde? Şimdi yazıyorum yerine. Uzunluğu S dedik. İntegral, alfadan betaya kadar, kök içinde.
+
+198
+00:38:21,300 --> 00:38:40,179
+Ne gelecek? R'nin karesi artı R'nin teta'ya göre türevinin karesinin kare kökü de teta. İşte sizin bilmeniz gereken formül bu arkadaşlar. Tamam mı? Uzunluk formülümüz. Bu da nereden bulduk? Dedik ki parametrik eğrinin uzunluğunu kullanarak bulduk.
+
+199
+00:38:40,179 --> 00:38:48,019
+Şimdi en klasik, basit bir örnek çemberin uzunluğunu bulalım. Bakın. R'iştir bir kutupsal eğrisi verilmiş.
+
+200
+00:38:49,043 --> 00:39:11,523
+Çemberinin uzunluğunu bulmuş. Bu gerçekten x kar artı y kare eşittir bir yarı çapı bir olan çemberdir. Çemberi çizmedim buraya artık onu biliriz değil mi arkadaşlar? Yani formülüm S dedim, integral şuradan hemen yazdım. Alfadan bt'ye kadar kök içinde r kare artı r'nin teteye göre türevinin karesinin kare kökü d tete diyoruz.
+
+201
+00:39:11,923 --> 00:39:25,563
+E şimdi çemberi göz önüne alırsanız tetası nereden başlıyor? Sıfırdan 2 piye kadar değil mi? Uzunluğu hesaplamak için açımız. Yani sıfırdan 2 piye aralığımız. İntegra sıfırdan 2 piye kadar diyeceğiz.
+
+202
+00:39:27,144 --> 00:39:33,983
+İçini yazmak istiyoruz. R eşittir 1 ya. R'nin teteye göre türevi sıfır değil midir? Sıfırdır. R kare.
+
+203
+00:39:34,612 --> 00:39:43,372
+Şunu oluşturmak istiyorum kökün içinde. R'nin tete'ye göre türevinin karesi ne olur? 1 artı, türev de 0 ise, yani sonuç ne oldu? 1 oldu.
+
+204
+00:39:43,731 --> 00:39:51,652
+Getirip şurada yerine yazarsam, sınırımız işte 0'dan 2 pi'ye kadar integral, kökün içine 1 dedik, d teta.
+
+205
+00:39:52,092 --> 00:39:59,972
+Bunda integralin ne olur? Teta gelir, 0'dan 2 pi'ye kadar, üst sınır eksi, alt sınırdan 2 pi olarak zaten uzun.
+
+206
+00:40:00,000 --> 00:40:08,280
+Bunun da 2P olduğunu biliyoruz. Yani R'si 1 olduğu için. İşte çemberin uzunluğunu kolayca bu formülle hesaplamış olduk.
+
+207
+00:40:08,680 --> 00:40:13,820
+Şimdi diğer sorularımıza dönelim arkadaşlar. Burada var mı formülle ilgili takıldığımız bir yer?
+
+208
+00:40:14,780 --> 00:40:22,700
+Formülü bilmemiz gereken şu formül arkadaşlar. Hani nasıl çıkartıldınız size kimse sormaz ama kutupsaldan işte ne yaptık?
+
+209
+00:40:22,700 --> 00:40:27,580
+Parametreyi kullanarak kutupsalda eğri uzunluğunu yazmış olduk.
+
+210
+00:40:32,052 --> 00:40:33,972
+Ördeyim de öbürü gelecekti.
+
+211
+00:40:34,871 --> 00:40:39,152
+Şuradan notlar artı artı olunca biraz karışıyor.
+
+212
+00:40:39,751 --> 00:40:41,331
+Evet, şimdi gelelim.
+
+213
+00:40:42,036 --> 00:40:58,376
+Yay uzunluğu işte demin de burada kısaca verildiği için ben hani nereden geldiğini görmeniz açısından, tabii biz bunları yüz yüze eğitimde anlatıldığı için arkadaşlar birçoğunu tahtada yazarız. O yüzden de araya bazen notlar sıkıştırıyorum açıklamak açısından.
+
+214
+00:40:58,376 --> 00:41:10,036
+Evet, dedik ki alfabet arasında verilmiş bir kutuksan eğrin uzunluğunu bu formülle hesaplıyoruz. Dedik daha da kısa revsü diye yazdık bakın. Evet, şimdi birkaç örneği böyle hesaplıyoruz.
+
+215
+00:41:10,036 --> 00:41:34,396
+Hesaplamaya çalışalım. İşte gene diyor ki bana, R'ş'tir 1 artı, kosmüs türev eğrisinin uzunluğunu hesaplayalım. Yani kardiyoidun uzunluğu nedir? İşte kabaca kardiyoidi çizdik şuraya değil mi? Şimdi bunu hesaplayabilmek için uzunluğunu ne yapmam gerekir? Şu kökün içindeki ifadeleri oluşturmam gerekir. R'yi biliyorum.
+
+216
+00:41:35,188 --> 00:41:41,768
+Bir de türevine ihtiyacım var. Türevini nasıl alırım? R'nin türevi dersem, eksi sinüs teta gelir.
+
+217
+00:41:43,027 --> 00:41:52,447
+İntegranın içine taşımak biraz zahmetli oluyor. Dışarıda halletmek daha kolay olacak. Ne gerekir bana? R'nin karesi, bir de R üstünün karelerinin toplamı lazım.
+
+218
+00:41:53,228 --> 00:41:57,847
+O zaman bunun karesini alırsam, 1, artı 2 kosünüs teta.
+
+219
+00:41:58,420 --> 00:42:16,540
+Artı kosünüs kare. R kareyi yazdım. Buradan da sinüs kare gelir değil mi? Şu karelerin toplamı biri vermez mi bana? Bir olur. Bir ile düşünürsem iki parantezini alarak ya da iki artı iki kosünüs teta diye yazmış olduk değil mi? Şu. Yani şu ifadenin sonucu şu.
+
+220
+00:42:17,420 --> 00:42:22,080
+Şimdi bunu daha kolay hesaplayabilmek için kökün içine yazacağım ya.
+
+221
+00:42:22,708 --> 00:42:38,827
+1 artı, bunu 2 parantezine de alırsam, 1 artı kosmü teta neye eşittir? Karakör dışına daha kolay çıkarabilmek için biraz üzerinde işlem yapalım. Bakın, bunu 2 parantezine aldığımda, artı 2 aç parantez.
+
+222
+00:42:41,856 --> 00:42:58,436
+Bir dakika. Şurada 1 artı kosünüs teta yerine ne yazalım arkadaşlar? 1 artı kosünüs teta'yı şöyle düşünürseniz, bakın kosünüs teta'yı, kosünüs teta bölü 2 artı kosünüs teta bölü 2 parantezin içi teta bölü 2 diye yazarsınız.
+
+223
+00:42:58,436 --> 00:43:07,496
+Oradan kosünüs kare, eksi sinüs kare teta bölü 2'ler gelir. Oradan sinüs kare teta bölü 2 yerine ne yazarım? Bir eksisi.
+
+224
+00:43:07,987 --> 00:43:25,987
+Kosünüs kare teta bölü 2 yazarsam, ne olur? 2 tane, yani şu 2 tane, kosünüs kare teta bölü 2, eksi 1 gelir. Zaten şu 2 de şurada duruyordu. 2 parantezinde ya, şu. Tamam mı? Yani şu kosünüs teta'yı, kosünüs...
+
+225
+00:43:26,559 --> 00:43:38,380
+Aç parantez, teta bölü 2 artı teta bölü 2 diye yazmış oldu. O ne oldu? Kosünüs kare teta bölü 2 eksi, sinüs kare teta bölü 2 oldu. Sinüs kare teta bölü 2 yerine de 1 eksi
+
+226
+00:43:38,900 --> 00:44:04,060
+Kosünüs kare diye yazıp düzenlerseniz, şu hale gelir. Tamam mı? Bu dönüşümleri biraz, hani notlarınızda kitaplardan bakıp yazabilirsiniz. Buradan da düzenlenirse bu, bakın parantezi açarsam, ikiler gider. Yani sonuçta 4 tane kosünüs kare, theta bölü 2 kalır. O halde şimdi getirip yerine yazıyoruz. Yani şu kökün içi ne oldu?
+
+227
+00:44:04,608 --> 00:44:20,228
+4 cos kare theta bölü 2 oldu. Bu da ne olur? Kökün dışına mutlak değer cos theta bölü 2 diye çıktı. İşte bir şekilde düzenlemiş olduk. Şimdi gelelim, buradaki eğrinin uzunluğunu hesaplayacağımız için.
+
+228
+00:44:20,688 --> 00:44:24,868
+Theta ne olur? Bakın theta sıfırdan başladı, bir tur döndü değil mi? 2 pi'ye kadar.
+
+229
+00:44:25,652 --> 00:44:31,271
+Açımızda ne diyeceğiz? S dedik formülümüzün uzunluğunu kullanmak için S'i kullandık.
+
+230
+00:44:31,852 --> 00:44:38,132
+İntegral tetası 0'dan 2 pi'ye kadar. Bunu zaten yazdık. D teta.
+
+231
+00:44:38,672 --> 00:44:48,372
+E şimdi 0'dan 2 pi'ye kadar da bu mutlak değer olduğuna göre, değil mi? Pozitif neresi, negatif neresi diye düşüneceğiz.
+
+232
+00:44:49,331 --> 00:45:12,111
+Şimdi 2, kosünüs, teta bölü 2'yi şu aralıkta nasıl düşünmeliyiz? Birinci bölgede pozitiftir, kosünüs değil mi? Bir de dördüncü bölgede pozitiftir. İkinci ve üçüncü bölgelerde negatiftir. Ama burada şunu sıfırla pi arasını düşünürseniz,
+
+233
+00:45:12,724 --> 00:45:37,164
+Yani şurada pi bölü 2 gibi olur. Yani birinci bölgeye denk geleceği için pozitif olacak orada. Yani integral sıfırdan pi'ye kadar şu mutlak değer pozitif yazdık. Sonra pi'den 2 pi'ye kadar da, yani pi bölü 2 ile pi arasında da negatif olacağına göre kosünüs, o zaman işaretim ne olur? Eksi olur. Buna dikkat edeceğiz. Tamam mı arkadaşlar?
+
+234
+00:45:37,588 --> 00:45:57,327
+Şu mutlak değer, teta bölü 2 olduğu için, pozitif ve negatif olduğu yerleri biliyoruz. Ona göre düşündük. Yani birinci bölgede şu kısım, şurası da ikinci bölgede negatif olduğu için böyle yazmış olduk. Bundan sonra sizlerken kolay hesaplayacağız. Bu tamam mı arkadaşlar? Şurası.
+
+235
+00:45:59,443 --> 00:46:06,864
+Mutlak değer olduğu için düşünüyoruz bölgeleri. Kosünüs nerede pozitif, nerede negatif? Onlara göre yazmış olduk.
+
+236
+00:46:07,304 --> 00:46:16,203
+O zaman şimdi integralini alabilirim bakın. Kosünüs teta bölü 2 sabit zaten. Teta bölü 2'nin integralinde ne gelecektir?
+
+237
+00:46:16,324 --> 00:46:22,763
+2 tane sinüs teta bölü 2, bir de buradan ikisi var, 4 gelir. Sınırım 0'dan pi'ye kadar.
+
+238
+00:46:23,315 --> 00:46:35,415
+Şimdi şuradayız, eksi 2'yi düşünme şu an. Aynı şekilde 2 tane sinüs teta bölü 2, bir de şu 2'den eksi 4 tane sinüs teta bölü 2, pi'den 2 pi'ye kadar diyeceğiz.
+
+239
+00:46:35,835 --> 00:46:47,975
+Şimdi üst sınırdan sinüs pi bölü 2'den 1 gelir. Yani şuradan 4 gelecek. Alt sınır 0 yazmıyorum. Şuradan üst sınırı düşünün, 0 olur sinüs.
+
+240
+00:46:48,467 --> 00:47:02,187
+P'den dolayı. Alt sınırı yazdığımda da P bölü 2'den 1 gelir. Yani şurası da artı olur. Bir de şu 4'ün vardı. Sonuç 8 olacak. Tamam mı? Evet, bir tane daha çözelim.
+
+241
+00:47:05,507 --> 00:47:14,547
+Evet, R eşittir. Kosünüs teta çemberinin uzunluğunu hesaplayınız. Bu da gene nedir?
+
+242
+00:47:15,027 --> 00:47:42,447
+Pardon, x eksenine ötelenmiş bir çember değil mi arkadaşlar? Bakın, r ile çarparsanız, r kare eşittir, r kosünüs tetadır. Hani kabaca çizmek istersem, karteziyende. Ne olur? x kare artı, y kare eşittir, x diye yazarım. Yani, x eksi 1 bölü 2'nin karesi, artı y kare eşittir, 1 bölü, pardon, 1 demem gerekir değil mi? Yarı çapı.
+
+243
+00:47:43,315 --> 00:48:03,275
+Hayır, bir dakika. 1 bölü 4 diyeceğim. Yarı çapı 1 bölü 2. Yanlış mı hesaplıyorum? Hayır. x kare, pardon, x eksi 1 bölü 2'nin karesi, 1 bölü 4. x eksi 1 bölü 2'nin karesi, artı y kare eşittir 1 bölü 4 demem lazım. Yani 1 bölü 2'ye ötelenecek.
+
+244
+00:48:03,795 --> 00:48:23,815
+1 bölü 2, yarı çapıda 1 bölü 2 ise 1'e gelir. Şu. Çemberim şu arkadaşlar. Ötelenmiş çemberin uzunluğunu soruyor bana. Burada simetriyi de kullanabilirsiniz. Bakın, o x'e göre simetri vardır. Simetriyi kullanırsak, tetası ne olur? Bakın burada. Sıfırdan pi bölü 2'ye kadar yazarsınız. Tamam mı?
+
+245
+00:48:31,315 --> 00:48:58,455
+Türevine, renin türevine de ihtiyacım var. Bakın, re bu. Türevi de nedir? Eksi sinüs tetadır. Neye ihtiyacımız var? Re kare artı re üstünün karesi. Re kare, kosünüs kare gelir. Buradan da sinüs kare ne olur? Bir oldu. Yani kökün içi biri eşittir. Getirip burada yazıyoruz. Burada bakın simetriyi de kullanmamış. Yani tetamız nereden nereye kadar? Eksi pi bölükiden artı pi bölükiye kadar.
+
+246
+00:48:59,023 --> 00:49:22,003
+Dediğim gibi simetriyi kullansaydınız, 2 ile çarpardınız, 0'da pi bölü 2'ye kadar dersin. Böyle de hesaplarsın. Kolay olduğu için böyle yazmışız. İntegral eksi pi bölü 2'den artı pi bölü 2'ye kadar, kökün içi 1 olduğu için sadece d theta geldi. Bunda integrali theta'dır. Üst sınır eksi alt sınırdan da pi olarak buluruz.
+
+247
+00:49:22,420 --> 00:49:26,700
+Demek böyle bir çemberin uzunluğu pi'ye eşittir diyoruz.
+
+248
+00:49:27,560 --> 00:49:29,400
+Evet, şimdi, buyurun.
+
+249
+00:49:32,400 --> 00:49:35,040
+Sesini alamıyorum, bir daha sesle.
+
+250
+00:49:36,320 --> 00:49:39,680
+Integral aralığını sıfırla iki pi aralığı olarak yapabilir miydik?
+
+251
+00:49:41,331 --> 00:49:55,091
+Şurada mı? 3, 4, 4, tamam ya fark etmiyor. Hani çok büyük değerlerle uğraşmamak için. Ben olsam hani bunu hemen hop simetri kullanırdım derdim ki o x'e göre simetri vardır. 0'dan pi bölü 2'ye kadar derim.
+
+252
+00:49:57,831 --> 00:50:00,311
+Ben bunu büyük ihtimalle 2 pi r'den yapardım.
+
+253
+00:50:00,884 --> 00:50:01,563
+Efendim?
+
+254
+00:50:01,983 --> 00:50:02,884
+2 Pire'den.
+
+255
+00:50:03,523 --> 00:50:20,183
+Zaten teste de böyle bir soru, hani sormaz. Neden? Klasik olsa sorar çocuk, hani bunu kullanabiliyor mu? Ama test olduğu için öğrenci her yerden bakıp onu bulabilir. Yani sen kutupsal unutsan da burada Kartezyen'den bunu çözebilirsin. Ama çok zahmetli olur orada uğraşmakta.
+
+256
+00:50:20,659 --> 00:50:44,579
+Evet, neyse, yapacak bir şeyim yok. Yani şu an kutupsal olarak her şeyi düşünmek zorundayım. Yani sen bunun tabii ki uzunluğunu istediğin şekilde bulabilirsin yani. Evet, o yüzden işimiz zor oluyor böyle. Hani bir sınıf ortamı olsa daha güzel konuşuruz, tartışırız. Ama maalesef sizin sınıfında bir özelliği var. Çok derse katılılmıyor yani. Kimse bir soru da sormuyor.
+
+257
+00:50:45,152 --> 00:50:59,072
+Dinleyip dinlemediğinizi de bilemiyorum. Birkaç kişi cevap veriyor. Onları artık ezberledi gözüm hani. Bilemiyorum. Neyse bakacağız sınav sonucunda. Sonra öğreneceğiz durumumuzu.
+
+258
+00:50:59,956 --> 00:51:14,836
+Hayır, 160'a yakın bir mevcut var. Hadi 100 listeyi şöyle görüyorum her gün, 113 kişi katılıyor en az diye. Ama hiçbir cevap veren yok. Dinleyip dinlemediğinizi de anlayamıyorum. İnşallah dinliyorsunuzdur.
+
+259
+00:51:14,836 --> 00:51:27,936
+Evet, şimdi diyelim ki rejdir, bir eksik kosmistete kardiyodinin uzunluğunu hesaplayınız diyor gene. Gene bu da kardiyodinden kabaca bakın çizdik diyelim. Sivri noktası, şurası eksi olduğu için.
+
+260
+00:51:27,956 --> 00:51:42,236
+X80'nin negatif kısmındadır. Kardiyodu bu şekilde çizmiş olduk. Hemen R belli, türevimizi de alalım. Ne gelir? Sinüs tete gelir. Karesi ve türevinin karesini toparlayalım.
+
+261
+00:51:43,123 --> 00:51:56,083
+Buradaki tek problemler, işlemleri yapabilmek. Hani neler gelecek, ona bakacağız. Bunun karesini aldığımda ne gelir? 1-2 cosθ artı cos²θ, bu da sinüs kare.
+
+262
+00:51:56,083 --> 00:52:08,384
+Yine bu karelerin toplamı 1 olacağına göre, sonuçta 2-2 cosθ olur. Bunu yine cosθ yerine ne yazabilirim? Ona bakacağım. 2 yazdık buraya bakın.
+
+263
+00:52:11,123 --> 00:52:39,123
+Kosünüs tete, yine tete, aç parantez diyeceğim şurada, tete bölü 2 artı tete bölü 2 diye yazacağım. Burada kosünüs kare tete bölü 2, eksi sinüs kare tete bölü 2 gelir. Kosünüs kare tete bölü 2 yerine, bir eksi sinüs kare tete bölü 2 dersem, ne olur? Bir tane, diyeceğim, eksi iki tane olacak. Bir tane daha vardı elimizde. Yani, şunun yerine, kosünüs tete yerine, bir eksi iki tane sinüs kare.
+
+264
+00:52:39,123 --> 00:53:05,523
+teta bölü 2'yi yazacağım. Bunu da düzenlersek, şunu açtığımda parantez 2'ler birbirine götürür. 4 tane sinüs kare teta bölü 2 gelir. Şurayı anladık mı arkadaşlar, buradan buraya geçişi? Yani kosünüs açılımından yararlanıyorum. Yani kosünüs, şu tetayı, kosünüs tetayı yerine, kosünüs parantez içinde teta bölü 2 artı teta bölü 2 diye yazdım. Tamam mı?
+
+265
+00:53:05,871 --> 00:53:28,251
+Onu da nasıl açarım? Kosünüsün açılımı kos kos eksi sinsin diye değil mi? Art olursa. Yani kos kare tete bölü 2 dedim. Eksi sinüs kare tete bölü 2 dedim. Kosünüs kare tete bölü 2 yerine de bir eksi sinüs kare tete bölü 2 dersem, bir eksi iki tane sinüs kare tete bölü 2 gelmiş oldu. Şunun yerine.
+
+266
+00:53:28,543 --> 00:53:50,403
+Bu da zaten düzenlendiğinde bu kalır. Bunu da kökün içine yazarsam ne olur? 4, 2 olarak çıktı. Bu da mutlak değer içinde. Şu 2'yi dışarıda atabilirsiniz pozitif olduğu için. Sinüs, teta bölü 2 diye bulmuş olduk. Şimdi bunu getirip yerine yazacağız. Bakın burada da gene hiç simetriyi kullanmamışız.
+
+267
+00:53:50,835 --> 00:53:56,715
+uzunluğu hesaplarken, teta buradan başladı, bir türlü öldü, 2 pi'ye kadar değil mi teta açısı?
+
+268
+00:53:57,255 --> 00:54:05,315
+İşte s dedik, integral sıfırdan 2 pi'ye kadar, kökün ifadesini burada hesaplamıştık, getirip buraya yazdık.
+
+269
+00:54:05,315 --> 00:54:07,935
+Tamam mı? Şimdi gelelim.
+
+270
+00:54:08,563 --> 00:54:20,543
+Şu mutlak değerin ne olacak içi değil mi? Aralığında 0 ve 2 büyük. Ama 0, 2 pi aralığında teta bölü 2 olarak düşünürsek bu pozitif olur arkadaşlar. Tamam mı?
+
+271
+00:54:21,556 --> 00:54:41,336
+Yani şu 0,2 pi aralığında sünnüs tetayı düşünürsek, 1 ile 2. bölgede pozitiftir, 3 ile 4 de negatiftir. Ama bu teta bölü 2 olduğuna göre, benim aralığım ne olacak? 1. ve 2. bölge olduğu için pozitif olacaktır. Yani mutlak değerden kurtarmış olduk. 0 ile 2 pi'den şu olacak.
+
+272
+00:54:42,420 --> 00:55:05,900
+2 tane sinüs teta bölü 2 olur. Bunda integral ne olacaktır? Sinüs teta bölü 2'nin integrali, eksi 2, kosünüs teta bölü 2'dir. Şununla da çarptığımda eksi 4, kosünüs teta bölü 2 olur. Sınırım 0'dan 2 pi'ye kadar. Üst sınır yazarsa, kosünüs pi gelir, değil mi? O da eksi 1'dir. 4 olur. Alt sınırdan da kosünüs 0 olduğu için.
+
+273
+00:55:06,351 --> 00:55:10,672
+1 gelecek, bir de artı, 4'ümüz var, 8 olur.
+
+274
+00:55:13,271 --> 00:55:21,132
+Evet, peki, R eşittir, 1 artı, sinüs tete, kardiyodinin uzunluğunu hesaplayın bakalım.
+
+275
+00:55:21,531 --> 00:55:23,491
+Hadi ben bekliyorum, artık öğrendik.
+
+276
+00:55:24,172 --> 00:55:29,491
+Bu da gene bir kardiyodittir, Y ekseni üzerinde olacak, sivri noktası pozitif kısımda olacak.
+
+277
+00:55:30,031 --> 00:55:31,731
+Onun uzunluğunu hesaplayın.
+
+278
+00:55:32,032 --> 00:55:39,992
+En azından bana integral'i yazın arkadaşlar. S eşittir, integral şuradan şuraya kadar, içi de şudur diye bekliyorum. Hadi.
+
+279
+00:55:40,332 --> 00:55:45,232
+1-2 dakika vereceğim size. Hesaplamaya çalışın uzunluğunu.
+
+280
+00:57:23,923 --> 00:57:25,643
+Evet, uğraştınız mı? Bakalım.
+
+281
+00:57:34,099 --> 00:57:49,519
+Evet, işte [öğrenci] arkadaşımız yazmış. Test yapmıyoruz şu an, soruyu çözmek istiyoruz tamam mı? Dediğine cevap vermiyorum, soruyu çözüyoruz. Yanlış değil tabii dediğim de. Evet.
+
+282
+00:57:49,972 --> 00:58:14,592
+Ne yaptık? Diyoruz ki kardiyoidin uzunluğunu bulalım. Şöyle kabaca çizmiş olduk. Şimdi şu işlemlerimizi yapalım. Kökün içine re kare artı re üstünün karesi diyeceğiz ya. Re'si buysa türevide ne olur? Kosünüs teta olur. Karesini alırsam 1, 2 tane sinüs teta artı sinüs kare teta. Buradan da kosünüs kare olduğunda ne olur? 2 tane.
+
+283
+00:58:15,155 --> 00:58:38,896
+2 artı 2 sinüs teta. 2 parantezini alırsak şu. Şimdi bunun integralini hesaplayabilmek için arkadaşlar, şu sinüs teta'yı ne yapabiliriz? Birinci bölgede değil mi? Sinüs kosünüse eşittir, tersi de o. Yani şu sinüs teta yerine kosünüs pi bölü 2 eksi teta yazabilir miyim? Gerçekten birinci bölgede.
+
+284
+00:58:39,264 --> 00:58:44,744
+Birisiniz, kosünüsü eşittir, onu biliyoruz trigonometriden. Bu.
+
+285
+00:58:45,684 --> 00:58:51,304
+Şimdi gelelim, bunun yerine ne yazabilirim? Şu ikiye dokunmadım, bakın bir kaldı.
+
+286
+00:58:51,304 --> 00:58:59,524
+Şu kosünüs, pi bölü iki eksi, theta yerine ne yazarız? Demek ki şu yukarıdaki işlemleri uygulayarak.
+
+287
+00:59:00,403 --> 00:59:08,884
+Bunun için ne yaptık? Şunu şöyle düşünebilirsiniz. P-2teta bölü 2 diye yaz. Tamam mı?
+
+288
+00:59:09,364 --> 00:59:18,563
+Bunu da gene demin nasıl kosünüs tetayı teta bölü 2 şeklinde ayırarak yazarsak, oradan da hatta ne yapabilirim bunu?
+
+289
+00:59:24,208 --> 00:59:38,028
+x artı, pi eksi 2 tt bölü 4 diye yazıp, düzenlerseniz şu hale gelir arkadaşlar. Tamam mı? Bunu size attığımda işlemi kendiniz de bakıp düzenlersiniz. Yani şimdi söylerken biraz zor gelecektir.
+
+290
+00:59:38,483 --> 00:59:46,603
+İşte onun yerine de ne yapacağım? Yani şunun yerine şunu yazmış oldum. İki tane kosünüs kare şu ifade eksi bir.
+
+291
+00:59:47,123 --> 00:59:55,083
+Bunu da açtığımızda sonuçta ne olur? Dört tane kosünüs kare pi eksi iki tete bölü dört gelir. Tamam mı?
+
+292
+00:59:55,783 --> 01:00:00,000
+Neden? Çünkü bunu biz kökün içine getirip yazdığımızda integralini alamadık.
+
+293
+01:00:00,000 --> 01:00:14,139
+yazdığımız için bu şekilde yazma gereği duyduk arkadaşlar. Şimdi artık bunu da getirip kökün içine yazdığımda sonuçta mutlak değer içinde iki tane kosinus, pi eksi, iki tete bölü, dört diye karşıma çıkacak.
+
+294
+01:00:14,839 --> 01:00:24,419
+Şimdi yine burada da uzunluğunu hesaplarken simetri kullanalım dedik. Yani y eksenine göre simetri vardır diyeceğiz. O zaman
+
+295
+01:00:25,012 --> 01:00:27,572
+Ne yapıyorum? Yarısını düşünüyorum şöyle.
+
+296
+01:00:28,072 --> 01:00:31,092
+Ve şuradan başlıyor tetamız pi bölü 2'ye kadar değil mi?
+
+297
+01:00:31,152 --> 01:00:35,952
+Yani eksi pi bölü 2'den artı pi bölü 2'ye kadar diyeceğim yarısını kullandım.
+
+298
+01:00:36,072 --> 01:00:40,592
+S bölü 2 diyeceğim integral eksi pi bölü 2'den artı pi bölü 2'ye kadar.
+
+299
+01:00:40,592 --> 01:00:44,492
+İşte kök içindeki ifadeyi yazdım ve teta diyorum.
+
+300
+01:00:45,792 --> 01:00:46,072
+Şimdi
+
+301
+01:00:46,804 --> 01:00:59,304
+Burada da dikkat edersek, bu aralıkta 1. ve 4. bölgede kosinüs pozitif olduğu için mutlak değere gerek yok. Pozitif olacaktır.
+
+302
+01:00:59,824 --> 01:01:02,603
+Geriye ne kaldı? Bunun integralini hesaplamak kaldı.
+
+303
+01:01:03,103 --> 01:01:07,023
+Bunu da integralini hesaplarsanız, ne gelecektir?
+
+304
+01:01:07,423 --> 01:01:09,583
+TT'ye göre integralini alıyorsunuz arkadaşlar.
+
+305
+01:01:10,804 --> 01:01:13,344
+Ne olur? 2 tane sinüs.
+
+306
+01:01:13,972 --> 01:01:35,552
+diye gelecek. Ama şurada da eksisi var ya da ne yaparsın? Dönüşüm de yapabilirsin şurada içine. Yani pi eksi 2 teta bölü 4'e bir t dönüşümü yaparak da yapabilirsin. Ama gerek yok şurada. Yani sonuçta bunun integrali 2 sinüs parantez içinde pi eksi 2 teta bölü 4 bölü eksi 1 bölü 2 dersin.
+
+307
+01:01:40,692 --> 01:02:05,631
+deriz. Üst sınır, eksi alt sınır. Şunu tert çevirirsem ne olur? Eksi 4 olur. Şuradan pi bölü 2 yazarsanız 0 gelecektir. Alt sınırdan da 1 gelir. Yani eksi 1. Bu da eksi 4 olduğuna göre sonuç nedir? 4'tür. Nasıl geldik buraya? S bölü 2 4 ise uzunluk S 8'dir diyeceğiz.
+
+308
+01:02:09,235 --> 01:02:31,596
+Evet, biraz dediğim gibi sınırın her şeyini yazarsınız kolay. Bir tek şu integrallerin içini düzenlemek biraz zahmetli oluyor. Onun için de buradan dikkat edin. İşte cos, sin, θ yerine ne yazıyorum, sin, θ yerine ne yazıyorum, o yarım açı formüllerini hatırlayamıyorsanız, açıp bir kitaptan bakabilirsiniz arkadaşlar, hatırlamak açısından. Evet, var mı bir sorumuz?
+
+309
+01:02:32,403 --> 01:02:41,384
+Böylece kutupsalı bitirmiş olduk. Alan, uzunluk, eğri çizimi, türev hepsini verdik. Var mı soru?
+
+310
+01:02:43,623 --> 01:02:58,083
+Sorunuz yoksa ben yeni konuya geçmek istemiyorum. Doğru düzen denklemlerini haftamızda gidiyoruz zaten. Haftamızdayız. Ne ileride ne gerideyiz. Normal gidiyoruz. Yeni konuya girmek istemiyorum. Var mı sorumuz arkadaşlar?
+
+311
+01:03:00,724 --> 01:03:19,884
+Parametrik ve kutupsal ağaç size yükleyeceğim. Bakarsınız. Yine bir takıldığınız bir şey olursa haftaya sorarsınız arkadaşlar. Var mı bir soru? O zaman burada kalalım. İyi günler diliyorum size. Kendinize iyi bakın arkadaşlar. İyi günler hocam. İyi günler.

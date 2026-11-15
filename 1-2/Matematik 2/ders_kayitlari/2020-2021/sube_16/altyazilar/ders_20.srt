@@ -1,0 +1,1423 @@
+1
+00:00:45,619 --> 00:00:46,879
+Günaydın arkadaşlar.
+
+2
+00:00:48,659 --> 00:00:49,399
+Ses geliyor mu?
+
+3
+00:00:54,643 --> 00:00:56,323
+Arkadaşlar, ses geldi mi?
+
+4
+00:01:00,084 --> 00:01:03,924
+Nasılsınız? Sınav nasıl geçti? Merak ediyorum.
+
+5
+00:01:06,924 --> 00:01:09,664
+Evet arkadaşlar, sınav nasıldı sorular?
+
+6
+00:01:22,292 --> 00:01:29,012
+Evet, nasıl geçti? Neden cevap vermiyorsunuz arkadaşlar? Zor muydu? Kolay mıydı? Yapabildiniz mi?
+
+7
+00:01:33,299 --> 00:01:35,400
+Bir kişi yazmış, normal gibi geçmiş.
+
+8
+00:01:38,140 --> 00:01:39,700
+[öğrenci] iyi geçmiş.
+
+9
+00:01:39,700 --> 00:01:40,299
+Evet.
+
+10
+00:01:46,388 --> 00:01:48,328
+diğer arkadaşlar yorum yapmıyorlar.
+
+11
+00:01:54,195 --> 00:02:06,936
+Evet, neyse o zaman bakarız sonuçlara iyi mi kötü mü diye geldiğinde notları size iletiriz. Çünkü biz sizin sınav esnasında biz görmüyoruz yani hiçbir olayı.
+
+12
+00:02:07,507 --> 00:02:25,427
+Hatta arkadaşımız bir mail atmış. Ben onu yarım saat, 40 dakika sonra gördüm. Benim yapabileceğim bir şey yok bu durumda. Sınavı komisyon yapıyor. Biz öğrenciye hiç sınavını görmüyoruz müdahale edemediğimiz için. Yani bana mail atmış ama inşallah soru düzeltmiştir diye düşünüyorum.
+
+13
+00:02:28,048 --> 00:02:33,227
+Evet, sorumuz da yoksa arkadaşlar, kaldığımız yerden konuya devam edelim.
+
+14
+00:02:34,003 --> 00:02:46,683
+Soruları ben dün şöyle sınavdan sonra bize göndermişlerdi bir kısım. Tabii çok havuz sistemi, otun çok soru var ama sorular genelde yapabileceğiniz tip sorular diye düşündüm yani.
+
+15
+00:02:46,863 --> 00:03:01,283
+Çünkü biz çok örnekler çözdük eskiden de, son uygulamalarda da yapmıştık. Benzer sorular tarzındaydı. Yapabileceğinizi düşünüyorum ama tabii ki çalışmak önemli. İnşallah yapmışsınızdır diye düşünüyorum arkadaşlar.
+
+16
+00:03:02,931 --> 00:03:11,671
+Yani bir şey de diyemiyorum. Çünkü notlarınızı göremediğim için herhalde bir iki güne notları da bize gönderirler açıklamamız için.
+
+17
+00:03:12,831 --> 00:03:20,351
+Evet, şimdi konumuz geçen derste T-Düzlem, normal doğru denklemlerini vermiştik.
+
+18
+00:03:21,251 --> 00:03:27,243
+T-Düzlemin denklemini biz şimdi burada ilerleştirme ve diferansiyel...
+
+19
+00:03:27,379 --> 00:03:41,299
+Yaklaşımda da kullanacağımız için, biraz onu hatırlatmak için. En son şöyle bir yüzeyimizin P0 noktasındaki T düzeninin denklemini biz arkadaşlar şöyle bir formülle bulmuştuk hatırlarsanız.
+
+20
+00:03:42,804 --> 00:03:59,324
+Biri yüzeye, bir küre gibi düşünelim demiştik. Bu küre üzerinde bir kağıt sayfasını, işte o da bizim düzlemimiz olsun demiştik. O düzlemin denklemini bulabilmek için neye ihtiyacımız vardı? Düzleme dik olan vektörü, yani gradiyen vektörü, ona da ne demiştik? Gradiyen vektörü demiştik burada.
+
+21
+00:03:59,324 --> 00:04:10,804
+İşte düzlem normal denklemi anlattığımızda ne diyorduk? İşte düzleme normal vektöre ihtiyacımız vardı. Burada da aynı şekilde düzleme normal vektörü.
+
+22
+00:04:10,804 --> 00:04:35,043
+Normal olan vektör, burada işte, gradyan vektör olacaktı. Geçen ders üzerinde çok durmuştuk. Yüzeye dik olan vektördür her zaman, gradyan vektör. Oradan yararlanarak, bir yüzeye t-t olan düzenin denklemini şöyle bir formülle bulmuştuk. Eğer yüzeyin denklemi bu şekilde verilmezse, yani z eşittir fx'ye şeklinde olursa, onun içinde bir formül çıkardık. Bakın şurada.
+
+23
+00:04:37,267 --> 00:04:50,387
+Artık aralara girmiyorum çünkü bunları anlattık geçen ders. En son işte dedik ki yüzeyin denklemi z eşittir fx'ye şeklinde verilirse, o zaman şu şekilde bir teyettü üzemini yazmıştık.
+
+24
+00:04:50,387 --> 00:05:05,247
+Z eşittir işte fonksiyonun x0'ya 0'daki değeri, fonksiyonun x'e göre türevinin x0'ya 0'daki değeri çarpı x'e x'e x'e x'e 0, artı f'in y'ye göre türevinin x0'ya 0'daki değeri çarpı y'e x'e y'e 0 şeklinde.
+
+25
+00:05:05,267 --> 00:05:24,207
+t düzeninin denklemini bulmuştuk. Hatta şu örneği de çözmüştük, hatırlarsanız. Z eşittir arktanjant, x kare eksi, x'ye yüzeyinin, bakın z eşittir, fx'ye şeklinde yüzey verilmiş, p sıfır noktasındaki t düzeninin denklemini bulunuz diyor bana. Formülümü yukarıdan hemen yazdım, bakın formülümüz buydu.
+
+26
+00:05:24,727 --> 00:05:32,747
+Şimdi benim yapmam gereken, x sıfır dediğim şurada nedir? Sıfırdır, y sıfır da eksi birdir. Fonksiyonun,
+
+27
+00:05:33,331 --> 00:05:43,031
+0, 1'deki değerini de z'te yerine yazdığımda ne çıkmıştı? Art tanjant 0 nedir? Tanjant 0 olan açı nedir? 0'dır. Yani z'te 0 oldu burada.
+
+28
+00:05:43,572 --> 00:05:56,512
+Yani şurada f 0, eksi 1'deki değeri gördüğüm yere 0'ı yazacağım. Bir de bana ne lazım? Kısmi türevler. X'e göre kısmi türevi, y'ye göre kısmi türevi. Onları da aldık burada dikkat ederseniz.
+
+29
+00:05:56,512 --> 00:06:01,231
+Yani fonksiyonun x'e göre türevi, art tanjantın türevi neydi? U üstü böyle bir artı.
+
+30
+00:06:01,331 --> 00:06:04,311
+Yani içinin X'e göre kısmı türevini alıyorum.
+
+31
+00:06:04,767 --> 00:06:15,567
+2x-y bölü 1 artı karesi gelecek. Bunun da noktadaki değeri 1 demiştik. Benzer şekilde y'ye göre türev alırsam ne gelir?
+
+32
+00:06:16,228 --> 00:06:23,947
+Eksi x bölü 1 artı x kare eksi x'ye'nin karesi gibi bulurum. Bunun da noktadaki değerini 0 buldum.
+
+33
+00:06:24,287 --> 00:06:32,668
+İşte gerekli olan hepsini bulup getirip formül değerini yazıyoruz. Bakın 0-1'deki değerim 0'dı. Türevi de 1 bulmuşum.
+
+34
+00:06:32,767 --> 00:06:35,787
+1 çarpı, x eksi,
+
+35
+00:06:36,627 --> 00:06:58,427
+noktamız sıfırdı değil mi? x-0. Artı y'ye göre kısmi türevde 0 bulmuşum. 0 çarpı y-1'den y-1 olur. İşte bunu da düzenlersek z eşittir x olur veya z-x eşittir 0. İşte istenen bu noktadaki t düzleminin denklemi budur diyoruz.
+
+36
+00:06:58,427 --> 00:07:02,527
+Evet, şimdi biz konumuza dönelim. Yani dinlerleştirmede.
+
+37
+00:07:02,867 --> 00:07:13,707
+Şimdi hatırlarsanız arkadaşlar, geçen dönemde, yani matematik 1'de tek değişkenli fonksiyonlarda bir değer verilme, bunu yaklaşık olarak hesaplamak için ne yapardık?
+
+38
+00:07:13,788 --> 00:07:16,387
+Ya linearizasyonu kullanırdık ya da diferansiyeli.
+
+39
+00:07:16,847 --> 00:07:19,687
+Ya linearizasyonu da derdik, linearleştirme de derdik.
+
+40
+00:07:19,807 --> 00:07:21,307
+Oradaki linearleştirme neydi?
+
+41
+00:07:22,067 --> 00:07:25,307
+T-et doğrusunun denklemini kullanmıştık linearleştirmede.
+
+42
+00:07:25,307 --> 00:07:28,728
+Burada da T-et düzleminin denklemini kullanacağız.
+
+43
+00:07:30,867 --> 00:07:39,168
+T düzeninin, denkleminin yine yaklaşımda kullanacağız. Evet, şimdi o zaman kurumuza dönelim geriye.
+
+44
+00:07:49,235 --> 00:07:52,975
+Anlatmıştık. Linerleştirmede kalmıştık en son.
+
+45
+00:07:54,795 --> 00:07:55,196
+Evet.
+
+46
+00:07:56,516 --> 00:07:59,096
+İşte, demin de dediğim gibi arkadaşlar,
+
+47
+00:07:59,615 --> 00:08:05,896
+Linerleştirme, bir efeksiye fonksiyonunun, x0, y0 noktasındaki Linerleştirmesi,
+
+48
+00:08:06,555 --> 00:08:11,956
+dediğim gibi, x0, y0 noktasındaki t düzleminin denklemi demektir aslında.
+
+49
+00:08:12,271 --> 00:08:31,391
+Tek değişkenli de t doğrusunu denklemini kullanmıştık. Burada da düzlemin denklemini yaklaşım olarak hesaplayacağız. Yani bunu da biz l ile gösterelim, lineerleştirmede l'yi kullandığımız için. Yani lx'ye bir x0, y0 noktasındaki lineerleştirme lx'ye dersek, fonksiyonu ne diyeceğim o zaman?
+
+50
+00:08:40,272 --> 00:08:45,332
+ortadaki değeri çarpı y eksi y sıfırdır. İşte biraz önce söylediğimiz
+
+51
+00:08:45,844 --> 00:09:13,504
+t-et düzleminin denklemi. Onun için sürekli üzerine basa basa t-et düzleminin denklemi diyorum, aklımızda kalsın diye. Onu da biz L ile göstermiş olduk. O zaman bir fonksiyonun yaklaşık değerini bulunuz dediğimizde, yani Lx'i, linear yaklaşımı ne yapacağız? Fonksiyona yaklaşık olarak eşit kabul edeceğiz. Fx'i yaklaşık Lx'i'ye dir diyeceğiz. Lx'i yaklaşımı F'in x0, y0 noktasındaki linear.
+
+52
+00:09:13,844 --> 00:09:29,484
+yaklaşımıdır diyeceğiz. Bu formülümüz. Buna göre sorularımızı çözeceğiz. Eğer 3 değişkenli olursa arkadaşlar, yani x, y, z şeklinde noktamızda x, 0, y, 0, z, 0'daki lineerleştirmeyi yazın derse bize,
+
+53
+00:09:30,292 --> 00:09:33,632
+O zaman, L, X, Y, Z diye düşüneceğiz.
+
+54
+00:09:33,951 --> 00:09:43,331
+Fonksiyonun verilen noktadaki değeri, artı fonksiyonun X'e göre türevi çarpı X, X, X, 0, artı fonksiyonun Y'e göre türevi,
+
+55
+00:09:43,923 --> 00:09:52,303
+çarpı y-y0, artı fonksiyonu z'e göre türevi, çarpı z-z0 şeklinde söyleyeceğiz.
+
+56
+00:09:52,903 --> 00:09:55,483
+Yani z eklenirse bu şekilde düşüneceğiz.
+
+57
+00:09:55,884 --> 00:10:00,183
+Ama genellikle birinci şekilde hep örnekler verilir.
+
+58
+00:10:00,644 --> 00:10:06,703
+Sonuçta gene f-x-y-z yaklaşık olarak linearizasyonu ve lineare eşittir diyeceğiz.
+
+59
+00:10:06,703 --> 00:10:09,004
+Evet, dediğim gibi tekrar.
+
+60
+00:10:09,395 --> 00:10:15,995
+Lineerleştirme dediğimizde t düzleminin denklemini kullanacağız. Tamam mı arkadaşlar?
+
+61
+00:10:17,576 --> 00:10:21,755
+Evet, şimdi gelelim uygulama şöyle bir örnek üzerinde konuşalım.
+
+62
+00:10:22,615 --> 00:10:29,276
+Diyor ki fonksiyonumuz x kare eksi x'ye artı y kare bölü 2 artı 3 fonksiyonunun
+
+63
+00:10:29,716 --> 00:10:34,336
+3-2 noktasındaki lineerleştirmesini buluruz.
+
+64
+00:10:35,115 --> 00:10:38,735
+Şimdi lineerleştirmenin formülünü de biliyorum yukarıda.
+
+65
+00:10:38,995 --> 00:10:43,255
+Lx'ye ile gösterirsem, önce neler yapmam gerekiyor onu tasarlayalım bakın.
+
+66
+00:10:43,735 --> 00:10:48,816
+Lx'ye dedik lineerleştirmeyi, fonksiyonun 3-2'deki değerini bulacağım.
+
+67
+00:10:49,375 --> 00:10:57,635
+Artı fonksiyon x'e göre kısmı türevinin 3-2'deki değeri, çarpı x-3, artı fonksiyonun y'ye göre.
+
+68
+00:10:57,716 --> 00:11:06,935
+kısmi türevinin 3'ü 2'deki değeri çarpı, y eksi 2. İşte dediğimiz gibi bu t düzenimizin denklemi. Hiç de unutmayız, aklımızda kalır.
+
+69
+00:11:07,875 --> 00:11:14,615
+O zaman bilmem gerekenleri bulacağım. Şimdi f'in 3'ü 2'deki değeri. Şurada yerine yazalım arkadaşlar.
+
+70
+00:11:15,375 --> 00:11:20,115
+x yerine 3 diyeceğim, y yerine 2'yi yazarak bulalım.
+
+71
+00:11:22,100 --> 00:11:45,259
+Bulmuşuz burada. Doğru mudur dedi. Kontrol edin isterseniz bakın. 9 diyelim. Eksi 6 gelir. Artı 2 artı 5 değil mi? 7, 1. Evet doğru 8. Tamam. Şimdi 3, 2'deki değerimiz 8 oldu.
+
+72
+00:11:45,940 --> 00:11:56,580
+Fonksiyon x'e göre türevini alıyorum. 2x'e göre türev alıyorsam kısmi türev, y benim için sabit. Onu da hatırlıyoruz. 2x-y. Tamam mı?
+
+73
+00:11:57,320 --> 00:12:01,460
+Y'ye göre kısmi türevini alıyorum. O zaman x'i sabit düşünüyorum.
+
+74
+00:12:02,380 --> 00:12:04,520
+Eksi x artı y.
+
+75
+00:12:04,927 --> 00:12:16,247
+İşte fonksiyonum bu sefer x'e göre türevin 3, 2'deki değerini de yerine yazarsak, o da ne olur? 4 olur. Şurada yerine yazarsam, eksi 3'e, o da eksi 1 olur.
+
+76
+00:12:16,627 --> 00:12:24,087
+İşte hepsini bulduk. Getirip yerine yazıyorum. L x'e dedik, eşittir. 8 diyeceğim.
+
+77
+00:12:24,543 --> 00:12:29,703
+Artı 4 çarpı x eksi 3, eksi 1 çarpı y eksi 2.
+
+78
+00:12:29,963 --> 00:12:34,863
+Burada düzenlersek, 4x eksi y sayılara bakalım.
+
+79
+00:12:35,703 --> 00:12:37,583
+Eksi 12 eksi 4 kalır.
+
+80
+00:12:38,663 --> 00:12:40,703
+Şuradan da çıkarırsak, eksi 2 kalır.
+
+81
+00:12:41,083 --> 00:12:43,243
+4x eksi y eksi 2.
+
+82
+00:12:43,623 --> 00:12:50,303
+İşte verilen noktadaki fonksiyonun ilerleştirmesi, 4x eksi y eksi 2'dir diyeceğiz.
+
+83
+00:12:50,303 --> 00:12:51,323
+Tamam mı arkadaşlar?
+
+84
+00:12:52,052 --> 00:13:06,572
+Problem yok sanırım çünkü bildiğiniz bir formülü kullanmış olduk. Şimdi genellikle diyelim ki, böyle yani bir değeri yaklaşık olarak hesapla der. Bazen bu test sorular olduğu için belki şunu bile sorabilir yani bilemeyiz.
+
+85
+00:13:07,155 --> 00:13:16,735
+Evet, şöyle diyor sorumuzda, 1.1'in karesi artı 2.5'in kübü sayısı için bir yaklaşık değer bulunuz.
+
+86
+00:13:17,135 --> 00:13:22,336
+Şimdi yaklaşık değer bulunuz dediğine göre tek bir konu şu anda biliyorum, o da linealleştirme.
+
+87
+00:13:22,456 --> 00:13:29,015
+O zaman diyorum ki linealizasyonu ya da linealleştirmeyi kullanarak bu ifadenin yaklaşık değerini bulalım.
+
+88
+00:13:29,576 --> 00:13:33,035
+Linealleştirmeyi kullanacağım için bana bir fonksiyon gerekir değil mi?
+
+89
+00:13:33,035 --> 00:13:35,035
+Burada dikkat ederseniz iki farklı...
+
+90
+00:13:35,155 --> 00:13:52,795
+birine x derim, birine y derim. Fonksiyonu yazabilmek için. Yani fx, y diyelim. Bu x olsa. Hiçbir kural yok. Buna y, buna x de diyebilirsiniz. Yani şöyle seçmiş oldum bakın. Birine x dedim. x kare artı y küp. Fonksiyonu seçtim.
+
+91
+00:13:53,135 --> 00:14:09,495
+Linearleştirmeyi bulabilmek için bir de nokta lazım. Bunlara en yakın noktalarda ne olur? X0 dediğim, 1.1'e 1 olur. 2.5'da 2 diyeceğim değil mi? 3 dersem çok uzak olurum. Yani noktaya da yakın olması gerekir.
+
+92
+00:14:09,495 --> 00:14:20,775
+İşte o zaman soruyu nereye getirdim? Verilen fonksiyonun 1-2 noktasındaki linearleştirmesini önce bir yazalım. Tamam mı? O halde.
+
+93
+00:14:21,135 --> 00:14:39,055
+Formülümüz de yukarıda hazırdır. Bakın diyeceğim işte Lx'ye F'in 1, 2'deki değeri diyeceğim. X'e göre türevinin 1, 2'deki değeri çarpı x, 1 artı fonksiyonun y'ye göre türevinin 1, 2'deki değeri çarpı y, 2 şeklinde yazmalıyım.
+
+94
+00:14:39,055 --> 00:14:42,855
+O zaman bilinmesi gerekenleri bulalım. Fonksiyonun.
+
+95
+00:14:43,956 --> 00:14:56,676
+Önce, 1, 2'deki değeri ne olur? 1 olur, 9 olur değil mi? 9. Şu. X'e göre türevi alıyorum şuradan. 2X diyeceğim. Y'ye göre türevi de ne olur? 3Y kare.
+
+96
+00:14:57,156 --> 00:15:07,495
+Noktadaki değerini kullanırsam, X yerine 1, Y yerine 2'yi düşünürsem, 2 gelir. Y'ye göre kısmı türevi de ne gelecektir buradan? 12 olur.
+
+97
+00:15:07,727 --> 00:15:29,387
+İşte hepsini bulduk. Getir formülümüzde yerine yazıyoruz. 9 dedik, artı 2 çarpı x eksi 1 artı 12 çarpı y eksi 2. Bu. Bir de biz ne demiştik en başta? L x'ye yaklaşık olarak f x'ye'ye işittir. Bizden ne istiyor arkadaşlar? Fonksiyonun...
+
+98
+00:15:29,587 --> 00:15:56,487
+1,1,2.5'teki değerini soruyor. Bu da yaklaşık olarak L,1,2.5'e eşittir diyoruz. O zaman buradan yapmam gereken nedir? L'de X gördüğüm yere 1,1, Y gördüğüm yere de 2,5'i yazmam gerekecek ki bunun yaklaşık değerini hesaplayabilelim. Onu da yerine yazdık. Bakın şurada.
+
+99
+00:15:56,927 --> 00:16:11,568
+Bu da yapılırsa, işte matematiksel olarak hesap makinesi kullanmak gerekir. Oradan da düzenlersek, sonuçunu çıkar, 15.2 olarak bulunur. Demek ki bu ifadenin yaklaşık değeri 15.2'dir diyoruz.
+
+100
+00:16:11,568 --> 00:16:24,927
+Bakın önce lineer, bize hiç fonksiyon nokta verilmemiş ama ben buradan bakarak, ne dedim, iki farklı değer var. Bakın birine x, birine y demiş olur. Başka birisi gelir, der ki y kararttı, işte x küp oldu.
+
+101
+00:16:24,927 --> 00:16:50,808
+Hiç değişen bir şey olmaz. Oradan fonksiyonu belirledim. Noktayı da belirledim. Linearizasyonu kullanacağım için. O halde önce ne yaptım? Fonksiyonu bu noktada linearleştirmesini yazdım. Sonra da linearleştirmenin de yaklaşık olarak fonksiyon eşit olduğunu da kabul etmiştik. Buradan yerine koyarak değere budur dedik. Tamam mı arkadaşlar? Var mı bir problem? Evet, devam edelim.
+
+102
+00:16:53,491 --> 00:17:09,951
+61 kişi şu an katılımda gözüküyor. Evet, şimdi diferansiyeli, diğer bir yaklaşım yöntemimiz de diferansiyeldir. Matematik 1'den de hatırlıyorsunuz. Onu şuradan biraz daha açıklayıcı söylemek istiyorum.
+
+103
+00:17:12,951 --> 00:17:13,871
+Evet.
+
+104
+00:17:15,251 --> 00:17:21,551
+Differansiyel de gene lineerleştirmeyi kullanarak ya da daha doğrusu t-düzleminin denklemini kullanıyoruz.
+
+105
+00:17:21,891 --> 00:17:28,632
+Hatırlarsak bu neydi? Bizim t-düzlemimizin denklemini l olarak ifade etmiştik değil mi? Lineerleştirme olarak.
+
+106
+00:17:28,632 --> 00:17:43,231
+Yani ya da z eşittir derdik, fx eşittir şu. Lineerleştirmeyi kullanarak şunu şuraya atarsam fx'e, eksi fx sıfır y sıfır noktasına ya da farkına, pardon farkını f'in.
+
+107
+00:17:43,251 --> 00:17:47,591
+x0, y0 noktasındaki diferansiyeli diyeceğiz arkadaşlar.
+
+108
+00:17:49,031 --> 00:17:56,511
+O halde, diferansiyeli df ile gösterirsem, burada df dediğim, yani şu fark benim için diferansiyeli olacak.
+
+109
+00:17:56,791 --> 00:17:57,851
+df ne oluyor burada?
+
+110
+00:17:58,351 --> 00:18:06,871
+f'in x'e göre kısmı türevi, çarpı dx artı f'in y'ye göre kısmı türevi, çarpı dy şeklinde ifade edeceğiz.
+
+111
+00:18:07,291 --> 00:18:08,091
+Tamam mı arkadaşlar?
+
+112
+00:18:08,911 --> 00:18:09,071
+Bu.
+
+113
+00:18:10,675 --> 00:18:24,675
+Yani bir fonksiyonun diferansiyeline, iki değişkenli z, işte fx, f fonksiyonunun diferansiyeline yazın dediğinde, df ve dz ile de gösterebiliriz. Tamam mı? D sembolünü kullanıyoruz burada. Sonra...
+
+114
+00:18:25,311 --> 00:18:30,991
+f'in toplam diferansiyeli olarak da bazen duyabilirsiniz, görebilirsiniz.
+
+115
+00:18:31,491 --> 00:18:36,151
+Şimdi biz şurada şunu ifade etmek istiyorum. Yaklaşık değer kullanırken bunları kullanacağız.
+
+116
+00:18:36,671 --> 00:18:41,871
+Fonksiyonun gerçek değişimini biz delta ile ifade ederiz. Tamam mı? Delta f diyorum.
+
+117
+00:18:42,731 --> 00:18:46,731
+Bunu da nasıl ifade ederiz? Fonksiyonun değişkenini bir delta x kadar artır.
+
+118
+00:18:46,731 --> 00:18:50,192
+Diğer değişkenini delta y kadar artırıyorsam, yani f,
+
+119
+00:18:50,528 --> 00:18:56,248
+x artı delta x, y artı delta'yı eksi fx'ye şeklinde verilir.
+
+120
+00:18:56,688 --> 00:18:58,488
+Fonksiyondaki gerçek değişik.
+
+121
+00:18:58,688 --> 00:19:03,668
+Biz bazen hani bana der ki işte verilen şu fonksiyon değişimini bulun der.
+
+122
+00:19:03,968 --> 00:19:11,668
+Ben bunun gerçek değişimini bazen bulamayabilirim, çok zor olabilir ama bu fonksiyondaki gerçek değişim yerine ne yapacağım?
+
+123
+00:19:12,088 --> 00:19:14,348
+Yaklaşık olarak diferansiyeli kullanacağım.
+
+124
+00:19:14,348 --> 00:19:18,528
+Onun için de burada delta f ile gösteriyoruz fonksiyondaki gerçek değişimi.
+
+125
+00:19:18,528 --> 00:19:32,203
+değişimi ama diferansiyeli de DF ile ifade etmiştik. Bu da, işte bunu hesaplayamıyorsam, bunu yaklaşık olarak DF olarak kabul edeceğim. Gerçek değişim yaklaşık olarak DF'tir. O zaman...
+
+126
+00:19:32,211 --> 00:19:43,811
+Değişkenin artımını da delta x demiştim ya, onu da diferansiyel ile, dx ile ifade edeceğim. Delta y de yaklaşık olarak, dy olarak kabul edeceğiz. Tamam mı arkadaşlar?
+
+127
+00:19:43,811 --> 00:19:55,351
+O zaman, diyelim ki şurada ben şu ifadeyi hesaplamak istersen, çekersem bunu, bu ne olur bakın. Delta f, gerçek değişimi artı fx y olur.
+
+128
+00:20:00,000 --> 00:20:25,919
+Bu benim için yaklaşık olarak diferansiye ile eşittir. O zaman ne yapıyorum? Yaklaşık eşittir diyorum. Şunun yerine df artı fx'ye şeklinde yazabilirim. Yani burada da tekrar yazdım. Delta f dediğim fonksiyondaki gerçek değişimdir. Df de fonksiyondaki yaklaşık değişimdir. Tamam mı arkadaşlar? Diyelim ki z eşittir x kare artı y kare.
+
+129
+00:20:26,451 --> 00:20:39,872
+verilmiş. Bunun diferansiyelini hesapla derse bana ne yapacağım? İşte fonksiyonun x'e göre türevi dx'ti. Değil mi? Yukarıda bakın yazdık. Artı fonksiyonun y'ye göre kısmı türevi dy.
+
+130
+00:20:40,336 --> 00:21:06,695
+Bazen kısmı türev diyorum, türev diyorum, anlaşılıyor. Çok değişkenli fonksiyondan bahsettiğimiz için, değil mi arkadaşlar? Ne yapıyoruz? Diferansiyelini bana soruyor. D, z ile de gösterebilirim. D, f ile diyebilirim. Ne diyeceğim? X'e göre türev alıyorum. 2x çarpı dx. Y'ye göre türev alıyorum. 2y çarpı dx. İşte fonksiyonun diferansiyelini bu şekilde yazmış oldum. Tamam mı?
+
+131
+00:21:07,604 --> 00:21:24,524
+Peki, diğer bir örneğimiz, bakın bu da 3 değişken, x'ye z verilmiş bu şekilde. Benden istenen de f, 1, 1, eksi 2'deki, yani verilen fonksiyonun, diferansiyelinin, 1, 1, eksi 1'deki değerini hesaplayınız.
+
+132
+00:21:25,324 --> 00:21:28,084
+Hadi 1-2 dakika bekliyorum, siz bulun bakalım arkadaşlar.
+
+133
+00:21:29,940 --> 00:21:48,840
+Burada da 3 değişken varsa ne yapacağım? Fonksiyonun önce x'e göre türevi dx, artı y'ye göre kısmı türevi dy, artı z'e göre kısmı türevi dz şeklinde yazacaksınız. Sonra da noktayı kullanarak değeri şudur diyeceğiz. Hadi 1-2 dakika bekliyorum. Türevleri alın bakalım.
+
+134
+00:22:14,195 --> 00:22:39,035
+Evet, bakalım. Şimdi, dedik ki, diferansiyeli df ile gösterebilirsin. Ya da buna bir u dersin, df da diyebilirsin. Önemli değil. Burada f diyelim, df olsun. Ne diyorum? Kuralım. f'in x'e göre türevi dx, diferansiyelini alıyorum. f'in y'ye göre türevi dy, artı f'in z'e göre türevi dz. Bu, formülümüz bu. Bir tane daha değişken olsa ona göre türevi.
+
+135
+00:22:39,700 --> 00:22:44,160
+Yani fonksiyonun türevi çarpı, artım miktarı gibi düşünüyoruz değil mi? Bu.
+
+136
+00:22:44,800 --> 00:22:53,700
+Şimdi o zaman bilinenleri yerine yazalım. X'e göre türev alıyorum. Ne gelir? 3x kare, eksisi 3yz dx.
+
+137
+00:22:54,280 --> 00:23:02,520
+Artı y'ye göre kısmı türev alıyorum. 3y kare, eksisi 3xd y.
+
+138
+00:23:03,028 --> 00:23:16,228
+Artı z'e göre türev alırım. Buradan gelmez. Sadece şuradan gelecek. Eksi 3x'ye dz diyeceğim. İşte fonksiyonun diferansiyeli ya da toplam diferansiyeli nedir? Budur.
+
+139
+00:23:17,008 --> 00:23:30,248
+Şimdi bana neyi sormuş? Noktadaki de yani x yerine 1, y yerine 1, z yerine eksi 2 yazarak değerini bul. Yazalım bakın. x yerine 1 dedik. Şuradan eksi artı olur.
+
+140
+00:23:30,720 --> 00:23:56,200
+Değil mi? Evet. 9 olur. Şuraya geliyorum. 3, 6, bu da 9 olur. D'ye. Şuradan ne gelecek? 1, 1, eksi 3, D'ye. İşte verilen noktadaki diferansiyeli, şunu eşittir diyeceğiz. Tamam mı arkadaşlar? Oldu mu? Evet.
+
+141
+00:23:57,491 --> 00:24:00,612
+Bunu biraz sonra mı çözsem?
+
+142
+00:24:02,172 --> 00:24:05,491
+Peki, biraz sonra geleyim ona.
+
+143
+00:24:05,892 --> 00:24:06,372
+Biraz daha.
+
+144
+00:24:07,652 --> 00:24:08,812
+Önce geriye döneyim.
+
+145
+00:24:15,443 --> 00:24:31,783
+Tamam, gözüküyor değil mi ekran arkadaşlar? Evet, şimdi konuştuk orada. Şimdi şöyle bir örneğimiz var bakın. Bunları konuştum zaten. Diferansiyelin şöyle olduğunu söyledik. Gerçek değişim yaklaşık olarak diferansiyeli eşittir dedik.
+
+146
+00:24:42,036 --> 00:24:56,956
+Ancak, yarı çap ve yüksekliğin sırasıyla, DR demiş, 0.08, DH-0.3 miktarında değiştiğini varsayalım. Konserve kutusunun hacmindeki değişim ne olur, diyor.
+
+147
+00:24:57,756 --> 00:25:04,136
+E şimdi hacim sorduğuna göre, bir kutunun hacmi, hacim formülünü biliyorum, denklemini biliyorum, değil mi?
+
+148
+00:25:04,756 --> 00:25:17,656
+V eşittir, taban alanı çarpı, yüksekliktir hacım. Onu da şöyle ifade etmiş olalım, pi, re, kare, haç değil mi şu? Evet, burada şimdi bize verilenleri kullanacağız.
+
+149
+00:25:19,827 --> 00:25:28,227
+Yani fonksiyondaki değişimi soruyor. Gerçek değişim neydi dedik. Delta V ile. Burada V olduğuna göre F yerine V gelmiş. Delta V diyoruz.
+
+150
+00:25:28,528 --> 00:25:37,627
+Ama diyoruz ki biz bu gerçek değişimi hesaplayamıyoruz ama bunun yaklaşık olarak diferansiyeli eşit olduğunu biliyorum. O zaman bunu DV ile ifade etmiş olacağım.
+
+151
+00:25:38,127 --> 00:25:47,827
+Diferansiyeli de biliyoruz. Burada benim fonksiyonum ne aslında arkadaşlar? V eşittir işte. R,H değil mi? Değişkenlerin birisi.
+
+152
+00:25:47,827 --> 00:25:49,627
+R, bir de H'tır. O zaman ne diyeceğim?
+
+153
+00:25:50,187 --> 00:25:56,788
+Fonksiyonun önce R'ye göre türevi, çarpı DR, artı H'a göre türevi, çarpı DH.
+
+154
+00:25:57,747 --> 00:26:00,927
+Kafan karışıyorsa buna X dersin, buna da Y de diyebilirsin.
+
+155
+00:26:01,288 --> 00:26:03,407
+Ama hani görmeniz açısından böyle olsun.
+
+156
+00:26:04,167 --> 00:26:07,747
+Tamam mı arkadaşlar? Yani benim fonksiyonum D eşittir.
+
+157
+00:26:07,987 --> 00:26:11,087
+İşte V, R, H. R'ye ve H'a bağlı.
+
+158
+00:26:11,327 --> 00:26:31,687
+O halde, burada benim bir kere noktalar, yani R0 noktam nedir, H0 noktam nedir, onları bulmamız gerekir. R nedir? İşte onları da şu sol tarafta yazalım, vermiş zaten bakın. Noktamız R0 dediğimiz 3'tür. H dediği de 12, tamam mı?
+
+159
+00:26:33,556 --> 00:27:00,256
+Sonra, değişimlerine de bakalım. Vermiş onları da zaten. Br dediğini de vermiş. 0.08 vermiş. d-0.03 vermiş. Yani burada benim yapmam gereken sadece şunu düşünmek. Hacim nedir? Şu formülü hatırlamak. Diğerleri hazır verilmiş. Ben onları kullanacağım. O zaman bakıyorum burada v'nin r'ye göre türevi. Nasıl alırım? 2 pi r'ye h olur değil mi?
+
+160
+00:27:00,788 --> 00:27:25,007
+Şu. H'a göre türevde ne gelir? Pi, r kare. Evet, burada bunları da tamam dedik. O zaman, geliyorum yine sol tarafa. Bu fonksiyonun r'e göre türevinin noktadaki değeri. Yani 3, 12'deki değerini de hesaplarsak, şuradan. Bu da 72 pi çıkar. Tamam mı?
+
+161
+00:27:25,652 --> 00:27:43,692
+Sonra, h'a göre türevinin noktadaki değeri de 9 pi'miş. İşte onları getirip burada yerine yazacağım. 72 pi çarpı 0.08 değil mi değerli esin?
+
+162
+00:27:44,084 --> 00:28:09,203
+artı 9 pi çarpı, eksisi ve aştı neydi? Eksi 0.3. İşte bu işlem de yapılırsa, sonuçta 3.06 pi olarak hacimdeki değişimi bulmuş oluruz arkadaşlar. Tamam mı? Yani burada da tek dediğin şu formülasyonu oluşturabilmek, hepsini vermiş zaten. Hiç düşünmedik bile zaten noktaları nasıl bulacağız diye. Bambi problem.
+
+163
+00:28:10,740 --> 00:28:36,740
+Evet, devam edelim. Şöyle bir örneğimiz olsun diyelim. Bunun değerini yaklaşık olarak hesaplayınızla der bize. Ya da burada ikisini de kullanıyor. Hem linearizasyonla hem de diferansiyeli kullanarak yaklaşık olarak hesaplayınız. Hangisini de kullanırsam kullanayım. Bana gene bir fonksiyon lazım değil mi? Bir tane de nokta. E gene burada bakıyorum. Dikkat ederseniz.
+
+164
+00:28:38,612 --> 00:28:50,192
+İki tane farklı değerimiz var. Onun için de birine x, birine y demiş olalım. 2.05 var, bir de 3.9 var değil mi? Yani iki değişkenli olduğunu şuradan anlıyorum.
+
+165
+00:28:50,644 --> 00:29:17,183
+O zaman benim fonksiyonumu fx'ye edersem, x çarpı e üzeri x kare eksiye fonksiyonu baktık ifademize. Oradan diyoruz ki fonksiyonum bu olsun. Bir de ne lazım bana? Nokta lazım. Yani x0, y0 noktaları. O zaman ne diyeceğim? x0 en yakın noktam ne olur? 2 olur. Değil mi? Buna da ne diyeceğim?
+
+166
+00:29:19,188 --> 00:29:23,888
+En yakın nokta, Y0'a da ne demem lazım?
+
+167
+00:29:28,435 --> 00:29:28,935
+Evet.
+
+168
+00:29:30,775 --> 00:29:35,015
+Fonksiyonu hangi noktada lineerleştirmesini yazacağım arkadaşlar sizce?
+
+169
+00:29:40,756 --> 00:29:41,356
+Evet.
+
+170
+00:29:43,396 --> 00:29:46,176
+Duyumayın arkadaşlar. En yakın nokta ne olur?
+
+171
+00:29:46,876 --> 00:29:48,136
+Evet. 4 olmaz mı?
+
+172
+00:29:49,816 --> 00:29:52,316
+Değil mi? 3.9 en yakın nokta 4 olur.
+
+173
+00:29:53,876 --> 00:29:55,976
+O halde ne oldu? Fonksiyonu diyorum.
+
+174
+00:29:56,576 --> 00:30:00,696
+2.4 noktasında lineleştirmesini yazalım.
+
+175
+00:30:01,071 --> 00:30:19,651
+Lx'ye ile göstermiştik, hatırlarsan. F'in, ne diyeceğim, 2, 4'teki değeri, yani t düzenin denklemini yazıyorum, artı F'in x'e göre türevin 2, 4'teki değeri çarpı x-2, artı F'in y'ye göre türevinin 2, 4'teki değeri çarpı y-4. Tamam, bu.
+
+176
+00:30:20,991 --> 00:30:25,651
+Fonksiyonu belirledim, noktayı belirledim. Ne kaldı? Bunu hesaplayacağım.
+
+177
+00:30:26,675 --> 00:30:33,155
+O zaman türeve ihtiyacımız var. Burada f'in x'e göre türevini alırsak çarpım var dikkat ederseniz.
+
+178
+00:30:33,275 --> 00:30:39,796
+x'e göre türev 1 çarpı e üzeri x kare eksi y artı x çarpı üstün türevinden 2x gelecek.
+
+179
+00:30:40,015 --> 00:30:42,836
+O zaman 2x kare olur e üzeri x kare eksi y.
+
+180
+00:30:44,096 --> 00:30:47,275
+Bu ya da böyle yazabilirsin e parantezini alarak da.
+
+181
+00:30:47,796 --> 00:30:50,215
+y'ye göre türev alırsak ne gelecek?
+
+182
+00:30:50,615 --> 00:30:53,355
+x'i x çarpı e üzeri x kare eksi y.
+
+183
+00:30:53,875 --> 00:30:59,816
+Türevleri aldık. Şimdi, bunların noktadaki değerlerini de bulmamız gerekecek.
+
+184
+00:31:00,056 --> 00:31:04,855
+Fonksiyon X'e göre türevinin 2, 4'teki değeri,
+
+185
+00:31:08,096 --> 00:31:09,415
+1 gelir şuradan değil mi?
+
+186
+00:31:11,336 --> 00:31:12,175
+9 doğru.
+
+187
+00:31:13,076 --> 00:31:28,175
+Doğru diye kontrol ediyorum. Y'ye göre türevimdeki değerim ne olacak? X'im neydi? 2 idi. Şuradan eksi 2 gelir. Doğru. 2, 4'teki değerimiz de 2 olur. Üstü zaten 0'dan 1 gelecek. 2. Doğru.
+
+188
+00:31:29,215 --> 00:31:39,395
+Noktalarımız. O zaman ne yapmam gerekiyor? Fx'ye fonksiyonu yaklaşık olarak Lx'ye eşit olduğunu da biliyorum. Onu da yazarsak şuraya.
+
+189
+00:31:39,791 --> 00:31:52,392
+Tamam mı? 2, şu, 9 çarpı x eksi 2, eksi 2 çarpı y eksi 4. İşte fonksiyonun verilen noktadaki lineerleştirmesi budur.
+
+190
+00:31:52,392 --> 00:31:59,359
+Şimdi bize neyi soruyor arkadaşlar? F'in 2.05,3.9'daki...
+
+191
+00:31:59,359 --> 00:32:09,039
+değerini yaklaşık olarak bulmamızı istiyordu. O da yaklaşık olarak L'ye eşit demiştik. O zaman burada fonksiyonda X gördüğüm yerine yazmalıyım.
+
+192
+00:32:09,639 --> 00:32:25,599
+2.05 Y yerinde 3.9'u yazarsam, işte 2 artı 9 çarpı 2.05 eksi 2 eksi 2 çarpı 3.9 eksi 4. Bu da hesaplanırsa, sonuç 2.65 olarak bulunur.
+
+193
+00:32:27,059 --> 00:32:32,899
+İfadenin yaklaşık değeri, generalizasyonla bu şekilde bulmuş olduk.
+
+194
+00:32:33,639 --> 00:32:39,139
+Şimdi, B şıkkını da hesaplayabilmek için, bu sefer diyor ki, diferansiyeli kullan.
+
+195
+00:32:39,659 --> 00:32:43,039
+Onu da aynı bulmak zorundayız. Sadece yöntem farklı.
+
+196
+00:32:43,419 --> 00:32:47,759
+Şimdi, diferansiyeli de kullanabilmek için, gene bana bir fonksiyon gerekli arkadaşlar.
+
+197
+00:32:47,979 --> 00:32:52,559
+Fonksiyon değişmedi, bu olacak. Noktam da lazım. Onu da yazdım.
+
+198
+00:32:53,364 --> 00:32:55,464
+İşte, gelelim B şıkkına.
+
+199
+00:32:57,664 --> 00:32:59,024
+Diferansiyel hesaplayın.
+
+200
+00:32:59,184 --> 00:33:01,264
+D, Z dersin, D, F dersin.
+
+201
+00:33:01,564 --> 00:33:04,264
+O neydi? F'in X'e göre türevi değil mi? D, X'ti.
+
+202
+00:33:04,464 --> 00:33:06,804
+F'in Y'ye göre türevi, D, Y.
+
+203
+00:33:07,316 --> 00:33:26,276
+noktamızda fonksiyon yukarıda olduğu için bir daha buraya yazmadık. Noktamız 2 ve 4 değil mi? O zaman benim dx dediğim ifade nedir? Yani şurada x eksi x sıfır olarak delta eksi gösterirsek ya da o da diferansiyen olursa ne olur? 0.05 kalır.
+
+204
+00:33:27,776 --> 00:33:28,615
+dx dediğimiz.
+
+205
+00:33:29,076 --> 00:33:35,036
+4 olarak y 0 aldığımda da, dy'yi de nasıl ifade etmem gerekir?
+
+206
+00:33:35,236 --> 00:33:40,496
+Eksi 0.1. Yani neyle toplayalım ki? Şu 3.9 elde etmiş olalım.
+
+207
+00:33:40,496 --> 00:33:41,296
+Tamam mı arkadaşlar?
+
+208
+00:33:44,175 --> 00:33:52,056
+Yani dx dediğimiz ifade 0.05 oldu. dy dediğimiz ifade de eksi 0.1 oldu.
+
+209
+00:33:53,115 --> 00:33:55,355
+Şimdi bunları da getirip yerine yazarsak.
+
+210
+00:33:56,915 --> 00:34:06,635
+Yani gerçek değişim yaklaşık olarak diferansiyeli eşittir demiştik. Tamam mı? Onu da şöyle hatırlarsanız farkına diferansiyel demiştik.
+
+211
+00:34:06,836 --> 00:34:12,255
+Yaklaşımdaki farka demiştik. Onu da burada yerine yazmış olduk.
+
+212
+00:34:14,076 --> 00:34:15,076
+Evet.
+
+213
+00:34:17,355 --> 00:34:22,596
+Şimdi benden istenen ne burada? Bunları yazdıktan sonra
+
+214
+00:34:22,992 --> 00:34:28,452
+Şunu soruyor bana, değil mi? Şunu. Bunu da hesaplayabilmek için ne yapmalıyım ben arkadaşlar?
+
+215
+00:34:29,652 --> 00:34:36,032
+Diferansiyelini hesaplayacağım. İki de alırsam, ikiyle toplayarak şu değeri bulmuş olacağım.
+
+216
+00:34:39,219 --> 00:35:06,420
+Yani şunu bakın tekrar şuradan söyleyelim. Fonksiyonun gerçek değişimi neydi? Delta z dediğim f x artı delta x demiştik virgül y artı delta y eksi f x y. Tamam mı? Yani x 0 y 0 de fark etme şu. Bunu ne yapıyorum? Bana şunu soruyor, şunu bu diyor. Diyorum ki ben bunun gerçeklerini hesaplayamadığım için bunu d z de göstermiş oluyorum.
+
+217
+00:35:06,835 --> 00:35:27,395
+O zaman yazdık işte d-z hesaplayacağız tabii ki şimdi. Şu, şunu da biliyorum. Şunu soruyor bana. Bunu çekersem ne olur? d-z artı 2 olmaz mı? O halde şuradaki d-z hesaplayacağım şu formülden. Getirip yerine yazacağım. Evet.
+
+218
+00:35:28,179 --> 00:35:52,719
+DZ'i de hesaplamak için yukarıda türevlerimiz hazırdı, dikkat ederseniz bakın. X'e göre türev 9 çarpı ne diyeceğim? DX'in neydi arkadaşlar? 0 çarpı 0,05'ti. Sonra eksi 2, Efinye'ye göre türevi, çarpı DY, DY dediğimiz ifadede eksi 0.1 şeklindeydi. İşte bunlara bakın.
+
+219
+00:35:53,204 --> 00:36:10,423
+yerine yazarsak, şuradayız. Buna göre düşündük. Şunun dz'i şuraya yazmış olduk. Tamam mı? 9 çarpı, eksi 0, 05, eksi 2 çarpı, eksi 0, nokta 1 dedik. Bu da düzenlenirse,
+
+220
+00:36:12,083 --> 00:36:27,043
+İkiyi de buraya atmış olalım. Tamam mı? Yani sonuçta yine 2.65 olarak buluruz. Her iki sonuçta doğru çıkmış oldu. Yani biri lineerleştirmeyi kullandık, birinde de yaklaşık değer için diferansiyeli kullanmış olduk.
+
+221
+00:36:27,943 --> 00:36:35,384
+Peki bir örneğim daha vardı. Ona geçmek istiyorum. Biraz önce soru yaparız dediğimiz örneğimiz.
+
+222
+00:36:40,467 --> 00:36:44,347
+Evet, bu da gene bir sınavda sorulmuş soru diye buraya almışım.
+
+223
+00:36:45,747 --> 00:36:49,847
+Diyor ki, fonksiyonun 1, 2'deki değeri, eksi 3.
+
+224
+00:36:51,768 --> 00:37:01,487
+f, 1.01, virgül 1.99'daki değeri de, eksi 2.96 şartlarını sağlayan bir fxf fonksiyonunu göz önüne alalım.
+
+225
+00:37:07,411 --> 00:37:13,551
+yönündeki türevinin değerini yaklaşık olarak hesaplayınız. Tamam mı arkadaşlar?
+
+226
+00:37:15,471 --> 00:37:28,191
+İşte burada lineer yaklaşımı kullanarak, birkaç bilgi içeriye dikkat ederseniz, yaklaşık değer, yönlü türevi hepsi var içinde. Tamam mı?
+
+227
+00:37:28,731 --> 00:37:32,551
+Bunu bir kez daha şöyle bir bakın bakalım nasıl düşünmeliyiz.
+
+228
+00:37:33,811 --> 00:37:46,811
+Bazı değerleri de vermiş. Bu fonksiyonun diyor, P noktasında V vektörü yönündeki türevini yaklaşık olarak hesaplayınız. Biz bir fonksiyonun...
+
+229
+00:37:47,380 --> 00:38:15,380
+Ve vektörü yönünde bir noktadaki türevini ne diyorduk? Yönlü türevi değil mi? Nasıl hesaplardık? Gradyan vektörü birim vektörle skaler olarak çarpardık. Tamam mı? Yani şu kısımları düşünmeden diyelim ki bir fonksiyonum var, noktam var. Bu da herhangi bir vektörse bunu birim vektör olarak yazmasını da biliyorum. Yönlü türevi bulabilmek için ne yapıyordum? Gradiyan vektörü birim vektörle skaler olarak çarpardık.
+
+230
+00:38:15,380 --> 00:38:17,880
+Taylor çarpmıştık, geçen hafta konuşmuştuk.
+
+231
+00:38:18,339 --> 00:38:19,052
+Ama...
+
+232
+00:38:19,219 --> 00:38:39,840
+Tabii ki bunlar eksik olacağı çünkü aradaki bazı bilgilerimiz de var. O zaman önce burada linearizasyonu, yani linear yaklaşımı kullanarak fonksiyonun 1-2'deki linealleştirmesini yazalım. Şu verilenleri kullanabilmek için. Ne dedim? Bakın, Vx'ye eşittir. Fonksiyonun 1-2'deki değeri, onu vermez zaten bize.
+
+233
+00:38:46,228 --> 00:38:50,328
+1, 2'deki değeri çarpı y eksi 2. Tamam mı?
+
+234
+00:38:50,768 --> 00:38:57,148
+Bir herhangi bir fonksiyonun, yani fx'ye fonksiyonunun, 1, 2 noktasındaki yerleştirmesini yazdım.
+
+235
+00:38:57,648 --> 00:39:01,168
+E ne yapıyorum? Fonksiyonun 1, 2'deki değeri verilmiş, eksi 3.
+
+236
+00:39:01,948 --> 00:39:05,568
+Bunu bilmiyorum şu an, türevini aynen yazdım buraya. Tamam mı?
+
+237
+00:39:05,988 --> 00:39:10,288
+Şu, f'in y'ye göre türevini de bilmiyorum, şu yazdım.
+
+238
+00:39:11,987 --> 00:39:21,987
+Alacağım fonksiyonu bilmiyorum çünkü. Sonra ne demiştik biz hatırlarsanız? L fonksiyonumuz yaklaşık olarak F eşittir idi dedik. Onu da...
+
+239
+00:39:22,208 --> 00:39:46,828
+yerine yazarsam. Yani burada, bakın, x'si ne vermiş? 1.01, y'de 1.99. O halde bu da yaklaşık olarak l'yi eşittir diyecek. O zaman ne yapıyorum? Bakın, dinerleştirmede x gördüğüm yere 1.01'i, y yerine de 1.99'u yazıyorum. Yazıyorum, bakın, eksi 3. F'in x'e göre türevini bulacağım.
+
+240
+00:39:47,476 --> 00:40:00,815
+x gördüğüm yere değerini yazdım. Artı f'in y'ye göre türevi. y yerine de ne yazıyorum? 1.99-2 diyorum. Evet. Bunları da düzenlersek arkadaşlar.
+
+241
+00:40:01,056 --> 00:40:09,496
+Eksi 3. Yine f'in x'e göre türevi var. Bu ne olur? 0.01 olur. f'in y'ye göre türevi çarpı 0.01.
+
+242
+00:40:11,507 --> 00:40:36,007
+Bunun da değerini bana vermiş, bakın soru da, eksi 2.96. Onun yerine de onu yazarsam, şurayı takip edebiliyoruz değil mi? Bakın, f'in x'e göre türevi, eksi f'in y'ye göre türevini yalnız bırakırsan, ne olur? 3a eksi 2.96. Yani 3'ü bu tarafa atmış oldum. Şunun da değeri bana soru da verilmiş. Şu. Bu da düzenlenirse,
+
+243
+00:40:37,811 --> 00:40:56,111
+Arkadaşlar, bakın, her tarafı 0.01'e de bölersek, sonuçta baktım, yani bu işlem doğru, 4 çıkar. Yani f'in x'e göre türevinin noktadaki değeri eksi, pardon, f'in y'ye göre türevinin noktadaki değeri ne oldu? 4 buldum. Şu.
+
+244
+00:40:59,131 --> 00:41:02,411
+Buraya kadar var mı? Bir takıldığımız bir yer, bir bakar mısınız?
+
+245
+00:41:04,755 --> 00:41:19,715
+Biraz farklı soru arkadaşlar. Kafamız karışmasın. Ne yaptım? Linearizasyonu kullandım. Fonksiyonu fx'ye olsun. Öyle vermiş bana. Noktayı vermiş. 1, 2'deki linearleştirmesini yazdım.
+
+246
+00:41:20,275 --> 00:41:26,915
+Lineerleştirmenin de fx, y'ye yaklaşık olarak eşit olduğunu biliyorum. Onu da fx, y'ye eşittir bu dersek.
+
+247
+00:41:27,335 --> 00:41:34,435
+X'i de bana burada vermiş noktaları, o da tamam. X'leri, y'leri de yerine yazdım, düzenledim.
+
+248
+00:41:34,755 --> 00:41:41,155
+Sonuçta elimdeki veri nedir? f'in x'e göre türevi, x'i f'in y'ye göre türevi eşittir 4. Bu bir kenarda kalsın.
+
+249
+00:41:41,155 --> 00:41:46,875
+Bana neyi soruyordu aslında arkadaşlar? Yönlü türevi değil mi? Yönlü türevin yaklaşık değerini hesapla diyor.
+
+250
+00:41:47,195 --> 00:41:48,275
+Yönlü türevimizde neydi?
+
+251
+00:41:48,275 --> 00:42:13,615
+Bu sembolümüz, d u birim vektörü, f fonksiyonu, p noktasındaki yönlü türevi, gradyan vektörün u birim vektörüyle, skaler çarpımıydı. Bunu geçen ders konuşmuştuk. Tamam mı arkadaşlar? O halde, verilen bizim şu vektörümüz, herhangi bir vektör olduğu için, bunu önce ben birim vektörü olarak ifade etmeliyim. Yani vektörü uzunluğuna bölerek yazıyorum. Onu da yazarsak,
+
+252
+00:42:15,155 --> 00:42:32,155
+Bakıyorum, 4, 4, tamam doğru, 8, kök 8 gelir. Eksi 2 bölü kök 8, i artı 2 bölü kök 8, j. İşte u birim vektörüm hazır. Gradyan f'imizde neydi hatırlarsanız? Fonksiyonu x'e göre türevi i artı, fonksiyonu y'ye göre türevi j idi.
+
+253
+00:42:32,155 --> 00:42:38,795
+f, y'ye fonksiyonu gradiyenine yazdım. Birim vektör değil mi? Şu. Bunu biraz düzenleyelim bakın.
+
+254
+00:42:40,083 --> 00:43:00,603
+çarparsak, Scaler, i, i ile, j, j ile değil mi? Ne olur? Kök 2, eksi içeriye atmışım. Kök 2 bölü, 2 bölü kök 8 dedim. Bu da aynı şekilde. Yani f eksi f x, f'in x'e göre türevi, artı f'in y'ye göre türevi.
+
+255
+00:43:01,108 --> 00:43:09,367
+Şöyle çarptık, bunu da böyle çarptık, topladık, Taylor çarptık. Karşılık birleşenlerin çarpımının toplamıdır. İyi çarptık. Tamam mı arkadaşlar?
+
+256
+00:43:09,972 --> 00:43:36,072
+Şimdi yine köşeli parantezin içindeki ifadeyi bilmiyorum ama yukarıda benim bir verim var. Şu değil mi? Bakın fx-f y'nin 4 olduğunu biliyorum. Eksiyle çarpmış olsam, eksi 4 olur. Onun yerine de ne yaptım? Bakın getirip eksi 4'ü yazdım. İşte bu da düzenlenirse ne olur? Eksi kök 8 olarak bulunur. O da cevabım diyeceğim ki eksi kök 8'dir bu yöndeki türevin yaklaşık değeri.
+
+257
+00:43:37,972 --> 00:43:46,552
+Soruyu çözmüş olduk. Gönlü türevi de bize burada kullandırmış oldu. Güzel bir soruydu. Bu bir sınav sorusuydu arkadaşlar. Anladık mı? Var mı takıldığımız bir yer?
+
+258
+00:43:51,539 --> 00:43:52,039
+Evet.
+
+259
+00:43:54,260 --> 00:43:57,320
+Yok mu? Tamam, konuya dönelim o zaman.
+
+260
+00:44:06,771 --> 00:44:14,552
+Evet, o halde yaklaşık değer, diferansiye ve lineerleştirmeyi bu şekilde kullanmış oluyoruz.
+
+261
+00:44:14,552 --> 00:44:20,992
+Şimdi yeni bir konumuz, maksimum-minimum değerler, yani kısmi türevlerin uygulanmasıdır.
+
+262
+00:44:21,431 --> 00:44:30,032
+Maksimum değer, minimum değerler, aynı matematik 1'de olduğu gibi burada da çok değişkenli fonksiyonlarda nasıl kullanacağız, onu konuşacağız.
+
+263
+00:44:30,612 --> 00:44:31,371
+Tamam mı arkadaşlar?
+
+264
+00:44:32,340 --> 00:44:35,840
+Evet, şimdi gelelim, önce tanımları verelim.
+
+265
+00:44:36,400 --> 00:44:43,699
+Maksimum, minimum değerler yerine biz bazen ekstremum değerler de deriz, ekstrem değerler de deriz, birçok sembolleri kullanırız.
+
+266
+00:44:44,219 --> 00:44:49,000
+Şöyle diyelim, fx, y, bir d bölgesinde tanımlı bir fonksiyon.
+
+267
+00:44:49,000 --> 00:44:53,320
+D de tabi düzlemde, düzlemde tanımlı bir fonksiyon olsun.
+
+268
+00:44:54,199 --> 00:44:56,719
+Düzlemdeki bir noktam da a, b olsun.
+
+269
+00:44:57,780 --> 00:44:58,199
+Eğer,
+
+270
+00:44:59,251 --> 00:45:10,352
+AB noktasının uygun bir komşuluğundaki tüm x'ler için, fx'i küçük eşit f, AB ise, yani bütün değerler,
+
+271
+00:45:10,771 --> 00:45:35,771
+FAB'nin değerinden küçük kalıyorsa, o zaman diyoruz ki, Fx'ye AB noktasında yerel maksimum değere sahiptir. Yerel maksimuma sahiptir diyeceğiz. Eğer tersi olursa, yani Fx'ye büyük FAB olursa, o zaman diyeceğim ki, fonksiyon AB noktasında yerel minimuma sahiptir diyoruz arkadaşlar. Tamam mı? Bu.
+
+272
+00:45:38,804 --> 00:45:43,744
+Tabii ki bunların nelerine nasıl bakacağız, nasıl bulacağız, onları da konuşmamız gerekecek.
+
+273
+00:45:44,404 --> 00:45:56,244
+Bir efeksiye fonksiyonu eğer bir noktada yerel maksimum veya yerel minimum sahip ise, efeksiye fonksiyonu o noktada bir ekstremuma sahip olduğunu söyleyeceğiz.
+
+274
+00:45:56,404 --> 00:45:59,044
+Yani varsa ekstremuma sahiptir diyeceğiz.
+
+275
+00:45:59,044 --> 00:46:05,464
+Şöyle bir teoremimiz de var. Bir efeksiye fonksiyonu tanım kümesindeki bir AB noktasında,
+
+276
+00:46:05,972 --> 00:46:11,852
+Aşağıdakilerden birini sağlıyorsa, AB bir kritik noktadır.
+
+277
+00:46:12,872 --> 00:46:24,672
+Birinci olarak A diyelim, Fx'in, yani x'e göre türevin AB noktasındaki değeri 0 ve F'in y'ye göre kısmi türevinin AB noktasındaki değeri 0.
+
+278
+00:46:24,672 --> 00:46:31,672
+Aslında bu ne demektir? Gradiyen vektörü AB noktasında 0 yapan noktaya ben.
+
+279
+00:46:32,403 --> 00:46:43,764
+kritik nokta diyeceğim. Tamam mı arkadaşlar? Bir kritik noktadır. İşte ne olacak? Bana fonksiyon verilecek. Ne yapmam gerekir? Onu test edebilmek için kritik noktasını bulmam gerekir.
+
+280
+00:46:44,467 --> 00:46:54,967
+Kritik noktada hatırlarsanız tek değişkenli fonksiyonlarda ne yapıyorduk? Türevi sıfır yapan değere bakıyorduk. Türevi tanımsız yapan değerler bizim için kritik noktaydı.
+
+281
+00:46:55,407 --> 00:47:03,788
+Buradaki kritik noktamız da gradiyen vektörü sıfır yapan ve tanımsız yapan noktalar olarak göz önüne alacağız.
+
+282
+00:47:05,148 --> 00:47:07,467
+Evet, yani burada da teorem olarak...
+
+283
+00:47:07,603 --> 00:47:13,043
+Gradiyan vektörün iki değişkenli fonksiyonda, gradiyan vektörü biz nasıl buluyorduk?
+
+284
+00:47:13,163 --> 00:47:18,163
+F'in x'e göre türevi i, F'in y'ye göre türevi j, eşittir sıfır.
+
+285
+00:47:18,543 --> 00:47:23,323
+Gradiyan vektörü sıfır yapan demek, her bir bileşeninin sıfır olması demektir.
+
+286
+00:47:23,323 --> 00:47:35,503
+Onun için de biz kısaca, onu uzatmadan, verilirse bana fonksiyon deriz ki, F'in x'e göre türevi eşit sıfır, F'in y'ye göre türevi eşit sıfır, bunlar arasında türevleri sıfır yapan.
+
+287
+00:47:35,603 --> 00:48:02,523
+nokta, AB noktası benim için kritik noktadır. Ya da bunları tanımsız yapan noktalarda bizim için kritik nokta. Onun için de bunları biz özet olarak kısaca şöyle deriz. Yani F'in X'e göre türevinin noktadaki değeri sıfır, F'in Y'e göre bu noktadaki değeri sıfır veya ne olabilir? Bu türevler bu noktada mevcut değilse biz bunlara ne diyeceğiz? Kritik noktadır diyeceğiz.
+
+288
+00:48:03,987 --> 00:48:09,527
+Tamam mı arkadaşlar? Yani verilen fonksiyonda, gradyan vektörü sıfır yapan,
+
+289
+00:48:09,983 --> 00:48:17,823
+Tanımsız yapan noktalar bizim için kritik noktalardır. Tek değişkenlerde hatırlayın, türevi sıfır yapan, türevi tanımsız yapan noktalardır.
+
+290
+00:48:17,903 --> 00:48:28,823
+Burada da dediğim gibi, biz özet olarak verilir bana fonksiyon, f'in x'e göre türevi sıfır derim, f'in y'ye göre türevi sıfır derim, oradan noktayı bulurum.
+
+291
+00:48:29,063 --> 00:48:34,023
+Tanımsız yapan, sıfır yapan noktalar, işte bunlar benim için kritik noktadır diyeceğim.
+
+292
+00:48:34,483 --> 00:48:42,344
+O halde, ikinci olarak da şöyle diyelim, yerel ekstremum için gerekli şartlar.
+
+293
+00:48:44,064 --> 00:48:55,204
+FX'ye, AB noktasında yerel ekstremuma sahip ise, ve aynı noktada birinci mertebe kısmi türevleri mevcut ise, yine yukarıdakini onaylamak için.
+
+294
+00:48:56,052 --> 00:49:04,032
+O zaman ne diyoruz? Fonksiyonun bu noktadaki kısmı türev, x'e göre kısmı türevi ve y'ye göre kısmı türevleri sıfırdır.
+
+295
+00:49:05,231 --> 00:49:10,672
+Yani bir yerel ekstremıma sahipse ne oluyor? Türevleri orada sıfır yapacaktır.
+
+296
+00:49:10,996 --> 00:49:16,775
+Bir de eğer noktası ya da semer noktası diyorduk. Onun tanımını da verelim burada.
+
+297
+00:49:17,376 --> 00:49:26,376
+FX'e bir AB kritik noktasında yerel ekstremuma sahip değilse bu noktaya eğer ya da semer noktası diyeceğiz.
+
+298
+00:49:26,516 --> 00:49:30,775
+Yani yerel ekstremum değilse o bir semer noktasıdır diyeceğiz.
+
+299
+00:49:31,816 --> 00:49:37,836
+Evet, tanımlar biraz hani şey ama örneklerde daha iyi oturur diye düşünüyorum. Tamam mı arkadaşlar?
+
+300
+00:49:38,351 --> 00:49:58,152
+Zaten çok da bir şey vermedik. Kritik noktayı bulacağız, onu test edeceğiz. O zaman şöyle diyelim, bir AB kritik noktası ve yeterince küçük her aşka sayısı için, yani ben şimdi bir kritik noktayı belirledim.
+
+301
+00:50:00,000 --> 00:50:12,139
+Şimdi bunu test etmek için bakıyorum. Hani maksimumu, minimum mu diye bakmaya çalışıyorum. Onun için şöyle bir test yaparız arkadaşlar. HFK çok küçük değerler olmak üzere, pozitif değerler olmak üzere.
+
+302
+00:50:15,572 --> 00:50:21,152
+Pardon, pozitif demiyorum. Her küçük değerler için diyelim. Şöyle bir farkına bakıyoruz.
+
+303
+00:50:21,672 --> 00:50:28,932
+F A artı A, bir gün B artı K eksi F AB. Tamam mı? AB bizim kritik noktamız.
+
+304
+00:50:29,352 --> 00:50:37,352
+Eğer bu fark sıfırdan büyük eşit ise, o zaman F fonksiyonu AB noktasında bir yerel minimama sahiptir.
+
+305
+00:50:37,352 --> 00:50:43,572
+Tersi olursa, sıfırdan küçük olursa da, o zaman maksimum değere sahiptir diyeceğiz.
+
+306
+00:50:43,572 --> 00:50:57,652
+Yani ben yine dediğim gibi kritik noktayı buldum. Getirip şurada test edeceğim. Sıfırdan büyük çıkıyorsa minimum, sıfırdan küçük çıkıyorsa yerel maksimumdur diyeceğiz. Tamam mı?
+
+307
+00:50:58,652 --> 00:51:02,612
+Şimdi bunu bir örnek üzerinde uygulamaya çalışalım. Bakın.
+
+308
+00:51:04,211 --> 00:51:12,692
+fx'ye fonksiyonu, x kare artı y kare fonksiyonunun kritik noktalarını bulup sınıflandırınız ya da ekstrem değerlerini bulunuz da diyebilir bana.
+
+309
+00:51:13,052 --> 00:51:20,672
+Şimdi verilen fonksiyona dikkat ederseniz, iki değişkenli fonksiyon, bunun tanım kümesini vermediğine göre, bunun tanım kümesi nedir?
+
+310
+00:51:21,052 --> 00:51:24,152
+Tüm düzlemdir değil mi? Yani sınır noktaları yoktur.
+
+311
+00:51:24,152 --> 00:51:26,692
+Şimdi bunların türevleri mevcut mu? Ona bakalım.
+
+312
+00:51:27,764 --> 00:51:50,164
+Ne diyorduk? X'e göre türevini alıyorum, kısmı türevini. 2X. Y'ye göre kısmı türevi 2Y. Hatırlayın, yukarıda dedik ki F'in X'e göre türevi 0'a eşitlenecek. F'in Y'ye göre kısmı türevi 0'a eşitleyip, kritik noktayı, yani türevleri 0 yapan nokta, türevi tanımsız yapan noktalar bizim için kritik nokta olacak.
+
+313
+00:51:50,547 --> 00:52:05,148
+Bu türev, aslında bu da demin de dediğim gibi, gradyan vektörü sıfır yapan noktalar demektir. O halde hemen kısaca dedik ki, f'in x'e göre türevi 2x eşittir 0, f'in y'ye göre kısmı türevi eşittir 0 diyoruz.
+
+314
+00:52:05,467 --> 00:52:16,547
+Hiçbir kuralı yok, bunlar arasında x'e noktalarını bulmaya çalışıyoruz, değil mi? Bu denklenme sağlayalım. Bu da ne olur? Buradan görüldüğü gibi, x0, y0. Yani tek bir...
+
+315
+00:52:17,331 --> 00:52:41,092
+Kritik noktamız orada 0,0'dır. Zaten burada türevi tanımsız yapan noktalar yok, değil mi? Yani tek bir kritik noktamız var. Bu da 0,0'dır. Bu kritik nokta acaba maksimum mudur, minimum mudur? Onu test edebilmek için. Bakın formülümüz şurada yukarıda hazır. H ve K çok küçük değerler olmak üzere diyoruz. Oradan yerine yazalım bakın.
+
+316
+00:52:41,523 --> 00:52:54,503
+ab dediğim nokta nedir? 0'dır. f0 artı h, virgül 0 artı k eksi f0 0. Bu da ne demektir?
+
+317
+00:52:55,103 --> 00:53:03,023
+Fonksiyonda x gördüğün yere h, y gördüğün yere k yaz. O zaman yazarsam h kare, k'nın karesi.
+
+318
+00:53:03,411 --> 00:53:26,112
+F'in 0, 0'daki değeri de ne olur? Şurada yerine yazarsam F 0, 0'dır. Bitti. Yani sonuçta ne çıktı? Bakın, h kare artı k'nın karesi. Bu da kesinlikle pozitif değil midir arkadaşlar? Yani 0'dan büyük eşittir diyoruz. Yani şu ifadeye göre. O zaman buradaki ifademe göre buna ne diyeceğim? Yerel minimum noktadır. Tamam mı arkadaşlar?
+
+319
+00:53:26,771 --> 00:53:44,392
+Yani burada fonksiyonu siz kendiniz de görebilirsiniz. Her x'ye sıfırdan farklı tüm değerleri, fonksiyonun sıfır sıfırdaki değeri sıfır değil midir? Sıfırdan büyük olmaz mı? Yani şu yukarıdaki söylediğimiz tanıma şu.
+
+320
+00:53:45,172 --> 00:54:09,092
+Bütün değerleri, yani fonksiyonun 0,0'dan farklı tüm değerleri, f'in 0,0'daki değerinden büyük olduğu için ne diyeceğim? Yerel minimuma sahiptir. Yani şunu demek istiyoruz ama daha kolay test edebilmek için neyi kullanıyorum? Şu. Aslında bu nedir? Kritik noktaların test edilmesi. Bu çok işime yarar arada. Tamam mı arkadaşlar? Anlıyor muyuz?
+
+321
+00:54:13,204 --> 00:54:17,164
+Evet, o halde demek ki bu kritik noktamız yerel minimumdur.
+
+322
+00:54:19,664 --> 00:54:22,104
+Gelelim diğer bir örneğimize.
+
+323
+00:54:22,739 --> 00:54:34,259
+fx'i eşittir, x artı y'nin karesi artı y üzeri 4. Sorumuz aynı gene, fonksiyonun kritik noktalarını bulup sınıflandırınız diyor.
+
+324
+00:54:34,699 --> 00:54:44,219
+E şimdi verilen fonksiyonun dikkat ederseniz, gene tanım kümesini bana vermemiş. Tanım kümesi nedir? Düzlemin kendisidir. Yani sınırları yoktur, sınırlamamıştır.
+
+325
+00:54:44,639 --> 00:54:56,579
+O zaman bunun türevi mevcuttur diye düşünüyoruz. Tamam mı? Ne yapacağım? Türevini alacağım. X'e göre türevini alıp sıfır eşitleyeceğim. Y'ye göre türevini alıp sıfır eşitleyelim.
+
+326
+00:54:57,679 --> 00:55:12,259
+F'in X'e göre türevi ne olur? Şuradan alırsam 2 çarpı X artı Y değil mi? Buradan gelmez. Yani 2X artı 2'ye eşittir sıfır olur. Y'ye göre alırsam 2 çarpı
+
+327
+00:55:12,559 --> 00:55:23,199
+x artı, artı, dört, y köpüşü. Bunu açıklamazmışız. Tamam mı? Hiçbir kuralı yok. Bunlar arasından x, y noktalarını bulmaya çalışıyoruz.
+
+328
+00:55:23,879 --> 00:55:37,639
+Buradan ne yapabilirim? x yerine x, y yazarsam 2'de, yani şunu kullanırsam, ne olur? Gider, dört, y köp kalır. Şuradan arkadaşlar, birden,
+
+329
+00:55:38,000 --> 00:55:51,739
+x'i çektim, eksi y oldu. Getirip 2 de yerine yazdığımda 2 yeler gitti. 4 y küp kaldı. Buradan da y ne olur? 0 olur. Yani noktamız nedir? 0'a 0 çıktı.
+
+330
+00:55:53,780 --> 00:56:17,060
+Çünkü y eşittir, eksi, x demiştik ya, ya da x eşittir, eksi, y. Yani bulduk bir tane noktamız, kritik noktamız. Türevi tanımsız yapan değer yok zaten. O zaman tek bir kritik noktamız o da nedir? 0, 0'dır. Şimdi bu nokta minimum mudur, maksimum mudur? Onu ne yapıyoruz? Gene yukarıdaki kritik noktaların sınıflandırılmasında test etmeye çalışalım.
+
+331
+00:56:17,427 --> 00:56:26,487
+Yani noktamız AB dediğimiz 0, F 0 artı H virgül 0 artı K eksi F 0, 0 dedi.
+
+332
+00:56:27,092 --> 00:56:32,751
+Burada fonksiyonda x gördüğün yere h, y gördüğün yere k yaz diyoruz. Yazalım bakın.
+
+333
+00:56:33,152 --> 00:56:43,851
+h artı k'nın karesi, artı k'nın dördüncü kuvveti, bir de fonksiyonun sıfır sıfırdaki değeri, x yerine sıfır, y yerine sıfır yazarsam, bu ne olur? Sıfır olur, gelmez.
+
+334
+00:56:48,384 --> 00:57:00,663
+çift olduğuna göre hep pozitif olacaktır. Sıfırdan büyük çıkar. Bu halde testimize göre diyoruz ki, sıfırdan büyük çıktığı için, sıfır sıfır yerel minimum değerdir.
+
+335
+00:57:04,884 --> 00:57:10,463
+Ya da demin dediğim gibi bunun 0, 0'daki değeri nedir? 0'dır arkadaşlar.
+
+336
+00:57:11,263 --> 00:57:18,763
+Düzlemdeki her x'ye 0'dan farklı değerleri için bu fonksiyon hep 0'dan büyük kalmaz mı?
+
+337
+00:57:19,403 --> 00:57:22,884
+Zaten minimum oldu. Ayşikar değil mi? Yani noktanın.
+
+338
+00:57:25,263 --> 00:57:26,364
+Anlıyor muyuz arkadaşlar?
+
+339
+00:57:28,463 --> 00:57:30,583
+Peki, şuna bir bakın bakalım.
+
+340
+00:57:31,923 --> 00:57:35,983
+fx'i eşittir, x kare eksi, y kare.
+
+341
+00:57:37,184 --> 00:57:41,244
+Gene aynı soru, kritik noktalarını bulup sınıflandırınız.
+
+342
+00:57:41,724 --> 00:57:42,804
+Hadi buna bakın bakalım.
+
+343
+00:57:44,224 --> 00:57:45,784
+Gene bunun tanım kümesi nedir?
+
+344
+00:57:45,884 --> 00:57:46,804
+Bir düzlemdir.
+
+345
+00:57:47,063 --> 00:57:48,844
+Hiç sınırlama vermemiş bize.
+
+346
+00:57:49,652 --> 00:58:08,911
+Aralık falan hiçbir şey vermemiş. Bu şekilde düşünüyoruz. Ne yapıyorum? X'e göre türevini alıp sıfıra eşitliyorum. Kritik noktaları bulmak için. Y'ye göre kısmı türevini alıp sıfıra eşitleyeceğiz. Bakalım. X'e göre kısmı türevi nedir? 2X'tir. Y'ye göre. Eksi 2Y.
+
+347
+00:58:10,164 --> 00:58:26,424
+Buradan hemen zaten tek bir nokta, o da nedir? 0-0 kritik noktadır. Türevi tanımsız yapan değerlerimiz de yok. 0-0 kritik noktayı. Şimdi test etmeye çalışıyoruz. Yukarıdaki gene formülümüzde AB dediğimiz ifade neydi? 0'dı.
+
+348
+00:58:26,900 --> 00:58:36,060
+O zaman f diyorum, 0 artı h, birbir 0 artı k, eksi f, 0, 0. Burada gene ne diyoruz? Fonksiyonda x yerine h, y yerine k yaz.
+
+349
+00:58:36,300 --> 00:58:46,560
+h kare eksi k'nın karesi. Fonksiyonu 0, 0'daki değeri de nedir? 0'dır. Yani sonuçta h kare eksi k'nın karesi.
+
+350
+00:58:46,560 --> 00:58:53,020
+Şimdi bunu ben sıfırdan büyük, sıfırdan küçük diyemem. Bazı h'lar için ne olur? Pozitif olur.
+
+351
+00:58:53,423 --> 00:59:16,163
+Bazı kallar içinde negatif olur değil mi? Bu değişir. Yani sıfırdan küçük de olabilir, sıfırdan büyük de olabilir. Onun için burada ne diyeceğiz? Böyle bir kısıtlama yapamıyorsak, yani karar verilemiyorsa, o zaman bu noktaya ne diyeceğiz? Eğer noktasıdır. Hani maksimum değilse, eğer noktasıdır diyeceğiz.
+
+352
+00:59:21,108 --> 00:59:44,228
+Pozitif çıkar. K daha büyük değer olursa negatif. Yani bazı haçlar için negatif, bazı k'lar için pozitif diyelim. Yani burada kısıtlama yapamıyoruz. Yani sıfırdan büyük mü, sıfırdan küçük mü olduğuna karar veremediğimiz için o halde sıfır noktası ne maksimumdur ne de minimumdur. O halde yukarıdaki tanıma göre ne diyeceğiz? Eğer ya da semer noktasıdır diyeceğiz.
+
+353
+00:59:46,804 --> 00:59:49,364
+Evet, var mı buraya kadar takıldığımız bir yer?
+
+354
+00:59:50,903 --> 00:59:59,644
+Şimdi 2. türev testine geçmek istemiyorum arkadaşlar. Biraz daha otursun diyorum. Hızlı gitmek istemiyorum fazla. Tamam mı?
+
+355
+01:00:00,084 --> 01:00:09,304
+Zaten çok da konumuz kalmadı. Bu bitecek. Sonra 2 katlı integralimiz var. Onun için acele etmiyorum. Burada kalmak istiyorum. Var mı sorumuz?
+
+356
+01:00:10,771 --> 01:00:23,592
+Sınav da bitti, biraz rehavete çöktünüz, kimse cevap vermiyor. Anladık mı bari arkadaşlar? İyi o zaman, haftaya görüşürüz, kendinize iyi bakın, iyi günler diliyorum arkadaşlar.

@@ -1,0 +1,1799 @@
+1
+00:00:44,051 --> 00:00:45,332
+Günaydın arkadaşlar.
+
+2
+00:00:48,072 --> 00:00:49,432
+Ses geliyor mu?
+
+3
+00:00:59,444 --> 00:01:21,704
+Evet, ses geliyormuş. Teşekkür ederim. Arkadaş cevap verdi. İyisinizdir inşallah. Dün de konuşmuştuk. Bugün uygulama yapmak istiyorum. İki saatlik dersimizde. Bir de ayın 17'sinde uygulama yapacağım. Bugün zaten sınavınız da var. Sınavdan önce de uygulama yapmış olacağız arkadaşlar. Haftaya zaten dersiniz olmayacak.
+
+4
+00:01:23,123 --> 00:01:32,603
+10 Mayıs, 11 Mayıs'ta ders yok, tatil olduğu için, resmi tatil. Evet, bakalım kaç kişi var, şu an 21 kişi var.
+
+5
+00:01:36,436 --> 00:01:50,716
+Evet, başlayalım arkadaşlar. Ben konu sırasına göre değil, karışık örnekler çözeceğim birazcık. Kalan kısmını da dediğim gibi 17'sinde çözmeye çalışacağım. Çözebildiğimiz kadar bugün çözelim.
+
+6
+00:01:50,716 --> 00:02:00,036
+Evet, şimdi ilk örneğimiz dizilerle ilgili monoton dizi teoremini kullanarak a n eşittir, 1 artı kök içinde 3'en bölü köken.
+
+7
+00:02:00,531 --> 00:02:26,692
+dizisinin yakınsaklığını inceleyiniz. Parantez içine de açıklamayan monoton dizi teoremi neydi hatırlarsanız. Bir ağanın dizisi alttan sınırlı ve azalan veya artmayan da derdik onu ise yakınsaktır. Benzer şekilde üstten sınırlı artan bir dizide yakınsaktır. O halde bana verilen dizinin eninci terimi verilmiş. Ben bunun artan azalan olduğunu önce bakmalıyım.
+
+8
+00:02:27,135 --> 00:02:35,875
+İşte artansa, üst sınırını bulmalıyım. Azalansa, alt sınırı, yine ele sınırını. Her ikisi de sağlanıyorsa işte ne diyeceğim ona.
+
+9
+00:02:36,436 --> 00:02:53,576
+Yakınsaktır diyeceğim. O halde A'n dizisinin en inci terimini aldım. Bunu şöyle yazabilirim. Payı paydaya bölerek bir bölü köken, şurada köküç çarp köken dersin, kökenle gider, köküç kalır. A'n budur. Tamam mı arkadaşlar?
+
+10
+00:02:54,695 --> 00:03:04,436
+Şimdi artan, azalan olduğuna da şöyle bakmalıyım. A'n artı bir küçük A'n ise işte azalan, tersi ise artandır. Onun için de ne yapıyorum? Dizinin A'n...
+
+11
+00:03:04,436 --> 00:03:30,736
+A n artı birinci terimine ihtiyacım var. O halde A n artı bir oluşturmak için ne yapıyorum? En yerine n artı bir yazıyorum. Bir bölü kök içinde n artı bir diyorum. Artı kök üç. Şimdi şu parantez içindeki ifadeden A n artı bir eksi A n'in sıfırdan küçük mü büyük mü olduğunu görmek istiyorum. Değil mi? Görebilmek için artan azalanlarını. O zaman ne yapıyorum? A n artı bir eksi A n'i oluşturuyorum.
+
+12
+00:03:31,156 --> 00:03:58,376
+A n artı 1'i şurada buldum bakın. 1 bölü kök içinde n artı 1, artı kök 3 diyorum. Eksi A n'i yazıyorum. Eksi 1 bölü köken, eksi kök 3'ler, artı kök 3 birbirini götürdü. Geriye ne kaldı? Şuradan 1 bölü kök n artı 1, eksi 1 bölü köken kaldı. Bunu da paydaşıtlayarak düzenlemeye çalışalım bakın. Köken olur, eksi kök içinde n artı 1 bölü, kök içinde yazarım artık n çarpı n artı 1.
+
+13
+00:03:59,156 --> 00:04:16,495
+Şimdi bunun sıfırdan büyük mü, küçük mü olduğuna bakmak istiyorum. Bu dizi olduğuna göre, terimleri, pardon, nasıl gitmesi gerekiyor? En bir ve birden büyük değerler için diziyi yazıyorduk. O zaman o şekilde düşünürsek bu ifade kesinlikle sıfırdan küçüktür değil mi?
+
+14
+00:04:25,300 --> 00:04:45,519
+Ne yapmış oluyorum? Şunu göstermiş oldum. Yani aynı artı bir küçük aynı olduğundan bu dizi nedir? Monoton azalandır. Tersi olsaydı artan diyecektim. Monoton azalansa, ne dedik baştan bakın? Monoton dizi teoremi, alttan sınırlı ve artmayan.
+
+15
+00:04:45,939 --> 00:04:53,620
+Şimdi bizimkisi azalan, yani artmayan, azalan çıktığına göre, alt sınır, acaba dizi alttan neyle sınırlı, ona bakmam gerekir.
+
+16
+00:04:53,939 --> 00:04:57,340
+O halde dizinin en inci terimini gene şuraya aldım, bakın şu.
+
+17
+00:04:58,000 --> 00:05:06,779
+Gene en nedir? Bir ve birden büyük değerler için göz önüne alırsam, gerçekten köküçten hep büyük olur bütün terimleri değil mi?
+
+18
+00:05:07,439 --> 00:05:12,360
+O halde ne diyebilirim bu durumda? Dizi alttan köküç ile sınırlıdır.
+
+19
+00:05:13,427 --> 00:05:23,887
+Azalan olduğunu gösterdik. Alttan sınırlı olduğunu da gösterdikten sonra o zaman diyoruz ki monoton dizi teoremine göre bu dizi nedir? Yakınsaktır diyeceğiz.
+
+20
+00:05:25,207 --> 00:05:34,887
+Monoton, azalan ve alttan sınırlı olduğundan dizi yakınsaktır. O zaman limit en sonsuza giderken dizilerin limitini de bu şekilde buluyoruz değil mi? An. Onu da yazarsak.
+
+21
+00:05:35,216 --> 00:05:43,176
+Bu bir bölü köken sıfıra gidecektir. Sadece buradan kök 3 diye dizinin limitini bulmuş oluruz arkadaşlar. Tamam mı?
+
+22
+00:05:45,176 --> 00:05:46,496
+Van takıldığımız bir yer.
+
+23
+00:05:49,356 --> 00:05:50,496
+Devam edelim.
+
+24
+00:05:50,995 --> 00:06:01,695
+Bakın bu da bir sınav sorusu, yani hepsi sınav soruları olarak alınmış da, yanlış konuştum. Bu test olarak, bir yaz okulunda sanırım bir test sorusuydu.
+
+25
+00:06:02,215 --> 00:06:10,615
+Aldım, gördüm. Yani bu soruların çoğu arkadaşlar sınav sorularıdır. Hani ben hepsinin altını A şıkkı, B şıkkı, yani test şeklinde yazmak istemedim.
+
+26
+00:06:10,615 --> 00:06:17,055
+Çünkü biraz zahmetli oluyor yazmak. Basit olanları yazmış oldum. Örneğin görmeniz açısından soru şu şekilde.
+
+27
+00:06:18,995 --> 00:06:41,975
+A1. terim 5, A2 8 ve N büyük eşit 3 için diyor. A N eşit, A N eksi 1 artı, A N eksi 2 olarak tanımlanıyor. L eşittir, limit en sonsuza giderken, A N artı 1 bölü, A N limiti mevcut olduğuna göre, L değeri kaçtır diyor. İşte A şıkkını vermiş, B C hangisidir diyor.
+
+28
+00:06:42,975 --> 00:06:43,975
+Evet.
+
+29
+00:06:44,915 --> 00:07:10,315
+Şimdi bakalım, bunu nasıl çözmemiz gerekecek? Bir kere şu ifadeyi bulmaya çalışalım. L demiş, limit en sonsuza giderken, an artı 1 bölü, an'e bakıyorum. An artı 1'i şurada nasıl oluştururum arkadaşlar? N yerine, n artı 1 yazıyorum değil mi? Ne olur? An olur. Şuradan yazarsam, an eksi 1 olur. Payda, an.
+
+30
+00:07:11,124 --> 00:07:14,984
+Ayn artı 1 oluşturdum. Şu verilen Ayn teriminden.
+
+31
+00:07:15,984 --> 00:07:26,124
+Şu. Bunu da düzenlersem, payı faydasına bölerek yazarsam, limit en sonsuza giderken, 1 artı Ayn eksi 1 bölü Ayn olur değil mi?
+
+32
+00:07:26,663 --> 00:07:28,684
+Şu ifadeyi de şöyle yazabilir miyim?
+
+33
+00:07:29,884 --> 00:07:33,584
+Toplamın limiti ayrı ayrı toplamların limitini eşittir. Bu 1 artı.
+
+34
+00:07:33,584 --> 00:07:36,264
+Şunu da 1 bölü Ayn bölü.
+
+35
+00:07:37,012 --> 00:07:40,232
+an-1 diye yazarım. Demek en son size giderken.
+
+36
+00:07:40,692 --> 00:08:04,851
+Bunu zaten bana vermiş bakın. Limit varsa bir tanedir. Zaten tektir. O zaman bunun da limiti L'dir diyeceğim. Tamam mı arkadaşlar? O zaman ne olur? 1 artı 1 bölü L'dir. Yani nasıl geldim buraya? L eşittir. 1 artı 1 bölü L'den. Bu L'yi bana soruyordu zaten. L'yi bulmaya çalışıyorum. Kaydasını eşitleyip işler dışlar çarpımı yaparsam L'nin karesi eşit L artı 1 olur.
+
+37
+00:08:05,264 --> 00:08:29,084
+Bunu da buraya attığımda, L kare eksi, L eksi bir eşit sıfır. Yani L'ye göre ikinci dereceden bir polinom buldu. Bunun köklerini bulmak istiyoruz. Bunun deltası nedir? B kare eksi 4, AC'den. A dediğim şunun katsayısı B, C. B'si eksi 1'dir. B kare 1. Eksi 4, AC artı 4, 5 olur deltası.
+
+38
+00:08:29,971 --> 00:08:42,511
+O halde pozitif olduğuna göre farklı iki kök bulunabilecek. Kökleri de nasıl bulurduk? L diyelim, bir iki tane kökümüz olacaktı. Eksi B yani bir, artı eksi kök içinde delta bölü 2A.
+
+39
+00:08:43,888 --> 00:08:51,828
+Şimdi burada bir tanesine çıktı. 1-kök 5 bölü 2. Diğeri de 1 artı kök 5 bölü 2 hangisi olması gerekir?
+
+40
+00:08:52,228 --> 00:09:01,388
+E biliyoruz ki bu dizinin terimleri, pardon hep pozitif olarak gittiğine göre burada pozitif değer hangisidir? 1 artı kök 5 bölü 2'dir.
+
+41
+00:09:02,548 --> 00:09:28,507
+Çünkü aynı sıfırdan büyük olarak baştan vermiş. Bize zaten terimleri hep pozitif olarak gidiyor arkadaşlar. Tamam mı? İşte o zaman diyeceğiz ki cevap B şıkkıdır diyoruz. Zaten sorunun cevap şıkkında da yanıltıcı bir cevap vermemiş. Yani hani başkası olsa şuraya bir tane de şunu yazabilirdi. 1-5 bölü 2'yi de yazabilirdi. Yanıltmak için öğrenecek değil mi? Dikkat etmek gerek.
+
+42
+00:09:29,491 --> 00:09:30,611
+Evet, var mı problem?
+
+43
+00:09:32,771 --> 00:09:34,072
+Tamam mı arkadaşlar?
+
+44
+00:09:35,331 --> 00:09:37,552
+Evet, şimdi gelelim serilere.
+
+45
+00:09:38,371 --> 00:09:48,531
+Şöyle bir seri verilmiş, toplam n eşittir birden sonsuza kadar n bölü kök içinde 2n kare artı bir serisinin karakterini belirleyiniz.
+
+46
+00:09:48,531 --> 00:09:53,011
+Şimdi dikkat edersek, verilen seri pozitif terimli bir seridir.
+
+47
+00:09:53,524 --> 00:09:59,524
+Serinin toplamını bana sormuyor, yakınsak mıdır, ıraksak mıdır olduğunu sorduğuna göre...
+
+48
+00:10:00,000 --> 00:10:28,000
+Birkaç test görmüştük değil mi? Pozitif terimli seriler için. İşte integral testi, kök testi, oran testi, limit mukayese. Bunların herhangi biriyle test edebiliriz yakınsak mı, ıraksak mı olduğunu. Bir de ne yapmıştık? Eninci terim testi demiştik. Eğer bir seri yakınsaksa, limit en sonsuza giderken eninci terimi sıfıra giderdi. Ama bunun tersi doğru değildi. Eninci terim sıfıra giderdi.
+
+49
+00:10:28,000 --> 00:10:46,000
+Sıfıra gittiğinde seri, yakınsak da olabilirdi, raksak da olabilirdi. Onun için bunu ilk önce biraz daha hani acaba diyorum, eninci terim testini uygulasam ne olur? Limit en sonsuza giderken bunun a, n'i sıfırdan farklı bulursam hiç düşünmeden buna raksak diyebileceğim. Onun için onu...
+
+50
+00:10:46,303 --> 00:11:14,063
+uygulamak istedim. Ama dediğim gibi diğer 4 tane, 5 tane verdiğim testlerin herhangi biriyle bunu biz test edebiliriz. Onun için dedim ki en inci terim testini uyguluyorum. Bu biliyorsunuz pozitif terimli bir seri. En inci terim dediğim, an dediğim, en bölü kök içinde 2n² artı 1'dir. Tamam mı? Yani limit en sonsuza giderken an'in limitine bakacağım. Yazıyorum en inci terimimi. En bölü kök içinde 2n².
+
+51
+00:11:14,303 --> 00:11:37,143
+Artı 1. Bunu da düzenlersek, şu anda sonsuz belirsizliği var. Kökün içine n kare parantezini alırsan ne olur arkadaşlar? Mutlak değer n diye dışarıya çıkması gerekir. Bu n sonsuza gittiği için mutlak değere gerek yok. Doğrudan n olarak dışarıya çıkarmış oldum. Kökün içine olur 2 artı 1 bölü n kare.
+
+52
+00:11:38,548 --> 00:11:44,247
+n'ler birbirini götürdü. Sonuçta 1 bölü kök içinde 2 artı 1 bölü n kare kalır.
+
+53
+00:11:44,367 --> 00:11:50,647
+n sonsuza giderken şu terim sıfıra gider, 1 bölü n kare. Yani sonuçta ne çıktı? 1 bölü kök 2.
+
+54
+00:11:51,847 --> 00:11:57,987
+Bu da ne olur? Sıfırdan farklı olduğu için diyeceğim ki n'inci terim testine göre bu nedir? Bıraksaktır.
+
+55
+00:11:58,467 --> 00:12:01,967
+Ama bu sıfır çıksaydı hiçbir şey diyemeyecektim arkadaşlar, tamam mı?
+
+56
+00:12:01,967 --> 00:12:06,267
+Bu da arada bize yardımcı oluyor bu teoremin olarak.
+
+57
+00:12:06,548 --> 00:12:11,107
+Evet, anlıyor muyuz arkadaşlar?
+
+58
+00:12:12,927 --> 00:12:14,767
+Duyuyoruz herhalde arkadaşlar hala.
+
+59
+00:12:15,747 --> 00:12:17,327
+Sayımız yavaş yavaş artıyor.
+
+60
+00:12:18,487 --> 00:12:19,267
+Anlaşılıyor mu?
+
+61
+00:12:21,787 --> 00:12:26,987
+Biraz örnekler üzerinde çok hani bazen konuşuyorum ama amaç burada konuları hatırlamak değil mi?
+
+62
+00:12:27,267 --> 00:12:29,807
+İlk konularımız olduğu için biraz unutmuş olabiliriz.
+
+63
+00:12:30,647 --> 00:12:33,007
+Evet, şimdi diğer bir örneğimiz de şöyle.
+
+64
+00:12:34,227 --> 00:12:36,467
+1, 1, 1 verilmiş.
+
+65
+00:12:36,887 --> 00:12:46,147
+AN artı 1, 1 artı, elenen bölü, en çarpı AN ile verilen toplam AN serisinin karakterini belirleyiniz.
+
+66
+00:12:46,740 --> 00:12:49,980
+İşte böyle bir seri, yakınsak mıdır, ıraksak mıdır?
+
+67
+00:12:50,280 --> 00:12:54,920
+Yine demin de söylediğim gibi, pozitif terimli bir seri olduğu aşikar burada.
+
+68
+00:12:55,640 --> 00:12:59,580
+Birçok testler verdik, herhangi biriyle bunu test edebiliriz.
+
+69
+00:12:59,660 --> 00:13:07,260
+Onun için de baktım, oran testi acaba cevap verir mi diye kendimce düşünüyorum.
+
+70
+00:13:07,260 --> 00:13:10,180
+Yani buna ben oran testini uygulamak isteyeceğim.
+
+71
+00:13:10,340 --> 00:13:11,840
+Oran testi nasıl uygulardık?
+
+72
+00:13:12,340 --> 00:13:14,560
+Limit en sonsuza giderken,
+
+73
+00:13:14,740 --> 00:13:16,980
+Şu seri, pozitif terimli serimiz var.
+
+74
+00:13:17,423 --> 00:13:45,003
+an, aninci terimi budur. an artı 1 bölü an ifadesine bakacağım. Eğer bunun limiti birden küçükse yakınsak, birden büyükse ıraksak diyeceğim. Biri eşitse bu test uygulanamaz diyecektik. O halde ne yapıyorum? Diyorum ki, acaba diyorum oran testiyle bunu çözebilir miyim? an artı 1'i yazıyorum bakın vermiş zaten bana. 1 artı elenen bölü n çarpı an bölü an.
+
+75
+00:13:45,748 --> 00:13:54,927
+a n'ler gitti, gereğine kaldı. Limit n sonsuza giderken, 1 artı l n bölü n kaldı. Tekrar limitini kontrol ediyoruz.
+
+76
+00:13:55,727 --> 00:14:03,447
+l n sonsuz sonsuz, yani sonsuz bölü sonsuza gitti. Bu halde ne yapıyorum? Bu belirsizliği giderebilmek için hopital uyguluyorum.
+
+77
+00:14:03,447 --> 00:14:06,028
+Payın türevi, 1 bölü n.
+
+78
+00:14:06,740 --> 00:14:16,919
+Paydanın türevi, enin türevi de birdir. Şimdi kontrol edersem limiti ne olur? Sonsuz, en sonsuza giderken bu sıfıra gidecektir.
+
+79
+00:14:17,279 --> 00:14:23,500
+Sıfırda birden küçük olduğundan, yani oran testine göre bunu yakınsak olabilmesi için birden küçük olması gerekir.
+
+80
+00:14:24,019 --> 00:14:31,700
+Olduğundan birden küçük, seri yakınsaktır diyoruz. O halde verilen serinin karakteri dediğinde yakınsaktır diyeceğiz.
+
+81
+00:14:31,700 --> 00:14:33,080
+Tamam mı arkadaşlar?
+
+82
+00:14:36,980 --> 00:14:38,680
+Evet, var mı bir problem?
+
+83
+00:14:41,139 --> 00:15:08,379
+Peki, şöyle bir toplam serisi var. 2n artı 1 bölü n kare çarpı n artı 1'in karesi eşittir. Soru işaret ediyor. Yani burada ne diyor? Bu serinin toplamı nedir? Bir serinin toplamını soruyorsa, o seriye bir geometrik seri şeklindedir, ya teleskopik seri şeklinde yazabilirim, ya da biz sonsuz serimli serilerin toplamını önce nasıl bulduğumuzu hatırlamak istersek ne yapıyorduk?
+
+84
+00:15:09,139 --> 00:15:23,320
+serinin toplamına bakardık. İlki enterinin toplamını bulduktan sonra, en sonsuza gittiğinde, işte belli bir değere giderse, seri yakınsaktır ve değeri de, diyelim, limiti 5 çıktı, toplamı da 5'e eşittir diyeceğiz.
+
+85
+00:15:23,680 --> 00:15:36,620
+Onun için bana serinin toplamını soruyorsa, ille bir şekilde bulmam gerekiyor. Ya bir geometrik seri olarak yazarım, ya teleskopiktir, yani eninci terimini basit kesirlere ayırarak daha düzgün biçimde ifade ederim.
+
+86
+00:15:37,139 --> 00:15:49,600
+Oradan ilken terimli toplanabilir, biraz üzerinde oynarsak, bunun toplamı ille ki bulunur ya da bildiğim bir fonksiyonun seri açılımıdır diye düşünmeliyim yani bana toplamını soruyorsa.
+
+87
+00:15:49,600 --> 00:15:55,879
+Zaten toplamını bulamıyorsak o bize ne diyor yukarıdaki soru gibi, karakterini soruyor yakınsak mıdır, ıraksak mıdır diye.
+
+88
+00:15:56,320 --> 00:16:02,340
+Onun için de serinin şu eninci terimin üzerinde biraz oynamak istedik.
+
+89
+00:16:02,620 --> 00:16:05,139
+İstersen ben bunu basit kesilere ayırarak da çözebilirim.
+
+90
+00:16:05,139 --> 00:16:33,139
+Ama biraz zahmetli arkadaşlar. Çünkü burada katlı kök var, burada da katlı kök var. Onun için ne yaptım? Şu eninci terimi aldım. Payına bir n kare ekledim. Denge bozulmasın. Bir de n kareyi çıkarmış oldum. O zaman bunu nasıl yazarım? n artı birin karesi. Bakın n kare var. 2n var. Artı bir bir de eksi n karem var. Şu. Şu halde yazmış oldum. Şimdi burada payı paydaya bölerek yazarsak ne kalır? Bir bölü n kare kalır.
+
+91
+00:16:33,139 --> 00:16:40,980
+Taylor, eksi, bir bölü, n artı birin karesi. Yani şu serinin eninci terimini bu şekilde düzenlemiş oldum.
+
+92
+00:16:41,279 --> 00:16:44,899
+Şimdi soruyu nereye getirdik? Yani şunun yerine şunu yazmış oldum.
+
+93
+00:16:45,220 --> 00:16:51,879
+E şimdi bu nasıl bulacağım toplamı? İlk n teriminin toplamına bakmam gerekir. Ona da esen demiş olalım.
+
+94
+00:16:52,920 --> 00:16:55,980
+İlk n teriminin toplamını yazarken n'e bir veriyorum.
+
+95
+00:16:56,532 --> 00:17:24,491
+Birinci terimini yazıyorum. 1-1 bölü 4 olur. İkinci terimini yazarsam n'e 2 vereceğim. 1 bölü 2'nin karesi 4, 3'ün karesi 9. Artı böyle devam edersen, ta ki n-1. terimi yazsam, n'e n-1 veriyorum. n-1'in karesi, n-1 bölü n kare gelir. Artı n verdiğimde de kendisi.
+
+96
+00:17:24,531 --> 00:17:40,672
+Yani, ilken teriminin toplamını bu şekilde ifade etmiş oldum arkadaşlar. Hep bir önceki terimi de yazarım ki, sadeleştirmeyi görebilelim. Çünkü burada ders anlatırken de demiştim, biraz herhal gücümüzü geniş tutarak bunlar sadeleştiğinde ne kalır diye düşünmemiz gerekir.
+
+97
+00:17:52,531 --> 00:18:08,951
+Bilen kareler de gitti. Burada ne kaldı? 1 bölü n artı 1'in karesi kalır. Bir de baştan 1 kalmıştı. O zaman bu terimleri topladığımda sonuç ne oldu? Bakın 1 eksi 1 bölü n artı 1'in karesi oldu. İşte serinin ilken terimi budur diyorum.
+
+98
+00:18:09,556 --> 00:18:34,536
+O halde buna ne yapacağım? Bunun limitine bakacağım. Limit en sonsuza gittiğinde bunun limiti de ne olur? Şu terim sıfıra gideceğine göre bir oldu. O halde bu seri yakınsaktır. Toplamı da biri eşittir deyip şu şekilde yazarız. İşte bu test sorusu olursa cevaplarda bir, iki, beş şeklinde sonuçlar olacaktır. Toplamı nedir diye sorduğunda da bir olarak işaretlemen gerekir.
+
+99
+00:18:35,256 --> 00:18:36,836
+Anlıyor muyuz arkadaşlar?
+
+100
+00:18:37,519 --> 00:18:40,680
+Evet, bir ses duyayım, anlaşılıyor mu?
+
+101
+00:18:46,675 --> 00:18:58,316
+Tamam, [öğrenci] arkadaş geldi. Evet, [öğrenci] da cevap verdi. Teşekkür ederim. Bir ses duyayım, kendimi konuşuyorum, bilemiyorum. Evet, şimdi gelelim.
+
+102
+00:18:59,355 --> 00:19:11,596
+Gene bir seri sorusu, gene bir toplam soruyu. Serinin toplamını bulunuz diyor bize. Dikkat edersek, iki ayrı serinin toplamı şeklinde verilmiş mi, değil mi burada?
+
+103
+00:19:12,435 --> 00:19:27,776
+Baktık, yukarıdaki gibi düşünemiyoruz. Acaba bir geometrik seri olabilir mi diye düşünüyorum bunu toplam sorduğuna göre. Biraz basite indirgeyebilmek için ne yapıyorum? Serinin terimlerini şöyle ifade etmek istedim. Bakın, ayırarak yazalım. İki bölü.
+
+104
+00:19:28,276 --> 00:19:38,796
+2 üzeri n diyelim, artı toplam n eşitli birden sonsuza kadar, eksi 1 üzeri n bölü 2 üzeri n. İki tane ayrı serinin toplamı gibi düşüneceğiz.
+
+105
+00:19:39,456 --> 00:19:46,316
+Şunu düzenlersem, ikilerin bir tanesi gitsin, 1 bölü 2 üzeri n eksi 1 de yazar mı? Yazarım.
+
+106
+00:19:46,996 --> 00:19:50,216
+Bu da ne olur? Eksi 1 bölü 2'nin en ince kuvveti.
+
+107
+00:19:51,508 --> 00:19:59,067
+Evet, bu da tamam. E şunu da şöyle yazmış olayım, bakın, 1 bölü 2'nin en eksi 1. kuvvet olsun 1. seri.
+
+108
+00:20:00,000 --> 00:20:08,259
+3. seriyi de neden böyle yazdım? Çünkü bakış soldan bakalım, biz geometrik seri dediğimizde nasıl ifade etmiştik?
+
+109
+00:20:08,480 --> 00:20:15,799
+n eşittir birden sonsuza kadar a çarpı r üzeri n eksi bir şeklindeki serilere biz geometrik seri dedik.
+
+110
+00:20:16,240 --> 00:20:22,799
+Burada a sıfırdan farklı, mutlak değer r de birden küçük ise seri yakınsaktır diyorduk.
+
+111
+00:20:23,220 --> 00:20:48,160
+Yakınsadığı değeri de nasıl bulurduk? A bölü 1-R şeklinde yazarak bulurduk. Geometrik serinin toplamı. İşte bunu bilmem gerek. Onun için de ben verilen seriyi üzerinde oynayarak geometrik seri şeklinde ifade etmeye çalışıyorum. Bu tamam. Bu benim bildiğim bakın geometrik seri. Şuraya düşünürsem A'sı 1'dir, R'si de 1 bölü 2'dir. Tamam, bulunma işim yok. Biraz sonra onu kontrol edelim.
+
+112
+00:20:51,220 --> 00:20:59,460
+1 bölü 2 üzeri n-1 olacak. O zaman bir tanesinin dışında tutarım. Bakın şu, yani şu benim a dediğim ifade. Bu da ne oldu?
+
+113
+00:20:59,500 --> 00:21:07,120
+1 bölü 2 üzeri n-1. İşte yine bunu geometrik seri şeklinde ifade etmiş oldum. Bu halde şimdi bunları test ediyoruz.
+
+114
+00:21:07,120 --> 00:21:12,140
+Bakın a'sı 1 dedik, sıfırdan farklı. Üretici yani neyle üretilmiştir?
+
+115
+00:21:12,884 --> 00:21:21,423
+1 bölü 2 ile mutlak değer R'nin birden küçük olması gerekir. Bu da gerçekten birden küçüktür. O zaman seri yakınsaktır.
+
+116
+00:21:22,104 --> 00:21:32,923
+Bunun yakınsadığı değeri de nasıl bulacağım? A'sı 1'di bakın. Bölü 1 eksi R'den. R'si de 1 bölü 2 şu. Bu dursun. Geliyorum ikinci seriye bakıyorum.
+
+117
+00:21:33,715 --> 00:22:00,175
+İkinci seride, dedik ki gene bir geometrik seridir. A'sı nedir? Eksi 1 bölü 2'dir. Sıfırdan farklılık. Bu neyle üretilmiştir? R dediğimiz. Eksi 1 bölü 2'dir. Mutlak değer R ne olur? 1 bölü 2. Bu da birden küçük olduğu için yakınsaktır. Yani bu seride yakınsak, yakınsadığı değeri de nasıl buluyorduk? Yani toplamını A bölü, eksi 1 bölü 2, 1 eksi R'den. 1 eksi 1 bölü 2 deyip yazıyoruz.
+
+118
+00:22:01,715 --> 00:22:16,115
+En birinci kestirden, ne olur? 2 olur. Şuradan bakarsak, paydasını da eşitlersek, 1 bölü 2 gelecek, değil mi? Şuradan, pardon 3 bölü 2.
+
+119
+00:22:16,756 --> 00:22:28,696
+Eksi 1 bölü 3 olur. Bunu da düzenlersek, 5 bölü 3 olarak serinin toplamını bulmuş oluruz. Yani yakınsak bir seriymiş. Toplamı da 3 bölü 5'e eşittir diyeceğiz arkadaşlar.
+
+120
+00:22:29,316 --> 00:22:43,676
+Geometrik serinin ilk teriminin 1 ile başlaması gerekir. Yani şunu açık yazmak istersek, bakın, eksi 1 bölü 2 aç barantez, n'e 1 verdim, 1 birinci terim işte 2 verirsem, eksi 1 bölü 2 şeklinde gidecek.
+
+121
+00:22:44,756 --> 00:23:10,716
+Dikkat edelim. Geometrik seri de yani sorarlar bir şekilde. Evet. Şimdi de şöyle bir örneğimiz var. Bu da gene bir sınav sorusuydu hatırlıyorum. Serisinin toplamı aşağıdakilerden hangisidir ya da serisinin toplamını bulunuz. Böyle bir seri verilmiş arkadaşlar. Evet.
+
+122
+00:23:11,892 --> 00:23:27,092
+Bakıyoruz, bunu ne yapabilirim diye düşünüyorum. Sadece şurada 3'ün karesi diye yazabilirim değil mi bu seriyi? Evet, nasıl düşünmem gerekir sizce? Hadi bir iki dakika düşünün bakalım.
+
+123
+00:23:30,291 --> 00:23:31,672
+Geometrik seri değil.
+
+124
+00:23:35,539 --> 00:23:41,720
+Acaba bir fonksiyonun seri açılımı gibi düşünebilir miyim? Acaba neyin seri açılımına benziyor?
+
+125
+00:23:42,675 --> 00:24:10,015
+Taylor, Maclaurin serileri verdik ya, bakın ne verdik? E üzeri x'i verdik, sinüs x'i verdik, kosünüs'ü verdik. Dedi ki bunların seri açılımlarını bilmemiz gerekir. İşte böyle bir soru da hem normal bir sınavda sormuşlar, hem de yaz okulunda benzerini sormuşlar. O benzerini herhalde bugün değil de yazdığım not olarak da bugün çıkmayabilir karşımıza. Bu bir önceki sınav sorusu. Bakın, şimdi şunu şöyle bir düzenliyorum.
+
+126
+00:24:10,483 --> 00:24:27,483
+Dedim ki, şu payda 9'u ne yapabilirim? 3'ün 2.n. kuvveti diye yazarım. Bunu da pi bölü 3'ün ortak tepelerinde 2 üzeri n diye yazarım. Pi bölü 3, parantez 2 üzeri n olsun. Paydasına dokunmadım şu.
+
+127
+00:24:27,483 --> 00:24:36,483
+İşte burada, acaba bu hangi fonksiyonun açılımıdır diye düşünüyorum.
+
+128
+00:24:36,980 --> 00:24:48,620
+Şunu da biliyordum zaten değil mi? Posunist X'in seri açılımını biliyoruz. Toplam sıfırdan sonsuza kadar eksi bir üzeri n, X üzeri iki n bölü iki n faktörüye.
+
+129
+00:24:50,300 --> 00:24:50,980
+Şu.
+
+130
+00:24:51,700 --> 00:25:19,700
+Evet, sinüs olsaydı ne derdik? 2n artı 1 bölü, 2n artı 1 faktöriyeldi. Yani sinüs, kosinüs, e üzeri x'lerin seri açılımlarını bilmekte fayda var diyoruz. Onun için de bakın, dikkat edin şu serinin toplamını soruyordu. Buna benzemeyim bakın, var. 2n faktöriyelim var. Burada sadece x yerine ne yazılmış arkadaşlar? Pi bölü 3 yazılmış. Bu kadar. O zaman diyorum ki ben burada şu kosinüs.
+
+131
+00:25:19,700 --> 00:25:29,360
+Kosünüs serisidir bu. X yerine pi bölü 3 yazarsam, yazdım. Kosünüs pi bölü 3'tür. Bu da nedir? 1 bölü 2'dir diyeceğim.
+
+132
+00:25:29,480 --> 00:25:41,279
+İşte serinin toplamı 1 bölü 2'dir diyeceğiz. Kosünüs 61 bölü 2. İşte çok basit bir soru aslında ama düşünmek gerekir, bilmek gerekir. Tamam mı arkadaşlar?
+
+133
+00:25:46,324 --> 00:25:47,884
+Sanırım problem yok.
+
+134
+00:25:48,963 --> 00:25:49,203
+Evet.
+
+135
+00:25:50,564 --> 00:25:53,484
+Şimdi gelelim kuvvet serilerimize.
+
+136
+00:25:54,423 --> 00:25:56,084
+Böyle bir kuvvet serisi verilmiş.
+
+137
+00:25:56,084 --> 00:26:10,564
+Toplam n eşitli birden sonsuza kadar eksi 1 üzeri n, x eksi 3 üzeri n bölü 2 üzeri n, çarpı 3. kökten n kare artı 5 kuvvet serisi hangi x değerleri için?
+
+138
+00:26:10,960 --> 00:26:22,460
+Mutlak yakınsak, şartlı yakınsak, ıraksak olur diyoruz. Yani kuvvet serisini özetlemek için her üçünü de burada irdeleyelim daha doğrusu. Bir de hatırlamak istelim.
+
+139
+00:26:22,799 --> 00:26:28,120
+Şimdi kuvvet serisinin yakınsaklık aralığını nasıl bulurduk? Oran kuralını uygulayarak değil mi?
+
+140
+00:26:28,980 --> 00:26:46,500
+Yani şöyle derdik, limit en sonsuza giderken, bunun eninci teriminin tamamını UN ile göstermiş olursam, ne diyordum? Oran testi, UN artı bir bölü, UN mutlak değer içinde. O halde bunu bulmaya çalışalım. Limit en sonsuza giderken,
+
+141
+00:26:46,963 --> 00:27:13,903
+un artı 1 oluşturuyorum. Bakın, şu tamamına un demiş oldum. Verilen serinin en ince terimini un ile göstermiş oldum. Eksi 1 üzeri n artı 1 dedim. Çarpı x eksi 3 üzeri n artı 1 bölü 2 üzeri n artı 1, 3. kökten n artı 1'in karesi artı 5 bölü un diyecektim değil mi arkadaşlar? Burada bunu bir satır eksik yazarak, tert çevirerek yazmış olduk.
+
+142
+00:27:14,355 --> 00:27:24,815
+Bölü bu gelecekti. Tert çevirdiğimde 2 üzeri n çarpı 3. kökten n kare artı 5 bölü eksi 1 üzeri n çarpı x eksi 3 üzeri n.
+
+143
+00:27:25,415 --> 00:27:34,155
+Tamam bir satır eksik yazarak. Şimdi burada amaç dikkatlice sadeleştirmek. 2 üzeri n'leri düşünürsek gider ne kalır? Bu da 2 kalır.
+
+144
+00:27:35,075 --> 00:27:37,215
+Şunlar kalacak zaten.
+
+145
+00:27:37,844 --> 00:27:52,703
+x-3 üzeri n ile x-3 üzeri n gider, x-3 kalır. Bir de şuradan, x-1 üzeri n'lerim gitsin, x-1 zaten mutlak değeri de düşünürsem o artı olur. Yani sonuçta...
+
+146
+00:27:52,703 --> 00:28:08,923
+Limit en sonsuza giderken, 1 bölü 2 kaldı. Şunlara dokunmadım, aynen aldık. Bakın, 3. kökten n kare artı 5 bölü, 3. kökten n artı 1'in karesi artı 5. Bir de ne kaldı? Mutlak değer içinde x-3'ümüz kalmıştı. Şu.
+
+147
+00:28:09,364 --> 00:28:22,284
+İşte şunu düzenledik dikkatlice. Verilerimiz bu. Şimdi en sonsuza giderken, şu 1 bölü 2 tamam. Şuna dikkat ederseniz ne yapabilirim? En kare parantezini alırsam en üzeri 2 bölü 3 olur.
+
+148
+00:28:23,039 --> 00:28:42,299
+derecesi. Payda da aynı şekilde açarsan, en üzeri 2 bölü 3 olur. Yani dereceleri aynı olduğu için, sonsuza gittiğinde nedir? Kat sayılarının oranına eşittir. Yani sonuçta, 1 bölü 2 olacak bunun limiti arkadaşlar. Tamam mı? O halde, 1 bölü 2 diyorum, çarpı x eksi 3.
+
+149
+00:28:43,155 --> 00:28:54,915
+Bu ne olması gerekiyor? Oran kuralına göre yakınsak olmasını istiyordum. Birden küçük olmalı. Buraya dikkat ederiz. Öğrenciler burada hata yapıyor. Buraya kadar düzgün işlem yapar. Burada ne yapacağını şaşırır.
+
+150
+00:28:55,236 --> 00:29:02,736
+Bunun yakınsak olabilmesi için ne olması gerekir? Birden küçük olmalı diyoruz. Tamam mı? Bunu da düzenlersem ne olur?
+
+151
+00:29:03,276 --> 00:29:11,155
+X eksi 3 mutlak değer içinde küçük 2 olmalı. Mutlak değer özelliğini kullanırsak, eksi 2 ile artı 2 arasında olur.
+
+152
+00:29:11,155 --> 00:29:24,496
+X'i bulmaya çalışıyorum ya, her tarafı 3'e eklersem, 1 küçük X, küçük 5 olur. İşte seri diyeceğim ki, 1 ile 5 aralığında mutlak yapılsak. Tamam mı arkadaşlar?
+
+153
+00:29:24,980 --> 00:29:40,880
+Bakın bunu bu şekilde uzun uzun çözmeden de ben yakınsaklık yarı çapını bularak da gidebilirdim. Yani nasıl giderdim? Yakınsaklık yarı çapını şu x eksi 3'ü düşünmeden an dediğim ifade mutlak değer tabii olarak düşünüyorum.
+
+154
+00:29:40,880 --> 00:29:52,980
+Bir bölü 2 üzeri n çarpı üçüncü kökten n kare artı 5'i alarak an artı bir bölü an den limitini bulurdum. Ne bulurdum orada? Yani l dersem limit.
+
+155
+00:29:52,980 --> 00:29:59,539
+bir bölü 2 bulmuş olacaktım. Yakınsaklık yarı çapıda neye eşit olacaktı? Bir bölü neyi oradan
+
+156
+00:30:00,000 --> 00:30:28,000
+2 olarak bulmuş olacaktım. Yani sonuçta getirecektim. R'yi 2 bulduysam yakınsaklık yarı çapını, mutlak değer x-3 küçük 2 diyerek de bunu bulabilirdim. Ama kafanız karışıyorsa aynen uzun yoldan gidebileceksin. Evet, ne dedik? Sonuçta karar verdik. Seri 1 ile 5 aralığında mutlak yakınsaklık. Bir de bana neyi soruyor? Şartlı yakınsaklık, bir de ıraksaklığı soruyor. O zaman ne diyorduk? Seri uçaklık.
+
+157
+00:30:28,000 --> 00:30:46,440
+Kuşlarda da yakınsak olabilir. Bunu ne yapmam gerekiyor? Ayrı ayrı incelemem gerekiyor. Yani x birden olur, 5'ten olur. Önce yazdık zaten şuraya. 1 için ne yapıyoruz? Seriyi kontrol ediyoruz. Yani verilen şuradaki seriden x gördüğüm yere 1 yazarsam ne gelir? Bakın.
+
+158
+00:30:54,355 --> 00:31:22,355
+Şuradan görün isterseniz, bakın, yazdım. X gördüğüm yere 1'i yazıyorum. Nasıl bir seri çıkacak, onu kontrol etmeye çalışıyorum. Şurası eksi 1 üzeri n ya arkadaş. Eksi 2 üzeri n, eksi 1 üzeri n çarpı 2 üzeri n diye düşünüyorum. 2 üzeri n'ler gider. Eksi 1 üzeri 2 n olmaz mı? Eksi 1 üzeri 2 n de çifttir, yani pozitiftir. Onun için negatif ifadem gitmiş oldu. Sonuçta ne oldu? Bir bölü, üçüncü kökten n kare artı 5.
+
+159
+00:31:22,355 --> 00:31:50,355
+Yani karşıma pozitif terimli bir seri çıktı. Bunu da bildiğim testlerle test edebilirim. Burada neyi kullanmışım? Limit, mükayeseyi kullanmışım. Bakmışım, burada en uygun seçebileceğim seri ne olabilir? En üzeri 2 bölü 3'ü seçmiş olalım. Çünkü seçeceğim seri ya bir geometrik seri olacak, ya bir P serisi olacak, ya da harmonik seri. Çünkü özelliğini bilmem gerekiyor seçtiğim serinin. O zaman ne yapıyorum?
+
+160
+00:31:50,355 --> 00:31:56,216
+diyorum ki, bu verilen pozitif terimli seriyi test edebilmek için limit mukayeseyi kullanıyorum.
+
+161
+00:31:56,716 --> 00:32:01,175
+Yani bir tane seri seçmeliyim, özelliğini bildiğim. Onu da ne seçmiş oluyorum?
+
+162
+00:32:01,556 --> 00:32:07,056
+Birden sonsuza kadar bir bölü, en üzeri iki bölü üçü seçelim dedik.
+
+163
+00:32:07,336 --> 00:32:11,276
+Bu da benim bildiğim P serisidir. Tamam mı? En üzeri P şeklindeydi.
+
+164
+00:32:11,816 --> 00:32:18,216
+P nedir? İki bölü üçtür. Bu birden küçük. P serisi ne zaman yakınsaktı? Birden büyük olduğunda yakınsak.
+
+165
+00:32:18,355 --> 00:32:26,516
+Birden küçük eşit olduğunda da ıraksak olur. O zaman bu seri birden küçük olduğundan ıraksaktır. Biraz çıkmamış şurası.
+
+166
+00:32:27,056 --> 00:32:35,776
+Şimdi bakalım, ıraksak bir seri seçtim arkadaşlar. Limit mükayese de neydi? Limit en sonsuza giderken an bölü b'ye bakıyorum.
+
+167
+00:32:35,935 --> 00:32:42,816
+An dediğim benim şu pozitif terimli serimdir. B'ye de seçtiğim serim. Bu limit. Bakalım ne çıkacak?
+
+168
+00:32:43,763 --> 00:32:57,783
+Yerine yazıyorum bakın. Düzenlersek bunu, gene ne olur? Limit dereceleri aynı olduğuna göre kat sayılarının oranı eşit olacak burada uzatmadan. Yani limiti bir çıkara buradan arkadaşlar.
+
+169
+00:32:58,771 --> 00:33:08,911
+Buradan limit 1 çıktığına göre, limit mukayese testine göre bu ne oldu? Sonuç 0 sonsuzdan farklı olduğu için her iki seride aynı karakterdedir diyeceğim.
+
+170
+00:33:09,251 --> 00:33:18,411
+Bu halde benim seçtiğim seri ıraksak olduğundan şu verilen seride nedir? Iraksaktır diyeceğiz. Sonuç 0 ve sonsuzdan farklı çıktığı için.
+
+171
+00:33:18,932 --> 00:33:41,271
+O halde yazdık. Her iki seri aynı karakterdedir. Yani sonuçta şu pozitif terimli serimiz ne oldu? Raksak oldu. Yani bir de eşitlik yok. Çünkü uç noktasında raksak çıktı. Aynı şekilde 5 için bakacağım. Gene yukarıdaki serimiz şuydu bakın. Şurada x yerine 5 yazıyorum. Ne olur?
+
+172
+00:33:42,708 --> 00:34:10,708
+2 üzeri n kalır, eksi 1 üzeri n'im duruyordu. Paydasını aynen yazdım. 2 üzeri n'ler gitti. Karşımıza eksi 1 üzeri n çarpı 1 bölü 3. kökten n'kar artı 5. Bu da benim bildiğim alternat edildi mi? İşaretleri artı eksi şeklinde gittiği için bu tip serilere biz alternat edildik. Bunları nasıl test ederdik? Her terim mutlak değerce azalıyor veya sabit kalıyor mu diye bakardık. En son size giderken en ince terim...
+
+173
+00:34:10,708 --> 00:34:18,908
+serilerin de sıfıra gidiyorsa seri yakınsaklık. Ama şartlı mıdır, mutlak mıdır diye baktığımızda da ne yapardık? Mutlak değerlerini alarak kontrol ederdik.
+
+174
+00:34:19,448 --> 00:34:22,347
+Onu da bakın şöyle parantez için hatırlatmak için yazdım.
+
+175
+00:34:22,948 --> 00:34:28,228
+A-terne seri terimi diyorum ki her terimi mutlak değerce azalıyor veya sabit kalıyorsa.
+
+176
+00:34:28,387 --> 00:34:38,688
+Yani diyelim ki şu benim A-terne serimin eninci terimini UN olarak gösterirsem, UN artı bir mutlak değer küçük UN midir diye bakıyorum.
+
+177
+00:34:38,708 --> 00:34:43,448
+İkinci durumda limit en sonsuza giderken, bu en sıfır mı?
+
+178
+00:34:44,211 --> 00:35:08,172
+Her iki şart da sağlanıyorsa seri yakınsaktır. Yakınsaklık için yeterli benim için. Ama şartlı mıdır, mutlak mıdır diye sorduğumda, üçüncü bir şıkta ne yapıyoruz? Mutlak değerlerinden oluşan seriye bakardık. Mutlak değerlerinden oluşan seri yakınsak ise seri mutlak yakınsak, ıraksaksa şartlı yakınsaktır diyorduk. Bu kadar. Alternatif seri şu.
+
+179
+00:35:08,884 --> 00:35:32,483
+Şimdi bakalım, bizim yukarıdaki şu alternatik seri test ediyoruz. Eninci teri mutlak değerini düşünürsek, şu değil mi? Pozitif zaten. Buradan da dikkat ederseniz, her teri mutlak değerce azalıyor. Birinci şık tamam. Limit en sonsuza gittiğinde bir bölü, OAN'ın limitine bakıyorum. Bu da gerçekten sıfırdır. Seri yakınsak.
+
+180
+00:35:32,947 --> 00:35:59,668
+Gene demin de dediğim gibi mutlak mı, şartlı mıdır bakmak için ne yapıyorum? Her terimi mutlak değerlerine alıyorum. O da ne olur? Pozitif terimli seri çıkar karşıma. Yukarıda inceledik, bunun uraksak olduğunu görmüştük. O zaman ne diyorum? Alternat seri şarta bağlı yakınsaktır. Yani şartlı yakınsaktır. Baktık, inceledik. O zaman şartlı yakınsak da olsa eşitlik var. Yani x küçük eşit 5 diyeceğiz.
+
+181
+00:36:00,947 --> 00:36:12,268
+Sonuçta yorum yapmak istersek, ne olmuştu? A şıkkı için cevap, seri 1 ile 5 aralığında mutlak yakınsak, şartlıyı sormuştu, 5'te şartlı yakınsak.
+
+182
+00:36:12,559 --> 00:36:18,960
+Real sayılardan 1 açık, 5 kapalı da, bu aralıkta da ıraksak olacaktır diyoruz.
+
+183
+00:36:19,219 --> 00:36:25,559
+İşte verilen bir kuvvet serisini, yani konuyu tekrar etmiş olduk burada hatırlatmak açısından.
+
+184
+00:36:25,719 --> 00:36:31,299
+Tamam mı arkadaşlar? Oran kuralıyla bakıyoruz, uçlarını da inceliyoruz, ona göre karar veriyoruz.
+
+185
+00:36:31,539 --> 00:36:32,679
+Var mı takıldığımız bir yer?
+
+186
+00:36:36,307 --> 00:36:37,608
+Evet, devam edelim.
+
+187
+00:36:39,608 --> 00:36:43,347
+Bir de bizim meşhur böyle bir geometrik serimiz vardı hatırlarsanız.
+
+188
+00:36:43,347 --> 00:36:49,768
+1 bölü 1-x ya da toplam n eşittir sıfırdan sonsuza kadar x üzeri n.
+
+189
+00:36:50,108 --> 00:36:54,548
+Bunu da yakınsaklık aralı eksi 1 ile artı 1 serisinden yararlanarak.
+
+190
+00:36:54,927 --> 00:36:59,507
+fx eşittir, arktanjant x fonksiyonunun kuvvet serisini bulunuz.
+
+191
+00:37:00,087 --> 00:37:10,827
+Bulduğunuz bu seriden yararlanarak, gx eşittir, kök x çarpı, arktanjant, kök x fonksiyonunun, Matlören serisi veya Taylor serisi de diyorduk.
+
+192
+00:37:12,287 --> 00:37:17,047
+Ve bu serinin genel terimiyle geçerli olduğu aralığı bulunuz.
+
+193
+00:37:22,483 --> 00:37:30,244
+kuvvet serisini bulacağım. Oradan da böyle bir fonksiyonun seri açılımı nedir, onu bulmaya çalışacağız.
+
+194
+00:37:31,083 --> 00:37:43,664
+O zaman hatırlarsanız kuvvet serileri ne yapılabilirdi? İntegralini alabilirdik, türevini alabilirdik, herhangi bir sabitle çarpabilirdik.
+
+195
+00:37:44,043 --> 00:37:48,224
+Onları konuşmuştuk. Onlardan yararlanarak bulmaya çalışalım.
+
+196
+00:37:48,596 --> 00:38:15,395
+Elimizdeki verimiz şu, 1 bölü 1 eksi x seri açılımı dedik. Buradan arktan jantı bulabilmek için ne yapalım? Arktan jantın türevi neydi? 1 bölü 1 artı x kareydi değil mi? O zaman ne yapıyorum? Şu verilen seride x yerine eksi t kare yazalım. Yazabiliriz. Gene yakınsaklık aralığımızda değişmez. Yazıyorum 1 bölü 1 artı t'nin karesi.
+
+197
+00:38:15,891 --> 00:38:39,931
+Ne olur? Yerine yazarsak, eksi t'nin karesi diyeceğim şuraya. Eksi 1 üzeri n'e ayıralım. t üzeri 2. Bunu da yine yakınsaklık aralığı budur diyeceğiz. Tamam mı? Şimdi ne yapacağız? İntegralini almam gerekir değil mi? O halde verilen, bulduğum şu ifadenin, sıfırdan x'e kadar integralini alalım.
+
+198
+00:38:41,556 --> 00:38:48,256
+integral, 0'dan x'e kadar, dt bölü 1 artı t kare, her iki tarafın integralini alıyorum bakın, şu.
+
+199
+00:38:49,316 --> 00:38:50,735
+Sol taraf bana neyi verecek?
+
+200
+00:38:51,235 --> 00:38:54,456
+Arktanjant t'yi verir, sınırlarım 0'dan x'e kadar.
+
+201
+00:38:54,896 --> 00:39:07,376
+Sağ tarafa bakarsak, toplam integralden bağımsız dışına attım. Eksi 1 üzeri n'i dışına atıyorum. T üzeri 2'nin de integrali ne olur? T üzeri 2'n artı 1 bölü, 2'n artı 1 sınırım 0'dan x'e kadar.
+
+202
+00:39:08,016 --> 00:39:20,896
+Şimdi şuradan, üst sınır ne olur? Arktanjant x olur. Eksi arktanjant 0. Arktanjant 0 nedir? Tanjant 0 olan açı 0'dır. Yani bu sonuçta sol taraf arktanjant x'e eşit çıktı.
+
+203
+00:39:22,896 --> 00:39:49,396
+T gördüğüm yere üst sınırı yazıyorum. X üzeri 2n artı 1 bölü 2n artı 1. Baştakiler aynen yaz. Alt sınırda ne olur? 0 olduğu için gelmez. Yani sonuçta bu şekilde bulurum. Yakınsaklık aralığı da gene eksi 1 ile artı 1'dir diyeceğiz. Arhtanjant X'in seri açılımı budur. Zaten onu da vermiştik zaten Taylor Macbeth'in serilerini konuşurken. Şimdi buradan benden ne istiyor?
+
+204
+00:39:50,291 --> 00:39:56,891
+Bunun seri açılımından yararlanarak, kök x çarpı, arktanjant kök x'i soruyor arkadaşlar.
+
+205
+00:39:58,171 --> 00:40:02,631
+O zaman ne yapabilirim? Önce arktanjantta x gördüğüm yere kök x yazalım.
+
+206
+00:40:02,771 --> 00:40:06,911
+Gene benim yakınsaklık aralığımı değiştirmez diyorum, yazabilirim.
+
+207
+00:40:07,151 --> 00:40:14,131
+Yazıyorum bakın, toplam n eşittir sıfırdan sonsuza kadar, eksi 1 üzeri n diyorum, tamam mı?
+
+208
+00:40:14,131 --> 00:40:16,131
+Şurada kök x'i yazarsam,
+
+209
+00:40:17,523 --> 00:40:31,043
+x üzeri n kalır, bir de kök x olur değil mi? Şöyle yazmış olalım. Bölü 2n artı 1. x yerine kök x yazdık. Kök x negatif değer olamayacağına göre 0 ile 1 arasında olur.
+
+210
+00:40:31,891 --> 00:40:53,651
+Onu da yazdık. Bir de ne lazım? Kök x ile çarpmamız gerek. Çünkü kök x, art tanjant kök x'i soruyor bana. Her tarafı kök x ile çarparsak, ne olur? Şuradan, eksi bir üzere, eni unutmuşuz yazmayı arkadaşlar. Şuraya, kök x ile çarparsam, şu da gider. x üzeri en artı bir bölü, iki en artı bir kalır.
+
+211
+00:40:54,356 --> 00:41:01,396
+Tamam, şu eni unutulmuş. Yakınsaklık aralığımızda ne olur? Sıfırla birdir diyeceğiz.
+
+212
+00:41:02,116 --> 00:41:11,076
+İşte, yani sonuçta, bakın, şu 1 bölü 1 eksi x'i kullanarak, istenen fonksiyonun seri açılımını bulmuş olduk.
+
+213
+00:41:12,176 --> 00:41:12,776
+Anlaşıldı mı?
+
+214
+00:41:15,176 --> 00:41:16,396
+Peki, bir de,
+
+215
+00:41:17,836 --> 00:41:19,436
+integral'e bakalım şöyle.
+
+216
+00:41:20,656 --> 00:41:21,596
+Lx diyor.
+
+217
+00:41:22,675 --> 00:41:31,475
+integral 0'dan x'e kadar, kısmi t kare bt fonksiyonunun, silik çıkmış, Maclaurin serisini bulunuz.
+
+218
+00:41:33,255 --> 00:41:35,596
+Yani, şunun integralini ben zaten...
+
+219
+00:41:35,699 --> 00:41:56,339
+alamam bildiğim yöntemlerle. Ancak serilerden faydalanarak bunu integral ederseniz, hatırlarsanız, Maclaurin, Taylor serilerini integralde, deli middede kolayca kullanabilirdik. Onun için de buradan onu kullanmamızı istiyor. Sonra da diyor ki, serinin ilk iki terimini kullanarak,
+
+220
+00:41:56,947 --> 00:42:10,628
+İşte L0.1 değerini yaklaşık olarak hesaplayınız. O zaman benim burada cos x'in seri açılımını bilmem gerekir. Yani yukarıda da demin yazmıştık hatırlarsanız.
+
+221
+00:42:10,748 --> 00:42:19,508
+cos x'in seri açılımı toplam sıfırdan sonsuza kadar, eksi bir üzeri n çarpı x üzeri iki n bölü, iki n faktörü geldi.
+
+222
+00:42:20,371 --> 00:42:25,131
+Bu da her x real değer için, bu seri, yakınsaktır.
+
+223
+00:42:25,568 --> 00:42:53,568
+Yakınsak da değerde diyoruz, kosünüs x'tir. Tamam, seri açılımı buldu, kosünüs x'i. Bizden neyi soruyor arkadaşlar? Kosünüs, dedik ki böyle bir integrali hesaplayamıyoruz, seri açılımdan yararlanarak hesaplayalım diyoruz. O zaman kosünüs x'i seriye açtıysam bu şekilde, t kareyi de açarım. Yani ne yaparım? x gördüğüm yere t kare yazarım. Yazarsam x gördüğümüz yere t kare, kosünüs t kare toplamıyorum.
+
+224
+00:42:53,568 --> 00:43:03,888
+Toplam sıfırdan sonsuza kadar, eksi bir üzeri n, burada ne yapayım? x kare yerine t kare yazarsam, t üzeri 4n bölü 2n faktörü yanı olur.
+
+225
+00:43:05,088 --> 00:43:20,668
+Evet, şimdi gelelim sorumuza. Lx diyoruz, yerine yazıyorum, integral sıfırdan x'e kadar, toplam n eşittir sıfırdan sonsuza kadar, eksi bir üzeri n, çarpı t üzeri 4n bölü 2n faktörü yan dt.
+
+226
+00:43:21,139 --> 00:43:38,139
+Burada zaten bir iki terimini kullanacağımız için toplam olarak da buraya yazmasam olurdu. Birkaç terimini de yazsam yeterlidir. Ama görmeniz için ben hepsini toptan yazmış oldum. O halde ne yapıyorum? Bunun integralini alacağım şu ifadeni. Toplam integralden bağımsız dışına attım.
+
+227
+00:43:38,612 --> 00:43:49,431
+t üzeri 4, n'in integralinde ne olur? t üzeri 4, n artı 1 bölü, 4n artı 1, bir de çarpanı ne var? 2n faktörü, yani sınırımız sıfırdan x'e kadar.
+
+228
+00:43:50,211 --> 00:43:57,371
+3 sınır, eksi az sınır, az sınır sıfır olduğu için gelmez. Sadece t gördüğüm yere x yazmalıyım değil mi?
+
+229
+00:43:58,251 --> 00:44:05,532
+O halde lx eşittir, toplam sıfırdan sonsuza kadar eksi 1 üzeri n dedik, bölü 2n faktörü.
+
+230
+00:44:06,132 --> 00:44:28,192
+x üzeri 4n artı 1 bölü, 4n artı 1. Birkaç terimini de yazmak istiyorum. Çünkü ilk iki terimini kullanarak l 0.1'i hesapla diyor. O zaman açarsak, birinci terim en yerine 0'ı yazarsa, 0!1'dir. Şu da pozitif olacağı için ne gelir? x.
+
+231
+00:44:29,076 --> 00:44:53,576
+bölü 1, x. İkinci terimi bulmak için n'e 1 yazıyorum. Eksi olacak işaretim. 1 bölü 2 gelir. x üzeri 5 bölü 5. Bu şekilde gider. Bir tane daha yazmak istersen 2 vermek zorundasın. İşaretim artı gelir. x üzeri 9 gelir. Bölü 9. Buradan da 4 faktör eyleye yazarsın. Tamam, böyle gider.
+
+232
+00:44:54,164 --> 00:45:01,924
+Bizden ne istiyordu? L 0.1'i bulduydu. Yani x gördüğüm yere 0.1 ya da 1 bölü 10 yazmalıyım.
+
+233
+00:45:02,364 --> 00:45:12,124
+Onu da yazarsam bakın, 1 bölü 10, eksi 1 bölü 2 çarpı, 1 bölü 10'un 5. kuvveti çarpı 5. Bu da düzenlenirse işte,
+
+234
+00:45:12,947 --> 00:45:25,367
+Bu şekilde 0.09 şeklinde giden yaklaşık bir değer buluruz. Anlaşıldı mı arkadaşlar? Bakın serileri integralde de kullanabiliriz diyoruz.
+
+235
+00:45:26,827 --> 00:45:36,447
+Evet, şimdi de limit de kullanalım. Limitini diyor, seri açılımından yararlanarak hesaplayınız.
+
+236
+00:45:38,132 --> 00:46:06,132
+Dikkat edersek, x sıfıra giderken, pay nereye gitti? Sıfıra, pay da da sıfıra gitti. Bu sıfır bölü sıfır belirsizliği var. Diyoruz ki, seri açılımdan yararlanarak bunu bulmaya çalışalım. Burada neyi seri açmam gerekiyor? Sadece, e üzeri x karenin seri açılımını bilmem gerekir. Diğerlerini yapacağım bir şey yok zaten. O halde, e üzeri x karenin de seri açılımını nasıl bulmam gerekir? E üzeri x'i seri açmasını biliyorum. Oradan yararlanarak.
+
+237
+00:46:06,132 --> 00:46:07,451
+işaretle olarak bulacağım.
+
+238
+00:46:11,027 --> 00:46:22,887
+Evet, şimdi şurada gene parantez içinde ifadeyi hatırlatmak için e üzeri x'in seri açılımı neydi? Şu, dün 1 artı x artı nokta nokta x'e n bölü, n faktör geldi demiştik.
+
+239
+00:46:24,347 --> 00:46:37,647
+Burada e üzeri x kareye ihtiyacım var. x gördüğüm yere x kare diye yazarım. Onu da yazdım şu şekilde. Döndüm soruya bakın. Bu dedik ki 0 bölü 0 belirsizliği var.
+
+240
+00:46:38,260 --> 00:46:56,700
+Limit x0'a giderken, 1'i yazdım, x2'yi yazdım, eksi aç parantez, e üzeri x2'nin seri açılımı neydi? 1, x2, x'e 4 bölü 2 faktörü, yani nokta nokta devam eder. Limit'te hepsini çok yazmaya gerek yok. Bölü, x2.
+
+241
+00:46:56,700 --> 00:47:03,900
+Şimdi, paya dikkat edersek, parantez açtığımda 1'ler gider, x2'ler de gider.
+
+242
+00:47:04,532 --> 00:47:17,072
+Geriye ne kalır? Eksi parantezinde x üzeri 4 bölü 2 faktörü yer. x üzeri bir sonrasında yazarsam 6 bölü 3 faktörü yer. Nokta nokta gider. Payda da nedir? x kare kaldı aynen.
+
+243
+00:47:17,612 --> 00:47:25,872
+E ne yaparım? Payı x kare parantezini alarak sadeleştirirsem, gene eksi parantezinde x kare bölü 2 faktörü yer.
+
+244
+00:47:26,271 --> 00:47:37,831
+x üzeri 4 bölü 3 faktoriyel bu şekilde devam eder. Şimdi limite geçersem, ne olur x sıfıra giderken, bütün terimler sıfıra gideceği için, sonuç sıfırdır diyeceğiz.
+
+245
+00:47:38,331 --> 00:47:44,371
+Tamam mı arkadaşlar? Sadece yüzeleksin seri açımını bilmem yeterli.
+
+246
+00:47:47,131 --> 00:47:47,931
+Evet.
+
+247
+00:47:50,011 --> 00:47:52,651
+Buna bir bakalım. Gene aynı.
+
+248
+00:47:53,844 --> 00:47:57,704
+Limitini seri açılım yardımıyla hesaplayınız diyor bana.
+
+249
+00:47:58,704 --> 00:48:03,344
+Buraya dikkat ederseniz burada ne var? Sonsuz eksi, sonsuz belirsizliği var değil mi?
+
+250
+00:48:04,344 --> 00:48:07,403
+Evet, 1-2 dakika bekliyorum. Siz bulmaya çalışın bakalım.
+
+251
+00:48:08,103 --> 00:48:14,563
+Burada neyi bilmek gerekiyor? Bir payda eşitlerseniz, arktanjant x'in seri açılımını bilmem gerekiyor.
+
+252
+00:48:14,563 --> 00:48:20,463
+Onu da yukarıda vermiştik zaten değil mi? Orada x yerine x kareyi yazarak seriyi açmış olursunuz.
+
+253
+00:48:20,916 --> 00:48:23,236
+Hadi bir dakika bekliyorum, ne yapabilirsiniz?
+
+254
+00:48:59,027 --> 00:49:16,168
+Bir bakalım. Dedik ki sonsuz, eksonsuz belirsizliği var. Paydayı eşitlersek, x'ler birbirini götürür. Paydada ne kaldı? x çarpı, x artı, artı anjan, x'in kalesi kaldı. Değil mi şu? Dediğim gibi.
+
+255
+00:49:16,851 --> 00:49:36,971
+Ark tanjant x'in seri açılımına ihtiyacımız var. Onu da biliyoruz. Buraya doğrudan yazdık arkadaşlar. Ya şöyle açık yazarız ya da bu şekilde yazarız. Ark tanjant x kareyi yazabilmek için x gördüğüm yere x kare yazıyorum. Ne olur x kare eksi x'leri 6 bölü 3 bu şekilde devam eder.
+
+256
+00:49:43,219 --> 00:49:58,859
+x kare, eksi, x üzeri 6 bölü 3 şeklinde devam eder. Paydasını düzenliyorum bakın. x kare açtığımda, değil mi? x çarpı artan jantiksi kareyi yazıyorum. Şuraya yazdım aynen.
+
+257
+00:50:00,000 --> 00:50:18,159
+Dikkat edelim, giden kalan var mı? Payı ne yaparım? X kare parantezini alarak yazarım. Payı 1, x, x üzeri 4 bölü 3, artı x üzeri 8 bölü 5, devam eder. Paydayı da ne yapabilirim? X kare parantezini alarak yazabilirim.
+
+258
+00:50:18,559 --> 00:50:38,719
+Şuradan 1 diyeceğim. Şuradan x geldi değil mi? x kare parantezini alıyorum. Eksi x üzeri 5 bölü 3. Böyle devam etsin. x kareler birbirini götürür. x sıfıra giderken limite geçersem artık şu terimlerin hepsi sıfıra gidecektir. Sonuç ne olur? 1 bölü 1'den 1 olur.
+
+259
+00:50:40,099 --> 00:50:45,920
+Tamam mı arkadaşlar? Sadece seri açılımını yazmak gerekiyor.
+
+260
+00:50:46,643 --> 00:50:50,784
+Evet, biraz da kutupsal koordinatlara bakalım.
+
+261
+00:50:53,264 --> 00:50:55,204
+Buraya kadar var mı takıldığınız bir yer arkadaşlar?
+
+262
+00:50:58,164 --> 00:51:03,244
+Evet, bakın size örnekler de yapmıştık ders anlatırken.
+
+263
+00:51:03,344 --> 00:51:06,164
+O örneklere de bakın, konuları hatırlayabilmek için.
+
+264
+00:51:06,943 --> 00:51:09,684
+Günümüzde bir haftadan fazla bir tatiliniz var.
+
+265
+00:51:10,768 --> 00:51:30,128
+çalışabilirsiniz. Nasılsa sınavlarınız da bitti diye düşünüyorum. Evet. R eşittir 1 artı sinüs teta kardiyodinin uzunluğunu hesaplayınız. Ben konuyu hatırlatmak için kutupsal bir eğrinin, işte R eşittir F teta şeklinde verilmiş kutupsal bir eğrinin,
+
+266
+00:51:30,996 --> 00:51:58,996
+grafiğini ya da şeklini nasıl çizeriz, onu hatırlatmak için önce bu eğriyi çizelim dedim. Tamam mı arkadaşlar? Konuyu hatırlatmak için. Yoksa çizmek zorunda değilsin hesaplarken. Ama görmek lazım çizmeden de göremeyiz. Evet, 1 artı sinüs teta eğrisini çizelim diyoruz. Böyle eğrileri, kutupsal eğriyi çizerken ne yapıyorduk? Periyoduna bakardık. Bunun periyodu nedir? 2P'dir. İşte 2P periyodlu bir...
+
+267
+00:51:58,996 --> 00:52:06,755
+Fonksiyondur ama inceleme aralığını yani hangi aralıkta çizeceğimi görmek için ne yapıyorduk? 3 tane simetri vermiştik.
+
+268
+00:52:07,255 --> 00:52:12,056
+Birinci simetrimiz neydi? Theta yerine eksi theta yazdığımızda.
+
+269
+00:52:12,628 --> 00:52:33,168
+Bakalım ne oluyor? Birinci simetri böyle incelerdi. Kitheta yerine eksi teta yazıyorum. Ne olur? Sinüs eksitatı eksi olur. Bir eksi sinüs teta. Bu fonksiyonun kendisine eşit çıkmadığı, ters işaretlisine de eşit çıkmadığı için ne diyorum? Simetri yok diyorum. Eğer kendisine eşit çıksaydı işte ne diyecektim?
+
+270
+00:52:33,599 --> 00:52:53,739
+fonksiyon, o x'e göre simetrisi olacaktı. Yani bu birinci simetri olsaydı, ne diyorduk? Theta'nın pozitif değerleri için inceleyecektik. Yani o zaman bu 2P periyod ise ben ne yaparım? Bunu 0P'de çizerim. Sonra simetriyi de bularak tamamında çizmiş olacaktım. Birinci simetrimiz olmadığı için atıyorum.
+
+271
+00:52:54,143 --> 00:53:22,143
+İkinci simetriye nasıl bakıyorduk? Theta yerine pi eksi theta yazıyorum. Getirip şurada theta yerine pi eksi theta yazarsam, 1 artı, şunu açalım bakın, sinüs pi kosünüs theta olur değil mi? Eksi sinüs theta kosünüs pi. Sinüs pi 0 olduğu için bu terim gitti. Buradan da kosünüs pi eksi 1 olursa, bu ne olur? 1 artı sinüs theta olur. Yani verilen fonksiyonun kendisine eşit çıktı. O halde diyoruz.
+
+272
+00:53:22,143 --> 00:53:36,063
+Bakın simetriyi de görmek için nasıl anlıyorduk. Diyelim ki bu kutup noktamız olurdu. Kutupsal eksen, burada bir P noktası, R theta olsun. Açımız theta. Dedik ki theta yerine pi eksi theta yazdım.
+
+273
+00:53:38,000 --> 00:53:59,000
+Açım şuraya gelir. Pi eksi teta açısı. Ne oldu? Kendisine eşit çıktığına göre nokta şuraya geldi. Çünkü teta'nın pozitif değerleri saatin tersi yönde dönen açılardı. Yani pi eksi teta'yı çiziyorum. Kendisine eşit çıktığı için noktam şuraya geldi. O halde ne diyorum? Pi bölü 2'ye göre simetri vardır. O zaman...
+
+274
+00:53:59,476 --> 00:54:17,135
+İkinci simetri özelliğimizden dolayı inceleme aralığımız ne olurdu? Eksi pi bölü 2 ile artı pi bölü 2 olurdu. Ona göre çizerim. Pi bölü 2'ye göre de simetrini aldığımda tamamını çizmiş olacaktım. Üçüncü simetri özelliğimizde neydi? Teta yerine pi artı teta yazdım.
+
+275
+00:54:17,652 --> 00:54:22,012
+Yazıyorum şöyle, 1 artı sinüs pi artı teta diyorum.
+
+276
+00:54:22,572 --> 00:54:26,192
+Yine bunu düzenlersem, 1 eksi sinüs teta çıktı karşıma.
+
+277
+00:54:26,552 --> 00:54:32,812
+Bu verilen fonksiyonun kendisine de eşit çıkmadı, tersine de eşit çıkmadığı için, 3. simetrimiz de yok diyoruz.
+
+278
+00:54:32,892 --> 00:54:37,792
+O halde sadece 2. simetriden dolayı, inceleme aralığımı ne yapıyorum?
+
+279
+00:54:38,632 --> 00:54:41,912
+Eksi pi bölü 2 artı pi bölü 2 aralığında yapacağız.
+
+280
+00:54:42,272 --> 00:54:42,731
+Tamam mı?
+
+281
+00:54:42,731 --> 00:54:44,211
+Sonra ne yapıyorduk?
+
+282
+00:54:44,480 --> 00:54:48,660
+Değişimi, fonksiyon değişimini inceleyebilmek için türevine bakmam gerekiyordu.
+
+283
+00:54:49,660 --> 00:54:55,140
+Türevini alırsak, fonksiyonumuz neydi arkadaşlar? Şuydu. 1 artı sinüs tetaydı.
+
+284
+00:54:55,519 --> 00:55:00,140
+Onun da türevi ne olur? Kusinüs tetaydı. Türevi sıfır yapan değer bu aralıkta.
+
+285
+00:55:00,720 --> 00:55:04,280
+Eksi pi bölü 2 ile artı pi bölü 2'dir diyoruz. Tamam mı?
+
+286
+00:55:04,820 --> 00:55:09,680
+Sonra fonksiyonu, yani re'yi sıfır yapan teta değerlerini araştırıyoruz.
+
+287
+00:55:10,224 --> 00:55:24,144
+O zaman buradan ne olur? Sinüs teta 0 olur. Pardon, eksi 1 yapan değeri bulmaya çalışıyorum. O da ne olur? Eksi 1 bölü 2 olur aralıkta. Birkaç teta değeri de hesaplayabiliriz. Problem değil.
+
+288
+00:55:24,596 --> 00:55:41,976
+Tamam mı? Şimdi ne yapıyoruz? Şöyle bir tablo düzenliyorduk. Theta değerimiz diyorduk. Aralığımız eksi pi bölü 2, artı pi bölü 2 idi. Türevin işareti ve R değerleri. Araya hiçbir boşluk yok. Bütün açılarımız var arkadaşlar. Ben bir tane kolay olsun diye sıfırı yazdım buraya.
+
+289
+00:55:42,463 --> 00:55:55,104
+O halde ne yapıyorduk? Türevi sıfır yapan değerlerimiz eksi pi bölü 2 artı pi bölü 2'dir. Bu aralıkta türevin işareti nedir? Hep pozitiftir değil mi? Birinci ve dördüncü bölgede kosmüsün değeri pozitiftir.
+
+290
+00:55:56,384 --> 00:56:09,903
+İşaretlerimize bakmadan değerlerimizi de bulalım. Theta eksi pi bölü 2 iken, re ne olur arkadaşlar? Re neredeydi? Şu. Sıfır olur değil mi?
+
+291
+00:56:10,835 --> 00:56:20,835
+teta sıfırken, değerim 1 olur. Orada yerine yazıyorum, bakın. Şurada. Sıfırken 1 olur. Pi bölü 2 iken de 2 olur. Şu.
+
+292
+00:56:21,331 --> 00:56:29,452
+O halde bakın, sıfırdan 1'e artarak gitmiş, 1'den 2'ye artarak gitmiş. Türevin işareti de hep pozitif olduğuna göre doğru gidiyoruz.
+
+293
+00:56:29,632 --> 00:56:33,532
+Yani işaretlerle oklar birbirini sağlamış oldu.
+
+294
+00:56:33,811 --> 00:56:39,311
+Şimdi ne yapıyoruz? Çizerken de teta ve r değerlerine bakarak eğrimizi çizmeye çalışıyoruz.
+
+295
+00:56:39,311 --> 00:56:49,331
+O halde geliyoruz, kutup noktası, o noktası, kutupsal eksen diyoruz, x dediğimiz. Bu bizim pi bölü 2 açımızdı. Bu da eksi pi bölü 2 açımız, bu da pi.
+
+296
+00:56:49,331 --> 00:57:11,012
+Şimdi çizerken nasıl düşünüyoruz? Tete eksi pi bölü 2 iken, re'nin boyu 0'mış. Yani şurada eksi pi bölü 2 iken, şuradayım. Sonra açıyı biraz daha artırdığımda, re'nin boyu artmış. İşte artmış, işte 0, diyelim 0, 5'e geldi. Ta ki açı 0 olduğunda, 1'e gelecek. Yani şuradayım, bakın.
+
+297
+00:57:11,503 --> 00:57:39,483
+Geldim 1'e. Sonra açıyı biraz daha arttırdım. İşte diyelim 45 derece yaptım, 1.5 oldu şeklinde hiçbir boşluk yok. Ta ki pi bölü 2 olduğunda açımız değerimiz nedir? 2'dir. Şuradayım. Bakın bütün açıları çizmiş oldum. Şöyle geldim. İşte eksi pi bölü 2 ile pi bölü 2 arasında eğriyi çizmiş oldum. Neye göre simetrisi vardı? Pi bölü 2'ye göre simetrisi vardı. Bunun tamamını da şöyle.
+
+298
+00:57:39,503 --> 00:57:45,384
+Böyle simetrisinde çizdiğimde bu nedir? Bir kardiyot eğrisidir. Tamam mı arkadaşlar? Çizmiş olduk.
+
+299
+00:57:46,664 --> 00:57:55,983
+Sorumuzun dışına yoksa sana uzunluğu sorduğuna göre bunu ezbere çizersin. Zaten çok şekilleri verdik kardiyotların durumuna göre.
+
+300
+00:57:56,467 --> 00:58:02,347
+O halde, bize sorumuza tekrar dönelim. Kardiyodinin uzunluğunu hesaplayalım.
+
+301
+00:58:02,647 --> 00:58:06,748
+Biz uzunluğu hesaplarken formülümüz neydi? L dedik uzunluğa.
+
+302
+00:58:06,748 --> 00:58:18,748
+İşte verilen alfa beta aralığındaki uzunluğu hesaplarken, kök içinde R'nin karesi artı, türevinin karesi, bin kare kökü, D tetabiye hesaplardık.
+
+303
+00:58:19,447 --> 00:58:23,768
+Ya da şöyle açık yazabilirsiniz. Evet. Tamam mı arkadaşlar?
+
+304
+00:58:24,532 --> 00:58:34,892
+Bu. Burada simetri de var, dikkat ederseniz. Ne yaparım? Eksi pi bölüki ile artı pi bölüki arasında yarısını hesaplarız.
+
+305
+00:58:35,376 --> 00:59:03,376
+Kolaylık olsun diye. Şimdi önce biz şu kökün içindeki ifadeleri düzenleyelim. Yani R'nin türevine ihtiyacım var. Sonra onun karesini alacağım. Sonra R kareyle de toplayacağız. O zaman türevi neydi? Kosinüs teta idi. R kare artı R üstünün karesini düzenlersek R neydi? 1 artı sinüs teta idi. Onun karesi ne olur? 1 artı 2 sinüs teta artı sinüs kare teta. R üstü de neydi? Kosinüs.
+
+306
+00:59:03,376 --> 00:59:22,416
+kare. Buradan ne gelir? 2 yolu, karelerin toplamı. 2 parantezini alırsam, 1 artı sinüs teta olur. Burada, şu bazı özellikleri de vermek istedim. Biraz silih çıkmış ama, yani birinci bölgede sinüs teta neye eşit olur arkadaşlar? Kosinüs pi bölü 2 eksi teta'ya eşit olur. Değil mi şu?
+
+307
+00:59:23,956 --> 00:59:32,756
+O halde ben bunun yerine, bak 2'yi yazdım aynen, 1'e dokunmadım. Sinüs teta yerine, kosünüs pi bölü 2 eksi teta yazdım.
+
+308
+00:59:34,296 --> 00:59:40,156
+Bir de şunu bilmem gerekiyor, kosünüs ikisi yarım açı formüllerinden nasıl açmıştık hatırlarsanız.
+
+309
+00:59:40,456 --> 00:59:45,876
+Kosünüs kare bölü 2 eksi sinüs kare bölü 2. Onu da düzenlediğinde şu hale gelir.
+
+310
+00:59:48,947 --> 01:00:11,047
+x bölü 2'nin karesi, eksi 1. 1 artı kosünüs x'e ihtiyacım var, tamam mı? Şu, yani şuraya yazabilmek için. 1 artı kosünüs x'e ihtiyacım var. Onun yerine ne yazıyorum? 2 tane kosünüs x bölü 2'nin karesi, benim x dediğim ifade şu değil midir? Pi bölü 2 eksi tetadır. Yani pi bölü 2 eksi.
+
+311
+01:00:11,635 --> 01:00:36,655
+teta diye yazdık, şu sinüs tetanın yerine. Onun yerine ne geldi? Bakın şu 2 geldi. Kosünüs kare, x eksi 2 bölü 2 diyeceğim. Bizim şu ifademiz değil mi? Pi bölü 2. Şu. O halde bu şekilde yazarsam pi eksi 2 teta bölü 4. Bir de eksi birimiz var, şu.
+
+312
+01:00:37,172 --> 01:00:47,291
+Bu biriler birbirini götürür. Yani sonuçta şu ifadem 4 tane kosünüs kare pi eksi 2 teta bölü 4 eşit oldu.
+
+313
+01:00:48,492 --> 01:00:58,231
+Onu da getirip kökün içine yazarsam, sonuçta mutlak değer içinde 2 tane kosünüs pi eksi 2 teta bölü 4 eşit olur.
+
+314
+01:00:59,315 --> 01:01:10,995
+Şu sol taraf çıkmadı. Simetri kullandık. Yarısını aldık. Yani uzunluğun. L bölü 2 dedik. Ketamız eksi pi bölü 2'den artı pi bölü 2'ye kadar içine yazdık bunu.
+
+315
+01:01:11,475 --> 01:01:14,935
+Tamam mı arkadaşlar? Bunu da integralini alırsam artık.
+
+316
+01:01:15,987 --> 01:01:24,247
+Bu aralıkta pozitif olduğu için kosünüs mutlak değere de gerek yok. Aynen yazdık. 2'yi dışarı atarsan, bunun da integralini olacaktır.
+
+317
+01:01:24,347 --> 01:01:35,027
+Sinüs, pi eksisi 2 teta bölü 4 bölü 1 bölü 2 dersen, sonuçta üst sınır eksi alt sınırı yazarsanız, 4 çıkar arkadaşlar.
+
+318
+01:01:35,027 --> 01:01:43,747
+Şuradan, yani l eşittir, 8 diye bulmam gerekir. Şu son kısım baştakiler biraz çıkmadığı için gözükmüyor.
+
+319
+01:01:44,019 --> 01:01:51,719
+Yani şu işlemi istediğin şekilde hesaplayabilirsin. Yani biraz uzattık biz arkadaşlar. Tamam mı? Yani uzunluk formülümüz buydu.
+
+320
+01:01:53,360 --> 01:01:57,619
+Evet, devam edelim peki. Biraz da alanlara bakalım.
+
+321
+01:01:59,760 --> 01:02:01,420
+Evet, bir örneğimiz de şu.
+
+322
+01:02:02,324 --> 01:02:14,963
+R eşittir 3 kosünüs teta çemberinin dışında, R eşittir kök 2 artı kosünüs teta kardiyodinin içinde kalan alanı veren integrali yazınız. Bunlar test soruları arkadaşlar.
+
+323
+01:02:15,423 --> 01:02:24,123
+İntegrel aşağıdakilerden hangisidir? Alanı veren integral diye. Önce bunları çizmeye çalışalım. Bakın, şu aslında ötelenmiş çember, onu nasıl anlıyorum?
+
+324
+01:02:24,123 --> 01:02:30,324
+Kartezan koordinatlarla tutupsal koordinatlar arasındaki ilişkiyi biliyorduk. Şöyle, R ile çalışıyoruz.
+
+325
+01:02:30,324 --> 01:02:42,092
+çarpalım, şunun her tarafını, re kare eşittir, 3 re, kosünüs teta değil mi? Ne yapıyorum? Re kare yerine ne yazıyordum? X kare artı, re kare diye yazarım. Çünkü...
+
+326
+01:02:42,228 --> 01:02:58,748
+x, r, cos, y, r, sin, y, kartezyen koordinatları, kutuplar koordinatları arasındaki ifade, r karede ne olur? x kare artı y kare olur. O zaman şunu düzenlemeye çalışıyorum, ne olduğunu görmek için. Ne olur? Bu x kare artı y kare olur, bu da 3x olur.
+
+327
+01:02:58,748 --> 01:03:08,527
+Bunu biraz daha düzenlersem, bu da nedir? Aslında x eksi 3 bölü 2'nin karesi artı y kare eşittir 9 bölü 4. Aç bakalım, bak x kare.
+
+328
+01:03:09,139 --> 01:03:19,760
+eksi 3x, burada kaldı zaten, artı 9 bölü 4, denge bozulmasını eksi 9 bölü 4'e ekledik, buraya attık da yakın.
+
+329
+01:03:20,099 --> 01:03:27,820
+Yani sonuçta şu verilen, x'in 3 bölü 2'ye ötelenmiş, yarıs şapı da 3 bölü 2 olan, ötelenmiş bir çemberdir.
+
+330
+01:03:27,980 --> 01:03:30,659
+Onu görmek için inceledik, yazdık.
+
+331
+01:03:30,659 --> 01:03:34,980
+Yani sonuçta şöyle kabaca çizdim, işte ötelenmiş bir çember.
+
+332
+01:03:35,731 --> 01:04:03,731
+Yarı çapı, 3 bölü 2, x'de de 3 bölü 2'ye ötelenirse, nereye gelir? 3'e gelir, değil mi? Şu, ötelenmiş bir çemberi çizmiş olduk. Bu da nedir? Kardiyotleri de söylemiştik durumlarına göre, değil mi? Onu anlatırken orada da. Burada da çizmeniz kolay, hani sivri noktası nereye gelecek, onu gör. Örneğin burada bakın, kosünüs 0 olursa, 1 artı kök 2, değil mi? Şu sivri, pi olursa.
+
+333
+01:04:03,731 --> 01:04:09,112
+Kursa, kök 2, eksi 1. Yani şu, demek ki kardiyoik bu şekilde.
+
+334
+01:04:09,791 --> 01:04:13,351
+Bir kardiyoik. O ikse göre de simetriği vardı. Bunu çizmiş olduk.
+
+335
+01:04:13,907 --> 01:04:30,568
+Notlarınıza bakarsınız, kardiyo değerisi de çizdik ama kabaca değerler vererek de çizebilirsin. İşte pozisyonus pi bölü 2 ise de ne olur? Kök 2'ye gelir. Yani kardiyoid olduğunu bilirsen, işte sivri ucu ne tarafa gelecek onu da açıları vererek görebilirsin.
+
+336
+01:04:30,568 --> 01:04:41,907
+İşte kardiyoidi de çizmiş olduk. Ne diyordu bize? Çemberin dışı, kardiyoidin içi. O zaman şu taradığımız kısmın alanını bana soruyor. Ne yapmalıyım? Burada bakalım.
+
+337
+01:04:41,907 --> 01:04:52,548
+Simetri de var, o x'e göre. Yarısını düşünürüm ama, biz milimetrik çizmediğimize göre, her iki eğriyi çakıştırmam gerekir, değil mi? Açıyı bulabilmek için.
+
+338
+01:04:53,108 --> 01:04:59,148
+3 kosünüs teta eşittir, kök 2 artı kosünüs teta'yı çakıştırırsak, eşitlersek daha doğrusu ne olur?
+
+339
+01:04:59,268 --> 01:05:04,188
+2 kosünüs teta eşit kök 2 olur. Buradan kosünüs teta kök 2 bölü 2 olur.
+
+340
+01:05:04,188 --> 01:05:08,748
+Yani teta nedir? Pi bölü 4'tür şu birinci bölgede bulmak istiyorum.
+
+341
+01:05:09,684 --> 01:05:15,884
+Bu halde çakıştıkları nokta, pi bölü 4. OX'e göre de simetri var. Şu yarısını düşüneceğim.
+
+342
+01:05:17,268 --> 01:05:19,447
+Şu taralı kısmı bulmaya çalışıyoruz.
+
+343
+01:05:19,947 --> 01:05:28,827
+E alanda neydi formülü hatırlarsanız, işte teta eşittir alfa, teta eşittir beta ışınları arasındaki bir bölgenin alanları biz nasıl bulunduk?
+
+344
+01:05:28,987 --> 01:05:37,487
+1 bölü 2 integral alfadan beta'ya kadar, R'nin karesi ya da F teta'nın karesi de teta şeklinde alan formülümüz bu.
+
+345
+01:05:38,047 --> 01:05:41,467
+E şimdi biz burada düşünmeye çalışacağız değil mi?
+
+346
+01:05:41,547 --> 01:05:43,047
+Alanı nasıl bulacağız?
+
+347
+01:05:43,764 --> 01:05:59,984
+Pi bölü 4'ten nereye gidiyoruz? Pi'ye kadar değil mi şu? Sınırım şu. Ama burada bakın şu boşlukta var. Evet bekliyorum 1-2 dakika. Alanı yazar mısınız? Hesaplamayacağız sadece. Alan şudur diyeceğiz. Simetri de kullanın.
+
+348
+01:06:45,748 --> 01:07:11,947
+Evet, yazdık mı arkadaşlar? Düşünelim bakın. Ne dedik? Sınırımız bakın, pi bölü 4'ten pi'ye kadar. Ama şu bakın, boşluk da var şurada. Yani pi bölü 4'ten pi'ye kadar kardiyoidin alanından şu boşluğu da çıkarmam gerekecek. Simetri kullandık, alanın yarısı dedik. Formülümüz bakın, 1 bölü 2, pi bölü 4'ten pi'ye kadar.
+
+349
+01:07:12,947 --> 01:07:36,715
+Kardiyoidin alanı, tamam mı? Kimi çıkaracağım? Şu ötelenmiş çemberi çıkarmam gerekir. O da nereden nereye kadar? Bakın, pi bölü 4'ten pi bölü 2'ye kadar şu beyaz kısmı çıkarmam gerekir. Eksi dedim, 1 bölü 2'den integral pi bölü 4'ten pi bölü 2'ye kadar 3 kosinist teta'nın karesi. Tamam mı?
+
+350
+01:07:40,851 --> 01:07:49,192
+İki de şuraya atarsam, hani test olduğu için böyle olmaz da cevap A diye söyler, iki ile de çarptığında şu hale gelmiş olur.
+
+351
+01:07:49,692 --> 01:07:50,911
+Bu test sorusu arkadaşlar.
+
+352
+01:07:53,031 --> 01:07:59,692
+Anlaşıldı mı? Bakın, düzgünce çizdik, açıları çakıştırdım, simetriyi kullandım.
+
+353
+01:08:00,431 --> 01:08:05,331
+Şu alanı sorduğuna göre, pi bölü 4'ten pi'ye kadar alan neresi oluyor?
+
+354
+01:08:07,380 --> 01:08:15,720
+Bu kız. Ama şurada bir boşluğum var değil mi? Orası taralı değil. Yani ne yapacağım? Kardiyoitten ne yapıyorum? Çemberi çıkarıyorum. Bu kadar.
+
+355
+01:08:16,920 --> 01:08:26,280
+Peki, birkaç tane var değişik sorularım. Anladık değil mi arkadaşlar? Peki, buna bakalım.
+
+356
+01:08:28,500 --> 01:08:41,340
+Bu da gene bir kardiyot. Reşitir 1- sinüs tete kardiyotu ve reşitir sinüs tete. Bu da y ekseni nötelenmiş bir çemberdir değil mi? Her ikisinin içinde kalan bölgenin alanını bulunuz diyoruz.
+
+357
+01:08:42,771 --> 01:09:05,431
+Çizimini zaten noktamıza bakarak çizebilirsiniz. Biz alanları yazmaya çalışalım. Bakın, R eşittir sinüs tete'nin ötelenmiş çember olduğunu gene görmek için ne yaptım? Bakın, her tarafı R ile çarptım. R kare eşittir, R sinüs tete oldu. R kare yerine kartezyen koordinatla kutupsal koordinatlar arasındaki ilişkiyi biliyorum. X kare artı Y kare yazdım. Bu da nedir? Y'dir.
+
+358
+01:09:10,771 --> 01:09:23,811
+4, 4, şu, tamam mı? Yani yeğenin 1, 2'ye ötelenmiş, yarı çapıda 1, 2 olan ötelenmiş bir çember. İşte bire gelir şu, çizdim çemberi, tamam mı? Bu da nedir? Kardioittir arkadaşlar.
+
+359
+01:09:24,916 --> 01:09:50,935
+Yani pi bölü 2 eksenine uzanmış bir kardiyot olarak düşünüyorum. Bunu da gene kendiniz de kabaca değerler vererek de çizersiniz ya da ezbere çizersin. Hiç önemli değil. İşte diyelim pi bölü 2 verirsem ne olur? Sıfır olur değil mi? Eksi pi bölü 2 verirsem 2 olur. Bu da zaten pi bölü 2'ye göre de simetri var. Yani sonuçta şöyle bir kardiyot eğrisidir. Her ikisinin de diyor içinde kalan şu.
+
+360
+01:09:51,636 --> 01:09:59,636
+Gene burada simetri yok mudur? Simetri de kullanabilirsiniz. Ama tabii ki gene biz milimetrik çizmediğimiz için...
+
+361
+01:10:00,000 --> 01:10:28,000
+İki eğriyi çakıştırıp, ortak açısını bulmam gerekir. 1-sinus theta'yı sinus theta'ya eşitlersek, sinus theta ne olur? 1 bölü 2 olur. Yani pi bölü 6, bir de ikinci bölgede de 5 pi bölü 6 olur. Eğer simetriyi kullanmayacaksak, tamam mı? O zaman simetriyi kullanmak daha işimize gelecektir. Yani şurada şu bölgeyi düşünüyorum. Bakın, diyeceğim ki 0'dan pi bölü 6'ya, pi bölü 6'dan pi bölü 2'ye diyeceğim.
+
+362
+01:10:28,000 --> 01:10:37,800
+O kadar. Simetriyi kullandık arkadaşlar. Ne diyoruz? Alan formülümüz 1 bölü 2 idi. Önce ne yapıyorum? Bakın 0 ile pi bölü a.
+
+363
+01:10:38,095 --> 01:10:58,536
+Işın arasındaki bölgenin alanı nedir? Ötelenmiş çember. 0 ile pi bölü 6, sinüs tetanın karesi diyorum. Artı, 1 bölü 2 formülümüzden gelen pi bölü 6'dan pi bölü 2 arasındaki, ışının arasındaki alanda nedir? Kardiyoidin alanı. Bu ikisinin toplamı.
+
+364
+01:10:59,975 --> 01:11:04,015
+Gene 2'yi de şuraya attık. Çünkü bunlar test soruları, cevap şu olacak.
+
+365
+01:11:06,003 --> 01:11:15,703
+Hatta bunu hesaplamış mıyım? Hesaplamışız hemen bakalım nasılca arkadaşlar. Örnek olsun diye hesaplamışım. Yani sonuçta şunu soruyoruz zaten.
+
+366
+01:11:17,268 --> 01:11:35,988
+Hemen bunun karesini aldım. İkileri de attık, sadeleşmiş oldu. Sinüs kare yerine ne yazıyorduk? Yarım açık formüllerinden. 1-cos2teta bölü 2 diye yazarım arkadaşlar. Şuradan integral pi bölü 6'dan pi bölü 2'ye kadar şunun karesini açtık. Bakın, 1-2 sinüs teta.
+
+367
+01:11:36,416 --> 01:11:46,756
+Artı sinüs kare. Sinüs kare yerine de şunu yazarım yarım açı formüllerinden. 1-kosünüs 2t bölü 2d'ye yazdık. Gerisini artık integraline alacağız. Bakın şuradan.
+
+368
+01:11:47,119 --> 01:11:56,359
+1 bölü 2'nin integrali teta bölü 2'dir. Kosünüs 2 tetanın integrali de 1 bölü 2, bir de şu 2'den 1 bölü 4 sinüs 2 teta gelir.
+
+369
+01:11:56,519 --> 01:12:04,539
+Sıfırdan pi bölü 6'ya kadar. Şuradan integrali alıyorum. Birin integrali teta. Bunun integrali 2 kosünüs teta gelir.
+
+370
+01:12:04,859 --> 01:12:09,679
+Tamam mı? Eksisi kosünüs bir de eksisi var. Artı olur. Şuradan teta bölü 2 diyeceğim.
+
+371
+01:12:10,139 --> 01:12:14,799
+Buradan da gene 1 bölü 2, bir de 2 var. Eksi 1 bölü 4 sinüs 2 teta diyorum.
+
+372
+01:12:15,119 --> 01:12:17,939
+pi bölü 6'dan pi bölü 2'ye kadar.
+
+373
+01:12:18,539 --> 01:12:21,939
+İşte sınırları da yerine yazarsak, böyle bir sonucu buluruz.
+
+374
+01:12:22,119 --> 01:12:23,999
+Tamam mı? Onları yazarsınız, zor değil.
+
+375
+01:12:25,459 --> 01:12:26,919
+Evet, anlaşıldı sanırım.
+
+376
+01:12:29,559 --> 01:12:32,219
+Şimdi şöyle, gene.
+
+377
+01:12:32,752 --> 01:12:54,052
+Benzer, zaten arkadaşlar çizimlerimiz dikkat ederseniz kardiyot, çember, doğru onlar olacak. Yani onlar arasındaki alanlar bir şekilde soracaklar. Çünkü her simetriyi vermediğimiz için kısıtlı bölgelerimiz. Kardiyotlar üzerinde, çember, ötelenmiş çember, doğrular.
+
+378
+01:12:54,676 --> 01:12:57,115
+O şekilde bölgeler olacaktır.
+
+379
+01:12:57,615 --> 01:13:08,615
+Evet, diyelim ki, R eşittir 3 kosmü steta çemberi ile R eşittir 1 artı kosmü steta, gene kardiyo itin, ortak kesiştikleri bölgenin alanını bulunuz.
+
+380
+01:13:08,796 --> 01:13:12,695
+Gene bunu düşünüyorum, x eksenine ötelenmiş bir çember.
+
+381
+01:13:12,695 --> 01:13:17,756
+Artık onun üzerinde, hatta gene burada göstermişim bakın, bu kardiyo itin, çizdik aynısını.
+
+382
+01:13:18,855 --> 01:13:22,235
+Yani şu ötelenmiş çember, 3 bölü 2 ötelenmiş.
+
+383
+01:13:22,931 --> 01:13:32,271
+Yarı çapı da 3 bölü 2 olan, 3'e gelecek şurası da bir çember. Bu da kardiyodimizde şöyle. Ne diyor?
+
+384
+01:13:32,851 --> 01:13:54,731
+ortak kesiştikleri bölgeyi bu seferde sormuş. Yani sadece bölgelerimiz farklı, şekilleri aynı çoğunluğu. Şu, ikisinin ortak bölgesi bu. Gene burada OX'e göre de simetri var. Alanın yarısını da kullanabilirim. Ne yapmam gerekir? Gene her iki yeri çakıştırıp ortak açıyı bulmam gerekir. 3 cos theta.
+
+385
+01:13:55,296 --> 01:14:17,296
+eşittir 1 artı, kosmü stetayla eşitlersek, buradan kosmü stetayı 1 bölü 2 bulurum. Yani şurada ne olur? Teta pi bölü 3 olur. Şu yarısını düşünüyoruz. Tamam mı? O zaman nasıl yazmam gerekir? Simetriyi kullandık o x'e göre. Alanın yarısı dedik. Bakın, sıfırdan...
+
+386
+01:14:17,395 --> 01:14:42,336
+Pi bölü 3'e değil mi? Pi bölü 3'den pi bölü 2'ye gidiyoruz. Kolay bu aslında. Yani sıfırdan pi bölü 3'e ışınlarının arasındaki alan nedir? Kardiyoidin alanı. Bakın yazdık. Artı 1 bölü 2 formülümüzden pi bölü 3'den pi bölü 2'ye kadar şu küçük olan alan değil mi? O da neyin alanı? Ötelenmiş çemberin alanı.
+
+387
+01:14:46,355 --> 01:14:55,675
+Artık kendiniz hesaplarsın, problem yok. Yani test sorusu bunlar, cevap bu. Bir de cevabını da ikiyle de sadeleştirerek, çarparak vermiş olabilir.
+
+388
+01:14:55,675 --> 01:15:12,587
+Anlıyor muyuz arkadaşlar? Ben kutupsal koordinatlarda alan kesinlikle beklerim testte. Eğrinin uzunluğunu da sorabilir veya bir noktanın kutupsal gösterilimini sorabilir. Yani hemen hemen...
+
+389
+01:15:12,851 --> 01:15:22,651
+alan kesin gelmesi gerekir diye düşünüyorum. Onun için düşündüğüm alanları çizip burada görmeye çalıştık. Evet, şimdi bir tane de şöyle diyelim.
+
+390
+01:15:24,531 --> 01:15:33,651
+Gene ötelenmiş çemberin içi, bu da rej'tir, kök 2 dediğimiz nedir? Bu da merkezil çember değil mi? Bölgenin alanını yazınız diyor.
+
+391
+01:15:33,651 --> 01:15:35,651
+Evet.
+
+392
+01:15:37,460 --> 01:15:59,680
+Peki, size 2 dakika veriyorum. Şurada ne anladınız? Kendiniz karalama olarak bulmaya çalışın. Bakın, y eksenine ötelenmiş bir çember bu da. Bu da nedir? Yarı çapı, kökü olan bir çember. Ötelenmiş çemberin içi diyor, merkezli çemberin de dışı. O bölgenin alanını bana yazar mısınız? Hadi bekliyorum.
+
+393
+01:16:00,851 --> 01:16:26,891
+Yani şu, re kare eşittir, 2 re sinüs tetayı düzenlerseniz, x kare artı y kare eşittir, 2 y dersin. O da x kare artı y eksi birin karesi dersin, eşittir birdir. Yani y biri ötelenmiş, yarı çapıda bir olan bir çember diyeceksin. Diğeri de re eşittir kök 2 de nedir zaten? x kare artı y kare eşit 2, yani yarı çapı kök 2 olan bir çemberdir.
+
+394
+01:16:28,404 --> 01:16:30,784
+Merak ediyorum bölgeyi nasıl yazarsınız.
+
+395
+01:17:48,467 --> 01:18:13,967
+Evet, yazabildik mi arkadaşlar? Hadi kontrol edelim bakalım. Bakın, hemen çizdik. Bu yarı çapı, kök 2 olan çemberi çizdik. Bu da ötelenmiş çember artık. Tamam mı? Çemberin dışı, ötelenmiş çemberin içi. Yani bölgem şu. Yine ne yapıyorum? İki eğriyi çakıştırdım bakın. Simis teta ne olur şuradan? Kök 2 bölü 2. Yani teta 45 derece şu.
+
+396
+01:18:16,243 --> 01:18:41,384
+Simetri de kullanıyorum bakın. Yarısını yani düşünüyorum. Alanın yarısı dedim. 1 bölü 2, pi bölü 4'ten pi bölü 2'ye kadar teta açımız. Ne yapıyoruz? Ötelenmiş çemberden, merkezi çemberi çıkaracağız değil mi? Alanı şu taralı alanı bulmak için. Pi bölü 4'ten pi bölü 2'ye kadar diyorum. Ötelenmişten.
+
+397
+01:18:42,003 --> 01:18:47,024
+Ne yapıyorum? Merkezi çıkarırsam, şu taralı kısmı bulmuş olurum. İşte.
+
+398
+01:18:49,524 --> 01:18:55,484
+Tamam mı? Yazabiliyor muyuz arkadaşlar? Anlıyor muyuz? Hiç cevap gelmiyor.
+
+399
+01:18:58,623 --> 01:19:09,384
+Anladık mı? Peki, tersini soralım. Çemberin dışı olsun, ötelenmiş çemberin merkezi çemberinde içi olsun.
+
+400
+01:19:13,171 --> 01:19:22,271
+Yani, şunun dışı diyorum, yani şu kısım değil mi? Şuralar. Bunun alanını hadi yazmaya çalışın bakalım.
+
+401
+01:19:53,587 --> 01:20:18,988
+Bakın şekli çizdik buraya gene. Tamam mı? Aynı şekil ama yer farklı. Dışı diyor yani şu kısım. Yine açımız ortak çakıştırdık. Pi bölü 4'ümüz var. Gene simetriyi kullanıyorum arkadaşlar. Yarısını düşünüyorum. Alanın yarısı diyorum. Bakın şuradan eksi pi bölü 2'den pi bölü 4'e kadar değil mi? Eksi pi bölü 2'den pi bölü 4'e kadar çemberin alanından.
+
+402
+01:20:19,731 --> 01:20:26,992
+Neyi çıkarmam gerekiyor? Bakın, şu kısım, azıcık beyaz olan kısım, yani taralı olmayan kısmı çıkarmam gerekir.
+
+403
+01:20:28,392 --> 01:20:32,792
+Ötelenmiş çemberi çıkarırsak, istediğimiz bölgenin alanını bulmuş olacağız.
+
+404
+01:20:32,792 --> 01:20:41,432
+Yani integral, eksi pi bölü 2'den artı pi bölü 4'e kadar, kök 2'nin karesinden 1 bölü 2 diyoruz, çıkaracağız.
+
+405
+01:20:46,003 --> 01:20:52,783
+Şu ötelenmiş çemberin şu parçayı çıkarırsak, alanı, taralı alanı bulmuş olacağız arkadaşlar. Tamam mı?
+
+406
+01:20:59,667 --> 01:21:08,648
+Peki, böyle bir sorumuz var. Gene bu da test sorusu. Re eşittir, 4 kosünüs teta.
+
+407
+01:21:09,104 --> 01:21:33,884
+R kosünüs teta büyük eşit bir, teta sıfırdan küçük eşit ile sınırlı bölgenin alanını bulunuz. Bakın hepsinde kolay. Siz bekliyorum, 2 dakika veriyorum. En azından bölge neresidir onu çizmeye çalışın. Bakın R eşit 4 kosünüs teta nedir? X 80'e ötelenmiş bir çemberdir. R kosünüs teta eşit bir nedir arkadaşlar?
+
+408
+01:21:35,412 --> 01:21:44,152
+R, kosinus, teta, büyük eşit bir. Ne anlıyorsunuz? Onu söyleyin bari bana. Nedir? Karteziyende neyi ifade eder?
+
+409
+01:21:48,404 --> 01:21:48,884
+Evet.
+
+410
+01:21:53,332 --> 01:21:54,392
+Evet arkadaşlar.
+
+411
+01:21:59,764 --> 01:22:03,564
+R kosünüs teta, büyük eşit 1. Neyi gösterir?
+
+412
+01:22:06,384 --> 01:22:07,264
+Kartezyen de.
+
+413
+01:22:16,435 --> 01:22:21,935
+Hiç mi bilinemedik? Evet arkadaşlar, neyi ifade eder? Re, cos, teta, büyük eşit 1.
+
+414
+01:22:30,260 --> 01:22:54,260
+Biz kartezyen koordinatlarla kutupsal koordinatlar arasındaki ilişkiyi nasıl verdik? Y eşittir, R sinüs teta değil mi? X eşittir, R kosünüs teta. X büyük eşit bir demez misiniz? Yani bir doğrusunun büyük olan kısmı diye değil mi? X büyük eşit bir dersin. Yapmayın arkadaşlar lütfen. O zaman boşuna beklemeyeyim. Çizmeyeceksiniz. Evet.
+
+415
+01:22:55,636 --> 01:23:04,916
+Biraz kabaca çizdik, işte kutupsal eksen, x dedik, pi bölü 2 açımız, ötelenmiş çember, bu zaten gene şuraya da bakın yazdım.
+
+416
+01:23:05,555 --> 01:23:31,595
+Şu şekilde düşündüm, düzenledim. X2'ye ötelenmiş, yarı çapı da 2 olan, yani 4'e gelir şöyle bir çember. Sonra X eşittir bir doğrusunu çizdim. Şu doğru bir, yani bir ve birden büyük olan kısım, teta'nın da negatif olduğu yerler. Teta'nın negatif olduğu yerler saatin yönünde dönen açılardır değil mi? Sınırlı bölgenin alanı diyoruz. Çember.
+
+417
+01:23:32,500 --> 01:23:36,720
+x'in birden büyük olduğu kısım ve teta'nın negatif olduğu kısım.
+
+418
+01:23:36,979 --> 01:23:39,640
+Teta için bir şey demeseydi şu kısmı anlardım.
+
+419
+01:23:39,640 --> 01:23:43,539
+Şu taralı olan kısımın alanını bana soruyor.
+
+420
+01:23:45,059 --> 01:23:46,859
+O halde yine ne yapmam gerekir?
+
+421
+01:23:47,159 --> 01:23:49,079
+Eğrileri çakıştırmamız gerekir.
+
+422
+01:23:49,840 --> 01:23:56,619
+Yani şurada re eşittir 4 kosünüs tetayla re kosünüs tetayı eşit 1'i çakıştıralım.
+
+423
+01:23:56,720 --> 01:23:57,420
+Bakın şuradan.
+
+424
+01:23:58,707 --> 01:24:07,087
+Şuradan re ne olur? 1 bölü kosinisteta 4. Kosinisteta eşittir 1 bölü kosinistetadan. Kosinist kare teta ne olur? 1 bölü 4 olur.
+
+425
+01:24:07,747 --> 01:24:17,647
+Buradan kosinisteta 1 bölü 2 ise teta nedir? 60 derece ama şu dördüncü bölgede olduğu için eksi pi bölü 3 diye alalım.
+
+426
+01:24:18,007 --> 01:24:22,047
+Dördüncü bölgenin açısı olduğu için birinci bölge olsa diye pi bölü 3 diyecektik.
+
+427
+01:24:22,228 --> 01:24:47,547
+O zaman şimdi çakıştığı, yani şu açımız nedir? Eksi pi bölü 3'tür diyeceğiz. Buna göre alanı yazmaya çalışalım. Şu taralı alanı yazmaya çalışıyoruz arkadaşlar. Ne diyeceğim bakın. Eksi pi bölü 3 açısından 0'a kadar olan bölgenin alanı diyorum 1 bölü 2 integral. Eksi pi bölü 3'den 0'a kadar.
+
+428
+01:24:48,115 --> 01:24:50,576
+Nedir? Ötelenmiş çemberin alanından.
+
+429
+01:24:51,935 --> 01:24:54,195
+Değil mi? Neyi çıkarmam gerekir?
+
+430
+01:24:54,916 --> 01:24:56,996
+Şu bir doğrusunun alanını.
+
+431
+01:24:57,796 --> 01:25:05,496
+Bir bölü iki, pi bölü üçten sıfıra kadar, bir bölü kosünüs tetanın karesi, d tetan.
+
+432
+01:25:05,775 --> 01:25:07,016
+Tamam mı? Bu.
+
+433
+01:25:08,756 --> 01:25:26,796
+Anlaşıldı mı arkadaşlar? Şu taralı kısmın alanını bulabilmek için ne yaptık? Eksi P bölüşten sıfıra kadar olan bölgenin alanından neyi çıkarıyoruz? Şu biri çıkardığımızda şunu bulmuş olacağız.
+
+434
+01:25:31,412 --> 01:25:31,851
+Evet.
+
+435
+01:25:35,891 --> 01:25:50,271
+Peki, şuna bir bakın bakalım. R eşittir 2. R eşittir 4 kosünüs teta. R kosünüs teta eşittir 3 eğrileriyle sınır bölgenin alanını veren kutupsal integrali yazınız diyelim.
+
+436
+01:25:54,003 --> 01:26:14,844
+Yine bu da nedir? Merkezi, yarı çapı, iki olan bir çemberdir. Bu da x eksenine ötelenmiş bir çember. Şu da nedir? x eşittir, üç doğrusu değil mi? Bakalım. Biraz daha karışık bu. Merkezi çemberi çizdim, yarı çapı iki olan çemberi çiziyorum.
+
+437
+01:26:15,636 --> 01:26:32,316
+Yine bakın şurada göstermiş oldum, yarı çapı 2 olan çemberdir. Şunu da gene kartezyende nasıl düzenlerim diye baktım. X2'yi ötelenmiş, yarı çapıda 2 olan çemberi çizmiş oldum şöyle. Bu da nedir? X eşittir. 3 doğrusunu çizdik.
+
+438
+01:26:33,779 --> 01:26:53,359
+arasında dediğine göre, şu taradığımız bölge arkadaşlar. Tamam mı? Şu. Nedir burada? OX'e göre de simetri vardır. Şu yarıştığını düşünürsem, önce açıları bulmam gerekecek. Ne yapacağız? İki çemberi çakıştıracağız. Bir de doğruyla çemberi çakıştıralım.
+
+439
+01:26:53,971 --> 01:27:19,891
+Bakın, re eşittir 4 kosmü steta, re kosmü steta eşittir 3'ü çakıştırırsak, şuradan ne olur? 4 kosmü steta, yani kosmü kare ne olur? Kök 3 bölü 2 gelir. Şuradan bakın, şu 3 bölü 4 karesinden, kök 3 bölü 2. Bu da nedir? 30 derece, yani pi bölü 6 diyeceğim. Tamam mı? Birinci bölgede.
+
+440
+01:27:21,460 --> 01:27:36,840
+Şu merkezli çemberle, ötelenmiş çemberi çakıştırırsam, yani şunları çakıştırırsam, kosinus teta 1 bölü 2 olur. Yani pi bölü 3'tür. Şu pi bölü 6, şu da pi bölü 3 açımız.
+
+441
+01:27:39,891 --> 01:27:51,071
+Şimdi simetride kullanarak alanı yazmaya çalışalım. Yani şu yarısını düşünüyoruz arkadaşlar. Şu yarısı taral olan kısım, şurasının alanını bulmaya çalışıyoruz. A bölü 2 dedik.
+
+442
+01:27:51,071 --> 01:28:07,071
+Şimdi ne yapıyorum? Bakın sıfırdan pi bölü 6'ya kadar sıfırdan pi bölü 6 ışını arasında ne var? Bakın bir ötelenmiş çemberden ne yapıyorum? Merkezi çemberi çıkaracağım.
+
+443
+01:28:10,484 --> 01:28:36,243
+Pardon, 0'dan pi bölü 6'ya kadar karalı kısmı buluyoruz. Şu doğrunun alanından, merkezi çemberin alanını çıkaracağım. Şurayı bulmak için. Şuradan bunu çıkaracağım. Tamam mı? Sonra pi bölü 6'dan pi bölü 3'e kadar dediğim ışığında da ne var?
+
+444
+01:28:36,640 --> 01:28:55,159
+Ötelenmişten merkezli çemberi çıkarıyorum. Demin ters konuştuk. Yani şu alanı bulmak için, şu tarafa kısmı bulmak için, şu doğrunun alanından merkezi çıkardım. Şurayı buldum. Pi bölü 6'dan pi bölü 3'e kadar ötelenmişten merkezin alanını çıkarıyoruz.
+
+445
+01:28:57,159 --> 01:28:58,479
+Tamam mı arkadaşlar?
+
+446
+01:29:00,148 --> 01:29:10,228
+Evet, sorularım bu kadar arkadaşlar. Diğer konularla değinmediğim konuları da artık 17 Mayıs'taki dersimizde çözmeye çalışacağım.
+
+447
+01:29:10,228 --> 01:29:27,208
+Artık kutupsala dönmem, çok soru çözdük. Yani düşündüğüm alan kısımlarıyla ilgili şekilleri, dediğim gibi kardioit, çember, doğru, başka da şekiller çok olmaz yani. Bunlar arasında düşünmek gerekir. Var mı sorumuz takıldığınız bir yer?
+
+448
+01:29:28,243 --> 01:29:52,684
+Hiç cevap vermiyorsunuz, bilemiyorum. Evet, var mı sorun arkadaşlar? Dediğim gibi, eksik kısımlarımla ilgili soruları da bir dahaki derse. Evet, o zaman iyi tatiller diliyorum size arkadaşlar. Görüşemeyeceğiz, iyi bayramlar, kendinize iyi bakın. 17 Mayıs'ta görüşürüz, o zaman da soru çözeceğim tekrar.
+
+449
+01:29:56,275 --> 01:29:58,516
+Evet, bunları size avestiden atacağım.
+
+450
+01:30:01,556 --> 01:30:09,615
+Evet arkadaşlar, tekrar iyi bayramlar, kendinize iyi bakın, görüşmek üzere. Lütfen biraz çalışın, tamam mı? Boşlukta.
