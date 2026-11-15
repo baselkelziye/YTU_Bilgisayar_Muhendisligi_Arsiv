@@ -1,0 +1,1283 @@
+1
+00:00:59,219 --> 00:01:00,379
+İyi günler arkadaşlar.
+
+2
+00:01:03,899 --> 00:01:08,099
+Bugünkü dersimize başlamadan önce söz alıp konuşmak isteyen var mı?
+
+3
+00:01:17,043 --> 00:01:33,543
+Evet, o zaman dersimize başlayalım. Bugün yeni bir bölüme başlayacağız. Bugün lineer denklem sistemleri üzerinde duracağız. İlk olarak lineer denklem sisteminin tanımını yaparak dersimize başlayalım.
+
+4
+00:01:37,780 --> 00:01:39,200
+İlk tanımımız şu şekilde.
+
+5
+00:01:43,540 --> 00:01:59,719
+i'ler, i'in dizleri, 1 ile m arasında, j'in dizleri, 1 ile n arasında değişmek üzere, a, i, j'ler, ve b, i'ler, birer real sayı olacak.
+
+6
+00:02:11,027 --> 00:02:38,347
+m tane denklem, birinci denklem, a11x1 artı, a12x2 artı nokta nokta, a1nxn eşittir, b1. Bu bir denklem, en bilinmeyenli bir denklem. Böyle m tane denklemden, m tane denklemden oluşan sisteme biz, m denklem ve
+
+7
+00:02:38,800 --> 00:02:45,580
+en bilinmeyenden oluşan bir lineer denklem sistemi diyoruz.
+
+8
+00:02:46,220 --> 00:02:49,700
+Lineer denklem sistemi diyoruz.
+
+9
+00:02:51,520 --> 00:03:03,040
+Ve böyle bir sistem varsa elimizde, buradaki AİG'lerden oluşan şu A matrisine,
+
+10
+00:03:03,040 --> 00:03:04,960
+A matrisine,
+
+11
+00:03:06,099 --> 00:03:10,219
+Bu lineer denklem sisteminin kas sayılar matrisi diyoruz.
+
+12
+00:03:12,920 --> 00:03:23,219
+Bu denklemlerin kas sayılarından oluşan bu A matrisine lineer denklem sisteminin kas sayılar matrisi diyoruz.
+
+13
+00:03:23,219 --> 00:03:27,219
+Ayrıca bu bilinmeyenlerden oluşan...
+
+14
+00:03:27,668 --> 00:03:36,168
+Şu sütun matrisine ise, en tane bilinmeyenden oluşan bu sütun matrisine ise bilinmeyenler diyeceğiz.
+
+15
+00:03:37,168 --> 00:03:50,288
+Ve B1, B2, Bm'den oluşan bu sütun matrisine de sistemin ikinci yanı denir.
+
+16
+00:03:54,580 --> 00:04:08,020
+başlangıçta verdiğimiz lineer denklem sistemi, bu A matrisi, X sütun matrisi, B sütun matrisini kullanarak şu şekilde de yazılabilir.
+
+17
+00:04:09,480 --> 00:04:11,180
+A X eşit B.
+
+18
+00:04:11,180 --> 00:04:13,420
+Bunu yazdığımız zaman,
+
+19
+00:04:14,355 --> 00:04:26,836
+Neyi elde ederiz? A x, a ile x'i çarpıp eşit b'den de, eşitliği de kullanarak neyi elde ederiz? Bu verilen lineer denklem sistemini elde ederiz.
+
+20
+00:04:27,956 --> 00:04:32,196
+Şimdi bu lineer denklem sistemlerinin çözümleri üzerinde duracağız.
+
+21
+00:04:34,316 --> 00:04:36,196
+Önce, önce,
+
+22
+00:04:39,220 --> 00:04:45,900
+lineer denklem sistemlerinin denk matrisler yardımıyla çözümü üzerinde duracağız.
+
+23
+00:04:46,820 --> 00:04:51,700
+Bakınız, yine bir lineer denklem sistemi bize verilmiş.
+
+24
+00:04:53,260 --> 00:04:59,780
+M tane denklemden, N tane bilinmeyenden oluşan bir lineer denklem sistemini düşünüyoruz.
+
+25
+00:05:00,740 --> 00:05:06,220
+Sonra, bu A madrisi vardı ya, kas sayın A madrisi.
+
+26
+00:05:07,956 --> 00:05:10,436
+Şurası, bakın altını çiziyorum burası.
+
+27
+00:05:12,115 --> 00:05:20,456
+Buna ben, buna ben, B sutun matrisini de, sistemin ikinci yanı dediğimiz B sutun matrisini de ekliyorum.
+
+28
+00:05:22,135 --> 00:05:27,375
+Ve yeni matrisi şöyle gösteriyorum, bakın A2.B.
+
+29
+00:05:28,148 --> 00:05:39,108
+İşte bu A ve B'yi de ekleyerek elde ettiğim bu matrise ben artırılmış kat sayılar matrisi diyeceğim.
+
+30
+00:05:40,327 --> 00:05:43,848
+Artırılmış kat sayılar matrisi diyeceğim.
+
+31
+00:05:50,324 --> 00:06:02,223
+Şimdi, bu verilen lineer denklem sistemi için, bu sistemin çözümü için şu yolu izleyeceğiz arkadaşlar.
+
+32
+00:06:03,863 --> 00:06:04,704
+Şu yolu izleyeceğiz.
+
+33
+00:06:06,043 --> 00:06:13,264
+Önce, önce elemanter satır işlemleriyle bu artırılmış kaç sayılar matrisini
+
+34
+00:06:14,259 --> 00:06:22,800
+İndirgenmiş eşelon forma getireceğiz. İndirgenmiş eşelon forma getiriyoruz.
+
+35
+00:06:28,788 --> 00:06:32,087
+Bu matrisi indirgenmiş eşelon forma getiriyoruz.
+
+36
+00:06:32,687 --> 00:06:38,367
+Sonra, şurada bakın, ayırayım.
+
+37
+00:06:40,147 --> 00:06:42,327
+Şurası A, değil mi?
+
+38
+00:06:44,707 --> 00:06:52,407
+Bu satırca indirgenmiş eşelon forma gelince, gelince ranklarını söyleyebiliriz.
+
+39
+00:06:52,487 --> 00:06:54,707
+Hem A'nın rangını söyleyebiliriz.
+
+40
+00:06:55,315 --> 00:07:01,475
+hem de AB artırılmış kas sayılar matrisinin rangını söyleyebiliriz.
+
+41
+00:07:04,235 --> 00:07:12,775
+Aslında bu rantları sadece eşelon forma getirerek de söyleyebilirdik.
+
+42
+00:07:13,815 --> 00:07:20,135
+Geçen derslerimizden hatırlayacaksınız ama biz burada satırca indirgenmiş eşelon forma getiriyoruz.
+
+43
+00:07:20,275 --> 00:07:22,315
+Sonra neden derseniz,
+
+44
+00:07:22,867 --> 00:07:45,548
+Bir sonraki adımda, rankları gördükten sonraki bir sonraki adımda çözüme geçeceğiz. Dolayısıyla çözüme de geçerken bize indirgenmiş eşelon form gerekli olacağından biz başlangıçta, yani rankları söylerken de satırca indirgenmiş forma getiriyoruz.
+
+45
+00:07:50,932 --> 00:08:14,851
+Rank A'yı, rank AB'yi söyleyebiliriz. Şimdi şu durumlar söz konusudur. Rank A, yani şu birinci kısmı A ile gösterdiğim birinci kısma bakarak bulduğum rank A, bütün matrisin rangından farklı olabilir. İşte bu durumda biz sistemin, verilen sistemin çözümü yoktur deyip bitiriyoruz.
+
+46
+00:08:18,067 --> 00:08:33,408
+Bazen şöyle sorulabilir, işte sistemin çözümünün olmaması için ne olmalıdır, şu ne olmalıdır bir değer vardır. İşte orada bu durum söz konusu. Yani rank A farklı, rank AB olmalı.
+
+47
+00:08:34,988 --> 00:08:42,668
+Tabii diğer durum ne? Bu ranklar eşit olabilir, değil mi? Eğer eşitse bu ranklar.
+
+48
+00:08:43,604 --> 00:08:53,504
+Ve bu da R gibi bir değeri eşitse, o zaman diyoruz ki ne? Verilen lineer denklem sisteminin çözümü vardır diyoruz.
+
+49
+00:08:53,504 --> 00:09:07,923
+Çözümü vardır diyoruz. Bu R'nin neyle durumuna bakıyoruz?
+
+50
+00:09:11,347 --> 00:09:38,587
+R eşit neyse, bu ne dediğim bilinmeyen sayısı, tamam mı arkadaşlar? Bilinmeyen sayısı. Eğer R eşit neyse, o zaman, o zaman sistemin tek bir çözümü vardır diyoruz. Sonra çözümü buluyoruz. İşte sonra çözümü buluyoruz derken, o en son elde ettiğimiz satırca indirgenmiş eşelon formundan yer alınıyoruz.
+
+51
+00:09:41,460 --> 00:10:00,779
+Eğer, eğer, r küçük, n ise, r küçük, n ise, o zaman da diyoruz ki, sistemin n-r keyfi değişkene bağlı sonsuz çözümü vardır diyoruz.
+
+52
+00:10:00,779 --> 00:10:04,539
+Sonsuz çözümü vardır diyoruz.
+
+53
+00:10:07,988 --> 00:10:14,427
+Tabi burada R'nin N'den büyük olma durumu söz konusu değildir.
+
+54
+00:10:14,427 --> 00:10:20,988
+Değil mi? R, N'den büyük değildir.
+
+55
+00:12:06,644 --> 00:12:18,724
+Evet, şimdi bu şekilde irdeleyebiliriz. Biraz önce R, N'den büyük olamaz dedik.
+
+56
+00:12:19,644 --> 00:12:27,244
+Sebebine gelince, geçen dersimizde hatırlayacaksınız, rangı bulurken matrise bakıyorduk.
+
+57
+00:12:27,644 --> 00:12:33,724
+Matristeki kare alt matrislere bakıyorduk değil mi? Kare alt matrislere bakıyorduk.
+
+58
+00:12:34,419 --> 00:12:51,379
+Dolayısıyla burada rank elde edeceğimiz kare matrislerin mertebelerinden büyük olamaz. Dolayısıyla burada elde edebileceğimiz kare alt matrisler de N'den de büyük olamaz değil mi?
+
+59
+00:12:52,039 --> 00:12:59,099
+N'den de büyük olamaz, M'den de büyük olamaz. O yüzden R'ye N'den büyük olamaz diyoruz.
+
+60
+00:12:59,923 --> 00:13:16,204
+Eğer R, N'ye eşitse sistemin tek çözümü var. Eğer R, N'den küçük ise o zaman da sistemin N eksi keyfi değişkene bağlı sonsuz çözümü vardır diyoruz.
+
+61
+00:13:17,303 --> 00:13:20,663
+Ve çözümü buluyoruz. Biraz sonra örneklerde göreceksiniz.
+
+62
+00:13:27,347 --> 00:13:32,107
+Bir isim veriyoruz. Gauss-Jordan indirgeme yöntemi diyoruz.
+
+63
+00:13:33,747 --> 00:13:40,888
+Veya, veya, denk maddesi yardımıyla çözüm diyoruz.
+
+64
+00:13:45,427 --> 00:13:57,567
+Dolayısıyla bu yöntemle sistemin çözümü olup olmadığını, varsa tek çözüm mü, sonsuz çözüm mü, kaç keyfi değişkine bağlı çözüm, onları söyleyebiliriz.
+
+65
+00:13:57,567 --> 00:14:08,268
+Bakın, burada bir örneğimiz var. Şöyle, üç tane bilim yerinden oluşan bir lineer denklem sistemi var.
+
+66
+00:14:11,187 --> 00:14:17,528
+Renklem sistemini bu yöntemle çözmeye çalışalım. Ne yapacağız? Artırılmış kas sayıların maddesini yazacağız.
+
+67
+00:14:17,648 --> 00:14:25,067
+İşte şuraya altını çizdiğim yere A maddesini yazdım. Yanına da B'yi ekledim. Tamam mı?
+
+68
+00:14:27,367 --> 00:14:34,387
+Şimdi ne yapacağız? Bu artırılmış kas sayıların maddesini satırca indirgenmiş eşelon forma getiriyoruz.
+
+69
+00:14:36,327 --> 00:14:37,567
+İşte yazdık.
+
+70
+00:14:38,868 --> 00:15:00,508
+Bu, ab matrisi. Ne yapmışım? İkinci satırı, eksi iki ile çarpıp birinciye ekliyorum. Şuraya sıfır elde ediyorum. Tamam mı? Bir ile ikiyi yer değiştirdik. Burası bir oldu, altı hepsi sıfır oldu.
+
+71
+00:15:01,844 --> 00:15:07,524
+Bu şekilde devam edersek, siz sonra adımları incelersiniz.
+
+72
+00:15:08,104 --> 00:15:14,744
+Sonuçta satırca indirgenmiş eşelon forma geldi bakın, artırılmış gaz sayılar matrisi.
+
+73
+00:15:15,344 --> 00:15:20,064
+Sıfırdan farklı ilk eleman bir, bu birin bulunduğu üstünde diğer elemanların hepsi sıfır,
+
+74
+00:15:20,584 --> 00:15:25,864
+ve bu birilerin sıralanışı gördüğünüz gibi merdiven basamağını andıracak şekilde.
+
+75
+00:15:26,944 --> 00:15:28,044
+Şurası A.
+
+76
+00:15:28,851 --> 00:15:31,631
+Şuraya bakarak rank A'yı söyleriz, tamam mı?
+
+77
+00:15:32,771 --> 00:15:39,191
+Hepsine bakarak rank AB'yi söyleriz. Sıfırdan farklı satırların sayısı ikisinde de aynı.
+
+78
+00:15:39,851 --> 00:15:46,871
+Dolayısıyla rank A eşit, rank AB, o da eşit 3 olarak buluruz.
+
+79
+00:15:47,811 --> 00:15:55,871
+Biraz önceki açıklamamıza göre bu lineer denklem sisteminin bir kere eşit olduğu için ranklar çözümü var.
+
+80
+00:15:56,275 --> 00:16:21,576
+Bilinmeyen sayısına eşit olduğu için tek çözümü vardır. Değil mi? Sistemin tek çözümü vardır. Buradan çözümü nasıl buluyoruz? Bakın, buradan bu A, B'nin dengi olan buradan denklemi yazıyoruz. Denkleme dönüyoruz. Şu birinci denklem, değil mi? Birinci denklem ne olacak?
+
+81
+00:16:22,163 --> 00:16:26,783
+x artı 0 çarpı y artı 0 çarpı z eşit 4.
+
+82
+00:16:28,004 --> 00:16:30,884
+Değil mi? İkinci denklem 0 çarpı x.
+
+83
+00:16:32,144 --> 00:16:35,764
+1 çarpı y 0 çarpı z eşit eksi 1.
+
+84
+00:16:37,624 --> 00:16:39,344
+Y eşit eksi 1.
+
+85
+00:16:40,264 --> 00:16:44,484
+Aynı şekilde z eşit 2 olarak budur.
+
+86
+00:16:45,484 --> 00:16:46,783
+Tamam mı arkadaşlar?
+
+87
+00:16:47,923 --> 00:16:57,063
+Tabii, daha öncekiler gibi, söylediğimiz gibi daha önceden de kontrol etmekte yarar var. Hemen bu değerleri yerine yazarak kontrol edersiniz.
+
+88
+00:16:57,984 --> 00:17:08,724
+Aslında burada sizin daha önce alışık olduğunuz, işte denklemin şu katını alıp diğer denkleme atarak, böyle bir tanesini bulup, onu koyup,
+
+89
+00:17:09,140 --> 00:17:19,340
+Denklem çözmeyi yapıyoruz aslında burada değil mi? Bu artırılmış kas sayılar maddesini satırca indirilmiş forma getirirken aslında o işlemi yapıyoruz biz.
+
+90
+00:17:19,340 --> 00:17:35,460
+Peki, şimdi böyle bir denklemimiz var. Bu lineer denklem sistemini de artırılmış kas sayılar maddesini yazarak çözebiliriz.
+
+91
+00:17:36,627 --> 00:18:02,487
+Bu lineer denklem sisteminin arttırılmış kaslayan matrisi bu. Bunu satırca indirgenmiş forma getiriyoruz. İşte getirdik bakın. Bu satırca indirgenmiş forma geldi. Burada rank A eşit rank AB değil mi? Bu da eşit kaç arkadaşlar? 2.
+
+92
+00:18:03,188 --> 00:18:28,908
+Bilinmeyen sayısı 3'tü. Ne oldu? 3 eksi 2 bir tane keyfi değişkene bağlı ne var? Sonsuz çözüm var. Buradan denklemi yazalım. Bakın denklemi. X eksi 3 bölü 2 Y eşit pardon Z. Z olacak bu.
+
+93
+00:18:32,852 --> 00:18:57,292
+Z eşit eksi bir. Sonra, Y artı yedi bölü iki Z eşit iki. Dedik ya, bir keyfi değişkene bağlı sonsuz çözüm. Bu şu demek, X, Y, Z'den birisi keyfi değişken seçeceğiz.
+
+94
+00:18:59,604 --> 00:19:24,144
+Diğer ikisini, bu keyfi bilinmeyen hangisini seçtirsek onun cinsinden yazacağız. Burada canınızın istediğini keyfi değişken olarak alabilirsiniz. Ancak bu son ifadeye bakarsak, Z'yi keyfi değişken yazmak kolay. Çünkü Z'yi keyfi değişken olarak alırsak X ile Y hemen çıkıyor.
+
+95
+00:19:24,980 --> 00:19:51,420
+Ama x'i alırsak biraz daha uğraşmamız lazım. Burada biz z'yi alalım. Bakın buradan x'i z cinsinden yazarsam ne olur? 3 bölü 2 z eksi 1 olur. Buradan da g eşit eksi 7 bölü 2 z artı 2 olur. Tamam mı?
+
+96
+00:19:52,403 --> 00:19:54,403
+Z keyfi değişken.
+
+97
+00:19:56,824 --> 00:20:01,623
+Şimdi, şimdi, şöyle yapalım.
+
+98
+00:20:05,268 --> 00:20:13,748
+Z'ye değer verdikçe hep X'i bulacağız, Z'yi bulacağız. Ben daha da güzel hale getireyim bunu.
+
+99
+00:20:21,460 --> 00:20:26,800
+1 bölü 2 Z'ye ben K diyeyim. Tamam mı? 1 bölü 2.
+
+100
+00:20:34,036 --> 00:20:59,955
+z eşit bir bölü iki, K olsa, o zaman x ne olur arkadaşlar? x, 3K, eksi bir, y de, eksi yedi, K, artı iki olur. K ne? K, R'e sayı.
+
+101
+00:21:02,003 --> 00:21:08,243
+K'ya değer verdikçe, hep X, Y, Z'yi buluyoruz.
+
+102
+00:21:09,223 --> 00:21:18,263
+Hep X, Y, Z'yi buluyoruz. Örneğin, örneğin, K eşit bir için, X ne olur arkadaşlar?
+
+103
+00:21:20,183 --> 00:21:28,963
+3, eksi bir, iki olur. Y, eksi yedi artı iki, eksi beş olur. Değil mi?
+
+104
+00:21:30,516 --> 00:21:51,895
+Z ne olur? Z de 1 bölü 2 olur. Mesela K'ya 2 verirseniz farklı X, Y, Z bulursunuz. K'ya 3 verirseniz başka bulursunuz. Böyle kaç tane X, Y, Z buluruz?
+
+105
+00:21:52,531 --> 00:22:06,131
+K'ya vereceğimiz değer kadar, K'ya sonsuz tane vereceğimiz için, sonsuz tane X, Y, Z, 3'lüsü buluruz. Bunun çözümü bu. Mesela şunları yazabiliriz.
+
+106
+00:22:14,324 --> 00:22:14,824
+Evet.
+
+107
+00:22:27,028 --> 00:22:30,847
+Peki, şimdi bazen bunu şöyle de yazabiliriz arkadaşlar.
+
+108
+00:22:32,887 --> 00:22:37,347
+Hatta çözüm kümesi olarak şöyle yazılabilir.
+
+109
+00:22:39,168 --> 00:22:42,127
+X, Y, Z.
+
+110
+00:22:43,748 --> 00:22:52,807
+Öyle ki, öyle ki, işte X'i 3K-1Y.
+
+111
+00:22:54,067 --> 00:23:06,207
+Eksi 7K, artı 2, Z'de, 1 bölü 2K, K'da, real sayı. Böyle küme şeklinde de gösterilebilir.
+
+112
+00:23:07,327 --> 00:23:16,887
+Tabii biz burada Z'yi 1 bölü 2K aldık. Z'yi sadece K alarak da olabilirdi. Z yerine, K alarak da bunu yazabilirdik.
+
+113
+00:23:19,955 --> 00:23:27,475
+Hatta, bakın, buradakinde ne yapmışız? K'ya, Z'yi 2K almışım.
+
+114
+00:23:30,155 --> 00:23:42,895
+Evet, burada ben bir daha da güzel olsun diye bu şekilde almışız.
+
+115
+00:23:52,500 --> 00:24:11,960
+2K alınca da Z'yi de bakın kesirli ifadeden kurtarıyorum. Esas çözüm kümesi şu arkadaşlar. Böyle bunu görmemiz lazım. K eşit bir içinde örneğin şu çözüm olabilir diyoruz.
+
+116
+00:24:12,640 --> 00:24:19,940
+Şimdi başka bir çözüm var. Başka bir denklemimiz var. Bunu düşünelim oldu mu?
+
+117
+00:27:10,900 --> 00:27:31,259
+Peki, şimdi aynı yolla yapalım. Burada dikkat ederseniz, iki bilinmeyen var, üç denklem var. Böyle bir farklılık var. Yine aynı yolu izliyoruz. Artırılmış kas sayılar matrisini yazıyorum.
+
+118
+00:27:40,051 --> 00:27:48,871
+Ve bunu satırca artırılmış kat sayı, matrisini satırca indirgenmiş eşelon formu elde ediyorum.
+
+119
+00:27:49,771 --> 00:27:56,571
+Şuraya bakarak rank A'yı söylüyorum. Rank A, sıfırdan farklı satırların sayısı 2.
+
+120
+00:27:57,571 --> 00:28:00,651
+Hepsine bakarak rank AB'yi söylüyorum.
+
+121
+00:28:05,619 --> 00:28:20,059
+O da sıfırdan farklı satıların sayısı 3. Gördüğünüz gibi bu iki rank birbirinden farklı. Değil mi? O zaman ne diyoruz? Bu verilen lineer denklem sisteminin çözümü yoktur diyoruz.
+
+122
+00:28:21,439 --> 00:28:24,959
+Evet. Çözümü yoktur diyoruz.
+
+123
+00:28:26,799 --> 00:28:27,599
+Şimdi
+
+124
+00:28:28,372 --> 00:28:40,932
+Verilen lineer denklem sisteminde, denklemin ikinci yanı dediğimiz kısım, yani B1, B2, Bm'ler, bunlar sıfır olabilirler.
+
+125
+00:28:41,732 --> 00:28:51,092
+O zaman bu lineer denklem sistemine özel bir isim veriyoruz. Diyoruz ki lineer homojen denklem sistemi diyoruz.
+
+126
+00:28:52,115 --> 00:29:15,956
+Ve artırılmış kas sayılar maddesine baktığımız zaman son eklenen sütun sıfır olduğu için o rangı değiştirmeyecek. Rang A neyse rank AB de her zaman öyle olacaktır. Yani rank A eşit, rank AB olacaktır her zaman. Dolayısıyla homojen lineer denklem sisteminin her zaman çözümü vardır.
+
+127
+00:29:16,448 --> 00:29:32,488
+Her zaman çözümü vardır. Ayrıca, ayrıca bu homojen lineer denklem sisteminde x1, x2, nokta, nokta, x'ne bilinmeyenlerin yerine 0 yazarsanız bir çözüm bulursunuz.
+
+128
+00:29:33,768 --> 00:29:40,528
+Dolayısıyla x eşit 0, yani x eşit dediğim şu.
+
+129
+00:29:45,140 --> 00:29:48,900
+x1, x2 nokta nokta, xn.
+
+130
+00:29:51,020 --> 00:29:58,940
+Bu eşit sıfır, sıfır nokta nokta sıfır, her zaman bir çözümdür.
+
+131
+00:29:59,480 --> 00:30:00,820
+Her zaman çözümdür.
+
+132
+00:30:00,820 --> 00:30:07,580
+Bu çözüme biz sıfır çözüm ya da aşikar çözüm diyoruz.
+
+133
+00:30:08,240 --> 00:30:08,680
+Tamam mı?
+
+134
+00:30:09,268 --> 00:30:18,628
+Homojen lineer denklem sisteminin her zaman bir çözümü vardır. En azından bu sıfır çözümü, yani aşikar çözüm vardır.
+
+135
+00:30:25,108 --> 00:30:36,628
+Şimdi, biraz önce dedik ya, rank A, rank AB'ye, o da birbirlerine bunlar hep eşit olacak homojen lineer denklem sisteminde. Bu da R'ye eşit olacak dedik.
+
+136
+00:30:37,203 --> 00:30:38,844
+R'ye eşit olacak dedik.
+
+137
+00:30:41,403 --> 00:30:52,844
+Bu durumda, bakalım, sistemin çözümü yok ama bazen tek çözüm olabilir, bazen de sonsuz çözüm olabilir. Bunları ilgilenelim.
+
+138
+00:30:53,724 --> 00:31:03,564
+Aynı yukarıda genel halde verdiğimiz gibi, eğer R, N'ye eşitse, yani bilinmeyen sayısına eşitse, o zaman sistemin tek çözümü vardır.
+
+139
+00:31:03,564 --> 00:31:04,703
+Bu da nedir?
+
+140
+00:31:05,203 --> 00:31:22,363
+Tek çözüm olunca sıfır çözümüdür. Sıfır mutlaka çözüm. Eğer tek çözüm varsa o da sıfır çözümüdür. Eğer R, N'den küçük ise, o zaman N eksi keyfi değişkene bağlı, sonsuz çözüm vardır deriz sistemin.
+
+141
+00:31:24,043 --> 00:31:30,363
+Bakın, böyle bir lineer homojen denklem sistemimiz var. Hemen yazıyoruz şeyi.
+
+142
+00:31:32,564 --> 00:31:34,904
+Artırılmış kas sayılar matrisini yazdım.
+
+143
+00:31:35,644 --> 00:31:38,084
+İşte yazdım.
+
+144
+00:31:39,144 --> 00:31:47,464
+Sonra elemanter satır işlemleri uygulayarak bu matrisi, artırılmış kas sayılar matrisini ne yaptım?
+
+145
+00:31:48,084 --> 00:31:51,064
+Satırca indirgenmiş eşelon forma getirdim.
+
+146
+00:31:52,104 --> 00:31:58,744
+Ve burada bakıyorum bakın, rank a'ya, rank a zaten rank a, v'ye eşit olacak.
+
+147
+00:31:59,220 --> 00:32:12,859
+Sıfırdan farklı satırların sayısı 2 olduğu için ne deriz? Bilinmeyen sayısı da 3. 3-2. Bir keyfi değişkene bağlı sonsuz çözüm vardır deriz.
+
+148
+00:32:16,000 --> 00:32:23,900
+Eğer burada denkleme geçecek olursak ne olur? Arkadaşlar denklemi yazıyorum.
+
+149
+00:32:25,364 --> 00:32:28,084
+eksi z eşit sıfır.
+
+150
+00:32:29,544 --> 00:32:31,704
+y eşit sıfır.
+
+151
+00:32:33,604 --> 00:32:37,864
+Burada z'yi keyfi değişken seçmek bize kolaylık sağlayacak.
+
+152
+00:32:37,964 --> 00:32:40,144
+x'i de seçebilirsiniz, fark etmez.
+
+153
+00:32:40,984 --> 00:32:44,444
+Buradan x'i çekerseniz z olur.
+
+154
+00:32:45,224 --> 00:32:46,544
+y zaten sıfır.
+
+155
+00:32:53,236 --> 00:33:07,256
+K dersek, o zaman ne olur? XK olur, Y0 olur. Örneğin, K eşit 1 için bir çözümü nasıl buluruz? X eşit 1, Y eşit 0, Z eşit 1 olarak buluruz.
+
+156
+00:33:09,176 --> 00:33:16,336
+Tabi burada çözüm kümesini yazmak istersek, küme olarak yazmak istersek, ne olacak bu?
+
+157
+00:33:21,044 --> 00:33:31,663
+x, y, z, x eşit, k, değil mi?
+
+158
+00:33:36,180 --> 00:33:42,339
+y eşit 0, z eşit k, k eleman, değer sayı.
+
+159
+00:33:43,220 --> 00:33:48,940
+k'ya bir verirsiniz, iki verirsiniz, istediğiniz değerleri vererek sonsuz tane çözüm bulabilirsiniz.
+
+160
+00:33:50,359 --> 00:33:52,359
+Mesela bunu şöyle de yazabilirsiniz.
+
+161
+00:33:53,639 --> 00:34:03,019
+İlla böyle yazacaksınız diye bir şey yok. x eşittir k, y eşittir 0, z eşittir k.
+
+162
+00:34:04,884 --> 00:34:11,024
+K eleman, değer sayı şeklinde de yazılabilir.
+
+163
+00:34:12,163 --> 00:34:15,724
+Yani tek bir çözüm yazıp bırakmıyor. Sonsuz tane çözüm var.
+
+164
+00:34:17,623 --> 00:34:21,123
+Mesela bunu test olarak sorarlarsa,
+
+165
+00:34:22,524 --> 00:34:32,043
+mesela x eşit 2, y eşit 0, z eşit 2 çözüm ışıklarının arasında bu varsa bu seçilmeli değil mi?
+
+166
+00:34:35,411 --> 00:34:38,871
+Evet, şuna bakın arkadaşlar, bunu düşünün siz.
+
+167
+00:36:56,947 --> 00:37:22,627
+Peki, yine aynı yöntemle bakalım arkadaşlar. Ne yapıyoruz? Artırılmış kasaylar maddesini yazdık. Ve elemanter satır işlemleri uygulayarak bunu elde ettik. Buradan da gördüğünüz gibi ne olur? Rank A, rank A ve Eza etine eşit olacaktı. Bu da sıfırdan farklı satırların sayısı 3 olduğu için 3'e eşit.
+
+168
+00:37:22,976 --> 00:37:31,775
+O zaman bilinmeyen sayısına eşit. Yani sistemin tek çözümü vardır ve bu tek çözüm x eşit, y eşit, z eşit sıfırdır diyoruz.
+
+169
+00:37:33,355 --> 00:37:39,956
+Şimdi bir başka yöntem vereceğiz. Buna kremer yöntemi diyoruz.
+
+170
+00:37:40,876 --> 00:37:47,876
+Ama bu yöntemde bilinmeyen sayısıyla denklem sayısı eşit olmalı.
+
+171
+00:37:48,467 --> 00:38:11,627
+Bilinmeyen sayısı, denklem sayısına eşit olmalı. Yani ilk başta verdiğimiz lineer denklem sistemindeki n ile m değerleri birbirine eşit olacak. Yani en bilinmeyenli n denklemden oluşan bir lineer denklem sistemi olacak. İşte böyle bir sistem varsa.
+
+172
+00:38:12,596 --> 00:38:29,215
+En bilinmeyenli, en tane denklemden oluşan bir sistem varsa, burada kat sayılar matrisi olan A'nın, artık ne olacak? Eninci mertebeden bir kare matrisi olacak.
+
+173
+00:38:30,296 --> 00:38:34,076
+İşte bu kare matrisinin determinantına bakıyoruz arkadaşlar.
+
+174
+00:38:37,811 --> 00:38:55,271
+Eğer sıfırdan farklı ise, sıfırdan farklı ise, o zaman, o zaman, işte AX eşit B, kısaca böyle gösteriyorduk ya, denklem sistemini, işte bu denklem sisteminin tek bir çözümü vardır diyoruz.
+
+175
+00:38:55,271 --> 00:38:58,532
+Ve bu çözümü şöyle buluyoruz.
+
+176
+00:38:59,971 --> 00:39:01,991
+X, bakın bilinmeyenler,
+
+177
+00:39:03,284 --> 00:39:27,804
+matrisi, sütun matrisi. Determinantı da, A'nın determinantını da delta ile gösterelim. Delta, İ ile de şunu gösteriyoruz. A kas sayılar matrisinde, İ'ninci sütün yerine şunu yazıyoruz. Tamam mı arkadaşlar? A kas sayılar matrisinde, İ'ninci sütün yerine bunu yazarak,
+
+178
+00:39:28,724 --> 00:39:56,264
+elde edilen matrisin determinantını gösterecek delta i. Tamam mı? Mesela delta 1 dersek, A matrisi nerede? Burada. A11, A12, A11. Birinci sutun yerine ne yazıyorum? B1, B2 nokta nokta, B ne yazdım?
+
+179
+00:39:57,043 --> 00:40:23,304
+A12 duruyor burada. A22 nokta nokta, AN2 değil mi? A13 nokta nokta, ANN. Yani birinci tutunu kaldırıyorum, yerine B1, B2, BN'yi koyuyorum. O zaman delta 1'i elde ediyorum. Delta 2'yi nasıl elde ederim?
+
+180
+00:40:23,764 --> 00:40:46,963
+İkinci sutunu çıkartacağız. Delta 2'yi nasıl elde edeceğiz? Şurada A1, 1, A2, 1, .an, 1 duruyor. İkinci sutunu kaldırıyorum. B1, B2, .bn yazıyorum. Burada A1, 3 diye devam ediyor. Delta i'leri böyle elde ediyoruz.
+
+181
+00:40:50,068 --> 00:41:01,248
+X, Y bilinmeyenini de şöyle hesaplıyoruz arkadaşlar. Delta, Y bölü, delta alarak X, Y bilinmeyeni buluyoruz.
+
+182
+00:41:02,548 --> 00:41:13,988
+Bu şekilde çözüm bulmaya biz kremer yöntemiyle çözüm diyoruz. Yukarıda tabii determinant A sıfırdan farklıysa dedik.
+
+183
+00:41:15,155 --> 00:41:35,916
+Determinanta sıfıra eşit de olabilir. İşte bu durumda, bu durumda, Kremer yöntemine göre sistemi çözemeyiz diyeceğiz. Bakın, sistemin çözümü yoktur demiyoruz. Ne diyoruz? Kremer yöntemine göre sistemi çözemeyiz diyoruz.
+
+184
+00:41:41,427 --> 00:41:59,427
+Çözümü ya yoktur ya da sonsuz çözümü vardır. Ve bunu nasıl yapacağız? Denk matrisler yöntemiyle bulacağız. Ya sonsuz çözüm bulacağız ya da çözüm yoktur durumuna ulaşacağız. Ama, ama...
+
+185
+00:42:00,659 --> 00:42:17,139
+Şunu biliyoruz, determinant A0 ise sistemin tek çözümü durumu söz konusu değil. Ya sonsuz çözüm var ya da hiç yok. Determinant A0'dan farklı ise tek çözüm var, eğer istersek kremer yöntemiyle böyle bulacağız.
+
+186
+00:42:17,139 --> 00:42:27,720
+Tabi bu tek çözümü normal denk matrisler yoluyla da çözebiliriz. Bakın bir denklemimiz, 3 bilinmeyen 3 denklem var.
+
+187
+00:42:28,148 --> 00:42:30,847
+Bunu kremer sistemiyle çözelim.
+
+188
+00:42:31,568 --> 00:42:44,708
+Tabi burada, burada, kremer sistemine göre çözelim dedik ama, çözümün olup olmaması için, determinant A, delta'ya bakmamız lazım.
+
+189
+00:42:45,268 --> 00:42:48,528
+Bu sıfırdan farklıysa, bunu yapabiliriz değil mi?
+
+190
+00:42:50,528 --> 00:42:53,347
+Yani, determinant A,
+
+191
+00:42:56,755 --> 00:42:58,536
+Bu da nedir?
+
+192
+00:43:10,132 --> 00:43:10,931
+Bunu bulacağız.
+
+193
+00:43:16,628 --> 00:43:17,188
+Hmm.
+
+194
+00:43:20,947 --> 00:43:21,747
+Bunu bulalım.
+
+195
+00:43:25,087 --> 00:43:29,947
+Birinci satır şöyle kalsın. Birinci satırın eksi katını ikinci satırı ekliyorum. Bakın.
+
+196
+00:43:30,688 --> 00:43:31,907
+Eksi iki katını ekleyeyim.
+
+197
+00:43:36,244 --> 00:43:45,963
+Ya da birinci satırın eksik katını, ikinci satır ekleyelim, o daha kolay olacak.
+
+198
+00:43:47,444 --> 00:43:51,904
+Bir olur, sıfır olur, sıfır olur.
+
+199
+00:44:03,315 --> 00:44:16,795
+Eksi katını üçüncüye ekleyelim. Burası da iki olur. Bunu hesaplayalım. Sonra siz delta bir, delta iki, delta üçü hesaplamaya çalışın bakalım. Oldu mu arkadaşlar?
+
+200
+00:52:51,860 --> 00:53:09,900
+Evet, bu değerleri buldunuz herhalde. Şöyle hem kontrol etmiş olursunuz. Şimdi delta'yı, yani A matrisinin determinantının x4 olarak bulunmuş olmanız lazım.
+
+201
+00:53:19,059 --> 00:53:28,819
+Kaldırıp yerine 5, 6, 9'u, işte bakın, ekleyerek elde ettiğimiz determinant delta 1, o da eksi 4 olarak bulunuyor.
+
+202
+00:53:29,900 --> 00:53:43,259
+Sonra bu 5, 6, 9'u, A'nın determinantında, yani delta ya da ikinci sütun yerine yazarak delta 2'yi buluyoruz, eksi 4.
+
+203
+00:53:46,036 --> 00:54:11,195
+Eksis 8 olarak yine 3. sutuna bu sefer 5, 6, 9'u koyarak buluyoruz. Bu determinantları buluyoruz. Sonra, tabii delta sıfırdan farklı olunca bir kere şunu söylüyoruz. Kremer yöntemine göre bu lineer denklem sistemi çözülebilir ve tek çözüm vardır deyip ondan sonra delta 1, delta 2, delta 3'ü buluyoruz.
+
+204
+00:54:11,572 --> 00:54:27,912
+determinantı A'nın sıfırça, orada bitiriyoruz. Ne diyoruz? Kremer yöntemine göre bunun çözümü yoktur diyoruz. Sonra çözüm var mı? Varsa sonsuz çözüm durumunu denk matrisler yöntemiyle yapacağız.
+
+205
+00:54:28,492 --> 00:54:37,092
+Şimdi burada x'i nasıl bulacağız? x delta bir bölü delta'dan. Delta bir eksi dört olarak buldu işte.
+
+206
+00:54:38,547 --> 00:54:41,147
+Delta'da eksi 4, x 1.
+
+207
+00:54:42,487 --> 00:54:45,267
+Y, delta 2 bölü delta.
+
+208
+00:54:46,027 --> 00:54:48,147
+Delta 2, eksi 4.
+
+209
+00:54:49,447 --> 00:54:51,667
+Delta'da eksi 4'tü, o da bir çıktı.
+
+210
+00:54:52,807 --> 00:54:54,627
+Z, delta 3 bölü delta.
+
+211
+00:54:55,207 --> 00:54:57,067
+Delta 3, eksi 8.
+
+212
+00:54:57,987 --> 00:54:59,567
+Delta 2 olarak bulduk.
+
+213
+00:55:00,267 --> 00:55:02,967
+Demek ki bunun çözümü x eşit 1.
+
+214
+00:55:03,539 --> 00:55:23,719
+Y eşit bir, Z eşit iki. Tek bir çözüm var, o da bu. Denklemde yerine koyarak sağlamayı yapabilirsiniz. Mesela birinci denklemde koysak, bir artı iki çarpı bir, ne olur? Üç eder, artı iki, eşit beş. Birinci denklem sağlanır. Diğerler de elbette sağlanır.
+
+215
+00:55:25,364 --> 00:55:36,463
+Şimdi başka bir lineer denklem sistemimiz var. Bunu kremer yöntemine göre çözülebiliyorsa çözelim. Ne yapacağız yine? Delta'ya bakacağız.
+
+216
+00:55:36,463 --> 00:55:48,783
+Delta'ya bakıyoruz. Bakın. Delta. Determinat A yani.
+
+217
+00:55:49,844 --> 00:56:15,324
+2, 1, 1, 4, 2, 2, 3, 1, 5. Bunu hesapladığımız zaman sıfır olduğunu görürsünüz. Zaten burada ikinci satır, birinci satırın iki katı arkadaşlar. Bu determinant da ikinci satır, birinci satırın iki katı. Dolayısıyla determinant özelliklerinden sıfır. Ne diyoruz? Bu sistem.
+
+218
+00:56:15,764 --> 00:56:42,503
+Kremer yöntemiyle çözülemez. O zaman artırılmış kas sayılar maddesini yazarak bu sistemi çözümünü araştırabiliriz. Yazdık artırılmış kas sayılar maddesini. Bu. Devam ettik. Satırca indirgenmiş eşolom formaya geldi. Bakın rank A iki, rank AB, o da iki. Birbirine eşit. Bilinmeyen sayısı üç.
+
+219
+00:56:43,380 --> 00:56:47,579
+3-2 bir keyfi değişkene bağlı sonsuz çözüm vardır.
+
+220
+00:56:48,460 --> 00:56:53,099
+Buradan denkleme dönerseniz, şuradan ne yazarız?
+
+221
+00:56:53,940 --> 00:57:05,579
+x artı 4 z eşit eksi 5, buradan da y eksi 7 z eşit 17 yazıyoruz.
+
+222
+00:57:06,228 --> 00:57:30,827
+Ve Z'ye de K bilinmeyen, keyfi bilinmeyen seçerek Z'ye K alırsak X ne olur? X eksi 5, eksi 4K olur. Y ne olur? 17, eksi 7 bu tarafa giderse 7K olur. K ne? K bir real sayı. K'ya değerler vererek sonsuz tane çözüm bulabilirsiniz.
+
+223
+00:57:34,159 --> 00:57:44,960
+Bir tanesini bulabilirsiniz. Bu sonsuz çözümden birini bulabilirsiniz. O da nedir? K'ya bir verirsek, x eşit eksi 5 eksi 4, yani eksi 9.
+
+224
+00:57:45,699 --> 00:58:01,239
+Y eşit 17 artı 7, yani 24. Z, o da K'ya eşitti. Bir olarak bir tanesini bulabilirsiniz. K'ya başka değerler vererek sonsuz tane çözüm bulabiliriz.
+
+225
+00:58:02,931 --> 00:58:21,692
+Bir başka çözüm yöntemi ama yine kremer yönteminde olduğu gibi bilinmeyen sayısı denklem sayısına eşit olduğu bir durumda kullanılabilecek bir yöntem.
+
+226
+00:58:22,891 --> 00:58:29,612
+Bu yönteme de biz kas sayıların matrisinin inversi yardımıyla çözüm yöntemi diyoruz arkadaşlar.
+
+227
+00:58:31,123 --> 00:58:47,223
+Bakın, en bilinmeyen, en tane denklem var. Bu lineer denklem sistemini düşünüyoruz. Yine burada, kas sayılar matrisinin determinantına bakıyoruz.
+
+228
+00:58:55,795 --> 00:59:03,955
+O zaman bu yöntem kullanılabilir. Yani kaç sayılan matrisinin inversi yardımıyla çözüm yapılabilir.
+
+229
+00:59:03,955 --> 00:59:23,263
+Ancak determinant A0'e eşitse, determinant A eşit 0 ise bu yöntem kullanılabilir.
+
+230
+00:59:23,264 --> 00:59:24,304
+Nılmaz.
+
+231
+00:59:28,179 --> 00:59:44,099
+Yani şunu deriz, bu yönteme göre sistem çözülemez deriz. Dolayısıyla yine arttırılmış kas sayılar matrisini yazarak denk matrisler yöntemiyle çözüm araştırılacak.
+
+232
+00:59:53,264 --> 01:00:13,864
+Çözümü araştıracağız. Orada da iki durum söz konusu. Ya sonsuz çözüm olabilir ya da çözümsüzlük hali olabilir. Arkadaşlar, bu kısım, buraya kadar olan kısım kremer yöntemiyle aynı. Determinant A sıfırdan farklıysa çözümü vardır.
+
+233
+01:00:13,864 --> 01:00:20,764
+Kat sayılan matrisin üniversite yardımıyla çözüm vardır ve bu çözüm tektir. Tek çözüm durumudur.
+
+234
+01:00:21,460 --> 01:00:26,460
+Determinant A sıfırsa bu yönteme göre çözüm yapamayız diyoruz.
+
+235
+01:00:28,619 --> 01:00:35,259
+Peki, determinant A sıfırdan farklıysa bu yöntem nasıl kullanılacak?
+
+236
+01:00:36,307 --> 01:00:50,907
+Determinant A0'dan farklıysa A matrisinin inversi elbette vardır. İşte biz A matrisinin inversini kullanacağız. Zaten bu yöntemin adı da öyle. Katsayılan matrisinin inversi yardımıyla çözüm yöntemi.
+
+237
+01:00:53,208 --> 01:00:57,807
+Bu lineer denklem sistemini kısaca şöyle yazıyorduk bakın.
+
+238
+01:00:58,612 --> 01:01:07,871
+A kas sayılar maddesi, X bilinmeyenlerin oluşturduğu sütun maddesi, B'de denklemin ikinci yanı olan sütun maddesi şeklinde yazabiliyordur.
+
+239
+01:01:07,871 --> 01:01:22,871
+İşte burada, bu eşitlikle, eşitliğin iki yanını soldan A üzeri eksi bir ile çarparız. A üzeri eksi bir mevcut ya, çarpıyoruz. Tamam mı? Çarpınca...
+
+240
+01:01:24,148 --> 01:01:50,148
+Sol tarafta x kalır. Yani bilinmeyenlerin sütun matrisi kalır. Karşı tarafta da ne kalır? İki matrisin çarpımı. Neticede bir matris olur. İşte iki matrisin eşitliğinden x eşittir. Diğer matrisin eşitliğinden karşılıklı elemanları eşitleyerek bilinmeyenleri, yani x1, x2, xn'i bulabiliriz.
+
+241
+01:01:51,635 --> 01:02:07,396
+Bu yönteme kat sayılar matrisin üniversite yardımıyla çözüm diyoruz. Bakın burada bir matrisimiz var. Bunu bu yöntemle çözmeye çalışalım. Önce ne yapacağız?
+
+242
+01:02:18,547 --> 01:02:21,127
+Eksi iki, iki, eksi bir.
+
+243
+01:02:24,007 --> 01:02:25,447
+Bunu hesaplayacağız.
+
+244
+01:02:26,927 --> 01:02:28,307
+Bunu hesaplayalım isterseniz.
+
+245
+01:02:28,867 --> 01:02:29,047
+Hemen.
+
+246
+01:02:30,387 --> 01:02:32,627
+Bir, üç, bir.
+
+247
+01:02:34,687 --> 01:02:38,507
+Şöyle yapalım isterseniz. İkinci satırı önce, üçüncü satıra ekleyeyim.
+
+248
+01:02:38,827 --> 01:02:39,748
+Hemen burası sıfır olur.
+
+249
+01:02:40,820 --> 01:03:06,559
+Burası 3 olur, değil mi? İkinci satırı üçüncü satırı eklersem, burası 3 olur. Burası da 0 olur. Aslında başka bir şey yapmadan, veya biraz daha 0'ı artıralım, ne yapalım? Birinci satırın eksi katını ikinci satırı ekleyeyim, burası 0 olur. Eksi 2 olur, 0 olur.
+
+250
+01:03:08,532 --> 01:03:10,812
+Hemen bunu hesaplarsak ne olur arkadaşlar?
+
+251
+01:03:16,019 --> 01:03:19,359
+Eğer işlem hatası yapmadıysak, bu da sıfır çıkar.
+
+252
+01:03:21,779 --> 01:03:23,179
+Evet, şöyle hızlıca bir bakayım.
+
+253
+01:03:24,559 --> 01:03:32,019
+Şurası sıfır oldu, ekledik, üç oldu, ekledik, sıfır oldu, eksik katını ekledim, sıfır oldu, eksik katını ekledim, eksik oldu.
+
+254
+01:03:32,919 --> 01:03:33,299
+Evet.
+
+255
+01:03:35,799 --> 01:03:37,259
+O zaman ne diyoruz?
+
+256
+01:03:38,179 --> 01:03:40,299
+Bu lineer denklem sistemini
+
+257
+01:03:41,300 --> 01:03:57,800
+Kas sayılan matrisinin üniversite yardımıyla çözemeyiz. O zaman ilk söylediğimiz yöntemle çözeceğiz. Bunun tersini bulmuşuz. Ben bir hata mı yapıyorum acaba?
+
+258
+01:04:01,715 --> 01:04:02,255
+Allah.
+
+259
+01:04:08,275 --> 01:04:12,055
+Ekledik. Haa, şurayı hata yapıyorum ben.
+
+260
+01:04:14,375 --> 01:04:14,835
+Yok.
+
+261
+01:04:16,895 --> 01:04:19,655
+İki, bir, bir.
+
+262
+01:04:20,695 --> 01:04:22,135
+Bir, üç, bir.
+
+263
+01:04:23,795 --> 01:04:24,715
+Eksi iki, iki.
+
+264
+01:04:26,675 --> 01:04:27,215
+Eksi bir.
+
+265
+01:04:28,395 --> 01:04:30,155
+Eklersem sıfır olur. Üç olur.
+
+266
+01:04:30,155 --> 01:04:31,135
+Sıfır olur.
+
+267
+01:04:32,575 --> 01:04:34,095
+Eksi patını eklersek.
+
+268
+01:04:38,036 --> 01:05:04,475
+Pardon, evet, eksi iki katını ekleyeceğiz. Şurada bir hata yapmışım arkadaşlar. Birinci satırın, eksi iki katını ikinci satıra ekliyorum. Burası sıfır oldu. Eksi iki katı üçün, eksi altı olur, eklersem, eksi beş olur şurası. İkinin, eksi iki katı, eksi iki eder, buraya eklersem, burası da eksi bir olur. Evet, şunu düzeltelim.
+
+269
+01:05:05,652 --> 01:05:07,652
+Burada bir hata yapmışım ben.
+
+270
+01:05:08,272 --> 01:05:12,532
+Gördüğünüz gibi bir hata bütün soruyu, çözümünü etkileyebilir.
+
+271
+01:05:13,672 --> 01:05:17,292
+Peki, o zaman ne olacak? Şurayı bir silelim.
+
+272
+01:05:21,043 --> 01:05:26,643
+Evet. Burası eksi beş, burası eksi bir olacak.
+
+273
+01:05:29,843 --> 01:05:41,843
+Peki. Bu da nedir? Eksi beş çarpı sıfır, eksi, eksi bir çarpı üç. Üç olur herhalde. Evet. Bu sıfırdan farklı.
+
+274
+01:05:43,523 --> 01:05:48,323
+Sıfırdan farklı. O zaman bu yönteme göre çözüm yapabiliriz.
+
+275
+01:05:49,300 --> 01:06:13,119
+Ne yapacağız? A üzeri eksi biri bulacağız. Değil mi? A üzeri eksi biri bulacağız. A üzeri eksi biri bulmayı biliyorsunuz. Bulduk diyelim şu şekilde. Şimdi A x eşittir b.
+
+276
+01:06:14,547 --> 01:06:18,807
+Buradan, a üzeri eksi 1 ile çarparsak, x eşit ne olur?
+
+277
+01:06:20,327 --> 01:06:23,987
+a üzeri eksi 1, b olur.
+
+278
+01:06:25,107 --> 01:06:25,767
+Bu da nedir?
+
+279
+01:06:27,027 --> 01:06:37,887
+x, y, z, eşit, a üzeri eksi 1, 1, 5 bölü 3.
+
+280
+01:06:39,027 --> 01:06:42,187
+2 bölü 3, 0, 1 bölü 3,
+
+281
+01:06:56,436 --> 01:07:22,256
+5, 4, 3. Bu da eşittir. Eksi 1 çarpı 5. Eksi 5. 5 bölü 3 çarpı 4. Artı 20 bölü 3. Artı 2.
+
+282
+01:07:23,731 --> 01:07:26,131
+2 bölü 3'te 3'ü çarpacağız.
+
+283
+01:07:27,192 --> 01:07:27,391
+2
+
+284
+01:07:27,391 --> 01:07:33,371
+0 çarpı 5
+
+285
+01:07:33,371 --> 01:07:35,851
+4 bölü 3
+
+286
+01:07:35,851 --> 01:07:37,851
+1 bölü çarpı 4
+
+287
+01:07:37,851 --> 01:07:41,051
+1 bölü çarpı 3
+
+288
+01:07:41,051 --> 01:07:48,091
+Diğer elemanı yazalım. 2 çarpı 5, 10
+
+289
+01:07:48,091 --> 01:07:49,751
+Eksi
+
+290
+01:07:50,931 --> 01:08:00,132
+Eksi otuz iki bölü, üç dört ile çarpıyoruz. Eksi beş.
+
+291
+01:08:04,563 --> 01:08:26,923
+Evet, bu da eşit ne olur? Hesaplarsak, eksi on beş, beş, payda eşit dersek, eksi on beş artı yirmi artı altı. Nedir bu da? On bir.
+
+292
+01:08:31,315 --> 01:08:32,996
+bölü 3 herhalde.
+
+293
+01:08:42,836 --> 01:09:07,336
+Burası 7 bölü 3. Burası paydaş dersek 30-32-15 nedir? 16-16 bölü 3 diye buluyoruz.
+
+294
+01:09:09,460 --> 01:09:13,239
+Tabii, denklemi sağlayıp, dına da bakmakta yarar var.
+
+295
+01:09:15,239 --> 01:09:16,000
+Evet.
+
+296
+01:09:20,020 --> 01:09:47,280
+Şurası, buradan eksi bir var. Pardon, şurası otuz ikiymış, evet, on yedi olacak. Evet, bu şekilde buluyoruz. Buradan da ne olur? Eşitlersek, x eşittir, on bir bölü üç. İşte, y eşittir, yedi bölü üç. Tamam. Z eşittir.
+
+297
+01:09:48,948 --> 01:09:54,208
+Eksiyeli on yedi bölü üç olarak buluruz.
+
+298
+01:09:54,708 --> 01:09:59,868
+Tabii denklem değerine yazarak kontrol etme sağlamada yapabiliriz.
+
+299
+01:10:04,692 --> 01:10:06,952
+Evet, bir örneğimiz var burada.
+
+300
+01:10:10,739 --> 01:10:11,860
+Şöyle bir örnek.
+
+301
+01:10:14,340 --> 01:10:30,579
+Bu lineer denklem sistemini denk matrisler yardımıyla, ona ne demiştik, Gauss-Jordan indirgeme yöntemiyle çözünüz diye bir örneğimiz var.
+
+302
+01:10:34,484 --> 01:10:35,744
+Bunu düşünün bakalım.
+
+303
+01:11:47,475 --> 01:11:51,995
+Şimdi bir şey sormak istiyorum size. Ben geçen derste bu kodu yazdım mıydı size?
+
+304
+01:11:56,564 --> 01:11:57,884
+Yazmıştınız hocam.
+
+305
+01:11:58,203 --> 01:12:17,404
+Tamam. Onu bir şey yapmak istedim. Peki. Şimdi bu Gauss-Jordan indirgeme yöntemiyle bu denklemi, diğer denklem sistemini çözmek istersek ne yapacağız? Artırılmış kas sayılar maddesini yazacağız. Yani A, B'yi yazacağız değil mi?
+
+306
+01:12:25,043 --> 01:12:42,564
+İşte şu matris. A burada bakın. A'nın yanına B'yi de ekledik. Sonra ne yapıyorduk? Bunu, bu artırılmış kat sayılar matrisini satırca indirgenmiş eşelon forma getiriyorduk. Elemanter satır işlemlerini uygulayarak.
+
+307
+01:12:50,100 --> 01:13:04,960
+A'ya denk olan kısım, hepsi de arttırılmış kat sayıları var. Burada gördüğünüz gibi sıfırdan farklı satırların sayısı 4. Yani rank A eşit rank AB.
+
+308
+01:13:10,547 --> 01:13:12,467
+O da eşit 4.
+
+309
+01:13:14,247 --> 01:13:17,147
+Bilinmeyen sayısı da 4.
+
+310
+01:13:17,347 --> 01:13:20,247
+Değil mi? Bilinmeyen sayısı da 4.
+
+311
+01:13:20,347 --> 01:13:26,827
+O zaman bu lineer denklem sisteminin tek çözümü vardır deriz.
+
+312
+01:13:27,188 --> 01:13:29,887
+Tek çözümü vardır deriz.
+
+313
+01:13:53,427 --> 01:14:02,487
+O tek çözümü de buradan denkleme dönerseniz ne olur? X eşit değil mi? X eşit 0.
+
+314
+01:14:08,212 --> 01:14:24,532
+y eşit 2, z eşit 3 bölü 2, t eşit 1 bölü 2 olarak buluruz.
+
+315
+01:14:26,971 --> 01:14:31,051
+Tabi yerine koyarak sağlamayı da yapabilirsiniz.
+
+316
+01:14:53,427 --> 01:15:05,188
+Peki, bugün burada bırakacağım. Gelecek dersimizde bu konuyla ilgili örnekler çözmeye devam edeceğiz arkadaşlar. Bana sorunuz varsa, buyurun sorun.
+
+317
+01:15:08,307 --> 01:15:17,327
+Sınav tarihinizi öğrenmişsinizdir herhalde. Galiba 30 Nisan'dı hatırladığım kadarıyla. Öğrendiniz mi? Evet.
+
+318
+01:15:18,387 --> 01:15:40,788
+Bu şu demektir, biz haftaya da ders yapacağız. Ondan sonraki hafta, bilmiyorum belki ders olmayabilir sınav haftasında. Sınav haftası derlerse ders de olmayabilir. Yani önümüzdeki haftadan sonra sınava direktman gideceksiniz. Önümüzdeki hafta örnek yaparız o yüzden.
+
+319
+01:15:41,788 --> 01:15:45,368
+Peki, o zaman gelecek derste görüşmek üzere.
+
+320
+01:15:46,260 --> 01:15:50,780
+Hepinize iyi günler diliyorum. İyi dersler diliyorum. Hoşçakalın.
+
+321
+01:15:52,720 --> 01:15:53,340
+İyi günler.
