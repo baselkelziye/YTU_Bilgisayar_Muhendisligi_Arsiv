@@ -1,0 +1,3559 @@
+1
+00:00:05,684 --> 00:00:07,500
+Okay, hello to everyone.
+
+2
+00:00:30,356 --> 00:00:31,996
+Evet arkadaşlar, herkese merhaba.
+
+3
+00:00:33,155 --> 00:00:38,555
+Geçen hafta da söylemiştim derslerimize, bu günü bir çeyrekte başlatacağım her hafta, tamam?
+
+4
+00:00:39,276 --> 00:00:40,496
+Ona göre şey yaparsınız.
+
+5
+00:00:41,536 --> 00:00:46,496
+Okay, so every Tuesday I will start about 1.15, okay?
+
+6
+00:00:51,188 --> 00:00:53,228
+her hafta bir çeyrek de başlatacağım.
+
+7
+00:00:53,228 --> 00:00:53,487
+Tamam.
+
+8
+00:01:00,756 --> 00:01:16,756
+Burada herkese merhaba. Hi to everyone. Okay. Okay. So if you want, let us start. Last week, we see limits and...
+
+9
+00:01:17,587 --> 00:01:19,587
+Evet, şimdi bu konuda bir soru var.
+
+10
+00:01:19,587 --> 00:01:21,587
+Bu konuda bir soru var.
+
+11
+00:01:21,587 --> 00:01:41,587
+Ve bu konuda bir soru var.
+
+12
+00:01:41,587 --> 00:01:43,587
+Evet.
+
+13
+00:01:44,563 --> 00:01:46,563
+Evet, tamam.
+
+14
+00:01:46,563 --> 00:01:52,563
+Tamam, tamam.
+
+15
+00:01:52,563 --> 00:02:11,487
+Evet, tamam.
+
+16
+00:02:11,487 --> 00:02:19,487
+Yine de onu anlatacağım. Çünkü türev, sınav testi olacak büyük ihtimalle ama tabi testi de bu tarz sorulabilir. O yüzden onu en sonu bıraktım.
+
+17
+00:02:20,668 --> 00:02:24,348
+Okay, now we can start. Our next subject is continuity. Okay?
+
+18
+00:02:26,487 --> 00:02:38,168
+Okay, so firstly I want to mention again. I said that I gave you three concepts. I said that in this level we have limits.
+
+19
+00:02:38,900 --> 00:02:44,340
+Okay, in here we have continuity and in here we have derivation.
+
+20
+00:02:47,139 --> 00:02:54,700
+So, if I want to talk about continuity, firstly the function has to have limit at the point.
+
+21
+00:02:55,060 --> 00:03:01,000
+And extra, I need some conditions, some extra restriction.
+
+22
+00:03:01,159 --> 00:03:01,719
+What is that?
+
+23
+00:03:02,159 --> 00:03:07,099
+If you talk about a point, if you have a limit at this point,
+
+24
+00:03:08,211 --> 00:03:34,219
+Bu, bu
+
+25
+00:03:34,292 --> 00:03:40,471
+Okay, so let us see here, okay, what does it say?
+
+26
+00:03:42,867 --> 00:03:55,927
+Most functions are, most of the functions, domains are, some of them are real number, but some of them are intervals, closed or open intervals, or unions or separate intervals.
+
+27
+00:03:55,927 --> 00:04:09,227
+For example, I said that if we have absolute value function, it will be like this, for example, minus infinity to 4, union, for example, 8 to the infinity, or something like that.
+
+28
+00:04:09,843 --> 00:04:29,423
+This is union of some intervals. Now, we will introduce two points. What are the points? What is the meaning of interior and end point? If you have a closed interval, like this, for example, 1,3.
+
+29
+00:04:30,036 --> 00:04:40,895
+We have infinity lots of points in this closed interval. At the point x equals 1 and x equals 3, they are called endpoints.
+
+30
+00:04:42,875 --> 00:04:54,195
+Okay, they are called endpoints and all the other points, what is that, in the open interval 1 to 3, they are called interior points.
+
+31
+00:04:55,615 --> 00:04:56,216
+Okay.
+
+32
+00:04:56,819 --> 00:05:21,340
+interior yani iç nokta. Bu da uç nokta. So all these points are called interior points. And if you want to talk about continuity, it is different in interior point and it is different at end points. Okay? What is the difference? For example, if you talk about this function,
+
+33
+00:05:21,779 --> 00:05:37,980
+What is our domain of this function? The domain is between minus 2 to 2. So our endpoints are minus 2 and 2. They are endpoints. And all the other points in the open interval, minus 2,2, are called interior points. Okay?
+
+34
+00:05:38,759 --> 00:05:42,779
+So, let us start with the continuity at an interior point.
+
+35
+00:05:45,139 --> 00:06:02,500
+A function is continuous at an interior point c if you have limit, and if this limit equals to fc, then I can say that this function is continuous at c. But if
+
+36
+00:06:02,932 --> 00:06:18,351
+Limit doesn't, if the limit doesn't have or not exist or they exist but left side and right side are different or not equal to fc, then we can say that it is discontinuous.
+
+37
+00:06:18,831 --> 00:06:25,731
+What is that? For example, you can have a limit, okay, you can have a limit but
+
+38
+00:06:26,096 --> 00:06:50,435
+Maybe they are not equal to each other. Then we say that it is discontinuous. Or I don't have any limit. For example, I have c plus fx, but fx not equal to limit x goes to c from the left side. Then at this point, the function is discontinuous. Otherwise, it is continuous.
+
+39
+00:06:51,507 --> 00:07:01,667
+Now, look at these examples. Okay. Let us see at the point it is continuous or not. Okay. Look at these three examples.
+
+40
+00:07:06,483 --> 00:07:13,503
+You can see that at each equation, I have a clause. It means that I have FCRDs.
+
+41
+00:07:14,803 --> 00:07:22,823
+What about limit? When I come from the left side and right side, what are the limits when I come from here?
+
+42
+00:07:23,763 --> 00:07:29,163
+From the left side, this limit video is this. When you come from here, okay.
+
+43
+00:07:30,579 --> 00:07:53,899
+This limit also is this. So at a, the function is continuous. Okay, what about this one? This one, when I come from here, from the left side and from the right side, the limits are the same. So I have limit x goes to c, I have fx limit, but
+
+44
+00:07:54,451 --> 00:08:04,971
+What is fc? fc is this. They are not equal to each other. Then it means that f is discontinuous. Okay.
+
+45
+00:08:05,651 --> 00:08:13,312
+What about this? When I come from the left side here, the limit from the left side is this.
+
+46
+00:08:13,312 --> 00:08:20,211
+But when I come from the right side here, this is your limit.
+
+47
+00:08:20,528 --> 00:08:30,327
+Left side and right side limit are different. Let me write here, let us take, this is C, I want to write, let us take A, let us take B.
+
+48
+00:08:30,627 --> 00:08:47,528
+In this example, limit x goes to C, from the left side, the limit is A. Okay. Limit x goes to C, from the right side, the limit is B, they are different.
+
+49
+00:08:48,532 --> 00:08:53,532
+but for this limit it is also fc.
+
+50
+00:08:53,532 --> 00:08:55,532
+okay?
+
+51
+00:08:56,307 --> 00:09:06,147
+Now, the function is not continuous at this point, but we will see later in the next part, we can talk one-sided continuity, like limit.
+
+52
+00:09:06,567 --> 00:09:13,728
+Left side limit, right side limit. We can say the same thing for continuity. Left continuity, right continuity.
+
+53
+00:09:14,387 --> 00:09:23,248
+At this example, it is not continuous, but we can say that, okay, it is not continuous at all, but it is continuous on the right side.
+
+54
+00:09:23,668 --> 00:09:25,768
+Let me look at here. Okay.
+
+55
+00:09:27,528 --> 00:09:30,187
+Now in A, we say that f is continuous.
+
+56
+00:09:31,028 --> 00:09:35,488
+In B, okay, we have limit, but they are not equal to fc.
+
+57
+00:09:35,927 --> 00:09:38,427
+It means that it is discontinuous.
+
+58
+00:09:38,427 --> 00:09:41,307
+In C, we don't have limit.
+
+59
+00:09:42,131 --> 00:09:45,051
+B ve C'ye bir şey var.
+
+60
+00:09:45,051 --> 00:09:47,891
+Ama bu tür bir şey var?
+
+61
+00:09:47,891 --> 00:09:49,851
+Bazı bir şey var.
+
+62
+00:09:49,851 --> 00:09:51,451
+Önce bir şey var.
+
+63
+00:09:51,451 --> 00:09:53,331
+Bir şey var.
+
+64
+00:09:53,331 --> 00:10:03,731
+Önce bir şey var.
+
+65
+00:10:04,960 --> 00:10:10,960
+Bu konuları bir konuları.
+
+66
+00:10:04,307 --> 00:10:12,607
+If you have limit, but if they are not equal to fc, like b, then it is removable discontinuity.
+
+67
+00:10:13,187 --> 00:10:16,607
+But we will see some kind of questions later, okay?
+
+68
+00:10:17,128 --> 00:10:25,748
+But if we talk about discontinuity, if limits, you have limit, but if it is not equal to fc, it is removable.
+
+69
+00:10:27,207 --> 00:10:29,388
+If you don't have any limit,
+
+70
+00:10:29,844 --> 00:10:36,024
+from left side and right side are different, then it is jump discontinued. Okay?
+
+71
+00:10:38,024 --> 00:10:39,664
+Until here, did you understand?
+
+72
+00:10:44,019 --> 00:10:50,259
+Now, firstly, we talk about interior point. See here, interior point.
+
+73
+00:10:54,035 --> 00:11:18,515
+Okay, so let me look at the right side and left side. Okay, it is the same with the right side and left side limit. Okay, what is right continuous? If you have right limit and if this right limit equals to fc, then you can say that it is right continuous, like this example here. Okay.
+
+74
+00:11:19,379 --> 00:11:28,199
+If you have left side limit, and if this limit equals to fc, then I can say that it is left continuous.
+
+75
+00:11:29,019 --> 00:11:29,159
+Okay?
+
+76
+00:11:30,019 --> 00:11:39,139
+If left continuous equals to right continuous, it means that it is continuous.
+
+77
+00:11:39,419 --> 00:11:43,539
+If you have left side and right side, then you can talk about continuous.
+
+78
+00:11:44,620 --> 00:11:44,919
+Okay?
+
+79
+00:11:46,836 --> 00:11:48,836
+Şimdi, ne yapacağız?
+
+80
+00:11:48,836 --> 00:11:52,836
+Ne yapacağız?
+
+81
+00:12:12,467 --> 00:12:22,407
+We say that f is continuous at a left endpoint, this is your left endpoint, c of its domain if its right
+
+82
+00:12:22,407 --> 00:12:27,927
+continues. On the left side we don't have any function so I have to look at the linens for the
+
+83
+00:12:27,927 --> 00:12:37,607
+right side for the left endpoint. So we can say that left continues once in here it means that
+
+84
+00:12:38,035 --> 00:13:00,795
+limit x goes to c from the right side, fx has to be equals to fc. Okay? In that case, I can talk about left continuous. Okay? Now, if you want to talk about right-hand point, you have to look at less than 2.
+
+85
+00:13:02,795 --> 00:13:03,096
+So,
+
+86
+00:13:04,947 --> 00:13:31,648
+it is, bir saniye, evet, yes, left continuous. Yanlış yapmayayım, bir saniye. Şeyleri karıştırıyorum bazen de, şimdi soldan bakıp ileri gidiyorsunuz ya, it is right continuous. Yes. Tamam. Şuraya bakıyorsunuz. Şu nokta için baktığımda ne yapıyorsunuz? Daha ileriden bakıyorsunuz. O zaman burada hangisi oluyor? Right continuous oluyor.
+
+87
+00:13:32,063 --> 00:13:49,763
+Buradan baktığınızda, buradan daha küçük değerlere bakacağınız için, buradan baktığınızda, şey, left continuous oluyor. Yani şöyle, limit x goes to c minus fx equals fc. Left continuous.
+
+88
+00:13:51,243 --> 00:13:56,303
+Let us look at this example. Firstly, let us find domain. What is our domain?
+
+89
+00:13:56,884 --> 00:14:01,923
+You have to investigate this function. This function has to be greater or equal to 0.
+
+90
+00:14:02,323 --> 00:14:06,783
+Then we know that our domain is between minus 2 to 2 closed interval.
+
+91
+00:14:07,244 --> 00:14:11,543
+So I have to investigate minus 2 and 2 differently.
+
+92
+00:14:12,163 --> 00:14:17,124
+And I have to investigate the open interval minus 2 to 2 differently.
+
+93
+00:14:17,124 --> 00:14:17,803
+Okay.
+
+94
+00:14:19,323 --> 00:14:23,823
+So at the point minus 2, I have to look at
+
+95
+00:14:25,076 --> 00:14:33,756
+bigger than minus 2. So, I have to locate right limit. x goes to minus 2, okay, from the right side,
+
+96
+00:14:34,416 --> 00:14:40,016
+it will be 0 and you can say that also f minus 2 also is 0.
+
+97
+00:14:40,916 --> 00:14:47,235
+you can write directly or you can use the other limit expression which I gave last week.
+
+98
+00:14:47,235 --> 00:14:51,956
+Okay? But both of them are true. Yani böyle de yapabilirsiniz. Direkte yerine yazabilirsiniz.
+
+99
+00:14:52,576 --> 00:14:55,495
+Bazı sorularda burada problemli olabilir ama burada bir sıkıntı yok.
+
+100
+00:14:56,176 --> 00:15:00,176
+So, limit equals to f minus 2. What we will say here?
+
+101
+00:15:02,076 --> 00:15:04,235
+Left continues or right continues.
+
+102
+00:15:11,700 --> 00:15:21,860
+ok, this is continuous, but right, yes. It is right continuous. At the left endpoint, you have to look at this sign, ok?
+
+103
+00:15:23,460 --> 00:15:34,580
+Now, if we look at for the endpoint 2, I have to look at less than 2. This limit is 0 and it is equals to f2.
+
+104
+00:15:34,580 --> 00:15:37,620
+Then I can say that it is left.
+
+105
+00:15:38,580 --> 00:15:52,364
+x kare artı 2x, f'
+
+106
+00:15:56,532 --> 00:15:58,532
+And what about the interior point?
+
+107
+00:15:58,532 --> 00:16:06,532
+In the interior point, the points are members of domain.
+
+108
+00:16:06,532 --> 00:16:12,532
+And we determine domain, which we don't have any problem at the points.
+
+109
+00:16:12,532 --> 00:16:16,532
+So you can directly write that it is also continuous.
+
+110
+00:16:17,364 --> 00:16:31,604
+Let us look at here. If your point is between minus 2 to 2, you can directly write that this limit also equals to fc. Why? Because we don't have any problem. Why? Because how can we find our domain?
+
+111
+00:16:33,364 --> 00:16:44,324
+How can we find our domain? We subtract real number to the problem points. Which are the problem points? Discontinuity points. For example,
+
+112
+00:16:45,364 --> 00:16:59,443
+1 over, for example, x minus 1. Okay. What is your domain? Your domain is real number, subtract 1. Okay.
+
+113
+00:16:59,884 --> 00:17:12,784
+So what is your domain? Minus infinity to 1 and 1, infinity. Okay. Look at in this interval.
+
+114
+00:17:13,556 --> 00:17:20,936
+Do you have any problem point? No. Only for this function, I have one problem point one.
+
+115
+00:17:20,936 --> 00:17:27,675
+But when I determine the domain, I subtract this point from the real number.
+
+116
+00:17:28,556 --> 00:17:33,316
+So, in your domain, you don't have any problem about the continuity.
+
+117
+00:17:33,916 --> 00:17:39,755
+Okay? Only at end points or in some intersections points, you can have problem.
+
+118
+00:17:40,627 --> 00:17:58,627
+Normalde farkındaysanız domeni biz nasıl belirliyoruz? Problemli olan noktaları zaten real sayılardan çıkardığımız için zaten fonksiyonun domeninde bir sıkıntılı noktamız olmuyor. Ama ne zaman sıkıntılı nokta olabilir? Discontinence olan noktaları olabilir. Parçalı fonksiyonlarda...
+
+119
+00:17:58,864 --> 00:18:04,403
+şey noktaları olabilir, intersection noktaları olabilir. Bunlar da bizim süreklilikle ilgili problemimiz var.
+
+120
+00:18:05,023 --> 00:18:20,483
+So, in your domain, you don't have any problem about the continuity. But, if you have a piecewise function, if you have an absolute value function, at the intersection points, you can have problem about continuity. Okay?
+
+121
+00:18:21,523 --> 00:18:34,783
+So, at the interior points, we don't have any problem. We can write that limit x goes to c, 4 minus c square equals fc at every interior point. Okay?
+
+122
+00:18:39,988 --> 00:18:50,568
+So, it is not actually a test. It is a review of the continuity. If you want to have continuity, firstly, the function has to exist.
+
+123
+00:18:52,388 --> 00:19:04,368
+At the point C, okay? C is important. Limit has to be in the point. Limit has to be equals to fc in this point. If these three conditions happen,
+
+124
+00:19:05,140 --> 00:19:08,500
+then I can say that this function is continuous at c.
+
+125
+00:19:12,051 --> 00:19:14,771
+Okay, we talk about the continuit also.
+
+126
+00:19:17,491 --> 00:19:21,411
+If you have a problem with just one number, it is always continuous.
+
+127
+00:19:24,531 --> 00:19:29,891
+No, let me, I think you are talking about this one, for example.
+
+128
+00:19:33,811 --> 00:19:36,931
+Okay, let me make an example, I will explain, okay.
+
+129
+00:19:38,324 --> 00:19:45,244
+And if you want to talk about continuity on an interval, you have to investigate every point, interior and endpoints.
+
+130
+00:19:45,244 --> 00:19:50,984
+Let me look at show example. I understand your question. Let me give one example. Okay.
+
+131
+00:19:59,476 --> 00:20:12,116
+Okay. Okay, let us look at this example. They ask that, look at your function, is it continuous or not? It is continuous at real number or not? Okay.
+
+132
+00:20:14,276 --> 00:20:23,076
+Get real number demedi, don't look at it. They ask that it is continuous or not? First of all, you have to determine the domain. Okay.
+
+133
+00:20:23,763 --> 00:20:34,183
+What is our domain? We have a square root function and for the square root function, inside of the function has to be greater or equal to 0 to infinity. This is your domain.
+
+134
+00:20:35,383 --> 00:20:48,383
+In your domain, I have to investigate x equals 0 is endpoint. I have to investigate the endpoint differently. And after that, I have to investigate for the interior point 0 to infinity.
+
+135
+00:20:48,788 --> 00:20:51,788
+İki bir parçası için bir parçası için.
+
+136
+00:20:51,788 --> 00:20:54,788
+Şimdi, bu parçası için bir parçası için.
+
+137
+00:20:54,788 --> 00:21:00,788
+Bu parçası için, bu parçası için bir parçası için.
+
+138
+00:21:16,723 --> 00:21:22,844
+But at the end point, right continuous will be enough. So I can say that at 0, it is continuous.
+
+139
+00:21:24,124 --> 00:21:33,344
+Okay. So x equals 0, I can say that it is continuous because it is end point and one-sided limit will be enough.
+
+140
+00:21:33,923 --> 00:21:41,543
+Now I have to investigate the interior point. What is the interior point? I have to investigate for 0 to infinity.
+
+141
+00:21:44,596 --> 00:21:56,436
+0 to infinity. Okay. When I write these limits in the function, it will be equals to fc directly. This is your function. Okay.
+
+142
+00:21:57,876 --> 00:22:03,716
+x goes to c. It is square root c. And it is also directly equals to fc.
+
+143
+00:22:06,196 --> 00:22:09,236
+Then I can say that fx is continuous
+
+144
+00:22:11,636 --> 00:22:11,956
+on
+
+145
+00:22:12,788 --> 00:22:13,927
+it is domain.
+
+146
+00:22:18,771 --> 00:22:22,311
+What should we define to be sure that it is continuous?
+
+147
+00:22:22,652 --> 00:22:24,791
+First, you have to determine your domain.
+
+148
+00:22:25,491 --> 00:22:27,831
+And you have to investigate in your domain.
+
+149
+00:22:28,231 --> 00:22:32,111
+If every point it is continuous, then you can say that it is continuous.
+
+150
+00:22:33,491 --> 00:22:35,111
+It is domain, okay?
+
+151
+00:22:36,711 --> 00:22:39,271
+For example, let us look at this example.
+
+152
+00:22:41,851 --> 00:22:42,411
+Okay.
+
+153
+00:22:46,612 --> 00:22:52,471
+interior pointlerde bir sıkıntımız yok ki. Zaten interior pointi biz nasıl belirliyoruz? Domeninden belirliyoruz.
+
+154
+00:22:53,112 --> 00:23:08,572
+Okay, how can we find the interior points? First, we determine our domain. How can you find your domain? You subtract real number to problem points, discontinuity points. After that, this will be your domain.
+
+155
+00:23:10,548 --> 00:23:15,988
+So, in your domain, you don't have any discontinuity points, okay?
+
+156
+00:23:16,228 --> 00:23:20,587
+But you have to look at, you have to investigate the endpoints.
+
+157
+00:23:20,947 --> 00:23:23,187
+In the interior points, we don't have any problem.
+
+158
+00:23:23,488 --> 00:23:27,107
+Or, if your function is a piecewise function, it is different.
+
+159
+00:23:27,107 --> 00:23:33,127
+Because in the piecewise function, you have different parts of different functions, okay?
+
+160
+00:23:33,907 --> 00:23:34,988
+Look at this question.
+
+161
+00:23:36,051 --> 00:23:43,611
+They ask it if our function is 1 over x. It is continuous or not. First of all, what is your domain?
+
+162
+00:23:48,307 --> 00:24:04,468
+Our domain is real number, but I have to subtract 0. So I can say that minus infinity to 0 and union 0 to infinity.
+
+163
+00:24:10,387 --> 00:24:32,147
+Okay, maybe when you see the function, you can take x equals 0. It is not continuous, but 0 is not in your domain. So we don't have any problem at continuity. So in your domain, all of them are interior points. We don't have any problems at the interior points. So I can say that minus infinity to 0.
+
+164
+00:24:34,567 --> 00:24:35,167
+Okay.
+
+165
+00:24:35,604 --> 00:25:01,443
+When you write in the function, what is limit x goes to c, what is 1 over x? It is 1 over c. Okay? Do you have any problem at this point in this interval? No. Only I have problem 1 over c at 0, but 0 is not included. So it will be equals to fc directly. What about the other one?
+
+166
+00:25:01,844 --> 00:25:14,783
+The other part is 0, c, infinity. Let us write, limit x goes to c, R function is 1 over x, and the result is 1 over c.
+
+167
+00:25:15,344 --> 00:25:22,663
+Do you have any problem in this interval? No. Only I have problem 0, but 0 is nothing colluded. This is also equals to fc.
+
+168
+00:25:23,988 --> 00:25:30,448
+So, all these interior points here and here, we don't have any problem. So, this function is a continuous function.
+
+169
+00:25:31,127 --> 00:25:38,288
+Maybe you can see, I have a problem at 0. Okay, you have a problem at 0, but 0 is not in your domain. Okay?
+
+170
+00:25:38,728 --> 00:25:49,988
+But, if 0 is a problem, and if it is in your domain, then you can say that discontinuity, but in our question, it is not, because it is not in the domain.
+
+171
+00:25:50,867 --> 00:25:54,748
+Okay, this is the graph of this function and we don't have any discontinuity.
+
+172
+00:25:56,387 --> 00:26:05,248
+Süreklilik, what does it mean when it starts from the function, for example, here, here, here, we don't have any hole, okay?
+
+173
+00:26:05,248 --> 00:26:12,707
+We don't have any hole in the function here, here, here, here, here, okay?
+
+174
+00:26:14,347 --> 00:26:15,387
+Or here.
+
+175
+00:26:17,428 --> 00:26:39,028
+We don't have any whole. Yani o aralıkta fonksiyonun karşılıksız olduğu hiçbir şey yok. It means that in your domain or in your interval, we don't have any point which doesn't have value at y-axis.
+
+176
+00:26:45,428 --> 00:26:59,188
+here, I have. Okay? Or here, I have. Here, I have. It means it is continuous. Okay? Or something like that. One second.
+
+177
+00:27:04,068 --> 00:27:05,068
+Gerçi bunda... Okay, yeah.
+
+178
+00:27:09,203 --> 00:27:31,523
+Okay. So, which functions are always continuous? For example, polynomials. Why? Because our domain is real number. We don't have any problem at any point. Or rational functions. But in rational functions, it is actually, we can't say directly, we have to subtract from the points. Okay?
+
+179
+00:27:35,892 --> 00:27:38,912
+In this interval, we can talk about continuous, okay?
+
+180
+00:27:40,152 --> 00:27:47,272
+And sine function, cosine function, the domain is real number.
+
+181
+00:27:47,272 --> 00:27:55,032
+Actually, we can talk about, yes, we can talk about tangent and cotangent also.
+
+182
+00:27:56,468 --> 00:28:01,668
+Why? Because in the interval, in the domain of the interval, they are continuous.
+
+183
+00:28:01,948 --> 00:28:06,307
+Okay? You have to look at in your domain, in your domain, we don't have any problem.
+
+184
+00:28:06,428 --> 00:28:12,248
+What is tangent or cotangent? They have some asymptotes like this.
+
+185
+00:28:12,328 --> 00:28:15,848
+For example, it will be like this, like this. Okay?
+
+186
+00:28:17,688 --> 00:28:18,968
+Okay? Here.
+
+187
+00:28:20,888 --> 00:28:23,008
+Here, like this. Okay?
+
+188
+00:28:23,571 --> 00:28:28,011
+When you look at in each part, in each part they are continuous.
+
+189
+00:28:28,171 --> 00:28:31,151
+Here, here, here, here.
+
+190
+00:28:31,391 --> 00:28:32,731
+We don't have any problem.
+
+191
+00:28:32,731 --> 00:28:37,671
+Okay, we have some divided parts because of the vertical asymptote,
+
+192
+00:28:37,791 --> 00:28:41,451
+but in each subinterval they are continuous.
+
+193
+00:28:41,611 --> 00:28:44,351
+So these functions are continuous functions also.
+
+194
+00:28:44,571 --> 00:28:44,711
+Okay.
+
+195
+00:28:45,611 --> 00:28:49,191
+And also actually in rational functions you can say that.
+
+196
+00:28:49,611 --> 00:28:49,791
+Okay.
+
+197
+00:28:50,271 --> 00:28:57,391
+Aslında o da sürekli. Why? Let me show. For example, x minus 1 over x plus 2.
+
+198
+00:28:59,631 --> 00:29:08,951
+Okay. So, what is your domain? Our domain is r minus 2.
+
+199
+00:29:09,844 --> 00:29:34,743
+Okay, so your function will be like this. x is 2. Okay, we have an asymptote here. For example, I am giving an example like this and other is like this, for example. So in this part, we don't have any problem. In this part, we don't have any problem. So our function is continuous in its domain. Okay?
+
+200
+00:29:35,892 --> 00:29:45,692
+But if they ask that, okay, this function is continuous on real number, then you can say that I have a problem too.
+
+201
+00:29:46,732 --> 00:29:52,072
+But if they ask that this function is continuous, then okay, it is continuous.
+
+202
+00:29:52,252 --> 00:29:58,072
+But if they say that this your function is continuous on real number, no.
+
+203
+00:29:58,072 --> 00:29:59,432
+Okay?
+
+204
+00:30:00,000 --> 00:30:25,240
+Bakın soruya bağlı. Bu fonksiyon sürekli mi diye soruyorsa evet bu fonksiyon sürekli. Kendi domeninde sürekli. Ama derse ki bu fonksiyon real sayılarda sürekli mi derse hayır değil tabii ki real sayılarda çünkü ikide problemi var. Tamam mı? Ama biz fonksiyonları kendi şeylerinde inceliyoruz, tanım kümelerinde inceliyoruz. Okey? Anlaşıldı mı burası?
+
+205
+00:30:30,804 --> 00:30:50,884
+continuous demek şu, siz x'de baktığınızda y'de karşılığı var mı yok mu? Yoksa orada bir discontinuity olayı vardır. Ama biz tabii ki domaininden bahsediyoruz. Ama dediğim gibi özellikle real sayı olarak bahsediyorsa, söylüyorsa bunu, real sayılar başka bir şey. Tabii ki orada problemin olduğu nokta olabilir. O zaman real sayılarda o sürekli değildir.
+
+206
+00:30:57,140 --> 00:31:10,560
+We have some properties of continuous functions. For example, if your functions, if f and g are continuous functions, then the sum and the subtract also will be continuous at the point c.
+
+207
+00:31:11,420 --> 00:31:22,320
+If you product these two functions, it will be also continuous, okay? You can product with a constant, you can divide, but here gc has to be non-zero.
+
+208
+00:31:22,900 --> 00:31:39,620
+Okay, you can look at this one also. And I want to talk about this one, the composite function. We will use this function, this kind of expression later actually. If your function is continuous, okay, you can change limits.
+
+209
+00:31:40,692 --> 00:31:42,692
+ve funktions order.
+
+210
+00:31:42,692 --> 00:32:05,692
+Bu ne?
+
+211
+00:32:10,612 --> 00:32:16,792
+Look at here, if I want to find this function, I know that cosine function is a continuous function,
+
+212
+00:32:16,792 --> 00:32:23,892
+it is domain is real number, so I can write this limit inside of the cosine function.
+
+213
+00:32:24,372 --> 00:32:29,991
+Firstly, I can find inside, after that I can determine cosine.
+
+214
+00:32:31,432 --> 00:32:36,471
+Okay, so what is x goes to pi over 2? 2x, this is pi.
+
+215
+00:32:38,036 --> 00:32:48,915
+This is when I write pi over 2, it will be sin 2 pi. Sin 2 pi is 0, so cos pi will be minus 1.
+
+216
+00:32:51,875 --> 00:33:05,496
+E son kısmı mı? Okay. Actually, this expression is important in determined form. Okay. For example, let me write one example.
+
+217
+00:33:06,067 --> 00:33:15,988
+limit x goes to pi. Elen
+
+218
+00:33:19,892 --> 00:33:31,152
+sin, let's see, play over, okay. ln x, okay.
+
+219
+00:33:31,152 --> 00:33:33,892
+I want to find these limits, okay.
+
+220
+00:33:34,675 --> 00:34:00,155
+So, I know that ln function is, domain is 0 to infinity. Okay. And when I look at x goes to pi over 2, it is in, it is domain, so it is continuous at this point. Okay. It means that I can change the order limit and ln. I can write ln limit x goes to pi over 2. Okay.
+
+221
+00:34:02,036 --> 00:34:19,615
+x. So, what is that? ln sin pi over 2 is 1. So, ln 1 is 0. Okay? Okay, in this example, you can see that it is directly 0. But in some limits, we will see later, especially this.
+
+222
+00:34:20,943 --> 00:34:25,943
+Bu ne?
+
+223
+00:34:20,148 --> 00:34:23,248
+Order changing will be very important.
+
+224
+00:34:23,608 --> 00:34:23,768
+Okay.
+
+225
+00:34:24,288 --> 00:34:27,307
+If your function is continuous at this point.
+
+226
+00:34:27,648 --> 00:34:31,948
+Then you can change the order limitant alarm function.
+
+227
+00:34:32,088 --> 00:34:33,928
+Why we could write alarm?
+
+228
+00:34:34,408 --> 00:34:38,068
+I said that if alarm function is continuous at this point.
+
+229
+00:34:38,168 --> 00:34:39,248
+You can change the order.
+
+230
+00:34:39,248 --> 00:34:41,088
+You can write alarm.
+
+231
+00:34:42,248 --> 00:34:44,428
+And you can change the order.
+
+232
+00:34:44,668 --> 00:34:45,548
+You can write here.
+
+233
+00:34:45,668 --> 00:34:46,728
+And you can write here.
+
+234
+00:34:46,968 --> 00:34:47,128
+Okay.
+
+235
+00:34:48,596 --> 00:34:54,456
+Eğer fonksiyonunuz buna baktığımız noktada sürekliyse problem yoksa biz bunların yerini değiştirebiliyoruz.
+
+236
+00:34:54,576 --> 00:35:01,456
+Ama bu sonraki limit, L'Hospital'de önemli bir şey bizim karşımıza çıkacak. O yüzden burada gösterdim.
+
+237
+00:35:02,315 --> 00:35:09,976
+Okay? So if your function is a continuous function at this point, you can change the order of ln and limit.
+
+238
+00:35:10,296 --> 00:35:15,336
+You can write limit inside of the ln functions. Firstly, you can find the limit.
+
+239
+00:35:16,115 --> 00:35:28,935
+After that, you can find ln function. Actually, they are the same. Okay? But in some cases, it will be important, especially in L'Hospital rule. Okay?
+
+240
+00:35:35,251 --> 00:35:35,751
+ok.
+
+241
+00:35:39,668 --> 00:35:46,368
+Now let us see, this is the last part, I think. Now after that I will solve some questions.
+
+242
+00:35:46,368 --> 00:36:04,547
+Okay. Let us look at continuous extension. What is it? Continuous extension means, for example, you have a, sorry, why we could write, s'py over 2 is a domain of ln and therefore we could write it.
+
+243
+00:36:05,012 --> 00:36:11,952
+Evet, evet. Bu nokta pi over 2, it is domain, it means that I can change the order, okay?
+
+244
+00:36:12,552 --> 00:36:18,912
+Because at this point, we don't have a problem, at this point, the function is continuous, so I can change the order.
+
+245
+00:36:19,312 --> 00:36:22,072
+But if it is not, you can't make, okay?
+
+246
+00:36:25,876 --> 00:36:51,500
+Okay, what is continuous extension? For example, you have a function and you have a problem about continuity at point, at any point. For example, let us take our function is sin x over x. What is our domain? Our domain is real number minus zero. Then I can say that this function is continuous extension.
+
+247
+00:36:52,083 --> 00:37:09,263
+on R-0. But it is not continuous at real number. So can I make any operation to make this function continuous at every real number? Yes.
+
+248
+00:37:09,503 --> 00:37:16,243
+What can I do for this? I know that if R function not equal to 0,
+
+249
+00:37:17,492 --> 00:37:20,652
+We don't have any problem sin x over x, okay?
+
+250
+00:37:22,791 --> 00:37:31,512
+Only I have problem when x equals 0. If when we have problem, let me take the limit x goes to 0.
+
+251
+00:37:32,512 --> 00:37:41,032
+For the limit, the function doesn't need to be defined. What is sin x over x? I know that this limit is 1.
+
+252
+00:37:44,288 --> 00:38:11,367
+Define a new function as a big F. And if I write this function as a piecewise function, if x is non-zero, this r function is sin x over x. If x is zero, this is r problem point. And at the problem point, I will write the limit point. What is that? It is 1. Now, this new function is continuous on real number.
+
+253
+00:38:11,668 --> 00:38:22,847
+Okay, so this function is called continuous extension of R function at the point C. R point here is zero, okay?
+
+254
+00:38:25,492 --> 00:38:53,492
+In this function, I have a problem only 0. So, I can take limit at this point. And when I define a new function as a piecewise function, if x is non-0, this is our function. But at the problem point, if I write the limit point, then your new function will be continuous at every point in the real number. This is extension, continuous extension.
+
+255
+00:38:53,492 --> 00:39:02,092
+For example, let us look at this function. Let us try to write the extension.
+
+256
+00:39:03,092 --> 00:39:11,452
+Şimdi bakın, genişleme diyoruz, süreklilik genişlemesi diyoruz hasta tüccese.
+
+257
+00:39:12,452 --> 00:39:17,532
+Okay, firstly, your function is sin x over x.
+
+258
+00:39:18,675 --> 00:39:46,155
+What is your domain? Our domain is real number minus zero. Okay. But I want to write a new function and new function has to be continuous at real number. In this question, only I have problem at zero. So I define a new function and I say that if the point is not equal to zero, I can take our functions directly. But at zero, I have a problem.
+
+259
+00:39:46,643 --> 00:39:54,764
+At this point, I have to take the limit of the function. Okay. x goes to 0, sin x over x is 1.
+
+260
+00:39:55,103 --> 00:40:09,364
+So in the piecewise function, if I write, if the point is 0, our limit is 1. If I define this new function, this new function is continuous at every random number.
+
+261
+00:40:09,764 --> 00:40:13,183
+So it is called continuous extension.
+
+262
+00:40:14,003 --> 00:40:25,283
+genişlemesi diyoruz. Continuous extension of fx. Okay? So, this new function is continuous at everywhere.
+
+263
+00:40:25,283 --> 00:40:37,683
+Let us look at this example. Let us write... Now, if you look at your function, they said that... Show that... Okay.
+
+264
+00:40:38,516 --> 00:40:53,315
+The question is this. Show that this function has a continuous extension to point x equals 2. And find that extension. They said that I don't have any problem. The other one.
+
+265
+00:40:56,315 --> 00:41:05,915
+Okay, so if I want to define a continuous extension, I will write a piecewise function. Okay. You will write the function directly here.
+
+266
+00:41:06,288 --> 00:41:14,847
+It is x squared plus x minus 2 over x squared minus 4.
+
+267
+00:41:15,728 --> 00:41:18,528
+If x is not equal to 2.
+
+268
+00:41:18,528 --> 00:41:23,807
+But if x equals 2, the problem point is this.
+
+269
+00:41:23,927 --> 00:41:25,827
+I have to take the limit of this function.
+
+270
+00:41:25,927 --> 00:41:26,867
+What is this limit?
+
+271
+00:41:27,148 --> 00:41:29,407
+Limit x equals to 2.
+
+272
+00:41:29,488 --> 00:41:30,867
+I have to find this limit.
+
+273
+00:41:32,996 --> 00:41:33,796
+x kare artı 2x, f'
+
+274
+00:41:31,251 --> 00:41:57,332
+It is here, I can write it is 3, 2, okay, plus, minus. So it will be x minus 2, x plus 3, over x minus 2, okay, x plus 2. So,
+
+275
+00:41:58,003 --> 00:42:01,023
+We can cancel these two terms.
+
+276
+00:42:02,023 --> 00:42:05,324
+And the limit will be 5 over 4.
+
+277
+00:42:05,844 --> 00:42:14,503
+And if I write 5 over 4, this is the continuous extension of this function at the point x equals 2.
+
+278
+00:42:14,503 --> 00:42:15,384
+Okay?
+
+279
+00:42:17,824 --> 00:42:25,259
+You can see that this new function will be continuous extension at...
+
+280
+00:42:25,715 --> 00:42:27,916
+x kare artı 2x, f'
+
+281
+00:42:29,115 --> 00:42:29,916
+okay?
+
+282
+00:42:31,115 --> 00:42:37,715
+yes, yes, we have problem, but they ask the continuous extension at the point 2, okay?
+
+283
+00:42:41,076 --> 00:42:49,735
+They are not asking the general. They ask that show that this function has a continuous extension at the point 2.
+
+284
+00:42:50,856 --> 00:42:53,635
+Only we can look at it at one point, okay?
+
+285
+00:42:54,456 --> 00:42:57,876
+They ask what is the continuous extension at equals 2.
+
+286
+00:42:58,596 --> 00:43:00,155
+And find that extension.
+
+287
+00:43:00,980 --> 00:43:12,980
+For example, I can ask also minus 2, but we don't have continuous extension at minus 2. Why? Let me look at here. Okay.
+
+288
+00:43:13,659 --> 00:43:20,039
+Actually, we don't have any continuous extension for the other point. Why? Let us look at here.
+
+289
+00:43:23,956 --> 00:43:29,635
+alabildiğimiz yerde alabiliyoruz aslında. Her noktada bu continuous extension aslında yapamazsınız.
+
+290
+00:43:30,276 --> 00:43:36,755
+One second. For example, for this function, we have one problem point, minus 2.
+
+291
+00:43:36,755 --> 00:43:50,235
+Okay? But let us write the function is x minus 2, x plus 3 over x minus 2.
+
+292
+00:43:52,148 --> 00:44:14,868
+x plus 2. Okay. So we can cancel here. But what is this? It is 1 over 0. It is infinity. Okay. But in that case, we can't. Why? Actually,
+
+293
+00:44:18,195 --> 00:44:23,531
+Bu konuda bu konuda kon
+
+294
+00:44:26,835 --> 00:44:30,415
+Evet, şimdi bir daha bir discontinu.
+
+295
+00:44:54,612 --> 00:45:20,391
+If you don't have any limit, it is jump. Removable means, what is means in Turkish? Removable. Tükçesine, what is the meaning in Turkish? Kaldırılabilir. Removable means in Turkish kaldırılabilir. So, you can make some process and you can cancel discontinuity. It is like this.
+
+296
+00:45:23,699 --> 00:45:37,219
+Ok, here, at this question, it is 0 over 0. But you made the operation, and you cancel the problem point, and you find the limit. So it is removable.
+
+297
+00:45:40,739 --> 00:45:46,659
+Discontinuity, ok? But in here, the discontinuity type is essential.
+
+298
+00:45:47,219 --> 00:45:51,759
+So you can't write any continuous extension.
+
+299
+00:45:52,439 --> 00:45:56,499
+Okay? Only I can make continuous extension at this point.
+
+300
+00:45:59,639 --> 00:46:01,339
+Sonsuzdur her zaman 1 bölü 0.
+
+301
+00:46:03,179 --> 00:46:04,979
+1 bölü 0 sonsuzdur.
+
+302
+00:46:06,499 --> 00:46:07,259
+Tanım öyle zaten.
+
+303
+00:46:11,411 --> 00:46:20,891
+belirsiz şeydir o, direkt sonsuzdur. Hatta sağ sol, hayır, tanımsız olmaz. Yok, tanımsız olmaz. Tanımsız şunlar.
+
+304
+00:46:23,052 --> 00:46:33,251
+Zero over zero, infinity over infinity, infinity minus infinity, zero product infinity.
+
+305
+00:46:34,516 --> 00:46:40,335
+1 over infinity, infinity over 0, 0 over 0.
+
+306
+00:46:41,896 --> 00:46:51,076
+These are tanımsız. Yani Türkçe, İngilizcesini hatırlayamadım şimdi. Bunlar. Tamam mı? 1 bölü 0 sonsuz.
+
+307
+00:46:51,815 --> 00:46:54,315
+Hatta sağa sola göre de değişiyor ama sonsuz burada.
+
+308
+00:46:54,315 --> 00:46:55,016
+Okey.
+
+309
+00:46:58,579 --> 00:47:04,380
+I will look at this theorem but before that I want to look at some examples for continuous.
+
+310
+00:47:04,720 --> 00:47:08,280
+Okay, continue it. Bunu biraz sonra vereceğim. Birkaç örnek çözelim.
+
+311
+00:47:09,539 --> 00:47:13,559
+Okay, let us look at this example.
+
+312
+00:47:13,559 --> 00:47:14,320
+Okay.
+
+313
+00:47:24,628 --> 00:47:32,528
+Okay. Firstly, let us look at this question. Okay. Let us look at this example.
+
+314
+00:47:34,628 --> 00:47:47,168
+Sürekli hale getiremiyoruz. Evet. Yes. The limit is infinity, so we can't write any continuous extension for x equals minus 2. Only we can write for x equals 2. Okay.
+
+315
+00:47:47,668 --> 00:47:54,987
+If the limit is any point, okay, we can write a continuous extension, but if it is infinity, we can't write.
+
+316
+00:47:58,900 --> 00:48:07,220
+Okay, let us look at this example. Investigate the continuity of this function.
+
+317
+00:48:08,660 --> 00:48:16,660
+First of all, I have to determine our domain. What is our domain? Real number.
+
+318
+00:48:18,900 --> 00:48:22,980
+So it is similar irrational function. So in your denominator,
+
+319
+00:48:27,188 --> 00:48:28,788
+has to be non-zero.
+
+320
+00:48:30,467 --> 00:48:37,087
+Okay, so x plus 3 has to be not equal to 2.
+
+321
+00:48:37,527 --> 00:48:43,487
+If I take square, x plus 3 has to be not equal to 4.
+
+322
+00:48:43,768 --> 00:48:45,248
+So x can't be 1.
+
+323
+00:48:46,987 --> 00:48:50,728
+So our domain is real number, subtract from 1.
+
+324
+00:48:51,268 --> 00:48:52,427
+Okay, this is our domain.
+
+325
+00:48:53,460 --> 00:48:59,259
+So, the function is, this continues at x equals 1. Okay.
+
+326
+00:49:01,400 --> 00:49:12,679
+But, if we take x not equals to 1, okay, look at here, okay, only we have problem at 1.
+
+327
+00:49:12,819 --> 00:49:19,719
+So, I can write the continuous extension, if x is not equal to 1, our function is this.
+
+328
+00:49:19,719 --> 00:49:21,059
+We can write directly.
+
+329
+00:49:21,940 --> 00:49:40,859
+For the point x equals 1, I have to take the limit. Limit x goes to 1. I have x minus 1 over x in the square root function. I have x plus 3, okay, minus 2.
+
+330
+00:49:41,599 --> 00:49:48,879
+Now, in this kind of questions, I said that I have two product with the conjugate. We have a square root function because.
+
+331
+00:49:49,876 --> 00:49:57,436
+What is the conjugate of this function? It will be in this card root function x plus 3 plus 2.
+
+332
+00:49:59,816 --> 00:50:06,596
+Let us write the same thing here. x plus 3 plus 2.
+
+333
+00:50:10,076 --> 00:50:15,776
+Now, if I product with the conjugate, I will take square of the first function. It is x plus 3.
+
+334
+00:50:16,884 --> 00:50:30,284
+minus the second function square is 4. So it will be x minus 1. And we can cancel here and here. So I have only limit x goes to 1.
+
+335
+00:50:32,364 --> 00:50:44,123
+x plus 3 in the square root function and also plus 2. It is square root 4 plus 2.
+
+336
+00:50:45,108 --> 00:50:58,108
+it will be 4. If I write here is 4, if it is x equals 1, okay, then this is your continuous extension, okay?
+
+337
+00:51:02,003 --> 00:51:05,764
+yes, one second, okay, one second, yes.
+
+338
+00:51:07,023 --> 00:51:08,724
+yes, I forgot.
+
+339
+00:51:09,604 --> 00:51:14,523
+x, one second, yes, x plus 3 has to be greater than zero.
+
+340
+00:51:17,664 --> 00:51:20,384
+aslında, bir saniye, böyle de olur.
+
+341
+00:51:20,604 --> 00:51:22,284
+x büyüktür, x'ı 3.
+
+342
+00:51:26,099 --> 00:51:27,819
+x switch de olur. Evet, böyle.
+
+343
+00:51:29,199 --> 00:51:31,899
+So, sorry, our domain will be
+
+344
+00:51:44,628 --> 00:51:45,907
+bir de iş de olmayacak.
+
+345
+00:51:50,068 --> 00:51:52,248
+zonelis olacak, şurası, şurası.
+
+346
+00:51:55,795 --> 00:52:04,195
+minus eksi 3 ile kapalı bir arasında bir de bir de son ses.
+
+347
+00:52:09,195 --> 00:52:18,436
+Okay. So in it is domain only we have a problem at one. If you rewrite your function, if you write continuous extension,
+
+348
+00:52:19,027 --> 00:52:33,527
+So, if x is not equals to 1, R function is this. If x equals 1, you have to write the limit points, then this function will be continuous and only it is domain, okay?
+
+349
+00:52:37,331 --> 00:52:39,435
+x kare artı 3x, f'
+
+350
+00:52:42,867 --> 00:52:44,556
+ok
+
+351
+00:53:04,255 --> 00:53:12,268
+x kare artı 3x, f'
+
+352
+00:52:51,188 --> 00:52:53,728
+Now let us look at the first example. Okay.
+
+353
+00:52:55,407 --> 00:53:05,947
+They asked that for which value, for what value of a and b this function is continuous at everywhere.
+
+354
+00:53:06,947 --> 00:53:11,827
+I said that in each domain at each part the function is continuous. Okay.
+
+355
+00:53:13,891 --> 00:53:16,012
+x kare artı 3x, f'
+
+356
+00:53:12,403 --> 00:53:19,124
+If x is less or equal to minus 2, this function, this function and this function are continuous.
+
+357
+00:53:19,604 --> 00:53:26,384
+But here we have some intersection points. I have to investigate these intersection points, okay?
+
+358
+00:53:27,364 --> 00:53:37,083
+So I have to investigate what is limit x goes to minus pi over 2 from the left side.
+
+359
+00:53:37,556 --> 00:53:49,436
+Which is your function? x is less than minus pi over 2. It is this. It is 2 sin x. And what is this?
+
+360
+00:53:54,483 --> 00:54:03,443
+sin minus pi over 2, 270'e eşit, 270'e eşit olduğunda nereye denk gelecek? Eksi 2 mi, 2 mi?
+
+361
+00:54:05,324 --> 00:54:22,023
+It is minus 2. So, limit x goes to minus pi over 2 from the right side. R function is bigger than this function is this.
+
+362
+00:54:22,900 --> 00:54:37,720
+So, it is a sin x plus b. And if you write this point, sin minus pi over 2, it is minus 1, it is minus a plus b.
+
+363
+00:54:38,675 --> 00:54:44,056
+They said that I want to make this function is continuous at everywhere.
+
+364
+00:54:44,316 --> 00:54:53,695
+It means that these two limits has to equal to each other and also this equals to f minus pi over 2.
+
+365
+00:54:55,115 --> 00:54:55,436
+Okay.
+
+366
+00:54:56,655 --> 00:54:58,856
+And minus pi over 2 is this.
+
+367
+00:54:58,856 --> 00:55:05,916
+So our first equation is minus a plus b has to be
+
+368
+00:55:06,291 --> 00:55:08,931
+minus 2. This is the first equation.
+
+369
+00:55:11,152 --> 00:55:16,011
+Okay. Now let us investigate for the pi over 2.
+
+370
+00:55:18,172 --> 00:55:19,052
+Limit.
+
+371
+00:55:20,791 --> 00:55:23,971
+x goes to pi over 2.
+
+372
+00:55:24,971 --> 00:55:27,632
+For the left side, our function is this.
+
+373
+00:55:29,831 --> 00:55:30,211
+A.
+
+374
+00:55:32,467 --> 00:55:52,827
+sin x plus b. Okay. And it is sin pi over 2 is 1. It is a plus b. Okay. So limit x goes to pi over 2 from the right side.
+
+375
+00:56:00,436 --> 00:56:02,755
+90, 0.
+
+376
+00:56:03,876 --> 00:56:07,296
+And this limit has to be equal to each other if it is continuous.
+
+377
+00:56:07,296 --> 00:56:11,615
+So the second equation is a plus b is 0.
+
+378
+00:56:12,856 --> 00:56:17,976
+From these two equations, we will solve these questions.
+
+379
+00:56:18,356 --> 00:56:18,496
+Okay?
+
+380
+00:56:22,579 --> 00:56:42,819
+So, first we find minus a plus b is minus 2. From the second part, we determine a plus b is 0. If we solve these two questions, we find a is 1 and b is minus 1. Okay? Do you have any questions? Is it difficult?
+
+381
+00:56:46,291 --> 00:56:54,472
+if this function is continuous at everywhere, at the intersection points, you need to have continuity.
+
+382
+00:56:54,472 --> 00:57:00,751
+So you have to investigate the limits at these intersection points from the left side and right side.
+
+383
+00:57:01,912 --> 00:57:09,072
+Left side and right side. And this limit has to be equal to each other for continuity.
+
+384
+00:57:10,872 --> 00:57:11,172
+Okay?
+
+385
+00:57:12,563 --> 00:57:16,643
+Okay, if you don't have any problem, let's take a break for 10 minutes, okay?
+
+386
+01:08:42,868 --> 01:08:51,508
+Okay, so let's start again. Okay. Now I prepare some questions from the lecturers. Okay.
+
+387
+01:08:54,708 --> 01:09:04,388
+Let us get these examples. Let us try to solve together. Okay. So in the first question,
+
+388
+01:09:05,779 --> 01:09:11,840
+They said that investigate the continuity of this function on the interval from 0 to 1.
+
+389
+01:09:11,840 --> 01:09:13,020
+Okay?
+
+390
+01:09:17,619 --> 01:09:43,079
+No. The function is given in the close interval 0 to 1. We have some intersection points. Only we have problem at the intersection points. Look at, we don't, we have a constant. We have a constant. Only we have a problem. If you look at this function, I have a problem at 0. Do you have any problem at 1?
+
+391
+01:09:45,555 --> 01:09:47,787
+x kare artı 1x, f'
+
+392
+01:09:54,868 --> 01:10:22,128
+No, yes. When you write 1, it is 0, but this is 1, so the result will be 0. We don't have any problem, only we have problem at 1. So, we have to investigate the function at the intersection point 0 and 1. Okay? So, let us look at here. Limit x goes to 0. From the left side,
+
+393
+01:10:22,644 --> 01:10:41,184
+Sorry, sorry, sorry. We don't have a from the left side, only I have to investigate from the right side. From the right side, our function is x squared over 1 minus in the square root function 1 minus x squared. Okay.
+
+394
+01:10:43,024 --> 01:10:45,344
+Now we have to investigate these limits.
+
+395
+01:10:45,779 --> 01:10:54,920
+So, firstly, I have to product with the conjugate. The conjugate is 1 plus in the square root function 1 minus x square.
+
+396
+01:10:54,920 --> 01:11:02,940
+And also 1 plus in the square root function 1 minus x square.
+
+397
+01:11:03,579 --> 01:11:12,879
+If I product with the conjugate of these two functions, the result will be 1 minus 1 minus x square.
+
+398
+01:11:14,515 --> 01:11:22,815
+x kare artı 2x, f'
+
+399
+01:11:22,815 --> 01:11:25,755
+kare artı 2x, f'
+
+400
+01:11:41,203 --> 01:11:48,484
+from the right side. Now we can write zero and the result will be two. Is it equals to f zero?
+
+401
+01:11:55,507 --> 01:11:56,067
+Evet.
+
+402
+01:11:58,067 --> 01:12:01,528
+So, for the continuity, we don't have any problem at zero.
+
+403
+01:12:02,467 --> 01:12:11,487
+Now, let us investigate, limit, the other intersection point, idim 1, I have to investigate 1 from the left side.
+
+404
+01:12:12,268 --> 01:12:17,028
+From the left side, R function is the same, okay?
+
+405
+01:12:17,347 --> 01:12:22,007
+So, I want to write this part directly, okay?
+
+406
+01:12:25,363 --> 01:12:26,203
+bir saniye.
+
+407
+01:12:28,023 --> 01:12:31,463
+Yok, pardon, bir de sorun yoktu zaten. Konjugate gerek yok.
+
+408
+01:12:33,463 --> 01:12:37,724
+For one, our function is x square over
+
+409
+01:12:37,724 --> 01:12:42,183
+one minus one minus x square.
+
+410
+01:12:42,743 --> 01:12:45,183
+But in this part, we don't need to
+
+411
+01:12:45,183 --> 01:12:49,623
+product with the konjugate. We don't have any problem. One over
+
+412
+01:12:50,448 --> 01:12:56,868
+f' 1-0. And the result will be 1. Is it equals to f' 1?
+
+413
+01:13:03,731 --> 01:13:04,992
+Look at here, yes.
+
+414
+01:13:07,111 --> 01:13:09,631
+So, fx
+
+415
+01:13:09,631 --> 01:13:12,031
+is
+
+416
+01:13:12,031 --> 01:13:13,031
+continuous
+
+417
+01:13:13,031 --> 01:13:16,692
+on the close interval
+
+418
+01:13:16,692 --> 01:13:18,912
+0 to 1.
+
+419
+01:13:18,912 --> 01:13:19,992
+Okay?
+
+420
+01:13:21,300 --> 01:13:26,560
+All the interior points, the function is continuous because of the domain.
+
+421
+01:13:27,040 --> 01:13:31,440
+But only at the end points, all the intersection points, you have to investigate.
+
+422
+01:13:32,020 --> 01:13:35,739
+In this question, we have to investigate for 0 and 1.
+
+423
+01:13:36,140 --> 01:13:38,819
+Only at 0, I have to look at from the right side.
+
+424
+01:13:39,300 --> 01:13:42,140
+For 1, I have to investigate from the left side.
+
+425
+01:13:42,420 --> 01:13:45,000
+And both of them, they are continuous.
+
+426
+01:13:45,159 --> 01:13:48,140
+So the function is continuous on the interval 0 to 1.
+
+427
+01:13:48,140 --> 01:13:49,280
+Do you have any questions?
+
+428
+01:13:49,300 --> 01:13:49,900
+yürümün.
+
+429
+01:13:54,579 --> 01:14:00,979
+Okay. If you don't have any question, it has to get this example.
+
+430
+01:14:07,859 --> 01:14:15,619
+Okay. So, for what value of a and b, this function is continuous at every x?
+
+431
+01:14:18,739 --> 01:14:20,579
+So, we have a piecewise function.
+
+432
+01:14:21,076 --> 01:14:39,456
+At each function, it is continuous. Here, continuous, continuous, continuous. Only we have problem at the endpoints, at the intersection points. So only I have to investigate for 0. Okay? So let us investigate.
+
+433
+01:14:42,931 --> 01:15:01,492
+Limit x goes to 0 from the left side, R function is this. Sin 3x over x. In the previous week, we said that if
+
+434
+01:15:01,876 --> 01:15:08,076
+This function and this function is the same and if you have 0 over 0, the limit will be 1.
+
+435
+01:15:08,195 --> 01:15:20,396
+But here 3 is missing. I add 3 here and 3 here. Now this limit will be 1. So our limit will be 3.
+
+436
+01:15:21,316 --> 01:15:22,036
+Now,
+
+437
+01:15:22,707 --> 01:15:32,307
+If I want to make this function is continuous at everywhere, this limit has to be equals to also f0.
+
+438
+01:15:37,332 --> 01:15:50,811
+What is S0? S0 is this. So, I can say that 1 plus A has to be equals to 3. From here, we determine A has to be 2.
+
+439
+01:15:53,032 --> 01:15:57,992
+Because they said that for which value of A and B, this function is continuous.
+
+440
+01:15:57,992 --> 01:16:04,912
+Now, let us investigate now from the right side. Limit x goes to
+
+441
+01:16:05,268 --> 01:16:20,167
+0 from the right side, R function is this. x minus b over 2x plus 1. And it is minus b.
+
+442
+01:16:22,307 --> 01:16:29,608
+And this limit has to be equals to f0.
+
+443
+01:16:35,220 --> 01:16:45,420
+Okay, what is f0? We find that f0 here is from here, f0 from here, f0 is 3.
+
+444
+01:16:48,300 --> 01:16:53,340
+So b will be minus 3.
+
+445
+01:16:54,840 --> 01:16:55,600
+Okay?
+
+446
+01:16:58,600 --> 01:17:01,340
+Did you understand? Do you have any question?
+
+447
+01:17:19,347 --> 01:17:27,988
+Why is it equals to minus b? Because they said that the function is continuous, so left side and right side will be equals to also each other.
+
+448
+01:17:28,708 --> 01:17:39,408
+So 0 from the right side, I have minus b. This has to be equals to f0. What is f0? It is 1 plus a. a here is 2.
+
+449
+01:17:40,128 --> 01:17:44,628
+So it has to be b. If minus b is 3.
+
+450
+01:17:45,587 --> 01:18:00,307
+b' has to be minus 3. Okay? Okay. Okay. Now let us look at... Okay, let us look at this example.
+
+451
+01:18:01,768 --> 01:18:11,207
+They said they define f0 in a way that extends fx to be continuous at x equals 0.
+
+452
+01:18:14,195 --> 01:18:38,775
+They said that write a continuous extension, okay, write a continuous extension, okay, and you have to write a 0. If x not equal to 0, you will write something. If x equals 0, they ask it what I will write here, okay?
+
+453
+01:18:50,931 --> 01:19:13,691
+Sorry. Okay. So, what we will write here. If x is not equal to zero, I have to write the function. Okay. So, our function will be e to the power 2x minus 1 over tangent x. Okay.
+
+454
+01:19:14,707 --> 01:19:19,188
+Now, they are asking this one, what I have to write for f0?
+
+455
+01:19:20,188 --> 01:19:23,427
+In that case, this function will be continuous.
+
+456
+01:19:23,427 --> 01:19:25,747
+What can I do here?
+
+457
+01:19:30,996 --> 01:19:31,756
+Ne yapacağız?
+
+458
+01:19:32,195 --> 01:19:34,536
+How can you find this question mark?
+
+459
+01:19:36,496 --> 01:19:37,036
+Yes.
+
+460
+01:19:37,815 --> 01:19:39,376
+I have to write the limit.
+
+461
+01:19:39,556 --> 01:19:40,956
+Limit x goes to 0.
+
+462
+01:19:42,456 --> 01:19:44,615
+E to the power 2x
+
+463
+01:19:44,615 --> 01:19:48,076
+minus 1 over tangent x.
+
+464
+01:19:48,416 --> 01:19:48,596
+Okay.
+
+465
+01:19:51,096 --> 01:19:51,636
+Yes.
+
+466
+01:19:52,467 --> 01:20:11,987
+In the previous week, I gave you some important limits. What are they? For example, I gave you like this. e to the power 2x minus 1 over, if you remember, I gave you this limits formula.
+
+467
+01:20:13,108 --> 01:20:19,587
+These limits will be 1, limit x goes to 0.
+
+468
+01:20:21,268 --> 01:20:28,747
+if limit x goes to 0 if gx is 0.
+
+469
+01:20:29,747 --> 01:20:34,288
+In this example, gx is 2x.
+
+470
+01:20:35,087 --> 01:20:35,207
+Okay.
+
+471
+01:20:36,307 --> 01:20:38,047
+But here 2x missing.
+
+472
+01:20:38,387 --> 01:20:40,567
+So I will add 2x is here.
+
+473
+01:20:41,228 --> 01:20:45,028
+I have to product, according product here.
+
+474
+01:20:45,567 --> 01:20:47,448
+I have also tangent x.
+
+475
+01:20:47,448 --> 01:20:47,907
+Okay.
+
+476
+01:20:48,659 --> 01:21:11,159
+Now, this limit is 1. I set that also tangent x over x or the opposite or the same also 1. So, the limit is 1. If I write f0 as 2, then this function will be continuous at 0.
+
+477
+01:21:13,159 --> 01:21:14,399
+Okay?
+
+478
+01:21:14,996 --> 01:21:18,935
+For example, this question is a good question for test type.
+
+479
+01:21:20,515 --> 01:21:26,096
+I can ask it for which field of F0 this field. Be continuous for example.
+
+480
+01:21:26,615 --> 01:21:28,176
+Bu güzel bir test sorusu olabilir bence.
+
+481
+01:21:29,796 --> 01:21:32,355
+Okay, did you understand what we made here?
+
+482
+01:21:38,355 --> 01:21:40,695
+Hatta size ben bir tane test hazırlayayım.
+
+483
+01:21:43,923 --> 01:21:48,503
+Biraz ilerleyelim. Örnek böyle bir hani kendim bir test hazırlayayım. Bakayım ne yapacaksınız?
+
+484
+01:21:52,275 --> 01:21:54,335
+evde yaparsınız. Sonra bakarız beraber.
+
+485
+01:21:55,515 --> 01:21:59,435
+Okay. Now, let us look at this example.
+
+486
+01:22:00,216 --> 01:22:04,315
+Investigate the continuity of this absolute value function.
+
+487
+01:22:10,836 --> 01:22:19,556
+Okay, so we know that is in absolute video function. Do you know the shape of the absolute function?
+
+488
+01:22:19,556 --> 01:22:30,436
+Normally, 4, 0 is this. Okay, the shape is the same. But if the beginning point is different, for example, here it is,
+
+489
+01:22:31,956 --> 01:22:36,516
+yeah, actually it is x minus 1. Sorry, this is absolute video of x.
+
+490
+01:22:40,148 --> 01:23:00,788
+But in here, it is different. x squared minus 1. It will be not line. It will be a curve. Okay. But the position will be different like this. Şekli değişecek. Okay. Let me write here. Actually, the function, you can think like this.
+
+491
+01:23:07,475 --> 01:23:14,095
+it will be minus x squared minus 1.
+
+492
+01:23:15,555 --> 01:23:22,855
+if x is greater than 1 or equal to 1, I am talking about this one, okay?
+
+493
+01:23:23,195 --> 01:23:26,735
+it will be x squared minus 1, okay?
+
+494
+01:23:27,015 --> 01:23:31,876
+so you have to investigate only the ebbs in the intersection point, okay?
+
+495
+01:23:32,787 --> 01:23:36,948
+Normalde bu tabi daha farklı da ben sadece bunu bir için yazdım.
+
+496
+01:23:36,948 --> 01:23:45,028
+So if x goes to 1 from the left side, it will be 1 minus x squared.
+
+497
+01:23:45,028 --> 01:23:59,567
+So this will be, you can think like this, sometimes we need, I want to write like here, it will be 1 minus 0 minus h squared.
+
+498
+01:24:00,884 --> 01:24:05,043
+it will be 1 minus 8 square. It will be
+
+499
+01:24:05,043 --> 01:24:09,644
+pardon, şurası yanlış oldu.
+
+500
+01:24:11,963 --> 01:24:14,203
+it will be 1.
+
+501
+01:24:14,203 --> 01:24:15,123
+okay.
+
+502
+01:24:16,644 --> 01:24:17,443
+so
+
+503
+01:24:31,572 --> 01:24:52,471
+I gave you at the beginning of the limit. We have another expression for limit. If you look at your lecture notes, we have another expression for limit. The other one is like this. Limit x goes to 1 from the right side, 1 minus x squared.
+
+504
+01:24:52,895 --> 01:25:02,635
+I can write this limit expression. If you have absolute value function or if you have a piecewise function, this expression will be more useful for you.
+
+505
+01:25:03,235 --> 01:25:09,895
+Zero from the right side, it will be 1 minus 1 plus h2. Okay?
+
+506
+01:25:11,576 --> 01:25:18,456
+These two limit definition comes from the lecture notes. You can look at. Okay?
+
+507
+01:25:21,492 --> 01:25:23,492
+bir saniye.
+
+508
+01:25:26,412 --> 01:25:30,252
+Hayır, x gidiyor, yerine işte x'i kaldırıyorsun, yerine bunu yazıyorsun.
+
+509
+01:25:31,992 --> 01:25:35,072
+So, you will cancel x and you will write this one, ok?
+
+510
+01:25:36,231 --> 01:25:37,851
+Bakayım, yanlış yazmayayım bir daha da.
+
+511
+01:25:38,752 --> 01:25:41,471
+Bu notumuz da var, oraya bir bakın, ok?
+
+512
+01:25:42,012 --> 01:25:44,032
+Limit, age goes to zero.
+
+513
+01:25:45,652 --> 01:25:51,572
+1 minus 1 plus 2h minus h2.
+
+514
+01:25:51,572 --> 01:25:53,012
+Okay.
+
+515
+01:26:03,604 --> 01:26:08,844
+Bir saniye, bir dakika bakayım. Şu sıfır. Ne demişim? 1 artı.
+
+516
+01:26:08,844 --> 01:26:15,003
+Şurayı diyorsunuz.
+
+517
+01:26:19,028 --> 01:26:20,007
+Burası da böyle, tamam.
+
+518
+01:26:25,460 --> 01:26:36,819
+h goes to 0. Burayı diyorsunuz değil mi? 1 minus 1 minus 2h minus h square. It will be also 0.
+
+519
+01:26:37,819 --> 01:26:51,899
+Okay. So we have limits. So it is continuous. x, x equals 1. And this is also equals f1.
+
+520
+01:26:52,787 --> 01:26:53,787
+Okay?
+
+521
+01:26:56,387 --> 01:27:02,867
+The absolute value function is a continuous function, but about the derivation, no.
+
+522
+01:27:04,387 --> 01:27:10,467
+So, for absolute value function, we can say that absolute value function is also continuous functions,
+
+523
+01:27:10,467 --> 01:27:16,707
+but we have problem at derivation in the absolute value function. Okay? Do you have any question here?
+
+524
+01:27:22,676 --> 01:27:42,676
+Bir de sağdan gelirken...
+
+525
+01:27:52,076 --> 01:27:56,195
+x kare artı 4x, f'
+
+526
+01:27:50,612 --> 01:28:04,032
+Haa, soru yanıyor. Bir dakika, bir dakika. Haa, şu x kare eksi 1. Tamam, haa, tamam. Şunu anladım dediğiniz. Pardon.
+
+527
+01:28:06,771 --> 01:28:08,771
+Evet, şurası öyle olacak. Şöyle yapalım ama.
+
+528
+01:28:11,291 --> 01:28:12,652
+Evet, şöyle olacak.
+
+529
+01:28:18,068 --> 01:28:24,128
+oldu mu? Okey. I forgot it will be minus because... bir dakika.
+
+530
+01:28:26,188 --> 01:28:27,948
+It will be minus will be here.
+
+531
+01:28:29,628 --> 01:28:32,128
+Yo, bir dakika. Ay benim kıvam karıştırı. Saniye.
+
+532
+01:28:37,524 --> 01:28:44,444
+bunda birden küçük olan da 1-x2, evet birden büyük olan da x2, evet şurası x olacak.
+
+533
+01:28:45,324 --> 01:28:47,464
+Eksi, tamam.
+
+534
+01:28:48,184 --> 01:28:48,324
+Okay.
+
+535
+01:28:50,924 --> 01:28:57,564
+The left side and right side limit will be 1 and it is also equals to f1 so it is continued at the points 1.
+
+536
+01:28:57,744 --> 01:28:57,944
+Okay.
+
+537
+01:28:59,024 --> 01:29:00,244
+Now it is right.
+
+538
+01:29:03,184 --> 01:29:03,744
+Okay.
+
+539
+01:29:04,144 --> 01:29:05,084
+Look at this example.
+
+540
+01:29:06,131 --> 01:29:07,171
+What is your opinion?
+
+541
+01:29:11,764 --> 01:29:15,484
+Normal, the function domain is what?
+
+542
+01:29:17,484 --> 01:29:19,484
+What is your domain?
+
+543
+01:29:23,104 --> 01:29:25,544
+Firstly, you have to determine your domain.
+
+544
+01:29:25,684 --> 01:29:26,424
+What is your domain?
+
+545
+01:29:28,004 --> 01:29:28,604
+Why?
+
+546
+01:29:32,243 --> 01:29:41,583
+You have to look at your denominator. Okay? But I know that sin function is between minus 1 to 1.
+
+547
+01:29:43,143 --> 01:29:57,103
+And it will never equal to 2. So your domain will be real number because 2 minus sin x can't be 0. Okay?
+
+548
+01:29:57,743 --> 01:29:59,823
+Because sin x can't be 2.
+
+549
+01:30:00,851 --> 01:30:03,891
+Boundość function and at most it can be 1.
+
+550
+01:30:03,891 --> 01:30:07,492
+So your domain is real numbers so it is continuous.
+
+551
+01:30:10,372 --> 01:30:12,211
+Okay, at everywhere.
+
+552
+01:30:14,612 --> 01:30:16,211
+Now what about this?
+
+553
+01:30:20,851 --> 01:30:46,072
+You have to find your domain. Here, I have problem at cosine x is 1. So, what is the point? I can write the point, actually the points as 0, I have. Cosine 0 is 1. I have 2 pi. I have 4 pi.
+
+554
+01:30:48,180 --> 01:31:14,180
+So, I can write as 0 plus 2 ki pi. Okay? Ki start from 1, 2. Okay? So, I can write that, okay, it is continuous. It is...
+
+555
+01:31:18,068 --> 01:31:27,908
+x is continuous on x domain. What is x domain? Real number minus x key.
+
+556
+01:31:27,908 --> 01:31:29,748
+Okay?
+
+557
+01:31:33,971 --> 01:31:44,831
+it is continuous on its domain. So our domain is real number minus x key points. What is x key point? It is 0 plus 2 key pi.
+
+558
+01:31:49,203 --> 01:32:07,183
+Okay, because at this point, limit will be infinity. It will be 1, cosine 0 is 1. You have a number here, so the limit will be infinity. So only it is continuous on its domain. Okay?
+
+559
+01:32:10,183 --> 01:32:16,123
+Bunu anlatmadım, şimdi anlatacağım. Okay, let us look at this example. Okay?
+
+560
+01:32:25,363 --> 01:32:41,363
+For which value of a and b? f is not continuous and at 0, but it is continuous at x equals 1.
+
+561
+01:32:42,323 --> 01:32:52,383
+They said that for which value of a and b, f is not continuous at 0, but it is continuous at x equals 1.
+
+562
+01:32:52,724 --> 01:32:56,984
+Firstly, I have to investigate the limits at this point.
+
+563
+01:32:57,784 --> 01:32:58,104
+Okay?
+
+564
+01:32:59,184 --> 01:33:08,244
+So, let us look at x goes to limit x goes to 0 from the left side.
+
+565
+01:33:08,244 --> 01:33:10,083
+Our function is this.
+
+566
+01:33:11,684 --> 01:33:15,784
+ax minus b, it will be minus b.
+
+567
+01:33:16,684 --> 01:33:19,744
+Now, let us investigate x goes to 0.
+
+568
+01:33:21,332 --> 01:33:32,171
+from the right side, R function is this, ax plus 2b x cube, it is 0.
+
+569
+01:33:33,992 --> 01:33:37,192
+h0, the function is not continuous.
+
+570
+01:33:39,171 --> 01:33:39,452
+okay.
+
+571
+01:33:40,971 --> 01:33:44,391
+f0, what is f0? f0 here is also this one.
+
+572
+01:33:51,188 --> 01:34:09,988
+This is also f0. Okay, f0 is also minus b. So if it is not continuous, we can't have limits. So I can say that b has to be non-zero. Okay?
+
+573
+01:34:10,707 --> 01:34:19,067
+So, from the discontinuity at 0, we can say that b has to be non-zero. Now, let us investigate for 1.
+
+574
+01:34:20,567 --> 01:34:36,067
+Limit x goes to 1 from the left side. R function is ax plus 2bx3. Okay. So, it is a...
+
+575
+01:34:37,011 --> 01:34:50,771
+plus 2b. Now, limit x goes to 1. From the right side, r function is this. It is 1 plus bx².
+
+576
+01:34:52,148 --> 01:35:02,667
+it will be 1 plus b. And they said that the function is continuous at x equals 1. So it will be equals to each other.
+
+577
+01:35:02,667 --> 01:35:18,587
+Then I can say that a plus 2b will be 1 plus b. a plus b has to be 1. This is the second condition.
+
+578
+01:35:19,475 --> 01:35:32,835
+This is the first condition. Okay? We can say that for the conditions.
+
+579
+01:35:37,555 --> 01:35:40,815
+b is not zero and
+
+580
+01:35:40,815 --> 01:35:46,395
+a plus b equals one
+
+581
+01:35:46,395 --> 01:35:49,375
+we can
+
+582
+01:35:49,375 --> 01:35:51,996
+take
+
+583
+01:35:51,996 --> 01:35:54,155
+any
+
+584
+01:35:54,155 --> 01:35:55,475
+values
+
+585
+01:35:55,475 --> 01:35:58,935
+which
+
+586
+01:35:58,935 --> 01:36:01,935
+possess
+
+587
+01:36:06,579 --> 01:36:06,840
+x kare artı 2x, f'
+
+588
+01:36:06,840 --> 01:36:12,559
+the conditions. Yani bu koşulları sağlayan her noktayı alabileceğiz demek.
+
+589
+01:36:13,899 --> 01:36:15,579
+x'ini de sağlaması gerekiyor.
+
+590
+01:36:15,579 --> 01:36:15,979
+Okay?
+
+591
+01:36:17,420 --> 01:36:19,760
+For example, we can take
+
+592
+01:36:19,760 --> 01:36:21,340
+a is
+
+593
+01:36:21,340 --> 01:36:24,000
+0.5
+
+594
+01:36:24,000 --> 01:36:25,559
+b is
+
+595
+01:36:25,559 --> 01:36:27,939
+0.5
+
+596
+01:36:27,939 --> 01:36:28,539
+for example.
+
+597
+01:36:29,420 --> 01:36:29,659
+Okay?
+
+598
+01:36:30,300 --> 01:36:31,779
+Or we can take
+
+599
+01:36:31,779 --> 01:36:33,399
+b is
+
+600
+01:36:33,779 --> 01:36:36,939
+1, a is 0.
+
+601
+01:36:38,559 --> 01:36:42,819
+Because b is non-0, the sum of a and b is 1.
+
+602
+01:36:44,439 --> 01:36:46,259
+Bu koşullu sağlayan.
+
+603
+01:36:49,380 --> 01:36:54,599
+Because in the question they said that f is not continuous at 0.
+
+604
+01:36:55,500 --> 01:36:57,675
+If it is not continuous, this...
+
+605
+01:36:57,844 --> 01:37:04,364
+as to be not equal to each other. Left side I have minus B, this is zero. So B can't be zero.
+
+606
+01:37:04,724 --> 01:37:06,984
+Do you have any question?
+
+607
+01:37:09,064 --> 01:37:11,124
+Okay.
+
+608
+01:37:11,923 --> 01:37:13,564
+Oh, this question is very
+
+609
+01:37:13,564 --> 01:37:15,564
+exantrik.
+
+610
+01:37:15,884 --> 01:37:17,963
+Ben bu soruyu çok seviyorum.
+
+611
+01:37:18,444 --> 01:37:21,784
+Çok çok basit bir soru ama biraz kafayı değiştiren bir soru.
+
+612
+01:37:23,423 --> 01:37:25,164
+Hayır, soru da diyor ki
+
+613
+01:37:26,068 --> 01:37:33,328
+In the previous question, they said that f is not continuous 0 but it is continuous at 1.
+
+614
+01:37:34,808 --> 01:37:37,648
+Sıfırda süreksiz, birde sürekli hissediyor.
+
+615
+01:37:40,048 --> 01:37:42,488
+Bunu sağlayan A ve B'yi sordu burada.
+
+616
+01:37:48,948 --> 01:37:50,308
+O bize vermiş zaten.
+
+617
+01:37:51,388 --> 01:37:56,568
+Sıfırda sürekli değilse ve birde sürekliyse bunu sağlayan aile b'yi soruyor.
+
+618
+01:37:57,488 --> 01:37:59,968
+Okay. Let us look at this function.
+
+619
+01:37:59,968 --> 01:38:00,568
+Question.
+
+620
+01:38:01,248 --> 01:38:12,288
+They give a function if alpha beta is defined by x to the power alpha sin x to the power beta if x is not zero.
+
+621
+01:38:12,808 --> 01:38:15,488
+If x zero, the function is zero.
+
+622
+01:38:15,788 --> 01:38:16,048
+Okay.
+
+623
+01:38:17,203 --> 01:38:23,043
+Here, alpha is a number greater or equal to 0, beta is a real number.
+
+624
+01:38:23,043 --> 01:38:32,663
+So they asked that if is f' 0, minus 1, continuous on real number or not.
+
+625
+01:38:33,224 --> 01:38:36,163
+First, I have to determine what is f' 0, 1.
+
+626
+01:38:37,144 --> 01:38:38,344
+So f' minus 1.
+
+627
+01:38:38,764 --> 01:38:44,923
+It means that alpha, I will take alpha is 0 and beta is minus 1.
+
+628
+01:38:45,524 --> 01:39:03,423
+So let us see our function. x to the power 0, sin beta to the power minus 1, x is non-0, 0, x is 0.
+
+629
+01:39:04,423 --> 01:39:12,224
+Or we can see this function also. It is sin 1 over beta.
+
+630
+01:39:14,068 --> 01:39:30,408
+Now, I have to investigate this function as continuous or not. It is very easy. Only I have to look at the limit because I don't have any function less or equal to zero. Only I have one function. So I have to investigate x equals zero.
+
+631
+01:39:34,868 --> 01:39:37,668
+This is 0, 0, 0.
+
+632
+01:39:39,908 --> 01:39:40,748
+Ah, evet, pardon.
+
+633
+01:39:41,288 --> 01:39:41,948
+Go focus.
+
+634
+01:39:45,788 --> 01:39:46,388
+Okay.
+
+635
+01:39:48,228 --> 01:39:50,748
+x üzeri x, bu da bir bir x.
+
+636
+01:39:51,828 --> 01:39:53,748
+So, x goes to 0.
+
+637
+01:39:53,948 --> 01:39:56,868
+I have to look at a sign.
+
+638
+01:39:59,668 --> 01:40:00,828
+1 over x.
+
+639
+01:40:02,547 --> 01:40:07,563
+ok.
+
+640
+01:40:18,068 --> 01:40:24,128
+It is sin infinity.
+
+641
+01:40:32,228 --> 01:40:35,228
+ok.
+
+642
+01:40:31,944 --> 01:40:33,836
+x kare artı 2x, f'
+
+643
+01:40:42,064 --> 01:40:45,064
+ok.
+
+644
+01:40:41,579 --> 01:40:43,723
+x kare artı 2x, f'
+
+645
+01:40:41,171 --> 01:40:43,471
+bir soru yaptımda bir şey kaldı daha.
+
+646
+01:40:49,587 --> 01:40:51,047
+Eksi bir şey yazayım da.
+
+647
+01:40:51,487 --> 01:40:51,947
+Tamam.
+
+648
+01:40:54,507 --> 01:40:55,148
+Okay.
+
+649
+01:40:55,507 --> 01:40:57,148
+So we know there's sin infinity.
+
+650
+01:40:57,407 --> 01:41:00,347
+Sin infinity I mentioned last week.
+
+651
+01:41:00,927 --> 01:41:03,427
+It is a number between minus 1 to 1.
+
+652
+01:41:04,507 --> 01:41:06,627
+But limit has to be unique.
+
+653
+01:41:07,007 --> 01:41:11,027
+So we will say we don't limit doesn't exist.
+
+654
+01:41:13,127 --> 01:41:15,967
+Because sin infinity limits.
+
+655
+01:41:23,315 --> 01:41:24,675
+doesn't exist.
+
+656
+01:41:24,675 --> 01:41:25,355
+Okay.
+
+657
+01:41:27,015 --> 01:41:29,795
+So, it is not continuous.
+
+658
+01:41:36,595 --> 01:41:48,576
+But, for example, if you find 0, okay, then it will be continuous. But here, it is not continuous. One second, I want to write.
+
+659
+01:41:51,315 --> 01:41:53,996
+If I ask F,
+
+660
+01:41:59,188 --> 01:42:10,828
+If I write 1, minus 1, what can you say about this? Let us look at f1, minus 1. What is our function?
+
+661
+01:42:12,967 --> 01:42:25,128
+x sin 1 over x. If x is non-zero, if x is zero, it will be zero.
+
+662
+01:42:25,716 --> 01:42:27,676
+Let us investigate this function.
+
+663
+01:42:29,256 --> 01:42:46,855
+What is this? Limit x goes to 0, x product sine 1 over x. What is this? It is 0 product sine infinity. Okay.
+
+664
+01:42:47,412 --> 01:42:54,532
+I said that it is a number between minus 1 to 1, but we talked about last week.
+
+665
+01:42:55,112 --> 01:42:59,792
+The number is not important because you have product with 0, the number will be 0.
+
+666
+01:43:00,372 --> 01:43:03,912
+What about f0? Is it equals to f0?
+
+667
+01:43:06,252 --> 01:43:06,952
+Yes.
+
+668
+01:43:08,051 --> 01:43:12,311
+So, this function is f.
+
+669
+01:43:13,140 --> 01:43:16,560
+1 kare minus 1 is continuous.
+
+670
+01:43:18,420 --> 01:43:22,940
+Okay, it's every x.
+
+671
+01:43:24,159 --> 01:43:25,640
+Daha soruyu öyle sormuştum.
+
+672
+01:43:25,640 --> 01:43:27,960
+Yes. Okay?
+
+673
+01:43:36,115 --> 01:43:38,115
+Okey. Do you have any questions?
+
+674
+01:43:39,316 --> 01:43:39,636
+Okey.
+
+675
+01:43:39,936 --> 01:43:40,896
+That is okey.
+
+676
+01:43:42,156 --> 01:43:44,556
+Bunu incelemiş mi? Bunu incelememiş mi? Bir de buna bakalım.
+
+677
+01:43:45,376 --> 01:43:47,615
+Şunlar yeni konuyla alakalı. Şimdi onu vereceğim.
+
+678
+01:43:48,056 --> 01:43:50,216
+Lastly, let us look at this example. Okey.
+
+679
+01:43:51,536 --> 01:43:52,936
+Investigate the continuity.
+
+680
+01:43:55,436 --> 01:43:56,716
+F1-1 bu.
+
+681
+01:43:58,636 --> 01:44:01,676
+In the function.
+
+682
+01:44:05,043 --> 01:44:06,043
+ok?
+
+683
+01:44:06,043 --> 01:44:09,043
+so neşe
+
+684
+01:44:13,011 --> 01:44:22,091
+If I ask 1 minus 1, alpha means 1, beta means minus 1. So, it is 1.
+
+685
+01:44:26,260 --> 01:44:52,620
+it will be minus 1. Okay? Yes. Sin infinity, if you find limit sin x, sin infinity is not defined. But if you product with 0, the result will be always 0. So, this limit will be 0. But if you have this one, you don't have limit. But when you product with x, x goes to 0, the limit will be 0. Okay?
+
+686
+01:44:53,460 --> 01:44:58,119
+Okay. Okay, I want to look at this example. Okay.
+
+687
+01:45:02,060 --> 01:45:09,860
+Now we have to investigate. You can see that we have problem at this point. First, let us determine our domain.
+
+688
+01:45:11,220 --> 01:45:20,460
+1 minus 1 minus x square is to be non-zero. Okay. And also
+
+689
+01:45:21,971 --> 01:45:25,612
+1-x0 has to be greater than 0.
+
+690
+01:45:26,792 --> 01:45:30,612
+So, 1 not equal to 1-x2.
+
+691
+01:45:32,712 --> 01:45:38,091
+So, x has to be non-zero from here.
+
+692
+01:45:40,231 --> 01:45:43,391
+Çözdük mü o zaman? Tamam. Ben de 2 koymuşum.
+
+693
+01:45:44,072 --> 01:45:46,131
+Ben de bunun çözdüğümüzü hatırlıyorum. Tamam.
+
+694
+01:45:47,332 --> 01:45:47,612
+Okey.
+
+695
+01:45:50,547 --> 01:46:17,367
+Okay. Now, firstly, let us look at this theorem. Okay. Now we can talk about intermediate video theorem. Actually, this theorem is very, very easy. What does it say? If R function is a continuous function on a closed interval a to the b. Okay. And if the function is continuous in the interval.
+
+696
+01:46:17,779 --> 01:46:35,920
+And if you have a y0 point, y0 value, between f'a and f'b, then I can say that I have a point c in the closing interval a to b, which equals to y0.
+
+697
+01:46:36,739 --> 01:46:40,600
+What does it mean? They said that. Look at here.
+
+698
+01:46:42,547 --> 01:46:55,567
+if your function is continuous. Okay. If you have a value of y0 between f, a, f, b, e, the position can change. f, a can be here or here. It is not important. Okay.
+
+699
+01:46:55,567 --> 01:47:05,547
+They said that if you have a value y0 between these two points, then in the function you will have
+
+700
+01:47:06,131 --> 01:47:17,951
+a point between a to b here. Eğer ki y değeriniz bu ikisi arasındaysa bunun karşılığındaki c sayısı da bu aralıkta olacak.
+
+701
+01:47:18,871 --> 01:47:31,571
+Why? Actually, this theorem is very important. Why? Especially if you want to determine do you have any root in the interval or not. Let me explain one thing. For example,
+
+702
+01:47:32,435 --> 01:47:48,135
+You have a very complex function like this. Okay. This is, for example, 2. This is 5. Okay. And your function like this, for example, x cubed plus x squared
+
+703
+01:47:48,135 --> 01:47:57,715
+power 3 over 2 over x minus 1 or something like that. Okay. And
+
+704
+01:47:58,112 --> 01:48:07,031
+You want to solve this, you want to find this root, but you are not sure you have a root in this interval or not.
+
+705
+01:48:07,311 --> 01:48:08,911
+This theorem is very easy.
+
+706
+01:48:09,551 --> 01:48:17,731
+They said that if you talk about in this interval, firstly, your function is continuous in this interval, yes.
+
+707
+01:48:18,131 --> 01:48:18,431
+Okay.
+
+708
+01:48:20,307 --> 01:48:29,228
+So our function is continuous in this interval. So they said that, okay, what is f2?
+
+709
+01:48:30,228 --> 01:48:39,148
+For example, f2 is, for example, minus 4. What is f5? For example, let us take 8.
+
+710
+01:48:39,747 --> 01:48:46,327
+So, okay, the function comes from minus 2 plus.
+
+711
+01:48:46,671 --> 01:48:51,152
+It means that at least one point, the function has to be zero.
+
+712
+01:48:51,532 --> 01:48:53,851
+Because it comes from negative to positive.
+
+713
+01:48:54,032 --> 01:48:54,631
+Oh, okay.
+
+714
+01:48:54,771 --> 01:48:58,511
+It means that at least one root in this interval.
+
+715
+01:48:59,492 --> 01:49:02,612
+So you can be sure using this theorem.
+
+716
+01:49:02,612 --> 01:49:08,152
+So I can say that f2 is negative.
+
+717
+01:49:08,787 --> 01:49:35,787
+0 will be here. f5 is positive in this interval. So it means that at least one point, the function will be 0. This theorem says this one. Especially in the root v, it is very important. Okay? Let me show you an example. Şimdi anlaşıldı mı bu teoremin ne olduğu? Bu teorem...
+
+718
+01:49:38,899 --> 01:49:42,899
+Hayır, zaten bu sürekli olan bir yerde bunu yapabiliyorsun.
+
+719
+01:49:44,859 --> 01:49:46,539
+Sıfırda tanımsızlık diye bir şey yok.
+
+720
+01:49:46,659 --> 01:49:52,460
+Bu fonksiyonun zaten ana şeyi olması, o aralıkta sürekli olması zaten.
+
+721
+01:49:52,840 --> 01:49:54,920
+O şartı sağlıyorsa bunu söyleyebiliyorum.
+
+722
+01:49:58,260 --> 01:50:00,340
+Evet, şimdi teorem şunu diyor.
+
+723
+01:50:01,060 --> 01:50:05,500
+Eğer fonksiyonun bu aldığın aralıkta sürekliyse bu önemli bir özellik.
+
+724
+01:50:05,579 --> 01:50:07,300
+Bir kere bu şartı sağlaması gerekiyor.
+
+725
+01:50:07,860 --> 01:50:18,100
+O zaman diyor ki senin aldığın herhangi bir aralık, diyelim ki ben 2 ile 3 arasında bir fonksiyonun bir değeri var mı diye bakmak istiyorum mesela.
+
+726
+01:50:19,100 --> 01:50:19,260
+Tamam.
+
+727
+01:50:20,159 --> 01:50:24,300
+O zaman diyor ki eğer bu y0'ın 2 ile 3 arasındaysa o zaman
+
+728
+01:50:24,756 --> 01:50:26,796
+bunu sağlayacak olan
+
+729
+01:50:26,796 --> 01:50:30,396
+değerin de
+
+730
+01:50:30,396 --> 01:50:32,136
+bu
+
+731
+01:50:32,136 --> 01:50:35,056
+daha doğrusu şöyle diyelim
+
+732
+01:50:35,056 --> 01:50:36,096
+f2 diyelim
+
+733
+01:50:36,096 --> 01:50:38,396
+buna da f3 diyelim
+
+734
+01:50:39,764 --> 01:51:06,224
+Eğer ki senin y sıfırın bu aralıktaysa o zaman bunu sağlayan x değerleri de 2 ile 3 aralığında olmak zorunda. Özellikle biz bunu kök var mı? Diyelim ki sizin en üstü çok karmaşık bir kök var. Bunun kökünü bulmak istiyorsunuz ama hiçbir şeyden emin değilsiniz. Ve diyor ki size, işte atıyorum. Acaba bu fonksiyonun 1 ile 4 arasında bir kökü var mı? Hani kökü varsa başlayacaksınız işleme. O zaman ne yapıyorsunuz?
+
+735
+01:51:06,676 --> 01:51:10,036
+f'in 1'deki değerini hesaplıyorsunuz. Diyelim ki negatif çıktı.
+
+736
+01:51:10,816 --> 01:51:14,696
+f'in 4'teki değerine bakıyorsun. Burada pozitif çıktı.
+
+737
+01:51:15,236 --> 01:51:20,096
+Negatiften pozitif çıktığına göre mutlaka bir eksi eksenini en az bir yerde kesmesi gerekecek.
+
+738
+01:51:20,236 --> 01:51:28,116
+O zaman diyorsunuz ki, sıfır bunların arasında olduğu için demek ki en azından bir kökü sıfır yapacak.
+
+739
+01:51:28,256 --> 01:51:30,376
+Burada bir değer vardır diyor size teoremin.
+
+740
+01:51:31,236 --> 01:51:32,356
+Teoremin anlaşıyı bu.
+
+741
+01:51:33,460 --> 01:51:37,380
+For example, let us look at this example.
+
+742
+01:51:37,380 --> 01:51:39,980
+Pardon.
+
+743
+01:51:39,980 --> 01:51:41,980
+Durun saniye.
+
+744
+01:51:47,699 --> 01:51:59,499
+Let us look at this example. They said that show that this equation has a solution in the interval 1, 3.
+
+745
+01:51:59,619 --> 01:52:12,559
+What is solution? It means that fx equals 0. This is solution. Okay. So let us write our function as x squared minus x plus 1 minus 3.
+
+746
+01:52:15,539 --> 01:52:23,799
+minus x minus 2. This is our function. And in this interval, they give the interval, sorry.
+
+747
+01:52:26,799 --> 01:52:32,960
+This is our interval. And you can see that this is a polynomial and it is continuous at everywhere.
+
+748
+01:52:33,779 --> 01:52:39,259
+So, according to intermediate video theorem, I have to look at the endpoints. What is f1?
+
+749
+01:52:41,395 --> 01:52:43,315
+f'1 is minus 2.
+
+750
+01:52:44,195 --> 01:52:46,475
+What is f'3?
+
+751
+01:52:47,435 --> 01:52:49,195
+f'3 is 4.
+
+752
+01:52:49,835 --> 01:52:50,755
+It is negative.
+
+753
+01:52:51,155 --> 01:52:51,975
+It is positive.
+
+754
+01:52:52,615 --> 01:52:59,155
+So, since f'1 is negative and f'3 is positive, I can write that f'1
+
+755
+01:52:59,155 --> 01:53:04,755
+is negative 0 here, f'3.
+
+756
+01:53:05,715 --> 01:53:06,015
+Okay?
+
+757
+01:53:07,347 --> 01:53:16,907
+So, according to intermediate video theorem, I can see that at one point, at 1c, the function is 0.
+
+758
+01:53:16,907 --> 01:53:17,547
+Okay?
+
+759
+01:53:22,931 --> 01:53:24,931
+İlk olarak, bir şekilde yazın.
+
+760
+01:53:25,391 --> 01:53:43,811
+Bir şekilde yazın.
+
+761
+01:53:44,275 --> 01:53:45,895
+This point is negative.
+
+762
+01:53:46,376 --> 01:53:47,675
+This point is positive.
+
+763
+01:53:47,836 --> 01:53:52,635
+So at least one point it has to be zero or something like that, for example.
+
+764
+01:53:55,235 --> 01:53:55,815
+Okay.
+
+765
+01:53:56,195 --> 01:53:57,655
+This function is continuous.
+
+766
+01:53:58,416 --> 01:53:59,796
+This is your beginning point.
+
+767
+01:53:59,916 --> 01:54:01,055
+This is your end point.
+
+768
+01:54:01,435 --> 01:54:02,296
+This is negative.
+
+769
+01:54:02,815 --> 01:54:03,655
+This is positive.
+
+770
+01:54:03,655 --> 01:54:09,395
+If you look at here, at least here, one, two.
+
+771
+01:54:10,003 --> 01:54:13,904
+at 3 points, I have solution.
+
+772
+01:54:14,484 --> 01:54:18,043
+at least one point, you will have solution.
+
+773
+01:54:19,784 --> 01:54:21,543
+anlaşıldı mı burası arkadaşlar?
+
+774
+01:54:22,204 --> 01:54:31,324
+diyor ki, eğer fonksiyonunuz sürekliyse ve f a ile f b'nin işaretleri farklıysa, bu özel bir şey söylüyorum.
+
+775
+01:54:31,859 --> 01:54:40,239
+işaretleri farklıysa en azından bir noktada mutlaka bu x80'ini kesiyor. Ama birden fazla da olabilir. Mesela burasından başlar, şöyle gider.
+
+776
+01:54:40,239 --> 01:54:56,539
+For example here. So if A is here, if B is here, so I have 1, 2, 3, 4, 5, at 5 points I have solution.
+
+777
+01:54:57,203 --> 01:55:01,323
+or it doesn't need to be negative to positive or something like that.
+
+778
+01:55:03,163 --> 01:55:10,923
+f a is positive, f b is negative, so I have one, two, three points, I have root.
+
+779
+01:55:11,203 --> 01:55:11,463
+Okay.
+
+780
+01:55:13,304 --> 01:55:15,243
+But it doesn't need to be root.
+
+781
+01:55:15,363 --> 01:55:17,003
+It can be any point also.
+
+782
+01:55:17,563 --> 01:55:19,203
+Let me give an example.
+
+783
+01:55:19,863 --> 01:55:21,243
+Let us look at this question.
+
+784
+01:55:21,483 --> 01:55:21,703
+Okay.
+
+785
+01:55:23,604 --> 01:55:30,423
+using the corresponding theorem, actually this corresponding theorem is intermediate value probe theorem, okay?
+
+786
+01:55:31,344 --> 01:55:39,064
+Determine that this function has a value 1 over 3 or not in this interval.
+
+787
+01:55:39,064 --> 01:55:49,484
+So firstly, fx is continuous on 0 to 1, okay?
+
+788
+01:55:50,836 --> 01:55:52,916
+So it means that I can use the term.
+
+789
+01:55:54,056 --> 01:55:56,356
+First I have to find what is F0.
+
+790
+01:55:58,916 --> 01:56:01,096
+F0 is 1.
+
+791
+01:56:02,636 --> 01:56:03,876
+What is F1?
+
+792
+01:56:06,576 --> 01:56:07,756
+F1 is 0.
+
+793
+01:56:07,756 --> 01:56:08,376
+Okay.
+
+794
+01:56:10,144 --> 01:56:21,144
+F'
+
+795
+01:56:09,684 --> 01:56:30,684
+In this question, it is not related to solution. Okay. So, which point they give 1 over 3? 1 over 3 is in this interval? Yes. f1, 1 over 3, f0. Okay. So, according to...
+
+796
+01:56:34,163 --> 01:56:50,844
+intermediate video theorem, we have at least one c in the real number, such that
+
+797
+01:56:54,771 --> 01:56:59,271
+f c is 1 over 3. That's all.
+
+798
+01:57:01,971 --> 01:57:09,011
+Burada 1 bölü 3'e eşit bir değer var mı diye soruyor. Ama kök var mı diye soruyorsunuz onu sıfır almanız gerekiyor.
+
+799
+01:57:09,572 --> 01:57:14,992
+In this question they said that do you have any point where f c is 1 over 3?
+
+800
+01:57:15,511 --> 01:57:18,811
+But in the other questions if they ask a solution
+
+801
+01:57:19,252 --> 01:57:44,792
+Solution means fc equals 0. Okay? So, I have at least one root. For example, look at this example. Determine that this equation has any root in the closed interval 0 to 1 or not. So, this is our function. Okay? This is our function.
+
+802
+01:57:45,460 --> 01:58:10,260
+Is your function is continuous at 0, 1? R function is this, 3x² minus x, cube root x minus 1, minus 1. This is your function. And what is your domain of this function? What is domain f?
+
+803
+01:58:17,524 --> 01:58:42,864
+Yes, real number. Only we can have problem at here, but it is cube root. In the cube root, our domain is real number. So it is continuous. So we don't have any problem. Now, I have to find what is f0? 0, 0, it is minus 1. What about f1? 1, 0, 2.
+
+804
+01:58:44,756 --> 01:58:50,315
+They said that any root. Root means that do you have any fc equals 0?
+
+805
+01:58:52,095 --> 01:59:02,395
+So, f0 is minus 1. 0 is in this interval. f1 is 2. f1.
+
+806
+01:59:03,395 --> 01:59:06,060
+So, according to...
+
+807
+01:59:08,756 --> 01:59:14,756
+intermediate video, intermediate video, türev, at least
+
+808
+01:59:14,756 --> 01:59:22,576
+1c, sorry, it has to be, şuraya, şöyle yazayım.
+
+809
+01:59:24,516 --> 01:59:26,576
+Okay, it is also the same.
+
+810
+01:59:28,056 --> 01:59:35,256
+So, I can say that at least 1c, fc, will be 0.
+
+811
+01:59:36,275 --> 01:59:38,895
+and c has to be in this integral.
+
+812
+01:59:40,296 --> 01:59:45,036
+0, 1 aralığında bunu sağlayan en az bir tane nokta var demek.
+
+813
+01:59:47,796 --> 01:59:53,956
+Root diyorsa 0 alacaksınız. Ama root dışında başka bir nokta diyorsa o zaman onu buraya alacaksınız.
+
+814
+01:59:59,220 --> 02:00:03,320
+Bunun dışında bir şey daha verip bitireceğim dersi.
+
+815
+02:00:03,920 --> 02:00:04,140
+Okey?
+
+816
+02:00:05,420 --> 02:00:09,060
+Para vermeyeceğim. Sadece şurada bir şey var. Onu da vereyim. Yarın devam ederiz.
+
+817
+02:00:10,640 --> 02:00:14,280
+You can look at the questions also, okey?
+
+818
+02:00:15,400 --> 02:00:16,600
+Working questions.
+
+819
+02:00:20,340 --> 02:00:22,180
+I want to solve, okey.
+
+820
+02:00:25,460 --> 02:00:28,239
+Now, last, I want to talk about discontinuity.
+
+821
+02:00:29,239 --> 02:00:32,220
+Actually, I mentioned, but I want to talk again.
+
+822
+02:00:33,020 --> 02:00:34,560
+What about discontinuity?
+
+823
+02:00:35,779 --> 02:00:40,579
+If you have a problem at one point, the function will be discontinuity.
+
+824
+02:00:40,680 --> 02:00:43,619
+But we have three different kind of discontinuity type.
+
+825
+02:00:44,119 --> 02:00:45,720
+The first one is removable.
+
+826
+02:00:46,380 --> 02:00:47,100
+What is that?
+
+827
+02:00:47,640 --> 02:00:52,199
+If you have limit, okay, if you have limit at the point,
+
+828
+02:00:52,787 --> 02:01:04,127
+But if the limit not equal to fc, fx0, then it is removable discontinuity.
+
+829
+02:01:04,647 --> 02:01:12,167
+If you have limit, but if your limit not equal to fx0, then it is called removable.
+
+830
+02:01:12,447 --> 02:01:19,587
+Yani kaldırılabilir. Yani işlem yaparak siz bunu sürekli hale getirecek şekilde ekstenşi yapabiliyorsunuz.
+
+831
+02:01:20,659 --> 02:01:31,400
+If you have a removable discontinuity, you can write continuous extension and you can define a new function and you can find a continuous function.
+
+832
+02:01:31,780 --> 02:01:31,820
+Okay.
+
+833
+02:01:33,280 --> 02:01:36,360
+The second one is jump discontinuity.
+
+834
+02:01:37,720 --> 02:01:39,440
+Sıçramalı olarak geçiyor.
+
+835
+02:01:39,960 --> 02:01:40,400
+Okay.
+
+836
+02:01:41,020 --> 02:01:42,720
+What is jump discontinuity?
+
+837
+02:01:42,720 --> 02:01:45,420
+In here, you have left side limit.
+
+838
+02:01:47,731 --> 02:01:55,091
+you have right side limits, but they are different to each other.
+
+839
+02:01:55,811 --> 02:02:03,811
+actually, you don't have limit. it is called jump discontinuity. okay? and the last one is essential.
+
+840
+02:02:03,811 --> 02:02:08,612
+actually, it is infinite discontinuity or we can say that it is essential.
+
+841
+02:02:10,931 --> 02:02:33,492
+in the books you can see also it is essential or infinite discontinuity. If one of the limit is equals to infinity or not exists, then it is called essential or infinite discontinuity. For example, let us look at these examples, okay?
+
+842
+02:02:37,076 --> 02:02:53,771
+Ve bu şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde
+
+843
+02:03:01,108 --> 02:03:05,347
+ok. So from the graph, I can say it, I have limit.
+
+844
+02:03:05,347 --> 02:03:06,228
+ok.
+
+845
+02:03:11,412 --> 02:03:44,076
+x kare artı 2x, f'
+
+846
+02:03:22,547 --> 02:03:43,587
+No, we don't have NFC. So it means that, what is that? Which kind of discontinuity can say that? I have limit, but it is not equal to FC or FC doesn't exist. It is, which one? It is removable. Okay?
+
+847
+02:03:44,923 --> 02:03:45,923
+x kare artı 2x, f'
+
+848
+02:03:44,307 --> 02:03:53,747
+it is removable discontinuity. You can write extension. When you write extension, you can determine fc as the limit point.
+
+849
+02:03:54,167 --> 02:04:05,287
+Then you can make your function as continuous. If you look at the second example, when you come from the left side, your limit is this.
+
+850
+02:04:09,811 --> 02:04:35,952
+This, the limits are different. So, let me write here, limit x goes to c, from the left side, fx equals to fc. Okay, but limit x goes to c, from the right side, fx. Okay, we have, but
+
+851
+02:04:36,340 --> 02:04:46,500
+not equal to this one. So it is jump discontinuity. Okay? It is jump discontinuity.
+
+852
+02:04:48,980 --> 02:05:01,380
+What about this one? Actually, this is also removable, but different removable. In the first removable, fc not exist.
+
+853
+02:05:02,996 --> 02:05:12,775
+It is removable, but in this example, I have fc, but they are not equal to limit point. It is also different, removable. Okay?
+
+854
+02:05:13,796 --> 02:05:26,416
+In both of them, we have limit, but in the first example, fc doesn't exist, doesn't define, but in the last example, I have fc, but fc different from the limit.
+
+855
+02:05:26,416 --> 02:05:29,476
+So it is also removable discontinuity.
+
+856
+02:05:30,515 --> 02:05:41,795
+Okay. Now, look at this example. Let's try to determine and classify the discontinuity points. Bakın, şöyle sorular olabilir.
+
+857
+02:05:42,915 --> 02:05:47,875
+For example, let me write the test example. This is your function.
+
+858
+02:05:48,979 --> 02:06:10,283
+Ve de
+
+859
+02:06:10,931 --> 02:06:14,931
+jump, x equals minus 3, jump, for example.
+
+860
+02:06:15,551 --> 02:06:17,172
+Böyle bir test sorusu hazırladım size.
+
+861
+02:06:17,632 --> 02:06:27,391
+C, işte x equals minus 3 is removable, x equals 3, it is infinity, for example, something like that.
+
+862
+02:06:27,511 --> 02:06:30,771
+Okay, so let's ask look at this example.
+
+863
+02:06:30,952 --> 02:06:34,712
+Firstly, you have to determine the discontinuity points.
+
+864
+02:06:35,011 --> 02:06:37,992
+Okay, so what is your discontinuity points?
+
+865
+02:06:39,347 --> 02:06:53,607
+If x square is 9, I have problem at 3 and minus 3. So I have to investigate these two points. Okay? So limit x goes to 3.
+
+866
+02:06:57,387 --> 02:06:59,987
+Let me look at here. Şuraya bakalım.
+
+867
+02:07:02,547 --> 02:07:06,047
+Hatta burada şeyde sormayacağım. Ben bu soruyu böyle değiştirdim. Okay.
+
+868
+02:07:07,444 --> 02:07:24,783
+x, firstly, they investigate from the minus 3. If you investigate minus 3, you can write this polynomial as x plus 3, x minus 3. I can cancel this part. So it is 2 over 3. Okay?
+
+869
+02:07:27,783 --> 02:07:34,703
+So, I have limit, but at x equals 3, f3, f minus 3.
+
+870
+02:07:36,819 --> 02:07:56,859
+not defined. Okay? So, at x equals minus 3, it will be removable discontinuity. Okay? So, we find the limit, but at x equals minus 3, we don't have any function, so it is a removable discontinuity. What about 3?
+
+871
+02:07:59,599 --> 02:08:00,919
+What about 3?
+
+872
+02:08:04,979 --> 02:08:11,699
+For example, you can think this one. Okay. We can look at from here. x goes to 3.
+
+873
+02:08:13,779 --> 02:08:25,179
+I have x minus 1 over x minus 3. It will be 2 over 0. It is infinity. What is the discontinuity? It is
+
+874
+02:08:29,524 --> 02:08:31,684
+essential is discontinued.
+
+875
+02:08:34,424 --> 02:08:38,304
+Tanımlı değil. f3 yok ki burada bak. Buranın tanım kümesine bak.
+
+876
+02:08:39,504 --> 02:08:40,964
+3'te fonksiyon tanımlı değil.
+
+877
+02:08:41,904 --> 02:08:43,244
+Dolayısıyla karşılığı yok.
+
+878
+02:08:44,644 --> 02:08:46,724
+Karşılığı olmadığı için removable oluyor.
+
+879
+02:08:46,724 --> 02:08:54,644
+Yani limitin var ama karşısında f-3 ya tanımsız olacak ya da
+
+880
+02:08:54,931 --> 02:09:05,891
+eşit olmayacak. Her iki durumda da removable oluyor. Ama limitiniz sonsuz çıkıyorsa hemen direkt yapıştırıyorsunuz essential'ı. Tamam? Anlaşıldı mı arkadaşlar?
+
+881
+02:09:08,891 --> 02:09:15,831
+Do you have any question? You can look at the working questions also. I put on my basis page. Okay?
+
+882
+02:09:16,287 --> 02:09:23,228
+Bunlarla ilgili yine konuşacağız. Hatta ben half-deo yapabilirsem, bir böyle küçük bir test gibi bir şey hazırlayabilirsem hazırlayayım size.
+
+883
+02:09:23,228 --> 02:09:34,108
+Şimdi, last week I talked about, I will make application lesson for tomorrow, but I think I saw lots of questions for now.
+
+884
+02:09:34,568 --> 02:09:40,967
+I want to continue the lesson, okay? I want to make, I want to start derivation tomorrow.
+
+885
+02:09:41,408 --> 02:09:51,908
+Ben bayağı soru çözüyorum şu an. Uygulama yapacaktım ama biraz ilerleyelim o zaman yapalım. Olur mu? O zamana kadar ben size de test sorusu hazırlarım. Bunun üzerinden gideriz.
+
+886
+02:09:52,908 --> 02:10:07,128
+Ok, tomorrow I will start derivation. Ok? And also you can look at the lecture notes. But probably I didn't put the lecture notes about derivation, I think. Sanki onunla ilgili koymadık.
+
+887
+02:10:08,307 --> 02:10:15,387
+Evet okey I will put okey after the lesson about derivation obviously ne var ben şimdi direkt
+
+888
+02:10:15,387 --> 02:10:20,728
+koyayım tamam yarın türeve başlayalım tamam biraz ilerledim uygulamayı ona göre yaparız okey
+
+889
+02:10:20,728 --> 02:10:27,807
+so this now for today tomorrow we will continue okey after the lesson I will put the lecture notes
+
+890
+02:10:27,807 --> 02:10:31,288
+about derivation okey for today bye bye
