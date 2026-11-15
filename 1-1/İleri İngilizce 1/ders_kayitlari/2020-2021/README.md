@@ -14,3 +14,4 @@
 | 18 | Güz | Zeynep Akgün | [sube_18/](sube_18/) |
 | 21 | Güz | Ebru Osborne | [sube_21/](sube_21/) |
 | 24 | Güz | Esra Keskin Korumaz | [sube_24/](sube_24/) |
+| 25 | Güz | — | [sube_25/](sube_25/) |
