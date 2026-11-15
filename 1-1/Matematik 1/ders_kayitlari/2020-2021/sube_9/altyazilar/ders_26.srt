@@ -1,0 +1,1867 @@
+1
+00:00:13,044 --> 00:00:30,044
+Merhaba arkadaşlar, nasılsınız, iyi misiniz? Kaldığımız yerden dersimize devam ediyoruz. Size daha önce de söylediğim gibi, bugünkü dersimiz çok önemli. Eğer konuyu anlarsanız, yani çok fazla...
+
+2
+00:00:30,643 --> 00:00:47,664
+yorulmadan soruyu çözebilirsiniz. Tabi işlem hatası yapmazsanız. Yani çok büyük formüller yok ama anlayabilmeniz lazım. Eğer anlarsanız yapabilirsiniz. Anlamazsanız yapamazsınız. Şöyle bir ekran paylaşımı yapayım.
+
+3
+00:00:53,043 --> 00:01:05,043
+Evet, şimdi biz bunları gördük. Dün en son alanı gördük. Alan sorularını gördük. Daha sonra...
+
+4
+00:01:05,876 --> 00:01:29,135
+Evet, en son bunu yaptık galiba. Şunu ve döner cisimlerin hacimleri diye bir başlık attık. Burada kaldık. Şimdi arkadaşlar, döner cisimlerin hacmini bulurken bir x ekseni etrafında dönerek elde edeceğiz. Bir de y ekseni etrafında dönerek elde edilen cismin hacmini bulacağız. Şimdi ben şöyle
+
+5
+00:01:31,168 --> 00:01:49,487
+tahtada anlatacağım. Şimdi x eksenin etrafında dönen bir cismin, x eksenin etrafında döndürülerek elde edilen bir cismin hacminden başlayacağım ilk önce. Dün de konuştuğumuz gibi şöyle ekran paylaşımı yapayım. Bir dakika arkadaşlar.
+
+6
+00:01:54,676 --> 00:01:55,176
+Evet.
+
+7
+00:01:58,176 --> 00:02:00,516
+Tahta geldi mi? Gelmedi.
+
+8
+00:02:04,915 --> 00:02:08,675
+Tahta geldi mi? Birisi evet ya da hayır dersi.
+
+9
+00:02:08,776 --> 00:02:09,596
+Geldi hocam.
+
+10
+00:02:10,228 --> 00:02:28,668
+Teşekkürler. Şimdi arkadaşlar, dönen bir cismin hacmi, mesela şöyle düşünün, bir tane şöyle xy koordinat sisteminde şöyle aldınız, mesela şöyle bir doğru, bu şekilde olsun, bunu şu xx'in etrafında döndürdünüz.
+
+11
+00:02:38,228 --> 00:02:59,228
+x ekseni etrafında döndürdünüz. O zaman da şöyle bir cisim oluşur. İşte bunun hacmi mesela şöyle oldu. Mesela bunu aldınız, y ekseni etrafında döndürdünüz. Böyle bir cisim oluşur. Mesela şöyle, şöyle bir parabol var. Bunu x ekseni etrafında döndürdünüz. Şöyle bir...
+
+12
+00:03:00,500 --> 00:03:26,840
+cisim oluşur. İşte bu cisimlerin hacimlerini bulacağız. Şimdi arkadaşlar, ilk öncelikle x ekseni etrafında dönme ile oluşan cisimlerin hacmi. x ekseni etrafında dönme. Bu önemli. Hangi eksene göreyse ona göre karar vereceğiz. x ekseni etrafında dönme. Şimdi arkadaşlar, mesela aldık bir cismi şöyle a'dan b'ye.
+
+13
+00:03:27,955 --> 00:03:48,955
+a'dan b'ye. Şimdi bunu x80'i etrafında döndürdük. Şöyle bir şey oluştu. Hatırlıyor musunuz? Dün konuşmuştuk. Şöyle bir şey oldu. Böyle bir şekil oluştu. Bunun hacmini sordum. Hacmi. Hacimi biz v ile genelde gösteriyoruz. Şimdi hacim şöyle arkadaşlar. Hacim...
+
+14
+00:03:49,460 --> 00:03:58,460
+şöyle, ax taban alanı çarpı yükseklik bütün x'ler için taban alanı, şimdi bunun şöyle düşünün, şunun alanı
+
+15
+00:03:59,104 --> 00:04:22,844
+çarpı, şunun bir kalınlığı var, o da yüksekliği oluyor şöyle mesela. Yükseklik mesela şurası. İşte A1 deyince birinci diskin alanı çarpı yüksekliği, ikinci diskin alanı çarpı yüksekliği, üçüncü diskin alanı çarpı yüksekliği, sonra bu integral ne sonsuza kadar giderken aldığımız için buna geliyor, tekabül ediyor.
+
+16
+00:04:27,103 --> 00:04:51,223
+nerden nereye değişiyor? a'dan b'ye. Şöyle diyeceğiz. Alan ne? Burada diskler olduğu için çemberler. Çemberin alanı ne? pire kare. Şimdi her diskin, mesela şunun R'si şu. Ama mesela şuradakinin R'si şu. x'e bağlı olarak değişiyor. Şuradaki. Her yerdeki farklı. Yani şöyle. pire x'i
+
+17
+00:04:51,552 --> 00:04:53,252
+karesi dx.
+
+18
+00:04:53,652 --> 00:04:55,592
+Aslında hacim formülü bu.
+
+19
+00:04:57,092 --> 00:04:58,092
+Bunu kullanacağız.
+
+20
+00:04:58,492 --> 00:05:00,052
+Peki bunu nasıl kullanacağız?
+
+21
+00:05:00,272 --> 00:05:01,252
+A'dan B'ye
+
+22
+00:05:01,252 --> 00:05:03,331
+pi rx'in
+
+23
+00:05:03,331 --> 00:05:05,212
+karesi dx.
+
+24
+00:05:05,752 --> 00:05:07,172
+Bu yöntemi
+
+25
+00:05:07,172 --> 00:05:09,052
+disk yöntemi diyoruz arkadaşlar.
+
+26
+00:05:09,312 --> 00:05:11,152
+Disk yöntemini yapıyoruz şu anda.
+
+27
+00:05:11,600 --> 00:05:19,080
+disklerle yani bakın şöyle, disklerle bir çember, şurada bir kalınlığı var, bir disk gibi düşünün.
+
+28
+00:05:19,720 --> 00:05:29,980
+Disklerle hacim bulma. Her disk, birinci disk, ikinci disk, üçüncü disk, böyle yan yana bunların hacimlerini buluyoruz.
+
+29
+00:05:30,080 --> 00:05:34,280
+Böylece bu katı cismin hacmini bulmuş oluyoruz. Öyle düşünebiliriz.
+
+30
+00:05:34,280 --> 00:05:38,900
+Disk yöntemi. Şimdi bakın bunu ben size örnekte göstereceğim.
+
+31
+00:05:39,600 --> 00:05:59,379
+Şöyle göstereyim. Örnekte bunu anlamanız lazım. Çok önemli. Örnek y eşittir kök x. 0 küçük eşit x, o da küçük eşit 4. Eğrisi, şimdi nerede döndürülüyor? x ekseni etrafında döndürülüyor.
+
+32
+00:06:06,708 --> 00:06:31,448
+bölge, bölge, bir döner cisim elde etmek için şöyle x ekseni daha kısa yazacağım. Etrafında döndürülerek bir cisim elde ediliyor. Döndürülerek bir cisim elde ediliyor. Kısaca pdf'de daha uzunu yazılı. Bir cisim elde ediliyor.
+
+33
+00:06:32,947 --> 00:06:45,027
+cismin hacmini bulunuz. Dönen cismin hacmini bulunuz. Şimdi disk yöntemiyle bulunuz dedi. Tamam mı arkadaşlar? Şimdi biz zaten disk yöntemini öğreniyoruz.
+
+34
+00:06:45,027 --> 00:06:58,387
+Disk yöntemi. Şöyle yapıyoruz. 1. İlk önce çiziyoruz. Şimdi bakın arkadaşlar. Çizerek görebilirsiniz. x, y koordinat sisteminde y eşittir kök x
+
+35
+00:07:00,180 --> 00:07:11,120
+ve kaç ile kaç arasında? 0 ile kaça kadar? 4'e kadar. 4'e kadar. Ve eğrisi, bakın bu eğri,
+
+36
+00:07:11,552 --> 00:07:36,772
+bu eğrisi ile bu eğri ile hangi eğri? Burası 0 ve 4. Hangi? x ekseni. Bakın bu eğri ile x ekseni arasındaki bölge x ekseni. Şurası. Arasındaki bölge şurası. Bu bölge ne etrafında döndürülüyor? Şimdi önemli olan bunu görebilmeniz. x ekseni.
+
+37
+00:07:37,588 --> 00:07:58,468
+x ekseni etrafında döndürülüyor. Şimdi arkadaşlar, x ekseni döndürmeni, döndürülen ekseni ben böyle bilerek böyle kalın çizeceğim. Hangi eksen etrafında döndürdük? Bu eksen etrafında. Bakın döndürdüğünüz zaman şöyle bir şekil olacak. Pardon. Şöyle.
+
+38
+00:07:59,923 --> 00:08:08,324
+döndürdüğünüz zaman bunu elde edeceğiz. Bu cismi. Buraya kadar sesim geliyor mu? Biliğiniz evet derseniz internetin gidip gitmediğini.
+
+39
+00:08:08,324 --> 00:08:27,804
+Tamam. Şimdi bu şekil elde ettik. Diyor ki döndürdünüz ve bu şekli cismi elde ettiniz. Bu cismin hacmi nedir? Hacim diyorum. Şimdi disk yönteminde şu anda ben nasıl yapıyorsam bütün soruları disk yöntemi için böyle yapmalısınız. Ancak
+
+40
+00:08:27,923 --> 00:08:30,483
+Böyle yapabilirsiniz.
+
+41
+00:08:31,064 --> 00:08:33,844
+1. Hangi eksen etrafında döndürülüyor?
+
+42
+00:08:34,524 --> 00:08:35,344
+x ekseni.
+
+43
+00:08:35,764 --> 00:08:38,483
+1. Şuraya dx yazacaksınız.
+
+44
+00:08:38,644 --> 00:08:40,723
+Hangi eksen etrafında döndürülüyorsa?
+
+45
+00:08:40,864 --> 00:08:42,663
+Dx. Disk yöntemi için bu.
+
+46
+00:08:42,663 --> 00:08:42,943
+Böyle.
+
+47
+00:08:43,624 --> 00:08:49,884
+Şuraya, burası dx ise, burası da p r x'in karesi.
+
+48
+00:08:50,336 --> 00:09:03,375
+Şimdi bölge, şimdi bakın integraliniz neye göre? x'e göre. Bölge x ekseninde nereden nereye değişiyor? x ekseninde sıfırdan dörde.
+
+49
+00:09:04,724 --> 00:09:30,764
+Tamam mı? Buraya kadar. Şimdi Rx nedir? Rx arkadaşlar, bakın şuradaki, şurada göstereyim. Burası şu diskin yarı çapı. Mesela şuradaki diskin yarı çapı budur. x'e bağlı değişiyor. Rx bölgenin, bakın bölge şuradan başlıyor. Şuraya x eksenine olan uzaklığıdır. Şudur. Bakın bölgenin.
+
+50
+00:09:31,056 --> 00:09:34,916
+dönme eksenine olan uzaklığı, pardon yanlış söyledim.
+
+51
+00:09:35,316 --> 00:09:40,636
+Bakın dönme eksenin burası, dönme eksenine bölgenin uzaklığı.
+
+52
+00:09:41,076 --> 00:09:42,896
+Yani rx şurasıdır.
+
+53
+00:09:43,836 --> 00:09:44,336
+Şurası.
+
+54
+00:09:45,016 --> 00:09:45,836
+Tamam mı?
+
+55
+00:09:45,916 --> 00:09:47,076
+Şurası rx.
+
+56
+00:09:48,516 --> 00:09:50,736
+İki eğri arasındaki yerdir.
+
+57
+00:09:51,676 --> 00:09:53,356
+Baştaki eğri şudur.
+
+58
+00:09:53,759 --> 00:09:59,979
+Şurası, başlangıcı burası, bitişi burasıdır. Peki hangi eğriyi hangi eğriden?
+
+59
+00:10:00,000 --> 00:10:19,799
+çıkartacağız. Bakın, şöyle ışın gibi düşünün. Hep artı y'den eksi y'ye gittiğinizi düşünün. y kök x'den girdi, şuradan çıktı. Yani yukarıdaki daha büyük, artı taraftaki daha büyük. Yani aslında rx nedir? Şu şöyle biraz şey oldu, bir dakika pardon.
+
+60
+00:10:19,799 --> 00:10:27,159
+Kök x mi oluyor hocam? O zaman rx. Şöyle, şöyle. Bakın, şu uçun, burası ne? y kök x.
+
+61
+00:10:27,668 --> 00:10:47,868
+şimdi arkadaşlar ben size desem ki şunu hatırlatayım. y eşittir 1'i çizin desem hemen şurayı dersiniz. y eşittir 5'i çizin desem hemen burayı dersiniz. y eşittir eksi 2'yi çizin desem burayı dersiniz. Peki burası nedir? Şurası. Burası kaçtır? Şu nokta kaçtır?
+
+62
+00:10:48,596 --> 00:11:13,596
+0. O zaman bu kaçtır? y eşittir 0 doğrusudur aynı zamanda x ekseni. Yani öğrenci buraya gelince takılıyor. Ya şöyle yapın, y eşittir 1 burası, 5 burası, eksi 2 burası, e burası da y eşittir 0'dır. Tamam mı? Bunu hatırladık. E o zaman diyorum ki, hangi iki eğri arasında aslında? Yukarıdan y kök x, y eşittir kök x, aşağıdan...
+
+63
+00:11:14,128 --> 00:11:35,888
+Burası nerede? x, yani dönme ekseni. Burası y eşittir, sıfır. Aslında rx nedir arkadaşlar? Büyük olan yani artı y'den gelirken ilk önce kök x, eksi, şurası son nokta sıfırdır. Aslında budur kök x. Pardon, rx.
+
+64
+00:11:36,244 --> 00:12:03,163
+Anlaşıldı mı? O zaman diyorum ki bitti soru. 0'dan 4'e pi tane kök x'in karesi dx'dir. Şimdi buradan ne gelir? 0'dan 4'e pi tane x dx'dir. Ne geldi? x kare bölü 2 pi, 0'dan 4'e kadar bu da pi bölü 2, 4'ün karesi 16, 0'ın karesi 0, 8 pi oldu.
+
+65
+00:12:03,988 --> 00:12:30,268
+Anlaşıldı mı arkadaşlar bu? Burada anlamadığınız bir şey var mı? Birkaç örnekte daha iyi anlarsınız diye düşünüyorum. Var mı arkadaşlar bir sorun burada? Şimdi gelelim ikinci örneğimize. Şimdi mesela soruyu yazacağım. PDF'deki soruyu direkt. Sesim geliyor değil mi? Evet. Gitmedi değil mi internet? Evet hocam geleceğiz. Tamam. Şimdi bakın örneğin.
+
+66
+00:12:32,019 --> 00:12:35,059
+x kare artı y kare eşittir a kare.
+
+67
+00:12:35,539 --> 00:12:49,200
+Çemberi bir küre elde etmek için x ekseni etrafında döndürülüyor.
+
+68
+00:12:51,700 --> 00:12:54,179
+Etrafında döndürülüyor.
+
+69
+00:12:54,179 --> 00:12:56,980
+Döndürülüyor.
+
+70
+00:12:56,980 --> 00:12:57,919
+Şimdi
+
+71
+00:12:59,059 --> 00:13:22,319
+Kürenin hacmini bulunuz. Kürenin hacmini bulunuz. Tamam mı? Şimdi bakın, x kare artı y kare eşittir a kare. Yarı çapı a olan, merkezi sıfı sıfırı sıfır olan değil mi? Bir çember bu. Şimdi hangi esi eksen etrafında döndürülmüş?
+
+72
+00:13:24,596 --> 00:13:36,775
+x eksinin etrafında bu önemli. İlk önce şunu bulalım. Şimdi arkadaşlar, bir şey soracağım size. Bu soruda dikkat etmeniz gereken bu Thomas Karkülüs'ten yazdığım bir soru.
+
+73
+00:13:38,535 --> 00:13:52,196
+Şöyle düşünün. Ben şimdi bunun üst kısmını alsam, sadece üst kısmını x eksinin etrafında döndürsem ne olur? Şöyle olur değil mi?
+
+74
+00:13:53,460 --> 00:14:11,820
+şöyle. Yani bir tam böyle yuvarlak, portakal şeklinde bir şekil olur. Değil mi arkadaşlar? Veya sadece, yani şöyle olur değil mi? Şöyle x 80'in etrafında döndürdüm veya bir top şeklinde oldu. Sadece alt kısmını alsam,
+
+75
+00:14:12,659 --> 00:14:38,679
+bunu x 80'i etrafında döndürsem yine aynı şekil olur mu arkadaşlar? Olur değil mi? O zaman sadece üst kısmını ya da alt kısmını bir küre elde etmek için almamız yeterli. Bir, buna karar verelim. Bu biraz özel bir soru. Genelde böyle sorulmaz. Şöyle, o zaman sadece üst kısmını alayım. Tamam mı? Şöyle sileyim.
+
+76
+00:14:41,076 --> 00:14:42,956
+Bakın şimdi soruya başlıyoruz.
+
+77
+00:14:43,556 --> 00:14:45,096
+Sadece üst kısmını aldım.
+
+78
+00:14:45,235 --> 00:14:46,456
+Sebebini de söyledim.
+
+79
+00:14:46,836 --> 00:14:49,776
+İki kısmını da döndürseniz aynı şekil oluşacak.
+
+80
+00:14:49,975 --> 00:14:52,556
+Aynı şekilden üst üste gelmiş iki tane olacak.
+
+81
+00:14:53,196 --> 00:14:55,396
+Şimdi şöyle diyelim.
+
+82
+00:14:55,756 --> 00:14:57,855
+Şurası eksi a'dan a'ya.
+
+83
+00:14:57,855 --> 00:15:02,596
+Şimdi arkadaşlar, burada x ekseni etrafında döndürdük.
+
+84
+00:15:02,876 --> 00:15:04,735
+Hangi ekseni etrafında döndürdük?
+
+85
+00:15:04,855 --> 00:15:06,436
+x. Bakın burayı taradım.
+
+86
+00:15:06,995 --> 00:15:10,836
+1. Bunu dedim. Hacmini soruyor. Hacim.
+
+87
+00:15:11,635 --> 00:15:18,015
+Disk yöntemiyle. Tabi soru da disk yöntemi dedi. Belirtti soruda. Şöyle dedim.
+
+88
+00:15:18,515 --> 00:15:23,855
+x eksenine göre, x eksenin etrafında döndürülüyor. Buraya dx dedim. Tamam.
+
+89
+00:15:24,596 --> 00:15:30,915
+Sonra dedim ki, dx, peki bölge neresi? Şurası. Değil mi? Bölge.
+
+90
+00:15:31,336 --> 00:15:36,615
+x'leri nereden nereye değişiyor? Siz söyler misiniz? x'ler nereden nereye olacak sınırlar?
+
+91
+00:15:37,196 --> 00:15:40,196
+x'i a'dan a'ya.
+
+92
+00:15:41,076 --> 00:15:46,076
+A sınıra küçük olanı yazıyorsunuz, üst sınıra büyük olanı yazıyoruz. Bunu da yazdık.
+
+93
+00:15:46,515 --> 00:15:53,596
+Şimdi gelelim, burası ne olacak? P, burası x'e bağlı, şurası rx'in karesi olacak.
+
+94
+00:15:54,135 --> 00:16:01,076
+rx neydi? rx bölgenin eksene, dönme eksenine olan uzaklığı.
+
+95
+00:16:01,076 --> 00:16:05,456
+Bakın, bölge şurada başlıyor, mesela yukarıdan başlıyor.
+
+96
+00:16:05,875 --> 00:16:10,735
+Dönme eksenine olan uzaklığı şudur, bakın, eksene olan uzaklığı bu.
+
+97
+00:16:11,635 --> 00:16:13,555
+Burası rx.
+
+98
+00:16:13,940 --> 00:16:16,540
+E peki hangi iki eğri arasında kalıyor?
+
+99
+00:16:17,060 --> 00:16:18,020
+Yukarıdan şu.
+
+100
+00:16:18,440 --> 00:16:20,440
+Peki bu hangi eğri arkadaşlar?
+
+101
+00:16:21,120 --> 00:16:23,020
+Y'si bu eğri hangisi?
+
+102
+00:16:23,443 --> 00:16:26,683
+Kare kök içinde a kare eksi x kare.
+
+103
+00:16:26,923 --> 00:16:44,183
+Teşekkür ederim. Şu değil mi? Burası a kare eksi x kare. O zaman rex nedir? Kare kök içinde a kare eksi x kare. Aşağıdan hangisi? Burası kaçtı? Şurası? Şurası? Şöyle göstereyim alttan. Şurası x eksi x kare.
+
+104
+00:16:51,443 --> 00:17:19,443
+a kare eksi x kare. Şimdi öğrenci niye yapamıyor? Şimdi burada şu eksen sıfır olduğu için sonucu değiştirmiyor. Ama mesela dönme ekseni burası değil de mesela şurasını verdi mi, burası sıfır ya, şurası eksi 1 x, y koordinat sisteminde. Mesela dönme ekseni burası olsaydı buraya göre uzaklığı alamıyor. Mesela bakın burada olsaydı buranın ekseni...
+
+105
+00:17:19,443 --> 00:17:21,223
+olan uzaklığı olacaktı.
+
+106
+00:17:21,743 --> 00:17:23,563
+Tamam. Ben bilerek, bakın,
+
+107
+00:17:25,124 --> 00:17:27,963
+eksenleri tarıyorum. Eksene olan uzaklık.
+
+108
+00:17:28,443 --> 00:17:29,763
+Evet, şimdi bunu da
+
+109
+00:17:29,763 --> 00:17:31,963
+dikkat ettik. Şimdi yazıyoruz.
+
+110
+00:17:32,503 --> 00:17:34,163
+Bitti soru. Bakın,
+
+111
+00:17:34,723 --> 00:17:36,503
+eksi a'dan a'ya
+
+112
+00:17:36,503 --> 00:17:38,523
+pi tane ne olacak?
+
+113
+00:17:39,384 --> 00:17:42,983
+rx'in karesi, a kare eksi x karenin
+
+114
+00:17:43,263 --> 00:18:09,443
+karesi dx. E ne geldi? Şöyle başka renkli yazalım. Eksi a'dan a'ya pi'yi dışarıya attım. Şunun karesi şunlar gider. a kare eksi x kare dx olur. Buradan pi tane, şimdi dx'e göre integral alalım. a sabit bir sayıdır. Mesela 2dx nedir? 2x'tir. e a da o zaman a kare x'tir. Eksi x karenin integralı.
+
+115
+00:18:10,036 --> 00:18:13,596
+x küp bölü 3'tü. x a'dan a'ya.
+
+116
+00:18:13,855 --> 00:18:18,956
+E buradan ne gelir? Bakın pi tane a küp eksi a küp bölü 3.
+
+117
+00:18:18,956 --> 00:18:23,135
+A koydum. x gördüğüm yere. Şimdi eksi a koyacağım.
+
+118
+00:18:23,776 --> 00:18:24,916
+Eksi a küp.
+
+119
+00:18:24,960 --> 00:18:30,820
+eksi bir de burada eksi var. Artı a küp bölü 3 oldu. Bakalım arkadaşlar ne geldi?
+
+120
+00:18:31,380 --> 00:18:36,980
+a küp, şurada da artı a küp 2 a küp oldu. 2 a küp, şurası ne oldu?
+
+121
+00:18:37,120 --> 00:18:41,980
+eksi a küp bölü 3, burası da eksi a küp bölü 3, eksi 2 a küp bölü 3.
+
+122
+00:18:42,440 --> 00:18:49,519
+Buradan ne geldi? 4 pi a küp bölü 3. 4 bölü 3 pi a küp.
+
+123
+00:18:49,519 --> 00:18:51,060
+Kürenin hacmi neydi?
+
+124
+00:18:51,763 --> 00:19:00,223
+4 bölü 3 pi re kare miydi? Pi re küptü, evet. Aynısını bulduk. Pi re küptü, 4 bölü 3 pi re küptü.
+
+125
+00:19:01,884 --> 00:19:05,604
+Buradan elde etmiş olduk. Var mı bir sorun?
+
+126
+00:19:06,923 --> 00:19:12,303
+Hocam, benim bir sorum var. Yarı çapı aynı zamanda A değil mi bu çemberin?
+
+127
+00:19:13,303 --> 00:19:16,604
+Evet, yarı çapı A. Ama şöyle.
+
+128
+00:19:17,683 --> 00:19:19,943
+Evet, niye A almıyoruz diye mi?
+
+129
+00:19:20,263 --> 00:19:20,503
+Evet.
+
+130
+00:19:21,384 --> 00:19:25,443
+Evet, şöyle arkadaşlar, aslında şöyle, burayı silebilir miyim?
+
+131
+00:19:25,543 --> 00:19:27,063
+Yani veya şuraya göstereyim.
+
+132
+00:19:27,743 --> 00:19:29,683
+Şöyle arkadaşlar, aslında bu küreye...
+
+133
+00:19:31,251 --> 00:19:59,251
+küre ya şöyle düşünün, şu küre değil mi? Şöyle, şu küre ya. Şimdi bunun hacmini bulurken, şuradaki yarı çap, şuranın, şu diskin hacmini buluyorsun. Şuradaki yarı çap farklı. Şuranın, şuradakinin buluyorsun. Buradaki yarı çap farklı. Yani bunun içini dolduran, yani nasıl düşünün? Bir portakal düşün. Portakaldan dilimler alıyorsun. Yukarıdan böyle kesme.
+
+134
+00:19:59,251 --> 00:20:24,331
+bu portakal. şimdi şuradan bir dilim aldım. bunun yarı çapı şudur. x'e göre değişir dilimin büyüklüğüne göre. buradan aldım. bunun dilimi mesela daha büyük. buradan aldım bu dilimi. yani işte bu aldığın dilimler birer disk gibi düşün.
+
+135
+00:20:25,683 --> 00:20:27,363
+Anlatabildim mi arkadaşlar?
+
+136
+00:20:27,703 --> 00:20:28,203
+Anladım hocam.
+
+137
+00:20:28,203 --> 00:20:37,223
+Yani şöyle yazınca p, r, x'in karesi bu x değiştikçe o dilimle değişiyor. O dilimin hacmini buluyorsun.
+
+138
+00:20:38,228 --> 00:20:39,528
+anlatabiliyor muyum?
+
+139
+00:20:39,688 --> 00:20:41,387
+Evet, ben şey sanmıştım yani.
+
+140
+00:20:41,887 --> 00:20:47,927
+Direkt ben sadece yarı çapını alıp hacmini buluyoruz sanmıştım ama bu daha şartemeye benziyor sanırım.
+
+141
+00:20:48,067 --> 00:20:50,028
+Evet, evet. [öğrenci] sen misin?
+
+142
+00:20:50,647 --> 00:20:51,567
+Yok, ben [öğrenci].
+
+143
+00:20:52,048 --> 00:20:55,788
+[öğrenci], tamam. Şöyle, bu en büyük R kaç olur?
+
+144
+00:20:56,403 --> 00:21:13,324
+Şu, bu dilimin hacmi olur. A'lı olan olur değil mi? En büyük bir portakalı yarıdan bür. En büyük hacmi burada ne olur? Şu yarı çapı olur. A olur. Evet. Anlaşıldı mı arkadaşlar? Var mı bir sıkıntı? Anladın değil mi [öğrenci]?
+
+145
+00:21:13,324 --> 00:21:23,524
+Evet hocam sağ olun. Tamam. Rica ederim. Şimdi bir örnek daha yapalım. Çok iyi anlayacağınıza inanıyorum. Şu ana kadar anladınız mı?
+
+146
+00:21:24,852 --> 00:21:32,872
+Şimdi her soruda, yani yaptığımız kuralı söyleyeceğim ki iyice kafanıza yerleşsin.
+
+147
+00:21:52,372 --> 00:22:14,892
+bölgenin y eşittir bir doğrusu etrafında döndürülmesiyle elde edilen döner cismin hacmi nedir?
+
+148
+00:22:15,771 --> 00:22:18,031
+Okudunuz mu soruyu benimle beraber?
+
+149
+00:22:19,028 --> 00:22:42,468
+hacmi nedir? Şimdi hacmini bulunuz ya da. Evet, cümle güzel olmadı ama şimdi 1 bölgeyi çizeceğiz. Bakın, y eşittir kök x eğrisi ile x eşittir 1 ve x eşittir 4 doğruları arasında kalan bölge. Şimdi bulalım. Bakın şöyle. x, y koordinat sisteminde y eşittir kök x şu.
+
+150
+00:22:43,763 --> 00:23:07,543
+x eşittir 0 neresi? Şu nokta. Yani y ekseni. x eşittir 4 de şurası olsun. Tamam mı? Şunlar doğruları arasında kalan bölge. Şurası. Tamam mı arkadaşlar? Şurayı biraz büyütelim. Hangi ekseni etrafında döndürülüyor? x ekseni etrafında döndürülüyor. Ha pardon.
+
+151
+00:23:08,211 --> 00:23:17,872
+arasındaki bölge, pardon, bitmedi soru. y eşittir bir doğrusu etrafında döndürülüyor. O zaman birazcık daha büyük çizelim.
+
+152
+00:23:18,711 --> 00:23:28,572
+Bakın, şöyle yapalım. Şöyle olsun. Bu y eşittir kök x olsun. Şurayı da biraz büyütelim. Şurası da.
+
+153
+00:23:35,476 --> 00:23:46,576
+şurası bölge. y eşittir 1 doğrusu etrafında. 1 şurası olsun. y eşittir 1 doğrusu etrafında döndürülüyor.
+
+154
+00:23:47,236 --> 00:23:51,855
+şimdi döndürme eksenimiz neresi? y eşittir 1.
+
+155
+00:23:51,855 --> 00:23:53,656
+şimdi arkadaşlar
+
+156
+00:23:55,028 --> 00:24:16,508
+Bu eksen, sanki x eksenin etrafında döndürüyorduk daha önceden değil mi? Şu eksenin etrafında döndürülmüyor da şu anda. Hangi eksenin etrafında döndürülüyor? Şu eksenin etrafında. Bakın şu eksen. Yani şekil şu olur. Bakın arkadaşlar, x'ye koordinat sisteminde şöyle değil mi?
+
+157
+00:24:17,268 --> 00:24:34,028
+şöyle bir eksen var. Şurası y eşittir bir ekseni. Şimdi aldık. Şunu şöyle oldu. Bakın şöyle bir şekil oldu. Şu bölge oldu. Bunun etrafında döndürünce şöyle bir şey oldu.
+
+158
+00:24:34,996 --> 00:24:58,496
+Gördünüz mü arkadaşlar? x ekseni etrafında döndürmedik. Ona paralel bir eksen etrafında döndürdük. Yani y eşittir bir ekseni şurası arkadaşlar. Nereye paralel? x eksenine paralel. Görebildiniz mi? Anladınız mı arkadaşlar? Şimdi o zaman hacmini bu şekli gördünüz.
+
+159
+00:24:59,039 --> 00:25:03,839
+bu şekil bu oluyor. Bu katı cismin hacmini istiyor.
+
+160
+00:25:04,339 --> 00:25:20,539
+Tamam mı arkadaşlar? Şimdi şekli hayal edebildiniz. Ben bunu siliyorum buradan. Şimdi arkadaşlar bakın şöyle olur. Hacim sanki x 80'ine paralel olduğu için bakın y eşittir. Burası çok önemli.
+
+161
+00:25:20,539 --> 00:25:30,660
+y eşittir bir doğrusu etrafında döndürmek sanki x 80'ine paralel ya x 80'inde döndürmek gibi. Yani burası yine dx.
+
+162
+00:25:31,892 --> 00:25:50,991
+çünkü x eksenine paralel olduğu için. Peki, dx, peki bölge kaçtan kaça değişiyor bölgemiz? Bakın burası sıfırda ama bizim bölgemiz burada. Şurası kaç? Şurası 1ken, y'si kaç? Pardon, y'si 1ken, x'si de kaç olur? 1 olur.
+
+163
+00:25:52,115 --> 00:25:54,435
+O zaman kaçtan kaça değişiyor?
+
+164
+00:25:54,915 --> 00:26:01,715
+Bölge, bakın şu bölge, x ekseninde birden kaça kadar değişiyor arkadaşlar?
+
+165
+00:26:02,275 --> 00:26:03,575
+4'e kadar değişiyor.
+
+166
+00:26:04,175 --> 00:26:05,915
+Tamam. İçerisi neydi?
+
+167
+00:26:06,175 --> 00:26:08,955
+P rx'in karesiydi.
+
+168
+00:26:09,955 --> 00:26:10,215
+Değil mi?
+
+169
+00:26:10,215 --> 00:26:12,295
+Peki rx neydi?
+
+170
+00:26:15,859 --> 00:26:32,959
+dönme eksenine olan uzaklığıydı. O zaman bakın, bölgemiz şuradan başlıyor. Dönme ekseni neresi? Şurası. Şuraya kadar değil mi? Şuraya. Şuraya kadar. Şurası rx'miş. O zaman rx yazabilir miyim arkadaşlar?
+
+171
+00:26:33,719 --> 00:26:42,079
+rx, siz bana söyleyebilir misiniz? Anlayıp anlamadığınızı buradan da ölçeceğim. Hangi iki eğri arasında?
+
+172
+00:26:42,836 --> 00:26:47,175
+Şöyle bakın. Biri şu. Biri de şu.
+
+173
+00:26:49,135 --> 00:26:51,675
+Rx'i nasıl yazacağım? Söyler misiniz bana?
+
+174
+00:26:52,715 --> 00:26:53,475
+Yukarıda.
+
+175
+00:26:53,615 --> 00:26:54,836
+Kök x eksi 1 mi?
+
+176
+00:26:55,355 --> 00:26:58,596
+Evet. Kök x eksi 1.
+
+177
+00:26:59,715 --> 00:27:01,975
+Rx'i yazdık. Bakın ne kadar kolay.
+
+178
+00:27:02,435 --> 00:27:03,515
+Birden dörde.
+
+179
+00:27:04,115 --> 00:27:10,596
+4'e pi çarpı kök x eksi birin karesi dx'dir.
+
+180
+00:27:11,731 --> 00:27:39,731
+bunu da alınca, birden 4'e pi çarpı, bunun birincinin karesi x, birinci ile ikincinin çarpı, onun iki katı, artı ikincinin karesi dx. Bu da arkadaşlar, pi dışarıda kalsın, x kare bölü 2, eksi iki tane, x üzeri 3 bölü 2, şurası da 4 bölü 3 olacak, artı x, kaçtan kaça, birden 4'e kadar olur. Bu da arkadaşlar, hızlıca yapabiliriz.
+
+181
+00:27:39,731 --> 00:28:02,851
+yaparsam, 4 koyarsak yerine ilk önce, 4'ün karesi 16 bölü 2, 8, eksi 4 bölü 3, 4 üzeri 3 bölü 2, şurası 2 üzeri 2'dir, şunlar gider, 8 yapar, eksi 8, artı 4, bir de birleri çıkartırsak, 1 bölü 2, 4 bölü 3, artı 1.
+
+182
+00:28:03,347 --> 00:28:25,407
+bunu hesaplarsak arkadaşlar, şu 4.3'lerde gidiyor galiba. 1'i eksi 1'i artı. Kaç oldu? 4-1, 3. 3-1 bölü 2'den galiba 5 bölü 2 çıkıyor. Ama bir yerde hata yaptım. 1 bölü 2, eksi 4 bölü 3 artı 1. Burası doğru. Niye çıkmadı?
+
+183
+00:28:26,195 --> 00:28:28,955
+7 pi bölü 6 olarak sanırım hocam.
+
+184
+00:28:29,015 --> 00:28:31,555
+Evet, işlem şurada doğru.
+
+185
+00:28:32,372 --> 00:28:33,772
+4 bölü 3.
+
+186
+00:28:33,912 --> 00:28:39,732
+Biz tahtanın altını göremiyoruz herhalde ya da benim ekranda bir sıkıntı var bilmiyorum.
+
+187
+00:28:40,092 --> 00:28:42,912
+Tamam o zaman aşağıya yazdığımızı göremiyorum.
+
+188
+00:28:42,932 --> 00:28:44,592
+Olmayacak arkadaşlar.
+
+189
+00:28:45,172 --> 00:28:45,712
+Şu gidiyor.
+
+190
+00:28:46,072 --> 00:28:47,392
+Yanlış yazmışım.
+
+191
+00:28:47,792 --> 00:28:48,172
+Şurası.
+
+192
+00:28:48,552 --> 00:28:49,612
+7 pi bölü 6.
+
+193
+00:28:49,772 --> 00:28:52,272
+İşlemde vakit kaybetmeyelim olur mu?
+
+194
+00:28:52,672 --> 00:28:54,412
+Şurası 8-8 olacak.
+
+195
+00:28:54,572 --> 00:28:56,232
+Görünüyor mu tahtanın alt kısmı?
+
+196
+00:28:57,875 --> 00:29:00,435
+Evet, görünüyor mu? Biliğiniz cevap veriyor.
+
+197
+00:29:00,435 --> 00:29:01,096
+Görünüyor hocam.
+
+198
+00:29:01,275 --> 00:29:01,556
+Tamam.
+
+199
+00:29:01,735 --> 00:29:03,556
+Görünüyor hocam, ben de sıkıntı varmış.
+
+200
+00:29:03,655 --> 00:29:16,375
+Tamam. Şurada yanlış yazmışım, 4 bölü 3'ü yeniden yazdığım için. Sonuç 7 pi bölü 6. Sığmadı. İşlemi yapmıyorum bu kısmı. Çünkü burada var zaten. Şuradan bulabilirsiniz.
+
+201
+00:29:16,775 --> 00:29:18,195
+Hocam, bir şey söyleyeyim mi?
+
+202
+00:29:18,715 --> 00:29:19,275
+Tabii ki.
+
+203
+00:29:19,859 --> 00:29:24,459
+y eşittir bir doğrusu altındaki kısmını neden şey yapmıyoruz?
+
+204
+00:29:24,639 --> 00:29:31,179
+Çünkü şundan dolayı, bir dakika, ekran gitti. Önemli olan o kısım.
+
+205
+00:29:32,099 --> 00:29:41,359
+Çünkü soruya bak dikkatlice. Diyor ki, şu bölge, şimdi şu bölge y eşittir kök x 1.
+
+206
+00:29:42,579 --> 00:29:46,700
+x eşittir 1 ve x eşittir 4 doğruları.
+
+207
+00:29:46,960 --> 00:29:49,319
+Şimdi bu bölge aşağıya kadardı.
+
+208
+00:29:49,799 --> 00:29:52,299
+Ama hangi eksen etrafında döndüreceksin?
+
+209
+00:29:52,920 --> 00:29:54,700
+y eşittir 1. Şu.
+
+210
+00:29:55,980 --> 00:30:02,059
+y eşittir 1 buraya geldiği için bölgeyi buradan almak zorundayız.
+
+211
+00:30:02,516 --> 00:30:03,355
+Tamam mı?
+
+212
+00:30:03,596 --> 00:30:05,976
+Biz sadece eğriyi döndürüyoruz.
+
+213
+00:30:06,056 --> 00:30:07,736
+Tamam ben tüm fonksiyonunu döndürdüm.
+
+214
+00:30:07,736 --> 00:30:07,776
+Evet, eğriyi döndürdüm.
+
+215
+00:30:07,776 --> 00:30:08,556
+Düşündüm o yüzden.
+
+216
+00:30:08,915 --> 00:30:19,516
+Sadece bu eğriyi, şuradaki şu eğriyi, şu, şu eğriyi, bu eksenin etrafında bölgeyi buluyoruz.
+
+217
+00:30:20,556 --> 00:30:22,296
+Bunun etrafında döndürdüm.
+
+218
+00:30:22,395 --> 00:30:23,316
+Şöyle bir şey oluyor.
+
+219
+00:30:24,155 --> 00:30:25,236
+Tamam, şimdi anladım hocam.
+
+220
+00:30:25,236 --> 00:30:25,576
+Tamam.
+
+221
+00:30:26,099 --> 00:30:30,000
+Tamam, teşekkürler. Başka bir soru var mı burada?
+
+222
+00:30:31,680 --> 00:30:45,279
+Hocam, benim bir sorum var aslında da, mantığı tam anlayamadım galiba şeyde. Hani Rx'i bulurken hep tepeden aşağı, yani üstteki fonksiyonu, alttaki fonksiyonlar çıkarmak.
+
+223
+00:30:45,279 --> 00:30:48,319
+Evet, şöyle. Çok güzel bir soru. Teşekkür ederim. İsminle.
+
+224
+00:30:49,779 --> 00:30:51,219
+[öğrenci] diyebilirsiniz hocam.
+
+225
+00:30:51,240 --> 00:31:16,959
+[öğrenci]. Şöyle düşün. Artı y'den eksi y'yi bütün sorularda hangi eğriyi daha önce yazacağım derseniz şöyle düşün. Yukarıdan bir okla geldiğinizi düşünün. İlk önce hangisine dokunuyorsunuz? Kök x'i. Sonra devam ediyorsunuz. Alttakine dokunuyorsunuz. Yani kök x eksi ne oluyor? 1.
+
+226
+00:31:17,619 --> 00:31:20,199
+Tamam mı? Mesela şöyle göstereyim.
+
+227
+00:31:21,659 --> 00:31:23,579
+Mesela şöyle olsaydı.
+
+228
+00:31:24,084 --> 00:31:31,364
+Şimdi bu böyle olsaydı, şurada olsaydı, eksen, eksi 1 olsun, eksi 2 olsun.
+
+229
+00:31:31,864 --> 00:31:35,324
+Şimdi o zaman kafadan aklım biraz saçma olabilir.
+
+230
+00:31:35,884 --> 00:31:44,744
+Şöyle, şuraya olan uzaklığı, mesela şu uzaklığı, yine buradan geliyorsunuz, şurası şu uzaklığı bulacaksınız.
+
+231
+00:31:44,744 --> 00:31:51,104
+Mesela burası kök x, kök x, eksi, burası ne? Eksi 2.
+
+232
+00:31:52,115 --> 00:32:14,436
+kök x artı 2 olur. Mesela şöyle düşünün. Şurada bir şey var. Şurası. Tamam mı? Şu eksen etrafında döndürüyorsunuz. Mesela burası 5 olsun. Burası da bilemedim şimdi kafadan atıyorum. x artı a olsun. Şimdi şu uzaklığı bulacaksınız mesela.
+
+233
+00:32:15,155 --> 00:32:42,576
+Hangi yeri? Böyle geleceksiniz. Bakın böyle geliyorsunuz. İlk önce bu. 5 sonra eksi, sonra bakın çıktığı nokta. Hep artıdan eksiye doğru. Mesela y'de de öyle. Artıdan eksiye doğru gideceksiniz. Anlatabildim mi? Yani 5 eksi x artı a olacak mesela. Anladınız mı birazcık? Sorularda daha çok pekişir yaptıkça.
+
+234
+00:32:43,284 --> 00:32:45,023
+Bu kısım tamam mı arkadaşlar?
+
+235
+00:32:46,983 --> 00:32:47,344
+Evet.
+
+236
+00:32:49,324 --> 00:32:50,263
+Sesim geliyor mu?
+
+237
+00:32:50,784 --> 00:32:53,443
+Teşekkür ederim. Çok güzel sorular soruyorsunuz.
+
+238
+00:32:53,983 --> 00:32:57,263
+Hani oradan bir anda aklıma gelmiyor.
+
+239
+00:32:57,763 --> 00:32:59,223
+Sizler söyleyince,
+
+240
+00:33:00,144 --> 00:33:01,903
+aa evet böyle de olur diyoruz.
+
+241
+00:33:01,903 --> 00:33:04,364
+Ve onu da hatırlatmış oluyoruz.
+
+242
+00:33:04,743 --> 00:33:06,963
+Şimdi y ekseni etrafında dönme.
+
+243
+00:33:09,940 --> 00:33:27,740
+y ekseni etrafında dönme. Şimdi bakın y ekseni etrafında döndürelim. Şimdi y ekseni etrafında şöyle, temsili bir resim koyayım şöyle mesela. Şurada bir tane eğri var, fy olsun. Tamam mı arkadaşlar?
+
+244
+00:33:27,740 --> 00:33:36,740
+y ekseni etrafında döndürdüm. Nasıl olacak? Şöyle olacak değil mi? Böyle olacak. Döndürdüğümüz zaman. O zaman bakın.
+
+245
+00:33:37,268 --> 00:34:00,748
+disk yöntemi. Yine disk yöntemi bu. Şimdi hacimini bulmak istersek. 1. Mesela şurası C olsun, burası D olsun. Hangi eğriydi? Bakın. Şöyleydi değil mi? F, Y. Bu haldeydi. Uzaklığı ne? C'den D'ye. Şurası da D olsun. Şurası yok.
+
+246
+00:34:01,203 --> 00:34:08,184
+c'den d'ye şu bölgeyi döndürdük. Hangi eksen etrafında? y ekseni etrafında döndürdük.
+
+247
+00:34:08,264 --> 00:34:13,103
+Şuraya izleyeyim. Bir dakika arkadaşlar. y ekseni etrafında döndürdük.
+
+248
+00:34:13,103 --> 00:34:23,603
+1. y ekseni etrafında, şu anda söylediğim çok önemli, disk yönteminde y ekseni etrafında döndürün diyorsa, buraya d'ye yazacaksınız.
+
+249
+00:34:24,344 --> 00:34:28,324
+Yazdık. d'ye yazdıysak, burası d'ye ise,
+
+250
+00:34:28,820 --> 00:34:40,760
+Sınırlar ne olacak? y'li. Bölge y ekseninde nereden nereye değişiyor? Siz söyleyin. Nereden? Ne yazacaksınız? Bölge y'ler nereden nereye değişiyor?
+
+251
+00:34:40,780 --> 00:34:41,640
+x c mi hocam?
+
+252
+00:34:42,500 --> 00:34:48,860
+Nereden nereye? Bölgede nereden nereye değişiyor? Kaç olur? Siz söyleyin.
+
+253
+00:34:49,560 --> 00:34:50,280
+A sınıra?
+
+254
+00:34:51,200 --> 00:34:52,180
+G'den d'li.
+
+255
+00:34:52,740 --> 00:34:55,540
+Buraya da d. 1. Bakın yazdık.
+
+256
+00:34:56,052 --> 00:35:13,812
+Peki içine ne yazacağız? x ekseninde nasıldı? pi rex'i şöyle yazıyorduk mesela. a'dan b'ye pi rex'in karesi dx diyorduk. Şimdi ne yazacağız? pi rey'nin karesi. Artık her şey y'li olacak. Peki rey ne?
+
+257
+00:35:14,324 --> 00:35:28,524
+r'ye neydi? rx neydi? Bakın rx hatırlıyoruz. Mesela şurada bir şey var. x ekseni etrafında döndürüyorduk. rx bölgenin dönme eksenine olan uzaklığıydı.
+
+258
+00:35:28,524 --> 00:35:36,164
+Şimdi burada neresi? Bölgenin dönme eksenine olan uzaklığı değil mi? Şurası.
+
+259
+00:35:36,527 --> 00:36:03,567
+yani şurası, buradan başlıyoruz. Dönme ekseni neresi? Şurası, buraya olan olan uzaklığı. Bakın bu işte mesela burada R'yi. Gördünüz mü arkadaşlar? E şimdi gelin bunu örnekleyelim. Var mı bir sorun burada? Bakın formülü yazdık. Aynı mantıkla formülü yazdık. Şimdi mesela siliyorum bunu bir örnek üzerinde görelim.
+
+260
+00:36:03,987 --> 00:36:30,067
+örnek şöyle desin. y ekseni ile x eşittir 2 bölü y, bir küçük eşit y, küçük eşit 4, eğrisi arasındaki, eğrisi arasındaki bölgenin y ekseni, bir dakika hatta şöyle yapacağım.
+
+261
+00:36:32,179 --> 00:36:55,659
+y ekseni etrafında döndürülmesiyle, döndürülmesiyle, evet şimdi bu kısım önemli, döndürülmesiyle üretilen döner cismin hacmi.
+
+262
+00:36:57,268 --> 00:37:08,448
+dönen cismin hacmi. Şimdi sınavda ilk önce nasıl ayıklayacaksınız? Hangi eksen etrafında? Tabii disk yöntemiyle diyor. Disk yöntemi. Şu anda onu gördük.
+
+263
+00:37:09,139 --> 00:37:16,420
+Nasıl ayırt edeceksiniz? Size şunu diyecek. y ekseni etrafında döndürme. O zaman şöyle yazacaksınız.
+
+264
+00:37:16,519 --> 00:37:28,059
+Risk yönteminde. O zaman burası ne olacak? d y olacak. y ekseni etrafında döndürme diyorsa burası da p re y'nin karesi olacak.
+
+265
+00:37:29,119 --> 00:37:30,759
+İşte buraya da sınırları yazacağız.
+
+266
+00:37:31,155 --> 00:37:52,155
+1. Bu bize bunu söylüyor. Şimdi o zaman şöyle diyorum. Şekil nasıl? y eşittir 1 bölü x'i hatırlıyor musunuz? y eşittir 1 bölü x eğrisi şuydu değil mi? Buydu değil mi? O zaman x eşittir 1 bölü y'de aynısı değil midir? O zaman y eşittir...
+
+267
+00:37:53,684 --> 00:38:18,644
+2 bölü x ya da x eşittir 2 bölü y de bunun birazcık daha değerleri açık halidir. Tamam mı? Şimdi buna karar verdik. 1. Şimdi o zaman çiziyorum. Bakın y eşittir x eşittir 2 bölü y. Şimdi birinci bölgede çünkü şunu diyor. 1 ile 4 arasında şeklin diğer kısmı şuradaydı. Burası eksi değerler. Bu kısmı yok o yüzden.
+
+268
+00:38:19,188 --> 00:38:21,128
+O yüzden o kısmını almadık.
+
+269
+00:38:21,508 --> 00:38:30,008
+Şimdi diyor ki, 1 ile 4 arasında, y'si 1 ile şöyle 4 arasında bölge şu.
+
+270
+00:38:32,008 --> 00:38:34,008
+Hangi eksen etrafında döndürülüyor?
+
+271
+00:38:34,768 --> 00:38:37,428
+Şöyle, y ekseni etrafında.
+
+272
+00:38:37,508 --> 00:38:40,448
+Yani nasıl bir şekil olacakmış dönderme sonucu?
+
+273
+00:38:40,448 --> 00:38:44,648
+Şöyle baca şeklinde bir şekil olacak değil mi arkadaşlar?
+
+274
+00:38:45,235 --> 00:38:53,056
+Şimdi bunu gördük. Şimdi o zaman bakın, biz buraya y diyeceğimizi, şuraya y diyeceğimizi nasıl karar verdik?
+
+275
+00:38:53,556 --> 00:39:00,035
+Disk yönteminde y ekseni etrafında dönme diyorsa, buraya dy'li formülü yazacağım.
+
+276
+00:39:00,563 --> 00:39:13,003
+Şimdi yazıyorum bakın. Sınırları nereden nereye değişecek? Siz söyleyebilir misiniz? y'ler nereden nereye değişiyor bölgede? Evet. Bir kişi söyleyebilir mi? Merak ediyorum.
+
+277
+00:39:13,143 --> 00:39:14,043
+4 ile 1 ara sayıyor.
+
+278
+00:39:14,043 --> 00:39:28,103
+Evet. Aşağıya küçük olanı yazacaksınız. Yukarıya büyük değeri yazacaksınız. Tamam mı arkadaşlar? 1 ile 4 arasında dedik. Peki R'ye? Şimdi bunu bakın ben hep şöyle yapıyorum.
+
+279
+00:39:28,563 --> 00:39:51,563
+ekseni etrafında dönme. Dönmenin olduğu kısmı böyle kalın yapıyorum ki burası dönme ekseni. Başka doğrularla karışmasın dedim. E şimdi neydi R'ye? R'ye bölgenin en ucundan başlayarak dönme eksenine olan uzaklığı. Bakın şöyle değil mi? Şu. Şudur.
+
+280
+00:39:52,628 --> 00:40:07,848
+r'ye budur. Dönme eksenine olan uzaklık. O zaman nasıl olacak? Şurası kaç? Bu eğri. x eşittir 2 bölü y. Peki bu kaç? Şu son değdiği nokta.
+
+281
+00:40:08,659 --> 00:40:28,879
+Şurası kaç? Bakın, bu hangi y ekseni? Yani x eşitli sıfır. Aslında şöyle değil mi? Bakın yine, şurası x ekseni ya, artı x'den eksi x'e doğru gideceksiniz. İlk önce hangi eğri yazacaksınız? Şu eğri. Yani 2 bölü y.
+
+282
+00:40:29,907 --> 00:40:40,367
+eksi sonra sıfır, çıktığı nokta sıfır. Uzunluğunu böyle bulacaksınız. Yani şu uzunluğu arkadaşlar, farklı bir renkte göstereyim.
+
+283
+00:40:41,167 --> 00:40:52,827
+Artı x'den eksi x'e doğru gidip iki uç noktadaki eğriyi alıyorsunuz. İlk önce hangisini yazacaksınız? Artı x'den eksi x'e doğru gidiyormuş gibi düşüneceksiniz.
+
+284
+00:40:52,827 --> 00:40:55,147
+Şimdi bitti soru bakın.
+
+285
+00:40:55,572 --> 00:41:23,211
+1'den 4'e kadar pi, ry'nin karesi, 2 bölü y'nin karesi dy'dir. Bu da pi, şurası 4 bölü y karedir. Bu da arkadaşlar, 4 tane y üzeri eksi 2'dir. Bir daha yazmamak için. Bu da 4 tane y üzeri eksi 1 bölü eksi 1'dir integrali. Şöyle gördünüz. Kaçtan kaça kadar? 1'den 4'e kadar. Bu da
+
+286
+00:41:23,572 --> 00:41:45,532
+x'i 4pi bölü y, yani 1 bölü y, 1'den 4'e kadar kaç olur? x'i 4pi, 1 bölü 4, x'i 1 olur. Bu da x'i 3 bölü 4 mü yapar? Bir de x'i 4pi, x'i 3 bölü 4, şunlar gider, x'i de gider, 3pi kalır.
+
+287
+00:41:46,132 --> 00:42:10,192
+artı çıkması lazım. Çünkü hacim artı olacak değil mi? Yoksa bir yerde hata yapmışsınızdır arkadaşlar. Evet. Var mı bir sorunuz burada? Sormak istediğiniz. Yok değil mi? Şimdi bir örnek daha yapalım. Eğer yorulmadıysanız sonra ara verelim. Yani en azından pekişmesi için. Olur mu? Çok yoruldunuz mu?
+
+288
+00:42:10,708 --> 00:42:23,307
+Hocam, biz sabah fizik sınavına girdik, 6'da da kimya sınavımız var. Normal gidelim de bugünkü dersi bir tık erken bitirme şansımız var mı?
+
+289
+00:42:23,447 --> 00:42:23,708
+Tamam.
+
+290
+00:42:24,168 --> 00:42:25,907
+20 dakika, 10-20 dakika.
+
+291
+00:42:26,947 --> 00:42:32,367
+Tamam, bir dakika, şimdi bir dakika. Süre kaç, saat kaçta sınavınız var dediniz?
+
+292
+00:42:32,768 --> 00:42:33,367
+6'da.
+
+293
+00:42:33,876 --> 00:42:43,756
+Altada sınavınız var. Tamam. Şöyle yapalım mı? Bir 10 dakika ara verelim. Ben birazcık daha erken bitireyim bugün dersi. Olur mu?
+
+294
+00:42:44,756 --> 00:42:49,136
+Tamam yok. Hani arkadaşlarımdan eder bilmiyorum de çok değil. Hani 10-20 dakika kadar.
+
+295
+00:42:49,476 --> 00:42:54,436
+Tamam. Evet. Sorunum arkadaşlar. Nasıl yapalım? Bir 10 dakika ara verelim.
+
+296
+00:42:54,831 --> 00:43:01,691
+Hocam, bence de erken açayım. Çünkü biraz bir yorgunluk var bizde. O nedenle tam kendimizi veremiyoruz.
+
+297
+00:43:01,831 --> 00:43:04,751
+Tamam, bugün buçukta dersimizi bitirelim mi arkadaşlar?
+
+298
+00:43:05,652 --> 00:43:08,911
+Çok iyi olur hocam. Bir de önemli bir konuymuş çünkü.
+
+299
+00:43:09,612 --> 00:43:19,891
+Evet, önemli bir konu. Yani haftaya uygulama az olursa belki o zaman bir telafi dersi isterseniz yaparız. Belki de ihtiyaç duymazsınız.
+
+300
+00:43:20,572 --> 00:43:29,072
+Buçukta bitirelim o zaman. Şimdi o zaman bir ara vereyim veya ara verelim bence. Tamam mı?
+
+301
+00:43:29,072 --> 00:43:33,552
+Şimdi bir ara verelim. 10 dakika aramızı tutsak olur mu? Yeter mi?
+
+302
+00:43:33,652 --> 00:43:54,452
+Olur mu? Olur mu? Tamam. Bir kahve için, bir çay için. 10 dakika sonra devam edelim kaldığımız yerden. Keşke dersin başında söyleseydiniz. Tamam arkadaşlar. 10 dakika ara veriyoruz. 55 geçe görüşüyoruz. Bugün buçukta da dersimizi, yani iki buçukta dersimizi bitireceğiz. Tamam mı?
+
+303
+00:43:55,391 --> 00:43:56,992
+Tamam hocam. Teşekkürler.
+
+304
+00:43:57,192 --> 00:43:57,811
+Rica ederim.
+
+305
+00:54:50,771 --> 00:55:11,492
+Merhaba arkadaşlar. Dersimizde kaldığımız yerden devam ediyoruz. Ben yine ekran paylaşımı yapayım. Evet, bugün dersimizi erken bitireceğiz. Buçuk gibi bitireceğiz. Şimdi arkadaşlar, en son şunu gördük. Şurada kaldık. Bu soru çok önemli.
+
+306
+00:55:12,000 --> 00:55:21,539
+Bu soruyu, öndeki soruları çözüp, sonra bu soruyu çözebilirseniz, evet bunu öğrenmişsiniz demektir arkadaşlar bu konuyu.
+
+307
+00:55:21,539 --> 00:55:26,960
+Şimdi şöyle yapalım. Ben yine bunu tahtaya yazayım.
+
+308
+00:55:37,652 --> 00:56:03,751
+şöyle diyelim. Örnek, tahta geldi mi? Bir kişi evet derse sevinirim. Evet hocam. Tamam. x eşittir y kare artı 1 parabolu ile x eşittir 3 doğrusu arasındaki bölgenin bölgenin
+
+309
+00:56:04,083 --> 00:56:26,583
+x eşittir 3, hatta şunu x eşittir 3 doğrusu etrafında döndürülmesiyle üretilen döner cismin hacmi.
+
+310
+00:56:26,583 --> 00:56:29,983
+Şimdi arkadaşlar, şimdi bakıyoruz soruya.
+
+311
+00:56:31,956 --> 00:56:44,115
+x eşittir y kare artı 1 parabolu, bakın, y eşittir x kare, y eşittir x kare buydu.
+
+312
+00:56:44,512 --> 00:56:56,652
+x eşittir y kare ise kolları x eksenine doğru olan. Demek ki bu da x eşittir y kare artı 1. Yani kolları x eksenine doğru olacak. 1. Buna karar verelim.
+
+313
+00:56:56,652 --> 00:57:11,711
+Şimdi 1. Şöyle. x eşittir y kare artı 1. y'si sıfırken x'i 1. Ve kolları şöyle olacak. Bu x eşittir. Pardon şurayı yazmayalım. Şöyle.
+
+314
+00:57:12,851 --> 00:57:39,791
+x, y koordinat sisteminde böyle. Şimdi burada x eşittir y kare artı 1 bu. Paraboni ile x eşittir 3. x eşittir 3. Şurası. Hatta farklı bir renk yapalım. Bu da güzel olmadı. Şu olsun. x eşittir 3. Arasında kalan bölge. Yani şu. Şununla
+
+315
+00:57:40,596 --> 00:58:04,535
+y kare artı 1 ile 3 arasında kalan bölge. Şöyle gösterelim. Bölgemiz bu. Hangi eksen etrafında döndürülüyormuş? Şimdi uyum olan şu kısım x eşittir 3 doğrusu etrafında döndürülüyor. x eşittir 3 doğrusu bu.
+
+316
+00:58:05,780 --> 00:58:11,780
+hatta bunu böyle biraz renklendireceğim arkadaşlar. Şöyle bakın.
+
+317
+00:58:13,780 --> 00:58:24,556
+bu eksen etrafında döndürülüyor. döndürme eksenimiz bu. x eşittir 3. Peki bu eksen hangi eksene paralel?
+
+318
+00:58:24,980 --> 00:58:49,839
+hangi eksene? y eksenine. Sanki y eksenini döndürüyormuşuz gibi düşüneceğiz. Yani formül y ekseni için nasıldı? Şöyleydi. v eşittir. Şurası dy olacak. Tamam mı arkadaşlar? dy olacak. Şimdi içerisi ne olacak? p, ry'nin
+
+319
+00:58:55,123 --> 00:58:58,784
+P, R, Y'nin karesi olsun.
+
+320
+00:58:59,384 --> 00:59:01,723
+Şimdi buradan sonrası arkadaşlar şöyle.
+
+321
+00:59:02,344 --> 00:59:03,844
+P, R, Y'nin karesi.
+
+322
+00:59:04,663 --> 00:59:07,543
+Peki, Y'ler nereden nereye değişiyor?
+
+323
+00:59:07,723 --> 00:59:09,963
+Y'ler bölge, şurası.
+
+324
+00:59:10,483 --> 00:59:12,423
+Şurası kaçtı? 3.
+
+325
+00:59:13,643 --> 00:59:17,324
+X'i üçgen, parabolde, X'i üçgen.
+
+326
+00:59:18,643 --> 00:59:23,123
+y'si kaçtır? 2. y'si artı eksi kök 2.
+
+327
+00:59:26,643 --> 00:59:52,903
+Yani y'ler, eksi kök 2'den artı kök 2'ye kadar. Bitti. Şimdi peki rey nedir arkadaşlar? Rey. Rey neydi arkadaşlar? Bölgenin nereye olan uzaklığı? Ekseni olan uzaklığı. Şurası. Hatta içini silelim. Şöyle rey. Bakın bu kısmı çok önemli.
+
+328
+00:59:54,291 --> 01:00:14,431
+bölgenin, şuranın ekseni olan uzaklığı şuraya. Şurası. Peki bu uzaklık, R'ye hangi iki eğri arasında? Şurada uç kısımda şu eğri, burada da bu eğri. Yani x eşittir 3.
+
+329
+01:00:14,996 --> 01:00:42,615
+ve burası ne? x eşittir. y kare artı 1. 2 eğri. O zaman R'ye nedir arkadaşlar? Hangisini önce yazacağız? Hangisini? Artı x'den eksi x'e doğru gittiğinizi düşünürseniz. Hangisini önce yazarız? Önce 3'ü yazarız. 3 eksi y kare artı 1'dir. Buradan da 2 eksi y kare gelir.
+
+330
+01:00:42,996 --> 01:01:02,276
+rey, eksi kök 2'den, kök 2'ye, pi tane, 2-y karenin karesi, buraya rey yazdık, rey'dir. Var mı bir sorun burada? Yok değil mi arkadaşlar? Anlaşıldı mı peki?
+
+331
+01:01:05,811 --> 01:01:09,171
+anlaşıldı umuyorum. Şimdi
+
+332
+01:01:09,171 --> 01:01:20,331
+evet şöyle şu işlemi yapmayacağım. Sonra işlemler yapılınca sonuç şöyle
+
+333
+01:01:20,947 --> 01:01:48,427
+şu kısımda şunun, bunun karesi kaçtır? 4 artı y üzeri 4 eksi 4y kareti. Burada integral alanınca sonuç 64 bölü 15 pi kök 2 çıkacak arkadaşlar. Şimdi pul yöntemini de konuşalım. Ondan sonra derse herhalde bırakacağım. Pul yöntemini de yapalım.
+
+334
+01:01:48,980 --> 01:01:51,659
+Şimdi arkadaşlar pul yöntemi şöyle.
+
+335
+01:01:54,360 --> 01:01:55,259
+Pul yöntemi.
+
+336
+01:01:56,039 --> 01:01:58,039
+Şimdi biz disk yöntemini gördük.
+
+337
+01:01:58,159 --> 01:02:00,179
+İkinci yöntemimiz pul yöntemi.
+
+338
+01:02:01,219 --> 01:02:04,920
+Aslında pul yöntemiyle disk yöntemi aynı.
+
+339
+01:02:05,556 --> 01:02:30,395
+sadece nasıl bir farkı var? Şimdi bakın arkadaşlar şöyle göstereyim. Bir tane cisim var yine. Bu sefer arkadaşlar iki eğri var. Mesela biraz önce biz ne yaptık? Şu eğriyi aldık. x ekseni etrafında döndürdük. Eksenimiz buydu. Şöyle bir cisim elde ettik. Ama şimdi şöyle yapacağız arkadaşlar. Şimdi iki eğri var.
+
+340
+01:02:31,123 --> 01:02:49,403
+pull'la diskiyi nasıl ayıracaksınız? Mesela bir eğrimiz bu, diğer eğrimiz de bu. Şimdi ikisi arasındaki bölgeyi x ekseninde çevirdik. O zaman şöyle olacak. Bakın şöyle yani şu dışarıdaki kısım.
+
+341
+01:02:49,619 --> 01:03:13,179
+şöyle dışarıdaki şöyle şu da içerideki kısım şöyle böyle şöyle olacak arkadaşlar içi boş şöyle biraz çirkin oldu ama içi boş arası boş böyle iki tane şurası da şöyle olacak şurası şöyle içi boş olacak
+
+342
+01:03:18,260 --> 01:03:46,240
+Evet, şöyle olacak değil mi? Şurası maviydi, şöyle aynı şekil aşağıda da. Burası ikili, şöyle içi boş böyle bir iki boru iç içe geçmiş gibi düşünün şekil olarak. Şimdi arkadaşlar, burada şunu yapıyoruz. Yani büyük hacimden aslında büyük diskten küçük diski çıkartıyoruz. Aradaki hacmi buluyoruz. Yani disk yöntemindeki iki hacimden.
+
+343
+01:03:46,260 --> 01:04:10,200
+aradakları birbirinden çıkartıyoruz. Aradaki hacmi buluyoruz. Yani şöyle düşünün şöyle iki tane şey var, boru var iç içe. Şimdi bunun şu aradaki hacmi bulmak için şu büyük şeyden büyüğünden küçüğünü çıkartıyoruz. Şu küçüğü çıkartıyoruz ve buluyoruz yani.
+
+344
+01:04:10,931 --> 01:04:33,891
+öyle özetleyebilirim. Şimdi o zaman pul yönteminde nasıl yapacağız? Bakın mesela şöyle bir şekil çizeyim pul yöntemi için. Yani iki diski birbirinden çıkartıyoruz gibi düşünün disk yöntemini. Şimdi şöyle şu bir, şu da diğeri. İki eğri var. Bu fx olsun.
+
+345
+01:04:34,387 --> 01:04:56,707
+bu da gx olsun. ikisi arasındaki bölgede şu olsun a ile b. şurası bölge. şimdi bunun döndürdüğünüz zaman x ekseni etrafında bir şekil oluştu. neydi? ve yine x ekseni etrafında döndürdük. aynı disk yönteminde olduğu gibi x ekseni etrafında döndürme diyorum.
+
+346
+01:04:57,300 --> 01:05:25,100
+aynı disk yönteminde olduğu gibi döndürme. Şöyle diyorum. Buraya dx gelecek. Geldi. Şimdi burada arkadaşlar şöyle. dx a'dan b'ye. a'dan x'ler bölge nereden nereye? b'ye. Ne yazıyordu? p, r, x'in karesi diyorduk. Şimdi arkadaşlar şurası şu büyük eğrinin
+
+347
+01:05:25,172 --> 01:05:51,891
+şurası dönme ekseni. Dönme ekseni olan uzaklığı yani pi, şuna rx diyelim. pi, rx'i karesi. Bunun hacminden aslında şöyle. dx eksi. Şimdi a'dan d'ye dx. Şimdi küçük olan da şu. Şunun dönme ekseni olan uzaklığı. Bu da küçük rx.
+
+348
+01:05:52,307 --> 01:05:56,947
+pi, rx'in karesi. Yani nasıl olacak?
+
+349
+01:05:57,507 --> 01:06:07,847
+a'dan b'ye pi tane büyük rx'in karesi, eksi küçük rx'in karesi dx'dir.
+
+350
+01:06:09,147 --> 01:06:13,327
+Evet, yani iki hacmi birbirinden çıkartıyoruz.
+
+351
+01:06:14,047 --> 01:06:16,728
+Evet, şimdi bunu örnekte görelim arkadaşlar.
+
+352
+01:06:17,331 --> 01:06:21,831
+Şimdi buraya kadar umarım anlaşılmıştır. Örnekte daha belirgin olur.
+
+353
+01:06:22,911 --> 01:06:24,652
+x ekseni için bu.
+
+354
+01:06:25,371 --> 01:06:30,991
+y ekseni için de her şey aynı. Bu sefer d y ile büyük R'ye, küçük R'ye olacak.
+
+355
+01:06:31,611 --> 01:06:33,411
+Örneğin, bir tane yapalım.
+
+356
+01:06:34,692 --> 01:06:38,672
+y eşittir x kare artı 1 eğrisi
+
+357
+01:06:38,672 --> 01:06:44,371
+ve y eşittir eksi x artı 3 doğrusu
+
+358
+01:06:45,364 --> 01:06:59,364
+ile sınırlanan bölge x ekseni etrafında döndürülüyor.
+
+359
+01:06:59,364 --> 01:07:04,364
+döndürülerek
+
+360
+01:07:04,364 --> 01:07:06,124
+oluşan
+
+361
+01:07:07,027 --> 01:07:29,227
+cismin hacmini bulunuz. Ben kısa yazdım. Hacmini. pdf'de tamamı var. Şimdi 1. Hangi eksenin etrafında? x ekseni. Pull yöntemiyle yapacağız. Pull yöntemi. Pull yöntemine kendiniz karar vereceksiniz. Onu da şöyle göstereyim. Disk mi, pull mu olduğuna şöyle karar veriyoruz.
+
+362
+01:07:30,771 --> 01:07:34,612
+İlk önce soruyu çözeyim, sonra pul yöntemi olduğunu söyleyeceğim.
+
+363
+01:07:35,432 --> 01:07:40,092
+Şöyle arkadaşlar, y eşittir x kare artı 1 eğrisi şu.
+
+364
+01:07:41,012 --> 01:07:44,251
+x'i sıfırken y'si 1 ve böyle gider.
+
+365
+01:07:44,612 --> 01:07:53,351
+y eşittir x'i x artı 3 eğrisi de x'i sıfırken y'si 3, y'si sıfırken x'i 3.
+
+366
+01:07:53,351 --> 01:07:56,532
+Şöyle, şöyle, bakın şöyle.
+
+367
+01:07:57,331 --> 01:08:00,132
+Şimdi ikisinin ne diyor soruda?
+
+368
+01:08:01,152 --> 01:08:08,311
+x kare artı 1 evlisi ve x x artı 3 arasında sınırlanan bölge.
+
+369
+01:08:08,672 --> 01:08:10,351
+Bu bölgeyi çeviriyormuşuz.
+
+370
+01:08:10,351 --> 01:08:12,032
+Şimdi arkadaşlar.
+
+371
+01:08:12,692 --> 01:08:38,532
+Bunun oluşan hacmini bulunuz. Hangi ekseni etrafında? x ekseni etrafında döndürme yapıyoruz. Tamam mı? 1. x ekseni etrafında döndürme yaptık. Buraya dx dedik. İlk önce bunu dedik. Peki, şuralar kaçtır arkadaşlar? Şuralar iki eğlenin yine kesiştiği noktalardır.
+
+372
+01:08:38,963 --> 01:08:56,203
+kaçta kesişir? x kare artı 1, eksi x artı 3'e eşit, x kare artı x, eksi 2 eşittir, 0, 2'ye 1, artıya eksi x eşittir, eksi 2, x eşittir 1. Yani 1 ve
+
+373
+01:08:57,235 --> 01:08:59,036
+x 2 de kesişirmiş.
+
+374
+01:08:59,755 --> 01:09:03,415
+Şimdi bölge dx'de nereden nereye?
+
+375
+01:09:04,155 --> 01:09:06,275
+x 2'den 1'e kadar.
+
+376
+01:09:06,675 --> 01:09:07,536
+1 bunu dedik.
+
+377
+01:09:07,775 --> 01:09:09,735
+2 ne olacak arkadaşlar?
+
+378
+01:09:10,055 --> 01:09:12,635
+Eğer taralı bölge, burası çok önemli.
+
+379
+01:09:13,175 --> 01:09:14,395
+Taralı bölgemiz bu.
+
+380
+01:09:14,775 --> 01:09:15,475
+Gördünüz mü?
+
+381
+01:09:15,956 --> 01:09:23,555
+Taralı bölge eğer eksene yapışık değilse, dönme eksenine, bakın dönme ekseni burası, yapışık mı?
+
+382
+01:09:23,555 --> 01:09:25,235
+Biraz önceki soruları...
+
+383
+01:09:25,235 --> 01:09:45,536
+hepsinde yapışıktı. Mesela göstereyim size. Bakın, şurada, şöyle, şurasıydı. Şurasıydı bölge. Ve eksen şurasıydı. Yapışıktı arkadaşlar. Şurası, pardon, burası değildi, pardon. Şöyleydi.
+
+384
+01:09:46,771 --> 01:10:00,000
+şöyle arkadaşlar, bakın bölge şuydu, şurudu, eksende burasıydı, bölge eksene yapışık. Dolayısıyla disk yöntemi. Mesela bundan önceki...
+
+385
+01:10:00,000 --> 01:10:16,139
+soruda mesela bölge şuydu. Bakın burası taralı olan yer. Dönme ekseni şurasıydı. Bakın ekseni yapışık disk yöntemi. Yani tek bir tane var. Şurada bakın bölge buydu.
+
+386
+01:10:16,979 --> 01:10:18,239
+şurasıydı.
+
+387
+01:10:18,819 --> 01:10:20,619
+dönme ekseni şuydu.
+
+388
+01:10:20,799 --> 01:10:22,020
+eksene yapışık.
+
+389
+01:10:22,159 --> 01:10:22,899
+gördünüz mü?
+
+390
+01:10:23,059 --> 01:10:25,639
+bölge dönme eksenine yapışık.
+
+391
+01:10:26,100 --> 01:10:27,659
+mesela bölge buydu.
+
+392
+01:10:29,520 --> 01:10:30,439
+bölge buydu.
+
+393
+01:10:31,000 --> 01:10:32,420
+dönme ekseni buydu.
+
+394
+01:10:32,559 --> 01:10:36,139
+yani taralı bölge dönme eksenine yapışık.
+
+395
+01:10:36,500 --> 01:10:38,100
+dolayısıyla disk yöntemi.
+
+396
+01:10:38,260 --> 01:10:41,260
+ama burada arkadaşlar, şurada da göstereyim.
+
+397
+01:10:41,859 --> 01:10:42,920
+bölgeniz bu.
+
+398
+01:10:42,920 --> 01:10:43,920
+bakın.
+
+399
+01:10:44,851 --> 01:11:08,551
+ekseniniz arasında mesafe var. Bakın şurada bir boşluk var. Dolayısıyla dönme eksenine yapışık değil. Yani bu bir pul yöntemi. Anlatabildim mi bilmiyorum. O zaman şöyle diyorum. İki tane Rx'i birbirinden R'yi çıkartacağım. O zaman nasıl yapıyoruz? Şöyle diyoruz.
+
+400
+01:11:11,956 --> 01:11:37,935
+pi, rx'in karesi, eksi, küçük rx'in karesi, dx, dönme eksiline yapışık değil. Peki büyük rx ne? Bölgenin başladığı yer şurası değil mi? Artıdan eksiye. Bunun dönme eksiline olan uzaklığı, şu büyük rx.
+
+401
+01:11:39,347 --> 01:12:01,407
+bu büyük rex. Diğeri ne? Diğerinde nedir arkadaşlar? Bölgenin şöyle göstereyim hangi renkte göstersem renk bulamadım. Bittiği yer mesela şurası, şurası, hatta şurası olsun. Dönme eksenine olan uzaklığı. Küçük rex.
+
+402
+01:12:03,380 --> 01:12:06,819
+Şimdi buna göre, bakın arkadaşlar, şöyle diyelim.
+
+403
+01:12:07,020 --> 01:12:10,180
+Büyük Rx nedir arkadaşlar?
+
+404
+01:12:11,000 --> 01:12:14,739
+Şuradan, şurada başlar, şurada biter.
+
+405
+01:12:15,280 --> 01:12:18,500
+İlk önce artı y'den geliyoruz. İlk önce bu eğri.
+
+406
+01:12:19,000 --> 01:12:20,440
+Bu eğri nedir? Doğru.
+
+407
+01:12:21,000 --> 01:12:22,399
+Eksi x artı 3.
+
+408
+01:12:23,920 --> 01:12:26,840
+Eksi, sonra bu doğru sıfır.
+
+409
+01:12:27,460 --> 01:12:29,540
+Yani eksi x artı 3'tür.
+
+410
+01:12:30,323 --> 01:12:43,644
+küçük rx ise, küçük rx, şöyle yapalım, küçük rx ise, başladığı nokta şurası, bittiği nokta şurası.
+
+411
+01:12:44,083 --> 01:13:02,203
+başladığı artı y'den eksi y'ye doğru. Neyle başlıyor? Parabol ile başlıyor. Kaçtır o? x kare artı 1. Bittiği noksa eksi 0. Yani x kare artı 1'dir küçük rx'de. Eşittir şöyle x kare artı 1.
+
+412
+01:13:12,083 --> 01:13:18,164
+x kare artı 1'in karesi dx'dir.
+
+413
+01:13:20,083 --> 01:13:44,224
+bunu da düzenleyince burası ne olur? x kare eksi 6x artı 9 eksi x kare x üzeri 4 pardon 2x kare artı 1. Sonra bunun integrali alınacak ve sonuç 117 pi bölü 5 çıkar. Var mı bir sorunuz bana burada? Evet, galiba yok.
+
+414
+01:13:45,171 --> 01:13:50,731
+Son olarak bir soru daha çözeceğim ve dersimizi burada bitireceğim arkadaşlar.
+
+415
+01:13:52,351 --> 01:13:53,231
+Şöyle yapalım.
+
+416
+01:13:56,251 --> 01:14:02,311
+Maalesef çok kötü denk geldi. Yapabileceğim bir şey de yok. Biraz ders erken bitirebilirim.
+
+417
+01:14:02,811 --> 01:14:04,531
+Çok az bir hafta kaldığı için.
+
+418
+01:14:04,531 --> 01:14:05,911
+Şimdi şöyle.
+
+419
+01:14:06,644 --> 01:14:22,783
+diğer soru şöyle göstereyim burada. Bakın burada şurada kareleri aldık. Biz de aldık. Sadece şu kısmın işlemi kaldı. O işlemde yapılınca 117 pi bölü 5 kalır.
+
+420
+01:14:23,119 --> 01:14:32,719
+Şimdi birinci dörtte bir bölgede yeşittir. Şimdi bir de bunu yapalım. Siz haftaya zaten bunlara bakarsınız. Bunu kayıttan dinlersiniz.
+
+421
+01:14:35,184 --> 01:14:55,203
+Ben yine örnekler çözeceğim ama lütfen kayıttan dinleyerek gelin arkadaşlar. Çünkü konuyu baştan sona anlatamam yeniden. En azından dersi dinlemiş olarak gelirsiniz. Şöyle yapalım. Son sorumuz şu. Şöyle bağlanalım.
+
+422
+01:15:00,435 --> 01:15:26,695
+şöyle birinci örnek diyoruz dörtte bir bölgede bölgede y eşittir x kare parabolu ve y eşittir 2x doğrusuyla sınırlanan
+
+423
+01:15:29,587 --> 01:15:53,188
+y ekseni etrafında, hatta şunu şöyle yazalım, y ekseni etrafında döndürülerek, bir döner cisim oluşturuluyor.
+
+424
+01:15:56,916 --> 01:15:58,236
+oluşturuluyor.
+
+425
+01:16:02,195 --> 01:16:04,595
+hacmini bulunuz. Cismin hacmi nedir?
+
+426
+01:16:04,996 --> 01:16:06,595
+Cismin hacmi nedir?
+
+427
+01:16:07,716 --> 01:16:08,235
+Nedir?
+
+428
+01:16:09,556 --> 01:16:11,796
+Şimdi çözmeye başlıyoruz.
+
+429
+01:16:12,175 --> 01:16:16,675
+Yine dörtte birlik bölgede ilk kısımda, şu kısımda,
+
+430
+01:16:17,896 --> 01:16:18,536
+ne diyor?
+
+431
+01:16:19,056 --> 01:16:23,536
+Dörtte birlik bir bölgede, birinci dörtte birlik bir bölgede, birinci bölgede,
+
+432
+01:16:23,536 --> 01:16:28,136
+y eşittir x kare, şu, y eşittir x kare,
+
+433
+01:16:29,043 --> 01:16:53,084
+y eşittir 2x de bu arkadaşlar. y eşittir 2x. Doğrularıyla sınırlı olan bölge. Yani şununla ve şununla sınırlı olan bölge. Şu bölge. İki doğruyla sınırlı olan bölge. Bölgemizi bulduk. İkisinin kesişme noktası şurası. Kaçtır bu?
+
+434
+01:16:53,716 --> 01:17:07,935
+x kare eşittir 2x, x eşittir 0'da ve x eşittir değil mi? x kare eksi 2, x eşittir 0'dan, x, x eksi 2'den, x eşittir 0'da ve 2'de kesişir. Şuralarda kesişir.
+
+435
+01:17:08,935 --> 01:17:14,136
+Burada diyor ki, bu bölgeyi hangi eksen etrafında döndürülüyor?
+
+436
+01:17:17,136 --> 01:17:19,935
+y ekseni etrafında döndürülüyor.
+
+437
+01:17:20,500 --> 01:17:23,079
+bakın, şu ekserin etrafında döndürüyoruz.
+
+438
+01:17:23,680 --> 01:17:24,360
+döndürdük.
+
+439
+01:17:24,819 --> 01:17:52,680
+bölge eksene yapışık mı? Değil. O zaman pul yöntemiyle yapacağız. Yani iki tane hacmi birbirinden çıkartacağız. Büyük Lx, küçük Lx diye. Bölge eksene yapışık değil. O zaman V eşittir. Şimdi hangi eksene göre alıyoruz? Y ekseni etrafında döndürülerek diyor. D, Y. Peki Y'nin sınırları kaçtan kaçan?
+
+440
+01:17:52,819 --> 01:17:58,379
+0'dan, şurası kaç? x2 iken y'si 4, 0'dan 4'e.
+
+441
+01:17:58,379 --> 01:18:03,859
+pul yöntemi olduğuna göre, buraya dy yazdığımıza göre şöyle olacak.
+
+442
+01:18:04,799 --> 01:18:15,479
+şöyle dy diyelim, pi büyük ry'nin karesi, eksi küçük ry'nin karesi dy.
+
+443
+01:18:16,083 --> 01:18:37,623
+böyle olacak. Peki büyük R'ye nedir arkadaşlar? Şöyledir. Büyük R'ye dışarıdaki bölgenin başladığı, şöyle geldik, bölgenin başladığı kısmın dönme ekserine olan uzaklığı. Bu büyük R'ye.
+
+444
+01:18:39,283 --> 01:18:49,943
+diğeri ise küçük R'ye de tam bittiği bölgenin veya şurada gösterelim şöyle dönme eksenine olan uzaklığı bu da küçük R'ye'dir.
+
+445
+01:18:51,043 --> 01:18:55,523
+Büyük R'ye arkadaşlar gördüğünüz gibi şu değil mi?
+
+446
+01:18:58,463 --> 01:18:59,743
+Şurası şöyle.
+
+447
+01:19:00,304 --> 01:19:03,423
+Büyük R'ye dışarıdaki eğri şu.
+
+448
+01:19:03,823 --> 01:19:05,543
+Büyük R'ye yani bu nedir?
+
+449
+01:19:06,420 --> 01:19:30,899
+y eşittir x kare, o zaman y eşittir x kare ise x eşittir kökyedir. x eşittir artı eksi kökyedir ama biz x eşittir eksi kökyedir almıyoruz. Çünkü değerleri burada artılar. Birinci bölgede x eşittir kökyedir alıyoruz. Şimdi o zaman re'ye kökyeden giriyor.
+
+450
+01:19:32,243 --> 01:19:59,143
+kaçtan çıkıyor? Şurası sıfır. Eksi sıfırdan. Küçük ry ise nereden geliyor? Şuradan. Şuradan. Şuradan. Şuradan geliyor. Şuradan çıkıyor. Bu kaçtır? Yine y'li ifadesini yazacağız. y eşittir 2x ise x eşittir y bölü 2'dir. y bölü 2'den geliyor. Sıfırdan çıkıyor.
+
+451
+01:20:00,340 --> 01:20:25,440
+bulduk arkadaşlar. Buna göre ne olur? Şöyle gösterelim. Eşittir. Şöyle yapalım. Şurayı silelim. Şöyle deriz. 0'dan 4'e pi tane büyük ry'nin karesi kök y'nin karesi eksi küçük ry'ye y bölü 2'nin karesi.
+
+452
+01:20:25,904 --> 01:20:51,804
+d'ye olur. Bunun sonucu da arkadaşlar veya kısaca hemen yazalım. pi tane. Bu nedir? y'dir. Bu da nedir? y kare bölü 4'tür. İntegralini alırsak y kare bölü 2 eksi y küp bölü 12 sıfırdan 4'e olur. Bu da pi tane. 16 bölü 2'den 8. Burası da kaç olur? 4 kere 4.
+
+453
+01:20:52,372 --> 01:21:18,692
+16, 64 bölü 12'den de kaç çıkıyormuş? Hesaplayamıyorum şu anda. Şöyle direk sonucu yazayım. Kaç çıkıyormuş sonuç? 8 pi bölü 3 çıkıyormuş. 8 pi bölü 3 çıkıyormuş arkadaşlar. Evet. Şöyle burada göstereyim şunu da sizlere.
+
+454
+01:21:19,412 --> 01:21:25,332
+y ekseni etrafında dönmede arkadaşlar her şey aynı pul yöntemi için.
+
+455
+01:21:25,332 --> 01:21:28,832
+pul yöntemi için.
+
+456
+01:21:29,391 --> 01:21:32,231
+bakın pul yönteminde arkadaşlar
+
+457
+01:21:32,231 --> 01:21:34,971
+şöyle bölge şurada
+
+458
+01:21:34,971 --> 01:21:37,551
+bakın bölge şurada
+
+459
+01:21:37,551 --> 01:21:41,072
+ama dönme ekseni uzakta.
+
+460
+01:21:41,231 --> 01:21:43,271
+bölgeye yapışık değil.
+
+461
+01:21:43,391 --> 01:21:44,992
+bakın dönme ekseni şurası.
+
+462
+01:21:46,163 --> 01:22:12,804
+yapışık olmadığı için pul yöntemini kullanıyoruz. Ne yapıyoruz? Büyük iki tane dış yarı çap. Şöyle düşünün dıştakinin hacmi. Sonra içtakinin hacmi. Şu da o ekseni olan uzaklıkları. Dışarıdaki eğrinin dönme ekseni olan uzaklığı tam bölgenin bittiği.
+
+463
+01:22:13,152 --> 01:22:37,832
+eğrinin dönme ekseninde olan uzaklıkları. Bu büyük R'ye, şu küçük de küçük R'ye. Evet, bu şekilde özetleyebilirim. Silindirik kabuk yöntemini anlatmıyorum. Haftaya kalksın. Siz lütfen bunu dinleyin. Dinledikten sonra yine konuşuruz.
+
+464
+01:22:39,988 --> 01:22:43,508
+Sorusu olan var mı arkadaşlar? Yok galiba.
+
+465
+01:22:45,808 --> 01:22:52,088
+Ben dersi bitiriyorum arkadaşlar. Sınıfında başarılar diliyorum arkadaşlar.
+
+466
+01:22:52,088 --> 01:22:53,268
+Teşekkürler.
+
+467
+01:22:53,808 --> 01:22:56,048
+Kolay gelsin. Başarılar arkadaşlar.

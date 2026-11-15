@@ -1,0 +1,3519 @@
+1
+00:00:10,676 --> 00:00:13,596
+Merhaba arkadaşlar, sesimi duyuyor musunuz?
+
+2
+00:00:15,576 --> 00:00:17,216
+Nasılsınız, iyi misiniz?
+
+3
+00:00:20,136 --> 00:00:22,076
+Evet, sesim geliyor galiba.
+
+4
+00:00:23,216 --> 00:00:23,795
+Geliyor hocam.
+
+5
+00:00:24,576 --> 00:00:27,055
+Kaldığımız yerden devam ediyoruz arkadaşlar.
+
+6
+00:00:27,763 --> 00:00:43,603
+Şimdi eğri çizimini bitirmiştik, ek ders yapmıştık, telafi dersi. Dinleyemeyenler kayıttan dinleyebilirler. Baya bir sorular çözmüştük. Şimdi artık integrallere başlayacağız arkadaşlar.
+
+7
+00:00:43,603 --> 00:00:54,904
+Bunun için şöyle, ben istediğiniz gibi pdf'leri daha önceden sisteme yükledim. Sistemden ulaşabiliriz, avesis'i yükledim.
+
+8
+00:00:55,764 --> 00:00:57,764
+sonrası ile seslenen bakabilirsiniz.
+
+9
+00:00:58,399 --> 00:01:04,240
+Şimdi, evet, integraller, [öğrenci] yazmış, evet, integrallere başlıyoruz.
+
+10
+00:01:04,840 --> 00:01:07,859
+Bugünkü dersimiz önemli arkadaşlar, şöyle önemli.
+
+11
+00:01:08,780 --> 00:01:15,599
+Dersi notlardan çalışarak anlamakta zorluk çekebilirsiniz arkadaşlar.
+
+12
+00:01:16,240 --> 00:01:18,520
+O yüzden dersi dinlemeniz lazım.
+
+13
+00:01:19,259 --> 00:01:22,879
+Dersi dinleyerek daha kolay anlayacağınızı düşünüyorum.
+
+14
+00:01:22,879 --> 00:01:24,659
+Şöyle başlayalım.
+
+15
+00:01:26,099 --> 00:01:30,239
+Şimdi arkadaşlar, ekran paylaşımı yapacağım.
+
+16
+00:01:32,439 --> 00:01:35,279
+Vize tarihleri hakkında bir şey öğrenemedim.
+
+17
+00:01:35,999 --> 00:01:42,299
+Yine öğrenirsem size gün içinde ya da yarın veya ondan sonraki gün söyleyeceğim.
+
+18
+00:01:42,299 --> 00:01:46,239
+Bir dakika, evet. PDF'i görüyor musunuz arkadaşlar?
+
+19
+00:01:47,219 --> 00:01:48,780
+Evet hocam görüyoruz.
+
+20
+00:01:48,780 --> 00:01:59,439
+PDF'i görüyorsunuz. Şimdi ters türevlerden başlıyoruz. Şimdi arkadaşlar şöyle, sadece tanımı okuyacağım, sonra tablete bağlanacağım.
+
+21
+00:02:03,828 --> 00:02:27,228
+küçük f dediğim büyük f'in türevi ise i aralığındaki f fonksiyonuna f'in ters türevi denir. Bu ne demek arkadaşlar? Bunu örneklerle görelim. Mesela bu fonksiyonların ters türevlerini bulalım. Bu ne demek? Şöyle, pdf üzerinden mi anlatayım veya tahtada anlatayım? Şöyle.
+
+22
+00:02:27,828 --> 00:02:31,108
+Ekrana bağlandı mı? Ekran geldi mi arkadaşlar?
+
+23
+00:02:31,587 --> 00:02:32,367
+Geldi hocam.
+
+24
+00:02:32,967 --> 00:02:34,448
+Yok, tahta gelmedi.
+
+25
+00:02:34,787 --> 00:02:37,427
+Şimdi şöyle düşünün. Ben açayım.
+
+26
+00:02:37,427 --> 00:02:40,367
+Evet. Şimdi geldi mi?
+
+27
+00:02:43,287 --> 00:02:44,787
+Geliyor herhalde.
+
+28
+00:02:45,347 --> 00:02:47,467
+Yeniden bir tane deney.
+
+29
+00:02:49,108 --> 00:02:50,448
+Yeniden bağlanalım.
+
+30
+00:02:58,707 --> 00:03:01,787
+Evet, geldi mi arkadaşlar? Bende gözüküyor. Siz de?
+
+31
+00:03:02,227 --> 00:03:03,007
+Geldi hocam.
+
+32
+00:03:03,007 --> 00:03:09,247
+Şimdi arkadaşlar, mesela bir fonksiyonun örneği, şöyle bir de.
+
+33
+00:03:13,843 --> 00:03:37,343
+Evet, bir fonksiyonun arkadaşlar, fx fonksiyonunu, fx eşittir 2x, ters türevi nedir? Ters türevini bulunuz. Ters türev dediğimiz şey. Acaba bu neyin fx neyin türevidir? Neyin türevidir 2x? Yani bu aslında bildiğimiz integral. 2x neyin türevidir? x kare.
+
+34
+00:03:37,343 --> 00:03:40,144
+x kare. fx x karedir.
+
+35
+00:03:40,788 --> 00:04:00,487
+Cevabı budur. Yani fx fonksiyonunun ters türevini bulunuz diyor. Ters türevini bulunuz. Ne dedik? x kare. Mesela şöyle olsa gx örneğin kotünüz x. Ters türevi nedir? Ters türevini bulunuz.
+
+36
+00:04:00,819 --> 00:04:09,919
+ters türevini bulunuz dedi. Ne diyeceksiniz arkadaşlar? Ters türevi büyük gx olsun. Nedir? Kosinüs x neyin türevidir?
+
+37
+00:04:10,336 --> 00:04:32,056
+neyindir? Sinüsündür değil mi? Sinüs x'dir. Ters türevi budur. Mesela bir tane daha yazayım. Hx örneği şöyle olsun. 2x artı kosinüs x fonksiyonunun ters türevini bulunuz. Şuraya ters türevini bulunuz. Şimdi ne derseniz arkadaşlar ters türevini büyük h ile gösterelim.
+
+38
+00:04:32,819 --> 00:04:44,899
+2x neyin türeviydi? x karenin de, kosinüs x de, sinüs x'indi. Ters türevi dediğimiz şey bu, değil mi? Geriye dönmek. Ama bunu daha genel yazabiliyoruz.
+
+39
+00:04:44,899 --> 00:04:53,319
+Mesela, şimdi şurada sizden cevaplamanızı istiyorum. 2x, x karenin türevidir, değil mi?
+
+40
+00:04:53,939 --> 00:05:10,120
+türevidir. Ama bunu daha geniş nasıl yazıyorduk? x kare mesela daha geniş yazacak olursak, mesela fx eşittir 2x, ters türevini bulunuz. En geniş haliyle. Nasıl yazarsınız? Şöyle dersiniz değil mi?
+
+41
+00:05:10,543 --> 00:05:27,503
+büyük f' derim. Bu neyin türevidir? 2x. x karenin yanına ne derim? Artı c. En genel anlamda, genel anlamda ters türev budur arkadaşlar. Hatırladık mı? Yani integrale giriş yapacağız.
+
+42
+00:05:28,283 --> 00:05:34,524
+Şimdi mesela örneklerle gösterelim. Birkaç tane arka arkaya örnek yapayım. Örneğin.
+
+43
+00:05:35,668 --> 00:05:41,987
+Mesela, aşağıdaki fonksiyonların genel ters türevlerini bulunuz diyelim.
+
+44
+00:05:42,268 --> 00:05:45,228
+Genel ters türevlerini bulunuz.
+
+45
+00:05:45,348 --> 00:05:49,947
+Aşağıdaki fonksiyonların.
+
+46
+00:05:50,827 --> 00:05:55,887
+Şimdi birinci fonksiyonumuz fx, eşittir x üzeri 5.
+
+47
+00:05:56,348 --> 00:05:58,067
+Şimdi bunun ters türevini bulalım.
+
+48
+00:05:58,367 --> 00:05:58,947
+Birincisi.
+
+49
+00:05:59,343 --> 00:06:24,403
+Nasıl yapacağız arkadaşlar? Şöyle hatta renkli yazalım. Büyük fx diyeceğiz. x üzeri 5 neyin türeviydi? Nasıl yapıyorduk? Hatırlıyor musunuz? x üzeri 5 ne yapıyorduk? Artı 1. Buradaki sayının aynısını bir de aşağıya yazıyorduk. x üzeri 6 bölü 6 artı c.
+
+50
+00:06:24,863 --> 00:06:43,483
+Yani şöyle değil mi? x üzeri 6 bölü 6 artı c'dir. Hakikaten bunun türevini alın, x üzeri 5 çıkar. Tabi c burada ne? Sabit. Keyfi bir sabit. Yani real bir sayı. Real sayıların türevi sıfırdır çünkü. Anlaşıldı mı arkadaşlar?
+
+51
+00:06:49,072 --> 00:07:16,552
+1 bölü kök x. Ters türevi nedir? Genel ters türevi. Şimdi böyle yazıyoruz değil mi? x üzeri bu nedir? Şurası x üzeri 1 bölü 2'dir. Yukarıya çıkarken x üzeri eksi 1 bölü 2 diye çıktı. Şimdi bunu yazdık. Şimdi diyorum ki bunun ters türevi şöyledir. Gx. Bakın yine yukarısında bir sayı var. Ne yapıyoruz arkadaşlar? Eksi 1 bölü 2. Bakın burada 5'ti.
+
+52
+00:07:17,072 --> 00:07:19,632
+Şurası 5'ti. Kaç ekledik? 1 ekledik.
+
+53
+00:07:20,031 --> 00:07:23,732
+Eksi 1 bölü 2'ye kaç ekleyeceğiz? 1 ekledik.
+
+54
+00:07:24,172 --> 00:07:26,732
+Aynı sayıyı aşağıya da yazıyoruz.
+
+55
+00:07:27,151 --> 00:07:29,252
+Eksi 1 bölü 2 artı 1 değil mi?
+
+56
+00:07:29,512 --> 00:07:31,132
+Bir kereliğine böyle göstereyim.
+
+57
+00:07:31,271 --> 00:07:32,552
+Aynı sayıyı yazdık.
+
+58
+00:07:32,552 --> 00:07:38,771
+Ne oldu? Yukarısı x üzeri 1 bölü 2, aşağısı 1 bölü 2.
+
+59
+00:07:39,192 --> 00:07:42,211
+Bu da ne oldu? 2 tane, pardon, şöyle.
+
+60
+00:07:43,603 --> 00:08:09,523
+neyi unuttum? Artı c. Buradan ne geldi? x üzeri 1 bölü 2, 1 bölü 2 artı c'dir. Bu da nedir? 2 tane kök x artı c'dir. Anlaşıldı mı arkadaşlar? Evet. Şimdi c şıkkı mesela hatırlayalım. Hx eşittir sinüs 2x. Şimdi sinüs 2x
+
+61
+00:08:09,824 --> 00:08:21,044
+Ne deriz? Normalde türevini alırken, türevini alıyoruz. Sinüsün türevi çarpı, mesela burada 2 geliyordu, içinin türevinden. 2 gelir.
+
+62
+00:08:21,524 --> 00:08:29,283
+Bunda ise arkadaşlar, ters türevde de çarpı gelenler bölü geliyor. Hatırlıyor musunuz? Bilmiyorum. Nese bilgilerinizden.
+
+63
+00:08:29,283 --> 00:08:37,824
+O zaman sinüs neyin türeviydi? Neyin türevi? Eksi, kosinüs 2x'indi. Normalde içinin türevi çarpı.
+
+64
+00:08:37,823 --> 00:08:54,884
+x kare artı 2x2, burada ne gelecek? Bölüm 2 artı c gelir. Evet. Daha yapmama gerek var mı? Birkaç tane daha örnek var. Burası anlaşıldı mı arkadaşlar? Evet.
+
+65
+00:08:56,467 --> 00:09:20,668
+Herhalde bu kısmı anladınız. Şimdi o zaman şöyle diyelim, ters türevlerin formülü. Mesela bu önemli, bunu hatırlamanız lazım. Fonksiyon. Demek ki birinci olarak şuraya da genel ters türevler diyelim. Genel ters türevler. Şöyle diyoruz, türevler. Şimdi birinci olarak mesela x üzeri n.
+
+66
+00:09:21,076 --> 00:09:33,076
+bakın arkadaşlar, bunun ters türevi nasıl olacak? x üzeri şu n'di ya, n'i 1 artırdık, şu sayının aynısını aşağıya böldük.
+
+67
+00:09:33,076 --> 00:09:44,936
+değil mi? 2, 2, ne diyelim? sinüs, sinüs, kx.
+
+68
+00:09:45,395 --> 00:09:47,635
+sinüsün türevi neyin türeviydi?
+
+69
+00:09:48,195 --> 00:09:49,515
+x kosinüsündü.
+
+70
+00:09:49,915 --> 00:09:52,115
+Normalde içinin türevi çarpı 2'dir.
+
+71
+00:09:52,275 --> 00:09:53,076
+Burada ne gelecek?
+
+72
+00:09:53,695 --> 00:09:55,995
+Bölü, pardon çarpı k olur.
+
+73
+00:09:56,475 --> 00:09:58,336
+Burada ise bölü k olur.
+
+74
+00:09:58,475 --> 00:10:01,295
+İçinin türevinden şuradaki k, kx'den.
+
+75
+00:10:01,295 --> 00:10:02,216
+3
+
+76
+00:10:03,731 --> 00:10:26,192
+kosinüs kx, bakın, şöyle diyeceğiz, kosinüs neyin türevi? Sinüsün, sinüs kx. Peki, içinin kx'den k geliyordu çarpı k. Burada da bölü k gelecek. Sonra mesela 4, sekant kare kx. Şimdi sekant kare neyin türeviydi?
+
+77
+00:10:26,899 --> 00:10:28,720
+sekant kare, tanjant.
+
+78
+00:10:29,180 --> 00:10:41,200
+Tanjant kx, içinin türevinden çarpı k geliyordu. Burada bölüm k gelecek. Bakın arkadaşlar. Sonra bir tane daha yazalım. Beşincisi kosekant.
+
+79
+00:10:41,779 --> 00:11:04,899
+kosekant kare kx. Şimdi arkadaşlar, kotanjantın, bakın, kotanjant kx'in türevi neydi? Eksi kosekant kare kx çarpı k idi. Demek ki, bu nedir o zaman? Eksi kotanjant kx çarpı k, burası bölü k. Bakın bunu bu tarafa geçelim.
+
+80
+00:11:05,844 --> 00:11:09,524
+Böyle yazalım. Neyse, şimdi aklımız karışmasın.
+
+81
+00:11:11,024 --> 00:11:16,183
+Şimdi bunun dışında altıncısı. Peki, secant...
+
+82
+00:11:16,183 --> 00:11:23,504
+Hocam, özür dilerim. Secant ile cosecant'ın genel tel sürevi ikisinde birinin artıysa diğerinin de artı olması lazım değil mi?
+
+83
+00:11:23,663 --> 00:11:26,504
+Az önce açıkladınız da tam orayı anlayamadım yine de.
+
+84
+00:11:26,504 --> 00:11:30,024
+Tanjant'ın, tanjant 2x'in türevi nedir?
+
+85
+00:11:30,580 --> 00:11:35,100
+1 artı tanjant kare 2x çarpı 2'dir.
+
+86
+00:11:35,259 --> 00:11:38,440
+Ya da tanjant 2x'in türevi nedir?
+
+87
+00:11:38,900 --> 00:11:42,340
+Sekant kare 2x çarpı 2'dir.
+
+88
+00:11:42,900 --> 00:11:44,660
+Biz bunu yazdık. Sekant kare.
+
+89
+00:11:45,200 --> 00:11:48,400
+Sekant kare. O zaman tanjant kx'in türevi nedir?
+
+90
+00:11:49,200 --> 00:11:52,540
+Sekant kare kx çarpı k'dır.
+
+91
+00:11:52,540 --> 00:11:56,200
+Ama kotanjant olsaydı bu, şöyle göstereyim.
+
+92
+00:11:56,528 --> 00:11:59,748
+cotanjant 2x'in türevi nedir?
+
+93
+00:12:00,427 --> 00:12:06,408
+Eksi, kosekant kare 2x çarpı 2'dir.
+
+94
+00:12:06,508 --> 00:12:09,328
+Burada eksi gelir. Eksesi var. Tamam mı?
+
+95
+00:12:10,408 --> 00:12:10,927
+Evet. Tamam.
+
+96
+00:12:11,488 --> 00:12:13,388
+Tamam. Bunu unutmayın. Önemli.
+
+97
+00:12:13,388 --> 00:12:18,108
+Şimdi son olarak ne dedik?
+
+98
+00:12:18,588 --> 00:12:19,788
+Şunu yazıyorduk.
+
+99
+00:12:20,148 --> 00:12:21,468
+Sekant kx
+
+100
+00:12:21,875 --> 00:12:41,007
+x kare artı 2x, f'
+
+101
+00:12:41,008 --> 00:12:57,308
+Burası da normalde içinin türevinden çarpı k gelir, kx'in türevi. Burada bölü k gelecek. Tamam mı? Türevde çarpı sabit gelen yerler ters türevde bölü sayı diye gelecek.
+
+102
+00:12:58,168 --> 00:13:07,728
+Yedinci olarak da şunu yazalım. Kosekant kx çarpı kotanjant kx. Bunları sadece hatırlayın diye. Bakın bunda da kosekantla
+
+103
+00:13:08,096 --> 00:13:29,395
+kotanjant, şöyle diyelim, kosekant mesela 2x'in türevi, eksi kosekant 2x çarpı kotanjant 2x çarpı 2 idi. Bakınca eksi var başında, o zaman burası eksi kosekant kx bölü yine içindeki sabit.
+
+104
+00:13:29,908 --> 00:13:54,567
+şeklindedir. Kısaca böyle özetleyebilirim. Sadece bunları hatırlatmak için yazdım. Şimdi bakın bir örnek yapalım bununla ilgili. Çok örnek yapacağız arkadaşlar. Yavaş yavaş hatırlayacaksınız. Unutmuş olabilirsiniz. Mesela fx eşitti 3 bölü kare kök x artı sinüs 2x. Fonksiyonunun genel ters türevini bulunuz.
+
+105
+00:13:55,316 --> 00:13:57,716
+genel ters türevi nedir?
+
+106
+00:13:59,176 --> 00:14:00,235
+Şöyle yazıyoruz.
+
+107
+00:14:00,916 --> 00:14:01,995
+Bunu örnekleyelim.
+
+108
+00:14:03,056 --> 00:14:04,875
+Bunu büyük f ile gösterelim.
+
+109
+00:14:05,456 --> 00:14:06,796
+Şimdi bu nedir arkadaşlar?
+
+110
+00:14:07,076 --> 00:14:10,016
+Şu 3x x üzeri eksi 1 bölü 2'dir.
+
+111
+00:14:10,016 --> 00:14:13,076
+O zaman 3x şurası ne?
+
+112
+00:14:13,620 --> 00:14:34,579
+x'i 1 bölü 2 artı 1 gelecek değil mi? x üzeri x'i 1 bölü 2 artı 1. Şu yukarıdaki sayının aynısı. Yani burası kaçtır? 1 bölü 2'dir. Şöyle gördünüz. Şöyle sileceğim. 1 bölü 2'dir. Şöyle yaparız. Aynı sayıyı aşağıya yazıyoruz. 1 bölü 2.
+
+113
+00:14:35,187 --> 00:14:51,767
+artı sinüs 2x'in türevi. Sinüs'ün türevi nedir? Sinüs neyin türevidir? Eksi, eksi, kosinüs 2x, normalde içindeki 2 yok mesela başında, bölü 2'dir. Değil mi?
+
+114
+00:14:52,244 --> 00:15:18,704
+kendisinin türevi çarpı içinin türeviydi. Burada 2x olduğu için bölü 2 geldi. Buradan fx ne gelir arkadaşlar? 6 tane şurası x üzeri 1 bölü 2 yapar. Kök x, eksi, kosinüs 2x bölü 2. Tabi neyi unuttuk? Artı c. Artı c. C ne arkadaşlar? Bildiğimiz bir sabittir. O zaman belirsiz integral nedir arkadaşlar?
+
+115
+00:15:19,312 --> 00:15:28,892
+bir fx fonksiyonunun bütün ters türevlerinin kümesine belirsiz integral diyoruz.
+
+116
+00:15:29,012 --> 00:15:30,392
+Yani şöyle gösteriyoruz.
+
+117
+00:15:31,172 --> 00:15:35,971
+Belirsiz integral demek arkadaşlar, bakın sınırlarda bir değer yok.
+
+118
+00:15:36,132 --> 00:15:42,392
+Bu halde sadece bu neyin ters türevidir aslında biz bunu buluyoruz belirsiz integralde.
+
+119
+00:15:42,392 --> 00:15:44,272
+Mesela örneğin,
+
+120
+00:15:44,692 --> 00:15:53,771
+Artık bu yaptığımız şeyin şekli, değil mi? Ters türevin bir simgeye bağlanıp yapılmış hali. Belirsiz integral dediğimiz.
+
+121
+00:15:54,312 --> 00:16:08,111
+Mesela örneğin, örneğin, 2x dx. Aslında biz burada neyi buluyoruz? 2x neyin ters türevidir, değil mi? Demek ki belirsiz integral bu demekmiş.
+
+122
+00:16:08,111 --> 00:16:11,491
+Bu nedir? 2x nasıl yazarız?
+
+123
+00:16:11,860 --> 00:16:15,240
+x kare artı c'dir.
+
+124
+00:16:16,180 --> 00:16:17,560
+Ters türevini buluyoruz.
+
+125
+00:16:18,240 --> 00:16:20,759
+Şimdi, burada ise mesela örneğin,
+
+126
+00:16:20,759 --> 00:16:25,300
+x kare eksi 2x artı 5 dx.
+
+127
+00:16:25,971 --> 00:16:39,971
+Acaba bu neyin ters türevidir aslında? Ona bakmışız değil mi? x kare, x kare bakın, x kareydi. Yukarıyı bir fazlalaştırdık. Yukarıdaki sayının aynısını aşağıya yazdık. Bir tanesini...
+
+128
+00:16:40,272 --> 00:17:06,771
+Burada 1 vardı, burası 2 oldu. Şöyle, artı 5 çarpı, bu aslında 5 çarpı x üzeri sıfırdı. Burası da 5x olur. Artı c'dir. Yani x küp bölü 3, eksi x kare, artı 5x, artı c'dir. Tamam mı arkadaşlar? Mesela örneği şöyle yapalım. Sinüs 2x dx. Bunu nasıl yapıyoruz?
+
+129
+00:17:07,407 --> 00:17:10,547
+sinüs 2x, sinüs 2x nedir?
+
+130
+00:17:11,347 --> 00:17:14,127
+eksi kosinüs 2x'in türevidir.
+
+131
+00:17:14,507 --> 00:17:18,767
+bölü, içindeki 2'den dolayı 2 artı c'dir.
+
+132
+00:17:19,548 --> 00:17:22,927
+Evet, anlaşıldı mı arkadaşlar? Bir iki tane daha çözeyim mi?
+
+133
+00:17:24,307 --> 00:17:28,288
+Mesela, şöyle diyelim, şundan bahsedelim.
+
+134
+00:17:30,288 --> 00:17:32,367
+Mesela, e üzeri
+
+135
+00:17:32,756 --> 00:17:59,236
+e üzeri 5x'in türevi nedir arkadaşlar? 5 çarpı e üzeri 5x'dir. O zaman mesela e üzeri 3x'in integrali ne olacak? Bakın türevinde aynısı çarpı 5 geliyorsa, integralinde ne gelecek? Aynısı 3x çarpı 3 değil de bölü 3 artı c gelir.
+
+136
+00:18:00,403 --> 00:18:24,264
+Hatırladınız mı arkadaşlar? O zaman şöyle diyelim, bir örnek yapalım. e üzeri 7x, kosinüs x artı sekant kare x, dx. Şimdi arkadaşlar buna baktığınız zaman, e üzeri 7x neyin integralidir? e üzeri 7x bölü 7.
+
+137
+00:18:24,768 --> 00:18:44,928
+değil mi? Aynısı bölü 7, artı cos x, cos x sin x'in değil mi? Gelir. Sekant kare x, neyin türevi sekant karedir? Tanjant x'in türevi sekant karedir. Artı c'dir. Evet. Son olarak bir örnek daha yapalım.
+
+138
+00:18:45,619 --> 00:18:50,439
+Hocam buradaki dx değişkenin x olduğunu belirtmek için kullanılıyor değil mi?
+
+139
+00:18:50,779 --> 00:18:53,859
+Çok güzel bir soru. Şöyle mesela, şöyle yazayım.
+
+140
+00:18:56,039 --> 00:19:01,759
+Mesela x artı 3t artı 5.
+
+141
+00:19:03,279 --> 00:19:03,819
+dx.
+
+142
+00:19:06,059 --> 00:19:08,919
+Neye göre integral alıyorsun? x'e göre.
+
+143
+00:19:09,599 --> 00:19:09,799
+Değil mi?
+
+144
+00:19:10,479 --> 00:19:12,199
+Senin değişkenin x.
+
+145
+00:19:12,884 --> 00:19:33,644
+O zaman x neyin türevidir? x kare bölü 2'dir. 1, bunu yazdım bakın. 5 neyin türevidir? 5x'i artı 3t. 3t aynı 5 gibi bir sabittir. x'e bağlı değil çünkü.
+
+146
+00:19:34,259 --> 00:19:41,640
+O zaman bu ne olur? 3t, bakın 5'e ne geldi? x geldi, 3t, x olur.
+
+147
+00:19:43,259 --> 00:19:51,700
+Mesela şöyle olsun, x kare artı h kare artı 3h artı 2.
+
+148
+00:19:52,920 --> 00:19:53,720
+dx
+
+149
+00:19:53,720 --> 00:19:58,620
+Şimdi o zaman x'e göre integral alıyorum.
+
+150
+00:20:00,084 --> 00:20:10,144
+x karenin integrali nedir? x küp bölü 3'tür. Artı bu sabit, bu sabit, bu sabit. Neye göre? x'e göre.
+
+151
+00:20:10,844 --> 00:20:25,423
+O zaman bunların hepsi bir sayı. Şöyle diyebilirim. h kare artı 3h artı 2x. Ya da şöyle derim. 1. Ya da h karenin mesela 2 ne olur? 2x olur.
+
+152
+00:20:25,791 --> 00:20:33,471
+3h ne olur? 3hx olur. Bu ne olur? h kare x olur. Artı c ya da ayrı ayrı yazar.
+
+153
+00:20:34,531 --> 00:20:36,931
+Hocam buradaki de difansiyelden mi geliyor?
+
+154
+00:20:37,131 --> 00:20:47,811
+Evet. Evet. x'in değişimi demek. Şimdilik bu kadar. Bunu anladınız mı? Arkadaşınızın sorusu çok güzel bir soruydu.
+
+155
+00:20:47,811 --> 00:20:52,891
+Ama şöyle olsaydı, mesela şimdi bunu siz söyleyin.
+
+156
+00:20:53,619 --> 00:21:14,859
+örneğin, t kare artı 2t artı 3 artı x d b t. Değişkenimiz ne artık? T oldu. T'ye göre integral alıyoruz. T karenin integrali nedir? T kare 3 artı 2.
+
+157
+00:21:15,412 --> 00:21:16,932
+t kare bölü 2
+
+158
+00:21:16,932 --> 00:21:19,412
+artı 3'ün integrali
+
+159
+00:21:19,412 --> 00:21:19,832
+3
+
+160
+00:21:19,832 --> 00:21:20,372
+t
+
+161
+00:21:20,372 --> 00:21:22,231
+artı
+
+162
+00:21:22,231 --> 00:21:22,951
+x t
+
+163
+00:21:22,951 --> 00:21:24,912
+artı bir de c
+
+164
+00:21:24,912 --> 00:21:31,112
+tamam mı arkadaşlar? Çok güzel bir soruydu. Kavradık. Yani bizim değişkenimiz
+
+165
+00:21:31,112 --> 00:21:32,332
+burada yazan.
+
+166
+00:21:33,252 --> 00:21:33,832
+Buna göre
+
+167
+00:21:34,420 --> 00:21:38,019
+İçinde mesela çok komplike şeyler olabilir.
+
+168
+00:21:38,519 --> 00:21:46,539
+Mesela şuraya x kub artı kosinüs x bölü, tanjant x mesela şöyle olsun.
+
+169
+00:21:47,600 --> 00:21:54,100
+dt. Ben buraya dt yazdığıma şunların hepsi ne olur? Sabit olur.
+
+170
+00:21:56,243 --> 00:22:19,243
+Başına sadece bu integrali almazsın artık. Burada integral yok, bir sayı var. Yani bunun cevabı, cevabı t küp bölü 3 artı t kare artı şu ifade şöyle, tanjant x çarpı t artı c'dir. Ama burası, burası eğer dx olsaydı, şurası.
+
+171
+00:22:19,763 --> 00:22:35,403
+dt değil de dx olsaydı o zaman işler değişirdi. Anladınız mı arkadaşlar? Bence anladınız. Şimdi bir son örnek daha yapacağım. Şimdi arkadaşlar, lnx'in türevi neydi?
+
+172
+00:22:37,683 --> 00:22:38,683
+1 bölü x.
+
+173
+00:22:38,683 --> 00:22:44,123
+1 bölü x. Şöyle de deneyim. ln, mutlak dx'in türevi nedir?
+
+174
+00:22:45,243 --> 00:22:46,163
+1 bölü x.
+
+175
+00:22:46,836 --> 00:22:53,195
+ikisi de aynı. O yüzden şöyle 1 bölü x dx dediği zaman aslında
+
+176
+00:22:53,940 --> 00:23:03,880
+1 bölix neyin integralidir dediğiniz zaman aslında bunun cevabı öğrenciler böyle yazıyor ama ben böyle gösterilmesi taraftarıyım.
+
+177
+00:23:04,000 --> 00:23:09,539
+Aklınızda bulunsun. Sizler belki unutacaksınız ama gösterilme şekli bu olmalıdır.
+
+178
+00:23:09,539 --> 00:23:14,080
+Tamam mı arkadaşlar? O da neden? Elinin içi negatif olamayacağından dolayı.
+
+179
+00:23:14,440 --> 00:23:18,900
+Eğer pozitifse zaten elinin içi bu x pozitifse sorun yok.
+
+180
+00:23:19,580 --> 00:23:21,100
+Şimdi bu böyledir.
+
+181
+00:23:21,940 --> 00:23:47,539
+son bir soru yapalım. 1 bölü x artı 3 bölü x küp artı 1 bölü 1 artı x kare artı e üzeri 2x dx. Şimdi bunun integralini bulalım. 1 bölü x'in integralı nedir? L'e mutlak değer x'dir. Artı, şimdi arkadaşlar şu nedir? 3 tane x üzeri eksi 3.
+
+182
+00:23:48,531 --> 00:24:11,091
+O zaman şöyle diyorum. 3 tane x üzeri eksi 3 artı 1. Şurası ne yaptı topladık? Eksi 2. Aynı sayıyı aşağıya yazdık. Artı şu e üzeri 2x nedir? e üzeri 2x bölü 2'dir. Artı şu nedir? 1 bölü 1 artı x kare. Çok bildiğimiz bir ifade. Nedir arkadaşlar?
+
+183
+00:24:11,991 --> 00:24:15,411
+Mesela arttanjant x'in integralı neydi?
+
+184
+00:24:16,084 --> 00:24:18,463
+1 bölü 1 artı x kareydi.
+
+185
+00:24:19,223 --> 00:24:22,903
+Ark sinüs x'in integrali neydi? Bu ikisini bilmelisiniz.
+
+186
+00:24:23,104 --> 00:24:26,524
+1 bölü kare kök içinde 1 eksi x kareydi.
+
+187
+00:24:26,943 --> 00:24:28,683
+E o zaman hangisi? Şu.
+
+188
+00:24:29,723 --> 00:24:36,104
+1 bölü 1 artı x kare, arktanjant x'in integrali artı c'dir.
+
+189
+00:24:37,076 --> 00:24:54,076
+Evet, buraya kadar tamam mı? Şurası ne olur? Şurayı hesaplayıp yazalım. x üzeri eksi 2 gelir. Evet, buraya kadar tamam mı arkadaşlar? Hatırladık mı? Birazcık hatırladık diye düşünüyorum. Şimdi o zaman...
+
+190
+00:24:55,188 --> 00:25:06,008
+Şöyle, bunları size teker teker söyleyip geçmeyeceğim. Şurada önemli olanlar, ya hepsi önemli de, şimdi yavaş yavaş hatırlayacaksınız.
+
+191
+00:25:06,448 --> 00:25:13,428
+Belirsiz integralı dedik, dedik ki bu integral'dir, ters türev integral'dir, belirsiz integral'dir.
+
+192
+00:25:13,848 --> 00:25:19,388
+Mesela burada örnekler de gördük. k mesela 2, 2'nin integral ne? 2x.
+
+193
+00:25:23,188 --> 00:25:38,888
+ne yaptık? 5'i 1 artırdık, aynı sayı aşağıya yazdık. Bu lnx yazdık. e üzeri x, integrali e üzeri x'tir. Eğer e üzeri 7x ise mesela e üzeri 7x bölü 7 şeklinde yazılıyor. Bunu söyledik.
+
+194
+00:25:38,888 --> 00:25:48,808
+a üzeri x, bunu daha sonra mesela 2 üzeri x'in türevi nedir? Nasıldı türevi?
+
+195
+00:25:49,299 --> 00:26:07,239
+2 üzeri x çarpı neydi? L'en 2 idi. Şimdi burada L'en 2 çarpı olarak geliyor. İntegralde bölüm olarak gelecek. Bakın aynı mesela 2 olsun A yerine 2 değil. Ne olacak?
+
+196
+00:26:15,539 --> 00:26:22,139
+çarpım olarak ters türev de bölüm olarak geliyor. Sinüsü, kosinüsü, sekant, kosekant.
+
+197
+00:26:22,159 --> 00:26:23,639
+Hocam ben bir şey daha sorabilir miyim?
+
+198
+00:26:23,779 --> 00:26:24,240
+Tabii ki.
+
+199
+00:26:24,599 --> 00:26:28,079
+İki taraflı bir soru olacak. Bu hem türev de hem de integralde geçerli.
+
+200
+00:26:28,799 --> 00:26:31,939
+Bu trigonometrik ifadelerin türevi alındığında ne oluyor?
+
+201
+00:26:32,059 --> 00:26:39,539
+Şimdi mesela ben düşündüğüm zaman hareket denklemlerinin türevi alındığında hıza ulaştığını grafikten baktığım zaman anlayabiliyorum.
+
+202
+00:26:39,539 --> 00:26:43,539
+Fakat bu trigonometrik denklemlerim veya trigonometrik ifadelerin türevi alındığında biz ne?
+
+203
+00:26:43,539 --> 00:26:45,279
+neyi buluyoruz? Sonra da bir KB var.
+
+204
+00:26:45,359 --> 00:26:47,199
+Bir dakika, ismini göremiyorum şu anda.
+
+205
+00:26:47,399 --> 00:26:48,519
+[öğrenci] hocam.
+
+206
+00:26:48,919 --> 00:26:53,419
+[öğrenci]. Yani mesela o kullandığın yere göre değişir.
+
+207
+00:26:53,740 --> 00:26:59,720
+Mesela bir eğri üzerinde türevini aldın. O hız vektörü olur. Aynı zamanda TET olur.
+
+208
+00:27:00,339 --> 00:27:09,699
+Onda sıkıntı yoktu. Mesela bu sekant'ın türevini aldık. Biz onun tam olarak neyini bulmuş oluyoruz? Ben onu kavrayamıyorum bir türlü.
+
+209
+00:27:09,779 --> 00:27:12,639
+Sadece matematiksel olarak türevini.
+
+210
+00:27:14,619 --> 00:27:15,339
+Yani onu...
+
+211
+00:27:15,339 --> 00:27:17,619
+Bir zemini tutmaya çalıştım da öyle bir...
+
+212
+00:27:17,619 --> 00:27:20,799
+Anladım. Yani şu anda cevap veremiyorum.
+
+213
+00:27:23,251 --> 00:27:35,091
+Nasıl söyleyeyim? Kullandığın yere göre o türevi t-etini gösteriyor. Mesela o noktadaki t-etini gösteriyor. Türev demek, t-et demek. Yani yorumlayacak olursak.
+
+214
+00:27:35,423 --> 00:27:37,883
+geometrik olarak. Öyle söyleyebilirim.
+
+215
+00:27:38,063 --> 00:27:42,203
+Anladım sorunu da cevap veremiyorum.
+
+216
+00:27:42,663 --> 00:27:44,243
+Anladım. Peki hocam. Teşekkür ederim.
+
+217
+00:27:44,503 --> 00:27:45,783
+Tamam. Rica ederim.
+
+218
+00:27:46,323 --> 00:27:49,843
+Şimdi bakın bunları söyledik. Hızlı gitmiyoruz değil mi arkadaşlar?
+
+219
+00:27:50,363 --> 00:27:54,623
+Sekantın, bakın türevi, sekant x çarpı tanjant x.
+
+220
+00:27:55,063 --> 00:27:58,723
+Kosekantın eksilisiydi. Burada eksi olmadığı için eksi burada.
+
+221
+00:27:59,543 --> 00:28:03,023
+Şimdi sinüs hiperbolinin türevi kosinüs hiperbolikti.
+
+222
+00:28:03,423 --> 00:28:29,023
+sinüsüperbolik türevi de sinüsüperbolik. O zaman integrallerinde artı eksis sıkıntısı yok. Direkt gelecek böyle. Sonra bakın biraz önce söyledim. Arktanjant x'in türevi 1 bölü 1 artı eksik kare. Bu çok önemli. Yıldız koyuyorum. Şimdi bunu bilmeniz lazım. Bu da mesela bir değil de burada bir sayının karesi varsa bu da çok önemli. Şimdi bakın burada önemli bir şey söyleyeceğim.
+
+223
+00:28:29,587 --> 00:28:33,907
+Mesela sinüsde de arksinüsün türevi bu.
+
+224
+00:28:34,548 --> 00:29:02,008
+Biraz önce yazmıştım da. Bakın, 1 değil de şurası, şöyle başka renkte göstereyim. Şurası 1 değil de a gibi bir sayısa, bakın burası da arksinüs x bölü a geliyor. Bakın burası 1 değil de tanjantta da, arktanjantta da a gibi bir sayısa, arktanjant x bölü a gibi geliyor. Ama başında arktanjantta 1 bölü a var, burada yok.
+
+225
+00:29:02,548 --> 00:29:25,567
+dikkat ediyorsunuz. Aksinüs de yok. Tamam mı? Evet. Şimdi bunları söyledik ve şimdi buraya kadar anladınız mı? Anladınız mı arkadaşlar? Evet. Bir soru yok değil mi? Şimdi arkadaşlar ben Riemann toplamlarına başlayacağım. Şimdi nasıl anlatacağım? Tabii ki PDF üzerinden anlatmayacağım.
+
+226
+00:29:26,003 --> 00:29:42,603
+sizlere bunu en kolay şekilde anlatacağım. Ve bunu burada anlarsanız bu sayfaları çok hızlı okuyup geçersiniz. O kadarını söyleyeyim. Şimdi sizler de beni dinleyin. Bir 10-15 dakika anlatacağım veya 20 dakika sonra bir ara vereceğiz.
+
+227
+00:29:42,603 --> 00:29:50,083
+Şimdi arkadaşlar, ekran paylaşımı yapıyorum. Sadece yazdıklarıma odaklanın. Anlayın.
+
+228
+00:29:51,124 --> 00:29:54,923
+anladıktan sonra pdf'i rahatlıkla okuyacağınıza inanıyorum.
+
+229
+00:29:55,824 --> 00:29:59,804
+Evet, şimdi arkadaşlar ekran paylaşımı geldi mi?
+
+230
+00:30:01,964 --> 00:30:04,663
+Bir dakika, yeniden bağlanacağım.
+
+231
+00:30:17,011 --> 00:30:18,311
+geldi mi arkadaşlar?
+
+232
+00:30:19,551 --> 00:30:20,091
+geldi mi?
+
+233
+00:30:20,711 --> 00:30:21,511
+geldi hocam.
+
+234
+00:30:21,591 --> 00:30:21,811
+tamam.
+
+235
+00:30:22,392 --> 00:30:24,172
+şimdi arkadaşlar şöyle yapalım.
+
+236
+00:30:24,731 --> 00:30:25,551
+size mesela,
+
+237
+00:30:26,351 --> 00:30:27,831
+soru verildi.
+
+238
+00:30:28,111 --> 00:30:28,692
+dedi ki,
+
+239
+00:30:29,371 --> 00:30:29,932
+örneğin,
+
+240
+00:30:30,672 --> 00:30:31,251
+dedi ki,
+
+241
+00:30:31,791 --> 00:30:34,971
+y eşittir 1-x kare eğrisinin,
+
+242
+00:30:34,971 --> 00:30:36,551
+şimdi ben eğrisinin,
+
+243
+00:30:37,331 --> 00:30:37,831
+dedi ki,
+
+244
+00:30:37,971 --> 00:30:39,131
+x eşittir 0,
+
+245
+00:30:40,180 --> 00:30:46,440
+ve x eşittir 1 düşeğe doğruları arasında kalan alanını bulunuz dedi.
+
+246
+00:30:46,859 --> 00:30:52,279
+düşeğe doğruları arasında kalan alanı bulunuz dedi.
+
+247
+00:30:52,579 --> 00:30:54,740
+şimdi alanı bulunuz dedi.
+
+248
+00:30:55,119 --> 00:30:56,279
+şimdi ben öğrenciyim.
+
+249
+00:30:56,480 --> 00:30:59,400
+y eşittir 1-x kare şöyleymiş.
+
+250
+00:30:59,740 --> 00:31:02,480
+şimdi siz bunu da çizdiğimizi kabul edin.
+
+251
+00:31:02,819 --> 00:31:04,420
+çizmeye gerek kalmayacak.
+
+252
+00:31:04,736 --> 00:31:28,135
+şimdi böyle bir şey. y eşitti 1-x kare. Şimdi benden ne istiyor? x eşittir 0. x eşittir 0. Burası x eşittir bakın. x'i 0 iken y'si 1. y'si 0 iken x'i artı eksi 1. Ama biz sadece bu kısmıyla ilgileniyoruz. Sadece şöyle dediği için x eşittir 0 ve x eşittir 1.
+
+253
+00:31:28,915 --> 00:31:44,115
+Tamam mı? Doğruları arasında kalan ve x ekseni aslında. Eğrisi ve x ekseni. Yani şu bölgenin alanını istiyor. Tamam mı? Şimdi şurayı söyleteyim bir dakika. Şimdi bölgeyi gördünüz. Şurası.
+
+254
+00:31:44,511 --> 00:32:01,511
+R bölgesi. Bu bölgenin alanı istiyor. Şimdi bu çember olsaydı, bu dörtte bir çember olurdu ve alanını hesaplardınız. Ya da mesela üçgen şeklinde olsaydı alanını hesaplardınız veya dikdörtgen vs. Ama bu sizin...
+
+255
+00:32:02,228 --> 00:32:12,168
+bildiğiniz basit formüllerle, hani lisede bildiğiniz formüllerle hesaplayamayacağınız bir alan.
+
+256
+00:32:12,708 --> 00:32:16,608
+Demek ki çok farklı eğriler gelecek karşıma.
+
+257
+00:32:16,708 --> 00:32:19,088
+Mesela şöyle, bunun alanını bul dedi.
+
+258
+00:32:19,448 --> 00:32:22,468
+Bu yamuk değil, üçgen değil, çember değil.
+
+259
+00:32:22,468 --> 00:32:24,460
+Demek ki...
+
+260
+00:32:24,756 --> 00:32:49,456
+düzlem üzerinde bir sürü eğri var ve bunların alanlarını hesaplamam lazım. Birinci sandık iştirmek bu alanı bildiği yöntemlerle hesaplayamıyorum. Şimdi şöyle yapıyorum. Şimdi alan soruldu. Şöyle bakın şimdi burayı siliyorum. Yer açılsın diye. Şimdi neyin alanını? Şunun alanını hesaplayacağım.
+
+261
+00:32:50,324 --> 00:33:08,423
+Şimdi alanını hesaplayacağım. y eşittir 1-x karenin şekli çizdim. Şimdi ben diyorum ki şöyle yapılmış. Şurası 0, 1. Şu bölgenin alanını arıyorum. R bölgesi demişim. Şimdi diyorum ki ben şöyle yapsam.
+
+262
+00:33:08,788 --> 00:33:30,048
+bunu 2'ye bölsem, 0 ile 1 nasıl bölersiniz? Son nokta, eksi ilk nokta, bölü 2, 2'ye bölmek istedim. Şurası kaçtı? 1 bölü 2 kadar gitti. 0'dan 1 bölü 2 kadar gittim. 1 bölü 2. 1 bölü 2'den 1 bölü 2 kadar daha gidince ne olur? 1 olur. Buraya kadar.
+
+263
+00:33:30,048 --> 00:33:36,508
+Şimdi şöyle diyorum, şöyle bu eğriyi kapsayacak şekilde dikdörtgen alayım.
+
+264
+00:33:36,756 --> 00:33:40,556
+Şimdi buraya kadar bir dikdörtgen, şurası da bir dikdörtgen.
+
+265
+00:33:41,115 --> 00:33:44,415
+Dikdörtgenler eğrinin üstünde mi kalıyor? Evet.
+
+266
+00:33:44,976 --> 00:33:50,456
+Şimdi birinci dikdörtgenim, bakın şu, şurası, şurası.
+
+267
+00:33:50,716 --> 00:33:53,496
+İkinci dikdörtgenim de bu. Değil mi arkadaşlar?
+
+268
+00:33:53,496 --> 00:33:54,996
+Şimdi arkadaşlar,
+
+269
+00:33:55,667 --> 00:34:19,167
+şöyle, şuna sol uç nokta diyeceğiz. Şurası da kaçtı? 1'di. Değil mi? x'ye koordinat sisteminde. Şimdi sol uç nokta, şu dikdörtgenin, dikdörtgenin üst tepe noktasında sol noktadaki ucunu işaretledi. İkinci dikdörtgen şu, bunun uç noktası da burası. Buraya kadar anladınız mı?
+
+270
+00:34:19,764 --> 00:34:22,124
+Anladınız mı? Evet ya da hayır diye.
+
+271
+00:34:22,224 --> 00:34:22,804
+Evet hocam.
+
+272
+00:34:22,964 --> 00:34:42,084
+Tamam. Şimdi o zaman diyorum ki bu iki yeşille gösterdiğim dikdörtgenlerin alanı. Şimdi bir dakika şöyle şurayı göstereyim. Şu benim eğrimdi. Burası V bölgesiydi. Bunun alanını A ile göstereyim.
+
+273
+00:34:42,384 --> 00:34:56,384
+Şimdi aslında bu dikdörtgenlerin alanı benim eğrimin alanından büyük mü, küçük mü? Daha büyük değil mi? Çünkü bu eğri, bakın şöyle göstereyim, şöyle.
+
+274
+00:34:56,916 --> 00:35:17,496
+şu içeride kalıyor. Daha küçük değil mi? Dikdörtgenler, yeşil olanlar, yani çemberin, çember demeyelim de çember değil çünkü, eğlenin y eşittir 1-x karenin üstünde kalıyor. Bu tamam mı arkadaşlar? Şimdi o zaman diyorum ki benim alanım a ise.
+
+275
+00:35:18,068 --> 00:35:40,887
+a ise, şimdi ben alanımı bulamıyorum. Ama alanımda daha büyük ama ona yakın iki dikdörtgenin toplamını buluyorum alanını. Birinci dikdörtgenin alanı nedir? Tabanı kaç? 1 bölü 2. Değil mi? Tabanı 1 bölü 2. Peki bunun yüksekliği kaç? Şurası. 1 çarpı 1.
+
+276
+00:35:41,460 --> 00:36:07,160
+Şimdi artı şu nokta, şu nokta. Bunun bileşenleri nedir? x'i 1 bölü 2 iken y'si kaçtır? Eğri üzerinde değil mi bu nokta? Eğri üzerinde ise bakın x'i 1 bölü 2 iken, x'inin yerine 1 bölü 2 yazdık. 1-1 bölü 4'ten 3 bölü 4. y'si 3 bölü 4'tür. Yani şöyle yapıyoruz bakın.
+
+277
+00:36:09,076 --> 00:36:33,195
+Şurası şöyle farklı bir renkte gösterelim. Hatta daha farklı bir renk olsun. Şöyle bu da çok belirgin olmuyor. Yeşil yapalım. Tabanı 1 bölü 2x yüksekliği şurası. Burası nedir? Şu noktanın y değeridir. Kaçtı? 3 bölü 4.
+
+278
+00:36:33,876 --> 00:37:00,076
+hesapladığım zaman bunu hesaplamışım. Kaç çıkmış? Şurası 1 bölü 2 artı 3 bölü 8, 7 bölü 8. Ben şimdi alanımı bulamadım ama alanım yaklaşık olarak 7 bölü 8'e eşit çıkmış. Buraya kadar anlaşıldı mı? Evet. Şimdi diyorum ki birisi de demiş ki ya ben niye iki parçaya bölüyorum ki? Şunu sileyim.
+
+279
+00:37:00,916 --> 00:37:40,556
+x kare artı 2x, f'
+
+280
+00:37:15,923 --> 00:37:40,163
+Evet, ekran geldi mi arkadaşlar? Şimdi bir eti de demiş ki, bakın, şimdi ben niye böyle yapayım ki diyorum. Bir dakika, kalemin özelliği. Şimdi diyor ki, ya ben niye iki parçaya böleceğim ki diyorum. Daha fazla parçaya böleyim. Şimdi sıfırla birdi değil mi?
+
+281
+00:37:40,628 --> 00:37:47,628
+Şimdi diyorum ki sıfırla bir arasını, şurayı da siyah yapalım, sıfırla bir arasını dört parçaya böleyim.
+
+282
+00:37:48,488 --> 00:37:51,668
+Dört parçaya bölelim. Her parçanın uzunluğu ne olacak?
+
+283
+00:37:52,188 --> 00:37:58,708
+Son nokta, eksi ilk nokta, bölü dört. Bir bölü dört kadar ilerleyeceğim.
+
+284
+00:37:58,808 --> 00:38:03,208
+Bakın şimdi ilerleyeceğim arkadaşlar. Sıfırdan bir bölü dört kadar geldim.
+
+285
+00:38:04,008 --> 00:38:08,108
+Bir bölü dört daha gittim. Bir bölü ikiye ekledim.
+
+286
+00:38:08,500 --> 00:38:34,980
+kaç oldu arkadaşlar? Pardon 1 bölü 4'tü şurası. 1 bölü 4, 2 bölü 4 oldu. Sonra 3 bölü 4 oldu. Sonra 1 bölü 4 daha ekledim. Şurası 4 bölü 4'ten 1 geldi. 4 eşit parçayı böldüm. Yani içine şöyle 4 tane şöyle birinci dikdörtgen şurası. Sonra arkadaşlar ikinci dikdörtgen.
+
+287
+00:38:35,891 --> 00:38:43,511
+3. dikdörtgen, 4. dikdörtgen, 4 tane dikdörtgen yerleştirdi.
+
+288
+00:38:43,511 --> 00:38:51,351
+Şimdi diyorum ki, yine bunlar bizim bölgemiz, şurası, şu bizim alanımızdı.
+
+289
+00:38:51,791 --> 00:39:01,031
+R bölgesi. Değil mi? Ama dikdörtgenlerin ise şöyle, değil mi? Göstereyim bakın. Şöyle, daha geniş.
+
+290
+00:39:01,748 --> 00:39:03,608
+Değil mi arkadaşlar? Şöyle.
+
+291
+00:39:04,288 --> 00:39:07,928
+Yani bizim aradığımız alan, A ile göstereyim.
+
+292
+00:39:08,288 --> 00:39:13,827
+y eşittir 1-x karenin alanı, alanı A.
+
+293
+00:39:13,827 --> 00:39:16,827
+Ama biz daha büyük bir alan buluyoruz.
+
+294
+00:39:17,548 --> 00:39:19,948
+Çünkü dikdörtgenler eğriyi kapsıyor.
+
+295
+00:39:20,508 --> 00:39:21,728
+Eğrinin de üstünde.
+
+296
+00:39:22,159 --> 00:39:40,659
+Şimdi yine bunlar yukarıda kaldı. Bakın sol uç nokta. Dikdörtgenler yukarıda kaldı. Sol uç nokta uygulayacağım. Sol uç nokta demek ne demek? Bakın arkadaşlar burası 1. Şimdi burası x'i kaç arkadaşlar? 1 bölü dörtgen.
+
+297
+00:39:41,172 --> 00:40:08,112
+y'si kaçtır? Bakın y eşittir. 1-x kareden, buraya 1-4 x kareden 15 bölü 16. Böyle hesaplayacaksınız. Sonra burası arkadaşlar şu nokta. x'i 1 bölü 2 değil mi? Şu 1 bölü 2 demek 2 bölü 4'ten. 1 bölü 2 iken y'si de 3 bölü 4'müş. Sonra burası da şöyle diyelim, şurayı silmek zorundayım.
+
+298
+00:40:09,780 --> 00:40:29,300
+şöyle x'i 3 bölü 4 iken y'si de kaçmış? 7 bölü 16 imiş. Şimdi arkadaşlar şöyle yapıyoruz. Bakın şimdi. Şimdi diyorum ki ya ben bu benim alanım alanım yaklaşık olarak bakın arkadaşlar.
+
+299
+00:40:30,003 --> 00:40:56,283
+Şöyle gösterelim. Şimdi farklı bir renge geçelim. Yine şöyle yine farklı bir renk. Nasıl belirgin bir renk yapsak. Şu turuncu ile deneyelim. Şimdi aşağının tabanı hep bakın burası 1 bölü 4. Burası tabanlar hep 1 bölü 4. Gördünüz mü? 1 bölü 4. 1 bölü 4. Yükseklikler arkadaşlar bakın bu yükseklik y değeri 1.
+
+300
+00:40:56,751 --> 00:41:10,731
+Buradaki yükseklik y değeri kaç yani? 15 bölü 6. Buradaki yükseklik y değeri 3 bölü 4. Buradaki yükseklik bu dikdörtgenin yüksekliği de y değeri 7 bölü 16'dır.
+
+301
+00:41:10,731 --> 00:41:21,951
+O zaman şöyle diyorum. Birinci dikdörtgenin alanı 1 bölü 4 çarpı taban alanı çarpı yükseklik 1. y değeri bakın şunu yazdık.
+
+302
+00:41:22,260 --> 00:41:26,120
+Şöyle farklı bir morla göstereyim. Yükseklik 1.
+
+303
+00:41:27,040 --> 00:41:32,000
+Artı ikincisi 1 bölü 4. Tabanı 1 bölü 4.
+
+304
+00:41:32,000 --> 00:41:37,980
+Bakın bunun yüksekliği şu. Kaçtır? Çarpı 15 bölü 6.
+
+305
+00:41:38,496 --> 00:41:40,716
+Sonra 3. 16 değil mi hocam?
+
+306
+00:41:40,936 --> 00:41:48,296
+16 mı? Yanlış yazmışım. Evet, şurası 15 bölü 16. Teşekkürler. Şurası 15 bölü 16.
+
+307
+00:41:48,836 --> 00:42:06,496
+Üçüncüsü 1 bölü 4 çarpı yükseklik kaçtır? Yine y değeri 3 bölü 4 artı 4. dikdörtgen tabanı 1 bölü 4 çarpı yükseklik y değeri.
+
+308
+00:42:06,496 --> 00:42:23,676
+7 bölü 16. Yani demek ki sol uç noktada o noktadaki y değeri sizin yüksekliğiniz oluyor. Görebildiniz mi arkadaşlar? O zaman bunu hesapladığınız zaman arkadaşlar kaç çıkıyor?
+
+309
+00:42:24,244 --> 00:42:27,603
+0,7825
+
+310
+00:42:27,603 --> 00:42:33,463
+Şimdi bakın, 2 tane dikdörtgene böldüğüm zaman
+
+311
+00:42:33,463 --> 00:42:35,684
+alan kaç çıkmıştı yaklaşık olarak?
+
+312
+00:42:35,684 --> 00:42:37,764
+0,875
+
+313
+00:42:37,764 --> 00:42:42,143
+4 dikdörtgene böldü, böyle çıktı.
+
+314
+00:42:42,835 --> 00:43:02,556
+5 dikdörtgeni böldüm, daha yaklaşık bir cevap çıkacak. 6 taneye böleceğim, daha yaklaşık. 8 taneye daha yaklaşık. 10 taneye, 100 taneye, 1 milyon taneye yerleştirebildiğim kadar çok dikdörtgen yerleştirebilirim. Bu kısmı anladınız mı? Anladınız değil mi?
+
+315
+00:43:03,775 --> 00:43:04,536
+Anladık hocam.
+
+316
+00:43:04,536 --> 00:43:07,635
+Şimdi, birisi de demiş ki,
+
+317
+00:43:09,396 --> 00:43:28,275
+şöyle yapalım. Şurayı sileceğim. Sadece şu kısmı yazacağım. Bakın şu kısmı. Alanını kaç bulduk? Alan yaklaşık olarak yer olmadığı için o kısmı sildim. 0.875 bizim alanımız, aradığımız alan şu.
+
+318
+00:43:29,748 --> 00:43:37,208
+0 yani bu dikdörtgenlerin alanından daha küçük değil mi aslında? Yaklaşık olarak 0.875.
+
+319
+00:43:37,768 --> 00:43:45,168
+Şimdi birisi de demiş ki, ya demiş ilk öncelikle siyah da çizeceğim veya şununla çizeyim bakalım nasıl bir ekmiş.
+
+320
+00:43:46,508 --> 00:43:52,208
+Ya demiş x'ye yine 4'e bölelim mesela. 2'de de bunu gösterebiliriz ama.
+
+321
+00:43:52,724 --> 00:44:04,524
+Dikdörtgenler eğrinin içinde kalsın. Şimdi benim bölgem bu. Re bölgesi. Buranın alanı da ne? A. Değil mi? Şimdi bunda anlaştık.
+
+322
+00:44:06,104 --> 00:44:11,984
+Birisi de demiş ki, ya demiş böyle yapmayalım da şöyle yapalım.
+
+323
+00:44:14,420 --> 00:44:34,159
+şöyle dikdörtgenler içinde kalsın. Bakın 4 bölgeye 4 tane dikdörtgene böleyim. 0, 1. 4 tane dikdörtgene bölelim. 0, 1. O zaman son nokta 1. İlk nokta 0 bölü 4'ten 1 bölü 4 dedik. E şimdi bölelim. Şu R'yi de sileyim.
+
+324
+00:44:34,496 --> 00:44:58,355
+şimdi ne olur arkadaşlar? Bölüyoruz. Bakın 1 bölü 4 kadar gittim. 0'dan 1 bölü 4'e. 1 bölü 4'e 1 bölü 4 daha ekledim. 2 bölü 4. 1 bölü 4 daha ekledim. 3 bölü 4. 1 bölü 4 daha ekledim. 4 bölü 4'ten 1 geldi. Şimdi diyor ki şöyle bakın. Birinci dikdörtgen, ikinci dikdörtgen.
+
+325
+00:44:58,784 --> 00:45:04,584
+3. dikdörtgen, şimdi eğriye dokunduğu son dikdörtgen de bu şekilde.
+
+326
+00:45:06,804 --> 00:45:07,764
+Tamam mı arkadaşlar?
+
+327
+00:45:08,924 --> 00:45:10,444
+4 tane dikdörtgenim.
+
+328
+00:45:10,824 --> 00:45:17,944
+Şimdi burada eğriye dokunduğu noktalar, bakın arkadaşlar şöyle güzel bir renkte işaretleyelim.
+
+329
+00:45:18,784 --> 00:45:21,844
+Nerede? Her dikdörtgenin hangi köşesi?
+
+330
+00:45:22,584 --> 00:45:23,864
+Sağ uç noktası.
+
+331
+00:45:24,820 --> 00:45:27,079
+buna sağ uç nokta deniliyor.
+
+332
+00:45:28,659 --> 00:45:29,679
+Tamam mı arkadaşlar?
+
+333
+00:45:30,360 --> 00:45:33,159
+Sağ uç noktasını işaretledik.
+
+334
+00:45:33,159 --> 00:45:34,539
+E şimdi bulalım.
+
+335
+00:45:35,039 --> 00:45:47,280
+Bakın, bunun x'i, bakın bu noktanın x'i 1 bölü dörtgen y'si koyduğunuz zaman y eşittir 1-x karede 15 bölü 16 çıkacak.
+
+336
+00:45:47,599 --> 00:45:47,840
+1
+
+337
+00:45:47,840 --> 00:45:51,280
+Şuraya sağ uç noktayı şuraya yazalım.
+
+338
+00:45:53,076 --> 00:45:54,355
+sağa 3 nokta.
+
+339
+00:45:55,016 --> 00:46:10,516
+Şimdi mesela, şurası x'i 2 bölü 4, yani 1 bölü 2 iken, şurası 1 bölü 2 demek, x'i 1 bölü 2 iken, y'si hesapladığınız zaman eylül üzerinde 3 bölü 4 gelecek.
+
+340
+00:46:11,415 --> 00:46:19,076
+Sonra arkadaşlar, x'i 3 bölü 4 iken, y'si de 7 bölü 16 mı geliyor? Böyle bir şey.
+
+341
+00:46:19,956 --> 00:46:28,176
+E şimdi benim alanım, bu dikdörtgenlerin alanından, şimdi dikdörtgenlerin alanı neresi? Şurası.
+
+342
+00:46:30,396 --> 00:46:39,716
+Benim alanım koyu olan kısım. Yani eğrinin alanı dikdörtgenlerin alanından büyük mü, küçük mü? Daha büyük değil mi?
+
+343
+00:46:45,748 --> 00:46:59,387
+içi iç içi çizersen, değil mi arkadaşlar? O zaman benim alanımdan daha küçük oluyor. E şimdi o zaman diyorum ki, şimdi bu dikdörtgenleri hesaplayayım. Benim alanım
+
+344
+00:46:59,487 --> 00:47:13,507
+yaklaşık olarak yine eşit olacak. Ama ben alanımı bulmuyorum aslında. O dikdörtgenlerin alanını bulacağım. Bu benim alanım. Eğrenin alanı. Bunu arıyorum. Yaklaşık olarak şimdi birinci dikdörtgen.
+
+345
+00:47:13,903 --> 00:47:39,903
+Taban uzunluğu 1 bölü 4. Bakın hep 1 bölü 4. Uzunlukları 1 bölü 4. Şurası da 1 bölü. Birinci dipdörtgenin taban uzunluğu 1 bölü 4. Bakın uç noktayı buraya işaretlediniz. Yüksekliği. Bu noktanın y değeri. Gördünüz mü arkadaşlar? O zaman 1 bölü 4 çarpı y değeri 15 bölü 16.
+
+346
+00:47:40,724 --> 00:47:47,923
+Artı 2. dikdörtgen 1 bölü 4. Bakın şöyle işaretliyorum.
+
+347
+00:47:48,344 --> 00:47:53,744
+y değeri 1 bölü 4 çarpı 2. uç noktanın y değeri 3 bölü 4.
+
+348
+00:47:54,264 --> 00:48:03,284
+Sonra 1 bölü 4, 3. dikdörtgende uç noktanın değeri yüksekliği, y değeri 7 bölü 16.
+
+349
+00:48:07,664 --> 00:48:08,904
+nedir arkadaşlar?
+
+350
+00:48:11,244 --> 00:48:14,584
+1 bölü 4 çarpı 0'dır.
+
+351
+00:48:16,664 --> 00:48:18,784
+Evet, buraya kadar tamam mı arkadaşlar?
+
+352
+00:48:22,044 --> 00:48:24,864
+Şurada yazarken yanlış bir şey yazmışım.
+
+353
+00:48:24,964 --> 00:48:28,064
+Şurada yok, tamam.
+
+354
+00:48:29,644 --> 00:48:31,204
+Evet, buraya kadar tamam mı?
+
+355
+00:48:31,731 --> 00:48:33,871
+Evet hocam.
+
+356
+00:48:34,291 --> 00:48:35,971
+Yaklaşık olarak kaç çıktı?
+
+357
+00:48:37,411 --> 00:48:40,612
+Yaklaşık olarak hesaplandığı zaman şöyle çıkıyormuş.
+
+358
+00:48:41,231 --> 00:48:44,632
+0.53125
+
+359
+00:48:44,632 --> 00:48:50,672
+Şimdi bir öğrenci hesaplamayı şöyle diyeyim.
+
+360
+00:48:51,539 --> 00:49:17,580
+üst şeylerle aldı, dikdörtgenlerle. Sonucu kaç buldu? 0.875 buldu. Bir öğrenci de şu alt dikdörtgenlerle, yani bir öğrenci sol uç noktayı uyguladı. Tamam mı arkadaşlar? Sonucu bu buldu. Birisi de sağ uç noktayı uyguladı ve sonucu şu buldu. Aslında ikisi de değil.
+
+361
+00:49:18,228 --> 00:49:43,867
+ikisi de sonuç değil. Bizim alanımız bu iki değer arasındaki bir değer. Peki gerçek sonuca ulaşmak için ne yapacağız arkadaşlar? Şimdi şöyle göstereyim. Silmek zorundayım. Hepsini sileceğim. Şimdi en önemli kısmını anlatıyorum. Ya da şöyle yapalım. Burada başladığımı bırakamayacağım. Bir dakika şöyle.
+
+362
+00:49:44,724 --> 00:49:56,584
+x kare artı 2x, f'
+
+363
+00:50:00,340 --> 00:50:16,160
+Bunu anlarsanız bütün formülleri yerine yazabilirsiniz. Tamam mı arkadaşlar? O zaman 15 dakika ara veriyoruz. 15 dakika ara, saat kaç? 6 geçe buluşacağız artık. 15 dakika yeterli değil mi? 20 dakikaya gerek yok.
+
+364
+00:50:16,543 --> 00:50:23,783
+Var mı? İstiyorsanız kahve, çay içecekseniz, dinlenecekseniz, hocam yetmiyor derseniz 20 dakikada verebilirim.
+
+365
+00:50:24,003 --> 00:50:25,603
+15 dakika yeter ya hocam.
+
+366
+00:50:25,663 --> 00:50:27,923
+15 dakika sonra görüşmek üzere.
+
+367
+01:05:06,483 --> 01:05:10,643
+Merhaba arkadaşlar. Dersimize kaldığımız yerden devam ediyoruz.
+
+368
+01:05:11,423 --> 01:05:15,003
+Evet, süre yeterli geldi mi? Derse başlayabilir miyiz arkadaşlar?
+
+369
+01:05:17,163 --> 01:05:19,324
+Herhalde başlayabiliriz.
+
+370
+01:05:20,203 --> 01:05:23,543
+Şöyle ekran paylaşımı yapıyorum yine.
+
+371
+01:05:24,563 --> 01:05:36,683
+Evet, pdf'i görüyor musunuz arkadaşlar? Bana evet ya da hayır. Evet, teşekkürler. Şimdi arkadaşlar yine tableti yansıtacağım. Şimdi arkadaşlar.
+
+372
+01:05:40,916 --> 01:06:05,836
+Evet, geldi mi tablet? Geldi değil mi? Demek ki şimdi arkadaşlar şöyle diyelim. Şimdi ben 4 parçaya böldüm. Şurada 4 parçaya böldüm. Şunda ya da bunda 4 parçaya böldüm. 10 parçaya da bölebilirim. 20 parçaya da bölebilirim. 30 parçaya da bölebilirim. Önemli olan burada
+
+373
+01:06:06,335 --> 01:06:14,395
+Bu ne kadar çok dik dörtgen yazarsanız o kadar alanın gerçek değerine yaklaşırsınız evrenin.
+
+374
+01:06:14,855 --> 01:06:16,915
+O zaman şöyle yapalım demişler.
+
+375
+01:06:17,536 --> 01:06:20,355
+Şimdi biz bunu mesela şekli büyük çizeceğim.
+
+376
+01:06:20,815 --> 01:06:21,556
+Şu x'ye.
+
+377
+01:06:22,556 --> 01:06:24,155
+Şimdi arkadaşlar düşünün.
+
+378
+01:06:24,795 --> 01:06:25,615
+Şeklimiz bu.
+
+379
+01:06:25,976 --> 01:06:26,976
+y eşittir.
+
+380
+01:06:27,572 --> 01:06:51,572
+1-x2. Şimdi mesela şöyle, sol uç nokta için göstereceğim. Şimdi mesela şöyle, n parçaya bölelim demişler. 0'dan 1'e. n'e değişken atıldıkça alanları bulmuş oluruz. n parçaya bölersek, 1 x son nokta, 1 x.
+
+381
+01:06:51,668 --> 01:07:17,448
+1, ilk nokta 0, bölüm kaç parçaya böldük? n. 1 bölü n kadar gidiyorum. 0'a 1 bölü n ekledim, 1 bölü n. Sonra 1 bölü n daha ekledim, 2 bölü n. 1 bölü n ekledim, 3 bölü n. 4 bölü n. 5 bölü n. 6 bölü n. Değil mi arkadaşlar? Böyle gidiyor. Bakın mesela şöyle olacak. Birinci dikdörtgen.
+
+382
+01:07:18,452 --> 01:07:45,632
+sonra 2. dikdörtgen, 3. dikdörtgen, 4. dikdörtgen, 5. dikdörtgen, 6. dikdörtgen, şimdi bu şekil temsili devam ettiğiniz zaman, böyle içine en tane dikdörtgen yerleştiririz. Bu sol uç nokta için.
+
+383
+01:07:47,155 --> 01:07:56,076
+Şöyle, bunlar notlarda yok arkadaşlar. Çünkü notlarda ne kadar çok yazarsan o kadar çok karışık olur.
+
+384
+01:07:56,996 --> 01:08:12,936
+Şimdi burada sol uç noktaya göre bakın. Şu noktalar. Şimdi taban uzunluğu 1 bölü L çarpı yükseklik. Şurası birinci dikdörtgen. Burası sol uç nokta. Şuralar. Sol uç nokta alınacak.
+
+385
+01:08:14,228 --> 01:08:21,347
+Tamam mı arkadaşlar? Bunun için sol uç nokta, şurası da n bölü n'den bir gelecek. Bu şekilde devam edecek.
+
+386
+01:08:21,347 --> 01:08:38,528
+Eğer sağ uç noktayı uygulasaydık, bakın sağ uç noktayı uygulasaydık, x'ye, sağ uç noktayı uygulasaydık bu sefer içine dikdörtgenler koyacaktık.
+
+387
+01:08:38,648 --> 01:08:41,347
+Kaç tane? n tane. Şöyle.
+
+388
+01:08:42,707 --> 01:09:07,707
+bu şekilde, şuralarda dokunuyor. yine en parçaya böldük. şöyle göstereyim, şurası dokunuyor. sonuncu da şöyle olsun.
+
+389
+01:09:09,587 --> 01:09:13,367
+sağ uç noktaya göre de bakın yükseklikler şu noktadaki.
+
+390
+01:09:14,807 --> 01:09:16,688
+Şunlar. Tamam mı arkadaşlar?
+
+391
+01:09:17,347 --> 01:09:21,927
+Son nokta 1, ilk nokta 0, 1-0 bölü n'den 1 bölü n.
+
+392
+01:09:22,547 --> 01:09:28,827
+1 bölü n, 2 bölü n, 3 bölü n, 4 bölü n bu şekilde devam edecek.
+
+393
+01:09:29,547 --> 01:09:34,827
+Şimdi n parçaya böldüğümüz zaman, şimdi bir şey soracağım size arkadaşlar.
+
+394
+01:09:35,475 --> 01:09:59,475
+Şimdi ne zaman mesela ne kadar çok dikdörtgen yerleştirirsek mesela bizim alanımız şurası. Dikdörtgenlerin alanı ise şuralarda var. Şu dışarıdaki yerlerde var değil mi? Şuralarda var. Dikdörtgenlerin alanı mesela şurada bizim alanımızdan daha büyük. Biz bunun içine...
+
+395
+01:10:00,000 --> 01:10:07,000
+Ne kadar çok dikdörtgen yerleştirirsek, o kadar bu dikdörtgenler eğriye yaklaşır.
+
+396
+01:10:07,500 --> 01:10:14,539
+O yüzden eğrinin alanını bulmak için ne yapacağız arkadaşlar?
+
+397
+01:10:14,539 --> 01:10:17,780
+Bu dikdörtgenlerin alanını bulacağız.
+
+398
+01:10:18,440 --> 01:10:20,760
+N'i sonsuz tane alacağız.
+
+399
+01:10:21,239 --> 01:10:22,159
+Tamam mı arkadaşlar?
+
+400
+01:10:22,680 --> 01:10:25,880
+Peki, dikdörtgenlerin alanını nasıl bulacağız?
+
+401
+01:10:26,100 --> 01:10:27,920
+Bakın arkadaşlar, şöyle yapacağız.
+
+402
+01:10:28,000 --> 01:10:50,460
+şu alttakini de anladınız değil mi? Alt yaklaşımda da aynı mantık. Yani bu sağ uç nokta. Sağ uç nokta. Bu da sol uç nokta. Tamam mı arkadaşlar? Şimdi şunu siliyorum. Peki bunu nasıl hesaplayacağız? Şöyle yapacağız arkadaşlar.
+
+403
+01:10:51,444 --> 01:11:17,944
+Şöyle bakın, ben şimdi bilmiyorum. Şimdi neydi? y eşittir, pardon, y eşittir 1-x kare. Şimdi yazıyorum. Birinci alanın yaklaşık olarak, bakın şimdi yazacağım. Şurası kaç? Taban uzunluğu 1 bölü m. Çarpı yükseklik. Yükseklik, şurası şuradan başlıyoruz. Sol uç noktaya göre 1. Birincisi bu.
+
+404
+01:11:18,304 --> 01:11:38,264
+değil mi? 1, biliyorum. Sonra taban alanı, ikinci dikdörtgenin, 1 bölü n, çarpı yükseklik. Yükseklik şurası. Değil mi? Bu ne demek arkadaşlar? Şu demek. x'i 1 bölü nken, y'si ne? Y'sini nasıl buluyorsunuz?
+
+405
+01:11:39,363 --> 01:11:45,804
+f nokt y eşittir, fx, o da eşittir, 1 eksi x kare. Nasıl yapıyorduk?
+
+406
+01:11:46,112 --> 01:11:47,672
+1-1 bölü n'i kare.
+
+407
+01:11:48,012 --> 01:12:08,932
+Şöyle yapıyoruz değil mi? f 1 bölü n'i buluyoruz. O da 1-1 bölü n'i kare. Buraya ben 1 bölü n yazıyorum. Şimdi burası ne? x'i 2 bölü n'ken f 2 bölü n değeri. Böyle devam ediyor. O zaman 1 bölü n çarpı yüksekliği f 1 bölü n. Sonra
+
+408
+01:12:09,471 --> 01:12:29,451
+1 bölü yine 3. şey. Bakın buraya geldik. f1 bölü n çarpı yüksekliği. Bakın şimdi nereye geldik? Şimdi buydu. Bunun yüksekliği buydu. Buna geldik. f2 bölü n. Peki bunu bu şekilden bulmak çok zor.
+
+409
+01:12:30,100 --> 01:12:55,540
+O zaman nasıl yapacaksınız arkadaşlar? Şöyle yapacaksınız. Mantığını anladınız mı? Böyle devam ediyor. Peki nasıl yapacağız arkadaşlar? Şöyle yapacağız. Şimdi sınavda da bunu böyle çizemezsiniz. Şekli gördünüz. Şimdi aralığımız ne? Şimdi bunu siliyorum veya kalsın. Şöyle diyorsunuz. E şimdi diyorsunuz ki aralığım ne? 0 ile 1 aralı. Şurası değil mi?
+
+410
+01:12:56,083 --> 01:13:20,323
+sıfırla bir aralığı kaç parçaya böldüm? son nokta eksi ilk nokta bölü m'den bir bölü m parçaya bakın başlıyorum bölmeye sıfırdan bakın şunu yazıyorum sıfırdı neresi oldu? birinci aralık şurası bakın şu aralık şöyle şurası sıfırla bir bölü m sonra ikinci aralık
+
+411
+01:13:20,591 --> 01:13:39,271
+1 bölü n'de durdum, 1 bölü n ekledim, 2 bölü n. 3. aralık, 2 bölü n'de durdum, 3 bölü n. Devam ediyoruz. En son aralık veya kanıncı aralık. Şimdi kanıncı aralığı yazalım. Şöyle diyoruz. Bu 1. aralık.
+
+412
+01:13:41,791 --> 01:13:47,011
+Şurası 2. aralık. Şurası 3. aralık.
+
+413
+01:13:48,659 --> 01:13:56,819
+Şurası k'nıncı aralık olsun. Bakın, 3. aralıkta 3 bölü n. K'nıncı aralıkta ne olacak arkadaşlar?
+
+414
+01:13:58,299 --> 01:14:07,920
+k bölü n. Burası ne olacak? Burası 3 iken burası 2. k eksi 1 bölü n. Bakın, burası 2. aralıkta 2 bölü n iken 1 bölü n.
+
+415
+01:14:07,920 --> 01:14:14,799
+1. aralıkta 1 bölü n iken 0. k bölü n. Devam ettik. En sona.
+
+416
+01:14:15,859 --> 01:14:41,359
+n. aralık, n tane aralığa böldük ya, k yerine n yazdık, n bölü n. Ondan önceki de n-1 bölü n. aralıkta. Yani şurası 1. Tamam mı? Böyle devam ettik. Hatta şurayı yeniden yazayım. Böyle olmadı. Yan yana olsun. Şöyle arkadaşlar. 1. aralık 0'a 1 bölü n.
+
+417
+01:14:42,036 --> 01:15:01,855
+2. aralık 1 bölü n'e 2 bölü n. 3. aralık 2 bölü n'e 3 bölü n. Devam ettik. k'nıncı aralık k-1 bölü n'e k bölü n. Devam ettik. n-1 bölü n'e n bölü n'dir.
+
+418
+01:15:08,884 --> 01:15:27,804
+dikdörtgenler eğer yukarıdaysa bu neydi? sol uç nokta. bu ne demek biliyor musunuz? şunları al demek soldaki noktaları. şunları bakın şunları. peki her dikdörtgenin
+
+419
+01:15:28,051 --> 01:15:51,652
+alt uzunluğu kaç olacaktı? delta x, 1 bölü n. Taban uzunluğu 1 bölü n, çarpı yükseklikler. O zaman ne olacak? Taban uzunluğu 1 bölü n, birinci aralıkta çarpı yükseklik f0. İkinci aralıkta taban uzunluğu 1 bölü n, çarpı yükseklik f1 bölü n. Sonra
+
+420
+01:15:52,372 --> 01:16:15,152
+3. aralıkta taban uzunluğu 1 bölü n, bakın yıldızları alıyorum, f 2 bölü n. Böyle devam ettik. k'nıncı aralıkta taban uzunluğu 1 bölü n, f k bölü n. Ve devam ettik. Son olarak 1 bölü n çarpa f n-1 bölü n'dir.
+
+421
+01:16:16,152 --> 01:16:18,712
+Evet, anladınız mı arkadaşlar?
+
+422
+01:16:19,891 --> 01:16:21,092
+Sesim geliyor mu?
+
+423
+01:16:21,931 --> 01:16:22,891
+Evet hocam.
+
+424
+01:16:22,912 --> 01:16:25,051
+Uğukumuz mu geldi? Gelmedi değil mi?
+
+425
+01:16:25,931 --> 01:16:26,531
+Hocam.
+
+426
+01:16:26,711 --> 01:16:28,391
+Yok hocam, bütün heyecanımızı dinliyoruz.
+
+427
+01:16:28,391 --> 01:16:28,912
+Hocam.
+
+428
+01:16:29,211 --> 01:16:29,511
+Evet.
+
+429
+01:16:30,572 --> 01:16:35,551
+Bu son anlattığınızı sözlü bir şekilde kısaca özetleyebilir misiniz?
+
+430
+01:16:35,931 --> 01:16:37,791
+Tabii ki, özetleyeceğim.
+
+431
+01:16:37,912 --> 01:16:41,252
+Yani bu sayfayı. Biraz kafam karıştı da kaçırdım sanırım.
+
+432
+01:16:41,252 --> 01:16:45,332
+Tamam, bakın. Hatta şekli birazcık bu en parça ya.
+
+433
+01:16:45,648 --> 01:17:10,068
+çok dikdörtgenli yapmayayım da şeklinin üstünü sileyim, birkaç tanesini göstereyim. Ama en tane çok küçük küçük dikdörtgenler var. Tamam mı arkadaşlar? Anlaştık mı burada? Şöyle bakın, şurayı göstereyim. Yani şöyle birkaç tanesini geniş çizeyim görebilmeniz için. Şöyle bakın, şöyle görü.
+
+434
+01:17:10,868 --> 01:17:19,068
+şöyle düşünün arkadaşlar. Şurayı da sileyim. Görebilmeniz için. Çünkü önemli olan kısım bu.
+
+435
+01:17:21,108 --> 01:17:25,608
+Çünkü artık şekil çizmeyeceğim ama şekli anlamanız lazım.
+
+436
+01:17:26,368 --> 01:17:33,068
+En tane parçaya böldük. Her parçanın uzunluğu 1 bölü n. Yani şöyle 1 bölü n kadar gittik.
+
+437
+01:17:34,420 --> 01:17:53,360
+1 dikdörtgen, 1 bölü n kadar gittik, 1 dikdörtgen, 1 bölü n kadar gittik, 1 dikdörtgen, 1 bölü n kadar gittik, 1 dikdörtgen, şöyle bakın. Şurası 0'dı, şurası 1 bölü n, 0'a 1 bölü n ekledim.
+
+438
+01:17:53,648 --> 01:18:20,028
+1 bölüne 1 bölüne ekledim. Sonra 1 bölüne ekledim. 1 bölüne ekledim. 1 bölüne ekledim. 1 bölüne ekledim. Böyle devam ediyor. Tamam mı? Çok var. Bu dikdörtgenler küçücük küçücük. Tamam. En son dikdörtgende, bu da en sonu olsun. Burada bir sürü var. M bölü en. Hatta şöyle yapalım. Pardon. Bakın şurası.
+
+439
+01:18:20,595 --> 01:18:45,956
+m bölü n yani bire geldik. 1 bölü n ekledik, ekledik, f m bölü n, pardon m bölü n'den 1 oldu. Şimdi dikdörtgenler eğlenin üstünde. O zaman bunun ismi ne? Sol uç nokta. Soldaki noktalar yüksekliğiniz olacak. Birinci dikdörtgeniniz bu bakın. Birinci dikdörtgen bu. Şu. Gördünüz mü?
+
+440
+01:18:46,271 --> 01:19:10,471
+Bunun sol uç noktası şurası. Şöyle ne renkte koysam acaba? Şu siyahla koyalım. Sol uç nokta. İkinci dikdörtgen şurası. Bunun sol uç noktası yani şu tepe noktasında uç nokta burası. Üçüncü dikdörtgenin sol uç noktası burası. Dördüncünün burası. Beşincinin burası. Gördünüz mü?
+
+441
+01:19:10,832 --> 01:19:37,292
+Peki bu son 3 noktalar ne işimize yarayacak? Bunların dikdörtgenlerin bir kenarının uzunluğu hep 1 bölü n. Bakın buralar hep 1 bölü n. 1 bölü n çarpı yükseklik. Yükseklik. Bakın bu nokta nedir? Şu nokta eğri üzerindedir. Değil mi? Şu eğri üzerindedir. x'i 1 bölü n iken y'sini x yerine 1 bölü n koyup buluyorduk. Değil mi?
+
+442
+01:19:37,615 --> 01:20:04,115
+mesela burası atıyorum 1 bölü 2 ise şurada x yerine 1 bölü 2 koyup buluyorduk. Bu sefer x'i 1 bölü nken bu. Mesela bu noktada bakın eğri üzerinde şu eğri üzerinde x'i 2 bölü nken y'si f2 bölü n'dir. Bu noktada x'i 3 bölü nken y'si f3 bölü n'dir.
+
+443
+01:20:04,948 --> 01:20:16,948
+Tamam mı arkadaşlar? Aslında biz ne yapacağız? Bu dikdörtgen, mesela bu dikdörtgenin tabanı 1 bölü n yüksekliği işte şu.
+
+444
+01:20:18,128 --> 01:20:27,427
+f 1 bölü n. Değil mi yüksek? Pardon, evet. Bunun için mesela x'i burada kaç? x'i sıfırken y'si kaç?
+
+445
+01:20:28,020 --> 01:20:53,480
+y'si x yerine sıfır koyun, f sıfırdan y'si bir işte bu. Şimdi o zaman şöyle, tabanı bir bölü enken, y'si f sıfır. Tabanı bir bölü enken ikincisinde, bakın bu, yüksekliği bu, şu dikdörtgenin. Şu dikdörtgenin yüksekliği. Yani şu uç noktalar sırasıyla o dikdörtgenin yüksekliği oluyor.
+
+446
+01:20:54,228 --> 01:21:12,667
+Tamam mı arkadaşlar? 1. uç nokta, 1. dikdörtgenin yüksekliği. 2. uç nokta, 2. dikdörtgenin yüksekliği. 3. uç nokta da 3. dikdörtgenin yüksekliği. 4. uç nokta, 4. dikdörtgenin yüksekliği. Anlaşıldı mı arkadaşlar?
+
+447
+01:21:12,667 --> 01:21:20,927
+E şimdi diyorum ki, ben şekil çizemeyeceğim. O zaman diyorum ki, ara noktaları şöyle göstereyim. Bakın.
+
+448
+01:21:22,036 --> 01:21:47,995
+şurada şöyle göstereyim. 1. aralık, şurası 0 ile 1 bölü en aralığı, şu. 2. aralık, 1 bölü enli 2 aralığı, 3. aralık, 2 bölü enli 3 bölü en aralığı, 4. aralık bu. 1. aralık, 2. aralık, 3. aralık, 4. aralık, 5. ve 6. aralık. Bu 1. aralık, bu 2. aralık.
+
+449
+01:21:48,467 --> 01:22:06,688
+bu 3. aralık, bu k'nıncı aralık ve ininci aralık. Yani aralıklar bu dikdörtgenlerin şu birinci dikdörtgenin aralığı, ikinci dikdörtgenin aralığı, üçüncü dikdörtgenin aralığı bu şekilde gidiyor.
+
+450
+01:22:07,788 --> 01:22:10,487
+E şimdi diyorum ki ben hangi noktayı uyguluyordum?
+
+451
+01:22:11,315 --> 01:22:21,095
+sol uç nokta, dikdörtgenler eğrinin üstünde, sol uç nokta soldaki rakama yıldız koydum. Bakın her aralıkta soldaki rakama yıldız koydum.
+
+452
+01:22:21,652 --> 01:22:46,012
+Neydi sol uç noktadaki y değerleri? Yani bu noktanın değeri f0. Bu nokta 0, onun y değeri f0. Yükseklik. Bu nokta 1 bölü n, y değeri f1 bölü n. Şimdi bakın birinci aralıkta şu taban uzunluğu 1 bölü n yazdım. Yükseklik ne? Bu uç noktanın f değeri f0.
+
+453
+01:22:47,315 --> 01:23:08,996
+artı 2. aralığın taban uzunluğu ne? 1 bölü n. Peki yüksekliği ne? Şu uç noktanın değeri. Bu. f 1 bölü n. 3. aralık taban uzunluğu ne? 1 bölü n. E bunun şeyi nedir? 2 bölü n'i yedi. Yani f değeri yükseklik. Devam etti.
+
+454
+01:23:09,524 --> 01:23:19,764
+k'nıncı aralıkta yine taban uzunluğu 1 bölü n, yüksekliğine de yine şu sol uç noktanın f değeri de yüksekliğimiz.
+
+455
+01:23:20,224 --> 01:23:33,584
+Devam ettim, n'inci aralıkta taban uzunluğumuz 1 bölü n, yüksekliğiniz işte bu n-1 bölü n'in f değeri yüksekliğimiz noktanın f noktasındaki yani y değeri.
+
+456
+01:23:33,952 --> 01:23:41,812
+o noktaya gelen. İşte bu toplam toplamı buldunuz. Mesela bunu esen diyeceğiz.
+
+457
+01:23:42,163 --> 01:24:03,183
+eseni bulduk. Mesela neyli bir ifadeler çıktı. Böyle bir ifadeler. Mesela ne küp, 5 ne kare, 7n. Bunları bulacağız mesela. Ne küp artı 6. Şimdi biz sonuç elde etmek istiyoruz. Biz buna işte Riemann toplamı diyoruz arkadaşlar. Bu pozitif fonksiyonlar için Riemann toplamı.
+
+458
+01:24:05,876 --> 01:24:26,115
+doğrusu olsun diye yani alanı bulmak için neler, kaç tane ne olmalı? Ben bunun içine yani kaç tane dikdörtgen koymalıyım ki bu dikdörtgenler gittikçe küçülsün küçülsün eğrinin içine sığsın. Öyle düşünün hayal edin. Ne kadar olmalı? Çok doğrusu.
+
+459
+01:24:27,028 --> 01:24:52,568
+İşte buna biz Riemann toplamı diyoruz. Şimdi n ile bir ifade bulacaksınız. Ama ben alan arıyorum. Şöyle yapacaksınız. Limit n'ler nereye gitsin diyeceksiniz. Sonsuza gitsin diyeceksiniz. Ne için? Mesela n küp artı 5 n kare artı 7 n bulduk. Bölü n küp artı 6. Bunu alacaksınız bunun sonucunu ama böyle bir şey bulmadık da.
+
+460
+01:24:55,028 --> 01:24:57,148
+Şimdi buna Riemann toplamı diyoruz.
+
+461
+01:24:57,148 --> 01:25:01,208
+Esene pardon Riemann toplamı bu esen.
+
+462
+01:25:01,848 --> 01:25:02,948
+Riemann toplamı
+
+463
+01:25:04,243 --> 01:25:12,564
+Alanında arkadaşlar, limit ne sonsuza giderken eseni aldığınız zaman da alanı bulmuş olacağız.
+
+464
+01:25:12,884 --> 01:25:21,043
+Anladınız mı mantığını? Çok kolay ama bilmediğiniz zaman da içinden çıkamayacağınız bir tanımı var.
+
+465
+01:25:21,543 --> 01:25:26,863
+Pozitifler için, pozitif fonksiyonlar için Riemann toplamını böyle özetleyebilirim.
+
+466
+01:25:32,243 --> 01:26:00,224
+Bir de orta nokta olarak yapılanlar var. O da şöyle. Artık ben notları yazmadım. Mesela her aralığın orta noktası şöyle. Ama o sınavlarda çıkmadığı için yazmadım. Çünkü ekrandan anlatmak zor. Mesela orta noktası, sağ uç nokta, sol uç nokta alınarak dikdörtgenler farklı farklı alınıyor, toplanıyor en tane. Sonra alanı bulmak istediğiniz zaman.
+
+467
+01:26:00,243 --> 01:26:07,123
+en sonsuza giderken aldığınız zaman ister böyle üst toplam yapın, isterseniz alt toplam.
+
+468
+01:26:07,243 --> 01:26:16,983
+Üst toplam diyoruz. Neden? Çünkü bu sol uç noktada dikdörtgenler eğrinin üstünde kalıyor. Değil mi? Alt toplam.
+
+469
+01:26:17,716 --> 01:26:44,356
+alt toplamda şu arkadaşlar, dikdörtgenler eğrinin içinde kalıyor. Yani şöyle, sağ uç nokta şöyle içeride kalıyor. Bu da alt toplam. Tamam mı arkadaşlar? Bu ise üst toplam. Neden? Dikdörtgenler eğrinin üstünde kalıyor. Tamam mı arkadaşlar? Birinde üst toplam, birinde alt toplam yapıyorsunuz ama n'e giderken ikisinde de aynı sonuç çıkıyor.
+
+470
+01:26:45,460 --> 01:26:46,560
+Anladınız mı?
+
+471
+01:26:47,199 --> 01:26:48,980
+Tamamdır hocam, teşekkürler.
+
+472
+01:26:49,399 --> 01:26:54,180
+Hangisini alırsanız alın, ikisinde de sonuç aynı çıkıyor.
+
+473
+01:26:54,180 --> 01:26:57,020
+Şimdi arkadaşlar, bakın şöyle.
+
+474
+01:26:57,619 --> 01:26:59,300
+Şimdi gelelim pdf'e.
+
+475
+01:27:00,039 --> 01:27:04,600
+Şöyle, birisi ekranı karalamış, ben silemiyorum.
+
+476
+01:27:05,239 --> 01:27:07,340
+Karalayan kişi silebilir mi arkadaşlar?
+
+477
+01:27:08,560 --> 01:27:11,619
+Evet, şimdi şöyle göstereyim.
+
+478
+01:27:12,243 --> 01:27:32,724
+Teşekkür ederim. Şimdi arkadaşlar bakın şöyle diyelim. Bir de ekranı siz bana soru sorarken çizip sorularınızı ekran üzerinde de sorabilirsiniz arkadaşlar. Onu da söyleyeyim. Yani karalayabilirsiniz bana soru sormak için. İyi ki karalamış. Kim karalamışsa bunu da buradan belirttik.
+
+479
+01:27:40,243 --> 01:28:01,243
+pozitif yani şöyle değerleri hep pozitif olan mesela şöyle şöyle daha negatifleri görmedik şöyle değerleri altta olanları görmedik şimdi Riemann toplamını pozitifler için yazıyoruz şimdi bakın arkadaşlar bir tane eğri genel bir eğri aldınız AB aralığında şimdi arkadaşlar
+
+480
+01:28:01,460 --> 01:28:29,460
+Şimdi ne diyor? Aralıkları böleceksiniz diyor. Şimdi burada genel bir tanım veriyor. Ne diyor arkadaşlar? Aralıkları bölelim. Biz böldük biraz önce. 1 bölü n değil mi? Şuraya 1 bölü n dedik. n parçaya böldük. Şuraya 2 bölü n dedik. Şuraya 3 bölü n tamam mı? 3 bölü n. Şurası gitti gitti. Şurası k bölü n. k eksi 1 bölü n. Şurası k.
+
+481
+01:28:29,460 --> 01:28:37,279
+k-1 bölü m, şurası k bölü m, böyle gidiyor. Tamam mı arkadaşlar? Ama bu eş bölmemiş.
+
+482
+01:28:37,908 --> 01:29:01,508
+Yani demiş ki birinci aralığım x1'e kadar olsun, ikinci aralığım x2'ye kadar olsun, üçüncü aralığım x3'e kadar olsun, sonra devam etmiş, burası şöyle olsun, tamam mı? Ama biz bütün yapacağımız sorularda aralıkları eşit parçalara böleceğiz. Bu tanım daha genel bir tanım. Anlaştık mı arkadaşlar?
+
+483
+01:29:02,100 --> 01:29:22,320
+Şimdi birinci aralık işte bizim neydi? Burası bakın birinci aralık bu. Şurası. Nedir o? x0 ile x1 arası. İkinci aralık x1 ile x2 arası. Üçüncü aralık şu sırayla yazıyorum bakın. Ve en inci aralık da bu.
+
+484
+01:29:23,539 --> 01:29:27,099
+Demiş ki, ben 1. aralığıma, şöyle diyeyim diyor.
+
+485
+01:29:27,739 --> 01:29:33,920
+Ben 1. aralığıma, bunu takip edebiliyor musunuz? Yazayım mı arkadaşlar? Yazayım mı?
+
+486
+01:29:34,500 --> 01:29:38,260
+Yazmama gerek var diyorsanız, yazarım da tabletten.
+
+487
+01:29:38,699 --> 01:29:46,180
+Delta x1, 2. delta x2, 3. delta x3, delta xk, delta xn diyelim.
+
+488
+01:29:46,640 --> 01:29:47,539
+Tamam mı arkadaşlar?
+
+489
+01:29:48,140 --> 01:29:50,760
+Veya ben göstereyim size, öyle daha iyi olacak.
+
+490
+01:29:53,332 --> 01:29:53,892
+şöyle
+
+491
+01:29:59,347 --> 01:30:17,207
+Buradan da açayım. Tablet geldi mi arkadaşlar? Siz görüyor musunuz? Görüyoruz hocam. Tamam. Bakın arkadaşlar bir tane eli var. Şimdi genel tanımı yazıyoruz. Diyoruz ki şöyle, diyoruz ki A ile B arasında olsun.
+
+492
+01:30:17,811 --> 01:30:36,252
+a ile b arasında olsun. İlk elemanımızı x sıfır diyelim, sonra da x'en diyelim. Şimdi bunu parçalara bölelim, aralıklara. İşte x1, x2, biz bir böleyen şeklinde almıştık ya, x3 böyle devam etsin. E şimdi birinci aralık x sıfırdan x1'e kadar.
+
+493
+01:30:36,916 --> 01:30:56,836
+şu aralık. Şimdi birinci dikdörtgen bu. Bilmiyorum yukarıdan üst toplanma, alt toplanma tamam mı? Şimdilik genel yazıyorum. İkinci dikdörtgenim şöyle. İkinci aralık x1'e x2 olsun. Üçüncü x2'ye x3 olacak. Devam edeceğim. Bakın birinci aralık.
+
+494
+01:30:58,036 --> 01:31:04,716
+bu ikinci aralık. Şimdi neden yazdığımı anlayacaksınız. 3. Aralık.
+
+495
+01:31:06,804 --> 01:31:09,784
+k'nıncı aralık. k'nıncıyı yazacağım.
+
+496
+01:31:10,324 --> 01:31:14,744
+3. de bakın arkadaşlar. 3. burası 3, bu bir öncesi.
+
+497
+01:31:15,244 --> 01:31:18,264
+k'nıncı aralıkta nasıl olacak arkadaşlar?
+
+498
+01:31:19,003 --> 01:31:22,984
+şurası x k, bir öncesi x k eksi 1.
+
+499
+01:31:22,984 --> 01:31:30,684
+ve n. aralıkta böyle devam etti. n. aralıkta da x n'ye x n eksi 1'dir.
+
+500
+01:31:31,667 --> 01:31:44,768
+aralıkları böldük. Şimdi sağ uç noktaya uygulayacaksak mesela sağdakilere yükseklik alacağız. Değil mi? Mesela sağ uç noktaya göre yazacaksak şöyle olacak.
+
+501
+01:31:45,587 --> 01:31:59,188
+Mesela ne diyeceğiz? Şimdi bunun şuranın uzunluğuna ne diyor? Şuranın uzunluğu diyoruz ki delta x1 olsun. Burası delta x2 olsun. Birinci aralığın uzunluğu.
+
+502
+01:31:59,551 --> 01:32:23,931
+delta x1, şurası delta x2, burası delta x3, burası delta xk, şurası da delta xn. Birinci dikdörtgenin uzunluğu delta x1. Çarpı, şimdi burası da hangi noktanın alındığına bağlı. Mesela şu nokta oldu, bunu alacaksın.
+
+503
+01:32:24,500 --> 01:32:36,960
+bu nokta oldu, bunu alacaksın. Temsili olarak şuradan c1, c1 diyoruz. Hangisi uygulanacaksa, o zaman buna karşı gelen noktada fc1 mesela.
+
+504
+01:32:38,500 --> 01:32:44,300
+Buradaki c2, buna karşı gelen de, tabii şekli şöyle çizelim, fc2.
+
+505
+01:32:45,235 --> 01:32:57,555
+Şimdi o zaman buradaki, tabi biz daha sonra bu genel olduğu için fc1, birinci aralıktaki c1 noktası alındı, ona karşı gelen yükseklik.
+
+506
+01:32:57,555 --> 01:33:12,036
+İkinci dikdörtgenin tabanı delta x2, burası fc2. Üçüncü yükseklik, pardon tabanı bu, yüksekliği bu. Devam ettik.
+
+507
+01:33:12,724 --> 01:33:32,304
+k'nıncıda delta x k tabanı yüksekliği de bu. Böyle devam ettik. En'cide de delta xn, fcn olacak. Tamam mı arkadaşlar? İşte bu toplama biz Riemann toplamı diyoruz.
+
+508
+01:33:32,851 --> 01:33:54,891
+en genel haliyle. Sağ uç nokta, sol uç nokta, şöyle, şurada göstereyim kabaca. Orta nokta mesela. Şu da orta nokta. Mesela her, her, her dikdörtgenin orta noktası alınıyor mesela şurada. Orta nokta mesela uygulanarak.
+
+509
+01:33:55,412 --> 01:34:15,792
+hesaplanıyor. Tamam mı? Mesela burası c1, c2, c3, c4. Aldığınız noktaya göre, yani uyguladığınız yönteme göre şurası olabilir. Şuradaki nokta, yani şurası fc1 olur o zaman. Şu yükseklik. Bu fc2 olur. Burası fc3 olur. Burası fc4 olur.
+
+510
+01:34:16,307 --> 01:34:23,248
+yükseklikleri buna göre hesaplıyoruz. İşte biz buna Riemann toplamı diyoruz arkadaşlar.
+
+511
+01:34:24,248 --> 01:34:25,007
+Efendim?
+
+512
+01:34:25,568 --> 01:34:27,387
+Peki yükseklikleri nasıl hesaplıyoruz?
+
+513
+01:34:27,387 --> 01:34:39,847
+Şimdi onu göstereceğim. Örnek çözeceğiz. Bu alanı da nasıl hesaplayacaksınız? İşte bunu limit ne sonsuza giderken eseni alacaksınız. Alanı hesaplayacağız.
+
+514
+01:34:41,203 --> 01:34:48,163
+Evet, alanda en sonsuza giderken Riemann toplamlarının limitini almaktır.
+
+515
+01:34:48,743 --> 01:34:53,184
+Şimdi arkadaşlar, şimdi örnek çözeceğim size.
+
+516
+01:34:53,663 --> 01:34:56,403
+Ama şöyle bakın, burada yazdık bunları kabaca.
+
+517
+01:34:56,403 --> 01:35:03,363
+Şöyle bakın, Riemann toplamı dedi ama bu ne için? Pozitifler için. Pozitif değerli.
+
+518
+01:35:03,731 --> 01:35:14,631
+bakın şurada belirtti. Negatif olmayan bir fx fonksiyonu için Riemann toplamı. Daha genelini biraz sonra söyleyeceğim. Sonra da en sonsuza giderken
+
+519
+01:35:15,091 --> 01:35:28,492
+esen ya da delta x k sıfıra giderken, yani n'in sonsuza gitmesi, aralık sayısının çoğalması demek, şuradaki dikdörtgenlerin uzunluğunun çok küçülmesi demek.
+
+520
+01:35:28,672 --> 01:35:36,731
+Yani o dikdörtgenin tabanının uzunluğu da delta x k idi, onların da sıfıra gitmesi demek, n'in sonsuza gitmesi demek.
+
+521
+01:35:36,731 --> 01:35:42,952
+Buna bağlıdır. Ve hepsinde sonuç aynı çıkar. Yani bu ne demek?
+
+522
+01:35:43,091 --> 01:35:46,692
+c k'yi nasıl seçtiğimize bağlı değildir.
+
+523
+01:35:46,832 --> 01:35:48,091
+R bölgesinin alanı.
+
+524
+01:35:48,311 --> 01:35:51,551
+Yani sağ uç noktada seçseniz aynı sonuç çıkacak.
+
+525
+01:35:52,011 --> 01:35:58,091
+Sol uç noktada seçilse, orta noktada seçilse hepsiyle aynı çıkar.
+
+526
+01:35:58,091 --> 01:36:04,091
+İşte burada sağ uç nokta seçildiği zaman direkt formülle hemen çözebileceksiniz.
+
+527
+01:36:05,011 --> 01:36:08,011
+Şimdi bunları birazdan soruda göstereceğim.
+
+528
+01:36:08,452 --> 01:36:10,131
+Sol uç noktayı seçtiniz.
+
+529
+01:36:10,671 --> 01:36:12,811
+Direkt formülle yazdınız.
+
+530
+01:36:13,591 --> 01:36:16,192
+Bakın hemen bulacaksınız eseni.
+
+531
+01:36:16,471 --> 01:36:17,431
+Tamam mı arkadaşlar?
+
+532
+01:36:17,751 --> 01:36:18,992
+Direkt bulacaksınız.
+
+533
+01:36:19,751 --> 01:36:22,211
+Bu şekilde hesaplayabilirsiniz.
+
+534
+01:36:23,331 --> 01:36:25,532
+Şimdi son olarak bir şey daha söyleyeceğim.
+
+535
+01:36:26,676 --> 01:36:40,596
+Riemann toplamlarında arkadaşlar, fonksiyonumuz bizim aldığımız y eşittir. Şuradaki incelediğimiz fonksiyon azalan fonksiyondur. Tamam mı? Bu azalan bir fonksiyon. Azalan.
+
+536
+01:36:41,336 --> 01:36:50,336
+Şimdi azalan fonksiyonsa, bakın arkadaşlar burası çok önemli. Çok çok önemli. Soruya başlamadan buna bakacaksınız.
+
+537
+01:36:53,587 --> 01:37:12,307
+Alt Riemann toplamı da, bakın alt Riemann toplamı şuydu, dikdörtgenler içeride kalıyordu. Sağ uç nokta, azalan fonksiyonda üst Riemann toplamı, yani dikdörtgenler bakın yukarıda kalıyor.
+
+538
+01:37:13,011 --> 01:37:15,391
+sol uç nokta uygulanıyor.
+
+539
+01:37:16,112 --> 01:37:21,672
+Ama fonksiyon artan ise, bakın şekil farklı oluyor.
+
+540
+01:37:21,672 --> 01:37:26,332
+Sol uç noktalar alt Riemann toplamında geliyor.
+
+541
+01:37:26,792 --> 01:37:30,752
+Demek ki sol uç nokta alt Riemann toplamı tam tersi yani.
+
+542
+01:37:31,212 --> 01:37:36,112
+Artan fonksiyonda da sağ uç noktalar üst Riemann toplamında geliyor.
+
+543
+01:37:36,252 --> 01:37:37,851
+Bunu örnekte göstereceğim.
+
+544
+01:37:38,412 --> 01:37:39,271
+Tamam mı arkadaşlar?
+
+545
+01:37:40,051 --> 01:37:48,591
+Bunu da dedikten sonra şurada zaten sol uç nokta ve sağ uç noktaya göre seçimine göre yapılması var.
+
+546
+01:37:49,431 --> 01:37:53,891
+Şimdi bu da genel anlamıyla bunu daha sonra söyleyeceğim.
+
+547
+01:37:54,152 --> 01:37:59,091
+Şimdi biz pozitif değerliler için yani şu kısmın toplamını bulduk.
+
+548
+01:38:00,172 --> 01:38:01,072
+Her şey aynı.
+
+549
+01:38:01,872 --> 01:38:04,692
+Bunu sorudan sonra söyleyeceğim size.
+
+550
+01:38:04,692 --> 01:38:06,851
+Buraya kadar var mı bir sıkıntı?
+
+551
+01:38:07,956 --> 01:38:24,336
+yok değil mi? Evet. Şimdi yoruldunuz mu? Ben soruya başlayacağım ama ondan önce şunları anlatmalıyım. Neyse şunları söyleyeyim. Sonra soruyu çözelim. Olur mu arkadaşlar?
+
+552
+01:38:25,268 --> 01:38:48,728
+Sonlu toplamlar ve sigma notasyonu. Şu notasyonu hiç gördünüz mü? Toplam notasyonu, sigma notasyonu, şu sigma. Gördünüz mü arkadaşlar? Evet hocam. Tamam, yani biliyorsunuz. Ben sizi hatırlatayım. Örnekleri yazarak mı anlatayım veya yazayım? Çünkü önemli. Çünkü buna göre çözeceksiniz soruyu. Şöyle arkadaşlar.
+
+553
+01:38:51,728 --> 01:38:52,728
+Tablette.
+
+554
+01:38:54,579 --> 01:38:56,043
+x kareleşeceğim.
+
+555
+01:39:02,003 --> 01:39:09,023
+Evet, ekran geldi mi? Sizlere bir söyleyebilir misiniz bana?
+
+556
+01:39:10,184 --> 01:39:10,943
+Hayır hocam.
+
+557
+01:39:11,623 --> 01:39:12,523
+Tablet gelmedi mi?
+
+558
+01:39:12,523 --> 01:39:13,384
+Geldi hocam.
+
+559
+01:39:13,823 --> 01:39:15,563
+Tablet geldi hocam.
+
+560
+01:39:16,163 --> 01:39:21,043
+Şimdi arkadaşlar, birincisi buna toplam sigma notasyonu diyoruz.
+
+561
+01:39:21,764 --> 01:39:26,083
+Şimdi ben şuraya k dediğim zaman, indisim k demek.
+
+562
+01:39:27,203 --> 01:39:29,143
+k eşittir birden neye dedim.
+
+563
+01:39:29,876 --> 01:39:36,596
+Şimdi diyor ki, k'ları sen artırdıkça toplama yap diyor. Mesela buraya a k dedin.
+
+564
+01:39:37,555 --> 01:39:44,136
+k yerine 1 ver. 1 dik, a 1 oldu, bitti. Şimdi topla diyor, k yerine 2 ver.
+
+565
+01:39:44,895 --> 01:39:51,176
+Topla diyor, k yerine 3 ver. k yerine 4 ver. Devam et. k kaça kadar?
+
+566
+01:39:52,051 --> 01:39:53,171
+n'e kadar.
+
+567
+01:39:53,731 --> 01:39:56,991
+Şimdi sizin buradaki indisiniz n değil.
+
+568
+01:39:57,591 --> 01:39:58,871
+n son sayınız.
+
+569
+01:39:59,411 --> 01:40:01,751
+n, şuradaki n, n son sayınız.
+
+570
+01:40:02,371 --> 01:40:03,071
+Şey gibi oldu.
+
+571
+01:40:03,411 --> 01:40:04,491
+Şuraya m diyelim.
+
+572
+01:40:05,291 --> 01:40:08,591
+n mesela buradaki n, n son sayı.
+
+573
+01:40:09,192 --> 01:40:10,351
+Anlaşıldı mı arkadaşlar?
+
+574
+01:40:11,031 --> 01:40:12,931
+Yani n buradaki bir sayı.
+
+575
+01:40:13,684 --> 01:40:39,184
+en sondaki indisi gösteriyor. Sizin indisiniz k. Bu çok önemli. Şimdi o zaman mesela k eşittir 1'den 11'e kadar. Mesela k'nın karesi dedi. Şimdi k gördüğün yere ilk önce 1 ver. Diğerlerine dokunma demek. 1'in karesi. Sonra bu toplama indisiydi. Sigma dediğimiz toplama notasyonumuz.
+
+576
+01:40:41,587 --> 01:40:58,227
+k yerine 2 ver, bir yerine dokunma, 3 ver, 4 ver, bunu kaça kadar devam ettir? 11. Şimdi burada şunu unutmayın arkadaşlar. Bu 11. Buradaki neydi? Endi. O bir sayı.
+
+577
+01:40:59,267 --> 01:41:08,567
+N indis değil, k indis. Bu çok önemli. Şimdi bir tane daha yapalım. Mesela i eşittir birden 100'e kadar. f i.
+
+578
+01:41:09,171 --> 01:41:26,292
+Sizin indisiniz ne arkadaşlar? Artık iyi. İyi gördüğün yere 1 ver. 1 verdi. Diğerlerine dokunmadı. Artı iyi gördüğün yere 2 ver. Devam et. En son iyi gördüğün yere 100 ver. Bu şekilde devam ediyor.
+
+579
+01:41:28,467 --> 01:41:54,927
+Anlaşıldı mı bu arkadaşlar? Mesela bir tane örnek yapayım. k eşittir birden 2'ye kolay bir tane. k bölü k artı 1. k gördüğün yere 1 ver. Verelim. 1 verdiğim bu oldu. Sonra topla. k gördüğün yere 2 ver. Sonra başka var mı? Birden 2'ye kadar yok. Bu da ne çıktı? 7 bölü 6 çıktı.
+
+580
+01:41:55,539 --> 01:42:22,199
+Bir tane daha. Mesela k eşittir 4'ten 5'e kadar. Nasıl vermiş? k'nın karesi bölü k-1. k gördüğün yere 4 verdik. 16 bölü 3 artı k gördüğün yere 5 ver 25 bölü 4. Hesapladığınız zaman 139 bölü 12 çıkacakmış.
+
+581
+01:42:23,283 --> 01:42:30,903
+Şimdi bu yazdığımı anladınız mı? Zaten biliyordunuz. Şöyle, şunu da yapalım.
+
+582
+01:42:32,703 --> 01:42:37,923
+Eksi 1 üzeri k çarpı k. k eşittir birden 3'e kadar.
+
+583
+01:42:38,923 --> 01:42:47,623
+k gördüğün yere 1 ver. Eksi 1 üzeri 1 çarpı 1. Artı k gördüğün yere 2 ver.
+
+584
+01:42:49,587 --> 01:43:15,427
+artı k gördüğün yere 3 ver. Bu da eksi 1 artı 2 eksi 3. Buradan da eksi 2 çıkar. Şimdi yani bir uzun bir toplama işlemi, tabi bu kısa da, böyle sigma notasyonu altında çok kısa şeklinde gösterilebiliyor. Şimdi mesela bu önemli. Şimdi 1, 3,
+
+585
+01:43:15,988 --> 01:43:34,568
+5, 7, 9. Bu toplamı sigma notasyonuyla gösterecek olsam. Şimdi bunu kağıtta var. Şöyle arkadaşlar. Bir arkadaşınız dedi ki, bunlar tek sayı. Şöyle yazardım. 2k artı 1 derdim.
+
+586
+01:43:35,155 --> 01:43:58,256
+Tamam mı arkadaşlar? 1'i vermesi için k yerine 0 verirdim. En sonda kaç verirdim? 4 verirdim. Hakikaten k yerine 0 verip 1 gelir, 1 verin 3 gelir, 2 verin 5 gelir, 3 verin 7 gelir, 4 verin 9 gelir. Birisi de dedi ki sen niye 0'dan başlattın ki dedi.
+
+587
+01:43:59,796 --> 01:44:27,036
+ben olsam birden başlatırdım dedi. O zaman 1 gelmesi için kaç ile başlamam lazım? Hesaplar şöyle der. 2k-1 olması lazım. 1 verdim, 1 oldu. 2 verdim, 3 oldu. 3 verdim, 5 oldu. 4 verdim, 7 oldu. 5 verdim, 9 oldu. Bakın, şunun bu toplam
+
+588
+01:44:27,636 --> 01:44:31,516
+Şöyle de gösterilir, böyle de gösterilebilir.
+
+589
+01:44:32,176 --> 01:44:37,236
+Veya başka birisi dedi ki, ben k eşittir 2'den başlattım.
+
+590
+01:44:37,876 --> 01:44:39,576
+4'e kadar gidiyormuş galiba.
+
+591
+01:44:39,716 --> 01:44:43,056
+Yok, 6'ya kadar. Bunu yapmayacağım. 2k-3.
+
+592
+01:44:44,016 --> 01:44:45,156
+Bu da onu verir.
+
+593
+01:44:45,976 --> 01:44:48,376
+Hocam, ben şeyi şu an karıştırdım.
+
+594
+01:44:49,136 --> 01:44:54,536
+Başlangıç sayısı mı yoksa başlangıç sayısının değişim miktarı mı?
+
+595
+01:44:54,556 --> 01:44:57,231
+Başlangıç sayısı.
+
+596
+01:44:57,491 --> 01:45:04,691
+Demek ki indistemeye göre sıfırdan da başlayabilir, birden de başlayabilir, ikiden de başlayabilir.
+
+597
+01:45:05,271 --> 01:45:11,531
+Bakın k eşittir, eksi 3'e 1 yazarsanız 2k artı 3. Bu da aynı sonucu verir.
+
+598
+01:45:12,091 --> 01:45:21,031
+Yani hocam yanlış anlamadıysam, mesela k sıfır diyor ya, sıfırdan üstteki sayıya kadar, dörde kadar birer tane arttırıp, içerideki fonksiyon değerlerini topluyoruz.
+
+599
+01:45:21,031 --> 01:45:24,031
+Evet, bakın bunun sonucu.
+
+600
+01:45:24,051 --> 01:45:25,811
+Bunun sonucu budur.
+
+601
+01:45:26,811 --> 01:45:31,191
+E bunun sonucu da aynısıdır.
+
+602
+01:45:31,771 --> 01:45:33,471
+Bunun sonucu da aynısıdır.
+
+603
+01:45:33,571 --> 01:45:36,031
+Yani birden fazla gösterimi vardır.
+
+604
+01:45:38,211 --> 01:45:39,151
+Anlatabildim mi?
+
+605
+01:45:40,471 --> 01:45:41,551
+Anladınız değil mi?
+
+606
+01:45:41,931 --> 01:45:42,551
+Evet hocam.
+
+607
+01:45:42,836 --> 01:45:48,956
+Yani k'yı sıfırdan başlatırsanız 4'e kadar ama neye dikkat ediyorsunuz?
+
+608
+01:45:49,356 --> 01:45:51,756
+Burada şudur, 2k artı 1'dir.
+
+609
+01:45:52,516 --> 01:45:56,096
+1'den 5'e kadar 2k eksi 1 şeklinde gösterilir.
+
+610
+01:45:56,655 --> 01:45:59,636
+2'den 6'ya kadar 2k eksi 3 şeklinde.
+
+611
+01:46:00,176 --> 01:46:05,536
+Bunları birbirine de dönüştürebiliyorsunuz, indistri değiştirebiliyorsunuz değil mi arkadaşlar?
+
+612
+01:46:06,176 --> 01:46:15,775
+onu girmek istemiyorum. Yani burası 2 iken 1 yapabiliyorsunuz. 2 iken 0 yapabiliyorsunuz. Hepsinde bunu yapabiliyorsunuz.
+
+613
+01:46:15,775 --> 01:46:30,576
+Şimdi, demek ki bunu bu şekilde gördük. Şimdi 1, önemli olan bir toplamı birden fazla şekilde gösterebiliyoruz. 2 mesela, örnek de göstereceğim.
+
+614
+01:46:31,380 --> 01:46:36,380
+k eşittir 1'den 3'e kadar k artı k'nın karesi.
+
+615
+01:46:37,800 --> 01:46:41,340
+Şimdi aslında burada iki tane toplam var arkadaşlar.
+
+616
+01:46:41,920 --> 01:46:42,340
+Şudur.
+
+617
+01:46:43,620 --> 01:46:45,180
+Bakın, değişkeniz ne?
+
+618
+01:46:45,780 --> 01:46:46,000
+K.
+
+619
+01:46:46,460 --> 01:46:47,539
+Şöyle yazarsınız.
+
+620
+01:46:47,680 --> 01:46:50,120
+k eşittir 1'den 3'e kadar k.
+
+621
+01:46:50,120 --> 01:46:54,956
+k eşittir 1'den 3'e kadar k'nın karesi.
+
+622
+01:46:55,572 --> 01:47:01,372
+Ya da bu ikisini tek şekilde gösterebilirsiniz. Mesela bunu açarak yazayım.
+
+623
+01:47:01,972 --> 01:47:07,412
+k eşittir, birden 3'e kadar. k artı k'nın karesi eşittir. Bakın açalım.
+
+624
+01:47:08,212 --> 01:47:14,492
+k yerine 1 verdik. 1 artı 1'in karesi. k yerine 2 verdik. 2 artı 2'nin karesi.
+
+625
+01:47:14,492 --> 01:47:17,832
+k yerine 3 verdik. 3 artı 3'ün karesi.
+
+626
+01:47:18,032 --> 01:47:25,332
+Aslında bu şöyle, 1 artı 2 artı 3, 1'in karesi, 2'nin karesi, 3'ün karesi.
+
+627
+01:47:25,752 --> 01:47:31,892
+Aslında şurası k eşittir, 1'den 3'e kadar ki sayıların toplamıdır.
+
+628
+01:47:32,072 --> 01:47:38,952
+Şöyle gösterelim. Burası da k eşittir, 1'den 3'e kadar k'nın karesinin toplamıdır.
+
+629
+01:47:40,372 --> 01:47:43,952
+Yani bu ifadeyi şu şekilde yazabiliriz.
+
+630
+01:47:45,171 --> 01:47:46,131
+affedersiniz.
+
+631
+01:47:49,876 --> 01:47:55,976
+Şimdi buna göre, burada önemli bir şey çıkıyor. Şunu şöyle göstereceğim, yazmayacağım.
+
+632
+01:47:57,996 --> 01:48:08,256
+Bakın arkadaşlar, şunlar. İki tane, yani toplam halindeki ifadeleri iki ayrı sigma notasyonunda gösterebilirsiniz.
+
+633
+01:48:08,256 --> 01:48:12,256
+Şöyle. Veya farklarını...
+
+634
+01:48:13,076 --> 01:48:17,316
+iki tane ifadenin ayrı ayrı sigma notasyonunda gösterirsiniz.
+
+635
+01:48:18,376 --> 01:48:22,876
+Ya da en önemli kısım şu, zaten şu çok önemli.
+
+636
+01:48:24,316 --> 01:48:29,695
+c bir sayı k'ya bağlı değilse notasyonun dışına çıkar.
+
+637
+01:48:30,916 --> 01:48:32,176
+Şimdi gelelim şuna.
+
+638
+01:48:33,296 --> 01:48:33,716
+Şurada.
+
+639
+01:48:34,876 --> 01:48:38,176
+Bakın arkadaşlar, k birden neye kadar değişiyor?
+
+640
+01:48:38,707 --> 01:48:45,187
+c bir sayı, bunu biraz sonra göstereceğim. Bu toplam buna eşittir. Ezberlemenizi istemiyorum.
+
+641
+01:48:47,887 --> 01:49:06,127
+Örneklere bakalım. k eşittir. Birden neye kadar? 3k var. Bakın 3k'yı böyle yazabilirim. 3k. Şurada 3 var. Şurada. Sonra da 3'ü dışarıya çıkarttım. Ve k'nın karesi ayrı ayrı yazabilirim.
+
+642
+01:49:06,579 --> 01:49:17,079
+mesela şurada eksi var, eksi dışarıya çıkar. Bakın k artı 4 var, k ve 4 ayrı notasyonlarda yazabilirim.
+
+643
+01:49:17,619 --> 01:49:28,760
+Şimdi buraya kadar tamam mı? Şunları biliyor musunuz? Şunu da sorayım da örneği öyle çözeceğim. Şu, birden n'ye kadar sayıların toplamı nedir arkadaşlar?
+
+644
+01:49:40,435 --> 01:49:54,815
+budur. Şimdi bunları bilmeden Riemann sorularını yapamazsınız arkadaşlar. Öyle söyleyeyim. Şimdi önemli olan şu, en çok karıştırılan şu. Şimdi bunu tablette göstereceğim sizlere.
+
+645
+01:49:59,395 --> 01:50:00,876
+Şöyle arkadaşlar.
+
+646
+01:50:10,068 --> 01:50:13,088
+bağlanmıyor. Bir daha deneyelim.
+
+647
+01:50:31,731 --> 01:51:05,323
+x kare artı 2x, f'
+
+648
+01:50:37,587 --> 01:51:04,768
+Evet, birkaç birkaç dakikanızı daha alacağım, ara vereceğim. Şimdi arkadaşlar, mesela, k eşittir birden 5'e kadar, k sayılarının toplamı nedir? Şöyle derseniz, değil mi? 1 artı 2 artı 3 artı 4 artı 5. Şöyle diyelim, hatırlatma, k eşittir birden neye kadar? k'nın toplamı neydi?
+
+649
+01:51:05,363 --> 01:51:31,723
+n çarpı n artı 1 bölü 2 idi. O zaman birden n yerine kaç gelmiş? 5 gelmiş. 5 çarpı 6 bölü 2'dir. Yani 15'tir. Şimdi mesela k eşittir birden 5'e kadar burası 7 olsun. Tamam mı? Bunu nasıl yaparsanız
+
+650
+01:51:32,275 --> 01:51:55,176
+k gördüğün yere 1 var. k var mı? yok. birincisi 7 sonra yine 7 sonra yine 7 sonra yine 7 5 kere birden başladı. birincisi 7, ikinci, üçüncü, dördüncü ve beşinci. kaç tane yedi? 5 tane 35
+
+651
+01:51:55,475 --> 01:52:02,475
+Şimdi k eşittir 1'den n'ye kadar burası c gibi bir sayı olsun.
+
+652
+01:52:03,195 --> 01:52:08,515
+c k'ya bağlı mı? k'ya bağlı değil. Şöyle gösterelim.
+
+653
+01:52:09,035 --> 01:52:20,195
+Kaç tane? 1.c, 2.c, 3.c. kaç tane? n tane. n tane. O zaman n çarpı c'dir.
+
+654
+01:52:21,779 --> 01:52:25,939
+Sonucu budur. Peki, gelelim bizim kullanacağımıza.
+
+655
+01:52:26,519 --> 01:52:30,419
+k eşittir. 1'den n'ye kadar mesela 1 bölü n.
+
+656
+01:52:31,559 --> 01:52:36,679
+Şimdi bu sabit midir, değil midir? 1 bölü n sabit midir? Nasıl yazarız bu?
+
+657
+01:52:37,739 --> 01:52:39,959
+Nedir arkadaşlar? Fikri olan var mı?
+
+658
+01:52:41,579 --> 01:52:42,779
+k'ya bağlı mı bu?
+
+659
+01:52:43,239 --> 01:52:43,559
+K'ya bağlı.
+
+660
+01:52:43,559 --> 01:52:47,059
+Hocam sabittir ya. Zaten n sayısı belli bir sayı olduğu için.
+
+661
+01:52:47,891 --> 01:53:02,771
+Teşekkür ederim. Yani şöyle değil mi? 1 bölü ne? 1 bölü ne? 1 bölü ne? Kaç tane? Ne tane? 1 bölü ne yazıyoruz. Aslında şununla şunun çarpımı oluyor değil mi? E o zaman sonucu...
+
+662
+01:53:02,771 --> 01:53:03,671
+Cevap neye çıkıyor.
+
+663
+01:53:04,231 --> 01:53:09,891
+Evet, bu çok önemli. Neye çarpı 1 bölü ne? Mesela bir tane daha örnek yazacağım.
+
+664
+01:53:11,380 --> 01:53:21,240
+k eşittir 1'den n'ye kadar n kare. Bunun cevabı ne olur? n çarpı n küptür.
+
+665
+01:53:21,700 --> 01:53:32,480
+Mesela şöyle olsun. k eşittir 1'den n'ye kadar 1 bölü 5 bölü 5 bölü n olsun. Bunun cevabı kaçtır?
+
+666
+01:53:32,480 --> 01:53:32,980
+5.
+
+667
+01:53:34,560 --> 01:53:36,580
+Yani k'ya bağlı değil.
+
+668
+01:53:37,268 --> 01:53:51,188
+toplamları biliyorsanız artık soruları çözebiliriz. Tamam mı arkadaşlar? Yani şurası n çarpı 1 bölü n'den 1 gelecek. Şu özellik bakın.
+
+669
+01:53:51,572 --> 01:54:14,692
+n çarpı c özelliği yani sabitle çarpımı 1'dir. Şimdi bu soruyu çözeceğiz ama bir ara vereceğiz arkadaşlar. Bir boğazımızı yumuşasın. 15 dakika ara sizler için yeterli midir? Evet, bu aslında da arkadaşlar sınav 12. hafta olabilir.
+
+670
+01:54:15,412 --> 01:54:41,412
+Tarihi belli değil ama büyük bir ihtimalle 12. hafta olacak. Tamam mı arkadaşlar? Yani o da Aralık ayının sonuna doğru ama siz hesaplarsanız galiba biz 10. haftadayız galiba arkadaşlar. Bir bakmak lazım hesaplayalım. Evde olunca haftalar da karışıyor. 12. hafta.
+
+671
+01:54:41,855 --> 01:55:06,935
+Ben de bir hesaplayayım bakayım. Genelde 12. hafta. 12. hafta olma ihtimali yüksekmiş arkadaşlar. Öğrendiğim kadarıyla. Tamam mı arkadaşlar? Evet. Şimdi ara verelim mi? 11 geçe görüşmek üzere arkadaşlar. Şimdilik 15 dakikalık ara veriyoruz.
+
+672
+02:10:05,811 --> 02:10:14,652
+arkadaşlar, çeyrek geçe başlayacağız. 4 dakika sonra. Tamam mı? Terse çeyrek geçe başlayacağız.
+
+673
+02:15:02,228 --> 02:15:06,587
+Merhaba arkadaşlar. Dersimize kaldığımız yerden devam ediyoruz.
+
+674
+02:15:07,228 --> 02:15:10,887
+Süre yeterli gelmiştir herhalde. Dinlendiniz, kafanızı topladınız.
+
+675
+02:15:12,108 --> 02:15:16,047
+Şimdi yine ekran paylaşımı yapayım arkadaşlar.
+
+676
+02:15:18,108 --> 02:15:21,228
+Evet, şimdi ilk önce size bir örnek çözeceğim.
+
+677
+02:15:21,747 --> 02:15:38,087
+Sonra nelere dikkat etmeniz gerektiğine bugün yetişmeyecek ama büyük bir ihtimalle yarın devam edeceğiz. Bir anda bütün pdf bitecek arkadaşlar. Yani bir anda demeyelim de anladıktan sonra bütün pdf okuduğunuz zaman daha iyi anlayacağınızı düşünüyorum.
+
+678
+02:15:47,072 --> 02:15:52,992
+bulalım arkadaşlar. Şöyle ben soruyu yazacağım. Ekran paylaşımı yapacağım.
+
+679
+02:15:59,412 --> 02:16:04,472
+Evet, ekranı yansıttım. Geliyor mu arkadaşlar? Görebiliyor musunuz?
+
+680
+02:16:04,592 --> 02:16:05,172
+Geldi hocam.
+
+681
+02:16:05,172 --> 02:16:26,792
+Şimdi şöyle, sorular şöyle geliyor. Mesela diyecek ki soruda y eşittir 1-x kare fonksiyonu ehlisinin, şimdi yazayım, sileceğim sorunun bir çok kısmını, ehlisinin altında, altında ve
+
+682
+02:16:27,315 --> 02:16:52,995
+x ekseninin 0 ile 1 aralığı üstündeki R bölgesinin R bölgesinin alanını Alt-Riemann toplamı ile bulunuz.
+
+683
+02:16:54,932 --> 02:17:16,108
+ile bulunuz. Şimdi soru bu. Şimdi biz eğriyi biliyoruz. Şöyle ben ilk önce anlatacağım şöyle eğri bu şeklinde bu. Normalde bunlara ihtiyaç duymayacağız. y eşittir 1-x kare. Şimdi arkadaşlar fonksiyonunuz y eşittir fx
+
+684
+02:17:16,915 --> 02:17:44,915
+fx eşittir, 1-x kare. Bu nedir arkadaşlar? 0-1 aralığında, baktığınız zaman f üstü x, eksi 2x'tir. 0 ile 1 aralığında arkadaşlar azalan fonksiyondur. Negatiftir değerleri. Zaten belli oluyor. Şeklini bildiğimiz için azalıyor. Azalan bir fonksiyon. Azalan bir fonksiyonu da biz gördük. Şimdi sol uç nokta, üst Riemann toplamıydı. Şöyle, sol uç nokta.
+
+685
+02:17:44,915 --> 02:17:58,216
+uç nokta, azalan fonksiyonlar, sol uç nokta, üst Riemann toplamı, Riemann toplamı, sağ uç noktada, alt Riemann.
+
+686
+02:17:58,592 --> 02:18:22,912
+toplamıydı. Şöyle geliyordu. Sağ uç noktada şu şekilde geliyordu. Alt Riemann. Azalan da bu böyle ya. Artan da tam tersi arkadaşlar. Öyle de aklımızda kalabilir. Şimdi bizim bu soruya dahil bildiklerimiz şimdi bir fonksiyon, azalan bir fonksiyon. Alt Riemann toplamı sorulmuş. Şimdi sildim. Alt Riemann toplamı sorulmuş.
+
+687
+02:18:23,507 --> 02:18:31,187
+Hangi aralıkta? 0-1 aralığında 6 Riemann toplamında azalan fonksiyon olduğu için
+
+688
+02:18:31,187 --> 02:18:33,687
+şöyle
+
+689
+02:18:33,687 --> 02:18:36,108
+azalan fonksiyon da
+
+690
+02:18:36,108 --> 02:18:38,667
+pardon azalan fonksiyon da
+
+691
+02:18:38,667 --> 02:18:40,727
+tamam üst Riemann bu
+
+692
+02:18:40,727 --> 02:18:42,647
+niye böyle yazmışım
+
+693
+02:18:42,647 --> 02:18:44,187
+azalan fonksiyon
+
+694
+02:18:45,587 --> 02:19:03,647
+altrı iman toplamı sorulmuş. Altrı iman. Yani bu ne demek? Arkadaşlar şöyle değil mi? Dikdörtgenler içeride kalacak. Şöyle. Bu da azalan fonksiyonda zaten sağ uç nokta demek. Sağ uç nokta. Tamam mı arkadaşlar?
+
+695
+02:19:13,139 --> 02:19:35,039
+üst Riemann demek, sol uç nokta demek. Tamam mı arkadaşlar? Şimdi bunu hatırlattık. Şimdi bunları biliyoruz. Siliyorum yeniden. Şimdi gelin beraber Riemann alanını Riemann toplamı ile bulalım. Şimdi arkadaşlar şöyle yapıyoruz.
+
+696
+02:19:36,755 --> 02:19:59,995
+aralıkları şimdi birincisi Alt Riemann toplamıyla bulmamı istiyor. Yani sağ uç noktayla bulacağım. Yazıyorum. Şimdi aralıklar. Aralıklar nasıl? 0 ile 1 arası. Şimdi arkadaşlar 0 ile 1 delta x her aralığı eşit aralıklara bölüyorum. 1-0 bölü.
+
+697
+02:20:00,000 --> 02:20:26,579
+n yani 1 bölü n. n parçaya böleceğim. 0 ile başladım. 0'a 1 bölü n ekledim. Bu oldu. Yani şöyle. 0 ile bir arasını parçalara böleceğim. 1 bölü n, 2 bölü n, 3 bölü n, 4 bölü n, 5 bölü n. Devam edecek. Şurası k bölü n olsun. Devam edecek ve n bölü n.
+
+698
+02:20:26,932 --> 02:20:52,832
+şimdi birinci aralık şurası. 0 ile 1 bölü n aralığı. 2. aralık şurası. 1 bölü n'e 2 bölü n aralığı. 3. aralık 2 bölü n'e 3 bölü n aralığı. Devam edecek. Şöyle devam ettik. Bakın bu birinci aralık. Bu ikinci aralık. Bu üçüncü aralık.
+
+699
+02:20:53,940 --> 02:21:12,100
+Şimdi k'nıncı aralık ne olur arkadaşlar? Bakın, 3. aralıkta burası 3, k'nıncı aralıkta burası k bölü n, burası k eksi 1 bölü n ve n'inci aralıkta n bölü n yani 1, ondan öncesi de n eksi 1 bölü n'dir.
+
+700
+02:21:13,319 --> 02:21:14,819
+Şu bu şekilde ayırdık.
+
+701
+02:21:16,040 --> 02:21:18,180
+Şimdi ne dedik arkadaşlar?
+
+702
+02:21:18,900 --> 02:21:20,760
+Altı Riemann toplamı istiliyor.
+
+703
+02:21:21,652 --> 02:21:45,652
+azalan fonksiyonda alt Riemann toplamı sağ uç nokta. Yani hangileri? Şunlar. Sağ uç nokta. Bunlara göre alıyoruz. Şimdi o zaman nasıl oluyor arkadaşlar? Şimdi bütün bunların delta x'lerin yani şu dikdörtgenlerin taban uzunlukları bir bölü. Yükseklikleri
+
+704
+02:21:46,031 --> 02:22:06,092
+bakın birincisi taban uzunluğu 1 bölü n yüksekliği f ilk yıldız 1 bölü n. İkincisi taban uzunluğu 1 bölü n yüksekliği f 2 bölü n. Taban uzunluğu 1 bölü n, üçüncüsü f 3 bölü n. Devam etti.
+
+705
+02:22:07,827 --> 02:22:25,827
+şöyle şuradan devam ediyoruz. k'nıncıda 1 bölü n, taban uzunluğu f k bölü n. Sonra devam ettiği 1 bölü n, f m bölü n. Yani 1. Yani şunları yazdım. Bakın.
+
+706
+02:22:26,100 --> 02:22:52,720
+sağ uç noktadakileri yazdım. Şimdi buna esen dedik toplama. Şimdi sigma notasyonunu kullanacağız. Bakın esen arkadaşlar, bunu böyle uzun uzun yazmayalım da tek bir indiz şeklinde yazalım. Sigma notasyonu örüle. Şimdi bakın şurası, bakın k'lı niye yazdım? Bunun için. K'nıncı eleman var. 1 bölü n, f, k bölü n.
+
+707
+02:22:53,056 --> 02:23:15,576
+Bakın k'nın c eleman bu işe yarıyor. k kaçtan? k eşittir 1'den n'ye kadar gidiyor. Hakikaten bakın k yerine 1 koyun 1 bölü n, f1 bölü n, 2 koyun 1 bölü n, f2 bölü n, 3 koyun 1 bölü n, f3 bölü n ve n koyun 1 bölü n, fn bölü n'den f1 gelir.
+
+708
+02:23:16,576 --> 02:23:20,015
+Buraya kadar anlaşıldı mı? Evet, sesim geliyor mu?
+
+709
+02:23:20,724 --> 02:23:22,824
+Anlaşıldı hocam.
+
+710
+02:23:23,044 --> 02:23:47,443
+Şimdi arkadaşlar, şimdi burayı siliyorum. Bunu anladınız. O zaman eseni yazdık. Bu ne? En tane toplam yazdık. Riemann toplamı. Esen eşittir. K eşittir. 1'den N'ye kadar. 1 bölü N, F1 bölü N. İşte bu toplamı bulacağız. Pardon. FK bölü N.
+
+711
+02:23:49,268 --> 02:24:14,567
+şurası f k bölü m. Yazdık. Bu Riemann toplamımız. Riemann toplamı. Yazdık toplamı. E şimdi toplayalım. Toplayalım. Bulalım. Neymiş? Şimdi elimizde var. Neydi arkadaşlar? k eşittir. 1'den m'ye kadar 1 bölü m. f ne? Bakın şurada göstereyim. Şurayı sileyim artık.
+
+712
+02:24:15,796 --> 02:24:38,796
+y eşittir, şurası bakın, y eşittir 1-x kare, yani y eşittir fx değil mi? fx eşittir 1-x kare, o zaman ne verilmiş? fk bölü n. x yerine ne yazacağım? k bölü n. Yazalım. 1-k'nın karesi bölü ne karedir?
+
+713
+02:24:40,147 --> 02:24:58,608
+O zaman burası 1 bölü n, fk bölü n nedir? 1-k'nın karesi bölü ne karedir? Bu da tamam mı arkadaşlar? E şimdi şurada yer kaplamasın, şöyle yapalım. E sen niye eşit çıktı? K eşit...
+
+714
+02:24:58,608 --> 02:25:02,268
+Hocam 1-k kare bölünün ne kareyi nasıl bulduklarını anlamadım.
+
+715
+02:25:02,747 --> 02:25:07,608
+fx şurada ya, fonksiyonumuz şu ya, eğri bu ya.
+
+716
+02:25:09,172 --> 02:25:10,871
+tamam, tamam, şu an aslan.
+
+717
+02:25:11,231 --> 02:25:19,711
+fx bu olduğu için, fx x yerine k bölü m verdim. f dediğimiz şey bizim fonksiyonumuz, y eşittir, fx bu.
+
+718
+02:25:20,551 --> 02:25:33,691
+Şimdi arkadaşlar bakın, ister bunu böyle değil mi? 1 bölü m, dağıtalım, 1 bölü m, k eşittir, 1 denliyeye kadar, 1 bölü m, eksi, k'nın karesi bölü ne küptür?
+
+719
+02:25:34,227 --> 02:25:36,468
+Bu doğru mu arkadaşlar? Dağıttım.
+
+720
+02:25:37,067 --> 02:25:39,007
+Aslında burada kaç tane toplam var?
+
+721
+02:25:39,727 --> 02:25:41,507
+2 tane. Bakın yazıyorum.
+
+722
+02:25:42,087 --> 02:25:45,907
+Birisi k eşittir birden neye kadar bir bölü n.
+
+723
+02:25:46,507 --> 02:25:53,847
+Diğeri de k eşittir birden neye kadar k'nın karesi bölü ne küptür.
+
+724
+02:25:54,968 --> 02:25:56,268
+Tamam mı arkadaşlar burada?
+
+725
+02:25:56,268 --> 02:25:59,147
+Şimdi bakın arkadaşlar şurayı sileyim.
+
+726
+02:25:59,547 --> 02:26:00,687
+Şurada göstereceğim.
+
+727
+02:26:02,548 --> 02:26:13,028
+k eşittir, hatta farklı renk edeyim, k eşittir 1'den neye kadar? 1 bölü en. Bunun toplamı nedir arkadaşlar? Bu neye bağlı?
+
+728
+02:26:13,048 --> 02:26:26,688
+1. Evet, teşekkür ederim. k'ya bağlı. Dolayısıyla hep 1 bölü en, 1 bölü en, 1 bölü en, hep toplamları kaç tane? En tane 1 bölü en'den sonuç 1'dir. Yani bu toplam 1.
+
+729
+02:26:30,484 --> 02:26:37,184
+Şu ise k eşittir birden neye kadar k'nın karesi bölü ne küp.
+
+730
+02:26:37,783 --> 02:26:44,144
+Şimdi burada sabit olan hangisidir indise bağlı olmayan bu k'nın karesi bölü ne küpte?
+
+731
+02:26:44,664 --> 02:26:45,304
+Ne küp.
+
+732
+02:26:45,884 --> 02:26:47,504
+Ne küp. Şöyle yazabilirim.
+
+733
+02:26:47,943 --> 02:26:50,904
+Bir bölü ne küp sabittir dışarıya çıkar.
+
+734
+02:26:51,384 --> 02:26:54,684
+k eşittir birden neye kadar k'nın karesi gelir.
+
+735
+02:26:56,180 --> 02:27:14,600
+Bu nedir arkadaşlar? Bunun toplamı şöyle derim. 1 bölü ne küp başta? Bunun toplamı neydi? Hatırlayın. N çarpı, N artı 1 çarpı, 2n artı 1 bölü 6 idi. Tamam mı? O zaman bakın şimdi ben yazayım.
+
+736
+02:27:23,700 --> 02:27:25,159
+şunu şuradan silelim.
+
+737
+02:27:27,000 --> 02:27:35,780
+n çarpı, n artı 1 çarpı, 2n artı 1 bölüm 6 olur.
+
+738
+02:27:36,460 --> 02:27:42,420
+Arkadaşlar, şurayı açtığımız zaman, bakın, n artı 1 ile 2n artı 1'i çarpalım.
+
+739
+02:27:42,420 --> 02:27:43,639
+Ne gelir?
+
+740
+02:27:44,031 --> 02:28:11,191
+2n kare artı n artı 2n artı 1, 2n kare artı 3n artı 1 gelir. Bir de neyle çarparsak şöyle gelir. 2n küp, 3n kare artı n gelir. Bir de n ile çarparsak. Şuraları n gelecek başına. Yani şurası şöyle gelir. Şunları silelim. Şöyle geliyor. Esen eşittir.
+
+741
+02:28:12,084 --> 02:28:20,064
+1-2 ne küp, 3 ne kare artı ne bölüm 6 ne küp gelir.
+
+742
+02:28:21,324 --> 02:28:26,244
+Evet, Riemann toplamını bulduk mu? Bulduk. Böyle bir ifadeymiş.
+
+743
+02:28:26,244 --> 02:28:36,244
+Şimdi bize alanını soruyor. Neler nereye giderse alanını bulacağız. Neler nereye gidecek? Sonsuza. Şöyle diyoruz.
+
+744
+02:28:38,131 --> 02:28:58,031
+n sonsuza giderken alan esen alan eşittir budur. Limit n sonsuza giderken 1-2 ne küp 3 ne kare artı n bölü 6 ne küptür. Evet, şimdi
+
+745
+02:28:58,708 --> 02:29:12,407
+n yerine sonsuz verdik. 1 sabit, sabitin limiti 1'dir. Eksi. Şimdi burası arkadaşlar, yukarısı bir polinom. Mesela şöyle düşünün. Limit x sonsuza giderken 2x küp.
+
+746
+02:29:12,703 --> 02:29:22,144
+bir şey, bölü 6x küm. En büyük derecesi 3, aşağının da en büyük derecesi 3 ya da sonsuz bölü sonsuz L'Hospital alırsınız.
+
+747
+02:29:22,743 --> 02:29:29,344
+Yani burası en büyük derece 3, aşağısı da en büyük derece 3, sonsuz bölü sonsuz belirsizliği.
+
+748
+02:29:29,863 --> 02:29:35,384
+O yüzden kaç sayılarını alıyorduk? 2 bölü 6, yani 1 bölü 3'tür.
+
+749
+02:29:35,384 --> 02:29:39,363
+1-1 bölü 3'ten de kaç gelir? Sonuç?
+
+750
+02:29:40,115 --> 02:29:40,376
+x kare artı 2x, f'
+
+751
+02:29:40,376 --> 02:30:03,615
+f'
+
+752
+02:30:03,615 --> 02:30:06,615
+f
+
+753
+02:30:00,000 --> 02:30:20,619
+Evet, tebrik ederim, doğru. Yani integral, şimdi onun tanımını vereceğim. Integral demek, arkadaşlar, eğer bir pozitif bölgedeyse bu yaptığımız işlem aslında bu alanı bulduğumuz işlem, Riemann toplamıyla bu alanı bulduk ya 2 bölü 3. Bu bizim belirli integralimiz.
+
+754
+02:30:21,072 --> 02:30:48,792
+ama Riemann toplamıyla çözün derse, integrali kullanamazsınız. Tamam mı arkadaşlar? Yani doğru. İşte bunun tanımı da bu. Yani tanımı ne derseniz şöyle kısaca söyleyeyim. Bu 1-x karenin, şuraya yazabilirim. Bir boşluk göreyim. [öğrenci]'in dediği gibi şuraya. Ne deriz? 1-x karenin, değil mi?
+
+755
+02:30:49,072 --> 02:30:50,972
+yaptın. Evet hocam.
+
+756
+02:30:51,452 --> 02:31:04,752
+İşte bakın bu, işte şu bölgedeki, bu bölgedeki sıfırla bir arasındaki şu bir eksi x karenin altında kalan alanı veriyormuş. Yani bizim
+
+757
+02:31:05,152 --> 02:31:17,632
+Şu esen toplamının sonsuza gitmesiyle bu elde ettiğimiz ifade bunu eşitmiş. Yani bu belirli integralin tanımı da bu. Bu pozitiflerde çıkar.
+
+758
+02:31:18,355 --> 02:31:41,396
+Ama [öğrenci], eğer şöyle olursa, göstereceğim yarın size bu kısım önemli. Mesela bir burası var, bir de şöyle bir şey var, altta da bir şey var. Mesela burası 10 çıkacak ama burası eksi 5 çıkacak. Bunun alanının toplamı, yani bu integralin sonucu 5 çıkar. Ama bunun alanı aslında 15'tir.
+
+759
+02:31:42,484 --> 02:31:48,004
+Yani integralde şu değerle şu değer sade bir toplama yapar integral.
+
+760
+02:31:49,004 --> 02:31:55,684
+Yani pozitif bölgelerde fonksiyon pozitif ise integral alanı verir.
+
+761
+02:31:56,664 --> 02:32:03,044
+Negatif yerde ise elde ettiğiniz integralin pozitif değeri alanı verir.
+
+762
+02:32:03,700 --> 02:32:21,100
+Öyle bir şey söyleyelim. Her zaman alanı vermez. Yani negatif bölgelerde alanın eksilisini verir. Yani şu bölgede eksi çıkar ama alan eksi olmaz. Onu eksiyle çarpmanız gerekir. Anlatabildim mi [öğrenci]? Bilmiyorum.
+
+763
+02:32:21,580 --> 02:32:22,479
+Anladım hocam, sağ olun.
+
+764
+02:32:22,680 --> 02:32:29,520
+Tamam. Rica ederim. Başka sorusu olan var mı? Yok galiba. Şimdi bakın arkadaşlar.
+
+765
+02:32:31,028 --> 02:32:55,028
+Şimdi biz bunu neyle yaptık? Alt yaklaşım, alt Riemann toplamı ile yaptık. Yani sağ uç noktaya göre yaptık. Bakın bunu üst Riemann toplamı ile de yapabiliriz. Yapalım mı arkadaşlar? Şöyle bunun üzerinden mi anlatayım veya yazarak mı anlatmamı isterseniz, nasıl isterseniz?
+
+766
+02:32:56,531 --> 02:32:57,031
+Evet.
+
+767
+02:32:57,471 --> 02:32:58,471
+Yazarak daha iyi olacak.
+
+768
+02:32:58,851 --> 02:33:01,391
+Efendim, yazarak mı? Anlamadın.
+
+769
+02:33:01,491 --> 02:33:01,671
+Evet.
+
+770
+02:33:02,171 --> 02:33:13,091
+Yazarak, tamam. Şimdi ben yine tablete bağlanayım. Bakın arkadaşlar, üst rimanı da sorabilirdi. Şöyle bağlanayım.
+
+771
+02:33:20,051 --> 02:33:34,371
+şimdi birazcık daha hızlı anlatacağım. y eşittir 1-x kare yani y eşittir fx de diyelim. 1-x kareyi üst Riemann toplamıyla bulunuz. Riemann toplamıyla alanını bulunuz.
+
+772
+02:33:34,708 --> 02:33:36,568
+Tamam mı? Kısaca yazdım.
+
+773
+02:33:37,048 --> 02:33:38,708
+Şimdi şöyle diyelim arkadaşlar.
+
+774
+02:33:39,468 --> 02:33:44,587
+Üslüman toplamında aralığınız kaç ile kaç arasında? 0 ile 1 arasında.
+
+775
+02:33:45,208 --> 02:33:47,048
+Fonksiyonunuz nasıl arkadaşlar?
+
+776
+02:33:47,288 --> 02:33:48,408
+Fonksiyon azalan.
+
+777
+02:33:49,408 --> 02:33:52,208
+Üslüman toplamı için sol 3 nokta.
+
+778
+02:33:52,208 --> 02:33:54,508
+Tamam mı?
+
+779
+02:33:54,772 --> 02:34:21,912
+sol 3 nokta. Şimdi o zaman yine en tane aralığa bölüyoruz. delta x'leriniz ne? Son nokta 1, eksi ilk nokta 0, bölü n'den 1 bölü n'lik aralıklara bölüyoruz. 0'dan yine 1 bölü n'e, 1 bölü n'den 2 bölü n'e, 2 bölü n'den 3 bölü n'e, böyle devam ettik. Bakın birinci aralık
+
+780
+02:34:22,772 --> 02:34:39,352
+2. aralık, 3. aralık şöyle kısaca yazıyorum. k'nıncı aralık ne olacak? k bölü n, k-1 bölü n. Devam ettik ve en son aralık n bölü n'e n-1 bölü n olacak.
+
+781
+02:34:39,352 --> 02:34:48,872
+Şimdi ne uygulayacağız? Sol uç nokta. Sol uç noktalar. Şöyle, sollar. Pardon.
+
+782
+02:34:52,659 --> 02:34:53,900
+sol uç nokta
+
+783
+02:34:57,427 --> 02:35:01,268
+soldakiler şöyle aldık.
+
+784
+02:35:02,347 --> 02:35:02,847
+Şunlar.
+
+785
+02:35:03,587 --> 02:35:05,867
+Demek ki esen toplamı şöyle diyorum.
+
+786
+02:35:06,647 --> 02:35:10,907
+Her aralığın dikdörtgenin alt uzunluğu 1 bölü m.
+
+787
+02:35:11,047 --> 02:35:12,268
+Delta x'ler değişmez.
+
+788
+02:35:12,448 --> 02:35:17,907
+Delta x1, delta x2, delta x3, delta xk hepsi delta x eşit.
+
+789
+02:35:22,783 --> 02:35:46,984
+sıfırdaki değeri. Sonra 1 bölü n, f'in 1 bölü n'deki değeri. Sonra 1 bölü n, f'in 2 bölü n'deki değeri. Sonra geldik şuraya. 1 bölü n, f'in k-1 bölü n'deki değeri. Devam ettik. En sonucu da 1 bölü n, f, n-1 bölü n'deki değeri.
+
+790
+02:35:47,763 --> 02:35:52,963
+Şimdi arkadaşlar, diyoruz ki bu çok uzun yazmak. Biz bunu indisleyelim.
+
+791
+02:35:53,663 --> 02:35:54,783
+k eşittir.
+
+792
+02:35:56,243 --> 02:35:58,003
+Ne olacak arkadaşlar?
+
+793
+02:35:58,144 --> 02:36:01,763
+Birden n'ye şu k'nın c'yi alacaksınız.
+
+794
+02:36:02,443 --> 02:36:04,203
+Direkt yazacaksınız.
+
+795
+02:36:05,324 --> 02:36:09,203
+f k-1 bölüm endir.
+
+796
+02:36:09,863 --> 02:36:14,463
+Şimdi arkadaşlar, baktığınız zaman artık soru bitti gibi.
+
+797
+02:36:14,832 --> 02:36:31,832
+k eşittir 1'den n'ye kadar 1 bölü n. Şimdi bakın, fx, 1-x kare ise, k-1 bölü n'ye eşittir, x gördüğünüz yere k-1 bölü n yazacaksınız.
+
+798
+02:36:33,832 --> 02:36:34,796
+Karesi.
+
+799
+02:36:34,995 --> 02:36:50,735
+olur. Buradan ne gelir? Açtığımız zaman 1-1 bölü ne kare? k'nın karesi eksi 2k artı 1 gelir. Tamam mı arkadaşlar? Yani şu geldi. 1 bölü n, şunu yazalım.
+
+800
+02:37:02,675 --> 02:37:29,795
+1. Böyle geldi değil mi arkadaşlar? Şimdi bu da arkadaşlar ne demek? Şöyle diyelim. S n eşitti. K eşittir. Şuradan ne gelir? 1- gelmiyor. 1- n'ye kadar 1 bölü n açalım. Eksi k bölü ne küp? Şunu şöyle dağıtıyorum.
+
+801
+02:37:30,191 --> 02:37:41,691
+hepsini açarak yazıyorum. 2k bölü ne küp, eksi, 1 bölü endir. Bu şekilde gelir. Şimdi arkadaşlar, burada bakın.
+
+802
+02:37:45,191 --> 02:37:56,611
+Şurası eksi, yanlış mı yazdım? Şurası 1 bölü ne küp olacak. Evet, böyle geliyor değil mi? Doğru yazdıysam. 1 bölü endir.
+
+803
+02:37:57,332 --> 02:38:05,332
+Şimdi arkadaşlar, şurasını şöyle yazalım. k eşittir birden neye kadar bir bölü n.
+
+804
+02:38:06,612 --> 02:38:11,572
+Bir bölü ne küp dışarıya çıkar. k eşittir birden neye kadar k.
+
+805
+02:38:13,711 --> 02:38:16,391
+Şurası k'nın karesi mi olacaktı?
+
+806
+02:38:16,391 --> 02:38:18,192
+Şurası k'nın karesi.
+
+807
+02:38:19,992 --> 02:38:21,952
+Şurası artı
+
+808
+02:38:22,451 --> 02:38:28,331
+2 bölü ne küp dışarıya çıkar. k eşittir 1'den n'ye kadar 1 bölü.
+
+809
+02:38:28,331 --> 02:38:29,611
+Pardon k.
+
+810
+02:38:31,671 --> 02:38:34,412
+Ve sonrasında da şu gelir.
+
+811
+02:38:35,031 --> 02:38:39,111
+k eşittir 1'den n'ye kadar 1 bölü ne küp gelir.
+
+812
+02:38:40,151 --> 02:38:41,951
+Şimdi ben şöyle göstereyim.
+
+813
+02:38:42,891 --> 02:38:45,011
+Şöyle, şu sabit.
+
+814
+02:38:45,523 --> 02:39:10,243
+1 bölüne sabit k'ya bağlı değil. Toplamı n çarpı 1 bölüne eksi 1 bölüne küp şu k'nın karesi yani sigma notasını da göre birden n'ye kadar sayıların karelerini toplama oda n çarpı n artı 1 çarpı 2n artı 1 bölü 6 sonra artı 2 bölüne küp
+
+815
+02:39:10,484 --> 02:39:25,144
+Burası nedir arkadaşlar? Birden n'ye kadar sayıların toplamı n çarpı n artı 1 bölü 2. Sonra da, şurası da bu sabit bir bölü n küp, n çarpı 1 bölü n küp yapar.
+
+816
+02:39:25,804 --> 02:39:37,424
+Sonra hocam, o toplam simbolünde k kare olan yerde n çarpı n artı 1 çarpı 2 n artı 1 bölü 6 nasıl çıkıyor? Ben onu tam kavrayamadım.
+
+817
+02:39:38,355 --> 02:40:02,195
+şuradan arkadaşlar, onu direkt göstereceğim size. Şu, bakın, şu, şöyle sileyim. Birden neye kadar olan sayıların toplamı, şöyle, şöyle, bakın, birden neye kadar sayıların toplamı, eğer burası k ise, n çarpı, n artı, 1 bölü, 2.
+
+818
+02:40:03,476 --> 02:40:16,296
+Eğer k'nın karesi ise, yani karelerinin toplamı ise, birden L'ye kadar olan sayıların n çarpı n artı 1 çarpı 2n artı 1 bölü 6.
+
+819
+02:40:16,296 --> 02:40:22,136
+Eğer k küpse şöyle ise, bu da nedir arkadaşlar?
+
+820
+02:40:31,156 --> 02:40:34,076
+n çarpı n artı 1 bölü 2'nin karesi.
+
+821
+02:40:35,096 --> 02:40:36,156
+Evet, anladın mı?
+
+822
+02:40:36,556 --> 02:40:37,996
+Anladım hocam. Teşekkür ederim.
+
+823
+02:40:38,015 --> 02:40:39,436
+Bir de bilmeniz lazım.
+
+824
+02:40:39,936 --> 02:40:40,396
+Anladım.
+
+825
+02:40:40,736 --> 02:40:41,536
+Tamam. Sağ ol.
+
+826
+02:40:42,056 --> 02:40:48,056
+Rica ederim. Şimdi arkadaşlar, bunu söyledik. Bakın o da şu. En son yazdığımız.
+
+827
+02:40:48,724 --> 02:41:16,724
+Bunun limitini alacağız. Şu n'ler gitti 1. 1'in limiti 1'dir. Tamam mı arkadaşlar? Şurası arkadaşlar düzenlediğiniz zaman 2 ne küp artı 3 ne kare artı n geliyor. Aşağısı da 6 ne küp. Yine en büyük derece pay 3. Aşağısı da 3. dereceden kas sayıları gelir. 2 bölü 6 olur. Sonra geldik buraya. Bakın arkadaşlar.
+
+828
+02:41:16,724 --> 02:41:43,404
+arkadaşlar payın derecesi ne kare, paydanın derecesi ne küp? 1 bölü sadeleşir aşağıda ne kalır? Dolayısıyla bunun limiti 0 çıkar. Şunun limiti 0 ve şurası da bakın şununla şu da sadeleşir veya ben burada normal şöyle yapmışım. Evet şimdi ne yaptığımı şimdi aklımdan öyle yaptım ama şöyle yapmışım.
+
+829
+02:41:44,915 --> 02:41:56,915
+göstereyim onu da arkadaşlar size. Evet şurada arkadaşlar şunu açtığım zaman şunlar gider. Şununla şu sadeleşir.
+
+830
+02:41:56,948 --> 02:42:17,087
+n artı 1 bölü, n kare, eksi, şunlar da gider, n bölü, n kare. Bunları normal işlem yapıp, yani burada işlemi sonuçlandırmışım, 1 bölü ne kare kalmış. Bunun öyle limitini almışım. Yani sonuçta şu veya 1 bölü n mi kalmış?
+
+831
+02:42:24,404 --> 02:42:33,384
+artı n, eksi n daha, ne kareler kalıyor? 1bule n kalıyor, şu kalıyor, bu sıfır. Doğru yapmışım galiba.
+
+832
+02:42:37,843 --> 02:42:50,984
+arkadaşlar, alt Riemann toplamında alt Riemann alarak sağ uç noktayı kullanarak 2 bölü 3 bulduk. Üst Riemann toplamında sol uç noktaları alarak
+
+833
+02:42:51,379 --> 02:43:17,379
+kaç bulduk arkadaşlar yine? 2 bölü 3 bulduk. Buraya kadar anladınız mı? Önemli bir şey söyleyeceğim. Şimdi, bu benim için bunu bu şekilde öğrenmeniz önemli. Yani Riemann'dan soru gelir mi sınavda? Nasıl gelir bilemem. Ama bunun yapısını, bunun nasıl olduğunu anlarsanız sonrasında rahat edersiniz. Bunu anladınız mı arkadaşlar?
+
+834
+02:43:18,064 --> 02:43:27,423
+Var mı bir sıkıntı burada? Zannetmiyorum. Evet, biraz karışık geldi mi sizlere? Oldukça sade anlatmaya çalıştım.
+
+835
+02:43:27,544 --> 02:43:31,404
+Hocam ben anladım bence yani. Çok şey değil. Çok karmaşık değil.
+
+836
+02:43:31,404 --> 02:43:36,644
+Çok şey değil. Yani sadece fazla terim var ama önemli olan konuyu anlamamız.
+
+837
+02:43:37,283 --> 02:43:42,064
+Ve yarınkinde, yarın da devam edeceğim. İşte [öğrenci] çok güzel...
+
+838
+02:43:43,379 --> 02:43:46,020
+Konuşan [öğrenci] miydi onu da bilmiyorum ama
+
+839
+02:43:46,020 --> 02:43:49,399
+[öğrenci] integral'i sordu.
+
+840
+02:43:51,180 --> 02:43:58,119
+Ve gerçekten onunla pozitif ve negatif bölgelere de dikkat ederseniz hiçbir zaman karıştırmazsınız.
+
+841
+02:43:58,299 --> 02:44:00,139
+Şimdi size bir şey göstereceğim.
+
+842
+02:44:00,360 --> 02:44:00,979
+Nerede bu?
+
+843
+02:44:01,559 --> 02:44:03,099
+Şimdi başlara geri dönüyorum.
+
+844
+02:44:03,239 --> 02:44:05,200
+Bakın sonlara doğru gittim.
+
+845
+02:44:05,907 --> 02:44:16,387
+iç içi anlatıyorum. Notları hazırlarken de çok zorlandım. Çünkü pozitifler için ilk önce anlatıp negatifleri sonra katmam lazım oldu anlamanız için.
+
+846
+02:44:16,927 --> 02:44:30,067
+Şu, bakın arkadaşlar. Şimdi direkt formülden de yapabilirsiniz. Sağ uç nokta seçilirse, bakın, sağ uç nokta için formül neymiş?
+
+847
+02:44:30,867 --> 02:44:32,608
+Bakın arkadaşlar.
+
+848
+02:44:33,716 --> 02:44:36,276
+şu. Neden olmadı?
+
+849
+02:44:38,796 --> 02:45:00,115
+Şurası. Şöyle yapalım. Sağ uç nokta burası. Gördünüz mü? Sağ uç nokta için bakın bir AB aralığı için esen direkt böyle hesaplayabilirsiniz. Tamam. Şimdi bakın aynı soruyu. Şimdi bakın şöyle küçücük 5 dakika ne yaptığımı göstereyim.
+
+850
+02:45:00,915 --> 02:45:25,775
+Şimdi sağ uç nokta, aklınızda tutabilecek misiniz? Ben yazacağım. Bakın, formül şu. Diyor ki, evet, tablet geldi değil mi? Diyor ki, sen diyor, bir kapalı a-b aralığında sağ uç nokta seçildiği zaman bu Riemann toplamı nasılmış? Şöyleymiş. Yine de bakarak yazayım da.
+
+851
+02:45:27,231 --> 02:45:35,952
+a artı şöyle olması lazımdı. k çarpı bir defa arkadaşlar yine de bulabilirsin. notlar arasında.
+
+852
+02:45:39,924 --> 02:45:40,924
+nerede o?
+
+853
+02:45:41,283 --> 02:45:49,463
+k çarpı b eksi a bölü n çarpı b eksi a bölü m'dir.
+
+854
+02:45:49,884 --> 02:45:53,324
+tabi sigma notasyonu var. k eşittir. birden n'ye kadar.
+
+855
+02:45:53,324 --> 02:46:03,224
+hani bizim şurada uzun uzun mesela şurada uzun uzun yazdığımız bakın şurada kendimizin hesapladığı
+
+856
+02:46:05,139 --> 02:46:22,899
+nerede o? Hah şurada. Bakın burada kendimiz oluşturduk eseni. Şurası. Gördünüz mü? Bakalım bu çıkacak mı? Şimdi bakın arkadaşlar. Şimdi 0 ile 1 aralığındaydı. Evet.
+
+857
+02:46:23,763 --> 02:46:46,863
+geldi gelsin. Şunu da yazayım. Dersi bitireceğim. Yoruldunuz. 0 ile 1 arasındaydı. Aralığımız 0 ile 1 arasındaydı. Alt Riemann toplanmıştı. Sağ uç noktayı uygulayacaktık. Onun için yazıyorum. Bakın. K eşittir. Birden N'ye kadar. A'sı 1, pardon A'sı 0, B'si 1. F.
+
+858
+02:46:47,283 --> 02:47:11,564
+0 artı k çarpı 1-0 bölü n çarpı bu da delta x. Buluyoruz ya son nokta bölü n. 1-0 bölü n. Şimdi arkadaşlar, sn'de k eşittir birden n'ye kadar bakın ne geldi? Burası 1 bölü n. Burası ne? fk bölü n.
+
+859
+02:47:13,299 --> 02:47:33,180
+çarpı 1 bölü R. Yani bu ne oldu arkadaşlar? Bakın şu. Şunu direkt elde ettik. Hiç şunları yazmadan, şunları, şunları yazmadan direkt bunu elde ettik. Bakın sol uç nokta mesela onda nasıl geldi? Şöyle geldi.
+
+860
+02:47:33,620 --> 02:47:43,920
+Bakın, bunları yazmadan elde edebilecek miyiz? Ona bakalım. Sol uç noktada arkadaşlar, onu da yazalım, dersi bitirelim.
+
+861
+02:47:56,180 --> 02:48:15,540
+k eşittir birden L'ye f a artı k eksi bir çarpı b eksi a bölü n çarpı b eksi a bölü n'dir. O zaman ne olacak? A yerine yine sıfırla bir aralığı alırsak şu gelecek.
+
+862
+02:48:15,540 --> 02:48:22,619
+k eşittir birden L'ye buraya sıfır, b'lerin yerine de bir verirsek şu gelir.
+
+863
+02:48:23,316 --> 02:48:32,256
+k-1 bölü n çarpı 1 bölü n gelir. Hakikaten de sol uç nokta için eseni bu mu bulduk? Bakalım.
+
+864
+02:48:33,236 --> 02:48:41,335
+f bakın k-1 bölü n'e 1 bölü n gelir. Anlaşıldı mı arkadaşlar? Sonra da fonksiyonu koyuyoruz.
+
+865
+02:48:41,716 --> 02:48:47,036
+Bu daha kısa bir yöntem. Şimdi sorularda artık bunu uygulayacağız. Tamam mı arkadaşlar?
+
+866
+02:48:47,036 --> 02:48:49,816
+Evet, var mı sorunuz bana?
+
+867
+02:48:51,316 --> 02:48:52,355
+yok galiba.
+
+868
+02:48:54,596 --> 02:48:56,736
+Bugünlük dersimizi bitiriyorum.
+
+869
+02:48:57,335 --> 02:48:59,136
+Yarın görüşmek üzere arkadaşlar.
+
+870
+02:48:59,396 --> 02:49:00,576
+Kendinize iyi bakın.
+
+871
+02:49:01,376 --> 02:49:02,036
+İyi günler.
+
+872
+02:49:02,136 --> 02:49:02,855
+İstihocam.
+
+873
+02:49:03,335 --> 02:49:03,896
+Teşekkür ederim.
+
+874
+02:49:03,916 --> 02:49:04,636
+İyi günler hocam.
+
+875
+02:49:04,675 --> 02:49:05,316
+İyi günler.
+
+876
+02:49:05,596 --> 02:49:06,536
+İyi günler hocam.
+
+877
+02:49:06,736 --> 02:49:07,316
+İyi günler.
+
+878
+02:49:07,396 --> 02:49:08,096
+İyi günler hocam.
+
+879
+02:49:08,756 --> 02:49:10,416
+Hepinize iyi günler arkadaşlar.
+
+880
+02:49:10,716 --> 02:49:11,216
+İyi günler.

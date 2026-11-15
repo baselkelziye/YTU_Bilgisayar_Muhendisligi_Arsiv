@@ -1,0 +1,3439 @@
+1
+00:00:19,155 --> 00:00:23,896
+Merhaba arkadaşlar. Nasılsınız? İyi misiniz? Sesim geliyor mu sizlere?
+
+2
+00:00:25,756 --> 00:00:27,096
+Evet hocam geliyor.
+
+3
+00:00:28,675 --> 00:00:45,635
+Dersimize kaldığımız yerden devam ediyoruz. Bugün bu hafta konuları bitirip haftaya uygulama yapmayı düşünüyorum ama bugün dersimizin ilerleyen saatlerinde yine konuşuruz ama biraz ders işleyelim. Sonra konuşalım ilk aradan sonra.
+
+4
+00:00:46,079 --> 00:00:49,439
+sınav hakkında da konuşuruz. Olur mu arkadaşlar?
+
+5
+00:00:49,980 --> 00:00:50,340
+Olur mu arkadaşlar?
+
+6
+00:00:50,340 --> 00:00:52,679
+Ve kablomuz yerden devam ediyoruz.
+
+7
+00:00:53,560 --> 00:00:55,759
+Şöyle bir ekran paylaşımı yapacağım.
+
+8
+00:01:00,179 --> 00:01:07,719
+Evet, en son nerede kalmıştık? İşte integraller için ortalama değer teoreminden bahsetmiştik.
+
+9
+00:01:08,063 --> 00:01:13,843
+Bu konu şimdi kare kumüsün temel teoremi diye geçiyor arkadaşlar.
+
+10
+00:01:14,524 --> 00:01:18,243
+Kısım 1 ve kısım 2 hesaplama kısmı.
+
+11
+00:01:19,363 --> 00:01:22,024
+Şimdi arkadaşlar, bu çok önemli.
+
+12
+00:01:22,223 --> 00:01:27,163
+Genelde çok sorulan bir konu.
+
+13
+00:01:27,563 --> 00:01:29,943
+Yani soruların içinde de soruluyor.
+
+14
+00:01:30,383 --> 00:01:31,503
+Öyle söyleyeyim size.
+
+15
+00:01:32,052 --> 00:01:44,311
+şöyle yıldız koyalım. Şimdi bu ne demek? Ben buradaki formülü böyle yazarak değil de anlatarak sizlerle paylaşmak istiyorum. Şöyle diyeyim.
+
+16
+00:01:48,724 --> 00:01:50,644
+tablete bağlanayım arkadaşlar.
+
+17
+00:01:53,644 --> 00:01:54,764
+Şöyle.
+
+18
+00:01:56,463 --> 00:01:57,564
+Evet.
+
+19
+00:01:58,043 --> 00:01:59,724
+Tablet gözüküyor mu arkadaşlar?
+
+20
+00:02:00,364 --> 00:02:00,984
+Evet hocam.
+
+21
+00:02:01,243 --> 00:02:03,484
+Şimdi arkadaşlar şöyle mesela
+
+22
+00:02:03,484 --> 00:02:05,064
+örneğin
+
+23
+00:02:10,484 --> 00:02:22,984
+şimdi örneğin mesela x kare dx dediğim zaman bunun integralı dediğim zaman siz ne yapıyorsunuz x küp bölü 3 artı c diyorsunuz değil mi?
+
+24
+00:02:23,348 --> 00:02:42,128
+mesela desem ki sıfırdan bire kadar x kare dx ister ne dersiniz o zaman? Eğer sınırlarında değerler varsa x küp bölü 3 integralidir. Sonra da sınırları koyuyorsunuz değil mi yerine? İlk önce x gördüğüm yere 1 koyuyorum.
+
+25
+00:02:42,867 --> 00:02:53,547
+şöyle eksi şöyle x gördüğüm yere 0 koyuyorum 1 bölü 3'tür Şimdi arkadaşlar sınırlarında mesela
+
+26
+00:02:53,716 --> 00:03:20,075
+şöyle şu örneklere bakın. Şimdi mesela x kare dx'de 5 ile 7 koyduğum zaman da sonuç ne çıkacak? Yani ben bunu hesaplayacağım. x küp bölü 3. Buraya 5 ve 7 değerlerini koyduğum zaman sonuç yine ne çıkacak arkadaşlar? Bir sayı. Değil mi arkadaşlar? Mesela şöyle olsa x kare dx sıfırdan t'ye kadar dese.
+
+27
+00:03:20,788 --> 00:03:22,847
+Sonuç ne çıkacak arkadaşlar?
+
+28
+00:03:23,707 --> 00:03:25,747
+Veya 1'den t'ye kadar diyeyim.
+
+29
+00:03:26,228 --> 00:03:27,668
+O zaman ne olur arkadaşlar?
+
+30
+00:03:27,927 --> 00:03:29,108
+Bakın şöyle.
+
+31
+00:03:29,907 --> 00:03:30,268
+Şöyle.
+
+32
+00:03:30,927 --> 00:03:32,907
+x küp bölü 3 integralı
+
+33
+00:03:33,199 --> 00:04:00,299
+Sonuçta burası 1'e, şurası t. Ne gelecek? x gördüğüm yere t koyacağım, t küp bölü 3, x gördüğüm yere 1 koyacağım, 1 bölü 3. Yani neye bağlı çıktı arkadaşlar? Sonuç t'ye bağlı çıktı. Yani eğer sınırlarda bir değişken varsa o zaman ne diyoruz? Biz bu fonksiyon o değişkene bağlı olur.
+
+34
+00:04:01,199 --> 00:04:03,759
+şöyle bir dakika
+
+35
+00:04:08,147 --> 00:04:18,608
+şöyle diyelim. Bakın arkadaşlar, aynı integral 1, belirsiz haldeyken, yani değer vermediğim belirsiz integralsi x küp bölü 3 artı c idi.
+
+36
+00:04:19,156 --> 00:04:31,156
+Aynı integrale mesela 0 ile 1 verdik. Ne çıktı? x kare dx. Bu ne çıktı? x küp bölü 3'den 0 ile 1. 1 bölü 3 çıktı. Bir sayı çıktı.
+
+37
+00:04:31,756 --> 00:04:45,176
+Çünkü buradaki değerler birer sayı. Sayı olduğu için integrale aldıktan sonra bu sayıları yerine koyacaksınız. 1'e 0. Sonuçta ne çıktı? 1 bölü 3 çıktı.
+
+38
+00:04:45,615 --> 00:04:52,475
+Şimdi ama ben x kare dx'in sonucu bu haliyle bir fonksiyon şu.
+
+39
+00:04:52,475 --> 00:04:57,755
+Ama şöyle ise, böyle ise bir sayı.
+
+40
+00:04:58,395 --> 00:05:02,515
+Ama böyle ise, mesela şöyle ise,
+
+41
+00:05:03,515 --> 00:05:04,015
+mesela
+
+42
+00:05:04,596 --> 00:05:24,115
+mesela 1'den t'ye kadar dedim. O zaman t'ye bağlı bir fonksiyon mesela. Bu ne? f't. Biz bunu hesapladık mı? Hesapladık. Bakın şöyleydi. Ama her zaman hesaplamayacağız. Mesela bu ne? x küp bölü 3 dedik. 1'den t'ye kadar dedik. t küp bölü 3.
+
+43
+00:05:24,660 --> 00:05:32,960
+eksi 1 bölü 3'tür. Hakikaten de bunun sonucu bakın t'ye bağlı bir fonksiyon. Mesela buna da f't diyelim.
+
+44
+00:05:33,684 --> 00:05:42,403
+Buraya kadar anladınız mı? Yani integralin sınırlarında bir değişken varsa o değişkene bağlıdır sonuç değil mi?
+
+45
+00:05:42,824 --> 00:05:48,484
+Sonuç eğer integralin sınırları sayıysa mesela şuradaki gibi bir sayı çıkacak.
+
+46
+00:05:48,484 --> 00:05:55,864
+Ama integralin sınırlarından birisi mesela buradaki gibi şurası bir t'ye bağlı.
+
+47
+00:05:56,084 --> 00:06:01,684
+t'ye bağlı olduğu için integral aldıktan sonra t'yi koyduğumuz için sonuç t'ye bağlı.
+
+48
+00:06:01,684 --> 00:06:27,463
+bağlı olacak. Şimdi arkadaşlar, o zaman şöyle diyebilirim ben. Bir integralin sonucu bir değişkene bağlıysa veya şöyle diyelim. Mesela şurada bir ifade var. Mesela ft dt. Bu ne demek arkadaşlar? Mesela şöyle olsun. t kare artı t dt.
+
+49
+00:06:28,084 --> 00:06:55,043
+değil mi? Bu fonksiyon. f, t, d, t demek bu. Ama şurada mesela 1 ile 2 var. Bunun sıfırla 1 olsun. Hesaplaması kolay. Bunun sonucu nedir? Söyleyebilir misiniz bana? Sonucu ne olur? Fikri olan var mı? Sesim geliyor mu? Evet. Bunun sonucu bir sayıdır. Sayı. Ama şöyle olursa, şöyle silelim.
+
+50
+00:06:55,540 --> 00:07:18,760
+mesela şöyle olsun mesela birden x'e kadar veya 2'den x'e kadar olsun. Bunun sonucu nedir arkadaşlar? Bunun integralini alırsınız bakın t küp bölü 3 artı t kare bölü 2'dir. 2'den x'e kadar koyduğunuz zaman x küp bölü 3 artı x bölü 2 bir de 2'yi koyacaksınız.
+
+51
+00:07:19,136 --> 00:07:44,596
+8 bölü 3 artı 4 bölü 2'dir. Bakın neye bağlıdır? x'e bağlıdır. Yani şöyle, yani bunun sonucu nedir arkadaşlar? x'e bağlıdır. Mesela fx diyelim. Kapalı halde böyle yazılabilir. Yani mesela şurası diyelim ki şu fonksiyon daha genel, pardon fonksiyon şu integral.
+
+52
+00:07:45,267 --> 00:08:12,567
+içerisi f, t, d, t. Sınırları da a'dan x'e kadar. Bunun sonucu nedir? Bakın buradaki gibi f, t, d, t. Bakın t'ye bağlı bir fonksiyon. Sınırlarını koyduğumuz zaman yerine ne olacak? x'e bağlı bir fonksiyon çıkacak. Tamam mı arkadaşlar? Veya böyle yazabiliriz. fx mesela. Şu fx olsun. Büyük fx.
+
+53
+00:08:12,947 --> 00:08:14,947
+x'e bağlı bir fonksiyon olur.
+
+54
+00:08:15,408 --> 00:08:28,947
+Şimdi eğer böyle bir fonksiyon verildiği zaman, şöyle bakın, arkadaşlar mesela a'dan x'e ft dt sonucu mesela fx çıksın.
+
+55
+00:08:29,007 --> 00:08:30,187
+Çünkü x'e bağlıdır.
+
+56
+00:08:30,927 --> 00:08:33,908
+Şimdi arkadaşlar burada türev alabiliyoruz.
+
+57
+00:08:34,028 --> 00:08:36,367
+Türevini mesela, pardon türevini alın dedi.
+
+58
+00:08:36,827 --> 00:08:38,768
+Her iki tarafın türevini alın dedi.
+
+59
+00:08:39,827 --> 00:09:01,187
+türevini alın dedi. Şimdi x'e göre, yani bu türev demek şu ifade d bölü dx. x'e göre türevini alın dedi. x'e göre türevini aldık. Bu ifadenin türevi ne olur? f üstü x. x'e göre türevi. Ya da nasıl deriz? df bölü dx deriz. Aynı şey.
+
+60
+00:09:01,620 --> 00:09:15,180
+Şimdi arkadaşlar, ya bu integralı çözeceksiniz, sonra sınırlarını koyacaksınız, sonra türevini alacaksınız. Ama bu bazen yapamayacağınız bir işlem. Çok karışık bir integral olacak. Şöyle diyor.
+
+61
+00:09:16,019 --> 00:09:21,220
+Üstün türevini al, üstün türevini al, x'in türevi x'e göre 1.
+
+62
+00:09:21,683 --> 00:09:33,783
+çarpı üstteki ifadenin aynısını al, götür, yerine koy. Yani burada t gördüğüm yere değişkenimiz t, x koy, bitti.
+
+63
+00:09:34,443 --> 00:09:40,683
+Eksi, alttaki ifadenin türevini al, a'nın türevi sıfırdır, çarpı
+
+64
+00:09:41,072 --> 00:09:59,171
+alttaki ifadeyi götür, t gördüğün yere yaz. Yani fonksiyonda t gördüğün yere yaz. f sıfır. Burası sıfırdır. Yani f üstü x'ine çıktığı fx'miş. Şimdi bunu daha genel yazacak olursak şöyle diyeceğiz.
+
+65
+00:10:00,307 --> 00:10:18,008
+şöyle mesela fx fonksiyonu şöyle olsun daha karışık olsun yukarıda x'e bağlı bir fonksiyon olsun aşağısı da x'e bağlı bir fonksiyon olsun içeriside f t dt olsun dedi ki size
+
+66
+00:10:18,227 --> 00:10:24,288
+f üstü x nedir? Yani şu df bölü dx nedir? diye soruldu.
+
+67
+00:10:24,927 --> 00:10:29,707
+Şimdi arkadaşlar şöyle yapıyoruz. Her iki tarafın x'e göre türevini alıyoruz.
+
+68
+00:10:31,087 --> 00:10:37,087
+f'in x'e göre türevi şu ya da d bölü dx ile çarpacaksınız.
+
+69
+00:10:37,548 --> 00:10:40,707
+Bir de bu integralin x'e göre türevi.
+
+70
+00:10:44,436 --> 00:11:09,156
+şöyle yazalım. ya da bunu nasıl yazarsınız? bu ne demek? f'in x'e göre türevi ve integral'in bu da arkadaşlar şu demek. bunun iki gösteremeyi de yazdık. tamam mı arkadaşlar? türevi. şimdi arkadaşlar şöyle yapıyoruz.
+
+71
+00:11:10,227 --> 00:11:35,807
+f'in x'e göre türevi f üstü x ya da şuradaki f üstü x şöyle yapıyoruz. Yukarının x'e göre türevi u'nun x'e göre türevi u üstü x ya da bu ne demek? du bölü dx çarpı şimdi bunun değişkenimiz ne? t. f fonksiyonunda t gördüğümüz yere u x yazıyoruz.
+
+72
+00:11:38,004 --> 00:11:50,324
+bitti. x, şimdi aşağının türevi, v'nin türevi, çarpı, f fonksiyonunda t gördüğümüz yere v- yazıyoruz.
+
+73
+00:11:51,084 --> 00:11:52,903
+Evet, anlaşıldı mı buraya kadar?
+
+74
+00:11:53,644 --> 00:11:56,264
+Şimdi bunu örneklendirelim. Bu çok önemli.
+
+75
+00:11:57,864 --> 00:12:00,004
+Şöyle diyelim, örneğin.
+
+76
+00:12:03,892 --> 00:12:06,052
+Sesim geliyor mu arkadaşlar?
+
+77
+00:12:06,812 --> 00:12:07,212
+Geliyor.
+
+78
+00:12:07,432 --> 00:12:07,792
+Tamam.
+
+79
+00:12:08,292 --> 00:12:10,712
+Şimdi örneğin mesela şöyle diyelim.
+
+80
+00:12:12,052 --> 00:12:14,212
+Y şöyle tanımlansın.
+
+81
+00:12:14,212 --> 00:12:26,492
+A'dan x'e t küp artı 1 dt ise dy bölü dx nedir? diye soruldu.
+
+82
+00:12:27,124 --> 00:12:38,224
+Şimdi bir bakıyoruz ki, bunu nasıl kullanacağız? Ya integralin sınırlarında x var. O zaman her iki tarafın x'e göre türevini alalım.
+
+83
+00:12:39,064 --> 00:12:50,924
+y'nin türevi ve a'dan x'e t küp artı 1 dt'nin türevi. Ya böyle yazabilirsiniz ya da şöyle yazabilirsiniz.
+
+84
+00:12:51,344 --> 00:13:15,024
+y'nin türevi neye göre? x'e, x'e göre türev ya da bunun yerine bunu. Burada da şöyle dersiniz. a'dan x'e t küp artı 1 dt'nin x'e göre türevi.
+
+85
+00:13:15,475 --> 00:13:40,255
+şimdi bununki ne oldu? y'nin türevi. Bunu mu yazalım? Bu mu? Fark etmez. İkisini de gösterdim şu anda. y'nin türevi. Ben böyle kullanacağım. Şimdi nasıl yapacağız? İntegralin türevini almak için, bakın yukarıda x var, x'e göre türev. İlk önce üst sınırın türevi, x'in türevi 1.
+
+86
+00:13:40,768 --> 00:14:05,168
+çarpı, sonra bu neye göre alınmış? t'ye göre. t'ye gördüğüm yere fonksiyonda x yazacağım. x küp artı 1 bitti. Eksi, a'nın türevi, a sınırın türevi 0. Dolayısıyla içine yazmaya gerek yok. Ne çıktı? y'ye üstü x küp artı 1'dir. Evet.
+
+87
+00:14:06,419 --> 00:14:09,419
+şimdi mesela başka bir örnek yapalım
+
+88
+00:14:15,731 --> 00:14:30,692
+örneğin y eşittir 5'ten x'e kadar 3'te sin t dt ise dy bölü dx nedir? diye sordu.
+
+89
+00:14:31,351 --> 00:14:41,491
+şimdi bakıyoruz arkadaşlar dy bölü dx'e her iki tarafın x'e göre türevini alıyoruz. buranın x'e göre türevi dy bölü dx
+
+90
+00:14:41,871 --> 00:14:47,611
+buranın x'e göre türevi, yani bunu şöyle, şöyle türevini alalım.
+
+91
+00:14:50,371 --> 00:14:50,851
+dt
+
+92
+00:14:50,851 --> 00:14:59,851
+Evet, alalım şimdi. Ne olur arkadaşlar? Bu d'ye bölü dx. Aynen. Şimdi bunun x'e göre türevini alıyoruz.
+
+93
+00:15:00,511 --> 00:15:06,672
+İlk önce 3 sınır, 5'in türevi 0. Dolayısıyla diğerini yazmıyorum. Eksi.
+
+94
+00:15:07,251 --> 00:15:22,271
+Altın türevi, alt sınırın, x'in türevi 1 çarpı, burada t gördüğüm yere, buradaki, burada ne var? x var. x yazacağım şuradaki fonksiyonda. Ne olur? 3t'nin yerine x yazdım.
+
+95
+00:15:22,676 --> 00:15:42,676
+sinüs x olur. t'lerin yerine x yazdım. Yani ne geldi? dy bölü dx eşittir. Eksi 3x sinüs x'dir. Mesela şöyle deseydi, dy bölü dx'in pi bölü 2'deki değeri nedir diye sorsaydı.
+
+96
+00:15:42,676 --> 00:15:47,396
+Ne derdik arkadaşlar? Eğer pi bölü 2'deki değeri isteniyorsa,
+
+97
+00:15:47,923 --> 00:15:50,484
+Şimdi pi bölü 2'deki değerini bulalım.
+
+98
+00:15:50,984 --> 00:15:57,823
+Eksi 3 çarpı pi bölü 2 sinüs pi bölü 2 sinüs pi bölü 2 1'di.
+
+99
+00:15:58,384 --> 00:16:00,283
+Eksi 3 pi bölü 2 olur.
+
+100
+00:16:01,583 --> 00:16:04,244
+Evet, var mı bir sıkıntı? Yok değil mi?
+
+101
+00:16:04,543 --> 00:16:05,683
+Hocam bir şey sorabilir miyim?
+
+102
+00:16:06,043 --> 00:16:06,484
+Evet.
+
+103
+00:16:07,043 --> 00:16:10,463
+Burada türev ile integral birbirine götürdüğü için direkt sınırları mı yazıyoruz?
+
+104
+00:16:11,379 --> 00:16:19,860
+Yani, öyle diyebiliriz. Evet, öyle diyebiliriz. Evet, türev ile integral birbirinin tersi.
+
+105
+00:16:20,379 --> 00:16:30,480
+Mesela, ama şöyle, öyle düşünebilirsin. Şöyle bir şey diyeceğim. İlla x olmak zorunda değil. Mesela şöyle olsun.
+
+106
+00:16:31,480 --> 00:16:36,820
+Kosinüs x, sinüs x. Şurası da fx olsun.
+
+107
+00:16:38,484 --> 00:16:58,964
+fx, sınırlarda birinde cosx birinde sinüs var. 1 bölü 1 eksi t kare, min dt'ine verilmiş ise, diyor ki f üstünün pi bölü 4'teki değeri nedir diye sordu. Şimdi size ne sormuş?
+
+108
+00:16:59,443 --> 00:17:25,403
+f üstü, f üstü her iki tarafın, bakın x'e göre değil mi? Her iki tarafın türevini alın. Buranın türevi, sonra şuranın türevi. Bakın yazıyorum. 1 bölü, 1-t kare, dt'nin türevi. Şimdi arkadaşlar, burası ne oldu? f üstü x oldu. f'in türevi bu. Şimdi girelim buraya.
+
+109
+00:17:26,324 --> 00:17:39,624
+türevini alacağız. İlk önce belirli integralin, üst sınırının türevi. Ne olacak? Sinüs x'in türevi, şöyle, çarpı, burada değişkenimiz t.
+
+110
+00:17:40,324 --> 00:17:52,943
+Fonksiyonda t gördüğümüz yere ne yazacağız? Sinüs x yazacağız. Yani şu yukarıdaki ifadenin aynısını, 1 bölü, 1 eksi, sinüs x'in karesi.
+
+111
+00:17:53,268 --> 00:18:06,327
+Sonra x'i. Şimdi alt sınırın türevi, kosinüs x'in türevi, çarpı. Şimdi fonksiyonda yine t gördüğümüz yere bu sefer alt sınırdaki ifadeyi yazacağız.
+
+112
+00:18:06,327 --> 00:18:13,387
+1-kosinüs x'in karesidir. E ne geldi o zaman? Pardon.
+
+113
+00:18:14,259 --> 00:18:24,239
+Ne geldi arkadaşlar? f üstü x eşittir. Sinüs x'in türevi, kosinüs x bölü, 1-sin kare x geldi.
+
+114
+00:18:24,379 --> 00:18:34,719
+Eksi kosinüs x'in türevi, eksi sinüs x, bir de eksi var, artı sinüs x, 1 bölü, 1-cos kare x oldu.
+
+115
+00:18:35,279 --> 00:18:37,000
+Şimdi burası ne olur?
+
+116
+00:18:39,000 --> 00:18:41,599
+Eksi cos x olmaz mı hocam?
+
+117
+00:18:41,652 --> 00:18:42,412
+hangisi?
+
+118
+00:18:43,072 --> 00:18:44,492
+1-sin kare x
+
+119
+00:18:44,492 --> 00:18:49,192
+1-sin kare x, kos kare x olur.
+
+120
+00:18:50,812 --> 00:18:52,452
+Ben işareti şeyim.
+
+121
+00:18:52,992 --> 00:18:54,632
+Tamam, var mı bir sıkıntı?
+
+122
+00:18:55,772 --> 00:18:56,352
+Yok değil mi?
+
+123
+00:18:57,452 --> 00:18:58,372
+Var mı arkadaşlar?
+
+124
+00:18:58,792 --> 00:19:00,052
+Yanlış mı yazdım bir yerde?
+
+125
+00:19:00,852 --> 00:19:02,771
+Yok değil mi? Yok yok hocam.
+
+126
+00:19:02,852 --> 00:19:03,471
+Yok hocam.
+
+127
+00:19:03,791 --> 00:19:20,612
+O zaman buradan ne geldi? Bakın burası kosinüs x çarpı 1 bölü kos kare x. Burası da sinüs x çarpı 1 bölü sin kare x'dir. Şunlar gidecek. 1 bölü kosinüs x. Burası da 1 bölü sinüs x geldi.
+
+128
+00:19:20,612 --> 00:19:25,711
+f üstü x'i bulduk. Peki ne sorulmuş bizden? Şu.
+
+129
+00:19:26,228 --> 00:19:48,128
+f üstü pi bölü 4 bulalım. f üstü pi bölü 4 kaçtır? 1 bölü kosinüs pi bölü 4 artı 1 bölü, şurada x gördüğümüz yere pi bölü 4 yazacağız. sinüs pi bölü 4 olur. Bu da kaçtır? 1 bölü, neydi kosinüs pi bölü 4? 1 bölü kök 2'dir.
+
+130
+00:19:48,723 --> 00:20:00,000
+Burası da 1 bölü 1 bölü kök 2. 2 tane kök 2'nin toplamı olur. 2 kök 2 olur. Var mı buraya kadar bir sıkıntı? Bunu çok kullanacağım.
+
+131
+00:20:00,000 --> 00:20:22,680
+çalışacaksınız arkadaşlar. Bir sürü işlemin içinde sorulabilir. Yani üst sınırın türevi çarpı, integralin içinde fonksiyonda bütün değişken, artık burada t idi mesela, t gördüğünüz yerde bütün fonksiyonun içinde t'lerin yerine üst sınır, sonra da eksi, az sınırın türevi çarpı.
+
+132
+00:20:23,360 --> 00:20:27,920
+Hocam bir şey sorabilir miyim? Bu sorularda dx bölü dt etseydiniz.
+
+133
+00:20:28,000 --> 00:20:28,640
+yapacaktık.
+
+134
+00:20:29,960 --> 00:20:30,620
+Bir dakika.
+
+135
+00:20:32,200 --> 00:20:34,200
+Nasıl? dx mi? dt mi?
+
+136
+00:20:34,200 --> 00:20:38,380
+Evet. Hani içerideki t değişkenin türevini almamızı isteseydi.
+
+137
+00:20:38,460 --> 00:20:41,299
+Yok, öyle bir şey istemez. Mesela şöyle olabilir.
+
+138
+00:20:42,039 --> 00:20:46,960
+ft der, sıfırdan t'ye, mesela der ki burası
+
+139
+00:20:47,508 --> 00:21:01,708
+mesela şöyle olsun, t kare artı 3t, aklımdan yazıyorum, aşağısıda mesela kaç olsun? t eksi 1 olsun. İçerisi de x kare artı 2x dx olsun.
+
+140
+00:21:02,107 --> 00:21:06,127
+İçerisindeki değişkene göre türev alınmıyor, sadece sınırları bile alınmıyor.
+
+141
+00:21:06,127 --> 00:21:12,387
+Şimdi burada ne sorabilir? Der ki f üstü t nedir? Bu aslında ne demek?
+
+142
+00:21:12,915 --> 00:21:33,315
+f üstü veya şöyle desin, f üstüyü bulunuz. f üstü nedir? f üstü derken f'in nedir? df bölü dt'yi soruyor. Yani ben burada, bakın, bunu aklımızdan yazdık. Şöyle, bunun türevini almak demek, hangi değişikliğine göre türevini alıyoruz?
+
+143
+00:21:33,315 --> 00:21:35,315
+t değişikliğine göre.
+
+144
+00:21:35,635 --> 00:21:36,235
+Hangisini?
+
+145
+00:21:36,672 --> 00:21:37,672
+t değişkeni.
+
+146
+00:21:37,951 --> 00:21:39,192
+t değişkeni göre.
+
+147
+00:21:39,731 --> 00:21:44,471
+Şimdi o zaman burası, yani bu ya da şöyle yazabiliriz ya da şöyle.
+
+148
+00:21:45,192 --> 00:21:47,031
+Ya da bunun yerine şöyle deriz.
+
+149
+00:21:49,211 --> 00:21:51,771
+Öf de şöyle deriz.
+
+150
+00:21:54,891 --> 00:21:56,511
+Anladım hocam, teşekkür ederim.
+
+151
+00:21:56,851 --> 00:22:00,591
+Tamam, bu çok önemli. Teşekkürler böyle bir soru sorduğun için.
+
+152
+00:22:01,151 --> 00:22:01,511
+Budur.
+
+153
+00:22:01,907 --> 00:22:13,967
+ya böyle yazarsınız, ya böyle. İkisi de aynı şey demektir. Ya da böyle. Ama ben bu türevi gösteriyorum. Bu neyin türevi demek? T'ye göre türevi demek.
+
+154
+00:22:14,327 --> 00:22:25,667
+Şimdi mesela bunu alalım T'ye göre. Birini yazayım. Şunu yazdım üsttekini. Mesela bunu yapalım şimdi. Şu neydi? F üstü T. Şimdi bakın türevini alalım bunu.
+
+155
+00:22:26,228 --> 00:22:29,908
+Nasıl olacak arkadaşlar? Aklımızdan bir örnek yaptık.
+
+156
+00:22:30,268 --> 00:22:32,827
+f üstü t. Şimdi ne diyeceksiniz?
+
+157
+00:22:32,827 --> 00:22:43,868
+1. Üstteki ifadenin şunu türevi. Üstteki ifadenin türevi. Pardon şöyle düzgün olsun. Bir de bunun türevi.
+
+158
+00:22:44,388 --> 00:22:51,028
+Şimdi üstteki ifadenin türevi 2t artı 3 çarpı.
+
+159
+00:22:51,347 --> 00:23:15,548
+Buradaki değişkeniniz x. Buradaki x'lerin hepsinin yerine yukarıdaki ifadeyi yazacaksınız. x karenin yerine ne yazacaksınız? t kare artı 3t'nin karesi artı, bunun yerine yazdık. 2 tane t kare artı 3t mesela. Sonra eksi t eksi 1'i türevi 1'dir.
+
+160
+00:23:16,243 --> 00:23:39,063
+değil mi? t'nin türevi 1, 1'in türevi 0. Çarpı, şimdi burada fonksiyonda x gördüğümüz yere t-1 yazacağız. t-1'in karesi artı 2 çarpı t-1 olur. Yani türevi budur, f üstü t'nin. Anlaşıldı mı arkadaşlar? Evet.
+
+161
+00:23:39,635 --> 00:23:53,836
+sessizliğinizi evet anladık hocam olarak kabul ediyorum. Son olarak bir tane daha yazacağım. y eşittir. 1'den x kareye kadar kosinüs t dt ise y üstü nedir?
+
+162
+00:23:54,395 --> 00:24:06,955
+y üstü neye bağlı? Neye göre türev alıyoruz? Şu aslında x'e göre değil mi türev alıyoruz? Bu fonksiyon yani y üstü dediği aslında dy bölü dx.
+
+163
+00:24:07,508 --> 00:24:10,847
+y üstü her iki tarafın türevini alıyorum.
+
+164
+00:24:13,248 --> 00:24:15,227
+Kosinüs t, dt.
+
+165
+00:24:17,127 --> 00:24:19,127
+Bunun türevi y üstü oldu.
+
+166
+00:24:19,127 --> 00:24:20,748
+Şimdi geldik buraya.
+
+167
+00:24:21,332 --> 00:24:36,152
+İlk önce üst sınırın türevi. x karenin türevi 2x çarpı t gördüğüm yere bakın değişkenimizde fonksiyonda kosinüs'te t gördüğüm bütün t'lerin yerini x kare yazdım.
+
+168
+00:24:36,772 --> 00:24:47,852
+Eksi, alt sınır 1, birin türevi 0 gitti. Yani y üstü neymiş? 2x kosinüs x kareymiş hatta şunu şöyle yazayım.
+
+169
+00:24:48,756 --> 00:24:54,836
+Evet. Anlaşıldı mı arkadaşlar? Bu şekilde özetleyebiliriz.
+
+170
+00:24:55,056 --> 00:24:55,156
+Evet.
+
+171
+00:24:55,896 --> 00:25:01,296
+Karkulüs'ün temel teoremi bu. Çok önemli. Mesela şöyle, aklımdan bir şey daha yazacağım.
+
+172
+00:25:04,676 --> 00:25:07,156
+Kosinüs hiperbolik t, t.
+
+173
+00:25:08,616 --> 00:25:09,756
+Mesela burası da...
+
+174
+00:25:13,844 --> 00:25:19,163
+dx size der ki d y bölü dt nedir?
+
+175
+00:25:20,903 --> 00:25:22,044
+değil mi? diyebilir.
+
+176
+00:25:23,923 --> 00:25:26,163
+yani yine ne yapacaksınız?
+
+177
+00:25:26,304 --> 00:25:28,824
+bunun türevi, burası ne olacak?
+
+178
+00:25:28,824 --> 00:25:31,703
+yukarının türevi, sinüs hiperbolik t
+
+179
+00:25:32,339 --> 00:25:40,519
+Artık x gördüğümüz fonksiyondaki bütün hepsini yerine ne yazıyoruz? Kosinüs hiperbolik t'nin karesi bitti.
+
+180
+00:25:41,059 --> 00:25:48,220
+Eksi, az sınır, 1 çarpı, x gördüğüm bütün ifadeleri yerine bunu yazarım.
+
+181
+00:25:49,480 --> 00:25:53,200
+Yani aklımdan şöyle bir örnek geldi yazdım. Ya da şöyle olabilir.
+
+182
+00:25:59,092 --> 00:26:13,392
+x artı 1, d x, dedi ki türevi nedir? dy bölü dt nedir? ne diyeceksiniz? bunun türevi y üstü, burası ne olacak? üstün türevi?
+
+183
+00:26:13,855 --> 00:26:29,855
+g üstü t, bilmiyorum, çarpı x gördüğüm yere ne yazacağım? g t artı 1, eksi alt sınır 1, çarpı x gördüğüm yere t yazacağım, t artı 1'dir.
+
+184
+00:26:31,347 --> 00:26:52,987
+Anlaşıldı mı arkadaşlar? Yani yukarıda fonksiyon olabilir, her şey olabilir. Yani her türlü fonksiyon olabilir, sabit olabilir ve biz bunların türevini rahatlıkla alabiliriz. Var mı bir sorunuz? Yok galiba. Anlaşıldı değil mi arkadaşlar? Oldukça örnek çözmeye çalıştım.
+
+185
+00:26:52,987 --> 00:26:54,987
+Hocam bana bir şey söyleyeceğim.
+
+186
+00:26:55,267 --> 00:26:58,287
+Tabii sesin çok derinden geliyor, duyamıyorum.
+
+187
+00:27:01,971 --> 00:27:31,683
+x kare artı 2x, f'
+
+188
+00:27:15,155 --> 00:27:15,655
+Evet.
+
+189
+00:27:15,655 --> 00:27:26,395
+Ben de integrali yazıp, burada da işte türev direk hani türevlenebilir ve işte şey hani sürekliyse integrali bu şekilde alıyoruz gibi yazmışsınız.
+
+190
+00:27:26,596 --> 00:27:29,336
+Bir dakika şu hangisi? Burada açtım.
+
+191
+00:27:29,756 --> 00:27:30,816
+Aynen orayı diyorum.
+
+192
+00:27:33,455 --> 00:27:35,675
+Size o kuralı görev edilir.
+
+193
+00:27:36,180 --> 00:27:56,900
+Siz daha önce demiştiniz ya, mesela hani türevli bir fonksiyon kesin süreklidir ama sürekli olan kesin türevli değildir diye. Ondan kaynaklı benim kafam karıştı. Hani burada direkt sürekli olan hani integralli gibi oldu. Hani öyleymiş gibi anladım da ondan dolayı sordum.
+
+194
+00:28:01,236 --> 00:28:04,896
+yani sürekli ise bu durumda
+
+195
+00:28:04,896 --> 00:28:10,576
+ben direkt integral üstünde de süreklidir diyoruz ya hani ama mesela şey
+
+196
+00:28:10,576 --> 00:28:17,376
+hani sürekli olup türevli olmayabilir. Türevli olmazsa integralli de olmaz diye düşündüm de orada kafam karıştı.
+
+197
+00:28:18,256 --> 00:28:21,736
+Ama burada yani bu
+
+198
+00:28:22,548 --> 00:28:23,627
+kural herhalde.
+
+199
+00:28:23,847 --> 00:28:29,288
+Evet. Yani sorun çok şey geldi şu anda bana, komplike geldi. İsmin ne?
+
+200
+00:28:29,887 --> 00:28:30,268
+[öğrenci].
+
+201
+00:28:31,067 --> 00:28:34,228
+Bir dakika. İsmini anlamadım. Bir daha söyleyebilirim.
+
+202
+00:28:34,228 --> 00:28:34,508
+[öğrenci].
+
+203
+00:28:36,347 --> 00:28:40,167
+Bir dakika. Göreceğim şimdi. Bir konuşursan.
+
+204
+00:28:40,427 --> 00:28:41,667
+[öğrenci] hocam istiyorum.
+
+205
+00:28:41,768 --> 00:28:45,607
+[öğrenci]. Tamam. [öğrenci]. Şöyle yapalım.
+
+206
+00:28:46,099 --> 00:28:57,359
+Ben sana sorununu şu anda cevaplamak istemiyorum. Çünkü tam olarak ne dediğini anladım ama onları ben kendi kafamda bir düşüneyim. Tamam mı?
+
+207
+00:28:57,359 --> 00:28:58,259
+Evet.
+
+208
+00:29:00,624 --> 00:29:02,443
+cevap vereyim. Tamam mı?
+
+209
+00:29:02,443 --> 00:29:06,544
+Tamam. Çünkü hani ben şey diye düşündüm. Siz dediniz de hani soruda zaten...
+
+210
+00:29:06,544 --> 00:29:08,084
+Anladım ben senin sorunu.
+
+211
+00:29:08,504 --> 00:29:12,183
+Hani vermezse eğer hani direkt biter soru.
+
+212
+00:29:12,483 --> 00:29:26,384
+Yok ama size verecek koşullar altında mutlaka bunları sağlayan. Yani türevini aldığınız zaman siz hiç bu koşullara bakarak almayacaksınız. Direkt türevini alabileceksiniz büyük bir ihtimalle. Tamam mı?
+
+213
+00:29:26,784 --> 00:29:28,443
+Ama ben senin sorunu anladım.
+
+214
+00:29:28,624 --> 00:29:34,983
+ben sana geri döneceğim [öğrenci]'in. Tamam mı? Öyle diyelim.
+
+215
+00:29:35,524 --> 00:29:36,223
+Teşekkür ederim.
+
+216
+00:29:36,983 --> 00:29:37,784
+Rica ederim.
+
+217
+00:29:38,504 --> 00:29:41,683
+Şimdi arkadaşlar, belirli integral de biliyoruz aslında.
+
+218
+00:29:42,124 --> 00:29:46,884
+Biz belirli integral bulunmasaymış her şeyi Riemann gibi toplayacaktık.
+
+219
+00:29:47,571 --> 00:29:55,891
+Riemann toplamı yapıp limitini alacaktık. Fakat belirli integral ile daha kısa bir şekilde işlemleri yapabiliyoruz.
+
+220
+00:29:56,511 --> 00:30:00,000
+Şimdi cos x'in integralini alalım.
+
+221
+00:30:00,000 --> 00:30:27,799
+Mesela 0'dan pi'ye kosinüs x, dx nedir dersek, kosinüs x'in integralı sinüs x'tir. Bakın üst sınırını yazdık, alt sınırını yazdık, x gördüğümüz ile ilk önce pi yazdık, sinüs pi, sonra da 0 yazdık ve işlemi yaptık. Biraz önce bunlara benzer örnek yaptım. Bunları yapayım mı arkadaşlar? İster misiniz? Yazarak mı yapayım? Böyle üzerinden anlatsam bunu olur mu?
+
+222
+00:30:28,000 --> 00:30:29,940
+Böyle yeter hocam, daha basitler.
+
+223
+00:30:30,339 --> 00:30:33,319
+Bunlar çok basit olduğu için yazmak istemiyorum.
+
+224
+00:30:33,819 --> 00:30:35,660
+Şimdi sekant x, tanjant x.
+
+225
+00:30:36,079 --> 00:30:39,180
+Sekant x, tanjant x neyin türevidir?
+
+226
+00:30:39,579 --> 00:30:40,299
+Sekant'ın.
+
+227
+00:30:40,440 --> 00:30:43,160
+Demek ki ben bunun integrali sekanttır.
+
+228
+00:30:43,319 --> 00:30:44,079
+Buraya yazarım.
+
+229
+00:30:44,500 --> 00:30:45,299
+Sınırları var.
+
+230
+00:30:45,480 --> 00:30:47,519
+Sıfırdan eksi pi bölü 4'e kadar.
+
+231
+00:30:48,220 --> 00:30:50,720
+x gördüğümüz yere ilk önce sıfır koyduk.
+
+232
+00:30:50,779 --> 00:30:52,359
+Üst sınırı eksi.
+
+233
+00:30:52,900 --> 00:30:55,579
+Sonra da az sınırı koyduk ve yaptık.
+
+234
+00:30:56,000 --> 00:31:12,279
+Sonra da bir örnek daha var. Evet, şimdi ben arkadaşlar diğer artık integral tekniklerine, integrasyon tekniklerine geçeceğim. Şöyle bir dakika. Yine sistemi yükledim sizler için.
+
+235
+00:31:16,723 --> 00:31:34,003
+Evet, integrasyon teknikleri. Şimdi bu ilk kısmı çok iyi anlamanız lazım. Tabii ben yine burada PDF'ye çok bağlı kalamayacağım. Bir sürü örnek yazacağım aklımdan. Bu örnekler temsili. Şimdi arkadaşlar, şöyle ekran paylaşımı yapacağım size.
+
+236
+00:31:46,708 --> 00:31:49,008
+Geldi mi tablet? Görüyor musunuz?
+
+237
+00:31:49,907 --> 00:31:50,427
+Geldi.
+
+238
+00:31:50,627 --> 00:31:58,968
+Şimdi arkadaşlar, bir integrali çözmek için, ilk aklınıza aynı böyle limiti çözdü erken aklınıza gelecek kurallar vardı.
+
+239
+00:31:59,087 --> 00:32:02,268
+İntegrali çözmek için de aklınıza gelecek kurallar var.
+
+240
+00:32:02,788 --> 00:32:06,988
+Bunlardan birincisi, mesela bir şeyin türevi yanında var mı?
+
+241
+00:32:06,988 --> 00:32:08,927
+Şimdi mesela ben yazacağım.
+
+242
+00:32:09,347 --> 00:32:13,087
+Mesela şurası sinüs x küp artı 1 olsun.
+
+243
+00:32:14,708 --> 00:32:17,087
+x kare olsun, bx olsun.
+
+244
+00:32:18,067 --> 00:32:23,927
+Şimdi sinüsün, özellikle sinüsün içinde bir ifade veya kosinüs de olabilir bu.
+
+245
+00:32:25,779 --> 00:32:28,720
+başka tanjant vesaire de olabilir.
+
+246
+00:32:29,279 --> 00:32:32,920
+Şimdi x küp artı 1'in türevi var mı dışarıda bir yerde?
+
+247
+00:32:33,620 --> 00:32:35,480
+x küp artı 1'in türevi nedir?
+
+248
+00:32:35,819 --> 00:32:38,759
+x küp artı 1'in türevi 3x kare.
+
+249
+00:32:39,240 --> 00:32:41,799
+Siz şimdi bunu böyle düşüneceksiniz.
+
+250
+00:32:42,259 --> 00:32:44,539
+Diyeceksiniz ki türevi burada var.
+
+251
+00:32:44,539 --> 00:32:53,440
+O zaman x küp artı 1'e u desem ben, değişken görünüşümü nasıl limitle değişken yapıyorduk?
+
+252
+00:32:53,779 --> 00:33:21,759
+Mesela limit x mesela sıfıra giderken burası x kare bölü x kare ise mesela x kare yerine t diyorduk. Diyorduk ki sinüs t oluyordu burası t oluyordu. x sıfıra giderken burası da sıfır oluyordu. Bunun gibi değişken dönüşümü yapacağız. İntegrallerle daha çok kullanılıyor arkadaşlar. Her şeyde yani limitte de çok kullanılıyor ama integrallerde işlemlerde çok fazla kullanıyoruz.
+
+253
+00:33:21,779 --> 00:33:31,200
+Bakın arkadaşlar, bu değişken dönüşümünü yaparsanız, şimdi sizin değişkeniniz normalde integraldeki x'dir.
+
+254
+00:33:31,440 --> 00:33:41,339
+Dx, bakın dx. Ama x küp artı 1'e u derseniz, bakın buna u diyelim veya şöyle yazalım, aşağıya yazalım.
+
+255
+00:33:41,339 --> 00:33:47,460
+Dx, şimdi x küp artı 1'e u dersek, şöyle dedik.
+
+256
+00:33:48,403 --> 00:33:51,284
+x kub artı 1'e u dedik.
+
+257
+00:33:52,024 --> 00:33:52,723
+u dedik.
+
+258
+00:33:53,144 --> 00:33:56,024
+Şimdi her iki tarafın diferansiyelini alacağız.
+
+259
+00:33:56,384 --> 00:33:58,584
+Şöyle, bunun türevini alacaksınız.
+
+260
+00:33:59,663 --> 00:34:01,804
+x kub artı 1'in türevi nedir?
+
+261
+00:34:03,163 --> 00:34:06,703
+3x kare çarpı dx.
+
+262
+00:34:07,903 --> 00:34:12,824
+Mesela şöyle diyoruz ya, y üstü dy bölü dx diyorduk.
+
+263
+00:34:13,235 --> 00:34:35,255
+d y nedir arkadaşlar? y üstü dx'dir. Yani y'nin diferansiyeli ne demek? Türevi çarpı dx. Şimdi burada da aynı şey. x kare artı 1'in türevi yazdınız. Çarpı değişkeni dx. u'nun türevi nedir u'ya göre? do. Çarpı değişkeni do'dur.
+
+264
+00:34:36,148 --> 00:34:40,228
+Tamam mı arkadaşlar? Mesela şöyle bir değişken dönüşüm yapalım.
+
+265
+00:34:40,927 --> 00:34:44,068
+u küp artı 2u eşittir t olsun.
+
+266
+00:34:44,568 --> 00:34:49,188
+Mesela bu da bir değişken yine, değişken dönüşüm yapacağız.
+
+267
+00:34:49,188 --> 00:34:52,068
+u küp artı 3, 2u'nun türevi
+
+268
+00:34:52,431 --> 00:34:54,931
+3u kare artı 2'dir.
+
+269
+00:34:55,471 --> 00:34:58,491
+Çarpı du, bunun değişkeni.
+
+270
+00:34:58,831 --> 00:35:01,071
+t'nin türevi kendine göre 1'dir.
+
+271
+00:35:01,411 --> 00:35:02,251
+Çarpı dt.
+
+272
+00:35:02,692 --> 00:35:09,911
+Mesela burası t kare olsaydı, 2t çarpı dt olurdu.
+
+273
+00:35:11,011 --> 00:35:13,152
+Şimdi, bunu dediniz.
+
+274
+00:35:13,152 --> 00:35:16,331
+Şimdi, bu neye eşittir arkadaşlar?
+
+275
+00:35:16,592 --> 00:35:17,391
+Bakın, yazıyorum.
+
+276
+00:35:17,811 --> 00:35:24,591
+3x kare sinüs x küp artı 1 dx nedir diye sorulmuştu.
+
+277
+00:35:25,131 --> 00:35:26,931
+dx nedir diye sorulmuştu.
+
+278
+00:35:27,031 --> 00:35:30,651
+Şimdi bakın, sinüs buraya ne dedik? u dedik.
+
+279
+00:35:31,331 --> 00:35:32,571
+sinüs u oldu.
+
+280
+00:35:33,371 --> 00:35:39,151
+Bakın arkadaşlar, 3x kare dx gördünüz mü?
+
+281
+00:35:39,831 --> 00:35:43,391
+3x kare dx neye eşitmiş?
+
+282
+00:35:43,891 --> 00:35:47,611
+d uya. Bunların yerine de onu yazdım.
+
+283
+00:35:49,391 --> 00:35:56,231
+Evet, neye dönüştü? Sinüs u, d uya dönüştü. Bakın, sinüs u, d u.
+
+284
+00:35:56,431 --> 00:35:59,111
+E bunun integrali nedir sinüsün integrali?
+
+285
+00:36:00,051 --> 00:36:03,831
+Sinüsün integrali, eksi kosinüs u'dur.
+
+286
+00:36:04,831 --> 00:36:06,371
+Artı c, bitti.
+
+287
+00:36:07,027 --> 00:36:19,227
+ama bitmedi. Şimdi siz işleme başlarken x'li bir ifadeyle başladınız. Neyle bitirdiniz? u'lu bir ifadeyle. O zaman bu u'yu x yapmalısınız.
+
+288
+00:36:20,367 --> 00:36:33,047
+x'i kosinüs. u yerine ne yazacağız? Bakın burada. u neye eşit? x küp artı 1'e eşit. Artı c'dir. Biraz anladınız mı?
+
+289
+00:36:33,684 --> 00:36:37,504
+şey gibi, tersini almak gibi mi hocam?
+
+290
+00:36:38,024 --> 00:36:49,403
+değişken dönüşümüyle, bu bir integrali, evet, hayır şöyle, birkaç tane arka arkaya yapayım, anlamazsanız sorularınızı alayım. Anlaşalım mı arkadaşlarım öyle?
+
+291
+00:36:49,403 --> 00:36:50,324
+tamam.
+
+292
+00:36:50,824 --> 00:37:01,244
+şimdi şöyle, yani bir şeyde eşitlik varsa, ilk başta neyse onu yazmalısınız. Yani değişkeni neyse onu unutmamalısınız. Mesela.
+
+293
+00:37:01,652 --> 00:37:04,331
+Şöyle olsun, yine aklımdan yazacağım.
+
+294
+00:37:04,971 --> 00:37:11,991
+Mesela şöyle olsun, x küp x üzeri 5 artı 2x olsun.
+
+295
+00:37:12,431 --> 00:37:17,471
+Şurası da 5x üzeri 4 hatta şurayı da 7 diyeyim.
+
+296
+00:37:17,471 --> 00:37:26,711
+5x üzeri 4 artı veya böyle yazmayayım aklımdan çünkü vakit gidiyor veya şöyle yapalım.
+
+297
+00:37:27,219 --> 00:37:38,059
+örnektekini yazayım. x üzeri 5 artı 4x kare, şöyle, küpüncü kuvveti çarpı 5x üzeri 4 artı 8x dx.
+
+298
+00:37:38,059 --> 00:37:41,539
+Şimdi bakıyoruz arkadaşlar, diyoruz ki,
+
+299
+00:37:42,452 --> 00:38:04,532
+5x üzeri 4 artı 8x'in türevi nedir? 20x artı 8. Yok burada öyle bir şey. Şuna bakıyoruz. Bu gitti. Şunun türevi x üzeri 5 artı 4x karenin türevi 5x üzeri 4 artı 8x var mı? Var. Burada bakın. Burada var. Türevi var.
+
+300
+00:38:05,204 --> 00:38:20,403
+türevi varsa ben o zaman diyorum ki x üzeri 5 artı 4x kareye u diyeyim ya da t diyeyim. Fark etmez. u dedim. u dedim. O zaman şimdi dx'lisini elde edeceğim ve türevini.
+
+301
+00:38:29,108 --> 00:38:35,428
+dx eşitti. u'nun türevi u'ya göre 1 çarpı d u.
+
+302
+00:38:36,348 --> 00:38:37,908
+Şimdi bu dönüşümü yaptım.
+
+303
+00:38:38,368 --> 00:38:44,368
+Demek ki diyorum artık buradaki çok karışık ifadenin yerine, bakın şimdi bu ifade neydi?
+
+304
+00:38:44,368 --> 00:38:56,300
+x üzeri 5, 4x kare 3, 5x üzeri 4, artı 8x dx ifadenin yerine ben artık şöyle yazabilirim.
+
+305
+00:38:56,563 --> 00:39:16,164
+şöyle derim. Şunun yerine ne diyorum? u diyorum. Bakın yazıyorum. O zaman burası ne oldu? u küp. u küp oldu. çarpı, bakın bu ifade neye çıktı? şu ifade x üzeri, pardon.
+
+306
+00:39:17,076 --> 00:39:26,036
+Bu ifade 5x üzeri 4 artı 8x'de dx'de şu ifadede ne eşit çıktı? du'ya.
+
+307
+00:39:27,135 --> 00:39:31,415
+Bakın bu karışık ifade ne oldu? Şurası da du oldu.
+
+308
+00:39:31,835 --> 00:39:35,375
+Bu karışık ifade bu kadar basit bir integrale dönüştü.
+
+309
+00:39:35,375 --> 00:39:41,955
+u küp ve du yani nedir bunun integrali? u üzeri 4 bölü 4.
+
+310
+00:39:42,900 --> 00:39:53,300
+artı c'dir. Ama şimdi bakıyorum ben, ben x ile başladım, u ile bitirdim. Olmaz. Ne yapacağız arkadaşlar?
+
+311
+00:39:54,000 --> 00:40:04,260
+u'nun yerine x'li ifadesini yazacağız. u neye eşit? x üzeri 5 artı 4x kare bölü 4 artı c'dir.
+
+312
+00:40:05,540 --> 00:40:07,920
+Evet, bu anlaşıldı mı?
+
+313
+00:40:09,556 --> 00:40:10,295
+Anlatıyor musun?
+
+314
+00:40:10,295 --> 00:40:11,115
+Evet hocam.
+
+315
+00:40:11,435 --> 00:40:12,615
+Hocam ben bir şey sorabilir miyim?
+
+316
+00:40:12,755 --> 00:40:13,295
+Tabii ki.
+
+317
+00:40:13,940 --> 00:40:18,719
+Mesela şimdi bu soruda yok ama sınırlar mesela olsaydı x'e göre olacaktı.
+
+318
+00:40:18,719 --> 00:40:20,259
+Öyle de çözeceğim.
+
+319
+00:40:20,679 --> 00:40:22,759
+Sınırlar d'ye uya mı göre değişecek o zaman da?
+
+320
+00:40:22,860 --> 00:40:24,500
+Onu da değiştireceksin.
+
+321
+00:40:24,880 --> 00:40:25,279
+Evet.
+
+322
+00:40:25,779 --> 00:40:31,860
+Ya ilk başa geri dönersin, şu hale getirirsin, o zaman sınırını en son ekleyeceksin.
+
+323
+00:40:32,320 --> 00:40:37,420
+Mesela şöyle bir tanem veya örnek yapacağım, örnekle göstereyim olur mu?
+
+324
+00:40:37,840 --> 00:40:39,480
+Biraz sonra göstersem olur mu?
+
+325
+00:40:39,860 --> 00:40:40,599
+Olur hocam.
+
+326
+00:40:40,599 --> 00:40:40,860
+Evet.
+
+327
+00:40:41,440 --> 00:40:41,940
+Şimdi bir...
+
+328
+00:40:41,940 --> 00:40:43,119
+örnek daha yapalım.
+
+329
+00:40:46,059 --> 00:40:47,179
+Mesela,
+
+330
+00:40:48,079 --> 00:40:49,619
+kotanjant x
+
+331
+00:40:49,619 --> 00:40:51,940
+dx
+
+332
+00:40:51,940 --> 00:40:55,719
+Evet, şimdi arkadaşlar
+
+333
+00:40:56,436 --> 00:41:13,376
+kotanjant x, kotanjant, tanjant genelde. Kotanjant neyin türevidir biliyor musunuz? Ben bilmiyorum bu haliyle. Ama şöyle yazabilirim. Kotanjant'ı nasıl yazarız? Kosinüs x bölü sinüs x dx. Değil mi arkadaşlar?
+
+334
+00:41:14,436 --> 00:41:23,076
+Şimdi arkadaşlar, kosinüsün türevi sinüs, işte eksilisini eksisinin sinüsün türevi de kosinüs x. Biri birinin türevi.
+
+335
+00:41:23,668 --> 00:41:50,968
+Ama hangisine göre seçeceğiz? Ben türevi dx'in yanında olanı seçerdim. Yani sinüsün türevi nedir? Kosinüstür, o da dx'in yanında. Gördünüz mü arkadaşlar? Şimdi diyorum ki ben sinüs x'i u desem, u desem, o zaman kosinüs x bunun türevi çarpı dx neye eşit olur? u'nun türevi 1 çarpı du olur.
+
+336
+00:41:51,635 --> 00:42:14,795
+Değil mi arkadaşlar? O zaman bu ne oldu arkadaşlar? Bakın, sinüs x'in yerine ne geldi? Aşağıya u geldi. Kosinüs x ile dx'in yerine ne geldi? Kosinüs x ile dx'in yerine du geldi. Böyle du bölü u oldu. Peki bu neyin integralidir?
+
+337
+00:42:15,344 --> 00:42:18,903
+nedir? dx bölü x neydi? 1 bölü x neydi?
+
+338
+00:42:19,163 --> 00:42:19,603
+ln u.
+
+339
+00:42:20,223 --> 00:42:23,283
+ln mutlak değer u artı c.
+
+340
+00:42:23,703 --> 00:42:27,403
+Şimdi bakıyorum, ben x ile başladım.
+
+341
+00:42:28,043 --> 00:42:28,884
+Neyle bitirdim?
+
+342
+00:42:29,403 --> 00:42:31,443
+u ile bitirdim. Olmaz diyorum.
+
+343
+00:42:32,043 --> 00:42:35,503
+ln u'nun yerine ne yazacağım? x'di ifadesini.
+
+344
+00:42:36,123 --> 00:42:38,563
+ln sinüs x artı c'dir.
+
+345
+00:42:39,603 --> 00:42:40,923
+Bunun integralı budur.
+
+346
+00:42:42,867 --> 00:42:45,188
+Bir tane daha yazayım. Mesela.
+
+347
+00:42:46,588 --> 00:42:49,028
+Tabi illa şöyle aklımdan yazacağım.
+
+348
+00:42:49,788 --> 00:42:51,228
+Mesela şöyle olsun.
+
+349
+00:42:54,608 --> 00:42:56,447
+Veya x'i mi yazalım?
+
+350
+00:42:56,748 --> 00:42:56,987
+Şöyle.
+
+351
+00:42:57,807 --> 00:42:59,307
+T demeyelim de x diyelim.
+
+352
+00:43:01,048 --> 00:43:01,447
+Evet.
+
+353
+00:43:01,967 --> 00:43:03,768
+Veya böyle bir ifade var.
+
+354
+00:43:04,347 --> 00:43:07,507
+Bu ifadenin integralı nedir diye soruldu.
+
+355
+00:43:07,507 --> 00:43:09,967
+Şimdi bunu nasıl yaparsınız?
+
+356
+00:43:11,764 --> 00:43:23,824
+Nasıl yaparsınız arkadaşlar? Kare kökten kurtarmak istiyorsunuz. Mesela 1 artı x'in yerine şuranın tamamına ben mesela 1 artı x'in yerine u derdim.
+
+357
+00:43:25,304 --> 00:43:32,964
+Tamam. Şimdi bakın arkadaşlar u dediniz. Ne oldu? 1 artı x'in türevi ne oldu? dx.
+
+358
+00:43:33,907 --> 00:43:53,567
+pardon, 1 çarpı dx. 1 artı x'in türevi, 1'in türevi 0, x'in türevi 1 çarpı dx. u'nun da türevi 1 çarpı du. Böyle değil mi? Bakın arkadaşlar, şuna dönüştü. Şöyle oldu. Kök u, du oldu.
+
+359
+00:43:54,003 --> 00:44:21,103
+1 artı eksi ne dedik? u dedik. E bu nedir arkadaşlar? u üzeri 1 bölü 2, du'dur. Bu nedir arkadaşlar? Nasıldı? Böyle integralı nasıl alıyordunuz? Üstünü 1 artırıyordunuz. Aşağıya da üstteki sayının aynısını yazıyorsunuz. 1 bölü 2 artı 1. Yani 3 bölü 2 artı c. u üzeri 3 bölü 2. Şurası ne oldu? Şöyle diyelim.
+
+360
+00:44:21,940 --> 00:44:44,960
+2 bölü 3, şu yukarı çıkar, u üzeri 3 bölü 2 artı c. Bitti mi? Bitmedi. Neyle başladınız? x ile başladınız, u ile bitirdiniz. O zaman 2 bölü 3, x ne? u pardon, u ne? 1 artı x. 1 artı x'in 3 bölü 2. kuvveti artı c'dir. Tamam mı arkadaşlar?
+
+361
+00:44:46,784 --> 00:44:54,503
+hiç sormuyorsunuz. Ben olsam, hocam, ben bu soruyu farklı çözemez miydim diye sormanızı...
+
+362
+00:44:54,503 --> 00:44:57,423
+Hocam, u kare dersek, kök bir artı ise...
+
+363
+00:44:57,423 --> 00:45:00,784
+Evet, öyle de diyebilirsiniz. Bakın, aynı soruyu...
+
+364
+00:45:03,027 --> 00:45:08,327
+Şöyle, birisi de dese ki, ya hocam illa u mu demek zorundayım? Hayır.
+
+365
+00:45:08,887 --> 00:45:12,587
+u kare, kök u, artık işlem neyi gerektirirse?
+
+366
+00:45:13,107 --> 00:45:17,627
+Şunun yerine birisi de dedi ki, ya ben 1 artı x'in yerine u kare diyeyim.
+
+367
+00:45:18,707 --> 00:45:21,047
+Diyebilirsin. Ne olur arkadaşlar?
+
+368
+00:45:21,967 --> 00:45:25,987
+Buranın türevi, 1 artı x'in türevi, 1 çarpı dx olur.
+
+369
+00:45:26,607 --> 00:45:28,707
+Peki burası ne olur u karenin türevi?
+
+370
+00:45:29,300 --> 00:45:41,060
+2u çarpı du olur. E şimdi bakın yazıyorum. Burası u kare. Şunlar gidecek değil mi? u kare dx'in yerine ne gelecek?
+
+371
+00:45:41,652 --> 00:45:44,211
+2u du geldi.
+
+372
+00:45:44,432 --> 00:45:45,952
+d-x'in yerine ne geldi?
+
+373
+00:45:46,632 --> 00:45:48,532
+u, şu kare kökler gitti.
+
+374
+00:45:48,772 --> 00:45:50,372
+u kare almamızın sebebi bu.
+
+375
+00:45:50,872 --> 00:45:56,192
+2u du, yani 2 tane u kare du geldi.
+
+376
+00:45:56,672 --> 00:45:57,512
+Peki bu nedir?
+
+377
+00:45:58,072 --> 00:46:01,232
+2 tane u küp bölü 3 artı c.
+
+378
+00:46:01,592 --> 00:46:02,472
+Bitti mi soru?
+
+379
+00:46:02,711 --> 00:46:03,152
+Bitmedi.
+
+380
+00:46:03,892 --> 00:46:05,052
+x'de başladın.
+
+381
+00:46:05,556 --> 00:46:16,315
+şöyle başka renkte gösterelim. x ile başladım, u ile bitirdim. Olmaz. 2 bölü 3, u'nun yerine ne yazacağım? Bakın buradan u'yu çekeceğiz.
+
+382
+00:46:16,975 --> 00:46:25,655
+u kare 1 artı x ise u nedir? 1 artı x'in her iki tarafın 1 bölü ikinci kuvvetini alırsak şu olur.
+
+383
+00:46:26,195 --> 00:46:41,795
+o zaman 1 artı x'in 1 bölü ikinci kuvvetinin 3. kuvveti artı c'dir. Yani 2 bölü 3, 1 artı x'in 3 bölü ikinci kuvveti artı c'dir.
+
+384
+00:46:42,771 --> 00:46:56,971
+Yalnız bunlar notlarda yok arkadaşlar. Ben şu anda aklımdan yazıyorum. Bakın ikisinde de aynı sonuç çıktı. Var mı bir soru? Buraya kadar. Anlaşıldı mı?
+
+385
+00:46:56,971 --> 00:46:59,351
+Hocam, hocam mola verebilir miyiz acaba?
+
+386
+00:46:59,351 --> 00:47:08,271
+Şimdi mola vereceğiz. Saat kaç geçe? 10 geçe başlayalım olur mu arkadaşlar?
+
+387
+00:47:09,492 --> 00:47:13,432
+5 geç az olur. Olur mu? Evet.
+
+388
+00:47:13,672 --> 00:47:14,512
+Olur hocam.
+
+389
+00:47:14,992 --> 00:47:26,132
+Olur. 5 geçe mi, 10 geçe mi? Evet. 10 geçe başlayalım. Olur mu arkadaşlar? Kendinize iyi bakın. Görüşmek üzere. Bir kahve molası verelim.
+
+390
+01:04:55,188 --> 01:04:59,648
+Merhaba arkadaşlar. Dersimize kaldığımız yerden devam ediyoruz.
+
+391
+01:05:04,179 --> 01:05:20,179
+Evet, şimdi yerine koyma veya değişken değiştirme metodundan bahsediyorduk. Burada da birkaç örnek var. Şu iki örnekten zaten şöyle göstereyim.
+
+392
+01:05:24,115 --> 01:05:52,115
+ekranı görüyorsunuz değil mi arkadaşlar? Şu örnekten bahsettim. Şu örnekten de bahsettim. Şimdi gelelim bu örneğe. Tanjantikste, kotanjantikste yaptım. Tanjantikste benzer şekilde bulanılabilir. Şimdi şu örnek çok önemli arkadaşlar. Siz bir dahaki sene sekant, yani diferansiyel denklemler dersi alacaksınız.
+
+393
+01:05:52,115 --> 01:06:09,735
+Burada da veya birçok kutupsal formda çıkan soruların veya birçok integrenin içinde sekantan integrali gelecek arkadaşlar. Bunun çözümünü beraber yapalım isterseniz. Yine ekran paylaşacağım sizinle.
+
+394
+01:06:20,052 --> 01:06:23,012
+ekran geldi mi? Tahtayı görüyor musunuz arkadaşlar?
+
+395
+01:06:23,331 --> 01:06:23,512
+Evet.
+
+396
+01:06:24,152 --> 01:06:29,751
+Tamam. Şimdi arkadaşlar, bu çok önemli. Ben böyle yıldız koydum birkaç tane.
+
+397
+01:06:30,692 --> 01:06:32,152
+x kare artı 2x, f'
+
+398
+01:06:32,152 --> 01:06:34,911
+Şimdi arkadaşlar, hatırlatma.
+
+399
+01:06:35,411 --> 01:06:40,971
+x kare artı 2x, f'
+
+400
+01:06:40,971 --> 01:06:43,451
+türevi de
+
+401
+01:06:43,539 --> 01:06:52,559
+1 artı tanjant kare x ya da sekant kare x'dir. Tamam mı arkadaşlar? Yerine göre herhangi birini kullanabilirsiniz.
+
+402
+01:06:53,740 --> 01:07:03,639
+Şimdi biz bunu biliyoruz. Şimdi arkadaşlar sekant x neyin türevidir? Bu bilmiyoruz. Pardon neyin integralidir? Bilmiyoruz. Şöyle yapıyoruz.
+
+403
+01:07:04,211 --> 01:07:22,032
+tabi bunu araştırılarak bulunmuş. Hemen aklımıza gelmeyebilir. Şöyle sekant x artı tanjant x ile çarpıp böldük. Çarpıp böldük arkadaşlar. Şimdi şurada dx var.
+
+404
+01:07:22,356 --> 01:07:29,835
+Şimdi arkadaşlar, şuna u derseniz, şu ifadeye u dersek, yani değişken dönüşümü yapıyorum.
+
+405
+01:07:30,376 --> 01:07:33,016
+Sekant x artı tanjant x'e u dedim.
+
+406
+01:07:33,596 --> 01:07:35,835
+Şimdi buna göre türevini alalım.
+
+407
+01:07:36,436 --> 01:07:40,896
+Sekant'ın türevi sekant x çarpı tanjant x'dir.
+
+408
+01:07:40,896 --> 01:07:48,115
+Artı tanjant'ın türevi 1 artı tanjant kare x ya da sekant kare x'dir.
+
+409
+01:07:49,715 --> 01:08:00,395
+çarpı dx u'nun türevi 1'dir çarpı do şimdi bunu bulduk değişken dönüşümünü yerine koyarsak
+
+410
+01:08:00,395 --> 01:08:12,395
+yani secant x dx şöyle şurada şuna u dedik bakın arkadaşlar yukarısı bunu açtığınız zaman
+
+411
+01:08:12,563 --> 01:08:26,884
+sekant kare x şöyle, bununla bunu çarptığınız sekant kare x oldu. Artı sekant x çarpı tanjant x oldu. Bakın arkadaşlar, sekant kare x, sekant x çarpı tanjant x oldu.
+
+412
+01:11:18,195 --> 01:11:19,995
+Arkadaşlar, sesim geliyor mu?
+
+413
+01:11:22,555 --> 01:11:23,835
+Sesimizin...
+
+414
+01:11:23,835 --> 01:11:26,515
+Geliyor hocam.
+
+415
+01:11:27,036 --> 01:11:28,475
+Bilgisayar kapandı.
+
+416
+01:11:28,735 --> 01:11:29,015
+Evet.
+
+417
+01:11:29,075 --> 01:11:29,995
+Bilgisayar mı kapandı?
+
+418
+01:11:30,075 --> 01:11:34,335
+Evet, bilgisayar kapandı. İnternet gitti. Hepsi bir anda oldu.
+
+419
+01:11:34,876 --> 01:11:36,716
+Evet arkadaşlar, devam edelim.
+
+420
+01:11:37,363 --> 01:11:39,363
+Şimdi ne anlatıyordum?
+
+421
+01:11:39,963 --> 01:11:40,843
+x kare artı 2x'i.
+
+422
+01:11:41,083 --> 01:11:47,703
+x kare artı 2x'i sizin bir dahaki senede çok karşınıza çıkacak, bilmeniz gereken önemli bir integral.
+
+423
+01:11:48,003 --> 01:11:53,563
+Hatta bunu belirli bir süre sonra ezbere bilmeniz gerekecek bir daha.
+
+424
+01:11:53,943 --> 01:11:57,183
+Yani ezberleyeceksiniz, o kadar çok kullanacaksınız ki.
+
+425
+01:11:57,183 --> 01:12:03,183
+Yani sinüsün nasıl kosinüs, kosinüsün de sinüsse, sekantın da integralini bileceksiniz.
+
+426
+01:12:03,983 --> 01:12:05,363
+Evet, tahtayı görüyoruz.
+
+427
+01:12:05,363 --> 01:12:06,363
+Görüyor musunuz arkadaşlar?
+
+428
+01:12:07,743 --> 01:12:08,323
+Evet hocam.
+
+429
+01:12:08,763 --> 01:12:23,343
+Tamam. Şimdi arkadaşlar, yukarısı, aşağısı u iken, bakın arkadaşlar, şu ifadenin aynısı, şu, şurası, şu, şurası da şu kısım, başka renkle göstereyim, görebiliyor musunuz? Aynısıdır.
+
+430
+01:12:23,343 --> 01:12:26,723
+Yani burası d uya eşittir.
+
+431
+01:12:28,148 --> 01:12:50,068
+d u bölü u oluyor. E peki bu ne eşittir? Ln u artı c'dir. Bu ise Ln u nedir arkadaşlar? U neydi? Bakın. Çünkü x ile başladık, u ile bitirdik. Olmaz. U yerine ne yazacağız? Secant x artı tanjant x artı c'dir. Yani
+
+432
+01:12:50,676 --> 01:12:59,656
+x kare artı 2x, f'nin integralı arkadaşlar şöyle, x kare artı 2x, f'nin integralı ln x artı tanjant x'dir.
+
+433
+01:13:00,051 --> 01:13:26,911
+Bunu bilmeniz lazım. Benzer bir şekilde kosekant notlar da var arkadaşlar. Ona da bakabilirsiniz. Şimdi değişken dönüşümü için mesela şu size ben bir integrasyon tablosu vereceğim. Bir dahaki dersimizde ya da haftaya uygulamanın başında. Mesela dx bölü a kare artı x kare mesela
+
+434
+01:13:27,412 --> 01:13:53,492
+1 bölü 1 artı x kare arkadaşlar arktanjant x'in türevi, arktanjant x'in türevi şuydu. 1 bölü 1 artı x kare idi. Yani şu integral arktanjant x'e eşittir. Ama burası 1 değil de şu kısım a gibi bir sayısı arkadaşlar bu 1 bölü a arktanjant x bölü a'ya eşit.
+
+435
+01:13:53,712 --> 01:14:09,971
+Aynı şekilde, arksinüs x'in türevi 1 bölü 1-x karedir. Ama integral şöyle olsun, a kare eksi x kare olursa arkadaşlar, bunu yaptığınız zaman şu gelir.
+
+436
+01:14:10,572 --> 01:14:17,672
+Arksinüs x bölü a, tabi şuralarda bir de artı c'si var. Burada 1 bölü a gelmez başında.
+
+437
+01:14:19,028 --> 01:14:44,507
+yani bunun başında bir şey yoktur. Sadece arksinüs x bölü a gelir. Şimdi mesela bir tanesini göstereyim. Mesela şöyle şu çıksa hemen dersiniz ki bu arktanjant x'dir artı c'dir. Ama mesela şöyle olsun. Örneğin dx bölü 9 artı x kare. Ben birlisini biliyorum.
+
+438
+01:14:44,948 --> 01:14:54,768
+9'u bilmiyorum. Burada 9 var. Şöyle yapardım. 9 parantezini alırdım. Şöyle olur.
+
+439
+01:14:55,072 --> 01:14:58,912
+9'u dışarıya çıkartırdım. Böyle oldu.
+
+440
+01:14:59,412 --> 01:15:05,572
+Şu x kare bölü 9'da x bölü 3'ün karesi şeklinde yazardım.
+
+441
+01:15:06,012 --> 01:15:13,912
+Ya derim, eğer burası şöyle olsaydı, mesela du bölü 1 artı u kare neye eşittir?
+
+442
+01:15:14,072 --> 01:15:18,432
+Arktanjant u'dur. Artı c'dir. Değil mi? Aynı mantık.
+
+443
+01:15:18,547 --> 01:15:41,587
+veya dt bölü 1 artı t kare neye eşittir? Arktanjan t artı c'dir. O zaman derim ki şöyle derim x bölü 3u olsa değişken dönüşüm yapsam o zaman 1 bölü 3 çarpı dx 1 çarpı du'dur. Şimdi bakın değişken dönüşümünü yapıyorum.
+
+444
+01:15:42,195 --> 01:16:08,775
+Şurası 1 artı x bölü 3'ün yerine u yazdım. u kare. dx ne oldu? Bakın dx buradan dx bölü 3 du ise dx 3 du'dur. Bunu da yazdım. Bakın bu 3 dışarıya çıktı. 1 bölü 3 kaldı. Çünkü 1 bölü 9 çarpı 3'ten şunlar gidecek. 1 bölü 3. du bölü 1 artı u kare kaldı.
+
+445
+01:16:09,300 --> 01:16:26,300
+e şimdi ne diyorum o zaman? E bu da arktanjant u'ya eşit. O zaman ne çıktı? 1 bölü 3 çarpı arktanjant u artı c'dir. E bitti mi? Bitmedi. Niye? Ben u ile
+
+446
+01:16:26,752 --> 01:16:42,552
+pardon ben x ile başladım şöyle ne ile bitirdim? u ile bitirdim. x'e geri dönmem lazım. 1 bölü 3 arktanjant u'nun yerine ne yazacağım? Bakın burada x bölü 3 artı c'dir.
+
+447
+01:16:44,832 --> 01:16:53,632
+direkt bunu formülden yazabilirsiniz de. Ben değişken dönüşümüyle gösterdim. Formülü nedir? Şöyle dersiniz.
+
+448
+01:16:54,868 --> 01:17:14,587
+eğer dx bölü a kare artı x kare şeklindeyse bu arktanjant x bölü a'ya eşit artı c'ye ne verilmiş? dx 9 artı x kare. Yani bu ne demek? Burası 3'ün karesi demek. O zaman, pardon şurada bile 1 bölü a vardı.
+
+449
+01:17:15,788 --> 01:17:17,128
+Şurayı yanlış yazdım.
+
+450
+01:17:20,243 --> 01:17:44,804
+1 bölü a, arktanjant eşittir. x bölü a, artı c'dir. a yerine kaç gelmiş? 3 gelmiş. 1 bölü 3, arktanjant, x bölü a yerine 3 gelmiş, artı c'dir. Bakın aynı sonucu bu şekilde de bulabiliriz. Şuradaki ile. Bakın şu sonuçla.
+
+451
+01:17:45,268 --> 01:17:47,087
+Şu sonuç aynıdır.
+
+452
+01:17:47,667 --> 01:17:49,847
+Evet, anlamadığınız bir şey var mı burada?
+
+453
+01:17:50,528 --> 01:17:51,728
+Hocam bir şey söyleyebilir miyim?
+
+454
+01:17:51,868 --> 01:17:52,108
+Tabii.
+
+455
+01:17:52,887 --> 01:18:02,868
+Hocam bu hiç değişken dönüşüm yapmadan aşağıdakinin türevini yukarıda yaratmak için dx'in yanına 1 bölü 3 koyup 1 bölü 9'un yanına da 3 ile çarpsak olur mu?
+
+456
+01:18:03,628 --> 01:18:07,247
+Bir dakika, şöyle silip yazacağım dediğini.
+
+457
+01:18:07,567 --> 01:18:08,247
+Tamam hocam.
+
+458
+01:18:08,543 --> 01:18:12,564
+Şöyle, dx bölü 9 artı x kare, evet.
+
+459
+01:18:13,023 --> 01:18:21,463
+Yok, sizin yaptığınız işte, 1 bölü 9'u falan dışarı çıkardınız ya, sonradan şey kaldı, 1 artı x bölü 3'ün karesi kaldı, saygıda.
+
+460
+01:18:22,963 --> 01:18:23,283
+Evet.
+
+461
+01:18:25,344 --> 01:18:33,543
+dx'i, evet hocam, dx'i 1 bölü 3 ile çarpsak, dışarıda 1 bölü 9'un yanına da 3 koysak, yani alttakine türev...
+
+462
+01:18:33,543 --> 01:18:35,103
+O da bir şey, evet, olur.
+
+463
+01:18:35,699 --> 01:18:38,000
+Yani hiç değişken dönüşümü zor geliyor daha biraz.
+
+464
+01:18:38,219 --> 01:18:41,600
+Evet, bunu yapmanızı, tabii şöyle de direkt yazabilirsiniz.
+
+465
+01:18:41,939 --> 01:18:48,579
+Mesela şöyle de değişken dönüşümü zor geliyorsa, mesela dx bölü 9-x kare.
+
+466
+01:18:48,719 --> 01:18:57,319
+Bu da mesela şunu biliyorsanız, direkt yazarsanız, a kare eksi x kare, bu da arc sinüs x bölü a'dır.
+
+467
+01:18:57,959 --> 01:19:00,559
+Burada a kaçtır? Mesela buna 4 diyelim.
+
+468
+01:19:01,363 --> 01:19:27,403
+4 olsun, 2'nin karesidir. O zaman bunun sonucu nedir? Ark sinüs x bölü 2 artı c'dir. Soru bitti. Mesela dx bölü, kaç olsun? 11 artı x kare nedir? Şöyle dersiniz. Şu neydi? dx bölü a kare artı x kare. Bu nedir? 1 bölü a, tanjant x bölü a'dır.
+
+469
+01:19:27,796 --> 01:19:49,456
+bunda artılarda bu şekildeydi. Hemen şöyle dersiniz. a'sı kaç? Kök 11'in karesi olur. Ne olur? 1 bölü kök 11, artı tanjant x bölü kök 11, artı c'dir. Tamam mı? Veya senin dediğin gibi de olabilir. Tamam mı arkadaşlar? Evet.
+
+470
+01:19:50,739 --> 01:20:04,979
+Şimdi burada başka sorular var ama şimdi bunları çözmeyeceğim. Şimdi kısmi integrasyona geçiyorum. Değişken dönüşümünü anladığınızı umuyorum arkadaşlar. Anladık mı? Birazcık da olsa anladık diye düşünüyorum.
+
+471
+01:20:04,979 --> 01:20:13,100
+Şimdi kısmi integrasyon. Şimdi arkadaşlar bir integrali çözmeye başlayacaksınız. Kısmi integrasyonu şöyle söyleyeyim.
+
+472
+01:20:15,283 --> 01:20:42,703
+x kosinüs x kare dx yazdım. Bu integrede çözünüz dediğim zaman hemen ne dersiniz? Buraya u desem, x kareye u desem, bakın x kareye u desem ne olur? 2x dx, ne olur? 1 çarpı du olur. O zaman bakın integral neye dönüşür? Bu örnek önemli bir örnek.
+
+473
+01:20:43,060 --> 01:20:45,940
+kosinüs, şurası u oldu.
+
+474
+01:20:47,260 --> 01:20:48,819
+x dx neye eşit?
+
+475
+01:20:48,940 --> 01:20:53,700
+Bakın arkadaşlar, x dx neye eşit?
+
+476
+01:20:54,600 --> 01:20:58,819
+Du bölü 2'ye.
+
+477
+01:21:00,659 --> 01:21:01,480
+Gördünüz mü?
+
+478
+01:21:01,480 --> 01:21:08,159
+Yani 2x dx du ise x dx.
+
+479
+01:21:09,268 --> 01:21:35,567
+du bölü 2'ye eşit. Bakın buraya da du bölü 2 geldi. Şimdi 1 bölü 2'yi dışarıya çıkartırım. Kosinüs u, du olur. Bu ne olur? 1 bölü 2. Kosinüs neyin integralidir? Sinüsündür. Artı c. E u ile bitmeyecek. Ne olacak? Sinüs u yerine ne diyeceğiz? x kare artı c diyeceğiz. Soru bitecek.
+
+480
+01:21:36,404 --> 01:21:53,024
+Şimdi gelelim kısmiye nasıl geçeceğiz? İntegrasyonu böyle çözdük. Şimdi bakın bu integrasyon şöyle olsaydı. x kosinüs x kare ya, dx ya, soru böyleydi değil mi? Şöyle olsun.
+
+481
+01:21:56,532 --> 01:22:03,532
+x kare artı 2x, x cos x d x
+
+482
+01:22:03,532 --> 01:22:08,532
+cos x d x olsun
+
+483
+01:22:08,532 --> 01:22:16,532
+şimdi bununla bunun arasında dağlar kadar şununla bunun arasında dağlar kadar fark var. Niye?
+
+484
+01:22:16,532 --> 01:22:18,956
+şimdi siz buna u deyin
+
+485
+01:22:19,060 --> 01:22:39,140
+u deyin, x'e u deyin, dx, du olacak zaten. Yine değişken dönüşümü de yapsanız u, kosinüs, u, du olacak. Yani her değişken dönüşümünde sonucu ulaşamayacağız. O zaman bütün integralleri sadece değişken dönüşümüyle çözebilirdik.
+
+486
+01:22:47,060 --> 01:23:03,960
+Mesela biz buradan şuraya geldiğimiz zaman çok kolay bir integrale indiriyoruz. Değişken dönüşümün amacı bu. Ama buraya geldiğimiz zaman hiçbir şey yapamıyoruz. İlerleyemiyoruz, yerimizde sayıyoruz. Ya da bazen daha karışık ifadelere gidecek.
+
+487
+01:23:04,275 --> 01:23:11,976
+Şimdi arkadaşlar, eğer bir kısmı, tabii böyle bir genellemi yapamayız ama genelde şöyle diyebiliriz.
+
+488
+01:23:11,976 --> 01:23:19,416
+İki farklı türden, bakın burası bir polinom, burası bir trigonometrik fonksiyon.
+
+489
+01:23:19,935 --> 01:23:32,235
+İki farklı fonksiyon varsa ve integral işte değişken dönüşürümüyle çözülemiyorsa veya farklı bir yöntemle, bilemiyorum ne gerekiyorsa, şu anda tek değişken dönüşümünü gördük.
+
+490
+01:23:32,275 --> 01:23:58,515
+kısmi aklınıza gelecek. Şimdi bakın, tahtayı siliyorum. Şöyle diyeyim. x kosinüs x dx. Kısmi integrasyonun formülü şu arkadaşlar. İlk önce onu yazayım. Sizin bir integraliniz var. u çarpı dv. Bakın bu kadar yazıyorum. Bunu bu şekilde verilen bir integrali şöyle yazabiliyorsunuz.
+
+491
+01:23:59,539 --> 01:24:01,840
+Bu şekilde. E peki bu ne demek?
+
+492
+01:24:03,639 --> 01:24:06,680
+Şimdi bu ne demek arkadaşlar? Şöyle görelim.
+
+493
+01:24:07,860 --> 01:24:10,220
+x kosinüs x dx.
+
+494
+01:24:11,000 --> 01:24:18,119
+Yani içerideki integralin bir kısmına u, bir kısmına da dv diyeceksiniz.
+
+495
+01:24:18,119 --> 01:24:21,579
+Bunu nasıl seçiyorsunuz? Lisede gördünüz değil mi? Laptü.
+
+496
+01:24:22,500 --> 01:24:25,039
+Laptü'yu gördünüz mü? Üstel.
+
+497
+01:24:25,500 --> 01:24:25,780
+Gördük.
+
+498
+01:24:27,060 --> 01:24:28,200
+Sesim geliyor mu?
+
+499
+01:24:28,820 --> 01:24:29,480
+Geliyor hocam.
+
+500
+01:24:29,500 --> 01:24:29,940
+Evet, değil mi?
+
+501
+01:24:29,940 --> 01:24:47,220
+T'ler trigonometrik, trigonometrik, P'ler polinom, A'lar arksinüs, ters trigonometrikler, arktanjant vs. ve L'ler de logaritmik.
+
+502
+01:24:48,595 --> 01:24:57,895
+Laptü'den, yani ilk önce logaritmik fonksiyonları, sonra arkları, sonra polinomları, sonra trigonometrikleri, sonra da üstelleri.
+
+503
+01:24:57,995 --> 01:25:02,235
+Sırayı böyle. Genelde bu sıraya göre yapılır.
+
+504
+01:25:02,735 --> 01:25:11,315
+Şimdi bakıyoruz bir tane şey var. Ne var arkadaşlar? Polinom. Bir tane de trigonometrik var. Bakın.
+
+505
+01:25:11,988 --> 01:25:20,148
+polinom trigonometrikten daha önce geliyor. Yani hangisine u diyeceğimiz? Şurada bakın. Birine u diyeceksiniz.
+
+506
+01:25:21,347 --> 01:25:32,948
+Birine u. dx'i içine alana da dv diyeceksiniz. Birine de dv diyeceksiniz. O zaman ben bu labduya göre ilk önce polinomu u derim.
+
+507
+01:25:33,747 --> 01:25:35,827
+Buna u diyor. Benim u bu.
+
+508
+01:25:36,916 --> 01:25:39,916
+dv ise arkadaşlar, geri kalan.
+
+509
+01:25:42,416 --> 01:25:42,956
+Tamam mı?
+
+510
+01:25:43,595 --> 01:25:49,755
+Şimdi o zaman bakın, benim integralim içinde sadece u ve dv var.
+
+511
+01:25:50,155 --> 01:25:53,835
+Şimdi ne dedim? x'e u dedim, birincisi.
+
+512
+01:25:54,636 --> 01:25:58,556
+Kosinüs x, dx'e de ne dedim? dv dedim.
+
+513
+01:25:59,699 --> 01:26:20,239
+kendimiz ayırıyoruz. Bakın şöyle. Hatta şöyle farklı bir reng. x'e u dedi. Şuranın hepsine de dv dedi. Şimdi neye eşit olacakmış? Diyor ki buraya u çarpı v gelecek. Sonra da v çarpı du integralini alacaksın. Şimdi u var.
+
+514
+01:26:20,724 --> 01:26:43,724
+du lazım. du'yu nasıl bulursunuz? Bunun diferansiyeli değil mi? Yine x'in türevi 1 çarpı dx, u'nun türevi 1 çarpı du. Demek ki bu tarafta türev alıyorsunuz u dediğiniz kısımda. Bu tarafta ise integralini alacaksınız. Her iki tarafın şöyle diyelim bakın. Her iki tarafın integralini alalım.
+
+515
+01:26:44,467 --> 01:26:57,387
+Bakın eşitliğin her iki tarafının integralini aldık. Ne oldu? Kosünüs x'in integralı nedir? Sinüs x'dir. dv'nin integralı nedir? v'dir. Yani bir taraftan
+
+516
+01:26:58,452 --> 01:27:00,152
+Neyi bulduk arkadaşlar?
+
+517
+01:27:00,932 --> 01:27:04,332
+du'yu, bakın şöyle, du'yu bulduk.
+
+518
+01:27:04,652 --> 01:27:05,852
+Burada da v'yi bulduk.
+
+519
+01:27:05,952 --> 01:27:09,252
+Bir taraftan türevini aldık, bir taraftan integralini aldık.
+
+520
+01:27:09,731 --> 01:27:11,992
+E şimdi yerine koyalım, bakın şöyle oluyor.
+
+521
+01:27:12,612 --> 01:27:15,852
+Neydi? x kosinüs x dx.
+
+522
+01:27:16,932 --> 01:27:21,252
+Şimdi u x v sinüs x çıktı.
+
+523
+01:27:21,252 --> 01:27:22,512
+u çarpı v.
+
+524
+01:27:23,220 --> 01:27:33,460
+x sinüs x, eksi, v çarpı du, v'si kaç? sinüs x, du'su kaç? dx.
+
+525
+01:27:34,547 --> 01:27:56,188
+E tamam, buradan ne çıktı? x sinüs x eksi, şunun integrali nedir? sinüs x de x'in integrali, sinüs neyin integralidir? eksi kosinüs x'in integralidir, artı c'dir. Buradan ne geldi? x sinüs x artı kosinüs x artı c gelir.
+
+526
+01:27:56,948 --> 01:28:11,068
+biraz anladık mı? Şimdi başka bir örnek yapacağım. Yani ilk başta birine u, birine dv diyeceksiniz ve buna göre işlem yapacağız. Bir örnek daha yapalım. Mesela
+
+527
+01:28:16,659 --> 01:28:22,520
+Çok önemli bir integral daha. L'nx, dx. İntegrali nedir diye soruldu.
+
+528
+01:28:23,879 --> 01:28:27,159
+Şimdi sesim geliyor mu? Geliyor değil mi arkadaşlar?
+
+529
+01:28:27,159 --> 01:28:27,440
+Geliyor.
+
+530
+01:28:28,440 --> 01:28:35,340
+Şimdi nasıl secant x önemliyse. L'nx de çok kullanılan bir integral.
+
+531
+01:28:35,979 --> 01:28:39,279
+Şimdi bakıyorum. L'nx neyin türevidir bilmiyorum.
+
+532
+01:28:39,988 --> 01:28:55,888
+lnx değişken dönüşümü yapamam. Neye u diyeceğim? Yani türevi yok içinde. O zaman kısmı integrasyon aklıma geliyor. Nasıldı? u çarpı dv, uv eksi v çarpı du. Yani şöyle diyordum.
+
+533
+01:28:56,307 --> 01:29:06,968
+ben integralin içinde, şurası, şu kısımda, birine u, bir şeye ve bütün integralin u çarpı dv şeklinde yazabiliyorum diyorum.
+
+534
+01:29:07,507 --> 01:29:10,887
+Şimdi bakın, lnx, şurası soru işareti dx.
+
+535
+01:29:11,427 --> 01:29:18,028
+Lapdü'ye göre, zaten u, uyu seçerken, ilk önce ln varsa ln'i seç diyor.
+
+536
+01:29:18,028 --> 01:29:24,068
+Şimdi ben buradan düşünüyorum. O zaman buna u desem, dv'li kısımda neydi?
+
+537
+01:29:24,307 --> 01:29:51,708
+x'i içeren kısımdı. Geriye zaten ne kaldı? Geriye sadece dx kaldı. E buna da dv desem. E şimdi ne olur bakın. U pardon lnx neye eşit? Uye eşit. Bir de ne var? dx neye eşit? dvye eşit. Böyle aldık. Şimdi ulu olan kısmın türevini alıyorduk bu tarafın. lnx'in türevini 1 bölü x dx.
+
+538
+01:29:52,340 --> 01:30:18,060
+u'nun türevi 1 çarpı du. Şimdi bu kısmı bulduk, du'yu bulduk. du neymiş? dx bölü x'miş. E geldik bu tarafa. Bu tarafın da integralini alıyoruz v'yi bulmak için. dv'nin integrali v. dx'in integrali de x. E bulduk, yazalım. Neydi bu? u çarpı dv, bakın şurada yeniden görelim. uv.
+
+539
+01:30:18,868 --> 01:30:38,548
+v çarpı du, uv, uv çarpalım. x, ln x, eksi integral, v çarpı du. v ne? x'i eşit, çarpı du. du neye eşit? 1 bölü x, dx oldu.
+
+540
+01:30:39,628 --> 01:30:44,008
+Gördünüz mü arkadaşlar? E şimdi buradan, bakın şunlar gitti mi?
+
+541
+01:30:44,416 --> 01:31:10,416
+Gitti. Ne kaldı geriye? Şöyle devam etsem. Eşittir. Şu eşitliğin hizası olsun. x ile x vardı. Burada ne kaldı? x çarpı 1 bölü x'ten 1 geldi. 1 çarpı dx. Bu ne eşit? x ile x eksi dx'in integralı nedir? x'dir. Artı c olur. Evet. Anladınız mı birazcık daha?
+
+542
+01:31:11,731 --> 01:31:39,351
+Evet. Bir tane daha yapalım. Şimdi kısmı integrasyonda birden fazla kısmı integrasyon alabilirsiniz. Yani çok daha fazla kısmı integrasyon alınabilir. Mesela x kare e üzeri x de x. İntegralini sordu. Şimdi bakın burada önemli, yine bu da notlarda yok. Şöyle çok önemli bir şey söyleyeceğim.
+
+543
+01:31:41,971 --> 01:31:43,971
+mesela bu soru şöyle olsaydı.
+
+544
+01:31:43,971 --> 01:31:47,971
+şimdi bu soru şöyle olsaydı.
+
+545
+01:31:51,412 --> 01:32:09,351
+dx nedir diye sorsaydı. Hep ilk başta aklınıza değişken dönüşümü gelecek. x kübe u deseydim, ne olurdu bunun türevi? 3x kare dx eşittir, do olurdu. 1 çarpı do. Bakın burası şöyle olurdu.
+
+546
+01:32:11,212 --> 01:32:17,271
+e üzeri x küp, e üzeri u olurdu. Bakın, x kare dx neye eşittir?
+
+547
+01:32:17,876 --> 01:32:36,235
+du bölü 3'e eşittir. Şu x kare dx'in yerine de du bölü 3 yazardınız. Şu 1 bölü 3 dışarıya çıkardı. E üzeri u, du olurdu. Bu da 1 bölü 3. E üzeri u'nun integrili nedir arkadaşlar? E üzeri u'dur.
+
+548
+01:32:36,576 --> 01:33:00,595
+artı c olurdu. x ile başladınız, u ile bitirdiniz, olmaz derdiniz. Birbirli 3, e üzeri u yerine de x küp yazardınız, artı c derdiniz. Tamam mı? Bakın böyle çözülürdü. Yani birisi polinom, birisi üstel ama ne yapıyor?
+
+549
+01:33:01,203 --> 01:33:25,304
+normal değişken dönüşümüyle çözülüyor. Gelelim yukarıdaki soruya. Şimdi mesela burada x'e u deseniz bir şey fark etmez ki. dx eşittir du olur. Bakın burası yine x'e u dediniz. u kare, e üzeri u, du olur. Hiçbir farkı olmaz. Demek ki değişken dönüşümü yapamıyorum.
+
+550
+01:33:26,836 --> 01:33:47,036
+o zaman şöyle düşünün. 1. Değişken dönüşümü yapabiliyor muyum diye bakıyorum. Yapamıyorum. O zaman diyorum ki iki farklı fonksiyon. Birisi üstel, birisi polinom. Lap diye göre de bakın. Ne geliyor? Polinom, üstelden önce geliyor. Hangisine?
+
+551
+01:33:47,507 --> 01:34:01,507
+diyeceğim. Çünkü türevini alarak onun derecesini azaltıyoruz aslında. Buraya ne diyeceğim? u diyeceğim. Buna u diyeceğim. Laptı sırasına göre. u'yu seçeceğimiz yere karar veriyoruz.
+
+552
+01:34:03,227 --> 01:34:12,667
+Geriye kalan ne? Geriye kalan. Sakın dx'i dışarıda bırakmayın. Geriye kalana da dx'i içeriğine de dv diyoruz.
+
+553
+01:34:13,332 --> 01:34:35,772
+şimdi ne oldu? x kareye u dedim. e üzeri x dx'e ne dedim? dv dedim. Şimdi bakın arkadaşlar, bunun türevi 2x dx. Burası ne oldu? türevi 1, 1 çarpı du'dan du geldi. Burası bitti. Buraya geldik, integrallerini aldık.
+
+554
+01:34:36,692 --> 01:34:52,792
+şöyle oldu. O zaman e üzeri x, dx'in integrali e üzeri x olur. vv'nin integrali de v olur. Bu tamam mı arkadaşlar? Evet. Şimdi burada şöyle yapıyoruz.
+
+555
+01:34:53,555 --> 01:35:20,275
+Burada arkadaşlar yerine koyalım artık. Neydi? x kare e üzeri x dx. Yani şöyle diyorduk değil mi? u çarpı dv, uv eksi v çarpı du'yu eşit. Şimdi o zaman u çarpı dv yazdık. u çarpı v, u çarpı v, x kare e üzeri x eksi v çarpı du v'si
+
+556
+01:35:20,692 --> 01:35:43,771
+x e üzeri x çarpı du. 2x dx. Buradan ne geldi arkadaşlar? x kare e üzeri x, eksi 2'yi dışarıya çıkartalım. x e üzeri x dx oldu. Şimdi arkadaşlar burada bakın bu integral yine çözülemeyecek.
+
+557
+01:35:44,979 --> 01:36:04,599
+Yani değişken dönüşümüyle çözülen bir integral değil. O zaman diyorsunuz ki 1. Bunu çözdük. Bakın örnek şu. Bu integral, bu. Şu integral. Ama içinde yine bir integral var. Ne yapacağız? Yine bakın şimdi ayrıca şurada çözelim.
+
+558
+01:36:05,011 --> 01:36:30,291
+x e üzeri x, tx'i çözelim. Bu integral nedir? I integral'i diyelim. I integral'i nedir? Şöyle yapıyoruz arkadaşlar. Yine bakın x'e u diyoruz. Bu sefer yine polinomu u diyoruz. Eğer yanlışlıkla siz gidip bunu u derseniz e üzeri x'e başladığınız yere geri dönersiniz. Hepsi birbirine götürür.
+
+559
+01:36:30,623 --> 01:36:40,744
+Yani şöyle yanlışlıkla x'e değil de e üzeri x'e u derseniz gerisin geri aynı yere geri dönersiniz.
+
+560
+01:36:41,503 --> 01:36:49,423
+Şimdi x'e u dedik yine polinom sonra ne geliyor? Üstel. O yüzden polinom önce geldiği için u dedik.
+
+561
+01:36:49,524 --> 01:36:55,224
+E üzeri x, dx'de ne oldu? Do oldu. Pardon, dv oldu.
+
+562
+01:36:55,475 --> 01:37:21,255
+u çarpı dv idi ya. Yine kısmı uygulayacağım. dv. Şimdi bakın arkadaşlar. Bunun türevi 1 çarpı dx geldi. du'nun türevi 1 çarpı du. Bu kısım bitti. Geldik buranın integraline şöyle değil mi? Şöyle. E üzeri x'in integralı e üzeri x, dv'nin integralı de v'dir. Şöyle.
+
+563
+01:37:22,739 --> 01:37:49,800
+şimdi 1, v'yi bulduk mu? Bulduk. du'yu bulduk mu? Bulduk. Neydi? u çarpı dv şeklinde almıştık. uv eksi v çarpı du. Şimdi yerine koyalım. uv, v burada, u burada. uv nedir? x e üzeri x çarptık. eksi v du.
+
+564
+01:37:50,771 --> 01:38:16,752
+do ne? dx. Bu gelir. Şimdi bu integral çok kolay. Şurası nedir? e üzeri x'tir. x e üzeri x, eksi e üzeri x'tir. Bunu da yerine yazarsak soru bitmiş olur. x kare bakın arkadaşlar. Şurası x kare e üzeri x yazdık. Eksi iki tane şu i integralini yazarsak.
+
+565
+01:38:17,140 --> 01:38:22,320
+x e üzeri x, eksi e üzeri x, artı c'dir.
+
+566
+01:38:23,640 --> 01:38:23,960
+Evet.
+
+567
+01:38:26,500 --> 01:38:27,619
+Var mı bir sorunuz?
+
+568
+01:38:28,820 --> 01:38:29,960
+Yok galiba.
+
+569
+01:38:31,280 --> 01:38:37,280
+Şimdi arkadaşlar, şimdi gelelim belirli integrale.
+
+570
+01:38:37,280 --> 01:38:43,280
+Yalnız bir tane değişken dönüşümlü soru çözecektim.
+
+571
+01:38:44,500 --> 01:38:55,300
+şimdi onu bundan sonra yapayım. Bir tane de değişken dönüşümlü olarak çözecektim. Şöyle bir tane de şöyle yapalım. Bakın. Belirli integralde.
+
+572
+01:38:58,800 --> 01:38:59,400
+x
+
+573
+01:38:59,400 --> 01:39:03,500
+tamam. Şimdi arkadaşlar burada
+
+574
+01:39:03,500 --> 01:39:06,500
+böyle verilmiş.
+
+575
+01:39:06,771 --> 01:39:26,351
+burada değişken dönüşümüyle çözemezsiniz. Yine polinom kısmına u dedim. Geri kalanına da dv dedim. Formülümüz neydi? u çarpı dv eşittir. uv eksi v çarpı, pardon, şurası şöyle.
+
+576
+01:39:29,171 --> 01:39:37,871
+uv-v-du
+
+577
+01:39:37,871 --> 01:39:39,411
+belirli de
+
+578
+01:39:39,411 --> 01:39:40,951
+yani şöyle olsun
+
+579
+01:39:40,951 --> 01:39:42,991
+a'dan b'ye
+
+580
+01:39:42,991 --> 01:39:47,351
+uv-v-du
+
+581
+01:39:47,351 --> 01:39:51,691
+vd
+
+582
+01:39:51,691 --> 01:39:52,731
+şimdi burada
+
+583
+01:39:52,731 --> 01:39:54,771
+şuraya da şöyle
+
+584
+01:39:54,771 --> 01:39:55,531
+normal
+
+585
+01:39:55,531 --> 01:39:55,884
+şöyle olacak
+
+586
+01:39:56,916 --> 01:40:03,456
+uv'nin abdeki değeri eksi bu şekildedir. Belirli de.
+
+587
+01:40:04,276 --> 01:40:12,176
+Veya direkt belirsiz olarak alırsınız. En son sınırlarını koyarsınız arkadaşlar. Bütün integralde onu da yapabilirsiniz.
+
+588
+01:40:13,016 --> 01:40:14,115
+Belirli de bu şekilde.
+
+589
+01:40:14,115 --> 01:40:18,176
+Şimdi bakalım o zaman nasıl olacak?
+
+590
+01:40:20,115 --> 01:40:21,176
+Bir bahsedelim.
+
+591
+01:40:25,524 --> 01:40:47,904
+şöyle arkadaşlar x'i u dedik, e üzeri eksi x, dx'i dv dedik. Şimdi arkadaşlar bunun türevini aldık. 1 çarpı x'in türevi 1, sonra diferansiyeli dx, 1 çarpı dx, onun türevi 1 çarpı du. Şimdi gelelim integrele.
+
+592
+01:40:48,627 --> 01:40:58,867
+şöyle integralini aldık e üzeri eksi eksi eksi eksi eksi eksi eksi eksi eksi bu da b'dir
+
+593
+01:40:58,867 --> 01:41:00,867
+şimdi bunu bulduk 1
+
+594
+01:41:00,867 --> 01:41:09,027
+ne olacak arkadaşlar 0'dan 4'e x e üzeri eksi x d x eşittir 1
+
+595
+01:41:09,027 --> 01:41:12,148
+u çarpı v şunlar ikisi
+
+596
+01:41:12,372 --> 01:41:36,832
+nedir? x çarpı eksi e üzeri eksi x. Yani şu. Ama bunlar belirli integral olduğu için şöyle göstereyim. Burası ne olacak? 0'dan 4'e kadar. Şurada bir şey yok. Şurada bir şey yok. 0'dan 4'e kadar. Eksi, bakın u çarpı v yazdım. Eksi v çarpı do. v'si kaç?
+
+597
+01:41:37,199 --> 01:42:03,539
+eksi e üzeri eksi x, o zaman şurası artı olacak, çarpı du dx. Bu olur. Tabi burası da yine 0'dan 4'e kadar. Şimdi bakın yine yazıyorum, eksi x e üzeri eksi x 0'dan 4'e daha işlemi yapmadı. Şurası da arkadaşlar, e üzeri eksi x'in integrali eksi e üzeri eksi x 0'dan 4'e kadar.
+
+598
+01:42:04,083 --> 01:42:25,123
+Burası da arkadaşlar ne gelir? Bakın, integralleri çözelim. x gördüğümüz yere ilk önce 4 veriyoruz. Ne olur arkadaşlar? x gördüğümüz yere önce 4 verirsek, eksi 4 çarpı ev üzeri eksi 4, eksi 0 veriyoruz, 0 olur. 0 çarpı ev üzeri eksi 0'dan.
+
+599
+01:42:30,068 --> 01:42:36,427
+e üzeri eksi 4, eksi x gördüğümüz yere 0 veriyoruz, e üzeri 0 olur.
+
+600
+01:42:37,108 --> 01:42:39,507
+Şimdi buradan ne geldi?
+
+601
+01:42:39,627 --> 01:42:44,927
+eksi 4, e üzeri eksi 4, e üzeri eksi 4, artı 1.
+
+602
+01:42:46,028 --> 01:42:52,507
+Bu da arkadaşlar, 1 eksi 5 tane e üzeri eksi 4 yapar.
+
+603
+01:42:54,287 --> 01:42:57,028
+Evet, buraya kadar tamam mı arkadaşlar?
+
+604
+01:43:01,747 --> 01:43:13,807
+galiba anlaşıldı diye düşünüyorum. Şimdi bir tane indirgeme formülü var ama şimdi bunu şöyle üzerinden göstersen.
+
+605
+01:43:20,564 --> 01:43:28,984
+Şimdi arkadaşlar, bir ara verelim. Olur mu? Bir ara verelim.
+
+606
+01:43:29,664 --> 01:43:30,244
+Olur hocam.
+
+607
+01:43:30,579 --> 01:43:43,899
+Tamam. Şimdi bir arkadaşınız değişken dönüşümünü sormuştu. Şimdi sınırlarının da değişken dönüşümünü bir aradan sonra unuttum onu ben. Aradan sonra göstereceğim. Devam edeceğiz.
+
+608
+01:43:44,919 --> 01:43:51,219
+5 geçe başlarız olur mu arkadaşlar? 3'ü 5 geçe dersimize kaldığımız yerden devam edeceğiz.
+
+609
+01:59:38,228 --> 01:59:42,507
+Merhaba arkadaşlar. Dersimize kaldığımız yerden devam ediyoruz.
+
+610
+01:59:43,408 --> 01:59:53,568
+Evet, bir arkadaşınız değişken dönüşümünde, hocam sınırları nasıl yapacağız demişti.
+
+611
+01:59:53,627 --> 01:59:56,988
+İlk önce bir örnek yazmak istiyorum böyle aklımdan yine.
+
+612
+01:59:57,988 --> 02:00:03,608
+Çok karışık olmayan. Şöyle ekran paylaşımı yapacağım sizlerle.
+
+613
+02:00:08,372 --> 02:00:08,792
+Evet.
+
+614
+02:00:23,380 --> 02:00:28,660
+şimdi mesela arkadaşlar, şöyle bir örnek olsun.
+
+615
+02:00:29,540 --> 02:00:37,280
+eksi 1'den 0'a kadar x artı 1'in karesi dx.
+
+616
+02:00:37,620 --> 02:00:38,060
+mesela.
+
+617
+02:00:39,280 --> 02:00:40,200
+kolay bir örnek.
+
+618
+02:00:40,680 --> 02:00:45,720
+mesela bunu normal yolla da çözebilirsiniz ama biz bunu değişken dönüşümüyle çözelim.
+
+619
+02:00:46,400 --> 02:00:48,220
+değişken dönüşümüyle
+
+620
+02:00:48,220 --> 02:00:51,020
+dönüşümüyle çözelim.
+
+621
+02:00:51,796 --> 02:01:06,896
+şimdi arkadaşlar değişken dönüşümüyle çözersek x artı 1'e u diyelim. u diyelim. şimdi birinci yol x artı 1'e u dedik.
+
+622
+02:01:08,243 --> 02:01:14,823
+O zaman arkadaşlar buranın türevi 1 çarpı dx eşittir, 1 çarpı do oluyor.
+
+623
+02:01:15,563 --> 02:01:23,803
+Ve şimdi eksi 1'den 0'a kadar x artı 1'in karesi dx, sesim geliyor mu? Geliyor değil mi arkadaşlar?
+
+624
+02:01:24,243 --> 02:01:24,543
+Geliyor.
+
+625
+02:01:24,543 --> 02:01:24,903
+Tamam.
+
+626
+02:01:25,663 --> 02:01:28,243
+Şöyle arkadaşlar, eksi 1'den 0'a kadar.
+
+627
+02:01:28,863 --> 02:01:31,923
+Bunu yazdınız ya, şimdi değişken dönüşümünü yapıyorum.
+
+628
+02:01:32,523 --> 02:01:36,223
+Her şeyini değiştiriyoruz ya, sınırları da değiştirmek birinci yol.
+
+629
+02:01:36,243 --> 02:01:51,023
+sınırları da değiştireceğiz. Burası ne oldu? x artı 1'in karesiydi. Yani u'nun karesi dx'i eşit, du'yu eşit. Şimdi x artı 1 eşittir u ise
+
+630
+02:01:52,724 --> 02:02:18,604
+x'i sıfırken, bakın yukarıdaki üst sınırınız integralin, x'i sıfırken 0 artı 1'den u'su kaç olur arkadaşlar? x'i sıfırken u'su 1 olur. Burası 1 olur. u'ya göre. x'i eksi 1 iken, x'i eksi 1 iken, koyarsak yerine eksi 1 artı şurada, eksi 1 artı.
+
+631
+02:02:18,644 --> 02:02:26,264
+artı 1'den u su kaç olur? x eksi 1 iken u su 0 olur. Dolayısıyla ne olur arkadaşlar?
+
+632
+02:02:26,931 --> 02:02:50,571
+sıfırdan bire olur. Yani sınırları da u'lu yazdık. u'ya göre sıfırdan bire kadar olur. Bu da arkadaşlar u3 bölü 3 olur. İnteklili sıfırdan bire. Bu da u gördüğümüz yere ilk önce 1 koy, 1 bölü 3. u gördüğümüz yere 0 koy, 1 bölü 3 çıkar. Şimdi birinci yol
+
+633
+02:02:51,283 --> 02:02:53,724
+sınırları da değiştirerek yapmak.
+
+634
+02:02:54,083 --> 02:02:57,943
+İkinci yol ise arkadaşlar, ikinci yol şöyle.
+
+635
+02:02:58,623 --> 02:03:03,523
+Şimdi size soru da, bu sorulmuş ya, yani belirli bir integral sorulmuş.
+
+636
+02:03:04,003 --> 02:03:06,603
+Siz bunu belirsizmiş gibi çözersiniz.
+
+637
+02:03:08,467 --> 02:03:32,188
+şimdi bunu böl, pardon şurası kareydi. Belirsiz integralmiş gibi çözersiniz. Yani ne dersiniz? Mesela x artı 1'e u dersiniz. dx eşittir du. Burası u kare du oldu. Hiç belirli integral katmıyorum. Sonra burası u küp bölü 3 oldu. Artı c oldu. Sonra ne diyorum?
+
+638
+02:03:33,011 --> 02:03:47,351
+bu x de başladı, u da bitti. O zaman u yerine x artı 1 yazdım. x artı 1'in küpüncü kuvveti bölü 3, şurası eşittir olsun, artı c oldu. Şimdi arkadaşlar,
+
+639
+02:03:47,859 --> 02:04:08,099
+şöyle oluyor. Yani belirsizli bu integralin çözümü budur. O zaman şöyle derim. Bakın şuraya gidiyorum. Yer kalmadığı için buraya yazacağım. En üstte. Şimdi arkadaşlar, o zaman belirli de ne olacak? Şu integral neye eşit? x artı 1'i
+
+640
+02:04:08,243 --> 02:04:28,203
+kübüncü kuvveti bölü 3. c'yi yazmanıza gerek yok. İki tane c gelir birbirine götürür. Bu integral, yani şu integral şuna eşit. Kaçtan kaça? Eksi birden sıfıra kadar. Yani sıfırları, pardon sınırları integralı çözdükten sonra koyabilirsiniz. Eşittir.
+
+641
+02:04:36,243 --> 02:05:04,243
+x gördüğümüz yere eksi 1 koyduk. Şurası artı 1. Eksi 1 artı 1 daha 0 bölü 3'den 0 gelir. Yani sonuç 1 bölü 3 gelir. Yani integral birincisi değişken dönüşümü yaparken sınırları da değiştirirsiniz. Yani u'ya göre değiştirdik. Buna u dedik. Ona göre sınırların değerini de yazabilirsiniz. Birinci yol. İkinci yol ise belirsizmiş gibi işlemi yapabilirsiniz.
+
+642
+02:05:04,243 --> 02:05:12,123
+varsınız. En sonunda da sınırları koyabilirsiniz. Anlaşıldı mı arkadaşlar bu? Evet.
+
+643
+02:05:14,003 --> 02:05:28,224
+Umuyorum ki anlaşıldı. Arkadaşlar, indir yeme formülleri diye bir şey var. Eninci yani çok yüksek mertebeden bir fonksiyonun formülüze edebiliyoruz.
+
+644
+02:05:28,224 --> 02:05:42,003
+Ve bu formüllerin bir kuralı yok. Hepsinin bulunuşu farklı. Ben bir tanesini göstereceğim hızlıca. Zaten hepsini de çoğunu size önümüzde...
+
+645
+02:05:42,003 --> 02:05:55,564
+bizdeki haftaya da bu bir dahaki ders şey olarak liste halinde vereceğim arkadaşlar. Şöyle mesela, kosinüsün eninci kuvveti xdx nedir? Şimdi bunu
+
+646
+02:05:55,967 --> 02:06:03,747
+kısaca yazmaya çalışacağım. Çünkü bunun yapımı tablet dar olduğu için yazmakta zorlanacağım arkadaşlar.
+
+647
+02:06:03,747 --> 02:06:14,987
+Şimdi arkadaşlar, bunun çözümünü bulmak kolay değil. Yani neyle çözeceğini bulmak da kolay değil. Şöyle göstereyim.
+
+648
+02:06:16,275 --> 02:06:32,435
+Mesela, cos n. kuvvetten xdx'i şöyle yazabilirim ben. Bir tanesini alırım. Buraya cos n-1 tane x, cos x'in n-1. kuvveti cos xdx şeklinde yazabilirim.
+
+649
+02:06:32,948 --> 02:06:56,668
+Şimdi arkadaşlar, bu integral kendi kendine bakınca şu şunun türevidir diyemiyoruz. Burada aklımıza yine kısmi geliyor. Şimdi kısmi de de tabii bunun integralini alamazsınız bu ifadeni. Yine n-1. kuvveti bir ifade ama türevini alabilirim. O yüzden buna u diyorum. Bunun da integralini alabilirim. Buna da dv diyelim.
+
+650
+02:06:57,971 --> 02:07:14,692
+böyle düşünebilirsiniz. O zaman şuraya yazıyorum arkadaşlar. Bakın. Kosinüs n-1x'e u dedik. Diğeri ne? Kosinüs x dx'e dv dedik. Şimdi bu tarafın türevini alıyoruz.
+
+651
+02:07:15,119 --> 02:07:36,519
+bunun türevini alırsanız, n-1 başa düştü. Kosinüs üzeri n-2x oldu. Çarpı, içinin türevi, yani kosinüsün türevi, eksi sinüs x, dx eşittir du olur. 1. Bu, bu şekilde. Şöyle, şunu da şuraya yazayım.
+
+652
+02:07:37,203 --> 02:07:53,524
+cos x dx eşittir dv ise bunun da integrali arkadaşlar. cos'ün integrali sin x'dir. dv'nin integrali de v'dir. bu şekilde yazabiliriz. yani
+
+653
+02:07:53,524 --> 02:08:04,043
+kısmi de şuraya sığmadığı için buraya yazdım. v'yi bulduk. do'yu bulduk. neydi arkadaşlar? eşittir. şuraya alacağım.
+
+654
+02:08:04,243 --> 02:08:29,123
+u çarpı d ve uv'yi uv, u bu, v bu, yani kosinüs üzeri n-1x çarpı v, sinüs x, eksi v çarpı du'yu eşit. v çarpı du, bakın v bu, du şu, çarparsak sinüs x, sinüs x daha
+
+655
+02:08:29,844 --> 02:08:49,163
+sin kare x, eksi var. Şuradaki eksi artı olacak. sin kare x şöyle gelecek. n-1 tane, kosinüs, n-2x sin kare x, dx olacak. Şimdi arkadaşlar, şunu düzenleyelim.
+
+656
+02:08:49,680 --> 02:08:57,039
+cos n-1x sin x artı, bakın arkadaşlar, şu n-1 başa düştü.
+
+657
+02:08:57,519 --> 02:09:03,099
+Şurası cos n-2x sin kare x dx oldu.
+
+658
+02:09:03,640 --> 02:09:08,399
+Şimdi burada arkadaşlar, tabii ki yine bu çözülmeyecek.
+
+659
+02:09:09,180 --> 02:09:12,220
+Baktığınız zaman, ben bir tanesini göstereceğim size.
+
+660
+02:09:13,099 --> 02:09:15,899
+Sin kare yerine ne yapabilirim?
+
+661
+02:09:16,404 --> 02:09:20,604
+şunun yerine 1-cos2x yazabilirim.
+
+662
+02:09:20,604 --> 02:09:41,904
+Şimdi buradan da cos n-1x sin x artı n-1 çarpı, bakın arkadaşlar açarsak bu cos n-2x ile 1'i çarparsak cos n-2x dx ve şurası da şu gelir.
+
+663
+02:09:43,283 --> 02:09:45,723
+veya şöyle tek bir tane de yazayım.
+
+664
+02:09:47,723 --> 02:09:49,723
+veya yok ayrı yazayım.
+
+665
+02:09:50,263 --> 02:09:50,763
+eksi
+
+666
+02:09:50,763 --> 02:09:54,663
+n-1 tane
+
+667
+02:09:54,663 --> 02:09:56,143
+cos'nüs
+
+668
+02:09:56,143 --> 02:09:57,743
+n-2x
+
+669
+02:09:57,743 --> 02:09:59,543
+cos kare x
+
+670
+02:09:59,543 --> 02:10:00,523
+dx olur.
+
+671
+02:10:01,083 --> 02:10:02,563
+Bakın burada karesi var.
+
+672
+02:10:02,743 --> 02:10:04,323
+Burada da n-2'si var.
+
+673
+02:10:04,323 --> 02:10:06,443
+Yani şurası şöyle gelir.
+
+674
+02:10:07,828 --> 02:10:12,228
+cos n-2 artı 2x daha cos nx olur.
+
+675
+02:10:12,228 --> 02:10:14,228
+Şu x aşağıda.
+
+676
+02:10:14,228 --> 02:10:16,228
+Yani şurası
+
+677
+02:10:16,228 --> 02:10:18,628
+şöyle olur.
+
+678
+02:10:18,628 --> 02:10:20,628
+Artı
+
+679
+02:10:20,628 --> 02:10:24,628
+n-1 pardon eksi olacak başında
+
+680
+02:10:24,628 --> 02:10:30,628
+eksi n-1 tane cos nxdx
+
+681
+02:10:30,628 --> 02:10:33,628
+Tabi bunları görmek o kadar kolay değil.
+
+682
+02:10:33,792 --> 02:11:00,392
+Tabi bu neydi? Şurası başı cos nx dx. Şimdi arkadaşlar, şurası cos nx dx. Bakın burası da cos nx dx. Bu ifadeyi, şu yıldız ifadesini eşitliğin bu tarafına atarsam, bakın şöyle olur. Burada bir tane cos nx dx var. n- bir tane eksi vardı.
+
+683
+02:11:00,979 --> 02:11:18,260
+n-1 tane, cos nx dx buraya geçer. Bunlar aynadır. Burada bir tane var. Burada n-1 tane var. Toplamı n tane cos nx dx olur. Şöyle yazalım.
+
+684
+02:11:20,779 --> 02:11:25,760
+n tane
+
+685
+02:11:26,355 --> 02:11:52,536
+cos nx dx olur. Şunlar gitti. Şunları yazdık. Burada da arkadaşlar cos n-1 x sin x artı n-1 cos n-2 x dx kalır. Sonra arkadaşlar şu n'yi buradan atarsanız şöyle bu tarafa bölüm olarak geçer. Bölüne
+
+686
+02:11:53,011 --> 02:12:06,051
+bölü ne olur? İşte biz buna indirgeme formülü diyoruz. Kabaca biraz anlattım. Şöyle göstereceğim size. İndirgeme formülü diyoruz. Şöyle.
+
+687
+02:12:12,435 --> 02:12:21,916
+şurada bakın arkadaşlar açılımı ve şu bulduğumuz işte buna biz indirgeme kosinüs ne üzeri x'i indirgeme formülü diyoruz.
+
+688
+02:12:21,916 --> 02:12:36,115
+Mesela size kosinüs küp x'i sordular. Ne yaparsınız arkadaşlar? Buraya 3 yazarsınız. Direk integralini bulursunuz. 3 yazdınız. E burası kaç oldu? 2 oldu.
+
+689
+02:12:38,163 --> 02:13:00,503
+bu oldu işte. Burası bu, burası bu, burası da bu geldi. Tamam mı arkadaşlar? Bu integralde çok kolaylıkla hesaplanır. Yani buraya istediğiniz sayı yazarak, indirgeyerek integralleri daha rahat hesaplayabilirsiniz. Var mı bir sorunuz burada? Yok galiba.
+
+690
+02:13:01,844 --> 02:13:28,644
+Bu biraz zor. Anlaması da, yani yapmanız lazım kavrayabilmeniz için. Öyle söyleyeyim. Şimdi gelelim buna. Şimdi arkadaşlar, bunun için çok formül yazmadım. Şöyle arkadaşlar, sinüs ve kosinüs çarpım halinde olacak ve üstel, yani bir kuvvet olacak sinüs ve kosinüsün. Birisi tek, birisi çiftse,
+
+691
+02:13:29,235 --> 02:13:40,016
+Hangisi çiftse arkadaşlar, tek veya çift yani üstteki M ve N'den hangisi çiftse, ona U dönüşümü yapın arkadaşlar. İkisi iyisi.
+
+692
+02:13:40,287 --> 02:14:05,227
+çiftse onun için indirge mi yapacağız arkadaşlar? Şimdi bunu size örneklerle anlatayım. Sadece hangisi biri tek biri çiftse, hangisi çiftse mesela N çiftmiş, N çiftse ona dönüşüm yapıyorsunuz. Burada da M çiftmiş. Hangisi çiftse ona dönüşüm yaparak rahatlıkla soruyu çözebilirsiniz. Bir örnek yapalım.
+
+693
+02:14:07,227 --> 02:14:07,667
+Şöyle
+
+694
+02:14:09,140 --> 02:14:10,720
+Ben ekranı paylaşayım.
+
+695
+02:14:12,800 --> 02:14:19,340
+Bu arada arkadaşlar, sınav tarihleri açıklandı. Haberiniz var değil mi?
+
+696
+02:14:20,160 --> 02:14:28,820
+Matematik bölüm sayfasında duyuruldu. Galiba yanlış hatırlamıyorsam siz de yine sayfadan teyit edin.
+
+697
+02:14:28,820 --> 02:14:34,160
+25'inde olabilir, 25 Aralık'ta olabilir sınav.
+
+698
+02:14:35,636 --> 02:14:37,016
+Cuma günüydü galiba.
+
+699
+02:14:37,016 --> 02:14:50,476
+Cuma günü. Bu sefer galiba saati geç olan iki parçaya ayrılıyor ya. Birinci bölüm öğlen olmuştu, birisi dörtte olmuştu. Bu sefer de kaçta galiba sizinkisi geç?
+
+700
+02:14:51,123 --> 02:14:53,003
+Saatini hatırlamıyorum ama
+
+701
+02:14:53,003 --> 02:14:54,083
+6 galiba.
+
+702
+02:14:54,203 --> 02:14:56,923
+Evet, 6'da gireceksiniz. Galiba öyle.
+
+703
+02:14:57,563 --> 02:15:03,443
+Haftalık konularda içerikte bu konular dahil daha bitirmedik ama az kaldı.
+
+704
+02:15:03,983 --> 02:15:07,423
+Bu gördüğünüz konularda dahil sınavı arkadaşlar.
+
+705
+02:15:08,148 --> 02:15:17,847
+birkaç konu daha var. İntegrasyon tekniklerini neredeyse çoğusu dahil. Onları da bu hafta bitireceğiz zaten.
+
+706
+02:15:18,847 --> 02:15:22,948
+Peki, en baştan mı çıkacak yoksa ikinci birçok?
+
+707
+02:15:22,948 --> 02:15:36,148
+Onun için şöyle dediler. Yani baştan ben yeniden teyit ettirdim ama mesela limit, türev, bunları bildiğiniz için o konular, bu konular...
+
+708
+02:15:36,148 --> 02:15:54,408
+Bunlar içinde de sorulacak. Ama başlık olarak çıkmayabilirmiş ama mesela yani zaten hani limitik türevi gördünüz. Bütün sorularda limit türevi olabilir. Dolayısıyla o şekilde içeriğinde olacağını söylediler.
+
+709
+02:15:55,408 --> 02:15:57,508
+Anladım. Peki hocam bir şey daha sorabilir miyim size?
+
+710
+02:15:57,508 --> 02:15:57,728
+Tabii ki.
+
+711
+02:15:58,268 --> 02:16:03,108
+Bu ikinci vize haftasında dersin olup olmamasının kararını kim veriyor?
+
+712
+02:16:03,764 --> 02:16:07,624
+Yani bizim bölümümüz şöyle.
+
+713
+02:16:08,704 --> 02:16:11,923
+Bölüm başkanı mire yoksa bu rektörlüğe bağlı bir şey mi?
+
+714
+02:16:12,384 --> 02:16:23,684
+Yani şöyle bölümlerin her haftası farklı oluyor ama birinci sınavlarda, birinci vizelerde ara sınav tatili var ama ikinci sınavlarda ara sınav tatili yok bizde.
+
+715
+02:16:24,204 --> 02:16:25,364
+Sizde var mı bilmiyorum.
+
+716
+02:16:26,547 --> 02:16:28,127
+Hiçbir bölümde yok sanırım hocam.
+
+717
+02:16:28,127 --> 02:16:44,708
+Yok, yani genelde öyle ama işte bazı bölümlerin 8. hafta, bazıların 9. hafta, bilmiyorum onu, bölüm kendisi mi karar veriyor, rektörlük mi karar veriyor, hakikaten bir bilgim yok arkadaşlar onun hakkında.
+
+718
+02:16:44,708 --> 02:16:49,868
+Ama her bölüm biraz farklı. Ama bu cuma günü olacaksınız sınavın.
+
+719
+02:16:50,195 --> 02:16:56,315
+dediğim gibi, yani şöyle, limiti bilmek zorundasınız, soruların içinde limit olacak.
+
+720
+02:16:56,815 --> 02:17:02,896
+türevi bilmek zorundasınız, sorular içinde, yani kapsayacak sorular da anlatabiliyor muyum?
+
+721
+02:17:04,495 --> 02:17:10,876
+Peki hocam, şey olacak mı, havuz sistemi tarzında olacak mı, yoksa herkesin aynı soruları mı olacak?
+
+722
+02:17:11,015 --> 02:17:12,495
+Onu bilmiyorum arkadaşlar.
+
+723
+02:17:13,268 --> 02:17:20,268
+Yani sınavın içeriği hakkında bir bilgim yok. Onun hakkında bir şey söyleyemiyorum.
+
+724
+02:17:21,108 --> 02:17:22,268
+Peki hocam, teşekkür ederim.
+
+725
+02:17:23,527 --> 02:17:35,244
+Tamam. Yine bir şey öğrenirsem, yarın da zaten haftaya da bol bol soru çözeceğiz. Konuşuruz arkadaşlar. Evet. Şimdi...
+
+726
+02:17:35,283 --> 02:17:40,903
+Yani böyle bir soruda, bakın arkadaşlar, bunu soruyla göstermek istiyorum bu konuyu.
+
+727
+02:17:42,783 --> 02:17:43,863
+Şöyle göstereyim.
+
+728
+02:17:46,123 --> 02:17:48,063
+Evet, bağlandı değil mi?
+
+729
+02:17:48,063 --> 02:17:55,963
+Şimdi arkadaşlar, şöyle, mesela şöyle sinüsle kosinüs çarpım durumunda olacak.
+
+730
+02:17:57,843 --> 02:18:20,223
+ve birisi mesela 3. kuvveti olsun, birinin de 2. kuvveti olsun. Şimdi çift olana u diyeyim. Değişken dönüşümünü bunun için yapın şöyle. Şu kosinüs kare x, şu da sin küp x güzel yazalım. Şimdi hangisinin kuvveti çiftse şu 3.
+
+731
+02:18:20,656 --> 02:18:34,556
+sin küp x. Hangisinin kuvveti çiftse ona değişken dönüşümü uygulayacağız. Burada 2 çift. O yüzden kosinüs x ise u diyeceğiz.
+
+732
+02:18:34,899 --> 02:18:58,899
+ve soru kendiliğinden çözülecek arkadaşlar. Kosinüs x u derseniz değişken dönüşümü yapıyoruz. dx'i bulalım. Ne olur arkadaşlar? Kosinüs x'in türevi, eksi sinüs x dx eşittir. u'nun türevi 1 çarpı do. Şimdi burada arkadaşlar ne oldu? Bakın.
+
+733
+02:19:00,755 --> 02:19:23,695
+yerine koyalım. cosx'e u dedik. cosx'in karesi u kare. dx neye arkadaşlar? dx bakın şöyle yazayım. sinüsküp x cosx dx. Şimdi bu u. sinüste dx'in çarpımı da du. O zaman şöyle ayırıyorum. sin kare x.
+
+734
+02:19:24,064 --> 02:19:42,443
+sinüs x, kuz kare x, dx. Şöyle diyorum bakın. Şu u'nun karesi. Şununla şunun çarpımı da neymiş? Bakın şurada eksi du. Şöyle sinüs x çarpı dx du'ya eşit eksi sinüs x.
+
+735
+02:19:44,788 --> 02:19:59,328
+sin kare x kalıyor. Şurada eksi var. Dışarıya attım. u kare v u. Ama bir tane x'li bir ifade var. x'li bir ifade olmamalı. Bundan nasıl kurtulacağız arkadaşlar?
+
+736
+02:20:00,275 --> 02:20:06,456
+her zaman için yani kosinüse çeviren bir ifade var mı? O çünkü u'yu eşit.
+
+737
+02:20:06,456 --> 02:20:17,195
+1 şöyle sin kare x artı kos kare x eşittir 1. O zaman sin kare x ne eşit? 1 eksi kos kare x eşit.
+
+738
+02:20:17,576 --> 02:20:24,436
+O zaman şöyle yazarım. Sin kare yerine 1 eksi kos kare x u kare d u.
+
+739
+02:20:24,896 --> 02:20:27,155
+Şimdi bakın arkadaşlar buradan ne oldu?
+
+740
+02:20:27,700 --> 02:20:47,819
+cos x u'ydu. 1-u kare u kare du oldu. E bu da şu eksiği de içeriye dağıtalım. u kare eksi u üzeri 4 olur. Şu eksiği de alırsak u üzeri 4 eksi u kare du oldu. Bakın arkadaşlar hepsi
+
+741
+02:20:48,211 --> 02:21:12,231
+x'liydi ilk başta. Bütün x'lerden kurtulduk şundan da. Eğer kurtulamıyorsanız, bir tanesi kalıyorsa yanlış, değişken dönüşümü yapamadınız. Bakın buna da 1-cos kare x dedik ve kurtulduk ve en sonunda bu hale geldi. E burası nedir arkadaşlar? U üzeri 4 şöyle yazacağım. U üzeri 4 şöyle.
+
+742
+02:21:12,884 --> 02:21:34,184
+şöyle buraya devam edelim. u üzeri 5 bölü 5, eksi u kare, u küp bölü 3 artı c olur. u üzeri 5. u ne peki? kosinüs x eşit. kosinüs x üzeri 5 bölü 5 eksi kosinüs x üzeri 3 bölü 3 artı c'dir.
+
+743
+02:21:35,623 --> 02:21:38,244
+Evet, anlaşıldı mı arkadaşlar bu?
+
+744
+02:21:39,667 --> 02:21:48,148
+şimdi bir tane daha yapayım. Bakın, tek çift olması, çift olana u diyeceksiniz. Bu şekilde aklınızda kalabilir.
+
+745
+02:21:50,007 --> 02:22:06,007
+Mesela, şöyle yapalım, kosinüs üzeri 5x dx. Şimdi bir bakıyorum, burada kosinüs üzeri 5 var. Çift nerede peki? Çift ne arkadaşlar? Şöyle.
+
+746
+02:22:09,971 --> 02:22:35,792
+0x diye düşünebiliriz. Tamam mı arkadaşlar? O zaman olmayan, yani sıfırıncı kuvveti oluyor. Bunu sormuştu. Ne diyorum? O zaman sinüs üzeri 0, yani sinüs x'e u diyelim. Veya bunu indirgeme formülünden de direkt yazabilirsiniz arkadaşlar. Sinüs x'e u diyoruz. O zaman ne olur? Sinüs x u ise
+
+747
+02:22:36,404 --> 02:22:59,623
+cos x dx eşittir du olur. Şimdi bakın arkadaşlar, yazıyorum. cos 5x dx. Şimdi sin x u dedim. Hiç u yok. Yani sin x yok. Ama şöyle ayırabilirim. cos 4x, cos x dx. Şurası duymuş. Şurası du.
+
+748
+02:23:00,211 --> 02:23:08,612
+Ama geriye cos x'in dördüncü kuvveti var. Yine nasıl sinüse geçeceğim? Şöyle derim.
+
+749
+02:23:09,691 --> 02:23:17,752
+cos kare x artı sin kare x eşittir 1 ise cos kare x eşittir 1 eksi sin kare x.
+
+750
+02:23:18,252 --> 02:23:22,551
+Yani cos karelerin yerine şunu yazarız.
+
+751
+02:23:22,832 --> 02:23:46,652
+cos kare x'in karesi du'dur. Bu da nedir arkadaşlar? cos kare x neye eşit? 1 eksi şurada. 1 eksi sin kare x'in karesi du olur. Mesela bunu da açarsak, 1'in karesi 1, 1'e bunun çarpımı 2 sin kare x, artı sinüs üzeri 4x.
+
+752
+02:23:47,252 --> 02:23:51,492
+du ya da hiç açmadan şurada da yazabiliriz.
+
+753
+02:23:53,592 --> 02:23:56,891
+Sinüs x'i u demiştik. Şöyle deriz.
+
+754
+02:23:57,511 --> 02:24:01,492
+1- bu karenin karesi du.
+
+755
+02:24:02,191 --> 02:24:05,351
+Bakın, bütün hepsi u'lu oldu mu? Oldu.
+
+756
+02:24:05,672 --> 02:24:09,092
+Şuradayken, bakın, bu u'lu, bu x'li.
+
+757
+02:24:09,536 --> 02:24:29,596
+olmaz. Dönüştürmemiz lazım. Bakın bu ulu, bu x'ti. x'i de ulu yapmalısınız. Değişken dönüşümünüzün olabilmesi için. Buradan ne geldi? 1'in karesi 1, bu karenin karesi bu üzeri 4, birinci ile ikincinin çarpımının iki katı da bu geldi.
+
+758
+02:24:30,324 --> 02:24:57,783
+bu neye eşit? İntegreli alalım. 1'in integrali 1. u üzeri 4'ün integrali u üzeri 5 bölü 5. eksi u karenin integrali 2 bölü 3. 2 bölü 3. u küp artı c'dir. Bu ne olur arkadaşlar? 1 artı u neydi? sinüstü. sinüstü.
+
+759
+02:24:58,004 --> 02:25:23,544
+5 üzeri x bölü 5, eksi 2 bölü 3, sinüs 3 üzeri x, artı c. Şurası yanlış olmuş, şurası u olacak. Şurası, pardon, burası bir, birin integrali u, şurası da sinüs x olacak. Evet, anladınız mı arkadaşlar?
+
+760
+02:25:24,755 --> 02:25:33,155
+Evet, bugün bunları gördünüz mü lisede biliyor musunuz arkadaşlar? Onu sorayım ilk öncelikle.
+
+761
+02:25:34,115 --> 02:25:35,056
+Ben gördüm hocam.
+
+762
+02:25:35,295 --> 02:25:35,995
+Gördünüz.
+
+763
+02:25:36,175 --> 02:25:38,435
+Ben de gördüm hocam ama benimki 3 sen önceydi.
+
+764
+02:25:38,435 --> 02:25:47,340
+Tamam. Yani anladığınızı umuyorum. Oldukça yani şey...
+
+765
+02:25:47,540 --> 02:26:12,700
+teferruatla anlatmaya çalışıyorum. Şimdi önemli bir şey söyleyeceğim. Şöyle, sin kare x bu çift bir fonksiyondur. Arkadaşlar, sin kare x, bx nasıldır? Sin kare x'i hep indirgeyerek çözmeniz lazım. Ya da cos kare x.
+
+766
+02:26:13,492 --> 02:26:18,031
+Bunu nasıl çözüyordunuz? Hatırlıyor musunuz arkadaşlar? Fikri olan var mı?
+
+767
+02:26:19,371 --> 02:26:29,992
+Sin kare x, mesela kos kare x, 1 artı kosinüs, şuradaki açının iki katını eşitti. 2x bölü 2, dx'i eşitti.
+
+768
+02:26:29,992 --> 02:26:39,612
+Şu da arkadaşlar, bakın bu da şuradaki açının iki katının yarım açı formüllerinden buna eşitti.
+
+769
+02:26:41,012 --> 02:26:51,132
+Şimdi o zaman mesela şunu çözecek olursam, burası 1 bölü 2 artı kosinüs 2x bölü 2 dx'dir.
+
+770
+02:26:51,132 --> 02:27:01,352
+Bu da 1 bölü 2'nin integrali x bölü 2'dir. Kosinüs 2x'in integrali sinüs 2x bölü 2'dir. Bir de 2 var.
+
+771
+02:27:02,312 --> 02:27:07,652
+Bölü 2 bir tane daha var. Artı c. Aynı şekilde bu da çözülebilir.
+
+772
+02:27:08,275 --> 02:27:31,536
+sin kare ve cos kare yıldız koyalım. Bilmeniz gereken ve bu şekilde hesaplanan integrallerdir arkadaşlar. Şimdi mesela bunu hatırladığınızı farz ediyorum. Ve şöyle. Mesela sin kare x, cos 4x.
+
+773
+02:27:31,891 --> 02:27:58,871
+Şimdi, üstlerden bir tanesi tek olsaydı, çift olana u diyorduk. Ama ikisi de çift. O zaman, hep burada, hep derece düşüreceksiniz. Sin kareyi işte biraz önce, hep ikişer ikişer dereceleri düşecek. Şimdi şunu biliyoruz artık. Sin kare x, 1-kosinüs 2x bölü 2'ye eşit.
+
+774
+02:27:59,156 --> 02:28:25,316
+yarım açı formüllerinden cos kare x de 1 artı cos 2x bölü 2 eşit. Şimdi biz bunları biliyorsak şöyle şunları şimdilik burada dursun. Bakın buraya yazacak olsa şöyle hatta şuraya yazayım eşittir sin kare eksi yerine ne yazarı? Bakın biliyoruz. 1 eksi cos 2x bölü
+
+775
+02:28:25,620 --> 02:28:47,960
+2. Bakın burada ikinci dereceydi, birinci dereceye düştü. Daha rahat işlem yapabilirim. Bu kosinüs kare x'in bir daha karesi. O zaman ne olacak? Bu 1 artı kosinüs 2x bölü 2'ydi kos kare x. Bakın bu. O zaman bunun karesi dx oldu.
+
+776
+02:28:50,100 --> 02:29:14,520
+şimdi bakıyoruz burada arkadaşlar. Artık burada bir derece yok. Değil mi? Açalım, düzenleyelim. Şöyle diyelim. 1 bölü 2 mesela şurası 1-kosinüs 2x bölü 2. Mesela şunu açalım. Şunu, şu ifadeyi. 1'in karesi 1. İkisinin çarpımı şu gelecek.
+
+777
+02:29:15,156 --> 02:29:22,836
+tam karesini alıyoruz. Bir de kos kare 2x bölü 4 oldu.
+
+778
+02:29:24,376 --> 02:29:31,156
+Şimdi bunu düzenleyelim. Bakalım neler geliyormuş. Şunları siliyorum.
+
+779
+02:29:37,268 --> 02:29:58,007
+düzenlediğimiz zaman arkadaşlar bakın şurada 2 var burada 4 var 8 diye dışarıya çıkartalım. 1 ile 1'i çarptık şöyle 1. 1 ile hepsini çarpıyorum bakın 2 cos 2x cos kare 2x geldi şöyle çarptım.
+
+780
+02:30:05,747 --> 02:30:17,948
+bu eksi iki tane kuz kare 2x eksi kusunuz küp 2x oldu şimdi sadeleşenleri dex şurada
+
+781
+02:30:28,244 --> 02:30:48,804
+2 tane cos 2x var, eksi cos 2x daha, 1 tane cos 2x kalır. cos kare 2x var, eksi cos kare 2x kaldı. Bir de cos küp 2x kaldı.
+
+782
+02:30:48,804 --> 02:30:52,963
+Evet, şimdi burada
+
+783
+02:30:54,675 --> 02:31:11,255
+şöyle göstereyim. 1'in integralini kolaylıkla alırsanız x'dir. Şunun integrali, kosinüs 2x'in integrali, sinüs 2x bölü 2'dir. Şunun integralini bulmamız lazım ve bunun integralini bulmamız lazım arkadaşlar.
+
+784
+02:31:11,255 --> 02:31:21,515
+Yine biraz önce yazmıştım. Biraz önce. Bunun integralini arkadaşlar, kos kare 2x'in integrali ne yapacağız?
+
+785
+02:31:21,971 --> 02:31:48,592
+1 artı kosinüs 4x bölü 2, yani şuradaki açının, şu açının iki katını alarak yarım açı formülünden bulmamız lazım. Burası biraz uzun. Şöyle göstereceğim pdf'den. Bakın arkadaşlar, biz şu kısma geldik. Evet, şu kaldı ve şu kaldı. Bakın, kos kare 2x'in integrali buna eşit.
+
+786
+02:31:49,043 --> 02:32:16,344
+Aynı mantıkla sadece burası 2x ise yarım açıdan burası 2 katı 4x olacak. İntegrali bu gelecek. Ve kosinüs küp 2x'in integralidir arkadaşlar. Şurada bakın ben bunu tek kat bu tek katıncı kuvveti. O zaman sinüs 2x'in sıfırıncı kuvvetidir. Sinüs 2x'e u diyerek.
+
+787
+02:32:16,691 --> 02:32:42,391
+çözüm yapılabilir. Ya da şurada indirgeme formülünden de yapılabilir arkadaşlar. Şurada. Şunda. Evet. Şimdi bunu dedim. Evet. Buraya kadar var mı? Bir sorunuz. Bunu göstereyim sizlere arkadaşlar. Biraz uzun. Ama isterseniz cos2x de gösterebilirim. Göstereyim mi?
+
+788
+02:32:44,020 --> 02:32:48,020
+bu şekilde
+
+789
+02:32:48,020 --> 02:32:50,020
+yapalım şu kısmı önemli
+
+790
+02:32:50,020 --> 02:32:52,020
+sonucu yazamayacağım ama
+
+791
+02:32:52,020 --> 02:32:55,020
+şöyle sizinle ekran paylaşayım
+
+792
+02:32:55,020 --> 02:32:56,020
+yeniden
+
+793
+02:32:56,020 --> 02:33:02,731
+bu
+
+794
+02:32:59,283 --> 02:33:02,463
+Evet, tahta geldi. Şöyle diyebiliriz.
+
+795
+02:33:07,851 --> 02:33:17,851
+bu
+
+796
+02:33:06,515 --> 02:33:25,716
+şöyle arkadaşlar, mesela şu kosinüs kare 2x yine indirgeme çift kuvvet şöyle deriz kosinüs kare x burası 2x ise 1 artı kosinüs 4x bölü 2'dir. dx böyle yazabiliriz.
+
+797
+02:33:33,940 --> 02:34:00,400
+dx olur. Şimdi buradan 1 bölü 2'nin integrali x bölü 2 olur. cos 4x bölü 2'nin integrali cos 4x'i sinüs 4x bölü 4 bir de 2 var 8 olur. Budur. Aynı şekilde şunu da göstereyim. cos 3x dx. Şimdi bunun içinde arkadaşlar burada
+
+798
+02:34:00,959 --> 02:34:18,319
+kosünüsün 3. kuvveti var. Demek ki 0. kuvvet yanında şöyle olsa, kosünüs küp 2x çarpı sinüs 0 2x dx. Şimdi burada 0. çift kat sinüsün. O zaman şöyle deriz.
+
+799
+02:34:28,948 --> 02:34:33,028
+sinüs 2x dx eşittir du olur.
+
+800
+02:34:33,727 --> 02:34:37,208
+Arkadaşlar, pardon, şurası kosinüs 2x olur.
+
+801
+02:34:48,275 --> 02:35:13,216
+şöyle buradan arkadaşlar, cos kare 2x, bilmiyorum, cos 2x dx, bakın şurada, du bölü 2'dir, burası cos kare 2x kalır. Bizim bütün değişiklerimiz u'muz sin kare, sinüse bağlı. Sin kareye geçiş yaparız. Burası 1-sin kare 2x olur.
+
+802
+02:35:13,780 --> 02:35:15,659
+du bölü 2 olur.
+
+803
+02:35:16,220 --> 02:35:18,220
+Şimdi buradan arkadaşlar bakın
+
+804
+02:35:18,220 --> 02:35:21,740
+1-sin kare 2x
+
+805
+02:35:21,740 --> 02:35:23,700
+o da nedir? sin kare 2x
+
+806
+02:35:23,700 --> 02:35:25,860
+sin 2x uysa
+
+807
+02:35:25,860 --> 02:35:27,360
+u kare olur.
+
+808
+02:35:27,620 --> 02:35:29,319
+bu da du bölü 2 olur.
+
+809
+02:35:30,080 --> 02:35:31,000
+şimdi bu da
+
+810
+02:35:31,000 --> 02:35:33,880
+şöyle yukarıda gösterecek olursak
+
+811
+02:35:37,332 --> 02:35:53,332
+şöyle olur. Bu da eşittir. Şöyle devam edersek, şu yıldız eşitliğinin devamı dersek. Şöyle geliyor. 1 bölü 2 dışarıda ne geldi? 1-u kare.
+
+812
+02:35:53,332 --> 02:36:02,332
+d udur. Bu da 1 bölü 2. Alalım bu integrali. 1'in integrali udur.
+
+813
+02:36:03,219 --> 02:36:28,419
+u karenin integralı, u küp bölü 3'dir, artı c'dir. Peki u neydi? 1 bölü 2, u, sinüs 2x'di, eksi sinüs küp 2x bölü 3, artı c'dir arkadaşlar. Böylece bulmuş oluyoruz. Bu da kosinüs küp 2x'in integralidir.
+
+814
+02:36:30,388 --> 02:36:53,087
+bunu da bakın şurada göstermişim. Şurada, şu da şurada. Bunları yerine yazıp düzenleyince arkadaşlar şöyle şurası artı c demek. Şu artı c. Artı c. Bu şekilde bir ifade buluyoruz. Var mı sorusu olan bana? Arkadaşlar sorunuz var mı?
+
+815
+02:36:55,540 --> 02:37:15,420
+yok galiba. Şimdi ben bugün diğer konuya geçmeyeceğim. Yani şu kare köklerden kurtulma veya şu soruyu çözelim mi? Çözelim mi arkadaşlar? Çözelim isterseniz. Evet. Veya yarın devam edelim. Bir sorunuz yoksa?
+
+816
+02:37:16,340 --> 02:37:19,819
+Hocam, ben sınavla ilgili bir soru soracaktım da.
+
+817
+02:37:19,819 --> 02:37:21,580
+Sor. [öğrenci].
+
+818
+02:37:22,036 --> 02:37:25,396
+Kaç soru olur? Gene aynı şekilde 20 soru şeklinde miydi?
+
+819
+02:37:25,476 --> 02:37:37,695
+Bilemiyorum. Geçen sefer 20 soru sordular. Yani biz bu online bir şey değil ama hiçbir zaman soru sorusunu bilmiyoruz arkadaşlar. Her sene bu böyledir.
+
+820
+02:37:38,067 --> 02:37:56,967
+Yani ağırlığına göre süreniz ne kadardı o sürede 20 soru çözdünüz. Ona göre eğer sorular zor olursa 10'a düşer, 15'e ya da aynı ağırlıkta 20 soru sorulur. Veya şıklı olabilir.
+
+821
+02:37:59,412 --> 02:38:00,972
+Yani şıklı da olabilir.
+
+822
+02:38:01,731 --> 02:38:06,531
+Zaten geçen sınavda şıklıydı. Yani klasik olma ihtimali var mı?
+
+823
+02:38:06,551 --> 02:38:08,711
+Yok yok şöyle. Soru şıklı olabilir.
+
+824
+02:38:09,412 --> 02:38:10,891
+Ha ABC şeklinde.
+
+825
+02:38:10,891 --> 02:38:23,992
+Evet. Yani bir soru vardır da 4 tane şıklı vardır. Mesela eğri olduğu için belki onun şıkları olabilir. Bir aralıktaki bir sürü şeyini inceletebilirler. Yine testtir.
+
+826
+02:38:27,156 --> 02:38:34,156
+test'tir. Yok klasik yine test olacak arkadaşlar. Yani nasıl olur mesela?
+
+827
+02:38:34,227 --> 02:38:58,307
+der ki asimptotu nedir? Şıkları verir tabii ki. İşlem olmayacak. Mesela başka ne olabilir? Der ki maksimum minimum noktası nedir? Şıkları verir. İşte büküm noktası şıkları verir. Yani çözmeyeceksiniz ama böyle şıklı olabilir. Bir sorudur ama aslında 5 sorudur [öğrenci]. Anlatabiliyor muyum?
+
+828
+02:38:58,608 --> 02:38:59,727
+Anladım hocam.
+
+829
+02:38:59,808 --> 02:39:17,047
+Yani soru sayısı çok önemli değil. Yaklaşık olarak siz geçen sınavda gördünüz 20 tane soru vardı. Bu ayarda işte bu kadar soru çözebileceğiniz şekilde ya 20 soru olur ya da şıklı sorular olur.
+
+830
+02:39:19,167 --> 02:39:20,047
+Anladım hocam.
+
+831
+02:39:20,347 --> 02:39:24,247
+Başka sorusu olan var mı? Yok galiba.
+
+832
+02:39:24,915 --> 02:39:29,675
+Bugün dersimizi bitirelim mi arkadaşlar yoksa bir soru daha çözeyim mi?
+
+833
+02:39:31,095 --> 02:39:32,355
+Çözelim mi arkadaşlar?
+
+834
+02:39:33,876 --> 02:39:38,015
+Bugün dersimizi bitirelim bence.
+
+835
+02:39:38,716 --> 02:39:42,195
+Çok fazla adapte olduğunuzu düşünmüyorum bugün.
+
+836
+02:39:43,395 --> 02:39:48,075
+O yüzden yarın kaldığımız yerden devam ederiz olur mu arkadaşlar?
+
+837
+02:39:49,811 --> 02:40:10,351
+Evet, kendinize iyi bakın. Ben bir soru daha çözecektim ama sizler çok sessizsiniz bugün. Hiç şey böyle veya neyse artık bırakalım dedik veya bir tane kısa soru çözebilir miyim? Çok kısa.
+
+838
+02:40:11,219 --> 02:40:28,180
+En azından... Olur hocam, sorundayım. Biraz formüle dayalı olduğu için sessiz kaldık sanırım. Yok yok. Şöyle hemen şunu, yani şunu söyleyeyim de en azından. Şöyle.
+
+839
+02:40:32,564 --> 02:40:34,583
+ekran paylaşımı geldi mi?
+
+840
+02:40:36,783 --> 02:40:37,484
+geldi mi?
+
+841
+02:40:37,984 --> 02:40:38,263
+geldi.
+
+842
+02:40:38,263 --> 02:40:41,324
+şöyle bitirelim arkadaşlar.
+
+843
+02:40:42,083 --> 02:40:43,083
+şimdi arkadaşlar
+
+844
+02:40:43,083 --> 02:40:46,564
+şöyle diyeyim
+
+845
+02:40:46,564 --> 02:40:47,423
+mesela
+
+846
+02:40:52,531 --> 02:40:55,851
+4xdx soruldu.
+
+847
+02:40:56,252 --> 02:40:59,491
+Şimdi arkadaşlar, yarım açı formüllerinde şu çok önemli.
+
+848
+02:40:59,631 --> 02:41:05,891
+Biraz önce yazdım ya, cos kare x, 1 artı cos 2x bölü 2'dir.
+
+849
+02:41:06,531 --> 02:41:11,651
+sin kare x, 1 eksi cos 2x bölü 2'dir.
+
+850
+02:41:12,191 --> 02:41:13,831
+Şimdi şöyle bir şey yazacağım.
+
+851
+02:41:14,291 --> 02:41:18,471
+Burası x değil de mesela cos kare 2x olsa.
+
+852
+02:41:18,912 --> 02:41:43,812
+burası 2x, bu taraf nedir? 1 artı cos 4x bölü 2'dir. Mesela burası x değil de 2x olsa burası şöyle olacak değil mi? Veya 6x olsa veya ona göre değişecek ya da cos kare teta oldu. O zaman 1 artı cos 2 teta bölü 2 olacak.
+
+853
+02:41:45,811 --> 02:41:53,912
+Karaköklü ifadelerde arkadaşlar, şuranın içinin, içinin kurtarmamız lazım.
+
+854
+02:41:54,752 --> 02:42:01,511
+Kurtarabilmek için de arkadaşlar, bakın, 1 artı kosinüs 4x neye eşit?
+
+855
+02:42:04,051 --> 02:42:29,471
+bir ifade kos kare eşit. 1-kosinüslü bir ifade de sin kare eşit. Yarım açı formüllerinden. O zaman 1 artı kosinüs 4x, bakın şuradan, neye eşit arkadaşlar? 2 tane kos kare 2x'e eşit. O zaman direkt bakın bunun yerine şöyle
+
+856
+02:42:30,548 --> 02:42:56,528
+2 tane kos kare 2x'e eşit. dx'dir. E bu da neye eşittir? Kök 2 tane kosinüs 2x'e eşittir. 0 ile pi bölü 4'tür. Tamam mı arkadaşlar? Yalnız aslında şurası şöyledir. kos kare ya. Şöyle çıkar.
+
+857
+02:42:57,139 --> 02:43:20,779
+0'dan pi bölü 4'e mutlak değer içinde kosinüs 2x çıkar. Yalnız arkadaşlar 2x'i bakın burası bu 2x'i yani x yerine 0 verin kosinüs 0 olur. x yerine pi bölü 4 verin kosinüs pi bölü 2 olur. Yani şu aralık olur. 0 ile
+
+858
+02:43:21,332 --> 02:43:47,391
+pi bölü 2 arası olur. Bu da birinci bölgeye düşer. Burada da kosinüsler artıdır. Dolayısıyla mutlak değersiz yazılır. Şurası kosinüs 2x dx olur. Tamam mı arkadaşlar? Şimdi şurası mesela eğer açıları koydum. Şimdi şöyle koydum.
+
+859
+02:43:47,891 --> 02:44:07,691
+buradan sonrası çözülür diyorum ve burada bırakıyorum. Çünkü bunu bir daha farklı bir şekilde daha anlatacağım. Sadece şunu görmenizi istedim. 1 artı kosinüs ya da 1 eksi kosinüs ifade koskarenin ve sinkarenin.
+
+860
+02:44:08,468 --> 02:44:31,028
+yazımıdır. Ve bunlar kare kökten çıkar arkadaşlar. Bunu söylemek istedim. Evet, şimdilik dersimizi burada bitiriyorum. Yarın kaldığımız yerden devam edeceğiz arkadaşlar. Sorunuz yoksa dersi bitiriyorum. Tamam mı? Evet, kendinize iyi bakın. Yarın yürüyüşü diliğine.
