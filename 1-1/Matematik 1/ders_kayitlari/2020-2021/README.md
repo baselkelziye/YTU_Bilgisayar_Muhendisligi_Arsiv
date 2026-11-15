@@ -4,6 +4,7 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
+| 1 | Güz | Yasemin Alagöz | [sube_1/](sube_1/) |
 | 7 | Güz | — | [sube_7/](sube_7/) |
 | 9 | Güz | — | [sube_9/](sube_9/) |
 | 12 | Güz | — | [sube_12/](sube_12/) |
