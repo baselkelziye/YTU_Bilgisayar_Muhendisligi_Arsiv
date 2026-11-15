@@ -5,6 +5,7 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | Serpil Karayel | [sube_1/](sube_1/) |
+| 1 | Bahar | — | [sube_1_bahar/](sube_1_bahar/) |
 | 6 | Güz | — | [sube_6/](sube_6/) |
 | 7 | Güz | Mehmet Emin Köroğlu | [sube_7/](sube_7/) |
 | 14 | Güz | Mustafa Sarı | [sube_14/](sube_14/) |

@@ -1,0 +1,1647 @@
+1
+00:01:43,924 --> 00:01:44,984
+İyi günler arkadaşlar.
+
+2
+00:01:51,379 --> 00:01:55,959
+Merhaba hocam.
+
+3
+00:01:56,560 --> 00:01:56,819
+Merhaba.
+
+4
+00:01:59,699 --> 00:02:04,579
+Sizin bu Bahar Yarı yılında açılan lineer Cebir dersi...
+
+5
+00:02:04,579 --> 00:02:05,579
+Hocam sesiniz gelmiyor.
+
+6
+00:02:08,159 --> 00:02:09,079
+Gelmiyor mu?
+
+7
+00:02:09,979 --> 00:02:10,560
+Ha şimdi geliyor.
+
+8
+00:02:15,027 --> 00:02:17,947
+lineerce bir dersini birlikte işleyeceğiz arkadaşlar.
+
+9
+00:02:21,268 --> 00:02:23,887
+Birazcık dersimiz hakkında bilgi vermek istiyorum size.
+
+10
+00:02:28,692 --> 00:02:30,951
+Bu iki saatlik bir ders.
+
+11
+00:02:33,391 --> 00:02:37,831
+Hemen hemen bütün mühendislik fakültelerinin, öğrencilerin aldığı bir ders.
+
+12
+00:02:39,252 --> 00:02:53,487
+Daha çok birinci dönemde açılan gruplar var ama galiba gemi inşaatı bölümü, bir iki bölüm daha, bunu ikinci dönem açıyor ama...
+
+13
+00:02:53,487 --> 00:03:12,448
+Herhalde diğer öğrenciler de alabiliyor, öyle zannediyorum. Bugün baktığımda 168 kişi almış bu derse, oldukça da fazla. Demek ki sadece gemi inşaatı değil, diğer bölümlerden alanlar da var. Onu da incelemedim ama bakarım hangi bölümlerden alıyorlar bu dersi.
+
+14
+00:03:19,475 --> 00:03:29,516
+Lineer denklem sistemleri, vektörler, buna bağlı olarak vektör uzayları, özdeğer, özvektörler konularını göreceğiz bir dönem boyunca.
+
+15
+00:03:32,979 --> 00:03:36,779
+Tabii, daha çok matrislerle ilgili çalışacağız.
+
+16
+00:03:39,099 --> 00:03:43,439
+Bu dersimiz kolay bir ders, anlaşılması kolay bir ders.
+
+17
+00:03:46,939 --> 00:03:50,620
+Bu dersi kolaylıkla anlayabilirsiniz.
+
+18
+00:03:52,479 --> 00:03:57,039
+Buradaki anlattıklarımızı bile iyi dinlerseniz, başarılı olursunuz bu dersten.
+
+19
+00:03:59,795 --> 00:04:14,896
+Konuları işleyirken örnekler de çözeceğiz ama siz farklı örnekler de bulup çözebilirsiniz. Bunun için kaynak kitaplarda edinebilirsiniz veya internetten bizim dersimizin konularıyla ilgili kaynaklar bulabilirsiniz.
+
+20
+00:04:14,896 --> 00:04:27,096
+Bu şu anda ekranda matematik bölümünün sayfasından aldığım bu dersle ilgili içerikler var, bu dersle ilgili bilgiler var, onları görüyorsunuz. Siz de.
+
+21
+00:04:27,732 --> 00:04:37,592
+Kendi bölümünüzün web sitesinden veya matematik bölümünden bunu edinebilirsiniz. Burada bizim göreceğimiz bütün konular var arkadaşlar.
+
+22
+00:04:39,451 --> 00:04:47,912
+Ben bu konuları yazarı olduğum şu lineerce bir çözümlü problemleri kitabından işleyeceğim.
+
+23
+00:04:51,343 --> 00:05:08,783
+Ben ve diğer bir hoca arkadaşımız birlikte yazmıştık. Bu konulara tamamen paralel, tamamen aynı sırada, özellikle bizim üniversitenin bu iki saatlik lineer Cebir dersi için hazırlanmış bir kitaptır.
+
+24
+00:05:11,443 --> 00:05:15,423
+Bunu takip edeceğim, burada o kitaptan işleyeceğim konuları.
+
+25
+00:05:16,307 --> 00:05:40,747
+Bu kitabı Birsen Yayın Evi basmış. Arzu ederseniz oradan alabilirsiniz. Galiba geçen dönem öğrenciyle indirim yaptığını öğrendim. Ama başka kitaplar da var. Bu ekranda görüyorsunuz. Türkçe kitaplar var, yabancı kitaplar var. Kitap almak isterseniz çok kitap var.
+
+26
+00:05:41,172 --> 00:05:46,352
+Almadan da internetten de bazı kaynaklara ulaşabilirsiniz.
+
+27
+00:05:48,132 --> 00:05:54,591
+Ya da burada işlediğimiz konularla ilgili örnekler bulabilirsiniz, kendinizi yetiştirebilirsiniz.
+
+28
+00:05:54,752 --> 00:06:03,752
+İnternette çok şey var. Hatta bazı kitapları PDF formatında bile elde edebiliyorsunuz arkadaşlar.
+
+29
+00:06:08,819 --> 00:06:22,799
+Takip edeceğimiz kitap da benim kitabım olacak. Almak isterseniz onu Bir Sen Yayın Evi'nin herhalde web sitesi falan vardır. Oradan bakarak nasıl alınacağını görürsünüz.
+
+30
+00:06:24,620 --> 00:06:35,099
+Bu dersimizde yine diğer bütün dersler gibi başarı notu, %60 ara sınavlar.
+
+31
+00:06:35,732 --> 00:06:59,531
+Veya ara değerlendirmeler diyelim, yüzde 40 da finale hesaplanıyor başarı notu. Burada ara sınav kaç tane yapılacak onu biz bölüme bağlı hareket edeceğiz. Bu dersimiz biliyorsunuz sizin daha önceden aldığınız, bu dönemde aldığınız matematik dersi var.
+
+32
+00:07:00,372 --> 00:07:15,072
+Onun gibi üniversitenin servis dersi ve bütün bu ders alan öğrenciler aynı eğitimi, aynı konuları ve sınavı da aynı sınavı oluyorlar.
+
+33
+00:07:16,271 --> 00:07:26,331
+Senato bir karar aldı. Yani geçtiğimiz yarı yıl içinde bu ara sınavları evvelden iki taneydi biliyorsunuz, zorunlu.
+
+34
+00:07:28,403 --> 00:07:46,843
+Bunu bir tane de yapılabilir diye aldı da, tabii biz bu ders için nasıl bir uygulama yapacağız herhalde ona bölümümüz, karar verecek bizim bölüm, ona göre hareket edeceğiz. Geçen dönem iki ara sınav olmuştu. Bu yüzde altmışlık kısım için.
+
+35
+00:07:48,063 --> 00:07:53,303
+Şimdi ben dersi burada işleyeceğim, ara vermeden yapacağım, blok şeklinde yapacağım.
+
+36
+00:07:54,548 --> 00:08:08,468
+Dersimiz demin de dediğim gibi zor bir ders değil. Belki bazılarınız birçok konuyu lisede de görmüşsünüzdür matrisler, determinantlar konusunu.
+
+37
+00:08:10,608 --> 00:08:20,247
+Tabii biz daha detaylı, hiç görmemişsiniz gibi, lisede görseniz bile görmediğiniz kısımlarla beraber hiç görmemişsiniz gibi bu dersi burada anlatacağız.
+
+38
+00:08:21,555 --> 00:08:45,115
+Kolay, anlaşılır bir ders, soyut değil. Ben dersi burada anlatırken sizin mikrofonlarınız açık olacak soru sorabilirsiniz bana. Ama daha çok soruyu mikrofonunuzu açarak sormanızı tercih ediyorum. Bu chat kısmından yazı da yazıyorsunuz ama ona ben devamlı bakamıyorum arkadaşlar.
+
+39
+00:08:45,652 --> 00:08:56,112
+Hem ders anlatıp onu takip etmek zor oluyor. Arada bir bakabiliyorum. Onun için daha çok sorunuz olursa, mikrofonunuzu açarak soru sorabilirsiniz bana.
+
+40
+00:08:58,771 --> 00:09:12,692
+Bunun dışında aklıma gelenler, dersimizle ilgili bilgiler hakkında bunlar. Sizin sormak istediğiniz, söylemek istediğiniz bir husus varsa, buyurun. Sizi dinleyebilirim şimdi.
+
+41
+00:09:17,268 --> 00:09:31,228
+Galiba yok. Şimdi dersimize başlayalım. İlk konumuz matrisler konusu. Matrisleri tanımlayarak dersimize başlayacağız.
+
+42
+00:09:32,108 --> 00:09:44,788
+Şimdi ekranda bir tablo görüyorsunuz arkadaşlar. Bakın. Burada bir tablo var. Tamam mı? Bu tablonun içinde de böyle ağlar var. Bakın.
+
+43
+00:09:45,427 --> 00:10:12,488
+Böyle A elemanları var. Böyle bir tablo var. Bu tablonun içindeki bu A'lara biz elemanları diyeceğiz. Bu tablonun elemanları diyelim şimdi. Şimdilik bu elemanlar sayı olabilir. Nasıl sayı olabilir? Real sayılar olabilir, tam sayılar olabilir, komplek sayılar olabilir.
+
+44
+00:10:12,943 --> 00:10:20,483
+İşte bu elemanlar sayıları, sayılar olan ya da değişkenler olan veya bu elemanlara yerine fonksiyonlar yazılabilir.
+
+45
+00:10:21,323 --> 00:10:28,003
+İşte elemanları sayılar, değişkenler ya da fonksiyonlar olabilen bu şekildeki düzenli tabloya.
+
+46
+00:10:28,923 --> 00:10:35,283
+Biz M tane satırı olan, N tane sütunu olan bir matris diyoruz.
+
+47
+00:10:36,283 --> 00:10:37,523
+Bir matris diyoruz.
+
+48
+00:10:38,583 --> 00:10:40,423
+Bakın bunlar satırlar.
+
+49
+00:10:41,076 --> 00:10:58,076
+Burada kaç tane satır var? M tane var. M tane satır var. Şunlara da sütun diyoruz. M tane de sütun var. İşte bu taploya biz M satır, N sütunlu bir matris diyoruz.
+
+50
+00:11:03,731 --> 00:11:09,551
+matrisle diyebiliriz. M çarpı ne matrisle diyebiliriz.
+
+51
+00:11:15,028 --> 00:11:21,728
+Burada, burada, şu m çarpı n ifadesine biz matrisin mertebesi diyoruz.
+
+52
+00:11:22,648 --> 00:11:24,668
+Matrisin mertebesi diyoruz.
+
+53
+00:11:25,788 --> 00:11:38,368
+Ve elemanları böyle a, i, j'ler olan bir a matrisini de, bunu mesela a matrisi dersek, a matrisini de şu şekilde göstereceğiz arkadaşlar.
+
+54
+00:11:46,388 --> 00:11:47,788
+Şöyle, A, I, J
+
+55
+00:11:51,827 --> 00:12:12,447
+Tabii, M çarpı N matrisi diyeceğiz ki ne? M tane satır, N tane sütunu olduğu belli olsun. Yoksa her zaman bu kadar büyük tablo, mesela 100 tane satır, 100 tane sütunu olan matrisi yazmaya kalksak, yer sıkıntısı olur.
+
+56
+00:12:19,327 --> 00:12:38,388
+deriz. Buradaki AİJ'ler, matrisin elemanları. Tabii bunlar biraz önce dediğimiz gibi sayı olabiliyor, değişken olabiliyor, fonksiyonlar olabiliyor. Ama biz dersimizde bu elemanları sayılar olan matrislerle ilgileneceğiz.
+
+57
+00:12:45,587 --> 00:12:52,047
+Eğer real sayı ise bu şekildeki matrislere biz real matrisler deriz.
+
+58
+00:12:54,207 --> 00:13:02,187
+Eğer elemanlar, ayiciler, kompleks sayı ise kompleks matrisler diyoruz.
+
+59
+00:13:02,187 --> 00:13:08,567
+Bu tabii elemanları sayılar olan matrisler için bu söylediğim ifadeler.
+
+60
+00:13:09,427 --> 00:13:21,268
+Ama dersimizde demin de dediğim gibi elemanları sayılar olan ve çoğunlukla da elemanları real sayı olan real matrislerle ilgileneceğiz.
+
+61
+00:13:23,467 --> 00:13:29,548
+Burada bakın örneğimizde çeşitli matrisler var. Bakın bu A matrisi.
+
+62
+00:13:29,971 --> 00:13:54,111
+Üç tane satır, iki tane sütundan oluşan bir matris. Üç çarpı iki bunun mertebesi değil mi? Üç çarpı iki mertebesinden bir matris. Burada B madrisi sadece bir satırdan oluşan matris var. Yine C madrisinin üç çarpı üç mertebesinden
+
+63
+00:13:57,268 --> 00:14:14,728
+Yani satır sayısı da sütun sayısında eşit ve 3. Burada bir tane sütundan oluşan D matrisi var. Burada bakın 2 çarpı 2 mertebeden bir matris var ama ilginçlik ne? Elemanları kompleks sayı. Değil mi? Kompleks sayı.
+
+64
+00:14:21,587 --> 00:14:29,607
+Burada bir G matrisi var, 2x3 mertebesinden ama özelliği var bunun. Bütün elemanları sıfır.
+
+65
+00:14:30,807 --> 00:14:37,587
+Şimdi bu matris türleri var. Biraz önce örneklerde de gördük bazıları. Onlar üzerinde biraz duralım.
+
+66
+00:14:39,247 --> 00:14:47,707
+Eğer bir matris tek satırdan oluşuyorsa, o matrise biz satır matrisi diyoruz arkadaşlar.
+
+67
+00:14:49,139 --> 00:14:57,379
+Dolayısıyla bir satırdan oluştuğu için satır matrisinin mertebesi hep nedir? Bir çarpı n şeklindedir.
+
+68
+00:14:58,079 --> 00:15:12,419
+Biraz önceki örneğimizde B matrisi bir satır matrisidir. Yine P matrisi. Bu ikisi de birer satır matrisidirler.
+
+69
+00:15:15,956 --> 00:15:21,255
+Eğer tek bir sütundan oluşuyorsa matris, ona da sütun matrisi diyoruz.
+
+70
+00:15:23,276 --> 00:15:27,136
+Bu biraz önceki örneğimizde sütun matrisleri D matrisi değil mi?
+
+71
+00:15:27,536 --> 00:15:33,475
+D matrisi, bir sütun matrisi, yine F, o da bir sütun matrisi.
+
+72
+00:15:34,696 --> 00:15:41,276
+Tabii sütun matrisleri de nasıl, mertebeleri nasıldır? M çarpı bir mertebesi şeklindedir.
+
+73
+00:15:44,467 --> 00:15:49,767
+Eğer bütün elemanları sıfırsa, matrise biz sıfır matrisi diyoruz.
+
+74
+00:15:51,767 --> 00:16:00,547
+Burada G matrisi bir sıfır matrisi. 2 çarpı 3 mertebesinden bir sıfır matrisi.
+
+75
+00:16:01,267 --> 00:16:06,327
+Ve genellikle sıfır matrislerini de böyle O'yla ya da sıfırla gösteririz.
+
+76
+00:16:07,787 --> 00:16:08,247
+Eğer
+
+77
+00:16:08,916 --> 00:16:17,616
+Bir matrisde satırlarla sütunların sayıları birbirine eşit ise, böyle matrislere biz kare matris diyoruz.
+
+78
+00:16:18,416 --> 00:16:21,656
+Örneğin C'de satır sayısı sütun sayısına eşit.
+
+79
+00:16:23,056 --> 00:16:27,816
+Yine E'de ve F'de, değil mi bu örneğimizde?
+
+80
+00:16:28,756 --> 00:16:33,496
+C, E, F'de satır sayıları sütun sayılarına eşit.
+
+81
+00:16:36,884 --> 00:16:40,544
+Kare matris diyoruz. Kare matris diyoruz.
+
+82
+00:16:46,548 --> 00:16:53,288
+Şimdi de kare matrislerle ilgili bazı kavramlara bakalım.
+
+83
+00:16:54,587 --> 00:17:03,028
+Örneğin bir A matrisi düşünürsek, n çarpı n mertebesinden, yani n tane satır, n tane sütun var.
+
+84
+00:17:07,859 --> 00:17:17,839
+Bu matriste, şu A11, A22, A33, ANN elemanları diyoruz.
+
+85
+00:17:19,279 --> 00:17:22,699
+Şimdi böyle bir maddesi yazacak olursak,
+
+86
+00:17:26,867 --> 00:17:34,587
+Şöyle, A11, A12, A13.
+
+87
+00:17:38,228 --> 00:17:53,988
+A1N, en tane satır, en tane sütun olsun. A2, 1, A2, 2, A2, 3.
+
+88
+00:18:00,756 --> 00:18:01,695
+A2 yani.
+
+89
+00:18:04,416 --> 00:18:09,276
+3, 1, 3, 2, 3, 3.
+
+90
+00:18:18,355 --> 00:18:19,235
+n1
+
+91
+00:18:19,235 --> 00:18:21,395
+a n2
+
+92
+00:18:25,140 --> 00:18:35,600
+İşte bu gördüğünüz matris, matris buna da A matrisi dersek, n çarpı n mertebesinden bir kare matris.
+
+93
+00:18:37,120 --> 00:18:46,000
+n çarpı n mertebesinden bir kare matris. Bazen bunu şöyle de söyleyebiliriz arkadaşlar, n'inci mertebeden kare matris.
+
+94
+00:18:46,660 --> 00:18:50,540
+n'inci mertebeden kare matris dediğimiz zaman da bu anlaşılmalı.
+
+95
+00:18:50,996 --> 00:19:04,756
+Burada şu, bu tablonun köşegeni dediğimiz şu köşegen var ya, bakın köşegeni çiziyorum, biz bu köşegene esas köşegen ya da asal köşegendiriz.
+
+96
+00:19:04,756 --> 00:19:15,176
+Kare matrisde böyle köşegen vardır. Bu köşegene, kare matrisin köşegene ne diyormuşuz? Esas köşegen veya asal köşegen.
+
+97
+00:19:15,763 --> 00:19:40,344
+Ve bunun üzerindeki elemanlar var. Ne o elemanlar? A11, A22, A33, A, NN. Şuradaki elemanlar. Bunlara biz ne diyoruz? Bunlara köşegen üzerinde oldukları için A'nın asal köşegen elemanları diyoruz.
+
+98
+00:19:41,332 --> 00:19:45,492
+Veya bazen esas köşegen elemanları da denir.
+
+99
+00:19:47,412 --> 00:19:54,032
+İşte bu köşegen üzerindeki elemanların toplamına bu kare matrisin izi denir.
+
+100
+00:19:55,332 --> 00:19:59,951
+Köşegen üzerindeki elemanların toplamına kare matrisin izi diyoruz.
+
+101
+00:20:00,632 --> 00:20:04,492
+Ve izi şu şekilde gösteriyoruz notasyon olarak.
+
+102
+00:20:04,632 --> 00:20:06,451
+İz A yazıyoruz. Bu neymiş?
+
+103
+00:20:06,847 --> 00:20:09,987
+Köşegen üzerindeki elemanların toplamı
+
+104
+00:20:15,571 --> 00:20:22,071
+Şimdi burada mesela şuna bakarsak, bu bir kare matris, bunun izinden bahsedilebilir.
+
+105
+00:20:23,692 --> 00:20:26,051
+İz E neye eşit o zaman?
+
+106
+00:20:28,531 --> 00:20:34,132
+İ eksi bir artı İ eksi beş.
+
+107
+00:20:41,011 --> 00:20:57,331
+İfade ne olacaktır? Köşegen üzerindeki elemanların toplamı, eksi kök beş, artı, üç bölü iki, artı sıfır olacak. Bu şekilde.
+
+108
+00:21:02,003 --> 00:21:09,543
+Evet, şimdi başka bir tanımımız var. Bir A matrisimiz var. Bu yine eninci mertebeden bir kare matris.
+
+109
+00:21:12,043 --> 00:21:18,823
+Bu kare matris de asal köşegen dışındaki elemanların hepsi sıfırsa.
+
+110
+00:21:20,343 --> 00:21:25,623
+Bu matrise biz köşegen matrisleriz arkadaşlar. Bakın burada bir kare matris var.
+
+111
+00:21:26,451 --> 00:21:33,091
+Esas köşegen veya asal köşegen üzerindeki elemanlar bunlar. Bunların dışındaki elemanlar bakın hep sıfır.
+
+112
+00:21:33,971 --> 00:21:39,991
+Yine aynı şekilde burada asal köşegenin üzerindeki elemanların dışındaki elemanlar sıfır.
+
+113
+00:21:40,731 --> 00:21:45,831
+Burada da öyle. Asal köşegen üzerindeki elemanların dışındaki elemanlar sıfır.
+
+114
+00:21:45,831 --> 00:21:52,451
+Yine burada da öyle. Bu örneklerimiz hep köşegen matris örnekleridir.
+
+115
+00:21:55,092 --> 00:22:19,471
+Köşegen matrisini bu şekilde tamamladıktan sonra, özel köşegen matrislerimiz de var. Onlarla da ilgili şunları söyleyebiliriz. Bir köşegen matrisde, bu asal köşegen üzerindeki elemanlar var ya, eğer bunların hepsi birbirine eşitse, yani A11, A22, A33, ANN hepsi birbirine eşit ise, mesela bunlar birbirine eşit ve K ise,
+
+116
+00:22:19,955 --> 00:22:26,315
+O zaman böyle köşegen matrislere biz skaler matris diyoruz.
+
+117
+00:22:29,735 --> 00:22:42,675
+Bakın burada bu bir skaler matristir. Yine şu ikinci mertebeden sıfır matrisi bir skaler matristir.
+
+118
+00:22:44,915 --> 00:23:08,855
+Eğer asal köşegen üzerindeki elemanlar, yine köşegen matris üzerinde, asal köşegen üzerindeki elemanlar hep birbirine eşitse, bir ise, bir başka de işte, skaler matristeki asal köşegen üzerindeki elemanlar hep biri eşitse, biz böyle matrislere de birim matris diyoruz arkadaşlar, birim matris.
+
+119
+00:23:10,420 --> 00:23:17,000
+Ve n çarpı n mertebesinden birim matrisi biz kısaca şu şekilde gösteririz.
+
+120
+00:23:17,080 --> 00:23:18,580
+I'nın altına n yazarak.
+
+121
+00:23:19,540 --> 00:23:22,220
+Mesela I1 şu birim matris.
+
+122
+00:23:22,820 --> 00:23:24,040
+I2 bu.
+
+123
+00:23:25,120 --> 00:23:26,480
+I3 bu.
+
+124
+00:23:27,700 --> 00:23:29,420
+I4 bu birim matris.
+
+125
+00:23:29,680 --> 00:23:31,900
+Ve benzer şekilde devam ederler.
+
+126
+00:23:34,740 --> 00:23:52,679
+Eğer matrislerde, matrislerde iki matrisin mertebeleri birbirine eşit ise ve karşılıklı elemanlar, karşılıklı elemanlar hep birbirine eşit iseler, o zaman bu matrislere eşit matrisler diyoruz.
+
+127
+00:24:01,587 --> 00:24:29,028
+A madrisi bu. B madrisini bu şekilde verelim. Bunların ikisini eşit olması demek, mertebelerin aynı ve bakın, M çarpı N mertebesinden iki tane A madrisi ve B madrisi ve karşılıklı elemanlarda eşit ise, A eşit B yazar. Bu karşılıklı elemanları eşit demek şu demek arkadaşlar.
+
+128
+00:24:30,259 --> 00:24:47,720
+Her İ, J için, bu İ, J indisleri için, A, İ, J eşit B, İ, J olması.
+
+129
+00:24:56,756 --> 00:25:05,136
+A matrisinin i'ninci satır, j'ninci sutundaki elemanı demek.
+
+130
+00:25:09,395 --> 00:25:19,516
+Yani A matrisinin i'ninci satırı j'ninci sütundaki elemanı B matrisinin i'ninci satırı j'ninci sütundaki elemanına eşit olacak.
+
+131
+00:25:20,096 --> 00:25:22,016
+Karşılıklı elemanlar dediğimiz bu.
+
+132
+00:25:22,956 --> 00:25:29,196
+i'ninci satırı j'ninci sütundaki elemanlar birbirine eşit olacaklar.
+
+133
+00:25:36,307 --> 00:25:50,167
+Mesela bununla ilgili bir sorumuz var arkadaşlar. Şurada da örnek. Bir A maddesi var. Bir de B maddesi var.
+
+134
+00:25:54,003 --> 00:26:14,824
+Bu iki matrisin birbirine eşit olması için, mesela x, y, z ne olmalıdır? Veya bir de t var, ne olmalıdır ona bakalım. İki matrisin mertebeleri gördüğünüz gibi eşit, değil mi? İkisi de 2x3 mertebesinden matrisler tamam. Şimdi de karşılıklı elemanlara bakacağız.
+
+135
+00:26:16,832 --> 00:26:41,672
+Bunlar birbirine eşit bakın. 1, 5 var. Sonra şu Y'nin karşılıklı olduğu eleman bu. Y, 7'ye eşit olacak. Değil mi? X burada. Onun karşılığındaki eleman 2. X, 2'ye eşit olacak. Benzer şekilde Z3'e, T'de, eksi 6'ya eşit olacak.
+
+136
+00:26:54,612 --> 00:26:55,832
+Hocam, bir şey sorabilir miyim?
+
+137
+00:26:56,711 --> 00:26:57,011
+Buyur.
+
+138
+00:26:57,792 --> 00:27:16,292
+Hocam, şimdi biz mesela bu birim matrislerden falan bahsederken sürekli kare matris örneği üzerinden gittik ama bunlar mesela normal, yani M çarpı N matrislerde, diyelim ki mesela M N'den büyükse ve sonuçta N çarpı N köşegeni oluşacak orada. Onlarda da geçerli oluyor mu yine bu özel isimler?
+
+139
+00:27:17,292 --> 00:27:20,332
+Son söylediğini bir daha söyle, N çarpı N köşegeni mi?
+
+140
+00:27:21,236 --> 00:27:30,195
+Şimdi hocam mesela 5 satır 3 sütun şeklinde oluşuyor diyelim ki sonuçta bizde 3x3 olarak giden bir köşegen olmuş olacak orada.
+
+141
+00:27:31,395 --> 00:27:34,635
+Orada mesela hepsinin 1-1-1 olması bunu birim matris yapar mı?
+
+142
+00:27:36,316 --> 00:27:38,175
+Şöyle bir şey diyorsun sen herhalde.
+
+143
+00:28:01,748 --> 00:28:04,188
+Şöyle bir şey üzerinde mi duruyorsun örnek?
+
+144
+00:28:04,548 --> 00:28:05,168
+Evet hocam.
+
+145
+00:28:06,067 --> 00:28:12,088
+Şimdi birim matrisinin tanımı, bir kere birim matris kare matrislerde tanımlanan bir kavram.
+
+146
+00:28:12,788 --> 00:28:16,448
+Birim matris kare matrislerde tanımlanan bir kavram.
+
+147
+00:28:16,448 --> 00:28:19,868
+Bu verilen matris bir kere kare matrisi değil.
+
+148
+00:28:20,388 --> 00:28:22,348
+Burada birim matristen bahsedemeyiz.
+
+149
+00:28:27,092 --> 00:28:49,652
+Kare alt matrislerinden bahsedebiliriz. Mesela bu 3 çarpı 5 mertebesinden ya, bu 3 çarpı 5 mertebesinden. Bunun alt matrisleri şöyle elde edilir. Satırı silersiniz, satır silersiniz bir veya daha fazla. Sütun silersiniz, kare alt matrislerini elde edersiniz.
+
+150
+00:28:50,579 --> 00:29:08,199
+Alt matrislerini elde ederseniz de kare olanları vardır bunun. Mesela bunun kare olanları 3 çarpı 3 mertebesinden kare alt matrisi olabilir. Başka 2 çarpı 2 mertebesinden kare alt matrisler olabilir. Bir de 1 çarpı 1 mertebesinden kare alt matrisler olur.
+
+151
+00:29:08,199 --> 00:29:13,239
+Bu arada bir matrisin alt matrislerinden bahsediyoruz.
+
+152
+00:29:14,132 --> 00:29:28,451
+Alt matrisleri demek ki bir matriste satır sütün silmekle elde ediliyor. Bu alt matrislerin içinde kare olanlar da olabilir. Nitekim mesela şurada, şu kısımda bu verilen matrisin kare alt matrisi var, üçüncü mertebeden.
+
+153
+00:29:39,632 --> 00:29:58,832
+İkinci mertebeden bir kare alt matrisi vardır bu matrisin. Bu birimdir. Şunu alırsan, bu birim olmayan bir matristir. Yani ilk başta yazdığımız matris birim matris değil ama bunun alt matrislerinden birim matris olanlar olabilir.
+
+154
+00:30:00,751 --> 00:30:02,511
+Anladım hocam, çok teşekkür ederim.
+
+155
+00:30:07,316 --> 00:30:08,496
+Evet, şimdi...
+
+156
+00:30:08,496 --> 00:30:10,636
+Hocam, ben de bir şey sorabilir miyim başlamadan önce?
+
+157
+00:30:11,296 --> 00:30:11,596
+Buyur.
+
+158
+00:30:11,596 --> 00:30:16,416
+Bu, şu an gösterdiğiniz kağıdı dosyayı paylaşacak mısınız?
+
+159
+00:30:16,996 --> 00:30:33,736
+Hayır. Bu gösterdiğimi siz zaten galiba 15-20 dakika sonra sahip olacaksınız. Hani çalışırken bunu sistem size video olarak veriyor. Hani videoya durdurup bakabilirsiniz.
+
+160
+00:30:34,451 --> 00:30:35,771
+Tamam hocam, teşekkür ederim.
+
+161
+00:30:37,951 --> 00:30:43,852
+Ama bu tamamen benim yazdığım o kitaptan birebir takip ediyoruz.
+
+162
+00:30:45,271 --> 00:30:52,152
+Hani ben size kitabı alın demiyorum ama illa benim kitabım olacak diyorsanız alabilirsiniz.
+
+163
+00:30:54,031 --> 00:30:54,852
+Şimdi.
+
+164
+00:30:55,892 --> 00:31:17,571
+Matrisleri bu şekilde tanımladık. Bazı özel matrisleri de söyledik, tanımladık. Şimdi matrislerle arasında işlemler var. Mesela toplama işleminden bahsedeceğiz. Sonra matrislerin çarpımından bahsedeceğiz. Bir de bir skalerle bir matrisin çarpımından bahsedeceğiz. Önce toplamadan bahsedelim.
+
+165
+00:31:20,019 --> 00:31:42,059
+İki matrisi toplayabilebilmemiz için bu iki matrisin de mertebeleri aynı olmalı. Yani aynı mertebeden iki matris toplanabilir. Mesela aynı mertebeden iki tane matris alalım. Birisi A matrisi olsun. A matrisi AİJ elemanlarından oluşan matris.
+
+166
+00:31:44,564 --> 00:32:10,943
+BİC elemanlarından oluşan bir matris olsun şöyle. Bunların ikisi de M çarpı N mertebesinden bir matris olsunlar. Bunların toplamını şu şekilde gösteriyoruz bakın arkadaşlar. A artı B. AİC artı BİC. Bu ne demek? Karşılıklı elemanların toplanması demek.
+
+167
+00:32:12,147 --> 00:32:31,968
+Yani A matrisindeki İ'ninci satır, J'ninci sunundaki elemanla B matrisindeki İ'ninci satır, J'ninci sunundaki elemanları toplayarak elde ettiğimiz yeni bir matris ki bu yeni matrisin de mertebesi yine M çarpı N mertebesinden bir matristir.
+
+168
+00:32:37,844 --> 00:33:05,183
+Dedik ki ne? Aynı mertebeli matrisler toplanabilir. Farklıysa mertebeler elbette toplayamayız. Bakın burada A ve B matrislerini düşünürsek, bunların ikisi de aynı mertebeden. Yani 3 şarpı 4 mertebesinden 2 matris. Bu 2 matrisi toplayabiliriz. Ne yapacağız? Karşılıklı elemanları toplayarak, mesela bu 5 ile bu 8'i toplayacağız. Değil mi?
+
+169
+00:33:07,892 --> 00:33:11,392
+Bakın, 5 artı 8.
+
+170
+00:33:14,432 --> 00:33:15,772
+Onu topladık.
+
+171
+00:33:16,392 --> 00:33:16,672
+Sonra,
+
+172
+00:33:17,992 --> 00:33:18,772
+eksi 3 ile,
+
+173
+00:33:19,492 --> 00:33:20,792
+4'ü toplayacağız.
+
+174
+00:33:22,932 --> 00:33:24,412
+Eksi 3 artı,
+
+175
+00:33:25,152 --> 00:33:25,492
+4.
+
+176
+00:33:27,072 --> 00:33:27,472
+Sonra,
+
+177
+00:33:29,172 --> 00:33:30,572
+0 artı,
+
+178
+00:33:30,572 --> 00:33:31,172
+7.
+
+179
+00:33:33,632 --> 00:33:34,752
+0 artı 7.
+
+180
+00:33:39,796 --> 00:33:42,696
+2 ile eksi altı'yı toplayacağız.
+
+181
+00:33:44,976 --> 00:33:53,216
+Ve bu şekilde, karşılıklı elemanları topladığımız zaman, A matrisi, A artı B matrisi bu matris olacak arkadaşlar.
+
+182
+00:33:53,976 --> 00:34:03,496
+Toplamın sonucunu yazarsak, bakın bu da yine 3 şarpı 4 mertebesinden bir matris.
+
+183
+00:34:06,099 --> 00:34:21,099
+Ancak, ancak, burada bir de C matrisi var. Bunun ikisi, 3 çarpı 4 mertebesinden, bu ise 2 çarpı 2 mertebesinden.
+
+184
+00:34:22,460 --> 00:34:30,920
+A ile C'nin ya da B ile C'nin mertebeleri aynı olmadığı için, ne A artı C'den ne de B artı C'den bahsedebiliriz.
+
+185
+00:34:35,251 --> 00:34:54,811
+Bu toplamıydı. İki matrisin farkını da şu şekilde açıklıyoruz arkadaşlar. Ama önce skalerle çarpım üzerinde duralım. Şimdi bir A matrisi verilsin. A matrisi. Lambda'da bir skaler olsun. Lambda'da skaler olsun.
+
+186
+00:35:02,195 --> 00:35:15,556
+Elemanları real sayılar olan. Çok az yerde de elemanları kompleks olan matrislerden ilgileneceğiz. Zaten onlarla ilgilenirken onu belli edeceğiz.
+
+187
+00:35:16,836 --> 00:35:23,355
+Eğer burada bir matris dedik ya, bu real matrisle lambda skaler dediğimiz zaman real sayı anlaşılmalı.
+
+188
+00:35:30,195 --> 00:35:54,596
+Kompleks sayıdan bahsedilmeli. Yani matrisin elemanları hangi sayı kümesindense skaleri de öyle alacağız. Ama hiçbir şey demezsek, real matris olduğunu düşünebiliriz. Biz dersimizde daha çok real matrislerle ilgileneceğiz. Lambda skaler dediğimiz zaman da real sayı olarak düşünebiliriz.
+
+189
+00:35:54,927 --> 00:36:07,488
+Tabii kompleks matrislerle çalışıyorsak, demin dediğim gibi skaleri de kompleks sayı alacağız. Bu lambda skaleriyle A matrisinin çarpımından bahsedebiliriz. Onu şöyle göstereceğiz arkadaşlar.
+
+190
+00:36:08,967 --> 00:36:22,488
+Bu lambda çarpı A matrisi de yine bir matris A ile aynı mertebeli bir matristir. Ve elemanları bu matrisin lambdanın, lambdanın,
+
+191
+00:36:22,704 --> 00:36:27,744
+A'nın her elemanıyla, her bir elemanıyla, çarpımı ile elde edilen matristir.
+
+192
+00:36:30,344 --> 00:36:33,184
+Mesela A matrisi var bak burada, örnekte.
+
+193
+00:36:35,744 --> 00:36:48,463
+A matrisini iki skaleriyle çarptığımız zaman, yani iki A matrisi yine aynı mertebeli bir matris, yani iki çarpı üç mertebesinden bir matris, ve her elemanı
+
+194
+00:36:49,076 --> 00:37:15,884
+2 ile çarpacağız. Yani, 2 çarpı 1. Değil mi? 2 çarpı 5. Şu. 2 çarpı, eksi 4. İşte, eksi 8. Yine, 2 çarpı 0. Buradaki eleman, şu eleman. 2 çarpı 2. Bu eleman. 2 çarpı...
+
+195
+00:37:16,884 --> 00:37:18,003
+8 bu eleman.
+
+196
+00:37:20,323 --> 00:37:22,804
+Lambda skaleriyle bir maddesinin çarpımı bu.
+
+197
+00:37:26,983 --> 00:37:39,463
+Eğer lambdayı özel olarak eksi bir alırsak, eksi bir sayısı alırsak, eksi bir skaleriyle A maddesinin çarpımını kısaca eksi A ile gösteririz.
+
+198
+00:37:41,780 --> 00:37:48,480
+O zaman A ile B matrisinin farkı şöyle söylenir arkadaşlar. Bunu böyle yazıyoruz.
+
+199
+00:37:49,340 --> 00:37:58,460
+A artı, A artı bakın. Ne olacak? Eksi B. Eksi B.
+
+200
+00:38:00,940 --> 00:38:06,380
+Aslında iki matrisin farkını söylerken iki matrisin toplamından yararlanıyoruz değil mi?
+
+201
+00:38:07,520 --> 00:38:08,660
+Eksi B ne?
+
+202
+00:38:09,684 --> 00:38:27,244
+Eksi bir ile B'nin, B'nin bütün elemanlarını çarpara geldi ettiğimiz matris. Dolayısıyla eksi bir ile B'nin bütün elemanlarını çarpıyoruz. O zaman eksi B matrisini elde ediyoruz. Onu A ile topluyoruz. İki matrisin farkı dediğimiz de bu.
+
+203
+00:38:37,300 --> 00:38:47,680
+Ne olacak? Eksi B maddesini yazacaksınız veya eksi B maddesini yazmadan da direkt 1-3 diyeceksiniz.
+
+204
+00:38:48,020 --> 00:38:52,160
+Değil mi? Eksi B yazdığın zaman, eksi B yazın ve şuraların önü hep eksi olacak.
+
+205
+00:38:52,840 --> 00:39:04,340
+Şunlara eksi yapacağız. 1-3, eksi 2. 5-7, eksi 2. Eksi 4, eksi 0, eksi 4.
+
+206
+00:39:04,755 --> 00:39:10,235
+0-4
+
+207
+00:39:10,235 --> 00:39:12,315
+0-5
+
+208
+00:39:12,315 --> 00:39:14,976
+Pardon, 2-5-3
+
+209
+00:39:14,976 --> 00:39:16,996
+8-6-2
+
+210
+00:39:16,996 --> 00:39:23,596
+Bu şekilde, iki matrisin farkında böyle söyleyebiliriz.
+
+211
+00:39:23,596 --> 00:39:27,536
+Ve, ve, iki matrisin toplamı
+
+212
+00:39:27,536 --> 00:39:29,596
+iki matrisin toplamı
+
+213
+00:39:29,596 --> 00:39:31,996
+sonra
+
+214
+00:39:33,012 --> 00:39:49,052
+Skaler ile bir maddesin çarpımı, bir de iki matrisin farkından bahsettik. Bu ifadeleri, bu kavramları kullanarak bazı özellikleri şimdi yazacağız, vereceğiz. Bunu da teoremle veriyorum arkadaşlar.
+
+215
+00:39:49,052 --> 00:39:52,112
+Teorem. Üç tane matrisim var.
+
+216
+00:39:57,619 --> 00:40:00,479
+Ve bu 3 matris aynı mertebeli.
+
+217
+00:40:01,039 --> 00:40:02,079
+Aynı mertebeli.
+
+218
+00:40:03,079 --> 00:40:04,359
+İki tane de skaler aldım.
+
+219
+00:40:04,939 --> 00:40:08,099
+Lambda 1 ve lambda 2 skalerleri aldım.
+
+220
+00:40:12,755 --> 00:40:33,975
+Şunları söyleyebiliriz. A ile B'nin toplamı, B ile A'nın toplamıdır. Bunu kolaylıkla görebilirsiniz. İki matris toplarken karşılıklı elemanları topluyorduk. Tabii karşılıklı elemanları topladığımız bu elemanlar ne? Real sayı. Real sayılarda toplama işleminin değişmeye özelliği var.
+
+221
+00:40:34,420 --> 00:40:42,260
+Onun için A artı B, B artı A yazabiliriz. Buna biz matrislerdeki toplama işleminin değişme özelliği diyoruz.
+
+222
+00:40:45,220 --> 00:40:56,380
+Yine bu üç matrisle B ile A'yı topladıktan sonra A'yı toplamak demek, önce A ile B'yi toplayıp sonra C ile toplamak demek.
+
+223
+00:40:57,720 --> 00:41:00,680
+Burada da toplama işleminin birleşme özelliği vardır.
+
+224
+00:41:01,427 --> 00:41:02,627
+Bunu söyleyebiliriz.
+
+225
+00:41:04,147 --> 00:41:07,607
+Biraz önce sıfır matrisinden bahsetmiştik.
+
+226
+00:41:07,907 --> 00:41:09,407
+Her elemanın sıfır olan matris.
+
+227
+00:41:10,407 --> 00:41:17,327
+Burada A ile aynı mertebeli sıfır matrisi düşünerek A artı sıfırdan bahsedebilirim.
+
+228
+00:41:31,380 --> 00:41:33,680
+Evet. A artı sıfır.
+
+229
+00:41:37,076 --> 00:41:45,996
+A ile aynı mertebede sıfır matrisi. Bunu topladığımız zaman toplama işlemini hatırlarsanız yine A matrisini elde ederiz.
+
+230
+00:41:46,816 --> 00:41:56,836
+Biz burada şunu söyleriz. Demek ki sıfır matrisi toplama işlemine göre etkisiz elemandır deriz.
+
+231
+00:42:15,764 --> 00:42:35,424
+Şimdi burada şunu söyleyeyim arkadaşlar. Sizin chat şeyiniz de var. Ben arada bir bakıyorum da her zaman bakamıyorum. Orada sorunuz varsa bana sorun. Siz kendi aranızda soru sorup cevaplandırıyorsunuz ya. Ben gideyim o zaman.
+
+232
+00:42:37,924 --> 00:42:39,784
+Ben gideyim. Ben bunu yazarak.
+
+233
+00:42:40,788 --> 00:43:07,727
+Dersi şey yapın ya. Sorunuz varsa bana sorun. Mesela sorunun biri şu. Önce satır, mertebe yazarken önce satır, sonra sütunum yazacağız. Evet, önce satır, m çarpı ne dediğimiz zaman m tane satır, n tane sütun var demektir. Onu değiştiremezsin. Bu kural. Bu kural. Yani önce sütunu, sonra satırı yazamayız. Evet, biri bir şey mi diyor?
+
+234
+00:43:09,588 --> 00:43:10,948
+Müşter geldi birinden.
+
+235
+00:43:14,579 --> 00:43:15,099
+Peki.
+
+236
+00:43:18,675 --> 00:43:35,195
+A eksi A, bu A eksi A dediğimiz aslında şu, A artı eksi A maddesi. Bu neydi? Bu da eksi 1 ile A'nın çarpımıydı.
+
+237
+00:43:36,735 --> 00:43:44,115
+Dolayısıyla bunları A ile eksi 1 çarpı A'yı toplarsak elbette 0 maddesini elde edeceğiz.
+
+238
+00:43:47,699 --> 00:43:49,779
+Burada şunu da söyleyebiliriz demek ki.
+
+239
+00:43:52,899 --> 00:44:04,739
+Toplama işlemine göre, toplama işlemine göre her matrisin tersi de var. O ney? A matrisinin tersi, şu eksi A matrisi.
+
+240
+00:44:05,396 --> 00:44:18,236
+Çünkü A ile eksi A matrisini topluyoruz, etkisi elemanı, yani sıfır matrisini elde ediyoruz. Buradaki sıfır dediğimiz sıfırla aynı, pardon A ile aynı mertebeli matris.
+
+241
+00:44:20,635 --> 00:44:32,956
+Lambda bir skaler A artı B'yi lambda bir ile çarpmak demek, lambda bir ile A'yı çarpmak, sonra lambda bir ile B'yi çarpıp ikisini toplamak demektir.
+
+242
+00:44:35,347 --> 00:44:46,827
+Yine, lambda 1 artı lambda 2, bu toplamı A ile çarpmak demek, lambda 1 A artı lambda 2 A demek.
+
+243
+00:44:48,347 --> 00:44:58,387
+Lambda 1 çarpı lambda 2, bu yine bir skaler, bu skaler ile A'yı çarpmak demek, önce lambda 2 ile A'yı, sonra lambda 1 ile çarpmak demek.
+
+244
+00:44:58,387 --> 00:45:00,507
+Aslında şunu da yazabiliriz buraya.
+
+245
+00:45:15,219 --> 00:45:16,259
+Lambda 2
+
+246
+00:45:19,956 --> 00:45:25,775
+Namda bir A şeklinde de bunu söyleyebiliriz.
+
+247
+00:45:27,795 --> 00:45:43,336
+Bu özellikleri kolaylıkla görebilirsiniz. Mesela 2 çarpı 3 mertebesinden bir matris alarak onun üzerinde bile görebilirsiniz. Kolaylıkla elde edilebilen özellikler bu özellikler.
+
+248
+00:45:44,615 --> 00:45:46,916
+Hocam, bir şey sorabilir miyim?
+
+249
+00:45:47,251 --> 00:45:47,751
+Buyurun.
+
+250
+00:45:48,451 --> 00:45:55,771
+Şu lambda kısmında kafam takıldı da bir tane skaler, lambda dediğimiz örneği verebilir misiniz, gösterebilir misiniz?
+
+251
+00:45:59,251 --> 00:46:02,231
+Mesela bir matris alalım, şöyle A matrisi olsun.
+
+252
+00:46:04,692 --> 00:46:10,351
+2, 0, eksi 1 olsun.
+
+253
+00:46:11,451 --> 00:46:18,652
+Şurada da 5, 2, 2 demiyorum ne, daha değişik bir sayı.
+
+254
+00:46:20,092 --> 00:46:23,351
+4 olsun. Şurada da A sayısı olsun.
+
+255
+00:46:24,563 --> 00:46:49,355
+Mesela lambda yerine de eksi 3 alalım. Tamam mı? Eksi 3 de a'nın çarpımı ne demek? Onu soruyorsun galiba. Bu eksi 3 de çarpı 2. Her elemanı çarpacağız. Eksi 3 de 0'ı çarpacağız. Eksi 3 de...
+
+256
+00:46:50,675 --> 00:47:17,016
+Eksi biri çarpacağız. Anladım hocam, sağ olun. İşte eksi üçte beşi ve benzer şekilde. Bu arada ben bir şey sorabilir miyim? En son konuşan arkadaşlar aşağı soralım. Siz listede gördünüz mü hiç böyle matris? Yok hocam, matris görmedik. Yani artık gösterilmiyor o zaman, öyle mi? Aynen, sanırsam gösterilmiyor. Tamam.
+
+257
+00:47:17,492 --> 00:47:19,532
+Hocam en son 99'ları gördün.
+
+258
+00:47:21,472 --> 00:47:24,112
+Oho, çok olmuş, bırakalım.
+
+259
+00:47:26,992 --> 00:47:31,292
+Peki, şimdi devam edelim.
+
+260
+00:47:34,212 --> 00:47:36,492
+Biraz önce dediğim gibi...
+
+261
+00:47:38,312 --> 00:47:44,292
+Hocam, şey, biz de görmedik ya, 99'lar dedi de biz de görmedik, 98'ler gördü en son.
+
+262
+00:47:44,788 --> 00:47:45,628
+Matris Sere.
+
+263
+00:47:47,307 --> 00:47:47,568
+Peki.
+
+264
+00:47:50,827 --> 00:47:56,088
+98'li, 98'li derken neyi kastediyorsunuz?
+
+265
+00:47:56,628 --> 00:48:00,568
+Yani, 2016 mezunları gördü liseden.
+
+266
+00:48:00,588 --> 00:48:02,148
+98 yılında doğanları mı?
+
+267
+00:48:02,148 --> 00:48:04,468
+Aynen, 98 yılında doğanlar demek istiyorlar hocam.
+
+268
+00:48:05,307 --> 00:48:14,748
+2016'da en son gösterildi hocam, matris konusu, lise son sınıflara. Sonraki 2017 mezunlarında gösterilmedi, [kişisel bilgi]. Göstermedi yani.
+
+269
+00:48:15,988 --> 00:48:19,268
+Tamam, biz zaten hiç görmemişiz gibi anlatıyoruz.
+
+270
+00:48:20,916 --> 00:48:26,036
+Şimdi diğer bir işlem olarak iki matrisin çarpımından bahsedeceğiz.
+
+271
+00:48:27,076 --> 00:48:30,576
+Şimdi burada dikkat edeceğimiz husus var arkadaşlar.
+
+272
+00:48:30,816 --> 00:48:35,056
+Bakın toplamada iki matris de aynı mertebeli olacak idi.
+
+273
+00:48:35,796 --> 00:48:37,096
+Burada farklı bir durum var.
+
+274
+00:48:37,096 --> 00:48:48,376
+Mesela A matrisi ile B matrisini çarpacaksak, A matrisi M çarpı R mertebeden ise,
+
+275
+00:48:48,980 --> 00:49:14,180
+İkinci matris, ikinci matrisin satır sayısı önem arz ediyor. İkinci matrisin satır sayısı, birinci matrisin sütun sayısıyla aynı olmalı. Bakın A'nın sütunu R. O zaman çarpacağımız B matrisinin satırı da R olacak. Yani R çarpı N mertebesinden bir matris olacak B matrisi.
+
+276
+00:49:15,891 --> 00:49:34,052
+O zaman bu iki matrisin çarpımından bahsedebiliyoruz. Bir daha söylüyorum. Birinci matrisin sutunu ile ikinci matrisin satırı aynı olmalı. İşte o zaman iki matrisin çarpımından bahsedilebilir.
+
+277
+00:49:42,356 --> 00:49:44,716
+B matrisi de 2x5 olabilir mesela.
+
+278
+00:49:47,656 --> 00:50:04,056
+Eğer A matrisi kare matris ise, mesela 3x3 mertebesinden bir matris ise A matrisi, o zaman B matrisi de 3xn tipinden olacak.
+
+279
+00:50:07,956 --> 00:50:13,416
+Şimdi bu çarpılabilmesi için iki matrisin mertebesinde aranan bir şart.
+
+280
+00:50:14,416 --> 00:50:14,816
+Tamam mı?
+
+281
+00:50:15,635 --> 00:50:19,235
+İki matrisin çarpımı da yine bir matris çıkacak.
+
+282
+00:50:20,655 --> 00:50:24,536
+Nasıl bir matris çıkacağını da çarpmadan biliyoruz.
+
+283
+00:50:24,596 --> 00:50:26,336
+Bakın mertebelere bakarak biliyoruz.
+
+284
+00:50:26,336 --> 00:50:31,516
+Şuradaki çarpımın sonucunda elde ettiğimiz matrisin satır sayısı
+
+285
+00:50:32,596 --> 00:50:35,576
+Şu A'nın satır sayısıdır arkadaşlar.
+
+286
+00:50:36,456 --> 00:50:42,856
+A'nın satır sayısı neyse, çarptığımız zaman elde ettiğimiz matrisin satır sayısı da o olacak.
+
+287
+00:50:44,676 --> 00:50:58,696
+Ne de, yani çarpımın sonunda elde ettiğimiz matrisin sütun sayısı da, şuradaki B matrisin, yani ikinci matrisin sütun sayısı olacak.
+
+288
+00:51:02,356 --> 00:51:13,516
+Bakın, burada mertebeler çok önemli. Hem çarpılabilmesi açısından, hem de sonuçta elde ettiğimiz matrisin mertebesi açısından.
+
+289
+00:51:18,164 --> 00:51:33,584
+Peki, dedik ki ne? A çarpı B'de böyle bir matris olacak, M çarpı ne? Peki bu çarpımda elde ettiğimiz matrisin elemanları nasıl olacak? C-İ'ciler. O da şöyle arkadaşlar.
+
+290
+00:51:45,300 --> 00:51:46,300
+Şimdi
+
+291
+00:51:53,139 --> 00:51:54,659
+Bir A matrisi alayım.
+
+292
+00:52:26,164 --> 00:52:27,484
+Bu A matrisi olsun.
+
+293
+00:52:31,411 --> 00:52:33,271
+Bir de yanına B matrisi yazıyorum.
+
+294
+00:53:09,844 --> 00:53:23,623
+B matrisi de ne demiştik demin? R çarpı n mertebesinden değil mi? A, M çarpı R mertebesinden. O zaman şunu düzelteyim ben.
+
+295
+00:53:29,619 --> 00:53:30,759
+Şurası rea olsun.
+
+296
+00:53:35,827 --> 00:53:40,428
+B'de, R çarpı, N mertebesinde,
+
+297
+00:54:41,907 --> 00:54:43,007
+Böyle gitsin bakalım.
+
+298
+00:54:45,447 --> 00:54:47,527
+Şurada da iyi bir şey sorabilir miyim?
+
+299
+00:54:48,608 --> 00:54:48,867
+Söyle.
+
+300
+00:54:50,228 --> 00:54:54,027
+Biraz zamansız olacak ama bu köşegen matrisler vardı ya.
+
+301
+00:54:56,007 --> 00:54:57,447
+Sol üstten alıyorduk hocam hep.
+
+302
+00:54:58,847 --> 00:55:01,007
+Bir şeye, mesela bir matrise falan bakarken.
+
+303
+00:55:02,487 --> 00:55:04,307
+Diğer taraftan sağ üstten alabilir miyiz?
+
+304
+00:55:04,407 --> 00:55:05,788
+Sağ üstten sol altı kadar.
+
+305
+00:55:06,847 --> 00:55:07,188
+Yok.
+
+306
+00:55:08,211 --> 00:55:10,211
+Sadece sol üstten sağ altın adır.
+
+307
+00:55:11,432 --> 00:55:31,592
+Evet. Yani o bazı şeylerde, oradan da bir köşegen var. Onunla ilgili de bazı ifadeler oluyor ama bizim bu dersimizde işlediğimiz, işte köşegen matrisi olma, skaler matrisi olma, daha sonra birim matrisi olma da hep esas köşegen diyoruz ona.
+
+308
+00:55:34,324 --> 00:55:55,364
+Sağ, alt köşeye kadar çizdiğimiz şeye biz, esas köşegen veya asal köşegen deniyor. Onu alıyoruz. Çünkü birim matris de oradan alınıyor. Öbür taraftan da bir köşegen var. O köşegenle ilgili de bazı tanımlar olabilir, başka ifadeler, terimler olabilir ama biz onunla ilgilenmiyoruz şu anda.
+
+309
+00:55:56,692 --> 00:56:02,871
+Dolayısıyla bizim bu işlediğimiz kavramlarda hep o esas köşegeni alacağız.
+
+310
+00:56:05,031 --> 00:56:06,092
+Tamam hocam.
+
+311
+00:56:07,311 --> 00:56:07,931
+Teşekkür ederim.
+
+312
+00:56:08,871 --> 00:56:09,371
+Bir şey değil.
+
+313
+00:57:55,699 --> 00:58:06,699
+Peki, şimdi A matrisimiz var, M çarpı N mertebesinden, bir de B matrisi var, R çarpı N mertebesinden, bu mertebeler böyle olacak dedik.
+
+314
+00:58:06,699 --> 00:58:15,699
+Çarparken şöyle yapıyoruz arkadaşlar, şimdi çarpımda A çarpı B matrisi,
+
+315
+00:58:19,059 --> 00:58:35,359
+Şuradaki eleman, şuradaki eleman C dersek, bu birinci satır, birinci süzün elemana. Değil mi? C, 1, 2, çarpımın sonucunda da M çarpı N mertebesinden olacak dedik. O zaman C, 1, N.
+
+316
+00:58:38,099 --> 00:58:41,279
+Sonra C, 2, 1.
+
+317
+00:58:43,635 --> 00:58:51,915
+Şurada da C22 var. Sonra C2n. Böyle devam edersek CM1.
+
+318
+00:58:56,755 --> 00:59:03,055
+CMn. Tamam. Mesela şu elemanı nasıl elde edeceğiz? Şuradaki elemanı.
+
+319
+00:59:04,055 --> 00:59:10,815
+Bu A matrisinin birinci satırını alıyoruz arkadaşlar. Tamam mı? Birinci satırını alıyoruz.
+
+320
+00:59:12,724 --> 00:59:17,044
+B matrisinin birinci sutunu ile çarpıyoruz, karşılıklı olarak.
+
+321
+00:59:18,324 --> 00:59:23,504
+Şöyle, bakın C11'i yazıyorum şimdi.
+
+322
+00:59:23,504 --> 00:59:32,504
+A11 çarpı B11.
+
+323
+00:59:36,628 --> 00:59:37,128
+Sonra,
+
+324
+00:59:38,828 --> 00:59:39,468
+artı,
+
+325
+00:59:44,083 --> 01:00:05,503
+A, 1, 2, çarpı, B, 2, 1. Yani A'nın birinci satırındaki elemanlarıyla A'nın, B'nin birinci satırındaki elemanlarını karşılıklı çarpıp topluyorum. Bunların sayıları aynı.
+
+326
+01:00:10,132 --> 01:00:20,852
+Sonra A, bir J, bir R hocam, daha bir J pardon.
+
+327
+01:00:21,892 --> 01:00:33,052
+Yok, bir R de yazabiliriz, bir R yazalım. Bir R, B, B, R1. Tamam mı?
+
+328
+01:00:37,492 --> 01:00:46,372
+C11 olan elemanı elde etmek için bunu yapıyorum. A'nın birinci satırıyla B'nin birinci sütununu çarpıyorum.
+
+329
+01:00:48,692 --> 01:01:02,432
+C11'i elde etmek için yine A'nın birinci satırıyla bu sefer şu B'nin ikinci sütununu karşılıklı çarpıp topluyorum.
+
+330
+01:01:05,907 --> 01:01:14,087
+C, 1-2'yi elde etmek için de yine A, 1-1, B, 1-2.
+
+331
+01:01:18,420 --> 01:01:23,800
+A, 1, 2, B, 2, 2.
+
+332
+01:01:26,100 --> 01:01:31,440
+A, 1, J, B, R, 2.
+
+333
+01:01:33,280 --> 01:01:34,580
+Bunu elde ediyoruz.
+
+334
+01:01:35,640 --> 01:01:45,780
+Bu şekilde A çarpı B'nin birinci sutundaki bu elemanları elde etmek için A'nın birinci satırını alıyorum, B'nin birinci sutununu alıyorum.
+
+335
+01:01:46,483 --> 01:02:04,784
+Sonra, A'nın birinci satırını alıp, B'nin ikinci sütununu. Bu şekilde devam ederek, A'nın birinci satırını, B'nin, B'nin, eninci sütununu alıyorum. O zaman, A çarpı B'nin birinci satırını elde ediyorum.
+
+336
+01:02:06,708 --> 01:02:14,468
+Bu şekilde, sonra geçiyoruz ikinci satırı. İkinci satır elemanlarını elde etmek için, o zaman A'nın ikinci satırıyla çalışacağım.
+
+337
+01:02:15,308 --> 01:02:24,688
+A'nın ikinci satırıyla çalışacağım. Tek tek B'nin birinci, ikinci, üçüncü ve eninci sütununu çarparak yapacağım.
+
+338
+01:02:35,027 --> 01:02:58,687
+Çarpımda C, İ, J'ninci elemanı olsa. Bu C, İ, J'yi elde etmek için, deminki dediklerime benzer olarak, şurası İ, N'ci satır çarpımın, İ, N'ci satırdaki bütün elemanları elde etmek için, A matrisinin İ, N'ci satırıyla çalışmamız lazım.
+
+339
+01:03:01,940 --> 01:03:14,340
+Bu çarpımın i'ninci satırındaki CİJ'yi bulmak için ise, bu sefer A'nın i'ninci satırıyla B'nin j'ninci sütunuyla çalışmam lazım.
+
+340
+01:03:36,467 --> 01:04:01,307
+İ2, B, şurada, 2J, artı, bu şekilde devam edeceğiz. Sonra A, geldik şuraya, İR, ve BRJ.
+
+341
+01:04:06,099 --> 01:04:12,919
+Bu şekilde elde ediyoruz çarpımın elemanlarına.
+
+342
+01:04:14,759 --> 01:04:25,579
+Evet, bakın burada çarpımın elemanları CİC olsun dedik. CİC'ler nasıl elde ediliyormuş? Şu elemanlar A'nın ininci sütun elemanları.
+
+343
+01:04:25,579 --> 01:04:32,159
+A'nın ininci sütun elemanları. Şuradaki elemanlar da B'nin, B'nin,
+
+344
+01:04:33,204 --> 01:04:39,224
+Bunlar A'nın inci satır elemanları, bunlar da B'nin yininci satır elemanları.
+
+345
+01:04:40,004 --> 01:04:52,304
+A'nın inci satır elemanıyla B'nin yininci satır elemanları karşılıklı çarpıp topladığımız zaman A çarpımının A çarpı B'nin inci satır yininci satır elemanını elde ediyoruz.
+
+346
+01:04:53,104 --> 01:04:56,404
+Bunu daha kısa toplam sembolüyle de şöyle ifade edebilirsiniz.
+
+347
+01:04:58,644 --> 01:05:00,384
+Bakın burada bir örneğimiz var.
+
+348
+01:05:03,411 --> 01:05:22,331
+Bir A matrisi var. Bu 3 çarpı 2 mertebesinden bir matris. Yine B matrisi de 2 çarpı 2 mertebesinden bir matris. Birincinin sütun sayısı, ikincinin satı sayısı birbirine eşit. O zaman bu iki matris çarpılabilir.
+
+349
+01:05:23,191 --> 01:05:30,451
+Çarptığımız zaman neticede elde edeceğimiz matris de ne olacak? 3 çarpı 2 mertebesinden olacak.
+
+350
+01:05:33,396 --> 01:05:54,796
+Evet, ne yapacağız dedik? Şunun bakın, birinci satırını alıyorum. Birinci satırını, bu B maddesinin birinci satırıyla, pardon, birinci sütunuyla çarpacağım, karşılıklı toplayacağım. Bakın, iki çarpı, eksi bir, sonra sıfır çarpı sıfır, bunu elde ettim.
+
+351
+01:05:57,876 --> 01:06:19,896
+İkinci sütuna geçtim. 2 çarpı, eksi 2, 0 çarpı, 3. Sonra A maddesinin ikinci satırına geçtik. Eksi 1 çarpı, eksi 1, şu, artı 5 çarpı, 0.
+
+352
+01:06:25,588 --> 01:06:52,428
+5 çarpı 3. Sonra üçüncü satıra geçtik. 4 çarpı eksi 1. Şu üçüncü satırla B'nin birinci sütunu karşılıklı çarpıp toluyorum. 4 çarpı eksi 1 artı 3 çarpı 0. Sonra üçüncü satırla B'nin ikinci sütununu karşılıklı çarpıp topluyorum. Bunu düzenlersen bu matrisi 3 çarpı 2 mertebesinden matrisi elde edebiliriz.
+
+353
+01:06:53,715 --> 01:06:54,935
+Çarpım bu şekilde.
+
+354
+01:06:58,612 --> 01:07:22,531
+Şimdi bu çarpımı da kullanarak hem toplama sistemleri hem bir matrisle bir skaleri çarpma işlemi bir de iki matrisin çarpılabilmesini söyledik. Bunların üçünü kullanarak elde ettiğimiz özellikler var. Şimdi buna bakacağız. Bunun için bir A matrisi alıyorum. M çarpı N mertebesinden bir A matris.
+
+355
+01:07:23,672 --> 01:07:25,031
+Hocam bir şey sorabilir miyim?
+
+356
+01:07:25,031 --> 01:07:25,751
+Buyur.
+
+357
+01:07:26,079 --> 01:07:30,699
+Mola yapacak mıyız hocam? Ufak bir beş dakika bir mola mı versek?
+
+358
+01:07:32,819 --> 01:07:33,380
+Vermeyeceğiz.
+
+359
+01:07:34,000 --> 01:07:34,859
+Tamamdır hocam.
+
+360
+01:07:35,319 --> 01:07:40,119
+Dersin başında söyledim ya, bir beş on dakika daha yapıp bugün bırakabiliriz.
+
+361
+01:07:41,859 --> 01:07:43,259
+Hatta bu...
+
+362
+01:07:43,259 --> 01:07:46,719
+Tamamdır hocam. Ufak bir dikkatim dağılmıştı da ondan sormuştum.
+
+363
+01:07:50,099 --> 01:07:53,320
+Şöyle bir beş dakika daha yapalım, bırakacağız. Tamam mı?
+
+364
+01:07:56,440 --> 01:08:09,099
+Evet. Bu teoremimizde A matrisin M çarpı N mertebesinden matris, B ile C ikisi aynı mertebeden, N çarpı R mertebesinden iki matris.
+
+365
+01:08:10,099 --> 01:08:10,700
+Tamam mı?
+
+366
+01:08:11,347 --> 01:08:37,768
+D'de R çarpı T mertebesinden bir matris. Bakın burada A ile B çarpılabilir nitelikte, A ile C çarpılabilir nitelikte, değil mi? B ile C toplanabilir aynı mertebeli olduğu için. Sonra R çarpı T olduğu için B ile D çarpılabilir, C ile D çarpılabilir özellikle. Ona dikkat ediyorsunuz herhalde. Bir de lambda skaleri aldık.
+
+367
+01:08:38,452 --> 01:09:01,692
+Şunları söyleyebiliriz, bakın, bu çarpılabilir matrisler arasında çarpmanın birleşme özelliği var. Yani B çarpı D yaptıktan sonra A çarpı B çarpı D yazabiliriz. Ya da A ile B'yi çarpıp sonra D ile çarpabiliriz. Bu birleşme özelliği, çarpmanın birleşme özelliği.
+
+368
+01:09:03,539 --> 01:09:23,479
+Çarpmanın toplama işlemi üzerine dağılma özelliği var. Soldan. B ile C'yi toplama var burada. A'yı çarpma olarak bunun üzerine dağıtıyoruz. Bakın A çarpı B, A çarpı C. Sayılarda olduğu gibi bir özellik bu.
+
+369
+01:09:29,076 --> 01:09:40,735
+Sağdan dağılma özelliği, B artı C çarpı D, B çarpı D artı C çarpı D olur.
+
+370
+01:09:41,496 --> 01:09:49,175
+Lambda ile A çarpı B'yi çarpmak demek, lambda ile A'yı çarpıp bir matris elde edersiniz, sonra B'yi çarpabilirsiniz.
+
+371
+01:09:49,175 --> 01:09:55,956
+Veya lambda ile B'yi çarparsınız, bir matris elde edersiniz, A ile bu matrisi çarpabilirsiniz.
+
+372
+01:09:56,564 --> 01:10:22,424
+A ile sıfır matrisinin çarpımı. Burada bu sıfır matrisi, şu birinci yazdığımız sıfır matrisi, A ile çarpılabilir mertebeden olacak. O da nedir? N çarpı x mertebesinden diyelim. Şu sıfır matrisi, N çarpı x mertebesinden. Peki şu hangi mertebeden olur? Birisi söylesin bakalım.
+
+373
+01:10:23,699 --> 01:10:33,459
+Birinci, A ile çarptığımız sıfır matrisi N çarpı X olur o da. Doğru.
+
+374
+01:10:33,920 --> 01:10:37,139
+M çarpı X oluyor hocam.
+
+375
+01:10:37,879 --> 01:10:50,539
+Evet, M çarpı X olur. A'nın satır sayısı sıfırın, sütun sayısı M çarpı X oldu. X de güzel bir şey değilmiş ama çarpılar birbirine benzeli.
+
+376
+01:10:52,500 --> 01:10:56,119
+Şöyle Y yapsak bunu. Şöyle Y olsun bu.
+
+377
+01:10:58,760 --> 01:11:08,399
+Birim matris de A matrisin çarpı mı? Eğer A matrisin M çarpı N mertebesindense buradaki I birim matrisi de N çarpı N mertebesinden olmalı.
+
+378
+01:11:09,539 --> 01:11:17,000
+Çarpılabilmesi için I birim matrisin N çarpı N mertebesinden olmalı. Tamam mı?
+
+379
+01:11:17,908 --> 01:11:41,368
+Ama burada şöyle yer değişiyor ama burada güzel bir durum yok. Eğer biz I'yı N çarpı N mertebesinden alırsak o zaman şu şarfımdan bahsedemeyiz. O zaman şöyle yapalım biz bunu. Bu özellikle A kare matris olsun.
+
+380
+01:11:49,203 --> 01:11:57,884
+Bu altıncı özellikteki A matrisini kare matris alıyorum. O zaman bu eşitlikten bahsedebiliriz.
+
+381
+01:11:59,503 --> 01:12:04,463
+Biliyorsunuz toplama işleminde iki matrisin toplamının değişme özelliği var idi.
+
+382
+01:12:05,904 --> 01:12:13,283
+Burada iki matrisin çarpma işleminin değişme özelliği her zaman sağlanmaz, sağlanmayabilir.
+
+383
+01:12:14,228 --> 01:12:29,228
+Tabii iki matrisi A çarpı B'den ve B çarpı A'dan bahsedebilmek için ikisi de kare olması lazım. İkisi aynı mertebeden kare matrisler ise hem A çarpı hem B matrisinden bahsedebiliriz.
+
+384
+01:12:30,247 --> 01:12:38,728
+Dolayısıyla bu özellikle de, bu yedinci özellikle de A ve B kare matris olsunlar.
+
+385
+01:12:39,123 --> 01:12:54,123
+Aynı mertebeli kare matris. O zaman her zaman değişme özelliği sağlanmaz. Yani genellikle A çarpı B eşit değil, B çarpı A'dır ama...
+
+386
+01:12:55,028 --> 01:13:07,568
+sağlandığı zaman da olabilir. A çarpı B, eşit B çarpı A sağlanabilir. O zaman da A ve B'ye değişmelidir diyoruz. Birleşme özelliği sağlanıyorsa.
+
+387
+01:13:09,948 --> 01:13:20,747
+Tabii şuradan, şu altıncı özellikten, bir matrisle bir matrisin çarpımı her zaman değişmelidir. Değil mi? Onu hemen söyleyebiliriz.
+
+388
+01:13:22,963 --> 01:13:41,423
+Burada A ve B matrisleri alıyoruz. Bu iki matrisi çarptığımız zaman, bakın hemen çarpalım. A çarpı B'yi çarparsak, şunun birinci satınıyla birinci sütunun çarpı toplayacağım.
+
+389
+01:13:49,876 --> 01:14:15,736
+Birinci satırla şu sütunu çarparım. İkisi de sıfır olduğundan sıfırdır. Sonra ikinci satırla birinci sütunu çarparsam iki olur burası. Değil mi? Bununla buraya çarparsam sıfır olur. Yer değiştirerek çarparsak, B çarpı A'ya bakacak olursak, o zaman bunun birinci a'yı isterseniz bir de şuraya yazalım. Daha rahat çalışmak açısından.
+
+390
+01:14:19,764 --> 01:14:25,184
+Bunun birinci satını da bunun birinci sütununu çarpacağım. Ne olur burası? Bir olur.
+
+391
+01:14:26,384 --> 01:14:33,463
+Hocam bir yanlışlık yapmadık mı burada? Kusura atmayın biliyorum ama. İki yazdığımız yer sıfır olmayacak mı?
+
+392
+01:14:35,404 --> 01:14:42,644
+Şöyle bak, o ikiyi şurayla bunun birinci sütununu karşılıklı çarpıp topladık. Sonra bu ikiyi elde ettik.
+
+393
+01:14:43,064 --> 01:14:44,304
+Anladım tamamdır hocam.
+
+394
+01:14:44,916 --> 01:15:11,916
+Ne?
+
+395
+01:15:10,800 --> 01:15:12,860
+O zaman sizin suçturma şeyiniz vardı.
+
+396
+01:15:15,440 --> 01:15:17,899
+Ben kim, bunu nereden bileyim şimdi?
+
+397
+01:15:18,979 --> 01:15:25,059
+[öğrenci] diyeyim, tane kişinin hocam, şey açık, mikrofon açık, [öğrenci], [öğrenci], [öğrenci], [öğrenci] yazıyor.
+
+398
+01:15:33,340 --> 01:15:35,380
+Onu siz kapatabiliyordunuz herhalde.
+
+399
+01:15:36,860 --> 01:15:37,920
+Kapattım galiba.
+
+400
+01:15:39,060 --> 01:15:39,940
+Kim demiştin?
+
+401
+01:15:40,800 --> 01:15:43,300
+Oldu hocam şimdi gitti.
+
+402
+01:15:47,155 --> 01:15:57,876
+Peki, şimdi B çarpı A'da da B'nin birinci satırını alıp A'nın birinci sütunuyla karşılıklı çarpıp toplarsak 1 olur.
+
+403
+01:15:58,415 --> 01:16:04,015
+B'nin birinci satırı A'nın ikinci sütunuyla karşılıklı çarpıp toplarsak burası eksi 1 olur.
+
+404
+01:16:04,895 --> 01:16:11,716
+Yine bunun birinci satırıyla birinci sütunu 1 olacak, eksi 1 olacak.
+
+405
+01:16:14,047 --> 01:16:33,627
+A çarpı B farklı B çarpı A'dır. Bazen eşit olabilir ama genellikle eşit değildir. Dolayısıyla çarpma değişmeni değildir. Eşitlik varsa o matrisler için, o matrisler için A ve B çarpımı değişmelidir deriz arkadaşlar.
+
+406
+01:16:37,971 --> 01:16:58,611
+Evet, şu tanımı da verip, bugün bitirelim. Bir matrisin kuvveti ne demek? Bir A matrisi, kare matrisi için, A'nın eninci kuvveti şu demek, A matrisini kendisiyle en defa çarparak elde ettiğimiz matrise, A matrisinin eninci kuvveti demek.
+
+407
+01:17:02,996 --> 01:17:28,456
+A çarpı, A çarpı, nokta, nokta, A. Bunu nasıl elde edeceğiz? Bunu şu A ile A'yı çarparız önce. Burada birleşme özelliği kullanıyoruz. Sonra burada A var. Sonra diğerleri var. Bu şekilde birleşme özelliği. Buradan bir matris elde edeceksin. Sonra bu matrisle bu X'e veya bu A kare olacak değil mi çarptığımız zaman. Sonra bu A'yı.
+
+408
+01:17:29,076 --> 01:17:43,275
+çarpacaksın. Bu şekilde elde ederiz. Buna biz A matrisinin n. kuvveti diyoruz. Ve kuvvetlerle ilgili şu bilgimiz var. A'nın K'nın kuvvetiyle A'nın L'nin kuvveti.
+
+409
+01:17:43,636 --> 01:17:57,636
+A'nın K artı L'ninci kuvveti, aynı sayılarda olduğu gibi. Yine A'nın K'nıncı kuvvetinin tekrar L'ninci kuvvetini almak demek, A'nın K çarpı L'ninci kuvvetini almak aynı şeydir deriz.
+
+410
+01:17:58,996 --> 01:18:08,056
+Peki, bugün dersi burada bitiriyorum ben. Soru sormak istiyorsanız ya da söylemek istediğiniz bir husus var mıdır?
+
+411
+01:18:11,220 --> 01:18:19,079
+Teşekkürler hocam. Yok hocam, çok teşekkür ederiz. Peki, o zaman görüşürüz arkadaşlar. Hepinize iyi günler. İyi günler hocam.
+
+412
+01:18:19,100 --> 01:18:24,840
+Görüşürüz hocam. İyi günler hocam. İyi günler hocam. Siz de güle güle.

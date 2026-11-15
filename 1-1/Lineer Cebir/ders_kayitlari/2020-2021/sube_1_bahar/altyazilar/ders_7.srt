@@ -1,0 +1,1235 @@
+1
+00:00:54,676 --> 00:01:02,876
+İyi günler arkadaşlar. Bugün dersimize başlamadan evvel sormak istediğiniz bir husus var mıdır?
+
+2
+00:01:09,876 --> 00:01:11,816
+Sınav tarihi nasıl biliyorsunuz değil mi?
+
+3
+00:01:25,364 --> 00:01:41,064
+Haftaya, cuma günü, önümüzdeki hafta ders yapmayacağız, sınav var. Bu sınavdan önceki son dersimiz. Bugün en son konumuz olan lineer denklem sistemleriyle ilgili örnekler yapacağız.
+
+4
+00:01:43,644 --> 00:01:48,304
+Peki, konuşmak isteyen yoksa dersimize başlayalım.
+
+5
+00:01:48,884 --> 00:01:55,723
+Geçen dersimizde lineer denklem sistemlerini ve çözüm yollarını söylemiştik.
+
+6
+00:01:57,043 --> 00:02:12,403
+Genel olarak artırılmış kas sayılar matrisi yöntemiyle, denk matris yöntemiyle, bir başka adıyla, Gauss yordan indirgeme yöntemiyle, lineer denklem sistemlerini genel haliyle vermiştik.
+
+7
+00:02:13,812 --> 00:02:26,052
+en tane denklem ve en bilinmeyenden oluşan lineer denklem sistemlerinde, kas sayılar matrisinin determinantının sıfırdan farklı olması durumunda,
+
+8
+00:02:28,152 --> 00:02:35,752
+kremer yöntemi ve kas sayılar matrisinin üniversite yardımıyla çözüm yollarını söylemiştik.
+
+9
+00:02:39,412 --> 00:02:47,592
+Sağ taraf, yani denklemin ikinci yanına sıfır olması durumunda, lineer homojen denklem sistemlerinin çözümlerini açıklamıştık.
+
+10
+00:02:49,412 --> 00:02:53,072
+Şimdi onlarla ilgili örneklere devam edelim.
+
+11
+00:02:54,112 --> 00:03:03,831
+Bugünkü dersimizde ilk örneğimiz şu, A maddesi var, ABC'de ve X, sutun maddesi X'ye, olmak üzere AX eşit sıfır.
+
+12
+00:03:04,915 --> 00:03:17,915
+Bu bir homojen denklem sistemi verir. A ile x'i çarparak sıfıra eşitleyerek iki bilinmeyenli iki tane denklemden oluşan bir homojen lineer denklem sistemi verilir.
+
+13
+00:03:18,835 --> 00:03:24,375
+Bu homojen lineer denklem sisteminin zaten her zaman çözümü vardı, hatırlayacağınız gibi.
+
+14
+00:03:24,375 --> 00:03:32,055
+Ya tek çözüm sıfır çözümüydü ya da sonsuz çözümü vardı homojen lineer denklem sisteminin.
+
+15
+00:03:32,436 --> 00:03:50,316
+Burada, bu sorumuzda elde ettiğimiz homojen, lineer denklem sisteminin sadece sıfır, buna aşikar çözüm de diyoruz, olması için A, B, C, D arasındaki bağıntı ne olmalıdır diye soruyoruz.
+
+16
+00:03:51,075 --> 00:03:55,135
+Sorularımızı sorduktan sonra size bir iki dakika süre tanıyoruz.
+
+17
+00:03:56,192 --> 00:04:01,051
+Düşünmeniz, uğraşmanız için sonra yapacağız. Evet, biraz düşünün bakalım.
+
+18
+00:05:17,363 --> 00:05:28,703
+Tabii size düşünün dediğimiz zaman kalem, kağıtla yapmaya çalışmanızda büyük yarar var. Neticede haftaya sınavda kağıdı, kalemi alıp yazacaksınız, yapmaya çalışacaksınız.
+
+19
+00:05:29,703 --> 00:05:43,764
+Şimdi bu denklemi de yazacak olursak, aslında denklemi yazmadan da direkt çözülebilir. Mesela test türü sınavlarda denklemle falan uğraşmamak lazım ama burada açıklama açısından
+
+20
+00:05:44,276 --> 00:05:49,276
+Denklemi yazarsak, şu ax eşit...
+
+21
+00:06:02,899 --> 00:06:19,659
+AX eşit sıfırdan nasıl bir denkleme elde ederiz? Aslında şöyle bir denkleme elde ederiz. AX artı BY eşit sıfır, CX artı DY eşit sıfır.
+
+22
+00:06:20,939 --> 00:06:29,459
+Şimdi bunun sadece sıfır çözümünün olması için. Burada A matrisi var.
+
+23
+00:06:30,355 --> 00:06:35,276
+A matrisi, ya da A'nın determinantı diyelim.
+
+24
+00:06:41,363 --> 00:06:48,603
+Veya şuradan, A, B, 0, C, D, 0.
+
+25
+00:06:57,492 --> 00:07:16,152
+Şunları söyleyebiliriz. Sadece sıfır çözüm olması için, yani tek çözüm durumu değil mi bu? Tek çözüm. Tek çözüm durumunda şurada baktığımız zaman ne olmalı? Rank A eşit, rank AB o da eşit ne olmalı? Bilinmeyen sayısı. Kaç tane bilinmeyen var? İki.
+
+26
+00:07:22,291 --> 00:07:49,451
+Burada zaten homojen lineer denklem sistemlerinde rank A ile rank AB her zaman birbirine eşitli değil mi? Her zaman şu eşitlik vardır homojen lineer denklem sisteminde. Rank A neyse rank AB de odur. O zaman rank A ne olmalı? 2 olmalı. Ya da bunu şu katsayılar matrisinin determinantında da söyleyebiliriz.
+
+27
+00:07:50,196 --> 00:08:11,696
+Bu matrisin, A matrisinin rangı 2 olmalı. Bu şu demek, bu A'nın determinantının, determinantının, bu sıfırdan farklı olması demek değil mi? Sıfırdan farklıysa, mertebe 2 olduğu için, rank 2 olur. Bu sıfırdan farklı olmalı.
+
+28
+00:08:13,300 --> 00:08:21,759
+Demek ki tek çözüm sıfır çözümün olması için hızlıca cevap vermek istersek, A'nın determinantı sıfırdan farklı olmalıdır diyeceğiz.
+
+29
+00:08:21,759 --> 00:08:29,759
+Bu determinantı da açarsak, AD-BC farklı sıfır olmalıdır.
+
+30
+00:08:30,939 --> 00:08:35,680
+Ya da şöyle de yazabilirsiniz, farklı BC olmalıdır.
+
+31
+00:08:37,043 --> 00:08:39,344
+Değil mi? Bunu söyleyebilirsiniz.
+
+32
+00:08:39,963 --> 00:08:41,043
+Bunu söyleyebilirsiniz.
+
+33
+00:08:46,355 --> 00:08:49,796
+Bu sorunun cevabı bu şekilde verilir.
+
+34
+00:08:53,676 --> 00:09:07,615
+Sıfırın dışında çözümü olması için ne olmalıdır derse, sıfırın dışındakini sorduysa o zaman da determinant A eşit sıfır olmalıdır diyeceğiz.
+
+35
+00:09:07,716 --> 00:09:13,236
+Buradan da A'de eşit B, C elde edilir.
+
+36
+00:09:14,803 --> 00:09:22,584
+Ama bizim sorumuz sadece sıfır çözümün olması için dediği için şunu seçiyoruz.
+
+37
+00:09:27,347 --> 00:09:29,987
+Evet, bir başka sorumuz şöyle bir soru.
+
+38
+00:09:31,827 --> 00:09:34,807
+Üç bilinmeyenli üç tane denklem var arkadaşlar.
+
+39
+00:09:35,307 --> 00:09:39,567
+Bu lineer denklem sistemini kremel yöntemiyle çözünüz.
+
+40
+00:09:41,447 --> 00:09:41,767
+Evet.
+
+41
+00:09:43,767 --> 00:09:44,927
+Bunu düşünelim.
+
+42
+00:12:06,964 --> 00:12:24,324
+Evet, bu denklem sistemine dönüştürecek olursak ne olacak? Eksi bir diğer tarafa gidecek. Hani alışık olduğumuz, denklemin ikinci yanıyla birlikte vereceğimiz sisteme dönüştürmek istersek, buraya mesela eşit.
+
+43
+00:13:12,307 --> 00:13:33,847
+Bu eşit bir. Burada ikinci denklemde sabit terim yok. Üçüncü denklemde şöyle yazabiliriz. Bu lineer denklem sistemini kremer sistemine göre çözün diyoruz. O zaman A'nın determinantı, biz bunu delta ile gösteriyorduk. Delta neye eşit olacak? Şu determinanta.
+
+44
+00:13:39,892 --> 00:14:01,572
+2, 1, eksi 1. Sonra 3, 0, 2 değil mi? Bunu hesaplayacağız. Tabi bu soruda Kremer sistemine göre çözülebiliyor demektir. Ve bu sıfırdan farklı bir sayı çıkacak.
+
+45
+00:14:07,508 --> 00:14:17,208
+Bunu hesapladığınız zaman, evet, bu bir çıkıyormuş, bu bir, bir.
+
+46
+00:14:20,008 --> 00:14:26,648
+Sonra bilinmeyenleri bulmak için delta biri bulmamız lazım.
+
+47
+00:14:33,652 --> 00:14:59,432
+0, 1 yazıyoruz. Sonra determinant kalıyor. Geri kalanlarını yazıyoruz. Sonra delta 2'de, delta 2'de, bu sefer delta'da şu ikinci sütunun yerine, 1, 0, 1 yazıyoruz. Diğer yerler duruyor.
+
+48
+00:15:05,043 --> 00:15:13,584
+Delta 3'te de benzer şekilde 3. sütun yerine 2. sütun duracak.
+
+49
+00:15:16,264 --> 00:15:21,604
+3. sütun yerine 1, 0, 1 yazacağız. Bunları hesaplayacağız.
+
+50
+00:15:22,484 --> 00:15:24,704
+X1'i bulmak için neye bakacağız arkadaşlar?
+
+51
+00:15:32,788 --> 00:15:40,008
+Delta ve x3'ü bulmak için de delta 3 bölü delta'ya bakmamız lazım.
+
+52
+00:15:41,168 --> 00:15:46,247
+Bu delta 1, delta 2, delta 3 determinantları da kolaylıkla hesaplayabilirsiniz.
+
+53
+00:15:47,847 --> 00:15:53,627
+Delta 1, eksi 1, delta 2, eksi 4, delta 3 de.
+
+54
+00:15:54,163 --> 00:16:21,244
+2 çıkacak. Buna göre x1, demin de dediğimiz gibi delta 1 bölü delta, yani 1 bölü eksi 1, o da eksi 1'e eşit. x2 delta 2 bölü delta, o da 4 bölü 1, 4'e eşit. x3 delta 3 bölü delta, delta 3 2'ydi, 2 bölü 1, 2'ye eşit.
+
+55
+00:16:21,908 --> 00:16:35,768
+Tabii sağlaması da yapılabilir. Yerine yazarak bu x1, x2, x3 denklemleri sağlamıyor mu bakabiliriz. Eğer sağlamıyorsa bir hata yapıyoruz demektir. Tekrar çözüme dönmemiz lazım.
+
+56
+00:16:36,987 --> 00:16:45,807
+Şimdi bir başka sorumuz var burada. Yine üç bilinmeyen üç tane denklemden oluşan bir lineer denklem sistemi var.
+
+57
+00:16:46,388 --> 00:16:53,587
+Şimdi de bu lineer denklem sistemini kas sayılar matrisinin inversi yardımıyla çözüm diyoruz.
+
+58
+00:16:55,548 --> 00:17:07,268
+Kas sayılar matrisinin inversi yardımıyla çözümde de yine A'nın tersinin olabilmesi için A'nın determinantı ne olmalı? Sıfırdan farklı olmalı.
+
+59
+00:17:09,556 --> 00:17:17,235
+Sonra sıfırdan farklı olduktan sonra, onu biliyoruz zaten, bu şekilde çözün dediğine göre çözülebiliyor demektir.
+
+60
+00:17:18,215 --> 00:17:23,375
+Ne yapmak lazım? A'nın inversini bulmak lazım. Evet, bulmaya çalışın hızlıca.
+
+61
+00:19:04,211 --> 00:19:16,172
+Burada lineer denklemimiz şu şekilde arkadaşlar. A x eşit b şeklinde. A üzeri eksi biri bulunca ne yapıyorduk? A üzeri eksi bir ile iki tarafı çarparak.
+
+62
+00:19:19,827 --> 00:19:31,468
+Buradan x kalıyordu, x dediğimiz bilinmeyenler, yani şu, x, y, z, a üzeri, eksi bir çarpı b.
+
+63
+00:19:32,108 --> 00:19:33,587
+b dediğimiz neydi arkadaşlar?
+
+64
+00:19:34,587 --> 00:19:37,268
+eksi dokuz, beş, dört.
+
+65
+00:19:39,048 --> 00:19:45,628
+Burada yine bir sütun matrisi bulacağız, sütun matrisi karşılıklı eşitleyeceğiz.
+
+66
+00:19:46,675 --> 00:19:53,955
+Şimdi bu matrisin inversini şu şekilde bulduğunuzu farz edelim.
+
+67
+00:19:55,536 --> 00:20:02,056
+Sonra demin dediğimiz gibi x a üzeri eksi bir b'ye eşit, işte a üzeri eksi bir burada, b burada.
+
+68
+00:20:03,015 --> 00:20:06,015
+Bu çarpımı yaparsak da bunu elde ederiz.
+
+69
+00:20:07,056 --> 00:20:13,915
+Dolayısıyla x eşit bir, değil mi? x eşit bir, y eşit üç.
+
+70
+00:20:14,483 --> 00:20:17,784
+z eşit, eksi beş olarak buluruz.
+
+71
+00:20:19,683 --> 00:20:22,223
+Şimdi diğer bir soruya geçiyoruz arkadaşlar.
+
+72
+00:20:23,583 --> 00:20:25,183
+Bir lineer denklem sistemi var.
+
+73
+00:20:25,543 --> 00:20:34,023
+Bu lineer denklem sisteminin çözümünün olabilmesi için A hangi değeri almalıdır diye soruyoruz.
+
+74
+00:20:34,804 --> 00:20:36,923
+Burada üç bilinmeyen, üç tane denklem var.
+
+75
+00:20:37,043 --> 00:20:41,703
+Bir de bir A gibi bir bilinmeyen bir değer var.
+
+76
+00:20:42,064 --> 00:20:49,024
+Bu lineer denklem sisteminin çözümünün olması için. Bakın tek çözüm, sonsuz çözüm demiyoruz.
+
+77
+00:20:50,564 --> 00:20:57,044
+Sadece çözümün olabilmesi için A değeri ne olmalıdır? Evet, biraz düşünün bakalım.
+
+78
+00:22:50,932 --> 00:23:07,372
+Evet, bu soruda da, bakın burada, közümün olabilmesi için dendiğine göre, artırılmış kas sayılar maddesinde, yani rank, artırılmış kas sayılar maddesi bu, AB. Bu da nedir?
+
+79
+00:23:18,003 --> 00:23:24,223
+0, 3, 2, 6, eksi 2.
+
+80
+00:23:26,644 --> 00:23:28,384
+Şuraya da nokta yapalım.
+
+81
+00:23:30,203 --> 00:23:34,683
+Bu artılmış kas sayılar maddesinde çözüm olabilmesi için ne olmalıdır arkadaşlar?
+
+82
+00:23:36,203 --> 00:23:42,163
+Rank A eşit rank AB olmalıdır.
+
+83
+00:23:42,163 --> 00:23:43,003
+Değil mi?
+
+84
+00:23:43,604 --> 00:24:02,244
+Böyle durumda çözüm oluyordu. Ya tek çözüm durumu vardı, ya sonsuz. Ama biz burada sadece çözüm olabilmesi için dediğimize göre rank A eşit rank AB olacak şekilde A değeri ne olmalıdır diyeceğiz.
+
+85
+00:24:02,244 --> 00:24:09,423
+Tabi bu artırılmış kaslayılar maddesini ne yapacağız? Satırca eşelon forma getireceğiz.
+
+86
+00:24:09,855 --> 00:24:22,175
+Rangını söyleyebileceğimiz hale geldikten sonra, rangı işte böyle eşit olacak şekilde, A'yı belirleyeceğiz. Tamam mı?
+
+87
+00:24:24,076 --> 00:24:30,436
+Şimdi bu dediklerimizi yapalım. Artınmış kas sayılar maddesini yazdık bakın.
+
+88
+00:24:36,627 --> 00:24:52,647
+Ve elemanter satır işlemleri uyguladık. Sonuçta şunu elde ettik. Bakın bu elde ettiğimiz denk matris, AB'ye denk olan matris artık satırca eşelon formdadır.
+
+89
+00:24:52,647 --> 00:25:03,248
+Satırca eşelon formdadır. Aslında bu satırca indir gelmiş eşelon formda da, şu da, şurası da.
+
+90
+00:25:03,796 --> 00:25:04,896
+Değil mi? Şurası da.
+
+91
+00:25:12,051 --> 00:25:18,672
+A kısmı satırcı eşelon formudur. Yani buradan da devam edebiliriz.
+
+92
+00:25:19,672 --> 00:25:35,291
+Bu fazladan bir işlem. İkinci yaptığımız fazladan işlem. Bu ikinci yaptığımız işlem, yani satırcı indirgenmiş eşelon forma sokma, eğer sorunun devamında çözümü bulabileceksek gerekliydi.
+
+93
+00:25:35,859 --> 00:25:58,739
+Şimdi buradan devam edersek, gördüğünüz gibi, şurası A, değil mi? Şurası A. Hepsi AB. Rank A, rank A eşit, rank AB olmalı. Rank A zaten 2, değil mi? Bu 2.
+
+94
+00:26:01,683 --> 00:26:15,963
+O zaman rank AB'nin de 2 olması lazım. Rank AB'nin 2 olabilmesi için şuradaki ifade, bu ifade ne olmalı arkadaşlar? 0 olmalı.
+
+95
+00:26:16,963 --> 00:26:28,264
+Eksi 2, eksi 2A ne olmalı? 0 olmalı. Yani A eşit ne olmalı arkadaşlar? Eksi 1 olmalı.
+
+96
+00:26:28,655 --> 00:26:40,455
+Değil mi? Eksi bir olmadan. O zaman bu sistemin çözümü vardır. Bu lineer denklem sisteminin çözümü vardır diyoruz.
+
+97
+00:26:54,003 --> 00:27:17,583
+Peki. Şimdi bir başka sorumuz var arkadaşlar. Burada i ve iki tane soru var. Sorunun ifadesi x, y, z bilinmeyenleri, bilinmeyenlerini aşağıdaki lineer denklem sistemde, x, y, z bilinmeyenini, bu iki tane lineer denklem sistemi var.
+
+98
+00:27:22,228 --> 00:27:32,208
+Bu sistem çözümsüz B, tek çözümlü C, sonsuz çözümlü olsun diye bir sorumuz var.
+
+99
+00:27:33,008 --> 00:27:36,928
+Bu i ve 2'yi den birisini yapabiliriz sınıfta, diğeri size alıştırma olacak.
+
+100
+00:27:38,528 --> 00:27:44,148
+Kim ilk söylerse ya da yazarsa bize onu seçileceğiz sınıfta yapmak için.
+
+101
+00:27:45,688 --> 00:27:48,648
+Evet, birisi sessin. Hangisini yapalım?
+
+102
+00:27:52,915 --> 00:28:16,175
+Tek iyi yapalım istersen. Hangisini? Tek iyi. Tek iyi. Peki şunu herhalde seçtin. Öyle mi? Bunu burada düşünelim. Sonra siz ikiyi yaparsınız. Burada bakın T'ye bağlı bir diner denklem sistemi var.
+
+103
+00:28:17,044 --> 00:28:33,344
+Biz bu sistemin çözümsüz olması için T ne olmalıdır? Tek çözümlü olması için T ne olmalıdır? Bir de sonsuz çözümlü olması için T ne olmalıdır? diye tek tek A, B, C'ye cevap bulacağız.
+
+104
+00:28:34,384 --> 00:28:40,304
+Tabii burada bu lineer denklem sistemini, artırılmış kas sayılarının maddesini de yazarak ne yapacağız?
+
+105
+00:28:40,756 --> 00:29:04,696
+Rankları, rank A ile rank AB'yi konuşabileceğimiz duruma, satırca eşelon forma getireceğiz. Rank A ve rank AB'yi konuşacak duruma. Eğer bu ranklar birbirinden farklıysa çözümsüz diyeceğiz, değil mi? Ranklar birbirine eşit ve 3 ise tek çözümlü diyeceğiz.
+
+106
+00:29:05,395 --> 00:29:11,815
+Ranklar birbirine eşit ve üçten küçük bir sayı ise sonsuz çözümünü diyeceğiz. Buna göre t'yi belirleyeceğiz.
+
+107
+00:29:15,443 --> 00:29:32,364
+Evet, ikiyi de, ikiyle ilgili şöyle bir şey yapalım, ikiyi de bir kere tek çözümlü hali yoktur değil mi? İkiyi de tek çözüm hali yoktur. Çünkü iki tane denklem var, üç bilinmeyen var, rank hiçbir zaman üç olmaz. Onun için...
+
+108
+00:29:32,403 --> 00:29:45,324
+A ve C şıkları önemli ikiden. Biz 3'yi seçtik. Burada hem A, hem B, hem C'ye cevap vereceğiz. O zaman siz bu lineer denklem sistemini satırca eşelon forma getirin.
+
+109
+00:29:45,844 --> 00:29:53,923
+Rank A ve rank AB'yi görelim önce. Ona göre onlara bakarak T değerlerini belirleyeceğiz.
+
+110
+00:33:43,347 --> 00:33:54,108
+Peki. Şimdi birisi buraya bir çizgi çizmiş. Kaldırsın bakalım çizgiyi. Kim yaptıysa. Sizin ekranı benden izinsiz kullanma hakkınız yok.
+
+111
+00:34:28,532 --> 00:34:31,412
+Evet, bekliyorum. Bunu ben silemiyorum. Siz silmeniz lazım.
+
+112
+00:34:35,027 --> 00:34:36,527
+Ekranda hep kalacak bu.
+
+113
+00:35:01,492 --> 00:35:11,092
+Peki, şimdi çözüme geçelim. Artırılmış kas sayılar matrisini yazalım arkadaşlar.
+
+114
+00:35:16,916 --> 00:35:23,235
+AB'yi yazıyoruz.
+
+115
+00:35:24,536 --> 00:35:25,096
+Yazdık.
+
+116
+00:35:25,936 --> 00:35:31,996
+Daha sonra, daha sonra, şu elde ettiğimiz denk maddese bakalım.
+
+117
+00:35:32,316 --> 00:35:39,556
+Şu anda, şu anda, sıfırdan farklı ilk eleman, şunu da bir yapmaya çalışacağız.
+
+118
+00:35:40,796 --> 00:35:42,936
+Bunu bir nasıl yaparız?
+
+119
+00:35:43,731 --> 00:35:45,731
+Una...
+
+120
+00:35:50,675 --> 00:35:55,876
+Birinci satırı, üçüncü satıra eklerseniz,
+
+121
+00:35:59,668 --> 00:36:20,068
+Birinci satırı, üçüncü satırı eklersek burası ne olur? Eksi bir, sonra ekledik, birinci satırı, üçüncü satırı eklediğim zaman burası t olur, burası da eksi iki olur. Değil mi?
+
+122
+00:36:28,436 --> 00:36:34,576
+Sonra da, ne yapalım? İkinci satırı, birinci satıra ekleyelim.
+
+123
+00:36:39,827 --> 00:36:40,387
+Evet.
+
+124
+00:36:43,387 --> 00:36:47,627
+Şunun yerine, şunun yerine, şöyle yapıyorum.
+
+125
+00:37:15,219 --> 00:37:21,219
+Bu işlemi, birinci satırı, birinci satırı...
+
+126
+00:37:27,059 --> 00:37:44,359
+Birinci satırı, üçüncü satıra eklemek güzel olmayacak arkadaşlar. Çünkü şu baştaki de, baştaki, şurası da bir olma durumu söz konusu. Onu öyle yapmayalım.
+
+127
+00:37:54,387 --> 00:37:54,887
+Değil mi?
+
+128
+00:37:56,247 --> 00:37:56,567
+H
+
+129
+00:37:56,567 --> 00:37:59,747
+3, 2
+
+130
+00:37:59,747 --> 00:38:03,027
+T artı 1 diyelim.
+
+131
+00:38:03,847 --> 00:38:05,207
+Eklersek burası 0 olur.
+
+132
+00:38:06,527 --> 00:38:07,807
+Değil mi? İkinci satırın
+
+133
+00:38:07,807 --> 00:38:11,527
+T artı 1 katını alıp
+
+134
+00:38:11,527 --> 00:38:12,967
+3'ün satıra ekliyorum.
+
+135
+00:38:14,247 --> 00:38:16,148
+İşlemi de bu şekilde yazarız.
+
+136
+00:38:16,587 --> 00:38:17,307
+Burası 0 olur.
+
+137
+00:38:18,612 --> 00:38:27,572
+Şimdi bunun t artı bir katını alırsak ne olur? t kare artı t olur. Bunu buna ekleyeceğiz.
+
+138
+00:38:28,792 --> 00:38:35,252
+Eklersek t kare artı iki t, bu da buradan gelecek, sonra eksi iki olur.
+
+139
+00:38:36,032 --> 00:38:41,712
+Burası da t artı bir katını alıp eklediğimiz için t eksi iki olur. Evet.
+
+140
+00:38:42,672 --> 00:38:45,212
+Bu hale gelir. Bakın burasını sıfır böyle yaparız.
+
+141
+00:38:46,195 --> 00:38:58,135
+Şu elemanter satır işlemini yaparız. Artık, artık daha da ileriye gidemeyiz. Burada rankları söyleyebiliriz.
+
+142
+00:39:00,416 --> 00:39:11,596
+Sorumuzun A şıkkı lineer denklem sisteminin çözümsüz olması için ne olmalı arkadaşlar? Rank AB, rank A'dan farklı olması lazım. Bu nasıl mümkündür?
+
+143
+00:39:14,771 --> 00:39:21,131
+0, değil mi? Bu 0, t eksi 2 de 0'dan farklı iken mümkündür. Bakın.
+
+144
+00:39:23,831 --> 00:39:40,831
+Bu t kare artı 2 t eksi 2 eşit 0 ve t eksi 2 sıfırdan farklı iken mümkündür. İşte bu durumda ne olur? Bu durumda rank a,
+
+145
+00:39:42,771 --> 00:40:06,192
+2 olur. Rank AB'de ne olur arkadaşlar? 3 olur. Dolayısıyla eşit olmazlar. Şunu çözersek, bu sıfıra eşit olması için t ne olmalı? t ya eksi bir artı köküç ya da eksi bir eksi köküç olmalı.
+
+146
+00:40:10,900 --> 00:40:27,159
+eksi 2'den farklı olmalı. O zaman t ne olmalıdır dersek, zaten şu eksi 1 artı eksi kök 3, 2'den farklı olacağı için t, t, şu değerlerden biri.
+
+147
+00:40:27,460 --> 00:40:36,920
+Yani ya eksi 1 artı kök 3 ya da eksi 1 eksi kök 3 olmalı diyoruz. Cevap bu.
+
+148
+00:40:39,315 --> 00:40:50,876
+B şıkkında tek çözüm olması için ne olmalı? Ranklar birbirine eşit ve 3 olmalı. Bu neyle mümkün? Şuradaki ifadenin sıfırdan farklı olması ile mümkün.
+
+149
+00:40:52,755 --> 00:41:02,435
+Bunun için ne olmalı? Bu denklemin çözdüğümüz zaman yine eksi 1 artı eksi kök 3 oluyor. O zaman t bunlardan bu köklerden farklı olmalıdır diyoruz.
+
+150
+00:41:05,268 --> 00:41:30,667
+Peki, sistemin sonsuz çözümü olması için ne olmalı? Ranklar eşit olmalı ve ikiye eşit olmalı. Bakın, şurası ikiden daha küçük olamıyor, rank A ikiden küçük olamıyor. O zaman ranklar birbirine eşit ve iki olmalı. Bu neyle mümkün? Hem şu ifadenin sıfır, hem de bu ifadenin sıfır olması lazım aynı anda.
+
+151
+00:41:31,315 --> 00:41:52,975
+Aynı anda sıfır olması lazım ama bu denklem sistemlerini çözdüğümüz zaman t hem böyle olmalı hem böyle olmalıdır diyoruz. Bu da mümkün değil değil mi? İkisini de sağlayan t'ye değeri bulamayız. O zaman diyoruz ki ne? Demek ki verilen lineer denklem sisteminin sonsuz çözüm hali yoktur diyoruz.
+
+152
+00:41:52,975 --> 00:41:57,655
+Lineer denklem sisteminin sonsuz çözümü yoktur diyoruz bu şekilde.
+
+153
+00:42:03,411 --> 00:42:27,652
+Evet, buna benzer bir sorumuz var şimdi. Burada da A ve B değerleri var. Bakın bir lineer denklem sistemi verilmiş. A ve B değerleri var. Bu lineer denklem sisteminin çözümsüz, B şıkkında tek çözümlü, C'de sonsuz çözümlü olabilmesi için A ve B değerleri nasıl seçilmelidir diye soruyoruz.
+
+154
+00:44:47,123 --> 00:44:59,743
+Bu soruda da yine artırılmış kat sayılar maddesini yazıp ranklara bakacağız. Rank A ve rank AB'nin durumlarına bakarak ABC şıklarına cevap vereceğiz.
+
+155
+00:45:01,363 --> 00:45:08,703
+Şimdi yine burada AB'yi yazalım. AB'yi yazdığımız zaman
+
+156
+00:45:10,579 --> 00:45:16,600
+ve AB'yi satırca indirgenmiş, satırca eşelon forma getirdiğimiz zaman şunu elde ederiz arkadaşlar.
+
+157
+00:45:21,331 --> 00:45:22,371
+Şunu elde ederiz.
+
+158
+00:45:23,591 --> 00:45:25,492
+Ve burada gördüğünüz gibi
+
+159
+00:45:25,492 --> 00:45:31,291
+işte rank A
+
+160
+00:45:31,291 --> 00:45:33,011
+için şuraya bakacağız.
+
+161
+00:45:34,612 --> 00:45:37,572
+İsterseniz A'ya cevap verelim önce.
+
+162
+00:45:37,871 --> 00:45:38,411
+Ne olmalı?
+
+163
+00:45:39,351 --> 00:45:39,891
+Rank A
+
+164
+00:45:39,891 --> 00:45:43,211
+farklı
+
+165
+00:45:43,211 --> 00:45:45,251
+rank AB olmalı.
+
+166
+00:45:47,219 --> 00:45:53,960
+Bu neyle mümkündür? Bu, şuradaki 2A artı birin sıfır olması.
+
+167
+00:45:57,780 --> 00:46:19,460
+ve 1-a, b, b'nin sıfırdan farklı olmasıyla mümkündür değil mi? Sıfırdan farklı olmasıyla mümkündür. Ancak bu zaman bunlar birbirinden farklı olur. Bu 2 olur, bu da 3 olur.
+
+168
+00:46:20,739 --> 00:46:23,960
+Buradan a ne olmalı? O zaman eksi 1 bölü 2 olacak.
+
+169
+00:46:24,628 --> 00:46:39,188
+Burada yerine yazarsak a'yı, 1-1 bölü 2 olduğu için, artı 1 bölü 2, b-b, farklı sıfır olacak.
+
+170
+00:46:41,688 --> 00:46:43,547
+Buradan da ne olur arkadaşlar?
+
+171
+00:46:47,547 --> 00:46:48,547
+Şurada...
+
+172
+00:46:49,172 --> 00:47:01,492
+Eksi 1 bölü 2 B olur. B'yi öbür tarafa götürürsek, B eşit, B farklı 2 mi? B farklı 2 olmalı diyeceğiz, A şıkkı için.
+
+173
+00:47:04,351 --> 00:47:14,731
+Evet, A eşit, eksi 1 bölü 2, B, B de farklı 2 olmalı.
+
+174
+00:47:15,251 --> 00:47:17,771
+Tek çözümlü olabilmesi için ne olmalı?
+
+175
+00:47:18,192 --> 00:47:27,251
+Tek çözüm olması için rank a eşit rank a b, o da eşit bilinmeyen sayısı, yani 3 olmalı.
+
+176
+00:47:28,711 --> 00:47:30,192
+B şıkkına bakıyoruz şimdi.
+
+177
+00:47:31,692 --> 00:47:33,131
+Yani ne olmalı?
+
+178
+00:47:33,351 --> 00:47:37,211
+Bunu sağlaması için şuranın sıfırdan farklı olması yeterli.
+
+179
+00:47:38,091 --> 00:47:41,791
+2a artı 1, farklı sıfır olmalı.
+
+180
+00:47:42,228 --> 00:47:52,608
+Sıfır olmalı. Buradan A farklı, eksi bir bölü iki olmalıdır deriz. B şıkkında da.
+
+181
+00:47:53,887 --> 00:48:03,927
+Tabi B ne olmalı? B herhangi bir real sayı olabilir. A böyle, B de herhangi bir real sayı olmalı.
+
+182
+00:48:04,448 --> 00:48:08,507
+Sonsuz çözüm olması için ne olmalı? Sonsuz çözüm olması için.
+
+183
+00:48:09,204 --> 00:48:29,664
+Rank A eşit, rank AB, o da eşit ne olmalı arkadaşlar? 2. 2'den küçük olamıyor zaten şuraya baktığımız zaman. 2 olmalı. Bunun için ne olması lazım? Hem 2A artı 1, hem de 1 eksi A çarpı B, eksi B ifadeleri hep sıfıra eşit olmalı.
+
+184
+00:48:32,659 --> 00:48:37,920
+Buradan da a eksi 1 bölü 2, b de 2 olarak bulunur.
+
+185
+00:48:42,324 --> 00:48:45,104
+Evet, bir başka sorumuz. Şöyle bir soru.
+
+186
+00:48:47,043 --> 00:48:53,864
+Burada da aşağıdaki lineer denklem sistemini K ve T'nin alabileceği değerlere göre irdeleyerek çözünüz.
+
+187
+00:48:53,864 --> 00:48:59,904
+Bu şu demek, deminki gibi A ve A, B, C şıklarına cevap vermek demek.
+
+188
+00:49:00,423 --> 00:49:05,484
+Yani çözümsüz olması için bu lineer denklem sisteminin K ve T değerleri şöyle olmalı.
+
+189
+00:49:09,460 --> 00:49:20,220
+Tek çözümlü olması için şöyle olmalı, sonsuz çözümlü olması için şöyle olmalıdır diye cevaplandırmamız gerekiyor. İrdeleyerek çözünüz demek bu demek.
+
+190
+00:50:29,972 --> 00:50:47,372
+Yine diğer sorularda olduğu gibi artırmış kat sayılar matrisini yazalım. Yazdığımız zaman AB'yi ve onu satırca eşelon forma getirdiğimiz durumda şu oluyor.
+
+191
+00:50:47,372 --> 00:50:56,472
+Burada artık ranklarla ilgili konuşabiliriz. Burada rank A kesinlikle 2'ye eşit değil mi?
+
+192
+00:50:59,603 --> 00:51:02,063
+Şu kısma bakarak söylüyoruz.
+
+193
+00:51:03,583 --> 00:51:04,683
+Ranka ikiye eşit.
+
+194
+00:51:05,223 --> 00:51:09,723
+Bilinmeyen sayısı da iki.
+
+195
+00:51:10,963 --> 00:51:12,103
+O zaman, o zaman,
+
+196
+00:51:12,983 --> 00:51:16,563
+bu sistemin,
+
+197
+00:51:17,844 --> 00:51:18,923
+bir kere şey yok,
+
+198
+00:51:20,943 --> 00:51:23,344
+çözümsüzlük durumu yok, değil mi?
+
+199
+00:51:30,483 --> 00:51:56,323
+Pardon. Çözümsüzlük durumu olabilir de, sonsuz çözümlülük durumu yok. Bilinmeyen sayısı ranka'ya eşit. Sonsuz çözümlü durumu yok. Ya tek çözümü var, ya da çözümsüzlük hali var. Çözümsüzlük halinin olması için şu ifadelerden birisi sıfırdan farklıysa, değil mi?
+
+200
+00:51:57,235 --> 00:51:58,615
+Çözümsüz olacaktır.
+
+201
+00:52:00,935 --> 00:52:16,015
+Eğer ikisi de sıfırsa, hem burası sıfırsa, hem burası sıfırsa, rank a eşit, rank a b o da eşit, iki o da eşit bilinmeyen sayısı olduğu için tek çözüm olacaktır.
+
+202
+00:52:18,536 --> 00:52:23,935
+O zaman şöyle diyelim, rank a eşit,
+
+203
+00:52:24,255 --> 00:52:43,755
+Rank AB, o da eşit 2. Yani tek çözüm olması için böyle olmalı. Bunun için de K-3T eşit 0 ve 1-T eşit 0 olmalıdır.
+
+204
+00:52:50,708 --> 00:52:52,827
+K ekit 3 olmalıdır.
+
+205
+00:52:54,688 --> 00:52:55,887
+Bu tek çözüm hali.
+
+206
+00:52:59,087 --> 00:53:05,068
+Çözümsüzlük hali için rank A, farklı rank AB olmalı.
+
+207
+00:53:07,368 --> 00:53:15,408
+Şurası 2, burası ne olur? 3 veya 4 değil mi? Olmalı.
+
+208
+00:53:16,211 --> 00:53:30,091
+Bunun için ne olmalı? Bunun için k-3t farklı sıfır veya 1-t farklı sıfır olmalıdır diyoruz.
+
+209
+00:53:35,827 --> 00:53:46,627
+Bu, bu, şuradakinin tamamen tersi, değil mi? Şu tek çözümlü olmanın tamamen tersi.
+
+210
+00:53:55,123 --> 00:54:13,623
+Dolayısıyla çözümsüzlük hali için t farklı bir veya k farklı 3t olmalıdır şeklinde yazmamız lazım.
+
+211
+00:54:17,396 --> 00:54:27,936
+Bu lineer denklem sisteminin sonsuz çözümü yok. Niye? Niye? Rank A her zaman bilinmeyen sayısına eşit olduğu için.
+
+212
+00:54:38,547 --> 00:54:39,047
+Peki.
+
+213
+00:54:42,900 --> 00:54:47,900
+Bu soruyu şöylece yavaşça kaydırayım. Sonra siz bakın, benzer bir soru.
+
+214
+00:54:49,900 --> 00:54:57,500
+Şöyle çözümünü de size, hatta çözümüne hızlıca bakalım. Burada değişik bir durum da var.
+
+215
+00:55:00,000 --> 00:55:05,980
+Bu soru, şurada denklemi verdik. Yine A, B, C şıkları var. K ne olmalıdır diye.
+
+216
+00:55:07,500 --> 00:55:07,720
+Şimdi,
+
+217
+00:55:08,724 --> 00:55:34,764
+Burada A şıkkı çözümsüz olması için ranklar birbirinden farklı olacak. Rankların birbirinden farklı olması için, yani şuranın rangıyla buranın farklı olması için ne olması lazım? Şunun sıfırdan farklı olması lazım. Pardon, sıfır olması lazım, şunu sıfırdan farklı olması lazım değil mi? Burası sıfır, bu farklı sıfır olmalı.
+
+218
+00:55:36,916 --> 00:55:37,676
+Hmm.
+
+219
+00:55:42,068 --> 00:55:47,828
+Bu eşit sıfır, bu sıfırdan farklı olması lazım.
+
+220
+00:55:49,568 --> 00:55:52,128
+Bunu sıfır yapan değerler neler?
+
+221
+00:55:53,748 --> 00:55:59,328
+Şu, k eşit iki, k eşit eksi iki.
+
+222
+00:56:03,539 --> 00:56:12,579
+Ve bu değerlerden hangisi şunu sıfırdan farklı yapıyor ona bakmamız lazım arkadaşlar.
+
+223
+00:56:15,059 --> 00:56:23,099
+Koyarsak burada 2 koyarsak ne olur? 4 eksi 4 olur sıfır olur. Olmaz.
+
+224
+00:56:31,668 --> 00:56:48,648
+eksi 2'nin karesi. Ne olur? Burası eksi 8. Sıfırdan farklı olur. Dolayısıyla neyi seçeceğiz? K eşit eksi 2'yi seçeceğiz.
+
+225
+00:56:50,148 --> 00:56:57,948
+Burada iki tane K değeri çıktı ama bunu sıfır yapan onların ikisini de almıyoruz. Sadece K eşit.
+
+226
+00:56:58,739 --> 00:57:01,059
+eksi ikiyi alıyoruz.
+
+227
+00:57:02,380 --> 00:57:05,960
+K eşit, eksi iki için sistemin çözümü yok.
+
+228
+00:57:06,440 --> 00:57:10,139
+Sistemin tek çözümü olması için ranklar bir bir eşit ve üç olmalı.
+
+229
+00:57:11,139 --> 00:57:13,079
+Bunun için ne olmalı arkadaşlar?
+
+230
+00:57:13,639 --> 00:57:14,119
+Bunun için
+
+231
+00:57:14,804 --> 00:57:42,043
+Şunun, şuranın sıfırdan farklı olması gerekir. 4 eksi k karenin sıfırdan farklı olması lazım. Bu da ne demek? K'nın artı eksi 2'den farklı olması demek. Sonsuz çözüm olması için her ikisi de sıfır olmalı. Rank birbirine eşit bunlar, 2 olmalı. Hem bu sıfır olmalı, hem bu sıfır olmalı. İkisinde sıfır yapan değer hangisi? K eşit 2.
+
+232
+00:57:43,411 --> 00:57:56,512
+K eşit 2, ikisini de 0 yapıyor. O zaman rank 2 olur, 3-2, bir keyifli değişikliğine bağlı sonsuz çözüm vardır deriz.
+
+233
+00:58:00,724 --> 00:58:10,004
+Bir başka sorumuz, bu lineer denklem sistemi, A'nın hangi değeri için Kremer kuralıyla çözülebilir?
+
+234
+00:58:18,612 --> 00:58:23,152
+Evet, bu ilk soru, bir tane sorumuz vardı, ona benziyor, düşünün bakalım.
+
+235
+01:00:17,715 --> 01:00:35,715
+Kramer sistemine göre bir lineer denklem sisteminin çözümlü olması için ne olması lazım? Burada 3 bilinmeyen 3 denklem var, orası tamam. O zaman kat sayılar matrisinin determinantı ne olmalı arkadaşlar? Sıfırdan farklı olmalı. O zaman kramer kuralıyla çözülebilir demiştik.
+
+236
+01:00:35,715 --> 01:00:41,635
+Şimdi kat sayılar matrisinin determinantına bakalım.
+
+237
+01:00:42,612 --> 01:00:59,672
+Ona göre A'yı belirleyeceğiz. Kat sayılar matrisinin determinantı. Bunu hesaplarsak böyle bir değer çıkıyor. 5A eksi 10. Bu sıfırdan farklı olması lazım. O zaman 5A farklı 10, yani A farklı 2 olmalı.
+
+238
+01:01:00,340 --> 01:01:06,760
+İkiden farklı bütün A değerleri için verilen lineer denklem sistemi Kramer Kralı'na göre çözülebilir.
+
+239
+01:01:07,360 --> 01:01:11,620
+A hangi değeri almalıdır dediğimize göre A farklı 2 de diyebilirsiniz.
+
+240
+01:01:11,620 --> 01:01:21,540
+Ya da şöyle de yazılabilir. Real sayılardan 2'yi çıkartarak çıkartınca diğer bütün real sayılar olabilir diyoruz.
+
+241
+01:01:28,467 --> 01:01:44,827
+Yine bir irdeleyerek sorumuz var. Burada da sistemin çözümsüz, tek çözümlü, sonsuz çözümlü olması için A ve B değerleri ne olmalıdır diye soruyoruz.
+
+242
+01:01:45,135 --> 01:01:56,816
+Yine ne yapacağız arkadaşlar? Artırılmış kat sayılar maddesini yazarak, onu satırca eşelon forma getirip, rank A ve rank AB'ye bakarak buna cevap vereceğiz.
+
+243
+01:01:57,816 --> 01:02:05,396
+İşte artırılmış kat sayılar maddesi, satırca indirgenmiş eşelon forma geldi.
+
+244
+01:02:06,516 --> 01:02:08,516
+Şurayı bir de yapabilirsiniz.
+
+245
+01:02:09,072 --> 01:02:30,032
+Şurayı, bunu bir yapmak zor değil. Hemen ikiye bölerek bir yapabiliriz. Zaten onunla bizim fazla işimiz yok. Burayı da bir yapabilirsiniz. Bizim şurayla işimiz var. Şurası rank A, hepsi rank B. Şularla işimiz var. Sistemin çözümüsü olması için ne olmalı? Rank A, B, rank A'dan farklı olması lazım. Bu da neyle mümkündür?
+
+246
+01:02:34,516 --> 01:02:39,155
+eksi 2a artı 6'nın sıfırdan farklı olmasıyla mümkündür.
+
+247
+01:02:40,596 --> 01:02:45,115
+Buna göre b eşit 2, a da 3'ten farklı olmalıdır diyebiliriz.
+
+248
+01:02:45,655 --> 01:02:50,576
+Tek çözümün olması için ranklar birbirine eşit ve bilinmeyen sayısı 3'e eşit olmalı.
+
+249
+01:02:51,635 --> 01:02:52,496
+3'e eşit olmalı.
+
+250
+01:02:53,076 --> 01:02:54,376
+Bu da neyle mümkündür?
+
+251
+01:02:54,956 --> 01:02:59,336
+Şu b eksi 2'nin sıfırdan farklı olması, b farklı 2.
+
+252
+01:02:59,840 --> 01:03:26,280
+olması ile mümkündür. Bu durumda ne olmalı? A'da herhangi bir real sayı olabilir. Değil mi? A ne olmalıdır dersek, A herhangi bir real sayı, B ikiden farklı real sayı olmalıdır deriz. Sonsuz çözüm olması için ikisi de sıfır eşit olmalı değil mi? Rank A eşit, rank A B o da eşit 2 olmalı. Bunun için B eksi 2 eşit 0, eksi 2 A artı 6 eşit 0 olmalı.
+
+253
+01:03:27,923 --> 01:03:34,503
+Tamam mı? Bu da B'nin ikiye eşit, A'nın da üçe eşit olmasıyla mümkündür.
+
+254
+01:03:38,483 --> 01:03:44,224
+Evet, bu soruyu şöyle yavaşça kaydırayım. Ondan sonra siz bakın, benzer bir soru.
+
+255
+01:03:58,579 --> 01:04:01,260
+Biz şimdi şu soruya bakalım arkadaşlar.
+
+256
+01:04:04,320 --> 01:04:10,840
+Lineer denklem sisteminin çözümünün olması için A, B ve C arasındaki bağıntıyı bulunuz.
+
+257
+01:06:43,219 --> 01:06:52,980
+Burada lineer denklem sisteminin çözümünün olması için dediğimize göre, yani çözümsüzlük halinin dışındaki durumları araştırıyoruz.
+
+258
+01:06:52,980 --> 01:06:59,179
+İşte o durumda A, B ve C arasındaki bağıntı nedir diye sormuşuz.
+
+259
+01:06:59,639 --> 01:07:02,739
+Burada yine artırılmış kas sayılar maddesini yazacağız.
+
+260
+01:07:03,500 --> 01:07:06,759
+Onu satırca eşelon forma getireceğiz.
+
+261
+01:07:24,500 --> 01:07:26,500
+Şimdi tabii burada...
+
+262
+01:07:35,123 --> 01:07:35,683
+yapalım.
+
+263
+01:07:42,099 --> 01:07:47,280
+AB'ye yazdık, AB'ye yazdık ve şu hale geldi arkadaşlar.
+
+264
+01:07:49,960 --> 01:08:02,579
+Burada, burada, şimdi şuraya baktığımız zaman bir kere rank A'nın ikiye eşit olduğunu görüyoruz.
+
+265
+01:08:03,980 --> 01:08:05,980
+Çözümün olması için ne olmalıydı?
+
+266
+01:08:09,652 --> 01:08:27,432
+Rank AB olmalıydı. Bu rank A zaten 2, o zaman bu 2'ye eşit olmalı. Rank AB de 2'ye eşit olmalı. O zaman şurası ne olmalı arkadaşlar? Şuradaki değer 0 olmalı. Değil mi? Buradaki değer 0 olmalı. Bunu yazacağız.
+
+267
+01:08:35,731 --> 01:08:40,351
+Bağıntı bu olmalıdır, diyoruz.
+
+268
+01:08:42,011 --> 01:08:47,851
+Tabii bunlara, bu sorulara benzer test soruları bile çözülebilir.
+
+269
+01:08:48,451 --> 01:08:51,851
+Mesela aşağıdakilerden hangisi olmalı, ABC arasındaki bağıntı?
+
+270
+01:08:52,871 --> 01:08:56,511
+Işıkların arasında birisi bu olacak herhalde.
+
+271
+01:08:57,412 --> 01:09:01,871
+Eşit deriz veya ABC değerleri ne olmalıdır, denebilirdi.
+
+272
+01:09:02,355 --> 01:09:04,855
+Bu bağıntıyı sağlayan değerler seçilmeli.
+
+273
+01:09:05,635 --> 01:09:05,876
+Değil mi?
+
+274
+01:09:06,895 --> 01:09:09,456
+Bu bağıntıyı sağlayan değerler seçilmeli.
+
+275
+01:09:09,456 --> 01:09:20,915
+Örneğin, A eşit 1, B eşit 1 alırsak C'de ne olmalı?
+
+276
+01:09:21,675 --> 01:09:22,255
+C'de 3.
+
+277
+01:09:23,075 --> 01:09:23,315
+Değil mi?
+
+278
+01:09:24,435 --> 01:09:27,355
+A eşit 1, B eşit 1, C eşit 3.
+
+279
+01:09:27,988 --> 01:09:40,068
+değer olarak verildiyse, ABC değerleri ne olmalıdır diye, A eşit bir, B eşit bir, C eşit üç, bu değerlerden biridir. Başka yok mu? Sonsuz tane var.
+
+280
+01:09:40,068 --> 01:09:51,308
+Ama cevap şıklarını da bu B, C eksi iki A, eksi B eşit sıfırdan onu sağlayan değerleri.
+
+281
+01:09:52,467 --> 01:09:56,148
+Hangisi ise cevapçıklarından onu işaretlememiz lazım.
+
+282
+01:10:02,868 --> 01:10:20,448
+Peki. Şimdi bugün burada bırakacağım arkadaşlar. Sizin sorularınız varsa sizin sorularınıza cevap vermek istiyorum. Bana işlediğimiz konularla ilgili sorularınızı sorabilirsiniz.
+
+283
+01:10:20,927 --> 01:10:22,388
+Hocam bir şey sorabilir miyim ben?
+
+284
+01:10:22,628 --> 01:10:23,408
+Tabii, buyur.
+
+285
+01:10:24,868 --> 01:10:27,408
+Şu satırcı eş olan forma getirirken.
+
+286
+01:10:28,307 --> 01:10:30,648
+Dördüncü adımda bıraksak olur muydu?
+
+287
+01:10:31,327 --> 01:10:32,487
+Bu soru için mi diyorsun?
+
+288
+01:10:32,487 --> 01:10:34,427
+Evet, yine olurdu değil mi bu soru için?
+
+289
+01:10:34,788 --> 01:10:40,967
+Tabii, tabii. Mesela şurada da cevap verebiliyoruz. Hatta şurada bile.
+
+290
+01:10:41,208 --> 01:10:42,188
+Üçüncü tabi değil mi?
+
+291
+01:10:42,188 --> 01:10:49,887
+Çünkü burada şunu görüyoruz. Burası eksi yedi ya, burada bunu eksi yediyi bir yapma her zaman mümkün.
+
+292
+01:10:50,967 --> 01:10:55,039
+Şimdi mesela sınırlıysa...
+
+293
+01:10:55,039 --> 01:11:19,479
+Kalkıp böyle yapmamanız lazım tabii. Biz açıklamak için yaptık. Mesela şurada bırakmak lazım. Mesela bu eksi yedinin de bir olacağını görüp, rank A'nın her zaman iki değerine sahip olduğunu görüp, direktman buradan çalışılabilirdi elbette. Ama mesela orada çözümü bulacaksak, onu satırca indirgenmiş eşelon forma getirmemiz lazım.
+
+294
+01:11:20,564 --> 01:11:42,284
+Çözüm bulabilmemiz için. Ama burada çözüm üzerinde durulmuyor. Yani çözümün ne olduğu üzerinde durulmuyor. Çözüm olması değil mi? Onun için burada kesebilirdik. Hatta evet burada yapmamız üçüncü adımda cevap verebilirdik bu soruya. Evet başka?
+
+295
+01:11:43,412 --> 01:11:51,152
+Hocam bu satırca eşelon forma getirme sorularını denk nasıl soranlar? Bunları görmek çünkü çok zor geliyor.
+
+296
+01:11:52,391 --> 01:12:07,272
+Şimdi satırca eşelon form var, bir de satırca indirgenmiş eşelon form var. Bakın, şurada, bu satırca eşelon formdadır. Bu matrisin satırca eşelon formudur.
+
+297
+01:12:10,452 --> 01:12:20,612
+Tabii bu irdeleme sorusu olduğu için, şuradaki değeri, mesela buradaki değeri ya sıfırdan farklı yapacağız ya da sıfır yapacağız.
+
+298
+01:12:21,572 --> 01:12:35,391
+Çözüme bakabilmek için. Sıfırdan farklı yapınca da ne olacak? Onu sıfırdan farklı yaptığın zaman, eğer problemimiz sadece satırca indirgenmiş form şeklindeyse onu bir de yapabilirsin.
+
+299
+01:12:36,180 --> 01:12:58,300
+Ama şu kısmı görmezsek, bakın sadece şu kısmı alırsak, şu kısmı, bu A maddesinin satırca eşelon formudur. Şurası da satırca indirgenmiş eşelon formudur.
+
+300
+01:13:01,108 --> 01:13:14,768
+Farkı ne? Satırca eşelon formda sıfırdan farklı ilk eleman bir, bak burada bir, hepsi sıfır olan satır aşağıda, bu birin merdiven basamağı gibi olacak.
+
+301
+01:13:18,548 --> 01:13:26,688
+Ve bu birin ilk sıfırdan farklı birinin altındaki elemanlar da sıfır olacak. Bu satırca eşelon form.
+
+302
+01:13:27,060 --> 01:13:41,239
+Satırca indirgelmiş eşelon form, bunlara ilaveten bu sıfırdan farklı ilk eleman birinin bulunduğu sutundaki diğer elemanlar. Bak, şuradaki diğer eleman da sıfır olacak. Fark bu.
+
+303
+01:13:42,780 --> 01:13:53,060
+Biz bu lineer denklem sistemlerinin artırılmış kas sayılan matrisi yöntemiyle çözümünde bu artırılmış kas sayılan matrisini satırca...
+
+304
+01:13:53,680 --> 01:14:17,060
+Eşelon forma getiriyoruz. Yani rankları söyleyebileceğimiz konuma getiriyoruz. Çözüm bulmayacağımız için, rankları söyleyeceğimiz için satırcı eşelon forma getirmek yeterli. Ama denklemi de çözeceksek, hani denklemi çözün dedilerse öyle sorularımız da vardı. O zaman satırcıya indirgenmiş forma getirip sonra
+
+305
+01:14:17,652 --> 01:14:22,351
+Tekrar denkleme dönerek X'i, Y'yi, Z'yi buluyor idik.
+
+306
+01:14:26,163 --> 01:14:32,003
+Önceki konularla ilgili de soru sorabilirsiniz arkadaşlar.
+
+307
+01:14:39,828 --> 01:15:04,927
+Peki. O zaman burada bitirelim. Size iyi günler diliyorum. Sınavınızda da, haftaya olacak sınavınızda da başarılar diliyorum. İnşallah güzel notlar alırsınız. Bizim dersimiz kolay bir ders, anlaşılabilir ders. Birazcık kavramları öğrendiğiniz zaman kolaylıkla başarabilirsiniz. İyi bir not alacağınızı düşünüyorum.
+
+308
+01:15:05,747 --> 01:15:07,827
+Başarılar diliyorum. Hoşçakalın arkadaşlar.
+
+309
+01:15:08,527 --> 01:15:10,207
+İyi günler hocam.
