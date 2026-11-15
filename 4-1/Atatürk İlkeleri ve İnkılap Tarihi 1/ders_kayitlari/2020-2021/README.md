@@ -5,6 +5,7 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 2 | Güz | — | [sube_2/](sube_2/) |
+| 4 | Güz | Öğr. Gör. Dr. Şebnem Gelmedi | [sube_4/](sube_4/) |
 | 10 | Güz | Zafer Doğan | [sube_10/](sube_10/) |
 | 11 | Güz | — | [sube_11/](sube_11/) |
 | 13 | Güz | — | [sube_13/](sube_13/) |
