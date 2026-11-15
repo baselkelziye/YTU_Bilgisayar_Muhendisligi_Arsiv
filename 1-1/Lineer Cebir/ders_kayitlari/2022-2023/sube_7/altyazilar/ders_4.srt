@@ -1,0 +1,1691 @@
+1
+00:13:51,347 --> 00:13:53,147
+Evet arkadaşlar, dersimizi başlatalım.
+
+2
+00:13:55,687 --> 00:13:59,647
+Ekranı bir temizleyeyim. Görüyorsunuz değil mi ekrana getirdiğim görüntüyü?
+
+3
+00:14:02,107 --> 00:14:02,407
+Evet.
+
+4
+00:14:03,668 --> 00:14:13,727
+Tamam. Bir matrisin tersini varsa nasıl buluruz ondan bahsetmemiştik. Ondan kısaca bahsedip bu haftanın konusuna geçiş yapalım. Determinantlardan bahsedeceğim artık.
+
+5
+00:14:15,412 --> 00:14:42,872
+Şurada tanım 1.45'te normal form diye bir şey var, tamam mı? Ondan bahsedeceğim şimdi birazdan. Sınavlarda sıklıkla çıkan bir şey değil. Ben şimdiye kadar çok neredeyse hiç soru görmedim yani normal formu ile ilgili bir madrisin ama yani nadiren çıkıyordu bu sınavda soralım derse komisyon değil mi? Şansa bırakmamak için üzerinden şöyle bir örnekle de olsa.
+
+6
+00:14:45,139 --> 00:14:50,879
+Değinmeden geçmeyelim. Şu ekranımı bir temizleyeyim önce misafidenizle.
+
+7
+00:14:58,196 --> 00:15:24,296
+Evet, bir matrisin normal formu neymiş ona bir bakalım. Yani tamamen özgün bir tanım sayılmaz. Daha önceden veya şimdiye kadar öğrendiğim şeylerin bileşkesi olan bir tanım. Bakın ne diyor? Bir matrise. Bir matrise diye başladıysa bu cümle, kara matris olma zorunluluğu yok demek ki. Tamam mı? Elementer satır ve elementer sütun. Bak buradaki bağlaca dikkat etin. V diyor bu sefer.
+
+8
+00:15:25,491 --> 00:15:43,531
+Biz bir matrisi indirgenmiş forma veya eşelon forma getirirken ne demiştik? Ya hep elementer satır işlemi ya da hep sütün işlemi kullanılır demiştik. Burada ise V bağlacı kullanıyor ilk defa. Demek ki bu normal form dediği şey, bunların ikisini karma olarak kullanan bir prosedür.
+
+9
+00:15:44,451 --> 00:15:48,351
+Şimdi okuyalım tanımımızı. Bir matrise, elementer satır.
+
+10
+00:15:48,788 --> 00:15:56,248
+Ve elementer sütün işlemleri uygulanarak matris hem satırca hem de sütünca indirgenmiş eşelon forma getirilebilir.
+
+11
+00:15:57,567 --> 00:16:04,327
+Böyle bir matriste, bakın şu dört kip matristen bir tanesine evrilir. Tamam mı? Normal form dediği bu.
+
+12
+00:16:07,048 --> 00:16:16,227
+IK dediği, kanıncı mertebeden birim matris. Siz bunu böyle yalın olarak elde edebilirsiniz veya sağında, solunda, altında sıfır.
+
+13
+00:16:16,820 --> 00:16:43,300
+Solunda demeyelim, sağında ve altında diyelim. Çünkü her halükarda bakın birim matris hep sol üst köşe. Hep sol üst köşe değil mi? Sol tarafa bitişik, yanaşık neyse. Elde edilecek şekilde şu forma getirebilmeye normal form diyormuşuz matrisi. Satır ve sütün işlemlerinde birlikte karma kullanmak suretiyle değil mi? Eşelon forma getirilebilir diyoruz. Bu matrisler.
+
+14
+00:16:43,700 --> 00:17:10,059
+Eşelon formla mı peki? Eşelon formla. Mesela bakın sıfır olan satır altta. Sıfır olan satır altta. Bir tane eleman var orada demeyeceksin. Yani o oradaki sıfır sayı anlamında değil. Bak olabilir veya sıfır orada bir matris de, satır matrisi veya sütün matrisi. Sıfır matris. Kare matris olmak zorunda demiyorum. Bak kare sıfır matris değil. Artık hangi boyuttansa
+
+15
+00:17:10,740 --> 00:17:37,500
+Burada bir blok matris söz konusu. Yani öyle bir matris düşünün ki elemanları sayılar değil, muhtelif boyutlardan matrisler. Buna partition derler, ayırma yani. Tamam mı? Ayırma, matrisleri böyle bloklayarak yazabilirsiniz. Neyse, çok uzatmayalım. Yani bu örnek 1.46'da verilen matrisi biz normal forma getirelim. Nasıl? Elemente satır ve sütün işlemlerini kullanarak hem satır hem de sütünce indirgenmiş, eşelon forma indirgemeye çalışalım bunu.
+
+16
+00:17:39,155 --> 00:17:42,355
+Bunlar bizim bilmediğimiz şeyler değil, değil mi? Bir dakika.
+
+17
+00:17:46,836 --> 00:17:50,755
+Evet, matrisimiz şu. Şöyle ekrana tam olarak getireyim bunu.
+
+18
+00:17:52,915 --> 00:17:55,076
+Takip etmesi de nispeten kolay olsun.
+
+19
+00:17:55,995 --> 00:17:58,556
+Bakın, bize verilen matrisin ilk hali bu.
+
+20
+00:17:59,556 --> 00:18:05,215
+Şimdi ben bu matrisin sol üst köşesine birim matris.
+
+21
+00:18:06,451 --> 00:18:33,692
+yerleştirmeye çalışacağım. Yani bu birim matris en fazla üçlük olur değil mi? En fazla üçlük olur. Yapamıyorsam ikilik birim matris olur. Şimdi, birim matrisin birinci satır, birinci sütün elemanı da bir. Hazır burada bir varken, onu değerlendirelim değil mi? Birim matrisin mesela ilk satırın pivotu bir, onun altındakiler sıfır olacak yani. O zaman hedefimde kimler var? Şunları sıfırlamak var tabii ki. Öyle değil mi?
+
+22
+00:18:34,099 --> 00:18:50,579
+Bunları nasıl sıfırlarım? Biliyorsunuz, bakın burada zaten işlemleri vermiş. Yani birinci satırın eksi iki katını alıp ikinci satıra ilave ederseniz, sonra birinci satırı üçüncü satıra ilave ederseniz, iki ve eksi biri halka için aldığım bu sayıları sıfırlarsınız, değil mi?
+
+23
+00:18:50,579 --> 00:18:59,531
+Sonraki hamlede elde edeceğiz matris bu ve pivotun altındakiler gerçekten de sıfırlandı. Sonra...
+
+24
+00:19:00,403 --> 00:19:27,784
+Yani bu kitap şunu uyguluyor, siz aynı bunun hamlelerini kullanmak zorunda değilsiniz. Yani matris istediğimiz kıvama geldikten sonra hangi işlemi kullanırsan kullan. Tamam mı? Orada bir serbestliği var. Bakın en son haline bakın. Birim maddisine, ya zaten komple sıfır olan bir satır elde ettiğin anda sen buraya üçlük birim maddis gömemeyeceğini anlaman lazım. Yani ikilik olur. Değil mi en fazla? Hakikaten de öyle bakın.
+
+25
+00:19:28,276 --> 00:19:47,115
+İkilik birim matris burada. Sağında, altındaki elemanlar sıfır. Yani yukarıdaki formattan, o dört tane, normal form diye verdiği, dört formdan biri, hangisi? İşte bu. Bakın, ayrım yaptım burada, partition diyelim.
+
+26
+00:19:47,923 --> 00:20:13,703
+Tamam mı? Buradaki sıfır, o zaman şu sıfır neye karşılık geliyor? Şu 2x2'lik sıfır kare matrisine karşılık geliyor. Peki bu sıfır neye karşılık geliyor? O da şu satır matrisine karşılık geliyor. Aynı şekilde bu sıfır da bu satır matrisine. Yani bir satır, iki sütunluk matrise karşılık geliyor. Elemanları sıfır olan matrisler. Muhtelif boyutlardan. Dedim ya zaten blok matris formatında. Peki buradan buraya nasıl geldik?
+
+27
+00:20:14,163 --> 00:20:34,043
+Şimdi, şuradayız, değil mi? İlk satırın pivotu olması gereken yerde, altındakiler sıfır, sonra ikinci ve üçüncü satırı yer değiştirelim dedik. Yani ikinci satırı üç, üçüncü satırı iki yaparsak, ilk satır değişmeden kalacak değil mi? Elimizde var bu matris.
+
+28
+00:20:34,043 --> 00:20:40,583
+Şimdi, bu matriste ne yapabiliriz? Bakın, ne yapabiliriz?
+
+29
+00:20:42,036 --> 00:21:07,916
+İkinci satırı, birinci satıra ilave edersen mesela, şuna dikkat edelim arkadaşlar. Bakın birim maddesinin ilk sütununu elde ettim mi burada? Elde ettim. Henüz 2x2'lik birim maddesi olması gerektiğini bilmiyorum. Tamam mı? Birim maddesinin ilk sütununu elde ettim. Hazır ilk sütununu elde etmişken ilk satırını da elde edelim. Tamam mı? Yani şunları da sıfırlayalım diyebilirsiniz.
+
+30
+00:21:09,140 --> 00:21:19,300
+Bunu nasıl yaparsınız? Mesela, eksi 1'i nasıl sıfırlarsın? İkinci satırın birinci satıra ilave ederek, bakın işlem burada.
+
+31
+00:21:20,519 --> 00:21:30,340
+Bunu yaparsan eksi 1 sıfır olur. Ondan sonra ikinci satırı eksi 2 ile.
+
+32
+00:21:31,412 --> 00:21:47,652
+Çarpıp üçün satıra ilave ederseniz, kitabın yaptığı şeye bakalım, yani birinci satırın eksi iki katını üçün satır ilave ederseniz bu iki sıfır olur mu? Olur. Şimdi diyebilirsiniz ki ya ben yukarıdaki üçü sıfır yapmak istiyordum. Dedim ya yani kitapla aynı sırada gitmek zorunda değilsin.
+
+33
+00:21:50,392 --> 00:21:58,652
+Burada bir serbestliğimiz var. Önemli olan matris istediğimiz kıvama gelsin günün sonunda. Tamam mı? Şu iki işlemi kullandık.
+
+34
+00:21:59,124 --> 00:22:23,683
+Elde edeceğimiz matris, hangi matris de, nereye geldi dayandı ona bir bakalım. Bakın buraya geldi. Şu andan itibaren artık sütün işlemi kullanıyor. Neden sütün işlemi kullanıyor? Bakın K2-3 bu neydi? Üçüncü ve ikinci sütünleri yer değiştirir. Yani iki ve üçüncü sütünleri yer değiştirir. Neden? Çünkü birim matrisin ikinci sütünü bu şekilde de ondan.
+
+35
+00:22:24,980 --> 00:22:28,380
+Hazır orada o sütün varken kopyala yapıştır yapmak tercih edilir.
+
+36
+00:22:29,160 --> 00:22:34,220
+Değil mi? Toplama çıkarma yapmaktansa işlem yapmadan kopyala yapıştır tercih edilir.
+
+37
+00:22:35,440 --> 00:22:37,620
+En azından hata yapma olasılığınız yok. Değil mi?
+
+38
+00:22:38,180 --> 00:22:43,660
+Ama toplama çıkarma yaparken bir anlık dikkatsizlikle bir sayıyı yanlış toplasan her şey yanlış gidebilir diye.
+
+39
+00:22:44,740 --> 00:22:48,819
+Şimdi buraya geldik. Birim maddesinin ilk sütünü, ikinci sütünü bakın.
+
+40
+00:22:50,963 --> 00:23:14,703
+Orada duruyor. Olması gerektiği gibi. Şu aşamada ne yapabilirim? Yani şu üçü sıfırlamam lazım. Değil mi? Üçü sıfırlamam lazım. Bakın kullandığı işleme bakın. İkisi bir arada işlem kullanmış. Birinci satırı, pardon birinci K'lar sütunu ifade ediyordu. Şu işlemin anlamı neydi?
+
+41
+00:23:15,087 --> 00:23:30,447
+Benim kendi notasyonumla gösterecek olursam, C1 diyelim, birinci sütun, eksi ikiyle çarp, dörde ilave et, tamam mı? Bu senin yeni dördüncü sütünün mu olsun? Bunu mu söylemek istiyor? Bunu söylemek istiyor, değil mi arkadaşlar?
+
+42
+00:23:33,172 --> 00:23:53,512
+Yani neden yapıyor bunu? Şu ikiyi sıfırlamak için. Neden? Çünkü birim matrisi gömecek ya buraya. Sağında, solunda sıfırlar olsun. Sağında, altında sıfırlar elde etmem lazım. Normal form o demek çünkü. O yüzden ikiyi sıfırlamak istiyor. İkiyi sıfırlamak için de şuraları silelim tekrardan.
+
+43
+00:23:59,571 --> 00:24:26,231
+İkiyi sıfırlamak için de bakın, birinci sütunu eksi ikiyle çarpıp dördüncü sütuna ilave ediyor. Dolayısıyla şurası sıfır oluyor. Sonra birinci sütunu eksi üçle çarpıp üçüncü sütuna ilave et. Bunu da sıfırlamak istemiştik zaten. Tamam. Aynı şekilde bunda şu iki işlemi bir arada kullanmak suretiyle önce ikiyi sonra üçü sıfırladık. Bakın dikkat edin bir sonraki maddeste onlar artık sıfır. Tamam mı?
+
+44
+00:24:27,476 --> 00:24:54,336
+Zaten son satır komple sıfır olduğu için I3 gömemeyeceğin belli buraya. Tamam mı? Bunu yapamayacağımız belli. I2'yi koyabiliriz sol uç tarafına. Matrisin normal formuna. O da zaten burada bakın. Burada. Peki, normal formda mı şu matris? Sarıyla üstünden geçelim bakın. Hayır değil.
+
+45
+00:24:54,736 --> 00:25:08,256
+Eksi 3 var değil mi? Eksi 3'ü de sıfırlarsan bu artık normal forma döner. Nasıl yapacaksın o zaman? İkinci sütunu, bakın şurada bir 1 var, 1'i 3 ile çarpıp eksi 3'e ilave edersen, eksi 3 sıfır olur.
+
+46
+00:25:08,256 --> 00:25:20,816
+Yani bu ne demek? İkinci sütunu 3 ile çarpıp son sütuna ilave edersen, işte bulacağınız matris bu. Bu matrisin içinde I2 var mı? Var. Nerede? Tam da olması gereken yerde. Sol üst köşede.
+
+47
+00:25:21,811 --> 00:25:31,612
+Sağında, altında da sadece sıfırlar var. İşte matrisin normal formu, bana verilen A matrisinin normal formunu bu şekilde elde etmiş oldum. Tamam mı?
+
+48
+00:25:36,435 --> 00:25:54,415
+Şimdi bizim için esas önemli olan bir matrisin tersini nasıl buluruz? Kare matrisin tersini kastediyorum tabii. Bir matrisin tersinin bulunabilmesi veya işte eşdeğer bir ifadeyle, regüler olması için gerek ve yeter koşu, birim matrise satırca denk olmasıdır diyor arkadaşlar.
+
+49
+00:25:54,415 --> 00:26:01,935
+Bakın, yapmanız gereken şey, ben diğer derste kullandığım karalamaları kullanayım, tekrar aynı şeyleri yazmaktansa.
+
+50
+00:26:02,420 --> 00:26:25,400
+Vakitten kazanmış olalım. Bakın, bir matrisin tersinin olup olmadığı sorusunu sormuş olalım kendimize. Bakın, soru şu olsun, tamam mı? Soru. Varsa bir matrisin tersini nasıl bulursunuz? Kare matris, en çarpı enlik. Bir prosedür var elimizde. Bu prosedürün ilk maddesi, i ile gösterdiğin şu. Önce genişletilmiş matrisini yazarsın anında.
+
+51
+00:26:25,715 --> 00:26:46,115
+A'nın genişletilmiş matrisinden ne kastediyorum? İşte bakın şu matrisi kastediyorum. Yani araya bir paraman koyun tamam mı? Sağ tarafına A ile aynı mertebeden bir matrisi ekleyin. Genişletilmiş matrisin boyutu ne olur o zaman? En tane sütünü ilave ettiğin için en çarpı iki enlik bir matris olur. O yüzden genişletilmiş matris diyorum zaten buna.
+
+52
+00:26:46,771 --> 00:27:08,731
+Peki, A'nın genişletilmiş matrisini yazdım. İkinci adımda ne yapılıyor peki bu sürecin ikinci adımında? Genişletilmiş matrisi, bakın şu genişletilmiş matrisi, bu defa bölmenin veya paravanın solunda birim matris olacak şekilde şu genişletilmiş matrise denk kılabiliyor musunuz?
+
+53
+00:27:12,500 --> 00:27:21,500
+Elementer, uygun elementer satır veya sütün işlemleri yapmak suretiyle şu matrisi, bu matrise çevirebiliyor muyum?
+
+54
+00:27:21,619 --> 00:27:29,960
+Yani paravanın solunda, bölmenin solunda birim matrisi elde ettiğiniz anda, sağında gördüğünüz asterikslere, yıldızla gösterdiğim matris, aradığınız matrisin tersidir.
+
+55
+00:27:30,740 --> 00:27:37,920
+Her ne yaparsan yap şu aralıkta, bir türlü birim matrisi sola yaslayamıyorsan, bu matrisin singular olduğunu eşerse der.
+
+56
+00:27:39,099 --> 00:27:39,940
+Tamam mı?
+
+57
+00:27:42,420 --> 00:27:43,960
+Singüler olduğuna işaretler.
+
+58
+00:27:45,059 --> 00:27:46,420
+Şimdi elimizde...
+
+59
+00:27:49,779 --> 00:28:00,039
+Bir matris var, bunun matris şudur arkadaşlar, bakın, satırları sırasıyla 1-3-3, 1-4-3 ve 1-3-4 olan matrisin tersini bulunuz diyor.
+
+60
+00:28:01,000 --> 00:28:12,900
+Ne yapacağız? Önce genişletilmiş matrisi yazacağız, ondan sonra da bölmenin sonunda bir matri eldene kadar tekrarlı bir şekilde uygun kombinasyonlarını kullanarak elementer satır veya sütun işlemlerini, değil mi?
+
+61
+00:28:14,836 --> 00:28:20,336
+Dönüştürmeye çalışacağım elimdeki genişletilmiş maddesi. Yapalım bunu, bakalım nasıl yapıyor.
+
+62
+00:28:22,675 --> 00:28:27,856
+Şurada, evet arkadaşlar bu tam olarak ekrana getireyim, takip etmesi kolay olsun.
+
+63
+00:28:28,615 --> 00:28:30,856
+Bakın, genişletilmiş maddesimizi yazdık.
+
+64
+00:28:35,155 --> 00:28:54,036
+Evet, paravanımızı koyalım araya. Bakın, sol tarafta A matrisi, aynı mertebeden birim matris. Tamam mı? Her seferinde, yani I3, sadece I da yazabilirim. Tamam mı? A'nın boyutunun ne olduğu belliyse, I3 demene gerek yok. I dediğin anda, o da üç, üçlük birim matris olduğu anlaşılsın.
+
+65
+00:28:54,955 --> 00:28:59,975
+Şimdi, ben bu matrise, bu genişletilmiş matrise, nasıl işlemler uygulayayım ki?
+
+66
+00:29:00,564 --> 00:29:25,124
+Bakın, sürecin sonunda elde edeceğin matris bu. Sol tarafta I var mı? Var. Sağ tarafta bir matris var, yıldızla göster. İşte o yıldızla gösterdiğim matris. Yani satırları sırasıyla 7-3-3, eksi 1-1-0 ve eksi 1-0-1 olan matris, işte size verilen A matrisinin tersi olacak. Bunun sağlamasını da yapabilir misin sonra? Yapabilirsin. Nasıl yaparsın?
+
+67
+00:29:25,556 --> 00:29:47,675
+Eğer doğru bulduysam bu matrisi, A ile sağdan çarptığında veya soldan çarptığında fark etmeksizin birim matrisi vermesi icap eder değil mi? Eğer bu eşitliği sağlayabiliyorsanız, bu çarpma işlemini yaparak A üzeri eksi bir ile demek ki doğru matris buldunuz. Değil mi? Eğer sağlamıyorsa demek ki yanlış matris buldunuz.
+
+68
+00:29:48,723 --> 00:30:13,824
+Yani bunun sağlamasını yapma imkanınız da var. Tamam, şimdi buraya gelmek istiyoruz ama nasıl geleceğiz? Yani sol tarafta birim matrisi olsun istiyorsun. Birim matrisin birinci satır, birinci sütün elemanı da birle başlıyor. Burada zaten bir var. Olmaya da bilirdi. Bir değilse bir haline getirecektik onu. Ama hazır zaten birse kullanalım değil mi? Yani istifade edelim bundan. Birim matris de ilk satırın pivotunun altındakiler sıfır.
+
+69
+00:30:14,163 --> 00:30:32,603
+Ama burada bir, o zaman ne yapmam lazım? Hedefimde bunlar var, sıfırlamam lazım. Nasıl sıfırlayacağım? İşte şu ikisi bir arada işlemi kullanarak. Yani ne demek o? Birinci satırın eksi bir katını ikinci satıra, yine birinci satırın eksi bir katını son satırına ilave ederseniz, bakın pivotun altındaki herkes sıfır olur mu? Olur sonraki adımda.
+
+70
+00:30:33,603 --> 00:30:40,603
+Evet. Sonra ikinci satırın eksi üç katını birinci satıra ilave ederseniz.
+
+71
+00:30:41,011 --> 00:31:08,192
+Şu 3, 0 olur mu? Olur değil mi? İkinci satırın, bakın işlem bu. Yani veya şöyle, ben kendi notasyonumla yazayım. Belki siz de daha aşina oldunuz ona. Eksi 3 katı, ikinci satırın. Birinci satıra ilave edin. İşte yeni birinci satır artık bu. Değil mi? Yalnız burada şunu unutmayın, genişletilmiş matris üzerinde elementer satır işlemi uyguluyorsanız, uzun satırlarla çalışıyorsunuz.
+
+72
+00:31:08,435 --> 00:31:18,875
+Yani sadece paravanın solundaki matrisin satırlarına değil, uzun satırlarla çalışıyorsunuz. Genişletilmiş matrisin satırlarıyla. Tamam mı?
+
+73
+00:31:20,175 --> 00:31:35,516
+Bakın mesela şurada birinci satırın eksi bir katını ikinci satıra ilave ederken sadece bir, dört, üç değişmemiş bakın. Paravanın sağındaki sıfır, bir, sıfır da değişmiş. Eksi bir, bir, sıfır olarak. Tamam mı? Uzunlamasına satırlarla.
+
+74
+00:31:35,903 --> 00:32:02,243
+uzunlamasına satırları güncelliyorsunuz yani. Evet, şimdi şu işlemi de kullandık, bu üçü de sıfırladık diyelim. O zaman elimizdeki matris bu, tamam mı? Birim matrise çok yakın değil mi? Şu da sıfır olaydı, birim matris olacaktı. Değil, sorun da değil.
+
+75
+00:32:02,932 --> 00:32:28,052
+Ama onu sıfırlayabilir misin? Sıfırlayabilirsin. Nasıl yaparsın onu? Tabii ki şuradaki birin, eksi üç katını üçe ilave etmek suretiyle değil mi? O da size zaten hangi işlemi kullanmanızı işaret ediyor, açık ediyor yani. Yani ne demek o? Üçüncü satırı, eksi üçle çarp, ilk satıra ilave et. Ama bunu genişletilmiş satırlarla yapıyorsunuz. Yani şu satırı komple, eksi üçle çarpıp bu satıra ilave ediyorsun anlamında. E onu yaparsanız işte sol tarafta artık,
+
+76
+00:32:28,596 --> 00:32:35,316
+Birim matris elde ettik. Sağ taraftaki matris de A matrisinin tersi olarak karşımıza çıkar.
+
+77
+00:32:37,036 --> 00:32:44,296
+Evet, öteki türlü arkadaşlar, yani bunu ilkel diye özellikle o kelimeyi kullanmıştım hatırlarsanız.
+
+78
+00:32:45,135 --> 00:32:51,195
+Öteki türlü bulmaya kalksak ne diyecektik buna? İşte A üzeri eksi bir, A ile aynı mertebeden bir matris.
+
+79
+00:32:51,195 --> 00:32:54,855
+A, B, C, D, E, F, G, H, K.
+
+80
+00:32:55,251 --> 00:33:18,011
+Olsun diyecektik. Değil mi? A ile çarpımı soldan veya sağdan birim matrisse şu denklemi kullanacaktım. O da bana ne verecekti? Dokuz tane lineer denklemden oluşan bir sistem verecekti. O sistemin tek çözüm olduğunu gösterecektim. Ama orada bir sürü iş var yani gereksiz ve uzun. Yani ilkel değişim o yüzden. Bakın bu ne kadar kolay.
+
+81
+00:33:22,612 --> 00:33:23,652
+Çok daha pratik.
+
+82
+00:33:25,852 --> 00:33:33,712
+Anlaşılmayan bir şey var mı arkadaşlar? Bir matrisin tersini genişletilmiş matris üzerinden nasıl elde edildiğine dair anlaşılmayan bir kısım var mı?
+
+83
+00:33:35,292 --> 00:33:36,392
+Tekrar edebiliriz yani.
+
+84
+00:33:37,372 --> 00:33:40,852
+Veya tekrar etmeyelim, bir sonraki örnekte yapalım isterseniz.
+
+85
+00:33:40,972 --> 00:33:42,652
+Çünkü soru aynı, matrisi değiştirmiş.
+
+86
+00:33:43,952 --> 00:33:46,612
+Bakın, bu defa da D matrisinin tersini bulalım.
+
+87
+00:33:48,180 --> 00:34:00,080
+Şimdi ne yapacağım? D'nin genişletilmiş matrisini yazacağım. Değil mi? Ondan sonra elementer satır işlemleri uygulamak suretiyle I solda belirene kadar. Belirdiği anda zaten sağındaki matris D'nin tersi olacak, inversi olacak.
+
+88
+00:34:00,860 --> 00:34:10,699
+Tamam. Yazalım o zaman bunun genişletilmiş matrisini. Şöyle ekranı biraz, şurayı da biraz temizleyelim.
+
+89
+00:34:18,643 --> 00:34:19,143
+Evet.
+
+90
+00:34:25,940 --> 00:34:49,659
+Genişletilmiş matrisimizi yazdık arkadaşlar. Paravanımız bu, bölmemiz tamam mı? Sağ tarafta birim matrisi var gördüğümüz üzere. Sol tarafta da D'nin kendisi var. Şimdi birim matrisi sol tarafta elde edene kadar elemente satış işlemleri uygulayacağım ona. İlk satır, ilk sütün elemanı birim matrisinin birle başlıyor. Bu matriste de tesadüf bu ya, birle başlamış. O zaman ne yapacağım? Birim altındakileri sıfırlamam lazım. Yani şu bir.
+
+91
+00:34:50,032 --> 00:35:03,912
+Sıfır olmalı, ikide sıfır olmalı. E nasıl olur? İşte şu iki işlemi bir arada kullanırsanız. Ne demek o? İlk satırın eksi bir katını ikinci satıra, eksi iki katını da son satıra ilave edersen, ilk satırın pivotu olan birin altındakiler sıfır olur mu? Olur.
+
+92
+00:35:05,992 --> 00:35:16,052
+Sonraki adımda matrisim bu, tamam mı? Sol tarafta birim matris henüz yani görünür değil. Üzerinde biraz daha çalışmamız gerekiyor demektir bu.
+
+93
+00:35:16,659 --> 00:35:41,759
+Bakın, yine iki, ikisi bir arada işlem kullanmış. Ne yapmak istiyor burada? Üçüncü satırın iki katını ilk satıra ilave et. Neden? Şu ikiyi sıfırlamak istiyor da ondan. Değil mi? Üçüncü satırın, tekrar ediyorum, iki katını ilk satıra ilave edersen, birinci satırın pivotundan sonra gelen eleman, yani iki sıfırlanır. Başka? Üçüncü satırı,
+
+94
+00:35:42,739 --> 00:35:58,079
+Eksi 3 ile çarpıp ikinci satıra ilave ederseniz, tekrar ediyorum bakın şunu kastedi, üçüncü satırı, eksi 3 ile çarpıp ikinci satıra ilave ederseniz, ne demek bu? Burada eksi 1 var bakın şöyle nokta nokta halkı için alayım.
+
+95
+00:35:58,639 --> 00:36:05,039
+Eksi 1'in eksi 3 katı 3 yapar, 3'ü eksi 3'e ilave edersen şu 0 olur da ondan değil mi? Bunu 0 yapmak istiyor.
+
+96
+00:36:06,547 --> 00:36:16,627
+Tabii bunu yaparken uzun satırlarla çalışmanız gerekiyor. Tamam, şu iki işlemi ikisi bir arada uyguladık. Bundan sonraki adımda karşımıza çıkacak olan matrise dikkat kesilelim.
+
+97
+00:36:18,207 --> 00:36:20,447
+Nerede o matris? Şurada.
+
+98
+00:36:23,987 --> 00:36:26,147
+Evet, buraları biraz temizleyelim.
+
+99
+00:36:30,483 --> 00:36:38,384
+Evet, az önceki işlemlerimizi yaptıktan sonra elde edeceğimiz matris, şimdi çerçeve içine alacağım onu.
+
+100
+00:36:40,844 --> 00:36:42,823
+Çerçeve içine alacağım, alayım.
+
+101
+00:36:44,503 --> 00:36:44,823
+Şu.
+
+102
+00:36:46,983 --> 00:36:47,363
+Bakın.
+
+103
+00:36:49,463 --> 00:36:52,663
+Son iki satırı yer paravanımızı da koyalım, bölmemizi.
+
+104
+00:36:53,364 --> 00:37:01,644
+Son iki satırı yer değiştirmeyi deneyebilirsiniz. Neden? Çünkü birim matrisinin ikinci sütunu şu şekilde ya ondan. Değil mi?
+
+105
+00:37:05,427 --> 00:37:28,607
+Yani şu çizgileri sütün olarak, birinci ve üçüncü sütün olarak, neyse şöyle yapalım. Yani birim maddesi düşünün, değil mi? İkinci sütünü bu şekilde. E o zaman ikinci satırla, üçüncü satırı yer değiştirirsem, değil mi? En azından şurada eksi bir elde ederim ama ondan sonra onu bir yapmak kolay. İşareti değiştiririm, değil mi? Eksi bir ile çarparım ikinci satırı da peşinden. Zaten bakın burada yaptığı da o.
+
+106
+00:37:29,268 --> 00:37:53,708
+İkinci satırı eksi bir ile de çarparsanız, şu eksi bir tam da olmasını istediğim gibi bir olur. Peşinden ne yapmanız gerekiyor? Bakın şurada, onu da sarıyla, birim matrisin son satırı nasıl? 0,0,1'dir. Burada 0,0,2 var. Şu ikiyi bir yapmam lazım. Nasıl yaparım? Bir bölü ikiyle çarparak üçüncü satırı. Değil mi? O zaman şu iki işlemi de bir arada.
+
+107
+00:37:54,483 --> 00:38:00,523
+Şu iki işlemi bakın, şu iki işlemi de bir arada kullandıktan sonra bir sonraki adımda elde edeceğim matris işte tam da şu.
+
+108
+00:38:01,483 --> 00:38:06,743
+Bölmemizi de koyalım. Birim matris elde ettik mi? Henüz elde etmedik ama oldukça yakınız değil mi?
+
+109
+00:38:07,064 --> 00:38:15,064
+Köşegenin üzerindeki elemanlara bakın. Eksi beşin sıfır olması gerekiyor, üçün de sıfır olması gerekiyor mu? Evet, gerekiyor.
+
+110
+00:38:15,324 --> 00:38:21,483
+E bunu nasıl yaparsınız? Bakın şu aşağıda bir var. E biri eksi üçle çarpıp üçe ilave edersen sıfır olur.
+
+111
+00:38:22,003 --> 00:38:48,264
+5 ile çarpıp, eksi 5'e ilave edersen, eksi 5 de 0 olur. Yani ne demek istiyorum? Şuradaki ikisi bir arada işlemlere bakın. Son satırın 5 katını ilk satıra, yine son satırın eksi 3 katını da ikinci satıra ilave ederseniz, bulacağınız matris işte taslaman budur. Bölmeyi şuraya koyalım. Sol tarafta bir matris var mı? Evet, var. Sağ taraftaki matris işte D'nin tersidir o zaman. Yani şu.
+
+112
+00:38:49,204 --> 00:39:05,644
+Elemanları kesili sayılar çıktı, hiç sorun değil. Sınavda kesili olmayan sayılar çıkarsa tabii daha iyi olur değil mi? Elemanları tam sayılar olsa. Ona da dikkat eder komisyon yani. Kesili sayılarda çünkü toplama çıkarma yaparken hata yapma imkanı ihtimali fazla olduğu için.
+
+113
+00:39:06,099 --> 00:39:32,619
+Biz buna dikkat ederiz yani. Sizin aklınıza gelmese bile bizim aklımıza gelir. O yüzden merak etmeyin. Çok böyle tuhaf ve de büyük kesili sayılarla toplama çıkarma yapmamızı gerektirecek örnekleri biz göz ardı ederiz öyle söyleyeyim size. Çünkü test sınavıdır. 5 dakika yani öğrenciyi ara işlemlerde tıkanmasını istemeyiz yani. Önemli olan bilgisini.
+
+114
+00:39:33,364 --> 00:39:40,123
+Konuşturabiliyor mu soruda değil mi? Yani biz onun aritmetik bilip bilmediğini ölçmüyoruz ki sınavda. Lineerce bir dersi bu.
+
+115
+00:39:41,804 --> 00:39:45,423
+Anlaşıldı mı arkadaşlar? Bir matrisin tersine nasıl bulunduğu.
+
+116
+00:39:47,583 --> 00:40:00,000
+Çözümlü problemler var. Ben kitaptan buraya kadar tarama yaptırmışım. Çözümlü problemler bakın adı üzerinde. Bir sürü problem var burada. İlk adımda iyi de olur yani.
+
+117
+00:40:00,000 --> 00:40:07,239
+Bu tip problemler üzerinden bir şeyler öğrenirsiniz ama bağımlılık da yaratmasın.
+
+118
+00:40:09,500 --> 00:40:13,979
+Kendi başınıza da çözebiliyor musunuz? Bu önemli. Çünkü sınavda olacak olan tam da bu.
+
+119
+00:40:14,539 --> 00:40:18,679
+Kendi başına kalacaksın değil mi? Kimse önüne çözümlü bir problem koymayacak.
+
+120
+00:40:18,779 --> 00:40:21,979
+Kendi bilgini konuşturacaksın kendi başına. Kendi başınasın yani.
+
+121
+00:40:22,708 --> 00:40:44,807
+Dolayısıyla o pratiği kazanmanız gerekiyor. Bu da çok soru çözmekle kazanılır. Önce çözülmüş hazır problemlerle başlarsın, sonra kendin çözmeye çalışırsın. Olduğu kadar. Evet, bunu kapatalım. Bu haftanın konusu olan determinata geçelim. Yani dediğim gibi, Türkçe kitaptan oraya kadar aldığım için print.
+
+122
+00:40:45,972 --> 00:41:06,952
+Kolman'ın kitabına geçiş yapalım. Şimdi bakın, determinantının tanımını çok güzel, formal bir tanımını veriyor burada, permütasyonlar cinsinden ama matematik bölümü olsa ben bu şekilde anlatmayı tercih ederim ama iki saatlik servis dersinde determinantın formal tanımını anlatmaya gerek yok. Yani hocaların çoğunun da anlattığını zannetmiyorum.
+
+123
+00:41:07,891 --> 00:41:34,991
+Ben ilk başlarda anlatıyordum bunu, sonradan baktım, yani gereksiz yere zamandan harcıyorum. İki saat olunca yani, her dakikanın kıymeti var yani. Bu ders aslında asgari üç saat olması gerekirdi haftada. Yani Bolonya süreçleri hazırlanırken iki saat uygun görünmüş. Ama iki saatlik bir ders müfredatı gibi değil yani. Üç saatlik bir kurs müfredatı var yani burada asgari.
+
+124
+00:41:35,411 --> 00:42:02,431
+Neyse, bu permütasyon olayına ben girmek istemiyorum. Yani burada gördüğünüz bir iki en kümesi var, bakın S kümesi. Tam sayıların, pozitif tam sayıların bir kesiti diyelim ona. Ya o kümenin permütasyonlarında ne anladığımızı söylemem lazım. Tek permütasyon nedir? Çift permütasyon nedir? İnversiyon nedir? Bütün bunlardan bahsetmem gerekiyor ki size determinantın formal tanımını şurada olduğu gibi verebileyim.
+
+125
+00:42:02,719 --> 00:42:25,380
+Yani determinant dediğin şey demek ki bu sayısal bir şey zaten. Bir kare matrisin determinantı o matrisi karşılık getirdiğin bir sayısal değer. Etiket gibi düşün yani. Nasıl oluyor? İşte bak artı eksi bir şeyler var burada. İşte tek cip permutasyon olayı var. Oralara girmek istemiyorum. Peki bunları niye anlatıyorsunuz bize diyebilirsin. Merak eden varsa, formel tanımını.
+
+126
+00:42:25,972 --> 00:42:34,972
+Bakabilir, tamam mı? Biz kitabın yaptığı gibi kestirmeden anlatalım ama kitap şunu yapıyor, benim hoşuma gitmedi.
+
+127
+00:42:35,072 --> 00:42:42,952
+Yani bu kitabın example dediğine kitap orada tanım diyor, Türkçe kitap. Yani tanımla örnek arasında çok fark var.
+
+128
+00:42:44,052 --> 00:42:49,912
+Tanım ne demek? İlk defa bir şey tanımlıyorsundur orada. Örnek onun sağlamasıdır yani, örnekleme adı üzerinde.
+
+129
+00:42:49,912 --> 00:42:52,312
+Örneğe tanım denmez, tanıma örnek denmez.
+
+130
+00:42:53,780 --> 00:43:15,052
+Şimdi burada example diyor, çünkü adam formal tanımını verdi az önce. Değil mi? Ama kitap ne diyor? Mesela bir matrisin determinantı. Matris bir çarpı birlik olursa diyor, tamam mı? E onun determinantı işte o sayının ta kendisidir diyor. Ya bu tanım değil ki aslında. Değil mi? Biz bunu tamam, tanım olarak...
+
+131
+00:43:15,539 --> 00:43:40,760
+Kabul edelim şimdilik. Peki matris bir çarpı birlik değil. İki çarpı ikilikse bunun determinantı nedir? O zaman determinantı da şu olsun. Ne görüyorsunuz orada? Bakın sağ köşegen üzerindeki elemanlar çarpılmış, sonra da sol köşegen üzerindeki elemanlar çarpılmış, bunların farkı alınmış. Değil mi? Demek ki her ne zaman iki çarpı ikilik bir kare matris varsa elinizde, onun determinantından anlamanız gereken bu.
+
+132
+00:43:41,652 --> 00:43:57,351
+Sağdaki asal köşegen üzerindeki elemanları çarp, ters köşegen üzerindeki, sol köşegen üzerindeki elemanları çarp, farkını al. Yani ters köşegen üzerindeki elemanların çarpımlarının işareti eksi. Anlatabiliyor muyum? Yani şöyle söyleyeyim isterseniz.
+
+133
+00:43:59,152 --> 00:44:04,172
+Mavi ile gösterdiğim rota var ya, orada gördüğün elemanları çarpıyorsun, onun işareti eksi.
+
+134
+00:44:04,788 --> 00:44:13,188
+Kırmızıyla gösterdiğim rota, yani asal köşegen, orada gördüğün elemanların çarpımının işareti artı. Artı olduğu için başına yazılmaz tabii ki.
+
+135
+00:44:14,087 --> 00:44:21,668
+2 çarpı 2'lik matrisin determinantı da bu. Mesela işte eğer matris buysa bunun determinantı nedir?
+
+136
+00:44:22,427 --> 00:44:28,467
+2 kere 5, 10, eksi, eksi 3 çarpı 4. O da 22 yapar.
+
+137
+00:44:29,012 --> 00:44:41,851
+Tamam mı? E peki matris 3x3 ise burada olduğu gibi, bunu determinantını nasıl alacaksınız? Yani burada kitap, bakın kitap bir şeyler yazıyor oraya ama dediğim gibi yani formal tanımını verdiği için yazıyor oraya.
+
+138
+00:44:42,512 --> 00:44:53,512
+Altı terimli bir toplam var burada, üç tanesi pozitif işareti, üç tanesi negatif. Tamam mı? Dikkat edin, şu asal köşegenidir.
+
+139
+00:44:55,827 --> 00:45:22,507
+Asal köşegen üzerindeki elemanların veya rotanın, o rota üzerindeki elemanların çarpımı, işareti artı. Onun gibi iki tane daha var, onlar nereden geliyor? İşareti eksi olan üç tane daha terim var, onlar ne demek? Bu soruları sorabilirsiniz tabii. Burada mesela aslında özünde sarı kuralı diyebildiğimiz bir şeyi anlatıyor ama o beşinci haftanın konusu. O yüzden ben buna değinmek istemiyorum şimdilik. Sarı kuralı da sadece üç çarpı üçlük matrisinin determinantı için kullanılır.
+
+140
+00:45:22,804 --> 00:45:42,244
+Yani 4x4 olsa olmaz. O zaman tanım bu değil yani. Bu da değil yani. Bu da değil. Burada yaptığı şey şu, 3x3'lük matris bu. Gördüğünüz gibi bakın ilk iki sütununu sağına yazmış matrisin. Tamam mı? Yaptığı şey bu. Sonra da bu asal köşegen.
+
+141
+00:45:42,612 --> 00:46:10,252
+İşareti artı, şunlar da ona paralel olan rotalar, onların da işareti artı. Ters, diagonele bakalım, o bu, işareti eksi, buna paralel olan diğerleri de eksi. Tamam mı? Üç tane kırmızı, üç tane de mavi rota var. Kırmızı rotalar üzerindeki sayıları çarp, her bir rota için bunu yap, ilave et ötekine tamam mı? Sonra mavilere gelince gene aynı şey, o rota üzerinde gördüğün elemanları çarp ama işaretleri eksi olarak toplama ilave edin.
+
+142
+00:46:11,380 --> 00:46:17,220
+Yani bu aslında özünde determinantın formel tanımıdır, permütasyonlar cinsine.
+
+143
+00:46:17,800 --> 00:46:22,140
+Eksi olanlar tek permütasyonlara, artı olan terimler çift permütasyonlara karşılık gelir.
+
+144
+00:46:22,659 --> 00:46:25,020
+Sarus kuralı diye de bilir bazıları bunu.
+
+145
+00:46:25,740 --> 00:46:27,659
+Dediğim gibi onu önümüzdeki hafta anlatacağım artık.
+
+146
+00:46:28,680 --> 00:46:36,900
+Şimdi biz üçüncü mertebeden veya dördüncü, beşinci, eninci mertebeden bir maddesin determinantını nasıl bulacağız?
+
+147
+00:46:37,060 --> 00:46:39,079
+Tanım nedir? Yani veya yöntem nedir?
+
+148
+00:46:39,376 --> 00:46:55,436
+Değil mi? Yani 1 çarpı 1 olursa ne olduğunu söyledik. 2 çarpı 2 olursa tamam söyledik. 3 çarpı 3 de henüz söylemedik değil mi? Burada söyledi de ben bunu şu an kullanmak istemiyorum. Yani Sarus kuralı olarak anlatacağım bunu önümüzdeki hafta.
+
+149
+00:46:56,956 --> 00:47:05,516
+Evet, o zaman hangi metodu kullanacağız? İşte Laplace açılımı denen yöntemi kullanacağız arkadaşlar.
+
+150
+00:47:06,739 --> 00:47:16,219
+Şimdi buraya gelmezden evvel eş çarpan yöntemi, yani laplas açılımı.
+
+151
+00:47:16,739 --> 00:47:18,979
+Kofaktör dediği şey eş çarpan Türkçesi.
+
+152
+00:47:20,699 --> 00:47:23,819
+Tamam mı? Buna laplas açılımı diyoruz.
+
+153
+00:47:24,659 --> 00:47:26,139
+Laplas açılımını biliyorsanız,
+
+154
+00:47:27,155 --> 00:47:34,975
+Matris'in boyutunun ne olduğu hiç önemli değil. İsterse eninci mertebeden bir kara matris olsun. Determinantını hesaplayabilirsiniz.
+
+155
+00:47:36,315 --> 00:47:40,315
+Yani boyutu nispeten düşük olduğunda değişen bir şey olmaz. Sağlamasını yapmış olursunuz.
+
+156
+00:47:40,315 --> 00:47:50,395
+Yani eninci mertebeden bir kara matrisin determinantını nasıl hesaplandığını biliyorsanız artık o en 2, 3, 4 olmuş bir şeyi değiştirmez değil mi? Sağlamasını yaparsınız.
+
+157
+00:47:52,947 --> 00:48:05,427
+Şuraları biraz temizleyelim. Bu eş çarpan veya işte labras açılımı nedir? Bunu anlatmadan önce bir matrisin elemanlarının minörü ve eş çarpanları, yani kofaktörlerinden ne anladığımızı söylememiz lazım.
+
+158
+00:48:08,724 --> 00:48:20,224
+Miner ile kofaktör aslında birbirlerine çok benziyorlar. Aradaki tek fark, yani odaklandığınız matris elemanına göre işaret olabilir farkları birbirlerinden.
+
+159
+00:48:20,224 --> 00:48:31,583
+Şimdi bakalım, A şöyle bir matris, kare matris, eninci mertebede. Tamam mı?
+
+160
+00:48:31,824 --> 00:48:37,684
+Bunun i'ninci satır, j'ninci, şöyle yapalım ya, ben notlarımda bunu yazmıştım, bakın, oradan anlatayım size.
+
+161
+00:48:40,204 --> 00:48:43,884
+Evet, şu, ekrandan gösterelim.
+
+162
+00:48:45,264 --> 00:48:49,344
+A maddisinin i'ninci satır, j'ninci sütununu alalım.
+
+163
+00:48:50,884 --> 00:48:51,344
+Tamam mı?
+
+164
+00:48:52,304 --> 00:48:54,543
+i'ninci satır, j'ninci sütun.
+
+165
+00:48:54,623 --> 00:48:56,203
+Orada bir tane eleman, tipik eleman.
+
+166
+00:48:56,203 --> 00:48:58,284
+Bu elemanın, yani,
+
+167
+00:48:58,608 --> 00:49:22,548
+İstediğin bir elemanı olabilir. Ben bir tane numune alıyorum, tamam mı? Mostra yani. Mostra alıyorum, tamam mı? Mostralık elemanı alıyorum. İstediğin bir tanesi alabilirsin. İstediğin satır sütundaki elemanı alabilirsin. Şimdi bu elemanın minöründen ben ne anlamam gerekiyor? Şunu anlamam gerekiyor. Bu elemanın bulunduğu satır sütunu silersen, bir kare matristen bir satır bir sütün sildiğinden kalan matris ne olur?
+
+168
+00:49:23,699 --> 00:49:36,659
+mertebesi bir birim düşer değil mi? En eksi birinci mertebeden olur. İşte o kalan matris, alt matris diyelim, o matrisin determinantına bu elemanın minörü diyoruz arkadaşlar. Anlaşıldı mı bu tanım?
+
+169
+00:49:40,148 --> 00:49:42,408
+Hocam bir daha anlatabilir misiniz?
+
+170
+00:49:42,748 --> 00:49:56,968
+Anlatalım. Bak, matrisin herhangi bir satır sütununda bir elemana odaklandım. A, İ, J. Tamam mı? İstediğin eleman olabilir. İstersen A1, 1 olur. İstersen A, N, N olur. Tamam mı? İstediğin elemana odaklan. A, İ, 1 olur. İstersen.
+
+171
+00:49:58,048 --> 00:50:03,568
+Şimdi bu elemanın, mesela şu elemanı minöründen ne anlayacaksın? Bu elemanın bulunduğu satırı, sütunu sileceksin.
+
+172
+00:50:04,820 --> 00:50:12,960
+Kalan matrisin determinantını yazacaksın. Bu. Minörün tanımı bu. İstersen şurada hemen altta bir örnek verelim.
+
+173
+00:50:16,160 --> 00:50:27,660
+Bakın. Tekrar bir matris yazalım. Yani 1, 2, 3, 4. Tamam mı?
+
+174
+00:50:33,427 --> 00:50:38,188
+Yani tabii ben önceki matrisin aynısını almış olmadım değil mi? Şuraya eksi bir koymam lazım.
+
+175
+00:50:40,268 --> 00:50:43,447
+A2-2, eksi bir almışım çünkü. Silmeden önceki hali bu.
+
+176
+00:50:44,347 --> 00:50:49,288
+Bakın, A1-1-1. Yani şunu kastediyorum. Bu matrisin minörü. Ne demek?
+
+177
+00:50:49,715 --> 00:51:08,996
+Onun bulunduğu satırı sütünü silersin, kalan matris, zaten matrizi 2x2 verdiysem, böyle bir matristen bir satır veya bir sütün silersen, geriye 1x1'lik bir alt matris kalır. Böyle bir matrisin determinantı da o sayının ta kendisi. O zaman minör, A11 nedir? Eksi 1'dir.
+
+178
+00:51:10,291 --> 00:51:32,692
+Değil mi? Mesela şu sayının, bu elemanın minörü nedir dersen, ne diyeceksiniz bana? Onun bulunduğu satırı sütünü silelim. Ne var geriye? 3 kaldı değil mi? Alt matrisin determinantı, minör, A1, 2, 3. Bunu kastediyorum. Kofaktörüne gelelim. Yani eş çarpanı ne demek peki eş çarpanı?
+
+179
+00:51:38,164 --> 00:51:58,624
+Matris'in bir elemanını, bak herhangi bir elemanı, bu elemanın eş çarpanını A, İ, J ile gösterelim. Yani eş çarpan, her elemanın minörü olduğu gibi eş çarpanı da var yani. A, İ, J'nin eş çarpanını da büyük A, İ, J ile gösterelim. Tamam mı? O ne demek?
+
+180
+00:51:59,923 --> 00:52:18,944
+A, i, j'nin bulunduğu satır üstünü sil, kalan matrisin determinantını yaz ama başına da şunu ekle. Bak, işaret farkı var dedim ya. Bak, sadece şu kısmı minör zaten. Minör, A, i, j. Benim size tavsiyem hiç minöre falan odaklanmayın direkt. İşaretiyle beraber yazın ko faktörü olsun bitsin yani.
+
+181
+00:52:20,124 --> 00:52:25,124
+Bu eksi bir üzeri i artı j. Yani bu bazen eksi olur. Mesela eksi olur, artı olur değil mi?
+
+182
+00:52:25,844 --> 00:52:39,983
+Çünkü i, j dediğin satır ve sütun. Yani hangi elemanı alıyorsan, o elemanın bulunduğu satır ve sütünü gösteren sayı değerleri, tam sayı değerlerini toplarsan, i artı j'yi kastediyorum, o ya bir tek sayıdır ya da çift sayıdır.
+
+183
+00:52:40,644 --> 00:52:52,124
+Eksi birin tek kuvveti eksi olur, çift kuvvet de artı olur. O yüzden eksi bir üzeri i artı j, ya eksidir, ya artı. Değil mi? Yani ya eksidir, ya artı.
+
+184
+00:52:53,876 --> 00:53:10,696
+Peki, her seferinde yani bu eksi bir üzeri i artıcı eksi mi artı mı diye bakmana gerek var mı? Yok, onun da kolay bir yolu var bakın. İşaret tablomuz var bizim. Matris 3x3 ise matris elemanlarının eş çarpanlarının işaretini bu şekilde dağıtırsın.
+
+185
+00:53:11,059 --> 00:53:22,099
+Yani dama tahtası gibi mi diyorsun? Orada mesela iki tane siyah kare veya iki tane beyaz yan yana, alt alta, üst üste gelmiyor. Burada da aynı işaretler yan yana, alt alta, üst üste olmayacak şekilde dağıtıyor.
+
+186
+00:53:22,940 --> 00:53:37,059
+A11'in kofaktörünün işareti artı. Neden? Çünkü i eşittir 1, j eşittir 1 ise, i artı j eşittir 2 değil mi? Eksi 1 üzeri 2 de pozitiftir yani. O yüzden.
+
+187
+00:53:37,780 --> 00:54:04,719
+Tamam, ilk eleman işareti artıysa, ondan sonrakilerde, yani her elemanın yanında, altında, sağında, solundaki zıddı olacak şekilde dağıtırsan, değil mi? İşaret tablosu budur. 4 çarpı 4 olursa ne olur? Devam edersin. Eksi artı, eksi artı, eksi artı, şurası eksi, şurası artı olur. İsterse 5 çarpı 5 olsun, devam edersin yani. Artı, eksi artı, eksi değil mi? Artı, eksi artı.
+
+188
+00:54:06,387 --> 00:54:25,968
+Artı, böyle mi? Artı, eksi, artı. Evet. İşaret tablosu bu. Yani şuna takılmana gerek yok. Eksi bir üzeri i artı c'ye takılmana gerek yok. Direkt matrisde her elemanın kofaktörünün işaretini bu şekildeki dağıtımdan kendin yazabilirsin.
+
+189
+00:54:28,108 --> 00:54:29,847
+Evet, dönelim buraya.
+
+190
+00:54:35,380 --> 00:54:36,940
+Şurayı
+
+191
+00:54:36,940 --> 00:54:39,280
+silelim.
+
+192
+00:54:44,980 --> 00:54:50,080
+Evet arkadaşlar, mesela minorle hiç uğraşmayalım, direkt kofaktörden gelelim isterseniz, tamam mı?
+
+193
+00:54:50,860 --> 00:54:53,700
+Minorle kofaktör arasındaki fark sadece işaret olabilir.
+
+194
+00:54:54,160 --> 00:54:57,300
+Bakın mesela A1-2, büyük harfle, A1-2 nedir?
+
+195
+00:54:58,440 --> 00:55:00,940
+A1-2 eş çarpanı.
+
+196
+00:55:02,640 --> 00:55:06,960
+Hangi elemanın? A1-2, birinci satır, ikinci sütun elemanının eş çarpanı.
+
+197
+00:55:07,820 --> 00:55:12,140
+Birinci satır, ikinci sütundaki eleman için işaret tablomuz bize ne diyor?
+
+198
+00:55:13,940 --> 00:55:39,539
+Bakın birinci satır, ikinci sütun elemanı hangisi? Şu, değil mi? A1-2 bu. İşaret tablomuz ne? Kofaktörlerinin işaret tablosu. Artı, eksi, artı, eksi, artı, eksi, artı, eksi, eksi. İşaret tablosundan eksi olduğunu görüyoruz. O zaman A1-2'ye ne diyeceğim? Eksi çarpı determinant. Bunun bulunduğu satır sütunu sildim. Geriye kalan alt matris 2 çarpı 2'liktir o.
+
+199
+00:55:39,952 --> 00:56:07,572
+İlk satırı 4, 6, ikinci satırı 7, 2 gördüğünüz gibi bakın. 2 çarpı 2'lik bir matrisin determinantında ne anlamamız gerektiğini az önce söyledik. Asal köşegen üzerindeki elemanları çarp, değil mi işareti artı, ters köşegen üzerindeki elemanları çarp, işareti eksi, bunları topla. Yani A1, 2 eşittir, eksi 4 kere 2, 8, eksi 6 kere 7, 42. Değil mi? O da ne yapar?
+
+200
+00:56:08,083 --> 00:56:11,483
+Eksi 8 artı 42, yani 34.
+
+201
+00:56:12,623 --> 00:56:17,144
+Ya bu şekilde A'nın her elemanı için kofaktörü hesaplayabilirsiniz.
+
+202
+00:56:17,264 --> 00:56:19,083
+Bakın nitekim diğerleri için de yapıyor.
+
+203
+00:56:19,224 --> 00:56:21,304
+Mesela siz de bunları teyit edin.
+
+204
+00:56:21,384 --> 00:56:23,744
+Mesela A3 1'i eksi 16 olarak bulun.
+
+205
+00:56:23,903 --> 00:56:26,003
+A2 3'ü eksi 10 olarak bulun.
+
+206
+00:56:26,623 --> 00:56:27,043
+Tamam mı?
+
+207
+00:56:29,023 --> 00:56:30,324
+Bunları bulabilirsiniz.
+
+208
+00:56:31,155 --> 00:56:50,816
+Bakın az önce söylediğim şey, matrisin boyutunun ne olduğu hiç önemli değil. İşaret tablosu bu şekilde dağıtılır. Tamam mı? Bak bunları matris elemanlarının işareti gibi anlamayın. Bunlar kofaktörlerin işaretleri. Tamam mı? Kofaktörlerin işaretleri.
+
+209
+00:56:56,052 --> 00:57:22,672
+Hayati önemde bitiyor. Tamam mı? Bize bir maddesin, kare maddesin, üstelik de boyutu ne olsa olsun, nasıl hesaplanması gerektiğini söylüyor. Nasıl hesaplanması gerektiğini söylüyor arkadaşlar. Şöyle bir temizleyelim ekranımızı. Bakalım ne anlıyorsunuz bundan bilmiyorum ama. Bakın en çarpı enlik bir kare maddesin determinantından. Diörem diyor ki şunu anlaman gerekiyor. Yani burada ininci satıra göre açılım yaparsan diyor.
+
+210
+00:57:23,380 --> 00:57:29,020
+Diğerinde de J'ninci sütuna göre açılım yaparsan, dikkat edelim bakın.
+
+211
+00:57:29,600 --> 00:57:32,360
+Yani matrisin determinantı değişmiyor bakın.
+
+212
+00:57:33,380 --> 00:57:35,380
+Ha, i'ninci satır, J'ninci sütun.
+
+213
+00:57:35,480 --> 00:57:36,000
+Niye peki bunu?
+
+214
+00:57:36,100 --> 00:57:37,060
+Ya şunu söylemek istiyorum.
+
+215
+00:57:37,060 --> 00:57:45,320
+Bir matrisin determinantını ister istediğin bir satırı referans seçerek açabilirsin, ister istediğin sütunu referans seçerek açabilirsin.
+
+216
+00:57:47,000 --> 00:57:47,400
+Bunu söylüyorum.
+
+217
+00:57:47,460 --> 00:57:48,340
+E peki nasıl açarım?
+
+218
+00:57:48,440 --> 00:57:48,820
+İşte şu.
+
+219
+00:57:49,060 --> 00:57:50,000
+Altını çiziyorum bakın.
+
+220
+00:57:51,507 --> 00:58:17,607
+İ'ninci satırı baz aldıysan, dikkat et bir toplam var. Toplamın terimlerine dikkat edin arkadaşlar. Bakın, her terimde, yani her kutu içinde ne görüyorsun? İ'ninci satır elemanlarına bakın. A, i, 1, A, i, 2, A, i, n değil mi? Her eleman kendi eş çarpanıyla çarpılmış mı, çarpılmamış mı? Evet, çarpılmış.
+
+221
+00:58:19,092 --> 00:58:44,972
+A, İ, N. Sonra da toplanmış. İşte buna determinant diyorsun. Laplas açılımı bu. Peki sütun baz alarak, referans alarak yapsam, o zaman da bakın, İndisler'de tabii ona göre bir uyarlama söz konusu ama yaptığı şey şu, J'ninci sütun elemanlarını yazayım matrisini. J'ninci sütunun elemanları sırasıyla kim olur? A, bir, J.
+
+222
+00:58:45,780 --> 00:59:13,280
+A2J değil mi? ANJ. Bakın diğer sütunları çizgiyle gösterelim. Şu J'ninci sütun. Her elemanın kendi eş çarpanını düşün. A1J, A2J değil mi? ANJ. İşte bakın bunların çarpımları var tam olarak burada. Her eleman kendi eş çarpanıyla çarpılıp toplanmış. Ama hangi elemanlar?
+
+223
+00:59:14,036 --> 00:59:26,936
+Bir sütun veya bir satırda, referans satır diyorum ona ben veya referans sütun, değil mi? O satır veya sütundaki elemanlar kendi eş çarpanlarıyla çarpılıp toplanmış, buna da determinant denmiş.
+
+224
+00:59:29,716 --> 00:59:31,036
+Teoremi söyledi bu, efendim.
+
+225
+00:59:31,443 --> 00:59:58,764
+Bir şey sorabilir miyim? Sor tabii, istediğini sorabiliriz. Bu determinantlar o zaman hep negatif sonuçlar mı veriyor? Çünkü eş çarpanıyla çarpıldığında… Hayır, negatif niye versin ki? Yani kofak bir işareti eksi olur, artı olur. Eee? Biri artıysa, diğeri eksi olmayacak mı zaten hocam? Eş çarpanı olduğu için. Yani bak, eş çarpanın işareti eksi olur, artı olur. O önemli değil.
+
+226
+00:59:59,411 --> 01:00:10,091
+Bir de matrisin elemanı var. Onun da işareti var. Sen bilemezsin ki bu toplam sana eksi bir sayımı verir, artı bir sayımı verir. Nereden bileceksin ki bunu?
+
+227
+01:00:11,111 --> 01:00:11,711
+Tamam hocam.
+
+228
+01:00:12,391 --> 01:00:24,831
+Yani bunu bak örnekte gösterelim, daha iyi anlarsın. Şimdi örnek dediği de, yani şu, evet 4x4'lük şu matris üzerinde.
+
+229
+01:00:25,248 --> 01:00:28,768
+Anlamaya çalışalım bunu o zaman. Bakın. Şu.
+
+230
+01:00:32,947 --> 01:00:40,767
+Bir matrisin determinanta her zaman negatif bir sayıdır. Asla öyle bir şey söyleyemeziz yani. Az önceki teoremde asla öyle bir şey ima etmiyoruz zaten.
+
+231
+01:00:43,747 --> 01:00:55,627
+Şimdi bakın, elimde bir matris var, A matris. Tamam, A matrisi bu ise, soru şu, determinantı nedir? Yani bu matris 4x4'lük bir matris.
+
+232
+01:00:56,307 --> 01:01:11,307
+Sen bunu demek ki bir satır veya bir sütün referans seçeceksin, sonra 3x3'lük bir matise indirgeyeceksin demektir o. Değil mi? Çünkü dörtlük bir kara matisten bir satır bir sütün sildiğinde 3'lük kara matise indir gelsin. Sonra 3'lük matisi...
+
+233
+01:01:11,891 --> 01:01:32,971
+Yani üçlük matris için de benzer şeyi yapacaksın. Yani Laplace açılımını tekrarlı bir şekilde kullanmaktan bahsediyorum aslında, farkındaysanız. O da iki çarpı ikilik bir matrize indirgenecek. İki çarpı ikilik kare matrisin determinantının artık nasıl olduğunu biliyoruz. Değil mi? Ya aslında iki çarpı ikilik matrisin determinantını da Laplace'da yapsan, yani söylediğimiz şeyin ta kendisi çıkıyor ortaya.
+
+234
+01:01:39,443 --> 01:01:57,523
+Bakın, A1-1, A1-2, A2-2-1, pardon, A2-2 olsun. Biz ne dedik bu matrisin determinantına? Asal köşegen üzerindekileri çarp, işareti artı dedik, o rotadaki elemanların çarpımı. Sonra ters köşegen üzerindeki elemanları çarp.
+
+235
+01:02:06,516 --> 01:02:28,116
+Ters köşegen üzerindeki elemanları çarp, A1-2, A1-2 ile A2-1'in çarpımı. Bunun işareti eksi, toplama eksi olarak ilave et bu terim. Tamam mı? Buydu değil mi? E, laplas açılımından bu aynı şey ki. Teoremin söylediği aynı. Bak, determinant A, teorem ne diyor sana? Bak, teorem. Teorem de diyor ki, bir satır veya bir sütün seç referans olarak.
+
+236
+01:02:29,492 --> 01:02:56,731
+İstediğin satırı seç ya veya istediğin sütunu. Ben mesela birinci satıra göre bunun açılımını yapayım. Ne demek bu? Bu satırda gördüğün her elemanı kendi eş çarpanıyla çarparak topla. A11, A11. Pardon. Değil mi? Sonra sıradaki eleman kim bu satırda? Referans satırımdaki sıradaki eleman tabii ki A12. Bunu da kendi eş çarpanıyla çarp. Toplama ilave et. Tamam mı?
+
+237
+01:02:58,708 --> 01:03:13,807
+Tamam, yapalım. A11 nedir? Pardon, A11'in ne olduğunu bilmiyorum. Çünkü açık vermedim maddesi. A11'in eş çarpanını yazalım. Kimdir o? Söyler mi? Az önce konuşan arkadaşla yapalım bunu.
+
+238
+01:03:16,107 --> 01:03:20,708
+A11'in bulunduğu satırı sütünü silersen, kalan maddes 1 çarpı 1. Değil mi?
+
+239
+01:03:21,204 --> 01:03:27,544
+Onun determinatı, işareti artı zaten, bunun işareti artı, dikkat edin, A1-2'nin işareti eksil, tamam mı?
+
+240
+01:03:31,144 --> 01:03:44,684
+Büyük A1-1 nedir o zaman? A2-2, öyle değil mi? Artı A1-2, şuna bakalım, bu kim? A1-2 nerede? Burada, bakın, bunun bulunduğu satırı sütunu silin.
+
+241
+01:03:44,684 --> 01:03:46,204
+A1-2
+
+242
+01:03:47,603 --> 01:04:05,783
+Birinci satırla ikinci sütünü silersen, A2-1 kalır ama işaretinin eksi olduğunu söyledik, tamam mı? Eksiyi koyarsan başına. İşte aynı şey bakın, teoremin söylediği şeyle, en başında 2x2'lik matrisinin determinantı budur dediğim şeyin ta kendisi. Değil mi?
+
+243
+01:04:09,300 --> 01:04:18,700
+Evet, biz şu matrisin determinantını bulmak istiyoruz. Arkadaşlar, burada bir 10 dakika ara vereyim, tamam mı?
+
+244
+01:04:20,480 --> 01:04:28,220
+Bu, 4 saat ders verdim, 1 saat de buraya verdik, 5 oldu. Yani 6. saate kadar insan biraz yoruluyor tabii.
+
+245
+01:04:29,980 --> 01:04:35,920
+Burada müsaadenizle ben bir 10 dakika ara vereyim, tamam mı? Ondan sonra şu matrisin determinantını nasıl hesaplıyor, ona bakalım beraber.
+
+246
+01:04:37,780 --> 01:04:42,480
+16.10'da kaldığımız yerden devam edelim. Oldu mu? Görüşmek üzere.
+
+247
+01:14:27,283 --> 01:14:29,663
+Evet arkadaşlar, kaldığımız yerden devam edelim.
+
+248
+01:14:31,823 --> 01:14:33,343
+Burada kalmıştık.
+
+249
+01:14:35,203 --> 01:14:40,484
+Evet, şu ekranda gördüğünüz 4x4'lük A maddesinin determinantını bulmak istiyoruz demiştim.
+
+250
+01:14:40,963 --> 01:14:43,083
+Şimdi bir zoom yapayım şuraya.
+
+251
+01:14:43,904 --> 01:14:48,083
+İstediğin satırı veya sütunu referans kabul etmekte serbestsiniz.
+
+252
+01:14:49,163 --> 01:14:51,843
+Hangi satırı veya sütunu tercih edersin?
+
+253
+01:14:53,587 --> 01:14:55,247
+Var mı tercihini söylemek isteyen?
+
+254
+01:14:55,948 --> 01:14:57,108
+Üçüncü satır hocam.
+
+255
+01:14:57,547 --> 01:14:58,387
+Üçüncü satır neden?
+
+256
+01:14:58,987 --> 01:15:01,288
+Çünkü iki tane sıfır var ve daha az uğraşıyoruz.
+
+257
+01:15:01,288 --> 01:15:03,667
+Ne işine yarıyor iki tane sıfır olunca orada?
+
+258
+01:15:04,427 --> 01:15:07,147
+Çarpım halinde olduğu zaman daha az uğraşacağız muhtemelen.
+
+259
+01:15:07,227 --> 01:15:10,207
+Yani sen şunu demek istiyorsun bana bak, demek istediğin şeyi yazayım.
+
+260
+01:15:10,207 --> 01:15:12,647
+Kapatörlerle çarparken uğraşmayacağız.
+
+261
+01:15:13,167 --> 01:15:14,747
+Aynen bak, bulmamıza gerek kalmayacak.
+
+262
+01:15:15,108 --> 01:15:18,307
+Doğru söylüyorsun. Ben uzun yoldan yazıyorum. Arkadaşınızın dediği şey şu.
+
+263
+01:15:19,475 --> 01:15:43,895
+Bu üçüncü satırdaki ilk elemanın kofaktörünün işareti neydi? Artıyla başlar değil mi? Sonra eksi, artı, eksi. Bak bunlar kofaktörlerin işaretleri. Matris'in bu satırda gördüğünüz elemanların işaretleri değil. Mesela üçüncü satır, dördüncü sütün elemanı işareti eksi. Ama bir eksi de kofaktöründen geliyor. Eksi, eksi, artı olacak toplama yazarken.
+
+264
+01:15:44,307 --> 01:16:11,608
+Şimdi bu matrisin üçün satıra göre, teorem ışığında, yazmak istersen determinantını, yazacağın şey şu, eleman çarpı işaretiyle beraber, bak artı, bunun kofaktörü bu değil mi? A3, 1. Sonra, eksi 0 çarpı A3, 2. Sonra, artı 0 çarpı A3, 3. Sonra, eksi 3 çarpı.
+
+265
+01:16:12,275 --> 01:16:17,876
+Bir kofaktörün, A3-4'ün işareti de eksi olduğu için artı olacak. Tamam mı?
+
+266
+01:16:18,435 --> 01:16:25,235
+Şimdi az önceki arkadaşınızın dediği şu, şimdi ben A3-2'yi ve A3-3'yi hesaplamama gerek yok ki, sıfırla çarpılıyor.
+
+267
+01:16:25,896 --> 01:16:28,556
+E o zaman sıfırdır bu, bu da sıfırdır, değil mi?
+
+268
+01:16:28,855 --> 01:16:39,755
+Ya boşu boşuna niye bu iki elemanın, yani seçtiğin satırda sıfır olan elemanların eş çarpanlarını hesaplamama gerek yok ki, günün sonunda sıfırla çarpılıyor, toplama sıfır olarak ilave ediyorsun.
+
+269
+01:16:40,372 --> 01:17:04,372
+Yani o zaman bu ne demek? Sıfırları bol olan bir satır veya sütunu referans kabul etmek en zekice iş olur değil mi yaptığımız? Tamam istediğin satır ve sütunu seçebilirsin ama yani iş yükü daha az olan satırı tercih etmek daha şey olur yani bizim faydamıza olur. O yüzden arkadaşınız üçüncü satırı seçelim dedi ama…
+
+270
+01:17:04,863 --> 01:17:30,643
+Yani sütün olarak bakacak olsak, ikinci sütünü da seçebilirdik. Orada da iki tane sıfır var. Bunu da seçebilirsiniz. Değil mi? C2 diyelim buna. Şuna da R3 diyelim. Bakın, teorem ne diyor? İster satıra, ister sütuna göre. Hatta istediğin satır, istediğin sütuna göre determinantın açılımını yap. Bulacağın sayı değişmez. Invaryant yani.
+
+271
+01:17:31,220 --> 01:17:38,020
+Determinant seçtiğin satır veya sütuna bağımlı bir şey değil. Sen farklı şeyler buluyorsan bil ki yanlış iş yapıyorsun.
+
+272
+01:17:38,720 --> 01:17:49,180
+Şimdi, o zaman bu arkadaşınızın söylediği satıra göre biz bunun açılımını yapalım ki kitapta zaten bakın üçüncü satıra göre açalım diyor.
+
+273
+01:17:49,860 --> 01:17:58,020
+Tamam mı? Ama ben size şunu ödev olarak vereyim. Yani bunu gösterelim üçüncü satıra göre açılımı ama siz de...
+
+274
+01:17:58,355 --> 01:18:20,456
+İkinci sütüne göre açılımını yapın ve aynı sayısal değerini bulmaya çalışın. Tamam mı? Yani özünde aynı şeyleri tekrar ediyoruz aslında. Evet, şimdi kolları sıvayıp işleme başlayalım. Üçüncü satıra göre. Şimdi. Evet, bakın yukarıda yazmıştım zaten.
+
+275
+01:18:21,076 --> 01:18:48,336
+Yani aşağıda da yazılıymış. Bakın şurayı kast edelim. Şu siyah renk kullanayım. Sarı gözü görünür bir renk değil çünkü. Tamam mı? Şurayı dikkat edin. 3 çarpı A31 eksi sıfırları ihmal ediyorum dedim. Eksi eksi artı 3 yapar çarpı A34. O zaman bulman gereken iki tane eş çarpan var sizin burada değil mi? Yani A31. Ne demek A31? Bak bunu nasıl bulacaksın? İşareti artı.
+
+276
+01:18:49,171 --> 01:19:07,871
+Bir alt matrisin determinantına eşittir bu kofaktör. Kimdir o? A3-1 kimin kofaktörü? Üçüncü satır, birinci sütundaki matris elemanının kofaktörü. Kim o eleman? Üç. Onun bulunduğu satır ve sütunu silmemiz gerekiyor mu? Gerekiyor.
+
+277
+01:19:09,652 --> 01:19:33,612
+Elde edeceğim matris, 3x3'lük, bak sarıyla gösterdiğim matris. Tamam mı? İşaretle pozitif olduğu için bakın, eksi bir artı, pardon, eksi bir üzeri 3 artı 1. Ben artık yani, eksi birin kaçıncı kuvveti o da tek mi, çift mi diye bakmanıza gerek yok. Direkt işaret tablosunu baz alın, kofaktörlerin. Ve direkt işaretini yazın. Yani eksi bir üzeri bilmem ne diye yazmana gerek yok. Ya eksi ya artı yaz. Tamam mı?
+
+278
+01:19:34,676 --> 01:20:00,796
+Şimdi, eş çarpan, o zaman şu üçlük maddesi, sarı kutu içine aldım, üçlük maddesi, determinantı hesaplamam gerekiyor. Üçle de çarpacağım tabii ki sonra. Başındaki işaretle artı, bakın artı. Sonra işte sıfırları hesaba katmıyorum dedim, bir de bu var, A3-4. O nedir? Üçün satır, dördüncü sütundaki elemanın bulunduğu satır sütunu sileceksin. Yani o da bu. Üçün satır, dördüncü sütun bu. Bunun bulunduğu satır, üçüncü satır, bulunduğu sütun, dördüncü sütun.
+
+279
+01:20:01,460 --> 01:20:23,700
+O zaman kalan matris hangisi? Bakın, 1, 2, eksi 3, satırlarını söylüyorum, kalan alt matrisin, eksi 4, 2, 1, 2, 0, eksi 2. Yeşil matris, bakın. Yeşil matris. Tamam mı? E başında da ne var bunun? Artı 4 var. Bir de pardon, pardon, artı 3 var. Değil mi? Bakın, artı 3.
+
+280
+01:20:25,460 --> 01:20:36,600
+Evet, bu sarı ve yeşil matrislerin determinantlarını bulup, başlarındaki sayıla çarpıp toplarsan, determinantın, yani şu madrisin determinantının değerini bulacaksınız demektir.
+
+281
+01:20:36,680 --> 01:20:39,039
+Yani sarı matrisin determinantını nasıl bulursunuz?
+
+282
+01:20:40,639 --> 01:20:43,039
+Yani, nasıl bulursunuz?
+
+283
+01:20:44,619 --> 01:20:45,260
+Şöyle yapalım.
+
+284
+01:20:48,860 --> 01:20:50,100
+Şuraya yazalım.
+
+285
+01:20:50,771 --> 01:20:54,211
+Burada ayrı bir sayfa açıp kendimiz yapmaya çalışalım onu.
+
+286
+01:20:56,172 --> 01:20:56,672
+Tamam mı?
+
+287
+01:20:58,832 --> 01:21:00,031
+Siyah renk kullanalım.
+
+288
+01:21:08,180 --> 01:21:20,680
+2-3, 4, 2-3, 4, 2-3, 4, bakayım diğer elemanlarına, 2-1-3, 2-1-3,
+
+289
+01:21:24,212 --> 01:21:41,512
+2, 1, 3, 0, 2, 3, 0, 2, 3, 0, 2, 3. Yani sarı matris demiştik, hadi bunu da böyle kutu içine alalım, sarı olduğunu hatırlayalım diye. Bu matrisin determinantı lazım bize, tamam mı? Evet.
+
+290
+01:21:44,020 --> 01:22:09,640
+Sıfır olan bir satır veya sütunu var mı? Var. Üçüncü satır veya ikinci, pardon, veya birinci sütunu alabiliriz değil mi? Biz isterseniz şurayı referans seçip açalım bunu. İşaret tablomuzu koyalım. Bakın, kofaktörlerin işareti. Artı, eksili, artı. Değil mi? Sıfır için endişelenmeme gerek yok.
+
+291
+01:22:10,355 --> 01:22:19,475
+Bakalım, bu sütundaki, yani C1'i kastediyorum, tamam mı? Birinci sütundaki elemanları kendi eş çarpanlarıyla çarparak toplayacağım.
+
+292
+01:22:20,435 --> 01:22:32,615
+İki sayısını, eş çarpanı işareti artı olduğundan A, bir, bir diyelim, tamam mı? Sonra eksi iki, bu sütunun sıradaki elemanı eksi iki, pardon, pardon.
+
+293
+01:22:34,235 --> 01:22:37,315
+Artı iki değil mi? Elemanın kendisi iki.
+
+294
+01:22:37,971 --> 01:23:04,671
+Ama eş çarpanı, şöyle diyelim bak, ikinci satır birinci sütun, tamam, aynen öyle. Sonra, artı, sıfır çarpı A, üç, bir. Bu şekilde. Onu da yazalım şimdi. A bir, birinin işareti artı, tamam, artı iki çarpı, ikinin bulunduğu, yani.
+
+295
+01:23:05,524 --> 01:23:14,684
+Şunun bulunduğu, satırı sütünü silerseniz, kalan matris kimdir, determinantı yazalım.
+
+296
+01:23:14,684 --> 01:23:29,944
+Determinant 1, 3, eksi 2, 3, tamam mı? Sonra A2, 1, şunu yazacağım bakın.
+
+297
+01:23:31,028 --> 01:23:57,208
+Şunu yazacağım, bunu yazdım, okey. Şimdi sırada bu var. Artı, eleman, çarpı, işareti ne onun? Eksi. Eksi, determinant, şu matris, şu elemanın bulunduğu satırı sütünü silerseniz, kalacak matris hangisi olur? Birisi bana söylesin, eksi üç, dört.
+
+298
+01:23:58,420 --> 01:24:13,880
+Eksi 2, 3 mü? Doğru mu? Doğru mu arkadaşlar? Artı, şurası zaten 0 yazıyor. A31 bulmama gerek yok. Değil mi? Yani o zaman eşittir.
+
+299
+01:24:16,275 --> 01:24:23,916
+Yani 2'yi çarpı, bunun determinantı nedir? 3, eksi, eksi, artı, 6 yapar. Değil mi?
+
+300
+01:24:24,556 --> 01:24:42,515
+Eksi 2 çarpı, eksi 3, 3 daha, eksi 9, artı 8. Yani 3 kere, 3, 6 daha 9, 18 yapar. Eksi 9, 8 daha, eksi 1, 1, eksi 2 ile de çarpılıyor. Artı 2, 20 mi yaptı? Doğru mu arkadaşlar?
+
+301
+01:24:43,828 --> 01:25:11,048
+Sarı matrisin, alt matrisin, determinantını 20 olarak bulduk mu? Bulduk. Dönelim kitaba. Bakın kitap, kitapta ne bulmuş? 20. Başında 3 var tabii. Değil mi? Yani ben şu yalın halde sarı kutu içindeki matrisin determinantını hesapladım. Başımdaki 3'ü ve işaretini de tabii ki hesaba katacağım. İşareti artıydı, kat sayısı da 3'tü. Ben de 20 buldum zaten. Doğru buldum yani. Yeşil matrisi de aynı şekilde, benzer şekilde.
+
+302
+01:25:11,572 --> 01:25:34,412
+Siz yapın artık bunu, tamam mı? Şu yeşil matrisi. Bakın arkadaşlar, şu yeşil kalem alalım, yeşili gösterelim. Bakın şu matrisi. Yani burada ne yapabilirsiniz? Mesela son satırı yani C, pardon R3'ü veya C2'yi referans alabilirsiniz. Çünkü sıfır orada değil mi? Bu satırda veya o sütünde.
+
+303
+01:25:35,507 --> 01:25:57,247
+Sarı kutu içindeki matrisin determinantını, üçlük matrisin determinantını nasıl bulduysam, yeşil kutu içindeki matris içinde benzer şeyi yaparsınız. Bulacağınız değer eksi 4'tür. Başında bir de artı 3 var. Tamam mı? Onun da da çarpıp işte 60'a ilave ederseniz, bulacağınız matrisin determinant değeri 48'dir arkadaşlar. Yani şu matrisin değeri 48.
+
+304
+01:26:00,051 --> 01:26:23,551
+Az önce mesela eksi çıkar diyen arkadaş vardı, bak eksi çıkmadı. Çıkmadı yani, çıkmak zorunda değil ki. O işaretler çünkü birbirleriyle iletişim halinde, yani eş çarpanın işareti eksi olabilir, matrisin elemanı da eksi olabilir. O zaman çarpım artı olur, terim artı olur yani. Başka bir terimde eş çarpan pozitiftir, matrisin elemanı da pozitiftir, yani işaret pozitif.
+
+305
+01:26:24,083 --> 01:26:27,724
+Yani o toplamdaki terimlerden bazıları eksi, bazıları artı.
+
+306
+01:26:28,443 --> 01:26:34,343
+Yani sen bilmiyorsun ki o günün sonunda hangi işaret, baskın çıkacak?
+
+307
+01:26:34,943 --> 01:26:36,564
+Yani önemli de değil ki zaten o.
+
+308
+01:26:38,923 --> 01:26:42,623
+Evet, anlaşıldı mı arkadaşlar bu matrisin determinantını nasıl bulduğumuz?
+
+309
+01:26:47,315 --> 01:27:10,855
+Burada determinantın bir takım alan hesaplamalarına uygulaması var. Ben bu tip örnekleri şu an için gereksiz görüyorum. Tamam mı? Şu andan itibaren söylemek istediğim şey, determinantın uygulamaları o da nerede? Burada sanırım. Yani bunu neden veriyoruz? Şöyle bir bakalım. Bakın.
+
+310
+01:27:12,916 --> 01:27:27,416
+Daha önceden giremiyordum bu dersin Bolonya sayfasına. Yani güvenilir bulmadığı için otomatik bilgisayarımın engellediğini fark ettim. Tamam mı? Tarayıcının. Bakın. Görüyor musunuz arkadaşlar Bolonya sisteminin sayfasını şu anda ekranı?
+
+311
+01:27:28,355 --> 01:27:29,076
+Evet, görüyorum.
+
+312
+01:27:29,496 --> 01:27:33,376
+Görüyorsunuz. Bakın şimdi haftalık ders programına bakalım. Bu hafta dördüncü hafta mı?
+
+313
+01:27:34,515 --> 01:27:35,595
+Dördüncü hafta.
+
+314
+01:27:35,775 --> 01:27:48,495
+Dördüncü hafta, tamam mı? Evet. Bakın dördüncü hafta determinantlarla başlıyor. Bir kara matrisin determinantı, laplas açılımı, bunların hepsini söyledik. Değil mi? Hatta üçüncü haftadan kalan bir konu vardı. Bir kara matrisin tersi, onu da söyledim zaten bu dersin başında.
+
+315
+01:27:49,555 --> 01:28:07,635
+Geçen hafta söylemem gerekiyordu ama ben online olduğu için hızlı hızlı koştura koştura bir ders anlatmak istemiyorum. Önemli olan geride miyiz değiliz? Hayır değiliz, tam yerindeyiz. Ben istersem Sarus kuralını bile anlatabilirdim size bugün. Sarus kuralı 2-3 dakikada anlatılabilecek bir şey. Ama gerek yok.
+
+316
+01:28:17,876 --> 01:28:23,056
+Bakın, hazır bu sayfayı bulmuşken, ders kitabına bakalım.
+
+317
+01:28:23,056 --> 01:28:33,015
+İşte, yani benim size tavsiye ettiğim, Colman Hill ikilisinin kitabıdır yani.
+
+318
+01:28:33,176 --> 01:28:37,176
+Türkçe yayınlandığını söylemiştim, Palme yayınlarında çıkmış bu.
+
+319
+01:28:37,896 --> 01:28:40,695
+Ama yani Türkçesini değil, İngilizcesini kullansanız daha iyi yani.
+
+320
+01:28:41,844 --> 01:29:07,003
+Artık İngilizce kaynaklardan takip etmek çok da zor bir şey değil yani. Matematiğin İngilizcesi kolay zaten. Değil mi? Yani kimyasal bir metin okumaya benzemez ya, tıp literatüründe bir metin okumaya benzemez ya. Neyse uzatmayalım. Determinatların özellikleri bakın. Şimdi bunlar teorem olarak verilmiş ama siz bunu madde madde sıralayabilirsiniz. 1, 2, 3, 4, 5, 2'ye. Tamam mı? Kaç tane ise.
+
+321
+01:29:07,891 --> 01:29:13,192
+İlk madde veya işte teorem 3.1. Ne diyor arkadaşlar burada sizce?
+
+322
+01:29:17,203 --> 01:29:17,843
+Ne diyor?
+
+323
+01:29:18,763 --> 01:29:23,903
+Hocam, bir matrisin, transposin determinantıyla kendini determinantı eşittir.
+
+324
+01:29:24,283 --> 01:29:30,443
+Evet. Sen bunu ispatlayabilir misin? Mesela adam burada ispatı, determinantın formal tanımını kullanarak yapıyor tabii ki.
+
+325
+01:29:30,443 --> 01:29:33,503
+Yani tanımını yaptı, ona sadık kalıyor tabii ki değil mi?
+
+326
+01:29:35,163 --> 01:29:40,083
+Tabii ki biz de bunu bekleyeceğiz. Ama biz formal tanımını permutasyon cinsinden vermediğimiz için.
+
+327
+01:29:41,171 --> 01:30:08,351
+Bunu nasıl ispatlarsın? En çarpı enlik bir matris alırsın, onun transpozunu yazarsın, her ikisinin determinantlarını ayrı ayrı hesaplamaya kalkabilirsin, laplas açılımıyla. Sonra bakarsın, kıyaslarsın, eşit mi değil mi? Eşit olduğunda görürsün. En çarpı enlik bir matris için yapmana da gerek yok. İstersen üçlük bir matris al, dörtlük bir matris. Değil mi? Yani elemanları da sayı değeri almayacaksın yani.
+
+328
+01:30:09,235 --> 01:30:35,576
+Yani mesela A matrisini şöyle al. A1-1, A1-2, A1-3, tamam mı? A2-1, A2-2, A2-3, A3-1, A3-2, A3-3. Al bu matrisi, sonra transpozunu yaz, sonra her ikisinin determinantını ayrı ayrı, lafla saçını kullanarak yap. Bak bakalım eşitli değil mi? Ödev olsun size. Ama bu şekliyle ispat olmaz. İspat yapabilmen için A'yı en çarpıyan alman lazım.
+
+329
+01:30:36,372 --> 01:31:00,192
+Değil mi? Neyse, ispatıyla ilgilenmiyoruz. Ya bütün bilmenizi istediğim şey, bu özelliğin ta kendisi. Teoremin ifadesi yer. Arkadaşınızın dediği gibi, bir matrisle transpozunun determinantları birbirinin aynıdır. Bak, matrisler farklı, determinantları aynı olabilir demek. Değil mi? Farklı matrisler aynı determinant değerine sahip olabilir mi? Olabilir.
+
+330
+01:31:01,140 --> 01:31:26,800
+Olmaya da bilir mi? Tabii ki olmaya da bilir. Yani öyle bir şeyimiz yok ki. Kriterimiz yok ki. Evet, bir sonraki özelliğimize bakalım. Burada teorem diyor ama siz bunu ikinci madde, ikinci özellik olarak görün. Bakın, okuyabilen, İngilizcesi biraz olan anlamaya çalışsın. Olmayan için de ben bunun tercümesini yapayım size. Söylediği şey şu.
+
+331
+01:31:28,307 --> 01:31:33,307
+Hatırlarsanız, bir matrise, elementer, satır veya sütün işlemleri uygulayarak...
+
+332
+01:31:33,971 --> 01:31:44,332
+Yeni elde ettiğimiz matris, önceki haline denk oluyordu. Satırca, satır işlemleri kullandıysak satırca denk, sütün işlemleri kullandıysak sütünce denk demiştik.
+
+333
+01:31:44,391 --> 01:31:55,731
+Hatırladınız mı? Tilda'yla gösteriyorduk hatta. Yani bir A matrisi düşün, bu A matrisine bir takım elementer işlemler uygulamak suretiyle günün sonunda bir B matrisi elde ettin.
+
+334
+01:31:55,731 --> 01:31:57,711
+İşte bu B matrisi A'ya denk diyoruz değil mi?
+
+335
+01:31:58,804 --> 01:32:21,024
+B matrise A'ya denk. Yani burada kaç hamle yaptığının bir önemi yok. Tek hamle de yapsan, yani bir tanecik elementer satış işlemi de kullansan elde edeceğim matris ilk matrise denk. Değil mi? Peki bu törende veya bu maddede söylediğin ne? Diyor ki, elementer satış işlemlerinden biri de şuydu hatırlarsanız, iki satırı veya sütunu yer değiştirdin ki. Değil mi?
+
+336
+01:32:22,100 --> 01:32:33,159
+Burada diyor ki, eğer bir matrisin iki satırının yerini değiştirirsen, determinant buna bir tepki verir diyor. Reaksiyon verir. O da nedir? İşaret değiştirir. Bu kadar.
+
+337
+01:32:34,860 --> 01:32:47,100
+Yani bir matrisin iki satırını, yani şunu kast ediyor bak, A matrisi, yani burada mesela bir tane satır yazalım, Aİ1, yani İ1, Aİ...
+
+338
+01:32:48,115 --> 01:33:14,476
+N olsun. Sonra bir tane daha yazalım. Birkaç satır atlayalım. Sonra J'ninci satırı yazalım. A, J, 1, A, J, N. Devam edelim. İşte kaç tane satır varsa. N tane tabii ki. Ya bu matrisle şu iki satırın yerini değiştirirsem, elde edeceğim matris B matrisi olacak. Tamam mı? Yani o matrisin artık İ'ninci satırı kim olacak? A matrisinin J'ninci satırı bak. Tamam mı? A, J, N.
+
+339
+01:33:14,868 --> 01:33:38,308
+J'nin satırı kim olacak? A'nın İ'nin satırı, İ1. Peki bu B matrisinin determinantı ne? A matrisinin neredeyse, bak tırnak içinden, neredeyse A matrisinin determinantı. Neredeyse'den neyi kastediyorum? Eksilisi de ondan. Yani determinant B, eksi determinant A. Açık mı arkadaşlar bu sözün içinde?
+
+340
+01:33:40,787 --> 01:33:48,007
+Anlaşıldı değil mi? Yani matrisin iki satırını veya iki sütunluğunu yerini değiştiriyorsan, determinantın işareti değişir. Bu kadar.
+
+341
+01:33:49,207 --> 01:33:55,767
+İspatına girmiyorum. Bakın mesela şurada hemen ne demek istediğimizi şu basit örnek üzerinde göstermek isteyelim.
+
+342
+01:33:57,407 --> 01:34:05,407
+Bakın, arkadaşlar ben ya şu notasyonu kullanacağım, determinant, şöyle parantez içinde matrisi yazacağım veya
+
+343
+01:34:05,935 --> 01:34:10,615
+Bu kitaptaki gibi iki dik çizgi arasında da gördüğünüzde bu determinant demektir.
+
+344
+01:34:11,216 --> 01:34:18,895
+Tamam mı? Yani eğer şu parantezi kullanıyorsam ve matrisin determinantından bahsediyorsam başına det koymam lazım.
+
+345
+01:34:18,895 --> 01:34:26,855
+Eğer bu notasyonu istemiyorsam şunu kullanacağım. İki dik çizgi arasında matrisi yazdığımda onun determinantını kastediyorum demektir.
+
+346
+01:34:26,935 --> 01:34:32,935
+Matrisin kendisi değil yani. Sayısal değerini. Şimdi o zaman burada nedir? A'nın determinantı. A kim?
+
+347
+01:34:33,311 --> 01:35:00,271
+Satırları 2-1, 3-2 olan matris. Şimdi burada ne yapmış bakın? Ne yapmış burada? Birinci satırla iki tane satır olduğuna göre bunları yeni değiştirebilirsin en fazla değil mi? Birinci satırı 2, ikinci satırı 1 yaparsan, o zaman A matrisi artık değişti. Yeni matrisin kim? Satırları 3-2, 2-1 olan matris.
+
+348
+01:35:01,043 --> 01:35:16,743
+Yani şu matris artık B matrisi. Peki B matrisinin determinantı kim? A'nın determinantının eksilisi. Değil mi? A matrisinin determinantı nedir? 2 çarpı 2. Yani 4 eksi artı 3, 7. Değil mi?
+
+349
+01:35:20,275 --> 01:35:34,996
+Bakalım, A matrisinin determinantı, iki kere iki dört, eksi, eksi daha yedi, eksi yedi olması gerekmiyor mu? Tamam, B matrisinin determinantı eksi yedi, ama A'nınki yedi. Değil mi? Bakın.
+
+350
+01:35:38,707 --> 01:36:04,328
+Evet. Teorem 3-3'e bakalım. Bu da üçüncü özelliğimiz olsun isterseniz. Üç diyelim buna isterseniz. Bir matrisin iki satırı, isterseniz bunu sütün için de söyleyebilirsiniz. İki sütunu eşitse determinant sıfırdır. Burada bir tuhaflık var mı sizce? Öyle bir matris düşün ki iki satır tekrar ediyor birbirini. Veya sütunları tekrar ediyor. İki tanesi tekrar ediyor.
+
+351
+01:36:05,492 --> 01:36:13,112
+İkiden fazla da olabilir. İki tane birbirinin aynı satır veya sütün varsa bir matrisde determinantı neden sıfır olur ya?
+
+352
+01:36:17,140 --> 01:36:28,980
+Neden sıfır olur sizce arkadaşlar? Var mı bir yani sezgisini veya öngörüsünü paylaşmak isteyen var mı? Cevap da duruyor karşında. Proof diye bakarsan ispatına.
+
+353
+01:36:43,380 --> 01:36:46,520
+Bunu bir düşünün, egzersiz olsun size. Çünkü gerçekten zor değil.
+
+354
+01:36:46,560 --> 01:36:59,720
+Az önceki ispat, az önceki teoremden yola çıkarak, ikisi atı bir yerini değiştirdiğimiz zaman diğerinin eksilisi oluyorsa ve bunlar birbirine eşit olmak zorundaysa, ikisi de sıfır olmalı ki eksisini aldığımız zaman sıfır eşit olsun.
+
+355
+01:36:59,720 --> 01:37:05,739
+Evet, yani burada ispatta da o argümanı kullanıyor zaten. Ama ben size ne dedim?
+
+356
+01:37:07,796 --> 01:37:32,756
+Özelliğin kendisidir en sonun, en nihayetinde bilmeniz gereken. Yani bir matris gördüğünde eğer iki satırı veya iki sütun aynısı hemen sıfır diye yapıştıracaksın. Yani oturup da onu lütfen hesaplamaya çalışma, boşu boşuna zamanını harcama, tamam mı? Bunu bir sefer merak ediyorsan ispatını anlamaya çalış, tamam, bitir kafanda. Yani karşına çıkan matrisler için bunları hesaplama yani. Çünkü özelliği kullanman gerekiyor.
+
+357
+01:37:33,235 --> 01:38:00,715
+Bakın şu matrise, şu an üstünü sildiğim matrise bakalım. Bakın şu matrise mesela birinci satırla üçüncü satır aynı. Tamam determinant sıfır o zaman yukarıdaki özellikten. Hesaplayabilirsin. Bir defaya mahsus hesapla. Bir defaya mahsus hesapla. Eğer emin olmak istiyorsan, şüphem vardıysa. Hesapla bunu. Geçelim. Dördüncü özellik. Tamam buna da dört diyelim. Ne diyor? Bir matrisin satırı.
+
+358
+01:38:01,043 --> 01:38:01,943
+Veya sütunu.
+
+359
+01:38:04,003 --> 01:38:08,103
+Aslında az önceki üç numaralı maddeye bir şey daha ekleyebiliriz.
+
+360
+01:38:09,483 --> 01:38:11,563
+Şunu ekleyebiliriz arkadaşlar.
+
+361
+01:38:14,223 --> 01:38:19,063
+Bir dakika, ben hangi özellikleri söyleyerek geldim ona bir bakayım.
+
+362
+01:38:20,023 --> 01:38:21,103
+Şuna iki diyelim.
+
+363
+01:38:22,243 --> 01:38:25,123
+Tamam mı? İşaret değiştirir matrisin determinantı.
+
+364
+01:38:25,283 --> 01:38:26,643
+İki satırı yer değiştirirsek.
+
+365
+01:38:26,975 --> 01:38:52,375
+Birinci özelliğimizi de hatırlayalım. Transpose demiştik buna, tamam. Tamam. Bir matrisin bir satırını bir skal ile çarpmaya henüz değinmediğim için. İkizi diyelim, tamam mı? İkizini henüz söylemek için erken. Biz dört numaralı özelliğimize bakalım. Dört numaralı özellik şunu söyleyeyim. Yani aslında bu triviyelin triviyeli.
+
+366
+01:38:53,555 --> 01:39:01,915
+Bir matrisin bir tane satır varsa komple sıfır veya bir sütün sadece sıfırlardan oluşan, o matrisin determinantı sıfır olur. Neden?
+
+367
+01:39:06,260 --> 01:39:33,760
+O satırı referans veya sütunu referans seçersin de ondan. Yani şöyle, ondan sonra da lapras açılımını o satıra veya sütuna göre yaparsın. Değil mi? Yani bakın şöyle, mesela şu satırların hiçbiri umurumda değil, sıfır olan satıra odaklanıyorum, tamam mı? Ya bu matrisin determinantını hesaplayacağım. Referans olarak ben sıfır olan satırı seçerim. Değil mi? Ondan sonra bunun determinantını yazacağım. Ne olacak? İşte sıfır çarpı bir şey.
+
+368
+01:39:34,644 --> 01:40:00,000
+Şöyle yazalım. Sıfır çarpı bir şey. Yani bir şey dediğim, sıfırın her bir elemanın, yani bu komple sıfır olan satırdaki her bir sıfır elemanın eş çarpanını kastediyorum. Kendi eş çarpanını, yıldızla. Tamam mı? İşte işareti neyse, artı eksi, bilemiyorum onu, tamam mı? Artı sıfır çarpı, budur yani. Bu terimlerin her biri sıfırsa, günün sonunda elinde sıfır kalacak.
+
+369
+01:40:00,000 --> 01:40:22,439
+Tabii ki yani. Değil mi? Yani trivialin, triviali derken bunu kastettim. Dört tane özellik göstermiş olduk. Bak, beş numaralı özelliğe geçmeden önce, beş numaralı özelliğe geçmeden önce bir tane örnek çözelim burada. Aslında çözmemize gerek yok. Değil mi? Sıfır olduğunu biliyoruz ama hiç diyorsan yap. Valla burada yapmaya da gerek yok. Elini bile kıpırdatma, daha iyi ye.
+
+370
+01:40:22,868 --> 01:40:37,168
+Beş numaralı özelliğe geçelim direkt işte. Önemli olan bu. Söylediği şey de şu. Bir matrisin bir satırını bir k sayısıyla çarparsan elde edeceğin matrisin determinantı, bu matrisin ilk halinin determinantının k katıdır.
+
+371
+01:40:38,748 --> 01:40:50,860
+Yani şunu söylemek istiyor arkadaşlar, bakın. Bunları böyle kendiniz de açabilirsiniz yani. Şunu söylüyor, bakın bir A matrisi, istediğim bir satırı, iyi ince satırı, ben bir tane tipik...
+
+372
+01:40:50,868 --> 01:41:16,028
+Mostralık bir tane satır alıyorum. Yani i'ninci satırı alayım mesela. i1, i, n, tamam mı? Bir tane mostralık bir satır aldım. n çarpı n'lik bir matris, tamam mı? Şimdi bu matrisi, i'ninci satırını, yani şurası re, i, tamam mı? K ile çarparsam, yani şunu söylüyor, bak.
+
+373
+01:41:16,340 --> 01:41:43,280
+K ile çarp yeni i'ninci satırı bu olsun. Yani burada kullandığım işlem bu. Yani yıldız değil, şu kullandığım işlem bu. E bunu yaparsam A matrisi bir B matrisine denk olacak, öyle değil mi? O matrisin i'ninci satırı kim olacak? K çarpı Aİ bir, K çarpı Aİ n. Öyle mi değil mi arkadaşlar?
+
+374
+01:41:48,115 --> 01:41:48,615
+İyi mi?
+
+375
+01:41:52,979 --> 01:42:14,439
+Özelliğin söylediği, yani beş numaralı özelliğin söylediği şey şu. Bak, determinant B, determinant A'nın K katı. Bu. Siz bunu şöyle de yorumlayabilirsiniz. Bakın, bu ne demek? Ancak ve ancak.
+
+376
+01:42:20,948 --> 01:42:25,748
+Tabii buradaki K0'dan farklı olsun diyelim, tamam mı?
+
+377
+01:42:26,008 --> 01:42:29,228
+Bir bölü K çarpı determinant B.
+
+378
+01:42:29,488 --> 01:42:32,188
+Bak, şimdi söyleyeceğim cümleye, çok dikkatli kesilmeniz gerekiyor.
+
+379
+01:42:35,923 --> 01:42:44,463
+Bazen şunu söyleriz. A matrisini veririz, tamam mı? Determinantıyla beraber verilsin.
+
+380
+01:42:45,983 --> 01:42:53,363
+Verilsin. Sonra A matrisine bir işlem uygularsın. Yani az önceki işlemi uygulayarak elde ettiğim B matrisi.
+
+381
+01:42:53,983 --> 01:43:03,143
+Tamam mı? Yani nasıl elde ettim? İşte i'ninci satırını K ile çarptım. Yeni i'ninci satır bu olsun. Bu şekilde elde ettiğim matrise de B matrisi.
+
+382
+01:43:04,115 --> 01:43:14,736
+Eğer A maddesinin determinantını verdiyse, K'nın da ne olduğunu biliyorsun burada, tamam mı? K sayısını da biliyorsun. O zaman B maddesinin determinantını hemen söylersin, değil mi?
+
+383
+01:43:17,016 --> 01:43:27,856
+Peki, ters şöyle sorsa, tam dikkat etmen gereken yer şu, sınavda da işte bunu yanlış yapıyorsunuz, yapmayın diye söylüyorum. Şöyle de sorabilir bunu, bak.
+
+384
+01:43:29,427 --> 01:43:35,387
+Bir A matrisi düşün, determinantı verilmiyor ama bu sefer. Bak, ilkinde verdim. Şöyle sorulsun.
+
+385
+01:43:37,127 --> 01:43:53,247
+B matrisi, B matrisi, bir A matrisinden, tamam mı? Matrisinden, şöyle söyleyeyim.
+
+386
+01:43:55,347 --> 01:44:11,527
+Şuraya, şuraya sokuşturalım. Determinantı bilinen bir A matrisinden şu işlemle ile elde edilsin, edilmiş olsun.
+
+387
+01:44:15,188 --> 01:44:19,268
+Bu takdirde,
+
+388
+01:44:25,619 --> 01:44:39,520
+Pardon. Yanlış oldu bu. Yani söylemek istediğimi düzgün ifade edemedim. Determinantı bilinen bir B matrisi diyecektim, tamam mı? Şöyle, şurayı silelim.
+
+389
+01:44:46,739 --> 01:44:48,159
+Şöyle ilave edeyim, tamam mı?
+
+390
+01:44:50,739 --> 01:44:51,480
+Eyvah eyvah.
+
+391
+01:44:52,560 --> 01:44:53,859
+Buradan nasıl çıkacağız şimdi?
+
+392
+01:44:55,939 --> 01:44:56,619
+Şöyle.
+
+393
+01:44:58,880 --> 01:45:00,140
+Şöyle yazalım, bakın.
+
+394
+01:45:00,939 --> 01:45:05,000
+Determinantı belli.
+
+395
+01:45:06,220 --> 01:45:07,220
+B matrisi.
+
+396
+01:45:07,980 --> 01:45:11,760
+Bak, B matrisinin kendisini değil ama determinantını veriyorum.
+
+397
+01:45:12,595 --> 01:45:22,455
+Ama bir A matrisinden hangi işlemle elde edildiğini de veriyorum. Tamam mı? Bu takdirde A matrisinin determinantı nedir?
+
+398
+01:45:23,915 --> 01:45:32,375
+İşte eğer A'yı bulacaksak, yani B, A'dan elde edilen B'nin determinantı veriliyor da A'nın determinantı isteniyorsa.
+
+399
+01:45:33,043 --> 01:45:51,444
+Formülünü hemen bu şekilde uyarlaman gerektiğinin farkında olman gerekiyor. Anlatabildim mi arkadaşlar? Bak diğerinden farkına bak. Eğer A'nın determinantı veriliyorsa, B'de A'dan hangi işlemle elde edildiğini söylüyorsa, tamam, determinant B'yi nasıl yapman gerektiğini söylüyor.
+
+400
+01:45:51,444 --> 01:45:59,284
+K çarpı determinant A. K belli, determinant A belli. Tamam, determinant B belli o zaman. Ben bunu bak tersten sordum.
+
+401
+01:46:00,212 --> 01:46:09,412
+Yani, B matrisinin determinantı belli olsun, A'dan nasıl elde edildiğini de söylemiş olalım, A matrisinin determinantını isteyelim.
+
+402
+01:46:11,132 --> 01:46:16,532
+O zaman işte bu formülü nasıl ters çevirmen gerektiğini bilmen lazım.
+
+403
+01:46:16,692 --> 01:46:20,892
+Yani determinant A isteniyorsa, o zaman determinant B'yi bir bölü K ile çarpacaksın demektir.
+
+404
+01:46:21,852 --> 01:46:22,132
+Değil mi?
+
+405
+01:46:23,132 --> 01:46:26,532
+Onun haricinde şu da var, dikkatinizi çekerim.
+
+406
+01:46:27,123 --> 01:46:54,324
+B matrisin bir satırını K ile çarpmakla matrisin tamamını K ile çarpmak aynı şey değil. Değil mi? A matrisi, yani A, İ, 1'i, ya yukarıda yazmıştık bunu tekrar etmeyelim bakın. Şurada A matrisinin ininci satırını K ile çarptım, B matrisi bu. Determinantı A'nın determinantının K katı. Peki A'yı K ile çarparsam? Bu başka bir şey değil mi?
+
+407
+01:46:54,899 --> 01:47:16,680
+Yani bir matrisin skalelel çarpımı, bir satırının o skalelel çarpımından çok farklı bir şey. Yani o zaman K çarpı A'yı hatırlayalım. Bu ne demektir? K çarpı A bir bir, değil mi? K çarpı A bir en, şöyle şöyle gidelim, iğnci satırı da yazalım, K çarpı A i bir.
+
+408
+01:47:17,039 --> 01:47:23,579
+K çarpı A, İ, N, işte diğer satırlarını da yazmayalım, göstermiş olalım şöyle çizgi çizgi.
+
+409
+01:47:23,579 --> 01:47:30,539
+En sonunda, son satırı da yazalım, A, N, 1, K çarpı A, N, N.
+
+410
+01:47:31,319 --> 01:47:37,940
+Evet arkadaşlar, şimdi, bu matrisin, yani, B matrisi bu olsun.
+
+411
+01:47:39,060 --> 01:47:40,899
+Tamam mı? Determinant B ne olur o zaman?
+
+412
+01:47:42,500 --> 01:47:43,680
+Söylemek isteyen var mı bana bunu?
+
+413
+01:47:45,332 --> 01:47:53,632
+Sadece bir tek satır, A matrisinin tek bir satırını çarptığında, K çarpı determinant A demiştik.
+
+414
+01:47:54,892 --> 01:48:05,832
+Her satır için yaparsam bunu, kaç tane satır varsa, N tane değil mi? N adet. E ne olacak o zaman?
+
+415
+01:48:07,832 --> 01:48:10,672
+Ne olacak arkadaşlar, K üzeri N olacak mı?
+
+416
+01:48:11,539 --> 01:48:30,520
+Buna da dikkat etmeniz gerekiyor. Tamam mı? Yani bak bunu söylemiyor az önceki özellikte ama kendin türetebilirsin bunu. Tamam mı? Evet. Bunu da söyledik. Mesela işte şu örnekte bakalım.
+
+417
+01:48:34,100 --> 01:48:57,539
+Son satırına bakın bunun. Yani ikiyle bölünüyor değil mi? Dolayısıyla iki, sekiz, altı, bir, dört, üçün iki katı. E o zaman ikiyi determinantın başına yaz, şu determinantı hesapla ikiyle çarp. Hatta orada da indirime gidebilirsin. Ya bu matrisin sıfır olacağı da belli. Neden belli biliyor musunuz arkadaşlar? İki tane sütunu birbirinin aynı çünkü. Bakın. Yok yok pardon pardon.
+
+418
+01:48:58,387 --> 01:49:16,328
+Yok, iki tane sütun birbirinin aynı değil. Yanlış bir şey söylemeyelim. Yani sütundaki elemanlar birbirinin aynı, sütunlar aynı demek değil değil mi? Şimdi mesela bunu nasıl hesaplayacaksın? Burada ne yapmış mesela? Şu üçüncü sütuna bakın.
+
+419
+01:49:17,823 --> 01:49:43,083
+Bütün elemanlar 3, 3'te 1'in 3 katı, o zaman 3'ü başa alıp 1, 1, 1 yapabilirsiniz. İşte şimdi 2 tane sütun birbirinin aynı oldu. O da birinci sütun ve üçüncü sütun arkadaşlar. Değil mi? E 2 sütun birbirinin aynıysa böyle bir determinant, 0 olur dedik zaten. Değil mi? Evet, son özelliğimiz de 6 numaralı özellik diyelim ve burada bitirelim. Çünkü diğer sınıfta da buraya kadar geldim.
+
+420
+01:49:44,884 --> 01:49:58,904
+Şunu söylüyor, yani bir maddisin S'ninci satırının elemanlarını bir K sayısıyla çarpıp R'ninci satıra ilave edersen elde edeceğim maddisinin determinantı, maddisin ilk halinin determinantından farklı olmaz bu.
+
+421
+01:50:00,104 --> 01:50:08,164
+Yani burada demek ki determinant bir tepki vermiyor. Yani bir satırı bir sayıla çarpıp başka bir satıra eklediğinizde bu elementer satır işlemiydi hatırlarsanız.
+
+422
+01:50:10,992 --> 01:50:30,252
+dönüştürdüğünüzde elde ettiğiniz yeni matris determinatı ilkiyle aynı. Tamam mı? Ben burada müsaadenizle artık dersi bitireyim. Çünkü buraya kadar anlattığım diğer iki sınıfıma da. Sorusu olan varsa konuşalım arkadaşlar. Aksi takdirde dersi bitireceğim. Var mı sorusu olan?
+
+423
+01:50:36,435 --> 01:50:41,095
+Yok herhalde. Haftaya görüşmek üzere [öğrenci]. Herkese iyi dersler dilerim. Hoşçakalın. İyi günler.
