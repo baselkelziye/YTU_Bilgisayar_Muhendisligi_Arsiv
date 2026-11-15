@@ -1,0 +1,2087 @@
+1
+00:01:09,843 --> 00:01:18,823
+Merhaba arkadaşlar. Bakalım kaç kişi var sınıfta, 11 kişi gözüküyor. Sesimi alabiliyorsunuz değil mi sesimi?
+
+2
+00:01:22,483 --> 00:01:23,623
+Duyuyoruz hocam, evet.
+
+3
+00:01:23,983 --> 00:01:29,524
+Teşekkür ederim. Biraz daha bekleyelim isterseniz. Az sayıda öğrenci var çünkü henüz.
+
+4
+00:01:43,603 --> 00:01:48,984
+Ekran paylaşımı yapıyorum, onu görebiliyor musunuz ekranınızda? Kitabın kapağı var şu anda mesela.
+
+5
+00:01:50,004 --> 00:01:50,183
+Evet.
+
+6
+00:01:51,323 --> 00:01:51,603
+Tamam.
+
+7
+00:02:06,323 --> 00:02:06,683
+Evet.
+
+8
+00:02:12,979 --> 00:02:34,759
+Bolonya sayfasına giremiyorum bir türlü. Kursun müfredatını göstermek istiyorum çünkü size. İlk defa alanlar vardır büyük bir ihtimalle bu dersi. Bahar yarı yılında açılıyor olsa bile, yani sabahtan beri Bolonya sayfasında bir şey var. Ama ilk haftanın konusu çok elementer yani. Matrislerin tanımıyla başlar.
+
+9
+00:02:37,759 --> 00:02:40,060
+Biraz bekleyelim bakalım, girecek mi?
+
+10
+00:02:47,508 --> 00:02:50,968
+Evet, bu line sayfasında bir erişim sorunu var gözüküyor.
+
+11
+00:02:56,883 --> 00:02:58,663
+Kaç kişi olmuşuz? 23 kişi.
+
+12
+00:03:01,763 --> 00:03:07,024
+Bu dersi ilk defa alan vardır değil mi? Ben yoklama listemize bakmadım OBS'den henüz.
+
+13
+00:03:09,563 --> 00:03:15,843
+Kimler ilk defa alıyor mesela? Mesaj olarak yazabilir. Ben demeniz kâfi.
+
+14
+00:03:17,323 --> 00:03:22,943
+Çete mesaj atın. Yani sınıfın çoğunluğu yeni mi, eski mi, onu bileyim ben.
+
+15
+00:03:32,243 --> 00:03:49,704
+Evet, çoğunluk ilk defa alıyor. Ya biz bu dersi ilk defa yüz yarı yılında açarız ama ondan sonra bahar yarı yılında da açılır. Mesela sizin bahar yarı yılında ilk defa alıyor olmanızın sebebi nedir bunun, bu dersi? Ya geçen dönem almış olmanız gerekmez miydi yani?
+
+16
+00:04:03,955 --> 00:04:13,675
+Gemicilikte bağır yerlerinde, tamam. Yani müfredat değişiyor demek ki. Tamam, hazırlıktan sebep alamayan var, tamam, sorun değil.
+
+17
+00:04:16,156 --> 00:04:25,776
+Matrislerle başlarız ama öncesinde şöyle konuşalım, [kişisel bilgi] Online eğitim zaten hoşlaştığım bir şey değil.
+
+18
+00:04:26,708 --> 00:04:44,268
+Yani böyle bir öğretim olmaz yani. Tahtada öğrenciyle birebir etkileşimde ders anlatmak gibi olmaz yani. Ama elimizden geldiği kadar hakkını vererek yapmaya çalışalım. Tablet kullanacağım mesela. Mouse'la, laptop'tan hiç olmaz yani. Hiç olmaz bu işler.
+
+19
+00:04:47,168 --> 00:04:50,807
+Sizin mesela sormak istediğiniz, özellikle ilk defa olan öğrenciler mesela.
+
+20
+00:04:51,156 --> 00:05:13,416
+Sormak istediğiniz ne varsa sorun bana şimdiden. Yani dönem nasıl olacak, hangi sınavlar nasıl olacak, kim ne istiyorsa sorsun şimdiden. Ben müfredatı ekrana getirmek istedim ama Bologna sayfası çalışmıyor. Kendiniz de bakabilirsiniz. 14 haftalık bir müfredat var. İlk 7 haftadan sonra, 8. haftada vize haftası olur biliyorsunuz bunu.
+
+21
+00:05:14,548 --> 00:05:29,228
+Genelde de sınav müfredatı bana artık mesaj atmayın, mikrofonunuzu açıp söyleyin, oldu mu? Yani bir yandan da mesajlarınızı takip edemem, birazdan yazacağım çünkü. Hem ekran görüntüsü üzerinden konuşup yazacağım, aynı zamanda chat mesajlarına bakamam.
+
+22
+00:05:31,228 --> 00:05:32,807
+Önerebileceğiniz bir kaynak var mı acaba?
+
+23
+00:05:33,168 --> 00:05:36,528
+Önerebileceğim kaynak, bak, şu kaynak.
+
+24
+00:05:37,908 --> 00:05:38,728
+Coleman Hill.
+
+25
+00:05:43,156 --> 00:05:45,776
+Bu kitap. Şöyle altını da çizelim.
+
+26
+00:05:50,228 --> 00:06:00,988
+Bu kitabı tavsiye ederim. Dokuzuncu baskısı var bende. Belki de onuncu, onbirinci baskısı da çıkmış olabilir. Bilmiyorum, takip etmedim son baskılarını.
+
+27
+00:06:01,927 --> 00:06:10,328
+Ya iyi bir kitap olmasa bu kadar baskı yapmaz herhalde değil mi? Yani bunu ben yurt dışında da çalıştığım için biliyorum yani. Orada da bunu okutuyorduk biz.
+
+28
+00:06:11,379 --> 00:06:38,659
+Amerika'daki üniversitelerde de bunu okuturlar. Avrupa'daki üniversitelerin bazılarında da kaynak olarak kullanılır. İyi olmasa kullanmaz kimse değil mi? Zaten yazarları da tanınmış insanlar. Bu kitabı tavsiye ederim ama mecbur mu? Değil. Kimse mecbur değil. Kitabın orijinal baskısını satın almak zorunda da değilsiniz. Bakın bunu pdf olarak internetten bulabilirsiniz. Ben bunu indirdim bilgisayarıma. Siz de indirebilirsiniz.
+
+29
+00:06:39,603 --> 00:07:03,963
+Bunun Türkçesi yok mu? Türkçesi de var. Çevirisi yapılmış Türkçeye. İsteyen Türkçesini de alabilir. Ama ben hiç tavsiye etmiyorum çünkü kitabın orijinaline bakarsanız, boyutları büyük, A4 kağıdı boyutunda. Yani ferah bir kitap. Rahatça okunabilecek bir kitap ama Türkçesini puntolarını düşürmüşler, çivi yazısı gibi.
+
+30
+00:07:05,076 --> 00:07:10,135
+Tool Live adında bir kitap çıkmış ortaya. Yani insanın o kitabı alıp okuyası gelmiyor ya.
+
+31
+00:07:12,576 --> 00:07:17,576
+İsteyen varsa bir de kalın olduğu için. Ya fotokopi çekmeye kalksan astarı yüzünden pahalıya mağlubu.
+
+32
+00:07:18,855 --> 00:07:23,175
+Yani bunu online olarak bilgisayarınıza indirseniz bence kafidir.
+
+33
+00:07:25,363 --> 00:07:34,623
+Bu kitabı kullanabilirsiniz. Onun dışında işte bizim matematik bölümündeki iki hocanın yazdığı bir kitap var. Çok elementer bir kitaptır. O lineerce bir çözümlü problemleri diye.
+
+34
+00:07:36,243 --> 00:07:47,663
+Göksel Ağırgün ve Hülya Hanım'ın kitabı var. Onu da kullanabilirsiniz. Ama ben bu varken ötekini tavsiye etmiyorum. Bunu tavsiye edin.
+
+35
+00:07:50,323 --> 00:07:52,443
+Bunda istemediğiniz kadar örnek var.
+
+36
+00:07:53,620 --> 00:08:17,120
+İstemediğiniz kadar örnek. Artı, düzenlemesi de çok güzel. Her kısmın sonunda egzersiz alıştırma listeleri vermiş. Alıştırmaların çözümleri de var kitabın sonunda. Özellikle tek numaralı olanların çözümleri var. Yani o da kendinizi test etmeniz için iyidir. Değil mi? Çift numaralı olanların cevapları yok mu? Yok.
+
+37
+00:08:18,324 --> 00:08:25,623
+Ama o da sorun değil. Bu kitaptaki bütün egzersizlerin cevap anahtarı bile var internette. Ararsanız bulursunuz.
+
+38
+00:08:26,943 --> 00:08:37,063
+Bunu da söylemiş olayım size. Bakın her zaman da söylemiyorum yani her dönem. Komple bütün egzersizlerin çözüm anahtarı, çözüm yani soluşu manuel derler.
+
+39
+00:08:37,183 --> 00:08:45,084
+Onu bulursun, elinin altında dursun. Çözümlü örneklerden çalışmayı seviyorsunuz biliyorum çünkü. İşinize bayağı yara.
+
+40
+00:08:46,100 --> 00:08:47,220
+Tavsiye ederim yani.
+
+41
+00:08:49,519 --> 00:08:49,860
+Evet.
+
+42
+00:08:51,320 --> 00:08:59,860
+Birinci vizenin konusu genelde ilk yedi haftadır ama çoğunlukla ilk altı haftanın konusundan sınav yaparız.
+
+43
+00:09:01,140 --> 00:09:04,640
+Muhtemelen bu dönemde öyle olur diye tahmin ediyorum.
+
+44
+00:09:06,380 --> 00:09:10,940
+Sanırım yani en az bir ay online eğitim yapacağız gibi gözüküyor.
+
+45
+00:09:12,467 --> 00:09:38,788
+Vize de tek vize olabilir bu dönem. Yani üst yönetimden gelen e-postayı tekrar bir açıp okumam lazım ama sanki bu dönem tek vize olacak gibi bir şey yazıyordu orada. Eğer tek vize olursa yüzde altmış ağırlıklı test tipi bir sınav olursunuz arkadaşlar. Yani yirmi soruluk bir sınav yapardık biz. Bundan önceki dönemde iki sınav yaptık. Yirmi soruluk yüzde kırk ağırlıklı birinci vize.
+
+46
+00:09:39,443 --> 00:10:00,443
+10 soruluk bir kısa sınav yaptık, o da test tipi. Onun ağırlığı da %20 idi. İki sınav toplamı %60 ağırlık olarak. %40 da final. Ama tek sınav olursa sizin çok büyük bir avantajınız var. Çok büyük bir avantajınız var, o da şu. Yani bunu ıskalamamanızı şiddetle tavsiye ederim. O da şudur bakın.
+
+47
+00:10:01,172 --> 00:10:07,731
+Ağırlığı yüzde altmış olan bir sınav düşünün. Üstelik de on dört haftadan sadece altı haftasını kapsıyor.
+
+48
+00:10:09,991 --> 00:10:17,692
+Yani ne demek istediğimi anlıyorsunuz herhalde. Değil mi? Final sınavının ağırlığı yüzde kırk ama on dört haftanın on dördünden de mesulsü.
+
+49
+00:10:18,912 --> 00:10:27,471
+E sen ne yaparsın? Konu hazır azken işi başta sıkı tutar. Yüksek de bir not almaya çalışırsan belki de ilk sınavda işi bitirebilirsin.
+
+50
+00:10:28,563 --> 00:10:34,903
+Değil mi? Bunu kastettim yani. Bu dersi büyütmenize hiç gerek yok. Eğlenceli bir derstir.
+
+51
+00:10:38,548 --> 00:10:56,228
+Yani düşünebileceğiniz en somut matematik derslerinden bir tanesidir. Analitik geometri olsun, lineerce bir olsun. Varsa sizin sorularınız, konuşalım. Yoksa ben, yani elementer de olsa, bir giriş yapayım bu haftanın konusuna. Var mı sorusu olan?
+
+52
+00:11:03,572 --> 00:11:23,731
+Şöyle getireyim ekranıma matrisleri. Bu İngilizce kaynak, Türkçesinin taranmış kopyası veya pdf'ini bulamadım çünkü. Ama ben size tabii buradan çevir falan da yapmayacağım. Sorun etmeyin yani. Buradan satır satır okumanıza da gerek yok. Bizim için önemli olan buradaki şekiller, bir matrisin tanımından ne anladığımıza bakalım mesela.
+
+53
+00:11:24,947 --> 00:11:31,607
+Şurada matrisin ne olduğunu bilmeyenler vardır içinizde. Çünkü lisede artık verilmiyor diye biliyorum bu müfredat. Doğru mu?
+
+54
+00:11:33,167 --> 00:11:33,627
+Verilmiyor.
+
+55
+00:11:34,107 --> 00:11:36,047
+Verilmiyor. Eskiden veriliyordu mesela.
+
+56
+00:11:37,807 --> 00:11:47,407
+Şimdi matristen kabaca anlaman gereken şey şu. Ya şu tabloya bakınca ne görüyorsun? Hadi kabaca yani sezgisel konuşalım. Matematiği de bir kenara bıraktık.
+
+57
+00:11:48,019 --> 00:12:00,479
+Yani şöyle bir tablo gördün, ben bu bir matrisdir desem ne anlıyorsun buna bakınca? Buradaki A11, A12 onları da data veya done gibi düşün, neyse, veri.
+
+58
+00:12:05,235 --> 00:12:25,115
+Neyse, neyse. Nedir yani bu? Ne görüyorsun? Matris budur desem ne anlayacaksın bundan? Mikrofon açıp kendiniz söz alabilirsiniz arkadaşlar. Beni kendi kendime konuşuyor durumunda da bırakmayın yani. İnteraktif ders yapalım. Öte kültürlüğü yani hepten çekilmez oluyor online yani.
+
+59
+00:12:28,148 --> 00:12:33,727
+Yani matris'ten en kaba haliyle bir tablo, bir diziliş, bu şekilde bir formasyon anlayalım.
+
+60
+00:12:35,268 --> 00:12:35,528
+Değil mi?
+
+61
+00:12:36,128 --> 00:12:38,908
+Ardışık elemanların olduğu bir sütun, şablon düzeni.
+
+62
+00:12:38,908 --> 00:12:42,427
+Ardışık, tamam şablon diyelim de ardışıktan ne kastediyorsun ama?
+
+63
+00:12:42,487 --> 00:12:47,187
+Ardışık, yani dizi olursa, ardışık, tek boyutlu ama bu.
+
+64
+00:12:49,827 --> 00:12:51,247
+Ardışık ne demek orada?
+
+65
+00:12:53,299 --> 00:12:55,339
+Ne kastediyorsun ardışıktan?
+
+66
+00:12:55,559 --> 00:12:59,999
+Bir daha önce belli oranda artarak ya da azalarak giden diziler gibi bir.
+
+67
+00:13:00,579 --> 00:13:06,179
+Hayır, yani bu tablodaki elemanlar arasında böyle bir ilişki kurmak zorunda değiliz ki.
+
+68
+00:13:06,319 --> 00:13:07,339
+Dikte etmek zorunda değiliz.
+
+69
+00:13:07,339 --> 00:13:13,219
+Yani elemanlar birbiri öncekine veya sonrakine göre azalmak, artmak zorunda değil yani.
+
+70
+00:13:14,239 --> 00:13:17,379
+Sen o tip bir tablo ile çalışmak isteyebilirsin, o başka.
+
+71
+00:13:18,067 --> 00:13:22,367
+Ama genel bir tanım yaparken bu tip kısıtlayıcı şeylerden kaçarız biz.
+
+72
+00:13:25,007 --> 00:13:36,287
+Ardışık terimi de burada mesela afaki kalıyor. Neye göre ardışık yani? Kim kimin peşinden sonra? Çünkü burada en var, boy var gibi düşün.
+
+73
+00:13:39,147 --> 00:13:43,867
+Değil mi? Yani bu tabloda satır var, sütün var, öyle değil mi?
+
+74
+00:13:45,524 --> 00:13:57,043
+Satır var, sütun var. Şu elemanı düşün mesela, bakın. İ'ninci satır. İ'ninci satıra re, i diyelim. İngilizcedeki row'un re'si. Tamam mı?
+
+75
+00:13:59,343 --> 00:14:12,663
+Şuraya da c, j diyelim. Column'un c'si. Sütunun baş harfi İngilizce. J'ninci sütun. Şu, bakın, dikkat edin. Şu elemanı işaretledim.
+
+76
+00:14:14,163 --> 00:14:39,844
+İ'ninci satır, J'ninci sütunundaki elemanı bu. Bu elemandan anlaman gereken birinci satır, birinci sütun. Yani şunlar bize elemanın matrisin hangi konumunda, pozisyonda olduğunu işaret eder. Bunlardan ilki satırı, diğeri sütunu belirler. Şuna bakalım mesela.
+
+77
+00:14:40,755 --> 00:14:48,435
+Bu ne demek? M'ninci satırda ama hangi sütunda olduğunu da söylemen gerekiyor. Çünkü iki boyutlu, değil mi?
+
+78
+00:14:50,855 --> 00:14:57,195
+İkinci sütunda diyeceksin şu elemanın konumu için. Bu eleman ikinci satır, ikinci sütunda.
+
+79
+00:14:59,675 --> 00:15:02,255
+M ve N dediğin şeyler o zaman tam sayı.
+
+80
+00:15:03,316 --> 00:15:30,436
+Aksi düşünülemez zaten, değil mi? Bir matrisin mesela 3.77 satırı, 4.96 tane sütunu var diyecek halimiz yok. Dolayısıyla satır ve sütün sayıları tam sayı olmak zorunda, değil mi? Pozitif tam sayı hatta. Peki, satır ve sütün sayısı eşit olabilir mi? Özel olarak eşit de olabilir. O zaman da kare matris olur. Aksi takdirde dikdörtgen, rektangular diyor zaten burada, bakın.
+
+81
+00:15:31,668 --> 00:15:45,968
+Peki bu A11, A12, A2, neyse işte bu sayılar, A, İ, J'ler, yani bunların hepsini sıradan sayacak halimiz yok. Bir tanesini tipik, yani diğerlerini temsile, bir tanesine yoğunlaşalım şuna, A, İ, J, jenerik eleman olsun bu tipik.
+
+82
+00:15:46,908 --> 00:15:52,947
+Tamam mı? A, İ, J. Artık sen İ'ye, J'ye hangi diğeri veriyorsan o konumdaki elemanını kastediyorsun.
+
+83
+00:15:54,131 --> 00:16:04,351
+M tane satır varsa, İ de satır sayısını temsil eden indis ise, İ nereden nereye değer alır? Birden M'ye kadar demektir bu.
+
+84
+00:16:05,031 --> 00:16:17,031
+J dediğin şey de sütunu gösteren indis ise, matrisin de N tane sütunu varsa, o zaman bu indisin değer aralığı birden N'e kadardır.
+
+85
+00:16:18,411 --> 00:16:19,371
+Tamam mı?
+
+86
+00:16:22,740 --> 00:16:30,939
+Şimdi bunlar kimdir sorusuna gelince, bunları bakın, real sayılar olarak alabilirsiniz, kompleks sayılar olarak da alabilirsiniz.
+
+87
+00:16:32,759 --> 00:16:41,519
+Genelde elemanları real sayılar olan matrislerle çalışacağımız için biz çoğunlukla real olanlarına odaklanalım ama kompleks de olabilir, bunu unutmayın.
+
+88
+00:16:42,639 --> 00:16:50,000
+Artı sayı olmak zorunda da değil, bir matrisin elemanları sayı olmak zorunda da değil, fonksiyon da olabilir.
+
+89
+00:16:51,091 --> 00:16:55,171
+Holinom olabilir veya herhangi başka bir obje olabilir.
+
+90
+00:16:59,124 --> 00:16:59,943
+Şimdi bakalım.
+
+91
+00:17:05,875 --> 00:17:12,695
+Şöyle bir notasyonumuz var bizim. Bu matrisin kompak gösterimidir. Yani yer işgal etmeyen.
+
+92
+00:17:13,815 --> 00:17:23,175
+Diyeyim yani. Siz öyle anlayın. Çünkü uzun uzun şu tabloyu yazmaktansa, kısaca biz yerden tasarruf için şunu yazarız.
+
+93
+00:17:25,675 --> 00:17:33,175
+M çarpı N matrisin merkebesidir. Veya boyutudur. Her matrisin bir boyutu vardır.
+
+94
+00:17:35,476 --> 00:17:58,376
+Bu aynı zamanda matrisin içinde kaç tane eleman olduğunu da söyler. Yani bunların çarpımı kadar eleman vardır. Yani M satır, en sütunlu bir matrisin M en adet elemanı vardır. Değil mi? Ya 2 çarpı 3'lük bir matris yazarsan bunun 6 tane elemanı var demektir yani. Şöyle yazalım bakın. 1, 2, 3.
+
+95
+00:17:58,804 --> 00:18:07,483
+4, 5, 6, 2 çarpı, 2 satır, 3 sütunluk bir matris yazdım size. 6 tane elemanı olan bir matris demektir bu.
+
+96
+00:18:09,304 --> 00:18:17,284
+Evet, bunlar çok basit şeyler olduğu için anlatması yani mesele yani. Çok kolay şeyler anlatmak da meseledir yani.
+
+97
+00:18:20,403 --> 00:18:25,163
+Bakın, trivial örnekler yani aslında üstünde durmaya bile gerek yok ama.
+
+98
+00:18:25,619 --> 00:18:50,619
+Bugün ilk ders, bir defaya mahsus bunları söyleyip geçelim. A matris 2 çarpı 3. B matrisine bakın, o da 2 çarpı 2 kare matris, değil mi? Ama elemanları real sayı değil, kompleks sayı olabilir. C matrisine bakalım, sütün matrisidir bu. Neden? Çünkü bir tane sütün olduğundan. 3 çarpı 1. F matrisine bakalım, 1 çarpı 3.
+
+99
+00:18:52,372 --> 00:19:13,992
+Kaç tane satır var? Bir tane. Tek satır olan matrise satır matrisi denir. Aynen tek sütunu olan matrise sütun matrisi dendiği gibi. E maddesine bakın, bir çarpı birlik bir matris. Ya buradan ne anlıyorsunuz? Her sayı, bildiğiniz adi, real sayı, bir çarpı birlik bir matris gibi düşünülebilir.
+
+100
+00:19:19,892 --> 00:19:22,592
+Değil mi? Bunlar matris örnekleri.
+
+101
+00:19:24,432 --> 00:19:31,251
+Şimdi mesela ben D matrisinin 3. satır 2. sütun elemanı kimdir desem, ne diyeceksiniz bana?
+
+102
+00:19:32,652 --> 00:19:33,332
+2 mi hocam?
+
+103
+00:19:33,932 --> 00:19:34,291
+Efendim?
+
+104
+00:19:35,211 --> 00:19:35,652
+2 mi?
+
+105
+00:19:36,912 --> 00:19:41,372
+Tekrar edeyim, D matrisinin 3. satır 2. sütun elemanı.
+
+106
+00:19:42,012 --> 00:19:43,852
+Eksi 1.
+
+107
+00:19:44,852 --> 00:19:47,628
+Yani, bunlar çok kolay şeyler ama yani...
+
+108
+00:19:47,827 --> 00:20:09,827
+Buralarda çuvallamamak gerekir diye. Yani bir matrisin elemanını bulmaktan ne anladığını bilmen lazım. Hiçbir şey bilmiyorsan en başında daha. Değil mi yani? Pozisyon olayını bilmek lazım matrislerde yani. Her eleman kendi pozisyonuyla kayın yani. Şimdi mesela...
+
+109
+00:20:10,003 --> 00:20:34,604
+Bir takım örnekler var. O Türkçe kitapta bu örnekleri bulamazsınız. Bak, güzel örnekler koymuş. Mesela ne diyor bu? Example 3'te ne yapmış? Aşağıdaki matris diyor. Şunu kastediyor. Ya sen burada bir matris görmeyebilirsin. Yani dört tane şehir kısıralımış buraya. Londra, Madrid, New York, Tokyo diyor. Tamam, bir takım sayılar görüyorsun burada ama zaten söylüyor sana bak örnekle. Diyor ki aşağıdaki matris.
+
+110
+00:20:36,307 --> 00:20:41,167
+Bahsi geçen, işaret edilen şehirler arasındaki hava milini gösterir diyor.
+
+111
+00:20:42,167 --> 00:20:43,288
+Mesafesini, tamam mı?
+
+112
+00:20:43,948 --> 00:20:48,167
+Yani Londra ile Madrid arasındaki mesafe 785 milmiş demek.
+
+113
+00:20:49,627 --> 00:20:55,927
+Aynı şekilde Madrid ile Londra arasındaki mesafe de tabii ki 785 mil olacak.
+
+114
+00:20:56,367 --> 00:20:56,627
+Değil mi?
+
+115
+00:20:59,284 --> 00:21:12,144
+Yani ben şeye girmiyorum, acaba gidişteki rotanın tıp atıp aynını mı kullanıyor dönüşte, rüzgar ters taraftan esiyor da rotayı uzatıyor mu falan, bunlara girmiyorum, gerek yok, tamam mı?
+
+116
+00:21:13,604 --> 00:21:20,244
+Yani bu şehir arasındaki bu milleri eleman kabul eden bir matris gibi düşünebilirsin bu tabloyu.
+
+117
+00:21:21,524 --> 00:21:25,684
+Yani benim bu örnekten kastım sadece bu zaten şimdilik, tamam mı?
+
+118
+00:21:27,923 --> 00:21:45,403
+Matris olarak tutabilirsin bu bilgiyi. Bir sonraki örnek, example 4'te, bakın, bu da ilginç, üretimle, üretim hattıyla ilgili bir örnekleme yapmış. Bir fabrika düşün ki 4 tane üretim bandı var diye mesela, yani kabaca size öyle tercüme etmiş olayım.
+
+119
+00:21:48,523 --> 00:21:51,023
+3 tipte ürün yapıyor olsun.
+
+120
+00:21:52,500 --> 00:21:56,319
+Bunlara anlam katalım isterseniz, şöyle diyelim isterseniz.
+
+121
+00:21:57,139 --> 00:21:58,479
+Yani üç tip ürün ne olsun?
+
+122
+00:21:58,639 --> 00:22:00,779
+İşte bisküvi, çikolata, golfret olsun.
+
+123
+00:22:03,099 --> 00:22:06,279
+Fabrikada da dört tane üretim bandı olsun.
+
+124
+00:22:07,139 --> 00:22:16,500
+Veya dört tane makine neyse bu ürünleri, az önce saydığım üç tip ürünü üreten dört adet de makine olmuş olsun.
+
+125
+00:22:17,683 --> 00:22:23,304
+Bakın şimdi, A, İ, J ile neyi kastettiğimizi söylüyoruz bakın burada.
+
+126
+00:22:24,884 --> 00:22:39,544
+Diyor ki, her bir üretim bandının veya makinenin neyse, bir hafta içerisinde her bir üründen ürettiği miktar olsun diyor.
+
+127
+00:22:44,276 --> 00:23:07,715
+A maddesinin İ'ninci satır, J'ninci sütün elemanı. Bakın şöyle okuyalım. İ numaralı üründen, J numaralı üretim bandının bir hafta boyunca yaptığı üretim. Aslında ben size direkt tabloyu getireyim. Bakın şu tabloya bir bakın. Bakın bu plant bir, plant iki bunları üretim bandı gibi düşünün, makina gibi düşünün neyse.
+
+128
+00:23:08,180 --> 00:23:32,759
+Tamam mı? Bu product, bunları da çikolata, gofret, bisküvi gibi düşünün. Tamam mı? Yani mesela şuradaki 450'yi sen ne okuyorsun, ne anlıyorsun buradan? Şunu anlayacaksın. Yani iki numaralı üretim bandının bir hafta içerisinde, iki numaralı üründe bisküvi olmuş olsun, bisküvi üretme kapasitesi 450. Kapasitesi demeyelim. Yaptığı üretim adedi.
+
+129
+00:23:34,708 --> 00:24:00,488
+Tamam mı? Yani 450 tane bisküvi üretmiş olsun, işte 270 tane çikolata, 360 tane gofret, neyse. Değil mi? Her bir üretim bandının değişik değişik, her bir üründen yaptığı üretim miktarı aynı değil. Bu. Bunu da böyle matris formatında okutabilirsin. Okutabilirsin. Ya bu da bir matris örnek olur mu? Olur.
+
+130
+00:24:01,332 --> 00:24:25,972
+elemanlarına baktığında sayı mı? Sayı, tam sayı. Ama bunlara bir anlam yüklemek istersen, işte o kendini buluyor burada bu modelde. Matris. Değil mi? Yani sen bunlara, yani şunu mesela, o üretim bandı, ürün, bunlardan hiç kimseye bahsetmeden, direkt şunu 3x3'lük bir matris, pardon, 3x4'lük bir matris olarak verirsen bunu, A diyelim.
+
+131
+00:24:26,355 --> 00:24:51,016
+elemanları da işte ilk satırı sayıyorum, 560, 360, 380, 0. Bu birinci satır. Aynı şekilde ikinci, üçüncü satır elemanlarını da ver. Böyle bir matris alalım desen, üstüne de hiçbir şey söylemesen, adam buna bir anlam yüklemeyebilir. Ama fabrikada bir üretimi yapan, bu üretim bantlarının olduğu, bu ürünlerin üretildiğini bilen bir adam için bu daha bir anlam ifade eder. Anlatabiliyor muyum?
+
+132
+00:24:54,516 --> 00:25:10,455
+Evet, mesela diyelim ki bu bir fabrika için geçerli olan bir şey değil mi? Yani şehirde belli semtlerde birkaç tane fabrikan olduğunu düşün böyle.
+
+133
+00:25:11,195 --> 00:25:21,135
+Hepsinin de benzer şekilde çalıştığını düşün. Yani her birinde dört üretim bandı var ve hepsi de aynı şekilde o üç tip ürünü üretsin.
+
+134
+00:25:21,779 --> 00:25:40,440
+Mesela ay sonundaki toplam üretimi görmek istersen, mesela iki numaralı üretim hattında, işte şehirdeki bütün fabrikalar üç numaralı üründen toplam kaç adet üretmiş mesela? Bulabilir misin?
+
+135
+00:25:44,019 --> 00:25:46,819
+Yani takip edebiliyor musunuz bilmiyorum söylediklerim ama.
+
+136
+00:25:47,179 --> 00:25:47,639
+Evet hocam.
+
+137
+00:25:48,299 --> 00:25:52,480
+Bulabilir misin? Bu matrislerin toplamını işaret ediyor değil mi? Üstü kapalı bir şekilde.
+
+138
+00:25:53,899 --> 00:25:54,119
+Yani.
+
+139
+00:25:54,139 --> 00:25:54,279
+Evet.
+
+140
+00:25:55,299 --> 00:25:57,399
+Yani mesela bir sonraki örneğe bakalım.
+
+141
+00:25:58,599 --> 00:26:03,179
+Yani bunlara artık hepsine değinemem arkadaşlar. Burada güzel örnekler var.
+
+142
+00:26:04,159 --> 00:26:05,839
+Bazılarına da siz bakacaksınız artık.
+
+143
+00:26:06,779 --> 00:26:11,339
+Tamam mı? Ben mesela altı numaralı örneği de size son bir örnek olarak göstereyim.
+
+144
+00:26:12,019 --> 00:26:29,019
+Burada da grafik var. Mesela bak, çok çeşitli dataları matris olarak okutmaktan bahsediyoruz burada değil mi? Mesela bak, şimdi şöyle bir grafik var elinde, böyle de bir matris var.
+
+145
+00:26:29,019 --> 00:26:37,579
+Şimdi sana bu matrisi verse birisi, şu grafikle arasında bir ilişki kuramayabilirsin.
+
+146
+00:26:40,243 --> 00:26:56,624
+Kuramayabilirsin. Ama buna bir anlam yüklemeye kalkarsan o zaman iş başka. Onu da şöyle yapıyor bakın. Grafikten ne anladığımızı tanımlıyor önce. Köşe noktası vesaire. Yukarıda bir şeylerden bahsediyor ama ben size bunu uzun uzun anlatmayayım.
+
+147
+00:27:08,660 --> 00:27:25,260
+Bazıları birbirlerine bağlanmış, öyle mi? Bağlanmış. Şimdi diyor ki, birbirlerine bağlanmış, yani o segmentleri kastediyorum, bir segmentle birbirlerine bağlı bu köşe noktalarını düşünün.
+
+148
+00:27:25,260 --> 00:27:35,120
+Eğer aralarında bir segment, bir bağlantı, koneksiyon varsa bir olsun, yoksa sıfır olsun diyor. Yani şu tablonun anlamı bu.
+
+149
+00:27:36,372 --> 00:27:52,292
+Mesela bakın, P1 ile P2. Tablo bana ne diyor? 1 diyor. Nasıl okuyacağım ben bunu? P1 ile P2 arasında bir koneksiyon var. Yani bunları birbirine bağlayan bir segment var. Bakın, hakikaten de var P1 ile P2.
+
+150
+00:27:52,712 --> 00:27:59,592
+P2 ile P3 birbirine bağlı mı? Bağlı. O zaman o da, bakın P2 ile P3 burada, değil mi? O da 1.
+
+151
+00:28:00,500 --> 00:28:21,580
+Mesela P1 ile P3 arasında var mı bağlantı şekilde? Yok. Nokta nokta göstereyim. O yüzden tabloda baktığınızda sıfır göreceksiniz zaten. Bakın P1, P3. Aynı şekilde P3, P1 de sıfırdır tabii ki. Bu iki köşe birbirine bağlanmamış, kaynaklanmamış yani.
+
+152
+00:28:26,932 --> 00:28:43,752
+Kalkıp sen bir matris olarak okutabilirsin. İşte aşağıdaki A matrisi, tas tamam yukarıdaki tabloyu veya o tablonun geometrik ifadesi olan şu diagramı ne dersen de temsil ediyor diyebilirsin.
+
+153
+00:28:44,532 --> 00:28:50,492
+Değil mi? Oldukça da zeki bir gösterim tarzıdır aslında bu. Oldukça da güzel bir gösterim tarzı.
+
+154
+00:28:53,076 --> 00:29:03,716
+Sana verse birisi, A maddisi bu, elemanlarına baksan bunun, tamam 4x4'lük bir matris, elemanları 0 ve 1, tamam yani başka ne olabilir ki, söyleyebilecek bir şey yok.
+
+155
+00:29:03,796 --> 00:29:10,716
+Yani sana bir bilgi verilmezse, bu birilerin sıfırların anlamının ne olduğu söylenmezse, sen bu matrise bir anlam yükleyemezsin tabii ki.
+
+156
+00:29:11,316 --> 00:29:16,456
+Değil mi? Ama evvelinden bahsedersen o matris kendini buluyor, yerini buluyor değil mi?
+
+157
+00:29:16,456 --> 00:29:19,355
+Ya ilginçtir bakın, yukarıdaki şeye bakın.
+
+158
+00:29:19,680 --> 00:29:36,259
+Diagrama bakın, değil mi? Yani şu diagramın gelip de şu matris ile ifade ediliyor olması gerçekten ilginç yani. Bunlar muhtelif örnekler. Daha başka çeşitli örnekler de.
+
+159
+00:29:36,624 --> 00:29:52,484
+Bulabilirsiniz. Bu kitapta da vardır. Ama bu kadarı bence kafi. Yani artık matrisin dizilişinden tablo, şablon, ne derseniz deyin, ne anlamamız gerektiğini kabaca da olsa anladık varsayıyorum.
+
+160
+00:29:54,163 --> 00:30:01,384
+Gene de ben anlamadım diyen varsa tekrar edelim arkadaşlar. Bu arada bakayım kaç kişiyiz? 55 kişi olmuşuz. Var mı?
+
+161
+00:30:02,548 --> 00:30:12,327
+tekrarlamamı isteyen, matrisin ne olduğunu, yani üzerinde çok uzun uzun konuşmaya değer bir şey de değil aslında.
+
+162
+00:30:18,483 --> 00:30:40,483
+Evet, matrisin kabaca tanımını yaptık madem, o zaman yolumuza devam edelim. İki matrisin eşitliğinden bahsedebiliriz. Her matrisin bir boyutu olduğunu unutmayın, tamam mı? Bu boyut meselesini matrisleri kıyas ederken, matrislerle işlem yaparken her zaman işin içine katarız.
+
+163
+00:30:41,779 --> 00:31:05,179
+Mesela iki matrisin eşit olmasından ne anlarsınız? Burada tanım var. Ben tanımı size söylemeyeyim. Mesela direkt söylesem, sezgisel olarak mesela, [öğrenci]'e sorsak mesela. Ne anlarsın? İki tane matris ne zaman eşit olur? Ne anlamı olabilir yani?
+
+164
+00:31:06,067 --> 00:31:09,548
+Tanımı ne olabilir? İki matrisin eşitliğinden ne anlarsın?
+
+165
+00:31:16,852 --> 00:31:18,971
+Evet, [öğrenci]'den cevap bekliyoruz.
+
+166
+00:31:25,907 --> 00:31:27,107
+[öğrenci]'a soralım.
+
+167
+00:31:32,051 --> 00:31:33,751
+Hocam, aynı veriyi mi verirler?
+
+168
+00:31:35,151 --> 00:31:45,551
+Ama biraz havada kalıyor bu tip cevaplar. Yani aynı veriyi verirler. Yanlış değil ama düzgün ifade etmek lazım. İki tane matris ne zaman eşit olur?
+
+169
+00:31:48,011 --> 00:31:52,751
+Öncelikle eşit olmaları için bir gerek koşulu asgari müşterek var mıdır mesela?
+
+170
+00:31:56,307 --> 00:31:58,307
+Boyutlarının eşit olması olur mu?
+
+171
+00:31:58,867 --> 00:32:06,107
+Kesinlikle bu olmazsa olmaz. Boyutları aynı olmayan iki matris eşit mi değil mi diye bakılmaz bile.
+
+172
+00:32:07,927 --> 00:32:14,947
+Güzel. Ama boyutları aynı ise eşittir diyebilir misin? Onu da diyemezsin. Neye bakacaksın sonraki adım?
+
+173
+00:32:16,627 --> 00:32:19,847
+Koordinattaki birimleri aynı olması olabilir mi hocam?
+
+174
+00:32:19,847 --> 00:32:22,287
+Bir daha söylesene şu son cümleni.
+
+175
+00:32:22,867 --> 00:32:24,507
+Koordinattaki birimlerin aynı olması.
+
+176
+00:32:24,627 --> 00:32:26,067
+Koordinattaki birim ne demek?
+
+177
+00:32:26,967 --> 00:32:36,567
+Yani satır ve sütunlardaki tek tek bakıldığında oradaki birim diyorum ben, sayı da olabilir belki de hocam, aynı olması derdim ben.
+
+178
+00:32:37,087 --> 00:32:38,768
+Koordinattaki birim yani...
+
+179
+00:32:38,768 --> 00:32:56,188
+Her tarafa çekilebilir biliyor musun? O yüzden söyledim yani. Ama son dediğin, yani açarak söylediğin şey daha doğru. Her satır ve sütun, yani şunu söylemek istiyorsun aslında. Hangi pozisyonuna bakarsan, matrislerin o pozisyondaki elemanları karşılıklı birbirine aynı demek istiyorsun, öyle değil mi?
+
+180
+00:32:56,928 --> 00:32:57,528
+Evet hocam.
+
+181
+00:32:57,988 --> 00:33:01,228
+İstisnasız ama her eleman için de böyle olmak zorunda diyorsun, değil mi?
+
+182
+00:33:03,108 --> 00:33:03,508
+Olabilir.
+
+183
+00:33:03,508 --> 00:33:04,948
+Yani, yani.
+
+184
+00:33:06,420 --> 00:33:32,700
+Kendinde şey yapabilirsin yani bu tanımları. Ben yapmasam da bakın kendinizden, kendiliğinizden söylüyorsunuz yani. O zaman demek ki iki matrisin eşit olabilmesi için evvela aynı boyutları olması gerekiyor. Bakın ikisi de zaten ne çarpı ne boyutlu olsun diyor. Kompakt formda yazıyorum tamam mı? Yani açık açık yazmaya da gerek yok AB matrislerini. Kompakt notasyonu tercih etmemizin sebebi bu.
+
+185
+00:33:33,135 --> 00:33:42,415
+Eşit olması şu, bu tarz yazılışları öğrenci pek sevmiyor ama, yani kağıda döktüğünüz zaman formal olarak ifade etmeniz gerekiyor.
+
+186
+00:33:42,995 --> 00:33:53,855
+A, İ, J eşittir B, İ, J için. Pardon, A, İ, J'ler eşittir B, İ, J. Her İ ve J değeri için. İ de birden M, J de birden N. Ne demek istiyor bu?
+
+187
+00:33:56,884 --> 00:34:22,423
+Her bir satır ve sütundaki elemanları eşit olsun diyorsun ya, i de satırı gösterdiğine göre, satır da m tane olduğuna göre, değil mi? Her bir i için, i'nin bir ile m arasındaki her bir değeri için demek istiyorsun. Sütün aynı şekilde, sütün da n tane olduğuna göre, sütünü işaret eden indis de j ile gösterildiğine göre, j'nin bir ile n arasında alabileceği her değeri için, değil mi?
+
+188
+00:34:22,996 --> 00:34:34,516
+Matrislerin elemanları aynı pozisyonda ama. Değil mi? Eşit olmalı. Bu kadar basit. Mesela tanımın peşinden gelen örneğe bakalım.
+
+189
+00:34:34,516 --> 00:34:49,115
+Example 7 dediği örneğe. Bunu mesela bir test sınavı sorusu olarak da verebilirim. Yani bu iki matris birbirine eşitse, mesela W, X, Y, Z sayıları aşağıdakilerden hangisidir diye bir soru.
+
+190
+00:34:50,195 --> 00:34:54,815
+Düzenleyebilirsin. Test sorusu olur mu? Olur. Her sınavda sormaz kimse böyle bir şeyi tabii.
+
+191
+00:34:58,228 --> 00:35:24,068
+Boyutları aynı mı matrislerin? Aynı. Eşit olmaları için yeterli mi? Değil. Her satır sütunda karşılıklı elemanlar birbirleriyle çakışmalı. Değil mi? Eşit olmalarını istiyorsanız. O zaman mesela Y. Ne olmalı? A eşittir B, ancak ve ancak ne diyeceksin? Y eşittir 0. Yeter mi?
+
+192
+00:35:26,867 --> 00:35:30,047
+Yetmez, değil mi? Daha üç tane daha var.
+
+193
+00:35:33,396 --> 00:35:35,456
+Söylemen gereken. X ne olmalı?
+
+194
+00:35:36,856 --> 00:35:37,496
+X3.
+
+195
+00:35:38,376 --> 00:35:59,696
+Neden X3? Çünkü X, D matrisinin ikinci satır, ikinci sütun elemanıdır. O zaman A matrisinin de aynı satır ve sütun elemanına eşit olmak zorunda. O yüzden X eşittir. X3 dedin, doğru dedin. W içinde X1 diyeceğiz tabii ki, değil mi?
+
+196
+00:36:00,916 --> 00:36:11,115
+Z için de 5 diyeceğiz. Yazmayayım onu da. Yani iki matrisin eşitliği bu demek arkadaşlar. Çok basit. Asla unutmayacağınız bir tanım.
+
+197
+00:36:12,775 --> 00:36:26,695
+Geçelim. Matris operasyonları diyor. Operasyondan kastı burada işlem. Matrislerle işlem yapabilir miyiz? Yapabiliriz. Sayılarla nasıl işlem yapıyorsan matrislerle de yapabilirsin. Neden?
+
+198
+00:36:30,452 --> 00:36:41,852
+Real sayılarla bir takım işlemler yapıyorsunuz değil mi? Toplama, çıkarma, çarpmanın toplama üzerine dalma özelliği vs. vs. Madrislerle de benzer işlemler yapabilir miyiz yani?
+
+199
+00:36:46,036 --> 00:36:51,735
+Yapabilir çünkü matrisin her satır südünündeki elemanlar sayı, değil mi?
+
+200
+00:36:55,572 --> 00:37:00,292
+Bu işlemlerden ilk akla gelen matris toplamıdır arkadaşlar.
+
+201
+00:37:02,152 --> 00:37:03,452
+Matris toplamı, bakın.
+
+202
+00:37:04,132 --> 00:37:07,572
+Matris toplamı. İki matrisin toplamından ne anlıyoruz?
+
+203
+00:37:08,431 --> 00:37:14,512
+İki matrisi, hadi ekranı gene kapatacağım, birinize söz vererek konuşalım.
+
+204
+00:37:14,632 --> 00:37:16,132
+[öğrenci]'ya soralım mesela.
+
+205
+00:37:23,347 --> 00:37:25,028
+Mikrofonu açar mısın [öğrenci]?
+
+206
+00:37:25,347 --> 00:37:26,208
+Efendim hocam.
+
+207
+00:37:26,967 --> 00:37:31,728
+[öğrenci], iki tane matrisin toplamından ne anlarsın? Yani nasıl toplarsın iki matrisi?
+
+208
+00:37:32,827 --> 00:37:37,988
+Aynı sütün ve şeylerdeki değerleri toplarım birbiriyle.
+
+209
+00:37:37,988 --> 00:37:46,507
+Peki, direkt hemen toplar mısın yoksa önce bir adım geri çekilir? Ya bunlar bir kere toplanabilme şartını sağlıyor mu diye bakar mısın?
+
+210
+00:37:46,931 --> 00:37:55,771
+İki maddesin eşit olup olmadığında da bunu yaptık fark ettiysen. Ne dedi bir arkadaşın, söz alan arkadaşın? Önce boyutlarına bakarım dedi değil mi?
+
+211
+00:37:56,951 --> 00:37:57,271
+Evet.
+
+212
+00:37:57,951 --> 00:38:05,091
+Aynen. Boyutları eşittiyse hiç onlar eşit mi diye bakmaya gerek yok dedi. İki maddesi toplayabilir misin?
+
+213
+00:38:05,871 --> 00:38:07,051
+Değerleri aynıysa.
+
+214
+00:38:07,971 --> 00:38:09,572
+Değerler aynıyse eğer.
+
+215
+00:38:10,072 --> 00:38:11,671
+Değerlerinden neyi kastediyorsun?
+
+216
+00:38:12,271 --> 00:38:13,351
+Birim olarak.
+
+217
+00:38:13,940 --> 00:38:19,500
+Boyutlarını söyleyeceksin bak. Boyutları aynı olmayan iki matrisi toplayabilir misin?
+
+218
+00:38:20,720 --> 00:38:21,320
+Toplayamam.
+
+219
+00:38:22,240 --> 00:38:29,200
+Yani birisi iki çarpı ikilik bir matris olsun. Hadi ötekisi de bir çarpı birlik bir matris olsun. Nasıl toplayacaksın?
+
+220
+00:38:30,920 --> 00:38:37,400
+Bir tanesinde bir tane eleman var. İki çarpı ikilik matrisde dört tane sayı var. Kimi kimle toplayacaksın? Hadi bakalım.
+
+221
+00:38:38,980 --> 00:38:40,000
+Toplayamam hocam.
+
+222
+00:38:40,367 --> 00:38:54,487
+Demek ki iki matrisi toplayabilmek için evvela neyi ön şart olarak koşmamız lazım? Bunların boyutları bir kere aynı, aynı cins olsunlar. Cinsten kastım boyut olarak aynı cins olsunlar. Ondan sonrası kolay zaten. Toplama işlemini nasıl yaparsın o zaman?
+
+223
+00:38:56,407 --> 00:39:00,427
+O zaman birbirleriyle toplarım aynı şey.
+
+224
+00:39:01,047 --> 00:39:02,647
+Birbirleriyle den kastım nedir?
+
+225
+00:39:04,211 --> 00:39:08,831
+Yine aynı satıra gelenleri yine tekrar birbirleriyle toplarım.
+
+226
+00:39:09,592 --> 00:39:23,031
+Tamam, aynı satır ve sütun, her bir matrisin aynı satır sütun elemanlarını alırım, toplamını da, o sayıların toplamı olan sayıyı da aynı satır sütuna yerleştiririm mi diyorsun?
+
+227
+00:39:23,771 --> 00:39:24,092
+Evet.
+
+228
+00:39:24,632 --> 00:39:28,132
+Evet, budur işte. Ne olacak ki başka? İyi mi? Budur.
+
+229
+00:39:30,579 --> 00:39:56,240
+Bakın ben size tanımı söylemesem bile kendiniz yapabiliyorsunuz ya. Aynen burada söylediği de o. Ama sen şimdi tanıma bakarsan burada irkilebilirsin. Yani A, B iki tane matris olsun, e, M çarpı N boyutlu olsun diyor bakın her ikisi de. Değil mi? Yoksa toplayamazsın çünkü. Toplamlarına da A artı B matris diyelim. Bu artık yeni bir matris. Kalemin ucu da aşılmış artık.
+
+230
+00:39:57,172 --> 00:40:22,231
+Yani zorla yazıyorum. Olduğu kadar. Bunların toplamı olan A artı B matrisinin de boyutu aynı olacak tabii ki. Değil mi? Tabii ki aynı boyuttan olacak. Peki bu yeni toplam matrisinin elemanları, az önce söyledi arkadaşınız nasıl olduğunu ama burada yazdığı şeye bakın. Yani bundan haz etmiyor öğrenci pek ama.
+
+231
+00:40:22,231 --> 00:40:23,231
+Yani.
+
+232
+00:40:24,692 --> 00:40:28,172
+Az önce sözlü olarak söylediğimiz şeyin kağıda dökülmüşüdür yani.
+
+233
+00:40:28,912 --> 00:40:38,692
+A artı B'ye C dersek, tamam C maddesini de kompakt olarak şöyle yazmış olsak, C, İ, J dediğim tipik bir elemanı bu toplam maddesinin.
+
+234
+00:40:39,352 --> 00:40:42,092
+İ'ninci satır C'ninci sütunundaki bir elemanı.
+
+235
+00:40:43,672 --> 00:40:49,231
+İ'ye, J'ye sırasıyla 1 ile M arasında ve 1 ile N arasında değerler vererek,
+
+236
+00:40:49,684 --> 00:41:10,164
+Bu toplam matrisinin istediğin elemanını bulursun. Nasıl bulursun? A ve B matrislerinin hangi pozisyondaki elemanı bulmak istiyorsan o pozisyondaki elemanını toplayarak. Yani burada yazdığı şey tam olarak budur. Yani bunlara çok takılmayın.
+
+237
+00:41:11,860 --> 00:41:37,539
+Evet, example 8 dediği şeye bakalım, bakın, A ve B matrislerine bakalım, toplanabilir mi bunlar? Toplanabilir çünkü boyutları aynı. E nasıl yapacaksın toplama işlemini? Bu zaten çok kolay. Çok kolay. Yani A artı B matrisinin ikinci satır, ikinci sütün elemanı 2. Neden? Çünkü A matrisinin ikinci satır, ikinci sütün elemanı olan eksi 1 ile
+
+238
+00:41:38,675 --> 00:42:05,615
+B madrisinin ikinci satırı, ikinci sütun elemanı olan üçün toplamı ikiyi verir de ondan. Diğer elemanlar için de aynı şekilde. Çok elementer, bunun üzerine daha da bir şey söylemeye gerek yok. Çok basit bir şey. Geçelim. Bu üretim bandıyla ilgili bir modelleme var burada. Merak eden bakabilir. Tamam mı? Ben bu örneği pas geçeceğim.
+
+239
+00:42:10,099 --> 00:42:16,140
+Bakın burada mavi gölgeli bant içinde yazdığı şeye bakın, dikkatini çekmek için okuyucunun yaparları bunu.
+
+240
+00:42:17,200 --> 00:42:18,059
+A artı B.
+
+241
+00:42:21,811 --> 00:42:24,851
+yazdığında hem A hem B aynı boyuttandır diyor.
+
+242
+00:42:25,411 --> 00:42:28,572
+Değil mi? Aksi takdirde toplanamaz bu matrisler.
+
+243
+00:42:28,672 --> 00:42:34,531
+Şimdi, matrislerle yapılan işlemlerden ilk akla gelen toplama işlemi dedik, söyledik.
+
+244
+00:42:35,592 --> 00:42:42,331
+Şimdi, farkını da söyleyebilirsin. Peki, iki matrisin farkını alamaz mıyım?
+
+245
+00:42:42,331 --> 00:42:46,771
+Alabilirsin ama öncesinde skaler çarpımın ne olduğunu söylemen gerekir.
+
+246
+00:42:48,148 --> 00:43:05,768
+Yani skaler dediğin şey sayıdır arkadaşlar, tamam mı? Bir matrisin bir skalerle çarpımı, bu da bir işlemdir. Yani nasıl bir işlemdir? Matristen yenilerini elde etme, türetme yöntemidir aslında bunlar bir nevi.
+
+247
+00:43:11,987 --> 00:43:16,648
+Bahar yarı yılında alıyor bu lineerce bir dersini. Mat 1'i de bu dönem mi alıyorsunuz?
+
+248
+00:43:18,508 --> 00:43:21,208
+Mat 1'i geçen dönem almıştık, mat 2'ye aldık.
+
+249
+00:43:21,208 --> 00:43:24,307
+Geçen, tamam, bu dönem mat 2'ye alıyorsunuz, öyle mi?
+
+250
+00:43:24,568 --> 00:43:24,847
+Evet.
+
+251
+00:43:26,307 --> 00:43:37,927
+O zaman şey yapalım, yeni bir sayfa açalım, yani bilgilerinizi hatırlayalım.
+
+252
+00:43:38,579 --> 00:44:02,579
+matbir kursunda gördüğünüz, çalıştığınız fonksiyonlar böyleydi değil mi? Tek değişkenli real değerli öyle mi? Bütün dönem boyunca bu tip fonksiyonlarla çalışmadınız. Bunların limiti, sürekliliği, türevi değil mi? Grafiği nasıl çizilir? Öyle değil mi arkadaşlar? Yani lineerizasyonu, diferansiyeli ondan sonra...
+
+253
+00:44:03,188 --> 00:44:07,408
+İntegraline varıncaya kadar bütün dönem bu tip fonksiyonlarla uğraşmadınız mı?
+
+254
+00:44:07,748 --> 00:44:08,327
+Evet hocam.
+
+255
+00:44:08,867 --> 00:44:14,788
+Uğraştınız. Şimdi ikinci kursta neyle uğraşacaksınız? İki değişkenli, üç değişkenli fonksiyonlarla öyle mi?
+
+256
+00:44:15,928 --> 00:44:19,827
+Şimdi bak orada da şunu görmüş olmanız lazım. İki tane alalım böyle bir fonksiyon.
+
+257
+00:44:19,827 --> 00:44:23,307
+Bu iki fonksiyondan yenilerini nasıl türetiyordunuz?
+
+258
+00:44:24,748 --> 00:44:29,268
+Mesela ikisini toplayarak yeni bir fonksiyon elde edebilir misin? Tek değişkenli, real değerli.
+
+259
+00:44:32,659 --> 00:44:40,760
+Nasıl tanımlıydı bu? Bir x sayısına tatbik ettiğinde bu toplam fonksiyonunu ne anlaman gerekiyor?
+
+260
+00:44:43,599 --> 00:44:59,280
+G x bir sayı değil mi? G fonksiyonunun x'e karşılık getirdiği sayı. Aynı şey f için de geçerli. Bu iki sayıyı toplayayım, g artı f fonksiyonunun tanımını bu şekilde yapayım diyebilirsin.
+
+261
+00:44:59,679 --> 00:45:10,320
+Bu iyi tanımlıdır. Öyle değil mi? G artı F, G F çiftinden yola çıkarak üretilen yeni, üçüncü bir fonksiyon mu değil mi?
+
+262
+00:45:12,500 --> 00:45:20,300
+Farkını da yapabilirsin. Bak bu da başka ne? Şunları gördünüz değil mi? G çarpı F, ondan sonra G bölü F.
+
+263
+00:45:20,960 --> 00:45:27,079
+Hatta bu iki fonksiyonun çarpımı bir tanesi sabit olursa, yani G fonksiyonu mesela,
+
+264
+00:45:27,603 --> 00:45:52,463
+C sabit olursa ne olur? G, F dediğin şey C çarpı F olur değil mi? Bu fonksiyonu nasıl tanımlıyorsun? Herhangi bir X'e tatbik edersen bunu, neydi o? Fx sayısıyla C'yi çarparım diyorsun değil mi? Yani bunları matrislerle de pekala yapabilirsiniz.
+
+265
+00:45:55,987 --> 00:46:06,207
+Ne yaptık zaten biz? Bakın, iki tane matris versem, şimdi bunları toplamak suretiyle yeni bir matris elde etmedik mi?
+
+266
+00:46:07,527 --> 00:46:18,087
+Ettik. Başka bir matrisi, bak, bir sayıyla çarpmaya kalksam, mesela R sayısı, R eleman R.
+
+267
+00:46:18,963 --> 00:46:38,784
+R ile A'yı çarp, istersen B'yi çarp, fark etmez. Önce kimi çarptığının hiçbir anlamı yok. Yani bir matrisi bir sayıla çarpmaktan bahsediyorum skalerle. Bu da yeni bir matris, yeni bir matris türettin artık. Bu nasıl tanımlı? Nasıl tanımlarsınız arkadaşlar? Bir matrisi bir sayıla çarpmaktan ne anlarız sizce?
+
+268
+00:46:42,228 --> 00:46:45,367
+Satır ve sütundaki her bir terimi reyle çarpacağız.
+
+269
+00:46:46,587 --> 00:46:50,647
+Evet, matrisin bütün elemanlarını desen, aynı kapıya çıkar değil mi?
+
+270
+00:46:51,567 --> 00:46:52,187
+Evet hocam.
+
+271
+00:46:52,647 --> 00:46:58,367
+Matrisin bütün elemanlarını gider, aynı sayıla çarparım, aynı pozisyona yazarım diyeceksin değil mi?
+
+272
+00:46:59,967 --> 00:47:00,647
+Evet.
+
+273
+00:47:01,407 --> 00:47:03,547
+Yani, A şöyle diyelim.
+
+274
+00:47:05,127 --> 00:47:08,427
+A1-1, A1-N, hadi kare matris alayım.
+
+275
+00:47:09,076 --> 00:47:10,496
+M1 özel olarak.
+
+276
+00:47:10,675 --> 00:47:11,275
+N, N.
+
+277
+00:47:12,376 --> 00:47:12,576
+Bu.
+
+278
+00:47:12,836 --> 00:47:15,315
+Bunu R ile çarpmak istersen, R bir real sayı.
+
+279
+00:47:15,416 --> 00:47:16,876
+O zaman R çarpı A11.
+
+280
+00:47:17,695 --> 00:47:19,096
+R çarpı A1N.
+
+281
+00:47:19,876 --> 00:47:21,376
+R çarpı A, M1.
+
+282
+00:47:21,936 --> 00:47:23,436
+R çarpı A, N, N.
+
+283
+00:47:23,556 --> 00:47:28,695
+İşte yani bir matrisi bir skalayla çarpmaktan kast edilen yeni matris tam da bu.
+
+284
+00:47:29,096 --> 00:47:29,996
+Boyutları aynı mı?
+
+285
+00:47:30,115 --> 00:47:30,356
+Aynı.
+
+286
+00:47:31,275 --> 00:47:33,096
+A ile R çarpı A'nın boyutları aynı.
+
+287
+00:47:33,215 --> 00:47:34,175
+Ama birbirinin aynı mı?
+
+288
+00:47:34,255 --> 00:47:34,876
+Tabii ki değil.
+
+289
+00:47:35,876 --> 00:47:36,195
+Değil mi?
+
+290
+00:47:36,692 --> 00:47:40,651
+Şimdi sen burada R sayısını özel olarak, eksi bir alırsan ne olur?
+
+291
+00:47:42,731 --> 00:47:43,471
+Özel olarak.
+
+292
+00:47:46,351 --> 00:47:49,131
+R çarpı A, eksi A olur değil mi?
+
+293
+00:47:52,724 --> 00:47:55,184
+A'nın negatifi diyelim buna isterseniz.
+
+294
+00:47:58,124 --> 00:47:58,764
+Negatifi.
+
+295
+00:48:02,195 --> 00:48:05,295
+Ya da eksilisi, hangisini uygun görüyorsanız.
+
+296
+00:48:07,076 --> 00:48:10,375
+Toplama işlemine göre tersi demiyorum özellikle bakın.
+
+297
+00:48:10,795 --> 00:48:13,395
+Çünkü bir matrisin tersi bambaşka bir şeydir.
+
+298
+00:48:14,295 --> 00:48:19,415
+Onu size anlatabilmem için en az üç hafta geçmesi lazım.
+
+299
+00:48:20,655 --> 00:48:25,175
+Bir matrisin eksilisini, matrisin toplama işlemine göre tersi olarak anlamayalım.
+
+300
+00:48:29,300 --> 00:48:38,520
+Bunu da söyledikten sonra artık iki matrisin farkını söyleyebiliriz değil mi? Bak, A artı B'den ne anlamamız gerektiğini söyledik.
+
+301
+00:48:39,240 --> 00:48:50,880
+A eksi B'yi nasıl yazacaksın? A eksi B'den kastımız şudur. A artı eksi bir çarpı B. Değil mi?
+
+302
+00:48:56,532 --> 00:49:00,712
+İki matrisin farkını veremezsin, değil mi?
+
+303
+00:49:02,172 --> 00:49:15,992
+Bu. A-B aslında özünde bir toplamadır yani. Gene iki matrisin toplamıdır ama matrislerden birini eksi bile çarptıktan sonra diğeriyle toplamak kastedilen budur yani, toplamdan kastedilen.
+
+304
+00:49:17,992 --> 00:49:22,432
+Evet. Sıfır matrisimiz vardır bir de, özel.
+
+305
+00:49:24,436 --> 00:49:37,576
+Sıfır matrisi. Bütün elemanları sıfır. Boyutu ne olursa olsun hiç fark etmez. Tamam mı? Bütün elemanları sıfır olan bir matris düşünün. Hangi mertebeden olursa olsun sıfır matris.
+
+306
+00:49:38,195 --> 00:49:54,355
+Bu sıfır matrisi toplama işlemine göre ama matris toplamını kastediyorum. Matrislerde çalıştığımıza göre artık demek ki sayılar, real sayılardaki toplama işlemini kastetmiyoruz tabii ki değil mi? Matris toplamına göre etkisiz eleman diyebilir miyim sıfır matrise?
+
+307
+00:49:58,900 --> 00:50:25,059
+Söylemek isteyen var mı buna? Hangi A madrisini alırsan al. A ile sıfırı toplasan gene kendisini verir mi? Evet. Peki sıra önemli mi bu toplama işleminde? Yani A ile sıfırı topladım, A verdi tamam. Peki sıfırla A'yı toplasam gene A'yı verir mi? Evet verir.
+
+308
+00:50:25,059 --> 00:50:25,840
+Tamam.
+
+309
+00:50:26,931 --> 00:50:53,591
+Aslında burada biz üstü kapalı şunu da söylemiş oluyoruz. Bakın buraya yazayım. İki matrisin toplamı değişmelidir değil mi? Neden değişmeli? Bunun ispatı da triviyeldir yani. Kalem oynatmaya bile gerek yok. Ağzınla söyleyebilirsin yani. İki matrisin toplamı neden değişmeli? Yani sıraya bağımlı değil. İster A ile B'yi topla, ister B ile A'yı topla. Bulacağın matris aynıdır. Neden?
+
+310
+00:50:56,211 --> 00:51:00,552
+Çünkü her iki durumda da aynı konumlardaki değerleri topluyoruz.
+
+311
+00:51:02,992 --> 00:51:07,192
+Yani topluyorsun da o sayı niye değişmiyor? Onu söylemen lazım.
+
+312
+00:51:08,832 --> 00:51:10,211
+Çünkü...
+
+313
+00:51:10,211 --> 00:51:18,092
+Ya bunun cevabı var ya, yani söylenmeyecek kadar trivial bir şey yani aslında.
+
+314
+00:51:18,643 --> 00:51:21,324
+2 artı 1 ile 1 artı 2'nin toplamını.
+
+315
+00:51:21,324 --> 00:51:39,643
+Odur işte, odur. Matris'in her pozisyonunda yaptığın şey o. Evet, evet, evet. Aynen o dediğiniz şey. Matrisleri toplarken satır sütunundaki elemanlarını topluyorsun. O da sayıların toplamına indirgeniyor zaten. İki sayıyı toplarken…
+
+316
+00:51:40,211 --> 00:51:58,931
+Önce hangisini diğeriyle topladığının bir şeyi yok, farkı yok değil mi? Toplama işlemine bir etkisi yok. O yüzden A artı B, B artı A'ya eşit. Yani burada B matrisi özel olarak sıfır olursa tabii ki A ile sıfırın toplamı A'ya eşit olur.
+
+317
+00:52:03,476 --> 00:52:31,016
+Evet. Bir matrisin skalede çarpımından demek ki anlamamız gereken bu. Peşinden A-B'den ne anlamamız gerektiğini de söyledik. Bakın burada bir örnek vermiş insan. Bunlar da, yani insan hicap duyuyor ya bunları söylemekten. Bakın A matrisini vermiş. İşte R sayısı da eksi 2 tamam mı? Eksi 2 ile çarp. Ne demek? İşte matrisin bütün elemanlarını eksi 2 ile genişlet yani. Genişletten kastım çarp yani. Aynı pozisyona da yaz.
+
+318
+00:52:32,211 --> 00:52:55,972
+Bu. Burada benim dikkatimi çeken, arkadaşlar, size 10 dakika ara vereyim mi, yoksa blok yapıp biraz daha erken bitireyim mi? Çünkü tahta da yazmak gibi değil bu. Yani yazınca daha çok zaman harcıyorsun sınıfta. Bir de onun silme faslı var. Yani online olunca biraz daha hızlı oluyor tabii ister istemez.
+
+319
+00:52:56,916 --> 00:53:10,256
+Yani size bırakıyorum. Yani 10 dakika ara verelim diyorsanız, bir soluklanalım, bir şeyler içelim diyorsanız, 10 dakika ara vereyim. Yok, gerek yok hocam diyorsanız, bir 30 dakika daha devam edebilirim.
+
+320
+00:53:12,776 --> 00:53:14,276
+Hocam devam edebiliriz.
+
+321
+00:53:15,076 --> 00:53:15,776
+Tamam.
+
+322
+00:53:16,532 --> 00:53:43,552
+Bunlar çok kolay konular arkadaşlar yani. Umarım yani bir aydan fazla bizi şey yapmazlar, yani oyalamazlar bu online eğitimle. Sınıfta yaparız dersimizi. Şimdi burayı hızlıcana geçelim. Mesela bakın toplama işlemine göre değişmelilikten bahsettik. Şurada hemen benim dikkatimi çeken şu özellik var. Sayfaya bir zoom yapayım şöyle size. Bakın bunun ne olduğunu bilen var mı?
+
+323
+00:53:45,108 --> 00:53:49,708
+A'yı, B'yi, C'yi matris olarak değil de sayı olarak düşünsen, ne demekti bu?
+
+324
+00:53:53,556 --> 00:53:54,796
+Değişme özelliği mi?
+
+325
+00:53:55,056 --> 00:54:11,016
+Değişme değil. Bak sizi lise yıllarına götürüyorum. Lisede bunları size gösterdiler ya. Ortaokulda belki de. A'yı, B'yi, C'yi matris olarak değil de sayı olarak düşün. Ne demek bu?
+
+326
+00:54:14,900 --> 00:54:35,400
+Diyor ki, B ile C'yi topla, ona A ilave, sol tarafta. Sağ tarafta diyor ki, yok diyor, sen A ile B'yi topla, ona C ilave. Ama değişen bir şey yok, ikisi de birbirinin aynı. Ne demek bu? Bunun bir ismi var ya. Ben İlilcesini söyleyeyim, siz Türkçesini söyleyin isterseniz bana. Asosyatiflik diye bir şey duydunuz mu?
+
+327
+00:54:40,820 --> 00:54:44,139
+Türkçesini bilen varsa Türkçesini söylesin şimdi, asosyatiflik.
+
+328
+00:54:47,660 --> 00:54:50,180
+Birleşmelilik özelliği miydi acaba Türkçesi bunun?
+
+329
+00:54:54,835 --> 00:54:55,455
+Evet hocam.
+
+330
+00:54:55,455 --> 00:55:21,195
+Yani bu, evet değil mi? Yani buradan anlaman gereken, ya bu şeylere çok da takılmak gerek yok yani, tanımlara, terim terimlere. Buradan anlaman gereken ne? Şu. Nasıl gruplama yaparsan yap. Değişen bir şey olmuyor demek istediği bu. Öyle değil mi? Bütün bilmen gereken bu yani. Önce kimi kimden toplayıp ona kimi ilave ettiğinin bir anlamı yok demek istiyor yani burada. Bütün bilmen gereken bu.
+
+331
+00:55:22,579 --> 00:55:34,956
+Sayılar için bu böyle. E matrisler için de böyle mi? E böyle. Sayılar için böyle dediğin şeyi matrisin her pozisyonunda tekrarlıyorsun. Öyle değil mi? Şimdi...
+
+332
+00:55:40,884 --> 00:56:04,504
+Bakalım peşinden ne var. Evet, iki tane matris vermiş, bunların farkını yazın demiş. Yani bunu da müsaadenizle geçelim artık değil mi? Yani toplama çıkarmayla uğraşmayalım artık yani. Ama şunu söyleyeyim en azından, bu örnekte ikisinin de aynı boyuttan olduğuna dikkat kesilelim. Değil mi? İki matrisin toplamında olduğu gibi.
+
+333
+00:56:05,588 --> 00:56:15,868
+Farkında da her iki matrisin aynı mertebeden, aynı cins diyeyim kısaca, olmasını isteriz değil mi? Aksi takdirde mümkün değil. Yazamazsın şunu.
+
+334
+00:56:17,568 --> 00:56:24,268
+Evet, bunu da geçelim. Burada işte bir örnek daha var. Example 12, envanter kontrolü diyor. Bu örneğe de girmek istemiyorum.
+
+335
+00:56:25,508 --> 00:56:31,168
+Yani diğer hocaların çoğu bunları da anlatmaz, tahmin etmiyorum. Yani o Türkçe kitabı falan.
+
+336
+00:56:31,923 --> 00:56:54,324
+takip edenler birebir, yani bu size verdiğim örnekleri de göstermezler. Yani o diagramı bir matris olarak represente etmek, yani o üretim bandındaki ürün çıkışlarını matris formatında okutmak vs. vs. yani bu tip örnekleri bazı hocalar vermeyi tercih de etmiyor. Yani direkt A matrisi şudur diye yazıyor, geçiyor, gidiyor yani.
+
+337
+00:56:55,764 --> 00:57:19,224
+Şimdi burada şöyle yapalım, sayfayı geri sardık istemeden. Evet, transpos diye bir tanım var arkadaşlar burada. Bakın, bunun Türkçesi devrik, devrik demeyeyim de devriği, yumuşak G ile sanırım Türkçesi buydu. Ben Türkçelerini kullanmayı sevmiyorum, tamam mı?
+
+338
+00:57:19,539 --> 00:57:30,420
+Transpozu tercih ederim çünkü yarın öbür gün yurt dışında eğitim almaya gittiğinde oradaki kitaplarda göreceğin terim bu. Yani şimdiden alışsan fena olmaz yani.
+
+339
+00:57:32,239 --> 00:57:45,460
+Yani Transpoze. Transpozu ne dersen de yani. Matrisin devriği. Yani devriği ne demek yani. Sokaktaki adama sorsan devriği ne anlar yani bir şey anlar mı yani.
+
+340
+00:57:50,356 --> 00:58:03,636
+Transpozunu kullanalım. Bir matris, M çarpı ne boyutu bir matris. Bunun transpozundan şunu anlamamız gerekiyor. Bakın söylüyor. N çarpı M. Dikkat edin, roller değişti.
+
+341
+00:58:06,336 --> 00:58:16,236
+Roller değiştikten kastım ne? Satır ve sütunun yerleri değişti. Demek ki transpoz böyle bir şey. Matrisin satır ve sütunlarını yer değiştirirsen,
+
+342
+00:58:16,884 --> 00:58:18,483
+Transpozunu almış olursun.
+
+343
+00:58:22,036 --> 00:58:26,255
+Bir matris transpozuna eşit olur mu? O bambaşka bir soru. Değil mi?
+
+344
+00:58:27,415 --> 00:58:31,096
+Şimdi bakın, hemen peşinden gelen örneğe bakalım. A matrisini al.
+
+345
+00:58:33,175 --> 00:58:38,355
+A'nın, şurayı silelim.
+
+346
+00:58:42,643 --> 00:58:57,903
+Tekrarlayayım mı transpozunu tanımını? Matris'in sütunlarını satır veya satırlarını sütün diye yazarsan transpozunu elde etmiş olursun. A matris'i bu ise bunun transpozunu bana birisi yazdırsın hemen geçelim. Boyutu kaç olur transpozunun?
+
+347
+00:59:00,803 --> 00:59:02,003
+3x2 mi hocam?
+
+348
+00:59:02,003 --> 00:59:07,683
+3x2 yazdım. Şimdi sen bana sütunlarını sırayla yazdır.
+
+349
+00:59:09,268 --> 00:59:10,988
+4-2-3
+
+350
+00:59:10,988 --> 00:59:13,407
+Birinci sütununu söylüyorsun değil mi?
+
+351
+00:59:13,968 --> 00:59:14,468
+Evet hocam.
+
+352
+00:59:14,968 --> 00:59:18,508
+Tamam, 4-2-3 yazdım. İkinci sütunu, yani son sütunu?
+
+353
+00:59:19,028 --> 00:59:20,288
+0-5-2
+
+354
+00:59:20,288 --> 00:59:25,068
+Evet, bu. Peki, A matrisi transpozuna eşit olmak zorunda mı?
+
+355
+00:59:26,688 --> 00:59:27,248
+Hayır.
+
+356
+00:59:28,448 --> 00:59:28,788
+Neden?
+
+357
+00:59:31,699 --> 00:59:35,719
+Hocam, çünkü iki matrisin de satır ve sütun sayıları farklı, ondan olabilir mi?
+
+358
+00:59:35,839 --> 00:59:39,759
+Farklı, aynen. Evvela boyutlardan bir kere tutmuyor birbirini, değil mi?
+
+359
+00:59:40,279 --> 00:59:40,859
+Evet, hocam.
+
+360
+00:59:41,299 --> 00:59:51,699
+Peki, boyutları tutsaydı, tamam, hadi şöyle yapalım, biraz daha B maddesini al. Bu B maddesinin transpozu da B ile aynı mertebeden, öyle mi diyeyim mi? O da 3x3, değil mi?
+
+361
+00:59:52,359 --> 00:59:52,679
+Evet.
+
+362
+00:59:53,699 --> 00:59:54,399
+Aynı mı peki?
+
+363
+00:59:57,139 --> 00:59:59,159
+Boyutlar aynı ama sayılar farklı işte.
+
+364
+01:00:00,244 --> 01:00:22,204
+Güzel. Demek ki bir matrisin transpozun eşit olabilmesi için boyutlarının da aynı olması yetmiyor. Ya bir kere kara matris olması lazım mı bir matrisin transpozun eşit olması için? Bu ön koşul değil mi? Kara matris olmak zorunda ama yeter mi? Yetmez. Az önce söylediğin gibi elemanları da eşit olmak zorunda değil mi?
+
+365
+01:00:24,644 --> 01:00:26,024
+Elemanları da eşit olmak zorunda.
+
+366
+01:00:28,115 --> 01:00:28,615
+Evet.
+
+367
+01:00:32,916 --> 01:00:54,036
+Transpozuna eşit olan matris zaten simetrik matristir. Bakın onu da göstereyim size. Şöyle, pardon, şöyle kaydıralım sayfayı. Bakın soru, öyle bir matris düşün ki, tamam mı?
+
+368
+01:00:56,211 --> 01:01:13,711
+N çarpı N, kare matristen bahsediyorum. Öyle ki, şu iki nokta üçü de öyle ki demek. Yani İngilizce'deki such that. Öyle ki A matrisi transpozuna eşit olsun. Böyle bir matris var mıdır? Varsa bu tip matrisler nasıldır mesela?
+
+369
+01:01:22,835 --> 01:01:30,195
+Bunu kendiniz bile yapabilirsiniz. Yani mesela, eni çok büyük bir sayı almasan da olur. Eni iki al mesela. Eni iki al.
+
+370
+01:01:31,635 --> 01:01:36,695
+A matrisini iki çarpı ikilik bir matris gibi düşün. A, B, C, D. Tamam mı?
+
+371
+01:01:38,675 --> 01:01:45,016
+Transpozunu yaz. A, B, C, D. Tamam mı?
+
+372
+01:01:50,452 --> 01:02:16,112
+Eşit olabilmesi ne zaman mümkün? Ancak ve ancak. Bakın, birinci satır, birinci sütün elemanları aynı, değil mi? Bak, onları aynı renklerle çerçeve içine alayım, siz öyle takip edin. Aynı satır, sütün elemanları, onların hepsini aynı renkle çerçeve içine alıyorum. Tamam mı? Başka ne olsun?
+
+373
+01:02:17,012 --> 01:02:18,332
+Bir de sarı kullanalım.
+
+374
+01:02:24,916 --> 01:02:50,716
+A, A'ya eşit zaten değil mi? E, mavilere bakıyorsun, B, C'ye eşit olmak zorunda. Başka? C, B'ye eşit, o zaten aynı değil mi? C, B'ye eşit, bu ikisi birbirinden farklı değil ki. Sonra, A eşittir, A'yı yazmamıştım ama yazayım, D eşittir, D. Şu ikisi birbirinin aynı dedik.
+
+375
+01:02:51,539 --> 01:02:54,720
+A eşittir, A'yı nasıl okursunuz arkadaşlar siz?
+
+376
+01:02:59,188 --> 01:03:26,108
+Bir sayı kendisine eşit diye okuyor bunu öğrenci ama biz bunu böyle okumayız matematikte. Yani A, herhangi bir değer alabilir. Ama B, C'ye eşit dediğin anda, B ve C kafasına göre değerler alamaz değil mi? Bu eşitliğe riayet etmek zorunda, biat etmek zorunda. B'nin değeri neyse, C'de o değeri almak zorunda. Eşitlikten sebep.
+
+377
+01:03:27,219 --> 01:03:45,559
+Aralarında bağımlılık ilişkisi var ama A eşittir A derken böyle bir bağlayıcılığın yok. Biz bunu böyle okuruz yani. Serbest değişken gibi, keyfi, parametre gibi okuyacaksın. A eşittir A'yı konvansiyonel bir denklem, eşitlik gibi görmeyeceksin yani.
+
+378
+01:03:45,559 --> 01:03:52,460
+Ya bu zaten trivial, hoca bunu niye söylüyor ki diye algılama bak bunu basit bir şey gibi gözüküyor ama öğrenciden çoğu bunu bilmiyor.
+
+379
+01:03:54,420 --> 01:04:21,539
+A eşittir A'dan kasıt. A her real sayı değerini alabilir demek. Aynı şekilde D her real sayı değerini alabilir demek. Ama B ve C için aynı şeyi söyleyemiyorsun. Buna birbirine eşit. O zaman ne oluyor? Bakın A, A'ya, A'nın transpozuna eşit. A maddesinin elemanları nasıl olmak zorunda o zaman? A, A'ya eşit, D, D'ye eşit.
+
+380
+01:04:23,572 --> 01:04:31,852
+B ve C birbirine eşitse bunlar ikisi, iki farklı parametre değil. Aslında teke indirmiş oluyorsunuz sayıyı, öyle mi değil?
+
+381
+01:04:34,292 --> 01:04:34,812
+Evet.
+
+382
+01:04:35,952 --> 01:04:40,652
+Bak, A ve D'de elimiz kolumuz bağlı, öyle değil mi? Onlar her değeri alıyor, kimseye bağımlı değil.
+
+383
+01:04:41,932 --> 01:04:50,632
+A'nın, D'nin başka B, C'ye bağımlı olduğu bir denklem var mı elimde? Şu arada listeme bakıyorum. Yok. Onlar bağımsız.
+
+384
+01:04:51,635 --> 01:05:17,036
+Kendi başına buyruk veya işte serbest değişken, serbest parametre tamam mı? Onlarda bir oynama yapamıyorum ama B ile C'ye gelince yapabiliyorum. Yani iki tane almama gerek yok. İkisi bir. Düşüneceksin yani. C ile B birbirinin aynı. Yani C yerine de B yazarsın veya B yerine C yazarsın. Bu. Böyle bir matris.
+
+385
+01:05:19,507 --> 01:05:41,688
+Transpozuna eşit olur ancak. İşte bunlara simetrik matris denir arkadaşlar. Transpozuna eşit olan matislere simetrik matris deriz. Şuna da matrisin esas köşegeni deriz, tamam mı? Demek ki simetrik matrislerde simetriden kastedilen şey şudur.
+
+386
+01:05:44,527 --> 01:05:45,127
+Bakın.
+
+387
+01:05:45,619 --> 01:05:55,199
+Esas köşegene göre baktığınızda elemanlar birbirinin tıp atıp aynısı. Simetri budur.
+
+388
+01:05:56,780 --> 01:06:08,840
+Bazen de işaret gözeterekten simetri söz konusu olabilir. O da şudur, bakın ters simetrik matris deriz ona da. Ters simetrik matris.
+
+389
+01:06:12,500 --> 01:06:37,579
+Onlar da şöyle matrislerdir. İşaret gözeterekten kastım şu, yani transpozona değil de, transpozunun eksilisine eşit ise, yani yukarıdaki gibi 2x2'lik bir matris alırsan, bu sefer bulacağın şey şu, bak, A matrisi de A, B, C, D olsun, tamam mı? Bu özellik ne zaman mümkün olur biliyor musun?
+
+390
+01:06:39,443 --> 01:06:43,684
+Transpozunu yaz, eksiyle çarp. Şöyle diyelim isterseniz bakın.
+
+391
+01:06:48,500 --> 01:06:52,039
+A üzeri transpoz eksilisini bana birisi söylesin yazayım.
+
+392
+01:06:56,788 --> 01:07:06,487
+Eksi A. Eksi A, eksi B değil mi? Evet. Eksi C, eksi D. Evet. Tamam, bu ikisini kıyasla şimdi.
+
+393
+01:07:08,607 --> 01:07:23,288
+Sıfır. Sıfır mı? Ha, kıyasladığın zaman. Bana denk, iki maddesin eşit olması da ne anlayacaksın burada? Karşılıklı elemanların hepsi eşit. O da sana dört tane denklem verecek değil mi? Her birini yazdır bana tek tek.
+
+394
+01:07:26,516 --> 01:07:35,016
+Birinci satır birinci sütun elemanı A'nın, eksi A üzeri T ile birinci satır birinci sütun elemanı ile aynı olmak zorunda değil mi? Ne demek o?
+
+395
+01:07:37,536 --> 01:07:52,256
+A eşittir, eksi A. Öyle mi değil mi? Bu iki matrisin eşitliği bu. Tamam, diğer elemanlar için de yapalım onu. B eşittir, eksi C. C eşittir, eksi B. Başka? D eşittir, eksi D.
+
+396
+01:07:53,811 --> 01:08:06,311
+Tamam. Yalnız burada ilginç bir şey var. Bakın, A eşittir, eksi A. Bu ne zaman mümkün ya? A dediğin şey, sayı. A, B, C, D, real sayı bunlar. Eksilisine eşit olan yegane sayı kimdir?
+
+397
+01:08:06,551 --> 01:08:07,231
+Sıfır hocam.
+
+398
+01:08:07,831 --> 01:08:19,412
+Sıfır, A eşittir, sıfır. Aynı şeyi D için de söyleyebilir misin? Söyleyebilirsin. O zaman bir matrisin ters simetrik olabilmesi için köşegeni komple sıfır olmak zorunda.
+
+399
+01:08:20,404 --> 01:08:28,904
+Sonucu çıkar, simetrik matris'te bu yok. Ola da bilir, olmaya da bilir. Bak, yukarıya kaydırayım sayfayı, simetrik matrise dikkat et.
+
+400
+01:08:30,224 --> 01:08:43,724
+Köşegen sıfır olmak zorunda değil, ola da bilir ama. Mecburiyet değil. Ama ters simetrik matris'te durum farklı. Köşegen elemanları mecburen sıfır olmak zorunda.
+
+401
+01:08:44,916 --> 01:09:09,796
+Peki, köşegene göre elemanlara baktığımda, üstte, altta kalan elemanlara, onlar işte şu. Orada da nedir? Elemanlar birbirlerinin tersi olacak. O zaman A şöyle, 3.3 üstte, hüküm cümlem demektir bu. A matrisi, 2x2'lik bir matris için konuşuyorum, tamam mı? İstersen nxn'lik bir matris olsun, değişmez. Köşegeni sıfır olmak zorunda.
+
+402
+01:09:11,220 --> 01:09:20,940
+Şu iki çarpı ikilik olan için yazalım. B, eksi B. Bu, ters simetrik. Yani transpozunun eksilisine eşit olan maddis bu tiptir.
+
+403
+01:09:23,960 --> 01:09:37,520
+B, istediğin sayı olabilir. Bu sadece iki boyut için geçerli değil. M boyutla alırsan gene aynı. Köşegen sıfır, tamam mı? Şu üç.
+
+404
+01:09:37,920 --> 01:09:59,380
+Üçgen blok var ya, üst üçgen blok diyelim buna, bir de alt üçgen blok var. Burada da matrisin elemanları var değil mi? Bunları karşılaştırdığın zaman, yani köşegene göre, fark birinin işareti diğerinin tersi. Sadece bu. Ters simetrik matrisler de bunlar.
+
+405
+01:10:00,467 --> 01:10:24,467
+Bir matris transpozuna eşit olmak zorunda değil demek ki. Olursa simetrik matris dedik. Mesela birim matris diye bir matrisimiz var bizim çok özel. Tamam mı? Mesela 3 çarpı 3'lük birim matrisi yazayım size. 0, 1, 0. Birim matristen anlaman gereken şu, esas köşegeni komple birlerden oluşan, onun dışında ne var ne yok, 0 olan matris.
+
+406
+01:10:25,171 --> 01:10:29,171
+Yani bu boyut burada 3 olduğu için böyle yazdım ama daha yüksek de olsa aynı.
+
+407
+01:10:29,731 --> 01:10:33,551
+Yani bu 3 çarpı 3'lük olan, 2 çarpı 2'lik olanı yazarsan bu.
+
+408
+01:10:35,511 --> 01:10:41,651
+N çarpı n'lik olanı yazarsan, yine aynı.
+
+409
+01:10:41,831 --> 01:10:47,071
+Yani buradaki bütün sıfırları yazmak yerine şöyle kocaman bir sıfır yazayım, siz anlayın onu.
+
+410
+01:10:48,211 --> 01:10:48,611
+Tamam mı?
+
+411
+01:10:49,524 --> 01:10:54,364
+Yani bu sıfırdan kastım şu üçgen blok içindeki tüm elemanlar sıfır, onu kastediyorum.
+
+412
+01:10:56,164 --> 01:10:57,384
+Birim matris deriz buna.
+
+413
+01:10:59,784 --> 01:11:00,584
+Birim...
+
+414
+01:11:04,243 --> 01:11:07,483
+Matris. Birim matrisin transpozu kendine eşit mi?
+
+415
+01:11:11,891 --> 01:11:18,532
+Direkt köşegene göre elemanlar simetri var mı diye baksan yeterli. Zaten olduğu gözüküyor değil mi?
+
+416
+01:11:20,291 --> 01:11:24,012
+Yani I eşittir her zaman I üzeri T.
+
+417
+01:11:25,851 --> 01:11:26,631
+Değil mi?
+
+418
+01:11:30,163 --> 01:11:32,804
+Simetrik bir matris. Ters simetrik değil tabii ki.
+
+419
+01:11:34,943 --> 01:11:40,263
+Evet, bakın size söylediğim gibi burada hemen bölüm egzersizleri geliyor.
+
+420
+01:11:41,283 --> 01:11:46,543
+Bunlara bir bakmanızı tavsiye ederim. Şurada mesela dört numaralı örneğe bir bakalım hızlıcana.
+
+421
+01:11:48,683 --> 01:11:50,943
+Şöyle getirelim ekranın ortasına.
+
+422
+01:11:52,943 --> 01:11:57,663
+Yani iki matrisin eşitliği var ama matrislerden birinin elemanları.
+
+423
+01:11:58,068 --> 01:12:24,688
+Açık edilmemiş. Yani A, B, C, D'ler cinsinden birikmiş. Değil mi? Bunları bulun diyor. Test sorusu olarak bunu vermek istesen ne diyeceksin? İşte bu matris, soldaki matris, A diyelim isterseniz ona, sağdaki matrise de B diyelim, ise A, B, C, D ne olmalıdır? Aşağıdakilerden hangileri olmalıdır? Nasıl çözersin bunu? Çok basit. Yani bunu 30-40 saniyede çözmeniz işten bile değil yani. Nasıl çözersin bunu?
+
+424
+01:12:27,572 --> 01:12:28,932
+Normal denklem gibi.
+
+425
+01:12:29,612 --> 01:12:32,092
+Evet, A artı B'nin 4 olduğu gözüküyor mu burada?
+
+426
+01:12:32,712 --> 01:12:33,152
+Evet.
+
+427
+01:12:33,852 --> 01:12:37,311
+A eksi B'yi de alırım hemen. O da 2 mi?
+
+428
+01:12:39,731 --> 01:12:40,952
+A3 geliyor buradan.
+
+429
+01:12:41,772 --> 01:12:47,131
+A artı B 4, A eksi B de 2. Öyle değil mi?
+
+430
+01:12:47,992 --> 01:12:48,631
+Öyle hocam.
+
+431
+01:12:48,631 --> 01:12:53,912
+Tamam, toplarsam bunları, 2A 6, A eşittir 3 dedin, doğru dedin.
+
+432
+01:12:54,707 --> 01:13:20,407
+Değil mi? A3 ise B1'dir. C8, B'de eksi 2 yapar. Aynen. Yani bak ne kadar kolay. Yani 30-40 saniyeni alır. Böyle soru sormazlar size sınavda ama yani test tipi sorular üretilir yani. Bir şekilde üretilir. Lineerce bir dersi test tipi sınav yapmaya müsait bir derstir. Yani mat 1-2 öyle değildir bana soracak olursanız. Zorlarsan olur.
+
+433
+01:13:21,779 --> 01:13:39,180
+Sorlarsan olur. Matematik 2'yi bana sorarsan hiç uygun değil ya, test sınavı yapmaya. Ama lineer Cebir gerçekten uygun yani. Doğası itibariyle bu ders test sınavına uyar ya. Ben yurt dışındayken matik 2'yi haftada 6 saat verirdim yani. Hem de analitik geometriyle beraber.
+
+434
+01:13:40,884 --> 01:13:52,543
+Yani, divergence teoremi, stocks teoremi, mesela siz gemicilik, mühendislik, mühendislerin çok işine yarar bunlar. Ama burada göstermiyorlar. Yani, kaç saate indirmişler sizin dersinizi? Beşe indirmişler, değil mi?
+
+435
+01:13:56,627 --> 01:14:04,087
+Merak edip bakan oldu mu? Matiki'nin müfredatını. Hiç bu dediklerin var mı mesela? Tam da mühendislere yarayan şeyler bunlar.
+
+436
+01:14:06,788 --> 01:14:09,288
+İşimize yarıyorsa vermiyorlar hocam büyük ihtimalle.
+
+437
+01:14:09,827 --> 01:14:13,327
+Yani yok yani esas bunları vermek lazım mühendislere yani.
+
+438
+01:14:15,667 --> 01:14:21,927
+Yani akışkanlarla ilgili şeyler var, integraller var mesela. Anlatmak lazım yani.
+
+439
+01:14:22,515 --> 01:14:42,256
+Onların yorumları tam size lazım olan şeyler. Bazı hocaların kolayına geliyor, girmiyor oraya, yorumunu bilmiyor. Oralara hiç girmiyor, ne yapıyor? Soruyu veriyor, bu soruyu çöz, bunu hesapla, bunun türemini al, bunun integralini al.
+
+440
+01:14:42,644 --> 01:15:08,564
+Yani kalkülüs aslında böyle bir ders değildir. Bakın Thomas'ın kitabını okutuyorlar değil mi size? Güzel bir iş yapmışlar burada. Dünyada kabul görmüş bir kitabı, kayna kitabı olarak almışlar dersin. Kitabı olarak. Güzel. Amerika'ya da gitsen, kalkülüs dersi alsan, o kitabı okutacaklar sana. Ama o kitaba dikkat edersen öyle güzel örnekler var ki adamın yani onu Thomas kendi oturup tek başına yazmamıştır emin ol yani.
+
+441
+01:15:09,524 --> 01:15:30,024
+Onun yani belki bir 10-12 kişilik bir ekibi vardır, kalkülüsün böyle günlük hayattaki elle tutulur, somut örneklerini üşenmeden adamlar açık seçik yazmışlar ya kitaplara. Değil mi? Ama bizim Türkçe kitaplarda bulamazsın o tip örnekleme. Bu gemi inşaat mıydı bu bölüm?
+
+442
+01:15:32,744 --> 01:15:34,864
+Gemi makineleri işletme mühendisi.
+
+443
+01:15:36,083 --> 01:15:49,643
+Yani bak o kitapta şimdi aklıma öyle şeyler geliyor ki yani dersi bölmemek için anlatmamak lazım belki de ama yani öyle örnekler var ki şöyle bu kıyı olsun tamam mı?
+
+444
+01:15:52,303 --> 01:15:59,123
+İki tane sinyal alıcı istasyon olsun burada. Burada da bir gemi düş, yol alıyor, kıyıya paralel.
+
+445
+01:16:02,068 --> 01:16:04,307
+Burası deniz. Mavi ile gösterelim.
+
+446
+01:16:08,435 --> 01:16:35,815
+Kıyıya paralel giden bir gemi. Karadaki istasyonlar sinyal gönderiyor. Gemideki sinyal alıcı var değil mi? Öyle bir şeyler var diye biliyorum. Ya siz daha iyi bilirsiniz bunu. O sinyalleri çözümlüyor. Ona göre rotasını tayin ediyor bir şekilde. Bütün bunlar olurken yani çıkan sinyalle, alınan sinyal. Tamam mı?
+
+447
+01:16:36,212 --> 01:16:56,452
+Yani o alışveriş de anında gerçekleşen bir şey değil. Orada bir zaman kayması oluyor değil mi? Yani sinyal çıktı, onu alana kadar bir zaman geçti, onu bir iş proses etti vs. Bütün bunlar olurken o alışveriş esnasında bir grafik var. O da hiperbol.
+
+448
+01:16:57,203 --> 01:17:06,123
+İlginç yani. Bak, hiperbolü çoğunuz görmüşsünüzdür böyle bir şey olarak ama şu anlattığım şekilde ne alakası var diye düşünebilirdin ama var işte, söyledim.
+
+449
+01:17:06,683 --> 01:17:15,683
+Yani Thomas'ın kitabında böyle örnekler var. Bu Kolman'ın kitabı da güzeldir yani, lineer Cebir olarak. Bu da güzeldir yani.
+
+450
+01:17:19,703 --> 01:17:24,503
+Şimdi yani o kitabın öyle uygulamalarına falan merak edip bakarsanız.
+
+451
+01:17:25,043 --> 01:17:43,043
+Güzel olur ya. Öyle kalkülüsü, bir şeyin türemini alıp, integralını hesaplamak şeklinde anlamayın ya. Yani bak, anjiyoplastik ameliyatı yapan doktora ben sizin kullandığınız diferansiyel hesap deyince gözü fal taşı gibi açılıyor ya. Diferansiyel hesap gördünüz mü matematik 1'de? Gördünüz değil mi?
+
+452
+01:17:47,444 --> 01:17:54,463
+Gördünüz, lineerizasyon, işte diferansiyel, değil mi? Yani anjiye ameliyatlarında bunlar kullanılıyor ya.
+
+453
+01:17:58,579 --> 01:18:00,000
+Neyse, konu dağılmasın.
+
+454
+01:18:04,564 --> 01:18:27,304
+Şimdi matris çarpımı diye bir şey var arkadaşlar. Toplamındansa matris çarpımı biraz daha az trivial diyelim. Bunu çok sık kullanırız biz bu işlemi. İki matrisin çarpımının ne olduğunu bilen var mı? Nasıl çarpılıyor ya da?
+
+455
+01:18:33,332 --> 01:18:35,272
+Var mı iki matrisinin nasıl çarpıldığını bilen?
+
+456
+01:18:39,444 --> 01:18:43,864
+Hocam, fizikte vektörel çarpım tarzı bir şey görmüştük galiba.
+
+457
+01:18:44,184 --> 01:18:50,463
+Vektörel çarpım bambaşka bir şey ama. Yani bir vektörü bir matrisin satırı veya sütunu olarak düşünebilirsin.
+
+458
+01:18:52,884 --> 01:19:02,764
+Ama vektörel çarpım başka bir şey. Matrisin her satırı veya her sütunu bir vektördür. O zaman nasıl olacak?
+
+459
+01:19:07,923 --> 01:19:28,224
+Şöyle, ben sayfayı kaydırayım, sizden önceki sınıfa ne kadar gösterdiysem size de aynı bir göstermeye çalışayım. Bakalım neredeydi sabah gösterdiğim burada. Şimdi bir dakika. Evet, tekrar tekrar yazmaktansa sabahki karalamalarımı kullanayım, bakın.
+
+460
+01:19:29,235 --> 01:19:35,775
+Nokta çarpım diye bir şey var. İki matrisin çarpımını tanımlamadan önce bunu vermek gerekir.
+
+461
+01:19:37,036 --> 01:19:42,176
+R küpü alalım. Üç boyutlu uzay. X, Y, Z. Tamam mı? X, Y, Z.
+
+462
+01:19:45,515 --> 01:19:52,376
+X, Y, Z koordinat ekseni sıfırda burada. Bu uzayda iki tane vektör alalım.
+
+463
+01:19:52,756 --> 01:20:19,576
+U ve V. Ne demek? İki tane vektör almak. Bunların her birinin üç tane bileşeni var, koordinatı var, komponenti var, neyse. Her bir koordinat, U, İ'leri kastediyorum. Bakın, bu, bu, bu. Bunları kastediyorum. Komponentleri veya bileşenleri birer real sayı. İki tane vektör aldım reküpte. Bunların nokta çarpımını tanımlıyorum. Bakın, U çarpı V.
+
+464
+01:20:21,395 --> 01:20:47,615
+İki vektörün nokta çarpımını, bakın nasıl tanınmamışım. U'nun birinci bileşeniyle V'nin birinci bileşeni. Çarpıyorum. Sonra U'nun ikinci bileşeniyle V'nin ikinci bileşeni, U'nun üçüncü, V'nin de aynı şekilde aynı bileşeni. Yani üçüncü bileşeni çarpıyorum, bunların hepsini topluyorum. Bu bileşenler sayı olduğuna göre çarpımlarının toplamı da bir sayıdır.
+
+465
+01:20:48,948 --> 01:20:53,528
+Öyle değil mi? O zaman bu iki vektörün nokta çarpımı denen şey de bir sayı.
+
+466
+01:20:56,408 --> 01:21:00,368
+Şimdi bunun iki matrisin çarpımıyla ne alakası var ona bakalım.
+
+467
+01:21:02,528 --> 01:21:07,568
+Örnekleme üzerinden gidelim. Haftaya tekrar bakarız bunun üzerinden.
+
+468
+01:21:08,288 --> 01:21:11,608
+Şimdi mesela A matrisi alalım. İki çarpı üçlük bir matris.
+
+469
+01:21:12,507 --> 01:21:15,408
+Bu R1 dediğim yani İngilizceki Rho tamam mı?
+
+470
+01:21:15,663 --> 01:21:43,163
+Onun baş harfini alıyorum. R1 dediğim A'nın birinci satırını kastediyorum. R2 ile A'nın ikinci satırını kastediyorum. B madresi de 3x2'lik bir madres olsun. Birinci sütununu maviyle çerçevelemişim. C1 diyorum. İkinci sütununa da C2 demişim. Şimdi bak, matrislerin toplamını alırken değişme özelliği olduğunu söyledik. Ama çarpım böyle değil.
+
+471
+01:21:44,275 --> 01:22:08,275
+İki maddesi hangi sırada çarptığın çok önemli. Dolayısıyla bu ve bu birbirlerinden çok farklı olabilir. Tamam mı? Dolayısıyla hangi sırada çarptığına dikkat etmen gerekiyor. Nasıl ki iki maddesin toplanabilir olması için aynı cins olması gerekiyorsa, burada da iki maddesin çarpılabilir olması için...
+
+472
+01:22:08,735 --> 01:22:33,076
+Bir ön şartımız var. O da birincisinin sütün sayısı kadar diğerinde satır olması. Bunu aklında tutamayabilirsin. Gerek de yok ezberlemene. Ben şimdi sana söyleyeceğim onu. Bak, şunu kastediyorum. Birincinin sütün sayısı kadar ikincide satır olmak zorunda ki çarpabilesin. Neden? İkim A ile B'nin çarpımı şu sırada çarpımdan bahsediyorum.
+
+473
+01:22:33,939 --> 01:22:54,979
+Şöyle yapılır, birinci satırını sabit tutarsın, kaç tane sütunu varsa, satırlarını ve sütunlarını vektör olarak düşünebiliriz dedik değil mi az önce? Bak, A maddisinin birinci satırı nerede bir vektördür bu? Az önce vektörel çarpın diye söz alan arkadaşla konuşalım isterseniz.
+
+474
+01:22:56,916 --> 01:23:02,276
+Bana A matrisinin birinci satırının nerede bir vektör tanımladığını söyler misin?
+
+475
+01:23:05,216 --> 01:23:07,516
+Üç tane bileşeni var değil mi? İki, üç, bir.
+
+476
+01:23:07,776 --> 01:23:08,836
+Üç adet, evet hocam.
+
+477
+01:23:09,096 --> 01:23:12,716
+Tamam, o zaman re küpte, üç boyut uzayda bir vektördür bu satır, öyle mi?
+
+478
+01:23:14,236 --> 01:23:14,756
+Evet.
+
+479
+01:23:15,376 --> 01:23:19,636
+Peki A matrisinin sütunları nerede? Vektör olarak okumak istersen.
+
+480
+01:23:26,387 --> 01:23:28,827
+Bir tane sütununu söyle bana A maddesinin.
+
+481
+01:23:30,467 --> 01:23:31,487
+Üç hocam.
+
+482
+01:23:32,728 --> 01:23:34,188
+Sütununu söyleyeceksin ama.
+
+483
+01:23:35,648 --> 01:23:38,327
+Sen sütunun bir elemanı söyledin sadece.
+
+484
+01:23:38,347 --> 01:23:39,307
+R1 hocam, pardon.
+
+485
+01:23:39,807 --> 01:23:45,447
+Sütun, sütun ama. R1 satır. Ben diyorum ki A'nın sütunlarından bir tanesini söyle.
+
+486
+01:23:46,648 --> 01:23:47,608
+Bilemedim hocam.
+
+487
+01:23:48,728 --> 01:23:52,307
+Şu bak, matrisin bu. Bu matrisin bir tane sütununu bana söyle.
+
+488
+01:23:53,844 --> 01:23:55,844
+İstediğin bir süt, kaç tane sütun var bunun?
+
+489
+01:23:55,844 --> 01:23:56,543
+2-3-1 hocam.
+
+490
+01:23:57,264 --> 01:24:00,963
+Ama o satır oluyor. 2-3-1 satır. Ben sütün soruyorum şimdi.
+
+491
+01:24:01,304 --> 01:24:02,083
+2-1.
+
+492
+01:24:02,744 --> 01:24:06,423
+Tamam, 2-1. Birinci sütününü aldın. Bu nerede bir vektör?
+
+493
+01:24:11,220 --> 01:24:14,199
+2-1'i vektör olarak düşünürsen nerede bu vektör?
+
+494
+01:24:20,467 --> 01:24:24,608
+Arkadaşlar, yani bunlara cevap vermezseniz ayıp olur yani.
+
+495
+01:24:26,288 --> 01:24:33,007
+2-1, nerede bu vektör? İki tane bileşeni varsa düzlemde tabii ki yani. R kare de yani. Öyle değil mi?
+
+496
+01:24:35,828 --> 01:24:41,868
+Şimdi, A maddesinin birinci satırıyla B maddesinin sıradan kaç tane sütunu varsa çarpacağız dedik.
+
+497
+01:24:42,148 --> 01:24:45,768
+Nokta çarpımını kastediyorum ama şunu, bunu kastediyorum.
+
+498
+01:24:49,043 --> 01:25:11,204
+2, 3, 1, re küpte bir vektör olduğunu söyledik. B'nin birinci sütunu şu, bunun da re küpte bir vektör olduğu belli mi? 3 tane bileşeni var, 1, 0, eksi 1. Her ikisi de re küpte vektörler olduğuna göre, ben bunların nokta çarpımını alabilir miyim? Alabilirim. Nasıl alacağım? Bunların nokta çarpımının ne olduğunu bana söylemek isteyen var mı?
+
+499
+01:25:13,427 --> 01:25:18,667
+Tanım yukarıda. Birincilerle birinciler, ikincilerle ikinciler, üçüncülerle üçüncülerle çarpıp toplayacaksın.
+
+500
+01:25:22,612 --> 01:25:23,872
+Var mı söylemek isteyen?
+
+501
+01:25:30,068 --> 01:25:56,568
+Bakın, 2 ile 1'i çarpacaksın, sonra 3 ile 0'ı çarpacaksın, sonra 1 ile eksi 1'i çarpacaksın. Bunları da toplayacaksın. Nokta çarpımı bu demek yani. Bu satırla, bu sütunun nokta çarpımının neticesi olan sayı, bu durumda ne oluyor? 2 çarpı 1, 2 yapar. Artı 3 çarpı 0, 0, hala elde var 2. Artı eksi 1 daha ilave edersen, elde kaldı 1.
+
+502
+01:25:57,524 --> 01:26:07,464
+O zaman, birinci satırla birinci sütunu çarptığın için, AB matrisinin birinci satır, birinci sütun elemanı birdir arkadaşlar.
+
+503
+01:26:08,344 --> 01:26:08,744
+Tamam mı?
+
+504
+01:26:09,744 --> 01:26:15,524
+Şimdi, birinci sütunla bu işi yaptık, sırada bir sütun daha var, onunla yapacağız, kaç tane sütun varsa.
+
+505
+01:26:17,164 --> 01:26:20,304
+Birinci satırı, ikinci sütunla çarpalım.
+
+506
+01:26:21,064 --> 01:26:21,964
+İki çarpı sıfır.
+
+507
+01:26:23,315 --> 01:26:30,815
+Elde var sıfır değil mi? Artı üç çarpı bir, elde var üç, artı bir çarpı eksi bir, üç eksi bir iki mi? Bu.
+
+508
+01:26:33,595 --> 01:26:41,115
+Artık elimde sütün kalmadı B'de, o zaman ne yapacağım? A'ya döneceğim, sıradaki satırı işleme sokacağım, yani ikinci satır.
+
+509
+01:26:43,076 --> 01:26:48,496
+İkinci satırla B'nin sütünlerini az önce ne yaptıysam benzer şekilde çarpıp,
+
+510
+01:26:49,652 --> 01:26:57,351
+Uygun pozisyona yazacağım. Bakın şuraya yazacağım. Bana yazdırmak isteyen var mı? İkinci satırla birinci sütunu çarpın neticesini söyleyin bana.
+
+511
+01:27:00,532 --> 01:27:01,412
+Eksi iki hocam.
+
+512
+01:27:01,672 --> 01:27:02,832
+Eksi iki güzel.
+
+513
+01:27:04,972 --> 01:27:06,452
+Eksi bir olmasın abi.
+
+514
+01:27:07,932 --> 01:27:15,851
+Çok uçta kaldı. Sayfanın kenarında olduğu için yazamıyorum. Eksi iki. Öteki ne? İkinci satırla ikinci sütunu çarp.
+
+515
+01:27:16,332 --> 01:27:16,892
+Eksi bir.
+
+516
+01:27:17,344 --> 01:27:44,543
+Eksi bir güzel, bak anladınız. Bu da bu. Yani bunun boyutunun, şimdi neden birindeki sütün kadar ötekinde satır olması gerektiğini anladınız mı? Yani çünkü vektörlerin aynı sayıda komponente olmazsa ben onların nokta çarpımını alamam. Yani iki vektör düşün, birinde üç tane koordinat var, ötekinde beş tane. Nasıl toplayacağım? Terimlerini çarpıp, terim sayıları aynı değil ki, koordinat sayıları.
+
+517
+01:27:46,452 --> 01:27:53,271
+Biri kısa, biri uzunsa vektörlerin gibi düşün. Kısa uzundan kastım koordinat sayılarını kastediyorum. Değil mi?
+
+518
+01:27:53,684 --> 01:28:17,363
+Yani matrislerin çarpımı kabaca bu şekilde yapılıyor. Boyut fazla da olsa değişen bir şey olmaz. Birinci satırı sabitlersin, diğer matrisin bütün sütunlarıyla çarparsın, sonra ilk matrise geri dönersin, sıradaki satır alırsın, yine diğer matrisin bütün sütunlarıyla çarparsın, sonra tekrar A'ya dönersin, varsa elinde satır, gene devam edersin. Ne zamana kadar? Bütün satırları bu şekilde kullanana kadar.
+
+519
+01:28:19,444 --> 01:28:42,804
+Evet arkadaşlar, bu matris çarpımı kabaca bu şekilde. Tamam mı? Öbür sınıfa da buraya kadar anlatmıştım. Benim iki saat daha dersim var. Altı saat lineerce bir koymuşlar bana bugün. Sorularınız varsa cevaplayalım, yoksa önümüzdeki hafta buradan devam edelim. Var mı sorusu olan?
+
+520
+01:28:44,180 --> 01:28:58,100
+90 dakika, yani aralıksız anlatmış oldun. Yani çok da fazla sıkmayalım sizi. Bugünlük bence bu kadar yeter. Var mı sorusu olan? Peki, hepinize iyi günler, iyi dersler, hoşçakalın.
+
+521
+01:28:58,500 --> 01:28:59,040
+Sağ olun hocam.
+
+522
+01:28:59,580 --> 01:29:00,700
+İyi günler, iyi dersler hocam.

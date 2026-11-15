@@ -1,0 +1,963 @@
+1
+00:01:31,540 --> 00:01:46,980
+Merhaba arkadaşlar. Sesim geliyor mu? Geliyor hocam, evet. Nasılsınız? Merhaba hocam, iyi sizler. Nasılsınız? Teşekkür ediyorum. Nasıl gidiyor işler?
+
+2
+00:01:51,603 --> 00:01:56,123
+İddare eder hocam bir türlü. İyi yani. İyi diyelim, iyi olalım hocam.
+
+3
+00:01:58,283 --> 00:02:07,763
+Evet, iyi diyelim, iyi olsun. Liner Cebir, ten paylaşmış olduğum PDF'lere bakıyor musunuz ders an sonu veya takip edebiliyor musunuz?
+
+4
+00:02:14,644 --> 00:02:41,243
+[öğrenci] final, pardon, vize sınavının görmediğim sorularını, kolay mıydı yani, tabii siz zor diyorsunuz ama, yani sen zor diyorsun ama benim de öğrenem lazım. Kolay mıydı, zor muydu, ona göre bir şey söyleyebilirim ancak. Bir de şöyle bir durum var, zaten soruları ben hatırlamıyorum. Soruları bir komisyon hazır oluyor ve sisteme giriyor. Yani biz soruları görmüyoruz.
+
+5
+00:02:44,020 --> 00:02:49,020
+Ama ben genel itibarence neyse bir sınav sorularının çok zor olacağını düşünmüyorum.
+
+6
+00:02:55,020 --> 00:03:07,020
+Tabii çok zor sorulabilir ama senin gibi yani sonuçta bu servis dersi çok da zor sormazlar diye düşünüyorum.
+
+7
+00:03:10,324 --> 00:03:16,344
+Tabii şöyle bir durum var. Online olmasından dolayı da biraz daha işleri zorlaştırıyorlar.
+
+8
+00:03:19,860 --> 00:03:24,360
+Belki onun da etkisiyle biraz daha zor sormuş olabilirler arkadaşlar.
+
+9
+00:03:27,060 --> 00:03:29,360
+İki o, onu atıyor, baya düşükmüş.
+
+10
+00:03:37,300 --> 00:03:46,980
+[öğrenci], ikinci vize, bildiğim kadarıyla yok. Bir vize, bir final. Vize'nin ortalaması yüzde altmış, final ortalaması yüzde kırk şeklinde.
+
+11
+00:03:51,828 --> 00:03:56,828
+O da normalde iki vize, %30, %30, işte tek vize olduğu için %60.
+
+12
+00:03:59,007 --> 00:04:01,967
+Peki hocam, final sınavı online olacak yoksa %100'e?
+
+13
+00:04:04,927 --> 00:04:07,147
+En son ki açıklamada %150.
+
+14
+00:04:09,347 --> 00:04:13,347
+Farklı iş olsa söylemem, benim bildiğim kadarıyla final sınavı şu anda %100'e.
+
+15
+00:04:23,987 --> 00:04:42,987
+lineerin geçme notu 40 mı demişsin? Genelde 40 oluyor. Çok da düşürmüyorlar arkadaşlar. Yani sınav notları çok düşük olsa bile 40'ın altısının geçmesine pek izin vermiyorlar. Belki sorumlu geçilebilir. Ona tam bir şey söyleyemiyorum. Onu da ben belirlemiyorum arkadaşlar. Onu da bölüm kurulu...
+
+16
+00:04:44,403 --> 00:04:51,663
+belirliyor, sınav, pardon ders, harf aralıklarını ve bize gönderiyorlar. Biz de ona bir sisteme giriyoruz.
+
+17
+00:04:53,884 --> 00:04:59,524
+Ama genelde yapılan uygulama dediğim gibi 40 ve üzerini geçeceği şekilde bir uygulama oluyor.
+
+18
+00:05:04,543 --> 00:05:08,884
+Yani inşallah yüksek dol alırsınız, geçersiniz diye umuyorum.
+
+19
+00:05:15,124 --> 00:05:18,403
+Dört yanlış bir doğruya götürmesi, evet o sıkıntı biraz.
+
+20
+00:05:26,483 --> 00:05:48,483
+Şimdi bu, biriden sonraki, konular biraz daha cebilse, ilk vektörler konusu belki biraz daha aşırı aldığınız konulardı ama daha sonraki vektör uzayları geçen hafta başlamış olduğumuz vektör uzayları, alt vektör uzayı, bu hafta şimdiye bağımlı, bağımsızlık göreceğiz. Bunlar arkadaşlar aslında zor değil.
+
+21
+00:05:48,591 --> 00:06:00,951
+Ama ilk defa gördüğünüz ve daha soyut değil ve gemisal kavramlar. O yüzden çok sınava yakın tarihleri bırakmayın bu derslere, bu konulara çalışmayın.
+
+22
+00:06:02,572 --> 00:06:10,491
+Şimdi hemen yavaş yavaş tekrar edin. Anlamadığınız yer olduğundan mutlaka sorun. Bana mail gönderilirse dönmeye çalışırım.
+
+23
+00:06:15,444 --> 00:06:19,544
+Burada beraber de bakabiliriz, eğer anlamadığımız yerler varsa arkadaşlar.
+
+24
+00:06:22,544 --> 00:06:30,764
+[öğrenci], konu olarak, ya tabii baştan sona kadar genasyonlu sorumlusunuz.
+
+25
+00:06:32,403 --> 00:06:34,464
+Yani yüz elli, yüz elli diyebilirim.
+
+26
+00:06:35,344 --> 00:06:36,044
+Yüz ellisi.
+
+27
+00:06:36,884 --> 00:06:43,684
+vizeden önceki konular %50 sonraki konular olacak şekilde biraz sonra çıkar diye düşünüyorum.
+
+28
+00:06:45,684 --> 00:06:53,684
+Ama tabii dediğim gibi soruları görmediğimden ve herhangi bir katkım da olmadığından dolayı net bir şey söyleyemiyorum.
+
+29
+00:06:53,684 --> 00:07:01,684
+Tamamen komisyondaki hocanın veya hocaların, sınav hazırlama komisyondaki hocaların...
+
+30
+00:07:04,403 --> 00:07:08,803
+ne yapacağını göre değişir. O yüzden bir şey söyleyemiyorum.
+
+31
+00:07:18,483 --> 00:07:20,843
+Ve vayda başkasız, söyleme, çizzerine gibi şey.
+
+32
+00:07:29,235 --> 00:07:32,756
+O zaman dersimize başlayabiliriz.
+
+33
+00:07:45,620 --> 00:08:08,260
+Evet, gün geçen hafta dediğim gibi vektör uzayları ve alt vektör uzaylarını görmüştük. İşte vektör uzayları dediğimiz şey neydi bizim? Bir küme, küme üzerinde bir toplama işlemi veya toplama işlemi, bir de skaler ile çarpma işlemi tamamlanıyor.
+
+34
+00:08:13,492 --> 00:08:22,932
+İşte on tane madde vardı. O maddeyi sağlıyorsa o zaman bizim okumaya o işlemler ile birlikte bir rektör uzayıdır demiştik.
+
+35
+00:08:24,052 --> 00:08:35,812
+Burada hani vermiş olduğumuz örnekler işte bildiğimiz matrisler üzerindeki bildiğimiz pleşen ve pleşen toplama ve çarpma işlemi gibi yapıncılımlar üzerindeki.
+
+36
+00:08:36,980 --> 00:08:43,980
+Bildiğimiz konuların toplaması ve skalayla çarpma ile birlikte bunlar plan ve vektör uzayı oluyorlar.
+
+37
+00:08:43,980 --> 00:08:57,980
+Olmadan adayla bazı örnekler vermiştik. İşlemleri değiştirdik. Bazı örneklerde işlemler değişikti. Bu durumda tabi bu durumda bazıları sağlamadı.
+
+38
+00:08:57,980 --> 00:09:01,980
+Tabii sağlayan durumlar da var, sağlayan durumlar da var. İşlemleri değişik.
+
+39
+00:09:03,155 --> 00:09:13,915
+O hatırladığım maddeler, on tane maddeler, ilk beş tanesi toplama ile alakalı maddeler, sonraki beş tanesi ise skaler ile çarpma ile alakalı maddelerdi.
+
+40
+00:09:16,555 --> 00:09:28,915
+Şimdi şunu bilmemiz lazım, bir küme üzerinde, sandart, bildiğimiz kümeler üzerinde, sandart çarpma ve skaler ile çarpma işlemi genel itibariyle vektör uzayı belirtiyor.
+
+41
+00:09:29,844 --> 00:09:43,524
+Eğer işlemlerden biri değişikse, bir iki toplama aynı kaldı, çarpma farklı tanımlanmış değil. Bu durumda o zaman o çarpma ile alakalı maddelerden, maddeleri sağlıyor mu, sağlamıyor mu diye bakmak gerekir.
+
+42
+00:09:44,604 --> 00:09:54,484
+Vektör uzayı mı diyeyim diye bakarken veya alt vektör uzayı konusunu görmüştük. Bu alt vektör uzayı aslında bizim için daha önemli.
+
+43
+00:09:56,019 --> 00:10:14,139
+Bir kümenin vektör uzayı olup olmadığını belirlemek amacıyla. Diyelim ki, siz bir küme verilmiş, işte vektör uzayı mı diye sorulmuş. Biz o kümenin içinde yaşadığı daha büyük bir kümeyi biliyoruz ki vektör uzayı olsun.
+
+44
+00:10:14,932 --> 00:10:40,011
+Diyelim ki mesela reküpte rekübin bir alt kümesi verilmiş, işte vektör uzayı mı değil mi? Biz rekübin bir vektör uzayı olduğunu biliyoruz. Biz gibi standart toplama ve çarpma işlemiyle birlikte. Bu küme de rekübin alt kümesiyse eğer, eğer bu küme alt vektör uzayı olma şartlığını sağlayorsa o zaman bir vektör uzayıdır diyebiliriz direkt olarak. O yüzden bu alt vektör uzayı da bu yüzden önemli.
+
+45
+00:10:40,916 --> 00:10:50,556
+Bu dersimizde yeni bir tanım göreceğiz. Lineer bağımlılık ve bağımsızlık, bir de bunların geldiği uzay veya germe kavramından bahsedeceğiz.
+
+46
+00:10:52,096 --> 00:11:01,556
+Bakalım neymiş? Bir vektör kümesi, lineer bağımlılığı ve bağımsızlığı. Vektörlerin lineer birleşimi, lineer terkimi ve germe kavramından bahsedeceğiz.
+
+47
+00:11:03,475 --> 00:11:09,436
+Ben önce şu değişiklikleri bir sileyip daha sonra bir tekrar dersin eşleştireyim.
+
+48
+00:11:14,836 --> 00:11:15,915
+Bravo bir becim.
+
+49
+00:12:11,347 --> 00:12:13,627
+Evet, dersimize kaldığımız yerden devam edebiliriz.
+
+50
+00:12:37,812 --> 00:12:40,812
+Evet, bir vektör kümesinin lineer bağımsızlığı.
+
+51
+00:12:40,812 --> 00:12:45,812
+Şimdi, v1, real vektör uzayı.
+
+52
+00:12:45,812 --> 00:12:48,812
+Olsun.
+
+53
+00:12:48,812 --> 00:12:54,812
+Burada, x1, x2, xn, entenli vektör.
+
+54
+00:12:58,644 --> 00:13:21,835
+Pardon, n tane real sayı. V1, V2, Vn de n tane vektör olsun. Eğer böyle x1 çarpı V1 artı x2 çarpı V2 artı artı x1 çarpı Vn eşittir sıfır vektörü iken
+
+55
+00:13:24,628 --> 00:13:51,028
+ve olacağı şekilde, hepsi birden sıfır olmayan x1, x2, xn skellerleri varsa, o zaman biz, bu v1, v2, vm vektörlerine lineer bağımlı vektörler diyoruz. Yani, böyle bir eşitliği yakaladık. Eğer bu durumda, arkadaşlar,
+
+56
+00:13:51,168 --> 00:14:03,168
+Eğer x1, x2, xnlerden en az bir tanesi sıfırdan farklıysa, o zaman biz bu n tane vektöre n bağımlı vektörler diyoruz.
+
+57
+00:14:03,168 --> 00:14:17,168
+Eğer bu eşitlik sadece x1, x2 ve xn ya bu n tane n sayının sıfır olması durumundan sağlamıyorsa, o zaman da biz bu vektörlere n bağımsız vektörler
+
+58
+00:14:17,748 --> 00:14:32,748
+diyoruz. Böyle bir tanımımız var. Şimdi mesela, sadece iki vektör için düşünelim. Veya sadece bir vektör için düşünelim. X'in çarpı, V1 eşittir, sıfır vektör olsun.
+
+59
+00:14:44,628 --> 00:14:54,628
+O zaman bu eşitlik sadece x1 eşit sıfırken sağlanır. Bu ne anlama geliyor? Bir sıfırdan farklı, sıfırdan...
+
+60
+00:14:58,323 --> 00:15:00,323
+farklı her vektör
+
+61
+00:15:03,412 --> 00:15:20,412
+Lineer bağımsızlık şartını sağlar. Neden? Çünkü V1 sıkırına bağlıysam mecburen x1 sıkır olmak zorunda. O zaman ne oldu? Buradaki şu şartınız sağlamış oldu. Her vektör lineer...
+
+62
+00:15:24,916 --> 00:15:43,816
+bağımsızlık. Eğer v1 sıfır vektörü ise, o zaman x1 keyfidir, sıfırdan farklı olabilir, o zaman sıfır vektörü, sıfır vektörü, lineer bağımlıdır.
+
+63
+00:15:47,412 --> 00:15:47,872
+Tamam.
+
+64
+00:15:51,764 --> 00:16:02,764
+Genel 2 vektöre, x1 çarpı v1 artı x2 çarpı v2 sıfır vektör olsun.
+
+65
+00:16:03,764 --> 00:16:13,764
+Burada eğer bu v1 ve v2 vektörleri veya x1 x2 eğer sıfırdan farklı ise yani şöyle yazılabiliyorsa,
+
+66
+00:16:18,004 --> 00:16:26,684
+Buradan eğer, v1 örneği, v2'ye diğer tarafı atarsam, x2 bölü x1 olur.
+
+67
+00:16:28,684 --> 00:16:31,324
+Bu ne anlamına geliyor?
+
+68
+00:16:31,324 --> 00:16:35,484
+Burada ben sonuçta x1'i bölebildiğime göre, x0'dan farklı.
+
+69
+00:16:35,484 --> 00:16:44,604
+Dolayısıyla ise, bu iki vektör arkadaşlar, x0'dan farklı olduğu için, bir iki vektörün lineer bağımlı ise lineer.
+
+70
+00:16:47,604 --> 00:16:58,004
+Yani bu ne anlamı geliyor? Biri diğerinin katı. Şimdi biz ona lineer bağımlı diyoruz. Çünkü örneğin,
+
+71
+00:16:58,004 --> 00:17:13,204
+bir diğerinin katı, örneğin şöyle V1 vektörü, örneğin 1'e 2 olsun, V2 vektörü de 2'ye 4 olsun. Şimdi V1 ve 2'nin iki katı. O zaman şunu ben yazabilirim.
+
+72
+00:17:14,496 --> 00:17:38,356
+2 çarpı v1 eşittir v2. Şimdi v2 sol tarafa atıyorum. 2 çarpı v1, eksi v2 eşittir, sıfır vektör. Ne oldu peki burada? x1 dediğim sayı 2, x2 dediğim sayı da x1 ve sıfırdan farklıyor. En azından sıfırdan farklıysa o zaman ünler bağımlı diyordu. Ne oldu o zaman? Bu iki vektör.
+
+73
+00:17:40,211 --> 00:17:55,512
+Yani, V1, V2, lineer bağımlı olmuş olmuş. Yani, biri diğerinin katı, bu iki vektör olduğunda biri diğerinin katı anlamına geliyor.
+
+74
+00:17:55,512 --> 00:18:07,512
+Peki, daha fazla vektör olduğunda biri diğer vektörlerin toplama olarak, katlarının toplama olarak yazılabiliyorsa, o zaman bu vektörler,
+
+75
+00:18:08,147 --> 00:18:31,147
+lineer bağımlı vektörlerdir diyoruz. Eğer biri, her biri diğerleri bir lineer toplama olarak, pardon, katların toplama olarak yazılamıyorsa o zaman lineer bağımsız vektörler diyoruz. Örneklere bakalım. Mesela reküpteki bu standart...
+
+76
+00:18:31,263 --> 00:18:58,803
+vektörler, e1, e2, e3, 1, 0, 0, 0, 0, 0, 0, 0, 1 vektörleri, neğer bağımsızdır, neden? Şimdi tanım neydi? Tanımış var arkadaşlar. X1 çarpı v1, artı x2 çarpı v2, 3 tane türü bu da, x3 çarpı v3 eşitir 0 iken, acaba x1, x2 ve x3 0 olmak zorunda mı? Değildi bakalım. Şimdi x1, ben onu lambda bir diyeceğim. Lambda bir çarpı e1.
+
+77
+00:18:59,347 --> 00:19:06,967
+Artı lambda 2 çarpı E2, artı lambda 3 çarpı E3 vektörleri, neye eşit?
+
+78
+00:19:07,567 --> 00:19:18,527
+Burası lambda 1, 0, 0, artı lambda 2, 0, lambda 2, 0, artı 0, 0, lambda 3 eşittir.
+
+79
+00:19:19,527 --> 00:19:26,748
+0 vektörüyken, burada şuna toplarsak, lambda 1, lambda 2, lambda 3 eşittir.
+
+80
+00:19:28,115 --> 00:19:37,536
+sıfır gerekli ise, buradan lambda bir, lambda iki ve lambda üç kas sayıları sıfır olmak zorunda. O zaman bu ne anlamı geliyor?
+
+81
+00:19:39,016 --> 00:19:42,056
+Tanım gereği, e1, e2, e3, lineer.
+
+82
+00:19:45,715 --> 00:19:47,335
+Bağımsızdır.
+
+83
+00:19:49,795 --> 00:19:50,435
+Tamam.
+
+84
+00:19:53,016 --> 00:19:55,875
+Bunu genelleştirebiliriz. Bakalım var mı yok.
+
+85
+00:19:57,056 --> 00:19:59,435
+Şimdi bu durum reküpte. Reküpteki standart...
+
+86
+00:20:00,000 --> 00:20:17,759
+vektörler diye geçiyor arkadaşlar. Bu bir sıfır sıfır sıfır, bir sıfır sıfır sıfır bir. R kare de örneği bir sıfır sıfır bir. R zörü dörtte dört tane olacak. R zörü N'de N tane olacak. Bu şekilde tanımlanan vektörler her zaman mer bağımsızlık. Şöyle diyelim, not. Belki ileride vardır.
+
+87
+00:20:28,019 --> 00:20:49,019
+e2, ikinci birleşimde bir, diğerleri sıfır olan vektör ve bu şekilde n tane vektör konumlayabiliriz. İlk n tane birleşimde sıfır, n eski bir tane birleşimde sıfır, diğeri bir olan vektör. Bu vektörler vektörleri lineer bağımsızlık.
+
+88
+00:20:55,092 --> 00:21:22,692
+Şimdi gelelim, mesela bu vektörler lineer bağımlı değil mi? Şimdi burada lineer bağımsızlık inceleyiniz diyor. Evet, tanım gereği bir başlayalım. Önceden yapalım. Şimdi lambda 1 çarpı v1 artı lambda 2 çarpı v2 artı lambda 3 çarpı v3 eşittir. Ne olacak? Şimdi lambda 1, 2 lambda 1.
+
+89
+00:21:22,996 --> 00:21:46,676
+0 artı 2 lambda 2, 0 lambda 2 ve 3 lambda 3, 2 lambda 3, lambda 3 eşittir. 0 vektörü, rektördeki 0, 0, 0 vektörüdür. Bunları toplar takip olan lambda 1 artı 2 lambda 2 artı 3 lambda 3.
+
+90
+00:21:47,104 --> 00:21:57,544
+İkinci bileşen 2, lambda 1, artı 2, lambda 3, ve son bileşen de, lambda 2, artı, lambda 3, eşittir, sıfır, sıfır, sıfır.
+
+91
+00:21:57,544 --> 00:22:03,743
+Burada, her bir bileşenin eşitliğine, bir homojen, her teklent sistemini elde edelim.
+
+92
+00:22:12,788 --> 00:22:24,948
+Artı iki lambda üç, şöyle yazayım, eşittir sıfır ve lambda iki, artı lambda üç, eşittir sıfır.
+
+93
+00:22:36,180 --> 00:22:39,140
+Evet, bu son aşağıdan bekler, sınıf çizelim şimdi.
+
+94
+00:22:46,900 --> 00:23:11,320
+1, 2, 3, burası 2, 0, 2 ve 0, 1, 1. Öncelikle birinci satırın eksi iki katına iki satır ekliyorum. Buradan 1, 2, 3, eklersen burası 0, eksi 4, 6, eksi 6, eksi 2'den eksi 4, burası 0, 1, 1.
+
+95
+00:23:14,387 --> 00:23:25,907
+Buradan son satırın 4 katını ikinci satıra ve eksikli katını ilk satıra ekliyorum.
+
+96
+00:23:25,907 --> 00:23:32,748
+1, 0, 1, 0, 0, 0, 0 ve 0, 1, 1 şekilde.
+
+97
+00:23:33,395 --> 00:23:55,395
+Tamam, o kadar yeterli. Şimdi ilk satır bize neye söylüyor? Lambda 1 artı lambda 3 eşittir 0 ve son satırda lambda 2 artı lambda 3 eşittir 0. Burada lambda 3'e ben t dersem, o zaman lambda 1 eksi t olur ve lambda 2 eksi t olur.
+
+98
+00:24:01,715 --> 00:24:18,715
+Çözüm diyelim. İşte lambda 1, eksi t, lambda 2, eksi t, lambda 3, t. Orada şekilde tüm vektörler değerler çözüm.
+
+99
+00:24:18,715 --> 00:24:24,715
+Yani lambda 1, lambda 2, lambda 3, tüm birer çözüm. Şimdi burada özel olarak t'yi bir alalım bakalım.
+
+100
+00:24:29,683 --> 00:24:43,763
+Evet, lambda 1, lambda 2 ve lambda 3 için çözüm mü biz arıyoruz. Eğer bu lambda 1, lambda 2, lambda 3 çözümü sadece sıfırsa, o zaman vektörler neğer bağımsızdır diyoruz.
+
+101
+00:24:43,763 --> 00:24:53,523
+Eğer lambda 1, lambda 2, lambda 3'ten en az bir tanesi sıfırdan farklıysa, o zaman da neğer bağımsızdır diyoruz.
+
+102
+00:24:57,907 --> 00:25:15,547
+t'nin her bir değeri için lambdaların ayrı bir değeri var. Örneğin ben t'yi 1 alsam ne olacak? İşte lambda 3, 1, lambda 2 ve lambda 1, eksi 1 olmuş olacak. Sıkıldan parak olmuş olacak. Dolayısıyla lineer bağımsızdır diyoruz. O zaman şunu söyleyeceğiz.
+
+103
+00:25:29,907 --> 00:25:54,887
+Her t için, lambda 1 eksi t, lambda 2 eksi t ve lambda 3 t değerleri olduğundan, sıfırdan farklı çözüm vardır.
+
+104
+00:25:57,428 --> 00:26:01,428
+Evet, dolayısıyla, o zaman lineer...
+
+105
+00:26:05,907 --> 00:26:07,907
+lineer bağımlıdır.
+
+106
+00:26:09,907 --> 00:26:12,907
+Şimdi ne demek istiyoruz? Mesela, bir göstereyim.
+
+107
+00:26:13,907 --> 00:26:23,907
+Mesela, lambda 1 ve lambda 2-1, lambda 3-1. Zaten v1 ile v2 topladığında v3 yakıyor.
+
+108
+00:26:23,907 --> 00:26:28,907
+Buradan şunu söyleyemediğim, hatta ben şöyle yapayım bunu. Şunu bir seveyim.
+
+109
+00:26:33,364 --> 00:26:57,344
+V1 ile V2'yi topladım, V3 oldu. Bu durumda, V1 artı V2'yi sol tarafı atarsak, eksi V1, eksi V2, artı V3 eşittir, sıfır veritörü ve ne olmuş olur? V1'in bir katı, V2'nin bir katı, V3'in bir katı topladım, sıfır olmuş olur.
+
+110
+00:26:57,683 --> 00:27:03,803
+Baktığımız zaman kat sayılarından, kat sayıları sıfırdan, en az bir tanesi sıfırdan farklı.
+
+111
+00:27:05,183 --> 00:27:10,323
+Dolayısıyla arkadaşlar, bu vektörler neler bağımlı vektörler diyoruz. Zaten ne demiştim ben?
+
+112
+00:27:11,483 --> 00:27:19,263
+Biri diyenlerin katlarının toplamı olarak yazılabiliyorsa, o zaman neler bağımsız vektörlerdir demiştik.
+
+113
+00:27:20,003 --> 00:27:23,703
+Pardon, neler bağımlı vektörlerdir demiştik. Ki burada aynı durum geçerli.
+
+114
+00:27:24,160 --> 00:27:32,160
+V3 vektörü diğer 2 vektörü toplam olarak yazılabiliyor. Veya V1 vektörü V3 vektörü V2 olarak yazılabiliyor gibi.
+
+115
+00:27:36,160 --> 00:27:39,160
+Bir durum olanlar. Ner bağımlı.
+
+116
+00:27:41,160 --> 00:27:46,156
+Bir diğer durum, şuradaki çözüm, yani ilk çözdüğümüz durum ne peki?
+
+117
+00:27:46,867 --> 00:27:57,547
+Bu eşitlik, sıfır eşit dediğimizde, buradan elde ettiğimiz denklent sisteminin eğer sıfıran farklı bir çözümü varsa, o zaman neler bağımlıdır?
+
+118
+00:27:58,687 --> 00:28:09,167
+Yok, sadece tek çözümü varsa, bu homogeninler denklem sisteminin, o da sıfır çözümü zaten, sadece sıfır çözüm varsa o zaman da neler bağımsızlık diyoruz.
+
+119
+00:28:11,347 --> 00:28:12,667
+Var mı herhangi sorunuz buraya kadar?
+
+120
+00:28:23,731 --> 00:28:51,627
+Devam ediyorum o zaman. Vektörlerin lineer birleşimi veya lineer terkibi diye görebilirsiniz. Şimdi, işte en tane yine bir real serimiz var. Bunların lineer birleşimine kastımız, bu aslında yabancı olduğumuz bir şey değil. Bu W vektörü nebis v1, v2, vn vektörlerinin
+
+121
+00:28:51,667 --> 00:29:04,427
+bir lineer birleşimi diyoruz. Yani önemli değil şu ifade, biz geçtiğin sağ tarafındaki ifadeye, v1, v2, vn vektörlerinin bir lineer birleşimi diyoruz.
+
+122
+00:29:04,427 --> 00:29:19,387
+Tamam mı? Burada bu lineer birleşim ile v vektör uzayının bir elemanıdır. Neden? Çünkü biz biliyoruz ki v vektör uzayı, skalayla çarpmaya göre ve toplamaya göre kapalı. Şimdi burası
+
+123
+00:29:19,635 --> 00:29:24,635
+V1, V'de bir vektör, bunun katı da yine V'de bir vektör.
+
+124
+00:29:24,635 --> 00:29:29,235
+Bden her şekilde burası da bir V'de vektör ve burası da bir V'de vektör.
+
+125
+00:29:29,235 --> 00:29:40,635
+Bunların V toplama göre kapalı olduğunda, bunların toplamları da Bden her şekilde V'de bir vektör. O yüzden tamamı yine V'de bir vektör olmuş oldu arkadaşlar.
+
+126
+00:29:40,635 --> 00:29:45,612
+Tamam. Şimdi soru şu.
+
+127
+00:29:46,451 --> 00:29:57,211
+Verilen herhangi bir vektör, diğer bazı vektörlerin lineer toplama olarak yazılabiliyor mu, yazılamıyor mu? Bunu nasıl araştırabiliriz? Bir bakalım.
+
+128
+00:29:57,211 --> 00:30:12,852
+Mesela burada 9, 2, 7 vektörünün 1, 2, 1, 6, 4, 2 vektörlerinin lineer birleşim olarak yazılabildiğini fakat 4, 5, 8 vektörünün ise yazılamadığını gösteririz. Bir bakalım. W.
+
+129
+00:30:15,443 --> 00:30:33,384
+9, 2, 7 vektör. Lineer birleşim olarak yazılabildiğini biz bahsettim. Yani lambda 1, u'nun bir katı, lambda 1 çarpı u, 1, 2, eksi, 1, artı, lambda 2 çarpı v, v, 6, 4, 2.
+
+130
+00:30:41,076 --> 00:30:49,076
+Şimdi, olduğunu bahsettim. Eğer çözüm varsa, lambda 1, lambda 2 sıraları bulmamız lazım. Çözüm yoksa bakalım ne elde edeceğiz.
+
+131
+00:30:49,076 --> 00:31:06,736
+Burada, bileşen bileşen eşittikten dolayı, lambda 1 artı 6 lambda 2, ikinci bileşen 2 lambda 1 artı 4 lambda 2 ve son bileşen de eksi lambda 1.
+
+132
+00:31:06,736 --> 00:31:30,576
+Artı iki lambda iki. Şimdi bileşen birine eşittikten dolayı, lambda bir artı altı lambda iki eşittir dokuz, iki lambda bir artı dört lambda iki eşittir iki ve eksi lambda bir artı iki lambda iki eşittir yedi.
+
+133
+00:31:31,124 --> 00:31:42,124
+Şimdi arkadaşlar, şu ikisini de ben neye deniyorum? Toplarsam alt alta, sekiz lambda iki eşittir on altı.
+
+134
+00:31:46,124 --> 00:31:57,124
+Buradan da lambda iki eşittir iki olmalı. Şimdi bu lambda iki eşittir iki ise lambda bir de tek değil olmalı. Bakalım.
+
+135
+00:31:57,491 --> 00:32:17,491
+Şimdi lambda 2, 2 ise eğer, birinci denklem yerine koyduğumda, lambda 1 artı 6 lambda 2 eşit 9 ise, buradan, lambda 1 artı 12 eşit 9, şöyle bir sileyim.
+
+136
+00:32:22,132 --> 00:32:25,432
+Artı 12 eşit 9 ve buradan lambda 1 eşit.
+
+137
+00:32:26,231 --> 00:32:26,831
+Eksi 3.
+
+138
+00:32:34,932 --> 00:32:44,432
+Tamam. Şimdi lambda 1 eksi 3. Fakat, 2'ye denilen bakalım bana ne söylüyoruz. Daha şu an 2'nin denilenme işe içine katmadık.
+
+139
+00:32:44,432 --> 00:32:56,432
+2 lambda 1 artı 4 lambda 2 eşittir 2. Burada 2'yi yerine koyarsam, 2 lambda 1 artı 8 eşittir 2.
+
+140
+00:33:02,067 --> 00:33:26,467
+yine eksi 3 yapıyor. Evet. Lambda birleştir. Eksi 3. Tamam. Bu ne anlama geliyor arkadaşlar? Lambda 2, 2 ve Lambda 1, eksi 3'müş. Yani W vektörü ise W vektörü, eksi 3, eksi 3 çarpı u artı 2 çarpı v olarak yazılabiliyormuş.
+
+141
+00:33:27,220 --> 00:33:41,220
+Yani u ile b'nin bir lineer toplam olarak yazılabiliyor anlamına geliyor arkadaşlar. Şimdi gelelim diğer vektöre. W üstü vektörüne. Bakalım bu vektör.
+
+142
+00:33:41,220 --> 00:33:52,908
+u ile b'nin bir lineer toplam olarak yazılabiliyor. Lambda 1 çarpı işte u 1 2 eksi 1 artı lambda 2 çarpı
+
+143
+00:33:53,076 --> 00:34:11,475
+6, 4, 2 ve bura lambda yine B'ler şekliyle aynı ikramı elde ediyoruz. 2 lambda 1, artı 4 lambda 2 ve eksi lambda 1, artı 2 lambda 2. Yine B'ler şekliyle bir denklensizle elde ediyoruz.
+
+144
+00:34:17,811 --> 00:34:36,091
+Artı 6 lambda 2 eşittir 4, 2 lambda 1, artı 4 lambda 2 eşittir 1, ve eksi lambda 1, artı 2 lambda 2 eşittir, eksi 8.
+
+145
+00:34:37,032 --> 00:34:41,551
+Evet, yine birinci ve üçüncü denklem toplamında 8 lambda 2,
+
+146
+00:34:43,380 --> 00:35:05,699
+eşittir, eksi 4 ve buradan da lambda 2 eşittir, eksi 1, böyle 2. Şimdi gelip bunun ilk teknolojilerine yerine koyalım. O zaman lambda 1 artı 6 lambda 2 eşittir 4 ise, buradan lambda 1 eksi 3 eşittir 4.
+
+147
+00:35:06,096 --> 00:35:31,895
+ve lambda bir buradan yedi olur. Peki iki lineer denklem yerine koyduğumuzda iki lambda bir artı dört lambda iki eşittir bir ise, buradan iki lambda bir eksi iki eşittir bir ve lambda bir eşittir üç bölü iki olmalı. Bunlar birbirinden farklı. Yani
+
+148
+00:35:33,076 --> 00:35:44,615
+Farklı olamaz. Aynı olmak zorunda. Şimdi lambda 2, değerini bulduk, eksi 4. Sonra lambda 1, değeri her 3 denklemde yerine koyduğumuzu da sağlamak zorunda.
+
+149
+00:36:04,980 --> 00:36:13,380
+çözüm yok. O zaman W üstü vektörü U ile verin.
+
+150
+00:36:18,291 --> 00:36:19,971
+lineer toplumu
+
+151
+00:36:19,971 --> 00:36:23,192
+olarak
+
+152
+00:36:23,192 --> 00:36:27,152
+yazılımız.
+
+153
+00:36:34,675 --> 00:36:37,096
+Evet, var mı sorunuz arkadaşlar? Buraya kadar.
+
+154
+00:37:46,835 --> 00:37:48,315
+Yok herhalde, devam ediyorum o zaman.
+
+155
+00:38:00,628 --> 00:38:08,908
+Diğer bir soru, rektör uzayında W vektörü hangi K diyendirikim, U ve V vektörlerinin neler birleşimi olarak yazılabilir?
+
+156
+00:38:11,908 --> 00:38:22,927
+Bakalım. W eşittir. 1-2K. Lambda 1 çarpı U vektörü 3.
+
+157
+00:38:23,603 --> 00:38:39,763
+0-2 artı, lambda 2 çarpı v vektörü 2-1, 5. Burada, birinci birleşen 3 lambda 1 artı 2 lambda 2. İkinci birleşen eksi lambda 2.
+
+158
+00:38:43,668 --> 00:39:10,092
+ve son birleşende, eksi 2 lambda 1 artı 5 lambda 2. Evet, birine her eksi oluşturursak burada, 3 lambda 1 artı 2 lambda 2 eşittir 1, eksi 2 lambda 2 eşittir, eksi 2 ve
+
+159
+00:39:11,188 --> 00:39:18,347
+Eksi 2 lambda 1 artı 5 lambda 2 eşitir, Ka.
+
+160
+00:39:26,708 --> 00:39:41,708
+Zaten burada aşikar bir durum var. Tekrardan lineer denklem sistemine, sistem çözümüne girmeye gerek yok. Lambda 2 değeri burada direkt olarak 2. Lambda 2 ise, bunun değişim ihtimali yok.
+
+161
+00:39:41,708 --> 00:39:53,708
+Bu öyle bir, yani şuradan lambda 1'i bulmalıyım. O zaman şurada yerine koydum. 3 çarpı lambda 1 artı 2 çarpı 2'den 4 eşittir 1.
+
+162
+00:39:54,387 --> 00:40:20,788
+Buradan da lambda 1 diyelim, eksi 1, bu arkadaşlar. Tamam, lambda 1, eksi 1, lambda 2, 2. Bu iki değer son denklemini sağlamak zorunda. O zaman, buradan, eksi 2 çarpı eksi 1, artı 5 çarpı 2 eşitli, k olmalı. Demek ki k diyelim, 10 artı 2'den,
+
+163
+00:40:21,331 --> 00:40:23,331
+12 olmalı diyoruz.
+
+164
+00:40:25,731 --> 00:40:27,231
+Bakalım öyle mi?
+
+165
+00:40:27,471 --> 00:40:28,471
+Evet.
+
+166
+00:40:31,603 --> 00:40:39,923
+Tekrar da lineer denklem sisteminin çözümüne girmeye gerek yok diyebiliriz. Bazı sonuçlarımız var. Bakalım ne diyor.
+
+167
+00:40:39,923 --> 00:40:59,283
+Bir V vektör uzayında, m tane ner bağımsız vektör alalım. Eğer bu m tane ner bağımsız vektörün yanına bitenler vektör eklediğimizde bu vektörler ner bağımlı oluyorsa
+
+168
+00:40:59,476 --> 00:41:26,476
+O zaman bu şu anlamı geliyor. Son cekilerin vektör, yani şu vektör, önceki m tane vektörün bir lineer toplamı olarak yazılabilir. Bundan bahsetmişim zaten. Daha öncekiler lineer bağımsız. Bu anlamı şu, buradaki m tane vektörün her biri ciğerlerinin lineer toplamı olarak yazılamaz. Ama ben bir vektör ekledim, lineer bağımlı oldu.
+
+169
+00:41:26,719 --> 00:41:32,479
+Bu durumda arkadaşlar, bu vektör diğerlerinin bir lineer toplamı olarak yazılabilir.
+
+170
+00:41:35,956 --> 00:41:50,956
+Şimdi, V vektör uzayında, V vektörden küçük olmak üzere, bu m tane vektörden, r tanesi neler bağımlı ise, m tanesi de neler bağımlı olur.
+
+171
+00:41:50,956 --> 00:41:56,956
+Yani şöyle düşünün, bir tane küme veya bir tane vektörlerin olduğu bir yer.
+
+172
+00:41:57,811 --> 00:42:04,051
+Bu vektörlerden bazı terörler bağımlı ise o zaman bunların tamamı da ner bağımlıdır deriz.
+
+173
+00:42:13,556 --> 00:42:14,443
+Evet.
+
+174
+00:42:19,315 --> 00:42:29,315
+Evet, diğer bir teoreminin sonucumuz şu. Elimizde bir tane vektör var. Bu vektörlerin, birleşenleri bir matrisle atadık.
+
+175
+00:42:29,315 --> 00:42:35,315
+İşte birinci satır, B1 vektörü, ikinci satır B2 vektörü ve sol satırda Vm vektörü.
+
+176
+00:42:35,315 --> 00:42:41,315
+Eğer bu vektörlerin rankı, yani bu oluşan matrisinin rankı,
+
+177
+00:42:46,228 --> 00:43:10,728
+n çarpı n'lik bir matris. n burada n'den küçük, onu biliyoruz. Eğer a'nın rankı r ise, rank a, r ise bu durumda bu vektörlerden r tanesi lineer bağımsızdır.
+
+178
+00:43:12,052 --> 00:43:17,851
+ve çiçeri artı bir ve daha fazlası her zaman için binler bağımlıdır.
+
+179
+00:43:19,491 --> 00:43:22,652
+Şimdi bu ranklulukla biz ne yapıyorduk hatırlarsanız.
+
+180
+00:43:22,652 --> 00:43:32,851
+İşte elementar satır işlemleri yardımıyla sıfırları buluyorduk veya sıfır satır varsa onları çıkartıyorduk en sonunda.
+
+181
+00:43:35,380 --> 00:43:42,059
+indirgenmiş halini, satırda indirgenmiş eşelon formunu bulmaya çalışıyorduk. Onu yaparken de işte birinci satırın,
+
+182
+00:43:42,059 --> 00:43:49,940
+birinci satırın, pardon, birinci satırda ilk bileşen bir var ise onun katlarını kullanarak
+
+183
+00:43:49,940 --> 00:43:57,219
+diğer, sundaki diğer elemanların sıfır olmasını sağlıyorduk. Aslında yaptığımız şey şu,
+
+184
+00:43:59,123 --> 00:44:13,563
+satıların katlarını kullanarak diğer satıları sıfır yapmaya çalışıyoruz. Diğer satılarda sıfır varsa onları çıkarttığımızda gerekenler artık biri diğerinin toplam olarak yazılamıyor.
+
+185
+00:44:14,364 --> 00:44:18,483
+Veya diğerleri katların toplam olarak yazılamadığı hale dönüştürmüş oluyoruz.
+
+186
+00:44:18,943 --> 00:44:45,903
+O yüzden rank A aslında bize onu veriyor. Yani biri diğerinin rank A, R isim. Bu şu anlama geliyor arkadaşlar. Bu R tane satır, herhangi R tane satır da biri diğerleriyle toprağın olarak yazılamıyor anlamına geliyor. Şimdi, evet. Geriye kalan.
+
+187
+00:44:46,739 --> 00:45:09,739
+r, b'den küçükse o zaman m-l vektörünün her biri bu r vektörün lineer terkip olarak yazılabilir. Eğer n-m ise bu m vektörün lineer bağımsız olabilmesi için determinans sıfırdan fark olması gerekiyor. Eğer n bu da bizim için, ikinci durumda bizim için önemli.
+
+188
+00:45:10,963 --> 00:45:28,563
+Bunu kullanmamız yerler olacak. Yani lineer bağımsızlık kontrol ederken aslında eğer neyeşilmeyse yani vektör sayısı ile bileşen sayısı aynıysa o zaman oluşturmuş olduğumuz bu masum determinatı sıfırdan farklı olmak zorunda.
+
+189
+00:45:28,563 --> 00:45:32,563
+Üçüncü durumda ise eğer neye m'den küçükse yani...
+
+190
+00:45:36,079 --> 00:45:47,719
+Bileşen sayısı, sonra vektör sayısı, bileşen sayısından fazlaysa, o zaman bu m tane vektör her zaman için neler bağımlıdır.
+
+191
+00:45:47,800 --> 00:45:55,460
+Yani örneğiniz siz re karede, re karede bileşen sayısı 2, re karede herhangi 3 vektör her zaman için neler bağımlıdır.
+
+192
+00:45:56,000 --> 00:45:59,280
+Örneğin re zeri 4 diyelim, yani 4 bileşen vektörlerin olduğu bir yerde.
+
+193
+00:45:59,891 --> 00:46:06,811
+5 vektör her zaman için 5 veya daha fazla vektör her zaman için lineer bağımlı vektörlerdir diyoruz.
+
+194
+00:46:10,739 --> 00:46:36,739
+Evet, f-4 uzayında bu dört tane vektör lineer bağımlı mı, değil mi? Şimdi burada vektör sayısı 4, plasen sayısı 4, yani neye eşit neye durumu? O zaman a'nın determinantı sıfırdan farklı ise lineer bağımsız, sıfır ise
+
+195
+00:46:37,331 --> 00:46:39,331
+lineer bağımlıdır.
+
+196
+00:46:41,331 --> 00:46:43,331
+O zaman A'ya oluşturalım.
+
+197
+00:46:46,331 --> 00:46:54,331
+A'nın determinantı, yani işte A'nın kastımında vektörleri yazdığımızda elde ettiğimiz matris,
+
+198
+00:46:55,331 --> 00:47:02,331
+Önce o matris ne? Bir yazalım. A vektörün birleşenleri sırasıyla 1, 0, 0, 1,
+
+199
+00:47:05,076 --> 00:47:13,735
+2, 1, diğerimleşenleri 1, 2, 2, 1, ve diğerimleşenleri eksiği 2, 1, 0, 0.
+
+200
+00:47:16,036 --> 00:47:16,955
+Buradan.
+
+201
+00:47:22,015 --> 00:47:23,655
+Şunu yapalım isterseniz.
+
+202
+00:47:24,112 --> 00:47:50,072
+Latbas açımını yapacağım. Yapmadan önce, şu 1. satırda şu 1'i 0 yapmak istiyorum. Yani 1. satırın, 1 katının son satırına eklersen eğer, ilk 1, 0, 0, burası 0 olacak. 0, 1, 2, 1, 1, 2, 2, 1. 1. satırın, 1 katının son satırına ekledim.
+
+203
+00:47:50,547 --> 00:48:12,947
+Burası 0 ve eksi 2, 1, 0, burası da 2 olmuş oldu. Şimdi ilk störe göre, Laplastik açıkımı yaparsam arkadaşlar, burada ne elde edeceğim? 1xA11 artı 0xA12, böyle devam ediyor. Oralarda birleşenler 0 olduğu için hesaplama gerekiyor. Yani A11.
+
+204
+00:48:14,387 --> 00:48:29,568
+Buradan da 1 çarpı, eksi 1 üzeri, 1 artı 1 çarpı, birinci satır ve süreç toparlan sonra geriye ne kaldı? 0, eksi 1, 2, 1, 2, 2, eksi 2, 1, 0.
+
+205
+00:48:32,728 --> 00:48:38,208
+Artık bunu da yine lafımız açılıp yaparak da yapabiliriz.
+
+206
+00:48:38,867 --> 00:49:00,228
+Öğren mi? Ben ne yapabilirim? Şu 1'i, 2. satırın 2 katını son sıra eklersem eğer, 0, 1, 2, burası aynı kalacak. 2. satırın 2 katını son sıra ekliyorum, eklersem burası 0, burası 5 ve burası 4 olur.
+
+207
+00:49:02,228 --> 00:49:03,228
+İlk...
+
+208
+00:49:03,923 --> 00:49:24,683
+sütuna göre, lat bas açıları yaparsam eğer, buradan da, 1 çarpı a 2 1, yani, 1 çarpı eksi 1 üzeri, 2 artı 1 çarpı, bulunduğu satır ve sütü kapattığımda, gerilerine kaldı. Eksi 1, 2, 5, 4.
+
+209
+00:49:26,343 --> 00:49:27,063
+Buradan,
+
+210
+00:49:32,244 --> 00:49:56,844
+Bakalım ne elde ettik. Şurası eksi bir, burası eksi dört, eksi on, sonra eksi onlu, on dört. Yani sıkıdan farklı. Dolayısıyla, sıkıdan farklı olduğu için, determinist sıkıdan farklı olduğundan, bu a, b, c, d vektörleri, lineer,
+
+211
+00:50:00,403 --> 00:50:01,403
+Bağımsızlık.
+
+212
+00:50:04,603 --> 00:50:05,603
+Diyoruz.
+
+213
+00:50:07,203 --> 00:50:08,203
+Evet.
+
+214
+00:50:09,503 --> 00:50:13,203
+İkinci durum, 1-1-1-1 vektörünün
+
+215
+00:50:14,203 --> 00:50:15,603
+vektörünün
+
+216
+00:50:19,092 --> 00:50:26,092
+abcd vektörlerinin, finer toplam olarak yazınız demiş. Şuradan bakalım.
+
+217
+00:50:30,092 --> 00:50:45,092
+Evet, abcd'nin katların toplam olarak yazıldığını düşünelim. Buradan da bir, bir, ner denklem sistemleri de edeceğiz. Tek tek abcd'nin yerine koyup.
+
+218
+00:50:45,684 --> 00:50:59,684
+çarpıp aşçı tarafını bileşen bileşen eşitlikten böyle bir nerde eklem sistem elde ettik. Bunu da geneşitilmiş matris yardımıyla bu nerde eklemizi çözdüğümüzde böyle bir sonuç elde ediyormuşuz.
+
+219
+00:50:59,684 --> 00:51:11,684
+Buradan da işte ilk satır bize ne söylüyor? C1'in satır olduğunu söylüyor. İkinci satır C2 6 bölü 7, üçüncü satır C3 1 bölü 7 ve son satır da C4'ü.
+
+220
+00:51:12,112 --> 00:51:26,112
+eksi 3 göre 7 olduğunu söylüyor. Yani bu vektör, u vektörü, bu cb, c2, c4, c4 kat sayılarını bu şekilde belirlemiş oldu.
+
+221
+00:51:28,112 --> 00:51:30,956
+Evet, son alt başlığımız germe.
+
+222
+00:51:34,739 --> 00:51:35,499
+D'ye tane.
+
+223
+00:51:41,748 --> 00:51:54,827
+R tane vektör oluşturduğu bir kümesi, C'nin geldiği küme veya C tarafından gerilen kümeyi biz böyle bir şey tanımlayacağız. Bu kümeyi genelde şu ifadeyle gösteriyoruz.
+
+224
+00:51:58,195 --> 00:52:18,195
+ve bu kümenin özelliği ne? Bu kümenin tanımı ne? Bu küm arkadaşlar? Bu re tane vektör ile oluşturabildiğiniz tüm lineer birleşimlerin olduğu kümenin. Yani S kümesi şu.
+
+225
+00:52:26,324 --> 00:52:52,884
+ve lambda r çarpı vr, lambda i'ler, s'nin enevi, vr sayı olmak üzere. Bu şekilde oluşturabildiğimiz tüm lineer kompülasyonun kümesi arkadaşlar, s'nin, s tarafından, çok üzülüm, s tarafından gerilen veya s tarafından gerilen küme olarak tanımlanıyor. Bu küme özelliği şu,
+
+226
+00:52:53,684 --> 00:53:01,284
+Bu küme V'nin bir alt vektör uzayıdır. Çünkü bu küme toplamaya göre kapalı ve skalaya gelen çarpmaya göre kapalı olduğundan.
+
+227
+00:53:01,284 --> 00:53:11,684
+V vektör uzayının bir alt vektör uzayıdır. Bir diğer tanımı da şu arkadaşlar. S'yi içeren en küçük alt vektör uzayıdır.
+
+228
+00:53:11,684 --> 00:53:16,684
+V içerisinde S'yi içeren en küçük alt vektör uzayı.
+
+229
+00:53:19,380 --> 00:53:27,380
+vektör uzayı, vektör uzayı, S tarafından gerilen, bu küme olmuştur. Böyle bir tanımımız var.
+
+230
+00:53:27,380 --> 00:53:45,380
+Meri ki uzayında, U1-2, 1 vektörü tarafından gerilen küme, gibi biz bu şekilde göstermiş oluyoruz. Örneğin, R4 uzayında, 1-2, 1, 3 ve V0-2, 0, 2, 1, 0
+
+231
+00:53:46,003 --> 00:53:54,503
+vektörleri tarafından gerilen küme, bu ikisinin lineer birleşimlerinden oluşan küme. Olmuş oluyor.
+
+232
+00:53:59,827 --> 00:54:02,128
+Evet, Rural Teknik konumuz bu kadar.
+
+233
+00:54:33,204 --> 00:54:34,864
+Evet, arkadaşlar, var mı sorunuz?
+
+234
+00:54:57,364 --> 00:55:07,763
+Evet, uygulama soruları var ama onları daha sonra çözeceğim ilerleyen hantalarda. Şimdi biraz daha konu bilirsin. Onlar da beraber kullandığımız durumlar oluyor.
+
+235
+00:55:17,300 --> 00:55:23,660
+Evet, konularımız bu kadardı o haftaki. Sorumuz var mı arkadaşlar?
+
+236
+00:55:28,403 --> 00:55:29,244
+Yok hocam.
+
+237
+00:55:30,844 --> 00:55:32,664
+O zaman haftaya görüşmek üzere.
+
+238
+00:55:34,204 --> 00:55:35,104
+İyi günler hocam.
+
+239
+00:55:35,284 --> 00:55:36,224
+Teşekkür ediyorum.
+
+240
+00:55:37,344 --> 00:55:38,144
+İyi günler hocam.
+
+241
+00:55:38,483 --> 00:55:39,144
+Teşekkür ediyorum.
