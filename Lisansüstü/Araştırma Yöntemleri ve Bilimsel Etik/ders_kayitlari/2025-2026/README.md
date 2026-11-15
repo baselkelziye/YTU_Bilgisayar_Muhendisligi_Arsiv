@@ -6,3 +6,4 @@
 | :---: | :---: | :--- | :--- |
 | 1 | Bahar | — | [sube_1/](sube_1/) |
 | 2 | Güz | Z. Cihan Taysi | [sube_2/](sube_2/) |
+| 2 | Bahar | — | [sube_2_bahar/](sube_2_bahar/) |
