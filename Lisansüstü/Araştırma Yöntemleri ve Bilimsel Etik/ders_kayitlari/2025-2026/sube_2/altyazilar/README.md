@@ -1,6 +1,6 @@
 # Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları Altyazıları
 
-Bu klasör, 2025-2026 eğitim öğretim yılı Güz dönemindeki Araştırma Yöntemleri ve Bilimsel Etik (BLM5004 - 2. şube) ders kayıtlarının altyazılarını içerir.
+Bu klasör, 2025-2026 eğitim öğretim yılı Güz dönemindeki Araştırma Yöntemleri ve Bilimsel Etik (BLM5004 - 2. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
 * **Dersi Veren Akademisyen:** Z. Cihan Taysi
 
