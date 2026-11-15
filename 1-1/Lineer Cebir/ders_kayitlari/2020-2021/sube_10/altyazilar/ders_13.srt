@@ -1,0 +1,1139 @@
+1
+00:00:07,732 --> 00:00:13,592
+Merhaba arkadaşlar. Ben şimdi katılım için 5 dakika bekleyeceğim. Sonra derse başlayacağım.
+
+2
+00:08:21,908 --> 00:08:33,608
+Evet, tekrardan herkese merhaba. Şimdi bugün son dersimizi yapacağız. Kaldığımız yerden devam edelim.
+
+3
+00:08:37,108 --> 00:08:41,187
+Bu yazdığım değil de bir tane daha açayım ben.
+
+4
+00:08:57,940 --> 00:09:01,580
+Şimdi,
+
+5
+00:09:04,780 --> 00:09:06,340
+Kiley Hamilton teoremi,
+
+6
+00:09:06,880 --> 00:09:09,640
+Kiley Hamilton teoremi şöyle arkadaşlar,
+
+7
+00:09:12,640 --> 00:09:17,400
+Her matris, kendisinin karakteristik denklemini sağlar.
+
+8
+00:09:17,400 --> 00:09:22,340
+A bir kare matrisi ve A'nın karakteristik denklemi şu,
+
+9
+00:09:23,155 --> 00:09:34,596
+ise her matris kendi karakteristik denklemini sağladığından, lambdaların yerine A'ları yazıyoruz. Tamam mı? Lambdaların yerine A'ları yazıyoruz.
+
+10
+00:09:35,295 --> 00:09:38,635
+Şimdi burada en sonuncusu ne? Skaler.
+
+11
+00:09:39,024 --> 00:09:54,803
+Bunlar matris. Bu ise skaler olmaz. Bunun da matris olması lazım ki işleme girebilsin. O yüzden ve eşitlik bozulmasın. Bunun a, n'in yanına ı'yı çarpan olarak ekliyoruz.
+
+12
+00:09:56,264 --> 00:10:02,644
+Kiley Hamilton teoreminden yararlanarak bir kare matrisin tersi hesaplanabilir.
+
+13
+00:10:02,644 --> 00:10:04,144
+Şimdi arkadaşlar.
+
+14
+00:10:05,364 --> 00:10:20,244
+Bir matrisin tersinin olması için birinci şart kare olmasıydı. İkinci şart determinantı sıfırdan farklı olmalıydı. Bu iki şart varsa a üzeri eksi bir var diyorduk.
+
+15
+00:10:22,184 --> 00:10:30,184
+Tamam? Var diyorduk. Şimdi tersi olan bir a matrisinin tersini hesaplamak için şu işlemi yapıyoruz.
+
+16
+00:10:30,644 --> 00:10:38,384
+Buradan tersi varsa ben bu denklemi a üzeri eksi bir ile çarparım.
+
+17
+00:10:38,683 --> 00:10:43,163
+a üzeri eksi bir ile çarptığımda bu ne olacaktır?
+
+18
+00:10:45,043 --> 00:10:49,144
+a üzeri eksi bir ile a en'in çarpımı altlar aynıysa üstleri topluyorduk.
+
+19
+00:10:59,379 --> 00:11:24,440
+2 artı a2 an-3 artı nokta nokta nokta nokta artı an a üzeri eksi 1 ile ın çarpımı a üzeri eksi 1 eşittir sıfırı elde ederiz.
+
+20
+00:11:24,755 --> 00:11:27,895
+Tamam mı? Eşit sıfırı elde ederiz arkadaşlar.
+
+21
+00:11:29,295 --> 00:11:36,935
+Şimdi, buradan a üzeri eksi biri hesaplamak için a üzeri eksi biri çekiyorum.
+
+22
+00:11:36,935 --> 00:11:47,955
+a üzeri eksi biri çektiğim zaman, buradaki bütün ifadelerim karşı tarafa eksi olarak gidecek.
+
+23
+00:11:52,019 --> 00:12:05,919
+Artı, eksi parantezinde gidiyor ya, a üzeri n-2 artı a2, a üzeri n-3 artı nokta nokta nokta.
+
+24
+00:12:06,439 --> 00:12:12,700
+Şimdi son terimine bakalım burada. Bunun bir önceki terimi ne olacaktır?
+
+25
+00:12:13,844 --> 00:12:32,104
+a n-1, bunun bir öncekisi a n-1, lambdalar da azalıyor, azalıyor, azalıyor, azalıyor, burada kalmamış. O zaman bu nedir? Lambda üzeri 1, bu da lambda üzeri 0'dır. Öyle değil mi? Lambda üzeri 0, 1 oluyor zaten.
+
+26
+00:12:38,995 --> 00:12:56,535
+çarpı a olacak. Bunun bir önceki terimi. Karakteristik denklemde ne yapıyoruz? Lambdalar yerine a'ları yazdığımda bir önceki terimi bu. Peki, bununla bunu çarptığımda o zaman benim şuradaki terimim ne olacaktır?
+
+27
+00:12:56,535 --> 00:13:04,535
+a, n-1, a ile a-1'in çarpımı i'dir.
+
+28
+00:13:05,395 --> 00:13:13,255
+Bir önceki terimim. O zaman nokta nokta artı an-1 çarpı i.
+
+29
+00:13:13,675 --> 00:13:19,076
+Şimdi a üzeri eksi 1'i yalnız bırakıyoruz ya, bütün hepsini karşı istikamete attık.
+
+30
+00:13:19,576 --> 00:13:29,455
+Ama bunun yanında an var. O zaman bunu da bir bölü an diye bunun başına atarım.
+
+31
+00:13:30,964 --> 00:13:35,423
+İşte bu şekilde ay üzeri eksi birinin hesaplanmasına
+
+32
+00:13:39,796 --> 00:13:46,736
+K.L. Hamilton teoremin yardımıyla A'nın tersinin hesaplanması diyoruz. Anlaşıldı mı?
+
+33
+00:13:50,292 --> 00:13:51,251
+Anladık mı?
+
+34
+00:13:55,475 --> 00:13:56,475
+Anlatık hocam.
+
+35
+00:13:57,475 --> 00:13:58,475
+Tamam peki.
+
+36
+00:14:00,395 --> 00:14:11,475
+Şimdi, Tyler Hamilton teoremi yardımıyla bir matrisin büyük kuvveti de hesaplanabilir diyoruz.
+
+37
+00:14:11,475 --> 00:14:17,635
+Şöyle ki, şurada.
+
+38
+00:14:19,604 --> 00:14:41,304
+Lambda kare, eksi iki lambda artı bir eşittir sıfır olsun. Mesela karakteristik denklemin bu olsun. Her matris kendi karakteristik denklemini sağladığında lambdalar yerine ağları yazdım. Tamam. Bir yerine de ne yazacağım? I yazacağım. Eşittir sıfır. En yüksek mertebeli
+
+39
+00:14:42,035 --> 00:14:48,275
+terimi çekiyorum. Yani a kare eşittir, 2a eksi i oldu.
+
+40
+00:14:48,511 --> 00:14:50,811
+Bana a üzeri 5 sorulmuş olsun.
+
+41
+00:14:50,951 --> 00:14:54,891
+Kylie Hamilton teoremi yardımıyla a üzeri 5'i soruyor mesela.
+
+42
+00:14:55,451 --> 00:14:58,311
+Ne yaparım? Bunu bir defa a ile çarpıyorum.
+
+43
+00:14:58,551 --> 00:15:01,391
+a ile çarptığımda ne olacaktır bu?
+
+44
+00:15:01,791 --> 00:15:05,551
+a'nın kübü, 2a'nın karesi, eksi a.
+
+45
+00:15:05,551 --> 00:15:10,551
+Şimdi a'nın karesi yerine götürüp bunu yerine yazıyorum.
+
+46
+00:15:11,471 --> 00:15:13,771
+Yerine yazdığımda ne olacak?
+
+47
+00:15:16,511 --> 00:15:28,391
+Eksi bir, eksi a. Eşittir. Ne oldu bu? 4a, bir tanesi çıktı. 3a, eksi 2ı. Şimdi a küp buna eşit.
+
+48
+00:15:28,391 --> 00:15:39,391
+a üzeri 4, bunu a ile çarpıyorum. a ile çarptığımda a üzeri 4, 3a'nın karesi, eksi 2a.
+
+49
+00:15:40,148 --> 00:15:44,408
+Buradan gene a'nın karesini götürüp burada yerine yazıyorum.
+
+50
+00:15:44,827 --> 00:15:52,188
+Yerine yazdığım zaman 3 parantez içinde 2a eksi i, eksi 2a.
+
+51
+00:15:52,628 --> 00:15:59,508
+Buradan 6a eksi 2a. O da nedir? 4a eksi 3ı.
+
+52
+00:16:00,083 --> 00:16:25,083
+diye bulduk. Bir daha a ile çarpıyoruz a üzeri 5 için. 4 a'nın karesi, eksi 3 a. O da eşittir. 4 parantez içinde a kare yerine 2 a eksi i, eksi 3 a. O da 2 4 8 3 çıktı 5 a, eksi 4 i.
+
+53
+00:16:26,803 --> 00:16:40,803
+Sonra ne yaptık? A üzeri 5'in denklemini bulduk. Ne yapacağız? A'yı götürüp yerine yazacağız, I'yı götürüp yerine yazacağız. Böylelikle A üzeri 5'i hesaplamış olacağız.
+
+54
+00:16:41,463 --> 00:16:49,584
+Peki, şimdi diyebilirsiniz ki biz test olacağız. Hani A üzeri 5'i Kylie Hamilton'la sorsa,
+
+55
+00:16:51,059 --> 00:16:55,639
+Ne yaparım? Ne şekilde sorar? diye düşünebilirsin.
+
+56
+00:17:05,491 --> 00:17:24,791
+İşlemleri bilgisayarınızda yaptırabiliyorsunuz işin açıkçası. Toplamayı, çıkartmayı, çarpmayı, denklemin çözümünü, ondan sonra determinant hesaplarını, yani bu sınav online olduğu için her türlü şeyi bilgisayara yaptırma şansınız var.
+
+57
+00:17:24,791 --> 00:17:33,291
+Çünkü böyle programlar var. Size sınavda sorulacak olan soru programla yapacağın soru olmayacaktır.
+
+58
+00:17:33,491 --> 00:17:40,531
+Programla yapacağın soru olsa bile senin bilgin olması lazım ki onu programa oturtabilirsin.
+
+59
+00:17:41,203 --> 00:18:02,043
+Şeklinde olacaktır. Mesela burada sana ne diyebilir? İşte bir matris verir. Matrisinin ay üzeri beşini Kylie Hamilton teoremiyle hesaplamak için elde edeceğin denklem aşağıdakilerden hangisidir?
+
+60
+00:18:09,203 --> 00:18:20,384
+Şu denklem bu. Ay üzeri 5'i hesaplamak için bulacağın denklem bu diye yazman lazım. Yani direkt cevap değil, bu tarz bir şey sorulabilir.
+
+61
+00:18:22,384 --> 00:18:35,023
+Şimdi gelelim sorularımıza. Bu niye böyle oldu? Bir dakika ben şunu bir kapatacağım, tekrardan açacağım.
+
+62
+00:18:44,084 --> 00:18:57,744
+Şimdi, A matrisi veriliyor. Kylie Hamilton teoremin yardımıyla A'nın tersini bulunuz. A'yı zarı 5'i hesaplayınız diyor bana. Ne yapacağız o zaman? Asal köşegenden lambdaları çıkartıyorum.
+
+63
+00:19:08,788 --> 00:19:19,327
+Ortak çarpan bulup bunu dışarıya atmanıza gerek yok. Burada yapacağın işlem direkt determinantı açmaktır.
+
+64
+00:19:19,327 --> 00:19:21,327
+Yani ne yapıyorum?
+
+65
+00:19:23,827 --> 00:19:24,307
+Şunu
+
+66
+00:19:25,619 --> 00:19:49,059
+Burada bir tane sıfır var, burayı da sıfırlarsam, yani lambda eksi bir ile çarpıp burayı buraya eklediğim zaman burada sıfırı bulurum. O zaman bunu da eksi parantezine alayım. Lambda eksi bir olur bu. Lambda eksi birin karesi, bir de önünde eksi var, artı bir oldu.
+
+67
+00:19:50,740 --> 00:19:53,740
+2 çarpı lambda eksi 1 eklendi.
+
+68
+00:19:55,139 --> 00:19:59,099
+Lambda eksi 1'i çarpıp eklediğin zaman burası 0 oldu.
+
+69
+00:19:59,820 --> 00:20:03,119
+Buna göre determinantı açıyorum.
+
+70
+00:20:03,955 --> 00:20:11,355
+Açtığımda ne olacak? Bununla bunun çarpımı, eksi, bununla bunun çarpımı arttı, eksi arttı zaten bu.
+
+71
+00:20:11,955 --> 00:20:21,255
+Buradan neyi elde ettik? Lambda küp artı 3 lambda kare eksi 6 lambda artı 4.
+
+72
+00:20:21,835 --> 00:20:26,895
+Karakteristik denklemini elde ettim. Eşittir 0, karakteristik denklemini elde ettim.
+
+73
+00:20:26,895 --> 00:20:30,955
+Peki P lambda karakteristik polinomumuz demek ki bu.
+
+74
+00:20:31,827 --> 00:20:41,748
+Kylie Hamilton teoremine göre, ne yapacağım? Her matris kendi karakteristik denklemini sağlardı. O zaman, eksi,
+
+75
+00:20:43,316 --> 00:20:55,796
+a üzeri 3 artı 3a'nın karesi, eksi 6a artı 4ı eşittir 0 oldu.
+
+76
+00:20:55,796 --> 00:21:04,996
+Peki, burada bu a matrisinin tersi var mı? Belki de tersi yok, şaşırtmaca olsun diye bana soru soruldu.
+
+77
+00:21:05,355 --> 00:21:07,516
+Onun için determinantını hesaplıyorum.
+
+78
+00:21:11,316 --> 00:21:14,456
+0, 1, 0, 1
+
+79
+00:21:14,456 --> 00:21:22,596
+Buradan, eksi 1 ile çarpıp eklersem, ne olacaktır bu?
+
+80
+00:21:24,735 --> 00:21:26,655
+1, 2, 1
+
+81
+00:21:27,039 --> 00:21:38,759
+Eksi 2, 1, 0, eksi 1 ile çarptım, ekledim, 0, eksi 1 ile çarptım, ekledim, eksi 2, eksi 1 ile çarptım, ekledim, 0.
+
+82
+00:21:39,719 --> 00:21:52,719
+Buradan açarsak, artı, eksi, artı, bununla bunun çarpımı 4, sıfırdan farklı, ay üzeri eksi 1 var diyoruz.
+
+83
+00:21:53,011 --> 00:22:02,112
+A üzeri eksi 1 var. O zaman A üzeri eksi 1 varsa ben bu denklemi A üzeri eksi 1 ile çarparım.
+
+84
+00:22:03,011 --> 00:22:18,871
+Solda. Çarptığımda ne oldu? Eksi A'nın karesi 3A eksi 6I artı 4 A üzeri eksi 1 eşittir 0 oldu.
+
+85
+00:22:19,508 --> 00:22:24,947
+Şimdi ne yapıyoruz? Bunları hepsini öbür tarafa atıyorum.
+
+86
+00:22:24,947 --> 00:22:39,347
+Eksi parantezinde a üzeri eksi 1, eksi parantezinde eksi a'nın karesi artı 3a, eksi 6ı,
+
+87
+00:22:40,276 --> 00:22:42,635
+Başına da 1 bölü 4 geldi.
+
+88
+00:22:43,016 --> 00:22:46,596
+Bu eksiyi içeriye attığım zaman ne oluyor?
+
+89
+00:22:46,596 --> 00:22:50,755
+A kare artı 3A idi.
+
+90
+00:22:51,175 --> 00:22:53,496
+Eksi ile çarpınca eksi 3A.
+
+91
+00:22:53,903 --> 00:23:01,943
+Bununla bunun çarpımı artı oldu. Artı altı, I diye A üzeri eksi biri elde ettik.
+
+92
+00:23:02,204 --> 00:23:09,844
+Şimdi ne yapıyoruz? A'nın karesini, A'yı, I'yı yerine yazıp toplama işlemini yapıyoruz.
+
+93
+00:23:10,423 --> 00:23:19,183
+Bu işlem bittikten sonra ne yapıyorum? 1 bölü 4 ile skalerle çarpım, tüm elemanların çarpımıydı matrisin.
+
+94
+00:23:21,903 --> 00:23:36,084
+B şıkkında ne demişiz? B şıkkında diyor ki ay üzeri 5'i hesaplayın. Peki, benim karakteristik denklemim buydu. Ne yapacağım?
+
+95
+00:23:36,084 --> 00:23:45,824
+Lambdalar yerine A'ları yazıyorum. Sonra en yüksek mertebeli olan ay üzeri 3. Ay üzeri 3'ü çekiyorum.
+
+96
+00:23:47,796 --> 00:24:02,496
+Sonra ne yapıyoruz? Bunu a ile çarpıyorum. a üzeri 4. 3 a üzeri 3. Eksi 6 a'nın karesi. Artı 4 a. a üzeri 3 yerine
+
+97
+00:24:03,220 --> 00:24:18,539
+Götürüyorum, şunu yazıyorum. Yazınca 3, parantez içinde 3a'nın karesi, eksi 6a, artı 4ı. Kapattık parantezi, eksi 6a'nın karesi, artı 4a.
+
+98
+00:24:19,028 --> 00:24:34,188
+Şimdi buradan 9a'nın karesi, eksi 6 gitti, 3a'nın karesi, 3, 6, 18, eksi 18, artı 4, 14a, 3, 4, 12, ü oldu.
+
+99
+00:24:34,188 --> 00:24:38,768
+Şimdi bunu bir kere daha a ile çarptığımda ne olacak?
+
+100
+00:24:40,019 --> 00:24:46,360
+3A'nın kübü, eksi 14A'nın karesi, artı 12A oldu.
+
+101
+00:24:47,119 --> 00:24:52,000
+Gene götürüp A'nın kübünü burada yerine yazıyorum.
+
+102
+00:24:52,440 --> 00:24:58,539
+Yerine yazdığımda, parantez içine yazdığımda, toparlarsak 9A'nın karesiydi.
+
+103
+00:24:59,200 --> 00:25:03,460
+Eksi 14A'nın karesi, eksi 5A'nın karesi.
+
+104
+00:25:03,460 --> 00:25:07,619
+Sonra 3, 6, 18, eksi 18A,
+
+105
+00:25:08,019 --> 00:25:14,360
+Artı 12a, eksi 6a, 3, 4, 12ı oldu.
+
+106
+00:25:15,139 --> 00:25:29,500
+Şimdi götürdük a'nın karesini, a'yı ve ı'yı yerine yazdık ve skalerle çarpıp toplama işlemi yaptığında a üzeri 5'i elde etmiş oldum.
+
+107
+00:25:30,160 --> 00:25:33,840
+Var mı sorusu olan, anlamayan sorusu olan?
+
+108
+00:25:41,748 --> 00:25:42,468
+Var mı?
+
+109
+00:25:46,228 --> 00:25:50,088
+62 kişi var. Ne anladık diyorsunuz?
+
+110
+00:25:51,528 --> 00:26:01,088
+Hocam, şey, mesela burada biz tek tek aile şartıp işlem yapıyoruz ya, yani tek seferde mesela a üzeri beşi bulmak için...
+
+111
+00:26:01,104 --> 00:26:12,284
+A üzeri şey, o sayıyı verecek A üzeriyle çarpmamız, yani neden yanlış oluyor? Neden tek tek yapmamız gerekiyor?
+
+112
+00:26:12,284 --> 00:26:19,884
+Neden tek tek yapıyoruz? Çünkü mesela sana sorulacak olan aşağıdakilerden hangisidir diye sorulur. Öyle değil mi?
+
+113
+00:26:20,144 --> 00:26:25,104
+Yani şunu sana A üzeri 5'i sorsa, sen bunu bilgisayar programı...
+
+114
+00:26:27,443 --> 00:26:41,223
+Bilgisayar programı var. Mesela sen bu A maddesini yazar, ay üzeri 5'i hesaplattırırsın. Yani normal şartlar altında, klasik sınavda bizim sorduğumuz soru tipi buydu.
+
+115
+00:26:41,644 --> 00:26:49,823
+Kylie Hamilton teoremine göre ay üzeri 5'i hesaplayınız diyorduk. Şunları şey yapıyorduk. Ama size şunu sormaz.
+
+116
+00:26:50,291 --> 00:27:02,811
+Ben olsam sormam şahsen. Çünkü sen bunu direkt Kylie Hamilton'la hesaplattın, kendin çarparak mı hesapladın, ne yaptın, bilgisayara mı hesaplattın.
+
+117
+00:27:03,871 --> 00:27:11,791
+Bu ölçme olmaz. Ama burada sorulacak olan şey şudur. Şu, şu denklem.
+
+118
+00:27:12,660 --> 00:27:22,720
+Bu da ne yapıyorsun? En yüksek dereceliği çekiyorsun, karşı istikamete atıyorsun, hepsini yerine yazarak mertebeyi bir düşürüyorsun.
+
+119
+00:27:22,839 --> 00:27:32,299
+Mertebeyi bir düşürüyorsun ve şunu kullanarak ay üzeri beşe hesaplıyorsun. Anladın mı?
+
+120
+00:27:33,579 --> 00:27:34,259
+Öndüracağım.
+
+121
+00:27:34,299 --> 00:27:36,359
+Yani burada amaç şunu kullanmak.
+
+122
+00:27:38,708 --> 00:27:39,928
+Anladım hocam, sağ olun.
+
+123
+00:27:39,928 --> 00:27:52,268
+Tamam, yani sorulacak olan da size, hani böyle bir şey olması lazım. Hani benim düşünceme göre. Tamam?
+
+124
+00:27:53,468 --> 00:27:54,628
+Tamamdır hocam, sağ olun.
+
+125
+00:27:54,628 --> 00:27:56,888
+Bir şey değil. Şimdi.
+
+126
+00:28:01,428 --> 00:28:10,348
+Şöyle örneklerimize bakalım. A matrisi veriliyor. A matrisinin özdeğerini ve bu özdeğere karşılık gelen özvektörlerini bulunuz.
+
+127
+00:28:10,348 --> 00:28:25,648
+Şimdi ne yapacağız? Asal köşegenden lambdaları çıkartıyoruz. Lambdaları çıkarttık. Sonra bu determinanti açayım. 2'ye 2 çünkü bu. Bununla bunun çarpımı eksi bu.
+
+128
+00:28:26,291 --> 00:28:49,271
+Karakteristik denklemin bu. Bunun kökleri nelerdir? 2'ye 3'tür. Çarpımları 6, toplamı 5 olacak. 2'ye 3. Lambda 2 olduğu zaman, lambda yerine 2 yazıyorum. Lambda yerine 2 yazdığımda ne oldu? Eksi 1, 1, eksi 2, 2 yazdığımda 2.
+
+129
+00:28:52,819 --> 00:29:08,652
+Yani, a eksi lambda i çarpı x eşittir sıfır denkleminden, lambda yerine 2 yazdım. Karşıma ne çıktı? Homojen denklem sistemi çıktı. Bu homojen denklem sistemini çözersek ne yaptık? Bunu...
+
+130
+00:29:08,692 --> 00:29:19,632
+eksi 2 ile çarpıp buraya eklediğimde 0, eksi 2 ile çarptık ekledik 0, birinci satırı eksi 1 ile çarptığımda şunu elde ettim.
+
+131
+00:29:19,831 --> 00:29:25,392
+Bunun rangı nedir? Rank 1, n 2, n eksi r 1.
+
+132
+00:29:26,051 --> 00:29:33,011
+Tamam, n eksi r 1. Bu 1 bana neyi söylüyor? Bir tane keyfiye bağlı sonsuz çözüm var.
+
+133
+00:29:33,375 --> 00:29:54,235
+Ve bu bir bana vektör sayısını söylüyor. Tamam mı? Yani lambda bir eşittir, iki özveğerine karşılık gelen vektörü benim kaç taneymiş? Bir taneymiş. Bir taneymiş. Anlaşıldı mı? Bir tane.
+
+134
+00:30:00,000 --> 00:30:01,599
+2 eşittir 0.
+
+135
+00:30:02,339 --> 00:30:06,259
+Buradan, buradan arkadaşlar, ne yapıyorum?
+
+136
+00:30:09,268 --> 00:30:17,988
+x1'e 1 dersem, x'i kim ne olur? Bu da 1 olur. Demek ki lambda 1'e karşılık gelen vektörüm 1, 1'miş.
+
+137
+00:30:18,668 --> 00:30:32,868
+İkinci özdeğeri 3'miş. Şimdi ne yapacağım? Lambdalar yerine 3 yazacağım. 3 yazdığımda, eksi 2, 1, eksi 2, 1 oldu. Şunu elde ettim.
+
+138
+00:30:35,380 --> 00:30:44,019
+a eksi lambda i çarpı x eşittir sıfır denkleminden, lambda'yı götürdük 3 diye yerine yazdık.
+
+139
+00:30:44,019 --> 00:30:52,559
+Karşıma homojen denklem sistemi çıktı ve bu homojen denklem sistemini çözersem ne oluyor?
+
+140
+00:30:53,076 --> 00:31:16,796
+Eksi 1 ile çarpıp aşağıya 2'yi eklediğimde bunlar 0 oldu. Birinci satırı eksi 1 bölü 2 ile çarparsam 1, eksi 1 bölü 2 oldu. Rank 1'dir. En kaç? En 2. En eksi R? 1. Bir tane keyfiye bağlı sonsuz çözüm var ve vektör sayım 1. Aralarındaki bağımsızlık yazıyorum.
+
+141
+00:31:19,028 --> 00:31:22,008
+x2 bölü 2 eşittir sıfıra.
+
+142
+00:31:22,608 --> 00:31:28,668
+Buradan x2'ye ben 2 dersem keyfi olarak x prim ne olur? 1 olur.
+
+143
+00:31:29,067 --> 00:31:36,788
+Demek ki lambda 2 özdeğerime karşılık gelen benim özvektörlerim 1, 2 imiş.
+
+144
+00:31:38,648 --> 00:31:40,848
+Tamam, 1, 2 imiş.
+
+145
+00:31:48,051 --> 00:31:51,811
+Şimdi B şıkkında ne diyordu?
+
+146
+00:31:52,591 --> 00:31:55,912
+K ile Hamilton teoremi yardımıyla tersini bulun.
+
+147
+00:31:56,912 --> 00:32:00,432
+Şimdi benim karakteristik denklemim neydi?
+
+148
+00:32:00,591 --> 00:32:04,451
+Lambda kare, eksi beş lambda artı altıydı.
+
+149
+00:32:08,147 --> 00:32:25,488
+Tamam? Bu. Karakteristik polinom da bu. Karakteristik denklemde ne yapıyorum? Her matris kendi karakteristik denklemini sağladığı için lambdalar yerine a'ları yazıyorum.
+
+150
+00:32:31,059 --> 00:32:44,619
+Eşittir sıfır dedim. Bunun yanına I geliyor. Çünkü niye? Bunlar matris, bu skaler. Matrisle skaler toplanmaz. Bunun da matris olması lazım. Onun için bunu bu şekilde yazdık.
+
+151
+00:32:44,619 --> 00:32:59,059
+Şimdi ne yapacağım? Bunun tersi var mı? Onun için A üzeri eksi 1'e hesaplamam lazım. A'nın determinantını hesaplamam lazım. Ne yapıyorum? Bunun determinantını alıyorum. 1, 1, eksi 2, 4. Bununla bunu...
+
+152
+00:32:59,059 --> 00:33:08,479
+Bunun çarpımı 4, eksi, bir de burada eksi gelecek, artı 2, 6, sıfırdan farklı, a üzeri eksi 1 var diyoruz.
+
+153
+00:33:08,879 --> 00:33:19,039
+a üzeri eksi 1 varsa arkadaşlar, ne yapıyorum? Ben bu denklemi a üzeri eksi 1 ile soldan çarpıyorum.
+
+154
+00:33:19,039 --> 00:33:26,519
+Çarptığımda ne oldu şimdi bu? a oldu, eksi 5, i oldu.
+
+155
+00:33:26,864 --> 00:33:32,224
+Sonra artı 6, a üzeri eksi 1, eşittir 0 oldu.
+
+156
+00:33:32,784 --> 00:33:40,484
+Buradan a üzeri eksi 1'i yalnız bırakıyorum. Bunların hepsi öbür tarafa eksi olarak geçer.
+
+157
+00:33:41,004 --> 00:33:52,824
+Eksi a artı 5'i bölü 1 bölü 6. Tamam mı? 1 bölü 6 ile bunu çarpıyorum. Çarpı 1 bölü 6.
+
+158
+00:33:54,708 --> 00:34:09,148
+Şimdi buraya ne yaptık? Bu artı olduğu için bunu öne aldık. Ondan sonra 5I birim matrisi 5 ile çarptım. Eksi A matrisi bunu topluyorum.
+
+159
+00:34:09,708 --> 00:34:21,587
+Topladıktan sonra neyi elde ettim? 4 eksi 1. Eksi eksi artı oldu. 2, 5 eksi 4'ten 1.
+
+160
+00:34:21,983 --> 00:34:33,784
+Bunu 1 bölü 6 ile çarpacağım. Skalerle matrisin çarpımı tüm elemanları çarpıldığı için a üzeri eksi 1 olarak bunu bulurum. Anlaşıldı mı?
+
+161
+00:34:36,724 --> 00:34:37,743
+Evet hocam.
+
+162
+00:34:40,003 --> 00:34:41,743
+Peki, başka bir soru.
+
+163
+00:34:43,684 --> 00:34:44,764
+Başka bir soru.
+
+164
+00:34:45,204 --> 00:34:57,003
+A matrisinin matrisi için AD-BC12 ve A artı D eşittir 8 ise A matrisinin karakteristik polinomu nedir?
+
+165
+00:34:58,003 --> 00:35:03,564
+Şimdi ben neyi biliyorum arkadaşlar karakteristik polinom için?
+
+166
+00:35:03,564 --> 00:35:10,564
+P lambda lambda üzeri n artı A1 lambda üzeri n-1 artı nokta nokta A n'di.
+
+167
+00:35:11,123 --> 00:35:23,543
+Bir polinomdu. Bu polinomun en tane gerçel karmaşık kökü vardı. Bu polinomda A1-iz A'ya, A-N'de, eksi 1 üzeri N, A'nın determinantıydı.
+
+168
+00:35:24,103 --> 00:35:30,843
+Bu bize tanımda bunlar söylenmişti zaten. Bunları biliyorum ben. Tamam mı? Bu tanım kısmında bu var.
+
+169
+00:35:31,523 --> 00:35:39,103
+Şimdi o zaman şuna bakıyorum. Şu verdiği nedir? A ile D'nin çarpımı, eksi B ile C'nin çarpımı.
+
+170
+00:35:39,123 --> 00:35:57,043
+dediği determinant zaten. Bu 12'ymiş. A artı D de izi eşit zaten. Bu 2 çarpı 2 polinom olduğu için lambda karelidir. Lambda kare artı A1 lambda artı A2'dir.
+
+171
+00:35:57,043 --> 00:36:04,083
+Şimdi burada A1 neye eşitti? Eksi iz A'ya. AN de benim burada A2.
+
+172
+00:36:05,780 --> 00:36:10,579
+Eksi 1 üzeri 2 çarpı a'nın determinantıdır.
+
+173
+00:36:11,380 --> 00:36:16,020
+a'nın determinantı 12. Eksi 1'in karesi artı 1 zaten.
+
+174
+00:36:17,160 --> 00:36:24,600
+a1'de neye eşit? 8. Eksi iz a olduğundan eksi 8 diyoruz.
+
+175
+00:36:26,560 --> 00:36:31,360
+Karakteristik polinom soruluyordu bana. Karakteristik polinomum budur diyorum.
+
+176
+00:36:33,427 --> 00:36:34,407
+Anlaşıldı mı?
+
+177
+00:36:39,411 --> 00:36:48,011
+Hocam, bu teoremleri önceki bilgilerimizden yararlanarak mı kullandık? İzini ve determinantını vs.
+
+178
+00:36:49,011 --> 00:36:56,076
+Şurada, bak bu konuyu ilk anlatırken, size...
+
+179
+00:36:59,380 --> 00:37:01,680
+şurada bunu söylemiştim.
+
+180
+00:37:07,219 --> 00:37:07,659
+Tamam.
+
+181
+00:37:08,479 --> 00:37:10,460
+Tamam hocam. Teşekkür ederim.
+
+182
+00:37:10,920 --> 00:37:15,239
+İyi değilim. Buradan yararlanıp da cevabı söyledik. Tamam.
+
+183
+00:37:17,239 --> 00:37:28,859
+Evet. Şimdi mesela ben size final için karışık uygulama atmıştım. Bunu tekrardan atacağım. Bunları çözün.
+
+184
+00:37:33,108 --> 00:37:58,928
+Yani tabii bu klasik sınav için uygulama ama tabii sana ne sorulacaktır? Oradan hani bunların yarısı yarısı şeklinde sorular sorulacaktır. Mesela burada işte A üzeri 5 var. Dediğim gibi A üzeri 5'i sana sorsa sen bilgisayar programına oturtturursun bunu, çarpma işlemini yaptırırsın, direkt A üzeri 5'i bulursun. Ama şunu bulamazsın.
+
+185
+00:38:00,244 --> 00:38:03,364
+Senin bilgin sorulacaktır orada.
+
+186
+00:38:08,628 --> 00:38:11,288
+Ya da mesela karakteristik polinom.
+
+187
+00:38:16,340 --> 00:38:27,640
+Bunları bilmen lazım ki, ney ne soruluyor, bazı işlemleri tamam yaptırtırırsın ama gene senin bilgine orada ihtiyaç var.
+
+188
+00:38:34,931 --> 00:38:35,471
+Şimdi
+
+189
+00:38:39,699 --> 00:38:50,819
+Bir de alt uzay sorusu çözeyim birkaç tane. Ondan sonra da dersimizi bitireceğiz zaten.
+
+190
+00:38:50,819 --> 00:38:53,079
+Şöyle.
+
+191
+00:38:56,436 --> 00:39:06,876
+Yani bu örnekler zaten hep sizde var olan örnekler. Bunları çözmüş olmanız lazımdı. Hani şöyle bir tekrar olsun diye bunu şimdi çözeceğim.
+
+192
+00:39:10,155 --> 00:39:14,916
+Vektör uzaylarına kısaca bir tekrar yapmış olacağım ve dersi kapatacağım.
+
+193
+00:39:15,664 --> 00:39:23,864
+M4x1 vektör uzayında U ve V alt kümeleri aşağıdaki gibi verilsin diyor. Şöyle vermiş.
+
+194
+00:39:24,384 --> 00:39:29,503
+U ve V'nin M4x1'in alt uzayı olup olmadığını araştırınız.
+
+195
+00:39:30,204 --> 00:39:38,003
+Eğer alt uzay iseler, alt uzaya ait bir taban bulunuz ve boyutunu belirtiniz diyor.
+
+196
+00:39:38,003 --> 00:39:43,664
+Şimdi önce şuna bakalım. U, U'nun şartı bu kümenin elemanı olma şartı.
+
+197
+00:39:43,664 --> 00:39:48,664
+Bu şartı ne? A, 2, B, C, C'de 3, D'ye eşit olmalı.
+
+198
+00:39:50,543 --> 00:39:55,824
+Şimdi, bu şartı, şimdi alt küme diyor ama boştan farklı mı? Ona bakmam lazım.
+
+199
+00:39:56,324 --> 00:39:59,664
+Ne yapacağım? Bu şartı sağlayan bir tane eleman var mı? Var.
+
+200
+00:40:00,000 --> 00:40:04,840
+0'ı verdiğim zaman, B yerine 0'ı verdiğimde A 0 oluyor.
+
+201
+00:40:05,480 --> 00:40:08,980
+B yerine 0'ı verdiğimde C de 0 oluyor.
+
+202
+00:40:09,099 --> 00:40:12,720
+0, 0 ne oluyor? Bu şartı sağlıyor. Boştan farklı.
+
+203
+00:40:12,720 --> 00:40:18,603
+Peki, şimdi ikinci olarak...
+
+204
+00:40:18,931 --> 00:40:27,931
+Neye bakacaktık? Toplamaya göre kapalı mı? Toplamaya göre kapalı mı? Ne yapıyoruz? Burada toplama alıyoruz, toplamını alıyoruz.
+
+205
+00:40:28,152 --> 00:40:43,351
+Yani iki tane eleman aldım daha doğrusu. Şartlarım ne? A1, 2B1'e eşit olacak. C1, 3D1'e eşit olacak. A2, 2B2'ye, C2'de 3D2'ye eşit olacak. Tamam?
+
+206
+00:40:43,824 --> 00:40:52,083
+Şimdi buna toplama işlemi yaptırıyorum. Bir işlem tanımlanmadığı için normal toplamayı yaptık. Matris toplamını yaptık.
+
+207
+00:40:52,083 --> 00:41:09,564
+Peki, bu kümenin elemanı olma şartı neydi arkadaşlar? Bu kümenin elemanı olma şartı, A1 artı, şurada yazmışız, A1 artı A2,
+
+208
+00:41:10,739 --> 00:41:25,399
+2, B1 artı B2'ye eşit mi? Bu eşitlik var mı? C1 artı C2 ne eşit olacak? 3, D1 artı D2'ye eşit mi? Buna bakacağız.
+
+209
+00:41:36,947 --> 00:41:42,707
+Bunu da iki parantezine aldığımda B1 artı B2 oldu.
+
+210
+00:41:44,007 --> 00:41:49,467
+Dolayısıyla iki B1 artı B2'ye eşit.
+
+211
+00:41:50,547 --> 00:41:55,027
+Şimdi bu eşitlik var mı? C1 neye eşitti?
+
+212
+00:41:56,127 --> 00:41:58,827
+C1, 3D1.
+
+213
+00:42:02,675 --> 00:42:23,315
+C2, 3D2, bunu da 3 parantezine alırsak, D1 artı D2, bu da buna eşittir. Dolayısıyla bunu da göstermiş olduk. Toplamaya göre kapalı. Peki, skaler çarpıma göre kapalı mı?
+
+214
+00:42:24,340 --> 00:42:27,739
+Gene bu kümeden bir tane eleman aldım.
+
+215
+00:42:28,279 --> 00:42:31,039
+K skaleri ile çarptığımda şunu elde ettim.
+
+216
+00:42:31,860 --> 00:42:31,980
+Tamam.
+
+217
+00:42:32,519 --> 00:42:34,039
+Bunun ne olması lazım?
+
+218
+00:42:34,340 --> 00:42:38,260
+Ka1'in 2KB1'e eşit olması lazım.
+
+219
+00:42:38,940 --> 00:42:43,880
+A1 neye eşitti?
+
+220
+00:42:44,340 --> 00:42:46,500
+2B1'e eşitti.
+
+221
+00:42:47,699 --> 00:42:50,900
+Buradan 2KB1 diye bunu yazarım.
+
+222
+00:42:51,668 --> 00:43:05,327
+Peki, C1 yerine de ne yazacağım? 3D1 yazacağım. Parantez içinde dışarıda da K var. Bu da buna eşittir.
+
+223
+00:43:05,327 --> 00:43:11,276
+Bu da buna eşittir. Dolayısıyla K çarpı...
+
+224
+00:43:11,315 --> 00:43:26,895
+Bu kümenin elemanı U'nun elemanıdır. Yani skalerle çarpıma göre de kapalıdır. Dolayısıyla nedir? Alt uzaydır. Şimdi bana ne diyor? Tabanı bul diyor.
+
+225
+00:43:28,211 --> 00:43:30,311
+Ya da baz, taban baz, aynı.
+
+226
+00:43:30,851 --> 00:43:32,271
+Şimdi ben neyi biliyorum?
+
+227
+00:43:32,492 --> 00:43:35,672
+A'nın 2B'ye, C'nin 3D'ye eşit olduğunu.
+
+228
+00:43:35,851 --> 00:43:47,592
+A yerine 2B, C yerine de 3D yazarsam, ben bunu, bu V vektörünü B ve D cinsinden yazabilirim.
+
+229
+00:43:47,592 --> 00:43:55,872
+Yani B'yi dışarıya atarsak 2, 1, 0, 0, D'yi dışarıya atarsam 0, 0.
+
+230
+00:43:56,211 --> 00:44:09,491
+3, 1. Yani V eşittir, C1, B1, artı C2, V2 biçiminde ifade edebildim ben bunu. Öyle değil mi? Bu gerildi.
+
+231
+00:44:09,491 --> 00:44:15,731
+Şimdi taban olabilmesi için ne olması lazım? Birinci olarak ya gelecek,
+
+232
+00:44:16,403 --> 00:44:26,224
+Lineer bağımsız geriliyorsa, lineer bağımsızdır ya da lineer bağımsızlığına bakıyorduk, lineer bağımsızsa geriyordur diyorduk, tabandır diyorduk.
+
+233
+00:44:26,224 --> 00:44:30,188
+Şimdi bu V vektörünü...
+
+234
+00:44:30,867 --> 00:44:44,568
+Ben V1 ve V2 vektörleri cinsinden ifade edebildiğim için bu nedir? Bir tabandır. Tamam mı? V1 ve V2 vektörleri bir tabandır.
+
+235
+00:44:45,228 --> 00:44:52,268
+Tabanda kaç tane vektör var? İki tane vektör olduğu için bunun boyutu 2'dir diyoruz.
+
+236
+00:44:54,688 --> 00:44:55,688
+Anlaşıldı mı?
+
+237
+00:45:04,532 --> 00:45:05,632
+Anlaşıldı hocam.
+
+238
+00:45:07,152 --> 00:45:09,452
+Şimdi bu örneğe bakalım.
+
+239
+00:45:11,452 --> 00:45:12,492
+Bu örneğe bakalım.
+
+240
+00:45:13,252 --> 00:45:18,092
+Bu örnekte ise, bu örnekte ise, ne diyor?
+
+241
+00:45:18,612 --> 00:45:24,492
+A ile B'nin toplamı 20, C ile D'nin toplamı 30 olacak.
+
+242
+00:45:24,927 --> 00:45:51,887
+Şimdi ya bunu örnekle gösteririz ya da ispatla, şimdi ispatla göstereyim ben bunu. İki tane eleman aldım bu kümeden. Bu kümenin elemanı olma şartı neydi? A1, B1'in toplamı 20, C1, D1'in toplamı 30. Toplamaya göre kapalı mı ona bakacağım. Bu ikisini topladığımda gene bu kümenin elemanı olması lazım.
+
+243
+00:45:52,307 --> 00:46:11,827
+Kapalılık şartı o. Şimdi bu elemanları topladık. A1, A2, B1, B2, C1, C2, D1, D2. B'nin elemanı mı diyoruz? Elemanı olması için ne olması lazım? Bununla bunun toplamı 20'ye eşit olması lazım. 20'ye eşit mi?
+
+244
+00:46:19,059 --> 00:46:32,780
+Bu 20 idi. Bu da 20 idi. 20 ile 20'nin toplamı 40'tır. 20'ye eşit değildir. Dolayısıyla ne değildir? Bu kümenin elemanı değildir. Alt uzay değildir diyoruz. Tamam mı?
+
+245
+00:46:34,860 --> 00:46:45,720
+Ya da bu şartı sağlamayan bir tane örnekle de bunu gösterebilirdik. Mesela ne diyor burada? A artı B 20, C artı D 30 edecek.
+
+246
+00:46:46,063 --> 00:47:00,983
+10, 10, 20 yapıyor, 15, 15, 30 yapıyor. Bir tane başka bir örnek, 5, 15, 20, 0, 30, 30 yapıyor toplamı. Bu ikisi V'nin elemanı.
+
+247
+00:47:00,983 --> 00:47:08,503
+Şimdi bunu topladığımız zaman ne olacaktır? 15, 25, 15, 45.
+
+248
+00:47:09,204 --> 00:47:32,964
+Bu ikisinin toplamının 20 olması lazım. Topladığım zaman 40 yaptı, 20'ye eşit değil. Bunu topladığımda nedir? 60'tır. Bu da 30'a eşit değil. Dolayısıyla bu V'nin elemanı olmadı. Toplamaya göre kapalılık olmadı. Tamam? Anlaşıldı mı?
+
+249
+00:47:35,404 --> 00:47:36,444
+Evet hocam.
+
+250
+00:47:41,556 --> 00:47:43,896
+Şimdi başka bir soru.
+
+251
+00:47:44,996 --> 00:47:50,856
+Diyor ki, aşağıda verilen vektör uzayındaki alt kümelerin alt uzay olup olmadığını belirleyin.
+
+252
+00:47:50,956 --> 00:47:55,376
+Eğer alt uzay ise birer tabanını bulup boyutunu belirtin diyor.
+
+253
+00:47:56,836 --> 00:47:58,135
+Şimdi şuna bakalım.
+
+254
+00:48:00,276 --> 00:48:04,976
+Böyle 2x2 tipinden bir matris.
+
+255
+00:48:05,748 --> 00:48:11,728
+A ile D'nin çarpımı sıfır, B ile C'nin çarpımı ise sıfır diyor.
+
+256
+00:48:13,088 --> 00:48:15,088
+A, B, C, D'ler real sayı.
+
+257
+00:48:15,528 --> 00:48:16,368
+Şimdi buna bakalım.
+
+258
+00:48:16,988 --> 00:48:26,628
+Şimdi bunu gene örnekle gösterecek olursak, A ile D'nin çarpımı sıfır, B ile C'nin çarpımı sıfır.
+
+259
+00:48:27,315 --> 00:48:49,915
+Buna bakalım, bir elemanım bu. A bu şartı sağlıyor, bu kümenin elemanı. B elemanı ise A ile D'nin çarpımı sıfır, B ile C'nin çarpımı gene sıfır oldu. Bu da bu kümenin elemanıdır. Peki bunları toplayalım. Bunları topladığım zaman arkadaşlar ne olacaktır bu ikisinin toplamı? Normal matris toplamı yapıyorum.
+
+260
+00:48:54,771 --> 00:49:18,771
+Bununla bunun çarpımının sıfır olması lazım. Çarptığım zaman sıfır değil, bir. Dolayısıyla ne değil? Bu t'nin elemanı olmadı. Toplamaya göre kapalı değil. Bu da bana neyi söylüyor? Alt uzay olmadığını söylüyor. T alt uzay değildir. Tamam? Alt uzay değildir.
+
+261
+00:49:23,027 --> 00:49:46,387
+Şu küme verilmiş. B eşit A artı C. A, B, C real sayı diyor. Tamam. Şimdi arkadaşlar, bu kümeden gene iki tane eleman alıyorum. A1, B1, C1, A2, B2, C2. Şart ne? B1, A1 artı C1'e, B2'de A2 artı C2'ye eşit olacak. Şart bu.
+
+262
+00:49:47,188 --> 00:50:00,028
+Şimdi ne yapıyorum? Burada toplama işlemi yapıyorum. Normal matris toplamı yaptık. A1 artı A2, B1 artı B2, C1 artı C2.
+
+263
+00:50:14,324 --> 00:50:15,324
+Toplamına.
+
+264
+00:50:16,903 --> 00:50:18,284
+Bunu kontrol edeceğim.
+
+265
+00:50:18,744 --> 00:50:20,384
+Ben B1 yerine ne yazarım?
+
+266
+00:50:20,584 --> 00:50:21,724
+A1 artı C1.
+
+267
+00:50:22,044 --> 00:50:24,324
+B2 yerine de A2 artı C2.
+
+268
+00:50:25,284 --> 00:50:26,943
+Eşittir diyoruz.
+
+269
+00:50:27,963 --> 00:50:28,744
+Eşittir.
+
+270
+00:50:29,264 --> 00:50:35,824
+A1 artı A2 artı C1 artı C2'ye eşit olduğunu göstermiş olduk.
+
+271
+00:50:37,139 --> 00:51:02,139
+Şuna bakalım, skalerle çarpma. Skalerle çarptığımda ne oldu? Ka1, Kb1, Kc1 oldu. Peki bu kümenin elemanı olma şartı ne? B1'in, yani Kb1'in, Ka1 ile Kc1'in toplamına eşit olması lazım. Eşit mi? Ona bakıyorum.
+
+272
+00:51:02,708 --> 00:51:14,728
+B1 neye eşitti? A1 artı C1'e eşitti. K ile de çarpacağız bunu. Bu buna eşittir. Göstermiş olduk.
+
+273
+00:51:17,076 --> 00:51:32,395
+B neye eşitti? A artı C'ye. B yerine götürüp A artı C yazarım. A, A artı C, C oldu. O zaman ben buradan A'yı ve C'yi dışarıya atarak şu V vektörünü ifade edebilirim.
+
+274
+00:51:32,395 --> 00:51:42,115
+A'yı dışarıya attığımda 1, 1, 0. C'yi dışarıya attığımda 0, 1, 1. Tamam. Buradan bu eşitlikten
+
+275
+00:51:42,675 --> 00:52:09,635
+Neyi elde ettim? Şöyle bir t kümesini elde ettim. Yani v eşittir, c1v1 artı c2v2 biçiminde ifade edilebiliyor. Dolayısıyla gerdiğini söyleyebilirim. Öyle değil mi? Geriyorsa zaten lineer bağımsızdır. Lineer bağımsızlığını da şöyle gösteririm. Bunlar skalerler. Şöyle aldık dışarıya.
+
+276
+00:52:10,675 --> 00:52:24,875
+A buradan topladığımda bunu, A sıfıra eşit, sonra şuradan toplayayım, burası sıfır, C sıfıra eşit, yani lineer bağımsızdır. Lineer bağımsızlığını da göstermiş olduk.
+
+277
+00:52:29,043 --> 00:52:43,163
+Şunlar tabanımı oluşturuyor. Burada vektör sayım nedir? Vektör sayım 2'dir. 2 olduğu için bunun boyutu da 2'dir diyorum. Anlaşıldı mı?
+
+278
+00:52:46,223 --> 00:52:47,583
+Anlaşıldı hocam.
+
+279
+00:52:49,204 --> 00:53:04,964
+Peki arkadaşlar, benim size anlatacaklarım bu kadar. Hepinize sınavda başarılar diliyorum. İnşallah hepiniz iyi notlar alırsınız. Kendinize dikkat edin. Sağlıklı günler diliyorum.
+
+280
+00:53:06,324 --> 00:53:07,443
+Çok teşekkürler hocam.
+
+281
+00:53:07,903 --> 00:53:08,664
+Ben teşekkür ederim.
+
+282
+00:53:08,664 --> 00:53:10,544
+Teşekkürler [öğrenci], iyi günler.
+
+283
+00:53:10,804 --> 00:53:11,224
+İyi günler.
+
+284
+00:53:11,224 --> 00:53:12,324
+Teşekkürler hocam.
+
+285
+00:53:12,788 --> 00:53:20,707
+Ben teşekkür ederim. Görüşmek üzere. Hoşçakalın arkadaşlar. Başarılar diliyorum. Hoşçakalın.
