@@ -1,0 +1,2103 @@
+1
+00:00:39,060 --> 00:00:39,980
+Merhaba arkadaşlar.
+
+2
+00:00:41,539 --> 00:00:42,179
+Merhaba hocam.
+
+3
+00:00:42,580 --> 00:00:43,760
+Beni duyabiliyor musunuz?
+
+4
+00:00:44,260 --> 00:00:45,020
+Merhaba hocam.
+
+5
+00:00:45,219 --> 00:00:45,340
+Evet.
+
+6
+00:00:45,340 --> 00:00:46,420
+Merhaba hocam.
+
+7
+00:00:47,520 --> 00:00:56,020
+Evet, şimdi bir dakika. Bugün grubumuza bir bakayım. Bir şeyi hemen açacağım. Pardon.
+
+8
+00:01:15,540 --> 00:01:18,219
+İzhan, iyi açım, yavak edersin.
+
+9
+00:01:24,819 --> 00:01:25,280
+Evet.
+
+10
+00:01:26,879 --> 00:01:27,519
+Tamam.
+
+11
+00:01:28,259 --> 00:01:31,879
+Bugün üç numaralı grubumuzla başlayabiliriz.
+
+12
+00:01:32,319 --> 00:01:33,539
+Burada mısınız arkadaşlar?
+
+13
+00:01:33,840 --> 00:01:34,799
+[öğrenci] ve [öğrenci].
+
+14
+00:01:38,019 --> 00:01:39,799
+Selamlar. Evet hocam, buradayız.
+
+15
+00:01:40,659 --> 00:01:42,120
+O zaman buyurun. Hadi bakalım.
+
+16
+00:01:42,840 --> 00:01:44,899
+Tamamdır. Önce kameramızı açalım.
+
+17
+00:01:48,115 --> 00:01:55,656
+Merhaba herkese. [öğrenci]'la yanımda biz aynı zamanda aynı ofiste çalışıyoruz. O da aynı bilgisayardan sunum yapacağız.
+
+18
+00:01:59,603 --> 00:02:01,364
+Şimdi de slediğim bir parla geçeceğim.
+
+19
+00:02:10,996 --> 00:02:11,884
+Evet.
+
+20
+00:02:35,604 --> 00:02:37,524
+Şu an ekranım geldi herhalde, başlıyorum.
+
+21
+00:02:39,384 --> 00:02:42,963
+Bizim konumuz genetik algoritma ile montaj atla dengeleme.
+
+22
+00:02:42,963 --> 00:02:46,963
+Bu çalışmada...
+
+23
+00:02:54,163 --> 00:03:04,403
+Bu çalışmada ben proje yöneticisi olarak çalışacağım. [öğrenci] arkadaşım da algoritma ve yazılım developer olarak çalışacak.
+
+24
+00:03:06,423 --> 00:03:15,483
+Çalışmanın hedefi, biz burada üretimde önemli bir yer tam montaj altı dengeleme problemini genetik algoritma ile çözülmesini hedefliyoruz.
+
+25
+00:03:17,939 --> 00:03:25,180
+Çalışma ortamı ve kavramlardan biraz bahsedeceğiz. Sonrasında da kendi çalışmamızda yapmayı hedeflediklerimizi göstereceğiz.
+
+26
+00:03:26,500 --> 00:03:28,779
+Öncelikle montaj hattı nedir diye başlayalım.
+
+27
+00:03:28,779 --> 00:03:30,779
+Montaj hattı...
+
+28
+00:03:31,860 --> 00:03:45,780
+Belli bir operasyonların gerçekleştiği, resimde de görüldüğü gibi sıralı işlemlerin gerçekleştiği bir bant üzerinde sıralı işlemlerin gerçekleştiği, iş gücü veya robotların kullanıldığı bir sistemler bütünü.
+
+29
+00:03:47,699 --> 00:04:06,179
+Montaj altları üretiminde kritik öneme sahiptir. Çünkü işlemlerin sıraları yapılması burada çok önemli. Bu yüzden bunları tasarlayan kişiler öncelikle sıralarını belirleyip onlara göre atamaları gerçekleştiriyorlar. Hangi kısımda hangi işin yapılması burada öncelik önemli.
+
+30
+00:04:08,692 --> 00:04:20,932
+Kurulumun amacında aslında burada minimum zamanda, kısa sürede maksimum verimli işi üretebilmek ve tabii ki bunun da maliyet optimizasyonu katkısını sağlamak.
+
+31
+00:04:20,932 --> 00:04:27,851
+Şekilde de yine görüldüğü gibi birkaç iş istasyonu olabiliyor. Hareketli bant üzerinde üretim gerçekleştiriliyor.
+
+32
+00:04:30,451 --> 00:04:42,552
+Burada montaj hattı dengelerken karşılaştığımız problemleri ikiye ayırabiliriz. Biri operasyonun süresine göre, biri de hattın yapısına göre ayırıyoruz. Operasyon süresine göre deterministik.
+
+33
+00:04:45,204 --> 00:04:59,663
+Stokastik ve bulanık şekilde üçe ayrılıyor. Sürelerine göre bilimsel adet hamiliste süreler belirli oluyor. Stokastikte olasılıklara göre değişebiliyor. Bulanıkta da yine değişken sürelere sahip.
+
+34
+00:05:00,043 --> 00:05:13,204
+Hattın yapısına göre de tek modelli, çok modelli ya da karışık modelli hat olabiliyor. Şekilde de görüldüğü gibi örneğin tek modelli de tek bir ürün üzerinde çalışılıyor. Çok modelli de aynı hat üzerinde yine...
+
+35
+00:05:13,204 --> 00:05:35,463
+Benzer ürünler işleniyor. Karmaşık hatlı modellerde de farklı ürünler işleniyor sırasıyla. Biz çalışmamızda tek modelli hat üzerinde gerçekleştirmeyi hedefliyoruz. Diğer bir hata da basit montaj hatta dengeleni olarak geçiyor.
+
+36
+00:05:36,596 --> 00:05:53,076
+Genetik algoritmaya da kısaca bahsedelim. Bunlar zor ve karmaşık modelleri, optimizasyon problemini çözmek için kullanıyoruz. Şekilde de bir simgelim yapılmış. Bunları doğradakinin en iyisinin hayatta kalma prensibiyle çözüyoruz.
+
+37
+00:05:54,899 --> 00:06:09,420
+Aşağıda da görüldüğü gibi bir temsili resim yapılmış. Bu şekilde genetik algoritmayı uygunluk fonksiyonuyla, çaprazlama ve mutasyon gibi ikiye ayırarak operatörlerle çözüm üretiyoruz.
+
+38
+00:06:18,483 --> 00:06:28,243
+Kromozomlar arası hatlar değişimi kullanılıyor. Mutasyonda da tek bilini değiştirerek çeşitliliği sağlanıyoruz.
+
+39
+00:06:29,643 --> 00:06:32,903
+Buradan itibaren [öğrenci] arkadaşıma denedebilirim.
+
+40
+00:06:34,643 --> 00:06:35,443
+Merhabalar.
+
+41
+00:06:36,663 --> 00:06:38,743
+Yere kalmadan devam edeceğim.
+
+42
+00:06:39,891 --> 00:07:02,831
+Burada kromozon yapısı zaten yani kodlarken iki farklı yapı var. Kromozonlar ve mutasyonlar. Kromozonlar normal evrimde olduğu gibi kodun içinde de mutasyona uğratılıp buradaki sıralama her defasında değiştirilip yani yeniden hesaplanıyor ve fit.
+
+43
+00:07:03,327 --> 00:07:08,927
+Hesap bulunduğu zaman, en iyi optimal sonuç bulunduğu zaman bu durduruluyor.
+
+44
+00:07:11,447 --> 00:07:14,907
+Literatürde bakarsak, basit montaj altına gelin çok eski bir problem.
+
+45
+00:07:15,147 --> 00:07:21,487
+Özellikle Operation Research alanında çalışılan bir iş.
+
+46
+00:07:21,939 --> 00:07:49,819
+Genetik algoritma ile de bu çözülmeye çalışılan, metastasizliksel algoritmalarla çözülmeye çalışılan çok eski bir problem endüstri devriminden sonra. Burada daha önce işte 92'de yapılan çalışmalar, 95'te, 2000 yıllarında çok daha teorik ve özellikle bu metastasizliksel algoritmaların daha hayatımızda çok olmadığı dönemlerde özellikle Operation Resource tarafında en küçükleme algoritmalarla çalışılmış projeler.
+
+47
+00:07:49,939 --> 00:08:14,139
+Genetik algoritmanın geçmişine bakarsak, o da 2000'li yıllardan sonra ortaya çıkmış bir evrimsel, metasezgisel bir algoritmadır. Burada biraz önce bahsettiğimiz gibi kromozom yapısı, çaprazlama, mutasyon, fitness değerleri gibi aslında temel evrim.
+
+48
+00:08:14,543 --> 00:08:21,043
+Kurallarını uygulayan, bir kod bütününden oluşan bir yapı var burada.
+
+49
+00:08:23,028 --> 00:08:33,587
+Üzerinde çalışacak problemin taramını böyle kısaca yaparsak, montaj atları farklı şekillerde U tipi, L tipi gibi olabiliyor.
+
+50
+00:08:33,587 --> 00:08:45,148
+Bir montaj atı örneği görüyorsunuz burada. Bu gördüğünüz montaj atının etrafında bir ürün farklı işçiler tarafından farklı parçaları montaj edilerek ilerletiliyor.
+
+51
+00:08:45,683 --> 00:09:05,043
+Burada örneğin işte işçiler var, konvoyör var. Konvoyör sürekli dönüyor örneğin. Ve bu konvoyörün etrafındaki işçiler montajı yapıyorlar. Burada yapılan işlerin süresi vesaire tutulup sürelerin bu modele, bu algoritmaya verilmesi gerekiyor.
+
+52
+00:09:06,707 --> 00:09:28,127
+Planlanan çalışmalar olarak problemin tek ürün için montajat dengeleme olarak tanımlamıştık daha önce. Üretim haftalık talebe göre ilerliyor senaryosu var burada. Amaç istasyonların işlere dağılımı ve işçilerin en verimli şekilde kullanılması ve zamanı minizmektedir.
+
+53
+00:09:29,187 --> 00:09:33,167
+Burada biraz önce dediğim gibi orada süreler çok önemli bunun için.
+
+54
+00:09:33,519 --> 00:09:43,279
+Bir işitleti çalışması yapmak gerekir. Her işçinin başında durup ortalama o parça montajının ne kadar sürede tamamladığı tutulur ve bu süreler not edilir.
+
+55
+00:09:45,539 --> 00:10:00,000
+Hattın çözümlenmesi ve yapılması planlanan çalışmalar. Burada öncelendirme, öncül durumu önemli. Çünkü bir iş bitmeden diğer işe geçemiyorsanız o iş bir sonraki işin öncül.
+
+56
+00:10:00,000 --> 00:10:22,080
+Öncülüdür. Birbirinden bağımsız işler olabileceği gibi birbirine bağımlı işler de olabilir. Bu yüzden de bir öncülük matrisi gibi bir matris, bir adi aramı gerekmekte. Burada göreceksiniz öncülük matrisini. Hangi işin diğer iş için öncülü olduğunu öncülük matrisiyle tanımlarız. Öncül numaralarını not ederiz.
+
+57
+00:10:22,515 --> 00:10:31,255
+Örneğin 21. işin 10 adet öncülüğü varsa, 21. iş yapılmaya başlamadan önce bu 10 adet işin tamamlanmış olması gerekir.
+
+58
+00:10:32,995 --> 00:10:44,295
+Burada genetik bir gösterimi var. Tanılaman program için, permutasyon, kodlama, hattın çözümlemesi, yapılması planlanan çalışmalardan biri de bu.
+
+59
+00:10:44,295 --> 00:10:45,956
+Yani aslında önce bir manuel.
+
+60
+00:10:46,355 --> 00:11:07,156
+sıralama. Kullanılacak araçlar bu bir yazılım ürüne dönüşeceği için ilk başta bir Python ile genetik algoritma kodlama yapılır. Montajat dengeleme işlerin bir permitasyon olarak temsil edildiği genetik algoritma kütüphaneleri ve fonksiyonları kullanılabilir. Genetik algoritma içinde seçim, çaprazlama, mutasyon.
+
+61
+00:11:07,796 --> 00:11:30,376
+uygulanır ve fitness değeri bulunduktan sonra buna bağlı istasyon değeri hesaplanabilir. Örneğin burada bu çalışmalar yapıldıktan sonra bir ön yüz gerekiyor müşteriler için ve bu ön yüzde de Cengo ile bir arayüz tasarım yapıp burada bir assembly line balancing
+
+62
+00:11:31,124 --> 00:11:44,944
+şeklinde bir arayüz yaratıp bu arayüzde fitness değerlerini hangi montaj hattında hangi kaç tane çalışması gerekiyor gibi ve parametrelerle oynayarak bu değerler üzerinde de oynayabiliyorsunuz.
+
+63
+00:11:45,064 --> 00:11:57,844
+Örneğin işte popülasyon sayısı, kromozom sayısı gibi teknik parametrelerle de oynayarak kendi montaj hattınıza göre burayı revize edebiliyorsunuz ve bu size bir sonuç veriyor.
+
+64
+00:11:59,124 --> 00:12:04,864
+hayatında hangi işçi, kaç tane işçi çalışacak, hangi iş ne kadar sürüyor,
+
+65
+00:12:05,183 --> 00:12:08,683
+ortalama süreler gibi değerler ortaya çıkacaktır.
+
+66
+00:12:09,587 --> 00:12:16,748
+Kaynakça burada var. Burada işte farklı yerlerden faydalandık.
+
+67
+00:12:16,748 --> 00:12:27,347
+İşte Django'dan, Python'dan ve Dergi Park'taki montaj atı dengeli makalelerinden, genetik algoritma makalelerinden.
+
+68
+00:12:29,668 --> 00:12:32,927
+[öğrenci] ve ben hazırladık. Dinlediğiniz için teşekkür ederiz.
+
+69
+00:12:33,728 --> 00:12:35,427
+Sorularınız varsa atabiliriz.
+
+70
+00:12:41,076 --> 00:12:42,456
+Teşekkürler arkadaşlar.
+
+71
+00:12:43,755 --> 00:12:49,415
+Şimdi biraz hızlı bir gruba geçelim biraz.
+
+72
+00:12:50,836 --> 00:12:51,696
+Ses duyar mı?
+
+73
+00:12:54,415 --> 00:12:56,295
+Efendim, ilk deniz duyuyor.
+
+74
+00:12:56,375 --> 00:12:58,135
+Hocam, sesimiz duyulmuyor hiç.
+
+75
+00:13:01,779 --> 00:13:05,460
+San duyuyorum. Bak, olacak bir şey var mı? Yok.
+
+76
+00:13:06,759 --> 00:13:07,799
+Duyuyor musunuz?
+
+77
+00:13:07,799 --> 00:13:09,179
+Şu an iyi, şu an geliyor hocam.
+
+78
+00:13:09,539 --> 00:13:13,240
+Tamam, bir sonraki gruba geçiyoruz. Tahmin edeceğiniz üzere.
+
+79
+00:13:13,840 --> 00:13:15,720
+Tamamdır, buradan teşekkürler.
+
+80
+00:13:16,460 --> 00:13:27,624
+Teşekkürler.
+
+81
+00:13:31,251 --> 00:13:44,371
+Merhabalar, sesim geliyor sanırım. Evet, geliyor. Benim de geliyor sanırım. [öğrenci] ve [öğrenci] değil mi? Evet, [öğrenci] ve [öğrenci] hocam. Geliyor mu sesimizde, görüntümüzde bir problemimiz yok herhalde. Başlıyoruz.
+
+82
+00:13:46,511 --> 00:13:55,451
+Merhabalar, öncelikle ekip olarak kendimizi tanıtalım. Ben [öğrenci]. [kişisel bilgi]
+
+83
+00:13:55,807 --> 00:14:06,228
+[kişisel bilgi] Sözü ekip arkadaşım [öğrenci]'e bırakıyorum.
+
+84
+00:14:07,303 --> 00:14:23,903
+Merhabalar, ben [öğrenci]. [kişisel bilgi]
+
+85
+00:14:25,123 --> 00:14:34,583
+Bugün de aslında projemizin detaylarını sizlerle paylaşacağız. Öncelikle biz probleminizden başlamak istiyoruz. Nasıl bir problemi?
+
+86
+00:14:34,644 --> 00:14:38,823
+Aslında keşfettik, öncüllendirdik.
+
+87
+00:14:38,943 --> 00:14:42,623
+Buna uygun olarak da çözüm sürecimizi ve detayları paylaşıyor olacağız.
+
+88
+00:14:43,483 --> 00:14:49,144
+Bizim problemimizde aslında dört ana odaklandığımız süreci sizinle paylaşacağız.
+
+89
+00:14:49,283 --> 00:14:53,883
+Öncelikle 0-4 yaş arası çocuk sahibi ebeveynler bizim odak noktamız.
+
+90
+00:14:54,343 --> 00:14:58,963
+Ve onların yaşadığı bazı sıkıntılara yönelik bir aslında çözüm sürecimiz olacak.
+
+91
+00:14:58,963 --> 00:15:02,644
+Özellikle ilk yıllarda ebeveynler belki çevrenizden...
+
+92
+00:15:02,644 --> 00:15:06,723
+Veya direkt birebir de kendiniz de tanıklık etmiş olabilirsiniz.
+
+93
+00:15:07,264 --> 00:15:14,463
+İlk yıllarda çok fazla bilgi kirliliğine, çocuk yetiştirmeye bağlı olarak kriz anlarında yalnız kalma sürecinde maruz kalıyorlar.
+
+94
+00:15:14,463 --> 00:15:20,024
+Nasıl davranacaklarını bilmiyorlar ve bir kişisalleştirilmiş rehberlik eksikliği de yaşıyorlar.
+
+95
+00:15:21,123 --> 00:15:30,644
+Mevcut çözümler ya çok genel bilgiler sunuyor ya da çok yüksek maliyetli uzman görüşleri gerektiriyor ve bu her an 7-24 ulaşılabilir.
+
+96
+00:15:30,644 --> 00:15:42,303
+Bu noktada bizim temel problemimizi özellikle olursak da, ebeveynler böyle tam ihtiyaç duydukları anda güvenilir ve kişiye özel yönlendirmeye açıkçası ulaşamıyorlar.
+
+97
+00:15:42,903 --> 00:15:46,163
+Biz de bu noktada aslında süreci geliştirme kararı aldık.
+
+98
+00:15:46,543 --> 00:15:52,843
+Buna uygun olarak da çözümümüze ait detayları da ekip arkadaşımız [öğrenci] sizlerle paylaşıyor olacak.
+
+99
+00:15:54,772 --> 00:16:10,132
+[öğrenci]'in aktardığı problemlere karşı aslında geliştirdiğimiz çözüm uygulamamız Pedagomate. Pedagomate 0-4 yaş ebeveynleri için tasarladığımız yapay zeka destekli mobil tabanlı bir karar destek sistemi. Aslında bir mobil asistan.
+
+100
+00:16:10,712 --> 00:16:19,112
+Burada ebeveynler uygulama üzerinden çocuğun günlük davranışlarını, kriz anlı notlarını, kendi duygu durumlarını doğal bir dille sisteme giriyor olacak.
+
+101
+00:16:19,668 --> 00:16:25,708
+Diğer uygulamalardan burada farklı olarak biz sadece veri takibi yapmayacağız.
+
+102
+00:16:25,868 --> 00:16:37,948
+Ebeveynin girdiği veri analizlerine göre verilerin analiz edilerek kriz yönetimi için yaşa ve duruma uygun bir şekilde aktivite önerileri sunuluyor olacak uygulama üzerinden.
+
+103
+00:16:38,588 --> 00:16:42,828
+Yani aslında ebeveynlerin cebinde çalışan sanal bir pedagog gibi konumlanacağız.
+
+104
+00:16:43,108 --> 00:16:47,628
+Burada değer önerisi olarak sloganımız veri değil çözüm sunuyoruz.
+
+105
+00:16:47,668 --> 00:16:49,308
+Bakış açısıyla ilerliyoruz.
+
+106
+00:16:50,788 --> 00:16:54,868
+Yaşanan, hepimizin de bilgisi dahilindedir.
+
+107
+00:16:55,408 --> 00:17:08,188
+Örnek verecek olursak, mesela bebeğim uyumuyor yazan bir anneye, bebeğin gelişim haftasına ve annenin stres seviyesine uygun, uygulanabilir bir uyku stresi öneriyor olacak.
+
+108
+00:17:08,188 --> 00:17:15,668
+Başka örnek vermemiz gerekirse, örneğin çocuğum her şey ağlayarak tepki veriyor, hiçbir şey yemek istemiyor.
+
+109
+00:17:15,667 --> 00:17:31,188
+Tableti elinden alınca kriz çıkarıyor gibi yeme problemi, ekran kullanımı, davranış krizi gibi anlarda aslında uygulamamız ebeveynin stres seviyesine uygun, sakinleştirici, uygulanabilir önerileri sunuyor olacak.
+
+110
+00:17:32,248 --> 00:17:35,467
+Teknolojimiz ve yenilikçi yönümüz için sözü aleve bırakıyorum.
+
+111
+00:17:37,503 --> 00:17:48,963
+Teknoloji ve yenilikçi yönümüz kısmında aslında pedagogate uygulamasının yenilikçi yönünü kullandığımız teknolojilerle birlikte getiriyoruz diyebiliriz.
+
+112
+00:17:49,623 --> 00:17:57,023
+Öncelikle biz doğal dil işleme, NLP ile ebeveynin serbest metin girdilerini analiz etmeyi amaçlıyoruz.
+
+113
+00:17:57,023 --> 00:18:05,503
+İşte örneğin [öğrenci]'de söylediği gibi, çocuğum ağlıyor ve şu an ne yapacağımı bilmiyorum gibi böyle basit cümleler veya işte.
+
+114
+00:18:05,503 --> 00:18:15,063
+İşte o andaki karmaşayı ifade eden cümlelerde zamanla metin girdilerini analiz ederek aslında onlara destek olmayı amaçlıyoruz.
+
+115
+00:18:15,603 --> 00:18:18,503
+Duygu analizi de bu işin her aşamasında önemli oluyor.
+
+116
+00:18:18,503 --> 00:18:30,344
+Özellikle ebeveynler sıkıştıkları noktalarda, stres seviyeleri arttığı kısımlarda nasıl davranacaklarını bilmedikleri için onlara tona göre aslında öneriler sunuyor olacağız.
+
+117
+00:18:30,703 --> 00:18:33,304
+Bunun için bir çalışma gerçekleştiriyor olacağız.
+
+118
+00:18:33,503 --> 00:18:36,844
+Dolayısıyla duygu analizi metinlerden yine önemli bir süreç oluyor olacak.
+
+119
+00:18:37,364 --> 00:18:42,344
+Makine öğrenmesi yine süreç içerisinde bizim önceliklendirdiğimiz bir teknoloji süreci olacak.
+
+120
+00:18:42,344 --> 00:18:56,003
+Bu da aslında sistemin zamanla öğrenmesi, öğrendikçe de kişiselleştirmeyi aslında arttırması, hem ebeveyni tanıması hem de çocuğun gelişimini birebir olarak takip etmesi önemli bir süreç oluyor olacak.
+
+121
+00:18:56,183 --> 00:19:01,503
+Yine bütünsel anlamda diğer ebeveynlerle birlikte karşılaştırmalı olarak da veri sağlayacak.
+
+122
+00:19:01,503 --> 00:19:27,083
+Teknik olarak yine backend tarafında Python'la ilerlemeyi amaçlıyoruz. Mobile uygulamanın yazımında da yine Flutter üzerinden devam ediyor olacağız. Alt tip tarafında bulut tabanlı sistemler tabii ki bizim sürecimiz olacak. Hem daha maliyeti düşürme açısından hem her yerden ulaşılabilir ve aslında tehlikeyi en aza indirecek bir veri sistemi algoritmasını düşündüğümüz için bu yüzden bu sebeple ilerliyor olacağız.
+
+123
+00:19:29,503 --> 00:19:42,243
+Kamera, sensör gibi mahremiyet riski taşıyan teknolojiler kullanmadan yalnızca ebeveynin girdisine dayalı etik ve açıklanabilir bir yapay zeka modeli kurmayı amaçlıyoruz.
+
+124
+00:19:42,823 --> 00:19:46,003
+Bu şekilde teknoloji ve sürecimizden bahsedebilirim.
+
+125
+00:19:48,372 --> 00:20:04,471
+Pazar analizinde de hedef kitlemize baktığımızda Türkiye'de 0-4 yaş aralığında çocuğu olan ebeveynler ya da o 0-4 yaş skalası içerisinde aslında herhangi bir çocuğa bakmakla yükümlülüğü altında olan kişileri hedef kitle olarak görebiliriz.
+
+126
+00:20:05,332 --> 00:20:15,172
+Burada pazar büyüklüğümüz 5 milyonun üzerinde hedef bir çocuk nüfusumuz var ve burada yıllık 950 binin üzerinde yeni müşteri adayımız da pazara giriyor.
+
+127
+00:20:15,700 --> 00:20:38,580
+Müşteri profilimiz dijital okur yazarlığı yüksek ilk kez anne baba olan 7-24 erişilebilirlik arayan Y ve Z kuşağını gösterebiliriz. Burada genç ebeveynlerin %90'ın üzerinde mobil uygulama kullanıyor olması, mobil uygulama çözümünün onların destekliyor olması bizim pazardaki uyumumuzu da güçlendiriyor oluyor.
+
+128
+00:20:44,307 --> 00:21:01,288
+Rekabet kısmına geldiğimiz noktada aslında pazardaki temel rakiplerimiz Huckleberry gibi global veri takip uygulamaları çocuğa yönelik ve yine Kidolog gibi yerel canlı uzman platformları.
+
+129
+00:21:01,288 --> 00:21:11,887
+Bunları aslında Kemble gibi düşünebilirsiniz. Direkt birebir canlı seanslar halinde destek oluyorlar. Ancak bu rekabetteki üstünlüğümüz bizim için net bir çizgide.
+
+130
+00:21:12,307 --> 00:21:20,768
+Rakipler sadece veri takibi yapıyorlar ve bunu öndeliklendiriyorlar ama biz kriz anında anlık çözüm ve yönlendirme hizmeti sunmayı amaçlıyoruz.
+
+131
+00:21:20,768 --> 00:21:26,807
+Yine erişimde randevu, bekleme süresi varken biz 7-24 bunu gerçekleştirmeyi amaçlıyoruz.
+
+132
+00:21:26,967 --> 00:21:39,768
+Çünkü özellikle çalışan anne, babalar, ebeveynler vs. sabahleyin onları bir kreşe vs. götürürken zorlanmalar, o anda direkt seans oluşturamazsınız veya...
+
+133
+00:21:40,307 --> 00:21:49,127
+Direkt birileri takip uygulamasının o sürecini takip edemeyebilirsiniz. Direkt işe yarayan öncelikli aslında amaçları hedefliyor olacağız.
+
+134
+00:21:49,127 --> 00:21:51,747
+Ya da işte gece uyumuyor.
+
+135
+00:21:52,144 --> 00:22:00,104
+O noktada da yine seans süresi vs. bunları randevu bekleme süresini gerçekleştiremiyor olacağız. Hem fiziksel anlamda hem online olarak.
+
+136
+00:22:01,364 --> 00:22:11,423
+Tabii bunlarla birlikte maliyette dolar bazlı yüksek fiyatlar veya seans ücretleri aslında diğer rakiplerimizden ayırt edilen noktamız oluyor.
+
+137
+00:22:11,563 --> 00:22:18,583
+Bizim amacımız her bütçeye uygun ulaşılabilir fremium bir abonelik modeli hizmeti sunmak olacak.
+
+138
+00:22:22,195 --> 00:22:50,195
+İç modeli ve gelirde ise Pedagomate Software as a Service yani hizmet olarak yazılım modeliyle çalışıyor olacak. Uygulamamız Alevinde dediği gibi fremium yapıda olacak. Yani temel özellikleri tüm ebeveynler için ücretsiz olacak ama tercih olarak sunulacak olan kısımda çocuğun gelişimi gibi işte bilgiye erişimin farklı özellikleri isteyen kişilere de o kısımları kişiselleştirilmiş analizler ve gelişimler.
+
+139
+00:22:50,195 --> 00:22:58,495
+Gelişmiş Koçluk desteğiyle birlikte sunuyor olacağız. Burada gelir modelimiz aylık ve yıllık premium abonelikler üzerine kurulu olacak.
+
+140
+00:22:58,943 --> 00:23:11,563
+Stratejik olarak kullanıcıyı zorlayan bir yapı yerine temel desteği ücretsiz ama daha kapsamlı kişiselleştirilmiş detayları isteyenler için ücretli olacak bir şekilde ilerlemeyi planlıyoruz.
+
+141
+00:23:12,263 --> 00:23:26,943
+Hedeflerimiz de gelecek olacak isek, burada birinci yılda MVP geliştirme ve pilot kullanıcılarla birlikte doğrulama aşamamız olacak. İkinci yıl ve takip eden üçüncü yılla birlikte kullanıcı ve abone sayımızın sürdürülebilir bir...
+
+142
+00:23:26,943 --> 00:23:36,223
+Bir büyüme göstermesini hedefliyoruz. Dördüncü yılda ise MENA bölgesine, Orta Doğu'ya açılarak globalleşmeyi hedefliyoruz.
+
+143
+00:23:36,663 --> 00:23:42,763
+Burada tabii büyümemizi hızlandırmak için Instagram ve TikTok gibi sosyal uygulamaları kullanarak,
+
+144
+00:23:43,263 --> 00:23:52,023
+prodüksiyon maliyetinin düşük olduğunu da düşünerek, bir an mini içeriklerle birlikte rehberler paylaşmayı planlıyoruz.
+
+145
+00:23:54,943 --> 00:23:59,943
+Büyüme stratejilerimizden birisi de online eğitim platformları ve bebek ürün markaları.
+
+146
+00:24:00,123 --> 00:24:08,283
+Ama bunlar daha sonraki yıllarda gelişmemize göre karar vereceğimiz hedeflerimiz doğrultusunda düşündüğümüz detaylar.
+
+147
+00:24:10,259 --> 00:24:35,279
+Proje takvimimize gelecek olursak, biz 12 aylık bir periyodu aslında ilk aşamada projelendirdik. Bu süreçte 5 ana iş paketini aslında netleştirmiş olduk. Bunlardan ilki, ilk iki ayı kapsayacak şekilde analiz gereksinim ve literatür taramasını aslında hedefliyor olacağız. Burada etiketli verinin de oluşturulması amaçlanıyor olacak.
+
+148
+00:24:38,259 --> 00:24:45,759
+Başlıyor olacak iş paketi 2 olarak düşünebiliriz ama eşlenik olarak iş paketi 3'ünde başka bir kulvarda başlatıyor olacağız.
+
+149
+00:24:45,759 --> 00:24:56,000
+Eşlenik gidiyor olacak o süreç. İş paketi 2'ye bakacak olursak doğal dil işleme, NLP altyapısının kurulması ve derin öğrenme modelinin eğitimine odaklanıyor olacağız.
+
+150
+00:24:56,359 --> 00:25:03,839
+Bu 5 aylık bir periyot olacak. Aynı zamanda eşlenik yürüyen iş paketi 3 ise Flutter ile mobil uygulamanın geliştirilmesi.
+
+151
+00:25:06,259 --> 00:25:23,619
+Bulut tabanlı sistemin kurgulanması. Bu da 7 aylık bir sürece tekabül ediyor olacak. İş paketi 4'e gelecek olursak da aslında son 3 aylık periyoda gelmiş olacağız ve 2 ayında, bu sürecin 2 ayında da entegrasyon çalışmaları gerçekleşiyor olacak.
+
+152
+00:25:24,039 --> 00:25:34,259
+İlk aşamada 50 kişilik bir ebeveyn pilot grubu ama idealde hedeflediğimiz 100 kişilik bir ebeveyn grubu.
+
+153
+00:25:34,259 --> 00:25:44,720
+Bunu hedefliyor olacağız. Bunlarla birlikte beta testlerini, sağ testlerini gerçekleştiriyor olacağız. Ardından kullanıcı kabul testleriyle aslında bu süreci sonuçlandırmayı amaçlıyoruz.
+
+154
+00:25:44,879 --> 00:25:55,740
+Ve son bir aylık periyotta aslında final raporlama sürecini gerçekleştiriyor olacağız. Hem de ticarileşme hazırlığını da aslında buradaki süreçte birlikte gerçekleştirmeyi hedefliyoruz.
+
+155
+00:25:56,379 --> 00:26:02,259
+Başarı kriterlerimiz burada proje takviminde bizim için önemli bir keyif oluyor olacak. Bu projemiz...
+
+156
+00:26:02,259 --> 00:26:20,519
+Bizim başarılı olması için somut teknik hedefler belirledik. Bunlar işte geliştirdiğimiz NLP modelinin duygu durumu ve kriz tespitinde yüzde seksen beş üzeri doğruluk başarısına ulaşmasını hedefliyoruz. Yine pilot testlerin en az elli.
+
+157
+00:26:20,692 --> 00:26:41,311
+Hedeflenen de yine 100 aktif ebeveynlerinden tamamlanması, onunla birlikte tamamlanması hedefimiz. Yine sistemin ürettiği önerilerin pedagolojik anlamdaki uygunluğu, uzman görüşü ile meçleşmesi de %95 oranında onaylı olması beklentimiz olacaktır.
+
+158
+00:26:45,203 --> 00:27:05,743
+Bir yıllık proje süresince iki kurucu ortak olarak [öğrenci]'le birlikte çalışacağız. Yıl sonunda 150 bin TL üzerinden premium abone gelirimiz olacağını düşünüyoruz. Bununla birlikte talep ettiğimiz destekle, totalde 900 bin TL ile bütçemizi şu şekilde dağıttık.
+
+159
+00:27:06,344 --> 00:27:12,064
+Personel kısmına 480 bin TL ayırdık. Bu bizim en büyük arge giderimiz oluyor.
+
+160
+00:27:35,700 --> 00:27:41,819
+büyüdüğümüz takdirde kendi kendine finanse eden bir yapı olacağını öngörüyoruz.
+
+161
+00:27:44,852 --> 00:27:58,492
+Ekip yetkinliklerine bakacak olursak [öğrenci], Endüstri Mühendisliği tarafındaki deneyimiyle birlikte proje yönetimi, teknik süreçler ve finansal planlama kısmında aslında yer alıyor olacak.
+
+162
+00:27:58,492 --> 00:28:12,772
+Ben de sosyoloji ve iş analizi know-how'larını birleştirerek kullanıcı deneyimi, UIUX sürecinde, pedagojik içeriklerin doğrulanması sürecinde ve pazar araştırması sürecinde yer alıyor olacağımda.
+
+163
+00:28:12,852 --> 00:28:25,552
+Daha çok bizim buradaki disiplinler arası bakış açımımızın geniş olması aslında bununla birlikte bizim projemizde hem etik ilkelilere önem vermemizin sürecini tamamlıyor olacak.
+
+164
+00:28:25,752 --> 00:28:32,592
+Hem tüm veriler anonimleştirilmiş, ebeveynlerden açık rızalılar alınacak şekilde tasarlanmış olacak.
+
+165
+00:28:33,212 --> 00:28:40,592
+Proje ekibi hem sosyoloji hem endüstri mühendisliği disiplinlerinden geldiği için araştırma yöntemlerinde disiplinler arası bir...
+
+166
+00:28:40,852 --> 00:28:48,072
+Yaklaşımı aslında sağlıyor olmuş olacağız. Bu şekilde kapanış için leşeye sözü bırakabilirim.
+
+167
+00:28:49,364 --> 00:29:01,284
+Çocuk verisi hassas ve günümüzde de veriler çok dikkate alındığı için KVKK ve bilimsel etik kurallarına uygun bir şekilde ilerlemek temel önceliğimiz. Bunu da belirtelim.
+
+168
+00:29:01,943 --> 00:29:15,584
+Özetle pedagomet, bilimsel temelli, etik ülkelere duyarlı, yapay zekayı, insan odaklığı kullanan bir ebeveyn destek sistemi dijital asistan olarak telefonlarda mobil uygulama şeklinde oluyor olacak.
+
+169
+00:29:15,584 --> 00:29:17,364
+Bizleri dinlediğiniz için teşekkür ederim.
+
+170
+00:29:17,364 --> 00:29:20,304
+Teşekkür ederiz. Sorularınız varsa alabiliriz.
+
+171
+00:29:26,740 --> 00:29:40,859
+Teşekkürler arkadaşlar, elinize sağlık. Belli açılardan çok güzeldi, öyle söyleyeyim. Kafama takılan bir iki tane bir şey var ama şu an girmeyeceğim, sonra bir ara konuşuruz.
+
+172
+00:29:41,859 --> 00:29:50,400
+Bunu aslında biraz daha derleyip, toparlayıp, gerçek anlamda bir başvuru haline getirmenizin önünde de çok büyük bir engel yok bence.
+
+173
+00:29:50,963 --> 00:30:14,864
+Öyle söyleyeyim. Bilmiyorum düşünüyorsanız. Ama sadece bir iki detayı öyle bir şey değilseniz konuşmakta fayda var diye düşünüyorum. Hiçbir arkadaşın sorusu yok galiba mı? Peki o zaman teşekkürler diyorum. 9 numaralı gruba geçelim. [öğrenci] ve [öğrenci] burada mısınız arkadaşlar?
+
+174
+00:30:14,864 --> 00:30:16,463
+Evet merhaba hocam.
+
+175
+00:30:16,923 --> 00:30:17,624
+Merhabalar.
+
+176
+00:30:19,124 --> 00:30:21,084
+Evet, buyurun sizdeyiz.
+
+177
+00:30:21,384 --> 00:30:22,523
+Ekran paylaşayım.
+
+178
+00:30:25,364 --> 00:30:27,303
+Görüntülerinizi de bizle paylaşın lütfen.
+
+179
+00:30:27,703 --> 00:30:29,144
+Hemen açıyorum kameramı da.
+
+180
+00:30:29,624 --> 00:30:30,144
+Çok pardon.
+
+181
+00:30:36,948 --> 00:30:49,827
+Evet, görüntüm, görüntüm, ekran paylaşınca şey de gitti, kamerayı bir dakika, evet, geldi. Gelmiş olması lazım şimdi.
+
+182
+00:30:50,768 --> 00:30:51,067
+Evet.
+
+183
+00:30:51,067 --> 00:30:53,488
+Evet, görüntüm geldi.
+
+184
+00:30:54,528 --> 00:30:55,528
+Buyurun, dinlendiriyoruz.
+
+185
+00:31:02,067 --> 00:31:16,847
+Herkese merhaba, hoş geldiniz. Ben [öğrenci]. Bugün burada projemizdeki çalışma arkadaşım [öğrenci] ile birlikte TÜBİTAK 1512 girişimcilik destek programı kapsamında hayata geçirme planladığımız projemizi tanıtıyor olacağız.
+
+186
+00:31:18,027 --> 00:31:22,527
+Girişi ve proje ile ilgili bazı detayları paylaştıktan sonra sözü arkadaşıma bırakacağım.
+
+187
+00:31:23,867 --> 00:31:27,667
+Projemizin adı Enerji Adaptif Mikroveri Merkezi Yönetim Sistemi.
+
+188
+00:31:28,307 --> 00:31:44,387
+Öncelikle mikroveri merkezi nedir? Bir cümle ile ifade etmem gerekirse, geleneksel büyük veri merkezlerinin bileşenlerini ki bunlara UPS, PDU gibi güç sistemleri, switcher, router gibi ağ ekipmanları, depolama ekipmanları, sunucular gibi örnekler verebiliriz.
+
+189
+00:31:44,928 --> 00:31:53,488
+Bu bileşenleri tek bir kabin veya birden fazla kabin ile küçük bir alanda bir araya getirmeye yarayan yapılara mikroveri merkezi deniyor.
+
+190
+00:31:54,132 --> 00:31:56,792
+Peki hangi temel sebeplerle tercih ediliyorlar?
+
+191
+00:31:57,232 --> 00:32:02,512
+Milisaniyelik gecikmelerin dahi önemli olduğu uygulamalarda daha düşük gecikme gerekliliği gibi.
+
+192
+00:32:03,152 --> 00:32:14,532
+Başlangıçta modülerlik ve ölçeklenebilirlik bakımından çok büyük bir yatırım gerektirmemesi ve hızlı kurulum sağlanabilmesi gibi sebeplerle mikroveri merkezleri tercih edilebiliyor diyebiliriz.
+
+193
+00:32:15,312 --> 00:32:19,892
+Telekombinasyon altyapılarında, COBİ'lerde, bankalar gibi finans kuruluşlarında.
+
+194
+00:32:20,435 --> 00:32:26,395
+Sağlık kuruluşlarında, hastanelerde, eğitim kuruluşlarında tercih edilip kullanılıyorlar.
+
+195
+00:32:26,695 --> 00:32:31,875
+Ve bizim de bu projede hedef kitlemizi, hedef pazarımızı bu kuruluşlar oluşturuyor diyebiliriz.
+
+196
+00:32:35,763 --> 00:32:53,223
+Enerji Adaptif Mikro Verim Merkezi Yönetim Sistemi yani kısaca EMDC nedir diye soracak olursak, küçük ve orta ölçekli verim merkezlerinin enerji tüketimini çevresel koşullara ve sistem yüküne göre otomatik olarak optimize eden akıllı bir kontrol sistemi diyebiliriz.
+
+197
+00:33:03,763 --> 00:33:20,403
+İlkemlerinin enerji kullanımını dinamik olarak ayarlayan aksiyonlar üretiyor. Bu noktada biz enerji verimliliğini arttırıp enerji israfının önüne geçmek ve doğru orantı olarak da karbonhaya kızını azaltmak maksadıyla EMDC projemizi hayata geçirmeyi hedefliyoruz.
+
+198
+00:33:25,748 --> 00:33:35,528
+Projemizde toplanan verilerin değerlendirilip en uygun aksiyonun alınması noktasında makine öğrenmesi yöntemlerinden reinforcement learning yöntemini kullanacağız.
+
+199
+00:33:36,228 --> 00:33:45,107
+Sensörler tarafından algılıp toplanan veriler reinforcement learning ajanı tarafından analiz edilip en verimli senaryo belirlendikten sonra aksiyon alınıyor.
+
+200
+00:33:45,807 --> 00:33:52,347
+Alınan aksiyonlar, edilen tasarruf ve sistemin durumu gibi bilgiler yönetim panelinde kullanıcılarla paylaşılabiliyor.
+
+201
+00:33:53,748 --> 00:34:02,107
+Reinforcement Learning yönetiminin EMDC projesindeki çalışma prensibi bir öğrenme döngüsü üzerinde şekilleniyor diyebiliriz.
+
+202
+00:34:02,847 --> 00:34:16,327
+RL ajanımız bazen yeni stratejiler deneyerek Exploration ile daha iyi çözümler ararken bazen de öğrendiği en yeni stratejileri Exploitation uygulayarak en verimli enerji yönetimini sağlamaya çalışacak.
+
+203
+00:34:17,396 --> 00:34:31,155
+Ajanımızın alabileceği aksiyonlar arasında fan hızlarını artırıp azaltma, UPS modlarını değiştirme, soğutma sisteminin yoğunluğunu ayarlayarak ve bazı sunucuları düşük güç moduna almak gibi aksiyonlarda bulunabiliyor.
+
+204
+00:34:31,916 --> 00:34:43,096
+Ajanımız enerji tasarrufu sağladığında pozitif ödülü dolarken, sistem sıcaklığının kritik seviyeleri ulaşması, yüksek enerji tüketi gibi durumlarda negatif ödül yani ceza ile sonuçlanıyor.
+
+205
+00:34:45,396 --> 00:34:51,216
+zaman içinde enerji verimliliği ile sistem güvenliği arasında optimal dengeyi bulmayı öğreniyor.
+
+206
+00:34:52,340 --> 00:35:05,160
+Mikro veri merkezlerinde sunucular, depolama üniteleri, ağ cihazları, soğutma sistemleri, UPS kesintisiz güç kaynakları, PDU gibi donanımlar anlık olarak enerji tüketimi gerçekleştiriyor.
+
+207
+00:35:05,780 --> 00:35:17,960
+Bu enerji tüketimlerinde ise veri merkezinin enerjiyi ne kadar verimli kullandığı yani PUE, Power Usage Effectiveness yani güç kullanım etkinliği metriyle değerlendirebiliyor.
+
+208
+00:35:20,340 --> 00:35:48,340
+Bu noktaya denecek olursam, mikroveri merkezinde sunucular, depolama üniteleri, ağ cihazları gibi IT ekipmanları 6 kW gibi bir enerji harcıyor olsun. Soğutma sistemleri, UPS, PDV, aydınlatma gibi altyapı destek üniteleri ise 4 kW.
+
+209
+00:35:48,340 --> 00:36:16,340
+4 kW gibi enerji arıyorsa toplamda 10 kW anlık enerji tüketimi var. PUE burada 10 bölü 6'dan 1.67 gibi değer elde ediliyor. Bu tam olarak şu demek oluyor. Her bir birim IT enerjisi için 0.67 birim altyapıya enerji harcanıyor. Yani 1 kW IT işi yapılabilmesi için soğutma sistemleri, UPS, PDU, aydınlatma gibi destek sistemleri 0.6.
+
+210
+00:36:16,340 --> 00:36:42,560
+1.67 kW enerji harcanıyor. IT'nin toplam enerji ekipayı %60. Yani veri merkezinde toplam enerjinin %60'ın IT harcıyorken %40'ı destek sistemlerine gidiyor. Bu noktada EMDC sistemimiz destek sistemlerinin enerji tüketimini 4 kW'tan 3 kW'a düşürdüğünü düşünelim. PUE bu hesaplamayla birlikte 1.67'den 1.5 değerine geliyor.
+
+211
+00:36:43,219 --> 00:36:54,339
+Bu dış işiyle birlikte her bir birim IT enerjisi için artık destek sistemleri 0.67 kW değil 0.50 kW enerji tüketir hale geliyor.
+
+212
+00:36:54,999 --> 00:36:59,919
+Destek sistemlerinin toplam harcadaki parcamadaki payı ise %33'e geliyor.
+
+213
+00:37:00,839 --> 00:37:07,819
+Sonuç olarak projemiz ile PUE değerini düşürmek 1. Doğrudan maliyet tasarrufu sağlıyor.
+
+214
+00:37:08,275 --> 00:37:21,515
+10 kW'tan 9 kW'ta 1 kW tasarruf sağlandığında, yılda 24 saat kesintisi çalışan sistemleri düşündüğümüzde 24 x 365'den 8760 iş saati olduğu anlamına geliyor.
+
+215
+00:37:22,335 --> 00:37:32,715
+Türkiye'deki elektrik fiyatını da sanayi için ortalama 5 TL'den alırsak, 5 x 8760 43.800 TL'lik yıllık bir tasarruf sağlanıyor sadece 1 kW'ta.
+
+216
+00:37:36,275 --> 00:37:45,755
+Bir mikroverim merkezinde meydana gelen yıllık tasarruf. Birçok şubesi olan bir bankayı ve bir kopya işletmesini düşündüğümüzde tasarruf miktarı daha da artıyor.
+
+217
+00:37:46,395 --> 00:37:50,375
+2. Sürdürülebilirlik karbon ayak izi ve sera salınımı etkisi.
+
+218
+00:37:51,315 --> 00:37:58,375
+1 kW elektrik üretiminde ortalama 0.492 kg karbondiaksit salınımı gerçekleşiyor.
+
+219
+00:38:04,275 --> 00:38:29,655
+Enerji tasarrufu sağlıyor ve bu yönden bakıldığında bir yılda sağlanan 8760 kWh tasarruf ile 8760 x 0.492 den 4309 kilogram yani 4.31 ton karbondioksit doğaya bırakılmayarak kurumların çevresel ve sosyal hedeflerine katkı sağlamış oluyoruz.
+
+220
+00:38:32,275 --> 00:38:49,015
+Azaltılması. Destek sistemlerine harcanan enerji azaldığında daha az enerji, daha az ısı oluşumuna, daha az ısı oluşumu daha az soğutmaya, daha az soğutma ise daha az enerji harcanması anlamına geliyor ve pozitif geri besleme döngüsü oluşuyor.
+
+221
+00:38:49,652 --> 00:39:04,371
+Son olarak 4. Ekipman ömrünün uzanması diyebiliriz. Daha düşük sıcaklıklar daha az termal stres oluşumuna neden olduğu için sonuç olarak donanım değiştirme maliyetleri azalıyor. Bu noktada ben sözü arkadaşıma bırakıyorum. Teşekkür ederim.
+
+222
+00:39:11,699 --> 00:39:13,859
+Ekran paylaşımını açıyorum.
+
+223
+00:39:26,835 --> 00:39:29,875
+Şu an sen paylaştığın için gözükmüyor sanırım.
+
+224
+00:39:32,075 --> 00:39:34,995
+Evet, şimdi paylaşımımı kapatıyorum.
+
+225
+00:39:43,380 --> 00:39:49,460
+Evet, kapandı mı? Ayrışabiliyor musun? Kapattım ben ama.
+
+226
+00:39:50,740 --> 00:39:51,840
+Şu an kapandı.
+
+227
+00:39:52,260 --> 00:39:52,500
+Tamam.
+
+228
+00:40:10,036 --> 00:40:15,255
+Paylaşımı sen yapabilir misin? Benim bilgisayarım izin vermiyor da.
+
+229
+00:40:15,395 --> 00:40:15,635
+Tabii.
+
+230
+00:40:16,536 --> 00:40:17,996
+Zoom'a çıkmam gerekiyormuş.
+
+231
+00:40:19,415 --> 00:40:20,315
+Ekranı paylaştım.
+
+232
+00:40:28,148 --> 00:40:29,208
+Tam ekranı aldım.
+
+233
+00:40:39,027 --> 00:40:57,847
+Merhabalar, ben [öğrenci]. Kısaca kendimden bahsetmek gerekirse [kişisel bilgi]
+
+234
+00:40:58,271 --> 00:41:03,491
+Bugün TÜBİTAKBİK için ortağımla hazırladığımız projede sunumumuzun geri kalanını sizlere aktaracağım.
+
+235
+00:41:04,731 --> 00:41:11,951
+Ürünümüz teknik mimarisi 4 ana blok üzerinde kurduk. En altta fiziksel ölçümleri yapan sensörlerimiz bulunuyor.
+
+236
+00:41:12,491 --> 00:41:20,771
+Bu katta sıcaklık, nem, akım, güç gibi kritik veriler toplanır. Bu veriler ITC veya YOL protokolleri üzerinden kontrolcüye iletilir.
+
+237
+00:41:21,511 --> 00:41:26,271
+Kontrolcü verileri işleyerek bulutta veya yağ sunucuda çalışan back-end olabiliyor.
+
+238
+00:41:26,271 --> 00:41:28,371
+optimizasyon motoruna verileri gönderir.
+
+239
+00:41:29,271 --> 00:41:29,692
+Burası
+
+240
+00:41:29,692 --> 00:41:32,391
+burada motorun kalbi adaptif kararlar
+
+241
+00:41:32,391 --> 00:41:34,552
+üretebilen pekiştirme de öğrenme ajanıdır.
+
+242
+00:41:35,552 --> 00:41:36,072
+Son olarak
+
+243
+00:41:36,447 --> 00:41:48,708
+Müşterilere anlık izleme ve sistem kontrol imkanı sunan yönetim kontrol paneli yani dashboard ile müşterilerin izleme ve yönetim arayüzü bulunur.
+
+244
+00:41:49,367 --> 00:41:56,788
+Sistem ayrıca over the air güncelleme desteği ve güvenli veri iletimi sistemi sağlamaktadır.
+
+245
+00:42:00,083 --> 00:42:06,043
+Donanım modülümüz, mikroveri merkezlerine kolayca enteleklil edebilmek üzere tasarladık.
+
+246
+00:42:06,320 --> 00:42:14,400
+Donanım tarafında özellikle kritik olan sensör seçiminde sektörde kendini kanıtlamış, yaygın kullanılan bileşenleri kullanmayı planlıyoruz.
+
+247
+00:42:15,260 --> 00:42:30,260
+Temel başarı kriterlerimizden biri kritik elektriksel ve çevresel ölçümleri %1 hassasiyetle doğru alabilmek ve bu konuda gerekli ölçümleri yaparak başarı kriterimizi sağlamak.
+
+248
+00:42:30,780 --> 00:42:34,320
+Donanımımız retrofit imkanı sunacak kompak ve güvenli bir muhafaza hesaplar.
+
+249
+00:42:34,320 --> 00:42:40,320
+İletişim ESP32 üzerinden dahil sağlanan Wi-Fi Bluetooth bağlantısıyla gerçekleştirilecektir.
+
+250
+00:42:40,320 --> 00:42:56,320
+Ürünümüzü piyasadaki basit izleme çözümlerinden ayıran en önemli unsur adaptif kontrol ve otonom optimizasyon yeteneğidir.
+
+251
+00:43:01,615 --> 00:43:15,056
+AYL ajanı dediğimiz pekiştirme ve öğrenme ajanımız 3 ana kaynaktan veri toplar. Bunların birincisi anlık sensör verileri, geçmiş zaman serisi verileri ve anlık sistem yük durumu verileri.
+
+252
+00:43:15,956 --> 00:43:18,615
+Geleneksel sistemlerin statik kuralların aksine AYL ajanı...
+
+253
+00:43:19,231 --> 00:43:25,231
+Sürekli öğrenerek poe değerlerini maksimize edecek en iyi elemleri otonomuz olarak seçer.
+
+254
+00:43:25,731 --> 00:43:35,192
+Bu sayede sistem dinamik soğutma ayarları, optimize edilmiş fan döngüleri ve hatta UPS yük yönetim kararları üreterek doğrudan enerji tüketimine müdahale edebilir.
+
+255
+00:43:35,892 --> 00:43:44,572
+Hedefimiz bu otonom kontrol mekanizmasıyla veri merkezlerinde %15 ile %25 arasında veri tasarrufu sağlamaktır.
+
+256
+00:43:45,588 --> 00:43:46,908
+Son iki slide'a geçelim.
+
+257
+00:43:48,851 --> 00:43:56,632
+Müşteriler dashboard ve yönetim kontrol panelimiz aracılığıyla ürünümüzün getirdiği işlevlerde tam kontrol sahibi olur.
+
+258
+00:43:56,632 --> 00:44:02,632
+Web panelimiz 4 temel işlev sunar. Enerji tüketimi, bu sıcaklık ve nem gibi değerleri anlık olarak izler.
+
+259
+00:44:03,132 --> 00:44:06,251
+Trendleri ve anomalleri test etmek için tarihsel grafikler sunar.
+
+260
+00:44:06,572 --> 00:44:09,771
+Bellinen eşlik değerler aşıldığında anlık bildirimler gönderir.
+
+261
+00:44:10,331 --> 00:44:16,831
+Sezgisel olarak tasarlanan arayüzümüz ile müşterilerimiz uygulamamızı ve ürünümüzü kolaylıkla kullanabilir.
+
+262
+00:44:16,851 --> 00:44:32,831
+Bir sonraki slide'a geçelim. Burada EMDC olarak veri merkezi altyapı pazarında mevcut çözümlere göre önemli avantajlar sunuyoruz.
+
+263
+00:44:33,268 --> 00:44:50,448
+Büyük DCIM çözümleri çok pahalı ve kurumsal ölçeklere hitap ederken yerli rakipler ise genellikle sadece izleme raporlama üzerine kurulu ve adaptif olarak optimizasyon sunamıyor. Bizim çözümümüz ise otonom optimizasyon sunan uygun maliyetli bir çözüm.
+
+264
+00:44:50,800 --> 00:44:58,840
+Tak çalıştır mantığında kurulum kolay değil, çok yüksek olup özellikle COBI ve orta ölçekli veri merkezlerine hedef alıyoruz.
+
+265
+00:44:59,579 --> 00:45:02,760
+Sadece bu özellikler bile pazarda bizi benzersiz bir konuma taşıyor.
+
+266
+00:45:03,880 --> 00:45:05,059
+Sonraki sunuma geçelim.
+
+267
+00:45:10,132 --> 00:45:21,052
+Burada rekabetçi analizimize daha detaylı baktığımızda EMDC'nin teknik özellikler ve fiyat performans açısından pazardaki en avantajlı seçenek olduğunu görüyoruz.
+
+268
+00:45:21,772 --> 00:45:31,352
+Birçok yerli rakip sadece sıcaklık, nem ölçümü yaparken bizim sistemimiz sensör donanımı, enerji analizi, klima kontrolü ve optimizasyon algoritmasını birleştiriyor.
+
+269
+00:45:31,827 --> 00:45:49,267
+Ve bu sayede sektörde benzersiz bir hizmet sunuyoruz aslında. Örneğin yabancı şirketlerden, Verti ve Schneider gibi DCM çözümleri çok fonksiyonel özellikler sunsa da fiyatları on binlerce doları bulabiliyor.
+
+270
+00:45:49,267 --> 00:45:59,267
+Ve orta ölçekli ve küçük işletmeler için pek uygun değil. Ürünümüzün planlama aşamasında 4500 TL'lik tek seferlik bir...
+
+271
+00:45:59,827 --> 00:46:13,547
+yazılım lisansı olarak ve senelik yenilenecek Software as a Service modelinde bir lisanslama şeklinde yıllık 3000 TL'lik bir destek paketiyle sunmayı planlıyoruz.
+
+272
+00:46:15,207 --> 00:46:16,447
+Sonraki slide'a geçelim.
+
+273
+00:46:19,668 --> 00:46:30,648
+Pazara ulaşım stratejimiz 3 aşamada oluşuyor. Doğrudan satış, iç hoşçaklıkları ve dijital pazarlama. İlk aşamada pilot müşterilerle çalışarak güçlü referanslar oluşturacağız.
+
+274
+00:46:31,848 --> 00:46:45,508
+Sistem entegreörleri ve IT danışmanlık firmaları ile iş birlikleri yaparak etki alanımızı genişleteceğiz. Son olarak sektörel yayınlarda, LinkedIn gibi online platformlarda potansiyel müşterilere proaktif olarak ulaşma hedefindeyiz.
+
+275
+00:46:47,411 --> 00:46:48,592
+Sonrakine geçelim.
+
+276
+00:46:51,351 --> 00:46:57,592
+İş modelimiz sadece tek seferlik satışa değil, uzun vadeli ve tekrar eden geliri odaklanmıştır.
+
+277
+00:46:58,731 --> 00:47:00,592
+İlk adımda tek seferlik satış yapılan ürünün...
+
+278
+00:47:01,152 --> 00:47:10,672
+Sunulan model, abonelik modeli sistemiyle optimizasyon, analiz ve raporlama gibi hizmetler için aylık veya yıllık olarak yenilenen lisans gelirlerimiz bulunacak.
+
+279
+00:47:11,231 --> 00:47:18,411
+Ek olarak ihtiyaca bağlı kurulum, danışmanlık, bakım, destek hizmetlerinde de profesyonel hizmetler kapsamında destek vereceğiz.
+
+280
+00:47:19,911 --> 00:47:27,751
+Pazarda neden benzersiz? Daha önce de bahsettiğim gibi rakiplerimizin hiçbiri özellikle COBE ölçü için bu üç.
+
+281
+00:47:28,755 --> 00:47:32,135
+özelliği birlikte sunamıyor. Bu sebeple.
+
+282
+00:47:34,415 --> 00:47:36,395
+Zaman çizelgesine geçelim.
+
+283
+00:47:40,563 --> 00:47:49,743
+Teknolojik doğrulama sürecimizi 12 aylık bir zaman diliminde 4 anı iş paketi halinde planladık. İlk 4 ayda gerekli ölçüm sensörlerinin seçmeyi ve
+
+284
+00:47:50,096 --> 00:47:55,335
+Kontrol kartını, PCB tasarımı, üretimini ve ink fonksiyonel testleri tamamlayıp planlıyoruz.
+
+285
+00:47:56,096 --> 00:48:00,895
+Dört ay sonunda çalışır bir donanım ön prototipinin elde edilmesini planlıyoruz.
+
+286
+00:48:01,495 --> 00:48:13,695
+Birinci ve sekizinci aylar arasında donanımdan veri okuyabilen, sunucuyla haberleşebilen, over there uzaktan güncelleme desteğine sahip ve SP32 tabanlı gömülü yazılımın geliştirilmesi ve test edilmesini planlıyoruz.
+
+287
+00:48:13,695 --> 00:48:18,096
+Üçüncü iş paketinde ölçülen verilerin güvenli şekilde saklanacağı haberleşebiliriz.
+
+288
+00:48:18,096 --> 00:48:19,455
+Başkıncaya bir backend altyapısım.
+
+289
+00:48:19,728 --> 00:48:27,328
+Kurularak, kullanıcıların sisteme gerçek zamanla izleyebileceği, rapor alabileceği ve yönetebileceği bir dashboard geliştirmesi planlıyoruz.
+
+290
+00:48:27,328 --> 00:48:47,628
+Son olarak neredeyse tüm süreç boyunca geliştirilecek ve 12 ayda bitirilecek olan projenin son paketinde enerji optimizasyonuna yönelik algoritmaların geliştirilmesi, pilot müşteri ortamında kurulumların yapılması ve sağ testleri sonucunda en az %15'lik bir enerji tasarrufunun kanıtlanması.
+
+291
+00:48:47,728 --> 00:48:49,708
+ve doğrulanması amaçlanmaktadır.
+
+292
+00:48:50,208 --> 00:48:54,428
+Bu süreç sonunda ürünün üretim seviyesindeki versiyonun ulaşmasını planlıyoruz.
+
+293
+00:48:55,868 --> 00:48:57,008
+Sonrakine geçelim.
+
+294
+00:49:01,076 --> 00:49:14,275
+Başarı kriterlerimiz için 4 temel kriter hedefledik. Teknik başarı için sensör verilerimizin %1 hassasiyetle işlenmesi, toplanması ve donanım yazılım entegrasyonunun kesintisiz bir şekilde çalışmasını sunduk.
+
+295
+00:49:14,608 --> 00:49:22,168
+Performans başarısı için pilot test ortamında enerji tüketiminde en az %10 tasarruf sağlanmasını kararlaştırdık.
+
+296
+00:49:22,628 --> 00:49:30,168
+Ürünleşme konusundaki başarı indikatörü olarak da ticari ürüne dönüşmeye hazır, stabil çalışan ön prototipin tamamlanması koşulunu koyduk.
+
+297
+00:49:30,608 --> 00:49:41,367
+Ve son olarak da pilot aşamada yapılan testlerin sonuçlarını içeren kapsamlı teknik doğrulama raporunun hazırlanması kriterlerini göz önüne alarak kriterlerimizi tasarlamış olduk.
+
+298
+00:49:43,603 --> 00:50:04,943
+Son olarak, bir sonraki slide'a geçelim. Son olarak belirlediğimiz bütçenin dağılımı grafikte görüldüğü gibidir. En büyük payı personel giderleri almaktadır 540.000 TL ile. Zira kurucu ortaklar olarak bu süreçte aktif olarak çalışmış olacağız ve dışarıdan bir destek almayacağız eleman olarak.
+
+299
+00:50:05,492 --> 00:50:24,252
+Alet, tesisat, yazılım alımları için yaklaşık 190.000 TL'lik bir bütçe belirledik. Malzeme giderleri, prototip sensörler, PCB kartları vs. gibi işlemler için 70.000 TL'lik, kalan kısımlar için de 100.000 TL'lik bir bütçe planlaması yaptık.
+
+300
+00:50:25,292 --> 00:50:26,472
+Son slide'a geçelim.
+
+301
+00:50:30,708 --> 00:50:50,788
+Son olarak da önceki tabloda detaylarını belirttiğimiz gibi bu 12 aylık ürünleştirme süreci için toplamda 900 bin TL'lik bir destek talep etmekteyiz. IMDC olarak mikroveri merkezlerinde akıllı ve uygun maliyetli bir dönüşümü vadediyoruz. Değerli vaktiniz için teşekkür ederiz. Sorularınız varsa yanıtlamaktan memnuniyet duyarız.
+
+302
+00:51:00,755 --> 00:51:01,255
+Peki.
+
+303
+00:51:01,536 --> 00:51:03,215
+Teşekkürler arkadaşlar. Sağ olun.
+
+304
+00:51:03,996 --> 00:51:05,795
+Teşekkürler hocam.
+
+305
+00:51:16,436 --> 00:51:18,776
+Şimdi bir sonraki gruba geçelim.
+
+306
+00:51:56,248 --> 00:51:57,788
+[öğrenci], sen mi başlarsın?
+
+307
+00:51:58,348 --> 00:52:00,128
+Başlayayım ben [öğrenci], sen ilerletirsin.
+
+308
+00:52:00,688 --> 00:52:00,928
+Tamam.
+
+309
+00:52:01,588 --> 00:52:05,948
+Herkese merhabalar öncelikle, ben [öğrenci], [kişisel bilgi]
+
+310
+00:52:06,508 --> 00:52:11,508
+Ekip arkadaşım [öğrenci] ile beraber projemiz olan Fudi Organi'yi sizlere aktarmak için buradayız bugün.
+
+311
+00:52:12,228 --> 00:52:15,228
+Nelerden bahsedeceğiz? Proje ekibimizden bahsedeceğiz aslında.
+
+312
+00:52:16,508 --> 00:52:18,008
+Bir önceki slide'a geçebilir miyiz [öğrenci]?
+
+313
+00:52:18,516 --> 00:52:27,056
+Nasıl başladık, amaçlarımız ne, sorunlarımız, çözümlerimiz ne ve gelir planlamalarımız ve prototiplerimizden bahsedeceğiz bugün sizlere.
+
+314
+00:52:28,371 --> 00:52:43,012
+Biz kimiz? Biz aslında sektörde iki mühendisiz aslında. [kişisel bilgi], [öğrenci] ve biz aslında hem teknik hem de analiz tarafını beraber aslında güçlü bir şekilde yönettiğimizi düşünüyorum bu proje sürecinde.
+
+315
+00:52:43,532 --> 00:52:56,371
+Çünkü [öğrenci] hem analiz tarafını, ben de teknik ve sektörün yapay zeka ve teknolojideki ileri gelen adımlarını düşünerekten projemize feature'lar ekledik, update'ler ettik. Bu şekilde söyleyebilirim.
+
+316
+00:52:56,371 --> 00:53:18,632
+Bizim proje mottomuz da 2025'in sağlık uygulaması diyebiliriz. Sağlık ve lezzet var eden projemiz. Nasıl başladık biz öncelikle? Bizim aslında temeldeki amacımız bu şuydu. Günlük yaşantıda aslında birçok insan var ve gerçekten hem ekonomi hem de sosyal sebeplerden dolayı yeteri kadar fırsat üretim yapamıyor.
+
+317
+00:53:19,023 --> 00:53:26,204
+Profesyonel bir alanda çalışamıyor ve bir gelir üretimini sağlayamıyor. Bu yüzden de biz bir dijital alan oluşturmak istedik.
+
+318
+00:53:26,204 --> 00:53:32,011
+Ve aslında bir diğer amaçlarımızdan bir tanesi de şu an sektörde ve...
+
+319
+00:53:32,148 --> 00:53:50,047
+Günlük yaşantıda insanlar gerçekten çok yoğun bir şekilde çalışıyorlar, yoğun bir tempoya sahipler ve bu yoğun temponun içerisinde de insanların çok sağlıksız beslendiğini, o döngünün içerisinde gerçekten çok hazır tüketim yaptığını gördük ve bu sebepten dolayı da toplumsal bir sağlıksızlık meydana geliyor.
+
+320
+00:53:54,963 --> 00:54:12,123
+Aslında iki temel problemi tek bir çözümle birleştirmeye karar verdik. Evinde yemek üretmek isteyen bireyler de güvenilir, sağlıklı, ev yapımı yemeklere ulaşmak isteyen kullanıcıları aynı platformda bir araya getirilen bir yapay zeka destekli dijital ekosistem oluşturduk aslında. İlerleyebiliriz arada.
+
+321
+00:54:13,460 --> 00:54:40,319
+Tabii bizim burada bazı sorunlarımız var. Neden buraya geldik? Neden bu projeyi ürettik? Çünkü bir fırsat eşitsizliği, az önce bahsettiğim gibi gerçekten profesyonel seviyede bu sektöre girebilecek olan insanlar evlerinde olduğu için ve gerçekten o ekonomik güce sahip olmadıkları için aslında yeteneklerini kullanamıyorlar. O yüzden burada mesleki fırsatlara erişimleri sınırlı olduğu için biz bu potansiyelleri değerlendirmek istedik ve bu insanlara da üretime katkı sağlamasını istedik.
+
+322
+00:54:41,460 --> 00:54:47,380
+Bir diğeri de sosyal eşitsizlik. Aslında sosyal ve ekonomik gruplar arasındaki geril dağılma adaletsizliği.
+
+323
+00:54:47,380 --> 00:54:55,880
+Yine buradaki bahsettiğimiz şey de aslında insanların gerçekten bu projeye çaba gösterip geliri de elde edebilirler.
+
+324
+00:54:56,000 --> 00:54:59,059
+Aynı zamanda kendilerini de çok rahat bir şekilde geliştirebilirler.
+
+325
+00:54:59,679 --> 00:55:04,400
+Bir diğeri de aslında sağlıksız beslenme. Az önce dediğim gibi insanların bir zaman yetersizliği var.
+
+326
+00:55:05,108 --> 00:55:16,068
+Zaman yetersizliğinden dolayı da aslında yoğun iş temposuyla beraber insanlar sağlıklı yemeğe ulaşamıyorlar, hazır yemeğe ulaşıyorlar ve biz bir analiz yaptık.
+
+327
+00:55:16,648 --> 00:55:24,788
+Baktığımız datalarda da aslında Türkiye'de o basit oranın %30 seviyelere ulaştığını, aslında bunu yalnızca bireysel değil toplumsal bir sağlık problemi olduğunu gördük.
+
+328
+00:55:25,307 --> 00:55:31,847
+O yüzden de biz bu problemi de füdyo ürünümüzle beraber çözmeyi düşünüyoruz.
+
+329
+00:55:32,175 --> 00:56:00,175
+Bir diğeri uzman iş gücü erişimsizliği. Bu ne demek aslında? Şu an sağlık ve girişimcilik alanında birçok uzman kişi var. Burada diyetisyenler var, başka sağlık kollarında çalışan insanlar var. Bu dijital platform eksikliği nedeniyle de bilgi ve deneyimlerini geniş kitlelere aktaramıyorlar. Bu da yine hem bireysel hem de toplumsal olarak karşılıklı fayda sağlanması üzerinde ciddi bir engel oluşturduğunu düşünüyoruz. O yüzden bizim dört farklı...
+
+330
+00:56:00,175 --> 00:56:09,255
+Problemi ele aldık ve bu 4 farklı problemi çözümüne kavuşturacak proje yazmaya karar verdik. Bizim sürecimiz bu şekilde ilerledi.
+
+331
+00:56:11,507 --> 00:56:26,288
+Peki biz çözüm olarak neler sunuyoruz? Aslında çözüm bizim için burada çok önemli. Çünkü foodibi yapay zeka destekli, dijital ortamlarda faaliyet gösteren, farklı bireylerin de ürettiği yemekleri tek bir çatı altında toplayan sanal bir restoran ağı oluşturuyoruz aslında.
+
+332
+00:56:26,288 --> 00:56:38,887
+Ve bu yapı sayesinde her sanal restoran kendi mutfağında üretim yapan bireylere ait olacak ve tüm süreçler mobil ve web tabanlı uygulama üzerinden yönetilebilecek. Biz aslında amaçlarımızdan bir tanesi buydu.
+
+333
+00:56:39,507 --> 00:56:57,707
+Peki, biz bunu nasıl yapacağız, biz bunu nasıl çözümleyeceğiz? 3 farklı yöntem koyduk. Bir tanesi sanal restoranlar, bahsettiğim gibi küçük girişimciler kendi mutfaklarında hazırladıkları ev yemeklerini düşük maliyetlerle beraber aslında kullanıcılara ulaştırmasını sağlayacağız. Biz bu uygulamamız sayesinde.
+
+334
+00:56:58,128 --> 00:57:24,828
+Bir diğeri de aslında VIP yemek paketleri. Bu ne demek? Aslında bu şu an sektörde de kullanılan bir şey. Kişiler aslında bazı yemek firmaları var ve onlara subscribe olup günlük olarak yemek alabiliyorlar. Ama burada bahsettiğim gibi insanlar tek bir firmaya bağlı kalabiliyorlar. Oradan bir subscribe olup abonelik oluyorlar. Biz bunu da engellemek istiyoruz. Çünkü insanlara tek düze bir yemek sistemine sokmak istemiyoruz. O yüzden insanlara çeşitlilik sunmak istiyoruz.
+
+335
+00:57:26,128 --> 00:57:28,728
+hipyemek paket desteğiyle de bunu yapmak istiyoruz.
+
+336
+00:57:29,876 --> 00:57:42,656
+Bir diğeri de online diyetisyen desteği. Online diyetisyen desteği de yine ekran üzerinden. Hem yine uzman diyetisyenlerimizin ve sağlık çalışanların da bu ürün üzerinden hem fayda sağlayabilecekleri bir platform oluşturduk.
+
+337
+00:57:43,036 --> 00:57:56,336
+Yine onlar da uzman diyetisyenlerle bir araya gelerek kişisel hedeflerine uygun besleme programları oluşturarak aslında uygulama sayesinde de doğru ürünlere, doğru satıcılara meşlenmesini sağlayacak bir uygulama yazıyoruz.
+
+338
+00:57:57,876 --> 00:58:11,876
+Fudi aslında ürünümüz olan Fudi küçük üreticiyi dijitalleştirerek kullanıcıya sağlıklı, güvenilir, sürdürülebilir beslenme deneyimi sunan bütüncüm bir çözüm modeli diyebiliriz.
+
+339
+00:58:14,256 --> 00:58:16,096
+Peki biz bunu nasıl yapacağız?
+
+340
+00:58:16,512 --> 00:58:34,592
+Bizim gelir modellerimiz var. 3 farklı gelir modelimiz var. Bir tanesi web sitesinden elde edeceğimiz kazançlarımız var. Web sitesinden elde edeceğimiz kazançlardan kastımız ne? Öncelikle şu anki hali hazırda, sektörde de olan hem reklam gelirleri olsun hem de biz bir premium yapı kurmak istiyoruz.
+
+341
+00:58:39,891 --> 00:58:49,211
+görmüyoruz ya da onun dışında bazı spor application'ları var. Spor application'larında yine aynı şekilde premium paketler, plus paketlerimiz var. Biz de aslında bu platform sayesinde
+
+342
+00:58:50,099 --> 00:59:11,579
+Web sitesi üzerinden premium hizmetler ve işbirlikleri ile gelir kaynağımızın arasına yer almak istiyoruz. Bir diğeri verilen her siparişte alınacak kar payı. Bu zaten şu an mevcudaki yemek sitelerinde de olan bir süreç. Burada her bir sipariş için bir kar payı almak istiyoruz. Bir diğeri de aslında sanal restoran sahipleri ürüntü eder, yedilerek alınacak ücretler.
+
+343
+00:59:18,099 --> 00:59:23,320
+sürecine sahip olmayan insanlar olduğu için onlara bu ürünü tedarik ettirmek aslında çok kıymetli onlar için.
+
+344
+00:59:23,820 --> 00:59:29,740
+Ve bunu yaparken de bunun sürekliliğini sağlamak onlar için çok zor ama biz bunu foodie olarak da yapmayı planlıyoruz.
+
+345
+00:59:29,740 --> 00:59:37,000
+Ve burada da yine alınacak küçük ücretlerle beraber gelir modelimizi daha da arttırmayı planlıyoruz aslında.
+
+346
+00:59:39,507 --> 01:00:02,188
+Pazar kısmında ben devralayım istersen [öğrenci]. Merhabalar arkadaşlar tekrardan. Çalışmamızın pazar boyutuna değinecek olursak da bizim asıl pazarımız aslında online yemek sipariş pazarı. Yapılan çalışmalarda Türkiye'de yaklaşık 15 milyon kişinin online olarak yemekleri sipariş ettiği.
+
+347
+01:00:02,608 --> 01:00:22,508
+Görülüyor. Yıllık bazda da hesapladığımızda bu 250 milyon porsiyonluk bir rakama tekabül ediyor. Bu incelediğimiz veriler doğrusunda aslında bizim çalışmamızın konusunun yalnızca teorik değil, bunun arka tarafta pratik bir karşılığının da olduğunu bu bize açıkça gösteriyor.
+
+348
+01:00:22,996 --> 01:00:40,956
+Ayrıca bu yemek siparişlerinin hemen hemen yaklaşık olarak, %75'inin online olarak sipariş edilmesi aslında bizim çalışmamızın ana direklerinin doğru olarak seçildiğini bize açıkça gösteriyor aslında burada örnek verecek olursak.
+
+349
+01:00:41,492 --> 01:00:54,831
+Pazarlama politikamıza gelecek olursak da, biz aslında burada agresif pazarlama yerine daha kullanıcı davranış ve kullanıcıya güven ilişkisini merkeze alan bir yöntem benimsemek istedik.
+
+350
+01:00:54,831 --> 01:00:59,492
+Bizim burada dört ana başlığımız var aslında. Pardon.
+
+351
+01:01:00,000 --> 01:01:08,260
+Bunlar işte promosyonlar, ödüller, YouTube ve girişimciler diyebileceğimiz.
+
+352
+01:01:08,260 --> 01:01:12,280
+İşte promosyonlara baktığımızda promosyonlar nedir?
+
+353
+01:01:12,539 --> 01:01:19,000
+İşte günlük yaşantımızda hepimiz Trendyol, Getir, Yemek Sepeti gibi uygulamaları kullanıyoruz.
+
+354
+01:01:20,260 --> 01:01:28,000
+Bunlar aslında promosyonlarda bizim Foodie uygulamamızda kullanıcının platformu denemesini ve tekrar kullanmak.
+
+355
+01:01:28,000 --> 01:01:28,960
+Teşvik edici
+
+356
+01:01:29,460 --> 01:01:37,539
+Küçük indirimler ya da ona iyi hissettirecek küçük imtiyazlar aslında bizim sunduğumuz.
+
+357
+01:01:38,199 --> 01:01:57,460
+Ödüller de keza kullanıcının yine sistemin bir parçası olduğunu ve kendini özel hissetmesini sağlayacak şekilde ona bazı hediye kuponları olsun, kampanyaları olsun, ara ara dönemlerde onun da kendi kullanıcı davranışını izleyeceğiz.
+
+358
+01:01:57,460 --> 01:02:02,579
+Bu tarz ödüller vermeyi şey yaptık, politikamızı içine soktuk.
+
+359
+01:02:03,119 --> 01:02:08,039
+YouTube ve içerik üreticileri son zamanlarda çok revaçta.
+
+360
+01:02:08,239 --> 01:02:16,199
+İşte burada kendi kanallarında yemek yapanlar ya da yemek türevi içerik paylaşan kişiler son derece fazla.
+
+361
+01:02:19,443 --> 01:02:32,503
+YouTube üzerinden onları sanal restorant, yani bizim food uygulamamızın bir sanal restorantını açmasını teşvik edecek bazı reklam anlaşmaları yapmayı kendi planımıza dahil ettik.
+
+362
+01:02:32,503 --> 01:02:42,583
+Bu sayede hem kullanıcıyla da onların kendi hitap ettiği aboneleriyle de bizim markamız arasında bir güven ilişkisi oluşacağını düşünerek.
+
+363
+01:02:43,163 --> 01:02:47,443
+Ayrıca bu girişimciler dediğimiz bir kısım var.
+
+364
+01:02:47,443 --> 01:03:10,764
+Bunlar aslında kendileri Instagram veya Türeviye'yi başka kuruluşlardan kendi yemeklerini zaten küçük ölçekli yapıyor. Biz aslında bu girişimcileri tek bir çatı altında toplayıp, foodie çatısı altında küçük bir kobi bantı ile onları bir araya getirmeyi hedefledik. Pazarlama politikalarımız özetleyecek olursam bu şekilde diyebilirim aslında.
+
+365
+01:03:11,476 --> 01:03:22,356
+Yatırım türlerimize gelecek olursak da, işte burada kaynaklarımızı nasıl ve neleri ayıracağımızı aslında paylaştırdık.
+
+366
+01:03:22,755 --> 01:03:34,115
+Görüldüğü üzere en büyük yatırımımız aslında reklam pazarlama, az önce bahsettiğim gibi ekip maliyeti ve teknik altyapıya yönelik maliyetler aslında yatırımlarımız.
+
+367
+01:03:39,476 --> 01:03:51,576
+ve insan kaynağına odaklı bir kuruluş olduğumuzun göstergesi olduğunu düşünüyorum.
+
+368
+01:03:52,236 --> 01:03:53,856
+Planlamamız o şekildeydi en azından.
+
+369
+01:03:54,324 --> 01:04:11,324
+Ortaklık yapımıza gelecek olursak da biz bunu [öğrenci] ile beraber ana kurucular olarak kendimizi değerlendirerek burada %30'luk bir melek yatırımcı payı bıraktık. Burada kurucuların çoğunluk hissesine sahip...
+
+370
+01:04:12,019 --> 01:04:34,039
+olması aslında ikimizin ortak kararıydı. Karar alma süreçlerinde kontrolün bizde olmasını ve bütünlüğün bu şekilde sağlanacağını düşünerek böyle bir karar verdik. Melek Yatırımcı Payı, dış destek alınırken yapısal bütünlüğümüzü bozmayacak şekilde daha oran olarak küçük bir oranda bırakarak bu şekilde bir ilerleme yaptık aslında.
+
+371
+01:04:34,739 --> 01:04:46,679
+Yine iki yıl içerisindeki hedeflerimize de gelecek olursak, burada faz bir de tabii buradaki takvimler biraz yanılma payı da içeriyor.
+
+372
+01:04:48,980 --> 01:05:00,460
+İki yıllık hedeflerimize gelecek olursam, işte Faz 1'de temel olarak uygulamamızın İstanbul'da pilot bölge olarak başlatılmasını bir hedef olarak aldık.
+
+373
+01:05:01,159 --> 01:05:13,260
+Keza Faz 2'de de reklam politikalarımızla birlikte üniversitesi olan ve üniversite öğrencilerin yoğun olduğu şehirlerde uygulamamızı taşımayı hedefledik aslında.
+
+374
+01:05:16,980 --> 01:05:31,559
+Sosyal bir pozitif etki yaratmak adına bazı doğa olsun ya da çevreyle alakalı ya da eğitimle alakalı yatırımlar yaparak onlara da pozitif bir intiba bırakmayı hedefledik.
+
+375
+01:05:32,599 --> 01:05:40,980
+Faz 4'te de yine aslında hem kendi ekibimizi arttırmak hem de öğrencilerin de staj imkanını sağlayabilecek bir...
+
+376
+01:05:41,103 --> 01:05:49,643
+Planlama doğrultusunda dönemsel staj ilanı verme gibi bir hedef koyduk. Bu kendi ekibimizi artırmak için de pozitif etkileyeceğini düşünerek.
+
+377
+01:05:50,343 --> 01:06:06,643
+Faz 5'te de aslında bizim mevcutta tek bir çatı altında topladığımız COBİ'leri, geleceğin girişimcileri platform altında toplayarak potansiyel küçük yatırımcıları da belki bizim ileride...
+
+378
+01:06:07,476 --> 01:06:24,476
+Next Generation yatırımcılar olarak süreci dahil etmeye hedefledik. Bu gençlere ilan vermeyi hedefledik aslında. Bunun sürdürebilir olmasını hedefleyerek böyle bir eğitim ya da konferans adı altında mentorluk desteği yapmayı düşündük.
+
+379
+01:06:27,476 --> 01:06:33,676
+Toplamamız lazım artık süre olarak. Hatırlatayım dedim.
+
+380
+01:06:34,356 --> 01:06:51,356
+Tamam hocam, hızlanayım o zaman. Fazaltı'da da bu mentorluk adı altında ekimize dahil etmeyi planladık. 5 yıl içerisinde de baktığınızda ilk olarak İstanbul'a 125'e yakın bir düzenli müşteri hedefledik.
+
+381
+01:06:52,956 --> 01:06:59,356
+Keza ayrıyeten İstanbul dışında da 2 il daha eklemeyi hedefledik ve müşterilerimizin...
+
+382
+01:07:00,000 --> 01:07:04,279
+%75 daha fazlasına ulaşmasını hedefledik.
+
+383
+01:07:04,539 --> 01:07:15,659
+5 yılın sonunda da bizden düzenli olarak bu uygulamamızı kullanan kişilerin, 3. sipariş veren kişilerin %55'e hedef edilmesini planladık.
+
+384
+01:07:16,179 --> 01:07:36,699
+Neden bize yatırım yapılmasıyla alakalı olarak da bu soruya basitçe yanıtlayacak oluyorsam, bizim önerdiğimiz model mevcut yemek sipariş uygulamalarından hem farklı. Bir kere burada bireysel küçük girişimciler var ve ürün üreticiler genelde küçük ev hanımları ve sağlıklı beslenmeyi merkeze alan bir yapısı var.
+
+385
+01:07:37,088 --> 01:07:54,248
+İlla bir büyük yatırım yatıp restoran açmaktan ziyade küçük kişilerin de bu işi yapabileceğini ve satış yapabileceğini bu ülkemizin sosyoekonomik koşullarında buna imkan açtığımızı düşünerek öyle bir proje yatırımı çekmeyi düşünüyoruz.
+
+386
+01:07:54,908 --> 01:07:58,608
+Ve yüksek maliyet gerektirmeyen bir model olduğunu düşünüyoruz.
+
+387
+01:07:59,155 --> 01:08:06,456
+Dinlediğiniz için teşekkür ederim. Sorularınız varsa cevaplamaya isteriz.
+
+388
+01:08:15,219 --> 01:08:17,299
+paylaşımı duruyorum hocam. Soru yok galiba.
+
+389
+01:08:18,680 --> 01:08:22,439
+Çok teşekkürler. Elinize sağlık ve diğer tüm arkadaşlarım.
+
+390
+01:08:23,959 --> 01:08:32,399
+Ben bireysel çıkarticileri desteklemek noktasında çok da ilgi duydum. Detayları da çok beğendim öncelikle.
+
+391
+01:08:33,680 --> 01:08:39,219
+Ev yemeği olarak nitelendirirsek şunu merak ettim. Yani satan kişilerin
+
+392
+01:08:39,520 --> 01:08:43,700
+Güvenilirliğini nasıl doğrayabiliriz böyle bir platformda?
+
+393
+01:08:43,700 --> 01:08:49,659
+Bunu aslında raporda değindik ama sunumda evet o kısmı atladık.
+
+394
+01:08:51,000 --> 01:08:55,820
+[öğrenci] Hanım, şey burada aslında bir nasıl diyeyim?
+
+395
+01:08:57,619 --> 01:09:17,379
+Kamu kurumlarını da devreye sokup, aslında bir denetim mekanizması oluşturup, keza [öğrenci] da dediği uygulama için bir puanlama sistemini de devreye alıp, hem puanlanmadan önceki satıcılar için, hem de puanladıktan sonraki zaten satıcıların puanı olacak. Bir denetim mekanizması HDP'de aslında.
+
+396
+01:09:18,547 --> 01:09:30,788
+Üretim yapılan yerin temizliği olsun, denetimi olsun, onlar ilk başta zaten bir satıcı eğer bize bağlı olmak istiyorsan bu şartları küçük de olsa sağlaması gerektiğine inanıyoruz. O yüzden böyle bir şeyimiz de var.
+
+397
+01:09:32,127 --> 01:09:35,507
+Anladım. Sanırım hijyen standardı burada ilk akla gelen.
+
+398
+01:09:35,728 --> 01:09:36,067
+Aynen.
+
+399
+01:09:36,067 --> 01:09:39,047
+Ama bu şekilde de takibi mümkün olabilir.
+
+400
+01:09:40,587 --> 01:09:40,788
+Evet.
+
+401
+01:09:41,827 --> 01:09:42,768
+Teşekkür ederim.
+
+402
+01:09:43,407 --> 01:09:44,387
+Teşekkür ederiz.
+
+403
+01:09:44,647 --> 01:09:45,327
+Sağ olasın.
+
+404
+01:09:56,659 --> 01:09:58,979
+Hocam konuşuyorsanız sesinizi duymuyoruz.
+
+405
+01:10:03,739 --> 01:10:05,379
+Hala mı duymuyorsunuz?
+
+406
+01:10:05,739 --> 01:10:06,680
+Şu an geldi hocam.
+
+407
+01:10:06,840 --> 01:10:07,600
+Şu an duyuyoruz.
+
+408
+01:10:08,260 --> 01:10:13,680
+Bir sonraki grubunuza geçelim. Teşekkürler arkadaşlar. 15 numaralı grup [öğrenci] burada mı?
+
+409
+01:10:14,600 --> 01:10:15,920
+Hocam evet buradayım.
+
+410
+01:10:17,059 --> 01:10:18,119
+Evet sendeyiz.
+
+411
+01:10:19,079 --> 01:10:19,840
+Merhaba hocam.
+
+412
+01:10:20,340 --> 01:10:22,260
+Hocam ben tek başıma sunum yapacağım.
+
+413
+01:10:22,771 --> 01:10:26,332
+Tek grubum, bunu daha önce söylemiştim size.
+
+414
+01:10:31,828 --> 01:10:33,347
+Ekranı paylaşıyorum.
+
+415
+01:10:38,931 --> 01:10:41,371
+Galiba ekran gelmiştir diye düşünüyorum.
+
+416
+01:10:41,751 --> 01:10:43,531
+Evet, başlarsan bekliyoruz.
+
+417
+01:10:43,851 --> 01:10:51,831
+Tamam hocam, hemen başlıyorum. Benim projem Campus Car. Tek başıma yapıyorum hocam, grup 15. Campus Araç Paylaşım Platformu.
+
+418
+01:10:56,500 --> 01:11:05,699
+İçerik kısmında biraz kendimden bahsedeceğim, projenin tanımını yapacağım problemin, proje ve amaçlarından bahsedeceğim.
+
+419
+01:11:07,139 --> 01:11:11,960
+Çözünme özelliklerinden, teknolojisinden ve sonuç katma değerinden bahsedeceğim.
+
+420
+01:11:14,760 --> 01:11:21,340
+Proje kapsamında tüm analiz, geliştirme, test ve doğrulama süreçlerini tek elden ben yönetiyorum.
+
+421
+01:11:22,036 --> 01:11:28,996
+[kişisel bilgi]
+
+422
+01:11:31,416 --> 01:11:38,476
+[kişisel bilgi]
+
+423
+01:11:47,667 --> 01:12:14,567
+Problemimiz de, üniversite kampüslerinde ciddi bir trafik problemimiz var ve park sorunumuz var. Araçlar çoğunlukla tek kişiyle kullanılıyor. Bu konuyu çözüm olarak da kampüs kar projesini aslında ben teklif ediyorum. Tek kişiyle kullanılıyor ve bu yakıt maliyetlerini arttırıyor hem de çevresel etkileri oldukça büyütüyor.
+
+424
+01:12:15,060 --> 01:12:31,040
+Ayrıca kampüs işi sürdürülebilir ulaşımı destekleyen etkili bir sistem bulunmuyor. Mevcut durumda üniversite toplumunda özel, güvenli ve kontrollü bir araç paylaşma sistemi yok aslında. Bu da öğrencilerin plansız ve güvensiz çözümleri itiyor.
+
+425
+01:12:34,547 --> 01:12:50,467
+Bu projedeki amaç da üniversite toplumuna özel bir araç paylaşım platformu yapmak. Burada üniversite öğrencilerin edutere uzantılı e-posta doğrulamalarıyla daha güvenlikli, kapalı bir ekosistem oluşturulması amaçlanıyor.
+
+426
+01:12:51,188 --> 01:12:58,108
+Sürücü ilanları ve yolcuları eşleştirilerek mesafe bazlı adil maliyet paylaşımı sağlanıyor aslında.
+
+427
+01:12:59,155 --> 01:13:12,155
+Benim burada hedefim de pilot kullanım sürecinde en az 10 aktif kullanıcıya ulaşmasını hedefliyorum ve ayrıca sürdürülebilir eşleşmelerin sağlanması ve karbon emisyonunda tasarruf elde edilmesiyle başlıyorum.
+
+428
+01:13:13,835 --> 01:13:16,895
+Pilot kullanımında 10 tane aktif kullanıcıya ulaşmayı hedefliyorum.
+
+429
+01:13:20,307 --> 01:13:36,007
+Problemimiz ve çözüm olarak da sistemde sürücü ve yolcu için rol bazlı kullanıcı akışı bulunuyor. İnan tabanlı eşleme, filtreme mekanizması var. Mesafe ve rota bilgisiyle dayalı ücret hesaplama yapılıyor.
+
+430
+01:13:36,948 --> 01:13:43,288
+Kullanıcı puanlama ve geri bildirim sistemi bulunuyor ve yetkilendirme ve erişim kontrolü altyapısı mevcut çözümümüzde.
+
+431
+01:13:47,859 --> 01:14:10,299
+Web uygulaması, kullanıcılar için de bir mobil uygulaması bulunuyor. İstemli sunucu mimarisiyle tasarlandı tüm sistem. Mobil uygulama yalnızca kullanıcı arayüzünü sunuyor. Tüm iş mantığı ve doğrulama süreçleri mekan servisler üzerinde yürütülüyor. Veri tabanında kullanıcı, inan, eşleşme ve puanlama verileri tutuluyor.
+
+432
+01:14:14,644 --> 01:14:30,203
+Başarı kriterleri basitçe, projenin başarısı pilot uygulama sürecinde ölçülecek. Burada da ben şöyle söylüyorum, 10 aktif kullanıcıya ulaşması ve 5 başarılı sürücü yolcu eşleşmesi hedefliyorum.
+
+433
+01:14:30,203 --> 01:14:41,203
+Başarı kriteri olarak, temel sistem birleşenlerinin kararlı çalışmasını bekliyorum. Kullanıcıların alınan geri bildirimlerde güven ve kullanılabilirlik algısı değerlendirilecektir bu sayede.
+
+434
+01:14:47,604 --> 01:15:08,444
+Arayüzümüz bu şekilde. Bir prototip olarak yaptım. Temel ekranlarını görüyoruz burada. Giriş ve kayıt ekranı, iğnen oluşturma, eşleşme ve profil puanlar ekranları MVP kapsamında geliştirildi. Aslında geliştirilmedi. Prototip olarak söyleyebilirim arayüzü.
+
+435
+01:15:10,355 --> 01:15:28,575
+Literatür ve Pazar Analizinde Bıla Bıla Kar var. Mesela benzer bir uygulama. Ama bu şehirler arası yolculuk için. Uber'de çok ticari yöne bakıyor. Bu platformlar kampüsü kısa mesafe ve kapalı doğrulama silahlarına çok uygun değil. Kampüs kar buraya odaklanıyor aslında.
+
+436
+01:15:29,684 --> 01:15:40,204
+Yenilikçi yönleri de aslında üniversiteye özel kapalı doğrulama sistemi, kampüs odaklı kısa mesafe çözümü ve etik veri işleme yaklaşımı projenin yenilikçi yönleri.
+
+437
+01:15:40,844 --> 01:15:44,003
+Ayrıca düşük maliyet ve hızlı geliştirme hedefleniyor.
+
+438
+01:15:50,484 --> 01:16:17,684
+Teknolojik doğrulama işinde mobil prototip eşleşme algoritması ve maliyet hesaplama modülü geliştirildi. 10 test kullanıcıya pilot çalışması yapılması ve en az 5 başarılı eşleşme elde edilmesi hedefleniyor. Etik kısmı da burada çok önemli. Proje KVKK'ya uygun olarak tasarlanacak. Konum verisi minimum düzeyde işlenmesi gerekiyor. Üniversite e-posta doğrulaması kullanılmakta ve veri saklama süreleri sınırlandırılmakta.
+
+439
+01:16:22,163 --> 01:16:36,083
+Zaman çizelgesi olarak da 18 aylık bir çizelge öngörüyorum. 4 tane faz var. 4 faz var ama burada bir grafik de yanlış olmuş. 5. yazmışım. Aslında 4 tane var.
+
+440
+01:16:36,823 --> 01:16:47,043
+1. faz ilk 3 ayı kapsıyor. Bu aşamada analizlerin yapılması, senaryo olarak çıkartılması, sistem mimarisi tasarlanması, veri modeli oluşturulması.
+
+441
+01:16:47,043 --> 01:16:49,724
+2. faz 4 ile 9. aydır kapsıyor.
+
+442
+01:16:50,579 --> 01:17:06,099
+Bu kısım geliştirmeleri kısmı oluyor aslında. Mobile uygulamının geliştirilmesi, backend, api servisleri oluşturulması, kimlik doğrulma ve sürücü yolcu eşleşme modüllerinin geliştirilmesi kısımları bu fazla oluyor aslında.
+
+443
+01:17:18,292 --> 01:17:20,652
+sonuçların değerlendirilmesi olarak düşündüm.
+
+444
+01:17:24,404 --> 01:17:31,844
+Yani daha küçük bir niş bir proje olduğu için bütçeyi ben daha düşük tuttum. 360.000 TL bir bütçe öngördüm.
+
+445
+01:17:34,204 --> 01:17:43,264
+Persönel ve yazılım geliştirme giderleri 160.000 TL, yaklaşık %44. Yazılım ve altyapı giderleri 90.000 TL, %25'lik kısım yapıyor.
+
+446
+01:17:43,944 --> 01:17:51,744
+Test, pilot ve doğrulama giderleri 70.000 TL, %19 kısım yapıyor ve yaygınlaştırma ve raporlama kısımları da 40.000 TL, %11.
+
+447
+01:17:54,003 --> 01:17:56,523
+Birazdan nesveten küçük bir bücbe öngördüm.
+
+448
+01:17:57,603 --> 01:18:04,623
+Sonuç itibariyle de proje kampüsü için trafik ve park yoğunluğunu azaltmaya hedefliyor.
+
+449
+01:18:04,923 --> 01:18:10,823
+Öğrencilerin ulaşım maliyetlerini düşürürken karbon emisyonunun azaltılmasına katkı sağlamaktadır.
+
+450
+01:18:11,483 --> 01:18:14,763
+Üniversiteye özel güvenli bir paylaşım ekosistemi sunmaktadır.
+
+451
+01:18:15,983 --> 01:18:20,763
+Ayrıca farklı üniversiteleri ölçeklenebilir yapıdadır.
+
+452
+01:18:26,292 --> 01:18:30,592
+Hocam bu kadardı aslında. Yani bir soru varsa alabilirim.
+
+453
+01:18:36,020 --> 01:18:42,220
+Peki, teşekkürler. Bir sonraki grubuna da geçebiliriz bu durumda.
+
+454
+01:18:43,620 --> 01:18:44,440
+Merhabalar hocam.
+
+455
+01:18:45,960 --> 01:18:46,680
+Merhabalar.
+
+456
+01:18:50,640 --> 01:18:51,120
+Merhaba.
+
+457
+01:18:51,120 --> 01:18:52,600
+16. grup.
+
+458
+01:18:53,020 --> 01:18:53,580
+3 saniye.
+
+459
+01:18:54,880 --> 01:18:56,640
+[öğrenci] ve [öğrenci].
+
+460
+01:18:57,220 --> 01:18:58,020
+Yan yanasınız.
+
+461
+01:18:58,280 --> 01:18:58,800
+Tamam.
+
+462
+01:18:59,480 --> 01:18:59,720
+Okey.
+
+463
+01:19:00,740 --> 01:19:02,080
+Hadi bakalım, siz deyiz.
+
+464
+01:19:03,699 --> 01:19:04,840
+Ekran paylaşır.
+
+465
+01:19:19,283 --> 01:19:20,243
+Ekran geldi mi hocam?
+
+466
+01:19:20,783 --> 01:19:21,344
+Geldim.
+
+467
+01:19:21,904 --> 01:19:43,663
+Tamamdır. Öncelikle kendimizi tanıtmak istiyoruz. Ben [öğrenci], [kişisel bilgi]
+
+468
+01:19:45,460 --> 01:19:59,980
+Ben [öğrenci]. [kişisel bilgi]
+
+469
+01:20:02,163 --> 01:20:14,583
+Şimdi hocam, öncelikle bizim yola çıkış sebebimiz iki bankacılık sektörüne çalıştığına arkadaş olarak biz bankacılık bir uygulaması üzerinden aslında geliştirme, arayüzü oluşturma şeklinde yola çıktık.
+
+470
+01:20:15,203 --> 01:20:22,323
+Burada problemimizde temel olarak bakıldığında hayatın temel kaynakları, hatta hayatın en temel kaynağı olan su olarak aldık.
+
+471
+01:20:23,043 --> 01:20:26,543
+Şu anda yaptığımız uygulamada aslında projemizmelerinde suyun güvenli.
+
+472
+01:20:26,912 --> 01:20:40,612
+Biz aslında burada sadece bir mobil uygulamayı da değil veya bir arayüz oluşturma, bir geliştirme de değil. Burada çevresel ekonomiye katkı veya sürdübelerlere de çok büyük bir katkı sağlayacak bir platform oluşturmuş olduk.
+
+473
+01:20:43,952 --> 01:20:49,092
+Slidemizde ilk önce, projemizin ilk sayfası Su Savaşları Kapıda. Su Savaşları Kapıda ne demek aslında?
+
+474
+01:20:51,091 --> 01:21:04,391
+Amerika Birleşik Devletleri'ne yayınladığı veya Dünya Bankası'nın bunun dışında Birleşmiş Milletler'e yayınladığı küresel eğimler raporunda öncelikle 2012, sonrasında 2017, peşinden de 2021 yılında su savaşlarını vurdu yaptı.
+
+475
+01:21:04,471 --> 01:21:08,071
+2021 yılında da en son olarak su savaşları kapıltı diye bir baş kattı.
+
+476
+01:21:08,571 --> 01:21:19,091
+Bunu demek dünya genelindeki su kıklığının artması, iklim değişiminden dolayı, nüfus artışından dolayı veya su kıklayanaklarının kirlenmesi nedeniyle artık belirli topluluklarda, belirli bölgelerde...
+
+477
+01:21:19,091 --> 01:21:32,371
+Hatta da ilerleyen süreçlerde devletler arasında su savaşlarının olacağını bahsediyor. En tehlikeli bölgeler olarak da Orta Asya. Bunun dışında Fırat ve Dirizliye Havzasını da belirtmiş oldu bu raporunda.
+
+478
+01:21:32,800 --> 01:21:57,100
+Bu rapora istinadenle bakıldığında Türkiye'yi de su sitesi altındaki ülkeler kategorisine yaklaştırdı. En basit örneği olarak da yaklaşık bundan 6 ay öncesinde bile Türkiye'de, Bursa, İzmir gibi şehirlerimizde, suların belli saatleri arasında kapatıldığı, barajların artık kuruma derecesine geldiğinden dolayı bizim problemimizde, biz de problemimizi su üzerine yol aldık. Peki biz bu kadar su savaşları kapıda dedik.
+
+479
+01:21:57,619 --> 01:22:02,639
+Su Kutlu'ndan bahsettik. Bizim projemizin amacı neler yapacağız biz?
+
+480
+01:22:03,039 --> 01:22:12,539
+Suyum Güvenlik Projesi, buradaki kılıklı, riski dikkate alarak, bireysel ve tüzel olmak üzere müşterilerin su harcamalarını dikkate alacak.
+
+481
+01:22:12,880 --> 01:22:26,519
+Buradaki harcamat sadece şu şekilde söyleyebiliriz, en basitinden her hane halkı veya hanede veya bir şirkette, en basitinden Yıldız Eklik Güventesi'nde herkesin ödediği bir su faturası var.
+
+482
+01:22:26,519 --> 01:22:31,039
+Buradaki su faturasını ne kadar tükettiğimizi veya neyi nasıl ödeyeceğimizi aile...
+
+483
+01:22:31,039 --> 01:22:52,039
+olarak tahmin edebiliyoruz. Sadece geçen ay yapılan harcamamızda diyoruz ki önümüzdeki halde de tahmin olarak bu kadar harcadık. Yine bu tutar gelecek. Ancak biz burada, Suyun Güvenlik Projesi'nde, sütü kütübüne gerçek zamanlı ve anlaşılır bir şekilde dikkat alacağız. Buradan destekle birlikte tasarru davranışını daha güçlü hale getiriyor olacağız. Çünkü ölçmeyen şeyi...
+
+484
+01:22:52,627 --> 01:23:14,867
+Yönetemeyiz. Bunun sebepleri de gerçek, anlaşılır ve tasarruf davranışını güçlendiren bir yapı kuruduk. Bunları erken şekilde tespit edebilen bir sistemimiz olacak. Peki bunları nasıl yapacağız? Bankacık altyapısıyla birleştireceğiz. Bunları daha güvenli, sadece bankacık altyapısında değil, kamu dairelerle de çalışarak entegre olacak bir şekilde ilgiliyor olacağız.
+
+485
+01:23:15,507 --> 01:23:20,587
+Sütüde ve ek çalışmalarına veri temelli bir katkıda bulunacağız. Bizim temel amaçlarımız aslında kısacası bunlar değil.
+
+486
+01:23:23,539 --> 01:23:51,539
+Türkiye'de tekiz. Aslında bakıldığında biz global araştırmalarda yaptığımızda bizim projemize yakın çok bir örnek yok. Tabii ki Türkiye'deki su faturalarının yayınlanması Avrupa'ya göre bazı şeylerde daha farklı gösteriyor. Onların sistemleri daha farklı olabiliyor. Biz bu yüzden bu başlattık. Türkiye'de tekizledik. Bu ne anlamda tekiz? Veri anlamında, verileri toplama anlamında, yani tek bir çatı altında su faturalarının toplama anlamında tek olacağız. Bizim amacımız...
+
+487
+01:23:51,539 --> 01:24:09,340
+İki şekilde, daha doğrusu projemizin işe ilişki iki şekilde. Birincisi veri toplama ve işleme, ikincisi ise müşterilere suma kısmı. Birinci kısımda veri toplama ve veri işleme kısmında su faturalarını öderken en basitinden bir bankacılık uygulamasına kendi otomatik ödeme talimatı veriyorsunuz.
+
+488
+01:24:09,340 --> 01:24:19,340
+Ve burada siz sistemle kayıtlı oluyorsunuz. Bir de kamu dairelerinde veya sayaç okumalarında, İSKİ gibi kamu dairelerinde burada sürekli olarak...
+
+489
+01:24:19,539 --> 01:24:47,140
+Bizim buradaki amacımız kamu ve banka verilerini birlikte adapte ederek, birlikte entegre olacak şekilde tek bir veri çatısı oluşturmak ve bu çatı dahiline de makine öğrenmesiyle birlikte anlık tahmine dayalı veri analizlerini, veri analizleriyle birlikte bir harcama veya tüketim davranışı modelini oluşturmak. Burası bizim veri toplamı, veri işlemi kısmımız. İkinci kısmımız da tabii ki bakıldığında kullanıcı arayüzü ve kurumsal panel.
+
+490
+01:24:47,539 --> 01:24:54,720
+Burada da bizim bu yaptığımız uygulamayı, yaptığımız veri işlemi ve toplama kısmını müşteriye sunmamız gerekiyor.
+
+491
+01:24:55,060 --> 01:24:58,180
+Bunu yaparken de mobil bankacılık temelli ilerleyeceğiz.
+
+492
+01:24:58,619 --> 01:25:05,659
+Mobi bankacılıkta her zaman cebimize bulunan şu anki artık dijital gelişen dünyada, bankacılığın geliştiği dünyada,
+
+493
+01:25:05,659 --> 01:25:12,100
+mobil bankacılık uygulaması içerisinde kredinizi nasıl takip ediyorsunuz veya otomatik ödemelerinizi nasıl takip ediyorsunuz?
+
+494
+01:25:12,380 --> 01:25:15,539
+Burada suyun güvenli çatısı altında ayrı bir başlığımız olacak.
+
+495
+01:25:15,539 --> 01:25:32,800
+Bunun en büyük yararı tabi ki bilimsel müşter dışında kurumsal müşter de olacak. Kurumsal müşter nasıl şirketlerin aylık harcamalarını düzenli olarak takip edecek, sektördeki durumunu takip edecek, sektör kıyaslaması yapabilecek. Burada da aslında kurumsal sürebilik sağlayan bir veri kışı oluşturulmuş olacağız.
+
+496
+01:25:35,828 --> 01:26:01,168
+Burası bizim ürün diyaklamamız, ürün akış diyaklamamız. Az önce de bahsettiğim gibi aslında, birincisi müşteri, kullanıcı kendi su faturasını sisteme girerse bankacılık sisteminden bir veri akışı başlatmış olacak veya kurumlarla anlaşılarak, banka, kurumla birlikte entegre şekilde çalışarak müşterinin faturalarını sisteme ekleyecek, burada müşteri ailelerini eşleştirecek ve bir havuz oluşturacak müşteriyle ilgili.
+
+497
+01:26:03,828 --> 01:26:09,108
+Harcama anından itibaren sürekli olarak bir veri tutma havuzu oluşturacak.
+
+498
+01:26:09,448 --> 01:26:15,928
+Sonrasında bu verilerin aktarımında da makine öğrenmesi modelleriyle birlikte bir analizler ortaya çıkartacağız.
+
+499
+01:26:15,928 --> 01:26:24,108
+Bu analizlerin sonucunda da aslında günün sonunda kullanıcı aracılığımıza veri karıştırmayı aktaracağız ve tahminlerini gösteriyor olacağız.
+
+500
+01:26:27,568 --> 01:26:29,488
+Buradan sonrasında arkadaşım anlatılacak.
+
+501
+01:26:32,212 --> 01:26:57,972
+Bu teknoloji altyapımızdan bahsedeceğim. Öncelikle veri işleme ve entegrasyon kısmımız var. Kamu aileleri ve bankalar arasında çift yönlü veri entegrasyonu oluşturacağız, mimarisi oluşturacağız. Fatura bazlı tüketim verisinin otomatik bankaya akışı verilerin temizlenerek kullanıcı doğrulama şema eşleştirme şeklinde olacak. Makine öğrenimi modelimiz var.
+
+502
+01:26:58,319 --> 01:27:17,399
+Gelecek ayın tüketiminden kaynaklı zaman serisi tahmini yapmayı planlıyoruz. Aşırı tüketimden kaynaklı anomali tespitimiz de mevcut olacak. Tasarruf eğilimleri ve benzer tüketim profillerinin gruplandırılmasını da yapacağız. Ayrıca davranış analizi ve segmentasyon kısmımız da mevcut.
+
+503
+01:27:26,131 --> 01:27:41,671
+paralel şekilde çalışacak. Onlara ek olarak bir yan geliştirme olarak düşünebiliriz. Bu geliştirilen su modülü mevcut banka uygulamasının içine gömülü olarak çalışacak. Hem iOS hem Android olacak. Bildirim sistemi.
+
+504
+01:27:42,228 --> 01:28:02,387
+Mevcut. Ayrıca kullanıcım kolaylığı sağlayan bir arayüzümüz var. Bu arayüzün görüntüsünü de bir sonraki slide'da göreceğiz. Veri güvenliği konusunda da hem banka hem de kamu veri tabanlı olacağı için hem regülasyonlara uyumlu hem de KBKK ve kişisel veri işleme gibi durumlarda elimiz rahat olacak.
+
+505
+01:28:04,728 --> 01:28:09,787
+Burada kullanıcı arayüzümüz mevcut. Tanıtı ve aktivasyon kısmımız var.
+
+506
+01:28:10,127 --> 01:28:12,247
+Burada açılış sayfamız var.
+
+507
+01:28:13,448 --> 01:28:16,127
+Mobiliarayür süt ücretimi kullanıcıya en basit ve anlaşılık...
+
+508
+01:28:16,756 --> 01:28:41,076
+şekilde sunmak için tasarladık. Anla dashboardumuz mevcut burada. Burada kullandığımız suyun tasarrufumuzun ne durumda olduğuna dair bir parametremiz var. Mesela burada bu ayki su ayak izimizden bahsediyor. Gelecek ortalama fatura tutarından bahsediyor. Ayrıca burada bir nokta var. Bölgenizdeki ortalamaya göre %15 daha tasarruflusunuz diye.
+
+509
+01:28:43,507 --> 01:29:08,447
+Eskiden Hayat Eve Sığar diye bir uygulama vardı önceden. Belki hatırlarsınız pandemi döneminde. Orada da böyle bölgemizdeki durumları görebiliyorduk. Burada da aynı şekilde, ona benzer şekilde suyun kullanımı açısından bir harita bölgemizdeki durumu ve ortalamayı görebileceğiz. Ondan sonra burada detaylı analiz kısmımız var. Aylık kullandığımız tonun.
+
+510
+01:29:08,783 --> 01:29:25,783
+Suyun ton olarak kullanımı mevcut. Ne kadar fotoğraf edildiğiniz vesaire. Ondan sonra hedef ve tasarruf kısmı var. Burada kendimiz ayarlıyoruz ne kadar hedefimiz ne, yüzde kaç tasarruf etmek istiyoruz.
+
+511
+01:29:31,408 --> 01:29:55,268
+tekabül ediyor veya kaç para taşar bekliğimize dair tahmin modelimiz var. Burada nasıl tasarruf edebileceğimize dair ufak tavsiyeler mevcut. Mesela musluk başlarını değiştirip şu kadar indirim sağlayabilir tarzında. Ve son olarak işte kolektif etki sayfanız var. Burada da biraz motivasyon amaçlı.
+
+512
+01:29:55,663 --> 01:30:05,764
+Birlikte başarıyoruz. Suyun güvende topluluğu, bütün Türkiye genelinde ne kadar toplam su tasarrufu ettiğimizi bahsediyor. Bu şekilde.
+
+513
+01:30:08,523 --> 01:30:18,423
+Etki analizi kısmımız var. Burada kullanıcıya etkisi gerçek zamanlı takip ve tüketim bilgilendirme sistemi, aylık karşılaştırma ve tasarruf analizi.
+
+514
+01:30:18,836 --> 01:30:33,796
+Bankalara etkisi, mobil bankacılığa eklenen sürdürülebilir bir uygulama, müşteri bağımlılığını arttırma ve müşteri derinliğine oturma. Burada ayrıca proje sadece bireysel bir tasarruf sağlamıyor, bankalara yeni bir çevresel sürdürülebilirlik ürünü kazandırıyor.
+
+515
+01:30:45,779 --> 01:30:58,619
+kararlarının güçlenmesi. Makro sonuçlarda da sürdürülebilir su yönetimine veri temelli bir katkı. Su tasarrufunda geniş ölçekli davranış, değişikliği, çevresel risk yönetiminin güçlenmesi ve projenin birilik olması.
+
+516
+01:30:58,619 --> 01:31:01,500
+Burada
+
+517
+01:31:04,627 --> 01:31:05,948
+Planlamamız mevcut.
+
+518
+01:31:06,908 --> 01:31:12,887
+2026'nın ilk çeyreğinde veri modeli ve API entegrasyonu sağlanmasını planlıyoruz.
+
+519
+01:31:13,528 --> 01:31:21,328
+İkinci ve üçüncü çeyrekte mobiler ayüst tasarımı, çetin ve karşılaştırma modellemesi, veri işleme entegrasyonunu yapmayı planlıyoruz.
+
+520
+01:31:21,807 --> 01:31:31,807
+Son çeyrekte ise tüketim hesaplaması ve tahmin emrizi, performans optimizasyonu, model doğrulama ve uygulamaya alma aşaması, test kısımlarımız olacak.
+
+521
+01:31:32,408 --> 01:31:38,188
+2027 yılında uygulamayı sürmeyi, piyasayı sürmeyi planlarımız.
+
+522
+01:31:38,908 --> 01:31:48,667
+2027 yılı sonuna kadar fatura sahibi olmayan banka müşterinin %50'sinden fazlasını faturasıyla uygulamayı adapte etmek istiyoruz.
+
+523
+01:31:57,011 --> 01:32:20,951
+Neden biz? Bugünü veriye dönüştürüyoruz. Geleceğin üst yönetimini şekillendiriyoruz. Teknik olarak güçlü bir mimari kuruyoruz. Piyasada rakipsiz bir konumdayız. Banka, kamu kurumları ve toplum için çok yönlü bir değer üretiyoruz. Finans olarak maliyeti düşük ve sürdürülebilir bir iş modeli sunuyoruz. Ayrıca toplumsal ve çenilmisel etkisi yüksek bir modelimiz. Bu şekilde mi diyor hocam?
+
+524
+01:32:28,884 --> 01:32:45,703
+Peki, teşekkürler arkadaşlar. Sorusu olan yok galiba. Okey. Şimdi normalde toplu bir geri bildirim veriyordum ama bir koşturmacı var. Ekstra katılmam gereken doktora yeterlilik sınavları vs. var. O yüzden bugünkünü böyle veremeyeceğim.
+
+525
+01:32:46,228 --> 01:33:10,108
+Ama çok kısa bir şey söyleyeyim. Yani konsept gereği 1512 başvurusu yapıyorsunuz. Dolayısıyla başvurularınızla ilgili yaptığınız sunumların da buna uygun oluyor olması lazım. Yani bana ders projesi anlatmıyorsunuz şu an ya da işte ne bileyim bir grup öğrenciye bir sunum yapmıyorsunuz. 1512 başvurunuzun sunumunu yapıyorsunuz.
+
+526
+01:33:10,416 --> 01:33:21,896
+aşamanın bir parçası olarak. Buna göre sunumlarınızı organize etmeniz bekleniyordu. Aklınızda olsun diyeyim. Şimdilik hepinize iyi akşamlar dileyim. Haftaya görüşmek üzere.

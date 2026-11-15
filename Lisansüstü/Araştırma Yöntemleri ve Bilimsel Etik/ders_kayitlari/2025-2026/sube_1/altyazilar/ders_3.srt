@@ -1,0 +1,1255 @@
+1
+00:02:29,651 --> 00:02:34,391
+Merhaba arkadaşlar. Sesim iyi geliyor değil mi? Bir sıkıntı var mı?
+
+2
+00:02:35,391 --> 00:02:36,691
+Geliyor hocam.
+
+3
+00:02:36,691 --> 00:02:36,911
+Tamam.
+
+4
+00:02:36,911 --> 00:02:37,651
+Hocam geliyor.
+
+5
+00:02:38,051 --> 00:02:47,631
+Tamam arkadaşlar. Merhabalar herkese. Bugün 30 Nisan'da bir grup görüyorum burada. Sizinle de paylaştım listeğimizi tekrar.
+
+6
+00:02:48,467 --> 00:02:57,507
+[öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci]'dan, [öğrenci]. Bu grup bugün yapıyor.
+
+7
+00:02:57,967 --> 00:02:59,287
+Evet, bugün yapacağız.
+
+8
+00:03:00,187 --> 00:03:00,447
+Tamam.
+
+9
+00:03:00,827 --> 00:03:02,847
+Bu grupsa ilk biz de yapabiliriz sunumu.
+
+10
+00:03:03,587 --> 00:03:12,807
+Siz hangi grupsunuz? 30 Nisan bir tane. Siber Güvenlik, [öğrenci] yazmışız. Bir de [öğrenci], [öğrenci].
+
+11
+00:03:12,807 --> 00:03:15,108
+Zaten bizim dışımızda bugün yapacak yokmuş.
+
+12
+00:03:15,699 --> 00:03:35,459
+Tamam. Diğerleri sanırım çünkü yazdılar ama onların da konuları yazmıyor. İyi yok hocam, biz de yapacağız aslında. [öğrenci], [öğrenci]. Siz de yapacaksınız değil mi? Hazırsınız. Orayı yazmadık ama size gönderdik adını. Tamam arkadaşlar. O zaman iki grup ilimiz var.
+
+13
+00:03:36,467 --> 00:03:40,408
+İki grubumuz var, önemli değil. İki grubumuz var o zaman bugün.
+
+14
+00:03:41,087 --> 00:03:47,147
+[öğrenci], [öğrenci], [öğrenci], [öğrenci], değil mi? Bu grup var.
+
+15
+00:03:48,367 --> 00:03:50,608
+[öğrenci] burada mı? [öğrenci]?
+
+16
+00:03:52,507 --> 00:03:59,768
+Siber Güvenlik, belki bu Siber Güvenlik'te yapmış olabilir mi? Buraya kim yazmış acaba onun ismini?
+
+17
+00:04:02,804 --> 00:04:05,963
+Tamam, [öğrenci] burada yok. Değil mi? Şu anda yok.
+
+18
+00:04:07,223 --> 00:04:11,403
+Tamam arkadaşlar. Kim yapmak istiyor? İki grubumuz var şu anda.
+
+19
+00:04:12,024 --> 00:04:14,444
+Biz grup iki olarak büyük yapmaya okuyuz.
+
+20
+00:04:15,723 --> 00:04:16,324
+Tamam.
+
+21
+00:04:19,584 --> 00:04:24,103
+Sizin için olur mu, uygun mu? Sayet [öğrenci].
+
+22
+00:04:24,484 --> 00:04:25,603
+Olur hocam, sorun değil.
+
+23
+00:04:26,004 --> 00:04:36,324
+Tamam, siz başlayın arkadaşlar. Grup 2 başlayabilirsiniz. Ben şimdi şunu kapatayım. Kapattım paylaşmayı.
+
+24
+00:04:36,964 --> 00:04:38,184
+Ben paylaşacağım ekleme.
+
+25
+00:04:41,184 --> 00:04:46,384
+Paylaşıyorum. Şu anda geldi ekleme.
+
+26
+00:04:46,944 --> 00:04:51,324
+Evet, geldi şu anda. Başlayabilirsiniz arkadaşlar.
+
+27
+00:04:54,100 --> 00:05:19,820
+Evet, ben başlıyorum. Merhabalar, ben [öğrenci]. Bugün sizlere yaygın makine öğrenmesi modelleri kullanılarak e-postalardaki kötü amaçlı URL tespiti başlıklı TÜBİTAK 1001 projemizi sunacağız. Bu projede temel amacımız e-posta yayılan oltalama saldırılarını makine öğrenmesi yöntemlerini tespit ederek veri güvenliğini arttırmak. Bir sonraki slide.
+
+28
+00:05:21,151 --> 00:05:22,091
+On ikine geçeyim ben.
+
+29
+00:05:25,052 --> 00:05:29,891
+Öncelikle burada problemin temelini oluşturan oltalama saldırılarından bahsetmek istiyorum.
+
+30
+00:05:30,531 --> 00:05:36,731
+Oltalama saldırıları, kullanıcıyı yanıltarak hassas bilgilerini paylaşmasına sebebiyet veren bir siber saldırı türü.
+
+31
+00:05:37,692 --> 00:05:41,951
+Genellikle e-posta üzerinden işliyor ve mesajın içinde bir bağlantı bulunuyor.
+
+32
+00:05:42,451 --> 00:05:46,652
+Bu bağlantı, kullanıcıyı gerçek bir siteye çok benzeyen bir sayfaya yönlendiriyor.
+
+33
+00:05:47,152 --> 00:05:53,072
+Ve kullanıcı burada giriş bilgilerini ya da kişisel bilgilerini girdiğinde bilgiler salgıran tarafından ele geçiriliyor.
+
+34
+00:05:54,132 --> 00:06:17,572
+Teknik açıdan bakıldığında bu saldırıların en kritik noktası yönlendirmeyi yapan bu bağlantı. Saldırının gerçekleşmesi de çoğu zaman bu URL üzerinden gerçekleşiyor. Bu yüzden bağlantının yapısal ve metinsel özelliklerini analiz ederek zararlı olanları ayırt edebilmek çok önemli. Biz de bu çalışmada e-postalardaki bağlantıları analiz ederek kötü amaçlı olanları makine öğrenmesi yöntemleriyle tespit etmeyi hedefledik.
+
+35
+00:06:17,572 --> 00:06:19,111
+Bir sonraki slide.
+
+36
+00:06:21,108 --> 00:06:25,168
+Siber güvenliğin neden bu kadar önemli olduğunu kısaca bakacağız.
+
+37
+00:06:25,608 --> 00:06:27,008
+Dijital dönüşümle beraber...
+
+38
+00:06:27,008 --> 00:06:30,908
+Biraz önceki ses nereden geliyor arkadaşlar? Kapı sesi gibi.
+
+39
+00:06:32,828 --> 00:06:34,508
+Bende bir şey yok hocam.
+
+40
+00:06:35,128 --> 00:06:36,608
+Tamam arkadaşlar, tamam.
+
+41
+00:06:36,608 --> 00:06:36,848
+Tamam.
+
+42
+00:06:40,648 --> 00:06:42,228
+Dijital değişmeden devam edeyim.
+
+43
+00:06:42,576 --> 00:06:50,776
+Dijital dönüşümle beraber verilerin büyük bir kısmı dijital ortama taşınıyor. Bu durumda saldırganlar için çok daha geniş bir hedef yüzeyi oluşturuyor.
+
+44
+00:06:51,255 --> 00:06:59,456
+Aynı zamanda saldırganların hem sayısı hem de karmaşıklığı devam artıyor. Bu da kurumların siber güvenliğine daha fazla bütçe ayırmasına sebep oluyor.
+
+45
+00:07:00,615 --> 00:07:06,556
+Soldaki grafikte de gösterdiğimiz gibi veri hilallerinin maliyeti yıllar içerisinde devamlı olarak artış gösteriyor.
+
+46
+00:07:07,540 --> 00:07:13,879
+Özellikle ultrama saldırıları hem en yaygın saldırı türlerinden biri hem de en maliyetli saldırılar arasında yer alıyor.
+
+47
+00:07:14,600 --> 00:07:17,199
+Bunun en önemli sebeplerinden biri de e-posta sistemleri.
+
+48
+00:07:17,819 --> 00:07:25,379
+Kurumsal iletişimin merkezi olan bu sistemler dış dünyaya açık kapıları yüzünden saldırganlar için çok fazla tercih edilen bir giriş noktası.
+
+49
+00:07:26,460 --> 00:07:27,240
+Bir sonraki slide.
+
+50
+00:07:29,908 --> 00:07:33,528
+Bu noktadan hareketli araştırma sorumuzu şu şekilde belirledik.
+
+51
+00:07:34,048 --> 00:07:39,708
+Makine öğrenmesi yöntemleri e-posta içerisinde kötü amaçlı yörel bağlantılarını yüksek doğruluk oranıyla tespit edebilir mi?
+
+52
+00:07:40,007 --> 00:07:41,968
+Temel hipotezimiz ise şu.
+
+53
+00:07:42,588 --> 00:07:52,848
+E-posta içerisinden elde edilen yapısal ve metinsel öz niteliklerin optimize edilmiş sınıflandırma modelleriyle analiz edilmesi, kötü amaçlı yörellerin yüksek doğrulukta tespit edilmesini sağlar.
+
+54
+00:07:53,608 --> 00:07:55,747
+Bu yaklaşımın 3 temel avantajı var.
+
+55
+00:07:56,112 --> 00:08:09,331
+İlki, geleneksel imza tabağımı yöntemlere kıyasla daha yüksek başarı sağlaması, ikincisi yanlış pozitif oranlarını minimize etmesi, üçüncüsü ise proaktif, ölçeklenebilir ve düşük maliyetli bir savunma yöntemesi sunması.
+
+56
+00:08:10,271 --> 00:08:11,172
+Bir sonraki slide.
+
+57
+00:08:13,139 --> 00:08:26,819
+Benim tarafımda son olarak literatürden bahsedeceğiz. Literatürde genel olarak yörel tabanlı öz nitelik çıkarımı, klasik makine öğrenmesi modelleri, ensemble yöntemleri ve davranış analizi gibi teknikler kullanılmakta.
+
+58
+00:08:27,599 --> 00:08:31,819
+Fakat bu çalışmalara baktığımızda bazı önemli sınırlamalarla karşılaşıyoruz.
+
+59
+00:08:32,467 --> 00:08:45,727
+Örneğin, kullanılan veri setlerinin çoğu sınırlı boyutta ve zamanla güncelliğini kaybediyor. Bu durumda modellerin gerçek dünya senaryolarında karşılaşabileceği yeni saldırı türlerini öğrenmesini çok zorlaştırıyor.
+
+60
+00:08:46,867 --> 00:08:59,707
+Buna ek olarak birçok çalışmada kullanılan ön nitelik setleri yeterince kapsamlı değil. Yani URL yapısının tüm karmaşıklığını yansıtamayan bu temsillerin sınırları olması model performansını büyük ölçüde etkiliyor.
+
+61
+00:09:00,371 --> 00:09:10,771
+Bir diğer önemli problemimiz, hiperparametre ayarlarının manuel olarak yapılması. Bu yaklaşım hem zaman alıcı hem de modeli özgü en iyi parametreden bulunmasını zorlaştırarak performans kaybına sebep olabiliyor.
+
+62
+00:09:11,672 --> 00:09:21,791
+Son olarak mevcut yöntemlerin çoğu yeni ve bilinmeyen saldırılara karşı yeterince adaptif değil. Bu da özellikle zero day olarak adlandırılan yeni saldırı türlerinin tespitinde ciddi bir zayıflık oluşturuyor.
+
+63
+00:09:23,611 --> 00:09:27,151
+Biz bu çalışmalar, literatürdeki bu sınırlamaları aşmayı hedefliyoruz.
+
+64
+00:09:27,539 --> 00:09:50,299
+Bu yönde birden fazla kaynaktan veri toplayarak daha güncel ve zengin bir veri seti oluşturmayı, yörellerden elde edilen yapısal ve metinsel özellikleri geliştirecek daha kapsamlı bir öz nitelik temsili geliştirmeyi, model performansını arttırmak adına Flammel kütüphanesi ile otomatik hiperparametre optimizasyonu uygulayarak daha verimli ve sistematik bu model geliştirme süreci oluşturmayı,
+
+65
+00:09:50,655 --> 00:09:59,855
+Ve son olarak da tüm bu bileşenleri bir araya getirerek yeni ve bilinmeyen saldırılara karşı daha adaptif, proaktif ve ölçeklenebile bir tespit mekanımızla geliştirmeye ediyoruz.
+
+66
+00:10:01,015 --> 00:10:04,195
+Bundan sonra kısımda [öğrenci] veri seti ve ön işleme kısmıyla devam edecek.
+
+67
+00:10:06,836 --> 00:10:13,395
+Merhaba, ben [öğrenci]. Veri seti ve ön işleme kısmıyla ilgili konuşacağım. Geçebiliriz.
+
+68
+00:10:14,292 --> 00:10:32,812
+Biz bu proje için 3 farklı veri kaynağı kullanmaya karar verdik. Öncelikle Kaggle'da zararlı yöreller veri setini bulduk. Bu veri seti içinde 650 bin tane aslında yörel barındırıyor. Hepsi etiketli bir şekilde zararlı veya güvenli olmak üzere.
+
+69
+00:10:42,292 --> 00:10:46,872
+Güncel verilerle de çalışmak istediğimiz için Fishtank ve OpenFish dahil ettik.
+
+70
+00:10:47,443 --> 00:11:15,423
+Fiştenk topluluk tabanlı bir veri tabanı. Burada topluluk tabanlı demek aslında herkesin katkıda bulunabiliyor olması demek. Herhangi biri bir insan bir URL'den şüphelendiğinde bir kullanıcı bunu paylaşıyor ve diğer kullanıcıların da oylamasıyla güvenli veya güvenli değil olarak etiketlenip veri setine dahil ediliyor. Sürekli güncel tutuluyor o yüzden çok avantajlı bizim için ve hemen bir api.
+
+71
+00:11:15,443 --> 00:11:22,563
+Bu veri setine erişilebiliyor. Openfish de yine aynı şekilde çok sürekli güncel tutulan bir veri seti.
+
+72
+00:11:23,023 --> 00:11:28,603
+Openfish interneti aslında tamamen tarıyor ve buradaki şüpheli URL'leri çıkarıyor.
+
+73
+00:11:29,503 --> 00:11:34,703
+Bu URL'leri kendi ortamında, kendi güvenli ortamında açarak test ediyor.
+
+74
+00:11:34,803 --> 00:11:41,603
+Gerçekten güvenli mi değil mi diye ve bunu da veri setine kaydediyor ve veri setine ulaşmak da mümkün. Geçebiliriz.
+
+75
+00:11:43,059 --> 00:11:47,139
+Biz bu bulduğumuz verilerde önce bir temizleme yapmayı planlıyoruz.
+
+76
+00:11:48,019 --> 00:11:52,899
+Farklı kaynaklardan aslında URL çektiğimiz için bu URL'lerin tekrarlaması çok muhtemel.
+
+77
+00:11:53,419 --> 00:11:57,620
+O yüzden bu URL'lerin hepsini teke indirgeyeceğiz, tekrarlayan URL'leri.
+
+78
+00:11:58,360 --> 00:12:01,019
+Bozuk ve erişilemeyen URL'ler temizlenecek.
+
+79
+00:12:01,759 --> 00:12:05,220
+Eksik etiketli verilerin etiketleri tamamlanacak.
+
+80
+00:12:05,460 --> 00:12:08,000
+Tamamlanamıyorsa da silinecek bu veri.
+
+81
+00:12:09,399 --> 00:12:11,000
+URL'lerin bazıları çok...
+
+82
+00:12:11,059 --> 00:12:15,100
+Çok çok uzun olabiliyor. Bu da modelde bir sapmaya yanaşabilmesi için.
+
+83
+00:12:15,799 --> 00:12:17,440
+Niye iki defa geliyor?
+
+84
+00:12:19,100 --> 00:12:19,899
+Benim sesim.
+
+85
+00:12:22,519 --> 00:12:24,320
+Bende de yankı yok hocam şu an.
+
+86
+00:12:26,000 --> 00:12:27,539
+Yankı var değil mi herkeste?
+
+87
+00:12:28,120 --> 00:12:29,539
+Yok hocam, bende de yok.
+
+88
+00:12:30,379 --> 00:12:31,559
+Gelmiyor hocam, tek geliyor.
+
+89
+00:12:32,759 --> 00:12:33,600
+Tamam o zaman.
+
+90
+00:12:33,779 --> 00:12:34,399
+Bende de yok.
+
+91
+00:12:36,916 --> 00:12:38,796
+Devam ediyorum o zaman.
+
+92
+00:12:38,796 --> 00:12:40,056
+Evet, devam edelim.
+
+93
+00:12:40,796 --> 00:12:46,136
+Yörellerin uzunluklarında, çok uzun olan yörellerde bir normalizasyon yapacağız.
+
+94
+00:12:46,296 --> 00:12:48,696
+Modelin sapmasını etkilemesin diye.
+
+95
+00:12:50,016 --> 00:12:54,916
+Ve de yine bulunan bu veriler aslında dünyanın dört bir yanına toplandığı için...
+
+96
+00:12:55,152 --> 00:13:00,612
+Karakterlerin enkodinglerinde bir sıkıntı olabileceği için bunları on tak bir enkoding standartına sokacağız.
+
+97
+00:13:02,212 --> 00:13:12,052
+V'lerde bu temizlemeden sonra kullanmak için V'lerin %80'ini eğitim, %10'u doğrulama, %10'u test için ayıracağız. Geçebiliriz.
+
+98
+00:13:15,443 --> 00:13:43,443
+Bizim bu veri kısmında gördüğünüz, öngördüğünüz bir risk vardı. Bu da sınıf dengesizliği. Aslında veri setlerinde de, internette de zaten genel olarak güvenli yöreller, zararlı yörellerden çok daha fazla. Bu da modelin false negative, false positive gibi veya overfitting gibi şeyler yapmasına sebep olabileceği için, bu tür sıkıntılar çıkarabileceği için biz çözüm alarak...
+
+99
+00:13:43,443 --> 00:13:54,743
+Bu riske tedbir olarak SMOT yöntemini kullanmaya karar verdik. SMOT aslında en yakın komşuluk algoritmasına dayanarak sentetik veriler üreten bir yöntem.
+
+100
+00:13:55,523 --> 00:14:07,343
+Biz de sentetik olarak zararlı yöreller kulü üretip bu iki sınıfın veri sayısını birbirine eşitlemeye ve daha sağlıklı bir model eğitimi olmasına
+
+101
+00:14:08,692 --> 00:14:16,351
+hedefliyoruz. Bu şekilde bir yöntemimiz var. Sınav dengesizliği riskine karşı. Geçebiliriz.
+
+102
+00:14:16,351 --> 00:14:19,340
+Son olarak da...
+
+103
+00:14:19,572 --> 00:14:34,232
+Kullanacağımız bu URL'lerde bir öz nitelik çıkartması yapacağız. Bu öz nitelikler yapısal ve metinsel olarak ikiye ayrılıyor. Yapısal öz nitelikler arasında URL uzunluğu, subdomain derinliği ve alana da risk skoru yer alıyor.
+
+104
+00:14:35,172 --> 00:14:45,112
+URL uzunluğu adına da anlaşılabileceği gibi aslında çok uzun URL'lerin phishing olma ihtimali çok daha fazla oluyor. Bu o yüzden bir öz nitelik olarak var olacak.
+
+105
+00:14:47,572 --> 00:14:53,852
+Subdomenian aslında kelimelerin hepsinin tire veya noktayla ayrılıyor olması oluyor.
+
+106
+00:14:54,452 --> 00:15:02,512
+Ne kadar çok kelime ve ne kadar çok noktayla ayrılmış kelime varsa aslında yine phishing URL'i olma ihtimalini arttırıyor bu.
+
+107
+00:15:15,572 --> 00:15:20,932
+alan adları kullanılabiliyor fishing URL'lerinde. O yüzden bu da bir öz nitelik olacak.
+
+108
+00:15:21,292 --> 00:15:25,712
+Metinsel öz nitelikler arasında özel sembol yoğunluğu ve kelime örüntüleri var.
+
+109
+00:15:26,412 --> 00:15:40,972
+Özel sembol yoğunluğu, içinde, URL'in içinde soru işareti gibi, yıldız gibi, et işareti gibi şüpheli karakterlerin olması ile ilgili bir öz nitelik.
+
+110
+00:15:40,972 --> 00:15:43,572
+Yine bu semboller olunca aslında...
+
+111
+00:15:43,572 --> 00:15:45,152
+Aslında phishing olma ihtimali artıyor.
+
+112
+00:15:45,992 --> 00:15:51,532
+Kelime örüntüleri de anomali, anormal aslında kelimelerin var olması oluyor.
+
+113
+00:15:51,532 --> 00:16:01,752
+Burada birazcık kullanıcıyı psikolojik olarak daha güvenli bir yerdeymiş gibi hissettirmek için saldırganların kullandığı, tercih ettikleri birkaç kelime var.
+
+114
+00:16:01,832 --> 00:16:07,532
+Özellikle güvenli gibi kelimeler veya işte herhangi bir bankanın...
+
+115
+00:16:07,892 --> 00:16:19,212
+Mesela adındaki bir harfi değiştirerek, yine oradaymış gibi bir izlenim oluşturmak için özellikle kullandıkları bazı kelimeler var.
+
+116
+00:16:21,232 --> 00:16:24,492
+Yine bu kelimelerin olması da bir öz nitelik olacak bizim için.
+
+117
+00:16:25,692 --> 00:16:30,812
+Bu şekilde Verde'de öz nitelik analizi yaptıktan sonra programlamaya geçeceğiz.
+
+118
+00:16:31,072 --> 00:16:33,992
+Bu kısmı da anlatması için ekip arkadaşıma bırakıyorum sözler.
+
+119
+00:16:36,820 --> 00:16:41,180
+Merhabalar, ben [öğrenci]. Programlamak kısmını ben anlatacağım.
+
+120
+00:16:42,580 --> 00:16:49,360
+Sunumun bu kısmında projemizin teknik tarafını ve bu araştırmayı hangi metodolojik tasarım üzerine kurmayı planladığımızı anlatacağım.
+
+121
+00:16:51,900 --> 00:16:55,320
+Projenin temelinde Python dilini kullanmayı hedefliyoruz.
+
+122
+00:16:55,920 --> 00:17:01,960
+Bilindiği üzere Python zengin, kütüphane ekosistemiyle makine öğrenmesi dünyasına artık bir sektör standartlarına gelmiş durumda.
+
+123
+00:17:02,740 --> 00:17:17,300
+İde olarak da VS Code platformunu seçtik. Bunun nedeni ise hem sektördeki yaygın kanımı hem de sahip olduğu araçlarla, pluginlerle geliştirme süredimi kolaylaştırması, bölücü büyük topluluk desteğine sahip bu mimariyle veren bir şekilde çalışmayı hedeflıyoruz.
+
+124
+00:17:19,800 --> 00:17:25,160
+Veri işleme kısmında ham yörelleri modelin anlayabileceği vektörel veriler dönüştürecek bir yapı planlıyoruz.
+
+125
+00:17:26,228 --> 00:17:33,347
+Bu süreçte sadece veriyi temizlemekle kalmayıp, özlükselik mühendisliği ile URL yapılarını denilmesini analiz etmeye başlıyoruz.
+
+126
+00:17:33,548 --> 00:17:43,067
+Örneğin, URL uzunluğu, subdomain direnliği veya özel karakter yoğunluğu gibi yapısal ve metinsel özellikleriyle araştırarak modelin öğrenme kapasitesini arttırmaya yapıyoruz.
+
+127
+00:17:44,488 --> 00:17:49,407
+Modelleme tarafında ise, PyTorch ve TensorFlow gibi literatürde başarısız kanıtlanmış kütüphanelerden fayda alacağız.
+
+128
+00:17:49,887 --> 00:17:55,887
+Bu araçlar, karmaşık, oltalama saryolarını bilimsel standartlarda analiz edebilecek katmanlı yapılar kullanımıza imkan tanıyor.
+
+129
+00:17:57,887 --> 00:18:05,887
+Sınıf altıma stratejimizde tek bir algoritma odaklanmak yerine kolektif öğrenme, ensembledi örnek dediğimiz aşırı mı benimselik.
+
+130
+00:18:05,887 --> 00:18:16,587
+Random Forest ve Exitre3s gibi modelleri plana dahil etmenizden temel sebebi şu şekilde, bu algoritmalar birden fazla karar ağacını bir araya getirerek bir ortak akıl oluşturuyor.
+
+131
+00:18:16,756 --> 00:18:23,436
+Bu metodun bilimsel açısından en büyük avantajı model verilerinin ezberlemesi, yani overfitting olma riskinin düşülmesi.
+
+132
+00:18:24,355 --> 00:18:37,195
+Temel amacımız sistemin sadece elindeki veri eskiden öğrenmesi değil, daha önce literatürle karşılamamış 0D saldırını bile yapısal benzerlik üzerinden yüksek doğrultulara ayırt edebilecek bir potansiyel kazanmasını sağlamak.
+
+133
+00:18:40,115 --> 00:18:48,255
+Gradient Boosting tabanlı XGBoost, WhiteGBM ve CatBoost gibi modelleri ise projenin genel verimini arttırmak için tercih ediyoruz.
+
+134
+00:18:49,536 --> 00:18:57,655
+Projemizin başarısı sadece doğru tahmin yapmak değil, bu tahmini yaparken sistem kaynaklarını ne kadar efektif kullanmamız ve modelin ne kadar ölçeklenir olduğu ile ilgili.
+
+135
+00:18:59,255 --> 00:19:04,895
+Bu modeller arasındaki verimdeki farklarını ortaya koymak, araştırmamızın uygulanabilirliği açısından en önemli teknik çıkılarımızdan biri olacak.
+
+136
+00:19:08,435 --> 00:19:13,076
+Son olarak, bu teknik kurgun en hassas noktası olan optimizasyon sürecinden bahsedeceğim.
+
+137
+00:19:14,335 --> 00:19:20,215
+Paramatres seçimlerinde objektifliği korumak adına kullanma kütüphanesiyle otomatik denilmiş bir optimizasyon süreci planlamaktadır.
+
+138
+00:19:20,775 --> 00:19:25,155
+Buradaki ana odamız, hata minimizasyonu, prensibi doğrusunda hareket etmek.
+
+139
+00:19:25,815 --> 00:19:34,735
+Özellikle siber güvenlikleri çok kritik olan false pozitif durumunu, yani diyelim güvenli bir eposyaların yanlışlıkla engellemesini en az elinde engellemeyi hedefliyoruz.
+
+140
+00:19:36,051 --> 00:19:43,271
+Başarımız ise, Eqlose'i, F1 skoru gibi literatürde kabul gören ve araştırma tutarlığını kanıtlayan metriklerle ölçerek raporlamayı hedefliyoruz.
+
+141
+00:19:44,311 --> 00:19:48,331
+Özellikle dediğim bu tasarım, projemizin teknik altyapısını ve metodolojik çerçevesinde oluşturuyor.
+
+142
+00:19:48,991 --> 00:19:54,331
+Şimdi bu kurgunun bize hangi sonuç tutulara ve kazanımlara ulaşacağını anlatması için sözü ekip arkadaşıma devrediyoruz.
+
+143
+00:19:56,851 --> 00:19:58,731
+Merhaba, ben [öğrenci]'dan.
+
+144
+00:20:00,000 --> 00:20:07,360
+Bu bölümde, sonuç slaytlarda, projenin karşılaşabileceği riskler ve zorluklar, projeden beklenen çıktılar ve bu çıktılar netler üzerine konuşacağım.
+
+145
+00:20:07,880 --> 00:20:08,240
+Geçelim.
+
+146
+00:20:10,420 --> 00:20:18,000
+Şimdi arkadaşlarım her ne kadar projenin geliştirme sürecini açıklamış olsalar da, bu süreçler içerisinde karşılaşabileceğimiz bir takım zorluklar ve riskler bulunmaktadır.
+
+147
+00:20:19,200 --> 00:20:24,200
+Örneğin proje için kullanılan veri setlerinde sınıf dengelsizliği bulunabilir. Böyle bir sorunuysa,
+
+148
+00:20:24,723 --> 00:20:28,063
+Sentetik ve üretimi ve uygun örnekleme yöntemleriyle çözeceğiz.
+
+149
+00:20:28,623 --> 00:20:35,783
+Aynı biçimde geliştirme sürecindeki deneylerin tekrarlanamazlığı da bu projede karşılaşılabilecek önemli sorunlardan birisi.
+
+150
+00:20:35,783 --> 00:20:44,443
+Zira elde edilen sonuçların aynı koşullar altında tekrarlanabilirliği bilimsel deneylerin doğruluğunun kanıtlanması için en önemli kriterlerden biridir.
+
+151
+00:20:44,948 --> 00:20:58,728
+Nasıl yer çekmeyi inmesinin aynı olduğu bir yerde topuna iki kez aynı yükseklikten bırakıldığında, yani aynı ortam koşullarında aynı zamanda yere düşmesi gibi, aynı parametrelerle yapılan deneylerinde tekrarlandığında aynı sonuçlara vermesi gerekiyor.
+
+152
+00:20:59,347 --> 00:21:15,307
+Bu nedenle de bu proje süresince yapacağımız olan karşılaştırmalı deneylerde parametre kayıtlarını tutup, modellerin pipeline'larını standartlaştırıp, aynı random seed'i yani rastlaya seçimlerde aynı sonuçların alınması için kullandığımız bir değişken bu random seed kullanılacaktır.
+
+153
+00:21:16,527 --> 00:21:27,127
+Ayrıca farklı koşullarda yapılan deneylerin ortalamasını ve standart satmasını hesaplayıp, istatistiksel olarak anlamsız olan performans farklarının da önüne geçeceğiz. Burada close validation da kullanacağız.
+
+154
+00:21:27,347 --> 00:21:39,927
+Ek olarak. Ayrıca bu slide'da bahsetmediğimiz çeşitli riskler bulunmakta ve bu risklere sunmuş olduğumuz çözüm önerilerimiz tarafınıza iletmiş olduğumuz raporumuzda da yağ almaktadır. Geçebiliriz.
+
+155
+00:21:41,875 --> 00:21:48,255
+Önceki slide ile karşılaşabilecek risklerden bahsettiğimiz ile şimdi de bu projenin başarılı olduğunu kanıtlayacak metiklere bir gözlezdirelim.
+
+156
+00:21:49,015 --> 00:22:01,316
+Görmekte olduğunuz gibi, projede kullanılacak olan modellerin başarı metikleri dünyada genel olarak kullanılan, neredeyse standartlaşmış olan Actress, Precision, Recall ve F1 Score metikleri, [öğrenci]'in de az önce bahsetmiş olduğu gibi.
+
+157
+00:22:01,975 --> 00:22:09,875
+Buradaki Actress'i Score bir modelin ortalama başarısını gösterirken, Precision Score'u ise bir modelin doğru tahmin ettiği maddelerin ne kadarının doğru...
+
+158
+00:22:09,875 --> 00:22:17,036
+Doğru olduğunu, recall skoru ise doğru olan maddelerin kaçının doğru olarak algılandığını belirten değerler.
+
+159
+00:22:17,475 --> 00:22:21,596
+F1 skor ise precision ve recall değerlerinin harmonik ortalamasını belirten bir değerdir.
+
+160
+00:22:21,596 --> 00:22:29,135
+Ve formülü de ekrandaki gibi 2 çarpı precision çarpı recall bölü precision artı recall'dur.
+
+161
+00:22:29,796 --> 00:22:37,375
+Bu projede bir modelin başarılı olarak kabul edilmesi için o modelin F1 skor değerinin %85-90 değerlerinde olması gerektiğini düşünüyoruz.
+
+162
+00:22:37,715 --> 00:22:52,155
+Hatta ne kadar iyi bir performans gösterisi o kadar iyi ama fazlasının da overfitting ihtimali mevcut. %99 gibi değerler de overfitting riskine sahip olduğu için öyle bir değer göstermeye uygun gördük. Geçebiliriz.
+
+163
+00:22:54,036 --> 00:22:59,155
+Şimdi proje modellerinin başarı metiklerini de incelediğimize göre geliştireceğimiz proje çıktılarını...
+
+164
+00:22:59,855 --> 00:23:08,615
+Bir bakalım. Bu çıktılar yalnızca bir takım soyut, vasemsal ve fikrsel çıktılardan ziyade somut sonuçlar olmasını hedefliyoruz.
+
+165
+00:23:08,655 --> 00:23:15,736
+Somut ürünler koymayı hedefliyoruz. Bu ürünlerin başında ise geliştireceğimiz modellerin kullanılabileceği bir ürün prototipi geliyor.
+
+166
+00:23:15,935 --> 00:23:21,675
+Ancak bu ürün prototipinin nasıl bir şekilde olacağı konusunda henüz tam detaylarımız belli değil.
+
+167
+00:23:21,796 --> 00:23:24,536
+Ürünün alabileceği üç şekil üzerinde tartışmalarımız devam ediyor.
+
+168
+00:23:25,811 --> 00:23:30,791
+Seçenekler genel olarak ürünün tek başına veya toplu olarak URL'leri test eden bir uygulama olması,
+
+169
+00:23:31,316 --> 00:23:39,895
+Sırf veya alternatif olarak API yetişimleriyle hala hazırda var olan e-mail servislerine Gmail gibi, Outlook gibi entecedilebilecek bir internet eklentisi olabilir.
+
+170
+00:23:41,336 --> 00:23:56,996
+İkinci seçenekle gidilmesi durumunda ise bu seçeneğe benzer olarak şu anda var olan Mozilla Thunderbird, Betterbird, K9 Mail gibi eklenti desteklenen e-mail yönetim programlarına yönelik bir eklentide çıkartılması projenin ileri aşamalarında düşünülmekte.
+
+171
+00:23:58,099 --> 00:24:08,099
+Burada belirttiğim somut ürünlerin yanı sıra üniversitemizin küresel çapta pozitif bir etkiye sahip olması için çeşitli dergi ve konferanslara makaleler ve bildiriler gönderme hedefliyoruz.
+
+172
+00:24:08,939 --> 00:24:18,220
+Hedeflediğimiz dergiler arasında konu ile alakalı olan IEEE ve Elsevier dergileri gibi genel olarak Q1'de yer alan dergiler bulunmakta şu anda hedeflerimizde.
+
+173
+00:24:18,900 --> 00:24:27,059
+Ayrıca bu proje, projede çalışan yüksek lisans öğrencilerinin test projesi olduğu için bu projenin sonunda büyük bir projenin geliştirmesi ve yönetiminde yer almış,
+
+174
+00:24:29,059 --> 00:24:36,320
+sumut ürünler ortaya koymuş araştırmacılarını da yetiştirmesi, hedeflenmekte bu projenin çıktılarında. Geçebiliriz.
+
+175
+00:24:38,320 --> 00:24:41,036
+Ancak bu projenin etkileri yalnızca...
+
+176
+00:24:41,107 --> 00:24:46,548
+Az önce belirtim çıktılarla sınırlı değil, Sibel Düren Etik'e de pozitif etkilerde bulunacak.
+
+177
+00:24:47,380 --> 00:25:02,640
+Bir proje bu. Ve bu etkilerin en önemlisi ise belirtmiş olduğumuz gibi teknolojik okul yazarlığı az olan bireylerin ve birey gruplarının, örneğin yaşlılar veya aktif olarak bilgisayar kullanmayan ve kötü amaçlı linkleri ayırt edemeyen bireyler.
+
+178
+00:25:02,640 --> 00:25:11,880
+Hatta bazı durumlarda bu işte kalifiye olan siber güvenlik uzmanlarının bile kötü amaçlı URL'ler kullanan saldırılar sonrasında uyuyacağı maddi ve manevi zararların minimize edilmesi.
+
+179
+00:25:12,723 --> 00:25:21,043
+Genel olarak bu saldırıların arasında ve sızıntıları ve etkileriyle altyapı hasarları yer almakta bu maddi ve manevi etkiler arasında.
+
+180
+00:25:22,423 --> 00:25:30,644
+Sonuç olarak beklediğimiz şey zararları minimize edilmesi nedeniyle bu türden saldırıların efor ödül oranının negatif etkilenmesi ve bunun nedeniyle
+
+181
+00:25:30,644 --> 00:25:39,943
+kötü amaçlı ürünler kullanan saldırı türlerinin ortadan kaldırılması bu projenin son hedefi veya çok azaltılması.
+
+182
+00:25:40,352 --> 00:25:54,472
+Belirtilen bu katkılara yakın olarak yayınlanacak olan dergi makaleleri ve konferans bildirileri ile ülke çapındaki üniversitelerimizin, ki baştaki Yıldız Teknik Üniversitesi olmak üzere, Siber Güvenlik Anlındaki yetkinliği ve önü de pekiştirilecektir. Geçebiliriz.
+
+183
+00:25:56,132 --> 00:26:01,352
+Bizi dinlemiş olduğunuz için teşekkür ederim. Herhangi bir sorunuz varsa sorabilirsiniz. Dinlediğiniz için tekrar teşekkür ederim.
+
+184
+00:26:02,420 --> 00:26:17,560
+Teşekkürler arkadaşlar. Güzel sundunuz. Genel olarak hepsini güzel anlattınız. Konu da güzel. Sadece bir tane soru, şöyle bir soru sorayım. Bu modellerin girdisi ve çıktısı ne tam olarak?
+
+185
+00:26:19,240 --> 00:26:20,640
+Mesela modeller, evet.
+
+186
+00:26:21,560 --> 00:26:22,900
+Orada şöyle anlatayım ben.
+
+187
+00:26:23,215 --> 00:26:36,355
+Yani girdi olarak diyelim bir son ürün olarak bahsediyorum. Girdi olarak bir yörel verilecek. Daha sonrasında bu yörelde oltalama veya değil olarak şekilde sınıflandırılacak şekilde bu şekilde. Eğitim velilere de o şekilde sınıflandı olmuş durumda.
+
+188
+00:26:37,491 --> 00:26:47,111
+Tamam, yani sizin şimdi etiketli verileriniz de o şekildeydi değil mi? Kullanacağınız etiketli veriler. Yani iki tane kategori var çıktı olarak. Doğru mu?
+
+189
+00:26:47,111 --> 00:26:57,011
+İki sınıflı veri seti var. Old form ile normal deneyin yöreller şeklinde. Sınıf adım edildi en son yaptığımız model o şekilde edecek.
+
+190
+00:26:58,091 --> 00:27:01,111
+Tamam, yani yörel verilecek. O yörel...
+
+191
+00:27:02,195 --> 00:27:09,635
+Oltalama ya da değil diye, sağlam, düzgün, iyi ya da oltalama şeklinde olacak, anladım.
+
+192
+00:27:10,935 --> 00:27:13,595
+Sınıflandırması, o şekilde iki kategori gibi sınıflandırma.
+
+193
+00:27:14,115 --> 00:27:19,115
+Tamam, başka herhangi bir sorusu olan var mı bu gruba?
+
+194
+00:27:20,115 --> 00:27:22,875
+Hani dinleyicilerden herhangi bir sorusu olan var mı?
+
+195
+00:27:24,723 --> 00:27:29,643
+Tamam, güzel sundunuz arkadaşlar. Tebrik ediyorum sizi. Diğer gruba geçelim hemen.
+
+196
+00:27:29,903 --> 00:27:31,243
+Teşekkür ederiz hocam. Sağ olun.
+
+197
+00:27:34,603 --> 00:27:36,523
+Ekran paylaşımı yapıyorum hocam.
+
+198
+00:27:44,531 --> 00:27:49,971
+Gözüküyor mu? Evet, şu an görünüyor. Hemen başlayabilirsiniz.
+
+199
+00:27:50,692 --> 00:28:10,491
+Merhaba, bugün TÜBİTAKBİ'nin bir projemiz kapsamında hazırladığımız çalışmayı tanıtacağım. Bu çalışmada büyük dil modelleri kullanılarak sentetik veri üretimi ele alınıyor. Ancak adak noktamız sadece veri üretmek değil, üretilen veriyi güvenilir ve yüksek kaliteli hale götürmek. İhaya amacımız ise küçük dil modellerinin daha etkili öğrenmesini ve performansını arttırmaktır.
+
+200
+00:28:14,036 --> 00:28:22,736
+Bu çalışmada ne yapıyoruz? Büyük dil modelleriyle sentetik veri üretiyoruz ve bunu küçük dil modellerine vererek onların performanslarını aktaracağız.
+
+201
+00:28:23,656 --> 00:28:29,616
+Peki asıl sorun nerede burada? Asıl sorun küçük dil modellerinin yeterli kaliteli veriye sahip olmamasıdır.
+
+202
+00:28:30,156 --> 00:28:34,816
+Büyük dil modelleri sentetik veri üretebiliyorlar ancak bu veriler her zaman doğru ve tutarlı olmuyor.
+
+203
+00:28:35,316 --> 00:28:38,856
+Halüsinasyon bir olasılık, tutarsızlık ve mantık hataları da sıkışa görülüyor.
+
+204
+00:28:39,380 --> 00:28:44,240
+Bu durum küçük bir modellerin yanlış öğrenmesini ve genel performansın düşmesine sebep oluyor.
+
+205
+00:28:45,840 --> 00:28:46,779
+Bu sorun neden önemli?
+
+206
+00:28:47,539 --> 00:28:50,799
+Bu sorun önemli çünkü yapay zeka modelleri neyi görürse onu öğrenir.
+
+207
+00:28:51,240 --> 00:28:53,779
+Onlar insanlar gibi düşme kapasitesine sahip değiller.
+
+208
+00:28:54,320 --> 00:28:57,220
+Hatalı veya düşük kaliteli veri hatalı bir model anlamına geliyor.
+
+209
+00:28:57,900 --> 00:29:01,340
+Özellikle küçük modellerde veri kalitesi sistemin temelini oluşturur.
+
+210
+00:29:01,779 --> 00:29:07,940
+Kalitesiz veriyle yetilen modeller hem güvenilmez sonuçlar verir hem de gerçek dünya uygulamalarında ciddi riskler oluşturur.
+
+211
+00:29:09,379 --> 00:29:19,419
+Peki şu ana kadar neler yapıldı? Şu ana kadar veri arttırma konusunda çeşitli yöntemler geliştirildi. Bunların çoğu tek bir büyük dil modeli üzerine kuruldu.
+
+212
+00:29:19,919 --> 00:29:29,139
+Üretilen sentetik veriler genellikle üretim sonrası manuel olarak veya basit filtrelerle temizlenmeye çalışılıyor. Ancak bir arkadaşımlar bir sistematik güvence sağlamayabilir.
+
+213
+00:29:31,220 --> 00:29:36,380
+Peki bu yöntemler neden yetersiz? Bu yöntemler yetersiz çünkü tek bir modele güvenmek risklidir.
+
+214
+00:29:36,680 --> 00:29:41,860
+Üretilen veri her zaman otomatik olarak kontrol edilemez ve çoğu durumda insan müdahalesine ihtiyaç duyulur.
+
+215
+00:29:42,300 --> 00:29:47,260
+Bu da hem zaman hem de maliyet açısından verimsizdir ve ölçeklenebilir bir çözüm değildir.
+
+216
+00:29:48,260 --> 00:29:50,260
+Bu çalışmanın sorduğu soru...
+
+217
+00:29:51,316 --> 00:30:02,756
+Şudur, birden fazla ajan birlikte çalışırsa ne olur? Veri kalitesini otomatik olarak arttırabilir miyiz? Ve çoklu ajan yaklaşımı küçük dil modellerinin performansına anlamlı bir katkı sağlayabilir mi?
+
+218
+00:30:04,372 --> 00:30:19,112
+Projemizin temel amacı, veri üretimini daha güvenli bir hale getirmektir. Hem kaliteli hem de çeşitli sintetik veri elde ederek, 3.2 modellerinin eğitim sürecini iyileştirmeyi hedefliyoruz. Böylece daha az veri ile daha yüksek performans elde etmeyi mümkün kılacağız.
+
+219
+00:30:21,251 --> 00:30:27,991
+Bu amaç nasıl gerçekleşecek? Bu amaç, farklı görevler için farklı ajanlar kullanılarak gerçekleştirilecek.
+
+220
+00:30:28,339 --> 00:30:35,439
+Her üretilen veri parçası ayrı ayrı değerlendirilecek ve sonuçlar birleştirilerek en iyi, en kaliteli veriler seçilecektir.
+
+221
+00:30:36,139 --> 00:30:40,179
+Böylece üretim ve denetim süreçleri sistematik bir biçimde entegre edilmiş olacak.
+
+222
+00:30:41,979 --> 00:30:49,099
+Önerilen fikrimiz çoklu ajan yaklaşımı. Bu fikirde tek model yerine birden fazla ajan birlikte çalışıyor.
+
+223
+00:30:49,455 --> 00:30:59,275
+Her ajan farklı bir açıdan değerlendirme yapacak semantik, format, bilgi doğruluğu ve dil bilgisi açısından bu sayede daha dengeli, güvenilir ve yüksek kaliteli sonuçlar elde edeceğiz.
+
+224
+00:31:01,715 --> 00:31:06,135
+Burada gördüğünüz şamada multi-agent yapısının genel tasarımı yer almakta.
+
+225
+00:31:06,755 --> 00:31:14,895
+Üst düzeyde yüksek kaliteli, açık kaynak ve yüksek tarfa bas modellerden oluşan bir seçim stratejisiyle üretici ajanlar belirlenmiştir.
+
+226
+00:31:15,284 --> 00:31:20,903
+Bu yapıda ChatGPT, Lama ve Gemini gibi modeller farklı roller üstlenmektedir.
+
+227
+00:31:24,307 --> 00:31:35,248
+Çalışmalarımızda bağımsız değişkenler olarak, front tipi, model boyutu, multi-hacet yaptığı taramadır ve başlangıç verim miktarı ile kalitelerini inceliyoruz.
+
+228
+00:31:35,887 --> 00:31:42,967
+Bağımlı değişkenler ise veri kalitesi skorları, anlamsal çeşitlilik, model halüsinasyon oranı olarak belirlendi.
+
+229
+00:31:45,127 --> 00:31:46,687
+Sistemimiz nasıl çalışıyor?
+
+230
+00:31:47,104 --> 00:31:52,803
+Sistem şu şekilde çalışıyor. Önce üretici ajan büyük bir modelleri harcılığıyla sentetik veriyi üretiyor.
+
+231
+00:31:53,043 --> 00:31:56,124
+Ardından farklı değerlendirme ajanları da üretilen veriyi inceliyor.
+
+232
+00:31:56,844 --> 00:32:01,483
+Son olarak da veriler sporlara göre seçilerek eğitim sürecinde kullanılıyor.
+
+233
+00:32:05,107 --> 00:32:09,667
+Şimdi mimarinin nasıl çalıştığını ve sistemin akışını anlatması için sözü sayıta bırakıyorum.
+
+234
+00:32:11,047 --> 00:32:12,327
+Ses mi geliyor değil mi?
+
+235
+00:32:12,827 --> 00:32:13,027
+Evet.
+
+236
+00:32:14,227 --> 00:32:15,967
+Ben paylaşayım istersen.
+
+237
+00:32:16,607 --> 00:32:17,047
+Olur.
+
+238
+00:32:27,155 --> 00:32:48,016
+Ben de aslında mimarinin detaylarını anlatmaya çalışacağım. İlk olarak veri üretimi kısmından bahsetmiştik. Burada çeşitli yukarıda aslında şemasını gösterdiğimiz çeşitli, çok hızlı geçtim, çeşitli dil modelleriyle aslında farklı çeşitlerde veriler üretebilmeyi hedefliyoruz.
+
+239
+00:32:48,980 --> 00:33:03,600
+Daha sonra aynı girdiden farklı örnekler üretti, veri çeşitliliğini arttırmayı ve bu örnekler arasında da yine değerlendirici modeller sayesinde en iyi sonucu almayı hedefliyoruz.
+
+240
+00:33:04,539 --> 00:33:09,460
+Bir de veriyi denetleyen modeller var, dil modelleri tarafı var.
+
+241
+00:33:09,460 --> 00:33:16,920
+Bu da az önce bahsettiğim üretilen verileri, cümle yapısı olsun, kelime çeşitliliği olsun.
+
+242
+00:33:16,980 --> 00:33:19,740
+Anlamsal doğruluk olsun, semantik değerlendirme olsun.
+
+243
+00:33:19,740 --> 00:33:33,480
+Bu şekilde değerlendirerek bir kalite skoru çıkarıp aslında üretilen verinin kalitesini çıkarmayı ve en kaliteli verilerin seçilmesini sağlamayı hedefliyor.
+
+244
+00:33:34,132 --> 00:33:40,172
+Burada da aslında bir akışlı yakın var. Üretici ajanlar verinin üretimini sağlıyor.
+
+245
+00:33:41,692 --> 00:33:48,892
+Sentetik verinin. Daha sonra çeşitli perspektiflerden değerlendirme ajanlarımız var.
+
+246
+00:33:49,392 --> 00:33:58,932
+Bunlar kalite skorlarını çıkarıyor ve son olarak seçim ajanında bu kalite skoruna göre bu verinin veri setine dahil edilip edilmeyeceğini seçiyor.
+
+247
+00:33:59,892 --> 00:34:11,552
+Burada modelleri de sentetik veriyi üretebilmek için baz alabileceğimiz bazı veri setlerine ihtiyacımız var. Burada da açık kaynak veri setleri kullanacağız.
+
+248
+00:34:13,692 --> 00:34:22,711
+Açık kaynak metnisel veri setlerini. Burada işte dolu ve alpaka gibi veri setleri kullanılabilir demişiz.
+
+249
+00:34:23,860 --> 00:34:40,200
+İyi veri nasıl seçiliyor? Az önce bahsettiğim gibi aslında tek bir yönden değil de çoklu yönden burada üretilen veriler değerlendiriyor ve her biri için ayrı ayrı her bir parametre için ayrı ayrı kalite skoru belirleniyor ve bu.
+
+250
+00:34:40,596 --> 00:34:47,956
+Skorların birleştirilmesi sonunda belli bir eşiğin üzerinde kaliteli diyebileceğimiz verilerin alması sağlanıyor.
+
+251
+00:34:48,895 --> 00:35:00,796
+Ortaya çıkan veriyle de aslında az önce [öğrenci]'nin de bahsettiği gibi küçük verilerin eğitimi için kullanılarak daha az veriyle daha iyi sonuçlar alabilmeyi hedefliyoruz.
+
+252
+00:35:07,552 --> 00:35:15,811
+Eccurisy ve F1 skor gibi ya da Blue Skor gibi skorlama metotlarıyla ölçülecek.
+
+253
+00:35:17,552 --> 00:35:24,472
+Modeller üzerindeki başarıyla aslında bu sistemin başarımı ölçülecek küçük dil modelleriyle.
+
+254
+00:35:28,692 --> 00:35:39,291
+Kullanışlı verilerin elde edilmesi ve model hatalarının azaltılması ve modellerin aslında daha amaca uygun bir şekilde eğitilebilmesinin sağlanması.
+
+255
+00:35:39,471 --> 00:35:42,572
+Bu sayede de genel performans artışının sağlanması.
+
+256
+00:35:43,431 --> 00:35:53,612
+Bu çalışmalarının da literatüre sunduğu katkı aslında diğer çalışmalardan farkı da çoklu ajan yaklaşımı ve otomatik kalite kontrolü.
+
+257
+00:35:55,155 --> 00:36:17,975
+Bu sistem aslında nerelerde işe yarar ona da değinecek olursam kısaca. Veri olarak çeşitli veri bulunmayan, az veri bulunan alanlarda bu kısıtlı verinin çoğaltılabilmesi, çeşitlendirilebilmesi için kullanılabilir. Eğitim, sağlık ve kamu sistemlerinde kullanılabilir. Özel sektörde de çeşitli ihtiyaçlara göre kullanılabilir.
+
+258
+00:36:17,975 --> 00:36:22,975
+Projemizi de kısaca özetleyecek olursak sadece veriyi üretmiyoruz.
+
+259
+00:36:23,155 --> 00:36:30,015
+Burada çeşitli yönlerden üretilen veriyi değerlendirip sadece en kaliteli verileri almayı hedefliyoruz.
+
+260
+00:36:30,015 --> 00:36:44,675
+Ve aslında çoklu ajan yaklaşımıyla da her bir alana yönelik özel ajanlarla aslında her alanda en iyi olan verilere seçmeyi hedefliyoruz.
+
+261
+00:36:45,096 --> 00:36:51,155
+Ve bu verilerle de daha güvenilir ve etkili modeller oluşturabilmeyi.
+
+262
+00:36:51,155 --> 00:36:56,376
+eğitebilmeyi hedefliyoruz. Bizim sunumumuz bu kadardı. Teşekkür ederiz.
+
+263
+00:36:58,595 --> 00:37:06,956
+Teşekkürler. Şimdi bağımlı değişkenler, bağımsız değişkenler vardı değil mi? Onu hangi modelde kullanacaksınız bunları?
+
+264
+00:37:07,923 --> 00:37:13,103
+Bu aslında sistemin genel olarak çıkarmıştık biz bunu hocam.
+
+265
+00:37:13,643 --> 00:37:31,863
+İşte burada bağımsız değişkenler tarafında baktığımız zaman aslında prompt tipi veri üretim aşamasında örneğin model boyutu ama hem büyük dil modellerinde hem de küçük dil modellerinde işte çeşit çeşit model boyutları olabiliyor.
+
+266
+00:37:32,703 --> 00:37:35,783
+Bu aslında sistemin geneli için çıkarmıştık.
+
+267
+00:37:35,923 --> 00:37:46,763
+Konu ne burada? Baştan bir bakalım mı en başta? Konumuz ne burada? Skor tabanlı multi-agent elelen veri artırma. Konumuz bu, veri artırma.
+
+268
+00:37:48,916 --> 00:37:51,916
+Yani veri artırma nasıl yapılır mı? Amaç...
+
+269
+00:37:52,695 --> 00:38:00,815
+Evet, evet [öğrenci]. Yani sentetik veri üretirken aslında kalitenin de sağlanabilmesi bizim hedefimiz.
+
+270
+00:38:00,815 --> 00:38:14,815
+Evet, küçük dil modellerinde büyük dil modellerinin kapasitesi olmadığı için onlara daha özel tasarlanmış, daha özenle seçilmiş veriler üreterek küçük modellerinde büyüklere yakın ya da benzer performanslar göstermesini hedefliyoruz.
+
+271
+00:38:15,987 --> 00:38:19,947
+Bu projenin hedefi o zaman ne bir daha söyleyin?
+
+272
+00:38:21,547 --> 00:38:34,307
+Büyük modellerden yardım alarak küçük modeller için özelleştirilmiş ve onları kendi alanlarında yüksek performans göstermelerini sağlayabilecek veriler sunmak.
+
+273
+00:38:34,835 --> 00:38:43,735
+Anladım. Literatürde neler yapılmış bununla ilgili? Ondan bahsettik mi? Mesela literatürde bunlar bunlar yapılmış. Ama bu hala eksik kalmış.
+
+274
+00:38:44,255 --> 00:38:48,195
+Literatürde evet başta biraz aslında dolaylı yoldan bahsettik.
+
+275
+00:38:50,416 --> 00:38:55,036
+Yine veri üretme büyük modelleri kullanarak küçük modeller için veri üretme yapılmış.
+
+276
+00:38:55,176 --> 00:39:04,196
+Fakat bizimki gibi bunu farklı büyük modeller kullanarak ve farklı açılardan değerlendirilerek sistemsel bir hale getirmiş bir yol yok.
+
+277
+00:39:04,416 --> 00:39:08,456
+Biz bunu var olan bir yolu daha sistemli bir hale getirmeyi planlıyoruz.
+
+278
+00:39:08,996 --> 00:39:13,536
+Bu sayede sistem kendi içinde tekrarlayarak ve test ederek en iyi sonuca ulaşabilecek.
+
+279
+00:39:13,776 --> 00:39:14,916
+Yani insan etkisini azaltıyoruz.
+
+280
+00:39:15,635 --> 00:39:31,556
+Tamam, amaç bu. Literatürde bunlar tam olarak bu kadar istediğimiz gibi olmamış değil mi? Ondan sonra tamam, bu amaçla ne yapıyoruz sonra? Sonra metodumuz ne oluyor burada o zaman? Nasıl bir metodla bu yapılıyor şimdi?
+
+281
+00:39:39,860 --> 00:39:51,960
+değerlendirici ajanlarla, değerlendirici dil modelleriyle değerlendirilip orada insan etkisini yani değerlendirme kısmında da insan etkisini azaltmayı hedefliyoruz.
+
+282
+00:39:53,420 --> 00:40:01,840
+Tamam. Metot ne şimdi burada? Araştırmanın metodu nasıl bir metot kullanılacak bunu yapmak için?
+
+283
+00:40:03,507 --> 00:40:17,327
+Farklı büyük modeller, farklı özellikler açısından önce eğitilecek ya da bunlar için daha doğrusu kontrol mekanizması olarak ayarlanacak.
+
+284
+00:40:17,327 --> 00:40:23,327
+Ve öncelikle veri ürettireceğiz büyük modelleri kullanarak ardından bu...
+
+285
+00:40:24,275 --> 00:40:35,775
+Kontrol mekanizmaları da veriyi farklı açılardan, mesela gramer açısından veya konuya uygunluk açısından veya halistirasyon oranına bakarak değerlendirilecek ve belli skorlar verilecek.
+
+286
+00:40:35,775 --> 00:40:44,775
+Bu skorların belli bir oranlarını alarak katsayılarla çarpıp bir sonuç elde edeceğiz. Bu sonucun sonunda da eğer ki doğru belli bir...
+
+287
+00:40:45,396 --> 00:40:52,096
+Seviyenin üzerinde puan alabildiyse bizim için yeterli olacak ve bunu test ederek küçük modellerdeki performans artışına bakacağız.
+
+288
+00:40:52,695 --> 00:41:00,476
+Eğer performans artışı sağlandıysa model geçecek, sağlanmadıysa sistemi biraz daha değiştirip, parametreleri değiştirip tekrardan deneyeceğiz.
+
+289
+00:41:01,043 --> 00:41:17,744
+Tamam. Yöntem de bu. Yaygın etki ya da olası riskler mesela onlardan bahsettik mi? Olası riskler, hangi riskler olabilir bunu yaparken? Bu riskleri biz nasıl tolere edebiliriz ya da bu riskleri nasıl aşabiliriz?
+
+290
+00:41:18,724 --> 00:41:27,244
+Belki de aslında bahsettik şu an slide'da bir bakmam gerekiyor ama yaygın riskler, halisasyon riskinin artması olabilir ya da overfitting olabiliyor.
+
+291
+00:41:27,728 --> 00:41:34,407
+Büyük modellerin, küçük modellerin, olası riskler bunlar.
+
+292
+00:41:35,367 --> 00:41:44,508
+Ve yine yanlış eğitim sonucu, küçük modellerin, özellikle tıp gibi alanlarda kullanılan daha ufak modellerin, yardımcı modellerin yanlış sonuç üretmesi de bir olası bir risk.
+
+293
+00:41:45,684 --> 00:42:02,784
+Onlara karşı da test mekanizmamızın daha doğrulanması ve kontrolünün sıklaştırılması gerekiyor. İnsan etkisini azaltıyoruz fakat sıfıra indirmiyoruz. En azından başta ve sonda uzman kontrolünden geçmesi bir öner mekanizması olarak bulunuyor.
+
+294
+00:42:03,315 --> 00:42:08,996
+Tamam. Etkileri, yaygın etkisi, katkıları neler olur?
+
+295
+00:42:09,755 --> 00:42:25,275
+Küçük modellerin eğitimini sağladığımız için büyük modelleri kullanma imkanı olmayan küçük işletmelerin ve daha özelleşmiş alanların yapay zekaya daha etkili erişimi olacaktır.
+
+296
+00:42:31,123 --> 00:42:53,543
+Birkaç soru sorduğu takdirde sizin için ideal kitapları mesela seçiyor olabilir ya da tıp konusunda büyük modellerin kullanılması zorken, MHRS gibi uygulamalarda mesela, bize semptomlarımızı girdiğimiz takdirde uygun doktor seçimini yapması gibi şeyler olacak.
+
+297
+00:42:54,483 --> 00:43:00,623
+Büyük modellerin kullanılmasına mümkün olmadığı hemen her alanda performans artışı sağlamayı hedefliyoruz.
+
+298
+00:43:00,623 --> 00:43:14,704
+Yani küçük amacımız büyük şirketler için diller üretmek değil de daha küçük işletmeler için uygun maliyetli ve performanslı yapay zeka sistemleri üretmek.
+
+299
+00:43:16,692 --> 00:43:44,012
+Genel olarak evet güzel, konu güzel, fikir güzel. Güzel anlattınız soruları. Mesela şey söyleyeyim sadece, şu bağımlı da değişken, bağımsız değişken var ya arkadaşlar, o aslında hani genel olarak istatistiksel modellerde o bağımsız değişken, bunu biliyoruz zaten aslında hepimiz değil mi? Bağımsız değişkenleri alıyoruz, o bağımsız değişkenler bağımlı değişkeni nasıl etkiliyor? Yani çıktı bağımlı değişken, girdiler, bağımsız değişkenler oluyor mesela.
+
+300
+00:43:44,692 --> 00:44:01,572
+Bağımsız değişkenler, modeli onu koyduktan sonra o bağımlı değişkeni, yani y mesela bağımlı değişken, işte x1, x2, x3 mesela bağımsız değişkenler. Bunu bu şekilde düşünüyoruz. Normalde hani bir modelin parametreleri aslında diye düşünüyoruz genel olarak.
+
+301
+00:44:03,123 --> 00:44:17,043
+Ama burada hani belki bunun bir modele konulabilir mi? Düşünülebilir. Nasıl olabilir? Mesela bu et bunlar mesela model boyutu ya da sizin bu veri miktarı, kalitesi mesela evet bunlar belki gerçekten.
+
+302
+00:44:17,492 --> 00:44:35,312
+Şu bağımlı değişkenleri etkiliyordur ama belki bunun için bir model düşünülebilir gibi belki tabii araştırılabilir nasıl neler yapılabilir. Genel olarak güzel sundunuz siz de. Herhangi bir sorusu olan var mı dinleyicilerden bu gruba?
+
+303
+00:44:42,291 --> 00:44:45,291
+Tamam, başka...
+
+304
+00:44:46,003 --> 00:45:12,023
+Şimdi bütün gruplarımızı bitirdik değil mi? Sorusu olan da yok. Şöyle haftaya dersimizi sınıfta normal ders saatinde yaparız arkadaşlar. Devam ederiz. Bu hafta hani yarın tatil olduğu için böyle oldu. Online oldu. Bundan sonraki sunumlarımız sınıfta yüz yüze derste devam ederiz yapmaya. Yine her hafta hangi grup sunuyorsa o şekilde devam ederiz.
+
+305
+00:45:13,268 --> 00:45:29,407
+Raporlarınız birinci vize olacak. Hani önceden de söylemiştim. Onu herkes yükledi değil mi? Yani önce sunumu yaparken raporunuzu yüklemiş olmanız lazım. Zaten siz iki grupta yüklemiştiniz değil mi raporunuzu?
+
+306
+00:45:36,307 --> 00:45:44,228
+Sunum yapmanızın anlamı yok değil mi? Birbiriyle bağlantılı ama raporunuz birinci vize, sunumunuz ikinci vize yerine geçecek.
+
+307
+00:45:45,248 --> 00:45:59,728
+Raporlarınızı daha sonra, okuduktan sonra birinci vize olarak gireriz. Sunumlarınızı da ikinci vize olarak. Hepsini bitirdikten sonra girerim ben. Sunum notlarınızı ikinci vize olarak. Bütün sunumlar bittikten sonra girerim.
+
+308
+00:46:00,436 --> 00:46:07,036
+O zaman haftaya dediğim gibi derste, sınıfta devam ederiz arkadaşlar sunumlara.
+
+309
+00:46:09,056 --> 00:46:12,936
+Sorusu olan yok değil mi? Herhangi bir sorusu olan var mı?
+
+310
+00:46:13,536 --> 00:46:13,876
+Yok öyle.
+
+311
+00:46:14,676 --> 00:46:17,016
+Tamam arkadaşlar, haftaya görüşmek üzere.
+
+312
+00:46:17,396 --> 00:46:18,096
+Görüşürüz hocam.
+
+313
+00:46:18,316 --> 00:46:19,436
+İyi günler herkese.
+
+314
+00:46:19,836 --> 00:46:20,316
+Görüşürüz.
