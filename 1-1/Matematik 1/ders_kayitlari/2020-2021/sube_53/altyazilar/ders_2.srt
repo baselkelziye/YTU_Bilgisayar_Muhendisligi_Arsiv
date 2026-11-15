@@ -1,0 +1,3871 @@
+1
+00:01:07,987 --> 00:01:08,807
+Günaydın hocam.
+
+2
+00:03:18,292 --> 00:03:19,512
+Hocam aynen gelmiyor.
+
+3
+00:03:21,391 --> 00:03:22,592
+Şu an geliyor.
+
+4
+00:03:23,252 --> 00:03:24,072
+İyi mi?
+
+5
+00:03:24,711 --> 00:03:25,032
+Evet.
+
+6
+00:03:25,491 --> 00:03:27,792
+Yani bazen kupuk olabiliyor.
+
+7
+00:03:28,331 --> 00:03:30,412
+Bugün de daha önceki derste de yaşadım biraz.
+
+8
+00:03:30,671 --> 00:03:31,792
+Arada kupukluklar oldu.
+
+9
+00:03:32,932 --> 00:03:34,111
+Tamam değil mi şimdi?
+
+10
+00:03:34,711 --> 00:03:35,472
+Tamam hocam.
+
+11
+00:03:36,472 --> 00:03:36,991
+İyisiniz.
+
+12
+00:03:37,792 --> 00:03:38,432
+İyiyiz hocam.
+
+13
+00:03:39,352 --> 00:03:40,692
+Sağ olun ben de yiyeyim.
+
+14
+00:03:43,472 --> 00:03:44,711
+Bugün başlayalım.
+
+15
+00:03:44,891 --> 00:03:45,432
+Tamamsanız.
+
+16
+00:03:46,036 --> 00:03:48,036
+tamam, zaten.
+
+17
+00:04:01,651 --> 00:04:11,171
+konulardan bahsetmiştik, değil mi? Evet, evet, bahsettiniz hocam. Evet, şey yok, fonksiyonlarla başlayacağız.
+
+18
+00:04:13,031 --> 00:04:21,471
+Ders anında şey yapabilirsiniz arkadaşlar, soru sorabilirsiniz, söylemiştim zaten. Yaz alabilirsiniz, sesi de bağlanabilirsiniz.
+
+19
+00:04:23,971 --> 00:04:25,012
+Başlıyoruz o zaman.
+
+20
+00:04:31,124 --> 00:04:32,780
+Fırst topik is functions.
+
+21
+00:04:37,204 --> 00:04:40,564
+Örneğin, bir şekilde bir şekilde başlayalım.
+
+22
+00:05:03,732 --> 00:05:06,972
+because we need to just pick some elements from these sets.
+
+23
+00:05:07,932 --> 00:05:09,712
+let A and B two sets.
+
+24
+00:05:10,872 --> 00:05:13,831
+a function from a set A to B is a rule...
+
+25
+00:05:13,831 --> 00:05:18,272
+Hocam, kusura bakmayın kesiyorum ama sesiniz çok az geliyor.
+
+26
+00:05:21,312 --> 00:05:24,092
+Yaklaştırmamı ister misiniz? Böyle diyoruz yüksek gelebilir ama.
+
+27
+00:05:24,592 --> 00:05:25,292
+İyi diyorsanız tamam.
+
+28
+00:05:25,652 --> 00:05:27,112
+Böyle daha iyi.
+
+29
+00:05:27,432 --> 00:05:27,652
+Tamam.
+
+30
+00:05:28,115 --> 00:05:32,576
+Daha önceki derste lütfen yaklaştırmayın. Ses çok geliyor dediler. Tamam o zaman böyle yapalım.
+
+31
+00:05:36,576 --> 00:05:38,216
+Okay, so let's continue.
+
+32
+00:05:40,515 --> 00:05:47,515
+A function from a set A to B is a rule that assigns a unique element. That means that only one element.
+
+33
+00:05:48,055 --> 00:05:53,675
+fx, x to fx, to each element x element x in A. That means
+
+34
+00:05:54,291 --> 00:06:03,111
+Function is a rule, a formula, which is two different functions, two different points, I'm sorry, between two sets, a and b.
+
+35
+00:06:04,231 --> 00:06:17,511
+Here, we can just say, if it's a function, a formula, or rule, a and b are two different sets, sometimes same sets we may have, x is going to y.
+
+36
+00:06:17,839 --> 00:06:44,235
+fx olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak y olarak
+
+37
+00:06:44,244 --> 00:07:05,804
+y'e a variable, f'e a function. Okay. But here x'e a input variable. We just get first use x and make it y. So x'e a input, y'e a output variable. And also what about dependence? Dependent variable, independent variable. Do you know what are they?
+
+38
+00:07:08,115 --> 00:07:10,675
+yapma, değişken bağımsız.
+
+39
+00:07:10,675 --> 00:07:11,675
+Bağımsız, bağımsız.
+
+40
+00:07:11,675 --> 00:07:18,495
+Yes, well done. Yes, you're right. So, in single variable functions, the variable is always independent.
+
+41
+00:07:19,576 --> 00:07:27,435
+If it is not a composition, not a composition of two functions, it is more frequently an independent variable.
+
+42
+00:07:27,435 --> 00:07:31,495
+But f, functions are always dependent variables.
+
+43
+00:07:32,148 --> 00:07:56,068
+Okay. And also here, y depends on x. y depends on x. Because when x changes, y changes. Because we just defined y with the formula of f, x. So y is dependent, x is independent. Because x depends on nothing. x is free. Okay. And then.
+
+44
+00:08:01,684 --> 00:08:21,064
+The set of A of all possible input values is called the domain. You know, I think domain and range of the function. Domain set and range. Domain is input variables. The set of input variables. Range is the set of output variables.
+
+45
+00:08:22,836 --> 00:08:38,316
+Here we define just a, because the function is defined from a to b, so a is the domain set. df, we just show it with df, donated, domain, and the set of all values of fx, that means all outputs.
+
+46
+00:08:39,860 --> 00:08:43,639
+As x varies throughout A, it's called the range of the function.
+
+47
+00:08:43,879 --> 00:08:50,579
+That means for all values of x, the corresponding values of fx will be the set of range.
+
+48
+00:08:51,220 --> 00:08:53,360
+So we just show it with Rf.
+
+49
+00:08:54,019 --> 00:08:59,639
+So they include all the variables, output variables y, which has this formula.
+
+50
+00:09:00,139 --> 00:09:01,779
+That means belongs to x.
+
+51
+00:09:02,720 --> 00:09:06,920
+The range may not include every element in the set B, we know this.
+
+52
+00:09:07,412 --> 00:09:10,092
+So, our f is a subset of b.
+
+53
+00:09:11,672 --> 00:09:17,112
+When the range of a function is a set of all real numbers, the function is set to be real value.
+
+54
+00:09:17,271 --> 00:09:24,672
+That means range function is including only real values, real numbers.
+
+55
+00:09:25,271 --> 00:09:29,532
+So, the function always produces real numbers.
+
+56
+00:09:29,672 --> 00:09:31,812
+So, it's the real value function, we may say.
+
+57
+00:09:33,251 --> 00:09:34,172
+For example.
+
+58
+00:09:37,107 --> 00:09:40,647
+Here you see lots of different functions and domain and range sets.
+
+59
+00:09:42,567 --> 00:09:44,147
+Think that y is x square.
+
+60
+00:09:45,447 --> 00:09:55,147
+For y is x square, you need to just think for which sets, for which functions, or for which points we can make this function defined.
+
+61
+00:09:56,288 --> 00:10:02,347
+For x square, I think we have no problem. For any real number x, we can just define this function.
+
+62
+00:10:03,731 --> 00:10:06,672
+Ve negatifinfinit to infinity,
+
+63
+00:10:06,672 --> 00:10:11,451
+bu open interval shows the real line,
+
+64
+00:10:11,451 --> 00:10:12,692
+all the real numbers.
+
+65
+00:10:12,692 --> 00:10:14,711
+Ve the range of it,
+
+66
+00:10:14,711 --> 00:10:16,312
+that means the corresponding values
+
+67
+00:10:16,312 --> 00:10:18,971
+because of the type of the function x squared,
+
+68
+00:10:18,971 --> 00:10:21,911
+will be all positive numbers, including zero.
+
+69
+00:10:21,911 --> 00:10:25,371
+So the range set will be positive real numbers,
+
+70
+00:10:25,371 --> 00:10:26,331
+including zero.
+
+71
+00:10:29,052 --> 00:10:30,611
+What about the second function?
+
+72
+00:10:30,799 --> 00:10:57,159
+1 over x. For 1 over x, can you write any number you want here? Of course not. For make this function defined, we have to be careful about the domain set. We cannot put 0 here in the denominator. That's why this is denominator. This is numerator, denominator. If you put 0 here, it will be undefined. Okay, so it must be
+
+73
+00:10:57,491 --> 00:11:14,591
+domain set, not including zero. That means all real line excluded zero. Excluded mean taking outside zero. So negative infinite to zero union zero to infinite. That means all real number excluding zero.
+
+74
+00:11:15,551 --> 00:11:23,751
+The range will be any real number. Again, of course, not zero. We cannot make this function or
+
+75
+00:11:24,532 --> 00:11:44,256
+0'ı 0
+
+76
+00:11:44,255 --> 00:11:56,975
+According to the type of the structures of the functions, we need to just make these functions defined and decide domain sets, which functions or which points will be domain set. This is important to think.
+
+77
+00:11:57,695 --> 00:12:08,175
+That's why in the first function x square, no problem, any real number, you can just make this function defined. So all real line. 1 over x, it mustn't be 0, so
+
+78
+00:12:08,596 --> 00:12:10,475
+outside, zero will be outside.
+
+79
+00:12:10,556 --> 00:12:12,115
+Teacher, I have a question.
+
+80
+00:12:12,576 --> 00:12:12,756
+Yes.
+
+81
+00:12:12,875 --> 00:12:15,675
+I can't understand domains and range.
+
+82
+00:12:16,695 --> 00:12:17,435
+Domain set?
+
+83
+00:12:18,855 --> 00:12:21,355
+Domain set is the set of x.
+
+84
+00:12:21,908 --> 00:12:47,532
+Bu, bu
+
+85
+00:12:48,307 --> 00:12:58,828
+What about the square root x? Square root x, we know, I think all of you know already, square root function is defined for only positive real numbers.
+
+86
+00:13:00,288 --> 00:13:03,648
+The square root inside of the square root cannot be negative.
+
+87
+00:13:04,192 --> 00:13:14,312
+It's not defined for negative numbers. That's why the domain set must be including only positive in the real numbers, including 0. For 0, no problem we have here.
+
+88
+00:13:14,872 --> 00:13:22,372
+The rules of the functions always, you have to just remember these basic functions. And the range of it, of course, will be positive.
+
+89
+00:13:23,512 --> 00:13:26,172
+Square root 4 minus x, you have to be careful.
+
+90
+00:13:26,528 --> 00:13:34,687
+4 minus x must be greater than 0 or equal to be 0. No problem, it can be 0, but positive.
+
+91
+00:13:34,947 --> 00:13:46,088
+So it means 4 minus x positive means x must be less than and equal to 4 means only these numbers make this function defined.
+
+92
+00:13:46,687 --> 00:13:52,108
+So the domain set of this function must be defined in this form. Negative infinity to 4.
+
+93
+00:13:52,500 --> 00:13:59,639
+4 is including, this is open, because 4 makes it 0, and if we have 0, no problem.
+
+94
+00:14:00,339 --> 00:14:04,719
+So this is the domain set. All the real numbers less than and equal to 4.
+
+95
+00:14:05,579 --> 00:14:09,719
+And the range, of course, again, any positive real number including 0.
+
+96
+00:14:12,019 --> 00:14:28,740
+And a similar example, 1-x², for example, if you have, again, once you have a square root, and if I ask you, just specify domain and range sets of this function, you have to just think firstly, okay, this is a square root, so the inside of it must be positive or zero.
+
+97
+00:14:28,740 --> 00:14:32,740
+Okay, so 1-x², when it is positive,
+
+98
+00:14:33,331 --> 00:14:43,032
+If you do the needed operations here, you will see that minus 1 and 1. Between minus 1 and 1, this function is always positive, 1 minus x squared.
+
+99
+00:14:43,751 --> 00:14:50,672
+So the domain set must be minus 1 to 1. For other points outside of this interval will make it negative.
+
+100
+00:14:51,131 --> 00:14:59,211
+That's why this is the domain set. And the range set will be, as a result, between 0 and 1, because it will be always less than 1.
+
+101
+00:15:01,779 --> 00:15:03,699
+What about x square over x?
+
+102
+00:15:06,579 --> 00:15:17,919
+For x square, no problem. But what's the problem here? In the denominator. Once you have a rational function like this, you will see detailed rational functions, exponential functions, etc.
+
+103
+00:15:18,299 --> 00:15:26,799
+You will see that for rational functions, denominator to make this function defined must be different from zero. And here we have x.
+
+104
+00:15:27,956 --> 00:15:34,915
+Only if we exclude x from real line, this function will have no problem. x² over x.
+
+105
+00:15:35,176 --> 00:15:40,515
+If we have no zero in the domain set, okay, for any other real number, this function must be defined.
+
+106
+00:15:41,216 --> 00:15:46,915
+Okay, no problem. And as a result, of course, any non-zero real number will be the output.
+
+107
+00:15:47,755 --> 00:15:50,235
+That's why this is the range set definition.
+
+108
+00:15:51,755 --> 00:15:53,015
+Are you okay up to now?
+
+109
+00:15:54,635 --> 00:15:55,436
+I hope.
+
+110
+00:15:55,663 --> 00:15:58,984
+Evet. Evet. Evet, evet.
+
+111
+00:15:58,984 --> 00:15:59,984
+Evet, evet.
+
+112
+00:16:13,172 --> 00:16:21,951
+x kare artı 2x. y is x means once we get the cancellation, divide with x, x kare artı 2x.
+
+113
+00:16:22,072 --> 00:16:26,652
+But if we can this cancellation, we must be sure that x must be different from 0.
+
+114
+00:16:26,732 --> 00:16:30,292
+Otherwise, we cannot define, divide, I'm sorry, we cannot divide.
+
+115
+00:16:30,612 --> 00:16:36,592
+So if we assume that x is different from 0, this function is normally equal to y is x.
+
+116
+00:16:37,092 --> 00:16:40,152
+Okay, but be careful of the sketch.
+
+117
+00:16:40,659 --> 00:16:42,659
+0 is not included.
+
+118
+00:16:42,659 --> 00:16:51,659
+We can equal 4 by 5 with that method if we divide in the 0, isn't it?
+
+119
+00:16:51,659 --> 00:16:54,659
+I couldn't hear the first sentence.
+
+120
+00:16:54,659 --> 00:17:04,659
+Another math problem, they solve that, they equal 4 to 5 with that mistake, isn't it?
+
+121
+00:17:04,659 --> 00:17:06,283
+4 to 5?
+
+122
+00:17:06,740 --> 00:17:18,079
+Ya, hocam, Türkçe söyleyeyim direkt ya. 4 ile 5'i birbirine eşitleyebiliyorlar. Bu hani, bölüde 0 olunca birbirlerine götürdükleri zaman bu şekilde şey yapabiliyorlar. Bu yanlış yani, değil mi?
+
+123
+00:17:18,644 --> 00:17:25,463
+Hayır. Payda da sıfır varsa dörtte beşe eşitleyemezler ama mesela bununla ilgili bir sürü şey var da internette.
+
+124
+00:17:26,003 --> 00:17:39,344
+Ha onu bilmiyorum ama burada önemli olan sıfırdan farklı yani tanım kümümüzde sıfır olmadığı sürece bunu biz bölüp bu aslında evet y eşittir x fonksiyonudur ama y eşittir x ama burada sıfır olmadığı sürece bu y eşittir x eşittir.
+
+125
+00:17:40,403 --> 00:17:42,163
+Anladım. O yüzden burada hata yok.
+
+126
+00:17:42,900 --> 00:17:54,660
+Yani tanım kümesi sıfırdan farklı olduğu sürece, sıfırı içermediği sürece, bu aslında bu grafiğe eşittir. x kare bölü x aslında y eşittir x'tir. Ama tüm real sayıları sıfır çıkartarak.
+
+127
+00:17:55,700 --> 00:17:56,420
+Anladım, tamam.
+
+128
+00:17:56,800 --> 00:18:02,240
+Sıfırda tanımsız diyebilir miyiz? Yoksa direkt tanım kümesinde olmadığı için hiç konuşmayalım.
+
+129
+00:18:02,240 --> 00:18:03,720
+Tabii tabii, sıfırda tanımsız.
+
+130
+00:18:04,260 --> 00:18:09,099
+This function is not defined at 0, that's why 0 is not included in the domain set.
+
+131
+00:18:10,036 --> 00:18:12,036
+bu yüzden bu yöntem, bu yöntem.
+
+132
+00:18:12,036 --> 00:18:13,259
+bu yöntem.
+
+133
+00:18:16,596 --> 00:18:22,596
+Evet, tamam.
+
+134
+00:18:22,596 --> 00:18:24,596
+Tamam.
+
+135
+00:18:34,827 --> 00:18:40,827
+bu yöntem.
+
+136
+00:18:34,552 --> 00:18:44,552
+Yükselin, yukarıdak.
+
+137
+00:18:34,036 --> 00:18:47,536
+Graph of functions, in fact, just a geometrical place, we can just say, which points x and fx, because input variable match with the output variable.
+
+138
+00:18:47,896 --> 00:18:58,215
+These points in cartesian form, once we just locate these functions, these points, these pairs on cartesian plane, we will just see the graph of the function.
+
+139
+00:18:58,675 --> 00:19:14,016
+So, the graph of f consists of the points in the Cartesian plane with the notation, which notation? x to fx. x will be matched with fx, so these two Cartesian pairs will be the one point of the function.
+
+140
+00:19:14,016 --> 00:19:25,255
+And we have infinitely many sometimes functions, I'm sorry, point pairs, so they include, consist of the graph of the function. For example.
+
+141
+00:19:27,412 --> 00:19:36,951
+think that f is x-square. So we will match x with x-square. 1 to 1, 2 to 4, minus 1 to 1, minus 2 to 4.
+
+142
+00:19:37,683 --> 00:19:56,203
+like this. That's why we have these parabola. You know this? Yes. And if we just write x in terms of functions of y, we need to just say two different branches of parabola once we write, assume x is a function of y. Squared root y minus square root y.
+
+143
+00:19:57,423 --> 00:20:04,463
+Second example, y is 1 over x, that means x times y is 1. x times y is 1, always this.
+
+144
+00:20:05,971 --> 00:20:08,652
+these two parts it has. Okay.
+
+145
+00:20:11,231 --> 00:20:16,011
+Also, like this. x is y-square. Okay.
+
+146
+00:20:17,451 --> 00:20:22,432
+x is y-square. Is this parabola? No problem. We just match.
+
+147
+00:20:25,011 --> 00:20:33,011
+y² ve y. Now this x and y, because always in order in Cartesian pairs, Cartesian coordinate pairs.
+
+148
+00:20:33,011 --> 00:20:41,011
+So y² to y, we need to write 1 to 1, 4 to 2, 9 to 3, etc.
+
+149
+00:20:41,011 --> 00:20:45,011
+This one, y is x³.
+
+150
+00:20:45,556 --> 00:20:50,016
+because of x cube and the negative numbers, the third power again make it negative.
+
+151
+00:20:50,195 --> 00:20:55,496
+That's why this branch of parabola we have for positive, positive, negative, negative.
+
+152
+00:20:58,836 --> 00:20:59,776
+Yes, you may.
+
+153
+00:21:00,896 --> 00:21:04,675
+Do we accept in b as a parabola?
+
+154
+00:21:05,556 --> 00:21:07,235
+Yes, of course, it's a parabola.
+
+155
+00:21:07,776 --> 00:21:08,436
+Oh, okay.
+
+156
+00:21:09,556 --> 00:21:12,115
+But just think x is a function of y.
+
+157
+00:21:13,811 --> 00:21:15,011
+Okay, thank you.
+
+158
+00:21:15,011 --> 00:21:15,791
+Not at all.
+
+159
+00:21:17,171 --> 00:21:18,231
+What about e?
+
+160
+00:21:18,851 --> 00:21:19,311
+Let's look.
+
+161
+00:21:19,451 --> 00:21:22,192
+It is y is 1 over x squared.
+
+162
+00:21:22,811 --> 00:21:25,031
+Another different graph of a function.
+
+163
+00:21:25,932 --> 00:21:26,531
+Like this.
+
+164
+00:21:27,911 --> 00:21:28,471
+1 over x.
+
+165
+00:21:28,471 --> 00:21:30,411
+Zero is an asymptote here, right?
+
+166
+00:21:30,531 --> 00:21:31,692
+Yes, yes, of course.
+
+167
+00:21:36,627 --> 00:21:38,627
+Ve continue.
+
+168
+00:21:40,627 --> 00:21:44,627
+Ve here, vertical line test for a function.
+
+169
+00:21:45,627 --> 00:21:51,627
+Here, vertical lines we will use to test if this graph belongs to a function or not.
+
+170
+00:21:52,243 --> 00:21:57,604
+A function f can have only one value of x for each x in its domain.
+
+171
+00:21:58,243 --> 00:22:07,903
+Because, you know, for only x, you may have different, I'm sorry, for input variable, you can just corresponding only one unique output.
+
+172
+00:22:08,824 --> 00:22:10,683
+That's why this is a...
+
+173
+00:22:11,092 --> 00:22:14,812
+Bu birçok birçok birçok birçok birçok birçok birçok.
+
+174
+00:22:14,812 --> 00:22:22,692
+Birçok birçok birçok birçok birçok.
+
+175
+00:22:22,692 --> 00:22:28,692
+Bu birçok birçok birçok.
+
+176
+00:22:28,692 --> 00:22:33,692
+Bu birçok birçok birçok, bu birçok birçok birçok.
+
+177
+00:22:33,692 --> 00:22:35,692
+Çünkü buçok birçok birçok.
+
+178
+00:22:35,692 --> 00:22:38,692
+Birçok birçok birçok.
+
+179
+00:22:39,188 --> 00:22:45,768
+If it is, no vertical line can intersect the graph of function more than once.
+
+180
+00:22:46,087 --> 00:22:53,748
+If we had intersection more than once, that means it is not the function, this graph showing not the one function, it means.
+
+181
+00:22:54,587 --> 00:22:57,067
+I hope you understand me. Look at the example.
+
+182
+00:22:57,968 --> 00:23:02,768
+For example, the circle. Look, get the vertical lines vertical to x.
+
+183
+00:23:03,380 --> 00:23:15,468
+İntro, bu iki tane
+
+184
+00:23:18,483 --> 00:23:27,523
+So, this cannot be a graph of a function. But if we have the half of them, it's okay.
+
+185
+00:23:30,003 --> 00:23:38,084
+For 2x, I'm sorry, for 1x, we have two corresponding values. For x, we have all of this value.
+
+186
+00:23:38,612 --> 00:23:40,612
+ve bu bir kere.
+
+187
+00:23:40,612 --> 00:23:42,612
+Bu bir kere, bu kere, bu kere.
+
+188
+00:24:07,700 --> 00:24:08,299
+ok.
+
+189
+00:24:13,491 --> 00:24:17,292
+Some special functions, for example, constant functions, you already know.
+
+190
+00:24:17,872 --> 00:24:21,991
+For any input variable, only we have one constant output variable.
+
+191
+00:24:22,152 --> 00:24:25,912
+That means the whole set going to only one point.
+
+192
+00:24:25,912 --> 00:24:27,692
+That means it's a constant function.
+
+193
+00:24:28,711 --> 00:24:32,731
+And identity function, having the input variables,
+
+194
+00:24:33,211 --> 00:24:37,592
+outside variables are always the same, going to same variable again and again.
+
+195
+00:24:38,272 --> 00:24:39,252
+So fx is x.
+
+196
+00:24:40,019 --> 00:24:43,080
+0 function makes the function 0.
+
+197
+00:24:43,380 --> 00:24:47,120
+That means the input variable is always going to 0, like a custom function.
+
+198
+00:24:48,420 --> 00:24:50,779
+Specifically, this custom number is 0 here.
+
+199
+00:24:54,355 --> 00:24:59,895
+1-to-1 function, this is an important concept for functions. I think you already know, of course.
+
+200
+00:25:01,395 --> 00:25:07,996
+When a function is 1-to-1, let's see, whenever fA is equal to fB, then a is B.
+
+201
+00:25:08,296 --> 00:25:13,476
+Or when a and b are different numbers, so the outputs will be different.
+
+202
+00:25:13,996 --> 00:25:15,776
+The results of the function will be different.
+
+203
+00:25:15,996 --> 00:25:19,776
+But if you start with a is B and then fA is FB means...
+
+204
+00:25:20,564 --> 00:25:21,984
+It doesn't mean one to one.
+
+205
+00:25:22,244 --> 00:25:23,423
+It means it's a function.
+
+206
+00:25:23,804 --> 00:25:25,144
+I think you know it.
+
+207
+00:25:26,903 --> 00:25:31,264
+When you are writing a proof of a fact,
+
+208
+00:25:31,764 --> 00:25:33,124
+whatever it is in mathematics.
+
+209
+00:25:35,407 --> 00:25:49,407
+Bir şey değil.
+
+210
+00:25:34,003 --> 00:25:47,343
+You need to just say, how can I prove it? For example, for one-to-one functions, if you need to make a proof of it one-to-one function, you need to say, if a is fb, then I need to get a is b.
+
+211
+00:25:47,343 --> 00:25:57,483
+Or, I need to first assume a is different from b, then I need to get fb and fa are different. And then you can say, okay, it's the proof of one-to-one function.
+
+212
+00:25:58,259 --> 00:26:13,599
+But if you start with a is equal to b, then I get f is fb, means it's the well-defined function. That means the definition of a function. That means it's not correct for one-to-one functions.
+
+213
+00:26:16,500 --> 00:26:23,679
+About one-to-one function, an example. For example, fx is x. Of course, it's one-to-one because
+
+214
+00:26:24,756 --> 00:26:30,196
+if we get any number 1, it's going to 1. 2 going to 2, minus 1 going to minus 1.
+
+215
+00:26:30,576 --> 00:26:40,776
+That means if we get, for example, different numbers, 2 and 3, so the ranges of them automatically will be different because f is going to x.
+
+216
+00:26:40,916 --> 00:26:48,416
+Okay, no problem. It's easy to make the proof. What about x²? For example, x² is not 1 to 1.
+
+217
+00:26:49,011 --> 00:26:55,551
+Çünkü iki farklı input variables go to one output variables. Bu means it is not one to one.
+
+218
+00:26:56,692 --> 00:27:02,332
+It is the rule about a function. It's possible, but not a one to one function it means.
+
+219
+00:27:03,471 --> 00:27:12,031
+And for x square, we can easily understand. Of course, it's not one to one because the second power of two and minus two are going to the same part, number four.
+
+220
+00:27:12,500 --> 00:27:40,203
+Bu yüzden bir
+
+221
+00:27:41,428 --> 00:27:43,807
+İntro, outputts are same, did you say?
+
+222
+00:27:44,428 --> 00:27:51,728
+Yes, when the input are same and the output are same, then it's one to one, or only in this case it's one to one.
+
+223
+00:27:51,968 --> 00:27:57,307
+Only in these cases you can just make the proof. Other cases will not show that this is one to one.
+
+224
+00:27:59,307 --> 00:28:03,008
+Okay, only when the outputs are the same, it's one to one.
+
+225
+00:28:05,468 --> 00:28:07,008
+Then you need to get...
+
+226
+00:28:07,059 --> 00:28:08,759
+A'ınputs are also the same.
+
+227
+00:28:09,079 --> 00:28:12,039
+Ha, okay, yeah, now I get it. Only in this case. Okay, thank you.
+
+228
+00:28:12,199 --> 00:28:22,659
+Firstly, you will assume f is fb, and then you need to get a is b, or you need to just assume a is different from b, then you need to get f a and fb also different.
+
+229
+00:28:23,019 --> 00:28:25,059
+And then you can say this is okay, one to one.
+
+230
+00:28:25,599 --> 00:28:26,799
+Okay, now I get it. Thank you.
+
+231
+00:28:26,979 --> 00:28:29,279
+Assumption, and then you need to get this.
+
+232
+00:28:29,639 --> 00:28:30,519
+Okay, thank you.
+
+233
+00:28:31,219 --> 00:28:32,959
+Everything must be the same, I guess.
+
+234
+00:28:36,180 --> 00:28:37,180
+Any question?
+
+235
+00:28:40,980 --> 00:28:43,620
+Okay. Are you okay up to now?
+
+236
+00:28:46,319 --> 00:28:47,539
+Yes.
+
+237
+00:28:48,539 --> 00:28:52,920
+Okay. Also, any question? Okay.
+
+238
+00:28:54,600 --> 00:28:57,500
+Onto functions? I think you know onto functions.
+
+239
+00:29:03,284 --> 00:29:04,284
+onto functions?
+
+240
+00:29:04,284 --> 00:29:05,284
+Arbit functions.
+
+241
+00:29:05,284 --> 00:29:07,284
+No.
+
+242
+00:29:07,284 --> 00:29:08,284
+[öğrenci].
+
+243
+00:29:12,915 --> 00:29:17,036
+[öğrenci] function.
+
+244
+00:29:17,036 --> 00:29:21,915
+When it is onto, we just say that we have domain set and range set of the function.
+
+245
+00:29:22,395 --> 00:29:26,076
+Domain set will be defined with all points of it in the function.
+
+246
+00:29:26,395 --> 00:29:31,796
+But for range functions, sometimes some points are not included to the range function.
+
+247
+00:29:31,995 --> 00:29:32,875
+I'm sorry, range set.
+
+248
+00:29:33,844 --> 00:29:39,884
+But when they are same, that means our f is equal to b, that means it is on to.
+
+249
+00:29:39,884 --> 00:29:46,163
+That means on range set, every function has a corresponding value in the input variables.
+
+250
+00:29:46,663 --> 00:29:48,324
+That means this is a non-function.
+
+251
+00:29:49,304 --> 00:29:50,903
+Let's read the definition also.
+
+252
+00:29:51,483 --> 00:30:00,183
+If function f from a to b is called on to, if for b, all b in b, there is an element a in a such that fa is b.
+
+253
+00:30:01,011 --> 00:30:28,011
+Yani, bu
+
+254
+00:30:30,163 --> 00:30:31,163
+Bakın.
+
+255
+00:30:52,307 --> 00:30:57,387
+has a corresponding value in x in a, that means this is the onto function.
+
+256
+00:30:57,748 --> 00:31:00,307
+Okay, okay.
+
+257
+00:31:00,827 --> 00:31:01,587
+Okay, nice.
+
+258
+00:31:02,587 --> 00:31:03,387
+I'm sorry.
+
+259
+00:31:08,596 --> 00:31:09,436
+Any question?
+
+260
+00:31:13,940 --> 00:31:18,100
+Now, is it okay, [öğrenci]? Can you hear clearly?
+
+261
+00:31:26,036 --> 00:31:31,655
+Maybe it is about video or computer. I'm not sure.
+
+262
+00:31:36,180 --> 00:31:37,180
+Inverse function.
+
+263
+00:31:37,180 --> 00:31:41,180
+Hmm.
+
+264
+00:31:41,180 --> 00:31:47,180
+Inverse functions, not every function, we have inverse of a function, you know.
+
+265
+00:31:47,180 --> 00:31:52,180
+Once we have one to one and on two functions, I think you already know it from high school,
+
+266
+00:31:52,180 --> 00:31:57,180
+when a function is one to one and on two, so we have the inverse of it.
+
+267
+00:31:57,180 --> 00:32:02,592
+And inverse of the function, when if it's a to b, inverse of it b to a.
+
+268
+00:32:02,592 --> 00:32:05,532
+Ve bu konverse formula we have.
+
+269
+00:32:24,147 --> 00:32:28,715
+ve süreklik, f'yi
+
+270
+00:32:28,756 --> 00:32:35,356
+Ve bu şekilde bir şekilde bir şekilde kullanıyoruz.
+
+271
+00:32:35,356 --> 00:32:40,556
+Çünkü bu bir şekilde bir şekilde bir şekilde kullanıyoruz.
+
+272
+00:32:40,556 --> 00:32:43,556
+Yani bir şekilde bir şekilde kullanıyoruz.
+
+273
+00:32:43,556 --> 00:32:53,256
+Bir şekilde kullanıyoruz.
+
+274
+00:32:56,756 --> 00:33:03,756
+Fakat bu bir
+
+275
+00:33:16,692 --> 00:33:25,612
+The most famous one, absolute value function, of course, and also unit stepwise function are most basic step-piece-wise defined functions.
+
+276
+00:33:25,612 --> 00:33:29,412
+For example, absolute value function v is x.
+
+277
+00:33:29,412 --> 00:33:30,092
+Okay.
+
+278
+00:33:31,251 --> 00:33:58,827
+x kare artı 2x, f'
+
+279
+00:34:01,971 --> 00:34:12,631
+Unip stepwise function, for positive numbers, it is 1, negative numbers, and at 0, it's not defined.
+
+280
+00:34:13,032 --> 00:34:25,131
+Negative, at 0, it's 0. No. At 0, it is 1 also. Okay. But for negative numbers, it is always 0. That's why we have such a graph.
+
+281
+00:34:26,771 --> 00:34:32,811
+Part by part, as you see, sometimes we have directly numbers here, not the structure of the function.
+
+282
+00:34:33,372 --> 00:34:37,251
+When x is positive and 0, it is 1 equal to always 1.
+
+283
+00:34:37,632 --> 00:34:40,431
+For any positive numbers, it's going to 1 always.
+
+284
+00:34:41,052 --> 00:34:44,032
+But negative numbers, it is 0, so this.
+
+285
+00:34:58,963 --> 00:35:02,963
+Evet, bu konuda definisi.
+
+286
+00:35:02,963 --> 00:35:05,963
+Evet, bu konuda.
+
+287
+00:35:24,916 --> 00:35:26,355
+Evet, I think so.
+
+288
+00:35:26,355 --> 00:35:26,916
+Evet.
+
+289
+00:35:28,036 --> 00:35:31,996
+Çünkü we were using Hysiql signal function so much.
+
+290
+00:35:36,659 --> 00:35:37,539
+Any question?
+
+291
+00:35:40,480 --> 00:35:42,199
+No problem. İşaret fonksiyonu.
+
+292
+00:35:45,619 --> 00:36:06,283
+Bu da nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir nefesine bir ne
+
+293
+00:36:09,460 --> 00:36:15,059
+And then increasing and decreasing functions, some important concepts of the functions.
+
+294
+00:36:18,420 --> 00:36:27,619
+Let's say f is a function defined on an interval i and let x1 and x2 be in it two points in i, two input variables x1 and x2.
+
+295
+00:36:28,179 --> 00:36:31,139
+Let's see how can we understand f is decreasing or decreasing.
+
+296
+00:36:34,324 --> 00:36:50,604
+fx1 is less than fx2, whenever x1 less than x2, that means, when x1 and x1 is less than x2, then if we have fx1 is less than fx2, that means f is increasing.
+
+297
+00:36:53,884 --> 00:36:58,844
+That means when the points are decreasing, the values are decreasing. That's why, um,
+
+298
+00:36:59,327 --> 00:37:07,488
+I'm sorry. When the points are increasing, the output variables, that means the results of the functions are increasing, that's why this function is increasing.
+
+299
+00:37:08,128 --> 00:37:17,408
+Because x1 is less than x2, that means x2, x1, x2, x3, when we are continue, the numbers are increasing.
+
+300
+00:37:17,807 --> 00:37:23,327
+And also the values are increasing, as you see fx2 greater than fx1, that means this function is increasing.
+
+301
+00:37:23,327 --> 00:37:23,807
+Okay.
+
+302
+00:37:24,608 --> 00:37:25,327
+Similarly,
+
+303
+00:37:26,036 --> 00:37:32,395
+x1 is less than x2, then if we get fx1 is greater than fx2.
+
+304
+00:37:33,715 --> 00:37:37,516
+Here they are decreasing, x1 is less than x2.
+
+305
+00:37:38,796 --> 00:37:44,675
+But the values are getting, fx1 is getting fx2, that means fx2 is less than fx1.
+
+306
+00:37:45,619 --> 00:37:54,000
+That means the values are decreasing, the outputs are decreasing. In this case, f is said to be decreasing on the interval of i.
+
+307
+00:37:59,476 --> 00:38:10,155
+How can we understand it? We can just think these facts whenever. Let me start from here and show it. Start here, show it.
+
+308
+00:38:10,155 --> 00:38:23,536
+When x1 is less than x2, if fx1 is less than fx1, increasing. When fx1 is less than fx2, and then if you get fx1 is greater than fx2, it is decreasing easily.
+
+309
+00:38:24,115 --> 00:38:45,596
+But of course not every function can be one of them. Sometimes not increasing nor decreasing. Sometimes we have the functions. Some functions can be increasing or decreasing. For example, this function f is defined from positive real numbers to real numbers. fx is 1 over x. So 0 is not included as the same.
+
+310
+00:38:46,516 --> 00:39:04,684
+İlk olarak x1'e daha
+
+311
+00:39:09,172 --> 00:39:31,811
+Think that to any points such that x1 is less than x2. Okay. What happens? We know that once we divide with 1 over x1 and 1 over x2, it will be greater than this. That means the formula will be in this form. 1 over x1 will be greater than 1 over x2 because it's in the denominator. Okay.
+
+312
+00:39:32,192 --> 00:39:44,192
+1 over x1, fx1. 1 over x2, fx2. That means fx1 is greater than fx2. So it is decreasing. x1 is greater than fx2.
+
+313
+00:39:46,271 --> 00:39:52,152
+It's clear, I think, is it? Any question? If you have, please write me.
+
+314
+00:39:52,152 --> 00:39:53,152
+No, it's clear.
+
+315
+00:39:56,884 --> 00:40:10,724
+And then, second example. Again, this function is defined to real numbers, but from 1 to 2, from this closed interval, and such that f is x squared.
+
+316
+00:40:12,643 --> 00:40:23,403
+And then, choose and start with x1 and x2, any two input variables. Let's see what happens to the outputs, what kind of a relation they have.
+
+317
+00:40:23,764 --> 00:40:32,483
+of the function. We know that if x1 is less than x2, the second powers will also have the same relation.
+
+318
+00:40:33,043 --> 00:40:35,683
+Yes, sure. Because they are positive numbers.
+
+319
+00:40:36,403 --> 00:40:44,923
+So, yes, clearly for any positive real numbers coming from 1 and 2, you can just say x1 o² less than x2 o².
+
+320
+00:40:45,103 --> 00:40:52,043
+Okay, so this is fx1, fx2. fx1 less than fx2 means f is an increasing function.
+
+321
+00:40:53,623 --> 00:40:55,903
+If that's finished, I'll answer, teacher.
+
+322
+00:40:56,463 --> 00:40:56,983
+Yes.
+
+323
+00:40:58,103 --> 00:41:02,603
+You said IR, and there is a second example.
+
+324
+00:41:03,251 --> 00:41:07,251
+İrrasyon alınmasına ne demek.
+
+325
+00:41:07,871 --> 00:41:10,192
+Ama ben de rasyon alınmasına ne demek.
+
+326
+00:41:10,271 --> 00:41:13,251
+Real alınmasına ne demek.
+
+327
+00:41:13,251 --> 00:41:15,251
+İrrasyon alınmasına ne demek.
+
+328
+00:41:15,931 --> 00:41:17,891
+No, real alınmasına ne demek.
+
+329
+00:41:18,711 --> 00:41:20,511
+İrrasyon alınmasına ne demek.
+
+330
+00:41:21,451 --> 00:41:22,291
+Okay, okay.
+
+331
+00:41:22,371 --> 00:41:23,731
+They are the same, ilerasyon.
+
+332
+00:41:24,692 --> 00:41:25,092
+Okay.
+
+333
+00:41:27,411 --> 00:41:28,844
+And then...
+
+334
+00:41:29,907 --> 00:41:30,667
+olsun.
+
+335
+00:41:34,900 --> 00:41:38,059
+Bu, real numbers is the definition of real numbers.
+
+336
+00:41:38,059 --> 00:41:39,059
+Ok, don't forget.
+
+337
+00:41:39,059 --> 00:41:40,059
+Ok.
+
+338
+00:41:40,059 --> 00:41:44,699
+Oden even functions are also important.
+
+339
+00:41:44,699 --> 00:41:47,220
+Let's see, do you know Oden even functions?
+
+340
+00:41:47,220 --> 00:41:48,539
+I think you know.
+
+341
+00:41:48,539 --> 00:41:50,940
+Yes, we do.
+
+342
+00:41:50,940 --> 00:41:51,940
+Yes.
+
+343
+00:41:51,940 --> 00:41:52,940
+Ok.
+
+344
+00:41:52,940 --> 00:41:59,659
+It's easily shown, for example.
+
+345
+00:41:59,659 --> 00:42:01,059
+If we write.
+
+346
+00:42:01,204 --> 00:42:06,284
+F, minus x, if it is again the same function fx, that means it is even.
+
+347
+00:42:06,724 --> 00:42:06,984
+Shift.
+
+348
+00:42:07,884 --> 00:42:14,963
+If you just substitute minus x, but corresponding, if you get minus fx, it is old.
+
+349
+00:42:15,304 --> 00:42:15,504
+Take.
+
+350
+00:42:16,224 --> 00:42:16,504
+Okay.
+
+351
+00:42:16,903 --> 00:42:19,943
+Not every function must be even or old.
+
+352
+00:42:19,943 --> 00:42:23,324
+Sometimes we have functions not even, not old.
+
+353
+00:42:23,704 --> 00:42:23,844
+Okay.
+
+354
+00:42:25,084 --> 00:42:27,264
+Like increasing and decreasing functions.
+
+355
+00:42:29,139 --> 00:42:37,139
+For example, ah, this is important. The graph of even functions are symmetric about y-axis.
+
+356
+00:42:37,939 --> 00:42:42,500
+Always just remember x-square. It's an easy example and easily remembered.
+
+357
+00:42:43,299 --> 00:42:51,139
+Who is x-square? x-square is even. Isn't it? It's always positive because once we have minus x,
+
+358
+00:42:51,139 --> 00:42:54,899
+it is directly again f x, x-square because the second power.
+
+359
+00:42:55,411 --> 00:43:18,731
+Bu nedenle bu parabola y'x'e y
+
+360
+00:43:18,739 --> 00:43:23,499
+again, this easy example may be easily remembered for you. x cube.
+
+361
+00:43:28,148 --> 00:43:55,208
+For x cubed, we know that for positive, it's positive, but for negative numbers, it is negative minus x cubed. That means minus fx. So that's why being symmetric about the origin, it has these parabola branches, as you see. This branch is the symmetric of this branch, or you can just say this branch is symmetric about origin of this branch of parabola.
+
+362
+00:43:55,635 --> 00:44:06,996
+Okay, so it's an odd function and symmetric about the origin. Okay, there are nice examples and easy examples and basic examples. What about fx is x plus 1?
+
+363
+00:44:08,355 --> 00:44:17,956
+It's not odd, not even once you write minus x minus x plus 1. It is not equal to fx and also it's not equal to minus fx, so it's not odd and not even.
+
+364
+00:44:23,603 --> 00:44:26,323
+with about the algebraic properties of the functions.
+
+365
+00:44:31,380 --> 00:44:41,139
+Take that f, this is the domain of f, domain set of f to real numbers, for g, real number c is a real number again.
+
+366
+00:44:42,900 --> 00:44:46,500
+The sum of, or the subtraction of two functions
+
+367
+00:44:48,980 --> 00:44:54,500
+will be defined with this. And of course the domain sets will be the intersection, don't forget.
+
+368
+00:44:54,500 --> 00:44:55,539
+Once you have the
+
+369
+00:44:56,019 --> 00:45:01,659
+Any operation with two functions, you need to get the intersection of their domains.
+
+370
+00:45:02,119 --> 00:45:07,159
+This new function will be defined on the intersection set because, okay, this is important.
+
+371
+00:45:08,119 --> 00:45:11,399
+Intersection, intersection, intersection, as you see.
+
+372
+00:45:12,119 --> 00:45:15,939
+Because the common points, you need to just make this new function defined.
+
+373
+00:45:16,851 --> 00:45:22,131
+common points must be included in the domain set. And to real numbers, okay, no problem.
+
+374
+00:45:23,171 --> 00:45:28,211
+And also for f over g, it is a little bit different, but f minus plus g.
+
+375
+00:45:28,884 --> 00:45:36,483
+intersection of their domains to real numbers and defined with f minus plus gx will be fx minus plus gx.
+
+376
+00:45:36,483 --> 00:45:46,243
+Okay, easy. And the multiplication again coming from the intersection sets to real number and the definition will be multiplication of the output variables.
+
+377
+00:45:47,476 --> 00:46:09,236
+f' over g, here only the problem is not having a zero in the denominator, that's why here it's coming from the, again, intersection, but gx, which makes the function g0, must be excluded from the domain set, and that there is no problem, it's the same f' over g, again, fx over gx, it will be.
+
+378
+00:46:09,715 --> 00:46:14,396
+ve bu kastan multiple of a function? Domain set will not be changed.
+
+379
+00:46:14,396 --> 00:46:23,115
+Again, it's going to real number and it will be defined as the custom multiple of the output variables of any input variable of the function f.
+
+380
+00:46:23,115 --> 00:46:25,996
+No problem, any constant real number.
+
+381
+00:46:25,996 --> 00:46:28,556
+Are you okay?
+
+382
+00:46:28,556 --> 00:46:32,556
+Yes.
+
+383
+00:46:32,556 --> 00:46:34,755
+Easy rules, okay.
+
+384
+00:46:40,755 --> 00:46:49,395
+Let's look up this example. Here you will see some algebraic operations and the domain sets will be defined.
+
+385
+00:46:52,675 --> 00:47:00,275
+f x is square root x, g x is square root 1 minus x. Let's define first the formulas of the month.
+
+386
+00:47:00,275 --> 00:47:07,475
+Also, their domains we need to just specify again and again because they will be different in any time, in any operation.
+
+387
+00:47:07,987 --> 00:47:14,567
+custom multiple or operation with two different functions, you need to just write the domain set again.
+
+388
+00:47:15,047 --> 00:47:16,367
+You need to just revise it.
+
+389
+00:47:17,567 --> 00:47:22,947
+For f' x, of course, the square root x, of course, the positive real numbers, it must be.
+
+390
+00:47:36,916 --> 00:47:39,236
+Bu sede, bu sede, bu sede?
+
+391
+00:47:42,436 --> 00:47:43,396
+Bu sede?
+
+392
+00:47:45,476 --> 00:47:46,436
+Sede?
+
+393
+00:47:55,380 --> 00:48:01,440
+I just, I didn't understand the D in the function, the domain in the function.
+
+394
+00:48:02,800 --> 00:48:04,460
+Fone number four, this one.
+
+395
+00:48:12,275 --> 00:48:24,075
+Bu problem here, it's a custom multiple of a function only. Custom multiple, for example, f' x' is 2x, but we just multiply with 4.
+
+396
+00:48:24,755 --> 00:48:30,875
+Once you multiply with 4, this function, domain set will be the same again, because nothing will be changed.
+
+397
+00:48:32,555 --> 00:48:38,155
+And then, definition of a multiple, custom multiple of a function will be...
+
+398
+00:48:39,347 --> 00:48:59,967
+this custom times the function itself. For example, f is x square and c is 4. So 4 times x square, 4 times x square you will just define. And again, 4x square and x square has the same domain cells. There is no problem. Is it okay?
+
+399
+00:48:59,967 --> 00:49:01,607
+Okay, thank you.
+
+400
+00:49:01,907 --> 00:49:02,467
+Not at all.
+
+401
+00:49:04,027 --> 00:49:05,847
+And then the next one.
+
+402
+00:49:07,764 --> 00:49:18,583
+Here, for fx, you know, square root x, you know, it must be positive numbers. It's only defined for 0 and positive numbers. Okay.
+
+403
+00:49:19,724 --> 00:49:28,443
+Domain set is this. For g, in the square root 1 minus x, you need to just say 1 minus x must be greater than an equal to 0.
+
+404
+00:49:29,104 --> 00:49:35,124
+So, you will have x's less than 1 and equal to 1. So, negative infinitude 1.
+
+405
+00:49:35,603 --> 00:50:00,784
+1 is included. Okay? This domain you will have. 1 minus x is greater than 0, and ekil to 0 you will write. So you will get x is less than an ekil to 1. So this domain set you have to make it inside of the square root positive. Okay? Easy. What about 3f? 3f, 3 times square root x.
+
+406
+00:50:01,427 --> 00:50:21,748
+again, it is 3 times square root x. And again, the main structure of the function is not defined. That's why it is again defined for positive numbers. So it's again the same domain set, like any custom multiple of any function having the same domain set. Okay. What about f plus g?
+
+407
+00:50:23,123 --> 00:50:35,383
+f' plus g, we need to just get the intersection, be careful. f' plus g'x' is defined with f' is this, g' is this, so f' plus g' squared x' plus, in the square root 1 minus x.
+
+408
+00:50:35,383 --> 00:50:49,623
+But we need to get the intersection of these two domain sets. This is the domain of f, domain of g, intersection of them. I'm sorry, that's one. Isn't it? Intersection of these intervals, 0 to 1. Closed interval.
+
+409
+00:50:50,516 --> 00:51:01,076
+What about subtraction? Okay. Again, intersection we need as a domain set. Only here we have square root x minus and square root 1 minus x.
+
+410
+00:51:01,796 --> 00:51:03,659
+What about the multiplication?
+
+411
+00:51:03,668 --> 00:51:10,987
+Bu, multiplication, again, the domain set of the multiplication of these two sets will be the intersection of their domains.
+
+412
+00:51:11,447 --> 00:51:13,668
+That means 0 to 1, closed interval.
+
+413
+00:51:14,148 --> 00:51:18,688
+And the definition of the function will be of the square root x times and square root 1 minus x.
+
+414
+00:51:18,887 --> 00:51:22,327
+Okay, what about the division of them? f over g.
+
+415
+00:51:22,907 --> 00:51:24,347
+Here you have to be careful.
+
+416
+00:51:24,987 --> 00:51:29,987
+Now, g, that means this value mustn't be 0.
+
+417
+00:51:30,367 --> 00:51:52,268
+Bu, which real number makes this definition 0? 1. At 1, square root 1-x will be 0. That means this is the point of g, which makes it 0, it is x is 1. So 1 will not be included in this interval. So 0 to 1, but 1 is open.
+
+418
+00:51:58,291 --> 00:52:09,231
+Ranges are not important. Any real number you can just define. Positive numbers, but probably, probably positive numbers. The important thing is the domain sets, okay?
+
+419
+00:52:13,492 --> 00:52:39,492
+is f over g okay? 1 is not included because 1 makes the denominator 0. Okay, g over f, now you need to be careful which values of f, which inputs, for which inputs f becomes 0, for x is 0. So 0 is not included here. g over f square root
+
+420
+00:52:39,583 --> 00:52:45,183
+1-x² x, means 0 cannot be included in the domain set of it.
+
+421
+00:52:46,743 --> 00:52:49,824
+Is it okay up to now? I think a nice example.
+
+422
+00:52:51,183 --> 00:52:53,063
+We just understand. Yes.
+
+423
+00:52:53,423 --> 00:52:54,183
+Oh, okay.
+
+424
+00:52:55,483 --> 00:52:58,603
+So you have to be careful about the type of any function.
+
+425
+00:52:59,384 --> 00:53:02,603
+It's related with the main structure of the function.
+
+426
+00:53:03,284 --> 00:53:09,844
+Bu, on a square root x. Bu, on a square root x. Bu, on a logarithm function, we have lots of different rules, et cetera.
+
+427
+00:53:10,884 --> 00:53:13,684
+Okay, so continue with the next one.
+
+428
+00:53:14,963 --> 00:53:20,563
+Composition is an important concept, again, for operations between the functions.
+
+429
+00:53:21,364 --> 00:53:26,483
+Addition, subtraction, multiplication, division is easy. Okay, what about the composition?
+
+430
+00:53:26,483 --> 00:53:29,284
+Composition is a little bit different, you know?
+
+431
+00:53:30,003 --> 00:53:54,623
+For compositions, g a to b, f b to c, so the composition of f with g, f composed with g, is defined why? You know what to do. F composition g, a to c, be careful. F composition g, a to c.
+
+432
+00:53:54,960 --> 00:53:57,880
+Bu, bu konuda basit bir informasyonu var.
+
+433
+00:53:57,880 --> 00:54:02,880
+Bu konuda çok fazla şey var.
+
+434
+00:54:02,880 --> 00:54:05,440
+Bu konuda bilgi yapabilirsiniz.
+
+435
+00:54:05,440 --> 00:54:07,440
+G'de bir konuda verilmiştir.
+
+436
+00:54:07,440 --> 00:54:09,760
+Bu konuda bir konuda.
+
+437
+00:54:10,771 --> 00:54:15,771
+Ve bir değişiklik, bir değişiklik,
+
+438
+00:54:37,811 --> 00:54:53,612
+are given. Let's get these compositions. f' composition g, gf, ff, gg. f' composition g means, first write f and then g, substitute g in f.
+
+439
+00:54:54,371 --> 00:55:04,891
+What is g? x plus 1. That means you need to get fx plus 1. So write x plus 1 in f instead of x. So in the square root x plus 1.
+
+440
+00:55:06,771 --> 00:55:26,031
+I think it's clear. And the domain set, be careful, x plus 1 must be positive. That means x plus 1 must be greater than 0. So x is greater than minus 1, greater than the q2. So minus 1 to infinity will be the domain set of this function, of this composition function.
+
+441
+00:55:28,172 --> 00:55:29,831
+G composition f.
+
+442
+00:55:31,635 --> 00:55:35,335
+g, and then f, substitute f to g.
+
+443
+00:55:35,916 --> 00:55:37,335
+substitute f to g.
+
+444
+00:55:38,655 --> 00:55:40,516
+f is square root x, so write
+
+445
+00:55:40,516 --> 00:55:43,396
+in the square root x in g
+
+446
+00:55:43,396 --> 00:55:46,695
+instead of x, so square root x plus 1.
+
+447
+00:55:47,775 --> 00:55:50,096
+And the domain, again, square root x
+
+448
+00:55:50,096 --> 00:55:55,356
+is important in the square root, so it's positive real numbers, again, including 0.
+
+449
+00:55:58,291 --> 00:56:02,552
+f' composition f, f'
+
+450
+00:56:02,552 --> 00:56:10,932
+you will just substitute f in f, square root x in square root x, so x to 1 over 4, you will have a fourth root of x.
+
+451
+00:56:10,932 --> 00:56:15,992
+Again, even root, so positive real numbers again.
+
+452
+00:56:16,851 --> 00:56:30,811
+g composition g, write g in g again, it was x plus 1, write x plus 1 and x plus 1, you will get x plus 2, and the domain, of course, any real number, it is defined, it's a polynomial because.
+
+453
+00:56:33,692 --> 00:56:34,592
+Are you okay?
+
+454
+00:56:37,311 --> 00:56:37,851
+Yes.
+
+455
+00:56:38,572 --> 00:56:39,011
+Okay.
+
+456
+00:56:39,612 --> 00:56:39,951
+Yep.
+
+457
+00:56:41,431 --> 00:56:44,351
+Which functions do you want to have?
+
+458
+00:56:45,108 --> 00:56:47,508
+Türkç Names, which functions?
+
+459
+00:57:00,884 --> 00:57:01,683
+kompozisyon?
+
+460
+00:57:03,403 --> 00:57:06,003
+Bileşki fonksiyonu.
+
+461
+00:57:06,384 --> 00:57:06,884
+Bileşki.
+
+462
+00:57:08,083 --> 00:57:10,583
+Yok sadece tek bunun için demedim.
+
+463
+00:57:10,783 --> 00:57:16,743
+Hani bundan sonra işleyeceklerimizde, sadece başlık adı olarak Türkçelerini de seylerseniz güzel olur.
+
+464
+00:57:16,824 --> 00:57:19,483
+Tek başıma çalışırken hem daha şey yapmış olurum.
+
+465
+00:57:20,643 --> 00:57:23,543
+Evet şu anda size de hak veriyorum.
+
+466
+00:57:23,643 --> 00:57:25,183
+Bu ilk İngilizce dersiniz değil mi?
+
+467
+00:57:26,867 --> 00:57:29,148
+matematik adına, evet.
+
+468
+00:57:31,208 --> 00:57:33,068
+Bir de çok terim var hocam.
+
+469
+00:57:33,548 --> 00:57:33,788
+Evet.
+
+470
+00:57:34,907 --> 00:57:37,228
+Biraz alışana kadar isteyse.
+
+471
+00:57:38,807 --> 00:57:41,728
+Biraz da açın bakın bence birazcık çalışın.
+
+472
+00:57:42,867 --> 00:57:44,588
+Slide'ları yükleyecek misiniz?
+
+473
+00:57:45,048 --> 00:57:45,827
+Yoksa?
+
+474
+00:57:46,288 --> 00:57:46,907
+Yükleyebilirim.
+
+475
+00:57:46,907 --> 00:57:49,347
+Eğer yükleyebileceksiniz, yoksa.
+
+476
+00:57:52,563 --> 00:57:59,783
+yani ben Avesis'i her zaman yüklüyorum. İsterseniz buraya da yüklerim. Avesis'ten alabilirsiniz ama. Buraya da yüklerim isterseniz.
+
+477
+00:58:00,123 --> 00:58:05,783
+Buraya yükleseniz daha iyi olur. Çünkü ben dün çok araştırdım ama biraz karışık sanki. Yani ben çok bulamadım hani.
+
+478
+00:58:06,603 --> 00:58:08,324
+Avesis'teki, Avesis adresini mi?
+
+479
+00:58:08,324 --> 00:58:17,263
+Yok, adresinizi buldum tabii. İçindekilere falan baktım ama bana biraz karışık geldi. Hani bilmiyorum şey oldu. Buraya alsanız daha iyi olmaz mı?
+
+480
+00:58:18,063 --> 00:58:18,743
+Tamam, buraya da atalım.
+
+481
+00:58:18,743 --> 00:58:19,623
+Evet, bana da öyle geldi.
+
+482
+00:58:20,148 --> 00:58:26,248
+Orada Avesizm'de çok fazla not var. Önceki dönemlerden kalan notlar belki onları...
+
+483
+00:58:26,248 --> 00:58:30,428
+Evet, finaller, vizeler, cevap anantarlı falan biraz karışmış orada.
+
+484
+00:58:31,568 --> 00:58:35,088
+He tamam, burada dersi özel. Tamam, anladım. Olur, anladım ben size.
+
+485
+00:58:35,508 --> 00:58:41,588
+Tabii orada bir klasifikasyon yok. Hepsi orada zaten. Bütün derslerle ilgili bir sürü duyuru var, bir şeyler var.
+
+486
+00:58:42,468 --> 00:58:46,868
+Tarihlerinden falan da anlayabilirsiniz. Yani ben başlık olarak açıklayıcı başlıklar veriyorum ama tamam.
+
+487
+00:58:47,891 --> 00:58:49,211
+Burayı deneyeyim ben.
+
+488
+00:58:50,951 --> 00:58:51,931
+Daha iyi olur.
+
+489
+00:58:51,931 --> 00:58:53,091
+Çok teşekkürler hocam.
+
+490
+00:58:53,391 --> 00:58:54,711
+Sağ olun hocam.
+
+491
+00:58:55,491 --> 00:58:55,831
+Sağ olun.
+
+492
+00:58:57,031 --> 00:58:57,911
+Size sağ olun.
+
+493
+00:58:58,551 --> 00:59:00,131
+Şöyle bir ara vermiş olduk o zaman.
+
+494
+00:59:02,171 --> 00:59:07,231
+Mümkün mertebe söylemeye çalışıyorum Türkçe isimlerini ama aslında bunu kesinlikle yapmam.
+
+495
+00:59:08,019 --> 00:59:20,720
+Bunu sizin için yapayım. Aslında yapmamanız bizim için daha iyi ama ilk ders ya, biz de çok yabancılık çekiyoruz. Ben de İngilizce öğrenmek istiyorum zaten ama böyle ilk derslerde biraz bize anlayış gösterirseniz.
+
+496
+00:59:21,380 --> 00:59:29,380
+Kendim başıma terimleri falan da çalışacağım. O yüzden sizden öğrenirsem şimdiden not alıyorum. Ona göre daha iyi olur.
+
+497
+00:59:29,940 --> 00:59:35,320
+Anladım, evet. Ben şimdi biraz daha otomatiği almış bir şekilde hızlı gidiyorum. Belki de bilmiyorum. Hızlı gidiyorsam da söyleyin.
+
+498
+00:59:36,052 --> 00:59:37,172
+Yok, yok, gayet.
+
+499
+00:59:37,391 --> 00:59:38,231
+Yok, hocam.
+
+500
+00:59:38,231 --> 00:59:42,791
+Yok, hocam. Hızınızda hiç sıkıntı yok. Sadece hani onu da söylerseniz ve çok güzel olur.
+
+501
+00:59:43,811 --> 00:59:49,851
+Tamam, arada ben söyleyeyim. Siz yine hani ben bildiğinizi düşünüp atlarsam sorabilirsiniz, tamam mı?
+
+502
+00:59:49,851 --> 00:59:50,072
+Tamam.
+
+503
+00:59:50,871 --> 00:59:53,231
+Bir x zamanlar yapalım ama soru her seferinde...
+
+504
+00:59:53,231 --> 00:59:55,112
+Yok, yok, hocam. Zaten alışırız.
+
+505
+00:59:55,291 --> 00:59:55,972
+Onlaşana kadar.
+
+506
+00:59:56,211 --> 00:59:56,592
+Çok barzence oluyor.
+
+507
+00:59:57,132 --> 01:00:00,000
+Hocam, bir de bu sayıları söylerken mesela diyorum kök...
+
+508
+01:00:00,000 --> 01:00:08,559
+kökü söylerken ya da mesela üstü sayılarda üstü söylerken bu İngiliz dilleri biraz böyle yakalamaya çalışıyorum ama orayı birazcık yavaş geçseniz olur mu?
+
+509
+01:00:08,960 --> 01:00:09,260
+Olur.
+
+510
+01:00:10,039 --> 01:00:18,200
+Mesela artıyı, eksiği biliyoruz, plus, minus falan ama bu kökleri, üstleri söylerken falan biraz şey yakalamaya çalışıyorum ben açıkçası.
+
+511
+01:00:18,679 --> 01:00:20,179
+Tamam, evet anlıyorum, haklısınız.
+
+512
+01:00:21,099 --> 01:00:24,679
+Additional subtraction diyorum mesela, subtraction fark almak.
+
+513
+01:00:25,300 --> 01:00:38,680
+f-g derken, f-g de onu söyledim aslında. Addition and subtraction dedim. Division'ı biliyorsunuz zaten. Fort root bilmiyorum.
+
+514
+01:00:40,520 --> 01:00:41,600
+Division bölme.
+
+515
+01:00:42,440 --> 01:00:50,320
+Bölme, multiplication, çarpma, composition, bileşke alma.
+
+516
+01:00:54,547 --> 01:00:56,288
+square root, kare kök.
+
+517
+01:00:56,827 --> 01:00:57,407
+Square root.
+
+518
+01:00:57,867 --> 01:01:02,527
+Mesela dördüncü kuvvetini fourth by fourth mu diyeceğiz? Nasıl diyeceğiz?
+
+519
+01:01:02,788 --> 01:01:05,567
+Fourth root diyorum ben. Öyle de diyebilirsin.
+
+520
+01:01:05,587 --> 01:01:06,027
+Fourth root.
+
+521
+01:01:06,527 --> 01:01:08,148
+Peki dörtten fazlarsa?
+
+522
+01:01:09,607 --> 01:01:10,708
+Fifth root mu?
+
+523
+01:01:11,123 --> 01:01:13,723
+Evet, evet, by fifth root diyebilirsiniz.
+
+524
+01:01:13,963 --> 01:01:15,663
+Beşinci kök gibi bir şey yani, aynen.
+
+525
+01:01:15,844 --> 01:01:21,503
+Evet, evet. Ama mesela üstlü olarak da söyleyebilirsiniz. Mesela x üzeri 1 bölü de x to 1 over 4 mesela.
+
+526
+01:01:21,923 --> 01:01:26,003
+x to ya da x to the 1 over 4. x üzeri 1 bölü 4.
+
+527
+01:01:26,003 --> 01:01:26,824
+1 over 4.
+
+528
+01:01:26,824 --> 01:01:27,143
+Ben.
+
+529
+01:01:28,364 --> 01:01:30,864
+x to the gibi.
+
+530
+01:01:34,900 --> 01:01:43,579
+rasyonel ifadelerde de numerator, denominator dedim. Numerator, pay, denominator, payda.
+
+531
+01:01:44,940 --> 01:01:48,380
+Hocam bu terimlerin böyle toplu olduğu bir yer, böyle bir sayfaya...
+
+532
+01:01:48,380 --> 01:01:49,860
+Şimdi onu soracaktım ben de.
+
+533
+01:01:53,239 --> 01:01:54,639
+İnternatta var mı böyle belki?
+
+534
+01:01:54,759 --> 01:01:58,639
+Belki vardır arkadaşlar. Ben biraz araştırın, bir bakın. Olmazsa...
+
+535
+01:01:58,639 --> 01:01:58,920
+Tamam.
+
+536
+01:01:59,059 --> 01:02:02,099
+Yine aralarda ben size söylerim. Benim de öyle bir kaynağım yok.
+
+537
+01:02:02,447 --> 01:02:09,108
+Anladım hocam. Devam edelim mi? Evet. Edelim, edelim. Edelim hocam.
+
+538
+01:02:11,927 --> 01:02:24,927
+Hmm. For example, this is a nice question. I like it. It says gx, 1 minus x over 1 plus x. This is a rational function.
+
+539
+01:02:25,907 --> 01:02:32,707
+it is given. It says find the composition function g with g and write its domain.
+
+540
+01:02:36,244 --> 01:02:48,244
+Can you tell me? I think you can easily get g over g composition g. Tell me. Do it and tell me. Replace g in g. Substitute g in g.
+
+541
+01:02:51,583 --> 01:02:58,624
+I'm waiting for you. Do it and tell me. And then we will talk about its domain set.
+
+542
+01:02:59,684 --> 01:03:01,624
+We should have it inverse of this?
+
+543
+01:03:02,664 --> 01:03:02,923
+No.
+
+544
+01:03:03,103 --> 01:03:13,523
+No, nothing worse. Just the composition. Here, instead of x, you will write gx. Again, 1 minus blah, blah, blah.
+
+545
+01:03:13,523 --> 01:03:15,603
+Doesn't that mean x?
+
+546
+01:03:15,603 --> 01:03:24,943
+x plus x kareyi unuttum. Gitti. Square.
+
+547
+01:03:24,943 --> 01:03:28,443
+I think the answer is 2.
+
+548
+01:03:28,443 --> 01:03:29,995
+I found just...
+
+549
+01:03:30,132 --> 01:03:48,396
+x kare artı 2x, f'
+
+550
+01:03:51,603 --> 01:03:53,603
+All real numbers are you sure?
+
+551
+01:03:58,164 --> 01:04:01,484
+Isn't it x, ctrl, minus 1?
+
+552
+01:04:02,584 --> 01:04:02,964
+Maybe.
+
+553
+01:04:04,744 --> 01:04:06,024
+[öğrenci], say the solution together.
+
+554
+01:04:06,024 --> 01:04:06,864
+The answer is x.
+
+555
+01:04:08,624 --> 01:04:10,504
+Except minus 1, you say.
+
+556
+01:04:11,424 --> 01:04:12,704
+The answer is x, yeah?
+
+557
+01:04:13,624 --> 01:04:14,384
+Yes, of course.
+
+558
+01:04:18,036 --> 01:04:20,536
+Let's see the solution together.
+
+559
+01:04:21,215 --> 01:04:23,516
+You asked the domain, isn't it?
+
+560
+01:04:23,615 --> 01:04:24,235
+Yes, domain.
+
+561
+01:04:24,956 --> 01:04:28,715
+That means minus 5, x minus 5, domain.
+
+562
+01:04:30,476 --> 01:04:33,715
+No, no, no, the real numbers minus 1.
+
+563
+01:04:33,715 --> 01:04:33,916
+Yes.
+
+564
+01:04:34,255 --> 01:04:35,135
+Minus minus 1.
+
+565
+01:04:35,576 --> 01:04:37,775
+Yes, excluded minus 1, all real numbers.
+
+566
+01:04:38,096 --> 01:04:39,076
+I want my chocolate.
+
+567
+01:04:42,376 --> 01:04:43,635
+It's so quick, I think.
+
+568
+01:04:43,936 --> 01:04:44,735
+It's not enough.
+
+569
+01:04:46,068 --> 01:04:47,708
+lots of questions we will have.
+
+570
+01:04:48,228 --> 01:04:50,548
+just joking.
+
+571
+01:04:51,827 --> 01:04:52,188
+okay.
+
+572
+01:04:52,988 --> 01:04:54,288
+g composition g.
+
+573
+01:04:55,387 --> 01:04:56,928
+i think all of you can do it.
+
+574
+01:04:57,347 --> 01:04:58,988
+we get x, right?
+
+575
+01:05:00,208 --> 01:05:03,488
+1 minus x over 1 plus x in x in g.
+
+576
+01:05:03,488 --> 01:05:04,208
+okay.
+
+577
+01:05:06,088 --> 01:05:07,168
+and x.
+
+578
+01:05:07,588 --> 01:05:11,248
+and once you look at only cx.
+
+579
+01:05:11,891 --> 01:05:21,371
+At the end, don't say, okay, this is real line only, because composition is whatever it is, it is equal to x. No, don't think so much. Okay.
+
+580
+01:05:22,231 --> 01:05:30,931
+First, you have to just think, for, talk about domain set of a composition, be careful, look at this conditions.
+
+581
+01:05:31,731 --> 01:05:34,331
+It says, for a point x,
+
+582
+01:05:35,315 --> 01:05:39,715
+to be in the domain set of a composition, the following conditions must hold.
+
+583
+01:05:40,515 --> 01:05:45,475
+Because, not any x, because it's a composition, not directly x.
+
+584
+01:05:46,035 --> 01:05:54,995
+G composition, g means, we write g in g again. So, the starting point, input value, must be in dg.
+
+585
+01:05:54,995 --> 01:06:01,875
+Okay? And also gx will be, that means that this value also must be an input variable also again.
+
+586
+01:06:02,708 --> 01:06:29,420
+Bu yüzden gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de gx'in de g
+
+587
+01:06:29,556 --> 01:06:32,556
+ve g-1'in domain setiyle noyası.
+
+588
+01:06:32,556 --> 01:06:34,556
+Bu yüzden,
+
+589
+01:06:34,556 --> 01:06:36,556
+real line'in
+
+590
+01:06:36,556 --> 01:06:37,556
+ve
+
+591
+01:06:37,556 --> 01:06:38,556
+bir
+
+592
+01:06:38,556 --> 01:06:39,556
+domain setiyle
+
+593
+01:06:39,556 --> 01:06:40,556
+this composition
+
+594
+01:06:40,556 --> 01:06:41,556
+function.
+
+595
+01:06:41,556 --> 01:06:42,556
+So,
+
+596
+01:06:42,556 --> 01:06:44,556
+following the definition,
+
+597
+01:06:44,556 --> 01:06:45,556
+if we write
+
+598
+01:06:45,556 --> 01:06:46,556
+R
+
+599
+01:06:47,251 --> 01:06:48,692
+X'e minus 1,
+
+600
+01:07:15,219 --> 01:07:17,219
+Trick point here.
+
+601
+01:07:17,219 --> 01:07:19,219
+Yes.
+
+602
+01:07:19,219 --> 01:07:21,219
+Okay.
+
+603
+01:07:21,219 --> 01:07:23,219
+Very good.
+
+604
+01:07:23,219 --> 01:07:25,219
+I think that's a nice example.
+
+605
+01:07:25,219 --> 01:07:27,219
+Continue.
+
+606
+01:07:34,835 --> 01:07:35,495
+Ah, I'm sorry.
+
+607
+01:07:41,172 --> 01:07:43,132
+A, wait a minute.
+
+608
+01:07:47,987 --> 01:08:02,427
+Properties of inverse functions. We just define the inverse functions and we say that when a function is 1, 1, and 2, we can just define. That means there exists the inverse of it. Other cases, we don't have. What about the properties of them?
+
+609
+01:08:04,107 --> 01:08:13,907
+The value of f minus 1, that means the inverse of f, is the unique number y, that is satisfying x's f, y in the domain set of f.
+
+610
+01:08:14,271 --> 01:08:22,871
+That means, when x is fy, y is the inverse of fx. That means x is fy.
+
+611
+01:08:23,871 --> 01:08:33,471
+Domain set of f minus 1 is the range of f. That means they are just conversely, domain set, range set. Range set becomes the domain set in the inverse function.
+
+612
+01:08:34,072 --> 01:08:38,471
+And similarly, range of f to minus 1 is the domain set of f.
+
+613
+01:08:40,271 --> 01:08:41,072
+And also,
+
+614
+01:08:41,876 --> 01:08:50,996
+Look at this composition. The function in the composition with the inverse of itself will be the identity function always.
+
+615
+01:08:52,676 --> 01:09:01,676
+Look, inverse function, composition f, x. x holds for all points in domain set of f.
+
+616
+01:09:01,676 --> 01:09:03,115
+And now,
+
+617
+01:09:03,604 --> 01:09:07,684
+Ve bu x'ın doğal bir domayın setiyle,
+
+618
+01:09:07,684 --> 01:09:10,724
+bu x'ın doğal bir domayın setiyle,
+
+619
+01:09:10,724 --> 01:09:12,884
+doğal bir domayın setiyle,
+
+620
+01:09:30,195 --> 01:09:38,415
+ve if you have the inverse function of the inverse function, that means twice, you will get the function itself.
+
+621
+01:09:39,975 --> 01:09:46,235
+And the graphs of the function and the inverse function are symmetric above the line y is x.
+
+622
+01:09:48,275 --> 01:09:53,235
+These are important properties of the inverse functions.
+
+623
+01:09:59,412 --> 01:10:00,412
+are you okay?
+
+624
+01:10:12,243 --> 01:10:13,131
+ok?
+
+625
+01:10:20,819 --> 01:10:21,643
+Evet.
+
+626
+01:10:24,724 --> 01:10:26,724
+Hello, [öğrenci].
+
+627
+01:10:33,684 --> 01:10:36,244
+I couldn't hear you, I'm sorry. Do you have any questions?
+
+628
+01:10:46,452 --> 01:10:49,652
+Ah, ok. Ok, so continue.
+
+629
+01:10:53,108 --> 01:10:56,108
+Hmm, shifting a graph of a function.
+
+630
+01:11:00,275 --> 01:11:05,716
+This information is, I think, a detail on the... No problem. No problem.
+
+631
+01:11:08,916 --> 01:11:13,556
+It means, for example, once you have x squared and shift it, if you need it.
+
+632
+01:11:15,716 --> 01:11:25,876
+Vertical shifts, fx plus k. If k is positive, shifts f up, k units. If k is negative, shifts f down.
+
+633
+01:11:26,452 --> 01:11:33,652
+yi, k'unit, and the horizontal shifts, horizontal, and the others are vertical.
+
+634
+01:11:34,452 --> 01:11:42,292
+Horizontal shifts, y is f , h is positive, shifts f , h units.
+
+635
+01:11:43,092 --> 01:11:49,252
+When h is negative, shifts f , h units.
+
+636
+01:11:54,963 --> 01:12:21,387
+Bu, bu
+
+637
+01:12:21,555 --> 01:12:24,935
+not algebraic functions. That means the functions are not algebraic.
+
+638
+01:12:25,956 --> 01:12:33,195
+What are they? Exponential, logaritmic, trigonometric, inverse trigonometric, hyperbolic, and inverse hyperbolic functions.
+
+639
+01:12:33,595 --> 01:12:38,275
+These are transcendental functions. That means the functions are not algebraic.
+
+640
+01:12:39,015 --> 01:12:43,515
+And these are the left ones, polynomial, rational, and algebraic functions.
+
+641
+01:12:43,515 --> 01:12:46,595
+Okay. Now we will see one by one.
+
+642
+01:12:47,155 --> 01:13:14,827
+İzlediğiniz için, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu
+
+643
+01:13:15,347 --> 01:13:28,587
+You know, a function p is a polynomial if this expression px an x to n plus an minus 1 x to n minus 1 plus blah blah blah blah a1x and a0.
+
+644
+01:13:29,067 --> 01:13:36,847
+That means this is the custom number. a0, a1, an minus 1, an are coefficients, real numbers.
+
+645
+01:13:38,131 --> 01:13:46,871
+Also, integers it must be. No, real custom, I'm sorry. They are real custom an, a0, an-1, a1.
+
+646
+01:14:03,347 --> 01:14:06,347
+A0'a bir kastetim bir kastetim.
+
+647
+01:14:06,347 --> 01:14:10,347
+Bu, n'a bir kastetim.
+
+648
+01:14:10,347 --> 01:14:11,347
+İnteger, dikkatli.
+
+649
+01:14:11,347 --> 01:14:14,347
+Eğer bir kastetim, bir kastetim bir kastetim.
+
+650
+01:14:14,347 --> 01:14:17,347
+Ama bir kastetim, bir kastetim bir kastetim.
+
+651
+01:14:17,347 --> 01:14:19,347
+Kastetim, kastetim.
+
+652
+01:14:19,347 --> 01:14:29,931
+Ve n'a bir kastetim.
+
+653
+01:14:30,963 --> 01:14:41,443
+ve all polinomiyat
+
+654
+01:14:59,347 --> 01:15:13,427
+You know degree? Derece. Yes. Yes. Coefficients. Coefficients. I don't know the meaning of coefficient. Okay.
+
+655
+01:15:13,427 --> 01:15:18,587
+Okay. Integer, I think you know. Integer.
+
+656
+01:15:22,644 --> 01:15:26,484
+tam seye.
+
+657
+01:15:26,484 --> 01:15:27,484
+because here it is important.
+
+658
+01:15:34,355 --> 01:15:36,976
+Okay, so continue.
+
+659
+01:15:41,716 --> 01:16:06,476
+Bir sonraki
+
+660
+01:16:06,707 --> 01:16:07,707
+Evet.
+
+661
+01:16:07,707 --> 01:16:09,707
+Of the first degree, that is degree is one.
+
+662
+01:16:09,707 --> 01:16:12,707
+So, it is a linear function, no linear.
+
+663
+01:16:17,363 --> 01:16:18,363
+Doğrusa.
+
+664
+01:16:18,363 --> 01:16:31,363
+And then, when it is of the second degree, ax² plus bx plus c, it is of the second degree, or the degree of this two quadratic functions.
+
+665
+01:16:33,043 --> 01:16:41,363
+When it is 3, ax³ plus bx² plus cx plus d, cubic function, that means of the third degree.
+
+666
+01:16:41,876 --> 01:16:44,996
+or the degree of it is 3.
+
+667
+01:16:46,116 --> 01:16:47,736
+Okay, just examples.
+
+668
+01:16:48,216 --> 01:16:50,836
+Specifically, if it is of the first degree, it's linear.
+
+669
+01:16:50,836 --> 01:16:53,876
+And I think knowing about linear functions is important.
+
+670
+01:16:55,336 --> 01:16:57,756
+Linearity is important of the first degree.
+
+671
+01:16:58,296 --> 01:16:59,076
+The variables are.
+
+672
+01:17:01,296 --> 01:17:07,136
+Think that the degree of polynomial is M and degree of polynomial Q is N,
+
+673
+01:17:07,276 --> 01:17:07,576
+then
+
+674
+01:17:08,051 --> 01:17:31,755
+Bu, bu
+
+675
+01:17:31,923 --> 01:17:40,804
+once we have the multiplication of two exponential, no, the powers of x, let's say, not exponential,
+
+676
+01:17:41,344 --> 01:17:49,284
+we will have the sum of their exponents. So n plus n you will have. That's why the multiplication of two polynomials will have the degree,
+
+677
+01:17:49,963 --> 01:17:56,204
+which is the sum of their degrees. Okay, I think it's easy to understand.
+
+678
+01:18:08,564 --> 01:18:11,564
+If you want to be meehavar or...
+
+679
+01:18:16,467 --> 01:18:28,467
+ama, evet, bu kadar 5min, sonra, bu kadar 20min.
+
+680
+01:18:35,283 --> 01:18:36,283
+Evet.
+
+681
+01:18:36,283 --> 01:18:38,283
+Bir dakika.
+
+682
+01:18:38,283 --> 01:18:39,283
+Evet.
+
+683
+01:18:39,283 --> 01:18:47,283
+Bir dakika.
+
+684
+01:18:47,283 --> 01:18:50,283
+Evet.
+
+685
+01:18:55,699 --> 01:19:01,939
+see you see you the previous slide okay
+
+686
+01:19:05,716 --> 01:19:06,668
+bu.
+
+687
+01:19:17,395 --> 01:19:18,155
+Any question?
+
+688
+01:19:21,619 --> 01:19:26,980
+I couldn't get the vertical line part of the slide. Can you tell again?
+
+689
+01:19:30,140 --> 01:19:32,020
+Vertical line of what?
+
+690
+01:19:35,412 --> 01:19:38,171
+vertical line part of the slide.
+
+691
+01:19:39,872 --> 01:19:42,832
+A vertical line test for grabs of function, you mean?
+
+692
+01:19:44,412 --> 01:19:45,091
+Yes.
+
+693
+01:19:47,192 --> 01:19:48,351
+Yes, of course.
+
+694
+01:19:49,431 --> 01:19:50,311
+Wait a minute.
+
+695
+01:19:57,652 --> 01:19:59,500
+as I think in the beginning.
+
+696
+01:20:02,515 --> 01:20:03,500
+bu.
+
+697
+01:20:11,315 --> 01:20:16,735
+You will see this slide on my page and here, don't worry. Yes, we are on break now.
+
+698
+01:20:28,724 --> 01:20:31,144
+If you have a question, you can write me. No problem.
+
+699
+01:33:17,427 --> 01:33:18,627
+Arkadaşlar, tekrar merhaba.
+
+700
+01:33:19,907 --> 01:33:25,487
+Merhaba.
+
+701
+01:33:27,027 --> 01:33:28,047
+Devam edelim.
+
+702
+01:33:29,507 --> 01:33:31,467
+Nerede kalmıştık ama önce ben orayı bulayım.
+
+703
+01:33:38,131 --> 01:33:39,131
+ay girgittim.
+
+704
+01:33:42,260 --> 01:33:43,500
+Ben de yorulmuşum galiba.
+
+705
+01:33:59,667 --> 01:34:06,727
+ve bu konumlarla ilgili de
+
+706
+01:34:06,727 --> 01:34:08,287
+bu konumlarla ilgili de
+
+707
+01:34:08,287 --> 01:34:09,607
+algebrislerle ilgili de
+
+708
+01:34:09,607 --> 01:34:11,667
+ve bu konumlarla ilgili de
+
+709
+01:34:11,667 --> 01:34:13,227
+bu konumlarla ilgili de
+
+710
+01:34:13,227 --> 01:34:15,268
+konumlarla ilgili de
+
+711
+01:34:15,268 --> 01:34:16,139
+bu konumlarla ilgili de
+
+712
+01:34:16,532 --> 01:34:20,372
+x kare artı 2x, qx, p, g, q, or q.
+
+713
+01:34:21,011 --> 01:34:25,412
+They are polynomials. Division of two polynomials is the rational function.
+
+714
+01:34:25,412 --> 01:34:31,492
+Quotient or ratio, oran, bölüm, where p and q are polynomials.
+
+715
+01:34:31,492 --> 01:34:35,251
+Of course, qx, different from zero. That's the rational function.
+
+716
+01:34:36,452 --> 01:34:42,612
+What about algebraic functions? Any function constructed from polynomials, log.
+
+717
+01:34:43,072 --> 01:34:50,072
+Bu
+
+718
+01:35:06,163 --> 01:35:11,163
+algebi operasyonlar, polinomiyeler, algebi funktions.
+
+719
+01:35:16,020 --> 01:35:27,220
+y³-9xy plus x³-0. For example, this is a multiplication. 2 over 3 having root x²-1 is a polynomial.
+
+720
+01:35:28,600 --> 01:35:34,000
+It's having a root. And all, of course, the rational functions are algebraic also.
+
+721
+01:35:35,579 --> 01:35:37,560
+Because it's the division, again.
+
+722
+01:35:47,636 --> 01:35:49,696
+Maybe you can refresh your page.
+
+723
+01:35:56,724 --> 01:35:57,224
+and done.
+
+724
+01:36:00,916 --> 01:36:01,916
+Maybe possible.
+
+725
+01:36:04,275 --> 01:36:05,275
+Functions are okay.
+
+726
+01:36:06,195 --> 01:36:10,155
+Polynomias, rational functions, and algebraic functions.
+
+727
+01:36:10,556 --> 01:36:11,716
+Polynomias are okay.
+
+728
+01:36:12,115 --> 01:36:14,235
+Rational functions, division of two polynomials.
+
+729
+01:36:14,716 --> 01:36:20,796
+Algebraic functions, algebraic operations of two polynomials or more.
+
+730
+01:36:21,195 --> 01:36:22,716
+Will be the algebraic functions.
+
+731
+01:36:24,355 --> 01:36:25,516
+And then continue.
+
+732
+01:36:27,956 --> 01:36:40,496
+Now, transcendental functions. That means the functions which are not algebraic. For example, exponential functions. Functions of the form affixed a to x.
+
+733
+01:36:44,212 --> 01:36:48,212
+will be exponential function.
+
+734
+01:36:48,212 --> 01:36:58,212
+Where the base, base a, x exponent. a is base, x is exponent, exponential function.
+
+735
+01:36:58,212 --> 01:37:04,212
+Base is positive, of course, positive constant, and it is different from 1.
+
+736
+01:37:04,212 --> 01:37:11,212
+This form shows the exponential function. And domain set, any number you can write x, exponent.
+
+737
+01:37:11,539 --> 01:37:39,372
+Bu, a'ın ve a'ın ve a'ın ve a'ın ve a'ın ve a'ın ve
+
+738
+01:37:39,475 --> 01:37:46,135
+Yani, 1'ye kadar, 1'ye kadar, 1'ye kadar, 1'ye kadar,
+
+739
+01:37:46,135 --> 01:37:57,475
+2'ye kadar, 2'ye kadar, 2'ye kadar, 2'ye kadar, 2'ye kadar, 2'ye kadar, 2'ye kadar, 2'ye kadar, 2'ye kadar, 2'ye kadar,
+
+740
+01:37:57,475 --> 01:38:01,795
+4'ye kadar, 1'ye kadar, 1'ye kadar,
+
+741
+01:38:06,036 --> 01:38:11,036
+ve süreklik, bir kare artı 2x, bir kare artı 2x.
+
+742
+01:38:34,707 --> 01:38:54,267
+yz²x, a is greater than 1. As you see, it's increasing. x is 0, y is 1. yx is going to infinity, y is going to infinity, as you see. yx is going to negative infinity, y is going to 0.
+
+743
+01:38:54,267 --> 01:38:59,307
+It's getting closer to y is 0, that means getting closer to x-axis, y is 0.
+
+744
+01:39:01,235 --> 01:39:10,675
+a' is greater than 1. What happens when a' is less than 1? When a' is between 0 and 1, less than 1.
+
+745
+01:39:11,315 --> 01:39:20,195
+So here, as you see, it's decreasing. Yes. For x is 0, y is 1. When x is going to positive infinity, as you see,
+
+746
+01:39:20,195 --> 01:39:27,635
+it's going to 0. When x is going to negative infinity, y is going to positive infinity. They are so different, as you see.
+
+747
+01:39:35,956 --> 01:39:50,355
+For example, y is 10 to x, y is 3 to x, y is 2 to x, y is 10 to minus x. That means 1 over 10 to x. So it's decreasing. Only an example.
+
+748
+01:39:58,484 --> 01:39:59,804
+logaritmic functions.
+
+749
+01:40:02,244 --> 01:40:08,244
+These are functions such that f' x' logarithm a to x,
+
+750
+01:40:09,684 --> 01:40:15,604
+where the base, again a is the base, it's different from 1, the positive constant,
+
+751
+01:40:16,724 --> 01:40:24,884
+and they are inverse of exponential functions, I think you know. Logarithms and exponential functions are inverse functions.
+
+752
+01:40:25,555 --> 01:40:33,975
+domain, logaritms, functions are always used for positive numbers, don't forget, like ln, always positive functions.
+
+753
+01:40:33,975 --> 01:40:43,255
+You can just evaluate for this function because it's defined for x is positive. And the range set will be negative or positive.
+
+754
+01:40:48,307 --> 01:40:51,068
+Ah, okay. Now, is it okay?
+
+755
+01:40:58,963 --> 01:41:09,524
+Okay. And logaritma and exponential functions are inverse functions. Logaritma functions are
+
+756
+01:41:09,524 --> 01:41:18,243
+defined for only positive numbers, non-zero, positive. And a range set can be negative. Be careful,
+
+757
+01:41:18,243 --> 01:41:24,963
+these are important information. You can just think that the result of it is negative. No. Negative and
+
+758
+01:41:27,891 --> 01:41:43,612
+For example, for a is 10, base is 10, so just write directly logarithm x. For a is a e, so it becomes lnx, natural logarithm function.
+
+759
+01:41:44,612 --> 01:41:55,171
+And again, for a is greater than 1, it is an increasing function. For a is less than 1 and greater than 0, it is decreasing. Don't forget.
+
+760
+01:42:05,235 --> 01:42:12,836
+I think when I finished, I think you can note these informations down to your notebook. These are important.
+
+761
+01:42:16,036 --> 01:42:21,395
+When a logarithm function is positive, for example, when a logarithm function becomes negative,
+
+762
+01:42:21,395 --> 01:42:25,235
+for which values it is defined, this is important.
+
+763
+01:42:29,140 --> 01:42:29,860
+examples.
+
+764
+01:42:39,347 --> 01:42:52,088
+Look, we said that in inverse functions, properties of inverse functions, we said that the function and the inverse function are symmetric about y is x.
+
+765
+01:42:52,328 --> 01:43:00,368
+Let's see, y is ln x and inverse of it e to x. It is the exponent form of it, it is the logarithm form of it.
+
+766
+01:43:00,368 --> 01:43:05,608
+So as you see, they are symmetric about y is x. So nice, I think.
+
+767
+01:43:10,579 --> 01:43:19,460
+And this is a nice example about inverse functions and symmetric graphs and exponential and logarithm functions also.
+
+768
+01:43:35,188 --> 01:43:36,627
+and trigonometrik functions.
+
+769
+01:43:39,427 --> 01:43:41,347
+I think you know trigonometrik functions.
+
+770
+01:43:44,068 --> 01:43:46,948
+Basic informations there all of you know I think already.
+
+771
+01:43:48,068 --> 01:43:50,307
+Cosine x has this figure, this graph.
+
+772
+01:43:51,427 --> 01:43:52,467
+Sine x is this.
+
+773
+01:43:53,332 --> 01:43:56,332
+Açık bir alan var.
+
+774
+01:43:56,332 --> 01:44:06,332
+Ve bu alan var.
+
+775
+01:44:14,996 --> 01:44:19,316
+and tangent and cotangent functions, they have asymptotes, as you see.
+
+776
+01:44:21,716 --> 01:44:28,756
+Because of tangent, it's sine x over cosine x, cotangent, cosine x over sine x. So for tangent x,
+
+777
+01:44:28,863 --> 01:44:43,303
+We have the asymptotes for cosine x, when cosine x is 0, at pi over 2, 3 pi over 2, minus pi over 2, minus 3 pi over 2, k times pi over 2, cosine function becomes 0.
+
+778
+01:44:43,423 --> 01:44:49,363
+So we have these asymptotes in the figure, in the graphs of the function tangent x.
+
+779
+01:44:49,363 --> 01:44:55,423
+So the domain set is r minus k pi over 2.
+
+780
+01:44:55,859 --> 01:45:23,219
+x minus plus. The range set is real line. Cotangent, similarly, here cotangent, cosinx over sinx, so the values, which makes the sine function 0, at pi, 0 at 0 and pi, k times pi. So these values will be excluded from the domain set of cotangent x, so they will be the asymptotes. And the range set will be the real line.
+
+781
+01:45:24,500 --> 01:45:25,500
+of cotangent.
+
+782
+01:45:33,235 --> 01:45:36,235
+Bir sonraki yüzeyde, bu konusunda,
+
+783
+01:45:36,235 --> 01:45:38,235
+bu konusunda, bu konusunda,
+
+784
+01:45:38,235 --> 01:46:00,876
+bu konusunda,
+
+785
+01:46:04,948 --> 01:46:17,707
+Of course, this is the smallest value of p, period of f. Tangent, you know, cotangent, you know, second, 1 over cosine, cosecant, 1 over sine theta. I think you know these values and informations.
+
+786
+01:46:19,467 --> 01:46:20,247
+Yes, we know.
+
+787
+01:46:21,167 --> 01:46:30,807
+Okay, so, period of cosine, sine, second and cosecant, 2 pi. For tangent and cotangent, that's pi.
+
+788
+01:46:31,923 --> 01:46:35,564
+Ve also, cosign function, you know, even function.
+
+789
+01:46:36,283 --> 01:46:37,583
+Secund is 1 over cosine.
+
+790
+01:46:37,743 --> 01:46:38,963
+Again, it's even function.
+
+791
+01:46:39,783 --> 01:46:43,804
+And for sine, when cosecund 1 over sine function,
+
+792
+01:46:44,163 --> 01:46:44,724
+they are odd.
+
+793
+01:46:44,943 --> 01:46:48,564
+And also cotangent and tangent functions, odd functions.
+
+794
+01:46:49,484 --> 01:46:52,403
+These are important values, I think,
+
+795
+01:46:52,583 --> 01:46:55,323
+informations that you need to remember.
+
+796
+01:47:05,844 --> 01:47:17,203
+And some trigonometrik identities. You know, cosin squared plus sin squared türev is 1. 1 plus tanjant squared second square. 1 plus cotangent squared cosecant squared.
+
+797
+01:47:18,644 --> 01:47:29,604
+Cosine 2 türev cosin squared türev minus sin squared türev. Or equivalently 1 minus 2 sin squared türev. Or equivalently 2 cosin squared türev minus 1.
+
+798
+01:47:31,091 --> 01:47:36,731
+and sin2θ, 2sinθ, cosinθ, you know, and these are the half-angle rules.
+
+799
+01:47:37,191 --> 01:47:48,751
+Again, coming from these rules, cosin2θ, coming from here, cosin2θ, 2cosin2-1, so cosin2θ is 1 plus cosin2θ over 2.
+
+800
+01:47:49,203 --> 01:47:55,644
+ve sın2 teta, bir sın2 teta, bir sın2 teta, bir sın2 teta ve 2.
+
+801
+01:48:21,043 --> 01:48:31,323
+And lastly, let's say, inverse trigonometrik functions. Sine, arcsine, cosine, arccosine, tangent, arctangent, cotangent, arccotangent.
+
+802
+01:48:33,803 --> 01:48:43,363
+But when they are defined, of course, interval to be 1 to 1 and onto. Normally, cosine function is not 1 to 1 and onto.
+
+803
+01:48:43,543 --> 01:48:45,543
+But if you restrict the domain set,
+
+804
+01:48:46,292 --> 01:49:10,336
+Yani, bu
+
+805
+01:49:10,336 --> 01:49:12,076
+Domain set minus 1 and 1.
+
+806
+01:49:12,216 --> 01:49:13,976
+Yes, because the sine function,
+
+807
+01:49:14,336 --> 01:49:16,436
+just think, sine function is defined
+
+808
+01:49:16,436 --> 01:49:17,476
+for real numbers.
+
+809
+01:49:18,156 --> 01:49:19,615
+Range set is minus 1 and 1.
+
+810
+01:49:19,896 --> 01:49:21,275
+This is the inverse of it.
+
+811
+01:49:21,355 --> 01:49:23,316
+So the domain of it is minus 1 and 1,
+
+812
+01:49:23,836 --> 01:49:26,436
+but the range set cannot be
+
+813
+01:49:26,436 --> 01:49:27,876
+all real numbers.
+
+814
+01:49:27,976 --> 01:49:29,336
+For all real numbers,
+
+815
+01:49:29,756 --> 01:49:31,976
+the sine function will not be 1 to 1 and 1 to 2.
+
+816
+01:49:32,316 --> 01:49:34,396
+That's why we need to just make it
+
+817
+01:49:34,396 --> 01:49:36,336
+restricted minus pi over 2
+
+818
+01:49:36,336 --> 01:49:37,115
+to pi over 2.
+
+819
+01:49:37,460 --> 01:49:49,099
+Do you understand me? Why we have such explanations for arc, s sine, arc cosine, arc tangent, arc cotangent for inverse trigonometric functions.
+
+820
+01:49:50,179 --> 01:49:50,319
+Okay.
+
+821
+01:49:52,079 --> 01:49:57,979
+Arc cosine, again, minus 1 and 1, but we must restrict the range of it 0 to pi.
+
+822
+01:49:58,880 --> 01:49:59,979
+Because 0 to pi...
+
+823
+01:50:00,000 --> 01:50:07,359
+pi, cosine function is 1 to 1 and on 2. Minus pi over 2 to pi over 2, sin function is 1 to 1 and on 2.
+
+824
+01:50:08,639 --> 01:50:18,800
+For tangent, domain set, negative infinity to infinity, because tangent function has the range minus negative infinity to infinity, all real numbers.
+
+825
+01:50:19,840 --> 01:50:25,279
+But for domain set, we need to just write minus pi over 2, pi over 2.
+
+826
+01:50:25,844 --> 01:50:33,663
+These are not included because sine over cosine, cosine functions become zero, so it will not be defined.
+
+827
+01:50:34,184 --> 01:50:40,764
+And for similarly, cotangent zero to pi, but they are not included, and domain set will be the old real line again, similarly.
+
+828
+01:50:41,804 --> 01:50:42,323
+Any question?
+
+829
+01:50:45,903 --> 01:50:46,483
+Nope.
+
+830
+01:50:54,484 --> 01:50:58,484
+ve biraz daha fazla.
+
+831
+01:50:58,484 --> 01:51:00,484
+Lastly, hyperbolic functions.
+
+832
+01:51:00,484 --> 01:51:06,484
+Sine, hyperbolic, cosine, tangent, cotangent.
+
+833
+01:51:06,484 --> 01:51:09,484
+And it has also these exponential forms.
+
+834
+01:51:09,484 --> 01:51:12,484
+You can note them, note it down.
+
+835
+01:51:12,484 --> 01:51:14,484
+A domain set range.
+
+836
+01:51:14,484 --> 01:51:17,388
+I'm sorry, real line is the range.
+
+837
+01:51:17,395 --> 01:51:40,456
+Domains are R. Here only at 0, it becomes 0. E to 0, 1 minus 1 becomes 0. Here 0 is excluded. And these range sets we have. And specifically, cos h2t minus sin h2t is 1. Cosin hyperbolic 0 is 1. And sin hyperbolic 0 is 1. And also inverse of them.
+
+838
+01:51:41,779 --> 01:51:44,979
+Normalde, of course, you cannot memorize them,
+
+839
+01:51:44,979 --> 01:51:48,659
+but just be familiar with these definitions.
+
+840
+01:51:48,659 --> 01:51:49,579
+Be careful.
+
+841
+01:51:52,756 --> 01:52:00,756
+Bu da bu, bu da bu, bu da bu, bu da bu, bu da bu.
+
+842
+01:52:00,756 --> 01:52:04,756
+Bu, bu da bu, bu da bu, bu da bu.
+
+843
+01:52:04,756 --> 01:52:12,756
+Bu, bu da bu, bu da bu, bu da bu, bu da bu, bu da bu, bu da bu da bu.
+
+844
+01:52:12,756 --> 01:52:16,756
+Bu da bu da bu, bu da bu da bu da bu.
+
+845
+01:52:16,756 --> 01:52:18,756
+Bu da bu da bu da bu da bu.
+
+846
+01:52:19,315 --> 01:52:24,275
+And then the next week we will continue with the limit of the functions.
+
+847
+01:52:24,536 --> 01:52:25,695
+Okay.
+
+848
+01:52:27,315 --> 01:52:28,275
+Thanks, Miss.
+
+849
+01:52:28,956 --> 01:52:31,195
+I thank you for your participation.
+
+850
+01:52:35,123 --> 01:52:40,204
+Okay, I think you have no question. I thank you so much.
+
+851
+01:52:40,944 --> 01:52:46,904
+Are these slides unavailable on AVS or no?
+
+852
+01:52:47,804 --> 01:52:52,604
+AVS and also this page, I think.
+
+853
+01:52:54,123 --> 01:52:55,684
+Yes, yes, yes.
+
+854
+01:52:55,684 --> 01:53:02,244
+This page, you mean message here or message that conversation?
+
+855
+01:53:03,539 --> 01:53:08,380
+No, of course not. On this platform, we have the documents part.
+
+856
+01:53:08,880 --> 01:53:09,859
+Ah, okay, okay.
+
+857
+01:53:10,520 --> 01:53:14,359
+I will try it. Okay, and also on my website page, you can just see. Okay.
+
+858
+01:53:14,800 --> 01:53:16,520
+Okay, okay. Thank you.
+
+859
+01:53:17,260 --> 01:53:17,899
+I thank you.
+
+860
+01:53:19,260 --> 01:53:23,260
+Take care of yourselves to the next week.
+
+861
+01:53:24,279 --> 01:53:25,859
+Can I ask you a question?
+
+862
+01:53:26,460 --> 01:53:27,300
+Yes, of course.
+
+863
+01:53:27,728 --> 01:53:39,728
+Biz de hiçbir problem yok. Bu konuda ne kadar problemlerle ilgili ne kadar problemlerle ilgili?
+
+864
+01:53:39,728 --> 01:53:41,728
+Bu konuda?
+
+865
+01:53:41,728 --> 01:53:42,728
+Evet.
+
+866
+01:53:42,728 --> 01:53:45,728
+Belki domayenset olabilir.
+
+867
+01:53:46,131 --> 01:53:49,371
+Ve bu konuları, bu konuları,
+
+868
+01:53:49,371 --> 01:53:52,131
+logaritmik, fonksiyon, fonksiyon, trigonometrik,
+
+869
+01:53:52,131 --> 01:53:53,531
+ve hyperbolic fonksiyon,
+
+870
+01:53:53,531 --> 01:53:55,051
+bu konuları,
+
+871
+01:53:55,051 --> 01:53:57,051
+bu konuları kullanılıyor.
+
+872
+01:53:57,051 --> 01:53:58,131
+Bu konuları,
+
+873
+01:53:58,131 --> 01:54:04,411
+bu konuları,
+
+874
+01:54:04,692 --> 01:54:05,692
+Ah, okay.
+
+875
+01:54:05,692 --> 01:54:10,032
+And then you will continue with limit, continuity, derivative, differentiation and integration.
+
+876
+01:54:10,532 --> 01:54:16,891
+We will use these functions so that main structures and the properties are important to know before starting these topics.
+
+877
+01:54:17,652 --> 01:54:18,431
+Ah, okay.
+
+878
+01:54:18,431 --> 01:54:21,492
+Will you give us some questions to study later?
+
+879
+01:54:23,172 --> 01:54:25,391
+Do you have any questions? I couldn't understand.
+
+880
+01:54:26,051 --> 01:54:29,172
+Will you give us some questions to study later?
+
+881
+01:54:29,172 --> 01:54:31,172
+Ah, okay.
+
+882
+01:54:32,180 --> 01:54:36,440
+I haven't prepared anything yet, but if I prepare it, I will upload.
+
+883
+01:54:37,180 --> 01:54:37,360
+Okay.
+
+884
+01:54:37,920 --> 01:54:42,700
+Maybe the next lesson, we will just talk about it, because I will continue with the limit and continuity.
+
+885
+01:54:43,160 --> 01:54:48,040
+Maybe, if we have enough time, I will just give you some questions and then solve them together.
+
+886
+01:54:48,600 --> 01:54:49,940
+Okay.
+
+887
+01:54:50,240 --> 01:54:51,080
+I will inform you.
+
+888
+01:54:51,080 --> 01:55:00,180
+Hocam, ben bu ders dışında, hani, ders hakkında mı, hani, biz bu hiperbolik fonksiyonları falan lisede görmedik ama...
+
+889
+01:55:00,180 --> 01:55:02,700
+Siz sanki böyle görmüş gibi hemen üzerinden geçtiniz.
+
+890
+01:55:02,700 --> 01:55:07,040
+Yani şundan dolayı şimdi zamanımız kalmadı.
+
+891
+01:55:07,180 --> 01:55:08,400
+O yüzden oraya hızlı geçtim.
+
+892
+01:55:08,600 --> 01:55:09,060
+Haklısınız.
+
+893
+01:55:09,300 --> 01:55:11,000
+Hiperbolikleri görmemiş de olabilirsiniz.
+
+894
+01:55:12,060 --> 01:55:17,840
+Yani şöyle bu hiperboliklerin açılımları da aklımıza çok tutamıyoruz aslında ama.
+
+895
+01:55:18,400 --> 01:55:19,240
+Ben hiçbir şey anlamadım.
+
+896
+01:55:19,340 --> 01:55:20,580
+Mesela sonraki slide'ı hani.
+
+897
+01:55:21,080 --> 01:55:21,360
+Evet.
+
+898
+01:55:21,720 --> 01:55:22,640
+Yani tanımları var.
+
+899
+01:55:22,740 --> 01:55:23,540
+Şöyle bir incelersiniz.
+
+900
+01:55:23,680 --> 01:55:25,200
+İsterseniz biraz internetten de bakın.
+
+901
+01:55:26,500 --> 01:55:27,640
+Hani burada bakayım.
+
+902
+01:55:29,332 --> 01:55:36,152
+Şimdi sinüs, kosinüs, tanjant, hiperbolik, kotanjant, hiperbolik bu eksponensiyel formları aslında bu kullanılıyor.
+
+903
+01:55:36,452 --> 01:55:40,412
+Hani e üzeri x, e üzeri x, x böliki. Bunları ayrıntılı olarak görmeyecek miyiz?
+
+904
+01:55:41,412 --> 01:55:42,052
+Hocam daha sonra.
+
+905
+01:55:42,052 --> 01:55:46,092
+Hiperboliklere galiba bir daha döneceğiz. Öyle hatırlıyorum.
+
+906
+01:55:46,332 --> 01:55:52,052
+Geri döneceğiz. Mesela en başına hiperbolik fonksiyonları böyle basit eline. Çünkü ben sadece ismini duydum.
+
+907
+01:55:52,052 --> 01:55:52,152
+Bunu çözeriz.
+
+908
+01:55:52,756 --> 01:56:08,336
+Tabii tabii çok normal. Yani ben burada grafiklerini falan da koymuyorum. Yani çünkü çok detay oluyor ama isterseniz detaylı, yanlış hatırlamıyorsam 5. haftada logaritmik türev almalı. Bunlar tekrar geçiyor. Orada bir daha bakarız veya ben bunlarla ilgili uygulama yapabilirim size.
+
+909
+01:56:09,076 --> 01:56:09,496
+Anladım.
+
+910
+01:56:09,496 --> 01:56:13,856
+Çünkü şey yani, süperbolik nedir? İşte e üzeri x, e üzeri x, e üzeri x, böyle 2.
+
+911
+01:56:14,416 --> 01:56:17,576
+Ben çünkü hiç grafikleri falan da görmedim. Ondan dedim hocam.
+
+912
+01:56:17,596 --> 01:56:20,756
+Çok normal. Tabii tabii. İsterseniz onlarla ilgili bir not...
+
+913
+01:56:20,756 --> 01:56:46,976
+bulup yüklemeye çalışırım olur mu? İyi olur hocam, evet iyi olur. Biz yine çalışalım bunları. Boş gelmeyelim. Tabii tabii siz de araştırın arkadaşlar. Hani ben de oturacağım internetten bakacağım, siz de bakabilirsiniz. Soru çözeriz en kötü. Hani bunun aklınızda daha çok kalması için. Evet iyi olur hocam. Özel fonksiyonlar gibi düşünün. Yani nasıl sinüs, arksinüs var. Bunlar da sinüs hiperbolikler. Biraz daha değişik fonksiyonlar. Anladım. Çok detayına ihtiyacınız olmayacak ama genel yapıları bilin.
+
+914
+01:56:47,636 --> 01:56:48,316
+Tamam hocam.
+
+915
+01:56:48,316 --> 01:56:54,456
+Bu iki favoritler hakkında değil de genel olarak bir sınav tarzında soru çözümü yaparsak güzel olur.
+
+916
+01:56:54,636 --> 01:56:54,816
+Tabii.
+
+917
+01:56:54,816 --> 01:56:55,496
+Daha sonra var.
+
+918
+01:56:55,836 --> 01:56:56,296
+Tabii tabii.
+
+919
+01:56:56,976 --> 01:56:59,296
+Tanım kümeleriyle ilgili soru çözeceğim ben size daha sonra.
+
+920
+01:56:59,536 --> 01:57:03,676
+Fonksiyonlar şöyle düşünüyorum. Bunları genel olarak bilmemiz lazım ki üzerine bir şeyler koyalım.
+
+921
+01:57:04,056 --> 01:57:08,216
+Hani limitle devam edeceğim ama isterseniz arada ben şey yaparım fırsat buldukça.
+
+922
+01:57:08,316 --> 01:57:12,176
+Bunlarla ilgili tanım kümeleriyle ilgili soru çıkıyor çünkü fonksiyonlarla ilgili başka bir şey çıkmaz.
+
+923
+01:57:12,564 --> 01:57:21,444
+Ama sinüsün tanım kümesini tabii ki biliyor olman lazım. Ark sinüsü tabii ki biliyor olman lazım ki işte türev alırken veya işte bileşke alırken onu kullanabilirsin gibi.
+
+924
+01:57:22,024 --> 01:57:22,744
+Tamam hocam.
+
+925
+01:57:22,784 --> 01:57:27,764
+Bu bilgileri kullanacaksınız ama hani ark sinüs hiperboleyi de herhalde ihtiyacınız olmaz umarım yani.
+
+926
+01:57:28,284 --> 01:57:28,844
+İnşallah.
+
+927
+01:57:31,600 --> 01:57:39,060
+Hocam, bu lokümanları buraya koyacağınızı söylediniz değil mi? Bir de dersten sonra mı koyacaksınız yoksa farklı bir zaman?
+
+928
+01:57:39,060 --> 01:57:44,140
+Şimdi bakayım hemen ben, bilgisayarın başındayken. Bakayım nasıl yükleniyor? Daha hiç yapmadım çünkü.
+
+929
+01:57:44,720 --> 01:57:48,080
+Chat kısmından faale girerseniz hocam, dostlar orada görünüyor.
+
+930
+01:57:48,340 --> 01:57:48,860
+Evet, evet.
+
+931
+01:57:50,860 --> 01:57:52,660
+Bu sunumu yükleyeceğim ben size.
+
+932
+01:57:54,515 --> 01:57:56,235
+Teşekkür ederiz. Rica ederim.
+
+933
+01:57:56,256 --> 01:58:00,416
+Teşekkürler. Rica ederim. Not alın bunları ki aklınıza girsin bence.
+
+934
+01:58:01,216 --> 01:58:03,515
+Tamam anca. Bir yere yazın yani defterinize falan.
+
+935
+01:58:04,155 --> 01:58:05,556
+Selimlere zahlar sevgi et.
+
+936
+01:58:05,556 --> 01:58:05,916
+Selimler.
+
+937
+01:58:08,195 --> 01:58:11,216
+Aynen. Ay Türkçe ile pardon zaten İngilizce.
+
+938
+01:58:12,176 --> 01:58:13,935
+Ben bir şey sorabilir miyim? Evet.
+
+939
+01:58:14,836 --> 01:58:19,775
+Bu konularla alakalı sorular nereden çözebiliriz? Siz bir şey verecek misiniz yoksa?
+
+940
+01:58:20,176 --> 01:58:22,395
+Herhangi bir yerden bulabilir miyiz soru tarzı?
+
+941
+01:58:22,475 --> 01:58:29,916
+Ben şimdi uygulama hazırlamaya çalışacağım önümüzdeki hafta için. Ona göre ilerleriz. Hatta önemli soru da çözebiliriz.
+
+942
+01:58:31,015 --> 01:58:35,576
+Fonksiyonlarla ilgili öncelikle hep aklımıza şey gelir. Tanım kümesi bulma ile ilgili.
+
+943
+01:58:35,735 --> 01:58:40,155
+Hani bir sürü değişik tarzda fonksiyonlar bir arada hani bunları egzersiz olarak verilir.
+
+944
+01:58:40,876 --> 01:58:42,996
+Genelde karşınıza çıkacak budur, tanım kümesidir.
+
+945
+01:58:42,996 --> 01:58:48,176
+Ama işte türev alırken, integre ederken hani sinüs, kosinüsü, eksponansiyel fonksiyonlar.
+
+946
+01:58:48,176 --> 01:58:53,956
+Biliyor olmanız lazım zaten. Bunlar temel kavramlar. Onlarla ilgili soru çözmek değil de onları kullanacaksınız zaten.
+
+947
+01:58:54,895 --> 01:58:55,695
+Anladım. Teşekkür ederim.
+
+948
+01:58:55,695 --> 01:59:04,195
+Bir sonraki dersten önce koyabilirseniz, biz de dersten önce biraz bakarız, çözmeye çalışıyoruz. Sonra beraber yaparsak etkili olabilir bence.
+
+949
+01:59:05,636 --> 01:59:09,136
+Ben buraya yüklersem acaba sizin haberiniz olacak mı?
+
+950
+01:59:10,003 --> 01:59:10,764
+Bakmanız mı gerekiyor?
+
+951
+01:59:10,764 --> 01:59:11,324
+Ben sürekli...
+
+952
+01:59:11,324 --> 01:59:12,644
+Hocam sürekli bakarız.
+
+953
+01:59:12,724 --> 01:59:14,104
+Hocam bakarız.
+
+954
+01:59:14,264 --> 01:59:22,804
+Ben o zaman söz vermeyeyim ama elimden geldiğince onu yapmaya çalışacağım. Bugün çarşamba tamam. Haftaya bakarsınız en azından.
+
+955
+01:59:23,584 --> 01:59:24,144
+Teşekkürler.
+
+956
+01:59:24,144 --> 01:59:29,355
+Çarşıdıktan sonra aklımıza takılan şeyleri mail yoluyla mı ulaştırayım yoksa bir sonraki derse...
+
+957
+01:59:29,716 --> 01:59:31,115
+Yine sorabilir miyim?
+
+958
+01:59:31,655 --> 01:59:38,855
+Yani çok uzun şeyler değilse mailde sorabilirsiniz. Detaylı böyle anlatmam gerekiyorsa hani mesela ders arasında sorabilirsiniz ben burada olurum.
+
+959
+01:59:39,136 --> 01:59:39,376
+Tamam.
+
+960
+01:59:39,596 --> 01:59:45,456
+Buraya yükleme derken yazı sektikten bu girdiğimiz sayfada dökümanlar kısım var oraya değil mi?
+
+961
+01:59:45,536 --> 01:59:47,916
+Evet. Evet evet. Orayı ben yapmaya çalışacağım.
+
+962
+01:59:48,916 --> 01:59:51,975
+En kötü havesse bakarsınız olur mu bir aksilik olursa?
+
+963
+01:59:52,336 --> 01:59:53,015
+Tamamdır hocam.
+
+964
+01:59:53,015 --> 01:59:53,355
+Hocam.
+
+965
+01:59:54,195 --> 01:59:55,195
+Kendinize iyi bakın.
+
+966
+01:59:55,655 --> 01:59:56,316
+Görüşürüz hocam.
+
+967
+01:59:56,316 --> 01:59:56,876
+Hoşçakalın.
+
+968
+01:59:56,976 --> 01:59:59,735
+Görüşürüz.

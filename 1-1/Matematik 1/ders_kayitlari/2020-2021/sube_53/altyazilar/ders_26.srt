@@ -1,0 +1,5103 @@
+1
+00:05:48,531 --> 00:05:49,151
+Hi everyone.
+
+2
+00:05:57,492 --> 00:05:58,732
+I hope you are okay today.
+
+3
+00:05:59,852 --> 00:06:12,391
+And for this course, I want to say that we have come up to the most detailed topic, in my opinion.
+
+4
+00:06:12,831 --> 00:06:18,391
+After one question we have left from yesterday, that's why I will continue with this question.
+
+5
+00:06:18,391 --> 00:06:25,652
+And then we will start with a new topic, volumes of Solace of Revolution with Single Integrals.
+
+6
+00:06:25,652 --> 00:06:33,812
+Also, I think it will be a little bit challenging for me to make you understand this topic.
+
+7
+00:06:34,532 --> 00:06:37,112
+And we are not face-to-face online.
+
+8
+00:06:37,272 --> 00:06:42,592
+I hope you will understand me because it's a little bit detailed topic, a little bit hard to understand.
+
+9
+00:06:42,592 --> 00:06:45,312
+So I advise you to listen to me carefully.
+
+10
+00:06:46,672 --> 00:06:52,232
+And today, after the lesson, repeat the topic.
+
+11
+00:06:52,232 --> 00:06:54,831
+And then, hi.
+
+12
+00:06:55,451 --> 00:06:56,232
+Hi, [öğrenci].
+
+13
+00:07:01,272 --> 00:07:07,292
+And today, after the lesson, please repeat the course.
+
+14
+00:07:08,192 --> 00:07:13,331
+Repeat the explanations and the exercises and try to solve as much as possible questions.
+
+15
+00:07:13,331 --> 00:07:18,312
+Because while you are working on this topic, you will be okay.
+
+16
+00:07:18,912 --> 00:07:21,412
+It's not so easy to understand in the first step.
+
+17
+00:07:22,152 --> 00:07:28,852
+That's why I feel a little bit stressed about this topic, unlike you.
+
+18
+00:07:29,331 --> 00:07:32,352
+That's why I want to give this explanation before I started.
+
+19
+00:07:34,492 --> 00:07:36,732
+Firstly, I want to understand.
+
+20
+00:07:37,272 --> 00:07:39,732
+Do you understand the smoothness yesterday we did?
+
+21
+00:07:39,732 --> 00:07:42,152
+Regions and smoothness.
+
+22
+00:07:42,312 --> 00:07:47,772
+It's very important while you are evaluating the area of the region on Cartesian plane with a single integral.
+
+23
+00:07:48,172 --> 00:07:49,272
+It's very important.
+
+24
+00:07:51,392 --> 00:07:55,392
+Once you have a non-smooth region, you need to cut into smooth parts.
+
+25
+00:07:55,392 --> 00:08:04,552
+And generally, more generally, an area can be evaluated with two different ways.
+
+26
+00:08:05,172 --> 00:08:06,912
+With one integral, but two different ways.
+
+27
+00:08:07,012 --> 00:08:08,872
+With respect to X or with respect to Y.
+
+28
+00:08:09,512 --> 00:08:11,572
+And which one to choose, if you ask me?
+
+29
+00:08:11,831 --> 00:08:12,632
+I will say that.
+
+30
+00:08:12,812 --> 00:08:13,732
+Choose the smooth one.
+
+31
+00:08:13,831 --> 00:08:21,012
+Because if you have the region smooth with your X or Y, any of them, you will have only one integral.
+
+32
+00:08:21,392 --> 00:08:23,692
+Of course, one integral is always easier.
+
+33
+00:08:23,692 --> 00:08:28,732
+But if we have non-smooth region and if we have no way.
+
+34
+00:08:30,272 --> 00:08:35,932
+If you have no way and work on the non-smooth region, first cut into smooth parts.
+
+35
+00:08:36,392 --> 00:08:39,852
+And then one by one evaluate the integral in order to get the area.
+
+36
+00:08:39,852 --> 00:08:46,112
+Also, smoothness will be important for double integral.
+
+37
+00:08:46,112 --> 00:08:50,252
+Also, in mathematics too, you will see in the next course.
+
+38
+00:08:51,412 --> 00:08:58,092
+And that's why it's important for you to understand also evaluations of areas.
+
+39
+00:08:58,091 --> 00:09:05,211
+Look, we did this example, but I want to make you remember.
+
+40
+00:09:06,091 --> 00:09:07,211
+Look at this region.
+
+41
+00:09:07,532 --> 00:09:11,292
+Now tell me, is this region smooth with respect to X?
+
+42
+00:09:11,292 --> 00:09:15,132
+First, let's talk about it.
+
+43
+00:09:15,211 --> 00:09:16,231
+And then the next question.
+
+44
+00:09:16,331 --> 00:09:37,711
+And then we will continue with the volumes.
+
+45
+00:09:21,556 --> 00:09:27,676
+Now look, in order to understand a region is smooth or not. Yes, you're right.
+
+46
+00:09:31,316 --> 00:09:34,235
+Evet, bu yukarı doğru.
+
+47
+00:09:34,235 --> 00:09:36,316
+Evet, bu ne?
+
+48
+00:09:36,316 --> 00:09:37,836
+Bence bu ne?
+
+49
+00:09:37,836 --> 00:09:38,836
+Bakın, bu ne?
+
+50
+00:09:38,836 --> 00:11:54,316
+Bu ne?
+
+51
+00:11:47,668 --> 00:11:48,668
+Smoothness.
+
+52
+00:11:49,827 --> 00:11:50,508
+Okay.
+
+53
+00:11:51,028 --> 00:11:52,748
+Any question, please ask me now.
+
+54
+00:11:52,748 --> 00:11:57,467
+It is very important for you to understand the smoothness and the evaluations of ARIA and the limits of them.
+
+55
+00:12:00,467 --> 00:12:02,307
+I think you are okay about the limits.
+
+56
+00:12:02,508 --> 00:12:05,827
+You can just look up the sections between which lines of curves.
+
+57
+00:12:06,388 --> 00:12:06,947
+Düzgün!
+
+58
+00:12:10,707 --> 00:12:12,587
+smooth means in Turkish düzgün.
+
+59
+00:12:17,364 --> 00:12:23,783
+Evet, bu da
+
+60
+00:12:23,783 --> 00:12:25,283
+Boundary Curs'
+
+61
+00:12:25,283 --> 00:12:28,084
+Bu da
+
+62
+00:12:28,084 --> 00:13:13,604
+Boundary
+
+63
+00:13:10,484 --> 00:13:21,484
+Bir bölge, karteziyen düzlemdeki bir bölgede, üstteki eğri, tüm bölge boyunca hep aynı.
+
+64
+00:13:21,984 --> 00:13:32,163
+Alttaki eğri de, altta sınırlayan eğri, tüm bölge boyunca hep aynıysa, yani alttaki sınırlayan eğrin bir tane olacak, üstteki sınırlayan eğrin bir tane olacak x'e göre.
+
+65
+00:13:33,163 --> 00:13:35,424
+Ama burada ikiden sonra değişiyor.
+
+66
+00:13:35,424 --> 00:13:43,124
+Bu iki noktasından sonra bir tane dik bir kesit alıyorum, bir çizgi alın, x80'i de dik, bunu tüm bölge boyunca hareket ettirin.
+
+67
+00:13:43,604 --> 00:13:47,364
+Üstte hep aynı, alttaki de hep aynı, yani üstte altın aynı olmasından bahsetmiyorum.
+
+68
+00:13:47,844 --> 00:13:51,923
+Üstte ne varsa üstte hep o olacak, alttan hangi eğri varsa hep o olacak, değişmeyecek.
+
+69
+00:13:52,204 --> 00:13:53,124
+Ama burada değişiyor.
+
+70
+00:13:53,884 --> 00:13:58,364
+Buraya kadar x80'iyle sınırlıyor, ikiden sonra başka bir doğruyla sınırlanıyor.
+
+71
+00:13:58,364 --> 00:13:58,844
+Tamam.
+
+72
+00:13:59,704 --> 00:14:02,884
+Y'ye göre bakarken de, bu sefer y'ye göre dik alıyoruz.
+
+73
+00:14:02,884 --> 00:14:05,124
+y'ye göre bakarken de neye bakmamız lazım?
+
+74
+00:14:05,283 --> 00:14:07,704
+Sağdaki eğri hep, sağdaki eğri hep aynı mı?
+
+75
+00:14:08,264 --> 00:14:09,684
+Soldaki eğri de hep aynı mı?
+
+76
+00:14:09,984 --> 00:14:10,444
+Bu önemli.
+
+77
+00:14:10,903 --> 00:14:14,163
+Alan hesabında, en önemli konulardan biri bu aslında.
+
+78
+00:14:14,764 --> 00:14:19,024
+Bu notların içerisinde bundan hiç bahsedilmiyor ama aslında bu şekilde verilmeli, onu fark ettim.
+
+79
+00:14:19,944 --> 00:14:21,464
+O yüzden bu konuya tekrar döndüm.
+
+80
+00:14:21,684 --> 00:14:22,304
+Bu çok önemli.
+
+81
+00:14:22,783 --> 00:14:25,964
+Alan hesabında karşınızda düzgün olmayan bölge çıkabilir.
+
+82
+00:14:25,964 --> 00:14:30,663
+Eğer yazılı bir sınav olsaydı kesinlikle öyle bir şey çıkacaktı.
+
+83
+00:14:31,663 --> 00:14:34,564
+Ve düzgün olmayan bölgeleri düzgün bölgeleri ayırıyoruz.
+
+84
+00:14:34,704 --> 00:14:35,964
+Ondan sonra hesaplıyoruz.
+
+85
+00:14:36,064 --> 00:14:39,084
+Düzgün değilse en az iki tane integrale ihtiyacınız oluyor.
+
+86
+00:14:39,644 --> 00:14:42,584
+Bu yüzden de bölgeleri düzgün olanlarını seçin.
+
+87
+00:14:42,684 --> 00:14:44,944
+X'e göre düzgünse X'e göre yazın ve hesaplayın.
+
+88
+00:14:45,184 --> 00:14:47,444
+Y'ye göre düzgünse Y'ye göre alın ve hesaplayın.
+
+89
+00:14:47,444 --> 00:14:49,344
+İkisine göre de değilse yapacak hiçbir şey yok.
+
+90
+00:14:49,403 --> 00:14:50,964
+Bir tanesini seçip hesaplayacaksınız.
+
+91
+00:14:51,464 --> 00:14:52,744
+İkisine de göre de düzgün olabilir.
+
+92
+00:14:52,903 --> 00:14:54,564
+Tamamen birbirinden bağımsız durumlar.
+
+93
+00:14:55,264 --> 00:14:55,484
+Okay.
+
+94
+00:14:57,064 --> 00:14:58,464
+What about the next question?
+
+95
+00:14:58,564 --> 00:14:59,804
+Let's deal with the next one.
+
+96
+00:15:01,564 --> 00:15:03,864
+It says, evaluate the area of the region enclosed by.
+
+97
+00:15:04,204 --> 00:15:04,903
+Y is L and X.
+
+98
+00:15:05,104 --> 00:15:06,184
+And the lines X is 0.
+
+99
+00:15:06,264 --> 00:15:06,744
+Y is 0.
+
+100
+00:15:06,804 --> 00:15:07,284
+Y is 1.
+
+101
+00:15:07,663 --> 00:15:09,764
+With respect to X and with respect to Y.
+
+102
+00:15:09,844 --> 00:15:11,924
+That means with two ways it says it's evaluated.
+
+103
+00:15:11,923 --> 00:15:12,923
+Let's see.
+
+104
+00:15:12,923 --> 00:15:18,683
+Of course, of course, once you are not mistaken, both ways will have the same result always.
+
+105
+00:15:19,524 --> 00:15:19,784
+Okay.
+
+106
+00:15:20,663 --> 00:15:22,524
+Look, this area we have.
+
+107
+00:15:24,944 --> 00:15:25,704
+Y is 1.
+
+108
+00:15:26,824 --> 00:15:27,584
+X is 0.
+
+109
+00:15:27,663 --> 00:15:28,444
+Y is 0.
+
+110
+00:15:28,744 --> 00:15:29,844
+And Y is L and X.
+
+111
+00:15:30,384 --> 00:15:31,744
+So such a region we have.
+
+112
+00:15:32,084 --> 00:15:34,183
+Now tell me, is it smooth with respect to X?
+
+113
+00:15:40,244 --> 00:15:42,324
+Evet, of course not.
+
+114
+00:15:43,064 --> 00:15:46,204
+Up to 1, no, it's not smooth.
+
+115
+00:15:46,543 --> 00:15:49,744
+Up to 1, with respect to x, above y is 1.
+
+116
+00:15:50,224 --> 00:15:51,403
+Below x-axis.
+
+117
+00:15:51,663 --> 00:15:56,264
+After 1, above again y is 1, but below y is ln x.
+
+118
+00:15:56,264 --> 00:15:58,324
+At the point 1, it's changed.
+
+119
+00:15:59,064 --> 00:16:07,444
+The boundary line below, that means lower bound or lower boundary curve of this region.
+
+120
+00:16:07,923 --> 00:16:09,504
+At the point 1, it's changed.
+
+121
+00:16:09,504 --> 00:16:11,684
+Up to 1, it was x-axis.
+
+122
+00:16:12,004 --> 00:16:13,764
+After 1, it becomes ln x.
+
+123
+00:16:14,244 --> 00:16:14,864
+That's why.
+
+124
+00:16:16,764 --> 00:16:17,204
+Ah, yes.
+
+125
+00:16:17,403 --> 00:16:18,584
+In the first one, 0 to 1.
+
+126
+00:16:18,624 --> 00:16:19,724
+In the second one, 1 to e.
+
+127
+00:16:19,783 --> 00:16:21,163
+Okay, with respect to x.
+
+128
+00:16:22,484 --> 00:16:22,884
+Okay.
+
+129
+00:16:23,543 --> 00:16:24,864
+What about with respect to y?
+
+130
+00:16:24,864 --> 00:16:26,663
+Tell me, is it smooth with respect to y?
+
+131
+00:16:31,604 --> 00:16:54,604
+Yes, it is. Look, get the vertical line to y. And look, on the right-hand side always viz lnx. On the left-hand side always y-axis. They are not changed. That's why it is smooth with respect to y. And if it was optional, you will evaluate it with respect to y. But the question says that both of them just apply and get the same result.
+
+132
+00:16:54,604 --> 00:17:20,463
+Look, I hope you understand why do we need to cut from the point one and two different regions. Now, all these regions are smooth. Each of them are smooth. A, totally, it's not smooth. At the point one, the boundary, lower boundary curve is changed. That's why we need to cut into two parts at the point one.
+
+133
+00:17:20,463 --> 00:17:42,703
+With respect to x. With respect to x. Let's look. Let's look. Look at always the section. You can always understand the limits of integration and also the smoothness while using the vertical sections are so useful. Look up this vertical section here. Up to 0 to 1. It is between x-axis and y-1. Now we are writing the integral with respect to x. So,
+
+134
+00:17:43,804 --> 00:17:47,683
+with respect to x, you will write. So, 0 to 1.
+
+135
+00:17:48,963 --> 00:18:21,484
+0 to 1.
+
+136
+00:18:45,236 --> 00:18:53,676
+Okay, nice. What about with respect to y? Let's look. With respect to y, tell me the limits.
+
+137
+00:18:55,296 --> 00:19:00,396
+Which function to integrate and where? On which interval? Tell me.
+
+138
+00:19:03,923 --> 00:19:31,364
+ile ile
+
+139
+00:19:36,884 --> 00:19:38,544
+0 to 1, what?
+
+140
+00:19:42,259 --> 00:19:43,019
+İtluğun.
+
+141
+00:19:46,387 --> 00:19:56,768
+I think you mean e to y, x is e to y, because this function, y is lnx, but integration of it will be in terms of y, it must be.
+
+142
+00:19:57,087 --> 00:20:06,048
+So x is e to y, under the graph of e to y, and bounded with the y-axis, that means here it is x is 0, so e to y minus 0, you can think.
+
+143
+00:20:06,048 --> 00:20:16,147
+So 0 to 1 e to y will be much more easier, look. 0 to 1 e to y dy, e minus 1. Smooth parts, always easier.
+
+144
+00:20:16,387 --> 00:20:18,548
+One integral, it's okay, no problem.
+
+145
+00:20:21,907 --> 00:20:27,007
+I advise you to solve lots of questions about area calculation with the single integral.
+
+146
+00:20:28,127 --> 00:20:30,847
+In mathematics 2, you will see this form in double integrals.
+
+147
+00:20:32,707 --> 00:20:33,427
+I hope it's me.
+
+148
+00:20:33,768 --> 00:20:34,327
+I hope.
+
+149
+00:20:38,900 --> 00:20:43,480
+Now, are you okay? Do you understand it? Any question?
+
+150
+00:20:53,364 --> 00:20:57,483
+Okay, so, this topic is finished.
+
+151
+00:21:01,683 --> 00:21:02,703
+Wait for me.
+
+152
+00:21:07,059 --> 00:21:07,980
+next one.
+
+153
+00:21:25,140 --> 00:21:30,259
+Calculation volumes of solids of revolution with single integris.
+
+154
+00:21:32,860 --> 00:21:36,660
+Here you will see too, this is the main title.
+
+155
+00:21:38,300 --> 00:21:46,560
+The other title, firstly, a classification of them by using planar sections and cylindrical sections.
+
+156
+00:21:46,560 --> 00:21:51,480
+So we will start with the planar sections, volumes using planar sections.
+
+157
+00:21:51,480 --> 00:21:57,860
+You can think that, firstly, you will have maybe difficulty about understanding what we are doing.
+
+158
+00:21:59,100 --> 00:22:02,500
+Lots of ways which are alternative, which are different.
+
+159
+00:22:02,720 --> 00:22:04,460
+You can think, firstly, it's so normal.
+
+160
+00:22:05,240 --> 00:22:08,980
+Let me make you understand first way and second way.
+
+161
+00:22:09,080 --> 00:22:10,300
+Two ways, in fact, we have.
+
+162
+00:22:10,680 --> 00:22:13,780
+Volumes using planar sections, which is called the disk method.
+
+163
+00:22:14,440 --> 00:22:16,440
+And second one will be shell method.
+
+164
+00:22:16,580 --> 00:22:19,760
+That means volumes using cylindrical sections.
+
+165
+00:22:19,760 --> 00:22:20,320
+Okay.
+
+166
+00:22:21,480 --> 00:22:26,240
+But in the first one, disk and washer, it says.
+
+167
+00:22:26,780 --> 00:22:30,900
+Normally, A will be disk, B will be washer.
+
+168
+00:22:31,700 --> 00:22:34,060
+What's the difference about them?
+
+169
+00:22:36,280 --> 00:22:39,980
+Disk and washer are two different, not alternative ways.
+
+170
+00:22:40,700 --> 00:22:42,400
+Two different cases, you can think.
+
+171
+00:22:42,980 --> 00:22:44,880
+It's the first way, belonging the first way.
+
+172
+00:22:44,880 --> 00:22:50,180
+But we generally, as the subtitle, we say that, okay, disk method and shell method.
+
+173
+00:22:50,180 --> 00:22:57,340
+Normally, disk and washer are two different cases of the first topic, first technique.
+
+174
+00:22:57,580 --> 00:23:01,840
+First technique is about evaluating volumes with planar sections.
+
+175
+00:23:02,180 --> 00:23:02,259
+Okay.
+
+176
+00:23:02,260 --> 00:23:06,060
+Second one will be shell method.
+
+177
+00:23:06,060 --> 00:23:10,600
+First one, planar sections, disk or washer.
+
+178
+00:23:10,600 --> 00:23:15,860
+Disk and washer are two different, not alternative, two different cases.
+
+179
+00:23:16,440 --> 00:23:20,000
+That means it doesn't mean that use disk method or washer method.
+
+180
+00:23:20,120 --> 00:23:20,240
+No.
+
+181
+00:23:20,240 --> 00:23:22,340
+Two basic method you have.
+
+182
+00:23:23,580 --> 00:23:25,460
+Planar sections and shell method.
+
+183
+00:23:25,820 --> 00:23:29,260
+But disk method more generally is called as the disk method.
+
+184
+00:23:29,660 --> 00:23:31,260
+I hope you understand me.
+
+185
+00:23:31,660 --> 00:23:35,360
+But disk method is the first case of the planar sections.
+
+186
+00:23:35,780 --> 00:23:37,120
+Also, we have the washer method.
+
+187
+00:23:37,120 --> 00:23:42,960
+I hope you understand me while we are having the exercises.
+
+188
+00:23:43,200 --> 00:23:43,539
+I hope.
+
+189
+00:23:44,080 --> 00:23:50,280
+If you need any extra information or any extra explanation in Turkish, you can tell me, okay?
+
+190
+00:23:50,900 --> 00:23:53,320
+If you get the difficulty about understanding me.
+
+191
+00:23:54,280 --> 00:23:57,360
+It's the most detailed topic, in my opinion, of this course.
+
+192
+00:23:58,500 --> 00:23:59,380
+Let's start.
+
+193
+00:24:00,300 --> 00:24:01,140
+First, I think.
+
+194
+00:24:01,140 --> 00:24:10,680
+First, you can think that normal, the single integrations are used to evaluate only areas and not the volumes.
+
+195
+00:24:11,180 --> 00:24:15,140
+Because not the three-dimensional region we have normally.
+
+196
+00:24:15,500 --> 00:24:21,200
+Because the integral, single integrals are used to evaluate areas.
+
+197
+00:24:21,200 --> 00:24:27,420
+Because geometrically, they show an area under the graph of a function f between y-axis or x-axis.
+
+198
+00:24:27,600 --> 00:24:28,120
+It doesn't matter.
+
+199
+00:24:28,120 --> 00:24:33,740
+That means we have a two-dimensional region only with single integrals.
+
+200
+00:24:34,580 --> 00:24:36,860
+How can we get a volume?
+
+201
+00:24:37,180 --> 00:24:39,620
+Volume means a solid region you need.
+
+202
+00:24:40,260 --> 00:24:44,780
+Three-dimensional solid region you need in order to evaluate the volume, to talk about the volume.
+
+203
+00:24:45,360 --> 00:24:48,000
+On area, you cannot talk about the volume.
+
+204
+00:24:48,420 --> 00:24:51,300
+On area, two-dimensional regions, you can only talk about area.
+
+205
+00:24:51,300 --> 00:24:55,560
+But now, we will have again a region, a two-dimensional space.
+
+206
+00:24:55,560 --> 00:25:01,700
+But we will rotate the region to make it a three-dimensional solid region.
+
+207
+00:25:02,360 --> 00:25:06,860
+And then, we will just need to evaluate the volume of that solids.
+
+208
+00:25:06,860 --> 00:25:11,600
+That's why these solids are called solids of revolution.
+
+209
+00:25:12,480 --> 00:25:15,700
+Revolution means rotating around some excesses.
+
+210
+00:25:15,820 --> 00:25:18,660
+X-axis, lines, y-axis.
+
+211
+00:25:18,820 --> 00:25:21,519
+It's possible to get coordinate excesses.
+
+212
+00:25:21,600 --> 00:25:49,840
+It doesn't matter.
+
+213
+00:25:22,771 --> 00:25:25,511
+Revolution, that means rotating around.
+
+214
+00:25:26,251 --> 00:25:26,391
+Okay.
+
+215
+00:25:28,131 --> 00:25:29,551
+So this method is.
+
+216
+00:25:30,611 --> 00:25:36,451
+The solids generated by rotating or revolving, they are having the same meaning.
+
+217
+00:25:37,091 --> 00:25:37,912
+A plane region.
+
+218
+00:25:38,731 --> 00:25:39,652
+That's what I say.
+
+219
+00:25:40,511 --> 00:25:42,531
+Two-dimensional plane region.
+
+220
+00:25:43,351 --> 00:25:44,351
+On xy-axis.
+
+221
+00:25:45,152 --> 00:25:45,831
+Xy-plane.
+
+222
+00:25:46,251 --> 00:25:48,571
+Above and axis.
+
+223
+00:25:48,571 --> 00:25:50,631
+X-axis, y-axis, the line.
+
+224
+00:25:50,791 --> 00:25:51,991
+It can be the rotation.
+
+225
+00:25:52,771 --> 00:25:55,571
+In its plane is called the solid of revolution.
+
+226
+00:25:56,271 --> 00:25:59,412
+As you see, normally we have this area, this region.
+
+227
+00:26:00,031 --> 00:26:04,471
+Rotated about x-axis and get a three-dimensional solid of revolution.
+
+228
+00:26:05,591 --> 00:26:07,731
+So let's evaluate the volume of the solid.
+
+229
+00:26:08,451 --> 00:26:09,951
+How can we evaluate the solid?
+
+230
+00:26:10,731 --> 00:26:19,591
+Like having partitioning of an interval to evaluate an area.
+
+231
+00:26:19,591 --> 00:26:27,831
+We are just, again, having a partitioning of a three-dimensional solid region.
+
+232
+00:26:30,231 --> 00:26:32,231
+Cut into small disks.
+
+233
+00:26:32,231 --> 00:26:33,851
+Like this.
+
+234
+00:26:33,851 --> 00:26:37,111
+Okay.
+
+235
+00:26:38,031 --> 00:26:39,991
+Cutting into small disks.
+
+236
+00:26:40,311 --> 00:26:41,711
+We have a solid region.
+
+237
+00:26:42,051 --> 00:26:43,291
+Cut into small parts.
+
+238
+00:26:43,871 --> 00:26:45,251
+Every part will be a disk.
+
+239
+00:26:45,751 --> 00:26:46,491
+Like this.
+
+240
+00:26:46,672 --> 00:26:46,851
+Okay.
+
+241
+00:26:46,851 --> 00:26:50,152
+How can we evaluate these disks?
+
+242
+00:26:51,152 --> 00:26:52,412
+Volumes of these disks.
+
+243
+00:26:52,891 --> 00:26:54,011
+And then get some of them.
+
+244
+00:26:54,571 --> 00:26:55,711
+And then make this infinite.
+
+245
+00:26:56,131 --> 00:26:57,831
+This partitioning is going to infinite.
+
+246
+00:26:57,991 --> 00:26:58,311
+It's okay.
+
+247
+00:26:58,391 --> 00:26:59,111
+We know what to do.
+
+248
+00:26:59,211 --> 00:27:02,391
+But problem is to get the main structure.
+
+249
+00:27:03,011 --> 00:27:04,391
+To construct the main structure.
+
+250
+00:27:04,851 --> 00:27:07,412
+What do we need to evaluate the volume of a disk?
+
+251
+00:27:07,771 --> 00:27:08,192
+Let's see.
+
+252
+00:27:08,192 --> 00:27:10,971
+It is P r square h.
+
+253
+00:27:11,932 --> 00:27:13,951
+Pi times r square.
+
+254
+00:27:14,111 --> 00:27:14,851
+What is r square?
+
+255
+00:27:14,951 --> 00:27:17,231
+What's the radius here?
+
+256
+00:27:17,311 --> 00:27:17,731
+Fx.
+
+257
+00:27:18,611 --> 00:27:19,111
+Like this.
+
+258
+00:27:19,231 --> 00:27:19,711
+Because this.
+
+259
+00:27:21,432 --> 00:27:22,731
+Because we revolve it.
+
+260
+00:27:23,531 --> 00:27:25,412
+So this is only a radius.
+
+261
+00:27:25,751 --> 00:27:26,211
+Fx.
+
+262
+00:27:27,391 --> 00:27:28,711
+What is delta x?
+
+263
+00:27:29,551 --> 00:27:30,692
+This h.
+
+264
+00:27:30,692 --> 00:27:35,672
+That means the height of every disk will be measured by the delta x.
+
+265
+00:27:35,831 --> 00:27:38,071
+That means small parts of interval a, b.
+
+266
+00:27:38,192 --> 00:27:42,432
+So it becomes pi times f xi square delta xi.
+
+267
+00:27:43,551 --> 00:27:44,211
+1 to n.
+
+268
+00:27:44,331 --> 00:27:46,331
+Think that n numbers of disks we have.
+
+269
+00:27:46,672 --> 00:27:48,291
+Evulate one by one volumes.
+
+270
+00:27:48,692 --> 00:27:49,672
+Get the sum of them.
+
+271
+00:27:50,071 --> 00:27:52,351
+And then make n is going to infinity.
+
+272
+00:27:52,831 --> 00:27:57,551
+So it will be the exact value of the volume of that solid of revolution.
+
+273
+00:27:58,551 --> 00:28:04,432
+So according to this operation, we know it corresponds to the single integral.
+
+274
+00:28:04,932 --> 00:28:05,531
+A to b.
+
+275
+00:28:06,031 --> 00:28:06,771
+Which function?
+
+276
+00:28:07,091 --> 00:28:07,731
+F square.
+
+277
+00:28:07,731 --> 00:28:10,091
+Pi times a to b.
+
+278
+00:28:11,971 --> 00:28:12,711
+Dx.
+
+279
+00:28:13,192 --> 00:28:14,672
+F square dx.
+
+280
+00:28:15,251 --> 00:28:20,172
+So we have such a formula for evaluating a solid of revolution.
+
+281
+00:28:20,172 --> 00:28:25,271
+And then we have such a formula for evaluating a solid of the system.
+
+282
+00:28:25,331 --> 00:28:41,551
+So we have such a formula for evaluating a solid of the system.
+
+283
+00:28:23,763 --> 00:28:27,223
+Bu bölümde araya,
+
+284
+00:28:27,223 --> 00:28:30,843
+which is bounded below f and x-axis.
+
+285
+00:28:30,843 --> 00:28:31,843
+Okay.
+
+286
+00:28:32,963 --> 00:28:33,963
+So,
+
+287
+00:28:33,963 --> 00:28:35,963
+what does it mean?
+
+288
+00:28:35,963 --> 00:28:37,683
+Radius,
+
+289
+00:28:37,683 --> 00:28:39,963
+that means the distance from the rotating axis.
+
+290
+00:28:39,963 --> 00:28:40,763
+Be careful.
+
+291
+00:28:40,763 --> 00:28:42,243
+Which function we are using?
+
+292
+00:28:42,243 --> 00:28:43,243
+F.
+
+293
+00:28:43,243 --> 00:28:44,963
+Why do we need to measure with f?
+
+294
+00:28:44,963 --> 00:28:48,083
+Because we need the distance from the rotating axis.
+
+295
+00:28:48,083 --> 00:28:50,163
+Vertical distance, okay.
+
+296
+00:28:50,163 --> 00:28:53,043
+H is the distance,
+
+297
+00:28:53,043 --> 00:28:55,283
+that means the height of every disc
+
+298
+00:28:55,283 --> 00:28:58,363
+will be measured with the differential of the variable.
+
+299
+00:28:58,363 --> 00:28:59,843
+Do you understand a little bit?
+
+300
+00:28:59,843 --> 00:29:00,923
+What do we need?
+
+301
+00:29:00,923 --> 00:29:01,803
+Roughly?
+
+302
+00:29:01,803 --> 00:29:03,563
+The main structure is this.
+
+303
+00:29:03,563 --> 00:29:06,283
+Pi times a to b f squared dx.
+
+304
+00:29:06,283 --> 00:29:07,203
+But what is f?
+
+305
+00:29:07,203 --> 00:29:09,723
+The distance from the rotating axis.
+
+306
+00:29:09,723 --> 00:29:11,523
+Not only sometimes f,
+
+307
+00:29:11,523 --> 00:29:15,123
+sometimes different expressions we may have.
+
+308
+00:29:15,123 --> 00:29:19,603
+The problem is for you to understand what does f mean?
+
+309
+00:29:19,603 --> 00:29:22,323
+f means distance from the rotating axis.
+
+310
+00:29:22,323 --> 00:29:23,644
+It is important.
+
+311
+00:29:23,644 --> 00:29:24,644
+Okay.
+
+312
+00:29:24,644 --> 00:29:29,203
+The vertical distance to the rotating axis.
+
+313
+00:29:29,203 --> 00:29:33,643
+The second power of it we need for the volume of solid of revolution.
+
+314
+00:29:33,643 --> 00:29:35,643
+Are you okay up to now?
+
+315
+00:29:35,643 --> 00:29:42,963
+Do you understand a little bit?
+
+316
+00:29:48,468 --> 00:29:49,468
+Okay.
+
+317
+00:29:51,668 --> 00:29:52,668
+I'm so happy.
+
+318
+00:29:53,268 --> 00:29:55,067
+One of you understands me.
+
+319
+00:29:55,268 --> 00:29:56,468
+So nice for me.
+
+320
+00:29:57,268 --> 00:29:57,868
+And then.
+
+321
+00:30:00,268 --> 00:30:01,668
+Rotating axis,
+
+322
+00:30:02,868 --> 00:30:07,468
+sometimes x-axis, sometimes y-axis, sometimes a line it can be.
+
+323
+00:30:07,668 --> 00:30:11,668
+In that case, the formalization is a little bit need to change.
+
+324
+00:30:12,868 --> 00:30:14,067
+Look, for example,
+
+325
+00:30:14,067 --> 00:30:20,668
+the region bounded by ways f-axis, axis a, axis b, ways d is rotated about ways d.
+
+326
+00:30:20,668 --> 00:30:21,668
+So what happens?
+
+327
+00:30:21,868 --> 00:30:24,067
+How can we relate that slit of revolution?
+
+328
+00:30:25,268 --> 00:30:28,668
+Rotate this area about ways d.
+
+329
+00:30:31,067 --> 00:30:35,868
+So we need again, the vertical distance to the rotating axis.
+
+330
+00:30:35,868 --> 00:30:36,468
+What is it?
+
+331
+00:30:38,268 --> 00:30:39,868
+This is normally f-axis.
+
+332
+00:30:41,668 --> 00:30:42,468
+This is d.
+
+333
+00:30:42,468 --> 00:30:45,067
+So this distance f-axis minus d.
+
+334
+00:30:45,067 --> 00:30:46,868
+So we need to get the second power of it.
+
+335
+00:30:46,868 --> 00:30:51,268
+That means what's the radius of a solid of revolution?
+
+336
+00:30:52,668 --> 00:30:55,268
+Vertical distance to the rotating axis.
+
+337
+00:30:55,268 --> 00:30:58,468
+Always think, always sketch, always sketch this section.
+
+338
+00:30:58,468 --> 00:30:58,868
+Okay.
+
+339
+00:30:58,868 --> 00:31:00,268
+And try to measure it.
+
+340
+00:31:01,067 --> 00:31:02,067
+What's the distance?
+
+341
+00:31:02,668 --> 00:31:05,067
+I need to get the second power of it and then integrate.
+
+342
+00:31:05,067 --> 00:31:06,067
+You have to just think.
+
+343
+00:31:06,268 --> 00:31:06,668
+Okay.
+
+344
+00:31:07,268 --> 00:31:12,268
+And when it is vertical to x, that means your integration will be in terms of x.
+
+345
+00:31:12,468 --> 00:31:15,668
+Rotating axis is not x-axis, but.
+
+346
+00:31:15,668 --> 00:31:21,067
+Again, we are just choosing the section, choosing the distance.
+
+347
+00:31:21,067 --> 00:31:25,868
+Again, vertical to x means integration will be in terms of x again.
+
+348
+00:31:26,067 --> 00:31:28,268
+Like rotating about x-axis.
+
+349
+00:31:28,268 --> 00:31:30,868
+You are rotating about ways d.
+
+350
+00:31:30,868 --> 00:31:34,668
+A parallel line to x-axis means parallel to x-axis.
+
+351
+00:31:34,668 --> 00:31:35,067
+Okay.
+
+352
+00:31:35,067 --> 00:31:36,468
+With respect to x again.
+
+353
+00:31:36,468 --> 00:31:43,268
+Always try to measure the height of like having a height of the area.
+
+354
+00:31:43,268 --> 00:31:46,868
+It's not, but distance from the rotating axis.
+
+355
+00:31:46,868 --> 00:31:47,468
+Yeah.
+
+356
+00:31:47,468 --> 00:31:49,868
+And practically, you can just remember.
+
+357
+00:31:49,868 --> 00:31:52,668
+Limits, of course, a to b.
+
+358
+00:31:53,668 --> 00:31:55,668
+Pi times a to b.
+
+359
+00:31:56,468 --> 00:31:59,067
+This distance, second power in the integral.
+
+360
+00:31:59,067 --> 00:31:59,668
+What is it?
+
+361
+00:31:59,668 --> 00:32:00,668
+fx minus d.
+
+362
+00:32:00,668 --> 00:32:02,868
+Do you understand why it's fx minus d?
+
+363
+00:32:02,868 --> 00:32:06,668
+Because the whole distance is fx.
+
+364
+00:32:06,668 --> 00:32:09,868
+And this distance is d.
+
+365
+00:32:09,868 --> 00:32:12,067
+So this is fx minus d.
+
+366
+00:32:12,067 --> 00:32:13,868
+And this is the radius.
+
+367
+00:32:13,868 --> 00:32:16,468
+We need p r square h.
+
+368
+00:32:16,468 --> 00:32:19,067
+Pi r square h.
+
+369
+00:32:19,067 --> 00:32:21,668
+H is always delta x or delta y.
+
+370
+00:32:21,668 --> 00:32:22,668
+Okay.
+
+371
+00:32:22,668 --> 00:32:23,868
+Do you understand it?
+
+372
+00:32:23,868 --> 00:32:24,068
+Okay.
+
+373
+00:32:24,068 --> 00:32:25,068
+Do you understand it?
+
+374
+00:32:25,068 --> 00:32:26,068
+Okay.
+
+375
+00:32:26,068 --> 00:32:27,068
+Do you understand it?
+
+376
+00:32:27,068 --> 00:32:28,068
+Okay.
+
+377
+00:32:28,068 --> 00:32:29,068
+Do you understand it?
+
+378
+00:32:29,068 --> 00:32:30,068
+Okay.
+
+379
+00:32:30,068 --> 00:32:31,068
+Do you understand it?
+
+380
+00:32:31,068 --> 00:32:32,068
+Okay.
+
+381
+00:32:32,068 --> 00:32:51,068
+Do you understand it?
+
+382
+00:32:31,092 --> 00:32:35,432
+Oh, here there is a mistake in this formula. It must be dy.
+
+383
+00:32:43,539 --> 00:32:45,339
+Ve c to d must be.
+
+384
+00:32:46,720 --> 00:32:48,339
+Bu formula'in mistaken.
+
+385
+00:32:51,279 --> 00:32:54,980
+The region bounded by x's of y.
+
+386
+00:32:55,099 --> 00:32:58,039
+Now the function is x given as a function of y.
+
+387
+00:32:58,519 --> 00:33:02,720
+Y is c. Y is d. X's a is rotated about x's a.
+
+388
+00:33:03,180 --> 00:33:08,339
+Now we are just rotating about parallel to y's.
+
+389
+00:33:08,460 --> 00:33:10,720
+That means it's like rotating about y's.
+
+390
+00:33:10,720 --> 00:33:14,420
+Why I said that it's like rotating about y's.
+
+391
+00:33:14,539 --> 00:33:17,240
+That means in terms of why it must be.
+
+392
+00:33:17,299 --> 00:33:18,440
+It's mistaken. I'm sorry.
+
+393
+00:33:19,059 --> 00:33:20,799
+Pi times c to d.
+
+394
+00:33:22,119 --> 00:33:23,220
+C to d.
+
+395
+00:33:24,879 --> 00:33:26,000
+This distance.
+
+396
+00:33:26,480 --> 00:33:27,899
+Second power of this distance.
+
+397
+00:33:28,019 --> 00:33:28,559
+What is it?
+
+398
+00:33:29,119 --> 00:33:30,159
+We need r squared.
+
+399
+00:33:31,099 --> 00:33:31,740
+This is r.
+
+400
+00:33:32,720 --> 00:33:33,899
+This is f1.
+
+401
+00:33:34,319 --> 00:33:36,139
+The whole distance f1.
+
+402
+00:33:36,139 --> 00:33:39,799
+Because I need to get the distance to rotating x's.
+
+403
+00:33:39,799 --> 00:33:40,279
+Yes.
+
+404
+00:33:40,399 --> 00:33:40,940
+This distance.
+
+405
+00:33:41,359 --> 00:33:41,839
+It's what?
+
+406
+00:33:43,480 --> 00:33:44,680
+Full of it's a.
+
+407
+00:33:45,819 --> 00:33:46,339
+A.
+
+408
+00:33:46,480 --> 00:33:48,039
+And this distance is f1.
+
+409
+00:33:48,279 --> 00:33:50,000
+So this is a minus f1.
+
+410
+00:33:51,019 --> 00:33:52,379
+But c to d.
+
+411
+00:33:52,879 --> 00:33:53,759
+C to d.
+
+412
+00:33:53,879 --> 00:33:55,139
+Pi times c to d.
+
+413
+00:33:55,480 --> 00:33:56,819
+A minus f1.
+
+414
+00:33:57,059 --> 00:33:58,639
+O squared dy.
+
+415
+00:33:59,159 --> 00:33:59,879
+It must be.
+
+416
+00:33:59,879 --> 00:34:03,399
+I am sorry.
+
+417
+00:34:03,480 --> 00:34:04,220
+I was mistaken.
+
+418
+00:34:04,220 --> 00:34:04,259
+I am sorry.
+
+419
+00:34:04,259 --> 00:34:04,279
+I was mistaken.
+
+420
+00:34:04,279 --> 00:34:04,559
+I am sorry.
+
+421
+00:34:04,559 --> 00:34:04,659
+I was mistaken.
+
+422
+00:34:04,659 --> 00:34:05,180
+I am sorry.
+
+423
+00:34:05,180 --> 00:34:05,220
+I was mistaken.
+
+424
+00:34:05,220 --> 00:34:05,420
+I am sorry.
+
+425
+00:34:05,420 --> 00:34:05,819
+I was mistaken.
+
+426
+00:34:05,819 --> 00:34:06,319
+I am sorry.
+
+427
+00:34:06,319 --> 00:34:06,379
+I was mistaken.
+
+428
+00:34:06,379 --> 00:34:06,420
+I am sorry.
+
+429
+00:34:06,420 --> 00:34:06,460
+I was mistaken.
+
+430
+00:34:06,460 --> 00:34:06,559
+I am sorry.
+
+431
+00:34:06,559 --> 00:34:07,420
+I was mistaken.
+
+432
+00:34:07,420 --> 00:34:07,519
+I am sorry.
+
+433
+00:34:07,519 --> 00:34:08,420
+I was mistaken.
+
+434
+00:34:08,420 --> 00:34:08,519
+I am sorry.
+
+435
+00:34:08,519 --> 00:34:08,559
+I was mistaken.
+
+436
+00:34:08,559 --> 00:34:08,619
+I am sorry.
+
+437
+00:34:08,619 --> 00:34:09,559
+I was mistaken.
+
+438
+00:34:09,559 --> 00:34:09,619
+I am sorry.
+
+439
+00:34:09,619 --> 00:34:10,559
+I was mistaken.
+
+440
+00:34:10,559 --> 00:34:10,619
+I am sorry.
+
+441
+00:34:10,619 --> 00:34:11,619
+I was mistaken.
+
+442
+00:34:11,619 --> 00:34:12,619
+I am sorry.
+
+443
+00:34:12,619 --> 00:34:13,619
+I was mistaken.
+
+444
+00:34:13,619 --> 00:34:14,619
+I am sorry.
+
+445
+00:34:14,619 --> 00:34:15,619
+I was mistaken.
+
+446
+00:34:15,619 --> 00:34:16,619
+I am sorry.
+
+447
+00:34:16,619 --> 00:34:17,619
+I was mistaken.
+
+448
+00:34:17,619 --> 00:34:18,619
+I am sorry.
+
+449
+00:34:18,619 --> 00:34:19,619
+I was mistaken.
+
+450
+00:34:12,788 --> 00:34:15,568
+Are you okay? Up to now.
+
+451
+00:34:27,092 --> 00:34:29,092
+Any questions?
+
+452
+00:34:30,771 --> 00:34:31,771
+Okay.
+
+453
+00:34:35,987 --> 00:34:36,987
+Let's continue.
+
+454
+00:34:38,987 --> 00:34:53,987
+What about the washer method? Washer method, again I want to say, is not an alternative method with this method. That means it doesn't mean that you can use this core washer. No, they are completely different according to the different cases.
+
+455
+00:34:54,987 --> 00:35:00,987
+Why we have washer method, for example. Now let's see. You will understand this difference.
+
+456
+00:35:00,987 --> 00:35:12,987
+Let's evaluate the volume of the solid generated by revolving the region bounded by yf1x, yf2x, x's a and x's b around x-axis.
+
+457
+00:35:14,987 --> 00:35:21,987
+Around x-axis. Here, in this case, solid has a hole in it. This is the difference.
+
+458
+00:35:21,987 --> 00:35:48,987
+This hole. This hole. That means, how can I make you understand? Rotating axis and the area region are intersecting. But here they are not intersecting. There is a space here. Do you understand me? Rotating axis is this, but area is here.
+
+459
+00:35:48,987 --> 00:36:13,987
+They are not intersecting means washer method you need. Look at the other one. Look at the other one. Look. Rotating axis is between the area, the region. Look. Look. They are just directly revolving around about rotating axis and there they have an intersection set. But here they don't.
+
+460
+00:36:13,987 --> 00:36:30,987
+We have a spare area here. They have a spare area here. That's why about the abotic axis is this, if we have the revolution of this region, we will have a hole in it. In the solid, we will have a hole. Do you understand me?
+
+461
+00:36:30,987 --> 00:36:31,987
+What?
+
+462
+00:36:40,724 --> 00:36:41,604
+Okay, well done.
+
+463
+00:36:42,784 --> 00:36:45,624
+So, but I want to evaluate the volume
+
+464
+00:36:45,624 --> 00:36:48,963
+of the solid of revolution
+
+465
+00:36:48,963 --> 00:36:51,124
+of this region bounded
+
+466
+00:36:51,124 --> 00:36:52,724
+by y1 and y2
+
+467
+00:36:52,724 --> 00:36:55,044
+about x-axis. I don't want
+
+468
+00:36:55,044 --> 00:36:57,084
+to evaluate the solid which has the
+
+469
+00:36:57,084 --> 00:36:59,044
+whole, that means
+
+470
+00:36:59,044 --> 00:37:00,884
+the whole part must be out,
+
+471
+00:37:01,664 --> 00:37:03,104
+must be subtracted. That's
+
+472
+00:37:03,104 --> 00:37:04,884
+why in the Voyager method
+
+473
+00:37:04,884 --> 00:37:06,824
+we have always a subtraction
+
+474
+00:37:06,824 --> 00:37:09,224
+because
+
+475
+00:37:09,224 --> 00:37:13,024
+yes, you're right.
+
+476
+00:37:13,564 --> 00:37:14,923
+F2 is the whole part.
+
+477
+00:37:15,764 --> 00:37:17,204
+[öğrenci], F2
+
+478
+00:37:17,204 --> 00:37:18,764
+is the whole part?
+
+479
+00:37:19,604 --> 00:37:20,984
+Ah, yes, yes, you're right. Yes.
+
+480
+00:37:21,804 --> 00:37:23,204
+Whole means, I mean
+
+481
+00:37:23,204 --> 00:37:25,104
+the big one, bigger one is
+
+482
+00:37:25,104 --> 00:37:26,864
+F2. Like you said, you're right.
+
+483
+00:37:26,984 --> 00:37:28,584
+F1 is the whole part.
+
+484
+00:37:29,304 --> 00:37:31,204
+That means the part that we don't want to
+
+485
+00:37:31,204 --> 00:37:31,764
+evaluate. Okay.
+
+486
+00:37:33,644 --> 00:37:34,084
+So,
+
+487
+00:37:34,084 --> 00:37:36,644
+okay, well done.
+
+488
+00:37:37,084 --> 00:37:38,284
+So, what to do?
+
+489
+00:37:39,224 --> 00:37:40,484
+again, same.
+
+490
+00:37:41,044 --> 00:37:42,064
+Formula is same.
+
+491
+00:37:42,384 --> 00:37:44,304
+P R square H.
+
+492
+00:37:44,724 --> 00:37:44,864
+Okay.
+
+493
+00:37:45,344 --> 00:37:47,044
+General formula is always the same.
+
+494
+00:37:47,824 --> 00:37:48,844
+P R square H.
+
+495
+00:37:49,184 --> 00:37:50,244
+Like this method.
+
+496
+00:37:52,463 --> 00:37:54,284
+P R square distance.
+
+497
+00:37:54,644 --> 00:37:55,844
+Which distance is it?
+
+498
+00:37:56,844 --> 00:37:58,204
+Distance to the rotating
+
+499
+00:37:58,204 --> 00:37:58,524
+axis.
+
+500
+00:37:59,684 --> 00:38:00,004
+Okay.
+
+501
+00:38:00,943 --> 00:38:02,584
+What's the distance to the rotating
+
+502
+00:38:02,584 --> 00:38:02,903
+axis?
+
+503
+00:38:02,903 --> 00:38:05,524
+First,
+
+504
+00:38:05,664 --> 00:38:07,104
+I will take the bigger part.
+
+505
+00:38:07,403 --> 00:38:08,443
+The whole region.
+
+506
+00:38:08,963 --> 00:38:09,484
+Whole means
+
+507
+00:38:09,484 --> 00:38:11,423
+this is not the whole.
+
+508
+00:38:11,624 --> 00:38:11,784
+Look.
+
+509
+00:38:11,784 --> 00:38:12,784
+is the whole region.
+
+510
+00:38:12,784 --> 00:38:24,164
+I will take the bigger part.
+
+511
+00:38:16,115 --> 00:38:40,956
+All of them. I mean this hole. But the hole, that means the spare part, different. The bigger one, let's say, the bigger volume, will be evaluated by the rotating of f2 around x-axis with no hole. That's why we need to evaluate, firstly, this distance, big R. Okay, this is the big radius, f2.
+
+512
+00:38:40,956 --> 00:38:58,755
+So, f2 squared minus small one. That means the spare part, whole part. We don't want to evaluate it. That's why we need to get the subtraction of them. Okay. And what's the radius about the revolving of y1 around x-axis?
+
+513
+00:38:58,755 --> 00:39:10,516
+So, pf1 squared, pf1 squared, pf1 squared, pf1 squared, dx. So, subtraction of them, that means the subtraction of two volumes, gives the volume that we want to evaluate.
+
+514
+00:39:10,516 --> 00:39:12,596
+Now, do you understand it?
+
+515
+00:39:17,300 --> 00:39:17,800
+ok.
+
+516
+00:39:26,804 --> 00:39:28,003
+İndi kuesu?
+
+517
+00:39:41,076 --> 00:39:48,996
+If you need an extra information, please tell me. I can repeat as much as you want and if you want I can give the explanation in Turkish.
+
+518
+00:39:48,996 --> 00:40:00,275
+Okay, because this topic is a little bit different. Don't hesitate, ask me. No problem. Okay, what about the next one?
+
+519
+00:40:02,195 --> 00:40:07,235
+What do we have with respect to y? That means rotating about y-axis.
+
+520
+00:40:07,235 --> 00:40:36,356
+Nasty, in that case...
+
+521
+00:40:14,675 --> 00:40:22,355
+In that case, again, washer method, because we have a spare volume here, whole.
+
+522
+00:40:26,356 --> 00:40:28,356
+Evet, çünkü de radüse.
+
+523
+00:40:28,356 --> 00:40:30,356
+Evet, tamamen.
+
+524
+00:40:30,356 --> 00:40:32,356
+Bu, yukarı.
+
+525
+00:40:32,356 --> 00:40:34,356
+Çünkü bu, yukarı.
+
+526
+00:40:34,356 --> 00:40:36,356
+P, yukarı.
+
+527
+00:40:36,356 --> 00:42:41,356
+Yukarı.
+
+528
+00:42:44,500 --> 00:42:45,380
+are you okay?
+
+529
+00:42:50,483 --> 00:42:52,023
+Evet, of course, astım.
+
+530
+00:43:10,867 --> 00:43:12,547
+If you want, you can use your microphone.
+
+531
+00:43:15,027 --> 00:43:19,188
+What if we turn f1 related to the f2?
+
+532
+00:43:21,507 --> 00:43:22,307
+What does it mean?
+
+533
+00:43:24,467 --> 00:43:25,827
+F1 related to f2?
+
+534
+00:43:27,507 --> 00:43:40,547
+Uh, miss, uh, I'll try to say that, uh, if we turn f1, uh, with, uh, if we centered f2 and turn f1 around the
+
+535
+00:43:40,867 --> 00:43:42,788
+f2, so what happens?
+
+536
+00:43:43,987 --> 00:43:45,827
+Ah, nice question.
+
+537
+00:43:46,547 --> 00:43:47,188
+That means?
+
+538
+00:43:47,987 --> 00:43:54,268
+By the way, I want to use my microphone, but my mom and my dad are, uh, teacher, and so they are on the list.
+
+539
+00:43:54,268 --> 00:43:54,587
+Oh, really?
+
+540
+00:43:54,987 --> 00:43:56,228
+Okay, I understand you.
+
+541
+00:43:56,228 --> 00:43:59,268
+Sometimes I can use, sometimes I couldn't, so I'm sorry.
+
+542
+00:44:01,107 --> 00:44:02,067
+Like my son.
+
+543
+00:44:02,628 --> 00:44:03,427
+It's so normal.
+
+544
+00:44:04,467 --> 00:44:06,067
+We have different cases.
+
+545
+00:44:06,067 --> 00:44:06,788
+Yes, you're right.
+
+546
+00:44:06,788 --> 00:44:09,107
+I think you asked me that.
+
+547
+00:44:09,107 --> 00:44:12,387
+What about the rotating axis is f2y, for example?
+
+548
+00:44:12,387 --> 00:44:13,027
+Yes.
+
+549
+00:44:13,027 --> 00:44:15,108
+We don't have.
+
+550
+00:44:15,108 --> 00:44:18,947
+Normally, rotating axis is our lines.
+
+551
+00:44:20,387 --> 00:44:23,108
+Or axis, coordinate axis is in this course.
+
+552
+00:44:23,108 --> 00:44:23,827
+No.
+
+553
+00:44:23,827 --> 00:44:24,148
+Okay.
+
+554
+00:44:24,867 --> 00:44:25,987
+But a nice question.
+
+555
+00:44:25,987 --> 00:44:27,027
+Okay, thank you.
+
+556
+00:44:27,027 --> 00:44:27,587
+I like it.
+
+557
+00:44:27,587 --> 00:44:28,067
+Not at all.
+
+558
+00:44:28,067 --> 00:44:28,467
+Okay.
+
+559
+00:44:28,467 --> 00:44:29,027
+Thank you.
+
+560
+00:44:29,027 --> 00:44:29,587
+I like it.
+
+561
+00:44:29,587 --> 00:44:30,467
+Not at all.
+
+562
+00:44:34,003 --> 00:44:38,364
+Any question? Do you understand it? Are you okay?
+
+563
+00:44:48,980 --> 00:44:56,960
+Okay, so let's see an example. And now you will see that, you understand or not, I think.
+
+564
+00:44:57,960 --> 00:45:08,900
+It says, evaluate the volume of the solid generated by revolving the region bounded by y² x, x is between 0 and 4, and y is 0 around x-axis.
+
+565
+00:45:09,380 --> 00:45:17,559
+In these questions, area and the rotating axis must be given to you. Okay, so be careful about the region.
+
+566
+00:45:17,559 --> 00:45:21,719
+boundary curves will be given, boundary curves will be given, and the rotating axis. Okay.
+
+567
+00:45:23,719 --> 00:45:24,440
+Let's see.
+
+568
+00:45:26,119 --> 00:45:32,559
+y² x means normal x is y² the parabola, but only one branch of it, because y is positive here.
+
+569
+00:45:33,460 --> 00:45:34,719
+It's related to the question.
+
+570
+00:45:38,324 --> 00:45:39,923
+Rotating axis is x.
+
+571
+00:45:40,764 --> 00:45:41,764
+As you see,
+
+572
+00:45:43,264 --> 00:45:44,144
+they don't have a
+
+573
+00:45:44,144 --> 00:45:46,423
+spare area
+
+574
+00:45:46,423 --> 00:45:49,003
+between rotating axis and an r area.
+
+575
+00:45:49,443 --> 00:45:50,684
+That's why this method,
+
+576
+00:45:50,784 --> 00:45:51,744
+the first case, okay?
+
+577
+00:45:52,563 --> 00:45:54,804
+We don't have a hole in the volume
+
+578
+00:45:54,804 --> 00:45:56,023
+about revolution
+
+579
+00:45:56,023 --> 00:45:58,923
+of this area about x axis.
+
+580
+00:45:59,483 --> 00:45:59,664
+Okay?
+
+581
+00:46:00,664 --> 00:46:02,403
+And then, what do we need?
+
+582
+00:46:02,624 --> 00:46:05,344
+Pi r square h.
+
+583
+00:46:05,983 --> 00:46:06,744
+Pi is, okay,
+
+584
+00:46:06,744 --> 00:46:09,684
+r square distance to the rotating axis.
+
+585
+00:46:10,043 --> 00:46:11,584
+H, dx or dy.
+
+586
+00:46:12,184 --> 00:46:13,164
+Firstly, decide.
+
+587
+00:46:13,784 --> 00:46:14,584
+dx or dy?
+
+588
+00:46:14,943 --> 00:46:16,624
+Of course, dx because you are just
+
+589
+00:46:16,624 --> 00:46:18,023
+rotating about x axis.
+
+590
+00:46:18,644 --> 00:46:23,184
+So dx, this height of every cylinder,
+
+591
+00:46:23,443 --> 00:46:24,023
+every disc,
+
+592
+00:46:24,563 --> 00:46:26,204
+has the distance dx.
+
+593
+00:46:27,043 --> 00:46:28,224
+So, it's dx.
+
+594
+00:46:28,684 --> 00:46:31,184
+What about distance to the rotating axis?
+
+595
+00:46:31,903 --> 00:46:32,903
+What does it mean?
+
+596
+00:46:33,724 --> 00:46:34,684
+F, directly F,
+
+597
+00:46:34,684 --> 00:46:36,923
+because this distance can be measured by F.
+
+598
+00:46:37,284 --> 00:46:37,784
+What is it?
+
+599
+00:46:38,084 --> 00:46:38,884
+Square root of x.
+
+600
+00:46:38,983 --> 00:46:40,204
+Of course, in terms of axis,
+
+601
+00:46:40,344 --> 00:46:40,943
+it must be.
+
+602
+00:46:41,423 --> 00:46:42,443
+So, square root of x
+
+603
+00:46:42,443 --> 00:46:44,844
+is our distance to the rotating axis.
+
+604
+00:46:45,003 --> 00:46:45,884
+That means the radius.
+
+605
+00:46:46,523 --> 00:46:48,443
+So, r square, square root of x,
+
+606
+00:46:48,804 --> 00:46:50,023
+all square, dx.
+
+607
+00:46:50,443 --> 00:46:51,324
+On which interval?
+
+608
+00:46:51,864 --> 00:46:52,784
+Zero to four.
+
+609
+00:46:52,864 --> 00:46:54,523
+Of course, just get the projection
+
+610
+00:46:54,523 --> 00:46:56,344
+of the region to rotating axis.
+
+611
+00:46:56,523 --> 00:46:56,724
+Look.
+
+612
+00:46:56,963 --> 00:46:57,864
+On x axis.
+
+613
+00:46:58,224 --> 00:46:58,724
+Just look.
+
+614
+00:46:59,063 --> 00:47:01,264
+When you are integrating with respect to x,
+
+615
+00:47:01,264 --> 00:47:03,523
+look up for the projection of x axis.
+
+616
+00:47:03,684 --> 00:47:04,523
+Zero to four.
+
+617
+00:47:05,003 --> 00:47:06,403
+Pi times zero to four.
+
+618
+00:47:06,463 --> 00:47:07,144
+Square root of x.
+
+619
+00:47:07,244 --> 00:47:07,923
+All square dx.
+
+620
+00:47:11,423 --> 00:47:13,523
+Do you understand this formalization?
+
+621
+00:47:22,579 --> 00:47:23,019
+Okay.
+
+622
+00:47:24,219 --> 00:47:25,900
+Any question about it?
+
+623
+00:47:30,164 --> 00:47:36,044
+Any of you, are you okay? It's important for me. Okay.
+
+624
+00:47:38,784 --> 00:47:43,824
+Well done. So nice. I'm happy now. Very, very, very happy.
+
+625
+00:47:45,784 --> 00:47:52,824
+What about this question? Write the integrals which gives the volume of the solid that is generated by revolving the region.
+
+626
+00:47:52,824 --> 00:48:03,944
+Region is y²x, the same curve, positive part. y is 1, x is 4, about x is 4, about x is 4, about y is 1.
+
+627
+00:48:04,784 --> 00:48:09,284
+Let's start with the first one. Do it and tell me the limits and the integral, please.
+
+628
+00:48:10,744 --> 00:48:16,044
+I'm waiting for you. First, the sketch. You need to sketch the area, rotating x's, and then tell me.
+
+629
+00:50:48,851 --> 00:50:51,371
+Have you done? I think it must be finished.
+
+630
+00:50:52,951 --> 00:50:54,851
+Or if you have a problem, ask me.
+
+631
+00:50:57,132 --> 00:50:58,672
+Have you evaluated? Well done.
+
+632
+00:50:59,172 --> 00:50:59,911
+Let's look, [öğrenci].
+
+633
+00:51:07,956 --> 00:51:18,876
+I'm sorry. I think today I have a problem with chat because I couldn't see your words. Let me look. Now I have seen them.
+
+634
+00:51:20,736 --> 00:51:25,316
+You said that 15.2. You found the same.
+
+635
+00:51:29,780 --> 00:51:31,400
+Fingers crossed.
+
+636
+00:51:35,699 --> 00:51:45,339
+Oh, you're young people. I couldn't understand you. I'm sorry. I'm very older for you. Okay.
+
+637
+00:51:49,619 --> 00:52:01,719
+Ah, yes. Okay. I'm just trying to understand yavut. Okay, I understand. Let's see the solution.
+
+638
+00:52:05,139 --> 00:52:16,719
+Aha, the solutions are not given. You will evaluate it. Okay. Let's see one by one. Because here the integrals are important. Let's look. Just check your limits. Okay.
+
+639
+00:52:16,719 --> 00:52:31,159
+Okay. In the first one. A, x is 4. This region. Okay. About x is 4. Okay. Nice. That means disk method.
+
+640
+00:52:32,159 --> 00:52:40,380
+When the rotating x's have a disk intersection with the area region, that means disk method.
+
+641
+00:52:40,380 --> 00:52:52,319
+If we have a disk or washer you need. Are you okay about this? Which one?
+
+642
+00:52:52,319 --> 00:53:04,619
+disk or washer? And look. Wait a minute. I have a problem with this chat part. Okay. And look.
+
+643
+00:53:04,619 --> 00:53:06,619
+first, first tell me. Is there integration correct for A?
+
+644
+00:53:06,619 --> 00:53:10,619
+first tell me, is there integration correct for A?
+
+645
+00:53:16,563 --> 00:53:33,983
+have you checked it? Limits. Hmm. I think you did it with respect to x. All of you, in my opinion. Because we didn't. Ah, really? Ah, in b? Okay. Ah, okay.
+
+646
+00:53:37,243 --> 00:53:43,743
+So, look, for the other questions, I think you will be okay. I believe in you, always.
+
+647
+00:53:43,743 --> 00:53:50,243
+focus on rotating of this region about ways one.
+
+648
+00:53:55,795 --> 00:53:57,415
+No, ilk x is 4.
+
+649
+00:53:58,175 --> 00:53:58,795
+Let me know.
+
+650
+00:53:59,175 --> 00:54:00,315
+Yes, ilk x is 4.
+
+651
+00:54:01,035 --> 00:54:01,215
+This.
+
+652
+00:54:01,995 --> 00:54:04,495
+You can ask me why it is in terms of y.
+
+653
+00:54:05,015 --> 00:54:07,895
+Because rotating about x is 4 means
+
+654
+00:54:07,895 --> 00:54:10,895
+it's parallel to y x is.
+
+655
+00:54:10,895 --> 00:54:13,056
+That means it's like around,
+
+656
+00:54:13,215 --> 00:54:14,455
+rotating around y x is.
+
+657
+00:54:14,615 --> 00:54:15,735
+That's why dy.
+
+658
+00:54:16,415 --> 00:54:18,815
+Because this volume,
+
+659
+00:54:19,135 --> 00:54:21,475
+this area rotate about x is 4.
+
+660
+00:54:21,875 --> 00:54:24,935
+So the height of every small disk
+
+661
+00:54:24,935 --> 00:54:27,835
+has the height delta y.
+
+662
+00:54:28,255 --> 00:54:29,135
+That's why dy.
+
+663
+00:54:29,475 --> 00:54:31,895
+That's why integral will be in terms of y.
+
+664
+00:54:32,375 --> 00:54:36,096
+And then means that limits will come from y x's, not x.
+
+665
+00:54:37,175 --> 00:54:37,735
+Are you okay?
+
+666
+00:54:40,795 --> 00:54:42,495
+About x is 4 means
+
+667
+00:54:42,495 --> 00:54:47,635
+here, every small disk
+
+668
+00:54:47,635 --> 00:54:50,255
+have the height delta y.
+
+669
+00:54:50,355 --> 00:54:52,195
+Because this distance is delta y.
+
+670
+00:54:52,195 --> 00:54:55,096
+delta y means integrate with respect to y.
+
+671
+00:54:55,175 --> 00:54:57,755
+That's why the limits will come from y x's.
+
+672
+00:54:58,275 --> 00:55:00,515
+This region has the projection on y x's,
+
+673
+00:55:00,596 --> 00:55:01,295
+one to two.
+
+674
+00:55:01,755 --> 00:55:03,076
+That's why one to two.
+
+675
+00:55:03,295 --> 00:55:03,395
+Okay.
+
+676
+00:55:03,835 --> 00:55:05,715
+Pi r square h.
+
+677
+00:55:06,415 --> 00:55:07,135
+Pi is okay.
+
+678
+00:55:07,255 --> 00:55:08,076
+h is okay.
+
+679
+00:55:08,295 --> 00:55:08,555
+dy.
+
+680
+00:55:08,975 --> 00:55:09,935
+What about r square?
+
+681
+00:55:10,515 --> 00:55:11,335
+What is r square?
+
+682
+00:55:11,915 --> 00:55:13,495
+Distance to the rotating axis.
+
+683
+00:55:14,076 --> 00:55:15,935
+What's the distance to the rotating axis?
+
+684
+00:55:16,115 --> 00:55:16,695
+This section.
+
+685
+00:55:17,115 --> 00:55:18,195
+The length of this section.
+
+686
+00:55:18,195 --> 00:55:18,775
+What is it?
+
+687
+00:55:19,455 --> 00:55:20,735
+Normally it is 4.
+
+688
+00:55:21,355 --> 00:55:22,195
+Zero to 4.
+
+689
+00:55:22,415 --> 00:55:23,135
+This distance.
+
+690
+00:55:23,635 --> 00:55:24,515
+Zero to 4.
+
+691
+00:55:25,315 --> 00:55:26,215
+What is this?
+
+692
+00:55:27,115 --> 00:55:27,975
+y square.
+
+693
+00:55:28,295 --> 00:55:29,935
+Because x is y square here.
+
+694
+00:55:30,415 --> 00:55:33,255
+So this distance is 4 minus y square.
+
+695
+00:55:33,895 --> 00:55:34,175
+r.
+
+696
+00:55:34,835 --> 00:55:38,015
+So p pi r square h.
+
+697
+00:55:39,395 --> 00:55:40,935
+Do you understand the first one?
+
+698
+00:55:40,935 --> 00:56:08,935
+You.
+
+699
+00:55:56,148 --> 00:55:58,788
+Yes or no? Are you okay?
+
+700
+00:56:05,715 --> 00:56:09,735
+You can have problem about understanding why it is 4 minus y squared.
+
+701
+00:56:10,596 --> 00:56:18,496
+Because once we need to measure a distance, if it is not starting from 0, you need to get such an expression.
+
+702
+00:56:18,655 --> 00:56:19,855
+Otherwise, you cannot evaluate it.
+
+703
+00:56:20,036 --> 00:56:23,855
+Look, the distance are measured from starting from origin.
+
+704
+00:56:23,855 --> 00:56:27,175
+For example, this distance is 0 to 4.
+
+705
+00:56:27,315 --> 00:56:31,895
+So 4, this distance related about this spare time.
+
+706
+00:56:31,895 --> 00:56:36,335
+This distance are related about this function in terms of y.
+
+707
+00:56:36,855 --> 00:56:37,735
+X is y squared.
+
+708
+00:56:37,935 --> 00:56:45,016
+So this distance according to y, 1 to 2, becoming 4 minus, becoming y squared.
+
+709
+00:56:45,795 --> 00:56:48,415
+So this distance, 4 minus y squared.
+
+710
+00:56:48,415 --> 00:56:53,976
+This is r distance to the rotating axis, the radius of every small disk.
+
+711
+00:56:54,855 --> 00:56:56,976
+So pi r squared h.
+
+712
+00:56:57,295 --> 00:56:58,096
+h is dy.
+
+713
+00:57:00,395 --> 00:57:00,996
+A is okay.
+
+714
+00:57:00,996 --> 00:57:02,076
+What was b?
+
+715
+00:57:04,335 --> 00:57:05,415
+About x-axis.
+
+716
+00:57:05,675 --> 00:57:05,835
+Okay.
+
+717
+00:57:06,435 --> 00:57:10,016
+About x-axis means which method we need?
+
+718
+00:57:11,695 --> 00:57:12,855
+Of course, washer.
+
+719
+00:57:13,295 --> 00:57:20,815
+Because area is here, x-axis is here, and we have a spare region here, which means washer method.
+
+720
+00:57:21,275 --> 00:57:22,516
+They don't have an intersection.
+
+721
+00:57:23,195 --> 00:57:23,435
+Okay.
+
+722
+00:57:23,435 --> 00:57:26,056
+So washer method.
+
+723
+00:57:26,056 --> 00:57:34,536
+So washer method says that once you get the revolution of this region about x-axis, you will have a hole in it.
+
+724
+00:57:34,536 --> 00:57:43,096
+So in order to evaluate the volume, you need to get the subtraction of two volumes, which means washer method.
+
+725
+00:57:43,715 --> 00:57:45,675
+First volume, the bigger one.
+
+726
+00:57:45,675 --> 00:57:54,855
+is generated by revolving of this region graph of the bigger one, this f.
+
+727
+00:57:54,855 --> 00:57:56,016
+What is it?
+
+728
+00:57:56,016 --> 00:57:59,016
+Now, first thing with respect to x or y.
+
+729
+00:57:59,016 --> 00:58:05,295
+Of course, rotating about x-axis, heights are coming from every small disk, coming from x-axis dx.
+
+730
+00:58:05,295 --> 00:58:06,295
+Okay.
+
+731
+00:58:06,295 --> 00:58:08,476
+So 1 to 4.
+
+732
+00:58:08,476 --> 00:58:12,536
+We, pi times 1 to 4 dx first, right?
+
+733
+00:58:12,635 --> 00:58:15,635
+And then write r square, because it's the biggest hard one.
+
+734
+00:58:16,975 --> 00:58:17,795
+What is it?
+
+735
+00:58:18,456 --> 00:58:19,355
+The biggest one?
+
+736
+00:58:19,795 --> 00:58:20,096
+F.
+
+737
+00:58:20,435 --> 00:58:21,135
+What is f?
+
+738
+00:58:21,335 --> 00:58:22,115
+Square root of x.
+
+739
+00:58:22,115 --> 00:58:25,195
+Yes, this distance is related with this function.
+
+740
+00:58:25,835 --> 00:58:27,155
+1 to 4 f x.
+
+741
+00:58:27,815 --> 00:58:30,315
+This distance is r square root of x.
+
+742
+00:58:30,516 --> 00:58:32,235
+So r square x.
+
+743
+00:58:32,556 --> 00:58:34,016
+Square root of x or square x.
+
+744
+00:58:34,935 --> 00:58:36,315
+This is the biggest volume.
+
+745
+00:58:36,315 --> 00:58:37,596
+What about the hole?
+
+746
+00:58:37,795 --> 00:58:41,175
+Volume of hole will be generated by the revolving ways one.
+
+747
+00:58:43,135 --> 00:58:44,215
+Here ways one.
+
+748
+00:58:44,655 --> 00:58:45,456
+This distance.
+
+749
+00:58:45,715 --> 00:58:47,556
+Distance to the rotating axis is one.
+
+750
+00:58:47,915 --> 00:58:49,135
+So minus one square.
+
+751
+00:58:50,215 --> 00:58:51,835
+That's why we have such a formula.
+
+752
+00:58:52,115 --> 00:58:52,655
+Pi.
+
+753
+00:58:53,315 --> 00:58:54,135
+R square.
+
+754
+00:58:54,375 --> 00:58:54,775
+H.
+
+755
+00:58:54,775 --> 00:58:55,815
+Minus pi.
+
+756
+00:58:56,096 --> 00:58:57,456
+And a different r square.
+
+757
+00:58:57,456 --> 00:58:57,875
+H.
+
+758
+00:58:58,295 --> 00:59:00,615
+So the subtraction of two volumes, which gives the.
+
+759
+00:59:01,576 --> 00:59:02,875
+Wush method also.
+
+760
+00:59:05,056 --> 00:59:05,795
+Are you okay?
+
+761
+00:59:11,572 --> 00:59:13,572
+or the second case.
+
+762
+00:59:20,500 --> 00:59:37,400
+Okay. Ask me if you have any question. I can repeat as much as you want. Okay. What about C? C was about voice 1. Okay. Voice 1? Oh, so easy.
+
+763
+00:59:41,780 --> 00:59:48,320
+Now, rotating about where one means it's a parallel line to x axis.
+
+764
+00:59:48,320 --> 00:59:52,100
+That means dx again we will have in the integral for h.
+
+765
+00:59:52,100 --> 00:59:55,100
+Okay, just think again dx will be h.
+
+766
+00:59:56,300 --> 00:59:58,340
+Distance to the rotating axis.
+
+767
+00:59:58,740 --> 01:00:00,260
+This distance you need now.
+
+768
+01:00:01,940 --> 01:00:03,380
+Look, what is it?
+
+769
+01:00:11,987 --> 01:00:14,547
+Bu birçok birçok, çoğrı x.
+
+770
+01:00:15,447 --> 01:00:16,687
+Normalde bu birçok.
+
+771
+01:00:17,207 --> 01:01:09,967
+Bu birçok, çoğrı x-1.
+
+772
+01:01:09,967 --> 01:01:13,967
+Evet, çoğrı x-1.
+
+773
+01:01:13,967 --> 01:01:41,967
+Bu birçok, çoğrı x-1.
+
+774
+01:02:01,972 --> 01:02:08,582
+Evet, ben de. Bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonra
+
+775
+01:02:12,340 --> 01:02:13,880
+I thank you. See you.
+
+776
+01:13:57,203 --> 01:13:59,083
+Hi again, shall we continue? Are you okay?
+
+777
+01:14:11,796 --> 01:14:12,836
+Okay, so nice.
+
+778
+01:14:19,475 --> 01:14:23,235
+Let's continue with the next exercise.
+
+779
+01:14:26,515 --> 01:14:40,115
+And look, it says the region is bounded by y is x squared, y is 2 minus x, and x is greater than equal to 0, and positive x.
+
+780
+01:14:40,115 --> 01:14:44,355
+Evolume of the solid generated by revolving of this region about y axis.
+
+781
+01:14:44,355 --> 01:14:49,235
+Let's try to write all the integration is okay for me.
+
+782
+01:14:51,955 --> 01:14:53,155
+First sketch the region.
+
+783
+01:14:56,515 --> 01:15:05,315
+And tell me which method you use, disk or washer, and then write me the limits and the function
+
+784
+01:15:05,955 --> 01:15:11,315
+in the integral R. I'm waiting for you and then we'll see together.
+
+785
+01:15:33,268 --> 01:15:38,188
+First sketch the region and then look about y-axis.
+
+786
+01:16:44,020 --> 01:16:46,820
+Did you have any problem? Shall we see it together?
+
+787
+01:16:56,787 --> 01:16:57,167
+Okay.
+
+788
+01:16:58,727 --> 01:17:00,007
+What about the others?
+
+789
+01:17:24,787 --> 01:17:30,627
+Okay. Only write the integral, don't solve it. Just tell me, what do you get in the integral?
+
+790
+01:17:33,027 --> 01:17:40,787
+In these questions, integrals are much more important to write the construct through integration.
+
+791
+01:17:41,587 --> 01:17:49,187
+Which function to integrate and where on which interval is important. Rest of it is only an evaluation.
+
+792
+01:17:55,283 --> 01:18:10,443
+0 to 2x² plus x-2, o². Okay. Anyone else? Now we will see. [öğrenci] knows what you get.
+
+793
+01:18:21,684 --> 01:18:23,144
+Is the more a result or not?
+
+794
+01:18:25,324 --> 01:18:25,923
+Okay.
+
+795
+01:18:26,644 --> 01:18:27,144
+Let's see.
+
+796
+01:18:34,100 --> 01:18:51,140
+Look, y is x². y is 2 minus x, and positive of x. x is greater than the cube 0. Ah, yes, x is 0, y exists, and the positive of x. Okay.
+
+797
+01:18:52,520 --> 01:19:00,020
+Because also we have the other branch of the parabola and the line, we may have other spaces.
+
+798
+01:19:00,020 --> 01:19:05,740
+That's why here in the first quadrant, we have this positive of x. That's why it says,
+
+799
+01:19:06,640 --> 01:19:16,320
+and it says, about yx's. About yx's means your integral firstly, in terms of why it must be. Okay.
+
+800
+01:19:18,400 --> 01:19:22,280
+And also here, how can I say?
+
+801
+01:19:26,195 --> 01:19:32,195
+iki farklı birleştirme, çünkü bu region değil.
+
+802
+01:19:32,195 --> 01:19:36,195
+y-axis, y-axis, y-axis.
+
+803
+01:19:36,195 --> 01:19:40,195
+On the right-hand side, one part is parabola, bounded by parabola,
+
+804
+01:19:40,195 --> 01:19:44,195
+the other part bounded by line y is 2 minus x,
+
+805
+01:19:44,195 --> 01:19:50,195
+which makes this area not smooth with respect to y.
+
+806
+01:19:50,195 --> 01:19:54,195
+That's why with one integration,
+
+807
+01:19:54,195 --> 01:20:00,195
+we cannot evaluate the volume, which is generated by the revolution of this region about y-axis.
+
+808
+01:20:00,195 --> 01:20:06,195
+two different integrals we need because two different distances we have, which one to write.
+
+809
+01:20:06,195 --> 01:20:08,195
+So part by part, firstly,
+
+810
+01:20:08,195 --> 01:20:14,195
+where the change of boundary curves happen at the point one, one to one.
+
+811
+01:20:14,195 --> 01:20:20,195
+So cut into two parts and then first revolve it and then revolve this part and then get some of them,
+
+812
+01:20:20,195 --> 01:20:24,195
+will be the all volume.
+
+813
+01:20:24,195 --> 01:20:28,195
+Okay, are you okay up to now? Why do we need to write two parts?
+
+814
+01:20:28,195 --> 01:20:54,195
+two parts?
+
+815
+01:20:35,507 --> 01:20:40,787
+And then, if you have problem write me.
+
+816
+01:21:10,163 --> 01:21:40,163
+Bu yi'nin yi
+
+817
+01:21:40,163 --> 01:22:09,563
+last step. It's not smooth. Two parts we need. Smooth parts now revolve them one by one. Revolving of first region, let's write what kind of a solid we may have and how can we relate the volume. Let's see. It is with respect to y because these heights on y-axis are dy with respect to y. First one zero to one, second one one to two.
+
+818
+01:22:10,163 --> 01:22:27,083
+Pi zero to one dy, pi one to two dy. What's left? R square only in the formula. R square means R is distance to the rotating axis. What is this in terms of y? X is positive part in square root y.
+
+819
+01:22:27,083 --> 01:22:38,083
+So this distance can be measured by the square root of y. Zero to one. Okay. So distance is this. That means the radius of the disk.
+
+820
+01:22:38,724 --> 01:22:45,783
+Square root y all square dy. First part. Second part. This distance can be measured by according to this line.
+
+821
+01:22:45,783 --> 01:22:57,463
+y is two minus x. What is x? X is two minus y. So distance to the rotating axis is two minus y all square. That means this is R radius.
+
+822
+01:22:57,463 --> 01:23:01,283
+So such a formula we have. Are you okay?
+
+823
+01:23:01,283 --> 01:23:01,403
+Okay.
+
+824
+01:23:07,507 --> 01:23:08,627
+Do you understand it?
+
+825
+01:23:14,292 --> 01:23:15,592
+Okay, so nice.
+
+826
+01:23:23,060 --> 01:23:24,560
+Any question, please ask me.
+
+827
+01:23:43,699 --> 01:23:47,699
+Evet, ve y bölümde y bölümde.
+
+828
+01:23:47,699 --> 01:23:51,699
+Bu bölümde de y bölümde.
+
+829
+01:23:51,699 --> 01:24:01,699
+Bu bölümde de y bölümde de y bölümde.
+
+830
+01:24:01,699 --> 01:24:31,699
+Bu bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölümde de y bölüm
+
+831
+01:24:31,699 --> 01:24:32,300
+Are you okay?
+
+832
+01:24:36,948 --> 01:24:37,628
+oh
+
+833
+01:24:43,796 --> 01:24:46,176
+O zaman şöyle bir açıklama yapma ihtiyacı duyuyorum.
+
+834
+01:24:48,316 --> 01:24:52,155
+Bu işin en zor kısmı bence şu uzaklıkları doğru hesaplamak.
+
+835
+01:24:53,155 --> 01:24:54,235
+Ve kafanız karışıyor.
+
+836
+01:24:54,536 --> 01:25:00,615
+Özellikle iki nokta arasında yani iki ifadenin farkının karesini aldığınızda kafanız çok karışıyor.
+
+837
+01:25:00,976 --> 01:25:01,596
+Çok normal.
+
+838
+01:25:02,336 --> 01:25:03,416
+Şunu düşünmeniz lazım.
+
+839
+01:25:06,716 --> 01:25:07,716
+Ölçtüğüm uzunluk.
+
+840
+01:25:08,496 --> 01:25:10,856
+Orijinden mi başlıyor, nereden başlıyor buna dikkat edin.
+
+841
+01:25:10,856 --> 01:25:15,176
+Orijinden başlıyorsa herhangi bir şeyin farkını almanıza gerek yok.
+
+842
+01:25:15,316 --> 01:25:18,496
+Yani fark almak derken iki eksi y'inden bahsetmiyorum.
+
+843
+01:25:19,416 --> 01:25:21,516
+İki eksi y zaten bu doğrunun denklemi.
+
+844
+01:25:22,695 --> 01:25:25,836
+Bu doğru üzerindeki noktaların eksenleri olan uzaklıkları bu zaten.
+
+845
+01:25:26,676 --> 01:25:29,536
+Bu fonksiyonun belirlediği uzunluklar.
+
+846
+01:25:30,775 --> 01:25:35,115
+Bu noktaların uzunlukların, eksen olan uzunlukları iki eksi y ile belirlenir.
+
+847
+01:25:35,195 --> 01:25:36,876
+Çünkü burada x eşittir iki eksi y.
+
+848
+01:25:36,876 --> 01:25:38,775
+X dediğimiz bu uzunluklar değil mi?
+
+849
+01:25:39,096 --> 01:25:40,436
+Karşılık gelen x değerleri.
+
+850
+01:25:40,856 --> 01:25:44,556
+O yüzden bu fonksiyon buraya kadar bu doğru belirliyor.
+
+851
+01:25:44,735 --> 01:25:47,856
+Buraya kadar bu parabol belirliyor bu uzunlukları.
+
+852
+01:25:48,516 --> 01:25:52,356
+Y her neyse ona karşılık gelen x değeri kök içerisinde y.
+
+853
+01:25:53,056 --> 01:25:54,256
+İşte y bir ise bir.
+
+854
+01:25:54,836 --> 01:25:57,636
+Y sıfır nokta iki ise ona göre bir değer gibi.
+
+855
+01:25:58,316 --> 01:26:05,155
+Sıfırdan bire kadar hangi y'yi kullanırsam bu uzunluk bu parabol ile belirleniyor.
+
+856
+01:26:05,155 --> 01:26:08,456
+O yüzden bakın.
+
+857
+01:26:10,576 --> 01:26:11,376
+Sınırınız ne?
+
+858
+01:26:12,816 --> 01:26:15,476
+Uzunluk nerede başlıyor, nerede bitiyor, ne ile ilgili?
+
+859
+01:26:15,956 --> 01:26:18,615
+Tabii ki bu uzunluklar grafik ile ilgili uzunluklar.
+
+860
+01:26:18,756 --> 01:26:20,856
+Şu uzunluklar bu doğrunun grafiği ile ilgili uzunluklar.
+
+861
+01:26:22,396 --> 01:26:23,216
+Bunlara dikkat edin.
+
+862
+01:26:23,216 --> 01:26:28,655
+Ama şu örnekte hemen göstermek istiyorum.
+
+863
+01:26:28,756 --> 01:26:32,376
+Mesela şuradaki uzunluk neden dört eksi y kare gibi bir şey?
+
+864
+01:26:33,056 --> 01:26:36,916
+Çünkü bir kere şu uzunluk, şu uzunluk orijinden başlamıyor.
+
+865
+01:26:37,016 --> 01:26:38,275
+Bir şeye direkt eşit olamaz.
+
+866
+01:26:38,416 --> 01:26:42,376
+Yani işte atıyorum y kare fonksiyonu, kök eks fonksiyonu gibi bir şey söyleyemezsiniz.
+
+867
+01:26:42,376 --> 01:26:45,436
+Çünkü bu sıfırdan, orijinden başlayan bir uzunluk değil.
+
+868
+01:26:45,536 --> 01:26:47,235
+Bu iki şeyin farkı olmak zorunda.
+
+869
+01:26:48,636 --> 01:26:49,615
+Bütün uzunluk var.
+
+870
+01:26:49,816 --> 01:26:51,716
+Dört zaten şu bütün parça dört.
+
+871
+01:26:52,275 --> 01:26:53,796
+Aradaki parça, bakın yine aynı şey.
+
+872
+01:26:54,016 --> 01:26:55,596
+Aradaki parçayı ne ile ölçebilirim?
+
+873
+01:26:57,856 --> 01:26:58,396
+Y kare ile.
+
+874
+01:26:58,775 --> 01:26:59,735
+X eşittir y kare.
+
+875
+01:27:00,676 --> 01:27:01,496
+Şurası y kare.
+
+876
+01:27:01,695 --> 01:27:02,396
+Tamamı dört.
+
+877
+01:27:02,796 --> 01:27:06,396
+Demek ki bu aradaki uzunluk dört eksi y kare olmak zorunda gibi.
+
+878
+01:27:08,316 --> 01:27:10,695
+Şuranın işte kök x eksi bir olması gibi.
+
+879
+01:27:10,695 --> 01:27:12,676
+Şu uzunluğun kök x eksi bir olması gibi.
+
+880
+01:27:13,376 --> 01:27:15,856
+Sıfırdan başladığımda tamamı kök x.
+
+881
+01:27:16,496 --> 01:27:19,115
+Ve şu uzunluk bir, burası kök x eksi bir.
+
+882
+01:27:19,756 --> 01:27:20,816
+Bu hesaplara dikkat edin.
+
+883
+01:27:20,876 --> 01:27:22,076
+En önemli kısım bu bence.
+
+884
+01:27:27,252 --> 01:27:27,972
+Tamam biz.
+
+885
+01:27:32,243 --> 01:27:41,884
+Ve de disk ve washer metotlarının arasındaki farkı bence anladınız.
+
+886
+01:27:42,483 --> 01:27:47,983
+Diskte dönme ekseniyle bölge kesişiyor zaten arada bir boşluk yok.
+
+887
+01:27:48,203 --> 01:27:49,783
+O yüzden disk metodu kullanıyoruz.
+
+888
+01:27:50,163 --> 01:27:53,723
+Ama washer'da dönme ekseniyle bölgenin arasında boş bir alan var.
+
+889
+01:27:53,783 --> 01:27:54,923
+O yüzden washer kullanıyoruz.
+
+890
+01:27:54,923 --> 01:27:59,884
+Yani disk ve washer metot birbirine alternatif olan metotlar değil kesinlikle.
+
+891
+01:27:59,884 --> 01:28:03,443
+Birinci tekniğin iki farklı durumudur.
+
+892
+01:28:04,203 --> 01:28:07,063
+İkinci teknik shell metodu olacak yani kabuk yöntemi.
+
+893
+01:28:07,643 --> 01:28:10,703
+Ama bu disk metodu yani bunun genel adı.
+
+894
+01:28:10,923 --> 01:28:12,503
+Kaynaklara baktığınızda şunu göreceksiniz.
+
+895
+01:28:12,643 --> 01:28:14,363
+Disk metodu veya kabuk metodu yani.
+
+896
+01:28:14,963 --> 01:28:16,884
+Disk metodu veya shell metodu olarak göreceksiniz.
+
+897
+01:28:16,983 --> 01:28:22,643
+Aslında disk metod bu bunun genel adıdır ama aslında disk metod ve washer metod.
+
+898
+01:28:23,143 --> 01:28:28,903
+Türkçesindeki anlamını bilmiyorum washer'ın ama tam bilemiyorum aradaki fark olunca ne oluyordu.
+
+899
+01:28:28,903 --> 01:28:33,423
+Bunun genel adı o disk olarak görebilirsiniz ama aslında birinci metodun iki farklı durumu.
+
+900
+01:28:33,543 --> 01:28:34,463
+Biri disk biri washer.
+
+901
+01:28:36,983 --> 01:28:38,863
+Bence de çamış makinesi gibi bir şey yani.
+
+902
+01:28:39,423 --> 01:28:41,103
+Nedir bilemiyorum yani washer.
+
+903
+01:28:42,463 --> 01:28:44,003
+Türkçesini hatırlamıyorum açıkçası.
+
+904
+01:28:52,083 --> 01:28:53,604
+Ve şunu söylemek istiyorum.
+
+905
+01:28:55,104 --> 01:28:58,623
+Sanki yani şimdi normalde daha önceki derslerimizi düşünüyorum.
+
+906
+01:28:58,743 --> 01:29:00,443
+Şu anda sanki beni çok az kişi dinliyor.
+
+907
+01:29:01,144 --> 01:29:02,283
+Yani birebir dinliyor.
+
+908
+01:29:02,403 --> 01:29:03,804
+Online olmaktan bahsetmiyorum.
+
+909
+01:29:04,783 --> 01:29:06,144
+Ama şunu da söylemek istiyorum.
+
+910
+01:29:06,384 --> 01:29:09,563
+Bu dersin en detaylı konularından biri.
+
+911
+01:29:09,783 --> 01:29:16,463
+En dikkatli dinlemeniz gereken, en dikkatli anlamaya çalışmanız gereken, üzerine çalışmanız gereken bir konu.
+
+912
+01:29:17,163 --> 01:29:20,323
+Umarım daha sonra açıp kaydı dinlediğinizde problem yaşamazsınız.
+
+913
+01:29:20,323 --> 01:29:22,323
+Çünkü burada birebir bana bana sormak.
+
+914
+01:29:22,323 --> 01:29:22,943
+Çünkü burada birebir bana sorma şansınız oluyor dinlerken.
+
+915
+01:29:23,463 --> 01:29:27,104
+Sonrasında umarım anlamakta sıkıntı yaşamazsınız.
+
+916
+01:29:27,684 --> 01:29:31,043
+Grubun en kalabalık bir şekilde dinlemesi gereken derste çok az kişi dinliyor.
+
+917
+01:29:31,684 --> 01:29:32,403
+Beni bu üzüyor.
+
+918
+01:29:34,443 --> 01:29:36,144
+En önemli ders bence bu.
+
+919
+01:29:37,724 --> 01:29:38,743
+Konu diyelim.
+
+920
+01:29:44,500 --> 01:29:52,239
+Dönel cisimlerin alanı sanırım.
+
+921
+01:29:53,439 --> 01:29:53,899
+Pardon.
+
+922
+01:29:54,500 --> 01:29:57,359
+Dönel cisimlerin, dönel yüzeyler miydi?
+
+923
+01:29:57,460 --> 01:30:00,739
+Çok özür dilerim ama ben bunları Türkçe vermediğim için bilemiyorum.
+
+924
+01:30:03,739 --> 01:30:06,699
+Dönel cisimlerin hacmi diye düşünüyorum.
+
+925
+01:30:10,996 --> 01:30:28,655
+Evet, öyle bulabilirsiniz döner cisimlerin hacmi diye. Zaten tek katla, integral ile hesaplayabileceğiniz bir hacim ancak bu şekilde oluşturulabilir. Bir bölge var, iki boyutlu. Onu döndürüp eksen etrafında döndürmekle oluşan hacmi. O yüzden döner cisimlerin hacmi diye düşünüyorum.
+
+926
+01:30:36,083 --> 01:30:37,423
+Sorunuz var mı şu ana kadar?
+
+927
+01:30:48,243 --> 01:30:56,283
+ve lütfen bunu, bu konuya çok önem verin, bu konu çok önemli. Soruların hepsini tekrar edin.
+
+928
+01:31:00,307 --> 01:31:03,007
+Evet, tabii ki bu ilk görüşümüz çok normal.
+
+929
+01:31:03,787 --> 01:31:05,287
+İnanın bu konu hiç kolay değildir.
+
+930
+01:31:05,467 --> 01:31:07,427
+Benim için burada bu şekilde anlatmak da çok zor.
+
+931
+01:31:07,988 --> 01:31:09,948
+Yüz yüze olsaydık çok daha farklı olacaktı.
+
+932
+01:31:11,007 --> 01:31:12,488
+Zaten kolay bir konu değil.
+
+933
+01:31:13,207 --> 01:31:16,328
+O yüzden mümkün mertebe ama ben ana fikri anladığınızı düşünüyorum.
+
+934
+01:31:16,787 --> 01:31:17,807
+Dinleyenler anladı bence.
+
+935
+01:31:19,127 --> 01:31:20,667
+Bu mümkün mertebe çok soru.
+
+936
+01:31:20,967 --> 01:31:21,728
+Bir sürü soru.
+
+937
+01:31:22,127 --> 01:31:22,967
+Çok değişik sorular.
+
+938
+01:31:22,967 --> 01:31:27,528
+Ne kadar en çok egzersize ihtiyacınız olduğunuz konu bu bence.
+
+939
+01:31:28,087 --> 01:31:29,448
+Mümkün mertebe çok soru.
+
+940
+01:31:30,307 --> 01:31:33,728
+Çöze çöze tamam diyeceksiniz anladım şimdi galiba.
+
+941
+01:31:33,887 --> 01:31:35,847
+Çünkü bir tane çözeceksiniz anlayacaksınız.
+
+942
+01:31:36,127 --> 01:31:38,328
+Diğer soru da çok farklı bir durum çıkacak karşınıza.
+
+943
+01:31:38,868 --> 01:31:43,787
+Dönme eksemleri ve bölgeler değiştikçe ki çok farklı varyasyonlar karşınıza çıkabilir.
+
+944
+01:31:44,427 --> 01:31:47,507
+İşte bir de daha henüz şer metodu görmedik.
+
+945
+01:31:47,967 --> 01:31:49,627
+O tamamen farklı bir şey.
+
+946
+01:31:49,627 --> 01:31:54,047
+Bir de onu öğrenince ve iki ayrı metotla yapmak zorunda kalınca kafanız biraz karışacak.
+
+947
+01:31:54,667 --> 01:31:56,028
+O yüzden çok soru.
+
+948
+01:32:00,307 --> 01:32:03,728
+Keşke şey olsaydı.
+
+949
+01:32:03,728 --> 01:32:06,728
+Yani copy center'a gitme şansımız olsaydı.
+
+950
+01:32:06,787 --> 01:32:07,768
+Okulda olsaydık.
+
+951
+01:32:09,467 --> 01:32:10,707
+Nasıl yapalım?
+
+952
+01:32:11,408 --> 01:32:12,328
+Şöyle yapalım o zaman.
+
+953
+01:32:14,667 --> 01:32:15,728
+Ben elimdeki uygulama sorularını.
+
+954
+01:32:17,728 --> 01:32:18,488
+Elimdeki.
+
+955
+01:32:19,148 --> 01:32:19,427
+Bakayım.
+
+956
+01:32:19,688 --> 01:32:22,728
+Sırf bu konuyla ilgili uygulama sorularını eğer bulabilirsem.
+
+957
+01:32:23,667 --> 01:32:23,728
+Ayarlayabilirsem.
+
+958
+01:32:24,587 --> 01:32:25,828
+Sadece soruları yükleyeyim.
+
+959
+01:32:26,868 --> 01:32:27,427
+Hazırlayayım.
+
+960
+01:32:27,688 --> 01:32:28,108
+Yükleyeyim.
+
+961
+01:32:28,108 --> 01:32:29,688
+Siz onları çözün.
+
+962
+01:32:29,868 --> 01:32:31,167
+Daha sonra beraber çözelim.
+
+963
+01:32:31,648 --> 01:32:32,887
+Gibi bir şey yapabiliriz belki.
+
+964
+01:32:37,555 --> 01:32:43,975
+Tamam, ilk fırsat bulduğum anda, zahmet olmaz ama fırsat zaman ayarlayabilirsem yapacağım.
+
+965
+01:32:46,555 --> 01:32:54,275
+Zaten konu içerisinde de çok soru var ama mümkün mertebe. Ben bakayım size sorular. Tamam, tamam.
+
+966
+01:32:54,535 --> 01:33:00,035
+Siz yeter ki bunları tekrar edin. En azından elimizdeki bu örnekleri tekrar edin. Döne döne yapın üstünden.
+
+967
+01:33:00,035 --> 01:33:07,615
+Özellikle shell metodu da öğrenince, shell metodla disk çünkü tamamen alternatif metodlar.
+
+968
+01:33:07,815 --> 01:33:14,195
+Yani disk veya washer veya shell metod karşılıklı olarak. İki yöntemle de çözebilirsiniz.
+
+969
+01:33:14,395 --> 01:33:19,935
+Yani shell da olur her zaman. İşte disk veya washer da olur. İki alternatif yolla da çözersiniz hatta.
+
+970
+01:33:20,295 --> 01:33:27,175
+O zaman çok daha konu oturur diye düşünüyorum. Yani shell'ı öğrenince mesela bu soruyu bir de shell metodla yapmaya çalışın demek istiyorum.
+
+971
+01:33:31,123 --> 01:33:35,523
+Sorunuz varsa şimdi sorun, yoksa devam ediyorum konuyla ilgili.
+
+972
+01:33:44,180 --> 01:33:45,240
+Bir de şunu söylemek istiyorum.
+
+973
+01:33:46,240 --> 01:33:49,400
+Birinci başlık dedik ya, using planner sections.
+
+974
+01:33:49,600 --> 01:33:51,119
+Yani bu şu demek oluyor.
+
+975
+01:33:51,780 --> 01:34:01,079
+Birinci metodu yani disk veya washer'dan kastettiğimiz düzlemsel kesitler kullanarak, düzlemsel planner sections dediğimiz o.
+
+976
+01:34:01,079 --> 01:34:07,240
+Yani şöyle düşünün, elinizde bir tane elma var diyelim ki onu dilim dilim yapıyorsunuz.
+
+977
+01:34:08,119 --> 01:34:10,000
+Ama disklere bölüyorsunuz.
+
+978
+01:34:10,000 --> 01:34:14,240
+Şer metodunda dıştan kabuk soya soya içeri doğru, merkeze doğru gideceksiniz.
+
+979
+01:34:14,659 --> 01:34:16,659
+Diğerini parçalara, dilimlere böleceksiniz.
+
+980
+01:34:17,600 --> 01:34:20,840
+İlk planner sections dediğimiz yani şu öğrendiklerimiz o.
+
+981
+01:34:21,119 --> 01:34:23,260
+Dilimlere bölüyoruz yani küçük disklere bölüyoruz.
+
+982
+01:34:23,619 --> 01:34:29,440
+Diskler yani aslında yüksekliği, yarış çapının yanında çok küçük kalan silindirler aslında.
+
+983
+01:34:29,840 --> 01:34:33,039
+Disklere bölüyerek hesaplıyoruz, her birinin hacmini ve topluyoruz.
+
+984
+01:34:33,460 --> 01:34:37,659
+Ama şer metodunda yani kabuk metodunda, Türkçe kaynaklarda kabuk olarak bulacaksınız.
+
+985
+01:34:37,659 --> 01:34:40,440
+Dışarıdan içeri doğru soyarak gidiyoruz.
+
+986
+01:34:40,659 --> 01:34:51,820
+Elmanın kabuğunu soydunuzu, sonra tekrar soymaya devam ettiğinizde kabuğu artık elmanın merkezine gelene kadar her bir kabuğu açtığınızda hepsi birer dikdörtgenler pirzmasına dönüşecek.
+
+987
+01:34:52,180 --> 01:34:54,680
+O dikdörtgenler pirzmasının hacimlerini toplayacağız o zaman da.
+
+988
+01:34:54,720 --> 01:34:56,520
+O yüzden birbirinden çok farklı metotlar bunlar.
+
+989
+01:34:56,520 --> 01:35:01,420
+O yüzden birinci metot düzlemsel kesitler kullanmak.
+
+990
+01:35:01,820 --> 01:35:03,880
+İkinci metot kabuk.
+
+991
+01:35:05,079 --> 01:35:05,960
+Yok yok korkmayın.
+
+992
+01:35:06,640 --> 01:35:09,000
+Kabuk nasıl diyelim onu.
+
+993
+01:35:09,000 --> 01:35:30,000
+İkinci metot kabuk.
+
+994
+01:35:15,188 --> 01:35:20,108
+Yani şu Türkçesini çok çıkartamadım şu anda ama diğerinde de işte kabuk kabuk yapmak.
+
+995
+01:35:20,108 --> 01:35:28,427
+Yani elinizde 10 tane dosya kağıdını alın, rulo yapın ve dıştan sürekli her birini tek tek çıkarttığınızı düşünün.
+
+996
+01:35:28,708 --> 01:35:34,028
+Bir tane kağıdı sıyırını atın, diğer kağıdı sıyırını atın, en sonunda elinizde hiç kağıt kalmayacak gibi.
+
+997
+01:35:34,307 --> 01:35:36,427
+Ve her bir kağıdın hacmini hesapladığınızı düşünün.
+
+998
+01:35:36,807 --> 01:35:40,108
+Yani kabukları dışarıdan soya soya soya soya merkeze doğru yaklaşıyorsunuz.
+
+999
+01:35:40,108 --> 01:35:46,167
+Birinde dilimliyorsunuz, birinde dışarıdan içeri doğru dış katmanlarını soya soya soya gidiyorsunuz.
+
+1000
+01:35:52,884 --> 01:35:53,764
+Ha evet, olabilir.
+
+1001
+01:36:01,524 --> 01:36:04,003
+Ben size o yüzden bu dersin başında daha uyardım.
+
+1002
+01:36:04,104 --> 01:36:06,704
+Beni dikkatli dinleyin bu en zor konulardan biridir diye.
+
+1003
+01:36:09,003 --> 01:36:10,923
+Ve şuna da söylemeye ihtiyacı duydum.
+
+1004
+01:36:11,003 --> 01:36:13,064
+Çok üzgünüm ama Türkçeye dönüş yapma ihtiyacı duydum.
+
+1005
+01:36:13,064 --> 01:36:18,184
+Sizin bunlara çok etkili bir şekilde zihninizde yer alması benim için çok önemli.
+
+1006
+01:36:18,923 --> 01:36:20,384
+Evet daha dünden söyledim doğru.
+
+1007
+01:36:22,104 --> 01:36:24,564
+Ama beni yine de çok az kişi dinliyor buna da üzülüyorum.
+
+1008
+01:36:26,844 --> 01:36:27,963
+Gibi geliyor bana.
+
+1009
+01:36:29,344 --> 01:36:30,804
+Yapabileceğim bir şey yok ben uyardım.
+
+1010
+01:36:31,524 --> 01:36:33,724
+Çok teşekkürler.
+
+1011
+01:36:33,864 --> 01:36:35,564
+Siz çok değerlisiniz kesinlikle.
+
+1012
+01:36:36,423 --> 01:36:37,463
+Hepiniz çok değerlisiniz.
+
+1013
+01:36:39,444 --> 01:36:41,404
+Dinleyenler haliyle biraz daha değerli oluyor.
+
+1014
+01:36:41,404 --> 01:36:42,944
+Hiç kusura bakmasın.
+
+1015
+01:36:44,764 --> 01:36:47,463
+Keyfi bir şekilde ders dinlemeyenden bahsediyorum.
+
+1016
+01:36:47,584 --> 01:36:49,164
+Tabii ki işimiz bir şeyimiz olabilir.
+
+1017
+01:36:49,724 --> 01:36:51,024
+Sizlerle benim için çok değerlisiniz.
+
+1018
+01:36:51,204 --> 01:36:55,704
+Sizlerle kendimi burada hiç yalnız hissetmiyorum.
+
+1019
+01:36:55,864 --> 01:36:58,084
+Bazı derslerimde gerçekten çok yalnız hissetmiyorum.
+
+1020
+01:36:58,184 --> 01:36:59,764
+Çünkü öğrencilerim çok fazla dönüşü yapmıyor.
+
+1021
+01:36:59,923 --> 01:37:00,604
+Çoğu dinlemiyor.
+
+1022
+01:37:00,604 --> 01:37:02,404
+Büyük ihtimalle öyle hissediyorum.
+
+1023
+01:37:02,804 --> 01:37:04,923
+Ama bu grup gerçekten çok sevdim.
+
+1024
+01:37:06,423 --> 01:37:08,884
+Çok memnunum sizlerle birlikte olduğum için gerçekten.
+
+1025
+01:37:09,484 --> 01:37:13,184
+Eğer olur da matiki verirsem inşallah sizlerle olmak isterim tekrar.
+
+1026
+01:37:13,864 --> 01:37:15,003
+Nasip olur bilemiyorum.
+
+1027
+01:37:15,544 --> 01:37:15,923
+Keşke.
+
+1028
+01:37:16,064 --> 01:37:23,444
+Evet o yüzden bir gün bu pandemi biterse mutlaka ziyarete bekliyorum.
+
+1029
+01:37:23,444 --> 01:37:25,224
+Sizleri tek tek tanımak istiyorum.
+
+1030
+01:37:25,644 --> 01:37:27,384
+Hepinizle yüz yüze tanışmak istiyorum.
+
+1031
+01:37:27,503 --> 01:37:29,064
+Lütfen bunu unutmayın.
+
+1032
+01:37:32,324 --> 01:37:32,963
+Keşke.
+
+1033
+01:37:33,764 --> 01:37:35,804
+Keşke şi yüz yüze olsaydı ve tanısaydım.
+
+1034
+01:37:35,904 --> 01:37:37,764
+Sizlere çok daha güzel bir enerji olacaktı.
+
+1035
+01:37:38,184 --> 01:37:41,824
+O yüzden pandemi bittiğinde beni unutmayın.
+
+1036
+01:37:41,824 --> 01:37:43,384
+Mutlaka bana gelin.
+
+1037
+01:37:43,444 --> 01:37:45,984
+Benim işimiz bitmiş olacak ama her zaman bekliyorum.
+
+1038
+01:37:46,644 --> 01:37:47,104
+İnşallah.
+
+1039
+01:37:47,423 --> 01:37:48,024
+Kesinlikle.
+
+1040
+01:37:49,944 --> 01:37:52,364
+Ben de sizleri gerçekten çok tanımayı çok istiyorum.
+
+1041
+01:37:52,524 --> 01:37:53,544
+Gerçekten çok istiyorum.
+
+1042
+01:37:53,544 --> 01:37:56,664
+Her zaman bekliyorum.
+
+1043
+01:37:56,804 --> 01:37:57,524
+Mutlaka uğrayın.
+
+1044
+01:37:58,463 --> 01:38:00,784
+Gerçekten biz öğrencilerimizle var oluyoruz.
+
+1045
+01:38:00,864 --> 01:38:02,644
+Bu gerçekten çok samimi söylüyorum.
+
+1046
+01:38:03,024 --> 01:38:04,644
+Evet kesinlikle o kekler yenecek.
+
+1047
+01:38:04,744 --> 01:38:05,284
+Kesinlikle.
+
+1048
+01:38:05,844 --> 01:38:06,084
+Evet.
+
+1049
+01:38:07,724 --> 01:38:08,584
+Çok çok isterim.
+
+1050
+01:38:08,664 --> 01:38:09,244
+Gerçekten.
+
+1051
+01:38:10,043 --> 01:38:10,764
+Çok sevindim.
+
+1052
+01:38:10,864 --> 01:38:11,404
+Gerçekten.
+
+1053
+01:38:12,364 --> 01:38:14,503
+İnşallah çok güzel notlarla da bitireceksiniz.
+
+1054
+01:38:14,664 --> 01:38:15,543
+En önemlisi de bu.
+
+1055
+01:38:16,404 --> 01:38:17,744
+Çok iyi öğrenmiş olacaksınız.
+
+1056
+01:38:17,884 --> 01:38:18,744
+Çok başarılı olacaksınız.
+
+1057
+01:38:18,844 --> 01:38:20,404
+Zaten şu ana kadar başarınız çok güzel.
+
+1058
+01:38:20,923 --> 01:38:22,224
+Bence ikinci vize de inşallah.
+
+1059
+01:38:22,224 --> 01:38:24,923
+Benzer bir başarı yakalamışsınızdır.
+
+1060
+01:38:25,104 --> 01:38:26,144
+Daha notları görmedik.
+
+1061
+01:38:26,764 --> 01:38:28,204
+Finalde de güzel olacak inşallah.
+
+1062
+01:38:28,364 --> 01:38:31,504
+Harf notlarınızı da çok güzel bir şekilde sisteme girmeyi planlıyorum.
+
+1063
+01:38:32,264 --> 01:38:35,484
+Ve sonrasında da inşallah görüşeceğiz.
+
+1064
+01:38:35,564 --> 01:38:36,324
+Benim umudum var.
+
+1065
+01:38:37,204 --> 01:38:38,544
+Belki biraz uzun sürecek ama.
+
+1066
+01:38:40,004 --> 01:38:42,604
+Ders bittikten sonra bana mail atabilirsiniz.
+
+1067
+01:38:43,784 --> 01:38:45,544
+Beraber bir konu tartışabiliriz.
+
+1068
+01:38:45,624 --> 01:38:46,644
+Bir yardım isteyebilirsiniz.
+
+1069
+01:38:46,824 --> 01:38:48,384
+Dersle ilgili bir sıkıntınız olabilir.
+
+1070
+01:38:48,384 --> 01:38:50,324
+Her zaman bana ulaşabilirsiniz.
+
+1071
+01:38:50,484 --> 01:38:51,804
+Ders bittikten sonra da yani.
+
+1072
+01:38:51,804 --> 01:38:53,423
+Bir dahaki dönem sonraki yıllar.
+
+1073
+01:38:58,355 --> 01:38:58,876
+Evet.
+
+1074
+01:39:01,376 --> 01:39:11,735
+Dersi çok kötü kaynattık bu arada. Hemen devam etmemiz lazım. Zamanımız ilerliyor ve bu konuyu devam etmemiz gerekiyor. Burada kaynatan benim bu arada. Evet, maalesef.
+
+1075
+01:39:14,576 --> 01:39:18,036
+Evet. Let's continue with the next one.
+
+1076
+01:39:20,475 --> 01:39:28,195
+Let's see. In the next exercise, it says the region is bounded by x is y squared plus one.
+
+1077
+01:39:28,355 --> 01:39:31,815
+Hmm. Parabola. X is three.
+
+1078
+01:39:32,775 --> 01:39:38,456
+And rotate the region about x is three and find the volume of the solid. Hmm.
+
+1079
+01:39:40,595 --> 01:39:43,916
+First we need to sketch the parabola and x is three.
+
+1080
+01:39:44,835 --> 01:39:45,456
+And look.
+
+1081
+01:39:46,456 --> 01:39:52,355
+X is three is also the boundary curve of this region and we rotate about x is three.
+
+1082
+01:39:52,355 --> 01:39:53,635
+So which method?
+
+1083
+01:39:53,876 --> 01:39:57,595
+Disc or Voyager tell me. You can tell me, I think, without sketching it.
+
+1084
+01:40:02,131 --> 01:40:15,451
+disk or washer? Yes, of course, disk. Because there is no spare plane, spare region between rotating axis and the plane, I'm sorry, region. Yes, you're right, disk.
+
+1085
+01:40:16,211 --> 01:40:26,011
+And then, let's sketch the graph of x is y squared plus 1 and x is 3, specify the region correctly, and then look.
+
+1086
+01:40:26,011 --> 01:40:37,971
+For this method, what do we need? Pi a to b r square h. h is what? Rotating the, rotating about axis 3, tell me dx or dy?
+
+1087
+01:40:47,731 --> 01:41:17,572
+What are the heights of every disk? x or y? dx or dy? Hmm. No. No. X is 3 means parallel to y x, so dy it will be. Okay? It's so normal for you to say dx. It's so normal. If I were, I would say dx. If I were a student, it's so normal.
+
+1088
+01:41:17,731 --> 01:41:25,731
+But just think, parallality is important. It's like rotating about y axis. Only a distance we have. Hmm.
+
+1089
+01:41:30,547 --> 01:41:35,627
+What if I change the equation x minus 1 o squared?
+
+1090
+01:41:36,847 --> 01:41:37,327
+Ah, yes.
+
+1091
+01:41:38,027 --> 01:41:40,027
+But here, why you need?
+
+1092
+01:41:42,967 --> 01:41:43,648
+No.
+
+1093
+01:41:44,148 --> 01:41:45,547
+Rotating axis is important.
+
+1094
+01:41:46,188 --> 01:41:46,387
+Look.
+
+1095
+01:41:46,907 --> 01:41:47,867
+Let's see the solution.
+
+1096
+01:41:48,327 --> 01:41:48,487
+Look.
+
+1097
+01:41:49,007 --> 01:41:50,787
+Rotating axis is important.
+
+1098
+01:41:51,087 --> 01:41:52,427
+It's parallel to which axis?
+
+1099
+01:41:52,587 --> 01:41:53,027
+Y axis.
+
+1100
+01:41:53,027 --> 01:41:58,768
+That means it's like, similar to rotation of, rotation about y axis.
+
+1101
+01:41:58,768 --> 01:42:01,127
+That's why these distances, look.
+
+1102
+01:42:01,587 --> 01:42:02,728
+Heights of every disc.
+
+1103
+01:42:02,807 --> 01:42:05,367
+Always sketch such figures, please.
+
+1104
+01:42:05,927 --> 01:42:07,007
+First sketch the region.
+
+1105
+01:42:07,287 --> 01:42:07,747
+And then look.
+
+1106
+01:42:08,467 --> 01:42:09,627
+Rotate about what?
+
+1107
+01:42:09,987 --> 01:42:10,667
+X is 3.
+
+1108
+01:42:11,007 --> 01:42:11,228
+Look.
+
+1109
+01:42:11,587 --> 01:42:15,367
+This notation shows that rotating about x is 3.
+
+1110
+01:42:16,347 --> 01:42:19,847
+These are always, this is the radius of every disc.
+
+1111
+01:42:20,148 --> 01:42:21,547
+This is the height of every disc.
+
+1112
+01:42:21,547 --> 01:42:21,887
+Look.
+
+1113
+01:42:22,207 --> 01:42:23,847
+We can measure it with dy, of course.
+
+1114
+01:42:23,967 --> 01:42:24,148
+Look.
+
+1115
+01:42:24,608 --> 01:42:25,047
+Not dx.
+
+1116
+01:42:25,188 --> 01:42:25,627
+It's dy.
+
+1117
+01:42:26,447 --> 01:42:27,467
+That's why it's dy.
+
+1118
+01:42:27,627 --> 01:42:28,347
+You can understand.
+
+1119
+01:42:28,507 --> 01:42:28,648
+Okay.
+
+1120
+01:42:28,768 --> 01:42:34,667
+That's why, please, sketch the sections for every disc.
+
+1121
+01:42:36,487 --> 01:42:39,507
+You need to measure this distance and this distance.
+
+1122
+01:42:39,667 --> 01:42:44,207
+This distance, that means the heights of every disc, will be evaluated with dy or dx.
+
+1123
+01:42:44,847 --> 01:42:45,547
+Here, dy.
+
+1124
+01:42:46,207 --> 01:42:47,467
+It's parallel to y.
+
+1125
+01:42:48,148 --> 01:42:50,407
+This distance can be measured by dy.
+
+1126
+01:42:50,747 --> 01:42:51,847
+What about the radius?
+
+1127
+01:42:52,487 --> 01:42:52,688
+Look.
+
+1128
+01:42:53,148 --> 01:42:55,707
+This radius cannot be said specifically.
+
+1129
+01:42:55,827 --> 01:42:56,827
+Only one expression.
+
+1130
+01:42:56,827 --> 01:42:57,327
+Look.
+
+1131
+01:42:57,327 --> 01:42:58,787
+It's not starting from the origin.
+
+1132
+01:42:59,787 --> 01:43:01,608
+The full length is 3.
+
+1133
+01:43:02,728 --> 01:43:06,847
+These distances are evaluated with this formula.
+
+1134
+01:43:06,847 --> 01:43:10,027
+x is y squared plus 1.
+
+1135
+01:43:10,747 --> 01:43:14,407
+You mean integration with respect to y.
+
+1136
+01:43:14,747 --> 01:43:16,987
+That means integration with respect to y.
+
+1137
+01:43:18,427 --> 01:43:18,987
+Pi.
+
+1138
+01:43:19,587 --> 01:43:21,207
+Which distances we have?
+
+1139
+01:43:22,007 --> 01:43:24,367
+Limits coming from y axis.
+
+1140
+01:43:24,747 --> 01:43:27,127
+Minus square root 2 to square root 2.
+
+1141
+01:43:27,127 --> 01:43:30,407
+Pi times minus square root 2 to square root 2.
+
+1142
+01:43:30,827 --> 01:43:31,608
+R square.
+
+1143
+01:43:32,247 --> 01:43:32,867
+The h.
+
+1144
+01:43:33,367 --> 01:43:34,087
+H is dy.
+
+1145
+01:43:34,347 --> 01:43:35,688
+Lastly, write r square.
+
+1146
+01:43:36,047 --> 01:43:37,188
+What is this distance?
+
+1147
+01:43:38,447 --> 01:43:40,047
+Distance to the rotating axis.
+
+1148
+01:43:41,087 --> 01:43:42,467
+But we cannot evaluate it.
+
+1149
+01:43:42,667 --> 01:43:44,507
+For example, it's not y square plus 1.
+
+1150
+01:43:44,608 --> 01:43:46,327
+It's the subtraction of something.
+
+1151
+01:43:46,327 --> 01:43:49,347
+It must be because it's not starting from the origin.
+
+1152
+01:43:50,188 --> 01:43:54,307
+This distance can be measured by the subtraction of two different expressions.
+
+1153
+01:43:56,367 --> 01:43:57,467
+Totally, it is 3.
+
+1154
+01:43:58,487 --> 01:44:00,108
+And these distances, look.
+
+1155
+01:44:00,287 --> 01:44:02,447
+0 to function.
+
+1156
+01:44:02,568 --> 01:44:05,327
+That means it's related with the function y square plus 1.
+
+1157
+01:44:05,907 --> 01:44:07,007
+Full of it is 3.
+
+1158
+01:44:07,447 --> 01:44:09,728
+These distances is y square plus 1.
+
+1159
+01:44:09,728 --> 01:44:11,987
+So 3 minus y square plus 1.
+
+1160
+01:44:12,608 --> 01:44:14,188
+This is the radius.
+
+1161
+01:44:14,347 --> 01:44:16,887
+That means the distance to the rotating axis.
+
+1162
+01:44:17,547 --> 01:44:20,207
+So when it is the radius, get the second power.
+
+1163
+01:44:22,847 --> 01:44:23,367
+This.
+
+1164
+01:44:27,220 --> 01:44:28,340
+Do you understand it?
+
+1165
+01:44:31,539 --> 01:44:34,180
+y² plus 1 is related with the parabola.
+
+1166
+01:44:56,467 --> 01:44:58,307
+Do you understand it? Any question?
+
+1167
+01:45:01,347 --> 01:45:02,947
+Oh, [öğrenci], do you have a question?
+
+1168
+01:45:05,347 --> 01:45:07,268
+You can ask me or write me.
+
+1169
+01:45:23,507 --> 01:45:26,327
+Okay, so let's continue.
+
+1170
+01:45:30,963 --> 01:45:42,123
+Regen is bounded by y is x square plus 1, y is minus x plus 3, and rotate it about x-axis, and evaluate the volume of the solid.
+
+1171
+01:45:43,304 --> 01:45:55,423
+Regen is given x square plus 1, a parabola again, minus x plus 3 is another boundary line, y, and rotate about x-axis.
+
+1172
+01:45:59,507 --> 01:46:02,547
+Rotate about x-axis means dx you will use.
+
+1173
+01:46:05,987 --> 01:46:11,827
+First sketch it. And then measure distance to rotating axes.
+
+1174
+01:46:13,907 --> 01:46:19,907
+Limits of integral pi times a to b f square dx.
+
+1175
+01:46:23,427 --> 01:46:26,627
+You will see you need washer or disk according to the region.
+
+1176
+01:46:44,372 --> 01:46:57,771
+Evet, evet, of course. Çünkü, rotating about x-axis means dx. Ve, probably Washer method, çünkü x-axis is not the boundary of this region.
+
+1177
+01:46:57,771 --> 01:47:01,372
+That means we have a spare plane between them.
+
+1178
+01:48:41,363 --> 01:48:49,183
+minus 2 to 1, 3 minus x square minus x square plus 1 o square.
+
+1179
+01:48:49,183 --> 01:48:56,903
+Okay, okay, [öğrenci]. Now we will check it. Anyone? I'm waiting.
+
+1180
+01:49:57,268 --> 01:49:59,707
+Evet, anyone else who gets the result?
+
+1181
+01:49:59,707 --> 01:50:04,108
+Hmm, most of the same except defined part. Okay.
+
+1182
+01:50:04,108 --> 01:50:09,427
+What about others? Shall we see the solution?
+
+1183
+01:50:16,404 --> 01:50:22,044
+Now we will see. I don't remember because the solution of this question. Now we will see together.
+
+1184
+01:50:34,100 --> 01:50:34,900
+Şallı bir şey?
+
+1185
+01:50:37,700 --> 01:50:38,860
+Okay, let's see.
+
+1186
+01:50:41,420 --> 01:50:41,860
+Look.
+
+1187
+01:50:44,500 --> 01:50:47,740
+Parabola, 1 plus x².
+
+1188
+01:50:48,260 --> 01:50:48,700
+Yes.
+
+1189
+01:50:50,060 --> 01:50:52,420
+And the line, minus x plus 3.
+
+1190
+01:50:53,140 --> 01:50:55,340
+Of course, again, you see the washer method.
+
+1191
+01:50:55,680 --> 01:50:57,520
+Rotate about x-axis, so dx.
+
+1192
+01:50:57,520 --> 01:50:57,920
+Okay.
+
+1193
+01:50:58,660 --> 01:50:59,460
+Get this section.
+
+1194
+01:50:59,460 --> 01:51:03,980
+A washer method, because we have a spare plan, a hole in the volume.
+
+1195
+01:51:04,120 --> 01:51:05,680
+We will have a hole in the solids.
+
+1196
+01:51:05,840 --> 01:51:06,220
+I'm sorry.
+
+1197
+01:51:06,760 --> 01:51:07,600
+That's my washer.
+
+1198
+01:51:07,920 --> 01:51:10,920
+That means subtraction of two volumes.
+
+1199
+01:51:13,680 --> 01:51:14,920
+Between which points?
+
+1200
+01:51:15,000 --> 01:51:17,480
+Let's see the projection of this region on x-axis.
+
+1201
+01:51:17,620 --> 01:51:18,560
+Minus 2 to 1.
+
+1202
+01:51:19,740 --> 01:51:21,460
+Intersection points must be evaluated.
+
+1203
+01:51:22,460 --> 01:51:23,400
+Intersection of them.
+
+1204
+01:51:23,840 --> 01:51:23,960
+Okay.
+
+1205
+01:51:24,880 --> 01:51:26,700
+And minus 1, minus 2 to 1.
+
+1206
+01:51:26,700 --> 01:51:31,079
+The bigger volume will come from this distance.
+
+1207
+01:51:31,079 --> 01:51:33,120
+This radius.
+
+1208
+01:51:33,120 --> 01:51:39,120
+This radius is related with minus x plus 3.
+
+1209
+01:51:39,120 --> 01:51:44,539
+So, pi times minus x plus 3.
+
+1210
+01:51:44,620 --> 01:51:46,120
+On square dx minus.
+
+1211
+01:51:46,120 --> 01:51:53,200
+Whole, volume of whole, will be evaluated of revolving of this region.
+
+1212
+01:51:53,200 --> 01:51:56,200
+And this region.
+
+1213
+01:51:56,200 --> 01:51:57,200
+And having the distance to the rotating axis.
+
+1214
+01:51:57,200 --> 01:51:58,360
+With this parabola.
+
+1215
+01:51:58,360 --> 01:51:59,820
+X square plus 1.
+
+1216
+01:52:00,400 --> 01:52:03,020
+So, minus x plus 3.
+
+1217
+01:52:03,020 --> 01:52:04,120
+On square minus.
+
+1218
+01:52:04,120 --> 01:52:05,400
+X square plus 1.
+
+1219
+01:52:05,400 --> 01:52:06,800
+On square minus.
+
+1220
+01:52:06,800 --> 01:52:07,560
+2 to 1.
+
+1221
+01:52:08,120 --> 01:52:09,560
+Gives this result.
+
+1222
+01:52:10,520 --> 01:52:10,820
+Okay.
+
+1223
+01:52:11,660 --> 01:52:12,400
+Washer method.
+
+1224
+01:52:40,372 --> 01:52:46,152
+Are you okay? Do you understand it? Okay, so nice.
+
+1225
+01:52:54,420 --> 01:52:55,619
+Continuarın bir soru.
+
+1226
+01:52:56,659 --> 01:52:58,100
+Let's also do this question.
+
+1227
+01:52:59,140 --> 01:53:00,340
+I think we have enough time.
+
+1228
+01:53:01,300 --> 01:53:02,180
+Have you got tired?
+
+1229
+01:53:02,739 --> 01:53:04,340
+Oh, four minutes we have left.
+
+1230
+01:53:10,452 --> 01:53:13,452
+Let's see. Let's see quickly.
+
+1231
+01:53:13,452 --> 01:53:15,452
+Y is x². Do it together.
+
+1232
+01:53:15,452 --> 01:53:20,452
+Y is x², y is 2x and rotate this region about y axis and evaluate the volume.
+
+1233
+01:53:20,452 --> 01:53:22,452
+Let's see the solution.
+
+1234
+01:53:24,452 --> 01:53:25,452
+Look.
+
+1235
+01:53:25,452 --> 01:53:29,452
+Y is x², y is 2x. Rotate about y axis.
+
+1236
+01:53:29,452 --> 01:53:32,452
+So yes, it's with respect to y.
+
+1237
+01:53:32,452 --> 01:53:34,452
+These heights will be related with respect to y.
+
+1238
+01:53:34,452 --> 01:53:38,452
+Of course, again, a Welsher method we need because a region is here.
+
+1239
+01:53:38,452 --> 01:53:42,452
+Rotating axis is here and we have a spare region between them.
+
+1240
+01:53:42,452 --> 01:53:44,452
+That's why Welsher method.
+
+1241
+01:53:44,452 --> 01:53:46,452
+Which one is greater?
+
+1242
+01:53:46,452 --> 01:53:49,452
+Of course, this distance, this radius is greater.
+
+1243
+01:53:49,452 --> 01:53:53,452
+Evaluating this area.
+
+1244
+01:53:53,452 --> 01:53:58,452
+It's related with y is x², but in terms of y, it must be written.
+
+1245
+01:53:58,452 --> 01:54:01,452
+So x is square root y, positive part here.
+
+1246
+01:54:01,452 --> 01:54:04,452
+Positive branch of parabola, square root y.
+
+1247
+01:54:04,452 --> 01:54:07,452
+So this distance can be measured by square root y.
+
+1248
+01:54:07,452 --> 01:54:09,452
+The biggest volume.
+
+1249
+01:54:09,452 --> 01:54:12,452
+So square root y, all square.
+
+1250
+01:54:12,452 --> 01:54:14,452
+Minus smaller one.
+
+1251
+01:54:14,452 --> 01:54:18,452
+That means the volume of whole, whole between them.
+
+1252
+01:54:18,452 --> 01:54:21,452
+And this line is y is 2x.
+
+1253
+01:54:21,452 --> 01:54:27,452
+And this distance can be evaluated by a function of y axis, y over 2 here.
+
+1254
+01:54:27,452 --> 01:54:30,452
+As you see, these distances are measured from the origin.
+
+1255
+01:54:30,452 --> 01:54:36,452
+That's why direct formalizations we are using, not a subtraction.
+
+1256
+01:54:36,452 --> 01:54:39,452
+So it is y over 2.
+
+1257
+01:54:39,452 --> 01:54:42,452
+In the square root y, all square.
+
+1258
+01:54:42,452 --> 01:54:44,452
+Minus y over 2, all square.
+
+1259
+01:54:44,452 --> 01:54:47,452
+Substruction of two volumes.
+
+1260
+01:54:47,452 --> 01:54:48,452
+What about limits?
+
+1261
+01:54:48,452 --> 01:54:56,452
+With respect to y, so look up for the projection on y axis, 0 to 4 of course.
+
+1262
+01:54:56,452 --> 01:54:57,452
+Pi times 0 to 4.
+
+1263
+01:54:57,452 --> 01:55:00,452
+This expression dy results.
+
+1264
+01:55:00,452 --> 01:55:01,452
+is 8 pi over 3.
+
+1265
+01:55:01,452 --> 01:55:13,452
+So that's 8 pi over 3.
+
+1266
+01:55:05,811 --> 01:55:09,671
+Do you understand it? Are you okay? Any question?
+
+1267
+01:55:15,731 --> 01:55:16,091
+ha.
+
+1268
+01:55:21,524 --> 01:55:42,364
+Okay, if we have no question, we are okay for today. Let me look. Ah, we were at shell method and next week we will continue with the shell method using cylindrical shells. Yes. And please repeat every question. Ah, yes. Question, yes, this one.
+
+1269
+01:55:42,364 --> 01:56:03,364
+Repeat all of them and solve them again and again in order to understand efficiently. And the next week we will continue with the shell method and then exercises probably. And the next topic will be improper integrals, I think the last topic of this term. And have a nice week.
+
+1270
+01:56:03,364 --> 01:56:32,744
+and have a nice year. And have a nice year. Thank you so much. Also, I want to wish you a health and so happy new year. And thank you so much. And the next week we will continue. I thank you for your participation. Take care of yourselves. No, I will not do it. No. See you next year.
+
+1271
+01:56:32,744 --> 01:56:37,744
+No, I will not do it. No, I will not do it. I don't like this.
+
+1272
+01:56:37,744 --> 01:56:39,744
+No, I will not do it. No, I will not do it. No, I will not do it. I don't like this.
+
+1273
+01:56:42,355 --> 01:56:43,235
+So miss me.
+
+1274
+01:56:43,735 --> 01:56:45,076
+Until the next course.
+
+1275
+01:56:45,195 --> 01:56:48,515
+Thank you so much.
+
+1276
+01:56:49,475 --> 01:56:51,295
+Also, of course, you.
