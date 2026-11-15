@@ -1,0 +1,3223 @@
+1
+00:00:02,996 --> 00:00:09,976
+Okay, so good afternoon to everyone.
+
+2
+00:00:16,980 --> 00:00:26,060
+Okay, today I don't want to open the camera. Okay, [kişisel bilgi] I don't want you to see me today, okay?
+
+3
+00:00:29,060 --> 00:00:29,660
+Okay.
+
+4
+00:00:32,500 --> 00:00:44,579
+Teşekkürler ya, bu havalar değişiyor ya, biraz ondan herhalde ya. Bir gün, bir sıcak, bir soğuk insan hasta oluyor. [kişisel bilgi] Thank you, thank you.
+
+5
+00:00:45,859 --> 00:00:55,520
+Okey, izlenenim var from İzmir. İzmir'de var mı tanıdığınız ya da bağlan arkadaş yoktur? Gerçi bugün sanmıyorum ama var mı İzmir'de tanıdığı olan, sıkıntısı olan?
+
+6
+00:00:59,700 --> 00:01:00,740
+İnşallah yoktur.
+
+7
+00:01:02,580 --> 00:01:04,159
+Siz depremi hissettiniz mi bu arada?
+
+8
+00:01:05,560 --> 00:01:06,800
+İstanbul'da olanlar.
+
+9
+00:01:07,240 --> 00:01:08,760
+Aydın da hissedilmiştir [öğrenci].
+
+10
+00:01:12,787 --> 00:01:14,908
+İstanbul'da hissediyormuş ama ben hissetmedim.
+
+11
+00:01:16,967 --> 00:01:18,467
+[öğrenci] sen neredesin?
+
+12
+00:01:34,867 --> 00:01:52,828
+ya İstanbul'da çok farklı. Kimisi bakıyorsunuz mesela [kişisel bilgi] O hissetmemiş. Ben 11. kattayım. Ben hissetmedim. Ama mesela bakıyorsun bazıları çok hissettik. Sağ ol, bayağı gitti geldi falan diyorlar. Ben de anlamadım. Herhalde biraz zeminle alakalı.
+
+13
+00:01:56,828 --> 00:02:01,408
+Hayrı nasıl bakalım? Ya evet size daha yakın. İzmir tarafları daha yakın.
+
+14
+00:02:02,227 --> 00:02:08,408
+İzmir tarafları daha yakın, evet. Bakalım inşallah İstanbul'da, bilmiyorum Allah'a emanetiz yani.
+
+15
+00:02:15,147 --> 00:02:15,987
+Okey.
+
+16
+00:02:17,048 --> 00:02:22,328
+So, if you want, let's start and please close your microphone.
+
+17
+00:02:25,927 --> 00:02:29,567
+Arkadaşlar, mikrofonlarınızı kullanmadığınız zaman kapatırsanız.
+
+18
+00:02:31,348 --> 00:02:33,688
+Çünkü görüyorum bazen sesiniz geliyor.
+
+19
+00:02:43,060 --> 00:03:00,540
+Okay, so let's start again. Last week I gave you some application derivation questions and also I gave the questions which I solved. Please look at these lectures later questions especially. Okay, today.
+
+20
+00:03:02,451 --> 00:03:04,792
+I will start with transcendental function.
+
+21
+00:03:05,412 --> 00:03:09,271
+Actually, we taught this transcendental function at the beginning of the semester.
+
+22
+00:03:09,451 --> 00:03:10,051
+What are they?
+
+23
+00:03:10,051 --> 00:03:22,311
+They are trigonometric functions, inverse logarithm, exponent function, and inverse hyperbolic.
+
+24
+00:03:23,671 --> 00:03:26,991
+All these functions are called transcendental function.
+
+25
+00:03:27,572 --> 00:03:32,711
+Actually, transcendental means which you can't find function using polynomials.
+
+26
+00:03:33,331 --> 00:03:39,891
+If you can use, if you use the polynomial and if you find a new function, then it is algebraic function.
+
+27
+00:03:40,092 --> 00:03:42,692
+If it is not, it is called transcendental function.
+
+28
+00:03:44,831 --> 00:03:45,352
+Okay.
+
+29
+00:03:48,147 --> 00:04:01,968
+Okay, firstly, let's talk about inverse function. What is inverse function? If you have a function and you can find inverse of any function, but there are some important points about inverse function, ters function demek aslında.
+
+30
+00:04:02,836 --> 00:04:08,216
+What are the meaning of inverse function and how can we find derivation of these functions?
+
+31
+00:04:08,216 --> 00:04:23,735
+A function is one to one on a domain D. If fx, if when x1 is not equal to x2, then fx1 has to be not equal to f2.
+
+32
+00:04:24,376 --> 00:04:30,256
+Or you can say that if fx1 is fx2,
+
+33
+00:04:32,788 --> 00:04:56,780
+x1, f'
+
+34
+00:04:56,884 --> 00:05:02,403
+Çünkü, when you sketch line, you have two intersection points on the function.
+
+35
+00:05:02,584 --> 00:05:04,884
+So, this function is not one-to-one function.
+
+36
+00:05:05,403 --> 00:05:08,963
+And this function, y equals x cube, is one-to-one function.
+
+37
+00:05:09,624 --> 00:05:09,884
+Okay?
+
+38
+00:05:10,963 --> 00:05:13,424
+You see these functions in high school.
+
+39
+00:05:14,424 --> 00:05:21,384
+A function is one-to-one if and only if it is graph intersection each horizontal line at most once.
+
+40
+00:05:23,507 --> 00:05:32,048
+So, what is the meaning of inverse function? Let us suppose that f' function is a one-to-one function on a domain D with range R.
+
+41
+00:05:32,567 --> 00:05:41,288
+Then the inverse function f-1 is defined by f-1b is a if f-a is b.
+
+42
+00:05:41,288 --> 00:05:48,127
+If you have a video f-a equals b, then when you take the inverse of left side and right side,
+
+43
+00:05:48,788 --> 00:06:15,048
+You will change the order of the variable. It will be A. For example, this is F. Okay. This is D. This is range R. When you have a function, this is A. Okay. This is A. This is B. This function is F. So F-1 will be from here to here.
+
+44
+00:06:15,507 --> 00:06:39,228
+f' minus 1. So our domain will be range. And your range will be, here is d. Tersi-functional, nevki. Okay? And in the question, how can we take derivation and how can we understand this function has an inverse? We have a theorem for this.
+
+45
+00:06:40,052 --> 00:07:05,012
+If fx has an integral i as domain, if our domain is a i, and if f'x exists and it is never 0, if you have a derivation of f on this domain and it is never 0 on i, then f minus 1 is differentiable at every point in its domain and
+
+46
+00:07:07,028 --> 00:07:11,708
+The value of derivations at any point will be here.
+
+47
+00:07:14,068 --> 00:07:14,748
+Here.
+
+48
+00:07:16,428 --> 00:07:19,628
+So let me write briefly here.
+
+49
+00:07:25,939 --> 00:07:38,339
+Okay, actually, this is a summary. If fx is increasing or decreasing, okay,
+
+50
+00:07:41,939 --> 00:07:50,579
+if your fx function is increasing or decreasing on its domain, then
+
+51
+00:07:53,235 --> 00:08:17,055
+f has an inverse at any point. Okay. Then you can find the derivation, the inverse derivation at the point b will be 1 over f'a. What is f'a here? f'a equals b.
+
+52
+00:08:17,620 --> 00:08:21,260
+You will find the point A from this relation. Okay?
+
+53
+00:08:22,140 --> 00:08:27,940
+In the question, they can say that, okay, show that this function has an inverse.
+
+54
+00:08:28,060 --> 00:08:37,759
+How can you show when you take the derivation if it is increasing or decreasing in its domain, in given domain, then?
+
+55
+00:08:38,163 --> 00:08:41,484
+Bu konuda birçok birçok birçok.
+
+56
+00:08:41,484 --> 00:08:43,484
+Ve bu konuda birçok.
+
+57
+00:08:43,484 --> 00:08:45,783
+Bu konuda bu konuda kullanılıyor.
+
+58
+00:08:45,783 --> 00:08:49,783
+Evet.
+
+59
+00:08:49,783 --> 00:09:01,580
+Bu konuda.
+
+60
+00:09:01,779 --> 00:09:16,360
+because in the next subject is application of derivation. We will see lokal maximum, lokal minimums, sketching a graph. Yes, yes, I hope that we can solve tomorrow all of them.
+
+61
+00:09:17,259 --> 00:09:28,460
+Okay? Bugün çünkü L'Hospital'i falan bitireceğim. Ondan sonra şeye geçmemiz gerekiyor artık. Lokal maximum, minimumluk paylaşırım. Olur.
+
+62
+00:09:29,011 --> 00:09:35,651
+olur. Yani bu şekilde çözerim buraya. Ondan sonra onu paylaşayım.
+
+63
+00:09:39,059 --> 00:09:49,979
+Okay, so let us look at this example. We have a function and they said that actually, firstly, we have to be sure that there is an inverse or not.
+
+64
+00:09:50,379 --> 00:09:59,979
+First, actually, you have to look at the derivation of this function. What is the derivation of this function? It is 3x² and you can easily...
+
+65
+00:10:00,000 --> 00:10:07,540
+see that it is a polynomial and domain of this function is a real number, so it will be always positive.
+
+66
+00:10:07,540 --> 00:10:09,200
+It is increasing.
+
+67
+00:10:12,724 --> 00:10:17,784
+So it means that we can find derivation, we can find inverse of this function.
+
+68
+00:10:18,784 --> 00:10:27,044
+Bakın bir fonksiyonun tersinin var olabilmesi için verilen aralıkta ya da burada verilmesine gerek olmamış mesela.
+
+69
+00:10:27,704 --> 00:10:32,824
+Tamamen artan yazı azalan olması gerekiyor. O zaman bu tersinin olması için yeterli.
+
+70
+00:10:33,331 --> 00:10:40,091
+Varsa o zaman tersinden bahsedebiliriz. Şu an artan bir fonksiyon olduğu için burada bahsedebiliyoruz. Artık bu fonksiyonun tersi var.
+
+71
+00:10:40,991 --> 00:10:47,312
+So, firstly we have to find for which value of a the result is 6 here.
+
+72
+00:10:49,152 --> 00:10:57,292
+This is your function. So, when I write a, it will be a cube minus 2 is 6.
+
+73
+00:10:59,827 --> 00:11:01,508
+a3 birel be 6.
+
+74
+00:11:02,728 --> 00:11:05,067
+Only a can be 2 here.
+
+75
+00:11:07,908 --> 00:11:14,707
+So it means that if I want to find inverse of this function derivation at the point 6,
+
+76
+00:11:15,148 --> 00:11:19,628
+I need to find what is 1 over f' 2.
+
+77
+00:11:21,748 --> 00:11:27,248
+So I find f' is 3x², it will be 1 over 3 product.
+
+78
+00:11:27,635 --> 00:11:36,555
+4x, f' it will be 1 over 12. No, no, increasing or decreasing.
+
+79
+00:12:18,580 --> 00:12:36,580
+Ne?
+
+80
+00:12:38,932 --> 00:12:39,831
+onu bir daha çözelim.
+
+81
+00:12:41,951 --> 00:12:42,312
+Yes.
+
+82
+00:12:43,532 --> 00:12:46,072
+Here, strictly means here, this means.
+
+83
+00:12:46,851 --> 00:12:47,851
+Actually, we have four.
+
+84
+00:12:48,991 --> 00:12:52,432
+In the first lesson, I think I talked about increasing.
+
+85
+00:12:52,432 --> 00:12:54,012
+It means this one.
+
+86
+00:12:54,892 --> 00:13:01,392
+Increasing, decreasing, non-increasing, non-decreasing.
+
+87
+00:13:02,995 --> 00:13:04,556
+I'm talking about this.
+
+88
+00:13:05,395 --> 00:13:07,796
+According to your definition, it is strictly.
+
+89
+00:13:09,656 --> 00:13:09,975
+Okay?
+
+90
+00:13:11,115 --> 00:13:14,096
+I mean, increasing, decreasing, there is no equality.
+
+91
+00:13:14,096 --> 00:13:17,196
+If you have equality, it is non-increasing and non-decreasing.
+
+92
+00:13:18,316 --> 00:13:18,536
+Okay?
+
+93
+00:13:19,775 --> 00:13:20,855
+If...
+
+94
+00:13:20,855 --> 00:13:21,456
+Hocam...
+
+95
+00:13:21,456 --> 00:13:21,635
+Yes?
+
+96
+00:13:22,048 --> 00:13:25,988
+What do we mean exactly when we say non-increasing or non-decreasing?
+
+97
+00:13:26,707 --> 00:13:42,248
+Okay, yes. Non-increasing means that they can be equal to each other or let me write here fx1, fx2.
+
+98
+00:13:50,196 --> 00:13:57,136
+x1 is greater than, sorry, one second. Bundan bahsetmedim mi sizi unuttum mu acaba?
+
+99
+00:13:58,816 --> 00:14:06,776
+Okay, one second. Maybe I will talk about the next lesson in one second.
+
+100
+00:14:08,376 --> 00:14:15,176
+If x2 is greater than 1, non-increasing means that here and here.
+
+101
+00:14:16,724 --> 00:14:24,303
+They can be equality or non-increasing means that it can be equal to each other or it won't be increased.
+
+102
+00:14:24,303 --> 00:14:41,423
+So, if you have this case, it is called non-increasing. If x1 is less than x2, if you have f x1 is less or equal to f x2, it means that non-decreasing.
+
+103
+00:14:44,019 --> 00:14:48,679
+it can be equal to each other or it is also increasing. It is called non-decreasing.
+
+104
+00:14:49,120 --> 00:14:57,919
+And in my definition, your definition is equals to strictly. Ama ben kullanmıyorum.
+
+105
+00:14:57,919 --> 00:15:03,419
+Yani buradaki in our definition, actually, the definition is strictly.
+
+106
+00:15:03,871 --> 00:15:28,072
+but we don't use strictly. We are seeing direct increasing, decreasing, or non-increasing, non-decreasing. If you have equality, there are none. If you don't have equality, if x1, x2, if you have f x1, f x2, okay, it is called increasing. Okay?
+
+107
+00:15:29,620 --> 00:15:37,299
+I will give this definition on my lecture notes, but we will see in a local maximum minimum.
+
+108
+00:15:37,299 --> 00:15:39,820
+Okay.
+
+109
+00:15:39,919 --> 00:15:42,080
+Let me solve this example again.
+
+110
+00:15:42,259 --> 00:15:42,539
+Okay.
+
+111
+00:15:43,080 --> 00:15:44,279
+Let us look at it again.
+
+112
+00:15:47,440 --> 00:15:50,360
+If you want to find value of...
+
+113
+00:15:50,676 --> 00:15:59,956
+any function, inverse of this function, firstly, you have to be sure that you have a derivation, you have a inverse function. Okay.
+
+114
+00:16:00,916 --> 00:16:12,916
+Firstly, yes, yes. No, no, no problem. In some cases, they use strictly, but monotonic also we can use. We use monotonic.
+
+115
+00:16:12,916 --> 00:16:17,556
+If your function is increasing or decreasing, it is called monotonic.
+
+116
+00:16:18,451 --> 00:16:39,971
+Okay? Okay, first let us find f' x firstly. f' x is 3x², and you can see that it is always positive. It is increasing. If your function is increasing at every point, then you can say that I can find inverse of this function.
+
+117
+00:16:40,532 --> 00:16:45,572
+After that, they said that what is inverse derivation at 0.6?
+
+118
+00:16:46,004 --> 00:16:55,104
+I have to find, okay, this is y-axis. So what is f'a for the point 6? I have to find a here.
+
+119
+00:16:56,364 --> 00:17:02,364
+So a will be, if I write in the function, it will be a cubed minus 2 will be 6.
+
+120
+00:17:03,504 --> 00:17:09,624
+So a cubed will be 8. So I find that a is 2.
+
+121
+00:17:10,228 --> 00:17:25,907
+If a is 2, according to the definition of the formula of the derivation, f minus 1's derivation, 80.6 will be 1 over f'2.
+
+122
+00:17:27,887 --> 00:17:34,648
+I find f'2 is this. When you write 2, you can find that your solution is 1 over 12. Okay?
+
+123
+00:17:42,420 --> 00:17:47,420
+Bunları sonra vereceğim. Bunları geçmediğim için daha var mıydım? Okey.
+
+124
+00:17:52,500 --> 00:17:54,380
+Okay, let us look at this example.
+
+125
+00:17:55,840 --> 00:18:00,799
+For example, in here, they give a domain, they give a particular point.
+
+126
+00:18:01,759 --> 00:18:08,000
+They said that R function is this and x is greater or equal to 2. This is important.
+
+127
+00:18:08,680 --> 00:18:15,779
+Then they said that find the tangent line of f minus 1 x, x equals minus 1.
+
+128
+00:18:16,360 --> 00:18:19,480
+Firstly, we have to look at f prime x.
+
+129
+00:18:21,523 --> 00:18:47,683
+f' x' is 3x²-6x. Okay. So I can write 3x outside, it will be x-2. Okay. I want to show in the sign table why it is important. The sign will be x, x-2. Okay.
+
+130
+00:18:54,488 --> 00:19:06,488
+Ne?
+
+131
+00:18:53,875 --> 00:19:10,443
+0, 0
+
+132
+00:19:10,579 --> 00:19:14,579
+Bu, bu, bu, bu, bu, bu, bu.
+
+133
+00:19:31,347 --> 00:19:50,247
+or this one or this one. So they said that take the part x is greater or equal to 2 here. It is positive. In that interval, it is positive. It is increasing. So I can find inverse of this function for this interval. Okay?
+
+134
+00:19:59,571 --> 00:20:01,192
+at the point minus 1.
+
+135
+00:20:02,731 --> 00:20:09,371
+Firstly, I have to find for which value of A, the result will be minus 1.
+
+136
+00:20:10,932 --> 00:20:19,971
+A, if I write here, A cube minus 3A square minus 1 equals minus 1.
+
+137
+00:20:20,251 --> 00:20:22,011
+I can cancel these two terms.
+
+138
+00:20:22,011 --> 00:20:26,611
+If I write A to A square outside, I have A minus 3.
+
+139
+00:20:27,188 --> 00:20:32,807
+A can be 0, or A can be 3.
+
+140
+00:20:33,548 --> 00:20:35,748
+Which one I have to take?
+
+141
+00:20:43,635 --> 00:20:55,096
+Yes, because they give the domain, they said that x has to be greater or equal to 2, so I can't take this point, so only I can take 3, so it will be
+
+142
+00:21:01,556 --> 00:21:26,395
+So, this derivation will be 1 over f' 3. So, it is 1 over, I find f' is this. If I write here, it will be 1 over, it will be 9. Okay. So, it is also the slope.
+
+143
+00:21:28,948 --> 00:21:53,508
+80.1, but the slope of f-1, okay? And they are asking the tangent line, so our tangent line will be y- y0, what is y0? 1 over 9, x-1. Don't forget here is your x term, 1 over 9 is your slope.
+
+144
+00:21:55,667 --> 00:22:21,931
+Ve 3'e y'e
+
+145
+00:22:22,003 --> 00:22:24,483
+minus 1x.
+
+146
+00:22:26,703 --> 00:22:27,523
+Here,
+
+147
+00:22:28,884 --> 00:22:29,763
+here,
+
+148
+00:22:30,284 --> 00:22:30,983
+look at this,
+
+149
+00:22:31,403 --> 00:22:33,663
+I find that f3 is
+
+150
+00:22:33,663 --> 00:22:34,864
+minus 1.
+
+151
+00:22:35,423 --> 00:22:37,384
+But what about f minus 1?
+
+152
+00:22:38,304 --> 00:22:40,503
+minus 1 is 3.
+
+153
+00:22:41,523 --> 00:22:49,723
+And they are talking about f minus 1, so it means that it will be x0, it will be y0.
+
+154
+00:22:50,683 --> 00:22:50,903
+Okay?
+
+155
+00:22:54,403 --> 00:22:56,183
+Fonksiyonun tersininkini soruyor.
+
+156
+00:22:58,043 --> 00:22:59,183
+Rast kafa karıştırdı değil mi?
+
+157
+00:23:01,323 --> 00:23:02,003
+Okay.
+
+158
+00:23:04,276 --> 00:23:13,615
+Now, let us look at our transcendental function. Actually, we taught these functions, but let's look at again.
+
+159
+00:23:14,316 --> 00:23:24,016
+Our first function is natural logarithm function. Natural means that normal logarithm function is logarithm at the base of ax.
+
+160
+00:23:24,016 --> 00:23:30,516
+This is the general. But if you talk about natural, natural means the base is e.
+
+161
+00:23:32,564 --> 00:23:45,443
+okay. This is e. And before that, I said that we can write logarithm function like this ln x over ln e.
+
+162
+00:23:46,723 --> 00:23:53,524
+ln e is 1, so actually logarithm function, natural logarithm function is called ln function.
+
+163
+00:23:54,884 --> 00:23:58,723
+ln functions graph is this, I gave before.
+
+164
+00:23:59,200 --> 00:24:08,519
+And I said that L'nf function and exponent function, natural exponent and natural logarithm function are inverse functions of each other.
+
+165
+00:24:08,519 --> 00:24:16,819
+And inverse function are symmetric about y equals x-axis, y equals x-line.
+
+166
+00:24:18,996 --> 00:24:30,576
+These two functions, this is ln function, this is exponent function, and these two functions are inverse to each other, and they are symmetric about y equals x line.
+
+167
+00:24:32,276 --> 00:24:32,855
+Okay.
+
+168
+00:24:35,256 --> 00:24:36,916
+What do we know about
+
+169
+00:24:39,155 --> 00:24:45,375
+natural logarithm function, these four properties will be very important for us.
+
+170
+00:24:45,496 --> 00:24:48,016
+Actually, we see before, but let's look at it again.
+
+171
+00:24:48,796 --> 00:25:00,096
+If you have two alarm function, okay, and if you have plus between them, plus means that you can write these two alarm function in one alarm function.
+
+172
+00:25:00,455 --> 00:25:05,355
+You will write b here. If the sign is positive, it means that product,
+
+173
+00:25:05,680 --> 00:25:19,799
+The second ln function is inside x. This is equals to ln bx. If you have two ln function, and if you want to write in one place, you will write the first term.
+
+174
+00:25:19,799 --> 00:25:29,599
+You have to look at the sign. If it is minus, it means that it is division the other term. Especially these two.
+
+175
+00:25:30,067 --> 00:25:33,587
+ve bu bir şeyin çok önemli.
+
+176
+00:25:36,427 --> 00:25:37,968
+Eğer bir power var,
+
+177
+00:25:38,887 --> 00:25:41,688
+1 over x'ı yazarız,
+
+178
+00:25:41,688 --> 00:25:43,167
+x to the power minus 1.
+
+179
+00:25:43,248 --> 00:25:44,748
+Eğer bir power var,
+
+180
+00:25:44,748 --> 00:25:45,508
+bir function var,
+
+181
+00:25:45,508 --> 00:25:46,567
+bir outside.
+
+182
+00:25:47,167 --> 00:25:48,008
+Ese,
+
+183
+00:25:48,008 --> 00:25:49,528
+bir power var,
+
+184
+00:25:49,528 --> 00:25:50,887
+bir function var,
+
+185
+00:25:50,887 --> 00:25:52,127
+bir outside.
+
+186
+00:25:52,127 --> 00:25:52,948
+As a coefficient,
+
+187
+00:25:53,468 --> 00:25:55,607
+bir r product ln x.
+
+188
+00:25:56,788 --> 00:26:06,868
+This, actually 3 is the special case of 4. x, x. Okay, let me write here.
+
+189
+00:26:09,168 --> 00:26:24,068
+ln minus 1x is different. It means that 1 over lnx. Okay. lnx to the power minus 1 means ln 1 over x.
+
+190
+00:26:24,144 --> 00:26:25,144
+çeşitli bir şey.
+
+191
+00:26:25,144 --> 00:26:26,144
+Evet, evet.
+
+192
+00:26:29,587 --> 00:26:37,407
+Okey. I think we talk about logaritm differentiation last week, I think. Siz de bunu yapmıştık, değil mi?
+
+193
+00:26:40,307 --> 00:27:01,947
+Maybe we can solve some questions again. Last week, I think I talked about logarithmic differentiation. What is logarithmic differentiation? Or why do we need logarithmic differentiation? We use this logarithmic differentiation in two cases. If your function is very complex, for example, like this.
+
+194
+00:27:03,768 --> 00:27:04,967
+Okay, here.
+
+195
+00:27:05,587 --> 00:27:13,048
+And if you want to take derivation of this function, then logaritmic differentiation will be very useful for you.
+
+196
+00:27:13,048 --> 00:27:24,127
+For example, here you can have any other functions also. x cubed plus 2. You can have x plus 3 or something like that.
+
+197
+00:27:24,587 --> 00:27:28,508
+In that case, logaritmic differentiation will be very useful for you.
+
+198
+00:27:28,915 --> 00:27:50,495
+What about the second case? In the previous part, we learned derivation of if you have a function and if you have a power of this function here and is a number, if you want to take derivation of this function, I know that it is n u n-1u'.
+
+199
+00:27:55,092 --> 00:28:02,932
+of a power, okay, for example, x. What is this function's derivation? It is a to the power x ln a.
+
+200
+00:28:04,212 --> 00:28:11,612
+I know this derivation also, but if you have two function f x to the power gx,
+
+201
+00:28:14,112 --> 00:28:18,812
+and if you want to take derivation of this function, you don't have any formula.
+
+202
+00:28:19,667 --> 00:28:23,387
+In this case, you will use logaritmic differentiation. Okay?
+
+203
+00:28:24,287 --> 00:28:29,967
+So, in the first case, if your function is very complex, you can use logaritmic differentiation,
+
+204
+00:28:30,307 --> 00:28:34,147
+especially each term R polynomial or algebraic function.
+
+205
+00:28:34,687 --> 00:28:42,127
+Or, the second case, if you have fx to the power gx, and if you want to find derivation of this function,
+
+206
+00:28:42,127 --> 00:28:45,107
+you have to use logaritmic differentiation. Okay?
+
+207
+00:28:46,067 --> 00:29:16,683
+x kare artı 2x, f'
+
+208
+00:28:57,364 --> 00:29:16,304
+Bak [öğrenci], dediğim şu. Ne zaman logaritmik differenciation'ı kullanıyorsun? Ya verilen sorudaki fonksiyon, çok karmaşıksa buradaki gibi, polinom, algebraik fonksiyonların çarpımı bölümlü falansa ya da fx üzeri gx şeklinde bir fonksiyon varsa bunun için bizim türev formülümüz yok.
+
+209
+00:29:17,076 --> 00:29:29,996
+Fonksiyon üzeri sayı var. Sayı üzeri fonksiyon var. Bunların türevini alabiliyoruz. Ama ikisi de fonksiyon olursa türevini almakla ilgili bir formülümüz yok. O yüzden burada logaritmik türevi kullanıyoruz. İki durumda sadece kullanıyoruz bunu.
+
+210
+00:29:30,396 --> 00:29:45,036
+Okay, so let us look at this function. Okay, and I want to take derivation of this function. And for this, I will use logaritmic differentiation. Firstly, you have to take ln of last side and right.
+
+211
+00:29:45,076 --> 00:29:47,016
+Elen, why? Elen.
+
+212
+00:29:48,076 --> 00:29:48,375
+Okay?
+
+213
+00:29:52,307 --> 00:30:04,708
+So, on the left side, I have ln y. Now, if I use the properties of here, we talk about this one, this one, and this one. We will use this property in logarithmic differentiation.
+
+214
+00:30:05,448 --> 00:30:19,587
+Okay, the first term is ln x squared plus 1. So, if I want to write separately, the first term will be ln x squared plus 1. Between these two terms, there is product here. Products means plus.
+
+215
+00:30:21,299 --> 00:30:34,740
+If you have a power inside, yes, I have a power of 1 over 2. I can write 1 over 2 as a coefficient outside of the ln function. And the term is x plus 3. So ln x plus 3.
+
+216
+00:30:35,839 --> 00:30:47,220
+And here you have a division inside of the ln function. Division means the sign is negative. The last term is x minus 1. So I write as minus ln x minus 1.
+
+217
+00:30:47,988 --> 00:30:55,648
+Now, from here, I can take derivation left side and right side easily. y is your dependent variable.
+
+218
+00:30:55,908 --> 00:31:02,888
+So, if you want to take derivation of y, derivation inside over inside function.
+
+219
+00:31:03,488 --> 00:31:10,908
+Now, I have a lm function. What is a lm function? If you have a lm function, u is a function of x.
+
+220
+00:31:11,588 --> 00:31:14,508
+Derivation of this function, derivation inside over.
+
+221
+00:31:15,347 --> 00:31:23,248
+inside. Here, our u function is x squared plus 1. So I write x squared plus 1 here.
+
+222
+00:31:24,847 --> 00:31:29,208
+And in your numerator, you will take derivation of this function. It is 2x.
+
+223
+00:31:31,307 --> 00:31:42,048
+Plus 1 over 2. This is our u function. I will write in your denominator directly. And in your numerator, you will take derivation of x plus 3 is 1.
+
+224
+00:31:42,708 --> 00:31:48,928
+and lastly minus, I will write inside of the function here directly, it is x minus 1.
+
+225
+00:31:49,548 --> 00:31:52,708
+And here I will write derivation of x minus 1 is 1.
+
+226
+00:31:53,788 --> 00:31:59,228
+This is our derivation. Lastly, I have to product left side and right side bit y.
+
+227
+00:32:05,715 --> 00:32:14,875
+So our derivation will be this part and product y. What is y? y is your function? This. This is y.
+
+228
+00:32:17,975 --> 00:32:28,215
+Okay. This is the first case. If you have many algebraic functions, there is a product division, and you can use logarithmic differentiation.
+
+229
+00:32:29,619 --> 00:32:39,199
+If you look at the second example, the second example is related to the second case. What is the second case? It was f' x' g' x.
+
+230
+00:32:42,932 --> 00:33:07,152
+here, rf'funktion is this, and rg'funktion is this. So, firstly, I have to take ln of left side and right side. ln y will be, okay, ln x to the power x squared. You can see that x squared is the power of inside, I can write outside, product.
+
+231
+00:33:07,731 --> 00:33:32,632
+Inside, I have only x. Now, let us take derivation here. Derivation of ln y will be y' over y. It will be always the same. I have two different functions and there is a product here. So, the first function's derivation to x product, the second function, plus the first function product derivation of ln function is 1 over x.
+
+232
+00:33:33,299 --> 00:33:36,480
+And lastly, I have to product each part with y.
+
+233
+00:33:39,000 --> 00:33:49,759
+And I can cancel here. So y' will be 2x and x plus x. And this is your y-function. This is called logaritmic differentiation.
+
+234
+00:33:53,000 --> 00:33:53,700
+Okay.
+
+235
+00:33:57,579 --> 00:33:58,740
+For example,
+
+236
+00:33:59,347 --> 00:34:09,948
+let's look at this example. It is also, it is related to logarithmic differentiation. And also I put a logarithmic differentiation question in test also. Did you see?
+
+237
+00:34:12,847 --> 00:34:18,867
+Now today you can solve this question also. One question is related to logarithmic differentiation.
+
+238
+00:34:20,228 --> 00:34:26,587
+Okay. Firstly, let us take NN of left side and right side. Okay.
+
+239
+00:34:27,668 --> 00:34:54,728
+So what does it mean, this part, we have to start with this one. This is actually ln x, x plus 1, x minus 2 over x squared plus 1, 2x plus 3, to the power 1 over 3.
+
+240
+00:34:55,284 --> 00:34:55,644
+Okay.
+
+241
+00:34:58,444 --> 00:35:02,524
+So, I can write 1 over 3 outside because it is a power.
+
+242
+00:35:03,184 --> 00:35:05,403
+So, I write 1 over 3 outside.
+
+243
+00:35:06,003 --> 00:35:08,284
+So, the first term is x.
+
+244
+00:35:08,684 --> 00:35:10,123
+I write lnx.
+
+245
+00:35:10,984 --> 00:35:12,524
+Here, I have product.
+
+246
+00:35:13,331 --> 00:35:28,112
+I will write plus. The second term is x plus 1 ln x plus 1 here. I have a product here. The last term for here, it is ln x minus 3. If you have a division, in the division part, the sign will be negative.
+
+247
+00:35:29,411 --> 00:35:40,291
+The first term is x squared plus 1, so I will write ln x squared plus 1. And here it is also in division minus ln 2x plus 3.
+
+248
+00:35:40,884 --> 00:35:47,103
+Now I write each turn using the properties of a L'N function. Now I can take derivation.
+
+249
+00:35:47,903 --> 00:35:55,503
+This function's derivation is y' over y. But here I write y directly here.
+
+250
+00:35:56,224 --> 00:36:00,483
+Y'yi direkt buraya at. This is y. Okay. I write directly here.
+
+251
+00:36:02,983 --> 00:36:07,323
+Evet. Evet. Eleni uyguladıktan sonra her iki tarafı türev uygulayabiliriz.
+
+252
+00:36:08,947 --> 00:36:23,907
+Okay, the derivation of ln x is 1 over x. Derivation of this function, I write this term as your denominator here, and here you will take derivation of x plus 1, it is 1.
+
+253
+00:36:24,607 --> 00:36:31,627
+In here, I write x minus 2 in your denominator, and you will write derivation of x minus 2 here is 1.
+
+254
+00:36:34,099 --> 00:36:41,059
+The function is x squared plus 1. In your numerator, you will take derivation of x squared plus 1 is 2x.
+
+255
+00:36:53,940 --> 00:36:57,219
+1 bölü 3 kas sayı onu dışarı atıyorum direkt olarak.
+
+256
+00:36:59,400 --> 00:37:02,860
+Yani özelliği kullanıyorum direkt. Kas sayı onunla bir işimiz yok zaten.
+
+257
+00:37:05,619 --> 00:37:12,079
+Okay? And in the last part I write 2x plus 3 here and derivation of this function is 2.
+
+258
+00:37:12,079 --> 00:37:13,539
+This is R.
+
+259
+00:37:14,068 --> 00:37:24,968
+derivation of this function. But in test, probably they can ask a particular point. For example, they can ask it, what is y'0? Or something like that.
+
+260
+00:37:25,748 --> 00:37:27,608
+Öyle daha kolay çünkü bunu soramayız yani.
+
+261
+00:37:29,807 --> 00:37:37,307
+Okay, now let us talk about exponent function. Actually, I talk about exponent function, but let's see again.
+
+262
+00:37:38,248 --> 00:37:41,248
+This is natural exponent function, actually.
+
+263
+00:37:43,027 --> 00:37:48,527
+The exponent function, the general case, is a to the power x. I mentioned about this function.
+
+264
+00:37:58,900 --> 00:38:00,920
+Şurayı mı diyorsun? Şurayı.
+
+265
+00:38:04,659 --> 00:38:17,339
+türevini alıyorsun. Aşağının türevinin yukarıya yazıyorsun. Bu aşağının türevi 2. Şuranın hep aşağının türevinin yukarıya yazıyorsun. Aşağının türevi 2x artı 3'ün türevi 2 onu buraya yaz.
+
+266
+00:38:17,339 --> 00:38:20,079
+Tamam. That's no problem.
+
+267
+00:38:21,960 --> 00:38:32,059
+Okay. So what can we talk about natural exponent function? If you have two different exponent function and there is a product here,
+
+268
+00:38:35,603 --> 00:38:38,003
+Hayır, hayır soruyu ona göre veriyoruz zaten.
+
+269
+00:38:38,783 --> 00:38:41,503
+I write randomly.
+
+270
+00:38:42,143 --> 00:38:44,343
+Okay, if you have a problem, we can't ask.
+
+271
+00:38:44,783 --> 00:38:45,523
+I write generally.
+
+272
+00:38:45,683 --> 00:38:50,603
+We can ask, for example, in this question, we can ask...
+
+273
+00:38:54,603 --> 00:38:56,603
+Ne sorabiliriz?
+
+274
+00:38:57,603 --> 00:39:00,043
+Burada zaten x2 bölüm.
+
+275
+00:39:00,447 --> 00:39:03,467
+onun do meyine bakmadık. For example, they can ask for.
+
+276
+00:39:05,587 --> 00:39:05,867
+Okay.
+
+277
+00:39:07,387 --> 00:39:09,907
+You can't ask any singular point.
+
+278
+00:39:10,567 --> 00:39:13,607
+This point, that zero is a singular point.
+
+279
+00:39:13,707 --> 00:39:14,687
+You can't ask. Okay.
+
+280
+00:39:17,427 --> 00:39:32,147
+Okay, so what do we know about exponent function? If we have two exponent function and there is a product here, you have to add this power in one base of it is x1 plus x2.
+
+281
+00:39:32,507 --> 00:39:38,187
+If you have a division, then it means that the sign between x1 and x2 is negative.
+
+282
+00:39:39,187 --> 00:39:45,027
+e to the power minus x means that actually 1 over e to the power of x.
+
+283
+00:39:45,391 --> 00:39:54,231
+And if you want to take power of this exponent function, you have to product these two power. It will be x1 product R.
+
+284
+00:39:55,751 --> 00:39:56,111
+Okay?
+
+285
+00:39:58,051 --> 00:40:04,211
+Now you didn't see inverse trigonometric functions. Let us talk about inverse trigonometric functions.
+
+286
+00:40:04,211 --> 00:40:11,831
+I know that y equals sin x is a trigonometric function. Okay.
+
+287
+00:40:12,271 --> 00:40:33,551
+What do we know about sine functions? So I know that sine functions domain is real number and our range is between minus 1 to 1. Okay. Let me sketch the sine functions graph here. Sine 0 is 0. It will be like this.
+
+288
+00:40:37,460 --> 00:40:44,539
+But if you want to talk about inverse, what we talk about inverse, firstly, it has to be one-to-one.
+
+289
+00:40:45,440 --> 00:40:52,719
+So I can't take real number as a domain for a range of this function.
+
+290
+00:40:52,719 --> 00:40:58,480
+If it is sine arc sine x is called inverse.
+
+291
+00:40:58,931 --> 00:41:10,171
+x kare artı 2x, f'
+
+292
+00:41:19,347 --> 00:41:25,728
+If I sketch a line here, you can see that we have many intersection points. It is not one to one.
+
+293
+00:41:26,148 --> 00:41:33,387
+So I have to take only one part of this function. So I have to make a restriction here.
+
+294
+00:41:33,387 --> 00:41:45,448
+We can say that only I will take minus pi over two to pi over two. So this function, I know that it is one to one.
+
+295
+00:41:46,387 --> 00:41:56,428
+So, our domain will be minus 1 to 1, but our range will be minus pi over 2 to pi over 2.
+
+296
+00:41:56,867 --> 00:42:05,688
+In that case, we can have inverse function and our domain and our range for arcsine function is minus 1 to 1,
+
+297
+00:42:06,208 --> 00:42:11,468
+and our range is between minus pi over 2 to pi over 2. It will be this.
+
+298
+00:42:13,172 --> 00:42:16,451
+I know that this function is one to one.
+
+299
+00:42:19,451 --> 00:42:23,811
+Tersi diyorsak bir kere fonksiyonun tersini alabiliyor olmamız gerekir sinüsün.
+
+300
+00:42:24,211 --> 00:42:27,132
+Sinüsün de biliyorsunuz ki birçok yerde aynı değerleri alıyor.
+
+301
+00:42:27,271 --> 00:42:29,851
+O yüzden bunun bir parçasını almak zorundayım.
+
+302
+00:42:30,511 --> 00:42:34,711
+Birebir olan bir parçası sadece o da eksi p bölü 2 ile p bölü 2'yi alıyoruz.
+
+303
+00:42:44,596 --> 00:42:49,236
+So, this is arcsine function is the inverse of sine function.
+
+304
+00:42:50,547 --> 00:43:01,747
+R-range are the same. Sorry, R-range for sine function and for the arcsine function's domain are the same. It is minus 1 to 1.
+
+305
+00:43:02,107 --> 00:43:13,207
+But for inverse function, I have to make a restriction. Only I can take the interval minus pi over 2 to pi over 2 because only in that case it will be 1 to 1.
+
+306
+00:43:13,887 --> 00:43:15,947
+So this is our domain and range.
+
+307
+00:43:16,692 --> 00:43:19,371
+Now let us talk about cosine function.
+
+308
+00:43:19,371 --> 00:43:20,371
+Okay.
+
+309
+00:43:31,059 --> 00:43:37,759
+For cosine function, our range and domain are the same.
+
+310
+00:43:38,279 --> 00:43:45,239
+But if we sketch a graph of cosine function, it will be cosine 0, it will be 1, it will be like this.
+
+311
+00:43:49,043 --> 00:43:55,364
+You can see that it is not one to one. So I have to take only one part. So I will take zero to pi.
+
+312
+00:43:57,764 --> 00:44:07,284
+This function, this part is only one to one. So if I want to take inverse of cosine function, it is called arc cosine x.
+
+313
+00:44:08,003 --> 00:44:13,443
+Our domain is minus one to one, but our range will be only zero comma pi.
+
+314
+00:44:14,260 --> 00:44:20,980
+especially these two parts will be important. Okay? This is the graph of this function.
+
+315
+00:44:29,860 --> 00:44:40,019
+Okay, what about art tangent function? In art tangent function, if you remember for tangent function it will be like this.
+
+316
+00:44:40,884 --> 00:45:04,204
+Ve bu kısımın yöntem y
+
+317
+00:45:04,307 --> 00:45:08,527
+minus pi over 2. So your function will be like this here.
+
+318
+00:45:09,947 --> 00:45:13,407
+Here. So we have many different parts.
+
+319
+00:45:14,047 --> 00:45:22,047
+Excuse me. Okay. So here only I have to take one part for one to one. So I will take this one. This is minus pi over 2.
+
+320
+00:45:23,107 --> 00:45:30,627
+This is pi over 2. Okay. So only I will take this part, but this is the graph of tangent function.
+
+321
+00:45:31,007 --> 00:45:35,607
+This is the graph of arctanjant function. Ne yapıyor? Aslında biraz ters dönüyor.
+
+322
+00:45:36,827 --> 00:45:51,168
+Okay, so I have to make the restriction. Our domain is real number, but for arctanjant function, our range is between minus pi over 2 to pi over 2, and it will be open in term.
+
+323
+00:45:51,507 --> 00:45:55,607
+Okay, this is the domain and range function of arctanjant.
+
+324
+00:45:59,315 --> 00:46:08,815
+What about our cotangent function? Normally cotangent x was cosin x over sinin x.
+
+325
+00:46:10,815 --> 00:46:21,315
+The graph for the cotangent function, I have to subtract the points where sin x is 0, it is 0, pi minus pi.
+
+326
+00:46:24,532 --> 00:46:35,871
+2 pi, something like that. What about the graph of this function? So it will be this one.
+
+327
+00:46:40,083 --> 00:46:40,483
+Okay.
+
+328
+00:46:42,023 --> 00:46:49,103
+But for one to one, I have to take only one part, so we will take only zero to pi interval.
+
+329
+00:46:50,683 --> 00:46:56,523
+So it will be real number two, zero comma pi for cotangent function.
+
+330
+00:46:56,523 --> 00:46:57,324
+Okay.
+
+331
+00:46:57,744 --> 00:47:00,703
+But for our cotangent function, sorry.
+
+332
+00:47:05,300 --> 00:47:11,640
+So, for arc cotangent function, it will be real number to 0 to pi. You have to know this one also.
+
+333
+00:47:12,980 --> 00:47:14,880
+Bizim için önemli olan şu dört tanesi.
+
+334
+00:47:15,620 --> 00:47:23,760
+Only the first for arc function will be important. We don't use arc of seconds so much.
+
+335
+00:47:34,804 --> 00:47:39,304
+aynı şeye veriyor zaten. Bir tanesini seçmek zorundayız. O yüzden de biz en basit olanı seçiyoruz.
+
+336
+00:47:40,403 --> 00:47:45,804
+Oradan bir parçasını seçmek zorundasın. O aralıkta sadece oluyor. 90'la...
+
+337
+00:47:50,452 --> 00:47:55,731
+x 1 ile artı 1 arası x 1 ile artı 1 arasını seçmiyorum.
+
+338
+00:47:55,731 --> 00:47:58,932
+Bir saniye.
+
+339
+00:48:03,987 --> 00:48:31,367
+Bak, bizim, mesela kosinüs için bakarsan, bizim kosinüsün domeni, Rensi'lar, değer kümesi eksi 1 artı 1. Tam tersini yazmak istiyorsan eksi 1 artı 1. Bunda bir sıkıntı yok. Ama sıkıntı bizim değer kümemizde. Değer kümemizde birden fazla. Hep aynısı olduğu için, üst sayfa için derken, aşağıdaki için mi soruyor? Bunu mu soruyorsun?
+
+340
+00:48:32,083 --> 00:48:49,483
+[öğrenci] bu mu? Kosinüsü ben de ona baktım. Şunu duyuyorsun. Tamam. Şimdi burada kosinüse bakarsan, şimdi benim birebir olan bir şey almam gerekiyor. O yüzden kosinüsün değerleri şöyle gidiyor.
+
+341
+00:48:54,324 --> 00:49:18,724
+Şimdi benim x1 ile artı 1 arasında bir sıkıntı yok. Zaten kısıtlayanlar burası. Burada aralık aldığımda, şimdi bu fonksiyon aynı gidiyor ya, bir tanesini seçmek zorundayım. Bunu parçaya bölmek zorundasın. Mesela bu kısmı alamazsın. Çünkü biri bir değil. Ancak bir böyle bir böyle olan kısmı alabiliyorsun. Ya şunu alacaksın? Şurayı. Şunu da alabilirsin.
+
+342
+00:49:20,596 --> 00:49:22,275
+Burası 0 pi.
+
+343
+00:49:23,235 --> 00:49:25,355
+Or you can take pi to pi.
+
+344
+00:49:26,596 --> 00:49:32,735
+But we have to make a general definition, so we prefer to take 0 to pi in the books.
+
+345
+00:49:32,735 --> 00:49:39,755
+Yani tabii ki hepsi aynı şeyi verecek ama kitaplarda bir şekilde tanım vermemiz gerekiyor.
+
+346
+00:49:39,855 --> 00:49:46,515
+Kitaplarda da o yüzden en kısasını, yani periyodu şey olanı alıyorsun, en kısa olanı alıyorsun, 0 pi.
+
+347
+00:49:46,911 --> 00:49:53,551
+Yani öbür küsü de periyotla aynı şeye geliyor ama biz ne yapıyoruz? En küçüğünü alıyoruz. Tanımlarda da öyle.
+
+348
+00:49:54,751 --> 00:49:56,551
+Yoksa aynı şeyi verecek sonuçta.
+
+349
+00:49:58,791 --> 00:50:05,171
+Okay, so for arcsecant and arccosecant you can see these graphs but we don't use so much.
+
+350
+00:50:05,351 --> 00:50:06,851
+You can look at later. Okay.
+
+351
+00:50:08,551 --> 00:50:14,351
+Let me make some examples but before that I want to write some simple examples. Okay.
+
+352
+00:50:15,123 --> 00:50:39,843
+Let me write another part here. If our function is arcsin 4x plus arc tangent 2x. Okay, so let us take derivation of this function.
+
+353
+00:50:40,532 --> 00:50:51,532
+1 saniye, türevlerini, nasıl almış mıyım? Pardon aşağıda mı yazmışım? Buraya türevini almışım mı? Türev formüllerini şuraya hepsini vermiş olmam lazım.
+
+354
+00:50:51,532 --> 00:51:04,332
+Aaa unutmuşum mu? 1 saniye. Notta unutmuşum şimdi fark ettim ben. Ben hepsini verdiğim diye biliyorum ama 1 saniye. Göremedim mi acaba ben?
+
+355
+00:51:05,300 --> 00:51:15,559
+Pardon ya, unutmuşum herhalde. Geçen dönemde hiç öğrenciler söylemedi hocam türevi yoktu diye. Ya da ben mi acaba şey yaptım. Tamam, şuraya yazalım.
+
+356
+00:51:15,559 --> 00:51:18,860
+Okey, let me write.
+
+357
+00:51:23,572 --> 00:51:25,072
+Ben göremiyorum herhalde ya.
+
+358
+00:51:29,512 --> 00:51:30,771
+Sayfalar mı karışık?
+
+359
+00:51:36,115 --> 00:51:45,916
+yok, artlar önemli. Artlar çok önemli de formülleri unutmuşum. Geçen dönem Yüzükul'un da en son gelmiştim. Demediler ki hocam, formül burada diye.
+
+360
+00:51:49,684 --> 00:51:56,684
+oradakiler şeylerdi, hiperbolikler. Yok, oradakiler hiperbolik. Hiperbolikleri tek tek yazdım da.
+
+361
+00:51:56,684 --> 00:52:02,684
+Ya da ki aldım o, önce bu atar şey yapmışım. Saniye hemen bir bakayım.
+
+362
+00:52:02,684 --> 00:52:10,668
+Peki aşağıya, yani şey isken ederken farklı yere yazmışımdır. Yazmamışım. Yok, yazmamışım. Yazacağım.
+
+363
+00:52:14,516 --> 00:52:18,275
+Okay, let's take a break. After the break, let's go to... Okay, I will write on a paper.
+
+364
+00:52:20,596 --> 00:52:21,956
+Break for 10 minutes, okay.
+
+365
+01:04:22,804 --> 01:04:29,284
+Okay, so let's continue to our lesson. I prepared some questions here.
+
+366
+01:04:30,963 --> 01:04:38,244
+Okay, this is the derivation rules for inverse trigonometrik functions. Actually, we use arcsine
+
+367
+01:04:39,524 --> 01:04:48,724
+written, but sometimes they write sin minus 1x. Okay, so sin minus 1u, actually it is arcsine.
+
+368
+01:04:51,315 --> 01:05:08,835
+Okay. So in the, in the table, they write a sin minus one, but this is x sin function. If you want to find derivation of x sin function, you will take derivation inside. This is u prime.
+
+369
+01:05:12,035 --> 01:05:12,495
+And
+
+370
+01:05:12,916 --> 01:05:18,855
+1 over, in the square root function, 1 minus u squared. This is the derivation of arcsine function.
+
+371
+01:05:19,536 --> 01:05:25,675
+And you can see that because of the domain of the square root function, absolute value u has to be less than 1.
+
+372
+01:05:26,416 --> 01:05:31,596
+For arcsine function, it is the same, but the sign only is negative.
+
+373
+01:05:32,735 --> 01:05:39,476
+The arcsine and arccosine function's derivation are the same, but for cosine function, the sign will be negative.
+
+374
+01:05:39,891 --> 01:05:48,231
+For arctenient function, it will be u' derivation inside product 1 over 1 plus u2.
+
+375
+01:05:49,172 --> 01:05:53,771
+For arctenient function, they are the same, only the sign is negative.
+
+376
+01:05:55,411 --> 01:05:59,071
+For arcsign and arcosecund, you don't need to look at so much.
+
+377
+01:05:59,431 --> 01:06:04,431
+First, we mostly use the first four derivation rules, okay?
+
+378
+01:06:05,171 --> 01:06:11,631
+So arcsign and arcsign function will be u prime over 1 minus u square.
+
+379
+01:06:13,011 --> 01:06:15,251
+If the sign is positive, it is arcsign.
+
+380
+01:06:15,251 --> 01:06:17,391
+If the sign is negative, arcsign.
+
+381
+01:06:18,031 --> 01:06:22,691
+For tangent and cotangent, it will be u prime over 1 plus u square.
+
+382
+01:06:23,539 --> 01:06:28,340
+If the sign is positive, it is tanjant. If it is minus, it will be cotjant.
+
+383
+01:06:29,519 --> 01:06:31,460
+Let me look at some examples.
+
+384
+01:06:33,319 --> 01:06:34,039
+Okay.
+
+385
+01:06:35,119 --> 01:06:41,819
+So they said that find the derivations of these functions. So the first one, it is 32, we ask.
+
+386
+01:06:42,840 --> 01:06:46,319
+Y' will be, they are asking,
+
+387
+01:06:51,795 --> 01:07:16,535
+They said that our function is arcsin, square root 2t. Okay. So if I want to take derivation of this function, I have to take derivation inside. Inside function is square root 2t. I have derivation inside over. For arcsin function, it will be square root 1 minus.
+
+388
+01:07:17,364 --> 01:07:23,543
+inside of the function, it is square of 2 product t. I have to take square of this function.
+
+389
+01:07:25,163 --> 01:07:40,003
+So it will be, square of 2 is a constant. I can write directly derivation of t. Here your variable is t, but we mostly use x also, but in here it is t.
+
+390
+01:07:40,643 --> 01:07:42,523
+So derivation of t will be 1.
+
+391
+01:07:44,532 --> 01:07:51,332
+in the squared function, 1 minus squared of squared of 2 is 2, t square.
+
+392
+01:07:53,332 --> 01:07:56,772
+This is our derivation for arcsine function.
+
+393
+01:07:58,692 --> 01:08:05,332
+So in 424, they said that our function is arcsine.
+
+394
+01:08:09,523 --> 01:08:11,063
+1 minus t.
+
+395
+01:08:12,204 --> 01:08:15,143
+So, let us find of y-function.
+
+396
+01:08:15,744 --> 01:08:18,264
+So, I have to take derivation inside.
+
+397
+01:08:18,564 --> 01:08:21,064
+Derivation inside function is 1 minus t.
+
+398
+01:08:21,523 --> 01:08:24,043
+I have to take derivation of this function.
+
+399
+01:08:24,644 --> 01:08:30,003
+And in the square root function, 1 minus u function is inside function.
+
+400
+01:08:30,523 --> 01:08:33,384
+I have to take square of this function.
+
+401
+01:08:34,384 --> 01:08:34,904
+So,
+
+402
+01:08:35,412 --> 01:08:41,612
+Derivation of 1 is 0 because it is a constant. Derivation of minus t is minus 1.
+
+403
+01:08:42,791 --> 01:08:53,172
+And in this squared function, I have 1 minus the squared of this function is 1 minus 2t plus t squared.
+
+404
+01:08:55,311 --> 01:09:00,952
+Okay. So it will be minus 1 here.
+
+405
+01:09:01,811 --> 01:09:05,811
+ve 2t'ı
+
+406
+01:09:07,811 --> 01:09:09,811
+minus t'ağrı.
+
+407
+01:09:09,811 --> 01:09:11,811
+Bu derivisiydi.
+
+408
+01:09:11,811 --> 01:09:13,811
+Ok, do you have any question here?
+
+409
+01:09:15,811 --> 01:09:17,811
+Ok,
+
+410
+01:09:17,811 --> 01:09:21,811
+so let's look at 25 pardon.
+
+411
+01:09:25,811 --> 01:09:27,811
+Ok, let's look at 33.
+
+412
+01:09:30,292 --> 01:09:43,612
+y-function is arctanjant x. Pardon, Elen var şimdi. Bence bu kadar basit bir soru olmuş.
+
+413
+01:09:44,612 --> 01:09:54,772
+Okay, so our question is Elen. Inside of the Elen function, we have arctanjant x.
+
+414
+01:09:56,307 --> 01:10:05,208
+Firstly, what do we know L'nfunction? If I have L'nu, and if I want to take derivation of L'nu, it is derivation inside over u.
+
+415
+01:10:06,228 --> 01:10:11,208
+What is our u function? Here, our u function is arctangent x.
+
+416
+01:10:14,327 --> 01:10:23,788
+So, we can say that y' is, in your denominator, you can write inside function directly. It is arctangent x.
+
+417
+01:10:25,747 --> 01:10:36,187
+And in your numerator, you have to take derivation of arctanjant function, and it was 1 over 1 plus x squared.
+
+418
+01:10:37,907 --> 01:10:38,827
+Okay.
+
+419
+01:10:39,768 --> 01:10:41,947
+Why? Let us take arctanjant.
+
+420
+01:10:42,887 --> 01:10:52,007
+Arctanjant x derivation will be derivation inside derivation of x.
+
+421
+01:10:52,884 --> 01:11:01,644
+1 plus x squared, and derivation of x, I know that it is 1, so it will be 1 over 1 plus x squared, this is our derivation.
+
+422
+01:11:04,943 --> 01:11:06,543
+Do you have any question here?
+
+423
+01:11:10,036 --> 01:11:12,036
+So let us look at 34.
+
+424
+01:11:13,796 --> 01:11:17,395
+R-function is arctanjant.
+
+425
+01:11:19,076 --> 01:11:23,556
+In this equation, inside of arctanjant, I have lnx.
+
+426
+01:11:26,595 --> 01:11:35,876
+So y' will be derivation of arctanjant was arctanjant, if you have arctanjant u.
+
+427
+01:11:36,659 --> 01:11:42,079
+I said that it is derivation inside over 1 plus u square.
+
+428
+01:11:43,500 --> 01:11:46,079
+So inside I have ln function.
+
+429
+01:11:46,399 --> 01:11:49,600
+So here I have to take derivation of ln x.
+
+430
+01:11:50,819 --> 01:11:57,760
+And in our denominator I will write 1 plus ln x square.
+
+431
+01:11:58,899 --> 01:12:14,859
+And lastly, if you look at your numerator, derivation of ln x is 1 over x, 1 plus ln, you can write ln squared x is this form, okay? This is our derivation.
+
+432
+01:12:18,804 --> 01:12:22,644
+Okay. So let us look at 40.
+
+433
+01:12:26,083 --> 01:12:28,644
+Our function is r cotangent.
+
+434
+01:12:33,427 --> 01:12:38,688
+1 over x, minus arktentent x.
+
+435
+01:12:42,100 --> 01:12:48,500
+So, let us take derivation of this function. For arctenegent function, the sign will be negative.
+
+436
+01:12:49,340 --> 01:12:54,479
+I have to take derivation of inside. I have to take derivation of 1 over x.
+
+437
+01:12:54,840 --> 01:12:59,860
+And here, it will be 1 plus u squared. It will be 1 over x squared.
+
+438
+01:13:01,840 --> 01:13:06,640
+Minus arctenegent x. I know that it is 1 over 1 plus x squared.
+
+439
+01:13:09,811 --> 01:13:22,391
+And lastly, what about derivation of 1 over x? This is minus 1 over x squared. Okay? This is our derivation.
+
+440
+01:13:24,711 --> 01:13:26,532
+You are talking about 14?
+
+441
+01:13:31,412 --> 01:13:32,532
+29? 29.
+
+442
+01:13:33,811 --> 01:13:34,532
+Okay.
+
+443
+01:13:35,956 --> 01:13:40,536
+So, R function is arctengent function. So, inside R function is u.
+
+444
+01:13:41,556 --> 01:13:48,095
+So, if I want to take arctengent u, arctengent u's derivation is u prime over 1 plus u square.
+
+445
+01:13:48,095 --> 01:13:54,996
+So, I have to take derivation of ln function here and 1 plus ln x square.
+
+446
+01:13:55,935 --> 01:14:01,996
+So, ln x derivation, derivation inside is 1 over inside function.
+
+447
+01:14:02,547 --> 01:14:23,947
+1 plus, you can write this function as also ln square x. It means that we have 2 ln and we will product these 2 ln functions. So you can write also as 1 plus ln square x. Okay? ln square x means here ln x square. Okay?
+
+448
+01:14:26,047 --> 01:14:29,899
+Okay. And let me look at...
+
+449
+01:14:30,292 --> 01:14:31,292
+ah
+
+450
+01:14:35,507 --> 01:15:00,227
+42, let's, lastly, let's look at 42, okay? Our function is y is nn x² plus 4 and minus x product arcteagent x over 2.
+
+451
+01:15:03,283 --> 01:15:08,783
+Okay, this is our question. Now let us take derivation of this function.
+
+452
+01:15:10,103 --> 01:15:19,043
+So, I have a ln function. What do we remember of ln function? I know that ln u derivation will be u prime over u.
+
+453
+01:15:25,171 --> 01:15:27,131
+u prime over u.
+
+454
+01:15:29,951 --> 01:15:37,011
+So, it will be, you can write your denominator right, it is x kare artı plus 4.
+
+455
+01:15:37,491 --> 01:15:41,091
+In your numerator, you will take derivation of this function, it is 2x.
+
+456
+01:15:42,531 --> 01:15:46,051
+Minus, I have two different functions and there is a product here.
+
+457
+01:15:46,471 --> 01:15:52,131
+So, derivation of x is 1, so it will be arctangent.
+
+458
+01:15:53,043 --> 01:16:02,463
+x over 2 minus the first function product. Now here I have to take derivation of octangent.
+
+459
+01:16:02,463 --> 01:16:12,804
+So here I have to take derivation of inside, derivation of inside, 1 plus x over 2 square.
+
+460
+01:16:15,064 --> 01:16:16,724
+And here,
+
+461
+01:16:17,363 --> 01:16:21,663
+derivation of x over 2 is 1 over 2.
+
+462
+01:16:23,724 --> 01:16:24,283
+Okay?
+
+463
+01:16:27,063 --> 01:16:32,983
+If you have two different functions, if you have a product, and if you want to take derivation of this function,
+
+464
+01:16:33,543 --> 01:16:39,063
+the first function is derivation, the second, plus the first product, the second function is derivation.
+
+465
+01:16:42,420 --> 01:16:58,100
+I use this one. Evet, çarpı muntur, x çarpı artı türev. x product here. Okay. Yes, derivation of the product. Okay, you can check here.
+
+466
+01:17:01,059 --> 01:17:03,059
+Derivation of x is 1 here.
+
+467
+01:17:05,460 --> 01:17:06,659
+The second function.
+
+468
+01:17:07,475 --> 01:17:12,835
+I write minus also here, the first function product, the second function derivation is this.
+
+469
+01:17:14,735 --> 01:17:15,015
+Okay.
+
+470
+01:17:16,175 --> 01:17:17,435
+Now, did you understand?
+
+471
+01:17:19,015 --> 01:17:19,456
+Okay.
+
+472
+01:17:19,855 --> 01:17:23,015
+So, let's ask to get these examples now.
+
+473
+01:17:26,015 --> 01:17:27,675
+Let's go and get it.
+
+474
+01:17:28,243 --> 01:17:50,503
+Okay, so let us look at this example. If I want to take derivation of these functions, y' prime will be, it is arcsin function, I have to take derivation inside over in the square root function, 1 minus u square, u is x cube, I have to take derivation of x cube.
+
+475
+01:17:56,819 --> 01:18:02,739
+And in the squared function, I have minus 1 minus x to the power 6.
+
+476
+01:18:04,119 --> 01:18:04,719
+Okay.
+
+477
+01:18:06,039 --> 01:18:08,079
+Now, what about the other example?
+
+478
+01:18:09,079 --> 01:18:11,420
+I have arctanje on function.
+
+479
+01:18:11,559 --> 01:18:12,819
+This is your u function.
+
+480
+01:18:13,719 --> 01:18:16,659
+So if I want to take derivation of y prime,
+
+481
+01:18:17,171 --> 01:18:31,431
+For arctengin function, I have to take derivation inside. So I have to take derivation of this exponent function. And in your denominator, you will write 1 plus e to the power minus x squared.
+
+482
+01:18:33,411 --> 01:18:38,731
+So it will be, how can you take derivation of the exponent function?
+
+483
+01:18:40,884 --> 01:18:50,103
+It is u' derivation of the power and the same exponent function. So it will be minus e to the power minus x.
+
+484
+01:18:52,023 --> 01:19:03,163
+1 plus, I said that an exponent function, if you have a power of like this, it will be e to the power x product R.
+
+485
+01:19:03,804 --> 01:19:07,463
+So it will be e to the power minus 2.
+
+486
+01:19:08,083 --> 01:19:09,083
+Thanks.
+
+487
+01:19:09,083 --> 01:19:10,083
+Okay.
+
+488
+01:19:10,083 --> 01:19:13,083
+Do you have any questions here?
+
+489
+01:19:13,083 --> 01:19:15,884
+Fadi.
+
+490
+01:19:30,420 --> 01:19:32,819
+karesini niye alıyoruz? u fonksiyonu bu.
+
+491
+01:19:34,199 --> 01:19:34,680
+Şöyle
+
+492
+01:19:34,680 --> 01:19:37,920
+artı tanjant
+
+493
+01:19:37,920 --> 01:19:39,360
+u'nun türevi
+
+494
+01:19:45,043 --> 01:19:46,603
+u burada e üzeri eksi x.
+
+495
+01:19:49,443 --> 01:19:51,804
+e üzeri eksi x'in karesi.
+
+496
+01:19:53,884 --> 01:19:57,443
+O da ne? Aslında e üzeri eksi x çarpı e üzeri eksi x.
+
+497
+01:19:57,984 --> 01:20:00,543
+Bunu da topluyorsunuz. Yani e üzeri eksi 2x ediyor.
+
+498
+01:20:02,543 --> 01:20:03,183
+Bu.
+
+499
+01:20:06,931 --> 01:20:08,731
+fonksiyonumuz e üzeri eksi x.
+
+500
+01:20:11,551 --> 01:20:12,192
+Tamam.
+
+501
+01:20:15,859 --> 01:20:19,459
+Okay, so derivation of these functions will be enough.
+
+502
+01:20:20,420 --> 01:20:25,939
+Now, let's talk about maybe many people didn't see hyperbolic function.
+
+503
+01:20:25,939 --> 01:20:31,779
+Actually, we don't use hyperbolic so much. Okay, what is hyperbolic function?
+
+504
+01:20:31,779 --> 01:20:35,779
+Hyperbolic functions are related to exponent functions, actually.
+
+505
+01:20:36,212 --> 01:20:52,052
+So, if you see sin h, here h means hyperbolic. Sin hyperbolic x is our hyperbolic function. Okay, it is not a variable. Okay, sin hyperbolic x, actually like this.
+
+506
+01:21:01,524 --> 01:21:24,704
+e to the power minus x over 2. This is our sine hyperbolic function. And the graph is the sum of exponent function. This is e to the power x over 2. This is, this function is e to the power minus x over 2. And if I add to these terms, this is your graph of sine hyperbolic x.
+
+507
+01:21:26,644 --> 01:21:27,164
+Okay.
+
+508
+01:21:32,212 --> 01:21:42,472
+So, for cosine hyperbolic function, it is very similar to sine hyperbolic function. It is cosine hyperbolic.
+
+509
+01:21:42,963 --> 01:21:46,283
+h means that hyperbolic, actually it is like this.
+
+510
+01:21:46,844 --> 01:21:49,184
+It will be the same, only the sine is negative.
+
+511
+01:21:49,344 --> 01:21:54,384
+The negative sine is cosine, the positive part is sine function.
+
+512
+01:21:54,943 --> 01:21:59,824
+And you can see the, this is the cosine hyperbolic functions graph.
+
+513
+01:21:59,963 --> 01:22:01,384
+We don't use the graph so much.
+
+514
+01:22:01,824 --> 01:22:05,103
+Only you have to know this formula, these two formulas especially.
+
+515
+01:22:05,684 --> 01:22:32,684
+They are very similar with trigonometrik functions, actually. What is tanjant? Normally, tanjant x is sin over cosin x. For tanjant hyperbolic function, it will be the same. It will be sin hyperbolic x over cosin hyperbolic x. So you don't need to remember the formula. You can see very easily. We can see that sin hyperbolic over cosin hyperbolic, it will be...
+
+516
+01:22:32,720 --> 01:22:34,340
+bir saniye
+
+517
+01:22:34,340 --> 01:22:37,020
+bir yerde yanlış mı var?
+
+518
+01:22:37,280 --> 01:22:38,540
+bir saniye yanlış yapmayayım
+
+519
+01:22:43,123 --> 01:23:07,103
+Ben burayı mı yanlış yazmışım? Bir saniye. Buradan sekant geçmişim. Bir saniye. Evet orayı yanlış yazmışım herhalde. Bir saniye. Yanlış yapmayayım. Sinüsünki artı. Evet orayı geçirken yanlış yapmışım. Sinüsünki artı, kosinüsünki eksi. Sinüs bölü, kosinüs olacağı için artı, eksi olacak. Şurası.
+
+520
+01:23:10,644 --> 01:23:14,484
+şurası artı, şurası x'siz de zaten görebilirsiniz oradan basitin.
+
+521
+01:23:18,484 --> 01:23:26,404
+And for cotenjan, it will be cosine hyperbolic over sine hyperbolic. It will be negative to positive.
+
+522
+01:23:29,043 --> 01:23:34,004
+Okay. And for second and cosecant, they are very similar.
+
+523
+01:23:47,123 --> 01:23:51,123
+bir saniye ya, ben şeyi yanlış yazmışım ya, bir saniye bakayım da.
+
+524
+01:23:55,155 --> 01:24:02,635
+x kare artı 2x, f'
+
+525
+01:24:06,515 --> 01:24:10,695
+hiç öğrenciler itiraz etmeler, yanlış yapmışız acaba.
+
+526
+01:24:13,355 --> 01:24:18,795
+Okay, so sine hyperbolic function, the sine will be negative.
+
+527
+01:24:19,415 --> 01:24:24,075
+Okay, this is it. The wrong one is this. Cosine function, it will be positive.
+
+528
+01:24:24,575 --> 01:24:26,555
+Okay, the other part is true.
+
+529
+01:24:27,675 --> 01:24:27,995
+Yes.
+
+530
+01:24:35,123 --> 01:24:41,703
+Okey, let's look at. Okey, let me show you. Okey? So, for sign function, I will show.
+
+531
+01:24:46,463 --> 01:24:49,783
+Yerine yazdığımızda onu çevirecektir.
+
+532
+01:24:52,824 --> 01:24:55,824
+Şimdi, sign'de olursa e üzeri x, x olur.
+
+533
+01:24:56,724 --> 01:24:59,023
+E üzeri x olur.
+
+534
+01:24:59,224 --> 01:25:00,043
+Bire 2 olur.
+
+535
+01:25:02,100 --> 01:25:17,260
+sin'da x şey, odd, bu odd. Bunda gelecek olursak e üzeri x x artı e üzeri x bölü 2 olacak. Aynısı geldi. Evet, even bu.
+
+536
+01:25:19,260 --> 01:25:20,100
+Okay.
+
+537
+01:25:21,720 --> 01:25:24,260
+Okay, so the sign
+
+538
+01:25:24,735 --> 01:25:33,076
+of sine function is negative, cosine is positive. So you can see the tangent function and cotangent function is this.
+
+539
+01:25:33,556 --> 01:25:43,896
+For second function, it will be 1 over cosine. So it will be 2 over e to the power x plus e to the power minus x and cosine hyperbolic is this.
+
+540
+01:25:44,236 --> 01:25:48,515
+You don't need to remember the graph, okay? Only you have to remember the formula.
+
+541
+01:25:49,300 --> 01:26:15,220
+only actually sine hyperbolic and cosine hyperbolic will be important. Okay. And if you want to talk about ought or even, I write here. If you write minus x here, you can see that if I write minus x here, I will have minus plus, you will find this one, it is minus sine hyperbolic x.
+
+542
+01:26:15,615 --> 01:26:18,295
+So, it is odd function like sine function.
+
+543
+01:26:18,895 --> 01:26:22,755
+And cosine hyperbolic is an even function like cosine function.
+
+544
+01:26:23,235 --> 01:26:27,975
+Yani sinüs ve sinüs hyperbolicler tek, kosinüs ve kosinüs hyperbolicler çift function.
+
+545
+01:26:31,636 --> 01:26:55,896
+Okay, here I write some properties of hyperbolic function. Actually, you can see directly what is cosine hyperbolic squared of cosine hyperbolic. Cosine is e to the power x plus e to the power minus x over 2. Let's take the square of this function. And sine hyperbolic is e to the power x.
+
+546
+01:26:56,287 --> 01:26:58,967
+e to the power minus x over 2.
+
+547
+01:26:59,367 --> 01:26:59,627
+Okay?
+
+548
+01:27:00,887 --> 01:27:02,627
+This square of this function.
+
+549
+01:27:03,287 --> 01:27:17,228
+I will have e to the power 2x over 4 plus birinci ikinci çarpı iki katı aşağıya götürecek bir oldu.
+
+550
+01:27:17,228 --> 01:27:21,927
+And e to the power minus 2x over 4.
+
+551
+01:27:23,220 --> 01:27:26,300
+here it will be e to the power 2x over 4.
+
+552
+01:27:27,819 --> 01:27:30,020
+it will be minus 1.
+
+553
+01:27:32,800 --> 01:27:34,159
+e to the power
+
+554
+01:27:34,159 --> 01:27:37,699
+minus 2x over 4.
+
+555
+01:27:41,220 --> 01:27:43,420
+Birinciyle ikinci çarpılamak.
+
+556
+01:27:43,939 --> 01:27:44,880
+İki katı.
+
+557
+01:27:45,960 --> 01:27:47,579
+Şurası bir ve iki olacak.
+
+558
+01:27:48,380 --> 01:27:49,239
+Karesini aldık ya.
+
+559
+01:27:51,636 --> 01:27:58,836
+bu şekilde bir kut. Arada ancak, it is different from trigonometric function, in trigonometric function,
+
+560
+01:27:58,836 --> 01:28:06,116
+it was positive, but here it will be negative. So if I write negative, only I will have one here.
+
+561
+01:28:07,316 --> 01:28:13,876
+So the first identity, cosine hyperbolic x minus sine hyperbolic x is one,
+
+562
+01:28:14,516 --> 01:28:18,116
+but for the other identities are the same, very similar.
+
+563
+01:28:18,707 --> 01:28:24,707
+sin hyperbolic x, 2x, is 2 sin hyperbolic product cosine hyperbolic.
+
+564
+01:28:25,228 --> 01:28:27,988
+It is the same with trigonometric functions, very similar.
+
+565
+01:28:28,907 --> 01:28:37,488
+For cosine hyperbolic, normally the sine was negative in cosine hyperbolic, cosine function, but in cosine hyperbolic, the sine is positive.
+
+566
+01:28:39,167 --> 01:28:44,047
+And for cosine hyperbolic square x is this one.
+
+567
+01:28:47,315 --> 01:29:10,115
+In the trigonometric function, it was tangent square. x is, sorry, neydi? Sekand square x minus 1'du ama burada, in here, tangent hyperbrik x is 1 minus second hyperbrik x.
+
+568
+01:29:10,115 --> 01:29:11,935
+But we don't use this one so much.
+
+569
+01:29:12,307 --> 01:29:16,307
+You have to know what is sine, cosine, tangent, cotangent actually.
+
+570
+01:29:16,307 --> 01:29:16,947
+Okay.
+
+571
+01:29:20,087 --> 01:29:31,207
+What about derivations? Don't look at the integral. I gave all of them but we will see in the integral part. You don't need to look at now.
+
+572
+01:29:31,568 --> 01:29:38,268
+Okay. Hepsini aynı yerde verdim ama konu olarak ileride göreceğiz. Size daha rahat olsun diye öyle ayrı ayrı vermedim.
+
+573
+01:29:39,731 --> 01:29:43,851
+Okay, what about derivation of sine function? Look at this.
+
+574
+01:29:46,372 --> 01:29:46,792
+Okay.
+
+575
+01:29:48,811 --> 01:29:51,212
+Let us take derivation of sine function.
+
+576
+01:29:51,992 --> 01:29:52,752
+What is this?
+
+577
+01:29:54,271 --> 01:30:01,591
+Derivation of sine function is e to the power x minus e to the power minus x over 2.
+
+578
+01:30:01,591 --> 01:30:02,572
+And it is?
+
+579
+01:30:03,028 --> 01:30:15,648
+cosin hyperbolic x. So derivation of sine function is cosin hyperbolic x, but if you have a general function u, it will be u' product cosin hyperbolic u.
+
+580
+01:30:16,428 --> 01:30:24,788
+What about cosine function? Cosin hyperbolic was e to the power x, e to the power minus x over 2.
+
+581
+01:30:28,756 --> 01:30:41,136
+Okay. Let me show here. This is your side function. Okay. If you want to take derivation of this function, derivation of this x'addin'i function is the same.
+
+582
+01:30:41,811 --> 01:30:49,672
+plus derivation of this function, derivation of the power, it is minus 1, product the same function over 2.
+
+583
+01:30:49,672 --> 01:30:57,471
+And I know that this is also cosin hyperbolic x. So derivation of sin hyperbolic x is cosin hyperbolic.
+
+584
+01:30:57,811 --> 01:31:05,592
+But if you want to write a general formula, if you write u, it will be u, but x-ray you have to write derivation inside.
+
+585
+01:31:06,431 --> 01:31:06,692
+Okay.
+
+586
+01:31:08,595 --> 01:31:13,735
+So, for cosine function, this is your cosine function. What is derivation of cosine function?
+
+587
+01:31:14,675 --> 01:31:24,336
+e to the power x minus e to the power minus x over 2. And you can see that it is sine hyperbolic x here.
+
+588
+01:31:25,215 --> 01:31:33,315
+But if you want to write a general formula, if you want to write u, it will be u, but also you have to add derivation inside.
+
+589
+01:31:35,412 --> 01:31:42,771
+For tangent function, you can use the same formula, but it will be the same with the trigonometric function.
+
+590
+01:31:42,891 --> 01:31:45,771
+What is that? Derivation of tangent function is second square.
+
+591
+01:31:46,552 --> 01:31:51,752
+Here, it will be second hyperbaric square u, and you have also derivation inside.
+
+592
+01:31:52,612 --> 01:31:56,372
+For cotangent function, they are the same, the sine is negative.
+
+593
+01:31:56,372 --> 01:31:59,592
+For second and cosine function is the same.
+
+594
+01:32:01,492 --> 01:32:06,492
+koseks, tanjant, kotanjant, sekantınki,
+
+595
+01:32:14,771 --> 01:32:24,771
+I write in generally, for example, if you inside of the function, if you have 2x, this is your u function. So here I write a general formalization, [öğrenci].
+
+596
+01:32:27,171 --> 01:32:37,011
+U'ya dönüştürmenize gerek yok. Yani orası içindeki x'den başka bir şey ise genellikle böyle daha genel bir formül yazdım. Sınav tarihli değilim belli değil ya.
+
+597
+01:32:41,108 --> 01:32:52,628
+about what do we need? I don't understand. We don't need anything. Okay, let me write an example. For example.
+
+598
+01:32:56,212 --> 01:33:01,592
+Your function is sin 2x, okay?
+
+599
+01:33:08,819 --> 01:33:15,000
+Let me write first. If you want to take derivation of this function, you have to take derivation inside.
+
+600
+01:33:15,219 --> 01:33:18,939
+This is your u function. You have to take derivation of this function.
+
+601
+01:33:19,159 --> 01:33:23,719
+And derivation of sine function is cosine hyperbolic 2x.
+
+602
+01:33:25,319 --> 01:33:25,800
+Okay?
+
+603
+01:33:28,851 --> 01:33:45,531
+Yani sorunu tam olarak anlayamadım ama yani u dediğimiz şey burada tabii önemli ama u dönüşümünü yapmana gerek yok. Direkt türevini alıp yerine yazabiliyorsun. Hani burada uyu ifade ettiğim şey u dediğimiz şu. x'e bağlı bir fonksiyon. Yok, hayır, gerek yok. Direkt yazıyoruz.
+
+604
+01:33:55,572 --> 01:33:59,192
+Okay, let me first write some easy examples. Okay.
+
+605
+01:34:00,692 --> 01:34:10,412
+For example, if y is cosine y pi bollik ln x, for example,
+
+606
+01:34:12,012 --> 01:34:21,532
+which is our derivation of this function, derivation inside product derivation of cosine function is sine function,
+
+607
+01:34:21,532 --> 01:34:22,092
+sine.
+
+608
+01:34:23,060 --> 01:34:25,960
+hyperbolic ln x.
+
+609
+01:34:27,340 --> 01:34:31,020
+And derivation of ln function is 1 over x.
+
+610
+01:34:35,091 --> 01:34:45,171
+For example, let us write another example. y is tangent x squared, for example.
+
+611
+01:34:46,532 --> 01:34:54,131
+And if I want to take derivation of this function, derivation inside, what is derivation of normally
+
+612
+01:34:55,011 --> 01:35:00,851
+sorry hyperbolic, normally derivation of tangent function is second square.
+
+613
+01:35:01,363 --> 01:35:03,983
+For hyperbolic function, it is the same.
+
+614
+01:35:04,583 --> 01:35:17,503
+Right here, if you have tanjant hyperbolic u, derivation of this function will be u prime second hyperbolic square u.
+
+615
+01:35:19,783 --> 01:35:21,903
+No, the sign is not changing.
+
+616
+01:35:22,547 --> 01:35:30,047
+The sign is changing in trigonometrik function. In hyperbolic, the sign is not changing. Okay?
+
+617
+01:35:32,187 --> 01:35:43,947
+So, I will take derivation of x squared and derivation of tangent function will be second hyperbolic square x squared.
+
+618
+01:35:44,547 --> 01:35:47,327
+And derivation of x squared is 2x.
+
+619
+01:35:52,404 --> 01:35:56,004
+Okay. Let me write another example.
+
+620
+01:36:00,244 --> 01:36:14,244
+If y is cotangent e to the power x, for example, let us take derivation of this function, derivation inside.
+
+621
+01:36:15,539 --> 01:36:26,300
+product. Derivation of cotension function is cosecant, hi pi redic square, e to the power x.
+
+622
+01:36:26,840 --> 01:36:34,399
+And this is, derivation of this function is the same. Okay? Until here, do you have any questions?
+
+623
+01:36:37,659 --> 01:36:40,059
+Okay, so let's look at these examples.
+
+624
+01:36:41,539 --> 01:36:42,960
+Integrerleri bakmayın lütfen.
+
+625
+01:36:43,859 --> 01:36:52,019
+Okay, so let us look at these examples. Take the derivation of tangent hyperbolic in the square root function 1 plus x square.
+
+626
+01:36:52,019 --> 01:36:53,059
+So,
+
+627
+01:36:54,931 --> 01:37:01,952
+In the formula, you can see that I have to take derivation inside, derivation of 1 plus x squared product,
+
+628
+01:37:02,471 --> 01:37:15,731
+second, hyperbolic squared, 1 plus x squared. So how can I take derivation inside? You can take this function as 1 plus x squared to the power 1 over 2. Okay?
+
+629
+01:37:18,192 --> 01:37:21,231
+And if you want to take derivation of this function,
+
+630
+01:37:22,068 --> 01:37:31,548
+You will take the power s here, 1 over 2. You have to subtract 1 from the power. It will be minus 1 over 2.
+
+631
+01:37:32,368 --> 01:37:40,148
+And you have to take derivation inside. It is 2x. So I can cancel 2 here. It will be x.
+
+632
+01:37:40,543 --> 01:37:47,783
+Minus 1 over 2 means square root function, but in your denominator it is in the square root 1 plus x squared.
+
+633
+01:37:48,143 --> 01:37:49,243
+This is our derivation.
+
+634
+01:37:58,996 --> 01:38:06,195
+Let's look at the second one. Take the derivation of sine function. Here 1 over 2 is a constant. We can write directly.
+
+635
+01:38:06,836 --> 01:38:17,476
+Only I have to take derivation inside. Derivation inside is 2. And derivation of sine hyperbolic function is cosine hyperbolic 2x plus 1.
+
+636
+01:38:22,100 --> 01:38:32,200
+And let's look at the third one. We have a ln function. And if I want to take ln function, 2x.
+
+637
+01:38:36,692 --> 01:38:42,051
+There is no 2x. I want, I have to write the inside of the function directly.
+
+638
+01:38:45,091 --> 01:38:48,292
+Here too. In the first one,
+
+639
+01:38:50,532 --> 01:38:53,492
+you have to take derivation inside. If you have a power,
+
+640
+01:38:56,051 --> 01:39:02,692
+n, u, n-1, and u prime. And here is 1 over 2.
+
+641
+01:39:05,524 --> 01:39:14,164
+here and this part is u and minus 1. This is u prime. Okay.
+
+642
+01:39:16,724 --> 01:39:26,984
+u is your 1 plus x squared. u is this. Okay. u is this and is this.
+
+643
+01:39:29,300 --> 01:39:35,140
+Now let's just look at the last example, okay? I have a ln function and I can write directly
+
+644
+01:39:35,140 --> 01:39:51,780
+cosine hyperbolic x will be here because of the cosine hyperbolic ln function. And in here I have to take derivation of the cosine hyperbolic function. It is sine hyperbolic x. It is tangent hyperbolic x. Okay?
+
+645
+01:39:56,627 --> 01:40:04,947
+Okay, so don't look at the integral. Okay, we will see in one month later, I think.
+
+646
+01:40:05,547 --> 01:40:09,047
+Ben bunu üç hafta sonra falan göreceğiz. Ben bunları ikisini de yazdım buraya.
+
+647
+01:40:10,567 --> 01:40:16,507
+And at home you can look at inverse hyperbaric function. I don't talk so much about this one. Okay.
+
+648
+01:40:18,003 --> 01:40:21,224
+There are some integral parts. You don't need to look at the integral.
+
+649
+01:40:22,224 --> 01:40:30,304
+Okay, I want to take a break. After that, let's talk about in the time mind form. We can use in the livings directly. Okay.
+
+650
+01:40:32,203 --> 01:40:34,264
+Enough for the lesson.
+
+651
+01:40:36,403 --> 01:40:42,123
+Devam edeceğim daha. Şunu da bitirelim. Çünkü yarın uygulama yapacağım için bunları bitirmem lazım.
+
+652
+01:40:42,123 --> 01:40:43,483
+Okay.
+
+653
+01:40:44,659 --> 01:40:58,839
+Let's take a break for 10 minutes. Bugün erken bitirmeyeceğim zaten. Yani şey, şunu da bir verelim. Basit zaten fazla bir şey yok burada. Ama bu çok önemli. Özellikle bu kısım bizim için önemli.
+
+654
+01:41:00,339 --> 01:41:02,279
+Okay, let's take a break for 10 minutes.
+
+655
+01:51:16,180 --> 01:51:24,560
+Okay, so let's continue again. [öğrenci], yes, we will solve the test tomorrow. Yes, I will solve the test questions tomorrow. Okay.
+
+656
+01:51:27,699 --> 01:51:33,720
+Okay, now, lastly, I want to talk about indetermined forms, maybe some people see in the high school.
+
+657
+01:51:34,819 --> 01:51:38,359
+What is indetermined forms? It is related to limit, actually.
+
+658
+01:51:39,028 --> 01:52:02,507
+If in, when you write the point in the limit, when you write the point in the function, when in the limit form, if you have 0 over 0, okay, if you have 0 over 0, infinity over infinity, infinity minus infinity, zero product infinity.
+
+659
+01:52:04,467 --> 01:52:11,787
+0 over to the power 0, infinity to the power 0, and 1 to the power infinity.
+
+660
+01:52:12,307 --> 01:52:14,547
+They are called indetermined forms.
+
+661
+01:52:14,787 --> 01:52:16,587
+In Turkish, belirsiz şekiller demek.
+
+662
+01:52:17,487 --> 01:52:18,087
+Okay.
+
+663
+01:52:19,667 --> 01:52:24,907
+If you have these forms in the limit, they are called indetermined forms.
+
+664
+01:52:25,367 --> 01:52:28,367
+And indetermined forms, we can use L'Hospital rule.
+
+665
+01:52:28,487 --> 01:52:30,027
+It will be very useful for us.
+
+666
+01:52:30,739 --> 01:52:47,319
+Okay, let's see the first in the time mind form is 0 over 0. Let us suppose that at a point our function are 0. And here g'x is, at this point, is non-0.
+
+667
+01:52:48,699 --> 01:52:56,879
+For example, let's look at these limits, fx over gx. And when you write the point in the function, you will have 0 over 0.
+
+668
+01:52:57,363 --> 01:52:59,823
+It means that you can use L'Hospital rule.
+
+669
+01:52:59,943 --> 01:53:04,763
+Actually, we write above the equation, we write L. L means L'Hospital.
+
+670
+01:53:05,343 --> 01:53:09,263
+What is L'Hospital rule? You will take derivation of the function separately.
+
+671
+01:53:09,823 --> 01:53:15,843
+You will take derivation of f is f'x, derivation of g is g'x.
+
+672
+01:53:16,723 --> 01:53:19,203
+So, after that, what do you need?
+
+673
+01:53:19,583 --> 01:53:22,203
+If you still have 0 over 0,
+
+674
+01:53:22,899 --> 01:53:25,159
+You have to continue to take derivation.
+
+675
+01:53:25,639 --> 01:53:38,139
+But if one of these one is not equal to zero, if it is another thing, it can be any number or infinity, then you will finish at that point.
+
+676
+01:53:38,859 --> 01:53:39,459
+Okay.
+
+677
+01:53:39,956 --> 01:53:46,596
+When you take the L'Hospital rule in some questions, the indeterminant form can continue also.
+
+678
+01:53:46,916 --> 01:53:51,636
+If one of them is not equal to zero, it can be infinity, for example.
+
+679
+01:53:51,775 --> 01:53:53,636
+It can be a point, a number.
+
+680
+01:53:54,476 --> 01:53:59,855
+If one of them is different from zero, then you will finish at that point.
+
+681
+01:54:00,159 --> 01:54:08,320
+It is called Ropita'i rule. So actually this Ropita'i rule can be applied also for the infinity over infinity.
+
+682
+01:54:08,980 --> 01:54:18,720
+Okay, if you have infinity over infinity, when you take, when you have infinity over infinity form, you will make the same thing. Okay.
+
+683
+01:54:20,420 --> 01:54:26,820
+Let me show some examples. Let's start with an easy example. For example,
+
+684
+01:54:30,707 --> 01:54:46,807
+Limit x goes to 0 from the right side, sin x over x squared. I want to find this limit. When I write 0, sin 0 is 0. This is 0. If it is 0 over 0, it is indetermined form, so I can use the L'Hospital rule here.
+
+685
+01:54:47,927 --> 01:54:57,587
+What is L'Hospital rule? The L'Hospital rule says that take derivation of sine function, it is cosine x, take derivation of x squared, it is 2x.
+
+686
+01:54:58,068 --> 01:55:01,928
+Now, I will write this point again and I will see what happens.
+
+687
+01:55:02,468 --> 01:55:11,668
+Cosine 0 is 1, 2x is 0, so it will be infinity, but it is from the right side, okay?
+
+688
+01:55:12,168 --> 01:55:14,668
+So, it will be 1 over 0 is infinity.
+
+689
+01:55:15,268 --> 01:55:19,008
+If they ask the same question for 0 from the left side,
+
+690
+01:55:21,008 --> 01:55:24,888
+evet, tekrar üstün türevi ayrı, aşağın türevi ayrı, onunla ilgili çözeceğim.
+
+691
+01:55:25,684 --> 01:55:42,804
+For example, let us look at the same question, but it comes from the left side. I have cosine x over 2x here. This is 1. This is 0, but it is from the left side means that the sine is minus infinity. Okay?
+
+692
+01:55:45,623 --> 01:55:50,484
+And if we look at the left side and right side, we can say that no limit.
+
+693
+01:55:53,524 --> 01:55:55,404
+h0.
+
+694
+01:55:56,243 --> 01:55:58,404
+The function doesn't have limit as 0.
+
+695
+01:56:02,899 --> 01:56:21,559
+Yes, yes, yes. For example, let me write the well known question. Limit x goes to 0. I gave you sin x over x. Actually, the result comes from L'Opital rule. This is 0 over 0.
+
+696
+01:56:23,239 --> 01:56:29,359
+So I can use the L'Opital rule here. Limit x goes to 0.
+
+697
+01:56:29,904 --> 01:56:37,484
+derivation of sine function is cosine x. Derivation of x is 1. So it will be cosine 0 will be 1.
+
+698
+01:56:39,364 --> 01:56:40,824
+Yes, yes, yes.
+
+699
+01:56:46,899 --> 01:56:54,099
+nothing. Only I talk about this one. I write here, we have these indetermined forms. Okay?
+
+700
+01:56:55,099 --> 01:57:02,379
+If you have these forms, it is called indetermined forms. Now I'm talking about 0 over 0 and also infinity over infinity.
+
+701
+01:57:02,963 --> 01:57:09,644
+If you have one of them, you will take derivation separately, derivation of fx, derivation of gx.
+
+702
+01:57:10,083 --> 01:57:13,664
+If one of them is not equal to zero, you will finish.
+
+703
+01:57:13,784 --> 01:57:19,704
+But if you have still zero over zero, you will continue to take derivation.
+
+704
+01:57:19,704 --> 01:57:20,064
+Okay.
+
+705
+01:57:21,083 --> 01:57:23,844
+For example, let's look at the third example.
+
+706
+01:57:24,724 --> 01:57:29,123
+When I write pi over two, second pi over two is infinity.
+
+707
+01:57:30,100 --> 01:57:38,760
+1 plus tanjant x pi over 2 is infinity. You have infinity over infinity. You will take the same thing. L'Hospital rule.
+
+708
+01:57:39,300 --> 01:57:48,480
+I will take derivation of second function is second product, tanjant x. Derivation of tanjant function is second square x.
+
+709
+01:57:49,203 --> 01:58:13,043
+Yes, yes. For 0 over 0 and infinity over infinity, we will make the same thing. But for the other indetermined form, it is different. So I can cancel second x here. So let's write our terms here. What is, we have tangent x over second x.
+
+710
+01:58:13,423 --> 01:58:21,144
+You can rewrite your function again. What is tangent x? It is sin x over cosine x.
+
+711
+01:58:23,564 --> 01:58:31,104
+Second is 1 over cosine x. Actually, this function is only sine x. You don't need to use L'Hospital again.
+
+712
+01:58:31,604 --> 01:58:34,123
+And sin pi over t is 1. You can find direct.
+
+713
+01:58:36,604 --> 01:58:37,163
+Okay?
+
+714
+01:58:41,524 --> 01:59:00,704
+Okay, so let me look at this example. Bu biraz çıkmamış üzerine yazayım. Biraz gölgede kalmış. They are asking limit x goes to infinity. They are asking an x over 2 square root x. Okay.
+
+715
+01:59:01,300 --> 01:59:08,680
+When I write infinity, ln infinity is infinity over infinity. So I have to use the L'Hospital rule here.
+
+716
+01:59:09,340 --> 01:59:17,320
+So I will take derivation of ln function separately. Derivation of ln function is 1 over x.
+
+717
+01:59:18,800 --> 01:59:23,920
+Derivation of square root function, I have to take derivation of this square root function.
+
+718
+01:59:25,076 --> 01:59:30,376
+So, you can think this function is 2 product x to the power 1 over 2. Okay.
+
+719
+01:59:31,615 --> 01:59:40,416
+So, let us take derivation 2 I have here. I will write the power here. I will subtract 1 from the power is here.
+
+720
+01:59:40,975 --> 01:59:49,256
+So, it will be 1 over square root x. 1 over square root x.
+
+721
+01:59:50,963 --> 02:00:02,743
+So, I have only limit x goes to infinity, I have only 1 over squared x, and it is 0.
+
+722
+02:00:08,787 --> 02:00:24,627
+Okay? For example, what about this? It is not difficult. It is actually easy. x goes to infinity. They ask that exponent function over x. Okay? I have infinity over infinity.
+
+723
+02:00:27,427 --> 02:00:35,347
+Now I can use the L'Opissar rule here. So I will say derivation separately. x goes to infinity.
+
+724
+02:00:35,956 --> 02:00:43,015
+derivation of the exponent function is the same. Derivation of 2x² is 2x.
+
+725
+02:00:43,655 --> 02:00:49,536
+And when you write infinity, you can see that we have still infinity over infinity.
+
+726
+02:00:50,295 --> 02:00:58,855
+It means that I have to continue to take the derivation separately. Limit x goes to infinity.
+
+727
+02:01:00,083 --> 02:01:13,884
+derivation of the exponent function is the same. derivation of 2x is 2. now you can see that it is infinity over 2. it is infinity. okay?
+
+728
+02:01:17,332 --> 02:01:28,492
+Do we have any questions here? If you have 0 over 0 or infinity over infinity, you will take derivations separately, numerator and denominator.
+
+729
+02:01:29,352 --> 02:01:37,632
+Okay, now let us see what happens if infinity over infinity or infinity product 0 or infinity minus infinity.
+
+730
+02:01:39,012 --> 02:01:43,652
+We will use the same thing, but we have to make some changings about the limit.
+
+731
+02:01:44,467 --> 02:01:51,228
+I will try to rewrite the limits of the forms as 0 over 0 or infinity over infinity.
+
+732
+02:01:51,728 --> 02:01:54,088
+For example, let us look at here.
+
+733
+02:01:55,488 --> 02:01:59,068
+When I write, we have x product sin 1 over x.
+
+734
+02:01:59,068 --> 02:01:59,548
+Okay.
+
+735
+02:02:00,427 --> 02:02:05,387
+So, if I write infinity, I will have infinity.
+
+736
+02:02:05,967 --> 02:02:08,248
+Sin 1 over 0 is 0.
+
+737
+02:02:08,768 --> 02:02:09,828
+Sin 0 is 0.
+
+738
+02:02:10,188 --> 02:02:11,068
+So, I have...
+
+739
+02:02:11,283 --> 02:02:22,183
+infinity product 0. Now, in the next step, I will try to rewrite the function as infinity over infinity or 0 over 0. Okay?
+
+740
+02:02:22,183 --> 02:02:24,583
+If
+
+741
+02:02:24,912 --> 02:02:50,572
+Which is one of, which is the simple function, sin or polynomial? Here, the polynomial function is more easy. So I will write this function is in your denominator. So I can write x is 1 over x in our denominator. So the limit will be 0 over 0. Now I can use the L'Hospital rule here.
+
+742
+02:02:51,636 --> 02:02:57,516
+I will take derivation of sine of 1 over x. I will take derivation of 1 over x.
+
+743
+02:02:59,056 --> 02:03:00,216
+And, sorry.
+
+744
+02:03:05,395 --> 02:03:24,315
+So, I have to take derivation of 1 over x squared, and derivation of sine function is cosine 1 over x over, I have to take derivation of 1 over x, you can easily see that you can cancel these two terms, I have only cosine 1 over x.
+
+745
+02:03:26,256 --> 02:03:32,695
+Okay, so limit x goes to infinity, so I will have cosine 0 is 1.
+
+746
+02:03:33,811 --> 02:03:34,311
+yer.
+
+747
+02:03:40,627 --> 02:03:48,867
+Here, for example, in the second example, 0 goes to the right side because of the squared function, L'nfunction, sorry.
+
+748
+02:03:50,228 --> 02:03:52,487
+I can't write x goes to 0.
+
+749
+02:03:55,923 --> 02:04:07,703
+hepsinde. Yani bu belirsizlik formlarından biri varsa evet onu yapmak zorundasınız. 0 bölü 0'a ya da sonsuz bölü sonsuza dönüştürmek zorundasınız. L'Hospital sadece onlar da işliyor.
+
+750
+02:04:08,983 --> 02:04:19,643
+For example, in this example, I have 0 product, kosan ln 0 from the right side is minus infinity, here the sign is not important.
+
+751
+02:04:22,579 --> 02:04:49,220
+Okay, okay, let me write here. Okay, let me write here. The question was, limit x goes to infinity, x product sine 1 over x. The question was this. Okay, so when you write infinity, you will have infinity product zero.
+
+752
+02:04:49,939 --> 02:04:55,739
+If I want to use the PTA rule, I have to rewrite the function as 0 over 0 or infinity over infinity.
+
+753
+02:04:56,019 --> 02:05:00,039
+So I have to write one of the function in your denominator.
+
+754
+02:05:01,239 --> 02:05:07,559
+I can write x or sin 1 over x in your denominator, which is simpler than each other.
+
+755
+02:05:08,159 --> 02:05:13,059
+Exponet, the polynomial is easy. So I will write in your denominator.
+
+756
+02:05:13,551 --> 02:05:38,511
+So, I will rewrite our limit as x goes to infinity, sin 1 over x. I can write x is 1 over x in your denominator. In that case, I have 0 over 0. Now I can use the L'Hospital rule here. If I use the L'Hospital rule, x goes to infinity, derivation of 1 over x is minus 1 over x squared.
+
+757
+02:05:40,756 --> 02:05:47,815
+And here, I have to take derivation of sine function. Derivation inside is minus 1 over x squared.
+
+758
+02:05:48,576 --> 02:05:56,536
+And derivation of sine function is cosine 1 over x. They are the same. I can cancel.
+
+759
+02:05:56,536 --> 02:06:06,195
+I have only cosine 1 over infinity. It is cosine 0. And it is 1. Okay?
+
+760
+02:06:13,460 --> 02:06:22,979
+Okay. Now let us look at here. Let me write here square root x and x. Limit, I have square root x.
+
+761
+02:06:30,612 --> 02:06:34,612
+Bu bir şey?
+
+762
+02:06:38,484 --> 02:06:48,564
+Okay, so if you have a sign like this, sin u, derivation of sin u is u prime cosine u.
+
+763
+02:06:49,384 --> 02:06:49,984
+Okay.
+
+764
+02:06:53,971 --> 02:06:59,971
+Okay, let me write. What is 1 over 1 over x? It is x.
+
+765
+02:07:06,195 --> 02:07:25,215
+I write x in your denominator 1 over x. Okay. So let us look at this example. It is 0 product ln 0 from the right side is minus infinity. Here the minus is not important. Okay. So I have to rewrite this limit as 0 over 0 or infinity over infinity.
+
+766
+02:07:25,652 --> 02:07:42,152
+If you have ln function, don't write in your denominator. ln function is complex function according to polynomial or square root function. ln x will be here. I will write square root x as 1 over square root x. Okay?
+
+767
+02:07:44,891 --> 02:07:51,251
+If I write 1 over square root x, now I will have infinity over infinity.
+
+768
+02:07:53,076 --> 02:08:15,336
+Here I have minus, but it is not important. Now I can take the L'Hospital rule here. Limit x goes to 0 from the right side. Derivation of ln x is 1 over x. Derivation of 1 over square root x is, actually it is x to the power minus 1 over 2. Okay.
+
+769
+02:08:17,043 --> 02:08:24,183
+If I take derivation, I will have minus 1 over 2, x to the power minus 3 over 2.
+
+770
+02:08:24,183 --> 02:08:32,583
+Or I can see that minus 1 over 2 x, sorry, süreklilik.
+
+771
+02:08:36,532 --> 02:08:40,431
+1 over 2, 1 over x, square root x.
+
+772
+02:08:41,311 --> 02:08:45,011
+So, I will write minus 1 over 2.
+
+773
+02:08:45,711 --> 02:08:49,931
+I can write 1 over x, product 1 over square root x.
+
+774
+02:08:50,751 --> 02:08:51,431
+Okay.
+
+775
+02:08:51,992 --> 02:08:57,192
+And you can see that I can cancel these two terms here and here.
+
+776
+02:08:57,652 --> 02:09:02,331
+So, I will have limit x goes to 0.
+
+777
+02:09:03,155 --> 02:09:11,275
+From the right side, I have only minus 2 square root x, and it is 0.
+
+778
+02:09:17,203 --> 02:09:22,484
+Do you have any questions about here? Did you understand why? How can we find here?
+
+779
+02:09:23,203 --> 02:09:29,684
+It is in your denominator. In your denominator only you have minus 1 over square root x, 2 square root x.
+
+780
+02:09:31,123 --> 02:09:34,003
+Okay, but it is in your denominator. It will be this one.
+
+781
+02:09:36,804 --> 02:09:37,203
+And
+
+782
+02:09:44,020 --> 02:09:54,520
+çeşimdi, ok, I will talk in the time mind of powers next week. Let us look at this example. Limit x goes to 0, let me write here.
+
+783
+02:09:57,700 --> 02:10:08,560
+Limit x goes to 0, 1 over sin x, minus 1 over x.
+
+784
+02:10:09,300 --> 02:10:16,960
+It is 1 over 0 minus 1 over 0. Actually, it is infinity minus infinity.
+
+785
+02:10:17,960 --> 02:10:23,000
+So I have to rewrite the function as 0 over 0 or infinity over infinity.
+
+786
+02:10:23,200 --> 02:10:27,160
+In this question, I can write in the same denominator.
+
+787
+02:10:27,160 --> 02:10:34,900
+So it will be x minus sine x over x product sine x.
+
+788
+02:10:37,108 --> 02:11:04,235
+Ve bu yi y
+
+789
+02:11:07,091 --> 02:11:15,731
+Okay, so let us write zero in the function. I will have, cosine zero is one, I have zero over zero.
+
+790
+02:11:16,692 --> 02:11:34,192
+It means that I have to continue to take limits, L'Hospital rule here, x goes to zero. Now let us take derivation of sine function, cosine function is minus sine, but here also I have minus, it will be sine x.
+
+791
+02:11:36,659 --> 02:11:54,799
+Derivation of sine function is cosine x. And I have two different function and there is a product here. Derivation of x is 1. So I have cosine x plus x product. Derivation of cosine function is minus sine x.
+
+792
+02:11:59,956 --> 02:12:07,195
+Now, do you have 0 over 0? Let us look at. It is 0. But what about this one? 0, 0, 2.
+
+793
+02:12:11,667 --> 02:12:35,947
+İkinci kısım bakalım. x'in türevi bir sinüs x artı x kosinüs x tamam. Kosinüsün x'i sinüs x, sinüs x ne oldu? Sinüs x kosinüs. Neresi yanlış? Yanlış göremedim ama. Ha anlamadım. Ok. So let us look at again.
+
+794
+02:12:36,884 --> 02:12:57,904
+Firstly, I have infinity minus infinity. To find 0 over 0 or infinity over infinity, I rewrite these two terms in one denominator. I have x minus sin x over x sin x. It is 0 over 0. I can use the Bittire rule. Derivation of this function, derivation of x is 1.
+
+795
+02:12:58,271 --> 02:13:04,311
+Derivation of sine function is cosine x. I have two different functions. There is a product here.
+
+796
+02:13:04,811 --> 02:13:13,811
+So, derivation of x is one product sine x plus the first function product, the second function's derivation, x cosine x.
+
+797
+02:13:14,192 --> 02:13:22,112
+Here, I have 0 over 0. So, I have to continue to take L'Hospital rule. So, I have to take derivation of this function.
+
+798
+02:13:22,996 --> 02:13:28,996
+Derivation of cosine function is minus sine x. It will be sine x.
+
+799
+02:13:29,576 --> 02:13:32,496
+Here, derivation of sine function is cosine x.
+
+800
+02:13:33,011 --> 02:13:45,791
+There is a product here. Derivation of x is 1, product the second function, plus the first function, product the second function's derivation is minus sin x.
+
+801
+02:13:46,191 --> 02:13:57,011
+Now, when I write 0, 0, 0, cosine 0 is 1, this part will be 2, this part will be 0, the result will be 0 here. Okay?
+
+802
+02:14:00,724 --> 02:14:25,324
+Okay, that's enough for today. Okay. Tomorrow I will solve the test questions and we can also discuss. And next week I will continue to talk about L'Hospital rule. We will see the L'Hospital rule in power. Okay. And after that we will see local maximum minimum, sketching the graph, concavity and blah, blah, blah. Okay.
+
+803
+02:14:40,148 --> 02:15:04,668
+Valla sınavla ilgili hiçbir şey yok. Yani ne zaman olacak? Sadece dün bize şeyi yolladılar. Daha doğrusu size yollamışlar. Sınavla ilgili bir doküman, nasıl gideceğinizle ilgili bize bile yollamadılar. Ama sınavla ilgili daha tarihler belli. Ama şöyle, matematik genellikle 7'nin sonu oluyor. 7'nin sonu, diferansiyel 8'in sonu oluyor ama şu anda öyle bir şey yok.
+
+804
+02:15:05,300 --> 02:15:25,620
+Valla kitap öneyebileceğim açıkçası bir kitap yok. Hani biz kitaptan takip etmiyoruz. Ama şunu yapabilirsin. Thomas Kalkulus'un içindeki örneklere bakabilirsin. Ben de oradan örnekleri alıyorum. Bir de verdiğim uygulamaları falan bakabilirsin. Thomas Kalkulus'u indirin mutlaka. Onun içinde de böyle sorular var. Ona bakabilirsiniz İngilizce olarak. Türkçe çok bilmiyorum. Tamam?
+
+805
+02:15:27,760 --> 02:15:31,280
+Okey. So see you tomorrow. Okey? Bye bye.
+
+806
+02:15:32,148 --> 02:15:33,228
+Yüzü, bye-bye.
