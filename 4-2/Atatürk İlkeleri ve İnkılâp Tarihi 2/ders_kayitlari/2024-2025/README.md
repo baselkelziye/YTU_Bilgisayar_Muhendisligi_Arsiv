@@ -4,6 +4,7 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
+| 8 | BAHAR | Gülsema Lüyer | [sube_8/](sube_8/) |
 | 10 | BAHAR | Neslihan Erkan | [sube_10/](sube_10/) |
 | 14 | BAHAR | Neslihan Erkan | [sube_14/](sube_14/) |
 | 15 | BAHAR | Gülsema Lüyer | [sube_15/](sube_15/) |
