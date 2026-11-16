@@ -5,4 +5,4 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Bahar | Serkan Ayvaz | [sube_1/](sube_1/) |
-| 1 | Güz | Bulunamadı | [sube_1_guz/](sube_1_guz/) |
+| 1 | Güz | Ayşe Betül Oktay | [sube_1_guz/](sube_1_guz/) |
