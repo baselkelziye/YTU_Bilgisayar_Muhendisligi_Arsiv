@@ -1,0 +1,3423 @@
+1
+00:06:00,947 --> 00:06:02,487
+Good morning folks, how are you?
+
+2
+00:06:16,115 --> 00:06:23,836
+We left a very few topics of last week, orthogonal matrices and complex matrices.
+
+3
+00:06:24,156 --> 00:06:30,955
+First, let's finish our last week's topics and then we'll go over the topics of this week.
+
+4
+00:06:31,735 --> 00:06:40,795
+The topic of this week is the eşelon form of a matrix, a very, very important topic in this course, in the context of this course.
+
+5
+00:06:40,795 --> 00:06:43,575
+Let's first finish the topics of last week.
+
+6
+00:06:51,156 --> 00:07:05,915
+Okay. An orthogonal matrix is a square matrix with the property that A transpose is equal to A inverse.
+
+7
+00:07:05,915 --> 00:07:15,936
+This means that A transpose times A is equal to identity matrix of order M.
+
+8
+00:07:15,936 --> 00:07:26,855
+Let's assume A is an n square matrix. In this case, A transpose times A is equal to identity matrix of order M.
+
+9
+00:07:26,855 --> 00:07:37,716
+This is also equal to A times A transpose because A is an invertible matrix.
+
+10
+00:07:37,716 --> 00:07:44,716
+So A transpose and inverse OA is A transpose. So this operation is commutative.
+
+11
+00:07:44,716 --> 00:07:54,716
+Okay. Let's give an example for the orthogonal matrix, a very special example.
+
+12
+00:07:54,716 --> 00:08:04,716
+In the two-dimensional case, we call this matrix as the rotation matrix.
+
+13
+00:08:04,716 --> 00:08:23,875
+Okay. At first, obtain A transpose. A transpose. Cosine theta, sine theta, minus sine theta and cosine theta again.
+
+14
+00:08:23,875 --> 00:08:33,875
+This is A transpose. A A transpose. That compute A A transpose. We will multiply matrix A with A transpose.
+
+15
+00:08:33,875 --> 00:08:47,875
+Or you can obtain A transpose A. This will be A A transpose for the first entry. That's right here. C 1 1.
+
+16
+00:08:47,875 --> 00:09:02,875
+For the C 1 1. Take first row of A and third column of A transpose. Cosine theta times cosine theta. Cosine square theta.
+
+17
+00:09:02,875 --> 00:09:11,875
+Plus sine theta times sine theta. Sine square theta. Okay.
+
+18
+00:09:11,875 --> 00:09:13,875
+For the second row. That's right here. C 2 1.
+
+19
+00:09:13,875 --> 00:09:24,875
+Okay. For C 1 2. Just multiply first row of A with the second column of A transpose. Cosine theta times minus sine theta.
+
+20
+00:09:24,875 --> 00:09:34,875
+Cosine theta times sine theta. Minus cosine theta times sine theta. Plus cosine theta times sine theta.
+
+21
+00:09:34,875 --> 00:09:47,875
+Cosine theta times theta. This is actually zero. Okay. For the second row. That's right here. C 2 1. And here. C 2 2. Because A is a 2 by 2 matrix.
+
+22
+00:09:47,875 --> 00:09:55,875
+And A transpose also is a 2 by 2 matrix. Resulting matrix will be a 2 by 2 matrix again.
+
+23
+00:09:55,875 --> 00:10:05,875
+With the same number of A. With the same number of rows. A. With the same number of rows. A. And the same number of columns. A transpose.
+
+24
+00:10:05,875 --> 00:10:20,875
+Minus sine theta times cosine theta. Minus cosine theta times sine theta. Plus cosine theta times sine theta. Plus cosine theta times sine theta.
+
+25
+00:10:20,875 --> 00:10:37,875
+Cosine theta. Cosine theta. Cosine theta is cosine theta. Okay.
+
+26
+00:10:37,875 --> 00:10:39,875
+Cosine theta. By the.
+
+27
+00:10:39,875 --> 00:10:44,875
+Cosine theta. Plus cosine theta. Plus cosine theta. Plus cosine theta. Plus cosine theta.
+
+28
+00:10:44,875 --> 00:10:49,875
+Cosine theta. Is one.
+
+29
+00:10:51,572 --> 00:10:56,532
+Here we have minus cosine theta sine theta plus cosine theta sine theta.
+
+30
+00:10:56,692 --> 00:10:57,871
+This is actually zero.
+
+31
+00:10:58,471 --> 00:11:01,851
+Here again we have zero and here we have one.
+
+32
+00:11:02,731 --> 00:11:11,672
+Result of this matrix, result of this multiplication, matrix multiplication is identity matrix of order two.
+
+33
+00:11:13,471 --> 00:11:14,892
+That's right here, I sub two.
+
+34
+00:11:14,892 --> 00:11:24,532
+Okay, this proves that A, the rotation matrix, is an orthogonal matrix.
+
+35
+00:11:26,692 --> 00:11:34,211
+You can check orthogonality by multiplying rows of a matrix with itself.
+
+36
+00:11:35,892 --> 00:11:41,312
+Let's write here, Ri, as an I throw O.
+
+37
+00:11:41,312 --> 00:11:45,672
+I throw O, A.
+
+38
+00:11:47,392 --> 00:12:00,132
+Then, Ri times Ri must be one and Ri times Rj must be zero.
+
+39
+00:12:00,432 --> 00:12:02,371
+Here, I is different from J.
+
+40
+00:12:03,272 --> 00:12:05,111
+Let's check this.
+
+41
+00:12:05,111 --> 00:12:13,432
+The multiplication of first row itself is just one cosine squared times sine squared.
+
+42
+00:12:13,812 --> 00:12:17,152
+Excuse me, cosine squared plus sine squared is one.
+
+43
+00:12:17,751 --> 00:12:24,192
+And cosine minus cosine sine plus sine cosine is zero.
+
+44
+00:12:24,192 --> 00:12:29,792
+Okay, this is another way to check whether a given matrix is orthogonal or not.
+
+45
+00:12:35,923 --> 00:12:45,563
+Now we will talk about complex matrices, especially Hermitian and Norman matrices.
+
+46
+00:12:45,563 --> 00:12:51,703
+First we will give some basic information related to complex numbers.
+
+47
+00:12:51,703 --> 00:13:09,504
+The set of complex numbers is denoted by C and is the set of elements x plus iy such that x and y are real numbers.
+
+48
+00:13:09,504 --> 00:13:20,504
+Okay, addition is in this set, addition operation in this set is the operation from C cross C to C.
+
+49
+00:13:20,504 --> 00:13:32,504
+We take two complex numbers. Let's write here a plus ib, x plus iy.
+
+50
+00:13:32,504 --> 00:13:43,504
+Additional operation maps this couple of elements in complex number to a new complex number.
+
+51
+00:13:43,504 --> 00:13:50,504
+A plus x plus i times b plus y.
+
+52
+00:13:50,504 --> 00:13:59,504
+This part, the first part is called real part and the second part is called imaginary part.
+
+53
+00:13:59,504 --> 00:14:12,504
+Imaginary part. In addition operation we add real parts and imaginary parts separately.
+
+54
+00:14:12,504 --> 00:14:25,504
+Okay, and the multiplication of these set of numbers is again an operation, binary operation from C cross C to C.
+
+55
+00:14:25,504 --> 00:14:38,504
+And we take a tuple of complex numbers. Let's write again a plus ib, x plus iy.
+
+56
+00:14:38,504 --> 00:14:51,524
+We match these couple of elements to ax minus by plus x plus
+
+57
+00:14:55,572 --> 00:15:02,831
+Bx plus Ay i.
+
+58
+00:15:03,831 --> 00:15:15,192
+Okay, let me write i in front of the constant i, right here, Bx.
+
+59
+00:15:15,192 --> 00:15:19,251
+This is the multiplication of complex numbers.
+
+60
+00:15:19,672 --> 00:15:28,932
+Okay, together with these two operations, we say complex numbers, the set C with plus and dot, a field.
+
+61
+00:15:31,812 --> 00:15:33,451
+Complex field, okay.
+
+62
+00:15:34,792 --> 00:15:42,052
+And we have another operation related to complex numbers, conjugation.
+
+63
+00:15:45,875 --> 00:15:46,836
+Conjugation.
+
+64
+00:15:47,275 --> 00:15:49,975
+Or the conjugate of complex numbers.
+
+65
+00:15:50,135 --> 00:15:52,716
+Let we have complex number.
+
+66
+00:15:52,915 --> 00:15:54,995
+X plus pi y in C.
+
+67
+00:15:56,175 --> 00:15:56,576
+Then.
+
+68
+00:15:57,836 --> 00:15:58,155
+The.
+
+69
+00:15:59,735 --> 00:16:01,316
+Conjugate of this element.
+
+70
+00:16:01,316 --> 00:16:03,076
+Is right here z.
+
+71
+00:16:03,336 --> 00:16:05,895
+In general we write complex numbers.
+
+72
+00:16:06,096 --> 00:16:06,615
+By z.
+
+73
+00:16:07,555 --> 00:16:08,535
+Z is equal.
+
+74
+00:16:08,716 --> 00:16:10,076
+X plus pi y.
+
+75
+00:16:10,895 --> 00:16:13,576
+The conjugate of this element.
+
+76
+00:16:13,775 --> 00:16:14,716
+Is denoted by.
+
+77
+00:16:14,716 --> 00:16:15,995
+Z bar.
+
+78
+00:16:16,635 --> 00:16:18,175
+And is just.
+
+79
+00:16:18,615 --> 00:16:21,055
+X minus i y.
+
+80
+00:16:21,196 --> 00:16:21,675
+We take.
+
+81
+00:16:22,755 --> 00:16:24,456
+Opposite sine of.
+
+82
+00:16:24,975 --> 00:16:25,836
+Imaginary part.
+
+83
+00:16:25,836 --> 00:16:26,096
+Okay.
+
+84
+00:16:26,615 --> 00:16:27,175
+This is.
+
+85
+00:16:28,855 --> 00:16:30,875
+Conjugate of complex numbers.
+
+86
+00:16:31,836 --> 00:16:32,755
+By the definition.
+
+87
+00:16:33,475 --> 00:16:34,935
+The conjugate of.
+
+88
+00:16:36,216 --> 00:16:36,995
+Conjugate.
+
+89
+00:16:37,475 --> 00:16:37,995
+Is itself.
+
+90
+00:16:38,336 --> 00:16:39,275
+Like transposition.
+
+91
+00:16:40,275 --> 00:16:41,935
+Because you need to take the.
+
+92
+00:16:42,696 --> 00:16:43,336
+Negative.
+
+93
+00:16:43,336 --> 00:16:45,555
+Opposite sine of.
+
+94
+00:16:45,735 --> 00:16:46,696
+Imaginary part.
+
+95
+00:16:47,355 --> 00:16:49,196
+If you take this operation.
+
+96
+00:16:49,375 --> 00:16:49,995
+Two times.
+
+97
+00:16:53,076 --> 00:16:55,076
+Successively.
+
+98
+00:16:55,456 --> 00:16:56,195
+You will get.
+
+99
+00:16:56,556 --> 00:16:56,775
+The.
+
+100
+00:16:57,456 --> 00:16:57,816
+First.
+
+101
+00:16:58,395 --> 00:16:58,795
+Element.
+
+102
+00:16:59,675 --> 00:17:00,456
+The conjugate.
+
+103
+00:17:00,675 --> 00:17:01,275
+Or conjugate.
+
+104
+00:17:01,275 --> 00:17:02,015
+Is itself.
+
+105
+00:17:02,456 --> 00:17:03,355
+Like transposition.
+
+106
+00:17:03,355 --> 00:17:03,755
+Okay.
+
+107
+00:17:05,536 --> 00:17:06,155
+Now we can.
+
+108
+00:17:06,475 --> 00:17:06,935
+Give.
+
+109
+00:17:07,556 --> 00:17:08,675
+Complex matrices.
+
+110
+00:17:08,875 --> 00:17:09,036
+And.
+
+111
+00:17:09,836 --> 00:17:10,235
+Some.
+
+112
+00:17:10,715 --> 00:17:11,195
+Special.
+
+113
+00:17:11,316 --> 00:17:11,695
+Complex.
+
+114
+00:17:11,935 --> 00:17:12,576
+Matrixes.
+
+115
+00:17:15,635 --> 00:17:17,115
+That we have a matrix.
+
+116
+00:17:17,256 --> 00:17:17,536
+A.
+
+117
+00:17:17,996 --> 00:17:18,816
+With the.
+
+118
+00:17:20,316 --> 00:17:21,435
+Complex entries.
+
+119
+00:17:21,435 --> 00:17:23,155
+The.
+
+120
+00:17:24,155 --> 00:17:24,596
+Complex.
+
+121
+00:17:25,155 --> 00:17:25,655
+Conjugate.
+
+122
+00:17:25,715 --> 00:17:26,496
+Of this matrix.
+
+123
+00:17:26,635 --> 00:17:27,115
+Is denoted.
+
+124
+00:17:27,296 --> 00:17:27,475
+By.
+
+125
+00:17:27,635 --> 00:17:28,355
+A bar.
+
+126
+00:17:28,755 --> 00:17:28,996
+And.
+
+127
+00:17:29,516 --> 00:17:30,475
+It is a matrix.
+
+128
+00:17:30,596 --> 00:17:31,375
+Obtained from.
+
+129
+00:17:31,496 --> 00:17:32,336
+A by taking.
+
+130
+00:17:32,715 --> 00:17:33,016
+The.
+
+131
+00:17:33,715 --> 00:17:34,235
+Conjugate.
+
+132
+00:17:34,296 --> 00:17:35,276
+Of all elements.
+
+133
+00:17:35,415 --> 00:17:35,735
+Of A.
+
+134
+00:17:35,996 --> 00:17:36,435
+That's right.
+
+135
+00:17:36,516 --> 00:17:36,655
+Here.
+
+136
+00:17:36,776 --> 00:17:37,016
+A.
+
+137
+00:17:37,576 --> 00:17:38,455
+Small example.
+
+138
+00:17:38,816 --> 00:17:38,996
+That.
+
+139
+00:17:39,115 --> 00:17:39,255
+A.
+
+140
+00:17:39,336 --> 00:17:39,455
+B.
+
+141
+00:17:39,455 --> 00:17:39,735
+A.
+
+142
+00:17:39,735 --> 00:17:41,816
+2 by 2.
+
+143
+00:17:41,895 --> 00:17:42,336
+Matrix.
+
+144
+00:17:42,455 --> 00:17:42,735
+I.
+
+145
+00:17:43,375 --> 00:17:43,996
+1 minus.
+
+146
+00:17:44,096 --> 00:17:44,375
+I.
+
+147
+00:17:45,336 --> 00:17:45,915
+1 plus.
+
+148
+00:17:46,016 --> 00:17:46,296
+I.
+
+149
+00:17:46,556 --> 00:17:47,135
+And 2.
+
+150
+00:17:48,195 --> 00:17:49,076
+In this case.
+
+151
+00:17:49,536 --> 00:17:50,076
+A bar.
+
+152
+00:17:50,875 --> 00:17:52,155
+Is a new matrix.
+
+153
+00:17:52,435 --> 00:17:53,175
+Obtained from.
+
+154
+00:17:53,255 --> 00:17:53,496
+A.
+
+155
+00:17:53,755 --> 00:17:54,496
+By taking.
+
+156
+00:17:54,735 --> 00:17:55,296
+Conjugate.
+
+157
+00:17:55,355 --> 00:17:55,615
+Of.
+
+158
+00:17:56,175 --> 00:17:57,096
+All the elements.
+
+159
+00:17:57,096 --> 00:17:57,596
+Of A.
+
+160
+00:17:57,975 --> 00:17:58,675
+Minus A.
+
+161
+00:17:59,036 --> 00:18:00,115
+Because the conjugate.
+
+162
+00:18:00,336 --> 00:18:00,836
+Of I.
+
+163
+00:18:00,975 --> 00:18:01,816
+Is minus I.
+
+164
+00:18:03,056 --> 00:18:03,415
+Uh.
+
+165
+00:18:03,596 --> 00:18:04,296
+Conjugate.
+
+166
+00:18:04,435 --> 00:18:04,715
+Of.
+
+167
+00:18:04,915 --> 00:18:05,556
+One plus.
+
+168
+00:18:05,915 --> 00:18:06,695
+Excuse me.
+
+169
+00:18:06,755 --> 00:18:07,475
+One minus I.
+
+170
+00:18:07,556 --> 00:18:08,455
+Is one plus I.
+
+171
+00:18:08,455 --> 00:18:10,375
+If we have.
+
+172
+00:18:10,675 --> 00:18:11,596
+One minus I.
+
+173
+00:18:12,056 --> 00:18:12,855
+And the conjugate.
+
+174
+00:18:13,056 --> 00:18:13,816
+Of real numbers.
+
+175
+00:18:13,976 --> 00:18:14,496
+Is itself.
+
+176
+00:18:18,003 --> 00:18:21,103
+Conjugation doesn't affect real numbers. Okay.
+
+177
+00:18:22,103 --> 00:18:26,583
+Adjust state, opposite sign of i, imaginary identity.
+
+178
+00:18:31,188 --> 00:18:41,128
+Here, i², let me write, i², i² is minus 1.
+
+179
+00:18:41,128 --> 00:18:41,608
+Okay.
+
+180
+00:18:47,988 --> 00:18:48,807
+Any question?
+
+181
+00:18:58,228 --> 00:19:10,228
+In general, we can write conjugation of a matrix, a complex matrix, by let in general, A be any matrix with the entries A sub ij.
+
+182
+00:19:10,788 --> 00:19:21,248
+A bar is a matrix with entries B sub ij. B sub ij is equal to the conjugator corresponding element, entry of.
+
+183
+00:19:25,940 --> 00:19:31,860
+Now, we will define the conjugate transpose of a matrix A.
+
+184
+00:19:31,860 --> 00:19:37,500
+Let A be a complex matrix, a matrix with complex entries.
+
+185
+00:19:38,519 --> 00:19:45,299
+And the conjugate transpose of A is denoted by A to the power H.
+
+186
+00:19:45,299 --> 00:19:58,900
+And we take the conjugate of each element and then take transposition of this matrix.
+
+187
+00:19:59,180 --> 00:20:06,700
+This operation is committative because you can change the order of transposition and conjugation.
+
+188
+00:20:06,700 --> 00:20:16,779
+Okay, first take transposition, then take conjugation or take conjugation at first, then take transposition.
+
+189
+00:20:17,180 --> 00:20:21,000
+This is a symmetric or committative operation.
+
+190
+00:20:21,279 --> 00:20:24,420
+Conjugation and transposition commit with each other.
+
+191
+00:20:25,900 --> 00:20:31,519
+The conjugate transpose of a matrix A is denoted by A to the power H.
+
+192
+00:20:31,740 --> 00:20:33,220
+Here we have an example.
+
+193
+00:20:33,220 --> 00:20:40,279
+The conjugate transpose of a, that's right here, A, A to the power H.
+
+194
+00:20:42,980 --> 00:20:44,480
+A to the power H.
+
+195
+00:20:44,980 --> 00:20:49,320
+Here we take the conjugate of a, then we will transpose this matrix.
+
+196
+00:20:49,320 --> 00:20:52,600
+This is equal to A bar transpose.
+
+197
+00:20:53,200 --> 00:20:56,360
+Or this is equal to A transpose bar.
+
+198
+00:20:56,360 --> 00:21:05,000
+So we have minus I, one plus I, one minus I and two.
+
+199
+00:21:06,200 --> 00:21:12,059
+This is A to the power capital or small case H.
+
+200
+00:21:12,840 --> 00:21:14,580
+You can write also in this form.
+
+201
+00:21:15,420 --> 00:21:16,320
+A to the power H.
+
+202
+00:21:16,380 --> 00:21:18,500
+This is not H, just a symbol.
+
+203
+00:21:18,720 --> 00:21:21,240
+This is not power, just a symbol.
+
+204
+00:21:21,440 --> 00:21:21,559
+Okay.
+
+205
+00:21:21,980 --> 00:21:22,660
+Like transpose.
+
+206
+00:21:22,660 --> 00:21:22,920
+Transpose.
+
+207
+00:21:35,443 --> 00:21:48,283
+In the real case, if A is a real matrix, then A to the power H is just equal to A transpose, because conjugation is meaningless in real numbers.
+
+208
+00:21:48,283 --> 00:21:57,283
+The conjugate of a real number is itself, so A to the power H is equal to...
+
+209
+00:22:07,635 --> 00:22:11,395
+Evet, ve görevli, hiçbir şey yok.
+
+210
+00:22:11,395 --> 00:22:14,195
+Let me check your...
+
+211
+00:22:14,195 --> 00:22:15,195
+OK.
+
+212
+00:22:15,195 --> 00:22:17,195
+[öğrenci]?
+
+213
+00:22:29,172 --> 00:22:44,132
+We replace i by minus i, [öğrenci]. Our matrix A, we take conjugate of each element, minus i, one plus i, one minus i, two is a real number, there is no imaginary part.
+
+214
+00:22:44,132 --> 00:22:57,291
+Okay. A to the power h. Yes, you are right. This must be one plus i. Thank you.
+
+215
+00:23:01,332 --> 00:23:06,932
+I have a mistake here. We just fixed it. Thank you. Thank you, [öğrenci].
+
+216
+00:23:07,572 --> 00:23:15,892
+First take, we take the conjugation of elements, then we take the transpose.
+
+217
+00:23:17,652 --> 00:23:25,492
+I forget, take the conjugation of these two elements. Thank you. We fix our error.
+
+218
+00:23:36,051 --> 00:23:42,211
+In the real case, A to the power H is equal to A transpose.
+
+219
+00:23:43,011 --> 00:23:47,731
+The conjugate transpose of a real matrix is equal to A transpose.
+
+220
+00:23:49,811 --> 00:23:56,932
+And in some books, you can see conjugate transpose as A to the power star.
+
+221
+00:23:58,211 --> 00:24:03,011
+Instead of H, capital H, or small case H, you can see S star.
+
+222
+00:24:03,011 --> 00:24:09,731
+Okay, this is another notation for conjugate transpose of a complex matrix.
+
+223
+00:24:10,531 --> 00:24:13,971
+Here we have another matrix at 2 by 3 matrix.
+
+224
+00:24:15,971 --> 00:24:21,891
+First, you can take transpose in order to get conjugate transpose of this matrix,
+
+225
+00:24:21,891 --> 00:24:28,531
+then the conjugation, or first take a conjugation and followed by transposition.
+
+226
+00:24:28,531 --> 00:24:33,651
+A to the power H is a 3 by 2 matrix.
+
+227
+00:24:35,491 --> 00:24:38,932
+Okay, with the given entries.
+
+228
+00:24:39,971 --> 00:24:44,051
+We take conjugate of each element in A.
+
+229
+00:24:44,051 --> 00:24:50,051
+Okay, with the given entries.
+
+230
+00:24:48,980 --> 00:24:58,160
+Now we are ready to give the definition of Hermitian matrix. This is an analog definition of orthogonal matrices.
+
+231
+00:24:59,279 --> 00:25:04,539
+The projection of orthogonal matrices in a complex number or vice versa.
+
+232
+00:25:05,259 --> 00:25:12,740
+The orthogonal matrices are Hermitian matrices in complex numbers.
+
+233
+00:25:12,740 --> 00:25:23,759
+If you map the element entries of complex numbers to the real numbers, then you will get orthogonal matrices.
+
+234
+00:25:24,360 --> 00:25:31,440
+This is a parallel definition of orthogonal matrices in complex field.
+
+235
+00:25:31,440 --> 00:25:38,440
+If a to the power h is equal to a, this means that...
+
+236
+00:25:59,251 --> 00:26:04,831
+In the real case, we can say that A transpose is equal to A, in the real case.
+
+237
+00:26:06,991 --> 00:26:16,351
+This means that also A, H, but we need not to have inverse OA.
+
+238
+00:26:16,871 --> 00:26:19,132
+No, I cannot write by the inverse OA.
+
+239
+00:26:19,132 --> 00:26:29,111
+So, okay, if A to the power H is equal to A, in this case we say matrix A as a Hermitian matrix.
+
+240
+00:26:29,251 --> 00:26:32,551
+This is A matrix with complex entries.
+
+241
+00:26:32,811 --> 00:26:36,271
+Okay, let A be a complex matrix, complex square matrix.
+
+242
+00:26:36,652 --> 00:26:43,071
+If A to the power H is equal to A, in this case we say A as a Hermitian matrix.
+
+243
+00:26:43,071 --> 00:26:44,311
+Okay.
+
+244
+00:26:52,884 --> 00:26:58,544
+Sorry, this is an analog definition of symmetric matrix in real case.
+
+245
+00:26:59,024 --> 00:27:02,544
+Sorry, not orthogonal, just symmetric.
+
+246
+00:27:03,183 --> 00:27:09,804
+If A transpose is equal to A, in this case we say this matrix as a symmetric matrix.
+
+247
+00:27:10,503 --> 00:27:16,723
+So in the complex case, if A to the power H, the conjugate transpose of a matrix is equal to itself,
+
+248
+00:27:16,723 --> 00:27:22,903
+we call this situation as Hermitian symmetry.
+
+249
+00:27:24,683 --> 00:27:28,624
+So if A to the power H is equal to A,
+
+250
+00:27:30,503 --> 00:27:39,064
+A sub J I conjugate must be equal to A sub I J.
+
+251
+00:27:39,064 --> 00:27:49,764
+Okay, because let's write A as A sub I J and M by N square matrix.
+
+252
+00:27:50,584 --> 00:27:59,003
+If A to the power H is equal to A, take transposition and then take conjugate.
+
+253
+00:27:59,003 --> 00:28:09,663
+So A sub I I conjugate must be A sub I I.
+
+254
+00:28:12,144 --> 00:28:18,024
+This forces us the elements on the diagonal, main diagonal must be real.
+
+255
+00:28:18,324 --> 00:28:26,824
+Because this is possible only when elements on the main diagonal are real numbers.
+
+256
+00:28:34,324 --> 00:28:50,224
+The other symmetric elements, look at here please, A sub ji transpose is equal to A sub ij. The symmetric elements are conjugated to each others.
+
+257
+00:28:51,663 --> 00:28:57,784
+You can write here also A sub ji equal to Aij transpose.
+
+258
+00:29:06,483 --> 00:29:16,124
+A complex matrix, a square complex matrix, is called Schiv Hermitian, if a to the power h is equal to minus a.
+
+259
+00:29:17,083 --> 00:29:23,263
+This is an analog definition of Schiv symmetric matrices in the real case.
+
+260
+00:29:27,988 --> 00:29:46,708
+And in the skew symmetric case, Aii, Aii conjugate must be equal to A sub ii. This means that Aii must be zero.
+
+261
+00:29:46,708 --> 00:29:59,188
+Similar to real case. In a real case, the elements on the main diagonal of S-Skill symmetric matrix, all zero.
+
+262
+00:29:59,188 --> 00:30:04,628
+Okay. This is also waiting for the skew hermitian matrices.
+
+263
+00:30:08,723 --> 00:30:19,203
+Sorry, I need to hear minus a because a to the power h is equal to minus a.
+
+264
+00:30:21,203 --> 00:30:29,124
+aji conjugate is equal to minus aij.
+
+265
+00:30:47,059 --> 00:31:00,839
+A complex matrix is called a unitary matrix if, this is the orthogonal, the analog of orthogonality in real case, unitary matrix.
+
+266
+00:31:00,839 --> 00:31:11,019
+A square complex matrix is called a unitary matrix if A to the power H times A is equal to identity matrix with the same order.
+
+267
+00:31:11,019 --> 00:31:18,019
+Okay, this means that if A, the conjugate transpose of A is equal to inverse of A.
+
+268
+00:31:18,019 --> 00:31:33,019
+You can multiply both sides by A inverse because A is unitary, however, inverse has an inverse so you can multiply at the right by A inverse.
+
+269
+00:31:33,019 --> 00:31:38,019
+In this case, A to the power H is equal to A inverse.
+
+270
+00:31:38,019 --> 00:31:44,019
+This is another way to give the definition of a unitary matrix.
+
+271
+00:31:44,019 --> 00:31:52,019
+Here we have some examples related to Hermitian, skew Hermitian and unitary matrices.
+
+272
+00:31:52,019 --> 00:32:07,019
+Our first example, a 3 by 3 square matrix, elements on the main diagonal, all real numbers.
+
+273
+00:32:07,019 --> 00:32:23,019
+And all the other elements conjugate of each other because A ij must be equal to, in the Hermitian case, Aji conjugate.
+
+274
+00:32:23,019 --> 00:32:28,019
+The conjugate of 1 minus 2i is equal to 1 plus 2i.
+
+275
+00:32:28,019 --> 00:32:31,019
+Here we have 4 plus 7i.
+
+276
+00:32:31,019 --> 00:32:35,019
+The conjugate of this element is 4 minus 7i.
+
+277
+00:32:35,019 --> 00:32:39,019
+And the conjugate of minus 2i is just 2i.
+
+278
+00:32:39,019 --> 00:32:42,019
+Okay, this is a Hermitian matrix.
+
+279
+00:32:42,019 --> 00:32:43,019
+Permitian matrix.
+
+280
+00:32:43,019 --> 00:33:10,019
+Thank you.
+
+281
+00:32:46,420 --> 00:32:48,420
+Hermitian matrisi.
+
+282
+00:32:50,420 --> 00:32:52,420
+Matrisi B also is a Hermitian matrisi.
+
+283
+00:32:58,324 --> 00:33:08,443
+Çünkü elementler, main diagonal, all real, and the other element, conjugated all each other.
+
+284
+00:33:19,604 --> 00:33:42,564
+B, B also is a unitary matrix. B is normatian and also is a unitary matrix. If you multiply B conjugate transpose of B with itself, then you will get identity matrix. In order to do this, we need to sound work, some computations.
+
+285
+00:33:42,564 --> 00:34:03,463
+You can check B to the power H times B is identity matrix of order 3. So B is a unitary matrix. The second one for an information matrix is also a unitary matrix, has an inverse, a complex inverse.
+
+286
+00:34:03,463 --> 00:34:10,364
+The inverse of this matrix is just conjugate transpose of this matrix.
+
+287
+00:34:10,364 --> 00:34:16,463
+Okay, any questions related to complex matrices?
+
+288
+00:34:21,427 --> 00:34:36,027
+Let me replace my presentation. We will start with a very, very important topic of this course, Echelon Formal and Matrix. The topic of third week.
+
+289
+00:34:42,739 --> 00:34:57,379
+We will use this method to solve a linear system of equation, to find an inverse of a square matrix, to find eigenvalues, eigenvektörs of a square matrix,
+
+290
+00:34:58,579 --> 00:35:11,059
+or to compute determinant of a square matrix. So this is a much more important topic in the context of this course, a eşelon form of a matrix.
+
+291
+00:35:17,396 --> 00:35:26,976
+In order to put a matrix, a given matrix with any order to echelon form, we need to some basic operations.
+
+292
+00:35:26,976 --> 00:35:31,896
+We call this operation as elementary row or column operations.
+
+293
+00:35:32,236 --> 00:35:36,956
+These operations can be applied to rows of a matrix or columns of a matrix.
+
+294
+00:35:37,076 --> 00:35:41,076
+In some cases, we can mix this row and column operations.
+
+295
+00:35:41,576 --> 00:35:47,276
+But in some cases, we can just apply this operation to rows of the given matrix.
+
+296
+00:35:47,396 --> 00:36:04,676
+For example, when we try to solve a linear system of equations or we try to find the inverse of a square matrix, we need to just apply this operation to the row of given matrix.
+
+297
+00:36:04,676 --> 00:36:14,796
+But when we try to find the determinant of a square matrix, we can mix both these operations in both rows and columns.
+
+298
+00:36:14,796 --> 00:36:15,096
+Okay.
+
+299
+00:36:16,656 --> 00:36:24,036
+And first we will introduce elementary echelon.
+
+300
+00:36:24,115 --> 00:36:26,796
+First we will introduce echelon form of a...
+
+301
+00:36:26,796 --> 00:36:32,256
+We will give the definition of echelon form of a matrix, any matrix.
+
+302
+00:36:32,256 --> 00:36:42,016
+Then we will introduce some operations in order to put any given matrix into reduced row echelon form.
+
+303
+00:36:42,115 --> 00:36:48,096
+And then we will use this concept to find inverse of a square matrix.
+
+304
+00:36:48,096 --> 00:36:48,556
+Okay.
+
+305
+00:36:49,556 --> 00:36:54,916
+This will be the first method to compute inverse of a square matrix, if exist.
+
+306
+00:36:54,916 --> 00:37:18,276
+Okay.
+
+307
+00:36:59,315 --> 00:37:06,315
+Önceyeyim, bu konuda
+
+308
+00:37:06,315 --> 00:37:08,315
+Rho Echelon Form'ı
+
+309
+00:37:08,315 --> 00:37:11,315
+Önceyeyim,
+
+310
+00:37:11,315 --> 00:37:14,315
+Rho Echelon Form'ı
+
+311
+00:37:14,315 --> 00:37:16,315
+Önceyeyim,
+
+312
+00:37:16,315 --> 00:37:21,315
+Rho Echelon Form'ı
+
+313
+00:37:21,315 --> 00:37:24,315
+Önceyeyim,
+
+314
+00:37:24,315 --> 00:37:27,315
+Rho Echelon Form'ı
+
+315
+00:37:27,315 --> 00:38:23,315
+Önceyeyim,
+
+316
+00:38:15,284 --> 00:38:23,923
+Formal matrix, like a staircase. Here we will have some 1's and all the other elements.
+
+317
+00:38:27,315 --> 00:38:29,535
+All the other elements, zero. Okay.
+
+318
+00:38:31,975 --> 00:38:33,735
+Or, or in this form.
+
+319
+00:38:36,576 --> 00:38:38,655
+If we have some non-zero elements.
+
+320
+00:38:50,867 --> 00:38:52,067
+We have a matrix.
+
+321
+00:38:56,019 --> 00:39:01,519
+ve birçok operasyonu, bu matrisi ve yeni form.
+
+322
+00:39:12,436 --> 00:39:21,716
+İlk olarak, if you have all zero rows in the matrix, we need to put this row at the bottom of the matrix.
+
+323
+00:39:21,716 --> 00:39:27,236
+If you have all zero rows, convey this row at the bottom of the matrix.
+
+324
+00:39:27,416 --> 00:39:32,675
+Okay, all zero rows, if there are any, appear at the bottom of the matrix.
+
+325
+00:39:33,135 --> 00:39:38,135
+This is our first property of reduced row echelon.
+
+326
+00:39:38,416 --> 00:39:41,776
+Okay, please listen carefully.
+
+327
+00:39:42,436 --> 00:39:59,956
+The second property, the first non-zero entry from left to right is a, the first non-zero entry from left to right or a row is just one.
+
+328
+00:40:00,115 --> 00:40:03,896
+Okay, let's, please, please look at here.
+
+329
+00:40:03,896 --> 00:40:08,996
+If you have all zero rows, let's write here zero.
+
+330
+00:40:09,675 --> 00:40:13,336
+In this example, we have one all zero row.
+
+331
+00:40:13,596 --> 00:40:17,135
+We convey this row at the bottom of the matrix.
+
+332
+00:40:17,635 --> 00:40:22,956
+And the first non-zero entry of each row must be one.
+
+333
+00:40:22,956 --> 00:40:31,376
+Okay, the first non-zero entry or each row must be one from left to right, from left to right.
+
+334
+00:40:31,655 --> 00:40:35,316
+Here, the first non-zero entry or first row is one.
+
+335
+00:40:35,476 --> 00:40:43,096
+Okay, the first non-zero entry or second row is one, but located at the third entry.
+
+336
+00:40:43,096 --> 00:40:48,096
+need not to be at the second entry.
+
+337
+00:40:48,376 --> 00:40:54,396
+Okay, this is our second property for the reduced row echelon four.
+
+338
+00:40:54,856 --> 00:41:07,096
+The third property, also we call this the first entry of each row as leading one or leading, leading third or leading one.
+
+339
+00:41:07,096 --> 00:41:08,175
+Okay.
+
+340
+00:41:14,195 --> 00:41:35,076
+The third property O, reduce O echelon form, for each non-zero row, the leading one or the first non-zero entry, which is one, appears to the right O, right and below O, any leading ones in the preceding rows.
+
+341
+00:41:35,076 --> 00:41:38,795
+This means that, let's check here again.
+
+342
+00:41:40,355 --> 00:41:41,435
+Check here again.
+
+343
+00:41:44,195 --> 00:41:49,395
+The leading one or first row is one here.
+
+344
+00:41:50,275 --> 00:41:59,576
+And the leading one or second row cannot place in the bottom of this leading one.
+
+345
+00:41:59,576 --> 00:42:08,476
+You cannot put here because this force is the definition of reduce O echelon form.
+
+346
+00:42:08,476 --> 00:42:21,675
+The leading one or second row can be in the second entry of the second row or third, fourth entries of the second row.
+
+347
+00:42:21,675 --> 00:42:22,875
+Check here please.
+
+348
+00:42:22,875 --> 00:42:34,875
+The leading one or the second row is placed at the bottom right of the preceding one.
+
+349
+00:42:34,875 --> 00:42:36,875
+We can put here also leading one.
+
+350
+00:42:36,875 --> 00:42:39,195
+But in this case we put here.
+
+351
+00:42:39,195 --> 00:42:48,795
+But here we have, we can, if leading one is in the third position, we cannot put a non-zero entry in this position.
+
+352
+00:42:48,795 --> 00:42:49,355
+Okay.
+
+353
+00:42:49,355 --> 00:42:59,195
+So, the leading one or third row must be placed in the bottom right of the preceding row.
+
+354
+00:42:59,835 --> 00:43:04,556
+This is our third property of reduced row echelon form.
+
+355
+00:43:04,556 --> 00:43:23,755
+So, the leading one or third row is placed in the third row.
+
+356
+00:43:11,027 --> 00:43:23,987
+The fourth one, if any column contains a leading one, then all the entries in that column, except for leading one, are zero.
+
+357
+00:43:24,807 --> 00:43:31,367
+If you have a leading one in any column, this leading one is the only non-zero element of this column.
+
+358
+00:43:32,267 --> 00:43:32,507
+Okay.
+
+359
+00:43:47,347 --> 00:43:55,188
+A matris in reduced row echelon form appears as a staircase, like examples given above.
+
+360
+00:43:57,827 --> 00:44:16,067
+Here we have leading ones, and this is a staircase from top left to the bottom right of the matris, if you geometrically form your matris with respect to leading ones.
+
+361
+00:44:16,067 --> 00:44:18,148
+Okay, you will get a staircase form.
+
+362
+00:44:22,483 --> 00:44:34,983
+And if you omit the fourth property of the reduced row echelon form, if you omit D, then you will get row echelon form of a matris.
+
+363
+00:44:34,983 --> 00:44:35,384
+Okay.
+
+364
+00:44:39,603 --> 00:45:02,923
+Without D, a matrix with the properties ABC is called a matrix in the row echelon form. Row echelon form. Row echelon form is a weak form than reduced row echelon form. Reduced row echelon form is stronger than row echelon form.
+
+365
+00:45:10,739 --> 00:45:31,239
+Ve definitionen, for the rows of a matris, we can apply this definition to columns of a matris, and in order to get column, reduce column, echelon form, or column, echelon form of a matris.
+
+366
+00:45:31,239 --> 00:45:35,839
+But in general, we will use row echelon form of a matris.
+
+367
+00:45:36,139 --> 00:45:36,339
+Okay.
+
+368
+00:45:40,211 --> 00:45:45,632
+Here we have some examples for the reduced row echelon form.
+
+369
+00:45:45,751 --> 00:45:53,112
+Any identity matrix is in the reduced row echelon form because we have no all zero rows.
+
+370
+00:45:53,112 --> 00:45:58,012
+So we need not to put all zero rows at the bottom of the matrix.
+
+371
+00:45:58,411 --> 00:46:03,552
+This is the first property of this concept.
+
+372
+00:46:04,231 --> 00:46:08,311
+Second one, the non-zero entry of each row is one.
+
+373
+00:46:08,311 --> 00:46:11,112
+Here we have non-zero entries.
+
+374
+00:46:13,112 --> 00:46:15,192
+This is the second property.
+
+375
+00:46:15,931 --> 00:46:19,132
+The non-zero entries of each row is one.
+
+376
+00:46:19,132 --> 00:46:22,371
+The non-zero entry of first row is one.
+
+377
+00:46:22,572 --> 00:46:27,012
+The non-zero entry, the first non-zero entry of each row must be one.
+
+378
+00:46:27,211 --> 00:46:30,211
+Okay, the first non-zero entry of each row must be one.
+
+379
+00:46:30,931 --> 00:46:36,351
+This entry is called leading one, leading one of each row.
+
+380
+00:46:36,351 --> 00:46:38,951
+And must be the third property.
+
+381
+00:46:39,152 --> 00:46:46,351
+In the C we say that the leading one must appear at the bottom and right of the preceding one.
+
+382
+00:46:47,092 --> 00:46:58,052
+The leading one of the second row located on the, below the leading one of the first row and at the right.
+
+383
+00:46:58,052 --> 00:46:58,391
+Okay.
+
+384
+00:46:58,391 --> 00:47:08,411
+And the leading one of the third row is located below the all leading, preceding leading one and at the right order.
+
+385
+00:47:08,672 --> 00:47:08,931
+Okay.
+
+386
+00:47:09,672 --> 00:47:15,391
+At the right order, leading one of second column and first column, excuse me, first row.
+
+387
+00:47:15,391 --> 00:47:42,391
+Okay.
+
+388
+00:47:18,900 --> 00:47:24,900
+Ve burada bir steyle görüyoruz.
+
+389
+00:47:29,300 --> 00:47:42,460
+Our second example, Matrix B, is a 5 x 6 matrix, a matrix with 5 rows and 6 columns.
+
+390
+00:47:43,140 --> 00:47:50,660
+Also, let's apply the definition of reduced row echelon form to this matrix.
+
+391
+00:47:50,660 --> 00:47:55,260
+The first non-zero entry of each row is 1.
+
+392
+00:47:55,760 --> 00:47:58,180
+Okay, the first non-zero entry.
+
+393
+00:47:58,340 --> 00:48:02,160
+The first non-zero entry of each row is 1.
+
+394
+00:48:02,580 --> 00:48:11,060
+This entry, I forget to mention last property here for the matrix A.
+
+395
+00:48:11,060 --> 00:48:19,380
+Also, at the property D, we say that each leading one is the only non-zero entries of each column.
+
+396
+00:48:19,380 --> 00:48:28,580
+Here, the first leading term, the leading term of first row is the only non-zero entry of the first column.
+
+397
+00:48:29,240 --> 00:48:36,160
+Okay, the leading one of second row is the first non-zero entry of each row.
+
+398
+00:48:36,160 --> 00:48:44,900
+Okay, the leading one of the third row is the only non-zero element of the third column.
+
+399
+00:48:44,900 --> 00:48:54,480
+And lastly, the leading one of the fourth row is the only non-zero entries of each column.
+
+400
+00:48:54,920 --> 00:48:59,440
+Okay, so A is in the reduced row echelon form.
+
+401
+00:48:59,800 --> 00:49:04,519
+For B, let's check all these properties A, B, C, D.
+
+402
+00:49:05,320 --> 00:49:07,680
+A says that, let's check again.
+
+403
+00:49:07,680 --> 00:49:36,680
+Okay.
+
+404
+00:49:13,460 --> 00:49:20,199
+All zero rows, if there are any, there are any appear at the bottom of the matrix.
+
+405
+00:49:21,199 --> 00:49:27,260
+For the matrix B, we have all zero rows at the bottom of the matrix.
+
+406
+00:49:27,260 --> 00:49:33,320
+So, first property is satisfied.
+
+407
+00:49:38,996 --> 00:50:08,996
+İlk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk ad
+
+408
+00:50:08,996 --> 00:50:44,715
+adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk adım, ilk ad
+
+409
+00:51:01,619 --> 00:51:02,619
+Evet.
+
+410
+00:51:02,619 --> 00:51:04,619
+Let's check all properties.
+
+411
+00:51:04,619 --> 00:51:07,619
+I will explain your question.
+
+412
+00:51:07,619 --> 00:51:08,619
+Ok.
+
+413
+00:51:10,619 --> 00:51:11,619
+And
+
+414
+00:51:13,619 --> 00:51:15,619
+Third property says that
+
+415
+00:51:15,619 --> 00:51:17,619
+The third property says that
+
+416
+00:51:18,619 --> 00:51:19,619
+In C
+
+417
+00:51:19,619 --> 00:51:22,619
+For each non-zero row
+
+418
+00:51:22,619 --> 00:51:24,619
+The leading one appears
+
+419
+00:51:24,619 --> 00:51:27,619
+To the right and below
+
+420
+00:51:27,619 --> 00:51:30,619
+Of any leading ones in the preceding row.
+
+421
+00:51:30,619 --> 00:51:31,619
+Ok.
+
+422
+00:51:36,148 --> 00:51:42,148
+Bu, ilk birçok birçok birçok birçok birçok birçok.
+
+423
+00:51:42,148 --> 00:51:49,148
+Çünkü bu birçok birçok birçok birçok.
+
+424
+00:51:49,148 --> 00:51:54,148
+Evet, bu birçok birçok birçok.
+
+425
+00:51:54,148 --> 00:51:56,148
+Ama bu birçok birçok,
+
+426
+00:51:56,148 --> 00:51:58,148
+birçok birçok,
+
+427
+00:51:58,148 --> 00:52:02,148
+birçok birçok birçok,
+
+428
+00:52:02,148 --> 00:52:30,148
+bu birçok,
+
+429
+00:52:30,148 --> 00:52:32,148
+birçok,
+
+430
+00:52:32,148 --> 00:52:58,148
+bu birçok,
+
+431
+00:52:55,155 --> 00:53:10,096
+Yes, yes, [öğrenci], let me remove, if I remove this one, okay, if we have here zero, then we can put one here and zero here.
+
+432
+00:53:10,755 --> 00:53:19,936
+In this case, our first column will be all zero. This doesn't affect the definition or reduce row echelon form.
+
+433
+00:53:21,016 --> 00:53:24,456
+We can rearrange our matrix in this way.
+
+434
+00:53:25,155 --> 00:53:33,135
+The leading one of the first row may replace in the second position of the first row, okay.
+
+435
+00:53:34,335 --> 00:53:34,615
+Okay.
+
+436
+00:53:35,815 --> 00:53:41,735
+This is another scenario for the reduce row echelon form.
+
+437
+00:53:41,895 --> 00:53:42,956
+Okay, you can change.
+
+438
+00:53:45,835 --> 00:53:53,536
+But if you replace first non-zero entry of first row in the second place, here you must have zero.
+
+439
+00:54:04,851 --> 00:54:26,811
+We can put the, if the first non-zero entry o, third row, replacing in the third place of the third row, then this doesn't affect the definition of reduced row echelon form.
+
+440
+00:54:26,811 --> 00:54:31,891
+Also here we can have a one. This doesn't matter. Okay.
+
+441
+00:54:37,076 --> 00:54:50,195
+But for these entries, 7, 4, minus 2, 4, 8, minus 2, we have no leading ones in this place or this place.
+
+442
+00:54:50,195 --> 00:55:03,155
+Okay, so because our fourth and fifth rows all zero, we can put here any number, zero or non-zero.
+
+443
+00:55:03,155 --> 00:55:11,695
+This doesn't affect the definition. All these elements doesn't affect the definition of reduced row echelon form or a matris.
+
+444
+00:55:11,695 --> 00:55:18,155
+Okay, so B is in the reduced row echelon form. Let's obtain our state case.
+
+445
+00:55:19,695 --> 00:55:23,755
+This is our state case, appearance of this matris.
+
+446
+00:55:27,668 --> 00:55:27,988
+Ok.
+
+447
+00:55:30,048 --> 00:55:36,048
+Any question related to reduced row echelon form?
+
+448
+00:55:36,347 --> 00:55:38,827
+We have, I think, more examples here.
+
+449
+00:55:39,728 --> 00:55:40,628
+What about C?
+
+450
+00:55:41,628 --> 00:55:43,468
+What do you think about C?
+
+451
+00:55:44,367 --> 00:55:46,768
+Is C in reduced row echelon form or not?
+
+452
+00:55:48,407 --> 00:55:52,188
+Just apply for property to this matrix.
+
+453
+00:56:07,731 --> 00:56:08,731
+Any idea?
+
+454
+00:56:10,231 --> 00:56:12,231
+What about Matrix C?
+
+455
+00:56:14,731 --> 00:56:16,231
+Why, [öğrenci]?
+
+456
+00:56:17,231 --> 00:56:18,231
+Why no?
+
+457
+00:56:22,483 --> 00:56:25,403
+Which entry forces the definition?
+
+458
+00:56:33,300 --> 00:56:40,740
+İlk adı, ilk adı, ilk adı, ilk adı, bir adı.
+
+459
+00:56:40,740 --> 00:56:42,240
+Tamam, burada.
+
+460
+00:56:56,788 --> 00:57:02,867
+I think you talked about this entry A sub 1 5.
+
+461
+00:57:03,927 --> 00:57:08,248
+First row, fifth column of it.
+
+462
+00:57:09,628 --> 00:57:16,168
+This doesn't affect the definition because the first non-zero entry of first row is 1.
+
+463
+00:57:16,327 --> 00:57:17,188
+Okay, here we are.
+
+464
+00:57:17,327 --> 00:57:18,688
+Okay, there is no problem.
+
+465
+00:57:20,048 --> 00:57:23,728
+The first non-zero entry of second row is also 1.
+
+466
+00:57:23,728 --> 00:57:34,728
+The leading one of the second row, this element, and locate it on the bottom and right of the preceding one.
+
+467
+00:57:35,188 --> 00:57:38,568
+So there is no problem related to this also.
+
+468
+00:57:39,387 --> 00:57:42,568
+Also, we have all zero row at the bottom.
+
+469
+00:57:43,608 --> 00:57:44,648
+This is also okay.
+
+470
+00:57:46,327 --> 00:57:51,048
+And the leading one, we just have two leading ones in this matrix, see.
+
+471
+00:57:51,048 --> 00:57:53,668
+You just have two leading ones.
+
+472
+00:57:53,887 --> 00:57:55,447
+There is no more leading one.
+
+473
+00:57:55,688 --> 00:57:55,827
+Okay.
+
+474
+00:57:56,467 --> 00:58:01,648
+And each leading one is the non-zero of its column.
+
+475
+00:58:03,228 --> 00:58:11,288
+We have two leading ones and both these two leading ones are non-zero entries of its columns.
+
+476
+00:58:11,288 --> 00:58:16,867
+So matrix C is also in reduced row echelon form.
+
+477
+00:58:17,527 --> 00:58:24,228
+These two doesn't affect the definition or these elements, these non-zero elements.
+
+478
+00:58:24,748 --> 00:58:31,327
+These elements doesn't affect because this is, in this column we have no leading ones.
+
+479
+00:58:31,327 --> 00:58:35,768
+If we, here we have a one, then these entries must be zero.
+
+480
+00:58:35,887 --> 00:58:40,728
+But, but we have no leading one in the third row.
+
+481
+00:58:40,967 --> 00:58:41,208
+Okay.
+
+482
+00:58:42,507 --> 00:58:44,148
+Got it, [öğrenci]?
+
+483
+00:58:44,148 --> 00:58:58,907
+Got it.
+
+484
+00:58:48,532 --> 00:58:54,972
+10 minit break, we will continue after break. Okay. You can ask your questions during break.
+
+485
+01:06:09,427 --> 01:06:11,228
+Hi again, let's go on.
+
+486
+01:06:12,927 --> 01:06:20,268
+We have one more example related to reduced row echelon form or a dual matrix.
+
+487
+01:06:23,367 --> 01:06:30,127
+For the matrix D, why matrix D is not in the reduced row echelon form? I want to ask you.
+
+488
+01:06:37,108 --> 01:06:43,228
+İkinci satır sıfırlardan oluşuyor.
+
+489
+01:06:44,228 --> 01:06:46,548
+Okay, you are right. Thank you, [öğrenci].
+
+490
+01:06:47,648 --> 01:06:58,988
+Because we have an all zero row at the second place, so this row must be at the bottom of the matrix.
+
+491
+01:06:59,648 --> 01:07:05,928
+If we replace second and third row, then we will get a reduced row echelon form of matrix D.
+
+492
+01:07:05,928 --> 01:07:10,228
+But in this case, D is not in the reduced row echelon form.
+
+493
+01:07:10,408 --> 01:07:10,548
+Okay.
+
+494
+01:07:13,528 --> 01:07:19,108
+For matrix E, why matrix E is not in the reduced row echelon form?
+
+495
+01:07:19,108 --> 01:07:47,708
+Okay.
+
+496
+01:07:29,619 --> 01:07:42,420
+Hayır, bu doğru değil. Tamam, tamam, teşekkür [öğrenci], doğru. Çünkü, ikinci bir roya, ilk non-zero entry, ikinci bir roya var.
+
+497
+01:07:42,420 --> 01:07:51,319
+Ama ilk non-zero entry, ikinci bir roya var. Bu bir problem.
+
+498
+01:07:51,319 --> 01:07:56,519
+Bu bir soru var. Ama ilk non-zero entry, ikinci bir roya var.
+
+499
+01:07:56,519 --> 01:08:00,920
+Ama bu sadece non-zero element, ikinci bir roya var.
+
+500
+01:08:00,920 --> 01:08:08,920
+Bu, bu element ve bu element musteriydi.
+
+501
+01:08:08,920 --> 01:08:12,920
+Tamam, tamam.
+
+502
+01:08:12,920 --> 01:08:18,920
+Çünkü bu iki faktör, Ae is not in-produced-roya-echenol.
+
+503
+01:08:18,920 --> 01:08:20,920
+Tamam.
+
+504
+01:08:24,627 --> 01:08:29,067
+What about f? Why f is not in reduced row echelon form?
+
+505
+01:08:49,524 --> 01:08:50,624
+Ok, I'm around.
+
+506
+01:08:56,020 --> 01:08:59,600
+Matrix E, I think you asked for Matrix E.
+
+507
+01:09:09,876 --> 01:09:15,876
+Çünkü, bu, bu, bu, bu, 3rd row, ok?
+
+508
+01:09:15,876 --> 01:09:17,876
+Are you agree with me?
+
+509
+01:09:19,876 --> 01:09:23,876
+The first non-zero entry of the 3rd row is 1,
+
+510
+01:09:23,876 --> 01:09:32,876
+and, by the property D, each leading one must be only non-zero entry of its column.
+
+511
+01:09:32,876 --> 01:09:37,876
+In the third column, we have a leading one, but two more non-zero elements.
+
+512
+01:09:37,876 --> 01:09:39,876
+3 and minus 2.
+
+513
+01:09:39,876 --> 01:09:41,876
+These two elements must be zero.
+
+514
+01:09:43,876 --> 01:09:44,876
+Ok.
+
+515
+01:09:50,260 --> 01:09:57,659
+I think [öğrenci]'s answer for the matrix F
+
+516
+01:10:03,475 --> 01:10:05,795
+One of these entries must be zero.
+
+517
+01:10:06,935 --> 01:10:09,115
+This entry or this entry.
+
+518
+01:10:12,295 --> 01:10:12,795
+Okay.
+
+519
+01:10:17,203 --> 01:10:26,203
+If you remove one of these entries, in this case f will be in reduced row echelon form, but in this case it is not in the reduced row echelon form.
+
+520
+01:10:27,203 --> 01:10:29,203
+You need to remove one of these entries.
+
+521
+01:10:30,203 --> 01:10:42,203
+Because if you take a sub 2 as the leading one of the second row, then at the bottom of this entry we have a 1.
+
+522
+01:10:42,203 --> 01:10:47,203
+This is not possible in the reduced row echelon case.
+
+523
+01:10:48,203 --> 01:10:51,203
+Also in row echelon case.
+
+524
+01:10:55,091 --> 01:10:56,091
+Matris G
+
+525
+01:10:59,828 --> 01:11:01,368
+What about MakeXG?
+
+526
+01:11:26,804 --> 01:11:30,324
+You are right, [öğrenci]. This is, your answer is right.
+
+527
+01:11:30,764 --> 01:11:40,304
+Here, we have a non-zero element in the second column, because in the second column we have a leading one, leading one of the second row.
+
+528
+01:11:40,844 --> 01:11:46,963
+This entry must be zero. Also, for the third row, we have a leading one.
+
+529
+01:11:48,144 --> 01:11:51,423
+Also, these two entries must be zero.
+
+530
+01:11:51,684 --> 01:11:56,064
+Okay, so, G is not in reduced row echelon form.
+
+531
+01:11:56,804 --> 01:12:02,923
+Let me write here, not reduce row echelon form, not in.
+
+532
+01:12:05,264 --> 01:12:07,764
+What about row echelon form?
+
+533
+01:12:08,884 --> 01:12:12,524
+Is G in the row echelon form or not?
+
+534
+01:12:20,340 --> 01:12:21,980
+I just removed this art.
+
+535
+01:12:24,600 --> 01:12:25,480
+The term reduce.
+
+536
+01:12:30,899 --> 01:12:31,879
+What do you think?
+
+537
+01:12:42,644 --> 01:12:52,184
+A matris in the row-eşelon form must satisfy first three properties of reduced row-eşelon form.
+
+538
+01:12:53,604 --> 01:12:59,923
+Example, last one. Last one says that leading term is the only non-zero elements of its column.
+
+539
+01:13:00,744 --> 01:13:10,043
+Okay. But in the reduced row-eşelon case, we just remove this property. Without this property, we need to consider.
+
+540
+01:13:10,043 --> 01:13:10,444
+Okay.
+
+541
+01:13:22,003 --> 01:13:26,443
+What do you think? Is G in row echelon form or not?
+
+542
+01:13:35,123 --> 01:13:52,703
+Evet, [öğrenci], you are right. G is in row echelon form, because the non-zero entry of each row is one, and it's placed at the bottom and right of the preceding one. We have three leading ones.
+
+543
+01:13:52,703 --> 01:14:16,144
+If you remove the last property, leading one, which says that leading one is the non-zero entry, is the only non-zero entries of its column. If we remove this property, then we can say that G is in row echelon form. Okay.
+
+544
+01:14:18,043 --> 01:14:20,323
+G is in row echelon form.
+
+545
+01:14:24,115 --> 01:14:28,416
+In the row echelon case, we cannot remove these entries.
+
+546
+01:14:29,336 --> 01:14:31,435
+This one, this one, this one.
+
+547
+01:14:32,275 --> 01:14:32,515
+Okay.
+
+548
+01:14:34,855 --> 01:14:41,275
+Here we have more examples related to row echelon form.
+
+549
+01:14:43,296 --> 01:14:49,235
+We just omit the last property over this row echelon form.
+
+550
+01:14:49,235 --> 01:14:55,216
+Matrix and H is also in row echelon form.
+
+551
+01:14:58,931 --> 01:15:58,051
+... ...
+
+552
+01:16:04,212 --> 01:16:16,232
+No, we will give some elementary operations which allow us, enable us to put any given matrix in the reducer echelon form.
+
+553
+01:16:16,232 --> 01:16:25,572
+We will let we have a matrix A. We will apply some operations to this matrix and we will obtain a new matrix A''.
+
+554
+01:16:25,572 --> 01:16:35,872
+We will say that A is equivalent to A''. Okay, we have already know about A equality of two matrices.
+
+555
+01:16:36,332 --> 01:16:43,572
+Dination of these two matrices must be equal. Also corresponding entries must be equal.
+
+556
+01:16:43,952 --> 01:16:46,572
+This is a new definition.
+
+557
+01:16:46,572 --> 01:16:55,572
+If we apply finite elementary operations to a matrix and then obtain a new one.
+
+558
+01:16:56,572 --> 01:17:03,572
+So this new matrix is called equivalent matrix to the first one. Okay, equivalent.
+
+559
+01:17:03,572 --> 01:17:13,572
+We have the entries of matrix A' not to be equal to entries of matrix A. Okay.
+
+560
+01:17:13,572 --> 01:17:24,572
+So for this aim we will give some operations on the rows or columns of a matrix.
+
+561
+01:17:24,572 --> 01:17:26,572
+Let me have a matrix A.
+
+562
+01:17:28,572 --> 01:17:35,572
+These operations can be applied to rows of a matrix or columns of a matrix.
+
+563
+01:17:35,572 --> 01:17:42,572
+The first type of operation interchanging two rows or two columns.
+
+564
+01:17:42,572 --> 01:17:47,572
+Okay, so the place of two rows, any two rows and or any two columns.
+
+565
+01:17:47,572 --> 01:17:50,572
+This is our first type operation.
+
+566
+01:17:50,572 --> 01:17:58,572
+We will denote these operations by some symbols, some notations which...
+
+567
+01:17:58,572 --> 01:18:26,572
+We will denote them.
+
+568
+01:18:05,716 --> 01:18:08,716
+Bu bir şey, bir şey yapmak için,
+
+569
+01:18:08,716 --> 01:18:09,836
+bu operasyonu,
+
+570
+01:18:09,836 --> 01:18:13,516
+ve bu formu bir matrix
+
+571
+01:18:13,516 --> 01:19:31,516
+bir şey yapmak için,
+
+572
+01:19:31,516 --> 01:19:32,516
+yapmak için,
+
+573
+01:19:32,516 --> 01:20:50,516
+bir şey yapmak için,
+
+574
+01:20:50,516 --> 01:20:51,516
+yapmak için,
+
+575
+01:20:51,516 --> 01:22:05,516
+bir şey yapmak için,
+
+576
+01:22:01,235 --> 01:22:07,595
+ve aynı operasyonu, aynı iki kolum.
+
+577
+01:22:07,595 --> 01:22:15,435
+We multiply if kolum with the constant k, and adding up it to jf kolum.
+
+578
+01:22:15,435 --> 01:22:20,475
+Our new jf kolum will be this kolum.
+
+579
+01:22:24,307 --> 01:22:34,087
+So, we have a matrix A. Let's apply some operations on this matrix to get a equivalent form of this matrix.
+
+580
+01:22:34,868 --> 01:22:51,587
+Our first operation, we denote, you can write in the subscript of the matrix, the matrix B, this means that matrix B is obtained from matrix A by interchanging first and third rows of A.
+
+581
+01:22:51,587 --> 01:23:05,268
+We just interchange first and last row of matrix A to obtain matrix B. The first row of matrix B is the last row of matrix A.
+
+582
+01:23:06,148 --> 01:23:12,728
+And the last row of matrix B is the first row of matrix A.
+
+583
+01:23:12,728 --> 01:23:34,488
+Okay. We just applied one elementary operation to get matrix B. In this case, we can write A is equivalent to B because we obtain B from A by applying one elementary operation.
+
+584
+01:23:35,207 --> 01:23:35,768
+Any question?
+
+585
+01:23:41,140 --> 01:23:53,740
+And also, matris C is a new matris obtained from A. We just multiply the last row of A, the last row of A by 1 over 3.
+
+586
+01:23:54,440 --> 01:24:05,980
+Okay, if you multiply last row of A by 1 over 3, let me write here, you will get a new row, 1, 1, 2, and minus 3.
+
+587
+01:24:05,980 --> 01:24:15,780
+This is the last row of matris C. So, the first two rows remain unchanged in matris C.
+
+588
+01:24:16,840 --> 01:24:28,720
+C is equivalent to, so we can say that A is equivalent to C or C is equivalent to A because we obtain C from A.
+
+589
+01:24:29,180 --> 01:24:34,900
+Also, by applying the reverse of this operation, you can obtain A from C.
+
+590
+01:24:35,980 --> 01:24:40,400
+This is a two-sided operation, this is a two-sided operation, this is a two-sided operation, quite a C.
+
+591
+01:24:42,260 --> 01:24:48,660
+And matrix D is obtained from matrix A.
+
+592
+01:24:48,660 --> 01:24:57,660
+We just obtain D from A by, we multiply second row by minus 2.
+
+593
+01:24:57,660 --> 01:25:01,260
+Let me write second row by minus 2.
+
+594
+01:25:01,260 --> 01:25:09,600
+Our new second row will be minus 4, minus 6, 0, and 4.
+
+595
+01:25:09,600 --> 01:25:17,440
+And we're adding up this to the last row of matrix A.
+
+596
+01:25:17,440 --> 01:25:19,160
+Our last row is...
+
+597
+01:25:19,160 --> 01:25:29,160
+...
+
+598
+01:25:22,868 --> 01:25:32,628
+Excuse me, what is the last row of matrix A? 3, 3, 6, minus 9. Let me write here.
+
+599
+01:25:36,916 --> 01:25:41,235
+3, 3, 6, and minus 9.
+
+600
+01:25:42,355 --> 01:26:01,256
+The last row of matrix D will be, minus 4 plus 3 is minus 1, minus 6 plus 3 is minus 3, 0 plus 6 is 6, and 4 plus minus 9 is minus 5.
+
+601
+01:26:01,516 --> 01:26:04,336
+This is our new row in the C.
+
+602
+01:26:04,336 --> 01:26:15,836
+Okay, the last row of C is obtained from A by, we multiply second row by minus 2 and adding up it to the last row of A.
+
+603
+01:26:15,996 --> 01:26:20,516
+Okay, so A is also, is equivalent to matrix D.
+
+604
+01:26:20,876 --> 01:26:25,576
+By applying the reverse of this operation, you can obtain A from D.
+
+605
+01:26:26,355 --> 01:26:26,615
+Okay.
+
+606
+01:26:36,851 --> 01:26:57,431
+This is the definition of equivalency of any two matrix. A matrix B is said to be row or column equivalent to matrix A if by applying finitely many elementary row or column operations to the matrix A to obtain matrix B.
+
+607
+01:26:57,431 --> 01:27:11,751
+And this is denoted by if A is equivalent to B, AB. This means that we apply finitely many row operations or column operations to A to get matrix B.
+
+608
+01:27:12,431 --> 01:27:17,872
+If you apply the reverse of these operations to matrix B, you will get matrix A.
+
+609
+01:27:17,872 --> 01:27:18,631
+Okay.
+
+610
+01:27:27,091 --> 01:27:35,652
+Here, we have another matrix. We apply some row operations to matrix A.
+
+611
+01:27:35,771 --> 01:27:43,031
+First, we obtain B from A by applying, we multiply third row by two and adding up it to second row.
+
+612
+01:27:43,631 --> 01:27:51,971
+This is matrix B. And B is equivalent to, is row equivalent to matrix A.
+
+613
+01:27:51,971 --> 01:27:56,511
+And also we apply one more operation to matrix B.
+
+614
+01:27:57,091 --> 01:28:00,711
+So we get a new matrix, let's call this matrix as C.
+
+615
+01:28:02,091 --> 01:28:04,211
+C is equivalent to B.
+
+616
+01:28:05,351 --> 01:28:06,911
+A is equivalent to B.
+
+617
+01:28:07,331 --> 01:28:08,871
+B is equivalent to C.
+
+618
+01:28:08,971 --> 01:28:11,811
+This means that A is equivalent to C.
+
+619
+01:28:13,091 --> 01:28:13,351
+Okay.
+
+620
+01:28:13,951 --> 01:28:18,571
+Because C is obtained from B and B is obtained from A.
+
+621
+01:28:18,571 --> 01:28:19,571
+by the first and last A.
+
+622
+01:28:19,571 --> 01:28:24,071
+By the first and last A is equivalent to C.
+
+623
+01:28:30,804 --> 01:28:40,804
+Here we have some results of row equivalency for any given matrix.
+
+624
+01:28:42,804 --> 01:28:55,804
+Any matrix of order n by n, let's say A, is row or column equivalent to a matrix in row echelon or column echelon form.
+
+625
+01:28:55,804 --> 01:29:10,804
+By applying finitely many operations, elementary operations to rows or columns of a given matrix, you can obtain reduced row echelon form or row echelon form of the matrix given matrix.
+
+626
+01:29:10,804 --> 01:29:21,804
+Okay. This is our first result related to reduced row echelon or row echelon form of a matrix.
+
+627
+01:29:21,804 --> 01:29:33,804
+We will use this result in the solution of linear system equations or to find the inverse of a square matrix.
+
+628
+01:29:33,804 --> 01:29:39,804
+And the reduced row echelon form of a matrix is unique.
+
+629
+01:29:39,804 --> 01:29:44,804
+Row echelon form may be different. You can apply different.
+
+630
+01:29:44,804 --> 01:29:51,804
+You have finitely many choices for reduced row echelon. Excuse me. Row echelon form.
+
+631
+01:29:51,804 --> 01:29:59,804
+Excuse me. Row echelon form. Reduced row echelon form is unique. Okay. Reduced row echelon form of a matrix is unique.
+
+632
+01:29:59,804 --> 01:30:21,804
+Row echelon form is unique.
+
+633
+01:30:05,652 --> 01:30:19,731
+Here we have a matrix that apply some elementary row operations to this matrix to find the row echelon form of this matrix and reduce row echelon form of this matrix.
+
+634
+01:30:21,412 --> 01:30:31,372
+First we replace, because in the first row we have zeros here, we replace first and third row of this matrix.
+
+635
+01:30:31,372 --> 01:30:36,511
+Okay, first we replace first and third row.
+
+636
+01:30:37,192 --> 01:30:50,311
+So let's multiply first row by 1 over 3, our new first row, 1 over 3 times row 1 will be our new row 1.
+
+637
+01:30:50,311 --> 01:30:58,252
+Okay, so the new matrix will be, we denote equivalency by tilde.
+
+638
+01:30:59,271 --> 01:31:05,252
+Our first new row, 1, 1, 2, minus 3.
+
+639
+01:31:05,811 --> 01:31:14,631
+Here we have 2, 3, the second row remain unchanged, second and last row, rows of the matrix remain unchanged.
+
+640
+01:31:14,631 --> 01:31:19,771
+So here we have 0 and minus 2, 0, 0, 1, 2.
+
+641
+01:31:20,112 --> 01:31:22,072
+This is our last row.
+
+642
+01:31:22,551 --> 01:31:28,792
+Now we will use this, the leading one of the first row is this element.
+
+643
+01:31:28,792 --> 01:31:34,252
+So we need to remove this element, this 2.
+
+644
+01:31:35,192 --> 01:31:42,532
+In order to do this, we need to multiply first row by minus 2 and adding up it to the second row.
+
+645
+01:31:42,532 --> 01:31:56,131
+Okay, our new operation, our new operation, minus 2 R1 plus R2 will be our new R2.
+
+646
+01:31:56,131 --> 01:31:56,532
+Okay.
+
+647
+01:31:59,172 --> 01:32:05,271
+I want to remove this element, but we need to apply all entries, our operation.
+
+648
+01:32:05,271 --> 01:32:12,452
+The new matrix, our new matrix, our first row is unchanged, remain unchanged.
+
+649
+01:32:12,931 --> 01:32:16,412
+1, 1, 2, minus 3.
+
+650
+01:32:17,131 --> 01:32:22,032
+Our new second row will be, I multiply first row by minus 2.
+
+651
+01:32:22,131 --> 01:32:24,032
+Minus 2 plus 2 is 0.
+
+652
+01:32:24,971 --> 01:32:27,172
+Here we have minus 2 plus 3 is 1.
+
+653
+01:32:27,551 --> 01:32:27,672
+Okay.
+
+654
+01:32:27,672 --> 01:32:31,212
+Minus 4 plus 0 is minus 4.
+
+655
+01:32:32,832 --> 01:32:39,471
+Minus 2 times minus 3 is 6 plus minus 2 is 4.
+
+656
+01:32:39,952 --> 01:32:48,351
+And the last row will be the same with the previous case.
+
+657
+01:32:48,572 --> 01:32:48,731
+Okay.
+
+658
+01:32:51,011 --> 01:32:52,971
+Here we have 1 and 2.
+
+659
+01:32:52,971 --> 01:33:19,252
+Minus 3 is 1.
+
+660
+01:32:58,547 --> 01:33:00,547
+Please follow carefully.
+
+661
+01:33:01,047 --> 01:33:07,547
+Now, our matrix is in row echelon form.
+
+662
+01:33:10,547 --> 01:33:13,547
+Çünkü, bir tane kase var.
+
+663
+01:33:15,547 --> 01:33:16,547
+Eş...
+
+664
+01:33:18,547 --> 01:33:22,547
+...eşt non-zero entry on each row is 1.
+
+665
+01:33:22,547 --> 01:33:23,547
+Ok.
+
+666
+01:33:23,547 --> 01:33:31,547
+All entries located on the blue of these leading ones are 0.
+
+667
+01:33:31,547 --> 01:33:32,547
+So,
+
+668
+01:33:33,547 --> 01:33:36,547
+...this is the row echelon form of matrix A.
+
+669
+01:33:36,547 --> 01:33:39,547
+This is our row echelon form.
+
+670
+01:33:39,547 --> 01:33:48,547
+But for reduced row echelon form, we need to do some more work on this matrix.
+
+671
+01:33:48,547 --> 01:33:51,547
+We need to remove this entry.
+
+672
+01:33:51,547 --> 01:33:55,547
+Let me write with another color.
+
+673
+01:33:55,547 --> 01:34:01,547
+We need to remove this entry, this entry and this entry.
+
+674
+01:34:01,547 --> 01:34:04,547
+Because in the reduced row echelon case,
+
+675
+01:34:04,547 --> 01:34:10,547
+...the leading term of each row is the only non-zero entries of each column.
+
+676
+01:34:10,547 --> 01:34:11,547
+Ok.
+
+677
+01:34:11,547 --> 01:34:18,547
+...
+
+678
+01:34:15,028 --> 01:34:22,228
+Bu, üçüncü kolum kullanıyoruz.
+
+679
+01:34:22,228 --> 01:34:25,528
+İçinçliği, üçüncü kolum kullanıyoruz.
+
+680
+01:34:25,528 --> 01:34:29,528
+Üçüncü kolum kullanıyoruz.
+
+681
+01:34:29,528 --> 01:34:33,528
+Ve bu üçüncü kolum kullanıyoruz.
+
+682
+01:34:33,528 --> 01:34:47,528
+Ok, so, our new second row, instead of our first row, our new first row, minus two times row three plus row one,
+
+683
+01:34:47,528 --> 01:34:49,528
+because I want to remove these two.
+
+684
+01:34:49,528 --> 01:34:57,528
+In order to do this, just multiply third row with minus two and adding up it with the first row.
+
+685
+01:34:57,528 --> 01:35:00,528
+So, this is our new first row.
+
+686
+01:35:00,528 --> 01:35:14,528
+And in order to remove this minus four, just multiply four times R3 plus R2, instead of our new R2, assign a new column to R2.
+
+687
+01:35:14,528 --> 01:35:18,528
+Ok, let's do these two operations.
+
+688
+01:35:18,528 --> 01:35:22,528
+This will be a equivalent form of this matrix.
+
+689
+01:35:22,528 --> 01:35:29,528
+So, our new first row, zero plus one is one.
+
+690
+01:35:29,528 --> 01:35:32,528
+Zero plus one is one, again.
+
+691
+01:35:32,528 --> 01:35:37,528
+Minus two plus two is zero.
+
+692
+01:35:37,528 --> 01:35:44,528
+And minus four plus minus three, here we have a minus seven.
+
+693
+01:35:44,528 --> 01:35:48,528
+Okay, this is our new first row.
+
+694
+01:35:48,528 --> 01:35:53,528
+Our new second row, zero plus zero is zero.
+
+695
+01:35:53,528 --> 01:35:56,528
+Zero plus one is one.
+
+696
+01:35:56,528 --> 01:36:04,528
+Four, we multiply third row via all entries of third row via four, constant four.
+
+697
+01:36:04,528 --> 01:36:07,528
+So, four plus minus four is zero.
+
+698
+01:36:07,528 --> 01:36:14,528
+And here we have four times two is eight plus four is twelve.
+
+699
+01:36:14,528 --> 01:36:15,528
+Twelve.
+
+700
+01:36:15,528 --> 01:36:21,528
+The last row is the same with the previous one.
+
+701
+01:36:21,528 --> 01:36:22,528
+Okay.
+
+702
+01:36:22,528 --> 01:36:31,528
+So, we need to remove this element also.
+
+703
+01:36:31,528 --> 01:36:37,528
+Now, this element is the only non-zero element of this column.
+
+704
+01:36:37,528 --> 01:36:42,528
+And this leading term also is the only non-zero entry of this column.
+
+705
+01:36:42,528 --> 01:36:55,528
+So, we need to remove this one, the entries in the A1, 2.
+
+706
+01:36:55,528 --> 01:37:02,528
+To do this, just multiply second row minus R2 plus R1.
+
+707
+01:37:02,528 --> 01:37:05,528
+Assign it as our new R1.
+
+708
+01:37:05,528 --> 01:37:06,528
+Okay.
+
+709
+01:37:06,528 --> 01:37:07,528
+So, let's do this.
+
+710
+01:37:07,528 --> 01:37:35,528
+Let's do this.
+
+711
+01:37:14,163 --> 01:37:23,363
+So, our new first row will be 0 plus 1 is 1, minus 1 plus 1 is 0.
+
+712
+01:37:24,703 --> 01:37:40,463
+Here we have 0 plus 0 is 0, and minus 11 plus 7 is minus 19.
+
+713
+01:37:40,463 --> 01:37:45,363
+Okay, our second and third row remain unchanged.
+
+714
+01:37:45,363 --> 01:37:55,983
+So, here we have 0, 1, 0, 12, and 0, 0, 1, and 2.
+
+715
+01:37:56,403 --> 01:37:56,663
+Okay.
+
+716
+01:37:59,643 --> 01:38:04,983
+This is the reduced row echelon form of matrix A.
+
+717
+01:38:05,224 --> 01:38:08,423
+Reduced row echelon form.
+
+718
+01:38:08,423 --> 01:38:10,903
+Any question?
+
+719
+01:38:13,703 --> 01:38:24,304
+Because we get a staircase, each leading term is the only non-zero entries of each column.
+
+720
+01:38:24,623 --> 01:38:24,844
+Okay.
+
+721
+01:38:25,283 --> 01:38:33,423
+We have three leading terms in each row, and these leading terms are only non-zero entries of each column.
+
+722
+01:38:33,423 --> 01:38:35,963
+Any question?
+
+723
+01:38:35,963 --> 01:38:40,963
+Okay.
+
+724
+01:38:43,988 --> 01:38:46,088
+Let's go on, there is no question.
+
+725
+01:38:59,731 --> 01:39:05,912
+Here we have an important definition related to a matrix.
+
+726
+01:39:07,931 --> 01:39:11,631
+In the reduced row echelon or row echelon case,
+
+727
+01:39:11,631 --> 01:39:17,631
+the non-row, non-zero rows in reduced row echelon or row echelon
+
+728
+01:39:17,631 --> 01:39:21,511
+or form of a matrix is called the rank of this matrix.
+
+729
+01:39:22,032 --> 01:39:26,811
+For our example, the rank of matrix A,
+
+730
+01:39:26,811 --> 01:39:39,711
+the rank of matrix A is equal to number of non-zero rows
+
+731
+01:39:39,711 --> 01:39:50,032
+or row echelon form or reduced row echelon form of a.
+
+732
+01:39:50,532 --> 01:39:50,811
+Okay.
+
+733
+01:39:51,771 --> 01:39:55,891
+This number is equal to, we have in the reduced row echelon form,
+
+734
+01:39:55,891 --> 01:39:59,532
+this number is equal to the row echelon form,
+
+735
+01:39:59,952 --> 01:40:04,351
+is three because we have three non-zero rows
+
+736
+01:40:04,351 --> 01:40:07,572
+in the reduced row echelon form or row echelon form.
+
+737
+01:40:07,952 --> 01:40:09,192
+The rank of A is three.
+
+738
+01:40:10,731 --> 01:40:13,271
+This parameter is very important
+
+739
+01:40:13,271 --> 01:40:16,992
+when we try to solve linear system of equations.
+
+740
+01:40:16,992 --> 01:40:17,992
+And we have a number of different equations.
+
+741
+01:40:17,992 --> 01:40:36,452
+We have a number of different equations.
+
+742
+01:40:22,355 --> 01:40:27,835
+No, we will give a method to find inverse of a square matrix.
+
+743
+01:40:29,555 --> 01:40:38,935
+Actually, this is a very hard problem when the order of matrix became bigger and bigger.
+
+744
+01:40:39,475 --> 01:40:49,775
+So, by using elementary row operations, we will find inverse of a square matrix, if exists.
+
+745
+01:40:49,775 --> 01:40:53,576
+Okay, that we have a matrix square matrix A.
+
+746
+01:40:57,939 --> 01:41:20,539
+n by n, square matris. We just put identity matris of same order at the right side of the matris. We append an identity matris at the right side of the matris A.
+
+747
+01:41:20,539 --> 01:41:40,659
+This is also a matris of order n times 2n, because here we have 2n columns. So, we applied elementary row operations in order to get reduced row echelon form of this matris.
+
+748
+01:41:40,659 --> 01:41:54,139
+We just convey identity matris from right to left and the matris at the right side will be our inverse. Okay.
+
+749
+01:42:01,939 --> 01:45:52,939
+...
+
+750
+01:45:57,076 --> 01:46:04,055
+Main idea of finding inverse matrix or a square matrix depends on this fact.
+
+751
+01:46:04,456 --> 01:46:10,275
+Just append a new identity matrix at the right side and apply elementary row operations.
+
+752
+01:46:10,756 --> 01:46:19,055
+At the end, if you can convey identity matrix from right to left, in this case you can talk about the inverse of A.
+
+753
+01:46:19,055 --> 01:46:29,935
+But if you cannot have any identity matrix in the right side, in this case A is not invertible, A is singular.
+
+754
+01:46:31,155 --> 01:46:32,416
+Let's give an example.
+
+755
+01:46:39,699 --> 01:46:47,019
+Şimdi bu matrisin ve
+
+756
+01:46:51,507 --> 01:47:00,887
+Our matris is 3, 3, 6, 2, 3, 0, 0, 0, 1, a 3x3 square matris.
+
+757
+01:47:00,887 --> 01:47:07,847
+Just append an identity matris of order 3 at the right side of this matris.
+
+758
+01:47:07,847 --> 01:47:21,587
+And apply elementary operations to matrix, this new matris, in order to convey identity matris from right to left.
+
+759
+01:47:21,587 --> 01:47:22,047
+Okay.
+
+760
+01:47:25,228 --> 01:47:31,407
+To do this, we need to obtain an identity matris at the left side of the matris.
+
+761
+01:47:31,407 --> 01:47:38,127
+So, first, we need to get here a leading one.
+
+762
+01:47:39,648 --> 01:47:42,268
+Multiply first row by 1 over 3.
+
+763
+01:47:42,268 --> 01:47:42,307
+1 over 3.
+
+764
+01:47:48,372 --> 01:48:13,512
+Our new matrix is 1, 1, 2, 1 over 3. Apply your operations to the identity matrix also, 1 over 3, 0, 0, and second and third rows will be same with the previous one, 2, 3, 0, 0, 1, 0.
+
+765
+01:48:13,512 --> 01:48:23,392
+Please follow carefully in any mistake, let me know. 0, 0, 1, 0, 0, 1. Okay.
+
+766
+01:48:24,231 --> 01:48:35,452
+Now I will use this leading one to remove 2. So minus 2R1 plus R2, our new R2.
+
+767
+01:48:40,115 --> 01:48:43,836
+Bu bir ekvivalent, bir ekvivalent matris.
+
+768
+01:48:43,836 --> 01:48:49,496
+İlk row, is the same with this matrix.
+
+769
+01:48:50,136 --> 01:48:52,216
+1, 1, 2.
+
+770
+01:48:52,916 --> 01:48:55,956
+Let's separate with a bar, vertical bar.
+
+771
+01:48:56,355 --> 01:48:59,256
+1 over 3, 0, 0.
+
+772
+01:49:00,836 --> 01:49:05,775
+Here we have, we multiply first row with minus 2 and adding up it to second row.
+
+773
+01:49:05,895 --> 01:49:06,735
+Here we have 0.
+
+774
+01:49:07,595 --> 01:49:10,655
+Minus 2 plus 3 is 1.
+
+775
+01:49:10,655 --> 01:49:14,636
+Here we have minus 4.
+
+776
+01:49:15,176 --> 01:49:18,496
+Minus 4 plus 0 is minus 4.
+
+777
+01:49:19,076 --> 01:49:20,676
+Minus 2 over 3.
+
+778
+01:49:20,775 --> 01:49:24,115
+Here we have minus 2 over 3.
+
+779
+01:49:24,756 --> 01:49:26,256
+Here we have 1 and 0.
+
+780
+01:49:27,256 --> 01:49:33,515
+0, 0, 1, 0, 0, 1.
+
+781
+01:49:33,515 --> 01:49:33,956
+Okay.
+
+782
+01:49:42,131 --> 01:49:57,371
+We need to remove this element in order to get identity matrix at the left side. We need to remove these three elements. Okay.
+
+783
+01:49:58,192 --> 01:50:04,091
+To do this, just use first last row and then second row.
+
+784
+01:50:04,091 --> 01:50:24,371
+Minus two times R3 plus R1, our new R1, this operation will remove these two and four times R3 plus R2, R2 will remove these minus four.
+
+785
+01:50:24,371 --> 01:50:33,611
+First, let's do these operations. Here we have, sorry, zero plus one is one.
+
+786
+01:50:34,891 --> 01:50:43,371
+I just multiply all entries, all third row with minus two. Minus two times zero is zero plus one is one.
+
+787
+01:50:43,611 --> 01:50:52,371
+Minus two times zero, zero plus one. Again, you have one. Minus two plus two is zero.
+
+788
+01:50:52,371 --> 01:51:00,371
+Okay. And here we have one. Okay. And here we have one over three, zero.
+
+789
+01:51:00,371 --> 01:51:06,991
+And minus two. Here we have minus two. Okay.
+
+790
+01:51:06,991 --> 01:51:16,652
+Okay. Our new second row will be zero, one, zero.
+
+791
+01:51:16,652 --> 01:51:16,931
+Okay.
+
+792
+01:51:16,931 --> 01:51:20,711
+Our new second row will be zero, one, zero.
+
+793
+01:51:23,667 --> 01:51:24,807
+A...
+
+794
+01:51:30,323 --> 01:51:44,143
+Minus 2 over 3, minus 2 over 3, 1, and we, here we have 4, because we multiply last row with 4, constant 4.
+
+795
+01:51:44,143 --> 01:51:48,863
+And last row is the same with this one.
+
+796
+01:51:51,863 --> 01:51:54,384
+0, 0, 1, 0, 0, 1.
+
+797
+01:51:59,444 --> 01:52:19,124
+We have one more entry which need to be removed. So, need to remove this entry. Just multiply, second row with minus one, minus R2 plus R1, our new R1.
+
+798
+01:52:30,131 --> 01:52:36,831
+So, here we have 1, 0, 0.
+
+799
+01:52:38,591 --> 01:52:49,031
+We multiply second row with minus 1, 2 over 3 plus 1 over 3, 3 over 3 is 1.
+
+800
+01:52:49,451 --> 01:52:49,591
+Okay.
+
+801
+01:52:50,451 --> 01:52:56,411
+Here we have minus 1, minus 1, minus 6.
+
+802
+01:52:57,111 --> 01:52:58,211
+Here we have minus 6.
+
+803
+01:53:02,899 --> 01:53:18,679
+Second row is 0, 1, 0, minus 2 over 3, 1, 4, 0, 0, 1, 0, 0, 1.
+
+804
+01:53:18,679 --> 01:53:29,339
+If we have no error in these computations, this is the inverse of A, let's write here B.
+
+805
+01:53:30,079 --> 01:53:37,639
+B times A, or A times B must be identity matrix of order 3.
+
+806
+01:53:37,639 --> 01:53:38,299
+Okay.
+
+807
+01:53:40,579 --> 01:53:42,559
+Let's try it.
+
+808
+01:53:51,604 --> 01:53:58,804
+Here we have matrix A, let's multiply with the, let's compute some entries O, AB, AB.
+
+809
+01:53:59,844 --> 01:54:15,524
+First, let's compute C1, the entries located on the first row and first column O, AB, multiply first row A with the first column O, B.
+
+810
+01:54:15,524 --> 01:54:26,724
+So, we have 3 times 1, 3 times 1, plus 3 times...
+
+811
+01:54:34,515 --> 01:54:58,515
+3 times, minus 2 over 3, plus 6 times, 0. Here we have 3 minus 2 is 1. This is correct. Let compute C12. This entry must be 0.
+
+812
+01:54:58,515 --> 01:55:19,215
+3 times, I just multiply, first row of A with the second column of B. 3 times minus 1, plus 3 times 1, plus 6 times 0. This is 0.
+
+813
+01:55:19,215 --> 01:55:36,515
+C1, 3, 3 times minus 6, plus 3 times 4, plus 6 times 1.
+
+814
+01:55:36,515 --> 01:55:50,515
+Here we have 12 plus 6 times, minus 18 is 0. I think our computations are correct. There is no error in the...
+
+815
+01:55:50,515 --> 01:56:04,515
+But we just compute 3 entries. We have 6 more entries. You can try all the remaining entries. Okay. So, by this way we compute the inverse O matrix A.
+
+816
+01:56:04,515 --> 01:56:07,515
+And question.
+
+817
+01:56:20,307 --> 01:56:36,988
+Let me give another example, a small example, a 2x2 example. Let our matris be minus 1, 1, 2, 1.
+
+818
+01:56:45,555 --> 01:56:47,935
+Let's find the inverse of this matrix.
+
+819
+01:56:49,055 --> 01:56:56,055
+We just write at the right side of matrix A,
+
+820
+01:56:56,055 --> 01:57:00,275
+we append a new identity matrix, a 2x2 identity matrix at the right.
+
+821
+01:57:02,775 --> 01:57:07,975
+2, 1, 1, 1, 0, 0, 1.
+
+822
+01:57:07,975 --> 01:57:15,155
+We just applied some elementary row operations to matrix, this matrix,
+
+823
+01:57:15,155 --> 01:57:19,715
+to get, to convey identity matrix from right to left.
+
+824
+01:57:20,576 --> 01:57:27,095
+First multiply first row by minus 1, minus 1 R1, our new R1.
+
+825
+01:57:27,095 --> 01:57:38,715
+Here we have 1, minus 1, minus 1, 0, 2, 1, 0, 1.
+
+826
+01:57:39,255 --> 01:57:39,515
+Okay.
+
+827
+01:57:40,695 --> 01:57:42,995
+Use this entry to remove this element.
+
+828
+01:57:42,995 --> 01:57:49,915
+Minus 2 R1 plus R2, our new R2.
+
+829
+01:57:50,735 --> 01:57:55,155
+1, minus 1, minus 1, 0, 0.
+
+830
+01:57:56,435 --> 01:57:59,155
+Minus 2 plus 1 will be 3.
+
+831
+01:58:00,735 --> 01:58:03,215
+Here, minus 2 plus 0 is 2.
+
+832
+01:58:03,215 --> 01:58:07,435
+And here, 0 plus 1 is 1.
+
+833
+01:58:08,055 --> 01:58:08,335
+Okay.
+
+834
+01:58:14,515 --> 01:58:36,475
+Multiply last row with 1 over 3, 1 over 3 R2, our new R2, 1 minus 1, minus 1 0, 0 1, 2 over 3, 1 over 3.
+
+835
+01:58:36,475 --> 01:58:48,695
+Okay, and then minus, excuse me, just R2 plus R1, our new R1. I need, I want to remove this minus 1. Okay.
+
+836
+01:58:53,524 --> 01:59:02,604
+1, 0, minus 1, plus 2 over 3.
+
+837
+01:59:02,864 --> 01:59:04,284
+Here we have 1 over 3.
+
+838
+01:59:04,904 --> 01:59:05,064
+Okay.
+
+839
+01:59:06,404 --> 01:59:07,244
+Excuse me.
+
+840
+01:59:07,744 --> 01:59:10,224
+Minus 1 over 3.
+
+841
+01:59:11,344 --> 01:59:14,524
+And here we have 1 over 3.
+
+842
+01:59:14,524 --> 01:59:23,963
+0, 1, 2 over 3, 1 over 3.
+
+843
+01:59:25,304 --> 01:59:28,244
+This is the inverse of A inverse.
+
+844
+01:59:32,243 --> 01:59:40,884
+That multiplied this matrix with A, that write B, AB, AB is equal to.
+
+845
+01:59:43,344 --> 01:59:51,943
+Minus 1 times 1 over 3, is 1 over 3, plus 2 over 3.
+
+846
+01:59:53,103 --> 02:00:01,063
+Minus 1 times 1 over 3, minus 1 over 3, plus 1 over 3.
+
+847
+02:00:02,243 --> 02:00:13,183
+And take the second row of A, multiply with the each column of B, minus 2 over 3, plus 2 over 3.
+
+848
+02:00:13,823 --> 02:00:17,663
+2 times minus 1 over 3, plus 1 times 2 over 3.
+
+849
+02:00:18,183 --> 02:00:23,884
+And here, 2 over 3 plus 1 over 3.
+
+850
+02:00:23,884 --> 02:00:24,563
+Okay.
+
+851
+02:00:26,463 --> 02:00:32,963
+This is identity matrix O, order 2.
+
+852
+02:00:33,143 --> 02:00:33,344
+Okay.
+
+853
+02:00:36,043 --> 02:00:37,243
+Any questions?
+
+854
+02:00:38,764 --> 02:00:40,003
+Thank you for listening.
+
+855
+02:00:40,543 --> 02:00:42,143
+See you next week.
+
+856
+02:00:42,143 --> 02:01:11,443
+Bye.
