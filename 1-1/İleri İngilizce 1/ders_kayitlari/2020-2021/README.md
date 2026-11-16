@@ -23,3 +23,4 @@
 | 34 | Güz | Asuman Çom | [sube_34/](sube_34/) |
 | 35 | Güz | Dilek Yıldırım | [sube_35/](sube_35/) |
 | 36 | Güz | Bulunamadı | [sube_36/](sube_36/) |
+| 37 | Güz | Bulunamadı | [sube_37/](sube_37/) |
