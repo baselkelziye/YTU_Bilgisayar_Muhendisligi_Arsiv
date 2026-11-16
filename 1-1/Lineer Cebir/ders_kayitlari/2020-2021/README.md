@@ -17,5 +17,6 @@
 | 15 | Bahar | Mehmet Emin Köroğlu | [sube_15/](sube_15/) |
 | 16 | Güz | İsmail Aydoğdu | [sube_16/](sube_16/) |
 | 16 | Bahar | Mehmet Emin Köroğlu | [sube_16_bahar/](sube_16_bahar/) |
+| 30 | Güz | İsmail Aydoğdu | [sube_30/](sube_30/) |
 | 31 | Güz | İsmail Aydoğdu | [sube_31/](sube_31/) |
 | 32 | Güz | Mehmet Emin Köroğlu | [sube_32/](sube_32/) |

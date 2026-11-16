@@ -1,0 +1,2127 @@
+1
+00:00:44,531 --> 00:00:45,351
+Oda evtlendim.
+
+2
+00:01:01,396 --> 00:01:03,396
+Did you learn your exams course?
+
+3
+00:01:11,316 --> 00:01:15,436
+I think the scores are not good.
+
+4
+00:01:21,108 --> 00:01:26,108
+Neden sordun [öğrenci]? Öyle mi geliyor sizin?
+
+5
+00:01:32,340 --> 00:01:35,219
+[kişisel bilgi]
+
+6
+00:01:37,520 --> 00:01:39,719
+[kişisel bilgi]
+
+7
+00:01:42,980 --> 00:01:44,780
+Sağ olun, teşekkürler arkadaşlar.
+
+8
+00:01:46,920 --> 00:01:52,960
+Şimdi madem şey yaptık, Türkçe devam edelim, sonra İngilizce tekrar bir açıklama yaparız.
+
+9
+00:01:52,960 --> 00:02:01,960
+Arkadaşlar, sınav sonuçlarınızı eğer çok şeyse, sağ olun, sağ olun arkadaşlar.
+
+10
+00:02:02,340 --> 00:02:13,300
+Eğer sıkıntı olduğunu düşünüyorsanız, lütfen grup numaranızla beraber, hangi grupta olduğunuzu yazarak bana mail atın, ben tekrar bir kontrol edeyim.
+
+11
+00:02:13,840 --> 00:02:16,099
+Olur mu? İnsanlık hal belki yanlış girilmiştir.
+
+12
+00:02:16,099 --> 00:02:32,259
+Bir ikinci mevzu, bir ikinci mevzu da, biz her sınavdan önce bir hafta şey yaptığımız için, sınava yönelik soru çözdüğümüz için iki hafta geride kaldık.
+
+13
+00:02:33,099 --> 00:02:34,980
+Ve de önümüzdeki hafta dönem bitiyor.
+
+14
+00:02:35,300 --> 00:02:36,800
+Yani önümüzdeki hafta son hafta.
+
+15
+00:02:37,219 --> 00:02:38,960
+Biz şu anda on birinci haftadayız.
+
+16
+00:02:39,379 --> 00:02:40,780
+Üç hafta gerideyiz yani.
+
+17
+00:02:41,219 --> 00:02:42,599
+Daha doğrusu iki hafta gerideyiz.
+
+18
+00:02:42,600 --> 00:02:48,280
+O yüzden cumartesi günü saat 1'de ek ders yapacağız arkadaşlar.
+
+19
+00:02:50,280 --> 00:03:18,000
+Tamam mı?
+
+20
+00:02:55,060 --> 00:02:57,920
+We have an additional course.
+
+21
+00:03:03,219 --> 00:03:04,300
+or lectures
+
+22
+00:03:04,300 --> 00:03:07,939
+on
+
+23
+00:03:07,939 --> 00:03:10,360
+satellite
+
+24
+00:03:14,388 --> 00:03:17,647
+vektör 1 p.m.
+
+25
+00:03:21,972 --> 00:03:22,292
+Ok.
+
+26
+00:03:25,092 --> 00:03:25,731
+Saturday.
+
+27
+00:03:27,332 --> 00:03:28,532
+Saturday is
+
+28
+00:03:33,331 --> 00:03:34,212
+January 2.
+
+29
+00:03:46,451 --> 00:04:09,352
+And if you think that your exam score is less than you expected or you hope, please send me an email writing with your student number and group numbers, then I can check it if any problem or if any miswriting.
+
+30
+00:04:09,352 --> 00:04:24,552
+Now, now, we will talk about linear independence, linear dependence, and spinning sets, and also linear combination of vectors.
+
+31
+00:04:36,307 --> 00:05:04,207
+The final exam includes all of the weeks, all of the topics of the lectures, but I recommend you to study first the topics after the second midterm exam, then study the first part later.
+
+32
+00:05:04,207 --> 00:05:16,387
+First study the part after the second midterm, and then study all of the lecture notes.
+
+33
+00:05:16,687 --> 00:05:16,947
+Okay.
+
+34
+00:05:22,100 --> 00:05:28,460
+Linear independence and dependence is very important in this lecture.
+
+35
+00:05:28,460 --> 00:05:34,960
+So, we have vector space V or real vector space.
+
+36
+00:05:40,403 --> 00:05:50,764
+V1, V2, Vn are linearly dependent.
+
+37
+00:05:52,564 --> 00:06:01,764
+V1 to Vn in a vector space V are said to be linearly dependent.
+
+38
+00:06:01,764 --> 00:06:13,363
+If there exists constants X1 to the Xn, not all 0,
+
+39
+00:06:18,516 --> 00:06:26,316
+such that x1, v1 plus x2, v2 plus
+
+40
+00:06:32,531 --> 00:06:35,291
+xn vn
+
+41
+00:06:35,291 --> 00:06:37,871
+equal to zero.
+
+42
+00:06:38,531 --> 00:06:40,351
+So in linearly dependent
+
+43
+00:06:40,351 --> 00:06:42,752
+or if
+
+44
+00:06:42,752 --> 00:06:45,791
+the vectors v1 to the vn
+
+45
+00:06:45,791 --> 00:06:47,051
+are linearly dependent
+
+46
+00:06:47,051 --> 00:06:50,431
+we solve
+
+47
+00:06:50,431 --> 00:06:54,451
+this homogeneous system
+
+48
+00:06:54,451 --> 00:06:55,692
+and find
+
+49
+00:06:55,692 --> 00:06:59,531
+x1 x2 to the xn
+
+50
+00:06:59,531 --> 00:07:01,031
+if
+
+51
+00:07:01,031 --> 00:07:04,391
+at least
+
+52
+00:07:04,391 --> 00:07:08,531
+one of
+
+53
+00:07:08,531 --> 00:07:10,611
+these constants
+
+54
+00:07:10,611 --> 00:07:13,831
+is different from zero
+
+55
+00:07:13,831 --> 00:07:15,171
+then
+
+56
+00:07:15,171 --> 00:07:20,771
+v1 to the vn are
+
+57
+00:07:20,771 --> 00:07:21,871
+linearly
+
+58
+00:07:25,588 --> 00:07:26,367
+Dependement.
+
+59
+00:07:27,268 --> 00:07:27,487
+Ok.
+
+60
+00:07:32,660 --> 00:07:41,460
+We want to do, we and us, linearly independent.
+
+61
+00:07:46,963 --> 00:07:47,584
+If
+
+62
+00:07:57,555 --> 00:08:05,235
+whenever we form this summation, sorry, x1,
+
+63
+00:08:17,300 --> 00:08:17,819
+0.
+
+64
+00:08:20,819 --> 00:08:25,939
+Then, all the constants x1 to xn.
+
+65
+00:08:30,387 --> 00:08:32,107
+Ar, zero.
+
+66
+00:08:33,548 --> 00:08:33,987
+So,
+
+67
+00:08:38,196 --> 00:08:46,636
+If you want to determine for the given vectors are linearly dependent or linearly independent,
+
+68
+00:08:47,235 --> 00:08:55,576
+first you form this summation or this equation and this is actually a homogenous linear system.
+
+69
+00:08:56,436 --> 00:09:02,076
+Solve this system, find these coefficients x1 to the xn.
+
+70
+00:09:02,076 --> 00:09:10,216
+If all of them are zero, it means that if the homogenous system has only a zero solution,
+
+71
+00:09:11,115 --> 00:09:20,416
+then you say that the vectors are linearly independent because it has only zero solution.
+
+72
+00:09:20,416 --> 00:09:33,635
+If the system has non-zero solution, then we say that the vectors v1 to vn are linearly dependent.
+
+73
+00:09:35,135 --> 00:09:35,396
+Okay.
+
+74
+00:09:35,396 --> 00:09:40,516
+Actually, it is same.
+
+75
+00:09:42,056 --> 00:09:43,995
+Same as we say that.
+
+76
+00:09:45,995 --> 00:09:53,496
+Since this is a homogenous system, we know that if we have a system with n equations in n unknowns,
+
+77
+00:09:53,495 --> 00:09:58,096
+or if the coefficient matrix of homogenous system is a square matrix,
+
+78
+00:09:58,975 --> 00:10:09,436
+then if the determinant of the coefficient matrix of homogenous system is different from zero,
+
+79
+00:10:09,436 --> 00:10:15,436
+then we say that...
+
+80
+00:10:15,436 --> 00:10:35,436
+Then we say that...
+
+81
+00:10:20,916 --> 00:10:25,916
+We say that the system has only zero solution.
+
+82
+00:10:28,916 --> 00:10:34,916
+So, for homogeneal system with a suker coefficient matrix,
+
+83
+00:10:34,916 --> 00:10:37,916
+if you look at its determinant,
+
+84
+00:10:37,916 --> 00:10:40,916
+then if the determinant is different from zero,
+
+85
+00:10:40,916 --> 00:10:48,916
+you can conclude that these vectors are linearly dependent
+
+86
+00:10:48,916 --> 00:10:51,916
+because the system has only zero solution.
+
+87
+00:10:51,916 --> 00:10:55,916
+If the determinant is zero,
+
+88
+00:10:55,916 --> 00:11:01,916
+then we have the homogenous system has infinitely many solutions.
+
+89
+00:11:01,916 --> 00:11:12,916
+It means that this equation satisfies for scalars, not all of them zero.
+
+90
+00:11:12,916 --> 00:11:15,916
+So the vectors are linearly dependent.
+
+91
+00:11:15,916 --> 00:11:17,916
+For example,
+
+92
+00:11:25,748 --> 00:11:34,927
+Actually, we already know these vectors. This is actually i, this is j, and this is k.
+
+93
+00:11:43,668 --> 00:12:02,067
+So, first form the summation x1 times e1 plus x2 times e2 plus x3 times e3 is equal to zero.
+
+94
+00:12:02,067 --> 00:12:10,628
+Actually, we are working on the RQ, which is a vector space.
+
+95
+00:12:10,628 --> 00:12:22,707
+So, we can write, or we usually write the vectors in RQ as 3 by 1 matrices.
+
+96
+00:12:22,707 --> 00:12:26,148
+Or,
+
+97
+00:12:31,539 --> 00:12:34,079
+Orduğat triples
+
+98
+00:12:37,875 --> 00:12:55,495
+Ok, so we can write the vectors or the elements of R³ as 3 by 1 matrices, which we can write as ABC or triples, order triples.
+
+99
+00:12:55,495 --> 00:13:12,235
+So here it is given as ordered triples, which is actually same as the right as E1 as the 3 by 1 matrices. These are the same.
+
+100
+00:13:12,235 --> 00:13:35,855
+So x1 times E1 gives x1 0 0 plus x2 times E2 0 x2 0 plus x3 times E3 0 0 x3.
+
+101
+00:13:35,855 --> 00:13:40,295
+What is the zero of this vector space?
+
+102
+00:13:42,235 --> 00:13:49,855
+3 by 1 matrix or 0 triples.
+
+103
+00:13:53,779 --> 00:13:56,779
+And what is the result of this summation?
+
+104
+00:13:57,360 --> 00:13:57,579
+Yes.
+
+105
+00:13:58,100 --> 00:13:58,919
+One question.
+
+106
+00:13:59,419 --> 00:14:02,360
+Why that is equal to zero, zero vector?
+
+107
+00:14:04,000 --> 00:14:05,679
+Because of the definition.
+
+108
+00:14:06,439 --> 00:14:09,879
+Definition of the linear dependence and linear independence.
+
+109
+00:14:10,799 --> 00:14:18,220
+Because we have defined the linear dependence or independence of a vector using this summation.
+
+110
+00:14:18,620 --> 00:14:21,299
+Okay.
+
+111
+00:14:22,299 --> 00:14:23,480
+Thank you.
+
+112
+00:14:23,779 --> 00:14:34,579
+So this gives x1, x2, x3 is equal to zero, zero, zero.
+
+113
+00:14:36,019 --> 00:14:49,319
+So here x1 is zero, x2 is zero, and x3 is also zero.
+
+114
+00:14:49,319 --> 00:15:00,839
+From the definition, the only constants that satisfies this equation are zero.
+
+115
+00:15:00,839 --> 00:15:05,839
+So, therefore, these vectors are linearly independent.
+
+116
+00:15:05,839 --> 00:15:08,399
+Okay.
+
+117
+00:15:08,399 --> 00:16:03,399
+So here.
+
+118
+00:16:07,668 --> 00:16:11,927
+Now, let us show that the vectors are linearly dependent.
+
+119
+00:16:12,868 --> 00:16:22,748
+Again, form this summation, x1 v1 plus x2 v2 plus x3 v3 is equal to zero.
+
+120
+00:16:23,128 --> 00:16:25,388
+We are working on RQ.
+
+121
+00:16:26,508 --> 00:16:33,528
+So, here we have, actually we can write this as in a matrix form.
+
+122
+00:16:33,528 --> 00:16:33,988
+Okay.
+
+123
+00:16:56,244 --> 00:17:24,604
+So, we have an homogenous system. x1 times 1 plus x2 times 2. x1 plus 2x2 plus 3x3 is equal to 0. 2x1, this is 0, plus 2x3 equal to 0.
+
+124
+00:17:24,604 --> 00:17:38,864
+and the last row, 0x2 plus x3 is equal to 0. So, you have to solve this homogenous system.
+
+125
+00:17:42,084 --> 00:17:51,364
+But, it is here only important to know that if the homogenous system has a 0 solution or
+
+126
+00:17:51,364 --> 00:17:54,364
+or
+
+127
+00:17:54,364 --> 00:17:58,364
+or not.
+
+128
+00:17:58,364 --> 00:18:01,364
+Therefore, you can check
+
+129
+00:18:01,364 --> 00:18:08,364
+here, you can check here, the determinant of this homogenous system, the determinant of this
+
+130
+00:18:08,364 --> 00:18:09,364
+the matrix, which is actually
+
+131
+00:18:09,364 --> 00:18:23,364
+coefficient matrix, which is actually 1, 2, 3, 2, 0, 2, 0, 1, 1.
+
+132
+00:18:23,364 --> 00:18:29,364
+Please, please, please, please, please, please.
+
+133
+00:18:32,948 --> 00:18:46,948
+vektör, v1 ve v2 ve v3.
+
+134
+00:18:46,948 --> 00:18:52,948
+So, if you have m vektörs,
+
+135
+00:18:58,963 --> 00:19:10,543
+m-vektörs in r to the n, then you can write these vectors as a column or as a row of a matrix.
+
+136
+00:19:11,043 --> 00:19:19,543
+And if the determinant of this matrix is different from 0, then these vectors are linearly.
+
+137
+00:19:19,543 --> 00:19:29,364
+if the determinant is different from 0, then the vectors as linearly dependent or independent?
+
+138
+00:19:32,583 --> 00:19:33,624
+Independent, good.
+
+139
+00:19:34,384 --> 00:19:39,663
+And if the determinant is 0, then the vectors are linearly dependent.
+
+140
+00:19:39,663 --> 00:19:49,344
+So, what is the determinant of this 0, 0, 6?
+
+141
+00:19:49,344 --> 00:19:49,403
+0, 6.
+
+142
+00:19:54,867 --> 00:19:58,067
+Minus 4, 4, minus 2.
+
+143
+00:19:58,768 --> 00:20:00,627
+So, determinant is 0.
+
+144
+00:20:00,867 --> 00:20:05,288
+It means that this system has infinitely many solutions.
+
+145
+00:20:06,107 --> 00:20:11,667
+Therefore, the vectors V1, V2, and V3 are linearly dependent.
+
+146
+00:20:12,788 --> 00:20:21,427
+Or, if you want, you can solve this linear system by using Kramer's rule or Gauss-Jordan reduction.
+
+147
+00:20:21,427 --> 00:20:27,347
+Then you'll find that the system has infinitely many solutions.
+
+148
+00:20:31,892 --> 00:20:35,152
+is done in here.
+
+149
+00:20:39,571 --> 00:20:43,571
+Bu sistemde çok manyaklı birçok.
+
+150
+00:20:45,571 --> 00:20:50,711
+Ve V1, V2 ve V3 ve V3'e de
+
+151
+00:20:50,711 --> 00:20:52,571
+Bireliğe de
+
+152
+00:22:30,996 --> 00:22:47,556
+We have three vectors in P2. What is P2? P2 is the vector space of all polynomials with degree less than 2 or equal to 2 and 0 polynomial.
+
+153
+00:22:48,556 --> 00:22:59,936
+You know this vector space? The vector space of all polynomials with degree less than 2 or equal to 2 and 0 polynomial.
+
+154
+00:23:04,180 --> 00:23:34,039
+So, again, we have to form, actually, I don't like the x1, I write a1, we form a1 times v1 plus a2 times v2 plus a3 times v3 is equal to 0 of this letter space, and find a1, a2, and a3.
+
+155
+00:23:34,180 --> 00:23:38,539
+So, we have v1, this one.
+
+156
+00:24:04,723 --> 00:24:05,723
+0.
+
+157
+00:24:05,723 --> 00:24:18,723
+We know that how to how to multiply the polynomial with a scalar and also we know addition of the polynomials.
+
+158
+00:24:18,723 --> 00:24:30,723
+So we have to we have to add the coefficients of the same power terms.
+
+159
+00:24:30,723 --> 00:24:35,723
+Therefore, the coefficients of the T square is.
+
+160
+00:24:35,723 --> 00:24:39,723
+A one.
+
+161
+00:24:43,667 --> 00:24:45,907
+plus 2A2
+
+162
+00:24:45,907 --> 00:24:48,907
+plus
+
+163
+00:24:48,907 --> 00:24:52,907
+3A3
+
+164
+00:24:52,907 --> 00:24:56,127
+t2
+
+165
+00:24:56,127 --> 00:25:00,067
+plus, what is the covariance of the t?
+
+166
+00:25:00,707 --> 00:25:01,147
+A1
+
+167
+00:25:04,948 --> 00:25:16,067
+plus a2 plus 2a3 t plus 2a1
+
+168
+00:25:20,211 --> 00:25:35,672
+There is no constant in this polynomial. So it is 0 times A2, 0, plus 2 times A3 is equal to 0.
+
+169
+00:25:35,672 --> 00:25:50,172
+It means that we have a linear homogenous system, A1 plus, this has to be 0.
+
+170
+00:26:01,428 --> 00:26:03,508
+Also, this has to be zero.
+
+171
+00:26:11,155 --> 00:26:14,275
+And this must be also zero.
+
+172
+00:26:20,372 --> 00:26:24,292
+Çünkü bu summation bu, 0.
+
+173
+00:26:25,572 --> 00:26:31,731
+Eğer bu homogeniyeti sistemden oluşturuyor,
+
+174
+00:26:42,228 --> 00:26:55,648
+Then, most probably you see that this system has infinitely many solution or look at its determinant, the coefficient, the determinant of the coefficient matrix,
+
+175
+00:26:55,648 --> 00:27:10,148
+which is 1, 2, 3, 1, 1, 2, 2, 0, 2.
+
+176
+00:27:10,148 --> 00:27:28,008
+So, this is 2 plus 8 minus 6 minus 4.
+
+177
+00:27:34,579 --> 00:27:37,579
+bu 0, 0
+
+178
+00:27:37,579 --> 00:27:44,579
+it means that it means that these vectors are linearly
+
+179
+00:27:44,579 --> 00:27:48,579
+dependent
+
+180
+00:27:53,971 --> 00:27:55,331
+Teacher, one question.
+
+181
+00:27:57,711 --> 00:28:05,051
+Only for the dependent or independent, we have to equal to zero?
+
+182
+00:28:06,372 --> 00:28:06,811
+Yes.
+
+183
+00:28:07,991 --> 00:28:11,211
+Only we have to do that, nothing else then?
+
+184
+00:28:11,211 --> 00:28:17,132
+We form first, for the linear independence or linear dependence,
+
+185
+00:28:18,432 --> 00:28:23,771
+we form for the given vectors, this summation is equal to zero.
+
+186
+00:28:23,971 --> 00:28:27,271
+Okay, so we have a homogenous system.
+
+187
+00:28:28,071 --> 00:28:30,231
+Then solve this homogenous system.
+
+188
+00:28:31,112 --> 00:28:37,632
+If all of the coefficients, if all of the unknowns here are zero,
+
+189
+00:28:37,632 --> 00:28:41,731
+then we say that the vectors are linearly independent.
+
+190
+00:28:43,152 --> 00:28:47,571
+It means that if this homogenous system has only zero solution,
+
+191
+00:28:48,051 --> 00:28:51,211
+because all of the unknowns are zero,
+
+192
+00:28:51,211 --> 00:28:53,251
+so it means that it has only zero solution,
+
+193
+00:28:53,251 --> 00:28:56,811
+then the system, the vectors are linearly independent.
+
+194
+00:28:58,112 --> 00:29:01,571
+If at least one of them,
+
+195
+00:29:02,511 --> 00:29:03,851
+one of the unknowns,
+
+196
+00:29:04,471 --> 00:29:07,551
+A1 to the AN or A1 to A3,
+
+197
+00:29:07,951 --> 00:29:08,912
+is non-zero,
+
+198
+00:29:08,912 --> 00:29:14,011
+or if the homogenous system has non-zero solution,
+
+199
+00:29:14,551 --> 00:29:18,731
+then we say that these vectors are linearly dependent.
+
+200
+00:29:19,811 --> 00:29:20,112
+Okay.
+
+201
+00:29:22,511 --> 00:29:23,211
+Now,
+
+202
+00:29:23,211 --> 00:29:27,971
+we talk about linear combination of vectors.
+
+203
+00:29:27,971 --> 00:29:28,192
+We talk about linear combination of vectors.
+
+204
+00:29:40,852 --> 00:29:48,252
+I forgot to say that, from now on, we usually use
+
+205
+00:29:54,228 --> 00:29:56,868
+u plus v instead of this.
+
+206
+00:30:00,211 --> 00:30:04,971
+C times u instead of this scalar multiplication.
+
+207
+00:30:04,971 --> 00:30:09,211
+From now on, we use these notations.
+
+208
+00:30:13,875 --> 00:30:26,675
+Since we are working on vector space, it means that the summation or addition is the vector addition and the multiplication is scalar multiplication.
+
+209
+00:30:34,548 --> 00:30:41,347
+Let, we want to be an R vektörs in a vektör space V.
+
+210
+00:30:44,627 --> 00:30:45,268
+And,
+
+211
+00:30:48,948 --> 00:30:55,948
+for a vector w in v
+
+212
+00:31:00,307 --> 00:31:21,948
+If we can write w as the multiplication of the vectors with the scalars and addition of them, then we say that w is the linear combination of the vectors we want to do vn.
+
+213
+00:31:21,948 --> 00:31:50,387
+So, if any vector w in a vector space v can be written as the form where x1 to the xn are scalars of real numbers, then w is called or w is said to be the linear combination of the vectors v1 to the vn.
+
+214
+00:31:50,387 --> 00:31:52,307
+For example,
+
+215
+00:32:01,172 --> 00:32:02,412
+İn alçık
+
+216
+00:32:07,892 --> 00:32:09,491
+vektörs v1
+
+217
+00:32:16,884 --> 00:32:17,604
+Hüito,
+
+218
+00:32:25,652 --> 00:32:27,652
+ve 3
+
+219
+00:32:39,412 --> 00:32:40,552
+vektör vi
+
+220
+00:32:48,627 --> 00:32:51,028
+2, 1, 5
+
+221
+00:32:55,571 --> 00:32:57,571
+is a linear combination of
+
+222
+00:33:00,756 --> 00:33:07,756
+V is a linear combination of
+
+223
+00:33:11,892 --> 00:33:17,892
+v1, v2, v3
+
+224
+00:33:17,892 --> 00:33:19,892
+Eğer bulabilirsiniz
+
+225
+00:33:27,028 --> 00:33:31,028
+Green numbers or scalers
+
+226
+00:33:37,299 --> 00:33:44,299
+A1, A2, A3, so that
+
+227
+00:33:52,051 --> 00:33:53,551
+We is equal to
+
+228
+00:33:57,748 --> 00:34:05,448
+A1, B1 plus A2, V2 plus A3, V3.
+
+229
+00:34:06,988 --> 00:34:18,748
+So it is different from the linear dependence or independence because in linear dependence or independence,
+
+230
+00:34:18,748 --> 00:34:37,748
+we form this equation and this is equal to zero and actually no need to compute the scalars or the numbers A1, A2 or A3 in linear dependence or independence.
+
+231
+00:34:37,748 --> 00:34:45,748
+It is only important to determine if the homogenous system has zero solutory.
+
+232
+00:34:49,652 --> 00:35:00,291
+We have to find the scalars a1, a2, and a3, for or to write v as the linear combination of the others.
+
+233
+00:35:00,291 --> 00:35:01,972
+Okay, so
+
+234
+00:35:07,860 --> 00:35:17,960
+So, A1 V1 plus A2 V2 plus A3 V3 is equal to V.
+
+235
+00:35:17,960 --> 00:35:44,680
+means that A1 V1 is 1 to 1 plus A2 V2 is 1 0 2 plus A3 times V3 is 1 1 0 is equal to 1 2 or 2 1 5.
+
+236
+00:35:44,680 --> 00:35:47,780
+Therefore, we have a linear system.
+
+237
+00:35:47,780 --> 00:35:59,039
+A1 plus A2 plus A3 is equal to 2.
+
+238
+00:35:59,559 --> 00:36:11,480
+So, A1 plus 0 times 0 plus A3 is equal to 1.
+
+239
+00:36:11,480 --> 00:36:23,220
+And A1 plus A2 is equal to 5.
+
+240
+00:36:23,680 --> 00:36:26,579
+So, we have three equations in three unknowns.
+
+241
+00:36:26,579 --> 00:36:37,579
+We can solve this linear system by chromatural or by the inverse of a coefficient matrix or by Gauss reduction.
+
+242
+00:36:37,579 --> 00:36:39,579
+Gauss-Jordan reduction.
+
+243
+00:36:39,579 --> 00:36:46,579
+Write its coefficient matrix or augmented matrix 1 1 1.
+
+244
+00:36:46,579 --> 00:36:48,300
+1 1
+
+245
+00:36:51,411 --> 00:37:04,851
+2, 2, 0, 1, 1, 2, 0, 5.
+
+246
+00:37:05,811 --> 00:37:13,151
+Ok, let us put this matrix into the row eşelon form.
+
+247
+00:37:13,151 --> 00:37:25,371
+Multiplying the first row by minus 2 and add it to the second row, and multiply the first row by minus 1 and add it to the third row, gives
+
+248
+00:37:30,516 --> 00:37:49,615
+1, 1, 1, 2, 0, minus 2, minus 1, minus 3, 0, 3, 1, 7.
+
+249
+00:37:55,284 --> 00:38:01,284
+Add the third row to the second one gives
+
+250
+00:38:04,947 --> 00:38:05,547
+1
+
+251
+00:38:09,364 --> 00:38:32,164
+0, 4, and multiply this row by minus 3 and add it to the third row gives 0, minus 12, minus 5.
+
+252
+00:38:38,324 --> 00:38:45,324
+Yani A3'ı da
+
+253
+00:38:45,324 --> 00:38:46,324
+minus 5
+
+254
+00:38:51,443 --> 00:39:16,403
+A2 is equal to 4. Since A1 plus A2 plus A3 is equal to 2, we have A1 as minus 1, so A1 is 3.
+
+255
+00:39:16,403 --> 00:39:20,403
+Ok, so...
+
+256
+00:39:29,204 --> 00:39:58,964
+We can write, we can write V as the linear combination of the others, where V is equal to A1, 3, V1, plus 4, V2, minus 5,
+
+257
+00:39:59,204 --> 00:40:02,784
+We, 3, OK?
+
+258
+00:40:07,347 --> 00:40:09,347
+Here is another example.
+
+259
+00:40:10,547 --> 00:40:13,748
+W is a linear combination of the vectors u and v,
+
+260
+00:40:13,748 --> 00:40:19,347
+but W' is not the linear combination of these vectors.
+
+261
+00:40:19,347 --> 00:40:25,748
+So we can write W as the linear combination of these vectors.
+
+262
+00:40:25,748 --> 00:40:31,748
+Means W is equal to x1 times u plus x2 times v.
+
+263
+00:40:31,748 --> 00:40:34,547
+So we have to find x1 and x2.
+
+264
+00:40:34,547 --> 00:40:45,188
+Therefore, 9 is equal to x1 times 1 plus x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1 times x1
+
+265
+00:40:51,411 --> 00:40:53,851
+x2 times 6.
+
+266
+00:40:53,851 --> 00:41:01,131
+So, x1 plus 6 x2 is equal to 9.
+
+267
+00:41:02,371 --> 00:41:13,951
+And 2 x1 plus 4 x2 is equal to 2.
+
+268
+00:41:13,951 --> 00:41:26,491
+At last entry, minus x1 plus 2 x2 is equal to 7.
+
+269
+00:41:26,491 --> 00:41:56,471
+1 x1 plus 5 x2 is equal to 9.
+
+270
+00:41:35,668 --> 00:41:37,668
+So, writing the...
+
+271
+00:41:39,468 --> 00:41:42,668
+...rugmatik matriks of this system...
+
+272
+00:42:00,179 --> 00:42:04,980
+Multiplying the first row by minus 2 and add it to the second row.
+
+273
+00:42:06,139 --> 00:42:11,599
+And multiply or adding the first row to the third row we have.
+
+274
+00:42:17,076 --> 00:42:26,016
+This is 0, multiply this minus 2, minus 12, minus 8, minus 16.
+
+275
+00:42:27,336 --> 00:42:32,956
+And this is 0, 7, 8, sorry, 16.
+
+276
+00:42:32,956 --> 00:42:33,755
+Oh.
+
+277
+00:42:36,235 --> 00:42:38,096
+Adding second row.
+
+278
+00:42:42,612 --> 00:42:43,612
+...to the...
+
+279
+00:42:45,372 --> 00:42:46,372
+...eading...
+
+280
+00:42:46,372 --> 00:42:48,612
+...third row to the second row...
+
+281
+00:42:48,612 --> 00:42:49,612
+...we have...
+
+282
+00:42:53,748 --> 00:42:55,987
+169
+
+283
+00:43:00,211 --> 00:43:06,092
+0, minus 8, minus 16, 0, 0, 0.
+
+284
+00:43:10,195 --> 00:43:18,956
+ve, if you multiply the second rule by minus 1 over 8, we have
+
+285
+00:43:25,844 --> 00:43:28,264
+1, 2.
+
+286
+00:43:28,804 --> 00:43:43,844
+It means that x2 is 2, and from this row, we have x1 plus 6, x2 is equal to 9.
+
+287
+00:43:44,583 --> 00:43:53,704
+We have x2 as 2, this is 12, so x1 is minus 3.
+
+288
+00:43:53,704 --> 00:44:07,884
+Therefore, w is equal to minus 3u plus 2v.
+
+289
+00:44:08,583 --> 00:44:11,864
+Actually, we can check if it is true or not.
+
+290
+00:44:12,963 --> 00:44:22,844
+Multiply u by minus 3, we have minus 3, minus 6.
+
+291
+00:44:23,704 --> 00:44:35,003
+Multiply u by minus 3, multiply v by 2, we have 12, 8, 4, and add these two vectors.
+
+292
+00:44:35,864 --> 00:44:37,724
+We have 9.
+
+293
+00:44:41,364 --> 00:44:44,063
+2 and 7.
+
+294
+00:44:44,364 --> 00:44:50,963
+So W is the linear combination of the vectors U and U.
+
+295
+00:44:53,364 --> 00:44:59,164
+And it is said that W' is not a linear combination of these vectors.
+
+296
+00:44:59,164 --> 00:45:14,164
+So if we cannot find the coefficients x1 and x2, if the system...
+
+297
+00:45:23,507 --> 00:45:26,147
+If the system has no solution,
+
+298
+00:45:32,916 --> 00:45:40,856
+Then W' prime is not a linear combination of U and V.
+
+299
+00:45:41,976 --> 00:45:48,996
+So, putting the automatic matrix in the row echelon form.
+
+300
+00:46:10,132 --> 00:46:12,132
+Actually, this is the...
+
+301
+00:46:12,132 --> 00:46:13,972
+Yes.
+
+302
+00:46:14,572 --> 00:46:20,711
+Sorry, the augmented matris is wrong because of the third column, if you looked at.
+
+303
+00:46:21,992 --> 00:46:22,912
+This is wrong?
+
+304
+00:46:24,192 --> 00:46:26,552
+4 minus 2, 8.
+
+305
+00:46:26,731 --> 00:46:28,032
+This is minus 1.
+
+306
+00:46:28,032 --> 00:46:29,012
+Ah, yes.
+
+307
+00:46:37,204 --> 00:46:50,044
+So, the role eşelon form of this augmented matrix gives this matrix, the rank of A is 2, but the rank of AB is 3.
+
+308
+00:46:50,664 --> 00:46:58,124
+Since the rank of A is not equal to rank of AB, then we say that this system has no solution or inconstant.
+
+309
+00:46:58,124 --> 00:47:07,964
+Therefore, we cannot write V' as the linear combination of the vectors U and V.
+
+310
+00:47:07,964 --> 00:47:16,384
+Or here, says 0 is equal to 1.
+
+311
+00:47:17,484 --> 00:47:19,384
+So, this is the introduction.
+
+312
+00:47:21,324 --> 00:47:24,384
+Therefore, the system has no solution.
+
+313
+00:47:33,235 --> 00:47:35,235
+For which values of k
+
+314
+00:47:39,188 --> 00:47:44,268
+We can write W as the minimum combination of the vectors, V and V.
+
+315
+00:47:46,048 --> 00:47:47,048
+So...
+
+316
+00:47:54,931 --> 00:47:55,931
+B.
+
+317
+00:48:02,804 --> 00:48:05,503
+is the linear combination of the rektörs
+
+318
+00:48:12,916 --> 00:48:14,155
+U &
+
+319
+00:48:24,563 --> 00:48:31,203
+So we can find the scalars a1 and a2.
+
+320
+00:48:32,563 --> 00:48:43,903
+It means that 3a1 plus 2a2 is equal to 1.
+
+321
+00:48:43,903 --> 00:48:47,623
+And this is 0.
+
+322
+00:48:48,403 --> 00:48:54,364
+Minus a2 is equal to minus 2.
+
+323
+00:48:55,263 --> 00:49:07,384
+And the last row, minus 2a1 plus 5a2 is equal to 3.
+
+324
+00:49:07,384 --> 00:49:14,844
+Here we have a2 is 2.
+
+325
+00:49:16,844 --> 00:49:27,303
+If a2 is 2, then a1 is minus 1.
+
+326
+00:49:30,835 --> 00:49:44,975
+So, K is minus 1 times minus minus 2 times minus 1 plus 5 times 2 gives 12.
+
+327
+00:49:51,347 --> 00:49:51,688
+Ok?
+
+328
+00:50:51,635 --> 00:50:54,195
+S p, the set of vectors
+
+329
+00:51:22,483 --> 00:51:29,304
+Let A be the matris.
+
+330
+00:51:34,036 --> 00:51:35,896
+Whose robes or coms?
+
+331
+00:51:45,844 --> 00:51:47,844
+S'ı, or the elements of S.
+
+332
+00:52:00,340 --> 00:52:00,980
+Veğen.
+
+333
+00:52:04,403 --> 00:52:05,503
+S, S
+
+334
+00:52:14,900 --> 00:52:16,320
+Renely independent.
+
+335
+00:52:23,284 --> 00:52:24,764
+If and only if
+
+336
+00:52:30,356 --> 00:52:36,056
+Determinant of a is different from 0.
+
+337
+00:52:48,083 --> 00:53:04,123
+So, if you have m-vektörs in r to the n, write these vectors as the columns or as the rows of the matrix and compute its determinant.
+
+338
+00:53:04,123 --> 00:53:13,423
+If the determinant of this matrix is different from 0, then the vectors are linearly independent.
+
+339
+00:53:14,283 --> 00:53:19,723
+If the determinant is 0, then these vectors are linearly dependent.
+
+340
+00:53:21,723 --> 00:53:29,723
+At the arbitrary term or property, let v1 to the vm are linearly independent vectors.
+
+341
+00:53:29,723 --> 00:53:36,023
+We add one vector vm plus 1 to this vector set.
+
+342
+00:53:36,923 --> 00:53:41,423
+Then this set or these vectors are linearly independent.
+
+343
+00:53:42,723 --> 00:53:53,623
+Therefore, we can write this vector vm plus 1 as the linear combination of the vectors v1 to vm.
+
+344
+00:54:01,139 --> 00:54:01,819
+Diz.
+
+345
+00:54:09,780 --> 00:54:17,280
+Evet, evet, aslında aynı zamanda, saydet, another term, let,
+
+346
+00:54:29,972 --> 00:54:35,972
+S1, S2
+
+347
+00:54:39,795 --> 00:54:41,815
+B. Find subsets of
+
+348
+00:54:54,612 --> 00:55:02,172
+On vervektörsiz
+
+349
+00:55:10,963 --> 00:55:18,203
+Let S be a subset of S2.
+
+350
+00:55:19,804 --> 00:55:20,403
+Then,
+
+351
+00:55:23,563 --> 00:55:24,123
+if
+
+352
+00:55:27,563 --> 00:55:29,923
+S1 is linearly dependent,
+
+353
+00:55:38,612 --> 00:55:39,992
+Su iz desto
+
+354
+00:55:44,436 --> 00:55:53,316
+And if S2 is linearly independent
+
+355
+00:55:56,755 --> 00:56:26,735
+So is S1. So here, from here, if the small set is, if the small set is linearly dependent, so the big set is also linearly dependent. If the bigger one is linearly independent, so the small one is also linearly independent.
+
+356
+00:56:26,755 --> 00:56:28,076
+Ok.
+
+357
+00:56:37,235 --> 00:57:05,915
+If we have m vektörs in r to the n, or if we have m vektörs with each has length n, write these vektörs in a matrix, then if the rank of this matrix is equal to r, then
+
+358
+00:57:05,915 --> 00:57:16,415
+since we have m vektörs, the r vektörs among all of these m vektörs are linearly independent.
+
+359
+00:57:27,380 --> 00:57:28,420
+Misal biz
+
+360
+00:57:33,940 --> 00:58:03,940
+Bu, bu
+
+361
+00:58:03,940 --> 00:58:06,539
+has infinitely many solutions.
+
+362
+00:58:09,039 --> 00:58:15,340
+So it means that the system has no zero solution.
+
+363
+00:58:16,039 --> 00:58:20,340
+So the vectors are linearly dependent.
+
+364
+00:58:22,179 --> 00:58:22,460
+Okay.
+
+365
+00:58:52,532 --> 00:58:54,072
+Location for you
+
+366
+00:58:57,972 --> 00:58:59,132
+set S
+
+367
+00:59:12,596 --> 00:59:13,635
+Consisting.
+
+368
+00:59:19,059 --> 00:59:22,420
+Oni, zero vektör, zero element.
+
+369
+00:59:32,275 --> 00:59:33,036
+Peace.
+
+370
+00:59:36,851 --> 00:59:41,851
+Lineerli, dependent or independent.
+
+371
+00:59:51,059 --> 01:00:04,099
+set, which consists of only the zero vector or zero element, is linearly dependent or independent.
+
+372
+01:00:07,603 --> 01:00:08,303
+Unos.
+
+373
+01:00:21,043 --> 01:00:21,463
+Ok.
+
+374
+01:00:25,063 --> 01:00:26,503
+Did you understand my question?
+
+375
+01:00:33,300 --> 01:00:39,360
+Set S is linearly dependent or independent. This is the exam question actually.
+
+376
+01:00:44,563 --> 01:00:55,583
+Most probably you will see equation in the exam in the final exam related to this proper for this example.
+
+377
+01:01:02,228 --> 01:01:03,648
+Molde de unos.
+
+378
+01:01:07,699 --> 01:01:08,259
+Okay.
+
+379
+01:01:11,259 --> 01:01:15,219
+I will help you to solve this question.
+
+380
+01:01:16,099 --> 01:01:19,619
+What is the definition of the linear dependence or independence?
+
+381
+01:01:22,099 --> 01:01:36,980
+If we have vectors v1 to the vn, then we form the summation a1 times v1 plus a2 times v2.
+
+382
+01:01:41,588 --> 01:01:43,168
+It is equal to zero.
+
+383
+01:01:44,508 --> 01:01:56,648
+Then if all of the coefficients a1 to the ak are zero, then we see that the set or the vectors v1 to the vk are linearly independent.
+
+384
+01:01:57,208 --> 01:02:04,928
+If at least one of them is non-zero, then we see that these vectors are linearly dependent.
+
+385
+01:02:04,928 --> 01:02:07,188
+So we have only one vector here.
+
+386
+01:02:09,508 --> 01:02:14,568
+a1 times zero is equal to zero.
+
+387
+01:02:15,888 --> 01:02:26,148
+So since we multiply the scalar with good, flat, good, dependent, we always have zero.
+
+388
+01:02:26,368 --> 01:02:33,868
+So we can find an a1 here different from zero.
+
+389
+01:02:33,868 --> 01:02:40,028
+For example, three times zero vector is equal to zero vector.
+
+390
+01:02:40,827 --> 01:02:48,988
+Therefore, the set consisting only zero element is linearly dependent.
+
+391
+01:02:59,635 --> 01:03:01,635
+Tamam, çok önemli.
+
+392
+01:03:15,764 --> 01:03:20,244
+So, follows from this result.
+
+393
+01:03:22,463 --> 01:03:25,003
+Again, this property will be very important.
+
+394
+01:03:31,380 --> 01:03:33,480
+Eğer S is any set,
+
+395
+01:03:36,947 --> 01:03:46,067
+if s is any set of vectors
+
+396
+01:03:54,547 --> 01:03:55,787
+That contains
+
+397
+01:04:04,403 --> 01:04:05,724
+Zero vektör.
+
+398
+01:04:08,664 --> 01:04:09,224
+Then,
+
+399
+01:04:14,324 --> 01:04:16,124
+This must be
+
+400
+01:04:22,132 --> 01:04:26,632
+Lineerli, dependent, or independent.
+
+401
+01:04:41,940 --> 01:04:52,659
+If a set includes 0 vector or 0 element, then this set must be linearly dependent or independent.
+
+402
+01:04:58,867 --> 01:05:14,867
+It is very similar to the yes, musing. It is very similar to this one, because it says here, s includes, yes, yes, say it.
+
+403
+01:05:16,867 --> 01:05:24,867
+s is a set like this, vektörs of 0.
+
+404
+01:05:24,867 --> 01:05:28,867
+s is a set like this, so we form the summation.
+
+405
+01:05:38,963 --> 01:05:49,663
+A1, V1 plus AK, VK plus AK plus 1 times 0.
+
+406
+01:05:49,663 --> 01:06:19,583
+We guarantee that, or we know that, if all of the A1 to the AK are 0, but this equation holds, since we multiply a real number with a 0 vector, it also gives 0.
+
+407
+01:06:19,663 --> 01:06:33,844
+We can find AK plus 1, different from 0, means that this set is linearly dependent.
+
+408
+01:06:41,972 --> 01:07:11,952
+Vestil de vektör uzayları,
+
+409
+01:06:52,052 --> 01:06:53,492
+Consisting of a
+
+410
+01:06:59,443 --> 01:07:00,344
+Lineer 0
+
+411
+01:07:06,708 --> 01:07:07,708
+vektör
+
+412
+01:07:12,980 --> 01:07:24,980
+If s consists of a vector v, which is non-zero, then this set is
+
+413
+01:07:29,235 --> 01:07:39,556
+Lineerli, ve góð, góð frat, lineerli, independent, because
+
+414
+01:07:44,596 --> 01:07:56,096
+A1 times V1 is equal to zero holds only when A1 is zero, so this set is linearly independent.
+
+415
+01:07:56,096 --> 01:07:59,096
+And the last property.
+
+416
+01:08:36,275 --> 01:08:36,916
+Yüz.
+
+417
+01:08:40,467 --> 01:08:44,887
+We want, we talk to, we change.
+
+418
+01:08:49,492 --> 01:08:50,592
+Arve, kız.
+
+419
+01:08:56,115 --> 01:08:57,676
+vektör spesifi
+
+420
+01:09:06,163 --> 01:09:36,143
+vektör
+
+421
+01:09:11,539 --> 01:09:13,539
+İki tane daha fazla.
+
+422
+01:09:19,923 --> 01:09:21,923
+bir şey
+
+423
+01:09:23,923 --> 01:09:25,923
+ve
+
+424
+01:09:28,115 --> 01:09:33,055
+İvan tabur, vektör uzay, öz, lineerli.
+
+425
+01:09:38,771 --> 01:09:39,532
+Dependent.
+
+426
+01:09:45,300 --> 01:09:51,060
+Bu, bu işin için, neden bu?
+
+427
+01:09:51,060 --> 01:10:01,960
+Evet, bu
+
+428
+01:10:08,372 --> 01:10:15,372
+If we have k-vektörs v1 to the vk, and if
+
+429
+01:10:18,707 --> 01:10:25,607
+Any two of them are equal, then this set or this vector cell linearly dependent.
+
+430
+01:10:37,939 --> 01:10:40,099
+Ok, good, good.
+
+431
+01:10:42,259 --> 01:10:48,939
+If, if two of them are equal, then
+
+432
+01:10:52,500 --> 01:10:54,819
+A1, V1, plus
+
+433
+01:10:59,764 --> 01:11:00,364
+Teşekkürler.
+
+434
+01:11:07,444 --> 01:11:11,964
+Say, these two are same.
+
+435
+01:11:14,464 --> 01:11:16,364
+The last two are same.
+
+436
+01:11:29,876 --> 01:11:31,876
+Say this is OV.
+
+437
+01:11:34,876 --> 01:11:35,876
+Okay.
+
+438
+01:11:42,771 --> 01:12:07,692
+If we take, if we take, this is equal to zero, if we take ak minus one as minus one, and ak one, then this condition also holds, but we find two coefficients different from zero.
+
+439
+01:12:07,692 --> 01:12:18,652
+So, so, so, it means that these vectors are linearly independent. Thank you, [öğrenci]. Good.
+
+440
+01:12:25,619 --> 01:12:26,680
+Er...
+
+441
+01:12:49,908 --> 01:12:58,188
+Determine whether or not the vectors are linearly independent. We know how to solve this
+
+442
+01:12:58,188 --> 01:13:12,807
+question. We have four vectors in R to the four, so you write the vectors in the columns of the matrix.
+
+443
+01:13:12,807 --> 01:13:33,508
+1, 0, 0, 1, 0, minus 1, 2, 1, 1, 2, 2, 1, and minus 2, 1, 0, 0. Look at the determinant of this matrix.
+
+444
+01:13:33,508 --> 01:13:47,847
+at the first row by multiplying minus 1 to the third row, so it gives 0, 0, 0,
+
+445
+01:13:52,564 --> 01:14:17,904
+So, apply the Laplace expansion element to the first column gives the determinant of this matrix 1 times minus 1 to the 1 plus 1, minus 1, 2, 1, 2, 0, 1, 0, 2.
+
+446
+01:14:17,904 --> 01:14:20,564
+So, what is the determinant of this matrix?
+
+447
+01:14:21,804 --> 01:14:37,844
+Gives minus 4, 0, 0, minus 2, minus 8, 0.
+
+448
+01:14:37,844 --> 01:14:42,224
+So, it is minus 14, different from 0.
+
+449
+01:14:44,324 --> 01:14:46,584
+Therefore, the vectors are linearly.
+
+450
+01:14:50,228 --> 01:14:51,068
+independent.
+
+451
+01:14:53,268 --> 01:14:53,587
+Ok.
+
+452
+01:14:57,347 --> 01:15:02,768
+Express the vector u as the linear combination of a, b, c, and d.
+
+453
+01:15:03,028 --> 01:15:07,587
+So, you have to find the coefficients.
+
+454
+01:15:22,292 --> 01:15:27,252
+You have to find the coefficients x1, x2, x3, and x4.
+
+455
+01:15:28,452 --> 01:15:35,412
+So, this is the same as the solution of a linear system.
+
+456
+01:15:43,539 --> 01:15:50,640
+Eğer bu sistemden veren, bu sistemden veren, co-efficiiyonu, böylece bu.
+
+457
+01:15:51,319 --> 01:15:54,439
+Vektör u, lineer combinasyonu ile de,
+
+458
+01:15:55,659 --> 01:15:56,600
+diğerler.
+
+459
+01:16:03,796 --> 01:16:25,296
+Now, last topic of today's lecture is the spinning sets. We have already learned linear combinations. Linear combinations actually play an important role for describing the vector spaces.
+
+460
+01:16:28,724 --> 01:16:54,364
+So, all set of the linear combination or the all possible linear combination of the pair of vectors gives us a subspace of a vector space. Now, we will give the definition of the spanning set or the span set with the vectors. Now, we have a vector space a week.
+
+461
+01:16:54,364 --> 01:17:02,284
+and the set of vectors which is a subset of this vector space.
+
+462
+01:17:07,252 --> 01:17:34,892
+The set of S, the set S is called, sorry, the set of all vectors in V, the set of all vectors in V, that are linear combinations of the vectors in S, linear combinations of the vectors in S,
+
+463
+01:17:34,892 --> 01:17:40,832
+is denoted by, span S or S,
+
+464
+01:17:44,595 --> 01:17:48,475
+Ağt, ağt, düşsü et.
+
+465
+01:17:52,212 --> 01:17:53,332
+is called
+
+466
+01:17:53,332 --> 01:18:02,372
+spanning set of the vectors we want to do, vr.
+
+467
+01:18:09,427 --> 01:18:29,427
+So, if you have a set of vectors S, then spring set of this set is linear combination of all possible linear combination of its vectors.
+
+468
+01:18:29,427 --> 01:18:30,427
+Okay?
+
+469
+01:18:36,435 --> 01:18:45,055
+This property is very important. Span S is a subspace of the vector space.
+
+470
+01:18:51,539 --> 01:19:10,448
+For example,
+
+471
+01:19:19,188 --> 01:19:21,228
+Consider the set as
+
+472
+01:19:29,363 --> 01:19:30,363
+of
+
+473
+01:19:32,523 --> 01:19:35,003
+2x3 matris
+
+474
+01:19:41,652 --> 01:19:42,572
+Ki ve on like.
+
+475
+01:19:56,659 --> 01:20:00,680
+1, 0, 0, 0, 0, 0.
+
+476
+01:20:33,684 --> 01:20:35,684
+Bu ne?
+
+477
+01:20:40,275 --> 01:20:50,996
+Span S is the set, say this is vector v1, vector v2, vector v3, vector v4.
+
+478
+01:20:51,996 --> 01:20:56,515
+Span S is linear combination or possible linear combination of the vectors.
+
+479
+01:20:58,195 --> 01:21:02,956
+So a1, v1, plus or at e.
+
+480
+01:21:09,939 --> 01:21:11,879
+Evet, evet, Flaat, evet.
+
+481
+01:21:15,636 --> 01:21:26,896
+A times V1 plus B times V2 plus C times V3 plus D times V4.
+
+482
+01:21:28,016 --> 01:21:33,956
+Where A, B, C and T are real numbers.
+
+483
+01:21:33,956 --> 01:21:44,115
+So, it means that, as [öğrenci] says, it is equal to the matrix A times V1 gives A.
+
+484
+01:21:45,636 --> 01:21:47,416
+B times V2.
+
+485
+01:21:48,476 --> 01:21:52,115
+So, we have A in the first entry.
+
+486
+01:21:52,115 --> 01:22:06,236
+And here we have B and 0, 0, C and D.
+
+487
+01:22:06,236 --> 01:22:08,936
+And the matrix in.
+
+488
+01:22:08,936 --> 01:22:12,776
+So, we have B and 0.
+
+489
+01:22:13,300 --> 01:22:18,300
+M2x3
+
+490
+01:22:18,300 --> 01:22:23,300
+A, B, C, D ve real numbers
+
+491
+01:22:23,300 --> 01:22:27,300
+is the spanning set of this set
+
+492
+01:22:27,300 --> 01:22:30,300
+or the span set of this vectors is
+
+493
+01:22:30,300 --> 01:22:34,300
+the matrix of
+
+494
+01:22:34,300 --> 01:22:38,300
+2x3 with real entries.
+
+495
+01:22:38,300 --> 01:22:40,300
+OK.
+
+496
+01:22:54,323 --> 01:23:05,663
+If we have one vector, then the span set of this vector will be any real multiple of this vector.
+
+497
+01:23:05,663 --> 01:23:12,703
+So span u is equal to k times u, where k is a real number.
+
+498
+01:23:12,703 --> 01:23:31,884
+If we have two vectors, then span s is equal to a times u plus b times v.
+
+499
+01:23:38,963 --> 01:23:43,724
+A and P are real numbers.
+
+500
+01:23:45,503 --> 01:23:45,984
+So,
+
+501
+01:23:48,984 --> 01:23:50,844
+A times U is
+
+502
+01:23:50,844 --> 01:23:53,884
+A minus 2A
+
+503
+01:23:53,884 --> 01:23:56,903
+A 3A
+
+504
+01:23:56,903 --> 01:23:58,644
+Plus
+
+505
+01:23:58,644 --> 01:24:01,024
+0
+
+506
+01:24:01,024 --> 01:24:02,024
+2B
+
+507
+01:24:02,024 --> 01:24:04,304
+Minus P0
+
+508
+01:24:04,304 --> 01:24:08,783
+And this is equal to
+
+509
+01:24:08,783 --> 01:24:12,463
+A
+
+510
+01:24:12,463 --> 01:24:15,463
+2B minus
+
+511
+01:24:15,463 --> 01:24:16,923
+2A
+
+512
+01:24:16,923 --> 01:24:19,863
+A minus P
+
+513
+01:24:19,863 --> 01:24:22,243
+3A
+
+514
+01:24:22,243 --> 01:24:23,024
+Ver
+
+515
+01:24:23,024 --> 01:24:27,123
+And P are real numbers.
+
+516
+01:24:27,123 --> 01:24:41,403
+A
+
+517
+01:24:41,403 --> 01:24:42,304
+A A
+
+518
+01:24:33,427 --> 01:24:33,768
+Ok.
+
+519
+01:24:38,579 --> 01:24:40,800
+Do you have any comments or questions?
+
+520
+01:24:47,412 --> 01:25:07,932
+We have additional lecture on Saturday at 1 p.m. Please join our lectures because we will study very important topics in that lecture also.
+
+521
+01:25:07,932 --> 01:25:28,152
+And if you think that your exam scores are lower than you have hoped or expected, then please send me an email with writing your group number and your name.
+
+522
+01:25:29,052 --> 01:25:33,891
+Then I can check it again.
+
+523
+01:25:33,891 --> 01:25:37,891
+My...
+
+524
+01:25:46,387 --> 01:25:48,387
+My Yeldos
+
+525
+01:25:52,500 --> 01:25:53,159
+E-mail.
+
+526
+01:25:59,060 --> 01:25:59,560
+Ok.
+
+527
+01:26:01,780 --> 01:26:02,140
+So.
+
+528
+01:26:04,360 --> 01:26:05,860
+Hope to see you on Saturday.
+
+529
+01:26:07,000 --> 01:26:09,220
+And have a nice day all of you.
+
+530
+01:26:09,220 --> 01:26:13,120
+If you don't have any questions or comments.
+
+531
+01:26:17,492 --> 01:26:20,132
+Ok? No questions?
+
+532
+01:26:27,764 --> 01:26:31,703
+So, hope to see you, goodbye.
