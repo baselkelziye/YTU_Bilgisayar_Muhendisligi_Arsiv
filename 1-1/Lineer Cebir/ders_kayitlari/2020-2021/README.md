@@ -11,7 +11,7 @@
 | 10 | Bahar | Hülya Burhanzade | [sube_10/](sube_10/) |
 | 11 | Güz | Mehmet Emin Köroğlu | [sube_11/](sube_11/) |
 | 12 | Güz | Hülya Burhanzade | [sube_12/](sube_12/) |
-| 13 | Güz | Bulunamadı | [sube_13/](sube_13/) |
+| 13 | Güz | İsmail Aydoğdu | [sube_13/](sube_13/) |
 | 14 | Güz | Mustafa Sarı | [sube_14/](sube_14/) |
 | 15 | Bahar | Mehmet Emin Köroğlu | [sube_15/](sube_15/) |
 | 16 | Güz | İsmail Aydoğdu | [sube_16/](sube_16/) |

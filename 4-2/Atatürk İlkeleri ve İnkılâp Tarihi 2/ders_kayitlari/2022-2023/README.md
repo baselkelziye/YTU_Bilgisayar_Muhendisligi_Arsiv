@@ -5,9 +5,9 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 7 | Bahar | Zafer Doğan | [sube_7/](sube_7/) |
-| 9 | Bahar | Bulunamadı | [sube_9/](sube_9/) |
+| 9 | Bahar | Şebnem Gelmedi | [sube_9/](sube_9/) |
 | 10 | Bahar | Zafer Doğan | [sube_10/](sube_10/) |
 | 18 | Bahar | Gülsema Lüyer | [sube_18/](sube_18/) |
-| 23 | Bahar | Bulunamadı | [sube_23/](sube_23/) |
+| 23 | Bahar | Şebnem Gelmedi | [sube_23/](sube_23/) |
 | 25 | Bahar | Zafer Doğan | [sube_25/](sube_25/) |
 | 28 | Bahar | Şebnem Gelmedi | [sube_28/](sube_28/) |

@@ -2,7 +2,7 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Bahar dönemindeki Atatürk İlkeleri ve İnkılap Tarihi 2 (ATA1032 - 21. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
-* **Dersi Veren Akademisyen:** Bulunamadı
+* **Dersi Veren Akademisyen:** Şebnem Gelmedi
 
 Kayıt arşivindeki ilk ders kaydı 4 Mart 2022 Cuma gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
