@@ -1,0 +1,3103 @@
+1
+00:07:56,115 --> 00:07:57,955
+Hi folks, how are you today?
+
+2
+00:08:02,036 --> 00:08:12,756
+Good morning to everyone. [öğrenci], [kişisel bilgi]
+
+3
+00:08:16,500 --> 00:08:18,699
+[öğrenci]
+
+4
+00:08:24,660 --> 00:08:25,660
+Which course?
+
+5
+00:08:32,980 --> 00:08:39,759
+[öğrenci], [kişisel bilgi]
+
+6
+00:08:54,131 --> 00:08:55,131
+Tamam, tamam, tamam.
+
+7
+00:09:01,620 --> 00:09:05,720
+I hope you all improve your grades.
+
+8
+00:09:05,919 --> 00:09:06,080
+Okay.
+
+9
+00:09:07,200 --> 00:09:13,320
+Last week we left off our topic from the properties of matrix multiplication.
+
+10
+00:09:15,200 --> 00:09:19,700
+And we will pick up a topic from here.
+
+11
+00:09:19,700 --> 00:09:22,200
+That we have three matrices.
+
+12
+00:09:23,740 --> 00:09:25,060
+A, B, C.
+
+13
+00:09:26,500 --> 00:09:28,779
+With the appropriate sizes.
+
+14
+00:09:28,779 --> 00:09:35,779
+A product and matrix addition is well defined with these three matrices.
+
+15
+00:09:35,779 --> 00:09:44,779
+The matrix multiplication similar to matrix addition is an associative binary operation.
+
+16
+00:10:00,659 --> 00:10:06,659
+I hope this term you can focus on the course, [öğrenci].
+
+17
+00:10:06,659 --> 00:10:11,659
+This means that you can change the order of parenthesis.
+
+18
+00:10:11,659 --> 00:10:24,659
+First multiply A with B and then this will be a new matrix that write here A' or let write D'
+
+19
+00:10:24,659 --> 00:10:37,659
+A new matrix. So here we have D' C must be equal to A times B C that write here D.
+
+20
+00:10:37,659 --> 00:10:47,659
+D and D' different matrices. So result is safe, must be safe. D' C must be equal to A D.
+
+21
+00:10:47,659 --> 00:10:59,659
+Okay, this is the associated law of matrix multiplication. You can change the order of parenthesis.
+
+22
+00:10:59,659 --> 00:11:12,659
+And this is a give us, enable us mix matrix multiplication and matrix addition.
+
+23
+00:11:12,659 --> 00:11:32,659
+So matrix multiplication has left distributive law on the matrix addition. You can, first you can do your addition and you will obtain a new matrix.
+
+24
+00:11:32,659 --> 00:11:47,659
+Then multiply this new matrix with A on the left side. Also, this must be equal to first do your multiplication. Multiplications.
+
+25
+00:11:47,659 --> 00:11:54,659
+Because you have two multiplications, A B and A C. And then adding up these two matrices, new matrices.
+
+26
+00:11:54,659 --> 00:12:02,659
+Result must be equal. This is the left distributive law of the matrix multiplication over the matrix addition.
+
+27
+00:12:02,659 --> 00:12:11,659
+Also, we have right distributive law for the multiplication of matrices over the additional matrices. Okay.
+
+28
+00:12:11,659 --> 00:12:29,659
+So, you can change the order of scalar in, you can put scalar in any place because matrix multiplication and scalar multiplication are commutative.
+
+29
+00:12:29,659 --> 00:12:37,659
+So, you can change the order of scalar in, you can change the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the operations.
+
+30
+00:12:37,659 --> 00:12:51,659
+Okay. First, multiply A with B. This is a new matrix and that scale with K must be equal to first scale with K. The first matrix with K. This is also a new matrix.
+
+31
+00:12:51,659 --> 00:13:09,859
+So, you can change the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of the order of
+
+32
+00:13:14,899 --> 00:13:23,240
+And if you multiply a matrix with zero matrix from left or right, then result will be zero.
+
+33
+00:13:23,879 --> 00:13:32,659
+If you multiply any matrix with zero matrix or appropriate size, the result is zero.
+
+34
+00:13:34,939 --> 00:13:41,319
+Zero is the additive identity of matrix addition, but for the multiplication,
+
+35
+00:13:41,319 --> 00:13:45,259
+it removes all things.
+
+36
+00:13:48,220 --> 00:13:54,620
+Now another term related to matrices, transposition of matrices.
+
+37
+00:13:54,620 --> 00:14:03,939
+Let me have a matrix A of order n by n with m rows and n columns.
+
+38
+00:14:03,939 --> 00:14:17,419
+Then the transpose of A is denoted by A to the power capital T, not power, A superscript T, capital T,
+
+39
+00:14:17,419 --> 00:14:29,899
+or A superscript small case T and defined as A sub ji.
+
+40
+00:14:29,899 --> 00:14:34,759
+We just replace the place of rows and columns.
+
+41
+00:14:34,759 --> 00:14:36,980
+We swap rows and columns.
+
+42
+00:14:36,980 --> 00:14:48,139
+The new matrix, the order of new matrix is different from first one because of we change the order of rows and columns.
+
+43
+00:14:48,139 --> 00:14:50,139
+This is an n by m matrix.
+
+44
+00:14:50,139 --> 00:14:54,039
+The size of this new matrix is n by m.
+
+45
+00:14:54,039 --> 00:15:00,779
+Now in the square case, if our matrix is a square matrix, the number of rows and columns is equal,
+
+46
+00:15:00,779 --> 00:15:04,360
+then the size of matrix doesn't change.
+
+47
+00:15:04,360 --> 00:15:11,519
+But A and A transpose in general is different from each other's.
+
+48
+00:15:11,519 --> 00:15:14,360
+Just we have one case.
+
+49
+00:15:14,360 --> 00:15:16,579
+A transpose is equal to A.
+
+50
+00:15:16,579 --> 00:15:19,259
+We call this case as a symmetric case.
+
+51
+00:15:19,259 --> 00:15:19,539
+Okay.
+
+52
+00:15:20,039 --> 00:15:23,519
+In other cases, A is different from A transpose.
+
+53
+00:15:24,039 --> 00:15:32,379
+And transposition is an operational order too.
+
+54
+00:15:32,379 --> 00:15:39,100
+If you take the transpose or transpose, you will get A itself.
+
+55
+00:15:39,100 --> 00:15:48,200
+This is because A transpose is equal A sub ji.
+
+56
+00:15:51,827 --> 00:16:11,467
+And if you take the transpose of this matrix, because transposition, the transpose of A sub i, g is just A, j, i.
+
+57
+00:16:11,467 --> 00:16:15,747
+We change the order of rows and columns.
+
+58
+00:16:16,107 --> 00:16:18,807
+This is because the definition of operation.
+
+59
+00:16:18,807 --> 00:16:32,847
+So, here we have A transpose, transpose as A i, j, transpose.
+
+60
+00:16:33,768 --> 00:16:36,847
+This is Aq, A j, i.
+
+61
+00:16:37,648 --> 00:16:43,867
+So, let me, sorry, I need to change here.
+
+62
+00:16:48,851 --> 00:16:54,491
+This is not compatible with our notation because we choose A sub ij.
+
+63
+00:16:55,111 --> 00:16:58,651
+For A transpose, I need to put here A sub ji.
+
+64
+00:16:59,932 --> 00:17:04,731
+And A sub ji and here we have because of transpose O.
+
+65
+00:17:04,731 --> 00:17:07,311
+This is change the order rows and columns.
+
+66
+00:17:07,632 --> 00:17:09,652
+A sub ij.
+
+67
+00:17:10,271 --> 00:17:10,892
+This is A.
+
+68
+00:17:11,192 --> 00:17:11,311
+Okay.
+
+69
+00:17:12,071 --> 00:17:12,912
+Transpose O.
+
+70
+00:17:13,231 --> 00:17:14,672
+Transpose is transpose.
+
+71
+00:17:14,872 --> 00:17:17,591
+Also, let me have another matrix B.
+
+72
+00:17:18,851 --> 00:17:22,511
+Ij with the same order.
+
+73
+00:17:23,172 --> 00:17:25,071
+This is an n by n matrix.
+
+74
+00:17:25,491 --> 00:17:27,612
+We can add A with B.
+
+75
+00:17:28,192 --> 00:17:34,811
+A plus B is well defined because the order of both matrices are the same.
+
+76
+00:17:38,011 --> 00:17:43,551
+A plus B transpose is equal to a criteria.
+
+77
+00:17:50,963 --> 00:17:55,683
+Aij plus Vij transpose.
+
+78
+00:17:56,803 --> 00:18:03,063
+This is equal to Aij plus Vij transpose.
+
+79
+00:18:07,827 --> 00:18:15,988
+So, here we have Eij transpose plus Eij transpose.
+
+80
+00:18:19,667 --> 00:18:47,347
+This is equal to. We can separate this summation. Aij transpose plus Eij transpose. This is equal Aji plus Bji. So A transpose plus P transpose.
+
+81
+00:18:47,347 --> 00:19:07,087
+OK. The transpose of A plus B is equal to additional transposes with the not important order of elements because matrix addition is commutative.
+
+82
+00:19:07,087 --> 00:19:13,288
+You can also change the order of these matrices. B transpose plus A transpose.
+
+83
+00:19:14,427 --> 00:19:23,747
+Here, this is an operation in real numbers. So you can change the order of A sub ij transpose with B sub ij transpose.
+
+84
+00:19:24,407 --> 00:19:30,267
+So A plus B transpose is equal to A transpose plus B transpose.
+
+85
+00:19:34,291 --> 00:19:48,011
+Also AB transpose, AB transpose, AQ, B transpose times A transpose.
+
+86
+00:19:48,011 --> 00:19:57,692
+I will skip the proof of this property because it is a little long and complex.
+
+87
+00:19:57,692 --> 00:20:05,692
+So you are not responsible for proofs of these facts.
+
+88
+00:20:05,692 --> 00:20:14,692
+In your exams, you will encounter with the application of these properties, not the proofs of these properties.
+
+89
+00:20:14,692 --> 00:20:15,692
+Okay.
+
+90
+00:20:15,692 --> 00:20:19,692
+We just replace the order of transposes.
+
+91
+00:20:19,692 --> 00:20:24,692
+We take the transpose of both components and reverse the order.
+
+92
+00:20:24,692 --> 00:20:29,692
+AB transpose is equal to B transpose, A transpose.
+
+93
+00:20:29,692 --> 00:20:38,692
+Another property related to matrix transposition or transpose of a matrix.
+
+94
+00:20:38,692 --> 00:20:44,692
+The transpose of K scalar times of A is equal to K times A transpose.
+
+95
+00:20:44,692 --> 00:20:49,692
+This is because the transpose of a constant is itself.
+
+96
+00:20:49,692 --> 00:20:52,692
+AB are real number.
+
+97
+00:20:52,692 --> 00:20:56,692
+Then A transpose is equal to A.
+
+98
+00:20:56,692 --> 00:20:59,692
+The transpose of a real number is itself.
+
+99
+00:20:59,692 --> 00:21:00,692
+So you can see that.
+
+100
+00:21:00,692 --> 00:21:26,692
+You can see that.
+
+101
+00:21:03,635 --> 00:21:16,135
+Ama burada, bir row ve column numar var. Bu da bir real numar var. Ama çünkü bir row ve column numar var, bu bir row ve column numar var. Çünkü bu bir entry-o matris.
+
+102
+00:21:16,135 --> 00:21:20,635
+İzlediğiniz için bir real numar var. İzlediğiniz için bir entry-o matris.
+
+103
+00:21:25,332 --> 00:21:47,972
+I hear some example of transposition. We have a 2x3 matrix, a matrix with two rows and three columns. By taking the transpose of this matrix, we get a matrix with three rows and two columns. We just replace first row with the first column and second row with the second column.
+
+104
+00:21:47,972 --> 00:21:58,972
+You write first row as the first column of the A transpose and second row as the second column of the A transpose. Just wrap the order of rows and columns.
+
+105
+00:22:01,332 --> 00:22:08,052
+The transpose of a row matrix is a column matrix and the transpose of a column matrix is a row matrix. Okay.
+
+106
+00:22:15,923 --> 00:22:22,243
+We have already talked about these properties related to matris transposition.
+
+107
+00:22:37,140 --> 00:22:59,050
+Ve bu kadar da size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices ile ilgili bir şekilde de size of matrices
+
+108
+00:23:02,900 --> 00:23:03,900
+n by n
+
+109
+00:23:06,300 --> 00:23:07,100
+square
+
+110
+00:23:08,300 --> 00:23:09,100
+matrix
+
+111
+00:23:09,100 --> 00:23:10,900
+or
+
+112
+00:23:11,300 --> 00:23:12,900
+n square matrix
+
+113
+00:23:16,660 --> 00:23:24,660
+Bu, bu iki-dimensional arayın şekli olarak görüyoruz.
+
+114
+00:23:31,988 --> 00:23:56,788
+For a special case of square matrices, let I be a square matrix at right I sub n. We call this as identity matrix. Identity matrix. And an identity matrix is a matrix. All elements.
+
+115
+00:24:01,907 --> 00:24:02,907
+Evet, evet.
+
+116
+00:24:07,412 --> 00:24:15,572
+İdentik matriksiyonu, bu dağın bir
+
+117
+00:24:15,572 --> 00:24:19,572
+Diagonal of a matriksiyonu.
+
+118
+00:24:19,572 --> 00:24:28,852
+Açık A'ın matriksiyonu.
+
+119
+00:24:28,852 --> 00:24:58,852
+İdentik matriksiyonu, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu dağın, bu da
+
+120
+00:24:58,852 --> 00:25:08,291
+set of elements located on this line, from the leftmost to the rightmost of the matrix, okay.
+
+121
+00:25:09,491 --> 00:25:24,291
+A11, A22, the subscript of all entries are the same, and here until A and M. This is the diagonal of the matrix A.
+
+122
+00:25:27,667 --> 00:25:33,907
+Main diagonal, main diagonal, or the matrix A.
+
+123
+00:25:35,507 --> 00:25:55,927
+And the elements located on the line from the right top to the bottom left is called anti-diagonal, anti-diagonal, or the A.
+
+124
+00:25:55,927 --> 00:25:56,367
+Okay.
+
+125
+00:25:59,367 --> 00:26:08,007
+And depending on diagonal or a matrix, we define a function denoted, which is denoted by TR.
+
+126
+00:26:08,007 --> 00:26:26,007
+The function from the set of square matrices of order n with real or complex or elements from a finite field to that right here real numbers.
+
+127
+00:26:26,007 --> 00:26:29,607
+From M sub M sub M sub M sub R to R.
+
+128
+00:26:29,607 --> 00:26:38,487
+This means that here at the left side we take a matrix, a square matrix with real entries and met is to a real number.
+
+129
+00:26:38,487 --> 00:26:47,527
+And defined by, let AB element in this set trace A.
+
+130
+00:26:47,527 --> 00:26:48,027
+A.
+
+131
+00:26:51,284 --> 00:26:52,164
+Trace A,
+
+132
+00:26:55,104 --> 00:26:56,864
+is equal to
+
+133
+00:26:56,864 --> 00:27:02,224
+the addition of diagonal elements.
+
+134
+00:27:02,424 --> 00:27:02,564
+Okay.
+
+135
+00:27:03,024 --> 00:27:03,464
+Aii.
+
+136
+00:27:04,424 --> 00:27:08,504
+This is just A11 plus A22 plus
+
+137
+00:27:08,504 --> 00:27:10,724
+A sub nm.
+
+138
+00:27:11,004 --> 00:27:14,424
+We're just adding up all elements of the diagonal
+
+139
+00:27:14,424 --> 00:27:19,044
+all the elements of the diagonal of A.
+
+140
+00:27:19,044 --> 00:27:19,544
+Okay.
+
+141
+00:27:20,044 --> 00:27:21,864
+This is trace function.
+
+142
+00:27:27,988 --> 00:27:52,668
+Let's give you an example related to trace function. At B, we are matris, at 3x3, square matris, 3-1, 2, then we have 0, 1, 5, 2, 1, 3. So the diagonal OB,
+
+143
+00:27:57,332 --> 00:28:01,732
+is the set of three elements located on the main diagonal.
+
+144
+00:28:02,852 --> 00:28:04,852
+Located on this line.
+
+145
+00:28:06,772 --> 00:28:08,772
+Minus 1, 2.
+
+146
+00:28:08,772 --> 00:28:09,772
+Okay.
+
+147
+00:28:09,772 --> 00:28:12,492
+And the trace of b.
+
+148
+00:28:13,892 --> 00:28:16,772
+The trace of b is equal to.
+
+149
+00:28:18,372 --> 00:28:21,012
+i from 1 to 3.
+
+150
+00:28:22,932 --> 00:28:26,132
+Let's write in b sub ii.
+
+151
+00:28:26,132 --> 00:28:28,132
+3.
+
+152
+00:28:28,132 --> 00:28:30,132
+b1, 1 is 3.
+
+153
+00:28:30,132 --> 00:28:32,132
+b2, 2 is minus 1.
+
+154
+00:28:32,132 --> 00:28:34,132
+and b3, 3 is 2.
+
+155
+00:28:34,132 --> 00:28:38,132
+3 plus or minus 1 plus 2.
+
+156
+00:28:38,132 --> 00:28:40,132
+This is 4.
+
+157
+00:28:40,132 --> 00:28:44,132
+Trace of b is just 4.
+
+158
+00:28:44,132 --> 00:28:48,132
+So we have some properties of trace function.
+
+159
+00:28:50,132 --> 00:28:52,132
+That's right here.
+
+160
+00:28:52,132 --> 00:28:54,132
+Trace of a plus b is 2.
+
+161
+00:28:54,132 --> 00:29:02,132
+a plus b is equal to trace of a plus trace of b.
+
+162
+00:29:04,132 --> 00:29:06,132
+It is easy to prove this fact.
+
+163
+00:29:06,132 --> 00:29:12,132
+Trace is a function, [öğrenci].
+
+164
+00:29:12,132 --> 00:29:16,132
+related to square matrices.
+
+165
+00:29:16,132 --> 00:29:17,132
+Okay.
+
+166
+00:29:17,132 --> 00:29:19,132
+In Turkish we call is...
+
+167
+00:29:22,132 --> 00:29:23,132
+just a function.
+
+168
+00:29:23,132 --> 00:29:26,132
+A parameter related to square matrices.
+
+169
+00:29:26,132 --> 00:29:30,132
+For each square matrix you can find the trace of matrix.
+
+170
+00:29:30,132 --> 00:29:34,132
+It is just the summation of the elements on the main diagonal.
+
+171
+00:29:34,132 --> 00:29:35,132
+main diagonal.
+
+172
+00:29:35,132 --> 00:29:55,132
+The main diagonal.
+
+173
+00:29:43,316 --> 00:30:12,395
+This is because, let we have AnbS, A plus BS, A sub ij plus B sub ij, this is a square matrix, myn square matrix, then trace of A plus B is equal to, with the summation symbol, i from 1 to n,
+
+174
+00:30:16,276 --> 00:30:23,696
+Aii plus Bii, because we just add the elements on the main diagram.
+
+175
+00:30:25,115 --> 00:30:40,316
+We can separate this summation symbol, i from 1 to n, Aii plus, i from 1 to n, Bii.
+
+176
+00:30:40,316 --> 00:30:49,655
+This is equal, the first part is trace of A, and the second part is the trace of B, trace of A plus trace of B.
+
+177
+00:30:51,536 --> 00:30:51,796
+Okay.
+
+178
+00:30:53,536 --> 00:30:58,336
+This means that the trace function preserves matrix addition.
+
+179
+00:30:59,556 --> 00:30:59,956
+Also,
+
+180
+00:31:04,276 --> 00:31:16,076
+Trace function preserves scalar multiplication. Trace of k scalar multiple of a is equal to k times trace of a.
+
+181
+00:31:17,276 --> 00:31:20,756
+This is a real number. The result of trace is a real number.
+
+182
+00:31:26,067 --> 00:31:28,748
+Bu faktörde kolaylaştırma.
+
+183
+00:31:31,748 --> 00:31:35,788
+We know that Ka is equal to,
+
+184
+00:31:36,788 --> 00:31:41,607
+we multiply all entries of A by the constant K,
+
+185
+00:31:41,607 --> 00:31:45,448
+so the trace of Ka is equal to,
+
+186
+00:31:45,627 --> 00:31:48,548
+let's write here trace of K times A,
+
+187
+00:31:50,708 --> 00:31:54,488
+i from 1 to n, K times A sub ii.
+
+188
+00:31:54,488 --> 00:32:00,887
+So A is common in each component of this summation,
+
+189
+00:32:01,067 --> 00:32:05,788
+you can factor out K out of the summation symbol,
+
+190
+00:32:05,788 --> 00:32:11,728
+so you have K times i from 1 to n, A sub ii.
+
+191
+00:32:12,367 --> 00:32:17,788
+I know that this is the trace of, this part is the trace of A,
+
+192
+00:32:18,147 --> 00:32:23,448
+so we have a K here, K times trace of A.
+
+193
+00:32:29,140 --> 00:32:39,160
+Also, another property of trace function, trace O A transpose is equal to trace O A.
+
+194
+00:32:39,160 --> 00:32:43,160
+This is because if you...
+
+195
+00:32:43,160 --> 00:32:45,540
+Let me ask this to you.
+
+196
+00:32:45,860 --> 00:32:47,080
+Why this is true?
+
+197
+00:32:49,440 --> 00:32:52,720
+Because it's a square matrix, teacher.
+
+198
+00:32:54,480 --> 00:32:57,300
+But this is not the...
+
+199
+00:32:57,300 --> 00:33:02,240
+And the rows and columns is equal.
+
+200
+00:33:03,380 --> 00:33:06,300
+So it will be the same.
+
+201
+00:33:06,680 --> 00:33:08,280
+Okay, you are right.
+
+202
+00:33:08,520 --> 00:33:12,640
+If you take the transpose of the components on the main diagonal,
+
+203
+00:33:12,920 --> 00:33:15,840
+the location of these components doesn't change.
+
+204
+00:33:16,160 --> 00:33:21,660
+Okay, the elements on the main diagonal remain unchanged.
+
+205
+00:33:23,340 --> 00:33:24,420
+So you are right.
+
+206
+00:33:24,500 --> 00:33:25,620
+Thank you for your answer.
+
+207
+00:33:27,300 --> 00:33:30,840
+For a square matrix, let's write here.
+
+208
+00:33:32,780 --> 00:33:41,400
+You know, the trace O, excuse me, transpose O A is just Aij transpose.
+
+209
+00:33:41,400 --> 00:33:43,940
+This is equal to A.
+
+210
+00:33:44,880 --> 00:33:45,500
+Aji.
+
+211
+00:33:46,440 --> 00:33:55,940
+If Aij is an element in the diagonal of A, that's right here, diagonal of A, then...
+
+212
+00:33:55,940 --> 00:34:01,760
+A must be equal to J.
+
+213
+00:34:01,760 --> 00:34:31,760
+So if you take the transpose O A,
+
+214
+00:34:31,760 --> 00:34:59,820
+A, A
+
+215
+00:35:04,563 --> 00:35:30,463
+Transpose, excuse me, trace O a matrix, a square matrix, the trace O a, b is equal to the trace O b, a. I will omit the proof of this property also. It's a little complicated and I don't want to confuse you about the proof of this.
+
+216
+00:35:30,463 --> 00:35:35,203
+But the trace O a, b is equal to trace O b, a. Okay.
+
+217
+00:35:43,956 --> 00:35:54,416
+Here we have some, we have two square matrices and some operations on these matrices.
+
+218
+00:35:55,076 --> 00:35:58,036
+First we adding up A and B.
+
+219
+00:35:58,816 --> 00:36:13,356
+The diagonal of A plus B, let me write here, diagonal of A, diagonal of A is just a set with three elements, one, minus four and seven.
+
+220
+00:36:13,956 --> 00:36:18,036
+The set of elements located on this line.
+
+221
+00:36:23,188 --> 00:36:26,188
+ve o a'ı
+
+222
+00:36:26,188 --> 00:36:28,188
+o a'ı
+
+223
+00:36:28,188 --> 00:36:30,188
+1 plus minus 4
+
+224
+00:36:30,188 --> 00:36:32,188
+1 minus 4
+
+225
+00:36:32,188 --> 00:36:33,188
+plus 7
+
+226
+00:36:33,188 --> 00:36:35,188
+here we have 4
+
+227
+00:36:35,188 --> 00:36:37,188
+Diagonal o b
+
+228
+00:36:37,188 --> 00:36:40,188
+Matrix b
+
+229
+00:36:40,188 --> 00:36:42,188
+is a set with 3 elements
+
+230
+00:36:42,188 --> 00:36:45,188
+2, 3, minus 4
+
+231
+00:36:45,188 --> 00:36:47,188
+and the trace o b
+
+232
+00:36:49,188 --> 00:36:51,188
+additional elements
+
+233
+00:36:51,188 --> 00:36:53,188
+so Diagonal b
+
+234
+00:36:53,188 --> 00:36:55,188
+so here we have 1
+
+235
+00:36:55,188 --> 00:36:56,188
+okay
+
+236
+00:36:56,188 --> 00:36:57,188
+the trace o
+
+237
+00:36:57,188 --> 00:36:59,188
+b is 1
+
+238
+00:36:59,188 --> 00:37:02,188
+let's find the diagonal and trace o
+
+239
+00:37:02,188 --> 00:37:03,188
+a plus b
+
+240
+00:37:03,188 --> 00:37:06,188
+trace o a plus b must be
+
+241
+00:37:06,188 --> 00:37:08,188
+trace o a plus trace o b
+
+242
+00:37:08,188 --> 00:37:10,188
+this is 5
+
+243
+00:37:10,188 --> 00:37:12,188
+so the diagonal
+
+244
+00:37:12,188 --> 00:37:15,188
+of a plus b
+
+245
+00:37:15,188 --> 00:37:17,188
+is just
+
+246
+00:37:18,188 --> 00:37:20,188
+3, minus 1
+
+247
+00:37:20,188 --> 00:37:21,188
+3
+
+248
+00:37:21,188 --> 00:37:22,188
+and
+
+249
+00:37:22,188 --> 00:37:24,188
+the trace o
+
+250
+00:37:24,188 --> 00:37:26,188
+a plus b
+
+251
+00:37:26,188 --> 00:37:30,188
+3, minus 1
+
+252
+00:37:30,188 --> 00:37:31,188
+plus 3
+
+253
+00:37:31,188 --> 00:37:32,188
+is 5
+
+254
+00:37:32,188 --> 00:37:33,188
+this is equal to
+
+255
+00:37:33,188 --> 00:37:35,188
+trace o a
+
+256
+00:37:35,188 --> 00:37:36,188
+plus
+
+257
+00:37:36,188 --> 00:37:37,188
+trace o b
+
+258
+00:37:37,188 --> 00:37:39,188
+trace o a is 4
+
+259
+00:37:39,188 --> 00:37:41,188
+and trace o b is 1
+
+260
+00:37:41,188 --> 00:37:42,188
+this is 5
+
+261
+00:37:42,188 --> 00:37:43,188
+okay
+
+262
+00:37:43,188 --> 00:37:44,188
+also
+
+263
+00:37:44,188 --> 00:37:53,188
+if you multiply a with 2
+
+264
+00:37:53,188 --> 00:37:54,188
+the constant 2
+
+265
+00:37:54,188 --> 00:37:55,188
+then
+
+266
+00:37:55,188 --> 00:37:58,188
+the diagonal o
+
+267
+00:37:58,188 --> 00:37:59,188
+2 a
+
+268
+00:37:59,188 --> 00:38:00,188
+will be
+
+269
+00:38:00,188 --> 00:38:01,188
+2 a
+
+270
+00:38:01,188 --> 00:38:02,188
+will be
+
+271
+00:38:02,188 --> 00:38:07,188
+I just multiply all entries
+
+272
+00:38:07,188 --> 00:38:09,188
+on the diagonal
+
+273
+00:38:09,188 --> 00:38:10,188
+via 2
+
+274
+00:38:10,188 --> 00:38:11,188
+constant 2
+
+275
+00:38:11,188 --> 00:38:13,188
+2, minus 8
+
+276
+00:38:13,188 --> 00:38:14,188
+and
+
+277
+00:38:14,188 --> 00:38:15,188
+14
+
+278
+00:38:15,188 --> 00:38:17,188
+so the trace o
+
+279
+00:38:17,188 --> 00:38:18,188
+2 a
+
+280
+00:38:18,188 --> 00:38:19,188
+is just equibed to
+
+281
+00:38:19,188 --> 00:38:20,188
+2 times 4 is 8
+
+282
+00:38:20,188 --> 00:38:21,188
+okay
+
+283
+00:38:21,188 --> 00:38:22,188
+2 times 4 is 8
+
+284
+00:38:22,188 --> 00:38:23,188
+okay
+
+285
+00:38:23,188 --> 00:38:24,188
+2 times 4 is 8
+
+286
+00:38:24,188 --> 00:38:25,188
+okay
+
+287
+00:38:29,235 --> 00:38:35,295
+Çünkü 2 plus 14 is 16, minus 8 is 8.
+
+288
+00:38:36,435 --> 00:38:41,895
+And let's check trace of a, b, and ba.
+
+289
+00:38:42,335 --> 00:38:48,935
+In order to do this, we need to multiply, compute a, b, and ba.
+
+290
+00:38:48,935 --> 00:38:53,076
+But I give these computations to you.
+
+291
+00:38:53,635 --> 00:38:57,415
+I have already computed these multiplications.
+
+292
+00:38:57,415 --> 00:39:00,596
+I will skip details of this multiplication.
+
+293
+00:39:01,096 --> 00:39:03,115
+You have already known matris multiplication.
+
+294
+00:39:04,855 --> 00:39:07,615
+So here we have a, b.
+
+295
+00:39:08,475 --> 00:39:10,255
+We multiply a with b.
+
+296
+00:39:10,496 --> 00:39:12,096
+So the diagonal of a, b.
+
+297
+00:39:15,891 --> 00:39:39,891
+So, it's just 5, 0, and minus 35. So, the trace of AB, let's write here, trace of AB is just minus 30. Okay. And BA...
+
+298
+00:39:43,635 --> 00:39:59,275
+For ba, the diagonal of ba, diagonal of ba, 27, minus 24, and minus 33.
+
+299
+00:39:59,275 --> 00:40:20,675
+So, the trace of ba, minus, here we have positive 3, so 27 minus 24 is 3, 3 plus minus 33 is minus 30.
+
+300
+00:40:20,675 --> 00:40:28,516
+Okay, this is equal to, let me write here ba, is equal to trace of ab.
+
+301
+00:40:29,275 --> 00:40:32,675
+But ab is different from ba.
+
+302
+00:40:35,476 --> 00:40:44,195
+Last week we see that matrix multiplication is not commutative, we give an example to show this fact.
+
+303
+00:40:45,556 --> 00:40:58,996
+A 2 by 2, we give two 2 by 2 matrices and we multiply ab and ba, we see that this new resulting matrices are not equal.
+
+304
+00:40:59,275 --> 00:41:06,275
+similar to the same, similar to the same, similar to the same, similar to this case.
+
+305
+00:41:06,275 --> 00:41:07,275
+So, the first entry, but the first entry, but the first entry, the first entry, the first entry of both matrices are different.
+
+306
+00:41:07,275 --> 00:41:13,275
+The first entry of both matrices are different, we can not check all the remaining 8 entries.
+
+307
+00:41:13,275 --> 00:41:22,275
+So ab is different from ba but trace of ba is equal to trace of ab. This is a nice property of trace function. Any question?
+
+308
+00:41:40,947 --> 00:41:48,967
+I have already talked about trace and diagonal of a matrix and the properties of trace function.
+
+309
+00:41:53,647 --> 00:41:55,167
+I will skip.
+
+310
+00:41:56,288 --> 00:42:01,307
+Now, we are ready to give the definition of identity matrix.
+
+311
+00:42:02,027 --> 00:42:08,887
+Identity matrix is a matrix, let's define it recursively.
+
+312
+00:42:08,887 --> 00:42:13,427
+I1 is just 1, a 1 by 1 matrix.
+
+313
+00:42:15,067 --> 00:42:20,967
+I sub 2, denoted by capital I, with the order of matrix.
+
+314
+00:42:22,047 --> 00:42:24,567
+At the subscript, the order of matrix.
+
+315
+00:42:26,987 --> 00:42:34,007
+1001, a 2 by 2, I will skip writing the order here.
+
+316
+00:42:34,007 --> 00:42:34,527
+Okay.
+
+317
+00:42:38,452 --> 00:42:39,292
+ISOF3
+
+318
+00:42:46,708 --> 00:42:59,208
+And in some cases we omit zeros in the matrices. We just write the elements on the main diagonal. So here, and here we have all zeros.
+
+319
+00:43:03,699 --> 00:43:18,279
+This type of square matrices is called identity matrix, and in general, identity matrix of order n is denoted by I sub n, the identity matrix.
+
+320
+00:43:24,724 --> 00:43:33,724
+S2-metik, the elements on the main diagonal are all one and all the other.
+
+321
+00:43:33,724 --> 00:43:40,724
+Yes, [öğrenci], yes, [öğrenci], the trace of AB is always equal to trace of BA.
+
+322
+00:43:40,724 --> 00:43:43,724
+Always this fact satisfied.
+
+323
+00:43:43,724 --> 00:43:48,724
+Your equity is correct.
+
+324
+00:43:48,724 --> 00:43:49,724
+Okay.
+
+325
+00:43:56,052 --> 00:43:59,192
+Evet, bu matrices A ve B.
+
+326
+00:43:59,192 --> 00:44:05,192
+Aij, m by n matrix.
+
+327
+00:44:05,192 --> 00:44:19,211
+B, ij, m by r matrices.
+
+328
+00:44:19,211 --> 00:44:26,211
+A,
+
+329
+00:44:28,307 --> 00:44:35,307
+I sub n is equal to a and I sub n is equal to a and I sub n is equal to a.
+
+330
+00:44:38,132 --> 00:44:41,132
+B is also equal to B.
+
+331
+00:44:41,132 --> 00:44:41,831
+Okay.
+
+332
+00:44:44,251 --> 00:44:49,211
+If you multiply a matrix with the identity matrix,
+
+333
+00:44:49,432 --> 00:44:54,932
+the resulting matrix will be the same as with our non-identity matrix.
+
+334
+00:44:56,412 --> 00:45:02,291
+Also, you can write here, in order to put A in the right side,
+
+335
+00:45:02,291 --> 00:45:08,371
+we need to multiply I sub M times A.
+
+336
+00:45:08,371 --> 00:45:10,251
+This is equal to A.
+
+337
+00:45:10,331 --> 00:45:21,492
+Also, here, B times the number of columns of B must be number of rows of I,
+
+338
+00:45:21,612 --> 00:45:24,811
+then B times IR is equal to B also.
+
+339
+00:45:26,052 --> 00:45:28,311
+If our matrix is non-squared,
+
+340
+00:45:28,912 --> 00:45:31,751
+then in order to multiply with a square matrix,
+
+341
+00:45:31,751 --> 00:45:39,251
+the matrix which choosing for the right side will be different from the matrix
+
+342
+00:45:39,251 --> 00:45:41,592
+which choosing for the right side.
+
+343
+00:45:41,791 --> 00:45:41,932
+Okay.
+
+344
+00:45:42,092 --> 00:45:44,751
+The order of identity matrix.
+
+345
+00:45:45,572 --> 00:45:45,831
+Okay.
+
+346
+00:45:46,912 --> 00:45:53,811
+Identity matrix is the multiplicative identity of matrix multiplication.
+
+347
+00:45:53,811 --> 00:46:02,192
+And a scalar matrix, if you multiply an identity matrix with a scalar,
+
+348
+00:46:02,192 --> 00:46:05,092
+let's write here, K is a real number,
+
+349
+00:46:06,231 --> 00:46:09,972
+then K times I N is called,
+
+350
+00:46:09,972 --> 00:46:19,622
+matrix matrix
+
+351
+00:46:23,795 --> 00:46:34,155
+Please notice that the elements located on the main diagonal or the OS scalar matrix are all same.
+
+352
+00:46:34,155 --> 00:46:42,355
+Okay, we will give the definition of diagonal matrix. Please don't confuse with the scalar and diagonal matrices.
+
+353
+00:46:55,284 --> 00:47:03,724
+Here we have an example, some examples of identity matrix, this is I sub 3, I sub 4.
+
+354
+00:47:04,463 --> 00:47:16,804
+A scalar matrix, we multiply identity matrix of order 3 with 5, and here also identity matrix of order, excuse me, 4 with 5.
+
+355
+00:47:17,884 --> 00:47:20,304
+These two matrices are scalar matrices.
+
+356
+00:47:25,331 --> 00:47:27,531
+And these two matrices are identity.
+
+357
+00:47:38,291 --> 00:48:05,871
+Ve kan, we kan take the power of any square matrix, let me have matrix A, A to the power 0 is identity matrix, let A be a identity, excuse me, A be a square matrix of order n, then A to the power 0 is identity matrix of order n, and A to the power 1 is A.
+
+358
+00:48:05,871 --> 00:48:12,211
+In order to compute A square, you need to multiply A with A, this is A square.
+
+359
+00:48:13,211 --> 00:48:14,511
+Let me write here.
+
+360
+00:48:21,684 --> 00:48:31,684
+a² is equal to a times a. a³ is equal to a². We multiply both sides of this equality with a.
+
+361
+00:48:36,403 --> 00:48:46,224
+For general case, a to the k is just equal to a to the k minus one times a.
+
+362
+00:48:47,483 --> 00:48:47,804
+Okay.
+
+363
+00:48:48,884 --> 00:48:56,483
+A to the power k is equal to k times we multiply a with itself.
+
+364
+00:49:04,596 --> 00:49:22,755
+So, let me have a polynomial f of x of degree n, a0 plus a1x plus a2x squared plus an, x to the n.
+
+365
+00:49:22,755 --> 00:49:27,135
+Here x is called indeterminate of the polynomial.
+
+366
+00:49:27,916 --> 00:49:31,856
+Ais, all ais are called coefficients of the polynomial.
+
+367
+00:49:31,856 --> 00:49:33,916
+n, n is the degree of polynomial.
+
+368
+00:49:35,056 --> 00:49:42,195
+If a, n is 1, then we call f of x as a monic polynomial.
+
+369
+00:49:42,996 --> 00:49:47,416
+So, this, some basic concepts related to polynomial.
+
+370
+00:49:50,016 --> 00:49:54,675
+We can evaluate a square matrix in a polynomial.
+
+371
+00:49:54,675 --> 00:50:04,916
+So, fo of a is defined as a0.
+
+372
+00:50:05,916 --> 00:50:09,735
+I will omit something and I will ask to you.
+
+373
+00:50:09,735 --> 00:50:23,896
+a0 plus a1 a plus a1 a plus a2a square plus a sub n a to the power n.
+
+374
+00:50:24,376 --> 00:50:29,436
+I want to ask to you, is this acuity is correct or not?
+
+375
+00:50:29,436 --> 00:50:32,635
+I want to ask to you.
+
+376
+00:50:35,860 --> 00:50:38,059
+Bu konuda, bu konuda, özgürlüklerden bir konuları.
+
+377
+00:50:44,371 --> 00:50:45,172
+Any idea?
+
+378
+00:50:57,396 --> 00:51:00,156
+You can consider as geometric
+
+379
+00:51:00,156 --> 00:51:08,776
+Secunds of matrices with some coefficients, but this is not the answer.
+
+380
+00:51:10,756 --> 00:51:14,656
+Excuse me, a geometric series of matrices.
+
+381
+00:51:18,612 --> 00:51:22,672
+A, you can consider, but this is not the answer.
+
+382
+00:51:23,932 --> 00:51:31,872
+I am asking to you, is this addition is meaningful or meaningless?
+
+383
+00:51:36,532 --> 00:51:39,532
+Bu konumlarla ilgili bir adet var.
+
+384
+00:51:39,532 --> 00:51:47,532
+Bu adet bir adet var.
+
+385
+00:51:47,532 --> 00:51:49,532
+Bu adet var.
+
+386
+00:51:49,532 --> 00:51:51,532
+Bu adet bir adet var.
+
+387
+00:51:51,532 --> 00:52:05,532
+Bu adet var.
+
+388
+00:52:18,804 --> 00:52:19,124
+Ok.
+
+389
+00:52:30,387 --> 00:52:31,387
+Hayır kim?
+
+390
+00:52:33,188 --> 00:52:34,788
+No, not infinity.
+
+391
+00:52:36,987 --> 00:52:41,387
+Additional finite object is finite, not infinite.
+
+392
+00:52:45,492 --> 00:52:47,492
+We just adding up matrices.
+
+393
+00:52:49,492 --> 00:52:52,492
+Yes, [öğrenci], you are right.
+
+394
+00:52:52,492 --> 00:52:55,492
+This is the answer I am looking for.
+
+395
+00:52:56,492 --> 00:53:02,492
+Ok, we cannot adding up a constant with a matrix.
+
+396
+00:53:02,492 --> 00:53:06,492
+Here we have n-1 matrices.
+
+397
+00:53:06,492 --> 00:53:08,492
+The result will be a matrix.
+
+398
+00:53:08,492 --> 00:53:11,492
+Ok, but here we have a constant.
+
+399
+00:53:11,492 --> 00:53:14,492
+A0 plus, let me write here.
+
+400
+00:53:15,492 --> 00:53:20,492
+A0 plus B is not defined, well defined.
+
+401
+00:53:20,492 --> 00:53:24,492
+We cannot adding up a constant to a matrix.
+
+402
+00:53:24,492 --> 00:53:31,492
+So, we need to put here a to the power 0.
+
+403
+00:53:31,492 --> 00:53:34,492
+Let me write this again.
+
+404
+00:53:34,492 --> 00:53:43,492
+We need to put here identity matrix of order n or this is equal to a to the power 0.
+
+405
+00:53:43,492 --> 00:53:50,492
+Ok, we fixed the mathematical error in this equality.
+
+406
+00:53:50,492 --> 00:54:01,492
+In this case you can write F O A is equal to the addition in the right hand side.
+
+407
+00:54:01,492 --> 00:54:02,492
+Ok.
+
+408
+00:54:02,492 --> 00:54:22,492
+When you want to evaluate a matrix in a polynomial, at the right or the right side of the constant, you need to put an identity matrix of the appropriate size.
+
+409
+00:54:22,492 --> 00:54:26,492
+In other case you cannot add these objects.
+
+410
+00:54:26,492 --> 00:54:32,492
+Because a constant cannot be added with a matrix.
+
+411
+00:54:32,492 --> 00:54:41,492
+In order to add two matrices, the order of matrices must be same.
+
+412
+00:54:41,492 --> 00:54:46,492
+So, here we have a matrix of order one, a real number.
+
+413
+00:54:46,492 --> 00:54:53,492
+But here we have matrices, n minus one matrices of order n minus, of order n.
+
+414
+00:54:53,492 --> 00:54:58,492
+So, you need to put here an identity matrix.
+
+415
+00:54:58,492 --> 00:54:59,492
+Ok.
+
+416
+00:54:59,492 --> 00:55:00,492
+So, here we have a matrix.
+
+417
+00:55:00,492 --> 00:55:01,492
+Ok.
+
+418
+00:55:01,492 --> 00:55:02,492
+So, here we have a matrix.
+
+419
+00:55:02,492 --> 00:55:03,492
+Ok.
+
+420
+00:55:03,492 --> 00:55:04,492
+So, here we have a matrix.
+
+421
+00:55:04,492 --> 00:55:05,492
+Ok.
+
+422
+00:55:05,492 --> 00:55:06,492
+So, here we have a matrix.
+
+423
+00:55:06,492 --> 00:55:07,492
+Ok.
+
+424
+00:55:07,492 --> 00:55:08,492
+So, here we have a matrix.
+
+425
+00:55:08,492 --> 00:55:09,492
+Ok.
+
+426
+00:55:09,492 --> 00:55:10,492
+So, here we have a matrix.
+
+427
+00:55:10,492 --> 00:55:11,492
+Ok.
+
+428
+00:55:11,492 --> 00:55:12,492
+So, here we have a matrix.
+
+429
+00:55:12,492 --> 00:55:13,492
+Ok.
+
+430
+00:55:13,492 --> 00:55:14,492
+So, here we have a matrix.
+
+431
+00:55:14,492 --> 00:55:15,492
+Ok.
+
+432
+00:55:15,492 --> 00:55:16,492
+So, here we have a matrix.
+
+433
+00:55:16,492 --> 00:55:17,492
+Ok.
+
+434
+00:55:17,492 --> 00:55:18,492
+So, here we have a matrix.
+
+435
+00:55:18,492 --> 00:55:19,492
+Ok.
+
+436
+00:55:19,492 --> 00:55:20,492
+So, here we have a matrix.
+
+437
+00:55:20,492 --> 00:55:21,492
+Ok.
+
+438
+00:55:21,492 --> 00:55:22,492
+So, here we have a matrix.
+
+439
+00:55:22,492 --> 00:55:23,492
+Ok.
+
+440
+00:55:23,492 --> 00:55:24,492
+So, here we have a matrix.
+
+441
+00:55:24,492 --> 00:55:26,492
+Ok.
+
+442
+00:55:05,907 --> 00:55:12,147
+For a given polynomial, you can evaluate a matrix, the image of a matrix in this polynomial.
+
+443
+00:55:13,347 --> 00:55:23,427
+We will use this fact at the end of this semester, when we see the Kiley-Hamilton theorem.
+
+444
+00:55:25,027 --> 00:55:30,387
+This is a strong result related to characteristic polynomial of a square matrix.
+
+445
+00:55:30,387 --> 00:55:36,627
+It says that each square matrix is a root of its characteristic polynomial.
+
+446
+00:55:36,627 --> 00:55:56,627
+So, let's see.
+
+447
+00:55:41,139 --> 00:55:47,139
+Let me give an example related to power o matrices and...
+
+448
+00:55:54,164 --> 00:56:06,403
+Polynomial in matrices, that we have matrix A and two polynomial FOX and GOX, two polynomial with degree n.
+
+449
+00:56:07,584 --> 00:56:12,004
+We want to find FOA and GOA.
+
+450
+00:56:12,004 --> 00:56:35,704
+In order to do this, we need to compute two times A squared because we just replaced X with matrix A minus three times A and plus five times identity matrix of order two because here we have a constant.
+
+451
+00:56:35,903 --> 00:56:39,384
+We need to put here an identity matrix of appropriate size.
+
+452
+00:56:39,384 --> 00:56:55,204
+For GOA, just replace X with A, A squared plus three A and minus ten times identity matrix of order two.
+
+453
+00:56:56,824 --> 00:57:02,184
+We compute here all these computations and also here A cubed.
+
+454
+00:57:02,184 --> 00:57:05,364
+We first multiply A with itself.
+
+455
+00:57:05,544 --> 00:57:12,724
+We find that square matrix with same size and multiply A squared with A then to get A cubed.
+
+456
+00:57:13,484 --> 00:57:17,204
+This is an example for power of a square matrix.
+
+457
+00:57:17,204 --> 00:57:34,844
+And when you compute FOA, compute all these components and adding up these three matrices, result will be a two by two square matrix but is different from zero matrix.
+
+458
+00:57:34,844 --> 00:57:35,804
+Okay.
+
+459
+00:57:35,804 --> 00:57:43,564
+But in the G, if you evaluate A in the G then, the result will be a two by two zero matrix.
+
+460
+00:57:43,844 --> 00:57:47,884
+In this case, we say that A is a root of polynomial G.
+
+461
+00:57:48,704 --> 00:57:48,944
+Okay.
+
+462
+00:57:49,564 --> 00:57:51,964
+A is a root of polynomial G.
+
+463
+00:57:52,564 --> 00:57:59,764
+Depending on this fact, we will derive some results in the end of this semester.
+
+464
+00:58:00,844 --> 00:58:02,304
+Teacher, can I ask something?
+
+465
+00:58:02,304 --> 00:58:03,964
+Yes.
+
+466
+00:58:03,964 --> 00:58:14,564
+Can we solve the function then transform it to a matrix?
+
+467
+00:58:15,684 --> 00:58:21,104
+Oh, maybe, but this is a much more hard problem.
+
+468
+00:58:21,624 --> 00:58:26,304
+Not easy to solve a polynomial with respect to matrices.
+
+469
+00:58:27,264 --> 00:58:30,104
+This is much more complicated.
+
+470
+00:58:30,104 --> 00:58:30,844
+Okay.
+
+471
+00:58:30,944 --> 00:58:34,584
+But you can solve if there is a root.
+
+472
+00:58:35,164 --> 00:58:38,044
+But via matrices, this is very, very easy.
+
+473
+00:58:38,524 --> 00:58:43,944
+But depending on square matrices, you can easily find characteristic polynomial of the matrix.
+
+474
+00:58:44,204 --> 00:58:50,464
+And because of the Cayley-Hamilton theorem, each square matrix is a root of its characteristic polynomial.
+
+475
+00:58:50,464 --> 00:58:56,404
+So depending on this fact, you can easily solve the problem.
+
+476
+00:58:56,404 --> 00:59:03,344
+The problem is that this polynomial is the characteristic polynomial of which matrix?
+
+477
+00:59:04,384 --> 00:59:04,704
+Yeah.
+
+478
+00:59:06,084 --> 00:59:09,984
+By beginning with the polynomial, you will arrive at square matrix.
+
+479
+00:59:09,984 --> 00:59:11,364
+Okay.
+
+480
+00:59:11,364 --> 00:59:11,903
+Thank you.
+
+481
+00:59:17,108 --> 00:59:23,908
+And invertible matrices, let we have two square matrices A and B with the same size.
+
+482
+00:59:27,468 --> 00:59:29,248
+And by N two matrices.
+
+483
+00:59:35,891 --> 00:59:52,172
+If AB is equal to BA, and this is equal to identity matrix, then, let me write, then we called,
+
+484
+00:59:55,699 --> 01:00:04,539
+A is an invertible, invertible, or non-singular.
+
+485
+01:00:08,179 --> 01:00:38,179
+B'nin A'ın A
+
+486
+01:00:38,179 --> 01:00:59,750
+A'a'ın A'ın
+
+487
+01:01:03,731 --> 01:01:10,152
+B is also invertible.
+
+488
+01:01:14,452 --> 01:01:19,492
+and B inverse is equal to A.
+
+489
+01:01:21,852 --> 01:01:26,092
+Here we have a result related to invertible matrices.
+
+490
+01:01:26,092 --> 01:01:46,892
+If a matrix A is invertible, then its inverse is unique.
+
+491
+01:01:46,892 --> 01:01:47,892
+A.
+
+492
+01:01:51,956 --> 01:01:58,175
+Türkçe, bu birincik olarak, birincik olarak, nevi şahsinamın hasır.
+
+493
+01:01:58,175 --> 01:02:28,175
+İmkincisi, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birinci
+
+494
+01:02:28,175 --> 01:02:41,476
+ve birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak, birincik olarak,
+
+495
+01:02:44,596 --> 01:02:46,416
+B1 is different from B2.
+
+496
+01:02:48,036 --> 01:02:51,596
+We assume A is invertible and has two different...
+
+497
+01:02:54,115 --> 01:02:57,396
+There is a next question [öğrenci] asked.
+
+498
+01:02:57,956 --> 01:03:00,275
+Alge-risifutu-identity asmamız lazım değil.
+
+499
+01:03:09,652 --> 01:03:11,652
+Evet, evet.
+
+500
+01:03:18,036 --> 01:03:20,036
+Bu bir soru var.
+
+501
+01:03:20,036 --> 01:03:26,036
+Bu soru var.
+
+502
+01:03:26,036 --> 01:03:46,036
+Bir soru var.
+
+503
+01:03:46,036 --> 01:07:17,036
+Almanızı var.
+
+504
+01:07:07,572 --> 01:07:17,572
+Bu konradiction, bu konradiction, is because of, we assume A is invertible and has two different inverses.
+
+505
+01:07:17,572 --> 01:07:24,372
+This is not correct. Our assumption is not correct, so we need to change our assumption.
+
+506
+01:07:24,372 --> 01:07:33,572
+If a matrix is invertible, then its inverse is unique. Okay. Any question?
+
+507
+01:07:40,755 --> 01:07:41,395
+Let's go.
+
+508
+01:07:44,659 --> 01:08:07,259
+In general, finding the inverse of a square matrix is not an easy problem, but we will give some special methods in the 6th and 6th week of this semester to find the inverse of a square matrix if exists.
+
+509
+01:08:07,259 --> 01:08:23,059
+Okay, in general, if you want to find the inverse of a square matrix, let write here C, C be the inverse of A with the entries x, y, z, t.
+
+510
+01:08:23,059 --> 01:08:44,199
+You need to compute A, C. This will be a matrix with entries depending on unknowns x, y, z, t and must be equal to identity matrix with the same size.
+
+511
+01:08:44,199 --> 01:08:55,840
+So, here, this component must be 1. We get a linear equation from first entry of the multiplication.
+
+512
+01:08:56,519 --> 01:09:11,579
+Here and here must be 0. These two components must be 0 because we have 0s here by the definition of equivalency of matrices.
+
+513
+01:09:11,579 --> 01:09:22,340
+So, we have four linear equations and four unknowns. You need to solve all these unknowns from these equations.
+
+514
+01:09:23,479 --> 01:09:31,920
+This is the general way to finding inverse of a square matrix, but here we just give two matrices A and B.
+
+515
+01:09:32,000 --> 01:09:37,460
+We will check whether A is inverse of B or B is inverse of A or not.
+
+516
+01:09:37,460 --> 01:09:41,619
+Okay, we compute A, B. The result is identity matrix.
+
+517
+01:09:41,619 --> 01:09:44,619
+And this is enough for the...
+
+518
+01:09:44,619 --> 01:09:52,619
+...
+
+519
+01:09:50,547 --> 01:10:02,347
+B'inverse of A, or A'inverse of B. Bir multiplication is enough, is sufficient for our A.
+
+520
+01:10:03,087 --> 01:10:15,047
+But we do the second one, B'inverse is also identity matrix, so we see that A'inverse is equal to B, and B'inverse is equal to A.
+
+521
+01:10:35,347 --> 01:10:37,747
+You can ask your questions during practice.
+
+522
+01:12:10,100 --> 01:12:22,900
+[öğrenci], your statement is correct. A, A inverse is identity matrix. If exist A inverse, if exist, then A inverse, also A inverse A is identity matrix.
+
+523
+01:16:07,315 --> 01:16:09,315
+Ok, let's go on.
+
+524
+01:16:11,315 --> 01:16:16,315
+We have two matrices A and B, two invertible square matrices A and B.
+
+525
+01:16:16,315 --> 01:16:25,315
+In this case, the inverse of AB, AB inverse, is equal to B inverse, A inverse.
+
+526
+01:16:25,315 --> 01:16:31,315
+Just like transposition, multiplication of transposal matrices.
+
+527
+01:16:31,315 --> 01:16:37,315
+Ok, the transposal AB is equal to B transpose A transpose.
+
+528
+01:16:37,315 --> 01:16:42,315
+This property is same as inversion in matrices.
+
+529
+01:16:42,315 --> 01:16:48,315
+This is because let's check this fact.
+
+530
+01:16:48,315 --> 01:17:00,315
+AB, B inverse, A inverse is equal to ABB inverse, A inverse.
+
+531
+01:17:00,315 --> 01:17:03,315
+BB inverse is identity matrix.
+
+532
+01:17:03,315 --> 01:17:08,315
+And here we have AI, A inverse.
+
+533
+01:17:08,315 --> 01:17:19,315
+So this is AA, A inverse because AA inverse or AI is itself.
+
+534
+01:17:19,315 --> 01:17:24,315
+So here we have AA inverse identity matrix.
+
+535
+01:17:24,315 --> 01:17:29,315
+This shows that the inverse of AB is B inverse, A inverse.
+
+536
+01:17:29,315 --> 01:17:34,315
+In general, that we have K invertible matrices.
+
+537
+01:17:34,315 --> 01:17:38,315
+A1, A2, A sub K with the inverses.
+
+538
+01:17:38,315 --> 01:17:43,315
+A1 inverse, A2 inverse and A sub K inverse.
+
+539
+01:17:43,315 --> 01:17:53,315
+In this case, the inverse of this matrix A1 times A2 times A K, multiplication of all these K matrices.
+
+540
+01:17:53,315 --> 01:18:00,315
+The inverse of this matrix is just, we take the inverse of each component and reverse the order.
+
+541
+01:18:00,315 --> 01:18:01,315
+OK.
+
+542
+01:18:01,315 --> 01:18:07,315
+AK inverse, AK minus 1 inverse, AK minus 2 inverse, blah blah blah.
+
+543
+01:18:07,315 --> 01:18:09,315
+A2 inverse, A1 inverse.
+
+544
+01:18:09,315 --> 01:18:10,315
+OK.
+
+545
+01:18:10,315 --> 01:18:11,315
+AK inverse, AK minus 1 inverse, AK minus 2 inverse, blah blah.
+
+546
+01:18:11,315 --> 01:18:13,315
+AK inverse, AK minus 1 inverse.
+
+547
+01:18:13,315 --> 01:18:14,315
+AK minus 2 inverse, blah blah.
+
+548
+01:18:14,315 --> 01:18:19,315
+AK inverse, AK minus 2 inverse, blah blah.
+
+549
+01:18:14,676 --> 01:18:18,176
+Let me replace my presentation.
+
+550
+01:18:25,684 --> 01:18:26,003
+Ok.
+
+551
+01:18:30,163 --> 01:18:39,483
+Now we will give some special square matrices, like identity matrix, inverse or scalar matrix.
+
+552
+01:18:40,283 --> 01:18:45,123
+We will give more special square matrices.
+
+553
+01:18:46,304 --> 01:18:48,743
+Our first matrix is periodic matrix.
+
+554
+01:18:48,743 --> 01:18:53,443
+That we have a square matrix A.
+
+555
+01:18:54,623 --> 01:19:05,423
+Then, if A to the power k plus 1 is equal to A, in this case we call matrix A as a periodic matrix with the period k.
+
+556
+01:19:11,315 --> 01:19:17,315
+Here we have k plus 1, but the period of a is k.
+
+557
+01:19:17,315 --> 01:19:21,315
+k plus 1 power of a is set.
+
+558
+01:19:21,315 --> 01:19:25,315
+This is because we write power of a.
+
+559
+01:19:25,315 --> 01:19:31,315
+Here we have a0, a1, a k.
+
+560
+01:19:31,315 --> 01:19:38,315
+And then the powers will repeat here.
+
+561
+01:19:38,315 --> 01:19:42,315
+But let me remove this a0.
+
+562
+01:19:42,315 --> 01:19:49,315
+Again a1, a to the power 2, a k.
+
+563
+01:19:49,315 --> 01:19:52,315
+This is another period.
+
+564
+01:19:52,315 --> 01:19:58,315
+All powers of a ranging from a to a to the power k.
+
+565
+01:19:58,315 --> 01:20:03,315
+There is no different powers.
+
+566
+01:20:03,315 --> 01:20:17,315
+The a to the power k plus r, a to the power k plus r, r is an integer strictly smaller than k.
+
+567
+01:20:17,315 --> 01:20:22,315
+This must be equal to some of these powers.
+
+568
+01:20:22,315 --> 01:20:25,315
+A or a to the power k.
+
+569
+01:20:25,315 --> 01:20:26,315
+Okay.
+
+570
+01:20:26,315 --> 01:20:30,315
+Here we have an example of periodic matrix.
+
+571
+01:20:30,315 --> 01:20:32,315
+A is a 3 by 3 matrix.
+
+572
+01:20:32,315 --> 01:20:34,315
+I will omit some computations.
+
+573
+01:20:34,315 --> 01:20:35,315
+I will leave to you.
+
+574
+01:20:35,315 --> 01:20:37,315
+You can check these computations.
+
+575
+01:20:37,315 --> 01:20:44,315
+We take a to the power cube.
+
+576
+01:20:44,315 --> 01:20:45,315
+Or a cube.
+
+577
+01:20:45,315 --> 01:20:49,315
+We multiply a width itself three times.
+
+578
+01:20:49,315 --> 01:20:54,315
+So result of this matrix is a.
+
+579
+01:20:54,315 --> 01:21:22,315
+Let's just.
+
+580
+01:21:07,604 --> 01:21:16,604
+But to do this we need to complete all one column only. Anyway, anyway.
+
+581
+01:21:16,604 --> 01:21:24,604
+You need to multiply first A by A, A square, and then again by A to obtain A2.
+
+582
+01:21:24,604 --> 01:21:34,604
+Okay. This is a periodic matrix with period 2, because A to the power 2 plus 1 is A.
+
+583
+01:21:39,155 --> 01:21:44,475
+And another special square matrix is idempotent matrix.
+
+584
+01:21:45,435 --> 01:21:54,036
+And this is a special case of periodic matrix because a to the power 1 plus 1 is equal to a.
+
+585
+01:21:54,475 --> 01:21:56,876
+This is a periodic matrix with period 1.
+
+586
+01:21:57,435 --> 01:22:00,576
+As idempotent matrix is also a periodic matrix.
+
+587
+01:22:01,416 --> 01:22:02,716
+Just the period is 1.
+
+588
+01:22:03,355 --> 01:22:04,376
+A square is a.
+
+589
+01:22:11,155 --> 01:22:14,775
+Or, an idempotent matris.
+
+590
+01:22:24,372 --> 01:22:28,612
+En general, you cannot talk about the inverse of an idempotent matrix.
+
+591
+01:22:28,612 --> 01:22:36,811
+If this matrix is invertible, then A2 must be identity matrix.
+
+592
+01:22:44,532 --> 01:23:06,391
+Let's find sum of entries of a squared. Let me find c11 and c sub 3,3. If a squared is equal to a, c11 must be 2 and c33 must be minus 3. In order to get c11, multiply first row with the first column.
+
+593
+01:23:06,391 --> 01:23:27,572
+c11 is equal to 2 times 2 is 4, minus 1 times minus 2 is 2 and 1 times minus 4 is minus 4. So 4 minus 4 is 0, result is 2.
+
+594
+01:23:27,572 --> 01:23:40,412
+c11 is equal to c11 is 2. C11 is 2 equal to this answer. Okay. And in order to get c33, just multiply third row with the third column.
+
+595
+01:23:44,340 --> 01:24:07,460
+Here we have minus 4, 1 times minus 4 is minus 4, minus 2 times 4 is minus 8, and 3 times, minus 3 times minus 3 is positive 9.
+
+596
+01:24:07,460 --> 01:24:15,500
+So result is minus 3. Okay, you can compute all the remaining 7 entries.
+
+597
+01:24:17,980 --> 01:24:21,180
+C sub 3, 3 is minus 3.
+
+598
+01:24:25,076 --> 01:24:49,155
+A new potent matrix, that we have a square matrix A, with the A to the power for a positive integer k, here k is a positive integer, A to the power k is zero, in this case we call A as a new potent matrix of new potency index k. k is called the new potency index O.
+
+599
+01:24:54,963 --> 01:24:55,644
+Olmay.
+
+600
+01:24:59,155 --> 01:25:12,615
+Okay, the nilpotence index of A is k, and we can say that an important matrix is not invertible.
+
+601
+01:25:15,859 --> 01:25:21,319
+An illipotent matrix
+
+602
+01:25:21,319 --> 01:25:24,979
+is not
+
+603
+01:25:24,979 --> 01:25:28,479
+invertible.
+
+604
+01:25:28,479 --> 01:25:29,519
+Ok.
+
+605
+01:25:36,083 --> 01:26:05,243
+An important matrix or important C index 2, A square must be 0, all components must be 0, let's compute here some components, let's compute C, 1, 2, multiply first row with the second column, C1, 2 is equal to, 1 times 2 is 2, 2 times 2 is 4,
+
+606
+01:26:05,243 --> 01:26:35,224
+and 3 times minus 2 minus 6, result is 0. Also let's compute the elements in the central matrix C2, 2, C2, 2, in order to get C2, 2, just multiply second row with the second column, 1 times 2 is 2, 2 times 2 is 4, and 3 times minus 2 is minus 6.
+
+607
+01:26:35,243 --> 01:26:37,243
+So let's compute the result is 0, 1 times 2 is 0.
+
+608
+01:26:41,108 --> 01:27:01,168
+Another matrix is involute or involucary matrix. This is an invertible matrix. This term comes from invertibility, because if A square is identity matrix, this means that inverse of A is equal to A.
+
+609
+01:27:01,168 --> 01:27:17,427
+If you multiply both sides of the equality, we get A is equal to A inverse. In this case, square matrix A is called involute or involute matrix.
+
+610
+01:27:24,787 --> 01:27:38,727
+And here we have an example for involute matrix. A is a 3x3 square matrix. A square is identity matrix of order 3, so A inverse is equal to A.
+
+611
+01:27:39,047 --> 01:27:49,107
+This means that the elements located on the main diagonal of A square are all 1, all the other elements are 0.
+
+612
+01:27:49,107 --> 01:27:58,647
+Let's compute just two elements. C11 and C11 must be 1 and C12 must be 0.
+
+613
+01:28:00,307 --> 01:28:04,867
+For C11, multiply first row with the first column.
+
+614
+01:28:06,127 --> 01:28:10,067
+Minus 5 times minus 5 is 25.
+
+615
+01:28:15,475 --> 01:28:22,635
+Minus 8 times 3 is minus 24.
+
+616
+01:28:23,155 --> 01:28:25,875
+And 0 times 1 is 0.
+
+617
+01:28:26,215 --> 01:28:26,955
+Plus 0.
+
+618
+01:28:27,215 --> 01:28:28,095
+Result is 1.
+
+619
+01:28:28,395 --> 01:28:30,215
+So C11 is 1.
+
+620
+01:28:31,335 --> 01:28:34,255
+And for C21, excuse me, C12.
+
+621
+01:28:35,335 --> 01:28:38,155
+Multiply first row with the second column.
+
+622
+01:28:39,115 --> 01:28:42,675
+Minus 5 times 8 is 40.
+
+623
+01:28:45,475 --> 01:28:47,595
+Minus 8 times 5.
+
+624
+01:28:48,675 --> 01:28:49,595
+Excuse me.
+
+625
+01:28:49,655 --> 01:28:52,095
+Minus 8 times 5 is minus 40.
+
+626
+01:28:52,315 --> 01:28:54,355
+And 0 times 2 is 0.
+
+627
+01:28:54,735 --> 01:28:56,355
+Plus 0 is 0.
+
+628
+01:28:56,555 --> 01:28:56,755
+Okay.
+
+629
+01:28:57,635 --> 01:29:01,815
+And you can compute all the other entries of A squared.
+
+630
+01:29:03,555 --> 01:29:06,335
+We know the diagonal of a matrix.
+
+631
+01:29:06,935 --> 01:29:12,675
+And depending on this concept, we will give the definition of diagonal matrix.
+
+632
+01:29:12,675 --> 01:29:19,855
+A diagonal matrix is a matrix just the elements located on the main diagonal.
+
+633
+01:29:20,135 --> 01:29:22,975
+Some of the entries on the main diagonal are non-zero.
+
+634
+01:29:23,275 --> 01:29:25,655
+And all the other entries are zero.
+
+635
+01:29:26,275 --> 01:29:26,395
+Okay.
+
+636
+01:29:26,395 --> 01:29:37,255
+We define a diagonal matrix with, depending on its diagonal elements, because all the other entries are zero.
+
+637
+01:29:37,255 --> 01:29:47,255
+Here we have also a scalar matrix is a special case of diagonal matrix.
+
+638
+01:29:47,375 --> 01:29:51,295
+You can say as scalar matrices as diagonal matrices.
+
+639
+01:29:51,775 --> 01:29:54,095
+The special case of diagonal matrix.
+
+640
+01:29:54,275 --> 01:29:56,795
+All entries on the main diagonal are the same.
+
+641
+01:29:57,195 --> 01:30:00,135
+So scalar matrix is also a diagonal matrix.
+
+642
+01:30:00,135 --> 01:30:11,235
+If you have a 3 by 3 diagonal matrix, we can write this matrix as, let this matrix be D.
+
+643
+01:30:12,235 --> 01:30:49,895
+D is equal to D.
+
+644
+01:30:30,707 --> 01:30:36,947
+ve 2x2 diagonal matris ve 4x4 diagonal matris.
+
+645
+01:30:42,452 --> 01:30:47,271
+No, we will give upper triangular and lower triangular matrices.
+
+646
+01:30:48,152 --> 01:30:50,332
+A matrix is called upper triangular.
+
+647
+01:30:50,332 --> 01:30:58,431
+If all entries located on the lower of the main diagonal are zero,
+
+648
+01:30:59,351 --> 01:31:03,952
+these type of matrices are called upper triangular matrices.
+
+649
+01:31:04,351 --> 01:31:05,952
+Here we have some examples.
+
+650
+01:31:06,431 --> 01:31:08,332
+Two by two upper triangular matrix.
+
+651
+01:31:09,152 --> 01:31:10,252
+Here we have a triangle.
+
+652
+01:31:10,252 --> 01:31:14,032
+Some of these elements can be zero.
+
+653
+01:31:16,032 --> 01:31:21,572
+Some of these elements, A11, A12, and A2, maybe zero,
+
+654
+01:31:21,731 --> 01:31:32,652
+but all the elements located on the lower or main diagonal are zero.
+
+655
+01:31:32,931 --> 01:31:33,072
+Okay.
+
+656
+01:31:34,731 --> 01:31:36,891
+This is an upper triangular.
+
+657
+01:31:36,891 --> 01:31:42,512
+Also, we have a three by three upper triangular matrix.
+
+658
+01:31:43,572 --> 01:31:46,632
+We have all these elements as zero.
+
+659
+01:31:46,632 --> 01:31:52,811
+And some elements on the main diagonal and upper or main diagonal.
+
+660
+01:31:53,592 --> 01:31:54,431
+Upper triangular.
+
+661
+01:31:54,431 --> 01:32:02,512
+And by taking the transpose of these matrices, you can obtain lower triangular matrices.
+
+662
+01:32:02,832 --> 01:32:08,092
+The transpose of a triangular matrix is also a triangular matrix,
+
+663
+01:32:08,632 --> 01:32:13,972
+but the transpose of an upper triangular matrix is a lower triangular matrix,
+
+664
+01:32:13,972 --> 01:32:21,092
+and the transpose of a lower triangular matrix is an upper triangular matrix.
+
+665
+01:32:22,292 --> 01:32:31,792
+These types of matrices are also very convenient for the computation of determinant of S4 matrix.
+
+666
+01:32:31,792 --> 01:32:32,292
+And the transpose of the matrix is a lower triangular matrix.
+
+667
+01:32:32,292 --> 01:32:45,792
+The transpose of a triangular matrix is a lower triangular matrix.
+
+668
+01:32:45,792 --> 01:32:46,792
+the transpose of a triangular matrix.
+
+669
+01:32:38,579 --> 01:32:47,899
+And if the transpose of a matrix is equal itself, then we say this type of matrices as symmetric matrices.
+
+670
+01:32:47,899 --> 01:32:56,519
+Okay. For the symmetric case, let me have A as A sub ij and n by n matrix.
+
+671
+01:32:56,519 --> 01:33:17,840
+If A transpose is equal to A, then for all one ij and aij is equal to aji.
+
+672
+01:33:17,840 --> 01:33:18,840
+Okay.
+
+673
+01:33:27,988 --> 01:33:35,068
+Aji transpose is equal to Aij.
+
+674
+01:33:35,068 --> 01:33:37,068
+This means that...
+
+675
+01:33:44,020 --> 01:33:44,500
+Sorry.
+
+676
+01:33:46,300 --> 01:33:47,420
+Aij transpose.
+
+677
+01:33:48,660 --> 01:33:50,040
+Aij transpose
+
+678
+01:33:50,040 --> 01:33:52,020
+is equal to Aij.
+
+679
+01:33:52,660 --> 01:33:52,880
+So,
+
+680
+01:33:54,420 --> 01:33:55,880
+depending on this fact,
+
+681
+01:33:56,000 --> 01:33:57,940
+we have Aij is equal to
+
+682
+01:33:57,940 --> 01:33:59,980
+Aji. Here we have
+
+683
+01:33:59,980 --> 01:34:02,100
+Aji. By remonim
+
+684
+01:34:02,100 --> 01:34:03,560
+transpose, we will get
+
+685
+01:34:03,560 --> 01:34:05,940
+Aji. I write it at the
+
+686
+01:34:05,940 --> 01:34:07,440
+second place. So,
+
+687
+01:34:08,380 --> 01:34:10,000
+in a symmetric
+
+688
+01:34:10,000 --> 01:34:10,580
+matrix,
+
+689
+01:34:11,520 --> 01:34:13,720
+all the elements
+
+690
+01:34:13,720 --> 01:34:18,000
+with the
+
+691
+01:34:18,000 --> 01:34:20,160
+number of rows and columns,
+
+692
+01:34:20,280 --> 01:34:22,180
+the additional number of rows and columns
+
+693
+01:34:22,180 --> 01:34:24,160
+is equal, these types of elements
+
+694
+01:34:24,160 --> 01:34:26,100
+must be equal. Let me
+
+695
+01:34:26,100 --> 01:34:27,560
+give an example.
+
+696
+01:34:28,040 --> 01:34:30,140
+A1, 2 must be equal to
+
+697
+01:34:30,140 --> 01:34:32,200
+A2, 1 because the
+
+698
+01:34:32,200 --> 01:34:34,200
+additional, if you
+
+699
+01:34:34,200 --> 01:34:36,080
+add the indices of this
+
+700
+01:34:36,080 --> 01:34:38,100
+element, 1 plus 2 is 3.
+
+701
+01:34:38,100 --> 01:34:40,200
+Here also we have 2 plus 1
+
+702
+01:34:40,200 --> 01:34:42,140
+is 3. These two elements must be
+
+703
+01:34:42,140 --> 01:34:42,420
+equal.
+
+704
+01:34:51,188 --> 01:35:00,387
+A square matrix is called a skew symmetric or anti-symmetric if A transpose is equal to minus A.
+
+705
+01:35:00,387 --> 01:35:10,788
+In this case, Aij transpose is equal to minus Aij.
+
+706
+01:35:10,788 --> 01:35:25,188
+So, for the elements on the main diagonal, Aij must be minus Aij because of the transpose of Aij is also Aij.
+
+707
+01:35:25,188 --> 01:35:31,587
+And for skew symmetric case, Aij must be equal to minus Aij.
+
+708
+01:35:31,587 --> 01:35:41,587
+And adding Aij to the both sides of the equality, we have two A sub ii equal to zero.
+
+709
+01:35:41,587 --> 01:35:49,988
+This forces us Aij is zero because we have no zero divisors in real numbers.
+
+710
+01:35:49,988 --> 01:35:56,387
+Multiplication of two non-zero real numbers is non-zero, must be non-zero.
+
+711
+01:35:56,387 --> 01:36:04,148
+If the multiplication of two real numbers is zero, one of these numbers must be zero.
+
+712
+01:36:04,148 --> 01:36:05,828
+So, Aij must be zero.
+
+713
+01:36:05,828 --> 01:36:12,228
+In the skew symmetric case, the elements located on the main diagonal must be zero.
+
+714
+01:36:12,228 --> 01:36:13,828
+Okay.
+
+715
+01:36:13,828 --> 01:36:19,188
+This is a property of anti-symmetric or skew symmetric matrices.
+
+716
+01:36:19,188 --> 01:36:26,148
+Here we have some examples related to skew symmetric and symmetric matrices.
+
+717
+01:36:26,387 --> 01:36:28,387
+What about matrix A?
+
+718
+01:36:28,387 --> 01:36:40,387
+Is it symmetric or skew symmetric?
+
+719
+01:36:35,091 --> 01:36:36,011
+Matris A
+
+720
+01:36:40,243 --> 01:36:44,243
+Alemans'ı ile ilgili main diagonal verin.
+
+721
+01:36:49,268 --> 01:36:53,188
+[öğrenci], teşekkür ederim. A is a simetrik matris. What about B?
+
+722
+01:36:56,851 --> 01:37:07,251
+Çünkü, here you have minus 3, this is a sub 1, 2, must be equal to a sub 2, 1, minus 3 also.
+
+723
+01:37:07,851 --> 01:37:12,831
+a sub 1, 3 is 5, this is equal to a sub 3, 1.
+
+724
+01:37:13,251 --> 01:37:16,731
+And a sub 3, 2 is equal to a sub 2, 3.
+
+725
+01:37:16,731 --> 01:37:17,131
+Okay.
+
+726
+01:37:18,891 --> 01:37:21,631
+Yes, B is anti-symmetric.
+
+727
+01:37:21,631 --> 01:37:26,291
+The elements on the main diagonal are all 0, must be 0.
+
+728
+01:37:26,771 --> 01:37:33,391
+And all the other elements is equal to its reverse sign.
+
+729
+01:37:34,692 --> 01:37:36,192
+Minus 3, here we have 3.
+
+730
+01:37:37,112 --> 01:37:38,992
+Minus, minus 3.
+
+731
+01:37:39,551 --> 01:37:40,591
+4, minus 4.
+
+732
+01:37:40,771 --> 01:37:42,891
+Minus 5, minus minus 5 is 5.
+
+733
+01:37:43,051 --> 01:37:43,231
+Okay.
+
+734
+01:37:44,532 --> 01:37:45,492
+What about C?
+
+735
+01:37:46,412 --> 01:37:48,751
+Is C here skewsymmetric or symmetric?
+
+736
+01:38:01,747 --> 01:38:19,747
+You are right, [öğrenci], thank you. C is not a square matrix, neither symmetric nor skev symmetric, because we just can talk about symmetry or skev symmetry or square matrices. Non-square matrices cannot be symmetric or skev symmetric.
+
+737
+01:38:34,899 --> 01:38:41,119
+Matris C, it is neither symmetric nor skimmetrik.
+
+738
+01:38:41,119 --> 01:38:41,399
+Okay.
+
+739
+01:38:58,292 --> 01:39:02,292
+Orthogonal matrices, orthogonal matrices.
+
+740
+01:39:03,332 --> 01:39:11,092
+What is an orthogonal matrix? That we have a square matrix if the transpose of a matrix is equal to its inverse.
+
+741
+01:39:11,652 --> 01:39:23,932
+This is also had the same meaning with A transpose times A is equal to A times A transpose is equal to identity matrix of order M.
+
+742
+01:39:23,932 --> 01:39:30,492
+In this case, we called A as an orthogonal matrix.
+
+743
+01:39:30,492 --> 01:39:30,731
+So,
+
+744
+01:39:34,131 --> 01:39:40,131
+There is some special methods to check the orthogonality of matrices.
+
+745
+01:39:40,131 --> 01:39:49,251
+If we multiply corresponding, excuse me, different rows of the matrix
+
+746
+01:39:49,251 --> 01:39:54,131
+with two each other's component twice multiplication, the result must be zero.
+
+747
+01:39:54,131 --> 01:40:02,131
+In this case, if you multiply a row with itself,
+
+748
+01:40:02,131 --> 01:40:12,131
+the result may be non-zero. In this case, we can say matrix as an orthogonal matrix.
+
+749
+01:40:12,131 --> 01:40:20,131
+And another way to checking orthogonality over matrix, A transpose must be equal to A inverse
+
+750
+01:40:20,131 --> 01:40:26,131
+or A transpose times A or A times A transpose must be identity matrix.
+
+751
+01:40:26,131 --> 01:40:32,131
+I think this is the easiest way to checking orthogonality over square matrix.
+
+752
+01:40:32,131 --> 01:40:34,131
+A just compute A, A transpose.
+
+753
+01:40:34,131 --> 01:40:44,131
+If this is equal to identity matrix, then A transpose is the inverse of A and A is an orthogonal matrix.
+
+754
+01:40:44,131 --> 01:40:50,131
+A special example of orthogonal matrix is the rotation matrix.
+
+755
+01:40:50,131 --> 01:40:58,131
+Two by two matrix with three functions, with entries as three functions.
+
+756
+01:40:58,131 --> 01:41:06,131
+Let's find A transpose. We can compute A transpose A or A A transpose.
+
+757
+01:41:06,131 --> 01:41:18,131
+A transpose is cosine theta, sine theta, minus sine theta and cosine theta again.
+
+758
+01:41:18,131 --> 01:41:26,131
+A A A transpose, let's compute A A transpose A A transpose.
+
+759
+01:41:26,131 --> 01:41:35,131
+First row with the first column, cosine square theta plus sine square theta.
+
+760
+01:41:35,131 --> 01:41:52,131
+And for the second component of the first row, minus cosine theta times sine theta plus cosine theta, sine theta.
+
+761
+01:41:52,131 --> 01:41:55,131
+This is zero, this is zero actually.
+
+762
+01:41:55,131 --> 01:42:09,131
+Here we have minus, minus sine, cosine, plus cosine sine.
+
+763
+01:42:13,300 --> 01:42:21,880
+And the last entry must be sin2 theta plus cos2 theta.
+
+764
+01:42:21,880 --> 01:42:31,460
+You know that by the math 1071, this is one.
+
+765
+01:42:35,091 --> 01:42:59,011
+ve bu bir
+
+766
+01:43:13,427 --> 01:43:17,108
+Bu konuda kompleksiyonu var.
+
+767
+01:43:17,108 --> 01:43:21,307
+Bu konuda başlayacağımıza
+
+768
+01:43:21,307 --> 01:43:23,547
+sonraki videoda görüşmek için
+
+769
+01:43:23,547 --> 01:43:27,547
+çünkü diğer grup
+
+770
+01:43:27,547 --> 01:43:31,667
+de ortogonelik birçok konuda
+
+771
+01:43:31,667 --> 01:43:36,108
+ve bu konuda başlayacağım.
+
+772
+01:43:39,731 --> 01:43:41,131
+Okay, any question?
+
+773
+01:43:43,131 --> 01:43:49,192
+I upload this presentation also to my Alesis page, you can upload this presentation.
+
+774
+01:43:49,192 --> 01:43:57,391
+If you encounter with any mistake, please let me know, mail me these mistakes.
+
+775
+01:43:57,931 --> 01:43:58,891
+Thank you for listening.
+
+776
+01:44:00,952 --> 01:44:02,252
+See you next week.
