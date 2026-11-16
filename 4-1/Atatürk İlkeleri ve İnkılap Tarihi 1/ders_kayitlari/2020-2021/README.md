@@ -9,6 +9,7 @@
 | 5 | Güz | Şebnem Gelmedi | [sube_5/](sube_5/) |
 | 6 | Güz | Gülsema Lüyer | [sube_6/](sube_6/) |
 | 7 | Güz | Gülsema Lüyer | [sube_7/](sube_7/) |
+| 8 | Güz | Zafer Doğan | [sube_8/](sube_8/) |
 | 10 | Güz | Zafer Doğan | [sube_10/](sube_10/) |
 | 11 | Güz | Gülsema Lüyer | [sube_11/](sube_11/) |
 | 13 | Güz | Şebnem Gelmedi | [sube_13/](sube_13/) |
