@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** TÜRKÇE 1 (TDB1031)
+* **Hoca:** Arzuhan Kocabaş
 * **Dönem:** Güz
 * **Akademik Yıl:** 2024-2025
 * **Şube:** TDB1031 - 1
