@@ -1,6 +1,6 @@
 # Türkçe 2 Ders Kayıtları Altyazıları
 
-Bu klasör, 2024-2025 eğitim öğretim yılı BAHAR dönemindeki Türkçe 2 (TDB1032 - 12. şube) ders kayıtlarının altyazılarını içerir.
+Bu klasör, 2024-2025 eğitim öğretim yılı BAHAR dönemindeki Türkçe 2 (TDB1032 - 12. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
 * **Dersi Veren Akademisyen:** Arzuhan Kocabaş
 
